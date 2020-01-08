@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Viðbótastjóri
+addons-page-title = Viðbótastjóri
 search-header =
     .placeholder = Leita á addons.mozilla.org
     .searchbuttonlabel = Leita
@@ -289,3 +290,5 @@ theme-heading-search-label = Finna fleiri þemu
 extension-heading-search-label = Finna fleiri viðbætur
 addons-heading-search-input =
     .placeholder = Leita á addons.mozilla.org
+addon-page-options-button =
+    .title = Verkfæri fyrir allar viðbætur

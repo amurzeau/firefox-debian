@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Gestione componenti aggiuntivi
+addons-page-title = Gestione componenti aggiuntivi
 search-header =
     .placeholder = Cerca in addons.mozilla.org
     .searchbuttonlabel = Cerca
@@ -337,11 +338,9 @@ remove-addon-button = Rimuovi
 remove-addon-disabled-button = Impossibile rimuovere <a data-l10n-name="link">Perché?</a>
 disable-addon-button = Disattiva
 enable-addon-button = Attiva
-expand-addon-button = Altre opzioni
-disable-addon-button-label =
-    .aria-label = Disattiva
-enable-addon-button-label =
+extension-enable-addon-button-label =
     .aria-label = Attiva
+expand-addon-button = Altre opzioni
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Opzioni
@@ -426,6 +425,9 @@ updates-heading = Gestione aggiornamenti
 discover-heading = Personalizza { -brand-short-name }
 shortcuts-heading = Gestione scorciatoie da tastiera
 theme-heading-search-label = Trova altri temi
+default-heading-search-label = Trova altri componenti aggiuntivi
 extension-heading-search-label = Trova altre estensioni
 addons-heading-search-input =
     .placeholder = Cerca in addons.mozilla.org
+addon-page-options-button =
+    .title = Strumenti per tutti i componenti aggiuntivi

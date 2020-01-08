@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (Navegacion privada)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (Navegacion privada)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = Afichar las entresenhas sul site internet
 
@@ -98,3 +129,16 @@ search-one-offs-context-open-new-tab =
 search-one-offs-context-set-as-default =
     .label = Causir coma motor de cerca per defaut
     .accesskey = D
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = Mostrar l’editor en enregistrant
+    .accesskey = M
+bookmark-panel-done-button =
+    .label = Acabar
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 26em

@@ -4,7 +4,7 @@
 
 <!ENTITY firstrun_panel_title_welcome "Mirë se vini">
 <!ENTITY firstrun_urlbar_message2 "Faleminderit që zgjidhni &brandShortName;-in">
-<!ENTITY newfirstrun_urlbar_message "Mirë se vini te &brandShortName;">
+<!ENTITY newfirstrun_urlbar_message "Mirë se vini te &brandShortName;-i">
 <!ENTITY firstrun_urlbar_subtext2 "Një shfletues modern për celularë, nga Mozilla, enti jofitimprurës i përkushtuar një web-i të lirë dhe të hapur.">
 <!ENTITY newfirstrun_urlbar_subtext "I shpejtë, privat, dhe krah jush.">
 <!ENTITY firstrun_panel_title_privacy "Privatësi">
@@ -21,21 +21,22 @@
 <!ENTITY firstrun_data_message "Më pak të dhëna, më shumë kursim">
 <!ENTITY firstrun_data_subtext2 "Bllokojini figurat, që të harxhoni më pak të dhëna, në çdo sajt që vizitoni.">
 <!ENTITY firstrun_sync_title "Sync">
+<!ENTITY firstrun_sync_message3 "Njëkohësoni faqerojtësit, historikun dhe fjalëkalimet te telefoni juaj.">
 <!ENTITY updatednewfirstrun_sync_title "Llogari">
 <!ENTITY firstrun_sync_message2 "Vazhdoni atje ku e latë.">
-<!ENTITY firstrun_sync_message3 "Njëkohësoni faqerojtësit, historikun dhe fjalëkalimet te telefoni juaj.">
 <!ENTITY firstrun_sync_subtext2 "Përdoreni Sync-un që të gjeni faqerojtës, fjalëkalime dhe të tjera gjëra që ruani në &brandShortName; në krejt pajisjet tuaja.">
 <!ENTITY newfirstrun_sync_subtext "Njëkohësoni te Firefox-i për desktop gjëra që ruani në celular, privatisht dhe në mënyrë të parrezik.">
-<!ENTITY updatednewfirstrun_sync_subtext "Bëni hyrjen në llogarinë tuaj që të përfitoni maksimumin prej &brandShortName;-it">
-<!ENTITY firstrun_signin_message "Lidhuni, fillojani">
 <!ENTITY firstrun_sendtab_title "Dërgoje Skedën">
 <!ENTITY firstrun_sendtab_message "Ndani skeda me të tjerë nga celulari në desktop — aty për aty.">
+<!ENTITY updatednewfirstrun_sync_subtext "Bëni hyrjen në llogarinë tuaj që të përfitoni maksimumin prej &brandShortName;-it">
+<!ENTITY firstrun_signin_message "Lidhuni, fillojani">
 <!ENTITY firstrun_signin_button "Bëni hyrjen, që të Njëkohësohet">
 <!ENTITY newfirstrun_signin_button "Aktivizo Sync-un">
 <!ENTITY updatednewfirstrun_signin_button "Bëni hyrjen te &brandShortName;-in">
-<!ENTITY onboard_start_button_browser "Filloni të Shfletoni">
+<!ENTITY  onboard_start_button_browser "Filloni të Shfletoni">
 <!ENTITY firstrun_button_notnow "Jo tani">
 <!ENTITY firstrun_button_next "Pasuesi">
+<!ENTITY firstrun_signup_button "Regjistrohuni">
 
 <!ENTITY firstrun_signin_button2 "Hyni">
 
@@ -50,8 +51,6 @@
 <!ENTITY firstrun_account_title "Ju">
 <!ENTITY firstrun_account_message "E keni &brandShortName;-in në një pajisje tjetër?">
 
-<!ENTITY firstrun_signup_button "Regjistrohuni">
-
 <!ENTITY  onboard_start_restricted1 "Jini i parrezikuar dhe në kontroll, me këtë version të thjeshtëzuar të &brandShortName;.">
 
 <!-- Localization note: These are used as the titles of different pages on the home screen.
@@ -64,7 +63,7 @@
 <!-- Localization note: Shown in a snackbar when tab is loaded from cache while device was offline. -->
 <!ENTITY  tab_offline_version "Po shfaqet versoni offline">
 
-<!ENTITY  crash_reporter_title "Njoftues Vithisjesh &brandShortName;">
+<!ENTITY  crash_reporter_title "Njoftues Vithisjesh &brandShortName;-i">
 <!ENTITY  crash_message2 "&brandShortName; pati një problem dhe u vithis. Skedat tuaja do të duhej t’i shihnit te faqja e Fillimit të &brandShortName;, kur ta rinisni.">
 <!ENTITY  crash_send_report_message3 "Tregojini &vendorShortName;-s për këtë vithisje, që kështu të mund ta ndreqin">
 <!ENTITY  crash_include_url2 "Përfshi adresën e faqes ku gjendesha">
@@ -75,7 +74,7 @@
 <!ENTITY  crash_closing_alert "Të dilet pa dërguar një njoftim vithisjeje?">
 <!ENTITY  sending_crash_report "Po dërgohet njoftimi i vithisjes\u2026">
 <!ENTITY  crash_close_label "Mbylleni">
-<!ENTITY  crash_restart_label "Rinise &brandShortName;">
+<!ENTITY  crash_restart_label "Riniseni &brandShortName;-in">
 <!-- Localization note (crash_notification_title, crash_notification_message, crash_notification_negative_button_text)
      Text displayed in a system notification to allow starting the Crash Reporter (Android Q and later).-->
 <!ENTITY  crash_notification_title "&brandShortName;-i u vithis">
@@ -192,7 +191,7 @@
 <!-- Localization note (overlay_share_bookmark_btn_label) : This string is
      used in the share overlay menu to select an action. It is the verb
      "to bookmark", not the noun "a bookmark". -->
-<!ENTITY overlay_share_bookmark_btn_label "Faqeruajeni">
+<!ENTITY overlay_share_bookmark_btn_label "Faqeruaje">
 <!ENTITY overlay_share_bookmark_btn_label_already "E faqeruajtur një herë">
 <!ENTITY overlay_share_send_other "Dërgojeni në pajisje të tjera">
 
@@ -418,7 +417,7 @@ shown from Android O while a tab is being queued.-->
 <!-- Localization note (pref_private_data_openTabs): Open tabs is an option in
      the Clear Private Data  dialog and refers to currently open tabs. -->
 <!ENTITY pref_private_data_openTabs "Skeda të hapura">
-<!ENTITY pref_private_data_history2 "Historik shfletimesh">
+<!ENTITY pref_private_data_history2 "Historik shfletimi">
 <!ENTITY pref_private_data_searchHistory "Historik kërkimesh">
 <!ENTITY pref_private_data_formdata2 "Historik formularësh">
 <!ENTITY pref_private_data_cookies2 "Cookies &amp; hyrje aktive">
@@ -442,14 +441,14 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY pref_dialog_remove "Hiqe">
 <!ENTITY pref_dialog_activitystream_header_content "Lëndë shtesë">
 <!ENTITY pref_dialog_activitystream_recentBookmarks "Faqerojtës Së Fundi">
-<!ENTITY pref_dialog_activitystream_visited "Vizituar">
+<!ENTITY pref_dialog_activitystream_visited "Të vizituara">
 
 <!ENTITY pref_search_last_toast "Nuk mund të hiqni ose të çaktivizoni edhe motorin tuaj të fundit të kërkimeve.">
 
 <!ENTITY pref_panels_show "Shfaqe">
 <!ENTITY pref_panels_hide "Fshihe">
 <!ENTITY pref_panels_reorder "Ndryshojuni renditjen">
-<!ENTITY pref_panels_move_up "Ngjite sipër">
+<!ENTITY pref_panels_move_up "Shpjere sipër">
 <!ENTITY pref_panels_move_down "Zbrite poshtë">
 
 <!ENTITY datareporting_notification_title "Statistika &amp; të dhëna &brandShortName;">
@@ -475,7 +474,7 @@ shown from Android O while a tab is being queued.-->
 <!-- Localization note (datareporting_crashreporter_title_short) : This string matches
      (crashReporterSection.label) in en-US/chrome/browser/preferences/advanced.dtd.-->
 <!ENTITY datareporting_crashreporter_title_short "Njoftues Vithisjesh">
-<!ENTITY datareporting_wifi_title2 "Shërbime Lokalizimi &vendorShortName;">
+<!ENTITY datareporting_wifi_title2 "Shërbim Lokalizimi &vendorShortName;">
 <!ENTITY datareporting_wifi_geolocation_summary4 "Ndihmojeni &vendorShortName;-n të hartëzojë botën! Ndani të dhëna të përafërta të vendndodhjes së Wi-Fi-it dhe celularit për pajisjen tuaj, që të përmirësohet shërbimi ynë i gjeovendëzimit.">
 <!-- Localization note (datareporting_notification_title ) : This will be the title
      of the notification shown whenever the user has enabled data reporting and the stumbler
@@ -519,7 +518,7 @@ shown from Android O while a tab is being queued.-->
 <!ENTITY tabs_private "Private">
 <!ENTITY set_image_fail "S’arrihet të vendoset figurë">
 <!ENTITY set_image_path_fail "S’arrihet të ruhet figurë">
-<!ENTITY set_image_chooser_title "Vendose Figurën Si">
+<!ENTITY set_image_chooser_title "Vendoseni Figurën Si">
 
 <!-- Localization note (find_text, find_prev, find_next, find_close) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -530,7 +529,7 @@ shown from Android O while a tab is being queued.-->
 
 <!-- Localization note (find_error) : Error message shown when there is no result for the
      searched for text in this webpage -->
-<!ENTITY find_error "Frazë që s’gjendet">
+<!ENTITY find_error "Togfjalësh që s’gjendet">
 
 <!-- Localization note (media_sending_to, media_play, media_pause, media_stop) : These strings are used
      as alternate text for accessibility. They are not visible in the UI. -->
@@ -697,7 +696,6 @@ shown from Android O while a tab is being queued.-->
 
 <!-- Site identity popup -->
 <!ENTITY identity_connected_to "Jeni lidhur me">
-
 <!-- Localization note (identity_run_by) : This string appears between a
 domain name (above) and an organization name (below). E.g.
 
@@ -716,7 +714,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- Mixed content notifications in site identity popup -->
 <!ENTITY mixed_content_blocked_all1 "&brandShortName; ka bllokuar në këtë faqe lëndë jo të sigurt.">
 <!ENTITY mixed_content_blocked_some1 "&brandShortName; -u ka bllokuar në këtë faqe ca lëndë jo të sigurt.">
-<!ENTITY mixed_content_display_loaded1 "Pjesë të kësaj faqeje (fjala vjen, figura) s’janë të sigurta.">
+<!ENTITY mixed_content_display_loaded1 "Pjesë të kësaj faqeje (fjala vjen, figura) s\&apos;janë të sigurta.">
 <!ENTITY mixed_content_protection_disabled1 "E keni çaktivizuar mbrojtjejn nga lëndë jo e sigurt.">
 
 <!-- Tracking content notifications in site identity popup -->
@@ -885,17 +883,16 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_message "Faqeruani objekte Reader View, që t’i lexoni edhe pa internet.">
 <!ENTITY helper_triple_readerview_open_button "Shtoje te Faqerojtësit">
 
-<!-- LOCALIZATION NOTE (activity_stream_signin_title, activity_stream_signin_description, activity_stream_signup_button,
-activity_stream_signin_prompt, activity_stream_signin_prompt_button):
+<!-- LOCALIZATION NOTE (activity_stream_signin_title, activity_stream_signin_description, activity_stream_signin_button):
 - These labels are shown in the Activity Stream recommending the user to sign in. -->
-<!ENTITY activity_stream_signin_title "Mirë se vini te &brandShortName;">
+<!ENTITY activity_stream_signin_title "Mirë se vini te &brandShortName;-i">
 <!ENTITY activity_stream_signin_description "Filloni të njëkohësoni faqerojtës, fjalëkalime, etj me llogarinë tuaj Firefox.">
-<!ENTITY activity_stream_signin_button "Hyni">
-
 <!ENTITY activity_stream_signup_button "Regjistrohuni">
 <!ENTITY activity_stream_signin_prompt "Keni tashmë një llogari?">
 <!-- LOCALIZATION NOTE (activity_stream_signin_prompt_button): To be used in continuation of activity_stream_signin_prompt. -->
 <!ENTITY activity_stream_signin_prompt_button "Hyni.">
+
+<!ENTITY activity_stream_signin_button "Hyni">
 
 <!ENTITY activity_stream_topsites "Sajte Kryesues">
 <!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->
@@ -907,10 +904,10 @@ activity_stream_signin_prompt, activity_stream_signin_prompt_button):
 
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_bookmarked): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
-<!ENTITY activity_stream_highlight_label_bookmarked "Faqeruajtur">
+<!ENTITY activity_stream_highlight_label_bookmarked "Të faqeruajtura">
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_visited): This label is shown in the Activity
 Stream list for highlights sourced from th user's bookmarks. -->
-<!ENTITY activity_stream_highlight_label_visited "Vizituar">
+<!ENTITY activity_stream_highlight_label_visited "Të vizituara">
 <!-- LOCALIZATION NOTE (activity_stream_highlight_label_trending): This label is shown in the Activity Stream list for highlights sourced from a recommendations engine. -->
 <!ENTITY activity_stream_highlight_label_trending "Në modë">
 <!-- LOCALIZATION NOTE (activity_stream_highlights_empty): This text is shown when we could not find highlights for this user. This is also shown on first run. -->
@@ -920,7 +917,7 @@ Stream list for highlights sourced from th user's bookmarks. -->
 and allows hiding a URL/page from highlights or topsites. The page remains in history/bookmarks, but
 is simply hidden from the Activity Stream panel. -->
 <!ENTITY activity_stream_remove "Hiqe">
-<!ENTITY activity_stream_delete_history "Fshije prej Historiku">
+<!ENTITY activity_stream_delete_history "Fshije nga Historiku">
 
 <!ENTITY private_tab_panel_title "Shfletim Privat + Mbrojtje Nga Gjurmimet">
 <!ENTITY private_tab_panel_description "&brandShortName;-i bllokon pjesë faqesh që mund të gjurmojnë veprimtarinë tuaj të shfletimit.">
@@ -943,13 +940,13 @@ See also https://bug1409261.bmoattachments.org/attachment.cgi?id=8919897 -->
 Picture-in-picture mini window -->
 <!ENTITY pip_play_button_title "Luaje">
 <!ENTITY pip_play_button_description "Rimerr luajtjen">
-<!ENTITY pip_pause_button_title "Pushim">
+<!ENTITY pip_pause_button_title "Ndalesë">
 <!ENTITY pip_pause_button_description "Pushoje luajtjen">
 
 <!ENTITY pref_notification_settings_link "Administroni rregullime njoftimesh">
 <!-- Notification channels names -->
 <!ENTITY default_notification_channel2 "Shfletues">
-<!ENTITY mls_notification_channel "Shërbim Lokalizimi i &vendorShortName;">
+<!ENTITY mls_notification_channel "Shërbim Lokalizimi &vendorShortName;">
 <!ENTITY download_notification_channel "Shkarkime">
 <!ENTITY media_notification_channel2 "Tinguj dhe video">
 <!-- These push notifications come without a specific channel and/or name from Leanplum -->
@@ -959,4 +956,4 @@ Picture-in-picture mini window -->
 <!-- LOCALIZATION NOTE (site_notifications_channel): This is for system notifications displayed by
 web sites through the HTML Notifications API. -->
 <!ENTITY site_notifications_channel "Njoftime sajti">
-<!ENTITY crash_handler_notifications_channel "Raportues Vithisjesh &brandShortName;-i">
+<!ENTITY crash_handler_notifications_channel "Njoftues Vithisjesh &brandShortName;-i">

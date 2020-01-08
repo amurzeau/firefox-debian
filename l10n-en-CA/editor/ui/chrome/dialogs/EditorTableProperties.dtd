@@ -57,13 +57,13 @@
 <!ENTITY cellTextWrap.label               "Text Wrap:">
 <!ENTITY cellTextWrap.accessKey           "T">
 <!ENTITY cellWrap.label                   "Wrap">
-<!ENTITY cellNoWrap.label                 "Don't wrap">
+<!ENTITY cellNoWrap.label                 "Don’t wrap">
 <!ENTITY cellAlignTop.label               "Top">
 <!ENTITY cellAlignMiddle.label            "Middle">
 <!ENTITY cellAlignBottom.label            "Bottom">
 <!ENTITY cellAlignJustify.label           "Justify">
 <!ENTITY cellInheritColor.label           "(Let table colour show through)">
-<!ENTITY cellUseCheckboxHelp.label        "Use tickboxes to determine which properties are applied to all selected cells">
+<!ENTITY cellUseCheckboxHelp.label        "Use checkboxes to determine which properties are applied to all selected cells">
 
 <!-- Used in both Table and Cell panels  -->
 <!ENTITY size.label                       "Size">

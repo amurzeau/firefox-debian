@@ -86,6 +86,7 @@ newtab-menu-show-privacy-info = हमारे प्रायोजक और 
 
 newtab-privacy-modal-button-done = संपन्न
 newtab-privacy-modal-header = आपकी गोपनीयता मायने रखती है।
+newtab-privacy-modal-link = जानिए नए टैब पर गोपनीयता कैसे काम करती है
 
 
 
@@ -118,6 +119,7 @@ newtab-menu-open-file = फ़ाइल खोलें
 
 newtab-label-visited = देखी गई
 newtab-label-bookmarked = बुकमार्क लगाया हुआ
+newtab-label-removed-bookmark = बुकमार्क हटाया गया
 newtab-label-recommended = लोकप्रिय
 newtab-label-saved = { -pocket-brand-name } में सहेजा
 newtab-label-download = डाउनलोड की गई
@@ -172,6 +174,7 @@ newtab-discovery-empty-section-topstories-loading = लोड हो रहा �
 newtab-pocket-read-more = लोकप्रिय विषय:
 newtab-pocket-more-recommendations = अधिक अनुशंसाएँ
 newtab-pocket-how-it-works = यह किस प्रकार काम करता है
+newtab-pocket-whats-pocket = { -pocket-brand-name } क्या है?
 newtab-pocket-cta-button = { -pocket-brand-name } प्राप्त करें
 newtab-pocket-cta-text = अपने पसंदीद कहानियाँ { -pocket-brand-name } में सहेजें, और आकर्षक पढ़ाई के साथ अपने दिमाग को शक्ति दें।
 

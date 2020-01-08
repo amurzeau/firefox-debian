@@ -3,11 +3,11 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 
-<!ENTITY migrationWizard.title          "Importues">
+<!ENTITY migrationWizard.title          "Ndihmës Importimesh">
 
-<!ENTITY importFrom.label               "Importo Mundësi, Faqerojtës, Historik, Fjalëkalime dhe të dhëna të tjera prej:">
+<!ENTITY importFrom.label               "Importo Mundësi, Faqerojtës, Historik, Fjalëkalime dhe të dhëna të tjera nga:">
 <!ENTITY importFromUnix.label           "Importo Parapëlqime, Faqerojtës, Historik, Fjalëkalime dhe të dhëna të tjera prej:">
-<!ENTITY importFromBookmarks.label      "Importo Faqerojtës prej:">
+<!ENTITY importFromBookmarks.label      "Importo Faqerojtës nga:">
 
 <!ENTITY importFromIE.label             "Microsoft Internet Explorer">
 <!ENTITY importFromIE.accesskey         "M">
@@ -42,7 +42,7 @@
 <!ENTITY migrating.label                "Po importohen objektet vijuese…">
 
 <!ENTITY selectProfile.title            "Përzgjidhni Profil">
-<!ENTITY selectProfile.label            "Është e mundur të importohen profilet vijues prej: ">
+<!ENTITY selectProfile.label            "Është e mundur të importohen profilet vijues:">
 
 <!ENTITY done.title                     "Importim i Plotësuar">
 <!ENTITY done.label                     "Objektet vijuese u importuan me sukses:">

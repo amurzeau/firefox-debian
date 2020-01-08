@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (التصفح الخاص)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (التصفح الخاص)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = اعرض معلومات الموقع
 
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = افتح لوحة الرسائل
 urlbar-geolocation-notification-anchor =
     .tooltiptext = افتح لوحة طلب المكان
+urlbar-xr-notification-anchor =
+    .tooltiptext = افتح لوحة تصاريح الواقع الافتراضي
 urlbar-storage-access-anchor =
     .tooltiptext = افتح لوحة تصاريح نشاط التصفّح
 urlbar-translate-notification-anchor =
@@ -49,6 +82,8 @@ urlbar-addons-notification-anchor =
     .tooltiptext = افتح لوحة رسائل تنصيب الإضافات
 urlbar-geolocation-blocked =
     .tooltiptext = لقد حجبت معلومات مكانك عن هذا الموقع.
+urlbar-xr-blocked =
+    .tooltiptext = لقد حجبت الوصول إلى جهاز الواقع الافتراضي عن هذا الموقع.
 urlbar-web-notifications-blocked =
     .tooltiptext = لقد حجبت التنبيهات عن هذا الموقع.
 urlbar-camera-blocked =
@@ -90,6 +125,9 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = الآن فقط ابحث باستعمال:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -102,3 +140,19 @@ search-one-offs-context-open-new-tab =
 search-one-offs-context-set-as-default =
     .label = اجعله محرك البحث الافتراضي
     .accesskey = ف
+search-one-offs-context-set-as-default-private =
+    .label = اضبطه ليكون محرّك البحث المبدئي في النوافذ الخاصة
+    .accesskey = ن
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = اعرض المحرر عند الحفظ
+    .accesskey = ظ
+bookmark-panel-done-button =
+    .label = تمّ
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

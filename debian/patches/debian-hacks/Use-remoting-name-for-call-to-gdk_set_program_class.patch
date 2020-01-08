@@ -8,7 +8,7 @@ Closes: #907574
  1 file changed, 3 insertions(+), 4 deletions(-)
 
 diff --git a/widget/gtk/nsAppShell.cpp b/widget/gtk/nsAppShell.cpp
-index 0daa78fdbbad..49038d0bb1c8 100644
+index 0daa78fdbba..49038d0bb1c 100644
 --- a/widget/gtk/nsAppShell.cpp
 +++ b/widget/gtk/nsAppShell.cpp
 @@ -24,6 +24,7 @@

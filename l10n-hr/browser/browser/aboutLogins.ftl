@@ -15,11 +15,6 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Pretraži prijave
 create-login-button = Stvori novu prijavu
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = Favicon za { $title }
 fxaccounts-sign-in-text = Dohvati svoje lozinke na drugim uređajima
 fxaccounts-sign-in-button = Prijavite se u { -sync-brand-short-name }
 fxaccounts-avatar-button =
@@ -58,13 +53,10 @@ login-list-last-used-option = Posljednji put korišteno
 login-list-intro-title = Nema pronađenih prijava
 login-list-intro-description = Kada spremite lozinku u { -brand-product-name }, pojavit će se ovdje.
 about-logins-login-list-empty-search-title = Nema prijava
-about-logins-login-list-empty-search-description = Nema rezultata koji odgovaraju vašoj pretrazi.
+about-logins-login-list-empty-search-description = Nema rezultata koji odgovaraju tvojoj pretrazi.
 login-list-item-title-new-login = Nova prijava
 login-list-item-subtitle-new-login = Unesite svoje podatke za prijavu
 login-list-item-subtitle-missing-username = (nema korisničkog imena)
-about-logins-list-item-warning-icon =
-    .alt = Ikona za upozorenje
-    .title = Hakirana web stranica
 about-logins-list-item-breach-icon =
     .title = Hakirana web stranica
 
@@ -83,6 +75,7 @@ about-logins-intro-import = Ako su tvoje prijave spremljene u jednom drugom preg
 login-item-new-login-title = Stvorite novu prijavu
 login-item-edit-button = Uredi
 login-item-delete-button = Obriši
+about-logins-login-item-remove-button = Ukloni
 login-item-origin-label = Adresa web stranice
 login-item-origin =
     .placeholder = https://www.example.com
@@ -126,6 +119,7 @@ enable-password-sync-preferences-button =
            *[other] Posjetite { -sync-brand-short-name } mogućnosti
         }
     .accesskey = m
+confirm-delete-dialog-title = Obriši ovu prijavu?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = Ne pitaj me ponovo
     .accesskey = N
@@ -135,9 +129,10 @@ about-logins-enable-password-sync-dont-ask-again-button =
 confirmation-dialog-cancel-button = Otkaži
 confirmation-dialog-dismiss-button =
     .title = Otkaži
-confirm-delete-dialog-title = Obriši ovu prijavu?
+about-logins-confirm-remove-dialog-title = Ukloni ovu prijavu?
 confirm-delete-dialog-message = Ova radnja se neće moći poništiti.
 confirm-delete-dialog-confirm-button = Obriši
+about-logins-confirm-remove-dialog-confirm-button = Ukloni
 confirm-discard-changes-dialog-title = Odbaci nespremljene izmjene?
 confirm-discard-changes-dialog-message = Sve nespremljene izmjene će biti izgubljene.
 confirm-discard-changes-dialog-confirm-button = Odbaci
@@ -151,11 +146,6 @@ breach-alert-dismiss =
 
 ## Error Messages
 
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = Zapis za { $loginTitle } s tim korisničkim imenom već postoji.
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:

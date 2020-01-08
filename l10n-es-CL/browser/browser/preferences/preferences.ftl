@@ -561,6 +561,12 @@ search-keyword-warning-bookmark = Has escogido una palabra clave que está siend
 ## Containers Section
 
 containers-back-link = « Retroceder
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Regresar a Opciones
+           *[other] Regresar a Preferencias
+        }
 containers-header = Pestañas contenedoras
 containers-add-button =
     .label = Añadir nuevo contenedor
@@ -787,7 +793,7 @@ history-remember-option-custom =
 history-remember-description = { -brand-short-name } recordará su historial de navegación, descargas, formularios y de búsquedas.
 history-dontremember-description = { -brand-short-name } usará las mismas configuraciones que la navegación privada, y no recordará historial alguno de páginas que visites.
 history-private-browsing-permanent =
-    .label = Siempre usar el modo de navegación privada
+    .label = Siempre usar el modo de navegación privada ("permanente")
     .accesskey = p
 history-remember-browser-option =
     .label = Recordar historial de navegación y descargas
@@ -968,6 +974,10 @@ permissions-location = Ubicación
 permissions-location-settings =
     .label = Ajustes…
     .accesskey = l
+permissions-xr = Realidad virtual
+permissions-xr-settings =
+    .label = Ajustes…
+    .accesskey = t
 permissions-camera = Cámara
 permissions-camera-settings =
     .label = Ajustes…
@@ -1016,6 +1026,7 @@ permissions-a11y-privacy-link = Aprender más
 collection-header = Recolección y uso de datos de { -brand-short-name }
 collection-description = Nos esforzamos por proveerte con opciones y recolectar solo lo que necesitamos para proveer y mejorar { -brand-short-name } para todos. Siempre solicitamos permiso antes de recibir información personal.
 collection-privacy-notice = Política de privacidad
+collection-health-report-telemetry-disabled-link = Aprender más
 collection-health-report =
     .label = Permitir a { -brand-short-name } enviar datos técnicos y de interacción a { -vendor-short-name }
     .accesskey = r

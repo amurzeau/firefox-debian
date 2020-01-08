@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Tilläggshanterare
+addons-page-title = Tilläggshanterare
 search-header =
     .placeholder = Sök på addons.mozilla.org
     .searchbuttonlabel = Sök
@@ -344,6 +345,10 @@ remove-addon-disabled-button = Kan inte tas bort <a data-l10n-name="link">Varfö
 disable-addon-button = Inaktivera
 enable-addon-button = Aktivera
 expand-addon-button = Fler alternativ
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = Aktivera
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Inställningar
@@ -447,5 +452,8 @@ discover-heading = Anpassa { -brand-short-name }
 shortcuts-heading = Hantera genvägar för tillägg
 theme-heading-search-label = Hitta fler teman
 extension-heading-search-label = Hitta fler tillägg
+default-heading-search-label = Hitta fler tillägg
 addons-heading-search-input =
     .placeholder = Sök på addons.mozilla.org
+addon-page-options-button =
+    .title = Verktyg för alla tillägg

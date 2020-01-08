@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Управление на добавките
+addons-page-title = Управление на добавките
 search-header =
     .placeholder = търсене в addons.mozilla.org
     .searchbuttonlabel = Търсене
@@ -406,3 +407,5 @@ theme-heading-search-label = Още теми
 extension-heading-search-label = Още разширения
 addons-heading-search-input =
     .placeholder = търсене в addons.mozilla.org
+addon-page-options-button =
+    .title = Инструменти за всички добавки

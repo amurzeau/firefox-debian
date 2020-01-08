@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Ardoer an askouezhioù
+addons-page-title = Ardoer an askouezhioù
 search-header =
     .placeholder = Klask war addons.mozilla.org
     .searchbuttonlabel = Klask
@@ -293,6 +294,12 @@ go-back-button =
 
 ## Recommended add-ons page
 
+discopane-notice-learn-more = Gouzout hiroc'h
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Implijerien: { $dailyUsers }
+install-extension-button = Ouzhpennañ da { -brand-product-name }
 
 ## Add-on actions
 
@@ -339,3 +346,5 @@ theme-heading-search-label = Kaout muioc'h a neuzioù
 extension-heading-search-label = Kavout muioc'h a askouezhioù
 addons-heading-search-input =
     .placeholder = Klask war addons.mozilla.org
+addon-page-options-button =
+    .title = Ostilhoù evit an holl askouezhioù

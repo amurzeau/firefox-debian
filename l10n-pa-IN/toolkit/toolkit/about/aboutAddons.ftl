@@ -4,6 +4,7 @@
 
 addons-window =
     .title = ਐਡ-ਆਨ ਮੈਨੇਜਰ
+addons-page-title = ਐਡ-ਆਨ ਮੈਨੇਜਰ
 search-header =
     .placeholder = addons.mozilla.org ਨੂੰ ਖੋਜੋ
     .searchbuttonlabel = ਖੋਜੋ
@@ -421,3 +422,5 @@ theme-heading-search-label = ਹੋਰ ਥੀਮ ਲੱਭੋ
 extension-heading-search-label = ਹੋਰ ਇਕਸਟੈਨਸ਼ਨਾਂ ਲੱਭੋ
 addons-heading-search-input =
     .placeholder = addons.mozilla.org ਨੂੰ ਖੋਜੋ
+addon-page-options-button =
+    .title = ਸਭ ਐਡ-ਆਨ ਲਈ ਟੂਲ

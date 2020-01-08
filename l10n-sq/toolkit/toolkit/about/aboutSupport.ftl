@@ -56,22 +56,22 @@ app-basics-build-config = Formësim Montimi
 app-basics-user-agent = Agjent Përdoruesi
 app-basics-os = OS
 app-basics-memory-use = Përdorim Kujtese
-app-basics-performance = Performancë
+app-basics-performance = Punim
 app-basics-service-workers = Service Workers të Regjistruar
 app-basics-profiles = Profile
 app-basics-launcher-process-status = Proces Nisësi
 app-basics-multi-process-support = Dritare Multiproces
 app-basics-remote-processes-count = Procese të Largët
-app-basics-enterprise-policies = Rregulla të Ndërmarrjes
+app-basics-enterprise-policies = Rregulla Në Nivel Ndërmarrjeje
 app-basics-location-service-key-google = Ky Shërbimi Vendndodhjesh Google
 app-basics-safebrowsing-key-google = Kyç Google Safebrowsing
 app-basics-key-mozilla = Kyç Mozilla Location Service
 app-basics-safe-mode = Mënyrë e Sigurt
 show-dir-label =
     { PLATFORM() ->
-        [macos] Shfaqe Në Finder
+        [macos] Shfaqe në Finder
         [windows] Hape Dosjen
-       *[other] Hap Drejtorinë
+       *[other] Hape Drejtorinë
     }
 modified-key-prefs-title = Parapëlqime të Rëndësishme të Ndryshuara
 modified-prefs-name = Emër
@@ -134,8 +134,10 @@ media-device-channels = Kanale
 media-device-rate = Shpeshti
 media-device-latency = Vonesë
 media-capabilities-title = Aftësi Media
+# List all the entries of the database.
+media-capabilities-enumerate = Numërtoni bazë të dhënash
 
-##
+
 
 intl-title = Ndërkombëtarizim & Përkthim
 intl-app-title = Rregullime Aplikacionesh
@@ -146,6 +148,22 @@ intl-locales-default = Gjuhë Parazgjedhje
 intl-os-title = Sistem Operativ
 intl-os-prefs-system-locales = Gjuhë Sistemi
 intl-regional-prefs = Parapëlqime Rajoni
+
+## Remote Debugging
+##
+## The Firefox remote protocol provides low-level debugging interfaces
+## used to inspect state and control execution of documents,
+## browser instrumentation, user interaction simulation,
+## and for subscribing to browser-internal events.
+##
+## See also https://firefox-source-docs.mozilla.org/remote/
+
+remote-debugging-title = Diagnostikim Së Largëti (Protokolli Chromium)
+remote-debugging-accepting-connections = Me Pranim Lidhjesh
+remote-debugging-url = URL
+
+
+
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -259,6 +277,7 @@ has-privileged-user-namespaces = Emërhapësira Përdoruesi për procese të pri
 can-sandbox-content = Mbajtje Brenda Bankëprovës e Proceseve të Lëndës
 can-sandbox-media = Mbajtje Brenda Bankëprovës e Shtojcave Për Media
 content-sandbox-level = Shkallë Mbajtjeje Brenda Bankëprovës e Proceseve të Lëndës
+effective-content-sandbox-level = Shkallë Efektive Mbajtjeje Brenda Bankëprovës e Proceseve të Lëndës
 sandbox-proc-type-content = lëndë
 sandbox-proc-type-file = lëndë kartele
 sandbox-proc-type-media-plugin = shtojcë mediash

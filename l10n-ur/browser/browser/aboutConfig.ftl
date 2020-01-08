@@ -10,6 +10,18 @@ about-config-warning-button = مینے خطرہ قبول کیا
 about-config2-title = اعلی درجے کی تشکیلات
 about-config-search-input =
     .placeholder = تلاش کریں
+
+## These strings appear on the warning you see when first visiting about:config.
+
+about-config-intro-warning-title = احتیاط سے آگے بڑھیں
+about-config-intro-warning-checkbox = مجھے انتباہ کریں جب میں ان ترجیحات تک رسائی حاصل کرنے کی کوشش کروں
+about-config-intro-warning-button = خطرے کو قبول کریں اور جاری رکھیں
+
+
+
+about-config-page-title = اعلی درجے کی ترجیحات
+about-config-search-input1 =
+    .placeholder = ترجیحات  کا نام تلاش کریں
 about-config-show-all = تمام دکھائیں
 about-config-pref-add = شامل کریں
 about-config-pref-toggle = ٹوگل کریں
@@ -20,7 +32,7 @@ about-config-pref-delete = حذف کریں
 about-config-pref-add-button =
     .title = شامل کریں
 about-config-pref-toggle-button =
-    .title = بدلیں
+    .title = ٹوگل
 about-config-pref-edit-button =
     .title = تدوین
 about-config-pref-save-button =
@@ -43,3 +55,5 @@ about-config-pref-add-type-string = اسٹرنگ
 ## Variables:
 ##   $value (String): The full value of the preference.
 
+about-config-pref-accessible-value-default =
+    .aria-label = { $value }   (طے شدہ)

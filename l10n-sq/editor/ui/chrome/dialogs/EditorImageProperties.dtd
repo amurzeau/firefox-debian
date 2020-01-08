@@ -13,7 +13,7 @@
 <!ENTITY locationEditField.label "Vendndodhje Figure:">
 <!ENTITY locationEditField.accessKey "V">
 <!ENTITY locationEditField.tooltip "Shkruani emër ose vendndodhje kartele">
-<!ENTITY locationEditField.shortenedDataURI "URI i shkurtuar të dhënash (kopjimi do të vendosë në të papastër URI-n e plotë)">
+<!ENTITY locationEditField.shortenedDataURI "URI i shkurtuar të dhënash (kopjimi do të hedhë në të papastër URI-n e plotë)">
 <!ENTITY title.label "Ndihmëz:">
 <!ENTITY title.accessKey "N">
 <!ENTITY title.tooltip "Atributi html 'title' që shfaqet si ndihmëz">
@@ -30,7 +30,7 @@
 <!ENTITY actualSize.label "Madhësia Faktike:">
 <!ENTITY actualSizeRadio.label "Madhësia Faktike">
 <!ENTITY actualSizeRadio.accessKey "M">
-<!ENTITY actualSizeRadio.tooltip "Rikthehuni tek madhësia e vërtetë e figurës">
+<!ENTITY actualSizeRadio.tooltip "Rikthejeni tek madhësia e vërtetë e figurës">
 <!ENTITY customSizeRadio.label "Madhësi Vetjake">
 <!ENTITY customSizeRadio.accessKey "V">
 <!ENTITY customSizeRadio.tooltip "Ndryshoni përmasa figure siç shfaqet tek faqja">

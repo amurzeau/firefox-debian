@@ -25,7 +25,7 @@ onboarding-welcome-modal-get-body = Vous avez le navigateur. <br/>Profitez maint
 onboarding-welcome-modal-supercharge-body = Boostez votre protection de la vie privée.
 onboarding-welcome-modal-privacy-body = Vous avez le navigateur. Ajoutons davantage de protection de la vie privée.
 onboarding-welcome-modal-family-learn-more = En savoir plus sur la famille de produits { -brand-product-name }.
-onboarding-welcome-form-header = Commencer ici
+onboarding-welcome-form-header = Commencez ici
 onboarding-join-form-header = Rejoignez { -brand-product-name }
 onboarding-join-form-body = Saisissez votre adresse électronique pour vous lancer.
 onboarding-join-form-email =
@@ -53,8 +53,6 @@ onboarding-fullpage-form-email =
 onboarding-sync-welcome-header = Emportez { -brand-product-name } avec vous
 onboarding-sync-welcome-content = Accédez à vos marque-pages, votre historique, vos mots de passe et d’autres paramètres sur l’ensemble de vos appareils.
 onboarding-sync-welcome-learn-more-link = En savoir plus sur les comptes Firefox
-onboarding-sync-form-invalid-input = Adresse électronique valide requise
-onboarding-sync-legal-notice = En continuant, vous acceptez les <a data-l10n-name="terms">Conditions d’utilisation</a> et la <a data-l10n-name="privacy">Politique de confidentialité</a>.
 onboarding-sync-form-input =
     .placeholder = Adresse électronique
 onboarding-sync-form-continue-button = Continuer
@@ -132,6 +130,9 @@ onboarding-send-tabs-title = Envoyez-vous des onglets
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
 onboarding-send-tabs-text = L’envoi d’onglets partage instantanément des pages entre vos appareils sans avoir à copier, coller ou quitter le navigateur.
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text2 = Partagez facilement des pages entre vos divers appareils sans copier de liens ni quitter le navigateur.
 onboarding-send-tabs-button =
     Commencer à utiliser
     « Envoyer l’onglet »
@@ -141,9 +142,15 @@ onboarding-pocket-anywhere-button = Essayer { -pocket-brand-name }
 onboarding-lockwise-passwords-title = Emmenez vos mots de passe partout
 onboarding-lockwise-passwords-text2 = Conservez en sécurité les mots de passe que vous enregistrez et connectez-vous en toute simplicité à vos comptes avec { -lockwise-brand-name }.
 onboarding-lockwise-passwords-button2 = Obtenir l’application
+onboarding-lockwise-strong-passwords-title = Créez et stockez des mots de passe robustes
+onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } crée à la volée des mots de passe robustes et les enregistre tous en un seul endroit.
+onboarding-lockwise-strong-passwords-button = Gérer vos identifiants
 onboarding-facebook-container-title = Fixez les limites avec Facebook
 onboarding-facebook-container-text2 = { -facebook-container-brand-name } conserve votre profil séparé de tout le reste. Il est ainsi plus difficile pour Facebook de vous cibler avec des publicités.
 onboarding-facebook-container-button = Installer l’extension
+onboarding-import-browser-settings-title = Importez vos marque-pages, mots de passe et plus encore
+onboarding-import-browser-settings-text = Récupérez facilement vos sites et vos paramètres à partir de Chrome et commencez à naviguer immédiatement.
+onboarding-import-browser-settings-button = Importer des données de Chrome
 
 ## Message strings belonging to the Return to AMO flow
 

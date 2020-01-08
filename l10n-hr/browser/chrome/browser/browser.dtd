@@ -124,7 +124,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaSignIn.label "Prijavite se u &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "Otvori &syncBrand.shortName.label; postavke">
 <!ENTITY fxaSignInError.label "Ponovno povezivanje na &syncBrand.shortName.label;">
-<!ENTITY fxaUnverified.label "Potvrdite vaš račun">
+<!ENTITY fxaUnverified.label "Potvrdi tvoj račun">
 
 
 <!ENTITY togglePictureInPicture.key2 "}">
@@ -141,7 +141,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
  <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
      for the Firefox Account toolbar signin menu screen. -->
 <!ENTITY fxa.signin.callout.label "Uzmite Firefox sa sobom">
-<!ENTITY fxa.signin.description.label "Preuzmite svoje zabilješke, povijest, lozinke i druge postavke na sve vaše uređaje.">
+<!ENTITY fxa.signin.description.label "Preuzmi tvoje zabilješke, povijest, lozinke i druge postavke na sve tvoje uređaje.">
 <!ENTITY fxa.signin.button.label "Uključite &syncBrand.shortName.label;…">
 
 <!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
@@ -150,15 +150,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.unverified.description.label "Prije sinkronizacije morat ćete potvrditi svoj račun.">
 <!ENTITY fxa.unverified.button.label "Otvori &syncBrand.shortName.label; mogućnosti…">
 
-<!ENTITY pictureInPictureHideToggle.label "Sakrij prekidač za slika-u-sliku">
-<!ENTITY pictureInPictureHideToggle.accesskey "S">
-
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
-     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
      followed by the user's email. -->
 <!ENTITY fxa.menu.signedInAs.label "Prijavljen kao">
 <!ENTITY fxa.menu.manageAccount.label "Upravljanje računom…">
 <!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; mogućnosti…">
+
+<!ENTITY pictureInPictureHideToggle.label "Sakrij prekidač za slika-u-sliku">
+<!ENTITY pictureInPictureHideToggle.accesskey "S">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
@@ -170,11 +170,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.signin.label "Prijavi se u &brandProductName;">
 <!ENTITY fxa.menu.turnOnSync.label "Uključi &syncBrand.shortName.label;">
 <!ENTITY fxa.menu.firefoxServices.label "&brandProductName; usluge">
-
 <!ENTITY fxa.menu.account.label "Račun">
 <!ENTITY fxa.menu.settings.label "Postavke">
-<!ENTITY fxa.menu.accountSettings.label "O postavkama">
-<!ENTITY fxa.menu.signOut.label "Odjavi se …">
+<!ENTITY fxa.menu.accountSettings.label "Postavke računa">
+<!ENTITY fxa.menu.signOut.label "Odjavite se…">
 <!ENTITY fxa.menu.deviceSettings.label "Postavke uređaja">
 <!ENTITY fxa.menu.setupSync.label "Postavi &syncBrand.shortName.label; …">
 
@@ -255,7 +254,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.geolocationNotificationAnchor.tooltip     "Otvori ploču sa zahtjevima lokacije">
 <!ENTITY urlbar.autoplayNotificationAnchor.tooltip        "Otvori ploču za automatsku reprodukciju">
 <!ENTITY urlbar.addonsNotificationAnchor.tooltip          "Otvori ploču s informacijama o instaliranim dodacima">
-<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Upravljanje dozvolama za ekstrakciju canvasa">
+<!ENTITY urlbar.canvasNotificationAnchor.tooltip          "Upravljanje dozvolama za izdvajanje platna">
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Otvori ploču s informacijama o lokalnom pohranjivanju">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "Otvori ploču s informacijama o spremljenim lozinkama">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Upravljanje korištenjem priključaka">
@@ -266,9 +265,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Otvori okno Web autentifikacije">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Otvori okno s dozvolama za pregledavanje">
 
-<!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Upravljajte dijeljenjem vaše kamere i/ili mikrofona sa stranicom">
-<!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Upravljajte dijeljenjem vašeg mikrofona sa stranicom">
-<!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Upravljajte dijeljenjem vaših prozora ili zaslona sa stranicom">
+<!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "Upravljaj dijeljenjem tvoje kamere i/ili mikrofona sa stranicom">
+<!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "Upravljaj dijeljenjem tvog mikrofona sa stranicom">
+<!ENTITY urlbar.webRTCShareScreenNotificationAnchor.tooltip       "Upravljaj dijeljenjem tvojih prozora ili ekrana sa stranicom">
 
 <!ENTITY urlbar.servicesNotificationAnchor.tooltip        "Otvori ploču s informacijama o instalaciji">
 <!ENTITY urlbar.translateNotificationAnchor.tooltip       "Prevedi ovu stranicu">
@@ -280,16 +279,17 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "Ovoj ste stranici zabranili korištenje kamere.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Ovoj ste stranici zabranili korištenje mikrofona.">
-<!ENTITY urlbar.screenBlocked.tooltip            "Ovoj ste stranici zabranili dijeljenje vaše radne površine.">
-<!ENTITY urlbar.geolocationBlocked.tooltip       "Ovoj stranici ste zabranili pristup informaciji o vašoj lokaciji.">
+<!ENTITY urlbar.screenBlocked.tooltip            "Ovoj si stranici zabranio/la dijeljenje tvog ekrana.">
+<!ENTITY urlbar.geolocationBlocked.tooltip       "Ovoj si stranici zabranio/la pristup informacijama o tvojoj lokaciji.">
 <!ENTITY urlbar.webNotificationsBlocked.tooltip  "Ovoj ste stranici zabranili slanje obavijesti.">
 <!ENTITY urlbar.persistentStorageBlocked.tooltip "Ovoj ste stranici zabranili mogućnost trajne pohrane podataka.">
 <!ENTITY urlbar.popupBlocked.tooltip             "Blokirali ste pop-up prozore za ovu web stranicu.">
 <!ENTITY urlbar.autoplayMediaBlocked.tooltip     "Ovoj ste stranici zabranili automatsko reproduciranje medija sa zvukom.">
-<!ENTITY urlbar.canvasBlocked.tooltip            "Blokirali ste izvoz canvas podataka za ovu web stranicu.">
+<!ENTITY urlbar.canvasBlocked.tooltip            "Blokirao/la si izdvajanje podataka platna za ovu web stranicu.">
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Ovoj ste stranici zabranili korištenje Adobe Flash dodatka.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Blokirali ste MIDI pristup za ovu web stranicu.">
 <!ENTITY urlbar.installBlocked.tooltip           "Ovoj stranici ste zabranili instalaciju dodataka.">
+
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Prikaži povijest">
 
@@ -440,15 +440,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.showAll.tooltip "Prikaži sve kartice s ovoga uređaja">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
-<!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Uključite sinkronizaciju kartica da biste vidjeli kartice s vaših ostalih uređaja.">
+<!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Uključi sinkronizaciju kartica za prikaz kartica s tvojih ostalih uređaja.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.subtitle "Želite li vidjeti vaše kartice s drugih uređaja ovdje?">
+<!ENTITY appMenuRemoteTabs.noclients.subtitle "Želiš li ovdje vidjeti tvoje kartice s drugih uređaja?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Otvori Sync postavke">
-<!ENTITY appMenuRemoteTabs.notsignedin.label "Prijavite se da biste vidjeli kartice s vaših ostalih uređaja.">
+<!ENTITY appMenuRemoteTabs.notsignedin.label "Prijavi se za prikaz kartica s tvojih ostalih uređaja.">
 <!ENTITY appMenuRemoteTabs.welcome.label "Pogledaj popis kartica s tvojih ostalih uređaja.">
-<!ENTITY appMenuRemoteTabs.unverified.label "Vaš račun mora biti potvrđen.">
+<!ENTITY appMenuRemoteTabs.unverified.label "Tvoj račun mora biti potvrđen.">
 <!ENTITY appMenuRemoteTabs.signin.label "Prijavite se u Sync">
 <!ENTITY appMenuRemoteTabs.signintosync.label "Prijavi se na &syncBrand.shortName.label; …">
 <!ENTITY appMenuRemoteTabs.turnonsync.label "Uključi &syncBrand.shortName.label; …">
@@ -567,12 +567,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      searchFor.label and searchWith.label. This string will be used instead of
      them when the user has not typed any keyword. -->
 <!ENTITY searchWithHeader.label       "Traži pomoću:">
-
-<!-- LOCALIZATION NOTE (searchWithDesc.label):
-     This string prompts the user to use the list of one-click search engines in
-     the Urlbar and searchbar. -->
-<!ENTITY searchWithDesc.label         "Ovaj put traži s:">
-
 <!-- LOCALIZATION NOTE (changeSearchSettings.button):
      This string won't wrap, so if the translated string is longer,
      consider translating it as if it said only "Search Settings". -->
@@ -849,7 +843,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.connectionSecure3 "Veza sigurna">
 <!ENTITY identity.connectionNotSecure2 "Veza nije sigurna">
 <!ENTITY identity.connectionNotSecureSecurityView "Nisi sigurno povezan/a na ovu stranicu.">
-<!ENTITY identity.connectionFile "Ova stranica je spremljena na vaše računalo.">
+<!ENTITY identity.connectionFile "Ova je stranica spremljena na tvom računalu.">
 <!ENTITY identity.connectionVerified2 "Sigurno ste povezani na ovu stranicu, u vlasništvu:">
 <!ENTITY identity.connectionVerified3 "Sigurno si povezan/a na ovu stranicu.">
 <!ENTITY identity.connectionInternal "Ovo je sigurna &brandShortName; stranica.">
@@ -866,17 +860,17 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.weakEncryption "Ova stranica koristi slabu enkripciju.">
 
 <!-- Strings for connection state warnings in the subview. -->
-<!ENTITY identity.description.insecure "Vaša veza s ovom stranicom nije privatna. Informacije koje pošaljete (npr. lozinke, poruke, broj kreditne kartice itd.) može vidjeti treća strana.">
+<!ENTITY identity.description.insecure "Tvoja veza s ovom stranicom nije privatna. Informacije koje pošalješ (npr. lozinke, poruke, broj kreditne kartice itd.) može vidjeti treća strana.">
 <!ENTITY identity.description.insecureLoginForms "Pristupni podaci koje unesete na ovoj stranici nisu sigurni i mogu biti kompromitirani.">
-<!ENTITY identity.description.weakCipher "Vaša veza s ovom stranicom koristi slabu enkripciju i nije privatna.">
-<!ENTITY identity.description.weakCipher2 "Drugi ljudi mogu vidjeti vaše informacije ili modificirati ponašanje stranice.">
+<!ENTITY identity.description.weakCipher "Tvoja veza s ovom stranicom koristi slabo šifriranje i nije privatna.">
+<!ENTITY identity.description.weakCipher2 "Drugi ljudi mogu vidjeti tvoje informacije ili modificirati ponašanje stranice.">
 <!ENTITY identity.description.activeBlocked "&brandShortName; je blokirao dijelove ove stranice koji nisu sigurni.">
-<!ENTITY identity.description.passiveLoaded "Vaša veza nije privatna i informacije koje dijelite s ovom stranicom mogu vidjeti drugi.">
+<!ENTITY identity.description.passiveLoaded "Tvoja veza nije privatna i informacije koje dijeliš s ovom stranicom mogu vidjeti drugi.">
 <!ENTITY identity.description.passiveLoaded2 "Ova stranica ima sadržaj koji nije siguran (npr. slike).">
 <!ENTITY identity.description.passiveLoaded3 "Iako je &brandShortName; blokirao dio sadržaja, još uvijek postoje nesigurni sadržaji na ovoj stranici (poput slika).">
-<!ENTITY identity.description.activeLoaded "Ova stranica ima nesiguran sadržaj (poput skripti) i vaša veza nije privatna.">
+<!ENTITY identity.description.activeLoaded "Ova stranica ima nesiguran sadržaj (poput skripti) i tvoja veza nije privatna.">
 <!ENTITY identity.description.activeLoaded2 "Informacije koje dijelite s ovom stranicom (npr. lozinke, poruke, broj kreditne kartice itd.) može vidjeti treća strana.">
-<!ENTITY identity.description.customRoot "Mozilla ne prepoznaje ovog izdavatelja certifikata. Možda je dodan iz vašeg operativnog sustava ili od strane administratora.">
+<!ENTITY identity.description.customRoot "Mozilla ne prepoznaje ovog izdavatelja certifikata. Možda je dodan iz tvog operacijskog sustava ili od strane administratora.">
 
 <!ENTITY identity.enableMixedContentBlocking.label "Omogući zaštitu">
 <!ENTITY identity.enableMixedContentBlocking.accesskey "O">
@@ -939,18 +933,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Zašto?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Blokiranjem ovih elemenata mogu se pokvariti elementi nekih web stranica. Bez programa za praćenje, neki gumbi, obrasci i polja za prijavu možda neće funkcionirati.">
-<!ENTITY protections.notBlocking.why.etpOff.tooltip "Isključivanjem zaštita ćeš omogućiti sve programe za praćenje na ovoj stranici. Možda će poboljšati neke funkcije web stranice.">
-<!ENTITY protections.socialMediaTrackers.label "Programi za praćenje društvenih mreža">
-<!ENTITY protections.crossSiteTrackingCookies.label "Kolačići za praćenje između različitih stranica">
-<!ENTITY protections.trackingContent.label "Sadržaj za praćenje">
-<!ENTITY protections.fingerprinters.label "Jedinstveni otisci">
-<!ENTITY protections.cryptominers.label "Kripto rudari">
 <!ENTITY protections.notBlocking.why.etpOff2.tooltip "Svi pratitelji na ovoj stranici su učitani iz razloga što su zaštite isključene.">
 <!ENTITY protections.noTrackersFound.description "Programi za praćenje koji su poznati &brandShortName;u nisu otkriveni na ovoj stranici.">
 
-<!ENTITY protections.crossSiteTrackingCookies.description "Ovi kolačići vas prate od stranice do stranice i prikupljaju podatke o tome što radite na Internetu. Postavljeni su od trećih strana kao što su oglašivači i analitičke tvrtke.">
-<!ENTITY protections.cryptominers.description "Krupto rudari koriste računalnu snagu vašeg sustava kako bi rudarili digitalni novac. Skripte za kripto rudarenje troše bateriju, usporavaju računalo i povećavaju račun za struju.">
-<!ENTITY protections.fingerprinters.description "Jedinstveni otisci prikupljaju postavke vašeg preglednika i računala kako bi stvorili vaš jedinstveni profil. Koristeći ovaj digitali otisak prsta, mogu vas pratiti diljem različitih web stranica.">
+<!ENTITY protections.crossSiteTrackingCookies.description "Ovi kolačići te prate od stranice do stranice i prikupljaju podatke o tome što radiš na Internetu. Postavljeni su od trećih strana kao što su oglašivači i analitičke tvrtke.">
+<!ENTITY protections.cryptominers.description "Kripto rudari koriste računalnu snagu tvog sustava kako bi rudarili digitalni novac. Skripte za kripto rudarenje troše bateriju, usporavaju računalo i povećavaju račun za struju.">
+<!ENTITY protections.fingerprinters.description "Čitači digitalnih otisaka prikupljaju postavke tvog preglednika i računala kako bi stvorili tvoj jedinstveni profil. Koristeći ovaj digitalni otisak, mogu te pratiti diljem raznih web stranica.">
 <!ENTITY protections.trackingContent2.description "Web stranice mogu učitati vanjske reklame, video materijal i drugi sadržaj koji sadržava kȏd za praćenje. Blokiranje praćenja sadržaja može ubrzati učitavanje stranica, ali neke tipke, obrasci ili polja za prijavu možda neće raditi.">
 <!ENTITY protections.socialMediaTrackers.description "Društvene mreže postavljaju programe za praćenje na druge web stranice kako bi pratili što radiš, pregledavaš i vidiš na Internetu. Ovo omogućava tvrtkama društvenih mreža o tebi saznati više od onoga što dijeliš na svom profilu.">
 
@@ -967,7 +955,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncSignIn.label             "Prijavite se u &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "Y">
-
 <!ENTITY syncSyncNowItem.label        "Sinkroniziraj sada">
 <!ENTITY syncSyncNowItemSyncing.label "Sinkroniziranje…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
@@ -982,7 +969,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.selectMicrophone.label "Mikrofon za dijeljenje:">
 <!ENTITY getUserMedia.selectMicrophone.accesskey "M">
 <!ENTITY getUserMedia.audioCapture.label "Zvuk iz kartice će biti dijeljen.">
-<!ENTITY getUserMedia.allWindowsShared.message "Svi vidljivi prozori na vašem ekranu će biti dijeljeni.">
+<!ENTITY getUserMedia.allWindowsShared.message "Svi vidljivi prozori na tvom ekranu će se dijeliti.">
 
 <!ENTITY contentBlocking.title "Blokiranje sadržaja">
 <!ENTITY contentBlocking.detected "Sadržaj koji se može blokirati je otkriven na ovoj stranici.">
@@ -1005,8 +992,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.manageSettings2.accesskey "M">
 
 <!ENTITY contentBlocking.socialblock.label "Programi za praćenje društvenih mreža">
-
-<!ENTITY contentBlocking.cookies2.label "Kolačići za praćenje među web lokacijama">
 
 <!ENTITY contentBlocking.cryptominers.label "Kripto rudari">
 <!ENTITY contentBlocking.cryptominersView.label "Kripto rudari">
@@ -1055,7 +1040,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY uiTour.infoPanel.close "Zatvori">
 
-<!ENTITY panicButton.thankyou.msg1                "Vaša nedavna povijest je obrisana.">
+<!ENTITY panicButton.thankyou.msg1                "Tvoja nedavna povijest je izbrisana.">
 <!ENTITY panicButton.thankyou.msg2                "Sigurno pregledavanje!">
 <!ENTITY panicButton.thankyou.buttonlabel         "Hvala!">
 
@@ -1067,7 +1052,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY updateUnsupported.panelUI.label "Ne možete instalirati daljnja ažuriranja">
 <!ENTITY updateRestart.panelUI.label2 "Ponovno pokrenite za ažuriranje &brandShorterName;a">
 
-<!ENTITY newTabControlled.header.message "Vaša nova kartica je promijenjena.">
+<!ENTITY newTabControlled.header.message "Tvoja nova kartica je promijenjena.">
 <!ENTITY newTabControlled.keepButton.label "Zadrži promjene">
 <!ENTITY newTabControlled.keepButton.accesskey "Z">
 <!ENTITY newTabControlled.disableButton.label "Onemogući dodatak">
@@ -1075,7 +1060,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY homepageControlled.message "Dodatak je promijenio što vidite kao svoju početnu stranicu. Ako ne želite ovu promjenu, možete vratiti svoje postavke.">
 
-<!ENTITY homepageControlled.header.message "Vaša početna stranica je promijenjena.">
+<!ENTITY homepageControlled.header.message "Tvoja početna stranica je promijenjena.">
 <!ENTITY homepageControlled.keepButton.label "Zadrži promjene">
 <!ENTITY homepageControlled.keepButton.accesskey "Z">
 <!ENTITY homepageControlled.disableButton.label "Onemogući dodatak">

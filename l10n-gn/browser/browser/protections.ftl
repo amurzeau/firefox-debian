@@ -31,6 +31,7 @@ protection-report-page-title = Ñemigua ñemo'ã
 protection-report-content-title = Ñemigua mo’ãha
 etp-card-title = Tapykueho mo’ãha mbotuichapyre
 etp-card-content = Umi tapykuehoha oike ñandutípe ombyaty hag̃ua marandu umi nerembiapo rapykuere. { -brand-short-name } ojoko heta tapykuehoha ha ambue scripts imarãva.
+protection-report-etp-card-content-custom-not-blocking = Opaite ñemo’ã oñemboguepa ko’ág̃a. Eiporavo mba’e tapykuehohápa ejokóta emoambuévo { -brand-short-name } mo’ãha ñemboheko.
 protection-report-manage-protections = Eñangareko ñembohekóre
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
 # capitalization for this string should match the output for your locale.
@@ -73,6 +74,14 @@ lockwise-sync-status =
        *[other] Ñembojuehe { $count } ambue mba’e’oka rehe
     }
 lockwise-sync-not-syncing-devices = Ndojuehéi ambue mba’e’oka ndive
+manage-connected-devices = Mba'e'oka ñangarekoha…
+# Variables:
+#   $count (Number) - Number of devices connected with sync.
+lockwise-connected-device-status =
+    { $count ->
+        [one] Oike mba’e’okápe { $count } ndive
+       *[other] Oike mba’e’okuérape { $count } ndive
+    }
 monitor-title = Ema’ẽag̃uíke mba’ekuaarã ñembyaíre
 monitor-link = Mba'éichapa oba'apo
 monitor-header-content-no-account = Ehecha { -monitor-brand-name } eikuaa hag̃ua oĩpara’e mba’ekuaarã kuaapýva ñembyaípe ha oñembou hag̃ua ndéve kyhyjyrã mba’evai rehegua.

@@ -50,7 +50,7 @@ menu-file-print =
     .label = Shtypni…
     .accesskey = y
 menu-file-import-from-another-browser =
-    .label = Importoni prej Tjetër Shfletuesi…
+    .label = Importoni nga Tjetër Shfletues…
     .accesskey = I
 menu-file-go-offline =
     .label = Puno i Palidhur
@@ -116,14 +116,17 @@ menu-view-full-zoom =
     .label = Zmadhim/Zvogëlim
     .accesskey = Z
 menu-view-full-zoom-enlarge =
-    .label = Zmadhoje
+    .label = Zmadhojeni
     .accesskey = M
 menu-view-full-zoom-reduce =
-    .label = Zvogëloje
+    .label = Zvogëlojeni
     .accesskey = O
 menu-view-full-zoom-reset =
     .label = Zeroje
     .accesskey = e
+menu-view-full-zoom-actual-size =
+    .label = Madhësia Faktike
+    .accesskey = M
 menu-view-full-zoom-toggle =
     .label = Zmadho ose Zvogëlo Vetëm Tekstin
     .accesskey = T
@@ -153,7 +156,7 @@ menu-view-full-screen =
     .label = Sa Krejt Ekrani
     .accesskey = E
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Shfaqini Krejt Skedat
@@ -209,9 +212,6 @@ menu-tools-downloads =
 menu-tools-addons =
     .label = Shtesa
     .accesskey = a
-menu-tools-sync-sign-in =
-    .label = Hyni Te { -sync-brand-short-name }-u…
-    .accesskey = H
 menu-tools-fxa-sign-in =
     .label = Hyni Te { -brand-product-name }…
     .accesskey = H
@@ -221,9 +221,6 @@ menu-tools-turn-on-sync =
 menu-tools-sync-now =
     .label = Njëkohësohu Tani
     .accesskey = N
-menu-tools-sync-re-auth =
-    .label = Rilidhuni me { -sync-brand-short-name }-un…
-    .accesskey = R
 menu-tools-fxa-re-auth =
     .label = Rilidhuni me { -brand-product-name }…
     .accesskey = R
@@ -285,8 +282,7 @@ menu-help-safe-mode-with-addons =
     .label = Rinise me Shtesat të Aktivizuara
     .accesskey = A
 # Label of the Help menu item. Either this or
-# safeb.palm.notdeceptive.label from
-# phishing-afterload-warning-message.dtd is shown.
+# menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
     .label = Raportoni Sajt të Rremë…
     .accesskey = m

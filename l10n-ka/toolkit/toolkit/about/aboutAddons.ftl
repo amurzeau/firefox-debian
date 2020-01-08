@@ -4,6 +4,7 @@
 
 addons-window =
     .title = დამატებების მმართველი
+addons-page-title = დამატებების მმართველი
 search-header =
     .placeholder = addons.mozilla.org საიტზე მოძიება
     .searchbuttonlabel = ძიება
@@ -351,6 +352,10 @@ remove-addon-disabled-button = ვერ მოცილდება <a data-l10
 disable-addon-button = ამორთვა
 enable-addon-button = ჩართვა
 expand-addon-button = დამატებითი პარამეტრები
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = ჩართვა
 preferences-addon-button =
     { PLATFORM() ->
         [windows] პარამეტრები
@@ -454,5 +459,8 @@ discover-heading = მოირგეთ თქვენი { -brand-short-name 
 shortcuts-heading = გაფართოებების ღილაკების მართვა
 theme-heading-search-label = სხვა თემების მოძიება
 extension-heading-search-label = სხვა გაფართოებების მოძიება
+default-heading-search-label = სხვა დამატებების მოძიება
 addons-heading-search-input =
     .placeholder = addons.mozilla.org საიტზე მოძიება
+addon-page-options-button =
+    .title = ხელსაწყოები ყველა დამატებისთვის

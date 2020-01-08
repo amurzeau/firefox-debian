@@ -57,14 +57,14 @@
 <!ENTITY lightning.imipbar.btnAcceptRecurrences2.tooltiptext                "Pranoni ftesë veprimtarie për krejt përsëritjet e veprimtarisë">
 <!ENTITY lightning.imipbar.btnAdd.label                                     "Shtojeni">
 <!ENTITY lightning.imipbar.btnAdd.tooltiptext                               "Shtojni veprimtarinë te kalendari">
-<!ENTITY lightning.imipbar.btnDecline.label                                 "Hidheni poshtë">
+<!ENTITY lightning.imipbar.btnDecline.label                                 "Hidhe poshtë">
 <!ENTITY lightning.imipbar.btnDecline2.tooltiptext                          "Hidhni poshtë ftesën e veprimtarisë">
 <!ENTITY lightning.imipbar.btnDeclineRecurrences.label                      "Hidhini poshtë krejt">
 <!ENTITY lightning.imipbar.btnDeclineRecurrences2.tooltiptext               "Hidheni poshtë ftesën e veprimtarisë për krejt përsëritjet e veprimtarisë">
 <!ENTITY lightning.imipbar.btnDeclineCounter.label                          "Hidhe poshtë">
 <!ENTITY lightning.imipbar.btnDeclineCounter.tooltiptext                    "Hidhe poshtë kundërpropozimin">
 <!ENTITY lightning.imipbar.btnDelete.label                                  "Fshijeni">
-<!ENTITY lightning.imipbar.btnDelete.tooltiptext                            "Fshijeni prej kalendarit">
+<!ENTITY lightning.imipbar.btnDelete.tooltiptext                            "Fshijeni nga kalendari">
 <!ENTITY lightning.imipbar.btnDetails.label                                 "Hollësi…">
 <!ENTITY lightning.imipbar.btnDetails.tooltiptext                           "Shfaqni hollësi veprimtarie">
 <!ENTITY lightning.imipbar.btnMore.label                                    "Më tepër">
@@ -106,6 +106,6 @@
 <!ENTITY todaypane.showMiniday.accesskey  "D">
 <!ENTITY todaypane.showNone.label "Mos Shfaq Gjë">
 <!ENTITY todaypane.showNone.accesskey "o">
-<!ENTITY todaypane.showTodayPane.label "Shfaq Kuadratin Sot">
+<!ENTITY todaypane.showTodayPane.label "Shfaq Kuadratin Për të Sotmen">
 <!ENTITY todaypane.showTodayPane.accesskey "K">
 <!ENTITY todaypane.statusButton.label "Kuadrati Sot">

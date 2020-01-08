@@ -54,6 +54,8 @@ connection-proxy-socks5 =
 connection-proxy-noproxy = Չկա պրոքսի
     .accesskey = n
 connection-proxy-noproxy-desc = Օրինակ՝ .mozilla.org, .net.nz, 192.168.1.0/24
+# Do not translate localhost, 127.0.0.1 and ::1.
+connection-proxy-noproxy-localhost-desc = Միացումները տեղայինհանգույցին՝ 127.0.0.1 և ::1-ին, երբեք չեն վստահվում:
 connection-proxy-autotype =
     .label = Պրոքսիի ինքնաբար կազմաձևում URL
     .accesskey = A
@@ -70,6 +72,15 @@ connection-proxy-socks-remote-dns =
 connection-dns-over-https =
     .label = Միացնել DNS-ը HTTPS-ով
     .accesskey = b
-connection-dns-over-https-url = URL
-    .accesskey = U
-    .tooltiptext = URL՝ DNS-ը HTTPS-ով լուծելու համար
+connection-dns-over-https-url-resolver = Օգտագործել մատակարար
+    .accesskey = P
+# Variables:
+#   $name (String) - Display name or URL for the DNS over HTTPS provider
+connection-dns-over-https-url-item-default =
+    .label = { $name } (Լռելյայն)
+    .tooltiptext = Օգտագործեք լռելյայն  URL ՝ DNS ֊ HTTPS լուծելու համար։
+connection-dns-over-https-url-custom =
+    .label = Հարմարեցված
+    .accesskey = C
+    .tooltiptext = Մուտքագրե՛ք ձեր նախընտրած URL-ը DNS ֊ HTTPS լուծելու համար։
+connection-dns-over-https-custom-label = Հարմարեցված

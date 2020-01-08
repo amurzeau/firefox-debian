@@ -21,6 +21,10 @@ onboarding-button-label-get-started = आरंभ करें
 onboarding-welcome-header = { -brand-short-name } में स्वागत है
 onboarding-welcome-body = आपको ब्राउज़र मिल गया है। <br/> बाकी { -brand-product-name } के बारे में जानें।
 onboarding-welcome-learn-more = लाभ के बारे में अधिक जानें।
+onboarding-welcome-modal-get-body = आपको ब्राउज़र मिल गया है।<br/>अब { -brand-product-name } का अधिकतम लाभ उठाएँ।
+onboarding-welcome-modal-supercharge-body = अपनी गोपनीयता सुरक्षा को बढ़ाएँ।
+onboarding-welcome-modal-privacy-body = आपको ब्राउज़र मिल गया है। आइए अधिक गोपनीयता सुरक्षा जोड़ें।
+onboarding-welcome-modal-family-learn-more = उत्पादों के { -brand-product-name } परिवार के बारे में जानें।
 onboarding-welcome-form-header = यहां से शुरू करें
 onboarding-join-form-header = { -brand-product-name } से जुड़ें
 onboarding-join-form-body = प्रारंभ करने के लिए ईमेल का पता प्रविष्ट करें।
@@ -40,6 +44,7 @@ onboarding-cards-dismiss =
 
 ## Welcome full page string
 
+onboarding-fullpage-welcome-subheader = आइए आप जो कुछ भी कर सकते हैं, उसकी खोज शुरू करें।
 onboarding-fullpage-form-email =
     .placeholder = आपका ईमेल पता…
 
@@ -48,8 +53,6 @@ onboarding-fullpage-form-email =
 onboarding-sync-welcome-header = अपने साथ { -brand-product-name } चुने
 onboarding-sync-welcome-content = अपने सभी उपकरणों पर अपना बुकमार्क, इतिहास, कूटशब्द और अन्य सेटिंग प्राप्त करें.
 onboarding-sync-welcome-learn-more-link = Firefox खातों के बारे में अधिक जानें
-onboarding-sync-form-invalid-input = वैध ईमेल आवश्यक
-onboarding-sync-legal-notice = आगे बढ़ने से, आप <a data-l10n-name="terms">सेवा की शर्तें</a> और <a data-l10n-name="privacy">गोपनीयता नीति</a> से सहमत हैं|
 onboarding-sync-form-input =
     .placeholder = ईमेल
 onboarding-sync-form-continue-button = जारी रखें
@@ -74,6 +77,11 @@ onboarding-benefit-privacy-title = सच्ची गोपनीयता
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
 onboarding-benefit-privacy-text = हम जो कुछ भी करते हैं वह हमारे व्यक्तिगत डेटा वादा का सम्मान करता है: कम लें। उसे सुरक्षित रखें। कोई रहस्य नहीं।
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = आपकी व्यक्तिगत जानकारी किसी ज्ञात डेटा उल्लंघन में होने पर सूचना प्राप्त करें।
+onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = पासवर्ड प्रबंधित करें जो संरक्षित और वहनीय हैं।
 
 ## These strings belong to the individual onboarding messages.
 
@@ -115,10 +123,15 @@ onboarding-pocket-anywhere-title = कहीं भी पढ़ें और �
 onboarding-pocket-anywhere-text2 = अपने पसंदीदा सामग्री को { -pocket-brand-name } ऐप के साथ ऑफ़लाइन सहेजें और जब भी यह आपके लिए सुविधाजनक हो, तो पढ़ें और देखें।
 onboarding-pocket-anywhere-button = { -pocket-brand-name } आज़माएं
 onboarding-lockwise-passwords-title = हर जगह अपना पासवर्ड लेकर चलें
+onboarding-lockwise-passwords-text2 = जिन पासवर्ड को आप सहेजते हैं उन्हें सुरक्षित रखें और आसानी से { -lockwise-brand-name } के साथ अपने खाते में लॉग इन करें।
 onboarding-lockwise-passwords-button2 = ऐप प्राप्त करें
+onboarding-lockwise-strong-passwords-title = मजबूत पासवर्ड बनाएं और संग्रहित करें
+onboarding-lockwise-strong-passwords-button = अपने लॉगिन का प्रबंधन करें
 onboarding-facebook-container-title = Facebook के साथ सीमाएँ निर्धारित करें
 onboarding-facebook-container-text2 = { -facebook-container-brand-name } आपकी प्रोफ़ाइल को हर चीज से अलग रखता है, जिससे Facebook के लिए आपको विज्ञापनों के साथ लक्षित करना कठिन हो जाता है।
 onboarding-facebook-container-button = एक्सटेंशन जोड़ें
+onboarding-import-browser-settings-title = अपने बुकमार्क, पासवर्ड और अधिक आयात करें
+onboarding-import-browser-settings-button = Chrome डेटा आयात करें
 
 ## Message strings belonging to the Return to AMO flow
 

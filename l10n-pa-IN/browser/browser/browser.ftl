@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (ਪ੍ਰਾਈਵੇਟ ਬਰਾਊਜ਼ਿੰਗ)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (ਪ੍ਰਾਈਵੇਟ ਬਰਾਊਜ਼ਿੰਗ)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = ਸਾਈਟ ਦੀ ਜਾਣਕਾਰੀ ਨੂੰ ਵੇਖੋ
 
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = ਸੁਨੇਹਾ ਪੈਨਲ ਨੂੰ ਖੋਲ੍ਹੋ
 urlbar-geolocation-notification-anchor =
     .tooltiptext = ਟਿਕਾਣਾ ਬੇਨਤੀ ਪੈਨਲ ਨੂੰ ਖੋਲ੍ਹੋ
+urlbar-xr-notification-anchor =
+    .tooltiptext = ਫ਼ਰਜ਼ੀ ਅਸਲੀਅਤ ਇਜਾਜ਼ਤ ਪੈਨਲ ਖੋਲ੍ਹੋ
 urlbar-storage-access-anchor =
     .tooltiptext = ਬਰਾਊਜ਼ਿੰਗ ਸਰਗਰਮੀ ਇਜਾਜ਼ਤ ਪੈਨਲ ਖੋਲ੍ਹੋ
 urlbar-translate-notification-anchor =
@@ -47,6 +80,8 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = ਪੱਕੀ ਸਟੋਰੇਜ਼ 'ਚ ਡਾਟੇ ਨੂੰ ਸਟੋਰ ਕਰੋ
 urlbar-addons-notification-anchor =
     .tooltiptext = ਐਡ-ਆਨ ਇੰਸਟਾਲੇਸ਼ਨ ਸੁਨੇਹਾ ਪੈਨਲ ਨੂੰ ਖੋਲ੍ਹੋ
+urlbar-tip-help-icon =
+    .title = ਮਦਦ ਲਵੋ
 urlbar-geolocation-blocked =
     .tooltiptext = ਤੁਸੀਂ ਇਸ ਵੈੱਬਸਾਈਟ ਲਈ ਟਿਕਾਣਾ ਜਾਣਕਾਰੀ ਵਾਸਤੇ ਪਾਬੰਦੀ ਲਗਾਈ ਹੈ।
 urlbar-web-notifications-blocked =
@@ -88,6 +123,9 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = ਇਸ ਵੇਲੇ ਇਸ ਨਾਲ ਖੋਜੋ:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -100,3 +138,19 @@ search-one-offs-context-open-new-tab =
 search-one-offs-context-set-as-default =
     .label = ਮੂਲ ਖੋਜ ਇੰਜਣ ਵਜੋਂ ਸੈੱਟ ਕਰੋ
     .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋ ਲਈ ਮੂਲ ਖੋਜ ਇੰਜਣ ਨਿਯਤ ਕਰੋ
+    .accesskey = P
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = ਸੰਭਾਲਣ ‘ਤੇ ਸੰਪਾਦਕ ਵੇਖੋ
+    .accesskey = S
+bookmark-panel-done-button =
+    .label = ਮੁਕੰਮਲ
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

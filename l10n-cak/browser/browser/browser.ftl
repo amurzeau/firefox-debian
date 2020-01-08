@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (Palaqinem Wichin)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (Palaqinem Wichin)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = Titz'et retamab'al ruxaq k'amaya'l
 
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Jaqäl rupas tzijol
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Rupas ruk'utuxik rokem k'ojlem
+urlbar-xr-notification-anchor =
+    .tooltiptext = Tijaq ri rupas ya'oj ruq'ij ri achik'al k'ojlemal
 urlbar-storage-access-anchor =
     .tooltiptext = Tijaq ri kipas kiya'oj q'ij taq rusamaj okem pa k'amaya'l
 urlbar-translate-notification-anchor =
@@ -51,6 +84,8 @@ urlbar-tip-help-icon =
     .title = Tak'ulu' ato'ik
 urlbar-geolocation-blocked =
     .tooltiptext = Xq'at ri ruk'ojlem etamab'äl pa re ruxaq k'amaya'l re'.
+urlbar-xr-blocked =
+    .tooltiptext = Xaq'ät ri okem pa taq rokisaxel achik'al k'ojelemal pa re ruxaq k'amaya'l re'.
 urlbar-web-notifications-blocked =
     .tooltiptext = Xeq'at ri taq rutzijol pa re ruxaq k'amaya'l re'.
 urlbar-camera-blocked =
@@ -110,3 +145,16 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Tiya' kan achi'el Okik'amaya'l ri K'o pa Ichinan taq Tzuwäch
     .accesskey = I
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = Tik'ut k'exob'äl toq niyak
+    .accesskey = S
+bookmark-panel-done-button =
+    .label = Xk'achoj
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

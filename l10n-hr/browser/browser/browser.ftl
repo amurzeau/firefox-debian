@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (Privatno pregledavanje)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (Privatno pregledavanje)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = Prikaži informacije o stranici
 
@@ -18,19 +49,21 @@ urlbar-eme-notification-anchor =
 urlbar-web-authn-anchor =
     .tooltiptext = Otvori okno Web autentifikacije
 urlbar-canvas-notification-anchor =
-    .tooltiptext = Upravljanje dozvolama za ekstrakciju canvasa
+    .tooltiptext = Upravljanje dozvolama za izdvajanje platna
 urlbar-web-rtc-share-microphone-notification-anchor =
-    .tooltiptext = Upravljajte dijeljenjem vašeg mikrofona sa stranicom
+    .tooltiptext = Upravljaj dijeljenjem tvog mikrofona sa stranicom
 urlbar-default-notification-anchor =
     .tooltiptext = Otvori ploču s porukama
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Otvori ploču sa zahtjevima lokacije
+urlbar-xr-notification-anchor =
+    .tooltiptext = Otvori ploču dopuštenja za virtualnu stvarnost
 urlbar-storage-access-anchor =
     .tooltiptext = Otvori ploču s dozvolama za pregledavanje
 urlbar-translate-notification-anchor =
     .tooltiptext = Prevedi ovu stranicu
 urlbar-web-rtc-share-screen-notification-anchor =
-    .tooltiptext = Upravljajte dijeljenjem vaših prozora ili zaslona sa stranicom
+    .tooltiptext = Upravljaj dijeljenjem tvojih prozora ili ekrana sa stranicom
 urlbar-indexed-db-notification-anchor =
     .tooltiptext = Otvori ploču s informacijama lokalnog spremišta
 urlbar-password-notification-anchor =
@@ -40,7 +73,7 @@ urlbar-translated-notification-anchor =
 urlbar-plugins-notification-anchor =
     .tooltiptext = Upravljanje korištenjem priključaka
 urlbar-web-rtc-share-devices-notification-anchor =
-    .tooltiptext = Upravljajte dijeljenjem vaše kamere i/ili mikrofona sa stranicom
+    .tooltiptext = Upravljaj dijeljenjem tvoje kamere i/ili mikrofona sa stranicom
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Otvori ploču za automatsku reprodukciju
 urlbar-persistent-storage-notification-anchor =
@@ -50,7 +83,9 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Potražite pomoć
 urlbar-geolocation-blocked =
-    .tooltiptext = Ovoj stranici ste zabranili pristup informaciji o vašoj lokaciji.
+    .tooltiptext = Ovoj si stranici zabranio/la pristup informacijama o tvojoj lokaciji.
+urlbar-xr-blocked =
+    .tooltiptext = Ovoj ste stranici blokirali pristup uređajima za virtualnu stvarnost.
 urlbar-web-notifications-blocked =
     .tooltiptext = Ovoj ste stranici zabranili slanje obavijesti.
 urlbar-camera-blocked =
@@ -58,7 +93,7 @@ urlbar-camera-blocked =
 urlbar-microphone-blocked =
     .tooltiptext = Ovoj ste stranici zabranili korištenje mikrofona.
 urlbar-screen-blocked =
-    .tooltiptext = Ovoj ste stranici zabranili dijeljenje vaše radne površine.
+    .tooltiptext = Ovoj si stranici zabranio/la dijeljenje tvog ekrana.
 urlbar-persistent-storage-blocked =
     .tooltiptext = Ovoj ste stranici zabranili mogućnost trajne pohrane podataka.
 urlbar-popup-blocked =
@@ -66,7 +101,7 @@ urlbar-popup-blocked =
 urlbar-autoplay-media-blocked =
     .tooltiptext = Ovoj ste stranici zabranili automatsko reproduciranje medija sa zvukom.
 urlbar-canvas-blocked =
-    .tooltiptext = Blokirali ste izvoz canvas podataka za ovu web stranicu.
+    .tooltiptext = Blokirao/la si izdvajanje podataka platna za ovu web stranicu.
 urlbar-midi-blocked =
     .tooltiptext = Blokirali ste MIDI pristup za ovu web stranicu.
 urlbar-install-blocked =
@@ -108,5 +143,18 @@ search-one-offs-context-set-as-default =
     .label = Podesi kao zadanu tražilicu
     .accesskey = d
 search-one-offs-context-set-as-default-private =
-    .label = Postavite zadani pretraživač za Privatno pretraživanje
+    .label = Postavi standardnu pretragu za privatne prozore
     .accesskey = P
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = Prikaži uređivač prilikom spremanja
+    .accesskey = s
+bookmark-panel-done-button =
+    .label = Gotovo
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

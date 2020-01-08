@@ -124,6 +124,9 @@ menu-view-full-zoom-reduce =
 menu-view-full-zoom-reset =
     .label = Výchozí
     .accesskey = c
+menu-view-full-zoom-actual-size =
+    .label = Skutečná velikost
+    .accesskey = k
 menu-view-full-zoom-toggle =
     .label = Pouze velikost textu
     .accesskey = t
@@ -153,7 +156,7 @@ menu-view-full-screen =
     .label = Celá obrazovka
     .accesskey = C
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Zobrazit všechny panely
@@ -209,23 +212,29 @@ menu-tools-downloads =
 menu-tools-addons =
     .label = Doplňky
     .accesskey = D
-menu-tools-sync-sign-in =
-    .label = Přihlásit se do { -sync-brand-short-name }…
-    .accesskey = i
 menu-tools-fxa-sign-in =
-    .label = Přihlásit se k aplikaci { -brand-product-name }…
+    .label =
+        Přihlásit se k { -brand-product-name.gender ->
+            [masculine] { -brand-product-name(case: "dat") }
+            [feminine] { -brand-product-name(case: "dat") }
+            [neuter] { -brand-product-name(case: "dat") }
+           *[other] aplikaci { -brand-product-name }
+        }…
     .accesskey = p
 menu-tools-turn-on-sync =
-    .label = Zapnout { -sync-brand-short-name }…
+    .label = Zapnout { -sync-brand-short-name(case: "acc") }…
     .accesskey = n
 menu-tools-sync-now =
     .label = Synchronizovat
     .accesskey = S
-menu-tools-sync-re-auth =
-    .label = Opětovné připojení k { -sync-brand-short-name }…
-    .accesskey = p
 menu-tools-fxa-re-auth =
-    .label = Znovu připojit k účtu { -brand-product-name }…
+    .label =
+        Znovu připojit k účtu { -brand-product-name.gender ->
+            [masculine] { -brand-product-name(case: "gen") }
+            [feminine] { -brand-product-name(case: "gen") }
+            [neuter] { -brand-product-name(case: "gen") }
+           *[other] aplikace { -brand-product-name }
+        }…
     .accesskey = n
 menu-tools-web-developer =
     .label = Nástroje pro vývojáře
@@ -264,10 +273,22 @@ menu-help =
     .label = Nápověda
     .accesskey = v
 menu-help-product =
-    .label = Nápověda aplikace { -brand-shorter-name }
+    .label =
+        Nápověda { -brand-shorter-name.gender ->
+            [masculine] { -brand-shorter-name(case: "gen") }
+            [feminine] { -brand-shorter-name(case: "gen") }
+            [neuter] { -brand-shorter-name(case: "gen") }
+           *[other] aplikace { -brand-shorter-name }
+        }
     .accesskey = N
 menu-help-show-tour =
-    .label = Průvodce aplikací { -brand-shorter-name }
+    .label =
+        Průvodce { -brand-shorter-name.gender ->
+            [masculine] { -brand-shorter-name(case: "ins") }
+            [feminine] { -brand-shorter-name(case: "ins") }
+            [neuter] { -brand-shorter-name(case: "ins") }
+           *[other] aplikací { -brand-shorter-name }
+        }
     .accesskey = P
 menu-help-keyboard-shortcuts =
     .label = Klávesové zkratky
@@ -285,8 +306,7 @@ menu-help-safe-mode-with-addons =
     .label = Restartovat s povolenými doplňky
     .accesskey = R
 # Label of the Help menu item. Either this or
-# safeb.palm.notdeceptive.label from
-# phishing-afterload-warning-message.dtd is shown.
+# menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
     .label = Nahlásit klamavou stránku…
     .accesskey = l

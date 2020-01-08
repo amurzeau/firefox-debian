@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Papildinājumu pārvaldnieks
+addons-page-title = Papildinājumu pārvaldnieks
 search-header-shortcut =
     .key = f
 loading-label =
@@ -240,3 +241,5 @@ addon-open-about-debugging = Atkļūdot papildinājumus
 
 ## Page headings
 
+addon-page-options-button =
+    .title = Visu papildinājumu rīki

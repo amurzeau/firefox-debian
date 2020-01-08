@@ -18,7 +18,7 @@ about-debugging-page-title-runtime-page = ডিবাগিং - রানট�
 
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
-about-debugging-this-firefox-runtime-name = এটি { -brand-shorter-name }
+about-debugging-this-firefox-runtime-name = এই { -brand-shorter-name }
 # Sidebar heading for selecting the currently running instance of Firefox
 about-debugging-sidebar-this-firefox =
     .name = { about-debugging-this-firefox-runtime-name }
@@ -133,6 +133,10 @@ about-debugging-network-locations-host-input-label = হোস্ট
 # Text of a button displayed next to existing network locations in the Connect page.
 # Clicking on it removes the network location from the list.
 about-debugging-network-locations-remove-button = অপসারণ
+# Text used as error message if the format of the input value was invalid in the network locations form of the Setup page.
+# Variables:
+#   $host-value (string) - The input value submitted by the user in the network locations form
+about-debugging-network-location-form-invalid = অবৈধ হোস্ট “{ $host-value }”। প্রত্যাশিত বিন্যাসটি “hostname:portnumber”।
 # Text used as error message if the input value was already registered in the network locations form of the Setup page.
 # Variables:
 #   $host-value (string) - The input value submitted by the user in the network locations form
@@ -166,6 +170,29 @@ about-debugging-runtime-processes =
 # Label of the button opening the performance profiler panel in runtime pages for remote
 # runtimes.
 about-debugging-runtime-profile-button2 = প্রোফাইল কর্মক্ষমতা
+# This string is displayed in the runtime page if the current configuration of the
+# target runtime is incompatible with service workers. "Learn more" points to MDN.
+# https://developer.mozilla.org/en-US/docs/Tools/about%3Adebugging#Service_workers_not_compatible
+about-debugging-runtime-service-workers-not-compatible = আপনার ব্রাউজার কনফিগারেশন পরিষেবা কর্মীদের সামঞ্জস্যপূর্ণ নয়। <a>আরো জানুন</a>
+# This string is displayed in the runtime page if the remote browser version is too old.
+# "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
+# { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
+# { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
+about-debugging-browser-version-too-old = সংযুক্ত ব্রাউজারটির একটু পুরানো সংস্করণ ({ $runtimeVersion }) রয়েছে। সর্বনিম্ন সমর্থিত সংস্করণ হলো ({ $minVersion })। এই অসমর্থিত সেটআপ DevTools কে বিকল করে দেয়ার জন্য দায়ি হতে পারে। অনুগ্রহ করে সংযুক্ত ব্রাউজার হালনাগাদ করুন। <a>সমস্যার সমাধান</a>
+# Dedicated message for a backward compatibility issue that occurs when connecting:
+# - from Fx 67 to 66 or to 65
+# - from Fx 68 to 66
+# Those are normally in range for DevTools compatibility policy, but specific non
+# backward compatible changes broke the debugger in those scenarios (Bug 1528219).
+# { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
+about-debugging-browser-version-too-old-67-debugger = সংযুক্ত ব্রাউজারের সাথে ডিবাগার প্যানেল কাজ নাও করতে পারে। আপনার যদি এই ব্রাউজার দিয়ে ডিবাগার ব্যবহারের প্রয়োজন হয় তাহলে অনুগ্রহ করে Firefox { $runtimeVersion } ব্যবহার করুন।
+# This string is displayed in the runtime page if the remote browser version is too recent.
+# "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
+# { $runtimeID } is the build ID of the remote browser (for instance "20181231", format is yyyyMMdd)
+# { $localID } is the build ID of the current Firefox instance (same format)
+# { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
+# { $localVersion } is the version of your current browser (same format)
+about-debugging-browser-version-too-recent = সংযুক্ত ব্রাউজারটি ({ $runtimeVersion }, buildID { $runtimeID }) আপনার { -brand-shorter-name } ({ $localVersion }, buildID { $localID }) এর তুলনায় অধিক নতুন। এটি একটি অসমর্থিত সেটআপ এবং DevTools কে বিকল করে দিতে পারে। অনুগ্রহ করে Firefox হালনাগাদ করুন। <a>সমস্যা সমাধান</a>
 # Displayed for runtime info in runtime pages.
 # { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
@@ -262,6 +289,9 @@ about-debugging-worker-status-running = চলমান
 about-debugging-worker-status-stopped = বন্ধ করা হয়েছে
 # Displayed for service workers in runtime pages that are registering.
 about-debugging-worker-status-registering = রেজিস্টার করা হচ্ছে
+# Displayed for service workers in runtime pages, to label the scope of a worker
+about-debugging-worker-scope =
+    .label = স্কোপ
 # Displayed for service workers in runtime pages, to label the push service endpoint (url)
 # of a worker
 about-debugging-worker-push-service =
@@ -272,6 +302,9 @@ about-debugging-worker-inspect-action-disabled =
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-main-process-name = প্রধান প্রক্রিয়া
+# Displayed as description for the Main Process debug target in the Processes category.
+# Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
+about-debugging-main-process-description2 = কাঙ্খিত ব্রাউজারের জন্য মূল প্রসেস
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = বার্তা বন্ধ করুন

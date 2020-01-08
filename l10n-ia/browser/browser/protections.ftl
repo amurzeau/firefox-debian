@@ -21,15 +21,15 @@ graph-total-tracker-summary =
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 # The category name in the <b> tag will be bold.
-protection-report-header-details-standard = Le nivello de protection es preparate a <b>Standard</b>
-    .title = Ir al Parametros de confidentialitate
-protection-report-header-details-strict = Le nivello de protection es preparate a <b>Restrictive</b>
-    .title = Ir al Parametros de confidentialitate
-protection-report-header-details-custom = Le nivello de protection es preparate a <b>Personalisate</b>
-    .title = Ir al Parametros de confidentialitate
-protection-report-page-title = Protectiones del confidentialitate
-protection-report-content-title = Protectiones del confidentialitate
-etp-card-title = Protection de traciamento meliorate
+protection-report-header-details-standard = Le nivello de protection es adjustate a <b>Standard</b>
+    .title = Ir al parametros de vita private
+protection-report-header-details-strict = Le nivello de protection es adjustate a <b>Stricte</b>
+    .title = Ir al parametros de vita private
+protection-report-header-details-custom = Le nivello de protection es adjustate a <b>Personalisate</b>
+    .title = Ir al parametros de vita private
+protection-report-page-title = Protectiones del vita private
+protection-report-content-title = Protectiones del vita private
+etp-card-title = Protection antitraciamento reinfortiate
 etp-card-content = Le traciatores te seque in linea pro colliger informationes sur tu habitos e interesses de navigation. { -brand-short-name } bloca multes de iste traciatores e altere scripts maligne.
 protection-report-etp-card-content-custom-not-blocking = Tote le protectiones es actualmente disactivate. Selige le traciatores a blocar per gerer le parametros de protection de { -brand-short-name }.
 protection-report-manage-protections = Gerer le parametros
@@ -41,17 +41,17 @@ graph-legend-description = Un graphico que contine le numero total de cata typo 
 social-tab-title = Traciatores de retes social
 social-tab-contant = Le retes social placia traciatores sur altere sitos web pro sequer lo que tu face, vide e reguarda in linea. Isto permitte al companias de rete social de saper plus sur te, ultra lo que tu comparti sur tu profilos de rete social. <a data-l10n-name="learn-more-link">Saper plus</a>
 cookie-tab-title = Cookies de traciamento inter sitos
-cookie-tab-content = Iste cookies te seque de sito a sito pro colliger datos sur lo que tu face in linea. Illos es ponite per tertie partes como companias de publicitate e de analyse de datos. Blocar le cookies de traciamento inter sitos reduce le numero de avisos publicitari que te seque. <a data-l10n-name="learn-more-link">Lege plus</a>
+cookie-tab-content = Iste cookies te seque de sito a sito pro colliger datos sur lo que tu face in linea. Illos es deponite per tertios, p.ex. companias de publicitate e de analyse de datos. Blocar le cookies de traciamento inter sitos reduce le numero de annuncios que te seque. <a data-l10n-name="learn-more-link">Lege plus</a>
 tracker-tab-title = Contento traciator
-tracker-tab-description = Sitos web pote cargar avisos publicitari externe, videos e altere contento con codice de traciamento. Blocar contento traciator pote adjutar sitos a cargar se plus rapidemente, ma alcun buttones, formularios e campos de accesso pote non functionar. <a data-l10n-name="learn-more-link">Saper plus</a>
-fingerprinter-tab-title = Traciatores de impression digital
-fingerprinter-tab-content = Le traciatores de impression digital collige parametros de tu navigator e computator pro crear un profilo de te. Usante iste impression digital, illos pote traciar te inter differente sitos web. <a data-l10n-name="learn-more-link">Lege plus</a>
+tracker-tab-description = Sitos web pote cargar annuncios externe, videos e altere contento con codice de traciamento. Blocar contento de traciamento pote adjutar sitos a cargar se plus rapidemente, ma alcun buttones, formularios e campos de aperir session pote non functionar. <a data-l10n-name="learn-more-link">Saper plus</a>
+fingerprinter-tab-title = Dactylogrammatores
+fingerprinter-tab-content = Le dactylogrammatores collige parametros de tu navigator e computator pro crear un profilo de te. Usante iste identitate digital, illos pote traciar te inter differente sitos web. <a data-l10n-name="learn-more-link">Lege plus</a>
 cryptominer-tab-title = Cryptominatores
-cryptominer-tab-content = Cryptominatores usa potentia de calculo de tu systema pro cavar moneta digital. Scripts del minatores occulte exhauri tu batteria, relenta tu computator e pote accrescer le factura de tu energia.<a data-l10n-name="learn-more-link">Saper plus</a>
+cryptominer-tab-content = Cryptominatores usa le potentia de calculo de tu systema pro excavar moneta digital. Scripts de cryptominage exhauri tu batteria, relenta tu computator e pote accrescer le factura de tu energia.<a data-l10n-name="learn-more-link">Saper plus</a>
 lockwise-title = Non oblida plus tu contrasignos
 lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-header-content = { -lockwise-brand-name } immagazina con securitate tu contrasignos in tu navigator.
-lockwise-header-content-logged-in = Reserva e synchronisa con securitate tu contrasignos pro totes tu apparatos.
+lockwise-header-content-logged-in = Memorisa e synchronisa tu contrasignos sur tote tu apparatos in tote securitate.
 protection-report-view-logins-button = Vider credentiales
     .title = Ir a Credentiales salvate
 lockwise-no-logins-content = Obtene le application <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> pro haber tu contrasignos ubique.
@@ -60,8 +60,8 @@ lockwise-no-logins-content = Obtene le application <a data-l10n-name="lockwise-i
 # your localization, because it would result in the number showing twice.
 lockwise-passwords-stored =
     { $count ->
-        [one] Contrasigno immagazinate con securitate <a data-l10n-name="lockwise-how-it-works">Como illo functiona</a>
-       *[other] Contrasignos immagazinate con securitate <a data-l10n-name="lockwise-how-it-works">Como illo functiona</a>
+        [one] contrasigno memorisate con securitate <a data-l10n-name="lockwise-how-it-works">Como functiona</a>
+       *[other] contrasignos memorisate con securitate <a data-l10n-name="lockwise-how-it-works">Como functiona</a>
     }
 turn-on-sync = Accende { -sync-brand-short-name }…
     .title = Ir al preferentias de Sync
@@ -74,12 +74,20 @@ lockwise-sync-status =
        *[other] Synchronisation a { $count } altere apparatos
     }
 lockwise-sync-not-syncing-devices = Nulle synchronisation a altere apparatos
-monitor-title = Reguardar violationes de datos
+manage-connected-devices = Gerer apparatos…
+# Variables:
+#   $count (Number) - Number of devices connected with sync.
+lockwise-connected-device-status =
+    { $count ->
+        [one] Connectite a { $count } apparato
+       *[other] Connectite a { $count } apparatos
+    }
+monitor-title = Vigilantia contra violationes de datos
 monitor-link = Como illo functiona
 monitor-header-content-no-account = Consulta { -monitor-brand-name } pro vider si tu ha essite parte de un violation cognoscite de datos e reciper avisos sur nove violationes.
 monitor-header-content-signed-in = { -monitor-brand-name } te adverti si tu information ha apparite in un violation cognoscite de datos.
 monitor-sign-up = Inscriber te al Avisos de violation
-auto-scan = Automaticamente scandite hodie
+auto-scan = Controlate automaticamente hodie
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
@@ -143,11 +151,11 @@ bar-tooltip-tracker =
            *[other] { $count } contento traciator ({ $percentage }%)
         }
 bar-tooltip-fingerprinter =
-    .title = Traciatores de impression digital
+    .title = Dactylogrammatores
     .aria-label =
         { $count ->
-            [one] { $count } traciator de impression digital ({ $percentage }%)
-           *[other] { $count } traciatores de impression digital ({ $percentage }%)
+            [one] { $count } dactylogrammator ({ $percentage }%)
+           *[other] { $count } dactylogrammatores ({ $percentage }%)
         }
 bar-tooltip-cryptominer =
     .title = Cryptominatores

@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Lisade haldur
+addons-page-title = Lisade haldur
 search-header =
     .placeholder = Otsi saidilt addons.mozilla.org
     .searchbuttonlabel = Otsi
@@ -445,3 +446,5 @@ theme-heading-search-label = Leia rohkem teemasid
 extension-heading-search-label = Leia rohkem laiendusi
 addons-heading-search-input =
     .placeholder = Otsi saidilt addons.mozilla.org
+addon-page-options-button =
+    .title = Tööriistad kõigile lisadele

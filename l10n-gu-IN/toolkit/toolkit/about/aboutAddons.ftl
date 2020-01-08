@@ -4,6 +4,7 @@
 
 addons-window =
     .title = ઍડ-ઓન સંચાલક
+addons-page-title = ઍડ-ઓન સંચાલક
 search-header =
     .placeholder = addons.mozilla.org શોધો
     .searchbuttonlabel = શોધો
@@ -298,3 +299,5 @@ theme-heading-search-label = વધુ થીમ્સ શોધો
 extension-heading-search-label = વધુ એક્સ્ટેન્શન્સ શોધો
 addons-heading-search-input =
     .placeholder = addons.mozilla.org શોધો
+addon-page-options-button =
+    .title = બધા ઍડ-ઓન માટે સાધનો

@@ -134,6 +134,16 @@ permissions-site-location-disable-label =
     .label = Sewḥel isuturen imaynuten n unekcum γer wadig
 permissions-site-location-disable-desc = Aya ad isewḥel asuter n tsirag n n unekcum γer wadig inek i yusmal ur nelli deg tebdart. asewḥel n unekcum γer wadig izmer ad iṛeẓ timahaltin n usmel.
 
+## Site Permissions - Virtual Reality
+
+permissions-site-xr-window =
+    .title = Iɣewwaṛen - Tisirag n tilawt tuhlist
+    .style = { permissions-window.style }
+permissions-site-xr-desc = Ismal-agi web sutren-d anekcum ɣer yibenkan-ik n tilawt tuhlist. tzemreḍ ad tferneḍ anwa ismal ad ikecmen ɣer wyibenkan-ik n tilawt tulist. Tzemreḍ daɣen ad tesweḥleḍ asuter n unekcum amaynut ɣyibenkan-ik n tilawt tuhlist.
+permissions-site-xr-disable-label =
+    .label = Sewḥel asuter amaynut n unekcum ɣer yibenkan-ik n tilawt tuhlist
+permissions-site-xr-disable-desc = Aya ad isewḥel meṛṛa ismal ur d-yettwabedren ara nnig-a seg usuter n tsirag n unekcum ɣeryibenkan-ik n tilawt tuhlist. Asewḥel n unekcum ɣer yibenkan-ik n tilawt tuhlist izmer ad iṛeẓ tmahilin n usmel.
+
 ## Site Permissions - Camera
 
 permissions-site-camera-window =

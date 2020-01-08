@@ -4,6 +4,7 @@
 
 addons-window =
     .title = アドオンマネージャー
+addons-page-title = アドオンマネージャー
 search-header =
     .placeholder = addons.mozilla.org を検索
     .searchbuttonlabel = 検索
@@ -297,7 +298,7 @@ shortcuts-duplicate-warning-message = { $shortcut } が他の場所でも使用�
 shortcuts-exists = すでに { $addon } が使用しています
 shortcuts-card-expand-button =
     { $numberToShow ->
-      *[other] さらに { $numberToShow } 個表示
+       *[other] さらに { $numberToShow } 個表示
     }
 shortcuts-card-collapse-button = 折りたたむ
 go-back-button =
@@ -346,6 +347,10 @@ remove-addon-disabled-button = 削除不可の <a data-l10n-name="link">理由</
 disable-addon-button = 無効化
 enable-addon-button = 有効化
 expand-addon-button = 他のオプション
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = 有効
 preferences-addon-button =
     { PLATFORM() ->
         [windows] オプション
@@ -445,5 +450,8 @@ discover-heading = { -brand-short-name } のパーソナライズ
 shortcuts-heading = 拡張機能のショートカットキーの管理
 theme-heading-search-label = テーマを探す
 extension-heading-search-label = 拡張機能を探す
+default-heading-search-label = アドオンを探す
 addons-heading-search-input =
     .placeholder = addons.mozilla.org を検索
+addon-page-options-button =
+    .title = アドオンツール

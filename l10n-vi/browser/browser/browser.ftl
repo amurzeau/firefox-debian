@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (Duyệt web riêng tư)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (Duyệt web riêng tư)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = Xem thông tin trang
 
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Mở bảng thông báo
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Mở bảng yêu cầu vị trí
+urlbar-xr-notification-anchor =
+    .tooltiptext = Mở bảng điều khiển thực tế ảo
 urlbar-storage-access-anchor =
     .tooltiptext = Mở bảng điều khiển quyền hoạt động duyệt web
 urlbar-translate-notification-anchor =
@@ -51,6 +84,8 @@ urlbar-tip-help-icon =
     .title = Trợ giúp
 urlbar-geolocation-blocked =
     .tooltiptext = Bạn đã chặn thông tin địa điểm ở trang này.
+urlbar-xr-blocked =
+    .tooltiptext = Bạn đã chặn truy cập thiết bị thực tế ảo cho trang web này.
 urlbar-web-notifications-blocked =
     .tooltiptext = Bạn đã chặn thông báo ở trang này.
 urlbar-camera-blocked =
@@ -110,3 +145,16 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Đặt làm công cụ tìm kiếm mặc định cho cửa sổ riêng tư
     .accesskey = P
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = Hiện trình chỉnh sửa này khi lưu
+    .accesskey = S
+bookmark-panel-done-button =
+    .label = Xong
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

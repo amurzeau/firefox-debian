@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Tilføjelser
+addons-page-title = Tilføjelser
 search-header =
     .placeholder = Søg på addons.mozilla.org
     .searchbuttonlabel = Søg
@@ -356,6 +357,10 @@ remove-addon-button = Fjern
 remove-addon-disabled-button = Kan ikke fjernes <a data-l10n-name="link">Læs hvorfor</a>
 disable-addon-button = Deaktiver
 enable-addon-button = Aktiver
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = Aktiver
 expand-addon-button = Flere indstillinger
 preferences-addon-button =
     { PLATFORM() ->
@@ -451,6 +456,7 @@ recommended-theme-1 = Er du i det kreative hjørne? <a data-l10n-name="link">Byg
 ## Page headings
 
 extension-heading = Håndter dine udvidelser
+default-heading-search-label = Find flere udvidelser
 theme-heading = Håndter dine temaer
 plugin-heading = Håndter dine plugins
 dictionary-heading = Håndter dine ordbøger
@@ -462,3 +468,5 @@ theme-heading-search-label = Find flere temaer
 extension-heading-search-label = Find flere udvidelser
 addons-heading-search-input =
     .placeholder = Søg på addons.mozilla.org
+addon-page-options-button =
+    .title = Indstillinger for alle tilføjelser

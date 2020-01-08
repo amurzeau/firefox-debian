@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Gehigarrien kudeatzailea
+addons-page-title = Gehigarrien kudeatzailea
 search-header =
     .placeholder = Bilatu addons.mozilla.org gunean
     .searchbuttonlabel = Bilaketa
@@ -336,6 +337,10 @@ remove-addon-disabled-button = Ezin da kendu <a data-l10n-name="link">Zergatik?<
 disable-addon-button = Desgaitu
 enable-addon-button = Gaitu
 expand-addon-button = Aukera gehiago
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = Gaitu
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Aukerak
@@ -439,5 +444,8 @@ discover-heading = Pertsonalizatu zure { -brand-short-name }
 shortcuts-heading = Kudeatu hedapenen lasterbideak
 theme-heading-search-label = Bilatu itxura gehiago
 extension-heading-search-label = Bilatu hedapen gehiago
+default-heading-search-label = Bilatu gehigarri gehiago
 addons-heading-search-input =
     .placeholder = Bilatu addons.mozilla.org gunean
+addon-page-options-button =
+    .title = Tresnak gehigarri guztientzat

@@ -90,7 +90,7 @@ extension-controlled-web-notifications = Un extension, <img data-l10n-name="icon
 extension-controlled-default-search = Un extension, <img data-l10n-name="icon"/> { $name }, ha definite le motor de recerca ordinari.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = Un extension, <img data-l10n-name="icon"/> { $name }, necessita le schedas contextual.
+extension-controlled-privacy-containers = Un extension, <img data-l10n-name="icon"/> { $name }, require schedas contextual.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Le extension <img data-l10n-name="icon"/>{ $name } controla iste configuration.
@@ -117,7 +117,7 @@ search-results-help-link = Require adjuta? Visita <a data-l10n-name="url">Assist
 
 ## General Section
 
-startup-header = A initiar
+startup-header = Al initio
 # { -brand-short-name } will be 'Firefox Developer Edition',
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
@@ -145,7 +145,7 @@ ctrl-tab-recently-used-order =
     .label = Ctrl+Tab percurre le schedas in le ordine usate recentemente
     .accesskey = T
 open-new-link-as-tabs =
-    .label = Aperir le ligamines in schedas in vice de nove fenestras
+    .label = Aperir ligamines in schedas in vice de nove fenestras
     .accesskey = s
 warn-on-close-multiple-tabs =
     .label = Advertir te quando tu claude multiple schedas
@@ -154,13 +154,13 @@ warn-on-open-many-tabs =
     .label = Advertir te quando tu aperi multiple schedas que illo pote facer { -brand-short-name } devenir lente
     .accesskey = d
 switch-links-to-new-tabs =
-    .label = Quando tu aperi un ligamine in un nove scheda, commutar a illo immediatemente
+    .label = Quando tu aperi un ligamine in un nove scheda, passar a illo immediatemente
     .accesskey = h
 show-tabs-in-taskbar =
     .label = Monstrar vistas preliminar del schedas in le barra de cargas de Windows
     .accesskey = v
 browser-containers-enabled =
-    .label = Activar le schedas contextual
+    .label = Activar schedas contextual
     .accesskey = n
 browser-containers-learn-more = Saper plus
 browser-containers-settings =
@@ -183,8 +183,8 @@ containers-remove-alert-title = Remover iste contexto?
 #   $count (Number) - Number of tabs that will be closed.
 containers-remove-alert-msg =
     { $count ->
-        [one] Si tu remove iste contexto ora, { $count } scheda contextual essera claudite. Desira tu vermente remover iste contexto?
-       *[other] Si tu remover iste contexto ora, { $count } schedas contextual essera claudite. Desira tu vermente remover iste contexto?
+        [one] Si tu remove iste contexto ora, { $count } scheda contextual essera claudite. Es tu secur de voler remover iste contexto?
+       *[other] Si tu remove iste contexto ora, { $count } schedas contextual essera claudite. Es tu secur de voler remover iste contexto?
     }
 containers-remove-ok-button = Remover iste contexto
 containers-remove-cancel-button = Non remover iste contexto
@@ -192,8 +192,8 @@ containers-remove-cancel-button = Non remover iste contexto
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Lingua e apparentia
-fonts-and-colors-header = Typos de character e colores
-default-font = Typo predefinite
+fonts-and-colors-header = Typos de litteras e colores
+default-font = Typo de litteras predefinite
     .accesskey = D
 default-font-size = Dimension
     .accesskey = S
@@ -329,12 +329,12 @@ update-application-version = Version { $version } <a data-l10n-name="learn-more"
 update-history =
     .label = Monstrar le chronologia de actualisationes…
     .accesskey = M
-update-application-allow-description = Permitter { -brand-short-name } a
+update-application-allow-description = Permitter a { -brand-short-name } de
 update-application-auto =
     .label = Installar le actualisationes automaticamente (recommendate)
     .accesskey = A
 update-application-check-choose =
-    .label = Cercar actualisationes, ma lassar te decider si tu los installa
+    .label = Cercar actualisationes, lassante te decider si tu los installa
     .accesskey = C
 update-application-manual =
     .label = Non cercar jammais actualisationes (non recommendate)
@@ -388,7 +388,7 @@ performance-default-content-process-count =
 
 ## General Section - Browsing
 
-browsing-title = Navigante
+browsing-title = Navigation
 browsing-use-autoscroll =
     .label = Usar le rolamento automatic
     .accesskey = a
@@ -399,21 +399,21 @@ browsing-use-onscreen-keyboard =
     .label = Monstrar un claviero tactile quando necessari
     .accesskey = M
 browsing-use-cursor-navigation =
-    .label = Sempre usar le claves con le flechas directional pro navigar intra le paginas
+    .label = Sempre usar le claves a flechas pro navigar intra paginas
     .accesskey = c
 browsing-search-on-start-typing =
-    .label = Cercar le texto quando tu comencia a scriber
+    .label = Cercar texto quando tu comencia a scriber
     .accesskey = x
 browsing-picture-in-picture-toggle-enabled =
-    .label = Activa controlos picture-in-picture
-    .accesskey = p
+    .label = Activar controlos de video imagine-in-imagine
+    .accesskey = A
 browsing-picture-in-picture-learn-more = Saper plus
 browsing-cfr-recommendations =
-    .label = Extensiones recommendate quando tu naviga
-    .accesskey = r
+    .label = Recommendar extensiones durante que tu naviga
+    .accesskey = R
 browsing-cfr-features =
-    .label = Functionalitates recommendate durante que tu naviga.
-    .accesskey = F
+    .label = Recommendar functiones durante que tu naviga
+    .accesskey = f
 browsing-cfr-recommendations-learn-more = Saper plus
 
 ## General Section - Proxy
@@ -428,7 +428,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Nove fenestras e schedas
-home-new-windows-tabs-description2 = Elige que vider quando tu aperira tu pagina initial, nove fenestra, e nove scheda
+home-new-windows-tabs-description2 = Elige lo que tu vide quando tu aperi tu pagina initial, nove fenestras e nove schedas.
 
 ## Home Section - Home Page Customization
 
@@ -440,7 +440,7 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Pagina initial (predefinite) de Firefox
+    .label = Pagina initial de Firefox (predefinite)
 home-mode-choice-custom =
     .label = URLs personalisate...
 home-mode-choice-blank =
@@ -487,7 +487,7 @@ home-prefs-highlights-option-visited-pages =
 home-prefs-highlights-options-bookmarks =
     .label = Marcapaginas
 home-prefs-highlights-option-most-recent-download =
-    .label = Discargamento plus recente
+    .label = Ultime discargamento
 home-prefs-highlights-option-saved-to-pocket =
     .label = Paginas salvate in { -pocket-brand-name }
 # For the "Snippets" feature traditionally on about:home.
@@ -500,15 +500,15 @@ home-prefs-snippets-description = Actualitates de { -vendor-short-name } e { -br
 home-prefs-sections-rows-option =
     .label =
         { $num ->
-            [one] { $num } riga
-           *[other] { $num } rigas
+            [one] { $num } linea
+           *[other] { $num } lineas
         }
 
 ## Search Section
 
 search-bar-header = Barra de recerca
 search-bar-hidden =
-    .label = Utilisar le barra de adresse pro recercar e navigar
+    .label = Usar le barra de adresse pro cercar e navigar
 search-bar-shown =
     .label = Adder le barra de recerca in le barra de instrumentos
 search-engine-default-header = Motor de recerca predefinite
@@ -549,7 +549,7 @@ search-restore-default =
 search-remove-engine =
     .label = Remover
     .accesskey = r
-search-find-more-link = Trovar plus motores de recerca
+search-find-more-link = Adder plus motores de recerca
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = Parola clave duplicate
@@ -560,7 +560,13 @@ search-keyword-warning-bookmark = Tu ha eligite un parola clave que es actualmen
 
 ## Containers Section
 
-containers-back-link = « Regressar
+containers-back-link = « Retornar
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Retornar al optiones
+           *[other] Retornar al preferentias
+        }
 containers-header = Schedas contextual
 containers-add-button =
     .label = Adder un nove contexto
@@ -662,10 +668,10 @@ sync-change-options =
 
 sync-choose-what-to-sync-dialog =
     .title = Selige que synchronisar
-    .style = width: 36em; min-height: 35em;
-    .buttonlabelaccept = Salvar le cambiamentos
+    .style = width: 37em; min-height: 35em;
+    .buttonlabelaccept = Salvar cambios
     .buttonaccesskeyaccept = S
-    .buttonlabelextra2 = Disconnexion…
+    .buttonlabelextra2 = Disconnecter…
     .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = Marcapaginas
@@ -722,7 +728,7 @@ sync-connect-another-device = Connecter un altere apparato
 sync-manage-devices = Gerer apparatos
 sync-fxa-begin-pairing = Accopular un apparato
 sync-tos-link = Terminos de servicio
-sync-fxa-privacy-notice = Notification de confidentialitate
+sync-fxa-privacy-notice = Aviso de confidentialitate
 
 ## Privacy Section
 
@@ -829,7 +835,7 @@ sitedata-disallow-cookies-option =
 sitedata-block-desc = Typo de contento blocate
     .accesskey = T
 sitedata-option-block-trackers =
-    .label = Traciatores de tertie partes
+    .label = Traciatores de tertios
 sitedata-option-block-cross-site-trackers =
     .label = Traciatores inter sitos
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -868,9 +874,9 @@ addressbar-suggestions-settings = Cambiar le preferentias pro le suggestiones de
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blocage de contento
-content-blocking-section-description = Protege tu confidentialitate durante que tu naviga. Bloca le contento invisibile que tracia le sitos que tu visita e crea tu profilo. Blocar parte de iste contento pote render plus veloce cargar paginas.
-content-blocking-enhanced-tracking-protection = Protection de traciamento meliorate
-content-blocking-section-top-level-description = Le traciatores te seque circum le rete pro colliger informationes sur tu habitos e interesses de navigation. { -brand-short-name } bloca multes de iste traciatores e altere scripts maligne.
+content-blocking-section-description = Protege tu vita private durante que tu naviga. Bloca le contento invisibile que tracia le sitos que tu visita pro mantener un profilo de te. Blocar un parte de iste contento pote render le cargamento de paginas plus rapide.
+content-blocking-enhanced-tracking-protection = Protection antitraciamento reinfortiate
+content-blocking-section-top-level-description = Le traciatores te seque per tote le rete pro colliger informationes sur tu habitos e interesses de navigation. { -brand-short-name } bloca multes de iste traciatores e altere scripts maligne.
 content-blocking-learn-more = Saper plus
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -883,11 +889,11 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Personalisate
     .accesskey = P
-content-blocking-standard-desc = Equilibrio perfecte inter protection e rendimento. Permitte alcun traciatores a fin que le sitos web functiona correctemente.
-content-blocking-strict-description = Un protection plus forte pote facer errar in alcun sitos.
+content-blocking-standard-desc = Equilibrio inter protection e rendimento. Permitte alcun traciatores a fin que sitos web functiona correctemente.
+content-blocking-strict-description = Protection plus forte, ma alcun sitos pote faller.
 content-blocking-custom-desc = Elige que blocar.
-content-blocking-private-trackers = Traciatores note solo in Fenestras private
-content-blocking-third-party-cookies = Cookies traciator de tertie partes
+content-blocking-private-trackers = Traciatores cognoscite, solmente in fenestras private
+content-blocking-third-party-cookies = Cookies de traciamento de tertios
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -905,23 +911,23 @@ enhanced-tracking-protection-setting-custom =
 
 
 
-content-blocking-etp-standard-desc = Balanciate pro protection e efficientia. Le paginas se carga normalmente.
+content-blocking-etp-standard-desc = Equilibrio inter protection e rendimento. Le paginas se carga normalmente.
 content-blocking-etp-strict-desc = Protection reinfortiate, ma certe sitos o contento pote non functionar correctemente.
 content-blocking-etp-custom-desc = Elige qual traciatores e scripts blocar.
-content-blocking-private-windows = Contento traciator in fenestras private
+content-blocking-private-windows = Contento de traciamento in fenestras private
 content-blocking-cross-site-tracking-cookies = Cookies de traciamento inter sitos
 content-blocking-social-media-trackers = Traciatores de retes social
 content-blocking-all-cookies = Tote le cookies
-content-blocking-unvisited-cookies = Cookie ab sitos web non visitate
-content-blocking-all-windows-trackers = Traciatores note in tote le fenestras
-content-blocking-all-windows-tracking-content = Contento traciator in tote le fenestras
-content-blocking-all-third-party-cookies = Tote le cookies de tertie partes
-content-blocking-cryptominers = Crypto-minatores
-content-blocking-fingerprinters = Traciatores de impression digital
+content-blocking-unvisited-cookies = Cookie de sitos web non visitate
+content-blocking-all-windows-trackers = Traciatores cognoscite in tote le fenestras
+content-blocking-all-windows-tracking-content = Contento de traciamento in tote le fenestras
+content-blocking-all-third-party-cookies = Tote le cookies de tertios
+content-blocking-cryptominers = Cryptominatores
+content-blocking-fingerprinters = Dactylogrammatores
 content-blocking-warning-title = Attention!
-content-blocking-warning-description = Alcun sitos web pote non functionar correctemente con le blocage de contento. Es facile disactivar le blocage pro sitos de confidentia.
+content-blocking-warning-description = Alcun sitos web pote non functionar correctemente con le blocage de contento. Es facile disactivar le blocage pro le sitos in que tu ha confidentia.
 content-blocking-learn-how = Apprender como
-content-blocking-etp-warning-description = Blocar traciatores poterea haber impacto sur le functionalitate de alcun sitos.
+content-blocking-etp-warning-description = Blocar traciatores pote impedir le functionamento de certe sitos. Recarga un pagina con su traciatores pro cargar tote le contento.
 content-blocking-warning-learn-how = Apprende como
 content-blocking-reload-description = Tu debera recargar tu schedas pro applicar iste cambios.
 content-blocking-reload-tabs-button =
@@ -931,20 +937,20 @@ content-blocking-trackers-label =
     .label = Traciatores
     .accesskey = T
 content-blocking-tracking-content-label =
-    .label = Contento traciator
+    .label = Contento de traciamento
     .accesskey = t
 content-blocking-tracking-protection-option-all-windows =
     .label = In tote le fenestras
     .accesskey = t
 content-blocking-option-private =
-    .label = Solo in Fenestras private
+    .label = Solmente in fenestras private
     .accesskey = p
 content-blocking-tracking-protection-change-block-list = Cambiar le lista de blocage
 content-blocking-cookies-label =
     .label = Cookies
     .accesskey = C
 content-blocking-expand-section =
-    .tooltiptext = Plus de informationes
+    .tooltiptext = Plus informationes
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = Cryptominatores
@@ -952,13 +958,13 @@ content-blocking-cryptominers-label =
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
-    .label = Traciatores de impression digital
-    .accesskey = i
+    .label = Dactylogrammatores
+    .accesskey = D
 
 ## Privacy Section - Tracking
 
 tracking-manage-exceptions =
-    .label = Gerer le exceptiones…
+    .label = Gerer exceptiones…
     .accesskey = x
 
 ## Privacy Section - Permissions
@@ -966,6 +972,10 @@ tracking-manage-exceptions =
 permissions-header = Permissiones
 permissions-location = Geolocalisation
 permissions-location-settings =
+    .label = Parametros…
+    .accesskey = t
+permissions-xr = Realitate virtual
+permissions-xr-settings =
     .label = Parametros…
     .accesskey = t
 permissions-camera = Camera
@@ -1015,7 +1025,9 @@ permissions-a11y-privacy-link = Saper plus
 
 collection-header = Collecta e uso de datos per { -brand-short-name }
 collection-description = Nos nos effortia pro lassar te in le commando e colliger solmente lo que nos ha necessitate pro provider e meliorar { -brand-short-name } a totes. Nos sempre demanda permission ante reciper informationes personal.
-collection-privacy-notice = Notification de confidentialitate
+collection-privacy-notice = Aviso de confidentialitate
+collection-health-report-telemetry-disabled = Tu non plus permitte que { -vendor-short-name } captura datos technic e de interaction. Tote le datos jam capturate essera delite intra 30 dies.
+collection-health-report-telemetry-disabled-link = Saper plus
 collection-health-report =
     .label = Permitter que { -brand-short-name } invia datos technic e de interaction a { -vendor-short-name }
     .accesskey = r
@@ -1030,7 +1042,7 @@ addon-recommendations-link = Saper plus
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Le reporto de datos es inactive pro iste configuration de compilation
 collection-backlogged-crash-reports =
-    .label = Consentir { -brand-short-name } de inviar in tu nomine reportos de collapso arretrate
+    .label = Permitter a { -brand-short-name } de inviar reportos de collapso arretrate in tu nomine
     .accesskey = c
 collection-backlogged-crash-reports-link = Saper plus
 

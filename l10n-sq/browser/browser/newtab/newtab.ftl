@@ -40,13 +40,10 @@ newtab-topsites-image-validation = Dështoi ngarkimi i figurës. Provoni një UR
 ## Top Sites - General form dialog buttons. These are verbs/actions.
 
 newtab-topsites-cancel-button = Anuloje
-newtab-topsites-delete-history-button = Fshije prej Historiku
+newtab-topsites-delete-history-button = Fshije nga Historiku
 newtab-topsites-save-button = Ruaje
 newtab-topsites-preview-button = Paraparje
 newtab-topsites-add-button = Shtoje
-
-## Top Sites - Delete history confirmation dialog. 
-
 
 ## Top Sites - Delete history confirmation dialog.
 
@@ -58,13 +55,13 @@ newtab-confirm-delete-history-p2 = Ky veprim s’mund të zhbëhet.
 
 # General tooltip for context menus.
 newtab-menu-section-tooltip =
-    .title = Hape menunë
-    .aria-label = Hape menunë
+    .title = Hapni menunë
+    .aria-label = Hapni menunë
 # This tooltip is for the context menu of Pocket cards or Topsites
 # Variables:
 #  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
 newtab-menu-content-tooltip =
-    .title = Hape menunë
+    .title = Hapni menunë
     .aria-label = Hapni menu konteksti për { $title }
 # Tooltip on an empty topsite box to open the New Top Site dialog.
 newtab-menu-topsites-placeholder-tooltip =
@@ -79,7 +76,7 @@ newtab-menu-open-new-private-window = Hape në Dritare të Re Private
 newtab-menu-dismiss = Hidhe tej
 newtab-menu-pin = Fiksoje
 newtab-menu-unpin = Shfiksoje
-newtab-menu-delete-history = Fshije prej Historiku
+newtab-menu-delete-history = Fshije nga Historiku
 newtab-menu-save-to-pocket = Ruaje te { -pocket-brand-name }
 newtab-menu-delete-pocket = Fshije nga { -pocket-brand-name }
 newtab-menu-archive-pocket = Arkivoje në { -pocket-brand-name }
@@ -99,16 +96,12 @@ newtab-menu-remove-bookmark = Hiqe Faqerojtësin
 # Bookmark is a verb here.
 newtab-menu-bookmark = Faqerojtës
 
-## Context Menu - Downloaded Menu. "Download" in these cases is not a verb, 
-## it is a noun. As in, "Copy the link that belongs to this downloaded item".
-
-
 ## Context Menu - Downloaded Menu. "Download" in these cases is not a verb,
 ## it is a noun. As in, "Copy the link that belongs to this downloaded item".
 
 newtab-menu-copy-download-link = Kopjo Lidhjen e Shkarkimit
 newtab-menu-go-to-download-page = Shko Te Faqja e Shkarkimit
-newtab-menu-remove-download = Hiqe Prej Historiku
+newtab-menu-remove-download = Hiqe nga Historiku
 
 ## Context Menu - Download Menu: These are platform specific strings found in the context menu of an item that has
 ## been downloaded. The intention behind "this action" is that it will show where the downloaded file exists on the file
@@ -132,10 +125,6 @@ newtab-label-recommended = Në modë
 newtab-label-saved = Ruajtur te { -pocket-brand-name }
 newtab-label-download = Të shkarkuara
 
-## Section Menu: These strings are displayed in the section context menu and are 
-## meant as a call to action for the given section.
-
-
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
 
@@ -146,7 +135,7 @@ newtab-section-menu-manage-section = Administroni Ndarjen
 newtab-section-menu-manage-webext = Administroni Zgjerimin
 newtab-section-menu-add-topsite = Shtoni Sajt Kryesues
 newtab-section-menu-add-search-engine = Shtoni Motor Kërkimesh
-newtab-section-menu-move-up = Ngjite
+newtab-section-menu-move-up = Shpjere Sipër
 newtab-section-menu-move-down = Zbrite
 newtab-section-menu-privacy-notice = Shënim Mbi Privatësinë
 
@@ -188,6 +177,7 @@ newtab-discovery-empty-section-topstories-timed-out = Hëm! Thuajse e ngarkuam k
 newtab-pocket-read-more = Tema Popullore:
 newtab-pocket-more-recommendations = Më Tepër Rekomandime
 newtab-pocket-how-it-works = Si funksionon
+newtab-pocket-whats-pocket = Ç’është { -pocket-brand-name }?
 newtab-pocket-cta-button = Merreni { -pocket-brand-name }-in
 newtab-pocket-cta-text = Ruajini në { -pocket-brand-name } shkrimet që doni, dhe ushqejeni mendjen me lexime të mahnitshme.
 

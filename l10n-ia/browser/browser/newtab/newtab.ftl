@@ -137,7 +137,7 @@ newtab-section-menu-add-topsite = Adder sito preferite
 newtab-section-menu-add-search-engine = Adder un motor de recerca
 newtab-section-menu-move-up = Mover in alto
 newtab-section-menu-move-down = Mover in basso
-newtab-section-menu-privacy-notice = Notification de confidentialitate
+newtab-section-menu-privacy-notice = Aviso de confidentialitate
 
 ## Section aria-labels
 
@@ -177,6 +177,7 @@ newtab-discovery-empty-section-topstories-timed-out = Ups! Nos non ha potite car
 newtab-pocket-read-more = Subjectos popular:
 newtab-pocket-more-recommendations = Altere recommendationes
 newtab-pocket-how-it-works = Como functiona
+newtab-pocket-whats-pocket = Que es { -pocket-brand-name }?
 newtab-pocket-cta-button = Obtener { -pocket-brand-name }
 newtab-pocket-cta-text = Salva le articulos que tu ama in { -pocket-brand-name }, e alimenta tu mente con lecturas fascinante.
 

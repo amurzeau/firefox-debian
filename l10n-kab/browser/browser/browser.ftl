@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (Tunigin Tusligt)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (Tunigin Tusligt)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = Sken talɣut n usmel
 
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Ldi agalis n yizen
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Ldi agalis n usuter n wadeg
+urlbar-xr-notification-anchor =
+    .tooltiptext = Ldi agalis n tsirag i tilawt tuhlist
 urlbar-storage-access-anchor =
     .tooltiptext = Ldi agalis n tsirag n tunigin
 urlbar-translate-notification-anchor =
@@ -51,6 +84,8 @@ urlbar-tip-help-icon =
     .title = Awi tallelt
 urlbar-geolocation-blocked =
     .tooltiptext = Tesweḥleḍ talɣut ɣef wadeg i usmelweb-a.
+urlbar-xr-blocked =
+    .tooltiptext = Tesweḥleḍ anekcum i yibenkan n tilawt tuhlist i usmel-a.
 urlbar-web-notifications-blocked =
     .tooltiptext = Tesweḥleḍ ilɣa i usmelweb-a.
 urlbar-camera-blocked =
@@ -110,3 +145,16 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Sbadu-t amsedday n unadi amezwer i Windows Private
     .accesskey = P
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = Sken amaẓrag deg usekles
+    .accesskey = k
+bookmark-panel-done-button =
+    .label = Immed
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

@@ -89,8 +89,8 @@ menu-edit-find-again =
     .label = Կրկին Որոնել
     .accesskey = Ո
 menu-edit-bidi-switch-text-direction =
-    .label = Փոխել Տեքստի Ուղղությունը
-    .accesskey = ո
+    .label = Փոխել գրույթի ուղղությունը
+    .accesskey = w
 
 ## View Menu
 
@@ -124,9 +124,12 @@ menu-view-full-zoom-reduce =
 menu-view-full-zoom-reset =
     .label = Վերակայել
     .accesskey = Վ
+menu-view-full-zoom-actual-size =
+    .label = Իրական չափը
+    .accesskey = A
 menu-view-full-zoom-toggle =
-    .label = Խոշորացնել Միայն Տեքստը
-    .accesskey = Մ
+    .label = Խոշորացնել միայն գրույթը
+    .accesskey = T
 menu-view-page-style-menu =
     .label = Էջի Ոճը
     .accesskey = ճ
@@ -134,8 +137,8 @@ menu-view-page-style-no-style =
     .label = Առանց Ոճի
     .accesskey = Ա
 menu-view-page-basic-style =
-    .label = Օգտագործել Էջի Հիմնական Ոճը
-    .accesskey = Օ
+    .label = Էջի հիմնական ոճ
+    .accesskey = B
 menu-view-charset =
     .label = Տեքստի կոդավորումը
     .accesskey = դ
@@ -153,7 +156,7 @@ menu-view-full-screen =
     .label = Բացել Լիաէկրան
     .accesskey = Բ
 
-##
+
 
 menu-view-show-all-tabs =
     .label = Ցուցադրել բոլոր ներդիրները
@@ -209,21 +212,15 @@ menu-tools-downloads =
 menu-tools-addons =
     .label = Հավելումներ
     .accesskey = Հ
-menu-tools-sync-sign-in =
-    .label = Մուտք գործել { -sync-brand-short-name }…
-    .accesskey = Y
 menu-tools-fxa-sign-in =
     .label = Մուտք գործել { -brand-product-name }․․․
     .accesskey = g
 menu-tools-turn-on-sync =
-    .label = Միացնել{ -sync-brand-short-name }
+    .label = Միացնել { -sync-brand-short-name }…
     .accesskey = n
 menu-tools-sync-now =
     .label = Սինք
     .accesskey = Ս
-menu-tools-sync-re-auth =
-    .label = Վերակապակցվել { -sync-brand-short-name }ին
-    .accesskey = Վ
 menu-tools-fxa-re-auth =
     .label = Վերակապակցվել { -brand-product-name }․․․
     .accesskey = R
@@ -285,8 +282,7 @@ menu-help-safe-mode-with-addons =
     .label = Վերամեկնարկել՝ միացնելով հավելումները
     .accesskey = Վ
 # Label of the Help menu item. Either this or
-# safeb.palm.notdeceptive.label from
-# phishing-afterload-warning-message.dtd is shown.
+# menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
     .label = Զեկուցել խաբուսիկ կայքի մասին...
     .accesskey = խ

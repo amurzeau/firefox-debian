@@ -7,7 +7,7 @@
 
 <!ENTITY loadError.label "Problem në ngarkimin e faqes">
 <!ENTITY retry.label "Riprovoni">
-<!ENTITY returnToPreviousPage.label "Kthehuni Mbrapsht">
+<!ENTITY returnToPreviousPage.label "Kthehu Mbrapsht">
 <!ENTITY returnToPreviousPage1.label "Shko Mbrapsht (E këshilluar)">
 <!ENTITY advanced2.label "Të mëtejshme…">
 <!ENTITY viewCertificate.label "Shihni Dëshmi">
@@ -32,7 +32,7 @@
 </ul>
 ">
 
-<!ENTITY fileNotFound.title "Nuk u gjet kartelë">
+<!ENTITY fileNotFound.title "S&apos;u gjet kartelë">
 <!ENTITY fileNotFound.longDesc "
 <ul>
   <li>Kontrolloni emrin e kartelës për gabime shkrimi me të mëdha ose të vogla, apo të tjera gabime në shkrim.</li>
@@ -111,13 +111,13 @@
 </ul>
 ">
 
-<!ENTITY proxyResolveFailure.title "Nuk arrihet të gjendet shërbyesi ndërmjetës">
+<!ENTITY proxyResolveFailure.title "S&apos;arrihet të gjendet shërbyesi ndërmjetës">
 <!ENTITY proxyResolveFailure.longDesc "<ul>   <li>Kontrolloni rregullimet për ndërmjetësin, për t&apos;u siguruar që janë të sakta.</li>   <li>Kontrolloni kompjuterin tuaj, për t&apos;u siguruar që ka një lidhje rrjeti që punon.</li>   <li>Nëse kompjuteri apo rrjeti juaj mbrohet nga &quot;firewall&quot; apo ndërmjetës, sigurohuni që &brandShortName;-it i lejohet hyrja në Web.</li> </ul> ">
 
 <!ENTITY redirectLoop.title "Faqja nuk është ridrejtuar si duhet">
 <!ENTITY redirectLoop.longDesc "
 <ul>
-  <li>Ndonjëherë ky problem mund të shkaktohet nga çaktivizim apo mospranim cookie-sh.</li>
+  <li>Ndonjëherë ky problem mund të shkaktohet nga çaktivizim ose mospranim cookie-sh.</li>
 </ul>
 ">
 
@@ -177,10 +177,13 @@ was trying to connect. -->
 <!ENTITY cspBlocked.title "Bllokuar nga Rregulla Sigurie Lënde">
 <!ENTITY cspBlocked.longDesc "<p>&brandShortName;-i e pengoi ngarkimin e kësaj faqeje në këtë mënyrë, ngaqë faqja përmban një rregull sigurie lënde që nuk e lejon këtë.</p>">
 
+<!ENTITY xfoBlocked.title "Bllokuar nga Rregulla mbi X-Frame-Options">
+<!ENTITY xfoBlocked.longDesc "<p>&brandShortName;-i e pengoi ngarkimin e kësaj faqeje në këtë kontekst, ngaqë faqja ka një rregull  X-Frame-Options që s’e lejon.</p>">
+
 <!ENTITY corruptedContentErrorv2.title "Gabim nga Lëndë e Dëmtuar">
 <!ENTITY corruptedContentErrorv2.longDesc "<p>Faqja që po rrekeni të shihni nuk mund të shfaqet, ngaqë u pikas një gabim në transmetimin e të dhënave.</p><ul><li>Ju lutemi, lidhuni me të zotët e sajtit që t&apos;u njoftoni këtë problem.</li></ul>">
 
-<!ENTITY securityOverride.exceptionButton1Label "Pranoje Rrezikun dhe Vazhdo">
+<!ENTITY securityOverride.exceptionButton1Label "Pranoni Rrezikun dhe Vazhdoni">
 
 <!ENTITY errorReporting.automatic2 "Raportoni gabime si ky, që të ndihmoni Mozilla-n të identifikojë dhe bllokojë sajte dashakeqë">
 <!ENTITY errorReporting.learnMore "Mësoni më tepër…">
@@ -223,4 +226,4 @@ was trying to connect. -->
 <!ENTITY enableTls10.label "Aktivizoni TLS 1.0 dhe 1.1">
 
 <!ENTITY networkProtocolError.title "Gabim Protokolli Rrjeti">
-<!ENTITY networkProtocolError.longDesc "<p>Faqja që po rrekeni të shihni s&apos;mund të shfaqet, ngaqë u pikas një gabim protokolli rrjeti.</p><ul><li>Ju lutemi, lidhuni me të zotët e sajtit për t’ua bërë të ditur këtë problem.</li></ul>">
+<!ENTITY networkProtocolError.longDesc "<p>Faqja që po rrekeni të shihni s&apos;mund të shfaqet, ngaqë u pikas një gabim protokolli rrjeti.</p><ul><li>Ju lutemi, lidhuni me të zotët e sajtit që t&apos;u njoftoni këtë problem.</li></ul>">

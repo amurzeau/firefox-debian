@@ -123,7 +123,7 @@ page-info-not-specified =
     .value = E pacaktuar
 not-set-alternative-text = E pacaktuar
 not-set-date = E pacaktuar
-media-img = Figura
+media-img = Figurë
 media-bg-img = Sfond
 media-border-img = Anë
 media-list-img = Me pika
@@ -223,7 +223,7 @@ media-file-size = { $size } KB
 # Variables:
 #   $website (string) - The website name
 media-block-image =
-    .label = Bllokoji Figurat prej { $website }
+    .label = Bllokoji Figurat nga { $website }
     .accesskey = B
 # This string is used to display the URL of the website on top of the
 # pageInfo dialog box

@@ -19,3 +19,19 @@ open-location = ابحث أو أدخِل عنوانا
 share = شارِك
 close-window = أغلِق النافذة
 open-sidebar = الأشرطة الجانبية
+# This string describes shortcuts for search.
+search-popover = اختصارات البحث
+# Describes searches limited to a specific scope
+# (e.g. searching only in history).
+search-search-in = بحث في:
+
+## Various categories of shortcuts for search.
+
+search-bookmarks = العلامات
+search-history = التاريخ
+search-opentabs = الألسنة المفتوحة
+search-tags = الوسوم
+search-titles = العناوين
+
+
+

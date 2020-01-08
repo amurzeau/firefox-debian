@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (პირადი ფანჯარა)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (პირადი ფანჯარა)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = საიტის ინფორმაციის ჩვენება
 
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = შეტყობინებების არე
 urlbar-geolocation-notification-anchor =
     .tooltiptext = მდებარეობის მოთხოვნის არე
+urlbar-xr-notification-anchor =
+    .tooltiptext = წარმოსახვითი სინამდვილის ნებართვების არე
 urlbar-storage-access-anchor =
     .tooltiptext = დათვალიერების მოქმედებების ნებართვების არის გახსნა
 urlbar-translate-notification-anchor =
@@ -51,6 +84,8 @@ urlbar-tip-help-icon =
     .title = დახმარების მიღება
 urlbar-geolocation-blocked =
     .tooltiptext = ამ საიტისთვის თქვენს მდებარეობაზე წვდომა შეზღუდული გაქვთ.
+urlbar-xr-blocked =
+    .tooltiptext = ამ საიტისთვის წარმოსახვითი სინამდვილის თქვენს მოწყობილობაზე წვდომა შეზღუდული გაქვთ.
 urlbar-web-notifications-blocked =
     .tooltiptext = ამ საიტისთვის შეტყობინებების ჩვენების უფლება შეზღუდული გაქვთ.
 urlbar-camera-blocked =
@@ -110,3 +145,16 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = ნაგულისხმევ საძიებოდ დაყენება პირად ფანჯრებში
     .accesskey = პ
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = ჩასწორების შესაძლებლობა შენახვისას
+    .accesskey = ჩ
+bookmark-panel-done-button =
+    .label = მზადაა
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 23em

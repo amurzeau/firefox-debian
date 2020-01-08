@@ -7,7 +7,7 @@ Subject: Allow to override ICU_DATA_FILE from the environment
  1 file changed, 3 insertions(+), 1 deletion(-)
 
 diff --git a/build/autoconf/icu.m4 b/build/autoconf/icu.m4
-index fcdaf74daf6b..120e1797f949 100644
+index 310a7cad36e..6883d6494bf 100644
 --- a/build/autoconf/icu.m4
 +++ b/build/autoconf/icu.m4
 @@ -68,7 +68,9 @@ if test -n "$USE_ICU"; then

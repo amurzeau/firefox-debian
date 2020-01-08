@@ -121,7 +121,7 @@ startup-header = البدء
 # { -brand-short-name } will be 'Firefox Developer Edition',
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
-    .label = اسمح بتشغيل { -brand-short-name } و فَيَرفُكس في نفس الوقت
+    .label = اسمح بتشغيل { -brand-short-name } و Firefox في نفس الوقت
 use-firefox-sync = فائدة: يستخدم هذا ملفات إعدادات مستقلة. استخدم { -sync-brand-short-name } لمشاركة البيانات بينهما.
 get-started-not-logged-in = لِج إلى { -sync-brand-short-name }…
 get-started-configured = افتح تفضيلات { -sync-brand-short-name }
@@ -321,7 +321,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-##
+
 
 drm-content-header = محتوى إدارة الحقوق الرقمية (DRM)
 play-drm-content =
@@ -442,7 +442,7 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = صفحة بداية فَيَرفُكس (المبدئية)
+    .label = صفحة بداية Firefox (المبدئية)
 home-mode-choice-custom =
     .label = عناوين مخصصة…
 home-mode-choice-blank =
@@ -466,8 +466,8 @@ choose-bookmark =
 
 ## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = محتوى فَيَرفُكس الرئيسي
-home-prefs-content-description = اختر المحتوى الذي تريد عرضه في شاشة بداية فَيَرفُكس.
+home-prefs-content-header = محتوى Firefox الرئيسي
+home-prefs-content-description = اختر المحتوى الذي تريد عرضه في شاشة بداية Firefox.
 home-prefs-search-header =
     .label = ابحث في الوِب
 home-prefs-topsites-header =
@@ -519,6 +519,8 @@ search-bar-shown =
     .label = أضف شريط البحث إلى شريط الأدوات
 search-engine-default-header = محرك البحث المبدئي
 search-engine-default-desc = اختر محرك البحث المبدئي في شريطي العناوين و البحث.
+search-engine-default-desc-2 = هذا هو محرّك البحث المبدئي في شريطي العنوان والبحث. يمكنك تغييره متى شئت.
+search-engine-default-private-desc-2 = اختر محرّك بحث مبدئي آخر ليُستعمل في النوافذ الخاصة فقط
 search-separate-default-engine =
     .label = استعمل محرك البحث هذا في النوافذ الخاصة
     .accesskey = س
@@ -537,6 +539,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = فضّل اقتراحات البحث على تأريخ التصفح في نتائج شريط العنوان
+search-show-suggestions-private-windows =
+    .label = اعرض اقتراحات البحث في النوافذ الخاصة
 suggestions-addressbar-settings = غيّر تفضيلاتك تجاه تأريخ التصفح والعلامات واقتراحات الألسنة
 search-suggestions-cant-show = لن تظهر اقتراحات البحث في نتائج شريط الموقع لأنّك أعددت { -brand-short-name } على ألّا يتذكر التأريخ.
 search-one-click-header = محركات البحث بنقرة واحدة
@@ -563,6 +567,12 @@ search-keyword-warning-bookmark = لقد اخترت كلمة مفتاحية تس
 ## Containers Section
 
 containers-back-link = → عد للخلف
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] عُد إلى الخيارات
+           *[other] عُد إلى التفضيلات
+        }
 containers-header = الألسنة الحاوية
 containers-add-button =
     .label = أضف حاوية جديدة
@@ -586,6 +596,9 @@ sync-signedout-account-create = أليس لديك حساب؟ لتبدأ
 sync-signedout-account-signin =
     .label = لِج…
     .accesskey = ل
+sync-signedout-account-signin2 =
+    .label = لِج إلى { -sync-brand-short-name }…
+    .accesskey = ل
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -594,7 +607,7 @@ sync-signedout-account-signin =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = نزّل فيرفكس <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">أندرويد</a> أو <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">آي أو إس</a> للمزامنة مع هاتفك المحمول.
+sync-mobile-promo = نزّل Firefox لنظامي <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">أندرويد</a> أو <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">آي أو إس</a> للمزامنة مع هاتفك المحمول.
 
 ## Sync Section - Signed in
 
@@ -733,6 +746,7 @@ privacy-header = خصوصية المتصفح
 ## Privacy Section - Logins and Passwords
 
 logins-header = جلسات الولوج وكلمات السر
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = اطلب مني حفظ كلمات سر و بيانات ولوج مواقع الوِب
     .accesskey = ط
@@ -742,7 +756,11 @@ forms-exceptions =
 forms-generate-passwords =
     .label = ولّد كلمات سر قوية واقترحها عليّ
     .accesskey = ك
+forms-breach-alerts =
+    .label = اعرض تنبيهات بكلمات السر المتسرّبة من المواقع
+    .accesskey = ت
 forms-breach-alerts-learn-more-link = اطّلع على المزيد
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = املأ جلسات الولوج وكلمات السر تلقائيا
     .accesskey = م
@@ -862,6 +880,7 @@ addressbar-suggestions-settings = غيّر تفضيلات اقتراحات مح�
 content-blocking-header = حجب المحتوى
 content-blocking-section-description = احمِ خصوصيتك وأنت تتصفح الوِب بحجب المحتوى الذي يتعقّب المواقع التي تزورها دون أن تعلم، كما ويسجّلها باسمك. يمكنك بحجب جزء من هذا المحتوى تحميل الصفحات بسرعة أكبر.
 content-blocking-enhanced-tracking-protection = الحماية الموسّعة من التعقب
+content-blocking-section-top-level-description = تحاول المتعقّبات معرفة ما تفعل على الشبكة دومًا وجمع المعلومات التي تخصّ عاداتك في التصفّح كما واهتماماتك. يحجب { -brand-short-name } أكثر هذه المتعقّبات وغيرها من سكربتات ضارة.
 content-blocking-learn-more = اطّلع على المزيد
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -894,16 +913,18 @@ enhanced-tracking-protection-setting-custom =
     .label = مخصّص
     .accesskey = خ
 
-##
+
 
 content-blocking-etp-standard-desc = يوازن بين الحماية والأداء. ستتحمّل الصفحات كالعادة.
 content-blocking-etp-strict-desc = حماية أقوى وأعتى، لكنها قد تعطب محتويات بعض المواقع أو المواقع نفسها.
 content-blocking-etp-custom-desc = اختر المتعقّبات والسكربتات التي تريد حجبها.
+content-blocking-private-windows = المحتوى الذي يتعقّبك في النوافذ الخاصة
 content-blocking-cross-site-tracking-cookies = كعكات تتعقّبك بين المواقع
 content-blocking-social-media-trackers = متعقبات مواقع التواصل الاجتماعي
 content-blocking-all-cookies = كل الكعكات
 content-blocking-unvisited-cookies = الكعكات من المواقع غير المُزارة
 content-blocking-all-windows-trackers = المتعقّبات المعروفة في كل النوافذ
+content-blocking-all-windows-tracking-content = المحتوى الذي يتعقّبك في كل النوافذ
 content-blocking-all-third-party-cookies = كل الكعكات من الأطراف الثالثة
 content-blocking-cryptominers = المُعدّنات المعمّاة
 content-blocking-fingerprinters = مسجّلات البصمات
@@ -919,6 +940,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = المتعقّبات
     .accesskey = ق
+content-blocking-tracking-content-label =
+    .label = المحتوى الذي يتعقّبك
+    .accesskey = ح
 content-blocking-tracking-protection-option-all-windows =
     .label = في كل النوافذ
     .accesskey = ك
@@ -952,6 +976,10 @@ tracking-manage-exceptions =
 permissions-header = الصلاحيات
 permissions-location = المكان
 permissions-location-settings =
+    .label = الإعدادات…
+    .accesskey = ع
+permissions-xr = الواقع الافتراضي
+permissions-xr-settings =
     .label = الإعدادات…
     .accesskey = ع
 permissions-camera = الكمرة
@@ -1002,6 +1030,8 @@ permissions-a11y-privacy-link = اطّلع على المزيد
 collection-header = جمع { -brand-short-name } للبيانات و استخدامها
 collection-description = نبذل جهدنا لإعطائك الخيار و جمع ما نحتاجه فقط لتحسين { -brand-short-name }. نطلب الإذن دائمًا قبل استقبال أي معلومات شخصية.
 collection-privacy-notice = تنويه الخصوصية
+collection-health-report-telemetry-disabled = لم تعد تسمح بأن يلتقط { -vendor-short-name } البيانات التقنية والتفاعلية. ستُحذف البيانات القديمة كلها خلال 30 يومًا.
+collection-health-report-telemetry-disabled-link = اطّلع على المزيد
 collection-health-report =
     .label = اسمح أن يُرسل { -brand-short-name } بيانات تقنية و بيانات التفاعل إلى { -vendor-short-name }
     .accesskey = ح

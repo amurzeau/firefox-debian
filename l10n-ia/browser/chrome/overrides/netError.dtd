@@ -64,7 +64,7 @@
 <!ENTITY notCached.title "Documento expirate">
 <!ENTITY notCached.longDesc "<p>Le documento requestate non es disponibile in le cache de &brandShortName;.</p><ul><li>Como precaution de securitate, &brandShortName; non re-requestara automaticamente documentos sensibile.</li><li>Clicca retentar pro re-requestar le documento ab le sito web.</li></ul>">
 
-<!ENTITY netOffline.title "Modo disconnectite">
+<!ENTITY netOffline.title "Modo foras de linea">
 <!ENTITY netOffline.longDesc2 "
 <ul>
   <li>Preme &quot;Retentar&quot; pro commutar al modo in linea e recargar le pagina.</li>
@@ -213,7 +213,7 @@ was trying to connect. -->
 
 <!ENTITY certerror.mitm.title "Un software impedi &brandShortName; de connecter se securmente a iste sito">
 <!ENTITY certerror.mitm.longDesc "<span class='hostname'></span> es probabilemente un sito secur, ma un connexion secur non poteva esser establite. Iste problema es causate per <span class='mitm-name'/>, que es o un software in tu computator o tu rete.">
-<!ENTITY certerror.mitm.whatCanYouDoAboutIt1 "Si tu programma antivirus ha un function que scanna connexiones cryptate (generalmente appellate “scan web” o “scan https”), tenta disactivar iste function. Si isto non resolve le problema, tenta remover e reinstallar le software antivirus.">
+<!ENTITY certerror.mitm.whatCanYouDoAboutIt1 "Si tu programma antivirus ha un function que controla connexiones cryptate (generalmente appellate “scan web” o “scan https”), tenta disactivar iste function. Si isto non resolve le problema, tenta remover e reinstallar le software antivirus.">
 <!ENTITY certerror.mitm.whatCanYouDoAboutIt2 "Si tu es in un rete corporative, tu pote contactar tu assistentia technic.">
 <!ENTITY certerror.mitm.whatCanYouDoAboutIt3 "Si tu non cognosce <span class='mitm-name'/>, tunc isto pote esser un attacco e tu non deberea sequer al sito.">
 <!ENTITY certerror.mitm.sts.whatCanYouDoAboutIt3 "Si tu non cognosce <span class='mitm-name'/>, tunc isto pote esser un attacco, e il non ha qualcosa que tu pote facer pro acceder al sito.">
@@ -224,7 +224,7 @@ was trying to connect. -->
 <!ENTITY prefReset.longDesc "Pare que le configuration de securitate del rete pote esser le causa de isto. Vole tu restaurar le configuration predefinite?">
 <!ENTITY prefReset.label "Restaurar le parametros predefinite">
 
-<!ENTITY enableTls10.longDesc "Iste sito web non supporta le protocollo TLS 1.2, que es le minime version supportate per &brandShortName;. Le activation de TLS 1.0 e TLS 1.1 pote consentir de succeder a iste connexion.">
+<!ENTITY enableTls10.longDesc "Iste sito web pote non supportar le protocollo TLS 1.2, le version minime que &brandShortName; supporta. Activar TLS 1.0 e TLS 1.1 poterea permitter que iste connexion succede.">
 <!ENTITY enableTls10.note "TLS 1.0 e TLS 1.1 sera permanentemente disactivate in un futuro version.">
 <!ENTITY enableTls10.label "Activar TLS 1.0 e 1.1">
 

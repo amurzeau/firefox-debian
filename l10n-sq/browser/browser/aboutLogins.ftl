@@ -14,12 +14,7 @@ login-app-promo-apple =
     .alt = Shkarkojeni nga App Store
 login-filter =
     .placeholder = Kërkoni te Kredenciale Hyrjesh
-create-login-button = Krijoni Krendeciale Hyrjesh të Reja
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = Favikonë për { $title }
+create-login-button = Krijoni Kredenciale të Reja Hyrjeje
 fxaccounts-sign-in-text = Merrni fjalëkalimet tuaj në pajisjet tuaja të tjera
 fxaccounts-sign-in-button = Hyni te { -sync-brand-short-name }-u
 fxaccounts-avatar-button =
@@ -61,9 +56,6 @@ about-logins-login-list-empty-search-description = S’ka përfundime me përput
 login-list-item-title-new-login = Kredenciale të Reja Hyrjeje
 login-list-item-subtitle-new-login = Jepni kredencialet tuaja të hyrjes
 login-list-item-subtitle-missing-username = (pa emër përdoruesi)
-about-logins-list-item-warning-icon =
-    .alt = Ikonë sinjalizimi
-    .title = Sajt i cenuar
 about-logins-list-item-breach-icon =
     .title = Sajt i cenuar
 
@@ -79,9 +71,10 @@ about-logins-intro-import = Nëse kredencialet tuaj për hyrje janë ruajtur në
 
 ## Login
 
-login-item-new-login-title = Krijoni Kredenciale të Reja Hyrjesh
+login-item-new-login-title = Krijoni Kredenciale të Reja Hyrjeje
 login-item-edit-button = Përpunoni
 login-item-delete-button = Fshije
+about-logins-login-item-remove-button = Hiqi
 login-item-origin-label = Adresë sajti
 login-item-origin =
     .placeholder = https://www.example.com
@@ -125,6 +118,7 @@ enable-password-sync-preferences-button =
            *[other] Vizitoni Parapëlqime { -sync-brand-short-name }
         }
     .accesskey = V
+confirm-delete-dialog-title = Të fshihen këto kredenciale hyrjeje?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = Mos më pyet më
     .accesskey = M
@@ -134,27 +128,23 @@ about-logins-enable-password-sync-dont-ask-again-button =
 confirmation-dialog-cancel-button = Anuloje
 confirmation-dialog-dismiss-button =
     .title = Anulim
-confirm-delete-dialog-title = Të fshihen këto kredenciale hyrjesh?
-confirm-delete-dialog-message = Ky veprim nuk mund të zhbëhet.
+about-logins-confirm-remove-dialog-title = Të hiqen këto kredenciale hyrjesh?
+confirm-delete-dialog-message = Ky veprim s’mund të zhbëhet.
 confirm-delete-dialog-confirm-button = Fshije
+about-logins-confirm-remove-dialog-confirm-button = Hiqi
 confirm-discard-changes-dialog-title = Të hidhen tej këto ndryshime?
 confirm-discard-changes-dialog-message = Do të humbin krejt ndryshimet e paruajtura.
 confirm-discard-changes-dialog-confirm-button = Hidhe tej
 
 ## Breach Alert notification
 
-breach-alert-text = Që prej herës së fundit që përditësuat hollësi të kredencialeve tuaja të hyrjeve, ka patur rrjedhje ose vjedhje fjalëkalimesh prej këtij sajti. Që të mbroni llogarinë tuaj, ndryshoni fjalëkalimin tuaj për të.
+breach-alert-text = Që nga hera e fundit që përditësuat hollësi të kredencialeve tuaja të hyrjeve, te ky sajt ka patur rrjedhje ose vjedhje fjalëkalimesh. Që të mbroni llogarinë tuaj, ndryshoni fjalëkalimin tuaj për të.
 breach-alert-link = Mësoni më tepër mbi këtë cenim.
 breach-alert-dismiss =
     .title = Mbylle këtë sinjalizim
 
 ## Error Messages
 
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = Ka tashmë një zë për { $loginTitle } me atë emër përdoruesi.
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:

@@ -121,7 +121,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY toggleReaderMode.key "R">
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
-<!ENTITY fxaSignIn.label "Увайсці ў &syncBrand.shortName.label;">
+<!ENTITY fxaSignIn.label "Увайсці ў сінхранізацыю">
 <!ENTITY fxaSignedIn.tooltip "Адкрыць налады &syncBrand.shortName.label;">
 <!ENTITY fxaSignInError.label "Перазлучыцца з &syncBrand.shortName.label;">
 <!ENTITY fxaUnverified.label "Пацвердзіце свой уліковы запіс">
@@ -150,15 +150,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.unverified.description.label "Вам неабходна пацвердзіць свой уліковы запіс, перш чым вы зможаце сінхранізавацца.">
 <!ENTITY fxa.unverified.button.label "Адкрыць налады &syncBrand.shortName.label;…">
 
-<!ENTITY pictureInPictureHideToggle.label "Схаваць пераключальнік Выява ў выяве">
-<!ENTITY pictureInPictureHideToggle.accesskey "р">
-
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
-     for the Firefox Account toolbar menu screen. The `Signed in as` text is
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
      followed by the user's email. -->
 <!ENTITY fxa.menu.signedInAs.label "Увайшоўшы як">
 <!ENTITY fxa.menu.manageAccount.label "Кіраванне ўліковым запісам…">
 <!ENTITY fxa.menu.syncSettings.label "Налады &syncBrand.shortName.label;…">
+
+<!ENTITY pictureInPictureHideToggle.label "Схаваць пераключальнік Выява ў выяве">
+<!ENTITY pictureInPictureHideToggle.accesskey "р">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
@@ -168,9 +168,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "Увайсці ў &brandProductName;">
-<!ENTITY fxa.menu.turnOnSync.label "Уключыць &syncBrand.shortName.label;">
+<!ENTITY fxa.menu.turnOnSync.label "Уключыць сінхранізацыю">
 <!ENTITY fxa.menu.firefoxServices.label "Сервісы &brandProductName;">
-
 <!ENTITY fxa.menu.account.label "Уліковы запіс">
 <!ENTITY fxa.menu.settings.label "Налады">
 <!ENTITY fxa.menu.accountSettings.label "Налады ўліковага запісу">
@@ -244,6 +243,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadCmd.accesskey          "А">
 <!ENTITY stopCmd.label                "Спыніць">
 <!ENTITY stopCmd.accesskey            "С">
+
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "Пайсці па адрасе, які зараз у адрасным радку">
 <!ENTITY printButton.label            "Друкаваць">
@@ -290,6 +290,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Вы забаранілі гэтаму вэб-сайту выкарыстоўваць плагін Adobe Flash.">
 <!ENTITY urlbar.midiBlocked.tooltip              "Вы заблакавалі MIDI доступ для гэтага вэб-сайта.">
 <!ENTITY urlbar.installBlocked.tooltip           "Вы заблакавалі ўсталяванне дадаткаў з гэтага вэб-сайта.">
+
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Паказаць гісторыю">
 
@@ -449,9 +450,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Увайдзіце, каб пабачыць спіс картак з іншых сваіх прылад.">
 <!ENTITY appMenuRemoteTabs.welcome.label "Пабачыць спіс картак з іншых сваіх прылад.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Ваш уліковы запіс патрабуе пацвярджэння.">
-<!ENTITY appMenuRemoteTabs.signin.label "Увайсці ў Sync">
-<!ENTITY appMenuRemoteTabs.signintosync.label "Увайсці ў &syncBrand.shortName.label;…">
-<!ENTITY appMenuRemoteTabs.turnonsync.label "Уключыць &syncBrand.shortName.label;…">
+<!ENTITY appMenuRemoteTabs.signin.label "Увайсці ў сінхранізацыю">
+<!ENTITY appMenuRemoteTabs.signintosync.label "Увайсці ў сінхранізацыю…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "Уключыць сінхранізацыю…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Кіраваць прыладамі...">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Паказаць бакавую панэль сінхранізаваных картак">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Схаваць бакавую панэль сінхранізаваных картак">
@@ -567,12 +568,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      searchFor.label and searchWith.label. This string will be used instead of
      them when the user has not typed any keyword. -->
 <!ENTITY searchWithHeader.label       "Шукаць з:">
-
-<!-- LOCALIZATION NOTE (searchWithDesc.label):
-     This string prompts the user to use the list of one-click search engines in
-     the Urlbar and searchbar. -->
-<!ENTITY searchWithDesc.label         "На гэты раз шукайце ў:">
-
 <!-- LOCALIZATION NOTE (changeSearchSettings.button):
      This string won't wrap, so if the translated string is longer,
      consider translating it as if it said only "Search Settings". -->
@@ -585,6 +580,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY searchSetAsDefault.accesskey "п">
 
 <!ENTITY openLinkCmdInTab.label       "Адкрыць спасылку ў новай картцы">
+
 <!ENTITY openLinkCmdInTab.accesskey   "й">
 <!ENTITY openLinkCmd.label            "Адкрыць спасылку ў новым акне">
 <!ENTITY openLinkCmd.accesskey        "п">
@@ -600,6 +596,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY openLinkCmdInContainerTab.accesskey "ы">
 <!ENTITY showOnlyThisFrameCmd.label     "Паказваць толькі гэтую рамку">
 <!ENTITY showOnlyThisFrameCmd.accesskey "г">
+
 <!ENTITY reloadCmd.commandkey         "r">
 <!ENTITY reloadFrameCmd.label         "Абнавіць рамку">
 <!ENTITY reloadFrameCmd.accesskey     "А">
@@ -650,6 +647,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY savePageCmd.label            "Захаваць старонку як…">
 <!ENTITY savePageCmd.accesskey        "я">
 <!ENTITY savePageCmd.accesskey2       "с">
+<!-- alternate for content area context menu -->
 <!ENTITY savePageCmd.commandkey       "s">
 <!ENTITY saveFrameCmd.label           "Захаваць рамку як…">
 <!ENTITY saveFrameCmd.accesskey       "к">
@@ -816,6 +814,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY bidiSwitchPageDirectionItem.accesskey    "к">
 <!ENTITY bidiSwitchTextDirectionItem.label        "Пераключыць кірунак тэксту">
 <!ENTITY bidiSwitchTextDirectionItem.accesskey    "р">
+
 <!ENTITY bidiSwitchTextDirectionItem.commandkey   "X">
 
 <!ENTITY findOnCmd.label     "Знайсці на гэтай старонцы…">
@@ -939,12 +938,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Чаму?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Блакаванне іх можа парушыць часткі некаторых вэб-сайтаў. Без трэкераў некаторыя кнопкі, формы і палі для ўваходу могуць не працаваць.">
-<!ENTITY protections.notBlocking.why.etpOff.tooltip "Адключэнне аховы дазволіць усе трэкеры на гэтым сайце. Гэта таксама можа палепшыць некаторыя функцыі сайта.">
-<!ENTITY protections.socialMediaTrackers.label "Трэкеры сацыяльных сетак">
-<!ENTITY protections.crossSiteTrackingCookies.label "Міжсайтавыя кукі асочвання">
-<!ENTITY protections.trackingContent.label "Змест з элементамі сачэння">
-<!ENTITY protections.fingerprinters.label "Збіральнікі адбіткаў пальцаў">
-<!ENTITY protections.cryptominers.label "Майнеры крыптавалют">
 <!ENTITY protections.notBlocking.why.etpOff2.tooltip "Усе трэкеры на гэтым сайце загружаныя, таму што ахова адключана.">
 <!ENTITY protections.noTrackersFound.description "Ніводнага трэкера, вядомага &brandShortName;, не выяўлена на гэтай старонцы.">
 
@@ -963,11 +956,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncedTabs.sidebar.label              "Сінхранізаваныя карткі">
 
-<!ENTITY syncBrand.shortName.label    "Sync">
+<!ENTITY syncBrand.shortName.label    "Сінхранізацыя">
 
-<!ENTITY syncSignIn.label             "Увайсці ў &syncBrand.shortName.label;…">
+<!ENTITY syncSignIn.label             "Увайсці ў сінхранізацыю…">
 <!ENTITY syncSignIn.accesskey         "У">
-
 <!ENTITY syncSyncNowItem.label        "Сінхранізаваць зараз ">
 <!ENTITY syncSyncNowItemSyncing.label "Сінхранізацыя…">
 <!ENTITY syncSyncNowItem.accesskey    "С">
@@ -1005,8 +997,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.manageSettings2.accesskey "ь">
 
 <!ENTITY contentBlocking.socialblock.label "Трэкеры сацыяльных сетак">
-
-<!ENTITY contentBlocking.cookies2.label "Міжсайтавыя кукі асочвання">
 
 <!ENTITY contentBlocking.cryptominers.label "Майнеры крыптавалют">
 <!ENTITY contentBlocking.cryptominersView.label "Майнеры крыптавалют">

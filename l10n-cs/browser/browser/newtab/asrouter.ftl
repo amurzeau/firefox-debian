@@ -74,7 +74,7 @@ cfr-doorhanger-pintab-animation-resume = Pokračovat
 ## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Mějte své záložky všude s sebou.
-cfr-doorhanger-bookmark-fxa-body = Skvělý nález! Chcete mít tuto záložku i ve svém mobilním zařízení? Použijte { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-body = Skvělý nález! Chcete mít tuto záložku i ve svém mobilním zařízení? Použijte { -fxaccount-brand-name(case: "acc", capitalization: "lower") }.
 cfr-doorhanger-bookmark-fxa-link-text = Synchronizujte své záložky…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Zavírací tlačítko
@@ -104,7 +104,7 @@ cfr-whatsnew-tracking-protect-link-text = Zobrazit podrobnosti
 # This string is displayed before a large numeral that indicates the total
 # number of tracking elements blocked. Don’t add $blockedCount to your
 # localization, because it would result in the number showing twice.
-cfr-whatsnew-tracking-blocked-title = Zablokováno sledovacích prvků
+cfr-whatsnew-tracking-blocked-title = Blokování sledovacích prvků
 cfr-whatsnew-tracking-blocked-subtitle = Od { DATETIME($earliestDate, month: "long", year: "numeric") }
 cfr-whatsnew-tracking-blocked-link-text = Zobrazit podrobnosti
 cfr-whatsnew-lockwise-backup-title = Zálohujte svá hesla
@@ -114,25 +114,60 @@ cfr-whatsnew-lockwise-take-title = Vezměte si svá hesla všude s sebou
 cfr-whatsnew-lockwise-take-body = S mobilní aplikací { -lockwise-brand-short-name } získáte bezpečný přístup k vašim zálohovaným přihlašovacím údajům kdekoliv budete potřebovat.
 cfr-whatsnew-lockwise-take-link-text = Stáhnout aplikaci
 
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = Sledujte videa během brouzdání
+cfr-whatsnew-pip-body = V režimu obraz v obraze se video přehrává v samostatném plovoucím okně, takže ho můžete sledovat i při práci v jiných panelech.
+cfr-whatsnew-pip-cta = Zjistit více
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = Méně otravných vyskakovacích oken
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } brání stránkám v dotazech na posílání vyskakovacích upozornění.
+cfr-whatsnew-permission-prompt-cta = Zjistit více
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header = Zablokováno vytvoření otisku prohlížeče
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } blokuje mnoho způsobů vytváření otisku prohlížeče, které tajně sbírají informace o vašem zařízení, aby si vytvořily profil pro sledování vašich dalších aktivit.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Blokování otisku prohlížeče
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } blokuje vytváření otisku prohlížeče, které tajně sbírá informace o vašem zařízení pro vytvoření vašeho reklamního profilu
+
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Sdílejte tuto záložku i do svého telefonu
-cfr-doorhanger-sync-bookmarks-body = Mějte své záložky, hesla, historii prohlížení a další vždy po ruce. Přihlaste se v aplikaci { -brand-product-name }.
-cfr-doorhanger-sync-bookmarks-ok-button = Zapnout { -sync-brand-short-name }
+cfr-doorhanger-sync-bookmarks-body =
+    Mějte své záložky, hesla, historii prohlížení a další vždy po ruce. Přihlaste se { -brand-product-name.gender ->
+        [masculine] ve { -brand-product-name(case: "loc") }
+        [feminine] v { -brand-product-name(case: "loc") }
+        [neuter] v { -brand-product-name(case: "loc") }
+       *[other] v aplikaci { -brand-product-name }
+    }.
+cfr-doorhanger-sync-bookmarks-ok-button = Zapnout { -sync-brand-short-name(case: "gen") }
     .accesskey = Z
 
 ## Login Sync
 
 cfr-doorhanger-sync-logins-header = Už žádná zapomenutá hesla
 cfr-doorhanger-sync-logins-body = Ukládejte a synchronizujte hesla bezpečně napříč svými zařízeními.
-cfr-doorhanger-sync-logins-ok-button = Zapnout { -sync-brand-short-name }
+cfr-doorhanger-sync-logins-ok-button = Zapnout { -sync-brand-short-name(case: "gen") }
     .accesskey = t
 
 ## Send Tab
 
 cfr-doorhanger-send-tab-header = Přečtěte si tento článek i na cestách
 cfr-doorhanger-send-tab-recipe-header = Vezměte si tento recept rovnou do kuchyně
-cfr-doorhanger-send-tab-body = Posílání panelů funguje pro snadné sdílení odkazů do vašeho telefonu nebo kamkoliv, kde jste přihlášení v aplikaci { -brand-product-name }.
+cfr-doorhanger-send-tab-body =
+    Posílání panelů funguje pro snadné sdílení odkazů do vašeho telefonu nebo kamkoliv, kde jste přihlášeni { -brand-product-name.gender ->
+        [masculine] ve { -brand-product-name(case: "loc") }
+        [feminine] v { -brand-product-name(case: "loc") }
+        [neuter] v { -brand-product-name(case: "loc") }
+       *[other] v aplikaci { -brand-product-name }
+    }.
 cfr-doorhanger-send-tab-ok-button = Vyzkoušet posílání panelů
     .accesskey = V
 
@@ -140,7 +175,7 @@ cfr-doorhanger-send-tab-ok-button = Vyzkoušet posílání panelů
 
 cfr-doorhanger-firefox-send-header = Sdílejte bezpečně toto PDF
 cfr-doorhanger-firefox-send-body = Sdílejte své dokumenty bez toho, aby vám někdo koukal přes rameno, chráněné pomocí end-to-end šifrování a odkazů s omezenou platností.
-cfr-doorhanger-firefox-send-ok-button = Vyzkoušet { -send-brand-name }
+cfr-doorhanger-firefox-send-ok-button = Vyzkoušet { -send-brand-name(case: "acc") }
     .accesskey = V
 
 ## Social Tracking Protection
@@ -151,9 +186,21 @@ cfr-doorhanger-socialtracking-close-button = Zavřít
     .accesskey = Z
 cfr-doorhanger-socialtracking-dont-show-again = Příště už nezobrazovat
     .accesskey = n
-cfr-doorhanger-socialtracking-heading = Aplikace { -brand-short-name } zabránila vašemu sledování sociální sítí
+cfr-doorhanger-socialtracking-heading =
+    { -brand-short-name.gender ->
+        [masculine] { -brand-short-name } zabránil
+        [feminine] { -brand-short-name } zabránila
+        [neuter] { -brand-short-name } zabránilo
+       *[other] Aplikace { -brand-short-name } zabránila
+    } vašemu sledování sociální sítí
 cfr-doorhanger-socialtracking-description = Na vašem soukromí záleží. { -brand-short-name } blokuje běžné sledovací prvky sociálních sítí a tím omezuje množství dat, které o vás mohou na internetu sbírat.
-cfr-doorhanger-fingerprinters-heading = Aplikace { -brand-short-name } zabránila vytvoření otisku vašeho prohlížeče
+cfr-doorhanger-fingerprinters-heading =
+    { -brand-short-name.gender ->
+        [masculine] { -brand-short-name } zabránil
+        [feminine] { -brand-short-name } zabránila
+        [neuter] { -brand-short-name } zabránilo
+       *[other] Aplikace { -brand-short-name } zabránila
+    } zabránila vytvoření otisku vašeho prohlížeče
 cfr-doorhanger-fingerprinters-description = Na vašem soukromí záleží. { -brand-short-name } blokuje vytváření otisku vašeho prohlížeče, který může být využit k vaší identifikaci nebo vašemu sledování.
 cfr-doorhanger-cryptominers-heading = Aplikace { -brand-short-name } zablokovala těžbu kryptoměn
 cfr-doorhanger-cryptominers-description = Na vašem soukromí záleží. { -brand-short-name } blokuje těžbu kryptoměn, která spotřebovává výkon vašeho počítače k těžbě digitálních mincí.

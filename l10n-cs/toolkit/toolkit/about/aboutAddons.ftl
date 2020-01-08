@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Správce doplňků
+addons-page-title = Správce doplňků
 search-header =
     .placeholder = Vyhledat na addons.mozilla.org
     .searchbuttonlabel = Hledat
@@ -25,7 +26,16 @@ install-addon-from-file =
     .label = Instalovat doplněk ze souboru…
     .accesskey = I
 help-button = Nápověda
-preferences = Nastavení aplikace
+preferences =
+    { PLATFORM() ->
+        [windows] Možnosti
+       *[other] Předvolby
+    } { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "gen") }
+        [feminine] { -brand-short-name(case: "gen") }
+        [neuter] { -brand-short-name(case: "gen") }
+       *[other] aplikace
+    }
 tools-menu =
     .tooltiptext = Nástroje doplňků
 show-unsigned-extensions-button =
@@ -307,7 +317,12 @@ discopane-intro =
     svá hesla, stahovat videa, hledat výhodné nabídky, blokovat otravné reklamy,
     měnit vzhled prohlížeče a mnoho dalšího. Tyto malé prográmky většinou vytváří
     někdy jiný než my. Zde je výběr rozšíření <a data-l10n-name="learn-more-trigger">doporučených</a>
-    pro aplikaci { -brand-product-name } díky jejich jedinečné bezpečnosti a funkcím.
+    pro { -brand-product-name.gender ->
+        [masculine] { -brand-product-name(case: "acc") }
+        [feminine] { -brand-product-name(case: "acc") }
+        [neuter] { -brand-product-name(case: "acc") }
+       *[other] aplikaci { -brand-product-name }
+    } díky jejich jedinečné bezpečnosti a funkcím.
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations =
     Některá z těchto doporučení se zobrazují na základě informací o ostatních
@@ -322,7 +337,13 @@ created-by-author = od autora <a data-l10n-name="author">{ $author }</a>
 # Variables:
 #   $dailyUsers (number) - The number of daily users.
 user-count = Počet uživatelů: { $dailyUsers }
-install-extension-button = Přidat do aplikace { -brand-product-name }
+install-extension-button =
+    Přidat do { -brand-product-name.gender ->
+        [masculine] { -brand-product-name(case: "gen") }
+        [feminine] { -brand-product-name(case: "gen") }
+        [neuter] { -brand-product-name(case: "gen") }
+       *[other] aplikace { -brand-product-name }
+    }
 install-theme-button = Nainstalovat vzhled
 # The label of the button that appears after installing an add-on. Upon click,
 # the detailed add-on view is opened, from where the add-on can be managed.
@@ -342,6 +363,10 @@ remove-addon-disabled-button = Nelze odebrat. <a data-l10n-name="link">Proč?</a
 disable-addon-button = Zakázat
 enable-addon-button = Povolit
 expand-addon-button = Další možnosti
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = Povolit
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Možnosti
@@ -417,7 +442,7 @@ addon-detail-private-browsing-disallow = Nepovolit
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended =
     .title = Doporučené rozšíření
-    .alt = { addon-badge-recommended.title }
+    .alt = Doporučené rozšíření
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended2 =
@@ -446,5 +471,8 @@ discover-heading = Přizpůsobte si aplikaci { -brand-short-name }
 shortcuts-heading = Správa klávesových zkratek pro rozšíření
 theme-heading-search-label = Najít další vzhledy
 extension-heading-search-label = Najít další rozšíření
+default-heading-search-label = Najít další doplňky
 addons-heading-search-input =
     .placeholder = Vyhledat na addons.mozilla.org
+addon-page-options-button =
+    .title = Nástroje doplňků

@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Upravljač dodataka
+addons-page-title = Upravljač dodataka
 search-header =
     .placeholder = Pretraži addons.mozilla.org
     .searchbuttonlabel = Traži
@@ -144,7 +145,7 @@ addon-restart-now =
 disabled-unsigned-heading =
     .value = Neki dodaci su onemogućeni
 disabled-unsigned-description = Navedeni dodaci nisu mogli biti verificirani za korištenje u { -brand-short-name }u. Možete <label data-l10n-name="find-addons">pronaći zamjenske dodatke</label> ili kontaktirati autora dodataka da zatraži njihovu verifikaciju.
-disabled-unsigned-learn-more = Saznajte više o našim naporima da vas zaštitimo na Internetu.
+disabled-unsigned-learn-more = Saznaj više o našim naporima da te zaštitimo na Internetu.
 disabled-unsigned-devinfo = Razvijatelji koji su zainteresirani za verifikaciju svojih dodataka mogu nastaviti čitati naš <label data-l10n-name="learn-more">vodič</label>.
 plugin-deprecation-description = Ne možete pronaći priključak koji tražite? Neke priključke { -brand-short-name } više ne podržava. <label data-l10n-name="learn-more">Saznajte više.</label>
 legacy-warning-show-legacy = Prikaži zastarjele dodatke
@@ -345,6 +346,10 @@ remove-addon-disabled-button = Ne može se ukloniti. <a data-l10n-name="link">Za
 disable-addon-button = Onemogući
 enable-addon-button = Omogući
 expand-addon-button = Više mogućnosti
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = Omogući
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Mogućnosti
@@ -444,9 +449,13 @@ theme-heading = Upravljaj motivima
 plugin-heading = Upravljanje priključcima
 dictionary-heading = Upravljanje rječnicima
 locale-heading = Upravljanje jezicima
+updates-heading = Upravljajte svojim ažuriranjima
 discover-heading = Prilagodite svoj { -brand-short-name }
 shortcuts-heading = Upravljanje prečacima dodataka
 theme-heading-search-label = Pronađi daljnje motive
 extension-heading-search-label = Pronađite više dodataka
+default-heading-search-label = Pronađite više dodataka
 addons-heading-search-input =
     .placeholder = Pretraži addons.mozilla.org
+addon-page-options-button =
+    .title = Alati za sve dodatke

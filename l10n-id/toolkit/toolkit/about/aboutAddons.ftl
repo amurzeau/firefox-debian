@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Pengelola Pengaya
+addons-page-title = Pengelola Pengaya
 search-header =
     .placeholder = Cari addons.mozilla.org
     .searchbuttonlabel = Cari
@@ -401,9 +402,11 @@ theme-heading = Kelola tema Anda
 plugin-heading = Kelola plugin Anda
 dictionary-heading = Kelola kamus Anda
 locale-heading = Kelola bahasa Anda
-discover-heading = Personalisasi { -brand-short-name } Anda
+discover-heading = Personalisasikan { -brand-short-name } Anda
 shortcuts-heading = Kelola Pintasan Ekstensi
 theme-heading-search-label = Temukan lebih banyak tema
 extension-heading-search-label = Temukan lebih banyak ekstensi
 addons-heading-search-input =
     .placeholder = Cari addons.mozilla.org
+addon-page-options-button =
+    .title = Alat untuk semua pengaya

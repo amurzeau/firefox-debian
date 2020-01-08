@@ -316,7 +316,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-##
+
 
 drm-content-header = Digital Rights Management (DRM) Content
 play-drm-content =
@@ -561,6 +561,12 @@ search-keyword-warning-bookmark = You have chosen a keyword that is currently in
 ## Containers Section
 
 containers-back-link = « Go Backwards
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Back to Options
+           *[other] Back to Preferences
+        }
 containers-header = Container Tabs
 containers-add-button =
     .label = Add New Container
@@ -584,6 +590,9 @@ sync-signedout-account-create = Don’t have an account? Get started
 sync-signedout-account-signin =
     .label = Sign In…
     .accesskey = I
+sync-signedout-account-signin2 =
+    .label = Sign in to { -sync-brand-short-name }…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -731,6 +740,7 @@ privacy-header = Browser Privacy
 ## Privacy Section - Logins and Passwords
 
 logins-header = Logins and Passwords
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Ask to save logins and passwords for web sites
     .accesskey = r
@@ -744,6 +754,7 @@ forms-breach-alerts =
     .label = Show alerts about passwords for breached web sites
     .accesskey = b
 forms-breach-alerts-learn-more-link = Learn more
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Autofill logins and passwords
     .accesskey = i
@@ -898,7 +909,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Custom
     .accesskey = C
 
-##
+
 
 content-blocking-etp-standard-desc = Balanced for protection and performance. Pages will load normally.
 content-blocking-etp-strict-desc = Stronger protection, but may cause some sites or content to break.
@@ -963,6 +974,10 @@ permissions-location = Location
 permissions-location-settings =
     .label = Settings…
     .accesskey = t
+permissions-xr = Virtual Reality
+permissions-xr-settings =
+    .label = Settings…
+    .accesskey = t
 permissions-camera = Camera
 permissions-camera-settings =
     .label = Settings…
@@ -1011,6 +1026,8 @@ permissions-a11y-privacy-link = Learn more
 collection-header = { -brand-short-name } Data Collection and Use
 collection-description = We strive to provide you with choices and collect only what we need to provide and improve { -brand-short-name } for everyone. We always ask permission before receiving personal information.
 collection-privacy-notice = Privacy Notice
+collection-health-report-telemetry-disabled = You’re no longer allowing { -vendor-short-name } to capture technical and interaction data. All past data will be deleted within 30 days.
+collection-health-report-telemetry-disabled-link = Learn more
 collection-health-report =
     .label = Allow { -brand-short-name } to send technical and interaction data to { -vendor-short-name }
     .accesskey = r

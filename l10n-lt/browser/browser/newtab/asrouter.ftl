@@ -125,6 +125,34 @@ cfr-whatsnew-lockwise-take-body =
     pasiekti savo slaptažodžius iš bet kur.
 cfr-whatsnew-lockwise-take-link-text = Parsisiųskite programą
 
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = Žiūrėkite vaizdo įrašus naršydami
+cfr-whatsnew-pip-body = Vaizdo–vaizde veiksena leidžia žiūrėti vaizdo įrašą atskirame lange, kurį galite matyti net vaikščiodami tarp kortelių.
+cfr-whatsnew-pip-cta = Sužinoti daugiau
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = Mažiau erzinančių iškylančiųjų langų
+cfr-whatsnew-permission-prompt-body = „{ -brand-shorter-name }“ dabar blokuoja automatinius svetainių prašymus rodyti iškylančiuosius langus.
+cfr-whatsnew-permission-prompt-cta = Sužinoti daugiau
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Užblokuotas skaitmeninių atspaudų stebėjimo elementas
+        [few] Užblokuoti skaitmeninių atspaudų stebėjimo elementai
+       *[other] Užblokuota skaitmeninių atspaudų stebėjimo elementų
+    }
+cfr-whatsnew-fingerprinter-counter-body = „{ -brand-shorter-name }“ blokuoja daugelį skaitmeninių atspaudų stebėjimo elementų, kurie nepastebimai renka informaciją apie jūsų įrenginį ir veiksmus, siekiant sukurti jūsų reklaminį profilį.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Skaitmeninių atspaudų stebėjimo elementai
+cfr-whatsnew-fingerprinter-counter-body-alt = „{ -brand-shorter-name }“ gali blokuoti skaitmeninių atspaudų stebėjimo elementus, kurie nepastebimai renka informaciją apie jūsų įrenginį ir veiksmus, siekiant sukurti jūsų reklaminį profilį.
+
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Gaukite šį adresyno įrašą savo telefone

@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Հավելումների կառավարում
+addons-page-title = Հավելումների կառավարում
 search-header-shortcut =
     .key = f
 loading-label =
@@ -240,3 +241,5 @@ addon-open-about-debugging = Վրիպազերծել հավելումները
 
 ## Page headings
 
+addon-page-options-button =
+    .title = Գործիքներ բոլոր հավելումների համար

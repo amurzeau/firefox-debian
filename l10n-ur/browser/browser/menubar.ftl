@@ -49,6 +49,9 @@ menu-file-print-preview =
 menu-file-print =
     .label = چھاپیں…
     .accesskey = P
+menu-file-import-from-another-browser =
+    .label = دوسرے براؤزر سے درآمد کریں…
+    .accesskey = I
 menu-file-go-offline =
     .label = آف لائن کام کریں
     .accesskey = k
@@ -121,6 +124,9 @@ menu-view-full-zoom-reduce =
 menu-view-full-zoom-reset =
     .label = پھر سیٹ کریں
     .accesskey = R
+menu-view-full-zoom-actual-size =
+    .label = اصل ماپ
+    .accesskey = A
 menu-view-full-zoom-toggle =
     .label = ْصرف متن زوم کریں
     .accesskey = T
@@ -144,13 +150,13 @@ menu-view-enter-full-screen =
     .label = پوری اسکرین موڈ میں داخل کریں
     .accesskey = F
 menu-view-exit-full-screen =
-    .label = پوری اسکرین موڈ خروج کریں
+    .label = پوری سکرین سے باہر نکلیں
     .accesskey = F
 menu-view-full-screen =
     .label = پوری اسکرین
     .accesskey = F
 
-##
+
 
 menu-view-show-all-tabs =
     .label = تمام ٹیب دکھائیں
@@ -206,14 +212,17 @@ menu-tools-downloads =
 menu-tools-addons =
     .label = ایڈ اون
     .accesskey = A
-menu-tools-sync-sign-in =
-    .label = { -sync-brand-short-name } میں سائن ان کریں…
-    .accesskey = Y
+menu-tools-fxa-sign-in =
+    .label = { -brand-product-name } میں سائن ان کریں
+    .accesskey = g
+menu-tools-turn-on-sync =
+    .label = { -sync-brand-short-name }…  چالو  کریں
+    .accesskey = n
 menu-tools-sync-now =
     .label = ابھی ہمہ وقت سازی کریں
     .accesskey = S
-menu-tools-sync-re-auth =
-    .label = { -sync-brand-short-name } سے پھر جڑیں…
+menu-tools-fxa-re-auth =
+    .label = { -brand-product-name } سے دوبارہ جڑیں
     .accesskey = R
 menu-tools-web-developer =
     .label = ویب تکمیل کار
@@ -273,8 +282,7 @@ menu-help-safe-mode-with-addons =
     .label = ایڈ اون اہل کر کے دوباره شروع کریں
     .accesskey = R
 # Label of the Help menu item. Either this or
-# safeb.palm.notdeceptive.label from
-# phishing-afterload-warning-message.dtd is shown.
+# menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
     .label = پر فریب سایٹ کی رپورٹ کریں…
     .accesskey = d

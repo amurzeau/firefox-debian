@@ -4,6 +4,7 @@
 
 addons-window =
     .title = Gestor de extras
+addons-page-title = Gestor de extras
 search-header =
     .placeholder = Pesquisar addons.mozilla.org
     .searchbuttonlabel = Pesquisar
@@ -350,6 +351,10 @@ remove-addon-disabled-button = Não pode ser removido <a data-l10n-name="link">P
 disable-addon-button = Desativar
 enable-addon-button = Ativar
 expand-addon-button = Mais opções
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = Ativar
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Opções
@@ -453,5 +458,8 @@ discover-heading = Personalize o seu { -brand-short-name }
 shortcuts-heading = Gira atalhos de extensões
 theme-heading-search-label = Encontre mais temas
 extension-heading-search-label = Encontre mais extensões
+default-heading-search-label = Encontrar mais extras
 addons-heading-search-input =
     .placeholder = Pesquisar addons.mozilla.org
+addon-page-options-button =
+    .title = Ferramentas para todos os extras

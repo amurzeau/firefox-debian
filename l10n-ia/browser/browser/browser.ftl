@@ -2,6 +2,37 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This is the default window title in case there is no content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+browser-main-window-title =
+    { $mode ->
+        [private] { -brand-full-name } (Navigation private)
+       *[default] { -brand-full-name }
+    }
+# This is the default window title in case there is a content
+# title to be displayed.
+#
+# Depending on the $mode, the string will look like this (in en-US):
+#
+# "default" - "Example Title - Mozilla Firefox"
+# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
+#
+# Variables
+#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
+#   $title (String) - Content title string.
+browser-main-window-content-title =
+    { $mode ->
+        [private] { $title } - { -brand-full-name } (Navigation private)
+       *[default] { $title } - { -brand-full-name }
+    }
 urlbar-identity-button =
     .aria-label = Vider le informationes del sito
 
@@ -25,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Aperir le pannello de messages
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Aperir le pannello de requesta de geolocalisation
+urlbar-xr-notification-anchor =
+    .tooltiptext = Aperir pannello de permissiones de realitate virtual
 urlbar-storage-access-anchor =
     .tooltiptext = Aperir le pannello de permissiones pro le activitates de navigation
 urlbar-translate-notification-anchor =
@@ -32,7 +65,7 @@ urlbar-translate-notification-anchor =
 urlbar-web-rtc-share-screen-notification-anchor =
     .tooltiptext = Gerer le compartition de tu fenestras o schermos con le sito
 urlbar-indexed-db-notification-anchor =
-    .tooltiptext = Aperir pannello de messages de immagazinage disconnectite
+    .tooltiptext = Aperir le pannello de messages de immagazinage foras de linea
 urlbar-password-notification-anchor =
     .tooltiptext = Aperir pannello de messages de contrasignos salvate
 urlbar-translated-notification-anchor =
@@ -51,6 +84,8 @@ urlbar-tip-help-icon =
     .title = Obtener adjuta
 urlbar-geolocation-blocked =
     .tooltiptext = Tu ha blocate le accesso al geolocalisation pro iste sito web.
+urlbar-xr-blocked =
+    .tooltiptext = Tu ha blocate le accesso de apparatos de realitate virtual pro iste sito web.
 urlbar-web-notifications-blocked =
     .tooltiptext = Tu ha blocate iste sito web de inviar notificationes.
 urlbar-camera-blocked =
@@ -98,9 +133,9 @@ search-one-offs-with-title = Iste vice, cerca con:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
-    .label = Preferentias de recerca
+    .label = Parametros de recerca
 search-one-offs-change-settings-compact-button =
-    .tooltiptext = Cambiar le preferentias de recerca
+    .tooltiptext = Cambiar le parametros de recerca
 search-one-offs-context-open-new-tab =
     .label = Cercar in le nove scheda
     .accesskey = C
@@ -110,3 +145,16 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Disponer como motor de recerca predefinite pro le fenestras private
     .accesskey = P
+
+## Bookmark Panel
+
+bookmark-panel-show-editor-checkbox =
+    .label = Monstrar editor quando se salva
+    .accesskey = M
+bookmark-panel-done-button =
+    .label = Facite
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 28em

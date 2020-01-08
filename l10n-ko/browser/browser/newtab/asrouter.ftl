@@ -113,6 +113,32 @@ cfr-whatsnew-lockwise-take-title = 비밀번호를 가지고 다니세요
 cfr-whatsnew-lockwise-take-body = { -lockwise-brand-short-name } 모바일 앱을 사용하면 어디서든 백업된 비밀번호에 안전하게 접근 할 수 있습니다.
 cfr-whatsnew-lockwise-take-link-text = 앱 받기
 
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = 탐색하는 동안 동영상 시청
+cfr-whatsnew-pip-body = 화면 속 화면은 동영상을 떠 있는 창으로 띄워 다른 탭에서 작업하는 동안 볼 수 있습니다.
+cfr-whatsnew-pip-cta = 더 알아보기
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = 성가신 사이트 팝업 감소
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name }는 이제 사이트에서 자동으로 팝업 메시지를 보내도록 요청하는 것을 차단합니다.
+cfr-whatsnew-permission-prompt-cta = 더 알아보기
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+       *[other] 핑거프린터 차단됨
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name }는 기기와 동작에 대한 정보를 몰래 수집하여 사용자의 광고 프로필을 만드는 많은 핑거프린터를 차단합니다.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = 핑거프린터
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name }는 기기와 동작에 대한 정보를 몰래 수집하여 사용자의 광고 프로필을 만드는 핑거프린터를 차단할 수 있습니다.
+
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = 이 북마크를 휴대폰에서 사용합니다
@@ -148,6 +174,8 @@ cfr-doorhanger-socialtracking-ok-button = 보호 보기
     .accesskey = P
 cfr-doorhanger-socialtracking-close-button = 닫기
     .accesskey = C
+cfr-doorhanger-socialtracking-dont-show-again = 이런 메시지 다시 표시 안 함
+    .accesskey = D
 cfr-doorhanger-socialtracking-heading = { -brand-short-name }가 여기에서 소셜 네트워크가 사용자를 추적하는 것을 중지했습니다
 cfr-doorhanger-socialtracking-description = 개인 정보는 중요합니다. { -brand-short-name }는 이제 일반적인 소셜 미디어 추적기를 차단하여 온라인에서 수행하는 작업에 대해 수집할 수 있는 데이터의 양을 제한합니다.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name }가 이 페이지에서 핑커프린터를 차단했습니다

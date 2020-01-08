@@ -202,6 +202,20 @@ advanced-fonts =
 colors-settings =
     .label = Colori…
     .accesskey = r
+
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Zoom
+
+preferences-default-zoom = Ingrandimento predefinito
+    .accesskey = n
+
+preferences-default-zoom-value =
+    .label = { $percentage }%
+
+preferences-zoom-text-only =
+    .label = Ingrandisci solo il testo
+    .accesskey = t
+
 language-header = Lingua
 choose-language-description = Scegli la lingua in cui visualizzare le pagine web
 choose-button =
@@ -554,6 +568,12 @@ search-keyword-warning-bookmark = La parola chiave scelta è già utilizzata da 
 ## Containers Section
 
 containers-back-link = « Torna indietro
+containers-back-button =
+    .aria-label =
+      { PLATFORM() ->
+          [windows] Torna alle opzioni
+         *[other] Torna alle preferenze
+      }
 containers-header = Schede contenitore
 containers-add-button =
     .label = Aggiungi nuovo contenitore
@@ -579,7 +599,7 @@ sync-signedout-account-signin =
     .accesskey = d
 sync-signedout-account-signin2 =
     .label = Accedi a { -sync-brand-short-name }…
-    .accesskey = d    
+    .accesskey = d
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -952,11 +972,15 @@ permissions-header = Permessi
 permissions-location = Posizione
 permissions-location-settings =
     .label = Impostazioni…
-    .accesskey = t
+    .accesskey = m
+permissions-xr = Realtà virtuale
+permissions-xr-settings =
+    .label = Impostazioni…
+    .accesskey = o
 permissions-camera = Fotocamera
 permissions-camera-settings =
     .label = Impostazioni…
-    .accesskey = t
+    .accesskey = s
 permissions-microphone = Microfono
 permissions-microphone-settings =
     .label = Impostazioni…
@@ -964,7 +988,7 @@ permissions-microphone-settings =
 permissions-notification = Notifiche
 permissions-notification-settings =
     .label = Impostazioni…
-    .accesskey = t
+    .accesskey = a
 permissions-notification-link = Ulteriori informazioni
 permissions-notification-pause =
     .label = Sospendi notifiche fino al riavvio di { -brand-short-name }
@@ -1001,6 +1025,8 @@ permissions-a11y-privacy-link = Ulteriori informazioni
 collection-header = Raccolta e utilizzo dati di { -brand-short-name }
 collection-description = Cerchiamo di garantire agli utenti la possibilità di scegliere, raccogliendo solo i dati necessari per realizzare e migliorare { -brand-short-name } per tutti. Chiediamo sempre l’autorizzazione prima di raccogliere dati personali.
 collection-privacy-notice = Informativa sulla privacy
+collection-health-report-telemetry-disabled = È stato revocato il permesso a { -vendor-short-name } di raccogliere dati tecnici e relativi all’interazione con il browser. Tutti i dati esistenti verranno rimossi entro 30 giorni.
+collection-health-report-telemetry-disabled-link = Ulteriori informazioni
 collection-health-report =
     .label = Consenti a { -brand-short-name } di inviare a { -vendor-short-name } dati tecnici e relativi all’interazione con il browser
     .accesskey = v

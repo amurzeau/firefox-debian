@@ -4,6 +4,7 @@
 
 <!ENTITY replyToField4.label "Responder a">
 
+<!ENTITY newsgroupsField4.label "Gruppos de discussion">
 <!ENTITY inReplyToField4.label "In responsa a">
 
 <!ENTITY hdrSmartReplyButton1.label "Responsa intelligente">
@@ -13,17 +14,51 @@
 <!ENTITY hdrReplyAllButton1.tooltip "Responder al expeditor e a tote le destinatarios">
 <!ENTITY hdrReplyListButton1.label "Responder al lista">
 <!ENTITY hdrReplyListButton1.tooltip "Responder al lista de diffusion">
+<!ENTITY hdrFollowupButton1.tooltip "Publicar un responsa in iste gruppo">
+<!ENTITY hdrMenuForwardButton.label "Reinviate como">
+<!ENTITY hdrForwardButton1.label "Reinviate">
+<!ENTITY hdrForwardButton1.tooltip "Reinviar iste message">
+<!ENTITY hdrJunkButton1.label "Indesirate">
+<!ENTITY hdrJunkButton1.tooltip "Marcar iste message como indesirate">
+<!ENTITY hdrTrashButton1.label "Deler">
+<!ENTITY hdrTrashButton1.tooltip "Deler iste message">
 
 <!ENTITY hdrViewToolbarAlwaysReplySender.label "Sempre monstrar Responder al expeditor">
 <!ENTITY hdrViewToolbarAlwaysReplySender.accesskey "R">
 
 
 <!-- Attachment bar context menu items -->
+<!ENTITY startExpandedCmd.label    "Monstrar initialmente le pannello de annexos">
 
 <!-- Attachment context menu items -->
+<!ENTITY openAttachmentCmd.label    "Aperir">
+<!ENTITY openAttachmentCmd.accesskey    "A">
+<!ENTITY saveAsAttachmentCmd.label    "Salvar como…">
+<!ENTITY saveAsAttachmentCmd.accesskey    "S">
+<!ENTITY detachAttachmentCmd.label    "Retirar…">
+<!ENTITY detachAttachmentCmd.accesskey    "R">
+<!ENTITY deleteAttachmentCmd.label    "Deler">
+<!ENTITY deleteAttachmentCmd.accesskey    "D">
+<!ENTITY openAllAttachmentsCmd.label    "Aperir totes…">
+<!ENTITY openAllAttachmentsCmd.accesskey    "A">
+<!ENTITY saveAllAttachmentsCmd.label    "Salvar totes…">
+<!ENTITY saveAllAttachmentsCmd.accesskey    "S">
+<!ENTITY detachAllAttachmentsCmd.label    "Retirar totes…">
+<!ENTITY detachAllAttachmentsCmd.accesskey    "R">
+<!ENTITY deleteAllAttachmentsCmd.label    "Deler totes…">
+<!ENTITY deleteAllAttachmentsCmd.accesskey    "D">
 
+<!ENTITY openAttachment.tooltip "Aperir le file annexate">
 
+<!ENTITY detachedAttachmentFolder.show.label        "Aperir le dossier que lo contine">
+<!ENTITY detachedAttachmentFolder.show.accesskey    "D">
+<!ENTITY detachedAttachmentFolder.showMac.label     "Monstrar in Finder">
+<!ENTITY detachedAttachmentFolder.showMac.accesskey "F">
 
 <!-- Attachment toolbar items -->
+<!ENTITY saveAttachmentButton1.label       "Salvar">
+<!ENTITY saveAttachmentButton1.tooltip     "Salvar le file annexate">
+<!ENTITY saveAllAttachmentsButton1.label   "Salvar totes">
+<!ENTITY saveAllAttachmentsButton1.tooltip "Salvar tote le files annexate">
 
 

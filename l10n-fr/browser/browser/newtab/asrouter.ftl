@@ -118,6 +118,33 @@ cfr-whatsnew-lockwise-take-title = Emportez vos mots de passe avec vous
 cfr-whatsnew-lockwise-take-body = L’application mobile { -lockwise-brand-short-name } vous permet d’accéder en toute sécurité à vos mots de passe sauvegardés depuis n’importe où.
 cfr-whatsnew-lockwise-take-link-text = Obtenir l’application
 
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = Regardez des vidéos pendant que vous naviguez
+cfr-whatsnew-pip-body = Le mode incrustation insère une vidéo dans une fenêtre flottante afin que vous puissiez la regarder tout en travaillant dans d’autres onglets.
+cfr-whatsnew-pip-cta = En savoir plus
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = Moins de popups de sites pénibles
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } empêche désormais les sites de vous demander automatiquement de vous envoyer des messages dans des popups.
+cfr-whatsnew-permission-prompt-cta = En savoir plus
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Détecteur d’empreinte numérique bloqué
+       *[other] Détecteurs d’empreinte numérique bloqués
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } bloque de nombreux détecteurs d’empreinte numérique qui collectent en secret des informations sur votre appareil et vos actions afin de créer un profil publicitaire sur vous.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Détecteurs d’empreinte numérique
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } peut bloquer les détecteurs d’empreinte numérique qui collectent en secret des informations sur votre appareil et vos actions afin de créer un profil publicitaire sur vous.
+
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Accédez à ce marque-page sur votre téléphone

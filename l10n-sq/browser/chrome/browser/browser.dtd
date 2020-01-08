@@ -15,7 +15,7 @@
                                                                 inside the private browsing mode -->
 <!ENTITY mainWindow.titlePrivateBrowsingSuffix "(Shfletim Privat)">
 
-<!ENTITY appmenu.tooltip                     "Hapeni menunë">
+<!ENTITY appmenu.tooltip                     "Hapni menunë">
 <!ENTITY navbarOverflow.label                "Më tepër mjete…">
 
 <!-- Tab context menu -->
@@ -65,7 +65,7 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Shtypni…">
 <!ENTITY printCmd.accesskey "y">
 <!ENTITY printCmd.commandkey "p">
-<!ENTITY importFromAnotherBrowserCmd.label "Importoni prej Tjetër Shfletuesi…">
+<!ENTITY importFromAnotherBrowserCmd.label "Importoni nga Tjetër Shfletues…">
 <!ENTITY importFromAnotherBrowserCmd.accesskey "I">
 
 <!ENTITY taskManagerCmd.label "Përgjegjës Punësh">
@@ -150,27 +150,26 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.unverified.description.label "Do t’ju duhet të verifikoni llogarinë tuaj, përpara se të bëni njëkohësim.">
 <!ENTITY fxa.unverified.button.label "Hapni Rregullime të &syncBrand.shortName.label;…">
 
+<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
+     for the Firefox Account toolbart menu screen. The `Signed in as` text is
+     followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "I futur si">
+<!ENTITY fxa.menu.manageAccount.label "Administroni Llogari…">
+<!ENTITY fxa.menu.syncSettings.label "Rregullime të &syncBrand.shortName.label;…">
+
 <!ENTITY pictureInPictureHideToggle.label "Fshih Buton Picture-in-Picture">
 <!ENTITY pictureInPictureHideToggle.accesskey "F">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
      followed by the user's email. -->
-<!ENTITY fxa.menu.signedInAs.label "I futur si">
-<!ENTITY fxa.menu.manageAccount.label "Administroni Llogari…">
-<!ENTITY fxa.menu.syncSettings.label "Rregullime të &syncBrand.shortName.label;…">
-
-<!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
-     for the Firefox Account toolbar menu screen. The `Signed in as` text is
-     followed by the user's email. -->
 <!ENTITY fxa.menu.syncSettings2.label "Rregullime të &syncBrand.shortName.label;">
-<!ENTITY fxa.menu.connectAnotherDevice2.label "Lidhni Një Tjetër Pajisje…">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Lidhni Tjetër Pajisje…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
 <!ENTITY fxa.menu.signin.label "Hyni te &brandProductName;">
 <!ENTITY fxa.menu.turnOnSync.label "Aktivizoni &syncBrand.shortName.label;">
 <!ENTITY fxa.menu.firefoxServices.label "Shërbime &brandProductName;">
-
 <!ENTITY fxa.menu.account.label "Llogari">
 <!ENTITY fxa.menu.settings.label "Rregullime">
 <!ENTITY fxa.menu.accountSettings.label "Rregullime Llogarie">
@@ -259,7 +258,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.indexedDBNotificationAnchor.tooltip       "Hapni panelin për depozitim jashtë linje">
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "Hapni panelin e mesazhit Ruaje fjalëkalimin">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Administroni përdorim shtojcash">
-<!ENTITY urlbar.webNotificationAnchor.tooltip             "Ndryshoni zgjedhjen për nëse mund të merrni njoftime prej sajtit apo jo">
+<!ENTITY urlbar.webNotificationAnchor.tooltip             "Ndryshoni zgjedhjen për nëse mund të merrni njoftime nga sajti apo jo">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Depozitoni të dhëna në Depozitë të Qëndrueshme">
 
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Fshiheni Anështyllën e Faqerojtësve">
@@ -290,6 +289,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "Ia keni bllokuar këtij sajti përdorimin e shtojcës Adobe Flash.">
 <!ENTITY urlbar.midiBlocked.tooltip              "E keni bllokuar hyrjen MIDI për këtë sajt.">
 <!ENTITY urlbar.installBlocked.tooltip           "Ia keni bllokuar këtij sajti instalimin e shtesave.">
+
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Shfaqni historikun">
 
@@ -418,7 +418,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
-<!ENTITY appMenuHistory.showAll.label "Shfaqni Krejt Historikun">
+<!ENTITY appMenuHistory.showAll.label "Shfaq Krejt Historikun">
 <!ENTITY appMenuHistory.clearRecent.label "Spastroni Historikun Së Fundi…">
 <!ENTITY appMenuHistory.restoreSession.label "Riktheni Sesionin e Mëparshëm">
 <!ENTITY appMenuHistory.viewSidebar.label "Shihni Anështyllë Historiku">
@@ -440,14 +440,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.showAll.tooltip "Shfaqni krejt skedat nga kjo pajisje">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.tabsnotsyncing.label): This is shown
      when Sync is configured but syncing tabs is disabled. -->
-<!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Aktivizoni njëkohësim skedash që të shihni një listë skedash prej pajisjeve tuaja të tjera.">
+<!ENTITY appMenuRemoteTabs.tabsnotsyncing.label "Aktivizoni njëkohësim skedash që të shihni një listë skedash nga pajisje tuajat të tjera.">
 <!-- LOCALIZATION NOTE (appMenuRemoteTabs.noclients.subtitle): This is shown
      when Sync is configured but this appears to be the only device attached to
      the account. We also show links to download Firefox for android/ios. -->
-<!ENTITY appMenuRemoteTabs.noclients.subtitle "Doni të shihni këtu skedat tuaja prej pajisjesh të tjera?">
+<!ENTITY appMenuRemoteTabs.noclients.subtitle "Doni të shihni këtu skedat tuaja nga pajisje të tjera?">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "Hapni Parapëlqime Sync-u">
-<!ENTITY appMenuRemoteTabs.notsignedin.label "Bëni hyrjen që të shihni një listë skedash prej pajisjesh tuajat të tjera.">
-<!ENTITY appMenuRemoteTabs.welcome.label "Shihni një listë skedash prej pajisje tuajat të tjera.">
+<!ENTITY appMenuRemoteTabs.notsignedin.label "Bëni hyrjen që të shihni një listë skedash nga pajisje tuajat të tjera.">
+<!ENTITY appMenuRemoteTabs.welcome.label "Shihni një listë skedash nga pajisje tuajat të tjera.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Llogaria juaj duhet verifikuar.">
 <!ENTITY appMenuRemoteTabs.signin.label "Bëni hyrjen, që të Njëkohësohet">
 <!ENTITY appMenuRemoteTabs.signintosync.label "Hyni në &syncBrand.shortName.label;…">
@@ -455,7 +455,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.managedevices.label "Administroni Pajisje…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Shihni Anështyllën e Skedave të Njëkohësuara">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Fshih Anështyllë Skedash të Njëkohësuara">
-<!ENTITY appMenuRemoteTabs.connectdevice.label "Lidhni Një Tjetër Pajisje">
+<!ENTITY appMenuRemoteTabs.connectdevice.label "Lidhni Tjetër Pajisje">
 
 <!ENTITY appMenuRecentHighlights.label "Nxjerrje Në Pah Së Fundi">
 
@@ -567,16 +567,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      searchFor.label and searchWith.label. This string will be used instead of
      them when the user has not typed any keyword. -->
 <!ENTITY searchWithHeader.label       "Kërko me:">
-
-<!-- LOCALIZATION NOTE (searchWithDesc.label):
-     This string prompts the user to use the list of one-click search engines in
-     the Urlbar and searchbar. -->
-<!ENTITY searchWithDesc.label         "Këtë herë kërko me:">
-
 <!-- LOCALIZATION NOTE (changeSearchSettings.button):
      This string won't wrap, so if the translated string is longer,
      consider translating it as if it said only "Search Settings". -->
-<!ENTITY changeSearchSettings.button  "Ndryshoji Rregullimet e Kërkimit">
+<!ENTITY changeSearchSettings.button  "Ndryshoni Rregullime Kërkimi">
 <!ENTITY changeSearchSettings.tooltip "Ndryshoni rregullime kërkimi">
 
 <!ENTITY searchInNewTab.label         "Kërkoni në Skedë të Re">
@@ -751,14 +745,14 @@ fullZoomResetCmd.commandkey2 are alternative acceleration keys for zoom.
 If shift key is needed with your locale popular keyboard for them,
 you can use these alternative items. Otherwise, their values should be empty.  -->
 
-<!ENTITY fullZoomEnlargeCmd.label       "Zmadhoje">
+<!ENTITY fullZoomEnlargeCmd.label       "Zmadhojeni">
 <!ENTITY fullZoomEnlargeCmd.accesskey   "M">
 
 <!ENTITY fullZoomEnlargeCmd.commandkey  "+">
 <!ENTITY fullZoomEnlargeCmd.commandkey2 "="> <!-- + is above this key on many keyboards -->
 <!ENTITY fullZoomEnlargeCmd.commandkey3 "">
 
-<!ENTITY fullZoomReduceCmd.label        "Zvogëloje">
+<!ENTITY fullZoomReduceCmd.label        "Zvogëlojeni">
 <!ENTITY fullZoomReduceCmd.accesskey    "O">
 
 <!ENTITY fullZoomReduceCmd.commandkey   "-">
@@ -939,18 +933,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Pse?">
 <!ENTITY protections.notBlocking.why.etpOn.tooltip "Bllokimi i këtyre mund të dëmtojmë funksionimin e disa elementëve në disa sajte. Pa gjurmues, disa butona, formularë, dhe fusha kredencialesh hyrjeje mund të mos funksionojnë.">
-<!ENTITY protections.notBlocking.why.etpOff.tooltip "Çaktivizimi i mbrojtjeve do të lejojë krejt gjurmuesit në këtë sajt. Kjo mundet edhe të përmirësojë disa anë të funksionimit të sajteve.">
-<!ENTITY protections.socialMediaTrackers.label "Gjurmues Mediash Shoqërore">
-<!ENTITY protections.crossSiteTrackingCookies.label "<em>Cookies</em> Gjurmimi Nga Sajte Në Sajte">
-<!ENTITY protections.trackingContent.label "Lëndë Gjurmimi">
-<!ENTITY protections.fingerprinters.label "Krijues shenja gishtash">
-<!ENTITY protections.cryptominers.label "Nxjerrës kriptomonedhash">
 <!ENTITY protections.notBlocking.why.etpOff2.tooltip "Janë ngarkuar krejt gjurmuesit në këtë sajt, ngaqë mbrojtjet janë të çaktivizuara.">
 <!ENTITY protections.noTrackersFound.description "Në këtë faqe s’u pikasën gjurmues të ditur nga &brandShortName;.">
 
-<!ENTITY protections.crossSiteTrackingCookies.description "Këto <em>cookies</em> ju ndjekin nga sajti në sajt për të mbledhur të dhëna rreth çka bëni në internet. Ato depozitohen nga palë të treta, të tilla si shoqëri reklamash dhe analizash.">
+<!ENTITY protections.crossSiteTrackingCookies.description "Këto cookies ju ndjekin nga sajti në sajt për të mbledhur të dhëna rreth çka bëni në internet. Ato depozitohen nga palë të treta, të tilla si shoqëri reklamash dhe analizash.">
 <!ENTITY protections.cryptominers.description "Nxjerrësit e kriptomonedhave e përdorin fuqinë përllogaritëse të sistemit tuaj për të nxjerrë para dixhitale. Programthet për nxjerrje kriptomonedhash konsumojnë energjinë e baterisë tuaj, ngadalësojnë kompjuterin tuaj dhe mund të sjellin shtim të faturës tuaj për energjinë.">
-<!ENTITY protections.fingerprinters.description "Krijuesit e shenjave të gishtave (<em>Fingerprinters</em>) grumbullojnë rregullime nga shfletuesi dhe kompjuteri juaj për të krijuar një profil rreth jush. Duke përdorur këto shenja gishtash dixhitale, ata mund t’ju ndjekin nëpër sajte të ndryshme.">
+<!ENTITY protections.fingerprinters.description "Krijuesit e shenjave të gishtave (<em>Fingerprinters</em>) grumbullojnë rregullime nga shfletuesi dhe kompjuteri juaj për të krijuar një profil rreth jush. Duke përdorur këto shenja dixhitale gishtash, ata mund t’ju ndjekin nëpër sajte të ndryshme.">
 <!ENTITY protections.trackingContent2.description "Sajtet mund të ngarkojnë reklama, video dhe tjetër lëndë të jashtme me kod gjurmimi. Bllokimi i lëndës gjurmuese mund të ndihmojë për ngarkimin më të shpejtë të sajteve, por disa butona, formularë dhe fusha kredenciale hyrjesh mund të mos punojnë.">
 <!ENTITY protections.socialMediaTrackers.description "Gjurmuesit prej rrjetesh shoqërore vendosin gjurmues në sajte të tjerë për të ndjekur ç’bëni, ç’shihni dhe vëzhgoni kur jeni në internet. Kjo u lejon shoqërive të rrjeteve shoqërore të mësojnë më tepër rreth jush, tej asaj çka ndani me të tjerët në profilet tuaj në media shoqërore.">
 
@@ -967,7 +955,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncSignIn.label             "Hyni Te &syncBrand.shortName.label;-u…">
 <!ENTITY syncSignIn.accesskey         "H">
-
 <!ENTITY syncSyncNowItem.label        "Njëkohësohu Tani">
 <!ENTITY syncSyncNowItemSyncing.label "Po njëkohësohet…">
 <!ENTITY syncSyncNowItem.accesskey    "N">
@@ -981,7 +968,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY getUserMedia.selectCamera.accesskey "K">
 <!ENTITY getUserMedia.selectMicrophone.label "Mikrofon për ndarje me të tjerët:">
 <!ENTITY getUserMedia.selectMicrophone.accesskey "M">
-<!ENTITY getUserMedia.audioCapture.label "Audio prej skedës do të ndahet me të tjerët.">
+<!ENTITY getUserMedia.audioCapture.label "Audio nga skeda do të ndahet me të tjerët.">
 <!ENTITY getUserMedia.allWindowsShared.message "Do të ndahen me të tjerët krejt dritaret e dukshme në ekranin tuaj.">
 
 <!ENTITY contentBlocking.title "Bllokim Lënde">
@@ -997,22 +984,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackersView.strictInfo.label "Për të bllokuar krejt gjurmuesit, caktoni “Strikt” për bllokimin e lëndës.">
 
 <!ENTITY contentBlocking.cookies.label "Cookies">
-<!ENTITY contentBlocking.cookiesView.label "Cookies dhe të Dhëna Sajti">
+<!ENTITY contentBlocking.cookiesView.label "Cookies dhe të Dhëna Sajtesh">
 
 <!ENTITY contentBlocking.trackingProtection4.label "Lëndë Gjurmimi">
 
 <!ENTITY contentBlocking.manageSettings2.label "Administroni Rregullime për Mbrojtje">
 <!ENTITY contentBlocking.manageSettings2.accesskey "M">
 
-<!ENTITY contentBlocking.socialblock.label "Gjurmues Mediash Shoqërore">
-
-<!ENTITY contentBlocking.cookies2.label "<em>Cookies</em> Gjurmimi Nga Sajte Në Sajte">
+<!ENTITY contentBlocking.socialblock.label "Gjurmues Prej Mediash Shoqërore">
 
 <!ENTITY contentBlocking.cryptominers.label "Nxjerrës kriptomonedhash">
 <!ENTITY contentBlocking.cryptominersView.label "Nxjerrës kriptomonedhash">
 
-<!ENTITY contentBlocking.fingerprinters.label "Zbulues shenja gishtash">
-<!ENTITY contentBlocking.fingerprintersView.label "Zbulues shenja gishtash">
+<!ENTITY contentBlocking.fingerprinters.label "Krijues shenja gishtash">
+<!ENTITY contentBlocking.fingerprintersView.label "Krijues shenja gishtash">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Raportoni një problem">
 <!ENTITY contentBlocking.breakageReportView.label "Raportoni Probleme">
@@ -1089,7 +1074,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageActionButton.tooltip "Veprime faqeje">
 <!ENTITY pageAction.addToUrlbar.label "Shtoje te Shtyllë Adresash">
-<!ENTITY pageAction.removeFromUrlbar.label "Hiqe prej Shtylle Adresash">
+<!ENTITY pageAction.removeFromUrlbar.label "Hiqe nga Shtyllë Adresash">
 <!ENTITY pageAction.manageExtension.label "Administroni Zgjerime…">
 
 <!ENTITY sendToDevice.syncNotReady.label "Po njëkohësohen Pajisje…">

@@ -50,7 +50,13 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
-help-button-label = Nápověda
+help-button-label =
+    { -brand-short-name.gender ->
+        [masculine] Nápověda { -brand-short-name(case: "gen") }
+        [feminine] Nápověda { -brand-short-name(case: "gen") }
+        [neuter] Nápověda { -brand-short-name(case: "gen") }
+       *[other] Nápověda
+    }
 addons-button-label = Rozšíření a vzhledy
 focus-search =
     .key = f
@@ -421,7 +427,7 @@ browsing-cfr-recommendations =
     .label = Doporučovat vhodná rozšíření pro navštívené stránky
     .accesskey = r
 browsing-cfr-features =
-    .label = Doporučovat funkce Firefoxu během prohlížení
+    .label = Doporučovat funkce během prohlížení
     .accesskey = f
 browsing-cfr-recommendations-learn-more = Zjistit více
 
@@ -498,14 +504,25 @@ home-prefs-highlights-options-bookmarks =
 home-prefs-highlights-option-most-recent-download =
     .label = Nedávná stahování
 home-prefs-highlights-option-saved-to-pocket =
-    .label = Stránky uložené do služby { -pocket-brand-name }
+    .label = Stránky uložené do { -pocket-brand-name(case: "gen") }
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Útržky
-home-prefs-snippets-description = Aktuální informace od společnosti { -vendor-short-name } a aplikace { -brand-product-name }
+home-prefs-snippets-description =
+    Aktuální informace od { -vendor-short-name.gender ->
+        [masculine] { -vendor-short-name(case: "gen") }
+        [feminine] { -vendor-short-name(case: "gen") }
+        [neuter] { -vendor-short-name(case: "gen") }
+       *[other] společnosti { -vendor-short-name }
+    } a { -brand-product-name.gender ->
+        [masculine] { -brand-product-name(case: "gen") }
+        [feminine] { -brand-product-name(case: "gen") }
+        [neuter] { -brand-product-name(case: "gen") }
+       *[other] aplikace { -brand-product-name }
+    }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -571,6 +588,12 @@ search-keyword-warning-bookmark = Zvolili jste klíčové slovo, které už je p
 ## Containers Section
 
 containers-back-link = « Jít zpět
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Zpět do Možností
+           *[other] Zpět do Předvoleb
+        }
 containers-header = Kontejnerové panely
 containers-add-button =
     .label = Přidat kontejner
@@ -588,7 +611,7 @@ containers-remove-button =
 
 sync-signedout-caption = Vezměte si web s sebou
 sync-signedout-description = Synchronizujte své záložky, historii, panely, hesla, doplňky a předvolby ve všech svých zařízeních.
-sync-signedout-account-title = Propojit s účtem Firefoxu
+sync-signedout-account-title = Propojit s { -fxaccount-brand-name(case: "ins", capitalization: "lower") }
 sync-signedout-account-create = Nemáte účet? Začněte tady
     .accesskey = t
 sync-signedout-account-signin =
@@ -641,7 +664,7 @@ sync-signedin-settings-desc = Vyberte, co má { -brand-short-name } na vašich z
 prefs-syncing-on = Synchronizace zapnuta
 prefs-syncing-off = Synchronizace vypnuta
 prefs-sync-setup =
-    .label = Nastavit { -sync-brand-short-name }…
+    .label = Nastavit { -sync-brand-short-name(case: "acc") }…
     .accesskey = N
 prefs-sync-offer-setup-label = Synchronizujte své záložky, historii, panely, hesla, doplňky a předvolby ve všech svých zařízeních.
 prefs-sync-now =
@@ -935,12 +958,12 @@ content-blocking-fingerprinters = Vytváření otisku prohlížeče
 content-blocking-warning-title = Pozor!
 content-blocking-warning-description = Blokování obsahu může omezit fungování některých stránek. Pro stránky, kterým důvěřujete, ho můžete snadno vypnout.
 content-blocking-learn-how = Jak na to?
-content-blocking-etp-warning-description = Blokování sledujícího obsahu může ovlivnit fungování některých stránek. Pro načtení veškerého obsahu obnovte stránku s povolenými sledovacími prvky.
+content-blocking-etp-warning-description = Blokování sledujícího obsahu může ovlivnit fungování některých stránek. Pro zobrazení veškerého obsahu obnovte stránku s povolenými sledovacími prvky.
 content-blocking-warning-learn-how = Jak na to
-content-blocking-reload-description = Aby se změny projevily, obnovte své panely.
+content-blocking-reload-description = Aby se změny projevily, načtěte znovu své panely.
 content-blocking-reload-tabs-button =
-    .label = Obnovit všechny panely
-    .accesskey = O
+    .label = Znovu načíst všechny panely
+    .accesskey = o
 content-blocking-trackers-label =
     .label = Sledovací prvky
     .accesskey = S
@@ -982,6 +1005,10 @@ permissions-location = Poloha
 permissions-location-settings =
     .label = Nastavení…
     .accesskey = a
+permissions-xr = Virtuální realita
+permissions-xr-settings =
+    .label = Nastavení…
+    .accesskey = t
 permissions-camera = Kamera
 permissions-camera-settings =
     .label = Nastavení…
@@ -1030,12 +1057,26 @@ permissions-a11y-privacy-link = Zjistit více
 collection-header = Sběr a používání dat o aplikaci { -brand-short-name }
 collection-description = S daty vám dáváme vždy na výběr a sbíráme jen data potřebná pro vylepšování aplikace { -brand-short-name }. Před odesíláním osobních dat vždy žádáme o váš souhlas.
 collection-privacy-notice = Zásady ochrany osobních údajů
+collection-health-report-telemetry-disabled = Odesílat { -vendor-short-name(case: "dat") } technická data a data o interakcích není nadále povoleno. Všechna historická data budou smazána během 30 dnů.
+collection-health-report-telemetry-disabled-link = Zjistit více
 collection-health-report =
-    .label = Odesílat technická data a data o interakcích
+    .label =
+        { -vendor-short-name.gender ->
+            [masculine] Odesílat { -vendor-short-name(case: "dat") }
+            [feminine] Odesílat { -vendor-short-name(case: "dat") }
+            [neuter] Odesílat { -vendor-short-name(case: "dat") }
+           *[other] Odesílat
+        } technická data a data o interakcích
     .accesskey = r
 collection-health-report-link = Zjistit více
 collection-studies =
-    .label = Povolit instalaci studií
+    .label =
+        { -brand-short-name.gender ->
+            [masculine] Povolit { -brand-short-name(case: "dat") } instalovat studie
+            [feminine] Povolit { -brand-short-name(case: "dat") } instalovat studie
+            [neuter] Povolit { -brand-short-name(case: "dat") } instalovat studie
+           *[other] Povolit instalaci studií
+        }
 collection-studies-link = Zobrazit studie aplikace { -brand-short-name }
 addon-recommendations =
     .label = Povolit aplikaci { -brand-short-name } doporučovat rozšíření vybraná přímo pro mě
@@ -1044,7 +1085,13 @@ addon-recommendations-link = Zjistit více
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Odesílání dat je zakázáno konfigurací tohoto sestavení
 collection-backlogged-crash-reports =
-    .label = Odesílat nevyřízená hlášení o pádech za vás
+    .label =
+        Odesílat nevyřízená hlášení o pádech { -brand-short-name.gender ->
+            [masculine] { -brand-short-name(case: "gen") }
+            [feminine] { -brand-short-name(case: "gen") }
+            [neuter] { -brand-short-name(case: "gen") }
+           *[other] aplikace
+        } za vás
     .accesskey = c
 collection-backlogged-crash-reports-link = Zjistit více
 

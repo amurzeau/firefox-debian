@@ -116,6 +116,33 @@ cfr-whatsnew-lockwise-take-title = Awi yid-k awalen-ik uffiren
 cfr-whatsnew-lockwise-take-body = Asna aziraz { -lockwise-brand-short-name } ad k-yeǧǧ ad tkecmeḍ s wudem aɣelsan ɣer wawalen-ik uffiren yettwaskelsen seg yal amkan.
 cfr-whatsnew-lockwise-take-link-text = Awi asnas
 
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = Wali tividyutin kečč tettinigeḍ
+cfr-whatsnew-pip-body = Askar n usleɣ yeggar tavidyut deg usfaylu ufig akken ad tizmireḍ ad tt-twaliḍ ticki txeddmeḍ deg yiccaren-nniḍen.
+cfr-whatsnew-pip-cta = Issin ugar
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = Drus n yisfuyal udhimen n yismal yettɛekkiṛen
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } yessewḥal akka tura ismal akken ad ak-d-sutren s wudem awurman tuzna n yiznan deg  yisfuyla udhimen.
+cfr-whatsnew-permission-prompt-cta = Issin ugar
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Amaṭṭaf n yidsilen umḍinen iwḥel
+       *[other] Imaṭṭaffen n yidsilen umḍinen weḥlen
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } yessewḥal ddeqs n yidsilen umḍinen i d-ileqḍen talɣut-ik s tuffra ɣef yibenk-ik akked tigawin akken ad ixeddem adellel s useqdec n umaɣnu-ik.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Idsilen umḍinen
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } izmer ad iseḥbes idsilen umḍinen i d-ileqḍen talɣut-ik s tuffra ɣef yibenk-ik akked tigawin akken ad ixeddem adellel s useqdec n umaɣnu-ik.
+
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Kcem ɣer tecreḍt-a n usebter ṣef tiliɣri-ik

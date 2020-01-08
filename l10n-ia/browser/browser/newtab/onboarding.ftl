@@ -31,7 +31,7 @@ onboarding-join-form-body = Insere tu adresse de e-mail pro comenciar.
 onboarding-join-form-email =
     .placeholder = Insere email
 onboarding-join-form-email-error = Es necessari un adresse de e-mail valide
-onboarding-join-form-legal = Si tu procede, tu consenti al <a data-l10n-name="terms">Terminos de servicio</a> e  al <a data-l10n-name="privacy">Aviso de confidentialitate</a>.
+onboarding-join-form-legal = Si tu procede, tu accepta le <a data-l10n-name="terms">terminos de servicio</a> e  le <a data-l10n-name="privacy">aviso de confidentialitate</a>.
 onboarding-join-form-continue = Continuar
 # This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
 onboarding-join-form-signin-label = Ha tu jam un conto?
@@ -53,8 +53,6 @@ onboarding-fullpage-form-email =
 onboarding-sync-welcome-header = Porta { -brand-product-name } con te
 onboarding-sync-welcome-content = Tene tu marcapaginas, chronologia, contrasignos e altere configurationes sur tote tu apparatos.
 onboarding-sync-welcome-learn-more-link = Saper plus super Firefox Accounts
-onboarding-sync-form-invalid-input = Es necessari un adresse de e-mail valide
-onboarding-sync-legal-notice = Si tu procede, tu consenti a <a data-l10n-name="terms">Terminos de servicio</a> e <a data-l10n-name="privacy">Notification de confidentialitate</a>.
 onboarding-sync-form-input =
     .placeholder = Email
 onboarding-sync-form-continue-button = Continuar
@@ -95,12 +93,12 @@ onboarding-benefit-lockwise-text = Gere tu contrasignos de maniera protegite e p
 
 onboarding-private-browsing-title = Navigation private
 onboarding-private-browsing-text = Naviga solitarimente. Le navigation private con blocage de contento bloca le traciatores in linea que te seque a transverso le web.
-onboarding-screenshots-title = Instantaneos
-onboarding-screenshots-text = Captura, salva e comparti instantaneos - sin lassar { -brand-short-name }. Captura un region o un pagina integre durante que tu naviga. Pois salva lo al web pro facile accesso e compartimento.
+onboarding-screenshots-title = Capturas de schermo
+onboarding-screenshots-text = Prende, salva e comparti capturas de schermo – sin quitar { -brand-short-name }. Captura un region o un pagina integre durante que tu naviga. Pois salva lo al web pro acceder e compartir facilemente.
 onboarding-addons-title = Additivos
 onboarding-addons-text = Adde ancora plus functionalitates que face { -brand-short-name } travaliar pro te. Compara precios, consulta le meteo, o exprime tu personalitate con un thema personalisate.
 onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Naviga plus veloce, in maniera plus intelligente o plus secur con extensiones como Ghostery, que te pone in grado de blocar enoiose avisos publicitari.
+onboarding-ghostery-text = Navigation plus rapide, plus intelligente o plus secur con extensiones como Ghostery, que te permitte de blocar annuncios moleste.
 # Note: "Sync" in this case is a generic verb, as in "to synchronize"
 onboarding-fxa-title = Sync
 onboarding-fxa-text = Inscribe te pro un { -fxaccount-brand-name } e synchronisa tu marcapaginas, contrasignos e schedas aperte ubicunque tu usa { -brand-short-name }.
@@ -119,7 +117,7 @@ onboarding-browse-privately-title = Naviga privatemente
 onboarding-browse-privately-text = Le navigation private elimina tu chronologia de recerca e navigation e lo mantene secrete pro altere usatores de tu computator.
 onboarding-browse-privately-button = Aperir un fenestra private
 onboarding-firefox-send-title = Mantene private tu files compartite
-onboarding-firefox-send-text2 = Carga tu files a { -send-brand-name } pro los compartir con cryptographia bilateral e un ligamine que expira automaticamente.
+onboarding-firefox-send-text2 = Incarga tu files a { -send-brand-name } pro compartir los con cryptation bilateral e un ligamine que expira automaticamente.
 onboarding-firefox-send-button = Prova { -send-brand-name }
 onboarding-mobile-phone-title = Installa { -brand-product-name } sur tu telephono
 onboarding-mobile-phone-text = Discarga { -brand-product-name } pro iOS o Android e synchronisa tu datos inter le apparatos.
@@ -130,6 +128,9 @@ onboarding-send-tabs-title = Invia instantaneemente schedas a te mesme
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
 onboarding-send-tabs-text = "Invia schedas" comparti instantaneemente paginas inter tu apparatos sin deber copiar, collar o lassar le navigator.
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text2 = Comparti rapidemente paginas inter tu apparatos sin deber copiar ligamines o lassar le navigator.
 onboarding-send-tabs-button = Comencia a usar "Invia schedas"
 onboarding-pocket-anywhere-title = Lege e ascolta ubicunque
 onboarding-pocket-anywhere-text2 = Immagazina tu contento favorite con { -pocket-brand-name } pro leger, ascoltar e reguardar sin connexion al momento de tu preferentia.
@@ -137,9 +138,15 @@ onboarding-pocket-anywhere-button = Prova { -pocket-brand-name }
 onboarding-lockwise-passwords-title = Porta ubique con te tu contrasignos
 onboarding-lockwise-passwords-text2 = Mantene secur le contrasignos que tu salva e accede facilemente a tu contos con { -lockwise-brand-name }.
 onboarding-lockwise-passwords-button2 = Discarga le app
+onboarding-lockwise-strong-passwords-title = Crea e immagazina contrasignos forte
+onboarding-lockwise-strong-passwords-text = Con { -lockwise-brand-name } tu pote crear contrasignos secur e salvar los in un loco central.
+onboarding-lockwise-strong-passwords-button = Gere tu credentiales
 onboarding-facebook-container-title = Defini limites pro Facebook
-onboarding-facebook-container-text2 = { -facebook-container-brand-name } mantene tu profilo separate de tote le resto. Il es assi plus difficile pro Facebook importunar te con avisos publicitari.
+onboarding-facebook-container-text2 = { -facebook-container-brand-name } mantene tu profilo separate de tote le resto. Il es assi plus difficile pro Facebook exploitar tu datos personal pro publicitate.
 onboarding-facebook-container-button = Adder le extension
+onboarding-import-browser-settings-title = Importa tu marcapaginas, contrasignos e multo plus
+onboarding-import-browser-settings-text = Facile a initiar: porta tu sitos e parametros de Chrome con te.
+onboarding-import-browser-settings-button = Importar datos de Chrome
 
 ## Message strings belonging to the Return to AMO flow
 

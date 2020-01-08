@@ -4,6 +4,7 @@
 
 addons-window =
     .title = 부가 기능 관리자
+addons-page-title = 부가 기능 관리자
 search-header =
     .placeholder = addons.mozilla.org 검색
     .searchbuttonlabel = 검색
@@ -289,7 +290,7 @@ shortcuts-duplicate = 중복 단축키
 # String displayed when a keyboard shortcut is already assigned to more than one add-on
 # Variables:
 #   $shortcut (string) - Shortcut string for the add-on
-shortcuts-duplicate-warning-message = { $shortcut }이 하나 이상의 경우에 단축키로 사용되고 있습니다. 단축키가 중복되면 예상치 못한 동작이 발생할 수 있습니다.
+shortcuts-duplicate-warning-message = { $shortcut }이(가) 하나 이상의 경우에 단축키로 사용되고 있습니다. 단축키가 중복되면 예상치 못한 동작이 발생할 수 있습니다.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -339,6 +340,10 @@ remove-addon-disabled-button = 제거할 수 없음. <a data-l10n-name="link">�
 disable-addon-button = 사용 안 함
 enable-addon-button = 사용함
 expand-addon-button = 옵션 더보기
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = 사용함
 preferences-addon-button =
     { PLATFORM() ->
         [windows] 설정
@@ -436,9 +441,13 @@ theme-heading = 테마 관리
 plugin-heading = 플러그인 관리
 dictionary-heading = 사전 관리
 locale-heading = 언어 관리
+updates-heading = 업데이트 관리
 discover-heading = { -brand-short-name } 개인화
 shortcuts-heading = 확장기능 단축키 관리
 theme-heading-search-label = 더 많은 테마
 extension-heading-search-label = 더 많은 확장기능
+default-heading-search-label = 부가기능 더 찾기
 addons-heading-search-input =
     .placeholder = addons.mozilla.org 검색
+addon-page-options-button =
+    .title = 부가 기능 도구

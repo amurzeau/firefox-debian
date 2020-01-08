@@ -319,7 +319,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-##
+
 
 drm-content-header = Obsah chránený pomocou Digital Rights Management (DRM)
 play-drm-content =
@@ -565,6 +565,12 @@ search-keyword-warning-bookmark = Zadali ste kľúčové slovo, ktoré je v sú�
 ## Containers Section
 
 containers-back-link = « Späť
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Späť na Možnosti
+           *[other] Späť na Možnosti
+        }
 containers-header = Kontajnerové karty
 containers-add-button =
     .label = Pridať nový kontajner
@@ -587,6 +593,9 @@ sync-signedout-account-create = Nemáte účet? Začnite tu
     .accesskey = t
 sync-signedout-account-signin =
     .label = Prihlásiť sa…
+    .accesskey = i
+sync-signedout-account-signin2 =
+    .label = Prihlásiť sa do služby { -sync-brand-short-name }…
     .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -833,6 +842,8 @@ sitedata-option-block-trackers =
     .label = Sledovacie prvky tretích strán
 sitedata-option-block-cross-site-trackers =
     .label = Sledovacie prvky
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Sledovacie prvky sociálnych sietí
 sitedata-option-block-unvisited =
     .label = Cookies z doposiaľ nenavštívených stránok
 sitedata-option-block-all-third-party =
@@ -902,12 +913,12 @@ enhanced-tracking-protection-setting-custom =
     .label = Vlastná
     .accesskey = V
 
-##
+
 
 content-blocking-etp-standard-desc = Vyvážená ochrana a výkon. Neovplyvní načítanie webových stránok.
 content-blocking-etp-strict-desc = Viac blokovaného obsahu zvyšuje pravdepodobnosť, že niektoré stránky nebudú správne fungovať.
 content-blocking-etp-custom-desc = Vyberte sledovacie prvky a skripty, ktoré chcete blokovať.
-content-blocking-private-windows = Sledovací obsah je blokovaní v súkromných oknách
+content-blocking-private-windows = Sledovací obsah je blokovaný v súkromných oknách
 content-blocking-cross-site-tracking-cookies = Blokované sú sledovacie cookies
 content-blocking-social-media-trackers = Blokované sú sledovacie prvky sociálnych sietí
 content-blocking-all-cookies = Všetky cookies
@@ -967,6 +978,10 @@ permissions-location = Poloha
 permissions-location-settings =
     .label = Nastavenia…
     .accesskey = e
+permissions-xr = Virtuálna realita
+permissions-xr-settings =
+    .label = Nastavenia…
+    .accesskey = N
 permissions-camera = Kamera
 permissions-camera-settings =
     .label = Nastavenia…
@@ -1015,6 +1030,8 @@ permissions-a11y-privacy-link = Ďalšie informácie
 collection-header = Zber a použitie údajov o aplikácii { -brand-short-name }
 collection-description = Keď sa jedná o údaje, dávame vám vždy na výber. Zbierame len údaje, ktoré nám pomôžu aplikáciu { -brand-short-name } naďalej zlepšovať. Pred odoslaním osobných údajov vždy žiadame o váš súhlas.
 collection-privacy-notice = Zásady ochrany súkromia
+collection-health-report-telemetry-disabled = Odosielanie technických údajov a údajov o interakcii spoločnosti { -vendor-short-name } nie je naďalej povolené. Všetky historické údaje budú odstránené v priebehu 30 dní.
+collection-health-report-telemetry-disabled-link = Ďalšie informácie
 collection-health-report =
     .label = Povoliť aplikácii { -brand-short-name } odosielať technické údaje a údaje o interakciách spoločnosti { -vendor-short-name }
     .accesskey = o

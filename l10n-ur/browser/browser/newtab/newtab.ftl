@@ -43,9 +43,6 @@ newtab-topsites-save-button = محفوظ کریں
 newtab-topsites-preview-button = پیش منظر
 newtab-topsites-add-button = اظافہ کریں
 
-## Top Sites - Delete history confirmation dialog. 
-
-
 ## Top Sites - Delete history confirmation dialog.
 
 newtab-confirm-delete-history-p1 = کیا آپ کو یقین ہے کہ آپ اس صفحہ کا ہر نمونہ اپنے سابقات سے حذف کرنا چاہتے ہیں؟
@@ -75,14 +72,19 @@ newtab-menu-delete-history = تاریخ سے حذف کریں
 newtab-menu-save-to-pocket = { -pocket-brand-name } میں محفوظ کریں
 newtab-menu-delete-pocket = { -pocket-brand-name } سے جزف کریں
 newtab-menu-archive-pocket = { -pocket-brand-name } مے محفوظ
+
+## Message displayed in a modal window to explain privacy and provide context for sponsored content.
+
+newtab-privacy-modal-button-done = مکمل
+newtab-privacy-modal-header = آپ کی رازداری کی اہمیت ہے۔
+newtab-privacy-modal-link = سیکھیں کہ نئے ٹیب پر رازداری کیسے کام کرتی ہے
+
+
+
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = نشانى ہٹائيں
 # Bookmark is a verb here.
 newtab-menu-bookmark = بک مارک
-
-## Context Menu - Downloaded Menu. "Download" in these cases is not a verb, 
-## it is a noun. As in, "Copy the link that belongs to this downloaded item".
-
 
 ## Context Menu - Downloaded Menu. "Download" in these cases is not a verb,
 ## it is a noun. As in, "Copy the link that belongs to this downloaded item".
@@ -108,13 +110,10 @@ newtab-menu-open-file = مسل کھولیں
 
 newtab-label-visited = دورہ شدہ
 newtab-label-bookmarked = نشان شدہ
+newtab-label-removed-bookmark = نشانی ہٹا دی گئی
 newtab-label-recommended = رجحان سازی
 newtab-label-saved = { -pocket-brand-name } میں محفوظ شدہ
 newtab-label-download = ڈاؤن لوڈ شدہ
-
-## Section Menu: These strings are displayed in the section context menu and are 
-## meant as a call to action for the given section.
-
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -122,8 +121,8 @@ newtab-label-download = ڈاؤن لوڈ شدہ
 newtab-section-menu-remove-section = صیغہ ہٹائیں
 newtab-section-menu-collapse-section = صیغہ تفصیل سے دیکھیں
 newtab-section-menu-expand-section = صیغہ کو توسیع کریں
-newtab-section-menu-manage-section = صیغہ کابندرست کریں
-newtab-section-menu-manage-webext = توسیع کابندرست کریں
+newtab-section-menu-manage-section = صیغہ منظم کریں
+newtab-section-menu-manage-webext = توسیع منظم کریں
 newtab-section-menu-add-topsite = بہترین سائٹ شامل کریں
 newtab-section-menu-add-search-engine = تلاش انجن کا اضافہ کریں
 newtab-section-menu-move-up = اوپر کریں
@@ -146,6 +145,7 @@ newtab-section-header-pocket = { $provider } کی جانب سے تجویز کر�
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
+newtab-discovery-empty-section-topstories-content = مزید کہانیوں کے لئے بعد میں دوبارہ پڑتال کریں۔
 newtab-discovery-empty-section-topstories-try-again-button = دوبارہ کوشش کریں
 newtab-discovery-empty-section-topstories-loading = لوڈ ہو رہا ہے…
 
@@ -155,6 +155,7 @@ newtab-discovery-empty-section-topstories-loading = لوڈ ہو رہا ہے…
 newtab-pocket-read-more = مشہور مضامین:
 newtab-pocket-more-recommendations = اور زیادہ سفارشات
 newtab-pocket-how-it-works = یہ کس طرح کام کرتا ہے
+newtab-pocket-whats-pocket = { -pocket-brand-name } کیا ہے؟
 newtab-pocket-cta-button = { -pocket-brand-name } حاصل کریں
 
 ## Error Fallback Content.
