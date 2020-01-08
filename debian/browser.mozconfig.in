@@ -2,7 +2,7 @@
 # packages for Debian or a derivative.
 ac_add_options --with-app-name=@browser@
 ac_add_options --enable-release
-ac_add_options --enable-default-toolkit=cairo-gtk3
+ac_add_options --enable-default-toolkit=cairo-gtk3-wayland
 ac_add_options --with-google-location-service-api-keyfile=$topsrcdir/debian/google.key
 ac_add_options --with-google-safebrowsing-api-keyfile=$topsrcdir/debian/google.key
 ac_add_options --with-mozilla-api-keyfile=$topsrcdir/debian/mls.key
