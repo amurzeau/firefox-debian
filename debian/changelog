@@ -1,9 +1,15 @@
+firefox-esr (68.4.1esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fix for mfsa2020-03, also known as CVE-2019-17026.
+
+ -- Mike Hommey <glandium@debian.org>  Thu, 09 Jan 2020 06:40:28 +0900
+
 firefox-esr (68.4.0esr-1) unstable; urgency=medium
 
   * New upstream release.
   * Fixes for mfsa2020-02, also known as:
-    CVE-2019-17015, CVE-2019-17016, CVE-2019-17017, CVE-2019-17021,
-    CVE-2019-17022, CVE-2019-17024.
+    CVE-2019-17016, CVE-2019-17017, CVE-2019-17022, CVE-2019-17024.
 
   * debian/rules: Don't build with --compress-debug-sections on jessie.
   * debian/rules: Use sourcestamp.txt for MOZ_BUILD_DATE. Closes: #946193.
