@@ -353,6 +353,9 @@ override_dh_gencontrol-indep:
 	dh_gencontrol$(foreach pkg,$(subst $($(PRODUCT)),iceweasel,$(L10N_PACKAGES)) iceweasel-l10n-all, -N$(pkg))
 endif
 
+# We're dealing with this manually and we don't want config.* files being touched under third_party/rust.
+override_dh_update_autotools_config:
+
 install binary binary-arch binary-indep: $(filter-out %.pc,$(GENERATED_FILES))
 
 binary binary-arch binary-indep build build-arch build-indep clean install:
