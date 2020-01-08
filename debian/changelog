@@ -1,3 +1,30 @@
+firefox (72.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2020-01, also known as:
+    CVE-2019-17015, CVE-2019-17016, CVE-2019-17017, CVE-2019-17018,
+    CVE-2019-17019, CVE-2019-17020, CVE-2019-17021, CVE-2019-17022,
+    CVE-2019-17023, CVE-2019-17024, CVE-2019-17025.
+
+  * debian/rules:
+    - Don't build with --compress-debug-sections on jessie.
+    - Use sourcestamp.txt for MOZ_BUILD_DATE.
+    - Avoid running dh_update_autotools_config. We're dealing with this
+      manually and we don't want config.* files being touched under
+      third_party/rust.
+  * debian/control*:
+    - Bump nspr, nss and sqlite build dependencies.
+    - Add missing dependency on libdrm-dev.
+  * debian/browser.mozconfig.in: Explicitly build with wayland support
+    enabled.
+
+  * intl/icu_sources_data.py: Don't build ICU in parallel.
+  * gfx/skia/skia/third_party/skcms/src/Transform_inl.h: Work around older
+    GCC ICE on arm.
+    (Thanks Emilio Pozuelo Monfort)
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 08 Jan 2020 08:54:04 +0900
+
 firefox (71.0-2) unstable; urgency=medium
 
   * dom/indexedDB/ActorsParent.cpp: Work around lack of support for
