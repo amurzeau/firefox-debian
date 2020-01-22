@@ -7,10 +7,10 @@ Subject: Fill sourcestamp.txt with the missing info
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/sourcestamp.txt b/sourcestamp.txt
-index 8b137891791..ab5f43b06ed 100644
+index 8b137891791..d003132b4b7 100644
 --- a/sourcestamp.txt
 +++ b/sourcestamp.txt
 @@ -1 +1,2 @@
 -
-+20200107212959
-+https://hg.mozilla.org/releases/mozilla-esr68/rev/8b51bf38ddbb00131188d833c1441bb37128634b
++20200117153614
++https://hg.mozilla.org/releases/mozilla-esr68/rev/e215d711213984716b1c44db7d1254397de6ef4b
