@@ -1,3 +1,9 @@
+firefox-esr (68.4.2esr-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 22 Jan 2020 12:02:13 +0900
+
 firefox-esr (68.4.1esr-1) unstable; urgency=medium
 
   * New upstream release.
