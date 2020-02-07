@@ -203,6 +203,15 @@ advanced-fonts =
 colors-settings =
     .label = Түстер…
     .accesskey = Т
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Масштаб
+preferences-default-zoom = Бастапқы масштаб
+    .accesskey = ш
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Тек мәтінді масштабтау
+    .accesskey = т
 language-header = Тіл
 choose-language-description = Интернет-беттерді көрсету үшін тілді таңдаңыз
 choose-button =
@@ -286,6 +295,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type-description (String) - Description of the type (e.g "Portable Document Format")
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
+# Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
 # Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
@@ -400,6 +413,9 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Мәтін терілген кезде оны парақтан іздей бастау
     .accesskey = т
+browsing-picture-in-picture-toggle-enabled =
+    .label = Суреттегі сурет видеоның басқару пернелерін іске қосу
+    .accesskey = е
 browsing-picture-in-picture-learn-more = Көбірек білу
 browsing-cfr-recommendations =
     .label = Шолу кезінде кеңейтулерді ұсыну
@@ -506,6 +522,11 @@ search-bar-shown =
     .label = Құралдар панеліне іздеу панелін қосу
 search-engine-default-header = Негізгі іздеу жүйесі
 search-engine-default-desc = Адрестік жолақ және іздеу өрісі үшін қолданылатын негізгі іздеу жүйесін таңдау.
+search-engine-default-desc-2 = Бұл сіздің адрес жолағыңыздағы және іздеу жолындағы негізгі іздеу жүйесі. Сіз оны кез келген уақытта ауыстыра аласыз.
+search-engine-default-private-desc-2 = Тек жекелік терезелері үшін басқа іздеу жүйесін орнату
+search-separate-default-engine =
+    .label = Бұл іздеу жүйесін жекелік терезелерде қолдану
+    .accesskey = у
 search-suggestions-header = Іздеу ұсыныстары
 search-suggestions-desc = Іздеу жүйелерінің ұсыныстары қайда көрсетілетінін таңдаңыз.
 search-suggestions-option =
@@ -549,10 +570,19 @@ search-keyword-warning-bookmark = Сіз таңдаған қысқаша ата�
 ## Containers Section
 
 containers-back-link = « Артқа
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Баптауларға оралу
+           *[other] Баптауларға оралу
+        }
 containers-header = Контейнер беттері
 containers-add-button =
     .label = Жаңа контейнерді қосу
     .accesskey = а
+containers-new-tab-check =
+    .label = Әр жаңа бет үшін контейнерді таңдау
+    .accesskey = к
 containers-preferences-button =
     .label = Баптаулар
 containers-remove-button =
@@ -572,6 +602,9 @@ sync-signedout-account-create = Тіркелгіңіз жоқ па? Бастау
 sync-signedout-account-signin =
     .label = Кіру…
     .accesskey = р
+sync-signedout-account-signin2 =
+    .label = { -sync-brand-short-name } ішіне кіру…
+    .accesskey = у
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -719,6 +752,7 @@ privacy-header = Браузер жекелігі
 ## Privacy Section - Logins and Passwords
 
 logins-header = Логиндер және парольдер
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Веб-сайттар үшін логиндер мен парольдерді сақтауды сұрау
     .accesskey = с
@@ -728,7 +762,11 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Қатаң парольдерді ұсыну және генерациялау
     .accesskey = ы
+forms-breach-alerts =
+    .label = Бұзылған веб-сайттардың парольдері туралы ескертулерді көрсету
+    .accesskey = б
 forms-breach-alerts-learn-more-link = Көбірек білу
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Логиндер мен парольдерді автотолтыру
     .accesskey = ы
@@ -810,6 +848,10 @@ sitedata-block-desc = Блокталғанның түрі
     .accesskey = т
 sitedata-option-block-trackers =
     .label = Үшінші жақты трекерлер
+sitedata-option-block-cross-site-trackers =
+    .label = Сайтаралық трекерлер
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Сайтаралық және әлеуметтік желілер трекерлері
 sitedata-option-block-unvisited =
     .label = Қаралмаған веб-сайттардан cookies файлдары
 sitedata-option-block-all-third-party =
@@ -845,6 +887,8 @@ addressbar-suggestions-settings = Іздеу жүйесінің ұсыныста
 
 content-blocking-header = Құраманы бұғаттау
 content-blocking-section-description = Шолу кезінде жекелігіңізді қорғаңыз. Сіз шолатын сайттарды бақылайтын және сіздің профиліңізді жасайтын көрінбейтін құраманы бұғаттаңыз. Бұл құраманың кейбіреуін бұғаттау беттердің жылдамдау жүктелуіне әкеп соғуы мүмкін.
+content-blocking-enhanced-tracking-protection = Бақылаудан кеңейтілген қорғаныс
+content-blocking-section-top-level-description = Трекерлер желіде сіздің соңыңыздан ереді, сіздің шолу әдеттері мен тақырыптары туралы ақпаратты жинайды. { -brand-short-name } осындай трекерлердің көбін және басқа да зиянкес скрипттерді бұғаттайды.
 content-blocking-learn-more = Көбірек білу
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -879,16 +923,24 @@ enhanced-tracking-protection-setting-custom =
 
 ##
 
+content-blocking-etp-standard-desc = Қорғаныс және өнімділік теңгерімі. Беттер әдеттегідей жүктеледі.
+content-blocking-etp-strict-desc = Қатаңырақ қорғаныс, бірақ, кейбір сайттар немесе мазмұнның бұзылуына әкеп соғуы мүмкін.
+content-blocking-etp-custom-desc = Қай трекерлер мен скрипттерді блоктауды таңдаңыз.
+content-blocking-private-windows = Жекелік шолу терезелерінде бақылайтын құрама
+content-blocking-cross-site-tracking-cookies = Сайтаралық бақылайтын cookie файлдары
 content-blocking-social-media-trackers = Әлеуметтік желілер трекерлері
 content-blocking-all-cookies = Барлық cookie файлдары
 content-blocking-unvisited-cookies = Қаралмаған сайттардың cookies файлдары
 content-blocking-all-windows-trackers = Барлық терезелердегі белгілі трекерлер
+content-blocking-all-windows-tracking-content = Барлық терезелердегі бақылайтын құрама
 content-blocking-all-third-party-cookies = Барлық үшінші жақты cookies
 content-blocking-cryptominers = Криптомайнерлер
 content-blocking-fingerprinters = Баспаны жинаушылар
 content-blocking-warning-title = Ескерту!
 content-blocking-warning-description = Құраманы бұғаттау кейбір веб-сайттар жұмысын бұзуы мүмкін. Сенімді сайттар үшін бұғаттауды өшіру оңай.
 content-blocking-learn-how = Көбірек білу
+content-blocking-etp-warning-description = Трекерлерді бұғаттау кейбір сайттардың жұмысына әсер етуі мүмкін. Барлық мазмұнды жүктеу үшін трекерлермен бетті қайта жүктеңіз.
+content-blocking-warning-learn-how = Көбірек білу
 content-blocking-reload-description = Бұл өзгерістер іске асуы үшін беттерді қайта жүктеу керек болады.
 content-blocking-reload-tabs-button =
     .label = Барлық беттерді қайта жүктеу
@@ -896,6 +948,9 @@ content-blocking-reload-tabs-button =
 content-blocking-trackers-label =
     .label = Трекерлер
     .accesskey = Т
+content-blocking-tracking-content-label =
+    .label = Бақылайтын құрама
+    .accesskey = т
 content-blocking-tracking-protection-option-all-windows =
     .label = Барлық терезелерде
     .accesskey = а
@@ -931,6 +986,10 @@ permissions-location = Орналасу
 permissions-location-settings =
     .label = Баптаулар…
     .accesskey = л
+permissions-xr = Виртуалды шынайылық
+permissions-xr-settings =
+    .label = Баптаулар…
+    .accesskey = т
 permissions-camera = Камера
 permissions-camera-settings =
     .label = Баптаулар…
@@ -979,6 +1038,8 @@ permissions-a11y-privacy-link = Көбірек білу
 collection-header = { -brand-short-name } деректер жинауы және қолданылуы
 collection-description = Біз сізге таңдауды қолыңызға беріп, тек әркім үшін { -brand-short-name } өнімін ұсыну және жақсарту мақсатында керек деректерді жинаймыз. Жеке ақпаратты алу алдында біз әрқашан рұқсатты сұраймыз.
 collection-privacy-notice = Жекелік ескертуі
+collection-health-report-telemetry-disabled = Сіз { -vendor-short-name } үшін ешбір техникалық және әрекеттесу мәліметтерін жинауға енді рұқсат етпейсіз. Барлық бұрыңғы деректер 30 күннің ішінде өшірілетін болады.
+collection-health-report-telemetry-disabled-link = Көбірек білу
 collection-health-report =
     .label = { -brand-short-name } үшін { -vendor-short-name } адресіне техникалық және әрекеттесу деректерін жіберуді рұқсат ету
     .accesskey = р

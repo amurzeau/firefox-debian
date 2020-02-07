@@ -6,7 +6,12 @@ page-title = Technické informace
 page-subtitle =
     Tato stránka obsahuje technické informace, které mohou být užitečné, pokud se snažíte
     vyřešit nějaký složitější problém s aplikací. Odpovědi na často kladené otázky ohledně
-    aplikace { -brand-short-name } naleznete na <a data-l10n-name="support-link">webových stránkách podpory</a>.
+    { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "gen") }
+        [feminine] { -brand-short-name(case: "gen") }
+        [neuter] { -brand-short-name(case: "gen") }
+       *[other] aplikace { -brand-short-name }
+    } naleznete na <a data-l10n-name="support-link">webových stránkách podpory</a>.
 crashes-title = Hlášení pádů
 crashes-id = ID hlášení
 crashes-send-date = Odeslaná
@@ -23,7 +28,13 @@ security-software-name = Název
 security-software-antivirus = Antivir
 security-software-antispyware = Antispyware
 security-software-firewall = Firewall
-features-title = Funkce aplikace { -brand-short-name }
+features-title =
+    Funkce { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "gen") }
+        [feminine] { -brand-short-name(case: "gen") }
+        [neuter] { -brand-short-name(case: "gen") }
+       *[other] aplikace { -brand-short-name }
+    }
 features-name = Název
 features-version = Verze
 features-id = ID
@@ -68,7 +79,13 @@ modified-key-prefs-title = Důležité změněné předvolby
 modified-prefs-name = Název
 modified-prefs-value = Hodnota
 user-js-title = Předvolby user.js
-user-js-description = Složka s profilem obsahuje <a data-l10n-name="user-js-link">soubor user.js</a>, který obsahuje předvolby, které nebyly vytvořeny aplikací { -brand-short-name }.
+user-js-description =
+    Složka s profilem obsahuje <a data-l10n-name="user-js-link">soubor user.js</a>, který obsahuje předvolby, které nebyly vytvořeny { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "ins") }
+        [feminine] { -brand-short-name(case: "ins") }
+        [neuter] { -brand-short-name(case: "ins") }
+       *[other] aplikací { -brand-short-name }
+    }.
 locked-key-prefs-title = Důležité uzamčené předvolby
 locked-prefs-name = Název
 locked-prefs-value = Hodnota
@@ -130,7 +147,7 @@ media-capabilities-title = Podpora médií
 # List all the entries of the database.
 media-capabilities-enumerate = Vypsat databázi
 
-
+##
 
 intl-title = Internacionalizace a lokalizace
 intl-app-title = Nastavení aplikace
@@ -155,7 +172,7 @@ remote-debugging-title = Vzdálené ladění (protokol Chromia)
 remote-debugging-accepting-connections = Přijímá spojení
 remote-debugging-url = URL
 
-
+##
 
 # Variables
 # $days (Integer) - Number of days of crashes to log
@@ -260,6 +277,7 @@ d3d11video-crash-guard = D3D11 Video dekodér
 d3d9video-crash-buard = D3D9 Video dekodér
 d3d9video-crash-guard = D3D9 Video dekodér
 glcontext-crash-guard = OpenGL
+wmfvpxvideo-crash-guard = WMF VPX Video dekodér
 reset-on-next-restart = Obnovit po při příštím restartu
 gpu-process-kill-button = Ukončit GPU proces
 gpu-device-reset = Obnova zařízení

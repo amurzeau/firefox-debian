@@ -41,7 +41,7 @@ urlbar-identity-button =
 urlbar-services-notification-anchor =
     .tooltiptext = Otvori ploču s informacijama o instalaciji
 urlbar-web-notification-anchor =
-    .tooltiptext = Promijenite postavke primanja obavijesti od ove stranice
+    .tooltiptext = Promijeni postavke primanja obavijesti od ove stranice
 urlbar-midi-notification-anchor =
     .tooltiptext = Otvori MIDI okno
 urlbar-eme-notification-anchor =
@@ -82,6 +82,18 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Otvori ploču s informacijama o instaliranim dodacima
 urlbar-tip-help-icon =
     .title = Potražite pomoć
+urlbar-search-tips-confirm = U redu, razumijem
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Tipkaj manje, nađi više: Traži { $engineName } direktno u tvojoj adresnoj traci.
+urlbar-search-tips-redirect = Započni tvoju pretragu ovdje za prikaz prijedloga od { $engineName } i tvoju povijest pregledavanja.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Ovoj si stranici zabranio/la pristup informacijama o tvojoj lokaciji.
 urlbar-xr-blocked =
@@ -158,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Veza nije sigurna
+identity-connection-secure = Veza sigurna
+identity-connection-internal = Ovo je sigurna { -brand-short-name } stranica.
+identity-connection-file = Ova je stranica spremljena na tvom računalu.
+identity-extension-page = Ova stranica je učitana iz dodatka.
+identity-active-blocked = { -brand-short-name } je blokirao dijelove ove stranice koji nisu sigurni.
+identity-custom-root = Vezu je potvrdio izdavatelj certifikata kojeg Mozilla ne prepoznaje.
+identity-passive-loaded = Dijelovi ove stranice nisu sigurni (poput slika).
+identity-active-loaded = Isključili ste zaštitu za ovu stranicu.
+identity-weak-encryption = Ova stranica koristi slabu enkripciju.
+identity-insecure-login-forms = Prijave na ovoj stranici mogu biti kompromitirane.
+identity-permissions =
+    .value = Dozvole
+identity-permissions-reload-hint = Trebali biste ponovno osvježiti stranicu radi primjene izmjena.
+identity-permissions-empty = Ovoj stranici niste dali nikakva posebna dopuštenja.
+identity-clear-site-data =
+    .label = Obriši kolačiće i podatke stranice…
+identity-connection-not-secure-security-view = Nisi sigurno povezan/a na ovu stranicu.
+identity-connection-verified = Sigurno si povezan/a na ovu stranicu.
+identity-ev-owner-label = Certifikat izdan za:
+identity-description-custom-root = Mozilla ne prepoznaje ovog izdavatelja certifikata. Možda je dodan iz tvog operacijskog sustava ili od strane administratora. <label data-l10n-name="link">Saznaj više</label>
+identity-remove-cert-exception =
+    .label = Ukloni iznimku
+    .accesskey = U
+identity-description-insecure = Tvoja veza s ovom stranicom nije privatna. Informacije koje pošalješ (npr. lozinke, poruke, broj kreditne kartice itd.) može vidjeti treća strana.
+identity-description-insecure-login-forms = Pristupni podaci koje unesete na ovoj stranici nisu sigurni i mogu biti kompromitirani.
+identity-description-weak-cipher-intro = Tvoja veza s ovom stranicom koristi slabo šifriranje i nije privatna.
+identity-description-weak-cipher-risk = Drugi ljudi mogu vidjeti tvoje informacije ili modificirati ponašanje stranice.
+identity-description-active-blocked = { -brand-short-name } je blokirao dijelove ove stranice koji nisu sigurni. <label data-l10n-name="link">Saznaj više</label>
+identity-description-passive-loaded = Tvoja veza nije privatna i informacije koje dijeliš s ovom stranicom mogu vidjeti drugi.
+identity-description-passive-loaded-insecure = Ova stranica ima sadržaj koji nije siguran (npr. slike). <label data-l10n-name="link">Saznaj više</label>
+identity-description-passive-loaded-mixed = Iako je { -brand-short-name } blokirao dio sadržaja, još uvijek postoje nesigurni sadržaji na ovoj stranici (poput slika). <label data-l10n-name="link">Saznaj više</label>
+identity-description-active-loaded = Ova stranica ima nesiguran sadržaj (poput skripti) i tvoja veza nije privatna.
+identity-description-active-loaded-insecure = Informacije koje dijelite s ovom stranicom (npr. lozinke, poruke, broj kreditne kartice itd.) može vidjeti treća strana.
+identity-learn-more =
+    .value = Saznaj više
+identity-disable-mixed-content-blocking =
+    .label = Onemogući zaštitu za sada
+    .accesskey = d
+identity-enable-mixed-content-blocking =
+    .label = Omogući zaštitu
+    .accesskey = O
+identity-more-info-link-text =
+    .label = Više informacija

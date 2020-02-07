@@ -5,7 +5,7 @@
 # Variables:
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
-ssl-connection-error = { $hostname }에 접속하는 중에 오류가 발생했습니다. { $errorMessage }
+ssl-connection-error = { $hostname }에 연결하는 동안 오류가 발생했습니다. { $errorMessage }
 # Variables:
 # $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix = 오류 코드: { $error }
@@ -15,7 +15,7 @@ psmerr-ssl2-disabled = 보안에 취약한 오래된 SSL 프로토콜을 사용�
 psmerr-hostreusedissuerandserial =
     유효하지 않은 인증서를 받았습니다. 아래 사항을 서버 관리자에게 제공하시기 바랍니다.
     
-    제공한 인증서가 인증 기관에서 발급한 다른 인증서와 같은 시리얼 넘버를 가지고 있습니다. 단일 시리얼 넘버를 가진 새로운 인증서를 제공해 주십시오.
+    제공한 인증서가 인증 기관에서 발급한 다른 인증서와 같은 시리얼 넘버를 가지고 있습니다. 단일 시리얼 넘버를 가진 새로운 인증서를 제공해 주세요.
 ssl-error-export-only-server = 안전하게 통신 할 수 없습니다. 상대방이 높은 등급의 암호화를 지원하지 않습니다.
 ssl-error-us-only-server = 안전하게 통신 할 수 없습니다. 상대방이 지원하지 않는 높은 등급의 암호화를 요청합니다.
 ssl-error-no-cypher-overlap = 상대방과 안전하게 통신 할 수 없음: 일반 암호화 알고리듬이 없습니다.
@@ -126,7 +126,7 @@ ssl-error-bad-cert-hash-value-alert = SSL 상대 측이 손상된 인증서 해�
 ssl-error-rx-unexpected-new-session-ticket = SSL에서 알 수 없는 새 세션  암호 교환 메시지를 받았습니다.
 ssl-error-rx-malformed-new-session-ticket = SSL에서 변조된 새 세션 암호 교환 메시지를 받았습니다.
 ssl-error-decompression-failure = SSL에서 압축되었으나 압축을 풀 수 없는 메시지를 받았습니다.
-ssl-error-renegotiation-not-allowed = 데이터 재교환은 현재 SSL 소켓에서 허가되지 않았습니다.
+ssl-error-renegotiation-not-allowed = 데이터 재교환은 이 SSL 소켓에서 허가되지 않았습니다.
 ssl-error-unsafe-negotiation = 상대방이 취약점이 많은 예전 방식으로 메시지 교환을 요청했습니다.
 ssl-error-rx-unexpected-uncompressed-record = SSL에서 알 수 없는 압축 정보를 받았습니다.
 ssl-error-weak-server-ephemeral-dh-key = SSL에서 서버키 메시지 교환 도중 약한 Diffie-Hellman키를 받았습니다.
@@ -168,7 +168,7 @@ sec-error-revoked-certificate = 상대방의 인증서가 폐기 되었습니다
 sec-error-unknown-issuer = 상대방의 인증서 발급자가 인식되지 않습니다.
 sec-error-bad-key = 상대방의 공개키가 유효하지 않습니다.
 sec-error-bad-password = 입력한 보안 비밀번호가 잘못되었습니다.
-sec-error-retry-password = 입력한 새 비밀번호가 잘못되었습니다. 다시 입력하십시오.
+sec-error-retry-password = 입력한 새 비밀번호가 잘못되었습니다. 다시 입력하세요.
 sec-error-no-nodelock = 보안 라이브러리: 노드잠김이 없습니다.
 sec-error-bad-database = 보안 라이브러리: 손상된 저장소입니다.
 sec-error-no-memory = 보안 라이브러리: 메모리 할당 실패입니다.
@@ -182,8 +182,8 @@ sec-error-no-key = 이 인증서에 대한 개인키가 키 저장소에서 발�
 sec-error-cert-valid = 이 인증서는 유효합니다.
 sec-error-cert-not-valid = 이 인증서는 유효하지 않습니다.
 sec-error-cert-no-response = 인증서 라이브러리: 응답 없음
-sec-error-expired-issuer-certificate = 인증서 발급자의 인증서가 만료됐습니다. 시스템 날짜와 시간을 확인하십시오.
-sec-error-crl-expired = 인증서 발급자에 대한 CRL이 만료됐습니다. 해당 CRL을 업데이트하거나 시스템 날짜와 시간을 확인하십시오.
+sec-error-expired-issuer-certificate = 인증서 발급자의 인증서가 만료됐습니다. 시스템 날짜와 시간을 확인하세요.
+sec-error-crl-expired = 인증서 발급자에 대한 CRL이 만료됐습니다. 해당 CRL을 업데이트하거나 시스템 날짜와 시간을 확인하세요.
 sec-error-crl-bad-signature = 인증서 발급자에 대한 CRL이 유효하지않은 서명을 가지고 있습니다.
 sec-error-crl-invalid = 새로운 CRL이 유효하지 않은 형식으로 되어있습니다.
 sec-error-extension-value-invalid = 인증서 확장 값이 유효하지 않습니다.
@@ -202,7 +202,7 @@ sec-error-pkcs7-keyalg-mismatch = 복호화할 수 없음: 키 암호화 알고�
 sec-error-pkcs7-bad-signature = 서명 검증 실패: 발견된 서명자가 없거나, 서명자가 너무 많거나, 부적합하거나 훼손된 데이터입니다.
 sec-error-unsupported-keyalg = 지원하지 않거나 알 수 없는 키 알고리듬입니다.
 sec-error-decryption-disallowed = 복호화할 수 없음: 허용되지 않은 알고리듬 또는 키 크기를 사용하여 암호화되었습니다.
-xp-sec-fortezza-bad-card = Fortezza 카드가 올바르게 초기화되지 않았습니다.  장치로부터 제거한 다음 발급자에게 도움을 요청하십시오.
+xp-sec-fortezza-bad-card = Fortezza 카드가 올바르게 초기화되지 않았습니다.  장치로부터 제거한 다음 발급자에게 도움을 요청하세요.
 xp-sec-fortezza-no-card = 발견된 Fortezza 카드 없음
 xp-sec-fortezza-none-selected = 선택한 Fortezza 카드 없음
 xp-sec-fortezza-more-info = 다음에 대한 정보를 더 얻으려면 신상 정보를 선택
@@ -232,7 +232,7 @@ sec-error-exporting-certificates = 인증서를 내보내려하는 동안 오류
 sec-error-importing-certificates = 인증서를 가져오려하는 동안 오류가 발생했습니다.
 sec-error-pkcs12-decoding-pfx = 가져올 수 없습니다.  복호화 오류입니다.  파일이 유효하지 않습니다.
 sec-error-pkcs12-invalid-mac = 가져올 수 없습니다. 유효하지 않은 MAC입니다. 잘못된 비밀번호 또는 훼손된 파일입니다.
-sec-error-pkcs12-unsupported-mac-algorithm = 가져올 수 없습니다.  MAC 알고리듬이 지원되지 않습니다.
+sec-error-pkcs12-unsupported-mac-algorithm = 가져올 수 없습니다. MAC 알고리듬이 지원되지 않습니다.
 sec-error-pkcs12-unsupported-transport-mode = 가져올 수 없습니다. 비밀번호 무결성과 사적 기밀 모드만 지원됩니다.
 sec-error-pkcs12-corrupt-pfx-structure = 가져올 수 없습니다.  파일 구조가 훼손되었습니다.
 sec-error-pkcs12-unsupported-pbe-algorithm = 가져올 수 없습니다. 암호화 알고리즘이 지원되지 않습니다.
@@ -253,8 +253,8 @@ sec-error-pkcs12-unable-to-write = 내보낼 수 없습니다.  내보내기 파
 sec-error-pkcs12-unable-to-read = 가져올 수 없습니다.  가져오기 파일을 읽을 수 없습니다.
 sec-error-pkcs12-key-database-not-initialized = 내보낼 수 없습니다.  키 저장소가 훼손되거나 삭제됐습니다.
 sec-error-keygen-fail = 공개/개인키 쌍을 생성할 수 없습니다.
-sec-error-invalid-password = 입력한 비밀번호가 유효하지 않습니다. 다른 것을 골라보십시오.
-sec-error-retry-old-password = 입력한 이전 비밀번호가 틀렸습니다. 다시 입력해주십시오.
+sec-error-invalid-password = 입력한 비밀번호가 유효하지 않습니다. 다른 것을 골라보세요.
+sec-error-retry-old-password = 이전 비밀번호가 잘못 입력되었습니다. 다시 시도하세요.
 sec-error-bad-nickname = 인증서 별명이 이미 사용 중입니다.
 sec-error-not-fortezza-issuer = 상대방 FORTEZZA 체인이 FORTEZZA 인증서가 아닌 것을 포함하고 있습니다.
 sec-error-cannot-move-sensitive-key = 중요한 키는 필요로하는 슬롯으로 이동될 수 없습니다.
@@ -263,7 +263,7 @@ sec-error-js-invalid-dll = 유효하지 않은 모듈 경로/파일이름
 sec-error-js-add-mod-failure = 모듈을 추가할 수 없음
 sec-error-js-del-mod-failure = 모듈을 삭제할 수 없음
 sec-error-old-krl = 새 KRL이 현재 것보다 최신이 아닙니다.
-sec-error-ckl-conflict = 새 CKL은 현재 CKL과는 다른 발급자를 포함하고 있습니다.  현재 CKL을 삭제하십시오.
+sec-error-ckl-conflict = 새 CKL은 현재 CKL과는 다른 발급자를 포함하고 있습니다.  현재 CKL을 삭제하세요.
 sec-error-cert-not-in-name-space = 이 인증서에 대한 인증 기관은 이 이름으로 인증서 발급을 허용하지 않습니다.
 sec-error-krl-not-yet-valid = 이 인증서에 대한 키 폐기 목록은 아직 유효하지 않습니다.
 sec-error-crl-not-yet-valid = 이 인증서에 대한 인증서 폐기 목록이 아직 유효하지 않습니다.
@@ -328,7 +328,7 @@ sec-error-expired-password = 비밀번호가 만료되었습니다.
 sec-error-locked-password = 비밀번호가 잠겼습니다.
 sec-error-unknown-pkcs11-error = 알 수 없는 PKCS #11 오류입니다.
 sec-error-bad-crl-dp-url = 유효하지 않거나 지원하지 않는 URL이 CRL 배포 내용에 있습니다.
-sec-error-cert-signature-algorithm-disabled = 안전하지 않은 이유로 현재 서명 알고리즘으로 서명된 인증서를 사용 중지하였습니다.
+sec-error-cert-signature-algorithm-disabled = 비활성화된 안전하지 않은 알고리즘을 사용하여 서명되었습니다.
 mozilla-pkix-error-key-pinning-failure = 서버가 키 피닝(HPKP)을 사용하고 있지만 핀셋과 일치하는 신뢰할 수 있는 인증서 체인을 만들 수 없었습니다. 키 피닝 위반은 뮤효화 할 수 없습니다.
 mozilla-pkix-error-ca-cert-used-as-end-entity = 서버가 인증서 권한으로 기본 제약 확장만 가지고 있는 인증서를 사용하고 있스니다. 정상적으로 발급된 인증서의 경우에는 이렇지 않습니다.
 mozilla-pkix-error-inadequate-key-size = 서버가 보안 연결을 만들기에 너무 작은 크기의 키를 가지고 있는 인증서를 보내왔습니다.

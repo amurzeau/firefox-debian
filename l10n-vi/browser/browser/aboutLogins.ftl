@@ -15,11 +15,6 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Tìm kiếm thông tin đăng nhập
 create-login-button = Tạo đăng nhập mới
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = Biểu tượng cho { $title }
 fxaccounts-sign-in-text = Nhận mật khẩu của bạn trên các thiết bị khác của bạn
 fxaccounts-sign-in-button = Đăng nhập vào { -sync-brand-short-name }
 fxaccounts-avatar-button =
@@ -50,6 +45,7 @@ login-list-count =
     }
 login-list-sort-label-text = Sắp xếp theo:
 login-list-name-option = Tên (A-Z)
+login-list-name-reverse-option = Tên (Z-A)
 login-list-breached-option = Trang web đã bị rò rỉ
 login-list-last-changed-option = Sửa đổi lần cuối
 login-list-last-used-option = Sử dụng lần cuối
@@ -60,9 +56,6 @@ about-logins-login-list-empty-search-description = Không có kết quả phù h
 login-list-item-title-new-login = Đăng nhập mới
 login-list-item-subtitle-new-login = Nhập thông tin đăng nhập của bạn
 login-list-item-subtitle-missing-username = (không có tên người dùng)
-about-logins-list-item-warning-icon =
-    .alt = Biểu tượng cảnh báo
-    .title = Trang web bị rò rỉ
 about-logins-list-item-breach-icon =
     .title = Trang web bị rò rỉ
 
@@ -80,7 +73,6 @@ about-logins-intro-import = Nếu thông tin đăng nhập của bạn được 
 
 login-item-new-login-title = Tạo đăng nhập mới
 login-item-edit-button = Chỉnh sửa
-login-item-delete-button = Xóa
 about-logins-login-item-remove-button = Xóa
 login-item-origin-label = Địa chỉ trang web
 login-item-origin =
@@ -95,6 +87,8 @@ login-item-password-reveal-checkbox-show =
     .title = Hiện mật khẩu
 login-item-password-reveal-checkbox-hide =
     .title = Ẩn mật khẩu
+login-item-password-reveal-checkbox =
+    .aria-label = Hiện mật khẩu
 login-item-copy-password-button-text = Sao chép
 login-item-copied-password-button-text = Đã sao chép!
 login-item-save-changes-button = Lưu thay đổi
@@ -125,7 +119,6 @@ enable-password-sync-preferences-button =
            *[other] Truy cập tùy chỉnh { -sync-brand-short-name }
         }
     .accesskey = V
-confirm-delete-dialog-title = Xoá thông tin đăng nhập này?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = Đừng hỏi lại tôi nữa.
     .accesskey = D
@@ -137,7 +130,6 @@ confirmation-dialog-dismiss-button =
     .title = Hủy bỏ
 about-logins-confirm-remove-dialog-title = Xoá thông tin đăng nhập này?
 confirm-delete-dialog-message = Thao tác này không thể hoàn tác được.
-confirm-delete-dialog-confirm-button = Xóa
 about-logins-confirm-remove-dialog-confirm-button = Xóa
 confirm-discard-changes-dialog-title = Hủy bỏ những thay đổi chưa lưu?
 confirm-discard-changes-dialog-message = Tất cả các thay đổi chưa được lưu sẽ bị mất.
@@ -152,11 +144,6 @@ breach-alert-dismiss =
 
 ## Error Messages
 
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = Một mục nhập cho { $loginTitle } với tên người dùng đó đã tồn tại.
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:

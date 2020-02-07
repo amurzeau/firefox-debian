@@ -15,11 +15,6 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Ieškoti prisijungimų
 create-login-button = Sukurti naują prisijungimą
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = „{ $title }“ svetainės piktograma
 fxaccounts-sign-in-text = Turėkite savo slaptažodžius ir kituose įrenginiuose
 fxaccounts-sign-in-button = Prisijungti prie „{ -sync-brand-short-name }“
 fxaccounts-avatar-button =
@@ -52,6 +47,7 @@ login-list-count =
     }
 login-list-sort-label-text = Rikiuoti pagal:
 login-list-name-option = Pavadinimas (A-Z)
+login-list-name-reverse-option = Pavadinimas (Z-A)
 login-list-breached-option = Pažeistos svetainės
 login-list-last-changed-option = Atnaujinimo laikas
 login-list-last-used-option = Paskiausias naudojimo laikas
@@ -62,9 +58,6 @@ about-logins-login-list-empty-search-description = Nėra jūsų paiešką atitin
 login-list-item-title-new-login = Naujas prisijungimas
 login-list-item-subtitle-new-login = Įveskite prisijungimo duomenis
 login-list-item-subtitle-missing-username = (nėra naudotojo vardo)
-about-logins-list-item-warning-icon =
-    .alt = Įspėjimo piktograma
-    .title = Pažeista svetainė
 about-logins-list-item-breach-icon =
     .title = Pažeista svetainė
 
@@ -82,7 +75,6 @@ about-logins-intro-import = Jeigu turite kitoje naršyklėje įrašytų prisijun
 
 login-item-new-login-title = Sukurti naują prisijungimą
 login-item-edit-button = Taisyti
-login-item-delete-button = Pašalinti
 about-logins-login-item-remove-button = Pašalinti
 login-item-origin-label = Svetainės adresas
 login-item-origin =
@@ -97,6 +89,8 @@ login-item-password-reveal-checkbox-show =
     .title = Rodyti slaptažodį
 login-item-password-reveal-checkbox-hide =
     .title = Slėpti slaptažodį
+login-item-password-reveal-checkbox =
+    .aria-label = Rodyti slaptažodį
 login-item-copy-password-button-text = Kopijuoti
 login-item-copied-password-button-text = Nukopijuota!
 login-item-save-changes-button = Įrašyti pakeitimus
@@ -127,7 +121,6 @@ enable-password-sync-preferences-button =
            *[other] Aplankyti „{ -sync-brand-short-name }“ nuostatas
         }
     .accesskey = A
-confirm-delete-dialog-title = Pašalinti šį prisijungimą?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = Daugiau neklausti
     .accesskey = D
@@ -139,7 +132,6 @@ confirmation-dialog-dismiss-button =
     .title = Atsisakyti
 about-logins-confirm-remove-dialog-title = Pašalinti šį prisijungimą?
 confirm-delete-dialog-message = Atlikus šį veiksmą, jo atšaukti neįmanoma.
-confirm-delete-dialog-confirm-button = Šalinti
 about-logins-confirm-remove-dialog-confirm-button = Pašalinti
 confirm-discard-changes-dialog-title = Atsisakyti neįrašytų pakeitimų?
 confirm-discard-changes-dialog-message = Visi neįrašyti pakeitimai bus prarasti.
@@ -154,11 +146,6 @@ breach-alert-dismiss =
 
 ## Error Messages
 
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = Jau yra { $loginTitle } įrašas su tokiu naudotojo vardu.
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:

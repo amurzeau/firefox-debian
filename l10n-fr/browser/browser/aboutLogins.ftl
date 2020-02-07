@@ -15,11 +15,6 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Rechercher des identifiants
 create-login-button = Créer un nouvel identifiant
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = Icône pour { $title }
 fxaccounts-sign-in-text = Accédez à vos mots de passe sur vos autres appareils
 fxaccounts-sign-in-button = Se connecter à { -sync-brand-short-name }
 fxaccounts-avatar-button =
@@ -51,6 +46,7 @@ login-list-count =
     }
 login-list-sort-label-text = Trier par :
 login-list-name-option = Nom (A-Z)
+login-list-name-reverse-option = Nom (Z-A)
 login-list-breached-option = Fuites de données de sites
 login-list-last-changed-option = Dernière modification
 login-list-last-used-option = Dernière utilisation
@@ -61,9 +57,6 @@ about-logins-login-list-empty-search-description = Aucun résultat ne correspond
 login-list-item-title-new-login = Nouvel identifiant
 login-list-item-subtitle-new-login = Saisissez vos informations de connexion
 login-list-item-subtitle-missing-username = (aucun nom d’utilisateur)
-about-logins-list-item-warning-icon =
-    .alt = Icône d’avertissement
-    .title = Site victime d’une fuite de données
 about-logins-list-item-breach-icon =
     .title = Site victime d’une fuite de données
 
@@ -81,7 +74,6 @@ about-logins-intro-import = Si vos identifiants sont enregistrés dans un autre 
 
 login-item-new-login-title = Créer un nouvel identifiant
 login-item-edit-button = Modifier
-login-item-delete-button = Supprimer
 about-logins-login-item-remove-button = Supprimer
 login-item-origin-label = Adresse web
 login-item-origin =
@@ -96,6 +88,8 @@ login-item-password-reveal-checkbox-show =
     .title = Afficher le mot de passe
 login-item-password-reveal-checkbox-hide =
     .title = Masquer le mot de passe
+login-item-password-reveal-checkbox =
+    .aria-label = Afficher le mot de passe
 login-item-copy-password-button-text = Copier
 login-item-copied-password-button-text = Copié !
 login-item-save-changes-button = Enregistrer les modifications
@@ -126,7 +120,6 @@ enable-password-sync-preferences-button =
            *[other] Consulter les préférences de { -sync-brand-short-name }
         }
     .accesskey = C
-confirm-delete-dialog-title = Supprimer cet identifiant ?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = Ne plus me demander
     .accesskey = N
@@ -138,7 +131,6 @@ confirmation-dialog-dismiss-button =
     .title = Annuler
 about-logins-confirm-remove-dialog-title = Supprimer cet identifiant ?
 confirm-delete-dialog-message = Cette action est irréversible.
-confirm-delete-dialog-confirm-button = Supprimer
 about-logins-confirm-remove-dialog-confirm-button = Supprimer
 confirm-discard-changes-dialog-title = Ignorer les modifications non enregistrées ?
 confirm-discard-changes-dialog-message = Toutes les modifications non enregistrées seront perdues.
@@ -153,11 +145,6 @@ breach-alert-dismiss =
 
 ## Error Messages
 
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = Une entrée pour { $loginTitle } avec ce nom d’utilisateur existe déjà.
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:

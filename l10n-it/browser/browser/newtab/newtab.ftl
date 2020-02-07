@@ -90,10 +90,17 @@ newtab-privacy-modal-header = La tua privacy è importante.
 newtab-privacy-modal-paragraph =
     Oltre a servirti storie accattivanti, ti mostriamo anche contenuti,
     pertinenti e attentamente curati, promossi da un gruppo selezionato di
-    sponsor. Ti assicuriamo che nessun dato relativo alla tua navigazione viene
+    sponsor. Ti garantiamo che nessun dato relativo alla tua navigazione viene
     condiviso dalla tua copia personale di { -brand-product-name }. Noi non
     abbiamo accesso a queste informazioni, e tantomeno ce l’hanno i nostri
     sponsor.
+newtab-privacy-modal-paragraph-2 =
+    Oltre a servirti storie accattivanti, ti mostriamo anche contenuti,
+    pertinenti e attentamente curati, promossi da un gruppo selezionato di
+    sponsor. Ti garantiamo che <strong>nessun dato relativo alla tua navigazione
+    viene condiviso dalla tua copia personale di { -brand-product-name }</strong>.
+    Noi non abbiamo accesso a queste informazioni, e tantomeno ce l’hanno i
+    nostri sponsor.
 newtab-privacy-modal-link = Scopri come funziona la privacy nella pagina Nuova scheda
 
 ##
@@ -131,6 +138,7 @@ newtab-label-removed-bookmark = Segnalibro eliminato
 newtab-label-recommended = Di tendenza
 newtab-label-saved = Salvato in { -pocket-brand-name }
 newtab-label-download = Scaricata
+newtab-label-sponsored = { $sponsorOrSource } · Sponsorizzata
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -180,7 +188,6 @@ newtab-discovery-empty-section-topstories-timed-out = Oops. Sembra che la sezion
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Argomenti popolari:
 newtab-pocket-more-recommendations = Altri suggerimenti
-newtab-pocket-how-it-works = Come funziona
 newtab-pocket-whats-pocket = Che cos’è { -pocket-brand-name }?
 newtab-pocket-cta-button = Ottieni { -pocket-brand-name }
 newtab-pocket-cta-text = Salva le storie che ami in { -pocket-brand-name } e nutri la tua mente con letture appassionanti.

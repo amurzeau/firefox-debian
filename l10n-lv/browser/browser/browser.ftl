@@ -76,6 +76,17 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Glabāt datus pastāvīgajā krātuvē
 urlbar-addons-notification-anchor =
     .tooltiptext = Atvērt papildinājumu instalēšanas ziņojumu paneli
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Rakstiet mazāk, atrodiet vairāk: Meklējiet ar { $engineName } adreses joslā.
+urlbar-search-tips-redirect = Rakstiet meklējamo te un redziet meklēšanas ieteikumus no { $engineName } vai jūsu pārlūkošanas vēstures.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Atrašanās vietas informācijas koplietošana ar šo lapu ir bloķēta.
 urlbar-web-notifications-blocked =
@@ -142,3 +153,41 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-internal = Šī ir droša { -brand-short-name } lapa.
+identity-connection-file = Šī lapa ir saglabāta jūsu datorā.
+identity-extension-page = Šī lapa ir ielādēta no papildinājuma.
+identity-active-blocked = { -brand-short-name } bloķēja nedrošo saturu šajā lapā.
+identity-passive-loaded = Šīs lapas daļas (piemēram attēli) nav drošas.
+identity-active-loaded = Nedrošu elementu aizsardzība ir deaktivēta.
+identity-weak-encryption = Šī lapa izmanto vāju šifrēšanu.
+identity-insecure-login-forms = Dati, ko ievadīsiet šajā lapā nav aizsargāti un var tikt pārtverti.
+identity-permissions-reload-hint = Lai redzētu izmaiņas iespējams būs nepieciešama lapas pārlāde.
+identity-permissions-empty = Šai lapai nav piešķirtas nekādas īpašas atļaujas.
+identity-clear-site-data =
+    .label = Notīrīt sīkdatnes un lapu datus…
+identity-remove-cert-exception =
+    .label = Attālinātā izpilde
+    .accesskey = A
+identity-description-insecure = Jūsu savienojums ar šo lapu nav drošs. Lapai nosūtītā informācija (piemēram paroles, ziņojumi vai kredītkartes dati) var būt pieejami citiem.
+identity-description-insecure-login-forms = Dati, ko ievadīsiet šajā lapā nav aizsargāti un var tikt pārtverti.
+identity-description-weak-cipher-intro = Jūsu savienojums ar šo lapu izmanto vāju šifrēšanu un nav privāts.
+identity-description-weak-cipher-risk = Citi cilvēki var aplūkot jūsu informāciju vai modificēt lapas uzvedību.
+identity-description-active-blocked = { -brand-short-name } bloķēja nedrošo saturu šajā lapā. <label data-l10n-name="link">Uzzināt vairāk</label>
+identity-description-passive-loaded = Jūsu savienojums ar šo lapu nav drošs, lapai nosūtītā informācija var būt pieejami citiem.
+identity-description-passive-loaded-insecure = Šīs lapas daļas (piemēram attēli) nav drošas. <label data-l10n-name="link">Uzzināt vairāk</label>
+identity-description-passive-loaded-mixed = Lai arī { -brand-short-name } bloķēja nedrošo saturu, lapā joprojām ir saturs, kas nav drošs (piemēram attēli). <label data-l10n-name="link">Uzzināt vairāk</label>
+identity-description-active-loaded = Šīs lapas daļas (piemēram attēli vai skripti) nav droši un jūsu savienojums nav privāts.
+identity-description-active-loaded-insecure = Lapai nosūtītā informācija (piemēram paroles, ziņojumi vai kredītkartes dati) var būt pieejami citiem.
+identity-learn-more =
+    .value = Uzzināt vairāk
+identity-disable-mixed-content-blocking =
+    .label = Pagaidām deaktivēt aizsardzību
+    .accesskey = d
+identity-enable-mixed-content-blocking =
+    .label = Aktivēt aizsardzību
+    .accesskey = b
+identity-more-info-link-text =
+    .label = Sīkāka informācija

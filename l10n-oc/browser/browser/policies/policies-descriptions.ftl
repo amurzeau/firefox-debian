@@ -19,6 +19,7 @@ policy-BlockAboutSupport = Blòca l’accès a la pagina about:support.
 policy-Bookmarks = Permet de crear de marcapaginas dins la barra personala, lo menú dels marcapaginas o un dels jos-dorsièrs.
 policy-CertificatesDescription = Apondre de certificats o utilizar de certificats predefinits.
 policy-Cookies = Permet o defend als sites de definir de cookies.
+policy-DefaultDownloadDirectory = Definir lo dorsièr de telecargament per defaut
 policy-DisableAppUpdate = Empacha lo navigador de se metre a jorn.
 policy-DisableBuiltinPDFViewer = Desactiva PDF.js, lo visionador integrat de PDF dins { -brand-short-name }.
 policy-DisableDeveloperTools = Blòca l’accès a las aisinas de desvolopament.
@@ -40,18 +41,25 @@ policy-DisplayBookmarksToolbar = Aficha la barra personala per defaut.
 policy-DisplayMenuBar = Aficha la barra de menús per defaut.
 policy-DNSOverHTTPS = Permet de configurar lo DNS over HTTPS.
 policy-DontCheckDefaultBrowser = Desactiva la verificacion del navegador per defaut en aviar.
+policy-DownloadDirectory = Definir e varrolhar lo dorsièr de telecargament.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Activa o desactiva lo blocatge del contengut e permet de clavar aqueste causida.
+policy-FirefoxHome = Configurar l’acuèlh de Firefox.
 policy-FlashPlugin = Autoriza o pas l’utilizacion del plugin Flash.
 policy-HardwareAcceleration = Se fals, desactiva l’acceleracion materiala.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Definís la pagina d’acuèlh e prepausa de la verrolhar.
 policy-InstallAddonsPermission = Autoriza certans sites web d'installar d'extensions.
+policy-NetworkPrediction = Activar o desactivar la prediccion ret (resolucion DNS anticipada).
+policy-NewTabPage = Activar o desactivar la pagina d’onglet novèl.
+policy-PasswordManagerEnabled = Activar lo salvament dels senhals al gestionari de senhals.
 policy-Permissions = Configurar las autorizacions per la camèra, lo microfòn, lo localizacion e las notificacions.
 policy-PopupBlocking = Autoriza unes sites web a mostrar de fenèstras surgentas per defaut.
 policy-Proxy = Configura los paramètres del servidor mandatari.
 policy-RequestedLocales = Definís la lista de las lengas demandadas per l’aplicacion dins l‘òrdre de preferéncia.
-policy-SanitizeOnShutdown = Suprimís totas las donadas de navigacion a la tampadura.
 policy-SearchBar = Definís l’emplaçament per defaut de la barra de recèrca. L’utilizaire garda la possibilitat de personalizar aquò.
+policy-SearchSuggestEnabled = Activar o desactivar las suggestions de recèrca.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Permet d’installar de moduls PKCS #11.
+policy-SSLVersionMax = Definir la version maximala de SSL a utilizar
+policy-SSLVersionMin = Definir la version minimala de SSL a utilizar

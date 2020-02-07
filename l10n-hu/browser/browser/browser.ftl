@@ -82,6 +82,18 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Kiegészítő telepítési üzenetpanel megnyitása
 urlbar-tip-help-icon =
     .title = Segítség kérése
+urlbar-search-tips-confirm = Rendben, értettem
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Gépeljen kevesebbet, találjon többet: { $engineName } keresés közvetlenül a címsorból.
+urlbar-search-tips-redirect = Kezdje a keresést itt, és lássa a { $engineName } javaslatait, valamint a böngészési előzményeit.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Blokkolta a helymeghatározási információkat ezen az oldalon.
 urlbar-xr-blocked =
@@ -158,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = A kapcsolat nem biztonságos
+identity-connection-secure = A kapcsolat biztonságos
+identity-connection-internal = Ez egy biztonságos { -brand-short-name } oldal.
+identity-connection-file = Ez az oldal a számítógépén van tárolva.
+identity-extension-page = Ez az oldal kiegészítőből lett betöltve.
+identity-active-blocked = A { -brand-short-name } blokkolta az oldal néhány nem biztonságos elemét.
+identity-custom-root = A kapcsolatot egy olyan tanúsítványkibocsátó igazolta, amelyet a Mozilla nem ismeri fel.
+identity-passive-loaded = A weboldal egyes részei nem biztonságosak (például a képek).
+identity-active-loaded = Kikapcsolta a védelmet ezen az oldalon.
+identity-weak-encryption = Ez az oldal gyenge titkosítást használ.
+identity-insecure-login-forms = Az oldalon megadott bejelentkezési adatok nincsenek biztonságban.
+identity-permissions =
+    .value = Engedélyek
+identity-permissions-reload-hint = Lehet hogy újra kell töltenie az oldalt a változások érvényesítéséhez.
+identity-permissions-empty = Nem adott speciális engedélyeket ennek az oldalnak.
+identity-clear-site-data =
+    .label = Sütik és oldaladatok eltávolítása…
+identity-connection-not-secure-security-view = Nem biztonságosan kapcsolódik ehhez az oldalhoz.
+identity-connection-verified = Biztonságosan kapcsolódik ehhez az oldalhoz.
+identity-ev-owner-label = Tanúsítvány kiállítva ennek:
+identity-description-custom-root = A Mozilla nem ismeri fel ezt a tanúsítványkibocsátót. Lehet, hogy az operációs rendszer vagy egy rendszergazda adta hozzá. <label data-l10n-name="link">További tudnivalók</label>
+identity-remove-cert-exception =
+    .label = Kivétel eltávolítása
+    .accesskey = e
+identity-description-insecure = A kapcsolat ehhez az oldalhoz nem biztonságos. Az elküldött információkat mások is láthatják (például a jelszavakat, üzeneteket, bankkártya-adatokat stb.).
+identity-description-insecure-login-forms = Az oldalon megadott bejelentkezési adatok nincsenek biztonságban és lehallgathatók lehetnek.
+identity-description-weak-cipher-intro = A kapcsolat ehhez a weboldalhoz túl gyenge titkosítást használ, és nem biztonságos.
+identity-description-weak-cipher-risk = Mások megjeleníthetik információit, vagy módosíthatják a weboldal viselkedését.
+identity-description-active-blocked = A { -brand-short-name } blokkolta az oldal néhány nem biztonságos elemét. <label data-l10n-name="link">További tudnivalók</label>
+identity-description-passive-loaded = A kapcsolat nem biztonságos, és az oldalnak elküldött információkat mások is láthatják.
+identity-description-passive-loaded-insecure = Ez a weboldal nem biztonságos tartalmakat is tartalmaz (például képek). <label data-l10n-name="link">További tudnivalók</label>
+identity-description-passive-loaded-mixed = Bár a { -brand-short-name } blokkolt bizonyos tartalmakat, még mindig szerepel olyan tartalom az oldalon, amely nem biztonságos (például képek). <label data-l10n-name="link">További tudnivalók</label>
+identity-description-active-loaded = A weboldal nem biztonságos elemeket (például parancsfájlokat) tartalmaz, és a kapcsolat nem biztonságos.
+identity-description-active-loaded-insecure = Az oldalnak elküldött információkat mások is láthatják (például a jelszavakat, üzeneteket, bankkártya-adatokat stb.).
+identity-learn-more =
+    .value = További tudnivalók
+identity-disable-mixed-content-blocking =
+    .label = Védelem kikapcsolása most
+    .accesskey = k
+identity-enable-mixed-content-blocking =
+    .label = Védelem bekapcsolása
+    .accesskey = b
+identity-more-info-link-text =
+    .label = További tudnivalók

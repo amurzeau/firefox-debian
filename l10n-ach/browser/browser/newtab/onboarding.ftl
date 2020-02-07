@@ -21,6 +21,9 @@ onboarding-button-label-get-started = Caki
 onboarding-welcome-header = Wajoli i { -brand-short-name }
 onboarding-welcome-body = Dong itye ki layeny.<br/>Rwatte ki jami mukene me { -brand-product-name }.
 onboarding-welcome-learn-more = Nong ngec mapol ikom ber ne.
+onboarding-welcome-modal-get-body = Dong itye ki layeny.<br/>Dong nong mapol ki i { -brand-product-name }.
+onboarding-welcome-modal-privacy-body = Dong itye ki layeny. Wek wamed gwoke me mung mapol.
+onboarding-welcome-modal-family-learn-more = Nong ngec mapol ikom dul jami me { -brand-product-name }.
 onboarding-welcome-form-header = Cak Ki Kany
 onboarding-join-form-header = Dony iyie { -brand-product-name }
 onboarding-join-form-body = Ket kanonge ni me email me cako.
@@ -41,6 +44,8 @@ onboarding-cards-dismiss =
 ## Welcome full page string
 
 onboarding-fullpage-welcome-subheader = Wa cak neno jami weng ma itwero timo.
+onboarding-fullpage-form-email =
+    .placeholder = Kanonge ni me email…
 
 ## Firefox Sync modal dialog strings.
 
@@ -66,6 +71,7 @@ onboarding-benefit-knowledge-title = Ngec me tic
 onboarding-benefit-knowledge-text = Pwony jami weng ma mite ki in me bedo ryek ki maber iwiyamo.
 onboarding-benefit-privacy-title = Mung Kikome
 onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = Cwal alamabuk mamegi, mung me donyo, gin mukato ki mapol ka weng ma itiyo ki { -brand-product-name }.
 onboarding-benefit-monitor-title = { -monitor-brand-short-name }
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
 
@@ -93,18 +99,26 @@ onboarding-data-sync-button2 = Dony iyie { -sync-brand-short-name }
 onboarding-browse-privately-title = Yeny i mung
 onboarding-browse-privately-text = Yeny i mung jwayo yeny ki gin mukato me yeny mamegi me gwoko ne i mung ki bot ngat mo keken ma tiyo ki kompiuta ni.
 onboarding-browse-privately-button = Yab dirica me mung
+onboarding-firefox-send-title = Gwok Pwail Mamegi ma Inywako I Mung
 onboarding-firefox-send-button = Tem { -send-brand-name }
 onboarding-mobile-phone-title = Nong { -brand-product-name } i Cim mamegi
 onboarding-mobile-phone-text = GAm { -brand-product-name } pi iOS onyo Android ka i rib data mamegi i nyonyo weng.
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
 onboarding-send-tabs-text = Send Tabs nywako cut potbukke ikin nyonyo mamegi labongo mite me loko mwono, onyo weko layeny.
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text2 = Nywak iyoo mayot potbukke ikin nyonyo mamegi labongo mite me loko kakube onyo weko layeny.
 onboarding-send-tabs-button = Cak tic ki Send Tabs
 onboarding-pocket-anywhere-title = Kwan ki Winy Ka mo keken
 onboarding-pocket-anywhere-button = Tem { -pocket-brand-name }
 onboarding-lockwise-passwords-title = Wot ki mung me donyo mamegi ka mo keken
 onboarding-lockwise-passwords-text2 = Gwok mung me donyo ma igwoko gi maber ki dony mayot iyie akaunt mamegi ki { -lockwise-brand-name }.
 onboarding-lockwise-passwords-button2 = Nong purugram ne
+onboarding-lockwise-strong-passwords-button = Lo Donyo iyie Mamegi
+onboarding-facebook-container-button = Med Lamed
+onboarding-import-browser-settings-title = Kel ki woko Alamabuk Mamegi, Mung me donyo, ki Mapol
+onboarding-import-browser-settings-button = Kel ki woko Data me Chrome
 
 ## Message strings belonging to the Return to AMO flow
 

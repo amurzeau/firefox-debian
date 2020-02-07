@@ -15,11 +15,6 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Шукати паролі
 create-login-button = Створити новий запис
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = Favicon для { $title }
 fxaccounts-sign-in-text = Отримайте доступ до своїх паролів на інших пристроях
 fxaccounts-sign-in-button = Увійдіть в { -sync-brand-short-name(case: "acc") }
 fxaccounts-avatar-button =
@@ -52,7 +47,8 @@ login-list-count =
     }
 login-list-sort-label-text = Сортувати:
 login-list-name-option = Ім'я (A-Z)
-login-list-breached-option = Зламані веб-сайти
+login-list-name-reverse-option = Назва (Z-A)
+login-list-breached-option = Зламані вебсайти
 login-list-last-changed-option = Змінено
 login-list-last-used-option = Використано
 login-list-intro-title = Паролів не знайдено
@@ -62,11 +58,8 @@ about-logins-login-list-empty-search-description = Немає результат
 login-list-item-title-new-login = Новий запис
 login-list-item-subtitle-new-login = Введіть облікові дані
 login-list-item-subtitle-missing-username = (без імені користувача)
-about-logins-list-item-warning-icon =
-    .alt = Піктограма попередження
-    .title = Зламаний веб-сайт
 about-logins-list-item-breach-icon =
-    .title = Зламаний веб-сайт
+    .title = Зламаний вебсайт
 
 ## Introduction screen
 
@@ -82,9 +75,8 @@ about-logins-intro-import = Якщо ваші паролі збережено в
 
 login-item-new-login-title = Створити новий запис
 login-item-edit-button = Змінити
-login-item-delete-button = Видалити
 about-logins-login-item-remove-button = Вилучити
-login-item-origin-label = Адреса веб-сайту
+login-item-origin-label = Адреса вебсайту
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Ім'я користувача
@@ -97,6 +89,8 @@ login-item-password-reveal-checkbox-show =
     .title = Показати пароль
 login-item-password-reveal-checkbox-hide =
     .title = Приховати пароль
+login-item-password-reveal-checkbox =
+    .aria-label = Показати пароль
 login-item-copy-password-button-text = Копіювати
 login-item-copied-password-button-text = Скопійовано!
 login-item-save-changes-button = Зберегти зміни
@@ -127,7 +121,6 @@ enable-password-sync-preferences-button =
            *[other] Відкрити налаштування { -sync-brand-short-name(case: "gen") }
         }
     .accesskey = В
-confirm-delete-dialog-title = Видалити цей запис?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = Не питати знову
     .accesskey = Н
@@ -139,7 +132,6 @@ confirmation-dialog-dismiss-button =
     .title = Скасувати
 about-logins-confirm-remove-dialog-title = Вилучити цей пароль?
 confirm-delete-dialog-message = Це незворотна дія.
-confirm-delete-dialog-confirm-button = Видалити
 about-logins-confirm-remove-dialog-confirm-button = Вилучити
 confirm-discard-changes-dialog-title = Відхилити незбережені зміни?
 confirm-discard-changes-dialog-message = Всі незбережені зміни будуть втрачені.
@@ -147,18 +139,13 @@ confirm-discard-changes-dialog-confirm-button = Відхилити
 
 ## Breach Alert notification
 
-breach-alert-text = З часу останнього оновлення облікових даних, з цього веб-сайту було викрито або викрадено паролі. Змініть пароль, щоб захистити свій обліковий запис.
+breach-alert-text = З часу останнього оновлення облікових даних, з цього вебсайту було викрито або викрадено паролі. Змініть пароль, щоб захистити свій обліковий запис.
 breach-alert-link = Дізнатися більше про цей витік даних.
 breach-alert-dismiss =
     .title = Закрити це попередження
 
 ## Error Messages
 
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = Запис для { $loginTitle } з таким іменем користувача вже існує.
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:

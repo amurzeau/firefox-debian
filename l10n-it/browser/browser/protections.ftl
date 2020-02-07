@@ -18,6 +18,12 @@ graph-total-tracker-summary =
         [one] <b>{ $count }</b> elemento tracciante bloccato dal { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
        *[other] <b>{ $count }</b> elementi traccianti bloccati dal { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
     }
+
+# Text displayed instead of the graph when in Private Mode
+graph-private-window = { -brand-short-name } continua a bloccare gli elementi traccianti in navigazione anonima, ma non viene conservato un registro di ciò che è stato bloccato.
+# Weekly summary of the graph when the graph is empty in Private Mode
+graph-week-summary-private-window = Elementi traccianti bloccati da { -brand-short-name } questa settimana
+
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 # The category name in the <b> tag will be bold.
@@ -61,21 +67,14 @@ lockwise-no-logins-content = Installa l’app <a data-l10n-name="lockwise-inline
 lockwise-passwords-stored = Password salvate in modo sicuro <a data-l10n-name="lockwise-how-it-works">Come funziona</a>
 turn-on-sync = Attiva { -sync-brand-short-name }…
     .title = Apri le impostazioni di sincronizzazione
-manage-devices = Gestisci dispositivi
 manage-connected-devices = Gestisci dispositivi…
 # Variables:
 #   $count (Number) - Number of devices connected with sync.
-lockwise-sync-status =
-    { $count ->
-        [one] Sincronizzato con un altro dispositivo
-       *[other] Sincronizzato con { $count } altri dispositivi
-    }
 lockwise-connected-device-status =
     { $count ->
         [one] Connesso con un dispositivo
        *[other] Connesso con { $count } dispositivi
     }
-lockwise-sync-not-syncing-devices = Non sincronizzato con altri dispositivi
 monitor-title = Tieni sotto controllo le violazioni di dati
 monitor-link = Come funziona
 monitor-header-content-no-account = Controlla { -monitor-brand-name } per verificare se sei stato coinvolto in una violazione di dati conosciuta e ricevere avvisi per nuove violazioni.

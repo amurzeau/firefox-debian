@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 fxa-toolbar-sync-syncing =
-    .label = Համաժամեցում
+    .label = Համաժամեցում…
 fxa-toolbar-sync-syncing-tabs =
     .label = Ներդիրների համաժամեցում…
 sync-disconnect-dialog-title = Կապախզե՞լ{ -sync-brand-short-name }֊ը։

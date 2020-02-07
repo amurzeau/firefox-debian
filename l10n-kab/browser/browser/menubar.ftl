@@ -109,7 +109,7 @@ menu-view-sidebar =
 menu-view-bookmarks =
     .label = Ticraḍ n yisebtar
 menu-view-history-button =
-    .label = Amazray
+    .label = Azray
 menu-view-synced-tabs-sidebar =
     .label = Accaren yemtawin
 menu-view-full-zoom =
@@ -168,12 +168,12 @@ menu-view-bidi-switch-page-direction =
 ## History Menu
 
 menu-history =
-    .label = Amazray
+    .label = Azray
     .accesskey = A
 menu-history-show-all-history =
-    .label = Sken akk amazray
+    .label = Sken akk azray
 menu-history-clear-recent-history =
-    .label = Sfeḍ amazray-ik n melmi kan…
+    .label = Sfeḍ azray-ik n melmi kan…
 menu-history-synced-tabs =
     .label = Accaren yemtawin
 menu-history-restore-last-session =

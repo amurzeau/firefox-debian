@@ -82,6 +82,18 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Abrir panel de mensaje de instalación de complemento
 urlbar-tip-help-icon =
     .title = Obtener ayuda
+urlbar-search-tips-confirm = Ok, ¡ya caché!
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Escribe menos, encuentra más: Busca con { $engineName } directo desde tu barra de direcciones.
+urlbar-search-tips-redirect = Empieza tu búsqueda aquí para ver sugerencias sacadas de { $engineName } y de tu historial de navegación.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Has bloqueado la información de ubicación para este sitio.
 urlbar-xr-blocked =
@@ -158,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Conexión no segura
+identity-connection-secure = Conexión segura
+identity-connection-internal = Esta es una página segura de { -brand-short-name }.
+identity-connection-file = Esta página está almacenada en tu computador.
+identity-extension-page = Esta página es cargada desde una extensión.
+identity-active-blocked = { -brand-short-name } ha bloqueado partes de esta página que no son seguras.
+identity-custom-root = Conexión verificada por un emisor de certificados que no es reconocido por Mozilla.
+identity-passive-loaded = Partes de esta página no son seguras (por ejemplo: imágenes).
+identity-active-loaded = Has desactivado la protección en esta página.
+identity-weak-encryption = Esta página usa un cifrado débil.
+identity-insecure-login-forms = Las conexiones realizadas en esta página pueden verse comprometidas.
+identity-permissions =
+    .value = Permisos
+identity-permissions-reload-hint = Puede que tengas que recargar la página para que los cambios se apliquen.
+identity-permissions-empty = No has dado permisos especiales a este sitio.
+identity-clear-site-data =
+    .label = Limpiar cookies y datos del sitio…
+identity-connection-not-secure-security-view = No estás conectado de forma segura a este sitio.
+identity-connection-verified = Está conectado de forma segura a este sitio.
+identity-ev-owner-label = Certificado emitido para:
+identity-description-custom-root = Mozilla no reconoce al emisor de este certificado. Puede haber sido agregado desde tu sistema operativo o por un administrador. <label data-l10n-name="link">Aprender más</label>
+identity-remove-cert-exception =
+    .label = Remover excepción
+    .accesskey = R
+identity-description-insecure = Tu conexión a este sitio no es privada. La información que envíes puede ser vista por otros (por ejemplo: contraseñas, mensajes, tarjetas de crédito, etc.).
+identity-description-insecure-login-forms = La información de conexión que ingreses en este sitio no va segura y puede verse comprometida.
+identity-description-weak-cipher-intro = Tu conexión a este sitio web usa un cifrado débil y no es privada.
+identity-description-weak-cipher-risk = Otras personas pueden ver tu información o modificar el comportamiento del sitio web.
+identity-description-active-blocked = { -brand-short-name } ha bloqueado partes de esta página que no son seguras. <label data-l10n-name="link">Aprender más</label>
+identity-description-passive-loaded = Tu conexión no es privada y la información que compartas con el sitio puede ser vista por otros.
+identity-description-passive-loaded-insecure = Este sitio web contiene contenido que no es seguro (por ejemplo: imágenes). <label data-l10n-name="link">Aprender más</label>
+identity-description-passive-loaded-mixed = Aunque { -brand-short-name } ha bloqueado parte del contenido, aún hay contenido en la página que no es seguro (por ejemplo: imágenes). <label data-l10n-name="link">Aprender más</label>
+identity-description-active-loaded = Este sitio contiene contenido que no es seguro (por ejemplo: scripts) y tu conexión a éste no es privada.
+identity-description-active-loaded-insecure = La información que compartas con este sitio puede ser vista por otros (por ejemplo: contraseñas, mensajes, tarjetas de crédito, etc.).
+identity-learn-more =
+    .value = Aprender más
+identity-disable-mixed-content-blocking =
+    .label = Desactivar protección por ahora
+    .accesskey = D
+identity-enable-mixed-content-blocking =
+    .label = Activar protección
+    .accesskey = E
+identity-more-info-link-text =
+    .label = Más información

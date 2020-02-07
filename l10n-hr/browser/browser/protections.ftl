@@ -20,6 +20,10 @@ graph-total-tracker-summary =
         [few] <b>{ $count }</b> pratitelja blokirana od { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
        *[other] <b>{ $count }</b> pratitelja blokirano od { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
     }
+# Text displayed instead of the graph when in Private Mode
+graph-private-window = { -brand-short-name } nastavlja blokirati programe za praćenje u privatnim prozorima, ali ne vodi evidenciju o tome što je blokirano.
+# Weekly summary of the graph when the graph is empty in Private Mode
+graph-week-summary-private-window = Programi za praćenje, koje je { -brand-short-name } blokirao ovaj tjedan
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 # The category name in the <b> tag will be bold.
@@ -40,12 +44,12 @@ protection-report-manage-protections = Upravljanje postavkama
 graph-today = Danas
 # This string is used to describe the graph for screenreader users.
 graph-legend-description = Dijagram sadrži ukupni broj svake vrste programa za praćenje koji su ovaj tjedan bili blokirani.
-social-tab-title = Programi za praćenje društvenih mreža
+social-tab-title = Programi za praćenje s društvenih mreža
 social-tab-contant = Društvene mreže postavljaju programe za praćenje na druge web stranice kako bi pratili što radiš, vidiš i gledaš na mreži. To omogućava društvenim medijima saznati o tebi više od onoga što dijeliš na svojim profilima na društvenim mrežama. <a data-l10n-name="learn-more-link">Saznaj više</a>
 cookie-tab-title = Kolačići za praćenje između web stranica
 cookie-tab-content = Ovi kolačići te prate od web stranice do web stranice, kako bi prikupili podatke o tome što radiš na mreži. Postavljaju ih treće strane poput oglašivača i analitičkih tvrtki. Blokiranje kolačića za praćenje među web stranicama, smanjuje broj oglasa koji te prate. <a data-l10n-name="learn-more-link">Saznaj više</a>
 tracker-tab-title = Praćenje sadržaja
-tracker-tab-description = Web stranice mogu učitati vanjske reklame, video materijal i drugi sadržaj koji sadržava kȏd za praćenje. Blokiranje praćenja sadržaja može ubrzati učitavanje stranica, ali neke tipke, obrasci ili polja za prijavu možda neće raditi. <a data-l10n-name="learn-more-link">Saznajte više</a>
+tracker-tab-description = Web stranice mogu učitati vanjske reklame, video materijal i drugi sadržaj koji sadržava kod za praćenje. Blokiranje praćenja sadržaja može ubrzati učitavanje stranica, ali neke tipke, obrasci ili polja za prijavu možda neće raditi. <a data-l10n-name="learn-more-link">Saznaj više</a>
 fingerprinter-tab-title = Čitači digitalnog otiska
 fingerprinter-tab-content = Čitači digitalnog otiska prikupljaju postavke tvog preglednika i računala kako bi stvorili tvoj profil. Pomoću ovog digitalnog otiska mogu te pratiti na različitim web stranicama. <a data-l10n-name="learn-more-link">Saznaj više</a>
 cryptominer-tab-title = Kripto rudari
@@ -68,16 +72,6 @@ lockwise-passwords-stored =
     }
 turn-on-sync = Uključi { -sync-brand-short-name } …
     .title = Prijeđi na postavke sinkronizacije
-manage-devices = Upravljaj uređajima
-# Variables:
-#   $count (Number) - Number of devices connected with sync.
-lockwise-sync-status =
-    { $count ->
-        [one] Sinkronizacija s { $count } drugim uređajem
-        [few] Sinkronizacija s { $count } druga uređaja
-       *[other] Sinkronizacija s { $count } drugih uređaja
-    }
-lockwise-sync-not-syncing-devices = Ne sinkronizira se na druge uređaje
 manage-connected-devices = Upravljanje uređajima…
 # Variables:
 #   $count (Number) - Number of devices connected with sync.
@@ -139,12 +133,12 @@ password-warning =
 ##   $percentage (Number) - Percentage this type of tracker contributes to the whole graph
 
 bar-tooltip-social =
-    .title = Programi za praćenje društvenih mreža
+    .title = Programi za praćenje s društvenih mreža
     .aria-label =
         { $count ->
-            [one] { $count } program za praćenje društvenih mreža { $percentage }
-            [few] { $count } programa za praćenje društvenih mreža { $percentage }
-           *[other] { $count } programa za praćenje društvenih mreža { $percentage }
+            [one] { $count } program za praćenje s društvenih mreža { $percentage }
+            [few] { $count } programa za praćenje s društvenih mreža { $percentage }
+           *[other] { $count } programa za praćenje s društvenih mreža { $percentage }
         }
 bar-tooltip-cookie =
     .title = Kolačići za praćenje među web lokacijama

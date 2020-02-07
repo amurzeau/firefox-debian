@@ -4,9 +4,9 @@
 
 profiles-title = 프로필 소개
 profiles-subtitle = 이 페이지에서는 프로필을 관리할 수 있습니다. 각각의 프로필은 분리된 방문기록과 북마크, 설정, 부가기능을 포함합니다.
-profiles-create = 새 프로필 생성
+profiles-create = 새 프로필 만들기
 profiles-restart-title = 다시 시작
-profiles-restart-in-safe-mode = 부가기능을 비활성화하고 다시 시작…
+profiles-restart-in-safe-mode = 부가기능을 끄고 다시 시작…
 profiles-restart-normal = 정상적으로 다시 시작…
 profiles-conflict = { -brand-product-name }의 다른 사본이 프로필을 변경했습니다. 변경하기 전에 { -brand-short-name }를 다시 시작해야 합니다.
 profiles-flush-fail-title = 변경 내용이 저장되지 않음
@@ -28,7 +28,7 @@ profiles-localdir = 로컬 디렉터리
 profiles-current-profile = 이 프로필은 사용 중이므로 삭제할 수 없습니다.
 profiles-in-use-profile = 이 프로필을 다른 애플리케이션에서 사용하고 있기 때문에 삭제할 수 없습니다.
 profiles-rename = 이름 변경
-profiles-remove = 제거
+profiles-remove = 삭제
 profiles-set-as-default = 기본 프로필로 설정
 profiles-launch-profile = 새 브라우저에서 프로필 실행
 profiles-cannot-set-as-default-title = 기본값으로 설정할 수 없음
@@ -53,10 +53,10 @@ profiles-delete-profile-confirm =
 profiles-delete-files = 파일 삭제
 profiles-dont-delete-files = 삭제 안 함
 profiles-delete-profile-failed-title = 오류
-profiles-delete-profile-failed-message = 이 프로필을 지우는 동안 오류가 발생 했습니다.
+profiles-delete-profile-failed-message = 이 프로필을 삭제하는 동안 오류가 발생 했습니다.
 profiles-opendir =
     { PLATFORM() ->
         [macos] Finder에서 보기
         [windows] 폴더 열기
-       *[other] 디렉토리 열기
+       *[other] 디렉터리 열기
     }

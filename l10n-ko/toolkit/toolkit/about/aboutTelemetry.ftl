@@ -21,7 +21,7 @@ about-telemetry-more-information = 자세한 정보가 필요하세요?
 about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Firefox Data Documentation</a>에 데이터 도구를 다루는 방법이 나와 있습니다.
 about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Firefox Telemetry client documentation</a>에 개요와 API 문서, 데이터 참조가 포함되어 있습니다.
 about-telemetry-telemetry-dashboard = <a data-l10n-name="dashboard-link">Telemetry dashboards</a>를 이용하여 Telemetry를 통해 Mozilla가 수신한 데이터를 시각화 할 수 있습니다.
-about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">Probe Dictionary</a> 는 Telemetry 에 의해 수집된 조사 내용에 대한 상세 정보와 설명을 제공합니다.
+about-telemetry-telemetry-probe-dictionary = <a data-l10n-name="probe-dictionary-link">Probe Dictionary</a>는 Telemetry에 의해 수집된 조사 내용에 대한 상세 정보와 설명을 제공합니다.
 about-telemetry-show-in-Firefox-json-viewer = JSON 뷰어에서 열기
 about-telemetry-home-section = 홈
 about-telemetry-general-data-section = 일반 데이터
@@ -47,8 +47,8 @@ about-telemetry-hide-stack-symbols = 원본 스택 데이터 보기
 #   $channel (String): represents the corresponding release data string
 about-telemetry-data-type =
     { $channel ->
-        [release] 출시 데이터
-       *[prerelease] 출시전 데이터
+        [release] 정식판 데이터
+       *[prerelease] 시험판 데이터
     }
 # Selects the correct upload string
 # Variables:
@@ -76,7 +76,7 @@ about-telemetry-settings-explanation = 텔레메트리가 { about-telemetry-data
 #   $timeStamp (String): ping localized timestamp, e.g. “2017/07/08 10:40:46”
 about-telemetry-ping-details = 각 정보 조각들은 “<a data-l10n-name="ping-link">핑</a>“로 번들되어 보내집니다. 지금은 { $name }, { $timestamp } 핑을 보고 있습니다.
 about-telemetry-ping-details-current = 각 정보 조각들은 “<a data-l10n-name="ping-link">핑</a>“로 번들되어 보내집니다. 지금은 현재 핑을 보고 있습니다.
-about-telemetry-data-details-current = 각 정보는 "<a data-l10n-name="ping-link">핑</a>"에 번들로 전송됩니다. 현재 데이터를 보고 있습니다.
+about-telemetry-data-details-current = 각 정보는 "<a data-l10n-name="ping-link">핑</a>"에 묶여 전송됩니다. 현재의 데이터를 보고 계십니다.
 # string used as a placeholder for the search field
 # More info about it can be found here:
 # https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
@@ -133,7 +133,7 @@ about-telemetry-captured-stacks-title = { $stackKey } (캡쳐 수: { $capturedSt
 about-telemetry-late-writes-title = 최종 작성- #{ $lateWriteCount }번
 about-telemetry-stack-title = 스택:
 about-telemetry-memory-map-title = 메모리 맵:
-about-telemetry-error-fetching-symbols = 심볼을 가져오는데 오류가 생겼습니다. 인터넷 연결을 확인해 보시고 다시 시도해 주십시오.
+about-telemetry-error-fetching-symbols = 심볼을 가져오는데 오류가 생겼습니다. 인터넷 연결을 확인해 보시고 다시 시도해 주세요.
 about-telemetry-time-stamp-header = 타임스탬프
 about-telemetry-category-header = 카테고리
 about-telemetry-method-header = 메서드

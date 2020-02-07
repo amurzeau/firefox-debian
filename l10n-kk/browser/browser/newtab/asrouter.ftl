@@ -9,7 +9,7 @@ cfr-doorhanger-extension-heading = Ұсынылатын кеңейту
 cfr-doorhanger-feature-heading = Ұсынылатын мүмкіндік
 cfr-doorhanger-pintab-heading = Осыны көріңіз: Бетті бекіту
 
-
+##
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Мен бұны неге көріп отырмын
@@ -78,6 +78,8 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 
 ## Protections panel
 
+cfr-protections-panel-header = Бақыламай шолыңыз
+cfr-protections-panel-body = Деректеріңізді тек өзіңіз үшін қалдырыңыз. { -brand-short-name } желіде сіздің соңыңыздан еретін ең кең тараған трекерлердің көбінен қорғайды.
 cfr-protections-panel-link-text = Көбірек білу
 
 ## What's New toolbar button and panel
@@ -90,7 +92,15 @@ cfr-whatsnew-button =
     .tooltiptext = Не жаңалық
 cfr-whatsnew-panel-header = Не жаңалық
 cfr-whatsnew-release-notes-link-text = Шығарылым ескертпесін оқу
+cfr-whatsnew-fx70-title = { -brand-short-name } сіздің жекелігіңіз үшін енді күштірек күреседі
+cfr-whatsnew-fx70-body =
+    Соңғы жаңарту Бақылаудан Қорғанысты жақсартып, әр сайт үшін
+    күштірек парольдерді жасауды оңайырақ қылады.
 cfr-whatsnew-tracking-protect-title = Өзіңізді трекерлерден қорғаңыз
+cfr-whatsnew-tracking-protect-body =
+    { -brand-short-name } желіде сіздің соңыңыздан еретін көптеген әлеуметтік
+    және сайтаралық трекерлерді бұғаттайды.
+cfr-whatsnew-tracking-protect-link-text = Есепті қарау
 # This string is displayed before a large numeral that indicates the total
 # number of tracking elements blocked. Don’t add $blockedCount to your
 # localization, because it would result in the number showing twice.
@@ -101,20 +111,44 @@ cfr-whatsnew-tracking-blocked-title =
 cfr-whatsnew-tracking-blocked-subtitle = { DATETIME($earliestDate, month: "long", year: "numeric") } бастап
 cfr-whatsnew-tracking-blocked-link-text = Есептемені қарау
 cfr-whatsnew-lockwise-backup-title = Парольдеріңіздің қор көшірмесін жасаңыз
+cfr-whatsnew-lockwise-backup-body = Қайда кірсеңіз де. қолдана алатын қауіпсіз парольдерді жасаңыз.
+cfr-whatsnew-lockwise-backup-link-text = Қор көшірмелерді іске қосу
+cfr-whatsnew-lockwise-take-title = Парольдіріңізді өзіңізбен бірге ұстаңыз
+cfr-whatsnew-lockwise-take-body =
+    { -lockwise-brand-short-name } мобильді қолданбасы әр жерден сіздің қор
+    көшірмедегі парольдерге қауіпсіз қатынауды мүмкін етеді.
 cfr-whatsnew-lockwise-take-link-text = Қолданбаны алу
 
 ## Picture-in-Picture
 
+cfr-whatsnew-pip-header = Шолу кезінде видеоларды қараңыз
+cfr-whatsnew-pip-body = Суреттегі сурет режимі видеоны қалқымалы терезеде көрсетеді, оның көмегімен сіз басқа беттерде жасаған кезде де қарай аласыз.
+cfr-whatsnew-pip-cta = Көбірек білу
 
 ## Permission Prompt
 
+cfr-whatsnew-permission-prompt-header = Сайттардың мазаны алатын азырақ қалқымалы хабарламалар.
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } енді сізге автоматты түрде қалқымалы хабарламаларды жіберуді сұрайтын сайттарды бұғаттайды.
 cfr-whatsnew-permission-prompt-cta = Көбірек білу
 
 ## Fingerprinter Counter
 
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+       *[other] Цифрлық баспаны жинаушы бұғатталды
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } сіздің жарнамалық профиліңізді жасау мақсатында, құрылғыңыз және әрекеттеріңіз туралы ақпаратты жасырын жинайтын цифрлық баспаны жинаушылардың көбін бұғаттайды.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Баспаны жинаушылар
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } сіздің жарнамалық профиліңізді жасау мақсатында, құрылғыңыз және әрекеттеріңіз туралы ақпаратты жасырын жинайтын цифрлық баспаны жинаушыларды бұғаттай алады.
 
 ## Bookmark Sync
 
+cfr-doorhanger-sync-bookmarks-header = Бұл бетбелгіні өз телефоныңызға алыңыз
+cfr-doorhanger-sync-bookmarks-body = Сіз { -brand-product-name } ішінде кірген барлық жерде бетбелгілер, парольдер, шолу тарихы және т.б. өзіңізбен бірге ұстаңыз.
 cfr-doorhanger-sync-bookmarks-ok-button = { -sync-brand-short-name } іске қосу
     .accesskey = с
 
@@ -129,16 +163,40 @@ cfr-doorhanger-sync-logins-ok-button = { -sync-brand-short-name } іске қо�
 
 cfr-doorhanger-send-tab-header = Мұны жолда оқыңыз
 cfr-doorhanger-send-tab-recipe-header = Бұл рецептті ас үйге апарыңыз
+cfr-doorhanger-send-tab-body = Беттерді жіберу мүмкіндігі арқылы бұл сілтемені телефоныңызға немесе сіз { -brand-product-name } ішіне кірген кез келген құрылғыға оңай жібере аласыз.
+cfr-doorhanger-send-tab-ok-button = Бетті жіберуді қолданып көріңіз
+    .accesskey = т
 
 ## Firefox Send
 
+cfr-doorhanger-firefox-send-header = Бұл PDF файлымен қауіпсіз түрде бөлісіңіз
+cfr-doorhanger-firefox-send-body = Құпия құжаттарыңызбен бөтен көзден тыс, толық шифрлеумен және дайын болғаннан кейін өшірілетін сілтеме арқылы бөлісіңіз.
+cfr-doorhanger-firefox-send-ok-button = { -send-brand-name } қолданып көріңіз
+    .accesskey = п
 
 ## Social Tracking Protection
 
+cfr-doorhanger-socialtracking-ok-button = Қорғанысты қарау
+    .accesskey = р
 cfr-doorhanger-socialtracking-close-button = Жабу
     .accesskey = Ж
+cfr-doorhanger-socialtracking-dont-show-again = Енді осындай хабарламаларды көрсетпеу
+    .accesskey = д
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } әлеуметтік желіні сізді осында бақылаудан блоктады
+cfr-doorhanger-socialtracking-description = Жекелігіңіз маңызды. { -brand-short-name } енді әлеуметтік желілер трекерлерін бұғаттап, оларға сіз туралы қанша мәліметті жинай алатынын шектейді.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } бұл бетте цифрлық баспаны жинаушыны бұғаттады
+cfr-doorhanger-fingerprinters-description = Жекелігіңіз маңызды. { -brand-short-name } енді цифрлық баспаны жинаушыларды бұғаттап, олар болса, сізді бақылау мақсатында сізді бірегей түрде анықтайтын ақпаратты жинайды.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } бұл бетте криптомайнерді бұғаттады
+cfr-doorhanger-cryptominers-description = Жекелігіңіз маңызды. { -brand-short-name } енді сіздің компьютеріңіздің қуатын цифрлық валютаны табу үшін қолданатын криптомайнерлерді бұғаттайды.
 
 ## Enhanced Tracking Protection Milestones
 
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+       *[other] { -brand-short-name } { $date } <b>{ $blockedCount }</b> шамасынан көп трекерді бұғаттаған!
+    }
 cfr-doorhanger-milestone-ok-button = Барлығын қарау
     .accesskey = р

@@ -15,11 +15,6 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Pśizjawjenja pytaś
 create-login-button = Nowe pśizjawjenje załožyś
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = Fawikon za { $title }
 fxaccounts-sign-in-text = Pśinjasćo swóje gronidła do wašych drugich rědow
 fxaccounts-sign-in-button = Pla { -sync-brand-short-name } pśizjawiś
 fxaccounts-avatar-button =
@@ -53,6 +48,7 @@ login-list-count =
     }
 login-list-sort-label-text = Sortěrowaś pó:
 login-list-name-option = Mjenju (A-Z)
+login-list-name-reverse-option = Mě (A-Z)
 login-list-breached-option = Zranjone websedła
 login-list-last-changed-option = Slědnej změnje
 login-list-last-used-option = Slědnem wužyśu
@@ -63,9 +59,6 @@ about-logins-login-list-empty-search-description = Njejsu žedne wuslědki, kót
 login-list-item-title-new-login = Nowe pśizjawjenje
 login-list-item-subtitle-new-login = Zapódajśo swóje pśizjawjeńske daty
 login-list-item-subtitle-missing-username = (žedno wužywaŕske mě)
-about-logins-list-item-warning-icon =
-    .alt = Warnowański symbol
-    .title = Zranjone websedło
 about-logins-list-item-breach-icon =
     .title = Zranjone websedło
 
@@ -83,7 +76,6 @@ about-logins-intro-import = Jolic waše pśizjawjenja su skłaźone w drugem wob
 
 login-item-new-login-title = Nowe pśizjawjenje załožyś
 login-item-edit-button = Wobźěłaś
-login-item-delete-button = Lašowaś
 about-logins-login-item-remove-button = Wótwónoźeś
 login-item-origin-label = Adresa websedła
 login-item-origin =
@@ -98,6 +90,8 @@ login-item-password-reveal-checkbox-show =
     .title = Gronidło pokazaś
 login-item-password-reveal-checkbox-hide =
     .title = Gronidła schowaś
+login-item-password-reveal-checkbox =
+    .aria-label = Gronidło pokazaś
 login-item-copy-password-button-text = Kopěrowaś
 login-item-copied-password-button-text = Kopěrowany!
 login-item-save-changes-button = Změny składowaś
@@ -128,7 +122,6 @@ enable-password-sync-preferences-button =
            *[other] Nastajenja { -sync-brand-short-name } se woglědaś
         }
     .accesskey = N
-confirm-delete-dialog-title = Toś to pśizjawjenje wulašowaś?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = Wěcej se njepšašaś
     .accesskey = W
@@ -140,7 +133,6 @@ confirmation-dialog-dismiss-button =
     .title = Pśetergnuś
 about-logins-confirm-remove-dialog-title = Toś to pśizjawjenje wótwónoźeś?
 confirm-delete-dialog-message = Toś ta akcija njedajo se anulěrowaś.
-confirm-delete-dialog-confirm-button = Lašowaś
 about-logins-confirm-remove-dialog-confirm-button = Wótwónoźeś
 confirm-discard-changes-dialog-title = Njeskłaźone změny zachyśiś?
 confirm-discard-changes-dialog-message = Wšykne njeskłaźone změny se zgubiju.
@@ -155,11 +147,6 @@ breach-alert-dismiss =
 
 ## Error Messages
 
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = Zapisk za { $loginTitle } z tym wužywaŕskim mjenim južo eksistěrujo.
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:

@@ -15,11 +15,6 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Etsi kirjautumistietoja
 create-login-button = Luo uusi kirjautumistieto
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = Favicon sivustolle { $title }
 fxaccounts-sign-in-text = Käytä salasanojasi kaikilla laitteillasi
 fxaccounts-sign-in-button = Kirjaudu { -sync-brand-short-name }-palveluun
 fxaccounts-avatar-button =
@@ -47,6 +42,7 @@ login-list-count =
     }
 login-list-sort-label-text = Järjestys:
 login-list-name-option = Nimi (A–Ö)
+login-list-name-reverse-option = Nimi (Ö–A)
 login-list-breached-option = Tietovuodon kokeneet sivustot
 login-list-last-changed-option = Viimeksi muokattu
 login-list-last-used-option = Viimeksi käytetty
@@ -57,9 +53,6 @@ about-logins-login-list-empty-search-description = Hakuasi vastaavia tuloksia ei
 login-list-item-title-new-login = Uusi kirjautumistieto
 login-list-item-subtitle-new-login = Anna kirjautumistietosi
 login-list-item-subtitle-missing-username = (ei käyttäjätunnusta)
-about-logins-list-item-warning-icon =
-    .alt = Varoituskuvake
-    .title = Tietovuodon kokenut sivusto
 about-logins-list-item-breach-icon =
     .title = Tietovuodon kokenut sivusto
 
@@ -77,7 +70,6 @@ about-logins-intro-import = Jos kirjautumistietosi on tallennettu toiseen selaim
 
 login-item-new-login-title = Luo uusi kirjautumistieto
 login-item-edit-button = Muokkaa
-login-item-delete-button = Poista
 about-logins-login-item-remove-button = Poista
 login-item-origin-label = Verkkosivuston osoite
 login-item-origin =
@@ -92,6 +84,8 @@ login-item-password-reveal-checkbox-show =
     .title = Näytä salasana
 login-item-password-reveal-checkbox-hide =
     .title = Piilota salasana
+login-item-password-reveal-checkbox =
+    .aria-label = Näytä salasana
 login-item-copy-password-button-text = Kopioi
 login-item-copied-password-button-text = Kopioitu!
 login-item-save-changes-button = Tallenna muutokset
@@ -118,7 +112,6 @@ enable-password-sync-notification-message =
 enable-password-sync-preferences-button =
     .label = Siirry { -sync-brand-short-name }-asetuksiin
     .accesskey = S
-confirm-delete-dialog-title = Poistetaanko tämä kirjautumistieto?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = Älä kysy uudelleen
     .accesskey = Ä
@@ -130,7 +123,6 @@ confirmation-dialog-dismiss-button =
     .title = Peruuta
 about-logins-confirm-remove-dialog-title = Poistetaanko tämä kirjautumistieto?
 confirm-delete-dialog-message = Tätä toimintoa ei voi perua.
-confirm-delete-dialog-confirm-button = Poista
 about-logins-confirm-remove-dialog-confirm-button = Poista
 confirm-discard-changes-dialog-title = Hylätäänkö tallentamattomat muutokset?
 confirm-discard-changes-dialog-message = Kaikki tallentamattomat muutokset menetetään.
@@ -145,11 +137,6 @@ breach-alert-dismiss =
 
 ## Error Messages
 
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = Tietue sivustolle { $loginTitle } kyseisellä käyttäjätunnuksella on jo olemassa.
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:

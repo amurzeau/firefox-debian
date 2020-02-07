@@ -56,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Abrir painel de mensagem
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Abrir painel de solicitação de localização
+urlbar-xr-notification-anchor =
+    .tooltiptext = Abrir painel de permissão da realidade virtual
 urlbar-storage-access-anchor =
     .tooltiptext = Abrir o painel de permissões da atividade de navegação
 urlbar-translate-notification-anchor =
@@ -80,8 +82,22 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Abrir painel de mensagem de instalação de extra
 urlbar-tip-help-icon =
     .title = Obter ajuda
+urlbar-search-tips-confirm = Ok, entendi
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Escreva menos, encontre mais: Pesquise no { $engineName } diretamente da sua barra de endereço.
+urlbar-search-tips-redirect = Comece a sua pesquisa aqui para ver sugestões de { $engineName } e do seu histórico de navegação.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Bloqueou a informação de localização para este site.
+urlbar-xr-blocked =
+    .tooltiptext = Bloqueou o acesso ao dispositivo de realidade virtual para este website.
 urlbar-web-notifications-blocked =
     .tooltiptext = Bloqueou as notificações para este site.
 urlbar-camera-blocked =
@@ -154,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Ligação insegura
+identity-connection-secure = Ligação segura
+identity-connection-internal = Esta é uma página segura do { -brand-short-name }.
+identity-connection-file = Esta página está armazenada no seu computador.
+identity-extension-page = Esta página está carregada a partir de uma extensão.
+identity-active-blocked = O { -brand-short-name } bloqueou partes desta página que não são seguras.
+identity-custom-root = Ligação verificada por um emissor de certificados que não é reconhecido pela Mozilla.
+identity-passive-loaded = Partes desta página não são seguras (tais como imagens).
+identity-active-loaded = Desativou a proteção nesta página.
+identity-weak-encryption = Esta página utiliza encriptação fraca.
+identity-insecure-login-forms = Credenciais introduzidas nesta página podem ser comprometidas.
+identity-permissions =
+    .value = Permissões
+identity-permissions-reload-hint = Poderá ter de recarregar a página para as alterações se aplicarem.
+identity-permissions-empty = Não concedeu quaisquer permissões especiais a este site.
+identity-clear-site-data =
+    .label = Limpar cookies e dados de sites…
+identity-connection-not-secure-security-view = Não está ligado(a) de forma segura a este site.
+identity-connection-verified = Está ligado(a) de forma segura a este site.
+identity-ev-owner-label = Certificado emitido para:
+identity-description-custom-root = A Mozilla não reconhece este emissor de certificados. Este pode ter sido adicionado a partir do seu sistema operativo ou por um administrador. <label data-l10n-name="link">Saber mais</label>
+identity-remove-cert-exception =
+    .label = Remover exceção
+    .accesskey = R
+identity-description-insecure = A sua ligação a este site não é privada. A informação que submeter pode ser vista por outros (tal como palavras-passe, mensagens, cartões de crédito, etc.).
+identity-description-insecure-login-forms = As credenciais que introduzir nesta página podem não ser seguras e poderão ser comprometidas.
+identity-description-weak-cipher-intro = A sua ligação a este site utiliza uma encriptação fraca e não é privada.
+identity-description-weak-cipher-risk = Outras pessoas podem ver a sua informação ou modificar o comportamento do site.
+identity-description-active-blocked = O { -brand-short-name } bloqueou partes desta página que não são seguras. <label data-l10n-name="link">Saber mais</label>
+identity-description-passive-loaded = A sua ligação não é privada e a informação que partilha com o site pode ser vista por outros.
+identity-description-passive-loaded-insecure = Este site contém conteúdo que não é seguro (tais como imagens). <label data-l10n-name="link">Saber mais</label>
+identity-description-passive-loaded-mixed = Embora o { -brand-short-name } tenha bloqueado algum conteúdo, ainda há conteúdo na página que não é seguro (tal como imagens). <label data-l10n-name="link">Saber mais</label>
+identity-description-active-loaded = Este site contém conteúdo que não é seguro (tal como scripts) e a sua ligação ao mesmo não é privada.
+identity-description-active-loaded-insecure = A informação que partilhar com este site pode ser vista por outros (tal como palavras-passe, mensagens, cartões de crédito, etc.).
+identity-learn-more =
+    .value = Saber mais
+identity-disable-mixed-content-blocking =
+    .label = Desativar proteção por agora
+    .accesskey = D
+identity-enable-mixed-content-blocking =
+    .label = Ativar proteção
+    .accesskey = e
+identity-more-info-link-text =
+    .label = Mais informação

@@ -82,6 +82,18 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Odpri ploščo s sporočili o namestitvah dodatkov
 urlbar-tip-help-icon =
     .title = Pomoč
+urlbar-search-tips-confirm = Razumem
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Tipkajte manj, najdite več: Iščite z iskalnikom { $engineName } iz vrstice z naslovom.
+urlbar-search-tips-redirect = Začnite z iskanjem ter spremljajte predloge iskalnika { $engineName } in zgodovine vašega brskanja.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Za to stran ste zavrnili uporabo podatkov o lokaciji.
 urlbar-xr-blocked =
@@ -158,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Povezava ni varna
+identity-connection-secure = Povezava varna
+identity-connection-internal = To je varna stran { -brand-short-name }a.
+identity-connection-file = Ta stran je shranjena na vašem računalniku.
+identity-extension-page = To stran je naložila razširitev.
+identity-active-blocked = { -brand-short-name } je zavrnil dele strani, ki niso varni.
+identity-custom-root = Povezavo je preveril izdajatelj digitalnega potrdila, ki ga Mozilla ne prepozna.
+identity-passive-loaded = Deli strani niso varni (npr. slike).
+identity-active-loaded = Zaščita na tej strani je onemogočena.
+identity-weak-encryption = Stran uporablja šibko šifriranje.
+identity-insecure-login-forms = Prijave, ki jih vnesete na tej strani, so lahko ogrožene.
+identity-permissions =
+    .value = Dovoljenja
+identity-permissions-reload-hint = Za uveljavitev sprememb boste morda morali ponovno naložiti stran.
+identity-permissions-empty = Tej strani niste dodelili posebnih dovoljenj.
+identity-clear-site-data =
+    .label = Počisti piškotke in podatke te strani …
+identity-connection-not-secure-security-view = Niste varno povezani na to stran.
+identity-connection-verified = Varno ste povezani na to stran.
+identity-ev-owner-label = Potrdilo izdano:
+identity-description-custom-root = Mozilla ne prepozna tega izdajatelja digitalnih potrdil. Morda ga je dodal vaš operacijski sistem ali skrbnik. <label data-l10n-name="link">Več o tem</label>
+identity-remove-cert-exception =
+    .label = Odstrani izjemo
+    .accesskey = d
+identity-description-insecure = Vaša povezava na to stran ni zasebna. Podatke, ki jih pošiljate (npr. gesla, sporočila in kreditne kartice), si lahko ogledajo tudi druge osebe.
+identity-description-insecure-login-forms = Podatki, ki jih vnesete ob prijavi na to stran, niso varni in so lahko ogroženi.
+identity-description-weak-cipher-intro = Vaša povezava na to stran uporablja šibko šifriranje in ni zasebna.
+identity-description-weak-cipher-risk = Druge osebe lahko vidijo vaše podatke ali spreminjajo obnašanje spletne strani.
+identity-description-active-blocked = { -brand-short-name } je zavrnil dele strani, ki niso varni. <label data-l10n-name="link">Več o tem</label>
+identity-description-passive-loaded = Vaša povezava ni zasebna, zato lahko podatke, ki jih delite s stranjo, vidijo tudi druge osebe.
+identity-description-passive-loaded-insecure = Spletna stran vsebuje elemente, ki niso varni (npr. slike). <label data-l10n-name="link">Več o tem</label>
+identity-description-passive-loaded-mixed = Čeprav je { -brand-short-name } zavrnil dele vsebine, nekateri drugi deli še vedno niso varni (npr. slike). <label data-l10n-name="link">Več o tem</label>
+identity-description-active-loaded = Spletna stran vsebuje elemente, ki niso varni (npr. skripti) in vaša povezava nanjo ni zasebna.
+identity-description-active-loaded-insecure = Podatke, ki jih delite s to stranjo, si lahko ogledajo druge osebe (npr. gesla, sporočila in kreditne kartice).
+identity-learn-more =
+    .value = Več o tem
+identity-disable-mixed-content-blocking =
+    .label = Onemogoči zaščito za zdaj
+    .accesskey = N
+identity-enable-mixed-content-blocking =
+    .label = Omogoči zaščito
+    .accesskey = O
+identity-more-info-link-text =
+    .label = Več informacij

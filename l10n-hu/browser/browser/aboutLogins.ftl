@@ -15,11 +15,6 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Bejelentkezések keresése
 create-login-button = Új bejelentkezés létrehozása
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = Favicon a következőhöz: { $title }
 fxaccounts-sign-in-text = Érje el jelszavait a többi eszközén is
 fxaccounts-sign-in-button = Jelentkezzen be a { -sync-brand-short-name }be
 fxaccounts-avatar-button =
@@ -51,6 +46,7 @@ login-list-count =
     }
 login-list-sort-label-text = Rendezés:
 login-list-name-option = Név (A-Z)
+login-list-name-reverse-option = Név (Z-A)
 login-list-breached-option = Feltört weboldalak
 login-list-last-changed-option = Legutóbbi módosítás
 login-list-last-used-option = Legutóbbi használat
@@ -61,9 +57,6 @@ about-logins-login-list-empty-search-description = Nincs találat, amely megfele
 login-list-item-title-new-login = Új bejelentkezés
 login-list-item-subtitle-new-login = Adja meg a bejelentkezési adatait
 login-list-item-subtitle-missing-username = (nincs felhasználónév)
-about-logins-list-item-warning-icon =
-    .alt = Figyelmeztetés ikon
-    .title = Adatsértésben érintett weboldal
 about-logins-list-item-breach-icon =
     .title = Adatsértésben érintett weboldal
 
@@ -81,7 +74,6 @@ about-logins-intro-import = Ha bejelentkezéseit egy másik böngészőben mente
 
 login-item-new-login-title = Új bejelentkezés létrehozása
 login-item-edit-button = Szerkesztés
-login-item-delete-button = Törlés
 about-logins-login-item-remove-button = Eltávolítás
 login-item-origin-label = Honlap címe
 login-item-origin =
@@ -96,6 +88,8 @@ login-item-password-reveal-checkbox-show =
     .title = Jelszó megjelenítése
 login-item-password-reveal-checkbox-hide =
     .title = Jelszó elrejtése
+login-item-password-reveal-checkbox =
+    .aria-label = Jelszó megjelenítése
 login-item-copy-password-button-text = Másolás
 login-item-copied-password-button-text = Másolva!
 login-item-save-changes-button = Változások mentése
@@ -126,7 +120,6 @@ enable-password-sync-preferences-button =
            *[other] { -sync-brand-short-name } beállítások megtekintése
         }
     .accesskey = m
-confirm-delete-dialog-title = Törli a bejelentkezést?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = Ne kérdezze meg többet
     .accesskey = N
@@ -138,7 +131,6 @@ confirmation-dialog-dismiss-button =
     .title = Mégse
 about-logins-confirm-remove-dialog-title = Eltávolítja ezt a bejelentkezést?
 confirm-delete-dialog-message = Ez a művelet nem vonható vissza.
-confirm-delete-dialog-confirm-button = Törlés
 about-logins-confirm-remove-dialog-confirm-button = Eltávolítás
 confirm-discard-changes-dialog-title = Elveti a mentetlen módosításokat?
 confirm-discard-changes-dialog-message = Minden nem mentett változás elvész.
@@ -153,11 +145,6 @@ breach-alert-dismiss =
 
 ## Error Messages
 
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = Már létezik egy bejegyzés azzal a felhasználónévvel ennél: { $loginTitle }.
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:

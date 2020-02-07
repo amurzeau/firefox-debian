@@ -203,6 +203,15 @@ advanced-fonts =
 colors-settings =
     .label = Värit…
     .accesskey = ä
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Suurennus
+preferences-default-zoom = Oletuskoko
+    .accesskey = O
+preferences-default-zoom-value =
+    .label = { $percentage } %
+preferences-zoom-text-only =
+    .label = Muuta vain tekstin kokoa
+    .accesskey = M
 language-header = Kieli
 choose-language-description = Valitse kielet, joilla sivut näytetään
 choose-button =
@@ -316,7 +325,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Käyttöoikeuksien hallintaa (DRM) käyttävä sisältö
 play-drm-content =
@@ -561,10 +570,19 @@ search-keyword-warning-bookmark = Annettu pikakomento on jo toisella kirjanmerki
 ## Containers Section
 
 containers-back-link = « Siirry takaisin
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Takaisin asetuksiin
+           *[other] Takaisin asetuksiin
+        }
 containers-header = Eristetyt välilehdet
 containers-add-button =
     .label = Lisää uusi eristystila
     .accesskey = L
+containers-new-tab-check =
+    .label = Valitse eristystila jokaiselle uudelle välilehdelle
+    .accesskey = V
 containers-preferences-button =
     .label = Asetukset
 containers-remove-button =
@@ -903,7 +921,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Oma
     .accesskey = O
 
-
+##
 
 content-blocking-etp-standard-desc = Tasapainotettu suojauksen ja suorituskyvyn välillä. Sivut latautuvat normaalisti.
 content-blocking-etp-strict-desc = Vahvempi suojaus, mutta saattaa aiheuttaa sivustojen tai sisällön toimimattomuutta.
@@ -968,6 +986,10 @@ permissions-location = Sijainti
 permissions-location-settings =
     .label = Asetukset…
     .accesskey = t
+permissions-xr = Virtuaalitodellisuus
+permissions-xr-settings =
+    .label = Asetukset…
+    .accesskey = t
 permissions-camera = Kamera
 permissions-camera-settings =
     .label = Asetukset…
@@ -1016,6 +1038,8 @@ permissions-a11y-privacy-link = Lue lisää
 collection-header = { -brand-short-name }in tietojen keräys ja käyttö
 collection-description = Pyrimme antamaan sinulle vapauden valita ja keräämään vain tietoja, joita tarvitsemme voidaksemme tarjota { -brand-short-name }in kaikille ja parantaa sitä. Kysymme aina lupaa ennen kuin vastaanotamme henkilötietoja.
 collection-privacy-notice = Tietosuojakäytäntö
+collection-health-report-telemetry-disabled = Et enää salli { -vendor-short-name }n vastaanottaa teknisiä ja käyttötilastoja. Kaikki aikaisemmat tiedot poistetaan 30 päivän kuluessa.
+collection-health-report-telemetry-disabled-link = Lue lisää
 collection-health-report =
     .label = Salli, että { -brand-short-name } lähettää teknisiä ja käyttötilastoja { -vendor-short-name }lle
     .accesskey = S

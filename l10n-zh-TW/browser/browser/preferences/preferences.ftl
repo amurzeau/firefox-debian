@@ -191,6 +191,15 @@ advanced-fonts =
 colors-settings =
     .label = 色彩…
     .accesskey = C
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = 縮放
+preferences-default-zoom = 預設縮放比例
+    .accesskey = z
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = 只縮放文字
+    .accesskey = t
 language-header = 語言
 choose-language-description = 請選擇瀏覽支援多國語言的網頁時要優先顯示哪種語言
 choose-button =
@@ -304,7 +313,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = 數位權利管理（DRM）內容
 play-drm-content =
@@ -555,6 +564,9 @@ containers-header = 容器分頁
 containers-add-button =
     .label = 新增容器
     .accesskey = A
+containers-new-tab-check =
+    .label = 選擇要分別使用哪個容器來開啟分頁
+    .accesskey = S
 containers-preferences-button =
     .label = 偏好設定
 containers-remove-button =
@@ -614,7 +626,7 @@ sync-sign-in =
     .label = 登入
     .accesskey = g
 sync-signedin-settings-header = 同步設定
-sync-signedin-settings-desc = 請選擇要同步哪些資料到您其他使用 { -brand-short-name } 的裝置上。
+sync-signedin-settings-desc = 選擇要同步哪些資料到您其他使用 { -brand-short-name } 的裝置
 
 ## Sync section - enabling or disabling sync.
 
@@ -673,7 +685,7 @@ sync-engine-logins =
     .accesskey = L
 sync-engine-logins-passwords =
     .label = 登入資訊與密碼
-    .tooltiptext = 您儲存下來的使用者名稱與密碼
+    .tooltiptext = 您儲存的使用者名稱與密碼
     .accesskey = L
 sync-engine-addresses =
     .label = 地址
@@ -893,7 +905,7 @@ enhanced-tracking-protection-setting-custom =
     .label = 自訂
     .accesskey = C
 
-
+##
 
 content-blocking-etp-standard-desc = 兼顧保護與效能。網站可正常運作。
 content-blocking-etp-strict-desc = 保護更強大，但可能會導致某些網站或內容故障。

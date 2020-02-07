@@ -56,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Digeriñ penel ar c'hemennadennoù
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Digeriñ penel ar goulenn lec'hiadur
+urlbar-xr-notification-anchor =
+    .tooltiptext = Digeriñ penel aotreoù ar gwirvoud galloudel
 urlbar-storage-access-anchor =
     .tooltiptext = Digeriñ penel aotreoù an oberiantiz merdeiñ
 urlbar-translate-notification-anchor =
@@ -80,8 +82,22 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Digeriñ penel kemennadenn staliadur an askouezh
 urlbar-tip-help-icon =
     .title = Kaout skoazell
+urlbar-search-tips-confirm = Mat eo, komprenet am eus
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Skrivit nebeutoc'h, kavit muioc'h: Klaskit war { $engineName } adalek ho parrenn chomlec'h.
+urlbar-search-tips-redirect = Krogit gant ar c'hlask amañ evit gwelout alioù eus { $engineName } hag ho roll istor merdeiñ.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Stanket ho peus an titouroù lec'hiadur evit al lec'hienn-mañ.
+urlbar-xr-blocked =
+    .tooltiptext = Stanket ho peus an haeziñ gwirvoud galloudel evit al lec'hienn-mañ.
 urlbar-web-notifications-blocked =
     .tooltiptext = Stanket ho peus ar rebuzadurioù evit al lec'hienn-mañ.
 urlbar-camera-blocked =
@@ -154,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 30em
+
+## Identity Panel
+
+identity-connection-not-secure = N'eo ket diarvar ar c'hennask
+identity-connection-secure = Kennask suraet
+identity-connection-internal = Ur bajenn { -brand-short-name } diarvar eo.
+identity-connection-file = War hoc'h urzhiataer eo kadavet ar bajenn-mañ.
+identity-extension-page = Diwar un askouezh eo karget ar bajenn-mañ.
+identity-active-blocked = Stanket eo bet gant { -brand-short-name } lodennoù arvarus er bajennad.
+identity-custom-root = Gwiriet eo bet ar c'hennask hag ur pourchaser testenioù n'eo ket adanavezet gant Mozilla.
+identity-passive-loaded = Arvarus eo lodennoù eus ar bajennad (skeudennoù, da skouer).
+identity-active-loaded = Diweredekaet ho peus ar gwarez war ar bajenn-mañ.
+identity-weak-encryption = Enrinegañ gwan a vez arveret gant ar bajenn-mañ.
+identity-insecure-login-forms = Treuzvarc'het e c'hall bezañ an titouroù kennaskañ enanket er bajenn-mañ.
+identity-permissions =
+    .value = Aotreoù
+identity-permissions-reload-hint = Ret eo deoc'h adkargañ ar bajenn evit arloañ ar c'hemmoù.
+identity-permissions-empty = N'ho peus roet aotre arbennik ebet d'al lec'hienn-mañ.
+identity-clear-site-data =
+    .label = Skarzhañ an toupinoù ha roadennoù lec'hienn…
+identity-connection-not-secure-security-view = N'oc'h ket kennasket d'al lec'hienn-mañ en un doare sur.
+identity-connection-verified = Kennasket oc'h d'al lec'hienn-mañ en un doare sur.
+identity-ev-owner-label = Testeni roet da:
+identity-description-custom-root = Ne adanavez ket Mozilla pourchaser an testeni-mañ. Marteze eo bet ouzhpennet gant ho reizhiad korvoiñ pe gant un ardoer. <label data-l10n-name="link">Gouzout hiroc'h</label>
+identity-remove-cert-exception =
+    .label = Lemel an nemedenn kuit
+    .accesskey = L
+identity-description-insecure = N'eo ket prevez ho kennask war al lec'hienn-mañ. Gallout a ra an titouroù kinniget ganeoc'h bezañ gwelet gant tud all (gerioù-tremen, kemennadennoù, kartennoù gred en o zouez).
+identity-description-insecure-login-forms = N'eo ket diogel an titouroù kennaskañ enanket ganeoc'h er bajennad-mañ ha gallout a reont bezañ en arvar.
+identity-description-weak-cipher-intro = Enrinegañ gwan a vez arveret gant ho kennask d'al lec'hienn-mañ ha n'eo ket prevez.
+identity-description-weak-cipher-risk = Gallout a ra tud all sellet ouzh ho titouroù pe kemmañ emzalc'h al lec'hienn.
+identity-description-active-blocked = Stanket eo bet gant { -brand-short-name } lodennoù arvarus er bajennad. <label data-l10n-name="link">Gouzout hiroc'h</label>
+identity-description-passive-loaded = N'eo ket prevez ho kennask ha galloud a ra an titouroù rannet gant al lec'hienn bezañ gwelet gant tud all.
+identity-description-passive-loaded-insecure = Endalc'hadoù el lec'hienn-mañ a zo arvarus (skeudennoù, da skouer). <label data-l10n-name="link">Gouzout hiroc'h</label>
+identity-description-passive-loaded-mixed = Daoust m'eo bet stanked endalc'hadoù gant { -brand-short-name } e chom endalc'hadoù arvarus er bajennad (skeudennoù, da skouer). <label data-l10n-name="link">Gouzout hiroc'h</label>
+identity-description-active-loaded = Endalc'hadoù arvarus a zo el lec'hienn (skriptoù, da skouer) ha n'eo ket prevez ho kennask.
+identity-description-active-loaded-insecure = Gallout a ra an titouroù rannet gant al lec'hienn bezañ gwelet gant tud all (evel gerioù-tremen, kemennadennoù, kartennoù gred, hag all.).
+identity-learn-more =
+    .value = Gouzout hiroc'h
+identity-disable-mixed-content-blocking =
+    .label = Diweredekaat ar gwarez evit poent
+    .accesskey = D
+identity-enable-mixed-content-blocking =
+    .label = Gweredekaat ar gwarez
+    .accesskey = G
+identity-more-info-link-text =
+    .label = Muioc'h a stlennoù

@@ -11,7 +11,8 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Встановити політики, за якими WebExtensions можуть отримувати доступ через chrome.storage.managed.
-policy-AppUpdateURL = Встановити власну URL-адресу для оновлення програми.
+policy-AppUpdateURL = Встановити власний URL для оновлення програми.
+policy-Authentication = Налаштувати інтегровану авторизацію для підтримуваних вебсайтів.
 policy-BlockAboutAddons = Блокувати доступ до Менеджера додатків (about:addons).
 policy-BlockAboutConfig = Блокувати доступ до сторінки about:config.
 policy-BlockAboutProfiles = Блокувати доступ до сторінки about:profiles.
@@ -30,7 +31,9 @@ policy-DisableSafeMode = Вимкнути функцію перезапуску 
 policy-DisableSecurityBypass = Заборонити користувачеві ігнорувати певні попередження безпеки.
 policy-DisableSystemAddonUpdate = Заборонити { -brand-short-name } встановлення та оновлення системних додатків.
 policy-DisableTelemetry = Вимкнути телеметрію.
+policy-DisplayMenuBar = Типово показувати рядок меню.
 policy-DNSOverHTTPS = Налаштувати DNS через HTTPS.
+policy-DontCheckDefaultClient = Вимкнути перевірку типового клієнта під час запуску.
 policy-DownloadDirectory = Встановити та заборонити зміну каталогу завантаження.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Увімкнути чи вимкнути Блокування вмісту та, за бажанням, заблокувати зміну стану.
@@ -44,3 +47,19 @@ policy-HardwareAcceleration = Якщо значення false, апаратне 
 policy-InstallAddonsPermission = Дозволити певним вебсайтам встановлювати додатки.
 policy-LocalFileLinks = Дозволити певним вебсайтам посилатися на локальні файли.
 policy-NetworkPrediction = Ввімкнути чи вимкнути прогнозування мережі (попереднє отримання DNS).
+policy-OfferToSaveLogins = Застосувати налаштування, яке дозволить { -brand-short-name } пропонувати запам'ятати збережені логіни та паролі. Працюють обидва значення true і false.
+policy-OverrideFirstRunPage = Перевизначити сторінку першого запуску. Установіть цю політику порожньою, якщо ви хочете вимкнути сторінку першого запуску.
+policy-OverridePostUpdatePage = Перевизначити сторінку "Що нового", яка відкривається після оновлення. Для вимкнення цієї сторінки залиште значення для цього правила порожнім.
+policy-Preferences = Встановити і зафіксувати значення для набору налаштувань.
+policy-PromptForDownloadLocation = Запитувати, де зберігати файли при завантаженні.
+policy-Proxy = Налаштувати параметри проксі.
+policy-RequestedLocales = Встановити перелік запитуваних мов для програми у вказаному порядку.
+policy-SanitizeOnShutdown2 = Очищати дані навігації при виході з програми.
+policy-SearchEngines = Налаштувати засіб пошуку. Ця політика доступна лише у версії Extended Support Release (ESR).
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = Встановити модулі PKCS #11.
+policy-SSLVersionMax = Встановити максимальну версію SSL.
+policy-SSLVersionMin = Встановити мінімальну версію SSL.
+policy-SupportMenu = Додати власний елемент меню підтримки в меню довідки.
+# “format” refers to the format used for the value of this policy.
+policy-WebsiteFilter = Блокувати відвідування вебсайтів. Для отримання подробиць щодо формату, ознайомтеся з документацією.

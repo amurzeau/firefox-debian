@@ -209,6 +209,15 @@ advanced-fonts =
 colors-settings =
     .label = Barve …
     .accesskey = B
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Povečava
+preferences-default-zoom = Privzeta povečava
+    .accesskey = z
+preferences-default-zoom-value =
+    .label = { $percentage } %
+preferences-zoom-text-only =
+    .label = Povečaj le besedilo
+    .accesskey = b
 language-header = Jezik
 choose-language-description = Izberite prednosten jezik za prikazovanje strani
 choose-button =
@@ -322,7 +331,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Vsebina upravljanja digitalnih pravic (DRM)
 play-drm-content =
@@ -579,6 +588,9 @@ containers-header = Vsebniški zavihki
 containers-add-button =
     .label = Dodaj nov vsebnik
     .accesskey = D
+containers-new-tab-check =
+    .label = Izberi vsebnik za vsak nov zavihek
+    .accesskey = I
 containers-preferences-button =
     .label = Nastavitve
 containers-remove-button =
@@ -917,7 +929,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Po meri
     .accesskey = m
 
-
+##
 
 content-blocking-etp-standard-desc = Uravnotežena zaščita in delovanje. Strani bodo delovale običajno.
 content-blocking-etp-strict-desc = Močnejša zaščita, ki pa lahko povzroči nedelovanje nekaterih strani ali vsebine.

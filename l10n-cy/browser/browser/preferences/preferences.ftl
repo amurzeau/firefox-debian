@@ -215,6 +215,15 @@ advanced-fonts =
 colors-settings =
     .label = Lliwiau…
     .accesskey = i
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Chwyddo
+preferences-default-zoom = Chwyddo rhagosodedig
+    .accesskey = C
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Chwyddo testun yn unig
+    .accesskey = t
 language-header = Iaith
 choose-language-description = Dewis eich dewis iaith i ddangos tudalennau
 choose-button =
@@ -328,7 +337,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Cynnwys Rheoli Hawliau Digidol (DRM)
 play-drm-content =
@@ -417,7 +426,7 @@ browsing-search-on-start-typing =
     .label = Chwilio am destun wrth i mi gychwyn teipio
     .accesskey = d
 browsing-picture-in-picture-toggle-enabled =
-    .label = Galluogi rheolyddion fideo llun-mewn-llun
+    .label = Galluogi rheolyddion fideo Llun mewn Llun
     .accesskey = G
 browsing-picture-in-picture-learn-more = Dysgu rhagor
 browsing-cfr-recommendations =
@@ -587,6 +596,9 @@ containers-header = Tabiau Cynwysyddion
 containers-add-button =
     .label = Ychwanegu Cynhwysydd Newydd
     .accesskey = Y
+containers-new-tab-check =
+    .label = Dewiswch gynhwysydd ar gyfer pob tab newydd
+    .accesskey = g
 containers-preferences-button =
     .label = Dewisiadau
 containers-remove-button =
@@ -925,7 +937,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Cyfaddas
     .accesskey = C
 
-
+##
 
 content-blocking-etp-standard-desc = Cydbwysedd rhwng diogelwch a pherfformiad. Bydd tudalennau'n llwytho fel arfer.
 content-blocking-etp-strict-desc = Diogelwch cryfach, ond gall achosi i rai gwefannau neu gynnwys dorri.

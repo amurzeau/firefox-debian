@@ -82,6 +82,18 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Ldi agalis n yizen i usebded n uzegrir
 urlbar-tip-help-icon =
     .title = Awi tallelt
+urlbar-search-tips-confirm = Ih, awi-t-id
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Aru cwiṭ, af-d ugar : nadi s { $engineName } srid seg ufeggag n tensa.
+urlbar-search-tips-redirect = Bdu anadi-ik dagi akken ad tsekneḍ isumar seg { $engineName } daɣen seg umuzruy-ik n tunigin.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Tesweḥleḍ talɣut ɣef wadeg i usmelweb-a.
 urlbar-xr-blocked =
@@ -158,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Tuqqna taraɣelsant
+identity-connection-secure = Taɣellist n tuqqna
+identity-connection-internal = Wa d asebter { -brand-short-name } aɣelsan.
+identity-connection-file = Asebter-a yettwakles deg uselkim-inek.
+identity-extension-page = Asebter-a yuli-d seg usiɣzef.
+identity-active-blocked = { -brand-short-name } issewḥel kra n tazunin ur nelli ara d iɣelsanen deg usebter-a.
+identity-custom-root = Tuqqna tettwasntem sɣur amazan n uselkin ur tessin ara Mozilla.
+identity-passive-loaded = Kra n yiḥricen deg usebter-a mačči d iɣelsanen (am tugniwin).
+identity-active-loaded = Tessenseḍ ammesten deg usebter-a.
+identity-weak-encryption = Asebter-a isseqdac awgelhen fessusen.
+identity-insecure-login-forms = Isem n useqdac d wawal uffir i tesqedceḍ deg usmel-a zemren ad ttwakren.
+identity-permissions =
+    .value = Tisirag
+identity-permissions-reload-hint = Ahat tesriḍ ad d-tessaliḍ tikelt-nniḍen asebter akken ad yemmed wayen i tbeddleḍ.
+identity-permissions-empty = Ur tefkiḍ ara kra n tsiregt i usmel-a.
+identity-clear-site-data =
+    .label = Sfeḍ inagan n tuqqna akked isefka n usme…
+identity-connection-not-secure-security-view = Aqli-k ur teqqineḍ ara s wudem aɣelsan ɣeṛ usmel-a.
+identity-connection-verified = Aqli-k teqqneḍ s wudem aɣelsan ɣeṛ usmel-a.
+identity-ev-owner-label = Aselkin yeffeɣ-d i:
+identity-description-custom-root = Mozilla ur teɛqil ara amazan-a n uselkin. Ahat yezmer yettwarn seg unagraw-ik n wammud neɣ anedbal. <label data-l10n-name="link">Issin ugar</label>
+identity-remove-cert-exception =
+    .label = Kkes tasureft
+    .accesskey = K
+identity-description-insecure = Tuqqna-inek ɣer usmel-a mačči d tusligt. Zemren wiyaḍ ad walin talɣut ara tazneḍ (am wawalen uffiren, iznan, atg.).
+identity-description-insecure-login-forms = Talɣut n yisem n useqdac i d-tefkiḍ deg usebter-a mačči d taɣelsant u yezmer ad tettwaker.
+identity-description-weak-cipher-intro = Tuqqna-inek ɣeṛ usmel-a tesseqdac awgelhen fessusen u mačči d tusligt.
+identity-description-weak-cipher-risk = Zemren imdanen-nniḍen ad walin talɣut-ik neɣ ad beddlen tikli n usmel web.
+identity-description-active-blocked = { -brand-short-name } issewḥel kra n yiḥricen n usebter-a ur nelli ara d iɣelsanen. <label data-l10n-name="link">Issin ugar</label>
+identity-description-passive-loaded = Zemren wiyaḍ ad walin talɣut ara tebḍuḍ d usmel-a acku tuqqna-k mačči d tusligt.
+identity-description-passive-loaded-insecure = Asmel-a isεa agbur araɣelsan (am tugniwin). <label data-l10n-name="link">Issin ugar</label>
+identity-description-passive-loaded-mixed = Ɣas akken { -brand-short-name } issewḥel kra n ugbur, mazal yella kra n ugbur ur nelli d aɣelsan deg usebter (am tugniwin). <label data-l10n-name="link">Issin ugar</label>
+identity-description-active-loaded = Asmel-a isεa agbur araɣelsan (am iskripten) u tuqqna-inek ɣur-s mačči d tusligt.
+identity-description-active-loaded-insecure = Zemren wiyaḍ ad walin talɣut ara tebḍuḍ d usmel-a (am wawalen uffiren, iznan, atg.).
+identity-learn-more =
+    .value = Issin ugar
+identity-disable-mixed-content-blocking =
+    .label = Kkes ammesten i tura
+    .accesskey = K
+identity-enable-mixed-content-blocking =
+    .label = Sermed ammesten
+    .accesskey = R
+identity-more-info-link-text =
+    .label = Ugar n telɣut

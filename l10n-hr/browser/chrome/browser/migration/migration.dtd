@@ -13,6 +13,8 @@
 <!ENTITY importFromIE.accesskey         "M">
 <!ENTITY importFromEdge.label           "Microsoft Edge">
 <!ENTITY importFromEdge.accesskey       "E">
+<!ENTITY importFromEdgeBeta.label       "Microsoft Edge beta">
+<!ENTITY importFromEdgeBeta.accesskey   "d">
 <!ENTITY importFromNothing.label        "Ne uvozi ništa">
 <!ENTITY importFromNothing.accesskey    "N">
 <!ENTITY importFromSafari.label         "Safari">
@@ -38,8 +40,8 @@
 <!ENTITY importItems.title              "Stavke za uvoz">
 <!ENTITY importItems.label              "Odaberite stavke za uvoz:">
 
-<!ENTITY migrating.title                "Uvozim...">
-<!ENTITY migrating.label                "Sljedeće stavke se trenutno uvoze...">
+<!ENTITY migrating.title                "Uvozi se …">
+<!ENTITY migrating.label                "Sljedeće stavke se trenutačno uvoze …">
 
 <!ENTITY selectProfile.title            "Odaberite profil">
 <!ENTITY selectProfile.label            "Uvoz je moguć iz sljedećih profila:">

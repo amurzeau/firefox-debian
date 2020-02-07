@@ -56,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Xabar panelini ochish
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Joylashuvni so‘rash panelini ochish
+urlbar-xr-notification-anchor =
+    .tooltiptext = Virtual reallikka ruxsat berish panelini ochish
 urlbar-storage-access-anchor =
     .tooltiptext = Internetda ishlashdan oldin ruxsatnomalar panelini ochish
 urlbar-translate-notification-anchor =
@@ -80,8 +82,22 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Qo‘shimcha dastur o‘rnatish xabari panelini ochish
 urlbar-tip-help-icon =
     .title = Yordam olish
+urlbar-search-tips-confirm = Tushundim
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Kamroq yozib, koʻproq toping: manzillar panelidan { $engineName } orqali qidiring.
+urlbar-search-tips-redirect = { $engineName } tavsiyalari va brauzer tarixini koʻrish uchun qidiruvni shu yerdan boshlang.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Bu sayt uchun joylashuv ma’lumotini bloklab qo‘ygansiz.
+urlbar-xr-blocked =
+    .tooltiptext = Bu sayt uchun virtual reallikdan foydalanishni bloklagansiz.
 urlbar-web-notifications-blocked =
     .tooltiptext = Bu saytdan bildirishnomalarni olishni bloklab qo‘ygansiz.
 urlbar-camera-blocked =
@@ -154,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Ishonchsiz ulanish
+identity-connection-secure = Xavfsiz ulanish
+identity-connection-internal = Bu ishonchli { -brand-short-name } sahifasi.
+identity-connection-file = Bu sahifa kompyuteringizda saqlangan.
+identity-extension-page = Bu sahifa kengaytmadan yuklandi.
+identity-active-blocked = { -brand-short-name } ushbu sahifaning xavfli bo‘lgan qismlarini blokladi.
+identity-custom-root = Aloqa Mozilla tomonidan tasdiqlanmagan sertifikat beruvchi tomonidan tasdiqlangan.
+identity-passive-loaded = Ushbu sahifa qismlari xavfsiz emas (masalan, rasmlar).
+identity-active-loaded = Siz bu sahifadagi himoyani o‘chirib qo‘ygansiz.
+identity-weak-encryption = Ushbu sahifa kuchsiz kodlash usulidan foydalanadi.
+identity-insecure-login-forms = Bu sahifaga kiritilgan ma’lumotlar o‘g‘irlanishi mumkin.
+identity-permissions =
+    .value = Ruxsatlar
+identity-permissions-reload-hint = O‘zgarishlar amalga oshishi uchun sahifani yangilashingiz kerak.
+identity-permissions-empty = Bu saytga hech qanday maxsus ruxsat bermagansiz.
+identity-clear-site-data =
+    .label = Kuki va sayt ma’lumotlarini tozalash
+identity-connection-not-secure-security-view = Bu saytga ishonchsiz aloqa bilan ulangansiz.
+identity-connection-verified = Bu saytga ishonchli aloqa bilan ulangansiz.
+identity-ev-owner-label = Sertifikat beruvchi:
+identity-description-custom-root = Mozilla bu sertifikat beruvchini tanimaydi. Uni operatsion tizim yoki administratoringiz qoʻshgan boʻlishi mumkin. <label data-l10n-name="link">Batafsil ma’lumot</label>
+identity-remove-cert-exception =
+    .label = Istisnoni olib tashlash
+    .accesskey = o
+identity-description-insecure = Ushbu saytga ulanish maxfiy emas. Siz jo‘natgan ma’lumotlarni (masalan, parol, xabar, kredit karta va hokazoni) boshqalar ko‘rishi mumkin.
+identity-description-insecure-login-forms = Bu sahifada kiritiladigan login ma’lumotlari himoyalanmaydi, ular xavf ostida bo‘lishi mumkin.
+identity-description-weak-cipher-intro = Ushbu vebsahifaga ulanish kuchsiz kodlash usulidan foydalanadi, shuning uchun u maxfiy emas.
+identity-description-weak-cipher-risk = Boshqa odamlar ma’lumotlaringizni ko‘rishi yoki sayt xususiyatlarini o‘zgartirishi mumkin.
+identity-description-active-blocked = { -brand-short-name } ushbu sahifaning xavfli bo‘lgan qismlarini blokladi. <label data-l10n-name="link">Batafsil ma’lumot</label>
+identity-description-passive-loaded = Bu ulanish maxfiy emas, shu sababli siz sayt bilan bo‘lishgan ma’lumotlarni boshqalar ko‘rishi mumkin.
+identity-description-passive-loaded-insecure = Ushbu saytda xavfsiz bo‘lmagan kontent mavjud (masalan, rasmlar). <label data-l10n-name="link">Batafsil ma’lumot</label>
+identity-description-passive-loaded-mixed = { -brand-short-name } ba’zi tarkibni blokladi, ammo sahifada hali ham xavfli tarkiblar (masalan, rasmlar) bor. <label data-l10n-name="link">Batafsil ma’lumot</label>
+identity-description-active-loaded = Ushbu saytda xavfli tarkib mavjud (masalan, skriptlar), shuning uchun ulanish maxfiy emas.
+identity-description-active-loaded-insecure = Bu sayt bilan bo‘lishgan ma’lumotlaringizni (masalan, parol, xabar, kredit kartalarini) boshqalar ko‘rishi mumkin.
+identity-learn-more =
+    .value = Batafsil ma’lumot
+identity-disable-mixed-content-blocking =
+    .label = Himoyani hozir o‘chirish
+    .accesskey = h
+identity-enable-mixed-content-blocking =
+    .label = Himoyani yoqish
+    .accesskey = H
+identity-more-info-link-text =
+    .label = Ko‘proq ma’lumot

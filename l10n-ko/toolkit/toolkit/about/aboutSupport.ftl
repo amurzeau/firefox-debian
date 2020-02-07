@@ -4,7 +4,7 @@
 
 page-title = 문제 해결 정보
 page-subtitle =
-    현재 페이지는 여러분이 { -brand-short-name } 사용 상 문제점을 해결 할 수 있는
+    이 페이지는 여러분이 { -brand-short-name } 사용 상 문제점을 해결 할 수 있는
     다양한 기술적 정보를 담고 있습니다. 여러분이 문제의 해결을 얻기 위해서는
     이 정보를 토대로 <a data-l10n-name="support-link">고객 지원 사이트</a>에 문의하시기 바랍니다.
 crashes-title = 충돌 보고서
@@ -39,7 +39,7 @@ app-basics-update-channel = 업데이트 채널
 # as in "Folder for updates". "Update" is a noun, not a verb.
 app-basics-update-dir =
     { PLATFORM() ->
-        [linux] 업데이트 디렉토리
+        [linux] 업데이트 디렉터리
        *[other] 업데이트 폴더
     }
 app-basics-update-history = 업데이트 기록
@@ -69,9 +69,9 @@ app-basics-key-mozilla = Mozilla 위치 서비스 키
 app-basics-safe-mode = 안전 모드
 show-dir-label =
     { PLATFORM() ->
-        [macos] Finder에 표시
+        [macos] Finder에서 보기
         [windows] 폴더 열기
-       *[other] 디렉토리 열기
+       *[other] 디렉터리 열기
     }
 modified-key-prefs-title = 중요한 변경된 환경 설정
 modified-prefs-name = 이름
@@ -103,8 +103,8 @@ a11y-force-disabled = 접근성 끄기
 a11y-handler-used = 접근 가능한 핸들러 사용됨
 a11y-instantiator = 접근성 기능 사용 앱
 library-version-title = 라이브러리 버전
-copy-text-to-clipboard-label = 클립보드에 텍스트 복사하기
-copy-raw-data-to-clipboard-label = 클립보드에 원본 데이터 복사하기
+copy-text-to-clipboard-label = 클립보드에 텍스트 복사
+copy-raw-data-to-clipboard-label = 클립보드에 원본 데이터 복사
 sandbox-title = 샌드박스
 sandbox-sys-call-log-title = 거절된 시스템 콜
 sandbox-sys-call-index = #
@@ -115,7 +115,7 @@ sandbox-sys-call-proc-type = 프로세스 타입
 sandbox-sys-call-number = 시스템 콜
 sandbox-sys-call-args = 인자
 safe-mode-title = 안전 모드 시도
-restart-in-safe-mode-label = 부가기능을 비활성화하고 다시 시작…
+restart-in-safe-mode-label = 부가기능을 끄고 다시 시작…
 
 ## Media titles
 
@@ -139,7 +139,7 @@ media-capabilities-title = 미디어 기능
 # List all the entries of the database.
 media-capabilities-enumerate = 데이터베이스 열거
 
-
+##
 
 intl-title = 국제화 & 현지화
 intl-app-title = 응용 프로그램 설정
@@ -164,7 +164,7 @@ remote-debugging-title = 원격 디버깅 (Chromium 프로토콜)
 remote-debugging-accepting-connections = 연결 수락
 remote-debugging-url = URL
 
-
+##
 
 # Variables
 # $days (Integer) - Number of days of crashes to log
@@ -192,7 +192,7 @@ blocked-os-version = 운영 체제 버전에서 지원하지 않기 때문에 �
 blocked-mismatched-version = 레지스트리와 DLL간의 그래픽 드라이버 버전이 일치하지 않아서 차단하였습니다.
 # Variables
 # $driverVersion - The graphics driver version string
-try-newer-driver = 그래픽 드라이버는 그리기 지원이 차단되었습니다.  그래픽 드라이버를 버전 { $driverVersion } 이상으로 업데이트해 보십시오.
+try-newer-driver = 그래픽 드라이버는 그리기 지원이 차단되었습니다.  그래픽 드라이버를 버전 { $driverVersion } 이상으로 업데이트해 보세요.
 # "ClearType" is a proper noun and should not be translated. Feel free to leave English strings if
 # there are no good translations, these are only used in about:support
 clear-type-parameters = ClearType 매개 변수
@@ -244,6 +244,7 @@ d3d11video-crash-guard = D3D11 동영상 디코더
 d3d9video-crash-buard = D3D9 동영상 디코더
 d3d9video-crash-guard = D3D9 동영상 디코더
 glcontext-crash-guard = OpenGL
+wmfvpxvideo-crash-guard = WMF VPX 비디오 디코더
 reset-on-next-restart = 다음에 다시 시작할 때 초기화
 gpu-process-kill-button = GPU 프로세스 종료
 gpu-device-reset = 기기 초기화

@@ -82,6 +82,18 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Адкрыць панэль паведамленняў аб усталяванні дадатка
 urlbar-tip-help-icon =
     .title = Дапамога
+urlbar-search-tips-confirm = Добра, зразумела
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Уводзьце менш, знаходзьце больш: Пошук { $engineName } наўпрост у адрасным радку.
+urlbar-search-tips-redirect = Пачніце свой пошук тут, каб пабачыць прапановы ад { $engineName } і з вашай гісторыі аглядання.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Вы заблакавалі звесткі аб месцазнаходжанні для гэтага вэб-сайта.
 urlbar-xr-blocked =
@@ -158,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 25em
+
+## Identity Panel
+
+identity-connection-not-secure = Злучэнне не бяспечнае
+identity-connection-secure = Бяспечнае злучэнне
+identity-connection-internal = Гэта бяспечная { -brand-short-name } старонка.
+identity-connection-file = Гэта старонка захоўваецца на вашым камп'ютары.
+identity-extension-page = Гэтая старонка загружана з пашырэння.
+identity-active-blocked = { -brand-short-name } заблакаваў небяспечныя часткі старонкі.
+identity-custom-root = Падключэнне пацверджана сертыфікатам эмітэнта, які не прызнаны Mozilla.
+identity-passive-loaded = Некаторыя часткі гэтай старонкі небяспечныя (напрыклад, выявы).
+identity-active-loaded = Вы адключылі ахову на гэтай старонцы.
+identity-weak-encryption = Гэта старонка ўжывае слабы тып шыфравання.
+identity-insecure-login-forms = Лагіны, уведзеныя на гэтай старонцы, могуць быць скампраметаваны.
+identity-permissions =
+    .value = Дазволы
+identity-permissions-reload-hint = Магчыма, вам спатрэбіцца перазагрузіць старонку, каб змены пачалі дзейнічаць.
+identity-permissions-empty = Вы не давалі гэтаму сайту ніякіх адмысловых дазволаў.
+identity-clear-site-data =
+    .label = Выдаліць кукі і дадзеныя сайтаў…
+identity-connection-not-secure-security-view = Вы не злучаны бяспечна з гэтым сайтам.
+identity-connection-verified = Вы бяспечна злучаны з гэтым сайтам.
+identity-ev-owner-label = Сертыфікат выдадзены:
+identity-description-custom-root = Mozilla не прызнае гэтага выдаўца сертыфікатаў. Магчыма, ён дададзены з вашай аперацыйнай сістэмы ці адміністратарам. <label data-l10n-name="link">Даведацца больш</label>
+identity-remove-cert-exception =
+    .label = Выдаліць выключэнне
+    .accesskey = В
+identity-description-insecure = Ваша злучэнне з гэтым сайтам не з'яўляецца прыватным. Інфармацыя, якую вы ўводзіце, можа быць бачная для іншых (напрыклад, паролі, паведамленні, нумары крэдытных карт і г.д.).
+identity-description-insecure-login-forms = Ідэнтыфікацыйная інфармацыя, уведзеная на гэтай старонцы, можа быць скампраметавана.
+identity-description-weak-cipher-intro = Вашае злучэнне з гэтым сайтам ўжывае слабы тып шыфравання і не з'яўляецца прыватным.
+identity-description-weak-cipher-risk = Іншыя людзі могуць праглядаць вашу асабістую інфармацыю або змяніць паводзіны вэб-сайта.
+identity-description-active-blocked = { -brand-short-name } заблакаваў небяспечныя часткі старонкі. <label data-l10n-name="link">Даведацца больш</label>
+identity-description-passive-loaded = Ваша злучэнне не з'яўляецца прыватным і інфармацыя, якую вы ўводзіце, можа быць бачная для іншых.
+identity-description-passive-loaded-insecure = Гэты сайт мае небяспечны змест (напрыклад, выявы). <label data-l10n-name="link">Даведацца больш</label>
+identity-description-passive-loaded-mixed = { -brand-short-name } заблакаваў некаторае змесціва, але яно яшчэ застаецца на гэтай старонцы (напрыклад, выявы). <label data-l10n-name="link">Даведацца больш</label>
+identity-description-active-loaded = Гэты вэб-сайт змяшчае неабароненае змесціва (такое, як сцэнары) і ваша злучэнне з ім не з'яўляецца прыватным.
+identity-description-active-loaded-insecure = Інфармацыя, якую вы ўводзіце на гэтым сайце, можа быць бачная для іншых (напрыклад, паролі, паведамленні, нумары крэдытных карт і г.д.).
+identity-learn-more =
+    .value = Даведацца больш
+identity-disable-mixed-content-blocking =
+    .label = Часова адключыць ахову
+    .accesskey = А
+identity-enable-mixed-content-blocking =
+    .label = Уключыць ахову
+    .accesskey = У
+identity-more-info-link-text =
+    .label = Падрабязней

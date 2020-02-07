@@ -141,7 +141,7 @@ browser-containers-enabled =
     .accesskey = n
 browser-containers-learn-more = مزید سیکھیں
 browser-containers-settings =
-    .label = ترتیبات…
+    .label = سیٹنگز…
     .accesskey = i
 containers-disable-alert-title = تمام  حامل ٹیبس بند کریں
 containers-disable-alert-ok-button =
@@ -175,6 +175,15 @@ advanced-fonts =
 colors-settings =
     .label = رنگ…
     .accesskey = C
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = زوم
+preferences-default-zoom = طے شدہ زوم
+    .accesskey = z
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = ْصرف متن زوم کریں
+    .accesskey = t
 language-header = زبان
 choose-language-description = صفحہ دکھانے کے لیے اپنی زبان چنیں
 choose-button =
@@ -286,9 +295,12 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = عددی حقوق بندرستگی(DRM) مواد
+play-drm-content =
+    .label = DRM کے زیرانتظام مواد چلائیں
+    .accesskey = P
 play-drm-content-learn-more = مزید سیکھیں
 update-application-title = { -brand-short-name } تازہ کاریاں:
 update-application-version = ورژن{ $version } <a data-l10n-name="learn-more">نیا کیا ہے</a>
@@ -296,6 +308,9 @@ update-history =
     .label = تازہ ترین تاریخ دکھائیں
     .accesskey = p
 update-application-allow-description = { -brand-short-name } کو اجازت دیں
+update-application-auto =
+    .label = خودکار  طور  پر  تازہکاری  انسٹال کریں (تجویز شدہ)
+    .accesskey = A
 update-application-manual =
     .label = کبھی بھی تازہ کاری کی پڑتال نہیں کریں
     .accesskey = N
@@ -306,7 +321,9 @@ update-enable-search-update =
     .label = تلاش کے انجن کو خود بخود اپڈیٹ  کریں
     .accesskey = e
 update-pref-write-failure-title = لکھیں مے ناکام
+update-setting-write-failure-title = تازہ کاری کی ترجیحات کو محفوظ کرنے میں مسلہ ہے
 update-in-progress-title = اپ ڈیٹ جاری ہے
+update-in-progress-message = کیا آپ { -brand-short-name } کی تازہ کاری جاریرکھناچاھتے ہیں؟
 update-in-progress-ok-button = &رد کريں
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
@@ -318,6 +335,7 @@ performance-title = کارکردگی
 performance-use-recommended-settings-checkbox =
     .label = تجویز کردہ کارکردگی کی ترتیبات استعمال کریں
     .accesskey = U
+performance-use-recommended-settings-desc = یہ ترتیبات آپ کے کمپیوٹر کے ہارڈ ویئر اور آپریٹنگ سسٹم کے مطابق ہیں۔
 performance-settings-learn-more = مزید سیکھیں
 performance-allow-hw-accel =
     .label = جب دستیاب ہو تو ہارڈ ویئر سرعت کاری استعمال کریں
@@ -347,7 +365,16 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = میرے ٹائپ کرنے پر متن کے لیے تلاش شروع کریں
     .accesskey = x
+browsing-picture-in-picture-toggle-enabled =
+    .label = تصویر میں تصویر ویڈیو کنٹرول کو قابل بنائیں
+    .accesskey = E
 browsing-picture-in-picture-learn-more = مزید سیکھیں
+browsing-cfr-recommendations =
+    .label = براؤز کرتے وقت ایکسٹینشن کی تجویز کریں
+    .accesskey = R
+browsing-cfr-features =
+    .label = براؤز کرتے وقت خصوصیات کی تجویز کریں
+    .accesskey = f
 browsing-cfr-recommendations-learn-more = مزید سیکھیں
 
 ## General Section - Proxy
@@ -355,7 +382,7 @@ browsing-cfr-recommendations-learn-more = مزید سیکھیں
 network-settings-title = نیٹ ورک ترتیبات
 network-proxy-connection-learn-more = مزید سیکھیں
 network-proxy-connection-settings =
-    .label = ترتیبات…
+    .label = سیٹنگز…
     .accesskey = e
 
 ## Home Section
@@ -397,6 +424,7 @@ choose-bookmark =
 ## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Firefox ابتائی مواد
+home-prefs-content-description = اپنی Firefox کی ابتدائی اسکرین پر آپ کون سا مواد چاہتے پیں اسکا انتخاب کریں۔
 home-prefs-search-header =
     .label = وءب تلاش
 home-prefs-topsites-header =
@@ -411,6 +439,7 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = سرپرست شدہ کہاناں
 home-prefs-highlights-header =
     .label = شہ سرخياں
+home-prefs-highlights-description = ان سائٹس کا ایک انتخاب جو آپ نے محفوظ کیا ہے یا ملاحظہ کیا ہے
 home-prefs-highlights-option-visited-pages =
     .label = دورہ کردہ صفحہات
 home-prefs-highlights-options-bookmarks =
@@ -426,6 +455,12 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = سنپیٹ
 home-prefs-snippets-description = { -vendor-short-name } اور{ -brand-product-name } کی جانب سے تازہ کاریاں
+home-prefs-sections-rows-option =
+    .label =
+        { $num ->
+            [one] { $num } قطار
+           *[other] { $num } قطاریں
+        }
 
 ## Search Section
 
@@ -433,10 +468,20 @@ search-bar-header = تلاش بار
 search-bar-shown =
     .label = سرچ بار کا ٹولبار مے ا ضافہ کریں۔
 search-engine-default-header = طےشدہ تلاش انجن
+search-engine-default-desc = پتے کی بار اور تلاش بار میں استعمال کرنے کیلئے طے شدہ تلاش انجن منتخب کریں۔
+search-separate-default-engine =
+    .label = اس تلاش انجن کو نجی ونڈوز میں استعمال کریں
+    .accesskey = U
 search-suggestions-header = تلاش تجاویز
+search-suggestions-desc = منتخب کریں کہ تلاش انجن سے تجاویز کیسے ظاہر ہوں۔
 search-suggestions-option =
     .label = تلاش تجاویز مہیا کریں
     .accesskey = s
+search-show-suggestions-url-bar-option =
+    .label = ایڈریس بار کے نتائج میں تلاش کی تجاویز دکھائیں
+    .accesskey = I
+search-show-suggestions-private-windows =
+    .label = نجی ونڈوز میں تلاش کی تجاویز دکھائیں
 search-suggestions-cant-show = تلاش کردہ تجاویز محل وقوع کے بار کے نتائج میں دکھاءی نھیں جائنگے کیونکہ { -brand-short-name } تاریخ کبھی یاد نہیں رکھنے پر تشکیل کردہ ہے۔
 search-one-click-header = ایک کلک تلاش انجن
 search-choose-engine-column =
@@ -461,6 +506,12 @@ search-keyword-warning-bookmark = آپ نے ایسا کلیدی لفظ منتخ�
 ## Containers Section
 
 containers-back-link = «  واہس جائیں
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] اختیارات پر واپس
+           *[other] ترجیحات پر واپس
+        }
 containers-header = حامل ٹیبز
 containers-add-button =
     .label = نئے حامل کا اضافہ کریں
@@ -524,9 +575,15 @@ sync-sign-in =
     .label = سائن ان کریں
     .accesskey = g
 sync-signedin-settings-header = ہمہ وقت ساز ترتیبات
+sync-signedin-settings-desc = { -brand-short-name } کا استعمال کرتے ہوئے اپنے آلات پر کیا سنکرونائز کرنا ہے اس کا انتخاب کریں۔
 
 ## Sync section - enabling or disabling sync.
 
+prefs-syncing-on = سنکنگ چالو ہے
+prefs-syncing-off = سنکنگ بند ہے
+prefs-sync-setup =
+    .label = { -sync-brand-short-name } مرتب کریں۔
+    .accesskey = S
 prefs-sync-now =
     .labelnotsyncing = ابھی ہمہ وقت سازی کریں
     .accesskeynotsyncing = ن
@@ -534,6 +591,7 @@ prefs-sync-now =
 
 ## The list of things currently syncing.
 
+sync-currently-syncing-heading = آپ فی الحال ان اشیاء کو سنک کر رہے ہیں:
 sync-currently-syncing-bookmarks = بک مارک
 sync-currently-syncing-history = سابقات
 sync-currently-syncing-tabs = ٹیب کھولیں
@@ -654,7 +712,7 @@ history-clear-on-close-option =
     .label = { -brand-short-name } کے بند ہونے پر سابقات صاف کریں
     .accesskey = r
 history-clear-on-close-settings =
-    .label = ترتیبات…
+    .label = سیٹنگز…
     .accesskey = t
 history-clear-button =
     .label = سابقات صاف کریں
@@ -663,6 +721,7 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = کوکیاں اور سائٹ کے کواِئف
+sitedata-total-size-calculating = سائٹ کے ڈیٹا اور کیشے کے ماپ کا حساب لگا رہے ہیں…
 sitedata-learn-more = مزید سیکھیں
 sitedata-allow-cookies-option =
     .label = کوکیز اور سائٹ کا ڈیٹا قبول کریں
@@ -676,6 +735,12 @@ sitedata-block-desc = بلاک کی ہوئی مواد
     .accesskey = T
 sitedata-option-block-trackers =
     .label = تیسری تنظیم کے ٹریکر
+sitedata-option-block-cross-site-trackers =
+    .label = کراس-سائٹ ٹریکر
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = کراس سائٹ اور سماجی میڈیا ٹریکرز
+sitedata-option-block-all =
+    .label = تمام کوکیز (ویب سائٹس کے ٹوٹنے کا سبب بنے گی)
 sitedata-clear =
     .label = کوائف… خالی کریں
     .accesskey = l
@@ -729,14 +794,18 @@ enhanced-tracking-protection-setting-custom =
     .label = مخصوص
     .accesskey = C
 
+##
 
-
+content-blocking-etp-custom-desc = منتخب کریں کہ کون سے ٹریکرز اور اسکرپٹ کو مسدود کرنا ہے۔
+content-blocking-social-media-trackers = سماجی میڈیا ٹریکرز
 content-blocking-all-cookies = تمام کوکیاں
 content-blocking-all-third-party-cookies = سارے تیسری تنظیم کے کوکیز
 content-blocking-cryptominers = کریپٹومینر
 content-blocking-fingerprinters = فنگر پرنٹرز
 content-blocking-warning-title = دھیان دیں!
 content-blocking-learn-how = جانیں کہ کس طرح
+content-blocking-warning-learn-how = کیسے سیکھیں
+content-blocking-reload-description = آپ کو ان تبدیلیوں کو لاگو کرنے کے لئے اپنے ٹیب کو دوبارہ لوڈ کرنے کی ضرورت ہوگی۔
 content-blocking-reload-tabs-button =
     .label = تمام ٹیب پھر لوڈ کریں
     .accesskey = R
@@ -773,25 +842,32 @@ content-blocking-fingerprinters-label =
 permissions-header = اجازتیں
 permissions-location = محل وقوع
 permissions-location-settings =
-    .label = ترتیبات…
+    .label = سیٹنگز…
+    .accesskey = t
+permissions-xr = مجازی حقیقت
+permissions-xr-settings =
+    .label = سیٹنگز…
     .accesskey = t
 permissions-camera = کیمرہ
 permissions-camera-settings =
-    .label = ترتیبات…
+    .label = سیٹنگز…
     .accesskey = t
 permissions-microphone = مائیکروفون
 permissions-microphone-settings =
-    .label = ترتیبات…
+    .label = سیٹنگز…
     .accesskey = t
 permissions-notification = اعلانات
 permissions-notification-settings =
-    .label = ترتیبات…
+    .label = سیٹنگز…
     .accesskey = t
 permissions-notification-link = مزید سیکھیں
 permissions-block-autoplay-media-exceptions =
     .label = استثنیات…
     .accesskey = E
 permissions-autoplay = آٹو پلے
+permissions-autoplay-settings =
+    .label = سیٹنگز…
+    .accesskey = t
 permissions-block-popups =
     .label = پوپ اپ دریچے بلاک کیجیے
     .accesskey = B
@@ -809,7 +885,9 @@ permissions-a11y-privacy-link = مزید سیکھیں
 ## Privacy Section - Data Collection
 
 collection-privacy-notice = رازداری کا نوٹس
+collection-health-report-telemetry-disabled-link = مزید سیکھیں
 collection-health-report-link = مزید سیکھیں
+collection-studies-link = { -brand-short-name } کی مطالعات دیکھیں
 addon-recommendations-link = مزید سیکھیں
 collection-backlogged-crash-reports-link = مزید سیکھیں
 
@@ -872,3 +950,7 @@ space-alert-under-5gb-ok-button =
 desktop-folder-name = ڈیسک ٹاپ
 downloads-folder-name = ڈاؤن لوڈ
 choose-download-folder-title = ڈاؤن لوڈ پوشہ انتخاب کریں:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = { $service-name } میں فائلیں محفوظ کریںِ

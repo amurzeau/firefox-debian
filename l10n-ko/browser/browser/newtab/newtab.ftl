@@ -7,7 +7,7 @@
 
 newtab-page-title = 새 탭
 newtab-settings-button =
-    .title = 새 탭 페이지 꾸미기
+    .title = 새 탭 페이지 사용자 지정
 
 ## Search box component.
 
@@ -24,14 +24,14 @@ newtab-search-box-search-the-web-input =
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = 검색 엔진 추가
-newtab-topsites-add-topsites-header = 새 인기 사이트
-newtab-topsites-edit-topsites-header = 인기 사이트 편집
+newtab-topsites-add-topsites-header = 새 상위 사이트
+newtab-topsites-edit-topsites-header = 상위 사이트 편집
 newtab-topsites-title-label = 제목
 newtab-topsites-title-input =
     .placeholder = 제목 입력
 newtab-topsites-url-label = URL
 newtab-topsites-url-input =
-    .placeholder = URL 입력 또는 붙여 넣기
+    .placeholder = URL 입력 또는 붙여넣기
 newtab-topsites-url-validation = 유효한 URL이 필요합니다
 newtab-topsites-image-url-label = 사용자 지정 이미지 URL
 newtab-topsites-use-image-link = 사용자 지정 이미지 사용…
@@ -47,9 +47,9 @@ newtab-topsites-add-button = 추가
 
 ## Top Sites - Delete history confirmation dialog.
 
-newtab-confirm-delete-history-p1 = 정말 이 페이지의 모든 인스턴스를 기록에서 지우겠습니까?
+newtab-confirm-delete-history-p1 = 방문 기록에서 이 페이지의 모든 인스턴스를 삭제하시겠습니까?
 # "This action" refers to deleting a page from history.
-newtab-confirm-delete-history-p2 = 이 작업은 되돌릴 수 없습니다.
+newtab-confirm-delete-history-p2 = 이 작업은 취소할 수 없습니다.
 
 ## Context Menu - Action Tooltips.
 
@@ -65,12 +65,12 @@ newtab-menu-content-tooltip =
     .aria-label = { $title }에 대한 컨텍스트 메뉴 열기
 # Tooltip on an empty topsite box to open the New Top Site dialog.
 newtab-menu-topsites-placeholder-tooltip =
-    .title = 이 사이트 수정
-    .aria-label = 이 사이트 수정
+    .title = 이 사이트 편집
+    .aria-label = 이 사이트 편집
 
 ## Context Menu: These strings are displayed in a context menu and are meant as a call to action for a given page.
 
-newtab-menu-edit-topsites = 수정
+newtab-menu-edit-topsites = 편집
 newtab-menu-open-new-window = 새 창에서 열기
 newtab-menu-open-new-private-window = 새 사생활 보호 창에서 열기
 newtab-menu-dismiss = 닫기
@@ -91,19 +91,24 @@ newtab-privacy-modal-paragraph =
     관련성높고 철저하게 검토된 콘텐츠를 보여줍니다. 안심하세요. 사용자의 브라우징
     데이터는 { -brand-product-name }의 사본을 남겨두지 않습니다. — 우리와 스폰서 모두
     들여다 보지 않습니다.
+newtab-privacy-modal-paragraph-2 =
+    매력적인 이야기를 정리해서 보여주는 것 뿐만 아니라, 엄선된 스폰서로 부터
+    관련성 높은 콘텐츠를 보여줍니다. 안심하세요. <strong>사용자의 브라우징 데이터는 
+    { -brand-product-name }의 개인 사본을 남기지 않습니다</strong> — 저희와 스폰서 모두
+    들여다보지 않습니다.
 newtab-privacy-modal-link = 새 탭에서 개인 정보 보호 작동 방식 알아보기
 
-
+##
 
 # Bookmark is a noun in this case, "Remove bookmark".
-newtab-menu-remove-bookmark = 즐겨찾기 삭제
+newtab-menu-remove-bookmark = 북마크 삭제
 # Bookmark is a verb here.
-newtab-menu-bookmark = 즐겨찾기
+newtab-menu-bookmark = 북마크
 
 ## Context Menu - Downloaded Menu. "Download" in these cases is not a verb,
 ## it is a noun. As in, "Copy the link that belongs to this downloaded item".
 
-newtab-menu-copy-download-link = 다운로드 주소 복사
+newtab-menu-copy-download-link = 다운로드 링크 복사
 newtab-menu-go-to-download-page = 다운로드 페이지로 이동
 newtab-menu-remove-download = 방문 기록에서 삭제
 
@@ -123,21 +128,25 @@ newtab-menu-open-file = 파일 열기
 ## the page is bookmarked, or is currently open on another device.
 
 newtab-label-visited = 방문한 사이트
-newtab-label-bookmarked = 즐겨찾기
+newtab-label-bookmarked = 북마크됨
 newtab-label-removed-bookmark = 북마크 삭제됨
 newtab-label-recommended = 트랜드
 newtab-label-saved = { -pocket-brand-name }에 저장됨
 newtab-label-download = 다운로드됨
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } · 후원
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
 
 newtab-section-menu-remove-section = 섹션 삭제
-newtab-section-menu-collapse-section = 섹션 닫기
-newtab-section-menu-expand-section = 섹션 열기
+newtab-section-menu-collapse-section = 섹션 접기
+newtab-section-menu-expand-section = 섹션 펼치기
 newtab-section-menu-manage-section = 섹션 관리
 newtab-section-menu-manage-webext = 부가 기능 관리
-newtab-section-menu-add-topsite = 인기 사이트 추가
+newtab-section-menu-add-topsite = 상위 사이트 추가
 newtab-section-menu-add-search-engine = 검색 엔진 추가
 newtab-section-menu-move-up = 위로 이동
 newtab-section-menu-move-down = 아래로 이동
@@ -173,14 +182,13 @@ newtab-discovery-empty-section-topstories-content = 더 많은 이야기는 나�
 newtab-discovery-empty-section-topstories-try-again-button = 다시 시도
 newtab-discovery-empty-section-topstories-loading = 읽는 중…
 # Displays when a layout in a section took too long to fetch articles.
-newtab-discovery-empty-section-topstories-timed-out = 이런! 이 섹션을 거의 다 로드했지만, 안 된 부분이 있습니다.
+newtab-discovery-empty-section-topstories-timed-out = 이 섹션을 거의 다 로드했지만, 안 된 부분이 있습니다.
 
 ## Pocket Content Section.
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = 인기 주제:
 newtab-pocket-more-recommendations = 더 많은 추천
-newtab-pocket-how-it-works = 사용 방법
 newtab-pocket-whats-pocket = { -pocket-brand-name }은 무엇인가요?
 newtab-pocket-cta-button = { -pocket-brand-name } 받기
 newtab-pocket-cta-text = 좋아하는 이야기를 { -pocket-brand-name }에 저장하고 재미있게 읽어 보세요.

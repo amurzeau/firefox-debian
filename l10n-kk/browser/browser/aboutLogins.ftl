@@ -15,11 +15,6 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Логиндерден іздеу
 create-login-button = Жаңа торапты жасау
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = { $title } үшін таңбаша
 fxaccounts-sign-in-text = Парольдеріңізді басқа құрылғыларыңызды алыңыз
 fxaccounts-sign-in-button = { -sync-brand-short-name } ішіне кіріңіз
 fxaccounts-avatar-button =
@@ -50,6 +45,7 @@ login-list-count =
     }
 login-list-sort-label-text = Бойынша сұрыптау:
 login-list-name-option = Аты (A-Z)
+login-list-name-reverse-option = Аты (A-Z)
 login-list-breached-option = Бұзылған веб-сайттар
 login-list-last-changed-option = Соңғы рет өзгертілген
 login-list-last-used-option = Соңғы қолданылған
@@ -60,9 +56,6 @@ about-logins-login-list-empty-search-description = Іздеуіңізге сәй
 login-list-item-title-new-login = Жаңа логин
 login-list-item-subtitle-new-login = Логин мәліметтерін енгізіңіз
 login-list-item-subtitle-missing-username = (пайдаланушы аты жоқ)
-about-logins-list-item-warning-icon =
-    .alt = Ескерту таңбашасы
-    .title = Шабуылданған сайт
 about-logins-list-item-breach-icon =
     .title = Шабуылданған сайт
 
@@ -80,7 +73,6 @@ about-logins-intro-import = Егер сіздің логиндеріңіз ба�
 
 login-item-new-login-title = Жаңа логинді жасау
 login-item-edit-button = Түзету
-login-item-delete-button = Өшіру
 about-logins-login-item-remove-button = Өшіру
 login-item-origin-label = Веб-сайт адресі
 login-item-origin =
@@ -95,6 +87,8 @@ login-item-password-reveal-checkbox-show =
     .title = Парольді көрсету
 login-item-password-reveal-checkbox-hide =
     .title = Парольді жасыру
+login-item-password-reveal-checkbox =
+    .aria-label = Парольді көрсету
 login-item-copy-password-button-text = Көшіріп алу
 login-item-copied-password-button-text = Көшірілді!
 login-item-save-changes-button = Өзгерістерді сақтау
@@ -113,6 +107,11 @@ master-password-reload-button =
 
 ## Password Sync notification
 
+enable-password-sync-notification-message =
+    { PLATFORM() ->
+        [windows] Логиндеріңізді { -brand-product-name } қолданатын барлық жерде қалайсыз ба? { -sync-brand-short-name } баптауларына өтіп, Логиндерді таңдаңыз.
+       *[other] Логиндеріңізді { -brand-product-name } қолданатын барлық жерде қалайсыз ба? { -sync-brand-short-name } баптауларына өтіп, Логиндерді таңдаңыз.
+    }
 enable-password-sync-preferences-button =
     .label =
         { PLATFORM() ->
@@ -120,7 +119,6 @@ enable-password-sync-preferences-button =
            *[other] { -sync-brand-short-name } баптауларын ашыңыз
         }
     .accesskey = п
-confirm-delete-dialog-title = Бұл логинді өшіру керек пе?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = Келесіде осы сұрақты қоймау
     .accesskey = д
@@ -132,7 +130,6 @@ confirmation-dialog-dismiss-button =
     .title = Бас тарту
 about-logins-confirm-remove-dialog-title = Бұл логинді өшіру керек пе?
 confirm-delete-dialog-message = Бұл әрекетті болдырмау мүмкін емес болады.
-confirm-delete-dialog-confirm-button = Өшіру
 about-logins-confirm-remove-dialog-confirm-button = Өшіру
 confirm-discard-changes-dialog-title = Сақталмаған өзгерістерді тайдыру керек пе?
 confirm-discard-changes-dialog-message = Барлық сақталмаған өзгерістер жоғалады.
@@ -140,8 +137,17 @@ confirm-discard-changes-dialog-confirm-button = Тайдыру
 
 ## Breach Alert notification
 
+breach-alert-text = Логин ақпаратыңызды соңғы рет жаңартқаннан кейін бұл веб-сайттан парольдер алынған немесе ұрланған болатын. Тіркелгіңізді қорғау үшін, пароліңізді ауыстырыңыз.
+breach-alert-link = Бұл бұзушылық туралы көбірек біліңіз.
 breach-alert-dismiss =
     .title = Бұл ескертуді жабу
 
 ## Error Messages
 
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Осы пайдаланушы атын қолданатын { $loginTitle } жазбасы бар болып тұр. <a data-l10n-name="duplicate-link">Бар болып тұрған жазбаға өту</a> керек пе?
+# This is a generic error message.
+about-logins-error-message-default = Бұл парольді сақтау кезінде қате орын алды.

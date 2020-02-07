@@ -3,13 +3,25 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 aboutDialog-title =
-    .title = O aplikaci { -brand-full-name }
+    .title =
+        O { -brand-full-name.gender ->
+            [masculine] { -brand-full-name(case: "loc") }
+            [feminine] { -brand-full-name(case: "loc") }
+            [neuter] { -brand-full-name(case: "loc") }
+           *[other] aplikaci { -brand-full-name }
+        }
 releaseNotes-link = Co je nového
 update-checkForUpdatesButton =
     .label = Zkontrolovat aktualizace
     .accesskey = Z
 update-updateButton =
-    .label = Restartovat a aktualizovat { -brand-shorter-name(case: "acc") }
+    .label =
+        Restartovat a aktualizovat { -brand-shorter-name.gender ->
+            [masculine] { -brand-shorter-name(case: "acc") }
+            [feminine] { -brand-shorter-name(case: "acc") }
+            [neuter] { -brand-shorter-name(case: "acc") }
+           *[other] aplikaci { -brand-shorter-name }
+        }
     .accesskey = R
 update-checkingForUpdates = Kontrola aktualizací…
 update-downloading = <img data-l10n-name="icon"/>Stahování aktualizace — <label data-l10n-name="download-status"/>

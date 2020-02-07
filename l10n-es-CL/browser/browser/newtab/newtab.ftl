@@ -87,9 +87,10 @@ newtab-menu-show-privacy-info = Nuestros patrocinadores y tu privacidad
 newtab-privacy-modal-button-done = Hecho
 newtab-privacy-modal-header = Tu privacidad importa.
 newtab-privacy-modal-paragraph = Junto con ofrecer historias cautivadoras, te mostramos contenido relevante y muy revisado de patrocinadores seleccionados. No te preocupes, tus datos de navegación jamás dejan tu copia personal de { -brand-product-name } — nosotros los vemos, y tampoco lo hacen nuestros patrocinadores.
+newtab-privacy-modal-paragraph-2 = Junto con ofrecer historias cautivadoras, te mostramos contenido relevante y muy revisado de patrocinadores seleccionados. No te preocupes, <strong>tus datos de navegación jamás dejan tu copia personal de { -brand-product-name }</strong> — nosotros los vemos, y tampoco lo hacen nuestros patrocinadores.
 newtab-privacy-modal-link = Aprende cómo funciona la privacidad en la nueva pestaña
 
-
+##
 
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Remover marcador
@@ -124,6 +125,10 @@ newtab-label-removed-bookmark = Marcador eliminado
 newtab-label-recommended = Popular
 newtab-label-saved = Guardado en { -pocket-brand-name }
 newtab-label-download = Descargado
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } · Patrocinado
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -176,7 +181,6 @@ newtab-discovery-empty-section-topstories-timed-out = ¡Chuta! Casi logramos car
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Temas populares:
 newtab-pocket-more-recommendations = Más recomendaciones
-newtab-pocket-how-it-works = Cómo funciona
 newtab-pocket-whats-pocket = ¿Qué es { -pocket-brand-name }?
 newtab-pocket-cta-button = Obtener { -pocket-brand-name }
 newtab-pocket-cta-text = Guarda las historias que amas en { -pocket-brand-name }, y potencia tu mente con fascinantes lecturas.

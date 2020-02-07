@@ -78,6 +78,17 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Складишти податке у трајном складишту
 urlbar-addons-notification-anchor =
     .tooltiptext = Отвори панел са инсталацијом додатака
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Укуцајте мање, пронађите више: претражујте { $engineName } директно из ваше адресне траке.
+urlbar-search-tips-redirect = Започните ваше претраживање овде да бисте видели предлоге { $engineName }-а и вашег историјата.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Блокирали сте локацију за овај веб сајт.
 urlbar-web-notifications-blocked =
@@ -146,3 +157,49 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Небезбедна веза
+identity-connection-secure = Безбедна веза
+identity-connection-internal = Ово је безбедна { -brand-short-name } страница.
+identity-connection-file = Ова страница се складишти на рачунару.
+identity-extension-page = Ова страница је учитана са екстензије.
+identity-active-blocked = { -brand-short-name } је блокирао делове странице које нису безбедне.
+identity-custom-root = Везу је проверио издавач сертификата који Mozilla не препознаје.
+identity-passive-loaded = Делови ове странице нису безбедни (као што су слике).
+identity-active-loaded = Заштита на овој страници је искључена.
+identity-weak-encryption = Страница користи слабо шифровање.
+identity-insecure-login-forms = Пријаве које су унесене на овој страници су можда угрожене.
+identity-permissions =
+    .value = Дозволе
+identity-permissions-reload-hint = Можда ћете морати поново учитати страницу да примените промене.
+identity-permissions-empty = Овом сајту нису додељене никакве посебне дозволе.
+identity-clear-site-data =
+    .label = Обриши колачиће и податке сајта…
+identity-connection-not-secure-security-view = Нисте безбедно повезани са овом страницом.
+identity-connection-verified = Безбедно сте повезани са овом страницом.
+identity-description-custom-root = Mozilla не препознаје издавача овог сертификата. Можда је додат из вашег оперативног система или од стране администратора. <label data-l10n-name="link">Сазнајте више</label>
+identity-remove-cert-exception =
+    .label = Уклони изузетак
+    .accesskey = и
+identity-description-insecure = Веза до овог сајта није приватна. Информације које шаљете могу бити прочитане од стране других (као што су лозинке, поруке, кредитне картице, итд.).
+identity-description-insecure-login-forms = Информације за пријаву које сте унели на овој страницу нису сигурне и могу бити угрожене.
+identity-description-weak-cipher-intro = Веза до овог сајта користи слабо шифровање и није приватна.
+identity-description-weak-cipher-risk = Друге особе могу да виде ваше информације или да модификују понашање веб сајта.
+identity-description-active-blocked = { -brand-short-name } је лоцирао делове сајта који нису сигурни. <label data-l10n-name="link">Сазнајте више</label>
+identity-description-passive-loaded = Веза није приватна и информације које делите могу бити прочитане од стране других.
+identity-description-passive-loaded-insecure = Сајт садржи садржај који није безбедан (као што су слике). <label data-l10n-name="link">Сазнајте више</label>
+identity-description-passive-loaded-mixed = Иако је { -brand-short-name } блокирао неки садржај, још увек има садржаја на странци који није безбедан (као што су слике). <label data-l10n-name="link">Сазнајте више</label>
+identity-description-active-loaded = Сајт садржи садржај који није безбедан (као што су скрипте) и веза није приватна.
+identity-description-active-loaded-insecure = Информације које делите могу бити виђене од стране осталих (као што су лозинке, поруке, кредитне картице, итд.).
+identity-learn-more =
+    .value = Сазнајте више
+identity-disable-mixed-content-blocking =
+    .label = Онемогући заштиту за сада
+    .accesskey = н
+identity-enable-mixed-content-blocking =
+    .label = Омогући заштиту
+    .accesskey = О
+identity-more-info-link-text =
+    .label = Више информација

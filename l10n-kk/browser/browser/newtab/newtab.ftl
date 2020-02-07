@@ -86,8 +86,19 @@ newtab-menu-show-privacy-info = Біздің демеушілеріміз жән
 
 newtab-privacy-modal-button-done = Дайын
 newtab-privacy-modal-header = Сіздің жекелігіңіз маңызды.
+newtab-privacy-modal-paragraph =
+    Қызықтыратын оқиғаларды сақтаумен қоса, біз сізге таңдамалы демеушілер
+    ұсынған, тексерілген мазмұнды көрсетеміз. Шолу деректеріңіз сіздің жеке 
+    { -brand-product-name } көшірмесінен ешқайда кетпейтініне сенімді болыңыз 
+    — оларға біз де, демеушілер де қатынай алмайды.
+newtab-privacy-modal-paragraph-2 =
+    Қызықтыратын оқиғаларды сақтаумен қоса, біз сізге таңдамалы демеушілер
+    ұсынған, тексерілген мазмұнды көрсетеміз. <strong>Шолу деректеріңіз сіздің жеке 
+    { -brand-product-name } көшірмесінен ешқайда кетпейтініне сенімді болыңыз</strong> 
+    — оларға біз де, демеушілер де қатынай алмайды.
+newtab-privacy-modal-link = Жекелік қалай жұмыс істейтінін жаңа бетте қараңыз
 
-
+##
 
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Бетбелгіні өшіру
@@ -122,6 +133,10 @@ newtab-label-removed-bookmark = Бетбелгі өшірілді
 newtab-label-recommended = Әйгілі
 newtab-label-saved = { -pocket-brand-name }-ке сақталған
 newtab-label-download = Жүктеп алынған
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } · Демеушілік
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -166,13 +181,15 @@ newtab-discovery-empty-section-topstories-header = Барлығын оқып ш�
 newtab-discovery-empty-section-topstories-content = Көбірек оқиғаларды көру үшін кейінірек кіріңіз.
 newtab-discovery-empty-section-topstories-try-again-button = Қайталап көру
 newtab-discovery-empty-section-topstories-loading = Жүктелуде…
+# Displays when a layout in a section took too long to fetch articles.
+newtab-discovery-empty-section-topstories-timed-out = Қап! Бұл санатты жүктеуді аяқтауға сәл қалды, бірақ бітпеді.
 
 ## Pocket Content Section.
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Әйгілі тақырыптар:
 newtab-pocket-more-recommendations = Көбірек ұсыныстар
-newtab-pocket-how-it-works = Ол қалай жұмыс істейді
+newtab-pocket-whats-pocket = { -pocket-brand-name } деген не?
 newtab-pocket-cta-button = { -pocket-brand-name }-ті алу
 newtab-pocket-cta-text = Өзіңіз ұнатқан хикаяларды { -pocket-brand-name } ішіне сақтап, миіңізді тамаша оқумен толықтырыңыз.
 

@@ -203,6 +203,15 @@ advanced-fonts =
 colors-settings =
     .label = Színek…
     .accesskey = z
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Nagyítás
+preferences-default-zoom = Alapértelmezett nagyítás
+    .accesskey = n
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Csak a szöveg nagyítása
+    .accesskey = v
 language-header = Nyelv
 choose-language-description = Az oldalak megjelenítésére előnyben részesített nyelv megadása
 choose-button =
@@ -316,7 +325,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Digitális jogkezelést (DRM) használó tartalom
 play-drm-content =
@@ -571,6 +580,9 @@ containers-header = Konténer lapok
 containers-add-button =
     .label = Új konténer hozzáadása
     .accesskey = a
+containers-new-tab-check =
+    .label = Konténer kiválasztása minden új laphoz
+    .accesskey = K
 containers-preferences-button =
     .label = Beállítások
 containers-remove-button =
@@ -909,7 +921,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Egyéni
     .accesskey = E
 
-
+##
 
 content-blocking-etp-standard-desc = Kiegyensúlyozott védelem és teljesítmény. Az oldalak normálisan fognak betölteni.
 content-blocking-etp-strict-desc = Erősebb védelem, de egyes webhelyek és tartalmak hibásan működhetnek.

@@ -203,6 +203,15 @@ advanced-fonts =
 colors-settings =
     .label = Couleurs…
     .accesskey = C
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Zoom
+preferences-default-zoom = Zoom par défaut
+    .accesskey = Z
+preferences-default-zoom-value =
+    .label = { $percentage } %
+preferences-zoom-text-only =
+    .label = Agrandir uniquement le texte
+    .accesskey = A
 language-header = Langue
 choose-language-description = Choix de la langue préférée pour l’affichage des pages
 choose-button =
@@ -316,7 +325,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Contenu protégé par des composants de gestion des droits numériques (DRM)
 play-drm-content =
@@ -571,6 +580,9 @@ containers-header = Onglets contextuels
 containers-add-button =
     .label = Ajouter un nouveau contexte
     .accesskey = A
+containers-new-tab-check =
+    .label = Sélectionner un contexte pour chaque nouvel onglet
+    .accesskey = S
 containers-preferences-button =
     .label = Préférences
 containers-remove-button =
@@ -909,7 +921,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Personnalisé
     .accesskey = P
 
-
+##
 
 content-blocking-etp-standard-desc = Équilibré entre protection et performances. Les pages se chargeront normalement.
 content-blocking-etp-strict-desc = Protection renforcée, mais certains sites ou contenus peuvent ne pas fonctionner correctement.

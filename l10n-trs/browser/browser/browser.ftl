@@ -80,6 +80,17 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Na'nïn' riña ma nugua'an da' ga'ni' sa ni'iaj nichro' doj
 urlbar-tip-help-icon =
     .title = Nana'uì' sa rugûñu'ūnj sò'
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Ninaj gachrut. nikò narit: Nana'ui' 'ngà { $engineName } asij riña dukuán direksiôn.
+urlbar-search-tips-redirect = Gayi'ì nana'uit asij ñuna daj ni'iaj sa ruguñu'unj { $engineName } nī riña gaché nut.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Gi'iaj blokeandot dara' nuguan'an guenda sitio web na.
 urlbar-web-notifications-blocked =
@@ -154,3 +165,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Nitāj seguridâ nikāj koneksiôn
+identity-connection-secure = Huā seguridâ nikāj koneksiôn
+identity-connection-internal = Nitaj si hua ahī pajina nikaj ñu'unj { -brand-short-name }
+identity-connection-file = 'Ngà nu sa' pajinâ na riña si aga't.
+identity-extension-page = Asij a'ngo hij nachra pajinâ na.
+identity-active-blocked = { -brand-short-name } garán ma riña da'aj sa 'na' riña pajinâ na dadin' ahī hua ma.
+identity-custom-root = 'Ngō sa ri sertifikadô nitāj si nani'in Mozilla gini'iāj dàj 'iaj sun koneksiûn nan.
+identity-passive-loaded = Hua da'aj nej sa 'na' riña ñanj na ni sa yi'ìi huin nej ma (daj rû' nej ñadu'ua ni'io')
+identity-active-loaded = Guxunt sa dugumin pajinâ na.
+identity-weak-encryption = Ûta ninaj hua sifrado arajsun pajinâ na.
+identity-insecure-login-forms = Nej sesion ayi'ì hiuna nī nitaj si yitïnj hua ma.
+identity-permissions =
+    .value = Gachinj ni'iô'
+identity-permissions-reload-hint = Nagi'iaj nakà ñut pajinâ na da' gi'iaj sun sa nadunat.
+identity-permissions-empty = Nitaj si huaj gatut riña sitio na daj garan' ruat.
+identity-clear-site-data =
+    .label = Nagi'iaj niñu' kookies nī si dato sitio...
+identity-connection-not-secure-security-view = Nitāj si huā hue'e seguridâ nikāj sitiô nan.
+identity-connection-verified = Riña sitiô nan nī huā seguridâ.
+identity-ev-owner-label = Sertifikadô giri sa gu’nàj:
+identity-description-custom-root = Nu nani'in Mozilla sa giri sertifikadô nan. Sa ga'nïn si sistemât huin asi sa ga'nïn 'ngō administrador huin. <label data-l10n-name="link">Gahuin chrūn doj</label>
+identity-remove-cert-exception =
+    .label = Dure' sa taj a
+    .accesskey = R
+identity-description-insecure = Nitaj si yitïnj hua sitio na. Hua da'aj nej nuguan' a'nît nī ga'ue ni'iaj a'ngò dugui' (Daj run' da'nga' huìi, tarjetâ yikín, etc.).
+identity-description-insecure-login-forms = Nej nuguan' achrut riña ayi'ìt sesion nī nitaj si yitïnj hua ma riña pajinâ na, ga'ue rikij 'ngo sa si garan' ruat.
+identity-description-weak-cipher-intro = Si conexión riña sitio na nī ûta akò huaj nitaj si hua huìi ma.
+identity-description-weak-cipher-risk = Hua a'ngo dugui' ga'ue gini'iaj si nuguant nī ga'ue si gi'iaj sun hue'ê sitio web na.
+identity-description-active-blocked = { -brand-short-name } garán ma riña da'aj sa 'na' riña pajinâ na dadin' ahī hua ma. <label data-l10n-name="link">Gahuin chrūn doj</label>
+identity-description-passive-loaded = Se conexión huìi huin ma nī ga'ue si hua a'ngò dugui' ni'iaj ma.
+identity-description-passive-loaded-insecure = Nitaj si yitïnj hua sa ma riña sitio web na (daj run' ñadu'ua). <label data-l10n-name="link">Gahuin chrūn doj</label>
+identity-description-passive-loaded-mixed = Antaj si { -brand-short-name } garán riña da'aj sa ma na sani nū gè sa yi'ì riña pajinâ na (daj run' ñadu'ua). <label data-l10n-name="link">Gahuin chrūn doj</label>
+identity-description-active-loaded = Nitaj si yitïnj hua sa ma riña pajinâ web na (daj run' skripts) nī nitaj si yitïnj hua riña ma.
+identity-description-active-loaded-insecure = Nej nuguan' a'nínt riña sitio na nī ga'ue gini'iaj a'ngo dugui' (Daj run' da'ngà huìi, tarjeta yikín, etc.).
+identity-learn-more =
+    .value = Gahuin chrūn doj
+identity-disable-mixed-content-blocking =
+    .label = Nitaj si 'raj sun sa dugumî ñù'
+    .accesskey = D
+identity-enable-mixed-content-blocking =
+    .label = Nachrun' sa dugumî ñù'
+    .accesskey = E
+identity-more-info-link-text =
+    .label = Doj nuguan' a'min rayi'î nan

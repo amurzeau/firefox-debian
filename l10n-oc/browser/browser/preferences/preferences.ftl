@@ -46,6 +46,9 @@ category-search =
 pane-privacy-title = Vida privada e seguretat
 category-privacy =
     .tooltiptext = { pane-privacy-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = Assisténcia de { -brand-short-name }
 addons-button-label = Extensions e tèmas
 focus-search =
@@ -199,6 +202,12 @@ advanced-fonts =
 colors-settings =
     .label = Colors…
     .accesskey = C
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Zoom
+preferences-default-zoom = Zoom per defaut
+    .accesskey = Z
+preferences-default-zoom-value =
+    .label = { $percentage } %
 language-header = Lenga
 choose-language-description = Causissètz vòstra lenga preferida per l'afichatge de las paginas
 choose-button =
@@ -341,6 +350,11 @@ update-pref-write-failure-title = Fracàs d’escritura
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Enregistrament impossible de las preferéncias. Impossible d’escriure dins lo fichièr : { $path }
+update-in-progress-title = Actualizacion en cors
+update-in-progress-ok-button = &Ignorar
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Contunhar
 
 ## General Section - Performance
 
@@ -380,6 +394,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Començar la recèrca en picar lo tèxte
     .accesskey = x
+browsing-picture-in-picture-learn-more = Ne saber mai
+browsing-cfr-recommendations =
+    .label = Recomandar d’extensions pendent la navegacion
+    .accesskey = R
 browsing-cfr-recommendations-learn-more = Ne saber mai
 
 ## General Section - Proxy
@@ -479,11 +497,14 @@ search-bar-shown =
     .label = Apondre la barre de recèrca a la barra d'aisinas
 search-engine-default-header = Motor de cerca per defaut
 search-engine-default-desc = Causir lo motor de recèrca per defaut per d'utilizar dins las barras d'adreça e de recèrca.
+search-engine-default-desc-2 = Aqueste es lo motor de recèrca per defaut de la barra d’adreça e de a barra de recèrca. Podètz lo cambiar quand volgatz.
+search-suggestions-header = Suggestions de recèrca
+search-suggestions-desc = Causissètz cossí apareisseràn las suggestions dels motors de recèrca.
 search-suggestions-option =
     .label = Afichar de suggestions de recèrca
     .accesskey = A
 search-show-suggestions-url-bar-option =
-    .label = Afichar las suggestions dins los resultats de la barra d'adreça
+    .label = Mostrar las suggestions dins los resultats de la barra d'adreça
     .accesskey = l
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
@@ -492,6 +513,8 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Mostrar las suggestions avant l’istoric dins la barra d’adreça
+search-show-suggestions-private-windows =
+    .label = Mostrar las suggestions de recèrca en navegacion privada
 search-suggestions-cant-show = Recercar las suggestions que son pas afichadas dins los resultats de la barra d'adreça qu'avètz configurat { -brand-short-name } per pas jamai servar l'istoric.
 search-one-click-header = Motor de recèrca en un clic
 search-one-click-desc = Causir de motors de recerca altenatius qu'apareisson jos las barras d'adreça e de recèrca quand sètz a picar un mot.
@@ -517,6 +540,12 @@ search-keyword-warning-bookmark = Avètz causit un mot clau que ja es utilizat p
 ## Containers Section
 
 containers-back-link = « Tornar
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Tornar a las opcions
+           *[other] Tornar a las preferéncias
+        }
 containers-header = Onglets de contenidor
 containers-add-button =
     .label = Apondre un contenidor novèl
@@ -560,6 +589,9 @@ sync-profile-picture =
 sync-disconnect =
     .label = Se desconectar…
     .accesskey = D
+sync-sign-out =
+    .label = Se desconnectar
+    .accesskey = d
 sync-manage-account = Gestion del compte
     .accesskey = o
 sync-signedin-unverified = { $email } es pas verificat.
@@ -578,9 +610,28 @@ sync-signedin-settings-desc = Causir çò que cal sincronizar per vòstres perif
 
 ## Sync section - enabling or disabling sync.
 
+prefs-sync-now =
+    .labelnotsyncing = Sincronizar ara
+    .accesskeynotsyncing = n
+    .labelsyncing = Sincronizacion…
 
 ## The list of things currently syncing.
 
+sync-currently-syncing-bookmarks = Marcapaginas
+sync-currently-syncing-history = Istoric
+sync-currently-syncing-tabs = Onglets dobèrts
+sync-currently-syncing-logins-passwords = Identificants e senhals
+sync-currently-syncing-addresses = Adreças
+sync-currently-syncing-creditcards = Cartas de crèdit
+sync-currently-syncing-addons = Moduls complementaris
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Opcions
+       *[other] Preferéncias
+    }
+sync-change-options =
+    .label = Modificar…
+    .accesskey = M
 
 ## The "Choose what to sync" dialog.
 
@@ -597,6 +648,10 @@ sync-engine-tabs =
 sync-engine-logins =
     .label = Identificants
     .tooltiptext = Los noms d’utilizaires e los senhales qu’avètz salvats
+    .accesskey = I
+sync-engine-logins-passwords =
+    .label = Identificants e senhals
+    .tooltiptext = Identificants e senhals que gardatz
     .accesskey = I
 sync-engine-addresses =
     .label = Adreças
@@ -631,6 +686,9 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Enregistrar
     .accesskey = g
+sync-connect-another-device = Connectar un periferic de mai
+sync-manage-devices = Gerir los periferics
+sync-fxa-begin-pairing = Associar un periferic
 sync-tos-link = Condicions d'utilizacion
 sync-fxa-privacy-notice = Politica de confidencialitat
 
@@ -644,12 +702,18 @@ privacy-header = Confidencialitat del navegador
 ## Privacy Section - Logins and Passwords
 
 logins-header = Identificants e senhals
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Demandar per salvar los identificants e senhals dels sites
     .accesskey = r
 forms-exceptions =
     .label = Excepcions…
     .accesskey = x
+forms-breach-alerts-learn-more-link = Ne saber mai
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
+forms-fill-logins-and-passwords =
+    .label = Emplenar automaticament los identificants e senhals
+    .accesskey = i
 forms-saved-logins =
     .label = Identificants salvats…
     .accesskey = S
@@ -758,6 +822,7 @@ addressbar-suggestions-settings = Cambiar las preferéncias per las suggestions 
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blocatge de contengut
+content-blocking-enhanced-tracking-protection = Proteccion contra lo seguiment renfortida
 content-blocking-learn-more = Ne saber mai
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -776,31 +841,53 @@ content-blocking-third-party-cookies = Cookies de seguiment tèrces
 
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 enhanced-tracking-protection-setting-standard =
-    .label = Standard
+    .label = Estandard
     .accesskey = d
+enhanced-tracking-protection-setting-strict =
+    .label = Estricte
+    .accesskey = r
 enhanced-tracking-protection-setting-custom =
     .label = Personalizat
     .accesskey = P
 
 ##
 
+content-blocking-social-media-trackers = Traçadors de malhums socials
+content-blocking-all-cookies = Totes los cookies
+content-blocking-unvisited-cookies = Cookies dels sites pas visitats
 content-blocking-all-windows-trackers = Traçadors coneguts dins totas las fenèstras
+content-blocking-all-windows-tracking-content = Contengut utilizat per pistar totas las fenèstras
 content-blocking-all-third-party-cookies = Totes los cookies tèrces
+content-blocking-fingerprinters = Generadors d’emprentas numericas
 content-blocking-warning-title = Atencion !
 content-blocking-learn-how = Ne saber mai
+content-blocking-warning-learn-how = M’ensenhar cossí far
+content-blocking-reload-tabs-button =
+    .label = Tornar cargar totes los onglets
+    .accesskey = r
 content-blocking-trackers-label =
     .label = Traçadors
     .accesskey = T
+content-blocking-tracking-content-label =
+    .label = Contengut utilizat pel seguiment
+    .accesskey = t
 content-blocking-tracking-protection-option-all-windows =
     .label = Dins totas las fenèstras
     .accesskey = D
 content-blocking-option-private =
-    .label = Soque las fenèstras privadas
+    .label = Snoque las fenèstras privadas
     .accesskey = p
 content-blocking-tracking-protection-change-block-list = Cambiar la lista de blocatge
 content-blocking-cookies-label =
     .label = Cookies
     .accesskey = C
+content-blocking-expand-section =
+    .tooltiptext = Mai d’entresenhas
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = Generadors d’emprentas numericas
+    .accesskey = G
 
 ## Privacy Section - Tracking
 
@@ -815,6 +902,10 @@ permissions-location = Localizacion
 permissions-location-settings =
     .label = Paramètres…
     .accesskey = A
+permissions-xr = Realitat virtuala
+permissions-xr-settings =
+    .label = Paramètres…
+    .accesskey = t
 permissions-camera = Camèra
 permissions-camera-settings =
     .label = Paramètres…
@@ -834,6 +925,10 @@ permissions-notification-pause =
 permissions-block-autoplay-media-exceptions =
     .label = Excepcions…
     .accesskey = E
+permissions-autoplay = Lectura automatica
+permissions-autoplay-settings =
+    .label = Paramètres…
+    .accesskey = t
 permissions-block-popups =
     .label = Blocar las fenèstras sorgissentas
     .accesskey = B
@@ -856,6 +951,7 @@ permissions-a11y-privacy-link = Ne saber mai
 collection-header = Recuèlh de donadas e utilizacion per { -brand-short-name }
 collection-description = Nos esforçam de vos daissar causir e reculhir sonque las informacions qu'avèm besonh per provesir e melhorar { -brand-short-name } per tot lo mond. Sempre demandam vòstra permission abans de recebre de donadas personalas.
 collection-privacy-notice = Politica de confidencialitat
+collection-health-report-telemetry-disabled-link = Ne saber mai
 collection-health-report =
     .label = Autorizar { -brand-short-name } a mandar de donadas tecnicas e d’interaccions a { -vendor-short-name }
     .accesskey = A

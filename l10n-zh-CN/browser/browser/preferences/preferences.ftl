@@ -148,7 +148,7 @@ open-new-link-as-tabs =
     .label = 打开链接在新标签页而非新窗口
     .accesskey = w
 warn-on-close-multiple-tabs =
-    .label = 关闭多个标签页时警告您
+    .label = 批量关闭标签页时向您确认
     .accesskey = m
 warn-on-open-many-tabs =
     .label = 打开多个标签页可能拖慢 { -brand-short-name } 前提醒我
@@ -199,6 +199,15 @@ advanced-fonts =
 colors-settings =
     .label = 颜色…
     .accesskey = C
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = 全局缩放
+preferences-default-zoom = 默认缩放
+    .accesskey = z
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = 仅缩放文本
+    .accesskey = t
 language-header = 语言
 choose-language-description = 选择您想要优先使用哪种语言显示页面
 choose-button =
@@ -312,7 +321,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = 采用数字版权管理（DRM）的内容
 play-drm-content =
@@ -563,6 +572,9 @@ containers-header = 身份标签页
 containers-add-button =
     .label = 添加新身份
     .accesskey = A
+containers-new-tab-check =
+    .label = 选择打开每个新标签页时所用身份
+    .accesskey = S
 containers-preferences-button =
     .label = 首选项
 containers-remove-button =
@@ -901,7 +913,7 @@ enhanced-tracking-protection-setting-custom =
     .label = 自定义
     .accesskey = C
 
-
+##
 
 content-blocking-etp-standard-desc = 平衡保护和性能。页面将正常加载。
 content-blocking-etp-strict-desc = 更强大的保护，但可能导致某些网站异常。
@@ -1018,7 +1030,7 @@ permissions-a11y-privacy-link = 详细了解
 collection-header = { -brand-short-name } 数据收集与使用
 collection-description = 我们力图为您提供选择权，并保证只收集我们为众人提供和改进 { -brand-short-name } 所需的信息。我们仅在征得您的同意后接收个人信息。
 collection-privacy-notice = 隐私声明
-collection-health-report-telemetry-disabled = 您不再允许 { -vendor-short-name } 收集技术和交互数据。过去所有的数据将在 30 天内删除。
+collection-health-report-telemetry-disabled = 您不再允许 { -vendor-short-name } 捕获技术和交互数据。过去收集的所有数据将在 30 天内删除。
 collection-health-report-telemetry-disabled-link = 详细了解
 collection-health-report =
     .label = 允许 { -brand-short-name } 向 { -vendor-short-name } 发送技术信息及交互数据

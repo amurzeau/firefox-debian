@@ -11,7 +11,7 @@
 
 <!ENTITY accountSetupInfo2.label "Pro reciper messages, tu debe primo configurar un conto.">
 <!ENTITY accountTypeTitle.label "Configuration de nove conto">
-<!ENTITY accountTypeDesc2.label "Iste Assistente colligera le informationes necessari a implementar un conto. Si tu non sape le informationes demandate, per favor continge tu Administrator de systema o Fornitor de servicio internet.">
+<!ENTITY accountTypeDesc2.label "Iste assistente collige le informationes necessari pro configurar un conto. Si tu non cognosce le informationes requestate, contacta tu administrator de systema o fornitor de servicio internet.">
 <!ENTITY accountTypeDirections.label "Selectiona le typo de conto que tu vole implementar:">
 <!ENTITY accountTypeMail.label "Conto email">
 <!ENTITY accountTypeMail.accesskey "C">
@@ -41,7 +41,7 @@
 
 <!-- Entities for Incoming Server page -->
 
-<!ENTITY incomingTitle.label "Informationes del servitor in arrivata">
+<!ENTITY incomingTitle.label "Informationes del servitor de entrata">
 <!ENTITY incomingServerTypeDesc.label "Selige le typo de servitor de entrata que tu usa.">
 <!-- LOCALIZATION NOTE (imapType.label) : Do not translate "IMAP" in below line -->
 <!ENTITY imapType.label "IMAP">
@@ -56,11 +56,11 @@
 <!ENTITY defaultPortLabel.label "Predefinite:">
 <!ENTITY defaultPortValue.label "">
 <!-- LOCALIZATION NOTE (incomingServerNameDesc.label) : Do not translate "&quot;pop.example.net&quot;" in below line -->
-<!ENTITY incomingServer.description "Insere le nomine de tu servitor in ingresso (per exemplo, &quot;mail.example.net&quot;).">
-<!ENTITY incomingServer.label "Servitor in arrivata:">
+<!ENTITY incomingServer.description "Insere le nomine de tu servitor de entrata (per exemplo, &quot;mail.example.net&quot;).">
+<!ENTITY incomingServer.label "Servitor de entrata:">
 <!ENTITY incomingServer.accesskey "S">
 <!-- LOCALIZATION NOTE (incomingUsername.description) : do not translate "&quot;jsmith&quot;" in below line -->
-<!ENTITY incomingUsername.description "Insere le nomine de usator in ingresso date a te per tu fornitor de servicios email (per exemplo, &quot;jsmith&quot;).">
+<!ENTITY incomingUsername.description "Insere le nomine de usator de entrata que tu fornitor de e-mail te ha date (per exemplo, &quot;jcesare&quot;).">
 <!ENTITY incomingUsername.label "Nomine de usator:">
 <!ENTITY incomingUsername.accesskey "N">
 <!-- LOCALIZATION NOTE (newsServerNameDesc.label) : Do not translate "NNTP" or the "&quot;" entities in below line -->
@@ -70,10 +70,10 @@
 
 <!-- Entities for Outgoing Server page -->
 
-<!ENTITY outgoingTitle.label "Informationes del servitor in exito">
+<!ENTITY outgoingTitle.label "Informationes del servitor de exito">
 <!-- LOCALIZATION NOTE (outgoingServer.description) : Do not translate "SMTP" and "&quot;smtp.example.net&quot;" in below line -->
 <!ENTITY outgoingServer.description "Insere le nomine de tu servitor de exito (SMTP) (per exemplo, &quot;smtp.example.net&quot;).">
-<!ENTITY outgoingServer.label "Servitor in exito:">
+<!ENTITY outgoingServer.label "Servitor de exito:">
 <!ENTITY outgoingServer.accesskey "S">
 <!ENTITY outgoingUsername.description "Insere le nomine de usator de exito que tu fornitor de e-mail te ha date (iste es generalmente le mesme que le nomine de usator de entrata).">
 <!ENTITY outgoingUsername.label "Nomine de usator in exito:">
@@ -114,9 +114,9 @@
 
 <!ENTITY completionTitle.label "Congratulationes!">
 <!ENTITY completionText.label "Verifica que le information infra es correcte.">
-<!ENTITY serverTypePrefix.label "Typo de servitor in arrivata:">
-<!ENTITY serverNamePrefix.label "Nomine del servitor in arrivata:">
-<!ENTITY smtpServerNamePrefix.label "Nomine del servitor in exito (SMTP):">
+<!ENTITY serverTypePrefix.label "Typo de servitor de entrata:">
+<!ENTITY serverNamePrefix.label "Nomine del servitor de entrata:">
+<!ENTITY smtpServerNamePrefix.label "Nomine del servitor de exito (SMTP):">
 <!ENTITY newsServerNamePrefix.label "Nomine del servitor de gruppos (NNTP):">
 <!ENTITY downloadOnLogin.label "Discargar ora le messages">
 <!ENTITY downloadOnLogin.accesskey "D">

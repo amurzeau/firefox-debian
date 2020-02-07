@@ -82,6 +82,18 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Aperir le pannello de messages de installation de additivos
 urlbar-tip-help-icon =
     .title = Obtener adjuta
+urlbar-search-tips-confirm = OK, comprendite
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Insere minus, trova plus: cerca { $engineName } justo per tu barra de adresse.
+urlbar-search-tips-redirect = Comencia tu recerca hic pro vider le suggestiones de { $engineName } e tu chronologia de navigation.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Tu ha blocate le accesso al geolocalisation pro iste sito web.
 urlbar-xr-blocked =
@@ -158,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 28em
+
+## Identity Panel
+
+identity-connection-not-secure = Connexion non secur
+identity-connection-secure = Connexion secur
+identity-connection-internal = Isto es un pagina secur de { -brand-short-name }.
+identity-connection-file = Iste pagina es immagazinate in tu computator.
+identity-extension-page = Iste pagina es cargate ab un extension.
+identity-active-blocked = { -brand-short-name } ha blocate partes non secur de iste pagina.
+identity-custom-root = Connexion verificate per un emissor de certificatos que non es recognoscite per Mozilla.
+identity-passive-loaded = Partes de iste pagina non es secur (per exemplo, imagines).
+identity-active-loaded = Tu ha disactivate le protection sur iste pagina.
+identity-weak-encryption = Iste pagina usa cryptation debile.
+identity-insecure-login-forms = Credentiales inserite sur iste pagina poterea esser compromittite.
+identity-permissions =
+    .value = Permissiones
+identity-permissions-reload-hint = Il es possibile que tu debe recargar le pagina pro que le cambios se applica.
+identity-permissions-empty = Tu non ha concedite alcun permission special a iste sito.
+identity-clear-site-data =
+    .label = Rader cookies e datos de sitos…
+identity-connection-not-secure-security-view = Tu non es connectite con securitate a iste sito.
+identity-connection-verified = Tu es connectite con securitate a iste sito.
+identity-ev-owner-label = Certificato emittite a:
+identity-description-custom-root = Mozilla non recognosce iste emissor de certificatos. Illo poterea provenir de tu systema de operation, o forsan un administrator lo ha addite. <label data-l10n-name="link">Saper plus</label>
+identity-remove-cert-exception =
+    .label = Remover le exception
+    .accesskey = R
+identity-description-insecure = Tu connexion a iste sito non es private. Informationes que tu submitte pote esser vidite per alteres (como contrasignos, messages, cartas de credito, etc.).
+identity-description-insecure-login-forms = Le credentiales que tu insere sur iste pagina non es secur e pote esser compromittite.
+identity-description-weak-cipher-intro = Tu connexion a iste sito web usa cryptation debile e non es private.
+identity-description-weak-cipher-risk = Altere personas pote vider tu information o modificar le comportamento del sito web.
+identity-description-active-blocked = { -brand-short-name } ha blocate partes de iste pagina que non es secur. <label data-l10n-name="link">Saper plus</label>
+identity-description-passive-loaded = Tu connexion non es private e informationes que tu insere sur iste sito poterea esser vidite per alteres.
+identity-description-passive-loaded-insecure = Iste sito web ha contento non secur (per exemplo, imagines). <label data-l10n-name="link">Saper plus</label>
+identity-description-passive-loaded-mixed = Ben que { -brand-short-name } ha blocate alcun contento, il ha ancora contento non secur sur le pagina (per exemplo, imagines). <label data-l10n-name="link">Saper plus</label>
+identity-description-active-loaded = Iste sito web ha contento non secur (per exemplo, scripts) e tu connexion a illo non es private.
+identity-description-active-loaded-insecure = Le informationes que tu insere sur iste sito poterea esser vidite per alteres (per exemplo, contrasignos, messages, cartas de credito, etc.).
+identity-learn-more =
+    .value = Saper plus
+identity-disable-mixed-content-blocking =
+    .label = Disactivar le protection pro le momento
+    .accesskey = D
+identity-enable-mixed-content-blocking =
+    .label = Activar le protection
+    .accesskey = A
+identity-more-info-link-text =
+    .label = Plus information

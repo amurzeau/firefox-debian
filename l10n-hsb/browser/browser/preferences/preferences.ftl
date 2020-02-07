@@ -209,6 +209,15 @@ advanced-fonts =
 colors-settings =
     .label = Barby…
     .accesskey = B
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Skalowanje
+preferences-default-zoom = Standardne skalowanje
+    .accesskey = S
+preferences-default-zoom-value =
+    .label = { $percentage } %
+preferences-zoom-text-only =
+    .label = Jenož tekst skalować
+    .accesskey = t
 language-header = Rěč
 choose-language-description = Wubjerće swoju preferowanu rěč za zwobraznjenje stronow
 choose-button =
@@ -322,7 +331,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Wobsah Digital Right Management (DRM)
 play-drm-content =
@@ -579,6 +588,9 @@ containers-header = Kontejnerowe rajtarki
 containers-add-button =
     .label = Nowy kontejner přidać
     .accesskey = k
+containers-new-tab-check =
+    .label = Kontejner za kóždy nowy rajtark wubrać
+    .accesskey = K
 containers-preferences-button =
     .label = Nastajenja
 containers-remove-button =
@@ -917,7 +929,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Swójski
     .accesskey = S
 
-
+##
 
 content-blocking-etp-standard-desc = Wuwaženy za škit a wukon. Strony so normalnje začitaja.
 content-blocking-etp-strict-desc = Mócniši škit, ale móže zawinować, zo někotre sydła abo wobsa hižo njefunguja.
@@ -1025,8 +1037,8 @@ permissions-addon-exceptions =
     .label = Wuwzaća…
     .accesskey = W
 permissions-a11y-privacy-checkbox =
-    .label = Słužby přistupnosće při přistupu na waš wobhladowak haćić
-    .accesskey = t
+    .label = Słužby bjezbarjernosće při přistupu k wašemu wobhladowakej haćić
+    .accesskey = b
 permissions-a11y-privacy-link = Dalše informacije
 
 ## Privacy Section - Data Collection

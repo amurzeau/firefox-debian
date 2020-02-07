@@ -82,6 +82,18 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Åpne meldingspanel for utvidelsesinstallasjon
 urlbar-tip-help-icon =
     .title = Få hjelp
+urlbar-search-tips-confirm = Ok, jeg forstår
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Skriv mindre, finn mer: Søk med { $engineName } direkte fra adresselinjen din.
+urlbar-search-tips-redirect = Start ditt søk her for å se forslag fra { $engineName } og din nettleserhistorikk.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Du har blokkert plasseringsinformasjon for dette nettstedet.
 urlbar-xr-blocked =
@@ -129,7 +141,7 @@ full-screen-exit =
 
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
-search-one-offs-with-title = Denne gangen, søk med:
+search-one-offs-with-title = Søk denne gangen med:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -158,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Tilkoblingen er ikke sikker
+identity-connection-secure = Tilkoblingen er sikker
+identity-connection-internal = Dette er en sikker { -brand-short-name }-side.
+identity-connection-file = Denne siden lagres på datamaskinen din.
+identity-extension-page = Denne siden er lastet fra en utvidelse.
+identity-active-blocked = { -brand-short-name } blokkerte deler av denne siden som ikke er sikre.
+identity-custom-root = Tilkobling verifisert av en sertifikatutsteder som ikke kjennes igjen av Mozilla.
+identity-passive-loaded = Deler av denne siden er ikke sikker (f.eks. bilder).
+identity-active-loaded = Du har slått av beskyttelse på denne siden.
+identity-weak-encryption = Denne siden bruker svak kryptering.
+identity-insecure-login-forms = Innloggingsinfo skrevet inn på denne kan leses av en tredjepart.
+identity-permissions =
+    .value = Tillatelser
+identity-permissions-reload-hint = Du må kanskje laste siden på nytt for at endringene skal gjelde.
+identity-permissions-empty = Du har ikke gitt dette nettstedet noen spesialtillatelser.
+identity-clear-site-data =
+    .label = Slett infokapsler og nettstedsdata…
+identity-connection-not-secure-security-view = Du er ikke sikkert koblet til dette nettstedet.
+identity-connection-verified = Du er sikkert koblet til dette nettstedet.
+identity-ev-owner-label = Sertifikat utstedt til:
+identity-description-custom-root = Mozilla kjenner ikke igjen denne sertifikatutstederen. Den kan ha blitt lagt til av ditt operativsystem eller av en administrator. <label data-l10n-name="link">Les mer</label>
+identity-remove-cert-exception =
+    .label = Fjern unntak
+    .accesskey = F
+identity-description-insecure = Tilkoblingen til dette nettstedet er ikke privat. Informasjon du sender kan leses av andre (som f.eks. passord, meldinger, kredittkort, osv.).
+identity-description-insecure-login-forms = Innloggingsinformasjonen du skriver inn på denne siden er ikke trygg, og kan kompromitteres.
+identity-description-weak-cipher-intro = Tilkoblingen til dette nettstedet bruker svak kryptering, og er ikke privat.
+identity-description-weak-cipher-risk = Andre personer kan se informasjonen eller endre nettstedets oppførsel.
+identity-description-active-blocked = { -brand-short-name } har blokkert deler av denne siden som ikke er sikker. <label data-l10n-name="link">Les mer</label>
+identity-description-passive-loaded = Tilkoblingen er ikke privat, og informasjon du sender til nettstedet kan vises av andre.
+identity-description-passive-loaded-insecure = Dette nettstedet inneholder informasjon som ikke er overført sikkert (f.eks. bilder). <label data-l10n-name="link">Les mer</label>
+identity-description-passive-loaded-mixed = Selv om { -brand-short-name } har blokkert noe innhold, er det fortsatt innhold på denne siden som ikke er sikker (f.eks. bilder). <label data-l10n-name="link">Les mer</label>
+identity-description-active-loaded = Dette nettstedet inneholder innhold som ikke er overført sikkert (som f.eks. skript), og tilkoblingen til nettstedet er derfor ikke privat.
+identity-description-active-loaded-insecure = Informasjon du sender til dette nettstedet kan vises av andre (som passord, meldinger, kredittkort, osv.).
+identity-learn-more =
+    .value = Les mer
+identity-disable-mixed-content-blocking =
+    .label = Slå av beskyttelse
+    .accesskey = a
+identity-enable-mixed-content-blocking =
+    .label = Slå på beskyttelse
+    .accesskey = S
+identity-more-info-link-text =
+    .label = Mer informasjon

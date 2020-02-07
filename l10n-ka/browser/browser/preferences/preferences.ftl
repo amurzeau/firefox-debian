@@ -203,6 +203,15 @@ advanced-fonts =
 colors-settings =
     .label = ფერები…
     .accesskey = ფ
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = ზომა
+preferences-default-zoom = ნაგულისხმევი ზომა
+    .accesskey = ზ
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = მხოლოდ ტექსტის ზომა
+    .accesskey = ტ
 language-header = ენა
 choose-language-description = მიუთითეთ სასურველი ენა გვერდების საჩვენებლად
 choose-button =
@@ -316,7 +325,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = ციფრული უფლებების მართვის (DRM) შიგთავსი
 play-drm-content =
@@ -571,6 +580,9 @@ containers-header = სათავსი ჩანართები
 containers-add-button =
     .label = ახალი სათავსის დამატება
     .accesskey = ა
+containers-new-tab-check =
+    .label = სათავსის შერჩევა თითოეული ახალი ჩანართისთვის
+    .accesskey = ს
 containers-preferences-button =
     .label = პარამეტრები
 containers-remove-button =
@@ -909,7 +921,7 @@ enhanced-tracking-protection-setting-custom =
     .label = მორგებული
     .accesskey = გ
 
-
+##
 
 content-blocking-etp-standard-desc = წონასწორული უსაფრთხოებასა და წარმადობას შორის. გვერდები ჩაიტვირთება ჩვეულებრივ.
 content-blocking-etp-strict-desc = მძლავრი დაცვა, თუმცა გამოიწვევს საიტების ან შიგთავსის ნაწილის გაუმართაობას.

@@ -9,7 +9,7 @@ cfr-doorhanger-extension-heading = Inirerekomendang Extension
 cfr-doorhanger-feature-heading = Inirerekomenda na Tampok
 cfr-doorhanger-pintab-heading = Subukan: Mag-pin ng Tab
 
-
+##
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Bakit ko nakikita ito
@@ -118,14 +118,21 @@ cfr-whatsnew-lockwise-take-link-text = Kunin ang app
 
 ## Picture-in-Picture
 
+cfr-whatsnew-pip-header = Manood ng mga video habang ikaw ay nagba-browse
+cfr-whatsnew-pip-body = Binubuksan ng Picture-in-picture ang video sa lumulutang na window para maaari kang manood habang abala sa ibang mga tab.
 cfr-whatsnew-pip-cta = Alamain pa
 
 ## Permission Prompt
 
+cfr-whatsnew-permission-prompt-header = Mas kaunting nakaiinis na mga pop-up
+cfr-whatsnew-permission-prompt-body = Hinaharangan na ngayon ng { -brand-shorter-name } ang mga site na kusang humihiling na magpadala ng mga pop-up na mensahe sa iyo.
 cfr-whatsnew-permission-prompt-cta = Alamin
 
 ## Fingerprinter Counter
 
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Mga Fingerprinter
+cfr-whatsnew-fingerprinter-counter-body-alt = Maaaring harangan ng { -brand-shorter-name } ang mga fingerprinter na palihim na nangangalap ng impormasyon ukol sa iyong device at mga action para gumawa ng iyong advertising profile.
 
 ## Bookmark Sync
 
@@ -162,6 +169,8 @@ cfr-doorhanger-socialtracking-ok-button = Tingnan ang mga Proteksyon
     .accesskey = P
 cfr-doorhanger-socialtracking-close-button = Isara
     .accesskey = C
+cfr-doorhanger-socialtracking-dont-show-again = Huwag na muling ipakita ang mga mensaheng gaya nito
+    .accesskey = H
 cfr-doorhanger-socialtracking-heading = Pinigilan ng { -brand-short-name } ang isang social network na sundan ka rito
 cfr-doorhanger-socialtracking-description = Mahalaga ang iyong privacy. Hinaharang na ngayon ng { -brand-short-name } ang mga karaniwang social media tracker, nililimitahan kung gaano karaming data ang pwede nilang kolektahin patungkol sa mga gawain mo online.
 cfr-doorhanger-fingerprinters-heading = Hinarang ng { -brand-short-name } ang isang fingerprinter sa pahinang ito
