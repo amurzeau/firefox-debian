@@ -31,7 +31,7 @@ Build-Depends: autotools-dev,
                libnspr4-dev (>= 2:@NSPR_VERSION@~),
 %endif
 %if USE_SYSTEM_NSS
-%define NSS_VERSION 3.48
+%define NSS_VERSION 3.49.2
                libnss3-dev (>= 2:@NSS_VERSION@~),
 %endif
 %if USE_SYSTEM_SQLITE
@@ -56,8 +56,8 @@ Build-Depends: autotools-dev,
 %else
                nasm (>= 2.13) [amd64 i386],
 %endif
-               rustc (>= 1.37),
-               cargo (>= 0.38),
+               rustc (>= 1.39),
+               cargo (>= 0.40),
 %if DIST == jessie || DIST == stretch
                llvm-4.0-dev,
                libclang-4.0-dev,
@@ -67,7 +67,7 @@ Build-Depends: autotools-dev,
                libclang-dev,
                clang,
 %endif
-               cbindgen (>= 0.9.1),
+               cbindgen (>= 0.12.0),
 %if DIST == jessie || DIST == stretch
                nodejs-mozilla (>= 8.11),
 %else
