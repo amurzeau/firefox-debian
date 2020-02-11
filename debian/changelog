@@ -1,3 +1,11 @@
+firefox-esr (68.5.0esr-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fixes for mfsa2020-06, also known as:
+    CVE-2020-6796, CVE-2020-6798, CVE-2020-6800.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 12 Feb 2020 06:50:33 +0900
+
 firefox-esr (68.4.2esr-1) unstable; urgency=medium
 
   * New upstream release.
