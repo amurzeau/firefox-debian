@@ -1,3 +1,15 @@
+firefox (73.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2020-05, also known as:
+    CVE-2020-6796, CVE-2020-6798, CVE-2020-6800, CVE-2020-6801.
+
+  * debian/control*: Bump nss, rustc, cargo and cbindgen build dependencies.
+  * debian/browser.install.in: Do not install now removed chrome.manifest
+    and libnssdbm3.* files.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 12 Feb 2020 06:57:23 +0900
+
 firefox (72.0.2-1) unstable; urgency=medium
 
   * New upstream release.
