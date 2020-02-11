@@ -14,7 +14,7 @@
 <!-- Web Content -->
 <!ENTITY captionWebContent.label "Веб-вміст">
 
-<!ENTITY keepHistory.label "Пам'ятати відвідані мною веб-сайти й посилання">
+<!ENTITY keepHistory.label "Пам'ятати відвідані мною вебсайти й посилання">
 <!ENTITY keepHistory.accesskey "П">
 <!ENTITY acceptCookies.label "Приймати куки від сайтів">
 <!ENTITY acceptCookies.accesskey "к">
@@ -38,4 +38,5 @@
 <!ENTITY doNotTrackInfo.label "Докладніше про відмову від стеження">
 
 <!ENTITY doNotTrackCheck.label "Надішліть вебсайтам сигнал “Не стежити”, якщо ви не хочете, щоб вас відстежували">
+<!ENTITY doNotTrackCheck.accesskey "с">
 <!ENTITY doNotTrackLearnMore.label "Докладніше">

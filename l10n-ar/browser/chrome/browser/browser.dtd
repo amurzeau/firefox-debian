@@ -156,6 +156,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.manageAccount.label "أدِر الحساب…">
 <!ENTITY fxa.menu.syncSettings.label "إعدادات &syncBrand.shortName.label;…">
 
+<!ENTITY pictureInPictureHideToggle.label "أخفِ زر تفعيل/تعطيل الڤديوهات المعترِضة">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
@@ -170,6 +171,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.account.label "الحساب">
 <!ENTITY fxa.menu.settings.label "الإعدادات">
 <!ENTITY fxa.menu.accountSettings.label "إعدادات الحساب">
+<!ENTITY fxa.menu.manageAccount2.label "أدِر الحساب">
 <!ENTITY fxa.menu.signOut.label "اخرج…">
 <!ENTITY fxa.menu.deviceSettings.label "إعدادات الجهاز">
 <!ENTITY fxa.menu.setupSync.label "اضبط &syncBrand.shortName.label;…">
@@ -197,7 +199,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
      these two strings are used when right-clicking on a video in the
      content area when the Picture-in-Picture feature is enabled. -->
-<!ENTITY pictureInPicture.label "صورة داخل صورة">
+<!ENTITY pictureInPicture.label "ڤديو معترِض">
 <!ENTITY pictureInPicture.accesskey "خ">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
@@ -239,6 +241,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY reloadCmd.accesskey          "ع">
 <!ENTITY stopCmd.label                "أوقف">
 <!ENTITY stopCmd.accesskey            "ق">
+
 <!ENTITY stopCmd.macCommandKey        ".">
 <!ENTITY goEndCap.tooltip             "اذهب للعنوان في شريط الموقع">
 <!ENTITY printButton.label            "اطبع">
@@ -271,8 +274,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "أدِر استخدام برمجيات إدارة الحقوق الرقمية">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "افتح لوحة MIDI">
 
-<!ENTITY urlbar.permissionsGranted.tooltip       "منحت هذا الموقع صلاحيات أخرى.">
-
 <!ENTITY urlbar.cameraBlocked.tooltip            "لقد حجبت كمرتك عن هذا الموقع.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "لقد حجبت ميكروفونك عن هذا الموقع.">
 <!ENTITY urlbar.screenBlocked.tooltip            "لقد حجبت هذا الموقع من مشاركة شاشتك.">
@@ -285,6 +286,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "لقد حجبت هذا الموقع من استخدام ملحقة أدوبي فلاش.">
 <!ENTITY urlbar.midiBlocked.tooltip              "لقد حجبنا عن هذا الموقع الوصول إلى MIDI.">
 <!ENTITY urlbar.installBlocked.tooltip           "حجبت تثبيت الإضافات في هذا الموقع.">
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "منحت هذا الموقع صلاحيات أخرى.">
 
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "اعرض التأريخ">
@@ -575,6 +578,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY searchSetAsDefault.accesskey "ف">
 
 <!ENTITY openLinkCmdInTab.label       "افتح الرابط في لسان جديد">
+
 <!ENTITY openLinkCmdInTab.accesskey   "ل">
 <!ENTITY openLinkCmd.label            "افتح الرابط في نافذة جديدة">
 <!ENTITY openLinkCmd.accesskey        "ج">
@@ -590,6 +594,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY openLinkCmdInContainerTab.accesskey "ح">
 <!ENTITY showOnlyThisFrameCmd.label     "أظهر هذا الإطار فقط">
 <!ENTITY showOnlyThisFrameCmd.accesskey "ظ">
+
 <!ENTITY reloadCmd.commandkey         "r">
 <!ENTITY reloadFrameCmd.label         "أعِد تحميل الإطار">
 <!ENTITY reloadFrameCmd.accesskey     "ت">
@@ -640,6 +645,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY savePageCmd.label            "احفظ الصفحة باسم…">
 <!ENTITY savePageCmd.accesskey        "س">
 <!ENTITY savePageCmd.accesskey2       "س">
+<!-- alternate for content area context menu -->
 <!ENTITY savePageCmd.commandkey       "s">
 <!ENTITY saveFrameCmd.label           "احفظ الإطار باسم…">
 <!ENTITY saveFrameCmd.accesskey       "ط">
@@ -806,6 +812,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY bidiSwitchPageDirectionItem.accesskey    "ك">
 <!ENTITY bidiSwitchTextDirectionItem.label        "اعكس اتجاه النص">
 <!ENTITY bidiSwitchTextDirectionItem.accesskey    "ن">
+
 <!ENTITY bidiSwitchTextDirectionItem.commandkey   "X">
 
 <!ENTITY findOnCmd.label     "ابحث في هذه الصفحة…">

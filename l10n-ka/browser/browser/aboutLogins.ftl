@@ -15,11 +15,6 @@ login-app-promo-apple =
 login-filter =
     .placeholder = ანგარიშების ძიება
 create-login-button = ანგარიშის ახალი მონაცემები
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = ხატულა საიტის { $title }
 fxaccounts-sign-in-text = გადმოიტანეთ პაროლები სხვა მოწყობილობებიდან
 fxaccounts-sign-in-button = { -sync-brand-short-name } – შესვლა
 fxaccounts-avatar-button =
@@ -51,6 +46,7 @@ login-list-count =
     }
 login-list-sort-label-text = დალაგება:
 login-list-name-option = ანბანური
+login-list-name-reverse-option = ანბანური (Z-A)
 login-list-breached-option = მიტაცების მსხვერპლი საიტები
 login-list-last-changed-option = ბოლოს ჩასწორებული
 login-list-last-used-option = ბოლოს გამოყენებული
@@ -61,9 +57,6 @@ about-logins-login-list-empty-search-description = ძიების შეს�
 login-list-item-title-new-login = ანგარიშის ახალი მონაცემები
 login-list-item-subtitle-new-login = შეიყვანეთ თქვენი მონაცემები
 login-list-item-subtitle-missing-username = (მომხმარებლის სახელის გარეშე)
-about-logins-list-item-warning-icon =
-    .alt = გაფრთხილების ნიშანი
-    .title = იერიშმიტანილი საიტი
 about-logins-list-item-breach-icon =
     .title = იერიშმიტანილი საიტი
 
@@ -81,7 +74,6 @@ about-logins-intro-import = თუ თქვენი ანგარიშე�
 
 login-item-new-login-title = ანგარიშის ახალი მონაცემები
 login-item-edit-button = ჩასწორება
-login-item-delete-button = წაშლა
 about-logins-login-item-remove-button = მოცილება
 login-item-origin-label = საიტის მისამართი
 login-item-origin =
@@ -96,6 +88,8 @@ login-item-password-reveal-checkbox-show =
     .title = პაროლის ჩვენება
 login-item-password-reveal-checkbox-hide =
     .title = პაროლის დამალვა
+login-item-password-reveal-checkbox =
+    .aria-label = პაროლის ჩვენება
 login-item-copy-password-button-text = ასლი
 login-item-copied-password-button-text = ასლი აღებულია!
 login-item-save-changes-button = ცვლილებების შენახვა
@@ -126,7 +120,6 @@ enable-password-sync-preferences-button =
            *[other] იხილეთ { -sync-brand-short-name(case: "gen") } პარამეტრები
         }
     .accesskey = ი
-confirm-delete-dialog-title = წაიშალოს ეს ანგარიში?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = მომავალში შეკითხვის გარეშე
     .accesskey = გ
@@ -138,7 +131,6 @@ confirmation-dialog-dismiss-button =
     .title = გაუქმება
 about-logins-confirm-remove-dialog-title = მოცილდეს ეს მონაცემები?
 confirm-delete-dialog-message = ეს ქმედება შეუქცევადია.
-confirm-delete-dialog-confirm-button = წაშლა
 about-logins-confirm-remove-dialog-confirm-button = მოცილება
 confirm-discard-changes-dialog-title = გაუქმდეს შეუნახავი ცვლილებები?
 confirm-discard-changes-dialog-message = ყველა შეუნახავი ცვლილება დაიკარგება.
@@ -153,11 +145,6 @@ breach-alert-dismiss =
 
 ## Error Messages
 
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = ჩანაწერი ანგარიშისთვის { $loginTitle } ამ მომხმარებლის სახელით უკვე არსებობს.
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:

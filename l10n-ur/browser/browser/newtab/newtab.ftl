@@ -33,6 +33,7 @@ newtab-topsites-url-label = URL
 newtab-topsites-url-input =
     .placeholder = ٹائپ کریں یا ایک URL چسباں کریں
 newtab-topsites-url-validation = جائز URL درکار ہے
+newtab-topsites-image-url-label = مخصوص نقش کا URL
 newtab-topsites-image-validation = نقش لوڈ ہونے میں ناکام رہا۔ براہ مہربانی ایک مختلف URL کو آزمائیں۔
 
 ## Top Sites - General form dialog buttons. These are verbs/actions.
@@ -72,6 +73,7 @@ newtab-menu-delete-history = تاریخ سے حذف کریں
 newtab-menu-save-to-pocket = { -pocket-brand-name } میں محفوظ کریں
 newtab-menu-delete-pocket = { -pocket-brand-name } سے جزف کریں
 newtab-menu-archive-pocket = { -pocket-brand-name } مے محفوظ
+newtab-menu-show-privacy-info = ہمارے کفیل اور آپ کی رازداری
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
@@ -79,7 +81,7 @@ newtab-privacy-modal-button-done = مکمل
 newtab-privacy-modal-header = آپ کی رازداری کی اہمیت ہے۔
 newtab-privacy-modal-link = سیکھیں کہ نئے ٹیب پر رازداری کیسے کام کرتی ہے
 
-
+##
 
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = نشانى ہٹائيں
@@ -131,6 +133,10 @@ newtab-section-menu-privacy-notice = رازداری کا نوٹس
 
 ## Section aria-labels
 
+newtab-section-collapse-section-label =
+    .aria-label = صیغہ کی تخفیف کر یں
+newtab-section-expand-section-label =
+    .aria-label = صیغہ کی توسیع کریں
 
 ## Section Headers.
 
@@ -142,22 +148,27 @@ newtab-section-header-pocket = { $provider } کی جانب سے تجویز کر�
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
+newtab-empty-section-highlights = برائوزنگگ شروع کریں،اور ہم آپ کو کچھ بہترین عبارات، وڈیوز اور حالیہ دورہ شددہ دیگر صفحات یا نشانیاں دکھائیں گے۔
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
+newtab-discovery-empty-section-topstories-header = آپ پکڑے گئے!
 newtab-discovery-empty-section-topstories-content = مزید کہانیوں کے لئے بعد میں دوبارہ پڑتال کریں۔
 newtab-discovery-empty-section-topstories-try-again-button = دوبارہ کوشش کریں
 newtab-discovery-empty-section-topstories-loading = لوڈ ہو رہا ہے…
+# Displays when a layout in a section took too long to fetch articles.
+newtab-discovery-empty-section-topstories-timed-out = افوہ! ہم نے اس حصے کو تقریبا بھرا ہوا ہے ، لیکن کافی نہیں۔
 
 ## Pocket Content Section.
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = مشہور مضامین:
 newtab-pocket-more-recommendations = اور زیادہ سفارشات
-newtab-pocket-how-it-works = یہ کس طرح کام کرتا ہے
 newtab-pocket-whats-pocket = { -pocket-brand-name } کیا ہے؟
 newtab-pocket-cta-button = { -pocket-brand-name } حاصل کریں
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
 
+newtab-error-fallback-info = افوہ ، اس مواد کو لوڈ کرنے میں کچھ غلط ہو گیا۔
+newtab-error-fallback-refresh-link = دوبارہ کوشش کرنے کے لئے پیج کو ریفریش کریں۔

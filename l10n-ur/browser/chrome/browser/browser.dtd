@@ -46,6 +46,7 @@ same accesskey but will never be visible at the same time. -->
 <!ENTITY  listAllTabs.label      "تمام ٹیب دکھائیں">
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
+<!ENTITY  allTabsMenu.searchTabs.label       "تلاش ٹیبس">
 
 <!ENTITY tabCmd.label "نیا ٹیب">
 <!ENTITY tabCmd.accesskey "T">
@@ -64,6 +65,7 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "چھاپیں…">
 <!ENTITY printCmd.accesskey "P">
 <!ENTITY printCmd.commandkey "p">
+<!ENTITY importFromAnotherBrowserCmd.label "دوسرے براؤزر سے درآمد کریں…">
 <!ENTITY importFromAnotherBrowserCmd.accesskey "I">
 
 <!ENTITY taskManagerCmd.label "ٹاسک مینیجر">
@@ -77,11 +79,13 @@ when there are no windows but Firefox is still running. -->
 <!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
 include the word "toolbar" or such, because screen readers already know that
 this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "نیویگیشن">
 <!ENTITY personalbarCmd.label "بک مارک ٹولبار">
 <!ENTITY personalbarCmd.accesskey "B">
 <!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
 include the word "toolbar" or such, because screen readers already know that
 this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY personalbar.accessibleLabel "بک مارکس">
 <!ENTITY bookmarksToolbarItem.label "ٹولبار اشیاہ کو بک مارک کگاتا ہے">
 
 <!ENTITY pageSourceCmd.label "صفحہ ماخذ">
@@ -123,7 +127,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaUnverified.label "اپنا اکاؤنٹ توثیق کریں">
 
 
- <!-- } is above this key on many keyboards -->
+<!ENTITY togglePictureInPicture.key2 "}">
+<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
 
 <!ENTITY fullScreenMinimize.tooltip "چھوٹا کریں">
 <!ENTITY fullScreenRestore.tooltip "بحال کریں">
@@ -136,20 +141,38 @@ These should match what Safari and other Apple applications use on OS X Lion. --
  <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
      for the Firefox Account toolbar signin menu screen. -->
 <!ENTITY fxa.signin.callout.label "Firefox کو اپنے ساتھ لیجائیں">
+<!ENTITY fxa.signin.button.label "&syncBrand.shortName.label;… چالو  کریں ">
 
 <!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
      for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "اپنی ای میل کی پڑتال کریں">
+<!ENTITY fxa.unverified.button.label "&syncBrand.shortName.label; ترتیبات… کھولیں">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbart menu screen. The `Signed in as` text is
      followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "کے طور پر سائن ان">
+<!ENTITY fxa.menu.manageAccount.label "اکاؤنٹ… بندوبست کریں">
+<!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; ترتیبات…">
 
+<!ENTITY pictureInPictureHideToggle.accesskey "H">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
      followed by the user's email. -->
 <!ENTITY fxa.menu.syncSettings2.label "&syncBrand.shortName.label; ترتیبات">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "کسی اور آلہ… سے جوڑیں">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
+<!ENTITY fxa.menu.signin.label "&brandProductName; میں سائن ان کریں">
+<!ENTITY fxa.menu.turnOnSync.label "&syncBrand.shortName.label; چالو  کریں ">
+<!ENTITY fxa.menu.firefoxServices.label "&brandProductName; خدمات">
+<!ENTITY fxa.menu.account.label "اکائونٹ">
+<!ENTITY fxa.menu.settings.label "سیٹنگز">
+<!ENTITY fxa.menu.accountSettings.label "اکاؤنٹ کی سیٹنگز">
+<!ENTITY fxa.menu.manageAccount2.label "اکاؤنٹ بندوبست کریں">
+<!ENTITY fxa.menu.signOut.label "سائن آؤٹ…">
+<!ENTITY fxa.menu.deviceSettings.label "آلہ کی سیٹنگز">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -174,6 +197,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (pictureInPicture.label, pictureInPicture.accesskey):
      these two strings are used when right-clicking on a video in the
      content area when the Picture-in-Picture feature is enabled. -->
+<!ENTITY pictureInPicture.label "تصویر-میں-تصویر">
 <!ENTITY pictureInPicture.accesskey "u">
 
 <!-- LOCALIZATION NOTE (pointerlockWarning.beforeDomain.label,
@@ -236,6 +260,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "براؤزر ریموٹ کنٹرول کے تحت ہے">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "ویب توثیق پینل کھولیں">
+<!ENTITY urlbar.storageAccessAnchor.tooltip               "براؤزنگ سرگرمی کی اجازت والا پینل کھولیں">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "کیمرہ اور مائیکروفون کی سائٹ کے ساتھ حصہ داری کو بندوبست کریں">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "مائیکروفون کی سائٹ کہ ساتھ حصہ داری کو بندوبست کریں">
@@ -246,7 +271,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.translatedNotificationAnchor.tooltip      "صفحہ کہ ترجمہ کو بندوبست کریں">
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "DRM سافٹ ویئر کہ استعمال کو بندوبست کریں">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "MIDI پینل کھولیں">
-
 
 <!ENTITY urlbar.cameraBlocked.tooltip            "آپ نے اس ویب سائٹ کے لیئے کیمرہ بلاک کیا ہوا ہے">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "آپ نے اس ویب سائٹ کے لیئے مائیکروفون بلاک کیا ہوا ہے۔">
@@ -259,6 +283,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.canvasBlocked.tooltip            "آپنے اس ویب سائٹ کے لئے کینوس کوائف ماحصل بلاک کر دی ہیں۔">
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "آپنے اس ویب سائٹ کو Adobe Flash plugin استعمال کرنے سے بلاک کر دیا ہیں۔">
 <!ENTITY urlbar.midiBlocked.tooltip              "آپنے اس ویب سائٹ کے لئے MIDI تک رسائی بلاک کر دی ہیں۔">
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "آپ نے اس ویب سائٹ کو اضافی اجازتیں دے دی ہیں۔">
 
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "سابقات دکھائیں">
@@ -359,6 +385,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmd2.accesskey     "O">
 <!ENTITY preferencesCmdUnix.label       "ترجیحات">
 <!ENTITY preferencesCmdUnix.accesskey     "n">
+<!ENTITY logins.label                           "لاگ ان اور پاس ورڈ">
 
 <!ENTITY clearRecentHistory.label               "حالیہ سابقات خالی کریں…">
 
@@ -417,6 +444,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.notsignedin.label "ٹیبیں کی فہرست دیکھنے کے لئے اپنے دیگر آلات سے سائن ان کریں۔">
 <!ENTITY appMenuRemoteTabs.unverified.label "آپ کے اکائونٹ کو توژیکاری کی ظرورت ہے۔">
 <!ENTITY appMenuRemoteTabs.signin.label "ہم سازی کے لئے سائن ان کریں">
+<!ENTITY appMenuRemoteTabs.signintosync.label "&syncBrand.shortName.label;… میں سائن ان کریں">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "&syncBrand.shortName.label;… چالو کریں">
 <!ENTITY appMenuRemoteTabs.managedevices.label "آلات کو بندرست کریں…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "ہمہ وقت ساز ٹیبس کے بغلی بار کا نظارہ کریں">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "اہک اور آلہ جوڑیں">
@@ -451,6 +480,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (reportExtension.label) This label is used in the extensions
      toolbar buttons context menus, a user can use this command to submit to Mozilla
      an abuse report related to that extension. "Report" is a verb. -->
+<!ENTITY customizeMenu.reportExtension.label "ایکسٹینشن کی رپورٹ کریں">
 <!ENTITY customizeMenu.reportExtension.accesskey "o">
 
 <!-- LOCALIZATION NOTE (moreMenu.label) This label is used in the new Photon
@@ -596,8 +626,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
   "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "Pocket میں محفوظ کریں">
+<!ENTITY saveToPocketCmd.label        "Pocket میں صفحات محوظ کریں">
 <!ENTITY saveToPocketCmd.accesskey    "k">
+<!ENTITY saveLinkToPocketCmd.label    "Pocket میں ربط محفوظ کریں">
 <!ENTITY saveLinkToPocketCmd.accesskey "o">
+<!ENTITY pocketMenuitem.label         "Pocket فہرست دیکھیں">
 
 <!ENTITY emailPageCmd.label           "ای میل ربط…">
 <!ENTITY emailPageCmd.accesskey       "E">
@@ -714,7 +748,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY fullZoomEnlargeCmd.commandkey2 "="> <!-- + is above this key on many keyboards -->
 <!ENTITY fullZoomEnlargeCmd.commandkey3 "">
 
-<!ENTITY fullZoomReduceCmd.label        "باہر زوم">
+<!ENTITY fullZoomReduceCmd.label        "باہر زوم کریں">
 <!ENTITY fullZoomReduceCmd.accesskey    "O">
 
 <!ENTITY fullZoomReduceCmd.commandkey   "-">
@@ -803,8 +837,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.connectionSecure "بعید کنکشن">
 <!ENTITY identity.connectionNotSecure "کنکشن قابل بھروسا نہیں">
 
+<!ENTITY identity.connectionSecure3 "قابل بھروسا کنکشن">
+<!ENTITY identity.connectionNotSecure2 "ناقابل بھروسا کنکشن">
+<!ENTITY identity.connectionNotSecureSecurityView "آپ اس سائٹ کے ساتھ غیر محفوظ طریقے سے جڑے ہوئے ہیں۔">
 <!ENTITY identity.connectionFile "یہ صفحہ آپکے کمپیوٹر پر سٹورڈ ہے۔">
 <!ENTITY identity.connectionVerified2 "آپ محفوظ طریقے سے اس سائٹ سے جڑے ہوے ہے، کی ملکیت ہے:">
+<!ENTITY identity.connectionVerified3 "آپ اس سائٹ کے ساتھ محفوظ طریقے سے جڑے ہوئے ہیں۔">
 <!ENTITY identity.connectionInternal "یہ ایک قابل بھروسا &brandShortName; صفحہ ہے۔">
 <!ENTITY identity.extensionPage "یہ صفہ ایکسٹینشن سے لوڈ کیا گیا ہے۔">
 <!ENTITY identity.insecureLoginForms2 "اس صفحہ پر داخل کردہ لاگ ان اشتباہ کیا جا سکتا ہے۔">
@@ -828,7 +866,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.description.activeLoaded "اس ویب سائٹ میں مواد شامل ہے جو کے قابل بھروسا نہیں ہے (جیسے کے نوشتے) اور اس کے ساتھ آپ کی کنکشن قابل بھروسا نہیں ہے۔">
 <!ENTITY identity.description.activeLoaded2 "وہ معلومات جو آپ اس سائٹ کے ساتھ شیئر کرتے ہیں وہ دیگر لوگ دیکھ سکیں گے (جیسے کے پاس ورڈ، پیغامات، کریڈٹ کارڈ وغیرہ)۔">
 
-<!ENTITY identity.enableMixedContentBlocking.label "حفاظت اہل بنائیں">
+<!ENTITY identity.enableMixedContentBlocking.label "تحفظ فعال کریں">
 <!ENTITY identity.enableMixedContentBlocking.accesskey "E">
 <!ENTITY identity.disableMixedContentBlocking.label "ابھی کے لئے حفاظت کو نا اہل بنائیں">
 <!ENTITY identity.disableMixedContentBlocking.accesskey "D">
@@ -843,6 +881,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "اجازتیں">
 
+<!ENTITY identity.permissions3 "اجازتیں">
 <!ENTITY identity.permissionsEmpty "آپ نے اس سائٹ کو کوئی خاص اجازتیں نہیں دیں ہے۔">
 <!ENTITY identity.permissionsReloadHint "تبدیلی کو لگانے کے لیئے آپکو صفحہ کو دوبارہ لوڈ کرنے کی شاید ظرورت ہو۔">
 <!ENTITY identity.permissionsPreferences.tooltip "اجازت ترجیحات کھولیں">
@@ -850,9 +889,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!-- LOCALIZATION NOTE:
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
+<!ENTITY protections.settings.label "تحفظ کی سیٹنگز">
+<!ENTITY protections.showreport.label "رپورٹ دکھائیں">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
+<!ENTITY protections.siteNotWorking.label "سائٹ کام نہیں کررہی ہے؟">
 <!ENTITY protections.siteNotWorkingView.title "سائٹ کام نہیں کررہا ہے؟">
 <!-- LOCALIZATION NOTE:
      In the Site Not Working? view, we suggest turning off protections if
@@ -871,6 +913,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      "Allowed" for categories detected but not blocked in the current page, and
      "None Detected" for categories not detected in the current page.
      These strings are used in the header labels of each of these sections. -->
+<!ENTITY protections.blocking2.label "مسدود شدہ">
+<!ENTITY protections.notBlocking2.label "اجازت ہے">
+<!ENTITY protections.notFound.label "کچھ بھی نہیں ملا">
 <!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
      The "Allowed" header also includes a "Why?" link that, when hovered, shows
      a tooltip explaining why these items were not blocked in the page. -->
@@ -891,6 +936,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "&syncBrand.shortName.label; میں سائن ان کریں…">
 <!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "ابھی ہمہ وقت سازی کریں">
+<!ENTITY syncSyncNowItemSyncing.label "سنک کر رہا ہے…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "&syncBrand.shortName.label; سے پھر جڑیں…">
 <!ENTITY syncReAuthItem.accesskey     "R">
@@ -914,9 +960,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.trackersView.label "ٹریکرس">
 
 <!ENTITY contentBlocking.cookies.label "کوکیس">
+<!ENTITY contentBlocking.cookiesView.label "کوکیز اور سائٹ کے کواِئف">
 
 
+<!ENTITY contentBlocking.manageSettings2.accesskey "M">
 
+<!ENTITY contentBlocking.socialblock.label "سماجی میڈیا ٹریکرز">
 
 <!ENTITY contentBlocking.cryptominers.label "کریپٹومینر">
 <!ENTITY contentBlocking.cryptominersView.label "کریپٹومینر">
@@ -928,9 +977,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "مسائل رپورٹ کریں">
 <!ENTITY contentBlocking.breakageReportView.learnMore "مزید سیکھیں">
 
+<!ENTITY contentBlocking.breakageReportView.title "ٹوٹی ہوئی سائٹ کی رپورٹ کریں">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "مزید سیکھیں">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "URL">
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "آپ کے کیا مسائل ہیں؟ (اختیاری)">
+<!ENTITY contentBlocking.breakageReportView2.collection.comments.label "اختیاری: مسئلہ بیان کریں">
 <!ENTITY contentBlocking.breakageReportView.sendReport.label "رپورٹ ارسال کریں">
 <!ENTITY contentBlocking.breakageReportView.cancel.label "منسوخ کریں">
 
@@ -967,6 +1018,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY updateAvailable.panelUI.label "&brandShorterName; تازہ کاری کو ڈاؤن لوڈ کریں">
 <!ENTITY updateManual.panelUI.label "&brandShorterName; کی تازہ کاپی ڈاون لوڈ کرے">
+<!ENTITY updateUnsupported.panelUI.label "آپ مزید تازہ کاری نہیں کرسکتے ہیں">
 <!ENTITY updateRestart.panelUI.label2 "&brandShorterName; کی تازہ کاری کرنے کے لیئے دوبارہ شروع کریں">
 
 <!ENTITY newTabControlled.header.message "آپکا نیا ٹیب تبدیل کردیا گیا ہے۔">
@@ -982,6 +1034,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY homepageControlled.disableButton.label "توسیعات نا اہل بنائیں">
 <!ENTITY homepageControlled.disableButton.accesskey "D">
 
+<!ENTITY tabHideControlled.header.message "اپنے پوشیدہ ٹیبز تک رسائی حاصل کریں">
 <!ENTITY tabHideControlled.keepButton.label "ٹیبس کو مخفی رکھیں">
 <!ENTITY tabHideControlled.keepButton.accesskey "K">
 <!ENTITY tabHideControlled.disableButton.label "توسیعات نا اہل بنائیں">

@@ -203,6 +203,15 @@ advanced-fonts =
 colors-settings =
     .label = Colores…
     .accesskey = C
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Ampliación
+preferences-default-zoom = Ampliación predefinida
+    .accesskey = z
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Ampliar solo el texto
+    .accesskey = t
 language-header = Idioma
 choose-language-description = Elige tu idioma preferido para mostrar páginas Web.
 choose-button =
@@ -316,7 +325,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Contenido con DRM (Gestión de derechos digitales)
 play-drm-content =
@@ -571,6 +580,9 @@ containers-header = Pestañas contenedoras
 containers-add-button =
     .label = Añadir nuevo contenedor
     .accesskey = A
+containers-new-tab-check =
+    .label = Selecciona un contenedor para cada pestaña nueva
+    .accesskey = S
 containers-preferences-button =
     .label = Preferencias
 containers-remove-button =
@@ -909,7 +921,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Personalizada
     .accesskey = C
 
-
+##
 
 content-blocking-etp-standard-desc = Equilibrado para protección y rendimiento. Las páginas se cargarán normalmente.
 content-blocking-etp-strict-desc = Mayor protección, pero puede hacer que algunos sitios o contenidos fallen.
@@ -1026,6 +1038,7 @@ permissions-a11y-privacy-link = Aprender más
 collection-header = Recolección y uso de datos de { -brand-short-name }
 collection-description = Nos esforzamos por proveerte con opciones y recolectar solo lo que necesitamos para proveer y mejorar { -brand-short-name } para todos. Siempre solicitamos permiso antes de recibir información personal.
 collection-privacy-notice = Política de privacidad
+collection-health-report-telemetry-disabled = Ya no permites que { -vendor-short-name } capture datos técnicos y de interacción. Todos los datos anteriores se eliminarán dentro de 30 días.
 collection-health-report-telemetry-disabled-link = Aprender más
 collection-health-report =
     .label = Permitir a { -brand-short-name } enviar datos técnicos y de interacción a { -vendor-short-name }

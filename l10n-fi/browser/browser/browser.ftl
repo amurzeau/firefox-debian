@@ -56,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Avaa viestipaneeli
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Avaa paikannustietojen pyyntöpaneeli
+urlbar-xr-notification-anchor =
+    .tooltiptext = Avaa virtuaalitodellisuuden käyttöoikeuspaneeli
 urlbar-storage-access-anchor =
     .tooltiptext = Avaa selaamisen seuraamisoikeuden paneeli
 urlbar-translate-notification-anchor =
@@ -80,8 +82,22 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Avaa lisäosan asentamisen viestipaneeli
 urlbar-tip-help-icon =
     .title = Apua ongelmiin
+urlbar-search-tips-confirm = Selvä
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Kirjoita vähemmän, löydä enemmän: Hae hakukoneella { $engineName } suoraan osoitepalkista.
+urlbar-search-tips-redirect = Aloita hakeminen täältä, niin näet ehdotukset palvelusta { $engineName } ja selaushistoriastasi.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Olet estänyt sijaintitiedot tältä sivustolta.
+urlbar-xr-blocked =
+    .tooltiptext = Olet estänyt virtuaalitodellisuuslaitteen käytön tältä sivustolta.
 urlbar-web-notifications-blocked =
     .tooltiptext = Olet estänyt ilmoitukset tältä sivustolta.
 urlbar-camera-blocked =
@@ -154,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Yhteys ei ole suojattu
+identity-connection-secure = Yhteys on suojattu
+identity-connection-internal = Tämä on suojattu { -brand-short-name }-sivu.
+identity-connection-file = Sivu on tallennettu tietokoneellesi.
+identity-extension-page = Tämän sivun latasi laajennus.
+identity-active-blocked = { -brand-short-name } on estänyt suojaamattoman sisällön näyttämisen.
+identity-custom-root = Yhteys on suojattu varmenteella, jonka myöntäjää Mozilla ei tunnista.
+identity-passive-loaded = Tällä sivulla on suojaamatonta sisältöä (kuten kuvia).
+identity-active-loaded = Suojaamattoman sisällön estäminen on otettu pois päältä sivustolla.
+identity-weak-encryption = Sivusto käyttää heikkoa salausta.
+identity-insecure-login-forms = Tälle sivulle kirjoitettujen kirjautumistietojen turvallisuus voi vaarantua.
+identity-permissions =
+    .value = Käyttöoikeudet
+identity-permissions-reload-hint = Sivu tarvitsee ehkä päivittää, jotta muutokset tulevat voimaan.
+identity-permissions-empty = Sivustolle ei ole myönnetty mitään erityisoikeuksia.
+identity-clear-site-data =
+    .label = Poista evästeet ja sivustotiedot…
+identity-connection-not-secure-security-view = Yhteytesi tähän sivustoon ei ole suojattu.
+identity-connection-verified = Yhteytesi tähän sivustoon on suojattu.
+identity-ev-owner-label = Varmenne myönnetty taholle:
+identity-description-custom-root = Mozilla ei tunnista tämän varmenteen myöntäjää. Se on voitu lisätä käyttöjärjestelmästä tai järjestelmänvalvojan toimesta. <label data-l10n-name="link">Lue lisää</label>
+identity-remove-cert-exception =
+    .label = Poista poikkeus
+    .accesskey = s
+identity-description-insecure = Yhteytesi verkkosivustoon ei ole yksityinen. Sivullisten on mahdollista tarkastella antamiasi tietoja (esim. salasanoja, viestejä, luottokorttitietoja).
+identity-description-insecure-login-forms = Kirjautumistiedot, jotka kirjoitat tälle sivulle, eivät ole suojassa ja voidaan murtaa.
+identity-description-weak-cipher-intro = Yhteytesi verkkosivustoon käyttää heikkoa salausta eikä sen takia ole yksityinen.
+identity-description-weak-cipher-risk = Sivullisten on mahdollista tarkastella antamiasi tietoja tai vaikuttaa sivuston toimintaan.
+identity-description-active-blocked = { -brand-short-name } on estänyt suojaamattoman sisällön näyttämisen. <label data-l10n-name="link">Lue lisää</label>
+identity-description-passive-loaded = Yhteytesi verkkosivustoon ei ole yksityinen ja sivullisten on mahdollista tarkastella tietoja, joita lähetät sivustolle.
+identity-description-passive-loaded-insecure = Tällä sivulla on suojaamatonta sisältöä (kuten kuvia). <label data-l10n-name="link">Lue lisää</label>
+identity-description-passive-loaded-mixed = Vaikka { -brand-short-name } on osittain estänyt suojaamattoman sisällön, osa näkyvästä sisällöstä on edelleen suojaamatonta (kuten kuvat). <label data-l10n-name="link">Lue lisää</label>
+identity-description-active-loaded = Tällä sivulla on suojaamatonta sisältöä (kuten komentosarjoja) eikä yhteytesi sivustoon ei ole yksityinen.
+identity-description-active-loaded-insecure = Sivullisten on mahdollista tarkastella antamiasi tietoja (esim. salasanoja, viestejä, luottokorttitietoja).
+identity-learn-more =
+    .value = Lue lisää
+identity-disable-mixed-content-blocking =
+    .label = Poista suojaus käytöstä
+    .accesskey = P
+identity-enable-mixed-content-blocking =
+    .label = Ota suojaus käyttöön
+    .accesskey = O
+identity-more-info-link-text =
+    .label = Lisätietoja

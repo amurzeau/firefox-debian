@@ -31,7 +31,7 @@ onboarding-join-form-body = Skriv inn e-postadressa di for å kome i gang.
 onboarding-join-form-email =
     .placeholder = Skriv inn e-postadresse
 onboarding-join-form-email-error = Gyldig e-postadresse påkravd
-onboarding-join-form-legal = Ved å fortsetje godtek du <a data-l10n-name="terms">tenestevilkåra</a> våre og <a data-l10n-name="privacy">personvernerklæringa</a> vår.
+onboarding-join-form-legal = Ved å fortsetje godtek du <a data-l10n-name="terms">tenestevilkåra</a> våre og <a data-l10n-name="privacy">personvernpraksisen</a> vår.
 onboarding-join-form-continue = Fortset
 # This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
 onboarding-join-form-signin-label = Har du allereie ein konto?
@@ -53,8 +53,6 @@ onboarding-fullpage-form-email =
 onboarding-sync-welcome-header = Ta med deg { -brand-product-name }
 onboarding-sync-welcome-content = Få bokmerke, historikk, passord, og andre innstillingar på alle einingane dine.
 onboarding-sync-welcome-learn-more-link = Les meir om Firefox-kontoen
-onboarding-sync-form-invalid-input = Gyldig e-post påkravd
-onboarding-sync-legal-notice = Ved å fortsetje, godtek du <a data-l10n-name="terms">Tenestevilkår</a> og <a data-l10n-name="privacy">Personvernpraksis</a>.
 onboarding-sync-form-input =
     .placeholder = E-post
 onboarding-sync-form-continue-button = Fortset
@@ -104,7 +102,7 @@ onboarding-ghostery-text = Surf raskare, smartare eller sikrare med utvidingar s
 # Note: "Sync" in this case is a generic verb, as in "to synchronize"
 onboarding-fxa-title = Synkroniser
 onboarding-fxa-text = Registrer deg for eit { -fxaccount-brand-name } og synkroniser bokmerka dine, passord og opne faner overalt der du brukar { -brand-short-name }.
-onboarding-tracking-protection-title2 = Vern frå sporing
+onboarding-tracking-protection-title2 = Vern mot sporing
 onboarding-tracking-protection-text2 = { -brand-short-name } hjelper til med å stoppe nettstadar frå å spore deg på nettet, noko som gjer det vanskelegare for reklamar å følgje deg rundt om på nettet.
 onboarding-tracking-protection-button2 = Korleis det verkar
 onboarding-data-sync-title = Ta med deg innstillingane dine

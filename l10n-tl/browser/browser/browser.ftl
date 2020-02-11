@@ -56,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Buksan ang panel ng mensahe
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Buksan ang panel ng kahilingan ng lokasyon
+urlbar-xr-notification-anchor =
+    .tooltiptext = Buksan ang panel ng mga pahintulot para sa virtual reality
 urlbar-storage-access-anchor =
     .tooltiptext = Buksan ang panel ng mga pahintulot para sa browsing activity
 urlbar-translate-notification-anchor =
@@ -80,8 +82,22 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Buksan ang add-on intallation message panel
 urlbar-tip-help-icon =
     .title = Humingi ng tulong
+urlbar-search-tips-confirm = OK, nakuha ko
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Shortcut: Hanapin ang { $engineName } direkta mula sa iyong address bar.
+urlbar-search-tips-redirect = Simulan ang iyong paghahanap dito upang makita ang mga mungkahi galing sa { $engineName } at iyong browsing history.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Na-block mo ang impormasyon ng lokasyon para sa website na ito.
+urlbar-xr-blocked =
+    .tooltiptext = Hinarangan mo ang virtual reality device na mag-access para sa website na ito.
 urlbar-web-notifications-blocked =
     .tooltiptext = Na-block mo ang mga notification para sa website na ito.
 urlbar-camera-blocked =
@@ -154,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Di Matibay na Koneksyon
+identity-connection-secure = Matibay na Koneksyon
+identity-connection-internal = Ito ay secure na { -brand-short-name } na pahina.
+identity-connection-file = Ang pahinang ito ay naka-imbak sa iyong computer.
+identity-extension-page = Ang pahinang ito ay nai-load mula sa isang extension.
+identity-active-blocked = { -brand-short-name } Na-block ang mga bahagi ng pahinang ito na hindi ligtas.
+identity-custom-root = Ang connection ay na-verify ng isang certificate issuer na hindi kinikilala ng Mozilla.
+identity-passive-loaded = Ang mga bahagi ng pahinang ito ay hindi ligtas (tulad ng mga larawan).
+identity-active-loaded = Hindi mo pinagana ang proteksyon sa pahinang ito.
+identity-weak-encryption = Ang pahinang ito ay gumagamit ng mahina na pag-encrypt.
+identity-insecure-login-forms = Ang mga pag-login na ipinasok sa pahinang ito ay maaaring makompromiso.
+identity-permissions =
+    .value = Mga Pahintulot
+identity-permissions-reload-hint = Maaaring kailangan mong i-reload ang pahina para mag-aplay ang mga pagbabago.
+identity-permissions-empty = Hindi mo ipinagkaloob ang site na ito anumang espesyal na pahintulot.
+identity-clear-site-data =
+    .label = Burahin ang mga Cookie at Site Data…
+identity-connection-not-secure-security-view = Ikaw ay hindi ligtas na nakakonekta sa site na ito.
+identity-connection-verified = Ikaw ay ligtas na nakakonekta sa site na ito.
+identity-ev-owner-label = Inisyu ang certificate kay:
+identity-description-custom-root = Hindi kilala ng Mozilla ang certificate issuer na ito. Maaari itong nadagdag sa iyong operating system o ng isang administrator. <label data-l10n-name="link">Matuto ng higit pa</label>
+identity-remove-cert-exception =
+    .label = Tanggalin ang Exception
+    .accesskey = R
+identity-description-insecure = Ang iyong koneksyon sa site na ito ay hindi pribado. Ang impormasyon na iyong isinumite ay maaaring matingnan ng iba (tulad ng mga password, mensahe, credit card, atbp.).
+identity-description-insecure-login-forms = Ang impormasyon sa pag-login na ipinasok mo sa pahinang ito ay hindi ligtas at maaaring makompromiso.
+identity-description-weak-cipher-intro = Ang iyong koneksyon sa website na ito ay gumagamit ng mahina na pag-encrypt at hindi pribado.
+identity-description-weak-cipher-risk = Maaaring tingnan ng iba pang mga tao ang iyong impormasyon o baguhin ang pag-uugali ng website.
+identity-description-active-blocked = { -brand-short-name } Na-block ang mga bahagi ng pahinang ito na hindi ligtas. <label data-l10n-name="link">Matuto ng higit pa</label>
+identity-description-passive-loaded = Ang iyong koneksyon ay hindi pribado at ang impormasyon na iyong ibinabahagi sa site ay maaaring makita ng iba.
+identity-description-passive-loaded-insecure = Ang website na ito ay naglalaman ng nilalaman na hindi ligtas (tulad ng mga larawan). <label data-l10n-name="link">Matuto ng higit pa</label>
+identity-description-passive-loaded-mixed = Kahit na { -brand-short-name } Na-block ng ilang nilalaman, may nilalaman pa rin sa pahina na hindi ligtas (tulad ng mga larawan). <label data-l10n-name="link">Matuto ng higit pa</label>
+identity-description-active-loaded = Ang website na ito ay naglalaman ng nilalaman na hindi ligtas (tulad ng mga script) at ang iyong koneksyon dito ay hindi pribado.
+identity-description-active-loaded-insecure = Ang impormasyon na ibinabahagi mo sa site na ito ay maaaring makita ng iba (tulad ng mga password, mensahe, credit card, atbp.).
+identity-learn-more =
+    .value = Matuto ng higit pa
+identity-disable-mixed-content-blocking =
+    .label = Huwag paganahin ang proteksyon sa ngayon
+    .accesskey = D
+identity-enable-mixed-content-blocking =
+    .label = Paganahin ang proteksyon
+    .accesskey = E
+identity-more-info-link-text =
+    .label = Karagdagang Impormasyon

@@ -203,6 +203,15 @@ advanced-fonts =
 colors-settings =
     .label = צבעים…
     .accesskey = צ
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = מרחק מתצוגה
+preferences-default-zoom = מרחק מתצוגה ברירת מחדל
+    .accesskey = ת
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = שינוי גודל טקסט בלבד
+    .accesskey = ט
 language-header = שפה
 choose-language-description = בחירת השפה המועדפת עליך להצגת דפים
 choose-button =
@@ -316,7 +325,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = תוכן ניהול זכויות דיגיטלי (DRM)
 play-drm-content =
@@ -519,7 +528,7 @@ search-separate-default-engine =
     .label = שימוש במנוע חיפוש זה בחלונות פרטיים
     .accesskey = ש
 search-suggestions-header = הצעות חיפוש
-search-suggestions-desc = בחירת האופן שבו הצעות ממנועי חיפוש מוצגות.
+search-suggestions-desc = בחירת האופן שבו מוצגות הצעות ממנועי חיפוש.
 search-suggestions-option =
     .label = הצגת המלצות חיפוש
     .accesskey = מ
@@ -571,6 +580,9 @@ containers-header = מגירת לשוניות
 containers-add-button =
     .label = הוספת מגירה חדשה
     .accesskey = מ
+containers-new-tab-check =
+    .label = בחירת מגירה עבור כל לשונית חדשה
+    .accesskey = ב
 containers-preferences-button =
     .label = העדפות
 containers-remove-button =
@@ -899,7 +911,7 @@ enhanced-tracking-protection-setting-custom =
     .label = התאמה אישית
     .accesskey = ה
 
-
+##
 
 content-blocking-etp-standard-desc = מאוזן בין הגנה לביצועים. דפים ייטענו כרגיל.
 content-blocking-etp-strict-desc = הגנה חזקה יותר, אך עשויה לשבש פעילות של אתרים או תוכן.
@@ -1056,7 +1068,7 @@ security-block-uncommon-software =
 ## Privacy Section - Certificates
 
 certs-header = אישורים
-certs-personal-label = כאשר שרת מבקש את האישור האישי שלך
+certs-personal-label = כאשר שרת מבקש את אישור האבטחה האישי שלך
 certs-select-auto-option =
     .label = לבחור אחד באופן אוטומטי
     .accesskey = ב

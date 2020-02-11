@@ -203,6 +203,15 @@ advanced-fonts =
 colors-settings =
     .label = Fargar…
     .accesskey = F
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Skalering
+preferences-default-zoom = Standardskalering
+    .accesskey = s
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Forstørr berre tekst
+    .accesskey = o
 language-header = Språk
 choose-language-description = Vel føretrekte språk på nettsider
 choose-button =
@@ -316,7 +325,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Digital Rights Management (DRM) innhald
 play-drm-content =
@@ -542,7 +551,7 @@ search-one-click-desc = Vel alternative søkjemotorar som vert viste under adres
 search-choose-engine-column =
     .label = Søkjemotor
 search-choose-keyword-column =
-    .label = Nykelord
+    .label = Nøkkelord
 search-restore-default =
     .label = Bygg oppatt standard søkjemotorar
     .accesskey = G
@@ -555,8 +564,8 @@ search-find-more-link = Finn fleire søkjemotorar
 search-keyword-warning-title = Kopiere stikkord
 # Variables:
 #   $name (String) - Name of a search engine.
-search-keyword-warning-engine = Du har valt eit nykelord som allereie er i bruk av «{ $name }». Vel eit anna nykelord.
-search-keyword-warning-bookmark = Du har valt eit nykelord som allereie vert brukt av eit bokmerke. Vel eit anna nykelord.
+search-keyword-warning-engine = Du har valt eit nøkkelord som allereie er i bruk av «{ $name }». Vel eit anna nøkkelord.
+search-keyword-warning-bookmark = Du har valt eit nøkkelord som allereie vert brukt av eit bokmerke. Vel eit anna nøkkelord.
 
 ## Containers Section
 
@@ -571,6 +580,9 @@ containers-header = Innhaldsfaner
 containers-add-button =
     .label = Legg til ny behaldar
     .accesskey = L
+containers-new-tab-check =
+    .label = Vel ein behaldar for kvar ny fane
+    .accesskey = V
 containers-preferences-button =
     .label = Innstillingar
 containers-remove-button =
@@ -909,7 +921,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Tilpassa
     .accesskey = T
 
-
+##
 
 content-blocking-etp-standard-desc = Balansert for vern og yting. Sider vil laste normalt.
 content-blocking-etp-strict-desc = Sterkare vern, men kan føre til at nokre nettstadar eller innhald ikkje vil fungere.

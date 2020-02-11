@@ -80,6 +80,17 @@ urlbar-addons-notification-anchor =
     .tooltiptext = অ্যাড-অন ইনস্টলেশন বার্তা প্যানেল খুলুন
 urlbar-tip-help-icon =
     .title = সাহায্য নিন
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = কম লিখে, বেশি অনুসন্ধান ফলাফল পান: ঠিকানাবার থেকেই { $engineName } খুঁজুন।
+urlbar-search-tips-redirect = { $engineName } থেকে পরামর্শ ও ব্রাইজিং ইতিহাস দেখতে আপনার অনুসন্ধান শুরু করুন।
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = আপনি এই ওয়েবসাইটের জন্য অবস্থানগত তথ্য ব্লক করেছেন
 urlbar-web-notifications-blocked =
@@ -154,3 +165,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = সংযোগ নিরাপদ নয়
+identity-connection-secure = সংযোগ সুরক্ষিত
+identity-connection-internal = এটি একটি সুরক্ষিত { -brand-short-name } পাতা।
+identity-connection-file = এই পাতা আপনার কম্পিউটারে জমা হয়েছে।
+identity-extension-page = এই পাতাটি কোন এক্সটেনশন থেকে লোড হয়েছে।
+identity-active-blocked = { -brand-short-name } নিরাপদ নয় তাই এই পাতার অংশ ব্লক করা হয়েছে।
+identity-custom-root = Mozilla দ্বারা স্বীকৃত নয় এমন প্রশংসাপত্র জারিকারী দ্বারা সংযোগ যাচাই করা হয়েছে।
+identity-passive-loaded = এই পাতার অংশগুলো নিরাপদ নয় (যেমন ছবি)।
+identity-active-loaded = আপনি এই পাতায় সুরক্ষা বন্ধ করেছেন।
+identity-weak-encryption = এই পাতা দুর্বল এনক্রিপশন ব্যবহার করে।
+identity-insecure-login-forms = এই পাতায় লগইন করতে যে তথ্য দিয়েছেন তা চুরি হতে পারে।
+identity-permissions =
+    .value = অনুমোদন
+identity-permissions-reload-hint = পরিবর্তনগুলি প্রয়োগ করার জন্য আপনাকে পাতাটি পুনরায় লোড করার প্রয়োজন হতে পারে।
+identity-permissions-empty = আপনি এই সাইটের জন্য কোনো বিশেষ অনুমতি দেননি।
+identity-clear-site-data =
+    .label = কুকি এবং সাইট ডাটা পরিষ্কার করুন…
+identity-connection-not-secure-security-view = এই সাইটে আপনার সংযোগ সুরক্ষিত নয়।
+identity-connection-verified = আপনি সুরক্ষিতভাবে এই সাইটে সংযুক্ত হয়েছেন।
+identity-ev-owner-label = সার্টিফিকেট দেওয়া হয়েছে:
+identity-description-custom-root = Mozilla এই সার্টিফিকেট আনুমোদনকারীকে চিনতে পারছে না। এটি আপনার অপারেটিং সিস্টেম বা প্রশাসক দ্বারা যুক্ত করা হতে পারে। <label data-l10n-name="link">আরও জানুন</label>
+identity-remove-cert-exception =
+    .label = ব্যাতিক্রম সরিয়ে ফেলুন
+    .accesskey = R
+identity-description-insecure = এই সাইট এ আপনার সংযোগ ব্যক্তিগত নয়। আপনার জমা দেওয়া তথ্য অন্যদের দ্বারা দেখা যেতে পারে। (যেমন পাসওয়ার্ড, বার্তা, ক্রেডিট কার্ড ইত্যাদি)।
+identity-description-insecure-login-forms = আপনি এই পাতায় লগইন করতে যে তথ্য দিয়েছেন তা নিরাপদ নয় এবং চুরিও হতে পারে।
+identity-description-weak-cipher-intro = এই ওয়েবসাইটে আপনার সংযোগ দুর্বল এনক্রিপশন ব্যবহার করে এবং এটি ব্যক্তিগত নয়।
+identity-description-weak-cipher-risk = যে কেউ আপনার দেয়া তথ্য দেখতে পারে বা ওয়েব সাইটের আচরন পরিবর্তন করতে পারে।
+identity-description-active-blocked = { -brand-short-name } নিরাপদ নয় তাই এই পাতার কিছু অংশ ব্লক করা হয়েছে। <label data-l10n-name="link">আরও জানুন</label>
+identity-description-passive-loaded = আপনার সংযোগটি ব্যক্তিগত নয় এবং এই সাইটে আপনার শেয়ার করা তথ্য অন্যদের দ্বারা দেখা যেতে পারে।
+identity-description-passive-loaded-insecure = এই ওয়েবসাইটে এমন কিছু কন্টেন্ট রয়েছে যা নিরাপদ নয় (যেমন ছবি)। <label data-l10n-name="link">আরও জানুন</label>
+identity-description-passive-loaded-mixed = যদিও { -brand-short-name } কিছু কন্টেন্ট প্রতিরোধ করেছে, তবুও পাতাটিতে এখনও কিছু কন্টেন্ট আছে যা নিরাপদ নয় (যেমন ছবি)। <label data-l10n-name="link">আরও জানুন</label>
+identity-description-active-loaded = এই ওয়েবসাইটে যে বিষয়বস্তু রয়েছে তা নিরাপদ নয় (যেমন স্ক্রিপ্ট) এবং আপনার সংযোগটি ব্যক্তিগত নয়।
+identity-description-active-loaded-insecure = আপনার এই সাইটে শেয়ার করা তথ্য অন্যরা দেখতে পারেন (যেমন পাসওয়ার্ড, বার্তা, ক্রেডিট কার্ড, ইত্যাদি।)।
+identity-learn-more =
+    .value = আরও জানুন
+identity-disable-mixed-content-blocking =
+    .label = এখন সুরক্ষা নিষ্ক্রিয় করুন
+    .accesskey = এ
+identity-enable-mixed-content-blocking =
+    .label = E ইমেইলের নিরাপত্তা
+    .accesskey = E
+identity-more-info-link-text =
+    .label = আরও তথ্য

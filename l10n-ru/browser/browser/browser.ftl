@@ -82,6 +82,18 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Открыть панель сообщения об установке дополнения
 urlbar-tip-help-icon =
     .title = Получить помощь
+urlbar-search-tips-confirm = Хорошо, понятно
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Набирайте меньше, находите больше: Ищите в { $engineName } прямо из адресной строки.
+urlbar-search-tips-redirect = Начните поиск отсюда, чтобы увидеть предложения из { $engineName } и истории посещений.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Вы заблокировали доступ этого веб-сайта к информации о местоположении.
 urlbar-xr-blocked =
@@ -158,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Незащищённое соединение
+identity-connection-secure = Защищённое соединение
+identity-connection-internal = Это встроенная страница { -brand-short-name }.
+identity-connection-file = Эта страница хранится на вашем компьютере.
+identity-extension-page = Эта страница загружена из расширения.
+identity-active-blocked = { -brand-short-name } заблокировал незащищённые части этой страницы.
+identity-custom-root = Соединение удостоверено сертификатом, издатель которого не распознан Mozilla.
+identity-passive-loaded = Части этой страницы (такие как изображения) не защищены.
+identity-active-loaded = Вы отключили защиту на этой странице.
+identity-weak-encryption = Эта страница использует слабое шифрование.
+identity-insecure-login-forms = Учётные данные, вводимые на этой странице, могут быть скомпрометированы.
+identity-permissions =
+    .value = Разрешения
+identity-permissions-reload-hint = Чтобы изменения возымели действие, вам, возможно, потребуется перезагрузить страницу.
+identity-permissions-empty = Вы не давали этому сайту каких-либо специальных разрешений.
+identity-clear-site-data =
+    .label = Удалить куки и данные сайта…
+identity-connection-not-secure-security-view = Вы подключились к этому сайту по незащищённому соединению.
+identity-connection-verified = Вы подключились к этому сайту по защищённому соединению.
+identity-ev-owner-label = Сертификат выдан:
+identity-description-custom-root = Mozilla не может распознать этого издателя сертификатов. Возможно, он был добавлен из вашей операционной системы или администратором. <label data-l10n-name="link">Подробнее</label>
+identity-remove-cert-exception =
+    .label = Удалить исключение
+    .accesskey = л
+identity-description-insecure = Ваше соединение с этим сайтом не защищено. Вводимая вами информация может быть видна посторонним (например, пароли, сообщения, номера кредитных карт и т.д.).
+identity-description-insecure-login-forms = Учётные данные, вводимые вами на этой странице, не защищены и могут быть скомпрометированы.
+identity-description-weak-cipher-intro = Ваше соединение с этим веб-сайтом использует слабое шифрование и не защищено.
+identity-description-weak-cipher-risk = Посторонние лица могут просматривать вашу информацию или изменять поведение веб-сайта.
+identity-description-active-blocked = { -brand-short-name } заблокировал незащищённые части этой страницы. <label data-l10n-name="link">Подробнее</label>
+identity-description-passive-loaded = Ваше соединение не является защищённым и информация, вводимая вами на этом сайте, может быть видна посторонним.
+identity-description-passive-loaded-insecure = Этот веб-сайт содержит незащищённое содержимое (такое как изображения). <label data-l10n-name="link">Подробнее</label>
+identity-description-passive-loaded-mixed = Хотя { -brand-short-name } заблокировал некоторое содержимое, на этой странице всё ещё имеется незащищённое содержимое (такое как изображения). <label data-l10n-name="link">Подробнее</label>
+identity-description-active-loaded = Этот веб-сайт содержит незащищённое содержимое (такое как сценарии) и ваше соединение с ним является незащищённым.
+identity-description-active-loaded-insecure = Информация, вводимая вами на этом сайте, может быть видна посторонним (например, пароли, сообщения, номера кредитных карт и т.д.).
+identity-learn-more =
+    .value = Подробнее
+identity-disable-mixed-content-blocking =
+    .label = Пока отключить защиту
+    .accesskey = а
+identity-enable-mixed-content-blocking =
+    .label = Включить защиту
+    .accesskey = ю
+identity-more-info-link-text =
+    .label = Подробнее

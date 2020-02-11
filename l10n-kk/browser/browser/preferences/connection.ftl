@@ -35,6 +35,11 @@ connection-proxy-http-share =
     .accesskey = К
 connection-proxy-ssl = SSL прокси
     .accesskey = S
+connection-proxy-http-sharing =
+    .label = FTP және HTTPS үшін де бұл проксиді қолдану
+    .accesskey = с
+connection-proxy-https = HTTPS проксиі
+    .accesskey = п
 connection-proxy-ssl-port = Порт
     .accesskey = о
 connection-proxy-ftp = FTP прокси
@@ -54,6 +59,8 @@ connection-proxy-socks5 =
 connection-proxy-noproxy = Келесі үшін прокси қолданбау
     .accesskey = л
 connection-proxy-noproxy-desc = Мысалы: .mozilla-russia.org, .net.nz, 192.168.1.0/24
+# Do not translate localhost, 127.0.0.1 and ::1.
+connection-proxy-noproxy-localhost-desc = localhost, 127.0.0.1, және ::1 адрестеріне байланыстар проксиді қолданбайды.
 connection-proxy-autotype =
     .label = Прокси серверді автоматты түрде баптайтын URL
     .accesskey = а
@@ -70,12 +77,6 @@ connection-proxy-socks-remote-dns =
 connection-dns-over-https =
     .label = HTTPS арқылы DNS іске қосу
     .accesskey = ы
-# Variables:
-#   $url (String) - URL for the DNS over HTTPS provider
-connection-dns-over-https-url-default =
-    .label = Бастапқысын қолдану ({ $url })
-    .accesskey = ы
-    .tooltiptext = HTTPS арқылы DNS шешу үшін бастапқы URL қолдану
 connection-dns-over-https-url-resolver = Провайдерді қолдану
     .accesskey = п
 # Variables:

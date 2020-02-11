@@ -203,6 +203,13 @@ advanced-fonts =
 colors-settings =
     .label = Mga Kulay…
     .accesskey = M
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Zoom
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = I-zoom ang text lamang
+    .accesskey = z
 language-header = Wika
 choose-language-description = Pumili ng iyong gustong wika para sa pagpapakita ng mga pahina
 choose-button =
@@ -368,7 +375,7 @@ update-in-progress-cancel-button = &Magpatuloy
 
 ## General Section - Performance
 
-performance-title = Pagganap
+performance-title = Performance
 performance-use-recommended-settings-checkbox =
     .label = Gamitin ang inirerekomendang mga performance setting
     .accesskey = U
@@ -727,6 +734,7 @@ privacy-header = Browser Privacy
 ## Privacy Section - Logins and Passwords
 
 logins-header = Mga Login at mga Password
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Magtanong kung dapat mag-save ng mga login at password sa mga website
     .accesskey = r
@@ -740,6 +748,7 @@ forms-breach-alerts =
     .label = Magpakita ng mga alerto tungkol sa mga password sa mga breached website
     .accesskey = b
 forms-breach-alerts-learn-more-link = Alamin
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = I-autofill ang mga login at password
     .accesskey = i
@@ -1007,6 +1016,7 @@ permissions-a11y-privacy-link = Matuto ng higit pa
 collection-header = Pagkolekta at Paggamit ng { -brand-short-name } sa Data
 collection-description = Nagsusumikap kaming mabigyan ka ng mga pagpipilian at kolektahin lamang kung ano ang kailangan namin upang mapaganda ang { -brand-short-name } para sa lahat. Lagi kaming humihingi ng pahintulot bago tumanggap ng personal na impormasyon.
 collection-privacy-notice = Abisong Pribasiya
+collection-health-report-telemetry-disabled-link = Matuto ng higit pa
 collection-health-report =
     .label = Payagan ang { -brand-short-name } na magpadala ng data ng teknikal at pakikipag-ugnayan sa { -vendor-short-name }
     .accesskey = r

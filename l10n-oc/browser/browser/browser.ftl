@@ -76,6 +76,20 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Gardar las donadas dins un emmagazinatge permanent
 urlbar-addons-notification-anchor =
     .tooltiptext = Mostrar lo messatge d'installation del modul
+urlbar-tip-help-icon =
+    .title = Obténer d’ajuda
+urlbar-search-tips-confirm = Òc, plan comprés
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Escrivètz mens, trobatz mai : cercatz amb { $engineName } dirèctament de la barra d’adreça.
+urlbar-search-tips-redirect = Començatz vòstra recèrca aquí per far veire las suggestions de { $engineName } e de vòstre istoric.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Avètz blocat la geolocalizacion per aqueste site.
 urlbar-web-notifications-blocked =
@@ -117,6 +131,9 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Aqueste còp, recercar amb :
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -142,3 +159,48 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 26em
+
+## Identity Panel
+
+identity-connection-not-secure = La connexion pas segura
+identity-connection-secure = Connexion segura
+identity-connection-internal = Aquò es una pagina segura de { -brand-short-name }.
+identity-connection-file = Aquela pagina es enregistrada dins vòstre ordinador.
+identity-extension-page = Aquela pagina es estada cargada d’una extension.
+identity-active-blocked = { -brand-short-name } a blocat d'elements pas segurs sus aquela pagina.
+identity-passive-loaded = D'elements de la pagina son pas segurs (coma los imatges).
+identity-active-loaded = Avètz desactivat la proteccion sus aquela pagina.
+identity-weak-encryption = Aquela pagina utiliza un chiframent flac.
+identity-insecure-login-forms = Los identificants marcats sus aquela pagina pòdon far perilh.
+identity-permissions =
+    .value = Permissions
+identity-permissions-reload-hint = Benlèu deuriatz actualizar la pagina per que s'apliquen los cambiaments.
+identity-permissions-empty = Avètz donat pas cap de permission espaciala a aquel site.
+identity-clear-site-data =
+    .label = Escafar los cookies e las donadas de site…
+identity-connection-not-secure-security-view = Sètz pas connectat amb seguretat a aquel site.
+identity-connection-verified = Sètz connectat amb seguretat a aquel site.
+identity-ev-owner-label = Certificat emés per :
+identity-remove-cert-exception =
+    .label = Suprimir l'excepcion
+    .accesskey = L
+identity-description-insecure = La vòstra connexion a aquel site es pas privada. Las informacions qu'enviatz pòdon èsser vistas per d’autres (coma per exemple los senhals, los messatges, las cartas de crèdit, etc.).
+identity-description-insecure-login-forms = Las informacions d’identificacion que marcatz sus aquela pagina son pas seguras e pòdon far perilh.
+identity-description-weak-cipher-intro = Vòstra connexion a aquel site web utiliza un chiframent flac e es pas privada.
+identity-description-weak-cipher-risk = D’autres pòdon accedir a vòstras informacions o modificar lo compòrtament del site web.
+identity-description-active-blocked = { -brand-short-name } a blocat d'elements pas segurs sus aquela pagina. <label data-l10n-name="link">Ne saber mai</label>
+identity-description-passive-loaded = Vòstra connexion es pas privada e las informacions que partejatz amb aquel site pòdon èsser vistas per d’autres.
+identity-description-passive-loaded-insecure = Aquel site ten de contenguts pas segurs (coma d'imatges). <label data-l10n-name="link">Ne saber mai</label>
+identity-description-passive-loaded-mixed = Pasmens se { -brand-short-name } a blocat de contengut, demòra d'elements pas segurs sus la pagina (coma d'imatges). <label data-l10n-name="link">Ne saber mai</label>
+identity-description-active-loaded = Aquel site web ten de contengut non segurs (coma d'scripts) e la connexion establida es pas privada.
+identity-description-active-loaded-insecure = Las informacions que partejatz amb aquel site pòdon èsser vistas per d’autres (coma par exemple los senhals, los messatges, las cartas de crèdit, etc.).
+identity-learn-more =
+    .value = Ne saber mai
+identity-disable-mixed-content-blocking =
+    .label = Desactivar la proteccion per ara
+    .accesskey = D
+identity-enable-mixed-content-blocking =
+    .label = Activar la proteccion
+    .accesskey = A
+identity-more-info-link-text =
+    .label = Mai d’informacions

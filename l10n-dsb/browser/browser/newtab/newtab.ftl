@@ -91,9 +91,14 @@ newtab-privacy-modal-paragraph =
     wjelgin pśeglědane wopśimjeśe wót wubranych sponsorow. Buźćo wěsty, waše pśeglědowańske 
     daty wašu wósobinsku wersiju { -brand-product-name } nigda njespušća ­­- njewiźimy je, a naše 
     sponsory teke nic.
+newtab-privacy-modal-paragraph-2 =
+    Pśidatnje k našwicanjeju pśejmajucych tšojenjow, pokazujomy wam teke relewantny, 
+    wjelgin pśeglědane wopśimjeśe wót wubranych sponsorow. Buźćo wěsty, <strong>waše pśeglědowańske 
+    daty wašu wósobinsku wersiju { -brand-product-name } nigda njespušća</strong> ­­- njewiźimy je, a naše 
+    sponsory teke nic.
 newtab-privacy-modal-link = Zgóńśo, kak priwatnosć w nowem rejtarku funkcioněrujo
 
-
+##
 
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Cytańske znamje wótpóraś
@@ -128,6 +133,10 @@ newtab-label-removed-bookmark = Cytańske znamje jo wótwónoźone
 newtab-label-recommended = Popularny
 newtab-label-saved = Do { -pocket-brand-name } skłaźony
 newtab-label-download = Ześěgnjony
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } - sponsorowane
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -180,7 +189,6 @@ newtab-discovery-empty-section-topstories-timed-out = Hopla! Smy womało zacytal
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Woblubowane temy:
 newtab-pocket-more-recommendations = Dalšne pórucenja
-newtab-pocket-how-it-works = Kak funkcioněrujo
 newtab-pocket-whats-pocket = Co jo { -pocket-brand-name }?
 newtab-pocket-cta-button = { -pocket-brand-name } wobstaraś
 newtab-pocket-cta-text = Składujśo tšojeńka, kótarež se wam spódobuju, w { -pocket-brand-name } a žywśo swój duch z fasciněrujucymi cytańkami.

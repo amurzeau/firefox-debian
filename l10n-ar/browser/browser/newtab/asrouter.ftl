@@ -9,7 +9,7 @@ cfr-doorhanger-extension-heading = الامتدادات المقترحة
 cfr-doorhanger-feature-heading = ميّزة موصى بها
 cfr-doorhanger-pintab-heading = هيا جرّب: ثبّت اللسان
 
-
+##
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = لماذا أرى هذا
@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = من { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = توصية
+cfr-doorhanger-extension-notification2 = توصية
+    .tooltiptext = نُوصيك بامتداد
+    .a11y-announcement = توصية بوجود امتداد
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = توصية
+    .tooltiptext = نُوصيك بامتداد
+    .a11y-announcement = توصية بوجود امتداد
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -129,10 +137,12 @@ cfr-whatsnew-lockwise-take-link-text = نزّل التطبيق
 ## Picture-in-Picture
 
 cfr-whatsnew-pip-header = شاهِد الڤِديوهات بينما تتصفّح
+cfr-whatsnew-pip-body = في وضع الڤديوهات المعترِضة (Picture-in-picture)، يصير الڤديو داخل نافذة تكون أعلى كلّ شيء لتُطالعه وأنت تؤدّي أشغالك في الألسنة الأخرى.
 cfr-whatsnew-pip-cta = اطّلع على المزيد
 
 ## Permission Prompt
 
+cfr-whatsnew-permission-prompt-header = قلّلنا عدد المُنبثقات المزعجة
 cfr-whatsnew-permission-prompt-body = بات { -brand-shorter-name } يحجب طلبات المواقع بإرسال الرسائل المنبثقة تلقائيًا.
 cfr-whatsnew-permission-prompt-cta = اطّلع على المزيد
 
@@ -150,6 +160,10 @@ cfr-whatsnew-fingerprinter-counter-header =
         [many] مسجّلات البصمات المحجوبة
        *[other] مسجّلات البصمات المحجوبة
     }
+cfr-whatsnew-fingerprinter-counter-body = يحجب { -brand-shorter-name } العديد من مسجّلات البصمات التي تجمع معلومات جهازك وأفعالك لتفتح عنك ملفًا شخصيًا تستعمله للإعلانات.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = مسجّلات البصمات
+cfr-whatsnew-fingerprinter-counter-body-alt = يمكن أن يحجب { -brand-shorter-name } العديد من مسجّلات البصمات التي تجمع معلومات جهازك وأفعالك لتفتح عنك ملفًا شخصيًا تستعمله للإعلانات.
 
 ## Bookmark Sync
 
@@ -182,6 +196,8 @@ cfr-doorhanger-firefox-send-ok-button = جرّب { -send-brand-name }
 
 ## Social Tracking Protection
 
+cfr-doorhanger-socialtracking-ok-button = طالِع الحمايات
+    .accesskey = ط
 cfr-doorhanger-socialtracking-close-button = أغلِق
     .accesskey = غ
 cfr-doorhanger-socialtracking-dont-show-again = لا تعرض هذه الرسائل ثانيةً
@@ -190,6 +206,7 @@ cfr-doorhanger-socialtracking-heading = منع { -brand-short-name } إحدى ا
 cfr-doorhanger-socialtracking-description = خصوصيتك فوق كل شيء. بات { -brand-short-name } يحجب أكثر متعقّبات الشبكات الاجتماعية شيوعًا فيحدّ من بياناتك وأنت تتصفّح الإنترنت التي تجمعها.
 cfr-doorhanger-fingerprinters-heading = حجب { -brand-short-name } مسجّل بصمات في هذه الصفحة
 cfr-doorhanger-fingerprinters-description = خصوصيتك فوق كل شيء. بات { -brand-short-name } يحجب مسجّلات البصمات التي تجمع المعلومات الفريدة التي تحدّد جهازك عن غيرك، كلّه لتتعقّبك.
+cfr-doorhanger-cryptominers-heading = حجب { -brand-short-name } مُعدّنًا معمّى في هذه الصفحة
 cfr-doorhanger-cryptominers-description = خصوصيتك فوق كل شيء. بات { -brand-short-name } يحجب المُعدّنات المعمّاة التي تستعمل قوّة الحساب لنظامك لتُعدّن النقود الرقمية.
 
 ## Enhanced Tracking Protection Milestones
@@ -206,3 +223,5 @@ cfr-doorhanger-milestone-heading =
         [many] حجب { -brand-short-name } ما يزيد على <b>{ $blockedCount }</b> متعقّبًا منذ { $date }!
        *[other] حجب { -brand-short-name } ما يزيد على <b>{ $blockedCount }</b> متعقّب منذ { $date }!
     }
+cfr-doorhanger-milestone-ok-button = اعرض الكل
+    .accesskey = ع

@@ -32,15 +32,16 @@ inactive-css-not-inline-or-tablecell = <strong>{ $property }</strong> nedaro pov
 inactive-css-property-because-of-display = <strong>{ $property }</strong> nedaro poveikio šiam elementui, kadangi jis turi „display“ tipą <strong>{ $display }</strong>.
 inactive-css-not-display-block-on-floated = Varikliukas pakeitė <strong>display</strong> reikšmę į <strong>block</strong>, nes elementas yra su <strong>float<strong>.
 inactive-css-property-is-impossible-to-override-in-visited = Neįmanoma pakeisti <strong>{ $property }</strong> dėl <strong>:visited</strong> apribojimo.
+inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> nedaro poveikio šiam elementui, kadangi jis nėra pozicionuotas elementas.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
 ## the problem can be solved.
 
 inactive-css-not-grid-or-flex-container-fix = Pabandykite pridėti <strong>display:grid</strong> arba <strong>display:flex</strong>. { learn-more }
-inactive-css-not-grid-or-flex-container-or-multicol-container-fix = Pabandykite pridėti <strong>display:grid</strong>, <strong>display:flex</strong>, arba <strong>columns:2</strong>. { learn-more }
 inactive-css-not-grid-or-flex-item-fix = Pabandykite pridėti <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong> arba <strong>display:inline-flex</strong>. { learn-more }
 inactive-css-not-grid-item-fix = Pabandykite pridėti <strong>display:grid</strong> arba <strong>display:inline-grid</strong> tėviniam elementui. { learn-more }
+inactive-css-not-grid-or-flex-container-or-multicol-container-fix = Pabandykite pridėti <strong>display:grid</strong>, <strong>display:flex</strong>, arba <strong>columns:2</strong>. { learn-more }
 inactive-css-not-grid-or-flex-item-fix-2 = Pabandykite pridėti <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong>, arba <strong>display:inline-flex</strong>. { learn-more }
 inactive-css-not-grid-item-fix-2 = Pabandykite pridėti <strong>display:grid</strong> arba <strong>display:inline-grid</strong> tėviniam elementui. { learn-more }
 inactive-css-not-grid-container-fix = Pabandykite pridėti <strong>display:grid</strong> arba <strong>display:inline-grid</strong>. { learn-more }
@@ -51,3 +52,4 @@ inactive-css-not-inline-or-tablecell-fix = Pabandykite pridėti <strong>display:
 inactive-css-non-replaced-inline-or-table-row-or-row-group-fix = Pabandykite pridėti <strong>display:inline-block</strong> arba <strong>display:block</strong>. { learn-more }
 inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Pabandykite pridėti <strong>display:inline-block</strong>. { learn-more }
 inactive-css-not-display-block-on-floated-fix = Pabandykite nuimti <strong>float</strong> arba pridėti <strong>display:block</strong>. { learn-more }
+inactive-css-position-property-on-unpositioned-box-fix = Pabandykite nustatyti jo <strong>position</strong> savybės reikšmę į kitą negu <strong>static</strong>. { learn-more }

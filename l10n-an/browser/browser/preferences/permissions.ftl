@@ -34,8 +34,15 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Alzar os cambios
     .accesskey = A
+permissions-autoplay-menu = Per defecto pa totz los puestos web:
 permissions-searchbox =
     .placeholder = Mirar puesto web
+permissions-capabilities-autoplay-allow =
+    .label = Permitir l'audio y lo video
+permissions-capabilities-autoplay-block =
+    .label = Blocar l'audio
+permissions-capabilities-autoplay-blockall =
+    .label = Blocar l'audio y lo video
 permissions-capabilities-allow =
     .label = Permitir
 permissions-capabilities-block =
@@ -46,8 +53,6 @@ permissions-capabilities-listitem-allow =
     .value = Permitir
 permissions-capabilities-listitem-block =
     .value = Blocar
-permissions-capabilities-listitem-allow-first-party =
-    .value = Permitir solo que a primera parte
 permissions-capabilities-listitem-allow-session =
     .value = Permitir ta ista sesión
 
@@ -61,6 +66,11 @@ permissions-invalid-uri-label = Introduzca un nombre de servidor valido
 permissions-exceptions-content-blocking-window =
     .title = Excepcions - Bloqueyo de contenius
     .style = { permissions-window.style }
+permissions-exceptions-content-blocking-desc = Has desactivau lo bloqueyo de contenius en estes puestos web.
+permissions-exceptions-etp-window =
+    .title = Excepcions pa la protección de seguimiento millorada
+    .style = { permissions-window.style }
+permissions-exceptions-etp-desc = Has desactivau las proteccions d'estes puestos web.
 
 ## Exceptions - Cookies
 
@@ -92,6 +102,17 @@ permissions-exceptions-addons-desc = Puede especificar qué puestos web pueden i
 
 ## Exceptions - Autoplay Media
 
+permissions-exceptions-autoplay-media-window2 =
+    .title = Excepcions - Lectura automatica
+    .style = { permissions-window.style }
+permissions-exceptions-autoplay-media-desc2 = Puetz indicar qués puestos web tienen siempre u nunca lo permiso pa reproducir automaticament conteniu multimedia con son. Escribe las adrezas d'os puestos que queretz blocar u autorizar.
+
+## Site Permissions - Autoplay
+
+permissions-site-autoplay-window =
+    .title = Achustes - Lectura automatica
+    .style = { permissions-window.style }
+permissions-site-autoplay-desc = Puetz chestionar dende aquí los puestos que no siguen los parametros de reproducción automatica per defecto.
 
 ## Site Permissions - Notifications
 
@@ -112,6 +133,16 @@ permissions-site-location-desc = Los siguients puestos web han demanda acceso a 
 permissions-site-location-disable-label =
     .label = Blocar nuevas demandas d'acceso a la tuya ubicación
 permissions-site-location-disable-desc = Esto privará que garra puesto web no listau alto te pueda demandar permiso pa acceder ta la tuya ubicación. Blocar l'acceso a la tuya ubicación podría trencar bella caracteristica de bells puestos web.
+
+## Site Permissions - Virtual Reality
+
+permissions-site-xr-window =
+    .title = Achustes - Permisos de realidat virtual
+    .style = { permissions-window.style }
+permissions-site-xr-desc = Los puestos web siguients han demandau l'acceso a los tuyos dispositivos de realidat virutal. Puetz especificar qué puestos web son autorizaus a acceder a los dispositivos de realidat virtual. Tamién puetz blocar las nuevas demandas d'acceso a ixes dispositivos.
+permissions-site-xr-disable-label =
+    .label = Blocar nuevas demandas d'accesos a los tuyos dispositivos de realidat virtual
+permissions-site-xr-disable-desc = Esto privará a totz los puestos web que no sigan listaus aquí debaixo de demandar permiso d'acceso a los tuyos dispositivos de realidat virutal. Blocar l'acceso a estes dispositivos puede restrinchir las funcionalidatz de bell puesto web.
 
 ## Site Permissions - Camera
 

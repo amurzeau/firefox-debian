@@ -9,10 +9,11 @@ forward = 앞으로
 reload = 새로고침
 home = 홈
 fullscreen = 전체화면
+touchbar-fullscreen-exit = 전체 화면 종료
 find = 찾기
 new-tab = 새 탭
-add-bookmark = 즐겨찾기 추가
-open-bookmarks-sidebar = 즐겨찾기 탐색창 보기
+add-bookmark = 북마크 추가
+open-bookmarks-sidebar = 북마크 탐색창 열기
 reader-view = 리더뷰
 # Meant to match the string displayed in an empty URL bar.
 open-location = 검색어 또는 주소 입력
@@ -33,5 +34,5 @@ search-opentabs = 열린 탭
 search-tags = 태그
 search-titles = 제목
 
-
+##
 

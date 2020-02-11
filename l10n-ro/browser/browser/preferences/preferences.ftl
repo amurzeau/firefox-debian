@@ -206,6 +206,15 @@ advanced-fonts =
 colors-settings =
     .label = Culori…
     .accesskey = C
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Zoom
+preferences-default-zoom = Zoom implicit
+    .accesskey = z
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Zoom numai pe text
+    .accesskey = t
 language-header = Limbă
 choose-language-description = Alege limba în care preferi să vezi paginile
 choose-button =
@@ -290,6 +299,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Folosește { $plugin-name } (în { -brand-short-name })
@@ -315,7 +328,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Conținut Digital Rights Management (DRM)
 play-drm-content =
@@ -561,6 +574,12 @@ search-keyword-warning-bookmark = Ai ales un cuvânt cheie care este folosit de 
 ## Containers Section
 
 containers-back-link = « Întoarce-te
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Înapoi la Opțiuni
+           *[other] Înapoi la Preferințe
+        }
 containers-header = File container
 containers-add-button =
     .label = Adaugă un container nou
@@ -584,6 +603,9 @@ sync-signedout-account-create = Nu ai un cont? Începe
 sync-signedout-account-signin =
     .label = Autentifică-te…
     .accesskey = I
+sync-signedout-account-signin2 =
+    .label = Autentificare în { -sync-brand-short-name }…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -604,6 +626,9 @@ sync-profile-picture =
 sync-disconnect =
     .label = Deconectează-te…
     .accesskey = D
+sync-sign-out =
+    .label = Deconectează-te…
+    .accesskey = g
 sync-manage-account = Gestionează contul
     .accesskey = o
 sync-signedin-unverified = { $email } nu este verificat.
@@ -624,6 +649,10 @@ sync-signedin-settings-desc = Alege ce să sincronizezi pe dispozitive folosind 
 
 prefs-syncing-on = Sincronizare: ACTIVATĂ
 prefs-syncing-off = Sincronizare: DEZACTIVATĂ
+prefs-sync-setup =
+    .label = Configurare { -sync-brand-short-name }…
+    .accesskey = S
+prefs-sync-offer-setup-label = Sincronizează-ți marcajele, istoricul, filele, parolele, suplimentele și preferințele pe toate dispozitivele.
 prefs-sync-now =
     .labelnotsyncing = Sincronizează acum
     .accesskeynotsyncing = N
@@ -670,6 +699,10 @@ sync-engine-tabs =
 sync-engine-logins =
     .label = Date de autentificare
     .tooltiptext = Numele de utilizatori și parolele pe care le-ai salvat
+    .accesskey = L
+sync-engine-logins-passwords =
+    .label = Date de autentificare și parole
+    .tooltiptext = Denumiri de utilizator și parole salvate
     .accesskey = L
 sync-engine-addresses =
     .label = Adrese
@@ -889,7 +922,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Personalizată
     .accesskey = C
 
-
+##
 
 content-blocking-etp-standard-desc = Echilibrat pentru protecție și performanță. Paginile se vor încărca normal.
 content-blocking-etp-strict-desc = O protecție mai puternică, dar poate provoca funcționarea necorespunzătoare a site-urilor sau a conținutului.
@@ -903,7 +936,7 @@ content-blocking-all-windows-trackers = Elemente de urmărire cunoscute în toat
 content-blocking-all-windows-tracking-content = Conținut de urmărire în toate ferestrele
 content-blocking-all-third-party-cookies = Toate cookie-urile de la terți
 content-blocking-cryptominers = Criptomineri
-content-blocking-fingerprinters = Detectoare de amprente digitale
+content-blocking-fingerprinters = Generatoare de amprente digitale
 content-blocking-warning-title = Atenție!
 content-blocking-warning-description = Blocarea conținutului poate împiedica funcționarea unor site-uri web. Deblocarea se poare realiza ușor pentru site-urile în care ai încredere.
 content-blocking-learn-how = Află cum
@@ -938,7 +971,7 @@ content-blocking-cryptominers-label =
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
-    .label = Detectoare de amprente digitale
+    .label = Generatoare de amprente digitale
     .accesskey = F
 
 ## Privacy Section - Tracking
@@ -954,6 +987,10 @@ permissions-location = Locație
 permissions-location-settings =
     .label = Setări…
     .accesskey = l
+permissions-xr = Realitate virtuală
+permissions-xr-settings =
+    .label = Setări…
+    .accesskey = t
 permissions-camera = Cameră
 permissions-camera-settings =
     .label = Setări…
@@ -1002,6 +1039,8 @@ permissions-a11y-privacy-link = Află mai multe
 collection-header = Colectarea și utilizarea de date din { -brand-short-name }
 collection-description = Ne străduim să îți oferim posibilitatea de a face alegeri și colectăm doar ceea ce avem nevoie ca să furnizăm și să îmbunătățim { -brand-short-name } pentru toată lumea. Întotdeauna solicităm permisiunea înainte de a primi informații cu caracter personal.
 collection-privacy-notice = Declarație de confidențialitate
+collection-health-report-telemetry-disabled = Nu mai permiți { -vendor-short-name } să îți capteze datele tehnice și de interacționare. Toate datele anterioare vor fi șterse în 30 de zile.
+collection-health-report-telemetry-disabled-link = Află mai multe
 collection-health-report =
     .label = Permite ca { -brand-short-name } să trimită informații tehnice și interactive către { -vendor-short-name }
     .accesskey = r

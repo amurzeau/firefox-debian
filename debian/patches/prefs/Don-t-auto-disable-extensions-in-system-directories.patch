@@ -7,10 +7,10 @@ Subject: Don't auto-disable extensions in system directories
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/browser/app/profile/firefox.js b/browser/app/profile/firefox.js
-index 1c44513c2b5..0ec4f3ad5bc 100644
+index fcdeff7ef64..aa008417d7f 100644
 --- a/browser/app/profile/firefox.js
 +++ b/browser/app/profile/firefox.js
-@@ -60,7 +60,7 @@ pref("extensions.systemAddon.update.enabled", true);
+@@ -56,7 +56,7 @@ pref("extensions.systemAddon.update.enabled", true);
  
  // Disable add-ons that are not installed by the user in all scopes by default.
  // See the SCOPE constants in AddonManager.jsm for values to use here.

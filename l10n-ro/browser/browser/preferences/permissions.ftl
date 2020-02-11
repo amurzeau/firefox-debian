@@ -134,6 +134,16 @@ permissions-site-location-disable-label =
     .label = Blochează noile solicitări de accesare a locației
 permissions-site-location-disable-desc = Acest lucru va împiedica orice site web care nu este listat mai sus să ceară permisiunea de a-ți accesa locația. Blocarea accesului la locație ar putea interfera cu unele funcții ale site-urilor web.
 
+## Site Permissions - Virtual Reality
+
+permissions-site-xr-window =
+    .title = Setări - Permisiuni pentru realitate virtuală
+    .style = { permissions-window.style }
+permissions-site-xr-desc = Următoarele site-uri web au solicitat să îți acceseze dispozitivele de realitate virtuală. Poți specifica ce site-uri web au permisiunea de a-ți accesa dispozitivele de realitate virtuală. De asemenea, poți bloca noile solicitări de accesare a dispozitivelor tale de realitate virtuală.
+permissions-site-xr-disable-label =
+    .label = Blochează noile solicitări de accesare a dispozitivelor de realitate virtuală
+permissions-site-xr-disable-desc = Acest lucru va împiedica orice site web care nu este listat mai sus să ceară permisiunea de a-ți accesa dispozitivele de realitate virtuală. Blocarea accesului la dispozitivele de realitate virtuală ar putea interfera cu unele funcții ale site-urilor web.
+
 ## Site Permissions - Camera
 
 permissions-site-camera-window =

@@ -26,6 +26,10 @@ graph-total-tracker-summary =
         [few] byly zablokovány <b>{ $count }</b> sledovací prvky
        *[other] bylo zablokováno <b>{ $count }</b> sledovacích prvků
     }.
+# Text displayed instead of the graph when in Private Mode
+graph-private-window = { -brand-short-name } nadále blokuje sledovací prvky v anonymních oknech, ale neukládá si informace, co bylo zablokováno.
+# Weekly summary of the graph when the graph is empty in Private Mode
+graph-week-summary-private-window = Sledovací prvky zablokované tento týden
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 # The category name in the <b> tag will be bold.
@@ -39,7 +43,13 @@ protection-report-page-title = Ochrana soukromí
 protection-report-content-title = Ochrana soukromí
 etp-card-title = Rozšířená ochrana proti sledování
 etp-card-content = Sledovací prvky sbírají informace, co a kde na internetu děláte, jaké máte návyky a co vás zajímá. { -brand-short-name } blokuje mnoho takových prvků i dalších škodlivých skriptů.
-protection-report-etp-card-content-custom-not-blocking = Všechny ochrany jsou v tuto chvíli vypnuté. V nastavení aplikace { -brand-short-name } vyberte, které sledovací prvky chcete blokovat.
+protection-report-etp-card-content-custom-not-blocking =
+    Všechny ochrany jsou v tuto chvíli vypnuté. V nastavení { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "gen") }
+        [feminine] { -brand-short-name(case: "gen") }
+        [neuter] { -brand-short-name(case: "gen") }
+       *[other] aplikace { -brand-short-name }
+    } vyberte, které sledovací prvky chcete blokovat.
 protection-report-manage-protections = Nastavení
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
 # capitalization for this string should match the output for your locale.
@@ -69,16 +79,6 @@ lockwise-no-logins-content = Stáhněte si aplikaci <a data-l10n-name="lockwise-
 lockwise-passwords-stored = Bezpečně uložené přihlašovací údaje <a data-l10n-name="lockwise-how-it-works">Jak to funguje</a>
 turn-on-sync = Zapnout { -sync-brand-short-name(case: "acc") }…
     .title = Otevře nastavení synchronizace
-manage-devices = Správa zařízení
-# Variables:
-#   $count (Number) - Number of devices connected with sync.
-lockwise-sync-status =
-    Synchronizace { $count ->
-        [one] s jedním dalším zařízením
-        [few] se { $count } dalšími zařízeními
-       *[other] s { $count } dalšími zařízeními
-    }
-lockwise-sync-not-syncing-devices = Není nastavena synchronizace s dalšími zařízeními
 manage-connected-devices = Správa zařízení…
 # Variables:
 #   $count (Number) - Number of devices connected with sync.

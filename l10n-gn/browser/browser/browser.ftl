@@ -82,6 +82,18 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Eike ñe'ẽmondo moĩmbaha ñemohenda ra'ãngarupápe
 urlbar-tip-help-icon =
     .title = Eipota pytyvõ
+urlbar-search-tips-confirm = Oĩma, aikumbýma
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Ehai sa'ive, ejuhuve: Eheka { $engineName } kundaharape rendaite guive.
+urlbar-search-tips-redirect = Eñepyrũ eheka ko'ápe ehecha hag̃ua { $engineName } ñe'ẽporã ha ikundaha rembiasakue.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Ejokóma marandu ejuhukuaa hag̃ua ko ñanduti renda.
 urlbar-xr-blocked =
@@ -158,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Jeikekatu'ỹ
+identity-connection-secure = Jeikekatu
+identity-connection-internal = Kóva { -brand-short-name } jeroviáva; kuatiarogue.
+identity-connection-file = Ko kuatiarogue oñeñongatu mohendahápe.
+identity-extension-page = Ko kuatiarogue oñemyanyhẽ jepysokue guive.
+identity-active-blocked = { -brand-short-name } ojokóma ko kuatiarogue pehẽ ijerovia'ỹha.
+identity-custom-root = Jeike ohechapyréva mboajepyre me’ẽha Mozilla omoneĩ’ỹva.
+identity-passive-loaded = Ko kuatiarogue pehẽ heta hendápe nda'ijeroviapái (mba'era'ãngáramo).
+identity-active-loaded = Ndereguerekói pa'ũ ko kuatiaroguépe g̃uarã.
+identity-weak-encryption = Ko kuatiarogue oipuru ñangarekoha ikangýva.
+identity-insecure-login-forms = Ojehaiva'ekue jeike hag̃ua ko kuatiaroguépe oñemondakuaa.
+identity-permissions =
+    .value = Moneĩ
+identity-permissions-reload-hint = Ikatu hína kuatiarogue emyanyhẽjey umi moambuepyre oñemboheko hag̃ua.
+identity-permissions-empty = Nome'ẽi ko tenda ñemoneĩ ha'etéva.
+identity-clear-site-data =
+    .label = Emopotĩ kookie ha mba’ekuaarã tendágui…
+identity-connection-not-secure-security-view = Nde jeike nahekorosãi ko tendápe.
+identity-connection-verified = Eikehína tekorosãme ko tendápe.
+identity-ev-owner-label = Mboajepyre osẽmava:
+identity-description-custom-root = Mozilla nomoneĩri ko mboajepyre me’ẽhápe. Ikatu oñembojuaju apopyvusu oku’éva térã ñangarekoha rupive. <label data-l10n-name="link">Kuaave</label>
+identity-remove-cert-exception =
+    .label = Emongue oĩ'ỹva
+    .accesskey = E
+identity-description-insecure = Nde jeike ko tendápe naiñemíri. Marandu remondóva ikatu ohecha ambue tapicha (ñe'ẽñemíramo, ñe'ẽmondo, kuatia'atã ñemurã ha ambue).
+identity-description-insecure-login-forms = Pe marandu tembiapo ñepyrũ pegua emoingéva ko kuatiaroguépe nahekorosãi ha ikatu noĩporãmbái.
+identity-description-weak-cipher-intro = Nde jeike ko ñanduti rendápe oipuru ñangarekoha ikangýva ha naiñemíri.
+identity-description-weak-cipher-risk = Ambue tapichakuéra ikatu ohecha nemarandu térã omoambue ñanduti kuatiarogue reko.
+identity-description-active-blocked = { -brand-short-name } ojokóma ko kuatiarogue pehẽ ijerovia'ỹha. <label data-l10n-name="link">Kuaave</label>
+identity-description-passive-loaded = Nde jeike naiñemíri ha nemarandu remoingéva ko tendápe ikatu ohecha ambue tapicha.
+identity-description-passive-loaded-insecure = Ko ñanduti renda oguereko hetepy ndaijeroviapáiva (mba'era'ãngáramo). <label data-l10n-name="link">Kuaave</label>
+identity-description-passive-loaded-mixed = { -brand-short-name } ojokóramo jepe heta retepy, oĩ gueteri tetepy kuatiaroguépe ndaijegueroviapáiva (mba'era'ãngáramo). <label data-l10n-name="link">Kuaave</label>
+identity-description-active-loaded = Ko ñanduti renda oguereko hetepy ndaijeroviapáiva (guiõramo) ha nde jeike pype naiñemíri.
+identity-description-active-loaded-insecure = Marandu remondóva ko kuatiaroguépe ikatu ohecha ambue tapicha (ñe'ẽñemíramo, ñe'ẽmondo, kuatia'atã ñemurã ha ambue).
+identity-learn-more =
+    .value = Kuaave
+identity-disable-mixed-content-blocking =
+    .label = Emonge ñemo'ã sapy'aite
+    .accesskey = D
+identity-enable-mixed-content-blocking =
+    .label = Ñemo'ã myandy
+    .accesskey = E
+identity-more-info-link-text =
+    .label = Maranduve

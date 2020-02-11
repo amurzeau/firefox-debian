@@ -77,7 +77,7 @@ detail-version =
     .label = Handelv
 detail-last-updated =
     .label = Hizivadur diwezhañ
-detail-contributions-description = Goulenn a ra paotr an diorren ma vefe skoazellet diorrenadur an askouezh-mañ ganeoc'h dre ur berzhadenn-arc'hant vihan.
+detail-contributions-description = Goulenn a ra paotr an diorren ma vefe skoazellet diorroadur an askouezh-mañ ganeoc'h dre ur perzhiadur-arc'hant vihan.
 detail-contributions-button = Kemer perzh
     .title = Kemer perzh e diorren an enlugellad
     .accesskey = K
@@ -99,6 +99,7 @@ detail-private-browsing-description2 = P'eo aotreet e c'hall an askouezh haeziñ
 # cannot be overridden by the user.
 detail-private-disallowed-label = N'eo ket aotreet er prenestroù prevez
 detail-private-disallowed-description = An askouezh-mañ n'eo ket lañset er merdeiñ prevez. <label data-l10n-name="detail-private-browsing-learn-more">Gouzout hiroc'h</label>
+detail-private-disallowed-description2 = An askouezh-mañ n'eo ket lañset er merdeiñ prevez. <a data-l10n-name="learn-more">Gouzout hiroc'h</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Goulenn haeziñ d'ar prenestroù prevez
 detail-private-required-description = An askouezh-mañ a c'hall haeziñ hoc'h oberiantiz enlinenn e-pad ar merdeiñ prevez. <label data-l10n-name="detail-private-browsing-learn-more">Gouzout hiroc'h</label>
@@ -295,20 +296,57 @@ go-back-button =
 ## Recommended add-ons page
 
 discopane-notice-learn-more = Gouzout hiroc'h
+privacy-policy = Reolenn a-fet buhez prevez
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = gant <a data-l10n-name="author">{ $author }</a>
 # Shows the number of daily users of the add-on.
 # Variables:
 #   $dailyUsers (number) - The number of daily users.
 user-count = Implijerien: { $dailyUsers }
 install-extension-button = Ouzhpennañ da { -brand-product-name }
+install-theme-button = Staliañ an tem
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = Merañ
+find-more-addons = Kavout askouezhioù ouzhpenn
+# This is a label for the button to open the "more options" menu, it is only
+# used for screen readers.
+addon-options-button =
+    .aria-label = Dibarzhioù ouzhpenn
 
 ## Add-on actions
 
+report-addon-button = Danevelliñ
 remove-addon-button = Dilemel
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Ne c'hall ket bezañ dilemet <a data-l10n-name="link">Perak ?</a>
 disable-addon-button = Diweredekaat
 enable-addon-button = Gweredekaat
 expand-addon-button = Dibarzhioù ouzhpenn
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = Gweredekaat
+details-addon-button = Munudoù
+release-notes-addon-button = Notennoù handelv
+permissions-addon-button = Aotreoù
 addons-enabled-heading = Gweredekaet
 addons-disabled-heading = Diweredekaet
+extension-enabled-heading = Gweredekaet
+extension-disabled-heading = Diweredekaet
+theme-enabled-heading = Gweredekaet
+theme-disabled-heading = Diweredekaet
+plugin-enabled-heading = Gweredekaet
+plugin-disabled-heading = Diweredekaet
+dictionary-enabled-heading = Gweredekaet
+dictionary-disabled-heading = Diweredekaet
+locale-enabled-heading = Gweredekaet
+locale-disabled-heading = Diweredekaet
+ask-to-activate-button = Goulenn evit gweredekaat
+always-activate-button = Atav gweredekaat
+never-activate-button = Na weredekaat biken
 addon-detail-author-label = Aozer
 addon-detail-version-label = Handelv
 addon-detail-last-updated-label = Hizivaet da ziwezhañ

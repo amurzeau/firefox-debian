@@ -82,6 +82,18 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Atverti priedo diegimo pranešimo skydelį
 urlbar-tip-help-icon =
     .title = Žinynas ir pagalba
+urlbar-search-tips-confirm = Gerai, supratau
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Rašykite mažiau, raskite daugiau: ieškokite per „{ $engineName }“ tiesiai iš savo adreso lauko.
+urlbar-search-tips-redirect = Pradėkite savo paiešką čia, norėdami matyti žodžių siūlymus iš „{ $engineName }“ bei jūsų naršymo istorijos.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Šioje svetainėje esate užblokavę buvimo vietos informaciją.
 urlbar-xr-blocked =
@@ -158,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Ryšys nesaugus
+identity-connection-secure = Ryšys saugus
+identity-connection-internal = Tai yra saugus „{ -brand-short-name }“ tinklalapis.
+identity-connection-file = Šis tinklalapis yra įrašytas jūsų kompiuteryje.
+identity-extension-page = Šis tinklalapis yra įkeltas iš priedo.
+identity-active-blocked = „{ -brand-short-name }“ užblokavo nesaugias šio tinklalapio dalis.
+identity-custom-root = Ryšį patvirtino liudijimo išdavėjas, kurio „Mozilla“ neatpažino.
+identity-passive-loaded = Kai kurios šio tinklalapio dalys nėra saugios (pvz., paveikslai).
+identity-active-loaded = Šiame tinklalapyje esate išjungę apsaugą.
+identity-weak-encryption = Šis tinklalapis naudoja silpną šifravimą.
+identity-insecure-login-forms = Šiame tinklalapyje įvesti prisijungimo duomenys gali būti perimti.
+identity-permissions =
+    .value = Leidimai
+identity-permissions-reload-hint = Kad būtų pritaikyti pakeitimai, tinklalapį galimai reikia atsiųsti iš naujo.
+identity-permissions-empty = Šiai svetainei nesate suteikę jokių ypatingų leidimų.
+identity-clear-site-data =
+    .label = Valyti slapukus ir svetainių duomenis…
+identity-connection-not-secure-security-view = Nesate saugiai prisijungę prie šios svetainės.
+identity-connection-verified = Esate saugiai prisijungę prie šios svetainės.
+identity-ev-owner-label = Kam išduotas liudijimas:
+identity-description-custom-root = „Mozilla“ neatpažįsta šio liudijimo išdavėjo. Jis galėjo būti pridėtas iš jūsų operacinės sistemos, arba administratoriaus. <label data-l10n-name="link">Sužinoti daugiau</label>
+identity-remove-cert-exception =
+    .label = Panaikinti išimtį
+    .accesskey = n
+identity-description-insecure = Jūsų ryšys su šia svetaine nėra privatus. Jūsų pateikta informacija gali būti peržiūrėta kitų (pvz., slaptažodžiai, žinutės, banko kortelės, kita).
+identity-description-insecure-login-forms = Šiame tinklalapyje jūsų įvesti prisijungimo duomenys nebus saugūs ir gali būti perimti.
+identity-description-weak-cipher-intro = Jūsų ryšys su šia svetaine naudoja silpną šifravimą ir nėra privatus.
+identity-description-weak-cipher-risk = Pašaliniai asmenys gali matyti jūsų duomenis ar keisti svetainės elgseną.
+identity-description-active-blocked = „{ -brand-short-name }“ užblokavo nesaugias šio tinklalapio dalis. <label data-l10n-name="link">Sužinoti daugiau</label>
+identity-description-passive-loaded = Jūsų ryšys nėra privatus, tad šiai svetainei pateikta informacija gali būti peržiūrėta kitų.
+identity-description-passive-loaded-insecure = Šioje svetainėje yra nesaugaus turinio (pvz., paveikslų). <label data-l10n-name="link">Sužinoti daugiau</label>
+identity-description-passive-loaded-mixed = Nors „{ -brand-short-name }“ užblokavo dalį turinio, šiame tinklalapyje vis dar yra nesaugaus turinio (pvz., paveikslų). <label data-l10n-name="link">Sužinoti daugiau</label>
+identity-description-active-loaded = Šioje svetainėje yra nesaugaus turinio (pvz., scenarijų), be to, jūsų ryšys su ja nėra privatus.
+identity-description-active-loaded-insecure = Šiai svetainei pateikta informacija gali būti peržiūrėta kitų (pvz., slaptažodžiai, žinutės, banko kortelės, kita).
+identity-learn-more =
+    .value = Sužinoti daugiau
+identity-disable-mixed-content-blocking =
+    .label = Laikinai išjungti apsaugą
+    .accesskey = L
+identity-enable-mixed-content-blocking =
+    .label = Įjungti apsaugą
+    .accesskey = Į
+identity-more-info-link-text =
+    .label = Daugiau informacijos

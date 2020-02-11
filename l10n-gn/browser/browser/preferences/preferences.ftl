@@ -203,6 +203,15 @@ advanced-fonts =
 colors-settings =
     .label = Sa'y…
     .accesskey = C
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Moañete
+preferences-default-zoom = Moañete ypyguáva
+    .accesskey = z
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Emoañete moñe’ẽrã año
+    .accesskey = t
 language-header = Ñe'ẽ
 choose-language-description = Eipoiravo pe ñe'ẽ erohoryvéva ehechauka hag̃ua ñanduti kuatiarogue
 choose-button =
@@ -316,7 +325,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Tembiapo Ñandutigua Derécho (TÑD) retepy
 play-drm-content =
@@ -571,6 +580,9 @@ containers-header = Tendayke guerekoha
 containers-add-button =
     .label = Embojuaju guerekoha pyahu
     .accesskey = E
+containers-new-tab-check =
+    .label = Eiporavo mbyatyha embojuruja hag̃ua peteĩteĩva tendayke
+    .accesskey = S
 containers-preferences-button =
     .label = Jerohoryvéva
 containers-remove-button =
@@ -909,7 +921,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Ñemomba’epyre
     .accesskey = C
 
-
+##
 
 content-blocking-etp-standard-desc = Imbytéva ñemo’ã ha tembiapokuépe g̃uarã. Umi kuatiarogue henyhẽta hekoitépe.
 content-blocking-etp-strict-desc = Ñemo’ãve, hákatu ikatu ndahetái tenda térã tetepy nahenyhẽi.

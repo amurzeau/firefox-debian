@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# Variables:
+# $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
+cert-error-code-prefix = غلطی کا کوڈ: { $error }
 psmerr-ssl-disabled = حفاظت سے جڑ نہیں سکتا کیونکہ SSL پروٹوکول نااہل کر دی گئی ہے۔
 psmerr-ssl2-disabled = حفاظت سے جڑ نہیں سکتا کیونکہ سائٹ SSL پروٹوکول کا ایک پرانا تر، ناقابل بھروسا ورژن استعمال کرتی ہے۔
 # This is a multi-line message.
@@ -334,4 +337,5 @@ mozilla-pkix-error-validity-too-long = سرور ایک سرٹیفکیٹ بھی �
 mozilla-pkix-error-required-tls-feature-missing = ایک مطلوبہ TLS خصوصیت لاپتہ ہے.
 mozilla-pkix-error-invalid-integer-encoding = سرور ایک سرٹیفکیٹ ایک عددی کی ایک غلط انکوڈنگ پر مشتمل ہے کہ پیش کیا. عام وجوہات منفی سیریل نمبرز، منفی RSA ماڈیول، اور اب ضرورت سے ہیں کہ ضابطہ بندی کے شامل ہیں.
 mozilla-pkix-error-empty-issuer-name = سرور نے ایک خالی فراہم کرنے والے معزز نام کے ساتھ سرٹیفکیٹ پیش کیا ہے۔
+mozilla-pkix-error-additional-policy-constraint-failed = اس تصدیق نامہ کو توثیق کرنے پر ایک اضافی پالیسی رکاوٹ ناکام ہوگئی۔
 mozilla-pkix-error-self-signed-cert = یہ تصدیق نامہ قابل اعتماد نہیں ہے کیوں کہ اس نے از خود دستخط کیا ہوا ہے۔

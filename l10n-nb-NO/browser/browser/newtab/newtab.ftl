@@ -90,9 +90,13 @@ newtab-privacy-modal-paragraph =
     I tillegg til å servere fengslende historier, viser vi deg også relevant og
     høyt kontrollert innhold fra utvalgte sponsorer. Du kan være sikker på, at dine surfedata
     aldri forlater ditt personlige eksemplar av  { -brand-product-name } — vi ser dem ikke, og sponsorerene våre ser dem ikke heller.
+newtab-privacy-modal-paragraph-2 =
+    I tillegg til å servere fengslende historier, viser vi deg også relevant og
+    høyt kontrollert innhold fra utvalgte sponsorer. Du kan være sikker på, <strong>at dine surfedata
+    aldri forlater ditt personlige eksemplar av  { -brand-product-name }</strong> — vi ser dem ikke, og sponsorerene våre ser dem ikke heller.
 newtab-privacy-modal-link = Les mer om hvordan personvernet fungerer på den nye fanen
 
-
+##
 
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Fjern bokmerke
@@ -127,6 +131,10 @@ newtab-label-removed-bookmark = Bokmerke fjernet
 newtab-label-recommended = Trender
 newtab-label-saved = Lagret til { -pocket-brand-name }
 newtab-label-download = Lastet ned
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } · Sponset
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -179,7 +187,6 @@ newtab-discovery-empty-section-topstories-timed-out = Ops! Vi lastet nesten denn
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Populære emner:
 newtab-pocket-more-recommendations = Flere anbefalinger
-newtab-pocket-how-it-works = Hvordan det virker
 newtab-pocket-whats-pocket = Hva er { -pocket-brand-name }?
 newtab-pocket-cta-button = Hent { -pocket-brand-name }
 newtab-pocket-cta-text = Lagre artiklene du synes er interessante i { -pocket-brand-name }, og stimuler dine tanker med fasinerende lesermateriell.

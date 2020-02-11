@@ -80,6 +80,17 @@ urlbar-addons-notification-anchor =
     .tooltiptext = باز کردن تابلو پیام‌های نصب افزودنی‌ها
 urlbar-tip-help-icon =
     .title = کمک بگیرید
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = کمتر تایپ کنید، بیشتر پیدا کنید: تنها از طریق نوار آدرس با { $engineName } جست‌وجو کنید.
+urlbar-search-tips-redirect = جست‌وجوی خود را از اینجا آغاز کنید تا پیشنهادهایی از { $engineName } و تاریخچهٔ مرور خود را هم ببینید.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = شما این پایگاه‌وب را برای دسترسی به اطلاعات مکانی مسدود کرده‌اید.
 urlbar-web-notifications-blocked =
@@ -154,3 +165,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = اتصال امن نیست
+identity-connection-secure = اتصال امن است
+identity-connection-internal = این یک صفحهٔ امن { -brand-short-name } است.
+identity-connection-file = این صفحه بر روی رایانه شما ذخیره شده است.
+identity-extension-page = این صفحه توسط یک افزونه بارگیری شده است.
+identity-active-blocked = { -brand-short-name } قسمت‌هایی از این صفحه را که ایمن نیستند، مسدود کرده است.
+identity-custom-root = گواهیِ این اتصال، توسط صادرکننده‌ای ایجاد شده است که برای موزیلا قابل شناسایی نیست.
+identity-passive-loaded = قسمت‌هایی از این صفحه امن نیست (مانند تصاویر).
+identity-active-loaded = شما محافظت را در این صفحه غیرفعال کرده‌اید.
+identity-weak-encryption = این صفحه از کدگذاری ضعیفی استفاده می‌کند.
+identity-insecure-login-forms = اطلاعات ورودی که در این صفحه وارد می‌کنید می‌توانند فاش شوند.
+identity-permissions =
+    .value = مجوزها
+identity-permissions-reload-hint = ممکن است لازم باشد که صفحه را برای اعمال تغییرات دوباره بارگیری کنید.
+identity-permissions-empty = شما به این سایت هیچ دسترسی خاصی نداده‌اید.
+identity-clear-site-data =
+    .label = حذف کوکی‌ها و اطلاعات پایگاه‌ها…
+identity-connection-not-secure-security-view = شما بطور امن به این سایت متصل نشده‌اید.
+identity-connection-verified = شما بطور امن به این سایت متصل شده‌اید.
+identity-ev-owner-label = گواهی صادر شده برای:
+identity-description-custom-root = صادر کنندهٔ این گواهی برای موزیلا قابل شناسایی نیست. ممکن است از طریق سیستم‌عامل یا مدیرِ سیستم شما اضافه شده باشد. <label data-l10n-name="link">بیشتر بدانید</label>
+identity-remove-cert-exception =
+    .label = حذف استثنا
+    .accesskey = ح
+identity-description-insecure = اتصال شما با این سایت خصوصی نیست. اطلاعاتی که شما ثبت می‌کنید ممکن است توسط دیگران دیده شود (مانند گذرواژه‌ها، پیام‌ها، کارت‌های بانکی و غیره).
+identity-description-insecure-login-forms = اطلاعات ورود شما که در این صفحه وارد می‌کنید امن نیستند و ممکن است در معرض خطر باشند.
+identity-description-weak-cipher-intro = اتصال شما با این سایت از کدگذاری ضعیفی استفاده می‌کند و خصوصی نیست.
+identity-description-weak-cipher-risk = افراد دیگر می‌توانند اطلاعات شما را ببینید یا رفتار سایت را تغییر دهند.
+identity-description-active-blocked = { -brand-short-name } قسمت‌هایی از این صفحه را که ایمن نیستند، مسدود کرده است. <label data-l10n-name="link">بیشتر بدانید</label>
+identity-description-passive-loaded = اتصال شما خصوصی نیست و اطلاعاتی که با سایت اشتراک می‌گذارید می‌تواند توسط دیگران دیده شود.
+identity-description-passive-loaded-insecure = این سایت حاوی محتوایی است که ایمن نیستند (مانند تصاویر). <label data-l10n-name="link">بیشتر بدانید</label>
+identity-description-passive-loaded-mixed = با اینکه { -brand-short-name } بعضی از محتوا را مسدود کرده است، هنوز محتوای در این سایت هستند که ایمن نیستند (مانند تصاویر). <label data-l10n-name="link">بیشتر بدانید</label>
+identity-description-active-loaded = این سایت شامل محتوایی است که ایمن نیستند (مانند کدنوشته‌ها) و اتصال شما به آن خصوصی نیست.
+identity-description-active-loaded-insecure = اطلاعاتی که با این سایت به‌اشتراک می‌گذارید ممکن است توسط دیگران دیده شوند (مانند گذرواژه‌ها، پیام‌ها، کارت‌های اعتباری و غیره).
+identity-learn-more =
+    .value = بیشتر بدانید
+identity-disable-mixed-content-blocking =
+    .label = فعلا محافظت غیرفعال شود.
+    .accesskey = غ
+identity-enable-mixed-content-blocking =
+    .label = فعال‌سازی محافظت
+    .accesskey = ف
+identity-more-info-link-text =
+    .label = اطلاعات بیشتر

@@ -15,11 +15,6 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Szukaj danych logowania
 create-login-button = Utwórz nowe dane logowania
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = Ikona witryny „{ $title }”
 fxaccounts-sign-in-text = Korzystaj ze swoich haseł na innych urządzeniach
 fxaccounts-sign-in-button = Zaloguj się do { -sync-brand-short-name(case: "gen", capitalization: "lower") }
 fxaccounts-avatar-button =
@@ -52,6 +47,7 @@ login-list-count =
     }
 login-list-sort-label-text = Sortuj wg:
 login-list-name-option = Nazwa (A-Z)
+login-list-name-reverse-option = Nazwa (Z-A)
 login-list-breached-option = Witryny z wyciekami haseł
 login-list-last-changed-option = Ostatnia modyfikacja
 login-list-last-used-option = Ostatnie użycie
@@ -62,9 +58,6 @@ about-logins-login-list-empty-search-description = Brak wyników pasujących do 
 login-list-item-title-new-login = Nowe dane logowania
 login-list-item-subtitle-new-login = Wprowadź dane logowania
 login-list-item-subtitle-missing-username = (bez nazwy użytkownika)
-about-logins-list-item-warning-icon =
-    .alt = Ikona ostrzeżenia
-    .title = Witryna z wyciekiem haseł
 about-logins-list-item-breach-icon =
     .title = Witryna z wyciekiem haseł
 
@@ -82,7 +75,6 @@ about-logins-intro-import = Jeśli dane logowania są zachowane w innej przegl�
 
 login-item-new-login-title = Nowe dane logowania
 login-item-edit-button = Edytuj
-login-item-delete-button = Usuń
 about-logins-login-item-remove-button = Usuń
 login-item-origin-label = Adres witryny
 login-item-origin =
@@ -97,6 +89,8 @@ login-item-password-reveal-checkbox-show =
     .title = Wyświetl hasło
 login-item-password-reveal-checkbox-hide =
     .title = Ukryj hasło
+login-item-password-reveal-checkbox =
+    .aria-label = Widoczne hasło
 login-item-copy-password-button-text = Kopiuj
 login-item-copied-password-button-text = Skopiowano
 login-item-save-changes-button = Zapisz zmiany
@@ -127,7 +121,6 @@ enable-password-sync-preferences-button =
            *[other] Otwórz preferencje { -sync-brand-short-name(case: "gen", capitalization: "lower") }
         }
     .accesskey = O
-confirm-delete-dialog-title = Usunąć te dane logowania?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = Nie pytaj ponownie
     .accesskey = N
@@ -139,7 +132,6 @@ confirmation-dialog-dismiss-button =
     .title = Anuluj
 about-logins-confirm-remove-dialog-title = Usunąć te dane logowania?
 confirm-delete-dialog-message = Tej czynności nie można cofnąć.
-confirm-delete-dialog-confirm-button = Usuń
 about-logins-confirm-remove-dialog-confirm-button = Usuń
 confirm-discard-changes-dialog-title = Odrzucić niezachowane zmiany?
 confirm-discard-changes-dialog-message = Wszystkie niezachowane zmiany zostaną utracone.
@@ -154,11 +146,6 @@ breach-alert-dismiss =
 
 ## Error Messages
 
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = Dane logowania dla witryny „{ $loginTitle }” z tą nazwą użytkownika już istnieją.
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:

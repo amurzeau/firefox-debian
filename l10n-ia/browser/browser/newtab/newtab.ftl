@@ -87,9 +87,10 @@ newtab-menu-show-privacy-info = Nostre sponsores e tu vita private
 newtab-privacy-modal-button-done = Facite
 newtab-privacy-modal-header = Tu vita private es importante.
 newtab-privacy-modal-paragraph = In addition a servir te historias captivante, nos te monstra anque contento pertinente e ben curate ab sponsores seligite. Sia assecurate que tu datos de navigation non essera jammais divulgate ab tu copia personal de { -brand-product-name }: nos non los vide, ni nostre sponsores.
+newtab-privacy-modal-paragraph-2 = In addition a servir te historias captivante, nos te monstra anque contento pertinente e ben curate ab sponsores seligite. Sia assecurate que <strong>tu datos de navigation non essera jammais divulgate ab tu copia personal de { -brand-product-name }</strong>: nos non los vide, ni nostre sponsores.
 newtab-privacy-modal-link = Saper plus sur le respecto del vita private in le pagina de nove scheda
 
-
+##
 
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Remover le marcapaginas
@@ -124,6 +125,10 @@ newtab-label-removed-bookmark = Marcapaginas removite
 newtab-label-recommended = Tendentias
 newtab-label-saved = Salvate in { -pocket-brand-name }
 newtab-label-download = Discargate
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } · Sponsorisate
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -176,7 +181,6 @@ newtab-discovery-empty-section-topstories-timed-out = Ups! Nos non ha potite car
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Subjectos popular:
 newtab-pocket-more-recommendations = Altere recommendationes
-newtab-pocket-how-it-works = Como functiona
 newtab-pocket-whats-pocket = Que es { -pocket-brand-name }?
 newtab-pocket-cta-button = Obtener { -pocket-brand-name }
 newtab-pocket-cta-text = Salva le articulos que tu ama in { -pocket-brand-name }, e alimenta tu mente con lecturas fascinante.

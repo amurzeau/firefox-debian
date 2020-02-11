@@ -209,6 +209,15 @@ advanced-fonts =
 colors-settings =
     .label = Barwy…
     .accesskey = B
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Skalěrowanje
+preferences-default-zoom = Standardne skalěrowanje
+    .accesskey = S
+preferences-default-zoom-value =
+    .label = { $percentage } %
+preferences-zoom-text-only =
+    .label = Jano tekst skalěrowaś
+    .accesskey = t
 language-header = Rěc
 choose-language-description = Wubjeŕśo swóju preferěrowanu rěc za zwobraznjenje bokow
 choose-button =
@@ -322,7 +331,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Wopśimjeśe Digital Right Management (DRM)
 play-drm-content =
@@ -579,6 +588,9 @@ containers-header = Kontejnerowe rejtarki
 containers-add-button =
     .label = Nowy kontejner pśidaś
     .accesskey = k
+containers-new-tab-check =
+    .label = Kontejner za kuždy nowy rejtark wubraś
+    .accesskey = K
 containers-preferences-button =
     .label = Nastajenja
 containers-remove-button =
@@ -917,7 +929,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Swójski
     .accesskey = S
 
-
+##
 
 content-blocking-etp-standard-desc = Wuwažony za šćit a wugbaśe. Boki se normalnje zacytaju.
 content-blocking-etp-strict-desc = Mócnjejšy šćit, ale móžo zawinowaś, až někotare sedła abo wopśimjeśe wěcej njefunkcioněruju.
@@ -1025,8 +1037,8 @@ permissions-addon-exceptions =
     .label = Wuwześa…
     .accesskey = W
 permissions-a11y-privacy-checkbox =
-    .label = Słužbam pśistupnosći pśistup k wašomu wobglědowakoju zawoboraś
-    .accesskey = t
+    .label = Słužbam bźezbariernosći pśistup k wašomu wobglědowakoju zawoboraś
+    .accesskey = b
 permissions-a11y-privacy-link = Dalšne informacije
 
 ## Privacy Section - Data Collection

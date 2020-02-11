@@ -82,6 +82,18 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Buka panel pesan pemasangan pengaya
 urlbar-tip-help-icon =
     .title = Dapatkan bantuan
+urlbar-search-tips-confirm = Oke, Paham
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Ketik lebih sedikit, temukan lebih banyak: Pencarian { $engineName } langsung dari bilah alamat Anda.
+urlbar-search-tips-redirect = Mulai pencarian Anda di sini untuk melihat saran dari { $engineName } dan riwayat penjelajahan Anda.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Anda telah memblokir informasi lokasi untuk situs web ini.
 urlbar-xr-blocked =
@@ -158,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Sambungan tidak aman
+identity-connection-secure = Sambungan aman
+identity-connection-internal = Ini adalah laman { -brand-short-name } aman.
+identity-connection-file = Laman ini tersimpan di komputer Anda.
+identity-extension-page = Laman ini dimuat dari ekstensi.
+identity-active-blocked = { -brand-short-name } telah memblokir bagian dari laman ini yang tidak aman.
+identity-custom-root = Koneksi diverifikasi oleh penerbit sertifikat yang tidak dikenali oleh Mozilla.
+identity-passive-loaded = Bagian dari laman ini tidak aman (misalnya, gambar).
+identity-active-loaded = Anda telah menonaktifkan perlindungan di laman ini.
+identity-weak-encryption = Laman ini menggunakan enkripsi lemah.
+identity-insecure-login-forms = Info masuk yang dimasukkan di laman ini bisa diketahui orang lain.
+identity-permissions =
+    .value = Izin
+identity-permissions-reload-hint = Anda mungkin perlu memuat ulang laman untuk menerapkan perubahan.
+identity-permissions-empty = Anda belum memberikan izin khusus apa pun untuk situs ini.
+identity-clear-site-data =
+    .label = Hapus Kuki dan Data Situs…
+identity-connection-not-secure-security-view = Anda tidak terhubung dengan aman ke situs ini.
+identity-connection-verified = Anda terhubung dengan aman ke situs ini.
+identity-ev-owner-label = Sertifikat diterbitkan untuk:
+identity-description-custom-root = Mozilla tidak mengenali penerbit sertifikat ini. Itu mungkin telah ditambahkan dari sistem operasi Anda atau oleh administrator. <label data-l10n-name="link">Pelajari Lebih Lanjut</label>
+identity-remove-cert-exception =
+    .label = Buang Pengecualian
+    .accesskey = B
+identity-description-insecure = Sambungan Anda ke laman ini tidak pribadi. Informasi yang Anda kirim dapat dilihat oleh pihak lain (misalnya, sandi, pesan, kartu kredit, dll.).
+identity-description-insecure-login-forms = Info masuk yang Anda masukkan di laman ini tidak aman dan bisa diketahui orang lain.
+identity-description-weak-cipher-intro = Sambungan Anda ke situs web ini menggunakan enkripsi lemah dan tidak pribadi.
+identity-description-weak-cipher-risk = Orang lain dapat melihat informasi Anda atau memodifikasi perilaku situs web ini.
+identity-description-active-blocked = { -brand-short-name } telah memblokir bagian dari laman ini yang tidak aman. <label data-l10n-name="link">Pelajari Lebih Lanjut</label>
+identity-description-passive-loaded = Sambungan Anda tidak pribadi dan informasi yang Anda bagikan dengan situs ini dapat dilihat oleh pihak lain.
+identity-description-passive-loaded-insecure = Situs web ini mengandung konten yang tidak aman (misalnya, gambar). <label data-l10n-name="link">Pelajari Lebih Lanjut</label>
+identity-description-passive-loaded-mixed = Meskipun { -brand-short-name } telah memblokir sejumlah konten, tetapi masih ada konten di laman ini yang tidak aman (misalnya gambar). <label data-l10n-name="link">Pelajari Lebih Lanjut</label>
+identity-description-active-loaded = Situs web ini mengandung konten yang tidak aman (misalnya skrip) dan sambungan Anda tidak pribadi.
+identity-description-active-loaded-insecure = Informasi yang Anda bagikan dengan situs ini dapat dilihat oleh pihak lain (misalnya sandi, pesan, kartu kredit, dll.)
+identity-learn-more =
+    .value = Pelajari Lebih Lanjut
+identity-disable-mixed-content-blocking =
+    .label = Nonaktifkan perlindungan untuk saat ini
+    .accesskey = N
+identity-enable-mixed-content-blocking =
+    .label = Aktifkan perlindungan
+    .accesskey = A
+identity-more-info-link-text =
+    .label = Informasi Lebih Lanjut

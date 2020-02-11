@@ -24,17 +24,17 @@ general-title =
 general-url =
     .value = 주소:
 general-type =
-    .value = 형식:
+    .value = 유형:
 general-mode =
     .value = 렌더링 방식:
 general-size =
-    .value = 크기:
+    .value = 파일 크기:
 general-referrer =
     .value = 참조 URL:
 general-modified =
     .value = 수정:
 general-encoding =
-    .value = 글자 인코딩:
+    .value = 텍스트 인코딩:
 general-meta-name =
     .label = 이름
 general-meta-content =
@@ -53,7 +53,7 @@ media-address =
 media-type =
     .label = 유형
 media-size =
-    .label = 크기
+    .label = 파일 크기
 media-count =
     .label = 개수
 media-dimension =
@@ -69,10 +69,10 @@ media-save-image-as =
 media-preview =
     .value = 미리 보기:
 perm-tab =
-    .label = 이용 권한
+    .label = 권한
     .accesskey = P
 permissions-for =
-    .value = 이용 권한:
+    .value = 권한 대상:
 security-tab =
     .label = 보안
     .accesskey = S
@@ -86,24 +86,24 @@ security-view-identity =
 security-view-identity-owner =
     .value = 소유자:
 security-view-identity-domain =
-    .value = 사이트 정보:
+    .value = 웹사이트:
 security-view-identity-verifier =
-    .value = 신원 확인자:
+    .value = 인증 기관:
 security-view-identity-validity =
     .value = 만료일:
 security-view-privacy =
     .value = 개인 정보 및 방문 기록
-security-view-privacy-history-value = 이전에 현재 웹 사이트 방문 여부
-security-view-privacy-sitedata-value = 이 웹사이트가 내 컴퓨터에 데이터를 저장하나요?
+security-view-privacy-history-value = 이 웹사이트를 이전에 방문한 적이 있나요?
+security-view-privacy-sitedata-value = 이 웹사이트가 내 컴퓨터에 정보를 저장하나요?
 security-view-privacy-clearsitedata =
     .label = 쿠키와 사이트 데이터 삭제
     .accesskey = C
-security-view-privacy-passwords-value = 이 사이트에 저정된 비밀번호가 있나요?
+security-view-privacy-passwords-value = 이 웹사이트에 비밀번호를 저장한 적이 있나요?
 security-view-privacy-viewpasswords =
     .label = 저장된 비밀번호 보기
     .accesskey = w
 security-view-technical =
-    .value = 세부 사항
+    .value = 기술적 세부 사항
 help-button =
     .label = 도움말
 
@@ -113,8 +113,8 @@ help-button =
 ##   $value (number) - Amount of data being stored
 ##   $unit (string) - The unit of data being stored (Usually KB)
 
-security-site-data-cookies = 네, 쿠키와 { $value } { $unit } 데이터
-security-site-data-only = 네, { $value } { $unit } 데이터
+security-site-data-cookies = 네, 쿠키와 { $value } { $unit } 사이트 데이터
+security-site-data-only = 네, { $value } { $unit } 사이트 데이터
 security-site-data-cookies-only = 네, 쿠키
 security-site-data-no = 아니오
 image-size-unknown = 알 수 없음
@@ -139,15 +139,15 @@ saved-passwords-no = 없음
 no-page-title =
     .value = 페이지 제목 없음:
 general-quirks-mode =
-    .value = 비표준 모드
+    .value = 쿼크 모드
 general-strict-mode =
     .value = 표준 호환 모드
-security-no-owner = 현재 웹 사이트는 소유자 정보를 제공하지 않고 있습니다.
+security-no-owner = 이 웹 사이트는 소유권 정보를 제공하고 있지 않습니다.
 page-info-security-no-owner =
-    .value = 현재 웹 사이트는 소유자 정보를 제공하지 않고 있습니다.
+    .value = 이 웹 사이트는 소유권 정보를 제공하고 있지 않습니다.
 media-select-folder = 이미지를 저장할 폴더 선택
 media-unknown-not-cached =
-    .value = 알 수 없음(캐싱 안 함)
+    .value = 알 수 없음 (캐시되지 않음)
 permissions-use-default =
     .label = 기본 설정 사용
 security-no-visits = 없음
@@ -167,7 +167,7 @@ general-meta-tags =
 security-visits-number =
     { $visits ->
         [0] 아니오
-       *[other] 예, { $visits }회
+       *[other] 네, { $visits }회
     }
 # This string is used to display the size of a media file
 # Variables:
@@ -193,7 +193,7 @@ media-animated-image-type =
 # Variables:
 #   $type (string) - The type of an image
 media-image-type =
-    .value = { $type } 형식
+    .value = { $type } 이미지
 # This string is used to display the size of a scaled image
 # in both scaled and unscaled pixels
 # Variables:

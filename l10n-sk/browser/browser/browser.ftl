@@ -82,6 +82,18 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Otvorí panel správ inštalácie doplnkov
 urlbar-tip-help-icon =
     .title = Získať pomoc
+urlbar-search-tips-confirm = Ok, rozumiem
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Menej písania, viac výsledkov. Používajte { $engineName } priamo z vášho panela s adresou.
+urlbar-search-tips-redirect = Zadajte sem výraz vyhľadávania a uvidíte návrhy z vyhľadávacieho modulu { $engineName } a z vašej histórie prehliadania.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Tejto stránke ste zakázali zisťovať vašu polohu.
 urlbar-xr-blocked =
@@ -158,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Pripojenie nie je zabezpečené
+identity-connection-secure = Pripojenie je zabezpečené
+identity-connection-internal = Toto je bezpečná stránka prehliadača { -brand-short-name }
+identity-connection-file = Táto stránka je uložená vo vašom počítači.
+identity-extension-page = Táto stránka je načítaná z doplnku.
+identity-active-blocked = { -brand-short-name } zablokoval nezabezpečené časti tejto stránky.
+identity-custom-root = Pripojenie je overené vydavateľom certifikátov, ktorého Mozilla nepozná.
+identity-passive-loaded = Časti tejto stránky nie sú zabezpečené (napr. obrázky).
+identity-active-loaded = Na tejto stránke ste vypli Ochranu pred sledovaním.
+identity-weak-encryption = Táto stránka používa slabé šifrovanie.
+identity-insecure-login-forms = Prihlasovacie údaje zadané na tejto stránke by mohli byť ohrozené.
+identity-permissions =
+    .value = Povolenia
+identity-permissions-reload-hint = Pre vykonanie zmien budete možno musieť stránku obnoviť.
+identity-permissions-empty = Tejto stránke ste neurčili žiadne špeciálne povolenia.
+identity-clear-site-data =
+    .label = Vymazať cookies a údaje stránok…
+identity-connection-not-secure-security-view = Pripojenie k tejto stránke nie je zabezpečené.
+identity-connection-verified = Pripojenie k tejto stránke je zabezpečené.
+identity-ev-owner-label = Certifikát bol vydaný pre:
+identity-description-custom-root = Mozilla tohto vydavateľa certifikátov nepozná. Mohol byť pridaný operačným systémom alebo správcom vášho počítača. <label data-l10n-name="link">Ďalšie informácie</label>
+identity-remove-cert-exception =
+    .label = Odstrániť výnimku
+    .accesskey = d
+identity-description-insecure = Pripojenie k tejto stránke nie je súkromné. Zadané informácie (ako heslá, správy, informácie o platobných kartách, atď.) môžu byť viditeľné pre iných ľudí.
+identity-description-insecure-login-forms = Prihlasovacie údaje zadané na tejto stránke nie sú chránené a môžu byť zneužité.
+identity-description-weak-cipher-intro = Pripojenie k tejto webovej stránke používa slabé zabezpečenie a nie je súkromné.
+identity-description-weak-cipher-risk = Iní ľudia môžu zobraziť vaše údaje alebo zmeniť správanie stránky.
+identity-description-active-blocked = { -brand-short-name } zablokoval nezabezpečené časti tejto stránky. <label data-l10n-name="link">Ďalšie informácie</label>
+identity-description-passive-loaded = Vaše pripojenie nie je súkromné a informácie, ktoré zadáte na stránke, môžu byť viditeľné pre iných ľudí.
+identity-description-passive-loaded-insecure = Táto stránka obsahuje súčasti, ktoré nie sú bezpečné (ako napr. obrázky). <label data-l10n-name="link">Ďalšie informácie</label>
+identity-description-passive-loaded-mixed = Hoci { -brand-short-name } zablokoval niektoré súčasti, stále je na stránke dostupný obsah, ktorý nie je bezpečný (ako napr. obrázky). <label data-l10n-name="link">Ďalšie informácie</label>
+identity-description-active-loaded = Táto stránka obsahuje súčasti, ktoré nie sú bezpečné (ako napr. skripty) a vaše pripojenie k nej nie je súkromné.
+identity-description-active-loaded-insecure = Informácie zadané na tejto stránke (ako heslá, správy, informácie o platobných kartách, atď.) môžu byť viditeľné pre iných ľudí.
+identity-learn-more =
+    .value = Ďalšie informácie
+identity-disable-mixed-content-blocking =
+    .label = Zakázať ochranu
+    .accesskey = Z
+identity-enable-mixed-content-blocking =
+    .label = Povoliť ochranu
+    .accesskey = P
+identity-more-info-link-text =
+    .label = Ďalšie informácie

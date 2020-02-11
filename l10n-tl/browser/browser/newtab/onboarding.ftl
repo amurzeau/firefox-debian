@@ -44,6 +44,7 @@ onboarding-cards-dismiss =
 
 ## Welcome full page string
 
+onboarding-fullpage-welcome-subheader = Simulan natin alamin ang lahat ng magagawa mo
 onboarding-fullpage-form-email =
     .placeholder = Ang iyong email address...
 
@@ -52,8 +53,6 @@ onboarding-fullpage-form-email =
 onboarding-sync-welcome-header = Isama ang { -brand-product-name } saan man
 onboarding-sync-welcome-content = Kunin ang mga bookmark, kasaysayan, mga password at iba pang mga setting sa lahat ng iyong mga device.
 onboarding-sync-welcome-learn-more-link = Alamin ang tungkol sa Firefox Accounts
-onboarding-sync-form-invalid-input = Wastong email ang kailangan
-onboarding-sync-legal-notice = Kung magpapatuloy, ikaw ay pumapayag sa mga <a data-l10n-name="terms">Mga Tuntunin sa Serbisyo</a> at <a data-l10n-name="privacy">Abisong Pangbribasiya</a>.
 onboarding-sync-form-input =
     .placeholder = Email
 onboarding-sync-form-continue-button = Magpatuloy
@@ -129,6 +128,9 @@ onboarding-send-tabs-title = Agarang Magpadala ng mga Tab sa Iyong Sarili
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
 onboarding-send-tabs-text = Agarang ipinapamahagi ng Send Tabs ang mga page sa lahat ng iyong mga device nang hindi kailangang i-copy, i-paste, o umalis ng browser.
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text2 = I-share ang pages sa mga device mo na hindi mo na kailangan kopyahin ang mga link, o umalis sa browser.
 onboarding-send-tabs-button = Simulang gamitin ang Send Tabs
 onboarding-pocket-anywhere-title = Basahin at Pakinggan Kahit Saan
 onboarding-pocket-anywhere-text2 = I-save ang iyong mga paboritong content offline gamit ang { -pocket-brand-name } App at basahin, pakinggan, at panoorin kung kailan mo ito naiisin.
@@ -136,9 +138,14 @@ onboarding-pocket-anywhere-button = Subukan ang { -pocket-brand-name }
 onboarding-lockwise-passwords-title = Dalhin mo Kahit Saan ang Iyong mga Password
 onboarding-lockwise-passwords-text2 = Panatilihing secure ang iyong mga password at mabilis mag-log in sa mga account gamit ang { -lockwise-brand-name }.
 onboarding-lockwise-passwords-button2 = Kunin ang App
+onboarding-lockwise-strong-passwords-title = Gumawa at Itago ang mga Strong Password
+onboarding-lockwise-strong-passwords-text = Ang { -lockwise-brand-name } ay gumagawa ng mga strong password kaagad at itatago ang mga ito sa isang lugar.
+onboarding-lockwise-strong-passwords-button = I-manage ang iyong mga Login
 onboarding-facebook-container-title = Bigyang-hangganan ang Facebook
 onboarding-facebook-container-text2 = Ihinihiwalay ng { -facebook-container-brand-name } ang iyong profile mula sa iba pang mga bagay, at ginagawang mas mahirap para sa Facebook na i-target ka ng mga ad.
 onboarding-facebook-container-button = Idagdag ang Extension
+onboarding-import-browser-settings-title = I-import ang iyong mga Bookmark, Password, at iba pa
+onboarding-import-browser-settings-button = i-Import ang Chrome Data
 
 ## Message strings belonging to the Return to AMO flow
 

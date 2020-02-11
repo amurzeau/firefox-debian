@@ -15,11 +15,6 @@ login-app-promo-apple =
 login-filter =
     .placeholder = 搜索登录信息
 create-login-button = 新建登录信息
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = { $title } - 网站图标
 fxaccounts-sign-in-text = 在您的其他设备上取得您的密码
 fxaccounts-sign-in-button = 登录{ -sync-brand-short-name }服务
 fxaccounts-avatar-button =
@@ -50,6 +45,7 @@ login-list-count =
     }
 login-list-sort-label-text = 顺序：
 login-list-name-option = 名称（A-Z）
+login-list-name-reverse-option = 名称（Z-A）
 login-list-breached-option = 发生数据外泄的网站
 login-list-last-changed-option = 最后修改
 login-list-last-used-option = 上次使用
@@ -60,9 +56,6 @@ about-logins-login-list-empty-search-description = 没有符合您搜索条件�
 login-list-item-title-new-login = 新建登录信息
 login-list-item-subtitle-new-login = 输入您的登录凭据
 login-list-item-subtitle-missing-username = （无用户名）
-about-logins-list-item-warning-icon =
-    .alt = 警告图标
-    .title = 发生数据外泄的网站
 about-logins-list-item-breach-icon =
     .title = 发生数据外泄的网站
 
@@ -80,7 +73,6 @@ about-logins-intro-import = 若登录信息保存在其他浏览器，您可以<
 
 login-item-new-login-title = 新建登录信息
 login-item-edit-button = 编辑
-login-item-delete-button = 删除
 about-logins-login-item-remove-button = 移除
 login-item-origin-label = 网址
 login-item-origin =
@@ -95,6 +87,8 @@ login-item-password-reveal-checkbox-show =
     .title = 显示密码
 login-item-password-reveal-checkbox-hide =
     .title = 隐藏密码
+login-item-password-reveal-checkbox =
+    .aria-label = 显示密码
 login-item-copy-password-button-text = 复制
 login-item-copied-password-button-text = 已复制！
 login-item-save-changes-button = 保存更改
@@ -125,7 +119,6 @@ enable-password-sync-preferences-button =
            *[other] 前往{ -sync-brand-short-name }首选项
         }
     .accesskey = V
-confirm-delete-dialog-title = 删除此登录信息？
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = 不再询问
     .accesskey = D
@@ -137,7 +130,6 @@ confirmation-dialog-dismiss-button =
     .title = 取消
 about-logins-confirm-remove-dialog-title = 删除此登录信息？
 confirm-delete-dialog-message = 此操作不可撤销。
-confirm-delete-dialog-confirm-button = 删除
 about-logins-confirm-remove-dialog-confirm-button = 移除
 confirm-discard-changes-dialog-title = 要丢弃未保存的更改吗？
 confirm-discard-changes-dialog-message = 将失去所有未保存的更改。
@@ -152,11 +144,6 @@ breach-alert-dismiss =
 
 ## Error Messages
 
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = 已存在使用该用户名的 { $loginTitle } 条目。
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:

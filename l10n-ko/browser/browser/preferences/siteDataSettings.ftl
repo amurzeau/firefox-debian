@@ -22,7 +22,7 @@ site-data-column-last-used =
 # This label is used in the "Host" column for local files, which have no host.
 site-data-local-file-host = (로컬 파일)
 site-data-remove-selected =
-    .label = 선택된 값 삭제
+    .label = 선택항목 삭제
     .accesskey = r
 site-data-button-cancel =
     .label = 취소
@@ -51,4 +51,4 @@ site-data-removing-dialog =
     .buttonlabelaccept = 삭제
 site-data-removing-header = 쿠키와 사이트 데이터 삭제
 site-data-removing-desc = 쿠키와 사이트 데이터를 삭제하면 웹사이트에서 로그아웃 될 수 있습니다. 변경하시겠습니까?
-site-data-removing-table = 다음 사이트의 쿠키와 사이트 데이터가 삭제됨
+site-data-removing-table = 다음 웹 사이트의 쿠키와 사이트 데이터가 삭제됩니다

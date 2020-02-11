@@ -203,6 +203,15 @@ advanced-fonts =
 colors-settings =
     .label = Färger…
     .accesskey = F
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Zoom
+preferences-default-zoom = Standardzoom
+    .accesskey = z
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Zooma endast text
+    .accesskey = t
 language-header = Språk
 choose-language-description = Välj språk som webbsidor ska visas i
 choose-button =
@@ -316,7 +325,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Digital Rights Management (DRM) innehåll
 play-drm-content =
@@ -571,6 +580,9 @@ containers-header = Innehållsflikar
 containers-add-button =
     .label = Lägg till ny behållare
     .accesskey = L
+containers-new-tab-check =
+    .label = Välj en behållare för varje ny flik
+    .accesskey = V
 containers-preferences-button =
     .label = Inställningar
 containers-remove-button =
@@ -909,7 +921,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Anpassad
     .accesskey = A
 
-
+##
 
 content-blocking-etp-standard-desc = Balanserad för skydd och prestanda. Sidor laddas normalt.
 content-blocking-etp-strict-desc = Starkare skydd, men kan leda till att vissa webbplatser eller innehåll inte fungerar.

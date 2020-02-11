@@ -203,6 +203,15 @@ advanced-fonts =
 colors-settings =
     .label = Colores…
     .accesskey = C
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Zoom
+preferences-default-zoom = Zoom predefinite
+    .accesskey = p
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Zoom del texto solmente
+    .accesskey = t
 language-header = Lingua
 choose-language-description = Elige tu lingua preferite pro presentar le paginas
 choose-button =
@@ -316,7 +325,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Contento protegite per DRM (Gestion de Derectos Digital)
 play-drm-content =
@@ -379,7 +388,7 @@ performance-allow-hw-accel =
     .accesskey = r
 performance-limit-content-process-option = Limite de processos de contento
     .accesskey = L
-performance-limit-content-process-enabled-desc = Plus processos de contento pote meliorar le rendimento quando on usa plure schedas. ma tamben illos usa plus memoria.
+performance-limit-content-process-enabled-desc = Adder processos de contento pote meliorar le rendimento quando on usa plure schedas, ma consumera plus memoria.
 performance-limit-content-process-blocked-desc = Modificar le numero de processos de contento es solmente possibile con { -brand-short-name } in multiprocesso. <a data-l10n-name="learn-more">Apprender a verificar si le multiprocesso es active</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -571,6 +580,9 @@ containers-header = Schedas contextual
 containers-add-button =
     .label = Adder un nove contexto
     .accesskey = A
+containers-new-tab-check =
+    .label = Seliger un contexto pro cata nove scheda
+    .accesskey = S
 containers-preferences-button =
     .label = Preferentias
 containers-remove-button =
@@ -909,7 +921,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Personalisate
     .accesskey = P
 
-
+##
 
 content-blocking-etp-standard-desc = Equilibrio inter protection e rendimento. Le paginas se carga normalmente.
 content-blocking-etp-strict-desc = Protection reinfortiate, ma certe sitos o contento pote non functionar correctemente.

@@ -18,7 +18,7 @@ menu-file-new-window =
     .label = 새 창
     .accesskey = N
 menu-file-new-private-window =
-    .label = 새 사생활 보호 모드
+    .label = 새 사생활 보호 창
     .accesskey = W
 # "Open Location" is only displayed on macOS, and only on windows
 # that aren't main browser windows, or when there are no windows
@@ -150,13 +150,13 @@ menu-view-enter-full-screen =
     .label = 전체 화면으로 표시
     .accesskey = F
 menu-view-exit-full-screen =
-    .label = 전체 화면 표시 해제
+    .label = 전체 화면 종료
     .accesskey = F
 menu-view-full-screen =
     .label = 전체 화면
     .accesskey = F
 
-
+##
 
 menu-view-show-all-tabs =
     .label = 모든 탭 표시
@@ -173,7 +173,7 @@ menu-history =
 menu-history-show-all-history =
     .label = 방문 기록 보기
 menu-history-clear-recent-history =
-    .label = 사용 기록 삭제
+    .label = 최근 방문 기록 삭제…
 menu-history-synced-tabs =
     .label = 동기화한 탭
 menu-history-restore-last-session =
@@ -193,7 +193,7 @@ menu-bookmarks-menu =
 menu-bookmarks-show-all =
     .label = 모든 북마크 보기
 menu-bookmarks-all-tabs =
-    .label = 모든 탭 북마크 추가…
+    .label = 모든 탭 북마크…
 menu-bookmarks-toolbar =
     .label = 북마크 모음
 menu-bookmarks-other =
@@ -219,7 +219,7 @@ menu-tools-turn-on-sync =
     .label = { -sync-brand-short-name } 켜기…
     .accesskey = n
 menu-tools-sync-now =
-    .label = 동기화하기
+    .label = 지금 동기화
     .accesskey = S
 menu-tools-fxa-re-auth =
     .label = { -brand-product-name }에 다시 연결…
@@ -276,10 +276,10 @@ menu-help-feedback-page =
     .label = 의견 보내기…
     .accesskey = S
 menu-help-safe-mode-without-addons =
-    .label = 안전 모드로 시작…
+    .label = 부가기능을 끄고 다시 시작…
     .accesskey = R
 menu-help-safe-mode-with-addons =
-    .label = 부가 기능이 켜진 채로 다시 시작
+    .label = 부가기능을 켜고 다시 시작
     .accesskey = R
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.

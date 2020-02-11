@@ -212,6 +212,15 @@ advanced-fonts =
 colors-settings =
     .label = الألوان…
     .accesskey = ل
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = التقريب
+preferences-default-zoom = التقريب المبدئي
+    .accesskey = ق
+preferences-default-zoom-value =
+    .label = { $percentage }٪
+preferences-zoom-text-only =
+    .label = قرّب النص فقط
+    .accesskey = ن
 language-header = اللّغات
 choose-language-description = اختر لغتك المفضلة لعرض الصفحات
 choose-button =
@@ -321,7 +330,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = محتوى إدارة الحقوق الرقمية (DRM)
 play-drm-content =
@@ -409,6 +418,9 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = ابحث عن النص مع بداية الكتابة
     .accesskey = ح
+browsing-picture-in-picture-toggle-enabled =
+    .label = فعّل عناصر التحكّم بالڤديوهات المعترِضة
+    .accesskey = ك
 browsing-picture-in-picture-learn-more = اطّلع على المزيد
 browsing-cfr-recommendations =
     .label = امتدادات موصى بها وأنت تتصفّح
@@ -577,6 +589,9 @@ containers-header = الألسنة الحاوية
 containers-add-button =
     .label = أضف حاوية جديدة
     .accesskey = ح
+containers-new-tab-check =
+    .label = اختر حاويًا لكلّ لسان جديد
+    .accesskey = خ
 containers-preferences-button =
     .label = التفضيلات
 containers-remove-button =
@@ -844,6 +859,8 @@ sitedata-option-block-trackers =
     .label = متعقّبات الأطراف الثالثة
 sitedata-option-block-cross-site-trackers =
     .label = المتعقّبات بين المواقع
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = المتعقّبات الاجتماعية ومتعقّبات بين المواقع
 sitedata-option-block-unvisited =
     .label = الكعكات من المواقع غير المُزارة
 sitedata-option-block-all-third-party =
@@ -913,7 +930,7 @@ enhanced-tracking-protection-setting-custom =
     .label = مخصّص
     .accesskey = خ
 
-
+##
 
 content-blocking-etp-standard-desc = يوازن بين الحماية والأداء. ستتحمّل الصفحات كالعادة.
 content-blocking-etp-strict-desc = حماية أقوى وأعتى، لكنها قد تعطب محتويات بعض المواقع أو المواقع نفسها.

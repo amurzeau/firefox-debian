@@ -63,12 +63,15 @@ about-logins-list-item-breach-icon =
 
 login-intro-heading = अपने सहेजे गए लॉगिन की खोज़ है? { -sync-brand-short-name } सेट करें।
 about-logins-login-intro-heading-logged-in = कोई संकलित लॉगिन नहीं मिला।
+login-intro-description = यदि आपने अपने लॉगिन को एक अलग डिवाइस पर { -brand-product-name } में सहेजा है, तो उन्हें यहां ऐसे प्राप्त करें:
+login-intro-instruction-fxa-settings = सुनिश्चित करें कि आपने { -sync-brand-short-name } सेटिंग्स में लॉगिन चेकबॉक्स का चयन किया है
+about-logins-intro-instruction-help = अधिक मदद के लिए <a data-l10n-name="help-link">{ -lockwise-brand-short-name } सहायता </a> पर जाएं
+about-logins-intro-import = यदि आपके लॉगिन किसी अन्य ब्राउज़र में सहेजे गए हैं, तो आप उन्हें { -lockwise-brand-short-name } में <a data-l10n-name="import-link"> आयात </a> कर सकते हैं
 
 ## Login
 
 login-item-new-login-title = नया लॉगिन बनाएं
 login-item-edit-button = संपादित करें
-login-item-delete-button = मिटाएं
 about-logins-login-item-remove-button = हटाएँ
 login-item-origin-label = वेबसाइट का पता
 login-item-origin =
@@ -83,6 +86,8 @@ login-item-password-reveal-checkbox-show =
     .title = पासवर्ड दिखाएं
 login-item-password-reveal-checkbox-hide =
     .title = पासवर्ड छिपाएं
+login-item-password-reveal-checkbox =
+    .aria-label = पासवर्ड दिखाएं
 login-item-copy-password-button-text = कॉपी करें
 login-item-copied-password-button-text = कॉपी हो गया!
 login-item-save-changes-button = परिवर्तनों को सहेजें
@@ -108,7 +113,6 @@ enable-password-sync-preferences-button =
            *[other] { -sync-brand-short-name } वरीयताएँ पर जाएँ
         }
     .accesskey = V
-confirm-delete-dialog-title = इस लॉगिन को मिटाएं?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = मुझसे फिर न पूछें
     .accesskey = न
@@ -120,7 +124,6 @@ confirmation-dialog-dismiss-button =
     .title = रद्द करें
 about-logins-confirm-remove-dialog-title = इस लॉगिन को हटाएँ?
 confirm-delete-dialog-message = इस क्रिया को पहले जैसा नहीं किया जा सकता।
-confirm-delete-dialog-confirm-button = मिटाएं
 about-logins-confirm-remove-dialog-confirm-button = हटाएँ
 confirm-discard-changes-dialog-title = न सहेजे गए परिवर्तनों को छोड़ें?
 confirm-discard-changes-dialog-message = सभी सहेजे न गए परिवर्तन खो जाएंगे।

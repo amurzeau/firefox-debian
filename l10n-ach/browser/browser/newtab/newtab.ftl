@@ -84,8 +84,9 @@ newtab-menu-archive-pocket = Kan i { -pocket-brand-name }
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = Otum
+newtab-privacy-modal-link = Nong ngec ikit ma mung tiyo kwede i dirica matidi manyen
 
-
+##
 
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Kwany alamabuk
@@ -160,15 +161,18 @@ newtab-empty-section-topstories = Ityeko weng. Rot doki lacen pi lok madito mapo
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
+newtab-discovery-empty-section-topstories-header = Ityeko woko weng!
 newtab-discovery-empty-section-topstories-content = Rot doki lacen pi lok mapol.
 newtab-discovery-empty-section-topstories-try-again-button = Tem Doki
 newtab-discovery-empty-section-topstories-loading = Tye ka cano…
+# Displays when a layout in a section took too long to fetch articles.
+newtab-discovery-empty-section-topstories-timed-out = Oops! Manok kono onongo wa cano bute man, ento pe weng.
 
 ## Pocket Content Section.
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Lok macuk gi lamal:
-newtab-pocket-how-it-works = Kit ma tiyo kwede
+newtab-pocket-whats-pocket = Ngo ma obedo { -pocket-brand-name }?
 newtab-pocket-cta-button = Nong { -pocket-brand-name }
 newtab-pocket-cta-text = Gwok lok ma imaro ii { -pocket-brand-name }, ka i pik wii ki jami me akwana ma mako wii.
 

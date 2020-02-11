@@ -191,6 +191,15 @@ advanced-fonts =
 colors-settings =
     .label = Màu sắc…
     .accesskey = M
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Thu phóng
+preferences-default-zoom = Thu phóng mặc định
+    .accesskey = z
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Chỉ thu phóng văn bản
+    .accesskey = t
 language-header = Ngôn ngữ
 choose-language-description = Chọn ngôn ngữ ưu tiên bạn muốn để hiển thị trang
 choose-button =
@@ -304,7 +313,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Nội dung quản lý bản quyền kỹ thuật số (DRM)
 play-drm-content =
@@ -319,7 +328,7 @@ update-history =
     .accesskey = p
 update-application-allow-description = Cho phép { -brand-short-name }
 update-application-auto =
-    .label = Tự động cài đặt các bản cập nhật (khuyến cáo)
+    .label = Tự động cài đặt các bản cập nhật (khuyến nghị)
     .accesskey = A
 update-application-check-choose =
     .label = Kiểm tra các bản cập nhật nhưng bạn sẽ lựa chọn việc cài đặt chúng
@@ -555,6 +564,9 @@ containers-header = Thẻ ngăn chứa
 containers-add-button =
     .label = Thêm ngăn chứa mới
     .accesskey = T
+containers-new-tab-check =
+    .label = Chọn một ngăn chứa cho mỗi thẻ mới
+    .accesskey = S
 containers-preferences-button =
     .label = Tùy chỉnh
 containers-remove-button =
@@ -893,7 +905,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Tùy chỉnh
     .accesskey = C
 
-
+##
 
 content-blocking-etp-standard-desc = Cân bằng để bảo vệ và hiệu suất. Các trang sẽ tải bình thường.
 content-blocking-etp-strict-desc = Bảo vệ mạnh mẽ hơn, nhưng có thể khiến một số trang web và nội dung bị phá vỡ.

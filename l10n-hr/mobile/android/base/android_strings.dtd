@@ -22,23 +22,15 @@
 <!ENTITY firstrun_data_subtext2 "Onemogućite prikazivanje slika kako biste po svakoj posjećenoj stranici potrošili manje podatkovnog prometa.">
 <!ENTITY firstrun_sync_title "Sync">
 <!ENTITY firstrun_sync_message3 "Sinkroniziraj zabilješke, povijest i lozinke na tvoj mobitel.">
-<!ENTITY updatednewfirstrun_sync_title "Račun">
-<!ENTITY firstrun_sync_message2 "Nastavite gdje ste stali.">
 <!ENTITY firstrun_sync_subtext2 "Koristite Sinkronizaciju kako biste našli zabilješke, lozinke i ostalo što spremate na &brandShortName; kod svih vaših uređaja.">
 <!ENTITY newfirstrun_sync_subtext "Sinkronizirajte stvari koje spremite na mobitelu s Firefoxom za računala, privatno i sigurno.">
 <!ENTITY firstrun_sendtab_title "Pošalji karticu">
 <!ENTITY firstrun_sendtab_message "Dijeli kartice s mobitela na radnu površinu – trenutno.">
-<!ENTITY updatednewfirstrun_sync_subtext "Prijavite se u svoj račun kako biste na najbolji način iskoristili &brandShortName;">
 <!ENTITY firstrun_signin_message "Povežite se, započnite">
-<!ENTITY firstrun_signin_button "Prijavite se u Sync">
-<!ENTITY newfirstrun_signin_button "Uključite sinkronizaciju">
-<!ENTITY updatednewfirstrun_signin_button "Prijavite se u &brandShortName;">
-<!ENTITY  onboard_start_button_browser "Započni pregledavanje">
+<!ENTITY onboard_start_button_browser "Započni pregledavanje">
 <!ENTITY firstrun_button_notnow "Ne sada">
 <!ENTITY firstrun_button_next "Sljedeći">
 <!ENTITY firstrun_signup_button "Registriraj se">
-
-<!ENTITY firstrun_signin_button2 "Prijava">
 
 <!ENTITY firstrun_tabqueue_title "Poveznice">
 
@@ -218,7 +210,7 @@
 <!ENTITY pref_category_vendor_summary2 "&brandShortName; informacije, često postavljena pitanja, povratne informacije">
 <!ENTITY pref_category_datareporting "Izbori podataka">
 <!ENTITY pref_category_logins "Prijave">
-<!ENTITY pref_learn_more "Saznajte više">
+<!ENTITY pref_learn_more "Saznaj više">
 <!ENTITY pref_category_installed_search_engines "Instalirani pretraživači interneta">
 <!ENTITY pref_category_add_search_providers "Dodajte više pretraživača interneta">
 <!ENTITY pref_category_search_restore_defaults "Obnovi pretraživače interneta">
@@ -311,14 +303,14 @@
 <!ENTITY pref_tracking_protection_disabled "Onemogućeno">
 
 <!ENTITY pref_whats_new_notification "Šta je novo u &brandShortName;">
-<!ENTITY pref_whats_new_notification_summary "Saznajte o novim značajkama nakon nadogradnje">
+<!ENTITY pref_whats_new_notification_summary "Saznaj o novim funkcijama nakon nadogradnje">
 
 <!-- Localization note (pref_feature_tips_notification): Title of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification"-->
 <!ENTITY pref_feature_tips_notification "Savjeti o proizvodima i mogućnostima">
 <!-- Localization note (pref_feature_tips_notification_summary): Description of a new toggleable setting in Settings-Notifications screen.
      Similar to the already existing "pref_whats_new_notification_summary"-->
-<!ENTITY pref_feature_tips_notification_summary "Saznajte više o korištenju &brandShortName; i drugih &vendorShortName; proizvoda">
+<!ENTITY pref_feature_tips_notification_summary "Saznaj više o korištenju &brandShortName;a i drugih &vendorShortName; proizvoda">
 <!-- Localization note (pref_feature_tips_notification_enabling_path):
      Nothing to translate. Simple concatenation of already localized strings. Result is used below. -->
 <!ENTITY pref_feature_tips_notification_enabling_path "&pref_category_privacy_short; > &pref_category_datareporting; > &datareporting_fhr_title;">
@@ -724,7 +716,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY doorhanger_tracking_message_disabled2 "Ova stranica uključuje elemente koji mogu pratiti vaše pretraživanje.">
 
 <!-- Common mixed and tracking content strings in site identity popup -->
-<!ENTITY learn_more "Saznajte više">
+<!ENTITY learn_more "Saznaj više">
 <!ENTITY enable_protection "Omogući zaštitu">
 <!ENTITY disable_protection "Onemogući zaštitu">
 
@@ -872,7 +864,7 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (whatsnew_notification_title, whatsnew_notification_summary): These strings
      are used for a system notification that's shown to users after the app updates. -->
 <!ENTITY whatsnew_notification_title "&brandShortName; je ažuriran">
-<!ENTITY whatsnew_notification_summary "Saznajte što je novo u ovoj inačici">
+<!ENTITY whatsnew_notification_summary "Saznaj što je novo u ovoj verziji">
 
 <!ENTITY helper_first_offline_bookmark_title "Čitaj izvanmrežno">
 <!ENTITY helper_first_offline_bookmark_message "Pronađite stavke Prikaza čitača u zabilješkama, čak i u izvanmrežnom načinu rada.">
@@ -882,7 +874,8 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY helper_triple_readerview_open_message "Zabilježite stavke Prikaza čitača kako biste ih čitali i kada nema interneta.">
 <!ENTITY helper_triple_readerview_open_button "Dodaj u zabilješke">
 
-<!-- LOCALIZATION NOTE (activity_stream_signin_title, activity_stream_signin_description, activity_stream_signin_button):
+<!-- LOCALIZATION NOTE (activity_stream_signin_title, activity_stream_signin_description, activity_stream_signup_button,
+activity_stream_signin_prompt, activity_stream_signin_prompt_button):
 - These labels are shown in the Activity Stream recommending the user to sign in. -->
 <!ENTITY activity_stream_signin_title "Dobro došli u &brandShortName;">
 <!ENTITY activity_stream_signin_description "Počni sinkronizirati zbilješke, lozinke i ostalo sa svojim Firefox računom.">
@@ -891,7 +884,12 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!-- LOCALIZATION NOTE (activity_stream_signin_prompt_button): To be used in continuation of activity_stream_signin_prompt. -->
 <!ENTITY activity_stream_signin_prompt_button "Prijavi se.">
 
-<!ENTITY activity_stream_signin_button "Prijava">
+<!-- LOCALIZATION NOTE (activity_stream_firefox_promo_title,
+     activity_stream_firefox_promo_description, activity_stream_firefox_promo_button):
+     These labels are shown in an Activity Stream banner. -->
+<!ENTITY activity_stream_firefox_promo_title "Vaš potpuno novi Firefox, stiže 2020">
+<!ENTITY activity_stream_firefox_promo_description "Uskoro dolazi: Poboljšane performanse. Napredna zaštita od praćenja. I značajke stvorene da bi Vam pomogle u traženju, spremanju i dijeljenje više onoga što volite na mreži.">
+<!ENTITY activity_stream_firefox_promo_button "Zavirite">
 
 <!ENTITY activity_stream_topsites "Najpopularnije stranice">
 <!-- LOCALIZATION NOTE (activity_stream_topstories): &brandPocket is the brand of the company, Pocket, that is being used to provide suggestions for articles. -->

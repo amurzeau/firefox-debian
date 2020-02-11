@@ -9,7 +9,7 @@ cfr-doorhanger-extension-heading = Askouezh erbedet
 cfr-doorhanger-feature-heading = Keweriuster erbedet
 cfr-doorhanger-pintab-heading = Klaskit an dra-se: spilhennañ an ivinell
 
-
+##
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Perak e welan an dra-mañ
@@ -124,6 +124,36 @@ cfr-whatsnew-lockwise-backup-link-text = Gweredekaat ar gwaredoù
 cfr-whatsnew-lockwise-take-title = Kemerit ho kerioù-tremen ganeoc'h
 cfr-whatsnew-lockwise-take-body = Gant arload hezoug { -lockwise-brand-short-name } e c'hallit gwelout ho kerioù-tremen gwaredet adalek forzh pe lec'h.
 cfr-whatsnew-lockwise-take-link-text = Kaout an arload
+
+## Picture-in-Picture
+
+cfr-whatsnew-pip-header = Sellit ouzh videoioù en ur verdeiñ
+cfr-whatsnew-pip-body = Skeudenn-ouzh-skeudenn a lak ar video en ur prenestr war neuñv evit ma c'hallfec'h e sellet en ul labourat war ivinelloù all.
+cfr-whatsnew-pip-cta = Gouzout hiroc'h
+
+## Permission Prompt
+
+cfr-whatsnew-permission-prompt-header = Nebeutoc'h a brenestroù diflugell torr-penn
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } a vir al lec'hiennoù da c'houlenn kas deoc'h kemennadennoù diflugell ent emgefreek
+cfr-whatsnew-permission-prompt-cta = Gouzout hiroc'h
+
+## Fingerprinter Counter
+
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Dinoer roudoù niverel stanket
+        [two] Dinoerien roudoù niverel stanket
+        [few] Dinoerien roudoù niverel stanket
+        [many] Dinoerien roudoù niverel stanket
+       *[other] Dinoerien roudoù niverel stanket
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } a stank meur a zinoer roudoù niverel a zastum en un doare kuzh titouroù diwar-benn ho trevnad hag ho oberiantiz evit krouiñ un aelad bruderezh diwar ho penn.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Dinoerien roudoù niverel
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } a c'hall stankañ meur a zinoer roudoù niverel a zastum en un doare kuzh titouroù diwar-benn ho trevnad hag ho oberiantiz evit krouiñ un aelad bruderezh diwar ho penn.
 
 ## Bookmark Sync
 

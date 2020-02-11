@@ -15,11 +15,6 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Tembiapo ñepyrũ jeheka
 create-login-button = Tembiapo ñepyrũ moheñói
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = Favicon { $title } peg̃uarã
 fxaccounts-sign-in-text = Egueru umi ne ñe’ẽñemi ne ambue mba’e’okágui
 fxaccounts-sign-in-button = Eñemboheraguapy { -sync-brand-short-name }-pe
 fxaccounts-avatar-button =
@@ -51,6 +46,7 @@ login-list-count =
     }
 login-list-sort-label-text = Omoĩporã:
 login-list-name-option = Téra  (A-Z)
+login-list-name-reverse-option = Téra (Z-A)
 login-list-breached-option = Ñanduti renda imarãmava
 login-list-last-changed-option = Ñemoambue ipyahuvéva
 login-list-last-used-option = Ojepurúva ipahaitépe
@@ -61,9 +57,6 @@ about-logins-login-list-empty-search-description = Ndaipóri pe ehekáva.
 login-list-item-title-new-login = Tembiapo ñepyrũ pyahu
 login-list-item-subtitle-new-login = Emoinge nde reraite tembiapo ñepyrũme
 login-list-item-subtitle-missing-username = (puruhára hera'ỹva)
-about-logins-list-item-warning-icon =
-    .alt = Ta'ãngachu'i kyhyjerã
-    .title = Ñanduti renda imarãva
 about-logins-list-item-breach-icon =
     .title = Ñanduti renda imarãva
 
@@ -81,7 +74,6 @@ about-logins-intro-import = Ne rembiapo ñepyrũ oñeñongatúramo ambue kundah�
 
 login-item-new-login-title = Tembiapo ñepyrũ pyahu moheñói
 login-item-edit-button = Mbosako'i
-login-item-delete-button = Mboguete
 about-logins-login-item-remove-button = Mboguete
 login-item-origin-label = Ñanduti kundaharape
 login-item-origin =
@@ -96,6 +88,8 @@ login-item-password-reveal-checkbox-show =
     .title = Ñe'ẽñemi jehechauka
 login-item-password-reveal-checkbox-hide =
     .title = Ñe'ẽñemi kañymby
+login-item-password-reveal-checkbox =
+    .aria-label = Ehechauka ñe’ẽñemi
 login-item-copy-password-button-text = Monguatia
 login-item-copied-password-button-text = Monguatiapyre!
 login-item-save-changes-button = Moambue ñongatu
@@ -126,7 +120,6 @@ enable-password-sync-preferences-button =
            *[other] Eike { -sync-brand-short-name } Oguerohoryvévape
         }
     .accesskey = V
-confirm-delete-dialog-title = ¿Embogue ko tembiapo ñepyrũ?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = Anive eporandujey
     .accesskey = D
@@ -138,7 +131,6 @@ confirmation-dialog-dismiss-button =
     .title = Heja
 about-logins-confirm-remove-dialog-title = ¿Emboguete ko tembiapo ñepyrũ?
 confirm-delete-dialog-message = Ko tembiapoite ndaikatúi emboguevi.
-confirm-delete-dialog-confirm-button = Mboguete
 about-logins-confirm-remove-dialog-confirm-button = Mboguete
 confirm-discard-changes-dialog-title = ¿Emboyke moambue eñongatu’ỹva?
 confirm-discard-changes-dialog-message = Opaite ñemoambue oñeñongatu’ỹva oguepáta.
@@ -153,11 +145,6 @@ breach-alert-dismiss =
 
 ## Error Messages
 
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = Eikekuaáma { $loginTitle }-pe ko puruhára reheve.
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:

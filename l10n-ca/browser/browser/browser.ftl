@@ -56,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Obre la subfinestra del missatge
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Obre la subfinestra de la sol·licitud d'ubicació
+urlbar-xr-notification-anchor =
+    .tooltiptext = Obre el tauler de permisos de realitat virtual
 urlbar-storage-access-anchor =
     .tooltiptext = Obre la subfinestra de permisos d'activitat de navegació
 urlbar-translate-notification-anchor =
@@ -80,8 +82,22 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Obre la subfinestra del missatge d'instal·lació del complement
 urlbar-tip-help-icon =
     .title = Obteniu ajuda
+urlbar-search-tips-confirm = Entesos
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Escriviu menys i trobeu més: Cerqueu amb { $engineName } directament des de la barra d'adreces.
+urlbar-search-tips-redirect = Comenceu la vostra cerca aquí per veure suggeriments de { $engineName } i del vostre historial de navegació.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Heu blocat la informació d'ubicació per a aquest lloc web.
+urlbar-xr-blocked =
+    .tooltiptext = Heu blocat l'accés a dispositius de realitat virtual per a aquest lloc web.
 urlbar-web-notifications-blocked =
     .tooltiptext = Heu blocat les notificacions per a aquest lloc web.
 urlbar-camera-blocked =
@@ -154,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 30em
+
+## Identity Panel
+
+identity-connection-not-secure = La connexió no és segura
+identity-connection-secure = Connexió segura
+identity-connection-internal = Aquesta és una pàgina del { -brand-short-name } segura.
+identity-connection-file = Aquesta pàgina està desada a l'ordinador.
+identity-extension-page = Aquesta pàgina s'ha carregat des d'una extensió.
+identity-active-blocked = El { -brand-short-name } ha blocat parts d'aquesta pàgina que no són segures.
+identity-custom-root = Connexió verificada per un emissor de certificats que no és reconegut per Mozilla.
+identity-passive-loaded = Parts d'aquesta pàgina no són segures (com les imatges).
+identity-active-loaded = Heu desactivat la protecció en aquesta pàgina.
+identity-weak-encryption = Aquesta pàgina utilitza xifratge feble.
+identity-insecure-login-forms = Les dades d'inici de sessió que introduïu en aquesta pàgina podrien estar en risc.
+identity-permissions =
+    .value = Permisos
+identity-permissions-reload-hint = Potser cal que actualitzeu la pàgina per aplicar els canvis.
+identity-permissions-empty = No heu donat cap permís especial a aquest lloc.
+identity-clear-site-data =
+    .label = Esborra les galetes i dades dels llocs…
+identity-connection-not-secure-security-view = No esteu connectat de forma segura a aquest lloc.
+identity-connection-verified = Esteu connectat de forma segura a aquest lloc.
+identity-ev-owner-label = Certificat emès per a:
+identity-description-custom-root = Mozilla no reconeix aquest emissor de certificats. És possible que l'hagi afegit el vostre sistema operatiu o un administrador. <label data-l10n-name="link">Més informació</label>
+identity-remove-cert-exception =
+    .label = Elimina l'excepció
+    .accesskey = x
+identity-description-insecure = La connexió a aquest lloc no és privada. La informació que envieu podria ser visualitzada per altres persones (com contrasenyes, missatges, targetes de crèdit, etc.).
+identity-description-insecure-login-forms = La informació d'inici de sessió que introduïu en aquesta pàgina no és segura i podria interceptar-se.
+identity-description-weak-cipher-intro = La connexió a aquest lloc web utilitza un xifratge feble i no és privada.
+identity-description-weak-cipher-risk = Altres persones podrien visualitzar la informació o modificar el comportament del lloc web.
+identity-description-active-blocked = El { -brand-short-name } ha blocat parts d'aquesta pàgina que no són segures. <label data-l10n-name="link">Més informació</label>
+identity-description-passive-loaded = La connexió no és privada i la informació que compartiu amb el lloc podria ser visualitzada per altres persones.
+identity-description-passive-loaded-insecure = Aquest lloc web inclou contingut que no és segur (com les imatges). <label data-l10n-name="link">Més informació</label>
+identity-description-passive-loaded-mixed = Malgrat que el { -brand-short-name } ha blocat parts del contingut, encara hi ha contingut de la pàgina que no és segur (such as images). <label data-l10n-name="link">Més informació</label>
+identity-description-active-loaded = Aquest lloc web inclou contingut que no és segur (com els scripts) i la connexió no és privada.
+identity-description-active-loaded-insecure = La informació que compartiu amb aquest lloc podria ser visualitzada per altres persones (com contrasenyes, missatges, targetes de crèdit, etc.).
+identity-learn-more =
+    .value = Més informació
+identity-disable-mixed-content-blocking =
+    .label = Desactiva la protecció aquesta vegada
+    .accesskey = D
+identity-enable-mixed-content-blocking =
+    .label = Activa la protecció
+    .accesskey = v
+identity-more-info-link-text =
+    .label = Més informació

@@ -20,8 +20,29 @@ cert-error-trust-self-signed = یہ تصدیق نامہ قابل اعتماد ن
 cert-error-trust-symantec = GeoTrust ، RapidSSL ، Symantec، Thawteاور VeriSign کے ذریعہ جاری کردہ تصدہق نامہ کو اب محفوظ  شدہ نہیں سمجھا جاتا ہے کیونکہ یہ تصدہق نامہ  حکام ماضی میں سلامتی کے طریقوں پر عمل کرنے میں ناکام رہے تھے۔
 cert-error-untrusted-default = یہ تصدیق نامہ قابل اعتماد ماخذ سے نہیں ہے۔
 # Variables:
+# $hostname (String) - Hostname of the website with cert error.
+cert-error-domain-mismatch = ویب سائٹس تصدیق نامے کے ذریعے اپنی شناخت ثابت کرتی ہیں۔{ -brand-short-name } کو اس سائٹ پر اعتماد نہیں ہے کیونکہ وہ ایسے  تصدیق نامے کا استعمال کر رہی ہے{ $hostname } کے لئے درست نہیں ہے۔
+# Variables:
+# $hostname (String) - Hostname of the website with cert error.
+# $alt-name (String) - Alternate domain name for which the cert is valid.
+cert-error-domain-mismatch-single-nolink = ویب سائٹس اپنی شناخت سرٹیفکیٹ کے ذریعے ثابت کرتی ہیں۔ { -brand-short-name } کو اس سائٹ پر اعتماد نہیں ہے کیونکہ { $hostname } کے لئے جو سرٹیفکیٹ استعمال ہو رہا ہے وہ درست نہیں ہے۔ یہ سرٹیفکیٹ صرف { $alt-name } کے لئے درست ہے۔
+# Variables:
+# $subject-alt-names (String) - Alternate domain names for which the cert is valid.
+cert-error-domain-mismatch-multiple = ویب سائٹس اپنی شناخت سرٹیفکیٹ کے ذریعے ثابت کرتی ہیں۔ { -brand-short-name } کو اس سائٹ پر اعتماد نہیں ہے کیونکہ { $hostname } کے لئے جو سرٹیفکیٹ استعمال ہو رہا ہے وہ درست نہیں ہے۔ یہ سرٹیفکیٹ صرف { $subject-alt-names } کے لئے درست ہے۔
+# Variables:
+# $hostname (String) - Hostname of the website with cert error.
+# $not-after-local-time (Date) - Certificate is not valid after this time.
+cert-error-expired-now = ویب سائٹس اپنی شناخت سرٹیفکیٹ کے ذریعے ثابت کرتی ہیں، جو کی مقررہ مدت کے لئے درست ہوتا ہے۔ { $hostname } کے سرٹیفکیٹ کی میعاد { $not-after-local-time } کو ختم ہو گئی۔
+# Variables:
+# $hostname (String) - Hostname of the website with cert error.
+# $not-before-local-time (Date) - Certificate is not valid before this time.
+cert-error-not-yet-valid-now = ویب سائٹس اپنی شناخت سرٹیفکیٹ کے ذریعے ثابت کرتی ہیں، جو کی مقررہ مدت کے لئے درست ہوتا ہے۔ { $hostname } کا سرٹیفکیٹ { $not-before-local-time } سے پہلے درست نہیں ہوگا۔
+# Variables:
 # $error (String) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix-link = نقص: کا کوڈ:<a data-l10n-name="error-code-link">{ $error }</a>
+# Variables:
+# $hostname (String) - Hostname of the website with cert error.
+cert-error-symantec-distrust-description = ویب سائٹس اپنی شناخت سرٹیفکیٹ کے ذریعے ثابت کرتی ہیں، جو سرٹیفکیٹ اتھارٹی کے زریعہ جاری ہوتے ہے۔ زیادہ تر براؤزر GeoTrust، RapidSSL، Symantec، Thawte، اور VeriSign کے زریعہ جاری کئے گئے سرٹیفکیٹ پر اعتماد نہیں کرتے۔ { $hostname } ان میں سے کسی ایک کا فراہم سرٹیفکیٹ استعمال کرتا ہے اور اسی لئے ویب سائٹ کی شناخت سابت نہیں ہو پا رہی ہے۔
 cert-error-symantec-distrust-admin = آپ اس مسئلے کے بارے میں ویب سائٹ کے منتظم کو مطلع کرسکتے ہیں۔
 # Variables:
 # $hasHSTS (Boolean) - Indicates whether HSTS header is present.

@@ -203,6 +203,15 @@ advanced-fonts =
 colors-settings =
     .label = Kleuren…
     .accesskey = K
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Zoom
+preferences-default-zoom = Standert zoom
+    .accesskey = z
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Allinnich tekst ynzoome
+    .accesskey = t
 language-header = Taal
 choose-language-description = Talen kieze dêr't websites yn werjûn wurde moatte.
 choose-button =
@@ -316,7 +325,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Digital Rights Management (DRM)-ynhâld
 play-drm-content =
@@ -571,6 +580,9 @@ containers-header = Kontenerljepblêden
 containers-add-button =
     .label = Nije kontener tafoegje
     .accesskey = A
+containers-new-tab-check =
+    .label = Selektearje in kontener foar elk nij ljepblêd
+    .accesskey = S
 containers-preferences-button =
     .label = Foarkarren
 containers-remove-button =
@@ -909,7 +921,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Oanpast
     .accesskey = O
 
-
+##
 
 content-blocking-etp-standard-desc = Balansearre foar beskerming en prestaasjes. Siden lade normaal.
 content-blocking-etp-strict-desc = Sterkere beskerming, mar kin der foar soargje dat guon websites of ynhâld net wurkje.

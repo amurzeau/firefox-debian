@@ -206,6 +206,15 @@ advanced-fonts =
 colors-settings =
     .label = Farby…
     .accesskey = F
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Veľkosť stránky
+preferences-default-zoom = Predvolená veľkosť
+    .accesskey = d
+preferences-default-zoom-value =
+    .label = { $percentage } %
+preferences-zoom-text-only =
+    .label = Meniť len veľkosť textu
+    .accesskey = t
 language-header = Jazyk
 choose-language-description = Vyberte jazyky pre zobrazovanie webových stránok
 choose-button =
@@ -319,7 +328,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Obsah chránený pomocou Digital Rights Management (DRM)
 play-drm-content =
@@ -499,7 +508,7 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Snippety
-home-prefs-snippets-description = Informácie od Mozilly a od { -brand-product-name }u
+home-prefs-snippets-description = Informácie od spoločnosti { -vendor-short-name } a aplikácie { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -913,7 +922,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Vlastná
     .accesskey = V
 
-
+##
 
 content-blocking-etp-standard-desc = Vyvážená ochrana a výkon. Neovplyvní načítanie webových stránok.
 content-blocking-etp-strict-desc = Viac blokovaného obsahu zvyšuje pravdepodobnosť, že niektoré stránky nebudú správne fungovať.

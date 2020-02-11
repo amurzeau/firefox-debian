@@ -15,11 +15,6 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Search Logins
 create-login-button = Create New Login
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = Favicon for { $title }
 fxaccounts-sign-in-text = Get your passwords on your other devices
 fxaccounts-sign-in-button = Sign in to { -sync-brand-short-name }
 fxaccounts-avatar-button =
@@ -51,6 +46,7 @@ login-list-count =
     }
 login-list-sort-label-text = Sort by:
 login-list-name-option = Name (A-Z)
+login-list-name-reverse-option = Name (Z-A)
 login-list-breached-option = Breached Websites
 login-list-last-changed-option = Last Modified
 login-list-last-used-option = Last Used
@@ -61,9 +57,6 @@ about-logins-login-list-empty-search-description = There are no results matching
 login-list-item-title-new-login = New Login
 login-list-item-subtitle-new-login = Enter your login credentials
 login-list-item-subtitle-missing-username = (no username)
-about-logins-list-item-warning-icon =
-    .alt = Warning icon
-    .title = Breached website
 about-logins-list-item-breach-icon =
     .title = Breached website
 
@@ -81,7 +74,6 @@ about-logins-intro-import = If your logins are saved in another browser, you can
 
 login-item-new-login-title = Create New Login
 login-item-edit-button = Edit
-login-item-delete-button = Delete
 about-logins-login-item-remove-button = Remove
 login-item-origin-label = Website address
 login-item-origin =
@@ -96,6 +88,8 @@ login-item-password-reveal-checkbox-show =
     .title = Show password
 login-item-password-reveal-checkbox-hide =
     .title = Hide password
+login-item-password-reveal-checkbox =
+    .aria-label = Show password
 login-item-copy-password-button-text = Copy
 login-item-copied-password-button-text = Copied!
 login-item-save-changes-button = Save Changes
@@ -126,7 +120,6 @@ enable-password-sync-preferences-button =
            *[other] Visit { -sync-brand-short-name } Preferences
         }
     .accesskey = V
-confirm-delete-dialog-title = Delete this login?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = Don’t ask me again
     .accesskey = D
@@ -138,7 +131,6 @@ confirmation-dialog-dismiss-button =
     .title = Cancel
 about-logins-confirm-remove-dialog-title = Remove this login?
 confirm-delete-dialog-message = This action cannot be undone.
-confirm-delete-dialog-confirm-button = Delete
 about-logins-confirm-remove-dialog-confirm-button = Remove
 confirm-discard-changes-dialog-title = Discard unsaved changes?
 confirm-discard-changes-dialog-message = All unsaved changes will be lost.
@@ -153,11 +145,6 @@ breach-alert-dismiss =
 
 ## Error Messages
 
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = An entry for { $loginTitle } with that username already exists.
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:

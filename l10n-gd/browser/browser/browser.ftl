@@ -78,6 +78,17 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Stòr dàta san stòras bhuan
 urlbar-addons-notification-anchor =
     .tooltiptext = Fosgail panail teachdaireachdan stàladh thuilleadan
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Nas lugha de sgrìobhadh: Dèan lorg le { $engineName } o bhàr an t-seòlaidh fhèin.
+urlbar-search-tips-redirect = Tòisich air lorg an-seo ’s chì thu molaidhean o { $engineName } agus on eachdraidh bhrabhsaidh agad.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Bhac thu fiosrachadh mun ionad agad air an làrach-lìn seo.
 urlbar-web-notifications-blocked =
@@ -144,3 +155,41 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-internal = Seo duilleag { -brand-short-name } tèarainte.
+identity-connection-file = Tha an duilleag seo ’ga stòradh air a’ choimpiutair agad.
+identity-extension-page = Chaidh an duilleag seo ’ga luchdadh o leudachan.
+identity-active-blocked = Bhac { -brand-short-name } na pìosan dhen duilleag seo nach eil tèarainte.
+identity-passive-loaded = Chan eil pìosan dhen duilleag seo tèarainte (mar dhealbhan).
+identity-active-loaded = Chuir thu an dìon à comas air an duilleag seo.
+identity-weak-encryption = Tha an duilleag seo a’ cleachdadh crioptachadh lag.
+identity-insecure-login-forms = Dh’fhaoidte gu bheil cothrom air daoine air fiosrachadh clàraidh air an duilleag seo.
+identity-permissions-reload-hint = Dh’fhaoidte gum bi agad ris an duilleag ath-luchdadh mus bi na h-atharraichean an sàs.
+identity-permissions-empty = Cha dug thu cead sònraichte sam bith dhan làrach seo.
+identity-clear-site-data =
+    .label = Falamhaich na briosgaidean is dàta nan làrach...
+identity-remove-cert-exception =
+    .label = Thoir an eisgeachd  air falbh
+    .accesskey = r
+identity-description-insecure = Chan eil an ceangal agad ris an làrach seo prìobhaideach. Dh’fhaoidte gum faic daoine eile dàta a chuireas tu a-null (mar fhaclan-faire, teachdaireachdan, cairtean-creideis is msaa.).
+identity-description-insecure-login-forms = Chan eil am fiosrachadh a chuir thu a-steach air an duilleag seo tèarainte agus dh’fhaoidte gum bris cuideigin a-steach air a’ chlàradh agad.
+identity-description-weak-cipher-intro = Tha an ceangal agad ris an làrach-lìn seo a’ cleachdadh crioptachadh lag agus chan eil e prìobhaideach.
+identity-description-weak-cipher-risk = Chì daoine eile am fiosrachadh agad agus is urrainn dhaibh giùlan a’ bhrabhsair agad atharrachadh.
+identity-description-active-blocked = Bhac { -brand-short-name } na pìosan dhen duilleag seo nach eil tèarainte. <label data-l10n-name="link">Barrachd fiosrachaidh</label>
+identity-description-passive-loaded = Chan eil an ceangal agad prìobhaideach agus dh’fhaoidte gum faic daoine eile dàta a chuireas tu gun làrach.
+identity-description-passive-loaded-insecure = Tha susbaint air an làrach-lìn seo nach eil tèarainte (mar dhealbhan). <label data-l10n-name="link">Barrachd fiosrachaidh</label>
+identity-description-passive-loaded-mixed = Ged a bhac { -brand-short-name } cuid dhen t-susbaint, tha susbaint air an duilleag seo fhathast nach eil tèarainte (mar dhealbhan). <label data-l10n-name="link">Barrachd fiosrachaidh</label>
+identity-description-active-loaded = Tha susbaint air an làrach-lìn seo nach eil tèarainte (mar sgriobtan) agus chan eil an ceangal agad ris prìobhaideach.
+identity-description-active-loaded-insecure = Dh’fhaoidte gum faic daoine eile dàta a chuireas tu gun làrach seo (mar fhaclan-faire, teachdaireachdan, cairtean-creideis is msaa.).
+identity-learn-more =
+    .value = Barrachd fiosrachaidh
+identity-disable-mixed-content-blocking =
+    .label = Cuir an dìon à comas an-dràsta fhèin
+    .accesskey = d
+identity-enable-mixed-content-blocking =
+    .label = Cuir an comas an dìon
+    .accesskey = u
+identity-more-info-link-text =
+    .label = Barrachd fiosrachaidh

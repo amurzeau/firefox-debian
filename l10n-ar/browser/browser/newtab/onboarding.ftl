@@ -22,6 +22,8 @@ onboarding-welcome-header = مرحبًا بك في { -brand-short-name }
 onboarding-welcome-body = وصلك الآن المتصفّح.<br/>اطّلع على بقيّة منتجات { -brand-product-name }.
 onboarding-welcome-learn-more = اعرف المزيد حول فوائد ذلك.
 onboarding-welcome-modal-get-body = وصلك الآن المتصفّح.<br/>بقيت أمامك روائع { -brand-product-name } كلّها.
+onboarding-welcome-modal-supercharge-body = عزّز حمايات الخصوصية.
+onboarding-welcome-modal-privacy-body = صار المتصفّح عندك. الآن لنزيد من حمايات الخصوصيّة.
 onboarding-welcome-modal-family-learn-more = خُذ نظرة على طقم منتجات { -brand-product-name }.
 onboarding-welcome-form-header = ابدأ هنا
 onboarding-join-form-header = انضم إلى { -brand-product-name }
@@ -102,6 +104,7 @@ onboarding-fxa-title = زامِن
 onboarding-fxa-text = سجّل حساب { -fxaccount-brand-name } وزامن علاماتك وكلمات السر وافتح الألسنة في كل مكان تستخدم { -brand-short-name } فيه.
 onboarding-tracking-protection-title2 = الحماية من التعقّب
 onboarding-tracking-protection-text2 = يساعدك { -brand-short-name } بمنع المواقع من تعقّبك في الوِب، ما يصعّب الأمر على الإعلانات بمعرفة ما تفعل وأين تذهب.
+onboarding-tracking-protection-button2 = كيف تعمل
 onboarding-data-sync-title = خُذ إعداداتك أينما ذهبت
 # "Sync" is short for synchronize.
 onboarding-data-sync-text2 = زامِن علاماتك وكلمات السر وغيرها الكثير في أيّ مكان تستخدم فيه { -brand-product-name }.
@@ -121,9 +124,14 @@ onboarding-mobile-phone-text = نزّل { -brand-product-name } على آي‌أ
 # "Mobile" is short for mobile/cellular phone, "Browser" is short for web
 # browser.
 onboarding-mobile-phone-button = نزّل متصفّح المحمول
+onboarding-send-tabs-title = أرسِل الألسنة إلى ذاتك الأخرى مباشرةً
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text = تُشارك خاصية إرسال الألسنة الصفحات بين أجزتك بسهولة تامة دون نسخ شيء ولا مغادرة المتصفّح.
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
 onboarding-send-tabs-text2 = شارِك الصفحات بين أجهزتك بسهولة تامة دون نسخ الروابط يدويًا أو ترك المتصفّح.
+onboarding-send-tabs-button = ابدأ استعمال ميزة «إرسال الألسنة»
 onboarding-pocket-anywhere-title = اقرأ واستمع إلى ما ترغب أينما كنت
 onboarding-pocket-anywhere-text2 = احفظ ما تحبّ من محتوى وتصفّحه دون اتصال عبر تطبيق { -pocket-brand-name }. بهذا تقرأه وتسمعه وتطالعه متى ما أردت وحينما تشاء.
 onboarding-pocket-anywhere-button = جرّب { -pocket-brand-name }

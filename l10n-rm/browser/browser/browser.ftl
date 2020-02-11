@@ -56,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Avrir la panela da messadis
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Avrir la panela che dumonda la posiziun
+urlbar-xr-notification-anchor =
+    .tooltiptext = Avrir la panela da permissiuns per la realitad virtuala
 urlbar-storage-access-anchor =
     .tooltiptext = Avrir la panela da las permissiuns per la navigaziun
 urlbar-translate-notification-anchor =
@@ -80,8 +82,22 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Avrir la panela d'installaziun da supplements
 urlbar-tip-help-icon =
     .title = Ir per agid
+urlbar-search-tips-confirm = Ok, chapì
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Tippar main e chattar dapli: Tschertga cun { $engineName } directamain en la trav d'adressas.
+urlbar-search-tips-redirect = Cumenza qua tia tschertga per laschar mussar propostas da { $engineName } e propostas ord tia cronologia.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Ti has bloccà las infurmaziuns da geolocalisaziun per questa website.
+urlbar-xr-blocked =
+    .tooltiptext = Ti has bloccà l'access als apparats da realitad virtuala per questa website.
 urlbar-web-notifications-blocked =
     .tooltiptext = Ti has bloccà ils messadis da questa website.
 urlbar-camera-blocked =
@@ -154,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 30em
+
+## Identity Panel
+
+identity-connection-not-secure = Connexiun betg segirada
+identity-connection-secure = Connexiun segirada
+identity-connection-internal = Quai è ina pagina segira da { -brand-short-name }.
+identity-connection-file = Questa pagina è memorisada sin tes computer.
+identity-extension-page = Ina extensiun ha chargià questa pagina.
+identity-active-blocked = { -brand-short-name } ha bloccà parts da questa pagina che n'èn betg segiradas.
+identity-custom-root = Connexiun verifitgada dad in certificat emess dad post da certificaziun betg renconuschì da Mozilla.
+identity-passive-loaded = Parts da questa pagina (p.ex. maletgs) n'èn betg segiradas.
+identity-active-loaded = Ti has deactivà la protecziun per questa pagina.
+identity-weak-encryption = Questa pagina utilisescha in criptadi flaivel.
+identity-insecure-login-forms = Infurmaziuns d'annunzia endatadas sin questa pagina èn eventualmain periclitadas.
+identity-permissions =
+    .value = Autorisaziuns
+identity-permissions-reload-hint = Forsa stos ti chargiar da nov questa pagina per applitgar las midadas.
+identity-permissions-empty = Ti n'has betg definì autorisaziuns spezialas per questa pagina.
+identity-clear-site-data =
+    .label = Stizzar ils cookies e las datas da websites…
+identity-connection-not-secure-security-view = Ti n'es betg collià a moda segira cun questa website.
+identity-connection-verified = Ti es collià a moda segira cun questa website.
+identity-ev-owner-label = Certificat emess per:
+identity-description-custom-root = Mozilla na renconuscha betg l'emettur da quest certificat. Eventualmain è el vegnì agiuntà da tes sistem operativ u dad in administratur. <label data-l10n-name="link">Ulteriuras infurmaziuns</label>
+identity-remove-cert-exception =
+    .label = Allontanar l'excepziun
+    .accesskey = r
+identity-description-insecure = Tia connexiun cun questa pagina n'è betg privata. Infurmaziuns che ti tramettas (p.ex. pleds-clav, messadis, numers da cartas da credit etc.) pon eventualmain vegnir legidas dad auters.
+identity-description-insecure-login-forms = Las datas d'annunzia che ti endateschas sin questa pagina n'èn betg segiradas ed èn eventualmain periclitadas.
+identity-description-weak-cipher-intro = Tia connexiun cun questa pagina utilisescha in criptadi flaivel e n'è betg privata.
+identity-description-weak-cipher-risk = Autras persunas pon vesair tias infurmaziuns u modifitgar la pagina d'internet.
+identity-description-active-blocked = { -brand-short-name } ha bloccà parts da questa pagina che n'èn betg segiradas. <label data-l10n-name="link">Ulteriuras infurmaziuns</label>
+identity-description-passive-loaded = Tia connexiun n'è betg privata ed infurmaziuns che ti cundividas cun la pagina pon eventualmain vegnir legidas dad auters.
+identity-description-passive-loaded-insecure = Questa website ha cuntegn (p.ex. maletgs) che n'è betg segirà. <label data-l10n-name="link">Ulteriuras infurmaziuns</label>
+identity-description-passive-loaded-mixed = Malgrà che { -brand-short-name } ha bloccà parts dal cuntegn, datti anc adina cuntegn da la pagina che n'è betg segirà (p.ex. maletgs). <label data-l10n-name="link">Ulteriuras infurmaziuns</label>
+identity-description-active-loaded = Questa website ha cuntegn (p.ex. scripts) che n'è betg segirà e tia connexiun cun ella n'è betg privata.
+identity-description-active-loaded-insecure = Infurmaziuns che ti cundividas cun questa pagina (p.ex. pleds-clav, messadis, numers da cartas da credit etc.) pon esser legiblas per auters.
+identity-learn-more =
+    .value = Ulteriuras infurmaziuns
+identity-disable-mixed-content-blocking =
+    .label = Deactivar per quella giada la protecziun
+    .accesskey = D
+identity-enable-mixed-content-blocking =
+    .label = Activar la protecziun
+    .accesskey = A
+identity-more-info-link-text =
+    .label = Mussar detagls

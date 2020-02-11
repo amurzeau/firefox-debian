@@ -15,11 +15,6 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Søk innloggingar
 create-login-button = Lag ny innlogging
-# This string is used as alternative text for favicon images.
-# Variables:
-#   $title (String) - The title of the website associated with the favicon.
-login-favicon =
-    .alt = Favicon for { $title }
 fxaccounts-sign-in-text = Få passorda dine på dei andre einingane dine
 fxaccounts-sign-in-button = Logg inn på { -sync-brand-short-name }
 fxaccounts-avatar-button =
@@ -51,6 +46,7 @@ login-list-count =
     }
 login-list-sort-label-text = Sorter etter:
 login-list-name-option = Namn (A-Å)
+login-list-name-reverse-option = Namn (Å-A)
 login-list-breached-option = Nettstadar med datalekkasjar
 login-list-last-changed-option = Sist endra
 login-list-last-used-option = Sist brukt
@@ -61,9 +57,6 @@ about-logins-login-list-empty-search-description = Ingen resultat passar med sø
 login-list-item-title-new-login = Ny innlogging
 login-list-item-subtitle-new-login = Skriv inn innloggingsopplysningar
 login-list-item-subtitle-missing-username = (ikkje noko brukarnamn)
-about-logins-list-item-warning-icon =
-    .alt = Åtvaringsikon
-    .title = Nettstad med datalekkasje
 about-logins-list-item-breach-icon =
     .title = Nettstad med datalekkasje
 
@@ -81,7 +74,6 @@ about-logins-intro-import = Dersom innloggingane dine er lagra i ein annen nettl
 
 login-item-new-login-title = Lag ny innlogging
 login-item-edit-button = Rediger
-login-item-delete-button = Slett
 about-logins-login-item-remove-button = Fjern
 login-item-origin-label = Nettstadadresse
 login-item-origin =
@@ -96,6 +88,8 @@ login-item-password-reveal-checkbox-show =
     .title = Vis passord
 login-item-password-reveal-checkbox-hide =
     .title = Gøym passord
+login-item-password-reveal-checkbox =
+    .aria-label = Vis passord
 login-item-copy-password-button-text = Kopier
 login-item-copied-password-button-text = Kopiert!
 login-item-save-changes-button = Lagre endringar
@@ -126,7 +120,6 @@ enable-password-sync-preferences-button =
            *[other] Gå til { -sync-brand-short-name } innstillingar
         }
     .accesskey = G
-confirm-delete-dialog-title = Slette denne innlogginga?
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = Ikkje spør igjen
     .accesskey = I
@@ -138,7 +131,6 @@ confirmation-dialog-dismiss-button =
     .title = Avbryt
 about-logins-confirm-remove-dialog-title = Fjerne denne innlogginga?
 confirm-delete-dialog-message = Denne handlinga kan ikkje angrast.
-confirm-delete-dialog-confirm-button = Slett
 about-logins-confirm-remove-dialog-confirm-button = Fjern
 confirm-discard-changes-dialog-title = Vil du forkaste endringar som ikkje er lagra?
 confirm-discard-changes-dialog-message = Alle ikkje-lagra endringar vil gå tapt.
@@ -153,11 +145,6 @@ breach-alert-dismiss =
 
 ## Error Messages
 
-# This is an error message that appears when a user attempts to save
-# a new login that is identical to an existing saved login.
-# Variables:
-#   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login = Ei oppføring for { $loginTitle } med dette brukarnamnet finst allereie.
 # This is an error message that appears when a user attempts to save
 # a new login that is identical to an existing saved login.
 # Variables:

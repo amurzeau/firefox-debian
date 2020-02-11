@@ -16,13 +16,17 @@
 <!ENTITY highPriorityCmd.label "Alte">
 <!ENTITY highestPriorityCmd.label "Plus alte">
 
+<!ENTITY contextIncomingMail.label "Reception de nove posta:">
+<!ENTITY contextIncomingMail.accesskey "R">
 <!ENTITY contextBeforeCls.label "Filtrar ante le detection de posta indesirate">
 <!ENTITY contextAfterCls.label "Filtrar post le detection de posta indesirate">
+<!ENTITY contextOutgoing.label "Post inviar">
+<!ENTITY contextOutgoing.accesskey "i">
 
 
 
 <!-- New Style Filter Rule Actions -->
-<!ENTITY forwardTo.label "Reinviar le message a">
+<!ENTITY forwardTo.label "Inviar le message ultra a">
 <!ENTITY replyWithTemplate.label "Responder con modello">
 <!ENTITY setJunkScore.label "Mitter stato indesirate a">
 <!ENTITY stopExecution.label "Stoppar le execution del filtro">

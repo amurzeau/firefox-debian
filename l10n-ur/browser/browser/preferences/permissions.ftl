@@ -34,10 +34,15 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = تبدیلیاں محفوظ کریں
     .accesskey = S
+permissions-autoplay-menu = تمام ویب سائٹس کے لئے پہلے سے طے شدہ:
 permissions-searchbox =
     .placeholder = ویبسائٹ تلاش کریں
+permissions-capabilities-autoplay-allow =
+    .label = آڈیو اور ویڈیو کی اجازت دیں
 permissions-capabilities-autoplay-block =
     .label = آڈیو کو مسدود کریں۔
+permissions-capabilities-autoplay-blockall =
+    .label = آڈیو اور ویڈیو کو مسدود کریں
 permissions-capabilities-allow =
     .label = ہونے دیں
 permissions-capabilities-block =
@@ -62,6 +67,7 @@ permissions-exceptions-content-blocking-window =
     .title = استثنیات - مواد روکنا
     .style = { permissions-window.style }
 permissions-exceptions-content-blocking-desc = آپنے مواد روکنا غیر فعال کر دی ہے  ان ویبسیٹس کے لئے۔
+permissions-exceptions-etp-desc = آپ نے ان ویب سائٹوں پر تحفظات بند کردیئے ہیں۔
 
 ## Exceptions - Cookies
 
@@ -123,6 +129,14 @@ permissions-site-location-desc = مندرجہ ذیل ویب سائٹ نے آپک
 permissions-site-location-disable-label =
     .label = آپ کے مقام تک رسائی حاصل کرنے سے متعلق نئی درخواستیں بند کریں
 permissions-site-location-disable-desc = یہ کسی بھی ویب سائٹ کو آپکے موجودہ مقام کے رسائی کی اجازت کی درخواست کرنے سے روکتا ہے جو اوپر درج نہیں ہے۔ آپکے موجودہ مقام کے رسائی کو روکنے سے ویب سائٹ کی کچھ خوبی وقفہ ہو سکتی ہے۔
+
+## Site Permissions - Virtual Reality
+
+permissions-site-xr-window =
+    .title = ترتیبات - ورچوئل رئیلٹی اجازت
+    .style = { permissions-window.style }
+permissions-site-xr-disable-label =
+    .label = اپنی ورچوئل رئیلٹی ڈیوائسز تک رسائی کے لیے نئی درخواستوں کو مسدود کریں
 
 ## Site Permissions - Camera
 

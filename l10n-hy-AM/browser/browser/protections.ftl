@@ -65,15 +65,6 @@ lockwise-passwords-stored =
     }
 turn-on-sync = Միացնել { -sync-brand-short-name }
     .title = Անցնել համաժամեցման հատկություններին
-manage-devices = Կառավարել սարքերը
-# Variables:
-#   $count (Number) - Number of devices connected with sync.
-lockwise-sync-status =
-    { $count ->
-        [one] Համաժամեցվում է { $count } այլ սարքի հետ
-       *[other] Համաժամեցվում է { $count } այլ սարքերի հետ
-    }
-lockwise-sync-not-syncing-devices = Չհամաժամեցվելով այլ սարքերի հետ
 manage-connected-devices = Կառավարել սարքերը…
 # Variables:
 #   $count (Number) - Number of devices connected with sync.
@@ -85,7 +76,7 @@ lockwise-connected-device-status =
 monitor-title = Փնտրել տվյալների խախտումներ
 monitor-link = Ինչպես է դա աշխատում
 monitor-header-content-no-account = Ստուգեք { -monitor-brand-name }՝իմանալու համար, թե արդյոք դուք եղել եք հայտնի տվյալների խախտման մաս, և ահազանգեր ստացեք նոր խախտումների մասին։
-monitor-header-content-signed-in = { -monitor-brand-name }-ը զգուշացնում է ձեզ, եթե ձեր տեղեկությունները բախվել են հայտնի խախտման հետ։
+monitor-header-content-signed-in = { -monitor-brand-name }-ը զգուշացնում է Ձեզ, եթե Ձեր տեղեկութիւնները բախուել են յայտնի խախտման հետ։
 monitor-sign-up = Գրանցվեք խախտումների մասին ահազանգների համար
 auto-scan = Այսօր ինքնուրույն պատկերահանվել է։
 # This string is displayed after a large numeral that indicates the total number
@@ -156,4 +147,11 @@ bar-tooltip-fingerprinter =
         { $count ->
             [one] { $count }Մատնահետք ({ $percentage }%)
            *[other] { $count }Մատնահետքեր ({ $percentage }%)
+        }
+bar-tooltip-cryptominer =
+    .title = Ծպտյալ արժույթներ
+    .aria-label =
+        { $count ->
+            [one] { $count } ծպտյալ արժույթներ ({ $percentage }%)
+           *[other] { $count } ծպտյալ արժույթներ ({ $percentage }%)
         }

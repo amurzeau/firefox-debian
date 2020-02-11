@@ -20,6 +20,10 @@ graph-total-tracker-summary =
         [few] <b>{ $count }</b> елементи стеження заблоковано починаючи з { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
        *[many] <b>{ $count }</b> елементів стеження заблоковано починаючи з { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
     }
+# Text displayed instead of the graph when in Private Mode
+graph-private-window = { -brand-short-name } продовжує блокувати стеження в приватних вікнах, але не записує, що було заблоковано.
+# Weekly summary of the graph when the graph is empty in Private Mode
+graph-week-summary-private-window = Стеження, яке { -brand-short-name } заблокував цього тижня
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 # The category name in the <b> tag will be bold.
@@ -41,13 +45,13 @@ graph-today = Сьогодні
 # This string is used to describe the graph for screenreader users.
 graph-legend-description = Графік відображає загальну кількість стеження кожного типу, заблокованого цього тижня.
 social-tab-title = Стеження соціальних мереж
-social-tab-contant = Соціальні мережі розміщують елементи стеження на інших веб-сайтах, щоб стежити за вашими діями в інтернеті. Це дозволяє їм дізнаватися більше про вас, окрім того, чим ви ділитеся в своєму профілі. <a data-l10n-name="learn-more-link">Докладніше</a>
+social-tab-contant = Соціальні мережі розміщують елементи стеження на інших вебсайтах, щоб стежити за вашими діями в інтернеті. Це дозволяє їм дізнаватися більше про вас, окрім того, чим ви ділитеся у своєму профілі. <a data-l10n-name="learn-more-link">Докладніше</a>
 cookie-tab-title = Куки стеження між сайтами
 cookie-tab-content = Ці куки переслідують вас від одного сайту до іншого, з метою збирання даних про вашу діяльність онлайн. Вони встановлюються сторонніми рекламними й аналітичними компаніями. Блокування куків стеження між сайтами зменшує кількість реклами, що переслідує вас. <a data-l10n-name="learn-more-link">Докладніше</a>
 tracker-tab-title = Вміст стеження
-tracker-tab-description = Веб-сайти можуть завантажувати зовнішню рекламу, відео, а також інший вміст з кодом стеження. Блокування такого вмісту може допомогти сайтам швидше завантажуватись, але при цьому деякі кнопки, поля форм і входів можуть не працювати. <a data-l10n-name="learn-more-link">Докладніше</a>
+tracker-tab-description = Вебсайти можуть завантажувати зовнішню рекламу, відео, а також інший вміст з кодом стеження. Блокування такого вмісту може допомогти сайтам швидше завантажуватись, але при цьому деякі кнопки, поля форм і входів можуть не працювати. <a data-l10n-name="learn-more-link">Докладніше</a>
 fingerprinter-tab-title = Зчитування відбитку браузера
-fingerprinter-tab-content = Засоби зчитування відбитку браузера збирають дані про налаштування вашого браузера і комп'ютера, з метою створення вашого профілю. Використовуючи такий цифровий відбиток, вони можуть стежити за вами на багатьох різних веб-сайтах. <a data-l10n-name="learn-more-link">Докладніше</a>
+fingerprinter-tab-content = Засоби зчитування відбитку браузера збирають дані про налаштування вашого браузера і комп'ютера, з метою створення вашого профілю. Використовуючи такий цифровий відбиток, вони можуть стежити за вами на багатьох різних вебсайтах. <a data-l10n-name="learn-more-link">Докладніше</a>
 cryptominer-tab-title = Криптомайнери
 cryptominer-tab-content = Криптомайнери використовують ресурси вашої системи для створення цифрових грошей. Криптомайнингові скрипти споживають заряд вашого акумулятора, сповільнюють роботу комп'ютера, а також можуть збільшити ваші витрати на електроенергію. <a data-l10n-name="learn-more-link">Докладніше</a>
 lockwise-title = Ніколи більше не забувайте пароль
@@ -68,16 +72,6 @@ lockwise-passwords-stored =
     }
 turn-on-sync = Увімкнути { -sync-brand-short-name(case: "acc") }
     .title = Перейти до налаштувань синхронізації
-manage-devices = Керувати пристроями
-# Variables:
-#   $count (Number) - Number of devices connected with sync.
-lockwise-sync-status =
-    { $count ->
-        [one] Синхронізується з { $count } іншим пристроєм
-        [few] Синхронізується з { $count } іншими пристроями
-       *[many] Синхронізується з { $count } іншими пристроями
-    }
-lockwise-sync-not-syncing-devices = Не синхронізується з іншими пристроями
 manage-connected-devices = Керувати пристроями…
 # Variables:
 #   $count (Number) - Number of devices connected with sync.

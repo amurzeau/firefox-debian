@@ -56,6 +56,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Хабарлама панелін ашу
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Орналасуды сұрау панелін ашу
+urlbar-xr-notification-anchor =
+    .tooltiptext = Виртуалды шынайылық рұқсаттар панелін ашу
 urlbar-storage-access-anchor =
     .tooltiptext = Веб-шолу кезіндегі рұқсаттардың панелін ашу
 urlbar-translate-notification-anchor =
@@ -80,8 +82,22 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Кеңейтулерді орнату хабарламалар панелін ашу
 urlbar-tip-help-icon =
     .title = Көмек алу
+urlbar-search-tips-confirm = Жақсы, түсіндім
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Азырақ теріп, көбірек табыңыз: { $engineName } қызметінен тура адрестік жолақтан іздеңіз.
+urlbar-search-tips-redirect = { $engineName } және шолу тарихы ұсыныстарын көру үшін, іздеуді осында бастаңыз.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Сіз орналасу ақпаратымен бөлісуді бұл вебсайтқа блоктадыңыз.
+urlbar-xr-blocked =
+    .tooltiptext = Сіз виртуалды шынайылық құрылғысын қолдануды бұл вебсайтқа блоктадыңыз.
 urlbar-web-notifications-blocked =
     .tooltiptext = Сіз хабарламаларды бұл вебсайтқа блоктадыңыз.
 urlbar-camera-blocked =
@@ -154,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Байланыс қауіпсіз емес
+identity-connection-secure = Байланыс қауіпсіз
+identity-connection-internal = Бұл - қауіпсіз { -brand-short-name } беті.
+identity-connection-file = Бұл парақ сіздің компьютеріңізде сақталған.
+identity-extension-page = Бұл парақ кеңейтуден жүктелген.
+identity-active-blocked = { -brand-short-name } бұл парақтың кейбір қауіпсіз емес бөліктерін блоктаған.
+identity-custom-root = Байланысты растайтын сертификат шығарушысы Mozilla-ға бейтаныс.
+identity-passive-loaded = Бұл парақтың кейбір бөліктері қауіпсіз емес (суреттер сияқты).
+identity-active-loaded = Бұл парақта қорғанысты сөндіргенсіз.
+identity-weak-encryption = Бұл парақ әлсіз шифрлеуді қолданады.
+identity-insecure-login-forms = Бұл парақта енгізілген логин ақпаратына бөтен адамдардың қолы жетуі мүмкін.
+identity-permissions =
+    .value = Рұқсаттар
+identity-permissions-reload-hint = Өзгерістер іске асуы үшін бұл парақты қайта жүктеуіңіз керек болуы мүмкін.
+identity-permissions-empty = Бұл сайтқа арнайы рұқсаттарды берген жоқсыз.
+identity-clear-site-data =
+    .label = Cookies файлдары және сайт деректерін тазарту…
+identity-connection-not-secure-security-view = Бұл сайтқа қауіпсіз түрде байланысқан емессіз.
+identity-connection-verified = Бұл сайтқа қауіпсіз түрде байланысқансыз.
+identity-ev-owner-label = Сертификат кімге шығарылған:
+identity-description-custom-root = Mozilla бұл сертификатты шығарушысын танымайды. Ол сіздің операциялық жүйеңіз немесе әкімшіңізбен қосылған болуы мүмкін. <label data-l10n-name="link">Көбірек білу</label>
+identity-remove-cert-exception =
+    .label = Ережеден тыс жағдайды өшіру
+    .accesskey = ш
+identity-description-insecure = Бұл веб сайтқа байланысыңыз шынымен жеке емес. Басқа адамдар сіздің жіберетін ақпаратыңызды көре алады (парольдер, хабарламалар, кредит карталар, т.б.).
+identity-description-insecure-login-forms = Бұл парақта енгізілген логин ақпараты қауіпсіз емес, және оған бөтен адамдардың қолы жетуі мүмкін.
+identity-description-weak-cipher-intro = Бұл веб сайтқа байланысыңыз әлсіз шифрлеуді қолданады және шын жеке емес.
+identity-description-weak-cipher-risk = Басқа адамдар сіздің ақпаратыңызды көре алады немесе веб сайттың мінез-құлығын өзгерте алады.
+identity-description-active-blocked = { -brand-short-name } бұл парақтың кейбір қауіпсіз емес бөліктерін блоктаған. <label data-l10n-name="link">Көбірек білу</label>
+identity-description-passive-loaded = Бұл веб сайтқа байланысыңыз шынымен жеке емес және басқа адамдар сіз осы сайтпен бөліскен ақпаратты көре алады.
+identity-description-passive-loaded-insecure = Бұл веб сайттың кейбір құрамасы қауіпсіз емес (суреттер сияқты). <label data-l10n-name="link">Көбірек білу</label>
+identity-description-passive-loaded-mixed = { -brand-short-name } кейбір құраманы блоктаса да, бұл парақтың кейбір құрамасы қауіпсіз емес (суреттер сияқты). <label data-l10n-name="link">Көбірек білу</label>
+identity-description-active-loaded = Бұл веб сайттың кейбір құрамасы қауіпсіз емес (скрипттер сияқты) және сіздің оған байланысыңыз шынымен жеке емес.
+identity-description-active-loaded-insecure = Бұл сайтпен сіз бөліскен ақпаратты басқа адамдар көре алады (парольдер, хабарламалар, кредит карталар, т.б.).
+identity-learn-more =
+    .value = Көбірек білу
+identity-disable-mixed-content-blocking =
+    .label = Қорғанысты қазірге сөндіру
+    .accesskey = н
+identity-enable-mixed-content-blocking =
+    .label = Қорғанысты іске қосу
+    .accesskey = е
+identity-more-info-link-text =
+    .label = Көбірек білу

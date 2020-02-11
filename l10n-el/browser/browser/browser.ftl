@@ -80,6 +80,17 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Άνοιγμα πλαισίου μηνυμάτων εγκατάστασης προσθέτων
 urlbar-tip-help-icon =
     .title = Λάβετε βοήθεια
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = Πληκτρολογήστε λιγότερα, βρείτε περισσότερα: Αναζητήστε μέσω { $engineName } κατευθείαν από τη γραμμή διευθύνσεων.
+urlbar-search-tips-redirect = Ξεκινήστε την αναζήτησή σας εδώ για να δείτε προτάσεις από το { $engineName } και το ιστορικό περιήγησής σας.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Έχετε αποκλείσει τις πληροφορίες τοποθεσίας για αυτή την ιστοσελίδα.
 urlbar-web-notifications-blocked =
@@ -151,3 +162,49 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = Μη ασφαλής σύνδεση
+identity-connection-secure = Ασφαλής σύνδεση
+identity-connection-internal = Αυτή είναι μια ασφαλής σελίδα του { -brand-short-name }.
+identity-connection-file = Αυτή η σελίδα είναι αποθηκευμένη στον υπολογιστή σας.
+identity-extension-page = Αυτή η σελίδα φορτώθηκε από μια επέκταση.
+identity-active-blocked = Το { -brand-short-name } έχει αποκλείσει επισφαλή τμήματα αυτής της σελίδας.
+identity-custom-root = Η σύνδεση επαληθεύτηκε από έναν εκδότη πιστοποιητικών που δεν αναγνωρίζεται από τη Mozilla.
+identity-passive-loaded = Κάποια τμήματα αυτής της σελίδας δεν είναι ασφαλή (π.χ. κάποιες εικόνες).
+identity-active-loaded = Έχετε απενεργοποιήσει την προστασία σε αυτή τη σελίδα.
+identity-weak-encryption = Αυτή η σελίδα χρησιμοποιεί μη ισχυρή κρυπτογράφηση.
+identity-insecure-login-forms = Τα στοιχεία σύνδεσης που πληκτρολογήσατε σε αυτή την σελίδα μπορεί να διαρεύσουν.
+identity-permissions =
+    .value = Δικαιώματα
+identity-permissions-reload-hint = Ίσως χρειαστεί να φορτώσετε εκ νέου τη σελίδα για εφαρμογή των αλλαγών.
+identity-permissions-empty = Δεν έχετε χορηγήσει ειδικές άδειες στη σελίδα.
+identity-clear-site-data =
+    .label = Διαγραφή cookies και δεδομένων ιστοσελίδων…
+identity-connection-not-secure-security-view = Η σύνδεσή σας σε αυτή την ιστοσελίδα δεν είναι ασφαλής.
+identity-connection-verified = Η σύνδεσή σας σε αυτή την ιστοσελίδα είναι ασφαλής.
+identity-description-custom-root = Η Mozilla δεν αναγνωρίζει αυτό τον εκδότη πιστοποιητικών. Ενδέχεται να έχει προστεθεί από το λειτουργικό σας σύστημα ή κάποιο διαχειριστή. <label data-l10n-name="link">Μάθετε περισσότερα</label>
+identity-remove-cert-exception =
+    .label = Αφαίρεση εξαίρεσης
+    .accesskey = Ρ
+identity-description-insecure = Η σύνδεσή σας σε αυτή τη σελίδα δεν είναι ασφαλής. Πληροφορίες που υποβάλετε μπορεί να είναι ορατές σε τρίτους (όπως κωδικοί, μηνύματα, πιστωτικές κάρτες κ.α. ).
+identity-description-insecure-login-forms = Τα στοιχεία σύνδεσης που εισάγατε στη σελίδα δεν είναι ασφαλή και μπορεί να τεθούν σε κίνδυνο.
+identity-description-weak-cipher-intro = Η σύνδεση σας σε αυτή τη σελίδα χρησιμοποιεί μη ισχυρή κρυπτογράφηση και δεν είναι ασφαλής.
+identity-description-weak-cipher-risk = Τρίτοι μπορούν να δουν τις πληροφορίες σας ή να τροποποιήσουν την συμπεριφορά αυτής της ιστοσελίδας.
+identity-description-active-blocked = Το { -brand-short-name } έχει αποκλείσει επισφαλή τμήματα αυτής της σελίδας. <label data-l10n-name="link">Μάθετε περισσότερα</label>
+identity-description-passive-loaded = Η σύνδεσή σας δεν είναι ασφαλής και πληροφορίες που μοιράζεστε με αυτή τη σελίδα μπορεί να είναι ορατές από τρίτους.
+identity-description-passive-loaded-insecure = Αυτή η σελίδα έχει περιεχόμενο που δεν είναι ασφαλές (π.χ. εικόνες). <label data-l10n-name="link">Μάθετε περισσότερα</label>
+identity-description-passive-loaded-mixed = Παρόλο που το { -brand-short-name } έχει αποκλείσει ορισμένο περιεχόμενο, υπάρχει ακόμη επισφαλές περιεχόμενο (π.χ. εικόνες). <label data-l10n-name="link">Μάθετε περισσότερα</label>
+identity-description-active-loaded = Αυτή η ιστοσελίδα έχει περιεχόμενο που δεν είναι ασφαλές (π.χ. scripts) και η σύνδεσή σας δεν είναι ασφαλής.
+identity-description-active-loaded-insecure = Πληροφορίες που μοιράζεστε με αυτή τη σελίδα μπορεί να είναι ορατές από τρίτους (όπως κωδικοί, μηνύματα, πιστωτικές κάρτες κ.α.).
+identity-learn-more =
+    .value = Μάθετε περισσότερα
+identity-disable-mixed-content-blocking =
+    .label = Απενεργοποίηση προστασίας προσωρινά
+    .accesskey = π
+identity-enable-mixed-content-blocking =
+    .label = Ενεργοποίηση προστασίας
+    .accesskey = Ε
+identity-more-info-link-text =
+    .label = Περισσότερες πληροφορίες

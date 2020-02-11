@@ -20,6 +20,10 @@ graph-total-tracker-summary =
         [few] <b>{ $count }</b> elemente de urmărire blocate de la { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
        *[other] <b>{ $count }</b> de elemente de urmărire blocate de la { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
     }
+# Text displayed instead of the graph when in Private Mode
+graph-private-window = { -brand-short-name } continuă să blocheze elementele de urmărire în ferestrele private, dar nu ține o evidență cu ce a blocat.
+# Weekly summary of the graph when the graph is empty in Private Mode
+graph-week-summary-private-window = Elementele de urmărire blocate de { -brand-short-name } săptămâna aceasta
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 # The category name in the <b> tag will be bold.
@@ -33,6 +37,7 @@ protection-report-page-title = Protecții privind intimitatea
 protection-report-content-title = Protecții privind intimitatea
 etp-card-title = Protecție îmbunătățită împotriva urmăririi
 etp-card-content = Elementele de urmărire te urmăresc online pentru a colecta informații despre obiceiurile și interesele tale de navigare. { -brand-short-name } blochează multe dintre aceste elementele de urmărire și alte scripturi rău-intenționate.
+protection-report-etp-card-content-custom-not-blocking = Toate protecțiile sunt acum dezactivate. Selectează elementele de urmărire care să fie blocate prin gestionarea setărilor de protecție din { -brand-short-name }.
 protection-report-manage-protections = Gestionează setările
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
 # capitalization for this string should match the output for your locale.
@@ -45,10 +50,10 @@ cookie-tab-title = Cookie-uri de urmărire între site-uri
 cookie-tab-content = Aceste cookie-uri te urmăresc de pe un site pe altul pentru a colecta date despre ceea ce faci online. Acestea sunt setate de terțe părți precum agenții de publicitate și companiile de analiză. Blocarea cookie-urilor de urmărire între site-uri reduce numărul de reclame care se țin după tine. <a data-l10n-name="learn-more-link">Află mai multe</a>
 tracker-tab-title = Conținut de urmărire
 tracker-tab-description = Site-urile web pot încărca reclame externe, videoclipuri și alte conținuturi ce conțin coduri de urmărire. Blocarea conținutului de urmărire poate ajuta site-urile să se încarce mai rapid, dar este posibil ca unele butoane, formulare și câmpuri de autentificare să nu funcționeze. <a data-l10n-name="learn-more-link">Află mai multe</a>
-fingerprinter-tab-title = Detectoare de amprente digitale
-fingerprinter-tab-content = Detectoarele de amprente digitale colectează setări din browserul și computerul tău pentru a-ți crea un profil. Folosind această amprentă digitală, te pot urmări pe diferite site-uri web. <a data-l10n-name="learn-more-link">Află mai multe</a>
+fingerprinter-tab-title = Generatoare de amprente digitale
+fingerprinter-tab-content = Generatoarele de amprente digitale îți colectează setările din browser și calculator și creează un profil despre tine. Cu această amprentă digitală, te pot urmări pe diferite site-uri web. <a data-l10n-name="learn-more-link">Află mai multe</a>
 cryptominer-tab-title = Criptomineri
-cryptominer-tab-content = Criptomomerii folosesc puterea de calcul a sistemului tău pentru a mina bani digitali. Scripturile de criptominare îți scurg bateria, încetinesc calculatorul și îți pot crește factura la energie. <a data-l10n-name="learn-more-link">Află mai multe</a>
+cryptominer-tab-content = Criptomomerii folosesc puterea de calcul a sistemului tău pentru a mina bani digitali. Scripturile de criptominare îți golesc bateria, îți încetinesc calculatorul și îți pot crește factura la energie. <a data-l10n-name="learn-more-link">Află mai multe</a>
 lockwise-title = Nu mai pierzi niciodată o parolă
 lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-header-content = { -lockwise-brand-name } îți stochează în siguranță parolele în browser.
@@ -67,16 +72,15 @@ lockwise-passwords-stored =
     }
 turn-on-sync = Activează { -sync-brand-short-name }...
     .title = Mergi la preferințele de sincronizare
-manage-devices = Gestionează dispozitivele
+manage-connected-devices = Gestionează dispozitivele…
 # Variables:
 #   $count (Number) - Number of devices connected with sync.
-lockwise-sync-status =
+lockwise-connected-device-status =
     { $count ->
-        [one] Sincronizare cu { $count } alt dispozitiv
-        [few] Sincronizare cu alte { $count } dispozitive
-       *[other] Sincronizare cu alte { $count } de dispozitive
+        [one] Conectat la { $count } dispozitiv
+        [few] Conectat la { $count } dispozitive
+       *[other] Conectat la { $count } de dispozitive
     }
-lockwise-sync-not-syncing-devices = Nu se sincronizează cu alte dispozitive
 monitor-title = Stai cu ochii pe încălcările securității datelor
 monitor-link = Cum funcționează
 monitor-header-content-no-account = Verifică { -monitor-brand-name } pentru a vedea dacă faci parte dintr-o încălcare cunoscută a securității datelor și pentru a obține alerte despre încălcările noi.
@@ -153,12 +157,12 @@ bar-tooltip-tracker =
            *[other] { $count } de conținuturi de urmărire ({ $percentage }%)
         }
 bar-tooltip-fingerprinter =
-    .title = Detectoare de amprente digitale
+    .title = Generatoare de amprente digitale
     .aria-label =
         { $count ->
-            [one] { $count } detector de amprente digitale ({ $percentage }%)
-            [few] { $count } detectoare de amprente digitale ({ $percentage }%)
-           *[other] { $count } de detectoare de amprente digitale ({ $percentage }%)
+            [one] { $count } generator de amprente digitale ({ $percentage }%)
+            [few] { $count } generatoare de amprente digitale ({ $percentage }%)
+           *[other] { $count } de generatoare de amprente digitale ({ $percentage }%)
         }
 bar-tooltip-cryptominer =
     .title = Criptomineri

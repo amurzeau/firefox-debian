@@ -1,3 +1,46 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+# Localized string used as the dialog window title (a new behavior locked
+# behind the "extensions.abuseReport.openDialog" preference).
+# "Report" is a noun in this case, "Report for AddonName".
+#
+# Variables:
+#   $addon-name (string) - Name of the add-on being reported
+abuse-report-dialog-title = Danevell evit { $addon-name }
+abuse-report-title-extension = Disklêriañ an askouezhadenn-mañ da { -vendor-short-name }
+abuse-report-title-theme = Disklêriañ an tem-mañ da { -vendor-short-name }
+abuse-report-subtitle = Petra eo ar gudenn ?
+# Variables:
+#   $author-name (string) - Name of the add-on author
+abuse-report-addon-authored-by = gant <a data-l10n-name="author-name">{ $author-name }</a>
+abuse-report-learnmore =
+    Ne ouezit ket peseurt kudenn dibab ?
+    <a data-l10n-name="learnmore-link">Gouzout hiroc'h diwar-benn an disklêriañ askouezhadennoù ha temoù</a>
+abuse-report-submit-description = Deskrivañ ar gudenn (diret)
+abuse-report-submit-note =
+    Evezhiadenn : Ne lakit ket titouroù personel (evel an anv, chomlec'h postel, niverenn pellgomz, chomlec'h).
+    { -vendor-short-name } a vir an danevelloù-se en un enrolladenn badus.
+
+## Panel buttons.
+
+abuse-report-cancel-button = Nullañ
+abuse-report-next-button = War-lerc'h
+abuse-report-goback-button = Distreiñ
+abuse-report-submit-button = Kas
+
+## Message bars descriptions.
+
+
+## Variables:
+##   $addon-name (string) - Name of the add-on
+
+abuse-report-messagebar-aborted = Disklêriañ <span data-l10n-name="addon-name">{ $addon-name }</span> nullet.
+abuse-report-messagebar-submitting = O kas an disklêriadenn diwar-benn <span data-l10n-name="addon-name">{ $addon-name }</span>.
+
+## Message bars actions.
+
+
+## Abuse report reasons (optionally paired with related examples and/or suggestions)
+

@@ -7,10 +7,10 @@ Subject: Use the Mozilla Location Service key when the Google Key is not there
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/browser/app/profile/firefox.js b/browser/app/profile/firefox.js
-index 1c44513c2b5..07d22fc5627 100644
+index fcdeff7ef64..dc26473b122 100644
 --- a/browser/app/profile/firefox.js
 +++ b/browser/app/profile/firefox.js
-@@ -1393,7 +1393,7 @@ pref("dom.debug.propagate_gesture_events_through_content", false);
+@@ -1378,7 +1378,7 @@ pref("dom.debug.propagate_gesture_events_through_content", false);
  
  // All the Geolocation preferences are here.
  //

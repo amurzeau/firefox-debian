@@ -91,9 +91,14 @@ newtab-privacy-modal-paragraph =
     goed doorgelichte inhoud van geselecteerde sponsors. Wees gerust, uw navigatiegegevens
     verlaten nooit uw persoonlijke exemplaar van { -brand-product-name } – wij krijgen ze niet te zien,
     en onze sponsors ook niet.
+newtab-privacy-modal-paragraph-2 =
+    Naast het vertellen van boeiende verhalen, tonen we u ook relevante,
+    goed doorgelichte inhoud van geselecteerde sponsors. Wees gerust, <strong>uw navigatiegegevens
+    verlaten nooit uw persoonlijke exemplaar van { -brand-product-name }</strong> – wij krijgen ze niet te zien,
+    en onze sponsors ook niet.
 newtab-privacy-modal-link = Ontdek hoe privacy werkt op het nieuwe tabblad
 
-
+##
 
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Bladwijzer verwijderen
@@ -128,6 +133,10 @@ newtab-label-removed-bookmark = Bladwijzer verwijderd
 newtab-label-recommended = Trending
 newtab-label-saved = Opgeslagen naar { -pocket-brand-name }
 newtab-label-download = Gedownload
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } · Gesponsord
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -180,7 +189,6 @@ newtab-discovery-empty-section-topstories-timed-out = Oeps! We hadden deze secti
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Populaire onderwerpen:
 newtab-pocket-more-recommendations = Meer aanbevelingen
-newtab-pocket-how-it-works = Hoe het werkt
 newtab-pocket-whats-pocket = Wat is { -pocket-brand-name }?
 newtab-pocket-cta-button = { -pocket-brand-name } gebruiken
 newtab-pocket-cta-text = Bewaar de verhalen die u interessant vindt in { -pocket-brand-name }, en stimuleer uw gedachten met boeiende leesstof.

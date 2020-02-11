@@ -82,10 +82,22 @@ urlbar-addons-notification-anchor =
     .tooltiptext = 打开附加组件安装消息面板
 urlbar-tip-help-icon =
     .title = 获取帮助
+urlbar-search-tips-confirm = 好的，明白了
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = 输入寥寥，搜遍万千：在地址栏就能用 { $engineName } 搜索。
+urlbar-search-tips-redirect = 在这里搜索，可以看到 { $engineName } 提供的建议，还有您的相关浏览历史。
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = 您已阻止此网站获取位置信息。
 urlbar-xr-blocked =
-    .tooltiptext = 您已阻止此网站访问虚拟现实设备。
+    .tooltiptext = 您已阻止此网站使用虚拟现实设备。
 urlbar-web-notifications-blocked =
     .tooltiptext = 您已阻止此网站发送通知。
 urlbar-camera-blocked =
@@ -158,3 +170,50 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-not-secure = 不安全连接
+identity-connection-secure = 安全连接
+identity-connection-internal = 这是安全的 { -brand-short-name } 页面。
+identity-connection-file = 此页面存储在您的计算机上。
+identity-extension-page = 此页面是扩展页面。
+identity-active-blocked = { -brand-short-name } 已拦截此页面上不安全的内容。
+identity-custom-root = 连接由 Mozilla 不认可的证书颁发者所验证。
+identity-passive-loaded = 此页面上部分内容不安全（例如图像）。
+identity-active-loaded = 您在此页面上已禁用保护。
+identity-weak-encryption = 此页面使用较弱加密。
+identity-insecure-login-forms = 在此网页上输入的登录信息可能会泄露。
+identity-permissions =
+    .value = 权限
+identity-permissions-reload-hint = 您可能需要重新载入此页面以应用更改。
+identity-permissions-empty = 您尚未授予此站点任何权限。
+identity-clear-site-data =
+    .label = 清除 Cookie 和网站数据…
+identity-connection-not-secure-security-view = 您并未安全地连接至此网站。
+identity-connection-verified = 您已安全地连接至此网站。
+identity-ev-owner-label = 证书颁发给：
+identity-description-custom-root = Mozilla 不认可此证书颁发者，可能是由您的操作系统或超级管理员所添加的。 <label data-l10n-name="link">详细了解</label>
+identity-remove-cert-exception =
+    .label = 移除例外
+    .accesskey = R
+identity-description-insecure = 您至此网站的连接非私密。您提交的信息可能被其他人看到（例如密码、邮件、信用卡等）。
+identity-description-insecure-login-forms = 在此页面输入您的登录信息并不安全，可能会泄露。
+identity-description-weak-cipher-intro = 您与此网站的连接使用了较弱的加密，并不私密。
+identity-description-weak-cipher-risk = 其他人可能查看您的信息或修改该网站的行为。
+identity-description-active-blocked = { -brand-short-name } 已拦截此页面上不安全的内容。 <label data-l10n-name="link">详细了解</label>
+identity-description-passive-loaded = 您的连接并不私密，您提供给此网站的信息可能会被其他人看到。
+identity-description-passive-loaded-insecure = 此网站包含不安全的内容（例如图像）。 <label data-l10n-name="link">详细了解</label>
+identity-description-passive-loaded-mixed = 尽管 { -brand-short-name } 已拦截部分内容，但页面上仍有内容不安全（例如图像）。 <label data-l10n-name="link">详细了解</label>
+identity-description-active-loaded = 此网站包含的内容不安全（例如脚本），并且您至它的连接非私密。
+identity-description-active-loaded-insecure = 您提供给此网站的信息（例如密码、聊天消息、信用卡等）可能会被其他人看到。
+identity-learn-more =
+    .value = 详细了解
+identity-disable-mixed-content-blocking =
+    .label = 暂时解除保护
+    .accesskey = D
+identity-enable-mixed-content-blocking =
+    .label = 启用保护
+    .accesskey = E
+identity-more-info-link-text =
+    .label = 更多信息

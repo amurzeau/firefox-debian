@@ -78,6 +78,17 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = સ્થાયી સંગ્રહમાં ડેટા સંગ્રહ કરો
 urlbar-addons-notification-anchor =
     .tooltiptext = ઍડ-ઑન ઇન્સ્ટોલેશન મેસેજ પેનલ ખોલો
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+urlbar-search-tips-onboard = ઓછ ટાઇપ કરો, વધુ શોધો: { $engineName } તમારા સરનામાં બારમાંથી જ શોધો.
+urlbar-search-tips-redirect = { $engineName } માંથી અને તમારા બ્રાઉઝિંગ ઇતિહાસમાંથી સૂચનો જોવા માટે અહીં તમારી શોધ શરૂ કરો.
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = તમે આ વેબસાઇટ માટે સ્થાન માહિતી અવરોધિત કરી છે.
 urlbar-web-notifications-blocked =
@@ -144,3 +155,41 @@ bookmark-panel-done-button =
 # Cancel/Remove Bookmark buttons.
 bookmark-panel =
     .style = min-width: 23em
+
+## Identity Panel
+
+identity-connection-internal = આ એક સુરક્ષિત { -brand-short-name } પાનું છે.
+identity-connection-file = આ પૃષ્ઠને તમારા કમ્પ્યુટર પર સંગ્રહિત છે.
+identity-extension-page = આ પાનું એક એક્સ્ટેન્શનથી લોડ કરવામાં આવે છે.
+identity-active-blocked = { -brand-short-name } એ આ પૃષ્ઠના ભાગોને અવરોધિત કર્યા છે જે સુરક્ષિત નથી.
+identity-passive-loaded = આ પૃષ્ઠનાં ભાગો સુરક્ષિત નથી (જેમ કે છબીઓ).
+identity-active-loaded = તમે આ પૃષ્ઠ પર રક્ષણ અક્ષમ કર્યું છે.
+identity-weak-encryption = આ પાનું નબળા એન્ક્રિપ્શન વાપરે છે.
+identity-insecure-login-forms = આ પાનાં પર દાખલ લૉગિન્સ ચેડા થઈ શકે છે.
+identity-permissions-reload-hint = ફેરફારો લાગુ કરવા માટે તમને પૃષ્ઠને ફરીથી લોડ કરવાની જરૂર પડી શકે છે.
+identity-permissions-empty = તમે આ સાઇટને કોઈ વિશેષ મંજૂરીઓ આપ્યા નથી.
+identity-clear-site-data =
+    .label = કૂકીઝ અને સાઈટ ડેટા સાફ કરો…
+identity-remove-cert-exception =
+    .label = અપવાદ દૂર કરો
+    .accesskey = R
+identity-description-insecure = આ સાઇટ પરનું તમારું કનેક્શન ખાનગી નથી. તમે સબમિટ કરેલ માહિતી(પાસવર્ડ્સ, સંદેશા, ક્રેડિટ કાર્ડ, વગેરે.) અન્ય લોકો દ્વારા જોઈ શકાય છે.
+identity-description-insecure-login-forms = આ પૃષ્ઠ પર તમે દાખલ કરેલ લૉગિન માહિતી સુરક્ષિત નથી અને તેની સાથે ચેડા થઈ શકે છે.
+identity-description-weak-cipher-intro = આ વેબસાઇટ સાથેનું તમારું કનેક્શન નબળા એન્ક્રિપ્શન ઉપયોગ કરે છે અને ખાનગી નથી.
+identity-description-weak-cipher-risk = અન્ય લોકો તમારી માહિતી જોઈ શકો છો અથવા વેબસાઇટની વર્તન સુધારો કરી શકો છો.
+identity-description-active-blocked = { -brand-short-name } એ આ પૃષ્ઠના ભાગોને અવરોધિત કર્યા છે જે સુરક્ષિત નથી. <label data-l10n-name="link">વધુ શીખો</label>
+identity-description-passive-loaded = તમારું કનેક્શન ખાનગી નથી અને સાઇટ સાથે તમે શેર કરેલી માહિતી અન્ય લોકો દ્વારા જોઈ શકાશે.
+identity-description-passive-loaded-insecure = આ વેબસાઇટમાં એવી સામગ્રી શામેલ છે જે સુરક્ષિત નથી (જેમ કે છબીઓ). <label data-l10n-name="link">વધુ શીખો</label>
+identity-description-passive-loaded-mixed = જોકે { -brand-short-name } કેટલીક સામગ્રીને અવરોધિત કરી છે, ત્યાં હજુ પણ તે પૃષ્ઠ પરની સામગ્રી છે જે સુરક્ષિત નથી (જેમ કે છબીઓ). <label data-l10n-name="link">વધુ શીખો</label>
+identity-description-active-loaded = આ વેબસાઇટમાં એવી સામગ્રી શામેલ છે જે સુરક્ષિત નથી (જેમ કે સ્ક્રિપ્ટ્સ) અને તેનાથી તમારું કનેક્શન ખાનગી નથી.
+identity-description-active-loaded-insecure = તમે આ સાઇટ સાથે જે માહિતીનો ઉપયોગ કરો છો તે અન્ય લોકો દ્વારા જોઈ શકાય છે (જેમ કે પાસવર્ડ્સ, સંદેશા, ક્રેડિટ કાર્ડ વગેરે.).
+identity-learn-more =
+    .value = વધુ શીખો
+identity-disable-mixed-content-blocking =
+    .label = હમણાં માટે રક્ષણ અક્ષમ કરો
+    .accesskey = D
+identity-enable-mixed-content-blocking =
+    .label = સુરક્ષા સક્ષમ કરો
+    .accesskey = E
+identity-more-info-link-text =
+    .label = વધારે જાણકારી

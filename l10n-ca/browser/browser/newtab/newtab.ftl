@@ -86,9 +86,19 @@ newtab-menu-show-privacy-info = Els nostres patrocinadors i la vostra privadesa
 
 newtab-privacy-modal-button-done = Fet
 newtab-privacy-modal-header = La vostra privadesa és important.
+newtab-privacy-modal-paragraph =
+    A més de mostrar els articles més captivadors, també us mostrem contingut
+    rellevant revisat per patrocinadors selectes. Us garantim que les vostres dades
+    de navegació no surten mai del { -brand-product-name }: no les veiem ni nosaltres 
+    ni els nostres patrocinadors.
+newtab-privacy-modal-paragraph-2 =
+    A més de mostrar els articles més captivadors, també us mostrem contingut
+    rellevant revisat per patrocinadors selectes. Us garantim que <strong>les vostres dades
+    de navegació no surten mai del { -brand-product-name }</strong>: no les veiem ni nosaltres 
+    ni els nostres patrocinadors.
 newtab-privacy-modal-link = Vegeu com funciona la privadesa en la pestanya nova
 
-
+##
 
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Elimina l'adreça d'interès
@@ -123,6 +133,10 @@ newtab-label-removed-bookmark = S'ha eliminat l'adreça d'interès
 newtab-label-recommended = Tendència
 newtab-label-saved = Desat al { -pocket-brand-name }
 newtab-label-download = Baixat
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } · Patrocinat
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -175,7 +189,7 @@ newtab-discovery-empty-section-topstories-timed-out = Ups! Sembla que aquesta se
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Temes populars:
 newtab-pocket-more-recommendations = Més recomanacions
-newtab-pocket-how-it-works = Com funciona
+newtab-pocket-whats-pocket = Què és el { -pocket-brand-name }?
 newtab-pocket-cta-button = Obtén el { -pocket-brand-name }
 newtab-pocket-cta-text = Deseu els vostres articles preferits al { -pocket-brand-name } i gaudiu d'altres recomanacions fascinants.
 

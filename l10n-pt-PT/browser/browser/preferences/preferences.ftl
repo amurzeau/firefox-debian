@@ -203,6 +203,15 @@ advanced-fonts =
 colors-settings =
     .label = Cores…
     .accesskey = C
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Zoom
+preferences-default-zoom = Zoom predefinido
+    .accesskey = Z
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Ampliar apenas o texto
+    .accesskey = t
 language-header = Idioma
 choose-language-description = Escolha o seu idioma preferencial para apresentar as páginas
 choose-button =
@@ -316,7 +325,7 @@ applications-use-app-default-label =
 applications-use-other-label =
     .value = { applications-use-other.label }
 
-
+##
 
 drm-content-header = Conteúdo com Gestão de Direitos Digitais (DRM)
 play-drm-content =
@@ -561,10 +570,19 @@ search-keyword-warning-bookmark = Escolheu uma palavra chave que está a ser uti
 ## Containers Section
 
 containers-back-link = « Retroceder
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Voltar às Opções
+           *[other] Voltar às Preferências
+        }
 containers-header = Separadores contentores
 containers-add-button =
     .label = Adicionar novo contentor
     .accesskey = A
+containers-new-tab-check =
+    .label = Selecionar um contentor para cada novo separador
+    .accesskey = S
 containers-preferences-button =
     .label = Preferências
 containers-remove-button =
@@ -903,7 +921,7 @@ enhanced-tracking-protection-setting-custom =
     .label = Personalizada
     .accesskey = e
 
-
+##
 
 content-blocking-etp-standard-desc = Balanceado para proteção e desempenho. As páginas serão carregadas normalmente.
 content-blocking-etp-strict-desc = Proteção mais forte, mas pode causar problemas em alguns sites ou conteúdos.
@@ -968,6 +986,10 @@ permissions-location = Localização
 permissions-location-settings =
     .label = Definições…
     .accesskey = f
+permissions-xr = Realidade virtual
+permissions-xr-settings =
+    .label = Definições...
+    .accesskey = f
 permissions-camera = Câmara
 permissions-camera-settings =
     .label = Definições…
@@ -1016,6 +1038,8 @@ permissions-a11y-privacy-link = Saber mais
 collection-header = Recolha de dados e utilização do { -brand-short-name }
 collection-description = Nós esforçamos-nos para lhe fornecer escolhas e recolher apenas o que precisamos para fornecer e melhorar o { -brand-short-name } para toda a gente. Pedimos sempre permissão antes de receber informação pessoal.
 collection-privacy-notice = Aviso de privacidade
+collection-health-report-telemetry-disabled = Deixou de permitir que o { -vendor-short-name } recolha dados técnicos e de interação. Todos os dados anteriores serão eliminados dentro de 30 dias.
+collection-health-report-telemetry-disabled-link = Saber mais
 collection-health-report =
     .label = Permitir ao { -brand-short-name } enviar dados técnicos e de interação para a { -vendor-short-name }
     .accesskey = r
