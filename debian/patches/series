@@ -4,7 +4,6 @@ fixes/Bug-1556197-amend-Bug-1544631-for-fixing-mips32.patch
 fixes/Bug-1560340-Only-add-confvars.sh-as-a-dependency-to-.patch
 fixes/Bug-1574761-Avoid-race-condition-creating-old-config.patch
 fixes/Bug-1531309-Don-t-use-__PRETTY_FUNCTION__-or-__FUNCT.patch
-fixes/Fill-sourcestamp.txt-with-the-missing-info.patch
 porting/Add-xptcall-support-for-SH4-processors.patch
 porting/NSS-Fix-FTBFS-on-Hurd-because-of-MAXPATHLEN.patch
 porting/Work-around-Debian-bug-844357.patch
