@@ -20,9 +20,7 @@ usr/lib/@browser@/libfreeblpriv3.chk
 usr/lib/@browser@/libfreeblpriv3.so
 usr/lib/@browser@/libnss3.so
 usr/lib/@browser@/libnssckbi.so
-usr/lib/@browser@/libnssdbm3.so
 usr/lib/@browser@/libnssutil3.so
-usr/lib/@browser@/libnssdbm3.chk
 usr/lib/@browser@/libsmime3.so
 usr/lib/@browser@/libsoftokn3.chk
 usr/lib/@browser@/libsoftokn3.so
