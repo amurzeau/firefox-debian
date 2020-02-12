@@ -69,9 +69,6 @@ usr/lib/@browser@/browser/features usr/lib/@browser@/browser
 debian/firefox usr/bin
 %endif
 
-usr/lib/@browser@/chrome.manifest
-usr/lib/@browser@/browser/chrome.manifest
-
 usr/lib/@browser@/gmp-clearkey/0.1/manifest.json
 usr/lib/@browser@/gmp-clearkey/0.1/libclearkey.so
 
