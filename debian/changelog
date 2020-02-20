@@ -1,3 +1,12 @@
+firefox (73.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+  * gfx/2d/SwizzleNEON.cpp: Fix NEON compile error with gcc and RGB unpacking.
+    bz#1610814.
+
+ -- Mike Hommey <glandium@debian.org>  Thu, 20 Feb 2020 09:07:58 +0900
+
 firefox (73.0-1) unstable; urgency=medium
 
   * New upstream release.
