@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (privaatne veebilehitsemine)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (privaatne veebilehitsemine)
+       *[other] { $title } - { -brand-full-name } (privaatne veebilehitsemine)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Vaata saidi teavet
 
@@ -111,6 +140,14 @@ urlbar-midi-blocked =
     .tooltiptext = Oled sellel lehel keelanud ligipääsu MIDIle.
 urlbar-install-blocked =
     .tooltiptext = Oled sellel lehel keelanud lisade paigaldamise.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Muuda seda järjehoidjat ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Lisa see leht järjehoidjatesse ({ $shortcut })
 
 ## Page Action Context Menu
 

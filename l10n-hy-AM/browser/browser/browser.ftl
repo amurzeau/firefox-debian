@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Գաղտնի Դիտարկում)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Գաղտնի Դիտարկում)
+       *[other] { $title } - { -brand-full-name } (Գաղտնի Դիտարկում)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Դիտել կայքի տեղեկությունը
 
@@ -82,6 +111,12 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Բացել հավելման տեղադրման հաղորդագրության վահանակը
 urlbar-tip-help-icon =
     .title = Ստանալ օգնություն
+urlbar-search-tips-confirm = Հասկանալի է։
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = Հուշում.
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -117,6 +152,14 @@ urlbar-midi-blocked =
     .tooltiptext = Դուք արգելափակել եք MIDI մատչումը այս կայքին:
 urlbar-install-blocked =
     .tooltiptext = Դուք այս կայքի համար արգելափակել եք հավելասարքի բեռնումը։
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Խմբագրել այս էջանիշը ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Էջանշել այս էջը ({ $shortcut })
 
 ## Page Action Context Menu
 
@@ -172,20 +215,31 @@ bookmark-panel =
 
 ## Identity Panel
 
+identity-connection-not-secure = Կապակցումը ապահով չէ
+identity-connection-secure = Կապակցումը ապահով է
 identity-connection-internal = Սա անվտանգ { -brand-short-name } էջ է:
-identity-connection-file = Այս էջը գտնվում է համակարգչում:
+identity-connection-file = Այս էջը գտնվում է համակարգչում
 identity-extension-page = Այս էջը բեռնվել է ընդլայնումից:
 identity-active-blocked = { -brand-short-name }-ը արգելափակել է այս էջի մասերը, քանի որ դրանք անվտանգ չեն:
+identity-custom-root = Կապակցումը հաստատվել է վկայագրի թողարկողի կողմից, որը ճանաչված չէ Mozilla֊ի կողմից։
 identity-passive-loaded = Այս էջի մասերը անվտանգ չեն (օր.՝ պատկերները):
 identity-active-loaded = Դուք անջատել եք պաշտպանությունը այս էջում:
 identity-weak-encryption = Այս էջը օգտագործում է աղքատ գաղտնագրում:
 identity-insecure-login-forms = Այս էջից մուտքագրումները վտանգված են:
+identity-permissions =
+    .value = Արտոնություններ
 identity-permissions-reload-hint = Անհրաժեշտ կլինի թարմացնել էջը, որ կիրառվեն փոփոխությունները։
 identity-permissions-empty = Դուք չեք արտոնել այս կայքին որևէ հատուկ թույլտվություն:
+identity-clear-site-data =
+    .label = Ջնջել նշոցիկների և կայքի տվյալները…
+identity-connection-not-secure-security-view = Ձեր կապը այս կայքի հետ ապահով չէ։
+identity-connection-verified = Ձեր կապը այս կայքի հետ ապահով է։
+identity-ev-owner-label = Վկայագիրը թողարկվել է՝
+identity-description-custom-root = Mozilla֊ն չի ճանաչում այս վկայագրի թողարկողին։ Այն հնարավոր է ավելացվել է Ձեր գործավարական համակարգից կամ վարիչի կողմից։ <label data-l10n-name="link">Իմանալ ավելին</label>
 identity-remove-cert-exception =
     .label = Հեռացնել բացառությունը
     .accesskey = Հ
-identity-description-insecure = Ձեր կապակցումը այս կայքին գաղտնի չէ: Ուղկլարկված տեղեկությունները կարող են դիտվել ուրիշների կողմից (գաղտնաբառերը, հաղորդագրությունները, քարտային տվյալները և այլն):
+identity-description-insecure = Ձեր կապակցումը այս կայքին գաղտնի չէ: Ուղկարկված տեղեկությունները կարող են դիտվել ուրիշների կողմից (գաղտնաբառերը, հաղորդագրությունները, քարտային տվյալները և այլն):
 identity-description-insecure-login-forms = Մուտքգործման տեղեկությունը, որ մուտքագրել եք այս էջում, անվտանգ չէ և կարող է վտանգվել:
 identity-description-weak-cipher-intro = Ձեր կապակցումը այս կայքին օգտագործում է աղքատ գաղտնագրում և այն գաղտնի չէ:
 identity-description-weak-cipher-risk = Այլ անձինք կարող են դիտել ձեր տեղեկատվությունը կամ փոփոխել կայքի ժառանգորդին:

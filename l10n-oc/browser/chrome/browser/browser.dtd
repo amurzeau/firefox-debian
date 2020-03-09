@@ -65,6 +65,8 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY printCmd.label "Imprimir…">
 <!ENTITY printCmd.accesskey "p">
 <!ENTITY printCmd.commandkey "p">
+<!ENTITY importFromAnotherBrowserCmd.label "Importar d’un autre navegador…">
+<!ENTITY importFromAnotherBrowserCmd.accesskey "I">
 
 <!ENTITY taskManagerCmd.label "Gestionari de tascas">
 
@@ -77,6 +79,7 @@ when there are no windows but Firefox is still running. -->
 <!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
 include the word "toolbar" or such, because screen readers already know that
 this container is a toolbar. This avoids double-speaking. -->
+<!ENTITY navbar.accessibleLabel "Navegacion">
 <!ENTITY personalbarCmd.label "Barra de personala">
 <!ENTITY personalbarCmd.accesskey "B">
 <!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
@@ -110,6 +113,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY enterFullScreenCmd.accesskey "c">
 <!ENTITY exitFullScreenCmd.label "Quitar lo mòde Ecran complet">
 <!ENTITY exitFullScreenCmd.accesskey "p">
+
 <!ENTITY fullScreenCmd.label "Ecran complet">
 <!ENTITY fullScreenCmd.accesskey "p">
 <!ENTITY fullScreenCmd.macCommandKey "f">
@@ -136,20 +140,38 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
  <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
      for the Firefox Account toolbar signin menu screen. -->
+<!ENTITY fxa.signin.callout.label "Emportatz Firefox amb vos">
+<!ENTITY fxa.signin.button.label "Activar &syncBrand.shortName.label;…">
 
 <!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
      for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.callout.label "Verificatz vòstra adreça electronica">
+<!ENTITY fxa.unverified.button.label "Dobrir los paramètres de &syncBrand.shortName.label;…">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbart menu screen. The `Signed in as` text is
      followed by the user's email. -->
+<!ENTITY fxa.menu.signedInAs.label "Identificat en tant que">
 <!ENTITY fxa.menu.manageAccount.label "Gestion del compte…">
+<!ENTITY fxa.menu.syncSettings.label "Paramètres de &syncBrand.shortName.label;…">
 
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
      followed by the user's email. -->
+<!ENTITY fxa.menu.syncSettings2.label "Paramètres de &syncBrand.shortName.label;">
+<!ENTITY fxa.menu.connectAnotherDevice2.label "Connectar un autre periferic…">
+<!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
+<!ENTITY fxa.menu.signin.label "Se connectar a &brandProductName;">
+<!ENTITY fxa.menu.turnOnSync.label "Activar &syncBrand.shortName.label;">
+<!ENTITY fxa.menu.firefoxServices.label "Servicis &brandProductName;">
+<!ENTITY fxa.menu.account.label "Compte">
+<!ENTITY fxa.menu.settings.label "Paramètres">
+<!ENTITY fxa.menu.accountSettings.label "Paramètres del compte">
+<!ENTITY fxa.menu.manageAccount2.label "Gestion del compte">
+<!ENTITY fxa.menu.signOut.label "Se desconnectar…">
+<!ENTITY fxa.menu.setupSync.label "Configurar &syncBrand.shortName.label;…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -216,6 +238,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY stopCmd.accesskey            "A">
 
 <!ENTITY stopCmd.macCommandKey        ".">
+
 <!ENTITY goEndCap.tooltip             "Anar a la pagina indicada dins la barra d'adreça">
 <!ENTITY printButton.label            "Imprimir">
 <!ENTITY printButton.tooltip          "Imprimir aquesta pagina">
@@ -314,7 +337,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY webDeveloperMenu.label       "Desvolopaire web">
 <!ENTITY webDeveloperMenu.accesskey   "w">
 
-<!ENTITY inspectContextMenu.label     "Examinar l'element">
+<!ENTITY inspectContextMenu.label     "Examinar l’element">
 <!ENTITY inspectContextMenu.accesskey "x">
 
 <!ENTITY inspectA11YContextMenu.label     "Inspectar las proprietats d’accessibilitat">
@@ -418,6 +441,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Connectatz-vos per veire una lista d'onglets dels vòstres autres periferics.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Cal verificar vòstre compte.">
 <!ENTITY appMenuRemoteTabs.signin.label "Se connectar a Sync">
+<!ENTITY appMenuRemoteTabs.signintosync.label "Se connectar a &syncBrand.shortName.label;…">
+<!ENTITY appMenuRemoteTabs.turnonsync.label "Activar &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Gerir los periferics…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Veire los onglets sincronizats dins la barra laterala">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Connectar un autre periferic">
@@ -461,6 +486,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY moreMenu.label "Mai">
 
 <!ENTITY openCmd.commandkey           "l">
+
 <!ENTITY urlbar.placeholder2          "Picar un tèrme de recercar o una adreça">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
@@ -548,7 +574,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY openLinkCmdInTab.accesskey   "T">
 <!ENTITY openLinkCmd.label            "Dobrir lo ligam dins una fenèstra novèla">
 <!ENTITY openLinkCmd.accesskey        "W">
-<!ENTITY openLinkInPrivateWindowCmd.label "Dobrir lo ligam dins una fenèstra de navegacion privada">
+<!ENTITY openLinkInPrivateWindowCmd.label "Dobrir lo ligam dins una fenèstra privada">
 <!ENTITY openLinkInPrivateWindowCmd.accesskey "n">
 <!ENTITY openLinkCmdInCurrent.label     "Dobrir lo ligam">
 <!ENTITY openLinkCmdInCurrent.accesskey "o">
@@ -594,16 +620,23 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisLinkCmd.accesskey  "M">
 <!ENTITY bookmarkThisFrameCmd.label      "Marcapagina sus aqueste quadre">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "M">
+
 <!ENTITY pageAction.copyLink.label    "Copiar lo ligam">
 
 <!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
   "Pocket" is a brand name. -->
+<!ENTITY pocketButton.tooltiptext     "Enregistrar dins Pocket">
+<!ENTITY saveToPocketCmd.label        "Salvar pagina dins Pocket">
+<!ENTITY saveToPocketCmd.accesskey    "l">
+<!ENTITY saveLinkToPocketCmd.label    "Salvar ligam dins Pocket">
+<!ENTITY saveLinkToPocketCmd.accesskey "d">
+<!ENTITY pocketMenuitem.label         "Mostrar la lista de Pocket">
 
-<!ENTITY emailPageCmd.label           "Mandar per corrièr electronic un ligam cap a la pagina…">
+<!ENTITY emailPageCmd.label           "Enviar per corrièl un ligam cap a la pagina…">
 <!ENTITY emailPageCmd.accesskey       "c">
-<!-- alternate for content area context menu -->
 <!ENTITY savePageCmd.label            "Enregistrar jos…">
 <!ENTITY savePageCmd.accesskey        "E">
+<!-- alternate for content area context menu -->
 <!ENTITY savePageCmd.accesskey2       "E">
 <!-- alternate for content area context menu -->
 <!ENTITY savePageCmd.commandkey       "s">
@@ -619,11 +652,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY saveVideoCmd.accesskey       "s">
 <!ENTITY saveAudioCmd.label           "Enregistrar lo fichièr àudio jos…">
 <!ENTITY saveAudioCmd.accesskey       "g">
-<!ENTITY emailImageCmd.label          "Mandar l'imatge per corrièr electronic…">
+<!ENTITY emailImageCmd.label          "Enviar l’imatge per corrièl…">
 <!ENTITY emailImageCmd.accesskey      "t">
-<!ENTITY emailVideoCmd.label          "Mandar la vidèo per corrièr electronic…">
+<!ENTITY emailVideoCmd.label          "Enviar la vidèo per corrièl">
 <!ENTITY emailVideoCmd.accesskey      "d">
-<!ENTITY emailAudioCmd.label          "Mandar lo fichièr àudio per corrièr electronic…">
+<!ENTITY emailAudioCmd.label          "Enviar lo fichièr àudio per corrièl…">
 <!ENTITY emailAudioCmd.accesskey      "d">
 <!ENTITY playPluginCmd.label          "Activar aqueste plugin">
 <!ENTITY playPluginCmd.accesskey      "t">
@@ -803,12 +836,17 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.connectionSecure "Connexion securizada">
 <!ENTITY identity.connectionNotSecure "La connexion es pas securizada">
 
+<!ENTITY identity.connectionSecure3 "Connexion segura">
+<!ENTITY identity.connectionNotSecure2 "La connexion pas segura">
+<!ENTITY identity.connectionNotSecureSecurityView "Sètz pas connectat amb seguretat a aquel site.">
 <!ENTITY identity.connectionFile "Aquela pagina es enregistrada dins vòstre ordinador.">
 <!ENTITY identity.connectionVerified2 "Sètz connectat amb seguretat a aquel site, proprietat de :">
+<!ENTITY identity.connectionVerified3 "Sètz connectat amb seguretat a aquel site.">
 <!ENTITY identity.connectionInternal "Aquò es una pagina segura de &brandShortName;.">
 <!ENTITY identity.extensionPage "Aquela pagina es estada cargada d’una extension.">
 <!ENTITY identity.insecureLoginForms2 "Los identificants marcats sus aquela pagina pòdon far perilh.">
 
+<!ENTITY identity.evOwnerLabel2 "Certificat emés per :">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; a blocat d'elements pas segurs sus aquela pagina.">
@@ -843,21 +881,34 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Permissions">
 
+<!ENTITY identity.permissions3 "Permissions">
 <!ENTITY identity.permissionsEmpty "Avètz donat pas cap de permission espaciala a aquel site.">
 <!ENTITY identity.permissionsReloadHint "Benlèu deuriatz actualizar la pagina per que s'apliquen los cambiaments.">
 <!ENTITY identity.permissionsPreferences.tooltip "Dobrir las preferéncias d’autorizacions">
+<!ENTITY identity.contentBlockingPreferences.tooltip "Dobrir las preferéncias de blocatge de contengut">
 
 
 <!-- LOCALIZATION NOTE:
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
+<!ENTITY protections.settings.label "Paramètres de proteccion">
+<!ENTITY protections.showreport.label "Veire lo rapòrt">
 <!-- LOCALIZATION NOTE:
      protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
      protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
+<!ENTITY protections.siteNotWorking.label "Lo site fonciona pas ?">
+<!ENTITY protections.siteNotWorkingView.title "Lo site foncion pas ?">
 <!-- LOCALIZATION NOTE:
      In the Site Not Working? view, we suggest turning off protections if
      the user is experiencing issues with any of a variety of functionality.
      protections.siteNotWorkingView.header: The header of the list
      protections.siteNotWorkingView.issueList.*: The list items, shown in a <ul> -->
+<!ENTITY protections.siteNotWorkingView.header "Desactivatz las proteccions s’avètz de problèmas amb :">
+<!ENTITY protections.siteNotWorkingView.issueList.logInFields "Los camps de connexion">
+<!ENTITY protections.siteNotWorkingView.issueList.forms "Formularis">
+<!ENTITY protections.siteNotWorkingView.issueList.payments "Los pagaments">
+<!ENTITY protections.siteNotWorkingView.issueList.comments "Comentaris">
+<!ENTITY protections.siteNotWorkingView.issueList.videos "Vidèos">
+<!ENTITY protections.siteNotWorkingView.sendReport.label "Enviar un rapòrt">
 
 <!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
      In the protections panel, Content Blocking category items are in three sections:
@@ -865,11 +916,16 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      "Allowed" for categories detected but not blocked in the current page, and
      "None Detected" for categories not detected in the current page.
      These strings are used in the header labels of each of these sections. -->
+<!ENTITY protections.blocking2.label "Blocats">
+<!ENTITY protections.notBlocking2.label "Autorizats">
+<!ENTITY protections.notFound.label "Cap pas detectat">
 <!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
      The "Allowed" header also includes a "Why?" link that, when hovered, shows
      a tooltip explaining why these items were not blocked in the page. -->
+<!ENTITY protections.notBlocking.why.label "Perqué ?">
 <!ENTITY protections.noTrackersFound.description "Cap de traçadors coneguts per &brandShortName; pas detectat sus aquesta pagina.">
 
+<!ENTITY protections.cryptominers.description "Los minaires de criptomoneda utilizan la poténcia de calcul de vòstre ordenador per minar de moneda numerica. Los scripts de minaires sollicitan la bateria, alentisson l’ordenador e aumentan vòstra factura d’electricitat.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -885,6 +941,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY syncSignIn.label             "Se connectar a &syncBrand.shortName.label;">
 <!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "Sincronizar ara">
+<!ENTITY syncSyncNowItemSyncing.label "Sincronizacion…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "Se reconnectar a &syncBrand.shortName.label;…">
 <!ENTITY syncReAuthItem.accesskey     "r">
@@ -914,19 +971,28 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.cookies.label "Cookies">
 <!ENTITY contentBlocking.cookiesView.label "Cookies e donadas de sites">
 
+<!ENTITY contentBlocking.trackingProtection4.label "Contengut utilizat pel seguiment">
 
 <!ENTITY contentBlocking.manageSettings2.label "Gerir los paramètres de proteccion">
 <!ENTITY contentBlocking.manageSettings2.accesskey "G">
 
+<!ENTITY contentBlocking.socialblock.label "Traçadors de malhums socials">
 
+<!ENTITY contentBlocking.cryptominers.label "Minaires de criptomonedas">
+<!ENTITY contentBlocking.cryptominersView.label "Minaires de criptomonedas">
 
+<!ENTITY contentBlocking.fingerprinters.label "Generadors d’emprentas numericas">
+<!ENTITY contentBlocking.fingerprintersView.label "Generadors d’emprentas numericas">
 
 <!ENTITY contentBlocking.openBreakageReportView2.label "Senhalar un problèma">
 <!ENTITY contentBlocking.breakageReportView.label "Senhalar de problèmas">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Ne saber mai">
 
+<!ENTITY contentBlocking.breakageReportView.title "Senhalar un site copat">
+<!ENTITY contentBlocking.breakageReportView2.learnMore "Ne saber mai">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "URL">
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "Qué problèma avètz agut ? (Opcional)">
+<!ENTITY contentBlocking.breakageReportView2.collection.comments.label "Opcional : descrivètz lo problèma">
 <!ENTITY contentBlocking.breakageReportView.sendReport.label "Enviar lo rapòrt">
 <!ENTITY contentBlocking.breakageReportView.cancel.label "Anullar">
 

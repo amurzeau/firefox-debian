@@ -17,7 +17,7 @@ menu-select-all =
 close-dialog =
     .key = w
 general-tab =
-    .label = Općenito
+    .label = Opće
     .accesskey = G
 general-title =
     .value = Naslov:
@@ -26,15 +26,15 @@ general-url =
 general-type =
     .value = Vrsta:
 general-mode =
-    .value = Način renderiranja:
+    .value = Način iscrtavanja:
 general-size =
     .value = Veličina:
 general-referrer =
-    .value = Odnosni URL:
+    .value = Referentni URL:
 general-modified =
     .value = Izmijenjeno:
 general-encoding =
-    .value = Kôdna stranica teksta:
+    .value = Kodiranje teksta:
 general-meta-name =
     .label = Naziv
 general-meta-content =
@@ -88,19 +88,19 @@ security-view-identity-owner =
 security-view-identity-domain =
     .value = Web stranica:
 security-view-identity-verifier =
-    .value = Potvrdio:
+    .value = Potvrđeno od:
 security-view-identity-validity =
     .value = Isteći će:
 security-view-privacy =
     .value = Privatnost i povijest
-security-view-privacy-history-value = Jesam li posjetio ovu stranicu prije današnjeg dana?
+security-view-privacy-history-value = Jesam li posjetio/la ovu stranicu prije današnjeg dana?
 security-view-privacy-sitedata-value = Sprema li ova web stranica podatke na mojem računalu?
 security-view-privacy-clearsitedata =
     .label = Obriši kolačiće i podatke stranice
     .accesskey = O
-security-view-privacy-passwords-value = Jesam li spremao zaporke za ovu web stranicu?
+security-view-privacy-passwords-value = Jesam li spremio/la lozinke za ovu web stranicu?
 security-view-privacy-viewpasswords =
-    .label = Pregled spremljenih zaporki
+    .label = Pregled spremljenih lozinki
     .accesskey = z
 security-view-technical =
     .value = Tehnički detalji
@@ -147,9 +147,9 @@ page-info-security-no-owner =
     .value = Ova stranica nema informaciju o vlasništvu.
 media-select-folder = Odaberite mapu za spremanje slika
 media-unknown-not-cached =
-    .value = Nepoznato (nije pohranjeno)
+    .value = Nepoznato (nije spremljeno u predmemoriju)
 permissions-use-default =
-    .label = Koristi zadane postavke
+    .label = Koristi standardne postavke
 security-no-visits = Ne
 # This string is used to display the number of meta tags
 # in the General Tab
@@ -158,9 +158,9 @@ security-no-visits = Ne
 general-meta-tags =
     .value =
         { $tags ->
-            [one] Meta ({ $tags } oznaka)
-            [few] Meta ({ $tags } oznake)
-           *[other] Meta ({ $tags } oznaka)
+            [one] Meta oznake ({ $tags } oznaka)
+            [few] Meta oznake ({ $tags } oznake)
+           *[other] Meta oznake ({ $tags } oznaka)
         }
 # This string is used to display the number of times
 # the user has visited the website prior

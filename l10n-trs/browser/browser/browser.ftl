@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Gachenu hùì'
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Gachenu hùì'
+       *[other] { $title } - { -brand-full-name } (Gachenu hùì'
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Si nuguan' sitio na
 
@@ -113,6 +142,14 @@ urlbar-midi-blocked =
     .tooltiptext = Gi'iaj blokeandot MIDI guenda sitio web na.
 urlbar-install-blocked =
     .tooltiptext = Naránt da' nutà' man nej sa huāa guendâ sitiô nan.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Nagi'io' sa arajsun nichrò' doj ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Sa raj sun nichrà' doj pagina na ({ $shortcut })
 
 ## Page Action Context Menu
 

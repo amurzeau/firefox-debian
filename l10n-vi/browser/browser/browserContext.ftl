@@ -65,6 +65,26 @@ toolbar-button-page-save =
 main-context-menu-bookmark-page =
     .aria-label = Đánh dấu trang này
     .accesskey = m
+main-context-menu-bookmark-add =
+    .aria-label = Đánh dấu trang này
+    .accesskey = m
+    .tooltiptext = Đánh dấu trang này
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+main-context-menu-bookmark-add-with-shortcut =
+    .aria-label = Đánh dấu trang này
+    .accesskey = m
+    .tooltiptext = Đánh dấu trang này ({ $shortcut })
+main-context-menu-bookmark-change =
+    .aria-label = Chỉnh sửa dấu trang này
+    .accesskey = m
+    .tooltiptext = Chỉnh sửa trang đánh dấu này
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+main-context-menu-bookmark-change-with-shortcut =
+    .aria-label = Chỉnh sửa dấu trang này
+    .accesskey = m
+    .tooltiptext = Chỉnh sửa trang đánh dấu này ({ $shortcut })
 main-context-menu-open-link =
     .label = Mở liên kết
     .accesskey = O
@@ -191,7 +211,7 @@ main-context-menu-audio-copy-location =
     .label = Sao chép địa chỉ âm thanh
     .accesskey = o
 main-context-menu-image-save-as =
-    .label = Lưu ảnh tới…
+    .label = Lưu ảnh dưới dạng…
     .accesskey = v
 main-context-menu-image-email =
     .label = Gửi ảnh qua email…
@@ -212,7 +232,7 @@ main-context-menu-audio-save-as =
     .label = Lưu audio tới…
     .accesskey = v
 main-context-menu-video-image-save-as =
-    .label = Lưu ảnh chụp màn hình tới…
+    .label = Lưu ảnh chụp màn hình dưới dạng…
     .accesskey = S
 main-context-menu-video-email =
     .label = Gửi video qua email…

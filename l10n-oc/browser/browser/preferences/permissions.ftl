@@ -34,8 +34,11 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Enregistrar las modificacions
     .accesskey = E
+permissions-autoplay-menu = Per defaut per tose los sites web :
 permissions-searchbox =
     .placeholder = Recercar un site web
+permissions-capabilities-autoplay-allow =
+    .label = Autorizar l’àudio e la vidèo
 permissions-capabilities-autoplay-block =
     .label = Blocar l’àudio
 permissions-capabilities-autoplay-blockall =
@@ -64,6 +67,10 @@ permissions-exceptions-content-blocking-window =
     .title = Excepcions - Blocatge de contengut
     .style = { permissions-window.style }
 permissions-exceptions-content-blocking-desc = Avètz desactivat lo blocatge de contengut per aquestes sites.
+permissions-exceptions-etp-window =
+    .title = Excepcions per la proteccion contra lo seguiment
+    .style = { permissions-window.style }
+permissions-exceptions-etp-desc = Avètz desactivat las proteccions per aquestes sites web.
 
 ## Exceptions - Cookies
 

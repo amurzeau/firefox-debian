@@ -42,6 +42,8 @@
 <!ENTITY  newMessageCmd.accesskey "m">
 <!ENTITY  newContactCmd.label "Adresatas…">
 <!ENTITY  newContactCmd.accesskey "C">
+<!ENTITY openMenuCmd.label "Atverti">
+<!ENTITY openMenuCmd.accesskey "O">
 <!ENTITY openMessageFileCmd.label "Atverti įrašytą laišką…">
 <!ENTITY openMessageFileCmd.accesskey "A">
 <!ENTITY saveAsMenu.label "Įrašyti kaip">
@@ -466,7 +468,7 @@
 <!ENTITY addressBookCmd.key "B">
 <!ENTITY addons.label "Programos priedai">
 <!ENTITY addons.accesskey "d">
-<!ENTITY addonPrefs.label "Priedo parinktys">
+<!ENTITY addonPrefs.label "Priedų parinktys">
 <!ENTITY addonPrefs.accesskey "O">
 <!ENTITY addonPrefsUnix.label "Priedo nuostatos">
 <!ENTITY addonPrefsUnix.accesskey "P">

@@ -65,6 +65,26 @@ toolbar-button-page-save =
 main-context-menu-bookmark-page =
     .aria-label = Cruthaich comharra-lìn dhan duilleag seo
     .accesskey = m
+main-context-menu-bookmark-add =
+    .aria-label = Cruthaich comharra-lìn dhan duilleag seo
+    .accesskey = m
+    .tooltiptext = Cruthaich comharra-lìn dhan duilleag seo
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+main-context-menu-bookmark-add-with-shortcut =
+    .aria-label = Cruthaich comharra-lìn dhan duilleag seo
+    .accesskey = m
+    .tooltiptext = Cruthaich comharra-lìn dhan duilleag seo ({ $shortcut })
+main-context-menu-bookmark-change =
+    .aria-label = Deasaich an comharra-lìn seo
+    .accesskey = m
+    .tooltiptext = Deasaich an comharra-lìn seo
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+main-context-menu-bookmark-change-with-shortcut =
+    .aria-label = Deasaich an comharra-lìn seo
+    .accesskey = m
+    .tooltiptext = Deasaich an comharra-lìn seo ({ $shortcut })
 main-context-menu-open-link =
     .label = Fosgail ceangal
     .accesskey = o
@@ -235,6 +255,9 @@ main-context-menu-send-to-device =
 main-context-menu-view-background-image =
     .label = Seall dealbh a' chùlaibh
     .accesskey = S
+main-context-menu-generate-new-password =
+    .label = Cleachd facal-faire a chaidh gintinn dhut…
+    .accesskey = C
 main-context-menu-keyword =
     .label = Cuir facal-luirg ris an lorg seo…
     .accesskey = C

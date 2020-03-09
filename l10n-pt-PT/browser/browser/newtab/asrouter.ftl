@@ -122,6 +122,15 @@ cfr-whatsnew-lockwise-take-body =
     qualquer lugar às cópias de segurança das suas palavras-passe.
 cfr-whatsnew-lockwise-take-link-text = Obter a aplicação
 
+## Search Bar
+
+cfr-whatsnew-searchbar-title = Escreva menos e encontre mais, com a barra de endereço
+# Variables:
+#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
+cfr-whatsnew-searchbar-body-enginename = Aceda aos sites que mais utiliza, com um único clique na barra de endereço. Encontre coisas mais rapidamente com os resultados do { $searchEngineName } e o seu histórico de navegação.
+cfr-whatsnew-searchbar-body-generic = Aceda aos sites que mais utiliza, com um único clique na barra de endereço. Encontre coisas mais rapidamente com os resultados de pesquisa do seu histórico de navegação.
+cfr-whatsnew-searchbar-icon-alt-text = Ícone de lupa
+
 ## Picture-in-Picture
 
 cfr-whatsnew-pip-header = Veja vídeos enquanto navega
@@ -153,15 +162,15 @@ cfr-whatsnew-fingerprinter-counter-body-alt = O { -brand-shorter-name } pode blo
 
 cfr-doorhanger-sync-bookmarks-header = Obtenha este marcador no seu telemóvel
 cfr-doorhanger-sync-bookmarks-body = Leve os seus marcadores, palavras-passe, histórico e muito mais onde tiver a sessão iniciada no { -brand-product-name }.
-cfr-doorhanger-sync-bookmarks-ok-button = Ligue o { -sync-brand-short-name }
+cfr-doorhanger-sync-bookmarks-ok-button = Ligar { -sync-brand-short-name }
     .accesskey = L
 
 ## Login Sync
 
 cfr-doorhanger-sync-logins-header = Nunca mais perca uma palavra-passe
 cfr-doorhanger-sync-logins-body = Armazene e sincronize com segurança as suas palavras-passe em todos os seus dispositivos.
-cfr-doorhanger-sync-logins-ok-button = Ativar o { -sync-brand-short-name }
-    .accesskey = t
+cfr-doorhanger-sync-logins-ok-button = Ligar { -sync-brand-short-name }
+    .accesskey = L
 
 ## Send Tab
 

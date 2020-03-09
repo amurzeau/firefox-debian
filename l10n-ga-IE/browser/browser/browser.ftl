@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Brabhsáil Phríobháideach)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Brabhsáil Phríobháideach)
+       *[other] { $title } - { -brand-full-name } (Brabhsáil Phríobháideach)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Eolas faoin suíomh
 
@@ -42,6 +71,8 @@ urlbar-services-notification-anchor =
     .tooltiptext = Oscail painéal teachtaireachtaí na suiteála
 urlbar-web-notification-anchor =
     .tooltiptext = Athraigh pé acu an bhfaighidh nó nach bhfaighidh tú fógraí ón suíomh
+urlbar-midi-notification-anchor =
+    .tooltiptext = Oscail an painéal MIDI
 urlbar-eme-notification-anchor =
     .tooltiptext = Bainistigh bogearraí DRM
 urlbar-web-rtc-share-microphone-notification-anchor =
@@ -68,6 +99,18 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Sábháil sonraí sa Stóras Seasmhach
 urlbar-addons-notification-anchor =
     .tooltiptext = Oscail an painéal um theachtaireachtaí suiteála breiseáin
+urlbar-tip-help-icon =
+    .title = Faigh cabhair
+urlbar-search-tips-confirm = Maith go leor, tuigim
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Chuir tú cosc ar an suíomh seo an áit ina bhfuil tú a fheiceáil.
 urlbar-web-notifications-blocked =
@@ -80,9 +123,19 @@ urlbar-screen-blocked =
     .tooltiptext = Chuir tú cosc ar an suíomh seo do scáileán a chomhroinnt.
 urlbar-persistent-storage-blocked =
     .tooltiptext = Chuir tú cosc ar stóras seasmhach ar an suíomh seo.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Cuir an leabharmharc seo in eagar ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Cruthaigh leabharmharc don leathanach seo ({ $shortcut })
 
 ## Page Action Context Menu
 
+page-action-manage-extension =
+    .label = Bainistigh an Breiseán…
 
 ## Auto-hide Context Menu
 
@@ -95,6 +148,9 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = An uair seo, cuardaigh le:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -123,8 +179,12 @@ identity-passive-loaded = Tá codanna den leathanach seo neamhshlán (léithéid
 identity-active-loaded = Tá cosaint díchumasaithe agat ar an leathanach seo.
 identity-weak-encryption = Úsáideann an leathanach seo criptiú lag.
 identity-insecure-login-forms = D'fhéadfadh sonraí logáil isteach bheith i mbaol ar an leathanach seo.
+identity-permissions =
+    .value = Ceadanna
 identity-permissions-reload-hint = Ní mór duit an leathanach a athlódáil chun na hathruithe a chur i bhfeidhm.
 identity-permissions-empty = Níor thug tú aon chead speisialta don suíomh seo.
+identity-clear-site-data =
+    .label = Glan na Fianáin agus Sonraí Suímh...
 identity-remove-cert-exception =
     .label = Bain an Eisceacht
     .accesskey = B

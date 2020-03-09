@@ -156,7 +156,7 @@ menu-view-full-screen =
     .label = Kokoruututila
     .accesskey = K
 
-
+##
 
 menu-view-show-all-tabs =
     .label = Näytä kaikki välilehdet
@@ -192,6 +192,10 @@ menu-bookmarks-menu =
     .accesskey = K
 menu-bookmarks-show-all =
     .label = Näytä kaikki kirjanmerkit
+menu-bookmark-this-page =
+    .label = Lisää sivu kirjanmerkkeihin
+menu-bookmark-edit =
+    .label = Muokkaa kirjanmerkkiä
 menu-bookmarks-all-tabs =
     .label = Lisää kaikki välilehdet kirjanmerkkeihin…
 menu-bookmarks-toolbar =

@@ -71,8 +71,8 @@ newtab-menu-topsites-placeholder-tooltip =
 ## Context Menu: These strings are displayed in a context menu and are meant as a call to action for a given page.
 
 newtab-menu-edit-topsites = 편집
-newtab-menu-open-new-window = 새 창에서 열기
-newtab-menu-open-new-private-window = 새 사생활 보호 창에서 열기
+newtab-menu-open-new-window = 새 창에 열기
+newtab-menu-open-new-private-window = 새 사생활 보호 창에 열기
 newtab-menu-dismiss = 닫기
 newtab-menu-pin = 고정
 newtab-menu-unpin = 고정 해제
@@ -145,7 +145,7 @@ newtab-section-menu-remove-section = 섹션 삭제
 newtab-section-menu-collapse-section = 섹션 접기
 newtab-section-menu-expand-section = 섹션 펼치기
 newtab-section-menu-manage-section = 섹션 관리
-newtab-section-menu-manage-webext = 부가 기능 관리
+newtab-section-menu-manage-webext = 확장 기능 관리
 newtab-section-menu-add-topsite = 상위 사이트 추가
 newtab-section-menu-add-search-engine = 검색 엔진 추가
 newtab-section-menu-move-up = 위로 이동
@@ -173,7 +173,7 @@ newtab-empty-section-highlights = 브라우징을 시작하면 최근 방문하�
 # Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 # Variables:
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".
-newtab-empty-section-topstories = 다 왔습니다. { $provider }에서 제공하는 주요 기사를 다시 확인해 보세요. 기다릴 수가 없나요? 주제를 선택하면 웹에서 볼 수 있는 가장 재미있는 글을 볼 수 있습니다.
+newtab-empty-section-topstories = 다 왔습니다. { $provider }에서 제공하는 주요 기사를 다시 확인해 보세요. 기다릴 수 없습니까? 주제를 선택하면 웹에서 볼 수 있는 가장 재미있는 글을 볼 수 있습니다.
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -182,7 +182,7 @@ newtab-discovery-empty-section-topstories-content = 더 많은 이야기는 나�
 newtab-discovery-empty-section-topstories-try-again-button = 다시 시도
 newtab-discovery-empty-section-topstories-loading = 읽는 중…
 # Displays when a layout in a section took too long to fetch articles.
-newtab-discovery-empty-section-topstories-timed-out = 이 섹션을 거의 다 로드했지만, 안 된 부분이 있습니다.
+newtab-discovery-empty-section-topstories-timed-out = 이런! 이 섹션을 거의 다 로드했지만, 안 된 부분이 있습니다.
 
 ## Pocket Content Section.
 
@@ -190,11 +190,12 @@ newtab-discovery-empty-section-topstories-timed-out = 이 섹션을 거의 다 �
 newtab-pocket-read-more = 인기 주제:
 newtab-pocket-more-recommendations = 더 많은 추천
 newtab-pocket-whats-pocket = { -pocket-brand-name }은 무엇인가요?
+newtab-pocket-learn-more = 더 알아보기
 newtab-pocket-cta-button = { -pocket-brand-name } 받기
 newtab-pocket-cta-text = 좋아하는 이야기를 { -pocket-brand-name }에 저장하고 재미있게 읽어 보세요.
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
 
-newtab-error-fallback-info = 이 콘텐츠를 불러오는데 오류가 발생하였습니다.
-newtab-error-fallback-refresh-link = 페이지를 새로고침해서 다시 시도해 주세요.
+newtab-error-fallback-info = 이런! 이 콘텐츠를 불러오는데 오류가 발생하였습니다.
+newtab-error-fallback-refresh-link = 페이지를 새로 고침해서 다시 시도해 주세요.

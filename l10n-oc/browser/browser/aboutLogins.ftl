@@ -37,6 +37,8 @@ menu-menuitem-iphone-app = { -lockwise-brand-short-name } per iPhone eiPad
 
 ## Login List
 
+login-list =
+    .aria-label = Identificants correspondents a la recèrca
 login-list-count =
     { $count ->
         [one] { $count } identificant
@@ -45,18 +47,28 @@ login-list-count =
 login-list-sort-label-text = Triar per :
 login-list-name-option = Nom (A-Z)
 login-list-name-reverse-option = Nom (Z-A)
+login-list-breached-option = Pèrda de donadas de sites
 login-list-last-changed-option = Darrièra modificacion
 login-list-last-used-option = Darrièra utilizacion
 login-list-intro-title = Cap d’identificant pas trobat
+login-list-intro-description = Veiretz vòstre senhal aquí se lo gardatz dins { -brand-product-name }.
 about-logins-login-list-empty-search-title = Cap d’identificant pas trobat
+about-logins-login-list-empty-search-description = Cap de resultat per vòstra recèrca.
 login-list-item-title-new-login = Identificant novèl
+login-list-item-subtitle-new-login = Picatz vòstras informacions de connexion
 login-list-item-subtitle-missing-username = (Pas cap de nom d’utilizaire)
 about-logins-list-item-breach-icon =
     .title = Site amb contengut expausat al public
 
 ## Introduction screen
 
+login-intro-heading = Cercatz vòstres senhals gardats ? Configuratz { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-in = Cap d’identificant sincronizat pas trobat.
+login-intro-description = Se gardatz vòstres identificants dins { -brand-product-name } sus un autre periferics, vaquí cossí i accedir aquí :
+login-intro-instruction-fxa = Connectatz-vos o creatz un { -fxaccount-brand-name } ont son gardats los identificants.
+login-intro-instruction-fxa-settings = Asseguratz-vos qu’avètz seleccionat la casa dels identificants dins los paramètres de { -sync-brand-short-name }
 about-logins-intro-instruction-help = Consultatz <a data-l10n-name="help-link">l’assiténcia de { -lockwise-brand-short-name } per d’ajudar</a>
+about-logins-intro-import = Se vòstres identificants son gardats dins un autre navegador, podètz <a data-l10n-name="import-link">los importar dins{ -lockwise-brand-short-name }</a>
 
 ## Login
 
@@ -72,10 +84,6 @@ about-logins-login-item-username =
 login-item-copy-username-button-text = Copiar
 login-item-copied-username-button-text = Copiat !
 login-item-password-label = Senhal
-login-item-password-reveal-checkbox-show =
-    .title = Mostrar lo senhal
-login-item-password-reveal-checkbox-hide =
-    .title = Amagar lo senhal
 login-item-password-reveal-checkbox =
     .aria-label = Mostrar lo senhal
 login-item-copy-password-button-text = Copiar
@@ -121,8 +129,16 @@ confirm-discard-changes-dialog-confirm-button = Ignorar
 
 ## Breach Alert notification
 
+breach-alert-link = Ne saber mai tocant aquesta pèrda de donadas.
 breach-alert-dismiss =
     .title = Tampar aquesta alèrta
 
 ## Error Messages
 
+# This is an error message that appears when a user attempts to save
+# a new login that is identical to an existing saved login.
+# Variables:
+#   $loginTitle (String) - The title of the website associated with the login.
+about-logins-error-message-duplicate-login-with-link = Existís ja una entrada per { $loginTitle } amb aqueste nom d’utilizaire.<a data-l10n-name="duplicate-link">Accedir a l’entrada existenta ?
+# This is a generic error message.
+about-logins-error-message-default = Una error s’es producha en enregistrant aqueste senhal.

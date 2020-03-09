@@ -22,7 +22,7 @@
   -  for the checkbox option to show user agent styles in the Inspector
   -  panel. -->
 <!ENTITY options.showUserAgentStyles.label "Prikaz stilova preglednika">
-<!ENTITY options.showUserAgentStyles.tooltip "Uključivanje ove opcije će prikazati zadane stilove koje učitava preglednik.">
+<!ENTITY options.showUserAgentStyles.tooltip "Uključivanjem ove opcije prikazat će se standardni stilovi koje učitava preglednik.">
 
 <!-- LOCALIZATION NOTE (options.collapseAttrs.label): This is the label
   -  for the checkbox option to enable collapse attributes in the Inspector
@@ -64,13 +64,13 @@
 <!-- LOCALIZATION NOTE (options.context.triggersPageRefresh): This is the
   -  triggers page refresh footnote under the advanced settings group in the
   -  options panel and is used for settings that trigger page reload. -->
-<!ENTITY options.context.triggersPageRefresh  "* Samo trenutna sesija, ponovno učitava stranicu">
+<!ENTITY options.context.triggersPageRefresh  "* Samo trenutna sesija, ponovo učitava stranicu">
 
 <!-- LOCALIZATION NOTE (options.enableChrome.label5): This is the label for the
   -  checkbox that toggles chrome debugging, i.e. devtools.chrome.enabled
   -  boolean preference in about:config, in the options panel. -->
-<!ENTITY options.enableChrome.label5    "Omogući chrome preglednika i alatne trake za otklanjanje grešaka u dodacima">
-<!ENTITY options.enableChrome.tooltip3  "Uključivanje ove opcije će omogućiti korištenje raznih razvojnih alata u kontekstu preglednika (putem Alati > Web razvijatelj > Alatna traka preglednika) i otklanjanje grešaka u dodacima putem upravljača dodataka.">
+<!ENTITY options.enableChrome.label5    "Omogući chrome preglednika i alate za otklanjanje grešaka u dodacima">
+<!ENTITY options.enableChrome.tooltip3  "Uključivanje ove opcije će omogućiti korištenje raznih razvojnih alata u kontekstu preglednika (putem Alati > Web programer > Alati preglednika) i otklanjanje grešaka u dodacima putem upravljača dodataka.">
 
 <!-- LOCALIZATION NOTE (options.enableRemote.label3): This is the label for the
   -  checkbox that toggles remote debugging, i.e. devtools.debugger.remote-enabled
@@ -135,11 +135,6 @@
 <!ENTITY options.timestampMessages.label      "Uključi vremenske oznake">
 <!ENTITY options.timestampMessages.tooltip    "Ako omogućite ovu opciju, naredbe i rezultati u web konzoli će prikazivati vremensku oznaku">
 
-<!-- LOCALIZATION NOTE (options.warningGroups.label): This is the
-   - label for the checkbox that toggles the warningGroups feature in the Web Console -->
-<!ENTITY options.warningGroups.label      "Grupiraj slične poruke">
-<!ENTITY options.warningGroups.tooltip    "Kad je omogućeno, slične poruke se svrstavaju u grupe">
-
 <!-- LOCALIZATION NOTE (options.debugger.label): This is the label for the
   -  heading of the group of Debugger preferences in the options panel. -->
 <!ENTITY options.debugger.label            "Ispravljač grešaka">
@@ -160,17 +155,17 @@
 <!-- LOCALIZATION NOTE (options.screenshot.label): This is the label for the
    -  heading of the group of Screenshot preferences in the options
    -  panel. -->
-<!ENTITY options.screenshot.label            "Način rada snimke zaslona">
+<!ENTITY options.screenshot.label            "Način rada snimke ekrana">
 
 <!-- LOCALIZATION NOTE (options.screenshot.clipboard.label): This is the
    - label for the checkbox that toggles screenshot to clipboard feature. -->
-<!ENTITY options.screenshot.clipboard.label      "Snimka zaslona u međuspremnik">
-<!ENTITY options.screenshot.clipboard.tooltip    "Sprema snimku zaslona izravno u međuspremnik">
+<!ENTITY options.screenshot.clipboard.label      "Snimka ekrana u međuspremnik">
+<!ENTITY options.screenshot.clipboard.tooltip    "Sprema snimku ekrana izravno u međuspremnik">
 
 <!-- LOCALIZATION NOTE (options.screenshot.audio.label): This is the
    - label for the checkbox that toggles the camera shutter audio for screenshot tool -->
 <!ENTITY options.screenshot.audio.label      "Pokreni zvuk okidača kamere">
-<!ENTITY options.screenshot.audio.tooltip    "Omogućava zvuk okidača kamere pri snimanju zaslona">
+<!ENTITY options.screenshot.audio.tooltip    "Omogućava zvuk okidača kamere pri snimanju ekrana">
 
 <!-- LOCALIZATION NOTE (options.showPlatformData.label): This is the
   -  label for the checkbox that toggles the display of the platform data in the,

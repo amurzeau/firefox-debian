@@ -73,6 +73,7 @@ policy-OverrideFirstRunPage = Override the first run page. Set this policy to bl
 policy-OverridePostUpdatePage = Override the post-update “What’s New” page. Set this policy to blank if you want to disable the post-update page.
 policy-PasswordManagerEnabled = Enable saving passwords to the password manager.
 policy-Permissions = Configure permissions for camera, microphone, location and notifications.
+policy-Permissions2 = Configure permissions for camera, microphone, location, notifications, and autoplay.
 policy-PopupBlocking = Allow certain web sites to display popups by default.
 policy-Preferences = Set and lock the value for a subset of preferences.
 policy-PromptForDownloadLocation = Ask where to save files when downloading.
@@ -87,5 +88,6 @@ policy-SecurityDevices = Install PKCS #11 modules.
 policy-SSLVersionMax = Set the maximum SSL version.
 policy-SSLVersionMin = Set the minimum SSL version.
 policy-SupportMenu = Add a custom support menu item to the help menu.
+policy-UserMessaging = Don’t show certain messages to the user.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Block web sites from being visited. See documentation for more details on the format.

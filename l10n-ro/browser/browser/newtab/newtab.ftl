@@ -125,6 +125,10 @@ newtab-label-removed-bookmark = Marcaj eliminat
 newtab-label-recommended = În tendințe
 newtab-label-saved = Salvat în { -pocket-brand-name }
 newtab-label-download = Descărcat
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } · Sponsorizat
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -178,6 +182,7 @@ newtab-discovery-empty-section-topstories-timed-out = Ups! Aproape că am încă
 newtab-pocket-read-more = Subiecte populare:
 newtab-pocket-more-recommendations = Mai multe recomandări
 newtab-pocket-whats-pocket = Ce este { -pocket-brand-name }?
+newtab-pocket-learn-more = Află mai multe
 newtab-pocket-cta-button = Obține { -pocket-brand-name }
 newtab-pocket-cta-text = Salvează în { -pocket-brand-name } articolele care ți-au plăcut și hrănește-ți mintea cu lecturi fascinante.
 

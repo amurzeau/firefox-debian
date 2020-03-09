@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Ukubhrawuza kwangasese)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Ukubhrawuza kwangasese)
+       *[other] { $title } - { -brand-full-name } (Ukubhrawuza kwangasese)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Jonga inkcazelo yesayithi
 
@@ -68,6 +97,15 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Gcina idatha kuGcino oluQhubekayo
 urlbar-addons-notification-anchor =
     .tooltiptext = Vula iphanele yokongezelela umyalezo wokufakela
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = Uyibhlokile inkcazelo yendawo kule webhusayithi.
 urlbar-web-notifications-blocked =
@@ -80,6 +118,14 @@ urlbar-screen-blocked =
     .tooltiptext = Uyibhlokile le webhusayithi ekwabelaneni ngesikrini sakho.
 urlbar-persistent-storage-blocked =
     .tooltiptext = Ulubhlokile ugcino oluqhubekayo lwedatha kule webhusayithi.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Hlela le bhukhmakhi ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Faka ibhukhmakhi kweli khasi ({ $shortcut })
 
 ## Page Action Context Menu
 

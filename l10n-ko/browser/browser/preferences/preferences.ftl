@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = 웹사이트에 “방문자 추적 금지” 신호를 보내서 추적을 원하지 않는다고 알림
+do-not-track-description = 웹 사이트에 “방문자 추적 금지” 신호를 보내서 추적을 원하지 않는다고 알림
 do-not-track-learn-more = 더 알아보기
 do-not-track-option-default-content-blocking-known =
     .label = { -brand-short-name }가 알려진 추적기를 차단하도록 설정 됐을 때만
@@ -31,10 +31,10 @@ search-input-box =
     .style = width: 15.4em
     .placeholder =
         { PLATFORM() ->
-            [windows] 옵션에서 찾기
+            [windows] 설정에서 찾기
            *[other] 설정에서 찾기
         }
-managed-notice = 속한 회사나 단체에서 브라우저를 관리하고 있습니다.
+managed-notice = 사용자의 브라우저는 회사나 단체에서 관리하고 있습니다.
 pane-general-title = 일반
 category-general =
     .tooltiptext = { pane-general-title }
@@ -51,7 +51,7 @@ pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
 help-button-label = { -brand-short-name } 도움말
-addons-button-label = 확장기능과 테마
+addons-button-label = 확장 기능 및 테마
 focus-search =
     .key = f
 close-button =
@@ -78,25 +78,25 @@ restart-later = 나중에 다시 시작
 
 # This string is shown to notify the user that their home page
 # is being controlled by an extension.
-extension-controlled-homepage-override = <img data-l10n-name="icon"/> { $name } 확장기능이 홈페이지를 제어하고 있습니다.
+extension-controlled-homepage-override = <img data-l10n-name="icon"/> { $name } 확장 기능이 홈페이지를 제어하고 있습니다.
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
-extension-controlled-new-tab-url = <img data-l10n-name="icon"/> { $name } 확장기능이 새 탭 페이지를 제어하고 있습니다.
+extension-controlled-new-tab-url = <img data-l10n-name="icon"/> { $name } 확장 기능이 새 탭 페이지를 제어하고 있습니다.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
-extension-controlled-web-notifications = <img data-l10n-name="icon"/> { $name } 확장기능이 이 설정을 제어하고 있습니다.
+extension-controlled-web-notifications = <img data-l10n-name="icon"/> { $name } 확장 기능이 이 설정을 제어하고 있습니다.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
-extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } 확장기능이 기본 검색 엔진을 설정했습니다.
+extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } 확장 기능이 기본 검색 엔진을 설정했습니다.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } 확장기능에는 컨테이너 탭이 필요합니다.
+extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } 확장 기능에는 컨테이너 탭이 필요합니다.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> { $name } 확장기능이 이 설정을 제어하고 있습니다.
+extension-controlled-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> { $name } 확장 기능이 이 설정을 제어하고 있습니다.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
-extension-controlled-proxy-config = <img data-l10n-name="icon"/> { $name } 확장기능이 { -brand-short-name }가 인터넷에 접근하는 방법을 제어하고 있습니다.
+extension-controlled-proxy-config = <img data-l10n-name="icon"/> { $name } 확장 기능이 { -brand-short-name }가 인터넷에 접근하는 방법을 제어하고 있습니다.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -139,13 +139,13 @@ startup-restore-previous-session =
 startup-restore-warn-on-quit =
     .label = 브라우저 종료시 경고
 disable-extension =
-    .label = 확장기능 비활성화
+    .label = 확장 기능 비활성화
 tabs-group-header = 탭
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab으로 최근 사용한 순서대로 탭 순환
     .accesskey = T
 open-new-link-as-tabs =
-    .label = 링크를 새 창 대신 새 탭에서 열기
+    .label = 링크를 새 창 대신 새 탭에 열기
     .accesskey = w
 warn-on-close-multiple-tabs =
     .label = 여러 개의 탭을 닫을 때 경고하기
@@ -168,7 +168,7 @@ browser-containers-settings =
     .accesskey = i
 containers-disable-alert-title = 모든 컨테이너 탭을 닫으시겠습니까?
 containers-disable-alert-desc = 지금 컨테이너 탭을 비활성화 하면 { $tabCount }개의 컨테이너 탭이 닫히게 됩니다. 컨테이너 탭을 비활성화 하시겠습니까?
-containers-disable-alert-ok-button = { $tabCount }개의 컨테이너 탭 닫기
+containers-disable-alert-ok-button = 컨테이너 탭 { $tabCount }개 닫기
 containers-disable-alert-cancel-button = 활성화 하기
 containers-remove-alert-title = 이 컨테이너를 삭제하시겠습니까?
 # Variables:
@@ -201,7 +201,7 @@ preferences-zoom-text-only =
     .label = 글자 크기만 조정
     .accesskey = t
 language-header = 언어
-choose-language-description = 웹 페이지를 표시할 선호 언어 선택
+choose-language-description = 웹 페이지를 표시할 기본 언어 선택
 choose-button =
     .label = 선택…
     .accesskey = o
@@ -270,7 +270,7 @@ applications-use-app-default =
     .label = { $app-name } 사용(기본값)
 applications-use-other =
     .label = 다른 프로그램 사용…
-applications-select-helper = 지원 프로그램 선택
+applications-select-helper = 도우미 응용 프로그램 선택
 applications-manage-app =
     .label = 응용 프로그램 세부사항…
 applications-always-ask =
@@ -504,8 +504,8 @@ search-bar-hidden =
     .label = 주소 표시줄을 사용하여 검색과 탐색
 search-bar-shown =
     .label = 도구 모음에 검색 표시줄 추가
-search-engine-default-header = 기본 검색 사이트
-search-engine-default-desc = 주소바와 검색바에서 사용할 기본 검색 엔진을 선택하세요.
+search-engine-default-header = 기본 검색 엔진
+search-engine-default-desc = 주소 표시줄과 검색 표시줄에서 사용할 기본 검색 엔진을 선택하세요.
 search-engine-default-desc-2 = 주소 표시줄과 검색 표시줄의 기본 검색 엔진입니다. 언제든지 바꿀 수 있습니다.
 search-engine-default-private-desc-2 = 사생활 보호 창에서만 사용할 다른 기본 검색 엔진을 선택하세요
 search-separate-default-engine =
@@ -517,7 +517,7 @@ search-suggestions-option =
     .label = 검색 제안 사용
     .accesskey = s
 search-show-suggestions-url-bar-option =
-    .label = 주소창 결과에 검색 제안 표시
+    .label = 주소 표시줄 결과에 검색 제안 표시
     .accesskey = l
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
@@ -525,15 +525,15 @@ search-show-suggestions-url-bar-option =
 # "ahead" refers to location (appearing most proximate to), not time
 # (appearing before).
 search-show-suggestions-above-history-option =
-    .label = 주소창 결과의 방문 기록 앞에 검색 제안 표시
+    .label = 주소 표시줄 결과의 방문 기록 앞에 검색 제안 표시
 search-show-suggestions-private-windows =
     .label = 사생활 보호 창에 검색 제안 표시
 suggestions-addressbar-settings = 방문 기록, 북마크 및 탭 제안에 대한 설정 변경
-search-suggestions-cant-show = 방문 기록을 기억하지 않도록 { -brand-short-name }를 구성했기 때문에 검색 제안이 주소창 결과에 표시되지 않습니다.
-search-one-click-header = 원클릭 검색 사이트
+search-suggestions-cant-show = 기록을 기억하지 않도록 { -brand-short-name }를 구성했기 때문에 검색 제안이 주소창 결과에 표시되지 않습니다.
+search-one-click-header = 원클릭 검색 엔진
 search-one-click-desc = 키워드 입력을 시작했을 때 주소 표시줄과 검색 표시줄 아래에 나타날 대체 검색 엔진을 선택하세요.
 search-choose-engine-column =
-    .label = 검색 사이트
+    .label = 검색 엔진
 search-choose-keyword-column =
     .label = 키워드
 search-restore-default =
@@ -579,7 +579,7 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = 웹과 함께 하세요.
-sync-signedout-description = 북마크, 방문 기록, 탭, 비밀번호, 부가기능, 설정을 모든 기기에 걸쳐 동기화 하세요.
+sync-signedout-description = 북마크, 방문 기록, 탭, 비밀번호, 부가 기능, 설정을 모든 기기에 걸쳐 동기화 하세요.
 sync-signedout-account-title = { -fxaccount-brand-name }과 연결
 sync-signedout-account-create = 계정이 없으신가요? 시작하세요
     .accesskey = C
@@ -617,7 +617,7 @@ sync-manage-account = 계정 관리
 sync-signedin-unverified = { $email } 은 아직 인증되지 않았습니다.
 sync-signedin-login-failure = { $email }으로 다시 연결하려면 로그인하세요
 sync-resend-verification =
-    .label = 인증 메일 재전송
+    .label = 인증 메일 다시 보내기
     .accesskey = d
 sync-remove-account =
     .label = 계정 삭제
@@ -635,7 +635,7 @@ prefs-syncing-off = 동기화 : 꺼짐
 prefs-sync-setup =
     .label = { -sync-brand-short-name } 설정…
     .accesskey = S
-prefs-sync-offer-setup-label = 북마크, 방문 기록, 탭, 비밀번호, 부가기능 및 설정을 모든 기기에 걸쳐 동기화하세요.
+prefs-sync-offer-setup-label = 북마크, 방문 기록, 탭, 비밀번호, 부가 기능 및 설정을 모든 기기에 걸쳐 동기화하세요.
 prefs-sync-now =
     .labelnotsyncing = 지금 동기화
     .accesskeynotsyncing = N
@@ -738,7 +738,7 @@ privacy-header = 브라우저 개인정보
 logins-header = 로그인과 비밀번호
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
-    .label = 웹사이트의 로그인과 비밀번호를 기억할지 묻기
+    .label = 웹 사이트의 로그인과 비밀번호를 기억할지 묻기
     .accesskey = r
 forms-exceptions =
     .label = 예외 목록…
@@ -758,7 +758,7 @@ forms-saved-logins =
     .label = 저장된 로그인…
     .accesskey = L
 forms-master-pw-use =
-    .label = 정보 보호을 위해 기본 비밀번호 사용
+    .label = 기본 비밀번호 사용
     .accesskey = U
 forms-master-pw-change =
     .label = 기본 비밀번호 변경…
@@ -768,7 +768,7 @@ forms-master-pw-fips-desc = 비밀번호 변경 실패
 
 ## Privacy Section - History
 
-history-header = 방문 기록
+history-header = 기록
 # This label is followed, on the same line, by a dropdown list of options
 # (Remember history, etc.).
 # In English it visually creates a full sentence, e.g.
@@ -781,12 +781,12 @@ history-header = 방문 기록
 history-remember-label = { -brand-short-name }가
     .accesskey = w
 history-remember-option-all =
-    .label = 방문 기록을 기억함
+    .label = 기록을 기억함
 history-remember-option-never =
-    .label = 방문 기록을 기억 안 함
+    .label = 기록을 기억 안 함
 history-remember-option-custom =
-    .label = 방문 기록에 사용자 지정 설정 사용
-history-remember-description = { -brand-short-name }가 탐색과 다운로드, 서식, 검색 히스토리를 저장합니다.
+    .label = 기록에 사용자 지정 설정 사용
+history-remember-description = { -brand-short-name }가 방문, 다운로드, 양식 및 검색 기록을 저장합니다.
 history-dontremember-description = { -brand-short-name }는 사생활 보호 모드와 같은 설정을 가지며 웹 사이트 방문 중 어떤 기록도 저장하지 않습니다.
 history-private-browsing-permanent =
     .label = 항상 사생활 보호 모드 사용
@@ -795,26 +795,26 @@ history-remember-browser-option =
     .label = 방문 및 다운로드 기록 저장
     .accesskey = b
 history-remember-search-option =
-    .label = 검색 및 입력 기록 저장
+    .label = 검색 및 양식 기록 저장
     .accesskey = f
 history-clear-on-close-option =
-    .label = { -brand-short-name }를 닫을 때 방문 기록 삭제
+    .label = { -brand-short-name }를 닫을 때 기록 삭제
     .accesskey = r
 history-clear-on-close-settings =
     .label = 설정…
     .accesskey = t
 history-clear-button =
-    .label = 방문 기록 삭제…
+    .label = 기록 삭제…
     .accesskey = s
 
 ## Privacy Section - Site Data
 
-sitedata-header = 쿠키와 사이트 데이터
+sitedata-header = 쿠키 및 사이트 데이터
 sitedata-total-size-calculating = 사이트 데이터와 캐시 크기 계산 중…
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = 현재 저장된 쿠키와 사이트 데이터, 캐시가 { $value } { $unit }의 디스크를 사용하고 있습니다.
+sitedata-total-size = 현재 저장된 쿠키, 사이트 데이터 및 캐시가 { $value } { $unit }의 디스크를 사용하고 있습니다.
 sitedata-learn-more = 더 알아보기
 sitedata-delete-on-close =
     .label = { -brand-short-name }가 닫힐 때 쿠키와 사이트 데이터를 삭제
@@ -839,9 +839,9 @@ sitedata-option-block-cross-site-and-social-media-trackers =
 sitedata-option-block-unvisited =
     .label = 방문하지 않은 웹 사이트의 쿠키
 sitedata-option-block-all-third-party =
-    .label = 모든 제3자 쿠키(웹사이트가 깨질 수 있음)
+    .label = 모든 제3자 쿠키 (웹 사이트가 깨질 수 있음)
 sitedata-option-block-all =
-    .label = 모든 쿠키(웹사이트가 깨질 수 있음)
+    .label = 모든 쿠키(웹 사이트가 깨질 수 있음)
 sitedata-clear =
     .label = 데이터 삭제…
     .accesskey = l
@@ -921,11 +921,11 @@ content-blocking-all-third-party-cookies = 모든 제3자 쿠키
 content-blocking-cryptominers = 크립토마이너
 content-blocking-fingerprinters = 핑거프린터
 content-blocking-warning-title = 조심하세요!
-content-blocking-warning-description = 콘텐츠를 차단하면 일부 웹사이트가 깨질 수 있습니다. 신뢰할 수 있는 사이트에 대한 차단은 쉽게 해제 할 수 있습니다.
+content-blocking-warning-description = 콘텐츠를 차단하면 일부 웹 사이트가 깨질 수 있습니다. 신뢰할 수 있는 사이트에 대한 차단은 쉽게 해제 할 수 있습니다.
 content-blocking-learn-how = 방법 알아보기
 content-blocking-etp-warning-description = 추적기 차단은 일부 사이트의 기능에 영향을 줄 수 있습니다. 모든 콘텐츠를 로드하려면 추적기가 있는 페이지를 다시 로드하세요.
 content-blocking-warning-learn-how = 방법 알아보기
-content-blocking-reload-description = 이러한 변경 사항을 적용하려면 탭을 다시 로드해야 합니다.
+content-blocking-reload-description = 변경 사항을 적용하려면 탭을 다시 로드해야 합니다.
 content-blocking-reload-tabs-button =
     .label = 모든 탭 다시 읽기
     .accesskey = R
@@ -991,7 +991,7 @@ permissions-notification-pause =
     .label = { -brand-short-name }가 다시 시작될 때까지 알림을 일시 중지
     .accesskey = n
 permissions-block-autoplay-media2 =
-    .label = 웹사이트가 자동으로 소리를 재생하는 것 차단
+    .label = 웹 사이트가 자동으로 소리를 재생하는 것 차단
     .accesskey = B
 permissions-block-autoplay-media-exceptions =
     .label = 예외 목록…
@@ -1007,7 +1007,7 @@ permissions-block-popups-exceptions =
     .label = 예외 목록…
     .accesskey = E
 permissions-addon-install-warning =
-    .label = 웹사이트가 부가 기능을 설치하려 할 때 경고
+    .label = 웹 사이트가 부가 기능을 설치하려 할 때 경고
     .accesskey = W
 permissions-addon-exceptions =
     .label = 예외 목록…
@@ -1095,13 +1095,13 @@ space-alert-over-5gb-pref-button =
         }
 space-alert-over-5gb-message =
     { PLATFORM() ->
-        [windows] { -brand-short-name } 디스크 용량이 부족합니다. 웹사이트 내용이 제대로 표시되지 않을 수 있습니다. 옵션 > 개인정보와 보안 > 쿠키와 사이트 데이터에서 저장된 데이터를 지울 수 있습니다.
-       *[other] { -brand-short-name } 디스크 용량이 부족합니다. 웹사이트 내용이 제대로 표시되지 않을 수 있습니다. 설정 > 개인정보와 보안 > 쿠키와 사이트 데이터에서 저장된 데이터를 지울 수 있습니다.
+        [windows] { -brand-short-name } 디스크 용량이 부족합니다. 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 옵션 > 개인정보와 보안 > 쿠키 및 사이트 데이터에서 저장된 데이터를 지울 수 있습니다.
+       *[other] { -brand-short-name } 디스크 용량이 부족합니다. 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 설정 > 개인정보와 보안 > 쿠키 및 사이트 데이터에서 저장된 데이터를 지울 수 있습니다.
     }
 space-alert-under-5gb-ok-button =
     .label = 확인
     .accesskey = K
-space-alert-under-5gb-message = { -brand-short-name } 디스크 용량이 부족합니다. 웹사이트 내용이 제대로 표시되지 않을 수 있습니다. 더 나은 인터넷 경험을 위해 디스크 용량을 최적화하는 방법을 알아보려면 “더 알아보기”를 방문하세요.
+space-alert-under-5gb-message = { -brand-short-name } 디스크 용량이 부족합니다. 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 더 나은 인터넷 경험을 위해 디스크 용량을 최적화하는 방법을 알아보려면 “더 알아보기”를 방문하세요.
 
 ## The following strings are used in the Download section of settings
 

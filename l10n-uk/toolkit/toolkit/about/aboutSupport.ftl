@@ -92,6 +92,8 @@ graphics-crash-guards-title = Можливості, вимкнені захис�
 graphics-workarounds-title = Способи обходу
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Віконний протокол
+# Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
+graphics-desktop-environment = Середовище робочого столу
 place-database-title = База даних Places
 place-database-integrity = Цілісність
 place-database-verify-integrity = Перевірити цілісність
@@ -302,7 +304,7 @@ launcher-process-status-unknown = Невідомий стан
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
 multi-process-status-0 = Увімкнено користувачем
-multi-process-status-1 = Увімкнено типово
+multi-process-status-1 = Типово увімкнено
 multi-process-status-2 = Вимкнено
 multi-process-status-4 = Вимкнено інструментами доступності
 multi-process-status-6 = Вимкнено через непідтримуване введення тексту

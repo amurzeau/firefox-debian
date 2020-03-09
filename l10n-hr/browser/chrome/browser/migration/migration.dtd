@@ -6,13 +6,15 @@
 <!ENTITY migrationWizard.title          "Čarobnjak uvoza">
 
 <!ENTITY importFrom.label               "Uvezi opcije, zabilješke, povijest pretraživanja, lozinke i ostale podatke iz:">
-<!ENTITY importFromUnix.label           "Uvezi postavke, zabilješke, povijest, zaporke i ostale podatke iz:">
+<!ENTITY importFromUnix.label           "Uvezi postavke, zabilješke, povijest, lozinke i ostale podatke iz:">
 <!ENTITY importFromBookmarks.label      "Uvezi zabilješke iz:">
 
 <!ENTITY importFromIE.label             "Microsoft Internet Explorer">
 <!ENTITY importFromIE.accesskey         "M">
 <!ENTITY importFromEdge.label           "Microsoft Edge">
 <!ENTITY importFromEdge.accesskey       "E">
+<!ENTITY importFromEdgeLegacy.label     "Microsoft Edge Legacy">
+<!ENTITY importFromEdgeLegacy.accesskey "L">
 <!ENTITY importFromEdgeBeta.label       "Microsoft Edge beta">
 <!ENTITY importFromEdgeBeta.accesskey   "d">
 <!ENTITY importFromNothing.label        "Ne uvozi ništa">
@@ -34,7 +36,7 @@
 <!ENTITY importFrom360se.label          "360 siguran preglednik">
 <!ENTITY importFrom360se.accesskey      "3">
 
-<!ENTITY noMigrationSources.label       "Niti jedan program koji sadrži zabilješke, povijest pretraživanja ili zaporke nije pronađen.">
+<!ENTITY noMigrationSources.label       "Niti jedan program koji sadrži zabilješke, povijest pretraživanja ili lozinke nije pronađen.">
 
 <!ENTITY importSource.title             "Uvezi postavke i podatke">
 <!ENTITY importItems.title              "Stavke za uvoz">

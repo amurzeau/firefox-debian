@@ -24,8 +24,8 @@ newtab-search-box-search-the-web-input =
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Adicionar mecanismo de pesquisa
-newtab-topsites-add-topsites-header = Novo site popular
-newtab-topsites-edit-topsites-header = Editar site popular
+newtab-topsites-add-topsites-header = Novo site preferido
+newtab-topsites-edit-topsites-header = Editar site preferido
 newtab-topsites-title-label = Título
 newtab-topsites-title-input =
     .placeholder = Digite um título
@@ -186,6 +186,7 @@ newtab-discovery-empty-section-topstories-timed-out = Opa! Nós quase carregamos
 newtab-pocket-read-more = Tópicos populares:
 newtab-pocket-more-recommendations = Mais recomendações
 newtab-pocket-whats-pocket = O que é { -pocket-brand-name }?
+newtab-pocket-learn-more = Saiba mais
 newtab-pocket-cta-button = Adicionar o { -pocket-brand-name }
 newtab-pocket-cta-text = Salve as histórias que você gosta no { -pocket-brand-name } e abasteça sua mente com leituras fascinantes.
 

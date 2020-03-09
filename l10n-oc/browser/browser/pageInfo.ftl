@@ -88,13 +88,13 @@ security-view-identity-domain =
 security-view-identity-verifier =
     .value = Verificat per :
 security-view-identity-validity =
-    .value = S'acabar lo
+    .value = S'acaba lo :
 security-view-privacy =
     .value = Vida privada e istoric
 security-view-privacy-history-value = Ai ja visitat aqueste site ?
 security-view-privacy-sitedata-value = Aqueste site web collècta d'informacions sus mon ordenador ?
 security-view-privacy-clearsitedata =
-    .label = Escafar los cookies e las donadas de site
+    .label = Escafar cookies e donadas de site
     .accesskey = E
 security-view-privacy-passwords-value = Ai enregistrat un senhal per aqueste site web ?
 security-view-privacy-viewpasswords =
@@ -149,6 +149,16 @@ media-unknown-not-cached =
 permissions-use-default =
     .label = Utilizar las valors per defaut
 security-no-visits = Non
+# This string is used to display the number of meta tags
+# in the General Tab
+# Variables:
+#   $tags (number) - The number of meta tags
+general-meta-tags =
+    .value =
+        { $tags ->
+            [one] Meta (1 balisa)
+           *[other] Meta ({ $tags } balisas)
+        }
 # This string is used to display the number of times
 # the user has visited the website prior
 # Variables:
@@ -166,8 +176,8 @@ security-visits-number =
 properties-general-size =
     .value =
         { $bytes ->
-            [one] { $kb } Ko ({ $bytes } octet)
-           *[other] { $kb } Ko ({ $bytes } octets)
+            [one] { $kb } Ko ({ $bytes } octet)
+           *[other] { $kb } Ko ({ $bytes } octets)
         }
 # This string is used to display the type of
 # an image
@@ -194,7 +204,7 @@ media-dimensions =
 # file in kilobytes
 # Variables:
 #   $size (number) - The size of the media file in kilobytes
-media-file-size = { $size } Ko
+media-file-size = { $size } Ko
 # This string is used to display the website name next to the
 # "Block Images" checkbox in the media tab
 # Variables:

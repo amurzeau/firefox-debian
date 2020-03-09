@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Ιδιωτική περιήγηση)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Ιδιωτική Περιήγηση)
+       *[other] { $title } - { -brand-full-name } (Ιδιωτική Περιήγηση)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Πληροφορίες ιστοσελίδας
 
@@ -56,6 +85,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Άνοιγμα πλαισίου μηνυμάτων
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Άνοιγμα πλαισίου αίτησης τοποθεσίας
+urlbar-xr-notification-anchor =
+    .tooltiptext = Άνοιγμα πίνακα δικαιωμάτων εικονικής πραγματικότητας
 urlbar-storage-access-anchor =
     .tooltiptext = Άνοιγμα πίνακα δικαιωμάτων δραστηριότητας περιήγησης
 urlbar-translate-notification-anchor =
@@ -80,6 +111,12 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Άνοιγμα πλαισίου μηνυμάτων εγκατάστασης προσθέτων
 urlbar-tip-help-icon =
     .title = Λάβετε βοήθεια
+urlbar-search-tips-confirm = Εντάξει, το 'πιασα
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = Συμβουλή:
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -93,6 +130,8 @@ urlbar-search-tips-redirect = Ξεκινήστε την αναζήτησή σα�
 
 urlbar-geolocation-blocked =
     .tooltiptext = Έχετε αποκλείσει τις πληροφορίες τοποθεσίας για αυτή την ιστοσελίδα.
+urlbar-xr-blocked =
+    .tooltiptext = Έχετε αποκλείσει την πρόσβαση συσκευών εικονικής πραγματικότητας για αυτή την ιστοσελίδα.
 urlbar-web-notifications-blocked =
     .tooltiptext = Έχετε αποκλείσει τις ειδοποιήσεις για αυτή την ιστοσελίδα.
 urlbar-camera-blocked =
@@ -113,6 +152,14 @@ urlbar-midi-blocked =
     .tooltiptext = Έχετε αποκλείσει την πρόσβαση MIDI για αυτή την ιστοσελίδα.
 urlbar-install-blocked =
     .tooltiptext = Έχετε αποκλείσει την εγκατάσταση προσθέτων για αυτή την ιστοσελίδα.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Επεξεργασία σελιδοδείκτη ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Προσθήκη στους σελιδοδείκτες ({ $shortcut })
 
 ## Page Action Context Menu
 
@@ -147,8 +194,11 @@ search-one-offs-context-open-new-tab =
     .label = Αναζήτηση σε νέα καρτέλα
     .accesskey = T
 search-one-offs-context-set-as-default =
-    .label = Ορισμός ως προκαθορισμένη μηχανή αναζήτησης
-    .accesskey = D
+    .label = Ορισμός ως προεπιλεγμένη μηχανή αναζήτησης
+    .accesskey = Ο
+search-one-offs-context-set-as-default-private =
+    .label = Ορίστε ως προεπιλεγμένη μηχανή αναζήτησης για ιδιωτικά παράθυρα
+    .accesskey = ι
 
 ## Bookmark Panel
 
@@ -184,6 +234,7 @@ identity-clear-site-data =
     .label = Διαγραφή cookies και δεδομένων ιστοσελίδων…
 identity-connection-not-secure-security-view = Η σύνδεσή σας σε αυτή την ιστοσελίδα δεν είναι ασφαλής.
 identity-connection-verified = Η σύνδεσή σας σε αυτή την ιστοσελίδα είναι ασφαλής.
+identity-ev-owner-label = Το πιστοποιητικό εκδόθηκε για:
 identity-description-custom-root = Η Mozilla δεν αναγνωρίζει αυτό τον εκδότη πιστοποιητικών. Ενδέχεται να έχει προστεθεί από το λειτουργικό σας σύστημα ή κάποιο διαχειριστή. <label data-l10n-name="link">Μάθετε περισσότερα</label>
 identity-remove-cert-exception =
     .label = Αφαίρεση εξαίρεσης

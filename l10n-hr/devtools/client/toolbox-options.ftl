@@ -29,7 +29,7 @@ options-context-inspector = Inspektor
 # The label for the checkbox option to show user agent styles
 options-show-user-agent-styles-label = Prikaz stilova preglednika
 options-show-user-agent-styles-tooltip =
-    .title = Uključivanje ove opcije će prikazati zadane stilove koje učitava preglednik.
+    .title = Uključivanjem ove opcije prikazat će se standardni stilovi koje učitava preglednik.
 # The label for the checkbox option to enable collapse attributes
 options-collapse-attrs-label = Skrati DOM atribute
 options-collapse-attrs-tooltip =
@@ -56,15 +56,15 @@ options-stylesheet-autocompletion-tooltip =
 ## Screenshot section
 
 # The heading
-options-screenshot-label = Način rada snimke zaslona
+options-screenshot-label = Način rada snimke ekrana
 # Label for the checkbox that toggles screenshot to clipboard feature
-options-screenshot-clipboard-label = Snimka zaslona u međuspremnik
+options-screenshot-clipboard-label = Snimka ekrana u međuspremnik
 options-screenshot-clipboard-tooltip =
-    .title = Sprema snimku zaslona izravno u međuspremnik
+    .title = Sprema snimku ekrana izravno u međuspremnik
 # Label for the checkbox that toggles the camera shutter audio for screenshot tool
 options-screenshot-audio-label = Pokreni zvuk okidača kamere
 options-screenshot-audio-tooltip =
-    .title = Omogućava zvuk okidača kamere pri snimanju zaslona
+    .title = Omogućava zvuk okidača kamere pri snimanju ekrana
 
 ## Editor section
 
@@ -94,9 +94,9 @@ options-disable-javascript-label = Onemogući JavaScript *
 options-disable-javascript-tooltip =
     .title = Isključivanje ove opcije će onemogućiti JavaScript za trenutnu karticu. Ako se kartica ili alatna traka zatvore, ova će postavka biti zaboravljena.
 # The label for checkbox that toggles chrome debugging, i.e. the devtools.chrome.enabled preference
-options-enable-chrome-label = Omogući chrome preglednika i alatne trake za otklanjanje grešaka u dodacima
+options-enable-chrome-label = Omogući chrome preglednika i alate za otklanjanje grešaka u dodacima
 options-enable-chrome-tooltip =
-    .title = Uključivanje ove opcije će omogućiti korištenje raznih razvojnih alata u kontekstu preglednika (putem Alati > Web razvijatelj > Alatna traka preglednika) i otklanjanje grešaka u dodacima putem upravljača dodataka.
+    .title = Uključivanje ove opcije će omogućiti korištenje raznih razvojnih alata u kontekstu preglednika (putem Alati > Web programer > Alati preglednika) i otklanjanje grešaka u dodacima putem upravljača dodataka.
 # The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
 options-enable-remote-label = Omogući udaljeno ispravljanje grešaka
 options-enable-remote-tooltip =
@@ -106,12 +106,7 @@ options-enable-service-workers-http-label = Uključi mogućnosti testiranja Serv
 options-enable-service-workers-http-tooltip =
     .title = Uključivanje ove opcije će omogućiti korištenje opcija testiranja service workera putem HTTP-a za sve kartice koje imaju otvorenu alatnu traku.
 # The message shown for settings that trigger page reload
-options-context-triggers-page-refresh = * Samo trenutna sesija, ponovno učitava stranicu
-
-##
-
-# The heading for the Debugger section
-options-debugger-label = Ispravljač grešaka
+options-context-triggers-page-refresh = * Samo trenutna sesija, ponovo učitava stranicu
 # The label for the checkbox that toggles the display of the platform data in the
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config
 options-show-platform-data-label = Prikaži podatke Gecko platforme

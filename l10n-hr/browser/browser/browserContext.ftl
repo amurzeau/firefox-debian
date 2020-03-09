@@ -65,6 +65,26 @@ toolbar-button-page-save =
 main-context-menu-bookmark-page =
     .aria-label = Zabilježi ovu stranicu
     .accesskey = Z
+main-context-menu-bookmark-add =
+    .aria-label = Zabilježi ovu stranicu
+    .accesskey = Z
+    .tooltiptext = Zabilježi ovu stranicu
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+main-context-menu-bookmark-add-with-shortcut =
+    .aria-label = Zabilježi ovu stranicu
+    .accesskey = Z
+    .tooltiptext = Zabilježi ovu stranicu ({ $shortcut })
+main-context-menu-bookmark-change =
+    .aria-label = Uredi ovu zabilješku
+    .accesskey = Z
+    .tooltiptext = Uredi ovu zabilješku
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+main-context-menu-bookmark-change-with-shortcut =
+    .aria-label = Uredi ovu zabilješku
+    .accesskey = Z
+    .tooltiptext = Uredi ovu zabilješku ({ $shortcut })
 main-context-menu-open-link =
     .label = Otvori poveznicu
     .accesskey = O
@@ -72,8 +92,8 @@ main-context-menu-open-link-new-tab =
     .label = Otvori poveznicu u novoj kartici
     .accesskey = t
 main-context-menu-open-link-container-tab =
-    .label = Otvaranje poveznice u novoj kontejnerskoj kartici
-    .accesskey = a
+    .label = Otvori poveznicu u kontejnerskoj kartici
+    .accesskey = k
 main-context-menu-open-link-new-window =
     .label = Otvori poveznicu u novom prozoru
     .accesskey = n
@@ -159,11 +179,11 @@ main-context-menu-media-hide-controls =
 ##
 
 main-context-menu-media-video-fullscreen =
-    .label = Potpuni zaslon
+    .label = Cjeloekranski prikaz
     .accesskey = o
 main-context-menu-media-video-leave-fullscreen =
-    .label = Napusti prikaz preko cijelog zaslona
-    .accesskey = u
+    .label = Izađi iz cjeloekranskog prikaza
+    .accesskey = c
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-pip =
@@ -235,6 +255,9 @@ main-context-menu-send-to-device =
 main-context-menu-view-background-image =
     .label = Pogledaj pozadinsku sliku
     .accesskey = P
+main-context-menu-generate-new-password =
+    .label = Koristi generiranu lozinku…
+    .accesskey = g
 main-context-menu-keyword =
     .label = Dodaj ključnu riječ za ovu pretragu …
     .accesskey = k
@@ -292,5 +315,5 @@ main-context-menu-inspect-element =
 main-context-menu-inspect-a11y-properties =
     .label = Ispitaj svojstva pristupačnosti
 main-context-menu-eme-learn-more =
-    .label = Saznaj više o DRM-u …
+    .label = Saznaj više o upravljanju digitalnim pravima …
     .accesskey = D

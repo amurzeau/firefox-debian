@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Navegacion privada)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Navegacion privada)
+       *[other] { $title } - { -brand-full-name } (Navegacion privada)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Afichar las entresenhas sul site internet
 
@@ -79,6 +108,11 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Obténer d’ajuda
 urlbar-search-tips-confirm = Òc, plan comprés
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = Astúcia :
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -92,6 +126,8 @@ urlbar-search-tips-redirect = Començatz vòstra recèrca aquí per far veire la
 
 urlbar-geolocation-blocked =
     .tooltiptext = Avètz blocat la geolocalizacion per aqueste site.
+urlbar-xr-blocked =
+    .tooltiptext = Avètz blocat l’accès als periferics de realitat virtuala per aqueste site web.
 urlbar-web-notifications-blocked =
     .tooltiptext = Avètz blocat las notificacions per aquel site.
 urlbar-camera-blocked =
@@ -110,6 +146,16 @@ urlbar-canvas-blocked =
     .tooltiptext = Avètz empachat aqueste site de traire d’informacions de canvas.
 urlbar-midi-blocked =
     .tooltiptext = Avètz blocat l’accès MIDI per aqueste site web.
+urlbar-install-blocked =
+    .tooltiptext = Avètz blocat l’installacion de moduls complementaris per aqueste site.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Modificar aqueste marcapagina ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Marcar aquesta pagina ({ $shortcut })
 
 ## Page Action Context Menu
 
@@ -146,6 +192,9 @@ search-one-offs-context-open-new-tab =
 search-one-offs-context-set-as-default =
     .label = Causir coma motor de cerca per defaut
     .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = Definir coma motor de recèrca per defaut en navegacion privada
+    .accesskey = p
 
 ## Bookmark Panel
 
@@ -168,6 +217,7 @@ identity-connection-internal = Aquò es una pagina segura de { -brand-short-name
 identity-connection-file = Aquela pagina es enregistrada dins vòstre ordinador.
 identity-extension-page = Aquela pagina es estada cargada d’una extension.
 identity-active-blocked = { -brand-short-name } a blocat d'elements pas segurs sus aquela pagina.
+identity-custom-root = Connexion verificada per un emissor de certificat pas reconegut per Mozilla.
 identity-passive-loaded = D'elements de la pagina son pas segurs (coma los imatges).
 identity-active-loaded = Avètz desactivat la proteccion sus aquela pagina.
 identity-weak-encryption = Aquela pagina utiliza un chiframent flac.

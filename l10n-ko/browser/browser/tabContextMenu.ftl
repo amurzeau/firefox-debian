@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 reload-tab =
-    .label = 탭 새로고침
+    .label = 탭 새로 고침
     .accesskey = R
 select-all-tabs =
     .label = 모든 탭 선택
@@ -21,14 +21,14 @@ close-other-tabs =
     .label = 다른 탭 모두 닫기
     .accesskey = o
 reload-tabs =
-    .label = 탭 새로고침
+    .label = 탭 새로 고침
     .accesskey = R
 pin-tab =
     .label = 탭 고정
     .accesskey = P
 unpin-tab =
-    .label = 일반 탭으로
-    .accesskey = b
+    .label = 탭 고정 해제
+    .accesskey = p
 pin-selected-tabs =
     .label = 탭 고정
     .accesskey = P
@@ -42,7 +42,7 @@ bookmark-tab =
     .label = 탭 북마크
     .accesskey = B
 reopen-in-container =
-    .label = 컨테이너에서 다시 열기
+    .label = 컨테이너에 다시 열기
     .accesskey = e
 move-to-start =
     .label = 처음으로 이동

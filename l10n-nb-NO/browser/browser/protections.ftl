@@ -42,7 +42,7 @@ protection-report-manage-protections = Behandle innstillinger
 graph-today = I dag
 # This string is used to describe the graph for screenreader users.
 graph-legend-description = En graf som inneholder det totale antallet for hver type av sporere som har blitt blokkert denne uken.
-social-tab-title = Sporere fra sosiale medier
+social-tab-title = Sporing via sosiale medier
 social-tab-contant = Sosiale nettverk plasserer sporere på andre nettsteder for å følge det du gjør og ser på nettet. Dette gjør at sosiale media-selskaper kan lære mer om deg utover det du deler på profilene dine på sosiale medier. <a data-l10n-name="learn-more-link">Les mer</a>
 cookie-tab-title = Sporingsinfokapsler på tvers av nettsteder
 cookie-tab-content = Disse infokapslene følger deg fra nettsted til nettsted for å samle inn data om hva du gjør på nettet. De er satt av tredjeparter som annonsører og analyseselskaper. Blokkering av sporingsinfokapsler på tvers av nettsteder reduserer antall annonser som følger deg. <a data-l10n-name="learn-more-link">Les mer</a>
@@ -59,6 +59,9 @@ lockwise-header-content-logged-in = Lagre passordene dine sikkert og synkroniser
 protection-report-view-logins-button = Vis innlogginger
     .title = Gå til lagrede innlogginger
 lockwise-no-logins-content = Få appen <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> for å ta passordene dine med overalt.
+lockwise-mobile-app-title = Ta med deg passordene dine overalt
+lockwise-no-logins-card-content = Bruk passord som er lagret i { -brand-short-name } på hvilken som helst enhet.
+lockwise-app-links = { -lockwise-brand-name } for <a data-l10n-name="lockwise-android-inline-link">Android</a> og <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
@@ -125,11 +128,11 @@ password-warning =
 ##   $percentage (Number) - Percentage this type of tracker contributes to the whole graph
 
 bar-tooltip-social =
-    .title = Sporere fra sosiale medier
+    .title = Sporere via sosiale medier
     .aria-label =
         { $count ->
-            [one] { $count } sporer fra sosiale medier ({ $percentage } %)
-           *[other] { $count } sporere fra sosiale medier ({ $percentage } %)
+            [one] { $count } sporer via sosiale medier ({ $percentage } %)
+           *[other] { $count } sporere via sosiale medier ({ $percentage } %)
         }
 bar-tooltip-cookie =
     .title = Sporingsinfokapsler på tvers av nettsteder

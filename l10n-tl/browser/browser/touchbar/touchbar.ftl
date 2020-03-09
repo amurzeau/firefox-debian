@@ -9,6 +9,7 @@ forward = Magpatuloy
 reload = I-Reload
 home = Home
 fullscreen = Buong Screen
+touchbar-fullscreen-exit = Umalis sa Fullscreen
 find = Hanapin
 new-tab = Bagong tab
 add-bookmark = Magdagdag ng bookmark
@@ -23,7 +24,7 @@ open-sidebar = Mga sidebar
 search-popover = Mga shortcut sa paghahanap
 # Describes searches limited to a specific scope
 # (e.g. searching only in history).
-search-search-in = Hanapin Sa:
+search-search-in = Hanapin sa:
 
 ## Various categories of shortcuts for search.
 
@@ -33,5 +34,5 @@ search-opentabs = Buksan ang mga Tab
 search-tags = Mga Tag
 search-titles = Mga Pamagat
 
-
+##
 

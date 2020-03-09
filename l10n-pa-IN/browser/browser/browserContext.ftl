@@ -65,6 +65,26 @@ toolbar-button-page-save =
 main-context-menu-bookmark-page =
     .aria-label = ਇਹ ਸਫ਼ੇ ਨੂੰ ਬੁੱਕਮਾਰਕ ਕਰੋ
     .accesskey = m
+main-context-menu-bookmark-add =
+    .aria-label = ਇਹ ਸਫ਼ੇ ਨੂੰ ਬੁੱਕਮਾਰਕ ਕਰੋ
+    .accesskey = m
+    .tooltiptext = ਇਹ ਸਫ਼ੇ ਨੂੰ ਬੁੱਕਮਾਰਕ ਕਰੋ
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+main-context-menu-bookmark-add-with-shortcut =
+    .aria-label = ਇਹ ਸਫ਼ੇ ਨੂੰ ਬੁੱਕਮਾਰਕ ਕਰੋ
+    .accesskey = m
+    .tooltiptext = ਇਹ ਸਫ਼ੇ ਨੂੰ ਬੁੱਕਮਾਰਕ ਕਰੋ ({ $shortcut })
+main-context-menu-bookmark-change =
+    .aria-label = ਇਹ ਬੁੱਕਮਾਰਕ ਨੂੰ ਸੋਧੋ
+    .accesskey = m
+    .tooltiptext = ਇਹ ਬੁੱਕਮਾਰਕ ਨੂੰ ਸੋਧੋ
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+main-context-menu-bookmark-change-with-shortcut =
+    .aria-label = ਇਹ ਬੁੱਕਮਾਰਕ ਨੂੰ ਸੋਧੋ
+    .accesskey = m
+    .tooltiptext = ਇਹ ਬੁੱਕਮਾਰਕ ਨੂੰ ਸੋਧੋ ({ $shortcut })
 main-context-menu-open-link =
     .label = ਲਿੰਕ ਨੂੰ ਖੋਲ੍ਹੋ
     .accesskey = O
@@ -235,6 +255,9 @@ main-context-menu-send-to-device =
 main-context-menu-view-background-image =
     .label = ਬੈਕਗਰਾਊਂਡ ਚਿੱਤਰ ਨੂੰ ਵੇਖੋ
     .accesskey = w
+main-context-menu-generate-new-password =
+    .label = …ਤਿਆਰ ਕੀਤਾ ਪਾਸਵਰਡ ਵਰਤੋਂ
+    .accesskey = G
 main-context-menu-keyword =
     .label = ਇਸ ਖੋਜ ਲਈ ਸ਼ਬਦ ਦਿਓ…
     .accesskey = K

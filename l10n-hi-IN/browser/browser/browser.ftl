@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (निजी ब्राउज़िंग)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (निजी ब्राउज़िंग)
+       *[other] { $title } - { -brand-full-name } (निजी ब्राउज़िंग)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = साइट की जानकारी देखें
 
@@ -80,6 +109,12 @@ urlbar-addons-notification-anchor =
     .tooltiptext = सहयुक्ति संस्थापन संदेश पटल खोलें
 urlbar-tip-help-icon =
     .title = सहायता प्राप्त करें
+urlbar-search-tips-confirm = ठीक है, समझ गया
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = सुझाव:
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -113,6 +148,14 @@ urlbar-midi-blocked =
     .tooltiptext = आपने इस वेबसाइट के लिए MIDI उपयोग अवरुद्ध कर दिया है.
 urlbar-install-blocked =
     .tooltiptext = आपने इस वेबसाइट के लिए ऐड-ऑन संस्थापन को अवरूद्ध कर दिया है।
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = यह बुकमार्क संपादित करें ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = यह पृष्ठ बुकमार्कित करें ({ $shortcut })
 
 ## Page Action Context Menu
 
@@ -168,6 +211,8 @@ bookmark-panel =
 
 ## Identity Panel
 
+identity-connection-not-secure = संपर्क सुरक्षित नहीं है
+identity-connection-secure = संपर्क सुरक्षित है
 identity-connection-internal = यह एक सुरक्षित { -brand-short-name } पेज हैं.
 identity-connection-file = यह पेज आपके कंप्यूटर में सहेजा जाता हैं.
 identity-extension-page = यह पृष्ठ एक्सटेंशन से लोड किया गया है.
@@ -176,10 +221,14 @@ identity-passive-loaded = इस पेज का भाग सुरक्ष�
 identity-active-loaded = आपने इस पेज पर सुरक्षा निष्क्रिय कर दिए हैं.
 identity-weak-encryption = यह पेज कमजोर गोपन का उपयोग करता हैं.
 identity-insecure-login-forms = इस पृष्ठ पर अंतरित लॉग-इन्स से समझौता किया जा सकता है.
+identity-permissions =
+    .value = अनुमतियां
 identity-permissions-reload-hint = बदलाव को लागु करने के लिए आपको पृष्ठ को फिर से लोड करने की आवश्यकता हैं.
 identity-permissions-empty = आपने इस साइट को कोई विशेष अनुमति नहीं दी है.‌‌‌
 identity-clear-site-data =
     .label = कूकीज़ तथा साइट डेटा हटायें…
+identity-connection-not-secure-security-view = आप इस साइट से सुरक्षित रूप से नहीं जुड़े हैं।
+identity-connection-verified = आप इस साइट से सुरक्षित रूप से जुड़े हैं।
 identity-remove-cert-exception =
     .label = अपवाद मिटाएँ
     .accesskey = R

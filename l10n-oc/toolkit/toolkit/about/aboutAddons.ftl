@@ -241,13 +241,28 @@ addon-open-about-debugging = Desbugar los moduls
 
 ## Extension shortcut management
 
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = Ja utilizat per { $addon }
 
 ## Recommended add-ons page
 
+discopane-notice-learn-more = Ne saber mai
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = per <a data-l10n-name="author">{ $author }</a>
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = Utilizaires : { $dailyUsers }
+install-extension-button = Apondre a { -brand-product-name }
 install-theme-button = Installar lo tèma
 # The label of the button that appears after installing an add-on. Upon click,
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = Gerir
+find-more-addons = Trobar mai de moduls
 # This is a label for the button to open the "more options" menu, it is only
 # used for screen readers.
 addon-options-button =
@@ -281,6 +296,7 @@ locale-enabled-heading = Activadas
 ask-to-activate-button = Demandar per activar
 always-activate-button = Totjorn activar
 never-activate-button = Activar pas jamai
+addon-detail-last-updated-label = Darrièra mesa a jorn
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
@@ -289,6 +305,8 @@ addon-name-disabled = { $name } (desactivat)
 ## Pending uninstall message bar
 
 addon-detail-updates-label = Permetre las mesas a jorn automaticas
+addon-detail-updates-radio-default = Defaut
+addon-detail-update-check-label = Recercar de mesas a jorn
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
@@ -298,6 +316,13 @@ addon-badge-private-browsing-allowed =
 addon-badge-private-browsing-allowed2 =
     .title = Autorizat en navegacion privada
     .aria-label = { addon-badge-private-browsing-allowed2.title }
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Recomandada
+    .alt = Recomandada
+recommended-extensions-heading = Extensions recomandadas
+recommended-themes-heading = Tèmas recomandats
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
 recommended-theme-1 = Vos sentissètz creatiu ?<a data-l10n-name="link">Creatz vòstre pròpri tèma amb Firefox Color.</a>
@@ -311,6 +336,7 @@ dictionary-heading = Gestion dels diccionaris
 locale-heading = Gestion de las lengas
 theme-heading-search-label = Trobar mai de tèmas
 extension-heading-search-label = Trobar mai d’extensions
+default-heading-search-label = Trobar mai de moduls
 addons-heading-search-input =
     .placeholder = Cercar sus addons.mozilla.org
 addon-page-options-button =

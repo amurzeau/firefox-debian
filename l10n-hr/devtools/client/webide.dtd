@@ -32,7 +32,7 @@
 <!ENTITY runtimeMenu_accesskey "R">
 <!ENTITY runtimeMenu_disconnect_label "Prekini vezu">
 <!ENTITY runtimeMenu_disconnect_accesskey "k">
-<!ENTITY runtimeMenu_takeScreenshot_label "Slika zaslona">
+<!ENTITY runtimeMenu_takeScreenshot_label "Snimka ekrana">
 <!ENTITY runtimeMenu_takeScreenshot_accesskey "S">
 <!ENTITY runtimeMenu_showDetails_label "Informacije o vremenu izvršavanja">
 <!ENTITY runtimeMenu_showDetails_accesskey "E">
@@ -107,7 +107,7 @@
 <!-- Prefs -->
 <!ENTITY prefs_title "Postavke">
 <!ENTITY prefs_editor_title "Uređivač">
-<!ENTITY prefs_general_title "Općenito">
+<!ENTITY prefs_general_title "Opće">
 <!ENTITY prefs_restore "Vrati zadano">
 <!ENTITY prefs_manage_components "Upravljanje dodatnim komponentama">
 <!ENTITY prefs_options_autoconnectruntime "Povezivanje na prijašnji runtime">
