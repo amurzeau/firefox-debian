@@ -53,8 +53,6 @@ onboarding-fullpage-form-email =
 onboarding-sync-welcome-header = Lleva a { -brand-product-name } contigo
 onboarding-sync-welcome-content = Accede a tus marcadores, historial, contraseñas y más ajustes en todos tus dispositivos.
 onboarding-sync-welcome-learn-more-link = Conoce más acerca de Firefox Accounts
-onboarding-sync-form-invalid-input = Se requiere un correo válido
-onboarding-sync-legal-notice = Al proceder, aceptas los <a data-l10n-name="terms">Términos del servicio</a> y la <a data-l10n-name="privacy">Política de privacidad</a>.
 onboarding-sync-form-input =
     .placeholder = Correo electrónico
 onboarding-sync-form-continue-button = Continuar
@@ -130,6 +128,9 @@ onboarding-send-tabs-title = Envíate pestañas al instante
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
 onboarding-send-tabs-text = Enviar pestañas comparte instantáneamente páginas entre tus dispositivos sin tener que copiar, pegar o abandonar el navegador.
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text2 = Comparte fácilmente páginas entre tus dispositivos sin tener que copiar, pegar o salir del navegador.
 onboarding-send-tabs-button = Empieza a usar Send Tabs
 onboarding-pocket-anywhere-title = Lee y escucha en cualquier lugar
 onboarding-pocket-anywhere-text2 = Guarda tu contenido favorito para disfrutarlo sin conexión con { -pocket-brand-name }. Lee, escucha y mira lo que quieras, cuando quieras.
@@ -137,9 +138,15 @@ onboarding-pocket-anywhere-button = Prueba { -pocket-brand-name }
 onboarding-lockwise-passwords-title = Lleva tus contraseñas a todas partes
 onboarding-lockwise-passwords-text2 = Mantén seguras tus contraseñas y accede con facilidad a tus cuentas con { -lockwise-brand-name }.
 onboarding-lockwise-passwords-button2 = Obtener la aplicación
+onboarding-lockwise-strong-passwords-title = Crea y almacena contraseñas fuertes
+onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } crea contraseñas fuertes en el acto y las guarda en un único lugar.
+onboarding-lockwise-strong-passwords-button = Administra tus inicios de sesión
 onboarding-facebook-container-title = Ponle límites a Facebook
 onboarding-facebook-container-text2 = { -facebook-container-brand-name } mantiene tu perfil separado de todo lo demás, dificultando que Facebook te dirija anuncios personalizados.
 onboarding-facebook-container-button = Añadir la extensión
+onboarding-import-browser-settings-title = Importa tus marcadores, contraseñas y más
+onboarding-import-browser-settings-text = Sumérgete por completo — lleva fácilmente tus sitios y configuraciones de Chrome contigo.
+onboarding-import-browser-settings-button = Importar datos de Chrome
 
 ## Message strings belonging to the Return to AMO flow
 

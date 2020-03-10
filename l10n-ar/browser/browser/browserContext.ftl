@@ -65,6 +65,26 @@ toolbar-button-page-save =
 main-context-menu-bookmark-page =
     .aria-label = علّم هذه الصفحة
     .accesskey = ه
+main-context-menu-bookmark-add =
+    .aria-label = علّم هذه الصفحة
+    .accesskey = ه
+    .tooltiptext = علّم هذه الصفحة
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+main-context-menu-bookmark-add-with-shortcut =
+    .aria-label = علّم هذه الصفحة
+    .accesskey = ه
+    .tooltiptext = علّم هذه الصفحة ({ $shortcut })
+main-context-menu-bookmark-change =
+    .aria-label = حرّر هذه العلامة
+    .accesskey = ه
+    .tooltiptext = حرّر هذه العلامة
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+main-context-menu-bookmark-change-with-shortcut =
+    .aria-label = حرّر هذه العلامة
+    .accesskey = ه
+    .tooltiptext = حرّر هذه العلامة ({ $shortcut })
 main-context-menu-open-link =
     .label = افتح الرابط
     .accesskey = ر
@@ -168,7 +188,7 @@ main-context-menu-media-video-leave-fullscreen =
 # content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-pip =
     .label = ڤديو معترِض
-    .accesskey = خ
+    .accesskey = ع
 main-context-menu-image-reload =
     .label = أعِد تحميل الصورة
     .accesskey = ع
@@ -235,6 +255,9 @@ main-context-menu-send-to-device =
 main-context-menu-view-background-image =
     .label = اعرض صورة الخلفية
     .accesskey = خ
+main-context-menu-generate-new-password =
+    .label = استعمل كلمة سرّ مولّدة…
+    .accesskey = د
 main-context-menu-keyword =
     .label = أضِف كلمة رئيسية لهذا البحث…
     .accesskey = ك

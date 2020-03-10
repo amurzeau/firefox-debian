@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Поверително разглеждане)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Поверително разглеждане)
+       *[other] { $title } - { -brand-full-name } (Поверително разглеждане)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Показване на информация за уеб страницата
 
@@ -113,6 +142,14 @@ urlbar-midi-blocked =
     .tooltiptext = Забранили сте на страницата достъп до MIDI.
 urlbar-install-blocked =
     .tooltiptext = Забранили сте на страницата да инсталира добавки.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Промяна на отметка ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Отмятане на страницата ({ $shortcut })
 
 ## Page Action Context Menu
 

@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (사생활 보호 모드)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (사생활 보호 모드)
+       *[other] { $title } - { -brand-full-name } (사생활 보호 모드)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = 사이트 정보 보기
 
@@ -79,17 +108,22 @@ urlbar-autoplay-notification-anchor =
 urlbar-persistent-storage-notification-anchor =
     .tooltiptext = 영구 저장소에 데이터를 저장
 urlbar-addons-notification-anchor =
-    .tooltiptext = 부가기능 설치 메시지 패널 열기
+    .tooltiptext = 부가 기능 설치 메시지 패널 열기
 urlbar-tip-help-icon =
     .title = 도움 받기
 urlbar-search-tips-confirm = 확인
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = 팁:
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
-urlbar-search-tips-onboard = 적게 입력, 많이 찾기: 주소창에서 바로 { $engineName } 검색어로 검색해 보세요.
+urlbar-search-tips-onboard = 적게 입력, 많이 찾기: 주소 표시줄에서 바로 { $engineName } 검색어로 검색해 보세요.
 urlbar-search-tips-redirect = { $engineName }의 제안과 방문 기록을 보려면 여기에서 검색을 시작하세요.
 
 ##
@@ -118,6 +152,14 @@ urlbar-midi-blocked =
     .tooltiptext = 이 사이트의 MIDI 접근을 차단하였습니다.
 urlbar-install-blocked =
     .tooltiptext = 이 사이트의 부가 기능 설치를 차단했습니다.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = 북마크 편집 ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = 이 페이지 북마크 ({ $shortcut })
 
 ## Page Action Context Menu
 
@@ -176,12 +218,12 @@ bookmark-panel =
 identity-connection-not-secure = 안전하지 않은 연결
 identity-connection-secure = 안전한 연결
 identity-connection-internal = 안전한 { -brand-short-name } 페이지입니다.
-identity-connection-file = 이 페이지는 사용자의 컴퓨터에 저장됩니다.
+identity-connection-file = 이 페이지는 컴퓨터에 저장되어 있습니다.
 identity-extension-page = 이 페이지는 확장 기능으로부터 로드되었습니다.
 identity-active-blocked = { -brand-short-name }가 안전하지 않은 페이지의 일부를 차단했습니다.
 identity-custom-root = Mozilla에서 인식하지 못하는 인증서 발급자가 연결을 확인했습니다.
 identity-passive-loaded = 페이지의 일부(이미지 등)가 안전하지 않습니다.
-identity-active-loaded = 이 페이지의 보호를 비활성화 하였습니다.
+identity-active-loaded = 이 페이지에서 보호를 비활성화 하셨습니다.
 identity-weak-encryption = 이 페이지는 약한 암호화를 사용합니다.
 identity-insecure-login-forms = 이 페이지에 입력된 로그인 정보는 노출될 수 있습니다.
 identity-permissions =
@@ -189,7 +231,7 @@ identity-permissions =
 identity-permissions-reload-hint = 변경 사항을 적용하려면 페이지를 다시 로드해야 할 수도 있습니다.
 identity-permissions-empty = 이 사이트를 특별한 권한으로 승인하지 않았습니다.
 identity-clear-site-data =
-    .label = 쿠키와 사이트 데이터 삭제…
+    .label = 쿠키 및 사이트 데이터 삭제…
 identity-connection-not-secure-security-view = 이 사이트에 안전하게 연결되어 있지 않습니다.
 identity-connection-verified = 이 사이트에 안전하게 연결되어 있습니다.
 identity-ev-owner-label = 인증서 발급 대상:
@@ -200,12 +242,12 @@ identity-remove-cert-exception =
 identity-description-insecure = 이 사이트의 연결이 보호되지 않습니다. 전송하는 정보(비밀번호, 메시지, 신용 카드 번호 등)를 다른사람이 볼 수 있습니다.
 identity-description-insecure-login-forms = 이 페이지에 입력한 로그인 정보는 안전하지 않고 손상될 수 있습니다.
 identity-description-weak-cipher-intro = 이 사이트의 연결이 약한 암호화를 사용하고 있어서 보호되지 않습니다.
-identity-description-weak-cipher-risk = 다른 사람이 정보를 보거나 웹사이트의 동작을 바꿀 수 있습니다.
+identity-description-weak-cipher-risk = 다른 사람이 정보를 보거나 웹 사이트의 동작을 바꿀 수 있습니다.
 identity-description-active-blocked = { -brand-short-name }가 안전하지 않은 페이지의 일부분을 차단했습니다. <label data-l10n-name="link">더 알아보기</label>
 identity-description-passive-loaded = 연결이 안전하지 않아서 사용자가 공유하는 정보를 다른 사람이 볼 수 있습니다.
-identity-description-passive-loaded-insecure = 이 웹사이트는 안전하지 않은 콘텐츠(이미지 등)을 포함하고 있습니다. <label data-l10n-name="link">더 알아보기</label>
+identity-description-passive-loaded-insecure = 이 웹 사이트는 안전하지 않은 콘텐츠(이미지 등)을 포함하고 있습니다. <label data-l10n-name="link">더 알아보기</label>
 identity-description-passive-loaded-mixed = { -brand-short-name }가 일부 콘텐츠를 차단했지만 아직 안전하지 않은 콘텐츠(이미지 등)가 있습니다. <label data-l10n-name="link">더 알아보기</label>
-identity-description-active-loaded = 이 웹사이트는 안전하지 않은 콘텐츠(스크립트 등)를 포함하고 있고 사용자의 연결이 보호되지 않습니다.
+identity-description-active-loaded = 이 웹 사이트는 안전하지 않은 콘텐츠(스크립트 등)를 포함하고 있고 사용자의 연결이 보호되지 않습니다.
 identity-description-active-loaded-insecure = 이 사이트에 공유하는 정보(비밀번호, 메시지, 신용 카드 번호 등)를 다른사람이 볼 수 있습니다.
 identity-learn-more =
     .value = 더 알아보기

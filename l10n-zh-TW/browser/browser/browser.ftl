@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (隱私瀏覽)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (隱私瀏覽)
+       *[other] { $title } - { -brand-full-name } (隱私瀏覽)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = 檢視網站資訊
 
@@ -83,13 +112,18 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = 取得幫助
 urlbar-search-tips-confirm = 好的，知道了
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = 秘訣:
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
-urlbar-search-tips-onboard = 打得更少，找到更多: 直接從網址列搜尋 { $engineName }。
+urlbar-search-tips-onboard = 打得更少，找到更多: 直接從網址列進行 { $engineName } 搜尋。
 urlbar-search-tips-redirect = 從此處進行搜尋，就可看見由 { $engineName } 及瀏覽紀錄提供的搜尋建議。
 
 ##
@@ -118,6 +152,14 @@ urlbar-midi-blocked =
     .tooltiptext = 您已封鎖此網站的 MIDI 存取權限。
 urlbar-install-blocked =
     .tooltiptext = 您已封鎖此網站安裝附加元件。
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = 編輯此書籤 ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = 將本頁加入書籤 ({ $shortcut })
 
 ## Page Action Context Menu
 

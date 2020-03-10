@@ -59,12 +59,12 @@ close-button =
 
 ## Browser Restart Dialog
 
-feature-enable-requires-restart = { -brand-short-name } se mora ponovno pokrenuti da bi se omogućila ova mogućnost.
-feature-disable-requires-restart = { -brand-short-name } se mora ponovno pokrenuti da bi se onemogućila ova mogućnost
-should-restart-title = Ponovno pokreni { -brand-short-name }
-should-restart-ok = Ponovno pokreni { -brand-short-name } sada
+feature-enable-requires-restart = { -brand-short-name } se mora ponovo pokrenuti da bi se omogućila ova funkcija.
+feature-disable-requires-restart = { -brand-short-name } se mora ponovo pokrenuti da bi se onemogućila ova funkcija.
+should-restart-title = Ponovo pokreni { -brand-short-name }
+should-restart-ok = Ponovo pokreni { -brand-short-name } sada
 cancel-no-restart-button = Otkaži
-restart-later = Ponovno pokreni poslije
+restart-later = Ponovo pokreni kasnije
 
 ## Extension Control Notifications
 ##
@@ -90,7 +90,7 @@ extension-controlled-web-notifications = Dodatak, <img data-l10n-name="icon"/> {
 extension-controlled-default-search = Dodatak <img data-l10n-name="icon"/> { $name } je postavio tvoju standardnu tražilicu.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = Dodatak, <img data-l10n-name="icon"/> { $name }, zahtijeva sadržajne kartice.
+extension-controlled-privacy-containers = Dodatak, <img data-l10n-name="icon"/> { $name }, zahtijeva kontejnerske kartice.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Dodatak, <img data-l10n-name="icon"/> { $name }, kontrolira ovu postavku.
@@ -166,31 +166,31 @@ browser-containers-learn-more = Saznaj više
 browser-containers-settings =
     .label = Postavke…
     .accesskey = t
-containers-disable-alert-title = Zatvori sve sadržajne kartice?
+containers-disable-alert-title = Zatvoriti sve kontejnerske kartice?
 containers-disable-alert-desc =
     { $tabCount ->
-        [one] Ukoliko sada onemogućite sadržajne kartice, { $tabCount } sadržajna kartica biti će zatvorena. Jeste li sigurni da želite onemogućiti sadržajne kartice?
-        [few] Ukoliko sada onemogućite sadržajne kartice, { $tabCount } sadržajne kartice biti će zatvorene. Jeste li sigurni da želite onemogućiti sadržajne kartice?
-       *[other] Ukoliko sada onemogućite sadržajne kartice, { $tabCount } sadržajnih kartica biti će zatvoreno. Jeste li sigurni da želite onemogućiti sadržajne kartice?
+        [one] Ako sad deaktiviraš kontejnerske kartice, zatvorit će se { $tabCount } kontejnerska kartica. Zaista želiš deaktivirati kontejnerske kartice?
+        [few] Ako sad deaktiviraš kontejnerske kartice, zatvorit će se { $tabCount } kontejnerske kartice. Zaista želiš deaktivirati kontejnerske kartice?
+       *[other] Ako sad deaktiviraš kontejnerske kartice, zatvorit će se { $tabCount } kontejnerskih kartica. Zaista želiš deaktivirati kontejnerske kartice?
     }
 containers-disable-alert-ok-button =
     { $tabCount ->
-        [one] Zatvori { $tabCount } sadržajnu karticu
-        [few] Zatvori { $tabCount } sadržajne kartice
-       *[other] Zatvori { $tabCount } sadržajnih kartica
+        [one] Zatvori { $tabCount } kontejnersku karticu
+        [few] Zatvori { $tabCount } kontejnerske kartice
+       *[other] Zatvori { $tabCount } kontejnerskih kartica
     }
 containers-disable-alert-cancel-button = Drži omogućeno
-containers-remove-alert-title = Ukloni ovaj spremnik?
+containers-remove-alert-title = Ukloniti ovaj kontejner?
 # Variables:
 #   $count (Number) - Number of tabs that will be closed.
 containers-remove-alert-msg =
     { $count ->
-        [one] Ukoliko sada uklonite ovaj spremnik, { $count } sadržajna kartica biti će zatvorena. Jeste li sigurni da želite ukloniti ovaj spremnik?
-        [few] Ukoliko sada uklonite ovaj spremnik, { $count } sadržajne kartice biti će zatvorene. Jeste li sigurni da želite ukloniti ovaj spremnik?
-       *[other] Ukoliko sada uklonite ovaj spremnik, { $count } sadržajnih kartica biti će zatvoreno. Jeste li sigurni da želite ukloniti ovaj spremnik?
+        [one] Ako sad ukloniš kontejnerske kartice, zatvorit će se { $count } kontejnerska kartica. Zaista želiš ukloniti kontejnerske kartice?
+        [few] Ako sad ukloniš kontejnerske kartice, zatvorit će se { $count } kontejnerske kartice. Zaista želiš ukloniti kontejnerske kartice?
+       *[other] Ako sad ukloniš kontejnerske kartice, zatvorit će se { $count } kontejnerskih kartica. Zaista želiš ukloniti kontejnerske kartice?
     }
-containers-remove-ok-button = Ukloni ovaj spremnik
-containers-remove-cancel-button = Nemoj ukloniti ovaj spremnik
+containers-remove-ok-button = Ukloni ovaj kontejner
+containers-remove-cancel-button = Nemoj ukloniti ovaj kontejner
 
 ## General Section - Language & Appearance
 
@@ -207,7 +207,7 @@ colors-settings =
     .label = Boje …
     .accesskey = B
 # Zoom is a noun, and the message is used as header for a group of options
-preferences-zoom-header = Zumiraj
+preferences-zoom-header = Zumiranje
 preferences-default-zoom = Standardni postotak zumiranja
     .accesskey = z
 preferences-default-zoom-value =
@@ -224,8 +224,8 @@ choose-browser-language-description = Odaberite jezik koji će se koristiti za p
 manage-browser-languages-button =
     .label = Postavi alternative…
     .accesskey = l
-confirm-browser-language-change-description = Ponovno pokrenite { -brand-short-name } da biste primijenili ove izmjene
-confirm-browser-language-change-button = Primjeni i ponovno pokreni
+confirm-browser-language-change-description = Ponovo pokreni { -brand-short-name } za spremanje ove promjene
+confirm-browser-language-change-button = Primjeni i ponovo pokreni
 translate-web-pages =
     .label = Prevedi web sadržaj
     .accesskey = P
@@ -408,7 +408,7 @@ browsing-use-smooth-scrolling =
     .label = Koristi uglađeno klizanje
     .accesskey = u
 browsing-use-onscreen-keyboard =
-    .label = Prikaži tipkovnicu na zaslonu kad je potrebno
+    .label = Prikaži tipkovnicu na ekranu kad je potrebno
     .accesskey = k
 browsing-use-cursor-navigation =
     .label = Uvijek koristi tipke pokazivača za navigaciju unutar stranica
@@ -557,7 +557,7 @@ search-choose-engine-column =
 search-choose-keyword-column =
     .label = Ključna riječ
 search-restore-default =
-    .label = Vrati zadane pretraživače
+    .label = Obnovi standardne tražilice
     .accesskey = d
 search-remove-engine =
     .label = Ukloni
@@ -580,10 +580,13 @@ containers-back-button =
             [windows] Nazad na Mogućnosti
            *[other] Nazad na Mogućnosti
         }
-containers-header = Sadržajne kartice
+containers-header = Kontejnerske kartice
 containers-add-button =
-    .label = Dodaj novi spremnik
+    .label = Dodaj novi kontejner
     .accesskey = a
+containers-new-tab-check =
+    .label = Odaberite kontejner za svaku novu karticu
+    .accesskey = s
 containers-preferences-button =
     .label = Postavke
 containers-remove-button =
@@ -632,9 +635,9 @@ sync-sign-out =
 sync-manage-account = Upravljanje računom
     .accesskey = u
 sync-signedin-unverified = { $email } nije potvrđen.
-sync-signedin-login-failure = Za ponovno povezivanje, pokušajte se ponovno prijaviti { $email }
+sync-signedin-login-failure = Prijavi se za ponovno povezivanje s { $email }
 sync-resend-verification =
-    .label = Ponovno pošalji potvrdu
+    .label = Ponovo pošalji potvrdu
     .accesskey = d
 sync-remove-account =
     .label = Ukloni račun
@@ -722,7 +725,7 @@ sync-engine-prefs =
             [windows] Mogućnosti
            *[other] Postavke
         }
-    .tooltiptext = Općenite, privatne i sigurnosne postavke koje ste promijenili
+    .tooltiptext = Opće, privatne i sigurnosne postavke koje si promijenio/la
     .accesskey = s
 
 ## The device name controls.
@@ -764,7 +767,7 @@ forms-generate-passwords =
     .label = Predloži i generiraj jake lozinke
     .accesskey = g
 forms-breach-alerts =
-    .label = Prikaži upozorenja o lozinkama za zlonamjerne web stranice
+    .label = Prikaži upozorenja o lozinkama za hakirane web stranice
     .accesskey = u
 forms-breach-alerts-learn-more-link = Saznaj više
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
@@ -1005,7 +1008,7 @@ permissions-notification-settings =
     .accesskey = o
 permissions-notification-link = Saznaj više
 permissions-notification-pause =
-    .label = Pauziraj obavijesti dok se { -brand-short-name } ponovno ne pokrene
+    .label = Pauziraj obavijesti dok se { -brand-short-name } ponovo ne pokrene
     .accesskey = n
 permissions-block-autoplay-media2 =
     .label = Blokiraj automatsku reprodukciju zvuka na web stranicama
@@ -1046,7 +1049,7 @@ collection-health-report =
     .accesskey = r
 collection-health-report-link = Saznaj više
 collection-studies =
-    .label = Dopusti { -brand-short-name }u da instalira i pokreće  studije
+    .label = Dozvoli { -brand-short-name }u instalirati i pokrenuti studije
 collection-studies-link = Pregledajte { -brand-short-name } studije
 addon-recommendations =
     .label = Dopusiti { -brand-short-name } da radi presonalizirane preporuke dodataka
@@ -1112,8 +1115,8 @@ space-alert-over-5gb-pref-button =
         }
 space-alert-over-5gb-message =
     { PLATFORM() ->
-        [windows] { -brand-short-name } ostaje bez dovoljno diskovnog prostora. Sadržaj web stranica se možda neće ispravno prikazati. Možete očistiti pohranjene podatke u Mogućnosti > Privatnost i sigurnost > Kolačići i podaci stranica.
-       *[other] { -brand-short-name } ostaje bez dovoljno diskovnog prostora. Sadržaj web stranica se možda neće ispravno prikazati. Možete očistiti pohranjene podatke u Mogućnosti > Privatnost i sigurnost > Kolačići i podaci stranica.
+        [windows] { -brand-short-name }u ponestaje diskovnog prostora. Sadržaj web stranica se možda neće ispravno prikazati. Možeš očistiti spremljene podatke u Mogućnosti > Privatnost i sigurnost > Kolačići i podaci stranica.
+       *[other] { -brand-short-name }u ponestaje diskovnog prostora. Sadržaj web stranica se možda neće ispravno prikazati. Možeš očistiti spremljene podatke u Postavke > Privatnost i sigurnost > Kolačići i podaci stranica.
     }
 space-alert-under-5gb-ok-button =
     .label = U redu, razumijem

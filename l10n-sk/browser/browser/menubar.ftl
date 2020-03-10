@@ -156,7 +156,7 @@ menu-view-full-screen =
     .label = Na celú obrazovku
     .accesskey = c
 
-
+##
 
 menu-view-show-all-tabs =
     .label = Zobraziť všetky karty
@@ -192,6 +192,10 @@ menu-bookmarks-menu =
     .accesskey = o
 menu-bookmarks-show-all =
     .label = Zobraziť všetky záložky
+menu-bookmark-this-page =
+    .label = Pridať stránku medzi záložky
+menu-bookmark-edit =
+    .label = Upraviť túto záložku
 menu-bookmarks-all-tabs =
     .label = Pridať všetky karty medzi záložky…
 menu-bookmarks-toolbar =

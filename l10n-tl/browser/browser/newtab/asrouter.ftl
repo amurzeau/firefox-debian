@@ -116,6 +116,11 @@ cfr-whatsnew-lockwise-take-title = Dalhin kahit saan ang iyong mga password
 cfr-whatsnew-lockwise-take-body = Hinahayaan ka ng { -lockwise-brand-short-name } mobile app na ligtas na ma-access kahit saan ang iyong mga naka-backup na mga password.
 cfr-whatsnew-lockwise-take-link-text = Kunin ang app
 
+## Search Bar
+
+cfr-whatsnew-searchbar-title = Mag-type nang mas kaunti at maghanap nang mas marami sa address bar
+cfr-whatsnew-searchbar-icon-alt-text = Magnifying glass icon
+
 ## Picture-in-Picture
 
 cfr-whatsnew-pip-header = Manood ng mga video habang ikaw ay nagba-browse
@@ -130,6 +135,15 @@ cfr-whatsnew-permission-prompt-cta = Alamin
 
 ## Fingerprinter Counter
 
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Naharang na Fingerprinter
+       *[other] Naharang na mga Fingerprinter
+    }
+cfr-whatsnew-fingerprinter-counter-body = Hinaharang ng { -brand-shorter-name } ang maraming mga fingerprinter na palihim na nangangalap ng impormasyon tungkol sa iyong device at mga pagkilos para gumawa ng isang advertising profile tungkol sa iyo.
 # Message variation when fingerprinters count is less than 10
 cfr-whatsnew-fingerprinter-counter-header-alt = Mga Fingerprinter
 cfr-whatsnew-fingerprinter-counter-body-alt = Maaaring harangan ng { -brand-shorter-name } ang mga fingerprinter na palihim na nangangalap ng impormasyon ukol sa iyong device at mga action para gumawa ng iyong advertising profile.
@@ -169,7 +183,7 @@ cfr-doorhanger-socialtracking-ok-button = Tingnan ang mga Proteksyon
     .accesskey = P
 cfr-doorhanger-socialtracking-close-button = Isara
     .accesskey = C
-cfr-doorhanger-socialtracking-dont-show-again = Huwag na muling ipakita ang mga mensaheng gaya nito
+cfr-doorhanger-socialtracking-dont-show-again = Huwag na pakita ang mga mensahe na ganito
     .accesskey = H
 cfr-doorhanger-socialtracking-heading = Pinigilan ng { -brand-short-name } ang isang social network na sundan ka rito
 cfr-doorhanger-socialtracking-description = Mahalaga ang iyong privacy. Hinaharang na ngayon ng { -brand-short-name } ang mga karaniwang social media tracker, nililimitahan kung gaano karaming data ang pwede nilang kolektahin patungkol sa mga gawain mo online.

@@ -21,10 +21,13 @@ onboarding-button-label-get-started = Per començar
 onboarding-welcome-header = La benvenguda a { -brand-short-name }
 onboarding-welcome-modal-supercharge-body = Maximalizatz vòstra proteccion privada.
 onboarding-welcome-form-header = Començatz aquí
+onboarding-join-form-header = Rejonhètz { -brand-product-name }
 onboarding-join-form-email =
     .placeholder = Picatz una adreça electronica
 onboarding-join-form-email-error = Cal una adreça electronica valida
 onboarding-join-form-continue = Contunhar
+# This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
+onboarding-join-form-signin-label = Avètz ja un compte ?
 # Text for link to submit the sign in form
 onboarding-join-form-signin = Connectatz-vos
 onboarding-start-browsing-button-label = Començar de navegar
@@ -55,8 +58,13 @@ onboarding-sync-form-sub-header = per contunhar amb { -sync-brand-name }.
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
+onboarding-benefit-knowledge-title = Coneissenças practicas
+onboarding-benefit-privacy-title = Vertadièra vida privada
+onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = Emportatz vòstres marcapaginas, senhals, istoric e mai pertot ont utilizatz { -brand-product-name }.
 onboarding-benefit-monitor-title = { -monitor-brand-short-name }
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }{ -lockwise-brand-short-name }{ -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = Gerissètz vòstres senhals protegits e portables.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -75,11 +83,26 @@ onboarding-ghostery-title = Ghostery
 onboarding-fxa-title = Sincronizar
 onboarding-tracking-protection-title2 = Proteccion contra lo seguiment
 onboarding-tracking-protection-button2 = Cossí fonciona
+onboarding-data-sync-title = Emportatz vòstres paramètres pertot
+onboarding-data-sync-button2 = Se connectar a { -sync-brand-short-name }
+onboarding-firefox-monitor-title = Siatz al fial de las pèrdas de donadas
+onboarding-firefox-monitor-text = { -monitor-brand-name } verifica se vòstra adreça electronica fa part d’una pèrda de donadas e vos avisa se apareis dins de pèrdas posterioras.
+onboarding-firefox-monitor-button = S’abonar a las alèrtas
+onboarding-browse-privately-title = Navegatz d’un biais privat
+onboarding-browse-privately-text = La navegacion privada escafa vòstre istoric de recèrcas e de navegacion per los gardar secrets de monde qu’utilizan vòstre ordenador.
 onboarding-browse-privately-button = Dobrir una fenèstra de navegacion privada
+onboarding-firefox-send-title = Gardatz privats los fichièrs que partejatz
 onboarding-firefox-send-button = Ensajatz { -send-brand-name }
+# "Mobile" is short for mobile/cellular phone, "Browser" is short for web
+# browser.
+onboarding-mobile-phone-button = Telecargar lo navegador mobil
 onboarding-pocket-anywhere-button = Ensajar { -pocket-brand-name }
+onboarding-lockwise-passwords-title = Emportatz vòstres senhals pertot
 onboarding-lockwise-passwords-button2 = Obténer l’aplicacion
+onboarding-lockwise-strong-passwords-title = Creatz e gardatz de senhals fòrts.
+onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } crèa de senhals fòrts sul pic e los garda en un sòl lòc.
 onboarding-lockwise-strong-passwords-button = Gerir vòstres identificants
+onboarding-facebook-container-title = Botatz de limitas amb Facebook
 onboarding-facebook-container-button = Apondre l’extension
 onboarding-import-browser-settings-title = Importatz vòstres marcapaginas, senhals, e encara mai
 onboarding-import-browser-settings-button = Importar las donadas de Chrome

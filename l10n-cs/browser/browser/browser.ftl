@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Anonymní prohlížení)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Anonymní prohlížení)
+       *[other] { $title } - { -brand-full-name } (Anonymní prohlížení)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Zobrazit informace o stránce
 
@@ -83,13 +112,18 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Získat pomoc
 urlbar-search-tips-confirm = Ok, rozumím
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = Tip:
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
-urlbar-search-tips-onboard = Méně psaní, více výsledků: používejte { $engineName } přímo z vašeho adresního řádku.
+urlbar-search-tips-onboard = Méně psaní, více výsledků: používejte { $engineName } přímo z adresního řádku.
 urlbar-search-tips-redirect = Zadejte vyhledávaný text a uvidíte návrhy z vyhledávače { $engineName } a vaší historie prohlížení.
 
 ##
@@ -118,6 +152,14 @@ urlbar-midi-blocked =
     .tooltiptext = Tomuto serveru jste zablokovali přístup k MIDI zařízením.
 urlbar-install-blocked =
     .tooltiptext = Tomuto serveru jste zablokovali instalaci doplňků.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Upraví tuto záložku ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Přidá tuto stránku do záložek ({ $shortcut })
 
 ## Page Action Context Menu
 

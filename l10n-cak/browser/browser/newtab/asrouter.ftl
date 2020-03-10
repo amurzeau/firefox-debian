@@ -9,7 +9,7 @@ cfr-doorhanger-extension-heading = Chilab'en K'amal
 cfr-doorhanger-feature-heading = Chilab'en Samaj
 cfr-doorhanger-pintab-heading = Tatojtob'ej rere': Pin Tab
 
-
+##
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Aruma nintz'ët re'
@@ -121,6 +121,15 @@ cfr-whatsnew-lockwise-take-body =
     Ri { -lockwise-brand-short-name } oyonib'äl chokoy nuya' q'ij chawe ütz yatok pa ri
     jikomal taq kiwachib'enik ewan atzij xab'akuchi.
 cfr-whatsnew-lockwise-take-link-text = Tak'ulu' ri chokoy
+
+## Search Bar
+
+cfr-whatsnew-searchbar-title = Katz'ib'an jub'a', tawila' k'ïy rik'in ri rukajtz'ik ochochib'äl
+# Variables:
+#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
+cfr-whatsnew-searchbar-body-enginename = Katok pa ri taq ruxaq junelïk ye'atz'ët rik'in xa jun pitz'oj pa ri rukajtz'ik ochochib'äl. Aninäq ke'awila' ri taq wachib'äl rik'in ri rilon ri { $searchEngineName } chuqa' ri runatab'al awokem pa k'amaya'l.
+cfr-whatsnew-searchbar-body-generic = Katok pa ri taq ruxaq junelïk ye'atz'ët rik'in xa jun pitz'oj pa ri rukajtz'ik ochochib'äl. Aninäq ke'awila' ri taq wachib'äl rik'in ri rilon ri runatab'al awokem pa k'amaya'l.
+cfr-whatsnew-searchbar-icon-alt-text = Ruwachib'al tzub'äl
 
 ## Picture-in-Picture
 

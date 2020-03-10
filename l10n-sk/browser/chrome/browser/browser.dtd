@@ -113,6 +113,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY enterFullScreenCmd.accesskey "c">
 <!ENTITY exitFullScreenCmd.label "Ukončiť režim celej obrazovky">
 <!ENTITY exitFullScreenCmd.accesskey "c">
+
 <!ENTITY fullScreenCmd.label "Na celú obrazovku">
 <!ENTITY fullScreenCmd.accesskey "c">
 <!ENTITY fullScreenCmd.macCommandKey "f">
@@ -175,7 +176,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.accountSettings.label "Nastavenia účtu">
 <!ENTITY fxa.menu.manageAccount2.label "Spravovať účet">
 <!ENTITY fxa.menu.signOut.label "Odhlásiť sa…">
-<!ENTITY fxa.menu.deviceSettings.label "Nastavenia zariadenia">
 <!ENTITY fxa.menu.setupSync.label "Nastaviť službu &syncBrand.shortName.label;…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
@@ -246,6 +246,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY stopCmd.accesskey            "s">
 
 <!ENTITY stopCmd.macCommandKey        ".">
+
 <!ENTITY goEndCap.tooltip             "Prejsť na adresu zadanú v paneli s adresou">
 <!ENTITY printButton.label            "Tlačiť">
 <!ENTITY printButton.tooltip          "Umožní vytlačiť túto stránku">
@@ -498,6 +499,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY moreMenu.label "Viac">
 
 <!ENTITY openCmd.commandkey           "l">
+
 <!ENTITY urlbar.placeholder2          "Zadajte adresu alebo výraz vyhľadávania">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
@@ -631,6 +633,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisLinkCmd.accesskey  "i">
 <!ENTITY bookmarkThisFrameCmd.label      "Vytvoriť záložku pre tento rámec">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "V">
+
 <!ENTITY pageAction.copyLink.label    "Kopírovať odkaz">
 
 <!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
@@ -644,9 +647,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY emailPageCmd.label           "Odoslať odkaz…">
 <!ENTITY emailPageCmd.accesskey       "l">
-<!-- alternate for content area context menu -->
 <!ENTITY savePageCmd.label            "Uložiť stránku ako…">
 <!ENTITY savePageCmd.accesskey        "r">
+<!-- alternate for content area context menu -->
 <!ENTITY savePageCmd.accesskey2       "U">
 <!-- alternate for content area context menu -->
 <!ENTITY savePageCmd.commandkey       "s">
@@ -862,7 +865,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; zablokoval nezabezpečené časti tejto stránky.">
 <!ENTITY identity.passiveLoaded "Časti tejto stránky nie sú zabezpečené (napr. obrázky).">
-<!ENTITY identity.activeLoaded "Na tejto stránke ste vypli Ochranu pred sledovaním.">
+<!ENTITY identity.activeLoaded "Na tejto stránke ste vypli ochranu pred sledovaním.">
 <!ENTITY identity.weakEncryption "Táto stránka používa slabé šifrovanie.">
 
 <!-- Strings for connection state warnings in the subview. -->
@@ -938,11 +941,15 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      The "Allowed" header also includes a "Why?" link that, when hovered, shows
      a tooltip explaining why these items were not blocked in the page. -->
 <!ENTITY protections.notBlocking.why.label "Prečo?">
+<!ENTITY protections.notBlocking.why.etpOn.tooltip "Blokovanie týchto prvkov môže ovplyvniť fungovanie niektorých webových stránok. Bez sledovacích prvkov nemusia niektoré tlačidlá alebo formuláre správne fungovať.">
 <!ENTITY protections.notBlocking.why.etpOff2.tooltip "Všetky sledovacie prvky na tejto stránke boli načítané, pretože ochrana je vypnutá.">
 <!ENTITY protections.noTrackersFound.description "Aplikácia &brandShortName; nenašla na tejto stránke žiadne známe sledovacie prvky.">
 
 <!ENTITY protections.crossSiteTrackingCookies.description "Tieto cookies slúžia na vaše sledovanie naprieč webovými stránkami a na zber údajov o tom, čo na internete robíte. Používajú ich tretie strany, ako sú reklamné či analytické spoločnosti.">
 <!ENTITY protections.cryptominers.description "Ťažba kryptomien používa výpočtový výkon vášho počítača na získavanie digitálnych mien. Bežiace skripty vybíjajú vašu batériu, spomaľujú váš počítač a zvyšujú váš účet za elektrinu.">
+<!ENTITY protections.fingerprinters.description "Zberom informácií o vašom prehliadači a počítači je možné vytvoriť unikátny odtlačok, ktorý je potom možné použiť na vaše sledovanie naprieč rôznymi webovými stránkami.">
+<!ENTITY protections.trackingContent2.description "Webové stránky môžu načítať externé reklamy a ďalší obsah, ktorý obsahuje sledovací kód. Po zablokovaní sledovacieho obsahu sa stránky načítajú rýchlejšie, ale niektoré tlačidlá alebo formuláre nemusia správne fungovať.">
+<!ENTITY protections.socialMediaTrackers.description "Sociálne siete umiestňujú na webové stránky sledovacie prvky, ktoré sledujú, čo na internete robíte. Toto umožňuje spoločnostiam, ktoré tieto sociálne médiá vlastnia dozvedieť sa o vás viac ako to, čo zdieľate na svojich profiloch.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -1007,6 +1014,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.learnMore "Ďalšie informácie">
 
 <!ENTITY contentBlocking.breakageReportView.title "Nahlásiť nefunkčnú stránku">
+<!ENTITY contentBlocking.breakageReportView3.description "Blokovanie obsahu môže spôsobovať problémy s webovými stránkami. Ich nahlásením významne pomôžete aplikácii &brandShortName; sa neustále zlepšovať. S vašim hlásením sa Mozille odošle URL adresa stránky a informácie o vašom nastavení blokovania obsahu.">
 <!ENTITY contentBlocking.breakageReportView2.learnMore "Ďalšie informácie">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "Adresa URL">
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "Aké ste mali problémy? (nepovinné)">

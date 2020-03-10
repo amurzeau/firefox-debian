@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (निजी ब्राउजिङ्ग)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (निजी ब्राउजिङ्ग)
+       *[other] { $title } - { -brand-full-name } (निजी ब्राउजिङ्ग)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = साइट जानकारी हेर्नुहोस्
 
@@ -72,6 +101,15 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = डाटालाई लगातार भण्डारणमा राख्नुहोस्
 urlbar-addons-notification-anchor =
     .tooltiptext = एडअन स्थापना सन्देश प्यानल खोल्नुहोस्
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = तपाईँले यो वेबसाइटको लागि स्थान जानकारी अवरुद्ध गर्नु भएको छ।
 urlbar-web-notifications-blocked =
@@ -90,6 +128,14 @@ urlbar-canvas-blocked =
     .tooltiptext = तपाईँले यो वेबसाइटको लागि क्यानभस डाटाको निकास अवरुद्ध गर्नु भएको छ।
 urlbar-midi-blocked =
     .tooltiptext = तपाईँले यो वेबसाइटको लागि MIDI अवरुद्ध गर्नु भएको छ।
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = यस ({ $shortcut }) पुस्तकचिनोलाई सम्पादन गर्नुहोस्
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = यस पृष्ठ ({ $shortcut }) मा पुस्तकचिनो लगाउनुहोस्
 
 ## Page Action Context Menu
 

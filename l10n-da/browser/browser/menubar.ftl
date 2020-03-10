@@ -2,6 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 ## File Menu
 
 menu-file =
@@ -60,27 +61,6 @@ menu-file-go-offline =
 menu-edit =
     .label = Rediger
     .accesskey = R
-menu-edit-undo =
-    .label = Fortryd
-    .accesskey = F
-menu-edit-redo =
-    .label = Gendan
-    .accesskey = G
-menu-edit-cut =
-    .label = Klip
-    .accesskey = K
-menu-edit-copy =
-    .label = Kopier
-    .accesskey = o
-menu-edit-paste =
-    .label = Indsæt
-    .accesskey = I
-menu-edit-delete =
-    .label = Slet
-    .accesskey = S
-menu-edit-select-all =
-    .label = Marker alt
-    .accesskey = a
 menu-edit-find-on =
     .label = Find på denne side…
     .accesskey = d
@@ -120,9 +100,6 @@ menu-view-full-zoom-enlarge =
 menu-view-full-zoom-reduce =
     .label = Zoom ud
     .accesskey = u
-menu-view-full-zoom-reset =
-    .label = Nulstil
-    .accesskey = N
 menu-view-full-zoom-actual-size =
     .label = Faktisk størrelse
     .accesskey = F
@@ -191,6 +168,10 @@ menu-bookmarks-menu =
     .accesskey = B
 menu-bookmarks-show-all =
     .label = Vis alle bogmærker
+menu-bookmark-this-page =
+    .label = Bogmærk denne side
+menu-bookmark-edit =
+    .label = Rediger bogmærke
 menu-bookmarks-all-tabs =
     .label = Bogmærk alle faneblade…
 menu-bookmarks-toolbar =

@@ -53,7 +53,7 @@ abuse-report-messagebar-action-remove-extension = Da, ukloni
 abuse-report-messagebar-action-keep-extension = Ne, zadržat ću
 abuse-report-messagebar-action-remove-theme = Da, ukloni
 abuse-report-messagebar-action-keep-theme = Ne, zadržat ću
-abuse-report-messagebar-action-retry = Pokušaj ponovno
+abuse-report-messagebar-action-retry = Pokušaj ponovo
 abuse-report-messagebar-action-cancel = Odustani
 
 ## Abuse report reasons (optionally paired with related examples and/or suggestions)
@@ -67,7 +67,7 @@ abuse-report-spam-example = Primjer: Umeće reklame na web stranice
 abuse-report-settings-reason = Promijenio je moj pretraživač, početnu stranicu ili novu karticu bez da me obavijestio ili pitao za dopuštenje
 abuse-report-settings-reason-v2 = Promijenilo je moju tražilicu, početnu stranicu ili novu karticu bez obavještavanja ili traženja dopuštenja
 abuse-report-settings-suggestions = Prije prijave dodatka, možete pokušati izmijeniti svoje postavke:
-abuse-report-settings-suggestions-search = Izmijenite svoje zadane postavke pretraživanja
+abuse-report-settings-suggestions-search = Promijeni svoje standardne postavke za pretraživanje
 abuse-report-settings-suggestions-homepage = Izmijenite svoju početnu stranicu ili novu karticu
 abuse-report-deceptive-reason = Pretvara se da je nešto što nije
 abuse-report-deceptive-reason-v2 = Tvrdi da je nešto što nije
@@ -78,13 +78,13 @@ abuse-report-broken-reason-extension-v2 = Ne radi, slama web-stranice ili uspora
 abuse-report-broken-reason-theme-v2 = Ne radi ili slama prikaz preglednika
 abuse-report-broken-example = Primjer: Značajke su spore, teško ih je koristiti ili ne rade, dijelovi web stranica se ne žele učitati ili izgledaju kako ne bi trebali
 abuse-report-broken-suggestions-extension =
-    Zvuči kao da ste pronašli pogrešku u programu. Uz slanje prijave ovdje, najbolji način
-    za rješavanje problema s funkcionalnosti je da kontaktirate razvijatelja dodatka.
-    <a data-l10n-name="support-link">Posjetite web stranicu dodatka</a> kako biste pronašli informacije o razvijatelju.
+    Zvuči kao da si našao/la grešku. Pored slanja prijave ovdje, najbolji način
+    za rješavanje funkcionalnih problema je da kontaktiraš programera dodatka.
+    <a data-l10n-name="support-link">Posjeti web stranicu dodatka</a> te potraži informacije o programeru.
 abuse-report-broken-suggestions-theme =
-    Zvuči kao da ste pronašli pogrešku u programu. Uz slanje prijave ovdje, najbolji način
-    za rješavanje problema s funkcionalnosti je da kontaktirate razvijatelja motiva.
-    <a data-l10n-name="support-link">Posjetite web stranicu motiva</a> kako biste pronašli informacije o razvijatelju.
+    Zvuči kao da si našao/la grešku. Pored slanja prijave ovdje, najbolji način
+    za rješavanje funkcionalnih problema je da kontaktiraš programera dodatka.
+    <a data-l10n-name="support-link">Posjeti web stranicu motiva</a> te potraži informacije o programeru.
 abuse-report-policy-reason = Sadržaj mržnje, nasilja ili ilegalni
 abuse-report-policy-reason-v2 = Sadrži mržnju, nasilan ili ilegalan sadržaj
 abuse-report-policy-suggestions =

@@ -3,12 +3,12 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 sanitize-prefs =
-    .title = 방문 기록 삭제 설정
+    .title = 기록 삭제 설정
     .style = width: 34em
 sanitize-prefs-style =
     .style = width: 17em
 dialog-title =
-    .title = 최근 방문 기록 삭제
+    .title = 최근 기록 삭제
     .style = width: 34em
 # When "Time range to clear" is set to "Everything", this message is used for the
 # title instead of dialog-title.
@@ -44,7 +44,7 @@ clear-time-duration-suffix =
 ## These strings are used as section comments and checkboxes
 ## to select the items to remove
 
-history-section-label = 방문 기록
+history-section-label = 기록
 item-history-and-downloads =
     .label = 방문 및 다운로드 기록
     .accesskey = B
@@ -52,13 +52,13 @@ item-cookies =
     .label = 쿠키
     .accesskey = C
 item-active-logins =
-    .label = 현재 로그인
+    .label = 활성 로그인
     .accesskey = L
 item-cache =
     .label = 캐시
     .accesskey = a
 item-form-search-history =
-    .label = 폼 입력 및 검색 기록
+    .label = 양식 및 검색 기록
     .accesskey = F
 data-section-label = 데이터
 item-site-preferences =
@@ -79,7 +79,7 @@ sanitize-button-clearing =
 # Warning that appears when "Time range to clear" is set to "Everything" in Clear
 # Recent History dialog, provided that the user has not modified the default set
 # of history items to clear.
-sanitize-everything-warning = 모든 방문 기록이 삭제됩니다.
+sanitize-everything-warning = 모든 기록이 삭제됩니다.
 # Warning that appears when "Time range to clear" is set to "Everything" in Clear
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.

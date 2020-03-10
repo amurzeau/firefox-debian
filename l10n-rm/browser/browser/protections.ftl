@@ -15,8 +15,8 @@ graph-week-summary =
 # earliest date recorded in the database.
 graph-total-tracker-summary =
     { $count ->
-        [one] <b>{ $count }</b> fastizader bloccà dapi { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
-       *[other] <b>{ $count }</b> fastizaders bloccads dapi { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+        [one] <b>{ $count }</b> fastizader bloccà dapi ils { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+       *[other] <b>{ $count }</b> fastizaders bloccads dapi ils { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
     }
 # Text displayed instead of the graph when in Private Mode
 graph-private-window = { -brand-short-name } cuntinuescha a bloccar fastizaders en fanestras privatas ma na registrescha betg tge ch'è vegnì bloccà.
@@ -59,13 +59,16 @@ lockwise-header-content-logged-in = Memorisescha e sincronisescha a moda segira 
 protection-report-view-logins-button = Mussar las infurmaziuns d'annunzia
     .title = Avrir las datas d'annunzia memorisadas
 lockwise-no-logins-content = Va per l'app <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> per prender cun tai ils pleds-clav dapertut.
+lockwise-mobile-app-title = Prenda tes pleds-clav adina cun tai
+lockwise-no-logins-card-content = Dovra ils pleds-clav memorisads en { -brand-short-name } sin mintga apparat.
+lockwise-app-links = { -lockwise-brand-name } per <a data-l10n-name="lockwise-android-inline-link">Android</a> ed <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 lockwise-passwords-stored =
     { $count ->
         [one] Pled-clav memorisà a moda segira <a data-l10n-name="lockwise-how-it-works">Co quai funcziunescha</a>
-       *[other] Pleds-clav memorisà a moda segira <a data-l10n-name="lockwise-how-it-works">Co quai funcziunescha</a>
+       *[other] Pleds-clav memorisads a moda segira <a data-l10n-name="lockwise-how-it-works">Co quai funcziunescha</a>
     }
 turn-on-sync = Activar { -sync-brand-short-name }…
     .title = Acceder a las preferenzas da sync

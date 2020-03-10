@@ -9,7 +9,7 @@ cfr-doorhanger-extension-heading = Jepysokue jeroviaháva
 cfr-doorhanger-feature-heading = Tembiapoite ñe’ẽporãpyre
 cfr-doorhanger-pintab-heading = Eipuru kóva: Emboja tendayke
 
-
+##
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Mba’ére ahechahína kóva
@@ -117,6 +117,15 @@ cfr-whatsnew-lockwise-backup-link-text = Emyandy ñongatujo’a
 cfr-whatsnew-lockwise-take-title = Egueraha ne ñe’ẽñemi nendive
 cfr-whatsnew-lockwise-take-body = Pe tembipuru’i oku’éva { -lockwise-brand-short-name } omoneĩ eikévo tekorosãme nde ñe’ẽñemi ñongatupyrépe oimeraẽva tenda guive.
 cfr-whatsnew-lockwise-take-link-text = Eguereko tembipuru'i
+
+## Search Bar
+
+cfr-whatsnew-searchbar-title = Ehai sa’ive, ejuhuve kundaharape renda ndive
+# Variables:
+#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
+cfr-whatsnew-searchbar-body-enginename = Eike umi tenda eipuruvévape eikutúvo kundahára renda. Ejuhu pya’eve eipotáva { $searchEngineName } ndive ha nde kundahára rembiasakue.
+cfr-whatsnew-searchbar-body-generic = Eike umi tenda eipuruvévape eikutúvo kundahára renda. Ejuhu pya’eve kuaapyre ndive ha nde kundahára rembiasakue.
+cfr-whatsnew-searchbar-icon-alt-text = Mbotuichaha ra’ãnga’i
 
 ## Picture-in-Picture
 

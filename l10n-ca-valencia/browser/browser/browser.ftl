@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Navegació privada)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Navegació privada)
+       *[other] { $title } - { -brand-full-name } (Navegació privada)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Mostra la informació del lloc
 
@@ -113,6 +142,14 @@ urlbar-midi-blocked =
     .tooltiptext = Heu blocat l'accés MIDI per a este lloc web.
 urlbar-install-blocked =
     .tooltiptext = Heu blocat la instal·lació de complements per a este lloc web.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Edita l'adreça d'interés ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Afig la pàgina a les adreces d'interés ({ $shortcut })
 
 ## Page Action Context Menu
 

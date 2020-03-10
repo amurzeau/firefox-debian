@@ -65,6 +65,26 @@ toolbar-button-page-save =
 main-context-menu-bookmark-page =
     .aria-label = 为此网页添加书签
     .accesskey = m
+main-context-menu-bookmark-add =
+    .aria-label = 为此网页添加书签
+    .accesskey = m
+    .tooltiptext = 为此页添加书签
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+main-context-menu-bookmark-add-with-shortcut =
+    .aria-label = 为此网页添加书签
+    .accesskey = m
+    .tooltiptext = 为此页添加书签 ({ $shortcut })
+main-context-menu-bookmark-change =
+    .aria-label = 编辑此书签
+    .accesskey = m
+    .tooltiptext = 编辑此书签
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+main-context-menu-bookmark-change-with-shortcut =
+    .aria-label = 编辑此书签
+    .accesskey = m
+    .tooltiptext = 编辑此书签 ({ $shortcut })
 main-context-menu-open-link =
     .label = 打开链接
     .accesskey = O
@@ -290,7 +310,7 @@ main-context-menu-bidi-switch-page =
     .label = 切换页面方向
     .accesskey = D
 main-context-menu-inspect-element =
-    .label = 查看元素
+    .label = 检查元素
     .accesskey = Q
 main-context-menu-inspect-a11y-properties =
     .label = 检查无障碍环境属性

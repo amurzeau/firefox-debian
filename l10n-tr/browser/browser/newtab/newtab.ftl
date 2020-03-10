@@ -125,6 +125,10 @@ newtab-label-removed-bookmark = Yer imi silindi
 newtab-label-recommended = Popüler
 newtab-label-saved = { -pocket-brand-name }’a kaydedildi
 newtab-label-download = İndirildi
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } · Sponsorlu
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -178,6 +182,7 @@ newtab-discovery-empty-section-topstories-timed-out = Hata! Bu bölüm tam olara
 newtab-pocket-read-more = Popüler konular:
 newtab-pocket-more-recommendations = Daha fazla öneri
 newtab-pocket-whats-pocket = { -pocket-brand-name } nedir?
+newtab-pocket-learn-more = Daha fazla bilgi al
 newtab-pocket-cta-button = { -pocket-brand-name }’ı edinin
 newtab-pocket-cta-text = Sevdiğiniz yazıları { -pocket-brand-name }’a kaydedin, aklınız okumaya değer şeylerle doldurun.
 

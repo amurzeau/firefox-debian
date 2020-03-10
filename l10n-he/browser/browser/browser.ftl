@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (גלישה פרטית)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (גלישה פרטית)
+       *[other] { $title } - { -brand-full-name } (גלישה פרטית)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = הצגת נתוני אתר
 
@@ -118,6 +147,14 @@ urlbar-midi-blocked =
     .tooltiptext = חסמת גישת MIDI עבור אתר זה.
 urlbar-install-blocked =
     .tooltiptext = חסמת התקנת תוספות עבור אתר זה.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = עריכת סימנייה זו ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = יצירת סימנייה לדף זה ({ $shortcut })
 
 ## Page Action Context Menu
 

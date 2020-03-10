@@ -45,9 +45,6 @@ newtab-topsites-save-button = Sàbhail
 newtab-topsites-preview-button = Ro-shealladh
 newtab-topsites-add-button = Cuir ris
 
-## Top Sites - Delete history confirmation dialog. 
-
-
 ## Top Sites - Delete history confirmation dialog.
 
 newtab-confirm-delete-history-p1 = A bheil thu cinnteach gu bheil thu airson gach ionstans na duilleige seo a sguabadh às an eachdraidh agad?
@@ -83,14 +80,30 @@ newtab-menu-delete-history = Sguab às an eachdraidh
 newtab-menu-save-to-pocket = Sàbhail ann am { -pocket-brand-name }
 newtab-menu-delete-pocket = Air a sguabadh à { -pocket-brand-name }
 newtab-menu-archive-pocket = Tasglannaich ann am { -pocket-brand-name }
+newtab-menu-show-privacy-info = Na sponsairean againn ⁊ do phrìobhaideachd
+
+## Message displayed in a modal window to explain privacy and provide context for sponsored content.
+
+newtab-privacy-modal-button-done = Deiseil
+newtab-privacy-modal-header = Tha do phrìobhaideachd cudromach.
+newtab-privacy-modal-paragraph =
+    A bharrachd air naidheachdan inntinneach, seallaidh sinn susbaint làn-
+    sgrùdaichte o sponsairean àraidh dhut. Na gabh dragh, chan fhalbh an dàta
+    brabhsaidh agad am { -brand-product-name } agad fhèin uair sam bith – chan fhaic sinn e
+    agus chan fhaic na sponsairean againn e nas mò.
+newtab-privacy-modal-paragraph-2 =
+    A bharrachd air naidheachdan inntinneach, seallaidh sinn susbaint làn-
+    sgrùdaichte o sponsairean àraidh dhut. Na gabh dragh, <strong>chan fhalbh an dàta
+    brabhsaidh agad am { -brand-product-name } agad fhèin uair sam bith</strong> – chan fhaic sinn e
+    agus chan fhaic na sponsairean againn e nas mò.
+newtab-privacy-modal-link = Fiosraich mar a dh’obraicheas a’ phrìobhaideachd san taba ùr
+
+##
+
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = Thoir an comharra-lìn air falbh
 # Bookmark is a verb here.
 newtab-menu-bookmark = Comharra-lìn
-
-## Context Menu - Downloaded Menu. "Download" in these cases is not a verb, 
-## it is a noun. As in, "Copy the link that belongs to this downloaded item".
-
 
 ## Context Menu - Downloaded Menu. "Download" in these cases is not a verb,
 ## it is a noun. As in, "Copy the link that belongs to this downloaded item".
@@ -116,13 +129,14 @@ newtab-menu-open-file = Fosgail faidhle
 
 newtab-label-visited = Na thadhail thu air
 newtab-label-bookmarked = ’Nan comharran-lìn
+newtab-label-removed-bookmark = Chaidh an comharra-lìn a thoirt air falbh
 newtab-label-recommended = A’ treandadh
 newtab-label-saved = Air a shàbhaladh ann am { -pocket-brand-name }
 newtab-label-download = Air a luchdadh a-nuas
-
-## Section Menu: These strings are displayed in the section context menu and are 
-## meant as a call to action for the given section.
-
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } · Sponsairichte
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -163,6 +177,8 @@ newtab-empty-section-topstories = Sin na naidheachdan uile o { $provider } an-dr
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
+newtab-discovery-empty-section-topstories-header = Chan eil naidheachd eile ann!
+newtab-discovery-empty-section-topstories-content = Till an-seo an ceann greis airson barrachd naidheachdan.
 newtab-discovery-empty-section-topstories-try-again-button = Feuch ris a-rithist
 newtab-discovery-empty-section-topstories-loading = ’Ga luchdadh…
 # Displays when a layout in a section took too long to fetch articles.
@@ -173,7 +189,8 @@ newtab-discovery-empty-section-topstories-timed-out = Ìoc, tha sinn cha mhòr a
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Cuspairean fèillmhor:
 newtab-pocket-more-recommendations = Barrachd mholaidhean
-newtab-pocket-how-it-works = Mar a dh’obraicheas e
+newtab-pocket-whats-pocket = Dè tha ann am { -pocket-brand-name }?
+newtab-pocket-learn-more = Barrachd fiosrachaidh
 newtab-pocket-cta-button = Faigh { -pocket-brand-name }
 newtab-pocket-cta-text = Sàbhail na sgeulachdan as fhearr leat ann am { -pocket-brand-name } is faigh toileachas inntinn san leughadh.
 

@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Privatno pregledavanje)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Privatno pregledavanje)
+       *[other] { $title } - { -brand-full-name } (Privatno pregledavanje)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Prikaži informacije o stranici
 
@@ -77,12 +106,17 @@ urlbar-web-rtc-share-devices-notification-anchor =
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Otvori ploču za automatsku reprodukciju
 urlbar-persistent-storage-notification-anchor =
-    .tooltiptext = Trajno pohranjuj podatke
+    .tooltiptext = Trajno sprema podatke
 urlbar-addons-notification-anchor =
     .tooltiptext = Otvori ploču s informacijama o instaliranim dodacima
 urlbar-tip-help-icon =
     .title = Potražite pomoć
 urlbar-search-tips-confirm = U redu, razumijem
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = Savjet:
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -107,7 +141,7 @@ urlbar-microphone-blocked =
 urlbar-screen-blocked =
     .tooltiptext = Ovoj si stranici zabranio/la dijeljenje tvog ekrana.
 urlbar-persistent-storage-blocked =
-    .tooltiptext = Ovoj ste stranici zabranili mogućnost trajne pohrane podataka.
+    .tooltiptext = Za ovu stranicu si blokirao/la trajno spremanje podataka.
 urlbar-popup-blocked =
     .tooltiptext = Blokirali ste pop-up prozore za ovu web stranicu.
 urlbar-autoplay-media-blocked =
@@ -118,6 +152,14 @@ urlbar-midi-blocked =
     .tooltiptext = Blokirali ste MIDI pristup za ovu web stranicu.
 urlbar-install-blocked =
     .tooltiptext = Ovoj stranici ste zabranili instalaciju dodataka.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Uredi ovu zabilješku ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Zabilježi ovu stranicu ({ $shortcut })
 
 ## Page Action Context Menu
 
@@ -134,8 +176,8 @@ full-screen-autohide =
     .label = Sakrij alatne trake
     .accesskey = k
 full-screen-exit =
-    .label = Izađi iz prikaza potpunog ekrana
-    .accesskey = p
+    .label = Izađi iz cjeloekranskog prikaza
+    .accesskey = c
 
 ## Search Engine selection buttons (one-offs)
 
@@ -186,14 +228,14 @@ identity-weak-encryption = Ova stranica koristi slabu enkripciju.
 identity-insecure-login-forms = Prijave na ovoj stranici mogu biti kompromitirane.
 identity-permissions =
     .value = Dozvole
-identity-permissions-reload-hint = Trebali biste ponovno osvježiti stranicu radi primjene izmjena.
+identity-permissions-reload-hint = Trebali biste ponovo osvježiti stranicu radi primjene izmjena.
 identity-permissions-empty = Ovoj stranici niste dali nikakva posebna dopuštenja.
 identity-clear-site-data =
     .label = Obriši kolačiće i podatke stranice…
 identity-connection-not-secure-security-view = Nisi sigurno povezan/a na ovu stranicu.
 identity-connection-verified = Sigurno si povezan/a na ovu stranicu.
 identity-ev-owner-label = Certifikat izdan za:
-identity-description-custom-root = Mozilla ne prepoznaje ovog izdavatelja certifikata. Možda je dodan iz tvog operacijskog sustava ili od strane administratora. <label data-l10n-name="link">Saznaj više</label>
+identity-description-custom-root = Mozilla ne prepoznaje ovog izdavatelja certifikata. Možda ga je dodao tvoj operacijski sustav ili administrator. <label data-l10n-name="link">Saznaj više</label>
 identity-remove-cert-exception =
     .label = Ukloni iznimku
     .accesskey = U

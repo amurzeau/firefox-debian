@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (مرور ناشناس)‏
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (مرور ناشناس)‏
+       *[other] { $title } - { -brand-full-name } (مرور ناشناس)‏
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = نمایش اطلاعات سایت
 
@@ -113,6 +142,14 @@ urlbar-midi-blocked =
     .tooltiptext = شما دسترسی این وب‌سایت به MIDI را مسدود کرده‌اید.
 urlbar-install-blocked =
     .tooltiptext = شما نصب افزونه‌ها از طریق این وب‌سایت را مسدود کرده‌اید.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = ویرایش این نشانک ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = نشانک‌گذاری این صفحه({ $shortcut })
 
 ## Page Action Context Menu
 

@@ -133,6 +133,10 @@ newtab-label-removed-bookmark = Закладка удалена
 newtab-label-recommended = Популярные
 newtab-label-saved = Сохранено в { -pocket-brand-name }
 newtab-label-download = Загружено
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } · На правах рекламы
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -186,6 +190,7 @@ newtab-discovery-empty-section-topstories-timed-out = Ой! Мы почти за
 newtab-pocket-read-more = Популярные темы:
 newtab-pocket-more-recommendations = Ещё рекомендации
 newtab-pocket-whats-pocket = Что такое { -pocket-brand-name }?
+newtab-pocket-learn-more = Подробнее
 newtab-pocket-cta-button = Загрузить { -pocket-brand-name }
 newtab-pocket-cta-text = Сохраняйте интересные статьи в { -pocket-brand-name } и подпитывайте свой ум увлекательным чтением.
 

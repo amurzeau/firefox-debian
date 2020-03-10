@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (ખાનગી બ્રાઉઝીંગ)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (ખાનગી બ્રાઉઝીંગ)
+       *[other] { $title } - { -brand-full-name } (ખાનગી બ્રાઉઝીંગ)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = સાઇટની માહિતી જુઓ
 
@@ -109,6 +138,14 @@ urlbar-canvas-blocked =
     .tooltiptext = તમે આ વેબસાઇટ માટે કેનવાસ ડેટા નિષ્કર્ષણને અવરોધિત કર્યો છે.
 urlbar-midi-blocked =
     .tooltiptext = તમે આ વેબસાઇટ માટે MIDI ઍક્સેસને અવરોધિત કરી છે.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = આ બુકમાર્ક ({ $shortcut }) માં ફેરફાર કરો
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = આ પાનાં ({ $shortcut }) ને બુકમાર્ક કરો
 
 ## Page Action Context Menu
 

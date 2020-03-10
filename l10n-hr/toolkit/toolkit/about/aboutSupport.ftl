@@ -60,9 +60,9 @@ app-basics-launcher-process-status = Pokretački proces
 app-basics-multi-process-support = Više procesni prozori
 app-basics-remote-processes-count = Udaljeni procesi
 app-basics-enterprise-policies = Pravila poduzeća
-app-basics-location-service-key-google = Google Location Service Key
-app-basics-safebrowsing-key-google = Google Safebrowsing Key
-app-basics-key-mozilla = Mozilla Location Service Key
+app-basics-location-service-key-google = Google ključ za usluge lokacije
+app-basics-safebrowsing-key-google = Google ključ za sigurno pregledavanje
+app-basics-key-mozilla = Mozilla ključ za usluge lokacije
 app-basics-safe-mode = Sigurni način rada
 show-dir-label =
     { PLATFORM() ->
@@ -89,30 +89,32 @@ graphics-crash-guards-title = Onemogućene značajke čuvara rušenja
 graphics-workarounds-title = Zaobilazna rješenja
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Protokol prozora
+# Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
+graphics-desktop-environment = Radno okruženje
 place-database-title = Baza podataka mjesta
 place-database-integrity = Cjelovitost
 place-database-verify-integrity = Provjeri cjelovitost
 js-title = JavaScript
-js-incremental-gc = Inkrementalni GC
+js-incremental-gc = Inkrementalno sakupljanje smeća (GC)
 a11y-title = Pristupačnost
 a11y-activated = Aktivirano
 a11y-force-disabled = Onemogući pristupačnost
-a11y-handler-used = Korišteni rukovatelj pristupnosti
-a11y-instantiator = Accessibility Instantiator
+a11y-handler-used = Korišteni upravljač pristupačnosti
+a11y-instantiator = Pokretač pristupačnosti
 library-version-title = Inačice biblioteke
 copy-text-to-clipboard-label = Kopiraj tekst u međuspremnik
 copy-raw-data-to-clipboard-label = Kopiraj neobrađene podatke u međuspremnik
-sandbox-title = Sandbox
-sandbox-sys-call-log-title = Odbijeni sistemski pozivi
+sandbox-title = Odvojeno pokretanje
+sandbox-sys-call-log-title = Odbijeni pozivi sustava
 sandbox-sys-call-index = #
 sandbox-sys-call-age = prije nekoliko sekundi
 sandbox-sys-call-pid = PID
 sandbox-sys-call-tid = TID
-sandbox-sys-call-proc-type = Tip procesa
-sandbox-sys-call-number = Syscall
+sandbox-sys-call-proc-type = Vrsta procesa
+sandbox-sys-call-number = Poziv sustava
 sandbox-sys-call-args = Argumenti
 safe-mode-title = Pokušaj siguran način rada
-restart-in-safe-mode-label = Ponovno pokreni s isključenim dodacima…
+restart-in-safe-mode-label = Ponovo pokreni s isključenim dodacima …
 
 ## Media titles
 
@@ -134,7 +136,7 @@ media-device-rate = Stopa
 media-device-latency = Latencija
 media-capabilities-title = Mogućnosti medija
 # List all the entries of the database.
-media-capabilities-enumerate = Označite bazu podataka
+media-capabilities-enumerate = Popis unosa baze podataka
 
 ##
 
@@ -214,7 +216,7 @@ blocked-os-version = Blokirano za inačicu vašeg operativnog sustava.
 blocked-mismatched-version = Blokiran jer se inačice upravljačkog programa vaše grafičke kartice ne podudaraju u registru i DLL-u.
 # Variables
 # $driverVersion - The graphics driver version string
-try-newer-driver = Blokirano za inačicu upravljačnog programa vaše grafičke kartice. Pokušajte nadograditi upravljački program grafičke kartice na inačicu { $driverVersion } ili noviju.
+try-newer-driver = Blokirano za verziju upravljačkog programa grafičke kartice. Pokušaj nadograditi upravljački program grafičke kartice na verziju { $driverVersion } ili noviju.
 # "ClearType" is a proper noun and should not be translated. Feel free to leave English strings if
 # there are no good translations, these are only used in about:support
 clear-type-parameters = ClearType parametri
@@ -232,8 +234,8 @@ virtual-monitor-disp = Prikaz virtualnog monitora
 
 found = Pronađeno
 missing = Nedostaje
-gpu-process-pid = GPUProcessPid
-gpu-process = GPUProcess
+gpu-process-pid = Pid procesa grafičke procesorske jedinice
+gpu-process = Proces grafičke procesorske jedinice
 gpu-description = Opis
 gpu-vendor-id = ID proizvođača
 gpu-device-id = ID uređaja
@@ -244,20 +246,20 @@ gpu-driver-vendor = Izdavatelj upravljačkog programa
 gpu-driver-version = Inačica upravljačkog programa
 gpu-driver-date = Datum upravljačkog programa
 gpu-active = Aktivan
-webgl1-wsiinfo = WebGL 1 WSI informacije upravljačkog programa
-webgl1-renderer = WebGL 1 Renderer upravljačkog programa
-webgl1-version = WebGL 1 inačica upravljačkog programa
-webgl1-driver-extensions = WebGL 1 dodaci upravljačkog programa
+webgl1-wsiinfo = WSI informacije upravljačkog programa WebGL 1
+webgl1-renderer = Iscrtavač upravljačkog programa WebGL 1
+webgl1-version = Verzija upravljačkog programa WebGL 1
+webgl1-driver-extensions = Dodaci upravljačkog programa WebGL 1
 webgl1-extensions = WebGL 1 dodaci
-webgl2-wsiinfo = WebGL 2 WSI informacije upravljačkog programa
-webgl2-renderer = WebGL 2 Renderer upravljačkog programa
-webgl2-version = WebGL 2 inačica upravljačkog programa
-webgl2-driver-extensions = WebGL 2 dodaci upravljačkog programa
+webgl2-wsiinfo = WSI informacije upravljačkog programa WebGL 2
+webgl2-renderer = Iscrtavač upravljačkog programa WebGL 2
+webgl2-version = Verzija upravljačkog programa WebGL 2
+webgl2-driver-extensions = Dodaci upravljačkog programa WebGL 2
 webgl2-extensions = WebGL 2 dodaci
 blocklisted-bug = Blokiran zbog poznatih problema
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
-bug-link = bug { $bugNumber }
+bug-link = greška { $bugNumber }
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Blokiran; kȏd neuspjeha { $failureCode }
@@ -282,13 +284,13 @@ has-seccomp-bpf = Seccomp-BPF (filtriranje sistemskih poziva)
 has-seccomp-tsync = Seccomp Thread sinkronizacija
 has-user-namespaces = Korisnički imenski prostori
 has-privileged-user-namespaces = Korisnički imenski prostori za privilegirane procese
-can-sandbox-content = Sandboxing sadržajnog procesa
-can-sandbox-media = Sandboxing media priključka
-content-sandbox-level = Sandbox razina sadržajnog procesa
-effective-content-sandbox-level = Sandbox razina učinkovitog sadržajnog procesa
+can-sandbox-content = Odvojeno pokretanje procesa sadržaja
+can-sandbox-media = Odvojeno pokretanje priključka za medije
+content-sandbox-level = Razina odvojenog pokretanja procesa sadržaja
+effective-content-sandbox-level = Učinkovita razina odvojenog pokretanja procesa sadržaja
 sandbox-proc-type-content = sadržaj
 sandbox-proc-type-file = sadržaj datoteke
-sandbox-proc-type-media-plugin = medij priključak
+sandbox-proc-type-media-plugin = priključak za medije
 sandbox-proc-type-data-decoder = dekoder podataka
 launcher-process-status-0 = Omogućeno
 launcher-process-status-1 = Onemogućeno zbog kvara

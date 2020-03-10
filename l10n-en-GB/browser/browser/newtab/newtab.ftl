@@ -133,6 +133,10 @@ newtab-label-removed-bookmark = Bookmark removed
 newtab-label-recommended = Trending
 newtab-label-saved = Saved to { -pocket-brand-name }
 newtab-label-download = Downloaded
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } · Sponsored
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -186,6 +190,7 @@ newtab-discovery-empty-section-topstories-timed-out = Oops! We almost loaded thi
 newtab-pocket-read-more = Popular Topics:
 newtab-pocket-more-recommendations = More Recommendations
 newtab-pocket-whats-pocket = What’s { -pocket-brand-name }?
+newtab-pocket-learn-more = Learn more
 newtab-pocket-cta-button = Get { -pocket-brand-name }
 newtab-pocket-cta-text = Save the stories you love in { -pocket-brand-name }, and fuel your mind with fascinating reads.
 

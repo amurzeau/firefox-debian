@@ -92,7 +92,7 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 ## Protections panel
 
 cfr-protections-panel-header = Brug nettet uden at blive overvåget
-cfr-protections-panel-body = Dine data tilhører dig. { -brand-short-name } beskytter dig mod mange af de mest almindelige sporings-tjenester, der følger med i, hvad du laver på nettet.
+cfr-protections-panel-body = Dine data tilhører dig. { -brand-short-name } beskytter dig mod mange af de mest almindelige sporings-teknologier, der følger med i, hvad du laver på nettet.
 cfr-protections-panel-link-text = Læs mere
 
 ## What's New toolbar button and panel
@@ -142,6 +142,15 @@ cfr-whatsnew-lockwise-take-body =
    Med apppen { -lockwise-brand-short-name } får du sikker adgang til dine adgangskoder,
    uanset hvor du er.
 cfr-whatsnew-lockwise-take-link-text = Hent appen
+
+## Search Bar
+
+cfr-whatsnew-searchbar-title = Skriv mindre, find mere med adressefeltet
+# Variables:
+#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
+cfr-whatsnew-searchbar-body-enginename = Besøg dine mest brugte websteder med et enkelt klik i adressefeltet. Find tingene hurtigere med søgeresultater fra { $searchEngineName } og din browserhistorik.
+cfr-whatsnew-searchbar-body-generic = Besøg dine mest brugte websteder med et enkelt klik i adressefeltet. Find tingene hurtigere med søgeresultater fra din browserhistorik.
+cfr-whatsnew-searchbar-icon-alt-text = Forstørrelsesglas-ikon
 
 ## Picture-in-Picture
 
@@ -209,7 +218,7 @@ cfr-doorhanger-socialtracking-close-button = Luk
 cfr-doorhanger-socialtracking-dont-show-again = Vis mig ikke meddelelser som denne igen
   .accesskey = V
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } forhindrede et socialt netværk i at spore dig på denne side
-cfr-doorhanger-socialtracking-description = Du har ret til et privatliv. { -brand-short-name } blokerer nu de mest almindelige sporings-mekanismer fra sociale medier for at begrænse, hvor meget data de kan indsamle om din adfærd på nettet. 
+cfr-doorhanger-socialtracking-description = Du har ret til et privatliv. { -brand-short-name } blokerer nu de mest almindelige sporings-teknologier fra sociale medier for at begrænse, hvor meget data de kan indsamle om din adfærd på nettet. 
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } blokerede en fingerprinter på denne side
 cfr-doorhanger-fingerprinters-description = Du har ret til et privatliv. { -brand-short-name } blokerer nu fingerprinters, der indsamler unikke informationer om din enhed for at spore dig.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } blokerede en cryptominer på denne side

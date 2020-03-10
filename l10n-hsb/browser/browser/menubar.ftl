@@ -156,7 +156,7 @@ menu-view-full-screen =
     .label = Połna wobrazowka
     .accesskey = P
 
-
+##
 
 menu-view-show-all-tabs =
     .label = Wšě rajtarki pokazać
@@ -192,6 +192,10 @@ menu-bookmarks-menu =
     .accesskey = Z
 menu-bookmarks-show-all =
     .label = Wšě zapołožki pokazać
+menu-bookmark-this-page =
+    .label = Tutu stronu jako zapołožku składować
+menu-bookmark-edit =
+    .label = Tutu zapołožku wobdźěłać
 menu-bookmarks-all-tabs =
     .label = Wšě rajtarki jako zapołožki…
 menu-bookmarks-toolbar =
@@ -205,7 +209,7 @@ menu-bookmarks-mobile =
 
 menu-tools =
     .label = Nastroje
-    .accesskey = s
+    .accesskey = t
 menu-tools-downloads =
     .label = Sćehnjenja
     .accesskey = h

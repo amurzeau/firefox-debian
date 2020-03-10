@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (கமுக்க உலாவல்)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (கமுக்க உலாவல்)
+       *[other] { $title } - { -brand-full-name } (கமுக்க உலாவல்)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = தள தகவலினைப் பார்
 
@@ -76,6 +105,15 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = நிரந்தர சேமிப்பகத்தில் தரவை வை
 urlbar-addons-notification-anchor =
     .tooltiptext = கூடுதல் இணைப்பு நிறுவல் செய்திப் பலகத்தை திற
+
+## Prompts users to use the Urlbar when they open a new tab or visit the
+## homepage of their default search engine.
+## Variables:
+##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
+
+##
+
 urlbar-geolocation-blocked =
     .tooltiptext = உங்கள் இடத்தகவலை இந்த தளத்தில் முடக்கியுள்ளீர்கள்.
 urlbar-web-notifications-blocked =
@@ -96,6 +134,14 @@ urlbar-canvas-blocked =
     .tooltiptext = திரை தரவு எடுப்பை இந்த தளத்தில் முடக்கியுள்ளீர்கள்.
 urlbar-midi-blocked =
     .tooltiptext = இந்த தளத்தில் MIDI அணுகலை முடக்கியுள்ளீர்கள்.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = இப்புத்தகக்குறியைத் தொகு ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = பக்கத்தைப் புத்தகக்குறியிடு ({ $shortcut })
 
 ## Page Action Context Menu
 

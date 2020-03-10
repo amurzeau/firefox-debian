@@ -9,8 +9,8 @@ ssl-connection-error = Došlo je do pogreške prilikom povezivanja na { $hostnam
 # Variables:
 # $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix = Kȏd greške: { $error }
-psmerr-ssl-disabled = Nije moguće sigurno se povezati jer je SSL protokol onemogućen.
-psmerr-ssl2-disabled = Nije moguće sigurno se povezati jer stranica koristi staru, nesigurnu inačicu SSL protokola.
+psmerr-ssl-disabled = Sigurno povezivanje nije moguće, jer je SSL protokol deaktiviran.
+psmerr-ssl2-disabled = Sigurno povezivanje nije moguće, jer stranica koristi stariju, nesigurnu verziju protokola.
 # This is a multi-line message.
 psmerr-hostreusedissuerandserial =
     Primio/la si neispravni certifikat. Kontaktiraj administratora poslužitelja ili pošalji e-poruku sa sljedećim informacijama:
@@ -29,8 +29,8 @@ ssl-error-wrong-certificate = Ovjera klijenta nije uspjela: privatni ključ u ba
 ssl-error-bad-cert-domain = Sigurna komunikacija s čvorom nije moguća: zatraženo ime domene ne odgovara certifikatu poslužitelja.
 ssl-error-post-warning = Neprepoznat kȏd SSL greške.
 ssl-error-ssl2-disabled = Čvor podržava samo SSL inačice 2, koja je lokalno onemogućena.
-ssl-error-bad-mac-read = SSL je primio zapis s netočnom porukom ovjere kôda.
-ssl-error-bad-mac-alert = SSL čvor obavještava o netočnoj poruci ovjere kôda.
+ssl-error-bad-mac-read = SSL je primio zapis s netočnom porukom ovjere koda.
+ssl-error-bad-mac-alert = SSL čvor obavještava o netočnoj poruci ovjere koda.
 ssl-error-bad-cert-alert = SSL čvor ne može potvrditi tvoj certifikat.
 ssl-error-revoked-cert-alert = SSL čvor je odbio tvoj certifikat jer je opozvan.
 ssl-error-expired-cert-alert = SSL čvor je odbio tvoj certifikat jer je istekao.
@@ -168,7 +168,7 @@ sec-error-revoked-certificate = Certifikat čvora je poništen.
 sec-error-unknown-issuer = Izdavač certifikata čvora nije prepoznat.
 sec-error-bad-key = Javni ključ čvora je nevaljani.
 sec-error-bad-password = Unesena sigurnosna lozinka nije ispravna.
-sec-error-retry-password = Nova lozinka je krivo unesena. Pokušajte ponovno.
+sec-error-retry-password = Nova lozinka je krivo upisana Pokušaj ponovo.
 sec-error-no-nodelock = sigurnosna biblioteka: nema čvornog ključa.
 sec-error-bad-database = sigurnosna biblioteka: loša baza podataka.
 sec-error-no-memory = sigurnosna biblioteka: greška pri alokaciji memorije.
@@ -254,7 +254,7 @@ sec-error-pkcs12-unable-to-read = Uvoz nije moguć. Uvoznu datoteku nije moguće
 sec-error-pkcs12-key-database-not-initialized = Izvoz nije moguć. Baza ključeva je oštećena ili izbrisana.
 sec-error-keygen-fail = Generiranje javnog/privatnog para ključeva nije moguće.
 sec-error-invalid-password = Unesena lozinka je kriva. Odaberite drugu.
-sec-error-retry-old-password = Stara lozinka je krivo unesena. Pokušajte ponovno.
+sec-error-retry-old-password = Stara lozinka je krivo upisana. Pokušaj ponovo.
 sec-error-bad-nickname = Nadimak certifikata je već u upotrebi.
 sec-error-not-fortezza-issuer = Čvor FORTEZZA lanca nema FORTEZZA certifikat, već neki drugi.
 sec-error-cannot-move-sensitive-key = Osjetljiv ključ nije moguće premjestiti u utor gdje je potreban.

@@ -9,7 +9,7 @@ cfr-doorhanger-extension-heading = Рекомендоване розширенн
 cfr-doorhanger-feature-heading = Рекомендована функція
 cfr-doorhanger-pintab-heading = Спробуйте це: Прикріпити вкладку
 
-
+##
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Чому я це бачу?
@@ -125,6 +125,15 @@ cfr-whatsnew-lockwise-take-body =
     доступ до збережених паролів з будь-якого пристрою.
 cfr-whatsnew-lockwise-take-link-text = Отримати додаток
 
+## Search Bar
+
+cfr-whatsnew-searchbar-title = Вводьте менше, знаходьте більше в панелі адреси
+# Variables:
+#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
+cfr-whatsnew-searchbar-body-enginename = Відкривайте найчастіше відвідувані сайти одним кліком в панелі адреси. Знаходьте швидше з результатами від { $searchEngineName } та історії перегляду.
+cfr-whatsnew-searchbar-body-generic = Відкривайте найчастіше відвідувані сайти одним кліком в панелі адреси. Знаходьте швидше з результатами вашої історії перегляду.
+cfr-whatsnew-searchbar-icon-alt-text = Піктограма лупи
+
 ## Picture-in-Picture
 
 cfr-whatsnew-pip-header = Дивіться відео під час перегляду
@@ -172,8 +181,8 @@ cfr-doorhanger-sync-logins-ok-button = Увімкнути { -sync-brand-short-na
 cfr-doorhanger-send-tab-header = Читайте це на ходу
 cfr-doorhanger-send-tab-recipe-header = Візьміть цей рецепт на кухню
 cfr-doorhanger-send-tab-body = Надсилання вкладки дозволяє вам легко ділитися цим посиланням зі своїм телефоном, або з іншими пристроями, на яких ви увійшли в { -brand-product-name }.
-cfr-doorhanger-send-tab-ok-button = Спробувати надсилання вкладки
-    .accesskey = п
+cfr-doorhanger-send-tab-ok-button = Надіслати вкладку
+    .accesskey = Н
 
 ## Firefox Send
 

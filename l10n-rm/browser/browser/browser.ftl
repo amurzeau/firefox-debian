@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Modus privat)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Modus privat)
+       *[other] { $title } - { -brand-full-name } (Modus privat)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Mussar infurmaziuns davart la pagina
 
@@ -83,6 +112,11 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Ir per agid
 urlbar-search-tips-confirm = Ok, chapì
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = Tip:
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -118,6 +152,14 @@ urlbar-midi-blocked =
     .tooltiptext = Ti has bloccà l'access a MIDI per questa pagina d'internet.
 urlbar-install-blocked =
     .tooltiptext = Ti has bloccà l'installaziun da supplements per questa website.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Modifitgar quest segnapagina ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Agiuntar in segnapagina ({ $shortcut })
 
 ## Page Action Context Menu
 

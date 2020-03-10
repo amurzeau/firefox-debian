@@ -9,7 +9,7 @@ cfr-doorhanger-extension-heading = Gomendatutako gehigarria
 cfr-doorhanger-feature-heading = Gomendatutako eginbidea
 cfr-doorhanger-pintab-heading = Probatu hau: ainguratu fitxa
 
-
+##
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Zergatik ari naizen hau ikusten
@@ -116,6 +116,15 @@ cfr-whatsnew-lockwise-take-title = Eraman pasahitzak zurekin
 cfr-whatsnew-lockwise-take-body = { -lockwise-brand-short-name } mugikorrerako aplikazioarekin babeskopian dituzun pasahitzak edonondik atzitu ahal izango dituzu.
 cfr-whatsnew-lockwise-take-link-text = Eskuratu aplikazioa
 
+## Search Bar
+
+cfr-whatsnew-searchbar-title = Idatzi gutxiago eta aurkitu gehiago helbide-barra erabiliz
+# Variables:
+#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
+cfr-whatsnew-searchbar-body-enginename = Sartu gehien bisitatzen dituzun webguneetara helbide-barran klik bakarra eginez. Bilatu gauzak azkarrago { $searchEngineName } bilatzaileko eta zure nabigatze-historiako emaitzekin.
+cfr-whatsnew-searchbar-body-generic = Sartu gehien bisitatzen dituzun webguneetara helbide-barran klik bakarra eginez. Bilatu gauzak azkarrago bilatzaileko eta zure nabigatze-historiako emaitzekin.
+cfr-whatsnew-searchbar-icon-alt-text = Luparen ikonoa
+
 ## Picture-in-Picture
 
 cfr-whatsnew-pip-header = Ikusi bideoak nabigatu ahala
@@ -182,9 +191,9 @@ cfr-doorhanger-socialtracking-dont-show-again = Ez erakutsi honelako mezu gehiag
     .accesskey = z
 cfr-doorhanger-socialtracking-heading = Sare sozial batek zure jarraipena egitea eragotzi du { -brand-short-name }(e)k
 cfr-doorhanger-socialtracking-description = Garrantzitsua da zure pribatutasuna. Sare sozialetako ohiko jarraipen-elementuak blokeatzen ditu orain { -brand-short-name }(e)k, zure lineako jarduerari buruz bil ditzaketen datuak mugatuz.
-cfr-doorhanger-fingerprinters-heading = Hatz-marka bidezko jarraipena blokeatu du orri honetan { -brand-short-name }(e)k
+cfr-doorhanger-fingerprinters-heading = Hatz-marka bidezko jarraipena blokeatu da orri honetan
 cfr-doorhanger-fingerprinters-description = Garrantzitsua da zure pribatutasuna. Hatz-marka bidezko jarraipena blokeatzen du orain { -brand-short-name }(e)k, zeinak zure gailuari buruzko identifikazio bakarreko datuak biltzen dituen zure jarraipena egiteko.
-cfr-doorhanger-cryptominers-heading = Kriptomeatzari bat blokeatu du orri honetan { -brand-short-name }(e)k
+cfr-doorhanger-cryptominers-heading = Kriptomeatzari bat blokeatu da orri honetan
 cfr-doorhanger-cryptominers-description = Garrantzitsua da zure pribatutasuna. Kriptomeatzariak blokeatzen ditu orain { -brand-short-name }(e)k, zeinak zure sistemaren konputazio-ahalmena erabiltzen duten diru digitala ustiatzeko.
 
 ## Enhanced Tracking Protection Milestones

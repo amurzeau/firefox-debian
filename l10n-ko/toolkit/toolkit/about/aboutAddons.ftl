@@ -34,9 +34,9 @@ preferences =
 tools-menu =
     .tooltiptext = 부가 기능 도구
 show-unsigned-extensions-button =
-    .label = 몇몇 확장기능은 확인을 할 수 없음
+    .label = 몇몇 확장 기능은 확인을 할 수 없음
 show-all-extensions-button =
-    .label = 모든 확장기능 보기
+    .label = 모든 확장 기능 보기
 debug-addons =
     .label = 부가 기능 디버그
     .accesskey = B
@@ -76,10 +76,10 @@ discover-footer = 인터넷에 연결할 때 최신 추천 부가 기능을 소�
 detail-version =
     .label = 버전
 detail-last-updated =
-    .label = 최종 수정일
+    .label = 마지막 업데이트
 detail-contributions-description = 이 부가 기능 개발자에게 작은 도움을 통해 개발이 지속될 수 있도록 지원할 수 있습니다.
 detail-contributions-button = 공헌하기
-    .title = 이 부가기능의 개발에 기여합니다
+    .title = 이 부가 기능의 개발에 기여합니다
     .accesskey = C
 detail-update-type =
     .value = 자동 업데이트
@@ -98,12 +98,12 @@ detail-private-browsing-description2 = 허용되면, 확장 기능은 사생활 
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = 사생활 보호 창에서 허용 안 됨
-detail-private-disallowed-description = 이 확장기능은 사생활 보호 모드에서는 실행되지 않습니다. <label data-l10n-name="detail-private-browsing-learn-more">더 알아보기</label>
-detail-private-disallowed-description2 = 이 확장기능은 사생활 보호 모드에서는 실행되지 않습니다. <a data-l10n-name="learn-more">더 알아보기</a>
+detail-private-disallowed-description = 이 확장 기능은 사생활 보호 모드에서는 실행되지 않습니다. <label data-l10n-name="detail-private-browsing-learn-more">더 알아보기</label>
+detail-private-disallowed-description2 = 이 확장 기능은 사생활 보호 모드에서는 실행되지 않습니다. <a data-l10n-name="learn-more">더 알아보기</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = 사생활 보호 창에 대한 접근 필요
-detail-private-required-description = 이 확장기능은 사생활 보호 모드에서 온라인 활동에 접근 할 수 있습니다. <label data-l10n-name="detail-private-browsing-learn-more">더 알아보기</label>
-detail-private-required-description2 = 이 확장기능은 사생활 보호 모드에서 온라인 활동에 접근 할 수 있습니다. <a data-l10n-name="learn-more">더 알아보기</a>
+detail-private-required-description = 이 확장 기능은 사생활 보호 모드에서 온라인 활동에 접근 할 수 있습니다. <label data-l10n-name="detail-private-browsing-learn-more">더 알아보기</label>
+detail-private-required-description2 = 이 확장 기능은 사생활 보호 모드에서 온라인 활동에 접근 할 수 있습니다. <a data-l10n-name="learn-more">더 알아보기</a>
 detail-private-browsing-on =
     .label = 허용
     .tooltiptext = 사생활 보호 모드에서 사용
@@ -120,8 +120,8 @@ detail-repository-value =
     .value = { detail-repository.label }
 detail-check-for-updates =
     .label = 업데이트 확인
-    .accesskey = F
-    .tooltiptext = 현재 부가 기능 업데이트 확인
+    .accesskey = U
+    .tooltiptext = 이 부가 기능 업데이트 확인
 detail-show-preferences =
     .label =
         { PLATFORM() ->
@@ -144,10 +144,10 @@ addon-restart-now =
     .label = 다시 시작
 disabled-unsigned-heading =
     .value = 몇몇 부가 기능이 비활성화 됨
-disabled-unsigned-description = 다음 부가기능은 { -brand-short-name }에서의 사용이 확인되지 않았습니다. <label data-l10n-name="find-addons">대체제를 검색</label>하거나 개발자가 확인을 받도록 요청할 수 있습니다.
+disabled-unsigned-description = 다음 부가 기능은 { -brand-short-name }에서의 사용이 확인되지 않았습니다. <label data-l10n-name="find-addons">대체제를 검색</label>하거나 개발자가 확인을 받도록 요청할 수 있습니다.
 disabled-unsigned-learn-more = 사용자가 온라인에서 안전할 수 있게 노력하는 내용에 대해서 더 알아보세요.
-disabled-unsigned-devinfo = 부가기능을 확인하는데 관심이 있는 개발자는 <label data-l10n-name="learn-more">메뉴얼</label>을 읽어보세요.
-plugin-deprecation-description = 빠진게 있나요? 어떤 플러그인은 { -brand-short-name }에서 더이상 지원하지 않습니다. <label data-l10n-name="learn-more">더 알아보기.</label>
+disabled-unsigned-devinfo = 부가 기능을 확인하는데 관심이 있는 개발자는 <label data-l10n-name="learn-more">메뉴얼</label>을 읽어보세요.
+plugin-deprecation-description = 빠진게 있습니까? 어떤 플러그인은 { -brand-short-name }에서 더이상 지원하지 않습니다. <label data-l10n-name="learn-more">더 알아보기.</label>
 legacy-warning-show-legacy = 레거시 확장 기능 보기
 legacy-extensions =
     .value = 레거시 확장 기능
@@ -170,7 +170,7 @@ extensions-view-available-updates =
 ## These are global warnings
 
 extensions-warning-safe-mode-label =
-    .value = 안전 모드에서 부가 기능 전체를 사용할 수 없습니다.
+    .value = 안전 모드에서는 모든 부가 기능을 사용할 수 없습니다.
 extensions-warning-safe-mode-container =
     .tooltiptext = { extensions-warning-safe-mode-label.value }
 extensions-warning-check-compatibility-label =
@@ -185,25 +185,25 @@ extensions-warning-update-security-label =
 extensions-warning-update-security-container =
     .tooltiptext = { extensions-warning-update-security-label.value }
 extensions-warning-update-security-enable =
-    .label = 취소
+    .label = 사용
     .tooltiptext = 부가 기능 업데이트 보안 확인 기능 사용
-extensions-warning-safe-mode = 안전 모드에서 부가 기능 전체를 사용할 수 없습니다.
+extensions-warning-safe-mode = 안전 모드에서는 모든 부가 기능을 사용할 수 없습니다.
 extensions-warning-check-compatibility = 부가 기능 호환성 확인 기능을 중단 합니다. 호환성이 맞지 않을 수 있습니다.
 extensions-warning-check-compatibility-button = 활성화
     .title = 부가 기능 호환성 확인 기능 사용
 extensions-warning-update-security = 부가 기능 업데이트 보안 확인 기능을 중단 합니다. 업데이트가 보안 문제를 일으킬 수 있습니다.
-extensions-warning-update-security-button = 취소
+extensions-warning-update-security-button = 사용
     .title = 부가 기능 업데이트 보안 확인 기능 사용
 
 ## Strings connected to add-on updates
 
 extensions-updates-check-for-updates =
-    .label = 업데이트 확인하기
+    .label = 업데이트 확인
     .accesskey = C
 extensions-updates-view-updates =
     .label = 최근 업데이트 보기
     .accesskey = V
-addon-updates-check-for-updates = 업데이트 확인하기
+addon-updates-check-for-updates = 업데이트 확인
     .accesskey = C
 addon-updates-view-updates = 최근 업데이트 보기
     .accesskey = V
@@ -212,9 +212,9 @@ addon-updates-view-updates = 최근 업데이트 보기
 # add-on update checking.
 
 extensions-updates-update-addons-automatically =
-    .label = 자동 업데이트 하기
+    .label = 부가 기능을 자동으로 업데이트
     .accesskey = A
-addon-updates-update-addons-automatically = 자동 업데이트 하기
+addon-updates-update-addons-automatically = 부가 기능을 자동으로 업데이트
     .accesskey = A
 
 ## Specific add-ons can have custom update checking behaviors ("Manually",
@@ -224,14 +224,14 @@ addon-updates-update-addons-automatically = 자동 업데이트 하기
 ## extensions-updates-update-addons-automatically.label menu item).
 
 extensions-updates-reset-updates-to-automatic =
-    .label = 모든 부가기능을 자동 업데이트로 재설정
+    .label = 모든 부가 기능을 자동 업데이트로 재설정
     .accesskey = R
 extensions-updates-reset-updates-to-manual =
-    .label = 모든 부가기능을 수동 업데이트로 재설정
+    .label = 모든 부가 기능을 수동 업데이트로 재설정
     .accesskey = R
-addon-updates-reset-updates-to-automatic = 모든 부가기능을 자동 업데이트로 재설정
+addon-updates-reset-updates-to-automatic = 모든 부가 기능을 자동 업데이트로 재설정
     .accesskey = R
-addon-updates-reset-updates-to-manual = 모든 부가기능을 수동 업데이트로 재설정
+addon-updates-reset-updates-to-manual = 모든 부가 기능을 수동 업데이트로 재설정
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
@@ -268,16 +268,16 @@ addon-open-about-debugging = 부가 기능 디버그
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
-    .label = 확장기능 단축키 관리
+    .label = 확장 기능 단축키 관리
     .accesskey = S
 # This is displayed in the page options menu
-addon-manage-extensions-shortcuts = 확장기능 단축키 관리
+addon-manage-extensions-shortcuts = 확장 기능 단축키 관리
     .accesskey = S
-shortcuts-no-addons = 활성화된 확장기능이 없습니다.
-shortcuts-no-commands = 다음 확장기능에는 단축키가 없습니다:
+shortcuts-no-addons = 활성화된 확장 기능이 없습니다.
+shortcuts-no-commands = 다음 확장 기능에는 단축키가 없습니다:
 shortcuts-input =
     .placeholder = 단축키 입력
-shortcuts-browserAction = 확장기능 활성화
+shortcuts-browserAction = 확장 기능 활성화
 shortcuts-pageAction = 페이지 작업 활성화
 shortcuts-sidebarAction = 탐색창 표시/숨기기
 shortcuts-modifier-mac = Ctrl, Alt 또는 ⌘ 포함
@@ -307,9 +307,9 @@ go-back-button =
 
 # Explanatory introduction to the list of recommended add-ons. The action word
 # ("recommends") in the final sentence is a link to external documentation.
-discopane-intro = 확장기능 및 테마는 브라우저 앱과 비슷하며, 비밀번호 보호, 동영상 다운로드, 거래 찾기, 성가신 광고 차단, 브라우저가 어떻게 보이는지 변경 등을 할 수 있도록 합니다. 이 작은 소프트웨어 프로그램은 보통 제3자에 의해 개발됩니다. 다음은 탁월한 보안, 성능 및 기능을 위해 { -brand-product-name }가 <a data-l10n-name="learn-more-trigger">추천하는</a> 목록입니다.
+discopane-intro = 확장 기능 및 테마는 브라우저 앱과 비슷하며, 비밀번호 보호, 동영상 다운로드, 거래 찾기, 성가신 광고 차단, 브라우저가 어떻게 보이는지 변경 등을 할 수 있도록 합니다. 이 작은 소프트웨어 프로그램은 보통 제3자에 의해 개발됩니다. 다음은 탁월한 보안, 성능 및 기능을 위해 { -brand-product-name }가 <a data-l10n-name="learn-more-trigger">추천하는</a> 목록입니다.
 # Notice to make user aware that the recommendations are personalized.
-discopane-notice-recommendations = 이러한 추천 중 일부는 개인화된 것입니다. 설치한 다른 확장기능, 프로필 설정 및 사용 통계를 기반으로 합니다.
+discopane-notice-recommendations = 이러한 추천 중 일부는 개인화된 것입니다. 설치한 다른 확장 기능, 프로필 설정 및 사용 통계를 기반으로 합니다.
 discopane-notice-learn-more = 더 알아보기
 privacy-policy = 개인 정보 보호 정책
 # Refers to the author of an add-on, shown below the name of the add-on.
@@ -319,13 +319,13 @@ created-by-author = 제작: <a data-l10n-name="author">{ $author }</a>
 # Shows the number of daily users of the add-on.
 # Variables:
 #   $dailyUsers (number) - The number of daily users.
-user-count = 사용자: { $dailyUsers }
+user-count = 사용자: { $dailyUsers }명
 install-extension-button = { -brand-product-name }에 추가
 install-theme-button = 테마 설치하기
 # The label of the button that appears after installing an add-on. Upon click,
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = 관리
-find-more-addons = 부가기능 더 찾기
+find-more-addons = 더 많은 부가 기능 찾기
 # This is a label for the button to open the "more options" menu, it is only
 # used for screen readers.
 addon-options-button =
@@ -369,7 +369,7 @@ always-activate-button = 항상 사용
 never-activate-button = 사용 안 함
 addon-detail-author-label = 제작
 addon-detail-version-label = 버전
-addon-detail-last-updated-label = 최종 수정일
+addon-detail-last-updated-label = 마지막 업데이트
 addon-detail-homepage-label = 홈페이지
 addon-detail-rating-label = 평가
 # The average rating that the add-on has received.
@@ -386,7 +386,7 @@ addon-name-disabled = { $name } (사용 안 함)
 #   $numberOfReviews (number) - The number of reviews received
 addon-detail-reviews-link =
     { $numberOfReviews ->
-       *[other] { $numberOfReviews }개의 리뷰
+       *[other] 리뷰 { $numberOfReviews }개
     }
 
 ## Pending uninstall message bar
@@ -410,7 +410,7 @@ addon-badge-private-browsing-allowed =
 addon-badge-private-browsing-allowed2 =
     .title = 사생활 보호 창에서 허용됨
     .aria-label = { addon-badge-private-browsing-allowed2.title }
-addon-detail-private-browsing-help = 허용된 경우, 확장기능은 사생활 보호 모드에서 온라인 활동에 접근 할 수 있습니다. <a data-l10n-name="learn-more">더 알아보기</a>
+addon-detail-private-browsing-help = 허용된 경우, 확장 기능은 사생활 보호 모드에서 온라인 활동에 접근 할 수 있습니다. <a data-l10n-name="learn-more">더 알아보기</a>
 addon-detail-private-browsing-allow = 허용
 addon-detail-private-browsing-disallow = 허용 안 함
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
@@ -421,7 +421,7 @@ addon-badge-recommended =
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended2 =
-    .title = { -brand-product-name }는 보안 및 성능 표준을 충족하는 확장기능만 권장합니다
+    .title = { -brand-product-name }는 보안 및 성능 표준을 충족하는 확장 기능만 추천합니다
     .aria-label = { addon-badge-recommended2.title }
 available-updates-heading = 업데이트 가능 항목
 recent-updates-heading = 최근 업데이트
@@ -432,21 +432,21 @@ recommended-extensions-heading = 추천 확장 기능
 recommended-themes-heading = 추천 테마
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
-recommended-theme-1 = 창의적인 느낌이 떠오르시나요? <a data-l10n-name="link">Firefox Color로 나만의 테마를 만들어 보세요.</a>
+recommended-theme-1 = 창의적인 느낌이 떠오르십니까? <a data-l10n-name="link">Firefox Color로 나만의 테마를 만들어 보세요.</a>
 
 ## Page headings
 
-extension-heading = 확장기능 관리
+extension-heading = 확장 기능 관리
 theme-heading = 테마 관리
 plugin-heading = 플러그인 관리
 dictionary-heading = 사전 관리
 locale-heading = 언어 관리
 updates-heading = 업데이트 관리
 discover-heading = { -brand-short-name } 개인화
-shortcuts-heading = 확장기능 단축키 관리
-theme-heading-search-label = 더 많은 테마
-extension-heading-search-label = 더 많은 확장기능
-default-heading-search-label = 부가기능 더 찾기
+shortcuts-heading = 확장 기능 단축키 관리
+theme-heading-search-label = 더 많은 테마 찾기
+extension-heading-search-label = 더 많은 확장 기능 찾기
+default-heading-search-label = 더 많은 부가 기능 찾기
 addons-heading-search-input =
     .placeholder = addons.mozilla.org 검색
 addon-page-options-button =

@@ -7,7 +7,7 @@
 
 cfr-doorhanger-extension-heading = Preporučeni dodatak
 cfr-doorhanger-feature-heading = Preporučena funkcija
-cfr-doorhanger-pintab-heading = Pokušajte ovo: Zakačite karticu
+cfr-doorhanger-pintab-heading = Pokušaj ovo: Zakači karticu
 
 ##
 
@@ -73,8 +73,8 @@ cfr-doorhanger-pintab-animation-resume = Nastavi
 
 ## Firefox Accounts Message
 
-cfr-doorhanger-bookmark-fxa-header = Sinkronizirajte svoje zabilješke svugdje.
-cfr-doorhanger-bookmark-fxa-body = Izvrsno! Nemoj ostati bez ove zabilješke na tvom mobilnom uređaju. Započni s { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-header = Sinkroniziraj svoje zabilješke svagdje.
+cfr-doorhanger-bookmark-fxa-body = Koristi ovu zabilješku i na mobilnom uređaju. Pokreni { -fxaccount-brand-name }.
 cfr-doorhanger-bookmark-fxa-link-text = Sinkronizirajte zabilješke sada…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Tipka za zatvaranje
@@ -90,7 +90,7 @@ cfr-protections-panel-link-text = Saznaj više
 
 # This string is used by screen readers to offer a text based alternative for
 # the notification icon
-cfr-badge-reader-label-newfeature = Nova mogućnost:
+cfr-badge-reader-label-newfeature = Nova funkcija:
 cfr-whatsnew-button =
     .label = Što je novo
     .tooltiptext = Što je novo
@@ -123,6 +123,15 @@ cfr-whatsnew-lockwise-take-body =
     tvojim lozinkama sigurnosnih kopija s bilo kojeg mjesta.
 cfr-whatsnew-lockwise-take-link-text = Preuzmi aplikaciju
 
+## Search Bar
+
+cfr-whatsnew-searchbar-title = Tipkaj manje, pronađi više s adresnom trakom
+# Variables:
+#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
+cfr-whatsnew-searchbar-body-enginename = Otvori web stranice koja najčešće koristiš jednim klikom u adresnu traku. Pronađi stvari brže pomoću { $searchEngineName } rezultata i tvoje povijesti pregledavanja.
+cfr-whatsnew-searchbar-body-generic = Otvori web stranice koja najčešće koristiš jednim klikom u adresnu traku. Pronađi stvari brže pomoću rezultata pretrage tvoje povijesti pregledavanja.
+cfr-whatsnew-searchbar-icon-alt-text = Ikona za povećalo
+
 ## Picture-in-Picture
 
 cfr-whatsnew-pip-header = Gledaj videozapise dok pregledavaš
@@ -154,7 +163,7 @@ cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } može blok
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Preuzmi ovu oznaku na svoj mobitel
-cfr-doorhanger-sync-bookmarks-body = Ponesi svoje zabilješke, lozinke, povijest i ostalo, gdje god si prijavljen/a na { -brand-product-name }.
+cfr-doorhanger-sync-bookmarks-body = Ponesi svoje zabilješke, lozinke, povijest i ostalo, gdjegod si prijavljen/a na { -brand-product-name }.
 cfr-doorhanger-sync-bookmarks-ok-button = Uključi { -sync-brand-short-name }
     .accesskey = U
 

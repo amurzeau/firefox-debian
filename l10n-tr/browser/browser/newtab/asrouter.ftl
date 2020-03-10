@@ -9,7 +9,7 @@ cfr-doorhanger-extension-heading = Eklenti Önerisi
 cfr-doorhanger-feature-heading = Özellik Önerisi
 cfr-doorhanger-pintab-heading = Bunu deneyin: Sekme sabitleme
 
-
+##
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Bunu neden görüyorum?
@@ -116,6 +116,15 @@ cfr-whatsnew-lockwise-take-title = Parolalarınızı yanınızda taşıyın
 cfr-whatsnew-lockwise-take-body = { -lockwise-brand-short-name } mobil uygulaması, yedeklediğiniz parolalara her yerden güvenle ulaşmanızı sağlar.
 cfr-whatsnew-lockwise-take-link-text = Uygulamayı indir
 
+## Search Bar
+
+cfr-whatsnew-searchbar-title = Adres çubuğuna daha az yazın, daha çok bulun
+# Variables:
+#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
+cfr-whatsnew-searchbar-body-enginename = Adres çubuğuna tek bir tıklamayla en çok kullandığınız sitelere ulaşın. { $searchEngineName } sonuçları ve gezinti geçmişinizden gelen sonuçlar bir arada.
+cfr-whatsnew-searchbar-body-generic = Adres çubuğuna tek bir tıklamayla en çok kullandığınız sitelere ulaşın. Gezinti geçmişinizden gelen sonuçlarla aradığınız daha hızlı bulun.
+cfr-whatsnew-searchbar-icon-alt-text = Büyüteç simgesi
+
 ## Picture-in-Picture
 
 cfr-whatsnew-pip-header = İnternette gezinirken video izleyin
@@ -170,7 +179,7 @@ cfr-doorhanger-send-tab-ok-button = Sekme göndermeyi dene
 cfr-doorhanger-firefox-send-header = Bu PDF’i güvenle paylaşın
 cfr-doorhanger-firefox-send-body = Uçtan uca şifreleme ve işiniz bittiğinde kaybolan bir bağlantıyla hassas belgelerinizi meraklı gözlerden koruyun.
 cfr-doorhanger-firefox-send-ok-button = { -send-brand-name }’i deneyin
-    .accesskey = d
+    .accesskey = e
 
 ## Social Tracking Protection
 

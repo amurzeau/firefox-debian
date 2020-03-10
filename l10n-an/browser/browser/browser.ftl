@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Navegación privada)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Navegación privada)
+       *[other] { $title } - { -brand-full-name } (Navegación privada)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Amostrar a información d'o puesto
 
@@ -117,6 +146,14 @@ urlbar-midi-blocked =
     .tooltiptext = Tiens blocau l'acceso MIDI en esta web.
 urlbar-install-blocked =
     .tooltiptext = Has blocau la instalación de complementos dende este puesto web.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Editar iste marcapachinas ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Marcar ista pachina con o marcapachinas ({ $shortcut })
 
 ## Page Action Context Menu
 

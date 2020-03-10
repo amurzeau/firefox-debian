@@ -8,6 +8,8 @@
 
 # Page Title strings
 
+# Page title (ie tab title) for the Setup page
+about-debugging-page-title-setup-page = Desbugatge - Configuracion
 # Page title (ie tab title) for the Runtime page
 # { $selectedRuntimeId } is the id of the current runtime, such as "this-firefox", "localhost:6080", ...
 about-debugging-page-title-runtime-page = Desbugatge - Temps passat / { $selectedRuntimeId }
@@ -48,6 +50,16 @@ about-debugging-sidebar-item-connected-label = Connectat
 # Firefox) has not been detected yet. Typically, Android phones connected via USB with
 # USB debugging enabled, but where Firefox is not started.
 about-debugging-sidebar-runtime-item-waiting-for-browser = En espèra del navegador…
+# Text displayed in sidebar items for remote devices that have been disconnected from the
+# computer.
+about-debugging-sidebar-runtime-item-unplugged = Desconnectat
+# Title for runtime sidebar items that are related to a specific device (USB, WiFi).
+about-debugging-sidebar-runtime-item-name =
+    .title = { $displayName } ({ $deviceName })
+# Title for runtime sidebar items where we cannot get device information (network
+# locations).
+about-debugging-sidebar-runtime-item-name-no-device =
+    .title = { $displayName }
 # Text to show in the footer of the sidebar that links to a help page
 # (currently: https://developer.mozilla.org/docs/Tools/about:debugging)
 about-debugging-sidebar-support = Assisténcia al desbugatge
@@ -79,6 +91,11 @@ about-debugging-setup-usb-updating-button = Actualizacion…
 about-debugging-setup-usb-status-enabled = Activat
 about-debugging-setup-usb-status-disabled = Desactivat
 about-debugging-setup-usb-status-updating = Actualizacion…
+# USB section step by step guide
+about-debugging-setup-usb-step-enable-dev-menu2 = Activar lo menú Desvolopaire sus vòstre periferic Android.
+# Network section of the Setup page
+about-debugging-setup-network =
+    .title = Emplaçament ret
 # Text of a button displayed after the network locations "Host" input.
 # Clicking on it will add the new network location to the list.
 about-debugging-network-locations-add-button = Apondre
@@ -123,6 +140,10 @@ about-debugging-runtime-name = { $name } ({ $version })
 # Text of a button displayed in Runtime pages for remote runtimes.
 # Clicking on the button will close the connection to the runtime.
 about-debugging-runtime-disconnect-button = Se desconectar
+# Clicking on the header of a debug target category will expand or collapse the debug
+# target items in the category. This text is used as ’title’ attribute of the header,
+# to describe this feature.
+about-debugging-collapse-expand-debug-targets = Reduire / espandir
 
 # Debug Targets strings
 
@@ -139,16 +160,26 @@ about-debugging-tmp-extension-reload-button = Tornar cargar
 # Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will uninstall the extension and remove it from the page.
 about-debugging-tmp-extension-remove-button = Suprimir
+# Text displayed for extensions in "runtime" pages, before displaying a link the extension's
+# manifest URL.
+about-debugging-extension-manifest-url =
+    .label = URL del manifest
 # Text displayed for extensions (temporary extensions only) in "runtime" pages, before
 # displaying the location of the temporary extension.
 about-debugging-extension-location =
     .label = Emplaçament
 # This string is displayed as a label of the button that starts a service worker.
 about-debugging-worker-action-start = Aviar
+# Displayed for service workers in runtime pages that are currently running (service
+# worker instance is active).
+about-debugging-worker-status-running = Execucion
 # Displayed for service workers in runtime pages that are registered but stopped.
 about-debugging-worker-status-stopped = Arrestat
 # Displayed for service workers in runtime pages that are registering.
 about-debugging-worker-status-registering = Inscripcion
+# Displayed for service workers in runtime pages, to label the scope of a worker
+about-debugging-worker-scope =
+    .label = Encastre
 # Displayed for service workers in runtime pages, to label the push service endpoint (url)
 # of a worker
 about-debugging-worker-push-service =

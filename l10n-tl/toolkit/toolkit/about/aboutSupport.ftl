@@ -88,6 +88,8 @@ graphics-crash-guards-title = Crash Guard Disabled Features
 graphics-workarounds-title = Workarounds
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Window Protocol
+# Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
+graphics-desktop-environment = Desktop Environment
 place-database-title = Places Database
 place-database-integrity = Integredad
 place-database-verify-integrity = Patunayan ang Integridad
@@ -135,7 +137,7 @@ media-capabilities-title = Mga Media Capability
 # List all the entries of the database.
 media-capabilities-enumerate = Ilista ang database
 
-
+##
 
 intl-title = Internationalization & Localization
 intl-app-title = Mga Application Setting
@@ -156,8 +158,11 @@ intl-regional-prefs = Mga Regional Preference
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
 
+remote-debugging-title = Remote Debugging (Chromium Protocol)
+remote-debugging-accepting-connections = Tumatanggap ng mga Koneksyon
+remote-debugging-url = URL
 
-
+##
 
 # Variables
 # $days (Integer) - Number of days of crashes to log
@@ -257,6 +262,7 @@ d3d11video-crash-guard = D3D11 Video Decoder
 d3d9video-crash-buard = D3D9 Video Decoder
 d3d9video-crash-guard = D3D9 Video Decoder
 glcontext-crash-guard = OpenGL
+wmfvpxvideo-crash-guard = WMF VPX Video Decoder
 reset-on-next-restart = I-reset sa Susunod na Restart
 gpu-process-kill-button = Patigilin ang mga Proseso ng GPU
 gpu-device-reset = Device Reset

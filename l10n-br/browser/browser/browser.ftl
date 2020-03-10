@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Merdeiñ prevez)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Merdeiñ prevez)
+       *[other] { $title } - { -brand-full-name } (Merdeiñ prevez)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Gwelout titouroù al lec'hienn
 
@@ -83,6 +112,11 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Kaout skoazell
 urlbar-search-tips-confirm = Mat eo, komprenet am eus
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = Tun:
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -118,6 +152,14 @@ urlbar-midi-blocked =
     .tooltiptext = Stanket ho peus an haeziñ MIDI evit al lec'hienn-mañ.
 urlbar-install-blocked =
     .tooltiptext = Stanket ho peus ar staliadurioù askouezhioù war al lec'hienn-mañ.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Embann ar sined-mañ ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Lakaat ur sined war ar bajenn-mañ ({ $shortcut })
 
 ## Page Action Context Menu
 

@@ -86,19 +86,19 @@ security-view-identity =
 security-view-identity-owner =
     .value = 소유자:
 security-view-identity-domain =
-    .value = 웹사이트:
+    .value = 웹 사이트:
 security-view-identity-verifier =
     .value = 인증 기관:
 security-view-identity-validity =
     .value = 만료일:
 security-view-privacy =
-    .value = 개인 정보 및 방문 기록
-security-view-privacy-history-value = 이 웹사이트를 이전에 방문한 적이 있나요?
-security-view-privacy-sitedata-value = 이 웹사이트가 내 컴퓨터에 정보를 저장하나요?
+    .value = 개인 정보 및 기록
+security-view-privacy-history-value = 이 웹 사이트를 이전에 방문한 적이 있습니까?
+security-view-privacy-sitedata-value = 이 웹 사이트가 내 컴퓨터에 정보를 저장합니까?
 security-view-privacy-clearsitedata =
-    .label = 쿠키와 사이트 데이터 삭제
+    .label = 쿠키 및 사이트 데이터 삭제
     .accesskey = C
-security-view-privacy-passwords-value = 이 웹사이트에 비밀번호를 저장한 적이 있나요?
+security-view-privacy-passwords-value = 이 웹 사이트에 비밀번호를 저장한 적이 있습니까?
 security-view-privacy-viewpasswords =
     .label = 저장된 비밀번호 보기
     .accesskey = w
@@ -113,7 +113,7 @@ help-button =
 ##   $value (number) - Amount of data being stored
 ##   $unit (string) - The unit of data being stored (Usually KB)
 
-security-site-data-cookies = 네, 쿠키와 { $value } { $unit } 사이트 데이터
+security-site-data-cookies = 네, 쿠키와 { $value } { $unit }의 사이트 데이터
 security-site-data-only = 네, { $value } { $unit } 사이트 데이터
 security-site-data-cookies-only = 네, 쿠키
 security-site-data-no = 아니오

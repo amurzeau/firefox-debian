@@ -3,15 +3,12 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 page-title = 문제 해결 정보
-page-subtitle =
-    이 페이지는 여러분이 { -brand-short-name } 사용 상 문제점을 해결 할 수 있는
-    다양한 기술적 정보를 담고 있습니다. 여러분이 문제의 해결을 얻기 위해서는
-    이 정보를 토대로 <a data-l10n-name="support-link">고객 지원 사이트</a>에 문의하시기 바랍니다.
+page-subtitle = 이 페이지에는 문제 해결에 유용한 기술 정보가 포함되어 있습니다. { -brand-short-name }의 일반적인 질문에 대한 답변은 <a data-l10n-name="support-link">지원 웹 사이트</a>를 확인하세요.
 crashes-title = 충돌 보고서
 crashes-id = 보고 ID
 crashes-send-date = 전송됨
 crashes-all-reports = 모든 충돌 보고서
-crashes-no-config = 이 애플리케이션은 충돌 보고서를 표시하도록 설정되어 있지 않습니다.
+crashes-no-config = 이 프로그램은 충돌 보고서를 표시하도록 설정되어 있지 않습니다.
 extensions-title = 확장 기능
 extensions-name = 이름
 extensions-enabled = 사용
@@ -45,7 +42,7 @@ app-basics-update-dir =
 app-basics-update-history = 업데이트 기록
 app-basics-show-update-history = 업데이트 기록 표시
 # Represents the path to the binary used to start the application.
-app-basics-binary = 애플리케이션 바이너리
+app-basics-binary = 프로그램 바이너리
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] 프로필 저장 폴더
@@ -57,7 +54,7 @@ app-basics-user-agent = 사용자 에이전트
 app-basics-os = OS
 app-basics-memory-use = 메모리 사용
 app-basics-performance = 성능
-app-basics-service-workers = 등록된 서비스 워커
+app-basics-service-workers = 등록된 Service Worker
 app-basics-profiles = 프로필
 app-basics-launcher-process-status = 런처 프로세스
 app-basics-multi-process-support = 다중프로세스 윈도우
@@ -92,6 +89,8 @@ graphics-crash-guards-title = 크래시 보호 비활성화 기능
 graphics-workarounds-title = 임시방편
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = 윈도우 프로토콜
+# Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
+graphics-desktop-environment = 데스크톱 환경
 place-database-title = 위치 데이터베이스
 place-database-integrity = 무결성
 place-database-verify-integrity = 무결성 확인
@@ -115,7 +114,7 @@ sandbox-sys-call-proc-type = 프로세스 타입
 sandbox-sys-call-number = 시스템 콜
 sandbox-sys-call-args = 인자
 safe-mode-title = 안전 모드 시도
-restart-in-safe-mode-label = 부가기능을 끄고 다시 시작…
+restart-in-safe-mode-label = 부가 기능을 끄고 다시 시작…
 
 ## Media titles
 
@@ -198,7 +197,7 @@ try-newer-driver = 그래픽 드라이버는 그리기 지원이 차단되었습
 clear-type-parameters = ClearType 매개 변수
 compositing = 합성
 hardware-h264 = 하드웨어 H264 디코딩
-main-thread-no-omtc = 주 쓰레드, OMTC 아님
+main-thread-no-omtc = 주 스레드, OMTC 아님
 yes = 네
 no = 아니오
 unknown = 알 수 없음
@@ -251,13 +250,13 @@ gpu-device-reset = 기기 초기화
 gpu-device-reset-button = 기기 초기화 시작
 uses-tiling = 타일링 사용
 content-uses-tiling = 타일링(콘텐츠) 사용
-off-main-thread-paint-enabled = 주 쓰레드 페인팅 끄기 활성화됨
-off-main-thread-paint-worker-count = 주 쓰레드 페인팅 워커 카운트 끔
+off-main-thread-paint-enabled = 주 스레드 페인팅 끄기 활성화됨
+off-main-thread-paint-worker-count = 주 스레드 페인팅 Worker 카운트 끔
 target-frame-rate = 목표 프레임 레이트
 min-lib-versions = 요구되는 최소 버전
 loaded-lib-versions = 사용 중인 버전
 has-seccomp-bpf = Seccomp-BPF (시스템 호출 필터링)
-has-seccomp-tsync = Seccomp 쓰레드 동기화
+has-seccomp-tsync = Seccomp 스레드 동기화
 has-user-namespaces = 사용자 네임스페이스
 has-privileged-user-namespaces = 권한있는 프로세스를 위한 사용자 네임스페이스
 can-sandbox-content = 콘텐트 프로세스 샌드박싱
@@ -277,11 +276,11 @@ launcher-process-status-unknown = 알 수 없는 상태
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
 multi-process-status-0 = 사용자에 의해 활성화됨
-multi-process-status-1 = 기본값에 의해 활성화
-multi-process-status-2 = 비활성화
-multi-process-status-4 = 접근성 도구에 의해 비활성화
-multi-process-status-6 = 지원되지 않는 텍스트 입력으로 인한 비활성화
-multi-process-status-7 = 부가기능에 의해서 비활성화
+multi-process-status-1 = 기본값에 의해 활성화됨
+multi-process-status-2 = 비활성화됨
+multi-process-status-4 = 접근성 도구에 의해 비활성화됨
+multi-process-status-6 = 지원되지 않는 텍스트 입력으로 인한 비활성화됨
+multi-process-status-7 = 부가 기능에 의해서 비활성화됨
 multi-process-status-8 = 강제로 비활성화됨
 multi-process-status-unknown = 알 수 없는 상태
 async-pan-zoom = 비동기 팬 및 확대/축소

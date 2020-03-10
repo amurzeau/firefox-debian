@@ -74,7 +74,7 @@ about-debugging-sidebar-support-icon =
     .alt = 도움말 아이콘
 # Text displayed in a sidebar button to refresh the list of USB devices. Clicking on it
 # will attempt to update the list of devices displayed in the sidebar.
-about-debugging-refresh-usb-devices-button = 기기 새로고침
+about-debugging-refresh-usb-devices-button = 기기 새로 고침
 
 # Setup Page strings
 
@@ -83,9 +83,9 @@ about-debugging-setup-title = 설정
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = 기기를 원격으로 디버깅할 연결 방법을 구성합니다.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox = 이 버전의 { -brand-shorter-name }에서 탭, 확장기능 및 서비스 워커를 디버그하려면 <a>{ about-debugging-this-firefox-runtime-name }</a>를 사용하세요.
+about-debugging-setup-this-firefox = 이 버전의 { -brand-shorter-name }에서 탭, 확장 기능 및 Service Worker를 디버그하려면 <a>{ about-debugging-this-firefox-runtime-name }</a>를 사용하세요.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox2 = 이 버전의 { -brand-shorter-name }에서 확장 기능 및 서비스 워커를 디버그하려면 <a>{ about-debugging-this-firefox-runtime-name }</a>를 사용하세요.
+about-debugging-setup-this-firefox2 = 이 버전의 { -brand-shorter-name }에서 확장 기능 및 Service Worker를 디버그하려면 <a>{ about-debugging-this-firefox-runtime-name }</a>를 사용하세요.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = 기기 연결
 # USB section of the Setup page
@@ -148,7 +148,7 @@ about-debugging-network-location-form-duplicate = “{ $host-value }” 호스�
 # on "runtime" pages of about:debugging.
 # Title of the temporary extensions category (only available for "This Firefox" runtime).
 about-debugging-runtime-temporary-extensions =
-    .name = 임시 확장기능
+    .name = 임시 확장 기능
 # Title of the extensions category.
 about-debugging-runtime-extensions =
     .name = 확장 기능
@@ -157,13 +157,13 @@ about-debugging-runtime-tabs =
     .name = 탭
 # Title of the service workers category.
 about-debugging-runtime-service-workers =
-    .name = 서비스 워커
+    .name = Service Worker
 # Title of the shared workers category.
 about-debugging-runtime-shared-workers =
-    .name = 공유된 워커
+    .name = 공유된 Worker
 # Title of the other workers category.
 about-debugging-runtime-other-workers =
-    .name = 다른 워커
+    .name = 다른 Worker
 # Title of the processes category.
 about-debugging-runtime-processes =
     .name = 프로세스
@@ -173,7 +173,7 @@ about-debugging-runtime-profile-button2 = 성능 프로파일
 # This string is displayed in the runtime page if the current configuration of the
 # target runtime is incompatible with service workers. "Learn more" points to MDN.
 # https://developer.mozilla.org/en-US/docs/Tools/about%3Adebugging#Service_workers_not_compatible
-about-debugging-runtime-service-workers-not-compatible = 브라우저 구성이 서비스 워커와 호환되지 않습니다. <a>더 알아보기</a>
+about-debugging-runtime-service-workers-not-compatible = 브라우저 구성이 Service Worker와 호환되지 않습니다. <a>더 알아보기</a>
 # This string is displayed in the runtime page if the remote browser version is too old.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
@@ -224,7 +224,7 @@ about-debugging-debug-target-list-empty = 아직 없습니다.
 about-debugging-debug-target-inspect-button = 검사
 # Text of a button displayed in the "This Firefox" page, in the Temporary Extension
 # section. Clicking on the button will open a file picker to load a temporary extension
-about-debugging-tmp-extension-install-button = 임시 부가기능 로드…
+about-debugging-tmp-extension-install-button = 임시 부가 기능 로드…
 # Text displayed when trying to install a temporary extension in the "This Firefox" page.
 about-debugging-tmp-extension-install-error = 임시 부가 기능을 설치하는 동안 오류가 발생했습니다.
 # Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
@@ -268,10 +268,10 @@ about-debugging-worker-action-start = 시작
 # Note this relates to the "Push" API, which is normally not localized so it is
 # probably better to not localize it.
 about-debugging-worker-action-push2 = Push
-    .disabledTitle = 서비스 워커 푸시가 현재 다중 프로세스 { -brand-shorter-name }에 대해 비활성화되어 있습니다.
+    .disabledTitle = Service Worker 푸시가 현재 다중 프로세스 { -brand-shorter-name }에 대해 비활성화되어 있습니다.
 # This string is displayed as a label of the button that starts a service worker.
 about-debugging-worker-action-start2 = 시작
-    .disabledTitle = 서비스 워커 시작이 현재 다중 프로세스 { -brand-shorter-name }에 대해 비활성화되어 있습니다
+    .disabledTitle = Service Worker 시작이 현재 다중 프로세스 { -brand-shorter-name }에 대해 비활성화되어 있습니다
 # This string is displayed as a label of the button that unregisters a service worker.
 about-debugging-worker-action-unregister = 등록해제
 # Displayed for service workers in runtime pages that listen to Fetch events.
@@ -298,7 +298,7 @@ about-debugging-worker-push-service =
     .label = Push 서비스
 # Displayed as title of the inspect button when service worker debugging is disabled.
 about-debugging-worker-inspect-action-disabled =
-    .title = 서비스 워커 검사가 현재 다중 프로세스 { -brand-shorter-name }에 대해 비활성화되어 있습니다.
+    .title = Service Worker 검사가 현재 다중 프로세스 { -brand-shorter-name }에 대해 비활성화되어 있습니다.
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-main-process-name = 메인 프로세스

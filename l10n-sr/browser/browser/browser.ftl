@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Приватно прегледање)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Приватно прегледање)
+       *[other] { $title } - { -brand-full-name } (Приватно прегледање)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Погледај информације сајта
 
@@ -78,6 +107,7 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Складишти податке у трајном складишту
 urlbar-addons-notification-anchor =
     .tooltiptext = Отвори панел са инсталацијом додатака
+urlbar-search-tips-confirm = Важи, разумем
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -111,6 +141,14 @@ urlbar-midi-blocked =
     .tooltiptext = Блокирали сте MIDI приступ за овај веб сајт.
 urlbar-install-blocked =
     .tooltiptext = Зауставили сте инсталацију додатка за ову веб локацију.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Уреди ову забелешку ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Забележи ову страницу ({ $shortcut })
 
 ## Page Action Context Menu
 
@@ -132,6 +170,9 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
+# This string prompts the user to use the list of one-click search engines in
+# the Urlbar and searchbar.
+search-one-offs-with-title = Овај пут потражи користећи:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =

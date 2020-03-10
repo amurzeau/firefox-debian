@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Palaqinem Wichin)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Palaqinem Wichin)
+       *[other] { $title } - { -brand-full-name } (Palaqinem Wichin)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Titz'et retamab'al ruxaq k'amaya'l
 
@@ -83,6 +112,11 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Tak'ulu' ato'ik
 urlbar-search-tips-confirm = Ütz, Xq'ax pa nuwi'
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = Pixa':
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -118,6 +152,14 @@ urlbar-midi-blocked =
     .tooltiptext = Xaq'ät ri MIDI rokem re ruxaq k'amaya'l re'.
 urlbar-install-blocked =
     .tooltiptext = Xaq'ät kiyakik taq rutz'aqat ajk'amaya'l ruxaq re'.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Tinuk' re jun yaketal ({ $shortcut }) re'
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Titz'aqatisäx re ruxaq k'amaya'l re' pa taq yaketal ({ $shortcut })
 
 ## Page Action Context Menu
 

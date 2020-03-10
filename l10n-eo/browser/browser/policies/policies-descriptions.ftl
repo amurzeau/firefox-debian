@@ -40,7 +40,7 @@ policy-DisableProfileImport = Malaktivigi la menueron por importi datumojn el al
 policy-DisableProfileRefresh = Malaktivigi la butonon "Reŝargi { -brand-short-name }" en la paĝo about:support.
 policy-DisableSafeMode = Malaktivigi la trajton por restartigi en sekura reĝimo. Rimarko: nur en Windows eblas malaktivigi la eniron al sekura reĝimo per la klavo "majuskle", pero grupa politiko.
 policy-DisableSecurityBypass = Malpermesi al uzanto ignori kelkajn sekurecajn avertojn.
-policy-DisableSetAsDesktopBackground = Malaktivigi la menueron "Difini kiel skribotablan fonon" por bildoj.
+policy-DisableSetAsDesktopBackground = Malaktivigi la menueron "Difini kiel labortablan fonon" por bildoj.
 policy-DisableSystemAddonUpdate = Malpermesi al retumilo instali kaj ĝisdatigi sistemajn aldonaĵojn.
 policy-DisableTelemetry = Malŝalti telemezuron.
 policy-DisplayBookmarksToolbar = Norme montri la ilaron de legosignoj.
@@ -88,5 +88,6 @@ policy-SecurityDevices = Instali modulojn PKCS #11.
 policy-SSLVersionMax = Difini la minimuman version de SSL.
 policy-SSLVersionMin = Difini la maksimuman version de SSL.
 policy-SupportMenu = Aldoni personecigitan menueron al la helpa menuo.
+policy-UserMessaging = Ne montri specifajn mesaĝojn al la uzanto.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Bloki viziton al kelkaj retejoj. Vidu la dokumentaron por havi pli da informo pri la formo.

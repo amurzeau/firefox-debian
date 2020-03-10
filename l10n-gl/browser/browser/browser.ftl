@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Navegación privada)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Navegación privada)
+       *[other] { $title } - { -brand-full-name } (Navegación privada)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Ver a información do sitio
 
@@ -107,6 +136,14 @@ urlbar-canvas-blocked =
     .tooltiptext = Bloqueou a extracción de datos de canvas para este sitio web.
 urlbar-midi-blocked =
     .tooltiptext = Bloqueou o acceso MIDI para este sitio web.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Editar este marcador ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Marcar esta páxina ({ $shortcut })
 
 ## Page Action Context Menu
 

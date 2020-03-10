@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } （隐私浏览）
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - （隐私浏览）
+       *[other] { $title } - { -brand-full-name } （隐私浏览）
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = 查看网站信息
 
@@ -83,6 +112,11 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = 获取帮助
 urlbar-search-tips-confirm = 好的，明白了
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = 提示：
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -118,6 +152,14 @@ urlbar-midi-blocked =
     .tooltiptext = 您已阻止此网站访问 MIDI。
 urlbar-install-blocked =
     .tooltiptext = 您已阻止此网站安装附加组件。
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = 编辑此书签 ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = 为此页添加书签 ({ $shortcut })
 
 ## Page Action Context Menu
 

@@ -9,7 +9,7 @@ cfr-doorhanger-extension-heading = Extensão Recomendada
 cfr-doorhanger-feature-heading = Recurso recomendado
 cfr-doorhanger-pintab-heading = Experimente isso: Fixar aba
 
-
+##
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Por que estou vendo isso
@@ -118,6 +118,15 @@ cfr-whatsnew-lockwise-take-title = Leve suas senhas com você
 cfr-whatsnew-lockwise-take-body = O aplicativo de celular { -lockwise-brand-short-name } permite acessar com segurança em qualquer lugar suas senhas guardadas.
 cfr-whatsnew-lockwise-take-link-text = Instalar o aplicativo
 
+## Search Bar
+
+cfr-whatsnew-searchbar-title = Digite menos, encontre mais usando a barra de endereços
+# Variables:
+#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
+cfr-whatsnew-searchbar-body-enginename = Acesse os sites que você mais usa com um simples clique na barra de endereços. Encontre coisas mais rápido com resultados do { $searchEngineName } e de seu histórico de navegação.
+cfr-whatsnew-searchbar-body-generic = Acesse os sites que você mais usa com um simples clique na barra de endereços. Encontre coisas mais rápido com resultados de pesquisa em seu histórico de navegação.
+cfr-whatsnew-searchbar-icon-alt-text = Ícone da lente de aumento
+
 ## Picture-in-Picture
 
 cfr-whatsnew-pip-header = Assista vídeos enquanto navega
@@ -140,10 +149,10 @@ cfr-whatsnew-fingerprinter-counter-header =
         [one] Fingerprinter bloqueado
        *[other] Fingerprinters bloqueados
     }
-cfr-whatsnew-fingerprinter-counter-body = O { -brand-shorter-name } bloqueia muitos rastreadores de identidade digital, que coletam secretamente informações sobre seu dispositivo e suas ações. Esses dados são usados para traçar um perfil seu e mostrar propaganda direcionada.
+cfr-whatsnew-fingerprinter-counter-body = O { -brand-shorter-name } bloqueia muitos rastreadores de identidade digital, que coletam secretamente informações sobre seu dispositivo e suas ações, traçando um perfil seu para mostrar propaganda direcionada.
 # Message variation when fingerprinters count is less than 10
 cfr-whatsnew-fingerprinter-counter-header-alt = Fingerprinters
-cfr-whatsnew-fingerprinter-counter-body-alt = O { -brand-shorter-name } consegue bloquear rastreadores de identidade digital, que coletam secretamente informações sobre seu dispositivo e suas ações. Esses dados são usados para traçar um perfil seu e mostrar propaganda direcionada.
+cfr-whatsnew-fingerprinter-counter-body-alt = O { -brand-shorter-name } consegue bloquear rastreadores de identidade digital, que coletam secretamente informações sobre seu dispositivo e suas ações, traçando um perfil seu para mostrar propaganda direcionada.
 
 ## Bookmark Sync
 

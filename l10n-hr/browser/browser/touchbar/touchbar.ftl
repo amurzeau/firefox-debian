@@ -8,7 +8,8 @@ back = Natrag
 forward = Naprijed
 reload = Osvježi
 home = Početna stranica
-fullscreen = Cijeli zaslon
+fullscreen = Cjeloekranski prikaz
+touchbar-fullscreen-exit = Izađi iz cjeloekranskog prikaza
 find = Traži
 new-tab = Nova kartica
 add-bookmark = Dodaj zabilješku
@@ -20,7 +21,7 @@ share = Dijeli
 close-window = Zatvori prozor
 open-sidebar = Bočne trake
 # This string describes shortcuts for search.
-search-popover = Kratice za pretraživanje
+search-popover = Prečaci za pretraživanje
 # Describes searches limited to a specific scope
 # (e.g. searching only in history).
 search-search-in = Traži u:
@@ -33,5 +34,5 @@ search-opentabs = Otvorene kartice
 search-tags = Oznake
 search-titles = Naslovi
 
-
+##
 

@@ -65,6 +65,26 @@ toolbar-button-page-save =
 main-context-menu-bookmark-page =
     .aria-label = Lisa see veebileht järjehoidjatesse
     .accesskey = j
+main-context-menu-bookmark-add =
+    .aria-label = Lisa see veebileht järjehoidjatesse
+    .accesskey = j
+    .tooltiptext = Lisa see leht järjehoidjatesse
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+main-context-menu-bookmark-add-with-shortcut =
+    .aria-label = Lisa see veebileht järjehoidjatesse
+    .accesskey = j
+    .tooltiptext = Lisa see leht järjehoidjatesse ({ $shortcut })
+main-context-menu-bookmark-change =
+    .aria-label = Muuda seda järjehoidjat
+    .accesskey = j
+    .tooltiptext = Muuda seda järjehoidjat
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+main-context-menu-bookmark-change-with-shortcut =
+    .aria-label = Muuda seda järjehoidjat
+    .accesskey = j
+    .tooltiptext = Muuda seda järjehoidjat ({ $shortcut })
 main-context-menu-open-link =
     .label = Ava link
     .accesskey = v

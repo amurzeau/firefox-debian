@@ -5,6 +5,16 @@
 
 ## App Menu
 
+appmenuitem-protection-report-title = Cosaint Príobháideachais
+appmenuitem-protection-report-tooltip =
+    .tooltiptext = Oscail do thuairisc phríobháideachais
+
+## Zoom Controls
+
+appmenuitem-zoom-enlarge =
+    .label = Zúmáil isteach
+appmenuitem-zoom-reduce =
+    .label = Zúmáil amach
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 

@@ -90,6 +90,7 @@ cfr-whatsnew-button =
     .tooltiptext = Qué de nòu
 cfr-whatsnew-panel-header = Qué de nòu
 cfr-whatsnew-release-notes-link-text = Legir la nòta de version
+cfr-whatsnew-fx70-title = { -brand-short-name } luta encara mai per vòstra vida privada
 cfr-whatsnew-tracking-protect-title = Protegissètz-vos dels traçadors
 cfr-whatsnew-tracking-protect-link-text = Consultar vòstre rapòrt
 # This string is displayed before a large numeral that indicates the total
@@ -103,9 +104,15 @@ cfr-whatsnew-tracking-blocked-title =
 cfr-whatsnew-tracking-blocked-subtitle = Dempuèi { DATETIME($earliestDate, month: "long", year: "numeric") }
 cfr-whatsnew-tracking-blocked-link-text = Veire lo rapòrt
 cfr-whatsnew-lockwise-backup-title = Salvagardatz vòstres senhals
+cfr-whatsnew-lockwise-backup-body = Ara podètz generar vòstres senhals securizats e i accedir de pertot ont vos connectatz.
 cfr-whatsnew-lockwise-backup-link-text = Activar las salvagardas
 cfr-whatsnew-lockwise-take-title = Emportatz vòstres senhals amb vos
 cfr-whatsnew-lockwise-take-link-text = Obténer l’aplicacion
+
+## Search Bar
+
+cfr-whatsnew-searchbar-title = Escrigatz mens, trobatz mai amb la barra d’adreça
+cfr-whatsnew-searchbar-icon-alt-text = Icòna de la lópia
 
 ## Picture-in-Picture
 
@@ -138,6 +145,7 @@ cfr-doorhanger-sync-bookmarks-ok-button = Activar { -sync-brand-short-name }
 ## Login Sync
 
 cfr-doorhanger-sync-logins-header = Perdatz pas jamai vòstre senhal
+cfr-doorhanger-sync-logins-body = Gardatz e sincronizatz d’un biais segur los senhals de totes vòstres periferics.
 cfr-doorhanger-sync-logins-ok-button = Activar { -sync-brand-short-name }
     .accesskey = A
 
@@ -162,8 +170,18 @@ cfr-doorhanger-socialtracking-dont-show-again = Me mostrar pas mai de messatges 
     .accesskey = d
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } a empachat un traçador de malhum social de vos pistar aquí
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } a blocat un traçador d’emprunta numerica sus aquesta pagina
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } a blocat un minaire de criptomonedas sus aquesta pagina
+cfr-doorhanger-cryptominers-description = Vòstra vida privada es importanta. Ara { -brand-short-name } bloca los minaires de criptomonedas, qu’utilizan la poténcia de calcul de vòstre ordenador per minar de moneda numerica.
 
 ## Enhanced Tracking Protection Milestones
 
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] { -brand-short-name } a blocat <b>{ $blockedCount }</b> traçador dempuèi { $date } !
+       *[other] { -brand-short-name } a blocat <b>{ $blockedCount }</b> traçadors dempuèi { $date } !
+    }
 cfr-doorhanger-milestone-ok-button = O mostrar tot
     .accesskey = m

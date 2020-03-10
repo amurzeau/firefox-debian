@@ -101,9 +101,9 @@ newtab-privacy-modal-link = Tìm hiểu cách hoạt động của quyền riên
 ##
 
 # Bookmark is a noun in this case, "Remove bookmark".
-newtab-menu-remove-bookmark = Xóa đánh dấu
+newtab-menu-remove-bookmark = Xóa dấu trang
 # Bookmark is a verb here.
-newtab-menu-bookmark = Đánh dấu
+newtab-menu-bookmark = Dấu trang
 
 ## Context Menu - Downloaded Menu. "Download" in these cases is not a verb,
 ## it is a noun. As in, "Copy the link that belongs to this downloaded item".
@@ -190,6 +190,7 @@ newtab-discovery-empty-section-topstories-timed-out = Rất tiếc! Chúng tôi 
 newtab-pocket-read-more = Các chủ đề phổ biến:
 newtab-pocket-more-recommendations = Nhiều khuyến nghị hơn
 newtab-pocket-whats-pocket = { -pocket-brand-name } là gì?
+newtab-pocket-learn-more = Tìm hiểu thêm
 newtab-pocket-cta-button = Nhận { -pocket-brand-name }
 newtab-pocket-cta-text = Lưu những câu chuyện bạn yêu thích trong { -pocket-brand-name } và vui vẻ khi đọc chúng.
 

@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (Navigazione anonima)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (Navigazione anonima)
+       *[other] { $title } - { -brand-full-name } (Navigazione anonima)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = Visualizza informazioni sul sito
 
@@ -83,6 +112,9 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Ottieni assistenza
 urlbar-search-tips-confirm = OK, tutto chiaro
+urlbar-tip-icon-description =
+    .alt = Suggerimento:
+
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
 ## Variables:
@@ -117,6 +149,14 @@ urlbar-midi-blocked =
     .tooltiptext = È stato bloccato l’accesso alle funzioni MIDI per questo sito web.
 urlbar-install-blocked =
     .tooltiptext = È stata bloccata l’installazione di componenti aggiuntivi per questo sito.
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = Modifica questo segnalibro ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = Aggiungi ai segnalibri ({ $shortcut })
 
 ## Page Action Context Menu
 

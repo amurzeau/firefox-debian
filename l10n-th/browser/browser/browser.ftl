@@ -33,6 +33,35 @@ browser-main-window-content-title =
         [private] { $title } - { -brand-full-name } (การเรียกดูแบบส่วนตัว)
        *[default] { $title } - { -brand-full-name }
     }
+
+## This is the default window title in case there is content
+## title to be displayed.
+##
+## On macOS the title doesn't include the brand name, on all other
+## platforms it does.
+##
+## For example, in private mode on Windows, the title will be:
+## "Example Title - Mozilla Firefox (Private Browsing)"
+##
+## while on macOS in default mode it will be:
+## "Example Title"
+##
+## Variables
+##   $title (String) - Content title string.
+
+browser-main-window-content-title-default =
+    { PLATFORM() ->
+        [macos] { $title }
+       *[other] { $title } - { -brand-full-name }
+    }
+browser-main-window-content-title-private =
+    { PLATFORM() ->
+        [macos] { $title } - (การเรียกดูแบบส่วนตัว)
+       *[other] { $title } - { -brand-full-name } (การเรียกดูแบบส่วนตัว)
+    }
+
+##
+
 urlbar-identity-button =
     .aria-label = ดูข้อมูลไซต์
 
@@ -56,6 +85,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = เปิดแผงข้อความ
 urlbar-geolocation-notification-anchor =
     .tooltiptext = เปิดแผงคำขอตำแหน่งที่ตั้ง
+urlbar-xr-notification-anchor =
+    .tooltiptext = เปิดแผงสิทธิอนุญาตความจริงเสมือน
 urlbar-storage-access-anchor =
     .tooltiptext = เปิดแผงสิทธิอนุญาตกิจกรรมการเรียกดู
 urlbar-translate-notification-anchor =
@@ -81,6 +112,11 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = รับความช่วยเหลือ
 urlbar-search-tips-confirm = ตกลง เข้าใจแล้ว
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = เคล็ดลับ:
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -94,6 +130,8 @@ urlbar-search-tips-redirect = เริ่มการค้นหาของ�
 
 urlbar-geolocation-blocked =
     .tooltiptext = คุณได้ปิดกั้นข้อมูลตำแหน่งที่ตั้งสำหรับเว็บไซต์นี้
+urlbar-xr-blocked =
+    .tooltiptext = คุณได้ปิดกั้นการเข้าถึงอุปกรณ์ความจริงเสมือนสำหรับเว็บไซต์นี้
 urlbar-web-notifications-blocked =
     .tooltiptext = คุณได้ปิดกั้นการแจ้งเตือนสำหรับเว็บไซต์นี้
 urlbar-camera-blocked =
@@ -114,6 +152,14 @@ urlbar-midi-blocked =
     .tooltiptext = คุณได้ปิดกั้นการเข้าถึง MIDI สำหรับเว็บไซต์นี้
 urlbar-install-blocked =
     .tooltiptext = คุณได้ปิดกั้นการติดตั้งส่วนเสริมสำหรับเว็บไซต์นี้
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
+urlbar-star-edit-bookmark =
+    .tooltiptext = แก้ไขที่คั่นหน้านี้ ({ $shortcut })
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the add bookmark command.
+urlbar-star-add-bookmark =
+    .tooltiptext = เพิ่มที่คั่นหน้าสำหรับหน้านี้ ({ $shortcut })
 
 ## Page Action Context Menu
 
