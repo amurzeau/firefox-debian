@@ -439,10 +439,15 @@ class WebGLContext : public VRefCounted, public SupportsWeakPtr<WebGLContext> {
 #ifdef __clang__
 #  pragma clang diagnostic push
 #  pragma clang diagnostic ignored "-Wformat-security"
+#elif defined(__GNUC__)
+#  pragma GCC diagnostic push
+#  pragma GCC diagnostic ignored "-Wformat-security"
 #endif
     text.AppendPrintf(fmt, args...);
 #ifdef __clang__
 #  pragma clang diagnostic pop
+#elif defined(__GNUC__)
+#  pragma GCC diagnostic pop
 #endif
 
     GenerateErrorImpl(err, text);
@@ -1297,10 +1302,15 @@ class WebGLContext : public VRefCounted, public SupportsWeakPtr<WebGLContext> {
 #ifdef __clang__
 #  pragma clang diagnostic push
 #  pragma clang diagnostic ignored "-Wformat-security"
+#elif defined(__GNUC__)
+#  pragma GCC diagnostic push
+#  pragma GCC diagnostic ignored "-Wformat-security"
 #endif
     msg.AppendPrintf(fmt, args...);
 #ifdef __clang__
 #  pragma clang diagnostic pop
+#elif defined(__GNUC__)
+#  pragma GCC diagnostic pop
 #endif
 
     GenerateErrorImpl(0, msg);
