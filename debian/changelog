@@ -1,3 +1,27 @@
+firefox (74.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2020-08, also known as:
+    CVE-2020-6805, CVE-2020-6806, CVE-2020-6807, CVE-2020-6808,
+    CVE-2020-6809, CVE-2020-6810, CVE-2020-6811, CVE-2019-20503,
+    CVE-2020-6812, CVE-2020-6813, CVE-2020-6814, CVE-2020-6815.
+
+  * debian/rules:
+    - Use the -o flag to redirect preprocessor output rather than shell
+      redirection to work around bz#1621465.
+    - Remove obj-*/.mozbuild on clean.
+  * debian/control*: Bump nspr, nss, sqlite and cbindgen build dependencies.
+
+  * config/mozunit/mozunit/mozunit.py,
+    python/mozbuild/mozbuild/action/langpack_manifest.py,
+    python/mozbuild/mozbuild/jar.py, python/mozbuild/mozbuild/preprocessor.py,
+    python/mozbuild/mozbuild/test/backend/test_build.py: Use io.open() rather
+    than open() in mozbuild/preprocessor.py. bz#1613263.
+  * dom/canvas/ClientWebGLContext.h, dom/canvas/WebGLContext.h: Fix build
+    errors with -Werror=format-security with GCC.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 11 Mar 2020 12:15:37 +0900
+
 firefox (73.0.1-1) unstable; urgency=medium
 
   * New upstream release.
