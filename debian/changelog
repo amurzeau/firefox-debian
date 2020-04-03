@@ -1,3 +1,10 @@
+firefox (74.0.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fixes for mfsa2020-11, also known as: CVE-2020-6819, CVE-2020-6820.
+
+ -- Mike Hommey <glandium@debian.org>  Sat, 04 Apr 2020 06:42:37 +0900
+
 firefox (74.0-1) unstable; urgency=medium
 
   * New upstream release.
