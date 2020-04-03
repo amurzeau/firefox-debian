@@ -13,6 +13,8 @@
 <!ENTITY openFileCmd.commandkey "o">
 <!ENTITY closeOtherTabs.label "Cerrar las otras pestañas">
 <!ENTITY closeOtherTabs.accesskey "T">
+<!ENTITY closeTabsToTheEnd.label "Cerrar pestañas a la derecha">
+<!ENTITY closeTabsToTheEnd.accesskey "d">
 <!ENTITY uploadFile.label "Subir archivo…">
 <!ENTITY uploadFile.accesskey "b">
 <!ENTITY printSetupCmd.label "Configurar página…">
@@ -44,10 +46,13 @@
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY goMenu.label "Ir">
 <!ENTITY goMenu.accesskey "i">
+<!ENTITY goBackCmd.commandKey "[">
+<!ENTITY goForwardCmd.commandKey "]">
 <!ENTITY goHomeCmd.label "Inicio">
 <!ENTITY goHomeCmd.accesskey "n">
 <!ENTITY historyCmd.label "Historial">
 <!ENTITY historyCmd.accesskey "H">
+<!ENTITY historyCmd.key "H">
 <!ENTITY history.commandKey "h">
 <!ENTITY recentTabs.label "Pestañas cerradas recientemente">
 <!ENTITY recentTabs.accesskey "P">
@@ -123,3 +128,5 @@
 <!ENTITY popupsManager.accesskey "d">
 <!ENTITY clearPrivateDataCmd.label "Limpiar datos privados…">
 <!ENTITY clearPrivateDataCmd.accesskey "L">
+<!ENTITY stopCmd.macCommandKey ".">
+<!ENTITY fullScreenCmd.commandKey "f">

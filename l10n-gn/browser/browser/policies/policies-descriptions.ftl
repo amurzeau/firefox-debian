@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Emboheko purureko WebExtensions oikekuaa hag̃ua chrome.storage.managed rupive.
+policy-AppAutoUpdate = Embojuruja térã eipe’a ñembohekopyahu ijeheguíva jepysokuégui.
 policy-AppUpdateURL = Embohekopyahu URL kundaharape rembipuru ñemomba’epyre.
 policy-Authentication = Emboheko ñemoañete ojuajúva ñanduti rendápe g̃uarã moneĩmbyre.
 policy-BlockAboutAddons = Ejoko Moimbaha ñangarekohápe jeike (about: addons).
@@ -21,9 +22,11 @@ policy-Bookmarks = Emoheñói techaukaha tembipuru renda rechaukahápe, pe techa
 policy-CaptivePortal = Embojuruja térã eipe’a pe pytyvõha ñapytĩmbýva.
 policy-CertificatesDescription = Embojuaju mboajepyre térã eipuru mboajepyre moingepyre.
 policy-Cookies = Emoneĩ térã embotove ani ñanduti renda omoinge kookie.
+policy-DisabledCiphers = Embogue papapy.
 policy-DefaultDownloadDirectory = Emoha’eño marandurenda mboguejerã ijypykuéva.
 policy-DisableAppUpdate = Ani eheja oñembohekopyahu kundahára.
 policy-DisableBuiltinPDFViewer = Eipe’aite PDF.js, PDF jehechaha oĩva { -brand-short-name } ndive.
+policy-DisableDefaultBrowserAgent = Omboyke pe kundahára ijypyguáva oñepyrũvo hembiapo. Kóva ojokupyty Windows ndive añoite; ambue plataforma ndorekói hesegua.
 policy-DisableDeveloperTools = Ejoko ñangarekohára rembipurúpe jeike.
 policy-DisableFeedbackCommands = Eipe’a mbohapeha emondo hag̃ua neñe’ẽ pytyvõha poravorã guive (Emondo neñe’ẽ ha emomarandu tenda imarãva).
 policy-DisableFirefoxAccounts = Eipe’a mba'epytyvõrã { -fxaccount-brand-name } pegua, oĩhápe avei Sync.
@@ -72,7 +75,6 @@ policy-OfferToSaveLoginsDefault = Emopyenda tepykue ypyguáva omoneĩ hag̃ua { 
 policy-OverrideFirstRunPage = Emboyke kuatiarogue tembiapo ñepyrũguáva. Emboaje ko purureko mba’eve’ỹre eipe’aséramo kuatiarogue tembiapo ñepyrũguáva.
 policy-OverridePostUpdatePage = Emboyke kuatiarogue “Mba’epyahu” embohekopyahu rire. Emboaje ko purureko mba’eve’ỹre eipe’aséramo kuatiarogue embohekopyahu rire.
 policy-PasswordManagerEnabled = Embojuruja ñe’ẽñemi ñongatu ñe’ẽñemi ñangarekohápe.
-policy-Permissions = Emboheko ñemoneĩ ta’anganohẽha, ñe’ẽatãha, tendaite ha marandu’ípe g̃uarã.
 policy-Permissions2 = Emboheko ñemoneĩ ta’anganohẽha, ñe’ẽatãha, tendaite, marandu’í ha ñembohetápe g̃uarã.
 policy-PopupBlocking = Emoneĩ ndahetái ñanduti rendápe ohechaukávo ovetã iñapysẽva ijypykue rupi.
 policy-Preferences = Emboheko ha ejoko tepykue jeguerohoryvéva aty’ípe g̃uarã.

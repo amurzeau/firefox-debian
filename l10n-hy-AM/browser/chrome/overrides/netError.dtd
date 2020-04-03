@@ -8,7 +8,7 @@
 <!ENTITY loadError.label "Էջը բեռնելու խնդիր">
 <!ENTITY retry.label "Կրկին փորձել">
 <!ENTITY returnToPreviousPage.label "Հետ գնալ">
-<!ENTITY returnToPreviousPage1.label "Վերադառնալ (առաջարկվում է)">
+<!ENTITY returnToPreviousPage1.label "Հետ գնալ (առաջարկվում է)">
 <!ENTITY advanced2.label "Լրացուցիչ…">
 <!ENTITY viewCertificate.label "Զննել Արտոնագիրը">
 
@@ -30,7 +30,7 @@
   <li>Եթե կապակցված եք, բայց ունեք firewall, ստուգեք, թե արդյոք &brandShortName;-ը ունի վեբ մուտք գործելու թույլտվություն:</li>
 </ul>">
 
-<!ENTITY fileNotFound.title "Ֆայլը չի գտնվել">
+<!ENTITY fileNotFound.title "Նիշքը չի գտնվել">
 <!ENTITY fileNotFound.longDesc "<ul> <li>Ստուգեք ֆայլի անունը մեծատառերի կամ այլ տպագրական սխալների համար:</li> <li>Ստուգեք, թե արդյոք ֆայլը չի տեղափոխվել, անվանափոխվել կամ ջնջվել:</li> </ul>">
 
 <!ENTITY fileAccessDenied.title "Մատչումը ֆայլին մերժված է">
@@ -51,7 +51,7 @@
 <!ENTITY netInterrupt.title "Կապը խզվեց">
 <!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
 
-<!ENTITY notCached.title "Ավարտվել է">
+<!ENTITY notCached.title "Փաստաթուղթը սպառվել է">
 <!ENTITY notCached.longDesc "<p>Պահանջվող փաստաթուղթը հասանելի չէ &brandShortName;-ի պահոցում։</p><ul><li>Անվտանգության նկատառումներով &brandShortName;-ը ինքնաշխատ չի վերապահանջում նմանատիպ փաստաթղթերը։ </li><li>Սեղմեք Կրկին փորձել՝ վերապահանջելու փաստաթուղթը վեբ կայքից։</li></ul>">
 
 <!ENTITY netOffline.title "Անցանց եղանակ">

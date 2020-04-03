@@ -26,6 +26,8 @@ menu =
     .title = 메뉴 열기
 # This menuitem is only visible on Windows
 menu-menuitem-import = 비밀번호 가져오기…
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = 다른 브라우저에서 가져오기…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] 설정
@@ -63,7 +65,7 @@ about-logins-list-item-breach-icon =
 
 login-intro-heading = 저장된 로그인을 찾으십니까? { -sync-brand-short-name }를 설정하세요.
 about-logins-login-intro-heading-logged-in = 동기화된 로그인을 찾을 수 없습니다.
-login-intro-description = 다른 기기에 { -brand-product-name }의 로그인을 저장한 경우, 다음 방법을 참조하시기 바랍니다:
+login-intro-description = 다른 기기에 { -brand-product-name }의 로그인을 저장한 경우, 다음 방법을 참조하세요:
 login-intro-instruction-fxa = 로그인이 저장된 기기에서 { -fxaccount-brand-name }을 만들거나 로그인하세요
 login-intro-instruction-fxa-settings = { -sync-brand-short-name } 설정에서 로그인 확인란을 선택했는지 확인하세요
 about-logins-intro-instruction-help = 더 많은 도움이 필요하면 <a data-l10n-name="help-link">{ -lockwise-brand-short-name } 지원</a>을 방문하세요
@@ -94,9 +96,33 @@ login-item-time-changed = 마지막 수정: { DATETIME($timeChanged, day: "numer
 login-item-time-created = 생성: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = 마지막 사용: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
 
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = 저장된 로그인을 편집하려면 자격 증명을 검증하세요.
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = 저장된 로그인 편집
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = 저장된 비밀번호를 표시하려면 자격 증명을 검증하세요.
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = 저장된 비밀번호 표시
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = 저장된 비밀번호를 복사하려면 자격 증명을 검증하세요.
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = 저장된 비밀번호 복사
+
 ## Master Password notification
 
-master-password-notification-message = 저장된 로그인과 비밀번호를 보려면 기본 비밀번호를 입력하세요
+master-password-notification-message = 저장된 로그인과 비밀번호를 보려면 마스터 비밀번호를 입력하세요
 master-password-reload-button =
     .label = 로그인
     .accesskey = L

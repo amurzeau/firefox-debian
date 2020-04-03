@@ -51,7 +51,7 @@ pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
 help-button-label = { -brand-short-name } podrška
-addons-button-label = Proširenja i motivi
+addons-button-label = Proširenja i teme
 focus-search =
     .key = f
 close-button =
@@ -59,7 +59,7 @@ close-button =
 
 ## Browser Restart Dialog
 
-feature-enable-requires-restart = { -brand-short-name } se mora ponovo pokrenuti da bi se omogućila ova funkcija.
+feature-enable-requires-restart = { -brand-short-name } se mora ponovo pokrenuti, kako bi se aktivirala ova funkcija.
 feature-disable-requires-restart = { -brand-short-name } se mora ponovo pokrenuti da bi se onemogućila ova funkcija.
 should-restart-title = Ponovo pokreni { -brand-short-name }
 should-restart-ok = Ponovo pokreni { -brand-short-name } sada
@@ -102,7 +102,7 @@ extension-controlled-proxy-config = Dodatak, <img data-l10n-name="icon"/> { $nam
 #
 # <img data-l10n-name="addons-icon"/> will be replaced with Add-ons icon
 # <img data-l10n-name="menu-icon"/> will be replaced with Menu icon
-extension-controlled-enable = Da biste omogućili dodatak idite na <img data-l10n-name="addons-icon"/> Dodaci u <img data-l10n-name="menu-icon"/> izborniku.
+extension-controlled-enable = Za aktiviranje dodatak idi na <img data-l10n-name="addons-icon"/> Dodaci u <img data-l10n-name="menu-icon"/> izborniku.
 
 ## Preferences UI Search Results
 
@@ -121,20 +121,20 @@ startup-header = Pokretanje
 # { -brand-short-name } will be 'Firefox Developer Edition',
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
-    .label = Dozvoli da se { -brand-short-name } i Firefox pokreću u isto vrijeme
+    .label = Dozvoli da se { -brand-short-name } i Firefox pokrenu istovremeno
 use-firefox-sync = Savjet: Ovo koristi odvojene profile. Koristi { -sync-brand-short-name } za dijeljenje podataka između njih.
 get-started-not-logged-in = Prijavite se u { -sync-brand-short-name }…
 get-started-configured = Otvori { -sync-brand-short-name } postavke
 always-check-default =
     .label = Uvijek provjeri je li { -brand-short-name } zadani preglednik
     .accesskey = z
-is-default = { -brand-short-name } je trenutačno tvoj standardni preglednik
-is-not-default = { -brand-short-name } trenutačno nije tvoj standardni preglednik
+is-default = { -brand-short-name } je trenutačno tvoj zadani preglednik
+is-not-default = { -brand-short-name } trenutačno nije tvoj zadani preglednik
 set-as-my-default-browser =
     .label = Postavi kao zadano…
     .accesskey = d
 startup-restore-previous-session =
-    .label = Vrati prijašnju sesiju
+    .label = Vrati prethodnu sesiju
     .accesskey = s
 startup-restore-warn-on-quit =
     .label = Upozorava te prilikom izlaska iz preglednika
@@ -160,7 +160,7 @@ show-tabs-in-taskbar =
     .label = Prikaži pretpregled kartica u Windows traci zadataka
     .accesskey = k
 browser-containers-enabled =
-    .label = Omogući sadržajne kartice
+    .label = Aktiviraj kontejner kartice
     .accesskey = m
 browser-containers-learn-more = Saznaj više
 browser-containers-settings =
@@ -179,7 +179,7 @@ containers-disable-alert-ok-button =
         [few] Zatvori { $tabCount } kontejnerske kartice
        *[other] Zatvori { $tabCount } kontejnerskih kartica
     }
-containers-disable-alert-cancel-button = Drži omogućeno
+containers-disable-alert-cancel-button = Ostavi aktivirano
 containers-remove-alert-title = Ukloniti ovaj kontejner?
 # Variables:
 #   $count (Number) - Number of tabs that will be closed.
@@ -225,7 +225,7 @@ manage-browser-languages-button =
     .label = Postavi alternative…
     .accesskey = l
 confirm-browser-language-change-description = Ponovo pokreni { -brand-short-name } za spremanje ove promjene
-confirm-browser-language-change-button = Primjeni i ponovo pokreni
+confirm-browser-language-change-button = Primijeni i ponovo pokreni
 translate-web-pages =
     .label = Prevedi web sadržaj
     .accesskey = P
@@ -337,9 +337,9 @@ play-drm-content =
 play-drm-content-learn-more = Saznaj više
 update-application-title = { -brand-short-name } dopune
 update-application-description = Ažuriraj { -brand-short-name } za najbolju preformansu, stabilnost i sigurnost.
-update-application-version = Inačica { $version } <a data-l10n-name="learn-more">Što je novo</a>
+update-application-version = Verzija { $version } <a data-l10n-name="learn-more">Što je novo</a>
 update-history =
-    .label = Prikaži povijest ažuriranja…
+    .label = Prikaži povijest nadogradnji …
     .accesskey = P
 update-application-allow-description = Dozvoli { -brand-short-name }u da
 update-application-auto =
@@ -392,7 +392,7 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = Granica procesiranja sadržaja
     .accesskey = G
 performance-limit-content-process-enabled-desc = Dodatni procesi sadržaja mogu poboljšati performansu kad koristiš više kartica, ali će koristiti i više memorije.
-performance-limit-content-process-blocked-desc = Izmjena broja procesa sadržaja je moguća samo s višeprocesnim { -brand-short-name }om. <a data-l10n-name="learn-more">Saznaj kako provjeriti je li omogućen višeprocesni rad.</a>
+performance-limit-content-process-blocked-desc = Izmjena broja procesa sadržaja je moguća samo s višeprocesnim { -brand-short-name }om. <a data-l10n-name="learn-more">Saznaj kako provjeriti je li višeprocesni rad aktiviran.</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
@@ -417,7 +417,7 @@ browsing-search-on-start-typing =
     .label = Traženje teksta već prilikom upisivanja
     .accesskey = k
 browsing-picture-in-picture-toggle-enabled =
-    .label = Omogući video kontrole za slika-u-slici
+    .label = Aktiviraj video kontrole za slika-u-slici
     .accesskey = O
 browsing-picture-in-picture-learn-more = Saznaj više
 browsing-cfr-recommendations =
@@ -744,7 +744,7 @@ sync-connect-another-device = Poveži drugi uređaj
 sync-manage-devices = Upravljaj uređajima
 sync-fxa-begin-pairing = Upari uređaj
 sync-tos-link = Uvjeti korištenja
-sync-fxa-privacy-notice = Pravila o privatnosti
+sync-fxa-privacy-notice = Napomena o privatnosti
 
 ## Privacy Section
 
@@ -785,6 +785,17 @@ forms-master-pw-change =
     .accesskey = m
 forms-master-pw-fips-title = Trenutačno si u FIPS modu. FIPS ne dopušta praznu glavnu lozinku.
 forms-master-pw-fips-desc = Promjena lozinke nije uspjela
+
+## OS Authentication dialog
+
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message = Potvrdite svoj identitet kako biste stvorili glavnu lozinku.
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = stvorite glavnu lozinku
+master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
 
@@ -945,9 +956,9 @@ content-blocking-warning-description = Blokiranje sadržaja može uzrokovati gre
 content-blocking-learn-how = Saznaj kako
 content-blocking-etp-warning-description = Blokiranje programa za praćenje moglo bi utjecati na funkcionalnost nekih web lokacija. Učitaj stranicu s programima za praćenje, kako bi se učitao sav sadržaj.
 content-blocking-warning-learn-how = Saznaj kako
-content-blocking-reload-description = Morat ćete osvježiti svoje kartice kako bi primijenili ove promjene.
+content-blocking-reload-description = Morat ćeš ponovo učitati svoje kartice, kako bi se ove promjene primijenile.
 content-blocking-reload-tabs-button =
-    .label = Osvježi sve kartice
+    .label = Ponovo učitaj sve kartice
     .accesskey = r
 content-blocking-trackers-label =
     .label = Pratitelji
@@ -1039,7 +1050,7 @@ permissions-a11y-privacy-link = Saznaj više
 
 ## Privacy Section - Data Collection
 
-collection-header = Prikupljanje i upotreba podataka od strane { -brand-short-name }a
+collection-header = { -brand-short-name } – prikupljanje i upotreba podataka
 collection-description = Želimo ti omogučiti izbor i prikupljati samo onoliko koliko nam treba da omogučimo i unaprijedimo { -brand-short-name } za sve. Uvijek pitamo za dozvolu prije nego što počnemo primati osobne informacije.
 collection-privacy-notice = Politika privatnosti
 collection-health-report-telemetry-disabled = Više ne dopuštaš { -vendor-short-name } snimanje tehničkih podataka i podataka o interakciji. Svi stari podaci biti će izbrisani u roku od 30 dana.
@@ -1050,7 +1061,7 @@ collection-health-report =
 collection-health-report-link = Saznaj više
 collection-studies =
     .label = Dozvoli { -brand-short-name }u instalirati i pokrenuti studije
-collection-studies-link = Pregledajte { -brand-short-name } studije
+collection-studies-link = Pregledaj { -brand-short-name } studije
 addon-recommendations =
     .label = Dopusiti { -brand-short-name } da radi presonalizirane preporuke dodataka
 addon-recommendations-link = Saznaj više

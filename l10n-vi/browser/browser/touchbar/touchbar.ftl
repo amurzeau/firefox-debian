@@ -13,13 +13,13 @@ touchbar-fullscreen-exit = Thoát chế độ toàn màn hình
 find = Tìm
 new-tab = Thẻ mới
 add-bookmark = Thêm dấu trang
-open-bookmarks-sidebar = Mở thanh bên dấu trang
+open-bookmarks-sidebar = Mở thanh lề dấu trang
 reader-view = Chế độ đọc sách
 # Meant to match the string displayed in an empty URL bar.
 open-location = Tìm kiếm hoặc nhập địa chỉ
 share = Chia sẻ
 close-window = Đóng cửa sổ
-open-sidebar = Thanh bên
+open-sidebar = Thanh lề
 # This string describes shortcuts for search.
 search-popover = Phím tắt tìm kiếm
 # Describes searches limited to a specific scope

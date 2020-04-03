@@ -782,6 +782,17 @@ forms-master-pw-change =
 forms-master-pw-fips-title = Você está no momento no modo FIPS. O FIPS necessita de uma senha mestra não vazia.
 forms-master-pw-fips-desc = Falha na alteração da senha
 
+## OS Authentication dialog
+
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message = Confirme sua identidade para criar uma senha mestra.
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = criar uma senha mestra
+master-password-os-auth-dialog-caption = { -brand-full-name }
+
 ## Privacy Section - History
 
 history-header = Histórico
@@ -939,7 +950,7 @@ content-blocking-fingerprinters = Fingerprinters (rastreadores de identidade dig
 content-blocking-warning-title = Atenção!
 content-blocking-warning-description = O bloqueio de conteúdo pode fazer alguns sites não funcionarem direito. É fácil desativar o bloqueio em sites que você confia.
 content-blocking-learn-how = Saiba como
-content-blocking-etp-warning-description = Bloquear rastreadores pode afetar a funcionalidade de alguns sites. Recarregue uma página com rastreadores para carregar todo o conteúdo.
+content-blocking-etp-warning-description = Bloquear rastreadores pode afetar a funcionalidade de alguns sites. Você pode desativar a proteção aprimorada contra rastreamento somente em um site para carregar todo o conteúdo.
 content-blocking-warning-learn-how = Saiba como
 content-blocking-reload-description = É preciso recarregar as abas para aplicar essas mudanças.
 content-blocking-reload-tabs-button =

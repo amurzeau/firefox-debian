@@ -305,7 +305,7 @@ play-drm-content-learn-more = مزید سیکھیں
 update-application-title = { -brand-short-name } تازہ کاریاں:
 update-application-version = ورژن{ $version } <a data-l10n-name="learn-more">نیا کیا ہے</a>
 update-history =
-    .label = تازہ ترین تاریخ دکھائیں
+    .label = تازہ ترین سابقات دکھائیں
     .accesskey = p
 update-application-allow-description = { -brand-short-name } کو اجازت دیں
 update-application-auto =
@@ -388,6 +388,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = نئے دریچے اور ٹیبس
+home-new-windows-tabs-description2 = جب آپ اپنا ابتدیی صفحہ ، نئی ونڈوز اور نئی ٹیبز کھولتے ہیں تو  کا انتخاب کریں اپ کیا دیکھنا چاہتے ہیں۔
 
 ## Home Section - Home Page Customization
 
@@ -465,10 +466,13 @@ home-prefs-sections-rows-option =
 ## Search Section
 
 search-bar-header = تلاش بار
+search-bar-hidden =
+    .label = تلاش اور نیویگیشن کے لئے ایڈریس بار کا استعمال کریں
 search-bar-shown =
     .label = سرچ بار کا ٹولبار مے ا ضافہ کریں۔
 search-engine-default-header = طےشدہ تلاش انجن
 search-engine-default-desc = پتے کی بار اور تلاش بار میں استعمال کرنے کیلئے طے شدہ تلاش انجن منتخب کریں۔
+search-engine-default-private-desc-2 = نجی ونڈوں کے لیئے مختلف'طے شدہ تلاش انجن منتخب کریں
 search-separate-default-engine =
     .label = اس تلاش انجن کو نجی ونڈوز میں استعمال کریں
     .accesskey = U
@@ -482,7 +486,8 @@ search-show-suggestions-url-bar-option =
     .accesskey = I
 search-show-suggestions-private-windows =
     .label = نجی ونڈوز میں تلاش کی تجاویز دکھائیں
-search-suggestions-cant-show = تلاش کردہ تجاویز محل وقوع کے بار کے نتائج میں دکھاءی نھیں جائنگے کیونکہ { -brand-short-name } تاریخ کبھی یاد نہیں رکھنے پر تشکیل کردہ ہے۔
+suggestions-addressbar-settings = براؤزنگ سابقات، بُک مارکس ، اور ٹیب تجاویز کیلئے ترجیحات تبدیل کریں
+search-suggestions-cant-show = تلاش کردہ تجاویز محل وقوع کے بار کے نتائج میں دکھاءی نھیں جائنگے کیونکہ { -brand-short-name } سابقات کبھی یاد نہیں رکھنے پر تشکیل کردہ ہے۔
 search-one-click-header = ایک کلک تلاش انجن
 search-choose-engine-column =
     .label = تلاش انجن
@@ -516,6 +521,9 @@ containers-header = حامل ٹیبز
 containers-add-button =
     .label = نئے حامل کا اضافہ کریں
     .accesskey = A
+containers-new-tab-check =
+    .label = ہر نئے ٹیب کے لئے ایک کنٹینر منتخب کریں
+    .accesskey = S
 containers-preferences-button =
     .label = ترجیحات
 containers-remove-button =
@@ -528,7 +536,7 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = اپنی ویب اپنے ساتھ رکھیں
-sync-signedout-description = اپنے تمام ڈیوائس اپنے بک مارکس، تاریخ، ٹیب، پاس ورڈ، ایڈ اون، اور ترجیحات کو ہم وقت ساز کریں۔
+sync-signedout-description = اپنے تمام ڈیوائس اپنے بک مارکس، سابقات، ٹیب، پاس ورڈ، ایڈ اون، اور ترجیحات کو ہم وقت ساز کریں۔
 sync-signedout-account-title = کسی { -fxaccount-brand-name } کے ساتھ جڑیں
 sync-signedout-account-create = اکائونٹ نہیں ہے؟ شروع کریں
     .accesskey = c
@@ -653,7 +661,7 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = محفوظ کریں
     .accesskey = v
-sync-connect-another-device = اہک اور آلہ جوڑیں
+sync-connect-another-device = ایک اور آلہ جوڑیں
 sync-manage-devices = آلات کو منظم کریں
 sync-fxa-begin-pairing = ایک آلہ جوڑیں
 sync-tos-link = سروس کی ٹرمز
@@ -669,6 +677,10 @@ privacy-header = براؤزر رازداری
 ## Privacy Section - Logins and Passwords
 
 logins-header = لاگ ان & پاس ورڈ
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
+forms-ask-to-save-logins =
+    .label = ویب سائٹس کے لئے لاگ ان اور پاس ورڈ کو محفوظ کرنے کے لئے پوچھیں
+    .accesskey = r
 forms-exceptions =
     .label = استثنیات…
     .accesskey = x
@@ -687,6 +699,15 @@ forms-master-pw-change =
     .accesskey = M
 forms-master-pw-fips-title = فی الحال آپ FIPS موڈ میں ہیں۔ FIPS کو ایک ناخالی ماسٹر پاس ورڈ درکار ہے۔
 forms-master-pw-fips-desc = پاس ورڈ تبدیلی ناکام
+
+## OS Authentication dialog
+
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = ماسٹر پاس ورڈ بنائیں
+master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
 
@@ -720,7 +741,7 @@ history-clear-button =
 
 ## Privacy Section - Site Data
 
-sitedata-header = کوکیس اور سائٹ کے کواِئف
+sitedata-header = کوکیز اور سائٹ کے کواِئف
 sitedata-total-size-calculating = سائٹ کے ڈیٹا اور کیشے کے ماپ کا حساب لگا رہے ہیں…
 sitedata-learn-more = مزید سیکھیں
 sitedata-allow-cookies-option =
@@ -739,8 +760,10 @@ sitedata-option-block-cross-site-trackers =
     .label = کراس-سائٹ ٹریکر
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = کراس سائٹ اور سماجی میڈیا ٹریکرز
+sitedata-option-block-all-third-party =
+    .label = تمام تیسری تنظیم کے کوکیز (ویب سائٹس کے ٹوٹنے کا سبب بن سکتی ہے)
 sitedata-option-block-all =
-    .label = تمام کوکیز (ویب سائٹس کے ٹوٹنے کا سبب بنے گی)
+    .label = تمام کوکیز (ویب سائٹس کے ٹوٹنے کا سبب بن سکتی ہے)
 sitedata-clear =
     .label = کوائف… خالی کریں
     .accesskey = l
@@ -797,9 +820,10 @@ enhanced-tracking-protection-setting-custom =
 ##
 
 content-blocking-etp-custom-desc = منتخب کریں کہ کون سے ٹریکرز اور اسکرپٹ کو مسدود کرنا ہے۔
-content-blocking-social-media-trackers = سماجی میڈیا ٹریکرز
-content-blocking-all-cookies = تمام کوکیس
-content-blocking-all-third-party-cookies = سارے تیسری تنظیم کے کوکیز
+content-blocking-social-media-trackers = سوشل میڈیا ٹریکرز
+content-blocking-all-cookies = تمام کوکیز
+content-blocking-all-windows-trackers = تمام ونڈوز میں معلوم شدہ ٹریکرز
+content-blocking-all-third-party-cookies = تمام تیسری تنظیم کے کوکیز
 content-blocking-cryptominers = کریپٹومینر
 content-blocking-fingerprinters = فنگر پرنٹرز
 content-blocking-warning-title = دھیان دیں!

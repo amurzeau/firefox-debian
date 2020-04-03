@@ -26,7 +26,7 @@ config-focus-search-2 =
 ## These strings are used for column headers
 
 config-pref-column =
-    .label = Naziv postavke
+    .label = Ime postavke
 config-lock-column =
     .label = Stanje
 config-type-column =
@@ -37,7 +37,7 @@ config-value-column =
 ## These strings are used for tooltips
 
 config-pref-column-header =
-    .tooltip = Kliknite za razvrstavanje
+    .tooltip = Pritisni za poredak
 config-column-chooser =
     .tooltip = Kliknite za odabir stupaca koji će biti prikazani
 
@@ -48,8 +48,8 @@ config-copy-pref =
     .label = Kopiraj
     .accesskey = K
 config-copy-name =
-    .label = Kopiraj naziv
-    .accesskey = n
+    .label = Kopiraj ime
+    .accesskey = K
 config-copy-value =
     .label = Kopiraj vrijednost
     .accesskey = v
@@ -80,7 +80,7 @@ config-locked = zaključano
 config-property-string = izraz
 config-property-int = cijeli broj
 config-property-bool = boolean
-config-new-prompt = Upišite naziv postavke
+config-new-prompt = Upiši ime postavke
 config-nan-title = Neispravna vrijednost
 config-nan-text = Unešeni tekst nije broj.
 # Variables:

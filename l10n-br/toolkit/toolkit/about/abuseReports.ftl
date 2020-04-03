@@ -19,6 +19,8 @@ abuse-report-learnmore =
     Ne ouezit ket peseurt kudenn dibab ?
     <a data-l10n-name="learnmore-link">Gouzout hiroc'h diwar-benn an disklêriañ askouezhadennoù ha temoù</a>
 abuse-report-submit-description = Deskrivañ ar gudenn (diret)
+abuse-report-textarea =
+    .placeholder = Aesoc'h eo evidomp diskoulmañ ur gudenn ma anavezomp ar munudoù. Deskrivit ho kudenn mar plij. Trugarez deoc'h da sikour ac'hanomp a-benn mirout ar Web yac'h.
 abuse-report-submit-note =
     Evezhiadenn : Ne lakit ket titouroù personel (evel an anv, chomlec'h postel, niverenn pellgomz, chomlec'h).
     { -vendor-short-name } a vir an danevelloù-se en un enrolladenn badus.
@@ -38,9 +40,29 @@ abuse-report-submit-button = Kas
 
 abuse-report-messagebar-aborted = Disklêriañ <span data-l10n-name="addon-name">{ $addon-name }</span> nullet.
 abuse-report-messagebar-submitting = O kas an disklêriadenn diwar-benn <span data-l10n-name="addon-name">{ $addon-name }</span>.
+abuse-report-messagebar-submitted = Trugarez deoc'h da vezañ kaset un danevell. Dilemel <span data-l10n-name="addon-name">{ $addon-name }</span> a fell deoc'h?
+abuse-report-messagebar-submitted-noremove = Trugarez deoc'h da vezañ kaset un danevell.
+abuse-report-messagebar-removed-extension = Trugarez deoc'h evit bezañ kaset un danevell. Dilemet ho peus an astenn <span data-l10n-name="addon-name">{ $addon-name }</span>.
+abuse-report-messagebar-removed-theme = Trugarez deoc'h da vezañ kaset un danevell. Dilemet ho peus an neuz <span data-l10n-name="addon-name">{ $addon-name }</span>.
+abuse-report-messagebar-error = C'hoarvezet eo ur fazi evit kas an danevell da <span data-l10n-name="addon-name">{ $addon-name }</span>.
+abuse-report-messagebar-error-recent-submit = An danevell <span data-l10n-name="addon-name">{ $addon-name }</span> n'eo ket bet treuzkaset peogwir eo bet kaset unan all n'eus ket pell.
 
 ## Message bars actions.
 
+abuse-report-messagebar-action-retry = Klask en-dro
+abuse-report-messagebar-action-cancel = Nullañ
 
 ## Abuse report reasons (optionally paired with related examples and/or suggestions)
 
+abuse-report-damage-reason = Mekaat ma urzhiataer ha ma roadennoù.
+abuse-report-damage-reason-v2 = Mekaet eo bet ma urzhiataer ha ma roadennoù.
+abuse-report-damage-example = Skouer: en deus ensinklet ur wallveziant pe laeret roadennoù
+abuse-report-spam-reason = A grou spam pe bruderezh
+abuse-report-spam-reason-v2 = En deus spam ennañ pe a ziskouez bruderezh strobus
+abuse-report-spam-example = Skouer: a lak bruderezh war pajennoù web
+abuse-report-settings-reason = En deus cheñchet ma lusker enklask, ma fajenn degemer pe ivinell nevez hep kelaouiñ ac'hanon pe goulenn ouzhin
+abuse-report-settings-reason-v2 = En deus cheñchet ma lusker enklask, ma fajenn degemer pe ivinell nevez hep kelaouiñ ac'hanon pe goulenn ouzhin
+abuse-report-settings-suggestions = A-raok danevelliñ an astenn e c'hellit klask cheñch ho arventennoù:
+abuse-report-settings-suggestions-search = A cheñch ho arventennoù enklask dre ziouer
+abuse-report-settings-suggestions-homepage = A cheñch ho pajenn degemer hag ivinell nevez
+abuse-report-deceptive-reason = A lavar eo un dra bennak n'eo ket anezhañ/anezhi

@@ -7,12 +7,12 @@
 
 cfr-doorhanger-extension-heading = ਸਿਫ਼ਾਰਸ਼ ਕੀਤੀ ਇਕਸਟੈਨਸ਼ਨ
 cfr-doorhanger-feature-heading = ਸਿਫਾਰਸ਼ ਕੀਤੇ ਫੀਚਰ
-cfr-doorhanger-pintab-heading = ਇਹ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰੋ: ਪਿੰਨ ਟੈਬ
+cfr-doorhanger-pintab-heading = ਵਰਤ ਕੇ ਵੇਖੋ: ਟੈਬ ਪਿੰਨ ਕਰੋ
 
 ##
 
 cfr-doorhanger-extension-sumo-link =
-    .tooltiptext = ਮੈਂ ਇਹ ਕਿਓ ਵੇਖ ਰਿਹਾ/ਰਹੀ ਹਾਂ
+    .tooltiptext = ਮੈਨੂੰ ਇਹ ਕਿਉਂ ਦਿਖਾਈ ਦੇ ਰਿਹਾ ਹੈ
 cfr-doorhanger-extension-cancel-button = ਹੁਣ ਨਹੀਂ
     .accesskey = N
 cfr-doorhanger-extension-ok-button = ਹੁਣੇ ਜੋੜੋ
@@ -121,6 +121,16 @@ cfr-whatsnew-lockwise-take-body =
     { -lockwise-brand-short-name } ਮੋਬਾਈਲ ਐਪ ਤੁਹਾਡੇ ਬੈਕਅੱਪ ਲਵੇ ਪਾਸਵਰਡਾਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਢੰਗ
     ਨਾਲ ਕਿਸੇ ਵੀ ਥਾਂ ਤੋਂ ਵਰਤਣ ਦੇ ਸਮਰੱਥ ਕਰਦੀ ਹੈ।
 cfr-whatsnew-lockwise-take-link-text = ਐਪ ਲਵੋ
+
+## Search Bar
+
+cfr-whatsnew-searchbar-title = ਘੱਟ ਟਾਈਪ ਕਰੋ, ਐਡਰੈਸ ਬਾਰ ਨਾਲ ਹੋਰ ਲੱਭੋ
+# Variables:
+#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
+cfr-whatsnew-searchbar-body-enginename = ਉਨ੍ਹਾਂ ਸਾਈਟਾਂ ਤੇ ਜਾਓ ਜਿਨ੍ਹਾਂ ਦੀ ਤੁਸੀਂ ਐਡਰੈਸ ਬਾਰ ਤੇ ਇਕ ਕਲਿੱਕ ਨਾਲ ਸਭ ਤੋਂ ਵੱਧ ਵਰਤੋਂ ਕਰਦੇ ਹੋ। { $searchEngineName } ਅਤੇ ਆਪਣੇ ਬਰਾਉਜ਼ਿੰਗ ਇਤਿਹਾਸ ਤੋਂ ਖੋਜ ਨਤੀਜਿਆਂ ਨਾਲ ਚੀਜ਼ਾਂ ਨੂੰ ਤੇਜ਼ੀ ਨਾਲ ਲੱਭੋ।
+cfr-whatsnew-searchbar-body-generic = ਉਨ੍ਹਾਂ ਸਾਈਟਾਂ ਤੇ ਜਾਓ ਜਿਨ੍ਹਾਂ ਦੀ ਤੁਸੀਂ ਐਡਰੈਸ ਬਾਰ ਤੇ ਇਕ ਕਲਿੱਕ ਨਾਲ ਸਭ ਤੋਂ ਵੱਧ ਵਰਤੋਂ ਕਰਦੇ ਹੋ। ਆਪਣੇ ਬਰਾਉਜ਼ਿੰਗ ਇਤਿਹਾਸ ਤੋਂ ਖੋਜ ਨਤੀਜਿਆਂ ਨਾਲ ਚੀਜ਼ਾਂ ਨੂੰ ਤੇਜ਼ੀ ਨਾਲ ਲੱਭੋ।
+cfr-whatsnew-searchbar-body-topsites = ਹੁਣ ਸਿਰਫ਼ ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਚੁਣੋ ਅਤੇ ਡੱਬਾ ਤੁਹਾਡੀਆਂ ਸਿਖਰਲੀਆਂ ਸਾਈਟਾਂ ਦੇ ਲਿੰਕਾਂ ਨਾਲ ਭਰ ਜਾਵੇਗਾ।
+cfr-whatsnew-searchbar-icon-alt-text = ਵੱਡਦਰਸ਼ੀ ਸ਼ੀਸ਼ਾ ਆਈਕਾਨ
 
 ## Picture-in-Picture
 

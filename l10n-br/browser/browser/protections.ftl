@@ -12,6 +12,18 @@ graph-week-summary =
         [many] { $count } a heulierien a zo bet stanket gant { -brand-short-name } ar sizhun tremenet
        *[other] { $count } heulier a zo bet stanket gant { -brand-short-name } ar sizhun tremenet
     }
+# Variables:
+#   $count (Number) - Number of tracking events blocked.
+#   $earliestDate (Number) - Unix timestamp in ms, representing a date. The
+# earliest date recorded in the database.
+graph-total-tracker-summary =
+    { $count ->
+        [one] <b>{ $count }</b> heulier stanket abaoe { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+        [two] <b>{ $count }</b> heulier stanket abaoe { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+        [few] <b>{ $count }</b> heulier stanket abaoe { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+        [many] <b>{ $count }</b> a heulierien stanket abaoe { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+       *[other] <b>{ $count }</b> heulier stanket abaoe { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
+    }
 # Text displayed instead of the graph when in Private Mode
 graph-private-window = { -brand-short-name } a gendalc'h da stankañ heulierien er merdeiñ prevez, met ne zalc'h ket soñj eus ar pezh vez stanket.
 # Weekly summary of the graph when the graph is empty in Private Mode
@@ -53,6 +65,9 @@ lockwise-header-content-logged-in = Kadavit ha goubredit ho kerioù-tremen etre 
 protection-report-view-logins-button = Gwelout an titouroù kennaskañ
     .title = Monr d'an titouroù kennaskañ enrollet
 lockwise-no-logins-content = Tapit an arload <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> evit kas ho kerioù-tremen pep lec'h ganeoc'h.
+lockwise-mobile-app-title = Tapit ho kerioù-tremen ganeoc'h e pep lec'h
+lockwise-no-logins-card-content = Implijit ar gerioù-tremen enrollet e { -brand-short-name } war kement trevnad.
+lockwise-app-links = { -lockwise-brand-name } evit <a data-l10n-name="lockwise-android-inline-link">Android</a> hag <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
 turn-on-sync = Gweredekaat { -sync-brand-short-name }…
     .title = Mont d'ar gwellvezioù goubredañ
 manage-connected-devices = Merañ trevnadoù…

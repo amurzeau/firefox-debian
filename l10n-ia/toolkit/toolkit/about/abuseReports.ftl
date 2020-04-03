@@ -15,7 +15,7 @@ abuse-report-subtitle = Qual es le problema?
 # Variables:
 #   $author-name (string) - Name of the add-on author
 abuse-report-addon-authored-by = per <a data-l10n-name="author-name">{ $author-name }</a>
-abuse-report-learnmore = Es tu incerte re qual problema seliger? <a data-l10n-name="learnmore-link">Sape plus re le reporto del extensiones e del themas</a>
+abuse-report-learnmore = Non secur de qual problema seliger? <a data-l10n-name="learnmore-link">Lege plus sur como signalar extensiones e themas</a>
 abuse-report-submit-description = Describe le problema (optional)
 abuse-report-textarea =
     .placeholder = Il es plus facile pro nos abbordar un problema si nos ha detalios. Per favor describe tu experientia. Gratias pro adjutar nos a mantener le Web salubre.
@@ -27,7 +27,7 @@ abuse-report-submit-note =
 
 abuse-report-cancel-button = Cancellar
 abuse-report-next-button = Sequente
-abuse-report-goback-button = Regreder
+abuse-report-goback-button = Retornar
 abuse-report-submit-button = Inviar
 
 ## Message bars descriptions.
@@ -38,19 +38,19 @@ abuse-report-submit-button = Inviar
 
 abuse-report-messagebar-aborted = Reporto pro <span data-l10n-name="addon-name">{ $addon-name }</span> cancellate.
 abuse-report-messagebar-submitting = Invio de signalation pro <span data-l10n-name="addon-name">{ $addon-name }</span>.
-abuse-report-messagebar-submitted = Gratias pro invio del signalation. Desira tu eliminar <span data-l10n-name="addon-name">{ $addon-name }</span>?
-abuse-report-messagebar-submitted-noremove = Gratias pro le invio del signalation.
-abuse-report-messagebar-removed-extension = Gratias pro invio del signalation. Tu ha eliminate le extension <span data-l10n-name="addon-name">{ $addon-name }</span>.
-abuse-report-messagebar-removed-theme = Gratias pro invio del signalation. Tu ha eliminate le thema <span data-l10n-name="addon-name">{ $addon-name }</span>.
-abuse-report-messagebar-error = Un error occurreva durante le invio de signalation pro <span data-l10n-name="addon-name">{ $addon-name }</span>.
+abuse-report-messagebar-submitted = Gratias pro haber inviate un signalation. Vole tu remover <span data-l10n-name="addon-name">{ $addon-name }</span>?
+abuse-report-messagebar-submitted-noremove = Gratias pro haber inviate un signalation.
+abuse-report-messagebar-removed-extension = Gratias pro haber inviate un signalation. Tu ha removite le extension <span data-l10n-name="addon-name">{ $addon-name }</span>.
+abuse-report-messagebar-removed-theme = Gratias pro haber inviate un signalation. Tu ha removite le thema <span data-l10n-name="addon-name">{ $addon-name }</span>.
+abuse-report-messagebar-error = Un error occurreva durante le invio del signalation pro <span data-l10n-name="addon-name">{ $addon-name }</span>.
 abuse-report-messagebar-error-recent-submit = Le reporto pro <span data-l10n-name="addon-name">{ $addon-name }</span> non esseva inviate perque un altere reporto ha essite inviate recentemente.
 
 ## Message bars actions.
 
-abuse-report-messagebar-action-remove-extension = Si, remover illo
-abuse-report-messagebar-action-keep-extension = No, io vole mantener illo
-abuse-report-messagebar-action-remove-theme = Si, remover illo
-abuse-report-messagebar-action-keep-theme = No, io vole mantener illo
+abuse-report-messagebar-action-remove-extension = Si, remove lo
+abuse-report-messagebar-action-keep-extension = No, io vole mantener lo
+abuse-report-messagebar-action-remove-theme = Si, remove lo
+abuse-report-messagebar-action-keep-theme = No, io vole mantener lo
 abuse-report-messagebar-action-retry = Retentar
 abuse-report-messagebar-action-cancel = Cancellar
 
@@ -62,25 +62,25 @@ abuse-report-damage-example = Exemplo: malware injectate o datos robate
 abuse-report-spam-reason = Crea spam o publicitate
 abuse-report-spam-reason-v2 = Illo contine spam o insere publicitate indesirate
 abuse-report-spam-example = Exemplo: insere annuncios in paginas web
-abuse-report-settings-reason = Cambiava mi motor de recerca, pagina principal o nove scheda sin informa o demandar me
+abuse-report-settings-reason = Cambiava mi motor de recerca, pagina principal o nove scheda sin informar o demandar me
 abuse-report-settings-reason-v2 = Illo ha cambiate mi motor de recerca, pagina principal o nove scheda sin informar me o demandar me
 abuse-report-settings-suggestions = Ante que signalar le extension, tu pote provar a cambiar tu parametros:
 abuse-report-settings-suggestions-search = Cambiar tu parametros de recerca predefinite
 abuse-report-settings-suggestions-homepage = Cambiar tu pagina principal e nove scheda
-abuse-report-deceptive-reason = Pretende de ser alco que illo non es
-abuse-report-deceptive-reason-v2 = Illo assere esser alco que illo non es
+abuse-report-deceptive-reason = Pretende esser qualcosa que non es
+abuse-report-deceptive-reason-v2 = Illo pretende esser qualcosa que non es
 abuse-report-deceptive-example = Exemplo: description o graphica fraudulente
 abuse-report-broken-reason-extension = Non functiona, rumpe sitos web, o relenta { -brand-product-name }
-abuse-report-broken-reason-theme = Non functiona o rumpe le exhibition del navigator
+abuse-report-broken-reason-theme = Non functiona o rumpe le disposition visual del navigator
 abuse-report-broken-reason-extension-v2 = Illo non functiona, rumpe sitos web o relenta { -brand-product-name }
 abuse-report-broken-reason-theme-v2 = Non functiona o rumpe le disposition visual del navigator
-abuse-report-broken-example = Exemplo: le functionalitate es lente, dur a usar, o non functiona; partes de sitos web non carga o pare inusual
+abuse-report-broken-example = Exemplo: le functionalitate es lente, difficile a usar, o non functiona; partes de sitos web non se carga o pare estranie
 abuse-report-broken-suggestions-extension = Il pare que tu ha identificate un defecto. In addition a inviar un signalation ci, le melior maniera de resolver un problema de functionalitate es de contactar le programmator del extension. <a data-l10n-name="support-link">Visita le sito web del extension</a> pro obtener le informationes del disveloppator.
 abuse-report-broken-suggestions-theme = Il pare que tu ha identificate un defecto. In addition a inviar un signalation ci, le melior maniera de resolver un problema de functionalitate es de contactar le disveloppator del thema. <a data-l10n-name="support-link">Visita le sito web del thema</a> pro obtener le informationes del disveloppator.
 abuse-report-policy-reason = Contento odiose, violente o illegal
 abuse-report-policy-reason-v2 = Contento odiose, violente o illegal
-abuse-report-policy-suggestions = Nota: problemas de derectos de autor e marca de fabrica debe ser signalate in un procedura differente. <a data-l10n-name="report-infringement-link">Usa iste instructiones</a> pro signalar le problema.
-abuse-report-unwanted-reason = Io jammais voleva iste extension e non pote remover illo
+abuse-report-policy-suggestions = Nota: le problemas concernente derectos de autor e marca de fabrica debe esser signalate in un altere procedura. <a data-l10n-name="report-infringement-link">Seque iste instructiones</a> pro signalar le problema.
+abuse-report-unwanted-reason = Io non ha jammais volite iste extension e non succede a remover lo
 abuse-report-unwanted-reason-v2 = Io non lo ha jammais volite e non sape como liberar me de illo
 abuse-report-unwanted-example = Exemplo: un application lo ha installate sin mi permission
 abuse-report-other-reason = Altere cosa

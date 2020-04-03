@@ -17,22 +17,6 @@ browser-main-window-title =
         [private] { -brand-full-name } (निजी ब्राउज़िंग)
        *[default] { -brand-full-name }
     }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (निजी ब्राउज़िंग)
-       *[default] { $title } - { -brand-full-name }
-    }
 
 ## This is the default window title in case there is content
 ## title to be displayed.
@@ -123,6 +107,7 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = कम टाइप करें, अधिक खोजें: सीधे अपने पता पट्टी { $engineName } खोजें.
 urlbar-search-tips-redirect = { $engineName } और अपने ब्राउज़िंग इतिहास से सुझाव देखने के लिए अपनी खोज यहां प्रारंभ करें.
+urlbar-search-tips-redirect-2 = { $engineName } और अपने ब्राउज़िंग इतिहास से सुझाव देखने के लिए अपनी खोज पता पट्टी में प्रारंभ करें।
 
 ##
 
@@ -229,6 +214,7 @@ identity-clear-site-data =
     .label = कूकीज़ तथा साइट डेटा हटायें…
 identity-connection-not-secure-security-view = आप इस साइट से सुरक्षित रूप से नहीं जुड़े हैं।
 identity-connection-verified = आप इस साइट से सुरक्षित रूप से जुड़े हैं।
+identity-description-custom-root = Mozilla इस प्रमाणपत्र जारीकर्ता को नहीं पहचानता है। यह आपके ऑपरेटिंग सिस्टम से या किसी ऐडमिनिस्ट्रेटर द्वारा जोड़ा जा सकता है। <label data-l10n-name="link">अधिक जानें</label>
 identity-remove-cert-exception =
     .label = अपवाद मिटाएँ
     .accesskey = R

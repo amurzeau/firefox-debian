@@ -15,12 +15,12 @@ options-select-default-tools-label = Zadani programerski alati
 options-tool-not-supported-label = * Nije podržano za trenutni cilj alatne trake
 # The label for the heading of group of checkboxes corresponding to the developer tools
 # added by add-ons. This heading is hidden when there is no developer tool installed by add-ons.
-options-select-additional-tools-label = Programerski alati instalirani od strane dodataka
+options-select-additional-tools-label = Programerski alati koje su instalirali dodaci
 # The label for the heading of group of checkboxes corresponding to the default developer
 # tool buttons.
 options-select-enabled-toolbox-buttons-label = Dostupne tipke alatne trake
 # The label for the heading of the radiobox corresponding to the theme
-options-select-dev-tools-theme-label = Motivi
+options-select-dev-tools-theme-label = Teme
 
 ## Inspector section
 
@@ -102,9 +102,9 @@ options-enable-remote-label = Omogući udaljeno ispravljanje grešaka
 options-enable-remote-tooltip =
     .title = Uključivanje ove opcije omogućit će programerskim alatima uklanjaje grešaka udaljene instance poput Firefox OS-a
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
-options-enable-service-workers-http-label = Uključi mogućnosti testiranja Service workersa putem HTTP-a (kada je alatna traka otvorena)
+options-enable-service-workers-http-label = Uključi radne procese usluge putem HTTP-a (kad je alatna traka otvorena)
 options-enable-service-workers-http-tooltip =
-    .title = Uključivanje ove opcije će omogućiti korištenje opcija testiranja service workera putem HTTP-a za sve kartice koje imaju otvorenu alatnu traku.
+    .title = Uključivanje ove opcije omogućit će korištenje radne procese usluge putem HTTP-a za sve kartice koje imaju otvorenu alatnu traku.
 # The message shown for settings that trigger page reload
 options-context-triggers-page-refresh = * Samo trenutna sesija, ponovo učitava stranicu
 # The label for the checkbox that toggles the display of the platform data in the

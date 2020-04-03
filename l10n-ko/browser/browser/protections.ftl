@@ -32,7 +32,7 @@ protection-report-header-details-custom = 보호 수준이 <b>사용자 지정</
 protection-report-page-title = 개인 정보 보호
 protection-report-content-title = 개인 정보 보호
 etp-card-title = 향상된 추적 방지 기능
-etp-card-content = 추적기는 온라인에서 사용자를 따라다니며 브라우징 습관과 관심사에 대한 정보를 수집합니다. { -brand-short-name }는 이러한 많은 추적기 및 기타 악성 스크립트를 차단합니다.
+etp-card-content = 추적기는 온라인에서 사용자를 따라다니며 탐색 습관과 관심사에 대한 정보를 수집합니다. { -brand-short-name }는 이러한 많은 추적기 및 기타 악성 스크립트를 차단합니다.
 protection-report-etp-card-content-custom-not-blocking = 현재 모든 보호 기능이 꺼져 있습니다. { -brand-short-name } 보호 설정에서 차단할 추적기를 선택하세요.
 protection-report-manage-protections = 설정 관리
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -50,6 +50,11 @@ fingerprinter-tab-title = 핑거프린터
 fingerprinter-tab-content = 핑거프린터는 브라우저와 컴퓨터에서 설정을 수집하여 사용자의 프로필을 만듭니다. 이 디지털 지문을 사용하여 여러 웹 사이트에서 사용자를 추적할 수 있습니다. <a data-l10n-name="learn-more-link">더 알아보기</a>
 cryptominer-tab-title = 크립토마이너
 cryptominer-tab-content = 크립토마이너는 디지털 화폐를 채굴하기 위해 시스템의 연산 능력을 사용합니다. 암호 해독 스크립트는 배터리를 소모하고 컴퓨터 속도를 저하시키며 에너지 요금을 증가시킬 수 있습니다. <a data-l10n-name="learn-more-link">더 알아보기</a>
+protections-close-button =
+    .aria-label = 닫기
+mobile-app-title = 더 많은 기기에서 광고 추적기 차단
+mobile-app-card-content = 광고 추적에 대한 보호 기능이 내장된 모바일 브라우저를 사용하세요.
+mobile-app-links = <a data-l10n-name="android-mobile-inline-link">Android</a> 및 <a data-l10n-name="ios-mobile-inline-link">iOS</a> 용 { -brand-product-name } 브라우저
 lockwise-title = 비밀번호를 다시 잊지 마세요
 lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-header-content = { -lockwise-brand-name }은 비밀번호를 브라우저에 안전하게 저장합니다.

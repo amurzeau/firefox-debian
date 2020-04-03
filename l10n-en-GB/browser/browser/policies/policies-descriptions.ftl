@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Set policies that WebExtensions can access via chrome.storage.managed.
+policy-AppAutoUpdate = Enable or disable automatic application update.
 policy-AppUpdateURL = Set custom app update URL.
 policy-Authentication = Configure integrated authentication for web sites that support it.
 policy-BlockAboutAddons = Block access to the Add-ons Manager (about:addons).
@@ -21,9 +22,11 @@ policy-Bookmarks = Create bookmarks in the Bookmarks toolbar, Bookmarks menu, or
 policy-CaptivePortal = Enable or disable captive portal support.
 policy-CertificatesDescription = Add certificates or use built-in certificates.
 policy-Cookies = Allow or deny web sites to set cookies.
+policy-DisabledCiphers = Disable ciphers.
 policy-DefaultDownloadDirectory = Set the default download directory.
 policy-DisableAppUpdate = Prevent the browser from updating.
 policy-DisableBuiltinPDFViewer = Disable PDF.js, the built-in PDF viewer in { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Prevent the default browser agent from taking any actions. Only applicable to Windows; other platforms don’t have the agent.
 policy-DisableDeveloperTools = Block access to the developer tools.
 policy-DisableFeedbackCommands = Disable commands to send feedback from the Help menu (Submit Feedback and Report Deceptive Site).
 policy-DisableFirefoxAccounts = Disable { -fxaccount-brand-name } based services, including Sync.
@@ -72,7 +75,6 @@ policy-OfferToSaveLoginsDefault = Set the default value for allowing { -brand-sh
 policy-OverrideFirstRunPage = Override the first run page. Set this policy to blank if you want to disable the first run page.
 policy-OverridePostUpdatePage = Override the post-update “What’s New” page. Set this policy to blank if you want to disable the post-update page.
 policy-PasswordManagerEnabled = Enable saving passwords to the password manager.
-policy-Permissions = Configure permissions for camera, microphone, location and notifications.
 policy-Permissions2 = Configure permissions for camera, microphone, location, notifications, and autoplay.
 policy-PopupBlocking = Allow certain web sites to display popups by default.
 policy-Preferences = Set and lock the value for a subset of preferences.

@@ -82,8 +82,8 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 
 ## Protections panel
 
-cfr-protections-panel-header = Navighează fără să fii urmărit
-cfr-protections-panel-body = Păstrează-ți datele pentru tine. { -brand-short-name } te protejează de multe dintre cele mai frecvente elemente de urmărire care urmăresc ceea ce faci online.
+cfr-protections-panel-header = Navighează fără să fii urmărit(ă)
+cfr-protections-panel-body = Păstrează-ți datele pentru tine. { -brand-short-name } te protejează de multe dintre cele mai frecvente elemente de urmărire care monitorizează ce faci online.
 cfr-protections-panel-link-text = Află mai multe
 
 ## What's New toolbar button and panel
@@ -121,6 +121,11 @@ cfr-whatsnew-lockwise-take-link-text = Obține aplicația
 
 ## Search Bar
 
+cfr-whatsnew-searchbar-title = Tastezi mai puțin, găsești mai multe cu bara de adrese
+# Variables:
+#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
+cfr-whatsnew-searchbar-body-enginename = Accesează site-urile pe care le utilizezi cel mai mult cu un singur clic în bara de adrese. Găsește lucrurile mai rapid cu rezultatele din { $searchEngineName } și din istoricul de navigare.
+cfr-whatsnew-searchbar-body-generic = Accesează site-urile pe care le utilizezi cel mai mult cu un singur clic în bara de adrese. Găsește lucrurile mai rapid cu rezultatele din istoricul de navigare.
 cfr-whatsnew-searchbar-icon-alt-text = Pictogramă lupă
 
 ## Picture-in-Picture

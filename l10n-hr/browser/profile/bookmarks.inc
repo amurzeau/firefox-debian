@@ -11,7 +11,7 @@
 #define bookmarks_heading Zabilješke
 
 #define bookmarks_toolbarfolder Mapa alatne trake zabilješki
-#define bookmarks_toolbarfolder_description Dodajte zabilješke u ovu mapu kako biste ih vidjeli u alatnoj traci zabilješki
+#define bookmarks_toolbarfolder_description Dodaj zabilješke u ovu mapu, kako bi se prikazale u alatnoj traci zabilješki
 
 # LOCALIZATION NOTE (getting_started):
 # link title for https://www.mozilla.org/en-US/firefox/central/
@@ -31,7 +31,7 @@
 
 # LOCALIZATION NOTE (firefox_community):
 # link title for https://www.mozilla.org/en-US/contribute/
-#define firefox_community Uključite se
+#define firefox_community Uključi se
 
 # LOCALIZATION NOTE (firefox_about):
 # link title for https://www.mozilla.org/en-US/about/

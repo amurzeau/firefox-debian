@@ -13,9 +13,9 @@ psmerr-ssl-disabled = SSL 프로토콜을 사용할 수 없어서 보안 연결�
 psmerr-ssl2-disabled = 보안에 취약한 오래된 SSL 프로토콜을 사용하고 있어서 보안 연결을 할 수 없습니다.
 # This is a multi-line message.
 psmerr-hostreusedissuerandserial =
-    유효하지 않은 인증서를 받았습니다. 아래 사항을 서버 관리자에게 제공하시기 바랍니다.
+    유효하지 않은 인증서를 받았습니다. 서버 관리자등에게 연락해서 다음 정보를 제공하세요:
     
-    제공한 인증서가 인증 기관에서 발급한 다른 인증서와 같은 시리얼 넘버를 가지고 있습니다. 단일 시리얼 넘버를 가진 새로운 인증서를 제공해 주세요.
+    인증서에 인증 기관에서 발급한 다른 인증서와 같은 일련 번호가 있습니다. 고유한 일련 번호를 가진 새 인증서를 받으세요.
 ssl-error-export-only-server = 안전하게 통신 할 수 없습니다. 상대방이 높은 등급의 암호화를 지원하지 않습니다.
 ssl-error-us-only-server = 안전하게 통신 할 수 없습니다. 상대방이 지원하지 않는 높은 등급의 암호화를 요청합니다.
 ssl-error-no-cypher-overlap = 상대방과 안전하게 통신 할 수 없음: 일반 암호화 알고리듬이 없습니다.
@@ -168,7 +168,7 @@ sec-error-revoked-certificate = 상대방의 인증서가 폐기 되었습니다
 sec-error-unknown-issuer = 상대방의 인증서 발급자가 인식되지 않습니다.
 sec-error-bad-key = 상대방의 공개키가 유효하지 않습니다.
 sec-error-bad-password = 입력한 보안 비밀번호가 잘못되었습니다.
-sec-error-retry-password = 입력한 새 비밀번호가 잘못되었습니다. 다시 입력하세요.
+sec-error-retry-password = 입력한 새 비밀번호가 잘못되었습니다. 다시 시도하세요.
 sec-error-no-nodelock = 보안 라이브러리: 노드잠김이 없습니다.
 sec-error-bad-database = 보안 라이브러리: 손상된 저장소입니다.
 sec-error-no-memory = 보안 라이브러리: 메모리 할당 실패입니다.
@@ -320,7 +320,7 @@ sec-error-failed-to-encode-data = ASN1 인코더로 데이터 변환이 실패�
 sec-error-bad-info-access-location = 인증서 확장의 주소 정보가 올바르지 않습니다.
 sec-error-libpkix-internal = 인증서 유효성 확인 중 Libpkix 내부 오류가 발생했습니다.
 sec-error-pkcs11-general-error = PKCS #11 모듈에서 CKR_GENERAL_ERROR라는 확인할 수 없는 오류가 발생했습니다.
-sec-error-pkcs11-function-failed = PKCS #11 모듈에서 CKR_FUNCTION_FAILED라는 요청한 기능이 실행되지 않았음을 지시하는 오류가 발생했습니다. 다시 한번 실행해 보시기 바랍니다.
+sec-error-pkcs11-function-failed = PKCS #11 모듈이 요청한 기능을 수행 할 수 없음을 나타내는 CKR_FUNCTION_FAILED를 반환했습니다. 동일한 작업을 다시 시도하면 성공할 수도 있습니다.
 sec-error-pkcs11-device-error = PKCS #11 모듈에서 CKR_DEVICE_ERROR라는 토큰 및 슬롯에서 발생하는 오류가 발생하였습니다.
 sec-error-bad-info-access-method = 인증서 확장에서 알 수 없는 정보 접근 기능이 있습니다.
 sec-error-crl-import-failed = 인증서 폐기 목록(CRL)을 가져 오는 중 오류가 발생했습니다.
@@ -339,7 +339,7 @@ mozilla-pkix-error-signature-algorithm-mismatch = 인증서의 서명 필드에 
 mozilla-pkix-error-ocsp-response-for-cert-missing = OCSP 응답이 확인된 인증서 상태를 포함하고 있지 않습니다.
 mozilla-pkix-error-validity-too-long = 서버에서 너무 길어서 유효하지 않은 인증서를 보내왔습니다.
 mozilla-pkix-error-required-tls-feature-missing = 필수 사항인 TLS 기능이 누락되었습니다.
-mozilla-pkix-error-invalid-integer-encoding = 서버가 잘못된 정수 인코딩을 포함한 인증서를 사용했습니다. 음수 시리얼 넘버나 음수 RSA moduli, 필요이상으로 긴 인코딩을 사용할 경우 발생할 수 있습니다.
+mozilla-pkix-error-invalid-integer-encoding = 서버가 유효하지 않은 정수 인코딩을 포함하는 인증서를 사용했습니다. 일반적인 원인은 음수 일련 번호, 음수 RSA moduli 및 필요 이상으로 긴 인코딩입니다.
 mozilla-pkix-error-empty-issuer-name = 서버가 구별 이름으로 발급자가 비어있는 인증서를 사용했습니다.
 mozilla-pkix-error-additional-policy-constraint-failed = 이 인증서 검증이 추가적인 제한 정책에서 실패하였습니다.
 mozilla-pkix-error-self-signed-cert = 자기 스스로 서명하였으므로 인증서를 신뢰할 수 없습니다.

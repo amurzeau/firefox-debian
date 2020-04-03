@@ -57,7 +57,7 @@ graph-today = Dnes
 # This string is used to describe the graph for screenreader users.
 graph-legend-description = Graf s celkovým počtem všech typů sledovacích prvků, které byly tento týden zablokovány.
 social-tab-title = Sledující prvky sociálních sítí
-social-tab-contant = Sociální sítě umisťují na ostatní stránky sledovací prvky, pomocí kterých mohou zjistit, co na internetu sledujete. Tím získávají informace o vašich zájmech i bez toho, abyste na dané sítí něco sdíleli s ostatními. <a data-l10n-name="learn-more-link">Zjistit více</a>
+social-tab-contant = Sociální sítě umisťují na ostatní stránky sledovací prvky, pomocí kterých mohou sledovat, co na internetu děláte, vidíte a co si pouštíte. To umožňuje společnostem, které tato sociální média vlastní, dozvědět se o vás víc než jen to, co sdílíte na svých profilech. <a data-l10n-name="learn-more-link">Zjistit více</a>
 cookie-tab-title = Sledovací cookies
 cookie-tab-content = Tyto cookies slouží k vašemu sledování napříč webovými stránkami a sběru dat o tom, co na internetu děláte. Používají je třetí strany jako jsou reklamní systémy nebo analytické společnosti. Blokování sledovacích cookies třetích stran omezí množství reklam, které o vás vědí příliš mnoho podrobností. <a data-l10n-name="learn-more-link">Zjistit více</a>
 tracker-tab-title = Sledující obsah
@@ -66,6 +66,11 @@ fingerprinter-tab-title = Vytváření otisku prohlížeče
 fingerprinter-tab-content = Sběrem informací o vašem prohlížeči a počítači lze vytvořit unikátní otisk a ten pak použít k vašemu sledování napříč různými a nijak nesouvisejícími servery a webovými stránkami. <a data-l10n-name="learn-more-link">Zjistit více</a>
 cryptominer-tab-title = Těžba kryptoměn
 cryptominer-tab-content = Těžba kryptoměn využívá výpočetní výkon vašeho počítače k získávání digitálních měn. Běžící skripty vybíjí vaši baterii a zpomalují váš počítač. <a data-l10n-name="learn-more-link">Zjistit více</a>
+protections-close-button =
+    .aria-label = Zavřít
+mobile-app-title = Blokování sledujících reklam napříč zařízeními
+mobile-app-card-content = Používejte mobilní prohlížeč s vestavěnou ochranou proti sledujícím reklamám.
+mobile-app-links = Prohlížeč { -brand-product-name } pro <a data-l10n-name="android-mobile-inline-link">Android</a> a <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Už žádná zapomenutá hesla
 lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-header-content = { -lockwise-brand-name } bezpečně uchovává vaše hesla ve vašem prohlížeči.

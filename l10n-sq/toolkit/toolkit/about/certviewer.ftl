@@ -22,6 +22,8 @@ certificate-viewer-country = Vend
 certificate-viewer-curve = Lakore
 certificate-viewer-distribution-point = Pikë Shpërndarjeje
 certificate-viewer-dns-name = Emër DNS
+certificate-viewer-ip-address = Adresë IP
+certificate-viewer-other-name = Emër Tjetër
 certificate-viewer-exponent = Eksponent
 certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = Grup Shkëmbimi Kyçesh
@@ -41,6 +43,7 @@ certificate-viewer-protocol = Protokoll
 certificate-viewer-public-value = Vlerë Publike
 certificate-viewer-purposes = Qëllime
 certificate-viewer-required = E domosdoshme
+certificate-viewer-unsupported = &lt;e pambuluar&gt;
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
 certificate-viewer-inc-state-province = Shtet/Provincë Regjistrimi
 certificate-viewer-state-province = Shtet/Provincë

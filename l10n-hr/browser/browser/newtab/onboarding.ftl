@@ -13,7 +13,7 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Saznaj više
-onboarding-button-label-try-now = Isprobajte odmah
+onboarding-button-label-try-now = Isprobaj sada
 onboarding-button-label-get-started = Započnite
 
 ## Welcome modal dialog strings
@@ -27,7 +27,7 @@ onboarding-welcome-modal-privacy-body = Imaš preglednik. Dodajmo još više za�
 onboarding-welcome-modal-family-learn-more = Saznaj više o { -brand-product-name } obitelji proizvoda.
 onboarding-welcome-form-header = Započni ovdje
 onboarding-join-form-header = Pridruži se { -brand-product-name }
-onboarding-join-form-body = Upiši svoju adresu e-pošte kako bi započeo/la.
+onboarding-join-form-body = Za početak unesi svoju adresu e-pošte.
 onboarding-join-form-email =
     .placeholder = Upiši e-adresu
 onboarding-join-form-email-error = Potrebna je ispravna adresa e-pošte
@@ -46,7 +46,7 @@ onboarding-cards-dismiss =
 
 onboarding-fullpage-welcome-subheader = Počnimo s istraživanjem svega što možete učiniti.
 onboarding-fullpage-form-email =
-    .placeholder = Adresa tvoje e-pošte …
+    .placeholder = Tvoja e-adresa …
 
 ## Firefox Sync modal dialog strings.
 
@@ -144,7 +144,7 @@ onboarding-lockwise-strong-passwords-button = Upravljanje prijavama
 onboarding-facebook-container-title = Postavi granice s Facebookom
 onboarding-facebook-container-text2 = { -facebook-container-brand-name } drži tvoj profil odvojeno od svega drugoga, otežavajući Facebooku da ti ciljano prikazuje reklame.
 onboarding-facebook-container-button = Instaliraj dodatak
-onboarding-import-browser-settings-title = Uvezite svoje zabilješke, lozinke i još mnogo toga
+onboarding-import-browser-settings-title = Uvezi svoje zabilješke, lozinke i još mnogo toga
 onboarding-import-browser-settings-text = Uronite — jednostavno prenesite svoje Chrome stranice i postavke.
 onboarding-import-browser-settings-button = Uvoz podataka iz Chromea
 

@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Beliedsrigels ynstelle dy't troch WebExtensions benadere wurde kinne fia chrome.storage.managed.
+policy-AppAutoUpdate = Automatyske applikaasjefernijing yn- of útskeakelje.
 policy-AppUpdateURL = Oanpaste app-fernijings-URL ynstelle.
 policy-Authentication = Yntegrearre autentikaasje konfigurearje foar websites dy't dit stypje.
 policy-BlockAboutAddons = Tagong ta de Add-onbehearder (about:addons) blokkearje.
@@ -21,9 +22,11 @@ policy-Bookmarks = Blêdwizers meitsje yn de Blêdwizerakbalke, it menu Blêdwiz
 policy-CaptivePortal = Stipe foar hotspot-oanmeldingsside ynskeakelje of útskeakelje.
 policy-CertificatesDescription = Sertifikaten tafoegje of ynboude sertifikaten brûke.
 policy-Cookies = Tastean of wegerje dat websites cookies ynstelle.
+policy-DisabledCiphers = Kodearringssuites útskeakelje.
 policy-DefaultDownloadDirectory = Standert downloadmap ynstellen
 policy-DisableAppUpdate = Foarkomme dat de browser fernijd wurdt.
 policy-DisableBuiltinPDFViewer = PDF.js útskeakelje, de ynboude PDF-viewer yn { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Foarkomme dat de standert browseragent iennige aksje ûndernimt. Allinnich fan tapassing op Windows; oare platfoarms beskikke net oer de agent.
 policy-DisableDeveloperTools = Tagong ta de ûntwikkelershelpmiddelen blokkearje.
 policy-DisableFeedbackCommands = Opdrachten foar it ferstjoeren fan kommentaar fan it menu Help út útskeakelje (Kommentaar ferstjoere en Misliedende website rapportearje).
 policy-DisableFirefoxAccounts = Op { -fxaccount-brand-name } basearre tsjinsten útskeakelje, wêrûnder Sync.
@@ -72,7 +75,6 @@ policy-OfferToSaveLoginsDefault = De standertwearde ynstelle foar it tastean dat
 policy-OverrideFirstRunPage = De side dy't foar it earst iepene wurdt ferfange. Stel dizze beliedsregel yn op leech as jo de oanbelangjende side útskeakelje wolle.
 policy-OverridePostUpdatePage = De side ‘Wat is der nij’ nei in fernijing ferfange. Stel dizze beliedsregel yn op leech as jo de oanbelangjende side útskeakelje wolle.
 policy-PasswordManagerEnabled = Bewarjen fan wachtwurden yn de wachtwurdbehearder ynskeakelje.
-policy-Permissions = Tastimmingen foar kamera, mikrofoan, lokaasje en notifikaasjes konfigurearje.
 policy-Permissions2 = Tastimmingen foar kamera, mikrofoan, lokaasje, notifikaasjes en automatysk ôfspyljen konfigurearje.
 policy-PopupBlocking = Tastean dat bepaalde websites standert pop-ups werjaan.
 policy-Preferences = De wearde foar in subset fan foarkarren ynstelle en beskoattelje.
@@ -88,5 +90,6 @@ policy-SecurityDevices = PKCS #11-modules ynstallearje.
 policy-SSLVersionMax = De maksimale SSL-ferzje ynstelle.
 policy-SSLVersionMin = De minimale SSL-ferzje ynstelle.
 policy-SupportMenu = In oanpast menu-item foar stipe oan it menu Help tafoegje.
+policy-UserMessaging = Bepaalde berjochten net oan de brûker toane.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = It besykjen fan websites blokkearje. Sjoch de dokumintaasje foar mear ynformaasje oer de notaasje.

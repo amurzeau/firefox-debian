@@ -13,7 +13,9 @@ select-all =
     .key = A
 menu-select-all =
     .label = Seleccionar tot
-    .accesskey = t
+    .accesskey = S
+close-dialog =
+    .key = w
 general-tab =
     .label = General
     .accesskey = G
@@ -140,9 +142,9 @@ general-quirks-mode =
     .value = Mòde de compatibilitat (quirks)
 general-strict-mode =
     .value = Mòde de respècte dels estandards
-security-no-owner = Aqueste site web balha pas d'entresenhas sul proprietari.
+security-no-owner = Aqueste site web dòna pas cap d'informacions sul proprietari.
 page-info-security-no-owner =
-    .value = Aqueste site web balha pas d'entresenhas sul proprietari.
+    .value = Aqueste site web dòna pas cap d'informacions sul proprietari.
 media-select-folder = Seleccionatz un repertòri ont enregistrar los imatges
 media-unknown-not-cached =
     .value = Desconegut (pas dins lo cache)
@@ -178,6 +180,17 @@ properties-general-size =
         { $bytes ->
             [one] { $kb } Ko ({ $bytes } octet)
            *[other] { $kb } Ko ({ $bytes } octets)
+        }
+# This string is used to display the type and number
+# of frames of a animated image
+# Variables:
+#   $type (string) - The type of a animated image
+#   $frames (number) - The number of frames in an animated image
+media-animated-image-type =
+    .value =
+        { $frames ->
+            [one] Imatge { $type } (animat, { $frames } calc)
+           *[other] Imatge { $type } (animat, { $frames } calques)
         }
 # This string is used to display the type of
 # an image
@@ -217,6 +230,6 @@ media-block-image =
 # Variables:
 #   $website (string) - The url of the website pageInfo is getting info for
 page-info-page =
-    .title = Entresenhas sus la pagina - { $website }
+    .title = Informacions sus la pagina - { $website }
 page-info-frame =
-    .title = Entresenhas sul quadre - { $website }
+    .title = Informacions sul quadre - { $website }

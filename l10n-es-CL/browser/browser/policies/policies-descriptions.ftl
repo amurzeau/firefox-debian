@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Establece políticas a las que WebExtensions pueden acceder a través de chrome.storage.managed.
+policy-AppAutoUpdate = Activar o desactivar actualizaciones automáticas de la aplicación.
 policy-AppUpdateURL = Establecer la URL de actualización de aplicación personalizada.
 policy-Authentication = Configurar la autenticación integrada para sitios web que la admitan.
 policy-BlockAboutAddons = Bloquear acceso al Administrador de complementos (about:addons).
@@ -21,9 +22,11 @@ policy-Bookmarks = Crear marcadores en la barra de herramientas de marcadores, e
 policy-CaptivePortal = Activar o desactivar soporte de portal cautivo.
 policy-CertificatesDescription = Añade certificados o usa los certificados integrados.
 policy-Cookies = Permitir o negar a los sitios web establecer cookies.
+policy-DisabledCiphers = Desactivar encriptadores.
 policy-DefaultDownloadDirectory = Establecer la carpeta de descargas predeterminada
 policy-DisableAppUpdate = Evitar que el navegador se actualice.
 policy-DisableBuiltinPDFViewer = Deshabilitar PDF.js, el visor de PDF integrado en { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Previene que el agente de navegación predeterminado tome acciones. Solo aplicable a Windows; otras plataformas no tienen el agente.
 policy-DisableDeveloperTools = Bloquear acceso a las herramientas de desarrollador.
 policy-DisableFeedbackCommands = Deshabilitar comandos para enviar opiniones desde el menú de ayuda (Enviar opinión e informar sitio engañoso).
 policy-DisableFirefoxAccounts = Deshabilitar servicios basados en { -fxaccount-brand-name }, incluyendo Sync.
@@ -72,7 +75,6 @@ policy-OfferToSaveLoginsDefault = Ajusta el valor predeterminado para permitir a
 policy-OverrideFirstRunPage = Saltarse la página de primera ejecución. Deja esta política en blanco si deseas desactivar la página de primera ejecución.
 policy-OverridePostUpdatePage = Saltarse la página "Qué hay de nuevo" post actualización. Deja esta política en blanco si deseas desactivar la página post actualización.
 policy-PasswordManagerEnabled = Habilitar el guardado de contraseñas en el administrador de contraseñas.
-policy-Permissions = Configurar permisos para cámara, micrófono, ubicación y notificaciones.
 policy-Permissions2 = Configurar permisos para cámara, micrófono, ubicación, notificaciones y reproducción automática.
 policy-PopupBlocking = Permitir que ciertos sitios web muestren ventanas emergentes de manera por defecto.
 policy-Preferences = Fija y bloquea el valor para un subconjunto de preferencias.

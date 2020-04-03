@@ -22,6 +22,8 @@ certificate-viewer-country = Maa
 certificate-viewer-curve = Käyrä
 certificate-viewer-distribution-point = Jakelupiste
 certificate-viewer-dns-name = DNS-nimi
+certificate-viewer-ip-address = IP-osoite
+certificate-viewer-other-name = Muu nimi
 certificate-viewer-exponent = Eksponentti
 certificate-viewer-id = Tunniste
 certificate-viewer-key-exchange-group = Avainvaihtoryhmä
@@ -44,6 +46,7 @@ certificate-viewer-purposes = Käyttötarkoitukset
 certificate-viewer-qualifier = Tarkenne
 certificate-viewer-qualifiers = Tarkenteet
 certificate-viewer-required = Vaaditaan
+certificate-viewer-unsupported = &lt;ei tuettu&gt;
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
 certificate-viewer-inc-state-province = Perustuspaikkakunta
 certificate-viewer-state-province = Paikkakunta

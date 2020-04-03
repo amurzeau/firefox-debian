@@ -78,6 +78,9 @@ detail-version =
 detail-last-updated =
     .label = Darrièra mesa a jorn
 detail-contributions-description = Lo desvolopaire d'aqueste modul demanda que l'ajudetz a assegurar lo contunhament de son desvolopament en li pagant una pichona contribucion.
+detail-contributions-button = Contribuir
+    .title = Contribuir al desvolopament d’aqueste modul
+    .accesskey = C
 detail-update-type =
     .value = Mesas a jorn automaticas
 detail-update-default =
@@ -89,6 +92,24 @@ detail-update-automatic =
 detail-update-manual =
     .label = Desactivadas
     .tooltiptext = Installa pas automaticament las mesas a jorn
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = Executar en fenèstras privadas
+detail-private-browsing-description2 = Quand es autorizada, l'extension aurà accès a vòstras activitats en linha pendent la navegacion privada. <label data-l10n-name="detail-private-browsing-learn-more">Ne saber mai</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overridden by the user.
+detail-private-disallowed-label = Pas autorizat en fenèstras privadas
+detail-private-disallowed-description = Aquesta extension fonciona pas pendent la navegacion privada. <label data-l10n-name="detail-private-browsing-learn-more">Ne saber mai</label>
+detail-private-disallowed-description2 = Aquesta extension fonciona pas pendent la navegacion privada. <a data-l10n-name="learn-more">Ne saber mai</a>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Requerís l'accès a las fenèstras privadas
+detail-private-required-description = Aquesta extension a accès a vòstras activitats en linha pendent la navegacion privada. <label data-l10n-name="detail-private-browsing-learn-more">Ne saber mai</label>
+detail-private-required-description2 = Aquesta extension a accès a vòstras activitats en linha pendent la navegacion privada. <a data-l10n-name="learn-more">Ne saber mai</a>
+detail-private-browsing-on =
+    .label = Autorizar
+    .tooltiptext = Activar en navegacion privada
+detail-private-browsing-off =
+    .label = Autorizar pas
+    .tooltiptext = Desactivar en navegacion privada
 detail-home =
     .label = Pagina d'acuèlh
 detail-home-value =
@@ -131,6 +152,12 @@ legacy-warning-show-legacy = Afichar las extensions obsolètas
 legacy-extensions =
     .value = Extensions obsolètas
 legacy-extensions-description = Aquestas extensions respèctan pas los estandards actuals de { -brand-short-name } e son estadas desactivadas. <label data-l10n-name="legacy-learn-more">Ne saber mai suls cambiaments dels moduls</label>
+private-browsing-description2 =
+    { -brand-short-name } modifica lo foncionament de las extensions dins la navegacion privada. Cap de las novèlas extensions qu'apondètz a
+    { -brand-short-name } serà pas executada per defaut dins una fenèstra privada. Levat se l'autorisatz dins los paramètres,
+    l'extension foncionarà pas pendent la navegacion privada e aurà pas accès a vòstras activitats en linha
+    Avèm aportat aquesta modificacion per gardar vòstra navigacion privada privada.
+    <label data-l10n-name="private-browsing-learn-more">Aprenètz a gerir los paramètres d'extension</label>
 extensions-view-discopane =
     .name = Recomandacions
     .tooltiptext = { extensions-view-discopane.name }
@@ -237,18 +264,65 @@ addon-install-from-file = Installar un modul dins d’un fichièr…
 addon-install-from-file-dialog-title = Causissètz un modul d'installar
 addon-install-from-file-filter-name = Moduls complementaris
 addon-open-about-debugging = Desbugar los moduls
-    .accesskey = B
+    .accesskey = D
 
 ## Extension shortcut management
 
+manage-extensions-shortcuts =
+    .label = Gerir los acorchis d’extensions
+    .accesskey = G
+# This is displayed in the page options menu
+addon-manage-extensions-shortcuts = Gerir los acorchis d’extensions
+    .accesskey = G
+shortcuts-no-addons = Avètz pas cap d'extension activada.
+shortcuts-no-commands = Las extensions seguentas an pas d’acorchi :
+shortcuts-input =
+    .placeholder = Picatz un acorchi
+shortcuts-browserAction = Activar l’extension
+shortcuts-pageAction = Activar l'accion de la pagina
+shortcuts-sidebarAction = Mostrar/Amagar la barra laterala
+shortcuts-modifier-mac = Inclure Ctrl, Alt o ⌘
+shortcuts-modifier-other = Inclure Ctrl o Alt
+shortcuts-invalid = Combinason invalida
+shortcuts-letter = Picatz una letra
+shortcuts-system = Impossible de remplaçar un acorchi clavièr de { -brand-short-name }
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Acorchi en doble
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } es utilizat coma acorchi dins mai d'un cas. De acorchis en doble pòdon provocar un compòrtament inesperat.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
 shortcuts-exists = Ja utilizat per { $addon }
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Ne veire { $numberToShow } mai
+       *[other] Ne veire { $numberToShow } mai
+    }
+shortcuts-card-collapse-button = Ne veire mens
+go-back-button =
+    .tooltiptext = Tornar
 
 ## Recommended add-ons page
 
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Las extensions e los tèmas son coma d'aplicacions per vòstre navegador, e vos permeton de
+    protegir los senhals, telecargar de vidèos, trobar d'ofèrtas, blocar las publicitats tediosas,
+    cambiar l'aparéncia de vòstre navegador, e plan mai encara. Aquestes pichons logicials
+    son sovent desvolopats per un tèrç. Vaquí una seleccion que { -brand-product-name } 
+    
+    <a data-l10n-name="learn-more-trigger"> vos recomanda</a> per de  foncionalitats
+    de securitat e performanças excepcionalas.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Unas d'aquestas recomandacions son personalizadas. Son basadas sus d'autras
+    extensions qu'avètz installadas, las preferéncias del perfil e las estatisticas d'utilizacion.
 discopane-notice-learn-more = Ne saber mai
+privacy-policy = Politica de confidencialitat
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
 #   $author (string) - The name of the add-on developer.
@@ -272,6 +346,8 @@ addon-options-button =
 
 report-addon-button = Rapòrt
 remove-addon-button = Levar
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Impossible de suprimir <a data-l10n-name="link"> Perqué ?</a>
 disable-addon-button = Desactivar
 enable-addon-button = Activar
 expand-addon-button = Mai d’opcions
@@ -288,25 +364,55 @@ details-addon-button = Detalhs
 release-notes-addon-button = Nòtas de version
 permissions-addon-button = Permissions
 addons-enabled-heading = Activats
+addons-disabled-heading = Desactivat
 extension-enabled-heading = Activadas
+extension-disabled-heading = Desactivadas
 theme-enabled-heading = Activat
+theme-disabled-heading = Desactivats
 plugin-enabled-heading = Activats
+plugin-disabled-heading = Desactivats
 dictionary-enabled-heading = Activats
+dictionary-disabled-heading = Desactivats
 locale-enabled-heading = Activadas
+locale-disabled-heading = Desactivadas
 ask-to-activate-button = Demandar per activar
 always-activate-button = Totjorn activar
 never-activate-button = Activar pas jamai
+addon-detail-author-label = Autor
+addon-detail-version-label = Version
 addon-detail-last-updated-label = Darrièra mesa a jorn
+addon-detail-homepage-label = Pagina d’acuèlh
+addon-detail-rating-label = Apreciacion
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Notat { NUMBER($rating, maximumFractionDigits: 1) } sus 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
 addon-name-disabled = { $name } (desactivat)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } revista
+       *[other] { $numberOfReviews } revistas
+    }
 
 ## Pending uninstall message bar
 
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> es estat suprimit.
+pending-uninstall-undo-button = Anullar
 addon-detail-updates-label = Permetre las mesas a jorn automaticas
 addon-detail-updates-radio-default = Defaut
+addon-detail-updates-radio-on = Activadas
+addon-detail-updates-radio-off = Desactivadas
 addon-detail-update-check-label = Recercar de mesas a jorn
+install-update-button = Metre a jorn
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed =
@@ -316,16 +422,29 @@ addon-badge-private-browsing-allowed =
 addon-badge-private-browsing-allowed2 =
     .title = Autorizat en navegacion privada
     .aria-label = { addon-badge-private-browsing-allowed2.title }
+addon-detail-private-browsing-help = Quand es autorizada, l'extension a accès a vòstras activitats en linha pendent la navegacion privada. <a data-l10n-name="learn-more">Ne saber mai</a>
+addon-detail-private-browsing-allow = Autorizar
+addon-detail-private-browsing-disallow = Autorizar pas
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended =
     .title = Recomandada
     .alt = Recomandada
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended2 =
+    .title = { -brand-product-name } recomanda pas que las extensions que respèctan nòstres estandards de seguretat e performança
+    .aria-label = { addon-badge-recommended2.title }
+available-updates-heading = Mesas a jorn disponiblas
+recent-updates-heading = Mesas a jorn recentas
+release-notes-loading = Cargament…
+release-notes-error = Una error s'es producha en cargar las nòtas de version.
+addon-permissions-empty = Aquesta extension demanda pas cap d'autorizacion
 recommended-extensions-heading = Extensions recomandadas
 recommended-themes-heading = Tèmas recomandats
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
 # list view. The "Firefox Color" name itself should not be translated.
-recommended-theme-1 = Vos sentissètz creatiu ?<a data-l10n-name="link">Creatz vòstre pròpri tèma amb Firefox Color.</a>
+recommended-theme-1 = Vos sentissètz creatiu ? <a data-l10n-name="link">Creatz vòstre pròpri tèma amb Firefox Color.</a>
 
 ## Page headings
 
@@ -334,6 +453,9 @@ theme-heading = Gestion dels tèmas
 plugin-heading = Gestion dels plugins
 dictionary-heading = Gestion dels diccionaris
 locale-heading = Gestion de las lengas
+updates-heading = Gestion de las mesas a jorn
+discover-heading = Personalizatz { -brand-short-name }
+shortcuts-heading = Gestion dels acorchis d’extensions
 theme-heading-search-label = Trobar mai de tèmas
 extension-heading-search-label = Trobar mai d’extensions
 default-heading-search-label = Trobar mai de moduls

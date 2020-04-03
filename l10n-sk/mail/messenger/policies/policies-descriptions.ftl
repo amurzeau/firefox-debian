@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Nastaví, ku ktorým pravidlám majú prístup rozšírenia cez chrome.storage.managed.
+policy-AppAutoUpdate = Zapne alebo vypne automatické aktualizácie aplikácie.
 policy-AppUpdateURL = Nastaví vlastnú URL adresu pre aktualizáciu aplikácie.
 policy-Authentication = Nakonfiguruje integrovanú autentifikáciu webových stránok, ktoré ju podporujú.
 policy-BlockAboutAddons = Zablokuje prístup ku správcovi doplnkov (about:addons).
@@ -20,6 +21,7 @@ policy-BlockAboutSupport = Zablokuje prístup na stránku about:support.
 policy-CaptivePortal = Povolenie alebo zakázanie podpory pre captive portály.
 policy-CertificatesDescription = Pridá certifikáty alebo použije zabudované certifikáty.
 policy-Cookies = Povolí alebo zakáže webovým stránkam nastavovať cookies.
+policy-DisabledCiphers = Zakáže šifry.
 policy-DefaultDownloadDirectory = Nastaví predvolené umiestnenie pre preberanie súborov.
 policy-DisableAppUpdate = Zabráni aktualizáciám aplikácie { -brand-short-name }.
 policy-DisableDeveloperTools = Zablokuje prístup k vývojárskym nástrojom.

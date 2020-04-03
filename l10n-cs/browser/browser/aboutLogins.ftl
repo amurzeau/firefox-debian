@@ -26,6 +26,8 @@ menu =
     .title = Otevřít nabídku
 # This menuitem is only visible on Windows
 menu-menuitem-import = Importovat hesla…
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = Importovat z jiného prohlížeče…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Možnosti
@@ -101,10 +103,6 @@ about-logins-login-item-username =
 login-item-copy-username-button-text = Kopírovat
 login-item-copied-username-button-text = Zkopírováno!
 login-item-password-label = Heslo
-login-item-password-reveal-checkbox-show =
-    .title = Zobrazit heslo
-login-item-password-reveal-checkbox-hide =
-    .title = Skrýt heslo
 login-item-password-reveal-checkbox =
     .aria-label = Zobrazit heslo
 login-item-copy-password-button-text = Kopírovat
@@ -115,6 +113,30 @@ login-item-cancel-button = Zrušit
 login-item-time-changed = Naposledy změněno { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Vytvořeno { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Naposledy použito { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = Pro změnu uložených přihlašovacích údajů nejprve ověřte svou totožnost.
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = upravit uložené přihlašovací údaje
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = Pro zobrazení uloženého hesla nejprve ověřte svou totožnost.
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = zobrazit uložené heslo
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = Pro zkopírování uloženého hesla nejprve ověřte svou totožnost.
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = zkopírovat uložené heslo
 
 ## Master Password notification
 

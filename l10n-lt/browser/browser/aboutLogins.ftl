@@ -26,6 +26,8 @@ menu =
     .title = Atverti meniu
 # This menuitem is only visible on Windows
 menu-menuitem-import = Importuoti slaptažodžius…
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = Importuoti iš kitos naršyklės…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Nuostatos
@@ -85,10 +87,6 @@ about-logins-login-item-username =
 login-item-copy-username-button-text = Kopijuoti
 login-item-copied-username-button-text = Nukopijuota!
 login-item-password-label = Slaptažodis
-login-item-password-reveal-checkbox-show =
-    .title = Rodyti slaptažodį
-login-item-password-reveal-checkbox-hide =
-    .title = Slėpti slaptažodį
 login-item-password-reveal-checkbox =
     .aria-label = Rodyti slaptažodį
 login-item-copy-password-button-text = Kopijuoti
@@ -99,6 +97,15 @@ login-item-cancel-button = Atsisakyti
 login-item-time-changed = Paskutinis atnaujinimas: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Sukurta: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Paskutinis naudojimas: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
 
 ## Master Password notification
 

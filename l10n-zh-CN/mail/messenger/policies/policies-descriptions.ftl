@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = 设置 WebExtension 可通过 chrome.storage.managed 存取的策略。
+policy-AppAutoUpdate = 启用或禁用应用程序自动更新。
 policy-AppUpdateURL = 设置自定义的应用程序更新网址。
 policy-Authentication = 为支持的网站配置集成身份验证。
 policy-BlockAboutAddons = 阻止访问附加组件管理器（about:addons）。
@@ -20,6 +21,7 @@ policy-BlockAboutSupport = 阻止访问 about:support 页面。
 policy-CaptivePortal = 启用或禁用强制门户支持。
 policy-CertificatesDescription = 添加证书或使用内置的证书。
 policy-Cookies = 允许或拒绝网站设置 Cookie。
+policy-DisabledCiphers = 禁用加密算法。
 policy-DefaultDownloadDirectory = 设置默认下载目录。
 policy-DisableAppUpdate = 阻止 { -brand-short-name } 更新。
 policy-DisableDeveloperTools = 阻止访问开发者工具。

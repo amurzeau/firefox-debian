@@ -5,6 +5,7 @@
 blocklist-window =
     .title = Lista del blocatge
     .style = width: 55em
+blocklist-description = Causissètz quina lista { -brand-short-name } utiliza per blocar los traçadors en linha. Las listas venon de <a data-l10n-name="disconnect-link" title="Disconnect">Disconnect</a>.
 blocklist-close-key =
     .key = w
 blocklist-treehead-list =
@@ -23,4 +24,7 @@ blocklist-button-ok =
 #   $listName {string, "Standard (Recommended)."} - List name.
 #   $description {string, "This list does a pretty good job."} - Description of the list.
 blocklist-item-list-template = { $listName } { $description }
+blocklist-item-moz-std-listName = Lista de blocatge de nivèl 1 (recomandada).
 blocklist-item-moz-std-description = Autoriza certans traçadors per que mens de sites quiten de foncionar.
+blocklist-item-moz-full-listName = Lista de blocatge de nivèl 2.
+blocklist-item-moz-full-description = Bloca los traçadors detectats. Es possible qu’unes sites web o contenguts se carguen pas corrèctament.

@@ -26,6 +26,8 @@ menu =
     .title = 開啟選單
 # This menuitem is only visible on Windows
 menu-menuitem-import = 匯入密碼…
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = 從另一套瀏覽器匯入…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] 選項
@@ -83,10 +85,6 @@ about-logins-login-item-username =
 login-item-copy-username-button-text = 複製
 login-item-copied-username-button-text = 已複製！
 login-item-password-label = 密碼
-login-item-password-reveal-checkbox-show =
-    .title = 顯示密碼
-login-item-password-reveal-checkbox-hide =
-    .title = 隱藏密碼
 login-item-password-reveal-checkbox =
     .aria-label = 顯示密碼
 login-item-copy-password-button-text = 複製
@@ -97,6 +95,30 @@ login-item-cancel-button = 取消
 login-item-time-changed = 上次修改: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = 建立於: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = 上次使用: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = 確認您的身分以編輯儲存的登入資訊。
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = 編輯儲存的登入資訊
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = 確認您的身分以顯示儲存的網站密碼。
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = 顯示儲存的網站密碼
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = 確認您的身分以複製儲存的登入資訊。
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = 複製儲存的網站密碼
 
 ## Master Password notification
 

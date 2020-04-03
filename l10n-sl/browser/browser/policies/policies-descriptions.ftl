@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Nastavi, do katerih pravilnikov lahko dostopajo razširitve WebExtensions preko chrome.storage.managed.
+policy-AppAutoUpdate = Omogoči ali onemogoči samodejne posodobitve programa.
 policy-AppUpdateURL = Nastavi poljuben URL za posodobitve programa.
 policy-Authentication = Nastavi integrirano overjanje za spletne strani, ki ga podpirajo.
 policy-BlockAboutAddons = Zavrni dostop do upravitelja dodatkov (about:addons).
@@ -21,9 +22,11 @@ policy-Bookmarks = Ustvarjaj zaznamke v orodni vrstici, meniju zaznamkov ali v d
 policy-CaptivePortal = Omogoči ali onemogoči podporo za prestrezni portal.
 policy-CertificatesDescription = Dodaj digitalna potrdila ali uporabi vgrajena potrdila.
 policy-Cookies = Spletnim stranem dovoli ali zavrni nastavljanje piškotkov.
+policy-DisabledCiphers = Onemogoči šifre.
 policy-DefaultDownloadDirectory = Nastavi privzeto mapo za prenose.
 policy-DisableAppUpdate = Prepreči posodabljanje brskalnika.
 policy-DisableBuiltinPDFViewer = Onemogoči PDF.js, pregledovalnik PDF brskalnika { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Prepreči privzetemu uporabniškemu agentu izvajanje kakršnihkoli ukrepov. To velja samo za Windows, druge platforme nimajo agenta.
 policy-DisableDeveloperTools = Zavrni dostop do razvojnih orodij.
 policy-DisableFeedbackCommands = Onemogoči ukaze v meniju Pomoč za pošiljanje povratnih informacij ("Povratne informacije" in "Prijavi zavajajočo stran").
 policy-DisableFirefoxAccounts = Onemogoči storitve na osnovi { -fxaccount-brand-name }ov, na primer Sync.
@@ -72,7 +75,6 @@ policy-OfferToSaveLoginsDefault = Nastavi privzeto vrednost, ki dovoljuje shranj
 policy-OverrideFirstRunPage = Preglasi stran prvega zagona. Če želite onemogočiti prikaz strani prvega zagona, nastavite pravilnik na prazno vrednost.
 policy-OverridePostUpdatePage = Preglasi stran "Kaj je novega", ki se odpre po posodobitvi. Če želite onemogočiti prikaz strani po posodobitvi, nastavite pravilnik na prazno vrednost.
 policy-PasswordManagerEnabled = Omogoči shranjevanje gesel v upravitelja gesel.
-policy-Permissions = Nastavi dovoljenja za kamero, mikrofon, lokacijo in obvestila.
 policy-Permissions2 = Nastavi dovoljenja za kamero, mikrofon, lokacijo, obvestila in samodejno predvajanje.
 policy-PopupBlocking = Določenim spletnim stranem dovoli privzeto prikazovanje pojavnih oken.
 policy-Preferences = Nastavi in zakleni vrednost podnabora nastavitev.

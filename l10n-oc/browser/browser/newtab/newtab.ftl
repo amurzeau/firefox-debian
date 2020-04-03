@@ -80,11 +80,14 @@ newtab-menu-delete-history = Suprimir de l’istoric
 newtab-menu-save-to-pocket = Enregistrar dins { -pocket-brand-name }
 newtab-menu-delete-pocket = Suprimir de { -pocket-brand-name }
 newtab-menu-archive-pocket = Archivar dins { -pocket-brand-name }
+newtab-menu-show-privacy-info = Nòstres esponsòrs e vòstra vida privada
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = Acabat
 newtab-privacy-modal-header = Vòstra vida privada es importanta.
+newtab-privacy-modal-paragraph-2 = En mai de contar d'istòrias pivelantas, vos mostram tanben de contengut pertinent e nautamant verificat d'esponsòrs seleccionats. Tranquilisatz-vos, <strong>vòstras donadas de navegacion sortisson pas jamai de vòstra còpia personala de { -brand-product-name } </strong> - la vejam pas, e tanpauc nòstres esponsòrs.
+newtab-privacy-modal-link = Ne saber mai sul respècte de la vida privada dins un onglet novèl
 
 ##
 
@@ -121,6 +124,10 @@ newtab-label-removed-bookmark = Marcapaginas suprimit
 newtab-label-recommended = Tendéncia
 newtab-label-saved = Pagina enregistrada dins { -pocket-brand-name }
 newtab-label-download = Telecargat
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } · Pairinejat
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -138,6 +145,10 @@ newtab-section-menu-privacy-notice = Politica de confidencialitat
 
 ## Section aria-labels
 
+newtab-section-collapse-section-label =
+    .aria-label = Reduire la seccion
+newtab-section-expand-section-label =
+    .aria-label = Desplegar la seccion
 
 ## Section Headers.
 
@@ -150,12 +161,19 @@ newtab-section-header-pocket = Recomandat per { $provider }
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
 newtab-empty-section-highlights = Començatz de navegar e aquí vos mostrarem los melhors articles, vidèos e autras paginas qu’avètz visitadas o apondudas als marcapaginas.
+# Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
+# Variables:
+#  $provider (String): Name of the content provider for this section, e.g "Pocket".
+newtab-empty-section-topstories = Sètz a jorn. Tornatz mai tard per descobrir mai d’articles de tria de { $provider }. Podètz pas esperar ? Causissètz un subjècte popular per trapar mai d’aarticles d'interès sul Web.
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
 newtab-discovery-empty-section-topstories-header = Sètz ja a jorn.
+newtab-discovery-empty-section-topstories-content = Tornatz mai tard per descobrir mai d’articles.
 newtab-discovery-empty-section-topstories-try-again-button = Tornar ensajar
 newtab-discovery-empty-section-topstories-loading = Cargament…
+# Displays when a layout in a section took too long to fetch articles.
+newtab-discovery-empty-section-topstories-timed-out = Ops ! Sembla qu’aquesta seccion es pas complètament cargada.
 
 ## Pocket Content Section.
 
@@ -165,6 +183,7 @@ newtab-pocket-more-recommendations = Mai de recomandacions
 newtab-pocket-whats-pocket = Qu’es aquò { -pocket-brand-name } ?
 newtab-pocket-learn-more = Ne saber mai
 newtab-pocket-cta-button = Installar { -pocket-brand-name }
+newtab-pocket-cta-text = Enregistratz vòstres articles preferits dins { -pocket-brand-name } e garissètz vòstre esperit amb de lecturas fascinantas.
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

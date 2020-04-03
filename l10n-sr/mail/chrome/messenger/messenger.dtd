@@ -42,6 +42,8 @@
 <!ENTITY  newMessageCmd.accesskey "р">
 <!ENTITY  newContactCmd.label "Контакт у именику…">
 <!ENTITY  newContactCmd.accesskey "К">
+<!ENTITY openMenuCmd.label "Отвори">
+<!ENTITY openMenuCmd.accesskey "О">
 <!ENTITY openMessageFileCmd.label "Отвори сачувану поруку…">
 <!ENTITY openMessageFileCmd.accesskey "О">
 <!ENTITY saveAsMenu.label "Сачувај као">
@@ -586,6 +588,7 @@
 <!ENTITY fileButton.tooltip "Сачувај изабрану поруку">
 <!ENTITY archiveButton.tooltip "Архивирај изабране поруке">
 <!ENTITY openConversationButton.tooltip "Прикажи разговор у изабраној поруци">
+<!ENTITY openMsgConversationButton.tooltip "Прикажи разговор изабране поруке">
 <!ENTITY nextButton.tooltip "Иди на следећу непрочитану поруку">
 <!ENTITY nextMsgButton.tooltip "Иди на следећу поруку">
 <!ENTITY previousButton.tooltip "Иди на претходну непрочитану поруку">
@@ -604,6 +607,7 @@
 <!ENTITY tagButton.tooltip "Означи поруке">
 <!ENTITY compactButton.tooltip "Уклони обрисане поруке из изабране фасцикле">
 <!ENTITY appmenuButton1.tooltip "Прикажи мени &brandShortName;-а">
+<!ENTITY addonsButton.tooltip "Управљајте вашим додацима">
 
 <!-- Toolbar Button Popup -->
 <!ENTITY buttonMenuForwardAsInline.label "Проследи као текст унутар друге поруке">
@@ -704,6 +708,7 @@
 <!ENTITY saveAsVirtualFolderMenu.label "Сачувај претрагу као фасциклу…">
 
 <!-- Thread Pane -->
+<!ENTITY selectColumn.label "Одаберите поруке">
 <!ENTITY threadColumn.label "Нит">
 <!ENTITY fromColumn.label "Шаље">
 <!ENTITY recipientColumn.label "Прималац">
@@ -727,6 +732,7 @@
 
 <!-- Thread Pane Tooltips -->
 <!ENTITY columnChooser2.tooltip "Изаберите које колоне треба приказати">
+<!ENTITY selectColumn.tooltip "Изаберите/поништите све поруке">
 <!ENTITY threadColumn2.tooltip "Прикажи нити поруке">
 <!ENTITY fromColumn2.tooltip "Поређај по пошиљаоцу">
 <!ENTITY recipientColumn2.tooltip "Поређај по примаоцу">
@@ -969,3 +975,5 @@
 <!ENTITY openAddressBookDock.label      "Отвори именик">
 
 <!-- Content tab Navigation buttons -->
+<!ENTITY browseBackButton.tooltip    "Претходна страница">
+<!ENTITY browseForwardButton.tooltip "Следећа страница">

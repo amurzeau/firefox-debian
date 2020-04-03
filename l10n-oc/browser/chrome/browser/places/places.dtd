@@ -19,7 +19,7 @@
 <!ENTITY view.columns.label             "Visualizar las colomnas">
 <!ENTITY view.columns.accesskey         "c">
 <!ENTITY view.sort.label                "Triar">
-<!ENTITY view.sort.accesskey            "r">
+<!ENTITY view.sort.accesskey            "T">
 <!ENTITY view.unsorted.label            "Pas triat">
 <!ENTITY view.unsorted.accesskey        "P">
 <!ENTITY view.sortAscending.label       "Òrdre de classificacion A > Z">
@@ -45,13 +45,13 @@
 <!ENTITY cmd.deleteDomainData.accesskey "D">
 
 <!ENTITY cmd.open.label                  "Dobrir">
-<!ENTITY cmd.open.accesskey              "o">
+<!ENTITY cmd.open.accesskey              "D">
 <!ENTITY cmd.open_window.label           "Dobrir dins una fenèstra novèla">
-<!ENTITY cmd.open_window.accesskey       "n">
+<!ENTITY cmd.open_window.accesskey       "f">
 <!ENTITY cmd.open_private_window.label     "Dobrir lo ligam dins una novèla fenèstra privada">
 <!ENTITY cmd.open_private_window.accesskey "p">
 <!ENTITY cmd.open_tab.label              "Dobrir dins un onglet novèl">
-<!ENTITY cmd.open_tab.accesskey          "v">
+<!ENTITY cmd.open_tab.accesskey          "o">
 <!ENTITY cmd.open_all_in_tabs.label      "Tot dobrir dins d'onglets">
 <!ENTITY cmd.open_all_in_tabs.accesskey  "o">
 
@@ -63,10 +63,10 @@
 <!ENTITY cmd.context_sortby_name.accesskey  "r">
 
 <!ENTITY cmd.new_bookmark.label            "Marcapagina novèl…">
-<!ENTITY cmd.new_bookmark.accesskey        "s">
+<!ENTITY cmd.new_bookmark.accesskey        "M">
 <!ENTITY cmd.new_folder.label              "Repertòri novèl…">
-<!ENTITY cmd.new_folder.accesskey          "o">
-<!ENTITY cmd.context_new_folder.accesskey  "d">
+<!ENTITY cmd.new_folder.accesskey          "R">
+<!ENTITY cmd.context_new_folder.accesskey  "R">
 <!ENTITY cmd.new_separator.label           "Separador novèl">
 <!ENTITY cmd.new_separator.accesskey       "S">
 

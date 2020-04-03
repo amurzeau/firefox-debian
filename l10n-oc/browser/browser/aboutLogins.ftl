@@ -26,6 +26,8 @@ menu =
     .title = Dobrir lo menú
 # This menuitem is only visible on Windows
 menu-menuitem-import = Importar los senhals…
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = Importar d’un autre navegador…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Opcions
@@ -62,13 +64,13 @@ about-logins-list-item-breach-icon =
 
 ## Introduction screen
 
-login-intro-heading = Cercatz vòstres senhals gardats ? Configuratz { -sync-brand-short-name }.
+login-intro-heading = Cercatz vòstres senhals salvats ? Configuratz { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-in = Cap d’identificant sincronizat pas trobat.
-login-intro-description = Se gardatz vòstres identificants dins { -brand-product-name } sus un autre periferics, vaquí cossí i accedir aquí :
-login-intro-instruction-fxa = Connectatz-vos o creatz un { -fxaccount-brand-name } ont son gardats los identificants.
+login-intro-description = Se salvatz vòstres identificants dins { -brand-product-name } sus un autre periferics, vaquí cossí i accedir aquí :
+login-intro-instruction-fxa = Connectatz-vos o creatz un { -fxaccount-brand-name } ont son salvats los identificants.
 login-intro-instruction-fxa-settings = Asseguratz-vos qu’avètz seleccionat la casa dels identificants dins los paramètres de { -sync-brand-short-name }
 about-logins-intro-instruction-help = Consultatz <a data-l10n-name="help-link">l’assiténcia de { -lockwise-brand-short-name } per d’ajudar</a>
-about-logins-intro-import = Se vòstres identificants son gardats dins un autre navegador, podètz <a data-l10n-name="import-link">los importar dins{ -lockwise-brand-short-name }</a>
+about-logins-intro-import = Se vòstres identificants son salvats dins un autre navegador, podètz <a data-l10n-name="import-link">los importar dins{ -lockwise-brand-short-name }</a>
 
 ## Login
 
@@ -95,6 +97,30 @@ login-item-time-changed = Darrièra modificacion : { DATETIME($timeChanged, da
 login-item-time-created = Creacion : { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Darrièra utilizacion : { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
 
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = Verificatz vòstra identitat per modificar los identificants salvats.
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = modificar l’identificant salvat
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = Verificatz vòstra identitat per revelar lo senhal salvat.
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = revelar lo senhal salvat
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = Verificatz vòstra identitat per copiar lo senhal salvat.
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = copiar lo senhal salvat
+
 ## Master Password notification
 
 master-password-notification-message = Picatz vòstre senhal màger per veire los identificants e senhals salvats
@@ -104,6 +130,11 @@ master-password-reload-button =
 
 ## Password Sync notification
 
+enable-password-sync-notification-message =
+    { PLATFORM() ->
+        [windows] Volètz accedir a vòstres identificants pertot ont utilizatz { -brand-product-name } ? Anat dins las opcions de { -sync-brand-short-name } e seleccionatz la casa Identificants
+       *[other] Volètz accedir a vòstres identificants pertot ont utilizatz { -brand-product-name } ? Anat dins las preferéncias de { -sync-brand-short-name } e seleccionatz la casa Identificants
+    }
 enable-password-sync-preferences-button =
     .label =
         { PLATFORM() ->
@@ -129,6 +160,7 @@ confirm-discard-changes-dialog-confirm-button = Ignorar
 
 ## Breach Alert notification
 
+breach-alert-text = Los senhals d’aqueste site foguèron panats o divulgats dempuèi vòstra darrièra modificacion d‘informacions de connexion. Cambiatz vòstre senhal per protegir vòstre compte.
 breach-alert-link = Ne saber mai tocant aquesta pèrda de donadas.
 breach-alert-dismiss =
     .title = Tampar aquesta alèrta

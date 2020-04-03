@@ -11,16 +11,18 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Postavite pravila kojima će WebExtensions moći pristupiti putem chrome.storage.managed.
-policy-AppUpdateURL = Postavite prilagođeni URL za ažuriranja aplikacije.
+policy-AppAutoUpdate = Omogući ili onemogući automatsko ažuriranje programa.
+policy-AppUpdateURL = Postavi prilagođeni URL za ažuriranja programa.
 policy-Authentication = Postavite integriranu provjeru autentičnosti za web stranice koje ju podržavaju.
-policy-BlockAboutAddons = Blokirajte pristup Upravitelju dodataka (about:addons).
-policy-BlockAboutConfig = Blokirajte pristup stranici about:config.
-policy-BlockAboutProfiles = Blokirajte pristup stranici about:profiles.
-policy-BlockAboutSupport = Blokirajte pristup stranici about:support.
+policy-BlockAboutAddons = Blokiraj pristup upravljaču dodataka (about:addons).
+policy-BlockAboutConfig = Blokiraj pristup stranici about:config.
+policy-BlockAboutProfiles = Blokiraj pristup stranici about:profiles.
+policy-BlockAboutSupport = Blokiraj pristup stranici about:support.
 policy-Bookmarks = Stvorite zabilješke u alatnoj traci zabilješki, izborniku zabilješki ili određenoj mapi unutar njih.
-policy-CaptivePortal = Omogućite ili onemogućite podršku za prilagođenu početnu stranicu na mreži (captive portal).
+policy-CaptivePortal = Aktiviraj ili deaktiviraj podršku za prilagođenu početnu stranicu na mreži (captive portal).
 policy-CertificatesDescription = Dodaj certifikate ili koristite ugrađene certifikate.
 policy-Cookies = Dozvoli ili zabrani internetskim stranicama postavljanje kolačića.
+policy-DisabledCiphers = Omogući šifriranje.
 policy-DefaultDownloadDirectory = Postavite zadanu mapu za preuzimanje.
 policy-DisableAppUpdate = Spriječite preglednik da se ažurira.
 policy-DisableBuiltinPDFViewer = Onemogući PDF.js, ugrađeni preglednik PDF datoteka u { -brand-short-name }u.
@@ -47,47 +49,46 @@ policy-DisplayBookmarksToolbar = Standardno prikaži alatnu traku zabilješki.
 policy-DisplayMenuBar = Standardno prikaži traku izbornika.
 policy-DNSOverHTTPS = Podesi DNS preko HTTPS-a.
 policy-DontCheckDefaultBrowser = Onemogući provjeru za zadani preglednik prilikom pokretanja.
-policy-DownloadDirectory = Postavite i zaključajte direktorij za preuzimanje.
+policy-DownloadDirectory = Postavi i zaključaj direktorij za preuzimanje.
 # “lock” means that the user won’t be able to change this setting
-policy-EnableTrackingProtection = Omogućite ili onemogućite blokiranje sadržaja i opcionalno ga zaključajte.
+policy-EnableTrackingProtection = Aktiviraj ili deaktiviraj blokiranje sadržaja i opcionalno ga zaključaj.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
 policy-Extensions = Instaliraj, ukloni ili zaključaj dodatke. Mogućnost instalacije uzima URL-ove ili putanje kao parametre. Mogućnosti ukloni ili zaključaj uzima ID dodatka kao parametar.
-policy-ExtensionSettings = Upravljajte svim aspektima instalacije dodataka.
-policy-ExtensionUpdate = Omogućite ili onemogućite automatska ažuriranja dodataka.
+policy-ExtensionSettings = Upravljaj svim aspektima instalacije dodataka.
+policy-ExtensionUpdate = Aktiviraj ili deaktiviraj automatska ažuriranja dodataka.
 policy-FirefoxHome = Postavite Firefox početnnu stranicu.
 policy-FlashPlugin = Dozvoli ili zabrani upotrebu dodatka Flash.
 policy-HardwareAcceleration = Ukoliko je netočno, isključuje hardversko ubrzanje.
 # “lock” means that the user won’t be able to change this setting
-policy-Homepage = Postavite i opcionalno zaključajte početnu stranicu.
+policy-Homepage = Postavi i opcionalno zaključaj početnu stranicu.
 policy-InstallAddonsPermission = Dozvoli određenim web stranicama instalirati dodatke.
 policy-LegacyProfiles = Onemogućuje značajku koja nameće zaseban profil za svaku instalaciju
 policy-LocalFileLinks = Omogućite određenim web stranicama poveznice na lokalne datoteke.
-policy-NetworkPrediction = Omogućite ili onemogućite predviđanje mreže (DNS prefetching).
-policy-NewTabPage = Omogućite ili onemogućite stranicu Nova kartica.
+policy-NetworkPrediction = Aktiviraj ili deaktiviraj predviđanje mreže (DNS prefetching).
+policy-NewTabPage = Aktiviraj ili deaktiviraj stranicu Nova kartica.
 policy-NoDefaultBookmarks = Onemogućite izradu zadanih zabilješki koje dolaze s { -brand-short-name } i pametnih zabilješki (Najposjećenije, Nedavne oznake). Napomena: Ovo pravilo je na snazi samo ako se koristi prije prvog pokretanja profila.
-policy-OfferToSaveLogins = Primorajte postavke dozvole da { -brand-short-name } nudi pamćenje prijava i lozinki. Prihvaćaju se vrijednosti točno i netočno.
+policy-OfferToSaveLogins = Prisili postavku, tako da { -brand-short-name } smije ponudi pamćenje prijava i lozinki. Prihvaćaju se vrijednosti točno i netočno.
 policy-OfferToSaveLoginsDefault = Postavi zadanu vrijednost, kako bi { -brand-short-name } ponudio pamtiti spremljene prijave i lozinke. Prihvaćaju se vrijednosti za točno i netočno.
 policy-OverrideFirstRunPage = Poništite postavke početne stranice. Postavite ovo pravilo na prazno ukoliko želite onemogućiti početnu stranicu.
 policy-OverridePostUpdatePage = Poništite "Što je novo" stranicu nakon ažuriranja. Postavite ovo pravilo na prazno ukoliko želite onemogućiti stranicu nakon ažuriranja.
-policy-PasswordManagerEnabled = Omogući spremanje lozinki u upravljaču lozinki.
-policy-Permissions = Podesite dozvole za kameru, mikrofon, lokaciju i obavijesti.
-policy-Permissions2 = Podesite dozvole za kameru, mikrofon, lokaciju, obavijesti i automatsku reprodukciju.
+policy-PasswordManagerEnabled = Aktiviraj spremanje lozinki u upravljaču lozinki.
+policy-Permissions2 = Podesi dozvole za kameru, mikrofon, lokaciju, obavijesti i automatsku reprodukciju.
 policy-PopupBlocking = Omogućite određenim web stranicama prikazivanje skočnih prozora.
-policy-Preferences = Postavite i zaključajte vrijednosti za podskup postavki.
+policy-Preferences = Postavi i zaključaj vrijednosti za podskup postavki.
 policy-PromptForDownloadLocation = Pitaj gdje spremati datoteke prilikom preuzimanja.
 policy-Proxy = Podesi proxy postavke.
 policy-RequestedLocales = Postavite popis traženih jezika za aplikaciju prema redosljedu preferencija.
 policy-SanitizeOnShutdown2 = Brisanje podataka pretraživanja prilikom gašenja.
 policy-SearchBar = Postavite zadanu lokaciju za traku za pretraživanje. Korisnik je i dalje može prilagoditi.
-policy-SearchEngines = Prilagodite postavke pretraživača. Ovo pravilo je dostupno samo u inačici proširene podrške (ESR).
-policy-SearchSuggestEnabled = Omogućite ili onemogućite prijedloge za pretraživanje.
+policy-SearchEngines = Prilagodi postavke pretraživača. Ovo pravilo je dostupno samo u verziji proširene podrške (ESR).
+policy-SearchSuggestEnabled = Aktiviraj ili deaktiviraj prijedloge za pretraživanje.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
-policy-SecurityDevices = Instalirajte PKCS #11 module.
-policy-SSLVersionMax = Postavite maksimalnu SSL inačicu.
-policy-SSLVersionMin = Postavite minimalnu SSL inačicu.
-policy-SupportMenu = Dodajteprilagođenu stavku korisničke podrške u izbornik pomoći.
+policy-SecurityDevices = Instaliraj PKCS #11 module.
+policy-SSLVersionMax = Postavi maksimalnu SSL verziju.
+policy-SSLVersionMin = Postavi minimalnu SSL verziju.
+policy-SupportMenu = Dodaj prilagođenu stavku korisničke podrške u izbornik pomoći.
 policy-UserMessaging = Ne prikazuj određene poruke korisniku.
 # “format” refers to the format used for the value of this policy.
-policy-WebsiteFilter = Blokirajte posjećivanje web stranica. Proučite dokumentaciju za više detalja oko oblika.
+policy-WebsiteFilter = Blokiraj posjećivanje web stranica. Prouči dokumentaciju za daljnje detalje o formatu.

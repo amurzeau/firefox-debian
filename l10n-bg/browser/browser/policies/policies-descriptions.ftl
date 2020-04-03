@@ -10,8 +10,12 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
+policy-BlockAboutConfig = Блокиране на достъпа до страницата "about:config".
+policy-BlockAboutProfiles = Блокиране на достъпа до страницата "about:profiles".
+policy-BlockAboutSupport = Блокиране на достъпа до страницата "about:support".
 policy-DisableFirefoxStudies = Забранява на { -brand-short-name } да извършва изследвания.
 policy-DisablePrivateBrowsing = Изключване на поверителното разглеждане.
+policy-DisableProfileRefresh = Деактивиране на бутона "Освежаване на { -brand-short-name }" в страницата about:support.
 policy-DisableTelemetry = Изключване на телеметрията.
 policy-DNSOverHTTPS = Конфигуриране на DNS през HTTPS.
 policy-InstallAddonsPermission = Разрешаване на определени уебсайтове да инсталират добавки.

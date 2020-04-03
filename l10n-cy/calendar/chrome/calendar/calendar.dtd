@@ -302,9 +302,9 @@
 <!ENTITY calendar.context.showall.label                "Dangos Pob Calendr">
 <!ENTITY calendar.context.showall.accesskey            "P">
 
-<!ENTITY calendar.context.convertmenu.label              "Trosi i">
+<!ENTITY calendar.context.convertmenu.label              "Trosi I">
 <!ENTITY calendar.context.convertmenu.accesskey.mail     "n">
-<!ENTITY calendar.context.convertmenu.accesskey.calendar "v">
+<!ENTITY calendar.context.convertmenu.accesskey.calendar "T">
 <!ENTITY calendar.context.convertmenu.event.label        "Digwyddiad…">
 <!ENTITY calendar.context.convertmenu.event.accesskey    "D">
 <!ENTITY calendar.context.convertmenu.message.label      "Neges…">
@@ -365,6 +365,7 @@
 <!ENTITY calendarproperties.firealarms.label               "Dangos Atgoffwyr">
 <!ENTITY calendarproperties.cache3.label                   "Cefnogaeth All-lein">
 <!ENTITY calendarproperties.enabled.label                  "Newid y calendr yma ar">
+<!ENTITY calendarproperties.enabled2.label                 "Galluogi'r Calendr hwn">
 <!ENTITY calendarproperties.forceDisabled.label            "Nid oes modd canfod darparwr y calendr hwn. Mae hyn yn digwydd yn aml os ydych wedi anablu neu ddadosod rhai ychwanegion.">
 <!ENTITY calendarproperties.unsubscribe.label              "Dad-danysgrifio">
 <!ENTITY calendarproperties.unsubscribe.accesskey          "a">

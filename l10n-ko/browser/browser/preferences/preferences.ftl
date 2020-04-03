@@ -2,10 +2,10 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = 웹 사이트에 “방문자 추적 금지” 신호를 보내서 추적을 원하지 않는다고 알림
+do-not-track-description = 웹 사이트에 “추적 안 함” 신호를 보내서 추적을 원하지 않는다고 알림
 do-not-track-learn-more = 더 알아보기
 do-not-track-option-default-content-blocking-known =
-    .label = { -brand-short-name }가 알려진 추적기를 차단하도록 설정 됐을 때만
+    .label = { -brand-short-name }가 알려진 추적기를 차단하도록 설정된 경우에만
 do-not-track-option-always =
     .label = 항상
 pref-page =
@@ -128,8 +128,8 @@ get-started-configured = { -sync-brand-short-name } 설정 열기
 always-check-default =
     .label = { -brand-short-name }가 기본 브라우저인지 항상 확인
     .accesskey = w
-is-default = 현재 { -brand-short-name }가 기본 브라우저입니다.
-is-not-default = { -brand-short-name }가 기본 브라우저가 아닙니다.
+is-default = 현재 { -brand-short-name }가 기본 브라우저입니다
+is-not-default = { -brand-short-name }가 기본 브라우저가 아닙니다
 set-as-my-default-browser =
     .label = 기본값으로…
     .accesskey = D
@@ -139,7 +139,7 @@ startup-restore-previous-session =
 startup-restore-warn-on-quit =
     .label = 브라우저 종료시 경고
 disable-extension =
-    .label = 확장 기능 비활성화
+    .label = 확장 기능 사용 안 함
 tabs-group-header = 탭
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab으로 최근 사용한 순서대로 탭 순환
@@ -205,7 +205,7 @@ choose-language-description = 웹 페이지를 표시할 기본 언어 선택
 choose-button =
     .label = 선택…
     .accesskey = o
-choose-browser-language-description = { -brand-short-name }가 메뉴나 메시지, 알림을 표시하는데 사용할 언어를 선택해 주세요.
+choose-browser-language-description = { -brand-short-name }가 메뉴, 메시지 및 알림을 표시하는데 사용할 언어를 선택하세요.
 manage-browser-languages-button =
     .label = 대체 설정…
     .accesskey = I
@@ -328,15 +328,15 @@ update-history =
     .accesskey = p
 update-application-allow-description = { -brand-short-name } 설치 방법
 update-application-auto =
-    .label = 자동으로 업데이트 설치(권장)
+    .label = 자동으로 업데이트 설치 (권장)
     .accesskey = A
 update-application-check-choose =
-    .label = 새로운 업데이트를 확인하지만 설치는 수동으로 진행
+    .label = 업데이트를 확인하지만 설치할지는 묻기
     .accesskey = C
 update-application-manual =
     .label = 업데이트 확인 안 함 (권장하지 않음)
     .accesskey = N
-update-application-warning-cross-user-setting = 이 설정은 이 { -brand-short-name } 설치를 사용하는 모든 윈도우즈 계정 및 { -brand-short-name } 프로필에 적용됩니다.
+update-application-warning-cross-user-setting = 이 설정은 이 { -brand-short-name } 설치를 사용하는 모든 Windows 계정 및 { -brand-short-name } 프로필에 적용됩니다.
 update-application-use-service =
     .label = 업데이트 설치 시 백그라운드 작업으로 하기
     .accesskey = b
@@ -377,7 +377,7 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = 콘텐츠 프로세스 제한
     .accesskey = L
 performance-limit-content-process-enabled-desc = 추가 콘텐츠 프로세스는 여러 탭을 사용할 때 성능을 향상시킬 수 있지만 더 많은 메모리를 사용합니다.
-performance-limit-content-process-blocked-desc = 콘텐츠 프로세스 갯수 변경은 멀티 프로세스 { -brand-short-name }에서만 가능합니다. <a data-l10n-name="learn-more">멀티 프로세스가 활성화 되었는지 확인하는 방법</a>
+performance-limit-content-process-blocked-desc = 콘텐츠 프로세스 갯수 변경은 다중 프로세스 { -brand-short-name }에서만 가능합니다. <a data-l10n-name="learn-more">다중 프로세스가 활성화 되었는지 확인하는 방법</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
@@ -579,7 +579,7 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = 웹과 함께 하세요.
-sync-signedout-description = 북마크, 방문 기록, 탭, 비밀번호, 부가 기능, 설정을 모든 기기에 걸쳐 동기화 하세요.
+sync-signedout-description = 북마크, 기록, 탭, 비밀번호, 부가 기능, 설정을 모든 기기에 걸쳐 동기화 하세요.
 sync-signedout-account-title = { -fxaccount-brand-name }과 연결
 sync-signedout-account-create = 계정이 없으신가요? 시작하세요
     .accesskey = C
@@ -597,7 +597,7 @@ sync-signedout-account-signin2 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = 모바일 기기와 동기화하기 위해서 Firefox <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 또는 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>를 다운로드 합니다.
+sync-mobile-promo = 모바일 기기와 동기화하기 위해서 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 또는 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> 용 Firefox를 다운로드 하세요.
 
 ## Sync Section - Signed in
 
@@ -635,7 +635,7 @@ prefs-syncing-off = 동기화 : 꺼짐
 prefs-sync-setup =
     .label = { -sync-brand-short-name } 설정…
     .accesskey = S
-prefs-sync-offer-setup-label = 북마크, 방문 기록, 탭, 비밀번호, 부가 기능 및 설정을 모든 기기에 걸쳐 동기화하세요.
+prefs-sync-offer-setup-label = 북마크, 기록, 탭, 비밀번호, 부가 기능 및 설정을 모든 기기에 걸쳐 동기화하세요.
 prefs-sync-now =
     .labelnotsyncing = 지금 동기화
     .accesskeynotsyncing = N
@@ -645,7 +645,7 @@ prefs-sync-now =
 
 sync-currently-syncing-heading = 현재 다음 항목을 동기화 중입니다:
 sync-currently-syncing-bookmarks = 북마크
-sync-currently-syncing-history = 방문 기록
+sync-currently-syncing-history = 기록
 sync-currently-syncing-tabs = 열린 탭
 sync-currently-syncing-logins-passwords = 로그인과 비밀번호
 sync-currently-syncing-addresses = 주소
@@ -673,7 +673,7 @@ sync-engine-bookmarks =
     .label = 북마크
     .accesskey = m
 sync-engine-history =
-    .label = 방문 기록
+    .label = 기록
     .accesskey = r
 sync-engine-tabs =
     .label = 열린 탭
@@ -758,13 +758,24 @@ forms-saved-logins =
     .label = 저장된 로그인…
     .accesskey = L
 forms-master-pw-use =
-    .label = 기본 비밀번호 사용
+    .label = 마스터 비밀번호 사용
     .accesskey = U
 forms-master-pw-change =
-    .label = 기본 비밀번호 변경…
+    .label = 마스터 비밀번호 변경…
     .accesskey = M
-forms-master-pw-fips-title = 현재 FIPS 모드입니다. FIPS는 기본 비밀번호가 설정되어야 합니다.
+forms-master-pw-fips-title = 현재 FIPS 모드입니다. FIPS는 마스터 비밀번호가 설정되어야 합니다.
 forms-master-pw-fips-desc = 비밀번호 변경 실패
+
+## OS Authentication dialog
+
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message = 마스터 비밀번호를 만들기 위해 ID를 확인하세요.
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = 마스터 비밀번호 만들기
+master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
 
@@ -839,9 +850,9 @@ sitedata-option-block-cross-site-and-social-media-trackers =
 sitedata-option-block-unvisited =
     .label = 방문하지 않은 웹 사이트의 쿠키
 sitedata-option-block-all-third-party =
-    .label = 모든 제3자 쿠키 (웹 사이트가 깨질 수 있음)
+    .label = 모든 제3자 쿠키 (웹 사이트가 제대로 작동 안할 수 있음)
 sitedata-option-block-all =
-    .label = 모든 쿠키(웹 사이트가 깨질 수 있음)
+    .label = 모든 쿠키 (웹 사이트가 제대로 작동 안하게 됨)
 sitedata-clear =
     .label = 데이터 삭제…
     .accesskey = l
@@ -872,7 +883,7 @@ addressbar-suggestions-settings = 검색 엔진 제안 설정 변경
 content-blocking-header = 콘텐츠 차단
 content-blocking-section-description = 탐색하는 동안 개인 정보를 보호하세요. 사용자가 방문하는 사이트를 추적하고 개인을 식별하는 보이지 않는 콘텐츠를 차단합니다. 이 콘텐츠 중 일부를 차단하면 페이지가 더 빨리 로드 될 수 있습니다.
 content-blocking-enhanced-tracking-protection = 향상된 추적 방지 기능
-content-blocking-section-top-level-description = 추적기는 온라인에서 사용자를 따라다니며 브라우징 습관과 관심사에 대한 정보를 수집합니다. { -brand-short-name }는 이러한 많은 추적기 및 기타 악성 스크립트를 차단합니다.
+content-blocking-section-top-level-description = 추적기는 온라인에서 사용자를 따라다니며 탐색 습관과 관심사에 대한 정보를 수집합니다. { -brand-short-name }는 이러한 많은 추적기 및 기타 악성 스크립트를 차단합니다.
 content-blocking-learn-more = 더 알아보기
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".

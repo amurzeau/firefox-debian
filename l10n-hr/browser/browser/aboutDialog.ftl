@@ -17,13 +17,13 @@ update-applying = Primjena dopune…
 update-failed = Ažuriranje nije uspjelo. <label data-l10n-name="failed-link">Preuzmi najnoviju verziju</label>
 update-failed-main = Ažuriranje nije uspjelo. <a data-l10n-name="failed-link-main">Preuzmi najnoviju verziju</a>
 update-adminDisabled = Dopune je onemogućio tvoj administrator sustava
-update-noUpdatesFound = { -brand-short-name } je ažuriran
-update-otherInstanceHandlingUpdates = { -brand-short-name } se nadograđuje od strane druge instance
-update-manual = Dopune su dostupne na <label data-l10n-name="manual-link"/>
+update-noUpdatesFound = Koristiš najnoviji { -brand-short-name }
+update-otherInstanceHandlingUpdates = { -brand-short-name } nadograđuje jedna druga instanca
+update-manual = Nove verzije su dostupne na <label data-l10n-name="manual-link"/>
 update-unsupported = Na ovom sustavu više ne možeš nadograđivati. <label data-l10n-name="unsupported-link">Saznaj više</label>
 update-restarting = Ponovno pokretanje…
 channel-description = Trenutno ste na <label data-l10n-name="current-channel"></label> kanalu dopuna.
-warningDesc-version = { -brand-short-name } je eksperimentalna inačica i može biti nestabilna.
+warningDesc-version = { -brand-short-name } je eksperimentalna verzija i može biti nestabilna.
 community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> je <label data-l10n-name="community-exp-creditsLink">globalna zajednica</label> koja nastoji zadržati Web otvorenim, javnim i dostupnim svima.
 community-2 = { -brand-short-name } je dizajnirala <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label>, <label data-l10n-name="community-creditsLink">globalna zajednica</label> koja nastoji zadržati Web otvorenim, javnim i dostupnim svima.
 helpus = Želiš pomoći? <label data-l10n-name="helpus-donateLink">Doniraj</label> ili <label data-l10n-name="helpus-getInvolvedLink">uključi se u rad!</label>

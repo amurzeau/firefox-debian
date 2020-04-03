@@ -22,6 +22,8 @@ certificate-viewer-country = ประเทศ
 certificate-viewer-curve = เส้นโค้ง
 certificate-viewer-distribution-point = จุดแจกจ่าย
 certificate-viewer-dns-name = ชื่อ DNS
+certificate-viewer-ip-address = ที่อยู่ IP
+certificate-viewer-other-name = ชื่ออื่น
 certificate-viewer-exponent = เลขชี้กำลัง
 certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = กลุ่มการแลกเปลี่ยนคีย์
@@ -44,6 +46,7 @@ certificate-viewer-purposes = จุดประสงค์
 certificate-viewer-qualifier = ตัวบ่งคุณลักษณะ
 certificate-viewer-qualifiers = ตัวบ่งคุณลักษณะ
 certificate-viewer-required = จำเป็น
+certificate-viewer-unsupported = &lt;ไม่รองรับ&gt;
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
 certificate-viewer-inc-state-province = รัฐ/จังหวัดที่จดทะเบียน
 certificate-viewer-state-province = รัฐ/จังหวัด

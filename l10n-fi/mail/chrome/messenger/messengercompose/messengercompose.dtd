@@ -262,6 +262,7 @@
 <!--LOCALIZATION NOTE headersSpaces.style is for aligning  the From:, To: and
     Subject: rows. It should be larger than the largest Header label  -->
 <!ENTITY headersSpace2.style "width: 8em;">
+<!ENTITY extraRecipients.tooltip "Muun tyyppiset osoitekentät">
 <!ENTITY fromAddr2.label "Lähettäjä">
 <!ENTITY fromAddr.accesskey "h">
 <!ENTITY toAddr.label "Vastaanottaja:">
@@ -289,7 +290,7 @@
 <!ENTITY attachmentBucketHeader.tooltip "Liite-paneeli">
 <!ENTITY attachmentBucketCloseButton.tooltip "Piilota Liite-paneeli">
 
-<!-- Format Toolbar, imported from editorAppShell.xul -->
+<!-- Format Toolbar, imported from editorAppShell.xhtml -->
 <!ENTITY SmileButton.tooltip "Lisää hymiö">
 <!ENTITY smiley1Cmd.label "Hymy">
 <!ENTITY smiley2Cmd.label "Suru">

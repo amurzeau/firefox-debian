@@ -26,6 +26,8 @@ menu =
     .title = مینیو کھولیں
 # This menuitem is only visible on Windows
 menu-menuitem-import = پاس ورڈ درآمد کریں…
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = دوسرے براؤزر سے درآمد کریں…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] اختیارات
@@ -57,6 +59,8 @@ about-logins-login-list-empty-search-description = آپ کی تلاش سے مم�
 login-list-item-title-new-login = نیا لاگ ان
 login-list-item-subtitle-new-login = لاگ ان کی سندیں درج کریں۔
 login-list-item-subtitle-missing-username = (صارف نام کا نہیں)
+about-logins-list-item-breach-icon =
+    .title = خلاف ورزی کرنے والی ویب سائٹیں
 
 ## Introduction screen
 
@@ -77,10 +81,6 @@ about-logins-login-item-username =
 login-item-copy-username-button-text = نقل کریں
 login-item-copied-username-button-text = نقل شدہ!
 login-item-password-label = پاس ورڈ
-login-item-password-reveal-checkbox-show =
-    .title = پاس ورڈدکھائیں
-login-item-password-reveal-checkbox-hide =
-    .title = پاس ورڈ چھپائیں
 login-item-password-reveal-checkbox =
     .aria-label = پاس ورڈ  دکھائیں
 login-item-copy-password-button-text = نقل کریں
@@ -91,6 +91,30 @@ login-item-cancel-button = منسوخ کریں
 login-item-time-changed = { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") } :آخری بار ترمیم کردہ
 login-item-time-created = { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") } :تشکیل دیا گیا
 login-item-time-used = آخری استعمال شدہ:{ DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = محفوظ کردہ لاگ ان میں ترمیم کرنے کے لئے اپنی شناخت کی تصدیق کریں۔
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = محفوظ کردہ لاگ ان میں تدوین کریں
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = محفوظ شدہ پاس ورڈ کو ظاہر کرنے کے لئے اپنی شناخت کی تصدیق کریں۔
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = محفوظ شدہ پاس ورڈ کو ظاہر کریں
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = محفوظ شدہ پاس ورڈ کی نقل کرنے کے لئے اپنی شناخت کی تصدیق کریں۔
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = محفوظ شدہ پاس ورڈ کو نقل کریں
 
 ## Master Password notification
 

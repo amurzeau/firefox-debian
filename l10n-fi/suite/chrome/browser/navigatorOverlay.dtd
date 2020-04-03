@@ -16,6 +16,12 @@
 <!ENTITY closeOtherTabs.label "Sulje muut välilehdet">
 <!ENTITY closeOtherTabs.accesskey "m">
 
+<!-- LOCALIZATION NOTE (closeTabsToTheEnd.label): This should indicate the
+direction in which tabs are closed, i.e. locales that use RTL mode should say
+left instead of right. -->
+<!ENTITY  closeTabsToTheEnd.label "Sulje välilehdet oikealla">
+<!ENTITY  closeTabsToTheEnd.accesskey "o">
+
 <!ENTITY uploadFile.label "Siirrä tiedosto palvelimelle…">
 <!ENTITY uploadFile.accesskey "l">
 
@@ -56,10 +62,16 @@
 <!-- Go Menu -->
 <!ENTITY goMenu.label "Siirry">
 <!ENTITY goMenu.accesskey "S">
+<!ENTITY goBackCmd.commandKey "[">
+<!ENTITY goForwardCmd.commandKey "]">
 <!ENTITY goHomeCmd.label "Aloitussivu">
 <!ENTITY goHomeCmd.accesskey "A">
 <!ENTITY historyCmd.label "Näytä sivuhistoria">
 <!ENTITY historyCmd.accesskey "N">
+<!-- LOCALIZATION NOTE (historyCmd.key): This is used only on the mac. -->
+<!ENTITY historyCmd.key "H">
+<!-- LOCALIZATION NOTE (history.commandKey): This is used on platforms other
+     than the mac instead of historyCmd.key. -->
 <!ENTITY history.commandKey "h">
 <!ENTITY recentTabs.label "Viimeksi suljetut välilehdet">
 <!ENTITY recentTabs.accesskey "V">
@@ -122,8 +134,16 @@
 <!ENTITY cookieBlockImagesCmd.accesskey "E">
 <!ENTITY cookieBlockImagesMsg.label "Tälle sivustolle kuuluvia kuvia ei ladata milloinkaan.">
 
+<!ENTITY popupsMessageChangeTitle.label "Ponnahdusikkunoiden oikeudet muuttuneet">
+<!ENTITY popupAllowCmd.label "Salli tämän sivuston ponnahdusikkunat">
+<!ENTITY popupAllowCmd.accesskey "S">
+<!ENTITY popupAllowMsg.label "Tämän sivuston ponnahdusikkunat näytetään aina.">
+<!ENTITY popupDefaultCmd.label "Käytä oletusasetuksia">
+<!ENTITY popupDefaultCmd.accesskey "K">
+<!ENTITY popupDefaultMsg.label "Tämän verkkosivuston ponnahdusikkunat näytetään oletusasetusten perusteella.">
 <!ENTITY popupBlockCmd.label "Estä tämän sivuston ponnahdusikkunat">
 <!ENTITY popupBlockCmd.accesskey "E">
+<!ENTITY popupBlockMsg.label "Tämän sivuston ponnahdusikkunoita ei näytetä.">
 <!ENTITY popupsManage.label "Hallitse ponnahdusikkunoita">
 <!ENTITY popupsManage.accesskey "H">
 
@@ -136,3 +156,6 @@
 
 <!ENTITY clearPrivateDataCmd.label "Poista yksityistietoja…">
 <!ENTITY clearPrivateDataCmd.accesskey "o">
+
+<!ENTITY stopCmd.macCommandKey ".">
+<!ENTITY fullScreenCmd.commandKey "f">

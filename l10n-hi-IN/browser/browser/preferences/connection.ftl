@@ -35,6 +35,11 @@ connection-proxy-http-share =
     .accesskey = s
 connection-proxy-ssl = SSL प्रॉक्सी
     .accesskey = L
+connection-proxy-http-sharing =
+    .label = FTP और HTTPS के लिए इस प्रॉक्सी का भी उपयोग करें
+    .accesskey = s
+connection-proxy-https = HTTPS प्रॉक्सी
+    .accesskey = H
 connection-proxy-ssl-port = पोर्ट
     .accesskey = o
 connection-proxy-ftp = FTP प्रॉक्सी
@@ -72,6 +77,11 @@ connection-dns-over-https =
     .accesskey = H
 connection-dns-over-https-url-resolver = प्रदाता का उपयोग करें
     .accesskey = P
+# Variables:
+#   $name (String) - Display name or URL for the DNS over HTTPS provider
+connection-dns-over-https-url-item-default =
+    .label = { $name } (तयशुदा)
+    .tooltiptext = HTTPS पर DNS को हल करने के लिए तयशुदा URL का उपयोग करें
 connection-dns-over-https-url-custom =
     .label = अनुकूलित करें
     .accesskey = स

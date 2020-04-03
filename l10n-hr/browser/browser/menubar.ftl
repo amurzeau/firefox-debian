@@ -153,7 +153,7 @@ menu-history-clear-recent-history =
 menu-history-synced-tabs =
     .label = Sinkronizirane kartice
 menu-history-restore-last-session =
-    .label = Vrati prijašnju sesiju
+    .label = Vrati prethodnu sesiju
 menu-history-hidden-tabs =
     .label = Skrivene kartice
 menu-history-undo-menu =
@@ -246,6 +246,9 @@ menu-help-product =
 menu-help-show-tour =
     .label = { -brand-shorter-name } vodič
     .accesskey = o
+menu-help-import-from-another-browser =
+    .label = Uvoz iz drugog preglednika…
+    .accesskey = l
 menu-help-keyboard-shortcuts =
     .label = Tipkovnički prečaci
     .accesskey = k
@@ -259,7 +262,7 @@ menu-help-safe-mode-without-addons =
     .label = Ponovo pokreni s isključenim dodacima …
     .accesskey = v
 menu-help-safe-mode-with-addons =
-    .label = Ponovo pokreni s uključenim dodacima
+    .label = Ponovo pokreni s aktiviranim dodacima
     .accesskey = v
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.

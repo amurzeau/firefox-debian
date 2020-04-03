@@ -6,13 +6,12 @@
 <!ENTITY sendMaildesc.label           "Lähetettäessä muotoiltua (HTML) viestiä yhdelle tai useammalle vastaanottajalle, joiden yhteystiedoissa lukee, että he eivät pysty vastaanottamaan viestejä HTML-muodossa:">
 <!ENTITY askMe.label                  "Kysy, mitä tehdään">
 <!ENTITY askMe.accesskey              "K">
-<!ENTITY convertPlain.label           "Muunna viesti pelkäksi tekstiksi">
-<!ENTITY convertPlain.accesskey       "M">
-<!ENTITY sendHTML.label               "Lähetä viesti HTML:nä joka tapauksessa">
-<!ENTITY sendHTML.accesskey           "L">
-<!ENTITY sendBoth.label               "Lähetä viesti sekä pelkkä teksti- että HTML-muodossa">
-<!ENTITY sendBoth.accesskey           "ä">
-<!ENTITY override.label               "Voit korvata tämän asetuksen yksittäisten viestien kohdalla Valinnat-valikosta, kun kirjoitat viestiä.">
+<!ENTITY convertPlain2.label          "Muunna viesti pelkäksi tekstiksi (muotoilu voi kadota)">
+<!ENTITY convertPlain2.accesskey      "M">
+<!ENTITY sendHTML2.label              "Lähetä viesti vain HTML-muodossa (voi aiheuttaa näyttöongelmia)">
+<!ENTITY sendHTML2.accesskey          "H">
+<!ENTITY sendBoth2.label              "Lähetä viesti sekä teksti- että HTML-muodossa (suurempi koko)">
+<!ENTITY sendBoth2.accesskey          "s">
 
 <!-- Html and Plain Text Domains  -->
 <!ENTITY domain.title                 "HTML- ja pelkkä teksti -verkkoalueet">
@@ -37,3 +36,7 @@
 <!ENTITY domainnameError.title        "Virheellinen verkkoalueen nimi">
 <!-- LOCALIZATION NOTE: do not translate @string@ -->
 <!ENTITY invalidEntryError.label      "Verkkoalueen nimi @string@ on virheellinen. Oikeanmuotoisissa verkkoalueiden nimissä on vähintään yksi piste ja sen molemmilla puolilla on alfanumeerisia merkkejä.">
+
+<!-- Global auto-detect switch -->
+<!ENTITY autoDowngrade.label          "Lähetä viesti automaattisesti pelkkänä tekstinä, jos merkittävää muotoilua ei ole (ohittaa muut vaihtoehdot)">
+<!ENTITY autoDowngrade.accesskey      "v">

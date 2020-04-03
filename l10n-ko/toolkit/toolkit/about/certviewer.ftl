@@ -6,7 +6,7 @@ certificate-viewer-certificate-section-title = 인증서
 
 ## Error messages
 
-certificate-viewer-error-message = 인증서 정보를 찾을 수 없거나 인증서가 손상되었습니다. 다시 시도해보세요.
+certificate-viewer-error-message = 인증서 정보를 찾을 수 없거나 인증서가 손상되었습니다. 다시 시도하세요.
 certificate-viewer-error-title = 뭔가 잘못되었습니다.
 
 ## Certificate information labels
@@ -22,6 +22,8 @@ certificate-viewer-country = 국가
 certificate-viewer-curve = 곡선
 certificate-viewer-distribution-point = 배포 지점
 certificate-viewer-dns-name = DNS 이름
+certificate-viewer-ip-address = IP 주소
+certificate-viewer-other-name = 다른 이름
 certificate-viewer-exponent = 지수
 certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = 키 교환 그룹
@@ -44,6 +46,7 @@ certificate-viewer-purposes = 용도
 certificate-viewer-qualifier = 한정자
 certificate-viewer-qualifiers = 한정자
 certificate-viewer-required = 필수
+certificate-viewer-unsupported = &lt;지원되지 않음&gt;
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
 certificate-viewer-inc-state-province = 법인 시/도
 certificate-viewer-state-province = 시/도

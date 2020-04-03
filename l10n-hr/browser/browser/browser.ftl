@@ -17,22 +17,6 @@ browser-main-window-title =
         [private] { -brand-full-name } (Privatno pregledavanje)
        *[default] { -brand-full-name }
     }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (Privatno pregledavanje)
-       *[default] { $title } - { -brand-full-name }
-    }
 
 ## This is the default window title in case there is content
 ## title to be displayed.
@@ -74,7 +58,7 @@ urlbar-web-notification-anchor =
 urlbar-midi-notification-anchor =
     .tooltiptext = Otvori MIDI okno
 urlbar-eme-notification-anchor =
-    .tooltiptext = Upravljajte korištenjem DRM softvera
+    .tooltiptext = Upravljaj korištenjem DRM softvera
 urlbar-web-authn-anchor =
     .tooltiptext = Otvori okno Web autentifikacije
 urlbar-canvas-notification-anchor =
@@ -98,7 +82,7 @@ urlbar-indexed-db-notification-anchor =
 urlbar-password-notification-anchor =
     .tooltiptext = Otvori ploču s informacijama o spremljenim lozinkama
 urlbar-translated-notification-anchor =
-    .tooltiptext = Upravljajte prevođenjem stranice
+    .tooltiptext = Upravljaj prevođenjem stranice
 urlbar-plugins-notification-anchor =
     .tooltiptext = Upravljanje korištenjem priključaka
 urlbar-web-rtc-share-devices-notification-anchor =
@@ -106,7 +90,7 @@ urlbar-web-rtc-share-devices-notification-anchor =
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Otvori ploču za automatsku reprodukciju
 urlbar-persistent-storage-notification-anchor =
-    .tooltiptext = Trajno sprema podatke
+    .tooltiptext = Spremaj podatke u trajno spremište
 urlbar-addons-notification-anchor =
     .tooltiptext = Otvori ploču s informacijama o instaliranim dodacima
 urlbar-tip-help-icon =
@@ -125,11 +109,12 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Tipkaj manje, nađi više: Traži { $engineName } direktno u tvojoj adresnoj traci.
 urlbar-search-tips-redirect = Započni tvoju pretragu ovdje za prikaz prijedloga od { $engineName } i tvoju povijest pregledavanja.
+urlbar-search-tips-redirect-2 = Započni tvoju pretragu u adresnoj traci da biste vidjeli prijedloge od { $engineName } i tvoju povijest pregledavanja.
 
 ##
 
 urlbar-geolocation-blocked =
-    .tooltiptext = Ovoj si stranici zabranio/la pristup informacijama o tvojoj lokaciji.
+    .tooltiptext = Ovoj stranici zabranjen je pristup informacijama o lokaciji.
 urlbar-xr-blocked =
     .tooltiptext = Ovoj ste stranici blokirali pristup uređajima za virtualnu stvarnost.
 urlbar-web-notifications-blocked =
@@ -139,15 +124,15 @@ urlbar-camera-blocked =
 urlbar-microphone-blocked =
     .tooltiptext = Ovoj ste stranici zabranili korištenje mikrofona.
 urlbar-screen-blocked =
-    .tooltiptext = Ovoj si stranici zabranio/la dijeljenje tvog ekrana.
+    .tooltiptext = Ovoj stranici zabranjeno je dijeljenje tvog zaslona.
 urlbar-persistent-storage-blocked =
-    .tooltiptext = Za ovu stranicu si blokirao/la trajno spremanje podataka.
+    .tooltiptext = Ovoj stranici zabranjeno je trajno spremanje podataka.
 urlbar-popup-blocked =
     .tooltiptext = Blokirali ste pop-up prozore za ovu web stranicu.
 urlbar-autoplay-media-blocked =
     .tooltiptext = Ovoj ste stranici zabranili automatsko reproduciranje medija sa zvukom.
 urlbar-canvas-blocked =
-    .tooltiptext = Blokirao/la si izdvajanje podataka platna za ovu web stranicu.
+    .tooltiptext = Ovoj stranici zabranjeno je izdvajanje podataka platna.
 urlbar-midi-blocked =
     .tooltiptext = Blokirali ste MIDI pristup za ovu web stranicu.
 urlbar-install-blocked =
@@ -187,7 +172,7 @@ search-one-offs-with-title = Ovaj put traži s:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
-    .label = Promjeni postavke pretraživača
+    .label = Promijeni postavke pretraživača
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Promijeni postavke pretraživača
 search-one-offs-context-open-new-tab =
@@ -223,12 +208,12 @@ identity-extension-page = Ova stranica je učitana iz dodatka.
 identity-active-blocked = { -brand-short-name } je blokirao dijelove ove stranice koji nisu sigurni.
 identity-custom-root = Vezu je potvrdio izdavatelj certifikata kojeg Mozilla ne prepoznaje.
 identity-passive-loaded = Dijelovi ove stranice nisu sigurni (poput slika).
-identity-active-loaded = Isključili ste zaštitu za ovu stranicu.
+identity-active-loaded = Isključena je zaštita na ovoj stranici.
 identity-weak-encryption = Ova stranica koristi slabu enkripciju.
 identity-insecure-login-forms = Prijave na ovoj stranici mogu biti kompromitirane.
 identity-permissions =
     .value = Dozvole
-identity-permissions-reload-hint = Trebali biste ponovo osvježiti stranicu radi primjene izmjena.
+identity-permissions-reload-hint = Stranica se možda mora ponovo učitati, kako bi se primijenile promjene.
 identity-permissions-empty = Ovoj stranici niste dali nikakva posebna dopuštenja.
 identity-clear-site-data =
     .label = Obriši kolačiće i podatke stranice…
@@ -252,10 +237,10 @@ identity-description-active-loaded-insecure = Informacije koje dijelite s ovom s
 identity-learn-more =
     .value = Saznaj više
 identity-disable-mixed-content-blocking =
-    .label = Onemogući zaštitu za sada
+    .label = Za sada isključi zaštitu
     .accesskey = d
 identity-enable-mixed-content-blocking =
-    .label = Omogući zaštitu
-    .accesskey = O
+    .label = Aktiviraj zaštitu
+    .accesskey = A
 identity-more-info-link-text =
     .label = Više informacija

@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 about-telemetry-ping-data-source = Փինգ տվյալի աղբյուրին.
-about-telemetry-show-current-ping-data = Ընթացիկ փինգի տվյալ
+about-telemetry-show-current-ping-data = Ընթացիկ փինգի տվեալ
 about-telemetry-show-current-data = Ներկայիս տվյալները
 about-telemetry-show-archived-ping-data = Արխիվացված փինգի տվյալ
 about-telemetry-show-subsession-data = Ցուցադրել տվյալի ենթաշրջանը
@@ -28,7 +28,7 @@ about-telemetry-general-data-section =   Գլխավոր տվյալներ
 about-telemetry-environment-data-section = Միջավայրի տվյալ
 about-telemetry-session-info-section = Տեղեկություն աշխատաշրջանի մասին
 about-telemetry-scalar-section = Կշեռքներ
-about-telemetry-keyed-scalar-section = Բանալիացված մենարժեք
+about-telemetry-keyed-scalar-section = Բանալիացուած մենարժէք
 about-telemetry-histograms-section = Գծապատկերներ
 about-telemetry-keyed-histogram-section =   Ստեղնաշարային հիստոգրամներ
 about-telemetry-events-section = Իրադարձություններ
@@ -133,7 +133,7 @@ about-telemetry-captured-stacks-title = { $stackKey } (քանակը. { $captured
 #   $lateWriteCount (Integer): the number of the late writes
 about-telemetry-late-writes-title = Ուշ գրառում #{ $lateWriteCount }
 about-telemetry-stack-title = Շեղջ.
-about-telemetry-memory-map-title = Հիշողության քարտեզը.
+about-telemetry-memory-map-title = Յիշողութեան քարտեզը.
 about-telemetry-error-fetching-symbols = Նշանները բեռնելիս սխալ է գրանցվել։ Ստուգեք կապակցումը համացանցին և կրկին փորձեք։
 about-telemetry-time-stamp-header = ժամադրոշմ
 about-telemetry-category-header = անվանակարգ

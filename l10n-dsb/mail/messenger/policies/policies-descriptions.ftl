@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Pšawidła nastajiś, ku kótarymž WebExtensions maju pśistup pśez chrome.storage.managed.
+policy-AppAutoUpdate = Awtomatiske aktualizacije nałoženjow zmóžniś abo znjemóžniś.
 policy-AppUpdateURL = Nastajśo swójski URL za aktualizěrowanje nałoženjow.
 policy-Authentication = Konfigurěrujśo integrěrowanu awtentifikaciju za websedła, kótarež ju pódpěraju.
 policy-BlockAboutAddons = Pśistup k zastojnikoju dodankow (about:addons) blokěrowaś.
@@ -20,6 +21,7 @@ policy-BlockAboutSupport = Pśistup k bokoju about:support blokěrowaś.
 policy-CaptivePortal = Pódpěru za pśedboki zmóžniś abo znjemóžniś.
 policy-CertificatesDescription = Certifikaty pśidaś abo zatwarjone certifikaty wužywaś.
 policy-Cookies = Websedłam dowóliś abo zakazaś, cookieje nastajiś.
+policy-DisabledCiphers = Šyfry znjemóžniś.
 policy-DefaultDownloadDirectory = Standardny ześěgnjeński zarědnik nastajiś.
 policy-DisableAppUpdate = { -brand-short-name } aktualizěrowanje zawoboraś.
 policy-DisableDeveloperTools = Pśistup k wuwijarskim rědam blokěrowaś.

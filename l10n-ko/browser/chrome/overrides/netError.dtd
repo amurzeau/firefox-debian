@@ -5,10 +5,10 @@
 <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd">
 %brandDTD;
 
-<!ENTITY loadError.label "페이지 읽기 오류">
+<!ENTITY loadError.label "페이지 로딩 문제">
 <!ENTITY retry.label "다시 시도">
 <!ENTITY returnToPreviousPage.label "뒤로">
-<!ENTITY returnToPreviousPage1.label "뒤로(권장)">
+<!ENTITY returnToPreviousPage1.label "뒤로 (권장)">
 <!ENTITY advanced2.label "고급…">
 <!ENTITY viewCertificate.label "인증서 보기">
 
@@ -17,12 +17,12 @@
 <!ENTITY connectionFailure.title "연결할 수 없음">
 <!ENTITY connectionFailure.longDesc "&sharedLongDesc;">
 
-<!ENTITY deniedPortAccess.title "제한된 주소">
+<!ENTITY deniedPortAccess.title "이 주소는 제한되어 있음">
 <!ENTITY deniedPortAccess.longDesc "">
 
 <!ENTITY dnsNotFound.pageTitle "서버를 찾을 수 없음">
 <!-- Localization note (dnsNotFound.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
-<!ENTITY dnsNotFound.title1 "사이트를 찾는데 문제가 발생하였습니다.">
+<!ENTITY dnsNotFound.title1 "해당 사이트를 찾는데 문제가 발생하였습니다.">
 <!ENTITY dnsNotFound.longDesc1 "
 <strong>주소가 정확하다면 다음 세 가지를 시도해 보세요:</strong>
 <ul>
@@ -33,14 +33,12 @@
 ">
 
 <!ENTITY fileNotFound.title "파일을 찾을 수 없음">
-<!ENTITY fileNotFound.longDesc "
-<ul>
-  <li>파일 이름의 대소문자를 비롯한 오타가 없는지 확인해 보시기 바랍니다.</li>
-  <li>이동되었거나, 이름이 변경되었거나, 삭제된 파일을 보려고 하는 것은 아닌지 확인해 보시기 바랍니다.</li>
-</ul>
-">
+<!ENTITY fileNotFound.longDesc "<ul>
+  <li>파일 이름의 대소문자를 비롯한 오타가 없는지 확인해 보세요.</li>
+  <li>이동되었거나, 이름이 변경되었거나, 삭제된 파일을 보려고 하는 것은 아닌지 확인해 보세요.</li>
+</ul>">
 
-<!ENTITY fileAccessDenied.title "파일 접근 거부됨">
+<!ENTITY fileAccessDenied.title "파일 접근이 거부됨">
 <!ENTITY fileAccessDenied.longDesc "
 <ul>
   <li>삭제, 이동 또는 권한이 없어서 접근할 수 없습니다.</li>
@@ -104,25 +102,20 @@
 ">
 
 <!ENTITY proxyConnectFailure.title "프록시 서버가 연결을 거부함">
-<!ENTITY proxyConnectFailure.longDesc "
-<ul>
-  <li>프록시 설정이 올바로 되어있는지 확인해 보시기 바랍니다.</li>
-  <li>프록시 서버가 확실히 작동 중인지 네트워크 관리자에게 문의 하시기
-    바랍니다.</li>
-</ul>
-">
+<!ENTITY proxyConnectFailure.longDesc "<ul>
+  <li>프록시 설정이 올바로 되어있는지 확인해 보세요.</li>
+  <li>프록시 서버가 확실히 작동 중인지 네트워크 관리자에게 문의하세요.</li>
+</ul>">
 
 <!ENTITY proxyResolveFailure.title "프록시 서버를 찾을 수 없음">
-<!ENTITY proxyResolveFailure.longDesc "
-<ul>
-  <li>프록시 설정이 올바로 되어있는지 확인해 보시기 바랍니다.</li>
-  <li>사용자 컴퓨터가 활성화된 네트워크 연결을 사용하는지 확인해 보시기 바랍니다.</li>
+<!ENTITY proxyResolveFailure.longDesc "<ul>
+  <li>프록시 설정이 올바로 되어있는지 확인해 보세요.</li>
+  <li>사용자 컴퓨터가 활성화된 네트워크 연결을 사용하는지 확인해 보세요.</li>
   <li>사용자의 컴퓨터나 네트워크가 방화벽 또는 프록시로 보호되고 있다면,
-    &brandShortName;가 웹에 접근할 수 있도록 허용되어 있는지 확인해 주시기 바랍니다.</li>
-</ul>
-">
+    &brandShortName;가 웹에 접근할 수 있도록 허용되어 있는지 확인해 보세요.</li>
+</ul>">
 
-<!ENTITY redirectLoop.title "페이지 자동 바꾸기가 제대로 안 됨">
+<!ENTITY redirectLoop.title "페이지가 제대로 리디렉션되지 않음">
 <!ENTITY redirectLoop.longDesc "
 <ul>
   <li>이 문제는 드물게 해당 사이트에서 요구하는 쿠키를 차단하여 발생할 수
@@ -131,13 +124,11 @@
 ">
 
 <!ENTITY unknownSocketType.title "서버에서 예기치 않은 응답">
-<!ENTITY unknownSocketType.longDesc "
-<ul>
-  <li>시스템에 개인 보안 관리자가 설치 되어 있는지 확인해 보시기 바랍니다.</li>
+<!ENTITY unknownSocketType.longDesc "<ul>
+  <li>시스템에 개인 보안 관리자가 설치 되어 있는지 확인해 보세요.</li>
 
   <li>서버의 정상적이지 않은 설정 때문일 수도 있습니다.</li>
-</ul>
-">
+</ul>">
 
 <!ENTITY nssFailure2.title "보안 연결 실패">
 <!ENTITY nssFailure2.longDesc2 "
@@ -169,16 +160,14 @@ was trying to connect. -->
 
 <!ENTITY certerror.badCertDomain.whatCanYouDoAboutIt "<p>이러한 문제는 대부분 웹 사이트와 관련이 있고 사용자가 할 수 있는 일은 없습니다. 웹 사이트의 관리자에게 문제에 대해 알려주실 수 있습니다.</p>">
 
-<!ENTITY sharedLongDesc "
-<ul>
+<!ENTITY sharedLongDesc "<ul>
   <li>서버가 일시적으로 사용할 수 없거나 사용자가 너무 많은 상태일 수 있습니다.
-    잠시 후에 다시 시도해 보시기 바랍니다.</li>
+    잠시 후에 다시 시도해 보세요.</li>
   <li>어떤 페이지도 열 수 없다면,
-    컴퓨터의 네트워크 연결을 확인해 보시기 바랍니다.</li>
+    컴퓨터의 네트워크 연결을 확인해 보세요.</li>
   <li>사용자의 컴퓨터나 네트워크가 방화벽 또는 프록시로 보호되고 있다면,
-    &brandShortName;가 웹에 접근할 수 있도록 허용되어 있는지 확인해 주시기 바랍니다.</li>
-</ul>
-">
+    &brandShortName;가 웹에 접근할 수 있도록 허용되어 있는지 확인해 보세요.</li>
+</ul>">
 
 <!ENTITY cspBlocked.title "콘텐츠 보안 정책에 의한 차단">
 <!ENTITY cspBlocked.longDesc "<p>이 페이지는 콘텐츠 보안 정책에서 허락하지 않는 방법으로 로딩되어 &brandShortName;가 차단했습니다.</p>">

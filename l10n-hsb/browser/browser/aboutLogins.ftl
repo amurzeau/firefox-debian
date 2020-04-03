@@ -26,6 +26,8 @@ menu =
     .title = Meni wočinić
 # This menuitem is only visible on Windows
 menu-menuitem-import = Hesła importować…
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = Z druheho wobhladowaka importować…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Nastajenja
@@ -86,10 +88,6 @@ about-logins-login-item-username =
 login-item-copy-username-button-text = Kopěrować
 login-item-copied-username-button-text = Kopěrowane!
 login-item-password-label = Hesło
-login-item-password-reveal-checkbox-show =
-    .title = Hesło pokazać
-login-item-password-reveal-checkbox-hide =
-    .title = Hesło schować
 login-item-password-reveal-checkbox =
     .aria-label = Hesło pokazać
 login-item-copy-password-button-text = Kopěrować
@@ -100,6 +98,30 @@ login-item-cancel-button = Přetorhnyć
 login-item-time-changed = Poslednja změna: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Wutworjeny: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Poslednje wužiće: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = Přepruwujće swoju identitu, zo byšće składowane přizjewjenje wobdźěłał.
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = składowane přizjewjenje wobdźěłać
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = Přepruwujće swoju identitu, zo byšće składowane hesło pokazał.
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = składowane hesło pokazać
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = Přepruwujće swoju identitu, zo byšće składowane hesło kopěrował.
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = składowane hesło kopěrować
 
 ## Master Password notification
 
@@ -141,7 +163,7 @@ confirm-discard-changes-dialog-confirm-button = Zaćisnyć
 ## Breach Alert notification
 
 breach-alert-text = Hesła su so z tutoho websydła roznjesli abo kradnyli, wot toho, zo sće swoje přizjewjenske daty posledni raz zaktualizował. Změńće swoje hesło, zo byšće swoje konto škitał.
-breach-alert-link = Zhońće wjace wo tutej dźěrje.
+breach-alert-link = Zhońće wjace wo tutej datowej dźěrje.
 breach-alert-dismiss =
     .title = Tute warnowanje začinić
 

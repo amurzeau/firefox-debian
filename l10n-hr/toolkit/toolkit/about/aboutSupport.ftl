@@ -2,8 +2,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-page-title = Informacije rješavanja problema
-page-subtitle = Ova stranica sadrži tehničke informacije koje vam mogu biti korisne kada pokušavate riješiti problem. Ako tražite odgovore na česta pitanja o { -brand-short-name }u, posjetite našu <a data-l10n-name="support-link">web stranicu podrške</a>.
+page-title = Podaci za rješavanja problema
+page-subtitle = Ova stranica sadrži tehničke podatke koji mogu biti korisni pri rješavanju problema. Ako tražiš odgovore na česta pitanja o { -brand-short-name }u, posjeti našu <a data-l10n-name="support-link">web stranicu podrške</a>.
 crashes-title = Izvještaji o rušenju
 crashes-id = ID izvještaja
 crashes-send-date = Poslano
@@ -12,7 +12,7 @@ crashes-no-config = Ovaj program nije podešen da prikazuje izvještaje o rušen
 extensions-title = Proširenja
 extensions-name = Naziv
 extensions-enabled = Omogućeno
-extensions-version = Inačica
+extensions-version = Verzija
 extensions-id = ID
 security-software-title = Sigurnosni softver
 security-software-type = Vrsta
@@ -22,55 +22,55 @@ security-software-antispyware = Antispyware
 security-software-firewall = Vatrozid
 features-title = { -brand-short-name } mogućnosti
 features-name = Naziv
-features-version = Inačica
+features-version = Verzija
 features-id = ID
 processes-title = Udaljeni procesi
 processes-type = Vrsta
 processes-count = Broj
 app-basics-title = Osnove aplikacije
 app-basics-name = Naziv
-app-basics-version = Inačica
+app-basics-version = Verzija
 app-basics-build-id = Build ID
-app-basics-update-channel = Kanal ažuriranja
+app-basics-update-channel = Kanal nadogradnje
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
 app-basics-update-dir =
     { PLATFORM() ->
         [linux] Mapa za ažuriranja
-       *[other] Mapa za ažuriranja
+       *[other] Mapa za nadogradnje
     }
-app-basics-update-history = Povijest ažuriranja
-app-basics-show-update-history = Prikaži povijest ažuriranja
+app-basics-update-history = Povijest nadogradnji
+app-basics-show-update-history = Prikaži povijest nadogradnji
 # Represents the path to the binary used to start the application.
 app-basics-binary = Binarna aplikacija
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Direktorij profila
-       *[other] Direktorij profila
+       *[other] Mapa profila
     }
-app-basics-enabled-plugins = Omogućeni priključci
-app-basics-build-config = Build konfiguracija
-app-basics-user-agent = User Agent
+app-basics-enabled-plugins = Aktivirani priključci
+app-basics-build-config = Konfiguracija gradnje
+app-basics-user-agent = Korisnički agent
 app-basics-os = OS
-app-basics-memory-use = Zauzeće memorije
+app-basics-memory-use = Upotreba memorije
 app-basics-performance = Performansa
-app-basics-service-workers = Registrirani service workeri
+app-basics-service-workers = Registrirani radni procesi usluge
 app-basics-profiles = Profili
 app-basics-launcher-process-status = Pokretački proces
-app-basics-multi-process-support = Više procesni prozori
+app-basics-multi-process-support = Višeprocesni prozori
 app-basics-remote-processes-count = Udaljeni procesi
-app-basics-enterprise-policies = Pravila poduzeća
+app-basics-enterprise-policies = Politike poduzeća
 app-basics-location-service-key-google = Google ključ za usluge lokacije
 app-basics-safebrowsing-key-google = Google ključ za sigurno pregledavanje
 app-basics-key-mozilla = Mozilla ključ za usluge lokacije
-app-basics-safe-mode = Sigurni način rada
+app-basics-safe-mode = Siguran način rada
 show-dir-label =
     { PLATFORM() ->
         [macos] Prikaži u Finderu
         [windows] Otvori mapu
        *[other] Otvori direktorij
     }
-modified-key-prefs-title = Važne izmijenjene osobitosti
+modified-key-prefs-title = Važne izmijenjene postavke
 modified-prefs-name = Naziv
 modified-prefs-value = Vrijednost
 user-js-title = user.js osobitosti
@@ -79,13 +79,13 @@ locked-key-prefs-title = Važne zaključane postavke
 locked-prefs-name = Naziv
 locked-prefs-value = Vrijednost
 graphics-title = Grafika
-graphics-features-title = Značajke
+graphics-features-title = Funkcije
 graphics-diagnostics-title = Dijagnostika
 graphics-failure-log-title = Zapis grešaka
 graphics-gpu1-title = GPU #1
 graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Zapis odluka
-graphics-crash-guards-title = Onemogućene značajke čuvara rušenja
+graphics-crash-guards-title = Deaktivirane funkcije čuvara rušenja
 graphics-workarounds-title = Zaobilazna rješenja
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Protokol prozora
@@ -98,10 +98,10 @@ js-title = JavaScript
 js-incremental-gc = Inkrementalno sakupljanje smeća (GC)
 a11y-title = Pristupačnost
 a11y-activated = Aktivirano
-a11y-force-disabled = Onemogući pristupačnost
+a11y-force-disabled = Sprečavanje pristupačnosti
 a11y-handler-used = Korišteni upravljač pristupačnosti
 a11y-instantiator = Pokretač pristupačnosti
-library-version-title = Inačice biblioteke
+library-version-title = Verzije biblioteka
 copy-text-to-clipboard-label = Kopiraj tekst u međuspremnik
 copy-raw-data-to-clipboard-label = Kopiraj neobrađene podatke u međuspremnik
 sandbox-title = Odvojeno pokretanje
@@ -119,7 +119,7 @@ restart-in-safe-mode-label = Ponovo pokreni s isključenim dodacima …
 ## Media titles
 
 audio-backend = Audio pozadina
-max-audio-channels = Maksimalno kanala
+max-audio-channels = Maksimalan broj kanala
 channel-layout = Preferirani raspored kanala
 sample-rate = Željena učestalost uzorka
 media-title = Medij
@@ -129,11 +129,11 @@ media-device-name = Naziv
 media-device-group = Grupa
 media-device-vendor = Prodavač
 media-device-state = Država
-media-device-preferred = Željeno
+media-device-preferred = Preferirano
 media-device-format = Oblik
 media-device-channels = Kanali
 media-device-rate = Stopa
-media-device-latency = Latencija
+media-device-latency = Kašnjenje
 media-capabilities-title = Mogućnosti medija
 # List all the entries of the database.
 media-capabilities-enumerate = Popis unosa baze podataka
@@ -141,11 +141,11 @@ media-capabilities-enumerate = Popis unosa baze podataka
 ##
 
 intl-title = Internacionalizacija i lokalizacija
-intl-app-title = Postavke aplikacije
+intl-app-title = Postavke programa
 intl-locales-requested = Traženi jezici
 intl-locales-available = Dostupni jezici
 intl-locales-supported = Jezik aplikacije
-intl-locales-default = Zadani jezik
+intl-locales-default = Standardni jezik
 intl-os-title = Operacijski sustav
 intl-os-prefs-system-locales = Jezici sustava
 intl-regional-prefs = Regionalne postavke
@@ -210,10 +210,10 @@ text-copied = Tekst kopiran u međuspremnik
 
 ## The verb "blocked" here refers to a graphics feature such as "Direct2D" or "OpenGL layers".
 
-blocked-driver = Blokirano zbog inačice upravljačkog programa grafičke kartice.
+blocked-driver = Blokirano zbog verzije upravljačkog programa grafičke kartice.
 blocked-gfx-card = Blokirano za vašu grafičku karticu zbog neriješenih problema s upravljačkim programom.
-blocked-os-version = Blokirano za inačicu vašeg operativnog sustava.
-blocked-mismatched-version = Blokiran jer se inačice upravljačkog programa vaše grafičke kartice ne podudaraju u registru i DLL-u.
+blocked-os-version = Blokirano za verziju tvog operacijskog sustava.
+blocked-mismatched-version = Blokiran zbog nepodudaranja verzije upravljačkog programa tvoje grafičke kartice između registra i DLL-a.
 # Variables
 # $driverVersion - The graphics driver version string
 try-newer-driver = Blokirano za verziju upravljačkog programa grafičke kartice. Pokušaj nadograditi upravljački program grafičke kartice na verziju { $driverVersion } ili noviju.
@@ -243,7 +243,7 @@ gpu-subsys-id = Subsys ID
 gpu-drivers = Upravljački programi
 gpu-ram = RAM
 gpu-driver-vendor = Izdavatelj upravljačkog programa
-gpu-driver-version = Inačica upravljačkog programa
+gpu-driver-version = Verzija upravljačkog programa
 gpu-driver-date = Datum upravljačkog programa
 gpu-active = Aktivan
 webgl1-wsiinfo = WSI informacije upravljačkog programa WebGL 1
@@ -275,11 +275,11 @@ gpu-device-reset = Ponovno pokretanje uređaja
 gpu-device-reset-button = Aktiviraj ponovno pokretanje uređaja
 uses-tiling = Koristi sličice
 content-uses-tiling = Koristi sličice (sadržaj)
-off-main-thread-paint-enabled = Omogućeno iscrtavanje izvan glavnog procesa
-off-main-thread-paint-worker-count = Broj radnika za iscrtavanje izvan glavnog procesa
+off-main-thread-paint-enabled = Aktivirano iscrtavanje izvan glavnog procesa
+off-main-thread-paint-worker-count = Broj radnih procesa za iscrtavanje izvan glavne niti
 target-frame-rate = Ciljani broj sličica
-min-lib-versions = Očekivana najmanja inačica
-loaded-lib-versions = Korištena inačica
+min-lib-versions = Očekivana najmanja verzija
+loaded-lib-versions = Korištena verzija
 has-seccomp-bpf = Seccomp-BPF (filtriranje sistemskih poziva)
 has-seccomp-tsync = Seccomp Thread sinkronizacija
 has-user-namespaces = Korisnički imenski prostori
@@ -303,24 +303,24 @@ multi-process-windows = { $remoteWindows }/{ $totalWindows }
 multi-process-status-0 = Omogućio korisnik
 multi-process-status-1 = Omogućeno prema zadanim postavkama
 multi-process-status-2 = Onemogućeno
-multi-process-status-4 = Onemogućili alati pristupačnosti
+multi-process-status-4 = Deaktivirano od alata za pristupačnost
 multi-process-status-6 = Onemogućio nepodržani unos teksta
 multi-process-status-7 = Onemogućili dodaci
 multi-process-status-8 = Prisilno onemogućeno
 multi-process-status-unknown = Nepoznato stanje
 async-pan-zoom = Asinkrono pomicanje/zumiranje
 apz-none = ništa
-wheel-enabled = wheel unos omogućen
-touch-enabled = touch unos omogućen
+wheel-enabled = unos kotačićem uključen
+touch-enabled = unos dodirom uključen
 drag-enabled = povlačenje klizne trake uključeno
-keyboard-enabled = tipkovnica omogućena
-autoscroll-enabled = automatsko klizanje omogućeno
+keyboard-enabled = tipkovnica uključena
+autoscroll-enabled = automatsko klizanje uključeno
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference
 
-wheel-warning = async wheel input je onemogućen zbog nepodržane postavke: { $preferenceKey }
-touch-warning = async touch input je onemoguće zbog nepodržane postavke: { $preferenceKey }
+wheel-warning = asinkroni unos kotačićem isključen, zbog nepodržane postavke: { $preferenceKey }
+touch-warning = asinkroni unos dodirom isključen, zbog nepodržane postavke: { $preferenceKey }
 
 ## Strings representing the status of the Enterprise Policies engine.
 

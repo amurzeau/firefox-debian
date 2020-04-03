@@ -26,6 +26,8 @@ menu =
     .title = Menüyü aç
 # This menuitem is only visible on Windows
 menu-menuitem-import = Parolaları içe aktar…
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = Başka bir tarayıcıdan içe aktar…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Seçenekler
@@ -84,10 +86,6 @@ about-logins-login-item-username =
 login-item-copy-username-button-text = Kopyala
 login-item-copied-username-button-text = Kopyalandı!
 login-item-password-label = Parola
-login-item-password-reveal-checkbox-show =
-    .title = Parolayı göster
-login-item-password-reveal-checkbox-hide =
-    .title = Parolayı gizle
 login-item-password-reveal-checkbox =
     .aria-label = Parolayı göster
 login-item-copy-password-button-text = Kopyala
@@ -98,6 +96,30 @@ login-item-cancel-button = İptal
 login-item-time-changed = Son değişiklik: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Oluşturulma: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Son kullanım: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = Kayıtlı hesabı düzenlemek için kimliğinizi doğrulayın.
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = kayıtlı hesabı düzenleme
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = Kayıtlı parolayı görmek için kimliğinizi doğrulayın.
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = kayıtlı parolayı gösterme
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = Kayıtlı parolayı kopyalamak için kimliğinizi doğrulayın.
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = kayıtlı parolayı kopyalama
 
 ## Master Password notification
 
