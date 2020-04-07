@@ -169,8 +169,8 @@ browser-containers-settings =
 containers-disable-alert-title = Fechar todos os separadores contentores?
 containers-disable-alert-desc =
     { $tabCount ->
-        [one] Se desativar os separadores contentores agora, { $tabCount } contentor separador será fechado. Tem a certeza de que pretende desativar os separadores contentores?
-       *[other] Se desativar os separadores contentores agora, { $tabCount } separadores contentores serão fechados. Tem a certeza de que pretende desativar os separadores contentores?
+        [one] Se desativar os Separadores contentor agora, { $tabCount } separador contentor será fechado. Tem a certeza que pretende desativar os separadores contentor?
+       *[other] Se desativar os Separadores contentor agora, { $tabCount } separadores contentor serão fechados. Tem a certeza que pretende desativar os separadores contentor?
     }
 containers-disable-alert-ok-button =
     { $tabCount ->
@@ -183,8 +183,8 @@ containers-remove-alert-title = Remover este contentor?
 #   $count (Number) - Number of tabs that will be closed.
 containers-remove-alert-msg =
     { $count ->
-        [one] Se remover este contentor agora, { $count } separador contentor será fechado. Tem a certeza de que pretende remover este contentor?
-       *[other] Se remover este contentor agora, { $count } separadores contentores serão fechados. Tem a certeza de que pretende remover este contentor?
+        [one] Se remover este contentor agora, { $count } separador contentor será fechado. Tem a certeza que pretende remover este contentor?
+       *[other] Se remover este contentor agora, { $count } separadores contentor serão fechados. Tem a certeza que pretende remover este contentor?
     }
 containers-remove-ok-button = Remover este contentor
 containers-remove-cancel-button = Não remover este contentor
@@ -782,6 +782,17 @@ forms-master-pw-change =
 forms-master-pw-fips-title = Atualmente, está no modo FIPS. Este modo requer uma palavra-passe mestra não vazia.
 forms-master-pw-fips-desc = Erro ao alterar palavra-passe
 
+## OS Authentication dialog
+
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message = Confirme a sua identidade para criar uma palavra-passe mestra.
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = Criar uma palavra-passe mestra
+master-password-os-auth-dialog-caption = { -brand-full-name }
+
 ## Privacy Section - History
 
 history-header = Histórico
@@ -915,7 +926,7 @@ enhanced-tracking-protection-setting-standard =
     .label = Padrão
     .accesskey = d
 enhanced-tracking-protection-setting-strict =
-    .label = Rigoroso
+    .label = Rigorosa
     .accesskey = R
 enhanced-tracking-protection-setting-custom =
     .label = Personalizada

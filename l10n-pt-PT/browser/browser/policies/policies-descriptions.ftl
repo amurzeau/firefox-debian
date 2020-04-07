@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Definir políticas que WebExtensions podem aceder via chrome.storage.managed.
+policy-AppAutoUpdate = Ativar ou desativar atualizações automáticas de aplicações.
 policy-AppUpdateURL = Definir um URL personalizado de atualização da aplicação.
 policy-Authentication = Configurar autenticação integrada para os sites que a suportem.
 policy-BlockAboutAddons = Bloquear acesso ao Gestor de extras (about:addons).
@@ -21,9 +22,11 @@ policy-Bookmarks = Criar marcadores na barra de ferramentas de marcadores, menus
 policy-CaptivePortal = Ativar ou desativar o suporte ao portal cativo.
 policy-CertificatesDescription = Adicionar certificados ou utilizar certificados integrados.
 policy-Cookies = Permitir ou negar que os sites definam cookies.
+policy-DisabledCiphers = Desativar cifras.
 policy-DefaultDownloadDirectory = Definir o diretório de transferências predefinido.
 policy-DisableAppUpdate = Impedir o navegador de ser atualizado.
 policy-DisableBuiltinPDFViewer = Desativar o PDF.js, o leitor de PDF incorporado no { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Impedir que o agente do navegador predefinido execute qualquer ação. Aplicável apenas ao Windows; as outras plataformas não dispõem deste agente.
 policy-DisableDeveloperTools = Bloquear acesso às ferramentas de programador.
 policy-DisableFeedbackCommands = Desativar comandos para enviar comentários a partir do menu de Ajuda (enviar feedback e reportar sites fraudulentos)
 policy-DisableFirefoxAccounts = Desativar os serviços baseados na { -fxaccount-brand-name }, incluindo o Sync.
@@ -45,7 +48,7 @@ policy-DisableSystemAddonUpdate = Impedir o navegador de instalar e atualizar ex
 policy-DisableTelemetry = Desligar a Telemetria.
 policy-DisplayBookmarksToolbar = Mostrar a Barra ferramentas de marcadores por predefinição.
 policy-DisplayMenuBar = Mostrar a Barra de menu por predefinição.
-policy-DNSOverHTTPS = Configurar DNS sob HTTPS.
+policy-DNSOverHTTPS = Configurar DNS por HTTPS.
 policy-DontCheckDefaultBrowser = Desativar verificação por navegador predefinido no arranque.
 policy-DownloadDirectory = Definir e bloquear o diretório de transferências predefinido.
 # “lock” means that the user won’t be able to change this setting
@@ -72,9 +75,8 @@ policy-OfferToSaveLoginsDefault = Defina o valor predefinido para permitir que o
 policy-OverrideFirstRunPage = Sobrepor a página de primeira execução. Defina esta política para blank se pretende desativar a página de primeira execução.
 policy-OverridePostUpdatePage = Sobrepor a página "Novidades" pós-atualização. Defina esta política para blank se pretende desativar a página pós-atualização.
 policy-PasswordManagerEnabled = Ativar a opção de guardar as palavras-passe no gestor de palavras-passe.
-policy-Permissions = Configurar permissões para a câmara, microfone, localização e notificações.
 policy-Permissions2 = Configurar as permissões para a câmara, microfone, localização, notificações e reprodução automática.
-policy-PopupBlocking = Permitir que determinados sites mostrem popups por predefinição.
+policy-PopupBlocking = Permitir que determinados sites mostrem pop-ups por predefinição.
 policy-Preferences = Definir e bloquear o valor para um subconjunto de preferências.
 policy-PromptForDownloadLocation = Perguntar onde guardar os ficheiros durante a transferência.
 policy-Proxy = Configurar definições proxy.

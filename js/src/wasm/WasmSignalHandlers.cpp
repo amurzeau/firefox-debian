@@ -1006,11 +1006,6 @@ void wasm::EnsureEagerProcessSignalHandlers() {
   return;
 #endif
 
-  // Signal handlers are currently disabled when recording or replaying.
-  if (mozilla::recordreplay::IsRecordingOrReplaying()) {
-    return;
-  }
-
 #if defined(ANDROID) && defined(MOZ_LINKER)
   // Signal handling is broken on some android systems.
   if (IsSignalHandlingBroken()) {

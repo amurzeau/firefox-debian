@@ -71,10 +71,13 @@ cmd-contribute =
     .accesskey = D
     .tooltiptext = Doprinesite razvoju ovog dodatka
 discover-title = Što su dodaci?
-discover-description = Dodaci su aplikacije koje omogućuju prilagođavanje { -brand-short-name }a s dodatnim funkcionalnostima ili stilom. Isprobajte bočnu traku koja vam ušteđuje vrijeme, dodajte vremensku prognozu ili postavite drugi motiv za { -brand-short-name }.
+discover-description =
+    Dodaci su programi, koji omogućuju prilagođavanje { -brand-short-name }a s dodatnim
+    funkcijama ili stilovima. Za individualiziranje { -brand-short-name }a Isprobaj bočnu traku,
+    obavještavanje o vremenskoj prognozi ili motiv.
 discover-footer = Kada ste spojeni na Internet, u ovom će prozoru biti istaknute neke od najboljih i najpopularnijih dodataka koje možete isprobati.
 detail-version =
-    .label = Inačica
+    .label = Verzija
 detail-last-updated =
     .label = Posljednja dopuna
 detail-contributions-description = Razvijatelja ovog dodatka zanima jeste li voljni pomoći razvoju malom donacijom.
@@ -143,7 +146,7 @@ detail-rating =
 addon-restart-now =
     .label = Ponovo pokreni sada
 disabled-unsigned-heading =
-    .value = Neki dodaci su onemogućeni
+    .value = Neki dodaci su isključeni
 disabled-unsigned-description = Navedeni dodaci nisu mogli biti verificirani za korištenje u { -brand-short-name }u. Možete <label data-l10n-name="find-addons">pronaći zamjenske dodatke</label> ili kontaktirati autora dodataka da zatraži njihovu verifikaciju.
 disabled-unsigned-learn-more = Saznaj više o našim naporima da te zaštitimo na Internetu.
 disabled-unsigned-devinfo = Razvijatelji koji su zainteresirani za verifikaciju svojih dodataka mogu nastaviti čitati naš <label data-l10n-name="learn-more">vodič</label>.
@@ -166,28 +169,28 @@ extensions-view-available-updates =
 ## These are global warnings
 
 extensions-warning-safe-mode-label =
-    .value = Sve je dodatke onemogućio sigurnosni način rada.
+    .value = Siguran način rada isključio je sve dodatke.
 extensions-warning-safe-mode-container =
     .tooltiptext = { extensions-warning-safe-mode-label.value }
 extensions-warning-check-compatibility-label =
-    .value = Provjera kompatibilnosti dodataka je isključena. Možda imate nekompatibilne dodatke.
+    .value = Provjera kompatibilnosti dodataka je isključena. Možda imaš nekompatibilne dodatke.
 extensions-warning-check-compatibility-container =
     .tooltiptext = { extensions-warning-check-compatibility-label.value }
 extensions-warning-check-compatibility-enable =
     .label = Omogući
     .tooltiptext = Omogući provjeru kompatibilnosti dodataka
 extensions-warning-update-security-label =
-    .value = Provjera dostupnosti sigurnosnih dopuna za dodatke je onemogućena. Dodacima možda nedostaju sigurnosne dopune.
+    .value = Provjera dostupnosti sigurnosnih nadogradnji za dodatke je isključena. Nadogradnje mogu naškoditi tvojoj sigurnosti.
 extensions-warning-update-security-container =
     .tooltiptext = { extensions-warning-update-security-label.value }
 extensions-warning-update-security-enable =
     .label = Omogući
     .tooltiptext = Omogući provjeru dostupnosti sigurnosnih dopuna za dodatke
-extensions-warning-safe-mode = Sve je dodatke onemogućio sigurnosni način rada.
-extensions-warning-check-compatibility = Provjera kompatibilnosti dodataka je isključena. Možda imate nekompatibilne dodatke.
+extensions-warning-safe-mode = Siguran način rada isključio je sve dodatke.
+extensions-warning-check-compatibility = Provjera kompatibilnosti dodataka je isključena. Možda imaš nekompatibilne dodatke.
 extensions-warning-check-compatibility-button = Omogući
     .title = Omogući provjeru kompatibilnosti dodataka
-extensions-warning-update-security = Provjera dostupnosti sigurnosnih dopuna za dodatke je onemogućena. Dodacima možda nedostaju sigurnosne dopune.
+extensions-warning-update-security = Provjera dostupnosti sigurnosnih nadogradnji za dodatke je isključena. Nadogradnje mogu naškoditi tvojoj sigurnosti.
 extensions-warning-update-security-button = Omogući
     .title = Omogući provjeru dostupnosti sigurnosnih dopuna za dodatke
 
@@ -269,7 +272,7 @@ manage-extensions-shortcuts =
 # This is displayed in the page options menu
 addon-manage-extensions-shortcuts = Upravljanje tipkovničkim kraticama dodatka
     .accesskey = U
-shortcuts-no-addons = Nemate omogućenih dodataka
+shortcuts-no-addons = Nemaš uključenih proširenja.
 shortcuts-no-commands = Sljedeći dodaci nemaju prečice:
 shortcuts-input =
     .placeholder = Upišite prečac
@@ -290,7 +293,7 @@ shortcuts-duplicate-warning-message = { $shortcut } se koristi kao prečica u vi
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
-shortcuts-exists = Već se koristi od strane { $addon }
+shortcuts-exists = Već se koristi za { $addon }
 shortcuts-card-expand-button =
     { $numberToShow ->
         [one] Prikaži još { $numberToShow }
@@ -306,12 +309,12 @@ go-back-button =
 # Explanatory introduction to the list of recommended add-ons. The action word
 # ("recommends") in the final sentence is a link to external documentation.
 discopane-intro =
-    Dodaci i motivi su kao aplikacije za vaš preglednik i oni vam omogućavaju
-    da zaštitite lozinke, preuzimate video na disk, pronađete akcije, blokirate
-    naporne reklame, izmjenite kako vaš preglednik izgleda i puno više. Ovi mali
-    programi su često razvijeni od treće strane. Ovdje možete pronaći
-    { -brand-product-name } izbor <a data-l10n-name="learn-more-trigger">preporučenih dodataka</a>
-    za dodatnu sigurnost, perfomanse i funkcionalnost.
+    Dodaci i motivi su kao programi za preglednik i omogućavaju zaštitu za
+    lozinke, preuzimanje videozapisa, pronalaženje ponuda, blokiranje
+    dosadnih oglasa, izmjenu izgleda preglednika i još puno više. Ove male
+    programe često razvijaju treće strane. Ovdje je izbor dodataka koje
+    { -brand-product-name } <a data-l10n-name="learn-more-trigger">preporučuje</a> za dodatnu
+    sigurnost, perfomanse i funkcionalnost.
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations =
     Neki prijedlozi su personalizirani. Bazirani su na drugim dodacima koje
@@ -374,7 +377,7 @@ ask-to-activate-button = Pitaj prilikom aktivacije
 always-activate-button = Uvijek aktiviraj
 never-activate-button = Nikada nemoj aktivirati
 addon-detail-author-label = Autor
-addon-detail-version-label = Inačica
+addon-detail-version-label = Verzija
 addon-detail-last-updated-label = Posljednje ažuriranje
 addon-detail-homepage-label = Početna stranica
 addon-detail-rating-label = Ocjena
@@ -449,7 +452,7 @@ theme-heading = Upravljaj motivima
 plugin-heading = Upravljanje priključcima
 dictionary-heading = Upravljanje rječnicima
 locale-heading = Upravljanje jezicima
-updates-heading = Upravljajte svojim ažuriranjima
+updates-heading = Upravljaj svojim ažuriranjima
 discover-heading = Prilagodite svoj { -brand-short-name }
 shortcuts-heading = Upravljanje prečacima dodataka
 theme-heading-search-label = Pronađi daljnje motive

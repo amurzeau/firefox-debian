@@ -42,6 +42,8 @@
 <!ENTITY  newMessageCmd.accesskey "M">
 <!ENTITY  newContactCmd.label "Kontakto…">
 <!ENTITY  newContactCmd.accesskey "K">
+<!ENTITY openMenuCmd.label "Malfermi">
+<!ENTITY openMenuCmd.accesskey "M">
 <!ENTITY openMessageFileCmd.label "Malfermi konservitan mesaĝon…">
 <!ENTITY openMessageFileCmd.accesskey "M">
 <!ENTITY saveAsMenu.label "Konservi kiel">
@@ -375,30 +377,30 @@
 <!ENTITY editTemplateMsgCmd.accesskey "b">
 <!ENTITY newMsgFromTemplateCmd.label "Nova mesaĝo el ŝablono">
 <!ENTITY newMsgFromTemplateCmd.keycode "VK_RETURN"><!-- do not change "VK_RETURN" -->
-<!ENTITY createFilter.label "Create Filter From Message…">
-<!ENTITY createFilter.accesskey "a">
-<!ENTITY moveMsgToMenu.label "Move To">
+<!ENTITY createFilter.label "Krei filtrilon surbaze de mesaĝo…">
+<!ENTITY createFilter.accesskey "f">
+<!ENTITY moveMsgToMenu.label "Movi al">
 <!ENTITY moveMsgToMenu.accesskey "M">
-<!ENTITY moveCopyMsgRecentMenu.label "Recent">
-<!ENTITY moveCopyMsgRecentMenu.accesskey "R">
-<!ENTITY copyMessageLocation.label "Copy Message Location">
-<!ENTITY copyMessageLocation.accesskey "M">
-<!ENTITY copyMsgToMenu.label "Copy To">
-<!ENTITY copyMsgToMenu.accesskey "C">
-<!ENTITY moveToFolderAgain.label "Move Again">
-<!ENTITY moveToFolderAgain.accesskey "i">
+<!ENTITY moveCopyMsgRecentMenu.label "Ĵusaj">
+<!ENTITY moveCopyMsgRecentMenu.accesskey "j">
+<!ENTITY copyMessageLocation.label "Kopii adreson de mesaĝo">
+<!ENTITY copyMessageLocation.accesskey "K">
+<!ENTITY copyMsgToMenu.label "Kopii al">
+<!ENTITY copyMsgToMenu.accesskey "K">
+<!ENTITY moveToFolderAgain.label "Movi denove">
+<!ENTITY moveToFolderAgain.accesskey "v">
 <!ENTITY moveToFolderAgainCmd.key "m">
-<!ENTITY killThreadMenu.label "Ignore Thread">
+<!ENTITY killThreadMenu.label "Ignori fadenon">
 <!ENTITY killThreadMenu.accesskey "I">
 <!ENTITY killThreadMenu.key "k">
-<!ENTITY killSubthreadMenu.label "Ignore Subthread">
-<!ENTITY killSubthreadMenu.accesskey "S">
+<!ENTITY killSubthreadMenu.label "Ignori subfadenon">
+<!ENTITY killSubthreadMenu.accesskey "s">
 <!ENTITY killSubthreadMenu.key "k">
-<!ENTITY watchThreadMenu.label "Watch Thread">
-<!ENTITY watchThreadMenu.accesskey "W">
+<!ENTITY watchThreadMenu.label "Observi fadenon">
+<!ENTITY watchThreadMenu.accesskey "O">
 <!ENTITY watchThreadMenu.key "w">
-<!ENTITY tagMenu.label "Tag">
-<!ENTITY tagMenu.accesskey "g">
+<!ENTITY tagMenu.label "Etikedo">
+<!ENTITY tagMenu.accesskey "t">
 <!ENTITY tagCmd0.key "0">
 <!ENTITY tagCmd1.key "1">
 <!ENTITY tagCmd2.key "2">
@@ -409,110 +411,120 @@
 <!ENTITY tagCmd7.key "7">
 <!ENTITY tagCmd8.key "8">
 <!ENTITY tagCmd9.key "9">
-<!ENTITY markMenu.label "Mark">
+<!ENTITY markMenu.label "Marki">
 <!ENTITY markMenu.accesskey "k">
 <!ENTITY toggleReadCmd.key "m">
-<!ENTITY markAsReadCmd.label "As Read">
-<!ENTITY markAsReadCmd.accesskey "R">
-<!ENTITY markAsUnreadCmd.label "As Unread">
-<!ENTITY markAsUnreadCmd.accesskey "U">
-<!ENTITY markThreadAsReadCmd.label "Thread As Read">
-<!ENTITY markThreadAsReadCmd.accesskey "T">
+<!ENTITY markAsReadCmd.label "kiel legitan">
+<!ENTITY markAsReadCmd.accesskey "l">
+<!ENTITY markAsUnreadCmd.label "kiel nelegitan">
+<!ENTITY markAsUnreadCmd.accesskey "n">
+<!ENTITY markThreadAsReadCmd.label "fadenon kiel legitan">
+<!ENTITY markThreadAsReadCmd.accesskey "f">
 <!ENTITY markThreadAsReadCmd.key "r">
-<!ENTITY markReadByDateCmd.label "As Read by Date…">
-<!ENTITY markReadByDateCmd.accesskey "D">
+<!ENTITY markReadByDateCmd.label "kiel legitajn laŭ dato">
+<!ENTITY markReadByDateCmd.accesskey "d">
 <!ENTITY markReadByDateCmd.key "c">
-<!ENTITY markAllReadCmd.label "All Read">
-<!ENTITY markAllReadCmd.accesskey "A">
+<!ENTITY markAllReadCmd.label "ĉiujn kiel legitajn">
+<!ENTITY markAllReadCmd.accesskey "j">
 <!ENTITY markAllReadCmd.key "c">
-<!ENTITY markStarredCmd.label "Add Star">
-<!ENTITY markStarredCmd.accesskey "S">
+<!ENTITY markStarredCmd.label "per steleto">
+<!ENTITY markStarredCmd.accesskey "s">
 <!ENTITY markStarredCmd.key "S">
-<!ENTITY markAsJunkCmd.label "As Junk">
-<!ENTITY markAsJunkCmd.accesskey "J">
+<!ENTITY markAsJunkCmd.label "kiel trudmesaĝon">
+<!ENTITY markAsJunkCmd.accesskey "t">
 <!ENTITY markAsJunkCmd.key "j">
-<!ENTITY markAsNotJunkCmd.label "As Not Junk">
-<!ENTITY markAsNotJunkCmd.accesskey "N">
+<!ENTITY markAsNotJunkCmd.label "kiel deziratan">
+<!ENTITY markAsNotJunkCmd.accesskey "z">
 <!ENTITY markAsNotJunkCmd.key "j">
-<!ENTITY recalculateJunkScoreCmd.label "Run Junk Mail Controls">
-<!ENTITY recalculateJunkScoreCmd.accesskey "C">
-<!ENTITY openMessageWindowCmd.label "Open Message">
-<!ENTITY openMessageWindowCmd.accesskey "O">
+<!ENTITY recalculateJunkScoreCmd.label "Ekigi filtrilon de trudmesaĝoj">
+<!ENTITY recalculateJunkScoreCmd.accesskey "E">
+<!ENTITY openMessageWindowCmd.label "Malfermi mesaĝon">
+<!ENTITY openMessageWindowCmd.accesskey "M">
 <!ENTITY openMessageWindowCmd.key "o">
-<!ENTITY openAttachmentListCmd.label "Attachments">
-<!ENTITY openAttachmentListCmd.accesskey "h">
-<!ENTITY openFeedMessage1.label "When Opening Feed Messages">
-<!ENTITY openFeedMessage1.accesskey "O">
-<!ENTITY openFeedWebPage.label "Open as Web Page">
-<!ENTITY openFeedWebPage.accesskey "W">
-<!ENTITY openFeedSummary.label "Open as Summary">
-<!ENTITY openFeedSummary.accesskey "S">
-<!ENTITY openFeedWebPageInMP.label "Toggle Web Page and Summary in Message Pane">
-<!ENTITY openFeedWebPageInMP.accesskey "T">
+<!ENTITY openInConversationCmd.label "Malfermi fadenon">
+<!ENTITY openInConversationCmd.accesskey "f">
+<!ENTITY openInConversationCmd.key "o">
+<!ENTITY openAttachmentListCmd.label "Kunsendaĵoj">
+<!ENTITY openAttachmentListCmd.accesskey "s">
+<!ENTITY openFeedMessage1.label "Vidigi artikolojn">
+<!ENTITY openFeedMessage1.accesskey "V">
+<!ENTITY openFeedWebPage.label "kiel retpaĝojn">
+<!ENTITY openFeedWebPage.accesskey "r">
+<!ENTITY openFeedSummary.label "kiel sumigojn">
+<!ENTITY openFeedSummary.accesskey "s">
+<!ENTITY openFeedWebPageInMP.label "nur en la panelo de mesaĝoj">
+<!ENTITY openFeedWebPageInMP.accesskey "n">
 
 <!-- Windows Menu -->
-<!ENTITY windowMenu.label "Window">
+<!ENTITY windowMenu.label "Fenestro">
 
 <!-- Tools Menu -->
-<!ENTITY tasksMenu.label "Tools">
-<!ENTITY tasksMenu.accesskey "T">
-<!ENTITY messengerCmd.label "Mail &amp; Newsgroups">
-<!ENTITY messengerCmd.accesskey "N">
-<!ENTITY addressBookCmd.label "Address Book">
-<!ENTITY addressBookCmd.accesskey "B">
+<!ENTITY tasksMenu.label "Iloj">
+<!ENTITY tasksMenu.accesskey "l">
+<!ENTITY messengerCmd.label "Retpoŝto kaj novaĵgrupoj">
+<!ENTITY messengerCmd.accesskey "R">
+<!ENTITY addressBookCmd.label "Adresaro">
+<!ENTITY addressBookCmd.accesskey "A">
 <!ENTITY addressBookCmd.key "B">
-<!ENTITY addons.label "Add-ons">
-<!ENTITY addons.accesskey "A">
-<!ENTITY activitymanager.label "Activity Manager">
-<!ENTITY activitymanager.accesskey "v">
-<!ENTITY imAccountsStatus.label "Stato de tujmesaĝiloj">
-<!ENTITY imAccountsStatus.accesskey "C">
-<!ENTITY imStatus.available          "Available">
-<!ENTITY imStatus.unavailable        "Unavailable">
-<!ENTITY imStatus.offline            "Offline">
-<!ENTITY imStatus.showAccounts       "Show Accounts…">
-<!ENTITY joinChatCmd.label "Join Chat…">
-<!ENTITY joinChatCmd.accesskey "t">
-<!ENTITY savedFiles.label "Saved Files">
-<!ENTITY savedFiles.accesskey "l">
+<!ENTITY addons.label "Aldonaĵoj">
+<!ENTITY addons.accesskey "j">
+<!ENTITY addonPrefs.label "Preferoj de aldonaĵo">
+<!ENTITY addonPrefs.accesskey "P">
+<!ENTITY addonPrefsUnix.label "Preferoj de aldonaĵo">
+<!ENTITY addonPrefsUnix.accesskey "P">
+<!ENTITY addonNoPrefs.label "Neniu aldonaĵo por agordi.">
+<!ENTITY activitymanager.label "Aktiveca kontrolilo">
+<!ENTITY activitymanager.accesskey "k">
+<!ENTITY imAccountsStatus.label "Stato de tujmesaĝilo">
+<!ENTITY imAccountsStatus.accesskey "S">
+<!ENTITY imStatus.available          "disponebla">
+<!ENTITY imStatus.unavailable        "nedisponebla">
+<!ENTITY imStatus.offline            "eksterreta">
+<!ENTITY imStatus.showAccounts       "Montri kontojn">
+<!ENTITY joinChatCmd.label "Aliĝi al interparolado…">
+<!ENTITY joinChatCmd.accesskey "i">
+<!ENTITY savedFiles.label "Konservitaj dosieroj">
+<!ENTITY savedFiles.accesskey "d">
 <!ENTITY savedFiles.key "j">
-<!ENTITY filtersCmd2.label "Message Filters">
+<!ENTITY filtersCmd2.label "Filtriloj de mesaĝoj">
 <!ENTITY filtersCmd2.accesskey "F">
-<!ENTITY filtersApply.label "Run Filters on Folder">
-<!ENTITY filtersApply.accesskey "R">
-<!ENTITY filtersApplyToSelection.label "Run Filters on Selected Messages">
-<!ENTITY filtersApplyToSelection.accesskey "u">
-<!ENTITY filtersApplyToMessage.label "Run Filters on Message">
-<!ENTITY filtersApplyToMessage.accesskey "u">
-<!ENTITY runJunkControls.label "Run Junk Mail Controls on Folder">
-<!ENTITY runJunkControls.accesskey "C">
-<!ENTITY deleteJunk.label "Delete Mail Marked as Junk in Folder">
-<!ENTITY deleteJunk.accesskey "D">
-<!ENTITY importCmd.label "Import…">
-<!ENTITY importCmd.accesskey "m">
-<!ENTITY clearRecentHistory.label "Clear Recent History…">
-<!ENTITY clearRecentHistory.accesskey "H">
-<!ENTITY accountManagerCmd2.label "Account Settings">
-<!ENTITY accountManagerCmd2.accesskey "S">
+<!ENTITY filtersApply.label "Apliki filtrilojn al mesaĝujo">
+<!ENTITY filtersApply.accesskey "u">
+<!ENTITY filtersApplyToSelection.label "Apliki filtrilojn al elektitaj mesaĝoj">
+<!ENTITY filtersApplyToSelection.accesskey "m">
+<!ENTITY filtersApplyToMessage.label "Apliki filtrilojn al mesaĝo">
+<!ENTITY filtersApplyToMessage.accesskey "m">
+<!ENTITY runJunkControls.label "Rekoni trudmesaĝojn en tiu ĉi mesaĝujo">
+<!ENTITY runJunkControls.accesskey "t">
+<!ENTITY deleteJunk.label "Forigi trudmesaĝojn el tiu ĉi mesaĝujo">
+<!ENTITY deleteJunk.accesskey "t">
+<!ENTITY importCmd.label "Enporti…">
+<!ENTITY importCmd.accesskey "n">
+<!ENTITY clearRecentHistory.label "Forviŝi ĵusan historion…">
+<!ENTITY clearRecentHistory.accesskey "v">
+<!ENTITY accountManagerCmd2.label "Agordoj pri kontoj">
+<!ENTITY accountManagerCmd2.accesskey "k">
 <!-- LOCALIZATION NOTE (accountManagerCmdUnix.accesskey):
      Belongs to accountManagerCmd.label, which is placed under the Edit menu
      on Unix systems
   -->
-<!ENTITY accountManagerCmdUnix2.accesskey "A">
+<!ENTITY accountManagerCmdUnix2.accesskey "g">
 
 <!-- Developer Tools Submenu -->
-<!ENTITY devtoolsMenu.label "Developer Tools">
-<!ENTITY devtoolsMenu.accesskey "e">
-<!ENTITY devToolboxCmd.label "Developer Toolbox">
-<!ENTITY devToolboxCmd.accesskey "T">
+<!ENTITY devtoolsMenu.label "Iloj por programistoj">
+<!ENTITY devtoolsMenu.accesskey "l">
+<!ENTITY devToolboxCmd.label "Ilaro por programistoj">
+<!ENTITY devToolboxCmd.accesskey "I">
 <!ENTITY devToolboxCmd.commandkey "i">
-<!ENTITY tabsDebugCmd.label "Content Frame Debugger">
-<!ENTITY tabsDebugCmd.accesskey "C">
-<!ENTITY errorConsoleCmd.label "Error Console">
-<!ENTITY errorConsoleCmd.accesskey "E">
+<!ENTITY debugAddonsCmd.label "Senerarigi aldonaĵojn">
+<!ENTITY debugAddonsCmd.accesskey "a">
+<!ENTITY tabsDebugCmd.label "Senerarigi langetojn">
+<!ENTITY tabsDebugCmd.accesskey "l">
+<!ENTITY errorConsoleCmd.label "Konzolo de eraroj">
+<!ENTITY errorConsoleCmd.accesskey "K">
 <!ENTITY errorConsoleCmd.commandkey "j">
-<!ENTITY scratchpadCmd.label "Scratchpad">
-<!ENTITY scratchpadCmd.accesskey "S">
+<!ENTITY scratchpadCmd.label "Malneta redaktilo">
+<!ENTITY scratchpadCmd.accesskey "M">
 
 <!--LOCALIZATION NOTE (scratchpadCmd.keycode):
     This should be a key code constant as per
@@ -524,51 +536,51 @@
 <!ENTITY scratchpadCmd.keytext "F4">
 
 <!-- Mail Toolbar -->
-<!ENTITY getMsgButton1.label "Get Messages">
-<!ENTITY newMsgButton.label "Write">
-<!ENTITY replyButton.label "Reply">
-<!ENTITY replyAllButton.label "Reply All">
-<!ENTITY replyListButton.label "Reply to List">
-<!ENTITY forwardButton.label "Forward">
-<!ENTITY fileButton.label "File">
-<!ENTITY archiveButton.label "Archive">
-<!ENTITY openConversationButton.label "Conversation">
-<!ENTITY nextButton.label "Next">
-<!ENTITY nextButtonToolbarItem.label "Next Unread">
-<!ENTITY nextMsgButton.label "Next">
-<!ENTITY previousButton.label "Previous">
-<!ENTITY previousButtonToolbarItem.label "Previous Unread">
-<!ENTITY previousMsgButton.label "Previous">
-<!ENTITY backButton1.label "Back">
-<!ENTITY goForwardButton1.label "Forward">
-<!ENTITY deleteItem.title "Delete">
-<!ENTITY deleteButton.label "Delete">
-<!ENTITY undeleteButton.label "Undelete">
-<!ENTITY markButton.label "Mark">
-<!ENTITY printButton.label "Print">
-<!ENTITY stopButton.label "Stop">
-<!ENTITY throbberItem.title "Activity Indicator">
-<!ENTITY junkItem.title "Junk">
-<!ENTITY junkButton.label "Junk">
-<!ENTITY notJunkButton.label "Not Junk">
-<!ENTITY addressBookButton.label "Address Book">
-<!ENTITY chatButton.label "Chat">
-<!ENTITY glodaSearch.title "Global Search">
-<!ENTITY searchItem.title "Quick Search">
-<!ENTITY mailViewsToolbarItem.title "Mail Views">
-<!ENTITY folderLocationToolbarItem.title "Folder Location">
-<!ENTITY tagButton.label "Tag">
-<!ENTITY compactButton.label "Compact">
-<!ENTITY appmenuButton.label "AppMenu">
+<!ENTITY getMsgButton1.label "Ricevi">
+<!ENTITY newMsgButton.label "Skribi">
+<!ENTITY replyButton.label "Respondi">
+<!ENTITY replyAllButton.label "Resp. al ĉiuj">
+<!ENTITY replyListButton.label "Resp. al listo">
+<!ENTITY forwardButton.label "Plusendi">
+<!ENTITY fileButton.label "Klasifiki">
+<!ENTITY archiveButton.label "Arĥivigi">
+<!ENTITY openConversationButton.label "Interparolado">
+<!ENTITY nextButton.label "Sekva">
+<!ENTITY nextButtonToolbarItem.label "Sekva nelegita">
+<!ENTITY nextMsgButton.label "Sekva">
+<!ENTITY previousButton.label "Antaŭa">
+<!ENTITY previousButtonToolbarItem.label "Antaŭa nelegita">
+<!ENTITY previousMsgButton.label "Antaŭa">
+<!ENTITY backButton1.label "Antaŭen">
+<!ENTITY goForwardButton1.label "Sekven">
+<!ENTITY deleteItem.title "Forigi">
+<!ENTITY deleteButton.label "Forigi">
+<!ENTITY undeleteButton.label "Malforigi">
+<!ENTITY markButton.label "Marki">
+<!ENTITY printButton.label "Presi">
+<!ENTITY stopButton.label "Haltigi">
+<!ENTITY throbberItem.title "Aktiveca indikilo">
+<!ENTITY junkItem.title "Trudmesaĝo">
+<!ENTITY junkButton.label "Trudmesaĝo">
+<!ENTITY notJunkButton.label "Dezirata">
+<!ENTITY addressBookButton.label "Adresaro">
+<!ENTITY chatButton.label "Tujmesaĝilo">
+<!ENTITY glodaSearch.title "Serĉi">
+<!ENTITY searchItem.title "Rapide serĉi">
+<!ENTITY mailViewsToolbarItem.title "Vidoj de retpoŝto">
+<!ENTITY folderLocationToolbarItem.title "Loko de mesaĝujo">
+<!ENTITY tagButton.label "Etikedo">
+<!ENTITY compactButton.label "Reorganizi">
+<!ENTITY appmenuButton.label "Menuo">
 
 <!-- Mail Toolbar Tooltips-->
-<!ENTITY advancedButton.tooltip "Advanced message search">
-<!ENTITY getMsgButton.tooltip "Get new messages">
-<!ENTITY getAllNewMsgCmd.label "Get All New Messages">
-<!ENTITY getAllNewMsgCmd.accesskey "G">
-<!ENTITY newMsgButton.tooltip "Create a new message">
-<!ENTITY replyButton.tooltip "Reply to the message">
-<!ENTITY replyAllButton.tooltip "Reply to sender and all recipients">
+<!ENTITY advancedButton.tooltip "Sperta serĉo de mesaĝoj">
+<!ENTITY getMsgButton.tooltip "Ricevi novajn mesaĝojn">
+<!ENTITY getAllNewMsgCmd.label "Ricevi ĉiujn novajn mesaĝojn">
+<!ENTITY getAllNewMsgCmd.accesskey "R">
+<!ENTITY newMsgButton.tooltip "Skribi novan mesaĝon">
+<!ENTITY replyButton.tooltip "Respondi al la mesaĝo">
+<!ENTITY replyAllButton.tooltip "Respondi al la sendinto kaj al ĉiuj ricevontojn">
 <!ENTITY replyListButton.tooltip "Reply to mailing list">
 <!ENTITY forwardButton.tooltip "Forward selected message">
 <!ENTITY forwardAsInline.tooltip "Forward selected message as inline text">

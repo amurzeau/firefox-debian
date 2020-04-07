@@ -11,13 +11,17 @@ certificate-viewer-error-title = کچھ غلط ہو گیا
 ## Certificate information labels
 
 certificate-viewer-algorithm = الگورتھم
+certificate-viewer-cipher-suite = سائفر سویٹ
 certificate-viewer-common-name = عام نام
 certificate-viewer-email-address = ای میل پتہ
 certificate-viewer-country = ‏‏ملک
 certificate-viewer-curve = خم
 certificate-viewer-distribution-point = تقسیمی  نقتہ
+certificate-viewer-other-name = دوسرا نام
 certificate-viewer-exponent = قوت
+certificate-viewer-key-size = کلیدی کا ماپ
 certificate-viewer-location = موجودہ مقام
+certificate-viewer-logid = لاگ ID
 certificate-viewer-method = طریقہ
 certificate-viewer-modulus = ماڈیولس
 certificate-viewer-name = نام
@@ -44,8 +48,10 @@ certificate-viewer-business-category = کاروباری زمرہ
 certificate-viewer-subject-name = موضوع کا نام
 certificate-viewer-issuer-name = جاری کنندہ کا نام
 certificate-viewer-miscellaneous = متفرق
+certificate-viewer-fingerprints = انگلیوں کے نشان
 certificate-viewer-basic-constraints = بنیادی رکاوٹیں
 certificate-viewer-key-usages = کلیدی استعمال
+certificate-viewer-certificate-policies = تصدیق نامہ پالیسیاں
 # This message is used as a row header in the Miscellaneous section. 
 # The associated data cell contains links to download the certificate.
 certificate-viewer-download = ڈاؤن لوڈ

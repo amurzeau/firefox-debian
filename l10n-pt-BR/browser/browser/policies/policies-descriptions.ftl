@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Definir políticas que WebExtensions podem acessar via chrome.storage.managed.
+policy-AppAutoUpdate = Ativar ou desativar atualizações automáticas da aplicação.
 policy-AppUpdateURL = Definir URL personalizada de atualização de aplicativo.
 policy-Authentication = Configurar autenticação integrada para sites que a suportam.
 policy-BlockAboutAddons = Bloquear acesso ao gerenciador de extensões (about:addons).
@@ -21,9 +22,11 @@ policy-Bookmarks = Criar favoritos na barra de favoritos, no menu de favoritos o
 policy-CaptivePortal = Ativar ou desativar suporte a portal cativo.
 policy-CertificatesDescription = Adicionar certificados ou utilizar certificados integrados.
 policy-Cookies = Permitir ou impedir que sites criem cookies.
+policy-DisabledCiphers = Desativar criptografia.
 policy-DefaultDownloadDirectory = Definir o diretório de download padrão.
 policy-DisableAppUpdate = Impedir a atualização do navegador.
 policy-DisableBuiltinPDFViewer = Desativar o PDF.js, o visualizador de PDF integrado no { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Impedir que o agente padrão do navegador execute qualquer ação. Aplicável apenas a Windows; outras plataformas não têm o agente.
 policy-DisableDeveloperTools = Bloquear acesso às ferramentas de desenvolvimento.
 policy-DisableFeedbackCommands = Desativar comandos de envio de comentários no menu Ajuda (Enviar opinião e Denunciar site enganoso).
 policy-DisableFirefoxAccounts = Desativar serviços baseados em { -fxaccount-brand-name }, incluindo o Sync.
@@ -72,7 +75,6 @@ policy-OfferToSaveLoginsDefault = Definir o valor padrão para permitir que o { 
 policy-OverrideFirstRunPage = Substituir a página de primeira execução. Defina esta política como vazio se quiser desativar a página de primeira execução.
 policy-OverridePostUpdatePage = Substituir a página “Novidades” exibida após uma atualização. Defina esta política como vazio se quiser desativar a exibição de uma página após atualizações.
 policy-PasswordManagerEnabled = Ativar salvamento de senhas no gerenciador de senhas.
-policy-Permissions = Configurar permissões para câmera, microfone, localização e notificações.
 policy-Permissions2 = Configurar permissões de câmera, microfone, localização, notificações e reprodução automática.
 policy-PopupBlocking = Permitir que determinados sites exibam popups como padrão.
 policy-Preferences = Definir e bloquear o valor de um subconjunto de preferências.

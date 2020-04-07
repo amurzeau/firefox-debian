@@ -203,6 +203,15 @@ advanced-fonts =
 colors-settings =
     .label = Цветове…
     .accesskey = Ц
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Мащабиране
+preferences-default-zoom = Мащабиране по подразбиране
+    .accesskey = м
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Само на текст
+    .accesskey = т
 language-header = Език
 choose-language-description = Избор на език при показване на многоезични страници
 choose-button =
@@ -381,7 +390,7 @@ performance-allow-hw-accel =
     .accesskey = х
 performance-limit-content-process-option = Процеси за обработка на съдържание
     .accesskey = с
-performance-limit-content-process-enabled-desc = Допълнителни процеси за обработка съдържание може да подобрят производителността при използване на повече раздели за сметка на повече използвана памет.
+performance-limit-content-process-enabled-desc = Допълнителни процеси за обработка на съдържание може да подобрят производителността при използване на повече раздели за сметка на повече използвана памет.
 performance-limit-content-process-blocked-desc = Променянето на броя на процесите за съдържание е възможно само при многопроцесен { -brand-short-name }. <a data-l10n-name="learn-more">Научете как да проверите дали многопроцесността е включена</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -967,6 +976,7 @@ permissions-location = Местоположение
 permissions-location-settings =
     .label = Настройки…
     .accesskey = с
+permissions-xr = Виртуална реалност
 permissions-camera = Камера
 permissions-camera-settings =
     .label = Настройки…
@@ -1015,6 +1025,7 @@ permissions-a11y-privacy-link = Научете повече
 collection-header = Събиране и използване на данни от { -brand-short-name }
 collection-description = Стремим се да ви предоставяме възможност и да събираме само толкова, колкото ни е необходимо, за да предоставяме и подобряваме { -brand-short-name } за всички. Винаги искаме разрешение преди да получим лична информация.
 collection-privacy-notice = Политика на поверителност
+collection-health-report-telemetry-disabled = Вече не позволявате на { -vendor-short-name } да засича технически данни и данни за взаимодействие. Всички стари данни ще бъдат изтрити в рамките на 30 дни.
 collection-health-report =
     .label = Разрешаване на { -brand-short-name } да изпраща техническа информация и данни за използването към { -vendor-short-name }
     .accesskey = т

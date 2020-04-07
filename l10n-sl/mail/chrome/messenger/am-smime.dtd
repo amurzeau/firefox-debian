@@ -12,6 +12,18 @@
 <!ENTITY alwaysEncryptMessage.label "Zahtevano (sporočila ni mogoče poslati, če nimajo potrdil vsi prejemniki)">
 <!ENTITY alwaysEncryptMessage.accesskey "Z">
 <!ENTITY encryptionCert.message "Uporabi to potrdilo za šifriranje in odšifriranje vam poslanih sporočil:">
+
+<!ENTITY e2eLearnMore.label "Več o tem">
+
+
+<!ENTITY e2eSigning.description "Digitalni podpis se omogoča prejemnikom prepričati, da ste sporočilo poslali vi in da vsebina ni bila spremenjena.">
+<!ENTITY e2eTechPref.description "Prednostna tehnologija šifriranja:">
+
+<!ENTITY doNotEncrypt.label "Privzeto ne omogoči šifriranja">
+<!ENTITY doNotEncrypt.accesskey "n">
+<!ENTITY requireEncryptMessage.label "Privzeto zahtevaj šifriranje">
+<!ENTITY requireEncryptMessage.accesskey "z">
+<!ENTITY encryptionCert2.message "Osebno digitalno potrdilo za šifriranje:">
 <!ENTITY digitalSign.certificate.button "Izberi …">
 <!ENTITY digitalSign.certificate.accesskey "z">
 <!ENTITY digitalSign.certificate_clear.button "Počisti">
@@ -22,6 +34,7 @@
 <!ENTITY encryption.certificate_clear.accesskey "o">
 <!ENTITY signingGroupTitle.label "Digitalno podpisovanje">
 <!ENTITY signMessage.label "Digitalno podpiši sporočila (privzeto)">
+<!ENTITY signMessage2.label "Privzeto dodaj moj digitalni podpis">
 <!ENTITY signMessage.accesskey "D">
 <!ENTITY signingCert.message "Uporabi to potrdilo za digitalno podpisovanje sporočil, ki jih pošiljate:">
 
@@ -31,7 +44,22 @@
 <!ENTITY manageDevices.label "Varnostne naprave">
 <!ENTITY manageDevices.accesskey "V">
 
+<!ENTITY signingCert2.message "Osebno digitalno potrdilo za podpis:">
+
+<!ENTITY sendingDefaults.label "Privzete nastavitve pošiljanja sporočil">
+
+
+<!ENTITY certificates2.label "S/MIME">
+<!ENTITY manageCerts3.label "Upravljanje potrdil S/MIME">
+
+
+<!ENTITY openpgpKeys.label "OpenPGP">
+
 <!-- Strings for the cert picker dialog -->
 <!ENTITY certPicker.title "Izberite potrdilo">
 <!ENTITY certPicker.info  "Potrdilo:">
 <!ENTITY certPicker.detailsLabel "Podrobnosti izbranega potrdila:">
+
+<!ENTITY openpgpKey.message "Osebni ključ za šifriranje in digitalno podpisovanje:">
+<!ENTITY openpgpKey.button "Nastavi osebni ključ …">
+<!ENTITY openpgpKey.accesskey "o">

@@ -81,6 +81,7 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 ## Protections panel
 
 cfr-protections-panel-header = Περιήγηση χωρίς παρακολούθηση
+cfr-protections-panel-body = Κρατήστε τα δεδομένα σας για τον εαυτό σας. Το { -brand-short-name } σας προστατεύει από πολλούς από τους πιο συνηθισμένους ιχνηλάτες που ακολουθούν ό,τι κάνετε στο διαδίκτυο.
 cfr-protections-panel-link-text = Μάθετε περισσότερα
 
 ## What's New toolbar button and panel
@@ -93,13 +94,26 @@ cfr-whatsnew-button =
     .tooltiptext = Τι νέο υπάρχει
 cfr-whatsnew-panel-header = Τι νέο υπάρχει
 cfr-whatsnew-release-notes-link-text = Διαβάστε τις σημειώσεις έκδοσης
+cfr-whatsnew-tracking-protect-title = Προστατεύστε τον εαυτό σας από ιχνηλάτες
 cfr-whatsnew-tracking-protect-link-text = Προβολή της αναφοράς σας
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Αποκλεισμένος ιχνηλάτης
+       *[other] Αποκλεισμένοι ιχνηλάτες
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Από τις { DATETIME($earliestDate, month: "long", year: "numeric") }
 cfr-whatsnew-tracking-blocked-link-text = Προβολή αναφοράς
+cfr-whatsnew-lockwise-backup-title = Δημιουργήστε αντίγραφα ασφαλείας των κωδικών πρόσβασής σας
 cfr-whatsnew-lockwise-backup-link-text = Ενεργοποίηση των αντιγράφων ασφαλείας
+cfr-whatsnew-lockwise-take-title = Πάρτε τους κωδικούς σας μαζί σας
 cfr-whatsnew-lockwise-take-link-text = Λήψη εφαρμογής
 
 ## Search Bar
 
+cfr-whatsnew-searchbar-icon-alt-text = Εικονίδιο μεγεθυντικού φακού
 
 ## Picture-in-Picture
 
@@ -125,6 +139,7 @@ cfr-doorhanger-sync-logins-ok-button = Ενεργοποίηση { -sync-brand-sh
 ## Send Tab
 
 cfr-doorhanger-send-tab-header = Διαβάστε το εν κινήσει
+cfr-doorhanger-send-tab-recipe-header = Πάρτε αυτή τη συνταγή στην κουζίνα
 cfr-doorhanger-send-tab-ok-button = Δοκιμάστε την καρτέλα "Αποστολή"
     .accesskey = Δ
 
@@ -140,6 +155,9 @@ cfr-doorhanger-socialtracking-ok-button = Προβολή προστασίας
     .accesskey = Π
 cfr-doorhanger-socialtracking-close-button = Κλείσιμο
     .accesskey = Κ
+cfr-doorhanger-socialtracking-dont-show-again = Να μην εμφανιστούν ξανά τέτοια μηνύματα
+    .accesskey = Ν
+cfr-doorhanger-socialtracking-description = Η ιδιωτηκότητα σας έχει σημασία. Το { -brand-short-name } αποκλείει πλέον τους συνηθισμένους ιχνηλάτες κοινωνικών δικτύων, περιορίζοντας πόσα δεδομένα συλλέγουν για το τι κάνετε στο διαδίκτυο.
 
 ## Enhanced Tracking Protection Milestones
 

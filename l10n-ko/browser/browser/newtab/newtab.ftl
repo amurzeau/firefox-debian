@@ -35,19 +35,19 @@ newtab-topsites-url-input =
 newtab-topsites-url-validation = 유효한 URL이 필요합니다
 newtab-topsites-image-url-label = 사용자 지정 이미지 URL
 newtab-topsites-use-image-link = 사용자 지정 이미지 사용…
-newtab-topsites-image-validation = 이미지를 읽어오지 못했습니다. 다른 URL을 시도해 주세요.
+newtab-topsites-image-validation = 이미지를 읽어오지 못했습니다. 다른 URL을 시도하세요.
 
 ## Top Sites - General form dialog buttons. These are verbs/actions.
 
 newtab-topsites-cancel-button = 취소
-newtab-topsites-delete-history-button = 방문 기록에서 삭제
+newtab-topsites-delete-history-button = 기록에서 삭제
 newtab-topsites-save-button = 저장
 newtab-topsites-preview-button = 미리보기
 newtab-topsites-add-button = 추가
 
 ## Top Sites - Delete history confirmation dialog.
 
-newtab-confirm-delete-history-p1 = 방문 기록에서 이 페이지의 모든 인스턴스를 삭제하시겠습니까?
+newtab-confirm-delete-history-p1 = 정말 기록에서 이 페이지의 모든 인스턴스를 삭제하시겠습니까?
 # "This action" refers to deleting a page from history.
 newtab-confirm-delete-history-p2 = 이 작업은 취소할 수 없습니다.
 
@@ -76,7 +76,7 @@ newtab-menu-open-new-private-window = 새 사생활 보호 창에 열기
 newtab-menu-dismiss = 닫기
 newtab-menu-pin = 고정
 newtab-menu-unpin = 고정 해제
-newtab-menu-delete-history = 방문 기록에서 삭제
+newtab-menu-delete-history = 기록에서 삭제
 newtab-menu-save-to-pocket = { -pocket-brand-name }에 저장
 newtab-menu-delete-pocket = { -pocket-brand-name }에서 삭제
 newtab-menu-archive-pocket = { -pocket-brand-name }에 보관
@@ -86,14 +86,9 @@ newtab-menu-show-privacy-info = 우리의 스폰서와 개인정보 보호
 
 newtab-privacy-modal-button-done = 완료
 newtab-privacy-modal-header = 개인정보는 중요합니다.
-newtab-privacy-modal-paragraph =
-    매력적인 이야기를 정리해서 보여주는 것에 추가 적으로 엄선된 스폰서로 부터
-    관련성높고 철저하게 검토된 콘텐츠를 보여줍니다. 안심하세요. 사용자의 브라우징
-    데이터는 { -brand-product-name }의 사본을 남겨두지 않습니다. — 우리와 스폰서 모두
-    들여다 보지 않습니다.
 newtab-privacy-modal-paragraph-2 =
     매력적인 이야기를 정리해서 보여주는 것 뿐만 아니라, 엄선된 스폰서로 부터
-    관련성 높은 콘텐츠를 보여줍니다. 안심하세요. <strong>사용자의 브라우징 데이터는 
+    관련성 높은 콘텐츠를 보여줍니다. 안심하세요. <strong>사용자의 탐색 데이터는 
     { -brand-product-name }의 개인 사본을 남기지 않습니다</strong> — 저희와 스폰서 모두
     들여다보지 않습니다.
 newtab-privacy-modal-link = 새 탭에서 개인 정보 보호 작동 방식 알아보기
@@ -110,7 +105,7 @@ newtab-menu-bookmark = 북마크
 
 newtab-menu-copy-download-link = 다운로드 링크 복사
 newtab-menu-go-to-download-page = 다운로드 페이지로 이동
-newtab-menu-remove-download = 방문 기록에서 삭제
+newtab-menu-remove-download = 기록에서 삭제
 
 ## Context Menu - Download Menu: These are platform specific strings found in the context menu of an item that has
 ## been downloaded. The intention behind "this action" is that it will show where the downloaded file exists on the file
@@ -169,7 +164,7 @@ newtab-section-header-pocket = { $provider } 추천
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
-newtab-empty-section-highlights = 브라우징을 시작하면 최근 방문하거나 북마크한 좋은 글이나 영상, 페이지를 여기에 보여줍니다.
+newtab-empty-section-highlights = 탐색을 시작하면 최근 방문하거나 북마크한 좋은 글이나 영상, 페이지를 여기에 보여줍니다.
 # Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 # Variables:
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".
@@ -198,4 +193,4 @@ newtab-pocket-cta-text = 좋아하는 이야기를 { -pocket-brand-name }에 저
 ## This message and suggested action link are shown in each section of UI that fails to render.
 
 newtab-error-fallback-info = 이런! 이 콘텐츠를 불러오는데 오류가 발생하였습니다.
-newtab-error-fallback-refresh-link = 페이지를 새로 고침해서 다시 시도해 주세요.
+newtab-error-fallback-refresh-link = 페이지를 새로 고침해서 다시 시도하세요.

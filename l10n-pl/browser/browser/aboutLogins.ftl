@@ -26,6 +26,8 @@ menu =
     .title = Otwórz menu
 # This menuitem is only visible on Windows
 menu-menuitem-import = Importuj hasła…
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = Importuj z innej przeglądarki…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Opcje
@@ -85,10 +87,6 @@ about-logins-login-item-username =
 login-item-copy-username-button-text = Kopiuj
 login-item-copied-username-button-text = Skopiowano
 login-item-password-label = Hasło
-login-item-password-reveal-checkbox-show =
-    .title = Wyświetl hasło
-login-item-password-reveal-checkbox-hide =
-    .title = Ukryj hasło
 login-item-password-reveal-checkbox =
     .aria-label = Widoczne hasło
 login-item-copy-password-button-text = Kopiuj
@@ -99,6 +97,30 @@ login-item-cancel-button = Anuluj
 login-item-time-changed = Ostatnia modyfikacja: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Utworzono: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Ostatnie użycie: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = Potwierdź swoją tożsamość, aby zmienić zachowane dane logowania.
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = zmiana zachowanych danych logowania
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = Potwierdź swoją tożsamość, aby wyświetlić zachowane hasło.
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = wyświetlenie zachowanego hasła
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = Potwierdź swoją tożsamość, aby skopiować zachowane hasło.
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = skopiowanie zachowanego hasła
 
 ## Master Password notification
 

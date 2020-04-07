@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = WebExtension’ların chrome.storage.managed aracılığıyla ulaşabileceği ilkeleri ayarla.
+policy-AppAutoUpdate = Otomatik uygulama güncellemesini aç veya kapat.
 policy-AppUpdateURL = Özel uygulama güncelleme URL'si ayarla.
 policy-Authentication = Destekleyen web siteleri için bütünleşik kimlik doğrulamasını yapılandır.
 policy-BlockAboutAddons = Eklenti yöneticisine (about:addons) erişimi engelle.
@@ -21,6 +22,7 @@ policy-Bookmarks = Yer imleri araç çubuğunda, yer imleri menüsünde veya bun
 policy-CaptivePortal = Kısıtlama portali desteğini aç veya kapat.
 policy-CertificatesDescription = Sertifika ekle veya yerleşik sertifikaları kullan.
 policy-Cookies = Web sitelerinin çerez ayarlamasına izin ver veya verme.
+policy-DisabledCiphers = Şifrelemeleri devre dışı bırak.
 policy-DefaultDownloadDirectory = Varsayılan indirme klasörünü ayarla.
 policy-DisableAppUpdate = Tarayıcının güncellenmesini engelle.
 policy-DisableBuiltinPDFViewer = Dahili { -brand-short-name } PDF göstericisi olan PDF.js'i devre dışı bırak.
@@ -72,7 +74,6 @@ policy-OfferToSaveLoginsDefault = { -brand-short-name } tarayıcısının kullan
 policy-OverrideFirstRunPage = İlk açılış sayfasını değiştir. İlk açılış sayfasını devre dışı bırakmak istiyorsanız bu ilkeyi boş olarak ayarlayın.
 policy-OverridePostUpdatePage = Güncelleme sonrası “Yenilikler” sayfasını değiştir. Güncelleme sonrası sayfasını devre dışı bırakmak istiyorsanız bu ilkeyi boş olarak ayarlayabilirsiniz.
 policy-PasswordManagerEnabled = Parolaları parola yöneticisine kaydetmeyi aç.
-policy-Permissions = Kamera, mikrofon, konum ve bildirim izinlerini yapılandır.
 policy-Permissions2 = Kamera, mikrofon, konum, bildirim ve otomatik oynatma izinlerini yapılandır.
 policy-PopupBlocking = Belirli web sitelerin varsayılan olarak açılır pencere açmasına izin ver.
 policy-Preferences = Bir tercihler alt kümesinin değerini ayarlayıp kilitle.

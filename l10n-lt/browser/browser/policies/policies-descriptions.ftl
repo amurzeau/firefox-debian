@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Nustatykite strategijas, kurias „WebExtensions“ galės pasiekti per „chrome.storage.managed“.
+policy-AppAutoUpdate = Įjungti arba išjungti automatinius programos naujinimus.
 policy-AppUpdateURL = Nustatyti pasirinktinį programos naujinimų URL.
 policy-Authentication = Keisti integruotą autentikaciją ją palaikančioms svetainėms.
 policy-BlockAboutAddons = Blokuoti prieigą prie priedų valdymo (about:addons).
@@ -21,9 +22,11 @@ policy-Bookmarks = Kurti įrašus adresyno juostoje, adresyno meniu, arba nurody
 policy-CaptivePortal = Įjungti arba išjungti pradinio tinklalapio palaikymą.
 policy-CertificatesDescription = Pridėti liudijimus, arba naudoti integruotus.
 policy-Cookies = Leisti ar drausti svetainėms įrašyti slapukus.
+policy-DisabledCiphers = Išjungti šifrus.
 policy-DefaultDownloadDirectory = Nustatyti numatytąjį atsiuntimų aplanką.
 policy-DisableAppUpdate = Neleisti naršyklei diegti naujinimų.
 policy-DisableBuiltinPDFViewer = Išjungti „PDF.js“, į „{ -brand-short-name }“ integruotą PDF failų žiūryklę.
+policy-DisableDefaultBrowserAgent = Neleisti numatytajam naršyklės agentui atlikti jokių veiksmų. Taikoma tik „Windows“; kitos platformos agento neturi.
 policy-DisableDeveloperTools = Blokuoti prieigą prie programuotojų priemonių.
 policy-DisableFeedbackCommands = Išjungti komandas, skirtas siųsti atsiliepimus iš „Žinyno“ meniu („Siųsti atsiliepimą“ ir „Pranešti apie apgaulingą svetainę“).
 policy-DisableFirefoxAccounts = Išjungti „{ -fxaccount-brand-name }“ paremtas paslaugas, įskaitant „Sync“.
@@ -72,7 +75,6 @@ policy-OfferToSaveLoginsDefault = Nustatykite numatytąją reikšme, skirtą lei
 policy-OverrideFirstRunPage = Pakeisti pirmo paleidimo puslapį. Padarykite šią strategiją „blank“, norėdami išjungti pirmojo paleidimo puslapį.
 policy-OverridePostUpdatePage = Pakeisti po atnaujinimų rodomą puslapį „Kas naujo“. Padarykite šią strategiją „blank“, norėdami išjungti po atnaujinimų rodomą puslapį.
 policy-PasswordManagerEnabled = Įjungti slaptažodžių įrašymą į slaptažodžių tvarkytuvę.
-policy-Permissions = Konfigūruoti kameros, mikrofono, buvimo vietos nustatymo ir pranešimų leidimus.
 policy-Permissions2 = Konfigūruoti kameros, mikrofono, buvimo vietos nustatymo, pranešimų ir automatinio grojimo leidimus.
 policy-PopupBlocking = Leisti kai kurioms svetainėms pagal numatymą rodyti iškylančiuosius langus.
 policy-Preferences = Nustatykite ir užfiksuokite nuostatų rinkinio reikšmę.

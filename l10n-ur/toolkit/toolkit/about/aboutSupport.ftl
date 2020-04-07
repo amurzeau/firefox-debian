@@ -30,7 +30,7 @@ app-basics-version = ورژن
 app-basics-build-id = بلڈ-آی ڈی
 app-basics-update-channel = چینل کی تازہ کاری کریں
 app-basics-update-history = سابقات تازہ کریں
-app-basics-show-update-history = تبدیلیوں کی تاریخ دکھائیں
+app-basics-show-update-history = تبدیلیوں کی سابقات دکھائیں
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] پروفائل ڈائریکٹری
@@ -136,6 +136,7 @@ intl-regional-prefs = علاقائی ترجیحات
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
 
+remote-debugging-url = URL
 
 ##
 
@@ -194,6 +195,7 @@ hardware-h264 = ہارڈویئر 264 H کی ضابطہ کشائی
 main-thread-no-omtc = مرکزی دھاگے، OMTC کے بخیر
 yes = ہاں
 no = نہیں
+unknown = نامعلوم
 
 ## The following strings indicate if an API key has been found.
 ## In some development versions, it's expected for some API keys that they are

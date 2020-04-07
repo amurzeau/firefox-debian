@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Pšawidła nastajiś, ku kótarymž WebExtensions maju pśistup pśez chrome.storage.managed.
+policy-AppAutoUpdate = Awtomatiske aktualizacije nałoženjow zmóžniś abo znjemóžniś.
 policy-AppUpdateURL = Swójski aktualizěrowański URL za nałoženje nastajiś.
 policy-Authentication = Integrěrowanu awtentifikaciju za websedła konfigurěrowaś, kótarež ju pódpěraju.
 policy-BlockAboutAddons = Pśistup k zastojnikoju dodankow (about:addons) blokěrowaś.
@@ -21,9 +22,11 @@ policy-Bookmarks = Cytańske znamjenja w symbolowej rědce cytańskich znamjenjo
 policy-CaptivePortal = Kaptiwny portal zmóžniś abo znjemóžniś
 policy-CertificatesDescription = Certifikaty pśidaś abo zatwarjone certifikaty wužywaś.
 policy-Cookies = Websedłam dowóliś abo zakazaś, cookieje składowaś.
+policy-DisabledCiphers = Šyfry znjemóžniś.
 policy-DefaultDownloadDirectory = Nastajśo standardny ześěgnjeński zarědnik.
 policy-DisableAppUpdate = Wobglědowakoju aktualizěrowanje zakazaś.
 policy-DisableBuiltinPDFViewer = PDF.js znjemóžniś, zatwarjony PDF-wobglědowak w { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Zawoborajśo standardnemu agentoju wobglědowaka wuwjedowanje akcijow. To jo jano za Windows k dispoziciji; druge platformy agent njamaju.
 policy-DisableDeveloperTools = Pśistup k wuwijaŕskim rědam blokěrowaś.
 policy-DisableFeedbackCommands = Pśikaze znjemóžniś, kótarež komentary z menija Pomoc sćelu (Pósudk pósłaś a Wobšudnikojske sedło k wěsći daś)
 policy-DisableFirefoxAccounts = Słužby na zakłaźe { -fxaccount-brand-name } znjemóžniś, inkluziwnje Sync.
@@ -72,7 +75,6 @@ policy-OfferToSaveLoginsDefault = Stajśo standardnu gódnotu, kótaraž { -bran
 policy-OverrideFirstRunPage = Bok pśepisaś, kótaryž se pśi prědnom starśe pokazujo. Stajśo toś to pšawidło na prozne, jolic cośo toś ten bok znjemóžniś.
 policy-OverridePostUpdatePage = Bok Nowe funkcije a změny pó aktualizaciji pśepisaś. Stajśo toś to pšawidło na prozne, jolic cośo toś ten bok znjemóžniś.
 policy-PasswordManagerEnabled = Składowanje gronidłow do zastojnika gronidłow zmóžniś.
-policy-Permissions = Pšawa za kameru, mikrofon, stojnišćo a powěźeńki konfigurěrowaś.
 policy-Permissions2 = Pšawa za kameru, mikrofon, stojnišćo, powěźeńki a awtomatiske wótgraśe konfigurěrowaś.
 policy-PopupBlocking = Wěstym websedłam dowóliś, wuskokujuce wokna pó standarźe pokazaś.
 policy-Preferences = Gódnotu za pódsajźbu nastajenjow stajiś a zastajiś

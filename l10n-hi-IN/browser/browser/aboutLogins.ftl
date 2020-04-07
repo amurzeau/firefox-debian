@@ -11,7 +11,7 @@ login-app-promo-subtitle = मुफ्त { -lockwise-brand-name } ऐप प�
 login-app-promo-android =
     .alt = इसे Google Play पर पायें
 login-app-promo-apple =
-    .alt = अप्प स्टोर पर डाउनलोड करें
+    .alt = App Store पर डाउनलोड करें
 login-filter =
     .placeholder = लॉगिन खोजें
 create-login-button = नई लॉगिन बनाएँ
@@ -26,6 +26,8 @@ menu =
     .title = मेन्यू खोलें
 # This menuitem is only visible on Windows
 menu-menuitem-import = पासवर्ड आयात करें...
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = दूसरे ब्राउज़र से आयात करें…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] विकल्प
@@ -65,6 +67,7 @@ about-logins-list-item-breach-icon =
 login-intro-heading = अपने सहेजे गए लॉगिन की खोज़ है? { -sync-brand-short-name } सेट करें।
 about-logins-login-intro-heading-logged-in = कोई संकलित लॉगिन नहीं मिला।
 login-intro-description = यदि आपने अपने लॉगिन को एक अलग डिवाइस पर { -brand-product-name } में सहेजा है, तो उन्हें यहां ऐसे प्राप्त करें:
+login-intro-instruction-fxa = उस उपकरण पर अपना { -fxaccount-brand-name } बनाएं या साइन इन करें जिसपर आपके लॉगिन सहेजे गए हैं
 login-intro-instruction-fxa-settings = सुनिश्चित करें कि आपने { -sync-brand-short-name } सेटिंग्स में लॉगिन चेकबॉक्स का चयन किया है
 about-logins-intro-instruction-help = अधिक मदद के लिए <a data-l10n-name="help-link">{ -lockwise-brand-short-name } सहायता </a> पर जाएं
 about-logins-intro-import = यदि आपके लॉगिन किसी अन्य ब्राउज़र में सहेजे गए हैं, तो आप उन्हें { -lockwise-brand-short-name } में <a data-l10n-name="import-link"> आयात </a> कर सकते हैं
@@ -93,6 +96,30 @@ login-item-cancel-button = रद्द करें
 login-item-time-changed = अंतिम परिवर्तन: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = निर्मित: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = अंतिम बार उपयोग: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = सहेजे गए लॉगिन को संपादित करने के लिए अपनी पहचान सत्यापित करें।
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = सहेजे गए लॉगिन को संपादित करें
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = सहेजे गए पासवर्ड को देखने के लिए अपनी पहचान सत्यापित करें।
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = सहेजे गए पासवर्ड देखें
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = सहेजे गए पासवर्ड को कॉपी करने के लिए अपनी पहचान सत्यापित करें।
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = सहेजे गए पासवर्ड को कॉपी करें
 
 ## Master Password notification
 

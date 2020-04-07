@@ -14,16 +14,18 @@ cookie-tab-title = क्रॉस-साइट ट्रैकिंग कु�
 tracker-tab-title = ट्रैकिंग सामग्री
 fingerprinter-tab-title = फिंगरप्रिंटर
 cryptominer-tab-title = क्रिप्टोमाइनर
+mobile-app-links = <a data-l10n-name="android-mobile-inline-link">Android</a> और <a data-l10n-name="ios-mobile-inline-link">iOS</a> के लिए { -brand-product-name } ब्राउज़र
 lockwise-title = पासवर्ड फिर कभी न भूलें
 lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-header-content = { -lockwise-brand-name } आपके पासवर्ड को आपके ब्राउज़र में सुरक्षित रूप से संग्रहीत करता है।
 lockwise-header-content-logged-in = अपने पासवर्ड को अपने सभी उपकरणों पर सुरक्षापूर्ण तरीके से संग्रहित और सिंक करें।
 protection-report-view-logins-button = लॉगिन देखें
     .title = सहेजे गए लॉगिन पर जाएँ
+lockwise-mobile-app-title = हर जगह अपना पासवर्ड लेकर चलें
+lockwise-no-logins-card-content = किसी भी उपकरण पर { -brand-short-name } में सहेजे गए पासवर्ड का उपयोग करें।
+lockwise-app-links = <a data-l10n-name="lockwise-android-inline-link">Android</a> और <a data-l10n-name="lockwise-ios-inline-link">iOS</a> के लिए { -lockwise-brand-name }
 turn-on-sync = { -sync-brand-short-name } चालू करें…
     .title = सिंक वरीयताओं पर जाएँ
-manage-devices = उपकरणों को प्रबंधित करें
-lockwise-sync-not-syncing-devices = अन्य उपकरणों के लिए सिंक नही हो रहा है
 manage-connected-devices = उपकरणों को प्रबंधित करें…
 # Variables:
 #   $count (Number) - Number of devices connected with sync.
@@ -52,6 +54,7 @@ info-known-breaches-found =
         [one] ज्ञात डेटा विच्छेद ने आपकी जानकारी को उजागर कर दिया है
        *[other] ज्ञात डेटा विच्छेदों ने आपकी जानकारी को उजागर कर दिया है
     }
+full-report-link = <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a> पर पूरी रिपोर्ट दिखाएं
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.
@@ -60,3 +63,24 @@ info-known-breaches-found =
 ##   $count (Number) - Number of specific trackers
 ##   $percentage (Number) - Percentage this type of tracker contributes to the whole graph
 
+bar-tooltip-social =
+    .title = सोशल मीडिया ट्रैकर
+    .aria-label =
+        { $count ->
+            [one] { $count } सोशल मीडिया ट्रैकर ({ $percentage }%)
+           *[other] { $count } सोशल मीडिया ट्रैकर ({ $percentage }%)
+        }
+bar-tooltip-fingerprinter =
+    .title = फिंगरप्रिंटर
+    .aria-label =
+        { $count ->
+            [one] { $count } फिंगरप्रिंटर ({ $percentage }%)
+           *[other] { $count } फिंगरप्रिंटर ({ $percentage }%)
+        }
+bar-tooltip-cryptominer =
+    .title = क्रिप्टोमाइनर
+    .aria-label =
+        { $count ->
+            [one] { $count } क्रिप्टोमाइनर ({ $percentage }%)
+           *[other] { $count } क्रिप्टोमाइनर ({ $percentage }%)
+        }

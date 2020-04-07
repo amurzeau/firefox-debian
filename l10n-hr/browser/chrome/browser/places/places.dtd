@@ -8,7 +8,7 @@
 <!ENTITY places.library.height "500">
 <!ENTITY organize.label        "Organizacija">
 <!ENTITY organize.accesskey    "O">
-<!ENTITY organize.tooltip      "Organizirajte svoje zabilješke">
+<!ENTITY organize.tooltip      "Organiziraj svoje zabilješke">
 
 <!ENTITY file.close.label               "Zatvori">
 <!ENTITY file.close.accesskey           "Z">
@@ -18,9 +18,9 @@
 <!ENTITY views.tooltip                  "Promijeni prikaz">
 <!ENTITY view.columns.label             "Prikaži stupce">
 <!ENTITY view.columns.accesskey         "s">
-<!ENTITY view.sort.label                "Sortiraj">
+<!ENTITY view.sort.label                "Poredaj">
 <!ENTITY view.sort.accesskey            "S">
-<!ENTITY view.unsorted.label            "Nesortirano">
+<!ENTITY view.unsorted.label            "Bez određenog poretka">
 <!ENTITY view.unsorted.accesskey        "N">
 <!ENTITY view.sortAscending.label       "A > Z poredak">
 <!ENTITY view.sortAscending.accesskey   "A">
@@ -58,8 +58,8 @@
 <!ENTITY cmd.properties.label      "Svojstva">
 <!ENTITY cmd.properties.accesskey  "S">
 
-<!ENTITY cmd.sortby_name.label              "Sortiraj prema imenu">
-<!ENTITY cmd.sortby_name.accesskey          "S">
+<!ENTITY cmd.sortby_name.label              "Poredaj po imenu">
+<!ENTITY cmd.sortby_name.accesskey          "P">
 <!ENTITY cmd.context_sortby_name.accesskey  "r">
 
 <!ENTITY cmd.new_bookmark.label            "Nova zabilješka…">
@@ -91,7 +91,7 @@
 
 <!ENTITY forwardButton.tooltip  "Idi naprijed">
 
-<!ENTITY detailsPane.selectAnItemText.description "Odaberite stavku za pregled i ureživanje njenih svojstava">
+<!ENTITY detailsPane.selectAnItemText.description "Odaberi stavku za pregled i uređivanje njenih svojstava">
 
 <!ENTITY view.label               "Prikaz">
 <!ENTITY view.accesskey           "i">

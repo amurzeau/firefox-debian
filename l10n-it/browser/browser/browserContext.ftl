@@ -62,9 +62,6 @@ toolbar-button-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-page =
-    .aria-label = Aggiungi pagina ai segnalibri
-    .accesskey = u
 main-context-menu-bookmark-add =
     .aria-label = Aggiungi pagina ai segnalibri
     .accesskey = u
@@ -147,7 +144,7 @@ main-context-menu-media-play-speed =
     .accesskey = z
 main-context-menu-media-play-speed-slow =
     .label = Rallentata (0.5×)
-    .accesskey = a
+    .accesskey = R
 main-context-menu-media-play-speed-normal =
     .label = Normale
     .accesskey = N

@@ -10,7 +10,7 @@
 <!ENTITY connectionFailure.title "Failed to Connect">
 <!ENTITY connectionFailure.longDesc "<p>Though the site seems valid, the browser was unable to establish a connection.</p><ul><li>Could the site be temporarily unavailable? Try again later.</li><li>Are you unable to browse other sites?  Check the computer's network connection.</li><li>Is your computer or network protected by a firewall or proxy? Incorrect settings can interfere with Web browsing.</li></ul>">
 
-<!ENTITY deniedPortAccess.title "Port Restricted for Security Reasons">
+<!ENTITY deniedPortAccess.title "Pòrt restrench per de rasons de seguretat.">
 <!ENTITY deniedPortAccess.longDesc "<p>L'adreça demandada indica un pòrt (per ex.<q>mozilla.org:80</q> pel pòrt 80 sus mozilla.org) qu'es normalament utilizat per d'<em>autres</em> usatges que la navegacion sul Web. Lo navegador a anullat la requèsta per vòstra proteccion e vòstra seguretat.</p>">
 
 <!ENTITY dnsNotFound.title "Adreça introbabla">
@@ -22,8 +22,8 @@
 <!ENTITY fileAccessDenied.title "L’accès al fichièr es estat refusat">
 <!ENTITY fileAccessDenied.longDesc "<ul><li>Benlèu es estat suprimit, desplaçat o las permissions associadas al fichièr permeton pas d'i accedir.</li></ul>">
 
-<!ENTITY generic.title "Cannot Complete Request">
-<!ENTITY generic.longDesc "<p>Additional information about this problem or error is currently unavailable.</p>">
+<!ENTITY generic.title "Impossible de completar la requèsta">
+<!ENTITY generic.longDesc "<p>I a pas cap d‘informacion disponibla actualament tocant aqueste problèma o error.</p>">
 
 <!ENTITY malformedURI.title "Adreça invalida">
 <!ENTITY malformedURI.longDesc "<p>The provided address is not in a recognized format. Please check the location bar for mistakes and try again.</p>">
@@ -76,6 +76,8 @@
 <!ENTITY cspBlocked.title "Blocat per Content Security Policy">
 <!ENTITY cspBlocked.longDesc "<p>Lo navegador a empachat lo cargament d'aquesta pagina d'aqueste biais perque la pagina a una estrategia de seguretat de contengut que lo permet pas.</p>">
 
+<!ENTITY xfoBlocked.title "Blocat per la politica X-Frame-Options">
+<!ENTITY xfoBlocked.longDesc "<p>Lo navegador a empachat lo cargament d'aquesta pagina dins aqueste contèxte perque la pagina a una estrategia X-Frame-Options que lo permet pas.</p>">
 
 <!ENTITY corruptedContentErrorv2.title "Error deguda a un contengut corromput">
 <!ENTITY corruptedContentErrorv2.longDesc "<p>La pagina qu'ensajatz de veire pòt pas èsser afichada perque una error dins la transmission de donadas es estada detectada.</p><ul><li>Contactatz los proprietaris del site Web per los assabentar d'aqueste problèma.</li></ul>">
@@ -91,3 +93,4 @@
 <!ENTITY blockedByPolicy.title "Pagina blocada">
 
 <!ENTITY networkProtocolError.title "Error de protocòl ret">
+<!ENTITY networkProtocolError.longDesc "<p>La pagina que volètz veire pòt pas èsser afichada a causa d’una error de protocòl ret detectada.</p><ul><li>Mercés de contactar los proprietaris del site web per los informar d’aqueste problèma.</li></ul>">

@@ -26,6 +26,8 @@ menu =
     .title = Avaa valikko
 # This menuitem is only visible on Windows
 menu-menuitem-import = Tuo salasanoja…
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = Tuo toisesta selaimesta…
 menu-menuitem-preferences = Asetukset
 about-logins-menu-menuitem-help = Ohje
 menu-menuitem-android-app = { -lockwise-brand-short-name } Androidille
@@ -80,10 +82,6 @@ about-logins-login-item-username =
 login-item-copy-username-button-text = Kopioi
 login-item-copied-username-button-text = Kopioitu!
 login-item-password-label = Salasana
-login-item-password-reveal-checkbox-show =
-    .title = Näytä salasana
-login-item-password-reveal-checkbox-hide =
-    .title = Piilota salasana
 login-item-password-reveal-checkbox =
     .aria-label = Näytä salasana
 login-item-copy-password-button-text = Kopioi
@@ -94,6 +92,24 @@ login-item-cancel-button = Peruuta
 login-item-time-changed = Viimeksi muokattu: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Luotu: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Viimeksi käytetty: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = muokata tallennettua kirjautumistietoa
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = paljastaa tallennetun salasanan
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = kopioida tallennetun salasanan
 
 ## Master Password notification
 

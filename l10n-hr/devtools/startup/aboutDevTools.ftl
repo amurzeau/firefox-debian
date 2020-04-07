@@ -6,7 +6,7 @@ head-title = O programerskim alatima
 enable-title = Omogući programerske alate Firefoxa
 enable-inspect-element-title = Omogući programerske alate Firefoxa za korištenje alata „Ispitaj element”
 enable-inspect-element-message = Istraži i uredi HTML i CSS pomoću Inspektora u programerskim alatima.
-enable-about-debugging-message = Razvijaj i ispravljaj greške Web proširenja, web workere, workere usluga i još mnogo toga pomoću Firefoxovih programerskih alata.
+enable-about-debugging-message = Razvijaj i ispravljaj greške Web proširenja, internetske radne procese, radne procese usluga i još mnogo toga pomoću Firefoxovih programerskih alata.
 enable-key-shortcut-message = Aktivirao/la si prečac programerskih alata. Ako je to bila greška, možeš zatvoriti ovu karticu.
 enable-menu-message = Usavrši HTML, CSS i JavaScript tvoje web stranice pomoću alata poput Inspektora i Debagera.
 enable-common-message = Programerski alati Firefoxa su standardno onemogućeni, jer to povećava kontrolu nad preglednikom.
@@ -36,10 +36,10 @@ features-network-title = Mreža
 features-network-desc = Pregledaj mrežne zahtjeve koji mogu usporiti ili blokirati tvoju stranicu. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-storage-title = Spremište
 features-storage-desc = Dodaj, mijenjaj i ukloni predmemoriju, kolačiće, baze podataka i podatke sesija. <a data-l10n-name="learn-more">{ features-learn-more }</a>
-features-responsive-title = Responzivni dizajn
+features-responsive-title = Prilagođen izgled
 features-responsive-desc = Testiraj stranice na emuliranim uređajima u tvom pregledniku. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-visual-editing-title = Vizualno uređivanje
-features-visual-editing-desc = Justiraj animacije, poravnanje i odmake. <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-visual-editing-desc = Podesi animacije, poravnanje i odmake. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-performance-title = Performansa
 features-performance-desc = Deblokiraj problematična mjesta, pojednostavi procese, optimiraj sredstva. <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-memory-title = Memorija

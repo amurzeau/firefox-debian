@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Ke'ajikib'a' taq na'ojil richin chi ri WebExtensions yetikïr ye'ok rik'in chrome.managed.
+policy-AppAutoUpdate = Ketzij o kechup ri ruyonil kik'exoj taq chokoy.
 policy-AppUpdateURL = Tiya' jun ichinan URL richin nik'ex ri chokoy.
 policy-Authentication = Tib'an runuk'ulem ri chijun jikib'an pa taq ajk'amaya'l ruxaq nikiya' q'ij.
 policy-BlockAboutAddons = Tiq'at rokem ri Runuk'samajel Chokoy (about:addons).
@@ -21,9 +22,11 @@ policy-Bookmarks = Ketz'uk taq yaketal pa ri Rukatz'ik yaketal. pa ri Ruk'utsama
 policy-CaptivePortal = Titz'ij o tichup ri rutob'al ri chapon portal.
 policy-CertificatesDescription = Ketz'aqatisäx taq iqitzijib'äl o ke'okisäx tz'aqatisan taq iqitzijib'äl.
 policy-Cookies = Niya' o man niya' ta q'ij chi ke ri ajk'amaya'l taq ruxaq richin nikijikib'a' taq kaxlanwäy.
+policy-DisabledCiphers = Kechup ewan rusik'ixik.
 policy-DefaultDownloadDirectory = Tijikib'äx ri kimolwuj qasanïk kan k'o wi.
 policy-DisableAppUpdate = Man tiya' q'ij richin nuk'ëx ri' ri okik'amaya'l.
 policy-DisableBuiltinPDFViewer = Tichup PDF.js, ri tz'etöy PDF pa { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Nutz'ët chi ri b'anel okem pa k'amaya'l k'o tisamäj. Xa xe okel pa Windows; juley chi taq nuk'uche'el manjun kib'anel.
 policy-DisableDeveloperTools = Tiq'at okem pa ri kisamajib'al b'anonela'.
 policy-DisableFeedbackCommands = Kechup taq nuk'uj richin yetaq taq tzijol pa ri ruk'utsamaj Tob'äl (Titaq Tzijol chuqa' Kesujüx Q'olonel taq Ruxaq).
 policy-DisableFirefoxAccounts = Tichup { -fxaccount-brand-name } samaj ruxe'el, chuqa' Sync.
@@ -72,7 +75,6 @@ policy-OfferToSaveLoginsDefault = Tijikib'äx ri retal k'o wi richin niya' q'ij 
 policy-OverrideFirstRunPage = Tiyuj ri nab'ey ruxaq rub'anikil. Tiya' pa säq re na'ojil re' we nawajo' nachüp ri nab'ey ruxaq rub'anik.
 policy-OverridePostUpdatePage = Nayüj ri ruxaq "K'ak'a' taq tzijol" chi rij ri k'exoj. Tiya' pa säq re na'ojil re' we nawajo' nachüp re ruxaq chi rij ri k'exoj.
 policy-PasswordManagerEnabled = Titzij keyak ewan taq tzij pa ri kinuk'samajixik ewan taq tzij.
-policy-Permissions = Tib'an kinuk'ulem ya'oj taq q'ij kichin elesäy wachib'äl, q'asäy ch'ab'äl, k'ojlib'äl chuqa' taq rutzijol.
 policy-Permissions2 = Tib'an kinuk'ulem ya'oj taq q'ij kichin elesäy wachib'äl, q'asäy ch'ab'äl, k'ojlib'äl, taq rutzijol chuqa' ruyonil nitzij.
 policy-PopupBlocking = Tiya' q'ij chi jujun taq ajk'amaya'l ruxaq kekik'utu' elenel taq tzuwäch achi'el e k'o wi.
 policy-Preferences = Tajikib'a' chuqa' taq'ata' ri rejqalem jun rachmolaj ajowanïk.

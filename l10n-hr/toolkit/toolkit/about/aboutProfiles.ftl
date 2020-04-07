@@ -3,9 +3,9 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 profiles-title = O profilima
-profiles-subtitle = Ova stranica vam pomaže kod upravljanja profilima. Svaki profil je zasebna cjelina koja sadrži zasebnu povijest, zabilješke, postavke i dodatke.
+profiles-subtitle = Ova stranica pomaže pri upravljanju profilima. Svaki profil je zasebna cjelina koja sadrži zasebnu povijest, zabilješke, postavke i dodatke.
 profiles-create = Stvori novi profil
-profiles-restart-title = Ponovo pokreni
+profiles-restart-title = Pokreni ponovo
 profiles-restart-in-safe-mode = Ponovo pokreni s isključenim dodacima …
 profiles-restart-normal = Ponovo pokreni normalno …
 profiles-conflict = Druga { -brand-product-name } kopija je napravila izmjene u profilu. Trebate ponovo pokrenuti { -brand-short-name } prije nego li napravite nove izmjene.
@@ -39,10 +39,10 @@ profiles-rename-profile-title = Preimenuj profil
 # Variables:
 #   $name (String) - Name of the profile
 profiles-rename-profile = Preimenuj profil { $name }
-profiles-invalid-profile-name-title = Neispravan naziv profila
+profiles-invalid-profile-name-title = Neispravno ime profila
 # Variables:
 #   $name (String) - Name of the profile
-profiles-invalid-profile-name = Naziv profila "{ $name }" nije dopušten.
+profiles-invalid-profile-name = Ime profila „{ $name }” nije dopušteno.
 profiles-delete-profile-title = Obriši profil
 # Variables:
 #   $dir (String) - Path to be displayed

@@ -49,6 +49,11 @@ serviceworker-worker-status-registering = Inscripcion
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = Vos cal inscriure un Service Worker per inspectar aquò aquí. <a>Ne saber mai</a>
+# Suggestion to check for errors in the Console to investigate why a service worker is not
+# registered. Clicking on the link opens the webconsole.
+serviceworker-empty-suggestions-console = Recercar las error dins la consòla. <a>Dobrir la consòla</a>
+# Header for the Manifest page when we have an actual manifest
+manifest-view-header = Manifest d’aplicacion
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = Errors e avises
 # Header for the Identity section of Manifest inspection displayed in the application panel.
@@ -64,16 +69,30 @@ manifest-loaded-ok = Manifèst cargat.
 # Text displayed as a caption when there has been an error while trying to
 # load the manifest
 manifest-loaded-error = S’es producha una error en cargar lo manifèst :
+# Text displayed as an error when there has been a Firefox DevTools error while
+# trying to load the manifest
+manifest-loaded-devtools-error = Error de las aisinas de desvolopament de Firefox
 # Text displayed when the page has no manifest available
 manifest-non-existing = Cap de manifèst pas trobat a inspectar.
 # Text displayed as the alt attribute for <img> tags showing the icons in the
 # manifest.
 manifest-icon-img =
     .alt = Icòna
+# Text displayed as the title attribute for <img> tags showing the icons in the
+# manifest. `$sizes` is a user-dependent string that has been parsed as a
+# space-separated list of `<width>x<height>` sizes or the keyword `any`.
+manifest-icon-img-title = Icòna amb talhas : { $sizes }
+# Text displayed as the title attribute for <img> tags showing the icons in the
+# manifest, in case there's no icon size specified by the user
+manifest-icon-img-title-no-sizes = Icòna sens talha especificada
 # Sidebar navigation item for Manifest sidebar item section
 sidebar-item-manifest = Manifèst
     .alt = Icòna del manifèst
     .title = Manifèst
+# Sidebar navigation item for Service Workers sidebar item section
+sidebar-item-service-workers = Service Workers
+    .alt = Icòna dels Service Workers
+    .title = Service Workers
 # Text for the ALT and TITLE attributes of the warning icon
 icon-warning =
     .alt = Icòna d’avís

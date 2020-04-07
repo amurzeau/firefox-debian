@@ -303,7 +303,7 @@ shortcuts-card-expand-button =
     }
 shortcuts-card-collapse-button = Monstrar minus
 go-back-button =
-    .tooltiptext = Regreder
+    .tooltiptext = Retornar
 
 ## Recommended add-ons page
 
@@ -388,15 +388,15 @@ addon-name-disabled = { $name } (disactivate)
 #   $numberOfReviews (number) - The number of reviews received
 addon-detail-reviews-link =
     { $numberOfReviews ->
-        [one] { $numberOfReviews } revision
-       *[other] { $numberOfReviews } revisiones
+        [one] { $numberOfReviews } recension
+       *[other] { $numberOfReviews } recensiones
     }
 
 ## Pending uninstall message bar
 
 # Variables:
 #   $addon (string) - Name of the add-on
-pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> ha essite eliminate.
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> ha essite removite.
 pending-uninstall-undo-button = Disfacer
 addon-detail-updates-label = Actualisation automatic
 addon-detail-updates-radio-default = Predefinite

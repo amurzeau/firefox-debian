@@ -11,15 +11,18 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = ऐसी नीतियां बनाएं, जिससे WebExtensions chrome.storage.managed के द्वारा पहुँच सके।
+policy-AppAutoUpdate = स्वतः ऐप्लिकेशन अपडेट को सक्षम या अक्षम करें।
 policy-AppUpdateURL = मनपसंद ऐप अपडेट URL सेट करें।
 policy-Authentication = जो वेबसाइटें इसका समर्थन करती हैं उनके लिए एकीकृत प्रमाणीकरण विन्यस्त करें।
 policy-BlockAboutAddons = ऐड-ऑन प्रबंधक तक पहुँच को ब्लॉक करें (परिचय: ऐड-ऑन)।
 policy-BlockAboutConfig = about:config पृष्ठ तक के पहुँच को अवरुद्ध करें।
 policy-BlockAboutProfiles = about:profiles पृष्ठ तक के पहुँच को अवरुद्ध करें।
 policy-BlockAboutSupport = about:support पृष्ठ तक के पहुँच को अवरुद्ध करें।
+policy-Bookmarks = बुकमार्क टूलबार, बुकमार्क मेन्यू, या उनके अंदर एक निर्दिष्ट फोल्डर में बुकमार्क बनाएं।
 policy-CaptivePortal = कैप्टिव पोर्टल समर्थन को सक्षम या अक्षम करें।
 policy-CertificatesDescription = प्रमाण पत्र जोड़ें या निर्मित प्रमाण पत्र का उपयोग करें।
 policy-Cookies = कुकीज़ स्थापित करने के लिए वेबसाइटों को अनुमति दें या इनकार करें.
+policy-DisabledCiphers = साइफर को अक्षम करें।
 policy-DefaultDownloadDirectory = डिफ़ॉल्ट डाउनलोड निर्देशिका सेट करें।
 policy-DisableAppUpdate = ब्राउज़र को अपडेट होने से रोकें‌‌‍।
 policy-DisableBuiltinPDFViewer = PDF.js, { -brand-short-name } में पहले से निर्मित PDF व्यूअर को अक्षम करें.
@@ -30,8 +33,10 @@ policy-DisableFirefoxScreenshots = Firefox स्क्रीनशॉट सु
 policy-DisableForgetButton = भूल बटन तक पहुँच को रोकें।
 policy-DisableFormHistory = खोज और फ़ॉर्म इतिहास याद न रखें।
 policy-DisableMasterPasswordCreation = यदि सही है, तो एक मास्टर पासवर्ड नहीं बनाया जा सकता है.
+policy-DisablePasswordReveal = सहेजे गए लॉगिन में पासवर्ड को प्रदर्शित होने की अनुमति ना दें।
 policy-DisablePocket = वेबपृष्ठों को Pocket में सहेजने के लिए सुविधा को अक्षम करें।
 policy-DisablePrivateBrowsing = निजी ब्राउजिंग अक्षम करें।
+policy-DisableProfileImport = किसी अन्य ब्राउज़र से डेटा आयात करने के लिए मेन्यू कमांड को निष्क्रिय करें।
 policy-DisableSystemAddonUpdate = सिस्टम ऐड-ऑन को इंस्टॉल करने और अपडेट करने से ब्राउज़र को रोकें।
 policy-DisableTelemetry = Telemetry बंद करें।
 policy-DisplayBookmarksToolbar = डिफ़ॉल्ट रूप से बुकमार्क टूलबार प्रदर्शित करें।
@@ -55,6 +60,8 @@ policy-PromptForDownloadLocation = पूछें कि डाउनलोड 
 policy-Proxy = प्रॉक्सी सेटिंग्स कॉन्फ़िगर करें।
 policy-SanitizeOnShutdown2 = शटडाउन पर स्पष्ट नेविगेशन डेटा।
 policy-SearchSuggestEnabled = खोज सुझावों को सक्षम या अक्षम करें।
+# For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
+policy-SecurityDevices = PKCS #11 मॉड्यूल इंस्टॉल करें।
 policy-SSLVersionMax = सबसे अधिक SSL संस्करण देखे।
 policy-SSLVersionMin = सबसे कम SSL संस्करण देखे।
 policy-SupportMenu = मदद मेनू में एक कस्टम समर्थन मेनू आइटम जोड़ें।

@@ -29,7 +29,7 @@ reset-password-text = Ako poništiš glavnu lozinku, zaboravit će se sve spreml
 download-cert-window =
     .title = Preuzimanje certifikata
     .style = width: 46em
-download-cert-message = Upitani ste za vjerovanje novoj agenciji certifikata (CA).
+download-cert-message = Novo certifikacijsko tijelo (CA) traži da mu se vjeruje.
 download-cert-trust-ssl =
     .label = Vjeruj ovom CA-u za identifikaciju web stranica.
 download-cert-trust-email =
@@ -62,5 +62,5 @@ set-password-reminder = Važno: ako zaboravite svoju sigurnosnu kopiju lozinke c
 
 protected-auth-window =
     .title = Zaštićena token autentifikacija
-protected-auth-msg = Molim, autentificirajte se tokenu. Metoda autentifikacije ovisi o tipu vašeg tokena.
+protected-auth-msg = Autentificiraj se tokenu. Metoda autentifikacije ovisi o vrsti tvog tokena.
 protected-auth-token = Token:

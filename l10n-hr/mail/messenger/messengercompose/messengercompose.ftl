@@ -16,3 +16,15 @@ address-input-type =
         [few] { $type } polje za unos s { $count } adrese
        *[other] { $type } polje za unos s { $count } adresa
     }
+pill-action-edit =
+    .label = Uredi adresu
+    .accesskey = e
+pill-action-move-to =
+    .label = Premjesti se na Prima
+    .accesskey = t
+pill-action-move-cc =
+    .label = Premjesti se na Cc
+    .accesskey = c
+pill-action-move-bcc =
+    .label = Premjesti se na Bcc
+    .accesskey = B

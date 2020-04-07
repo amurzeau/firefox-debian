@@ -52,6 +52,11 @@ fingerprinter-tab-title = Fingerprinters
 fingerprinter-tab-content = Fingerprinters sammelje ynstellingen fan jo browser en kompjûter om in profyl fan jo te meitsjen. Mei help fan dizze digitale fingerôfdruk kinne se jo op ferskate websites folgje. <a data-l10n-name="learn-more-link">Mear ynfo</a>
 cryptominer-tab-title = Cryptominers
 cryptominer-tab-content = Cryptominers brûke de rekkenkrêft fan jo systeem om digitale faluta te generearjen. Cryptominer-scripts lûke jo batterij leech, fertraagje jo kompjûter en kinne jo enerzjyrekkening omheech jeie. <a data-l10n-name="learn-more-link">Mear ynfo</a>
+protections-close-button =
+    .aria-label = Slute
+mobile-app-title = Blokkearje advertinsjetrackers op mear apparaten
+mobile-app-card-content = Brûk de mobile browser mei ynboude beskerming tsjin advertinsjetrackers.
+mobile-app-links = { -brand-product-name } Browser foar <a data-l10n-name="android-mobile-inline-link">Android</a> en <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Ferjit nea mear in wachtwurd
 lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-header-content = { -lockwise-brand-name } bewarret jo wachtwurden feilich yn jo browser.
@@ -59,6 +64,9 @@ lockwise-header-content-logged-in = Bewarje en syngronisearje jo wachtwurden fei
 protection-report-view-logins-button = Oanmeldingen werjaan
     .title = Nei bewarre oanmeldingen
 lockwise-no-logins-content = Download de <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a>-app om jo wachtwurden oeral mei hinne te nimmen.
+lockwise-mobile-app-title = Nim jo wachtwurden oeral mei hinne
+lockwise-no-logins-card-content = Brûk yn { -brand-short-name } bewarre wachtwurden op elk apparaat.
+lockwise-app-links = { -lockwise-brand-name } foar <a data-l10n-name="lockwise-android-inline-link">Android</a> en <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

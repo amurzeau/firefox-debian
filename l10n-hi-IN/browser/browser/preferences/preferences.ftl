@@ -80,12 +80,18 @@ extension-controlled-homepage-override = एक्सटेंशन, <img data-
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = एक्सटेंशन, <img data-l10n-name="icon"/> { $name }, आपके नये टैब के पृष्ठ को नियंत्रित कर रहा है.
+# This string is shown to notify the user that their notifications permission
+# is being controlled by an extension.
+extension-controlled-web-notifications = एक एक्सटेंशन, <img data-l10n-name="icon"/> { $name }, इस सेटिंग को नियंत्रित कर रहा है।
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = एक्सटेंशन, <img data-l10n-name="icon"/> { $name }, आपके डिफ़ॉल्ट खोज इंजन को नियंत्रित कर रहा है.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
 extension-controlled-privacy-containers = एक्सटेंशन, <img data-l10n-name="icon"/> { $name }, को कंटेनर टैब की आवश्यकता है.
+# This string is shown to notify the user that their content blocking "All Detected Trackers"
+# preferences are being controlled by an extension.
+extension-controlled-websites-content-blocking-all-trackers = एक एक्सटेंशन, <img data-l10n-name="icon"/> { $name }, इस सेटिंग को नियंत्रित कर रहा है।
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = एक्सटेंशन, <img data-l10n-name="icon"/> { $name }, यह नियंत्रित कर रहा है { -brand-short-name } कैसे इंटरनेट से जुड़ेगा.
@@ -114,6 +120,7 @@ startup-header = आरंभन
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = { -brand-short-name } और Firefox को एक ही समय में चलने के लिए स्वीकारें
+use-firefox-sync = सलाह: यह अलग प्रोफाइल का उपयोग करता है। उनके बीच डेटा साझा करने के लिए { -sync-brand-short-name } का उपयोग करें।
 get-started-not-logged-in = { -sync-brand-short-name } में साइन इन करें…
 get-started-configured = { -sync-brand-short-name } वरीयताएँ खोलें
 always-check-default =
@@ -194,6 +201,10 @@ advanced-fonts =
 colors-settings =
     .label = रंग...
     .accesskey = C
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = ज़ूम
+preferences-default-zoom = तयशुदा ज़ूम
+    .accesskey = z
 preferences-default-zoom-value =
     .label = { $percentage }%
 language-header = भाषा
@@ -491,6 +502,8 @@ search-bar-shown =
     .label = औज़ार पट्टी में खोज पट्टी जोड़े
 search-engine-default-header = तयशुदा खोज इंजिन
 search-engine-default-desc = पता पट्टी और खोज पट्टी में उपयोग करने के लिए डिफ़ॉल्ट खोज इंजन का चयन करें.
+search-engine-default-desc-2 = यह पता पट्टी और खोज पट्टी में आपका तयशुदा खोज इंजन है। आप इसे किसी भी समय बदल सकते हैं।
+search-engine-default-private-desc-2 = केवल निजी विंडोज़ के लिए एक अलग तयशुदा खोज एंजिन चुनें
 search-separate-default-engine =
     .label = इस खोज इंजन का उपयोग निजी विंडोज में करें
     .accesskey = U
@@ -536,10 +549,19 @@ search-keyword-warning-bookmark = आपने एक बीजशब्द च�
 ## Containers Section
 
 containers-back-link = « वापस जाओ
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] वापस विकल्प पर जाएं
+           *[other] वापस वरीयताएं पर जाएं
+        }
 containers-header = पात्र टैब
 containers-add-button =
     .label = नया पात्र जोड़े
     .accesskey = A
+containers-new-tab-check =
+    .label = प्रत्येक नए टैब के लिए एक कंटेनर का चयन करें
+    .accesskey = S
 containers-preferences-button =
     .label = प्राथमिकताएँ
 containers-remove-button =
@@ -603,9 +625,14 @@ sync-signedin-settings-desc = चुने, { -brand-short-name } का उप�
 
 ## Sync section - enabling or disabling sync.
 
+prefs-sync-now =
+    .labelnotsyncing = अभी सिंक करें
+    .accesskeynotsyncing = N
+    .labelsyncing = सिंक हो रहा है…
 
 ## The list of things currently syncing.
 
+sync-currently-syncing-heading = आप वर्तमान में इन चीज़ों को सिंक कर रहे हैं:
 sync-currently-syncing-bookmarks = बुकमार्क्स
 sync-currently-syncing-history = इतिहास
 sync-currently-syncing-tabs = टैबों को खोलें
@@ -714,6 +741,17 @@ forms-master-pw-change =
 forms-master-pw-fips-title = आप अभी FIPS मोड में हैं. FIPS के लिये गैर रिक्त मुख्य कूटशब्द चाहिए.
 forms-master-pw-fips-desc = कूटशब्द बदलाव विफल
 
+## OS Authentication dialog
+
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message = मास्टर पासवर्ड बनाने के लिए अपनी पहचान सत्यापित करें।
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = एक मास्टर पासवर्ड बनाएं
+master-password-os-auth-dialog-caption = { -brand-full-name }
+
 ## Privacy Section - History
 
 history-header = इतिहास
@@ -773,6 +811,8 @@ sitedata-allow-cookies-option =
 sitedata-disallow-cookies-option =
     .label = कुकीज़ और साइट डेटा प्रतिबंधित करें
     .accesskey = B
+sitedata-option-block-cross-site-trackers =
+    .label = क्रॉस-साइट ट्रैकर
 sitedata-clear =
     .label = डेटा मिटायें...
     .accesskey = I
@@ -891,6 +931,7 @@ permissions-location = स्थान
 permissions-location-settings =
     .label = सेटिंग…
     .accesskey = t
+permissions-xr = Virtual Reality
 permissions-xr-settings =
     .label = सेटिंग…
     .accesskey = t

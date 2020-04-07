@@ -9,10 +9,10 @@ Subject: Bug 1621518 - Fix build errors with -Werror=format-security with GCC.
  2 files changed, 15 insertions(+)
 
 diff --git a/dom/canvas/ClientWebGLContext.h b/dom/canvas/ClientWebGLContext.h
-index 192043662de..14207c9d6f6 100644
+index 2477faee8c0..ea24feb480a 100644
 --- a/dom/canvas/ClientWebGLContext.h
 +++ b/dom/canvas/ClientWebGLContext.h
-@@ -825,10 +825,15 @@ class ClientWebGLContext final : public nsICanvasRenderingContextInternal,
+@@ -826,10 +826,15 @@ class ClientWebGLContext final : public nsICanvasRenderingContextInternal,
  #ifdef __clang__
  #  pragma clang diagnostic push
  #  pragma clang diagnostic ignored "-Wformat-security"
@@ -29,10 +29,10 @@ index 192043662de..14207c9d6f6 100644
  
      EnqueueErrorImpl(error, text);
 diff --git a/dom/canvas/WebGLContext.h b/dom/canvas/WebGLContext.h
-index f2c0e4dfe2a..c56b1a77531 100644
+index 5418722976e..988d80ab2c4 100644
 --- a/dom/canvas/WebGLContext.h
 +++ b/dom/canvas/WebGLContext.h
-@@ -439,10 +439,15 @@ class WebGLContext : public VRefCounted, public SupportsWeakPtr<WebGLContext> {
+@@ -398,10 +398,15 @@ class WebGLContext : public VRefCounted, public SupportsWeakPtr<WebGLContext> {
  #ifdef __clang__
  #  pragma clang diagnostic push
  #  pragma clang diagnostic ignored "-Wformat-security"
@@ -48,7 +48,7 @@ index f2c0e4dfe2a..c56b1a77531 100644
  #endif
  
      GenerateErrorImpl(err, text);
-@@ -1297,10 +1302,15 @@ class WebGLContext : public VRefCounted, public SupportsWeakPtr<WebGLContext> {
+@@ -1245,10 +1250,15 @@ class WebGLContext : public VRefCounted, public SupportsWeakPtr<WebGLContext> {
  #ifdef __clang__
  #  pragma clang diagnostic push
  #  pragma clang diagnostic ignored "-Wformat-security"

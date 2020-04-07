@@ -88,7 +88,7 @@ urlbar-geolocation-notification-anchor =
 urlbar-xr-notification-anchor =
     .tooltiptext = 가상 현실 권한 패널 열기
 urlbar-storage-access-anchor =
-    .tooltiptext = 브라우징 활동 권한 패널 열기
+    .tooltiptext = 탐색 활동 권한 패널 열기
 urlbar-translate-notification-anchor =
     .tooltiptext = 페이지 번역
 urlbar-web-rtc-share-screen-notification-anchor =
@@ -125,6 +125,7 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = 적게 입력, 많이 찾기: 주소 표시줄에서 바로 { $engineName } 검색어로 검색해 보세요.
 urlbar-search-tips-redirect = { $engineName }의 제안과 방문 기록을 보려면 여기에서 검색을 시작하세요.
+urlbar-search-tips-redirect-2 = 주소 표시줄에서 검색을 시작하여 { $engineName }의 제안 및 방문 기록을 확인하세요.
 
 ##
 

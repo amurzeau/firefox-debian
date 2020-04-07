@@ -16,7 +16,7 @@
 <!ENTITY mainWindow.titlePrivateBrowsingSuffix "(사생활 보호 모드)">
 
 <!ENTITY appmenu.tooltip                     "메뉴 열기">
-<!ENTITY navbarOverflow.label                "더 많은 도구…">
+<!ENTITY navbarOverflow.label                "도구 더보기…">
 
 <!-- Tab context menu -->
 
@@ -80,17 +80,16 @@ when there are no windows but Firefox is still running. -->
 include the word "toolbar" or such, because screen readers already know that
 this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY navbar.accessibleLabel "탐색">
-<!ENTITY personalbarCmd.label "북마크 모음">
+<!ENTITY personalbarCmd.label "북마크 도구 모음">
 <!ENTITY personalbarCmd.accesskey "B">
 <!-- LOCALIZATION NOTE: The accessibleLabel is a spoken label that should not
 include the word "toolbar" or such, because screen readers already know that
 this container is a toolbar. This avoids double-speaking. -->
 <!ENTITY personalbar.accessibleLabel "북마크">
-<!ENTITY bookmarksToolbarItem.label "북마크 모음 항목">
+<!ENTITY bookmarksToolbarItem.label "북마크 도구 모음 항목">
 
 <!ENTITY pageSourceCmd.label "페이지 소스">
 <!ENTITY pageSourceCmd.accesskey "o">
-
 <!ENTITY pageSourceCmd.commandkey "u">
 <!-- LOCALIZATION NOTE (pageSourceCmd.SafariCommandKey should match the
 Option+Command keyboard shortcut letter that Safari and Chrome use for "View
@@ -101,7 +100,6 @@ convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 
 <!ENTITY pageInfoCmd.label "페이지 정보">
 <!ENTITY pageInfoCmd.accesskey "I">
-
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "레이아웃 디버거">
 <!ENTITY ldbCmd.accesskey "L">
@@ -128,9 +126,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaUnverified.label "계정 확인">
 
 
-<!ENTITY togglePictureInPicture.key2 "}">
-<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
-
 <!ENTITY fullScreenMinimize.tooltip "최소화">
 <!ENTITY fullScreenRestore.tooltip "복구">
 <!ENTITY fullScreenClose.tooltip "닫기">
@@ -142,7 +137,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
  <!-- LOCALIZATION NOTE (fxa.signin) Used to define the different labels
      for the Firefox Account toolbar signin menu screen. -->
 <!ENTITY fxa.signin.callout.label "Firefox와 함께 하세요">
-<!ENTITY fxa.signin.description.label "북마크와 방문 기록, 비밀번호, 다른 설정을 모든 기기에서 사용해 보세요.">
+<!ENTITY fxa.signin.description.label "북마크, 기록, 비밀번호, 다른 설정을 모든 기기에서 사용해 보세요.">
 <!ENTITY fxa.signin.button.label "&syncBrand.shortName.label; 켜기…">
 
 <!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
@@ -219,7 +214,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "북마크">
 <!ENTITY bookmarksMenu.accesskey "B">
-
 <!ENTITY bookmarkThisPageCmd.label "이 페이지 북마크">
 <!ENTITY editThisBookmarkCmd.label "이 북마크 편집">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
@@ -238,13 +232,12 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY forwardCmd.label             "앞으로">
 <!ENTITY forwardCmd.accesskey         "F">
 <!ENTITY forwardButton.tooltip        "한 페이지 앞으로 가기">
-<!ENTITY backForwardButtonMenu.tooltip "오른쪽 클릭 또는 아래로 잡아당겨 방문 기록 보기">
-<!ENTITY backForwardButtonMenuMac.tooltip "방문 기록 내려 보기">
+<!ENTITY backForwardButtonMenu.tooltip "오른쪽 클릭 또는 아래로 잡아당겨 기록 보기">
+<!ENTITY backForwardButtonMenuMac.tooltip "아래로 잡아당겨 기록 보기">
 <!ENTITY reloadCmd.label              "새로 고침">
 <!ENTITY reloadCmd.accesskey          "R">
 <!ENTITY stopCmd.label                "중지">
 <!ENTITY stopCmd.accesskey            "S">
-
 <!ENTITY stopCmd.macCommandKey        ".">
 
 <!ENTITY goEndCap.tooltip             "주소 표시줄의 주소로 이동">
@@ -266,7 +259,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "브라우저가 원격 제어중">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "웹 인증 패널 열기">
-<!ENTITY urlbar.storageAccessAnchor.tooltip               "브라우징 활동 권한 패널 열기">
+<!ENTITY urlbar.storageAccessAnchor.tooltip               "탐색 활동 권한 패널 열기">
 
 <!ENTITY urlbar.webRTCShareDevicesNotificationAnchor.tooltip      "사이트에서 카메라와 마이크를 사용할지 관리">
 <!ENTITY urlbar.webRTCShareMicrophoneNotificationAnchor.tooltip   "사이트에서 마이크를 사용할지 관리">
@@ -294,7 +287,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.permissionsGranted.tooltip       "이 웹 사이트에 추가 권한을 부여했습니다.">
 
 
-<!ENTITY urlbar.openHistoryPopup.tooltip                "방문 기록 보기">
+<!ENTITY urlbar.openHistoryPopup.tooltip                "기록 보기">
 
 <!ENTITY searchItem.title             "검색">
 
@@ -311,7 +304,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksMenuButton.mobile.label   "모바일 북마크">
 <!ENTITY viewBookmarksSidebar2.label        "북마크 탐색창 보기">
 <!ENTITY hideBookmarksSidebar.label         "북마크 탐색창 숨기기">
-<!ENTITY viewBookmarksToolbar.label         "도구 모음에 표시">
+<!ENTITY viewBookmarksToolbar.label         "북마크 도구 모음 표시">
 <!ENTITY hideBookmarksToolbar.label         "북마크 도구 모음 숨기기">
 <!ENTITY searchBookmarks.label              "북마크 검색">
 <!ENTITY bookmarkingTools.label             "북마크 도구">
@@ -324,7 +317,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksGtkCmd.commandkey "o">
 <!ENTITY bookmarksWinCmd.commandkey "i">
 
-<!ENTITY historyButton.label            "방문 기록">
+<!ENTITY historyButton.label            "기록">
 <!ENTITY historySidebarCmd.commandKey   "h">
 
 <!ENTITY toolsMenu.label              "도구">
@@ -394,7 +387,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY preferencesCmdUnix.accesskey     "n">
 <!ENTITY logins.label                           "로그인과 비밀번호">
 
-<!ENTITY clearRecentHistory.label               "사용 기록 삭제">
+<!ENTITY clearRecentHistory.label               "최근 기록 삭제…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "P">
 
@@ -407,25 +400,24 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY viewCustomizeToolbar.label       "사용자 지정…">
 <!ENTITY viewCustomizeToolbar.accesskey     "C">
-<!ENTITY overflowCustomizeToolbar.label       "도구 모음 사용자 지정…">
+<!ENTITY overflowCustomizeToolbar.label       "사용자 지정…">
 <!ENTITY overflowCustomizeToolbar.accesskey   "C">
 
-<!ENTITY historyMenu.label "방문 기록">
+<!ENTITY historyMenu.label "기록">
 <!ENTITY historyMenu.accesskey "s">
 <!ENTITY historyUndoMenu.label "최근에 닫은 탭">
 <!-- LOCALIZATION NOTE (historyUndoWindowMenu): see bug 394759 -->
 <!ENTITY historyUndoWindowMenu.label "최근에 닫은 창">
 <!ENTITY historyRestoreLastSession.label "이전 세션 복원">
 
-<!ENTITY showAllHistoryCmd2.label "방문 기록 보기">
-
+<!ENTITY showAllHistoryCmd2.label "모든 기록 보기">
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
-<!ENTITY appMenuHistory.showAll.label "방문 기록 보기">
+<!ENTITY appMenuHistory.showAll.label "모든 기록 보기">
 <!ENTITY appMenuHistory.clearRecent.label "최근 기록 삭제…">
 <!ENTITY appMenuHistory.restoreSession.label "이전 세션 복원">
-<!ENTITY appMenuHistory.viewSidebar.label "방문 기록 탐색창 보기">
-<!ENTITY appMenuHistory.hideSidebar.label "방문 기록 탐색창 숨기기">
+<!ENTITY appMenuHistory.viewSidebar.label "기록 탐색창 보기">
+<!ENTITY appMenuHistory.hideSidebar.label "기록 탐색창 숨기기">
 <!ENTITY appMenuHistory.recentHistory.label "최근 기록">
 <!ENTITY appMenuHelp.label "도움말">
 
@@ -599,7 +591,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY openLinkCmdInContainerTab.accesskey "C">
 <!ENTITY showOnlyThisFrameCmd.label     "이 프레임만 표시">
 <!ENTITY showOnlyThisFrameCmd.accesskey "S">
-
 <!ENTITY reloadCmd.commandkey         "r">
 <!ENTITY reloadFrameCmd.label         "프레임 새로 고침">
 <!ENTITY reloadFrameCmd.accesskey     "R">
@@ -651,7 +642,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY savePageCmd.accesskey        "A">
 <!-- alternate for content area context menu -->
 <!ENTITY savePageCmd.accesskey2       "P">
-<!-- alternate for content area context menu -->
 <!ENTITY savePageCmd.commandkey       "s">
 <!ENTITY saveFrameCmd.label           "프레임을 다른 이름으로 저장…">
 <!ENTITY saveFrameCmd.accesskey       "F">
@@ -755,20 +745,17 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY fullZoomEnlargeCmd.label       "확대">
 <!ENTITY fullZoomEnlargeCmd.accesskey   "I">
-
 <!ENTITY fullZoomEnlargeCmd.commandkey  "+">
 <!ENTITY fullZoomEnlargeCmd.commandkey2 "="> <!-- + is above this key on many keyboards -->
 <!ENTITY fullZoomEnlargeCmd.commandkey3 "">
 
 <!ENTITY fullZoomReduceCmd.label        "축소">
 <!ENTITY fullZoomReduceCmd.accesskey    "O">
-
 <!ENTITY fullZoomReduceCmd.commandkey   "-">
 <!ENTITY fullZoomReduceCmd.commandkey2  "">
 
 <!ENTITY fullZoomResetCmd.label         "원래 크기">
 <!ENTITY fullZoomResetCmd.accesskey     "R">
-
 <!ENTITY fullZoomResetCmd.commandkey    "0">
 <!ENTITY fullZoomResetCmd.commandkey2   "">
 
@@ -792,7 +779,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY quitApplicationCmd.key         "Q">
 
 <!ENTITY closeCmd.label                 "닫기">
-
 <!ENTITY closeCmd.key                   "W">
 <!ENTITY closeCmd.accesskey             "C">
 
@@ -818,7 +804,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY bidiSwitchPageDirectionItem.accesskey    "g">
 <!ENTITY bidiSwitchTextDirectionItem.label        "글자 방향 변경">
 <!ENTITY bidiSwitchTextDirectionItem.accesskey    "w">
-
 <!ENTITY bidiSwitchTextDirectionItem.commandkey   "X">
 
 <!ENTITY findOnCmd.label     "이 페이지에서 찾기…">
@@ -848,19 +833,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.connection "연결">
 <!ENTITY identity.connectionSecure "안전한 연결">
 <!ENTITY identity.connectionNotSecure "안전하지 않은 연결">
-
-<!ENTITY identity.connectionSecure3 "안전한 연결">
-<!ENTITY identity.connectionNotSecure2 "안전하지 않은 연결">
-<!ENTITY identity.connectionNotSecureSecurityView "이 사이트에 안전하게 연결되어 있지 않습니다.">
 <!ENTITY identity.connectionFile "이 페이지는 컴퓨터에 저장되어 있습니다.">
 <!ENTITY identity.connectionVerified2 "안전하게 사이트에 연결되었습니다. 소유자:">
-<!ENTITY identity.connectionVerified3 "이 사이트에 안전하게 연결되어 있습니다.">
 <!ENTITY identity.connectionInternal "안전한 &brandShortName; 페이지입니다.">
 <!ENTITY identity.extensionPage "이 페이지는 확장 기능으로부터 로드되었습니다.">
 <!ENTITY identity.insecureLoginForms2 "이 페이지에 입력된 로그인 정보는 노출될 수 있습니다.">
 <!ENTITY identity.customRoot "Mozilla에서 인식하지 못하는 인증서 발급자가 연결을 확인했습니다.">
-
-<!ENTITY identity.evOwnerLabel2 "인증서 발급 대상:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName;가 안전하지 않은 페이지의 일부를 차단했습니다.">
@@ -895,8 +873,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.clearSiteData "쿠키 및 사이트 데이터 삭제…">
 
 <!ENTITY identity.permissions "권한">
-
-<!ENTITY identity.permissions3 "권한">
 <!ENTITY identity.permissionsEmpty "이 사이트를 특별한 권한으로 승인하지 않았습니다.">
 <!ENTITY identity.permissionsReloadHint "변경 사항을 적용하려면 페이지를 다시 로드해야 할 수도 있습니다.">
 <!ENTITY identity.permissionsPreferences.tooltip "권한 설정 열기">
@@ -1049,8 +1025,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY uiTour.infoPanel.close "닫기">
 
-<!ENTITY panicButton.thankyou.msg1                "최근 방문 기록이 삭제되었습니다.">
-<!ENTITY panicButton.thankyou.msg2                "안전한 브라우징!">
+<!ENTITY panicButton.thankyou.msg1                "최근 기록이 삭제되었습니다.">
+<!ENTITY panicButton.thankyou.msg2                "안전한 탐색!">
 <!ENTITY panicButton.thankyou.buttonlabel         "감사합니다!">
 
 <!ENTITY emeLearnMoreContextMenu.label            "DRM에 대해 더 알아보기…">
@@ -1064,7 +1040,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.header.message "새 탭이 변경되었습니다.">
 <!ENTITY newTabControlled.keepButton.label "변경 사항 유지">
 <!ENTITY newTabControlled.keepButton.accesskey "K">
-<!ENTITY newTabControlled.disableButton.label "확장 기능 비활성화">
+<!ENTITY newTabControlled.disableButton.label "확장 기능 사용 안 함">
 <!ENTITY newTabControlled.disableButton.accesskey "D">
 
 <!ENTITY homepageControlled.message "확장 기능이 홈페이지를 변경하였습니다. 이 변경을 원하지 않으시면 설정에서 다시 복원할 수 있습니다.">
@@ -1072,13 +1048,13 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY homepageControlled.header.message "홈페이지가 변경되었습니다.">
 <!ENTITY homepageControlled.keepButton.label "변경 유지">
 <!ENTITY homepageControlled.keepButton.accesskey "K">
-<!ENTITY homepageControlled.disableButton.label "확장 기능 비활성화">
+<!ENTITY homepageControlled.disableButton.label "확장 기능 사용 안 함">
 <!ENTITY homepageControlled.disableButton.accesskey "D">
 
 <!ENTITY tabHideControlled.header.message "숨겨진 탭에 접근">
 <!ENTITY tabHideControlled.keepButton.label "숨겨진 탭 유지">
 <!ENTITY tabHideControlled.keepButton.accesskey "K">
-<!ENTITY tabHideControlled.disableButton.label "확장 기능 비활성화">
+<!ENTITY tabHideControlled.disableButton.label "확장 기능 사용 안 함">
 <!ENTITY tabHideControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "페이지 작업">
@@ -1091,7 +1067,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageAction.shareUrl.label "공유">
 <!ENTITY pageAction.shareMore.label "더보기…">
 
-<!ENTITY libraryButton.tooltip "방문 기록, 저장된 북마크 등 보기">
+<!ENTITY libraryButton.tooltip "기록, 저장된 북마크 등 보기">
 
 <!-- LOCALIZATION NOTE: (accessibilityIndicator.tooltip): This is used to
      display a tooltip for accessibility indicator in toolbar/tabbar. It is also

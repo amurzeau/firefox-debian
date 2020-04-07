@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Nastavení pravidel, ke kterým mají přístup rozšíření skrze chrome.storage.managed.
+policy-AppAutoUpdate = Vypnutí nebo zapnutí automatických aktualizací aplikace.
 policy-AppUpdateURL = Nastavení vlastní URL pro aktualizace aplikace.
 policy-Authentication = Konfigurace integrované autentizace webových stránek, které ji podporují.
 policy-BlockAboutAddons = Zablokování přístupu do správce doplňků (about:addons).
@@ -21,6 +22,7 @@ policy-Bookmarks = Vytvoření záložek na liště, v nabídce nebo vybrané sl
 policy-CaptivePortal = Povolení nebo zakázání podpory captive portálů.
 policy-CertificatesDescription = Přidat certifikáty nebo použít vestavěné certifikáty.
 policy-Cookies = Pravidla pro ukládání nebo blokování cookies.
+policy-DisabledCiphers = Zakázané šifry.
 policy-DefaultDownloadDirectory = Nastavení výchozího adresáře pro stahování souborů.
 policy-DisableAppUpdate = Blokování aktualizací prohlížeče.
 policy-DisableBuiltinPDFViewer =
@@ -30,6 +32,7 @@ policy-DisableBuiltinPDFViewer =
         [neuter] v { -brand-short-name(case: "loc") }
        *[other] v aplikaci { -brand-short-name }
     }.
+policy-DisableDefaultBrowserAgent = Zabraňte „výchozímu agentovi prohlížeče“ provádět jakékoliv akce. Dostupné pouze pro Windows, ostatní platformy agenty nemají.
 policy-DisableDeveloperTools = Blokování přístupu k nástrojům pro vývojáře.
 policy-DisableFeedbackCommands = Blokování odeslání zpětné vazby z nabídky Nápověda (volby Odeslat zpětnou vazbu a Nahlásit klamavou stránku).
 policy-DisableFirefoxAccounts = Vypnutí služeb používajících { -fxaccount-brand-name(case: "acc", capitalization: "lower") }, včetně Syncu.
@@ -102,7 +105,6 @@ policy-OfferToSaveLoginsDefault = Nastavení výchozí hodnoty, zda má { -brand
 policy-OverrideFirstRunPage = Nastavení vlastní stránky při prvním spuštění. Pokud nechcete při prvním spuštění zobrazovat žádnou stránku, nastavte toto pravidlo jako prázdné.
 policy-OverridePostUpdatePage = Nastavení vlastní stránky po aktualizaci. Pokud nechcete po aktualizaci zobrazovat žádnou stránku, nastavte toto pravidlo jako prázdné.
 policy-PasswordManagerEnabled = Povolení ukládat přihlašovací údaje do správce hesel.
-policy-Permissions = Nastavení oprávnění pro kameru, mikrofon, polohu a oznámení.
 policy-Permissions2 = Nastavení oprávnění pro kameru, mikrofon, polohu, oznámení a automatické přehrávání.
 policy-PopupBlocking = Povolení zobrazování vyskakovacích oken ve výchozím stavu.
 policy-Preferences = Nastavení a uzamčení hodnoty pro podmnožinu předvoleb.

@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Permettre de définir les stratégies auxquelles les WebExtensions peuvent accéder par chrome.storage.managed.
+policy-AppAutoUpdate = Activer ou désactiver les mises à jour automatiques des applications.
 policy-AppUpdateURL = Définir une URL de mise à jour personnalisée pour l’application.
 policy-Authentication = Configurer l’authentification intégrée pour les sites web qui la proposent.
 policy-BlockAboutAddons = Bloquer l’accès au gestionnaire de modules (about:addons).
@@ -21,9 +22,11 @@ policy-Bookmarks = Créer des marque-pages dans la Barre personnelle, le menu de
 policy-CaptivePortal = Permettre ou interdire la prise en charge des portails captifs.
 policy-CertificatesDescription = Ajouter des certificats ou utiliser des certificats prédéfinis.
 policy-Cookies = Permettre ou interdire aux sites de définir des cookies.
+policy-DisabledCiphers = Désactiver les chiffrements.
 policy-DefaultDownloadDirectory = Définir le répertoire de téléchargement par défaut.
 policy-DisableAppUpdate = Empêcher le navigateur de se mettre à jour.
 policy-DisableBuiltinPDFViewer = Désactiver PDF.js, la visionneuse PDF intégrée dans { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Empêcher l’agent de navigateur par défaut de prendre des mesures. Uniquement applicable à Windows ; les autres plateformes n’ont pas cet agent.
 policy-DisableDeveloperTools = Bloquer l’accès aux outils de développement.
 policy-DisableFeedbackCommands = Désactiver les commandes permettant d’envoyer des commentaires dans le menu d’aide (Donner votre avis et Signaler un site trompeur).
 policy-DisableFirefoxAccounts = Désactiver les services basés sur un { -fxaccount-brand-name }, y compris la synchronisation.
@@ -72,7 +75,6 @@ policy-OfferToSaveLoginsDefault = Définir si, par défaut, { -brand-short-name 
 policy-OverrideFirstRunPage = Contrôler la page de premier démarrage. Laissez cette règle vide pour désactiver la page de premier démarrage.
 policy-OverridePostUpdatePage = Contrôler la page « Nouveautés » après une mise à jour. Laissez cette règle vide pour désactiver la page après une mise à jour.
 policy-PasswordManagerEnabled = Activer l’enregistrement des mots de passe dans le gestionnaire de mots de passe.
-policy-Permissions = Configurer les permissions pour la caméra, le microphone, la localisation et les notifications.
 policy-Permissions2 = Configurer les permissions pour la caméra, le microphone, la localisation, les notifications et la lecture automatique.
 policy-PopupBlocking = Autoriser certains sites web à afficher des popups par défaut.
 policy-Preferences = Définir et verrouiller la valeur d’un sous-ensemble de préférences.

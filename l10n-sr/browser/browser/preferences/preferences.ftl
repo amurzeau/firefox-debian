@@ -290,6 +290,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Користи { $plugin-name } (за { -brand-short-name })
@@ -403,6 +407,10 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Тражи текст када почнем да куцам
     .accesskey = т
+browsing-picture-in-picture-toggle-enabled =
+    .label = Омогућите слика-у-слици видео контролу
+    .accesskey = О
+browsing-picture-in-picture-learn-more = Сазнајте више
 browsing-cfr-recommendations =
     .label = Препоручи проширења приликом прегледања
     .accesskey = р
@@ -509,6 +517,13 @@ search-bar-shown =
     .label = Додај траку за претрагу на алатну траку
 search-engine-default-header = Подразумевани претраживач
 search-engine-default-desc = Изаберите подразумевани претраживач за адресну траку и траку за претрагу.
+search-engine-default-desc-2 = Ово је подразумевани претраживач у адресној траци и траци за претрагу. Mожете променити у било ком тренутку.
+search-engine-default-private-desc-2 = Изаберите други подразумевани претраживач за приватно прегледање
+search-separate-default-engine =
+    .label = Користите овај претраживач у приватном прегледању
+    .accesskey = К
+search-suggestions-header = Предлози за претрагу
+search-suggestions-desc = Одаберите начин приказивања предлога за претраживање.
 search-suggestions-option =
     .label = Пружи предлоге претраге
     .accesskey = г
@@ -522,6 +537,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Прикажи предлоге претраге испред историје прегледања у резултатима у адресној траци
+search-show-suggestions-private-windows =
+    .label = Прикажи предлоге за претрагу у приватном прегледању
+suggestions-addressbar-settings = Промените подешавања за историју прегледавања, обележиваче и предлоге језичака
 search-suggestions-cant-show = Предлози претраге неће бити приказани у траци за локацију зато што сте подесили да { -brand-short-name } никада не памти историју.
 search-one-click-header = One-click претраживачи
 search-one-click-desc = Изаберите алтернативне претраживаче који ће се појављивати испод адресне траке и траке за претрагу приликом уноса кључне речи.
@@ -590,6 +608,9 @@ sync-profile-picture =
 sync-disconnect =
     .label = Прекини везу…
     .accesskey = в
+sync-sign-out =
+    .label = Одјава…
+    .accesskey = О
 sync-manage-account = Управљајте налогом
     .accesskey = н
 sync-signedin-unverified = { $email } није потврђен.
@@ -608,12 +629,45 @@ sync-signedin-settings-desc = Изаберите шта да се синхрон
 
 ## Sync section - enabling or disabling sync.
 
+prefs-syncing-on = Синхронизација: УКЉУЧЕНА
+prefs-syncing-off = Синхронизација: ИСКЉУЧЕНА
+prefs-sync-setup =
+    .label = Поставите { -sync-brand-short-name }…
+    .accesskey = П
+prefs-sync-offer-setup-label = Синхронизујте ознаке, историју, језичке, лозинке, додатке и подешавања на свим својим уређајима.
+prefs-sync-now =
+    .labelnotsyncing = Синхронизујте сада
+    .accesskeynotsyncing = С
+    .labelsyncing = Синхронизација…
 
 ## The list of things currently syncing.
 
+sync-currently-syncing-heading = Тренутно синхронизујете следеће ставке:
+sync-currently-syncing-bookmarks = Ознаке
+sync-currently-syncing-history = Историја
+sync-currently-syncing-tabs = Отворени језичци
+sync-currently-syncing-logins-passwords = Пријаве и лозинке
+sync-currently-syncing-addresses = Адресе
+sync-currently-syncing-creditcards = Кредитне картице
+sync-currently-syncing-addons = Додаци
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Опције
+       *[other] Подешавања
+    }
+sync-change-options =
+    .label = Промена…
+    .accesskey = П
 
 ## The "Choose what to sync" dialog.
 
+sync-choose-what-to-sync-dialog =
+    .title = Изаберите шта да синхронизујете
+    .style = width: 36em; min-height: 35em;
+    .buttonlabelaccept = Сачувајте промене
+    .buttonaccesskeyaccept = С
+    .buttonlabelextra2 = Дисконекција…
+    .buttonaccesskeyextra2 = Д
 sync-engine-bookmarks =
     .label = Забелешке
     .accesskey = З
@@ -628,6 +682,10 @@ sync-engine-logins =
     .label = Пријаве
     .tooltiptext = Корисничка имена и лозинке које сте сачували
     .accesskey = р
+sync-engine-logins-passwords =
+    .label = Пријаве и лозинке
+    .tooltiptext = Корисничка имена и лозинке које сте сачували
+    .accesskey = П
 sync-engine-addresses =
     .label = Адресе
     .tooltiptext = Поштанске адресе које сте сачували (само за десктоп)
@@ -677,6 +735,7 @@ privacy-header = Приватност прегледача
 ## Privacy Section - Logins and Passwords
 
 logins-header = Пријаве и лозинке
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Питај да сачуваш пријаве и лозинке веб сајтова
     .accesskey = П
@@ -686,6 +745,11 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Предлажи и стварај јаке лозинке
     .accesskey = а
+forms-breach-alerts =
+    .label = Прикажи обавештења о лозинкама на веб страницама које су искусиле цурење података
+    .accesskey = о
+forms-breach-alerts-learn-more-link = Сазнајте више
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Самостално попуњавај пријаве и лозинке
     .accesskey = и
@@ -700,6 +764,9 @@ forms-master-pw-change =
     .accesskey = П
 forms-master-pw-fips-title = У овом тренутку налазите се у FIPS режиму. У режиму FIPS није дозвољено користити празну главну лозинку.
 forms-master-pw-fips-desc = Грешка приликом промене лозинке
+
+## OS Authentication dialog
+
 
 ## Privacy Section - History
 
@@ -807,6 +874,7 @@ addressbar-suggestions-settings = Измени поставке предлога
 content-blocking-header = Блокирање садржаја
 content-blocking-section-description = Заштитите своју приватност док прегледате интернет. Блокирајте невидљиви садржај који прати веб странице које посетите и који вас профилише. Блокирањем неких од ових садржаја странице се брже учитавају.
 content-blocking-enhanced-tracking-protection = Побољшана заштита од праћења
+content-blocking-section-top-level-description = Софтвери за праћење прате ваше мрежне активности и сакупљају ваше навике и интересовања. { -brand-short-name } блокира многе ове софтвере и друге злонамерне скрипте.
 content-blocking-learn-more = Сазнајте више
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -841,6 +909,8 @@ enhanced-tracking-protection-setting-custom =
 
 ##
 
+content-blocking-etp-standard-desc = Уравнотежена заштита и перформанса. Странице ће се нормално учитавати.
+content-blocking-etp-strict-desc = Заштита је моћнија, али може проузроковати да се неке веб странице или садржај не учитају.
 content-blocking-etp-custom-desc = Изаберите које пратиоце и скрипте треба блокирати.
 content-blocking-private-windows = Садржај који прати у приватним прозорима
 content-blocking-cross-site-tracking-cookies = Вишестранични колачићи-пратиоци

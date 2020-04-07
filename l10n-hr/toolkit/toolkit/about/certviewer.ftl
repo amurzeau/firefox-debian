@@ -12,7 +12,7 @@ certificate-viewer-error-title = Nešto je pošlo naopako.
 ## Certificate information labels
 
 certificate-viewer-algorithm = Algoritam
-certificate-viewer-certificate-authority = Izdavač certifikata
+certificate-viewer-certificate-authority = Certifikacijsko tijelo
 certificate-viewer-cipher-suite = Skup šifratora
 certificate-viewer-common-name = Uobičajeni naziv
 certificate-viewer-email-address = Adresa e-pošte
@@ -22,6 +22,8 @@ certificate-viewer-country = Država
 certificate-viewer-curve = Krivulja
 certificate-viewer-distribution-point = Distribucijska točka
 certificate-viewer-dns-name = DNS naziv
+certificate-viewer-ip-address = IP adresa
+certificate-viewer-other-name = Drugo ime
 certificate-viewer-exponent = Potencija
 certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = Grupa razmjene ključeva
@@ -44,6 +46,7 @@ certificate-viewer-purposes = Svrhe
 certificate-viewer-qualifier = Kvalifikator
 certificate-viewer-qualifiers = Kvalifikatori
 certificate-viewer-required = Obavezno
+certificate-viewer-unsupported = &lt;nepodržano&gt;
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
 certificate-viewer-inc-state-province = Država/pokrajina
 certificate-viewer-state-province = Država/pokrajina
@@ -68,8 +71,8 @@ certificate-viewer-key-usages = Upotrebe ključa
 certificate-viewer-extended-key-usages = Proširena upotrebe ključa
 certificate-viewer-ocsp-stapling = OCSP potvrđivanje
 certificate-viewer-subject-key-id = ID ključa predmeta
-certificate-viewer-authority-key-id = ID ključa autoriteta
-certificate-viewer-authority-info-aia = Podaci autoriteta (AIA)
+certificate-viewer-authority-key-id = ID ključa certifikacijskog tijela
+certificate-viewer-authority-info-aia = Podaci certifikacijskog tijela (AIA)
 certificate-viewer-certificate-policies = Pravila certifikata
 certificate-viewer-embedded-scts = Ugrađeni SCT-ovi
 certificate-viewer-crl-endpoints = Krajnje točke CRL-a

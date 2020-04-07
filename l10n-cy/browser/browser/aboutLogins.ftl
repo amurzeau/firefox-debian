@@ -26,6 +26,8 @@ menu =
     .title = Agor dewislen
 # This menuitem is only visible on Windows
 menu-menuitem-import = Mewnforio Cyfrineiriau…
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = Mewnforio o Borwr Arall…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Dewisiadau
@@ -88,10 +90,6 @@ about-logins-login-item-username =
 login-item-copy-username-button-text = Copïo
 login-item-copied-username-button-text = Copïwyd
 login-item-password-label = Cyfrinair
-login-item-password-reveal-checkbox-show =
-    .title = Dangos cyfrinair
-login-item-password-reveal-checkbox-hide =
-    .title = Cuddio cyfrinair
 login-item-password-reveal-checkbox =
     .aria-label = Dangos cyfrinair
 login-item-copy-password-button-text = Copïo
@@ -102,6 +100,30 @@ login-item-cancel-button = Diddymu
 login-item-time-changed = Newidiwyd ddiwethaf: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Crëwyd: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Defnyddiwyd ddiwethaf: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = Gwiriwch eich hunaniaeth i olygu'r mewngofnod sydd wedi'i gadw.
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = golygu'r mewngofnod sydd wedi'i gadw
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = Gwiriwch eich hunaniaeth i ddadlennu'r mewngofnod sydd wedi'i gadw.
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = dadlennu'r cyfrinair sydd wedi'i gadw
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = Gwiriwch eich hunaniaeth i gopïo'r cyfrinair sydd wedi'i gadw.
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = copïo'r cyfrinair sydd wedi'i gadw
 
 ## Master Password notification
 

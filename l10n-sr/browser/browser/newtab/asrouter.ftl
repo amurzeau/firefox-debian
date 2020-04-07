@@ -9,7 +9,7 @@ cfr-doorhanger-extension-heading = Препоручене екстензије
 cfr-doorhanger-feature-heading = Препоручена могућност
 cfr-doorhanger-pintab-heading = Пробајте ово: закачи језичак
 
-
+##
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Зашто видим ово
@@ -31,6 +31,14 @@ cfr-doorhanger-extension-author = по { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Препоруке
+cfr-doorhanger-extension-notification2 = Препорука
+    .tooltiptext = Препорука за проширење
+    .a11y-announcement = Препорука за проширење је доступна
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = Препорука
+    .tooltiptext = Препорука за својство
+    .a11y-announcement = Препорука за својство је доступна
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -74,14 +82,60 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 
 ## Protections panel
 
+cfr-protections-panel-header = Прегледајте без праћења
+cfr-protections-panel-body = Задржите своје податке. { -brand-short-name } пружа заштиту од уобичајених трагача који прате ваше радње на мрежи.
+cfr-protections-panel-link-text = Сазнајте више
 
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Нова функција:
 cfr-whatsnew-button =
     .label = Шта је ново
     .tooltiptext = Шта је ново
 cfr-whatsnew-panel-header = Шта је ново
+cfr-whatsnew-release-notes-link-text = Прочитајте напомене о издању
+cfr-whatsnew-fx70-title = { -brand-short-name } се сада бори још више за вашу приватност
+cfr-whatsnew-fx70-body =
+    Заштита од праћења је побољшана у најновијој верзији и олакшава вам
+    стварање сигурних лозинки за појединачне веб странице.
+cfr-whatsnew-tracking-protect-title = Заштитите се од софтвера за праћење
+cfr-whatsnew-tracking-protect-body =
+    { -brand-short-name } блокира многе уобичајене софтвере за праћење с друштвених мрежа и других веб страница
+    који завирују у вашу активност прегледавања.
+cfr-whatsnew-tracking-protect-link-text = Погледајте извештај о праћењу
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] Блокиран софтвер за праћење
+        [few] Блокирана софтвера за праћење
+       *[other] Блокираних софтвера за праћење
+    }
+cfr-whatsnew-tracking-blocked-subtitle = Од { DATETIME($earliestDate, month: "long", year: "numeric") }
+cfr-whatsnew-tracking-blocked-link-text = Погледајте извештај
+cfr-whatsnew-lockwise-backup-title = Направите резервну копију лозинки
+cfr-whatsnew-lockwise-backup-body = Гениришите сигурне лозинке којима можете приступити било где да се пријављујете.
 cfr-whatsnew-lockwise-backup-link-text = Укључите резерве
+cfr-whatsnew-lockwise-take-title = Понесите ваше лозинке са собом
+cfr-whatsnew-lockwise-take-body =
+    { -lockwise-brand-short-name } апликација омогућава сигуран приступ вашој
+    резервној копији лозинки на свим уређајима.
+cfr-whatsnew-lockwise-take-link-text = Преузмите апликацију
+
+## Search Bar
+
+
+## Picture-in-Picture
+
+
+## Permission Prompt
+
+
+## Fingerprinter Counter
+
 
 ## Bookmark Sync
 
@@ -108,8 +162,33 @@ cfr-doorhanger-send-tab-ok-button = Испробајте слање језича
 ## Firefox Send
 
 cfr-doorhanger-firefox-send-header = Делите овај PDF безбедно
+cfr-doorhanger-firefox-send-body = Користите шифровање с-краја-на-крај и везе које ће аутоматски нестати након употребе како бисте обезбедили сигурност осетљивих датотека.
 cfr-doorhanger-firefox-send-ok-button = Испробајте { -send-brand-name }
     .accesskey = И
 
 ## Social Tracking Protection
 
+cfr-doorhanger-socialtracking-ok-button = Погледај заштите
+    .accesskey = П
+cfr-doorhanger-socialtracking-close-button = Затвори
+    .accesskey = З
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } је блокирао друштвену мрежу да вас прати овде
+cfr-doorhanger-socialtracking-description = Ваша приватност је битна. Од сада надаље, { -brand-short-name } блокира уобичајене софтвере за праћење с друштвених мрежа и ограничава ове веб странице да прикупљају вашу мрежну активност.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } је блокирао програм за праћење дигиталних отисака на овој страници
+cfr-doorhanger-fingerprinters-description = Ваша приватност је битна. Од сада надаље, { -brand-short-name } блокира програме за праћење дигиталних отисака, који прикупљају делове јединствено препознатљивих података о вашем уређају да би вас пратили.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } је блокирао програм за ископавање криптовалута на овој страници
+cfr-doorhanger-cryptominers-description = Ваша приватност је битна. Од сада надаље, { -brand-short-name } блокира програме за ископавање криптовалута, који користе рачунарску моћ вашег система да рударе дигитални новац.
+
+## Enhanced Tracking Protection Milestones
+
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+        [one] Од { $date }, { -brand-short-name } је блокирао више од <b>{ $blockedCount }</b> програма за праћење!
+        [few] Од { $date }, { -brand-short-name } је блокирао више од <b>{ $blockedCount }</b> програма за праћење!
+       *[other] Од { $date }, { -brand-short-name } је блокирао више од <b>{ $blockedCount }</b> програма за праћење!
+    }
+cfr-doorhanger-milestone-ok-button = Погледај све
+    .accesskey = П

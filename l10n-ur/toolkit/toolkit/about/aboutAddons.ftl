@@ -92,6 +92,16 @@ detail-update-automatic =
 detail-update-manual =
     .label = آف کریں
     .tooltiptext = تازہ کاریاں خود بخود تنصیب مت کریں
+# Used as a description for the option to allow or block an add-on in private windows.
+detail-private-browsing-label = نجی ونڈوز میں چلائیں
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overridden by the user.
+detail-private-disallowed-label = نجی ونڈوز میں اجازت نہیں ہے
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = نجی ونڈوز تک رسائی کی ضرورت ہے
+detail-private-browsing-on =
+    .label = اجازت دیں
+    .tooltiptext = نجی براؤزنگ میں فاعال بنایں
 detail-home =
     .label = ابتدائی صفحہ
 detail-home-value =
@@ -133,6 +143,9 @@ plugin-deprecation-description = کسی شہ کی کمی ہے؟ { -brand-short-n
 legacy-warning-show-legacy = میراث توسیعات دکھائیں
 legacy-extensions =
     .value = میراث ایکسٹینشن
+extensions-view-discopane =
+    .name = سفارشات
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = حالیہ تازہ کاریاں
     .tooltiptext = { extensions-view-recent-updates.name }
@@ -240,22 +253,91 @@ addon-open-about-debugging = ایڈز آن ازالہ کرے
 
 ## Extension shortcut management
 
+shortcuts-no-addons = آپ کے پاس کوئی ایکسٹینشن فعال نہیں ہے۔
+shortcuts-no-commands = مندرجہ ذیل ایکسٹینشنز میں شارٹ کٹس نہیں ہیں۔
+shortcuts-browserAction = ایکسٹینشن فاعال کریں
+shortcuts-modifier-other = Ctrl یا Alt شامل کریں
+shortcuts-invalid = ناجائز مجموعہ
+shortcuts-letter = ایک خط ٹائپ کریں
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = پہلے ہی { $addon } کے استعمال میں ہے
+shortcuts-card-collapse-button = کم دکھائیں
+go-back-button =
+    .tooltiptext = واپس جائیں
 
 ## Recommended add-ons page
 
 discopane-notice-learn-more = مزید سیکھیں
+privacy-policy = رازداری پالیسی
+install-theme-button = تھیم انسٹال کریں
+# The label of the button that appears after installing an add-on. Upon click,
+# the detailed add-on view is opened, from where the add-on can be managed.
+manage-addon-button = بندوبست کریں
+# This is a label for the button to open the "more options" menu, it is only
+# used for screen readers.
+addon-options-button =
+    .aria-label = مزید اختیارات
 
 ## Add-on actions
 
+report-addon-button = ‎رپورٹ کریں
+remove-addon-button = ہٹائیں
 disable-addon-button = غیر فعال
 enable-addon-button = فعال
+expand-addon-button = مزید اختیارات
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = فعال کریں
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] اختیارات
+       *[other] ترجیحات
+    }
+details-addon-button = تفصیلات
+release-notes-addon-button = اجرائی نوٹ
+permissions-addon-button = اجازتیں
 addons-enabled-heading = فعال
 addons-disabled-heading = غیر فعال
+extension-enabled-heading = اہل بنایا گیا
+extension-disabled-heading = نااہل
+theme-enabled-heading = اہل
+theme-disabled-heading = نااہل
+plugin-enabled-heading = اہل
+plugin-disabled-heading = نااہل
+dictionary-enabled-heading = اہل
+dictionary-disabled-heading = نااہل
+locale-enabled-heading = اہل
+locale-disabled-heading = نااہل
+ask-to-activate-button = عمل میں لانے کے لیے پوچھیں
+always-activate-button = ہمیشہ متحرک کریں
+never-activate-button = کبھی متحرک نہ کریں
+addon-detail-author-label = مصنف
+addon-detail-version-label = ورژن
+addon-detail-last-updated-label = آخری تازہ کاری
+addon-detail-homepage-label = ابتدائی صفحہ
+addon-detail-rating-label = شرح کاری
 
 ## Pending uninstall message bar
 
+pending-uninstall-undo-button = کالعدم کریں
+addon-detail-updates-radio-default = طے شدہ
 addon-detail-updates-radio-on = آن کریں
 addon-detail-updates-radio-off = بند کریں
+addon-detail-update-check-label = تازہ کاریوں کے لیے پڑتال کریں
+install-update-button = تازہ کاری کریں
+addon-detail-private-browsing-allow = اجازت دیں
+addon-detail-private-browsing-disallow = اجازت مت دیں
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = تجویز کردہ
+    .alt = تجویز کردہ
+available-updates-heading = دستیاب تازہ کاریاں
+recent-updates-heading = حالیہ تازہ کاریاں
+release-notes-loading = لوڈ ہو رہا ہے…
 
 ## Page headings
 

@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Ad yeǧǧ ad srekdeḍ tistṛatijiyin anida zemren ad kecmen WebExtensions s chrome.storage.managed.
+policy-AppAutoUpdate = Rmed neɣ gdel alqem awurman n yisnasen.
 policy-AppUpdateURL = Sbadu URL n uleqqem udmawan i usnas.
 policy-Authentication = Swel asesteb usliɣ i yesmal web i ten-yessefraken.
 policy-BlockAboutAddons = Sewḥel anekcum ɣer umsefrek n izegrar  (about:addons).
@@ -21,9 +22,11 @@ policy-Bookmarks = Rnu ticraḍ n isebtar deg ufeggag n tecraḍ, Umuɣ n tecra�
 policy-CaptivePortal = Rmed neɣ gdel asefrek n uwwur yettwaṭṭfen.
 policy-CertificatesDescription = Rnu iselkinen neɣ seqdec iselkinen usliɣen.
 policy-Cookies = Sireg neɣ gdel asbadu n inagan n tuqqna i yisebtar.
+policy-DisabledCiphers = Sens allalen n uwgelhen.
 policy-DefaultDownloadDirectory = Ad yesbadu akaram n usider s wudem amezwer.
 policy-DisableAppUpdate = Sewḥel aleqqem n yiminig.
 policy-DisableBuiltinPDFViewer = Sens PDF.js, ameskan PDF usliɣ deg { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Ad isewḥel imeggi n yiminig s wudem amezwer akken ur iteg ara kra. Ad yeddu kan deg Windows; inagrawen-nniḍen ur sɛin ara imeggi-a.
 policy-DisableDeveloperTools = Sewḥel anekcum ɣer ifecka n tneflit.
 policy-DisableFeedbackCommands = Sens tiludna akken ad aɣ-d-tazneḍ tikti-inek/inem seg wumuɣ n tallelt ( Azen-d tikti u mmel-aɣ-d ismal ur nemɛin ara).
 policy-DisableFirefoxAccounts = Sens tanfiwin yebnan ɣef { -fxaccount-brand-name }, ula d Sync.
@@ -72,7 +75,6 @@ policy-OfferToSaveLoginsDefault = Sbadu ma yella, swudem amezwer, { -brand-short
 policy-OverrideFirstRunPage = Beddel asebter amezwaru n uskar. Sbadu tasertit d tilemt ma tebɣiḍ ad tsenseḍ asebter amezwaru n uskar.
 policy-OverridePostUpdatePage = Beddel asebter "Acu-t amaynut" seld aleqqem. sbadu tasertit d tilemt ma tebɣiḍ ad tsenseḍ  asebter n uleqqem.
 policy-PasswordManagerEnabled = Rmed asekles n wawalen uffiren deg umsefrak n wawalen uffiren.
-policy-Permissions = Swel tisirag i tkamirat, asawaḍ, adig akked ilɣa.
 policy-Permissions2 = Swel tisirag i tkamirat, asawaḍ, adig, ilɣa akked tɣuri tawurmant.
 policy-PopupBlocking = Sireg kra n ismal web ad skanayen Isfuyla udhimens wudem amezwer.
 policy-Preferences = Ad yesbadu daɣen ad iṣekkeṛ azal n tegrumma tasnawant n yismenyifen.

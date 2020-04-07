@@ -62,9 +62,6 @@ toolbar-button-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-page =
-    .aria-label = Marcar aquesta pagina
-    .accesskey = m
 main-context-menu-bookmark-add =
     .aria-label = Marcar aquesta pagina
     .accesskey = m
@@ -187,7 +184,7 @@ main-context-menu-media-video-leave-fullscreen =
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-pip =
-    .label = Vidèo integrada
+    .label = Vidèo incrustada
     .accesskey = i
 main-context-menu-image-reload =
     .label = Actualizar l'imatge
@@ -251,7 +248,7 @@ main-context-menu-save-to-pocket =
     .accesskey = n
 main-context-menu-send-to-device =
     .label = Enviar la pagina al periferic
-    .accesskey = D
+    .accesskey = v
 main-context-menu-view-background-image =
     .label = Afichar l'imatge de fons
     .accesskey = h

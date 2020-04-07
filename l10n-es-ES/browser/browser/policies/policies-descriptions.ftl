@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Establezca las políticas a las que puede acceder WebExtensions mediante chrome.storage.managed.
+policy-AppAutoUpdate = Activar o desactivar la actualización automática de la aplicación.
 policy-AppUpdateURL = Establecer una URL personalizada de actualización de la aplicación.
 policy-Authentication = Configurar la autenticación integrada para sitios web que la admitan.
 policy-BlockAboutAddons = Bloquear el acceso al administrador de complementos (about:addons).
@@ -21,6 +22,7 @@ policy-Bookmarks = Crear marcadores en la barra de herramientas de marcadores, e
 policy-CaptivePortal = Activar o desactivar el soporte de portal cautivo.
 policy-CertificatesDescription = Añada certificados o use los certificados incluidos de serie.
 policy-Cookies = Permitir o denegar a los sitios web establecer cookies.
+policy-DisabledCiphers = Desactivar cifrados.
 policy-DefaultDownloadDirectory = Establecer el directorio de descargas predeterminado.
 policy-DisableAppUpdate = Evitar que el navegador se actualice.
 policy-DisableBuiltinPDFViewer = Desactivar PDF.js, el visor de PDF integrado en { -brand-short-name }.
@@ -72,7 +74,6 @@ policy-OfferToSaveLoginsDefault = Establecer el valor predeterminado para permit
 policy-OverrideFirstRunPage = Anular la página de primera ejecución. Deje esta política en blanco si desea desactivar la página de primera ejecución.
 policy-OverridePostUpdatePage = Anular la página "Qué hay de nuevo" posterior a la actualización. Deje esta política en blanco si quiere desactivar la página posterior a la actualización.
 policy-PasswordManagerEnabled = Activar el guardado de contraseñas en el administrador de contraseñas.
-policy-Permissions = Configurar permisos para cámara, micrófono, ubicación y notificaciones.
 policy-Permissions2 = Configurar permisos para cámara, micrófono, ubicación, notificaciones y reproducción automática.
 policy-PopupBlocking = Permitir que ciertos sitios web muestren ventanas emergentes de forma predeterminada.
 policy-Preferences = Establezca y bloquee el valor para un subconjunto de preferencias.

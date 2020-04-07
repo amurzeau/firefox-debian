@@ -10,6 +10,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Imposta criteri a cui le estensioni basate su tecnologia WebExtension possono accedere via chrome.storage.managed.
+policy-AppAutoUpdate = Attiva o disattiva aggiornamenti automatici dell’applicazione.
 policy-AppUpdateURL = Imposta URL personalizzato per aggiornamento applicazione.
 policy-Authentication = Configura autenticazione integrata per i siti in cui è supportata.
 policy-BlockAboutAddons = Blocca accesso al gestore componenti aggiuntivi (about:addons).
@@ -20,9 +21,11 @@ policy-Bookmarks = Crea segnalibri nella barra dei segnalibri, nel menu segnalib
 policy-CaptivePortal = Attiva o disattiva supporto per captive portal.
 policy-CertificatesDescription = Aggiungi certificati o utilizza i certificati predefiniti (built-in).
 policy-Cookies = Consenti o nega ai siti web di impostare cookie.
+policy-DisabledCiphers = Disattiva cifrature.
 policy-DefaultDownloadDirectory = Imposta la cartella predefinita per i download.
 policy-DisableAppUpdate = Blocca l’aggiornamento del browser.
 policy-DisableBuiltinPDFViewer = Disattiva PDF.js, il lettore PDF integrato in { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Impedisci al “default browser agent” di eseguire qualsiasi azione. Applicabile solo per Windows, il servizio non è disponibile in altri sistemi operativi.
 policy-DisableDeveloperTools = Blocca accesso agli strumenti di sviluppo.
 policy-DisableFeedbackCommands = Disattiva i comandi per inviare feedback dal menu Aiuto (“Invia feedback…” e “Segnala un sito ingannevole…”).
 policy-DisableFirefoxAccounts = Disattiva i servizi basati sugli { -fxaccount-brand-name }, incluso Sync.
@@ -66,7 +69,6 @@ policy-OfferToSaveLoginsDefault = Imposta il valore predefinito per consentire a
 policy-OverrideFirstRunPage = Sostituisci la pagina visualizzata alla prima esecuzione. Impostare questo criterio con un valore vuoto per disattivarne la visualizzazione.
 policy-OverridePostUpdatePage = Sostituisci la pagina “Novità” visualizzata dopo un aggiornamento. Impostare questo criterio con un valore vuoto per disattivarne la visualizzazione.
 policy-PasswordManagerEnabled = Attiva il salvataggio delle password nel gestore password.
-policy-Permissions = Configura i permessi per fotocamera, microfono, posizione e notifiche.
 policy-Permissions2 = Configura i permessi per fotocamera, microfono, posizione, notifiche e riproduzione automatica.
 policy-PopupBlocking = Consenti ad alcuni siti web di visualizzare finestre pop-up per impostazione predefinita.
 policy-Preferences = Imposta un gruppo di preferenze e bloccane il valore.

@@ -129,18 +129,19 @@ cfr-whatsnew-searchbar-title = Escreva menos e encontre mais, com a barra de end
 #   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
 cfr-whatsnew-searchbar-body-enginename = Aceda aos sites que mais utiliza, com um único clique na barra de endereço. Encontre coisas mais rapidamente com os resultados do { $searchEngineName } e o seu histórico de navegação.
 cfr-whatsnew-searchbar-body-generic = Aceda aos sites que mais utiliza, com um único clique na barra de endereço. Encontre coisas mais rapidamente com os resultados de pesquisa do seu histórico de navegação.
+cfr-whatsnew-searchbar-body-topsites = Agora, basta selecionar a barra de endereço e será expandida uma caixa com ligações para os principais sites.
 cfr-whatsnew-searchbar-icon-alt-text = Ícone de lupa
 
 ## Picture-in-Picture
 
 cfr-whatsnew-pip-header = Veja vídeos enquanto navega
-cfr-whatsnew-pip-body = A funcionalidade de vídeo em janela flutuante apresenta o vídeo numa janela flutuante para que possa assistir enquanto trabalha em outros separadores.
+cfr-whatsnew-pip-body = A funcionalidade de vídeo em janela flutuante apresenta o vídeo numa janela independente para que possa assistir ao vídeo enquanto navega nos outros separadores.
 cfr-whatsnew-pip-cta = Saber mais
 
 ## Permission Prompt
 
-cfr-whatsnew-permission-prompt-header = Menos pop-ups irritantes do site
-cfr-whatsnew-permission-prompt-body = O { -brand-shorter-name } agora impede que os sites solicitem de forma automática o envio de mensagens pop-up.
+cfr-whatsnew-permission-prompt-header = Menos pop-ups irritantes
+cfr-whatsnew-permission-prompt-body = Agora o { -brand-shorter-name } impede que os sites solicitem, de forma automática, o envio de mensagens em pop-ups.
 cfr-whatsnew-permission-prompt-cta = Saber mais
 
 ## Fingerprinter Counter
@@ -153,10 +154,10 @@ cfr-whatsnew-fingerprinter-counter-header =
         [one] Identificador bloqueado
        *[other] Identificadores bloqueados
     }
-cfr-whatsnew-fingerprinter-counter-body = O { -brand-shorter-name } bloqueia muitos identificadores que recolhem informações em segredo sobre o seu dispositivo e ações para criar um perfil de publicidade sobre si.
+cfr-whatsnew-fingerprinter-counter-body = O { -brand-shorter-name } bloqueia muitos identificadores que recolhem, em segredo, informações sobre o seu dispositivo e ações para criar um perfil publicitário de si.
 # Message variation when fingerprinters count is less than 10
 cfr-whatsnew-fingerprinter-counter-header-alt = Identificadores
-cfr-whatsnew-fingerprinter-counter-body-alt = O { -brand-shorter-name } pode bloquear muitos identificadores que recolhem informações em segredo sobre o seu dispositivo e ações para criar um perfil de publicidade sobre si.
+cfr-whatsnew-fingerprinter-counter-body-alt = O { -brand-shorter-name } pode bloquear muitos identificadores que recolhem, em segredo, informações sobre o seu dispositivo e ações para criar um perfil publicitário de si.
 
 ## Bookmark Sync
 

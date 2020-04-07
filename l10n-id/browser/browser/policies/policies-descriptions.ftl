@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Tetapkan kebijakan yang dapat diakses WebExtensions melalui chrome.storage.managed.
+policy-AppAutoUpdate = Aktifkan atau nonaktifkan pembaruan aplikasi otomatis.
 policy-AppUpdateURL = Atur URL pemutakhiran aplikasi khusus
 policy-Authentication = Atur autentikasi terintegrasi untuk situs lain yang mendukung.
 policy-BlockAboutAddons = Blokir akses ke Pengelola Pengaya (about:addons).
@@ -21,6 +22,7 @@ policy-Bookmarks = Buat markah pada bilah alat Markah, menu Markah, atau folder 
 policy-CaptivePortal = Aktifkan atau nonaktifkan dukungan captive portal.
 policy-CertificatesDescription = Tambahkan sertifikat atau gunakan sertifikat bawaan.
 policy-Cookies = Izinkan atau tolak situs untuk menyetel kuki.
+policy-DisabledCiphers = Nonaktifkan ciphers.
 policy-DefaultDownloadDirectory = Atur direktori unduhan baku.
 policy-DisableAppUpdate = Cegah peramban untuk memperbarui.
 policy-DisableBuiltinPDFViewer = Nonaktifkan PDF.js, penampil PDF bawaan di { -brand-short-name }.
@@ -72,7 +74,6 @@ policy-OfferToSaveLoginsDefault = Setel nilai default untuk mengizinkan { -brand
 policy-OverrideFirstRunPage = Ganti laman pertama yang dibuka. Setel kebijakan ini menjadi kosong jika ingin menonaktifkan laman pertama yang dibuka.
 policy-OverridePostUpdatePage = Ganti laman "Yang Baru" yang tampil setelah pembaruan. Setel kebijakan ini menjadi kosong jika ingin menonaktifkan laman setelah pembaruan.
 policy-PasswordManagerEnabled = Aktifkan penyimpanan sandi melalui manajer sandi.
-policy-Permissions = Atur izin untuk kamera, mikrofon, lokasi, dan notifikasi.
 policy-Permissions2 = Atur izin untuk kamera, mikrofon, lokasi, notifikasi, dan putar-otomatis.
 policy-PopupBlocking = Izinkan situs tertentu untuk menampilkan pop-up secara otomatis.
 policy-Preferences = Tetapkan dan kunci nilai untuk subset preferensi.
@@ -88,5 +89,6 @@ policy-SecurityDevices = Pasang modul PKCS #11.
 policy-SSLVersionMax = Tetapkan versi SSL maksimum.
 policy-SSLVersionMin = Tetapkan versi SSL minimum.
 policy-SupportMenu = Tambahkan item menu dukungan khusus pada menu bantuan.
+policy-UserMessaging = Jangan tampilkan pesan tertentu kepada pengguna.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Blokir situs web agar tidak dikunjungi. Lihat dokumentasi lebih lanjut untuk formatnya.

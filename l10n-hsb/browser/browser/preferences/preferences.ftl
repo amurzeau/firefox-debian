@@ -527,7 +527,7 @@ search-bar-header = Pytanske polo
 search-bar-hidden =
     .label = Wužiwajće adresowe polo za pytanje a nawigaciju
 search-bar-shown =
-    .label = Pytanske polo symbolowej lajsće přidać
+    .label = Symbolowej lajsće pytanske polo přidać
 search-engine-default-header = Standardna pytawa
 search-engine-default-desc = Wubjerće standardnu pytawu, kotraž ma so w adresowym polu a pytanskim polu wužiwać.
 search-engine-default-desc-2 = To je waša standardna pytawa w adresowej lajsće a pytanskej lajsće. Móžeće je kóždy raz přepinać.
@@ -771,7 +771,7 @@ forms-generate-passwords =
     .label = Mócne hesła wutworić a namjetować
     .accesskey = h
 forms-breach-alerts =
-    .label = Warnowanja za hesła zranjenych websydłow
+    .label = Warnowanja za hesła přez datowu dźěru potrjechenych websydłow
     .accesskey = z
 forms-breach-alerts-learn-more-link = Dalše informacije
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
@@ -789,6 +789,17 @@ forms-master-pw-change =
     .accesskey = m
 forms-master-pw-fips-title = Sće tuchwilu we FIPS-modusu. FIPS sej hłowne hesło žada.
 forms-master-pw-fips-desc = Změnjenje hesła njeje so poradźiło
+
+## OS Authentication dialog
+
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message = Přepruwujće swoju identitu, zo byšće hłowne hesło wutworił.
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = hłowne hesło wutworić
+master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
 

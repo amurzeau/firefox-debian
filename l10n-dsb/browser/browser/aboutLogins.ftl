@@ -26,6 +26,8 @@ menu =
     .title = Meni wócyniś
 # This menuitem is only visible on Windows
 menu-menuitem-import = Gronidła importěrowaś…
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = Z drugego wobglědowaka importěrowaś…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Nastajenja
@@ -86,10 +88,6 @@ about-logins-login-item-username =
 login-item-copy-username-button-text = Kopěrowaś
 login-item-copied-username-button-text = Kopěrowany!
 login-item-password-label = Gronidło
-login-item-password-reveal-checkbox-show =
-    .title = Gronidło pokazaś
-login-item-password-reveal-checkbox-hide =
-    .title = Gronidła schowaś
 login-item-password-reveal-checkbox =
     .aria-label = Gronidło pokazaś
 login-item-copy-password-button-text = Kopěrowaś
@@ -100,6 +98,30 @@ login-item-cancel-button = Pśetergnuś
 login-item-time-changed = Slědna změna: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Załožony: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Slědne wužyśe: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = Pśeglědajśo swóju identitu, aby skłaźone pśizjawjenje wobźěłał.
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = skłaźone pśizjawjenje wobźěłaś
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = Pśeglědajśo swóju identitu, aby skłaźone gronidło pokazał.
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = skłaźone gronidło pokazaś
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = Pśeglědajśo swóju identitu, aby skłaźone gronidło kopěrował.
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = skłaźone gronidło kopěrowaś
 
 ## Master Password notification
 

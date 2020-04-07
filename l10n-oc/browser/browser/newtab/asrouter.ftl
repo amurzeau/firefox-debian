@@ -59,17 +59,20 @@ cfr-doorhanger-extension-total-users =
         [one] { $total } utilizaire
        *[other] { $total } utilizaires
     }
+cfr-doorhanger-pintab-description = Accedissètz facilament als sites mai utilizats. Gardatz los sites dobèrts dins un onglets (amai quand reaviatz)
 
 ## These messages are steps on how to use the feature and are shown together.
 
 cfr-doorhanger-pintab-step1 = <b>Clic drech</b> sus l’onglet que volètz penjar.
 cfr-doorhanger-pintab-step2 = Seleccionatz <b>Penjar aqueste onglet</b> al menú.
+cfr-doorhanger-pintab-step3 = Se lo site a una mesa a jorn, veiretz un punt blau sus vòstre onglet penjat.
 cfr-doorhanger-pintab-animation-pause = Pausa
-cfr-doorhanger-pintab-animation-resume = Reprene
+cfr-doorhanger-pintab-animation-resume = Reprendre
 
 ## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Sincronizatz vòstres marcapaginas pertot.
+cfr-doorhanger-bookmark-fxa-body = Genial ! Ara, contunhetz pas sens aqueste marcapagina suls vòstres periferics mobils. Començatz amb { -fxaccount-brand-name }.
 cfr-doorhanger-bookmark-fxa-link-text = Sincronizar los marcapaginas ara…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Boton tampar
@@ -78,6 +81,7 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 ## Protections panel
 
 cfr-protections-panel-header = Navegatz sens èsser seguit
+cfr-protections-panel-body = Gardatz vòstras donadas per vos. { -brand-short-name } vos protegís de la màger part dels traçadors mai comuns que vos seguisson en linha.
 cfr-protections-panel-link-text = Ne saber mai
 
 ## What's New toolbar button and panel
@@ -91,7 +95,13 @@ cfr-whatsnew-button =
 cfr-whatsnew-panel-header = Qué de nòu
 cfr-whatsnew-release-notes-link-text = Legir la nòta de version
 cfr-whatsnew-fx70-title = { -brand-short-name } luta encara mai per vòstra vida privada
+cfr-whatsnew-fx70-body =
+    La darrièra mesa a jorn melhora la foncion de proteccion
+    contra lo seguiment e permet de crear de senhals segurs per cada site.
 cfr-whatsnew-tracking-protect-title = Protegissètz-vos dels traçadors
+cfr-whatsnew-tracking-protect-body =
+    { -brand-short-name } bloca los elements de seguiment dels malhums socials e intersites
+    mai populars  que vos pistan en linha.
 cfr-whatsnew-tracking-protect-link-text = Consultar vòstre rapòrt
 # This string is displayed before a large numeral that indicates the total
 # number of tracking elements blocked. Don’t add $blockedCount to your
@@ -107,20 +117,31 @@ cfr-whatsnew-lockwise-backup-title = Salvagardatz vòstres senhals
 cfr-whatsnew-lockwise-backup-body = Ara podètz generar vòstres senhals securizats e i accedir de pertot ont vos connectatz.
 cfr-whatsnew-lockwise-backup-link-text = Activar las salvagardas
 cfr-whatsnew-lockwise-take-title = Emportatz vòstres senhals amb vos
+cfr-whatsnew-lockwise-take-body =
+    L'aplicacion mobila { -lockwise-brand-short-name } vos permet d'accedir en tota seguretat vòstres
+    senhals salvats d'ont que siá.
 cfr-whatsnew-lockwise-take-link-text = Obténer l’aplicacion
 
 ## Search Bar
 
-cfr-whatsnew-searchbar-title = Escrigatz mens, trobatz mai amb la barra d’adreça
+cfr-whatsnew-searchbar-title = Escrivètz mens, trobatz mai amb la barra d’adreça
+# Variables:
+#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
+cfr-whatsnew-searchbar-body-enginename = Accedissètz als sites qu'utilisatz mai en un sol clic dins la barra d'adreça. Trobatz las causas mai rapidament amb los resultats de { $searchEngineName } e vòstre istoric de navigacion.
+cfr-whatsnew-searchbar-body-generic = Accedissètz als sites qu'utilisatz mai en un sol clic dins la barra d'adreça. Trobatz las causas mai rapidament amb los resultats de recerca de vòstre istoric de navigacion.
+cfr-whatsnew-searchbar-body-topsites = Ara, seleccionatz simplament la barra d'adreça, e una bóstia s'agrandirà amb de ligams cap a vòstres melhors sites.
 cfr-whatsnew-searchbar-icon-alt-text = Icòna de la lópia
 
 ## Picture-in-Picture
 
 cfr-whatsnew-pip-header = Agachatz de vidèos en navegant
+cfr-whatsnew-pip-body = L'imatge dins l'imatge fa aparéisser la vidèo dins una fenèstra flotanta que poscatz la gaitar tot en trabalhant dins d'autres onglets.
 cfr-whatsnew-pip-cta = Ne saber mai
 
 ## Permission Prompt
 
+cfr-whatsnew-permission-prompt-header = Mens de fenèstras surgissentas tediosas
+cfr-whatsnew-permission-prompt-body = Ara { -brand-shorter-name } bloca los sites que demandan automaticament de vos enviar de messatges sorgissents.
 cfr-whatsnew-permission-prompt-cta = Ne saber mai
 
 ## Fingerprinter Counter
@@ -133,12 +154,15 @@ cfr-whatsnew-fingerprinter-counter-header =
         [one] Generador d’emprentas numericas
        *[other] Generadors d’emprentas numericas
     }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } bloca fòrça generadors d’empruntas numericas qu’amassan d‘informacions tocant vòstre periferic e vòstras accions per crear un perfil publicitari vòstre.
 # Message variation when fingerprinters count is less than 10
 cfr-whatsnew-fingerprinter-counter-header-alt = Generadors d’emprentas numericas
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } pòt blocar los generadors d’empruntas numericas qu’amassan d‘informacions tocant vòstre periferic e vòstras accions per crear un perfil publicitari vòstre.
 
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Accedissètz a aqueste onglet de vòstre mobil estant
+cfr-doorhanger-sync-bookmarks-body = Emportatz vòstres marcapaginas, senhals, istoric e mai pertot ont vos connectat a { -brand-product-name }.
 cfr-doorhanger-sync-bookmarks-ok-button = Activar { -sync-brand-short-name }
     .accesskey = A
 
@@ -151,12 +175,16 @@ cfr-doorhanger-sync-logins-ok-button = Activar { -sync-brand-short-name }
 
 ## Send Tab
 
+cfr-doorhanger-send-tab-header = Legissètz aquò en desplaçament
+cfr-doorhanger-send-tab-recipe-header = Emportatz aquesta recepta a la cosina
+cfr-doorhanger-send-tab-body = « Enviar l’onglet » vos permet de partejar aisidament aqueste ligam sus vòstre mobil o pertot ont siatz connectat a { -brand-product-name }.
 cfr-doorhanger-send-tab-ok-button = Ensajatz d’enviar un onglet
     .accesskey = t
 
 ## Firefox Send
 
 cfr-doorhanger-firefox-send-header = Partejatz aqueste PDF de forma segura
+cfr-doorhanger-firefox-send-body = Gardatz vòstres documents sensibles a l'abric dels agaches indiscrèts amb un chiframent del cap a la fin e un ligam que dispareis quand avètz acabat.
 cfr-doorhanger-firefox-send-ok-button = Ensajatz { -send-brand-name }
     .accesskey = t
 
@@ -169,7 +197,9 @@ cfr-doorhanger-socialtracking-close-button = Tampar
 cfr-doorhanger-socialtracking-dont-show-again = Me mostrar pas mai de messatges coma aqueste
     .accesskey = d
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } a empachat un traçador de malhum social de vos pistar aquí
+cfr-doorhanger-socialtracking-description = Vòstra vida privada es importanta. Ara { -brand-short-name } bloca los elements de seguiment dels malhums socials mai populars, per limitar atal la quantitat de donadas que pòdon reculhir sus vòstra activitat en linha.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } a blocat un traçador d’emprunta numerica sus aquesta pagina
+cfr-doorhanger-fingerprinters-description = Lo respècte de vòstra vida privada es important. Ara { -brand-short-name } bloca los generadors d’emprentas numericas, que reculhisson d’informacions unicas e identificablas de vòstre periferic per vos pistar.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } a blocat un minaire de criptomonedas sus aquesta pagina
 cfr-doorhanger-cryptominers-description = Vòstra vida privada es importanta. Ara { -brand-short-name } bloca los minaires de criptomonedas, qu’utilizan la poténcia de calcul de vòstre ordenador per minar de moneda numerica.
 

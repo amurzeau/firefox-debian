@@ -26,6 +26,8 @@ menu =
     .title = Avrir il menu
 # This menuitem is only visible on Windows
 menu-menuitem-import = Importar pleds-clav…
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = Importar dad in auter navigatur…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Preferenzas
@@ -84,10 +86,6 @@ about-logins-login-item-username =
 login-item-copy-username-button-text = Copiar
 login-item-copied-username-button-text = Copià!
 login-item-password-label = Pled-clav
-login-item-password-reveal-checkbox-show =
-    .title = Mussar il pled-clav
-login-item-password-reveal-checkbox-hide =
-    .title = Zuppentar il pled-clav
 login-item-password-reveal-checkbox =
     .aria-label = Mussar il pled-clav
 login-item-copy-password-button-text = Copiar
@@ -98,6 +96,30 @@ login-item-cancel-button = Interrumper
 login-item-time-changed = Ultima midada: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Creà: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Ultima utilisaziun: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = Verifitgescha tia identitad per modifitgar las infurmaziuns d'annunzia memorisadas.
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = modifitgar l'infurmaziun d'annunzia memorisada
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = Verifitgescha tia identitad per laschar mussar il pled-clav memorisà.
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = mussar il pled-clav memorisà
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = Verifitgescha tia identitad per copiar il pled-clav memorisà.
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = copiar il pled-clav memorisà
 
 ## Master Password notification
 

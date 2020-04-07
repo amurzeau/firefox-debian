@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Beliedsrigels ynstelle dy't troch WebExtensions tagong hawwe fia chrome.storage.managed.
+policy-AppAutoUpdate = Automatyske applikaasjefernijing yn- of útskeakelje.
 policy-AppUpdateURL = Oanpaste app-fernijings-URL ynstelle.
 policy-Authentication = Yntegrearre ferifikaasje konfigurearje foar websiden dy't it stypje.
 policy-BlockAboutAddons = Tagong ta de add-ons-behearder (about:addons) blokkearje.
@@ -20,6 +21,7 @@ policy-BlockAboutSupport = Tagong ta de side about:support blokkearje.
 policy-CaptivePortal = Stipe foar hotspot-oanmeldingsside yn- of útskeakelje.
 policy-CertificatesDescription = Sertifikaten tafoegje of ynboude sertifikaten brûke.
 policy-Cookies = Tastean of wegerje dat websites cookies ynstelle.
+policy-DisabledCiphers = Kodearringssuites útskeakelje.
 policy-DefaultDownloadDirectory = Standert downloadmap ynstelle.
 policy-DisableAppUpdate = Foarkomme dat { -brand-short-name } bywurke wurdt.
 policy-DisableDeveloperTools = Tagong ta de ûntwikkelershelpmiddelen blokkearje.

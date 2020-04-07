@@ -26,6 +26,8 @@ menu =
     .title = მენიუს გახსნა
 # This menuitem is only visible on Windows
 menu-menuitem-import = პაროლების გადმოტანა...
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = გადმოტანა სხვა ბრაუზერიდან…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] პარამეტრები
@@ -84,10 +86,6 @@ about-logins-login-item-username =
 login-item-copy-username-button-text = ასლი
 login-item-copied-username-button-text = ასლი აღებულია!
 login-item-password-label = პაროლი
-login-item-password-reveal-checkbox-show =
-    .title = პაროლის ჩვენება
-login-item-password-reveal-checkbox-hide =
-    .title = პაროლის დამალვა
 login-item-password-reveal-checkbox =
     .aria-label = პაროლის ჩვენება
 login-item-copy-password-button-text = ასლი
@@ -98,6 +96,30 @@ login-item-cancel-button = გაუქმება
 login-item-time-changed = ბოლო ცვლილება: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = შექმნილი: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = ბოლო გამოყენება: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = თქვენი ვინაობის დამოწმება, შენახული მონაცემის ჩასასწორებლად.
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = შენახული მონაცემის ჩასასწორებლად
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = თქვენი ვინაობის დამოწმება, შენახულ მონაცემებთან წვდომისთვის.
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = შენახულ მონაცემებთან წვდომისთვის
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = თქვენი ვინაობის დამოწმება, შენახული პაროლის ასლის ასაღებად.
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = შენახული პაროლის ასლის ასაღებად
 
 ## Master Password notification
 
