@@ -26,9 +26,6 @@ ac_add_options --with-system-nspr # MOZ_SYSTEM_NSPR=1
 %if USE_SYSTEM_NSS
 ac_add_options --with-system-nss # MOZ_SYSTEM_NSS=1
 %endif
-%if USE_SYSTEM_SQLITE
-ac_add_options --enable-system-sqlite # MOZ_SYSTEM_SQLITE=1
-%endif
 %if USE_SYSTEM_VPX
 ac_add_options --with-system-libvpx # MOZ_SYSTEM_LIBVPX=1
 %endif

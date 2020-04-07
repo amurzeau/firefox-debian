@@ -22,7 +22,7 @@ include debian/upstream.mk
 
 SYSTEM_LIBS = zlib ffi
 ifeq (,$(filter jessie stretch buster,$(DIST)))
-SYSTEM_LIBS += nspr nss sqlite
+SYSTEM_LIBS += nspr nss
 endif
 ifeq (,$(filter jessie stretch,$(DIST)))
 SYSTEM_LIBS += libevent
