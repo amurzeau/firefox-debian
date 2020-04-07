@@ -31,7 +31,7 @@ Build-Depends: autotools-dev,
                libnspr4-dev (>= 2:@NSPR_VERSION@~),
 %endif
 %if USE_SYSTEM_NSS
-%define NSS_VERSION 3.50
+%define NSS_VERSION 3.51
                libnss3-dev (>= 2:@NSS_VERSION@~),
 %endif
 %if USE_SYSTEM_VPX
@@ -52,8 +52,8 @@ Build-Depends: autotools-dev,
 %else
                nasm (>= 2.13) [amd64 i386],
 %endif
-               rustc (>= 1.39),
-               cargo (>= 0.40),
+               rustc (>= 1.41),
+               cargo (>= 0.42),
 %if DIST == jessie || DIST == stretch
                llvm-4.0-dev,
                libclang-4.0-dev,
@@ -63,11 +63,11 @@ Build-Depends: autotools-dev,
                libclang-dev,
                clang,
 %endif
-               cbindgen (>= 0.13.0),
+               cbindgen (>= 0.13.1),
 %if DIST == jessie || DIST == stretch
-               nodejs-mozilla (>= 8.11),
+               nodejs-mozilla (>= 10),
 %else
-               nodejs (>= 8.11),
+               nodejs (>= 10),
 %endif
                zip,
                unzip,
