@@ -27,7 +27,7 @@ endif
 ifeq (,$(filter jessie stretch,$(DIST)))
 SYSTEM_LIBS += libevent
 endif
-ifeq (,$(filter jessie stretch bullseye,$(DIST)))
+ifeq (,$(filter jessie stretch buster,$(DIST)))
 SYSTEM_LIBS += vpx
 endif
 
