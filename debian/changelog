@@ -1,3 +1,11 @@
+firefox (75.0-2) unstable; urgency=medium
+
+  * build/moz.configure/util.configure: In configure, pass extra compiler
+    flags after source path. Fixes FTBFS with --with-system-libvpx with
+    gcc-9 >= 9-20190125-2.
+
+ -- Mike Hommey <glandium@debian.org>  Sun, 19 Apr 2020 09:03:28 +0900
+
 firefox (75.0-1) unstable; urgency=medium
 
   * New upstream release
