@@ -2,6 +2,7 @@ fixes/Allow-.js-preference-files-to-set-locked-prefs-with-.patch
 fixes/Bug-1526653-Include-struct-definitions-for-user_vfp-.patch
 fixes/Bug-1556197-amend-Bug-1544631-for-fixing-mips32.patch
 fixes/Bug-1621518-Fix-build-errors-with-Werror-format-secu.patch
+fixes/Bug-In-configure-pass-extra-compiler-flags-after-sou.patch
 porting/Add-xptcall-support-for-SH4-processors.patch
 porting/NSS-Fix-FTBFS-on-Hurd-because-of-MAXPATHLEN.patch
 porting/Work-around-Debian-bug-844357.patch
