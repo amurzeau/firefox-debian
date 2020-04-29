@@ -57,6 +57,10 @@ newtab-confirm-delete-history-p2 = Ова радња се не може опоз
 newtab-menu-section-tooltip =
     .title = Отвори мени
     .aria-label = Отвори мени
+# Tooltip for dismiss button
+newtab-dismiss-button-tooltip =
+    .title = Уклони
+    .aria-label = Уклони
 # This tooltip is for the context menu of Pocket cards or Topsites
 # Variables:
 #  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
@@ -86,6 +90,11 @@ newtab-menu-show-privacy-info = Наши спонзори и ваша прива
 
 newtab-privacy-modal-button-done = Готово
 newtab-privacy-modal-header = Ваша приватност је битна.
+newtab-privacy-modal-paragraph-2 =
+    Поред дељења занимљивих прича, такође вам приказујемо релевантне,
+    пажљиво проверен садржаје одабраних спонзора. Будите сигурни, <strong>ваши подаци претраживања
+    никада не остављају вашу личну { -brand-product-name } копију</strong> — ми их не видимо,
+    као ни наши спонзори.
 newtab-privacy-modal-link = Сазнајте како ради приватност на новом језичку
 
 ##
@@ -123,6 +132,10 @@ newtab-label-removed-bookmark = Забелешка је уклоњена
 newtab-label-recommended = У тренду
 newtab-label-saved = Сачувано у { -pocket-brand-name }
 newtab-label-download = Преузето
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } · Спонзорисано
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -175,6 +188,7 @@ newtab-discovery-empty-section-topstories-timed-out = Упс! Нисмо мог�
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Популарне теме:
 newtab-pocket-more-recommendations = Још препорука
+newtab-pocket-learn-more = Сазнајте више
 newtab-pocket-cta-button = Преузмите { -pocket-brand-name }
 newtab-pocket-cta-text = Сачувајте приче које волите у { -pocket-brand-name } и напуните свој ум фасцинантним причама.
 

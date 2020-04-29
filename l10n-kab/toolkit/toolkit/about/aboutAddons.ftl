@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Sebded azegrir seg ufaylu…
     .accesskey = S
 help-button = Tallelt izegrar
+sidebar-help-button-title =
+    .title = Tallelt izegrar
 preferences =
     { PLATFORM() ->
         [windows] Iɣewwaren n { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Ifecka i yizegrar imaṛṛa
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Iɣewwaren n { -brand-short-name }
+           *[other] Ismenyifen n { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Kra n iseɣzaf ur ţwasenqeden ara
 show-all-extensions-button =
@@ -94,11 +102,16 @@ detail-update-manual =
     .tooltiptext = Ur sebdad ara ileqman s wudem awurman
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Sker deg usfaylu uslig
+detail-private-browsing-description2 = Ma yettwasireg, asiɣzef ad yekcem ɣer urmud-ik srid deg tunigt tusrigt.<label data-l10n-name="detail-private-browsing-learn-more">Issin ugar</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = Ur yettusireg ara deg isfuyla usligen
+detail-private-disallowed-description = Asiɣzef-a ur yettwaselkam ara deg tunigt tusrigt. <label data-l10n-name="detail-private-browsing-learn-more">Issin ugar</label>
+detail-private-disallowed-description2 = Asiɣzef-a ur yettwaselkam ara deg tunigt tusrigt. <a data-l10n-name="learn-more">Issin ugar</label>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Yesra anekcum ɣer isfuyla usligen
+detail-private-required-description = Asiɣzef-a ɣur-s anekcum ɣer urmud-ik srid deg tunigt. <label data-l10n-name="detail-private-browsing-learn-more">Issin ugar</label>
+detail-private-required-description2 = Asiɣzef-a ɣur-s anekcum ɣer urmud-ik srid deg tunigt. <a data-l10n-name="learn-more">Issin ugar</label>
 detail-private-browsing-on =
     .label = Sireg
     .tooltiptext = Sermed aya deg iccer uslig
@@ -147,6 +160,12 @@ legacy-warning-show-legacy = Sken akk iseɣzaf iqburen
 legacy-extensions =
     .value = Iseγzaf iqburen
 legacy-extensions-description = Iseγzaf-agi ur sεin ara ilugan n { -brand-short-name } imiranen γef aya ittwasensen. <label data-l10n-name="legacy-learn-more">Issin ugar ɣef usnifel ɣer izegrar</label>
+private-browsing-description2 =
+    { -brand-short-name } ittbeddil tarrayt make iteddu deg tunigt tusrigt. Ula dyiwen n usiɣzef are ternuḍ ɣer 
+    { -brand-short-name } ur yettwaselkam swudem amezwer deg usfaylu uslig. Ma yella ur t-termideḍ ara deg yiɣewwaren, 
+    asiɣzef ur iteddu ara deg tunigt tusrigt, daɣen ur ikeččem ara ɣer urmud-ik
+    srid. Nexdem abeddel-a akken akken tunigt-ik tusligt ad teqqim d tabadnit.
+    <label data-l10n-name="private-browsing-learn-more">Issin amek ara tesferkeḍ iɣewwaren n usiɣzef</label>
 extensions-view-discopane =
     .name = Iwellihen
     .tooltiptext = { extensions-view-discopane.name }
@@ -156,6 +175,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Ileqman yellan
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Iwellihen
+addon-category-discover-title =
+    .title = Iwellihen
+addon-category-extension = Isiɣzaf
+addon-category-extension-title =
+    .title = Isiɣzaf
+addon-category-theme = Isental
+addon-category-theme-title =
+    .title = Isental
+addon-category-plugin = Izegrar
+addon-category-plugin-title =
+    .title = Izegrar
+addon-category-dictionary = Imawalen
+addon-category-dictionary-title =
+    .title = Imawalen
+addon-category-locale = Tutlayin
+addon-category-locale-title =
+    .title = Tutlayin
+addon-category-available-updates = Ileqman yellan
+addon-category-available-updates-title =
+    .title = Ileqman yellan
+addon-category-recent-updates = Ileqman n melmi kan
+addon-category-recent-updates-title =
+    .title = Ileqman n melmi kan
 
 ## These are global warnings
 
@@ -268,6 +311,7 @@ shortcuts-no-commands = Isiɣzaf id-iteddun ur sɛin ara inegzumen:
 shortcuts-input =
     .placeholder = Sekcem anegzum
 shortcuts-browserAction = Rmed isiɣzaf
+shortcuts-browserAction2 = Rmed taqeffalt n ufeggag n yifecka
 shortcuts-pageAction = Rmed tigawt n usebter
 shortcuts-sidebarAction = Sken/Fer agalis adisan
 shortcuts-modifier-mac = Seddu Ctrl, Alt, neɣ ⌘
@@ -277,6 +321,10 @@ shortcuts-letter = Sekcem asekkil
 shortcuts-system = Ur yezmir ad isnifel anegzum n { -brand-short-name }
 # String displayed in warning label when there is a duplicate shortcut
 shortcuts-duplicate = Sleg anegzum
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } yettwaseqdec am unegzum deg ddeqs n yimukan. Inegzumen imsinen zemren ad d-glun s tiddin ur nelhi ara.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -289,9 +337,18 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Sken qel
 go-back-button =
     .tooltiptext = Uɣal ɣer deffir
+header-back-button =
+    .title = Uɣal ɣer deffir
 
 ## Recommended add-ons page
 
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro = Isiɣzaf akked isental am yisnasen i  yiminig-ik ara k-yeǧǧen ad temmestneḍ awalen-ik uffiren, ad tessadreḍ tividyutin, ad d-tafeḍ tignatin yelhan, ad tesweḥleḍ adellel udhim, ad tbeddleḍ udem n yiminig,atg. Iseɣzanen-a imeẓyanen deg tuget xeddmen-ten ineflayen ilelliyen. A-tt-a kra n tefrant anida { -brand-product-name }<a data-l10n-name="learn-more-trigger">yettwellih</a> i tɣellist, tamellit akked tmahilin meqqren.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Kra seg yiwellihen-a d udmawanen. Tagrumma-a tebna ɣef yisiɣzaf-nniḍen
+    i tesbeddeḍ, iɣewwaren n umaɣnu-ik akked tiddadanin n useqdec.
 discopane-notice-learn-more = Lmed ugar
 privacy-policy = Tasertit n tbaḍnit
 # Refers to the author of an add-on, shown below the name of the add-on.
@@ -393,6 +450,7 @@ addon-badge-private-browsing-allowed =
 addon-badge-private-browsing-allowed2 =
     .title = Yettusireg def usfaylu uslig kan
     .aria-label = { addon-badge-private-browsing-allowed2.title }
+addon-detail-private-browsing-help = Ma yettwasireg, asiɣzef ad yekcem ɣer urmud-ik srid deg tunigt tusrigt.<a data-l10n-name="learn-more">Issin ugar</label>
 addon-detail-private-browsing-allow = Sireg
 addon-detail-private-browsing-disallow = Ur ttaǧǧa ara
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
@@ -400,6 +458,11 @@ addon-detail-private-browsing-disallow = Ur ttaǧǧa ara
 addon-badge-recommended =
     .title = Ihul
     .alt = Ihul
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended2 =
+    .title = { -brand-product-name } ur ittwelleh ala isiɣzaf yemṣadan d yilugan-nneɣ icudden ɣer tɣellist akked timellit.
+    .aria-label = { addon-badge-recommended2.title }
 available-updates-heading = Ileqman yellan
 recent-updates-heading = Ileqman n melmi kan
 release-notes-loading = Asali…
@@ -407,6 +470,9 @@ release-notes-error = Suref-aɣ, teḍṛa-d tuccḍa deg usali n iwenniten n lq
 addon-permissions-empty = Asiɣzef-agi ur yesra ara tisirag
 recommended-extensions-heading = Isiɣzaf ihulen
 recommended-themes-heading = Isental ihulen
+# A recommendation for the Firefox Color theme shown at the bottom of the theme
+# list view. The "Firefox Color" name itself should not be translated.
+recommended-theme-1 = Tḥulfaḍ iman-ik tesnulfuyeḍ? <a data-l10n-name="link">Rnu asentel-ik s Firefox Color.</a>
 
 ## Page headings
 

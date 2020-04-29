@@ -55,3 +55,43 @@ cert-error-details-hsts-label = سياسة نقل HTTP الصارمة: { $hasHST
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = تثبيت مفتاح HTTP العام: { $hasHPKP }
 cert-error-details-cert-chain-label = سلسلة الشهادة:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = تعذر الاتصال
+deniedPortAccess-title = هذا العنوان غير مسموح به
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = ممم. نواجه مشكلة في إيجاد ذلك الموقع.
+fileNotFound-title = الملف غير موجود
+fileAccessDenied-title = مُنِع الوصول للملف
+generic-title = عذرا.
+captivePortal-title = لِج إلى الشبكة
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = لا يبدو أن هذا العنوان صحيح.
+netInterrupt-title = قُوطِع الاتصال
+notCached-title = انتهت صلاحية المستند
+netOffline-title = وضع اللا اتصال
+contentEncodingError-title = خطأ في ترميز المحتوى
+unsafeContentType-title = نوع ملف غير آمن
+netReset-title = صُفِّر الاتصال
+netTimeout-title = انتهت مهلة الاتصال
+unknownProtocolFound-title = لم يُفهم العنوان
+proxyConnectFailure-title = يرفض الخادوم الوسيط الاتصالات
+proxyResolveFailure-title = تعذر العثور على الخادوم الوسيط
+redirectLoop-title = لا تعيد الصفحة التوجيه بشكل سليم
+unknownSocketType-title = استجابة غير متوقعة من الخادوم
+nssFailure2-title = فشل الاتصال الآمن
+cspBlocked-title = حجبتها سياسة أمن المحتوى
+xfoBlocked-title = حجبتها سياسة X-Frame-Options
+corruptedContentError-title = خطأ محتوى فاسد
+remoteXUL-title = XUL بعيد
+sslv3Used-title = تعذّر الاتصال بأمان
+inadequateSecurityError-title = اتّصالك غير آمن
+blockedByPolicy-title = الصفحة محجوبة
+clockSkewError-title = ساعة الحاسوب خاطئة
+networkProtocolError-title = عُطل في بروتوكول الشبكة
+nssBadCert-title = تحذير: أمامك خطر أمني محتمل
+nssBadCert-sts-title = لم يجري الاتصال: مشكلة أمنية محتملة
+certerror-mitm-title = تمنع البرمجية { -brand-short-name } من الاتصال بهذا الموقع بطريقة آمنة

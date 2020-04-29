@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = ඇඩෝන ගොනුවෙන් ස්ථාපනය කරන්න…
     .accesskey = I
 help-button = ඇඩෝන සහාය
+sidebar-help-button-title =
+    .title = ඇඩෝන සහාය
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } විකල්ප
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = සියළු ඇඩෝන සඳහා මෙවලම්
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } විකල්ප
+           *[other] { -brand-short-name } අභිප්‍රේත
+        }
 show-unsigned-extensions-button =
     .label = ඇතැම් දිගු තහවුරු කළ නොහැක
 show-all-extensions-button =
@@ -146,6 +154,24 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = පවතින යාවත්කාලීන
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-extension = දිගුකිරීම්
+addon-category-extension-title =
+    .title = දිගුකිරීම්
+addon-category-plugin = ප්ලගීන
+addon-category-plugin-title =
+    .title = ප්ලගීන
+addon-category-dictionary = ශබ්දකෝෂයන්
+addon-category-dictionary-title =
+    .title = ශබ්දකෝෂයන්
+addon-category-locale = භාෂාවන්
+addon-category-locale-title =
+    .title = භාෂාවන්
+addon-category-available-updates = පවතින යාවත්කාලීන
+addon-category-available-updates-title =
+    .title = පවතින යාවත්කාලීන
+addon-category-recent-updates = මෑතකාලීන යාවත්කාලීන
+addon-category-recent-updates-title =
+    .title = මෑතකාලීන යාවත්කාලීන
 
 ## These are global warnings
 

@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Åpne meny
-# This menuitem is only visible on Windows
-menu-menuitem-import = Importer passord…
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Importer fra en annen nettleser…
 menu-menuitem-preferences =
@@ -50,6 +48,7 @@ login-list-sort-label-text = Sorter etter:
 login-list-name-option = Navn (A-Å)
 login-list-name-reverse-option = Navn (Å-A)
 login-list-breached-option = Nettsteder med datalekkasjer
+about-logins-login-list-alerts-option = Varsler
 login-list-last-changed-option = Sist endret
 login-list-last-used-option = Sist brukt
 login-list-intro-title = Fant ingen innlogginger
@@ -61,6 +60,8 @@ login-list-item-subtitle-new-login = Skriv inn innloggingsinformasjon
 login-list-item-subtitle-missing-username = (uten brukernavn)
 about-logins-list-item-breach-icon =
     .title = Nettsted med datalekkasje
+about-logins-list-item-vulnerable-password-icon =
+    .title = Sårbart passord
 
 ## Introduction screen
 
@@ -160,10 +161,25 @@ confirm-discard-changes-dialog-confirm-button = Forkast
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Nettsteds-datalekkasje
 breach-alert-text = Passord ble lekket eller stjålet fra dette nettstedet siden du sist oppdaterte dine innloggingsdetaljer. Endre passordet ditt for å beskytte kontoen din.
 breach-alert-link = Les mer om denne datalekkasjen.
 breach-alert-dismiss =
     .title = Lukk dette varselet
+about-logins-breach-alert-date = Denne datalekkasjen skjedde den { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Gå til { $hostname }
+about-logins-breach-alert-learn-more-link = Les mer
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Sårbart passord
+about-logins-vulnerable-alert-text2 = Dette passordet har blitt brukt på en annen konto som sannsynligvis var i en datalekkasje. Å gjenbruke legitimasjon utgjør en risiko på alle kontoene dine. Endre passordet.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Gå til { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Les mer
 
 ## Error Messages
 

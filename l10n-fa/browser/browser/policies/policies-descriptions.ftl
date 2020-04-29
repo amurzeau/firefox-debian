@@ -23,9 +23,16 @@ policy-DisableAppUpdate = جلوگیری از به روز رسانی مرورگ�
 policy-DisableBuiltinPDFViewer = غیرفعال کردن PDF.js، نمایشگر داخلی PDF در { -brand-short-name }.
 policy-DisableDeveloperTools = دسترسی به ابزارهای توسعه‌دهندگان را مسدود کنید.
 policy-DisableFirefoxAccounts = خدمات برپایه { -fxaccount-brand-name } شامل همگام‌سازی را غیرفعال کن.
+# Firefox Screenshots is the name of the feature, and should not be translated.
+policy-DisableFirefoxScreenshots = ویژگی Screenshots فایرفاکس را غیرفعال کن.
+policy-DisableFirefoxStudies = جلوی { -brand-short-name } را برای انجام مطالعات بگیر.
+policy-DisableForgetButton = دسترسی به دکمه فراموش کردن را مسدود کن.
 policy-DisableFormHistory = جستجو وتاریخچه فرم را به خاطر نسپار.
+policy-DisableMasterPasswordCreation = اگر درست باشد، گذرواژه اصلی نمی‌تواند ایجاد شود.
 policy-DisablePocket = ویژگی ذخیره کردن صفحات وب در Pocket را غیرفعال کن.
 policy-DisablePrivateBrowsing = مرور ناشناس را غیرفعال کن.
+policy-DisableProfileImport = دستور ورود داده از مرورگرهای دیگر در منو را غیرفعال کن.
+policy-DisableProfileRefresh = کلید راه‌اندازی مجدد { -brand-short-name } را در صفحه about:support غیرفعال کن.
 policy-DNSOverHTTPS = پیکربندی DNS بر روی HTTPS.
 policy-DontCheckDefaultBrowser = غیر فعال کردن بررسی مرورگر پیش‌فرض در هنگام راه اندازی
 policy-Proxy = پیکربندی تنظیمات پروکسی

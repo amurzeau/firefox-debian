@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Namesti dodatek iz datoteke …
     .accesskey = I
 help-button = Podpora za dodatke
+sidebar-help-button-title =
+    .title = Podpora za dodatke
 preferences =
     { PLATFORM() ->
         [windows] Možnosti { -brand-short-name }a
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Orodja za vse dodatke
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Možnosti { -brand-short-name }a
+           *[other] Nastavitve { -brand-short-name }a
+        }
 show-unsigned-extensions-button =
     .label = Nekaterih razširitev ni bilo mogoče potrditi
 show-all-extensions-button =
@@ -168,6 +176,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Nove posodobitve
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Priporočila
+addon-category-discover-title =
+    .title = Priporočila
+addon-category-extension = Razširitve
+addon-category-extension-title =
+    .title = Razširitve
+addon-category-theme = Teme
+addon-category-theme-title =
+    .title = Teme
+addon-category-plugin = Vtičniki
+addon-category-plugin-title =
+    .title = Vtičniki
+addon-category-dictionary = Slovarji
+addon-category-dictionary-title =
+    .title = Slovarji
+addon-category-locale = Jeziki
+addon-category-locale-title =
+    .title = Jeziki
+addon-category-available-updates = Nove posodobitve
+addon-category-available-updates-title =
+    .title = Nove posodobitve
+addon-category-recent-updates = Nedavne posodobitve
+addon-category-recent-updates-title =
+    .title = Nedavne posodobitve
 
 ## These are global warnings
 
@@ -280,6 +312,7 @@ shortcuts-no-commands = Naslednje razširitve nimajo dodeljenih bližnjic:
 shortcuts-input =
     .placeholder = Vnesite bližnjico
 shortcuts-browserAction = Aktiviraj razširitev
+shortcuts-browserAction2 = Aktiviraj gumb orodne vrstice
 shortcuts-pageAction = Aktiviraj dejanje strani
 shortcuts-sidebarAction = Preklopi stransko vrstico
 shortcuts-modifier-mac = Vključi Ctrl, Alt ali ⌘
@@ -307,6 +340,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Prikaži manj
 go-back-button =
     .tooltiptext = Nazaj
+header-back-button =
+    .title = Nazaj
 
 ## Recommended add-ons page
 

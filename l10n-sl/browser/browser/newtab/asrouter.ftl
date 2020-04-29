@@ -225,3 +225,24 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Prikaži vse
     .accesskey = P
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = Enostavno ustvarite varna gesla
+cfr-whatsnew-lockwise-body = Težko si je za vsak račun izmisliti edinstveno in varno geslo. Ob nastavljanju gesla lahko izberete polje za geslo, da { -brand-shorter-name } sestavi varno geslo za vas.
+cfr-whatsnew-lockwise-icon-alt = Ikona { -lockwise-brand-short-name }
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = Prejemajte opozorila o ranljivih geslih
+cfr-whatsnew-passwords-body = Hekerji vedo, da ljudje vedno znova uporabljajo ista gesla. Če ste uporabili isto geslo na več straneh in je na eni od teh strani prišlo do kraje podatkov, vas bo { -lockwise-brand-short-name } opozoril, da spremenite geslo na teh straneh.
+cfr-whatsnew-passwords-icon-alt = Ikona ranljivega gesla
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = Popeljite sliko v sliki v celozaslonski način
+cfr-whatsnew-pip-fullscreen-body = Ko predvajate video v plavajočem oknu, lahko zdaj dvokliknete to okno za ogled v celozaslonskem načinu.
+cfr-whatsnew-pip-fullscreen-icon-alt = Ikona slike v sliki

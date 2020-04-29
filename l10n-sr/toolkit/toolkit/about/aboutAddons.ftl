@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Инсталирај додатак из датотеке…
     .accesskey = И
 help-button = Подршка за додатке
+sidebar-help-button-title =
+    .title = Подршка за додатке
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } опције
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Алатке за све додатке
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } опције
+           *[other] { -brand-short-name } поставке
+        }
 show-unsigned-extensions-button =
     .label = Неке екстензије нису могле бити потврђене
 show-all-extensions-button =
@@ -100,6 +108,15 @@ detail-update-manual =
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Рад у приватним прозорима
 detail-private-browsing-description2 = Када је дозвољено, ова екстензија ће имати приступ вашим активностима на мрежи док сте у режиму приватног прегледања. <label data-l10n-name="detail-private-browsing-learn-more">Сазнајте више</label>
+# Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
+# cannot be overridden by the user.
+detail-private-disallowed-label = Није дозвољено у приватним прозорима
+detail-private-disallowed-description = Ово проширење се не покреће у приватном прегледавању. <label data-l10n-name="detail-private-browsing-learn-more">Сазнајте више</label>
+detail-private-disallowed-description2 = Ово проширење се не покреће у приватном прегледавању. <a data-l10n-name="learn-more">Сазнајте више</a>
+# Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
+detail-private-required-label = Захтева приступ приватним прозорима
+detail-private-required-description = Ово проширење има приступ вашим активностима у приватном прегледавању. <label data-l10n-name="detail-private-browsing-learn-more">Сазнајте више</label>
+detail-private-required-description2 = Ово проширење има приступ вашим активностима у приватном прегледавању. <a data-l10n-name="learn-more">Сазнајте више</a>
 detail-private-browsing-on =
     .label = Дозволи
     .tooltiptext = Омогући у приватном прегледању
@@ -164,6 +181,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Доступна ажурирања
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Препоруке
+addon-category-discover-title =
+    .title = Препоруке
+addon-category-extension = Екстензије
+addon-category-extension-title =
+    .title = Екстензије
+addon-category-theme = Теме
+addon-category-theme-title =
+    .title = Теме
+addon-category-plugin = Прикључци
+addon-category-plugin-title =
+    .title = Прикључци
+addon-category-dictionary = Речници
+addon-category-dictionary-title =
+    .title = Речници
+addon-category-locale = Језици
+addon-category-locale-title =
+    .title = Језици
+addon-category-available-updates = Доступна ажурирања
+addon-category-available-updates-title =
+    .title = Доступна ажурирања
+addon-category-recent-updates = Недавна ажурирања
+addon-category-recent-updates-title =
+    .title = Недавна ажурирања
 
 ## These are global warnings
 
@@ -272,7 +313,38 @@ manage-extensions-shortcuts =
 addon-manage-extensions-shortcuts = Управљај пречицама екстензија
     .accesskey = с
 shortcuts-no-addons = Немате омогућених проширења.
+shortcuts-no-commands = Следећа проширења немају пречице:
+shortcuts-input =
+    .placeholder = Унесите пречицу
 shortcuts-browserAction = Активирај екстензију
+shortcuts-pageAction = Активирајте радњу странице
+shortcuts-sidebarAction = Мењајте бочну траку
+shortcuts-modifier-mac = Укључите Ctrl, Alt, или ⌘
+shortcuts-modifier-other = Укључите Ctrl или Alt
+shortcuts-invalid = Неважећа комбинација
+shortcuts-letter = Унесите слово
+shortcuts-system = Пречица { -brand-short-name } се не може премостити
+# String displayed in warning label when there is a duplicate shortcut
+shortcuts-duplicate = Дупликат пречице
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } се користи као пречица у више од једног случаја. Дупликати пречица могу проузроковати неочекивано понашање.
+# String displayed when a keyboard shortcut is already used by another add-on
+# Variables:
+#   $addon (string) - Name of the add-on
+shortcuts-exists = { $addon } је већ у употреби
+shortcuts-card-expand-button =
+    { $numberToShow ->
+        [one] Прикажи { $numberToShow } више
+        [few] Прикажи { $numberToShow } више
+       *[other] Прикажи { $numberToShow } више
+    }
+shortcuts-card-collapse-button = Прикажи мање
+go-back-button =
+    .tooltiptext = Иди назад
+header-back-button =
+    .title = Иди назад
 
 ## Recommended add-ons page
 
@@ -297,14 +369,24 @@ install-theme-button = Инсталирај тему
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = Управљај
 find-more-addons = Пронађи више додатака
+# This is a label for the button to open the "more options" menu, it is only
+# used for screen readers.
+addon-options-button =
+    .aria-label = Више опција
 
 ## Add-on actions
 
 report-addon-button = Пријави
 remove-addon-button = Уклони
+# The link will always be shown after the other text.
+remove-addon-disabled-button = Не може се уклонити. <a data-l10n-name="link">Зашто?</a>
 disable-addon-button = Онемогући
 enable-addon-button = Омогући
 expand-addon-button = Више опција
+# This is used for the toggle on the extension card, it's a checkbox and this
+# is always its label.
+extension-enable-addon-button-label =
+    .aria-label = Омогући
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Подешавања
@@ -333,10 +415,24 @@ addon-detail-version-label = Издање
 addon-detail-last-updated-label = Последњи пут ажурирано
 addon-detail-homepage-label = Матична страница
 addon-detail-rating-label = Оцена
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Оцењено је { NUMBER($rating, maximumFractionDigits: 1) } од 5
 # This string is used to show that an add-on is disabled.
 # Variables:
 #   $name (string) - The name of the add-on
 addon-name-disabled = { $name } (искључено)
+# The number of reviews that an add-on has received on AMO.
+# Variables:
+#   $numberOfReviews (number) - The number of reviews received
+addon-detail-reviews-link =
+    { $numberOfReviews ->
+        [one] { $numberOfReviews } рецензија
+        [few] { $numberOfReviews } рецензије
+       *[other] { $numberOfReviews } рецензија
+    }
 
 ## Pending uninstall message bar
 
@@ -350,6 +446,15 @@ addon-detail-updates-radio-on = Укључено
 addon-detail-updates-radio-off = Искључено
 addon-detail-update-check-label = Провери ажурирања
 install-update-button = Ажурирај
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Дозвољено у приватним прозорима
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed2 =
+    .title = Дозвољено у приватним прозорима
+    .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Када је дозвољено, проширење ће имати приступ вашим активностима на мрежи у приватном прегледавању. <a data-l10n-name="learn-more">Сазнај више</a>
 addon-detail-private-browsing-allow = Дозволи
 addon-detail-private-browsing-disallow = Не дозволи
@@ -358,6 +463,13 @@ addon-detail-private-browsing-disallow = Не дозволи
 addon-badge-recommended =
     .title = Препоручено
     .alt = Препоручено
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended2 =
+    .title = { -brand-product-name } препоручује само проширења која задовољавају наше стандарде сигурности и перформанси
+    .aria-label = { addon-badge-recommended2.title }
+available-updates-heading = Доступна ажурирања
+recent-updates-heading = Недавна ажурирања
 release-notes-loading = Учитава се...
 release-notes-error = Нажалост, дошло је до грешке при учитавању напомена о издању.
 addon-permissions-empty = Ово проширење не захтева никакве дозволе
@@ -374,10 +486,12 @@ theme-heading = Управљајте вашим темама
 plugin-heading = Управљајте вашим прикључцима
 dictionary-heading = Управљајте вашим речницима
 locale-heading = Управљајте вашим језицима
+updates-heading = Управљајте вашим ажурирањима
 discover-heading = Персонализујте ваш { -brand-short-name }
 shortcuts-heading = Управљај пречицама екстензија
 theme-heading-search-label = Нађите више тема
 extension-heading-search-label = Нађите више екстензија
+default-heading-search-label = Пронађите још додатака
 addons-heading-search-input =
     .placeholder = Претражи сајт addons.mozilla.org
 addon-page-options-button =

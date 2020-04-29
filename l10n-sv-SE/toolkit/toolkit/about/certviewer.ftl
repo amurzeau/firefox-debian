@@ -29,6 +29,8 @@ certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = Grupp för nyckelutbyte
 certificate-viewer-key-id = Nyckel-ID
 certificate-viewer-key-size = Nyckelstorlek
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-locality = Företagets ort
 certificate-viewer-locality = Ort
 certificate-viewer-location = Plats
 certificate-viewer-logid = Logg-ID
@@ -95,3 +97,16 @@ certificate-viewer-download-pem = PEM (cert)
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (chain)
     .download = { $fileName }-chain.pem
+# The title attribute for Critical Extension icon
+certificate-viewer-critical-extension =
+    .title = Denna utökning har markerats som kritisk, vilket innebär att klienter måste avvisa certifikatet om de inte förstår det.
+certificate-viewer-export = Exportera
+    .download = { $fileName }.pem
+
+## Labels for tabs displayed in stand-alone about:certificate page
+
+certificate-viewer-tab-mine = Dina certifikat
+certificate-viewer-tab-people = Personer
+certificate-viewer-tab-servers = Servrar
+certificate-viewer-tab-ca = Utfärdare
+certificate-viewer-tab-unkonwn = Okänt

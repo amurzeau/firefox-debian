@@ -27,3 +27,41 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = Key Pinning HTTP pubrico: { $hasHPKP }
 cert-error-details-cert-chain-label = Cadenna de certificati:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = No riescio a conetime
+deniedPortAccess-title = L'acesso a-a pòrta o l'é dizabilitou pe raxoin de seguessa
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Ahime mi. Gh'emmo di problemi a trovâ sto scito.
+fileNotFound-title = Schedaio no trovou
+fileAccessDenied-title = Acesso a-o schedaio negou
+generic-title = Ahime mi!
+captivePortal-title = Intra inta ræ
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Oh belin. St'indirisso me pâ segge sbaliou.
+netInterrupt-title = Trasferimento di dæti scancellou
+notCached-title = Documento scheito
+netOffline-title = Mòddo feua linia
+contentEncodingError-title = Erô de còdifica do contegnuo
+unsafeContentType-title = Tipo de schedaio no seguo
+netReset-title = Conescion Scancelâ
+netTimeout-title = A ræ a no risponde
+unknownProtocolFound-title = Indirisso no interpretabile
+proxyConnectFailure-title = O proxy o refua a conescion
+proxyResolveFailure-title = No treuvo o proxy
+redirectLoop-title = A pagina a no redireçionn-a ben
+unknownSocketType-title = Risposta sbaliâ da-o server
+nssFailure2-title = Conescion segua no riescia
+cspBlocked-title = Blocòu da-i critei de seguessa di contegnui
+corruptedContentError-title = Erô de contegnuo andæto a mâ
+remoteXUL-title = XUL Remòtto
+sslv3Used-title = Inposcibile conetise in mòddo seguo
+inadequateSecurityError-title = A teu conescion a no l'é segua
+blockedByPolicy-title = Pagina blocâ
+clockSkewError-title = O releuio do computer o l'é erou
+networkProtocolError-title = Erô de protocòllo de ræ
+nssBadCert-title = Atençion: gh'é 'n reizego de seguessa potensiâ
+nssBadCert-sts-title = Conescion fermâ: reizego potensiâ de seguessa

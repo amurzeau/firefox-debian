@@ -11,7 +11,7 @@ login-app-promo-subtitle = Zdem asnas n baṭel { -lockwise-brand-name }
 login-app-promo-android =
     .alt = Yella di Google Play
 login-app-promo-apple =
-    .alt = Sider si App Store
+    .alt = Sader si App Store
 login-filter =
     .placeholder = Nadi inekcam
 create-login-button = Rnu anekcum amaynut
@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Ldi umuɣ
-# This menuitem is only visible on Windows
-menu-menuitem-import = Kter awalen uffiren...
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Kter seg iminig nniḍen…
 menu-menuitem-preferences =
@@ -50,6 +48,7 @@ login-list-sort-label-text = Smizzwer s:
 login-list-name-option = Isem (A-Z)
 login-list-name-reverse-option = Isem (Z-A)
 login-list-breached-option = Ismal web ittwakren
+about-logins-login-list-alerts-option = Ilɣa
 login-list-last-changed-option = Asnifel aneggaru
 login-list-last-used-option = Aseqdec anneggaru
 login-list-intro-title = Ulac inekcam yettwafen
@@ -61,6 +60,8 @@ login-list-item-subtitle-new-login = Sekcem inekcumen-ik n tuqqna
 login-list-item-subtitle-missing-username = (ulas isem n useqdac)
 about-logins-list-item-breach-icon =
     .title = Asmel i tḥuza trewla n yisefka
+about-logins-list-item-vulnerable-password-icon =
+    .title = Awal uffir ur iǧhid ara
 
 ## Introduction screen
 
@@ -160,10 +161,25 @@ confirm-discard-changes-dialog-confirm-button = Kkes
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Tarewla n yismal web
 breach-alert-text = Awalen uffiren n usmel-a ffɣen neɣ ttwakren deffir n ubeddel aneggaru n telɣut-ik n tuqqna. Beddel awal-ik uffir akken ad yettwamesten umiḍan-ik.
 breach-alert-link = Issin ugar ɣef trewla n yisefka-agi.
 breach-alert-dismiss =
     .title = Mdel ulɣu-agi
+about-logins-breach-alert-date = Tarewla-agi n yisefka teḍra-d deg { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Ddu ɣer { $hostname }
+about-logins-breach-alert-learn-more-link = Issin ugar
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Awal uffir ur iǧhid ara
+about-logins-vulnerable-alert-text2 = Awal-agi uffir yettwaseqdec deg umiḍan-nniḍen ayagi yezmer ad d-yeglu s trewla n yisefka. Aɛiwed n useqdec n yinekcamen n tuqqna ad yerr akk imiḍanen-inek deg wugur. Beddel awal-agi uffir.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Ddu ɣer { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Issin ugar
 
 ## Error Messages
 

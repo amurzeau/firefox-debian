@@ -137,8 +137,8 @@ choose-p12-restore-file-dialog = Datoteka certifikata za uvoz
 ## Import certificate(s) file dialog
 
 file-browse-certificate-spec = Datoteke certifikata
-import-ca-certs-prompt = Za uvoz odaberite datoteku koja sadrži CA certifikat
-import-email-cert-prompt = Za uvoz odaberite datoteku koja sadrži nečiji certifikat e-pošte
+import-ca-certs-prompt = Za uvoz odaberi datoteku koja sadrži CA certifikat
+import-email-cert-prompt = Za uvoz odaberi datoteku koja sadrži nečiji certifikat e-pošte
 
 ## For editing certificates trust
 
@@ -154,11 +154,11 @@ delete-user-cert-confirm = Jeste li sigurni da želite obrisati ove certifikate?
 delete-user-cert-impact = Ako obrišete jedan od vlastitih certifikata, više ga nećete moći koristiti za identifikaciju.
 delete-ssl-cert-title =
     .title = Obriši iznimku certifikata poslužitelja
-delete-ssl-cert-confirm = Jeste li sigurni da želite ukloniti ove iznimke poslužitelja?
-delete-ssl-cert-impact = Ako obrišete iznimku poslužitelja, obnavljate uobičajene sigurnosne provjere za te poslužitelje i uvjete o ispravnim certifikatima.
+delete-ssl-cert-confirm = Zaista želiš ukloniti ove iznimke poslužitelja?
+delete-ssl-cert-impact = Ako izbrišeš iznimku poslužitelja, obnavljaš uobičajene sigurnosne provjere za te poslužitelje i uvjetuješ upotrebu ispravnih certifikata.
 delete-ca-cert-title =
     .title = Brisanje ili poništavanje povjerenja CA certifikata
-delete-ca-cert-confirm = Zatražili ste brisanje ovih CA certifikata. Za ugrađene certifikate će sva povjerenja biti uklonjena, što ima isti efekt. Jeste li sigurni da želite obrisati ili poništiti povjerenje?
+delete-ca-cert-confirm = Zatražio/la si brisanje ovih CA certifikata. Za ugrađene certifikate uklonit će se sva povjerenja, što ima isti efekt. Zaista želiš obrisati certifikate ili poništiti povjerenje?
 delete-ca-cert-impact = Ako izbrišeš ili poništiš povjerenje za certifikat certifikacijskog tijela, ovaj program više neće vjerovati certifikatima koje izdaje to certifikacijsko tijelo.
 delete-email-cert-title =
     .title = Obriši certifikate e-pošte

@@ -287,6 +287,11 @@ sandbox-proc-type-content = edukia
 sandbox-proc-type-file = fitxategiaren edukia
 sandbox-proc-type-media-plugin = multimedia plugina
 sandbox-proc-type-data-decoder = datu-deskodetzailea
+startup-cache-title = Abioko cachea
+startup-cache-disk-cache-path = Diskoko cachearen bide-izena
+startup-cache-ignore-disk-cache = Ezikusi diskoko cachea
+startup-cache-found-disk-cache-on-init = Diskoko cachea aurkitu da abioan
+startup-cache-wrote-to-disk-cache = Diskoko cachera idatzita
 launcher-process-status-0 = Gaituta
 launcher-process-status-1 = Desgaituta hutsegitea dela-eta
 launcher-process-status-2 = Behartuta desgaituta
@@ -310,6 +315,7 @@ touch-enabled = ukipen bidezko sarrera gaituta
 drag-enabled = korritze-barra arrastatzea gaituta
 keyboard-enabled = teklatua gaituta
 autoscroll-enabled = autoscroll gaituta
+zooming-enabled = Atximur-zoom leuna gaituta
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

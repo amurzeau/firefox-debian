@@ -43,9 +43,6 @@ browser-main-window-content-title-private =
         [macos] { $title } - (Privatno pregledavanje)
        *[other] { $title } - { -brand-full-name } (Privatno pregledavanje)
     }
-
-##
-
 urlbar-identity-button =
     .aria-label = Prikaži informacije o stranici
 
@@ -94,7 +91,7 @@ urlbar-persistent-storage-notification-anchor =
 urlbar-addons-notification-anchor =
     .tooltiptext = Otvori ploču s informacijama o instaliranim dodacima
 urlbar-tip-help-icon =
-    .title = Potražite pomoć
+    .title = Potraži pomoć
 urlbar-search-tips-confirm = U redu, razumijem
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
@@ -108,8 +105,10 @@ urlbar-tip-icon-description =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Tipkaj manje, nađi više: Traži { $engineName } direktno u tvojoj adresnoj traci.
-urlbar-search-tips-redirect = Započni tvoju pretragu ovdje za prikaz prijedloga od { $engineName } i tvoju povijest pregledavanja.
 urlbar-search-tips-redirect-2 = Započni tvoju pretragu u adresnoj traci da biste vidjeli prijedloge od { $engineName } i tvoju povijest pregledavanja.
+
+##
+
 
 ##
 
@@ -151,7 +150,7 @@ urlbar-star-add-bookmark =
 page-action-add-to-urlbar =
     .label = Dodaj u adresnu traku
 page-action-manage-extension =
-    .label = Upravljanje dodatkom…
+    .label = Upravljaj proširenjem …
 page-action-remove-from-urlbar =
     .label = Ukloni iz adresne trake
 
@@ -179,7 +178,7 @@ search-one-offs-context-open-new-tab =
     .label = Traži u novoj kartici
     .accesskey = t
 search-one-offs-context-set-as-default =
-    .label = Podesi kao zadanu tražilicu
+    .label = Postavi kao standardnu tražilicu
     .accesskey = d
 search-one-offs-context-set-as-default-private =
     .label = Postavi standardnu pretragu za privatne prozore

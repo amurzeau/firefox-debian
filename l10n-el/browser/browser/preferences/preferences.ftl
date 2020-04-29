@@ -209,6 +209,9 @@ preferences-default-zoom = Προεπιλεγμένο ζουμ
     .accesskey = ζ
 preferences-default-zoom-value =
     .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Ζουμ μόνο στο κείμενο
+    .accesskey = κ
 language-header = Γλώσσα
 choose-language-description = Επιλέξτε την προτιμώμενη γλώσσα για την εμφάνιση των ιστοσελίδων
 choose-button =
@@ -266,7 +269,7 @@ applications-action-column =
     .accesskey = Ε
 # Variables:
 #   $extension (String) - file extension (e.g .TXT)
-applications-file-ending = { $extension } αρχείο
+applications-file-ending = Αρχείο { $extension }
 applications-action-save =
     .label = Αποθήκευση αρχείου
 # Variables:
@@ -284,7 +287,7 @@ applications-manage-app =
     .label = Λεπτομέρειες εφαρμογής…
 applications-always-ask =
     .label = Πάντα ερώτηση
-applications-type-pdf = Μορφή Φορητού Εγγράφου (PDF)
+applications-type-pdf = Portable Document Format (PDF)
 # Variables:
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
@@ -410,6 +413,9 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Αναζήτηση κειμένου κατά την έναρξη πληκτρολόγησης
     .accesskey = ν
+browsing-picture-in-picture-toggle-enabled =
+    .label = Ενεργοποίηση στοιχείων ελέγχου βίντεο σε λειτουργία εικόνας εντός εικόνας
+    .accesskey = Ε
 browsing-picture-in-picture-learn-more = Μάθετε περισσότερα
 browsing-cfr-recommendations =
     .label = Πρόταση επεκτάσεων κατά την περιήγησή σας
@@ -516,6 +522,7 @@ search-bar-shown =
     .label = Προσθήκη γραμμής αναζήτησης στη γραμμή εργαλείων
 search-engine-default-header = Προεπιλεγμένη μηχανή αναζήτησης
 search-engine-default-desc = Επιλέξτε την προεπιλεγμένη μηχανή αναζήτησης για χρήση στη γραμμή διευθύνσεων και στη γραμμή αναζήτησης.
+search-engine-default-desc-2 = Αυτή είναι η προεπιλεγμένη μηχανή αναζήτησης στη γραμμή διευθύνσεων και τη γραμμή αναζήτησης. Μπορείτε να την αλλάξετε ανά πάσα στιγμή.
 search-suggestions-header = Προτάσεις αναζήτησης
 search-suggestions-option =
     .label = Παροχή προτάσεων αναζήτησης
@@ -530,6 +537,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Εμφάνιση προτάσεων αναζήτησης πριν το ιστορικό περιήγησης στα αποτελέσματα γραμμής διευθύνσεων
+search-show-suggestions-private-windows =
+    .label = Εμφάνιση προτάσεων αναζήτησης σε ιδιωτικά παράθυρα
+suggestions-addressbar-settings = Αλλαγή προτιμήσεων για προτάσεις ιστορικού περιήγησης, σελιδοδεικτών και καρτελών
 search-suggestions-cant-show = Οι προτάσεις αναζήτησης δεν θα εμφανίζονται στη γραμμή διευθύνσεων, καθώς έχετε ρυθμίσει το { -brand-short-name } ώστε να μην διατηρεί ποτέ το ιστορικό.
 search-one-click-header = Μηχανές αναζήτησης με ένα κλικ
 search-one-click-desc = Επιλέξτε τις εναλλακτικές μηχανές αναζήτησης που εμφανίζονται κάτω από τη γραμμή διευθύνσεων και τη γραμμή αναζήτησης όταν αρχίσετε να πληκτρολογείτε μια λέξη-κλειδί.
@@ -760,6 +770,9 @@ forms-master-pw-change =
 forms-master-pw-fips-title = Βρίσκεστε σε λειτουργία FIPS . Το FIPS απαιτεί ένα μη-κενό Κύριο κωδικό.
 forms-master-pw-fips-desc = Αποτυχία αλλαγής κωδικού
 
+## OS Authentication dialog
+
+
 ## Privacy Section - History
 
 history-header = Ιστορικό
@@ -862,6 +875,7 @@ addressbar-suggestions-settings = Αλλαγή προτιμήσεων για τ�
 content-blocking-header = Φραγή περιεχομένου
 content-blocking-section-description = Προστατέψτε το απόρρητό σας ενώ περιηγείστε. Αποκλείστε το αόρατο περιεχόμενο που καταγράφει τις ιστοσελίδες που επισκέπτεστε και δημιουργεί ένα προφίλ για εσάς. Η φραγή μέρους του περιεχομένου αυτού μπορεί να επιταχύνει τη φόρτωση σελίδων.
 content-blocking-enhanced-tracking-protection = Ενισχυμένη προστασία από καταγραφή
+content-blocking-section-top-level-description = Οι ιχνηλάτες σάς ακολουθούν στο διαδίκτυο για να συλλέξουν πληροφορίες σχετικά με τις συνήθειες και τα ενδιαφέροντά σας. Το { -brand-short-name } αποκλείει πολλούς από αυτούς τους ιχνηλάτες και άλλα κακόβουλα σενάρια.
 content-blocking-learn-more = Μάθετε περισσότερα
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -896,6 +910,11 @@ enhanced-tracking-protection-setting-custom =
 
 ##
 
+content-blocking-etp-standard-desc = Ισορροπία μεταξύ προστασίας και επιδόσεων. Οι σελίδες θα φορτώνονται κανονικά.
+content-blocking-etp-strict-desc = Ισχυρότερη προστασία, αλλά πιθανή δυσλειτουργία μερικών ιστοσελίδων ή περιεχομένου.
+content-blocking-etp-custom-desc = Επιλέξτε ιχνηλάτες και σενάρια για αποκλεισμό.
+content-blocking-private-windows = Περιεχόμενο καταγραφής σε ιδιωτικά παράθυρα
+content-blocking-social-media-trackers = Ιχνηλάτες κοινωνικών δικτύων
 content-blocking-all-cookies = Όλα τα cookies
 content-blocking-unvisited-cookies = Cookies από ιστοσελίδες που δεν έχετε επισκεφθεί
 content-blocking-all-windows-trackers = Γνωστοί ιχνηλάτες σε όλα τα ιδιωτικά παράθυρα

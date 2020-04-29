@@ -96,7 +96,7 @@ cfr-whatsnew-panel-header = Amaynut
 cfr-whatsnew-release-notes-link-text = Ɣer tizmilin n lqem.
 cfr-whatsnew-fx70-title = { -brand-short-name } yettnaḍaḥ tura ugar ɣef tudert-ik tabaḍnit
 cfr-whatsnew-fx70-body = Lqem aneggaru yesnerna tamahilt n ummesten mgal aḍfaṛ daɣen urǧin yella yessifses am akka, timerna n wawalen uffiren iɣelsanen i yal asmel.
-cfr-whatsnew-tracking-protect-title = Mmesten iman-ik seg yineḍfaṛen.
+cfr-whatsnew-tracking-protect-title = Mmesten iman-ik seg yineḍfaren.
 cfr-whatsnew-tracking-protect-body = { -brand-short-name } yessewḥal ddeqs n yineḍfaren inmettiyen akked igrismal yettwassnen i yeṭṭafaṛen ayen i txeddmeḍ srid.
 cfr-whatsnew-tracking-protect-link-text = Wali aneqqis-ik
 # This string is displayed before a large numeral that indicates the total
@@ -193,9 +193,9 @@ cfr-doorhanger-socialtracking-dont-show-again = Ur d-skanay ara iznan am wi tikk
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } yessewḥel aẓeṭṭa inmetti akken ad k-yeḍfeṛ dagi
 cfr-doorhanger-socialtracking-description = Aqadeṛ n tudert-ik tabaḍnit yeɛna-aɣ. { -brand-short-name } yesseḥal akka tura ineḍfaṛen n yiẓeḍwa inmettiyen yettwassnen, ayen yettarran talast i tnecta n yisefka i zemren ad d-leqḍen armud-ik srid.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } yessewḥel aneḍfaṛ n udsil umḍin ɣef usebter-a.
-cfr-doorhanger-fingerprinters-description = Aqadeṛ n tbaḍnit-ik teɛna-aɣ. { -brand-short-name } yesseḥal akka tura ineḍfaṛen n udsil umḍin, i d-ileqḍen talɣut tasuft yettwassnen ɣef yibenk-ik akken ad k-yeḍfeṛ.
+cfr-doorhanger-fingerprinters-description = Aqader n tbaḍnit-ik teɛna-aɣ. { -brand-short-name } yessewḥal akka tura ineḍfaren n udsilen umḍinen, i d-ileqḍen talɣut tasuft yettwassnen ɣef yibenk-ik akken ad k-yeḍfer.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } yessewḥel akriptuminer ɣef usebter-a.
-cfr-doorhanger-cryptominers-description = Aqadeṛ n tudert-ik tusligt d ayen meqqṛen. { -brand-short-name } yessewḥal akka tura ikriptumniren i yesseqdacen tazmert n usiḍen n unagraw-ik n wammud akken ad d-kksen tadrimt tumḍint.
+cfr-doorhanger-cryptominers-description = Aqadeṛ n tudert-ik tusligt d ayen meqqren. { -brand-short-name } yessewḥal akka tura ikriptumniren i yesseqdacen tazmert n usiḍen n unagraw-ik n wammud akken ad d-kksen tadrimt tumḍint.
 
 ## Enhanced Tracking Protection Milestones
 
@@ -209,3 +209,24 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Wali akk
     .accesskey = W
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = Rnu awal uffir aɣelsan s wudem fessusen
+cfr-whatsnew-lockwise-body = Ur  fessus ara yal tikket ad txemmemeḍ ɣer wawalen uffiren isufen, iɣelsanen i yal amiḍan. Deg tmerna n wawal uffir, fren urti n wawal uffir akken ad tesqedceḍ awal uffir aɣelsan, ara d-yessirew { -brand-shorter-name }.
+cfr-whatsnew-lockwise-icon-alt = Tignit { -lockwise-brand-short-name }
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = Awi ilɣa ɣef wawalen uffiren fessusen i truẓi
+cfr-whatsnew-passwords-body = Imakaren imsenselkamen zran dakken imdanen ttɛawaden aseqdec n kra kan n wawalen uffiren.  Ma yella tsqedceḍ yiwen wawal uffir deg watas n yesmal web, u yella yiwen ger yesmal-agi tella-d degs trewla n yisefka, ad twaliḍ alɣu deg { -lockwise-brand-short-name } akken ad tesnifleḍ awal-ik uffir deg yesmal-nni.
+cfr-whatsnew-passwords-icon-alt = Tignit n tsarut n wawal uffir fessusen i truẓi
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = Awi agdil aččuran n tugna-deg-tugna
+cfr-whatsnew-pip-fullscreen-body = Ticki ara terreḍ tavidyut deg usfaylu ufig, Tzemreḍ tura ad tsiteḍ snat n tikkal ɣef usfaylu-nni akken ad tɛeddiḍ ɣer ugdil aččuran.
+cfr-whatsnew-pip-fullscreen-icon-alt = Tignit n tugna-deg-tugna

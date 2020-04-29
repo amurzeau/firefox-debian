@@ -52,6 +52,8 @@ fingerprinter-tab-title = Identificadores
 fingerprinter-tab-content = Os identificadores recolhem definições do seu navegador e computador para criar um perfil sobre si. Ao utilizar este identificador digital, estes podem monitorizá-lo em vários sites diferentes. <a data-l10n-name="learn-more-link">Saber mais</a>
 cryptominer-tab-title = Cripto-mineradores
 cryptominer-tab-content = Os cripto-mineradores utilizam o poder de computação do seu sistema para minerar dinheiro digital. Os scripts de cripto-mineração podem descarregar a sua bateria, tornar o seu computador mais lento e aumentar os custos com a sua fatura elétrica. <a data-l10n-name="learn-more-link">Saber mais</a>
+protections-close-button =
+    .aria-label = Fechar
 mobile-app-title = Bloquear anúncios de monitorização em mais dispositivos
 mobile-app-card-content = Utilize o navegador móvel com proteção integrada contra anúncios de monitorização.
 mobile-app-links = O navegador { -brand-product-name } para <a data-l10n-name="android-mobile-inline-link">Android</a> e <a data-l10n-name="ios-mobile-inline-link">iOS</a>
@@ -61,7 +63,6 @@ lockwise-header-content = O { -lockwise-brand-name } guarda as suas palavras-pas
 lockwise-header-content-logged-in = Guarde e sincronize em segurança as suas palavras-passe em todos os seus dispositivos.
 protection-report-view-logins-button = Ver credenciais
     .title = Ir para Credenciais guardadas
-lockwise-no-logins-content = Obtenha a aplicação <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> para levar as suas palavras-passe para qualquer lugar.
 lockwise-mobile-app-title = Leve as suas palavras-passe para todo o lado
 lockwise-no-logins-card-content = Utilize as palavras-passe guardadas no { -brand-short-name } em qualquer dispositivo.
 lockwise-app-links = { -lockwise-brand-name } para <a data-l10n-name="lockwise-android-inline-link">Android</a> e <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -83,11 +84,11 @@ lockwise-connected-device-status =
         [one] Ligado a { $count } dispositivo
        *[other] Ligado a { $count } dispositivos
     }
-monitor-title = Procurar por violações de dados
+monitor-title = Procurar por falhas de segurança de dados
 monitor-link = Como funciona
-monitor-header-content-no-account = Aceda ao { -monitor-brand-name } para confirmar se fez parte de uma violação de dados conhecida e para obter alertas sobre novas intrusões.
-monitor-header-content-signed-in = O { -monitor-brand-name } avisa-o se a sua informação apareceu numa violação de dados conhecida.
-monitor-sign-up = Registar para Alertas de violação
+monitor-header-content-no-account = Aceda ao { -monitor-brand-name } para confirmar se fez parte de uma falha de segurança de dados conhecida e para obter alertas sobre novas falhas de segurança.
+monitor-header-content-signed-in = O { -monitor-brand-name } avisa-o se a sua informação apareceu numa falha de segurança de dados conhecida.
+monitor-sign-up = Registar para Alertas de falhas de segurança
 auto-scan = Analisado hoje, de forma automática
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
@@ -102,16 +103,16 @@ info-monitored-emails =
 # your localization, because it would result in the number showing twice.
 info-known-breaches-found =
     { $count ->
-        [one] violação de dados conhecida que expôs a sua informação
-       *[other] violações de dados conhecidas que expuseram a sua informação
+        [one] Falha de segurança de dados conhecida que expôs a sua informação
+       *[other] Falhas de segurança de dados conhecidas que expuseram a sua informação
     }
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
     { $count ->
-        [one] palavra-passe exposta em todas as violações
-       *[other] palavras-passe expostas em todas as violações
+        [one] palavra-passe exposta em todas as falhas de segurança
+       *[other] palavras-passe expostas em todas as falhas de segurança
     }
 full-report-link = Ver o relatório completo em <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>
 # This string is displayed after a large numeral that indicates the total number
@@ -119,8 +120,8 @@ full-report-link = Ver o relatório completo em <a data-l10n-name="monitor-inlin
 # your localization, because it would result in the number showing twice.
 password-warning =
     { $count ->
-        [one] As credenciais guardadas podem ser expostas numa violação de dados. Altere esta palavra-passe para uma melhor segurança on-line. <a data-l10n-name="lockwise-link">Ver credenciais guardadas</a>
-       *[other] As credenciais guardadas podem ser expostas numa violação de dados. Altere estas palavras-passe para uma melhor segurança on-line. <a data-l10n-name="lockwise-link">Ver credenciais guardadas</a>
+        [one] A credencial guardada pode ter sido exposta numa falha de segurança de dados. Altere esta palavra-passe para melhorar a sua segurança na Internet. <a data-l10n-name="lockwise-link">Ver credenciais guardadas</a>
+       *[other] As credenciais guardadas podem ter sido expostas numa falha de segurança de dados. Altere estas palavras-passe para melhorar a sua segurança na Internet. <a data-l10n-name="lockwise-link">Ver credenciais guardadas</a>
     }
 
 ## The title attribute is used to display the type of protection.

@@ -289,6 +289,8 @@
 <!ENTITY searchMailCmd.label "Serĉi mesaĝojn…">
 <!ENTITY searchMailCmd.accesskey "m">
 <!ENTITY searchMailCmd.key "f">
+<!ENTITY glodaSearchCmd.label "Serĉi…">
+<!ENTITY glodaSearchCmd.accesskey "S">
 <!ENTITY searchAddressesCmd.label "Serĉi kontaktojn…">
 <!ENTITY searchAddressesCmd.accesskey "S">
 
@@ -543,7 +545,7 @@
 <!ENTITY replyListButton.label "Resp. al listo">
 <!ENTITY forwardButton.label "Plusendi">
 <!ENTITY fileButton.label "Klasifiki">
-<!ENTITY archiveButton.label "Arĥivigi">
+<!ENTITY archiveButton.label "Arĥivi">
 <!ENTITY openConversationButton.label "Interparolado">
 <!ENTITY nextButton.label "Sekva">
 <!ENTITY nextButtonToolbarItem.label "Sekva nelegita">
@@ -551,8 +553,8 @@
 <!ENTITY previousButton.label "Antaŭa">
 <!ENTITY previousButtonToolbarItem.label "Antaŭa nelegita">
 <!ENTITY previousMsgButton.label "Antaŭa">
-<!ENTITY backButton1.label "Antaŭen">
-<!ENTITY goForwardButton1.label "Sekven">
+<!ENTITY backButton1.label "Reen">
+<!ENTITY goForwardButton1.label "Pluen">
 <!ENTITY deleteItem.title "Forigi">
 <!ENTITY deleteButton.label "Forigi">
 <!ENTITY undeleteButton.label "Malforigi">
@@ -581,232 +583,242 @@
 <!ENTITY newMsgButton.tooltip "Skribi novan mesaĝon">
 <!ENTITY replyButton.tooltip "Respondi al la mesaĝo">
 <!ENTITY replyAllButton.tooltip "Respondi al la sendinto kaj al ĉiuj ricevontojn">
-<!ENTITY replyListButton.tooltip "Reply to mailing list">
-<!ENTITY forwardButton.tooltip "Forward selected message">
-<!ENTITY forwardAsInline.tooltip "Forward selected message as inline text">
-<!ENTITY forwardAsAttachment.tooltip "Forward selected message as an attachment">
-<!ENTITY fileButton.tooltip "File selected message">
-<!ENTITY archiveButton.tooltip "Archive selected messages">
-<!ENTITY openConversationButton.tooltip "Show conversation of selected message">
-<!ENTITY nextButton.tooltip "Move to the next unread message">
-<!ENTITY nextMsgButton.tooltip "Move to the next message">
-<!ENTITY previousButton.tooltip "Move to the previous unread message">
-<!ENTITY previousMsgButton.tooltip "Move to the previous message">
-<!ENTITY goForwardButton.tooltip "Go forward one message">
-<!ENTITY goBackButton.tooltip "Go back one message">
-<!ENTITY deleteButton.tooltip "Delete selected message or folder">
-<!ENTITY undeleteButton.tooltip "Undelete selected message">
-<!ENTITY markButton.tooltip "Mark messages">
-<!ENTITY printButton.tooltip "Print this message">
-<!ENTITY stopButton.tooltip "Stop the current transfer">
-<!ENTITY junkButton.tooltip "Mark the selected messages as junk">
-<!ENTITY notJunkButton.tooltip "Mark the selected messages as not junk">
-<!ENTITY addressBookButton.tooltip "Go to the address book">
-<!ENTITY chatButton.tooltip "Show the Chat tab">
-<!ENTITY tagButton.tooltip "Tag messages">
-<!ENTITY compactButton.tooltip "Remove deleted messages from selected folder">
-<!ENTITY appmenuButton1.tooltip "Display the &brandShortName; Menu">
+<!ENTITY replyListButton.tooltip "Respondi al dissendolisto">
+<!ENTITY forwardButton.tooltip "Plusendi la elektitan mesaĝon">
+<!ENTITY forwardAsInline.tooltip "Plusendi la elektitan mesaĝon kiel enhavon de mesaĝo">
+<!ENTITY forwardAsAttachment.tooltip "Plusendi la elektitan mesaĝon kiel kunsendaĵon">
+<!ENTITY fileButton.tooltip "Klasifiki la elektitan mesaĝon">
+<!ENTITY archiveButton.tooltip "Arĥivi la elektitan mesaĝon">
+<!ENTITY openConversationButton.tooltip "Montri fadenon de la elektita mesaĝo">
+<!ENTITY openMsgConversationButton.tooltip "Montri fadenon de la elektita mesaĝo">
+<!ENTITY nextButton.tooltip "Iri al la sekva nelegita mesaĝo">
+<!ENTITY nextMsgButton.tooltip "Iri al la sekva mesaĝo">
+<!ENTITY previousButton.tooltip "Iri al la antaŭa nelegita mesaĝo">
+<!ENTITY previousMsgButton.tooltip "Iri al la antaŭa mesaĝo">
+<!ENTITY goForwardButton.tooltip "Iri pluen je unu mesaĝo">
+<!ENTITY goBackButton.tooltip "Iri reen je unu mesaĝo">
+<!ENTITY deleteButton.tooltip "Forigi la elektitan mesaĝ(uj)on">
+<!ENTITY undeleteButton.tooltip "Malforigi la elektitan mesaĝon">
+<!ENTITY markButton.tooltip "Marki mesaĝon">
+<!ENTITY printButton.tooltip "Presi mesaĝon">
+<!ENTITY stopButton.tooltip "Ĉesigi la nunan transsendon">
+<!ENTITY junkButton.tooltip "Marki la elektitan mesaĝon kiel nedeziratan">
+<!ENTITY notJunkButton.tooltip "Marki la elektitan mesaĝon kiel deziratan">
+<!ENTITY addressBookButton.tooltip "Montri adresaron">
+<!ENTITY chatButton.tooltip "Montri tujmesaĝilon">
+<!ENTITY tagButton.tooltip "Marki mesaĝon per etikedo">
+<!ENTITY compactButton.tooltip "Neinversigeble forigi forigitajn mesaĝojn el la elektita mesaĝujo">
+<!ENTITY appmenuButton1.tooltip "Montri menuon de la programo &brandShortName;">
+<!ENTITY addonsButton.tooltip "Administri aldonaĵojn">
 
 <!-- Toolbar Button Popup -->
-<!ENTITY buttonMenuForwardAsInline.label "Forward Inline">
-<!ENTITY buttonMenuForwardAsAttachment.label "Forward As Attachment">
+<!ENTITY buttonMenuForwardAsInline.label "Plusendi kiel tekston">
+<!ENTITY buttonMenuForwardAsAttachment.label "Plusendi kiel kunsendaĵon">
 
 <!-- Remote Content Button Popup -->
-<!ENTITY remoteContentOptionsAllowForMsg.label "Show remote content in this message">
-<!ENTITY remoteContentOptionsAllowForMsg.accesskey "S">
-<!ENTITY editRemoteContentSettings.label "Edit remote content options…">
-<!ENTITY editRemoteContentSettings.accesskey "E">
-<!ENTITY editRemoteContentSettingsUnix.label "Edit remote content preferences…">
-<!ENTITY editRemoteContentSettingsUnix.accesskey "E">
+<!ENTITY remoteContentOptionsAllowForMsg.label "Montri foran enhavon en tiu ĉi mesaĝo">
+<!ENTITY remoteContentOptionsAllowForMsg.accesskey "M">
+<!ENTITY editRemoteContentSettings.label "Redakti agordojn pri fora enhavo…">
+<!ENTITY editRemoteContentSettings.accesskey "R">
+<!ENTITY editRemoteContentSettingsUnix.label "Redakti preferojn pri fora enhavo…">
+<!ENTITY editRemoteContentSettingsUnix.accesskey "R">
 
 <!-- Phishing Button Popup -->
-<!ENTITY phishingOptionIgnore.label "Ignore warning for this message">
-<!ENTITY phishingOptionIgnore.accesskey "n">
-<!ENTITY phishingOptionSettings.label "Edit scam detection options…">
-<!ENTITY phishingOptionSettings.accesskey "d">
-<!ENTITY phishingOptionSettingsUnix.label "Edit scam detection preferences…">
-<!ENTITY phishingOptionSettingsUnix.accesskey "d">
+<!ENTITY phishingOptionIgnore.label "Ignori averton por tiu ĉi mesaĝo">
+<!ENTITY phishingOptionIgnore.accesskey "I">
+<!ENTITY phishingOptionSettings.label "Redakti agordojn pri kontraŭtrompaj avertoj…">
+<!ENTITY phishingOptionSettings.accesskey "R">
+<!ENTITY phishingOptionSettingsUnix.label "Redakti preferojn pri kontraŭtrompaj avertoj…">
+<!ENTITY phishingOptionSettingsUnix.accesskey "R">
 
 <!-- AppMenu Popup -->
-<!ENTITY appmenuNewMsgCmd.label "New Message">
-<!ENTITY appmenuNewContactCmd.label "Address Book Contact…">
-<!ENTITY appmenuEditMenu.label "Edit">
-<!ENTITY appmenuToolbarLayout.label "Toolbar Layout…">
-<!ENTITY appmenuSelectThread.label "Select Thread">
-<!ENTITY appmenuSelectFlagged.label "Select Starred Messages">
+<!ENTITY appmenuNewMsgCmd.label "Nova mesaĝo">
+<!ENTITY appmenuNewContactCmd.label "Aldoni kontakton al adresaro…">
+<!ENTITY appmenuEditMenu.label "Redakti">
+<!ENTITY appmenuToolbarLayout.label "Aranĝi ilarstrion…">
+<!ENTITY appmenuSelectThread.label "Elekti fadenon">
+<!ENTITY appmenuSelectFlagged.label "Elekti markitajn per steleto">
 
 <!-- Tags Menu Popup -->
-<!ENTITY addNewTag.label "New Tag…">
+<!ENTITY addNewTag.label "Nova etikedo…">
 <!ENTITY addNewTag.accesskey "N">
-<!ENTITY manageTags.label "Manage Tags…">
-<!ENTITY manageTags.accesskey "M">
+<!ENTITY manageTags.label "Administri etikedojn…">
+<!ENTITY manageTags.accesskey "A">
 
 <!-- Folder Pane -->
-<!ENTITY folderNameColumn.label "Name">
-<!ENTITY folderUnreadColumn.label "Unread">
-<!ENTITY folderTotalColumn.label "Total">
-<!ENTITY folderSizeColumn.label "Size">
+<!ENTITY folderNameColumn.label "Nomo">
+<!ENTITY folderUnreadColumn.label "Nelegitaj">
+<!ENTITY folderTotalColumn.label "Tute">
+<!ENTITY folderSizeColumn.label "Grando">
 
 <!-- Folder Pane Context Menu -->
-<!ENTITY folderContextGetMessages.label "Get Messages">
-<!ENTITY folderContextGetMessages.accesskey "G">
-<!ENTITY folderContextPauseAllUpdates.label "Pause All Updates">
-<!ENTITY folderContextPauseUpdates.label "Pause Updates">
-<!ENTITY folderContextPauseUpdates.accesskey "U">
-<!ENTITY folderContextOpenInNewWindow.label "Open in New Window">
-<!ENTITY folderContextOpenInNewWindow.accesskey "O">
-<!ENTITY folderContextOpenNewTab.label "Open in New Tab">
-<!ENTITY folderContextOpenNewTab.accesskey "T">
-<!ENTITY folderContextNew.label "New Subfolder…">
-<!ENTITY folderContextNew.accesskey "N">
-<!ENTITY folderContextRename.label "Rename">
-<!ENTITY folderContextRename.accesskey "R">
-<!ENTITY folderContextRemove.label "Delete">
-<!ENTITY folderContextRemove.accesskey "D">
-<!ENTITY folderContextCompact.label "Compact">
-<!ENTITY folderContextCompact.accesskey "C">
-<!ENTITY folderContextEmptyTrash.label "Empty Trash">
-<!ENTITY folderContextEmptyTrash.accesskey "y">
-<!ENTITY folderContextEmptyJunk.label "Empty Junk">
-<!ENTITY folderContextEmptyJunk.accesskey "J">
-<!ENTITY folderContextSendUnsentMessages.label "Send Unsent Messages">
+<!ENTITY folderContextGetMessages.label "Ricevi mesaĝojn">
+<!ENTITY folderContextGetMessages.accesskey "R">
+<!ENTITY folderContextMarkAllFoldersRead.label "Marki ĉiujn mesaĝujojn kiel legitajn">
+<!ENTITY folderContextPauseAllUpdates.label "Paŭzigi ĉiujn aktualigojn">
+<!ENTITY folderContextPauseUpdates.label "Paŭzigi aktualigojn">
+<!ENTITY folderContextPauseUpdates.accesskey "P">
+<!ENTITY folderContextOpenInNewWindow.label "Malfermi en nova fenestro">
+<!ENTITY folderContextOpenInNewWindow.accesskey "f">
+<!ENTITY folderContextOpenNewTab.label "Malfermi en nova langeto">
+<!ENTITY folderContextOpenNewTab.accesskey "l">
+<!ENTITY folderContextNew.label "Nova submesaĝujo…">
+<!ENTITY folderContextNew.accesskey "u">
+<!ENTITY folderContextRename.label "Renomi">
+<!ENTITY folderContextRename.accesskey "n">
+<!ENTITY folderContextRemove.label "Forigi">
+<!ENTITY folderContextRemove.accesskey "F">
+<!ENTITY folderContextCompact.label "Reorganizi">
+<!ENTITY folderContextCompact.accesskey "o">
+<!ENTITY folderContextEmptyTrash.label "Malplenigi rubujon">
+<!ENTITY folderContextEmptyTrash.accesskey "i">
+<!ENTITY folderContextEmptyJunk.label "Malplenigi trudmesaĝujon">
+<!ENTITY folderContextEmptyJunk.accesskey "i">
+<!ENTITY folderContextSendUnsentMessages.label "Sendi sendotajn mesaĝojn">
 <!ENTITY folderContextSendUnsentMessages.accesskey "d">
-<!ENTITY folderContextUnsubscribe.label "Unsubscribe">
-<!ENTITY folderContextUnsubscribe.accesskey "U">
-<!ENTITY folderContextMarkNewsgroupRead.label "Mark Newsgroup Read">
+<!ENTITY folderContextUnsubscribe.label "Malaboni">
+<!ENTITY folderContextUnsubscribe.accesskey "M">
+<!ENTITY folderContextMarkNewsgroupRead.label "Marki grupon kiel legitan">
 <!ENTITY folderContextMarkNewsgroupRead.accesskey "k">
-<!ENTITY folderContextMarkMailFolderRead.label "Mark Folder Read">
+<!ENTITY folderContextMarkMailFolderRead.label "Marki mesaĝujon kiel legitan">
 <!ENTITY folderContextMarkMailFolderRead.accesskey "k">
-<!ENTITY folderContextSubscribe.label "Subscribe…">
+<!ENTITY folderContextSubscribe.label "Abonfluoj…">
 <!ENTITY folderContextSubscribe.accesskey "b">
-<!ENTITY folderContextSearchForMessages.label "Search Messages…">
+<!ENTITY folderContextSearchForMessages.label "Serĉi mesaĝojn…">
 <!ENTITY folderContextSearchForMessages.accesskey "S">
-<!ENTITY folderContextProperties2.label "Properties">
-<!ENTITY folderContextProperties2.accesskey "P">
-<!ENTITY folderContextFavoriteFolder.label "Favorite Folder">
-<!ENTITY folderContextFavoriteFolder.accesskey "a">
-<!ENTITY folderContextSettings2.label "Settings">
-<!ENTITY folderContextSettings2.accesskey "e">
+<!ENTITY folderContextProperties2.label "Atributoj">
+<!ENTITY folderContextProperties2.accesskey "A">
+<!ENTITY folderContextFavoriteFolder.label "Ŝatata mesaĝujo">
+<!ENTITY folderContextFavoriteFolder.accesskey "t">
+<!ENTITY folderContextSettings2.label "Agordoj">
+<!ENTITY folderContextSettings2.accesskey "j">
 
 <!-- Search Bar -->
-<!ENTITY SearchNameOrEmail.label "Name or Email contains:">
+<!ENTITY SearchNameOrEmail.label "Nomo aŭ retletero enhavas:">
 <!ENTITY SearchNameOrEmail.accesskey "N">
 
 <!-- Gloda Search Bar -->
-<!ENTITY glodaSearchBar.placeholder "Search messages…">
+<!ENTITY glodaSearchBar.placeholder "Serĉi mesaĝojn…">
 
 <!-- Quick Search Menu Bar -->
-<!ENTITY searchSubjectMenu.label "Subject">
-<!ENTITY searchFromMenu.label "From">
-<!ENTITY searchSubjectOrFromMenu.label "Subject or From">
-<!ENTITY searchRecipient.label "To or Cc">
-<!ENTITY searchSubjectOrRecipientMenu.label "Subject, To or Cc">
-<!ENTITY searchMessageBody.label "Entire Message">
-<!ENTITY saveAsVirtualFolderMenu.label "Save Search as a Folder…">
+<!ENTITY searchSubjectMenu.label "Temo">
+<!ENTITY searchFromMenu.label "Sendinto">
+<!ENTITY searchSubjectOrFromMenu.label "Temo aŭ sendinto">
+<!ENTITY searchRecipient.label "Ricevonto aŭ kaŝkopio">
+<!ENTITY searchSubjectOrRecipientMenu.label "Temo, ricevonto aŭ kaŝkopio">
+<!ENTITY searchMessageBody.label "Tuta mesaĝo">
+<!ENTITY saveAsVirtualFolderMenu.label "Konservi serĉon kiel mesaĝujon…">
 
 <!-- Thread Pane -->
-<!ENTITY threadColumn.label "Thread">
-<!ENTITY fromColumn.label "From">
-<!ENTITY recipientColumn.label "Recipient">
-<!ENTITY correspondentColumn.label "Correspondents">
-<!ENTITY subjectColumn.label "Subject">
-<!ENTITY dateColumn.label "Date">
-<!ENTITY priorityColumn.label "Priority">
-<!ENTITY tagsColumn.label "Tag">
-<!ENTITY accountColumn.label "Account">
-<!ENTITY statusColumn.label "Status">
-<!ENTITY sizeColumn.label "Size">
-<!ENTITY junkStatusColumn.label "Junk Status">
-<!ENTITY unreadColumn.label "Unread">
-<!ENTITY totalColumn.label "Total">
-<!ENTITY readColumn.label "Read">
-<!ENTITY receivedColumn.label "Received">
-<!ENTITY starredColumn.label "Starred">
-<!ENTITY locationColumn.label "Location">
-<!ENTITY idColumn.label "Order Received">
-<!ENTITY attachmentColumn.label "Attachments">
+<!ENTITY selectColumn.label "Elekti mesaĝojn">
+<!ENTITY threadColumn.label "Fadeno">
+<!ENTITY fromColumn.label "Sendinto">
+<!ENTITY recipientColumn.label "Ricevonto">
+<!ENTITY correspondentColumn.label "Koresponduloj">
+<!ENTITY subjectColumn.label "Temo">
+<!ENTITY dateColumn.label "Dato">
+<!ENTITY priorityColumn.label "Prioritato">
+<!ENTITY tagsColumn.label "Etikedo">
+<!ENTITY accountColumn.label "Konto">
+<!ENTITY statusColumn.label "Stato">
+<!ENTITY sizeColumn.label "Grando">
+<!ENTITY junkStatusColumn.label "Stato de trudmesaĝo">
+<!ENTITY unreadColumn.label "Nelegitaj">
+<!ENTITY totalColumn.label "Tute">
+<!ENTITY readColumn.label "Legita">
+<!ENTITY receivedColumn.label "Dato de ricevo">
+<!ENTITY starredColumn.label "Markita per steleto">
+<!ENTITY locationColumn.label "Loko">
+<!ENTITY idColumn.label "Ordo de ricevo">
+<!ENTITY attachmentColumn.label "Kunsendaĵoj">
 
 <!-- Thread Pane Tooltips -->
-<!ENTITY columnChooser2.tooltip "Select columns to display">
-<!ENTITY threadColumn2.tooltip "Display message threads">
-<!ENTITY fromColumn2.tooltip "Sort by from">
-<!ENTITY recipientColumn2.tooltip "Sort by recipient">
-<!ENTITY correspondentColumn2.tooltip "Sort by correspondents">
-<!ENTITY subjectColumn2.tooltip "Sort by subject">
-<!ENTITY dateColumn2.tooltip "Sort by date">
-<!ENTITY priorityColumn2.tooltip "Sort by priority">
-<!ENTITY tagsColumn2.tooltip "Sort by tags">
-<!ENTITY accountColumn2.tooltip "Sort by account">
-<!ENTITY statusColumn2.tooltip "Sort by status">
-<!ENTITY sizeColumn2.tooltip "Sort by size">
-<!ENTITY junkStatusColumn2.tooltip "Sort by junk status">
-<!ENTITY unreadColumn2.tooltip "Number of unread messages in thread">
-<!ENTITY totalColumn2.tooltip "Total number of messages in thread">
-<!ENTITY readColumn2.tooltip "Sort by read">
-<!ENTITY receivedColumn2.tooltip "Sort by date received">
-<!ENTITY starredColumn2.tooltip "Sort by star">
-<!ENTITY locationColumn2.tooltip "Sort by location">
-<!ENTITY idColumn2.tooltip "Sort by order received">
-<!ENTITY attachmentColumn2.tooltip "Sort by attachments">
+<!ENTITY columnChooser2.tooltip "Elekti kolumnojn por vidigi">
+<!ENTITY selectColumn.tooltip "Baskuli elekti ĉiujn mesaĝojn">
+<!ENTITY threadColumn2.tooltip "Ordigi mesaĝojn en fadenoj">
+<!ENTITY fromColumn2.tooltip "Ordigi laŭ nomo de sendinto">
+<!ENTITY recipientColumn2.tooltip "Ordigi laŭ nomo de ricevonto">
+<!ENTITY correspondentColumn2.tooltip "Ordigi laŭ nomoj de koresponduloj">
+<!ENTITY subjectColumn2.tooltip "Ordigi laŭ temo">
+<!ENTITY dateColumn2.tooltip "Ordigi laŭ dato">
+<!ENTITY priorityColumn2.tooltip "Ordigi laŭ prioritato">
+<!ENTITY tagsColumn2.tooltip "Ordigi laŭ etikedoj">
+<!ENTITY accountColumn2.tooltip "Ordigi laŭ konto">
+<!ENTITY statusColumn2.tooltip "Ordigi laŭ stato">
+<!ENTITY sizeColumn2.tooltip "Ordigi laŭ grando">
+<!ENTITY junkStatusColumn2.tooltip "Ordigi laŭ stato de trudmesaĝo">
+<!ENTITY unreadColumn2.tooltip "Nombro da ĉiuj nelegitaj mesaĝoj en fadeno">
+<!ENTITY totalColumn2.tooltip "Nombro da ĉiuj mesaĝoj en fadeno">
+<!ENTITY readColumn2.tooltip "Ordigi laŭ stato: nelegita/legita">
+<!ENTITY receivedColumn2.tooltip "Ordigi laŭ dato de ricevo">
+<!ENTITY starredColumn2.tooltip "Ordigi laŭ marko per steleto">
+<!ENTITY locationColumn2.tooltip "Ordigi laŭ loko">
+<!ENTITY idColumn2.tooltip "Ordigi laŭ ricevo">
+<!ENTITY attachmentColumn2.tooltip "Ordigi laŭ kunsendaĵo">
 
 <!-- Thread Pane Context Menu -->
-<!ENTITY contextOpenNewWindow.label "Open Message in New Window">
-<!ENTITY contextOpenNewWindow.accesskey "W">
+<!ENTITY contextNewMsgFromTemplate.label "Nova mesaĝo el ŝablono">
+<!ENTITY contextOpenNewWindow.label "Malfermi mesaĝon en nova fenestro">
+<!ENTITY contextOpenNewWindow.accesskey "f">
 <!-- The contextOpenNewTab.accesskey ("T") potentially conflicts with
      cutCmd.accessKey which is defined in textcontext.dtd from toolkit. Right
      now, both menu items can't be visible at the same time, but should someone
      enable copy/paste of message, this key would probably need to be changed. -->
-<!ENTITY contextOpenNewTab.label "Open Message in New Tab">
-<!ENTITY contextOpenNewTab.accesskey "T">
-<!ENTITY contextOpenConversation.label "Open Message in Conversation">
-<!ENTITY contextOpenConversation.accesskey "n">
-<!ENTITY contextOpenContainingFolder.label "Open Message in Containing Folder">
-<!ENTITY contextOpenContainingFolder.accesskey "n">
-<!ENTITY contextEditMsgAsNew.label "Edit As New Message">
-<!ENTITY contextEditMsgAsNew.accesskey "E">
-<!ENTITY contextEditDraftMsg.label "Edit Draft Message">
-<!ENTITY contextArchive.label "Archive">
-<!ENTITY contextArchive.accesskey "h">
-<!ENTITY contextReplySender.label "Reply to Sender Only">
+<!ENTITY contextOpenNewTab.label "Malfermi mesaĝon en nova langeto">
+<!ENTITY contextOpenNewTab.accesskey "l">
+<!ENTITY contextOpenConversation.label "Malfermi fadenon en nova langeto">
+<!ENTITY contextOpenConversation.accesskey "d">
+<!ENTITY contextOpenContainingFolder.label "Malfermi mesaĝon en enhavanta mesaĝujo">
+<!ENTITY contextOpenContainingFolder.accesskey "h">
+<!ENTITY contextEditMsgAsNew.label "Redakti kiel novan mesaĝon">
+<!ENTITY contextEditMsgAsNew.accesskey "e">
+<!ENTITY contextEditDraftMsg.label "Redakti malneton">
+<!ENTITY contextEditTemplate.label "Redakti ŝablonon">
+<!ENTITY contextEditTemplate.accesskey "b">
+<!ENTITY contextArchive.label "Arĥivi">
+<!ENTITY contextArchive.accesskey "A">
+<!ENTITY contextReplySender.label "Respondi nur al sendinto">
 <!ENTITY contextReplySender.accesskey "R">
-<!ENTITY contextReplyNewsgroup2.label "Followup to Newsgroup">
-<!ENTITY contextReplyNewsgroup2.accesskey "u">
-<!ENTITY contextReplyAll.label "Reply to All">
-<!ENTITY contextReplyAll.accesskey "A">
-<!ENTITY contextReplyList.label "Reply to List">
-<!ENTITY contextReplyList.accesskey "L">
-<!ENTITY contextForward.label "Forward">
-<!ENTITY contextForward.accesskey "F">
-<!ENTITY contextForwardAsMenu.label "Forward As">
-<!ENTITY contextForwardAsMenu.accesskey "o">
-<!ENTITY contextForwardAsInline.label "Inline">
-<!ENTITY contextForwardAsInline.accesskey "I">
-<!ENTITY contextForwardAsAttachmentItem.label "Attachment">
-<!ENTITY contextForwardAsAttachmentItem.accesskey "A">
-<!ENTITY contextMultiForwardAsAttachment.label "Forward as Attachments">
-<!ENTITY contextMultiForwardAsAttachment.accesskey "o">
-<!ENTITY contextMoveMsgMenu.label "Move To">
+<!ENTITY contextReplyNewsgroup2.label "Respondi al novaĵgrupo">
+<!ENTITY contextReplyNewsgroup2.accesskey "n">
+<!ENTITY contextReplyAll.label "Respondi al ĉiuj">
+<!ENTITY contextReplyAll.accesskey "j">
+<!ENTITY contextReplyList.label "Respondi al listo">
+<!ENTITY contextReplyList.accesskey "s">
+<!ENTITY contextForward.label "Plusendi">
+<!ENTITY contextForward.accesskey "">
+<!ENTITY contextForwardAsMenu.label "Plusendi kiel">
+<!ENTITY contextForwardAsMenu.accesskey "u">
+<!ENTITY contextForwardAsInline.label "enhavon de mesaĝo">
+<!ENTITY contextForwardAsInline.accesskey "e">
+<!ENTITY contextForwardAsAttachmentItem.label "kunsendaĵon">
+<!ENTITY contextForwardAsAttachmentItem.accesskey "k">
+<!ENTITY contextMultiForwardAsAttachment.label "Plusendi kiel kunsendaĵojn">
+<!ENTITY contextMultiForwardAsAttachment.accesskey "u">
+<!ENTITY contextMoveMsgMenu.label "Movi al">
 <!ENTITY contextMoveMsgMenu.accesskey "M">
-<!ENTITY contextMoveCopyMsgRecentMenu.label "Recent">
-<!ENTITY contextMoveCopyMsgRecentMenu.accesskey "R">
-<!ENTITY contextCopyMsgMenu.label "Copy To">
-<!ENTITY contextCopyMsgMenu.accesskey "C">
-<!ENTITY contextKillThreadMenu.label "Ignore Thread">
-<!ENTITY contextKillSubthreadMenu.accesskey "b">
+<!ENTITY contextMoveCopyMsgRecentMenu.label "Ĵusaj">
+<!ENTITY contextMoveCopyMsgRecentMenu.accesskey "s">
+<!ENTITY contextMoveCopyMsgFavoritesMenu.label "Ŝatataj">
+<!ENTITY contextMoveCopyMsgFavoritesMenu.accesskey "t">
+<!ENTITY contextCopyMsgMenu.label "Kopii al">
+<!ENTITY contextCopyMsgMenu.accesskey "K">
+<!ENTITY contextKillThreadMenu.label "ignori fadenon">
+<!ENTITY contextKillSubthreadMenu.accesskey "g">
 <!ENTITY contextKillThreadMenu.accesskey "I">
-<!ENTITY contextKillSubthreadMenu.label "Ignore Subthread">
-<!ENTITY contextWatchThreadMenu.label "Watch Thread">
+<!ENTITY contextKillSubthreadMenu.label "ignori subfadenon">
+<!ENTITY contextWatchThreadMenu.label "Observi fadenon">
 <!-- LOCALIZATION NOTE (contextWatchThreadMenu.accesskey):
      In the en-US locale we ran out of access keys, so there is an empty access key for
      Watch Thread. Localizers can pick a suitable key
   -->
-<!ENTITY contextWatchThreadMenu.accesskey "">
-<!ENTITY contextSaveAs.label "Save As…">
-<!ENTITY contextSaveAs.accesskey "S">
-<!ENTITY contextPrint.label "Print…">
+<!ENTITY contextWatchThreadMenu.accesskey "O">
+<!ENTITY contextSaveAs.label "Konservi kiel…">
+<!ENTITY contextSaveAs.accesskey "v">
+<!ENTITY contextPrint.label "Presi…">
 <!ENTITY contextPrint.accesskey "P">
-<!ENTITY contextPrintPreview.label "Print Preview">
-<!ENTITY contextPrintPreview.accesskey "v">
+<!ENTITY contextPrintPreview.label "Antaŭvidi presadon">
+<!ENTITY contextPrintPreview.accesskey "t">
 
 <!-- LOCALIZATION NOTE (columnPicker.applyTo.label):
      This option in the thread pane column picker pops up a sub-menu containing
@@ -816,7 +828,7 @@
      folder(s). The sub-menu items indicate whether we want to apply it to just
      a folder or also its children.
   -->
-<!ENTITY columnPicker.applyTo.label "Apply columns to…">
+<!ENTITY columnPicker.applyTo.label "Apliki kolumn‑aranĝon al…">
 <!-- LOCALIZATION NOTE (columnPicker.applyToFolder.label):
      This option in the thread pane column picker is found on a sub-menu beneath
      the "columnPicker.applyTo.label" alongside
@@ -825,7 +837,7 @@
      that the user selects using the same widget as the move to/copy to
      mechanism (via a series of popups).
   -->
-<!ENTITY columnPicker.applyToFolder.label "Folder…">
+<!ENTITY columnPicker.applyToFolder.label "mesaĝujo…">
 <!-- LOCALIZATION NOTE (columnPicker.applyToFolderAndChildren.label):
      This option in the thread pane column picker is found on a sub-menu beneath
      the "columnPicker.applyTo.label" alongside
@@ -834,7 +846,7 @@
      of its descendents. The user selects the folder using the same widget as the
      move to/copy to mechanism (via a series of popups).
   -->
-<!ENTITY columnPicker.applyToFolderAndChildren.label "Folder and its children…">
+<!ENTITY columnPicker.applyToFolderAndChildren.label "mesaĝujo kaj ĝiaj submesaĝujoj…">
 <!-- LOCALIZATION NOTE (columnPicker.thisFolder.label):
      This is used in the folder selection widget for the
      "columnPicker.applyToFolder.label" and
@@ -846,17 +858,17 @@
      items are "This folder", "B", and "C". This is the equivalent of the
      "File here" option for the move to/copy to widget.
   -->
-<!ENTITY columnPicker.thisFolder.label "This folder">
+<!ENTITY columnPicker.thisFolder.label "tiu ĉi mesaĝujo">
 
 <!-- Media (video/audio) controls -->
-<!ENTITY contextPlay.label "Play">
-<!ENTITY contextPlay.accesskey "P">
-<!ENTITY contextPause.label "Pause">
+<!ENTITY contextPlay.label "Ludi">
+<!ENTITY contextPlay.accesskey "L">
+<!ENTITY contextPause.label "Paŭzigi">
 <!ENTITY contextPause.accesskey "P">
-<!ENTITY contextMute.label "Mute">
-<!ENTITY contextMute.accesskey "M">
-<!ENTITY contextUnmute.label "Unmute">
-<!ENTITY contextUnmute.accesskey "m">
+<!ENTITY contextMute.label "Silentigi">
+<!ENTITY contextMute.accesskey "S">
+<!ENTITY contextUnmute.label "Malsilentigi">
+<!ENTITY contextUnmute.accesskey "s">
 
 <!-- Quick Search Bar -->
 <!-- LOCALIZATION NOTE (quickSearchCmd.key):
@@ -873,13 +885,13 @@
      to get to the box faster. If the global indexer is disabled, the search
      box will be collapsed and the user will never see this message.
   -->
-<!ENTITY search.label.base1 "Search #1">
+<!ENTITY search.label.base1 "Serĉi #1">
 <!-- LOCALIZATION NOTE (search.keyLabel.nonmac):
      The description of the key-binding to get into the global search box on
      windows and linux (which use the control key). We use the key defined in
      the quickSearchCmd.key entity defined above, the letter should match it.
   -->
-<!ENTITY search.keyLabel.nonmac "&lt;Ctrl+K&gt;">
+<!ENTITY search.keyLabel.nonmac "&lt;Stir+K&gt;">
 <!-- LOCALIZATION NOTE (search.keyLabel.mac):
      The description of the key-binding to get into the global search box on mac
      systems. We use the key defined in the quickSearchCmd.key entity defined
@@ -888,78 +900,82 @@
 <!ENTITY search.keyLabel.mac "&lt;&#x2318;K&gt;">
 
 <!-- Message Header Context Menu -->
-<!ENTITY AddToAddressBook.label "Add to Address Book…">
-<!ENTITY AddToAddressBook.accesskey "B">
-<!ENTITY AddDirectlyToAddressBook.label "Add to Address Book">
-<!ENTITY AddDirectlyToAddressBook.accesskey "B">
-<!ENTITY EditContact1.label "Edit Contact">
-<!ENTITY EditContact1.accesskey "E">
-<!ENTITY ViewContact.label "View Contact">
+<!ENTITY AddToAddressBook.label "Aldoni al adresaro…">
+<!ENTITY AddToAddressBook.accesskey "A">
+<!ENTITY AddDirectlyToAddressBook.label "Aldoni al adresaro">
+<!ENTITY AddDirectlyToAddressBook.accesskey "A">
+<!ENTITY EditContact1.label "Redakti kontakton">
+<!ENTITY EditContact1.accesskey "R">
+<!ENTITY ViewContact.label "Vidigi kontakton">
 <!ENTITY ViewContact.accesskey "V">
-<!ENTITY SubscribeToNewsgroup.label "Subscribe to Newsgroup">
-<!ENTITY SubscribeToNewsgroup.accesskey "N">
-<!ENTITY SendMessageTo.label "Compose Message To">
-<!ENTITY SendMessageTo.accesskey "s">
-<!ENTITY CopyEmailAddress.label "Copy Email Address">
-<!ENTITY CopyEmailAddress.accesskey "C">
-<!ENTITY CopyNameAndEmailAddress.label "Copy Name and Email Address">
-<!ENTITY CopyNameAndEmailAddress.accesskey "N">
-<!ENTITY CopyNewsgroupName.label "Copy Newsgroup Name">
-<!ENTITY CopyNewsgroupName.accesskey "C">
-<!ENTITY CopyNewsgroupURL.label "Copy Newsgroup URL">
-<!ENTITY CopyNewsgroupURL.accesskey "U">
-<!ENTITY CreateFilterFrom.label "Create Filter From…">
-<!ENTITY CreateFilterFrom.accesskey "F">
-<!ENTITY reportPhishingURL.label "Report Email Scam">
-<!ENTITY reportPhishingURL.accesskey "o">
+<!ENTITY SubscribeToNewsgroup.label "Aboni al novaĵgrupo">
+<!ENTITY SubscribeToNewsgroup.accesskey "n">
+<!ENTITY SendMessageTo.label "Skribi mesaĝon al">
+<!ENTITY SendMessageTo.accesskey "S">
+<!ENTITY CopyEmailAddress.label "Kopii retpoŝtan adreson">
+<!ENTITY CopyEmailAddress.accesskey "K">
+<!ENTITY CopyNameAndEmailAddress.label "Kopii nomon kaj retpoŝtan adreson">
+<!ENTITY CopyNameAndEmailAddress.accesskey "o">
+<!ENTITY CopyNewsgroupName.label "Kopii nomon de novaĵgrupo">
+<!ENTITY CopyNewsgroupName.accesskey "K">
+<!ENTITY CopyNewsgroupURL.label "Kopii ligilon de novaĵgrupo">
+<!ENTITY CopyNewsgroupURL.accesskey "l">
+<!ENTITY CreateFilterFrom.label "Krei filtrilon uzante…">
+<!ENTITY CreateFilterFrom.accesskey "f">
+<!ENTITY reportPhishingURL.label "Raporti trompan retleteron">
+<!ENTITY reportPhishingURL.accesskey "t">
 
 <!-- Spell checker context menu items -->
-<!ENTITY spellAddDictionaries.label "Add Dictionaries…">
+<!ENTITY spellAddDictionaries.label "Aldoni vortarojn…">
 <!ENTITY spellAddDictionaries.accesskey "A">
 
 <!-- Content Pane Context Menu -->
-<!ENTITY saveLinkAsCmd.label "Save Link As…">
-<!ENTITY saveLinkAsCmd.accesskey "k">
-<!ENTITY saveImageAsCmd.label "Save Image As…">
-<!ENTITY saveImageAsCmd.accesskey "v">
-<!ENTITY copyLinkCmd.label "Copy Link Location">
-<!ENTITY copyLinkCmd.accesskey "L">
-<!ENTITY copyImageAllCmd.label "Copy Image">
-<!ENTITY copyImageAllCmd.accesskey "I">
-<!ENTITY copyEmailCmd.label "Copy Email Address">
-<!ENTITY copyEmailCmd.accesskey "E">
-<!ENTITY stopCmd.label "Stop">
-<!ENTITY stopCmd.accesskey "S">
-<!ENTITY reloadCmd.label "Reload">
+<!ENTITY saveLinkAsCmd.label "Konservi ligitan dosieron kiel…">
+<!ENTITY saveLinkAsCmd.accesskey "d">
+<!ENTITY saveImageAsCmd.label "Konservi bildon kiel…">
+<!ENTITY saveImageAsCmd.accesskey "o">
+<!ENTITY copyLinkCmd.label "Kopii adreson de ligilo">
+<!ENTITY copyLinkCmd.accesskey "l">
+<!ENTITY copyImageAllCmd.label "Kopii bildon">
+<!ENTITY copyImageAllCmd.accesskey "b">
+<!ENTITY copyEmailCmd.label "Kopii retpoŝtan adreson">
+<!ENTITY copyEmailCmd.accesskey "p">
+<!ENTITY stopCmd.label "Haltigi">
+<!ENTITY stopCmd.accesskey "H">
+<!ENTITY reloadCmd.label "Reŝargi">
 <!ENTITY reloadCmd.accesskey "R">
-<!ENTITY openInBrowser.label "Open In Browser">
-<!ENTITY openInBrowser.accesskey "O">
-<!ENTITY openLinkInBrowser.label "Open Link In Browser">
-<!ENTITY openLinkInBrowser.accesskey "O">
+<!ENTITY openInBrowser.label "Malfermi en retumilo">
+<!ENTITY openInBrowser.accesskey "M">
+<!ENTITY openLinkInBrowser.label "Malfermi ligilon en retumilo">
+<!ENTITY openLinkInBrowser.accesskey "M">
 
 <!-- Statusbar -->
-<!ENTITY statusText.label "Done">
+<!ENTITY statusText.label "Farita">
 
 <!-- Mac OS X Window Menu -->
-<!ENTITY minimizeWindow.label "Minimize">
+<!ENTITY minimizeWindow.label "Plejetigi">
 <!ENTITY minimizeWindow.key "m">
-<!ENTITY bringAllToFront.label "Bring All to Front">
-<!ENTITY zoomWindow.label "Zoom">
+<!ENTITY bringAllToFront.label "Malfonigi ĉiujn">
+<!ENTITY zoomWindow.label "Pligrandigo">
 
 <!-- Mac OS X Application Menu (Cocoa widgets) -->
-<!ENTITY preferencesCmdMac2.label       "Preferences">
+<!ENTITY preferencesCmdMac2.label       "Preferoj">
 <!ENTITY preferencesCmdMac.commandkey   ",">
 <!ENTITY preferencesCmdMac.modifiers    "accel">
-<!ENTITY servicesMenuMac.label          "Services">
-<!ENTITY hideThisAppCmdMac.label        "Hide &brandShortName;">
+<!ENTITY servicesMenuMac.label          "Servoj">
+<!ENTITY hideThisAppCmdMac.label        "Kaŝi &brandShortName;">
 <!ENTITY hideThisAppCmdMac.commandkey   "H">
 <!ENTITY hideThisAppCmdMac.modifiers    "accel">
-<!ENTITY hideOtherAppsCmdMac.label      "Hide Others">
+<!ENTITY hideOtherAppsCmdMac.label      "Kaŝi aliajn">
 <!ENTITY hideOtherAppsCmdMac.commandkey "H">
 <!ENTITY hideOtherAppsCmdMac.modifiers  "accel,alt">
-<!ENTITY showAllAppsCmdMac.label        "Show All">
+<!ENTITY showAllAppsCmdMac.label        "Montri ĉiujn">
 
 <!-- Mac OS X Dock Icon pop-up menu -->
-<!ENTITY dockOptions.label              "App Icon Options…">
+<!ENTITY dockOptions.label              "Agordoj pri emblemo de aplikaĵo…">
+<!ENTITY writeNewMessageDock.label      "Nova mesaĝo">
+<!ENTITY openAddressBookDock.label      "Adresaro">
 
 <!-- Content tab Navigation buttons -->
+<!ENTITY browseBackButton.tooltip    "Iri reen je unu paĝo">
+<!ENTITY browseForwardButton.tooltip "Iri pluen je unu paĝo">

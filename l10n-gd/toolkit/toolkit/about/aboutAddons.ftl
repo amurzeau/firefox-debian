@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Stàlaich tuilleadan o fhaidhle…
     .accesskey = i
 help-button = Taic nan tuilleadan
+sidebar-help-button-title =
+    .title = Taic nan tuilleadan
 preferences =
     { PLATFORM() ->
         [windows] Roghainnean { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Innealan airson a h-uile tuilleadan
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Roghainnean { -brand-short-name }
+           *[other] Roghainnean { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Bha leudachain ann nach b’ urrainn dhuinn dearbhadh
 show-all-extensions-button =
@@ -159,6 +167,27 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Ùrachaidhean a tha ri am faighinn
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-extension = Leudachain
+addon-category-extension-title =
+    .title = Leudachain
+addon-category-theme = Ùrlaran
+addon-category-theme-title =
+    .title = Ùrlaran
+addon-category-plugin = Plugain
+addon-category-plugin-title =
+    .title = Plugain
+addon-category-dictionary = Faclairean
+addon-category-dictionary-title =
+    .title = Faclairean
+addon-category-locale = Cànain
+addon-category-locale-title =
+    .title = Cànain
+addon-category-available-updates = Ùrachaidhean a tha ri am faighinn
+addon-category-available-updates-title =
+    .title = Ùrachaidhean a tha ri am faighinn
+addon-category-recent-updates = Ùrachaidhean a rinn thu o chionn goirid
+addon-category-recent-updates-title =
+    .title = Ùrachaidhean a rinn thu o chionn goirid
 
 ## These are global warnings
 
@@ -292,6 +321,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Seall nas lugha
 go-back-button =
     .tooltiptext = Air ais
+header-back-button =
+    .title = Air ais
 
 ## Recommended add-ons page
 

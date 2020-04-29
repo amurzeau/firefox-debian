@@ -117,12 +117,39 @@ disabled-unsigned-heading =
 disabled-unsigned-description = Quyidagi qo‘shimcha dasturlar { -brand-short-name } brauzerida foydalanish uchun tasdiqdan o‘tmagan. Siz <label data-l10n-name="find-addons">almashtiriladiganlarini topishingiz</label> yoki dasturchidan ularni tasdiqlashini so‘rashingiz mumkin.
 disabled-unsigned-learn-more = Onlayn xavfsizligingizni ta’minlash uchun qilayotgan harakatlarimiz haqida batafsil ma’lumot oling.
 disabled-unsigned-devinfo = Dasturchilar qo‘shimcha dasturlarini bizning qo‘llanmamizni o‘qib, tasdiqdan o‘tkazishga <label data-l10n-name="learn-more">qiziqishadi</label>.
+extensions-view-discopane =
+    .name = Tavsiyalar
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Soʻnggi yangilanishlar
     .tooltiptext = { extensions-view-recent-updates.name }
 extensions-view-available-updates =
     .name = Mavjud yangilanishlar
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Tavsiyalar
+addon-category-discover-title =
+    .title = Tavsiyalar
+addon-category-extension = Kengaytmalar
+addon-category-extension-title =
+    .title = Kengaytmalar
+addon-category-theme = Mavzular
+addon-category-theme-title =
+    .title = Mavzular
+addon-category-plugin = Plaginlar
+addon-category-plugin-title =
+    .title = Plaginlar
+addon-category-dictionary = Lugʻatlar
+addon-category-dictionary-title =
+    .title = Lugʻatlar
+addon-category-locale = Tillar
+addon-category-locale-title =
+    .title = Tillar
+addon-category-available-updates = Mavjud yangilanishlar
+addon-category-available-updates-title =
+    .title = Mavjud yangilanishlar
+addon-category-recent-updates = Soʻnggi yangilanishlar
+addon-category-recent-updates-title =
+    .title = Soʻnggi yangilanishlar
 
 ## These are global warnings
 
@@ -227,14 +254,31 @@ addon-open-about-debugging = Qo‘shimcha dasturlarni tuzatish
 
 ## Recommended add-ons page
 
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    Kengaytmalar va mavzular brauzeringiz uchun ilovalarga oʻxshaydi.
+    Ular parollaringizni himoya qiladi, videolarni yuklab oladi, chegirmalarni topadi,
+    asabbuzar reklamalarni bloklaydi, brauzer koʻrinishini oʻzgartiradi.
+    Bunday kichik dasturiy taʼminotlarni begona dasturchilar ishlab chiqadi.
+    Bu yerdan mutlaq xavfsizligingiz, samaradorlik va funksionallik uchun { -brand-product-name }
+    <a data-l10n-name="learn-more-trigger">tavsiya etiladigan</a> kengaytma
+    va mavzular toʻplamini topish mumkin.
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    Ayrim tavsiyalar aynan siz uchun moslashtirilgan. Ular siz oʻrnatgan boshqa 
+    kengaytmalar, profil sozlamalari va foydalanish statistikasi asosida tavsiya etiladi.
 
 ## Add-on actions
 
 
 ## Pending uninstall message bar
 
+recommended-themes-heading = Tavsiya etilgan mavzular
 
 ## Page headings
 
+theme-heading = Mavzularni boshqarish
+theme-heading-search-label = Yana mavzu topish
 addon-page-options-button =
     .title = Barcha qoʻshimcha dasturlar uchun asboblar

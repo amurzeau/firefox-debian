@@ -29,6 +29,8 @@ certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = Ñe’ẽñemi moambueha aty
 certificate-viewer-key-id = ID ñe'ẽñemi
 certificate-viewer-key-size = Ñe'ẽñemi tuichakue
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-locality = Inc. Tendaite
 certificate-viewer-locality = Tenda
 certificate-viewer-location = Tendaite
 certificate-viewer-logid = ID ñemboguapy
@@ -95,3 +97,16 @@ certificate-viewer-download-pem = PEM (cert)
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (juajuha)
     .download = { $fileName }-chain.pem
+# The title attribute for Critical Extension icon
+certificate-viewer-critical-extension =
+    .title = Ko jepysokue oñemongurusúma ivaikuaávaramo, he’iséva puruhára omboykeva’erã mboajepyre noikumbýiramo.
+certificate-viewer-export = Guerahauka
+    .download = { $fileName }.pem
+
+## Labels for tabs displayed in stand-alone about:certificate page
+
+certificate-viewer-tab-mine = Ne mboajepyre
+certificate-viewer-tab-people = Yvypóra
+certificate-viewer-tab-servers = Mohendahavusu
+certificate-viewer-tab-ca = Moakãhára
+certificate-viewer-tab-unkonwn = Ojekuaa’ỹva

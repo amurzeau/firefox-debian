@@ -26,6 +26,7 @@ policy-DisabledCiphers = Wyłączenie szyfrów.
 policy-DefaultDownloadDirectory = Ustawienie domyślnego katalogu pobierania.
 policy-DisableAppUpdate = Uniemożliwienie aktualizowania przeglądarki.
 policy-DisableBuiltinPDFViewer = Wyłączenie PDF.js, wbudowanej przeglądarki plików PDF w programie { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Uniemożliwienie agentowi domyślnej przeglądarki wykonywania jakichkolwiek działań. Dotyczy tylko systemu Windows, inne platformy nie mają agenta.
 policy-DisableDeveloperTools = Blokowanie dostępu do narzędzi dla twórców witryn.
 policy-DisableFeedbackCommands = Wyłączenie poleceń do wysyłania opinii z menu Pomoc („Prześlij swoją opinię” i „Zgłoś oszustwo internetowe”).
 policy-DisableFirefoxAccounts = Wyłączenie usług korzystających z { -fxaccount-brand-name(case: "gen", capitalization: "lower") }, w tym synchronizacji.
@@ -65,6 +66,14 @@ policy-HardwareAcceleration = Wartość „fałsz” wyłącza przyspieszanie sp
 policy-Homepage = Ustawienie i opcjonalna blokada strony startowej.
 policy-InstallAddonsPermission = Zezwalanie pewnym witrynom na instalowanie dodatków.
 policy-LegacyProfiles = Wyłączenie funkcji wymuszającej oddzielny profil dla każdej instalacji.
+
+## Do not translate "SameSite", it's the name of a cookie attribute.
+
+policy-LegacySameSiteCookieBehaviorEnabled = Włączenie domyślnego ustawienia starego zachowania ciasteczek „sameSite”.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Wracanie do starego zachowania „sameSite” dla ciasteczek na podanych witrynach.
+
+##
+
 policy-LocalFileLinks = Zezwalanie podanym witrynom na odnośniki do lokalnych plików.
 policy-NetworkPrediction = Włączenie lub wyłączenie przewidywania sieci (wstępnego pobierania DNS).
 policy-NewTabPage = Włączenie lub wyłączenie strony nowej karty.

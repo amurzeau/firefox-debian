@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Install Add-on From File…
     .accesskey = I
 help-button = Add-ons Support
+sidebar-help-button-title =
+    .title = Add-ons Support
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } Options
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Tools for all add-ons
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } Options
+           *[other] { -brand-short-name } Preferences
+        }
 show-unsigned-extensions-button =
     .label = Some extensions could not be verified
 show-all-extensions-button =
@@ -172,6 +180,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Available Updates
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Recommendations
+addon-category-discover-title =
+    .title = Recommendations
+addon-category-extension = Extensions
+addon-category-extension-title =
+    .title = Extensions
+addon-category-theme = Themes
+addon-category-theme-title =
+    .title = Themes
+addon-category-plugin = Plugins
+addon-category-plugin-title =
+    .title = Plugins
+addon-category-dictionary = Dictionaries
+addon-category-dictionary-title =
+    .title = Dictionaries
+addon-category-locale = Languages
+addon-category-locale-title =
+    .title = Languages
+addon-category-available-updates = Available Updates
+addon-category-available-updates-title =
+    .title = Available Updates
+addon-category-recent-updates = Recent Updates
+addon-category-recent-updates-title =
+    .title = Recent Updates
 
 ## These are global warnings
 
@@ -284,6 +316,7 @@ shortcuts-no-commands = The following extensions do not have shortcuts:
 shortcuts-input =
     .placeholder = Type a shortcut
 shortcuts-browserAction = Activate extension
+shortcuts-browserAction2 = Activate toolbar button
 shortcuts-pageAction = Activate page action
 shortcuts-sidebarAction = Toggle the sidebar
 shortcuts-modifier-mac = Include Ctrl, Alt, or ⌘
@@ -308,6 +341,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Show Less
 go-back-button =
     .tooltiptext = Go back
+header-back-button =
+    .title = Go back
 
 ## Recommended add-ons page
 

@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = 파일에서 부가 기능 설치…
     .accesskey = I
 help-button = 부가 기능 지원
+sidebar-help-button-title =
+    .title = 부가 기능 지원
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } 설정
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = 부가 기능 도구
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } 설정
+           *[other] { -brand-short-name } 설정
+        }
 show-unsigned-extensions-button =
     .label = 몇몇 확장 기능은 확인을 할 수 없음
 show-all-extensions-button =
@@ -166,6 +174,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = 업데이트 가능 항목
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = 추천
+addon-category-discover-title =
+    .title = 추천
+addon-category-extension = 확장 기능
+addon-category-extension-title =
+    .title = 확장 기능
+addon-category-theme = 테마
+addon-category-theme-title =
+    .title = 테마
+addon-category-plugin = 플러그인
+addon-category-plugin-title =
+    .title = 플러그인
+addon-category-dictionary = 사전
+addon-category-dictionary-title =
+    .title = 사전
+addon-category-locale = 언어팩
+addon-category-locale-title =
+    .title = 언어팩
+addon-category-available-updates = 업데이트 가능 항목
+addon-category-available-updates-title =
+    .title = 업데이트 가능 항목
+addon-category-recent-updates = 최근 업데이트
+addon-category-recent-updates-title =
+    .title = 최근 업데이트
 
 ## These are global warnings
 
@@ -241,7 +273,7 @@ extensions-updates-updating =
 extensions-updates-installed =
     .value = 업데이트 완료
 extensions-updates-downloaded =
-    .value = 부가 기능 업데이트를 다운로드 완료 했습니다.
+    .value = 부가 기능 업데이트를 다운로드했습니다.
 extensions-updates-restart =
     .label = 설치를 완료하려면 다시 시작하세요.
 extensions-updates-none-found =
@@ -278,6 +310,7 @@ shortcuts-no-commands = 다음 확장 기능에는 단축키가 없습니다:
 shortcuts-input =
     .placeholder = 단축키 입력
 shortcuts-browserAction = 확장 기능 활성화
+shortcuts-browserAction2 = 도구 모음 버튼 활성화
 shortcuts-pageAction = 페이지 작업 활성화
 shortcuts-sidebarAction = 탐색창 표시/숨기기
 shortcuts-modifier-mac = Ctrl, Alt 또는 ⌘ 포함
@@ -302,6 +335,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = 간략히 보기
 go-back-button =
     .tooltiptext = 뒤로 가기
+header-back-button =
+    .title = 뒤로 가기
 
 ## Recommended add-ons page
 
@@ -333,7 +368,7 @@ addon-options-button =
 
 ## Add-on actions
 
-report-addon-button = 신고하기
+report-addon-button = 신고
 remove-addon-button = 제거
 # The link will always be shown after the other text.
 remove-addon-disabled-button = 제거할 수 없음. <a data-l10n-name="link">이유?</a>

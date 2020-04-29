@@ -55,3 +55,43 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Certificate chain:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Повезивање није успело
+deniedPortAccess-title = Ова адреса је забрањена
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Хмм. Имамо проблем са проналажењем тог сајта.
+fileNotFound-title = Датотека није пронађена
+fileAccessDenied-title = Приступ датотеци је одбијен
+generic-title = Упс.
+captivePortal-title = Пријави се на мрежу
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Хмм. Та адреса не изгледа исправно.
+netInterrupt-title = Веза је прекинута
+notCached-title = Документ је истекао
+netOffline-title = Рад ван мреже
+contentEncodingError-title = Грешка у кодирању садржаја
+unsafeContentType-title = Небезбедна врста датотеке
+netReset-title = Веза је ресетована
+netTimeout-title = Веза је истекла
+unknownProtocolFound-title = Нејасна адреса
+proxyConnectFailure-title = Прокси сервер одбија везе
+proxyResolveFailure-title = Не могу да пронађем прокси сервер
+redirectLoop-title = Страница се не преусмерава исправно
+unknownSocketType-title = Неочекиван одговор од сервера
+nssFailure2-title = Безбедна веза није успостављена
+cspBlocked-title = Блокирано због полисе о безбедности садржаја
+xfoBlocked-title = Блокирано према X-Frame-Options политици
+corruptedContentError-title = Грешка оштећеног садржаја
+remoteXUL-title = Удаљени XUL
+sslv3Used-title = Не могу се повезати безбедно
+inadequateSecurityError-title = Веза није сугурна
+blockedByPolicy-title = Блокиране странице
+clockSkewError-title = Време на вашем рачунару је погрешно
+networkProtocolError-title = Грешка мрежног протокола
+nssBadCert-title = Упозорење: Потенцијални безбедносни ризик
+nssBadCert-sts-title = Нисам се повезао: могући безбедносни проблем
+certerror-mitm-title = Програм спречава { -brand-short-name } да се безбедно повеже на ову страницу

@@ -295,6 +295,11 @@ sandbox-proc-type-content = conținut
 sandbox-proc-type-file = conținut fișier
 sandbox-proc-type-media-plugin = plugin media
 sandbox-proc-type-data-decoder = decodor de date
+startup-cache-title = Cache de pornire
+startup-cache-disk-cache-path = Cale de salvare locală pentru cache
+startup-cache-ignore-disk-cache = Ignoră cache-ul salvat local
+startup-cache-found-disk-cache-on-init = Cache local identificat la inițializare
+startup-cache-wrote-to-disk-cache = Cache salvat local
 launcher-process-status-0 = Activat
 launcher-process-status-1 = Dezactivat din cauza unei probleme
 launcher-process-status-2 = Dezactivat forțat
@@ -318,6 +323,7 @@ touch-enabled = intrare tactilă activată
 drag-enabled = tragerea barei de derulare activată
 keyboard-enabled = tastatură activată
 autoscroll-enabled = autoderulare activată
+zooming-enabled = Zoom lin prin pișcare activat
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

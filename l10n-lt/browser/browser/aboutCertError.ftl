@@ -55,3 +55,43 @@ cert-error-details-hsts-label = „HTTP Strict Transport Security“: { $hasHSTS
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP viešojo rakto įsiminimas: { $hasHPKP }
 cert-error-details-cert-chain-label = Liudijimų grandinė:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Nepavyko užmegzti ryšio
+deniedPortAccess-title = Prieiga prie šio adreso apribota
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Hmm. Mums nepavyksta rasti šios svetainės.
+fileNotFound-title = Nerastas failas
+fileAccessDenied-title = Priėjimas prie failo uždraustas
+generic-title = Klaida
+captivePortal-title = Prisijungti prie tinklo
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm. Šis adresas neatrodo gerai.
+netInterrupt-title = Ryšys buvo nutrauktas
+notCached-title = Dokumento galiojimas baigėsi
+netOffline-title = Dirbama neprisijungus prie tinklo
+contentEncodingError-title = Kodavimo klaida
+unsafeContentType-title = Nesaugus failo tipas
+netReset-title = Ryšys nutrūko
+netTimeout-title = Baigėsi prisijungimui skirtas laikas
+unknownProtocolFound-title = Neatpažintas adresas
+proxyConnectFailure-title = Įgaliotasis serveris atmeta ryšį
+proxyResolveFailure-title = Nerastas įgaliotasis serveris
+redirectLoop-title = Netinkamas tinklalapio peradresavimas
+unknownSocketType-title = Netikėtas serverio atsakas
+nssFailure2-title = Saugaus ryšio užmegzti nepavyko
+cspBlocked-title = Užblokuota dėl saugumo politikos
+xfoBlocked-title = Užblokuota dėl „X-Frame-Options“ politikos
+corruptedContentError-title = Klaida: duomenys pažeisti
+remoteXUL-title = XUL iš tinklo
+sslv3Used-title = Nepavyko prisijungti saugiai
+inadequateSecurityError-title = Jūsų ryšys nėra saugus
+blockedByPolicy-title = Uždraustas puslapis
+clockSkewError-title = Jūsų kompiuterio laikas neteisingas
+networkProtocolError-title = Tinklo protokolo klaida
+nssBadCert-title = Dėmesio: galima saugumo rizika
+nssBadCert-sts-title = Neprisijungta: galima saugumo problema
+certerror-mitm-title = Kažkuri programa neleidžia „{ -brand-short-name }“ saugiai prisijungti prie šios svetainės

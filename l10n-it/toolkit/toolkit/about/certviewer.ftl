@@ -16,6 +16,9 @@ certificate-viewer-certificate-authority = Autorità di certificazione
 certificate-viewer-cipher-suite = Suite di cifratura
 certificate-viewer-common-name = Nome comune
 certificate-viewer-email-address = Indirizzo email
+# Variables:
+#   $firstCertName (String) - Common Name for the displayed certificate
+certificate-viewer-tab-title = Certificato per { $firstCertName }
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
 certificate-viewer-inc-country = Paese di costituzione
 certificate-viewer-country = Paese
@@ -29,6 +32,8 @@ certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = Gruppo per scambio di chiavi
 certificate-viewer-key-id = ID chiave
 certificate-viewer-key-size = Dimensione chiave
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-locality = Località di costituzione
 certificate-viewer-locality = Località
 certificate-viewer-location = Indirizzo
 certificate-viewer-logid = ID log
@@ -94,3 +99,18 @@ certificate-viewer-download-pem = PEM (certificato)
   .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (catena)
   .download = { $fileName }-catena.pem
+
+# The title attribute for Critical Extension icon
+certificate-viewer-critical-extension =
+  .title = Questa estensione è stata contrassegnata come critica. Questo significa che un client deve rifiutare il certificato se non è in grado di interpretarla.
+
+certificate-viewer-export = Esporta
+  .download = { $fileName }.pem
+
+## Labels for tabs displayed in stand-alone about:certificate page
+
+certificate-viewer-tab-mine = Certificati personali
+certificate-viewer-tab-people = Persone
+certificate-viewer-tab-servers = Server
+certificate-viewer-tab-ca = Autorità
+certificate-viewer-tab-unkonwn = Sconosciuti

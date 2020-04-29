@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = ફાઇલમાંથી ઍડ-ઓનને સ્થાપિત કરો…
     .accesskey = I
 help-button = ઍડ-ઓન્સ આધાર
+sidebar-help-button-title =
+    .title = ઍડ-ઓન્સ આધાર
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } વિકલ્પો
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = બધા ઍડ-ઓન માટે સાધનો
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } વિકલ્પો
+           *[other] { -brand-short-name } પસંદગીઓ
+        }
 show-unsigned-extensions-button =
     .label = કેટલાક એક્સ્ટેન્શન્સની ચકાસણી કરી શકાઈ નથી
 show-all-extensions-button =
@@ -145,6 +153,27 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = ઉપલબ્ધ સુધારાઓ
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-extension = એક્સટેન્શન
+addon-category-extension-title =
+    .title = એક્સટેન્શન
+addon-category-theme = થીમ્સ
+addon-category-theme-title =
+    .title = થીમ્સ
+addon-category-plugin = પ્લગઇન
+addon-category-plugin-title =
+    .title = પ્લગઇન
+addon-category-dictionary = શબ્દકોષો
+addon-category-dictionary-title =
+    .title = શબ્દકોષો
+addon-category-locale = ભાષાઓ
+addon-category-locale-title =
+    .title = ભાષાઓ
+addon-category-available-updates = ઉપલબ્ધ સુધારાઓ
+addon-category-available-updates-title =
+    .title = ઉપલબ્ધ સુધારાઓ
+addon-category-recent-updates = તાજેતરનાં સુધારાઓ
+addon-category-recent-updates-title =
+    .title = તાજેતરનાં સુધારાઓ
 
 ## These are global warnings
 
@@ -272,6 +301,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = ઓછું બતાવો
 go-back-button =
     .tooltiptext = પાછળ જાવ
+header-back-button =
+    .title = પાછળ જાવ
 
 ## Recommended add-ons page
 

@@ -29,6 +29,8 @@ certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = 키 교환 그룹
 certificate-viewer-key-id = 키 ID
 certificate-viewer-key-size = 키 크기
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-locality = 법인 구/군/시
 certificate-viewer-locality = 구/군/시
 certificate-viewer-location = 위치
 certificate-viewer-logid = 로그 ID
@@ -62,7 +64,7 @@ certificate-viewer-business-category = 사업 분야
 certificate-viewer-subject-name = 주체 이름
 certificate-viewer-issuer-name = 발급자 이름
 certificate-viewer-validity = 유효성
-certificate-viewer-subject-alt-names = 주제 대체 이름
+certificate-viewer-subject-alt-names = 주체 대체 이름
 certificate-viewer-public-key-info = 공개 키 정보
 certificate-viewer-miscellaneous = 기타
 certificate-viewer-fingerprints = 지문
@@ -95,3 +97,16 @@ certificate-viewer-download-pem = PEM (인증서)
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (체인)
     .download = { $fileName }-chain.pem
+# The title attribute for Critical Extension icon
+certificate-viewer-critical-extension =
+    .title = 이 확장 기능은 클라이언트가 인증서를 이해하지 못할 경우 반드시 인증서를 거부해야 함을 의미하는 위험한 것으로 표시되었습니다.
+certificate-viewer-export = 내보내기
+    .download = { $fileName }.pem
+
+## Labels for tabs displayed in stand-alone about:certificate page
+
+certificate-viewer-tab-mine = 개인 인증서
+certificate-viewer-tab-people = 다른 사람
+certificate-viewer-tab-servers = 서버
+certificate-viewer-tab-ca = 인증 기관
+certificate-viewer-tab-unkonwn = 알 수 없음

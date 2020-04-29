@@ -26,6 +26,7 @@ policy-DisabledCiphers = Desgaitu zifratzeak.
 policy-DefaultDownloadDirectory = Ezarri deskarga-direktorio lehenetsia.
 policy-DisableAppUpdate = Eragotzi nabigatzailea eguneratzea.
 policy-DisableBuiltinPDFViewer = Desgaitu PDF.js, { -brand-short-name }(r)en integratutako PDF ikustailea.
+policy-DisableDefaultBrowserAgent = Eragotzi lehenetsitako nabigatzaile agenteak ekintzarik egitea. Windowsen bakarrik; beste plataformek ez dute agentea.
 policy-DisableDeveloperTools = Blokeatu garatzaile-tresnetarako sarbidea.
 policy-DisableFeedbackCommands = Desgaitu iritzia bidaltzeko komandoak 'Laguntza' menutik ('Bidali iritzia' eta 'Eman gune iruzurtiaren berri').
 policy-DisableFirefoxAccounts = Desgaitu { -fxaccount-brand-name }(r)en oinarritutako zerbitzuak, Sync barne.
@@ -65,6 +66,14 @@ policy-HardwareAcceleration = Ez badago ezarrita, hardware-azelerazioa desgaituk
 policy-Homepage = Hasiera-orria ezarri eta ezarpen bidez aldatzea.
 policy-InstallAddonsPermission = Baimendu zenbait webgunek gehigarriak instalatzea.
 policy-LegacyProfiles = Desgaitu instalazio bakoitzerako profil bereiziak behartzen dituen eginbidea
+
+## Do not translate "SameSite", it's the name of a cookie attribute.
+
+policy-LegacySameSiteCookieBehaviorEnabled = Gaitu lehenetsitako SameSite cookie portaera zaharraren ezarpena.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Leheneratu SameSite portaera zaharrera zehaztutako guneetako cookientzat.
+
+##
+
 policy-LocalFileLinks = Baimendu gune zehatzei fitxategi lokalen loturak egitea.
 policy-NetworkPrediction = Gaitu edo desgaitu sarearen iragarpena (DNS aurre-eskuratzea).
 policy-NewTabPage = Gaitu edo desgaitu fitxa berriaren orria.

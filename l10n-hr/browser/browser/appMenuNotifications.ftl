@@ -3,12 +3,12 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 appmenu-update-available =
-    .label = Novo { -brand-shorter-name } ažuriranje je dostupno.
-    .buttonlabel = Preuzmi ažuriranje
+    .label = Dostupna je nova { -brand-shorter-name } verzija.
+    .buttonlabel = Preuzmi nadogradnju
     .buttonaccesskey = P
     .secondarybuttonlabel = Ne sada
     .secondarybuttonaccesskey = N
-appmenu-update-available-message = Ažurirajte { -brand-shorter-name } za brže i sigurnije iskustvo.
+appmenu-update-available-message = Aktualiziraj { -brand-shorter-name } za najnoviju brzinu i sigurnost.
 appmenu-update-manual =
     .label = { -brand-shorter-name } nije moguće aktualizirati na najnoviju verziju.
     .buttonlabel = Preuzmi { -brand-shorter-name }
@@ -47,3 +47,21 @@ appmenu-addon-private-browsing =
     .secondarybuttonaccesskey = U
 appmenu-addon-private-browsing-message = Nove dodatke koje dodaš u { -brand-shorter-name } neće raditi u privatnim prozorima, ukoliko to ne dozvoliš u postavkama.
 appmenu-addon-private-browsing-learn-more = Saznaj kako upravljati postavkama dodataka
+appmenu-new-tab-controlled =
+    .label = Tvoja nova kartica je promijenjena.
+    .buttonlabel = Zadrži promjene
+    .buttonaccesskey = Z
+    .secondarybuttonlabel = Onemogući dodatak
+    .secondarybuttonaccesskey = d
+appmenu-homepage-controlled =
+    .label = Tvoja početna stranica je promijenjena.
+    .buttonlabel = Zadrži promjene
+    .buttonaccesskey = Z
+    .secondarybuttonlabel = Onemogući dodatak
+    .secondarybuttonaccesskey = d
+appmenu-tab-hide-controlled =
+    .label = Pristupite svojim skrivenim karticama
+    .buttonlabel = Drži kartice skrivenim
+    .buttonaccesskey = k
+    .secondarybuttonlabel = Onemogući dodatak
+    .secondarybuttonaccesskey = d

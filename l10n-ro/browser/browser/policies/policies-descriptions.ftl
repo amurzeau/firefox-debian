@@ -22,9 +22,11 @@ policy-Bookmarks = Creează marcaje în bara de marcaje, în meniul de marcaje s
 policy-CaptivePortal = Activează sau dezactivează suportul pentru portaluri captive.
 policy-CertificatesDescription = Adaugă certificate sau folosește certificate încorporate.
 policy-Cookies = Permite sau blochează setarea de cookie-uri de către site-urile web.
+policy-DisabledCiphers = Dezactivează cifrurile.
 policy-DefaultDownloadDirectory = Setează directorul implicit de descărcare.
 policy-DisableAppUpdate = Împiedică actualizarea browserului.
 policy-DisableBuiltinPDFViewer = Dezactivează PDF.js, vizualizatorul de fișiere PDF încorporat în { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Împiedică agentul implicit de browser să ia orice măsură. Aplicabil numai pentru Windows; alte platforme nu au agentul.
 policy-DisableDeveloperTools = Blochează accesul la uneltele de dezvoltare.
 policy-DisableFeedbackCommands = Dezactivează comenzile de trimis feedback în meniul de Ajutor (Trimite feedback și Raportează site-uri înșelătoare).
 policy-DisableFirefoxAccounts = Dezactivează serviciile pe bază necesare pentru { -fxaccount-brand-name }, inclusiv Sync
@@ -64,6 +66,14 @@ policy-HardwareAcceleration = Dacă este dezactivat, oprește accelerarea hardwa
 policy-Homepage = Setează și, opțional, blochează pagina de start.
 policy-InstallAddonsPermission = Permite anumitor site-uri web să instaleze suplimente.
 policy-LegacyProfiles = Dezactivează funcționalitatea care forțează crearea unui profil separat pentru fiecare versiune instalată.
+
+## Do not translate "SameSite", it's the name of a cookie attribute.
+
+policy-LegacySameSiteCookieBehaviorEnabled = Activează setarea implicită pentru comportamentul cookie-urilor SameSite moștenite.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Revenire la comportamentul moștenit al atributului SameSite pentru cookie-uri de pe site-urile specificate.
+
+##
+
 policy-LocalFileLinks = Permite anumitor site-uri web să se lege la fișiere locale.
 policy-NetworkPrediction = Activează sau dezactivează predicția de rețea (prelectură DNS).
 policy-NewTabPage = Activează sau dezactivează pagina Filă nouă.

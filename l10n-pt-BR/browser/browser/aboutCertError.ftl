@@ -55,3 +55,43 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = Fixação de Chave Pública HTTP: { $hasHPKP }
 cert-error-details-cert-chain-label = Cadeia de certificados:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Não foi possível conectar
+deniedPortAccess-title = Endereço restrito
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Hmm. Estamos tendo problemas para encontrar este site.
+fileNotFound-title = Arquivo não encontrado
+fileAccessDenied-title = O acesso ao arquivo foi negado
+generic-title = Ops!
+captivePortal-title = Autenticar na rede
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm. Este endereço não parece correto.
+netInterrupt-title = A conexão foi interrompida
+notCached-title = Documento fora de validade
+netOffline-title = Modo offline
+contentEncodingError-title = Erro de codificação de conteúdo
+unsafeContentType-title = Tipo de arquivo inseguro
+netReset-title = A conexão foi reiniciada
+netTimeout-title = A conexão expirou
+unknownProtocolFound-title = O endereço não foi compreendido
+proxyConnectFailure-title = O servidor proxy está recusando conexões
+proxyResolveFailure-title = Não foi possível encontrar o servidor proxy
+redirectLoop-title = A página não está sendo redirecionada corretamente
+unknownSocketType-title = Resposta não esperada do servidor
+nssFailure2-title = Falha na conexão segura
+cspBlocked-title = Bloqueado pela diretiva de segurança de conteúdo
+xfoBlocked-title = Bloqueado pela diretiva X-Frame-Options
+corruptedContentError-title = Erro de conteúdo corrompido
+remoteXUL-title = XUL remoto
+sslv3Used-title = Não foi possível conectar com segurança
+inadequateSecurityError-title = Sua conexão não é segura
+blockedByPolicy-title = Página bloqueada
+clockSkewError-title = O relógio do seu computador está errado
+networkProtocolError-title = Erro de protocolo de rede
+nssBadCert-title = Alerta: Potencial risco de segurança à frente
+nssBadCert-sts-title = Não conectou: Potencial problema de segurança
+certerror-mitm-title = Um software está impedindo que o { -brand-short-name } se conecte a este site com segurança

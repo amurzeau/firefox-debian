@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Инсталиране на добавка от файл…
     .accesskey = И
 help-button = Поддръжка
+sidebar-help-button-title =
+    .title = Поддръжка
 preferences =
     { PLATFORM() ->
         [windows] Настройки на { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Инструменти за всички добавки
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Настройки на { -brand-short-name }
+           *[other] Настройки на { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Някои разширения не можаха да бъдат проверени
 show-all-extensions-button =
@@ -162,6 +170,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Налични обновявания
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Препоръки
+addon-category-discover-title =
+    .title = Препоръки
+addon-category-extension = Разширения
+addon-category-extension-title =
+    .title = Разширения
+addon-category-theme = Теми
+addon-category-theme-title =
+    .title = Теми
+addon-category-plugin = Приставки
+addon-category-plugin-title =
+    .title = Приставки
+addon-category-dictionary = Речници
+addon-category-dictionary-title =
+    .title = Речници
+addon-category-locale = Езици
+addon-category-locale-title =
+    .title = Езици
+addon-category-available-updates = Налични обновявания
+addon-category-available-updates-title =
+    .title = Налични обновявания
+addon-category-recent-updates = Скорошни обновявания
+addon-category-recent-updates-title =
+    .title = Скорошни обновявания
 
 ## These are global warnings
 
@@ -293,6 +325,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = По-малко
 go-back-button =
     .tooltiptext = Назад
+header-back-button =
+    .title = Назад
 
 ## Recommended add-ons page
 

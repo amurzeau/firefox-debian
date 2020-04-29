@@ -21,12 +21,12 @@ onboarding-button-label-get-started = 시작하기
 onboarding-welcome-header = { -brand-short-name }를 사용해 주셔서 감사합니다.
 onboarding-welcome-body = 이제 브라우저가 있습니다.<br/>{ -brand-product-name }의 나머지를 만나 보세요.
 onboarding-welcome-learn-more = 장점 더 알아보기
+onboarding-join-form-header = { -brand-product-name }와 함께하기
 onboarding-welcome-modal-get-body = 이제 브라우저가 있습니다.<br/>{ -brand-product-name }를 최대한 활용해 보세요.
 onboarding-welcome-modal-supercharge-body = 개인 정보 보호를 강화하세요.
 onboarding-welcome-modal-privacy-body = 이제 브라우저가 있습니다. 개인 정보 보호 기능을 더 추가해 보세요.
 onboarding-welcome-modal-family-learn-more = { -brand-product-name } 제품군에 대해 알아보세요.
 onboarding-welcome-form-header = 여기서 시작
-onboarding-join-form-header = { -brand-product-name }와 함께하기
 onboarding-join-form-body = 시작하려면 이메일 주소를 입력하세요.
 onboarding-join-form-email =
     .placeholder = 이메일 입력
@@ -114,13 +114,13 @@ onboarding-firefox-monitor-text = { -monitor-brand-name }는 데이터 유출 �
 onboarding-firefox-monitor-text2 = { -monitor-brand-name }는 데이터 유출 사건에 사용자의 이메일이 있는지를 모니터링하고 새 데이터 유출 사건에 있으면 사용자에게 알려 줍니다.
 onboarding-firefox-monitor-button = 알림 가입 신청
 onboarding-browse-privately-title = 사생활 보호 모드
-onboarding-browse-privately-text = 사생활 보호 모드가 검색 및 방문 기록을 지우기 때문에 컴퓨터를 사용하는 모든 사람들이 개인 정보를 유지할 수 있습니다.
+onboarding-browse-privately-text = 사생활 보호 모드는 검색 및 방문 기록을 삭제하므로 컴퓨터를 사용하는 다른 사람들로부터 비밀을 유지할 수 있습니다.
 onboarding-browse-privately-button = 사생활 보호 창 열기
 onboarding-firefox-send-title = 공유 파일 보호
 onboarding-firefox-send-text2 = 파일을 { -send-brand-name }에 업로드하여 종단 간 암호화와 자동으로 만료되는 링크로 공유하세요.
 onboarding-firefox-send-button = { -send-brand-name }를 사용해보세요
 onboarding-mobile-phone-title = 휴대폰에서 { -brand-product-name } 받기
-onboarding-mobile-phone-text = iOS 또는 Android 용 { -brand-product-name }를 다운로드하고 기기간에 데이터를 동기화합니다.
+onboarding-mobile-phone-text = iOS 또는 Android용 { -brand-product-name }를 다운로드하고 기기간에 데이터를 동기화합니다.
 # "Mobile" is short for mobile/cellular phone, "Browser" is short for web
 # browser.
 onboarding-mobile-phone-button = 모바일 브라우저 다운로드
@@ -130,7 +130,7 @@ onboarding-send-tabs-title = 즉시 탭 보내기
 onboarding-send-tabs-text = 탭 보내기는 복사나 붙여넣기, 브라우저를 나가지 않고도 내 기기들로 페이지를 즉시 공유합니다.
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text2 = 링크를 복사하거나 브라우저를 떠나지 않고도 다른 기기에 페이지를 쉽게 공유 할 수 있습니다.
+onboarding-send-tabs-text2 = 링크를 복사하거나 브라우저를 떠나지 않고도 다른 기기에 페이지를 쉽게 공유할 수 있습니다.
 onboarding-send-tabs-button = 탭 보내기 사용 시작
 onboarding-pocket-anywhere-title = 어디서나 읽고 듣기
 onboarding-pocket-anywhere-text2 = { -pocket-brand-name } 앱으로 좋아하는 콘텐츠를 오프라인에 저장하고 편리할 때마다 읽고, 듣고, 시청할 수 있습니다.
@@ -147,6 +147,9 @@ onboarding-facebook-container-button = 확장 기능 추가
 onboarding-import-browser-settings-title = 북마크, 비밀번호 등을 가져오기
 onboarding-import-browser-settings-text = Chrome 사이트와 설정을 쉽게 가져올 수 있습니다.
 onboarding-import-browser-settings-button = Chrome 데이터 가져오기
+onboarding-personal-data-promise-title = 사생활 보호를 고려한 설계
+onboarding-personal-data-promise-text = { -brand-product-name }는 사용자의 데이터를 적게 사용하고 보호하며 사용하는 방법을 명확히 함으로써 사용자의 데이터를 존중합니다.
+onboarding-personal-data-promise-button = 우리의 약속을 읽으세요
 
 ## Message strings belonging to the Return to AMO flow
 

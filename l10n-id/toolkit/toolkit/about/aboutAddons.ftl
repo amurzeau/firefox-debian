@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Pasang Pengaya dari Berkas…
     .accesskey = B
 help-button = Dukungan Pengaya
+sidebar-help-button-title =
+    .title = Dukungan Pengaya
 preferences =
     { PLATFORM() ->
         [windows] Opsi { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Alat untuk semua pengaya
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Opsi { -brand-short-name }
+           *[other] Preferensi { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Beberapa ekstensi tidak dapat diverifikasi
 show-all-extensions-button =
@@ -167,6 +175,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Versi Baru yang Tersedia
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Rekomendasi
+addon-category-discover-title =
+    .title = Rekomendasi
+addon-category-extension = Ekstensi
+addon-category-extension-title =
+    .title = Ekstensi
+addon-category-theme = Tema
+addon-category-theme-title =
+    .title = Tema
+addon-category-plugin = Plugin
+addon-category-plugin-title =
+    .title = Plugin
+addon-category-dictionary = Kamus
+addon-category-dictionary-title =
+    .title = Kamus
+addon-category-locale = Bahasa
+addon-category-locale-title =
+    .title = Bahasa
+addon-category-available-updates = Versi Baru yang Tersedia
+addon-category-available-updates-title =
+    .title = Versi Baru yang Tersedia
+addon-category-recent-updates = Versi Baru
+addon-category-recent-updates-title =
+    .title = Versi Baru
 
 ## These are global warnings
 
@@ -303,6 +335,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Lebih Sedikit
 go-back-button =
     .tooltiptext = Mundur
+header-back-button =
+    .title = Mundur
 
 ## Recommended add-ons page
 

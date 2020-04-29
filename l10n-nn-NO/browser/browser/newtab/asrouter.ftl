@@ -214,3 +214,24 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Vis alle
     .accesskey = s
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = Lag enkelt trygge passord
+cfr-whatsnew-lockwise-body = Det er vanskeleg å kome på unike, trygge passord for kvar konto. Når du lagar eit passord, vel du passordfeltet for å bruke eit trygt, generert passord frå { -brand-shorter-name }.
+cfr-whatsnew-lockwise-icon-alt = { -lockwise-brand-short-name }-ikon
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = Få varsel om sårbare passord
+cfr-whatsnew-passwords-body = Hackarar veit at folk brukar dei same passorda på nytt. Dersom du brukar det same passordet på fleire nettstadar, og ein av desse nettstadane er i ein datalekkasje, vil du sjå eit varsel i { -lockwise-brand-short-name } om å endre passordet ditt på desse nettstadane.
+cfr-whatsnew-passwords-icon-alt = Sårbart passord, nøkkelikon
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = Ta bilde-i-bilde fullskjerm
+cfr-whatsnew-pip-fullscreen-body = Når du sprett ein video inn i eit flytande vindauge, kan du no dobbelklikke på det vindauget for å gå i fullskjerm.
+cfr-whatsnew-pip-fullscreen-icon-alt = Bilde-i-bilde ikon

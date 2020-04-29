@@ -21,6 +21,7 @@ about-telemetry-more-information = A la recèrca de mai d'informacions ?
 about-telemetry-firefox-data-doc = Las <a data-l10n-name="data-doc-link">Donadas de Documentacion de Firefox</a> contenon de guidas sus cossí trabalhar amb nòstras aisinas de donadas.
 about-telemetry-telemetry-client-doc = La <a data-l10n-name="client-doc-link">documentacion de client de Firefox Telemetry</a> inclutz de definicions per de concèptes, documentacion API e referéncias de donadas.
 about-telemetry-telemetry-dashboard = Los <a data-l10n-name="dashboard-link">panèls de Telemetria</a> permeton de visualizar las donadas que Mozilla recep via la Telemetria.
+about-telemetry-telemetry-probe-dictionary = Lo <a data-l10n-name="probe-dictionary-link">diccionari de mòstras</a> provesís de detalhs e de descripcions sus las mòstras collectadas per telemetria.
 about-telemetry-show-in-Firefox-json-viewer = Dobrir dins la visualizaira JSON
 about-telemetry-home-section = Acuèlh
 about-telemetry-general-data-section = Donadas generalas
@@ -56,6 +57,16 @@ about-telemetry-upload-type =
     { $uploadcase ->
         [enabled] activada
        *[disabled] desactivada
+    }
+# Example Output: 1 sample, average = 0, sum = 0
+# Variables:
+#   $sampleCount (Integer): amount of histogram samples
+#   $prettyAverage (Integer): average of histogram samples
+#   $sum (Integer): sum of histogram samples
+about-telemetry-histogram-stats =
+    { $sampleCount ->
+        [one] { $sampleCount } element, mejana = { $prettyAverage }, soma = { $sum }
+       *[other] { $sampleCount } elements, mejana = { $prettyAverage }, soma = { $sum }
     }
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
@@ -131,6 +142,7 @@ about-telemetry-object-header = objècte
 about-telemetry-extra-header = de sòbra
 about-telemetry-origin-section = Telemetria d’origina
 about-telemetry-origin-origin = origina
+about-telemetry-origin-count = comptatge
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox Origin Telemetry</a> encòda las donadas abans de las mandar que { $telemetryServerOwner } pòsca comptar las mantunas causas, mas que pòscan pas saber se una { -brand-product-name } contribuiguèt a aqueste comptatge. (<a data-l10n-name="prio-blog-link">Ne saber mai</a>)

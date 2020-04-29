@@ -25,7 +25,7 @@ privacy-data-collection-header = Thu thập và sử dụng dữ liệu
 privacy-security-header = Bảo mật
 privacy-scam-detection-title = Phát hiện lừa đảo
 privacy-anti-virus-title = Trình chống vi-rút
-privacy-certificates-title = Chứng chỉ
+privacy-certificates-title = Chứng nhận
 chat-pane-header = Trò chuyện
 chat-status-title = Trạng thái
 chat-notifications-title = Thông báo
@@ -55,3 +55,15 @@ update-in-progress-ok-button = &Loại bỏ
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Tiếp tục
+
+## OS Authentication dialog
+
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message = Xác nhận danh tính của bạn để tạo mật khẩu chính.
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = tạo một mật khẩu chính
+# Don't change this label.
+master-password-os-auth-dialog-caption = { -brand-full-name }

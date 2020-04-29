@@ -8,6 +8,7 @@ cert-error-intro = { $hostname } עושה שימוש באישור אבטחה ש�
 cert-error-mitm-intro = אתרים מוכיחים את זהותם באמצעות אישורי אבטחה, המונפקים על־ידי רשויות אישורים.
 cert-error-mitm-mozilla = { -brand-short-name } מגובה על־ידי Mozilla, המנהלת חנות רשות אישורים (CA) פתוחה לחלוטין. חנות זו מסייעת להבטיח שרשויות האישורים פועלות לפי שיטות העבודה המומלצות לאבטחת המשתמשים.
 cert-error-mitm-connection = { -brand-short-name } עושה שימוש בחנות רשות אישורים של Mozilla כדי לאמת שהחיבור מאובטח, ולא באישורים המסופקים על־ידי מערכת ההפעלה של המשתמש. כך שאם תוכנת אנטי־וירוס או רשת מיירטים חיבור עם אישור אבטחה שהונפק על־ידי רשות אישורים שאינה בחנות רשות האישורים של Mozilla, החיבור ייחשב לא בטוח.
+cert-error-trust-unknown-issuer-intro = ייתכן שגורם כלשהו מנסה להתחזות לאתר ולכן מומלץ שלא להמשיך.
 # Variables:
 # $hostname (String) - Hostname of the website with cert error.
 cert-error-trust-unknown-issuer = אתרים מוכיחים את זהותם באמצעות אישורי אבטחה. { -brand-short-name } לא בוטח ב־{ $hostname } מכיוון שמנפיק אישור האבטחה שלו אינו ידוע, האישור נחתם עצמית או שהשרת לא שולח את אישורי הביניים הנכונים.
@@ -54,3 +55,43 @@ cert-error-details-hsts-label = אבטחת תעבורה מחמירה של HTTP �
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = הצמדת מפתח ציבורי של HTTP:‏ { $hasHPKP }
 cert-error-details-cert-chain-label = שרשרת אישורים:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = כישלון בהתחברות
+deniedPortAccess-title = כתובת זו מוגבלת
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = אבוי. יש לנו בעיה למצוא את האתר הזה.
+fileNotFound-title = קובץ לא נמצא
+fileAccessDenied-title = הגישה לקובץ נדחתה
+generic-title = שגיאה כללית
+captivePortal-title = כניסה לרשת
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = אבוי. הכתובת הזו לא נראית תקינה.
+netInterrupt-title = החיבור הופסק
+notCached-title = תוקף המסמך פג
+netOffline-title = מצב לא־מקוון
+contentEncodingError-title = שגיאה בקידוד תוכן
+unsafeContentType-title = סוג קובץ מסוכן
+netReset-title = החיבור הופסק
+netTimeout-title = תם הזמן המוקצב לחיבור
+unknownProtocolFound-title = כתובת זו אינה מובנת
+proxyConnectFailure-title = השרת המתווך דחה את ההתחברות
+proxyResolveFailure-title = שרת מתווך לא נמצא
+redirectLoop-title = הדף מבצע העברה לא תקינה
+unknownSocketType-title = תגובה לא צפויה מהשרת
+nssFailure2-title = חיבור מאובטח נכשל
+cspBlocked-title = נחסם בהתאם למדיניות האבטחה של התוכן
+xfoBlocked-title = נחסם בהתאם למדיניות ה־X-Frame-Options
+corruptedContentError-title = שגיאת תוכן פגום
+remoteXUL-title = XUL מרוחק
+sslv3Used-title = לא ניתן להתחבר באופן מאובטח
+inadequateSecurityError-title = החיבור שלך אינו מאובטח
+blockedByPolicy-title = עמוד חסום
+clockSkewError-title = השעון של המחשב שלך אינו מכוון
+networkProtocolError-title = שגיאת פרוטוקול רשת
+nssBadCert-title = אזהרה: סכנת אבטחה אפשרית לפניך
+nssBadCert-sts-title = לא בוצעה התחברות: חולשת אבטחה אפשרית
+certerror-mitm-title = תכנית כלשהי מונעת מ־{ -brand-short-name } להתחבר באופן מאובטח לאתר הזה

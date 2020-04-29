@@ -26,6 +26,7 @@ policy-DisabledCiphers = Desactivar cifrados.
 policy-DefaultDownloadDirectory = Establecer el directorio de descargas predeterminado.
 policy-DisableAppUpdate = Evitar que el navegador se actualice.
 policy-DisableBuiltinPDFViewer = Desactivar PDF.js, el visor de PDF integrado en { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Previene que el agente de navegador predeterminado realice cualquier acción. Solo aplicable a Windows; otras plataformas no tienen el agente.
 policy-DisableDeveloperTools = Bloquear el acceso a las herramientas de desarrollador.
 policy-DisableFeedbackCommands = Desactivar comandos para enviar opiniones desde el menú de ayuda (Enviar opinión e informar de sitio engañoso).
 policy-DisableFirefoxAccounts = Desactivar servicios basados en { -fxaccount-brand-name }, incluyendo Sync.
@@ -65,6 +66,14 @@ policy-HardwareAcceleration = Si es falso, desactiva la aceleración por hardwar
 policy-Homepage = Establecer y opcionalmente bloquear la página de inicio.
 policy-InstallAddonsPermission = Permitir que ciertos sitios web instalen complementos.
 policy-LegacyProfiles = Desactivar la función que obliga a tener un perfil separado para cada instalación
+
+## Do not translate "SameSite", it's the name of a cookie attribute.
+
+policy-LegacySameSiteCookieBehaviorEnabled = Activar la configuración de comportamiento tradicional de SameSite para las cookies de forma predeterminada.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Volver al comportamiento tradicional de SameSite para las cookies en sitios específicos.
+
+##
+
 policy-LocalFileLinks = Permitir a sitios web concretos enlazar a archivos locales.
 policy-NetworkPrediction = Habilitar o deshabilitar la predicción de red (búsqueda previa de DNS).
 policy-NewTabPage = Habilitar o deshabilitar la página Nueva pestaña.

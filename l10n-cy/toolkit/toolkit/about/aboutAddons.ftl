@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Gosod Ychwanegyn o Ffeil…
     .accesskey = G
 help-button = Cefnogaeth Ychwanegion
+sidebar-help-button-title =
+    .title = Cefnogaeth Ychwanegion
 preferences =
     { PLATFORM() ->
         [windows] Dewisiadau { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Offer ar gyfer pob ychwanegyn
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Dewisiadau { -brand-short-name }
+           *[other] Dewisiadau { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Nid oedd modd dilysu rhai estyniadau
 show-all-extensions-button =
@@ -164,6 +172,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Diweddariadau ar Gael
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Argymhellion
+addon-category-discover-title =
+    .title = Argymhellion
+addon-category-extension = Estyniadau
+addon-category-extension-title =
+    .title = Estyniadau
+addon-category-theme = Themâu
+addon-category-theme-title =
+    .title = Themâu
+addon-category-plugin = Ategion
+addon-category-plugin-title =
+    .title = Ategion
+addon-category-dictionary = Geiriaduron
+addon-category-dictionary-title =
+    .title = Geiriaduron
+addon-category-locale = Iaith
+addon-category-locale-title =
+    .title = Iaith
+addon-category-available-updates = Diweddariadau ar Gael
+addon-category-available-updates-title =
+    .title = Diweddariadau ar Gael
+addon-category-recent-updates = Diweddariadau Diweddar
+addon-category-recent-updates-title =
+    .title = Diweddariadau Diweddar
 
 ## These are global warnings
 
@@ -276,6 +308,7 @@ shortcuts-no-commands = Nid oes gan yr estyniadau canlynol lwybrau byr:
 shortcuts-input =
     .placeholder = Teipiwch llwybr byr
 shortcuts-browserAction = Cychwyn estyniad
+shortcuts-browserAction2 = Cychwyn botwm bar offer
 shortcuts-pageAction = Cychwyn gweithred tudalen
 shortcuts-sidebarAction = Toglo'r bar ochr
 shortcuts-modifier-mac = Cynnwys Ctrl, Alt, neu ⌘
@@ -305,6 +338,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Dangos Llai
 go-back-button =
     .tooltiptext = Mynd nôl
+header-back-button =
+    .title = Mynd nôl
 
 ## Recommended add-ons page
 

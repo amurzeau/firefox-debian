@@ -11,3 +11,30 @@ cert-error-details-hsts-label = HTTP Ukhuseleko Olungqongqo Lwesithuthi: { $hasH
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = Iqhosha Likawonkewonke Eliyintloko Lepinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Ikhonkco lesatifikethi
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Ayikwazi kudibanisa
+deniedPortAccess-title = Le dilesi inemida
+fileNotFound-title = Ifayile ayifumaneki
+fileAccessDenied-title = Ufikelelo kule fayile lwalelwe
+generic-title = Oops.
+captivePortal-title = Loga ungene kwinethwekhi
+netInterrupt-title = Unxibelelwano luphazanyisiwe
+notCached-title = Uxwebhu luphelelwe
+netOffline-title = Imo engeyo yakusebenza
+contentEncodingError-title = Imposiso yekhowudi yomxholo
+unsafeContentType-title = Udidi lwefayile engakhuselekanga
+netReset-title = Umdibaniso uphinde wamiselwa
+netTimeout-title = Umdibaniso uphelelwe lixesha
+unknownProtocolFound-title = Idilesi ayiqondwanga
+proxyConnectFailure-title = Iseva yommeli ayiluvumeli unxibelelwano
+proxyResolveFailure-title = Ayikwazi ukufumana iseva yommeli
+redirectLoop-title = Ikhasi alithumeli kwenye indawo kakuhle
+unknownSocketType-title = Impendulo engalindelekanga kwiseva
+nssFailure2-title = Unxibelelwano Ukhuseleko Aluphumelelanga
+cspBlocked-title = Ithintelwe ngumGaqonkqubo woKhuseleko lomXholo
+corruptedContentError-title = Imposiso yomxholo owonakalisiweyo
+remoteXUL-title = Susa i-XUL
+sslv3Used-title = Akunxibelelani ngokukhuselekileyo
+inadequateSecurityError-title = Uqhagamshelo lwakho alukhuselekanga

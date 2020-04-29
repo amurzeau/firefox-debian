@@ -788,6 +788,13 @@ forms-master-pw-fips-desc = Slaptažodžio pakeisti nepavyko
 
 ## OS Authentication dialog
 
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message = Norėdami sukurti pagrindinį slaptažodį, patvirtinkite savo tapatybę.
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = sukurti pagrindinį slaptažodį
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -860,6 +867,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Tarp svetainių veikiantys stebėjimo elementai
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Tarp svetainių veikiantys ir socialinių tinklų stebėjimo elementai
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Tarp svetainių veikiantys ir socialinių tinklų stebėjimo elementai, o likusius slapukus izoliuoti
 sitedata-option-block-unvisited =
     .label = Slapukai iš neaplankytų svetainių
 sitedata-option-block-all-third-party =
@@ -936,6 +945,7 @@ content-blocking-etp-strict-desc = Stipresnė apsauga, tačiau gali sutrikti kai
 content-blocking-etp-custom-desc = Pasirinkite, kurios stebėjimo elementus ir scenarijus norite blokuoti.
 content-blocking-private-windows = Stebėjimui naudojamas turinys privačiojo naršymo languose
 content-blocking-cross-site-tracking-cookies = Tarp svetainių veikiantys stebėjimo slapukai
+content-blocking-cross-site-tracking-cookies-plus-isolate = Tarp svetainių veikiantys slapukai, o likusius slapukus izoliuoti
 content-blocking-social-media-trackers = Socialinių tinklų stebėjimo elementai
 content-blocking-all-cookies = Visi slapukai
 content-blocking-unvisited-cookies = Slapukai iš nelankytų svetainių
@@ -948,6 +958,7 @@ content-blocking-warning-title = Dėmesio!
 content-blocking-warning-description = Blokuojant turinį gali sutrikti kai kurių svetainių veikimas. Blokavimą galima lengvai išjungti patikimose svetainėse.
 content-blocking-learn-how = Sužinoti kaip
 content-blocking-etp-warning-description = Stebėjimo elementų blokavimas gali sutrikdyti kai kurių svetainių veikimą. Norėdami įkelti visą turinį, tinklalapį su stebėjimo elementais įkelkite iš naujo.
+content-blocking-and-isolating-etp-warning-description = Stebėjimo elementų blokavimas ir slapukų izoliavimas gali sutrikdyti kai kurių svetainių veikimą. Norėdami įkelti visą turinį, tinklalapį su stebėjimo elementais įkelkite iš naujo.
 content-blocking-warning-learn-how = Sužinoti kaip
 content-blocking-reload-description = Norėdami pritaikyti šiuos pakeitimus, turėsite įkelti savo korteles iš naujo.
 content-blocking-reload-tabs-button =

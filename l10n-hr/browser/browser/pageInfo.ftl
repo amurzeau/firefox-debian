@@ -145,11 +145,11 @@ general-strict-mode =
 security-no-owner = Ova stranica nema informaciju o vlasništvu.
 page-info-security-no-owner =
     .value = Ova stranica nema informaciju o vlasništvu.
-media-select-folder = Odaberite mapu za spremanje slika
+media-select-folder = Odaberi mapu za spremanje slika
 media-unknown-not-cached =
     .value = Nepoznato (nije spremljeno u predmemoriju)
 permissions-use-default =
-    .label = Koristi standardne postavke
+    .label = Koristi standardne vrijednosti
 security-no-visits = Ne
 # This string is used to display the number of meta tags
 # in the General Tab

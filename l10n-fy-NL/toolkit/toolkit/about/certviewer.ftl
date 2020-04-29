@@ -29,6 +29,8 @@ certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = Kaaiútwikselingsgroep
 certificate-viewer-key-id = Kaai-ID
 certificate-viewer-key-size = Kaaigrutte
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-locality = Fêstigingsplak
 certificate-viewer-locality = Plak
 certificate-viewer-location = Lokaasje
 certificate-viewer-logid = Log-ID
@@ -95,3 +97,16 @@ certificate-viewer-download-pem = PEM (sert)
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (keten)
     .download = { $fileName }-chain.pem
+# The title attribute for Critical Extension icon
+certificate-viewer-critical-extension =
+    .title = Dizze útwreiding is as krityk markearre, wat betsjut dat clients it sertifikaat wegerje moatten as se it net begripe.
+certificate-viewer-export = Eksportearje
+    .download = { $fileName }.pem
+
+## Labels for tabs displayed in stand-alone about:certificate page
+
+certificate-viewer-tab-mine = Jo sertifikaten
+certificate-viewer-tab-people = Minsken
+certificate-viewer-tab-servers = Servers
+certificate-viewer-tab-ca = Organisaasjes
+certificate-viewer-tab-unkonwn = Unbekend

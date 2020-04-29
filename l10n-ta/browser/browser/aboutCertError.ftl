@@ -36,3 +36,31 @@ cert-error-details-hsts-label = HTTP கண்டிப்பான போக
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP பொது விசை பிணைப்பு: { $hasHPKP }
 cert-error-details-cert-chain-label = சான்றிதழ் சங்கிலி:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = இணைக்க முடியவில்லை
+deniedPortAccess-title = இந்த முகவரி தடுக்கப்பட்டுள்ளது
+fileNotFound-title = கோப்பைக் காணவில்லை
+fileAccessDenied-title = கோப்பு அணுகல் மறுக்கப்பட்டது
+generic-title = அச்சச்சோ.
+captivePortal-title = பிணையத்தினுள் புகுபதிகை
+netInterrupt-title = இணைப்பில் தடங்கல் உள்ளது
+notCached-title = ஆவணம் காலாவதியாகிவிட்டது
+netOffline-title = இணைப்பில்லாத முறைமை
+contentEncodingError-title = உள்ளடக்க குறிமுறை பிழை
+unsafeContentType-title = பாதுகாப்பில்லாத கோப்பு வகை
+netReset-title = இணைப்பு மீட்டமைக்கப்பட்டது
+netTimeout-title = இணைப்பு நேரம் முடிந்தது
+unknownProtocolFound-title = முகவரியை புரிந்து கொள்ள முடியவில்லை
+proxyConnectFailure-title = பதிலாள் சேவையகம் இணைப்பை மறுக்கிறது
+proxyResolveFailure-title = பதிலி சேவையகத்தைக் கண்டறிய முடியவில்லை
+redirectLoop-title = பக்கத்தை ஒழுங்காகத் திருப்பிவிடவில்லை
+unknownSocketType-title = சேவையகத்திலிருந்து எதிர்பாராத பதில்
+nssFailure2-title = பாதுகாப்பான இணைப்பு முறிந்தது
+cspBlocked-title = உள்ளடக்க பாதுகாப்பு கொள்கையால் தடுக்கப்பட்டது
+corruptedContentError-title = சிதைந்த உள்ளடக்கப் பிழை
+remoteXUL-title = தொலைநிலை XUL
+sslv3Used-title = பாதுகாப்பாக இணைக்க இயலவில்லை
+inadequateSecurityError-title = உங்கள் இணைப்பு பாதுகாப்பற்றது
+blockedByPolicy-title = முடக்கப்பட்ட பக்கம்

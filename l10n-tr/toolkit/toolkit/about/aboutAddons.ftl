@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Dosyadan eklenti kur...
     .accesskey = k
 help-button = Eklenti desteği
+sidebar-help-button-title =
+    .title = Eklenti desteği
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } seçenekleri
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Tüm eklentiler için araçlar
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } seçenekleri
+           *[other] { -brand-short-name } tercihleri
+        }
 show-unsigned-extensions-button =
     .label = Bazı eklentiler doğrulanamadı
 show-all-extensions-button =
@@ -167,6 +175,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Mevcut güncellemeler
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Öneriler
+addon-category-discover-title =
+    .title = Öneriler
+addon-category-extension = Eklentiler
+addon-category-extension-title =
+    .title = Eklentiler
+addon-category-theme = Temalar
+addon-category-theme-title =
+    .title = Temalar
+addon-category-plugin = Yan uygulamalar
+addon-category-plugin-title =
+    .title = Yan uygulamalar
+addon-category-dictionary = Sözlükler
+addon-category-dictionary-title =
+    .title = Sözlükler
+addon-category-locale = Diller
+addon-category-locale-title =
+    .title = Diller
+addon-category-available-updates = Mevcut güncellemeler
+addon-category-available-updates-title =
+    .title = Mevcut güncellemeler
+addon-category-recent-updates = Yakın zamandaki güncellemeler
+addon-category-recent-updates-title =
+    .title = Yakın zamandaki güncellemeler
 
 ## These are global warnings
 
@@ -279,6 +311,7 @@ shortcuts-no-commands = Aşağıdaki eklentilerin kısayolları yok:
 shortcuts-input =
     .placeholder = Bir kısayol girin
 shortcuts-browserAction = Eklentiyi etkinleştir
+shortcuts-browserAction2 = Araç çubuğu düğmesini etkinleştir
 shortcuts-pageAction = Sayfa eylemini etkinleştir
 shortcuts-sidebarAction = Kenar çubuğunu aç/kapat
 shortcuts-modifier-mac = Ctrl, Alt veya ⌘ kullanmalısınız
@@ -304,6 +337,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Daha az göster
 go-back-button =
     .tooltiptext = Geri dön
+header-back-button =
+    .title = Geri dön
 
 ## Recommended add-ons page
 

@@ -307,6 +307,11 @@ sandbox-proc-type-content = cynnwys
 sandbox-proc-type-file = cynnwys ffeil
 sandbox-proc-type-media-plugin = ategyn cyfrwng
 sandbox-proc-type-data-decoder = datgodydd data
+startup-cache-title = Storfa cychwyn
+startup-cache-disk-cache-path = Llwybr Storfa Disg
+startup-cache-ignore-disk-cache = Anwybyddu Storfa Disg
+startup-cache-found-disk-cache-on-init = Wedi dod o hyd i Storfa Disg ar Init
+startup-cache-wrote-to-disk-cache = Ysgrifennwyd at Storfa Disg
 launcher-process-status-0 = Galluogwyd
 launcher-process-status-1 = Analluogwyd oherwydd methiant
 launcher-process-status-2 = Analluogwyd yn orfodol
@@ -330,6 +335,7 @@ touch-enabled = mewnbwn cyffwrdd wedi ei alluogi
 drag-enabled = wedi galluogu llusgo bar sgrolio
 keyboard-enabled = bysellfwrdd wedi ei anlluogi
 autoscroll-enabled = galluogwyd awtosgrolio
+zooming-enabled = pinsio chwyddo llyfn wedi'i alluogi
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

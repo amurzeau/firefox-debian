@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Установить дополнение из файла…
     .accesskey = а
 help-button = Поддержка дополнений
+sidebar-help-button-title =
+    .title = Поддержка дополнений
 preferences =
     { PLATFORM() ->
         [windows] Настройки { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Инструменты для всех дополнений
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Настройки { -brand-short-name }
+           *[other] Настройки { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Некоторые расширения не могут быть проверены
 show-all-extensions-button =
@@ -167,6 +175,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Доступные обновления
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Рекомендации
+addon-category-discover-title =
+    .title = Рекомендации
+addon-category-extension = Расширения
+addon-category-extension-title =
+    .title = Расширения
+addon-category-theme = Темы
+addon-category-theme-title =
+    .title = Темы
+addon-category-plugin = Плагины
+addon-category-plugin-title =
+    .title = Плагины
+addon-category-dictionary = Словари
+addon-category-dictionary-title =
+    .title = Словари
+addon-category-locale = Языки
+addon-category-locale-title =
+    .title = Языки
+addon-category-available-updates = Доступные обновления
+addon-category-available-updates-title =
+    .title = Доступные обновления
+addon-category-recent-updates = Недавние обновления
+addon-category-recent-updates-title =
+    .title = Недавние обновления
 
 ## These are global warnings
 
@@ -279,6 +311,7 @@ shortcuts-no-commands = У следующих расширений нет гор
 shortcuts-input =
     .placeholder = Введите горячую клавишу
 shortcuts-browserAction = Активировать расширение
+shortcuts-browserAction2 = Активировать кнопку панели инструментов
 shortcuts-pageAction = Активировать действие на странице
 shortcuts-sidebarAction = Показать/скрыть боковую панель
 shortcuts-modifier-mac = Добавьте Ctrl, Alt или ⌘
@@ -305,6 +338,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Показать меньше
 go-back-button =
     .tooltiptext = Вернуться назад
+header-back-button =
+    .title = Вернуться назад
 
 ## Recommended add-ons page
 

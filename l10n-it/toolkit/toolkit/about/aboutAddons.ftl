@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Installa componente aggiuntivo da file…
     .accesskey = I
 help-button = Supporto componenti aggiuntivi
+sidebar-help-button-title =
+    .title = Supporto componenti aggiuntivi
 preferences =
     { PLATFORM() ->
         [windows] Opzioni di { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Strumenti per tutti i componenti aggiuntivi
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Opzioni di { -brand-short-name }
+           *[other] Preferenze di { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Non è stato possibile verificare alcune estensioni
 show-all-extensions-button =
@@ -166,6 +174,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Aggiornamenti disponibili
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Consigli
+addon-category-discover-title =
+    .title = Consigli
+addon-category-extension = Estensioni
+addon-category-extension-title =
+    .title = Estensioni
+addon-category-theme = Temi
+addon-category-theme-title =
+    .title = Temi
+addon-category-plugin = Plugin
+addon-category-plugin-title =
+    .title = Plugin
+addon-category-dictionary = Dizionari
+addon-category-dictionary-title =
+    .title = Dizionari
+addon-category-locale = Lingue
+addon-category-locale-title =
+    .title = Lingue
+addon-category-available-updates = Aggiornamenti disponibili
+addon-category-available-updates-title =
+    .title = Aggiornamenti disponibili
+addon-category-recent-updates = Aggiornamenti recenti
+addon-category-recent-updates-title =
+    .title = Aggiornamenti recenti
 
 ## These are global warnings
 
@@ -278,6 +310,7 @@ shortcuts-no-commands = Le seguenti estensioni non hanno scorciatoie da tastiera
 shortcuts-input =
     .placeholder = Inserisci una scorciatoia
 shortcuts-browserAction = Attiva estensione
+shortcuts-browserAction2 = Attiva pulsante nella barra degli strumenti
 shortcuts-pageAction = Attiva azione pagina
 shortcuts-sidebarAction = Attiva/disattiva barra laterale
 shortcuts-modifier-mac = Includi Ctrl, Alt o ⌘
@@ -296,6 +329,8 @@ shortcuts-card-expand-button = Visualizza altre { $numberToShow }
 shortcuts-card-collapse-button = Mostra meno scorciatoie
 go-back-button =
     .tooltiptext = Torna indietro
+header-back-button =
+    .title = Torna indietro
 
 ## Recommended add-ons page
 
@@ -338,9 +373,9 @@ remove-addon-button = Rimuovi
 remove-addon-disabled-button = Impossibile rimuovere <a data-l10n-name="link">Perché?</a>
 disable-addon-button = Disattiva
 enable-addon-button = Attiva
+expand-addon-button = Altre opzioni
 extension-enable-addon-button-label =
     .aria-label = Attiva
-expand-addon-button = Altre opzioni
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Opzioni
@@ -425,8 +460,8 @@ updates-heading = Gestione aggiornamenti
 discover-heading = Personalizza { -brand-short-name }
 shortcuts-heading = Gestione scorciatoie da tastiera
 theme-heading-search-label = Trova altri temi
-default-heading-search-label = Trova altri componenti aggiuntivi
 extension-heading-search-label = Trova altre estensioni
+default-heading-search-label = Trova altri componenti aggiuntivi
 addons-heading-search-input =
     .placeholder = Cerca in addons.mozilla.org
 addon-page-options-button =

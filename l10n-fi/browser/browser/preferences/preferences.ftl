@@ -785,6 +785,8 @@ forms-master-pw-fips-desc = Salasanan vaihto epäonnistui
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message = Vahvista henkilöllisyytesi, jotta voit luoda pääsalasanan.
+# This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
@@ -861,6 +863,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Sivustorajat ylittävät seuraimet
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Sivustorajat ylittävät ja sosiaalisen median seuraimet
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Sivustorajat ylittävät ja sosiaalisen median seuraimet, eristä jäljelle jäävät evästeet
 sitedata-option-block-unvisited =
     .label = Evästeet vierailemattomilta sivustoilta
 sitedata-option-block-all-third-party =
@@ -937,6 +941,7 @@ content-blocking-etp-strict-desc = Vahvempi suojaus, mutta saattaa aiheuttaa siv
 content-blocking-etp-custom-desc = Valitse, mitkä seuraimet ja komentosarjat estetään.
 content-blocking-private-windows = Seurantaan tarkoitettu sisältö yksityisissä ikkunoissa
 content-blocking-cross-site-tracking-cookies = Sivustorajat ylittävät seurainevästeet
+content-blocking-cross-site-tracking-cookies-plus-isolate = Sivustorajat ylittävät seuraimet, eristä jäljelle jäävät evästeet
 content-blocking-social-media-trackers = Sosiaalisen median seuraimet
 content-blocking-all-cookies = Kaikki evästeet
 content-blocking-unvisited-cookies = Evästeet sivustoilta, joilla ei ole käyty
@@ -949,6 +954,7 @@ content-blocking-warning-title = Huomio!
 content-blocking-warning-description = Sisällön estäminen voi aiheuttaa joidenkin sivustojen toimimattomuutta. Voit poistaa eston luottamiltasi sivustoilta.
 content-blocking-learn-how = Lue miten
 content-blocking-etp-warning-description = Seuraimien estäminen saattaa vaikuttaa joidenkin sivustojen toimintaan. Lataa sivu uudelleen seurainten kera ladataksesi kaiken sisällön.
+content-blocking-and-isolating-etp-warning-description = Seurainten estäminen ja evästeiden eristäminen saattaa vaikuttaa joidenkin sivustojen toimivuuteen. Lataa sivu uudelleen seurainten kera ladataksesi kaiken sisällön.
 content-blocking-warning-learn-how = Lue lisää
 content-blocking-reload-description = Kaikki välilehdet tarvitsee päivittää, jotta muutokset tulevat voimaan.
 content-blocking-reload-tabs-button =
@@ -1124,8 +1130,8 @@ space-alert-over-5gb-message =
        *[other] { -brand-short-name }ilta loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit tyhjentää sivustotiedot avaamalla Asetukset > Tietosuoja ja turvallisuus > Evästeet ja sivustotiedot.
     }
 space-alert-under-5gb-ok-button =
-    .label = OK, selvä
-    .accesskey = K
+    .label = Selvä
+    .accesskey = S
 space-alert-under-5gb-message = { -brand-short-name }ilta loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit lukea levyn käytön optimoimisesta selaamisen sujuvoittamiseksi painamalla ”Lue lisää”.
 
 ## The following strings are used in the Download section of settings

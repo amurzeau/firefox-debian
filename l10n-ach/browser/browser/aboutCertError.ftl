@@ -53,3 +53,39 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Nyoo me catibiket:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Pe romo kubo
+deniedPortAccess-title = Kanonge man kigengo woko
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Hmm. Wa tye ka nongo peko i nongo kakube meno.
+fileNotFound-title = Pwal pe ononge
+fileAccessDenied-title = Kikwero woko nongo pwail ne
+generic-title = Ayi.
+captivePortal-title = Dony iyie netwak
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm. Kanonge meno pe tye kakare.
+netInterrupt-title = Kibalo kube woko
+notCached-title = Gin acoya Kare ne okato woko
+netOffline-title = Pe okube iyamo
+contentEncodingError-title = Bal me loko cik i gin matye iye
+unsafeContentType-title = Kit pwail man pe ber
+netReset-title = Kitero kube odoco
+netTimeout-title = Kare me kube otum woko
+unknownProtocolFound-title = Pe ki niang kanonge
+proxyConnectFailure-title = Lapok tic pi lawote pe tye ka ye kube
+proxyResolveFailure-title = Pe romo nongo lapok tic pi lawote
+redirectLoop-title = Potbuk ne pe tye ka wire maber
+unknownSocketType-title = Lagam ma pe kibedo ka kuro ki bot lapok tic
+nssFailure2-title = Kube ma tye ki ber bedo pe olare
+cspBlocked-title = Kigengo ki Cik me Gwoko ber-bedo pa jami matye iye
+corruptedContentError-title = Bal me jami matye iye ma oballe
+remoteXUL-title = XUL ma tye wa kama bor
+sslv3Used-title = Pe twero kube ma ber bedo tye
+inadequateSecurityError-title = Kube ni pe tye ki ber bedo
+blockedByPolicy-title = Potbuk ma kigengo
+clockSkewError-title = Cawa me kompiuta ni pe tye kakare
+networkProtocolError-title = Bal me Cik me Netwak

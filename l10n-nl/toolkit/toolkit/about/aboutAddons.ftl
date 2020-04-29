@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Add-on installeren via bestand…
     .accesskey = s
 help-button = Add-on-ondersteuning
+sidebar-help-button-title =
+    .title = Add-on-ondersteuning
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name }-opties
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Hulpmiddelen voor alle add-ons
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name }-opties
+           *[other] { -brand-short-name }-voorkeuren
+        }
 show-unsigned-extensions-button =
     .label = Sommige extensies konden niet worden geverifieerd
 show-all-extensions-button =
@@ -176,6 +184,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Beschikbare updates
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Aanbevelingen
+addon-category-discover-title =
+    .title = Aanbevelingen
+addon-category-extension = Extensies
+addon-category-extension-title =
+    .title = Extensies
+addon-category-theme = Thema’s
+addon-category-theme-title =
+    .title = Thema’s
+addon-category-plugin = Plug-ins
+addon-category-plugin-title =
+    .title = Plug-ins
+addon-category-dictionary = Woordenboeken
+addon-category-dictionary-title =
+    .title = Woordenboeken
+addon-category-locale = Talen
+addon-category-locale-title =
+    .title = Talen
+addon-category-available-updates = Beschikbare updates
+addon-category-available-updates-title =
+    .title = Beschikbare updates
+addon-category-recent-updates = Recente updates
+addon-category-recent-updates-title =
+    .title = Recente updates
 
 ## These are global warnings
 
@@ -288,6 +320,7 @@ shortcuts-no-commands = De volgende extensies hebben geen sneltoetsen:
 shortcuts-input =
     .placeholder = Typ een sneltoets
 shortcuts-browserAction = Extensie activeren
+shortcuts-browserAction2 = Werkbalkknop activeren
 shortcuts-pageAction = Pagina-actie activeren
 shortcuts-sidebarAction = De zijbalk in-/uitschakelen
 shortcuts-modifier-mac = Druk ook op Ctrl, Alt of ⌘
@@ -312,6 +345,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Minder tonen
 go-back-button =
     .tooltiptext = Teruggaan
+header-back-button =
+    .title = Terug
 
 ## Recommended add-ons page
 

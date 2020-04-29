@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = نصب افزودنی از یک پرونده…
     .accesskey = ن
 help-button = پشتیبانی افزونه
+sidebar-help-button-title =
+    .title = پشتیبانی افزونه
 preferences =
     { PLATFORM() ->
         [windows] گزینه ها{ -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = ابزارهای مخصوص همهٔ افزودنی‌ها
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] گزینه ها{ -brand-short-name }
+           *[other] ترجیحات{ -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = برخی از توسعه‌ها را نمی‌توان تایید کرد
 show-all-extensions-button =
@@ -151,6 +159,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = بروزرسانی‌های موجود
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = توصیه‌ها
+addon-category-discover-title =
+    .title = توصیه‌ها
+addon-category-extension = ضمیمه‌ها
+addon-category-extension-title =
+    .title = ضمیمه‌ها
+addon-category-theme = زمینه‌ها
+addon-category-theme-title =
+    .title = زمینه‌ها
+addon-category-plugin = افزونه‌ها
+addon-category-plugin-title =
+    .title = افزونه‌ها
+addon-category-dictionary = واژه‌نامه‌ها
+addon-category-dictionary-title =
+    .title = واژه‌نامه‌ها
+addon-category-locale = زبان‌ها
+addon-category-locale-title =
+    .title = زبان‌ها
+addon-category-available-updates = بروزرسانی‌های موجود
+addon-category-available-updates-title =
+    .title = بروزرسانی‌های موجود
+addon-category-recent-updates = بروزرسانی‌های اخیر
+addon-category-recent-updates-title =
+    .title = بروزرسانی‌های اخیر
 
 ## These are global warnings
 
@@ -276,6 +308,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = نمایش کمتر
 go-back-button =
     .tooltiptext = برگشتن
+header-back-button =
+    .title = برگشتن
 
 ## Recommended add-ons page
 

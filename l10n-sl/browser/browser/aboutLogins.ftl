@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Odpri meni
-# This menuitem is only visible on Windows
-menu-menuitem-import = Uvozi gesla ...
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Uvozi iz drugega brskalnika …
 menu-menuitem-preferences =
@@ -52,6 +50,7 @@ login-list-sort-label-text = Razvrsti po:
 login-list-name-option = Imenu (A–Ž)
 login-list-name-reverse-option = Imenu (Ž–A)
 login-list-breached-option = Ogrožene spletne strani
+about-logins-login-list-alerts-option = Opozorila
 login-list-last-changed-option = Času zadnje spremembe
 login-list-last-used-option = Času zadnje uporabe
 login-list-intro-title = Ni prijav
@@ -63,6 +62,8 @@ login-list-item-subtitle-new-login = Vnesite podatke za prijavo
 login-list-item-subtitle-missing-username = (ni uporabniškega imena)
 about-logins-list-item-breach-icon =
     .title = Ogrožena spletna stran
+about-logins-list-item-vulnerable-password-icon =
+    .title = Ranljivo geslo
 
 ## Introduction screen
 
@@ -109,10 +110,19 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 
 # This message can be seen by attempting to edit a login in about:logins
 about-logins-edit-login-os-auth-dialog-message = Potrdite svojo identiteto za urejanje shranjene prijave.
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = uredi shranjeno prijavo
 # This message can be seen by attempting to reveal a password in about:logins
 about-logins-reveal-password-os-auth-dialog-message = Potrdite svojo identiteto za prikaz shranjenega gesla.
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = pokaži shranjeno geslo
 # This message can be seen by attempting to copy a password in about:logins
 about-logins-copy-password-os-auth-dialog-message = Potrdite svojo identiteto za kopiranje shranjenega gesla.
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = kopiraj shranjeno geslo
 
 ## Master Password notification
 
@@ -153,10 +163,25 @@ confirm-discard-changes-dialog-confirm-button = Prezri
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Kraja podatkov spletne strani
 breach-alert-text = Gesla so bila ogrožena ali ukradena s te spletne strani, odkar ste nazadnje posodobili podatke za prijavo. Spremenite geslo, da zaščitite svoj račun.
 breach-alert-link = Več o tej kraji.
 breach-alert-dismiss =
     .title = Zapri to opozorilo
+about-logins-breach-alert-date = Do kraje podatkov je prišlo dne { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Pojdi na { $hostname }
+about-logins-breach-alert-learn-more-link = Več o tem
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Ranljivo geslo
+about-logins-vulnerable-alert-text2 = To geslo uporablja tudi drug račun, ki je bil verjetno izpostavljen v kraji podatkov. Uporaba enakih poverilnic na več mestih ogroža vse vaše račune. Spremenite to geslo.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Pojdi na { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Več o tem
 
 ## Error Messages
 

@@ -57,6 +57,16 @@ newtab-confirm-delete-history-p2 = یہ عمل کلعدم نہیں ہو سکتا
 newtab-menu-section-tooltip =
     .title = مینیو کھولیں
     .aria-label = مینیو کھولیں
+# Tooltip for dismiss button
+newtab-dismiss-button-tooltip =
+    .title = ہٹائیں
+    .aria-label = ہٹائیں
+# This tooltip is for the context menu of Pocket cards or Topsites
+# Variables:
+#  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
+newtab-menu-content-tooltip =
+    .title = مینیو کھولیں
+    .aria-label = { $title } کے لئے کونٹیکسٹ مینو کھولیں
 # Tooltip on an empty topsite box to open the New Top Site dialog.
 newtab-menu-topsites-placeholder-tooltip =
     .title = اس سائٹ کی تدوین کریں
@@ -117,6 +127,10 @@ newtab-label-removed-bookmark = نشانی ہٹا دی گئی
 newtab-label-recommended = رجحان سازی
 newtab-label-saved = { -pocket-brand-name } میں محفوظ شدہ
 newtab-label-download = ڈاؤن لوڈ شدہ
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } - تعاون شدہ
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -165,7 +179,6 @@ newtab-discovery-empty-section-topstories-timed-out = افوہ! ہم نے اس �
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = مشہور مضامین:
 newtab-pocket-more-recommendations = اور زیادہ سفارشات
-newtab-pocket-whats-pocket = { -pocket-brand-name } کیا ہے؟
 newtab-pocket-learn-more = مزید سیکھیں
 newtab-pocket-cta-button = { -pocket-brand-name } حاصل کریں
 

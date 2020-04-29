@@ -17,22 +17,6 @@ browser-main-window-title =
         [private] { -brand-full-name } (גלישה פרטית)
        *[default] { -brand-full-name }
     }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (גלישה פרטית)
-       *[default] { $title } - { -brand-full-name }
-    }
 
 ## This is the default window title in case there is content
 ## title to be displayed.
@@ -59,9 +43,6 @@ browser-main-window-content-title-private =
         [macos] { $title } - (גלישה פרטית)
        *[other] { $title } - { -brand-full-name } (גלישה פרטית)
     }
-
-##
-
 urlbar-identity-button =
     .aria-label = הצגת נתוני אתר
 
@@ -112,6 +93,11 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = קבלת עזרה
 urlbar-search-tips-confirm = בסדר, הבנתי
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = עצה:
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -119,8 +105,10 @@ urlbar-search-tips-confirm = בסדר, הבנתי
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = מהיום מקלידים פחות ומוצאים יותר: אפשר לחפש עם { $engineName } ישירות משורת הכתובת שלך.
-urlbar-search-tips-redirect = ניתן להתחיל לחפש מכאן כדי לצפות בהצעות מ־{ $engineName } ואת היסטוריית הגלישה שלך.
 urlbar-search-tips-redirect-2 = ניתן להתחיל לחפש בשורת הכתובת כדי לצפות בהצעות מ־{ $engineName } ובהיסטוריית הגלישה שלך.
+
+##
+
 
 ##
 
@@ -165,6 +153,8 @@ page-action-manage-extension =
     .label = ניהול הרחבה…
 page-action-remove-from-urlbar =
     .label = הסרה משורת הכתובת
+page-action-remove-extension =
+    .label = הסרת הרחבה
 
 ## Auto-hide Context Menu
 
@@ -214,7 +204,7 @@ bookmark-panel =
 identity-connection-not-secure = החיבור אינו מאובטח
 identity-connection-secure = החיבור מאובטח
 identity-connection-internal = דף זה הנו דף מאובטח של { -brand-short-name }.
-identity-connection-file = העמוד הזה מאוחסן במחשב שלך.
+identity-connection-file = דף זה מאוחסן במחשב שלך.
 identity-extension-page = עמוד זה נטען מתוך הרחבה.
 identity-active-blocked = { -brand-short-name } חסם חלקים מהדף שאינם בטוחים.
 identity-custom-root = חיבור מאומת על־ידי מנפיק אישורים שאינו מזוהה על־ידי Mozilla.
@@ -228,7 +218,8 @@ identity-permissions-reload-hint = יתכן שיהיה עליך לרענן את 
 identity-permissions-empty = לא סופקו לאתר זה הרשאות מיוחדות.
 identity-clear-site-data =
     .label = ניקוי עוגיות ונתוני אתרים…
-identity-connection-verified = התחברת לאתר זה באופן מאובטח.
+identity-connection-not-secure-security-view = החיבור שלך לאתר זה אינו מאובטח.
+identity-connection-verified = החיבור שלך לאתר זה מאובטח.
 identity-ev-owner-label = האישור הונפק עבור:
 identity-description-custom-root = ‏Mozilla אינה מזהה את מנפיק האישורים הזה. ייתכן שהוא נוסף ממערכת ההפעלה שלך או על־ידי מנהל מערכת. <label data-l10n-name="link">מידע נוסף</label>
 identity-remove-cert-exception =

@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Instaliraj dodatak iz datoteke…
     .accesskey = I
 help-button = Podrška za dodatke
+sidebar-help-button-title =
+    .title = Podrška za dodatke
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } Mogućnosti
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Alati za sve dodatke
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } Mogućnosti
+           *[other] { -brand-short-name } Postavke
+        }
 show-unsigned-extensions-button =
     .label = Neka proširenja nisu mogla biti verificirana
 show-all-extensions-button =
@@ -80,15 +88,15 @@ detail-version =
     .label = Verzija
 detail-last-updated =
     .label = Posljednja dopuna
-detail-contributions-description = Razvijatelja ovog dodatka zanima jeste li voljni pomoći razvoju malom donacijom.
+detail-contributions-description = Programer ovog proširenja te moli, da pomoću male donacije podržiš daljnji razvoj proširenja.
 detail-contributions-button = Doprinesite
     .title = Doprinesite razvoju ovog dodatka
     .accesskey = D
 detail-update-type =
     .value = Automatske dopune
 detail-update-default =
-    .label = Zadano
-    .tooltiptext = Instaliraj dopune automatski samo ako je to zadana postavka
+    .label = Standardno
+    .tooltiptext = Instaliraj dopune automatski samo ako je to standardno postavljeno
 detail-update-automatic =
     .label = Uključeno
     .tooltiptext = Automatski instaliraj dopune
@@ -106,7 +114,7 @@ detail-private-disallowed-description2 = Ovaj dodatak se ne pokreće tijekom pri
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Zahtjeva pristup u privatnim prozorima
 detail-private-required-description = Ovaj dodatak ima pristup tvojoj aktivnosti dok si u privatnom pretraživanju. <label data-l10n-name="detail-private-browsing-learn-more">Saznaj više</label>
-detail-private-required-description2 = Ovo proširenje ima pristup vašim internetskim aktivnostima tijekom privatnog pregledavanja. <a data-l10n-name="learn-more">Saznaj više</a>
+detail-private-required-description2 = Ovo proširenje ima pristup tvojim internetskim aktivnostima tijekom privatnog pregledavanja. <a data-l10n-name="learn-more">Saznaj više</a>
 detail-private-browsing-on =
     .label = Dozvoli
     .tooltiptext = Omogući u privatnom pretraživanju
@@ -149,7 +157,7 @@ disabled-unsigned-heading =
     .value = Neki dodaci su isključeni
 disabled-unsigned-description = Navedeni dodaci nisu mogli biti verificirani za korištenje u { -brand-short-name }u. Možete <label data-l10n-name="find-addons">pronaći zamjenske dodatke</label> ili kontaktirati autora dodataka da zatraži njihovu verifikaciju.
 disabled-unsigned-learn-more = Saznaj više o našim naporima da te zaštitimo na Internetu.
-disabled-unsigned-devinfo = Razvijatelji koji su zainteresirani za verifikaciju svojih dodataka mogu nastaviti čitati naš <label data-l10n-name="learn-more">vodič</label>.
+disabled-unsigned-devinfo = Programeri koji su zainteresirani za verifikaciju svojih dodataka, mogu nastaviti čitati naš <label data-l10n-name="learn-more">priručnik</label>.
 plugin-deprecation-description = Ne možeš pronaći priključak koji tražiš? Neke priključke { -brand-short-name } više ne podržava. <label data-l10n-name="learn-more">Saznaj više.</label>
 legacy-warning-show-legacy = Prikaži zastarjele dodatke
 legacy-extensions =
@@ -165,6 +173,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Dostupne dopune
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Preporuke
+addon-category-discover-title =
+    .title = Preporuke
+addon-category-extension = Dodaci
+addon-category-extension-title =
+    .title = Dodaci
+addon-category-theme = Motivi
+addon-category-theme-title =
+    .title = Motivi
+addon-category-plugin = Priključci
+addon-category-plugin-title =
+    .title = Priključci
+addon-category-dictionary = Rječnici
+addon-category-dictionary-title =
+    .title = Rječnici
+addon-category-locale = Jezici
+addon-category-locale-title =
+    .title = Jezici
+addon-category-available-updates = Dostupne dopune
+addon-category-available-updates-title =
+    .title = Dostupne dopune
+addon-category-recent-updates = Nedavne dopune
+addon-category-recent-updates-title =
+    .title = Nedavne dopune
 
 ## These are global warnings
 
@@ -238,28 +270,28 @@ addon-updates-reset-updates-to-manual = Postavi ručno ažuriranje za sve dodatk
 extensions-updates-updating =
     .value = Ažuriranje dodataka
 extensions-updates-installed =
-    .value = Vaši su dodaci ažurirani.
+    .value = Tvoji su dodaci aktualizirani.
 extensions-updates-downloaded =
-    .value = Dopune za vaše dodatke su preuzete.
+    .value = Dopune za tvoje dodatke su preuzete.
 extensions-updates-restart =
     .label = Ponovo pokreni odmah za dovršetak instalacije
 extensions-updates-none-found =
-    .value = Nisu pronađene dopune
+    .value = Nema dopuna
 extensions-updates-manual-updates-found =
     .label = Prikaži dostupne dopune
 extensions-updates-update-selected =
     .label = Instaliraj dopune
     .tooltiptext = Instaliraj dostupne dopune s ovog popisa
 addon-updates-updating = Ažuriranje dodataka
-addon-updates-installed = Vaši su dodaci ažurirani.
-addon-updates-none-found = Nisu pronađene dopune
+addon-updates-installed = Tvoji su dodaci aktualizirani.
+addon-updates-none-found = Nema dopuna
 addon-updates-manual-updates-found = Prikaži dostupne dopune
 
 ## Add-on install/debug strings for page options menu
 
 addon-install-from-file = Instaliraj dodatak iz datoteke…
     .accesskey = I
-addon-install-from-file-dialog-title = Odaberite dodatak za instalaciju
+addon-install-from-file-dialog-title = Odaberi dodatak koji želiš instalirati
 addon-install-from-file-filter-name = Dodaci
 addon-open-about-debugging = Otklanjanje grešaka u dodacima
     .accesskey = g
@@ -267,13 +299,13 @@ addon-open-about-debugging = Otklanjanje grešaka u dodacima
 ## Extension shortcut management
 
 manage-extensions-shortcuts =
-    .label = Upravljanje tipkovničkim kraticama dodatka
+    .label = Upravljaj tipkovničkim prečacima dodatka
     .accesskey = U
 # This is displayed in the page options menu
-addon-manage-extensions-shortcuts = Upravljanje tipkovničkim kraticama dodatka
+addon-manage-extensions-shortcuts = Upravljaj tipkovničkim prečacima dodatka
     .accesskey = U
 shortcuts-no-addons = Nemaš uključenih proširenja.
-shortcuts-no-commands = Sljedeći dodaci nemaju prečice:
+shortcuts-no-commands = Sljedeći dodaci nemaju prečace:
 shortcuts-input =
     .placeholder = Upišite prečac
 shortcuts-browserAction = Aktiviraj dodatak
@@ -282,14 +314,14 @@ shortcuts-sidebarAction = Prikaži/sakrij bočnu traku
 shortcuts-modifier-mac = Uključi Ctrl, Alt ili ⌘
 shortcuts-modifier-other = Uključi Ctrl ili Alt
 shortcuts-invalid = Nepodržana kombinacija
-shortcuts-letter = Upišite slovo
+shortcuts-letter = Upiši slovo
 shortcuts-system = Nije moguće izmijeniti { -brand-short-name } prečac
 # String displayed in warning label when there is a duplicate shortcut
 shortcuts-duplicate = Duplikat prečice
 # String displayed when a keyboard shortcut is already assigned to more than one add-on
 # Variables:
 #   $shortcut (string) - Shortcut string for the add-on
-shortcuts-duplicate-warning-message = { $shortcut } se koristi kao prečica u više od jednog slučaja. Duplikati prečice mogu uzrokovati neočekivano ponašanje.
+shortcuts-duplicate-warning-message = { $shortcut } se koristi kao prečac u više od jednog slučaja. Dupli prečaci mogu prouzročiti neočekivano ponašanje.
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
 #   $addon (string) - Name of the add-on
@@ -303,6 +335,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Prikaži manje
 go-back-button =
     .tooltiptext = Idi natrag
+header-back-button =
+    .title = Idi natrag
 
 ## Recommended add-ons page
 
@@ -317,8 +351,8 @@ discopane-intro =
     sigurnost, perfomanse i funkcionalnost.
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations =
-    Neki prijedlozi su personalizirani. Bazirani su na drugim dodacima koje
-    ste već instalirali, postavkama profila ili statistici korištenja.
+    Neki prijedlozi su specifični za tebe, jer se temelje na drugim već instaliranim
+    proširenjima, na postavkama profila ili na statistici korištenja.
 discopane-notice-learn-more = Saznaj više
 privacy-policy = Politika privatnosti
 # Refers to the author of an add-on, shown below the name of the add-on.
@@ -333,8 +367,8 @@ install-extension-button = Dodaj u { -brand-product-name }
 install-theme-button = Instaliraj motiv
 # The label of the button that appears after installing an add-on. Upon click,
 # the detailed add-on view is opened, from where the add-on can be managed.
-manage-addon-button = Upravljanje
-find-more-addons = Pronađite više dodataka
+manage-addon-button = Upravljaj
+find-more-addons = Pronađi daljnje dodatke
 # This is a label for the button to open the "more options" menu, it is only
 # used for screen readers.
 addon-options-button =
@@ -407,7 +441,7 @@ addon-detail-reviews-link =
 pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> je uklonjen.
 pending-uninstall-undo-button = Vrati
 addon-detail-updates-label = Dozvoli automatska ažuriranja
-addon-detail-updates-radio-default = Zadano
+addon-detail-updates-radio-default = Standardno
 addon-detail-updates-radio-on = Uključeno
 addon-detail-updates-radio-off = Isključeno
 addon-detail-update-check-label = Provjeri dostupnost dopuna
@@ -447,17 +481,17 @@ recommended-theme-1 = Osjećate li se kreativno? <a data-l10n-name="link">Izradi
 
 ## Page headings
 
-extension-heading = Upravljanje dodacima
+extension-heading = Upravljaj dodacima
 theme-heading = Upravljaj motivima
-plugin-heading = Upravljanje priključcima
-dictionary-heading = Upravljanje rječnicima
-locale-heading = Upravljanje jezicima
-updates-heading = Upravljaj svojim ažuriranjima
-discover-heading = Prilagodite svoj { -brand-short-name }
-shortcuts-heading = Upravljanje prečacima dodataka
+plugin-heading = Upravljaj priključcima
+dictionary-heading = Upravljaj rječnicima
+locale-heading = Upravljaj jezicima
+updates-heading = Upravljaj nadogradnjama
+discover-heading = Prilagodi svoj { -brand-short-name }
+shortcuts-heading = Upravljaj prečacima dodataka
 theme-heading-search-label = Pronađi daljnje motive
-extension-heading-search-label = Pronađite više dodataka
-default-heading-search-label = Pronađite više dodataka
+extension-heading-search-label = Pronađi daljnja proširenja
+default-heading-search-label = Pronađi daljnje dodatke
 addons-heading-search-input =
     .placeholder = Pretraži addons.mozilla.org
 addon-page-options-button =

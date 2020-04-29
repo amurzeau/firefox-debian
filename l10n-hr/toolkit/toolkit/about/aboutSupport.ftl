@@ -59,7 +59,7 @@ app-basics-profiles = Profili
 app-basics-launcher-process-status = Pokretački proces
 app-basics-multi-process-support = Višeprocesni prozori
 app-basics-remote-processes-count = Udaljeni procesi
-app-basics-enterprise-policies = Politike poduzeća
+app-basics-enterprise-policies = Pravila za poduzeća
 app-basics-location-service-key-google = Google ključ za usluge lokacije
 app-basics-safebrowsing-key-google = Google ključ za sigurno pregledavanje
 app-basics-key-mozilla = Mozilla ključ za usluge lokacije
@@ -74,7 +74,7 @@ modified-key-prefs-title = Važne izmijenjene postavke
 modified-prefs-name = Naziv
 modified-prefs-value = Vrijednost
 user-js-title = user.js osobitosti
-user-js-description = Vaš profil sadrži <a data-l10n-name="user-js-link">user.js datoteku</a>, koja uključuje osobitosti koje nije stvorio { -brand-short-name }.
+user-js-description = Tvoj profil sadrži <a data-l10n-name="user-js-link">user.js datoteku</a>, koja uključuje osobitosti koje nije stvorio { -brand-short-name }.
 locked-key-prefs-title = Važne zaključane postavke
 locked-prefs-name = Naziv
 locked-prefs-value = Vrijednost
@@ -211,7 +211,7 @@ text-copied = Tekst kopiran u međuspremnik
 ## The verb "blocked" here refers to a graphics feature such as "Direct2D" or "OpenGL layers".
 
 blocked-driver = Blokirano zbog verzije upravljačkog programa grafičke kartice.
-blocked-gfx-card = Blokirano za vašu grafičku karticu zbog neriješenih problema s upravljačkim programom.
+blocked-gfx-card = Blokirano za tvoju grafičku karticu zbog neriješenih problema s upravljačkim programom.
 blocked-os-version = Blokirano za verziju tvog operacijskog sustava.
 blocked-mismatched-version = Blokiran zbog nepodudaranja verzije upravljačkog programa tvoje grafičke kartice između registra i DLL-a.
 # Variables
@@ -301,7 +301,7 @@ launcher-process-status-unknown = Nepoznato stanje
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
 multi-process-status-0 = Omogućio korisnik
-multi-process-status-1 = Omogućeno prema zadanim postavkama
+multi-process-status-1 = Standardno omogućeno
 multi-process-status-2 = Onemogućeno
 multi-process-status-4 = Deaktivirano od alata za pristupačnost
 multi-process-status-6 = Onemogućio nepodržani unos teksta

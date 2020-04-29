@@ -44,7 +44,7 @@ download-cert-view-text = Ispitaj CA-ov certifikat
 client-auth-window =
     .title = Zahtjev identifikacije korisnika
 client-auth-site-description = Ova stranica je zatražila da se identificirate s certifikatom:
-client-auth-choose-cert = Odaberite certifikat za identifikaciju:
+client-auth-choose-cert = Odaberi certifikat za identifikaciju:
 client-auth-cert-details = Detalji odabranog certifikata:
 
 ## Set password (p12) dialog
@@ -56,7 +56,7 @@ set-password-backup-pw =
     .value = Sigurnosna kopija lozinke certifikata:
 set-password-repeat-backup-pw =
     .value = Sigurnosna kopija lozinke certifikata (opet):
-set-password-reminder = Važno: ako zaboravite svoju sigurnosnu kopiju lozinke certifikata, kasnije nećete moći vratiti ovu sigurnosnu kopiju. Molim spremite lozinku na sigurno mjesto.
+set-password-reminder = Važno: ako zaboraviš svoju lozinku sigurnosne kopije certifikata, kasnije nećeš moći vratiti ovu sigurnosnu kopiju. Spremi lozinku na sigurno mjesto.
 
 ## Protected Auth dialog
 

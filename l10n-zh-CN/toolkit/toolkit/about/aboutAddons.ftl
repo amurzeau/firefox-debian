@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = 从文件安装附加组件…
     .accesskey = I
 help-button = 附加组件帮助
+sidebar-help-button-title =
+    .title = 附加组件帮助
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } 选项
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = 用于所有附加组件的工具
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } 选项
+           *[other] { -brand-short-name } 首选项
+        }
 show-unsigned-extensions-button =
     .label = 一些扩展未通过验证
 show-all-extensions-button =
@@ -164,6 +172,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = 可用更新
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = 推荐
+addon-category-discover-title =
+    .title = 推荐
+addon-category-extension = 扩展
+addon-category-extension-title =
+    .title = 扩展
+addon-category-theme = 主题
+addon-category-theme-title =
+    .title = 主题
+addon-category-plugin = 插件
+addon-category-plugin-title =
+    .title = 插件
+addon-category-dictionary = 字典
+addon-category-dictionary-title =
+    .title = 字典
+addon-category-locale = 语言
+addon-category-locale-title =
+    .title = 语言
+addon-category-available-updates = 可用更新
+addon-category-available-updates-title =
+    .title = 可用更新
+addon-category-recent-updates = 最近更新
+addon-category-recent-updates-title =
+    .title = 最近更新
 
 ## These are global warnings
 
@@ -276,6 +308,7 @@ shortcuts-no-commands = 下列扩展没有快捷键：
 shortcuts-input =
     .placeholder = 输入一个快捷键
 shortcuts-browserAction = 激活扩展
+shortcuts-browserAction2 = 激活工具栏按钮
 shortcuts-pageAction = 激活页面动作
 shortcuts-sidebarAction = 切换侧栏
 shortcuts-modifier-mac = 包括 Ctrl、Alt 或 ⌘
@@ -300,6 +333,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = 显示更少
 go-back-button =
     .tooltiptext = 返回
+header-back-button =
+    .title = 返回
 
 ## Recommended add-ons page
 

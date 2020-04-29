@@ -2,8 +2,14 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = ભલામણ કરેલ એક્સ્ટેંશન
 cfr-doorhanger-pintab-heading = આને અજમાવો: ટૅબ પિન કરો
+
+##
+
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = શા માટે હું આ જોઈ રહ્યો છું
 cfr-doorhanger-extension-cancel-button = હમણાં નહિ
@@ -24,6 +30,9 @@ cfr-doorhanger-extension-author = { $name } દ્વારા
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = ભલામણ
+cfr-doorhanger-extension-notification2 = ભલામણ
+    .tooltiptext = ભલામણ કરેલ એક્સેટેંશન
+    .a11y-announcement = ભલામણ કરેલ એક્સેટેંશન ઉપલબ્ધ છે
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -63,9 +72,60 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = બંધ કરો બટન
     .title = બંધ
 
+## Protections panel
+
+cfr-protections-panel-header = અનુસર્યા વિના બ્રાઉઝ કરો
+cfr-protections-panel-link-text = વધુ જાણો
+
 ## What's New toolbar button and panel
 
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = નવી સુવિધા:
 cfr-whatsnew-button =
     .label = નવું શું છે
     .tooltiptext = નવું શું છે
 cfr-whatsnew-panel-header = નવું શું છે
+cfr-whatsnew-tracking-protect-title = પોતાને ટ્રેકર્સથી બચાવો
+cfr-whatsnew-tracking-protect-link-text = તમારો અહેવાલ જુઓ
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $blockedCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-tracking-blocked-title =
+    { $blockedCount ->
+        [one] ટ્રેકર્સ અવરોધિત
+       *[other] ટ્રેકર્સ અવરોધિત
+    }
+cfr-whatsnew-tracking-blocked-link-text = અહેવાલ જુઓ
+cfr-whatsnew-lockwise-backup-title = તમારા પાસવર્ડ્સનો બેક અપ લો
+cfr-whatsnew-lockwise-backup-link-text = બેકઅપ ચાલુ કરો
+
+## Search Bar
+
+
+## Picture-in-Picture
+
+
+## Permission Prompt
+
+
+## Fingerprinter Counter
+
+
+## Bookmark Sync
+
+
+## Login Sync
+
+
+## Send Tab
+
+
+## Firefox Send
+
+
+## Social Tracking Protection
+
+
+## Enhanced Tracking Protection Milestones
+

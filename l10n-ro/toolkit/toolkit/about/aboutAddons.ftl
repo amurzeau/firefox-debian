@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Instalează un supliment dintr-un fișier…
     .accesskey = I
 help-button = Suport pentru suplimente
+sidebar-help-button-title =
+    .title = Suport pentru suplimente
 preferences =
     { PLATFORM() ->
         [windows] Opțiuni { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Instrumente pentru toate suplimentele
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Opțiuni { -brand-short-name }
+           *[other] Preferințe { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Unele extensii nu au putut fi verificate
 show-all-extensions-button =
@@ -164,6 +172,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Actualizări disponibile
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Recomandări
+addon-category-discover-title =
+    .title = Recomandări
+addon-category-extension = Extensii
+addon-category-extension-title =
+    .title = Extensii
+addon-category-theme = Teme
+addon-category-theme-title =
+    .title = Teme
+addon-category-plugin = Pluginuri
+addon-category-plugin-title =
+    .title = Pluginuri
+addon-category-dictionary = Dicționare
+addon-category-dictionary-title =
+    .title = Dicționare
+addon-category-locale = Limbi
+addon-category-locale-title =
+    .title = Limbi
+addon-category-available-updates = Actualizări disponibile
+addon-category-available-updates-title =
+    .title = Actualizări disponibile
+addon-category-recent-updates = Actualizări recente
+addon-category-recent-updates-title =
+    .title = Actualizări recente
 
 ## These are global warnings
 
@@ -276,6 +308,7 @@ shortcuts-no-commands = Următoarele extensii nu au comenzi rapide:
 shortcuts-input =
     .placeholder = Tastează o comandă rapidă
 shortcuts-browserAction = Activează extensia
+shortcuts-browserAction2 = Activează butonul pentru bara de unelte
 shortcuts-pageAction = Activează acțiunea pe pagină
 shortcuts-sidebarAction = Comută bara laterală
 shortcuts-modifier-mac = Include Ctrl, Alt sau ⌘
@@ -302,6 +335,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Afișează mai puțin
 go-back-button =
     .tooltiptext = Înapoi
+header-back-button =
+    .title = Înapoi
 
 ## Recommended add-ons page
 

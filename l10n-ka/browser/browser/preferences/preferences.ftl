@@ -790,7 +790,7 @@ master-password-os-auth-dialog-message = თქვენი ვინაობ�
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = მთავარი პაროლის დასაყენებლად
+master-password-os-auth-dialog-message-macosx = მთავარი პაროლის დაყენებას
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -837,11 +837,11 @@ history-clear-button =
 ## Privacy Section - Site Data
 
 sitedata-header = ფუნთუშები და საიტის მონაცემები
-sitedata-total-size-calculating = საიტის მონაცემებისა და კეშის მოცულობის გამოთვლა…
+sitedata-total-size-calculating = საიტის მუდმივი და დროებითი მონაცემების მოცულობის გამოთვლა…
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = თქვენ მიერ შენახული ფუნთუშები, საიტის მონაცემები და კეში, ამჟამად დისკზე იკავებს { $value } { $unit } მოცულობას.
+sitedata-total-size = თქვენ მიერ შენახული ფუნთუშები, საიტის მუდმივი და დროებითი მონაცემები, ამჟამად დისკზე იკავებს { $value } { $unit } მოცულობას.
 sitedata-learn-more = ვრცლად
 sitedata-delete-on-close =
     .label = ფუნთუშებისა და საიტის მონაცემების წაშლა, როცა { -brand-short-name } დაიხურება
@@ -863,6 +863,8 @@ sitedata-option-block-cross-site-trackers =
     .label = საიტთაშორისი მეთვალყურეები
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = საიტთაშორისი და სოციალური ქსელის მეთვალყურეები
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = საიტთაშორისი და სოც. ქსელების მეთვალყურეები, დანარჩენი ფუნთუშების გამიჯვნით
 sitedata-option-block-unvisited =
     .label = ფუნთუშები მოუნახულებელი საიტებიდან
 sitedata-option-block-all-third-party =
@@ -939,6 +941,7 @@ content-blocking-etp-strict-desc = მძლავრი დაცვა, თუ
 content-blocking-etp-custom-desc = აირჩიეთ, რომელი მეთვალყურე საშუალებები შეიზღუდოს
 content-blocking-private-windows = მეთვალყურე შიგთავსი პირად ფანჯრებში
 content-blocking-cross-site-tracking-cookies = საიტთაშორისი მეთვალყურე ფუნთუშები
+content-blocking-cross-site-tracking-cookies-plus-isolate = საიტთაშორისი მეთვალყურე ფუნთუშები, დანარჩენი ფუნთუშების გამიჯვნით
 content-blocking-social-media-trackers = სოციალური ქსელის მეთვალყურეები
 content-blocking-all-cookies = ყველა ფუნთუშა
 content-blocking-unvisited-cookies = ფუნთუშები, მოუნახულებელი საიტებიდან
@@ -951,6 +954,7 @@ content-blocking-warning-title = ფრთხილად!
 content-blocking-warning-description = შიგთავსის შეზღუდვის შედეგად, საიტების ნაწილმა შესაძლოა ვერ იმუშაოს გამართულად. სანდო საიტებზე, მარტივად შეგეძლებათ შეზღუდვის გათიშვა.
 content-blocking-learn-how = იხილეთ ვრცლად
 content-blocking-etp-warning-description = მეთვალყურეების შეზღუდვით, შესაძლოა დაზიანდეს ზოგიერთი საიტის შესაძლებლობები. შიგთავსის სრულად სანახავად, ხელახლა გახსენით გვერდი დაშვებული მეთვალყურეებით.
+content-blocking-and-isolating-etp-warning-description = მეთვალყურეების შეზღუდვით და ფუნთუშების გამიჯვნით, შესაძლოა დაზიანდეს ზოგიერთი საიტის შესაძლებლობები. შიგთავსის სრულად სანახავად, ხელახლა გახსენით გვერდი დაშვებული მეთვალყურეებით.
 content-blocking-warning-learn-how = იხილეთ როგორ
 content-blocking-reload-description = საჭიროა ჩანართების ხელახლა გახსნა ცვლილებების ასახვისთვის.
 content-blocking-reload-tabs-button =

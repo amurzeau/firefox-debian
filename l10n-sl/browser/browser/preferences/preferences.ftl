@@ -794,6 +794,11 @@ forms-master-pw-fips-desc = Sprememba gesla neuspešna
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Potrdite svojo identiteto za ustvarjanje glavnega gesla.
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = ustvari glavno geslo
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -866,6 +871,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Spletne sledilce
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Spletne sledilce in sledilce družbenih omrežij
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Spletne sledilce in sledilce družbenih omrežij ter izoliraj preostale piškotke
 sitedata-option-block-unvisited =
     .label = Piškotke neobiskanih spletnih strani
 sitedata-option-block-all-third-party =
@@ -942,6 +949,7 @@ content-blocking-etp-strict-desc = Močnejša zaščita, ki pa lahko povzroči n
 content-blocking-etp-custom-desc = Izberite, katere sledilce in skripte želite zavračati.
 content-blocking-private-windows = Sledilno vsebino v zasebnih oknih
 content-blocking-cross-site-tracking-cookies = Spletne sledilne piškotke
+content-blocking-cross-site-tracking-cookies-plus-isolate = Spletne sledilce in izoliraj preostale piškotke
 content-blocking-social-media-trackers = Sledilce družbenih omrežij
 content-blocking-all-cookies = Vse piškotke
 content-blocking-unvisited-cookies = Piškotke neobiskanih spletnih strani
@@ -954,6 +962,7 @@ content-blocking-warning-title = Opozorilo!
 content-blocking-warning-description = Zavračanje vsebine lahko povzroči nedelovanje nekaterih spletnih mest. Zavračanje vsebine strani, ki jim zaupate, lahko enostavno onemogočite.
 content-blocking-learn-how = Naučite se, kako
 content-blocking-etp-warning-description = Zavračanje sledilcev lahko vpliva na delovanje nekaterih strani. Naložite stran s sledilci, da naložite vso vsebino.
+content-blocking-and-isolating-etp-warning-description = Zavračanje sledilcev in izolacija piškotkov lahko vplivata na delovanje nekaterih strani. Naložite stran s sledilci, da naložite vso vsebino.
 content-blocking-warning-learn-how = Naučite se, kako
 content-blocking-reload-description = Za uveljavitev sprememb boste morali znova naložiti zavihke.
 content-blocking-reload-tabs-button =

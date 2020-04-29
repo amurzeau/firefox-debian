@@ -9,7 +9,7 @@ certmgr-tab-mine =
 certmgr-tab-people =
     .label = 다른 사람
 certmgr-tab-servers =
-    .label = 웹 서버
+    .label = 서버
 certmgr-tab-ca =
     .label = 인증 기관
 certmgr-mine = 사용자를 확인하는 이 기관의 인증서를 가지고 있습니다
@@ -23,7 +23,7 @@ certmgr-detail-pretty-print-tab-title =
     .label = 상세 정보
     .accesskey = D
 certmgr-pending-label =
-    .value = 인증서 정보 확인 중…
+    .value = 현재 인증서 확인 중…
 certmgr-subject-label = 발급 대상
 certmgr-issuer-label = 발급자
 certmgr-period-of-validity = 유효 기간
@@ -32,14 +32,14 @@ certmgr-cert-detail =
     .title = 인증서 상세 설명
     .buttonlabelaccept = 닫기
     .buttonaccesskeyaccept = C
-certmgr-cert-detail-commonname = 도메인 (CN)
+certmgr-cert-detail-commonname = 일반 이름 (CN)
 certmgr-cert-detail-org = 조직 (O)
 certmgr-cert-detail-orgunit = 조직 단위 (OU)
 certmgr-cert-detail-serial-number = 일련 번호
 certmgr-cert-detail-sha-256-fingerprint = SHA-256 지문
 certmgr-cert-detail-sha-1-fingerprint = SHA1 지문
 certmgr-edit-ca-cert =
-    .title = 인증 기관 인증서 신뢰도 설정 편집
+    .title = CA 인증서 신뢰도 설정 편집
     .style = width: 48em;
 certmgr-edit-cert-edit-trust = 신뢰도 설정 편집:
 certmgr-edit-cert-trust-ssl =
@@ -54,7 +54,7 @@ certmgr-cert-name =
 certmgr-cert-server =
     .label = 서버
 certmgr-override-lifetime =
-    .label = 유효기간
+    .label = 수명
 certmgr-token-name =
     .label = 보안 장치
 certmgr-begins-on = 시작일
@@ -101,14 +101,14 @@ certmgr-hierarchy =
     .value = 인증서 계층 구조
     .accesskey = H
 certmgr-add-exception =
-    .label = 예외 목록 추가…
+    .label = 예외 추가…
     .accesskey = x
 exception-mgr =
-    .title = 보안 확인 예외 목록 추가
+    .title = 보안 예외 추가
 exception-mgr-extra-button =
     .label = 보안 예외 확인
     .accesskey = C
-exception-mgr-supplemental-warning = 본인이 확인한 특수한 경우에만 허용하며, 합법적인 은행, 상점 및 공공 사이트는 현재 목록에 추가할 필요가 없습니다.
+exception-mgr-supplemental-warning = 합법적인 은행, 상점 및 기타 공공 사이트에서는 이를 요구하지 않습니다.
 exception-mgr-cert-location-url =
     .value = 주소:
 exception-mgr-cert-location-download =
@@ -131,14 +131,14 @@ pkcs12-dup-data = 인증서와 개인키가 이미 보안 장치에 있습니다
 ## PKCS#12 file dialogs
 
 choose-p12-backup-file-dialog = 백업할 파일 이름
-file-browse-pkcs12-spec = PKCS #12 파일 (*.pfx, *.p12)
+file-browse-pkcs12-spec = PKCS12 파일
 choose-p12-restore-file-dialog = 가져올 인증서 파일
 
 ## Import certificate(s) file dialog
 
 file-browse-certificate-spec = 인증서 파일
 import-ca-certs-prompt = 가져올 CA 인증서를 포함하는 파일 선택
-import-email-cert-prompt = 가져올 메일 인증서 파일 선택
+import-email-cert-prompt = 가져올 메일 인증서를 포함하는 파일 선택
 
 ## For editing certificates trust
 
@@ -153,13 +153,13 @@ delete-user-cert-title =
 delete-user-cert-confirm = 정말로 이 인증서를 삭제하시겠습니까?
 delete-user-cert-impact = 개인 인증서를 삭제하면 더 이상 사용할 수 없습니다.
 delete-ssl-cert-title =
-    .title = 웹 서버 인증 예외 목록 제거
-delete-ssl-cert-confirm = 아래 웹 서버 인증 예외 목록을 삭제하시겠습니까?
-delete-ssl-cert-impact = 만약 인증 예외 목록을 삭제하면 웹 서버에 대한 일반 보안 수준 확인을 복원하고 유효한 인증서 제공을 요구하게 됩니다.
+    .title = 서버 인증서 예외 삭제
+delete-ssl-cert-confirm = 다음 서버 예외를 삭제하시겠습니까?
+delete-ssl-cert-impact = 만약 서버 예외를 삭제하면, 해당 서버에 대한 일반적인 보안 확인을 복원하고 유효한 인증서 사용을 요구하게 됩니다.
 delete-ca-cert-title =
-    .title = 삭제 및 신뢰 안 함
-delete-ca-cert-confirm = 이 CA 인증서 삭제를 요청하셨습니다. 기본 제공 인증서의 경우 모든 신뢰가 제거되며 동일한 효과가 있습니다. 삭제 또는 불신을 하시겠습니까?
-delete-ca-cert-impact = 만약 인증 기관(CA) 인증서를 삭제하면 프로그램에서 CA에서 발급한 인증서를 더이상 신뢰할 수 없습니다.
+    .title = CA 인증서 삭제 또는 신뢰 안 함
+delete-ca-cert-confirm = CA 인증서 삭제를 요청하셨습니다. 기본 제공 인증서의 경우 모든 신뢰가 제거되며 동일한 효과가 있습니다. 삭제 또는 신뢰 안 함으로 하시겠습니까?
+delete-ca-cert-impact = 만약 인증 기관 (CA) 인증서를 삭제하거나 신뢰 안 함으로 하면, 이 응용 프로그램은 해당 CA에서 발급한 인증서를 더 이상 신뢰하지 않습니다.
 delete-email-cert-title =
     .title = 전자 메일 인증서 삭제
 delete-email-cert-confirm = 다른 사람의 전자 메일 인증서를 삭제하시겠습니까?
@@ -200,7 +200,7 @@ cert-not-verified-cert-expired = 인증서가 만료되어 확인할 수 없습�
 cert-not-verified-cert-not-trusted = 신뢰되지 않아 인증서를 확인할 수 없습니다.
 cert-not-verified-issuer-not-trusted = 발급자가 신뢰되지 않아 인증서를 확인할 수 없습니다.
 cert-not-verified-issuer-unknown = 발급자를 알 수 없어 인증서를 확인할 수 없습니다.
-cert-not-verified-ca-invalid = 인증 기관 인증서가 유효하지 않아 인증서를 확인할 수 없습니다.
+cert-not-verified-ca-invalid = CA 인증서가 유효하지 않아 인증서를 확인할 수 없습니다.
 cert-not-verified_algorithm-disabled = 비활성화된 안전하지 않은 알고리즘을 사용하여 서명되었기 때문에 이 인증서를 확인할 수 없습니다.
 cert-not-verified-unknown = 알 수 없는 이유로 인증서를 확인할 수 없습니다.
 
@@ -208,22 +208,22 @@ cert-not-verified-unknown = 알 수 없는 이유로 인증서를 확인할 수 
 
 add-exception-branded-warning = { -brand-short-name } 프로그램  웹 사이트 신원 확인 방식을 다시 설정합니다.
 add-exception-invalid-header = 이 사이트는 유효하지 않은 정보로 인증을 시도하고 있습니다.
-add-exception-domain-mismatch-short = 이름이 맞지 않음
+add-exception-domain-mismatch-short = 잘못된 사이트
 add-exception-domain-mismatch-long = 이 인증서는 다른 웹 사이트의 인증서로서 누군가 이 사이트를 사칭하고 있을 수 있습니다.
 add-exception-expired-short = 만료 정보
 add-exception-expired-long = 인증서가 현재 유효하지 않습니다. 인증서가 도난, 또는 분실되었을 수 있고 누군가 이 사이트를 사칭하고 있을 수 있습니다.
 add-exception-unverified-or-bad-signature-short = 확인되지 않음
 add-exception-unverified-or-bad-signature-long = 안전한 서명을 사용한 믿을 수 있는 권한에 의해 발급된 것으로 확인되지 않기 때문에 이 인증은 신뢰할 수 없습니다.
 add-exception-valid-short = 유효한 인증서
-add-exception-valid-long = 본 사이트는 신뢰할 만한 유효한 신원 정보를 제공하고 있습니다. 예외 목록에 추가할 필요가 없습니다.
+add-exception-valid-long = 이 사이트는 유효하고 확인된 신원 정보를 제공합니다. 예외에 추가할 필요가 없습니다.
 add-exception-checking-short = 정보 확인 중
-add-exception-checking-long = 사이트 인증 확인 중…
+add-exception-checking-long = 사이트 인증 시도 중…
 add-exception-no-cert-short = 정보가 없음
 add-exception-no-cert-long = 사이트에 대한 인증 정보를 얻을 수 없습니다.
 
 ## Certificate export "Save as" and error dialogs
 
-save-cert-as = 인증서를 다른 파일로 저장
+save-cert-as = 인증서를 파일로 저장
 cert-format-base64 = X.509 인증서 (PEM)
 cert-format-base64-chain = X.509 체인 인증서 (PEM)
 cert-format-der = X.509 인증서 (DER)

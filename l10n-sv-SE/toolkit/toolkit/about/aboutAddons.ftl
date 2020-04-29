@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Installera tillägg från fil…
     .accesskey = I
 help-button = Support för tillägg
+sidebar-help-button-title =
+    .title = Support för tillägg
 preferences =
     { PLATFORM() ->
         [windows] Inställningar för { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Verktyg för alla tillägg
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Inställningar för { -brand-short-name }
+           *[other] Inställningar för { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Vissa utökningar kunde inte verifieras
 show-all-extensions-button =
@@ -162,6 +170,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Tillgängliga uppdateringar
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Rekommendationer
+addon-category-discover-title =
+    .title = Rekommendationer
+addon-category-extension = Tillägg
+addon-category-extension-title =
+    .title = Tillägg
+addon-category-theme = Teman
+addon-category-theme-title =
+    .title = Teman
+addon-category-plugin = Insticksmoduler
+addon-category-plugin-title =
+    .title = Insticksmoduler
+addon-category-dictionary = Ordlistor
+addon-category-dictionary-title =
+    .title = Ordlistor
+addon-category-locale = Språk
+addon-category-locale-title =
+    .title = Språk
+addon-category-available-updates = Tillgängliga uppdateringar
+addon-category-available-updates-title =
+    .title = Tillgängliga uppdateringar
+addon-category-recent-updates = Senaste uppdateringar
+addon-category-recent-updates-title =
+    .title = Senaste uppdateringar
 
 ## These are global warnings
 
@@ -274,6 +306,7 @@ shortcuts-no-commands = Följande tillägg har inte genvägar:
 shortcuts-input =
     .placeholder = Skapa en genväg
 shortcuts-browserAction = Aktivera tillägg
+shortcuts-browserAction2 = Aktivera verktygsfältets knapp
 shortcuts-pageAction = Aktivera sidans åtgärd
 shortcuts-sidebarAction = Visa sidofält
 shortcuts-modifier-mac = Inkludera Ctrl, Alt eller ⌘
@@ -299,6 +332,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Visa mindre
 go-back-button =
     .tooltiptext = Gå tillbaka
+header-back-button =
+    .title = Gå tillbaka
 
 ## Recommended add-ons page
 

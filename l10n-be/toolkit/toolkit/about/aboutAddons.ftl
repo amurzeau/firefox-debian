@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Усталяваць дадатак з файла…
     .accesskey = У
 help-button = Падтрымка дадаткаў
+sidebar-help-button-title =
+    .title = Падтрымка дадаткаў
 preferences =
     { PLATFORM() ->
         [windows] Налады { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Прылады для ўсіх дадаткаў
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Налады { -brand-short-name }
+           *[other] Параметры { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Некаторыя пашырэнні не могуць быць правераны
 show-all-extensions-button =
@@ -169,6 +177,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Даступныя абнаўленні
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Рэкамендацыі
+addon-category-discover-title =
+    .title = Рэкамендацыі
+addon-category-extension = Пашырэнні
+addon-category-extension-title =
+    .title = Пашырэнні
+addon-category-theme = Тэмы
+addon-category-theme-title =
+    .title = Тэмы
+addon-category-plugin = Плагіны
+addon-category-plugin-title =
+    .title = Плагіны
+addon-category-dictionary = Слоўнікі
+addon-category-dictionary-title =
+    .title = Слоўнікі
+addon-category-locale = Мовы
+addon-category-locale-title =
+    .title = Мовы
+addon-category-available-updates = Даступныя абнаўленні
+addon-category-available-updates-title =
+    .title = Даступныя абнаўленні
+addon-category-recent-updates = Нядаўнія абнаўленні
+addon-category-recent-updates-title =
+    .title = Нядаўнія абнаўленні
 
 ## These are global warnings
 
@@ -281,6 +313,7 @@ shortcuts-no-commands = Наступныя пашырэнні не маюць с
 shortcuts-input =
     .placeholder = Увядзіце спалучэнне клавіш
 shortcuts-browserAction = Актываваць пашырэнне
+shortcuts-browserAction2 = Актываваць кнопку на паліцы прылад
 shortcuts-pageAction = Актываваць дзеянні старонкі
 shortcuts-sidebarAction = Паказаць/схаваць бакавую панэль
 shortcuts-modifier-mac = Улучыце Ctrl, Alt або ⌘
@@ -307,6 +340,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Паказаць менш
 go-back-button =
     .tooltiptext = Вярнуцца
+header-back-button =
+    .title = Вярнуцца
 
 ## Recommended add-ons page
 

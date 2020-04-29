@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = התקנת תוספת מקובץ…
     .accesskey = ה
 help-button = תמיכה בתוספות
+sidebar-help-button-title =
+    .title = תמיכה בתוספות
 preferences =
     { PLATFORM() ->
         [windows] אפשרויות של { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = כלים עבור כל התוספות
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] אפשרויות של { -brand-short-name }
+           *[other] העדפות של { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = אין אפשרות לאמת חלק מההרחבות
 show-all-extensions-button =
@@ -166,6 +174,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = עדכונים זמינים
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = המלצות
+addon-category-discover-title =
+    .title = המלצות
+addon-category-extension = הרחבות
+addon-category-extension-title =
+    .title = הרחבות
+addon-category-theme = ערכות נושא
+addon-category-theme-title =
+    .title = ערכות נושא
+addon-category-plugin = תוספים חיצוניים
+addon-category-plugin-title =
+    .title = תוספים חיצוניים
+addon-category-dictionary = מילונים
+addon-category-dictionary-title =
+    .title = מילונים
+addon-category-locale = שפות
+addon-category-locale-title =
+    .title = שפות
+addon-category-available-updates = עדכונים זמינים
+addon-category-available-updates-title =
+    .title = עדכונים זמינים
+addon-category-recent-updates = עדכונים אחרונים
+addon-category-recent-updates-title =
+    .title = עדכונים אחרונים
 
 ## These are global warnings
 
@@ -278,6 +310,7 @@ shortcuts-no-commands = להרחבות הבאות אין קיצורי דרך:
 shortcuts-input =
     .placeholder = נא להקליד קיצור דרך
 shortcuts-browserAction = הפעלת הרחבה
+shortcuts-browserAction2 = הפעלת הכפתור בסרגל הכלים
 shortcuts-pageAction = הפעלת פעולת דף
 shortcuts-sidebarAction = הצגה/הסתרה של סרגל הצד
 shortcuts-modifier-mac = יש לכלול Ctrl, ‏Alt או ⌘
@@ -303,6 +336,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = הצגת פחות
 go-back-button =
     .tooltiptext = חזרה אחורה
+header-back-button =
+    .title = חזרה אחורה
 
 ## Recommended add-ons page
 

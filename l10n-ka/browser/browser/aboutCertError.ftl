@@ -55,3 +55,43 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Certificate chain:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = დაკავშირება ვერ მოხერხდა
+deniedPortAccess-title = ეს მისამართი შეზღუდულია უსაფრთხოების მიზნით
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = ჰმ. გვერდი ვერ მოიძებნა.
+fileNotFound-title = ფაილი ვერ მოიძებნა
+fileAccessDenied-title = ფაილზე წვდომა უარყოფილია.
+generic-title = მოთხოვნის დასრულება ვერ ხერხდება
+captivePortal-title = ქსელში შესვლა
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = ჰმ. ეს მისამართი არ ჰგავს ნამდვილს.
+netInterrupt-title = კავშირი გაწყდა
+notCached-title = შიგთავსი ვადაგასულია
+netOffline-title = კავშირგარეშე რეჟიმი
+contentEncodingError-title = შეცდომა შიგთავსის კოდირებაში
+unsafeContentType-title = სახიფათი სახის ფაილი
+netReset-title = კავშირი გაწყდა
+netTimeout-title = კავშირის დრო ამოიწურა
+unknownProtocolFound-title = მისამართი გაუგებარია
+proxyConnectFailure-title = პროქსი სერვერმა კავშირი უარყო
+proxyResolveFailure-title = პროქსი სერვერის პოვნა ვერ ხერხდება
+redirectLoop-title = გვერდი არამართებულად გადამისამართდა
+unknownSocketType-title = გაუთვალისწინებელი პასუხი სერვერიდან
+nssFailure2-title = უსაფრთხო დაკავშირება ვერ მოხერხდა
+cspBlocked-title = შეზღუდულია, შიგთავსის უსაფრთხოების დებულების შესაბამისად.
+xfoBlocked-title = ზღუდავს დებულება X-Frame-Options
+corruptedContentError-title = დაზიანებული შიგთავსის შეცდომა
+remoteXUL-title = დისტანციური XUL
+sslv3Used-title = უსაფრთხო კავშირი ვერ ხერხდება
+inadequateSecurityError-title = კავშირი დაუცველია
+blockedByPolicy-title = გვერდი შეზღუდულია
+clockSkewError-title = საათი თქვენს კომპიუტერზე არეულია
+networkProtocolError-title = ქსელის ოქმის შეცდომა
+nssBadCert-title = ფრთხილად: სახიფათოა
+nssBadCert-sts-title = ვერ დაუკავშირდა: სავარაუდოდ უსაფრთხოების ხარვეზის გამო
+certerror-mitm-title = პროგრამის მიერ შეზღუდვის გამო, { -brand-short-name } ვერ ახერხებს საიტთან უსაფრთხოდ დაკავშირებას

@@ -28,6 +28,12 @@ inactive-css-not-grid-item = <strong>{ $property }</strong> ne utječe na ovaj e
 inactive-css-not-grid-container = <strong>{ $property }</strong> ne utječe na ovaj element, budući da nije grid-kontejner.
 inactive-css-not-flex-item = <strong>{ $property }</strong> ne utječe na ovaj element, budući da nije fleks element.
 inactive-css-not-flex-container = <strong>{ $property }</strong> ne utječe na ovaj element, budući da nije fleks-kontejner.
+inactive-css-not-inline-or-tablecell = <strong>{ $property }</strong> ne utječe na ovaj element, budući da nije linijski element ili ćelija tablice.
+inactive-css-property-because-of-display = <strong>{ $property }</strong> ne utječe na ovaj element, budući da sadrži prikaz <strong>{ $display }</strong>.
+inactive-css-not-display-block-on-floated = Vrijednost za <strong>display</strong> promijenjena je u <strong>block</strong> jer je element postavljen na <strong>float<strong>.
+inactive-css-property-is-impossible-to-override-in-visited = Zbog ograničenja <strong>:visited</strong> nije moguće nadjačati <strong>{ $property }</strong>.
+inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> ne utječe na ovaj element, budući da nije pozicionirani element.
+inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> ne utječe na ovaj element, budući da <strong>overflow:hidden</strong> nije postavljeno.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -47,3 +53,5 @@ inactive-css-not-inline-or-tablecell-fix = Pokušaj dodati <strong>display:inlin
 inactive-css-non-replaced-inline-or-table-row-or-row-group-fix = Pokušaj dodati <strong>display:inline-block</strong> ili <strong>display:block</strong>. { learn-more }
 inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Pokušaj dodati <strong>display:inline-block</strong>. { learn-more }
 inactive-css-not-display-block-on-floated-fix = Pokušaj ukloniti <strong>float</strong> ili dodati <strong>display:block</strong>. { learn-more }
+inactive-css-position-property-on-unpositioned-box-fix = Pokušaj postaviti svojstvo <strong>position</strong> na nešto što nije <strong>static</strong>. { learn-more }
+inactive-text-overflow-when-no-overflow-fix = Pokušaj dodati <strong>overflow:hidden</strong>. { learn-more }

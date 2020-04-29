@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Emohenda moĩmbaha marandurenda guive…
     .accesskey = I
 help-button = Moimbaha jokoha
+sidebar-help-button-title =
+    .title = Moimbaha jokoha
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } Poravopyrã
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Tembipuru opaite moimbahápe g̃uarã
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } Poravopyrã
+           *[other] { -brand-short-name } Jerohoryvéva
+        }
 show-unsigned-extensions-button =
     .label = Heta pukukue ndaikatúi kuri ojehechajey
 show-all-extensions-button =
@@ -166,6 +174,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Ñembohekopyahu eipurukuaáva
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Je’eporã
+addon-category-discover-title =
+    .title = Je’eporã
+addon-category-extension = Mba'ejoapyrã
+addon-category-extension-title =
+    .title = Mba'ejoapyrã
+addon-category-theme = Téma
+addon-category-theme-title =
+    .title = Téma
+addon-category-plugin = Mba'ejoajurã
+addon-category-plugin-title =
+    .title = Mba'ejoajurã
+addon-category-dictionary = Ñe'ẽryru
+addon-category-dictionary-title =
+    .title = Ñe'ẽryru
+addon-category-locale = Ñe'ẽita
+addon-category-locale-title =
+    .title = Ñe'ẽita
+addon-category-available-updates = Ñembohekopyahu eipurukuaáva
+addon-category-available-updates-title =
+    .title = Ñembohekopyahu eipurukuaáva
+addon-category-recent-updates = Ñembohekopyahu ramovéva
+addon-category-recent-updates-title =
+    .title = Ñembohekopyahu ramovéva
 
 ## These are global warnings
 
@@ -278,6 +310,7 @@ shortcuts-no-commands = Ko’ã jepysokue ndoguerekói jeike pya’eha:
 shortcuts-input =
     .placeholder = Ehai peteĩ mbopya'eha
 shortcuts-browserAction = Emyandy jepysokue
+shortcuts-browserAction2 = Emyandy votõ tembipuru renda
 shortcuts-pageAction = Emyandy kuatiarogue ñemongu’e
 shortcuts-sidebarAction = Embojopyru tenda yke
 shortcuts-modifier-mac = Emoinge Ctrl, Alt o ⌘
@@ -303,6 +336,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Ehechauka'ive
 go-back-button =
     .tooltiptext = Guevijey
+header-back-button =
+    .title = Guevijey
 
 ## Recommended add-ons page
 

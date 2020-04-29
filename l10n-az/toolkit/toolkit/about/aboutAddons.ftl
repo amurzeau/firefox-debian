@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Fayldan əlavə qur...
     .accesskey = I
 help-button = Əlavə Dəstəyi
+sidebar-help-button-title =
+    .title = Əlavə Dəstəyi
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } Seçimləri
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Bütün əlavələr üçün alətlər
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } Seçimləri
+           *[other] { -brand-short-name } Nizamlamaları
+        }
 show-unsigned-extensions-button =
     .label = Bəzi uzantılar təsdiqlənə bilmirlər
 show-all-extensions-button =
@@ -145,6 +153,27 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Mövcud yeniləmələr
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-extension = Uzantılar
+addon-category-extension-title =
+    .title = Uzantılar
+addon-category-theme = Mövzular
+addon-category-theme-title =
+    .title = Mövzular
+addon-category-plugin = Qoşmalar
+addon-category-plugin-title =
+    .title = Qoşmalar
+addon-category-dictionary = Lüğətlər
+addon-category-dictionary-title =
+    .title = Lüğətlər
+addon-category-locale = Dillər
+addon-category-locale-title =
+    .title = Dillər
+addon-category-available-updates = Mövcud yeniləmələr
+addon-category-available-updates-title =
+    .title = Mövcud yeniləmələr
+addon-category-recent-updates = Yaxın vaxtlardakı yeniləmələr
+addon-category-recent-updates-title =
+    .title = Yaxın vaxtlardakı yeniləmələr
 
 ## These are global warnings
 
@@ -272,6 +301,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Daha az göstər
 go-back-button =
     .tooltiptext = Geri get
+header-back-button =
+    .title = Geri get
 
 ## Recommended add-ons page
 

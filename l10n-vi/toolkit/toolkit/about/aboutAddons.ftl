@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Cài đặt tiện ích từ tập tin…
     .accesskey = I
 help-button = Hỗ trợ tiện ích
+sidebar-help-button-title =
+    .title = Hỗ trợ tiện ích
 preferences =
     { PLATFORM() ->
         [windows] Tùy chọn { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Công cụ cho tất cả tiện ích
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Tùy chọn { -brand-short-name }
+           *[other] Tùy chỉnh { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Không thể xác thực một số tiện ích
 show-all-extensions-button =
@@ -167,6 +175,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Cập nhật có sẵn
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Đề xuất
+addon-category-discover-title =
+    .title = Đề xuất
+addon-category-extension = Tiện ích mở rộng
+addon-category-extension-title =
+    .title = Tiện ích mở rộng
+addon-category-theme = Chủ đề
+addon-category-theme-title =
+    .title = Chủ đề
+addon-category-plugin = Phần bổ trợ
+addon-category-plugin-title =
+    .title = Phần bổ trợ
+addon-category-dictionary = Từ điển
+addon-category-dictionary-title =
+    .title = Từ điển
+addon-category-locale = Ngôn ngữ
+addon-category-locale-title =
+    .title = Ngôn ngữ
+addon-category-available-updates = Cập nhật có sẵn
+addon-category-available-updates-title =
+    .title = Cập nhật có sẵn
+addon-category-recent-updates = Cập nhật gần đây
+addon-category-recent-updates-title =
+    .title = Cập nhật gần đây
 
 ## These are global warnings
 
@@ -279,6 +311,7 @@ shortcuts-no-commands = Các tiện ích mở rộng sau không có phím tắt:
 shortcuts-input =
     .placeholder = Nhập một phím tắt
 shortcuts-browserAction = Kích hoạt tiện ích mở rộng
+shortcuts-browserAction2 = Kích hoạt nút thanh công cụ
 shortcuts-pageAction = Kích hoạt hành động trang
 shortcuts-sidebarAction = Chuyển đến thanh lề
 shortcuts-modifier-mac = Bao gồmCtrl, Alt, hoặc ⌘
@@ -303,6 +336,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Hiện ít hơn
 go-back-button =
     .tooltiptext = Quay lại
+header-back-button =
+    .title = Quay lại
 
 ## Recommended add-ons page
 

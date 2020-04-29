@@ -11,6 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Establece políticas a las que WebExtensions pueda acceder a través de chrome.storage.managed.
+policy-AppAutoUpdate = Activar o desactivar la actualización automática de la aplicación.
 policy-AppUpdateURL = Establecer la URL de actualización de la aplicación personalizada.
 policy-Authentication = Configurar la autenticación integrada para sitios web que lo admitan.
 policy-BlockAboutAddons = Bloquear el acceso al administrador de complementos (about:addons).
@@ -21,9 +22,11 @@ policy-Bookmarks = Crear marcadores en la barra de herramientas Marcadores, men�
 policy-CaptivePortal = Habilitar o deshabilitar soporte de portal cautivo.
 policy-CertificatesDescription = Agregar certificados o usar certificados incorporados.
 policy-Cookies = Permitir o denegar sitios web para establecer cookies.
+policy-DisabledCiphers = Desactivar cifrados.
 policy-DefaultDownloadDirectory = Establece el directorio de descarga predeterminado
 policy-DisableAppUpdate = Evitar que el navegador se actualice.
 policy-DisableBuiltinPDFViewer = Deshabilitar PDF.js, el lector de PDF integrado en { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Previene que el agente de navegación predeterminado tome acciones. Solo aplicable a Windows; otras plataformas no tienen el agente.
 policy-DisableDeveloperTools = Bloquear acceso a las herramientas de desarrollador.
 policy-DisableFeedbackCommands = Deshabilitar comandos para enviar comentarios desde el menú Ayuda (Enviar comentario y reportar sitios engañosos).
 policy-DisableFirefoxAccounts = Deshabilitar los servicios basados en { -fxaccount-brand-name }, incluido Sync.
@@ -63,6 +66,14 @@ policy-HardwareAcceleration = Si es "false", desactivar aceleración de hardware
 policy-Homepage = Establecer y opcionalmente bloquear la página de inicio.
 policy-InstallAddonsPermission = Permitir que algunos sitios web instalen complementos.
 policy-LegacyProfiles = Deshabilitar la función que obliga a tener un perfil separado para cada instalación
+
+## Do not translate "SameSite", it's the name of a cookie attribute.
+
+policy-LegacySameSiteCookieBehaviorEnabled = Activar la configuración de comportamiento tradicional de SameSite para las cookies de forma predeterminada.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Volver al comportamiento tradicional de SameSite para las cookies en sitios específicos.
+
+##
+
 policy-LocalFileLinks = Permitir a sitios web específicos para enlazar a archivos locales.
 policy-NetworkPrediction = Habilitar o deshabilitar predicción de red (búsqueda previa de DNS).
 policy-NewTabPage = Habilitar o deshabilitar la página Nueva pestaña.
@@ -72,7 +83,6 @@ policy-OfferToSaveLoginsDefault = Establecer el valor predeterminado para permit
 policy-OverrideFirstRunPage = Anular la primera página de ejecución. Establecer esta política en blanco si desea deshabilitar la primera página de ejecución.
 policy-OverridePostUpdatePage = Anular la página "Novedades" posterior a la actualización. Establecer esta política en blanco si deseas deshabilitar la página posterior a la actualización.
 policy-PasswordManagerEnabled = Habilitar el guardado de contraseñas en el administrador de contraseñas.
-policy-Permissions = Configurar permisos para cámara, micrófono, ubicación y notificaciones.
 policy-Permissions2 = Configura permisos para cámara, micrófono, ubicación, notificaciones y reproducción automática.
 policy-PopupBlocking = Permitir que ciertos sitios web muestren ventanas emergentes de manera predeterminada.
 policy-Preferences = Establece y bloquea el valor para un subconjunto de preferencias.

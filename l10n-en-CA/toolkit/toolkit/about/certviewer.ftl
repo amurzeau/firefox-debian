@@ -29,6 +29,8 @@ certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = Key Exchange Group
 certificate-viewer-key-id = Key ID
 certificate-viewer-key-size = Key Size
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-locality = Inc. Locality
 certificate-viewer-locality = Locality
 certificate-viewer-location = Location
 certificate-viewer-logid = Log ID
@@ -95,3 +97,16 @@ certificate-viewer-download-pem = PEM (cert)
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (chain)
     .download = { $fileName }-chain.pem
+# The title attribute for Critical Extension icon
+certificate-viewer-critical-extension =
+    .title = This extension has been marked as critical, meaning that clients must reject the certificate if they do not understand it.
+certificate-viewer-export = Export
+    .download = { $fileName }.pem
+
+## Labels for tabs displayed in stand-alone about:certificate page
+
+certificate-viewer-tab-mine = Your Certificates
+certificate-viewer-tab-people = People
+certificate-viewer-tab-servers = Servers
+certificate-viewer-tab-ca = Authorities
+certificate-viewer-tab-unkonwn = Unknown

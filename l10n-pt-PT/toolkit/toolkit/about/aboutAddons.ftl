@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Instalar extra a partir de ficheiro…
     .accesskey = I
 help-button = Apoio dos extras
+sidebar-help-button-title =
+    .title = Apoio dos extras
 preferences =
     { PLATFORM() ->
         [windows] Opções do { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Ferramentas para todos os extras
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Opções do { -brand-short-name }
+           *[other] Preferências do { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Algumas extensões não foram verificadas
 show-all-extensions-button =
@@ -169,6 +177,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Atualizações disponíveis
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Recomendações
+addon-category-discover-title =
+    .title = Recomendações
+addon-category-extension = Extensões
+addon-category-extension-title =
+    .title = Extensões
+addon-category-theme = Temas
+addon-category-theme-title =
+    .title = Temas
+addon-category-plugin = Plugins
+addon-category-plugin-title =
+    .title = Plugins
+addon-category-dictionary = Dicionários
+addon-category-dictionary-title =
+    .title = Dicionários
+addon-category-locale = Idiomas
+addon-category-locale-title =
+    .title = Idiomas
+addon-category-available-updates = Atualizações disponíveis
+addon-category-available-updates-title =
+    .title = Atualizações disponíveis
+addon-category-recent-updates = Atualizações recentes
+addon-category-recent-updates-title =
+    .title = Atualizações recentes
 
 ## These are global warnings
 
@@ -281,6 +313,7 @@ shortcuts-no-commands = As seguintes extensões não possuem atalhos:
 shortcuts-input =
     .placeholder = Escrever um atalho
 shortcuts-browserAction = Ativar extensão
+shortcuts-browserAction2 = Ativar botão da barra de ferramentas
 shortcuts-pageAction = Ativar ação da página
 shortcuts-sidebarAction = Alternar a barra lateral
 shortcuts-modifier-mac = Incluir Ctrl, Alt ou ⌘
@@ -306,6 +339,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Mostrar menos
 go-back-button =
     .tooltiptext = Retroceder
+header-back-button =
+    .title = Retroceder
 
 ## Recommended add-ons page
 

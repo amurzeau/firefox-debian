@@ -15,7 +15,9 @@ abuse-report-subtitle = Qual es lo problèma ?
 # Variables:
 #   $author-name (string) - Name of the add-on author
 abuse-report-addon-authored-by = per <a data-l10n-name="author-name">{ $author-name }</a>
-abuse-report-learnmore = Sabètz pas que problèma causir ?<a data-l10n-name="learnmore-link">Ne saber mai a prepaus del senhalament d'extensions e tèmas</a>
+abuse-report-learnmore =
+    Sabètz pas quin problèma causir ?
+    <a data-l10n-name="learnmore-link">Ne saber mai a prepaus del senhalament d'extensions e tèmas</a>
 abuse-report-submit-description = Descrivètz lo problèma (opcional)
 abuse-report-textarea =
     .placeholder = Es mai aisit de resòlvre un problèma s'avèm de detalhs. Descrivètz çò que vos arriba. Mercé de nos ajudar a gardar lo Web sanitós.
@@ -72,7 +74,7 @@ abuse-report-broken-reason-extension = Fonciona pas, còpa los sites web, o alen
 abuse-report-broken-reason-theme = Fonciona pas o còpa l’afichatge del navegador
 abuse-report-broken-reason-extension-v2 = Fonciona pas, còpa los sites web, o alentís { -brand-product-name }
 abuse-report-broken-reason-theme-v2 = fonciona pas o còpa l’afichatge del navegador
-abuse-report-broken-example = Exemple : las foncionalitats son lentas, malaisidas d’utilizar o foncionan pas ; unas partidas dels sites Web se cargan pas o an una aparéncia inabituala.
+abuse-report-broken-example = Exemple : las foncionalitats son lentas, malaisidas d’utilizar o foncionan pas ; d’unas partidas dels sites Web se cargan pas o an una aparéncia inabituala.
 abuse-report-broken-suggestions-extension =
     Sembla qu'avètz identificar un bug. En mai de sometre un rapòrt aquí, lo melhor biais
     per resòlvre un problèma de foncionalitat es de contactar lo desvolopaire de l'extension.

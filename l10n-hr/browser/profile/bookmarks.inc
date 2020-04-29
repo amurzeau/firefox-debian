@@ -27,7 +27,7 @@
 
 # LOCALIZATION NOTE (firefox_customize):
 # link title for https://www.mozilla.org/en-US/firefox/customize/
-#define firefox_customize Prilagodite Firefox
+#define firefox_customize Prilagodi Firefox
 
 # LOCALIZATION NOTE (firefox_community):
 # link title for https://www.mozilla.org/en-US/contribute/
@@ -59,7 +59,7 @@
 
 # LOCALIZATION NOTE (crashes):
 # Nightly builds only, link title for about:crashes
-#define crashes Sva vaša rušenja
+#define crashes Sva tvoja rušenja
 
 # LOCALIZATION NOTE (irc):
 # Nightly builds only, link title for ircs://irc.mozilla.org/nightly

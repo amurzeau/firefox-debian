@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Εγκατάσταση πρόσθετου από αρχείο…
     .accesskey = γ
 help-button = Υποστήριξη προσθέτων
+sidebar-help-button-title =
+    .title = Υποστήριξη προσθέτων
 preferences =
     { PLATFORM() ->
         [windows] Επιλογές { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Εργαλεία για όλα τα πρόσθετα
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Επιλογές { -brand-short-name }
+           *[other] Προτιμήσεις { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Δεν ήταν δυνατή η επαλήθευση ορισμένων πρόσθετων
 show-all-extensions-button =
@@ -171,6 +179,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Διαθέσιμες ενημερώσεις
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Προτάσεις
+addon-category-discover-title =
+    .title = Προτάσεις
+addon-category-extension = Επεκτάσεις
+addon-category-extension-title =
+    .title = Επεκτάσεις
+addon-category-theme = Θέματα
+addon-category-theme-title =
+    .title = Θέματα
+addon-category-plugin = Αρθρώματα
+addon-category-plugin-title =
+    .title = Αρθρώματα
+addon-category-dictionary = Λεξικά
+addon-category-dictionary-title =
+    .title = Λεξικά
+addon-category-locale = Γλώσσες
+addon-category-locale-title =
+    .title = Γλώσσες
+addon-category-available-updates = Διαθέσιμες ενημερώσεις
+addon-category-available-updates-title =
+    .title = Διαθέσιμες ενημερώσεις
+addon-category-recent-updates = Πρόσφατες ενημερώσεις
+addon-category-recent-updates-title =
+    .title = Πρόσφατες ενημερώσεις
 
 ## These are global warnings
 
@@ -308,6 +340,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Εμφάνιση λιγότερων
 go-back-button =
     .tooltiptext = Επιστροφή
+header-back-button =
+    .title = Επιστροφή
 
 ## Recommended add-ons page
 

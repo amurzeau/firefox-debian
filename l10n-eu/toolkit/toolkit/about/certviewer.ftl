@@ -29,6 +29,8 @@ certificate-viewer-id = IDa
 certificate-viewer-key-exchange-group = Gako-trukaketa taldea
 certificate-viewer-key-id = Gakoaren IDa
 certificate-viewer-key-size = Gakoaren tamaina
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-locality = Sorlekua
 certificate-viewer-locality = Herria
 certificate-viewer-location = Kokalekua
 certificate-viewer-logid = Log IDa
@@ -95,3 +97,16 @@ certificate-viewer-download-pem = PEM (ziurtagiria)
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (katea)
     .download = { $fileName }-katea.pem
+# The title attribute for Critical Extension icon
+certificate-viewer-critical-extension =
+    .title = Hedapen hau kritiko gisa markatu da, hau da, bezeroek ziurtagiria ulertzen ez badute, baztertu egin behar dute.
+certificate-viewer-export = Esportatu
+    .download = { $fileName }.pem
+
+## Labels for tabs displayed in stand-alone about:certificate page
+
+certificate-viewer-tab-mine = Zure ziurtagiriak
+certificate-viewer-tab-people = Norbanakoak
+certificate-viewer-tab-servers = Zerbitzariak
+certificate-viewer-tab-ca = Autoritateak
+certificate-viewer-tab-unkonwn = Ezezaguna

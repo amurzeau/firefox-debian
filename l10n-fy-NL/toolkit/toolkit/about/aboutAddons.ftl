@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Ynstallearje add-on út bestân…
     .accesskey = Y
 help-button = Add-on-stipe
+sidebar-help-button-title =
+    .title = Add-on-stipe
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name }-opsjes
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Ark foar alle add-ons
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name }-opsjes
+           *[other] { -brand-short-name }-foarkarren
+        }
 show-unsigned-extensions-button =
     .label = Guon útwreidingen koene net ferifiearre wurde
 show-all-extensions-button =
@@ -172,6 +180,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Beskikbere fernijingen
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Oanrekommandaasjes
+addon-category-discover-title =
+    .title = Oanrekommandaasjes
+addon-category-extension = Utwreidingen
+addon-category-extension-title =
+    .title = Utwreidingen
+addon-category-theme = Tema's
+addon-category-theme-title =
+    .title = Tema's
+addon-category-plugin = Ynstekkers
+addon-category-plugin-title =
+    .title = Ynstekkers
+addon-category-dictionary = Wurdboeken
+addon-category-dictionary-title =
+    .title = Wurdboeken
+addon-category-locale = Talen
+addon-category-locale-title =
+    .title = Talen
+addon-category-available-updates = Beskikbere fernijingen
+addon-category-available-updates-title =
+    .title = Beskikbere fernijingen
+addon-category-recent-updates = Resinte fernijingen
+addon-category-recent-updates-title =
+    .title = Resinte fernijingen
 
 ## These are global warnings
 
@@ -284,6 +316,7 @@ shortcuts-no-commands = De folgjende útwreidingen hawwe gjin fluchtoetsen:
 shortcuts-input =
     .placeholder = Typ in fluchtoets
 shortcuts-browserAction = Utwreiding aktivearje
+shortcuts-browserAction2 = Arkbalkeknop aktivearje
 shortcuts-pageAction = Side-aksje aktivearje
 shortcuts-sidebarAction = De sydbalke yn-/útskeakelje
 shortcuts-modifier-mac = Druk ek op Ctrl, Alt of ⌘
@@ -308,6 +341,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Minder toane
 go-back-button =
     .tooltiptext = Tebekgean
+header-back-button =
+    .title = Tebekgean
 
 ## Recommended add-ons page
 

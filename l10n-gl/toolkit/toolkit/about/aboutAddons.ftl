@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Instalar complemento desde o ficheiro…
     .accesskey = I
 help-button = Asistencia dos módulos
+sidebar-help-button-title =
+    .title = Asistencia dos módulos
 preferences =
     { PLATFORM() ->
         [windows] Opcións de { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Ferramentas para todos os complementos
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Opcións de { -brand-short-name }
+           *[other] Preferencias de { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Non foi posíbel comprobar algunhas extensións
 show-all-extensions-button =
@@ -137,6 +145,27 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Actualizacións dispoñíbeis
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-extension = Extensións
+addon-category-extension-title =
+    .title = Extensións
+addon-category-theme = Temas
+addon-category-theme-title =
+    .title = Temas
+addon-category-plugin = Engadidos
+addon-category-plugin-title =
+    .title = Engadidos
+addon-category-dictionary = Dicionarios
+addon-category-dictionary-title =
+    .title = Dicionarios
+addon-category-locale = Idiomas
+addon-category-locale-title =
+    .title = Idiomas
+addon-category-available-updates = Actualizacións dispoñíbeis
+addon-category-available-updates-title =
+    .title = Actualizacións dispoñíbeis
+addon-category-recent-updates = Actualizacións recentes
+addon-category-recent-updates-title =
+    .title = Actualizacións recentes
 
 ## These are global warnings
 

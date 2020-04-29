@@ -287,6 +287,11 @@ sandbox-proc-type-content = innhald
 sandbox-proc-type-file = filinnhald
 sandbox-proc-type-media-plugin = programtillegg for media
 sandbox-proc-type-data-decoder = datadekodar
+startup-cache-title = Oppstart-snøgglager
+startup-cache-disk-cache-path = Sti for disk-snøgglager
+startup-cache-ignore-disk-cache = Ignorer disk-snøgglager
+startup-cache-found-disk-cache-on-init = Fann disk-snøgglager på Init
+startup-cache-wrote-to-disk-cache = Skreiv til disk-snøgglager
 launcher-process-status-0 = Påslått
 launcher-process-status-1 = Deaktivert på grunn av feil
 launcher-process-status-2 = Tvungen deaktivering
@@ -310,6 +315,7 @@ touch-enabled = tøtsj-input slått på
 drag-enabled = drag og slepp av rullelinje påslått
 keyboard-enabled = tastatur aktivert
 autoscroll-enabled = autorulling slått på
+zooming-enabled = glatt pinch-zoom aktivert
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

@@ -55,3 +55,43 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Certificaatketen:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Kan geen verbinding maken
+deniedPortAccess-title = Dit adres heeft beperkte toegang
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Hmm. We kunnen die website niet vinden.
+fileNotFound-title = Bestand niet gevonden
+fileAccessDenied-title = Toegang tot het bestand is geweigerd
+generic-title = Oeps.
+captivePortal-title = Aanmelden bij netwerk
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm. Dat adres ziet er niet goed uit.
+netInterrupt-title = De verbinding werd onderbroken
+notCached-title = Document verlopen
+netOffline-title = Offlinemodus
+contentEncodingError-title = Inhoudcoderingsfout
+unsafeContentType-title = Onveilig bestandstype
+netReset-title = De verbinding werd geherinitialiseerd
+netTimeout-title = De wachttijd voor de verbinding is verstreken
+unknownProtocolFound-title = Het adres werd niet begrepen
+proxyConnectFailure-title = De proxyserver weigert verbindingen
+proxyResolveFailure-title = Kan de proxyserver niet vinden
+redirectLoop-title = De pagina verwijst niet op een juiste manier door
+unknownSocketType-title = Onverwacht antwoord van server
+nssFailure2-title = Beveiligde verbinding mislukt
+cspBlocked-title = Geblokkeerd door inhoudsbeveiligingsbeleid
+xfoBlocked-title = Geblokkeerd door beleid voor X-Frame-Options
+corruptedContentError-title = Beschadigde-inhoudsfout
+remoteXUL-title = Remote XUL
+sslv3Used-title = Kan geen beveiligde verbinding maken
+inadequateSecurityError-title = Uw verbinding is niet beveiligd
+blockedByPolicy-title = Geblokkeerde pagina
+clockSkewError-title = Uw computerklok geeft de verkeerde tijd aan
+networkProtocolError-title = Netwerkprotocolfout
+nssBadCert-title = Waarschuwing: mogelijk beveiligingsrisico
+nssBadCert-sts-title = Geen verbinding gemaakt: mogelijk beveiligingsprobleem
+certerror-mitm-title = Software voorkomt dat { -brand-short-name } een beveiligde verbinding met deze website kan maken

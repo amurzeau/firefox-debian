@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = ফাইল থেকে অ্যাড-অন ইনস্টল… I
     .accesskey = I
 help-button = অ্যাড-অন সহযোগীতা
+sidebar-help-button-title =
+    .title = অ্যাড-অন সহযোগীতা
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } অপশন
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = সব অ্যাড-অন এর জন্য টুল
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } অপশন
+           *[other] { -brand-short-name } পছন্দসমূহ
+        }
 show-unsigned-extensions-button =
     .label = কিছু এক্সটেনশন ভ্যারিফাই করা হয়নি
 show-all-extensions-button =
@@ -161,6 +169,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = বিদ্যমান হালনাগাদ
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = সুপারিশসমূহ
+addon-category-discover-title =
+    .title = সুপারিশসমূহ
+addon-category-extension = এক্সটেনশন
+addon-category-extension-title =
+    .title = এক্সটেনশন
+addon-category-theme = থিম
+addon-category-theme-title =
+    .title = থিম
+addon-category-plugin = প্লাগইন
+addon-category-plugin-title =
+    .title = প্লাগইন
+addon-category-dictionary = অভিধান সমূহ
+addon-category-dictionary-title =
+    .title = অভিধান সমূহ
+addon-category-locale = ভাষা
+addon-category-locale-title =
+    .title = ভাষা
+addon-category-available-updates = বিদ্যমান হালনাগাদ
+addon-category-available-updates-title =
+    .title = বিদ্যমান হালনাগাদ
+addon-category-recent-updates = সাম্প্রতিক হালনাগাদ
+addon-category-recent-updates-title =
+    .title = সাম্প্রতিক হালনাগাদ
 
 ## These are global warnings
 
@@ -298,6 +330,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = কম দেখাও
 go-back-button =
     .tooltiptext = ফিরে যাও
+header-back-button =
+    .title = ফিরে যাও
 
 ## Recommended add-ons page
 

@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 profile-selection-window =
-    .title = { -brand-short-name } - Odaberite korisnički profil
+    .title = { -brand-short-name } – Odaberi korisnički profil
 profile-selection-button-accept =
     .label = Pokreni { -brand-short-name }
 profile-selection-button-cancel =
@@ -20,7 +20,7 @@ profile-selection-delete-button =
 
 ## Messages used in the profile manager
 
-profile-manager-description = { -brand-short-name } sprema informacije o vašim postavkama, osobitostima i ostale korisničke stavke u vaš korisnički profil.
+profile-manager-description = { -brand-short-name } sprema informacije o tvojim postavkama, osobitostima i ostale korisničke stavke u tvoj korisnički profil.
 profile-manager-work-offline =
     .label = Izvanmrežni rad
     .accesskey = I

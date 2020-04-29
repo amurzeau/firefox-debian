@@ -15,7 +15,7 @@ loading-label =
 list-empty-installed =
     .value = Žádný doplněk tohoto typu není nainstalován
 list-empty-available-updates =
-    .value = Nebyly nalezeny žádné aktualizace
+    .value = Nenalezeny žádné aktualizace
 list-empty-recent-updates =
     .value = Žádný doplněk nebyl aktualizován
 list-empty-find-updates =
@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Instalovat doplněk ze souboru…
     .accesskey = I
 help-button = Nápověda
+sidebar-help-button-title =
+    .title = Nápověda
 preferences =
     { PLATFORM() ->
         [windows] Možnosti
@@ -38,6 +40,17 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Nástroje doplňků
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Možnosti
+           *[other] Předvolby
+        } { -brand-short-name.gender ->
+            [masculine] { -brand-short-name(case: "gen") }
+            [feminine] { -brand-short-name(case: "gen") }
+            [neuter] { -brand-short-name(case: "gen") }
+           *[other] aplikace
+        }
 show-unsigned-extensions-button =
     .label = Některá rozšíření nemohla být ověřena
 show-all-extensions-button =
@@ -181,7 +194,7 @@ legacy-extensions-description =
        *[other] aplikace { -brand-short-name }
     }. <label data-l10n-name="legacy-learn-more">Zjistit více o změnách pro doplňky</label>
 private-browsing-description2 =
-    Fungování rozšíření pro aplikaci { -brand-short-name } se v anonymním prohlížení mění. Všechna nově nainstalovaná rozšíření, nebudou ve výchozím nastavení v anonymních oknech fungovat, pokud jim to nepovolíte. Rozšíření tak nebudou mít bez vašeho vědomí přístup k tomu, co v anonymním prohlížení děláte.
+    Fungování rozšíření pro aplikaci { -brand-short-name } se v anonymních oknech mění. Žádné nově nainstalované rozšíření, nebude ve výchozím nastavení v anonymních oknech fungovat, pokud mu to nepovolíte. Rozšíření tak nebudou mít bez vašeho vědomí přístup k tomu, co v anonymních oknech děláte.
     <label data-l10n-name="private-browsing-learn-more">Jak na nastavení rozšíření</label>
 extensions-view-discopane =
     .name = Doporučení
@@ -192,6 +205,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Dostupné aktualizace
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Doporučení
+addon-category-discover-title =
+    .title = Doporučení
+addon-category-extension = Rozšíření
+addon-category-extension-title =
+    .title = Rozšíření
+addon-category-theme = Motivy vzhledu
+addon-category-theme-title =
+    .title = Motivy vzhledu
+addon-category-plugin = Zásuvné moduly
+addon-category-plugin-title =
+    .title = Zásuvné moduly
+addon-category-dictionary = Slovníky
+addon-category-dictionary-title =
+    .title = Slovníky
+addon-category-locale = Jazyky
+addon-category-locale-title =
+    .title = Jazyky
+addon-category-available-updates = Dostupné aktualizace
+addon-category-available-updates-title =
+    .title = Dostupné aktualizace
+addon-category-recent-updates = Aktualizováno
+addon-category-recent-updates-title =
+    .title = Aktualizováno
 
 ## These are global warnings
 
@@ -271,7 +308,7 @@ extensions-updates-downloaded =
 extensions-updates-restart =
     .label = Restartovat pro dokončení instalace
 extensions-updates-none-found =
-    .value = Nebyly nalezeny žádné aktualizace
+    .value = Nenalezeny žádné aktualizace
 extensions-updates-manual-updates-found =
     .label = Zobrazit dostupné aktualizace
 extensions-updates-update-selected =
@@ -279,7 +316,7 @@ extensions-updates-update-selected =
     .tooltiptext = Nainstaluje vybrané aktualizace
 addon-updates-updating = Probíhá aktualizace doplňků
 addon-updates-installed = Doplňky byly aktualizovány.
-addon-updates-none-found = Nebyly nalezeny žádné aktualizace
+addon-updates-none-found = Nenalezeny žádné aktualizace
 addon-updates-manual-updates-found = Zobrazit dostupné aktualizace
 
 ## Add-on install/debug strings for page options menu
@@ -304,6 +341,7 @@ shortcuts-no-commands = Následující rozšíření nemají žádné klávesov�
 shortcuts-input =
     .placeholder = Zadejte klávesovou zkratku
 shortcuts-browserAction = Povolit rozšíření
+shortcuts-browserAction2 = Přidat tlačítko na lištu
 shortcuts-pageAction = Povolit akci stránky
 shortcuts-sidebarAction = Přepnout zobrazení postranního panelu
 shortcuts-modifier-mac = Zahrnout Ctrl, Alt nebo ⌘
@@ -336,6 +374,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Zobrazit méně
 go-back-button =
     .tooltiptext = Zpátky
+header-back-button =
+    .title = Zpátky
 
 ## Recommended add-ons page
 

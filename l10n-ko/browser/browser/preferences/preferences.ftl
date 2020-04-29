@@ -148,7 +148,7 @@ open-new-link-as-tabs =
     .label = 링크를 새 창 대신 새 탭에 열기
     .accesskey = w
 warn-on-close-multiple-tabs =
-    .label = 여러 개의 탭을 닫을 때 경고하기
+    .label = 여러 개의 탭을 닫을 때 경고
     .accesskey = m
 warn-on-open-many-tabs =
     .label = 여러개의 탭을 열어서 { -brand-short-name }가 느려질 수 있으면 알려주기
@@ -157,7 +157,7 @@ switch-links-to-new-tabs =
     .label = 링크를 새 탭으로 열면 해당 탭으로 전환
     .accesskey = h
 show-tabs-in-taskbar =
-    .label = Windows 작업표시줄에 탭 미리 보기 표시
+    .label = Windows 작업 표시줄에 탭 미리 보기 표시
     .accesskey = k
 browser-containers-enabled =
     .label = 컨테이너 탭 활성화
@@ -250,7 +250,7 @@ applications-description = { -brand-short-name }가 웹에서 다운로드한 �
 applications-filter =
     .placeholder = 파일 형식 또는 응용 프로그램 검색
 applications-type-column =
-    .label = 파일 형식
+    .label = 콘텐츠 유형
     .accesskey = T
 applications-action-column =
     .label = 실행
@@ -597,7 +597,7 @@ sync-signedout-account-signin2 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = 모바일 기기와 동기화하기 위해서 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 또는 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> 용 Firefox를 다운로드 하세요.
+sync-mobile-promo = 모바일 기기와 동기화하기 위해서 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 또는 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>용 Firefox를 다운로드 하세요.
 
 ## Sync Section - Signed in
 
@@ -847,10 +847,12 @@ sitedata-option-block-cross-site-trackers =
     .label = 교차 사이트 추적기
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = 교차 사이트 및 소셜 미디어 추적기
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = 교차 사이트 및 소셜 미디어 추적기, 그리고 나머지 쿠키 격리
 sitedata-option-block-unvisited =
     .label = 방문하지 않은 웹 사이트의 쿠키
 sitedata-option-block-all-third-party =
-    .label = 모든 제3자 쿠키 (웹 사이트가 제대로 작동 안할 수 있음)
+    .label = 모든 제3자 쿠키 (웹 사이트가 제대로 작동 안 할 수 있음)
 sitedata-option-block-all =
     .label = 모든 쿠키 (웹 사이트가 제대로 작동 안하게 됨)
 sitedata-clear =
@@ -923,6 +925,7 @@ content-blocking-etp-strict-desc = 더 강력한 보호 기능을 제공하지�
 content-blocking-etp-custom-desc = 차단할 추적기와 스크립트를 선택하세요.
 content-blocking-private-windows = 사생활 보호 창의 추적 콘텐츠
 content-blocking-cross-site-tracking-cookies = 교차 사이트 추적 쿠키
+content-blocking-cross-site-tracking-cookies-plus-isolate = 교차 사이트 추적 쿠키, 그리고 나머지 쿠키 격리
 content-blocking-social-media-trackers = 소셜 미디어 추적기
 content-blocking-all-cookies = 모든 쿠키
 content-blocking-unvisited-cookies = 방문하지 않은 사이트의 쿠키
@@ -935,6 +938,7 @@ content-blocking-warning-title = 조심하세요!
 content-blocking-warning-description = 콘텐츠를 차단하면 일부 웹 사이트가 깨질 수 있습니다. 신뢰할 수 있는 사이트에 대한 차단은 쉽게 해제 할 수 있습니다.
 content-blocking-learn-how = 방법 알아보기
 content-blocking-etp-warning-description = 추적기 차단은 일부 사이트의 기능에 영향을 줄 수 있습니다. 모든 콘텐츠를 로드하려면 추적기가 있는 페이지를 다시 로드하세요.
+content-blocking-and-isolating-etp-warning-description = 추적기 차단 및 쿠키 격리는 일부 사이트의 기능에 영향을 줄 수 있습니다. 모든 콘텐츠를 로드하려면 추적기가 있는 페이지를 다시 로드하세요.
 content-blocking-warning-learn-how = 방법 알아보기
 content-blocking-reload-description = 변경 사항을 적용하려면 탭을 다시 로드해야 합니다.
 content-blocking-reload-tabs-button =
@@ -1033,7 +1037,7 @@ permissions-a11y-privacy-link = 더 알아보기
 collection-header = { -brand-short-name } 데이터 수집과 사용
 collection-description = { -brand-short-name }를 모두를 위해 제공하고 개선하기 위해서 필요한 것만 수집하고 선택권을 제공하기 위해 노력합니다. 개인 정보를 전송하기 전에 항상 허가여부를 묻습니다.
 collection-privacy-notice = 개인정보 안내
-collection-health-report-telemetry-disabled = { -vendor-short-name }에서 더 이상 기술 및 상호 작용 데이터를 캡처 할 수 없습니다. 모든 과거 데이터는 30일 이내에 삭제됩니다.
+collection-health-report-telemetry-disabled = { -vendor-short-name }에서 더 이상 기술 및 상호 작용 데이터를 캡처할 수 없습니다. 모든 과거 데이터는 30일 이내에 삭제됩니다.
 collection-health-report-telemetry-disabled-link = 더 알아보기
 collection-health-report =
     .label = { -brand-short-name }가 기술과 상호 작용 정보를 { -vendor-short-name }에 전송하도록 허용

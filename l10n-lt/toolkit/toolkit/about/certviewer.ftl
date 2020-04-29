@@ -29,6 +29,8 @@ certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = Apsikeitimo raktais grupė
 certificate-viewer-key-id = Rakto identifikatorius
 certificate-viewer-key-size = Rakto dydis
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-locality = Centrinė buveinė
 certificate-viewer-locality = Vietovė
 certificate-viewer-location = Vieta
 certificate-viewer-logid = Įrašo identifikatorius
@@ -95,3 +97,16 @@ certificate-viewer-download-pem = PEM (cert)
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (chain)
     .download = { $fileName }-chain.pem
+# The title attribute for Critical Extension icon
+certificate-viewer-critical-extension =
+    .title = Šis plėtinys buvo pažymėtas kaip kritinis, kas reiškia, kad klientai privalo atmesti liudijimą, jeigu jo nesupranta.
+certificate-viewer-export = Eksportuoti
+    .download = { $fileName }.pem
+
+## Labels for tabs displayed in stand-alone about:certificate page
+
+certificate-viewer-tab-mine = Jūsų liudijimai
+certificate-viewer-tab-people = Žmonės
+certificate-viewer-tab-servers = Serveriai
+certificate-viewer-tab-ca = Liudijimų įstaigos
+certificate-viewer-tab-unkonwn = Nežinoma

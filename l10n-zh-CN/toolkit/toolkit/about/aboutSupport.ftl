@@ -270,6 +270,11 @@ sandbox-proc-type-content = 内容
 sandbox-proc-type-file = 文件内容
 sandbox-proc-type-media-plugin = 媒体插件
 sandbox-proc-type-data-decoder = 数据解码器
+startup-cache-title = 启动缓存
+startup-cache-disk-cache-path = 磁盘缓存路径
+startup-cache-ignore-disk-cache = 忽略磁盘缓存
+startup-cache-found-disk-cache-on-init = 在初始化时发现磁盘缓存
+startup-cache-wrote-to-disk-cache = 已写入磁盘缓存
 launcher-process-status-0 = 启用
 launcher-process-status-1 = 因故障而禁用
 launcher-process-status-2 = 强制禁用
@@ -293,6 +298,7 @@ touch-enabled = 触摸输入已启用
 drag-enabled = 滚动条拖动已启用
 keyboard-enabled = 键盘已启用
 autoscroll-enabled = 自动滚动已启用
+zooming-enabled = 已启用平滑捏合缩放
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

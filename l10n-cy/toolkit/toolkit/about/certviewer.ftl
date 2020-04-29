@@ -29,6 +29,8 @@ certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = Grŵp Cyfnewid Allwedd
 certificate-viewer-key-id = ID Allwedd
 certificate-viewer-key-size = Maint Allwedd
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-locality = Ardal Corffori
 certificate-viewer-locality = Lleoliad
 certificate-viewer-location = Lleoliad
 certificate-viewer-logid = ID Cofnod
@@ -95,3 +97,16 @@ certificate-viewer-download-pem = PEM (tystysgrif)
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (cadwyn)
     .download = { $fileName }-chain.pem
+# The title attribute for Critical Extension icon
+certificate-viewer-critical-extension =
+    .title = Mae'r estyniad hwn wedi'i nodi fel un hanfodol, sy'n golygu bod yn rhaid i gleientiaid wrthod y dystysgrif os nad ydyn nhw'n ei deall.
+certificate-viewer-export = Allforio
+    .download = { $fileName }.pem
+
+## Labels for tabs displayed in stand-alone about:certificate page
+
+certificate-viewer-tab-mine = Eich Tystysgrifau
+certificate-viewer-tab-people = Pobl
+certificate-viewer-tab-servers = Gweinyddion
+certificate-viewer-tab-ca = Awdurdodau
+certificate-viewer-tab-unkonwn = Anhysbys

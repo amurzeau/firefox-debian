@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Buka menu
-# This menuitem is only visible on Windows
-menu-menuitem-import = Impor Sandi…
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Impor dari Peramban Lain…
 menu-menuitem-preferences =
@@ -49,6 +47,7 @@ login-list-sort-label-text = Urutkan berdasarkan:
 login-list-name-option = Nama (A-Z)
 login-list-name-reverse-option = Nama (Z-A)
 login-list-breached-option = Situs Web yang Dibobol
+about-logins-login-list-alerts-option = Peringatan
 login-list-last-changed-option = Terakhir Diubah
 login-list-last-used-option = Terakhir Digunakan
 login-list-intro-title = Tidak ada info masuk ditemukan
@@ -60,6 +59,8 @@ login-list-item-subtitle-new-login = Masukkan kredensial info masuk Anda
 login-list-item-subtitle-missing-username = (tidak ada nama pengguna)
 about-logins-list-item-breach-icon =
     .title = Situs web yang dibobol
+about-logins-list-item-vulnerable-password-icon =
+    .title = Kata sandi rentan
 
 ## Introduction screen
 
@@ -159,10 +160,25 @@ confirm-discard-changes-dialog-confirm-button = Hapus Perubahan
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Pembobolan Situs Web
 breach-alert-text = Kata sandi telah bocor atau dicuri dari situs Web ini sejak terakhir Anda memperbarui rincian info masuk Anda. Ubah kata sandi Anda untuk melindungi akun Anda.
 breach-alert-link = Pelajari selengkapnya tentang pembobolan ini.
 breach-alert-dismiss =
     .title = Tutup peringatan ini
+about-logins-breach-alert-date = Pembobolan ini terjadi pada { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Buka { $hostname }
+about-logins-breach-alert-learn-more-link = Pelajari lebih lanjut
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Kata Sandi Rentan
+about-logins-vulnerable-alert-text2 = Kata sandi ini telah digunakan pada akun lain yang kemungkinan besar telah diketahui dalam peristiwa pembobolan data. Penggunaan ulang kredensial akan membahayakan semua akun anda. Ubah kata sandi ini.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Buka { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Pelajari lebih lanjut
 
 ## Error Messages
 

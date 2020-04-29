@@ -287,6 +287,11 @@ sandbox-proc-type-content = tetepy
 sandbox-proc-type-file = Marandurenda rechapyrã
 sandbox-proc-type-media-plugin = plugin maranduguáva
 sandbox-proc-type-data-decoder = Mba’ekuaarã papapy'o
+startup-cache-title = Kache ñepyrũgua
+startup-cache-disk-cache-path = Disco Kache Rape
+startup-cache-ignore-disk-cache = Ehejarei Disco Kache
+startup-cache-found-disk-cache-on-init = Ojejuhu disco kache Init-pe
+startup-cache-wrote-to-disk-cache = Ehai Disco Kachépe
 launcher-process-status-0 = Jurujapyre
 launcher-process-status-1 = Ojepe'apyre ojavy rupi
 launcher-process-status-2 = Mbaretépe jepe’apyre
@@ -310,6 +315,7 @@ touch-enabled = jeikeha jepokóva jurujapyre
 drag-enabled = embosyryry oku'éva renda myendypyre
 keyboard-enabled = tairenda myandypyre
 autoscroll-enabled = ñemongu'e ijeheguíva ijurujáma
+zooming-enabled = zoom ñepichã’i myandypyre
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

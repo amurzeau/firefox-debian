@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Tiyak ri tz'aqat rik'in ri yakb'äl…
     .accesskey = T
 help-button = Kitob'al Tz'aqat
+sidebar-help-button-title =
+    .title = Kitob'al Tz'aqat
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } Taq Cha'oj
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Taq kisamajib'al konojel ri taq tz'aqat
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } Taq Cha'oj
+           *[other] { -brand-short-name } Taq Ajowab'äl
+        }
 show-unsigned-extensions-button =
     .label = Jujun taq k'amal man tikirel ta yenik'öx
 show-all-extensions-button =
@@ -167,6 +175,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Taq k'exoj e k'o
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Taq chilab'enïk
+addon-category-discover-title =
+    .title = Taq chilab'enïk
+addon-category-extension = Taq k'amal
+addon-category-extension-title =
+    .title = Taq k'amal
+addon-category-theme = Taq wachinel
+addon-category-theme-title =
+    .title = Taq wachinel
+addon-category-plugin = Taq nak'ab'äl
+addon-category-plugin-title =
+    .title = Taq nak'ab'äl
+addon-category-dictionary = Taq soltzij
+addon-category-dictionary-title =
+    .title = Taq soltzij
+addon-category-locale = Taq ch'ab'äl
+addon-category-locale-title =
+    .title = Taq ch'ab'äl
+addon-category-available-updates = Taq k'exoj e k'o
+addon-category-available-updates-title =
+    .title = Taq k'exoj e k'o
+addon-category-recent-updates = K'ak'a' taq k'exoj
+addon-category-recent-updates-title =
+    .title = K'ak'a' taq k'exoj
 
 ## These are global warnings
 
@@ -304,6 +336,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Tik'ut pe Jub'a'
 go-back-button =
     .tooltiptext = Titzolin
+header-back-button =
+    .title = Titzolin
 
 ## Recommended add-ons page
 

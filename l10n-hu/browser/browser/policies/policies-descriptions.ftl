@@ -26,6 +26,7 @@ policy-DisabledCiphers = Titkosítási módok letiltása.
 policy-DefaultDownloadDirectory = Az alapértelmezett letöltési könyvtár beállítása.
 policy-DisableAppUpdate = A böngésző frissítésének megakadályozása.
 policy-DisableBuiltinPDFViewer = A PDF.js-nek, a { -brand-short-name } beépített PDF-megjelenítőjének letiltása.
+policy-DisableDefaultBrowserAgent = Akadályozza meg, hogy az alapértelmezett böngésző-ügynök bármilyen műveletet végezzen. Csak Windowsra vonatkozik, más platformokon nincs meg ez az ügynök.
 policy-DisableDeveloperTools = A fejlesztői eszközökhöz hozzáférés blokkolása.
 policy-DisableFeedbackCommands = A visszajelzés küldési parancsok letiltása a Súgó menüben (Visszajelzés beküldése és Félrevezető oldal jelentése).
 policy-DisableFirefoxAccounts = A { -fxaccount-brand-name } alapú szolgáltatások letiltása, beleértve a Syncet.
@@ -65,6 +66,14 @@ policy-HardwareAcceleration = Ha hamis, akkor kikapcsolja a hardveres gyorsítá
 policy-Homepage = A kezdőlap beállítása, és választható módon, annak zárolása.
 policy-InstallAddonsPermission = Bizonyos weboldalak telepíthetnek kiegészítőket.
 policy-LegacyProfiles = A funkció letiltása, amely kikényszeríti, hogy minden telepítés külön profilt használjon
+
+## Do not translate "SameSite", it's the name of a cookie attribute.
+
+policy-LegacySameSiteCookieBehaviorEnabled = Az alapértelmezett, örökölt SameSite süti viselkedési beállítás engedélyezése.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = A sütik örökölt SameSite viselkedésének visszaállítása a megadott oldalaknál.
+
+##
+
 policy-LocalFileLinks = Lehetővé teszi, hogy bizonyos webhelyek helyi fájlokra hivatkozzanak.
 policy-NetworkPrediction = Hálózati előrejelzés engedélyezése vagy letiltása (DNS előhívás).
 policy-NewTabPage = Az Új lap oldal engedélyezése vagy letiltása.

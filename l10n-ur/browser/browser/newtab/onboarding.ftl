@@ -21,11 +21,12 @@ onboarding-button-label-get-started = شروع کریں
 onboarding-welcome-header = { -brand-short-name } میں خوش آمدید
 onboarding-welcome-body = آپ کو براؤزر مل گیا ہے۔ <br/> باقی { -brand-product-name } سے ملیں۔
 onboarding-welcome-learn-more = فوائد کے بارے میں مزید سیکھیں۔
+onboarding-join-form-header = { -brand-product-name } میں شامل ہوِں۔
+onboarding-welcome-modal-get-body = آپ کو براؤزر مل گیا ہے۔ <br/> اس { -brand-product-name } سب کچھ حاصل کریں۔
 onboarding-welcome-modal-supercharge-body = اپنی رازداری کے تحفظ کو سپرچارج کریں۔
 onboarding-welcome-modal-privacy-body = آپ کو براؤزر مل گیا ہے۔ آئیے مزید رازداری تحفظات شامل کریں۔
 onboarding-welcome-modal-family-learn-more = مصنوعات کے { -brand-product-name } کے کنبہ کے بارے میں جانیں۔
 onboarding-welcome-form-header = یہاں سے شروع کرو
-onboarding-join-form-header = { -brand-product-name } میں شامل ہوِں۔
 onboarding-join-form-body = شروع کرنے کے لئے اپنا ای میل ایڈریس درج کریں۔
 onboarding-join-form-email =
     .placeholder = ای میل درز کریں
@@ -49,7 +50,7 @@ onboarding-fullpage-form-email =
 ## Firefox Sync modal dialog strings.
 
 onboarding-sync-welcome-header = { -brand-product-name }کو  اپنے ساتھ جائے
-onboarding-sync-welcome-content = اپنے تمام آلات پر اپنی نشانیاں ، سابقات ، پاس ورڈ اور دیگر ترتیبات حاصل کریں۔
+onboarding-sync-welcome-content = اپنے تمام آلات پر اپنی نشانیاں ، سابقات ، پاس ورڈ اور دیگر سیٹنگز حاصل کریں۔
 onboarding-sync-welcome-learn-more-link = Firefox اکاؤنٹس کے بارے میں مزید سیکھیں
 onboarding-sync-form-input =
     .placeholder = ای میل
@@ -99,9 +100,12 @@ onboarding-ghostery-text = Ghostery کے طرہ ایکسٹینشن کے ساتھ
 onboarding-fxa-title = ہمہ وقت سازی
 onboarding-tracking-protection-title2 = سراغ کاری سے تحفظ
 onboarding-tracking-protection-button2 = یہ کس طرح کام کرتا ہے
-onboarding-data-sync-title = اپنی ترتیبات اپنے ساتھ رکھیں
+onboarding-data-sync-title = اپنی سیٹنگز اپنے ساتھ رکھیں
+# "Sync" is short for synchronize.
+onboarding-data-sync-text2 = جہاں بھی آپ { -brand-product-name } استعمال کرتے ہیں ہر جگہ اپنے بُک مارکس ، پاس ورڈز اور  مزید چیزوں کو سنک کریں ۔
 onboarding-data-sync-button2 = { -sync-brand-short-name } میں  سائن ان کریں
 onboarding-firefox-monitor-title = ڈیٹا کی خلاف ورزیوں پر الرٹ رہیں
+onboarding-firefox-monitor-text = { -monitor-brand-name } مونیٹر کرتا ہے آپ کا ای میل ڈیٹا کی خلاف ورزی ظاہر ہوئی ہے اور اگر آپ کی ای میل میں کوئی نئی خلاف ورزی ہوتی ہے تو آپ کو متنبہ کردیتا ہے۔
 onboarding-firefox-monitor-button = الرٹس کے لئے سائن اپ کریں
 onboarding-browse-privately-title = رازداری سے براؤز کریں
 onboarding-browse-privately-text = نجی براؤزنگ آپ کے کمپیوٹر کو استعمال کرنے والے ہر شخص سے خفیہ رکھنے کے لیے آپ کی تلاش اور براؤزنگ کی سابقات کو صاف کردیتی ہے۔
@@ -134,6 +138,8 @@ onboarding-facebook-container-button = ایکسٹینشن شامل کریں
 onboarding-import-browser-settings-title = اپنے بُک مارکس ، پاس ورڈز اور بہت کچھ درآمد کریں
 onboarding-import-browser-settings-text = سیدھے ڈوبکی  لگائیں — آسانی سے اپنے ساتھ اپنی Chrome سائٹس اور سیٹنگیں اپنے ساتھ لائیں۔
 onboarding-import-browser-settings-button = chrome ڈیٹا درآمد کریں
+onboarding-personal-data-promise-title = ڈیزائن کے طور پر نجی ہے
+onboarding-personal-data-promise-button = ہمارا وعدہ پڑھیں
 
 ## Message strings belonging to the Return to AMO flow
 

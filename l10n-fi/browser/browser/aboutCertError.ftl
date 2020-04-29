@@ -55,3 +55,43 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Certificate chain:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Yhdistäminen epäonnistui
+deniedPortAccess-title = Osoitteen käyttö on rajoitettu
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Hmm. Sivua ei löydy.
+fileNotFound-title = Tiedostoa ei löytynyt
+fileAccessDenied-title = Tiedoston käyttö estettiin
+generic-title = Verkkopyyntöä ei kyetä toteuttamaan
+captivePortal-title = Kirjaudu verkkoon
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm. Tuo osoite ei näytä oikealta.
+netInterrupt-title = Tiedonsiirto keskeytyi
+notCached-title = Dokumentti on vanhentunut
+netOffline-title = Yhteydettömässä tilassa
+contentEncodingError-title = Sisällön koodausvirhe
+unsafeContentType-title = Vaarallinen tiedostotyyppi
+netReset-title = Yhteys keskeytyi
+netTimeout-title = Yhteyden aikakatkaisu
+unknownProtocolFound-title = Osoitetta ei ymmärretty
+proxyConnectFailure-title = Välityspalvelin kieltäytyy yhteydestä
+proxyResolveFailure-title = Välityspalvelinta ei löytynyt
+redirectLoop-title = Sivusto ei uudelleenohjaudu asianmukaisesti
+unknownSocketType-title = Odottamaton vastaus palvelimelta
+nssFailure2-title = Suojatun yhteyden muodostaminen epäonnistui
+cspBlocked-title = Sisällön tietosuojakäytännön estämä
+xfoBlocked-title = Estetty X-Frame-Options-käytännön perusteella
+corruptedContentError-title = Sisältö vioittunut -virhe
+remoteXUL-title = XUL-koodia etänä
+sslv3Used-title = Ei voitu muodostaa suojattua yhteyttä
+inadequateSecurityError-title = Yhteys ei ole suojattu
+blockedByPolicy-title = Estetty sivu
+clockSkewError-title = Tietokoneen kello on väärässä ajassa
+networkProtocolError-title = Verkkoyhteyskäytännön virhe
+nssBadCert-title = Varoitus: mahdollinen tietoturvariski
+nssBadCert-sts-title = Ei yhdistetty: mahdollinen turvallisuusongelma
+certerror-mitm-title = Ohjelmisto estää { -brand-short-name }ia yhdistämästä turvallisesti tähän sivustoon

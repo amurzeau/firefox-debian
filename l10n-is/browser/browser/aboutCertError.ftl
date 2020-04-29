@@ -55,3 +55,42 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Vottunarkeðja (certificate chain):
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Get ekki tengst
+deniedPortAccess-title = Aðgangur að gátt er ekki leyfður
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Við eigum í einhverjum erfiðleikum með að finna þetta vefsvæði.
+fileNotFound-title = Skrá fannst ekki
+fileAccessDenied-title = Aðgangur að skránni ekki leyfður
+generic-title = Ææ.
+captivePortal-title = Innskráning á net
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm. Þessi slóð virðist ekki vera rétt.
+netInterrupt-title = Tenging slitnaði
+notCached-title = Skjal er útrunnið
+netOffline-title = Ónettengdur hamur
+contentEncodingError-title = Kóðunarvilla
+unsafeContentType-title = Óörugg skráartegund
+netReset-title = Tenging slitnaði
+netTimeout-title = Tengingin svaraði ekki tímanlega
+unknownProtocolFound-title = Óþekkt samskiptaregla
+proxyConnectFailure-title = Milliþjónn neitar tengingum
+proxyResolveFailure-title = Fann ekki milliþjónn
+redirectLoop-title = Síðan er ekki að endurbeina rétt
+unknownSocketType-title = Rangt svar frá netþjóni
+nssFailure2-title = Örugg tenging mistókst
+cspBlocked-title = Lokað á vegna öryggisreglu
+xfoBlocked-title = Lokað fyrir X-Frame-Options regluna
+corruptedContentError-title = Villa skemmd gögn
+remoteXUL-title = Fjarlægt XUL
+sslv3Used-title = Get ekki tengst á öruggan hátt
+inadequateSecurityError-title = Tenging er ekki örugg
+blockedByPolicy-title = Lokuð síða
+clockSkewError-title = Klukkan í tölvunni þinni er vitlaus
+networkProtocolError-title = Villa í netsamskiptum
+nssBadCert-title = Viðvörun: Hugsanleg öryggisáhætta framundan
+nssBadCert-sts-title = Tengdist ekki: Mögulegt öryggisvandamál

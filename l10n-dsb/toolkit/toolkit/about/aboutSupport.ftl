@@ -297,6 +297,11 @@ sandbox-proc-type-content = wopśimjeśe
 sandbox-proc-type-file = datajowe wopśimjeśe
 sandbox-proc-type-media-plugin = medijowy tykac
 sandbox-proc-type-data-decoder = dekoděrowak datow
+startup-cache-title = Startowy pufrowak
+startup-cache-disk-cache-path = Sćažka platowego pufrowaka
+startup-cache-ignore-disk-cache = Platowy pufrowak ignorěrowaś
+startup-cache-found-disk-cache-on-init = Platowy pufrowak jo se namakał pśi inicializěrowanju
+startup-cache-wrote-to-disk-cache = Jo se napisało do platowego pufrowaka
 launcher-process-status-0 = Zmóžnjony
 launcher-process-status-1 = Zmólki dla znjemóžnjony
 launcher-process-status-2 = Z nuzkanim znjemóžnjony
@@ -320,6 +325,7 @@ touch-enabled = zapódaśe pśez dotyknjenje zmóžnjone
 drag-enabled = śěgnjenje suwańskeje rědki zmóžnjone
 keyboard-enabled = tastatura zmóžnjona
 autoscroll-enabled = awtomatiske kulanje zmóžnjone
+zooming-enabled = pózlažke šćipate skalěrowanje zmóžnjone
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

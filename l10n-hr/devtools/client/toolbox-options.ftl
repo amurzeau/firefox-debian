@@ -9,7 +9,7 @@
 ## Default Developer Tools section
 
 # The heading
-options-select-default-tools-label = Zadani programerski alati
+options-select-default-tools-label = Standardni programerski alati
 # The label for the explanation of the * marker on a tool which is currently not supported
 # for the target of the toolbox.
 options-tool-not-supported-label = * Nije podržano za trenutni cilj alatne trake
@@ -37,7 +37,7 @@ options-collapse-attrs-tooltip =
 
 ## "Default Color Unit" options for the Inspector
 
-options-default-color-unit-label = Zadana jedinica boje
+options-default-color-unit-label = Standardna jedinica boje
 options-default-color-unit-authored = Autor
 options-default-color-unit-hex = Hex
 options-default-color-unit-hsl = HSL(A)
@@ -81,7 +81,7 @@ options-sourceeditor-expandtab-tooltip =
 options-sourceeditor-expandtab-label = Uvlake sa razmakom
 options-sourceeditor-tabsize-label = Veličina tabulatora
 options-sourceeditor-keybinding-label = Tipkovnički prečaci
-options-sourceeditor-keybinding-default-label = Zadano
+options-sourceeditor-keybinding-default-label = Standardno
 
 ## Advanced section
 
@@ -89,6 +89,8 @@ options-sourceeditor-keybinding-default-label = Zadano
 options-context-advanced-settings = Napredne postavke
 # The label for the checkbox that toggles the HTTP cache on or off
 options-disable-http-cache-label = Onemogući HTTP predmemoriju (kad je otvorena alatna kutija)
+options-disable-http-cache-tooltip =
+    .title = Uključivanjem ove opcije, onemogućit će se HTTP predmemorija za sve kartice na kojima su otvoreni alati. Ova opcije nema utjecaja ne radne procese.
 # The label for checkbox that toggles JavaScript on or off
 options-disable-javascript-label = Onemogući JavaScript *
 options-disable-javascript-tooltip =
@@ -105,6 +107,10 @@ options-enable-remote-tooltip =
 options-enable-service-workers-http-label = Uključi radne procese usluge putem HTTP-a (kad je alatna traka otvorena)
 options-enable-service-workers-http-tooltip =
     .title = Uključivanje ove opcije omogućit će korištenje radne procese usluge putem HTTP-a za sve kartice koje imaju otvorenu alatnu traku.
+# The label for the checkbox that toggles source maps in all tools.
+options-source-maps-label = Aktiviraj mapiranja izvora
+options-source-maps-tooltip =
+    .title = Ako aktiviraš ovu opciju, izvori će se mapirati u alatima.
 # The message shown for settings that trigger page reload
 options-context-triggers-page-refresh = * Samo trenutna sesija, ponovo učitava stranicu
 # The label for the checkbox that toggles the display of the platform data in the

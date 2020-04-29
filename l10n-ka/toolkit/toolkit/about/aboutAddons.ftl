@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = დამატების დაყენება ფაილის მეშვეობით…
     .accesskey = ფ
 help-button = დამატებების მხარდაჭერა
+sidebar-help-button-title =
+    .title = დამატებების მხარდაჭერა
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } პარამეტრები
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = ხელსაწყოები ყველა დამატებისთვის
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } პარამეტრები
+           *[other] { -brand-short-name } პარამეტრები
+        }
 show-unsigned-extensions-button =
     .label = ზოგიერთი გაფართოება ვერ გადამოწმდა
 show-all-extensions-button =
@@ -170,6 +178,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = ხელმისწვდომი განახლებები
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = შემოთავაზებები
+addon-category-discover-title =
+    .title = შემოთავაზებები
+addon-category-extension = გაფართოებები
+addon-category-extension-title =
+    .title = გაფართოებები
+addon-category-theme = თემები
+addon-category-theme-title =
+    .title = თემები
+addon-category-plugin = მოდულები
+addon-category-plugin-title =
+    .title = მოდულები
+addon-category-dictionary = ლექსიკონები
+addon-category-dictionary-title =
+    .title = ლექსიკონები
+addon-category-locale = ენები
+addon-category-locale-title =
+    .title = ენები
+addon-category-available-updates = ხელმისწვდომი განახლებები
+addon-category-available-updates-title =
+    .title = ხელმისწვდომი განახლებები
+addon-category-recent-updates = ბოლო განახლებები
+addon-category-recent-updates-title =
+    .title = ბოლო განახლებები
 
 ## These are global warnings
 
@@ -282,6 +314,7 @@ shortcuts-no-commands = სწრაფი ღილაკები არ ა�
 shortcuts-input =
     .placeholder = სწრაფი ღილაკის აკრეფა
 shortcuts-browserAction = გაფართოების ამოქმედება
+shortcuts-browserAction2 = ხელსაწყოთა ზოლზე ღილაკის ამოქმედება
 shortcuts-pageAction = გვერდზე მოქმედების ჩართვა
 shortcuts-sidebarAction = გვერდითა ზოლის გამოჩენა/დამალვა
 shortcuts-modifier-mac = გამოყენებული იყოს Ctrl, Alt, ან ⌘
@@ -306,6 +339,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = ნაკლების ჩვენება
 go-back-button =
     .tooltiptext = უკან გადასვლა
+header-back-button =
+    .title = უკან გადასვლა
 
 ## Recommended add-ons page
 

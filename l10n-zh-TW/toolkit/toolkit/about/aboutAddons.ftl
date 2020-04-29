@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = 從檔案安裝附加元件…
     .accesskey = I
 help-button = 附加元件支援
+sidebar-help-button-title =
+    .title = 附加元件支援
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } 選項
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = 所有附加元件的工具
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } 選項
+           *[other] { -brand-short-name } 偏好設定
+        }
 show-unsigned-extensions-button =
     .label = 無法驗證某些擴充套件
 show-all-extensions-button =
@@ -166,6 +174,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = 可用的更新
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = 推薦項目
+addon-category-discover-title =
+    .title = 推薦項目
+addon-category-extension = 擴充套件
+addon-category-extension-title =
+    .title = 擴充套件
+addon-category-theme = 佈景主題
+addon-category-theme-title =
+    .title = 佈景主題
+addon-category-plugin = 外掛程式
+addon-category-plugin-title =
+    .title = 外掛程式
+addon-category-dictionary = 字典
+addon-category-dictionary-title =
+    .title = 字典
+addon-category-locale = 語言套件
+addon-category-locale-title =
+    .title = 語言套件
+addon-category-available-updates = 可用的更新
+addon-category-available-updates-title =
+    .title = 可用的更新
+addon-category-recent-updates = 最近的更新
+addon-category-recent-updates-title =
+    .title = 最近的更新
 
 ## These are global warnings
 
@@ -278,6 +310,7 @@ shortcuts-no-commands = 下列擴充套件沒有快速鍵:
 shortcuts-input =
     .placeholder = 輸入快速鍵
 shortcuts-browserAction = 啟用快速鍵
+shortcuts-browserAction2 = 開啟工具列按鈕
 shortcuts-pageAction = 啟用頁面操作
 shortcuts-sidebarAction = 切換側邊欄
 shortcuts-modifier-mac = 包含 Ctrl、Alt 或 ⌘
@@ -302,6 +335,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = 顯示更少
 go-back-button =
     .tooltiptext = 回上一頁
+header-back-button =
+    .title = 回上一頁
 
 ## Recommended add-ons page
 

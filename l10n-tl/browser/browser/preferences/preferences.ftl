@@ -186,8 +186,8 @@ containers-remove-alert-msg =
         [one] Kapag tinanggal mo ngayon ang Container na ito, may { $count } container tab na isasara. Sigurado ka bang gusto mong tanggalin ang Container na ito?
        *[other] Kapag tinanggal mo ngayon ang Container na ito, may { $count } container tab na isasara. Sigurado ka bang gusto mong tanggalin ang Container na ito?
     }
-containers-remove-ok-button = Alisin ang Lalagyan na Ito
-containers-remove-cancel-button = Huwag alisin ang Lalagyan na ito
+containers-remove-ok-button = Alisin ang Container na Ito
+containers-remove-cancel-button = Huwag alisin ang Container na ito
 
 ## General Section - Language & Appearance
 
@@ -780,6 +780,15 @@ forms-master-pw-change =
 forms-master-pw-fips-title = Kasalukuyang nasa FIPS mode ka.  Nangangailangan ang FIPS ng isang may laman na Master Password.
 forms-master-pw-fips-desc = Nabigo ang Pagpalit ng Password
 
+## OS Authentication dialog
+
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = lumikha ng Master Password
+master-password-os-auth-dialog-caption = { -brand-full-name }
+
 ## Privacy Section - History
 
 history-header = Kasaysayan
@@ -850,6 +859,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Mga cross-site tracker
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Mga cross-site at social media tracker
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Mga cross-site at social media tracker, at ihiwalay ang mga natitirang cookie
 sitedata-option-block-unvisited =
     .label = Mga cookie na galing sa mga hindi pa nabisitang website
 sitedata-option-block-all-third-party =

@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Setja inn viðbót frá skrá…
     .accesskey = i
 help-button = Viðbótastuðningur
+sidebar-help-button-title =
+    .title = Viðbótastuðningur
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } Valmynd
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Verkfæri fyrir allar viðbætur
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } Valmynd
+           *[other] { -brand-short-name } Valkostir
+        }
 show-unsigned-extensions-button =
     .label = Ekki tókst að staðfesta sumar viðbætur
 show-all-extensions-button =
@@ -145,6 +153,27 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Fáanlegar uppfærslur
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-extension = Viðbætur
+addon-category-extension-title =
+    .title = Viðbætur
+addon-category-theme = Þema
+addon-category-theme-title =
+    .title = Þema
+addon-category-plugin = Tengiforrit
+addon-category-plugin-title =
+    .title = Tengiforrit
+addon-category-dictionary = Orðabækur
+addon-category-dictionary-title =
+    .title = Orðabækur
+addon-category-locale = Tungumál
+addon-category-locale-title =
+    .title = Tungumál
+addon-category-available-updates = Fáanlegar uppfærslur
+addon-category-available-updates-title =
+    .title = Fáanlegar uppfærslur
+addon-category-recent-updates = Nýlegar uppfærslur
+addon-category-recent-updates-title =
+    .title = Nýlegar uppfærslur
 
 ## These are global warnings
 
@@ -264,6 +293,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Sýna minna
 go-back-button =
     .tooltiptext = Til baka
+header-back-button =
+    .title = Til baka
 
 ## Recommended add-ons page
 
