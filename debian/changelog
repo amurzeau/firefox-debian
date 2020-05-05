@@ -1,3 +1,19 @@
+firefox (76.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fixes for mfsa2020-16, also known as:
+    CVE-2020-12387, CVE-2020-6831, CVE-2020-12390, CVE-2020-12391,
+    CVE-2020-12392, CVE-2020-12394, CVE-2020-12395, CVE-2020-12396.
+
+  * debian/control*: Bump nss build dependency.
+  * debian/browser.install.in: Don't install blocklist.xml, it's not there
+    anymore.
+
+  * config/recurse.mk: Don't depend on in-tree NSS/NSPR when building against
+    system NSS/NSPR. bz#1634926.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 06 May 2020 05:41:56 +0900
+
 firefox (75.0-2) unstable; urgency=medium
 
   * build/moz.configure/util.configure: In configure, pass extra compiler
