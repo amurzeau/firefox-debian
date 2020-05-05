@@ -1,3 +1,11 @@
+firefox-esr (68.8.0esr-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fixes for mfsa2020-17, also known as:
+    CVE-2020-12387, CVE-2020-6831, CVE-2020-12392, CVE-2020-12395.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 06 May 2020 05:29:30 +0900
+
 firefox-esr (68.7.0esr-1) unstable; urgency=medium
 
   * New upstream release
