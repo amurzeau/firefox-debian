@@ -55,3 +55,43 @@ cert-error-details-hsts-label = Seguridad de transporte estricto HTTP: { $hasHST
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Cadena de certificados:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = No se puede conectar
+deniedPortAccess-title = Esta dirección está restringida
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Hmm. Estamos teniendo problemas encontrando ese sitio.
+fileNotFound-title = Archivo no encontrado
+fileAccessDenied-title = Acceso denegado al archivo
+generic-title = Oops.
+captivePortal-title = Ingresar a una red
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm, esa dirección no parece estar bien.
+netInterrupt-title = La conexión fue interrumpida
+notCached-title = Documento expirado
+netOffline-title = Modo sin conexión a la red
+contentEncodingError-title = Error de codificación de contenido
+unsafeContentType-title = Tipo de archivo inseguro
+netReset-title = La conexión fue restablecida
+netTimeout-title = La conexión tardó demasiado tiempo
+unknownProtocolFound-title = La dirección no fue comprendida
+proxyConnectFailure-title = El servidor proxy está rechazando las conexiones
+proxyResolveFailure-title = No se puede encontrar el servidor proxy
+redirectLoop-title = La página no está siendo redireccionada correctamente
+unknownSocketType-title = Respuesta inesperada del servidor
+nssFailure2-title = Fallo en conexión segura
+cspBlocked-title = Bloqueado por política de seguridad de contenido
+xfoBlocked-title = Bloqueado por la política de X-Frame-Options
+corruptedContentError-title = Error de contenido corrupto
+remoteXUL-title = XUL remoto
+sslv3Used-title = No se puede conectar de forma segura
+inadequateSecurityError-title = La conexión no es segura
+blockedByPolicy-title = Página bloqueada
+clockSkewError-title = El reloj de la computadora está equivocado
+networkProtocolError-title = Error de protocolo de red
+nssBadCert-title = Advertencia: Potencial riesgo de seguridad próximo
+nssBadCert-sts-title = No se conectó: Posible problema de seguridad
+certerror-mitm-title = El software está impidiendo que { -brand-short-name } se conecte a este sitio de manera segura

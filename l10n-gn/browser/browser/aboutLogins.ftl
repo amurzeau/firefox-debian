@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Poravorãme jeike
-# This menuitem is only visible on Windows
-menu-menuitem-import = Ñe'ẽñemi jegueru...
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Egueru ambue kundahára guive…
 menu-menuitem-preferences =
@@ -50,6 +48,7 @@ login-list-sort-label-text = Omoĩporã:
 login-list-name-option = Téra  (A-Z)
 login-list-name-reverse-option = Téra (Z-A)
 login-list-breached-option = Ñanduti renda imarãmava
+about-logins-login-list-alerts-option = Kyhyjerã
 login-list-last-changed-option = Ñemoambue ipyahuvéva
 login-list-last-used-option = Ojepurúva ipahaitépe
 login-list-intro-title = Ndojejuhúi jeikeha
@@ -61,6 +60,8 @@ login-list-item-subtitle-new-login = Emoinge nde reraite tembiapo ñepyrũme
 login-list-item-subtitle-missing-username = (puruhára hera'ỹva)
 about-logins-list-item-breach-icon =
     .title = Ñanduti renda imarãva
+about-logins-list-item-vulnerable-password-icon =
+    .title = Ñe’ẽñemi ivaikuaáva
 
 ## Introduction screen
 
@@ -160,10 +161,25 @@ confirm-discard-changes-dialog-confirm-button = Hejarei
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Ñanduti renda ñembyai
 breach-alert-text = Umi ñe’ẽñemi oñembogua térã oñemonda ko ñanduti rendágui hekopyahu rire ne mba’ekuaarã rembiapo ñepyrũ. Emoambue ne ñe’ẽñemi emo’ã hag̃ua ne mba’ete.
 breach-alert-link = Eñemomaranduve ko mba’evai rehegua.
 breach-alert-dismiss =
     .title = Emboty ko kyhyjeha
+about-logins-breach-alert-date = Ko jejapo’ỹ oiko { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Eho { $hostname }
+about-logins-breach-alert-learn-more-link = Kuaave
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Ñe’ẽñemi ivaikuaáva
+about-logins-vulnerable-alert-text2 = Ko ñe’ẽñemi ojepuru ambue mba’etépe ikatúva mba’ekuaarã ombyai. Eipurujey terachaukaha ombyaikuaáva opaite mba’etépe. Emoambue ko ñe’ẽñemi.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Eho { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Kuaave
 
 ## Error Messages
 

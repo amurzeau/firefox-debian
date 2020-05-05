@@ -55,3 +55,43 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Łańcuch certyfikatu:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Nie udało się nawiązać połączenia
+deniedPortAccess-title = Zastrzeżony adres
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Niestety, nie udało się odnaleźć tej strony
+fileNotFound-title = Nie odnaleziono pliku
+fileAccessDenied-title = Odmowa dostępu do pliku
+generic-title = Wystąpił błąd
+captivePortal-title = Logowanie do sieci
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Niestety, ten adres nie wygląda dobrze
+netInterrupt-title = Przerwane połączenie
+notCached-title = Dokument wygasł
+netOffline-title = Tryb offline
+contentEncodingError-title = Błąd kodowania zawartości
+unsafeContentType-title = Niebezpieczny typ pliku
+netReset-title = Przerwane połączenie
+netTimeout-title = Przekroczono limit czasu połączenia
+unknownProtocolFound-title = Nieznany protokół
+proxyConnectFailure-title = Serwer proxy odrzuca połączenia
+proxyResolveFailure-title = Nie odnaleziono serwera proxy
+redirectLoop-title = Pętla przekierowań
+unknownSocketType-title = Nieoczekiwana odpowiedź serwera
+nssFailure2-title = Nie udało się nawiązać bezpiecznego połączenia
+cspBlocked-title = Zablokowane przez politykę bezpieczeństwa treści
+xfoBlocked-title = Zablokowane przez politykę „X-Frame-Options”
+corruptedContentError-title = Błąd: treść uszkodzona
+remoteXUL-title = Zdalna treść XUL
+sslv3Used-title = Nie udało się nawiązać bezpiecznego połączenia
+inadequateSecurityError-title = Połączenie nie gwarantuje bezpieczeństwa
+blockedByPolicy-title = Zablokowana strona
+clockSkewError-title = Zegar komputera wskazuje błędną datę
+networkProtocolError-title = Błąd protokołu sieciowego
+nssBadCert-title = Ostrzeżenie: potencjalne zagrożenie bezpieczeństwa
+nssBadCert-sts-title = Nie połączono: potencjalne zagrożenie bezpieczeństwa
+certerror-mitm-title = Oprogramowanie uniemożliwia przeglądarce { -brand-short-name } bezpieczne połączenie ze stroną

@@ -220,3 +220,24 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Дивитись все
     .accesskey = в
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = Легко створюйте надійні паролі
+cfr-whatsnew-lockwise-body = Складно вигадати унікальні, надійні паролі для кожного облікового запису. Створюючи пароль, виберіть поле пароля, щоб скористатися захищеним, згенерованим паролем від { -brand-shorter-name }.
+cfr-whatsnew-lockwise-icon-alt = Піктограма { -lockwise-brand-short-name }
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = Отримуйте попередження про вразливі паролі
+cfr-whatsnew-passwords-body = Хакери знають, що люди користуються однаковими паролями до різних облікових записів. Якщо ви користуєтеся  однаковими паролями на кількох сайтах і з одного з цих сайтів було викрадено дані користувачів, ви побачите сповіщення у { -lockwise-brand-short-name } з порадою змінити свій пароль на цих сайтах.
+cfr-whatsnew-passwords-icon-alt = Піктограма ключа для вразливого пароля
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = Увімкніть повноекранний режим зображення в зображенні
+cfr-whatsnew-pip-fullscreen-body = Відтепер, коли ви переглядаєте відео у відкріпленому вікні, можете двічі клацнути по ньому, щоб перейти у повноекранний режим.
+cfr-whatsnew-pip-fullscreen-icon-alt = Піктограма зображення в зображенні

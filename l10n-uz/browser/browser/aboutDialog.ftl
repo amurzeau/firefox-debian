@@ -13,20 +13,20 @@ update-updateButton =
     .accesskey = R
 update-checkingForUpdates = Yangilanishlar uchun tekshirish...
 update-downloading = <img data-l10n-name="icon"/>Yangilanish yuklab olinmoqda —<label data-l10n-name="download-status"/>
-update-applying = Yangilanish qo‘llanmoqda…
+update-applying = Yangilanish qoʻllanilmoqda…
 update-failed = Yangilab bo‘lmadi.<label data-l10n-name="failed-link">So‘nggi versiyani yuklab olish</label>
-update-failed-main = Yangilab bo‘lmadi.<a data-l10n-name="failed-link-main">So‘nggi versiyani yuklab olish</a>
-update-adminDisabled = Yangilanishlar tizimingiz administratori tomonidan o‘chirib qo‘yilgan
+update-failed-main = Yangilanmadi.<a data-l10n-name="failed-link-main">Soʻnggi versiyani yuklab olish</a>
+update-adminDisabled = Yangilanishlar tizimingiz administratori tomonidan oʻchirib qoʻyilgan
 update-noUpdatesFound = { -brand-short-name } yangilangan
 update-otherInstanceHandlingUpdates = { -brand-short-name } boshqa manbadan yangilanadi
 update-manual = Yangilanishlar mavjud:<label data-l10n-name="manual-link"/>
-update-unsupported = Siz keyingi yangilanishlarni ushbu tizimda bajara olmaysiz. <label data-l10n-name="unsupported-link">Ko‘proq o‘rganish</label>
+update-unsupported = Siz keyingi yangilanishlarni ushbu tizimda bajara olmaysiz. <label data-l10n-name="unsupported-link">Batafsil</label>
 update-restarting = Qayta ishga tushirilmoqda…
 channel-description = Siz hozirda <label data-l10n-name="current-channel"></label> yangilash kanalidasiz.
 warningDesc-version = { -brand-short-name } sinovdagi versiya, shuning uchun yaxshi ishlamasligi mumkin.
 community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> -      <label data-l10n-name="community-exp-creditsLink">global jamoasi tomonidan tuzilgan.</label> Ushbu jamoa internetga har qanday inson kira olishini osonlashtirish uchun hamkorlikda ishlaydi.
-community-2 = { -brand-short-name } –  <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label>, a <label data-l10n-name="community-creditsLink">global jamoasii tomonidan tuzilgan. </label> Ular internetga har qanday inson kira olishini osonlashtirish uchun hamorlikda ishlashadi.
-helpus = Yordam bermoqchimisiz? <label data-l10n-name="helpus-donateLink">Xayriya qiling</label> yoki <label data-l10n-name="helpus-getInvolvedLink">jamoaga qo‘shiling!</label>
+community-2 = { -brand-short-name } <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label> <label data-l10n-name="community-creditsLink">global jamoasi tomonidan tuzilgan. </label> Ular internetga har qanday inson kira olishini osonlashtirish uchun hamkorlikda ishlashadi.
+helpus = Yordam bermoqchimisiz? <label data-l10n-name="helpus-donateLink">Xayriya qiling</label> yoki <label data-l10n-name="helpus-getInvolvedLink">jamoaga qoʻshiling!</label>
 bottomLinks-license = Litsenziya ma’lumotlari
 bottomLinks-rights = Foydalanish shartlari
 bottomLinks-privacy = Maxfiylik siyosati

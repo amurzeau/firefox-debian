@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Адкрыць меню
-# This menuitem is only visible on Windows
-menu-menuitem-import = Імпартаваць паролі…
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Імпартаваць з іншага браўзера…
 menu-menuitem-preferences =
@@ -51,6 +49,7 @@ login-list-sort-label-text = Парадкаванне:
 login-list-name-option = Назва (А-Я)
 login-list-name-reverse-option = Назва (Я-А)
 login-list-breached-option = Узламаныя сайты
+about-logins-login-list-alerts-option = Папярэджанні
 login-list-last-changed-option = Апошняе змяненне
 login-list-last-used-option = Апошняе выкарыстанне
 login-list-intro-title = Лагіны не знойдзены
@@ -62,6 +61,8 @@ login-list-item-subtitle-new-login = Увядзіце свае ўліковыя 
 login-list-item-subtitle-missing-username = (без імя карыстальніка)
 about-logins-list-item-breach-icon =
     .title = Узламаны сайт
+about-logins-list-item-vulnerable-password-icon =
+    .title = Уразлівы пароль
 
 ## Introduction screen
 
@@ -161,10 +162,25 @@ confirm-discard-changes-dialog-confirm-button = Адхіліць
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Уцечка з сайта
 breach-alert-text = З моманту апошняга абнаўлення дадзеных для ўваходу, паролі з гэтага сайта ўцеклі ці былі выкрадзены. Змяніце пароль, каб абараніць свой уліковы запіс.
 breach-alert-link = Даведацца больш пра гэту ўцечку.
 breach-alert-dismiss =
     .title = Закрыць гэта папярэджанне
+about-logins-breach-alert-date = Гэта ўцечка здарылася { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Перайсці да { $hostname }
+about-logins-breach-alert-learn-more-link = Падрабязней
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Уразлівы пароль
+about-logins-vulnerable-alert-text2 = Гэты пароль быў выкарыстаны ў іншым уліковым запісе, які, імаверна, патрапіў ва ўцечку звестак. Паўторнае выкарыстанне ўліковых дадзеных ставіць пад пагрозу ўсе вашы ўліковыя запісы. Змяніце гэты пароль.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Перайсці да { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Падрабязней
 
 ## Error Messages
 

@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = 메뉴 열기
-# This menuitem is only visible on Windows
-menu-menuitem-import = 비밀번호 가져오기…
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = 다른 브라우저에서 가져오기…
 menu-menuitem-preferences =
@@ -34,8 +32,8 @@ menu-menuitem-preferences =
        *[other] 설정
     }
 about-logins-menu-menuitem-help = 도움말
-menu-menuitem-android-app = Android 용 { -lockwise-brand-short-name }
-menu-menuitem-iphone-app = iPhone과 iPad 용 { -lockwise-brand-short-name }
+menu-menuitem-android-app = Android용 { -lockwise-brand-short-name }
+menu-menuitem-iphone-app = iPhone과 iPad용 { -lockwise-brand-short-name }
 
 ## Login List
 
@@ -45,10 +43,11 @@ login-list-count =
     { $count ->
        *[other] { $count }회 로그인
     }
-login-list-sort-label-text = 정렬 방식:
+login-list-sort-label-text = 정렬 기준:
 login-list-name-option = 이름 (A-Z)
 login-list-name-reverse-option = 이름 (Z-A)
 login-list-breached-option = 유출된 웹 사이트
+about-logins-login-list-alerts-option = 알림
 login-list-last-changed-option = 마지막 수정
 login-list-last-used-option = 마지막 사용
 login-list-intro-title = 로그인을 찾을 수 없음
@@ -60,6 +59,8 @@ login-list-item-subtitle-new-login = 로그인 자격 증명을 입력하세요
 login-list-item-subtitle-missing-username = (사용자 이름 없음)
 about-logins-list-item-breach-icon =
     .title = 유출된 웹 사이트
+about-logins-list-item-vulnerable-password-icon =
+    .title = 취약한 비밀번호
 
 ## Introduction screen
 
@@ -159,10 +160,25 @@ confirm-discard-changes-dialog-confirm-button = 버리기
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = 웹 사이트 유출
 breach-alert-text = 마지막 로그인 정보를 업데이트 한 후 이 웹 사이트에서 비밀번호가 유출되거나 도난당했습니다. 계정을 보호하기 위해 비밀번호를 변경하세요.
 breach-alert-link = 이 유출에 대해 더 알아보기.
 breach-alert-dismiss =
     .title = 이 알림 닫기
+about-logins-breach-alert-date = 이 유출은 { DATETIME($date, day: "numeric", month: "long", year: "numeric") }에 발생함
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = { $hostname }(으)로 이동
+about-logins-breach-alert-learn-more-link = 더 알아보기
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = 취약한 비밀번호
+about-logins-vulnerable-alert-text2 = 이 비밀번호는 데이터 유출 가능성이 있는 다른 계정에서 사용되었습니다. 자격 증명을 재사용하면 모든 계정이 위험에 노출됩니다. 이 비밀번호를 변경하세요.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = { $hostname }(으)로 이동
+about-logins-vulnerable-alert-learn-more-link = 더 알아보기
 
 ## Error Messages
 

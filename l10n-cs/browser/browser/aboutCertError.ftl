@@ -61,3 +61,49 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Řetězec certifikátů:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Chyba spojení
+deniedPortAccess-title = Omezení přístupu k adrese
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Hmm, tuto stránku se nám nedaří najít.
+fileNotFound-title = Soubor nenalezen
+fileAccessDenied-title = Přístup k souboru byl odepřen
+generic-title = Nepodařilo se dokončit požadavek
+captivePortal-title = Přihlásit se do sítě
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm, tato adresa se nezdá být v pořádku.
+netInterrupt-title = Spojení bylo přerušeno
+notCached-title = Platnost dokumentu vypršela
+netOffline-title = Režim offline
+contentEncodingError-title = Chyba znakové sady obsahu
+unsafeContentType-title = Nebezpečný typ souboru
+netReset-title = Spojení přerušeno
+netTimeout-title = Vypršel čas spojení
+unknownProtocolFound-title = Adresa nebyla rozpoznána
+proxyConnectFailure-title = Proxy server odmítl spojení
+proxyResolveFailure-title = Proxy server nenalezen
+redirectLoop-title = Smyčka při přesměrování
+unknownSocketType-title = Neplatná odpověď serveru
+nssFailure2-title = Chyba zabezpečeného spojení
+cspBlocked-title = Zablokováno dle bezpečnostních pravidel obsahu
+xfoBlocked-title = Blokováno pravidlem X-Frame-Options
+corruptedContentError-title = Chyba v obsahu stránky
+remoteXUL-title = Vzdálené XUL
+sslv3Used-title = Nelze navázat zabezpečené spojení
+inadequateSecurityError-title = Vaše připojení není zabezpečené
+blockedByPolicy-title = Zablokovaná stránka
+clockSkewError-title = Hodiny ve vašem počítači jsou špatně nastavené
+networkProtocolError-title = Chyba síťového protokolu
+nssBadCert-title = Varování: možné bezpečnostní riziko
+nssBadCert-sts-title = Nepřipojeno: Možný bezpečnostní problém
+certerror-mitm-title =
+    Software brání { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "dat") }
+        [feminine] { -brand-short-name(case: "dat") }
+        [neuter] { -brand-short-name(case: "dat") }
+       *[other] aplikaci { -brand-short-name }
+    } v navázání zabezpečeného spojení s tímto webem

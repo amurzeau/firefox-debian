@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Installer tilføjelse fra fil…
     .accesskey = I
 help-button = Hjælp til tilføjelser
+sidebar-help-button-title =
+    .title = Hjælp til tilføjelser
 preferences =
     { PLATFORM() ->
         [windows] Indstillinger for { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Indstillinger for alle tilføjelser
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Indstillinger for { -brand-short-name }
+           *[other] Indstillinger for { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Nogle udvidelser kunne ikke bekræftes
 show-all-extensions-button =
@@ -176,6 +184,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Tilgængelige opdateringer
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Anbefalinger
+addon-category-discover-title =
+    .title = Anbefalinger
+addon-category-extension = Udvidelser
+addon-category-extension-title =
+    .title = Udvidelser
+addon-category-theme = Temaer
+addon-category-theme-title =
+    .title = Temaer
+addon-category-plugin = Plugins
+addon-category-plugin-title =
+    .title = Plugins
+addon-category-dictionary = Ordbøger
+addon-category-dictionary-title =
+    .title = Ordbøger
+addon-category-locale = Sprog
+addon-category-locale-title =
+    .title = Sprog
+addon-category-available-updates = Tilgængelige opdateringer
+addon-category-available-updates-title =
+    .title = Tilgængelige opdateringer
+addon-category-recent-updates = Seneste opdateringer
+addon-category-recent-updates-title =
+    .title = Seneste opdateringer
 
 ## These are global warnings
 
@@ -288,6 +320,7 @@ shortcuts-no-commands = Følgende udvidelser han ingen genveje:
 shortcuts-input =
     .placeholder = Indtast en genvej.
 shortcuts-browserAction = Aktiver udvidelse
+shortcuts-browserAction2 = Aktiver knap på værktøjslinjen
 shortcuts-pageAction = Aktiver sidehandling
 shortcuts-sidebarAction = Vis/skjul sidepanelet
 shortcuts-modifier-mac = Inkluder Ctrl, Alt eller ⌘
@@ -312,6 +345,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Vis færre
 go-back-button =
     .tooltiptext = Gå tilbage
+header-back-button =
+    .title = Gå tilbage
 
 ## Recommended add-ons page
 
@@ -357,11 +392,11 @@ remove-addon-button = Fjern
 remove-addon-disabled-button = Kan ikke fjernes <a data-l10n-name="link">Læs hvorfor</a>
 disable-addon-button = Deaktiver
 enable-addon-button = Aktiver
+expand-addon-button = Flere indstillinger
 # This is used for the toggle on the extension card, it's a checkbox and this
 # is always its label.
 extension-enable-addon-button-label =
     .aria-label = Aktiver
-expand-addon-button = Flere indstillinger
 preferences-addon-button =
     { PLATFORM() ->
         [windows] Indstillinger
@@ -456,7 +491,6 @@ recommended-theme-1 = Er du i det kreative hjørne? <a data-l10n-name="link">Byg
 ## Page headings
 
 extension-heading = Håndter dine udvidelser
-default-heading-search-label = Find flere udvidelser
 theme-heading = Håndter dine temaer
 plugin-heading = Håndter dine plugins
 dictionary-heading = Håndter dine ordbøger
@@ -466,6 +500,7 @@ discover-heading = Tilpas { -brand-short-name }
 shortcuts-heading = Håndter genveje til dine udvidelser
 theme-heading-search-label = Find flere temaer
 extension-heading-search-label = Find flere udvidelser
+default-heading-search-label = Find flere udvidelser
 addons-heading-search-input =
     .placeholder = Søg på addons.mozilla.org
 addon-page-options-button =

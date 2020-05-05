@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Kiegészítő telepítése fájlból…
     .accesskey = f
 help-button = Kiegészítő támogatás
+sidebar-help-button-title =
+    .title = Kiegészítő támogatás
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } beállítások
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Eszközök minden kiegészítőhöz
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } beállítások
+           *[other] { -brand-short-name } beállítások
+        }
 show-unsigned-extensions-button =
     .label = Néhány kiegészítő nem ellenőrizhető
 show-all-extensions-button =
@@ -167,6 +175,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Elérhető frissítések
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Javaslatok
+addon-category-discover-title =
+    .title = Javaslatok
+addon-category-extension = Kiegészítők
+addon-category-extension-title =
+    .title = Kiegészítők
+addon-category-theme = Témák
+addon-category-theme-title =
+    .title = Témák
+addon-category-plugin = Bővítmények
+addon-category-plugin-title =
+    .title = Bővítmények
+addon-category-dictionary = Szótárak
+addon-category-dictionary-title =
+    .title = Szótárak
+addon-category-locale = Nyelvek
+addon-category-locale-title =
+    .title = Nyelvek
+addon-category-available-updates = Elérhető frissítések
+addon-category-available-updates-title =
+    .title = Elérhető frissítések
+addon-category-recent-updates = Legutóbbi frissítések
+addon-category-recent-updates-title =
+    .title = Legutóbbi frissítések
 
 ## These are global warnings
 
@@ -279,6 +311,7 @@ shortcuts-no-commands = A következő kiegészítők nem rendelkeznek gyorsbille
 shortcuts-input =
     .placeholder = Írjon be egy gyorsbillentyűt
 shortcuts-browserAction = Kiegészítő aktiválása
+shortcuts-browserAction2 = Eszköztárgomb aktiválása
 shortcuts-pageAction = Lapművelet aktiválása
 shortcuts-sidebarAction = Oldalsáv be/ki
 shortcuts-modifier-mac = Ctrl, Alt vagy ⌘ gombot tartalmaz
@@ -304,6 +337,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Kevesebb megjelenítése
 go-back-button =
     .tooltiptext = Ugrás vissza
+header-back-button =
+    .title = Ugrás vissza
 
 ## Recommended add-ons page
 

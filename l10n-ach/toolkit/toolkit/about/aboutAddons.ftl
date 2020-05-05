@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Ket med-ikome ki i pwail…
     .accesskey = K
 help-button = Kony me Med-ikome
+sidebar-help-button-title =
+    .title = Kony me Med-ikome
 tools-menu =
     .tooltiptext = Gintic pi med-ikome weng
 show-unsigned-extensions-button =
@@ -151,6 +153,27 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Ngec manyen matye
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-extension = Kube pa tic a kompiuta
+addon-category-extension-title =
+    .title = Kube pa tic a kompiuta
+addon-category-theme = Theme
+addon-category-theme-title =
+    .title = Theme
+addon-category-plugin = Rwaki iyie
+addon-category-plugin-title =
+    .title = Rwaki iyie
+addon-category-dictionary = Buk me gonyo nyukta
+addon-category-dictionary-title =
+    .title = Buk me gonyo nyukta
+addon-category-locale = Leb
+addon-category-locale-title =
+    .title = Leb
+addon-category-available-updates = Ngec manyen matye
+addon-category-available-updates-title =
+    .title = Ngec manyen matye
+addon-category-recent-updates = Ngec manyen ma cokki
+addon-category-recent-updates-title =
+    .title = Ngec manyen ma cokki
 
 ## These are global warnings
 

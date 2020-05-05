@@ -29,6 +29,8 @@ certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = გასაღებთა მიმოცვლის ჯგუფი
 certificate-viewer-key-id = გასაღების ID
 certificate-viewer-key-size = გასაღების ზომა
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-locality = რეგისტრ. ადგილი
 certificate-viewer-locality = ადგილსამყოფელი
 certificate-viewer-location = მდებარეობა
 certificate-viewer-logid = აღრიცხვის ID
@@ -62,7 +64,7 @@ certificate-viewer-business-category = ბიზნესის კატეგ�
 certificate-viewer-subject-name = სუბიექტის დასახელება
 certificate-viewer-issuer-name = გამომცემის დასახელება
 certificate-viewer-validity = ძალამოსილობა
-certificate-viewer-subject-alt-names = სუბიექტის შემცვლელი სახელები
+certificate-viewer-subject-alt-names = სუბიექტის სხვა სახელები
 certificate-viewer-public-key-info = საჯარო გასაღების მონაცემები
 certificate-viewer-miscellaneous = სხვადასხვა
 certificate-viewer-fingerprints = ანაბეჭდები
@@ -95,3 +97,16 @@ certificate-viewer-download-pem = PEM (სერტიფიკატი)
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (ჯაჭვი)
     .download = { $fileName }-chain.pem
+# The title attribute for Critical Extension icon
+certificate-viewer-critical-extension =
+    .title = ეს გაფართოება მიჩნეულია გადამწვეტად, რაც ნიშნავს, რომ კლიენტებმა უნდა უარყონ სერტიფიკატი, თუ მათთვის გაუგებარია.
+certificate-viewer-export = ცალკე შენახვა
+    .download = { $fileName }.pem
+
+## Labels for tabs displayed in stand-alone about:certificate page
+
+certificate-viewer-tab-mine = თქვენი სერტიფიკატები
+certificate-viewer-tab-people = ხალხი
+certificate-viewer-tab-servers = სერვერები
+certificate-viewer-tab-ca = გამომცემები
+certificate-viewer-tab-unkonwn = უცნობი

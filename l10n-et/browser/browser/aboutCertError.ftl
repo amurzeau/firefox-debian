@@ -55,3 +55,42 @@ cert-error-details-hsts-label = HTTP Strict Transport Security tehnoloogia: { $h
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning tehnoloogia: { $hasHPKP }
 cert-error-details-cert-chain-label = Sertifikaadiahel:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Viga ühendumisel
+deniedPortAccess-title = See aadress on keelatud
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Hmm. Meil on probleeme selle saidi leidmisel.
+fileNotFound-title = Faili ei leitud
+fileAccessDenied-title = Ligipääs failile keelati
+generic-title = Ups.
+captivePortal-title = Võrku sisenemine
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm. See aadress ei tundu õige.
+netInterrupt-title = Ühendus katkes
+notCached-title = Dokument aegus
+netOffline-title = Võrguta režiim
+contentEncodingError-title = Sisu kodeeringu viga
+unsafeContentType-title = Ohtlik faili tüüp
+netReset-title = Ühendus katkestati
+netTimeout-title = Ühendus aegus
+unknownProtocolFound-title = Aadress jäi arusaamatuks
+proxyConnectFailure-title = Puhverserver keeldub ühendustest
+proxyResolveFailure-title = Ei leitud puhverserverit
+redirectLoop-title = Veebileht pole korralikult ümber suunatud
+unknownSocketType-title = Ootamatu vastus serverilt
+nssFailure2-title = Turvalise ühenduse viga
+cspBlocked-title = Blokitud sisu kaitsva turvareegliga
+corruptedContentError-title = Vigane sisu
+remoteXUL-title = Remote XUL
+sslv3Used-title = Turvaline ühendumine pole võimalik
+inadequateSecurityError-title = Ühendus pole turvaline
+blockedByPolicy-title = Blokitud leht
+clockSkewError-title = Sinu arvuti aeg on vale
+networkProtocolError-title = Võrguprotokolli viga
+nssBadCert-title = Hoiatus: ees on ootamas võimalik turvarisk
+nssBadCert-sts-title = Ühendust ei loodud: võimalik turvarisk
+certerror-mitm-title = Tarkvara takistab { -brand-short-name }il selle saidiga turvalise ühenduse loomist

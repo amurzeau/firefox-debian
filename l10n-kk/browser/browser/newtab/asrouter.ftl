@@ -78,7 +78,7 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 
 ## Protections panel
 
-cfr-protections-panel-header = Бақыламай шолыңыз
+cfr-protections-panel-header = Бақылаусыз шолу
 cfr-protections-panel-body = Деректеріңізді тек өзіңіз үшін қалдырыңыз. { -brand-short-name } желіде сіздің соңыңыздан еретін ең кең тараған трекерлердің көбінен қорғайды.
 cfr-protections-panel-link-text = Көбірек білу
 
@@ -126,6 +126,7 @@ cfr-whatsnew-searchbar-title = Адрестік жолақ көмегімен а
 #   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
 cfr-whatsnew-searchbar-body-enginename = Көбірек қолданатын сайттарға адрестік жолағында бір шертумен өтіңіз. Нәрселерді { $searchEngineName } және шолу тарихы нәтижелерімен тезірек табыңыз.
 cfr-whatsnew-searchbar-body-generic = Көбірек қолданатын сайттарға адрестік жолағында бір шертумен өтіңіз. Нәрселерді шолу тарихы іздеу нәтижелерімен тезірек табыңыз.
+cfr-whatsnew-searchbar-body-topsites = Енді адрестік жолағын таңдасаңыз, ол топ сайттарыңыз бар сілтемелермен кеңейеді.
 cfr-whatsnew-searchbar-icon-alt-text = Үлкейту әйнегі таңбашасы
 
 ## Picture-in-Picture
@@ -209,3 +210,17 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Барлығын қарау
     .accesskey = р
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = Қауіпсіз парольдерді оңай жасау
+cfr-whatsnew-lockwise-icon-alt = { -lockwise-brand-short-name } таңбашасы
+
+## Vulnerable Passwords message
+
+
+## Picture-in-Picture fullscreen message
+

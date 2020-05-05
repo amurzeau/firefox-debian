@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Instalar complemento desde archivo…
     .accesskey = I
 help-button = Ayuda sobre complementos
+sidebar-help-button-title =
+    .title = Ayuda sobre complementos
 preferences =
     { PLATFORM() ->
         [windows] Opciones de { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Herramientas para todos los complementos
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Opciones de { -brand-short-name }
+           *[other] Preferencias de { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Algunos complementos no pudieron ser verificados
 show-all-extensions-button =
@@ -169,6 +177,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Actualizaciones disponibles
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Recomendaciones
+addon-category-discover-title =
+    .title = Recomendaciones
+addon-category-extension = Extensiones
+addon-category-extension-title =
+    .title = Extensiones
+addon-category-theme = Temas
+addon-category-theme-title =
+    .title = Temas
+addon-category-plugin = Plugins
+addon-category-plugin-title =
+    .title = Plugins
+addon-category-dictionary = Diccionarios
+addon-category-dictionary-title =
+    .title = Diccionarios
+addon-category-locale = Idiomas
+addon-category-locale-title =
+    .title = Idiomas
+addon-category-available-updates = Actualizaciones disponibles
+addon-category-available-updates-title =
+    .title = Actualizaciones disponibles
+addon-category-recent-updates = Actualizaciones recientes
+addon-category-recent-updates-title =
+    .title = Actualizaciones recientes
 
 ## These are global warnings
 
@@ -281,6 +313,7 @@ shortcuts-no-commands = Los siguientes complementos no tienen atajos de teclado:
 shortcuts-input =
     .placeholder = Escriba un atajo
 shortcuts-browserAction = Activar el complemento
+shortcuts-browserAction2 = Activar botón de barra de herramientas
 shortcuts-pageAction = Activar Acción de la página
 shortcuts-sidebarAction = Alternar la barra lateral
 shortcuts-modifier-mac = Incluir Ctrl, Alt o ⌘
@@ -306,6 +339,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Mostrar menos
 go-back-button =
     .tooltiptext = Retroceder
+header-back-button =
+    .title = Retroceder
 
 ## Recommended add-ons page
 

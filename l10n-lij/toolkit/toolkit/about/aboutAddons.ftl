@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Installa i conponenti azonti da 'n schedaio…
     .accesskey = I
 help-button = Sopòrto conponenti azonti
+sidebar-help-button-title =
+    .title = Sopòrto conponenti azonti
 tools-menu =
     .tooltiptext = Angæsi pe tutti i conponenti azonti
 show-unsigned-extensions-button =
@@ -144,6 +146,27 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Agiornamenti disponibili
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-extension = Estenscioin
+addon-category-extension-title =
+    .title = Estenscioin
+addon-category-theme = Temi
+addon-category-theme-title =
+    .title = Temi
+addon-category-plugin = Plugin
+addon-category-plugin-title =
+    .title = Plugin
+addon-category-dictionary = Diçionai
+addon-category-dictionary-title =
+    .title = Diçionai
+addon-category-locale = Lengoe
+addon-category-locale-title =
+    .title = Lengoe
+addon-category-available-updates = Agiornamenti disponibili
+addon-category-available-updates-title =
+    .title = Agiornamenti disponibili
+addon-category-recent-updates = Urtimi agiornamenti
+addon-category-recent-updates-title =
+    .title = Urtimi agiornamenti
 
 ## These are global warnings
 
@@ -268,6 +291,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Mostra meno
 go-back-button =
     .tooltiptext = Vanni inderê
+header-back-button =
+    .title = Vanni inderê
 
 ## Recommended add-ons page
 

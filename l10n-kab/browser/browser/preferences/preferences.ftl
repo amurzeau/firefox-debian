@@ -233,13 +233,13 @@ translate-exceptions =
     .label = Tisuraf…
     .accesskey = r
 check-user-spelling =
-    .label = Senqed taɣdira-inu mi ara ttaruɣ
+    .label = Senqed tira-iw ticki ttaruɣ
     .accesskey = q
 
 ## General Section - Files and Applications
 
 files-and-applications-title = Ifuyla d isnasen
-download-header = Isidar
+download-header = Isadaren
 download-save-to =
     .label = Sekles ifuyla ɣer
     .accesskey = S
@@ -496,7 +496,7 @@ home-prefs-highlights-option-visited-pages =
 home-prefs-highlights-options-bookmarks =
     .label = Ticraḍ n isebtar
 home-prefs-highlights-option-most-recent-download =
-    .label = Isidar imaynuten
+    .label = Isadaren imaynuten
 home-prefs-highlights-option-saved-to-pocket =
     .label = Isebtar yettwaḥerzen ar { -pocket-brand-name }
 # For the "Snippets" feature traditionally on about:home.
@@ -863,6 +863,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Ineḍfaṛen gar yismal
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Ineḍfaṛen gar yismal akked iẓeḍwa inmettiyen
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Ineḍfaren gar yismal d wid n yiẓeḍwa inmettiyen d uɛzal n yinagan n tuqqna i d-yeqqimen
 sitedata-option-block-unvisited =
     .label = Inagan n tuqqna seg ismal web ur yettwarzan ara
 sitedata-option-block-all-third-party =
@@ -899,7 +901,7 @@ addressbar-suggestions-settings = Snifel ismenyifen i yisumar n umsedday n unadi
 content-blocking-header = Asewḥel n ugbur
 content-blocking-section-description = Mmesten tabaḍnit-ik deg tunigin. Sewḥel igburen ur d-yettbanen ara, i k-yeṭṭafaṛen seg usmel ɣer wayeḍ daɣen ttwalin amaɣnu-ik. Sewḥel aḥric n yigburen-a i zemren ad sɣiwlen asali n yisebtar.
 content-blocking-enhanced-tracking-protection = Ammesten yettwaseǧhed mgal aḍfaṛ
-content-blocking-section-top-level-description = Inefḍfaṛen ad k-ḍefṛen srid akken ad leqḍen talɣut ɣef tnumi-ik n tunigin akked wayen tḥemmleḍ. { -brand-short-name } ad yessewḥel ddeqs n yineḍfaṛen-a akked yir iskripten.
+content-blocking-section-top-level-description = Ineḍfaṛen ad k-ḍefṛen srid akken ad leqḍen talɣut ɣef tnumi-ik n tunigin akked wayen tḥemmleḍ. { -brand-short-name } ad yessewḥel ddeqs n yineḍfaṛen-a akked yir iskripten.
 content-blocking-learn-more = Issin ugar
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -939,6 +941,7 @@ content-blocking-etp-strict-desc = Ammesten yettwaseǧhed, maca kra n yismal akk
 content-blocking-etp-custom-desc = Fren ineḍfaṛen akked iskripten ara tesweḥleḍ.
 content-blocking-private-windows = Agbur yettwaseqdec i uḍfaṛ deg yisfuyla n tunigin tuligt
 content-blocking-cross-site-tracking-cookies = Inagan n tuqqna i uḍfaṛ gar yismal
+content-blocking-cross-site-tracking-cookies-plus-isolate = Inagan n tuqqna n uḍfar gar yismal d uɛzal n yinagan n tuqqna i d-yeqqimen
 content-blocking-social-media-trackers = Ineḍfaṛen n iẓeḍwa inmettiyen
 content-blocking-all-cookies = Inagan n tuqqna meṛṛa
 content-blocking-unvisited-cookies = Inagan n tuqqna n yismal ur yettwarzan ara
@@ -951,6 +954,7 @@ content-blocking-warning-title = Aqeṛṛu d afella!
 content-blocking-warning-description = Asewḥel n ugbru yezmer ur yettaǧǧa ara kra n yismal ad ddun akken iwata. Tzemreḍ s wudem fessusen ad tsenseḍ asewḥel i yismal i tettamned.
 content-blocking-learn-how = Issin amek
 content-blocking-etp-warning-description = Asewḥel n yineḍfaṛen yezmer ad yeglu s kra n lexṣaṣ deg tmahilin n kra n yismal. Smiren asebter s yineḍfaṛen akken ad d-yali ugbur meṛṛa.
+content-blocking-and-isolating-etp-warning-description = Asewḥel n yineḍfaren d uɛzal n yinagan n tuqqna yezmer ad iḥaz tamahilt n kra n yismal. Smiren asebter s yineḍfaren akken ad d-yali ugbur meṛṛa.
 content-blocking-warning-learn-how = Issin amek
 content-blocking-reload-description = Yessefk ad talseḍ asali n yiccaren-ik akken ad ddun ibeddilen-a.
 content-blocking-reload-tabs-button =
@@ -1133,7 +1137,7 @@ space-alert-under-5gb-message = Amkan n udebṣi iteddu ad yaweḍ ar { -brand-s
 ## The following strings are used in the Download section of settings
 
 desktop-folder-name = Tanarit
-downloads-folder-name = Isidar
+downloads-folder-name = Isadaren
 choose-download-folder-title = Fren akaram i usnifel:
 # Variables:
 #   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...

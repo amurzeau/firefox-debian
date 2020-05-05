@@ -142,21 +142,21 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
      for the Firefox Account toolbar unverified menu screen. -->
 <!ENTITY fxa.unverified.callout.label "اپنی ای میل کی پڑتال کریں">
-<!ENTITY fxa.unverified.button.label "&syncBrand.shortName.label; ترتیبات… کھولیں">
+<!ENTITY fxa.unverified.button.label "&syncBrand.shortName.label; سیٹنگز… کھولیں">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbart menu screen. The `Signed in as` text is
      followed by the user's email. -->
 <!ENTITY fxa.menu.signedInAs.label "کے طور پر سائن ان">
 <!ENTITY fxa.menu.manageAccount.label "اکاؤنٹ… بندوبست کریں">
-<!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; ترتیبات…">
+<!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label; سیٹنگز…">
 
 <!ENTITY pictureInPictureHideToggle.accesskey "H">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
      followed by the user's email. -->
-<!ENTITY fxa.menu.syncSettings2.label "&syncBrand.shortName.label; ترتیبات">
+<!ENTITY fxa.menu.syncSettings2.label "&syncBrand.shortName.label; سیٹنگز">
 <!ENTITY fxa.menu.connectAnotherDevice2.label "ایک اور آلہ جوڑیں…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
@@ -168,9 +168,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.accountSettings.label "اکاؤنٹ کی سیٹنگز">
 <!ENTITY fxa.menu.manageAccount2.label "اکاؤنٹ بندوبست کریں">
 <!ENTITY fxa.menu.signOut.label "سائن آؤٹ…">
+<!ENTITY fxa.menu.setupSync.label "&syncBrand.shortName.label;… سیٹ اپ کریں">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
+<!ENTITY fxa.service.sendTab.description "کسی بھی آلے پر فوری طور پر ایک ٹیب بھیجیں جس پر آپ نے سائن ان کیا ہے۔">
 
 <!-- LOCALIZATION NOTE (fullscreenWarning.beforeDomain.label,
      fullscreenWarning.afterDomain.label): these two strings are used
@@ -277,11 +279,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.canvasBlocked.tooltip            "آپنے اس ویب سائٹ کے لئے کینوس کوائف ماحصل بلاک کر دی ہیں۔">
 <!ENTITY urlbar.flashPluginBlocked.tooltip       "آپنے اس ویب سائٹ کو Adobe Flash plugin استعمال کرنے سے بلاک کر دیا ہیں۔">
 <!ENTITY urlbar.midiBlocked.tooltip              "آپنے اس ویب سائٹ کے لئے MIDI تک رسائی بلاک کر دی ہیں۔">
+<!ENTITY urlbar.installBlocked.tooltip           "آپ نے اس ویب سائٹ کیلئے ایڈ آن کی انسٹالیشن کو روکا  ہوا ہے۔">
 
 <!ENTITY urlbar.permissionsGranted.tooltip       "آپ نے اس ویب سائٹ کو اضافی اجازتیں دے دی ہیں۔">
 
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "سابقات دکھائیں">
+
 
 <!ENTITY searchItem.title             "تلاش">
 
@@ -337,7 +341,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY inspectContextMenu.label     "عناصر چیک کریں">
 <!ENTITY inspectContextMenu.accesskey "Q">
 
-<!ENTITY inspectA11YContextMenu.label     "رسائی کی خصوصیات کا معائنہ کریں">
+<!ENTITY inspectA11YContextMenu.label     "قابل رسائی کی خصوصیات کا معائنہ کریں">
 
 <!ENTITY fileMenu.label         "مسل">
 <!ENTITY fileMenu.accesskey       "F">
@@ -346,6 +350,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newUserContext.accesskey         "B">
 <!ENTITY manageUserContext.label          "کنٹینرز کو منظم کریں">
 <!ENTITY manageUserContext.accesskey      "O">
+
 <!ENTITY newNavigatorCmd.label        "نیا ونڈوں">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "N">
@@ -411,6 +416,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.clearRecent.label "حالیہ سابقات خالی کریں…">
 <!ENTITY appMenuHistory.restoreSession.label "پچھلا سیشن بحال کریں">
 <!ENTITY appMenuHistory.viewSidebar.label "بغلی بار میں سابقات دیکھیں">
+<!ENTITY appMenuHistory.hideSidebar.label "بغلی بار میں سابقات چھپائیں">
 <!ENTITY appMenuHistory.recentHistory.label "حالیہ سابقات">
 <!ENTITY appMenuHelp.label "مدد">
 
@@ -435,12 +441,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.noclients.subtitle "اپنے ٹیب کو دوسرے آلات سے یہاں سے دیکھنا پسند کریں گے؟">
 <!ENTITY appMenuRemoteTabs.opensyncprefs.label "ہمہ وقت ساز ترجیحات کھولیں">
 <!ENTITY appMenuRemoteTabs.notsignedin.label "ٹیبیں کی فہرست دیکھنے کے لئے اپنے دیگر آلات سے سائن ان کریں۔">
+<!ENTITY appMenuRemoteTabs.welcome.label "دیگر آلات سے ٹیبیں کی فہرست دیکھنیں۔">
 <!ENTITY appMenuRemoteTabs.unverified.label "آپ کے اکائونٹ کو توژیکاری کی ظرورت ہے۔">
 <!ENTITY appMenuRemoteTabs.signin.label "ہم سازی کے لئے سائن ان کریں">
 <!ENTITY appMenuRemoteTabs.signintosync.label "&syncBrand.shortName.label;… میں سائن ان کریں">
 <!ENTITY appMenuRemoteTabs.turnonsync.label "&syncBrand.shortName.label;… چالو کریں">
 <!ENTITY appMenuRemoteTabs.managedevices.label "آلات کو بندرست کریں…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "ہمہ وقت ساز ٹیبس کے بغلی بار کا نظارہ کریں">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "سنکشدہ ٹبس بغلی بار چھپائں">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "ایک اور آلہ جوڑیں">
 
 <!ENTITY appMenuRecentHighlights.label "حالیہ خاص بات">
@@ -486,7 +494,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.placeholder2          "تلاش کریں یا پتہ داخل کریں">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
-<!ENTITY urlbar.extension.label       "توسیعات:">
+<!ENTITY urlbar.extension.label       "ایکسٹینشن:">
 <!ENTITY urlbar.switchToTab.label     "ٹیب پر سوئچ کریں:">
 
 <!-- LOCALIZATION NOTE (urlbar.searchSuggestionsNotification.hintPrefix): Shown just before the suggestions opt-out hint. -->
@@ -557,8 +565,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (changeSearchSettings.button):
      This string won't wrap, so if the translated string is longer,
      consider translating it as if it said only "Search Settings". -->
-<!ENTITY changeSearchSettings.button  "تلاش ترتیبات تبدیل کریں">
-<!ENTITY changeSearchSettings.tooltip "تلاش کی ترتیبات تبدیل کریں">
+<!ENTITY changeSearchSettings.button  "تلاش سیٹنگز تبدیل کریں">
+<!ENTITY changeSearchSettings.tooltip "تلاش کی سیٹنگز تبدیل کریں">
 
 <!ENTITY searchInNewTab.label         "نئے ٹیب میں تلاش کرے">
 <!ENTITY searchInNewTab.accesskey     "T">
@@ -867,6 +875,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsPreferences.tooltip "اجازت ترجیحات کھولیں">
 
 
+<!ENTITY protections.etpOFF.header "ٹریکنگ سے بہتر تحفظ اس سائٹ کے لیئے بند ہے">
 <!-- LOCALIZATION NOTE:
      protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
 <!ENTITY protections.settings.label "تحفظ کی سیٹنگز">
@@ -881,6 +890,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      the user is experiencing issues with any of a variety of functionality.
      protections.siteNotWorkingView.header: The header of the list
      protections.siteNotWorkingView.issueList.*: The list items, shown in a <ul> -->
+<!ENTITY protections.siteNotWorkingView.header "اگر آپ کو پریشانی ہو رہی ہے تو تحفظات کو بند کردیں:">
+<!ENTITY protections.siteNotWorkingView.issueList.logInFields "لاگ ان قطئے">
 <!ENTITY protections.siteNotWorkingView.issueList.forms "فارم">
 <!ENTITY protections.siteNotWorkingView.issueList.payments "ادائیگیاں">
 <!ENTITY protections.siteNotWorkingView.issueList.comments "تبصرہ">
@@ -935,6 +946,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY contentBlocking.trackingProtection3.label "ٹریکرس">
 
+<!ENTITY contentBlocking.manageSettings.label "مواد کے روکنےکو منظم کریں">
 <!ENTITY contentBlocking.manageSettings.accesskey "M">
 
 <!ENTITY contentBlocking.trackersView.label "ٹریکرس">
@@ -942,7 +954,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.cookies.label "کوکیز">
 <!ENTITY contentBlocking.cookiesView.label "کوکیز اور سائٹ کے کواِئف">
 
+<!ENTITY contentBlocking.trackingProtection4.label "مواد کی  ٹریکنگ">
 
+<!ENTITY contentBlocking.manageSettings2.label "تحفظ کی سیٹنگز کو منظم کریں">
 <!ENTITY contentBlocking.manageSettings2.accesskey "M">
 
 <!ENTITY contentBlocking.socialblock.label "سوشل میڈیا ٹریکرز">
@@ -968,11 +982,14 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- LOCALIZATION NOTE (trackingProtection.unblock5.label, trackingProtection.unblock5.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in NON-private browsing mode. -->
+<!ENTITY trackingProtection.unblock5.label "اس سائٹ کیلئے روکنا بند کریں">
 <!ENTITY trackingProtection.unblock5.accesskey "T">
 <!-- LOCALIZATION NOTE (trackingProtection.unblockPrivate6.label, trackingProtection.unblockPrivate6.accesskey):
      The associated button with this label and accesskey is only shown when opening the control
      center while looking at a site with trackers in PRIVATE browsing mode. -->
+<!ENTITY trackingProtection.unblockPrivate5.label "عارضی طور پر روکنا بند کریں">
 <!ENTITY trackingProtection.unblockPrivate5.accesskey "T">
+<!ENTITY trackingProtection.block6.label "اس سائٹ کیلئے روکنا شروع کریں">
 <!ENTITY trackingProtection.block6.accesskey "T">
 <!ENTITY trackingProtection.reload2.label "صفحہ پھر لوڈ کریں">
 <!ENTITY trackingProtection.reload2.accesskey "R">
@@ -1004,26 +1021,26 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY newTabControlled.header.message "آپکا نیا ٹیب تبدیل کردیا گیا ہے۔">
 <!ENTITY newTabControlled.keepButton.label "تبدیلیاں برقرار رکھیں">
 <!ENTITY newTabControlled.keepButton.accesskey "K">
-<!ENTITY newTabControlled.disableButton.label "توسیعات نا اہل بنائیں">
+<!ENTITY newTabControlled.disableButton.label "ایکسٹینشن غیرفعال بنائیں">
 <!ENTITY newTabControlled.disableButton.accesskey "D">
 
 
 <!ENTITY homepageControlled.header.message "آپکا ابتدائی صفحہ تبدیل کردیا گیا ہے۔">
 <!ENTITY homepageControlled.keepButton.label "تبدیلیاں برقرار رکھیں">
 <!ENTITY homepageControlled.keepButton.accesskey "K">
-<!ENTITY homepageControlled.disableButton.label "توسیعات نا اہل بنائیں">
+<!ENTITY homepageControlled.disableButton.label "ایکسٹینشن غیرفعال بنائیں">
 <!ENTITY homepageControlled.disableButton.accesskey "D">
 
 <!ENTITY tabHideControlled.header.message "اپنے پوشیدہ ٹیبز تک رسائی حاصل کریں">
 <!ENTITY tabHideControlled.keepButton.label "ٹیبس کو مخفی رکھیں">
 <!ENTITY tabHideControlled.keepButton.accesskey "K">
-<!ENTITY tabHideControlled.disableButton.label "توسیعات نا اہل بنائیں">
+<!ENTITY tabHideControlled.disableButton.label "ایکسٹینشن غیرفعال بنائیں">
 <!ENTITY tabHideControlled.disableButton.accesskey "D">
 
 <!ENTITY pageActionButton.tooltip "صفحہ اعمال">
 <!ENTITY pageAction.addToUrlbar.label "ایڈریس بار میں شامل کرے">
 <!ENTITY pageAction.removeFromUrlbar.label "ایڈریس بار سے ہٹائے">
-<!ENTITY pageAction.manageExtension.label "توسیعات… منظم کریں">
+<!ENTITY pageAction.manageExtension.label "ایکسٹینشن… منظم کریں">
 
 <!ENTITY sendToDevice.syncNotReady.label "آلات کی ہمہ وقت سازی کر رہے ہے…">
 
@@ -1036,3 +1053,4 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      display a tooltip for accessibility indicator in toolbar/tabbar. It is also
      used as a textual label for the indicator used by assistive technology
      users. -->
+<!ENTITY accessibilityIndicator.tooltip "قابل رسائی خصوصیات کو فعال بنادیا گیا  پے">

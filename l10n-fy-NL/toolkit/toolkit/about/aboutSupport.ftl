@@ -186,8 +186,8 @@ crashes-time-minutes =
 # $hours (integer) - Number of hours since crash
 crashes-time-hours =
     { $hours ->
-        [one] { $hours } oere lyn
-       *[other] { $hours } oeren lyn
+        [one] { $hours } oer lyn
+       *[other] { $hours } oer lyn
     }
 # Variables
 # $days (integer) - Number of days since crash
@@ -290,6 +290,11 @@ sandbox-proc-type-content = ynhâld
 sandbox-proc-type-file = bestânsynhâld
 sandbox-proc-type-media-plugin = mediaynstekker
 sandbox-proc-type-data-decoder = gegevensdecoder
+startup-cache-title = Opstartbuffer
+startup-cache-disk-cache-path = Paad nei skiifbuffer
+startup-cache-ignore-disk-cache = Skiifbuffer negearje
+startup-cache-found-disk-cache-on-init = Skiifbuffer by Init fûn
+startup-cache-wrote-to-disk-cache = Nei skiifbuffer skreaun
 launcher-process-status-0 = Ynskeakele
 launcher-process-status-1 = Utskeakele fanwegen flater
 launcher-process-status-2 = Forsearre útskeakele
@@ -313,6 +318,7 @@ touch-enabled = oanraakynfier ynskeakele
 drag-enabled = sleep fia skowbalke ynskeakele
 keyboard-enabled = toetseboerd ynskeakele
 autoscroll-enabled = automatysk skowe ynskeakele
+zooming-enabled = soepele knyp-zoom ynskeakele
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

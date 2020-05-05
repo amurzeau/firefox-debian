@@ -290,6 +290,11 @@ sandbox-proc-type-content = inhoud
 sandbox-proc-type-file = bestandsinhoud
 sandbox-proc-type-media-plugin = mediaplug-in
 sandbox-proc-type-data-decoder = gegevensdecoder
+startup-cache-title = Opstartbuffer
+startup-cache-disk-cache-path = Pad naar schijfbuffer
+startup-cache-ignore-disk-cache = Schijfbuffer negeren
+startup-cache-found-disk-cache-on-init = Schijfbuffer bij Init gevonden
+startup-cache-wrote-to-disk-cache = Naar schijfbuffer geschreven
 launcher-process-status-0 = Ingeschakeld
 launcher-process-status-1 = Uitgeschakeld vanwege fout
 launcher-process-status-2 = Geforceerd uitgeschakeld
@@ -313,6 +318,7 @@ touch-enabled = aanraakinvoer ingeschakeld
 drag-enabled = slepen via scrollbalk ingeschakeld
 keyboard-enabled = toetsenbord ingeschakeld
 autoscroll-enabled = automatisch scrollen ingeschakeld
+zooming-enabled = soepele knijp-zoom ingeschakeld
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

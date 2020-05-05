@@ -7,7 +7,7 @@
 
 newtab-page-title = Nova kartica
 newtab-settings-button =
-    .title = Prilagodite svoju početnu stranicu nove kartice
+    .title = Prilagodi stranicu za nove kartice
 
 ## Search box component.
 
@@ -57,6 +57,10 @@ newtab-confirm-delete-history-p2 = Ova radnja je nepovratna.
 newtab-menu-section-tooltip =
     .title = Otvori izbornik
     .aria-label = Otvori izbornik
+# Tooltip for dismiss button
+newtab-dismiss-button-tooltip =
+    .title = Ukloni
+    .aria-label = Ukloni
 # This tooltip is for the context menu of Pocket cards or Topsites
 # Variables:
 #  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
@@ -139,8 +143,8 @@ newtab-label-sponsored = { $sponsorOrSource } · Sponzorirano
 newtab-section-menu-remove-section = Ukloni odjel
 newtab-section-menu-collapse-section = Sklopi odjeljak
 newtab-section-menu-expand-section = Rasklopi odjeljak
-newtab-section-menu-manage-section = Upravljanje odjelom
-newtab-section-menu-manage-webext = Upravljanje dodatkom
+newtab-section-menu-manage-section = Upravljaj odjeljkom
+newtab-section-menu-manage-webext = Upravljaj proširenjem
 newtab-section-menu-add-topsite = Dodaj najbolju stranicu
 newtab-section-menu-add-search-engine = Dodaj tražilicu
 newtab-section-menu-move-up = Pomakni gore
@@ -184,7 +188,6 @@ newtab-discovery-empty-section-topstories-timed-out = Uh! Skoro smo učitali ova
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Popularne teme:
 newtab-pocket-more-recommendations = Više preporuka
-newtab-pocket-whats-pocket = Što je { -pocket-brand-name }?
 newtab-pocket-learn-more = Saznaj više
 newtab-pocket-cta-button = Nabavi { -pocket-brand-name }
 newtab-pocket-cta-text = Spremi priče koje ti se sviđaju u { -pocket-brand-name } i napuni si mozak vrhunskim štivom.

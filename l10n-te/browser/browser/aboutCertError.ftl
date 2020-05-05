@@ -21,3 +21,38 @@ cert-error-details-hsts-label = HTTP స్క్రిప్ట్ ట్రా
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP పబ్లిక్ కీ పిన్నింగ్: { $hasHPKP }
 cert-error-details-cert-chain-label = ధృవీకరణపత్రం చైన్:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = సంధానం సాధ్యం కావడంలేదు
+deniedPortAccess-title = ఈ చిరునామా నిషిద్దం
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = హ్మ్. ఆ సైటుని కనుక్కోవడం సమస్యగా ఉంది.
+fileNotFound-title = ఫైలు కనబడ లేదు
+fileAccessDenied-title = ఫైలుకి ఆక్సెస్ తిరస్కరించబడింది
+generic-title = అయ్యో.
+captivePortal-title = నెట్వర్కులోనికి ప్రవేశించండి
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = హ్మ్. ఆ చిరునామా సరిగా లేదు.
+netInterrupt-title = అనుసంధానానికి అంతరాయం కలిగింది
+notCached-title = పత్రం కాలం చెల్లింది
+netOffline-title = ఆఫ్‌లైన్ రీతి
+contentEncodingError-title = కాంటెంట్ ఎన్‌కోడింగ్ తప్పిదం
+unsafeContentType-title = సురక్షితం కాని ఫైలు రకం
+netReset-title = అనుసంధానం పునరుద్ధరించబడింది
+netTimeout-title = అనుసంధాన సమయం అయిపోయింది
+unknownProtocolFound-title = ఆ చిరునామా అర్థం కాలేదు
+proxyConnectFailure-title = ఆ ప్రాక్సీ సేవిక అనుసంధానాలను తిరస్కరిస్తోంది
+proxyResolveFailure-title = ప్రాక్సీ సేవికను కనుగొనలేకపోయాం
+redirectLoop-title = పేజీ సరిగా దారిమళ్ళించడం లేదు
+unknownSocketType-title = సేవిక నుండి అనుకోని స్పందన
+nssFailure2-title = సురక్షిత అనుసంధానం విఫలమైంది
+cspBlocked-title = కాంటెంట్ రక్షణ విధానం చేత నిరోధించబడింది
+corruptedContentError-title = పాడైన విషయ దోషం
+remoteXUL-title = రిమోట్ XUL
+sslv3Used-title = సురక్షితంగా అనుసంధానం కాలేకున్నాము
+inadequateSecurityError-title = మీ అనుసంధానం సురక్షితమైనది కాదు
+blockedByPolicy-title = నిరోధించిన పేజీ
+clockSkewError-title = మీ కంప్యూటర్ గడియారం తప్పు

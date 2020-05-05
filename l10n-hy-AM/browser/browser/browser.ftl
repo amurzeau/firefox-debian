@@ -17,22 +17,6 @@ browser-main-window-title =
         [private] { -brand-full-name } (Գաղտնի Դիտարկում)
        *[default] { -brand-full-name }
     }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (Գաղտնի Դիտարկում)
-       *[default] { $title } - { -brand-full-name }
-    }
 
 ## This is the default window title in case there is content
 ## title to be displayed.
@@ -59,9 +43,6 @@ browser-main-window-content-title-private =
         [macos] { $title } - (Գաղտնի Դիտարկում)
        *[other] { $title } - { -brand-full-name } (Գաղտնի Դիտարկում)
     }
-
-##
-
 urlbar-identity-button =
     .aria-label = Դիտել կայքի տեղեկությունը
 
@@ -72,7 +53,7 @@ urlbar-services-notification-anchor =
 urlbar-web-notification-anchor =
     .tooltiptext = Փոխել, թե արդյոք կարող եք կայքից ստանալ ծանուցումներ
 urlbar-midi-notification-anchor =
-    .tooltiptext = Բացել MIDI փեղկը
+    .tooltiptext = Բացել MIDI վահանակը
 urlbar-eme-notification-anchor =
     .tooltiptext = Կառավարել DRM ծրագրաշարի օգտագործումը
 urlbar-web-authn-anchor =
@@ -123,8 +104,11 @@ urlbar-tip-icon-description =
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
-urlbar-search-tips-onboard = Մուտքագրեք քիչ, գտեք շատ. որոնեք { $engineName }-ը անմիջապես հասցեի գոտուց:
-urlbar-search-tips-redirect = Սկսեք ձեր որոնումը այստեղ՝ տեսնելու ամար { $engineName }-ի առաջարկները և դիտարկումների ձեր պատմությունը:
+urlbar-search-tips-onboard = Մուտքագրեք քիչ, գտեք շատ. որոնեք { $engineName }-ում անմիջապես հասցեի գոտուց:
+urlbar-search-tips-redirect-2 = Սկսեք ձեր որոնումը այստեղ՝ տեսնելու ամար { $engineName }-ի առաջարկները և դիտարկումների ձեր պատմությունը:
+
+##
+
 
 ##
 

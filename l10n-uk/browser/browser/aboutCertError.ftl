@@ -55,3 +55,43 @@ cert-error-details-hsts-label = Примусове захищене з'єдна�
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Прикріплення публічного ключа: { $hasHPKP }
 cert-error-details-cert-chain-label = Ланцюжок сертифіката:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Не вдалося з'єднатися
+deniedPortAccess-title = Звернення до даної адреси заборонено
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Гм. Ніяк не вдається знайти цей сайт.
+fileNotFound-title = Файл не знайдено
+fileAccessDenied-title = Доступ до файлу заборонено
+generic-title = Ой.
+captivePortal-title = Увійдіть до мережі
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Гм. Схоже, ця адреса неправильна.
+netInterrupt-title = З’єднання перервано
+notCached-title = Документ застарів
+netOffline-title = Автономний режим
+contentEncodingError-title = Помилка кодування вмісту
+unsafeContentType-title = Небезпечний тип файлу
+netReset-title = З’єднання скинуто
+netTimeout-title = Перевищено термін очікування з’єднання
+unknownProtocolFound-title = Незрозуміла адреса
+proxyConnectFailure-title = Проксі-сервер відмовляється приймати з’єднання
+proxyResolveFailure-title = Неможливо знайти проксі-сервер
+redirectLoop-title = Неналежне перенаправлення на сторінці
+unknownSocketType-title = Неочікувана відповідь сервера
+nssFailure2-title = Не вдалося встановити безпечне з’єднання
+cspBlocked-title = Заблоковано політикою безпеки вмісту
+xfoBlocked-title = Блокується політикою X-Frame-Options
+corruptedContentError-title = Помилка. Вміст пошкоджено
+remoteXUL-title = Віддалений XUL
+sslv3Used-title = Неможливо безпечно з’єднатися
+inadequateSecurityError-title = Ваше з'єднання незахищене
+blockedByPolicy-title = Заблокована сторінка
+clockSkewError-title = Годинник вашого комп'ютера налаштовано неправильно
+networkProtocolError-title = Помилка мережевого протоколу
+nssBadCert-title = Обережно: Попереду ймовірна загроза безпеки
+nssBadCert-sts-title = З'єднання не встановлено: Ймовірна загроза безпеці
+certerror-mitm-title = Програмне забезпечення не дозволяє { -brand-short-name } безпечно з'єднатися з цим сайтом

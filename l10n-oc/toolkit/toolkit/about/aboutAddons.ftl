@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Installar un modul dins d’un fichièr…
     .accesskey = I
 help-button = Assisténcia dels moduls
+sidebar-help-button-title =
+    .title = Assisténcia dels moduls
 preferences =
     { PLATFORM() ->
         [windows] Opcions { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Aisinas per totes los moduls
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Opcions { -brand-short-name }
+           *[other] Preferéncias { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Unas extensions an pas pogut èsser verificadas
 show-all-extensions-button =
@@ -167,6 +175,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = De metre a jorn
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Recomandacions
+addon-category-discover-title =
+    .title = Recomandacions
+addon-category-extension = Extensions
+addon-category-extension-title =
+    .title = Extensions
+addon-category-theme = Tèmas
+addon-category-theme-title =
+    .title = Tèmas
+addon-category-plugin = Empeutons (Plugins)
+addon-category-plugin-title =
+    .title = Empeutons (Plugins)
+addon-category-dictionary = Diccionaris
+addon-category-dictionary-title =
+    .title = Diccionaris
+addon-category-locale = Lengas
+addon-category-locale-title =
+    .title = Lengas
+addon-category-available-updates = De metre a jorn
+addon-category-available-updates-title =
+    .title = De metre a jorn
+addon-category-recent-updates = Mes a jorn
+addon-category-recent-updates-title =
+    .title = Mes a jorn
 
 ## These are global warnings
 
@@ -279,6 +311,7 @@ shortcuts-no-commands = Las extensions seguentas an pas d’acorchi :
 shortcuts-input =
     .placeholder = Picatz un acorchi
 shortcuts-browserAction = Activar l’extension
+shortcuts-browserAction2 = Activar lo boton de la barra d’aisinas
 shortcuts-pageAction = Activar l'accion de la pagina
 shortcuts-sidebarAction = Mostrar/Amagar la barra laterala
 shortcuts-modifier-mac = Inclure Ctrl, Alt o ⌘
@@ -304,6 +337,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Ne veire mens
 go-back-button =
     .tooltiptext = Tornar
+header-back-button =
+    .title = Tornar
 
 ## Recommended add-ons page
 
@@ -438,7 +473,7 @@ addon-badge-recommended2 =
 available-updates-heading = Mesas a jorn disponiblas
 recent-updates-heading = Mesas a jorn recentas
 release-notes-loading = Cargament…
-release-notes-error = Una error s'es producha en cargar las nòtas de version.
+release-notes-error = Una error s'es producha en cargant las nòtas de version.
 addon-permissions-empty = Aquesta extension demanda pas cap d'autorizacion
 recommended-extensions-heading = Extensions recomandadas
 recommended-themes-heading = Tèmas recomandats

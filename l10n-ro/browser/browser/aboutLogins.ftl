@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Deschide meniul
-# This menuitem is only visible on Windows
-menu-menuitem-import = Importă parole…
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Importă din alt browser…
 menu-menuitem-preferences =
@@ -51,6 +49,7 @@ login-list-sort-label-text = Sortează după:
 login-list-name-option = Nume (A-Z)
 login-list-name-reverse-option = Nume (Z-A)
 login-list-breached-option = Site-uri web a căror securitate a fost încălcată
+about-logins-login-list-alerts-option = Alerte
 login-list-last-changed-option = Ultima modificare
 login-list-last-used-option = Ultima utilizare
 login-list-intro-title = Nicio autentificare găsită
@@ -62,6 +61,8 @@ login-list-item-subtitle-new-login = Introdu datele tale de autentificare
 login-list-item-subtitle-missing-username = (niciun nume de utilizator)
 about-logins-list-item-breach-icon =
     .title = Site web a cărui securitate a fost încălcată
+about-logins-list-item-vulnerable-password-icon =
+    .title = Parolă vulnerabilă
 
 ## Introduction screen
 
@@ -97,6 +98,30 @@ login-item-cancel-button = Renunță
 login-item-time-changed = Ultima modificare: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Data creării: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Ultima utilizare: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = Verifică-ți identitatea pentru a edita datele de autentificare salvate.
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = editează datele de autentificare salvate
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = Verifică-ți identitatea pentru a dezvălui parola salvată.
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = afișează parola salvată
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = Verifică-ți identitatea pentru a copia parola salvată.
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = copiază parola salvată
 
 ## Master Password notification
 
@@ -137,10 +162,25 @@ confirm-discard-changes-dialog-confirm-button = Înlătură
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Breșă de securitate pe site-ul web
 breach-alert-text = Parolele au fost divulgate sau furate de pe acest site web după ce ți-ai actualizat ultima oară detaliile de autentificare. Schimbă parola ca să îți protejezi contul.
 breach-alert-link = Află mai multe despre această încălcare a securității datelor.
 breach-alert-dismiss =
     .title = Închide această alertă
+about-logins-breach-alert-date = Această breșă a apărut la data de { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Mergi la { $hostname }
+about-logins-breach-alert-learn-more-link = Află mai multe
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Parolă vulnerabilă
+about-logins-vulnerable-alert-text2 = Această parolă a fost folosită pentru un alt cont care a fost implicat, cel mai probabil, într-o breșă de date. Refolosirea datelor de autentificare îți va pune contul în pericol. Schimbă această parolă.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Mergi la { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Află mai multe
 
 ## Error Messages
 

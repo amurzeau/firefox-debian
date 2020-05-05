@@ -128,6 +128,27 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = இருக்கும் புதுப்பித்தல்கள்
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-extension = நீட்டிப்புகள்
+addon-category-extension-title =
+    .title = நீட்டிப்புகள்
+addon-category-theme = கருப்பொருள்கள்
+addon-category-theme-title =
+    .title = கருப்பொருள்கள்
+addon-category-plugin = செருகுநிரல்கள்
+addon-category-plugin-title =
+    .title = செருகுநிரல்கள்
+addon-category-dictionary = அகராதிகள்
+addon-category-dictionary-title =
+    .title = அகராதிகள்
+addon-category-locale = மொழிகள்
+addon-category-locale-title =
+    .title = மொழிகள்
+addon-category-available-updates = இருக்கும் புதுப்பித்தல்கள்
+addon-category-available-updates-title =
+    .title = இருக்கும் புதுப்பித்தல்கள்
+addon-category-recent-updates = சமீபத்திய புதுப்பித்தல்கள்
+addon-category-recent-updates-title =
+    .title = சமீபத்திய புதுப்பித்தல்கள்
 
 ## These are global warnings
 

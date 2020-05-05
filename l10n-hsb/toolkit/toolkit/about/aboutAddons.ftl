@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Přidatk z dataje instalować…
     .accesskey = P
 help-button = Pomoc za přidatki
+sidebar-help-button-title =
+    .title = Pomoc za přidatki
 preferences =
     { PLATFORM() ->
         [windows] Nastajenja { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Nastroje za wšě přidatki
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Nastajenja { -brand-short-name }
+           *[other] Nastajenja { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Někotre rozšěrjenja njedachu so wobkrućić
 show-all-extensions-button =
@@ -166,6 +174,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Aktualizacije
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Doporučenja
+addon-category-discover-title =
+    .title = Doporučenja
+addon-category-extension = Rozšěrjenja
+addon-category-extension-title =
+    .title = Rozšěrjenja
+addon-category-theme = Drasty
+addon-category-theme-title =
+    .title = Drasty
+addon-category-plugin = Tykače
+addon-category-plugin-title =
+    .title = Tykače
+addon-category-dictionary = Słowniki
+addon-category-dictionary-title =
+    .title = Słowniki
+addon-category-locale = Rěče
+addon-category-locale-title =
+    .title = Rěče
+addon-category-available-updates = Aktualizacije
+addon-category-available-updates-title =
+    .title = Aktualizacije
+addon-category-recent-updates = Nowe aktualizacije
+addon-category-recent-updates-title =
+    .title = Nowe aktualizacije
 
 ## These are global warnings
 
@@ -278,6 +310,7 @@ shortcuts-no-commands = Slědowace rozšěrjenja tastowe skrótšenki nimaja:
 shortcuts-input =
     .placeholder = Zapodajće tastowu skrótšenku
 shortcuts-browserAction = Rozšěrjenje aktiwizować
+shortcuts-browserAction2 = Tłóčatko symboloweje lajsty aktiwizować
 shortcuts-pageAction = Akciju strony aktiwizować
 shortcuts-sidebarAction = Bóčnicu přepinać
 shortcuts-modifier-mac = Strg, Alt abo ⌘ zapřijeć
@@ -305,6 +338,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Mjenje pokazać
 go-back-button =
     .tooltiptext = Wróćo hić
+header-back-button =
+    .title = Wróćo hić
 
 ## Recommended add-ons page
 

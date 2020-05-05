@@ -26,6 +26,7 @@ policy-DisabledCiphers = Şifrelemeleri devre dışı bırak.
 policy-DefaultDownloadDirectory = Varsayılan indirme klasörünü ayarla.
 policy-DisableAppUpdate = Tarayıcının güncellenmesini engelle.
 policy-DisableBuiltinPDFViewer = Dahili { -brand-short-name } PDF göstericisi olan PDF.js'i devre dışı bırak.
+policy-DisableDefaultBrowserAgent = Varsayılan tarayıcı agent’ının herhangi bir işlem yapmasını önle. Yalnızca Windows için geçerlidir. Diğer platformlarda agent yoktur.
 policy-DisableDeveloperTools = Geliştirici araçlarına erişimi engelle.
 policy-DisableFeedbackCommands = Yardım menüsünden geri bildirim göndermeye olanak sağlayan komutları (“Geri bildirim gönder” ve “Aldatıcı siteyi ihbar et”) devre dışı bırak.
 policy-DisableFirefoxAccounts = { -fxaccount-brand-name } tabanlı servisleri devre dışı bırak (Sync dahil).
@@ -65,6 +66,14 @@ policy-HardwareAcceleration = false ise donanım ivmelenmesini kapat.
 policy-Homepage = Giriş sayfasını ayarla ve isteğe bağlı olarak kilitle.
 policy-InstallAddonsPermission = Belirli websitelerinin eklenti yüklemesine izin ver.
 policy-LegacyProfiles = Her kurulum için ayrı bir profil oluşturmayı zorunlu tutan özelliği devre dışı bırak
+
+## Do not translate "SameSite", it's the name of a cookie attribute.
+
+policy-LegacySameSiteCookieBehaviorEnabled = Varsayılan eski SameSite çerez davranışı ayarını etkinleştir.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Belirtilen sitelerdeki çerezler için eski SameSite davranışına geri dön.
+
+##
+
 policy-LocalFileLinks = Belirli web sitelerinin yerel dosyalara bağlantı vermesine izin ver.
 policy-NetworkPrediction = Ağ tahminini (DNS prefetching) aç veya kapat.
 policy-NewTabPage = Yeni Sekme sayfasını etkinleştir veya devre dışı bırak.

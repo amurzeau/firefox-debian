@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Atverti meniu
-# This menuitem is only visible on Windows
-menu-menuitem-import = Importuoti slaptažodžius…
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Importuoti iš kitos naršyklės…
 menu-menuitem-preferences =
@@ -51,6 +49,7 @@ login-list-sort-label-text = Rikiuoti pagal:
 login-list-name-option = Pavadinimas (A-Z)
 login-list-name-reverse-option = Pavadinimas (Z-A)
 login-list-breached-option = Pažeistos svetainės
+about-logins-login-list-alerts-option = Įspėjimai
 login-list-last-changed-option = Atnaujinimo laikas
 login-list-last-used-option = Paskiausias naudojimo laikas
 login-list-intro-title = Prisijungimų nerasta
@@ -62,6 +61,8 @@ login-list-item-subtitle-new-login = Įveskite prisijungimo duomenis
 login-list-item-subtitle-missing-username = (nėra naudotojo vardo)
 about-logins-list-item-breach-icon =
     .title = Pažeista svetainė
+about-logins-list-item-vulnerable-password-icon =
+    .title = Pažeidžiami slaptažodžiai
 
 ## Introduction screen
 
@@ -106,6 +107,21 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = Norėdami redaguoti įrašytą prisijungimą, patvirtinkite savo tapatybę.
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = redaguoti įrašytą prisijungimą
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = Norėdami pamatyti įrašytą slaptažodį, patvirtinkite savo tapatybę.
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = parodyti įrašytą slaptažodį
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = Norėdami nukopijuoti įrašytą slaptažodį, patvirtinkite savo tapatybę.
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = nukopijuoti įrašytą slaptažodį
 
 ## Master Password notification
 
@@ -146,10 +162,25 @@ confirm-discard-changes-dialog-confirm-button = Atsisakyti
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Svetainės pažeidimas
 breach-alert-text = Po jūsų paskutinio prisijungimo duomenų atnaujinimo, iš šios svetainės nutekėjo arba buvo pavogti slaptažodžiai. Pasikeiskite slaptažodį, kad apsaugotumėte savo paskyrą.
 breach-alert-link = Sužinokite apie šį pažeidimą daugiau.
 breach-alert-dismiss =
     .title = Užverti šį perspėjimą
+about-logins-breach-alert-date = Šis pažeidimas įvyko { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Eiti į { $hostname }
+about-logins-breach-alert-learn-more-link = Sužinoti daugiau
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Pažeidžiamas slaptažodis
+about-logins-vulnerable-alert-text2 = Šis slaptažodis buvo panaudotas su kita paskyra, kuri galimai pateko tarp nutekėjusių duomenų. Naudodami tuos pačius slaptažodžius, rizikuojate visų savo paskyrų saugumu. Pasikeiskite šį slaptažodį.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Eiti į { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Sužinoti daugiau
 
 ## Error Messages
 

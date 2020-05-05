@@ -21,6 +21,18 @@ learn-more = <span data-l10n-name="link">Ne saber mai</span>
 ##   $property (string) - A CSS property name e.g. "color".
 ##   $display (string) - A CSS display value e.g. "inline-block".
 
+inactive-css-not-grid-or-flex-container = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que es pas un contenidor flex nimai un contenidor grid.
+inactive-css-not-grid-or-flex-container-or-multicol-container = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que es pas un contenidor flex, ni un contenidor grid o un contenidor multi-colomna.
+inactive-css-not-grid-or-flex-item = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que es pas un element flex nimai grid.
+inactive-css-not-grid-item = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que es pas un element grid.
+inactive-css-not-grid-container = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que es pas un contenidor grid.
+inactive-css-not-flex-item = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que es pas un element flex.
+inactive-css-not-flex-container = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que es pas un contenidor flex.
+inactive-css-not-inline-or-tablecell = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que es pas un element « inline » o element « table-cell ».
+inactive-css-property-because-of-display = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que sa proprietat « display » val <strong>{ $display }</strong>.
+inactive-css-not-display-block-on-floated = La valor <strong>display</strong> es estada modificada pel motor en <strong>block</strong> perque l’element es <strong>floated<strong>.
+inactive-css-property-is-impossible-to-override-in-visited = Es pas possible de subrecargar <strong>{ $property }</strong> a causa de la restriccion <strong>:visited</strong>.
+inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que es pas un element posicionat.
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que <strong>overflow:hidde</strong> es pas definit.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
@@ -41,4 +53,5 @@ inactive-css-not-inline-or-tablecell-fix = Ensajatz d’apondre <strong>display:
 inactive-css-non-replaced-inline-or-table-row-or-row-group-fix = Ensajatz d’apondre <strong>display:inline-block</strong> o <strong>display:block</strong>. { learn-more }
 inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Ensajatz d’apondre <strong>display:inline-block</strong>. { learn-more }
 inactive-css-not-display-block-on-floated-fix = Ensajatz de tirar <strong>float</strong> o d’apondre adding <strong>display:block</strong>. { learn-more }
+inactive-css-position-property-on-unpositioned-box-fix = Ensajar de definir sa proprietat <strong>position</strong> amb una valor diferenta de <strong>static</strong>. { learn-more }
 inactive-text-overflow-when-no-overflow-fix = Ensajatz d’apondre <strong>overflow:hidden</strong>. { learn-more }

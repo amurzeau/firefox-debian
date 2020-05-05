@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Nainštalovať doplnok zo súboru…
     .accesskey = N
 help-button = Podpora doplnkov
+sidebar-help-button-title =
+    .title = Podpora doplnkov
 preferences =
     { PLATFORM() ->
         [windows] Možnosti aplikácie
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Nástroje pre všetky doplnky
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Možnosti aplikácie
+           *[other] Možnosti aplikácie
+        }
 show-unsigned-extensions-button =
     .label = Niektoré rozšírenia nemohli byť overené
 show-all-extensions-button =
@@ -172,6 +180,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Dostupné aktualizácie
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Odporúčania
+addon-category-discover-title =
+    .title = Odporúčania
+addon-category-extension = Rozšírenia
+addon-category-extension-title =
+    .title = Rozšírenia
+addon-category-theme = Témy vzhľadu
+addon-category-theme-title =
+    .title = Témy vzhľadu
+addon-category-plugin = Zásuvné moduly
+addon-category-plugin-title =
+    .title = Zásuvné moduly
+addon-category-dictionary = Slovníky
+addon-category-dictionary-title =
+    .title = Slovníky
+addon-category-locale = Jazyky
+addon-category-locale-title =
+    .title = Jazyky
+addon-category-available-updates = Dostupné aktualizácie
+addon-category-available-updates-title =
+    .title = Dostupné aktualizácie
+addon-category-recent-updates = Nedávno aktualizované
+addon-category-recent-updates-title =
+    .title = Nedávno aktualizované
 
 ## These are global warnings
 
@@ -284,6 +316,7 @@ shortcuts-no-commands = Nasledujúce rozšírenia nemajú skratky:
 shortcuts-input =
     .placeholder = Zadajte klávesovú skratku
 shortcuts-browserAction = Aktivovať rozšírenie
+shortcuts-browserAction2 = Pridať tlačidlo na panel nástrojov
 shortcuts-pageAction = Aktivovať akciu stránky
 shortcuts-sidebarAction = Prepnúť zobrazenie bočného panela
 shortcuts-modifier-mac = Nezabudnite vložiť aj Ctrl, Alt alebo ⌘
@@ -310,6 +343,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Zobraziť menej
 go-back-button =
     .tooltiptext = Späť
+header-back-button =
+    .title = Späť
 
 ## Recommended add-ons page
 

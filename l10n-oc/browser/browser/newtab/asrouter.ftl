@@ -191,7 +191,7 @@ cfr-doorhanger-firefox-send-ok-button = Ensajatz { -send-brand-name }
 ## Social Tracking Protection
 
 cfr-doorhanger-socialtracking-ok-button = Veire las proteccions
-    .accesskey = p
+    .accesskey = V
 cfr-doorhanger-socialtracking-close-button = Tampar
     .accesskey = T
 cfr-doorhanger-socialtracking-dont-show-again = Me mostrar pas mai de messatges coma aqueste
@@ -215,3 +215,24 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = O mostrar tot
     .accesskey = m
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = Creatz de senhals segurs facilament
+cfr-whatsnew-lockwise-body = Es complicat de pensar a un senhal unic e segur per cada compte. Pendent la creacion d’un senhal, seleccionatz lo camp de senhal per utilizar un senhal segur generat amb { -brand-shorter-name }.
+cfr-whatsnew-lockwise-icon-alt = icòna { -lockwise-brand-short-name }
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = Obtenètz d’alertas al subjècte dels senhals vulnerables
+cfr-whatsnew-passwords-body = Los piratas sabon que lo monde tòrnan utilizar los meteisses senhals. S’avètz utilizat lo meteis senhal sus mantun sites e qu’un d’aqueles sites a agut una divulgacion de donadas, veiretz una alèrta de { -lockwise-brand-short-name } per vos dire de cambiar vòstre senhal sus aqueles sites.
+cfr-whatsnew-passwords-icon-alt = icòna d’una clau pas fisabla
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = Passar la vidèo incrustada en plen ecran
+cfr-whatsnew-pip-fullscreen-body = Quand plaçatz una vidèo dins una fenèstra bandejanta, podètz ara doble-clicar dessús per la passar en plen ecran.
+cfr-whatsnew-pip-fullscreen-icon-alt = icòna vidèos incrustada

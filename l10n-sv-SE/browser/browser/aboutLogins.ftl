@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Öppna meny
-# This menuitem is only visible on Windows
-menu-menuitem-import = Importera lösenord…
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Importera från en annan webbläsare…
 menu-menuitem-preferences =
@@ -50,6 +48,7 @@ login-list-sort-label-text = Sortera efter:
 login-list-name-option = Namn (A-Ö)
 login-list-name-reverse-option = Namn (Ö-A)
 login-list-breached-option = Webbplatser med dataintrång
+about-logins-login-list-alerts-option = Varningar
 login-list-last-changed-option = Senast ändrad
 login-list-last-used-option = Senast använd
 login-list-intro-title = Inga inloggningar hittades
@@ -61,6 +60,8 @@ login-list-item-subtitle-new-login = Ange dina inloggningsuppgifter
 login-list-item-subtitle-missing-username = (inget användarnamn)
 about-logins-list-item-breach-icon =
     .title = Webbplats med dataintrång
+about-logins-list-item-vulnerable-password-icon =
+    .title = Sårbart lösenord
 
 ## Introduction screen
 
@@ -160,10 +161,25 @@ confirm-discard-changes-dialog-confirm-button = Ignorera
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Webbplatsintrång
 breach-alert-text = Lösenord har läckt eller stulits från den här webbplatsen sedan du senast uppdaterade dina inloggningsuppgifter. Ändra ditt lösenord för att skydda ditt konto.
 breach-alert-link = Läs mer om detta intrång.
 breach-alert-dismiss =
     .title = Stäng denna varning
+about-logins-breach-alert-date = Detta intrång inträffade den { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Gå till { $hostname }
+about-logins-breach-alert-learn-more-link = Läs mer
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Sårbart lösenord
+about-logins-vulnerable-alert-text2 = Det här lösenordet har använts på ett annat konto som troligtvis var inblandat i ett dataintrång. Återanvända uppgifter riskerar alla dina konton. Ändra det här lösenordet.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Gå till { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Läs mer
 
 ## Error Messages
 

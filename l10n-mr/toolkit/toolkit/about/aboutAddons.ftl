@@ -29,6 +29,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = सर्व ॲड-ऑन्स् करीता साधने
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } पर्याय
+           *[other] { -brand-short-name } पसंती
+        }
 show-unsigned-extensions-button =
     .label = काही एक्सटेंशन पडताळले जाऊ शकले नाहीत
 show-all-extensions-button =
@@ -141,6 +147,27 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = उपलब्ध सुधारणा
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-extension = एक्सटेंशन
+addon-category-extension-title =
+    .title = एक्सटेंशन
+addon-category-theme = थीम
+addon-category-theme-title =
+    .title = थीम
+addon-category-plugin = प्लगईन
+addon-category-plugin-title =
+    .title = प्लगईन
+addon-category-dictionary = शब्दकोष
+addon-category-dictionary-title =
+    .title = शब्दकोष
+addon-category-locale = भाषा
+addon-category-locale-title =
+    .title = भाषा
+addon-category-available-updates = उपलब्ध सुधारणा
+addon-category-available-updates-title =
+    .title = उपलब्ध सुधारणा
+addon-category-recent-updates = नुकतीच सुधारणा
+addon-category-recent-updates-title =
+    .title = नुकतीच सुधारणा
 
 ## These are global warnings
 
@@ -250,6 +277,8 @@ shortcuts-letter = एक अक्षर टाइप करा
 shortcuts-card-collapse-button = कमी दर्शवा
 go-back-button =
     .tooltiptext = मागे जा
+header-back-button =
+    .title = मागे जा
 
 ## Recommended add-ons page
 

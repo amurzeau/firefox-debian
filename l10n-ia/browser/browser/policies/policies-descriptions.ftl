@@ -26,6 +26,7 @@ policy-DisabledCiphers = Disactivar cryptographias.
 policy-DefaultDownloadDirectory = Configura le directorio de discarga predefinite.
 policy-DisableAppUpdate = Impedir le actualisation del navigator.
 policy-DisableBuiltinPDFViewer = Disactivar PDF.js, le visor de PDF integrate in { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Impedir que le agente de navigator predefinite exeque alcun action. Applicabile solo a Windows; altere platteformas non ha iste agente.
 policy-DisableDeveloperTools = Blocar le accesso al instrumentos del disveloppamento.
 policy-DisableFeedbackCommands = Disactivar le commandos pro submitter tu commentarios in le menu Adjuta (Submitter tu opinion e Denunciar sito fraudulente).
 policy-DisableFirefoxAccounts = Disactivar le servicios basate sur { -fxaccount-brand-name }, comprendite Sync.
@@ -65,6 +66,14 @@ policy-HardwareAcceleration = Si false, disactivar le acceleration hardware.
 policy-Homepage = Definir e optionalmente blocar le pagina principal.
 policy-InstallAddonsPermission = Permitter a certe sitos web de installar additivos.
 policy-LegacyProfiles = Disactivar le function que fortia le creation de un profilo separate pro cata installation
+
+## Do not translate "SameSite", it's the name of a cookie attribute.
+
+policy-LegacySameSiteCookieBehaviorEnabled = Activar le parametro pro usar como predefinite le comportamento ancian del attributo SameSite pro le cookies.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Usar le comportamento ancian del attributo SameSite pro le cookies sur le sitos specificate.
+
+##
+
 policy-LocalFileLinks = Permitter a sitos web specific de ligar a files local.
 policy-NetworkPrediction = Activar o disactivar prediction del rete (prelectura del DNS).
 policy-NewTabPage = Activar o disactivar le pagina Nove scheda.

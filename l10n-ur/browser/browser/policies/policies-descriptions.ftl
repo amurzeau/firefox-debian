@@ -13,7 +13,7 @@
 policy-3rdparty = ایسی  پالیسیاں مرتب کریں جس سے   chrome.storage.managed.  کے  زریعے  WebExtensions  رسای  حاصل  کر  سکیں
 policy-AppAutoUpdate = خودکار ایپلیکیشن کی تازہ کاری کو فعال یا غیر فعال کریں۔
 policy-AppUpdateURL = مرضی کے مطابق ایپ اپڈیٹ URL سیٹ کریں۔
-policy-Authentication = اس ویب سائٹ کے لئے مربوط تصدیق کو ترتیب دیں جو اس کی حمایت کرتی ہے۔
+policy-Authentication = اس ویب سائٹ کے لئے مربوط تصدیق کو سیٹنگ دیں جو اس کی حمایت کرتی ہے۔
 policy-BlockAboutAddons = ایڈ اون مینیجر(about:addons) تک رسائی کو روکیں۔
 policy-BlockAboutConfig = about:config صفحے پر رسائی کو روکیں۔
 policy-BlockAboutProfiles = about:profiles صفحے پر رسائی کو روکیں۔
@@ -31,6 +31,7 @@ policy-DisableFeedbackCommands = مدد مینو سے رائے بھیجنے کے
 policy-DisableFirefoxAccounts = سنک سمیت { -fxaccount-brand-name } پر مبنی خدمات کو غیر فعال بناٴیں۔
 # Firefox Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = Firefox کے اسکرین شاٹ خصوصیت کو غیر فعال کریں۔
+policy-DisableFirefoxStudies = { -brand-short-name } کو مطالعے  چلانے والے سے کو روکیں۔
 policy-DisableForgetButton = فارگیٹ بٹن تک رسائی کو روکیں۔
 policy-DisableFormHistory = تلاش اور فارم کی سابقات یاد نا رکھیں۔
 policy-DisableMasterPasswordCreation = اگر سچ ہے تو، ایک ماسٹر پاس ورڈ بنائی نہی جا سکتی۔
@@ -43,8 +44,9 @@ policy-DisableSystemAddonUpdate = برائوزر کو سسٹم ایڈاون کو
 policy-DisableTelemetry = ٹیلی میٹری بند کریں۔
 policy-DisplayBookmarksToolbar = بک مارک ٹولبار طے شدہ طور پر ظاہر کریں۔
 policy-DisplayMenuBar = مینوبار طے شدہ طور پر ظاہر کریں۔
-policy-DNSOverHTTPS = HTTPS پرDNS ترتیب کریں۔
+policy-DNSOverHTTPS = HTTPS پرDNS سیٹنگ کریں۔
 policy-DontCheckDefaultBrowser = ابتدائی طور پر طے شدہ براؤزر کے لئے چیک کرنے کو غیر فعال کریں۔
+policy-DownloadDirectory = ڈاؤن لوڈ ڈائریکٹری کو سیٹ اور لاک کریں۔
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = مواد روکنے کو فعال یا غیر فعال کر اور اس کے بعد اختیاری طور پر اس کو بند کردیں۔
 # A “locked” extension can’t be disabled or removed by the user. This policy
@@ -60,6 +62,12 @@ policy-HardwareAcceleration = غلط ہونے کی صورت میں ہارڈوی�
 policy-Homepage = ابتدائی صفحہ سیٹ کریں اور اختیاری طور پر تالا بندی کرِں۔
 policy-InstallAddonsPermission = چند ویب سائٹص کو اظافہ جات کی تنسیب کاری کی اجازت دیں۔
 policy-LegacyProfiles = ہر انسٹالیشن کے لئے ایک علیحدہ پروفائل نافذ کرنے والی خصوصیت کو غیر فعال کریں۔
+
+## Do not translate "SameSite", it's the name of a cookie attribute.
+
+
+##
+
 policy-LocalFileLinks = مخصوص ویب سائٹوں کو مقامی فائلوں سے لنک کرنے کی اجازت دیں۔
 policy-NetworkPrediction = نیٹ ورک کی پیش گوئی کو فعال یا غیر فعال کریں (DNS پہلے لانا)
 policy-NewTabPage = نیا ٹیب صفحہ فعال یا غیر فعال بانیے ۔
@@ -67,8 +75,10 @@ policy-NoDefaultBookmarks = { -brand-short-name } کے ساتھ آئے ہوئے 
 policy-OverrideFirstRunPage = پہلےچلنے والے صفحے کو اوور رائڈ کریں۔ اگر آپ پہلے چلنے والے صفحے کو غیر فعال کرنا چاہتے ہیں تو اس پالیسی کو خالی پر مقرر کریں۔
 policy-PasswordManagerEnabled = پاس ورڈ مینیجر میں پاس ورڈز محفوظ کرنے کو فعال بنائیں۔
 policy-PopupBlocking = کچھ ویب سائٹوں کو بطور ڈیفالٹ پاپ اپ ظاہر کرنے کی اجازت دیں۔
+policy-Preferences = ترجیحات کے سب سیٹ کی قدر کو سیٹ اور لاک کریں۔
 policy-PromptForDownloadLocation = فائلیں ڈاؤن لوڈ کرتے وقت کہاں محفوظ کریں ؟ کا پوچھیں
-policy-Proxy = پراکسی ترتیبات ترتیب کریں۔
+policy-Proxy = پراکسی سیٹنگز سیٹنگ کریں۔
+policy-RequestedLocales = درخواست کے لئے درخواست کردہ زبانوں  کی فہرست کو ترجیح کے مطابق سیٹنگ دیں۔
 policy-SanitizeOnShutdown2 = بند کرنے پر تمام نیویگیشن ڈیٹا صاف کریں۔
 policy-SearchSuggestEnabled = تلاش تجاویز کو فعال یا غیر فعال کریں۔
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation

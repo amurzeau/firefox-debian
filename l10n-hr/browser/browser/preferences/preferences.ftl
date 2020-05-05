@@ -126,12 +126,12 @@ use-firefox-sync = Savjet: Ovo koristi odvojene profile. Koristi { -sync-brand-s
 get-started-not-logged-in = Prijavite se u { -sync-brand-short-name }…
 get-started-configured = Otvori { -sync-brand-short-name } postavke
 always-check-default =
-    .label = Uvijek provjeri je li { -brand-short-name } zadani preglednik
+    .label = Uvijek provjeri je li { -brand-short-name } standardni preglednik
     .accesskey = z
-is-default = { -brand-short-name } je trenutačno tvoj zadani preglednik
-is-not-default = { -brand-short-name } trenutačno nije tvoj zadani preglednik
+is-default = { -brand-short-name } je trenutačno tvoj standardni preglednik
+is-not-default = { -brand-short-name } trenutačno nije tvoj standardni preglednik
 set-as-my-default-browser =
-    .label = Postavi kao zadano…
+    .label = Postavi kao standardni …
     .accesskey = d
 startup-restore-previous-session =
     .label = Vrati prethodnu sesiju
@@ -196,7 +196,7 @@ containers-remove-cancel-button = Nemoj ukloniti ovaj kontejner
 
 language-and-appearance-header = Jezik i izgled
 fonts-and-colors-header = Fontovi i boje
-default-font = Zadani font
+default-font = Standardni font
     .accesskey = d
 default-font-size = Veličina
     .accesskey = V
@@ -216,11 +216,11 @@ preferences-zoom-text-only =
     .label = Zumiraj samo tekst
     .accesskey = t
 language-header = Jezik
-choose-language-description = Odaberite jezik za prikazivanje stranica
+choose-language-description = Odaberi jezik za prikazivanje stranica
 choose-button =
     .label = Odabir…
     .accesskey = d
-choose-browser-language-description = Odaberite jezik koji će se koristiti za prikaz izbornika, poruka i obavijesti od { -brand-short-name }-a.
+choose-browser-language-description = Odaberi jezik koji će se koristiti za prikaz izbornika, poruka i obavijesti od { -brand-short-name }-a.
 manage-browser-languages-button =
     .label = Postavi alternative…
     .accesskey = l
@@ -250,7 +250,7 @@ download-choose-folder =
     .label =
         { PLATFORM() ->
             [macos] Odaberi …
-           *[other] Pretraži …
+           *[other] Pregledaj …
         }
     .accesskey =
         { PLATFORM() ->
@@ -261,7 +261,7 @@ download-always-ask-where =
     .label = Uvijek pitaj gdje želim spremiti datoteke
     .accesskey = a
 applications-header = Aplikacije
-applications-description = Odaberite kako će { -brand-short-name } upravljati datotekama koje preuzmete s interneta ili aplikacijama koje koristite prilikom pregledavanja.
+applications-description = Odaberi kako će { -brand-short-name } upravljati datotekama koje preuzmeš s interneta ili aplikacijama koje koristiš prilikom pregledavanja.
 applications-filter =
     .placeholder = Traži tipove datoteka ili aplikacija
 applications-type-column =
@@ -285,7 +285,7 @@ applications-use-app-default =
     .label = Koristi { $app-name } (uobičajeno)
 applications-use-other =
     .label = Koristi drugi…
-applications-select-helper = Odaberite program pomoćnika
+applications-select-helper = Odaberi pomoćnu aplikaciju
 applications-manage-app =
     .label = Detalji programa…
 applications-always-ask =
@@ -356,7 +356,7 @@ update-application-use-service =
     .label = Koristi pozadinski servis za instalaciju dopuna
     .accesskey = K
 update-enable-search-update =
-    .label = Automatski ažuriraj pretraživače
+    .label = Automatski aktualiziraj tražilice
     .accesskey = e
 update-pref-write-failure-title = Greška prilikom zapisivanja
 # Variables:
@@ -396,7 +396,7 @@ performance-limit-content-process-blocked-desc = Izmjena broja procesa sadržaja
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
-    .label = { $num } (zadano)
+    .label = { $num } (standardno)
 
 ## General Section - Browsing
 
@@ -421,7 +421,7 @@ browsing-picture-in-picture-toggle-enabled =
     .accesskey = O
 browsing-picture-in-picture-learn-more = Saznaj više
 browsing-cfr-recommendations =
-    .label = Preporučuj dodatke dok pretražujem
+    .label = Preporuči dodatke tijekom pregledavanja
     .accesskey = r
 browsing-cfr-features =
     .label = Preporuči mogućnosti tijekom pregledavanja
@@ -447,12 +447,12 @@ home-new-windows-tabs-description2 = Odaberi što vidiš kad otvoriš svoju poč
 home-homepage-mode-label = Početna stranica i novi prozori
 home-newtabs-mode-label = Nove kartice
 home-restore-defaults =
-    .label = Vrati zadano
+    .label = Vrati standardne vrijednosti
     .accesskey = r
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Firefox početna (zadano)
+    .label = Početna Firefox stranica (standardno)
 home-mode-choice-custom =
     .label = Prilagođeni URL-ovi…
 home-mode-choice-blank =
@@ -524,10 +524,10 @@ search-bar-hidden =
     .label = Koristite adresnu traku za pretraživanje i navigaciju
 search-bar-shown =
     .label = Dodaj traku pretraživanja u alatnu traku
-search-engine-default-header = Zadana tražilica
-search-engine-default-desc = Odaberite zadani pretraživač koji ćete koristiti u adresnoj traci i traci pretraživanja.
-search-engine-default-desc-2 = Ovo je zadana tražilica u adresnoj traci i traci za pretraživanje. Možeš je promijeniti u bilo koje vrijeme.
-search-engine-default-private-desc-2 = Odaberite drugi zadani pretraživač za Privatno pretraživanje
+search-engine-default-header = Standardna tražilica
+search-engine-default-desc = Odaberi standardni preglednik koji će se koristiti u adresnoj traci i traci pretraživanja.
+search-engine-default-desc-2 = Ovo je standardna tražilica u adresnoj traci i traci za pretraživanje. Možeš je promijeniti u bilo koje vrijeme.
+search-engine-default-private-desc-2 = Odaberi jednu drugi standardnu tražilicu samo za Privatne prozore
 search-separate-default-engine =
     .label = Koristi ovu tražilicu u privatnim prozorima
     .accesskey = K
@@ -545,15 +545,15 @@ search-show-suggestions-url-bar-option =
 # "ahead" refers to location (appearing most proximate to), not time
 # (appearing before).
 search-show-suggestions-above-history-option =
-    .label = U adresnoj traci prikaži prijedloge za pretraživanje ispred povijesti pregledavanja
+    .label = U adresnoj traci prikaži prijedloge za pretraživanje prije povijesti pregledavanja
 search-show-suggestions-private-windows =
-    .label = Prikaži prijedloge za pretraživanje u Privatnom pretraživanju
+    .label = Prikaži prijedloge za pretraživanje u privatnim prozorima
 suggestions-addressbar-settings = Promijeni postavke za povijest pregledavanja, zabilješke i prijedloge za kartice
-search-suggestions-cant-show = Sugestije pretraživanja neće biti prikazane u lokacijskoj traci jer ste podesili { -brand-short-name } da ne pamti povijest.
-search-one-click-header = Pretraživači na jedan klik
-search-one-click-desc = Odaberi alternativne pretraživače koji će se pojaviti ispod adresne trake i trake pretraživanja kad započneš upisivati pojmove.
+search-suggestions-cant-show = Prijedlozi pretraživanja neće biti prikazani u lokacijskoj traci, jer je { -brand-short-name } podešen, da ne pamti povijest.
+search-one-click-header = Tražilice jednim klikom
+search-one-click-desc = Odaberi alternativne tražilice, koje će se pojaviti ispod adresne trake i trake pretraživanja kad počneš upisivati pojmove.
 search-choose-engine-column =
-    .label = Pretraživač
+    .label = Tražilica
 search-choose-keyword-column =
     .label = Ključna riječ
 search-restore-default =
@@ -562,14 +562,14 @@ search-restore-default =
 search-remove-engine =
     .label = Ukloni
     .accesskey = U
-search-find-more-link = Pronađi još pretraživača
+search-find-more-link = Pronađi daljnje tražilice
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = Postojeća ključna riječ
 # Variables:
 #   $name (String) - Name of a search engine.
-search-keyword-warning-engine = Odabrali ste ključnu riječ koja se koristi za "{ $name }". Molim odaberite drugu.
-search-keyword-warning-bookmark = Odabrali ste ključnu riječ koju koristi zabilješka. Molim odaberite drugu.
+search-keyword-warning-engine = Odabrao/la si ključnu riječ koju trenutačno koristi "{ $name }". Odaberi jednu drugu.
+search-keyword-warning-bookmark = Odabrao/la si ključnu riječ koju koristi zabilješka. Odaberi jednu drugu.
 
 ## Containers Section
 
@@ -585,7 +585,7 @@ containers-add-button =
     .label = Dodaj novi kontejner
     .accesskey = a
 containers-new-tab-check =
-    .label = Odaberite kontejner za svaku novu karticu
+    .label = Odaberi kontejner za svaku novu karticu
     .accesskey = s
 containers-preferences-button =
     .label = Postavke
@@ -600,7 +600,7 @@ containers-remove-button =
 
 sync-signedout-caption = Ponesi svoj web sa sobom
 sync-signedout-description = Sinkroniziraj tvoje zabilješke, povijest, kartice, lozinke, dodatke i postavke na sve svoje uređaje.
-sync-signedout-account-title = Povežite se sa { -fxaccount-brand-name }
+sync-signedout-account-title = Poveži se sa { -fxaccount-brand-name }
 sync-signedout-account-create = Nemate račun? Započnite
     .accesskey = r
 sync-signedout-account-signin =
@@ -632,7 +632,7 @@ sync-disconnect =
 sync-sign-out =
     .label = Odjavi se …
     .accesskey = O
-sync-manage-account = Upravljanje računom
+sync-manage-account = Upravljaj računom
     .accesskey = u
 sync-signedin-unverified = { $email } nije potvrđen.
 sync-signedin-login-failure = Prijavi se za ponovno povezivanje s { $email }
@@ -683,11 +683,11 @@ sync-change-options =
 ## The "Choose what to sync" dialog.
 
 sync-choose-what-to-sync-dialog =
-    .title = Odaberite što ćete sinkronizirati
+    .title = Odaberi što želiš sinkronizirati
     .style = width: 36em; min-height: 35em;
     .buttonlabelaccept = Spremi izmjene
     .buttonaccesskeyaccept = S
-    .buttonlabelextra2 = Odspoji…
+    .buttonlabelextra2 = Odspoji …
     .buttonaccesskeyextra2 = d
 sync-engine-bookmarks =
     .label = Zabilješke
@@ -789,12 +789,12 @@ forms-master-pw-fips-desc = Promjena lozinke nije uspjela
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Potvrdite svoj identitet kako biste stvorili glavnu lozinku.
+master-password-os-auth-dialog-message = Potvrdi svoj identitet za stvaranje glavne lozinke.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = stvorite glavnu lozinku
+master-password-os-auth-dialog-message-macosx = stvori glavnu lozinku
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -818,7 +818,7 @@ history-remember-option-never =
 history-remember-option-custom =
     .label = koristiti prilagođene postavke za povijest
 history-remember-description = { -brand-short-name } će zapamtiti tvoju povijest pregledavanja, preuzimanja, obrazaca i pretraživanja.
-history-dontremember-description = { -brand-short-name } će koristiti iste postavke kao i za privatno pretraživanje, te neće pamtiti povijest pretraživanja.
+history-dontremember-description = { -brand-short-name } će koristiti iste postavke kao i za privatno pregledavanje, te neće pamtiti povijest pregledavanja.
 history-private-browsing-permanent =
     .label = Uvijek koristi privatno pregledavanje
     .accesskey = v
@@ -829,7 +829,7 @@ history-remember-search-option =
     .label = Zapamti povijest traženja i formi
     .accesskey = f
 history-clear-on-close-option =
-    .label = Očisti povijest prilikom zatvaranja { -brand-short-name }a
+    .label = Obriši povijest prilikom zatvaranja { -brand-short-name }a
     .accesskey = z
 history-clear-on-close-settings =
     .label = Postavke…
@@ -877,10 +877,10 @@ sitedata-clear =
     .label = Obriši podatke…
     .accesskey = O
 sitedata-settings =
-    .label = Upravljanje podacima
+    .label = Upravljaj podacima …
     .accesskey = m
 sitedata-cookies-permissions =
-    .label = Upravljanje dozvolama…
+    .label = Upravljaj dozvolama …
     .accesskey = U
 
 ## Privacy Section - Address Bar
@@ -918,7 +918,7 @@ content-blocking-setting-custom =
     .accesskey = P
 content-blocking-standard-desc = Uravnoteženo za zaštitu i performansu. Dozvoli neke programe za praćenje kako bi webstranice ispravno funkcionirale.
 content-blocking-strict-description = Snažnija zaštita, može uzrokovati pucanje nekih web stranica.
-content-blocking-custom-desc = Odaberite što blokirati.
+content-blocking-custom-desc = Odaberi što želiš blokirati.
 content-blocking-private-trackers = Poznati programi za praćenje samo u privatnim prozorima
 content-blocking-third-party-cookies = Kolačići za praćenje trećih strana
 
@@ -1126,8 +1126,8 @@ space-alert-over-5gb-pref-button =
         }
 space-alert-over-5gb-message =
     { PLATFORM() ->
-        [windows] { -brand-short-name }u ponestaje diskovnog prostora. Sadržaj web stranica se možda neće ispravno prikazati. Možeš očistiti spremljene podatke u Mogućnosti > Privatnost i sigurnost > Kolačići i podaci stranica.
-       *[other] { -brand-short-name }u ponestaje diskovnog prostora. Sadržaj web stranica se možda neće ispravno prikazati. Možeš očistiti spremljene podatke u Postavke > Privatnost i sigurnost > Kolačići i podaci stranica.
+        [windows] { -brand-short-name }u ponestaje diskovnog prostora. Sadržaj web stranica se možda neće ispravno prikazati. Spremljene podatke možeš obrisati u Mogućnosti > Privatnost i sigurnost > Kolačići i podaci stranica.
+       *[other] { -brand-short-name }u ponestaje diskovnog prostora. Sadržaj web stranica se možda neće ispravno prikazati. premljene podatke možeš obrisati u Postavke > Privatnost i sigurnost > Kolačići i podaci stranica.
     }
 space-alert-under-5gb-ok-button =
     .label = U redu, razumijem

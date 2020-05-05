@@ -15,7 +15,7 @@ dialog-title =
 dialog-title-everything =
     .title = Suprimir tot l'istoric
     .style = width: 34em
-clear-data-settings-label = En tampar { -brand-short-name }, escafar automaticament los elements seguents
+clear-data-settings-label = En tampant { -brand-short-name }, escafant automaticament los elements seguents
 
 ## clear-time-duration-prefix is followed by a dropdown list, with
 ## values localized using clear-time-duration-value-* messages.
@@ -56,17 +56,17 @@ item-active-logins =
     .accesskey = a
 item-cache =
     .label = Escondedor
-    .accesskey = n
+    .accesskey = E
 item-form-search-history =
     .label = Istoric dels formularis e de las recèrcas
     .accesskey = f
 data-section-label = Donadas
 item-site-preferences =
     .label = Preferéncias del site
-    .accesskey = s
+    .accesskey = P
 item-offline-apps =
     .label = Donadas de site web fòra connexion
-    .accesskey = s
+    .accesskey = D
 sanitize-everything-undo-warning = Impossible d'anullar aquesta accion.
 window-close =
     .key = w

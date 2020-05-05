@@ -116,7 +116,7 @@ startup-restore-previous-session =
 startup-restore-warn-on-quit =
     .label = برائوزر چھوڑتے وقت تنبیہ کریں
 disable-extension =
-    .label = توسیعات نا اہل بنائیں
+    .label = ایکسٹینشن غیرفعال بنائیں
 tabs-group-header = ٹیبس
 ctrl-tab-recently-used-order =
     .label = Ctrl+Tab ٹہبس کے زرِیعے دورہ حالیہ اسرتعمال شدپ ترغیب میں
@@ -311,6 +311,9 @@ update-application-allow-description = { -brand-short-name } کو اجازت د�
 update-application-auto =
     .label = خودکار  طور  پر  تازہکاری  انسٹال کریں (تجویز شدہ)
     .accesskey = A
+update-application-check-choose =
+    .label = تازہ کاریوں کی پڑتال کریں، لیکن مجھے انہیں انسٹال کرنے کا انتخاب کرنے دیں
+    .accesskey = c
 update-application-manual =
     .label = کبھی بھی تازہ کاری کی پڑتال نہیں کریں
     .accesskey = N
@@ -333,9 +336,9 @@ update-in-progress-cancel-button = &جاری رکھیں
 
 performance-title = کارکردگی
 performance-use-recommended-settings-checkbox =
-    .label = تجویز کردہ کارکردگی کی ترتیبات استعمال کریں
+    .label = تجویز کردہ کارکردگی کی سیٹنگز استعمال کریں
     .accesskey = U
-performance-use-recommended-settings-desc = یہ ترتیبات آپ کے کمپیوٹر کے ہارڈ ویئر اور آپریٹنگ سسٹم کے مطابق ہیں۔
+performance-use-recommended-settings-desc = یہ سیٹنگز آپ کے کمپیوٹر کے ہارڈ ویئر اور آپریٹنگ سسٹم کے مطابق ہیں۔
 performance-settings-learn-more = مزید سیکھیں
 performance-allow-hw-accel =
     .label = جب دستیاب ہو تو ہارڈ ویئر سرعت کاری استعمال کریں
@@ -379,7 +382,7 @@ browsing-cfr-recommendations-learn-more = مزید سیکھیں
 
 ## General Section - Proxy
 
-network-settings-title = نیٹ ورک ترتیبات
+network-settings-title = نیٹ ورک سیٹنگز
 network-proxy-connection-learn-more = مزید سیکھیں
 network-proxy-connection-settings =
     .label = سیٹنگز…
@@ -472,6 +475,7 @@ search-bar-shown =
     .label = سرچ بار کا ٹولبار مے ا ضافہ کریں۔
 search-engine-default-header = طےشدہ تلاش انجن
 search-engine-default-desc = پتے کی بار اور تلاش بار میں استعمال کرنے کیلئے طے شدہ تلاش انجن منتخب کریں۔
+search-engine-default-desc-2 = یہ پتہ کی بار اور تلاش کی بار میں یہ آپکا طے شدہ تلاش انجن ہے۔ آپ کسی بھی وقت سوئچ کر سکتے ہیں
 search-engine-default-private-desc-2 = نجی ونڈوں کے لیئے مختلف'طے شدہ تلاش انجن منتخب کریں
 search-separate-default-engine =
     .label = اس تلاش انجن کو نجی ونڈوز میں استعمال کریں
@@ -582,7 +586,7 @@ sync-remove-account =
 sync-sign-in =
     .label = سائن ان کریں
     .accesskey = g
-sync-signedin-settings-header = ہمہ وقت ساز ترتیبات
+sync-signedin-settings-header = ہمہ وقت ساز سیٹنگز
 sync-signedin-settings-desc = { -brand-short-name } کا استعمال کرتے ہوئے اپنے آلات پر کیا سنکرونائز کرنا ہے اس کا انتخاب کریں۔
 
 ## Sync section - enabling or disabling sync.
@@ -703,6 +707,8 @@ forms-master-pw-fips-desc = پاس ورڈ تبدیلی ناکام
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message = ماسٹر پاس ورڈ بنانے کے لئے اپنی شناخت کی تصدیق کریں۔
+# This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
@@ -712,14 +718,25 @@ master-password-os-auth-dialog-caption = { -brand-full-name }
 ## Privacy Section - History
 
 history-header = سابقات
+# This label is followed, on the same line, by a dropdown list of options
+# (Remember history, etc.).
+# In English it visually creates a full sentence, e.g.
+# "Firefox will" + "Remember history".
+#
+# If this doesn't work for your language, you can translate this message:
+#   - Simply as "Firefox", moving the verb into each option.
+#     This will result in "Firefox" + "Will remember history", etc.
+#   - As a stand-alone message, for example "Firefox history settings:".
+history-remember-label = { -brand-short-name }
+    .accesskey = 	w
 history-remember-option-all =
     .label = سابقات یاد رکھے
 history-remember-option-never =
     .label = کبھی سابقات نہ یاد رکھے
 history-remember-option-custom =
-    .label = سابقات کے لیے مخصوص ترتیبات استعمال کریں
+    .label = سابقات کے لیے مخصوص سیٹنگز استعمال کریں
 history-remember-description = { -brand-short-name } آپکی برائوزنگ ڈائونلوڈ اور تلاش سابقات یاد رکھے گا۔
-history-dontremember-description = { -brand-short-name } نجی براؤزنگ کی ترتیبات استعمال کرے گا، اور آپ کے براوز کرتے وقت کوئی سابقات نہیں یاد رکھے گا۔
+history-dontremember-description = { -brand-short-name } نجی براؤزنگ کی سیٹنگز استعمال کرے گا، اور آپ کے براوز کرتے وقت کوئی سابقات نہیں یاد رکھے گا۔
 history-private-browsing-permanent =
     .label = ہمیشہ نجی براوزنگ موڈ استعمال کریں
     .accesskey = p
@@ -744,6 +761,9 @@ history-clear-button =
 sitedata-header = کوکیز اور سائٹ کے کواِئف
 sitedata-total-size-calculating = سائٹ کے ڈیٹا اور کیشے کے ماپ کا حساب لگا رہے ہیں…
 sitedata-learn-more = مزید سیکھیں
+sitedata-delete-on-close =
+    .label = { -brand-short-name } بند ہونے پر سائٹ کاڈیٹااور کوکیز حذف کریں
+    .accesskey = c
 sitedata-allow-cookies-option =
     .label = کوکیز اور سائٹ کا ڈیٹا قبول کریں
     .accesskey = A
@@ -760,6 +780,8 @@ sitedata-option-block-cross-site-trackers =
     .label = کراس-سائٹ ٹریکر
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = کراس سائٹ اور سماجی میڈیا ٹریکرز
+sitedata-option-block-unvisited =
+    .label = نا دیکھی گئی ویب سائٹس کی کوکیز
 sitedata-option-block-all-third-party =
     .label = تمام تیسری تنظیم کے کوکیز (ویب سائٹس کے ٹوٹنے کا سبب بن سکتی ہے)
 sitedata-option-block-all =
@@ -770,6 +792,9 @@ sitedata-clear =
 sitedata-settings =
     .label = کوائف… منظم کریں
     .accesskey = M
+sitedata-cookies-permissions =
+    .label = اجازتوں کو منظم کریں…
+    .accesskey = P
 
 ## Privacy Section - Address Bar
 
@@ -789,6 +814,7 @@ addressbar-suggestions-settings = تلاش کے انجن کی تجاویز کے 
 ## Privacy Section - Content Blocking
 
 content-blocking-header = مواد روکنا
+content-blocking-enhanced-tracking-protection = بہتر سراغ کاری تحفظ
 content-blocking-learn-more = مزید سیکھیں
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -801,7 +827,9 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = مخصوص
     .accesskey = C
+content-blocking-strict-description = مضبوط تحفظ ، کچھ سائٹس کے ٹوٹنے کا سبب بن سکتا ہے۔
 content-blocking-custom-desc = چنیں کیا بلاک کرنا ہے
+content-blocking-private-trackers = صرف نجی ونڈوز میں معلوم شدہ ٹریکرز
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -819,10 +847,15 @@ enhanced-tracking-protection-setting-custom =
 
 ##
 
+content-blocking-etp-standard-desc = تحفظ اور کارکردگی کیلئے متوازن۔ صفحات عام طور پر لوڈ ہوں گے۔
 content-blocking-etp-custom-desc = منتخب کریں کہ کون سے ٹریکرز اور اسکرپٹ کو مسدود کرنا ہے۔
+content-blocking-private-windows = نجی ونڈوز میں مواد  کی  ٹریکنگ
+content-blocking-cross-site-tracking-cookies = کراس-سائٹ ٹریکنگ کوکیز
 content-blocking-social-media-trackers = سوشل میڈیا ٹریکرز
 content-blocking-all-cookies = تمام کوکیز
+content-blocking-unvisited-cookies = نا دیکھی گئی سائٹس کی کوکیز
 content-blocking-all-windows-trackers = تمام ونڈوز میں معلوم شدہ ٹریکرز
+content-blocking-all-windows-tracking-content = تمام ونڈوز میں مواد کی  ٹریکنگ
 content-blocking-all-third-party-cookies = تمام تیسری تنظیم کے کوکیز
 content-blocking-cryptominers = کریپٹومینر
 content-blocking-fingerprinters = فنگر پرنٹرز
@@ -835,6 +868,9 @@ content-blocking-reload-tabs-button =
     .accesskey = R
 content-blocking-trackers-label =
     .label = ٹریکرس
+    .accesskey = T
+content-blocking-tracking-content-label =
+    .label = مواد کی ٹریکنگ
     .accesskey = T
 content-blocking-tracking-protection-option-all-windows =
     .label = تمام ونڈو میں
@@ -860,6 +896,9 @@ content-blocking-fingerprinters-label =
 
 ## Privacy Section - Tracking
 
+tracking-manage-exceptions =
+    .label = مستثنیات کو منظم کریں…
+    .accesskey = x
 
 ## Privacy Section - Permissions
 
@@ -885,6 +924,9 @@ permissions-notification-settings =
     .label = سیٹنگز…
     .accesskey = t
 permissions-notification-link = مزید سیکھیں
+permissions-block-autoplay-media2 =
+    .label = ویب سائٹس کو خود بخود آواز چلانے  سے روکیں
+    .accesskey = B
 permissions-block-autoplay-media-exceptions =
     .label = استثنیات…
     .accesskey = E
@@ -904,6 +946,9 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = استثنیات…
     .accesskey = E
+permissions-a11y-privacy-checkbox =
+    .label = قابل رسائی خدمات کو اپنے براؤزر تک رسائی سے روکیں
+    .accesskey = a
 permissions-a11y-privacy-link = مزید سیکھیں
 
 ## Privacy Section - Data Collection

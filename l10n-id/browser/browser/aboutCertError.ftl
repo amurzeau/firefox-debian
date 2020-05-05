@@ -55,3 +55,43 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Rangkaian sertifikat:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Tidak dapat tersambung
+deniedPortAccess-title = Penggunaan alamat ini dibatasi
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Hmm. Kami kesulitan menemukan situsnya.
+fileNotFound-title = Berkas tidak ditemukan
+fileAccessDenied-title = Akses terhadap berkas ditolak
+generic-title = Ups.
+captivePortal-title = Masuk ke jaringan
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm. Alamat tersebut tampaknya tidak benar.
+netInterrupt-title = Sambungan terputus
+notCached-title = Dokumen Kedaluwarsa
+netOffline-title = Mode luring
+contentEncodingError-title = Kesalahan Pengodean Isi (Content Encoding)
+unsafeContentType-title = Jenis Berkas Tidak Aman
+netReset-title = Sambungan diputus
+netTimeout-title = Tenggang waktu tersambung habis
+unknownProtocolFound-title = Alamat tidak dipahami
+proxyConnectFailure-title = Server proksi menolak sambungan
+proxyResolveFailure-title = Tidak dapat menemukan server proksi
+redirectLoop-title = Laman tidak teralihkan dengan benar
+unknownSocketType-title = Jawaban yang tidak diharapkan dari server
+nssFailure2-title = Sambungan Aman Gagal
+cspBlocked-title = Diblokir oleh Kebijakan Keamanan Konten
+xfoBlocked-title = Diblokir oleh Kebijakan X-Frame-Options
+corruptedContentError-title = Galat Konten Rusak
+remoteXUL-title = XUL Jarak Jauh
+sslv3Used-title = Gagal Tersambung dengan Aman
+inadequateSecurityError-title = Sambungan Anda tidak aman
+blockedByPolicy-title = Laman Diblokir
+clockSkewError-title = Jam komputer Anda salah
+networkProtocolError-title = Protokol Jaringan Bermasalah
+nssBadCert-title = Peringatan: Potensi Risiko Keamanan Menghadang
+nssBadCert-sts-title = Tidak Tersambung: Dugaan Masalah Keamanan
+certerror-mitm-title = Perangkat Lunak Menghalangi { -brand-short-name } untuk Tersambung dengan Aman ke Situs Ini

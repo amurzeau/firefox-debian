@@ -131,6 +131,27 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Достапни надградби
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-extension = Проширувања
+addon-category-extension-title =
+    .title = Проширувања
+addon-category-theme = Теми
+addon-category-theme-title =
+    .title = Теми
+addon-category-plugin = Приклучоци
+addon-category-plugin-title =
+    .title = Приклучоци
+addon-category-dictionary = Речници
+addon-category-dictionary-title =
+    .title = Речници
+addon-category-locale = Јазици
+addon-category-locale-title =
+    .title = Јазици
+addon-category-available-updates = Достапни надградби
+addon-category-available-updates-title =
+    .title = Достапни надградби
+addon-category-recent-updates = Скорешни надградби
+addon-category-recent-updates-title =
+    .title = Скорешни надградби
 
 ## These are global warnings
 

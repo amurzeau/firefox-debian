@@ -23,3 +23,37 @@ cert-error-details-hsts-label = Seguranza de Transporte Estricto HTTP: { $hasHST
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = Fixación de Clau Publica HTTP: { $hasHPKP }
 cert-error-details-cert-chain-label = Cadena de certificaus:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = No s'ha puesto connectar
+deniedPortAccess-title = L'adreza ye restrinchida
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Umm. Somos tenendo bell problema pa trobar este puesto.
+fileNotFound-title = No s'ha trobau o fichero
+fileAccessDenied-title = S'ha denegau l'acceso a lo fichero
+generic-title = Ups.
+captivePortal-title = Iniciar sesión de ret
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Umm. Ixa adreza no fa buena cara.
+netInterrupt-title = S'ha interrumpiu a connexión
+notCached-title = O documento ha circumduciu
+netOffline-title = Modo sin connexión
+contentEncodingError-title = Error de codificación d'o conteniu
+unsafeContentType-title = Tipo de fichero inseguro
+netReset-title = S'ha reiniciau a connexión
+netTimeout-title = S'ha acotolau o tiempo d'aspera d'a connexión
+unknownProtocolFound-title = No s'ha entendiu l'adreza
+proxyConnectFailure-title = O servidor proxy ye refusando as connexions
+proxyResolveFailure-title = No s'ha puesto trobar o servidor proxy
+redirectLoop-title = A pachina no ye reendrezando adequadament
+unknownSocketType-title = Respuesta inasperada d'o servidor
+nssFailure2-title = Ha fallau la connexión segura
+cspBlocked-title = S'ha blocau por a politica de seguranza de conteniu
+corruptedContentError-title = Error en o conteniu d'a pachina
+remoteXUL-title = XUL remoto
+sslv3Used-title = No ye posible connectar de traza segura
+inadequateSecurityError-title = La connexion no ye pas segura
+blockedByPolicy-title = Pachina blocada

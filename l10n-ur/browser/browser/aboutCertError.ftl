@@ -55,3 +55,43 @@ cert-error-details-hsts-label = HTTP سخت ٹرانسپورٹ سلامتی: { $
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP عوامی کلید پننگ: { $hasHPKP }
 cert-error-details-cert-chain-label = تصدیق نامہ سلسلہ:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = جڑنے میں ناکامیاب
+deniedPortAccess-title = یہ پتہ رسٹرکٹڈ ہے
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = ہمم۔ ہمیں وہ سائٹ ڈھونڈنے میں دشواری ہو رہی ہے۔
+fileNotFound-title = مسل نہیں ملی
+fileAccessDenied-title = مسل تک رسائی مسترد کردی گئی ہے
+generic-title = اف
+captivePortal-title = نیٹ ورک میں لاگ ان کریں
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = ہمم۔ یہ پتہ صحیح نہیں لگ رہا
+netInterrupt-title = کنکشن خراب ہو گیا
+notCached-title = دستاویز زائدالمدت
+netOffline-title = آف لائن موڈ
+contentEncodingError-title = مواد انکوڈنگ نقص
+unsafeContentType-title = غیر محفوظ فائل قسم
+netReset-title = کنکشن ریسٹ ہو گیا
+netTimeout-title = کنکشن ٹائم آوٹ ہو گیا ہے
+unknownProtocolFound-title = پتہ سمجھ نہیں آیا
+proxyConnectFailure-title = پراکسی پیش کار کنکشن واپس کر رہا ہے
+proxyResolveFailure-title = پراکسی پیش کار ڈھونڈیں میں ناکام
+redirectLoop-title = صفحہ ٹھیک طرح ری ڈائریکٹ نہیں ہو رہا
+unknownSocketType-title = سرور کی طرف سے غیر متوقع جواب
+nssFailure2-title = قابل بھروسا کنکشن ناکام ہو گیا ہے
+cspBlocked-title = مواد سیکیورٹی پالسی کے تحت بلاک
+xfoBlocked-title = ایکس-فریم آپشنز پالیسی کے ذریعہ روکیں
+corruptedContentError-title = خراب مواد نقص
+remoteXUL-title = بعید XUL
+sslv3Used-title = حفاظتی طور پر جڑنے میں ناکام
+inadequateSecurityError-title = آپکا کنکشن ناقابل بھروسا ہے
+blockedByPolicy-title = بلاک شدہ صفحہ
+clockSkewError-title = آپ کے کمپیوٹر کی گھڑی غلط ہے
+networkProtocolError-title = نیٹ ورک پروٹوکول کی خرابی
+nssBadCert-title = انتباہ: اآگے ممکنہ سیکیورٹی کا خطرہ او سکتا ہے
+nssBadCert-sts-title = رابطہ قائم نہیں ھوا: امکانی حفاظتی مسئلہ
+certerror-mitm-title = سافٹ ویئر { -brand-short-name } کو سائٹ  سے منسلک ہونے سے محفوظ طریقے سے روک رہا ہے

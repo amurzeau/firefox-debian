@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = مینیو کھولیں
-# This menuitem is only visible on Windows
-menu-menuitem-import = پاس ورڈ درآمد کریں…
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = دوسرے براؤزر سے درآمد کریں…
 menu-menuitem-preferences =
@@ -50,6 +48,7 @@ login-list-sort-label-text = کے مطابق چھانٹیں:
 login-list-name-option = نام (A-Z)
 login-list-name-reverse-option = نام  (Z-A)
 login-list-breached-option = خلاف ورزی کرنے والی ویب سائٹیں
+about-logins-login-list-alerts-option = انتباہات
 login-list-last-changed-option = آخری بار ترمیم کردہ
 login-list-last-used-option = آخری استعمال
 login-list-intro-title = کوئی لاگ ان نہیں ملا
@@ -61,11 +60,16 @@ login-list-item-subtitle-new-login = لاگ ان کی سندیں درج کریں
 login-list-item-subtitle-missing-username = (صارف نام کا نہیں)
 about-logins-list-item-breach-icon =
     .title = خلاف ورزی کرنے والی ویب سائٹیں
+about-logins-list-item-vulnerable-password-icon =
+    .title = کمزور پاسورڈ
 
 ## Introduction screen
 
 login-intro-heading = اپنے محفوظ شدہ لاگ ان ڈھونڈ رہے ہیں؟ { -sync-brand-short-name } مرتب کریں۔
 about-logins-login-intro-heading-logged-in = کوئی ہمہ وقت ساز  لاگ ان نہیں ملا۔
+login-intro-description = اگر آپ نے اپنے لاگ انز { -brand-product-name } کو کسی دوسرے آلے پر محفوظ کیاہوا ہے تو، انہیں یہاں حاصل کرنے کا طریقہ یوں ہے:
+login-intro-instruction-fxa = وہ آلہ جہاں آپ کے لاگ انز محفوظ ہیں ان پر اپنا { -fxaccount-brand-name } بنائیں یا سائن ان کریں
+about-logins-intro-import = اگر آپ کے لاگ انز کسی دوسرے براؤزر میں محفوظ ہیں تو ، آپ <a data-l10n-name="import-link"> ان کو { -lockwise-brand-short-name }</a> میں درآمد کرسکتے ہیں
 
 ## Login
 
@@ -150,10 +154,24 @@ confirm-discard-changes-dialog-confirm-button = رد کريں
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = ویب سائٹ کی خلاف ورزی
 breach-alert-text = اس ویب سائٹ سے پاس ورڈز لیک یا چوری ہوگئے تھے جب سے آپ نے لاگ ان کی تفصیلات کو آخری بار اپ ڈیٹ کیا تھا۔ اپنے اکاؤنٹ کی حفاظت کے لئے اپنا پاس ورڈ تبدیل کریں۔
 breach-alert-link = اس خلاف ورزی کے بارے میں مزید معلومات حاصل کریں۔
 breach-alert-dismiss =
     .title = اس انتباہ کو بند کریں
+about-logins-breach-alert-date = یہخلافورزی { DATETIME($date, day: "numeric", month: "long", year: "numeric") } ہوئی ہے
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = { $hostname } پر جائیں
+about-logins-breach-alert-learn-more-link = مزید سیکھیں
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = کمزور پاسورڈ
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = { $hostname } پر جائیں
+about-logins-vulnerable-alert-learn-more-link = مزید سیکھیں
 
 ## Error Messages
 

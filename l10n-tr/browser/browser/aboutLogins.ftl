@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Menüyü aç
-# This menuitem is only visible on Windows
-menu-menuitem-import = Parolaları içe aktar…
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Başka bir tarayıcıdan içe aktar…
 menu-menuitem-preferences =
@@ -50,6 +48,7 @@ login-list-sort-label-text = Sıralama:
 login-list-name-option = Ad (A-Z)
 login-list-name-reverse-option = Ad (Z-A)
 login-list-breached-option = Veri ihlaline uğrayan siteler
+about-logins-login-list-alerts-option = Uyarılar
 login-list-last-changed-option = Son değişiklik
 login-list-last-used-option = Son kullanım
 login-list-intro-title = Hiç hesap bulunamadı
@@ -61,6 +60,8 @@ login-list-item-subtitle-new-login = Hesap bilgilerinizi girin
 login-list-item-subtitle-missing-username = (kullanıcı adı yok)
 about-logins-list-item-breach-icon =
     .title = Bu site ihlale uğramış
+about-logins-list-item-vulnerable-password-icon =
+    .title = Güvensiz parola
 
 ## Introduction screen
 
@@ -160,10 +161,25 @@ confirm-discard-changes-dialog-confirm-button = Vazgeç
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Web Sitesi İhlali
 breach-alert-text = Giriş bilgilerinizi son güncellemenizden bu yana bu web sitesindeki parolalar sızdırılmış veya çalınmış. Hesabınızı korumak için parolanızı değiştirin.
 breach-alert-link = Bu ihlal hakkında daha fazla bilgi edinin.
 breach-alert-dismiss =
     .title = Bu uyarıyı kapat
+about-logins-breach-alert-date = Bu ihlal { DATETIME($date, day: "numeric", month: "long", year: "numeric") } tarihinde meydana geldi
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = { $hostname } sitesine git
+about-logins-breach-alert-learn-more-link = Daha fazla bilgi al
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Güvensiz Parola
+about-logins-vulnerable-alert-text2 = Bu parolayı veri ihlaline uğramış olan başka bir hesapta da kullanmışsınız. Aynı parola farklı yerlerde kullanmak tüm hesaplarınızı risk altına sokar. Bu parolayı değiştirin.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = { $hostname } sitesine git
+about-logins-vulnerable-alert-learn-more-link = Daha fazla bilgi al
 
 ## Error Messages
 

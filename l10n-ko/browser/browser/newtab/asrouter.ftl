@@ -107,10 +107,10 @@ cfr-whatsnew-tracking-blocked-title =
 cfr-whatsnew-tracking-blocked-subtitle = { DATETIME($earliestDate, month: "long", year: "numeric") } 이후
 cfr-whatsnew-tracking-blocked-link-text = 보고서 보기
 cfr-whatsnew-lockwise-backup-title = 비밀번호 백업
-cfr-whatsnew-lockwise-backup-body = 이제 로그인하는 곳 어디에서나 접근 할 수 있는 안전한 비밀번호를 생성하세요.
+cfr-whatsnew-lockwise-backup-body = 이제 로그인하는 곳 어디에서나 접근할 수 있는 안전한 비밀번호를 생성하세요.
 cfr-whatsnew-lockwise-backup-link-text = 백업 켜기
 cfr-whatsnew-lockwise-take-title = 비밀번호를 가지고 다니세요
-cfr-whatsnew-lockwise-take-body = { -lockwise-brand-short-name } 모바일 앱을 사용하면 어디서든 백업된 비밀번호에 안전하게 접근 할 수 있습니다.
+cfr-whatsnew-lockwise-take-body = { -lockwise-brand-short-name } 모바일 앱을 사용하면 어디서든 백업된 비밀번호에 안전하게 접근할 수 있습니다.
 cfr-whatsnew-lockwise-take-link-text = 앱 받기
 
 ## Search Bar
@@ -204,3 +204,24 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = 모두 보기
     .accesskey = S
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = 안전한 비밀번호를 쉽게 생성
+cfr-whatsnew-lockwise-body = 모든 계정에 대해 고유하고 안전한 비밀번호를 생각하기는 어렵습니다. 비밀번호를 만들때 { -brand-shorter-name }에서 생성된 안전한 비밀번호를 사용하려면 비밀번호 필드를 선택하세요.
+cfr-whatsnew-lockwise-icon-alt = { -lockwise-brand-short-name } 아이콘
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = 취약한 비밀번호에 대한 알림 받기
+cfr-whatsnew-passwords-body = 해커는 사람들이 동일한 비밀번호를 재사용한다는 것을 알고 있습니다. 여러 사이트에서 동일한 비밀번호를 사용하고, 해당 사이트들 중 하나에서 데이터가 유출된 경우, { -lockwise-brand-short-name }에 해당 사이트들의 비밀번호를 변경하라는 알림이 표시됩니다.
+cfr-whatsnew-passwords-icon-alt = 취약한 비밀번호 키 아이콘
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = 화면 속 화면을 전체 화면에서 보세요
+cfr-whatsnew-pip-fullscreen-body = 동영상을 떠 있는 창에 띄웠을때, 해당 창을 더블 클릭해서 전체 화면으로 전환할 수 있습니다.
+cfr-whatsnew-pip-fullscreen-icon-alt = 화면 속 화면 아이콘

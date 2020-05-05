@@ -17,7 +17,7 @@ certificate-viewer-cipher-suite = Набор шифров
 certificate-viewer-common-name = Общее имя
 certificate-viewer-email-address = Адрес электронной почты
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
-certificate-viewer-inc-country = Страна регистрации
+certificate-viewer-inc-country = Страна юридического лица
 certificate-viewer-country = Страна
 certificate-viewer-curve = Кривая
 certificate-viewer-distribution-point = Адрес распространения
@@ -29,7 +29,9 @@ certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = Группа обмена ключами
 certificate-viewer-key-id = Идентификатор ключа
 certificate-viewer-key-size = Размер ключа
-certificate-viewer-locality = Местонахождение
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-locality = Населённый пункт юридического лица
+certificate-viewer-locality = Населённый пункт
 certificate-viewer-location = Расположение
 certificate-viewer-logid = ID лога
 certificate-viewer-method = Метод
@@ -48,8 +50,8 @@ certificate-viewer-qualifiers = Квалификаторы
 certificate-viewer-required = Обязательно
 certificate-viewer-unsupported = &lt;неподдерживается&gt;
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
-certificate-viewer-inc-state-province = Область/Край/Республика регистрации
-certificate-viewer-state-province = Область/Край/Республика
+certificate-viewer-inc-state-province = Область/Регион юридического лица
+certificate-viewer-state-province = Область/Регион
 certificate-viewer-sha-1 = SHA-1
 certificate-viewer-sha-256 = SHA-256
 certificate-viewer-serial-number = Серийный номер
@@ -95,3 +97,16 @@ certificate-viewer-download-pem = PEM (сертификат)
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (цепочка сертификатов)
     .download = { $fileName }-chain.pem
+# The title attribute for Critical Extension icon
+certificate-viewer-critical-extension =
+    .title = Это расширение помечено как критическое, что означает, что клиенты должны отклонить сертификат, если они его не понимают.
+certificate-viewer-export = Экспортировать
+    .download = { $fileName }.pem
+
+## Labels for tabs displayed in stand-alone about:certificate page
+
+certificate-viewer-tab-mine = Ваши сертификаты
+certificate-viewer-tab-people = Люди
+certificate-viewer-tab-servers = Серверы
+certificate-viewer-tab-ca = Центры сертификации
+certificate-viewer-tab-unkonwn = Неизвестно

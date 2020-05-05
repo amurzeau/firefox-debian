@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = ایڈ اون مسل سے تنصیب کریں...
     .accesskey = ت
 help-button = ایڈ اون ہمایت کردہ
+sidebar-help-button-title =
+    .title = ایڈ اون ہمایت کردہ
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } اختیارات
@@ -33,10 +35,16 @@ preferences =
     }
 tools-menu =
     .tooltiptext = تمام ایڈ اون کے لیے ٹول
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } اختیارات
+           *[other] { -brand-short-name } ترجیحات
+        }
 show-unsigned-extensions-button =
-    .label = کچھ توسیعات کی تصدیق نہیں ہو سکی
+    .label = کچھ ایکسٹِنشنز کی تصدیق نہیں ہو سکی
 show-all-extensions-button =
-    .label = تمام توسیعات دکھائیں
+    .label = تمام ایکسٹینشنز دکھائیں
 debug-addons =
     .label = ایڈز آن ازالہ کرے
     .accesskey = b
@@ -102,6 +110,9 @@ detail-private-required-label = نجی ونڈوز تک رسائی کی ضرور�
 detail-private-browsing-on =
     .label = اجازت دیں
     .tooltiptext = نجی براؤزنگ میں فاعال بنایں
+detail-private-browsing-off =
+    .label = اجازت مت دیں
+    .tooltiptext = نجی براؤزنگ میں غیر فعال کریں
 detail-home =
     .label = ابتدائی صفحہ
 detail-home-value =
@@ -152,6 +163,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = دستیاب تازہ کاریاں
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = سفارشات
+addon-category-discover-title =
+    .title = سفارشات
+addon-category-extension = ایکسٹینشن
+addon-category-extension-title =
+    .title = ایکسٹینشن
+addon-category-theme = خیالیے
+addon-category-theme-title =
+    .title = خیالیے
+addon-category-plugin = پلگ ان
+addon-category-plugin-title =
+    .title = پلگ ان
+addon-category-dictionary = لغات
+addon-category-dictionary-title =
+    .title = لغات
+addon-category-locale = زبانیں
+addon-category-locale-title =
+    .title = زبانیں
+addon-category-available-updates = دستیاب تازہ کاریاں
+addon-category-available-updates-title =
+    .title = دستیاب تازہ کاریاں
+addon-category-recent-updates = حالیہ تازہ کاریاں
+addon-category-recent-updates-title =
+    .title = حالیہ تازہ کاریاں
 
 ## These are global warnings
 
@@ -256,6 +291,7 @@ addon-open-about-debugging = ایڈز آن ازالہ کرے
 shortcuts-no-addons = آپ کے پاس کوئی ایکسٹینشن فعال نہیں ہے۔
 shortcuts-no-commands = مندرجہ ذیل ایکسٹینشنز میں شارٹ کٹس نہیں ہیں۔
 shortcuts-browserAction = ایکسٹینشن فاعال کریں
+shortcuts-browserAction2 = ٹول بار کے بٹن کو فعال بنائیں
 shortcuts-modifier-other = Ctrl یا Alt شامل کریں
 shortcuts-invalid = ناجائز مجموعہ
 shortcuts-letter = ایک خط ٹائپ کریں
@@ -266,15 +302,22 @@ shortcuts-exists = پہلے ہی { $addon } کے استعمال میں ہے
 shortcuts-card-collapse-button = کم دکھائیں
 go-back-button =
     .tooltiptext = واپس جائیں
+header-back-button =
+    .title = واپس جائیں
 
 ## Recommended add-ons page
 
 discopane-notice-learn-more = مزید سیکھیں
 privacy-policy = رازداری پالیسی
+# Shows the number of daily users of the add-on.
+# Variables:
+#   $dailyUsers (number) - The number of daily users.
+user-count = صارفین: { $dailyUsers }
 install-theme-button = تھیم انسٹال کریں
 # The label of the button that appears after installing an add-on. Upon click,
 # the detailed add-on view is opened, from where the add-on can be managed.
 manage-addon-button = بندوبست کریں
+find-more-addons = مزید ایڈ-اونز تلاش کریں
 # This is a label for the button to open the "more options" menu, it is only
 # used for screen readers.
 addon-options-button =
@@ -323,6 +366,7 @@ addon-detail-rating-label = شرح کاری
 ## Pending uninstall message bar
 
 pending-uninstall-undo-button = کالعدم کریں
+addon-detail-updates-label = خودکار تازہ کاریوں کی اجازت دیں
 addon-detail-updates-radio-default = طے شدہ
 addon-detail-updates-radio-on = آن کریں
 addon-detail-updates-radio-off = بند کریں
@@ -338,9 +382,20 @@ addon-badge-recommended =
 available-updates-heading = دستیاب تازہ کاریاں
 recent-updates-heading = حالیہ تازہ کاریاں
 release-notes-loading = لوڈ ہو رہا ہے…
+recommended-extensions-heading = تجویز شدہ ایکسٹنشن
+recommended-themes-heading = تجویز شدہ تھیمز
 
 ## Page headings
 
+extension-heading = اپنی ایکسٹینشنز منظم کریں
+theme-heading = اپنی تھیمز منظم کریں
+plugin-heading = اپنی پلگانز منظم کریں
+dictionary-heading = اپنی لغت کو منظم کریں
+locale-heading = اپنی زبان کو منظم کریں
+updates-heading = اپنی تازہ کاریوں کو منظم کریں
+theme-heading-search-label = مزید تھیمز تلاش کریں
+extension-heading-search-label = مزید ایکسٹینشنز تلاش کریں
+default-heading-search-label = مزید ایڈ-اون کے تلاش کریں
 addons-heading-search-input =
     .placeholder = addons.mozilla.org تلاش کریں
 addon-page-options-button =

@@ -27,6 +27,14 @@ serviceworker-worker-debug = Desbugatge
 # Text for the start link displayed for a registered but not running Service Worker.
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start = Lançar
+# Text for the debug link displayed for an already started Service Worker, when we
+# are in multi e10s mode, which effectively disables this link.
+serviceworker-worker-debug-forbidden = Desbugatge
+    .title = Òm pòt pas desbugagr los service worker se multi e10s es desactivat
+# Text for the start link displayed for a registered but not running Service Worker.
+# Clicking on the link will attempt to start the service worker.
+serviceworker-worker-start2 = Començar
+    .title = Òm pòt pas qu’aviar los service worker se multi e10s es desactivat
 # Text displayed for the updated time of the service worker. The <time> element will
 # display the last update time of the service worker script.
 serviceworker-worker-updated = Actualizacion <time>{ DATETIME($date, day: "numeric", month: "long", year: "numeric", hour: "numeric", minute: "numeric", second: "numeric") }</time>
@@ -49,11 +57,23 @@ serviceworker-worker-status-registering = Inscripcion
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = Vos cal inscriure un Service Worker per inspectar aquò aquí. <a>Ne saber mai</a>
+# Text displayed when there are no Service Workers to display for the current page,
+# introducing hints to debug Service Worker issues.
+serviceworker-empty-suggestions = Se la pagina actuala deu conténer un service worker, vaquí çò que podètz ensajar
 # Suggestion to check for errors in the Console to investigate why a service worker is not
 # registered. Clicking on the link opens the webconsole.
 serviceworker-empty-suggestions-console = Recercar las error dins la consòla. <a>Dobrir la consòla</a>
+# Suggestion to use the debugger to investigate why a service worker is not registered.
+# Clicking on the link will switch from the Application panel to the debugger.
+serviceworker-empty-suggestions-debugger = Percórrer lo registre de las inscripcions service workers a la recèrca d’excepcions. <a>Dobrir lo deugador</a>
+# Suggestion to go to about:debugging in order to see Service Workers for all domains.
+# Clicking on the link will open about:debugging in a new tab.
+serviceworker-empty-suggestions-aboutdebugging = Inspectar los service workers dels autres domenis. <a>Dobrir about:debugging</a>
 # Header for the Manifest page when we have an actual manifest
 manifest-view-header = Manifest d’aplicacion
+# Header for the Manifest page when there's no manifest to inspect
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro = Vos cal apondre un manifèst d’aplicacion web per l’inspectar aquí. <a>Ne saber mai</a>
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = Errors e avises
 # Header for the Identity section of Manifest inspection displayed in the application panel.
@@ -68,12 +88,18 @@ manifest-loading = Cargament del manifèst…
 manifest-loaded-ok = Manifèst cargat.
 # Text displayed as a caption when there has been an error while trying to
 # load the manifest
-manifest-loaded-error = S’es producha una error en cargar lo manifèst :
+manifest-loaded-error = S’es producha una error en cargant lo manifèst :
 # Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
 manifest-loaded-devtools-error = Error de las aisinas de desvolopament de Firefox
 # Text displayed when the page has no manifest available
 manifest-non-existing = Cap de manifèst pas trobat a inspectar.
+# Text displayed when the page has a manifest embedded in a Data URL and
+# thus we cannot link to it.
+manifest-json-link-data-url = Lo manifèst es integrat dins una URL data.
+# Text displayed at manifest icons to label their purpose, as declared
+# in the manifest.
+manifest-icon-purpose = Tòca : <code>{ $purpose }</code>
 # Text displayed as the alt attribute for <img> tags showing the icons in the
 # manifest.
 manifest-icon-img =

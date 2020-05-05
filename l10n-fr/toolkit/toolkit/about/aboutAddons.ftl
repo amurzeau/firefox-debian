@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Installer un module depuis un fichier…
     .accesskey = I
 help-button = Assistance des modules
+sidebar-help-button-title =
+    .title = Assistance des modules
 preferences =
     { PLATFORM() ->
         [windows] Options de { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Outils pour tous les modules
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Options de { -brand-short-name }
+           *[other] Préférences de { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Certaines extensions n’ont pas pu être vérifiées
 show-all-extensions-button =
@@ -169,6 +177,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = À mettre à jour
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Recommandations
+addon-category-discover-title =
+    .title = Recommandations
+addon-category-extension = Extensions
+addon-category-extension-title =
+    .title = Extensions
+addon-category-theme = Thèmes
+addon-category-theme-title =
+    .title = Thèmes
+addon-category-plugin = Plugins
+addon-category-plugin-title =
+    .title = Plugins
+addon-category-dictionary = Dictionnaires
+addon-category-dictionary-title =
+    .title = Dictionnaires
+addon-category-locale = Langues
+addon-category-locale-title =
+    .title = Langues
+addon-category-available-updates = À mettre à jour
+addon-category-available-updates-title =
+    .title = À mettre à jour
+addon-category-recent-updates = Mis à jour
+addon-category-recent-updates-title =
+    .title = Mis à jour
 
 ## These are global warnings
 
@@ -281,6 +313,7 @@ shortcuts-no-commands = Les extensions suivantes ne disposent pas de raccourcis�
 shortcuts-input =
     .placeholder = Saisissez un raccourci
 shortcuts-browserAction = Activer l’extension
+shortcuts-browserAction2 = Activer le bouton de la barre d’outils
 shortcuts-pageAction = Activer l’action de la page
 shortcuts-sidebarAction = Afficher/Masquer le panneau latéral
 shortcuts-modifier-mac = Inclure Ctrl, Alt ou ⌘
@@ -306,6 +339,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = En montrer moins
 go-back-button =
     .tooltiptext = Retour
+header-back-button =
+    .title = Retour
 
 ## Recommended add-ons page
 

@@ -782,6 +782,17 @@ forms-master-pw-change =
 forms-master-pw-fips-title = En este momento está en modo FIPS. FIPS requiere una contraseña maestra no vacía.
 forms-master-pw-fips-desc = Error al cambiar la contraseña
 
+## OS Authentication dialog
+
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message = Verifique su identidad para crear una contraseña maestra.
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = crear una contraseña maestra
+master-password-os-auth-dialog-caption = { -brand-full-name }
+
 ## Privacy Section - History
 
 history-header = Historial
@@ -852,6 +863,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Rastreadores multisitio
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Rastreadores multisitio y de red social
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Rastreadores de sitios cruzados y redes sociales, y aislación del resto de las cookies
 sitedata-option-block-unvisited =
     .label = Cookies de sitios web no visitados
 sitedata-option-block-all-third-party =
@@ -928,6 +941,7 @@ content-blocking-etp-strict-desc = Protección más elevada, pero puede causar q
 content-blocking-etp-custom-desc = Elige cuáles rastreadores y scripts quieres bloquear.
 content-blocking-private-windows = Contenido de rastreo en ventanas privadas
 content-blocking-cross-site-tracking-cookies = Cookies de rastreo multisitio
+content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies de rastreo de sitios cruzados, y aislación del resto de las cookies
 content-blocking-social-media-trackers = Rastreadores de red social
 content-blocking-all-cookies = Todas las cookies
 content-blocking-unvisited-cookies = Cookies de sitios no visitados
@@ -940,6 +954,7 @@ content-blocking-warning-title = ¡Atención!
 content-blocking-warning-description = Bloquear el contenido puede hacer que algunos sitios dejen de funcionar. Es fácil desactivar el bloqueo para los sitios en los que confías.
 content-blocking-learn-how = Saber cómo
 content-blocking-etp-warning-description = Bloquear rastreadores puede repercutir en el funcionamiento de algunos sitios. Actualiza una página con los rastreadores para que se cargue todo el contenido.
+content-blocking-and-isolating-etp-warning-description = Bloquear los rastreadores y aislar las cookies puede impactar en la funcionalidad de algunos sitios. Recarga una página con rastreadores para cargar todo el contenido.
 content-blocking-warning-learn-how = Aprende cómo
 content-blocking-reload-description = Tendrás que volver a cargar tus pestañas para aplicar estos cambios.
 content-blocking-reload-tabs-button =

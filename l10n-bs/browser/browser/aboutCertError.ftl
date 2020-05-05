@@ -21,3 +21,36 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Lanac certifikata:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Neuspješno povezivanje
+deniedPortAccess-title = Pristup adresi je ograničen
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Hmm. Imamo problema s pronalaženjem stranice.
+fileNotFound-title = Fajl nije pronađen
+fileAccessDenied-title = Pristup fajlu je odbijen
+generic-title = Ups.
+captivePortal-title = Prijavi se na mrežu
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm. Ova adresa ne izgleda dobro.
+netInterrupt-title = Veza je prekinuta
+notCached-title = Dokument je nestao
+netOffline-title = Offline režim
+contentEncodingError-title = Greška u enkodiranju sadržaja
+unsafeContentType-title = Nesiguran tip fajla
+netReset-title = Veza je resetovana
+netTimeout-title = Veza je istekla
+unknownProtocolFound-title = Adresa nije razumiva
+proxyConnectFailure-title = Proxy server odbija veze
+proxyResolveFailure-title = Ne mogu da pronađem proxy server
+redirectLoop-title = Stranica ne preusmjerava pravilno
+unknownSocketType-title = Neočekivani odgovor od servera
+nssFailure2-title = Neuspjela sigurna veza
+cspBlocked-title = Blokirala sigurnosna politika sadržaja
+corruptedContentError-title = Oštećen sadržaj
+remoteXUL-title = Remote XUL
+sslv3Used-title = Uspostava sigurne veze nije uspjela
+inadequateSecurityError-title = Vaša veza nije sigurna

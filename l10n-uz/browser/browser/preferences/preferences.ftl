@@ -113,27 +113,27 @@ startup-restore-warn-on-quit =
     .label = Brauzerdan chiqishda sizni ogohlantiradi
 disable-extension =
     .label = Kengaytmani oʻchirib qoʻyish
-tabs-group-header = Ichki oynalar
+tabs-group-header = Varaqlar
 ctrl-tab-recently-used-order =
-    .label = Ctrl+Tab yordamida ichki oynalarga so‘nggi foydalanish tartibida o‘tish mumkin
+    .label = Ctrl+Tab yordamida varaqlarga soʻnggi foydalanish tartibida oʻtish mumkin
     .accesskey = T
 open-new-link-as-tabs =
-    .label = Havolalarni ichki oynada ochish
+    .label = Havolalarni yangi oynalarning varaqlarida ochish
     .accesskey = w
 warn-on-close-multiple-tabs =
-    .label = Bir nechta ichki oynalar yopilayotganda ogohlantirilsin
+    .label = Bir nechta varaqlar yopilayotganda ogohlantirilsin
     .accesskey = m
 warn-on-open-many-tabs =
-    .label = { -brand-short-name }ni sekinlashtirishi mumkin bo‘lgan bir necha ichki oynalar ochilayotganda ogohlantirilsin
+    .label = { -brand-short-name }ni sekinlashtirishi mumkin bo‘lgan bir necha varaqlar ochilayotganda ogohlantirilsin
     .accesskey = o
 switch-links-to-new-tabs =
-    .label = Havola yangi ichki oynada ochilganda, tezda unga o‘tilsin
+    .label = Havola yangi varaqda ochilganda, tezda unga oʻtilsin
     .accesskey = h
 show-tabs-in-taskbar =
-    .label = Ichki oynalarni oldindan ko‘rishni vazifalar panelida ko‘rsatish
+    .label = Varaqlarning umumiy koʻrinishini vazifalar panelida koʻrsatish
     .accesskey = v
 browser-containers-enabled =
-    .label = Konteyner ichki oynalarni yoqib qo‘yish
+    .label = Konteyner varaqlarini yoqib qoʻyish
     .accesskey = y
 browser-containers-learn-more = Batafsil ma’lumot
 browser-containers-settings =
@@ -147,8 +147,8 @@ containers-disable-alert-desc =
     }
 containers-disable-alert-ok-button =
     { $tabCount ->
-        [one] Konteynerda { $tabCount } ta ichki oynani yopish
-       *[other] Konteynerda { $tabCount } ta ichki oynani yopish
+        [one] Konteynerda { $tabCount } ta varaqni yopish
+       *[other] Konteynerda { $tabCount } ta varaqni yopish
     }
 containers-disable-alert-cancel-button = Yoniq qoldirish
 containers-remove-alert-title = Bu konteyner olib tashlansinmi?
@@ -329,7 +329,7 @@ performance-allow-hw-accel =
     .accesskey = k
 performance-limit-content-process-option = Kontent jarayoni cheklovi
     .accesskey = c
-performance-limit-content-process-enabled-desc = Bir nechta ichki oynalardan foydalanilganda qo‘shimcha kontent jarayoni samaradorlikni oshiradi, ammo ko‘proq xotiradan foydalanadi.
+performance-limit-content-process-enabled-desc = Bir nechta varaqlardan foydalanilganda qoʻshimcha kontent jarayoni samaradorlikni oshiradi, ammo koʻproq xotiradan foydalanadi.
 performance-limit-content-process-blocked-desc = Kontent jarayoni miqdorini o‘zgartirish faqatgina { -brand-short-name } multijarayonlari bilan mavjud.  <a data-l10n-name="learn-more">Multijarayonlar yoqilganda tekshirish usuli</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -355,6 +355,10 @@ browsing-search-on-start-typing =
     .label = Yozishni boshlaganimda, matn izlansin
     .accesskey = n
 browsing-picture-in-picture-learn-more = Batafsil
+browsing-cfr-recommendations =
+    .label = Koʻrish vaqtida kengaytmalarni tavsiya qilish
+    .accesskey = t
+browsing-cfr-recommendations-learn-more = Batafsil
 
 ## General Section - Proxy
 
@@ -367,13 +371,13 @@ network-proxy-connection-settings =
 
 ## Home Section
 
-home-new-windows-tabs-header = Yangi oyna va ichki oynalar
-home-new-windows-tabs-description2 = Bosh sahifa, yangi oyna va ichki oynalarni ochganda nima ko‘rinishi kerakligini tanlang.
+home-new-windows-tabs-header = Yangi oyna va varaqlar
+home-new-windows-tabs-description2 = Bosh sahifa, yangi oyna va varaqlarni ochganda nima koʻrinishi kerakligini tanlang.
 
 ## Home Section - Home Page Customization
 
 home-homepage-mode-label = Bosh sahifa va yangi oynalar
-home-newtabs-mode-label = Yangi ichki oynalar
+home-newtabs-mode-label = Yangi varaqlar
 home-restore-defaults =
     .label = Asliga tiklash
     .accesskey = t
@@ -453,6 +457,13 @@ search-bar-shown =
     .label = Asboblar paneliga qidiruv panelini qo‘shish
 search-engine-default-header = Standart qidiruv tizimi
 search-engine-default-desc = Manzil va qidiruv panelida foydalanish uchun asosiy qidiruv tizimini tanlang.
+search-engine-default-desc-2 = Bu manzil va qidiruv panelida chiqadigan standart qidiruv tizimi. Xohlagan vaqtingizda uni oʻzgartirishingiz mumkin.
+search-engine-default-private-desc-2 = Faqat Maxfiy oyanalarda ishlatiladigan boshqa standart qidiruv tizimini tanlang
+search-separate-default-engine =
+    .label = Bu qidiruv tizimidan Maxfiy oyanalarda foydalanish
+    .accesskey = y
+search-suggestions-header = Qidiruv tavsiyalari
+search-suggestions-desc = Qidiruv tizimidan takliflar chiqadigan joydan takiflarni tanlang.
 search-suggestions-option =
     .label = Izlash uchun tavsiya berish
     .accesskey = t
@@ -466,6 +477,9 @@ search-show-suggestions-url-bar-option =
 # (appearing before).
 search-show-suggestions-above-history-option =
     .label = Manzil panelida brauzer tarixi bo‘yicha qidiruv tavsiyalari ko‘rsatilsin
+search-show-suggestions-private-windows =
+    .label = Qidiruv tavsiyalarini Maxfiy oynalarda koʻrsatish
+suggestions-addressbar-settings = Brauzer tarixi, xatchoʻp va varaqlar takliflari sozlamalrini oʻzgartirish
 search-suggestions-cant-show = Qidiruv tavsiyalari manzil qatorida ko‘rsatilmaydi, chunki { -brand-short-name } brauzerini tarixni eslab qolmaydigan qilib sozlagansiz.
 search-one-click-header = Bir bosishda izlash qidiruv tizimlari
 search-one-click-desc = Izlanadigan so‘zlarni manzil va qidiruv paneliga kiritganingizda  uning ostida paydo bo‘ladigan muqobil qidiruv tizimlarini tanlang.
@@ -497,7 +511,7 @@ containers-back-button =
             [windows] Parametrlarga qaytish
            *[other] Parametrlarga qaytish
         }
-containers-header = Ichki oynalar konteyneri
+containers-header = Konteynerdagi varaqlar
 containers-add-button =
     .label = Yangi konteyner qo‘shish
     .accesskey = q
@@ -582,7 +596,7 @@ sync-engine-history =
     .label = Tarix
     .accesskey = T
 sync-engine-tabs =
-    .label = Ochiq ichki oynalar
+    .label = Ochiq varaqlar
     .tooltiptext = Barcha sinxronlangan qurilmalardagi ochiq ichki oynalar ro‘yxati
     .accesskey = O
 sync-engine-logins =
@@ -598,7 +612,7 @@ sync-engine-creditcards =
     .tooltiptext = Nomi, raqami va amal qilish muddati (faqat kompyuterda)
     .accesskey = K
 sync-engine-addons =
-    .label = Qo‘shimcha dasturlar
+    .label = Qoʻshimcha dasturlar
     .tooltiptext = Kompyuter uchun Firefox kengaytma va mavzulari
     .accesskey = Q
 sync-engine-prefs =
@@ -652,6 +666,9 @@ forms-master-pw-change =
     .accesskey = u
 forms-master-pw-fips-title = Siz hozirda FIPS usulidasiz. FIPS boʻsh boʻlmagan master maxfiy soʻzni talab qiladi.
 forms-master-pw-fips-desc = Maxfiy soʻzni oʻzgartirib boʻlmadi
+
+## OS Authentication dialog
+
 
 ## Privacy Section - History
 
@@ -713,7 +730,7 @@ addressbar-locbar-bookmarks-option =
     .label = Xatcho‘plar
     .accesskey = X
 addressbar-locbar-openpage-option =
-    .label = Ichki oynalarni ochish
+    .label = Varaqlarni ochish
     .accesskey = o
 addressbar-suggestions-settings = Qidiruv tizimi tavsiyalari uchun sozlamalarni o‘zgartirish
 
@@ -778,6 +795,9 @@ collection-health-report =
     .label = { -vendor-short-name }ga texnik va interaktiv ma’lumotlarni yuborish uchun { -brand-short-name }ga ruxsat berish
     .accesskey = l
 collection-health-report-link = Batafsil ma’lumot
+addon-recommendations =
+    .label = { -brand-short-name }ga moslashtirilgan kengaytmalarni tavsiya qilishga ruxsat berish
+addon-recommendations-link = Batafsil
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Ma’lumotlar hisoboti moslama uchun o‘chirib qo‘yilgan

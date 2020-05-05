@@ -17,22 +17,6 @@ browser-main-window-title =
         [private] { -brand-full-name } (نجی براوزنگ)
        *[default] { -brand-full-name }
     }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (نجی براوزنگ)
-       *[default] { $title } - { -brand-full-name }
-    }
 
 ## This is the default window title in case there is content
 ## title to be displayed.
@@ -59,9 +43,6 @@ browser-main-window-content-title-private =
         [macos] { $title } - (نجی براوزنگ)
        *[other] { $title } - { -brand-full-name } (نجی براوزنگ)
     }
-
-##
-
 urlbar-identity-button =
     .aria-label = سائٹ کی معلومات کا نظارہ کریں
 
@@ -124,6 +105,10 @@ urlbar-tip-icon-description =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = کم ٹائپ کریں ، زیادہ ڈھونڈیں: اپنے ایڈریس بار  کے { $engineName } سے تلاش کریں۔
+urlbar-search-tips-redirect-2 = { $engineName } سے تجاویز اور براؤزنگ سبقات دیکھنے کے لیے پتے کی بار میں اپنی تلاش کاآغاز کریں
+
+##
+
 
 ##
 
@@ -149,6 +134,8 @@ urlbar-canvas-blocked =
     .tooltiptext = آپنے اس ویب سائٹ کے لئے کینوس کوائف ماحصل بلاک کر دی ہیں۔
 urlbar-midi-blocked =
     .tooltiptext = آپنے اس ویب سائٹ کے لئے MIDI تک رسائی بلاک کر دی ہیں۔
+urlbar-install-blocked =
+    .tooltiptext = آپ نے اس ویب سائٹ کیلئے ایڈ آنا کو انسٹالیشن کو بلاک کیا ہوا ہے۔
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
@@ -163,9 +150,11 @@ urlbar-star-add-bookmark =
 page-action-add-to-urlbar =
     .label = ایڈریس بار میں شامل کرے
 page-action-manage-extension =
-    .label = توسیعات… بندرست کریں
+    .label = ایکسٹینشن… منظم کریں
 page-action-remove-from-urlbar =
     .label = ایڈریس بار سے ہٹائے
+page-action-remove-extension =
+    .label = ایکسٹینشن ہٹائیں
 
 ## Auto-hide Context Menu
 

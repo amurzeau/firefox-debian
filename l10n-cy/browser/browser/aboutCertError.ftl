@@ -55,3 +55,43 @@ cert-error-details-hsts-label = Diogelwch Trosglwyddo Llym HTTP: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = Pinio Allwedd Cyhoeddus HTTP: { $hasHPKP }
 cert-error-details-cert-chain-label = Cadwyn tystysgrif:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Methu cysylltu
+deniedPortAccess-title = Mae'r cyfeiriad wedi ei gyfyngu
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Hmm. Rydym yn cael trafferth canfod y wefan honno.
+fileNotFound-title = Heb ganfod ffeil
+fileAccessDenied-title = Mae mynediad i'r ffeil wedi ei wrthod
+generic-title = Wps.
+captivePortal-title = Mewngofnodi i'r rhwydwaith
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm. Dyw'r cyfeiriad yna ddim yn edrych yn iawn.
+netInterrupt-title = Cafodd y cysylltiad ei darfu
+notCached-title = Daeth y Ddogfen i Ben
+netOffline-title = Modd all-lein
+contentEncodingError-title = Gwall Amgodio Cynnwys
+unsafeContentType-title = Math Anniogel o ffeil
+netReset-title = Cafodd y cysylltiad ei ailosod
+netTimeout-title = Mae cyfnod y cyswllt wedi dod i ben
+unknownProtocolFound-title = Heb ddeall y cyfeiriad
+proxyConnectFailure-title = Mae'r gweinydd dirprwy yn gwrthod cysylltiadau
+proxyResolveFailure-title = Methu canfod y gweinydd dirprwyol
+redirectLoop-title = Nid yw'r dudalen yn ailgyfeirio'n iawn
+unknownSocketType-title = Ymateb annisgwyl gan y gweinydd
+nssFailure2-title = Methodd y Cysylltiad Diogel
+cspBlocked-title = Rhwystrwyd gan Bolisi Diogelwch Cynnwys
+xfoBlocked-title = Wedi'i rwystro gan Bolisi X-Frame-Options
+corruptedContentError-title = Gwall Cynnwys Llygredig
+remoteXUL-title = XUL pell
+sslv3Used-title = Methu Cysylltu'n Ddiogel
+inadequateSecurityError-title = Nid yw eich cysylltiad yn ddiogel
+blockedByPolicy-title = Tudalen wedi'i Rhwystro
+clockSkewError-title = Mae cloc eich cyfrifiadur yn anghywir
+networkProtocolError-title = Gwall Protocol Rhwydwaith
+nssBadCert-title = Rhybudd: Risg Diogelwch Posibl o'ch Blaen
+nssBadCert-sts-title = Peidiwch Cysylltu: Mater Diogelwch Posib
+certerror-mitm-title = Mae Meddalwedd yn Rhwystro { -brand-short-name } Rhag Cysylltu'n Ddiogel i'r Wefan Hon

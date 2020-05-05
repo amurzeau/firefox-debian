@@ -140,7 +140,7 @@ media-capabilities-enumerate = 데이터베이스 열거
 
 ##
 
-intl-title = 국제화 & 현지화
+intl-title = 국제화 및 현지화
 intl-app-title = 응용 프로그램 설정
 intl-locales-requested = 요청된 언어
 intl-locales-available = 사용 가능한 언어
@@ -267,6 +267,11 @@ sandbox-proc-type-content = 내용
 sandbox-proc-type-file = 파일 내용
 sandbox-proc-type-media-plugin = 미디어 플러그인
 sandbox-proc-type-data-decoder = 데이터 디코더
+startup-cache-title = 시작 캐시
+startup-cache-disk-cache-path = 디스크 캐시 경로
+startup-cache-ignore-disk-cache = 디스크 캐시 무시
+startup-cache-found-disk-cache-on-init = 초기화시 디스크 캐시 찾음
+startup-cache-wrote-to-disk-cache = 디스크 캐시에 기록
 launcher-process-status-0 = 활성화됨
 launcher-process-status-1 = 실패로 비활성화됨
 launcher-process-status-2 = 강제로 비활성화됨
@@ -287,9 +292,10 @@ async-pan-zoom = 비동기 팬 및 확대/축소
 apz-none = 없음
 wheel-enabled = 휠 입력 활성화됨
 touch-enabled = 터치 입력 활성화됨
-drag-enabled = 스크롤바 끌기 활성화됨
+drag-enabled = 스크롤 막대 끌기 활성화됨
 keyboard-enabled = 키보드 활성화됨
 autoscroll-enabled = 자동 스크롤 활성화됨
+zooming-enabled = 부드러운 핀치 확대/축소 활성화됨
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

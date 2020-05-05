@@ -18,7 +18,7 @@ about-debugging-page-title-runtime-page = Otklanjanje grešaka – izvršavanje 
 
 # Display name of the runtime for the currently running instance of Firefox. Used in the
 # Sidebar and in the Setup page.
-about-debugging-this-firefox-runtime-name = Ova { -brand-shorter-name }
+about-debugging-this-firefox-runtime-name = Ovaj { -brand-shorter-name }
 # Sidebar heading for selecting the currently running instance of Firefox
 about-debugging-sidebar-this-firefox =
     .name = { about-debugging-this-firefox-runtime-name }
@@ -105,9 +105,9 @@ about-debugging-setup-usb-status-enabled = Omogućeno
 about-debugging-setup-usb-status-disabled = Onemogućeno
 about-debugging-setup-usb-status-updating = Aktualiziranje …
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-dev-menu2 = Omogući izbornik za razvijatelje na svom Android uređaju.
+about-debugging-setup-usb-step-enable-dev-menu2 = Aktiviraj izbornik za programere na svom Android uređaju.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug2 = Omogući USB uklanjanje grešaka u Android izborniku razvijatelja.
+about-debugging-setup-usb-step-enable-debug2 = Aktiviraj USB uklanjanje grešaka u Android izborniku za programere.
 # USB section step by step guide
 about-debugging-setup-usb-step-enable-debug-firefox2 = Omogući USB uklanjanje grešaka u Firefoxu na Android uređaju.
 # USB section step by step guide
@@ -263,6 +263,14 @@ about-debugging-worker-action-start2 = Pokreni
     .disabledTitle = Pokretanje radnih procesa trenutačno je onemogućena za višeprocesni { -brand-shorter-name }
 # This string is displayed as a label of the button that unregisters a service worker.
 about-debugging-worker-action-unregister = Odjavi
+# Displayed for service workers in runtime pages that listen to Fetch events.
+about-debugging-worker-fetch-listening =
+    .label = Dohvati
+    .value = Prepoznavanje događaja dohvaćanja
+# Displayed for service workers in runtime pages that do not listen to Fetch events.
+about-debugging-worker-fetch-not-listening =
+    .label = Dohvati
+    .value = Neprepoznavanje događaja dohvaćanja
 # Displayed for service workers in runtime pages that are currently running (service
 # worker instance is active).
 about-debugging-worker-status-running = Izvodi se
@@ -272,7 +280,7 @@ about-debugging-worker-status-stopped = Zaustavljeno
 about-debugging-worker-status-registering = Registriranje
 # Displayed for service workers in runtime pages, to label the scope of a worker
 about-debugging-worker-scope =
-    .label = Djelokrug
+    .label = Opseg
 # Displayed as title of the inspect button when service worker debugging is disabled.
 about-debugging-worker-inspect-action-disabled =
     .title = Provjera radnih procesa trenutačno je onemogućena za višeprocesni { -brand-shorter-name }

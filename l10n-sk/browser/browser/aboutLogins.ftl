@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Otvoriť ponuku
-# This menuitem is only visible on Windows
-menu-menuitem-import = Importovať heslá…
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Importovať z iného prehliadača…
 menu-menuitem-preferences =
@@ -51,6 +49,7 @@ login-list-sort-label-text = Zoradiť podľa:
 login-list-name-option = názvu (A-Z)
 login-list-name-reverse-option = názvu (Z-A)
 login-list-breached-option = Stránky, na ktorých došlo k úniku dát
+about-logins-login-list-alerts-option = Upozornenia
 login-list-last-changed-option = poslednej úpravy
 login-list-last-used-option = posledného použitia
 login-list-intro-title = Nenašli sa žiadne prihlasovacie údaje
@@ -62,6 +61,8 @@ login-list-item-subtitle-new-login = Zadajte svoje prihlasovacie údaje
 login-list-item-subtitle-missing-username = (žiadne používateľské meno)
 about-logins-list-item-breach-icon =
     .title = Únik dát
+about-logins-list-item-vulnerable-password-icon =
+    .title = Zraniteľné heslo
 
 ## Introduction screen
 
@@ -161,10 +162,25 @@ confirm-discard-changes-dialog-confirm-button = Zahodiť
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Únik z webovej stránky
 breach-alert-text = Na tejto stránke prišlo od vašej poslednej zmeny prihlasovacích údajov k úniku dát. Za účelom ochrany vášho účtu vám odporúčame zmeniť si heslo.
 breach-alert-link = Ďalšie informácie o tomto úniku.
 breach-alert-dismiss =
     .title = Zavrieť toto upozornenie
+about-logins-breach-alert-date = K tomuto úniku došlo { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Prejsť na { $hostname }
+about-logins-breach-alert-learn-more-link = Ďalšie informácie
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Zraniteľné heslo
+about-logins-vulnerable-alert-text2 = Toto heslo bolo použité na inom účte, ktorý bol pravdepodobne súčasťou úniku dát. Opakované používanie hesiel ohrozuje všetky vaše účty. Zmeňte toto heslo.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Prejsť na { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Ďalšie informácie
 
 ## Error Messages
 

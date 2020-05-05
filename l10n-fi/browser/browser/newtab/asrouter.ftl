@@ -129,6 +129,7 @@ cfr-whatsnew-searchbar-title = Kirjoita vähemmän, löydä enemmän osoitepalki
 #   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
 cfr-whatsnew-searchbar-body-enginename = Siirry eniten käyttämillesi sivustoille yhdellä osoiterivin napsautuksella. Löydä asioita nopeammin { $searchEngineName }-hakutuloksilla ja selaushistorialla.
 cfr-whatsnew-searchbar-body-generic = Siirry eniten käyttämillesi sivustoille yhdellä osoiterivin napsautuksella. Löydä asioita nopeammin selaushistorian hakutuloksilla.
+cfr-whatsnew-searchbar-body-topsites = Nyt vain valitse osoitepalkki, niin se näyttää linkkejä ykkössivustoihin.
 cfr-whatsnew-searchbar-icon-alt-text = Suurennuslasin kuvake
 
 ## Picture-in-Picture
@@ -213,3 +214,22 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Näytä kaikki
     .accesskey = N
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = Luo turvallisia salasanoja helposti
+cfr-whatsnew-lockwise-icon-alt = { -lockwise-brand-short-name }-kuvake
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = Vastaanota hälytyksiä vaarantuneista salasanoista
+cfr-whatsnew-passwords-icon-alt = Vaarantuneen salasanan avainkuvake
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = Vie kuva kuvassa -näkymä koko näytölle
+cfr-whatsnew-pip-fullscreen-body = Kun ponnahdutat videon kelluvaan ikkunaan, voit nyt kaksoisnapsauttaa kyseistä ikkunaa siirtyäksesi koko näytön tilaan.
+cfr-whatsnew-pip-fullscreen-icon-alt = Kuva kuvassa -kuvake

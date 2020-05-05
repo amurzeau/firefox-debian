@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Apri menu
-# This menuitem is only visible on Windows
-menu-menuitem-import = Importa password…
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Importa da un altro browser…
 menu-menuitem-preferences =
@@ -46,6 +44,7 @@ login-list-sort-label-text = Ordina per:
 login-list-name-option = Nome (A-Z)
 login-list-name-reverse-option = Nome (Z-A)
 login-list-breached-option = Violazione dati
+about-logins-login-list-alerts-option = Avvisi
 login-list-last-changed-option = Ultima modifica
 login-list-last-used-option = Ultimo utilizzo
 login-list-intro-title = Credenziali non trovate
@@ -57,6 +56,8 @@ login-list-item-subtitle-new-login = Inserisci le credenziali di accesso
 login-list-item-subtitle-missing-username = (nessun nome utente)
 about-logins-list-item-breach-icon =
     .title = Sito web coinvolto in violazioni di dati
+about-logins-list-item-vulnerable-password-icon =
+  .title = Password vulnerabile
 
 ## Introduction screen
 
@@ -159,10 +160,26 @@ confirm-discard-changes-dialog-confirm-button = Ignora
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Violazione sito web
 breach-alert-text = Dall’ultima volta in cui hai aggiornato queste credenziali, le password di questo sito web sono state rubate o diffuse pubblicamente. Modifica la tua password per proteggere questo account.
 breach-alert-link = Ulteriori informazioni su questa violazione.
 breach-alert-dismiss =
     .title = Chiudi questo avviso
+about-logins-breach-alert-date = Questa violazione si è verificata il giorno { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Apri { $hostname }
+about-logins-breach-alert-learn-more-link = Ulteriori informazioni
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Password vulnerabile
+about-logins-vulnerable-alert-text2 = Questa password è stata utilizzata in un altro account potenzialmente coinvolto in una violazione di dati. Il riutilizzo delle credenziali mette in pericolo tutti i tuoi account. Si consiglia di cambiare questa password.
+
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Apri { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Ulteriori informazioni
 
 ## Error Messages
 

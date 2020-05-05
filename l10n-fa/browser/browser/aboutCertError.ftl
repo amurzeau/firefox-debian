@@ -55,3 +55,41 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = زنجیره گواهی:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = قادر به برقراری اتصال نیست
+deniedPortAccess-title = این نشانی ممنوع است
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = آممم. ما کمی مشکل در پیدا کردن این پایگاه اینترنتی داریم.
+fileNotFound-title = پرونده پیدا نشد
+fileAccessDenied-title = دسترسی به پرونده رد شد
+generic-title = متأسفیم.
+captivePortal-title = ورود به شبکه
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = آممم. آدرس به نظر درست نیست.
+netInterrupt-title = اتصال مختل شد
+notCached-title = پرونده منقضی شده
+netOffline-title = حالت منفصل
+contentEncodingError-title = خطای کدگذاری محتوا
+unsafeContentType-title = نوع پروندهٔ ناامن
+netReset-title = اتصال قطع شد
+netTimeout-title = مهلت اتصال تمام شد
+unknownProtocolFound-title = نشانی قابل فهم نبود
+proxyConnectFailure-title = کارگزار پیشکار از برقراری اتصال خودداری می‌کند.
+proxyResolveFailure-title = کارگزار پیشکار پیدا نشد
+redirectLoop-title = این صفحه درست تغییر مسیر نمی‌دهد
+unknownSocketType-title = جواب غیرمنتظره از کارگزار
+nssFailure2-title = برقراری اتصال ایمن شکست خورد
+cspBlocked-title = مسدود شده بنا بر سیاست امنیتی محتوا
+corruptedContentError-title = خطای خرابی محتوا
+remoteXUL-title = XUL راه دور
+sslv3Used-title = قادر به برقراری اتصال امن نمیباشد
+inadequateSecurityError-title = اتصال شما امن نیست
+blockedByPolicy-title = صفحهٔ مسدود شده
+clockSkewError-title = ساعت رایانه شما اشتباه است
+networkProtocolError-title = خطای پروتکل شبکه
+nssBadCert-title = هشدار: خطر امنیتی نهفته در پیش است
+nssBadCert-sts-title = متصل نشد: مشکل امنیتی بالقوه

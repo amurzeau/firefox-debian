@@ -45,3 +45,42 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Sertifikat zənciri:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Əlaqə cəhdi uğursuz oldu
+deniedPortAccess-title = Təhlükəsizlik üçün bağlantı nöqtəsi bağlıdır
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Hmm. Bu saytı tapmaqda çətinlik çəkirik.
+fileNotFound-title = Fayl tapılmadı
+fileAccessDenied-title = Faylın işlədilməsinə icazə verilmədi
+generic-title = Uups.
+captivePortal-title = Şəbəkəyə daxil ol
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm. Bu ünvan düzgün görünmür.
+netInterrupt-title = Məlumat ötürmə xətası
+notCached-title = Sənədin vaxtı çıxıb
+netOffline-title = Offline bağlantı səhvi
+contentEncodingError-title = Məzmun kodlama səhvi
+unsafeContentType-title = Etibarsız fayl növü
+netReset-title = Bağlantı kəsildi
+netTimeout-title = Şəbəkə gözləmə müddəti
+unknownProtocolFound-title = Ünvan başa düşülmədi
+proxyConnectFailure-title = Proxy server bağlantını rədd etdi
+proxyResolveFailure-title = Proxy-server tapılmadı
+redirectLoop-title = Səhifə düzgün yönləndirilmir
+unknownSocketType-title = Şəbəkədən gələn cavab yanlışdır
+nssFailure2-title = Təhlükəsiz bağlantı qurula bilmədi
+cspBlocked-title = Məzmun təhlükəsizlik qaydaları xəbərdar etdiyi üçün bloklandı
+corruptedContentError-title = Zədəli Məzmun Xətası
+remoteXUL-title = Uzaq XUL
+sslv3Used-title = Təhlükəsiz bağlanmaq mümkün olmadı
+inadequateSecurityError-title = Bağlantınız qorumalı deyil
+blockedByPolicy-title = Əngəllənmiş Səhifə
+clockSkewError-title = Kompüterinizin saatı səhvdir
+networkProtocolError-title = Şəbəkə Protokolu Xətası
+nssBadCert-title = Diqqət: Qabaqda potensial təhlükə riski var
+nssBadCert-sts-title = Qoşulmadı: Potensial Güvənlik Təhlükəsi
+certerror-mitm-title = Proqram { -brand-short-name } səyyahının bu saytda təhlükəsiz şəkildə qoşulmasının qarşısını alır

@@ -174,7 +174,7 @@ cfr-doorhanger-sync-logins-ok-button = Activar { -sync-brand-short-name }
 cfr-doorhanger-send-tab-header = Léalo en cualquier momento
 cfr-doorhanger-send-tab-recipe-header = Llévese esta receta a la cocina
 cfr-doorhanger-send-tab-body = Send Tab le permite compartir este enlace con su teléfono o con cualquier dispositivo en el que haya iniciado sesión con { -brand-product-name }.
-cfr-doorhanger-send-tab-ok-button = Pruebar Send Tab
+cfr-doorhanger-send-tab-ok-button = Probar Send Tab
     .accesskey = T
 
 ## Firefox Send
@@ -210,3 +210,24 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Ver todo
     .accesskey = V
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = Cree fácilmente contraseñas seguras
+cfr-whatsnew-lockwise-body = Es difícil pensar en contraseñas únicas y seguras para cada cuenta. Al crear una contraseña, seleccione el campo de contraseña para usar una contraseña segura y generada por { -brand-shorter-name }.
+cfr-whatsnew-lockwise-icon-alt = Icono de { -lockwise-brand-short-name }
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = Reciba alertas sobre contraseñas vulnerables
+cfr-whatsnew-passwords-body = Los hackers saben que la gente reutiliza sus contraseñas. Si usó la misma contraseña en varios sitios, y uno de esos sitios sufre una filtración de datos, verá una alerta en { -lockwise-brand-short-name } para cambiar su contraseña en esos sitios.
+cfr-whatsnew-passwords-icon-alt = Icono de contraseña vulnerable
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = Llevar el picture-in-picture a pantalla completa
+cfr-whatsnew-pip-fullscreen-body = Cuando lleva un video a una ventana flotante, puede hacer doble clic en esa ventana para llevarlo a pantalla completa.
+cfr-whatsnew-pip-fullscreen-icon-alt = Icono de picture-in-picture

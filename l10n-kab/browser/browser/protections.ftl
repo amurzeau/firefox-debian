@@ -34,7 +34,7 @@ protection-report-header-details-custom = Aswir n ummesten yettwaṣeggem ɣer <
 protection-report-page-title = Taɣellist n tbaḍnit
 protection-report-content-title = Ammesten n tbaḍnit
 etp-card-title = Ammesten mgal aḍfaṛ yettwaseǧhed
-etp-card-content = Inefḍfaṛen ad k-ḍefṛen srid akken ad leqḍen talɣut ɣef tnumi-ik n tunigin akked wayen tḥemmleḍ. { -brand-short-name } ad yessewḥel ddeqs n yineḍfaṛen-a akked yir iskripten.
+etp-card-content = Ineḍfaṛen ad k-ḍefṛen srid akken ad leqḍen talɣut ɣef tnumi-ik n tunigin akked wayen tḥemmleḍ. { -brand-short-name } ad yessewḥel ddeqs n yineḍfaṛen-a akked yir iskripten.
 protection-report-etp-card-content-custom-not-blocking = Meṛṛa ammesten yensa akka tura. Fren ineḍfaṛen ara tesweḥleḍ s usefrek n yiɣewwaṛen n ummesten n { -brand-short-name }.
 protection-report-manage-protections = Sefrek iɣewwaṛen
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -52,6 +52,8 @@ fingerprinter-tab-title = Idsilen umḍinen
 fingerprinter-tab-content = Idsilen umḍinen leqqḍen-d iɣewwaṛen seg yiminig-ik akked uselkim-ik akken ad rnun amaqnu fell-ak. Aseqdec n udsil-a umḍin, zemren ad k-ḍefṛen gar yismal iɣer i trezzuḍ. <a data-l10n-name="learn-more-link">Issin ugar</a>
 cryptominer-tab-title = Ikripṭuminaren
 cryptominer-tab-content = Ikripṭuminaren seqdacen tazmert n usiḍen n unagraw-ik akken ad kksen tadrimt tumḍint. Iskripten n yikripṭuminaren sseɣṣen aẓru-ik, saẓayen aselkim-ik, daɣen zemren ad salin tafaturt-ik n ṣṣehd. <a data-l10n-name="learn-more-link">Issin ugar</a>
+protections-close-button =
+    .aria-label = Mdel
 mobile-app-title = Sewḥel ineḍfaren deg ugar n yibenkan
 mobile-app-card-content = Seqdec iminig aziraz s ummesten usliɣ mgal aḍfaṛ n udellel.
 mobile-app-links = Iminig { -brand-product-name }  i <a data-l10n-name="android-mobile-inline-link">Android</a> akked <a data-l10n-name="ios-mobile-inline-link">iOS</a>

@@ -25,3 +25,41 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Calol Seedamfaagu:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Horiima seŋaade
+deniedPortAccess-title = Ndee ñiiɓirde ko suraande
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Hmm. Min ndañii saɗeende e yiytude hello ngo.
+fileNotFound-title = Fiilde yiytaaka
+fileAccessDenied-title = Ballagol fiilde salaama
+generic-title = Ndo.
+captivePortal-title = Seŋo e laylaytol hee
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm. Ndee ñiiɓirde nanndaani e moƴƴere.
+netInterrupt-title = Ceŋagol ngol taƴii
+notCached-title = Fiilannde Hiiɗtii
+netOffline-title = Mbaydi ceŋtol
+contentEncodingError-title = Juumre Dokkitannde Loowdi
+unsafeContentType-title = Ndee Fiilde Toolnaaki
+netReset-title = Ceŋagol ngol fuɗɗitaama
+netTimeout-title = Ceŋagol ngol honaama waktu
+unknownProtocolFound-title = Ñiiɓirde ndee faamaaka
+proxyConnectFailure-title = Sarworde proxy ndee saliima ceŋanɗe
+proxyResolveFailure-title = Horiima yiytude sarworde proxy ndee
+redirectLoop-title = Ngoo hello wonaani e yiiltude no feewiri
+unknownSocketType-title = Jaatol sarworde faamaaka
+nssFailure2-title = Ceŋagol Kisnangol Woorii
+cspBlocked-title = Dawirgol Kisnal Loowdi daaƴii ɗum
+corruptedContentError-title = Juumre Loowdi Jiibndi
+remoteXUL-title = XUL Poottiiɗo
+sslv3Used-title = Horiima Seŋaade e Kisal
+inadequateSecurityError-title = Ceŋagol maa hisaani
+blockedByPolicy-title = Hello Daaƴaango
+clockSkewError-title = Montoor ordinateer maa goongɗaani
+networkProtocolError-title = Juumre jaɓɓitorde geese
+nssBadCert-title = Jeertino: Soomi tanaa kisal yeeso
+nssBadCert-sts-title = Hoto seŋo: soomi saɗeende kisal

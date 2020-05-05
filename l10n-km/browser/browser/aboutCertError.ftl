@@ -55,3 +55,30 @@ cert-error-details-hsts-label = សុវត្ថិភាព​ដឹកជញ
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = ការ​ខ្ទាស់​កូន​សោ​សាធារណៈ HTTP៖ { $hasHPKP }
 cert-error-details-cert-chain-label = ច្រវាក់​​វិញ្ញាបនបត្រ៖
+
+## Messages used for certificate error titles
+
+connectionFailure-title = មិន​អាច​តភ្ជាប់
+deniedPortAccess-title = អាសយដ្ឋាន​នេះ​ត្រូវ​បាន​ដាក់កម្រិត
+fileNotFound-title = រក​មិន​ឃើញ​ឯកសារ
+fileAccessDenied-title = ការ​ចូល​ប្រើប្រាស់​ឯកសារ​ត្រូវបាន​បដិសេធ
+generic-title = អ្ហុះ !
+captivePortal-title = ចូល​បណ្ដាញ
+netInterrupt-title = ការ​តភ្ជាប់​ត្រូវ​បាន​កាត់​ផ្តាច់
+notCached-title = ឯកសារ​បាន​ផុត​កំណត់
+netOffline-title = របៀប​ក្រៅ​បណ្ដាញ
+contentEncodingError-title = កំហុស​ក្នុង​ការ​អ៊ិនកូដ​មាតិកា
+unsafeContentType-title = ប្រភេទ​ឯកសារ​គ្មាន​សុវត្ថិភាព
+netReset-title = ការ​តភ្ជាប់​ត្រូវ​បាន​កំណត់​ឡើង​វិញ
+netTimeout-title = អស់​ពេល​ក្នុង​ការ​តភ្ជាប់
+unknownProtocolFound-title = មិន​ស្គាល់​អាសយដ្ឋាន​នេះ
+proxyConnectFailure-title = ម៉ាស៊ីន​បម្រើ​ប្រូកស៊ី​កំពុងតែ​បដិសេធ​ការ​តភ្ជាប់
+proxyResolveFailure-title = មិន​អាច​រក​ឃើញ​ម៉ាស៊ីន​បម្រើ​ប្រូកស៊ី​
+redirectLoop-title = ទំព័រ​មិន​កំពុងតែ​ប្ដូរ​ទិស​យ៉ាង​ត្រឹមត្រូវ​ទេ
+unknownSocketType-title = ចម្លើយតប​ពី​ម៉ាស៊ីន​បម្រើ​ដែល​មិន​បាន​រំពឹងទុក
+nssFailure2-title = ​ការ​តភ្ជាប់​សុវត្ថិភាព​បរាជ័យ
+cspBlocked-title = បាន​ទប់ស្កាត់​ដោយ​គោលការណ៍​អំពី​សុវត្ថិភាព​មាតិកា
+corruptedContentError-title = កំហុស​មាតិកា​ដែល​ខូច
+remoteXUL-title = XUL ពី​ចម្ងាយ
+sslv3Used-title = មិន​អាច​តភ្ជាប់​ដោយ​សុវត្ថិភាព​ឡើយ
+inadequateSecurityError-title = ការ​ត​ភ្ជាប់​របស់​អ្នក​មិន​មាន​សុវត្ថិភាពឡើយ​

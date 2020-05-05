@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Mag-install ng Add-on Mula sa File…
     .accesskey = i
 help-button = Suporta sa mga Add-on
+sidebar-help-button-title =
+    .title = Suporta sa mga Add-on
 preferences =
     { PLATFORM() ->
         [windows] Mga pagpipilian sa { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Mga kagamitan para sa lahat ng mga add-on
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Mga pagpipilian sa { -brand-short-name }
+           *[other] Mga kagustuhan sa { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Ang ibang mga extension ay hindi kayang ma-verify
 show-all-extensions-button =
@@ -162,6 +170,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Mga Available na Update
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Mga Mungkahi
+addon-category-discover-title =
+    .title = Mga Mungkahi
+addon-category-extension = Mga Extension
+addon-category-extension-title =
+    .title = Mga Extension
+addon-category-theme = Mga tema
+addon-category-theme-title =
+    .title = Mga tema
+addon-category-plugin = Mga Plugin
+addon-category-plugin-title =
+    .title = Mga Plugin
+addon-category-dictionary = Mga Talasalitaan
+addon-category-dictionary-title =
+    .title = Mga Talasalitaan
+addon-category-locale = Mga Wika
+addon-category-locale-title =
+    .title = Mga Wika
+addon-category-available-updates = Mga Available na Update
+addon-category-available-updates-title =
+    .title = Mga Available na Update
+addon-category-recent-updates = Mga Bagong Updates
+addon-category-recent-updates-title =
+    .title = Mga Bagong Updates
 
 ## These are global warnings
 
@@ -299,6 +331,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Magpakita ng Mas Kaunti
 go-back-button =
     .tooltiptext = Bumalik
+header-back-button =
+    .title = Bumalik
 
 ## Recommended add-ons page
 

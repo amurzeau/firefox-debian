@@ -287,6 +287,11 @@ sandbox-proc-type-content = tartalom
 sandbox-proc-type-file = fájltartalom
 sandbox-proc-type-media-plugin = médiabővítmény
 sandbox-proc-type-data-decoder = adatdekódoló
+startup-cache-title = Indítási gyorsítótár
+startup-cache-disk-cache-path = Lemezgyorsítótár elérési útja
+startup-cache-ignore-disk-cache = Lemezgyorsítótár figyelmen kívül hagyása
+startup-cache-found-disk-cache-on-init = Lemezgyorsítótár megtalálva indításkor
+startup-cache-wrote-to-disk-cache = Lemezgyorsítótárba írva
 launcher-process-status-0 = Engedélyezve
 launcher-process-status-1 = Hiba miatt letiltva
 launcher-process-status-2 = Kényszerítve letiltva
@@ -310,6 +315,7 @@ touch-enabled = érintőbemenet engedélyezve
 drag-enabled = gördítősáv húzása engedélyezve
 keyboard-enabled = billentyűzet engedélyezve
 autoscroll-enabled = automatikus görgetés engedélyezve
+zooming-enabled = sima csípéssel történő nagyítás engedélyezve
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

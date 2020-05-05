@@ -55,3 +55,43 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = สายใบรับรอง:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = ไม่สามารถเชื่อมต่อ
+deniedPortAccess-title = ที่อยู่นี้ถูกจำกัด
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = อืมม เรามีปัญหาในการค้นหาไซต์นั้น
+fileNotFound-title = ไม่พบไฟล์
+fileAccessDenied-title = การเข้าถึงไฟล์ถูกปฏิเสธ
+generic-title = อุปส์
+captivePortal-title = เข้าสู่ระบบเครือข่าย
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = อืมม ที่อยู่นั้นดูไม่ถูกต้อง
+netInterrupt-title = การเชื่อมต่อถูกขัดจังหวะ
+notCached-title = เอกสารหมดอายุ
+netOffline-title = โหมดออฟไลน์
+contentEncodingError-title = ข้อผิดพลาดการเข้ารหัสเนื้อหา
+unsafeContentType-title = ชนิดไฟล์ที่ไม่ปลอดภัย
+netReset-title = ตัดการเชื่อมต่อแล้ว
+netTimeout-title = การเชื่อมต่อหมดเวลา
+unknownProtocolFound-title = ไม่เข้าใจที่อยู่
+proxyConnectFailure-title = เซิร์ฟเวอร์พร็อกซีปฏิเสธการเชื่อมต่อ
+proxyResolveFailure-title = ไม่สามารถค้นหาเซิร์ฟเวอร์พร็อกซี
+redirectLoop-title = หน้าไม่ได้เปลี่ยนเส้นทางอย่างถูกต้อง
+unknownSocketType-title = การตอบสนองที่ไม่คาดคิดจากเซิร์ฟเวอร์
+nssFailure2-title = การเชื่อมต่อปลอดภัยล้มเหลว
+cspBlocked-title = ปิดกั้นแล้วโดยนโยบายความปลอดภัยของเนื้อหา
+xfoBlocked-title = ถูกปิดกั้นโดยนโยบาย X-Frame-Options
+corruptedContentError-title = ข้อผิดพลาดเนื้อหาเสียหาย
+remoteXUL-title = XUL ระยะไกล
+sslv3Used-title = ไม่สามารถเชื่อมต่ออย่างปลอดภัย
+inadequateSecurityError-title = การเชื่อมต่อของคุณไม่ปลอดภัย
+blockedByPolicy-title = หน้าที่ถูกปิดกั้น
+clockSkewError-title = นาฬิกาคอมพิวเตอร์ของคุณผิด
+networkProtocolError-title = ข้อผิดพลาดโปรโตคอลเครือข่าย
+nssBadCert-title = คำเตือน: ความเสี่ยงด้านความปลอดภัยที่อาจเกิดขึ้นข้างหน้า
+nssBadCert-sts-title = ไม่ได้เชื่อมต่อ: ปัญหาความปลอดภัยที่อาจเกิดขึ้น
+certerror-mitm-title = มีซอฟต์แวร์ที่ทำให้ { -brand-short-name } ไม่สามารถเชื่อมต่อไปที่ไซต์นี้อย่างปลอดภัยได้

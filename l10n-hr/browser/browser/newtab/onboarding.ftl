@@ -21,12 +21,12 @@ onboarding-button-label-get-started = Započnite
 onboarding-welcome-header = Dobro došli u { -brand-short-name }
 onboarding-welcome-body = Imaš preglednik.<br/>Upoznaj ostale { -brand-product-name } dijelove.
 onboarding-welcome-learn-more = Saznaj više o prednostima.
+onboarding-join-form-header = Pridruži se { -brand-product-name }
 onboarding-welcome-modal-get-body = Imaš preglednik.<br/>Sad upoznaj ostatak { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Nadopuni svoju zaštitu privatnosti.
 onboarding-welcome-modal-privacy-body = Imaš preglednik. Dodajmo još više zaštite privatnosti.
 onboarding-welcome-modal-family-learn-more = Saznaj više o { -brand-product-name } obitelji proizvoda.
 onboarding-welcome-form-header = Započni ovdje
-onboarding-join-form-header = Pridruži se { -brand-product-name }
 onboarding-join-form-body = Za početak unesi svoju adresu e-pošte.
 onboarding-join-form-email =
     .placeholder = Upiši e-adresu
@@ -44,7 +44,7 @@ onboarding-cards-dismiss =
 
 ## Welcome full page string
 
-onboarding-fullpage-welcome-subheader = Počnimo s istraživanjem svega što možete učiniti.
+onboarding-fullpage-welcome-subheader = Počnimo s istraživanjem svega što možeš učiniti.
 onboarding-fullpage-form-email =
     .placeholder = Tvoja e-adresa …
 
@@ -96,9 +96,9 @@ onboarding-private-browsing-text = Pregledaj web anonimno. Privatno pregledavanj
 onboarding-screenshots-title = Snimke ekrana
 onboarding-screenshots-text = Snimite, spremite i dijelite snimke ekrana - bez napuštanja { -brand-short-name }a. Snimite dio ili cijelu stranicu dok pretražujete. Onda spremite na internet za brzi pristup i dijeljenje.
 onboarding-addons-title = Dodaci
-onboarding-addons-text = Dodaj daljnje funkcije, kako bi { -brand-short-name } radio još bolje za tebe. Usporedi cijene, provjeri vremensku prognozu ili izrazi svoj karakter prilagođenim izgledom pretraživača.
+onboarding-addons-text = Dodaj daljnje funkcije, kako bi { -brand-short-name } radio još bolje za tebe. Usporedi cijene, provjeri vremensku prognozu ili izrazi svoj karakter prilagođenim izgledom.
 onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Pretražujte brže, pametnije i sigurnije s dodacima kao Ghostery, što vam omogućuje blokiranje dosadnih oglasa.
+onboarding-ghostery-text = Pregledaj brže, pametnije i sigurnije s dodacima poput Ghostery, što omogućuje blokiranje dosadnih oglasa.
 # Note: "Sync" in this case is a generic verb, as in "to synchronize"
 onboarding-fxa-title = Sinkronizacija
 onboarding-fxa-text = Otvori { -fxaccount-brand-name } i sinkroniziraj svoje zabilješke, lozinke i otvorene kartice gdjegod koristiš { -brand-short-name }.
@@ -113,10 +113,10 @@ onboarding-firefox-monitor-title = Pazi na curenje podataka
 onboarding-firefox-monitor-text = { -monitor-brand-name } nadzire, pojavljuje li se tvoja e-adresa u podacima koji su procurili na internetu i obavještava te ukoliko je otkrije.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } nadzire, pojavljuje li se tvoja e-adresa u poznatim podacima koji su procurili na internetu i obavještava te ukoliko je otkrije.
 onboarding-firefox-monitor-button = Prijavi se za upozorenja
-onboarding-browse-privately-title = Pretražujte privatno
+onboarding-browse-privately-title = Pregledaj privatno
 onboarding-browse-privately-text = Privatno pregledavanje briše povijest pretraživanja i pregledavanja kako bi ostalo skriveno od ostalih koje koriste isto računalo.
 onboarding-browse-privately-button = Otvori privatni prozor
-onboarding-firefox-send-title = Držite svoje dijeljene datoteke privatnima
+onboarding-firefox-send-title = Drži svoje dijeljene datoteke privatnima
 onboarding-firefox-send-text2 = Prenesite svoje datoteke na { -send-brand-name } kako biste ih dijelili s potpunom enkripcijom i poveznicom koja se automatski briše.
 onboarding-firefox-send-button = Isprobaj { -send-brand-name }
 onboarding-mobile-phone-title = Preuzmi { -brand-product-name } za svoj mobitel
@@ -140,13 +140,16 @@ onboarding-lockwise-passwords-text2 = Zaštitite lozinke koje spremite i jednost
 onboarding-lockwise-passwords-button2 = Preuzmi program
 onboarding-lockwise-strong-passwords-title = Stvori i spremi jake lozinke
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } stvara snažne lozinke na licu mjesta i sprema ih sve na jedno mjesto.
-onboarding-lockwise-strong-passwords-button = Upravljanje prijavama
+onboarding-lockwise-strong-passwords-button = Upravljaj prijavama
 onboarding-facebook-container-title = Postavi granice s Facebookom
 onboarding-facebook-container-text2 = { -facebook-container-brand-name } drži tvoj profil odvojeno od svega drugoga, otežavajući Facebooku da ti ciljano prikazuje reklame.
 onboarding-facebook-container-button = Instaliraj dodatak
 onboarding-import-browser-settings-title = Uvezi svoje zabilješke, lozinke i još mnogo toga
 onboarding-import-browser-settings-text = Uronite — jednostavno prenesite svoje Chrome stranice i postavke.
 onboarding-import-browser-settings-button = Uvoz podataka iz Chromea
+onboarding-personal-data-promise-title = Privatno po dizajnu
+onboarding-personal-data-promise-text = { -brand-product-name } poštuje tvoje podatke – traži samo najosnovnije podatke, štiti ih i jasno objašnjava na koji način ih koristi.
+onboarding-personal-data-promise-button = Pročitajte naše obećanje
 
 ## Message strings belonging to the Return to AMO flow
 

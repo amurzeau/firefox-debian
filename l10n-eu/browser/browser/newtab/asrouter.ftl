@@ -192,9 +192,9 @@ cfr-doorhanger-socialtracking-dont-show-again = Ez erakutsi honelako mezu gehiag
     .accesskey = z
 cfr-doorhanger-socialtracking-heading = Sare sozial batek zure jarraipena egitea eragotzi du { -brand-short-name }(e)k
 cfr-doorhanger-socialtracking-description = Garrantzitsua da zure pribatutasuna. Sare sozialetako ohiko jarraipen-elementuak blokeatzen ditu orain { -brand-short-name }(e)k, zure lineako jarduerari buruz bil ditzaketen datuak mugatuz.
-cfr-doorhanger-fingerprinters-heading = Hatz-marka bidezko jarraipena blokeatu da orri honetan
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name }-ek hatz-marka bidezko jarraipena blokeatu du orri honetan
 cfr-doorhanger-fingerprinters-description = Garrantzitsua da zure pribatutasuna. Hatz-marka bidezko jarraipena blokeatzen du orain { -brand-short-name }(e)k, zeinak zure gailuari buruzko identifikazio bakarreko datuak biltzen dituen zure jarraipena egiteko.
-cfr-doorhanger-cryptominers-heading = Kriptomeatzari bat blokeatu da orri honetan
+cfr-doorhanger-cryptominers-heading = { -brand-short-name }-ek kriptomeatzari bat blokeatu du orri honetan
 cfr-doorhanger-cryptominers-description = Garrantzitsua da zure pribatutasuna. Kriptomeatzariak blokeatzen ditu orain { -brand-short-name }(e)k, zeinak zure sistemaren konputazio-ahalmena erabiltzen duten diru digitala ustiatzeko.
 
 ## Enhanced Tracking Protection Milestones
@@ -209,3 +209,24 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Ikusi guztiak
     .accesskey = I
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = Sortu erraz pasahitz seguruak
+cfr-whatsnew-lockwise-body = Zaila da kontu bakoitzerako pasahitz seguru eta bakarrak erabiltzea. Pasahitz bat sortzean, hautatu pasahitz eremua { -brand-shorter-name }(e)k sortutako pasahitz segurua erabiltzeko.
+cfr-whatsnew-lockwise-icon-alt = { -lockwise-brand-short-name } ikonoa
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = Jaso babesik gabeko pasahitzei buruzko abisuak
+cfr-whatsnew-passwords-body = Hackerrek badakite jendeak pasahitz berdinak berrerabiltzen dituztela. Hainbat gunetan pasahitz berdina erabili eta gune horietakoren bat datu-urratze batean balego, abisua ikusiko duzu { -lockwise-brand-short-name }(e)n gune horietako zure pasahitza alda dezazun.
+cfr-whatsnew-passwords-icon-alt = Babesik gabeko pasahitzaren giltzaren ikonoa
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = Bideoa beste batean pantaila osoan ikusteko aukera
+cfr-whatsnew-pip-fullscreen-body = Bideo bat leiho mugikor batera eramatean, orain klik bikoitzarekin pantaila osora ere eraman dezakezu.
+cfr-whatsnew-pip-fullscreen-icon-alt = Bideoa beste bideo batean eginbideko ikonoa

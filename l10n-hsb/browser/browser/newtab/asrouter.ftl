@@ -221,3 +221,24 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Wšě pokazać
     .accesskey = k
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = Wěste hesła lochko wutworić
+cfr-whatsnew-lockwise-body = Je ćežko na to myslić, jónkróćne, wěste hesła za kóžde konto wužiwać. Hdyž hesło wutworjeće, wubjerće hesłowe polo, zo byšće wěste, spłodźene hesło z { -brand-shorter-name } wužiwał.
+cfr-whatsnew-lockwise-icon-alt = Symbol { -lockwise-brand-short-name }
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = Dóstańcé warnowanja wo zranitych hesłach
+cfr-whatsnew-passwords-body = Hackerojo wědźa, zo ludźo samsne hesła wužiwaja. Jeli sće samsne hesło na wjacorych sydłach wužił, a jedne z tych sydłow je w datowej dźěrje było, budźeće warnowanje w { -lockwise-brand-short-name } widźeć, zo maće swoje hesło na tych sydłach změnić.
+cfr-whatsnew-passwords-icon-alt = Symbol zranitych hesłow
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = Połnu wobrazowku wobraz-we-wobrazu wužiwać
+cfr-whatsnew-pip-fullscreen-body = Hdyž widejo do znošowaceho so wokna tykaće, móžeće dwójce na te wokno kliknyć, zo byšće jo w połnej wobrazowce wobhladał.
+cfr-whatsnew-pip-fullscreen-icon-alt = Symbol wobraz-we-wobrazu

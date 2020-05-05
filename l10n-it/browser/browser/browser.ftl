@@ -43,9 +43,6 @@ browser-main-window-content-title-private =
         [macos] { $title } - (Navigazione anonima)
        *[other] { $title } - { -brand-full-name } (Navigazione anonima)
     }
-
-##
-
 urlbar-identity-button =
     .aria-label = Visualizza informazioni sul sito
 
@@ -105,8 +102,10 @@ urlbar-tip-icon-description =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Scrivi di meno e trova più risultati: cerca con { $engineName } direttamente dalla barra degli indirizzi.
-urlbar-search-tips-redirect = Inizia da qui le tue ricerche per visualizzare suggerimenti da { $engineName } e dalla cronologia di navigazione.
 urlbar-search-tips-redirect-2 = Inizia le tue ricerche dalla barra degli indirizzi per visualizzare suggerimenti da { $engineName } e dalla cronologia di navigazione.
+
+##
+
 
 ##
 
@@ -151,6 +150,8 @@ page-action-manage-extension =
     .label = Gestisci estensione…
 page-action-remove-from-urlbar =
     .label = Rimuovi dalla barra degli indirizzi
+page-action-remove-extension =
+    .label = Rimuovi estensione
 
 ## Auto-hide Context Menu
 
@@ -241,3 +242,24 @@ identity-enable-mixed-content-blocking =
     .accesskey = A
 identity-more-info-link-text =
     .label = Ulteriori informazioni
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Riduci a icona
+browser-window-maximize-button =
+    .tooltiptext = Ingrandisci
+browser-window-restore-down-button =
+    .tooltiptext = Ripristina giù
+browser-window-close-button =
+    .tooltiptext = Chiudi
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Fotocamera da condividere:
+    .accesskey = F
+popup-select-microphone =
+    .value = Microfono da condividere:
+    .accesskey = M
+popup-all-windows-shared = Tutte le finestre visibili sullo schermo verranno condivise.

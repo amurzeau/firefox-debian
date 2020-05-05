@@ -272,6 +272,7 @@ uses-tiling = Utiliza lo caladat
 content-uses-tiling = Utiliza lo caladat (contengut)
 off-main-thread-paint-enabled = Desenhar fòra en del fil d’execucion màger activat
 off-main-thread-paint-worker-count = Nombre de workers que participan al painting en defòra del fial d’execucion principal
+target-frame-rate = Frequéncia d’imatge cibla
 min-lib-versions = Version minimala esperada
 loaded-lib-versions = Version utilizada
 has-seccomp-bpf = Seccomp-BPF (Filtratge dels apèls sistèma)
@@ -285,6 +286,12 @@ effective-content-sandbox-level = Nivèl del nauc de sabla efectiu pels procedim
 sandbox-proc-type-content = contengut
 sandbox-proc-type-file = contengut del fichièr
 sandbox-proc-type-media-plugin = plugin mèdia
+sandbox-proc-type-data-decoder = descodador de donadas
+startup-cache-title = Cache d’aviada
+startup-cache-disk-cache-path = Camin del cache disc
+startup-cache-ignore-disk-cache = Ignorar lo cache disc
+startup-cache-found-disk-cache-on-init = Cache disc trobat a l’inicializacion
+startup-cache-wrote-to-disk-cache = Escritura sul cache disc
 launcher-process-status-0 = Activat
 launcher-process-status-1 = Desactivada a causa d’una error
 launcher-process-status-2 = Desactivada de fòrça
@@ -308,6 +315,7 @@ touch-enabled = entrada tactila activada
 drag-enabled = limpada de barra de desfilament activada
 keyboard-enabled = clavièr activat
 autoscroll-enabled = desfialament automatic activat
+zooming-enabled = zoom doç al det activat
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

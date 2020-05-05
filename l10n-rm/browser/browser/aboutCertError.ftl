@@ -55,3 +55,43 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Chadaina da certificats:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Connexiun betg reussida
+deniedPortAccess-title = Il port è bloccà per motivs da segirezza
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Dianteren. Nus avain difficultads da chattar questa pagina.
+fileNotFound-title = Impussibel da chattar la datoteca
+fileAccessDenied-title = Refusà l'access a la datoteca
+generic-title = Oh Dieu!
+captivePortal-title = S'annunziar tar la rait
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm. Questa adressa na para betg correcta.
+netInterrupt-title = La connexiun è interrutta
+notCached-title = Document scrudà
+netOffline-title = Modus offline
+contentEncodingError-title = Cuntegns cun codaziun nunvalida
+unsafeContentType-title = Tip da datoteca malsegir
+netReset-title = La connexiun è interrutta
+netTimeout-title = Il temp da la rait è surpassà
+unknownProtocolFound-title = Impussibel da chapir l'adressa
+proxyConnectFailure-title = Il proxy server refusescha la connexiun
+proxyResolveFailure-title = Impussibel da chattar il proxy server
+redirectLoop-title = Cirquit da sviament
+unknownSocketType-title = Resposta nuncorrecta
+nssFailure2-title = La connexiun segira n'è betg reussida
+cspBlocked-title = Bloccà da las directivas per la segirezza dal cuntegn
+xfoBlocked-title = Bloccà dad ina directiva X-Frame-Options
+corruptedContentError-title = Errur da cuntegn donnegià
+remoteXUL-title = Remote-XUL
+sslv3Used-title = Impussibel da connectar a moda segira
+inadequateSecurityError-title = Tia connexiun n'è betg segirada
+blockedByPolicy-title = Pagina bloccada
+clockSkewError-title = L'ura da tes computer na constat betg
+networkProtocolError-title = Errur dal protocol da rait
+nssBadCert-title = Attenziun: Eventual ristg per la segirezza en vista
+nssBadCert-sts-title = Bloccà la connexiun: Eventual problem da segirezza
+certerror-mitm-title = Software impedescha che { -brand-short-name } connecteschia a moda segira cun questa website

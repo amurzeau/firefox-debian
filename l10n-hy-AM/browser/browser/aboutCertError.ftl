@@ -55,3 +55,43 @@ cert-error-details-hsts-label = HTTP խիստ փոխանցման անվտանգ�
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Վկայագրի նպատակ.
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Չհաջողվեց կապ հաստատել
+deniedPortAccess-title = Այս հասցեն արգելափակված է
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Հնարավոր չէ գտնել այդ կայքը:
+fileNotFound-title = Նիշքը չի գտնվել
+fileAccessDenied-title = Մատչումը ֆայլին մերժված է
+generic-title = Վայ։
+captivePortal-title = Մուտք գործել ցանց
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Կարծես հասցեն ճիշտ չէ:
+netInterrupt-title = Կապը խզվեց
+notCached-title = Փաստաթուղթը սպառվել է
+netOffline-title = Անցանց եղանակ
+contentEncodingError-title = Բովանդակության Կոդավորման Սխալ
+unsafeContentType-title = Ոչ անվտանգ ֆայլի տեսակ
+netReset-title = Կապը խզվեց
+netTimeout-title = Կապի հաստատման ժամանակը սպառվեց
+unknownProtocolFound-title = Հասցեն անհասկանալի էր
+proxyConnectFailure-title = Պրոքսի սպասարկիչը մերժում է ընդունել կապը
+proxyResolveFailure-title = Չի ստացվում գտնել պրոքսի սպասարկիչը
+redirectLoop-title = Էջի սխալ վերահասցեավորում
+unknownSocketType-title = Սպասարկիչի պատասխանը անհասկանալի է:
+nssFailure2-title = Չհաջողվեց կատարել Պաշտպանված կապակցում
+cspBlocked-title = Արգելափակվել է Կոնտենտի Անվտանգության Քաղաքականության կողմից
+xfoBlocked-title = Արգելափակված է X-Frame-Options քաղաքականությամբ
+corruptedContentError-title = Բովանդակությունը վնասված է
+remoteXUL-title = Հեռադիր XUL
+sslv3Used-title = Չհաջողվեց անվտանգ կապակցումը
+inadequateSecurityError-title = Կապակցումն անվտանգ չէ
+blockedByPolicy-title = Արգելափակված էջ
+clockSkewError-title = Ձեր համակարգչի ժամացույցը սխալ է
+networkProtocolError-title = Ցանցի հաղորդակարգի սխալ
+nssBadCert-title = Զգուշացում․ հնարավոր է ապահովության վտանգ
+nssBadCert-sts-title = Չկապակցվեց․ հնարավոր անվտանգության թողարկող
+certerror-mitm-title = Ծրագիրը կանխում է { -brand-short-name } Անվտանգորեն կապվելով այս կայքի հետ։

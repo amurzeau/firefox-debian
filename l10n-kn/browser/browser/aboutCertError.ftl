@@ -18,3 +18,31 @@ cert-error-details-hsts-label = HTTP ಸ್ಟ್ರಿಕ್ಟ್ ಟ್ರಾ
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP ಸಾರ್ವಜನಿಕ ಕೀಲಿ ಪಿನ್ನಿಂಗ್: { $hasHPKP }
 cert-error-details-cert-chain-label = ಪ್ರಮಾಣಪತ್ರದ ಕೊಂಡಿ:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = ಸಂಪರ್ಕ ಹೊಂದಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ
+deniedPortAccess-title = ಈ ವಿಳಾಸವು ಪ್ರತಿಬಂಧಿಸಲ್ಪಟ್ಟಿದೆ
+fileNotFound-title = ಕಡತವು  ಕಂಡುಬಂದಿಲ್ಲ
+fileAccessDenied-title = ಕಡತ ಪ್ರವೇಶವನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ
+generic-title = ಓಹ್.
+captivePortal-title = ಜಾಲ ಸಂಪರ್ಕಕ್ಕೆ ಲಾಗಿನ್ ಆಗಿ
+netInterrupt-title = ಸಂಪರ್ಕಕ್ಕೆ ಅಡಚಣೆಯಾಗಿದೆ
+notCached-title = ದಸ್ತಾವೇಜಿನ ವಾಯಿದೆ ತೀರಿದೆ
+netOffline-title = ಆಫ್‍ಲೈನ್‍ ಕ್ರಮ
+contentEncodingError-title = ವಿಷಯದ ಎನ್ಕೋಡಿಂಗ್‌ ದೋಷ
+unsafeContentType-title = ಅಸುರಕ್ಷಿತ ಕಡತದ ಬಗೆ
+netReset-title = ಸಂಪರ್ಕವು ಮರಳಿ ಹೊಂದಿಸಲ್ಪಟ್ಟಿತು
+netTimeout-title = ಸಂಪರ್ಕದ ಕಾಲಾವಧಿ ಮುಗಿದಿದೆ
+unknownProtocolFound-title = ವಿಳಾಸವನ್ನು ಅರ್ಥ ಮಾಡಿಕೊಳ್ಳಲಾಗಿಲ್ಲ
+proxyConnectFailure-title = ಪ್ರಾಕ್ಸಿ ಪರಿಚಾರಕವು ಸಂಪರ್ಕವನ್ನು ನಿರ್ಬಂಧಿಸುತ್ತಿದೆ
+proxyResolveFailure-title = ಪ್ರಾಕ್ಸಿ ಪರಿಚಾರಕವನ್ನು ಪತ್ತೆಮಾಡಲಾಗಿಲ್ಲ
+redirectLoop-title = ಪುಟವು ಸರಿಯಾಗಿ ಮರಳಿ ನಿರ್ದೇಶನಗೊಳ್ಳುತ್ತಿಲ್ಲ
+unknownSocketType-title = ಪರಿಚಾರಕದಿಂದ ಅನಿರೀಕ್ಷಿತ ಪ್ರತಿಕ್ರಿಯೆ
+nssFailure2-title = ಸುರಕ್ಷಿತ ಸಂಪರ್ಕವು ವಿಫಲಗೊಂಡಿದೆ
+cspBlocked-title = ವಿಷಯ ಸುರಕ್ಷತಾ ನಿಯಮದಿಂದ ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ
+corruptedContentError-title = ವಿಷಯ ಹಾಳಾದ ದೋಷ
+remoteXUL-title = ದೂರಸ್ಥ XUL
+sslv3Used-title = ಸುರಕ್ಷಿತವಾಗಿ ಸಂಪರ್ಕ ಸಾಧಿಸಲು ಸಾಧ್ಯವಾಗಿಲ್ಲ
+inadequateSecurityError-title = ನಿಮ್ಮ ಸಂಪರ್ಕವು ಸುರಕ್ಷಿತವಾಗಿಲ್ಲ‍
+blockedByPolicy-title = ನಿರ್ಬಂಧಿಸಿದ ಪುಟ

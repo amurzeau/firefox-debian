@@ -154,7 +154,7 @@ warn-on-open-many-tabs =
     .label = Vos avisar quand dobrir d'onglets multiples pòt alentir { -brand-short-name }
     .accesskey = d
 switch-links-to-new-tabs =
-    .label = En dobrir un ligam dins un onglet novèl, i anar sul pic
+    .label = En dobrissent un ligam dins un onglet novèl, i anar sul pic
     .accesskey = d
 show-tabs-in-taskbar =
     .label = Afichar los apercebuts d'onglets dins la barra dels prètzfaits de Windows
@@ -233,7 +233,7 @@ translate-exceptions =
     .label = Excepcions…
     .accesskey = x
 check-user-spelling =
-    .label = Verificar l'ortografia en picar
+    .label = Verificar l'ortografia en picant
     .accesskey = t
 
 ## General Section - Files and Applications
@@ -359,13 +359,13 @@ update-pref-write-failure-title = Fracàs d’escritura
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Enregistrament impossible de las preferéncias. Impossible d’escriure dins lo fichièr : { $path }
-update-setting-write-failure-title = Error en enregistrar las preferéncias de mesas a jorn
+update-setting-write-failure-title = Error en enregistrant las preferéncias de mesas a jorn
 # Variables:
 #   $path (String) - Path to the configuration file
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
-    { -brand-short-name } a rescontrat una error e pas enregistrat aquesta modificacion. Notatz que modificar aqueste preferéncia de mesa a jorn requerís la permission d’escriure sul fichièr çai-jos. Vosautres o un administrator sistèma podètz benlèu corregir aquò en donant al grop Users l’accès complèt a aqueste fichièr.
+    { -brand-short-name } a rescontrat una error e pas enregistrat aquesta modificacion. Notatz que modificar aqueste preferéncia de mesa a jorn requerís la permission d’escriure sul fichièr çai-jos. Vosautres o un administrator sistèma podètz benlèu corregir aquò en donant al grop Users l’accès complet a aqueste fichièr.
     
     Escritura impossibla sul fichièr : { $path }
 update-in-progress-title = Actualizacion en cors
@@ -388,7 +388,7 @@ performance-allow-hw-accel =
     .accesskey = n
 performance-limit-content-process-option = Limita del procediment del contengut
     .accesskey = L
-performance-limit-content-process-enabled-desc = De procediments de contengut suplementaris pòdon melhorar las performanças en utiliazar d'onglets multiples, pasmens aquò utiliza mai de memòria.
+performance-limit-content-process-enabled-desc = De procediments de contengut suplementaris pòdon melhorar las performanças en utilizant d'onglets multiples, pasmens aquò utiliza mai de memòria.
 performance-limit-content-process-blocked-desc = Modificar lo nombre de procediments de contenguts es possible sonque amb la version multiprocediment de { -brand-short-name }. <a data-l10n-name="learn-more">Aprendre a verificar se de multiprocediments son activats</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
@@ -411,7 +411,7 @@ browsing-use-cursor-navigation =
     .label = Utilizar totjorn las tòcas de navegacion per se desplaçar a l'interior d'una pagina
     .accesskey = t
 browsing-search-on-start-typing =
-    .label = Començar la recèrca en picar lo tèxte
+    .label = Començar la recèrca en picant lo tèxte
     .accesskey = x
 browsing-picture-in-picture-toggle-enabled =
     .label = Activar lo contraròtle per l’incrustacion vidèo
@@ -844,7 +844,7 @@ sitedata-total-size-calculating = Calcul del pès de las donadas dels sites e de
 sitedata-total-size = Los cookies, lo cache e las donadas dels sites utilizan actualament { $value } { $unit } d’espaci disc.
 sitedata-learn-more = Ne saber mai
 sitedata-delete-on-close =
-    .label = Suprimir los cookies e donadas de sites en tampar { -brand-short-name }
+    .label = Suprimir los cookies e donadas de sites en tampant { -brand-short-name }
     .accesskey = c
 sitedata-delete-on-close-private-browsing = En mòde de navegacion privada permanent, los cookies e las donadas de sites son totjorn escafats a la tampadura de { -brand-short-name }.
 sitedata-allow-cookies-option =
@@ -863,6 +863,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Traçadors intersites
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Traçadors intersites e de malhums socials
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Los traçadors intersites e de malhums socials e isolar los cookies restants
 sitedata-option-block-unvisited =
     .label = Cookies de sites pas visitats
 sitedata-option-block-all-third-party =
@@ -939,6 +941,7 @@ content-blocking-etp-strict-desc = Proteccion renfortida, pòt copar unes sites 
 content-blocking-etp-custom-desc = Causissètz quins traçadors e scripts cal blocar.
 content-blocking-private-windows = Contengut utilizat per pistar dins las fenèstras de navegacion privada
 content-blocking-cross-site-tracking-cookies = Cookies de seguiment entre sites
+content-blocking-cross-site-tracking-cookies-plus-isolate = Los traçadors intersites, e isolar los cookies restants
 content-blocking-social-media-trackers = Traçadors de malhums socials
 content-blocking-all-cookies = Totes los cookies
 content-blocking-unvisited-cookies = Cookies dels sites pas visitats
@@ -951,6 +954,7 @@ content-blocking-warning-title = Atencion !
 content-blocking-warning-description = Lo blocatge del contengut pòt copar qualques sites. Es facil de desactivar lo blocatge pels sites que vos fisatz.
 content-blocking-learn-how = Descobrissètz cossí far
 content-blocking-etp-warning-description = Lo blocatge de traçadors pòt aver una incidéncia sus las foncionalitats de certans sites. Tornatz cargar una pagina amb los traçadors per cargar tot lo contengut.
+content-blocking-and-isolating-etp-warning-description = Lo blocatge de traçadors e l’isolacion dels cookies pòdon aver una incidéncia sus las foncionalitats de certans sites. Tornatz cargar una pagina amb los traçadors per cargar tot lo contengut.
 content-blocking-warning-learn-how = M’ensenhar cossí far
 content-blocking-reload-description = Car tornar cargar los onglets per aplicar aquestas modificacions.
 content-blocking-reload-tabs-button =
@@ -996,23 +1000,23 @@ permissions-header = Permissions
 permissions-location = Localizacion
 permissions-location-settings =
     .label = Paramètres…
-    .accesskey = a
+    .accesskey = P
 permissions-xr = Realitat virtuala
 permissions-xr-settings =
     .label = Paramètres…
-    .accesskey = t
+    .accesskey = P
 permissions-camera = Camèra
 permissions-camera-settings =
     .label = Paramètres…
-    .accesskey = r
+    .accesskey = P
 permissions-microphone = Microfòn
 permissions-microphone-settings =
     .label = Paramètres…
-    .accesskey = m
+    .accesskey = P
 permissions-notification = Notificacions
 permissions-notification-settings =
     .label = Paramètres…
-    .accesskey = m
+    .accesskey = P
 permissions-notification-link = Ne saber mai
 permissions-notification-pause =
     .label = Pausar las notificacions fins que { -brand-short-name } reavie
@@ -1026,7 +1030,7 @@ permissions-block-autoplay-media-exceptions =
 permissions-autoplay = Lectura automatica
 permissions-autoplay-settings =
     .label = Paramètres…
-    .accesskey = t
+    .accesskey = P
 permissions-block-popups =
     .label = Blocar las fenèstras sorgissentas
     .accesskey = B

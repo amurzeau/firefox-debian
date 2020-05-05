@@ -55,3 +55,43 @@ cert-error-details-hsts-label = HTTP Tekorosãite Jegueraha Katu: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Ñe'ẽñemi Pavẽrovapeguáva Ñesa'ỹijo: { $hasHPKP }
 cert-error-details-cert-chain-label = Kuatia mboajepyre rysýi:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Ndaikatúi eike
+deniedPortAccess-title = Ko kundaharenda ndaikatúi eipuru
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Hmm. Oĩ apañuãi ejuhu hag̃ua ko tenda.
+fileNotFound-title = Marandurenda ndojejuhúiva
+fileAccessDenied-title = Marandurendápe jeike noñemoneĩri
+generic-title = Oops.
+captivePortal-title = Eñepyrũ tembiapo ñandutípe
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Hmm. Ko kundaharape ndojehechaporãi.
+netInterrupt-title = Pe jeike ojejokóma
+notCached-title = Kuatiaite ndoikovéima
+netOffline-title = Jeike'ỹ ayvu
+contentEncodingError-title = Tetepy mbopapapy jejavy
+unsafeContentType-title = Peteĩchagua marandurenda hekorosã’ỹva
+netReset-title = Jeike oñepyrũjeýma
+netTimeout-title = Pe jeike ndoikovéima
+unknownProtocolFound-title = Pe kundaharape nahesakãi
+proxyConnectFailure-title = Mohendahavusu proxy ombotove jeike
+proxyResolveFailure-title = Ndaikatúi ojejuhu mohendahavusu proxy
+redirectLoop-title = Ko kuatiarogue ndoguerahajeýi hekoitépe
+unknownSocketType-title = Mbohovái eha'ãrõ’ỹva mohendahavusúgui
+nssFailure2-title = Jeikekatu jejavýva
+cspBlocked-title = Ojejoko hetepy rekorosãrã purureko rupi
+xfoBlocked-title = Ojokóma tapereko X-Frame-Options
+corruptedContentError-title = Tetepy marãva jejavy
+remoteXUL-title = XUL okaygua
+sslv3Used-title = Ndaikatúi eikekatu
+inadequateSecurityError-title = Nde jeike ndahekokatúi
+blockedByPolicy-title = Kuatiarogue jokopyre
+clockSkewError-title = Aravopapaha mohendaha rehegua oĩvai
+networkProtocolError-title = Jejavy guasu ñandutípe
+nssBadCert-title = Jesarekorã: Imarãkuaáva tenondeve
+nssBadCert-sts-title = Ndoikéi: Ikatu hína iñapañuãi tekorosãrã
+certerror-mitm-title = Ko software ojokohína { -brand-short-name } ani oike ko tendápe tekorasãme

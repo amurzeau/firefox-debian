@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Menu openen
-# This menuitem is only visible on Windows
-menu-menuitem-import = Wachtwoorden importeren…
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Importeren vanuit een andere browser…
 menu-menuitem-preferences =
@@ -50,6 +48,7 @@ login-list-sort-label-text = Sorteren op:
 login-list-name-option = Naam (A-Z)
 login-list-name-reverse-option = Naam (Z-A)
 login-list-breached-option = Websites met datalekken
+about-logins-login-list-alerts-option = Waarschuwingen
 login-list-last-changed-option = Laatst gewijzigd
 login-list-last-used-option = Laatst gebruikt
 login-list-intro-title = Geen aanmeldingen gevonden
@@ -61,6 +60,8 @@ login-list-item-subtitle-new-login = Voer uw aanmeldgegevens in
 login-list-item-subtitle-missing-username = (geen gebruikersnaam)
 about-logins-list-item-breach-icon =
     .title = Website met datalek
+about-logins-list-item-vulnerable-password-icon =
+    .title = Kwetsbaar wachtwoord
 
 ## Introduction screen
 
@@ -160,10 +161,25 @@ confirm-discard-changes-dialog-confirm-button = Verwerpen
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Websitedatalek
 breach-alert-text = Wachtwoorden uit deze website zijn gelekt of gestolen sinds u voor het laatst uw aanmeldgegevens hebt bijgewerkt. Wijzig uw wachtwoord om uw account te beschermen.
 breach-alert-link = Meer info over dit datalek
 breach-alert-dismiss =
     .title = Deze waarschuwing sluiten
+about-logins-breach-alert-date = Dit lek is voorgevallen op { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Naar { $hostname }
+about-logins-breach-alert-learn-more-link = Meer info
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Kwetsbaar wachtwoord
+about-logins-vulnerable-alert-text2 = Dit wachtwoord is gebruikt op een andere account, die waarschijnlijk door een datalek is getroffen. Het hergebruiken van aanmeldgegevens brengt al uw accounts in gevaar. Wijzig dit wachtwoord.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Naar { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Meer info
 
 ## Error Messages
 

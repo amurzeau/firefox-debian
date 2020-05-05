@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Встановити додаток з файлу…
     .accesskey = В
 help-button = Підтримка додатків
+sidebar-help-button-title =
+    .title = Підтримка додатків
 preferences =
     { PLATFORM() ->
         [windows] Налаштування { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Інструменти для всіх додатків
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Налаштування { -brand-short-name }
+           *[other] Налаштування { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Деякі розширення не можуть бути перевірені
 show-all-extensions-button =
@@ -172,6 +180,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Доступні оновлення
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Рекомендації
+addon-category-discover-title =
+    .title = Рекомендації
+addon-category-extension = Розширення
+addon-category-extension-title =
+    .title = Розширення
+addon-category-theme = Теми
+addon-category-theme-title =
+    .title = Теми
+addon-category-plugin = Плагіни
+addon-category-plugin-title =
+    .title = Плагіни
+addon-category-dictionary = Словники
+addon-category-dictionary-title =
+    .title = Словники
+addon-category-locale = Мови
+addon-category-locale-title =
+    .title = Мови
+addon-category-available-updates = Доступні оновлення
+addon-category-available-updates-title =
+    .title = Доступні оновлення
+addon-category-recent-updates = Недавні оновлення
+addon-category-recent-updates-title =
+    .title = Недавні оновлення
 
 ## These are global warnings
 
@@ -284,6 +316,7 @@ shortcuts-no-commands = Такі розширення не мають комбі
 shortcuts-input =
     .placeholder = Введіть комбінацію клавіш
 shortcuts-browserAction = Активувати розширення
+shortcuts-browserAction2 = Активувати кнопку панелі
 shortcuts-pageAction = Активувати дію сторінки
 shortcuts-sidebarAction = Перемкнути бічну панель
 shortcuts-modifier-mac = Додайте Ctrl, Alt, або ⌘
@@ -310,6 +343,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Показати менше
 go-back-button =
     .tooltiptext = Повернутись назад
+header-back-button =
+    .title = Повернутись назад
 
 ## Recommended add-ons page
 

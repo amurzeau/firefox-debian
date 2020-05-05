@@ -26,6 +26,7 @@ policy-DisabledCiphers = Desactivar los chiframents.
 policy-DefaultDownloadDirectory = Definir lo dossièr de telecargament per defaut
 policy-DisableAppUpdate = Empacha lo navigador de se metre a jorn.
 policy-DisableBuiltinPDFViewer = Desactiva PDF.js, lo visionador integrat de PDF dins { -brand-short-name }.
+policy-DisableDefaultBrowserAgent = Empachar l’agent navegador per defaut de realizar d’accions. S’aplica pas que per Windows ; las autras plataformas an pas aquel agent.
 policy-DisableDeveloperTools = Blòca l’accès a las aisinas de desvolopament.
 policy-DisableFeedbackCommands = Desactiva las comandas que permeton de mandar de comentaris dins lo menú d’ajuda (Donar vòstre vejaire e senhalar un site enganaire)
 policy-DisableFirefoxAccounts = Desactiva los servicis basats sus { -fxaccount-brand-name }, e tanben Sync.
@@ -48,7 +49,7 @@ policy-DisableTelemetry = Desactiva la telemetria.
 policy-DisplayBookmarksToolbar = Aficha la barra personala per defaut.
 policy-DisplayMenuBar = Aficha la barra de menús per defaut.
 policy-DNSOverHTTPS = Permet de configurar lo DNS over HTTPS.
-policy-DontCheckDefaultBrowser = Desactiva la verificacion del navegador per defaut en aviar.
+policy-DontCheckDefaultBrowser = Desactiva la verificacion del navegador per defaut en aviant.
 policy-DownloadDirectory = Definir e verrolhar lo dossièr de telecargament.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Activa o desactiva lo blocatge del contengut e permet de clavar aqueste causida.
@@ -65,19 +66,32 @@ policy-HardwareAcceleration = Se fals, desactiva l’acceleracion materiala.
 policy-Homepage = Definís la pagina d’acuèlh e prepausa de la verrolhar.
 policy-InstallAddonsPermission = Autoriza certans sites web d'installar d'extensions.
 policy-LegacyProfiles = Desactivar la foncionalitat que fòrça l’utilizacion d’un perfil distint per cada installacion.
+
+## Do not translate "SameSite", it's the name of a cookie attribute.
+
+policy-LegacySameSiteCookieBehaviorEnabled = Activar lo paramètre per defaut del compòrtament dels cookies SameSite.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Bascular lo compòrtament per defaut SameSite dels cookies dels sites especificats.
+
+##
+
 policy-LocalFileLinks = Autorizar los sites web a utilizar los ligams locals.
 policy-NetworkPrediction = Activar o desactivar la prediccion ret (resolucion DNS anticipada).
 policy-NewTabPage = Activar o desactivar la pagina d’onglet novèl.
+policy-NoDefaultBookmarks = Desactivar la creacion automatica dels marcapaginas per defaut integrats de { -brand-short-name }, e tanben los marcapaginas intelligents (sites mai visitats e sites mai recents); Nòta : aquesta politica s’aplica pas que s’es activada al primièr lançament del perfil.
 policy-OfferToSaveLogins = Forçar lo paramètre que permet a { -brand-short-name } de prepausar de memorizar los identificants e senhals. Las valors true e false son acceptadas.
 policy-OfferToSaveLoginsDefault = Definir la valor per defaut de { -brand-short-name } tocant la memorizacion dels identificants e senhals. Las valors true e false son acceptadas.
+policy-OverrideFirstRunPage = Remplaçar la pagina de primièr lançament. Daissatz aquesta règla voida per desactivar la pagina de primièr lançament.
+policy-OverridePostUpdatePage = Contrarotlar la pagina « Qué de nòu » aprèp una mesa a jorn. Daissatz aquesta règla voida per desactivar la pagina aprèp mesa a jorn.
 policy-PasswordManagerEnabled = Activar lo salvament dels senhals al gestionari de senhals.
 policy-Permissions2 = Configurar las autorizacions per la camèra, lo microfòn, la localizacion, las notificacions e la lectura automatica.
 policy-PopupBlocking = Autoriza unes sites web a mostrar de fenèstras surgentas per defaut.
+policy-Preferences = Definir e verrolhar la valor d’un jos-ensemble de preferéncias.
 policy-PromptForDownloadLocation = Demandar ont enregistrar los fichièrs pendent lo telecargament.
 policy-Proxy = Configura los paramètres del servidor mandatari.
 policy-RequestedLocales = Definís la lista de las lengas demandadas per l’aplicacion dins l‘òrdre de preferéncia.
 policy-SanitizeOnShutdown2 = Suprimís las donadas de navigacion a la tampadura.
 policy-SearchBar = Definís l’emplaçament per defaut de la barra de recèrca. L’utilizaire garda la possibilitat de personalizar aquò.
+policy-SearchEngines = Configurar los paramètres del motor de recèrca. Aquesta proprietat es pas disponibla que per las version Extended Support Release (ESR)
 policy-SearchSuggestEnabled = Activar o desactivar las suggestions de recèrca.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Permet d’installar de moduls PKCS #11.

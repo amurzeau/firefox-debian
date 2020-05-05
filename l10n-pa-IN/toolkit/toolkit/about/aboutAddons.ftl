@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = …ਐਡ-ਆਨ ਫਾਈਲ ਤੋਂ ਇੰਸਟਾਲ ਕਰੋ
     .accesskey = I
 help-button = ਐਡ-ਆਨ ਸਹਿਯੋਗ
+sidebar-help-button-title =
+    .title = ਐਡ-ਆਨ ਸਹਿਯੋਗ
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } ਚੋਣਾਂ
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = ਸਭ ਐਡ-ਆਨ ਲਈ ਟੂਲ
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } ਚੋਣਾਂ
+           *[other] { -brand-short-name } ਪਸੰਦਾਂ
+        }
 show-unsigned-extensions-button =
     .label = ਕੁਝ ਇਕਸਟੈਨਸ਼ਨਾਂ ਦੀ ਜਾਂਚ ਨਹੀਂ ਕੀਤੀ ਜਾ ਸਕੀ
 show-all-extensions-button =
@@ -164,6 +172,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = ਅੱਪਡੇਟ ਮੌਜੂਦ ਹਨ
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = ਸਿਫਾਰਸ਼
+addon-category-discover-title =
+    .title = ਸਿਫਾਰਸ਼
+addon-category-extension = ਇਕਸਟੈਨਸ਼ਨ
+addon-category-extension-title =
+    .title = ਇਕਸਟੈਨਸ਼ਨ
+addon-category-theme = ਥੀਮ
+addon-category-theme-title =
+    .title = ਥੀਮ
+addon-category-plugin = ਪਲੱਗਇਨ
+addon-category-plugin-title =
+    .title = ਪਲੱਗਇਨ
+addon-category-dictionary = ਡਿਕਸ਼ਨਰੀਆਂ
+addon-category-dictionary-title =
+    .title = ਡਿਕਸ਼ਨਰੀਆਂ
+addon-category-locale = ਭਾਸ਼ਾਵਾਂ
+addon-category-locale-title =
+    .title = ਭਾਸ਼ਾਵਾਂ
+addon-category-available-updates = ਅੱਪਡੇਟ ਮੌਜੂਦ ਹਨ
+addon-category-available-updates-title =
+    .title = ਅੱਪਡੇਟ ਮੌਜੂਦ ਹਨ
+addon-category-recent-updates = ਤਾਜ਼ਾ ਅੱਪਡੇਟ
+addon-category-recent-updates-title =
+    .title = ਤਾਜ਼ਾ ਅੱਪਡੇਟ
 
 ## These are global warnings
 
@@ -296,6 +328,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = ਘੱਟ ਵੇਖਾਓ
 go-back-button =
     .tooltiptext = ਪਿੱਛੇ ਜਾਓ
+header-back-button =
+    .title = ਪਿੱਛੇ ਜਾਓ
 
 ## Recommended add-ons page
 

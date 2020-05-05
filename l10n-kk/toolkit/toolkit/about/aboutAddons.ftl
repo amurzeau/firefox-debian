@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Файлдан қосымшаны орнату…
     .accesskey = Ф
 help-button = Қосымшаларды қолдау
+sidebar-help-button-title =
+    .title = Қосымшаларды қолдау
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } опциялары
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Барлық қосымшалар үшін құралдар
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name } опциялары
+           *[other] { -brand-short-name } баптаулары
+        }
 show-unsigned-extensions-button =
     .label = Кейбір кеңейтулерді растау мүмкін емес
 show-all-extensions-button =
@@ -162,6 +170,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Қолжетерлік жаңартулар
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Ұсыныстар
+addon-category-discover-title =
+    .title = Ұсыныстар
+addon-category-extension = Кеңейтулер
+addon-category-extension-title =
+    .title = Кеңейтулер
+addon-category-theme = Темалар
+addon-category-theme-title =
+    .title = Темалар
+addon-category-plugin = Плагиндер
+addon-category-plugin-title =
+    .title = Плагиндер
+addon-category-dictionary = Сөздіктер
+addon-category-dictionary-title =
+    .title = Сөздіктер
+addon-category-locale = Тілдер
+addon-category-locale-title =
+    .title = Тілдер
+addon-category-available-updates = Қолжетерлік жаңартулар
+addon-category-available-updates-title =
+    .title = Қолжетерлік жаңартулар
+addon-category-recent-updates = Соңғы жаңартулар
+addon-category-recent-updates-title =
+    .title = Соңғы жаңартулар
 
 ## These are global warnings
 
@@ -298,6 +330,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Азырақ көрсету
 go-back-button =
     .tooltiptext = Артқа
+header-back-button =
+    .title = Артқа
 
 ## Recommended add-ons page
 

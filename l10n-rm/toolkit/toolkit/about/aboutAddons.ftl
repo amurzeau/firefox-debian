@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Installar in supplement a basa dad ina datoteca…
     .accesskey = I
 help-button = Agid cun supplements
+sidebar-help-button-title =
+    .title = Agid cun supplements
 preferences =
     { PLATFORM() ->
         [windows] Preferenzas da { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Utensils per tut ils supplements
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Preferenzas da { -brand-short-name }
+           *[other] Preferenzas da { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = Impussibel da verifitgar tschertas extensiuns
 show-all-extensions-button =
@@ -172,6 +180,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Actualisaziuns disponiblas
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Recumandaziuns
+addon-category-discover-title =
+    .title = Recumandaziuns
+addon-category-extension = Extensiuns
+addon-category-extension-title =
+    .title = Extensiuns
+addon-category-theme = Designs
+addon-category-theme-title =
+    .title = Designs
+addon-category-plugin = Plug-ins
+addon-category-plugin-title =
+    .title = Plug-ins
+addon-category-dictionary = Dicziunaris
+addon-category-dictionary-title =
+    .title = Dicziunaris
+addon-category-locale = Linguas
+addon-category-locale-title =
+    .title = Linguas
+addon-category-available-updates = Actualisaziuns disponiblas
+addon-category-available-updates-title =
+    .title = Actualisaziuns disponiblas
+addon-category-recent-updates = Ultimas actualisaziuns
+addon-category-recent-updates-title =
+    .title = Ultimas actualisaziuns
 
 ## These are global warnings
 
@@ -309,6 +341,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Mussar damain
 go-back-button =
     .tooltiptext = Turnar
+header-back-button =
+    .title = Turnar
 
 ## Recommended add-ons page
 

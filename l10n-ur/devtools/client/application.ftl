@@ -19,6 +19,10 @@ serviceworker-worker-unregister = ریجسٹریشن ختم کریں
 # Text for the start link displayed for a registered but not running Service Worker.
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start = آغاز
+# Text for the debug link displayed for an already started Service Worker, when we
+# are in multi e10s mode, which effectively disables this link.
+serviceworker-worker-debug-forbidden = ڈیبگ
+    .title = ہوخدمت کارکنان کو ڈیبگ کر سکتا ہے اگرmulti e10s غیر فعال
 # Text displayed for the updated time of the service worker. The <time> element will
 # display the last update time of the service worker script.
 serviceworker-worker-updated = تذکاری <time>{ DATETIME($date, month: "long", year: "numeric", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric") }</time>
@@ -57,6 +61,10 @@ manifest-item-identity = شناخت
 manifest-item-presentation = پيشکاری
 # Header for the Icon section of Manifest inspection displayed in the application panel.
 manifest-item-icons = آئیکن
+# Text displayed while we are loading the manifest file
+manifest-loading = منشور لوڈ ہو رہا ہے…
+# Text displayed when the manifest has been successfully loaded
+manifest-loaded-ok = منشور لوڈ ہو گیا
 # Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
 manifest-loaded-devtools-error = Firefox DevTools نقص
@@ -69,6 +77,10 @@ manifest-icon-purpose = مقصد:  <code>{ $purpose }</code>
 # manifest.
 manifest-icon-img =
     .alt = آئکن
+# Text displayed as the title attribute for <img> tags showing the icons in the
+# manifest. `$sizes` is a user-dependent string that has been parsed as a
+# space-separated list of `<width>x<height>` sizes or the keyword `any`.
+manifest-icon-img-title = سائز کے ساتھ آئیکن : { $sizes }
 # Text displayed as the title attribute for <img> tags showing the icons in the
 # manifest, in case there's no icon size specified by the user
 manifest-icon-img-title-no-sizes = غیر متعینہ سائز کا آئیکن

@@ -24,8 +24,8 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Abrir menú
-# This menuitem is only visible on Windows
-menu-menuitem-import = Importar contraseñas...
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = Importar desde otro navegador...
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Opciones
@@ -48,6 +48,7 @@ login-list-sort-label-text = Ordenar por:
 login-list-name-option = Nombre (A-Z)
 login-list-name-reverse-option = Nombre (Z-A)
 login-list-breached-option = Sitios web vulnerados
+about-logins-login-list-alerts-option = Alertas
 login-list-last-changed-option = Última modificación
 login-list-last-used-option = Último uso
 login-list-intro-title = No se encontraron inicios de sesión
@@ -59,6 +60,8 @@ login-list-item-subtitle-new-login = Ingresa tus credenciales de inicio de sesi�
 login-list-item-subtitle-missing-username = (sin nombre de usuario)
 about-logins-list-item-breach-icon =
     .title = Sitio web vulnerado
+about-logins-list-item-vulnerable-password-icon =
+    .title = Contraseña vulnerable
 
 ## Introduction screen
 
@@ -94,6 +97,30 @@ login-item-cancel-button = Cancelar
 login-item-time-changed = Última modificación: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Creado: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Último uso: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = Verifica tu identidad para editar el inicio de sesión guardado.
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = editar el inicio de sesión guardado
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = Verifica tu identidad para mostrar la contraseña guardada.
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = mostrar la contraseña guardada
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = Verifica tu identidad para copiar la contraseña guardada.
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = copiar la contraseña guardada
 
 ## Master Password notification
 
@@ -134,10 +161,25 @@ confirm-discard-changes-dialog-confirm-button = Descartar
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Filtración del sitio web
 breach-alert-text = Las contraseñas fueron filtradas o robadas de este sitio web desde la última vez que actualizaste tus datos de inicio de sesión. Cambia tu contraseña para proteger tu cuenta.
 breach-alert-link = Saber más acerca de esta filtración
 breach-alert-dismiss =
     .title = Cerrar esta alerta
+about-logins-breach-alert-date = La filtración ocurrió el { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Ir a { $hostname }
+about-logins-breach-alert-learn-more-link = Saber más
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Contraseña vulnerable
+about-logins-vulnerable-alert-text2 = Esta contraseña ha sido usada en otra cuenta que al parecer se vio afectada en una filtración. Reutilizar credenciales pone en peligro a todas sus cuentas. Cambie esta contraseña.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Ir a { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Saber más
 
 ## Error Messages
 

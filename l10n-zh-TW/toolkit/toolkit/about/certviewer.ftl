@@ -29,6 +29,8 @@ certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = 金鑰交換群組
 certificate-viewer-key-id = 金鑰 ID
 certificate-viewer-key-size = 金鑰大小
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-locality = 公司註冊地
 certificate-viewer-locality = 地區
 certificate-viewer-location = 位置
 certificate-viewer-logid = Log ID
@@ -95,3 +97,16 @@ certificate-viewer-download-pem = PEM（憑證）
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM（金鑰鏈）
     .download = { $fileName }-chain.pem
+# The title attribute for Critical Extension icon
+certificate-viewer-critical-extension =
+    .title = 此擴充欄位標示為重要，代表客戶端若無法理解此欄位內容就必須拒絕接受憑證。
+certificate-viewer-export = 匯出
+    .download = { $fileName }.pem
+
+## Labels for tabs displayed in stand-alone about:certificate page
+
+certificate-viewer-tab-mine = 您的憑證
+certificate-viewer-tab-people = 人員
+certificate-viewer-tab-servers = 伺服器
+certificate-viewer-tab-ca = 憑證機構
+certificate-viewer-tab-unkonwn = 未知

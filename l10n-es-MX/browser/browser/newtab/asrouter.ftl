@@ -129,6 +129,7 @@ cfr-whatsnew-searchbar-title = Escribe menos, encuentra más con la barra de dir
 #   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
 cfr-whatsnew-searchbar-body-enginename = Accede a los sitios que más utilizas con un solo clic en la barra de direcciones. Encuentra las cosas más rápido con los resultados de { $searchEngineName } y tu historial de navegación.
 cfr-whatsnew-searchbar-body-generic = Accede a los sitios que más usas con un solo clic en la barra de direcciones. Encuentra las cosas más rápido con los resultados de tu historial de navegación.
+cfr-whatsnew-searchbar-body-topsites = Ahora, simplemente seleccione la barra de direcciones y se va a expandir un cuadro con enlaces a sus sitios principales.
 cfr-whatsnew-searchbar-icon-alt-text = Ícono de lupa
 
 ## Picture-in-Picture
@@ -213,3 +214,24 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Ver todo
     .accesskey = V
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = Crea fácilmente contraseñas seguras
+cfr-whatsnew-lockwise-body = Es difícil pensar contraseñas únicas y seguras para cada cuenta. Al crear una contraseña, selecciona el campo de contraseña para usar una contraseña segura generada por { -brand-shorter-name }.
+cfr-whatsnew-lockwise-icon-alt = Ícono de { -lockwise-brand-short-name }
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = Recibe alertas sobre contraseñas vulnerables
+cfr-whatsnew-passwords-body = Los hackers saben que la gente reutiliza sus contraseñas. Si usaste la misma contraseña en múltiples sitios y uno de esos sitios sufre una filtración de datos, verás una alerta en { -lockwise-brand-short-name } para cambiar tu contraseña en esos sitios.
+cfr-whatsnew-passwords-icon-alt = Ícono de contraseña vulnerable
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = Llevar el picture-in-picture a pantalla completa
+cfr-whatsnew-pip-fullscreen-body = Cuando llevas un video a una ventana flotante, puedes a continuación hacer doble clic en esa ventana para llevarlo a pantalla completa.
+cfr-whatsnew-pip-fullscreen-icon-alt = Ícono de picture-in-picture

@@ -89,6 +89,8 @@ graphics-crash-guards-title = Timhalin ur nermid ara n uɛessas n uɣelluy
 graphics-workarounds-title = Tifrat n usellek
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Aneggaf n usfaylu
+# Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
+graphics-desktop-environment = Tawennaḍt n tnarit
 place-database-title = Taffa n isefka n idigen
 place-database-integrity = Timmad
 place-database-verify-integrity = Senqed timmad
@@ -157,6 +159,7 @@ intl-regional-prefs = Ismenyifen n temnaḍt
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
 
+remote-debugging-title = Tamseɣtayt tanmeggagt (Aneggaf Chromium )
 remote-debugging-accepting-connections = Aqbal n tuqqniwin
 remote-debugging-url = URL
 
@@ -284,6 +287,11 @@ sandbox-proc-type-content = agbur
 sandbox-proc-type-file = agbur n ufaylu
 sandbox-proc-type-media-plugin = asiɣzef n wallen n teywalt
 sandbox-proc-type-data-decoder = akestengal n yisefka
+startup-cache-title = Tanekkra tuffirt
+startup-cache-disk-cache-path = Abrid n uḍbsi n tuffra
+startup-cache-ignore-disk-cache = Eǧǧ aḍebsi n tuffra
+startup-cache-found-disk-cache-on-init = Aḍebsi n tuffra yettwaf deg Init
+startup-cache-wrote-to-disk-cache = Aru deg uḍebsi n tuffra
 launcher-process-status-0 = Irmed
 launcher-process-status-1 = Yensa ɣef sebba n tuccḍa
 launcher-process-status-2 = Arurmid s tedusi
@@ -307,6 +315,7 @@ touch-enabled = anekcum amennalan irmed
 drag-enabled = Adrurem nufeggag yettwarmed
 keyboard-enabled = anasiw yermed
 autoscroll-enabled = Adrurem awurman yermed
+zooming-enabled = smooth pinch-zoom yermed
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

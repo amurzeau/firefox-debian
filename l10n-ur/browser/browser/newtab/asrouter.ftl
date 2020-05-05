@@ -19,7 +19,7 @@ cfr-doorhanger-extension-ok-button = اب شامل کریں
     .accesskey = A
 cfr-doorhanger-pintab-ok-button = اس ٹیب کو پن کریں
     .accesskey = P
-cfr-doorhanger-extension-manage-settings-button = سفارش کی ترتیبات منظم کریں
+cfr-doorhanger-extension-manage-settings-button = سفارش کی سیٹنگز منظم کریں
     .accesskey = M
 cfr-doorhanger-extension-never-show-recommendation = مجھے اس کی سفارش نا دکھائیں
     .accesskey = S
@@ -121,6 +121,7 @@ cfr-whatsnew-lockwise-take-link-text = اپلیکیشن حاصل کریں
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = ایڈریس بار کے ساتھ کم ٹائپ کریں ،  مزید ڈھونڈیں
+cfr-whatsnew-searchbar-body-topsites = اب ، صرف پتے والی بار منتخب کریں ، اور ایک خانہ آپ کی سرفہرست سائٹوں کے ربط کے ساتھ پھیل جائے گا۔
 cfr-whatsnew-searchbar-icon-alt-text = میگنفائنگ گلاس آئکن
 
 ## Picture-in-Picture
@@ -148,6 +149,7 @@ cfr-whatsnew-fingerprinter-counter-header =
 cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } بہت سے فنگر پرنٹوں کو روکتا ہے جو آپ کی اشتہاری پروفائل بنانے کے لیے چپکے سے آپ کے آلے اور اعمال کے بارے میں معلومات اکٹھا کرتے ہیں۔
 # Message variation when fingerprinters count is less than 10
 cfr-whatsnew-fingerprinter-counter-header-alt = فنگر پرنٹرز
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } بہت سے فنگر پرنٹوں کو روکتا ہے جو آپ کی اشتہاری پروفائل بنانے کے لیے چپکے سے آپ کے آلے اور اعمال کے بارے میں معلومات اکٹھا کرتے ہیں۔
 
 ## Bookmark Sync
 
@@ -191,3 +193,16 @@ cfr-doorhanger-cryptominers-heading = { -brand-short-name } نے اس صفحے �
 
 cfr-doorhanger-milestone-ok-button = تمام دیکھیں
     .accesskey = س
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+
+## Vulnerable Passwords message
+
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-icon-alt = پکچر-ان-پکچر آئیکن

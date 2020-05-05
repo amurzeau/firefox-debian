@@ -55,3 +55,42 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Ακολουθία πιστοποιητικού:
+
+## Messages used for certificate error titles
+
+connectionFailure-title = Αδυναμία σύνδεσης
+deniedPortAccess-title = Αυτή η διεύθυνση είναι περιορισμένη
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+dnsNotFound-title = Χμ. Έχουμε πρόβλημα στην εύρεση του ιστοτόπου.
+fileNotFound-title = Το αρχείο δεν βρέθηκε
+fileAccessDenied-title = Άρνηση πρόσβασης στο αρχείο
+generic-title = Ωχ!
+captivePortal-title = Σύνδεση στο δίκτυο
+# "Hmm" is a sound made when considering or puzzling over something.
+# You don't have to include it in your translation if your language does not have a written word like this.
+malformedURI-title = Χμ. Η διεύθυνση δεν φαίνεται να είναι σωστή.
+netInterrupt-title = Η σύνδεση διακόπηκε
+notCached-title = Το έγγραφο έληξε
+netOffline-title = Λειτουργία εκτός σύνδεσης
+contentEncodingError-title = Σφάλμα κωδικοποίησης περιεχομένου
+unsafeContentType-title = Επισφαλής τύπος αρχείου
+netReset-title = Έγινε επαναφορά της σύνδεσης
+netTimeout-title = Το χρονικό όριο σύνδεσης έληξε
+unknownProtocolFound-title = Η διεύθυνση δεν έγινε κατανοητή
+proxyConnectFailure-title = Ο διαμεσολαβητής αρνείται συνδέσεις
+proxyResolveFailure-title = Δεν ήταν δυνατή η εύρεση διαμεσολαβητή
+redirectLoop-title = Η σελίδα δεν ανακατευθύνει σωστά
+unknownSocketType-title = Απρόσμενη απάντηση από τον εξυπηρετητή
+nssFailure2-title = Αποτυχία ασφαλούς σύνδεσης
+cspBlocked-title = Έχει φραγεί από την πολιτική προστασίας περιεχομένου
+corruptedContentError-title = Σφάλμα κατεστραμμένου περιεχομένου
+remoteXUL-title = Απομακρυσμένο XUL
+sslv3Used-title = Αδύνατη η ασφαλής σύνδεση
+inadequateSecurityError-title = Η σύνδεσή σας δεν είναι ασφαλής
+blockedByPolicy-title = Αποκλεισμένη σελίδα
+clockSkewError-title = Το ρολόι του υπολογιστή σας είναι λάθος
+networkProtocolError-title = Σφάλμα πρωτοκόλλου δικτύου
+nssBadCert-title = Προειδοποίηση: Πιθανός κίνδυνος ασφαλείας
+nssBadCert-sts-title = Δεν έγινε σύνδεση: Πιθανό ζήτημα ασφαλείας
+certerror-mitm-title = Κάποιο λογισμικό εμποδίζει την ασφαλή σύνδεση του { -brand-short-name } με αυτή την ιστοσελίδα

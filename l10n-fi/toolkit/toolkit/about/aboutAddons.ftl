@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Asenna lisäosa tiedostosta…
     .accesskey = A
 help-button = Lisäosien tuki
+sidebar-help-button-title =
+    .title = Lisäosien tuki
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name }-asetukset
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Työkaluja kaikille lisäosille
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] { -brand-short-name }-asetukset
+           *[other] { -brand-short-name }-asetukset
+        }
 show-unsigned-extensions-button =
     .label = Joitain laajennuksia ei voitu varmentaa
 show-all-extensions-button =
@@ -167,6 +175,30 @@ extensions-view-recent-updates =
 extensions-view-available-updates =
     .name = Päivitykset
     .tooltiptext = Saatavilla olevat päivitykset
+addon-category-discover = Suositukset
+addon-category-discover-title =
+    .title = Suositukset
+addon-category-extension = Laajennukset
+addon-category-extension-title =
+    .title = Laajennukset
+addon-category-theme = Teemat
+addon-category-theme-title =
+    .title = Teemat
+addon-category-plugin = Liitännäiset
+addon-category-plugin-title =
+    .title = Liitännäiset
+addon-category-dictionary = Oikoluvut
+addon-category-dictionary-title =
+    .title = Oikoluvut
+addon-category-locale = Kielet
+addon-category-locale-title =
+    .title = Kielet
+addon-category-available-updates = Päivitykset
+addon-category-available-updates-title =
+    .title = Päivitykset
+addon-category-recent-updates = Tuoreet päivitykset
+addon-category-recent-updates-title =
+    .title = Tuoreet päivitykset
 
 ## These are global warnings
 
@@ -279,6 +311,7 @@ shortcuts-no-commands = Seuraavilla laajennuksilla ei ole pikanäppäimiä:
 shortcuts-input =
     .placeholder = Kirjoita näppäinyhdistelmä
 shortcuts-browserAction = Aktivoi laajennus
+shortcuts-browserAction2 = Aktivoi työkalupalkin painike
 shortcuts-pageAction = Aktivoi sivutoiminto
 shortcuts-sidebarAction = Näytä/piilota sivupaneeli
 shortcuts-modifier-mac = Paina Ctrl-, Alt- tai ⌘-näppäintä
@@ -304,6 +337,8 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Näytä vähemmän
 go-back-button =
     .tooltiptext = Takaisin
+header-back-button =
+    .title = Takaisin
 
 ## Recommended add-ons page
 

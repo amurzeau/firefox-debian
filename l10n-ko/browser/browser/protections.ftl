@@ -45,7 +45,7 @@ social-tab-contant = 소셜 네트워크는 다른 웹 사이트에 추적기를
 cookie-tab-title = 교차 사이트 추적 쿠키
 cookie-tab-content = 이러한 쿠키는 사용자가 온라인에서 수행하는 작업에 대한 데이터를 수집하기 위해 사이트 간에 사용자를 따라 다닙니다. 광고사나 분석 회사와 같은 제3자가 설정합니다. 교차 사이트 추적 쿠키를 차단하면 따라다니는 광고 수가 줄어듭니다. <a data-l10n-name="learn-more-link">더 알아보기</a>
 tracker-tab-title = 추적 콘텐츠
-tracker-tab-description = 웹 사이트에서 외부 광고, 동영상 및 기타 추적 코드가 포함된 콘텐츠를 로드 할 수 있습니다. 추적 콘텐츠를 차단하면 사이트를 더 빨리 로드 할 수 있지만 일부 버튼, 양식 및 로그인 필드가 작동하지 않을 수 있습니다. <a data-l10n-name="learn-more-link">더 알아보기</a>
+tracker-tab-description = 웹 사이트에서 외부 광고, 동영상 및 기타 추적 코드가 포함된 콘텐츠를 로드할 수 있습니다. 추적 콘텐츠를 차단하면 사이트를 더 빨리 로드할 수 있지만 일부 버튼, 양식 및 로그인 필드가 작동하지 않을 수 있습니다. <a data-l10n-name="learn-more-link">더 알아보기</a>
 fingerprinter-tab-title = 핑거프린터
 fingerprinter-tab-content = 핑거프린터는 브라우저와 컴퓨터에서 설정을 수집하여 사용자의 프로필을 만듭니다. 이 디지털 지문을 사용하여 여러 웹 사이트에서 사용자를 추적할 수 있습니다. <a data-l10n-name="learn-more-link">더 알아보기</a>
 cryptominer-tab-title = 크립토마이너
@@ -54,17 +54,16 @@ protections-close-button =
     .aria-label = 닫기
 mobile-app-title = 더 많은 기기에서 광고 추적기 차단
 mobile-app-card-content = 광고 추적에 대한 보호 기능이 내장된 모바일 브라우저를 사용하세요.
-mobile-app-links = <a data-l10n-name="android-mobile-inline-link">Android</a> 및 <a data-l10n-name="ios-mobile-inline-link">iOS</a> 용 { -brand-product-name } 브라우저
+mobile-app-links = <a data-l10n-name="android-mobile-inline-link">Android</a> 및 <a data-l10n-name="ios-mobile-inline-link">iOS</a>용 { -brand-product-name } 브라우저
 lockwise-title = 비밀번호를 다시 잊지 마세요
 lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-header-content = { -lockwise-brand-name }은 비밀번호를 브라우저에 안전하게 저장합니다.
 lockwise-header-content-logged-in = 비밀번호를 모든 기기에 안전하게 저장하고 동기화합니다.
 protection-report-view-logins-button = 로그인 보기
     .title = 저장된 로그인으로 이동
-lockwise-no-logins-content = <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> 앱을 통해 어디서나 비밀번호를 사용하세요.
 lockwise-mobile-app-title = 어디에서나 비밀번호를 사용하세요
 lockwise-no-logins-card-content = 모든 기기에서 { -brand-short-name }에 저장된 비밀번호를 사용하세요.
-lockwise-app-links = <a data-l10n-name="lockwise-android-inline-link">Android</a> 및 <a data-l10n-name="lockwise-ios-inline-link">iOS</a> 용 { -lockwise-brand-name }
+lockwise-app-links = <a data-l10n-name="lockwise-android-inline-link">Android</a> 및 <a data-l10n-name="lockwise-ios-inline-link">iOS</a>용 { -lockwise-brand-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

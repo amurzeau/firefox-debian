@@ -26,6 +26,8 @@ install-addon-from-file =
     .label = Staliañ askouezhioù diouzh ar restr...
     .accesskey = i
 help-button = Skor an askouezhioù
+sidebar-help-button-title =
+    .title = Skor an askouezhioù
 preferences =
     { PLATFORM() ->
         [windows] Dibarzhioù { -brand-short-name }
@@ -33,6 +35,12 @@ preferences =
     }
 tools-menu =
     .tooltiptext = Ostilhoù evit an holl askouezhioù
+sidebar-preferences-button-title =
+    .title =
+        { PLATFORM() ->
+            [windows] Dibarzhioù { -brand-short-name }
+           *[other] Gwellvezioù { -brand-short-name }
+        }
 show-unsigned-extensions-button =
     .label = N'haller ket gwiriekaat lod eus an askouezhioù
 show-all-extensions-button =
@@ -103,6 +111,7 @@ detail-private-disallowed-description2 = An askouezh-mañ n'eo ket lañset er me
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Goulenn haeziñ d'ar prenestroù prevez
 detail-private-required-description = An askouezh-mañ a c'hall haeziñ hoc'h oberiantiz enlinenn e-pad ar merdeiñ prevez. <label data-l10n-name="detail-private-browsing-learn-more">Gouzout hiroc'h</label>
+detail-private-required-description2 = An askouezh-mañ a c'hall haeziñ hoc'h oberiantiz enlinenn e-pad ar merdeiñ prevez. <a data-l10n-name="learn-more">Gouzout hiroc'h</a>
 detail-private-browsing-on =
     .label = Aotren
     .tooltiptext = Gweredekaat er merdeiñ prevez
@@ -152,12 +161,39 @@ legacy-extensions =
     .value = Askouezhioù diamzeret
 legacy-extensions-description = An askouezhioù-mañ ne glotont ket kenn gant skouerioù { -brand-short-name } ha diweredekaet int bet. <label data-l10n-name="legacy-learn-more">Gouzout hiroc'h a-zivout ar c'hemmoù en askouezhioù</label>
 private-browsing-description2 = { -brand-short-name } a cheñch an doare ma za an askouezhioù en-dro er merdeiñ prevez. An askouezhioù nevez a ouzhpennot da { -brand-short-name } na vezint ket lañset dre ziouer er prenestroù prevez. Ma ne aotreit ket anezho en arventennoù n'ez int ket en-dro er merdeiñ prevez, ha n'hallint ket haeziñ hoc'h oberiantizoù enlinenn aze. Graet hon eus kement-se evit derc'hel ho merdeiñ prevez evit gwir. <label data-l10n-name="private-browsing-learn-more">Deskit penaos merañ arventennoù an askouezhioù</label>
+extensions-view-discopane =
+    .name = Erbedadennoù
+    .tooltiptext = { extensions-view-discopane.name }
 extensions-view-recent-updates =
     .name = Hizivadurioù nevesañ
     .tooltiptext = { extensions-view-recent-updates.name }
 extensions-view-available-updates =
     .name = Hizivadurioù hegerz
     .tooltiptext = { extensions-view-available-updates.name }
+addon-category-discover = Erbedadennoù
+addon-category-discover-title =
+    .title = Erbedadennoù
+addon-category-extension = Askouezhioù
+addon-category-extension-title =
+    .title = Askouezhioù
+addon-category-theme = Neuzioù
+addon-category-theme-title =
+    .title = Neuzioù
+addon-category-plugin = Enlugelladoù
+addon-category-plugin-title =
+    .title = Enlugelladoù
+addon-category-dictionary = Geriadurioù
+addon-category-dictionary-title =
+    .title = Geriadurioù
+addon-category-locale = Yezhoù
+addon-category-locale-title =
+    .title = Yezhoù
+addon-category-available-updates = Hizivadurioù hegerz
+addon-category-available-updates-title =
+    .title = Hizivadurioù hegerz
+addon-category-recent-updates = Hizivadurioù nevesañ
+addon-category-recent-updates-title =
+    .title = Hizivadurioù nevesañ
 
 ## These are global warnings
 
@@ -292,9 +328,19 @@ shortcuts-card-expand-button =
 shortcuts-card-collapse-button = Diskouez nebeutoc'h
 go-back-button =
     .tooltiptext = Distreiñ
+header-back-button =
+    .title = Distreiñ
 
 ## Recommended add-ons page
 
+# Explanatory introduction to the list of recommended add-ons. The action word
+# ("recommends") in the final sentence is a link to external documentation.
+discopane-intro =
+    An astennadoù ha temoù a zo evel arloadoù evit ho merdeer. Gallout a reont 
+    suraat ho kerioù-tremen, pellgargañ videoioù, kavout taolioù mat, stankañ 
+    ar bruderezh strobus, cheñch neuz ho merdeer hag all. An arloadigoù-se a vez 
+    diorroet gant un tredeour. Setu un dibab <a data-l10n-name="learn-more-trigger">kuzuliet</a> 
+    gant { -brand-product-name } evit ur surentez, un digonusted hag arc'hweladurioù dibar.
 discopane-notice-learn-more = Gouzout hiroc'h
 privacy-policy = Reolenn a-fet buhez prevez
 # Refers to the author of an add-on, shown below the name of the add-on.
@@ -329,6 +375,11 @@ expand-addon-button = Dibarzhioù ouzhpenn
 # is always its label.
 extension-enable-addon-button-label =
     .aria-label = Gweredekaat
+preferences-addon-button =
+    { PLATFORM() ->
+        [windows] Dibarzhioù
+       *[other] Gwellvezioù
+    }
 details-addon-button = Munudoù
 release-notes-addon-button = Notennoù handelv
 permissions-addon-button = Aotreoù
@@ -370,6 +421,38 @@ addon-detail-reviews-link =
 
 ## Pending uninstall message bar
 
+# Variables:
+#   $addon (string) - Name of the add-on
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> a zo bet dilemet.
+pending-uninstall-undo-button = Dizober
+addon-detail-updates-label = Aotren an hizivadurioù emgefreek
+addon-detail-updates-radio-default = Dre ziouer
+addon-detail-updates-radio-on = Gweredekaet
+addon-detail-updates-radio-off = Diweredekaet
+addon-detail-update-check-label = Klask hizivadurioù…
+install-update-button = Hizivaat
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed =
+    .title = Aotreet er prenestroù prevez
+# This is the tooltip text for the private browsing badge in about:addons. The
+# badge is the private browsing icon included next to the extension's name.
+addon-badge-private-browsing-allowed2 =
+    .title = Aotreet er prenestroù prevez
+    .aria-label = { addon-badge-private-browsing-allowed2.title }
+addon-detail-private-browsing-allow = Aotren
+addon-detail-private-browsing-disallow = Na aotren
+# This is the tooltip text for the recommended badge for an extension in about:addons. The
+# badge is a small icon displayed next to an extension when it is recommended on AMO.
+addon-badge-recommended =
+    .title = Erbedet
+    .alt = Erbedet
+available-updates-heading = Hizivadurioù hegerz
+recent-updates-heading = Hizivadurioù nevez
+release-notes-loading = O kargañ…
+release-notes-error = Digarezit, degouezhet ez eus bet ur fazi en ur bellgargañ an notennoù handelv.
+recommended-extensions-heading = Astennoù erbedet
+recommended-themes-heading = Temoù erbedet
 
 ## Page headings
 
@@ -378,10 +461,12 @@ theme-heading = Merañ ho neuzioù
 plugin-heading = Merañ hoc'h enlugelladoù
 dictionary-heading = Merañ ho keriaduioù
 locale-heading = Merañ ho yezhoù
+updates-heading = Merañ ho hizivadurioù
 discover-heading = Personelait ho { -brand-short-name }
 shortcuts-heading = Merañ berradennoù an askouezhioù
 theme-heading-search-label = Kaout muioc'h a neuzioù
 extension-heading-search-label = Kavout muioc'h a askouezhioù
+default-heading-search-label = Kavout muioc'h a askouezhioù
 addons-heading-search-input =
     .placeholder = Klask war addons.mozilla.org
 addon-page-options-button =
