@@ -1,3 +1,10 @@
+firefox (76.0-2) unstable; urgency=medium
+
+  * Cargo.lock, third_party/rust/typenum/*: Upgrade typename to 1.12.0.
+    bz#1635671. Fixes FTBFS on i386.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 06 May 2020 14:27:30 +0900
+
 firefox (76.0-1) unstable; urgency=medium
 
   * New upstream release
