@@ -1,3 +1,12 @@
+firefox (76.0.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+  * debian/rules: Force using old PKCS11 API when building against newer
+    NSS releases. Closes: #960012.
+
+ -- Mike Hommey <glandium@goemon>  Wed, 13 May 2020 09:09:57 +0900
+
 firefox (76.0-2) unstable; urgency=medium
 
   * Cargo.lock, third_party/rust/typenum/*: Upgrade typename to 1.12.0.
