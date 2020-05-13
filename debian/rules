@@ -154,6 +154,7 @@ ifneq (,$(filter mips mipsel,$(DEB_HOST_ARCH)))
 CONFIGURE_FLAGS += --disable-ion
 endif
 
+CFLAGS += -DNSS_PKCS11_2_0_COMPAT=1
 CXXFLAGS = $(CFLAGS)
 RUSTFLAGS = --remap-path-prefix=$(CURDIR)=.
 
