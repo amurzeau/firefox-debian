@@ -1,3 +1,10 @@
+firefox (76.0.1-2) unstable; urgency=medium
+
+  * debian/browser.mozconfig.in: Allow addon sideload. Closes: #960084.
+  * debian/control*: Bump nasm build dependency to 2.14.
+
+ -- Mike Hommey <glandium@debian.org>  Fri, 15 May 2020 09:10:36 +0900
+
 firefox (76.0.1-1) unstable; urgency=medium
 
   * New upstream release
@@ -5,7 +12,7 @@ firefox (76.0.1-1) unstable; urgency=medium
   * debian/rules: Force using old PKCS11 API when building against newer
     NSS releases. Closes: #960012.
 
- -- Mike Hommey <glandium@goemon>  Wed, 13 May 2020 09:09:57 +0900
+ -- Mike Hommey <glandium@debian.org>  Wed, 13 May 2020 09:09:57 +0900
 
 firefox (76.0-2) unstable; urgency=medium
 
