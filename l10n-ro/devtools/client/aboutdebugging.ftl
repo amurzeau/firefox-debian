@@ -38,7 +38,7 @@ aboutdebugging-sidebar-runtime-connection-status-disconnected = Deconectat
 about-debugging-sidebar-no-devices = Niciun dispozitiv descoperit
 # Text displayed in buttons found in sidebar items representing remote runtimes.
 # Clicking on the button will attempt to connect to the runtime.
-about-debugging-sidebar-item-connect-button = Conectează-te
+about-debugging-sidebar-item-connect-button = Conectare
 # Text displayed in buttons found in sidebar items when the runtime is connecting.
 about-debugging-sidebar-item-connect-button-connecting = Se conectează…
 # Text displayed in buttons found in sidebar items when the connection failed.
@@ -202,7 +202,7 @@ about-debugging-browser-version-too-recent = Browserul conectat este mai recent 
 about-debugging-runtime-name = { $name } ({ $version })
 # Text of a button displayed in Runtime pages for remote runtimes.
 # Clicking on the button will close the connection to the runtime.
-about-debugging-runtime-disconnect-button = Deconectează-te
+about-debugging-runtime-disconnect-button = Deconectare
 # Text of the connection prompt button displayed in Runtime pages, when the preference
 # "devtools.debugger.prompt-connection" is false on the target runtime.
 about-debugging-connection-prompt-enable-button = Activează mesajul de conexiune

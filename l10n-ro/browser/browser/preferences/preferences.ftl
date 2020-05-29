@@ -123,7 +123,7 @@ startup-header = Pornire
 separate-profile-mode =
     .label = Permite ca { -brand-short-name } și Firefox să ruleze în același timp
 use-firefox-sync = Pont: Acesta folosește profiluri separate. Folosește { -sync-brand-short-name } pentru a partaja date între ele.
-get-started-not-logged-in = Autentifică-te la { -sync-brand-short-name }…
+get-started-not-logged-in = Autentificare în { -sync-brand-short-name }…
 get-started-configured = Deschide preferințele { -sync-brand-short-name }
 always-check-default =
     .label = Verifică întotdeauna dacă { -brand-short-name } este browserul implicit
@@ -207,13 +207,13 @@ colors-settings =
     .label = Culori…
     .accesskey = C
 # Zoom is a noun, and the message is used as header for a group of options
-preferences-zoom-header = Zoom
-preferences-default-zoom = Zoom implicit
+preferences-zoom-header = Focalizare
+preferences-default-zoom = Focalizare implicită
     .accesskey = z
 preferences-default-zoom-value =
     .label = { $percentage }%
 preferences-zoom-text-only =
-    .label = Zoom numai pe text
+    .label = Focalizare doar pe text
     .accesskey = t
 language-header = Limbă
 choose-language-description = Alege limba în care preferi să vezi paginile
@@ -235,6 +235,10 @@ translate-attribution = Traduceri de <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Excepții…
     .accesskey = x
+# Variables: 
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Folosește setările sistemului de operare în „{ $localeName }” pentru formatul datelor, orelor, numerelor și unități de măsură.
 check-user-spelling =
     .label = Verifică ortografia pe măsură ce tastez
     .accesskey = t
@@ -562,7 +566,7 @@ search-restore-default =
 search-remove-engine =
     .label = Elimină
     .accesskey = R
-search-find-more-link = Găsește mai multe motoare de căutare
+search-find-more-link = Caută mai multe motoare de căutare
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = Cuvânt cheie duplicat
@@ -604,7 +608,7 @@ sync-signedout-account-title = Conectează-te cu un { -fxaccount-brand-name }
 sync-signedout-account-create = Nu ai un cont? Începe
     .accesskey = C
 sync-signedout-account-signin =
-    .label = Autentifică-te…
+    .label = Autentificare…
     .accesskey = I
 sync-signedout-account-signin2 =
     .label = Autentificare în { -sync-brand-short-name }…
@@ -627,10 +631,10 @@ sync-mobile-promo = Descarcă Firefox pentru <img data-l10n-name="android-icon"/
 sync-profile-picture =
     .tooltiptext = Schimbă fotografia de profil
 sync-disconnect =
-    .label = Deconectează-te…
+    .label = Deconectare…
     .accesskey = D
 sync-sign-out =
-    .label = Deconectează-te…
+    .label = Deconectare…
     .accesskey = g
 sync-manage-account = Gestionează contul
     .accesskey = o
@@ -643,7 +647,7 @@ sync-remove-account =
     .label = Elimină contul
     .accesskey = R
 sync-sign-in =
-    .label = Autentifică-te
+    .label = Autentificare
     .accesskey = g
 sync-signedin-settings-header = Setări de sincronizare
 sync-signedin-settings-desc = Alege ce să se sincronizeze pe dispozitive folosind { -brand-short-name }.
@@ -683,11 +687,11 @@ sync-change-options =
 ## The "Choose what to sync" dialog.
 
 sync-choose-what-to-sync-dialog =
-    .title = Alege ce să se sincronizeze
+    .title = Alege ce vrei să sincronizezi
     .style = width: 36em; min-height: 35em;
     .buttonlabelaccept = Salvează modificările
     .buttonaccesskeyaccept = S
-    .buttonlabelextra2 = Deconectează-te…
+    .buttonlabelextra2 = Deconectare…
     .buttonaccesskeyextra2 = D
 sync-engine-bookmarks =
     .label = Marcaje
@@ -756,6 +760,9 @@ privacy-header = Confidențialitate în browser
 ## Privacy Section - Logins and Passwords
 
 logins-header = Autentificări și parole
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Autentificări și parole
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Solicită salvarea autentificărilor și parolelor pentru site-urile web
@@ -767,7 +774,7 @@ forms-generate-passwords =
     .label = Sugerează și generează parole puternice
     .accesskey = u
 forms-breach-alerts =
-    .label = Afișează alerte despre parole pentru site-urile web a căror securitate a fost încălcată
+    .label = Afișează alerte despre parole pentru site-uri web cu breșe de securitate
     .accesskey = b
 forms-breach-alerts-learn-more-link = Află mai multe
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
@@ -848,7 +855,7 @@ sitedata-total-size-calculating = Se calculează datele site-urilor și mărimea
 sitedata-total-size = Cookie-urile stocate, datele site-urilor și cache-ul folosesc în prezent { $value } { $unit } din spațiul de pe disc.
 sitedata-learn-more = Află mai multe
 sitedata-delete-on-close =
-    .label = Șterge cookie-urile și datele site-urilor când { -brand-short-name } este închis
+    .label = Șterge cookie-urile și datele site-urilor la închiderea { -brand-short-name }
     .accesskey = c
 sitedata-delete-on-close-private-browsing = În modul de navigare privată permanentă, cookie-urile și datele site-urilor vor fi întotdeauna șterse la închiderea { -brand-short-name }.
 sitedata-allow-cookies-option =
@@ -867,6 +874,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Elemente de urmărire între site-uri
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Elemente de urmărire ale rețelelor sociale și între site-uri
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Elemente de urmărire între site-uri și de rețele sociale și izolează restul cookie-urilor
 sitedata-option-block-unvisited =
     .label = Cookie-uri de pe site-uri web nevizitate
 sitedata-option-block-all-third-party =
@@ -901,7 +910,7 @@ addressbar-suggestions-settings = Schimbă preferințele pentru sugestiile motoa
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Blocare de conținut
-content-blocking-section-description = Protejează-ți intimitatea la navigare. Blochează conținuturile invizibile care urmăresc ce site-uri vizitezi și îți creează profilul. Blocarea unei părți din aceste conținuturi poate conduce la încărcarea mai rapidă a paginilor.
+content-blocking-section-description = Protejează-ți viața privată la navigare. Blochează conținuturile invizibile care urmăresc ce site-uri vizitezi și îți creează profilul. Blocarea unei părți din aceste conținuturi poate conduce la încărcarea mai rapidă a paginilor.
 content-blocking-enhanced-tracking-protection = Protecție îmbunătățită împotriva urmăririi
 content-blocking-section-top-level-description = Elementele de urmărire te urmăresc online pentru a colecta informații despre obiceiurile și interesele tale de navigare. { -brand-short-name } blochează multe dintre aceste elementele de urmărire și alte scripturi rău-intenționate.
 content-blocking-learn-more = Află mai multe
@@ -943,6 +952,7 @@ content-blocking-etp-strict-desc = O protecție mai puternică, dar poate provoc
 content-blocking-etp-custom-desc = Alege ce elemente de urmărire și scripturi să blochezi.
 content-blocking-private-windows = Conținut de urmărire în ferestre private
 content-blocking-cross-site-tracking-cookies = Cookie-uri de urmărire între site-uri
+content-blocking-cross-site-tracking-cookies-plus-isolate = Cookie-uri de urmărire între site-uri și izolează restul cookie-urilor
 content-blocking-social-media-trackers = Elemente de urmărire ale rețelelor sociale
 content-blocking-all-cookies = Toate cookie-urile
 content-blocking-unvisited-cookies = Cookie-uri de la site-uri nevizitate
@@ -955,6 +965,7 @@ content-blocking-warning-title = Atenție!
 content-blocking-warning-description = Blocarea conținutului poate împiedica funcționarea unor site-uri web. Deblocarea se poare realiza ușor pentru site-urile în care ai încredere.
 content-blocking-learn-how = Află cum
 content-blocking-etp-warning-description = Blocarea elementelor de urmărire poate afecta funcționalitatea unor site-uri. Reîncarcă o pagină cu elemente de urmărire pentru a încărca tot conținutul.
+content-blocking-and-isolating-etp-warning-description = Blocarea elementelor de urmărire și izolarea cookie-urilor pot afecta funcționalitatea unor site-uri. Reîmprospătează pagina cu elementele de urmărire ca să încarci tot conținutul.
 content-blocking-warning-learn-how = Află cum
 content-blocking-reload-description = Va trebui să reîncarci filele pentru aplicarea acestor modificări.
 content-blocking-reload-tabs-button =

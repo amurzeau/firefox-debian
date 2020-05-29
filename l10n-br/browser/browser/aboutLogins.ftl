@@ -24,8 +24,8 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Digeriñ al lañser
-# This menuitem is only visible on Windows
-menu-menuitem-import = Enporzhiañ ar gerioù-tremen...
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = Enporzhiañ eus ur merdeer all...
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Dibarzhioù
@@ -50,7 +50,7 @@ login-list-count =
 login-list-sort-label-text = Rummañ dre:
 login-list-name-option = Anv (A-Z)
 login-list-name-reverse-option = Anv (Z-A)
-login-list-breached-option = Baradurioù lec'hiennoù
+about-logins-login-list-alerts-option = Kemennoù diwall
 login-list-last-changed-option = Kemmet da ziwezhañ
 login-list-last-used-option = Arveret da ziwezhañ
 login-list-intro-title = Titour kennaskañ ebet kavet
@@ -62,6 +62,8 @@ login-list-item-subtitle-new-login = Enankit ho titouroù kennaskañ
 login-list-item-subtitle-missing-username = (anv arveriad ebet)
 about-logins-list-item-breach-icon =
     .title = Lec'hienn frailhet
+about-logins-list-item-vulnerable-password-icon =
+    .title = Ger-tremen bresk
 
 ## Introduction screen
 
@@ -87,10 +89,6 @@ about-logins-login-item-username =
 login-item-copy-username-button-text = Eilañ
 login-item-copied-username-button-text = Eilet!
 login-item-password-label = Ger-tremen
-login-item-password-reveal-checkbox-show =
-    .title = Diskouez ar ger-tremen
-login-item-password-reveal-checkbox-hide =
-    .title = Kuzhat ar ger-tremen
 login-item-password-reveal-checkbox =
     .aria-label = Diskouez ar ger-tremen
 login-item-copy-password-button-text = Eilañ
@@ -101,6 +99,36 @@ login-item-cancel-button = Nullañ
 login-item-time-changed = Kemmet da ziwezhañ: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Krouet: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Implijet da ziwezhañ: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = Gwiriit ho identelezh a-benn cheñch an anaouder enrollet.
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message-win = Evit kemmañ ho titouroù kennaskañ, enankit reoù ho kont Windows. Skoazellañ a ra gwarez ho kontoù.
+# This message can be seen when attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = cheñch an anaouder enrollet
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = Gwiriit ho identelezh a-benn diskouez ar ger-tremen enrollet.
+# This message can be seen when attempting to reveal a password in about:logins on Windows.
+about-logins-reveal-password-os-auth-dialog-message-win = Evit gwelout ho ker-tremen, enankit ho titouroù kennaskañ Windows. Skoazellañ a ra da wareziñ ho kontoù.
+# This message can be seen when attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = diskouez ar ger-tremen enrollet
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = Gwiriit ho identelezh a-benn eilañ ar ger-tremen enrollet.
+# This message can be seen when attempting to copy a password in about:logins on Windows.
+about-logins-copy-password-os-auth-dialog-message-win = Evit eilañ ho ker-tremen, enankit ho titouroù kennaskañ Windows. Skoazellañ a ra da wareziñ ho kontoù.
+# This message can be seen when attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = eilañ ar ger-tremen enrollet
 
 ## Master Password notification
 
@@ -141,10 +169,22 @@ confirm-discard-changes-dialog-confirm-button = Dilezel
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Fuadur el lec'hienn
 breach-alert-text = Gerioù-tremen a zo bet diskuilhet pe laeret abaoe ar wech ziwezhañ m'ho peus hizivaet ho titouroù kennaskañ. Cheñchit ho ker-tremen evit gwareziñ ho kont.
-breach-alert-link = Gouzout hiroc'h a-zivout ar frailh.
-breach-alert-dismiss =
-    .title = Serriñ ar galv-diwall-mañ.
+about-logins-breach-alert-date = C'hoarvezet eo bet ar fuadur d'ar { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Mont da { $hostname }
+about-logins-breach-alert-learn-more-link = Gouzout hiroc'h
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Ger-tremen bresk
+about-logins-vulnerable-alert-text2 = Ar ger-tremen-mañ a zo bet implijet en ur gont-all ha marteze eo bet lakaet en arvar abalamour d'ur fuadur roadennoù. Implijout en-dro an titouroù-se a lak holl kontoù ac'hanoc'h en arvar. Cheñchit ar ger-tremen-mañ.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Mont da { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Gouzout hiroc'h
 
 ## Error Messages
 

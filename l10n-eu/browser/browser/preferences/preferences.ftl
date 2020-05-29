@@ -232,6 +232,10 @@ translate-attribution = Itzulpenak: <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Salbuespenak…
     .accesskey = S
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Erabili zure sitema eragilearen "{ $localeName }" hizkuntzaren ezarpenak datak, orduak, zenbakiak eta neurriak formateatzeko.
 check-user-spelling =
     .label = Egiaztatu ortografia idatzi ahala
     .accesskey = z
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = { $app-name } erabili (lehenetsia)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Erabili macOS aplikazio lehenetsia
+            [windows] Erabili Windows aplikazio lehenetsia
+           *[other] Erabili sistemaren aplikazio lehenetsia
+        }
 applications-use-other =
     .label = Beste bat…
 applications-select-helper = Hautatu laguntza-aplikazioa
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = Erabili { $plugin-name } ({ -brand-short-name }(e)n)
 applications-preview-inapp =
     .label = Aurreikusi { -brand-short-name }(e)n
+applications-open-inapp =
+    .label = Ireki { -brand-short-name }(e)n
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -752,6 +769,9 @@ privacy-header = Nabigatzailearen pribatutasuna
 ## Privacy Section - Logins and Passwords
 
 logins-header = Saio-hasierak eta pasahitzak
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Saio-hasierak eta pasahitzak
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Galdetu webguneetako saio-hasierak eta pasahitzak gordetzeko

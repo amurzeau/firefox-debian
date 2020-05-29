@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Privatno pregledavanje)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Privatno pregledavanje)
-       *[other] { $title } - { -brand-full-name } (Privatno pregledavanje)
-    }
 urlbar-identity-button =
     .aria-label = Prikaži informacije o stranici
 
@@ -105,10 +64,7 @@ urlbar-tip-icon-description =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Tipkaj manje, nađi više: Traži { $engineName } direktno u tvojoj adresnoj traci.
-urlbar-search-tips-redirect-2 = Započni tvoju pretragu u adresnoj traci da biste vidjeli prijedloge od { $engineName } i tvoju povijest pregledavanja.
-
-##
-
+urlbar-search-tips-redirect-2 = Započni pretragu u adresnoj traci za prikaz prijedloga od { $engineName } i tvoju povijest pregledavanja.
 
 ##
 
@@ -153,6 +109,8 @@ page-action-manage-extension =
     .label = Upravljaj proširenjem …
 page-action-remove-from-urlbar =
     .label = Ukloni iz adresne trake
+page-action-remove-extension =
+    .label = Ukloni porširenje
 
 ## Auto-hide Context Menu
 
@@ -243,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = A
 identity-more-info-link-text =
     .label = Više informacija
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Smanji
+browser-window-maximize-button =
+    .tooltiptext = Proširi
+browser-window-restore-down-button =
+    .tooltiptext = Vrati dolje
+browser-window-close-button =
+    .tooltiptext = Zatvori
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Kamera za dijeljenje:
+    .accesskey = K
+popup-select-microphone =
+    .value = Mikrofon za dijeljenje:
+    .accesskey = M
+popup-all-windows-shared = Svi vidljivi prozori na tvom ekranu će se dijeliti.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = Kako biste koristili F12 prečicu, prvo otvorite DevTools putem izbornika Web Developer.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Pretraži ili upiši adresu
+urlbar-placeholder =
+    .placeholder = Pretraži ili upiši adresu
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Preglednik se kontrolira s udaljene lokacije
+urlbar-permissions-granted =
+    .tooltiptext = Ovoj stranici odobrene su dodatne dozvole.
+urlbar-switch-to-tab =
+    .value = Prebaci na karticu:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Dodatak:
+urlbar-go-end-cap =
+    .tooltiptext = Idi na adresu iz lokacijske trake
+urlbar-page-action-button =
+    .tooltiptext = Radnje na stranici
+urlbar-pocket-button =
+    .tooltiptext = Spremi u { -pocket-brand-name }

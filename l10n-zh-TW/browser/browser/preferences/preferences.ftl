@@ -220,6 +220,10 @@ translate-attribution = 翻譯服務由 <img data-l10n-name="logo"/> 提供
 translate-exceptions =
     .label = 例外網站…
     .accesskey = x
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = 使用您作業系統的「{ $localeName }」語系來顯示日期、時間、數字、單位。
 check-user-spelling =
     .label = 打字時即時檢查拼字
     .accesskey = t
@@ -268,6 +272,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = 使用 { $app-name } 開啟（預設）
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] 使用 macOS 預設應用程式
+            [windows] 使用 Windows 預設應用程式
+           *[other] 使用系統預設應用程式
+        }
 applications-use-other =
     .label = 使用其他程式…
 applications-select-helper = 選取對應程式
@@ -293,6 +304,8 @@ applications-use-plugin-in =
     .label = 使用 { $plugin-name } (在 { -brand-short-name } 開啟)
 applications-preview-inapp =
     .label = 在 { -brand-short-name } 中預覽
+applications-open-inapp =
+    .label = 用 { -brand-short-name } 開啟
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -306,12 +319,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -736,6 +753,9 @@ privacy-header = 瀏覽器隱私權
 ## Privacy Section - Logins and Passwords
 
 logins-header = 登入資訊與密碼
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = 登入資訊與密碼
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = 向您詢問是否要記住網站的登入帳號與密碼
@@ -770,6 +790,8 @@ forms-master-pw-fips-desc = 密碼變更失敗
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = 確認您的身分以建立主控密碼。
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = 請在下方輸入您的 Windows 登入帳號密碼才能建立主控密碼。這個動作是為了保護您的登入資訊安全。
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These

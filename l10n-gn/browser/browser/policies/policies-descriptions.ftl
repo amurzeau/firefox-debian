@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Eipe’a kundahára jehechajey ijypykuéva oñe
 policy-DownloadDirectory = Emoha’eño ha ejoko marandurenda mboguejerã.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Embojuruja térã eipe’a tetepy jejoko ha ejoko ejaposérõnte.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Emyandy térã embogue Jepysokue papapypyréva ha, ejaposéramo, ejoko.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = Emopyenda tepykue ypyguáva omoneĩ hag̃ua { 
 policy-OverrideFirstRunPage = Emboyke kuatiarogue tembiapo ñepyrũguáva. Emboaje ko purureko mba’eve’ỹre eipe’aséramo kuatiarogue tembiapo ñepyrũguáva.
 policy-OverridePostUpdatePage = Emboyke kuatiarogue “Mba’epyahu” embohekopyahu rire. Emboaje ko purureko mba’eve’ỹre eipe’aséramo kuatiarogue embohekopyahu rire.
 policy-PasswordManagerEnabled = Embojuruja ñe’ẽñemi ñongatu ñe’ẽñemi ñangarekohápe.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Eipe’a térã emboheko PDF.js, PDF jehechaha oĩva { -brand-short-name } ryepýpe.
 policy-Permissions2 = Emboheko ñemoneĩ ta’anganohẽha, ñe’ẽatãha, tendaite, marandu’í ha ñembohetápe g̃uarã.
 policy-PopupBlocking = Emoneĩ ndahetái ñanduti rendápe ohechaukávo ovetã iñapysẽva ijypykue rupi.
 policy-Preferences = Emboheko ha ejoko tepykue jeguerohoryvéva aty’ípe g̃uarã.

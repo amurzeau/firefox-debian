@@ -81,7 +81,7 @@ restart-later = Reiniciar depois
 extension-controlled-homepage-override = Uma extensão, <img data-l10n-name="icon"/> { $name }, está controlando sua página inicial.
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
-extension-controlled-new-tab-url = Uma extensão, <img data-l10n-name="icon"/> { $name }, está controlando a sua página de nova aba.
+extension-controlled-new-tab-url = Uma extensão, <img data-l10n-name="icon"/> { $name }, está controlando sua página de nova aba.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Uma extensão, <img data-l10n-name="icon"/> { $name }, está controlando esta configuração.
@@ -232,6 +232,10 @@ translate-attribution = Traduções por <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Exceções…
     .accesskey = x
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Usar as configurações de “{ $localeName }” do sistema operacional para formatar datas, horários, números e medidas.
 check-user-spelling =
     .label = Verificar a ortografia ao digitar
     .accesskey = t
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Abrir com o { $app-name } (padrão)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Usar aplicação padrão do macOS
+            [windows] Usar aplicação padrão do Windows
+           *[other] Usar aplicação padrão do sistema
+        }
 applications-use-other =
     .label = Abrir com…
 applications-select-helper = Selecionar aplicativo
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = Usar { $plugin-name } (no { -brand-short-name })
 applications-preview-inapp =
     .label = Ver no próprio { -brand-short-name }
+applications-open-inapp =
+    .label = Abrir no { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -547,11 +564,11 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings = Alterar preferências de sugestões de histórico de navegação, favoritos e abas
 search-suggestions-cant-show = As sugestões de pesquisa não serão mostradas nos resultados da barra de endereço, porque você configurou o { -brand-short-name } para nunca memorizar o histórico.
 search-one-click-header = Mecanismos de pesquisa em um clique
-search-one-click-desc = Escolha os mecanismos de pesquisa alternativos que aparecem abaixo da barra de endereços e da barra de pesquisa quando você começa a digitar uma palavra-chave.
+search-one-click-desc = Escolha os mecanismos de pesquisa alternativos que aparecem abaixo da barra de endereços e da barra de pesquisa quando você começa a digitar um atalho.
 search-choose-engine-column =
     .label = Mecanismo de pesquisa
 search-choose-keyword-column =
-    .label = Palavra-chave
+    .label = Atalho
 search-restore-default =
     .label = Restaurar mecanismos de pesquisa padrão
     .accesskey = p
@@ -561,11 +578,11 @@ search-remove-engine =
 search-find-more-link = Procurar mais mecanismos de pesquisa
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
-search-keyword-warning-title = Palavra-chave duplicada
+search-keyword-warning-title = Atalho duplicado
 # Variables:
 #   $name (String) - Name of a search engine.
-search-keyword-warning-engine = A palavra-chave escolhida já é usada por “{ $name }”. Selecione outra.
-search-keyword-warning-bookmark = A palavra-chave escolhida já é usada por um favorito. Selecione outra.
+search-keyword-warning-engine = Este atalho já está sendo usado para o “{ $name }”. Escolha outro.
+search-keyword-warning-bookmark = Este atalho já está sendo usado em um favorito. Escolha outro.
 
 ## Containers Section
 
@@ -752,6 +769,9 @@ privacy-header = Privacidade do navegador
 ## Privacy Section - Logins and Passwords
 
 logins-header = Contas e senhas
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Contas e senhas
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Perguntar se deve salvar contas e senhas de sites
@@ -786,6 +806,8 @@ forms-master-pw-fips-desc = Falha na alteração da senha
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Confirme sua identidade para criar uma senha mestra.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Para criar uma senha mestra, insira suas credenciais de acesso ao Windows. Isso ajuda a proteger a segurança de suas contas.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These

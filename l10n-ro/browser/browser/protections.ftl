@@ -33,8 +33,8 @@ protection-report-header-details-strict = Nivelul de protecție este setat pe <b
     .title = Mergi la Setări de confidențialitate
 protection-report-header-details-custom = Nivelul de protecție este setat pe <b>Personalizat</b>
     .title = Mergi la Setări de confidențialitate
-protection-report-page-title = Protecții privind intimitatea
-protection-report-content-title = Protecții privind intimitatea
+protection-report-page-title = Protecții pentru confidențialitate
+protection-report-content-title = Protecții pentru confidențialitate
 etp-card-title = Protecție îmbunătățită împotriva urmăririi
 etp-card-content = Elementele de urmărire te urmăresc online pentru a colecta informații despre obiceiurile și interesele tale de navigare. { -brand-short-name } blochează multe dintre aceste elementele de urmărire și alte scripturi rău-intenționate.
 protection-report-etp-card-content-custom-not-blocking = Toate protecțiile sunt acum dezactivate. Selectează elementele de urmărire care să fie blocate prin gestionarea setărilor de protecție din { -brand-short-name }.
@@ -56,6 +56,9 @@ cryptominer-tab-title = Criptomineri
 cryptominer-tab-content = Criptomomerii folosesc puterea de calcul a sistemului tău pentru a mina bani digitali. Scripturile de criptominare îți golesc bateria, îți încetinesc calculatorul și îți pot crește factura la energie. <a data-l10n-name="learn-more-link">Află mai multe</a>
 protections-close-button =
     .aria-label = Închide
+protections-close-button2 =
+    .aria-label = Închide
+    .title = Închide
 mobile-app-title = Blochează elementele de urmărire din reclame pe mai multe dispozitive
 mobile-app-card-content = Folosește browserul pentru dispozitive mobile cu protecție integrată împotriva elementelor de urmărire din reclame.
 mobile-app-links = { -brand-product-name } Browser pentru <a data-l10n-name="android-mobile-inline-link">Android</a> și <a data-l10n-name="ios-mobile-inline-link">iOS</a>
@@ -88,11 +91,11 @@ lockwise-connected-device-status =
         [few] Conectat la { $count } dispozitive
        *[other] Conectat la { $count } de dispozitive
     }
-monitor-title = Stai cu ochii pe încălcările securității datelor
+monitor-title = Fii atent(ă) la breșe de date
 monitor-link = Cum funcționează
-monitor-header-content-no-account = Verifică { -monitor-brand-name } pentru a vedea dacă faci parte dintr-o încălcare cunoscută a securității datelor și pentru a obține alerte despre încălcările noi.
-monitor-header-content-signed-in = { -monitor-brand-name } te avertizează dacă informațiile tale apar într-o încălcare cunoscută a securității datelor.
-monitor-sign-up = Înregistrează-te pentru alerte privind încălcările securității datelor
+monitor-header-content-no-account = Verifică { -monitor-brand-name } și vezi dacă ai fost implicat(ă) într-o breșă de date cunoscută și pentru a obține alerte despre breșele noi.
+monitor-header-content-signed-in = { -monitor-brand-name } te avertizează dacă datele tale apar într-o breșă de date cunoscută.
+monitor-sign-up = Înregistrează-te pentru alerte despre breșe de date
 auto-scan = Scanat automat astăzi
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
@@ -108,18 +111,18 @@ info-monitored-emails =
 # your localization, because it would result in the number showing twice.
 info-known-breaches-found =
     { $count ->
-        [one] încălcare cunoscută a securității datelor ți-a expus informațiile
-        [few] încălcări cunoscute ale securității datelor ți-au expus informațiile
-       *[other] de încălcări cunoscute ale securității datelor ți-au expus informațiile
+        [one] breșă cunoscută de date ți-a expus informațiile
+        [few] breșe cunoscute de date ți-au expus informațiile
+       *[other] de breșe cunoscute de date ți-au expus informațiile
     }
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
     { $count ->
-        [one] parolă expusă în toate încălcările securității datelor
-        [few] parole expuse în toate încălcările securității datelor
-       *[other] de parole expuse în toate încălcările securității datelor
+        [one] parolă expusă în toate breșele de date
+        [few] parole expuse în toate breșele de date
+       *[other] de parole expuse în toate breșele de date
     }
 full-report-link = Vezi raportul complet pe <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>
 # This string is displayed after a large numeral that indicates the total number
@@ -127,9 +130,9 @@ full-report-link = Vezi raportul complet pe <a data-l10n-name="monitor-inline-li
 # your localization, because it would result in the number showing twice.
 password-warning =
     { $count ->
-        [one] set de date de autentificare salvat este posibil să fi fost expus într-o încălcare a securității datelor. Schimbă această parolă pentru o mai bună securitate online. <a data-l10n-name="lockwise-link">Vezi datele de autentificare salvate</a>
-        [few] seturi de date de autentificare salvate este posibil să fi fost expuse într-o încălcare a securității datelor. Schimbă aceste parole pentru o mai bună securitate online. <a data-l10n-name="lockwise-link">Vezi datele de autentificare salvate</a>
-       *[other] de seturi de date de autentificare salvate este posibil să fi fost expuse într-o încălcare a securității datelor. Schimbă aceste parole pentru o mai bună securitate online. <a data-l10n-name="lockwise-link">Vezi datele de autentificare salvate</a>
+        [one] set de date de autentificare salvat este posibil să fi fost expus într-o breșă de date. Schimbă această parolă pentru o securitate mai bună online. <a data-l10n-name="lockwise-link">Vezi datele de autentificare salvate</a>
+        [few] seturi de date de autentificare salvate este posibil să fi fost expuse într-o breșă de date. Schimbă aceste parole pentru o securitate mai bună online. <a data-l10n-name="lockwise-link">Vezi datele de autentificare salvate</a>
+       *[other] de seturi de date de autentificare salvate este posibil să fi fost expuse într-o breșă de date. Schimbă aceste parole pentru o securitate mai bună online. <a data-l10n-name="lockwise-link">Vezi datele de autentificare salvate</a>
     }
 
 ## The title attribute is used to display the type of protection.

@@ -120,10 +120,6 @@ cfr-whatsnew-lockwise-take-link-text = รับแอป
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = ค้นหาได้มากขึ้นโดยพิมพ์น้อยลงในแถบที่อยู่
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = ไปยังไซต์ที่คุณใช้มากที่สุดด้วยคลิกเดียวในแถบที่อยู่ ค้นหาสิ่งต่าง ๆ ได้เร็วขึ้นด้วยผลลัพธ์จาก { $searchEngineName } และประวัติการเรียกดูของคุณ
-cfr-whatsnew-searchbar-body-generic = ไปยังไซต์ที่คุณใช้มากที่สุดด้วยคลิกเดียวในแถบที่อยู่ ค้นหาสิ่งต่าง ๆ ได้เร็วขึ้นด้วยผลลัพธ์การค้นหาจากประวัติการเรียกดูของคุณ
 cfr-whatsnew-searchbar-body-topsites = เพียงเลือกแถบที่อยู่แล้วกล่องจะขยายออกพร้อมลิงก์ไปยังเว็บไซต์ยอดนิยมของคุณ
 cfr-whatsnew-searchbar-icon-alt-text = ไอคอนรูปแว่นขยาย
 
@@ -208,3 +204,24 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = ดูทั้งหมด
     .accesskey = ด
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = สร้างรหัสผ่านที่ปลอดภัยได้อย่างง่ายดาย
+cfr-whatsnew-lockwise-body = การคิดรหัสผ่านที่ไม่ซ้ำใครและปลอดภัยสำหรับทุกบัญชีนั้นเป็นเรื่องยาก เมื่อสร้างรหัสผ่าน ให้เลือกช่องกรอกรหัสผ่านเพื่อใช้รหัสผ่านที่ปลอดภัยซึ่งสร้างขึ้นจาก { -brand-shorter-name }
+cfr-whatsnew-lockwise-icon-alt = ไอคอน { -lockwise-brand-short-name }
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = รับการแจ้งเตือนเกี่ยวกับรหัสผ่านที่อ่อนแอ
+cfr-whatsnew-passwords-body = แฮกเกอร์รู้ว่าผู้คนใช้รหัสผ่านเดียวกันซ้ำ หากคุณใช้รหัสผ่านเดียวกันในหลาย ๆ ไซต์และหนึ่งในเว็บไซต์เหล่านั้นอยู่ในการรั่วไหลของข้อมูล คุณจะเห็นการแจ้งเตือนใน { -lockwise-brand-short-name } เพื่อเปลี่ยนรหัสผ่านของคุณบนไซต์เหล่านั้น
+cfr-whatsnew-passwords-icon-alt = ไอคอนกุญแจรหัสผ่านที่อ่อนแอ
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = เปิดภาพที่เล่นควบคู่แบบเต็มหน้าจอ
+cfr-whatsnew-pip-fullscreen-body = เมื่อคุณเปิดวิดีโอในหน้าต่างลอย คุณสามารถคลิกสองครั้งที่หน้าต่างนั้นเพื่อแสดงแบบเต็มหน้าจอได้
+cfr-whatsnew-pip-fullscreen-icon-alt = ไอคอนภาพที่เล่นควบคู่

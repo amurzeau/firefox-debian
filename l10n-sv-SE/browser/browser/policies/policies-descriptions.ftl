@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Inaktivera kontrollen av förvald webbläsare v
 policy-DownloadDirectory = Ange och lås nedladdningskatalogen.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Aktivera eller inaktivera Innehållsblockering med möjlighet att låsa valet.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Aktivera eller inaktivera krypterade medieutökningar och lås den eventuellt.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = Ange standardvärdet för att { -brand-short-n
 policy-OverrideFirstRunPage = Åsidosätt sidan som visas första gången. Sätt denna policy till blankt om du vill inaktivera sidan som visas första gången.
 policy-OverridePostUpdatePage = Åsidosätt sidan "Vad är nytt" efter uppdateringar. Sätt denna policy till blankt om du vill inaktivera sidan efter uppdateringar.
 policy-PasswordManagerEnabled = Aktivera att spara lösenord i lösenordshanteraren.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Inaktivera eller konfigurera PDF.js, den inbyggda PDF-visaren i { -brand-short-name }
 policy-Permissions2 = Konfigurera behörigheter för kamera, mikrofon, plats, aviseringar och autoplay.
 policy-PopupBlocking = Tillåt vissa webbplatser att visa popup-fönster som standard.
 policy-Preferences = Ställ in och lås värdet för en delmängd av inställningar.

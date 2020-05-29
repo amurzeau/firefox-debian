@@ -43,6 +43,12 @@ protection-report-page-title = Diogelu Preifatrwydd
 protection-report-content-title = Diogelu Preifatrwydd
 etp-card-title = Diogelwch Uwch Rhag Tracio
 etp-card-content = Mae tracwyr yn eich dilyn ar-lein i gasglu gwybodaeth am eich arferion pori a'ch diddordebau. Mae { -brand-short-name } yn rhwystro llawer o'r tracwyr hyn a sgriptiau maleisus eraill.
+protection-report-webpage-title = Bwrdd Gwaith Diogelwch
+protection-report-page-content-title = Bwrdd Gwaith Diogelwch
+protection-report-page-summary = Gall { -brand-short-name } ddiogelu eich preifatrwydd y tu ôl i'r llenni wrth i chi bori. Mae hwn yn grynodeb wedi'i bersonoli o'r diogelwch hynny, gan gynnwys offer i reoli eich diogelwch ar-lein.
+etp-card-title-always = Diogelwch Uwch Rhag Tracio: Ymlaen Drwy'r Amser
+etp-card-title-custom-not-blocking = Diogelwch Uwch Rhag Tracio: I FFWRDD
+etp-card-content-summary = Pan fydd cwmnïau anhysbys yn ceisio eich dilyn yn gyfrinachol o amgylch y we, mae { -brand-short-name } yn atal llawer ohonynt yn awtomatig.
 protection-report-etp-card-content-custom-not-blocking = Mae'r holl ddiogelu wedi'u diffodd ar hyn o bryd. Dewiswch pa dracwyr i'w rhwystro trwy reoli eich gosodiadau diogelu { -brand-short-name }.
 protection-report-manage-protections = Rheoli Gosodiadau
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -62,16 +68,23 @@ cryptominer-tab-title = Cryptogloddwyr
 cryptominer-tab-content = Mae cryptogloddwyr yn defnyddio pŵer cyfrifiadurol eich system i gloddio arian digidol. Mae sgriptiau cryptogloddio yn gwagio eich batri, arafu eich cyfrifiadur, a gall gynyddu eich bil trydan. <a data-l10n-name="learn-more-link">Dysgu rhagor</a>
 protections-close-button =
     .aria-label = Cau
+protections-close-button2 =
+    .aria-label = Cau
+    .title = Cau
 mobile-app-title = Rhwystrwch dracwyr hysbysebion ar draws rhagor o ddyfeisiau
 mobile-app-card-content = Defnyddiwch y porwr symudol gydag diogelwch mewnol rhag tracio gan hysbysebion.
 mobile-app-links = Porwr { -brand-product-name } ar gyfer <a data-l10n-name="android-mobile-inline-link">Android</a> a <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Peidiwch byth ag anghofio cyfrinair eto
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Rheoli Cyfrineiriau
 lockwise-header-content = Mae { -lockwise-brand-name } yn cadw'ch cyfrineiriau yn ddiogel yn eich porwr.
 lockwise-header-content-logged-in = Cadwch a chydweddwch eich cyfrineiriau'n ddiogel i'ch holl ddyfeisiau.
 protection-report-view-logins-button = Gweld Mewngofnodi
     .title = Ewch i'r Mewngofnodin wedi'u Cadw
-lockwise-no-logins-content = Defnyddiwch yr ap <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name } i gymryd eich cyfrineiriau i bob man.
+protection-report-save-passwords-button = Cadw Cyfrineiriau
+    .title = Cadw Cyfrineiriau ar { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Rheoli Cyfrineiriau
+    .title = Rheoli Cyfrineiriau ar { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Ewch â'ch cyfrineiriau i bob man
 lockwise-no-logins-card-content = Defnyddiwch gyfrineiriau wedi'u cadw yn { -brand-short-name } ar unrhyw ddyfais.
 lockwise-app-links = { -lockwise-brand-name } ar gyfer <a data-l10n-name="lockwise-android-inline-link">Android</a> a <a data-l10n-name = "lockwise-ios-inline-link" >iOS</a>
@@ -87,6 +100,31 @@ lockwise-passwords-stored =
         [many] Cyfrinair wedi'u cadw'n ddiogel <a data-l10n-name="lockwise-how-it-works">Sut mae'n gweithio</a>
        *[other] Cyfrinair wedi'u cadw'n ddiogel <a data-l10n-name="lockwise-how-it-works">Sut mae'n gweithio</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [zero] Efallai bod { $count } cyfrineiriau wedi cael eu hamlygu mewn tor-data.
+        [one] Efallai bod i 1 cyfrinair wedi cael ei amlygu mewn tor-data.
+        [two] Efallai bod { $count } gyfrinair wedi cael eu hamlygu mewn tor-data.
+        [few] Efallai bod { $count } cyfrinair wedi cael eu hamlygu mewn tor-data.
+        [many] Efallai bod { $count } chyfrinair wedi cael eu hamlygu mewn tor-data.
+       *[other] Efallai bod { $count } cyfrinair wedi cael eu hamlygu mewn tor-data.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [zero] Mae'ch cyfrineiriau'n cael eu cadw'n ddiogel.
+        [one] Mae 1 cyfrinair yn cael ei gadw'n ddiogel.
+        [two] Mae'ch cyfrineiriau'n cael eu cadw'n ddiogel.
+        [few] Mae'ch cyfrineiriau'n cael eu cadw'n ddiogel.
+        [many] Mae'ch cyfrineiriau'n cael eu cadw'n ddiogel.
+       *[other] Mae'ch cyfrineiriau'n cael eu cadw'n ddiogel.
+    }
+lockwise-how-it-works-link = Sut mae'n gweithio
 turn-on-sync = Cychwyn { -sync-brand-short-name }…
     .title = Mynd i ddewisiadau cydweddu
 manage-connected-devices = Rheoli dyfeisiau…
@@ -107,6 +145,12 @@ monitor-header-content-no-account = Edrychwch ar { -monitor-brand-name } i weld 
 monitor-header-content-signed-in = Mae { -monitor-brand-name } yn eich rhybuddio os yw'ch manylion wedi ymddangos mewn tor-data hysbys
 monitor-sign-up = Cofrestrwch am Rybuddion Tor-data
 auto-scan = Wedi'u sganio'n awtomatig heddiw
+monitor-emails-tooltip =
+    .title = Gweld cyfeiriadau e-bost wedi'u monitro ar { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Gweld tor-data hysbys ar { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Gweld cyfrineiriau wedi'u datgelu ar { -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

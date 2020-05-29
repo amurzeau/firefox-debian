@@ -71,6 +71,8 @@ policy-DontCheckDefaultBrowser = Vypnutí kontroly nastavení výchozího prohl�
 policy-DownloadDirectory = Nastavení a uzamčení nastavení adresáře pro stahování souborů.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Zapnutí nebo vypnutí blokování obsahu a případně jeho uzamčení.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Zapnutí nebo vypnutí Encrypted Media Extensions a případně uzamčení tohoto nastavení.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -113,6 +115,8 @@ policy-OfferToSaveLoginsDefault = Nastavení výchozí hodnoty, zda má { -brand
 policy-OverrideFirstRunPage = Nastavení vlastní stránky při prvním spuštění. Pokud nechcete při prvním spuštění zobrazovat žádnou stránku, nastavte toto pravidlo jako prázdné.
 policy-OverridePostUpdatePage = Nastavení vlastní stránky po aktualizaci. Pokud nechcete po aktualizaci zobrazovat žádnou stránku, nastavte toto pravidlo jako prázdné.
 policy-PasswordManagerEnabled = Povolení ukládat přihlašovací údaje do správce hesel.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Zablokování nebo nastavení PDF prohlížeče PDF.js vestavěného v aplikaci { -brand-short-name }.
 policy-Permissions2 = Nastavení oprávnění pro kameru, mikrofon, polohu, oznámení a automatické přehrávání.
 policy-PopupBlocking = Povolení zobrazování vyskakovacích oken ve výchozím stavu.
 policy-Preferences = Nastavení a uzamčení hodnoty pro podmnožinu předvoleb.

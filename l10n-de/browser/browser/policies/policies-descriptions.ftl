@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Standardbrowser-Überprüfung beim Start nicht 
 policy-DownloadDirectory = Ordner für Downloads festlegen und Änderung dieser Einstellung verbieten
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Seitenelementeblockierung aktivieren oder deaktivieren und optional deren Änderung verbieten
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Encrypted Media Extensions (Module zur Wiedergabe verschlüsselter Mediendateien) aktivieren oder deaktivieren und optional Änderung dieser Einstellung verbieten
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = Standardwert, ob Nachfrage zum Speichern von Z
 policy-OverrideFirstRunPage = Einmalig geöffnete Einführungsseite beim Starten eines neuen Profils festlegen. Ein leerer Wert deaktiviert das Öffnen der Seite.
 policy-OverridePostUpdatePage = Firefox-Neuigkeiten-Seite - angezeigt nach Programmaktualisierung - festlegen. Ein leerer Wert deaktiviert das Öffnen der Seite.
 policy-PasswordManagerEnabled = Speichern von Passwörtern in der Passwortverwaltung aktivieren
+# PDF.js and PDF should not be translated
+policy-PDFjs = Eingebauten PDF-Betrachter von { -brand-short-name } (PDF.js) deaktivieren oder konfigurieren
 policy-Permissions2 = Berechtigungen für Kamera, Mikrofon, Standort, Benachrichtigungen und automatische Wiedergabe festlegen
 policy-PopupBlocking = Popups für festgelegte Websites standardmäßig anzeigen
 policy-Preferences = Werte von bestimmten Einstellungen festlegen und Änderungen daran verhindern

@@ -15,6 +15,21 @@ address-input-type =
         [one] { $type } შესავსები ველი ერთი მისამართით
        *[other] { $type } შესავსები ველი { $count } მისამართით
     }
+#   $type (String) - the type of the addressing row
+#   $count (Number) - the number of address pills currently present in the addressing row
+address-input-type-aria-label =
+    { $count ->
+        [0] { $type }
+        [one] { $type } ერთი მისამართით, აირჩიეთ მარცხენა ისრით.
+       *[other] { $type } { $count } მისამართით, აირჩიეთ მარცხენა ისრით.
+    }
+#   $email (String) - the email address
+#   $count (Number) - the number of address pills currently present in the addressing row
+pill-aria-label =
+    { $count ->
+        [one] { $email }: გამოიყენეთ Enter ჩასასწორებლად, Delete კი მოსაცილებლად.
+       *[other] { $email }, 1 სულ { $count }: გამოიყენეთ Enter ჩასასწორებლად, Delete კი მოსაცილებლად.
+    }
 pill-action-edit =
     .label = მისამართის ჩასწორება
     .accesskey = ჩ

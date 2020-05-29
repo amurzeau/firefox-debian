@@ -43,7 +43,6 @@ login-list-count = { $count } credenziali
 login-list-sort-label-text = Ordina per:
 login-list-name-option = Nome (A-Z)
 login-list-name-reverse-option = Nome (Z-A)
-login-list-breached-option = Violazione dati
 about-logins-login-list-alerts-option = Avvisi
 login-list-last-changed-option = Ultima modifica
 login-list-last-used-option = Ultimo utilizzo
@@ -102,21 +101,27 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
-# This message can be seen by attempting to edit a login in about:logins
+# This message can be seen when attempting to edit a login in about:logins
 about-logins-edit-login-os-auth-dialog-message = Verificare la propria identità per modificare le credenziali salvate.
-# This message can be seen by attempting to edit a login in about:logins
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message-win = Per modificare queste credenziali, inserire le credenziali di accesso a Windows. Questo aiuta a garantire la sicurezza dei tuoi account.
+# This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = modificare le credenziali salvate
 
-# This message can be seen by attempting to reveal a password in about:logins
+# This message can be seen when attempting to reveal a password in about:logins
 about-logins-reveal-password-os-auth-dialog-message = Verificare la propria identità per mostrare la password salvata.
-# This message can be seen by attempting to reveal a password in about:logins
+# This message can be seen when attempting to reveal a password in about:logins on Windows.
+about-logins-reveal-password-os-auth-dialog-message-win = Per visualizzare la password, inserire le credenziali di accesso a Windows. Questo aiuta a garantire la sicurezza dei tuoi account.
+# This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = mostrare la password salvata
 
-# This message can be seen by attempting to copy a password in about:logins
+# This message can be seen when attempting to copy a password in about:logins
 about-logins-copy-password-os-auth-dialog-message = Verificare la propria identità per copiare la password salvata.
-# This message can be seen by attempting to copy a password in about:logins
+# This message can be seen when attempting to copy a password in about:logins on Windows.
+about-logins-copy-password-os-auth-dialog-message-win = Per copiare la password, inserire le credenziali di accesso a Windows. Questo aiuta a garantire la sicurezza dei tuoi account.
+# This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = copiare la password salvata
 
@@ -162,9 +167,6 @@ confirm-discard-changes-dialog-confirm-button = Ignora
 
 about-logins-breach-alert-title = Violazione sito web
 breach-alert-text = Dall’ultima volta in cui hai aggiornato queste credenziali, le password di questo sito web sono state rubate o diffuse pubblicamente. Modifica la tua password per proteggere questo account.
-breach-alert-link = Ulteriori informazioni su questa violazione.
-breach-alert-dismiss =
-    .title = Chiudi questo avviso
 about-logins-breach-alert-date = Questa violazione si è verificata il giorno { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"

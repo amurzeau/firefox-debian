@@ -45,7 +45,7 @@
 <!ENTITY generic.longDesc "<p>&brandShortName; iz nekog razloga ovu stranicu nije moguće učitati.</p>">
 
 <!ENTITY captivePortal.title "Prijava na mrežu">
-<!ENTITY captivePortal.longDesc2 "<p>Morate se prijaviti na ovu mreži želite li koristiti internet.</p>">
+<!ENTITY captivePortal.longDesc2 "<p>Za upotrebu interneta, moraš se najprije prijaviti na ovu mreži.</p>">
 
 <!ENTITY openPortalLoginPage.label2 "Otvaranje stranice prijave na mrežu">
 
@@ -59,7 +59,7 @@
 
 <!ENTITY notCached.title "Dokument je istekao">
 
-<!ENTITY notCached.longDesc "<p>Traženi dokument nije dostupan u &brandShortName;ovoj priručnoj memoriji.</p><ul><li>. Radi mjere sigurnosti, &brandShortName; neće automatski ponovo zatražiti osjetljive dokumente.</li><li>Klikni na Pokušaj ponovo za ponovno traženje dokumenta od web stranice.</li></ul>">
+<!ENTITY notCached.longDesc "<p>Traženi dokument nije dostupan u priručnoj memoriji &brandShortName;a.</p><ul><li>. Iz sigurnosnih razloga, &brandShortName; neće automatski ponovo zatražiti osjetljive dokumente.</li><li>Pritisni gumb „Pokušaj ponovo” za ponovno traženje dokumenta s web-stranice.</li></ul>">
 
 <!ENTITY netOffline.title "Izvanmrežni rad">
 
@@ -70,13 +70,13 @@
 <!ENTITY contentEncodingError.title "Greška kodiranja sadržaja">
 
 <!ENTITY contentEncodingError.longDesc "<ul>
-  <li>Kontaktiraj vlasnike stranice i obavijesti ih o ovom problemu.</li>
+  <li>Kontaktiraj vlasnike web-stranice i obavijesti ih o ovom problemu.</li>
 </ul>">
 
 <!ENTITY unsafeContentType.title "Nesiguran tip datoteke">
 
 <!ENTITY unsafeContentType.longDesc "<ul>
-  <li>Kontaktiraj vlasnike stranice i obavijesti ih o ovom problemu.</li>
+  <li>Kontaktiraj vlasnike web-stranice i obavijesti ih o ovom problemu.</li>
 </ul>">
 
 <!ENTITY netReset.title "Veza je prekinuta">
@@ -87,9 +87,11 @@
 
 <!ENTITY netTimeout.longDesc "&sharedLongDesc;">
 
-<!ENTITY unknownProtocolFound.title "Nepoznati protokol">
+<!ENTITY unknownProtocolFound.title "Nepoznata vrsta adrese">
 
-<!ENTITY unknownProtocolFound.longDesc "<ul> <li>Možda ćete trebali instalirati drugi program da biste mogli otvoriti ovu adresu.</li> </ul>">
+<!ENTITY unknownProtocolFound.longDesc "<ul>
+  <li>Možda je potrebno instalirati jedan drugi program za otvaranje ove adrese.</li>
+</ul>">
 
 <!ENTITY proxyConnectFailure.title "Proxy poslužitelj odbio vezu">
 
@@ -112,7 +114,10 @@
 
 <!ENTITY redirectLoop.title "Petlja preusmjeravanja">
 
-<!ENTITY redirectLoop.longDesc "<ul> <li>Ovaj problem ponekad može biti uzrokovan isključivanjem ili odbijanjemprimanja kolačića.</li> </ul>">
+<!ENTITY redirectLoop.longDesc "<ul>
+  <li>Ovaj problem ponekad može biti uzrokovan isključivanjem ili odbijanjem primanja kolačića
+    kolačića.</li>
+</ul>">
 
 <!ENTITY unknownSocketType.title "Neočekivani odgovor od poslužitelja">
 
@@ -126,8 +131,8 @@
 <!ENTITY nssFailure2.title "Neuspjeh otvaranja sigurne veze">
 
 <!ENTITY nssFailure2.longDesc2 "<ul>
-  <li>Nije moguće prikazati stranicu koju pokušavaš otvoriti, jer nije moguće provjeriti autentičnost primljenih podataka.</li>
-  <li>Kontaktiraj vlasnike stranice i obavijesti ih o ovom problemu.</li>
+  <li>Stranicu koju pokušavaš vidjeti nije moguće prikazati, jer nije moguće provjeriti autentičnost primljenih podataka.</li>
+  <li>Kontaktiraj vlasnike web-stranice i obavijesti ih o ovom problemu.</li>
 </ul>">
 
 <!ENTITY certerror.longpagetitle2 "Upozorenje: potencijalni sigurnosni rizik">
@@ -159,22 +164,20 @@ was trying to connect. -->
 
 <!ENTITY cspBlocked.longDesc "<p>&brandShortName; je sprječio učitavanje stranice na ovaj način jer stranica ima sigurnosnu politiku sadržaja koja to zabranjuje..</p>">
 
-<!ENTITY xfoBlocked.title "Blokirano po X-Frame-Options pravilima">
+<!ENTITY corruptedContentErrorv2.title "Greška oštećenog sadržaja">
 
 <!ENTITY xfoBlocked.longDesc "<p>&brandShortName; sprečava učitavanje ove stranice u ovom kontekstu, jer stranica sadrži X-Frame-Options pravila, koja to ne dozvoljavaju.</p>">
 
-<!ENTITY corruptedContentErrorv2.title "Greška oštećenog sadržaja">
-
-<!ENTITY corruptedContentErrorv2.longDesc "<p>Stranicu kojoj pokušavate pristupiti nije moguće prikazati zbog greške u prijenosu podataka.</p><ul><li>Obavijestite vlasnike web stranice o ovom problemu.</li></ul>">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>Stranicu koju pokušavaš vidjeti nije moguće prikazati zbog greške u prijenosu podataka.</p><ul><li>Kontaktiraj vlasnike web-stranice i obavijesti ih o ovom problemu.</li></ul>">
 
 <!ENTITY securityOverride.exceptionButton1Label "Prihvati rizik i nastavi">
 
-<!ENTITY errorReporting.automatic2 "Prijavite greške poput ove da biste pomogli Mozilli identificirati i blokirati maliciozne stranice">
+<!ENTITY errorReporting.automatic2 "Prijavi greške poput ove i pomogni Mozilli identificirati i blokirati zlonamjerne stranice">
 <!ENTITY errorReporting.learnMore "Saznaj više …">
 
 <!ENTITY remoteXUL.title "Udaljeni XUL">
 
-<!ENTITY remoteXUL.longDesc "<p><ul><li>Obavijestite vlasnike web stranice o ovom problemu.</li></ul></p>">
+<!ENTITY remoteXUL.longDesc "<p><ul><li>Kontaktiraj vlasnike web-stranice i obavijesti ih o ovom problemu.</li></ul></p>">
 
 <!ENTITY sslv3Used.title "Uspostava sigurne veze nije uspjela">
 
@@ -210,10 +213,10 @@ was trying to connect. -->
 <!ENTITY prefReset.longDesc "Izgleda da tvoje postavke sigurnosti mreže možda ovo uzrokuju. Želiš li vratiti standardne postavke?">
 <!ENTITY prefReset.label "Vrati početne postavke">
 
+<!ENTITY networkProtocolError.title "Greška mrežnog protokola">
+
 <!ENTITY enableTls10.longDesc "Ova web stranica ne podržava TLS 1.2 protokol, koji je minimalni protokol kojeg &brandShortName; podržava. Veza će možda uspjeti, ako aktiviraš protokole TLS 1.0 i TLS 1.1.">
 <!ENTITY enableTls10.note "TLS 1.0 i TLS 1.1 će biti trajno onemogućeni u budućim izdanjima.">
 <!ENTITY enableTls10.label "Omogući TLS 1.0 i 1.1">
 
-<!ENTITY networkProtocolError.title "Greška mrežnog protokola">
-
-<!ENTITY networkProtocolError.longDesc "<p>Stranicu kojoj pokušavate pristupiti nije moguće prikazati zbog greške mrežnog protokola.</p><ul><li>Obavijestite vlasnike web stranice o ovom problemu.</li></ul>">
+<!ENTITY networkProtocolError.longDesc "<p>Stranicu koju pokušavaš vidjeti nije moguće prikazati zbog greške u mrežnom protokolu.</p><ul><li>Kontaktiraj vlasnike web-stranice i obavijesti ih o ovom problemu.</li></ul>">

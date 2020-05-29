@@ -35,6 +35,12 @@ protection-report-page-title = Proteções de privacidade
 protection-report-content-title = Proteções de privacidade
 etp-card-title = Proteção melhorada contra a monitorização
 etp-card-content = Os rastreadores seguem-no na Internet para recolher informação sobre os seus hábitos e interesses de navegação. O { -brand-short-name } bloqueia muitos desses rastreadores e outros "scripts" maliciosos.
+protection-report-webpage-title = Painel das proteções
+protection-report-page-content-title = Painel das proteções
+protection-report-page-summary = O { -brand-short-name } pode proteger a sua privacidade nos bastidores, enquanto navega. Este é um resumo personalizado destas proteções, incluindo ferramentas para assumir o controle da sua segurança na Internet.
+etp-card-title-always = Proteção melhorada contra a monitorização: Sempre ligada
+etp-card-title-custom-not-blocking = Proteção melhorada contra a monitorização: DESLIGADA
+etp-card-content-summary = Quando empresas desconhecidas o tentam seguir secretamente pela Internet, o { -brand-short-name } impede que muitas destas empresas o possam fazer.
 protection-report-etp-card-content-custom-not-blocking = Atualmente, todas as proteções estão desativadas. Escolha que rastreadores devem ser bloqueados gerindo as definições de proteção do { -brand-short-name }.
 protection-report-manage-protections = Gerir definições
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -54,15 +60,23 @@ cryptominer-tab-title = Cripto-mineradores
 cryptominer-tab-content = Os cripto-mineradores utilizam o poder de computação do seu sistema para minerar dinheiro digital. Os scripts de cripto-mineração podem descarregar a sua bateria, tornar o seu computador mais lento e aumentar os custos com a sua fatura elétrica. <a data-l10n-name="learn-more-link">Saber mais</a>
 protections-close-button =
     .aria-label = Fechar
+protections-close-button2 =
+    .aria-label = Fechar
+    .title = Fechar
 mobile-app-title = Bloquear anúncios de monitorização em mais dispositivos
 mobile-app-card-content = Utilize o navegador móvel com proteção integrada contra anúncios de monitorização.
 mobile-app-links = O navegador { -brand-product-name } para <a data-l10n-name="android-mobile-inline-link">Android</a> e <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Nunca mais esqueça uma palavra-passe
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Gestão de palavras-passe
 lockwise-header-content = O { -lockwise-brand-name } guarda as suas palavras-passe em segurança no seu navegador.
 lockwise-header-content-logged-in = Guarde e sincronize em segurança as suas palavras-passe em todos os seus dispositivos.
 protection-report-view-logins-button = Ver credenciais
     .title = Ir para Credenciais guardadas
+protection-report-save-passwords-button = Guardar palavras-passe
+    .title = Guardar palavras-passe no { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Gerir palavras-passe
+    .title = Gerir palavras-passe no { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Leve as suas palavras-passe para todo o lado
 lockwise-no-logins-card-content = Utilize as palavras-passe guardadas no { -brand-short-name } em qualquer dispositivo.
 lockwise-app-links = { -lockwise-brand-name } para <a data-l10n-name="lockwise-android-inline-link">Android</a> e <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -74,6 +88,23 @@ lockwise-passwords-stored =
         [one] Palavra-passe guardada com segurança <a data-l10n-name="lockwise-how-it-works">Como funciona</a>
        *[other] Palavras-passe guardadas com segurança <a data-l10n-name="lockwise-how-it-works">Como funciona</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] 1 palavra-passe poderá ter sido exposta numa violação de dados.
+       *[other] { $count } palavras-passe poderão ter sido expostas numa violação de dados
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] 1 palavra-passe guardada em segurança.
+       *[other] As suas palavras-passe estão a ser guardadas em segurança.
+    }
+lockwise-how-it-works-link = Como é que funciona
 turn-on-sync = Ligar { -sync-brand-short-name }…
     .title = Ir para as preferências de sincronização
 manage-connected-devices = Gerir dispositivos…
@@ -90,6 +121,12 @@ monitor-header-content-no-account = Aceda ao { -monitor-brand-name } para confir
 monitor-header-content-signed-in = O { -monitor-brand-name } avisa-o se a sua informação apareceu numa falha de segurança de dados conhecida.
 monitor-sign-up = Registar para Alertas de falhas de segurança
 auto-scan = Analisado hoje, de forma automática
+monitor-emails-tooltip =
+    .title = Ver os endereços de e-mail monitorados no { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Ver no { -monitor-brand-short-name } as falhas de segurança de dados conhecidas
+monitor-passwords-tooltip =
+    .title = Ver no { -monitor-brand-short-name } as palavras-passe expostas.
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

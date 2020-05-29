@@ -295,6 +295,10 @@ translate-attribution = Překlady od <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Výjimky…
     .accesskey = V
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Formátovat data, časy, čísla a jednotky podle nastavení jazyka „{ $localeName }“ z operačního systému
 check-user-spelling =
     .label = Při psaní kontrolovat pravopis
     .accesskey = t
@@ -343,6 +347,14 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Použít { $app-name } (výchozí)
+applications-use-os-default =
+    .label =
+        Použít výchozí aplikaci
+        { PLATFORM() ->
+            [macos] systému macOS
+            [windows] systému Windows
+           *[other] operačního systému
+        }
 applications-use-other =
     .label = Použít jinou…
 applications-select-helper = Zvolit pomocnou aplikaci
@@ -380,6 +392,14 @@ applications-preview-inapp =
             [neuter] v { -brand-short-name(case: "loc") }
            *[other] v aplikaci { -brand-short-name }
         }
+applications-open-inapp =
+    .label =
+        Otevřít { -brand-short-name.gender ->
+            [masculine] ve { -brand-short-name(case: "loc") }
+            [feminine] v { -brand-short-name(case: "loc") }
+            [neuter] v { -brand-short-name(case: "loc") }
+           *[other] v aplikaci { -brand-short-name }
+        }.
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -393,12 +413,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -888,7 +912,7 @@ sync-device-name-save =
 sync-connect-another-device = Připojit další zařízení
 sync-manage-devices = Správa zařízení
 sync-fxa-begin-pairing = Připojit zařízení
-sync-tos-link = Podmínky služby
+sync-tos-link = Podmínky poskytování služby
 sync-fxa-privacy-notice = Zásady ochrany osobních údajů
 
 ## Privacy Section
@@ -901,6 +925,9 @@ privacy-header = Nastavení soukromí
 ## Privacy Section - Logins and Passwords
 
 logins-header = Přihlašovací údaje
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Přihlašovací údaje
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Ptát se na ukládání přihlašovacích údajů

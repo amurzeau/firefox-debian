@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (גלישה פרטית)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (גלישה פרטית)
-       *[other] { $title } - { -brand-full-name } (גלישה פרטית)
-    }
 urlbar-identity-button =
     .aria-label = הצגת נתוני אתר
 
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = מהיום מקלידים פחות ומוצאים יותר: אפשר לחפש עם { $engineName } ישירות משורת הכתובת שלך.
 urlbar-search-tips-redirect-2 = ניתן להתחיל לחפש בשורת הכתובת כדי לצפות בהצעות מ־{ $engineName } ובהיסטוריית הגלישה שלך.
-
-##
-
 
 ##
 
@@ -245,3 +201,49 @@ identity-enable-mixed-content-blocking =
     .accesskey = פ
 identity-more-info-link-text =
     .label = מידע נוסף
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = מזעור
+browser-window-maximize-button =
+    .tooltiptext = הגדלה
+browser-window-restore-down-button =
+    .tooltiptext = שחזור כלפי מטה
+browser-window-close-button =
+    .tooltiptext = סגירה
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = מצלמה לשיתוף:
+    .accesskey = צ
+popup-select-microphone =
+    .value = מיקרופון לשיתוף:
+    .accesskey = מ
+popup-all-windows-shared = ישותפו כל החלונות הגלויים על המסך.
+
+## DevTools F12 popup
+
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = חיפוש או הקלדת כתובת
+urlbar-placeholder =
+    .placeholder = חיפוש או הקלדת כתובת
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = הדפדפן נשלט מרחוק
+urlbar-permissions-granted =
+    .tooltiptext = הענקת לאתר זה הרשאות נוספות.
+urlbar-switch-to-tab =
+    .value = מעבר ללשונית:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = הרחבה:
+urlbar-go-end-cap =
+    .tooltiptext = מעבר לכתובת שבסרגל המיקום
+urlbar-page-action-button =
+    .tooltiptext = פעולות דף
+urlbar-pocket-button =
+    .tooltiptext = שמירה אל { -pocket-brand-name }

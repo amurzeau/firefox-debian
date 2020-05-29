@@ -47,7 +47,6 @@ login-list-count =
 login-list-sort-label-text = Ordinar per:
 login-list-name-option = Nomine (A-Z)
 login-list-name-reverse-option = Nomine (Z-A)
-login-list-breached-option = Sitos web violate
 about-logins-login-list-alerts-option = Alertas
 login-list-last-changed-option = Ultime modification
 login-list-last-used-option = Ultime uso
@@ -108,17 +107,23 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 
 # This message can be seen by attempting to edit a login in about:logins
 about-logins-edit-login-os-auth-dialog-message = Verifica tu identitate pro modificar le credentiales salvate.
-# This message can be seen by attempting to edit a login in about:logins
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message-win = Pro modificar le conto, insere tu credentiales de accesso a Windows. Isto adjuta a proteger le securitate de tu contos.
+# This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = verifica le credentiales salvate
 # This message can be seen by attempting to reveal a password in about:logins
 about-logins-reveal-password-os-auth-dialog-message = Verifica tu identitate pro revelar le contrasigno salvate.
-# This message can be seen by attempting to reveal a password in about:logins
+# This message can be seen when attempting to reveal a password in about:logins on Windows.
+about-logins-reveal-password-os-auth-dialog-message-win = Pro vider le contrasigno, insere tu credentiales de accesso a Windows. Isto adjuta a proteger le securitate de tu contos.
+# This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = monstrar le contrasigno salvate
 # This message can be seen by attempting to copy a password in about:logins
 about-logins-copy-password-os-auth-dialog-message = Verifica tu identitate pro copiar le contrasigno salvate.
-# This message can be seen by attempting to copy a password in about:logins
+# This message can be seen when attempting to copy a password in about:logins on Windows.
+about-logins-copy-password-os-auth-dialog-message-win = Pro copiar le contrasigno, insere tu credentiales de accesso a Windows. Isto adjuta a proteger le securitate de tu contos.
+# This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = copiar le contrasigno salvate
 
@@ -163,9 +168,6 @@ confirm-discard-changes-dialog-confirm-button = Abandonar
 
 about-logins-breach-alert-title = Violation de sitos web
 breach-alert-text = Le contrasignos de iste sito web ha essite divulgate o robate desde le ultime vice que tu cambiava tu credentiales. Cambia ora tu contrasigno pro proteger tu conto!
-breach-alert-link = Saper plus sur iste violation.
-breach-alert-dismiss =
-    .title = Clauder iste alerta
 about-logins-breach-alert-date = Iste violation occurreva le { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"

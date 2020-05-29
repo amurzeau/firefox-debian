@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Navigation privée)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Navigation privée)
-       *[other] { $title } - { -brand-full-name } (Navigation privée)
-    }
 urlbar-identity-button =
     .aria-label = Afficher les informations du site
 
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Écrivez moins, trouvez plus : recherchez avec { $engineName } directement depuis la barre d’adresse.
 urlbar-search-tips-redirect-2 = Commencez votre recherche dans la barre d’adresse pour afficher des suggestions depuis { $engineName } et depuis votre historique de navigation.
-
-##
-
 
 ##
 
@@ -245,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = A
 identity-more-info-link-text =
     .label = Plus d’informations
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Réduire
+browser-window-maximize-button =
+    .tooltiptext = Agrandir
+browser-window-restore-down-button =
+    .tooltiptext = Restaurer
+browser-window-close-button =
+    .tooltiptext = Fermer
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Caméra à partager :
+    .accesskey = C
+popup-select-microphone =
+    .value = Microphone à partager :
+    .accesskey = M
+popup-all-windows-shared = L’ensemble des fenêtres visibles sur votre écran seront partagées.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = Pour utiliser le raccourci F12, ouvrez d’abord les outils de développement via le menu Développement web.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Saisir un terme à rechercher ou une adresse
+urlbar-placeholder =
+    .placeholder = Saisir un terme à rechercher ou une adresse
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Le navigateur est contrôlé à distance
+urlbar-permissions-granted =
+    .tooltiptext = Vous avez accordé des permissions supplémentaires à ce site web.
+urlbar-switch-to-tab =
+    .value = Aller à l’onglet :
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Extension :
+urlbar-go-end-cap =
+    .tooltiptext = Se rendre à la page indiquée dans la barre d’adresse
+urlbar-page-action-button =
+    .tooltiptext = Actions pour la page
+urlbar-pocket-button =
+    .tooltiptext = Enregistrer dans { -pocket-brand-name }

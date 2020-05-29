@@ -33,6 +33,12 @@ protection-report-page-title = Perlindungan Privasi
 protection-report-content-title = Perlindungan Privasi
 etp-card-title = Perlindungan Pelacakan yang Ditingkatkan
 etp-card-content = Pelacak mengikuti Anda berkeliling daring untuk mengumpulkan informasi tentang kebiasaan dan minat penelusuran Anda. { -brand-short-name } memblokir banyak pelacak dan skrip jahat lainnya.
+protection-report-webpage-title = Dasbor Perlindungan
+protection-report-page-content-title = Dasbor Perlindungan
+protection-report-page-summary = { -brand-short-name } dapat melindungi privasi Anda di balik layar ketika Anda menjelajah. Ini adalah ringkasan perlindungan tersebut yang dipersonalisasi, termasuk alat untuk mengendalikan keamanan daring Anda.
+etp-card-title-always = Perlindungan Pelacakan yang Ditingkatkan: Selalu Aktif
+etp-card-title-custom-not-blocking = Perlindungan Pelacakan yang Ditingkatkan: NONAKTIF
+etp-card-content-summary = Ketika perusahaan tak dikenal mencoba diam-diam mengikuti Anda di web, { -brand-short-name } secara otomatis menghentikan mayoritas dari mereka.
 protection-report-etp-card-content-custom-not-blocking = Semua pengamanan saat ini nonaktif. Pilih pelacak yang akan diblokir dengan mengelola pengaturan perlindungan { -brand-short-name } Anda.
 protection-report-manage-protections = Kelola Pengaturan
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -52,15 +58,23 @@ cryptominer-tab-title = Penambang Kripto
 cryptominer-tab-content = Penambang kripto menggunakan daya komputasi pada sistem Anda untuk menambang uang digital. Skrip penambangan kripto menguras baterai Anda, membuat Komputer anda lambat dan dapat menambah tagihan listrik Anda. <a data-l10n-name="learn-more-link">Pelajari lebih lanjut</a>
 protections-close-button =
     .aria-label = Tutup
+protections-close-button2 =
+    .aria-label = Tutup
+    .title = Tutup
 mobile-app-title = Blokir pelacak iklan di lebih banyak perangkat
 mobile-app-card-content = Gunakan peramban seluler dengan perlindungan bawaan terhadap pelacakan iklan.
 mobile-app-links = Peramban { -brand-product-name } untuk <a data-l10n-name="android-mobile-inline-link">Android</a> dan <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Jangan pernah lupa kata sandi lagi
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Pengelolaan Kata Sandi
 lockwise-header-content = { -lockwise-brand-name } menyimpan sandi di peramban Anda dengan aman.
 lockwise-header-content-logged-in = Simpan dan sinkronkan sandi dengan aman ke semua perangkat Anda.
 protection-report-view-logins-button = Lihat Info masuk
     .title = Buka Info masuk
+protection-report-save-passwords-button = Simpan Kata Sandi
+    .title = Simpan Kata Sandi di { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Kelola Kata Sandi
+    .title = Kelola Kata Sandi di { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Bawa kata sandi Anda ke mana saja
 lockwise-no-logins-card-content = Gunakan kata sandi yang disimpan dalam { -brand-short-name } di semua perangkat.
 lockwise-app-links = { -lockwise-brand-name } untuk <a data-l10n-name="lockwise-android-inline-link">Android</a> dan <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -71,6 +85,21 @@ lockwise-passwords-stored =
     { $count ->
        *[other] Sandi tersimpan dengan aman <a data-l10n-name="lockwise-how-it-works">Cara kerjanya</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+       *[other] { $count } kata sandi mungkin telah terungkap di sebuah pembobolan data.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+       *[other] Kata sandi Anda disimpan dengan aman
+    }
+lockwise-how-it-works-link = Cara kerjanya
 turn-on-sync = Aktifkan { -sync-brand-short-name }
     .title = Buka pengaturan sinkronisasi
 manage-connected-devices = Kelola perangkat…
@@ -86,6 +115,12 @@ monitor-header-content-no-account = Periksa { -monitor-brand-name } untuk meliha
 monitor-header-content-signed-in = { -monitor-brand-name } memperingatkan Anda jika info tentang Anda muncul dalam pembobolan yang diketahui.
 monitor-sign-up = Daftar untuk Peringatan Pembobolan
 auto-scan = Secara otomatis dipindai hari ini
+monitor-emails-tooltip =
+    .title = Lihat alamat surel terpantau di { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Lihat pelanggaran data yang diketahui di { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Lihat kata sandi yang terungkap di { -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

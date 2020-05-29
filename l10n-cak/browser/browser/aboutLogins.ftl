@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Tijaq k'utsamaj
-# This menuitem is only visible on Windows
-menu-menuitem-import = Kejik' Ewan taq Tzij...
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Tijik' pa Jun Chik Okik'amaya'l…
 menu-menuitem-preferences =
@@ -49,7 +47,7 @@ login-list-count =
 login-list-sort-label-text = Tichol chi:
 login-list-name-option = B'i'aj (A-Y)
 login-list-name-reverse-option = B'i'aj (Z-A)
-login-list-breached-option = Tz'ilan Ajk'amaya'l taq K'amaya'l
+about-logins-login-list-alerts-option = Retal taq k'ayewal
 login-list-last-changed-option = Ruk'isib'äl Jaloj
 login-list-last-used-option = Ruk'isib'äl Rokisaxik
 login-list-intro-title = Majun tikirib'äl molojri'ïl xilitäj
@@ -61,6 +59,8 @@ login-list-item-subtitle-new-login = Ke'atz'ib'aj ri taq retamab'al rutikirib'al
 login-list-item-subtitle-missing-username = (majun rub'i' okisanel)
 about-logins-list-item-breach-icon =
     .title = Tz'ilan Ajk'amaya'l taq Ruxaq
+about-logins-list-item-vulnerable-password-icon =
+    .title = Tz'ilanel ewan tzij
 
 ## Introduction screen
 
@@ -107,17 +107,23 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 
 # This message can be seen by attempting to edit a login in about:logins
 about-logins-edit-login-os-auth-dialog-message = Tanik'oj ri ab'anikil richin nanük' ri yakon rutikirib'al amolojri'ïl.
-# This message can be seen by attempting to edit a login in about:logins
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message-win = Richin nanük' ri rutikirib'al amolojri'ïl, tatz'ib'aj ri ruwujil rutikirisaxik molojri'ïl richin Windows. Re re' nuto' richin nuchajij rujikomal ri rub'i' ataqoya'l.
+# This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = tinuk' ri yakon rutikirib'al molojri'ïl
 # This message can be seen by attempting to reveal a password in about:logins
 about-logins-reveal-password-os-auth-dialog-message = Tanik'oj ri ab'anikil richin nak'üt ri yakon ewan tzij.
-# This message can be seen by attempting to reveal a password in about:logins
+# This message can be seen when attempting to reveal a password in about:logins on Windows.
+about-logins-reveal-password-os-auth-dialog-message-win = Richin natz'ët ri ewan atzij, tatz'ib'aj ri ruwujil rutikirisaxik molojri'ïl richin Windows. Re re' nuto' richin nuchajij rujikomal ri rub'i' ataqoya'l.
+# This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = tik'ut ri yakon ewan tzij
 # This message can be seen by attempting to copy a password in about:logins
 about-logins-copy-password-os-auth-dialog-message = Tanik'oj ri ab'anikil richin nawachib'ej ri yakon ewan tzij.
-# This message can be seen by attempting to copy a password in about:logins
+# This message can be seen when attempting to copy a password in about:logins on Windows.
+about-logins-copy-password-os-auth-dialog-message-win = Richin nawachib'ej ri ewan atzij, tatz'ib'aj ri ruwujil rutikirisaxik molojri'ïl richin Windows. Re re' nuto' richin nuchajij rujikomal ri rub'i' ataqoya'l.
+# This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = tiwachib'ëx ri yakon ewan tzij
 
@@ -160,10 +166,22 @@ confirm-discard-changes-dialog-confirm-button = Tich'aqïx
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Rutz'ilanem Ajk'amaya'l Ruxaq
 breach-alert-text = Xechayüx o xe'eleq'äx ri ewan taq tzij pa re ajk'amaya'l ruxaq re' toq xek'ex ri taq rutzij rutikirib'al molojri'ïl ri ruk'isib'äl q'ij. Tajala' ri ewan atzij richin nachajij ri rub'i' ataqoya'l.
-breach-alert-link = Tawetamaj mas chi rij re tz'ilanem.
-breach-alert-dismiss =
-    .title = Titz'apïx re rutzijol k'ayewal re'
+about-logins-breach-alert-date = Re tz'ilanem re' xk'ulwachitäj pa { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Tib'e pa { $hostname }
+about-logins-breach-alert-learn-more-link = Tetamäx ch'aqa' chik
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Tz'ilanel Ewan Tzij
+about-logins-vulnerable-alert-text2 = Re ewan tzij re' okisan pa jun chik rub'i' taqoya'l, ri xuk'ulwachij tz'ilanem. We ye'okisäx chik ri taq wujil xkekitz'ila' ronojel ri rub'i' taqoya'l. Tajala' re ewan tzij re'.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Tib'e pa { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Tetamäx ch'aqa' chik
 
 ## Error Messages
 

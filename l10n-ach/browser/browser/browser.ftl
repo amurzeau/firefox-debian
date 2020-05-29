@@ -2,65 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Yeny i mung)
-       *[default] { -brand-full-name }
-    }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (Yeny i mung)
-       *[default] { $title } - { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Yeny i mung)
-       *[other] { $title } - { -brand-full-name } (Yeny i mung)
-    }
-
-##
 
 urlbar-identity-button =
     .aria-label = Nen ngec ikom kakube
@@ -102,6 +43,11 @@ urlbar-addons-notification-anchor =
 urlbar-tip-help-icon =
     .title = Nong kony
 urlbar-search-tips-confirm = Aya, Aniang
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = Ngec:
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -109,7 +55,7 @@ urlbar-search-tips-confirm = Aya, Aniang
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Coo manok, nong mapol: Yeny { $engineName } atir ki ii lanyut me kanonge mamegi.
-urlbar-search-tips-redirect = Cak yeny mamegi kany me neno tam amia ki bot { $engineName } ki yeny mamegi mukato.
+urlbar-search-tips-redirect-2 = Cak yeny mamegi ki i lanyut me kanonge me neno tam amia ki bot { $engineName } ki yeny mamegi mukato.
 
 ##
 
@@ -127,10 +73,12 @@ urlbar-midi-blocked =
     .tooltiptext = I gengo woko nongo MIDI pi kakube man.
 urlbar-install-blocked =
     .tooltiptext = Igengo woko keto med-ikome pi kakube man.
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Yub alama buk man ({ $shortcut })
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -159,12 +107,14 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Iwangi, yeny ki:
+
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Lok ter me yeny
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Lok ter me yeny
+
 search-one-offs-context-open-new-tab =
     .label = Yeny i dirica matidi manyen
     .accesskey = d
@@ -179,6 +129,7 @@ search-one-offs-context-set-as-default-private =
 
 bookmark-panel-done-button =
     .label = Otum
+
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -230,3 +181,45 @@ identity-enable-mixed-content-blocking =
     .accesskey = C
 identity-more-info-link-text =
     .label = Ngec mapol
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Kan piny
+browser-window-close-button =
+    .tooltiptext = Lor
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Lamak cal me anywaka:
+    .accesskey = L
+popup-select-microphone =
+    .value = Mikropon me anywaka:
+    .accesskey = M
+popup-all-windows-shared = Ki binywako dirica weng ma nen i wang kompiuta ni.
+
+## DevTools F12 popup
+
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Yeny onyo ket kanonge
+urlbar-placeholder =
+    .placeholder = Yeny onyo ket kanonge
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Ki tye ka loono layeny ki kama bor
+urlbar-permissions-granted =
+    .tooltiptext = Imiyo ki kakube man twero mukene.
+urlbar-switch-to-tab =
+    .value = Lokke bot dirica matidi:
+
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Lamed:
+
+urlbar-page-action-button =
+    .tooltiptext = Jami atima me potbuk
+urlbar-pocket-button =
+    .tooltiptext = Gwok i { -pocket-brand-name }

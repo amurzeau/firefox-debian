@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = 啟動時不檢查是否為預設瀏覽器。
 policy-DownloadDirectory = 設定並鎖定下載資料夾。
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = 開啟或關閉內容封鎖功能，並可選擇鎖定該功能。
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = 開啟或關閉加密媒體擴充功能，並可選擇鎖定該功能。
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = 允許 { -brand-short-name } 提供記住儲�
 policy-OverrideFirstRunPage = 覆蓋「首次執行」頁面。若您想停用首次執行頁面，請將原則設為空白。
 policy-OverridePostUpdatePage = 覆蓋更新後會開啟的「有什麼新鮮事」頁面。若您想停用此頁面，請將原則設為空白。
 policy-PasswordManagerEnabled = 允許使用密碼管理員來儲存密碼。
+# PDF.js and PDF should not be translated
+policy-PDFjs = 停用或設定 { -brand-short-name } 內建的 PDF 閱讀器 PDF.js。
 policy-Permissions2 = 設定攝影機、麥克風、地理位置、通知、自動播放等權限。
 policy-PopupBlocking = 允許某些網站預設可顯示彈出視窗。
 policy-Preferences = 鎖定部分偏好設定的內容。

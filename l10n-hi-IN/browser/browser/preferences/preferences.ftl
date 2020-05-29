@@ -300,6 +300,8 @@ applications-use-plugin-in =
     .label = { $plugin-name } ({ -brand-short-name } में) का प्रयोग करें
 applications-preview-inapp =
     .label = { -brand-short-name } में पूर्वावलोकन
+applications-open-inapp =
+    .label = { -brand-short-name } में खोलें
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -313,12 +315,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -718,6 +724,9 @@ privacy-header = ब्राउज़र गोपनीयता
 ## Privacy Section - Logins and Passwords
 
 logins-header = लॉगिन और पासवर्ड
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = लॉगिन और पासवर्ड
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = वेबसाइटों के लिए लॉग इन और पासवर्ड सहेजने के लिए पूछें

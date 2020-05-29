@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Onemogoči preverjanje privzetega brskalnika ob
 policy-DownloadDirectory = Nastavi in zakleni mapo za prenose.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Omogoči ali onemogoči zavračanje vsebine ter ga po potrebi zakleni.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Omogoči ali onemogoči Encrypted Media Extensions ter jih po potrebi zakleni.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -69,6 +71,8 @@ policy-LegacyProfiles = Onemogoči možnost ustvarjanja ločenega profila za vsa
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
 
+policy-LegacySameSiteCookieBehaviorEnabled = Omogoči privzeto zastarelo nastavitev vedenja piškotkov SameSite.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Ponastavi zastarelo vedenje piškotkov SameSite na določenih straneh.
 
 ##
 
@@ -81,6 +85,8 @@ policy-OfferToSaveLoginsDefault = Nastavi privzeto vrednost, ki dovoljuje shranj
 policy-OverrideFirstRunPage = Preglasi stran prvega zagona. Če želite onemogočiti prikaz strani prvega zagona, nastavite pravilnik na prazno vrednost.
 policy-OverridePostUpdatePage = Preglasi stran "Kaj je novega", ki se odpre po posodobitvi. Če želite onemogočiti prikaz strani po posodobitvi, nastavite pravilnik na prazno vrednost.
 policy-PasswordManagerEnabled = Omogoči shranjevanje gesel v upravitelja gesel.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Onemogoči ali nastavi PDF.js, pregledovalnik PDF brskalnika { -brand-short-name }.
 policy-Permissions2 = Nastavi dovoljenja za kamero, mikrofon, lokacijo, obvestila in samodejno predvajanje.
 policy-PopupBlocking = Določenim spletnim stranem dovoli privzeto prikazovanje pojavnih oken.
 policy-Preferences = Nastavi in zakleni vrednost podnabora nastavitev.

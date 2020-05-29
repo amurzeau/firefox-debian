@@ -235,6 +235,10 @@ translate-attribution = Пераклад <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Выключэнні…
     .accesskey = ч
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Выкарыстоўваць налады аперацыйнай сістэмы для “{ $localeName }” для фармату дат, часу, лічбаў і адзінак вымярэння.
 check-user-spelling =
     .label = Правяраць арфаграфію ў час набору
     .accesskey = н
@@ -283,6 +287,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Ужываць { $app-name } (прадвызначана)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Ужываць прадвызначаную праграму macOS
+            [windows] Ужываць прадвызначаную праграму Windows
+           *[other] Ужываць прадвызначаную праграму сістэмы
+        }
 applications-use-other =
     .label = Ужываць іншае…
 applications-select-helper = Выбар праграмы-дапаможніка
@@ -308,6 +319,8 @@ applications-use-plugin-in =
     .label = Ужываць { $plugin-name } (у { -brand-short-name })
 applications-preview-inapp =
     .label = Перадпрагляд у { -brand-short-name }
+applications-open-inapp =
+    .label = Адкрываць у { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -321,12 +334,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -585,7 +602,7 @@ containers-add-button =
     .label = Дадаць новы кантэйнер
     .accesskey = Д
 containers-new-tab-check =
-    .label = Абярыце кантэйнер для кожнай новай карткі
+    .label = Выбіраць кантэйнер для кожнай новай карткі
     .accesskey = ы
 containers-preferences-button =
     .label = Налады
@@ -756,6 +773,9 @@ privacy-header = Прыватнасць браўзера
 ## Privacy Section - Logins and Passwords
 
 logins-header = Лагіны & Паролі
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Лагіны & Паролі
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Прапаноўваць захаваць лагіны і паролі для вэб-сайтаў
@@ -790,6 +810,8 @@ forms-master-pw-fips-desc = Няўдача змянення пароля
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Пацвердзіце сваю асобу, каб стварыць галоўны пароль.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Каб стварыць галоўны пароль, увядзіце свае ўліковыя дадзеныя для ўваходу ў Windows. Гэта дапамагае захоўваць бяспеку вашых уліковых запісаў.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These

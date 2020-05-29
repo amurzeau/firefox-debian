@@ -35,6 +35,12 @@ protection-report-page-title = Gizlilik Korumaları
 protection-report-content-title = Gizlilik Korumaları
 etp-card-title = Gelişmiş İzlenme Koruması
 etp-card-content = Takipçiler, gezinti alışkanlıklarınız ve ilgi alanlarınız hakkında bilgi toplamak için internette sizi takip eder. { -brand-short-name } bu takipçilerin ve diğer kötü amaçlı betiklerin çoğunu engeller.
+protection-report-webpage-title = Korumalar Panosu
+protection-report-page-content-title = Korumalar Panosu
+protection-report-page-summary = Siz web’de gezinirken { -brand-short-name } arka planda gizliliğinizi korur. Aşağıda bu korumaların özetini ve çevrimiçi güvenliğinizi artırmanızı sağlayacak araçları görüyorsunuz.
+etp-card-title-always = Gelişmiş izlenme koruması: Her zaman açık
+etp-card-title-custom-not-blocking = Gelişmiş izlenme koruması: KAPALI
+etp-card-content-summary = Adını bile duymadığınız şirketler sizi web’de gizlice takip etmeye çalışabilir. { -brand-short-name } onların çoğunu otomatik olarak durdurur.
 protection-report-etp-card-content-custom-not-blocking = Şu anda tüm korumalar kapalı. { -brand-short-name } koruma ayarlarınızı yöneterek hangi takipçilerin engelleneceğini seçebilirsiniz.
 protection-report-manage-protections = Ayarları yönet
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -54,15 +60,23 @@ cryptominer-tab-title = Kripto madencileri
 cryptominer-tab-content = Kripto madencileri sayısal para madenciliğinde bulunmak için sisteminizin hesaplama gücünü kullanır. Kripto madencilik komut dosyaları pilinizi tüketir, bilgisayarınızı yavaşlatır ve elektrik faturanızı kabartabilir. <a data-l10n-name="learn-more-link">Daha fazla bilgi alın</a>
 protections-close-button =
     .aria-label = Kapat
+protections-close-button2 =
+    .aria-label = Kapat
+    .title = Kapat
 mobile-app-title = Reklam takipçilerini tüm cihazlarda engelleyin
 mobile-app-card-content = Reklam takipçilerine karşı dahili korumaya sahip mobil tarayıcıyı kullanın.
 mobile-app-links = <a data-l10n-name="android-mobile-inline-link">Android</a> ve <a data-l10n-name="ios-mobile-inline-link">iOS</a> için { -brand-product-name } Browser
 lockwise-title = Bir daha hiçbir parolayı unutmayın
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Parola yönetimi
 lockwise-header-content = { -lockwise-brand-name } parolalarınızı tarayınızda güvenle saklar.
 lockwise-header-content-logged-in = Parolalarınızı güvenle saklayın ve tüm cihazlarınızla senkronize edin.
 protection-report-view-logins-button = Hesapları göster
     .title = Kayıtlı hesaplara git
+protection-report-save-passwords-button = Parolaları kaydet
+    .title = Parolaları { -lockwise-brand-short-name } ile kaydet
+protection-report-manage-passwords-button = Parolaları yönet
+    .title = Parolaları { -lockwise-brand-short-name } ile yönet
 lockwise-mobile-app-title = Parolalarınızı yanınızda taşıyın
 lockwise-no-logins-card-content = { -brand-short-name } tarayıcınızda kaydettiğiniz parolaları tüm cihazlarınızda kullanın.
 lockwise-app-links = <a data-l10n-name="lockwise-android-inline-link">Android</a> ve <a data-l10n-name="lockwise-ios-inline-link">iOS</a> için { -lockwise-brand-name }
@@ -74,6 +88,23 @@ lockwise-passwords-stored =
         [one] parola güvenli şekilde depolanıyor <a data-l10n-name="lockwise-how-it-works">Nasıl çalışır?</a>
        *[other] parola güvenli şekilde depolanıyor <a data-l10n-name="lockwise-how-it-works">Nasıl çalışır?</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] 1 parolanız bir veri ihlali kapsamında ele geçirilmiş olabilir.
+       *[other] { $count } parolanız bir veri ihlali kapsamında ele geçirilmiş olabilir.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] 1 parolanız güvenle saklanıyor.
+       *[other] Parolalarınız güvenle saklanıyor.
+    }
+lockwise-how-it-works-link = Nasıl çalışıyor?
 turn-on-sync = { -sync-brand-short-name }’i etkinleştir…
     .title = Eşitleme tercihlerine git
 manage-connected-devices = Cihazları yönet…
@@ -90,6 +121,12 @@ monitor-header-content-no-account = Bilinen veri ihlallerinde bilgilerinizin ça
 monitor-header-content-signed-in = Bilgileriniz bilinen bir veri ihlalinde yer alırsa { -monitor-brand-name } sizi uyarır.
 monitor-sign-up = İhlal uyarılarına kaydolun
 auto-scan = Bugün otomatik olarak tarandı
+monitor-emails-tooltip =
+    .title = İzlenen e-posta adreslerini { -monitor-brand-short-name }’de görün
+monitor-breaches-tooltip =
+    .title = Bilinen veri ihlallerini { -monitor-brand-short-name }’de görün
+monitor-passwords-tooltip =
+    .title = Ele geçirilen parolaları { -monitor-brand-short-name }’de görün
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

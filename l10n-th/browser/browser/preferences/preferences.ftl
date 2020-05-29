@@ -220,6 +220,10 @@ translate-attribution = แปลโดย <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = ข้อยกเว้น…
     .accesskey = อ
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = ใช้การตั้งค่าระบบปฏิบัติการสำหรับ “{ $localeName }” ของคุณในการกำหนดรูปแบบวันที่ เวลา ตัวเลข และการวัดค่า
 check-user-spelling =
     .label = ตรวจสอบการสะกดคำของคุณเมื่อคุณพิมพ์
     .accesskey = จ
@@ -268,6 +272,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = ใช้ { $app-name } (ค่าเริ่มต้น)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] ใช้ macOS เป็นแอปเริ่มต้น
+            [windows] ใช้ Windows เป็นแอปเริ่มต้น
+           *[other] ใช้แอปของระบบเป็นแอปเริ่มต้น
+        }
 applications-use-other =
     .label = ใช้ตัวอื่น…
 applications-select-helper = เลือกแอปพลิเคชันตัวช่วย
@@ -293,6 +304,8 @@ applications-use-plugin-in =
     .label = ใช้ { $plugin-name } (ใน { -brand-short-name })
 applications-preview-inapp =
     .label = แสดงตัวอย่างใน { -brand-short-name }
+applications-open-inapp =
+    .label = เปิดใน { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -306,12 +319,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -736,6 +753,9 @@ privacy-header = ความเป็นส่วนตัวเบราว์
 ## Privacy Section - Logins and Passwords
 
 logins-header = การเข้าสู่ระบบและรหัสผ่าน
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = การเข้าสู่ระบบและรหัสผ่าน
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = ถามเพื่อบันทึกการเข้าสู่ระบบและรหัสผ่านสำหรับเว็บไซต์
@@ -847,6 +867,8 @@ sitedata-option-block-cross-site-trackers =
     .label = ตัวติดตามข้ามไซต์
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = ตัวติดตามข้ามไซต์และสื่อสังคมออนไลน์
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = ตัวติดตามข้ามไซต์และสังคมออนไลน์ และแยกคุกกี้ที่เหลืออยู่
 sitedata-option-block-unvisited =
     .label = คุกกี้จากเว็บไซต์ที่ไม่ได้เยี่ยมชม
 sitedata-option-block-all-third-party =
@@ -923,6 +945,7 @@ content-blocking-etp-strict-desc = การป้องกันที่แก
 content-blocking-etp-custom-desc = เลือกตัวติดตามหรือสคริปต์ที่ต้องการปิดกั้น
 content-blocking-private-windows = ตัวติดตามเนื้อหาในหน้าต่างส่วนตัว
 content-blocking-cross-site-tracking-cookies = คุกกี้ติดตามข้ามไซต์
+content-blocking-cross-site-tracking-cookies-plus-isolate = คุกกี้ติดตามข้ามไซต์ และแยกคุกกี้ที่เหลืออยู่
 content-blocking-social-media-trackers = ตัวติดตามสื่อสังคมออนไลน์
 content-blocking-all-cookies = คุกกี้ทั้งหมด
 content-blocking-unvisited-cookies = คุกกี้จากไซต์ที่ไม่ได้เยี่ยมชม
@@ -935,6 +958,7 @@ content-blocking-warning-title = ระวัง!
 content-blocking-warning-description = การปิดกั้นเนื้อหาอาจส่งผลให้บางเว็บใช้การไม่ได้ แต่มันก็ง่ายที่จะปลดการปิดกั้นสำหรับเว็บที่คุณไว้ใจ
 content-blocking-learn-how = เรียนรู้วิธี
 content-blocking-etp-warning-description = การปิดกั้นตัวติดตามอาจส่งผลต่อการทำงานของบางไซต์ โหลดหน้าเว็บใหม่ด้วยตัวติดตามเพื่อโหลดเนื้อหาทั้งหมด
+content-blocking-and-isolating-etp-warning-description = การปิดกั้นตัวติดตามและแยกคุกกี้อาจส่งผลกระทบต่อการทำงานของบางไซต์ได้ โหลดหน้าใหม่พร้อมตัวติดตามเพื่อโหลดเนื้อหาทั้งหมด
 content-blocking-warning-learn-how = เรียนรู้วิธี
 content-blocking-reload-description = คุณจะต้องโหลดแท็บของคุณใหม่เพื่อใช้การเปลี่ยนแปลงเหล่านี้
 content-blocking-reload-tabs-button =

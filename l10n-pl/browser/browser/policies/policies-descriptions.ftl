@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Wyłączenie sprawdzania domyślnej przeglądar
 policy-DownloadDirectory = Ustawienie i zablokowanie katalogu pobierania.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Włączenie lub wyłączenie blokowania treści i opcjonalnie jej blokada.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Włączenie lub wyłączenie Encrypted Media Extensions i opcjonalnie ich blokada.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = Ustawienie domyślnej wartości ustawienia zez
 policy-OverrideFirstRunPage = Zastąpienie strony pierwszego uruchomienia. Ustawienie tej zasady na pustą wyłączy stronę pierwszego uruchomienia.
 policy-OverridePostUpdatePage = Zastąpienie strony „Co nowego” wyświetlanej po aktualizacji. Ustawienie tej zasady na pustą wyłączy stronę wyświetlaną po aktualizacji.
 policy-PasswordManagerEnabled = Włączenie zachowywania haseł w menedżerze haseł.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Wyłączenie lub konfiguracja PDF.js, wbudowanej przeglądarki plików PDF w programie { -brand-short-name }.
 policy-Permissions2 = Konfiguracja uprawnień kamery, mikrofonu, położenia, powiadomień i automatycznego odtwarzania.
 policy-PopupBlocking = Domyślne zezwalanie pewnym witrynom na otwieranie wyskakujących okien.
 policy-Preferences = Ustawienie i zablokowanie wartości dla podzbioru preferencji.

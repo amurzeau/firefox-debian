@@ -232,6 +232,10 @@ translate-attribution = ਉਲੱਥਾ ਕੀਤਾ <img data-l10n-name="logo"/
 translate-exceptions =
     .label = …ਛੋਟ
     .accesskey = x
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = ਤਾਰੀਖਾਂ, ਸਮੇਂ, ਨੰਬਰਾਂ ਅਤੇ ਮਾਪ ਲਈ “{ $localeName }” ਵਾਸਤੇ ਆਪਣੇ ਓਪਰੇਟਿੰਗ ਸਿਸਟਮ ਨੂੰ ਵਰਤੋਂ।
 check-user-spelling =
     .label = ਲਿਖਦੇ ਵੇਲੇ ਸ਼ਬਦ ਜੋੜਾਂ ਦੀ ਜਾਂਚ ਨਾਲ ਦੀ ਨਾਲ ਕਰਦੇ ਰਹੋ
     .accesskey = t
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = { $app-name } ਵਰਤੋਂ (ਡਿਫਾਲਟ)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] macOS ਮੂਲ ਐਪਲੀਕੇਸ਼ਨ ਵਰਤੋਂ
+            [windows] ਵਿੰਡੋਜ਼ ਮੂਲ ਐਪਲੀਕੇਸ਼ਨ ਵਰਤੋਂ
+           *[other] ਸਿਸਟਮ ਮੂਲ ਐਪਲੀਕੇਸ਼ਨ ਵਰਤੋਂ
+        }
 applications-use-other =
     .label = …ਹੋਰ ਵਰਤੋਂ
 applications-select-helper = ਮਦਦਗਾਰ ਐਪਲੀਕੇਸ਼ਨ ਚੁਣੋ
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = { $plugin-name } ਵਰਤੋਂ ({ -brand-short-name } ਵਿੱਚ)
 applications-preview-inapp =
     .label = { -brand-short-name } ਵਿੱਚ ਝਲਕ
+applications-open-inapp =
+    .label = { -brand-short-name } ਵਿੱਚ ਖੋਲ੍ਹੋ
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -743,6 +760,9 @@ privacy-header = ਬਰਾਊਜ਼ਰ ਪਰਦੇਦਾਰੀ
 ## Privacy Section - Logins and Passwords
 
 logins-header = ਲਾਗਇਨ ਤੇ ਪਾਸਵਰਡ
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = ਲਾਗਇਨ ਤੇ ਪਾਸਵਰਡ
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = ਵੈੱਬਸਾਈਟਾਂ ਲਈ ਲਾਗਇਨ ਅਤੇ ਪਾਸਵਰਡ ਸੰਭਾਲਣ ਲਈ ਪੁੱਛੋ
@@ -777,6 +797,8 @@ forms-master-pw-fips-desc = ਪਾਸਵਰਡ ਨੂੰ ਬਦਲਣਾ ਫੇ�
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = ਮਾਸਟਰ ਪਾਸਵਰਡ ਬਣਾਉਣ ਲਈ ਆਪਣੀ ਪਛਾਣ ਦੀ ਤਸਦੀਕ ਕਰੋ।
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = ਮਾਸਟਰ ਪਾਸਵਰਡ ਬਣਾਉਣ ਲਈ ਆਪਣੀਆਂ Windows ਲਾਗਇਨ ਪਾਸਵਰਡ ਦਿਓ। ਇਸ ਤੁਹਾਡੇ ਖਾਤਿਆਂ ਦੀ ਸੁਰੱਖਿਆ ਨੂੰ ਬਚਾਉਣ ਲਈ ਮਦਦ ਕਰਦਾ ਹੈ।
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -854,6 +876,8 @@ sitedata-option-block-cross-site-trackers =
     .label = ਅੰਤਰ-ਸਾਈਟ ਟਰੈਕਰ
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = ਅੰਤਰ-ਸਾਈਟ ਅਤੇ ਸਾਮਿਜਕ ਮੀਡਿਆ ਟਰੈਕਰ
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = ਅੰਤਰ-ਸਾਈਟ ਤੇ ਸਮਾਜਿਕ ਮੀਡੀਆ ਟਰੈਕਰ ਅਤੇ ਬਾਕੀ ਕੂਕੀਜ਼ ਵੱਖ ਕਰੋ
 sitedata-option-block-unvisited =
     .label = ਅਣਪਛਾਤੀਆਂ ਵੈਬਸਾਈਟਾਂ ਤੋਂ ਕੂਕੀਜ਼
 sitedata-option-block-all-third-party =
@@ -930,6 +954,7 @@ content-blocking-etp-strict-desc = ਵਧੇਰੇ ਸੁਰੱਖਿਆ, ਪਰ
 content-blocking-etp-custom-desc = ਚੁਣੋ ਕਿ ਕਿਹੜੇ ਟਰੈਕਰਾਂ ਅਤੇ ਸਕ੍ਰਿਪਟਾਂ ਉੱਤੇ ਪਾਬੰਦੀ ਲਗਾਉਣੀ ਹੈ।
 content-blocking-private-windows = ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋਆਂ ‘ਚ ਸਮੱਗਰੀ ਟਰੈਕਿੰਗ
 content-blocking-cross-site-tracking-cookies = ਅੰਤਰ-ਸਾਈਟ ਟਰੈਕਿੰਗ ਕੂਕੀਜ਼
+content-blocking-cross-site-tracking-cookies-plus-isolate = ਅੰਤਰ-ਸਾਈਟ  ਟਰੈਕ ਕਰਨ ਵਾਲੇ ਕੂਕੀਜ਼ ਅਤੇ ਬਾਕੀ ਕੂਕੀਜ਼ ਵੱਖ ਕਰੋ
 content-blocking-social-media-trackers = ਸਮਾਜਿਕ ਮੀਡਿਆ ਟਰੈਕਰ
 content-blocking-all-cookies = ਸਾਰੇ ਕੂਕੀਜ਼
 content-blocking-unvisited-cookies = ਨਾ-ਖੋਲ੍ਹੀਆਂ ਸਾਈਟਾਂ ਤੋਂ ਕੂਕੀਜ਼

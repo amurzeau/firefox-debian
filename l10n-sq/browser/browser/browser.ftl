@@ -2,50 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Shfletim Privat)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Shfletim Privat)
-       *[other] { $title } - { -brand-full-name } (Shfletim Privat)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = Shihni të dhëna sajti
 
@@ -108,7 +64,6 @@ urlbar-tip-icon-description =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Shtypni më pak, gjeni më shumë: Kërkoni me { $engineName } drejt e nga shtylla juaj e adresave.
-urlbar-search-tips-redirect = Fillojeni kërkimin tuaj këtu që të shihni sugjerime nga { $engineName } dhe nga historiku juaj i shfletimit.
 urlbar-search-tips-redirect-2 = Filloni kërkimin tuaj te shtylla e adresave që të shihni sugjerime nga { $engineName } dhe nga historiku juaj i shfletimit.
 
 ##
@@ -154,6 +109,8 @@ page-action-manage-extension =
     .label = Administroni Zgjerime…
 page-action-remove-from-urlbar =
     .label = Hiqe nga Shtyllë Adresash
+page-action-remove-extension =
+    .label = Hiqe Zgjerimin
 
 ## Auto-hide Context Menu
 
@@ -244,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = A
 identity-more-info-link-text =
     .label = Më Tepër të Dhëna
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Minimizojeni
+browser-window-maximize-button =
+    .tooltiptext = Maksimizoje
+browser-window-restore-down-button =
+    .tooltiptext = Riktheje Poshtë
+browser-window-close-button =
+    .tooltiptext = Mbylleni
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Kamerë për ndarje me të tjerët:
+    .accesskey = K
+popup-select-microphone =
+    .value = Mikrofon për ndarje me të tjerët:
+    .accesskey = M
+popup-all-windows-shared = Do të ndahen me të tjerët krejt dritaret e dukshme në ekranin tuaj.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = Që të përdorni shkurtoren F12, së pari hapni DevTools që nga menuja Zhvillues Web.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Bëni kërkim ose jepni adresë
+urlbar-placeholder =
+    .placeholder = Bëni kërkim ose jepni adresë
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Fshiheni Anështyllën e Faqerojtësve
+urlbar-permissions-granted =
+    .tooltiptext = I keni akorduar leje shtesë këtij sajti.
+urlbar-switch-to-tab =
+    .value = Kalo te skeda:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Zgjerim:
+urlbar-go-end-cap =
+    .tooltiptext = Shkoni te adresa e dhënë te Shtylla e Vendndodhjeve
+urlbar-page-action-button =
+    .tooltiptext = Veprime faqeje
+urlbar-pocket-button =
+    .tooltiptext = Ruajeni te { -pocket-brand-name }

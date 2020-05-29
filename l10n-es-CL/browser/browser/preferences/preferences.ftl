@@ -232,6 +232,10 @@ translate-attribution = Traducciones por <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Excepciones…
     .accesskey = x
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Usa los ajustes de tu sistema operativo para “{ $localeName }” para formatear fechas, horas, números y medidas.
 check-user-spelling =
     .label = Revisar ortografía al escribir
     .accesskey = t
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Usar { $app-name } (por defecto)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Usar la aplicación predeterminada de macOS
+            [windows] Usar la aplicación predeterminada de Windows
+           *[other] Usar la aplicación predeterminada del sistema
+        }
 applications-use-other =
     .label = Usar otra…
 applications-select-helper = Seleccionar una aplicación de ayuda
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = Usar { $plugin-name } (en { -brand-short-name })
 applications-preview-inapp =
     .label = Vista previa en { -brand-short-name }
+applications-open-inapp =
+    .label = Abrir en { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -752,6 +769,9 @@ privacy-header = Privacidad del navegador
 ## Privacy Section - Logins and Passwords
 
 logins-header = Conexiones y contraseñas
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Conexiones y contraseñas
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Preguntar para guardar conexiones y contraseñas para sitios web
@@ -786,6 +806,8 @@ forms-master-pw-fips-desc = Falló el cambio de contraseña
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Verifica tu identidad para crear una contraseña maestra.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Para crear una contraseña maestra, ingresa tus credenciales de inicio de sesión de Windows. Esto ayuda a proteger la seguridad de tus cuentas.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These

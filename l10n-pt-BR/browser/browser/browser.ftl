@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Navegação privativa)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Navegação privativa)
-       *[other] { $title } - { -brand-full-name } (Navegação privativa)
-    }
 urlbar-identity-button =
     .aria-label = Ver informação do site
 
@@ -55,7 +14,7 @@ urlbar-web-notification-anchor =
 urlbar-midi-notification-anchor =
     .tooltiptext = Abrir o painel MIDI
 urlbar-eme-notification-anchor =
-    .tooltiptext = Gerenciar o uso do software DRM
+    .tooltiptext = Gerenciar o uso de software DRM
 urlbar-web-authn-anchor =
     .tooltiptext = Abrir painel de autenticação Web
 urlbar-canvas-notification-anchor =
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Digite menos, encontre mais: Pesquise no { $engineName } direto na barra de endereços.
 urlbar-search-tips-redirect-2 = Inicie sua pesquisa na barra de endereços para ver sugestões do { $engineName } e do histórico de navegação.
-
-##
-
 
 ##
 
@@ -245,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = e
 identity-more-info-link-text =
     .label = Mais informações
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Minimizar
+browser-window-maximize-button =
+    .tooltiptext = Maximizar
+browser-window-restore-down-button =
+    .tooltiptext = Restaurar tamanho
+browser-window-close-button =
+    .tooltiptext = Fechar
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Câmera a compartilhar:
+    .accesskey = C
+popup-select-microphone =
+    .value = Microfone a compartilhar:
+    .accesskey = M
+popup-all-windows-shared = Todas as janelas visíveis na sua tela serão compartilhadas.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = Para usar o atalho F12, primeiro abra as ferramentas de desenvolvimento através do menu Desenvolvimento web.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Pesquisar ou abrir endereço
+urlbar-placeholder =
+    .placeholder = Pesquisar ou abrir endereço
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = O navegador está sob controle remoto
+urlbar-permissions-granted =
+    .tooltiptext = Você concedeu permissões adicionais a este site.
+urlbar-switch-to-tab =
+    .value = Alternar para a aba:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Extensão:
+urlbar-go-end-cap =
+    .tooltiptext = Abrir a página
+urlbar-page-action-button =
+    .tooltiptext = Ações da página
+urlbar-pocket-button =
+    .tooltiptext = Salvar no { -pocket-brand-name }

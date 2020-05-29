@@ -238,6 +238,10 @@ translate-attribution = Prevode zagotavlja <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Izjeme …
     .accesskey = I
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Uporabite nastavitve operacijskega sistema za “{ $localeName }” za oblikovanje datumov, časa, številk in meritev.
 check-user-spelling =
     .label = Preverjaj črkovanje med tipkanjem
     .accesskey = v
@@ -286,6 +290,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Uporabi { $app-name } (privzeto)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Uporabi privzeti program sistema macOS
+            [windows] Uporabi privzeti program sistema Windows
+           *[other] Uporabi privzeti program sistema
+        }
 applications-use-other =
     .label = Uporabi drugo …
 applications-select-helper = Izbira pomožnega programa
@@ -311,6 +322,8 @@ applications-use-plugin-in =
     .label = Uporabi { $plugin-name } (v { -brand-short-name })
 applications-preview-inapp =
     .label = Predogled v { -brand-short-name }u
+applications-open-inapp =
+    .label = Odpri v { -brand-short-name }u
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -324,12 +337,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -760,6 +777,9 @@ privacy-header = Zasebnost brskalnika
 ## Privacy Section - Logins and Passwords
 
 logins-header = Prijave in gesla
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Prijave in gesla
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Ponujaj shranjevanje prijav in gesel za spletne strani
@@ -794,6 +814,8 @@ forms-master-pw-fips-desc = Sprememba gesla neuspešna
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Potrdite svojo identiteto za ustvarjanje glavnega gesla.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Če želite ustvariti glavno geslo, vnesite svoje podatke za prijavo v sistem Windows. To pomaga zaščititi varnost vaših računov.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These

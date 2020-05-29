@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Controle op standaardbrowser bij opstarten uits
 policy-DownloadDirectory = De downloadmap instellen en vergrendelen.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Inhoudsblokkering inschakelen of uitschakelen en optioneel vergrendelen.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Versleutelde media-extensies in- of uitschakelen en optioneel vergrendelen.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -82,7 +84,9 @@ policy-OfferToSaveLogins = De instelling voor het toestaan dat { -brand-short-na
 policy-OfferToSaveLoginsDefault = De standaardwaarde instellen voor het toestaan dat { -brand-short-name } mag aanbieden opgeslagen aanmeldingen en wachtwoorden te onthouden afdwingen. Zowel de waarde true als false wordt geaccepteerd.
 policy-OverrideFirstRunPage = De pagina voor eerste keer uitvoeren vervangen. Stel deze beleidsregel in op leeg als u de betreffende pagina wilt uitschakelen.
 policy-OverridePostUpdatePage = De pagina ‘Wat is er nieuw’ na een update vervangen. Stel deze beleidsregel in op leeg als u de betreffende pagina wilt uitschakelen.
-policy-PasswordManagerEnabled = Opslaan van wachtwoorden in de wachtwoordbeheerder inschakelen.
+policy-PasswordManagerEnabled = Opslaan van wachtwoorden in de wachtwoordenbeheerder inschakelen.
+# PDF.js and PDF should not be translated
+policy-PDFjs = PDF.js, de in { -brand-short-name } ingebouwde PDF-lezer, uitschakelen of instellen.
 policy-Permissions2 = Toestemmingen voor camera, microfoon, locatie, notificaties en automatisch afspelen configureren.
 policy-PopupBlocking = Toestaan dat bepaalde websites standaard pop-ups weergeven.
 policy-Preferences = De waarde voor een subset van voorkeuren instellen en vergrendelen.

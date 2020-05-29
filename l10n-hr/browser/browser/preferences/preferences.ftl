@@ -123,7 +123,7 @@ startup-header = Pokretanje
 separate-profile-mode =
     .label = Dozvoli da se { -brand-short-name } i Firefox pokrenu istovremeno
 use-firefox-sync = Savjet: Ovo koristi odvojene profile. Koristi { -sync-brand-short-name } za dijeljenje podataka između njih.
-get-started-not-logged-in = Prijavite se u { -sync-brand-short-name }…
+get-started-not-logged-in = Prijavi se u { -sync-brand-short-name }…
 get-started-configured = Otvori { -sync-brand-short-name } postavke
 always-check-default =
     .label = Uvijek provjeri je li { -brand-short-name } standardni preglednik
@@ -157,7 +157,7 @@ switch-links-to-new-tabs =
     .label = Kad otvoriš poveznicu u novoj kartici, odmah prijeđi na nju
     .accesskey = d
 show-tabs-in-taskbar =
-    .label = Prikaži pretpregled kartica u Windows traci zadataka
+    .label = Prikaži preglede kartica u Windows traci zadataka
     .accesskey = k
 browser-containers-enabled =
     .label = Aktiviraj kontejner kartice
@@ -235,6 +235,10 @@ translate-attribution = Preveli <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Iznimke…
     .accesskey = e
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Koristi postavke operativnog sustava za “{ $localeName }” za oblikovanje datuma, vremena, brojeva i mjera.
 check-user-spelling =
     .label = Provjeravanje pravopisa tijekom pisanja
     .accesskey = v
@@ -283,6 +287,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Koristi { $app-name } (uobičajeno)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Koristi macOS zadanu aplikaciju
+            [windows] Koristi Windows zadanu aplikaciju
+           *[other] Koristi zadanu aplikaciju sustava
+        }
 applications-use-other =
     .label = Koristi drugi…
 applications-select-helper = Odaberi pomoćnu aplikaciju
@@ -308,6 +319,8 @@ applications-use-plugin-in =
     .label = Koristi { $plugin-name } (u { -brand-short-name })
 applications-preview-inapp =
     .label = Pogled u { -brand-short-name }
+applications-open-inapp =
+    .label = Otvori u { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -321,12 +334,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -372,7 +389,7 @@ update-setting-write-failure-message =
     
     Nije moguće pisati u datoteku: { $path }
 update-in-progress-title = Ažuriranje u tijeku
-update-in-progress-message = Želite li da { -brand-short-name } nastavi s ovim ažuriranjem?
+update-in-progress-message = Želiš li { -brand-short-name } nastavi s ovim aktualiziranjem?
 update-in-progress-ok-button = O&dbaci
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
@@ -568,8 +585,8 @@ search-find-more-link = Pronađi daljnje tražilice
 search-keyword-warning-title = Postojeća ključna riječ
 # Variables:
 #   $name (String) - Name of a search engine.
-search-keyword-warning-engine = Odabrao/la si ključnu riječ koju trenutačno koristi "{ $name }". Odaberi jednu drugu.
-search-keyword-warning-bookmark = Odabrao/la si ključnu riječ koju koristi zabilješka. Odaberi jednu drugu.
+search-keyword-warning-engine = Odabrana je ključna riječ koju trenutačno koristi "{ $name }". Odaberi jednu drugu.
+search-keyword-warning-bookmark = Odabrana je ključna riječ koju koristi zabilješka. Odaberi jednu drugu.
 
 ## Containers Section
 
@@ -604,10 +621,10 @@ sync-signedout-account-title = Poveži se sa { -fxaccount-brand-name }
 sync-signedout-account-create = Nemate račun? Započnite
     .accesskey = r
 sync-signedout-account-signin =
-    .label = Prijavite se…
+    .label = Prijavi se…
     .accesskey = i
 sync-signedout-account-signin2 =
-    .label = Prijavite se u { -sync-brand-short-name }…
+    .label = Prijavi se u { -sync-brand-short-name }…
     .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -756,6 +773,9 @@ privacy-header = Privatnost preglednika
 ## Privacy Section - Logins and Passwords
 
 logins-header = Prijave i lozinke
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Prijave i lozinke
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Pitaj za spremanje prijava i lozinka za web stranice
@@ -867,6 +887,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Programi za praćenje među različitim web lokacijama
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Programi za praćenje među različitim web lokacijama i društvenim mrežama
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Pratitelji između više stranica, medijski pratitelji, te izoliranje preostalih kolačića
 sitedata-option-block-unvisited =
     .label = Kolačići sa stranica koje niste posjetili
 sitedata-option-block-all-third-party =
@@ -943,6 +965,7 @@ content-blocking-etp-strict-desc = Jača zaštita, ali može prouzročiti proble
 content-blocking-etp-custom-desc = Odaberi programe za praćenje i skripte koje želiš blokirati.
 content-blocking-private-windows = Praćenje sadržaja u privatnim prozorima
 content-blocking-cross-site-tracking-cookies = Višestranični kolačići za praćenje
+content-blocking-cross-site-tracking-cookies-plus-isolate = Pratitelji između više stranica, te izoliranje preostalih kolačića
 content-blocking-social-media-trackers = Programi za praćenje s društvenih mreža
 content-blocking-all-cookies = Sve kolačiće
 content-blocking-unvisited-cookies = Kolačiće s neposjećenih stranica
@@ -955,6 +978,7 @@ content-blocking-warning-title = Upozorenje!
 content-blocking-warning-description = Blokiranje sadržaja može uzrokovati greške u prikazu nekih web stranica. Lako možete isključiti blokiranje na stranicama kojima vjerujete.
 content-blocking-learn-how = Saznaj kako
 content-blocking-etp-warning-description = Blokiranje programa za praćenje moglo bi utjecati na funkcionalnost nekih web lokacija. Učitaj stranicu s programima za praćenje, kako bi se učitao sav sadržaj.
+content-blocking-and-isolating-etp-warning-description = Blokiranje pratitelja i izoliranje kolačića može utjecati na funkcionalnost nekih stranica. Ponovno učitajte stranicu sa pratiteljem kako bi se učitao sav sadržaj.
 content-blocking-warning-learn-how = Saznaj kako
 content-blocking-reload-description = Morat ćeš ponovo učitati svoje kartice, kako bi se ove promjene primijenile.
 content-blocking-reload-tabs-button =

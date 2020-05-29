@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = افتح القائمة
-# This menuitem is only visible on Windows
-menu-menuitem-import = استورِد كلمات السر…
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = استورِد من متصفح آخر…
 menu-menuitem-preferences =
@@ -53,7 +51,7 @@ login-list-count =
 login-list-sort-label-text = افرز حسب:
 login-list-name-option = الاسم (ا-ي)
 login-list-name-reverse-option = الاسم (ي-ا)
-login-list-breached-option = المواقع المسرّبة بياناتها
+about-logins-login-list-alerts-option = التنبيهات
 login-list-last-changed-option = آخر تعديل
 login-list-last-used-option = آخر استخدام
 login-list-intro-title = لا جلسات ولوج
@@ -111,17 +109,23 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 
 # This message can be seen by attempting to edit a login in about:logins
 about-logins-edit-login-os-auth-dialog-message = أكِّد هويتك لتُحرّر جلسة الولوج المحفوظة.
-# This message can be seen by attempting to edit a login in about:logins
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message-win = أدخِل معلومات ولوج وِندوز لتعدّل جلسة الولوج. يساعد هذا الأمر على حماية أمن حساباتك.
+# This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = تحرير جلسة الولوج المحفوظة
 # This message can be seen by attempting to reveal a password in about:logins
 about-logins-reveal-password-os-auth-dialog-message = أكِّد هويتك لعرض كلمة السر المحفوظة.
-# This message can be seen by attempting to reveal a password in about:logins
+# This message can be seen when attempting to reveal a password in about:logins on Windows.
+about-logins-reveal-password-os-auth-dialog-message-win = أدخِل معلومات ولوج وِندوز لتعرض كلمة السر. يساعد هذا الأمر على حماية أمن حساباتك.
+# This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = عرض كلمة السر المحفوظة
 # This message can be seen by attempting to copy a password in about:logins
 about-logins-copy-password-os-auth-dialog-message = أكِّد هويتك لتنسخ كلمة السر المحفوظة.
-# This message can be seen by attempting to copy a password in about:logins
+# This message can be seen when attempting to copy a password in about:logins on Windows.
+about-logins-copy-password-os-auth-dialog-message-win = أدخِل معلومات ولوج وِندوز لتنسخ كلمة السر. يساعد هذا الأمر على حماية أمن حساباتك.
+# This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = نسخ كلمة السر المحفوظة
 
@@ -164,10 +168,21 @@ confirm-discard-changes-dialog-confirm-button = أهمِل
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = تسرّبت بيانات موقع
 breach-alert-text = تسرّبت كلمات السر (أو سُرقت) من هذا الموقع مذ حدّثت بيانات ولوجك فيه. غيّر كلمة السر لتحمي حسابك من الاختراق.
-breach-alert-link = اعرف المزيد عن تسرّب البيانات هذا.
-breach-alert-dismiss =
-    .title = أغلِق هذا التنبيه
+about-logins-breach-alert-date = حدث هذا التسرّب بتاريخ { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = انتقل إلى { $hostname }
+about-logins-breach-alert-learn-more-link = اطّلع على المزيد
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-text2 = استعملت كلمة السر هذه في حساب آخر قد يكون تسرّب مع تسرّب بيانات أحد المواقع. بإعادة استعمال هذه المعلومات للولوج أنت تضع حساباتك كلها في خطر. غيّر كلمة السر.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = انتقل إلى { $hostname }
+about-logins-vulnerable-alert-learn-more-link = اطّلع على المزيد
 
 ## Error Messages
 

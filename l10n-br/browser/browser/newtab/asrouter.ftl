@@ -128,10 +128,7 @@ cfr-whatsnew-lockwise-take-link-text = Kaout an arload
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Skrivit nebeutoc'h ha kavit muioc'h gant ar varrenn chomlec'hioù
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Kit betek al lec'hiennoù a weladennit an aliesañ gant ur c'hlik hepken er varrenn-chomlec'h. Kavit traoù buanoc'h gant disoc'hoù { $searchEngineName } hag ho roll istor merdeiñ.
-cfr-whatsnew-searchbar-body-generic = Kit betek al lec'hiennoù a weladennit an aliesañ gant ur c'hlik hepken er varrenn-chomlec'h. Kavit traoù buanoc'h gant disoc'hoù enklask hag ho roll istor merdeiñ.
+cfr-whatsnew-searchbar-body-topsites = Bremañ, diuzit ar varrenn chomlec'hioù, ha dont a raio war wel ur voest gant ereoù etrezek ho lec'hiennoù gwellañ.
 cfr-whatsnew-searchbar-icon-alt-text = Arlun gwerenn-greskiñ
 
 ## Picture-in-Picture
@@ -223,3 +220,22 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Gwelet pep tra
     .accesskey = G
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = Krouit gerioù-tremen en un doare aes
+cfr-whatsnew-lockwise-body = Diaes eo soñjal en ur ger-tremen dibar ha diogel evit pep kont. En ur grouiñ ur ger-tremen, diuzit maezienn ar ger-tremen evit ober gant unan diogel ha ganet gant { -brand-shorter-name }.
+cfr-whatsnew-lockwise-icon-alt = arlun { -lockwise-brand-short-name }
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = Resevit galvoù-diwall a-zivout gerioù-tremen en arvar.
+cfr-whatsnew-passwords-body = Gouzout a oar mat ar stlenn-laeron e vez adimplijet an hevelep gerioù-tremen gant an dud. Ma rit kement-se hag e vez diskuilhet roadennoù unan eus al lec'hiennoù-se e welot ur galv-diwall e { -lockwise-brand-short-name } a lâro deoc'h cheñch ho ker-tremen war al lec'hiennoù-se.
+cfr-whatsnew-passwords-icon-alt = arlun ger-tremen arvarus
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = Tremen e mod skramm a-bezh

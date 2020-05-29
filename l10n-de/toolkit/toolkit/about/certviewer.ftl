@@ -16,6 +16,9 @@ certificate-viewer-certificate-authority = Zertifizierungsstelle
 certificate-viewer-cipher-suite = Cipher-Suite
 certificate-viewer-common-name = Allgemeiner Name
 certificate-viewer-email-address = E-Mail-Adresse
+# Variables:
+#   $firstCertName (String) - Common Name for the displayed certificate
+certificate-viewer-tab-title = Zertifikat für { $firstCertName }
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
 certificate-viewer-inc-country = Unternehmenssitz: Land
 certificate-viewer-country = Land
@@ -97,11 +100,15 @@ certificate-viewer-download-pem = PEM (Zertifikat)
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (Zertifikatskette)
     .download = { $fileName }-zertifikatskette.pem
+# The title attribute for Critical Extension icon
+certificate-viewer-critical-extension =
+    .title = Diese Erweiterung ist als kritisch gekennzeichnet, weshalb Geräte das Zertifikat zurückweisen müssen, wenn sie die Erweiterung nicht unterstützen.
 certificate-viewer-export = Exportieren
     .download = { $fileName }.pem
 
 ## Labels for tabs displayed in stand-alone about:certificate page
 
+certificate-viewer-tab-mine = Ihre Zertifikate
 certificate-viewer-tab-people = Personen
 certificate-viewer-tab-servers = Server
 certificate-viewer-tab-ca = Zertifizierungsstellen

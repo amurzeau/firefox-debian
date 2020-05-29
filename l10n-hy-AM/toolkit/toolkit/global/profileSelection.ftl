@@ -9,21 +9,21 @@ profile-selection-button-accept =
 profile-selection-button-cancel =
     .label = Փակել
 profile-selection-new-button =
-    .label = Ստեղծել Հաշիվ…
-    .accesskey = Ս
+    .label = Ստեղծել պրոֆիլ…
+    .accesskey = C
 profile-selection-rename-button =
-    .label = Հաշիվը Վերանվանել…
-    .accesskey = Հ
+    .label = Հաշիվը վերանվանել…
+    .accesskey = R
 profile-selection-delete-button =
-    .label = Հաշիվը Ջնջել…
-    .accesskey = Հ
+    .label = Հաշիվը պրոֆիլը…
+    .accesskey = D
 
 ## Messages used in the profile manager
 
 profile-manager-description = { -brand-short-name }­-ը պահում է ձեր կարգավորումները, նախընտրանքներն ու այլ բաներ ձեր օգտվողի հաշվում:
 profile-manager-work-offline =
     .label = Աշխատել անցանց
-    .accesskey = ա
+    .accesskey = o
 profile-manager-use-selected =
     .label = Առանց հարցնելու օգտագործել ընտրված պրոֆիլը
-    .accesskey = օ
+    .accesskey = s

@@ -16,7 +16,7 @@ login-filter =
     .placeholder = Caută autentificări
 create-login-button = Creează o autentificare nouă
 fxaccounts-sign-in-text = Obține parolele de pe celelalte dispozitive
-fxaccounts-sign-in-button = Autentifică-te în { -sync-brand-short-name }
+fxaccounts-sign-in-button = Autentificare în { -sync-brand-short-name }
 fxaccounts-avatar-button =
     .title = Gestionează contul
 
@@ -48,7 +48,6 @@ login-list-count =
 login-list-sort-label-text = Sortează după:
 login-list-name-option = Nume (A-Z)
 login-list-name-reverse-option = Nume (Z-A)
-login-list-breached-option = Site-uri web a căror securitate a fost încălcată
 about-logins-login-list-alerts-option = Alerte
 login-list-last-changed-option = Ultima modificare
 login-list-last-used-option = Ultima utilizare
@@ -60,7 +59,7 @@ login-list-item-title-new-login = Date de autentificare noi
 login-list-item-subtitle-new-login = Introdu datele tale de autentificare
 login-list-item-subtitle-missing-username = (niciun nume de utilizator)
 about-logins-list-item-breach-icon =
-    .title = Site web a cărui securitate a fost încălcată
+    .title = Site web cu breșă(e) de securitate
 about-logins-list-item-vulnerable-password-icon =
     .title = Parolă vulnerabilă
 
@@ -69,7 +68,7 @@ about-logins-list-item-vulnerable-password-icon =
 login-intro-heading = Îți cauți datele de autentificare salvate? Configurează { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-in = Nu am găsit date de autentificare sincronizate.
 login-intro-description = Dacă ți-ai salvat datele de autentificare în { -brand-product-name } pe un alt dispozitiv, iată cum le poți aduce aici:
-login-intro-instruction-fxa = Creează un cont sau autentifică-te în { -fxaccount-brand-name } pe dispozitivul pe care ai salvat datele de autentificare
+login-intro-instruction-fxa = Creează un cont sau conectează-te în { -fxaccount-brand-name } de pe dispozitivul pe care ai salvat datele de autentificare
 login-intro-instruction-fxa-settings = Asigură-te că ai bifat caseta de selectare Date de autentificare în Setările { -sync-brand-short-name }
 about-logins-intro-instruction-help = Intră pe <a data-l10n-name="help-link">asistență { -lockwise-brand-short-name }</a> pentru ajutor suplimentar
 about-logins-intro-import = Dacă datele tale de autentificare sunt salvate în alt browser, le poți <a data-l10n-name="import-link">importa în{ -lockwise-brand-short-name }</a>
@@ -164,10 +163,7 @@ confirm-discard-changes-dialog-confirm-button = Înlătură
 
 about-logins-breach-alert-title = Breșă de securitate pe site-ul web
 breach-alert-text = Parolele au fost divulgate sau furate de pe acest site web după ce ți-ai actualizat ultima oară detaliile de autentificare. Schimbă parola ca să îți protejezi contul.
-breach-alert-link = Află mai multe despre această încălcare a securității datelor.
-breach-alert-dismiss =
-    .title = Închide această alertă
-about-logins-breach-alert-date = Această breșă a apărut la data de { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+about-logins-breach-alert-date = Această breșă de date a apărut la data de { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-breach-alert-link = Mergi la { $hostname }

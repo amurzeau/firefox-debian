@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Pori Preifat)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Pori Preifat)
-       *[other] { $title } - { -brand-full-name } (Pori Preifat)
-    }
 urlbar-identity-button =
     .aria-label = Gweld manylion y wefan
 
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Teipio llai, canfod mwy: Chwiliwch gyda { $engineName } yn syth o'ch bar cyfeiriad.
 urlbar-search-tips-redirect-2 = Cychwynnwch eich chwilio yma i weld awgrymiadau gan { $engineName } a'ch hanes pori.
-
-##
-
 
 ##
 
@@ -245,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = G
 identity-more-info-link-text =
     .label = Rhagor o Wybodaeth
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Lleihau
+browser-window-maximize-button =
+    .tooltiptext = Mwyhau
+browser-window-restore-down-button =
+    .tooltiptext = Adfer i Lawr
+browser-window-close-button =
+    .tooltiptext = Cau
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Camera i'w rannu:
+    .accesskey = C
+popup-select-microphone =
+    .value = Meicroffon i'w rannu:
+    .accesskey = M
+popup-all-windows-shared = Bydd pob ffenestr gweladwy ar eich sgrin yn cael eu rhannu.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = I ddefnyddio llwybr byr F12 agorwch DevTools yn gyntaf trwy'r ddewislen Datblygwr Gwe.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Chwilio neu gyfeiriad gwe
+urlbar-placeholder =
+    .placeholder = Chwilio neu gyfeiriad gwe
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Mae'r porwr o dan reolaeth bell
+urlbar-permissions-granted =
+    .tooltiptext = Rydych wedi rhoi caniatâd ychwanegol i'r wefan hon.
+urlbar-switch-to-tab =
+    .value = Newid i dab:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Estyniad:
+urlbar-go-end-cap =
+    .tooltiptext = Mynd i'r cyfeiriad yn y Bar Lleoliad
+urlbar-page-action-button =
+    .tooltiptext = Gweithredoedd tudalen
+urlbar-pocket-button =
+    .tooltiptext = Cadw i { -pocket-brand-name }

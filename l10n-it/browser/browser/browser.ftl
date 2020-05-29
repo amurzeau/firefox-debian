@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Navigazione anonima)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Navigazione anonima)
-       *[other] { $title } - { -brand-full-name } (Navigazione anonima)
-    }
 urlbar-identity-button =
     .aria-label = Visualizza informazioni sul sito
 
@@ -103,9 +62,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Scrivi di meno e trova più risultati: cerca con { $engineName } direttamente dalla barra degli indirizzi.
 urlbar-search-tips-redirect-2 = Inizia le tue ricerche dalla barra degli indirizzi per visualizzare suggerimenti da { $engineName } e dalla cronologia di navigazione.
-
-##
-
 
 ##
 
@@ -263,3 +219,29 @@ popup-select-microphone =
     .value = Microfono da condividere:
     .accesskey = M
 popup-all-windows-shared = Tutte le finestre visibili sullo schermo verranno condivise.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = Per utilizzare la scorciatoia da tastiera F12, aprire prima gli strumenti di sviluppo usando il menu “Sviluppo web”.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Inserisci un indirizzo o avvia una ricerca
+urlbar-placeholder =
+    .placeholder = Inserisci un indirizzo o avvia una ricerca
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Il browser è attualmente controllato da remoto
+urlbar-permissions-granted =
+    .tooltiptext = Sono stati concessi permessi aggiuntivi a questo sito web.
+urlbar-switch-to-tab =
+    .value = Passa alla scheda:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Estensione:
+urlbar-go-button =
+    .tooltiptext = Vai all’URL inserito nella barra degli indirizzi
+urlbar-page-action-button =
+    .tooltiptext = Azioni per questa pagina
+urlbar-pocket-button =
+    .tooltiptext = Salva in { -pocket-brand-name }

@@ -232,6 +232,10 @@ translate-attribution = Översättningar av <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Undantag…
     .accesskey = U
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Använd dina operativsysteminställningar för “{ $localeName }” för att formatera datum, tider, siffror och mätningar.
 check-user-spelling =
     .label = Kontrollera stavning medan du skriver
     .accesskey = k
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Använd { $app-name } (standard)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Använd macOS standardapplikation
+            [windows] Använd Windows standardapplikation
+           *[other] Använd systemets standardapplikation
+        }
 applications-use-other =
     .label = Välj program…
 applications-select-helper = Välj hjälpprogram
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = Använd { $plugin-name } (i { -brand-short-name })
 applications-preview-inapp =
     .label = Förhandsgranska i { -brand-short-name }
+applications-open-inapp =
+    .label = Öppna i { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -752,6 +769,9 @@ privacy-header = Webbläsarintegritet
 ## Privacy Section - Logins and Passwords
 
 logins-header = Inloggningar & lösenord
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Inloggningar & lösenord
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Fråga för att spara inloggningar och lösenord för webbplatser
@@ -786,6 +806,8 @@ forms-master-pw-fips-desc = Ändring av lösenordet misslyckades
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Verifiera din identitet för att skapa ett huvudlösenord.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Om du vill skapa ett huvudlösenord anger du dina inloggningsuppgifter för Windows. Detta skyddar dina kontons säkerhet.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These

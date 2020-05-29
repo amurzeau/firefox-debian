@@ -2,66 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (একান্ত ব্রাউজিং)
-       *[default] { -brand-full-name }
-    }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (একান্ত ব্রাউজিং)
-       *[default] { $title } - { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (একান্ত ব্রাউজিং)
-       *[other] { $title } - { -brand-full-name } (একান্ত ব্রাউজিং)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = সাইটের তথ্য দেখাও
 
@@ -86,7 +26,7 @@ urlbar-default-notification-anchor =
 urlbar-geolocation-notification-anchor =
     .tooltiptext = অবস্থান অনুরোধ প্যানেল খুলুন
 urlbar-xr-notification-anchor =
-    .tooltiptext = ভার্চুয়াল রিয়েলিটি অনুমোদন প্যানেল এ যান
+    .tooltiptext = ভার্চুয়াল রিয়েলিটি অনুমোদন প্যানেলে যান
 urlbar-storage-access-anchor =
     .tooltiptext = ব্রাউজিং কার্যকলাপ অনুমতি প্যানেল খুলুন
 urlbar-translate-notification-anchor =
@@ -124,7 +64,6 @@ urlbar-tip-icon-description =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = কম লিখে, বেশি অনুসন্ধান ফলাফল পান: ঠিকানাবার থেকেই { $engineName } খুঁজুন।
-urlbar-search-tips-redirect = { $engineName } থেকে পরামর্শ ও ব্রাইজিং ইতিহাস দেখতে আপনার অনুসন্ধান শুরু করুন।
 
 ##
 
@@ -167,6 +106,8 @@ page-action-manage-extension =
     .label = এক্সটেনশন ব্যবস্থাপনা...
 page-action-remove-from-urlbar =
     .label = ঠিকানা  বার থেকে অপসারণ করুন
+page-action-remove-extension =
+    .label = এক্সটেনশন অপসারণ করুন
 
 ## Auto-hide Context Menu
 
@@ -257,3 +198,48 @@ identity-enable-mixed-content-blocking =
     .accesskey = E
 identity-more-info-link-text =
     .label = আরও তথ্য
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = ন্যূনতম বিস্তার
+browser-window-maximize-button =
+    .tooltiptext = বড় করুন
+browser-window-close-button =
+    .tooltiptext = বন্ধ
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = যেসকল ক্যামেরা শেয়ার করা হবে: C
+    .accesskey = C
+popup-select-microphone =
+    .value = যেসকল মাইক্রোফোন শেয়ার করা হবে: M
+    .accesskey = M
+popup-all-windows-shared = আপনার স্ক্রিনের সব দৃশ্যমান উইন্ডো শেয়ার করা হবে।
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = F12 শর্টকাট ব্যবহার করতে, প্রথমে ওয়েব ডেভেলপার মেনু থেকে DevTools খুলুন।
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = অনুসন্ধান বা ঠিকানা দিন
+urlbar-placeholder =
+    .placeholder = অনুসন্ধান বা ঠিকানা দিন
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = ব্রাউজার রিমোর্ট কন্ট্রোলের আওতায়
+urlbar-permissions-granted =
+    .tooltiptext = আপনি এই সাইটের জন্য বিশেষ অনুমতি দিয়েছেন।
+urlbar-switch-to-tab =
+    .value = ট্যাবে যান:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = এক্সটেনশন:
+urlbar-go-end-cap =
+    .tooltiptext = ঠিকানার বারে উল্লেখিত পাতা প্রদর্শন করা হবে
+urlbar-page-action-button =
+    .tooltiptext = পাতা পদক্ষেপ
+urlbar-pocket-button =
+    .tooltiptext = { -pocket-brand-name } এ সংরক্ষণ করুন

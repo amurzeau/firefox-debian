@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Nabigatze pribatua)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Nabigatze pribatua)
-       *[other] { $title } - { -brand-full-name } (Nabigatze pribatua)
-    }
 urlbar-identity-button =
     .aria-label = Ikusi gunearen informazioa
 
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Gutxiago idatzi, gehiago aurkitu: bilatu { $engineName } erabiliz helbide-barratik zuzenean.
 urlbar-search-tips-redirect-2 = Hasi zure bilaketa helbide-barran { $engineName } bilatzailearen eta zure nabigazio-historialeko proposamenak ikusteko
-
-##
-
 
 ##
 
@@ -245,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = G
 identity-more-info-link-text =
     .label = Informazio gehiago
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Txikitu
+browser-window-maximize-button =
+    .tooltiptext = Maximizatu
+browser-window-restore-down-button =
+    .tooltiptext = Leheneratu txikira
+browser-window-close-button =
+    .tooltiptext = Itxi
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Partekatzeko kamera:
+    .accesskey = k
+popup-select-microphone =
+    .value = Partekatzeko mikrofonoa:
+    .accesskey = m
+popup-all-windows-shared = Zure pantailan ikusgai dauden leiho guztiak partekatuko dira.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = F12 lasterbidea erabiltzeko, ireki lehenik garatzaile-tresnak 'Web garapena' menutik.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Idatzi bilaketa edo helbidea
+urlbar-placeholder =
+    .placeholder = Idatzi bilaketa edo helbidea
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Nabigatzailea urruneko agintepean dago
+urlbar-permissions-granted =
+    .tooltiptext = Baimen bereziak eman dizkiozu webgune honi.
+urlbar-switch-to-tab =
+    .value = Aldatu fitxara:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Hedapena:
+urlbar-go-end-cap =
+    .tooltiptext = Joan kokapen-barrako helbidera
+urlbar-page-action-button =
+    .tooltiptext = Orri-ekintzak
+urlbar-pocket-button =
+    .tooltiptext = Gorde { -pocket-brand-name }-en

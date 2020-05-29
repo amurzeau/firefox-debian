@@ -5,8 +5,8 @@
 navbar-tooltip-instruction =
     .value =
         { PLATFORM() ->
-            [macos] Pull down to show history
-           *[other] Za prikaz povijesti pritisnite desnu tipku miša, ili pritisnite lijevu i povucite prema dolje
+            [macos] Povuci dolje za prikaz povijesti
+           *[other] Za prikaz povijesti pritisni desnu tipku miša ili povuci prema dolje
         }
 
 ## Back
@@ -314,3 +314,7 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = Saznaj više o upravljanju digitalnim pravima …
     .accesskey = D
+# Checkbox displayed at the bottom of the What's New panel, allowing users to 
+# enable/disable What's New notifications.
+cfr-whatsnew-panel-footer-checkbox =
+    .label = Obavijesti o novim značajkama

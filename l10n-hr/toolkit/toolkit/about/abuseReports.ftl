@@ -9,8 +9,8 @@
 # Variables:
 #   $addon-name (string) - Name of the add-on being reported
 abuse-report-dialog-title = Prijava za { $addon-name }
-abuse-report-title-extension = Prijavite ovaj dodatak prema { -vendor-short-name }
-abuse-report-title-theme = Prijavi ovaj motiv prema { -vendor-short-name }
+abuse-report-title-extension = Prijavi ovaj dodatak prodavaču { -vendor-short-name }
+abuse-report-title-theme = Prijavi ovaj motiv prodavaču { -vendor-short-name }
 abuse-report-subtitle = Što je problem?
 # Variables:
 #   $author-name (string) - Name of the add-on author
@@ -40,7 +40,7 @@ abuse-report-submit-button = Pošalji
 
 abuse-report-messagebar-aborted = Prijava za <span data-l10n-name="addon-name">{ $addon-name }</span> je otkazana.
 abuse-report-messagebar-submitting = Slanje prijave za <span data-l10n-name="addon-name">{ $addon-name }</span>.
-abuse-report-messagebar-submitted = Hvala vam što ste poslali prijavu. Želite li ukloniti <span data-l10n-name="addon-name">{ $addon-name }</span>?
+abuse-report-messagebar-submitted = Zahvaljujemo na prijavi. Želiš li ukloniti <span data-l10n-name="addon-name">{ $addon-name }</span>?
 abuse-report-messagebar-submitted-noremove = Hvala vam što ste poslali prijavu.
 abuse-report-messagebar-removed-extension = Hvala vam što ste poslali prijavu. Uklonili ste dodatak <span data-l10n-name="addon-name">{ $addon-name }</span>.
 abuse-report-messagebar-removed-theme = Hvala vam što ste poslali prijavu. Uklonili ste motiv <span data-l10n-name="addon-name">{ $addon-name }</span>.
@@ -78,13 +78,13 @@ abuse-report-broken-reason-extension-v2 = Ne radi, slama web-stranice ili uspora
 abuse-report-broken-reason-theme-v2 = Ne radi ili slama prikaz preglednika
 abuse-report-broken-example = Primjer: Funkcije su spore, teško ih je koristiti ili ne rade, dijelovi web stranica se ne mogu učitati ili čudno izgledaju
 abuse-report-broken-suggestions-extension =
-    Čini se da si našao/la grešku. Pored slanja prijave ovdje, najbolji način
-    za rješavanje funkcionalnih problema je, da kontaktiraš programera proširenja.
-    Podatke o programeru potraži na <a data-l10n-name="support-link">web stranici dodatka</a>.
+    Čini se da se radi o grešci. Pored slanja prijave ovdje, najbolji način za
+    rješavanje funkcionalnih problema je, da kontaktiraš programera proširenja.
+    Podatke o programeru potraži na <a data-l10n-name="support-link">web-stranici dodatka</a>.
 abuse-report-broken-suggestions-theme =
-    Čini se da si našao/la grešku. Pored slanja prijave ovdje, najbolji način
-    za rješavanje funkcionalnih problema je, da kontaktiraš programera motiva.
-    Podatke o programeru potraži na <a data-l10n-name="support-link">web stranici dodatka</a>.
+    Čini se da se radi o grešci. Pored slanja prijave ovdje, najbolji način za
+    rješavanje funkcionalnih problema je, da kontaktiraš programera motiva.
+    Podatke o programeru potraži na <a data-l10n-name="support-link">web-stranici dodatka</a>.
 abuse-report-policy-reason = Sadržaj mržnje, nasilja ili ilegalni
 abuse-report-policy-reason-v2 = Sadrži mržnju, nasilan ili ilegalan sadržaj
 abuse-report-policy-suggestions =

@@ -35,6 +35,12 @@ protection-report-page-title = Personvernbeskyttelser
 protection-report-content-title = Personvernbeskyttelser
 etp-card-title = Utvidet sporingsbeskyttelse
 etp-card-content = Sporere følger deg rundt på nettet for å samle informasjon om surfevanene og interessene dine. { -brand-short-name } blokkerer mange av disse sporere og andre ondsinnede skript.
+protection-report-webpage-title = Beskyttelsespanel
+protection-report-page-content-title = Beskyttelsespanel
+protection-report-page-summary = { -brand-short-name } kan beskytte personvernet ditt bak kulissene mens du surfer. Dette er en personlig oppsummering av de beskyttelsene, inkludert verktøy for å ta kontroll over din sikkerhet på nettet.
+etp-card-title-always = Utvidet sporingsbeskyttelse: alltid på
+etp-card-title-custom-not-blocking = Utvidet sporingsbeskyttelse: AV
+etp-card-content-summary = Når ukjente selskaper prøver å følge deg hemmelig rundt på nettet, stopper { -brand-short-name } mange av dem automatisk.
 protection-report-etp-card-content-custom-not-blocking = All beskyttelse er for tiden slått av. Velg hvilke sporere du vil blokkere ved å behandle innstillingene for beskyttelse i { -brand-short-name }.
 protection-report-manage-protections = Behandle innstillinger
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -54,15 +60,23 @@ cryptominer-tab-title = Kryptominere
 cryptominer-tab-content = Kryptominere bruker systemets datakraft for å utvinne digitale penger. Kryptomineringsskript tapper batteriet, gjør datamaskinen tregere og kan øke strømregningen. <a data-l10n-name="learn-more-link">Les mer</a>
 protections-close-button =
     .aria-label = Lukk
+protections-close-button2 =
+    .aria-label = Lukk
+    .title = Lukk
 mobile-app-title = Blokker annonsesporere på flere enheter
 mobile-app-card-content = Bruk mobilnettleseren med innebygd beskyttelse mot annonsesporing.
 mobile-app-links = { -brand-product-name } Nettleser for <a data-l10n-name="android-mobile-inline-link">Android</a> og <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Glem aldri et passord igjen
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Passordbehandling
 lockwise-header-content = { -lockwise-brand-name } lagrer passordene dine sikkert i nettleseren din.
 lockwise-header-content-logged-in = Lagre passordene dine sikkert og synkroniser dem med alle enhetene dine.
 protection-report-view-logins-button = Vis innlogginger
     .title = Gå til lagrede innlogginger
+protection-report-save-passwords-button = Lagre passord
+    .title = Lagre passord i { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Behandle passord
+    .title = Behandle passord i { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Ta med deg passordene dine overalt
 lockwise-no-logins-card-content = Bruk passord som er lagret i { -brand-short-name } på hvilken som helst enhet.
 lockwise-app-links = { -lockwise-brand-name } for <a data-l10n-name="lockwise-android-inline-link">Android</a> og <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -74,6 +88,23 @@ lockwise-passwords-stored =
         [one] Passord lagret sikkert <a data-l10n-name="lockwise-how-it-works">Slik fungerer det</a>
        *[other] Passord lagret sikkert <a data-l10n-name="lockwise-how-it-works">Slik fungerer det</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] 1 passord kan ha blitt eksponert i en datalekkasje.
+       *[other] { $count } passord kan ha blitt eksponert i en datalekkasje.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] 1 passord lagret sikkert.
+       *[other] Passordene dine blir lagret sikkert.
+    }
+lockwise-how-it-works-link = Hvordan det fungerer
 turn-on-sync = Slå på { -sync-brand-short-name }…
     .title = Gå til innstillinger for sync
 manage-connected-devices = Behandle enheter…
@@ -90,6 +121,12 @@ monitor-header-content-no-account = Sjekk { -monitor-brand-name } for å se om d
 monitor-header-content-signed-in = { -monitor-brand-name } advarer deg om informasjonen din har dukket opp i en kjent datalekkasje.
 monitor-sign-up = Registrer deg for datalekkasjevarsler
 auto-scan = Skannes automatisk i dag
+monitor-emails-tooltip =
+    .title = Vis overvåkede e-postadresser på { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Se kjente datalekkasjer på { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Se eksponerte passord på { -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

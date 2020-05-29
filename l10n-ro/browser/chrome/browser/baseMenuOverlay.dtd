@@ -5,7 +5,7 @@
 <!ENTITY minimizeWindow.key       "m">
 <!ENTITY minimizeWindow.label     "Minimizează">
 <!ENTITY bringAllToFront.label    "Adu toate în față">
-<!ENTITY zoomWindow.label         "Zoom">
+<!ENTITY zoomWindow.label         "Focalizare">
 <!ENTITY windowMenu.label         "Fereastră">
 
 <!ENTITY helpMenu.label           "Ajutor"> 
@@ -14,13 +14,14 @@
                        for the help button in the menubar but Gnome does not.   -->
 <!ENTITY helpMenuWin.label        "Ajutor"> 
 <!ENTITY helpMenuWin.accesskey    "H">
+
 <!ENTITY aboutProduct2.label      "Despre &brandShorterName;">
 <!ENTITY aboutProduct2.accesskey  "A">
 <!ENTITY productHelp2.label       "Ajutor &brandShorterName;">
 <!ENTITY productHelp2.accesskey   "H">
 <!ENTITY helpMac.commandkey       "?">
 
-<!ENTITY helpKeyboardShortcuts.label     "Comenzi rapide de la tastatură">
+<!ENTITY helpKeyboardShortcuts.label     "Comenzi rapide din tastatură">
 <!ENTITY helpKeyboardShortcuts.accesskey "K">
 
 <!ENTITY helpSafeMode.label       "Repornește cu suplimentele dezactivate…">
@@ -28,7 +29,7 @@
 <!ENTITY helpSafeMode.stop.label       "Repornește cu suplimentele activate">
 <!ENTITY helpSafeMode.stop.accesskey   "R">
 
-<!ENTITY helpTroubleshootingInfo.label      "Informații de depanare">
+<!ENTITY helpTroubleshootingInfo.label      "Informații pentru depanare">
 <!ENTITY helpTroubleshootingInfo.accesskey  "T">
 
 <!ENTITY helpFeedbackPage.label      "Trimite feedback…">

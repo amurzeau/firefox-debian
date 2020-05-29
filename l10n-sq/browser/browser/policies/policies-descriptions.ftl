@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Çaktivizoni kontrollin gjatë nisjes për shfl
 policy-DownloadDirectory = Caktoni dhe kyçni drejtorinë e shkarkimeve.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Aktivizoni ose çaktivizoni Bllokim Lënde, dhe kyçeni, në daçi.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Aktivizoni ose çaktivizoni Zgjerime Mediash të Fshehtëzuara, dhe kyçeni, në daçi.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -66,6 +68,14 @@ policy-HardwareAcceleration = Në u caktoftë "false", çaktivizohet përshpejti
 policy-Homepage = Caktoni faqen hyrëse, dhe kyçeni në daçi.
 policy-InstallAddonsPermission = Lejojuni disa sajteve të caktuar të instalojnë shtesa.
 policy-LegacyProfiles = Çaktivizo veçorinë e zbatimit me detyrim të një profili veçmas për çdo instalim
+
+## Do not translate "SameSite", it's the name of a cookie attribute.
+
+policy-LegacySameSiteCookieBehaviorEnabled = Aktivizoni rregullimin parazgjedhje të dikurshëm për sjelljen e cookie-t SameSite.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Rikthe sjelljen e dikurshme për SameSite, për cookie-t në sajtet e specifikuar.
+
+##
+
 policy-LocalFileLinks = Lejo sajte specifikë të krijojnë lidhje te kartela vendore.
 policy-NetworkPrediction = Aktivizoni ose çaktivizoni parashikim rrjeti (<em>DNS prefetching</em>).
 policy-NewTabPage = Aktivizoni ose çaktivizoni faqen Skedë e Re.
@@ -75,6 +85,8 @@ policy-OfferToSaveLoginsDefault = Caktoni vlerën parazgjedhje për lejim të { 
 policy-OverrideFirstRunPage = Anashkaloni faqen e xhirimit për herë të parë. Lëreni të zbrazët, nëse doni të çaktivizohet faqja e xhirimit për herë të parë.
 policy-OverridePostUpdatePage = Anashkaloni faqen “Ç’ka të Re” që shfaqet pas përditësimesh. Lëreni të zbrazët, nëse doni të çaktivizohet faqja pas-përditësim.
 policy-PasswordManagerEnabled = Aktivizoni ruajtjen e fjalëkalimeve te përgjegjësi i fjalëkalimeve.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Çaktivizoni pse formësoni PDF.js, parësin e brendshëm të PDF-ve në { -brand-short-name }.
 policy-Permissions2 = Formësoni lejet për kamerën, mikrofonin, vendndodhjen, njoftimet dhe vetëluajtjen.
 policy-PopupBlocking = Lejojuni, si parazgjedhje, disa sajteve të shfaqin flluska.
 policy-Preferences = Caktoni dhe kyçni vlerën për një nëngrup parapëlqimesh.

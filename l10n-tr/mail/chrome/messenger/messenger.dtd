@@ -22,7 +22,7 @@
      -->
 <!ENTITY moveToNewWindow.label "Yeni pencereye taşı">
 <!ENTITY moveToNewWindow.accesskey "n">
-<!ENTITY newVirtualFolderCmd.label "Kayıtlı Arama…">
+<!ENTITY newVirtualFolderCmd.label "Kayıtlı arama…">
 <!ENTITY newVirtualFolderCmd.accesskey "y">
 <!ENTITY newOtherAccountsCmd.label "Diğer hesaplar…">
 <!ENTITY newOtherAccountsCmd.accesskey "D">
@@ -151,9 +151,9 @@
 <!ENTITY messagePaneWide.accesskey "n">
 <!ENTITY messagePaneVertical.label "Dikey görünüm">
 <!ENTITY messagePaneVertical.accesskey "k">
-<!ENTITY showFolderPaneCmd.label "Dizin Bölmesi">
+<!ENTITY showFolderPaneCmd.label "Dizin bölmesi">
 <!ENTITY showFolderPaneCmd.accesskey "D">
-<!ENTITY showFolderPaneColsCmd.label "Dizin Bölmesi Sütunları">
+<!ENTITY showFolderPaneColsCmd.label "Dizin bölmesi sütunları">
 <!ENTITY showFolderPaneColsCmd.accesskey "B">
 <!ENTITY showMessageCmd.label "İleti Bölmesi">
 <!ENTITY showMessageCmd.accesskey "B">
@@ -289,6 +289,8 @@
 <!ENTITY searchMailCmd.label "İletilerde ara…">
 <!ENTITY searchMailCmd.accesskey "d">
 <!ENTITY searchMailCmd.key "f">
+<!ENTITY glodaSearchCmd.label "Global arama…">
+<!ENTITY glodaSearchCmd.accesskey "G">
 <!ENTITY searchAddressesCmd.label "Adreslerde ara…">
 <!ENTITY searchAddressesCmd.accesskey "A">
 
@@ -396,7 +398,7 @@
 <!ENTITY killSubthreadMenu.label "Alt diziyi göz ardı et">
 <!ENTITY killSubthreadMenu.accesskey "d">
 <!ENTITY killSubthreadMenu.key "k">
-<!ENTITY watchThreadMenu.label "Dizii izle">
+<!ENTITY watchThreadMenu.label "Diziyi izle">
 <!ENTITY watchThreadMenu.accesskey "z">
 <!ENTITY watchThreadMenu.key "w">
 <!ENTITY tagMenu.label "Etiket">
@@ -496,7 +498,7 @@
 <!ENTITY filtersApplyToMessage.accesskey "s">
 <!ENTITY runJunkControls.label "Dizinde gereksiz posta denetimini çalıştır">
 <!ENTITY runJunkControls.accesskey "D">
-<!ENTITY deleteJunk.label "Dizindeki gereksiz olarak işaretlenen iletileri sil">
+<!ENTITY deleteJunk.label "Gereksiz olarak işaretlenen iletileri sil">
 <!ENTITY deleteJunk.accesskey "s">
 <!ENTITY importCmd.label "İçe aktar…">
 <!ENTITY importCmd.accesskey "t">
@@ -730,6 +732,8 @@
 <!ENTITY idColumn.label "Alınma sırası">
 <!ENTITY attachmentColumn.label "Ekler">
 
+<!ENTITY deleteColumn.label "Sil">
+
 <!-- Thread Pane Tooltips -->
 <!ENTITY columnChooser2.tooltip "Gösterilecek sütunları seç">
 <!ENTITY selectColumn.tooltip "Tüm iletileri seç/seçme">
@@ -753,6 +757,8 @@
 <!ENTITY locationColumn2.tooltip "Konuma göre sırala">
 <!ENTITY idColumn2.tooltip "Alınış sırasına göre sırala">
 <!ENTITY attachmentColumn2.tooltip "Eklere göre sırala">
+
+<!ENTITY deleteColumn.tooltip "İletiyi sil">
 
 <!-- Thread Pane Context Menu -->
 <!ENTITY contextNewMsgFromTemplate.label "Taslak kullanarak yeni ileti yaz">

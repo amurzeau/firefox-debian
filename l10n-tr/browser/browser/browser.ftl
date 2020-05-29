@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Gizli Gezinti)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Gizli Gezinti)
-       *[other] { $title } - { -brand-full-name } (Gizli Gezinti)
-    }
 urlbar-identity-button =
     .aria-label = Site bilgilerini göster
 
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Daha az yazın, daha çok bulun: Adres çubuğunuzdan { $engineName } ile arama yapın.
 urlbar-search-tips-redirect-2 = { $engineName } ve gezinti geçmişinizden gelen önerileri görmek için adres çubuğunda arama yapmaya başlayın.
-
-##
-
 
 ##
 
@@ -245,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = e
 identity-more-info-link-text =
     .label = Daha fazla bilgi
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Küçült
+browser-window-maximize-button =
+    .tooltiptext = Ekranı kapla
+browser-window-restore-down-button =
+    .tooltiptext = Geri küçült
+browser-window-close-button =
+    .tooltiptext = Kapat
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Paylaşılacak kamera:
+    .accesskey = k
+popup-select-microphone =
+    .value = Paylaşılacak mikrofon:
+    .accesskey = m
+popup-all-windows-shared = Ekranınızdaki tüm görünür pencereler paylaşılacaktır.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = F12 kısayolunu kullanmak için önce Web geliştirici menüsünden geliştirici araçlarını açın.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Arama yapın veya adres yazın
+urlbar-placeholder =
+    .placeholder = Arama yapın veya adres yazın
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Tarayıcı uzaktan kontrol ediliyor
+urlbar-permissions-granted =
+    .tooltiptext = Bu siteye ek izinler verdiniz.
+urlbar-switch-to-tab =
+    .value = Sekmeye geç:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Eklenti:
+urlbar-go-end-cap =
+    .tooltiptext = Konum çubuğundaki adrese git
+urlbar-page-action-button =
+    .tooltiptext = Sayfa eylemleri
+urlbar-pocket-button =
+    .tooltiptext = { -pocket-brand-name }’a kaydet

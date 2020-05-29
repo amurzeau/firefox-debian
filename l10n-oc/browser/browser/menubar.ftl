@@ -48,13 +48,13 @@ menu-file-print-preview =
     .accesskey = A
 menu-file-print =
     .label = Imprimir…
-    .accesskey = p
+    .accesskey = i
 menu-file-import-from-another-browser =
     .label = Importar d’un autre navegador…
     .accesskey = I
 menu-file-go-offline =
-    .label = Apercebut abans impression
-    .accesskey = b
+    .label = Trabalhar fòra connexion
+    .accesskey = T
 
 ## Edit Menu
 
@@ -253,7 +253,7 @@ menu-help-keyboard-shortcuts =
     .label = Acorchis de clavièr
     .accesskey = c
 menu-help-troubleshooting-info =
-    .label = Entresenhas de depanatge
+    .label = Informacions de depanatge
     .accesskey = d
 menu-help-feedback-page =
     .label = Balhar vòstre vejaire…

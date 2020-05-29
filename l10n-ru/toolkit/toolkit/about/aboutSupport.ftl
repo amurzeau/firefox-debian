@@ -31,6 +31,7 @@ app-basics-title = Сведения о приложении
 app-basics-name = Имя
 app-basics-version = Версия
 app-basics-build-id = ID сборки
+app-basics-distribution-id = ID дистрибутива
 app-basics-update-channel = Канал обновления
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -293,7 +294,7 @@ sandbox-proc-type-file = содержимое файла
 sandbox-proc-type-media-plugin = медиаплагин
 sandbox-proc-type-data-decoder = декодер данных
 startup-cache-title = Кэш запуска
-startup-cache-disk-cache-path = Путь к дисковому кешу
+startup-cache-disk-cache-path = Путь к дисковому кэшу
 startup-cache-ignore-disk-cache = Игнорировать дисковый кэш
 startup-cache-found-disk-cache-on-init = При инициализации обнаружен дисковый кэш
 startup-cache-wrote-to-disk-cache = Записано в дисковый кэш

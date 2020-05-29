@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (privatusis naršymas)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (privatusis naršymas)
-       *[other] { $title } - { -brand-full-name } (privatusis naršymas)
-    }
 urlbar-identity-button =
     .aria-label = Peržiūrėti svetainės informaciją
 
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Rašykite mažiau, raskite daugiau: ieškokite per „{ $engineName }“ tiesiai iš savo adreso lauko.
 urlbar-search-tips-redirect-2 = Pradėkite savo paiešką adreso lauke, norėdami matyti žodžių siūlymus iš „{ $engineName }“ bei jūsų naršymo istorijos.
-
-##
-
 
 ##
 
@@ -245,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = Į
 identity-more-info-link-text =
     .label = Daugiau informacijos
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Suskleisti
+browser-window-maximize-button =
+    .tooltiptext = Išdidinti
+browser-window-restore-down-button =
+    .tooltiptext = Sumažinti
+browser-window-close-button =
+    .tooltiptext = Užverti
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Kamera, kurią leisite pasiekti:
+    .accesskey = K
+popup-select-microphone =
+    .value = Mikrofonas, kurį leisite pasiekti:
+    .accesskey = M
+popup-all-windows-shared = Bus leidžiama matyti visus jūsų ekrane matomus langus.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = Norėdami naudoti spartųjį klavišą „F12“, pirma atverkite saityno kūrėjų priemones iš meniu „Saityno kūrėjams“.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Įveskite adresą arba paieškos žodžius
+urlbar-placeholder =
+    .placeholder = Įveskite adresą arba paieškos žodžius
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Naršyklė valdoma per nuotolį
+urlbar-permissions-granted =
+    .tooltiptext = Šiai svetainei esate suteikę papildomų leidimų.
+urlbar-switch-to-tab =
+    .value = Pereiti į kortelę:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Priedas:
+urlbar-go-end-cap =
+    .tooltiptext = Eiti į adreso lauke surinktą adresą
+urlbar-page-action-button =
+    .tooltiptext = Tinklalapio veiksmai
+urlbar-pocket-button =
+    .tooltiptext = Įrašyti į „{ -pocket-brand-name }“

@@ -2,6 +2,9 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# Variables:
+# $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
+cert-error-code-prefix = Kod juumre: { $error }
 psmerr-ssl-disabled = Waawaa seŋaade e kisal sabu jaɓɓitorde SSL ndee ko daaƴaande.
 psmerr-ssl2-disabled = Waawaa seŋaade e kisal sabu ndee lowre huutortoo ko yamre ɓooynde, nde hisaani jaɓɓitorde SSL ndee.
 # This is a multi-line message.
@@ -334,3 +337,4 @@ mozilla-pkix-error-validity-too-long = Carwo oo hollitii sartifikaa jaɓaaɗo ko
 mozilla-pkix-error-required-tls-feature-missing = Gollirgel TLS katojinangal ina ŋakki.
 mozilla-pkix-error-invalid-integer-encoding = Carwo oo hollitii sartifikaa baɗɗo kodgol limre timmunde ngol moƴƴaani. Sababuuji gaadoraaɗi ina mbaɗa tonngooɗe callalal uste, gulle RSA uste kam e kode ɓurɗe ko soklaa koo juutde.
 mozilla-pkix-error-empty-issuer-name = Carwo oo hollitii sartifikaa baɗɗo innde seerndirde jaltinoowo mehre.
+mozilla-pkix-error-self-signed-cert = Seedamfaagu nguu hoolaaka sabu ko siifnde hoore mayre.

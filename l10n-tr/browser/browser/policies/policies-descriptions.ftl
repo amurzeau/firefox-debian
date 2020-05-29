@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Başlangıçta varsayılan tarayıcı kontrolü
 policy-DownloadDirectory = İndirme klasörünü ayarla ve kilitle.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = İçerik engellemeyi etkinleştir veya devre dışı bırak ve isteğe bağlı olarak kilitle.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Encrypted Media Extensions’ı etkinleştir veya devre dışı bırak ve isteğe bağlı olarak kilitle.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = { -brand-short-name } tarayıcısının kullan
 policy-OverrideFirstRunPage = İlk açılış sayfasını değiştir. İlk açılış sayfasını devre dışı bırakmak istiyorsanız bu ilkeyi boş olarak ayarlayın.
 policy-OverridePostUpdatePage = Güncelleme sonrası “Yenilikler” sayfasını değiştir. Güncelleme sonrası sayfasını devre dışı bırakmak istiyorsanız bu ilkeyi boş olarak ayarlayabilirsiniz.
 policy-PasswordManagerEnabled = Parolaları parola yöneticisine kaydetmeyi aç.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Dahili { -brand-short-name } PDF göstericisi olan PDF.js’i devre dışı bırak veya yapılandır.
 policy-Permissions2 = Kamera, mikrofon, konum, bildirim ve otomatik oynatma izinlerini yapılandır.
 policy-PopupBlocking = Belirli web sitelerin varsayılan olarak açılır pencere açmasına izin ver.
 policy-Preferences = Bir tercihler alt kümesinin değerini ayarlayıp kilitle.

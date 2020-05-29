@@ -33,6 +33,12 @@ protection-report-page-title = 隱私保護
 protection-report-content-title = 隱私保護
 etp-card-title = 加強型追蹤保護
 etp-card-content = 追蹤器會在網路上跟蹤您，收集您的興趣與喜好。{ -brand-short-name } 會封鎖許多追蹤器與其他有害指令碼。
+protection-report-webpage-title = 保護資訊儀表板
+protection-report-page-content-title = 保護資訊儀表板
+protection-report-page-summary = 當您上網時，{ -brand-short-name } 可在背景保護您的隱私。以下是這些保護的個人摘要，以及能夠用來保護線上安全性的各種工具。
+etp-card-title-always = 加強型追蹤保護: 總是開啟
+etp-card-title-custom-not-blocking = 加強型追蹤保護: 關閉
+etp-card-content-summary = 當有未知的公司嘗試偷偷在網路上追蹤您時，{ -brand-short-name } 會自動封鎖大部分的行為。
 protection-report-etp-card-content-custom-not-blocking = 目前已關閉所有保護。請調整 { -brand-short-name } 保護設定，決定要封鎖哪些類型的追蹤器。
 protection-report-manage-protections = 管理設定
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -52,16 +58,23 @@ cryptominer-tab-title = 加密貨幣採礦程式
 cryptominer-tab-content = 加密貨幣採礦程式會使用您電腦的運算能力來對數位貨幣「採礦」，消耗您的電腦電力、拖慢系統效能、增加電費支出。<a data-l10n-name="learn-more-link">了解更多</a>
 protections-close-button =
     .aria-label = 關閉
+protections-close-button2 =
+    .aria-label = 關閉
+    .title = 關閉
 mobile-app-title = 在更多裝置上也能封鎖廣告追蹤器
 mobile-app-card-content = 使用內建廣告追蹤保護的行動瀏覽器
 mobile-app-links = { -brand-product-name } 瀏覽器 <a data-l10n-name="android-mobile-inline-link">Android</a> 版與 <a data-l10n-name="ios-mobile-inline-link">iOS</a> 版
 lockwise-title = 不再忘記密碼
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = 密碼管理
 lockwise-header-content = { -lockwise-brand-name } 會安全地在您的瀏覽器中儲存密碼。
 lockwise-header-content-logged-in = 安全地儲存密碼，並同步到您的所有裝置中。
 protection-report-view-logins-button = 檢視登入資訊
     .title = 前往已存登入資訊
-lockwise-no-logins-content = 下載 <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> App，把密碼隨身帶著走。
+protection-report-save-passwords-button = 儲存密碼
+    .title = 將密碼儲存到 { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = 管理密碼
+    .title = 用 { -lockwise-brand-short-name } 管理密碼
 lockwise-mobile-app-title = 密碼隨身帶著走
 lockwise-no-logins-card-content = 在任何裝置上使用儲存到 { -brand-short-name } 的密碼。
 lockwise-app-links = <a data-l10n-name="lockwise-android-inline-link">Android</a> 與 <a data-l10n-name="lockwise-ios-inline-link">iOS</a> 版的 { -lockwise-brand-name }
@@ -72,6 +85,21 @@ lockwise-passwords-stored =
     { $count ->
        *[other] 安全地儲存密碼<a data-l10n-name="lockwise-how-it-works">運作原理</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+       *[other] 有 { $count } 組密碼可能在資料外洩事件中洩漏。
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+       *[other] 您的 { $count } 組密碼都已經安全地儲存下來。
+    }
+lockwise-how-it-works-link = 原理是什麼
 turn-on-sync = 開啟 { -sync-brand-short-name }…
     .title = 前往同步偏好設定
 manage-connected-devices = 管理裝置…
@@ -87,6 +115,12 @@ monitor-header-content-no-account = 使用 { -monitor-brand-name } 檢查您是�
 monitor-header-content-signed-in = 若您的資訊出現在已知的資料外洩事件中，{ -monitor-brand-name } 將警告您。
 monitor-sign-up = 訂閱資料外洩警報
 auto-scan = 今天自動掃描過
+monitor-emails-tooltip =
+    .title = 到 { -monitor-brand-short-name } 檢視進行監控的電子郵件信箱
+monitor-breaches-tooltip =
+    .title = 到 { -monitor-brand-short-name } 檢視已知的資料外洩事件
+monitor-passwords-tooltip =
+    .title = 到 { -monitor-brand-short-name } 檢視已遭洩露的密碼
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

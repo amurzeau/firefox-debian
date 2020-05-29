@@ -120,10 +120,6 @@ cfr-whatsnew-lockwise-take-link-text = Dapatkan aplikasinya
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Ketik lebih sedikit, temukan lebih banyak, dengan bilah alamat
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Buka situs yang sering dibuka dengan sekali klik di bilah alamat. Temukan lebih cepat bersama hasil dari { $searchEngineName } dan riwayat penjelajahan Anda.
-cfr-whatsnew-searchbar-body-generic = Buka situs yang sering dibuka dengan sekali klik di bilah alamat. Temukan lebih cepat bersama hasil dari riwayat penjelajahan Anda.
 cfr-whatsnew-searchbar-body-topsites = Kini cukup pilih bilah alamat dan sebuah kotak akan membentang yang berisi tautan ke situs teratas Anda.
 cfr-whatsnew-searchbar-icon-alt-text = Ikon kaca pembesar
 
@@ -215,9 +211,17 @@ cfr-doorhanger-milestone-ok-button = Lihat Semua
 ## Lockwise message
 
 cfr-whatsnew-lockwise-header = Mudahnya membuat kata sandi aman
+cfr-whatsnew-lockwise-body = Sulit untuk memikirkan kata sandi unik dan aman untuk setiap akun. Saat membuat kata sandi, pilih bidang kata sandi untuk menggunakan kata sandi aman yang dibuat dari { -brand-shorter-name }.
+cfr-whatsnew-lockwise-icon-alt = Ikon { -lockwise-brand-short-name }
 
 ## Vulnerable Passwords message
 
+cfr-whatsnew-passwords-header = Dapatkan peringatan tentang kata sandi yang rentan
+cfr-whatsnew-passwords-body = Peretas tahu orang menggunakan kembali kata sandi yang sama. Jika Anda menggunakan kata sandi yang sama di beberapa situs, dan salah satu situs tersebut melanggar data, Anda akan melihat peringat di { -lockwise-brand-short-name } untuk mengubah kata sandi di situs-situs tersebut.
+cfr-whatsnew-passwords-icon-alt = Ikon kunci kata sandi yang rentan
 
 ## Picture-in-Picture fullscreen message
 
+cfr-whatsnew-pip-fullscreen-header = Buat tayangan gambar-dalam-gambar menjadi layar penuh
+cfr-whatsnew-pip-fullscreen-body = Saat Anda menjadikan video sebagai jendela mengambang, sekarang Anda dapat mengeklik ganda jendelanya agar memenuhi layar.
+cfr-whatsnew-pip-fullscreen-icon-alt = Ikon gambar-dalam-gambar

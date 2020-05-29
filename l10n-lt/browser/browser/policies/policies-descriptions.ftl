@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Išjungti numatytosios naršyklės tikrinimą p
 policy-DownloadDirectory = Nustatyti ir užrakinti atsiuntimų aplanką.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Įjungti arba išjungti turinio blokavimą, ir papildomai jį užrakinti.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Įjungti arba išjungti „Encrypted Media Extensions“ ir papildomai juos užrakinti.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = Nustatykite numatytąją reikšme, skirtą lei
 policy-OverrideFirstRunPage = Pakeisti pirmo paleidimo puslapį. Padarykite šią strategiją „blank“, norėdami išjungti pirmojo paleidimo puslapį.
 policy-OverridePostUpdatePage = Pakeisti po atnaujinimų rodomą puslapį „Kas naujo“. Padarykite šią strategiją „blank“, norėdami išjungti po atnaujinimų rodomą puslapį.
 policy-PasswordManagerEnabled = Įjungti slaptažodžių įrašymą į slaptažodžių tvarkytuvę.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Išjungti arba konfigūruoti „PDF.js“, į „{ -brand-short-name }“ integruotą PDF failų žiūryklę.
 policy-Permissions2 = Konfigūruoti kameros, mikrofono, buvimo vietos nustatymo, pranešimų ir automatinio grojimo leidimus.
 policy-PopupBlocking = Leisti kai kurioms svetainėms pagal numatymą rodyti iškylančiuosius langus.
 policy-Preferences = Nustatykite ir užfiksuokite nuostatų rinkinio reikšmę.

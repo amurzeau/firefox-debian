@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Kontrolu za standardnym wobhladowakom při star
 policy-DownloadDirectory = Nastajće a zawrějće sćehnjenski zapis.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Blokowanje wobsaha zmóžnić abo znjemóžnić a jo na přeće zawrěć.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Encrypted Media Extensions zmóžnić abo znjemóžnić a je na přeće zawrěć.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = Stajće standardnu hódnotu, kotraž { -brand-
 policy-OverrideFirstRunPage = Stronu přepisać, kotraž so při prěnim starće jewi. Stajće tute prawidło na prózdne, jeli chceće tutu stronu znjemóžnić.
 policy-OverridePostUpdatePage = Stronu Nowe funkcije a změny po aktualizaciji přepisać. Stajće tute prawidło na prózdne, jeli chceće tutu stronu znjemóžnić.
 policy-PasswordManagerEnabled = Składowanje hesłow do zrjadowaka hesłow zmóžnić.
+# PDF.js and PDF should not be translated
+policy-PDFjs = PDF.js znjemóžnić abo konfigurować, zatwarjeny PDF-wobhladowak w { -brand-short-name }.
 policy-Permissions2 = Prawa za kameru, mikrofon, adresu, zdźělenki a awtomatiske wothraće konfigurować.
 policy-PopupBlocking = Wěstym websydłam dowolić, wuskakowace wokna po standardźe pokazać.
 policy-Preferences = Hódnotu za podsadźbu nastajenjow stajić a zawrěć

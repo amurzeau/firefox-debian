@@ -60,14 +60,14 @@ hide-passwords =
 logins-description-all = Pe calculator sunt stocate datele de autentificare pentru următorii furnizori
 logins-description-filtered = Următoarele date de autentificare se potrivesc căutării tale:
 remove-all =
-    .label = Elimină-le pe toate
+    .label = Elimină tot
     .accesskey = A
 remove-all-shown =
-    .label = Elimină-le pe toate cele afișate
+    .label = Elimină tot ce e afișat
     .accesskey = A
-remove-all-passwords-prompt = Sigur dorești să elimini toate parolele?
+remove-all-passwords-prompt = Sigur vrei să elimini toate parolele?
 remove-all-passwords-title = Elimină toate parolele
-no-master-password-prompt = Sigur dorești să afișezi parolele?
+no-master-password-prompt = Sigur vrei să afișezi parolele?
 
 ## OS Authentication dialog
 

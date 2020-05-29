@@ -35,6 +35,12 @@ protection-report-page-title = ਪਰਦੇਦਾਰੀ ਸੁਰੱਖਿਆਵ
 protection-report-content-title = ਪਰਦੇਦਾਰੀ ਸੁਰੱਖਿਆਵਾਂ
 etp-card-title = ਵਧੇਰੇ ਟਰੈਕਿੰਗ ਸੁਰੱਖਿਆ
 etp-card-content = ਟਰੈਕਰ ਤੁਹਾਡੀਆਂ ਬਰਾਊਜ਼ ਕਰਨ ਦੀਆਂ ਆਦਤਾਂ ਅਤੇ ਦਿਲਚਸਪੀਆਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਇਕੱਤਰ ਕਰਨ ਲਈ ਆਨਲਾਈਨ ਤੁਹਾਡਾ ਪਿੱਛਾ ਕਰਦੇ ਹਨ। { -brand-short-name } ਇਹਨਾਂ ਟਰੈਕਰਾਂ ਅਤੇ ਹੋਰ ਖੁਣਸੀ ਸਕ੍ਰਿਪਟਾਂ ਉੱਤੇ ਪਾਬੰਦੀ ਲਾਉਂਦਾ ਹੈ।
+protection-report-webpage-title = ਸੁਰੱਖਿਆ ਡੈਸ਼ਬੋਰਡ
+protection-report-page-content-title = ਸੁਰੱਖਿਆ ਡੈਸ਼ਬੋਰਡ
+protection-report-page-summary = { -brand-short-name } ਤੁਹਾਡੇ ਵਲੋਂ ਬਰਾਊਜ਼ ਕਰਨ ਦੇ ਦੌਰਾਨ ਪਰਦੇ ਪਿੱਛੇ ਤੁਹਾਡੀ ਪਰਦੇਦਾਰੀ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਦਾ ਹੈ। ਇਹ ਉਹਨਾਂ ਸੁਰੱਖਿਆਵਾਂ ਦੀ ਨਿੱਜੀ ਬਣਾਈ ਸੰਖੇਪ ਜਾਣਕਾਰੀ ਹੈ, ਜਿਸ ਵਿੱਚ ਤੁਹਾਡੀ ਆਨਲਾਈਨ ਸੁਰੱਖਿਆ ਨੂੰ ਕੰਟਰੋਲ ਕਰਨ ਲਈ ਟੂਲ ਸ਼ਾਮਲ ਹਨ।
+etp-card-title-always = ਵਾਧਾ ਕੀਤੀ ਟਰੈਕਿੰਗ ਸੁਰੱਖਿਆ: ਹਮੇਸ਼ਾ ਚਾਲੂ
+etp-card-title-custom-not-blocking = ਵਾਧਾ ਕੀਤੀ ਟਰੈਕਿੰਗ ਸੁਰੱਖਿਆ: ਬੰਦ
+etp-card-content-summary = ਜਦੋਂ ਅਣਪਛਾਤੀਆਂ ਕੰਪਨੀਆਂ ਵੈੱਬ ਉੱਤੇ ਚੋਰੀ ਛਿਪੇ ਤੁਹਾਡਾ ਪਿੱਛਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੀਆਂ ਹਨ ਤਾਂ { -brand-short-name } ਆਪਣੇ-ਆਪ ਉਹਨਾਂ ਨੂੰ ਰੋਕ ਦਿੰਦਾ ਹੈ।
 protection-report-etp-card-content-custom-not-blocking = ਸਾਰੀਆਂ ਸੁਰੱਖਿਆਵਾਂ ਨੂੰ ਇਸ ਵੇਲੇ ਬੰਦ ਕੀਤਾ ਹੈ। ਆਪਣੀਆਂ { -brand-short-name } ਸੁਰੱਖਿਆ ਸੈਟਿੰਗਾਂ ਦਾ ਇੰਤਾਜ਼ਮ ਕਰਕੇ ਪਾਬੰਦੀ ਲਾਉਣ ਵਾਲੇ ਟਰੈਕਰਾਂ ਨੂੰ ਚੁਣੋ।
 protection-report-manage-protections = ਸੈਟਿੰਗਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -52,16 +58,25 @@ fingerprinter-tab-title = ਫਿੰਗਰਪਰਿੰਟਰ
 fingerprinter-tab-content = ਫਿੰਗਰਪਰਿੰਟਰ ਤੁਹਾਡੇ ਬਾਰੇ ਪਰੋਫਾਈਲ ਬਣਾਉਣ ਲਈ ਤੁਹਾਡੇ ਬਰਾਊਜ਼ਰ ਅਤੇ ਕੰਪਿਊਟਰ ਤੋਂ ਸੈਟਿੰਗਾਂ ਇਕੱਤਰ ਕਰਦੇ ਹਨ। ਇਹ ਡਿਜ਼ਿਟਲ ਫਿੰਗਰਪਰਿੰਟ ਵਰਤ ਕੇ ਉਹ ਤੁਹਾਨੂੰ ਵੱਖੋ-ਵੱਖ ਵੈੱਬਸਾਈਟਾਂ ਦੁਆਲੇ ਟਰੈਕ ਕਰ ਸਕਦੇ ਹਨ। <a data-l10n-name="learn-more-link">ਹੋਰ ਸਿੱਖੋ</a>
 cryptominer-tab-title = ਕ੍ਰਿਪਟੋਮਾਈਨਰ
 cryptominer-tab-content = ਕ੍ਰਿਪਟੋਮਾਈਨਰ ਡਿਜ਼ਿਟਲ ਧਨ ਦੀ ਟਕਸਾਲ ਦੇ ਰੂਪ ਵਿੱਚ ਤੁਹਾਡੇ ਕੰਪਿਊਟਰ ਦੀ ਊਰਜਾ ਨੂੰ ਗੁਪਤ ਰੂਪ ਵਿੱਚ ਵਰਤਦੇ ਹਨ। ਕ੍ਰਿਪਟੋਮਾਈਨਰ ਸਕ੍ਰਿਪਟ ਤੁਹਾਡੀ ਬੈਟਰੀ ਖਪਾਉਂਦੀਆਂ ਹਨ, ਤੁਹਾਡੇ ਕੰਪਿਊਟਰ ਨੂੰ ਹੌਲੀ ਕਰਦੀਆਂ ਹਨ ਅਤੇ ਤੁਹਾਡੇ ਬਿਜਲੀ ਦੇ ਬਿੱਲ ‘ਚ ਵੀ ਵਾਧਾ ਕਰ ਸਕਦੀਆਂ ਹਨ। <a data-l10n-name="learn-more-link">ਹੋਰ ਜਾਣੋ</a>
+protections-close-button =
+    .aria-label = ਬੰਦ ਕਰੋ
+protections-close-button2 =
+    .aria-label = ਬੰਦ ਕਰੋ
+    .title = ਬੰਦ ਕਰੋ
 mobile-app-title = ਹੋਰ ਡਿਵਾਈਸਾਂ ਵਿੱਚ ਇਸ਼ਤਿਹਾਰ ਟਰੈਕਰਾਂ ਉੱਤੇ ਪਾਬੰਦੀ ਲਾਓ
 mobile-app-card-content = ਇਸ਼ਤਿਹਾਰੀ ਟਰੈਕਰਾਂ ਦੇ ਵਿਰੁਧ ਸੁਰੱਖਿਆ ਦੇ ਸਮੇਤ ਮੋਬਾਈਲ ਬਰਾਊਜ਼ਰ ਵਰਤੋਂ।
 mobile-app-links = <a data-l10n-name="android-mobile-inline-link">ਐਂਡਰਾਈਡ</a> ਅਤੇ <a data-l10n-name="ios-mobile-inline-link">iOS</a> ਲਈ { -brand-product-name } ਬਰਾਊਜ਼ਰ
 lockwise-title = ਮੁੜ ਕੇ ਪਾਸਵਰਡ ਕਦੇ ਵੀ ਨਾ ਭੁੱਲੋ
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = ਪਾਸਵਰਡ ਇੰਤਜ਼ਾਮ
 lockwise-header-content = { -lockwise-brand-name } ਤੁਹਾਡੇ ਬਰਾਊਜ਼ਰ ‘ਚ ਤੁਹਾਡੇ ਪਾਸਵਰਡਾਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਸੰਭਾਲਦਾ ਹੈ।
 lockwise-header-content-logged-in = ਆਪਣੇ ਸਾਰੇ ਡਿਵਾਈਸਾਂ ‘ਚ ਆਪਣੇ ਪਾਸਵਰਡਾਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਸੰਭਾਲੋ ਅਤੇ ਸਿੰਕ ਕਰੋ।
 protection-report-view-logins-button = ਲਾਗਇਨ ਵੇਖੋ
     .title = ਸੰਭਾਲੇ ਲਾਗਇਨਾਂ ਉੱਤੇ ਜਾਓ
-lockwise-no-logins-content = ਆਪਣੇ ਪਾਸਵਰਡਾਂ ਨੂੰ ਹਰ ਲਾਂ ਲੈ ਕੇ ਜਾਣ ਲਈ <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> ਐਪ ਲਵੋ।
+protection-report-save-passwords-button = ਪਾਸਵਰਡ ਸੰਭਾਲੋ
+    .title = { -lockwise-brand-short-name } ਵਿੱਚ ਪਾਸਵਰਡ ਸੰਭਾਲੋ
+protection-report-manage-passwords-button = ਪਾਸਵਰਡਾਂ ਦਾ ਇੰਤਜ਼ਾਮ
+    .title = { -lockwise-brand-short-name } ਵਿੱਚ ਪਾਸਵਰਡਾਂ ਦਾ ਇੰਤਜ਼ਾਮ
 lockwise-mobile-app-title = ਆਪਣੇ ਪਾਸਵਰਡ ਹਰ ਥਾਂ ਲੈ ਜਾਓ
 lockwise-no-logins-card-content = { -brand-short-name } ਵਿੱਚ ਸੰਭਾਲੇ ਪਾਸਵਰਡ ਕਿਸੇ ਵੀ ਡਿਵਾਈਸ ਉੱਤੇ ਵਰਤੋਂ।
 lockwise-app-links = <a data-l10n-name="lockwise-android-inline-link">ਐਂਡਰਾਈਂਡ</a> ਅਤੇ <a data-l10n-name="lockwise-ios-inline-link">iOS</a> ਲਈ { -lockwise-brand-name }
@@ -73,6 +88,23 @@ lockwise-passwords-stored =
         [one] ਪਾਸਵਰਡ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਸੰਭਾਲੋ <a data-l10n-name="lockwise-how-it-works">ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ</a>
        *[other] ਪਾਸਵਰਡ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਸੰਭਾਲੋ <a data-l10n-name="lockwise-how-it-works">ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] 1 ਪਾਸਵਰਡ ਡਾਟਾ ਸੰਨ੍ਹ ਵਿੱਚ ਜ਼ਾਹਰ ਹੋ ਸਕਦਾ ਹੈ।
+       *[other] { $count } ਪਾਸਵਰਡ ਡਾਟਾ ਸੰਨ੍ਹ ਵਿੱਚ ਜ਼ਾਹਰ ਹੋ ਸਕਦੇ ਹਨ।
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] 1 ਪਾਸਵਰਡ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਸੰਭਾਲਿਆ।
+       *[other] ਤੁਹਾਡੇ ਪਾਸਵਰਡ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਸੰਭਾਲੇ ਜਾ ਰਹੇ ਹਨ।
+    }
+lockwise-how-it-works-link = ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ
 turn-on-sync = { -sync-brand-short-name } ਚਾਲੂ ਕਰੋ…
     .title = ਸਿੰਕ ਪਸੰਦਾਂ ‘ਤੇ ਜਾਓ
 manage-connected-devices = ਡਿਵਾਈਸਾਂ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ…
@@ -89,6 +121,12 @@ monitor-header-content-no-account = { -monitor-brand-name } ਨਾਲ ਪਤਾ 
 monitor-header-content-signed-in = { -monitor-brand-name } ਤੁਹਾਨੂੰ ਸਾਵਧਾਨ ਕਰੇਗਾ, ਜੇ ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਕਿਸੇ ਪਤਾ ਲੱਗੀ ਡਾਟਾ ਸੰਨ੍ਹ ‘ਚ ਲੱਭਿਆ ਗਿਆ।
 monitor-sign-up = ਸੰਨ੍ਹ ਲੱਗਣ ਦੀਆਂ ਚੇਤਾਵਨੀਆਂ ਲਈ ਸਾਈਨ ਅੱਪ ਕਰੋ
 auto-scan = ਅੱਜ ਆਪਣੇ-ਆਪ ਸਕੈਨ ਕੀਤਾ
+monitor-emails-tooltip =
+    .title = { -monitor-brand-short-name } ਨਾਲ ਨਿਗਰਾਨੀ ਕੀਤੇ ਈਮੇਲ ਵੇਖੋ
+monitor-breaches-tooltip =
+    .title = { -monitor-brand-short-name } ਰਾਹੀਂ ਪਤਾ ਲਾਈਆਂ ਡਾਟਾ ਸੰਨ੍ਹਾਂ ਨੂੰ ਵੇਖੋ
+monitor-passwords-tooltip =
+    .title = { -monitor-brand-short-name } ਰਾਹੀਂ ਜ਼ਾਹਰ ਗਏ ਪਾਸਵਰਡ ਵੇਖੋ
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

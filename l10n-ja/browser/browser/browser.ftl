@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (プライベートブラウジング)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (プライベートブラウジング)
-       *[other] { $title } - { -brand-full-name } (プライベートブラウジング)
-    }
 
 urlbar-identity-button =
     .aria-label = サイトの情報を表示
@@ -109,8 +68,6 @@ urlbar-search-tips-redirect-2 = アドレスバーで検索を始めると、{ $
 
 ##
 
-##
-
 urlbar-geolocation-blocked =
     .tooltiptext = このウェブサイトでの位置情報の共有をブロックしました。
 urlbar-xr-blocked =
@@ -152,7 +109,6 @@ page-action-manage-extension =
     .label = 拡張機能を管理...
 page-action-remove-from-urlbar =
     .label = アドレスバーから削除
-
 page-action-remove-extension =
     .label = 拡張機能を削除
 
@@ -245,3 +201,51 @@ identity-enable-mixed-content-blocking =
     .accesskey = E
 identity-more-info-link-text =
     .label = 詳細を表示
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = 最小化
+browser-window-maximize-button =
+    .tooltiptext = 最大化
+browser-window-restore-down-button =
+    .tooltiptext = 元に戻す
+browser-window-close-button =
+    .tooltiptext = 閉じる
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = 共有するカメラ:
+    .accesskey = C
+popup-select-microphone =
+    .value = 共有するマイク:
+    .accesskey = M
+popup-all-windows-shared = 画面に表示されているすべてのウィンドウを共有します。
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = F12 ショートカットを使うには、最初にメニューのウェブ開発から開発ツールを開いてください。
+
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = URL または検索語句を入力します
+urlbar-placeholder =
+    .placeholder = URL または検索語句を入力します
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = ブラウザーがリモート制御下にあります
+urlbar-permissions-granted =
+    .tooltiptext = このウェブサイトで追加の権限を許可しました。
+urlbar-switch-to-tab =
+    .value = タブを表示:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = 拡張機能:
+urlbar-go-end-cap =
+    .tooltiptext = アドレスバーに入力された URL へ移動します
+urlbar-page-action-button =
+    .tooltiptext = ページ操作
+urlbar-pocket-button =
+    .tooltiptext = { -pocket-brand-name } に保存

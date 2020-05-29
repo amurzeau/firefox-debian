@@ -244,6 +244,10 @@ translate-attribution = Cyfieithiadau gan <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Eithriadau…
     .accesskey = i
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Defnyddiwch osodiadau eich system weithredu ar gyfer “{ $localeName }” i fformatio dyddiadau, amseroedd, rhifau a mesuriadau.
 check-user-spelling =
     .label = Gwirio'r sillafu wrth deipio
     .accesskey = G
@@ -292,6 +296,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Defnyddio { $app-name } (rhagosodiad)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Defnyddiwch raglen ragosodedig macOS
+            [windows] Defnyddiwch raglen ragosodedig Windows
+           *[other] Defnyddiwch raglen ragosodedig y system
+        }
 applications-use-other =
     .label = Defnyddio arall…
 applications-select-helper = Dewis Rhaglen Gynorthwyol
@@ -317,6 +328,8 @@ applications-use-plugin-in =
     .label = Defnyddio { $plugin-name } (yn { -brand-short-name })
 applications-preview-inapp =
     .label = Rhagolwg yn { -brand-short-name }
+applications-open-inapp =
+    .label = Agorwch yn { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -330,12 +343,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -768,6 +785,9 @@ privacy-header = Preifatrwydd y Porwr
 ## Privacy Section - Logins and Passwords
 
 logins-header = Mewngofnodion a Chyfrineiriau
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Mewngofnodion a Chyfrineiriau
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Gofyn i gadw mewngofnodion a chyfrineiriau ar gyfer gwefannau
@@ -802,6 +822,8 @@ forms-master-pw-fips-desc = Methu Newid eich Cyfrinair
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Gwiriwch eich hunaniaeth i greu Prif Gyfrinair.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = I greu Prif Gyfrinair, rhowch eich manylion mewngofnodi Windows. Mae hyn yn helpu i amddiffyn diogelwch eich cyfrifon.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These

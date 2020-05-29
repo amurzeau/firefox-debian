@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Privát böngészés)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Privát böngészés)
-       *[other] { $title } - { -brand-full-name } (Privát böngészés)
-    }
 urlbar-identity-button =
     .aria-label = Oldal adatainak megjelenítése
 
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Gépeljen kevesebbet, találjon többet: { $engineName } keresés közvetlenül a címsorból.
 urlbar-search-tips-redirect-2 = Kezdjen keresni a címsorban, és lássa a { $engineName } javaslatait, valamint a böngészési előzményeit.
-
-##
-
 
 ##
 
@@ -245,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = b
 identity-more-info-link-text =
     .label = További tudnivalók
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Kis méret
+browser-window-maximize-button =
+    .tooltiptext = Maximalizálás
+browser-window-restore-down-button =
+    .tooltiptext = Előző méret
+browser-window-close-button =
+    .tooltiptext = Bezárás
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Megosztandó kamera:
+    .accesskey = k
+popup-select-microphone =
+    .value = Megosztandó mikrofon:
+    .accesskey = M
+popup-all-windows-shared = A képernyő minden látható ablaka meg lesz osztva.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = Az F12 gyorsbillentyű használatához először nyissa meg fejlesztői eszközöket a Webfejlesztő menüben.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Keresés vagy cím
+urlbar-placeholder =
+    .placeholder = Keresés vagy cím
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = A böngészőt távolról irányítják
+urlbar-permissions-granted =
+    .tooltiptext = További engedélyeket adott ennek az oldalnak.
+urlbar-switch-to-tab =
+    .value = Váltás erre a lapra:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Kiegészítő:
+urlbar-go-end-cap =
+    .tooltiptext = Ugrás a címmezőben levő címre
+urlbar-page-action-button =
+    .tooltiptext = Oldalműveletek
+urlbar-pocket-button =
+    .tooltiptext = Mentés a { -pocket-brand-name }be

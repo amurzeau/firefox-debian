@@ -2,66 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Поверително разглеждане)
-       *[default] { -brand-full-name }
-    }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (Поверително разглеждане)
-       *[default] { $title } - { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Поверително разглеждане)
-       *[other] { $title } - { -brand-full-name } (Поверително разглеждане)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = Показване на информация за уеб страницата
 
@@ -124,7 +64,6 @@ urlbar-tip-icon-description =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Въвеждайте малко, намирайте много: търсете с { $engineName } направо от адресната лента.
-urlbar-search-tips-redirect = Започнете търсене оттук, за да видите предложения от { $engineName } и историята на разглеждане.
 urlbar-search-tips-redirect-2 = Започнете търсене от адресната лента, за да видите предложения от { $engineName } и историята на разглеждане.
 
 ##
@@ -170,6 +109,8 @@ page-action-manage-extension =
     .label = Управление на добавката…
 page-action-remove-from-urlbar =
     .label = Премахване от адресната лента
+page-action-remove-extension =
+    .label = Премахване на разширението
 
 ## Auto-hide Context Menu
 
@@ -260,3 +201,45 @@ identity-enable-mixed-content-blocking =
     .accesskey = В
 identity-more-info-link-text =
     .label = Повече информация
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Минимизиране
+browser-window-close-button =
+    .tooltiptext = Затваряне
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Камера за споделяне:
+    .accesskey = К
+popup-select-microphone =
+    .value = Микрофон за споделяне:
+    .accesskey = М
+popup-all-windows-shared = Всички видими прозорци на вашия екран ще бъдат споделени.
+
+## DevTools F12 popup
+
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Търсете или въведете адрес
+urlbar-placeholder =
+    .placeholder = Търсете или въведете адрес
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Четецът е под дистанционно управление
+urlbar-permissions-granted =
+    .tooltiptext = Дали сте допълнителни права на страницата.
+urlbar-switch-to-tab =
+    .value = Превключване към раздел:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Разширение:
+urlbar-go-end-cap =
+    .tooltiptext = Зареждане на адреса в полето
+urlbar-page-action-button =
+    .tooltiptext = Действия със страницата
+urlbar-pocket-button =
+    .tooltiptext = Запазване в { -pocket-brand-name }

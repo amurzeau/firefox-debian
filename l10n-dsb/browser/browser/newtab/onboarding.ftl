@@ -94,14 +94,14 @@ onboarding-benefit-lockwise-text = Zastojśo gronidła, kótarež su šćitane a
 onboarding-private-browsing-title = Priwatny modus
 onboarding-private-browsing-text = Pśeglědujśo za se. Priwatny modus z blokowanim wopśimjeśa blokěrujo pśeslědowaki online, kótarež wam pśez web slěduju.
 onboarding-screenshots-title = Fota wobrazowki
-onboarding-screenshots-text = Gótujśo, składujśo a źělśo fota wobrazowki - bźez togo, aby { -brand-short-name } spušćił. Fotografěrujśo wobcerk abo ceły bok. mjaztym až pśeglědujośo. Składujśo pótom we webje za lažki pśistup a źělenje.
+onboarding-screenshots-text = Gótujśo, składujśo a źělśo fota wobrazowki - bźez togo, aby { -brand-short-name } spušćił. Fotografěrujśo wobceŕk abo ceły bok. mjaztym až pśeglědujośo. Składujśo pótom we webje za lažki pśistup a źělenje.
 onboarding-addons-title = Dodanki
 onboarding-addons-text = Pśidajśo dalšne funkcije, aby { -brand-short-name } źurnjej za was źěłał. Pśirownajśo płaśizny, wobgóńśo se za wjedrom abo zwurazniśo swóju wósobinu ze swójskeju drastwu.
 onboarding-ghostery-title = Ghostery
 onboarding-ghostery-text = Pśeglědujśo malsnjej, wěcej inteligentnje abo wěsćej z rozšyrjenjami ako Ghostery, kótarež wam zmóžnja, gramne wabjenje blokěrowaś.
 # Note: "Sync" in this case is a generic verb, as in "to synchronize"
 onboarding-fxa-title = Snychronizěrowaś
-onboarding-fxa-text = Registrěrujśo se za { -fxaccount-brand-name } a synchronizěrujśo swóje cytańske znamjenja, gronidła a wócynjone rejtarki, źožkuli { -brand-short-name } wužywaśo.
+onboarding-fxa-text = Registrěrujśo se za { -fxaccount-brand-name } a synchronizěrujśo swóje cytańske znamjenja, gronidła a wócynjone rejtariki, źožkuli { -brand-short-name } wužywaśo.
 onboarding-tracking-protection-title2 = Šćit pśeśiwo slědowanjeju
 onboarding-tracking-protection-text2 = { -brand-short-name } wam pomaga, websedłam zawoboraś, wam online slědowaś, aby za wabjenje śěžčej było, wam pó webje slědowaś.
 onboarding-tracking-protection-button2 = Kak funkcioněrujo
@@ -124,7 +124,7 @@ onboarding-mobile-phone-text = Ześěgniśo { -brand-product-name } za iOS abo A
 # "Mobile" is short for mobile/cellular phone, "Browser" is short for web
 # browser.
 onboarding-mobile-phone-button = Mobilny wobglědowak ześěgnuś
-onboarding-send-tabs-title = Sćelśo něd rejtarki
+onboarding-send-tabs-title = Sćelśo něd rejtariki
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
 onboarding-send-tabs-text = Sen Tabs ned boki mjazy wašymi rědami źěli, bźeztogo aby kopěrował, zasajźił abo wobglědowak spušćił.

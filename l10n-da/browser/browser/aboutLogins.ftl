@@ -50,7 +50,6 @@ login-list-count =
 login-list-sort-label-text = Sorter efter:
 login-list-name-option = Navn (A-Z)
 login-list-name-reverse-option = Navn (Z-A)
-login-list-breached-option = Websteder med datalæk
 about-logins-login-list-alerts-option = Advarsler
 login-list-last-changed-option = Senest ændret
 login-list-last-used-option = Senest brugt
@@ -113,18 +112,26 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 
 # This message can be seen by attempting to edit a login in about:logins
 about-logins-edit-login-os-auth-dialog-message = Bekræft din identitet for at redigere det gemte login.
+
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message-win = Indtast dine login-informationer til Windows for at redigere dine logins. Dette hjælper med at beskytte dine kontis sikkerhed.
 # This message can be seen by attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = redigere det gemte login
 
 # This message can be seen by attempting to reveal a password in about:logins
 about-logins-reveal-password-os-auth-dialog-message = Bekræft din identitet for at vise den gemte adgangskode.
+# This message can be seen when attempting to reveal a password in about:logins on Windows.
+about-logins-reveal-password-os-auth-dialog-message-win = Indtast dine login-informationer til Windows for at se din adgangskode. Dette hjælper med at beskytte dine kontis sikkerhed.
 # This message can be seen by attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = vise den gemte adgangskode
 
 # This message can be seen by attempting to copy a password in about:logins
 about-logins-copy-password-os-auth-dialog-message = Bekræft din identitet for at kopiere den gemte adgangskode
+
+# This message can be seen when attempting to copy a password in about:logins on Windows.
+about-logins-copy-password-os-auth-dialog-message-win = Indtast dine login-informationer til Windows for at kopiere din adgangskode. Dette hjælper med at beskytte dine kontis sikkerhed.
 # This message can be seen by attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = kopiere den gemte adgangskode
@@ -173,9 +180,6 @@ confirm-discard-changes-dialog-confirm-button = Annuller
 
 about-logins-breach-alert-title = Websted med datalæk
 breach-alert-text = Adgangskoder er blevet lækket eller stjålet fra dette websted, siden du senest opdaterede dine login-oplysninger. Skift din adgangskode for at beskytte din konto.
-breach-alert-link = Læs mere om denne datalæk.
-breach-alert-dismiss = 
-    .title = Luk denne advarsel
 
 about-logins-breach-alert-date = Datalækket fandt sted { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
 # Variables:

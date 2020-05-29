@@ -2,66 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Navegació privada)
-       *[default] { -brand-full-name }
-    }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (Navegació privada)
-       *[default] { $title } - { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Navegació privada)
-       *[other] { $title } - { -brand-full-name } (Navegació privada)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = Mostra la informació del lloc
 
@@ -85,6 +25,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Obri la subfinestra del missatge
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Obri la subfinestra de la sol·licitud d'ubicació
+urlbar-xr-notification-anchor =
+    .tooltiptext = Obri el tauler de permisos de realitat virtual
 urlbar-storage-access-anchor =
     .tooltiptext = Obri la subfinestra de permisos d'activitat de navegació
 urlbar-translate-notification-anchor =
@@ -109,6 +51,12 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Obri la subfinestra del missatge d'instal·lació del complement
 urlbar-tip-help-icon =
     .title = Obteniu ajuda
+urlbar-search-tips-confirm = D'acord
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = Consell:
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -116,12 +64,14 @@ urlbar-tip-help-icon =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Escriviu menys i trobeu més: Cerqueu amb { $engineName } directament des de la barra d'adreces.
-urlbar-search-tips-redirect = Comenceu la vostra cerca ací per veure suggeriments de { $engineName } i del vostre historial de navegació.
+urlbar-search-tips-redirect-2 = Comenceu la vostra cerca en la barra d'adreces per veure suggeriments de { $engineName } i del vostre historial de navegació.
 
 ##
 
 urlbar-geolocation-blocked =
     .tooltiptext = Heu blocat la informació d'ubicació per a este lloc web.
+urlbar-xr-blocked =
+    .tooltiptext = Heu blocat l'accés a dispositius de realitat virtual per a este lloc web.
 urlbar-web-notifications-blocked =
     .tooltiptext = Heu blocat les notificacions per a este lloc web.
 urlbar-camera-blocked =
@@ -249,3 +199,45 @@ identity-enable-mixed-content-blocking =
     .accesskey = v
 identity-more-info-link-text =
     .label = Més informació
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Minimitza
+browser-window-close-button =
+    .tooltiptext = Tanca
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Càmera per compartir:
+    .accesskey = C
+popup-select-microphone =
+    .value = Micròfon per compartir:
+    .accesskey = M
+popup-all-windows-shared = Es compartiran totes les finestres visibles de la pantalla.
+
+## DevTools F12 popup
+
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Escriviu una cerca o adreça
+urlbar-placeholder =
+    .placeholder = Escriviu una cerca o adreça
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = El navegador està sota control remot
+urlbar-permissions-granted =
+    .tooltiptext = Heu donat permisos addicionals a este lloc web.
+urlbar-switch-to-tab =
+    .value = Canvia a la pestanya:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Extensió:
+urlbar-go-end-cap =
+    .tooltiptext = Vés a l'adreça de la barra d'ubicació
+urlbar-page-action-button =
+    .tooltiptext = Accions de la pàgina
+urlbar-pocket-button =
+    .tooltiptext = Guarda al { -pocket-brand-name }

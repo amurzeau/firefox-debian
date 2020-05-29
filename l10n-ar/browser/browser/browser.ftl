@@ -2,50 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (التصفح الخاص)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (التصفح الخاص)
-       *[other] { $title } - { -brand-full-name } (التصفح الخاص)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = اعرض معلومات الموقع
 
@@ -106,7 +62,6 @@ urlbar-tip-icon-description =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = اكتب بحروف أقل، و جِد نتائج أكثر: ابحث مستخدمًا { $engineName } مباشرة من شريط العنوان.
-urlbar-search-tips-redirect = ابدأ البحث هنا لترى الاقتراحات من { $engineName } و من تأريخ التصفح.
 urlbar-search-tips-redirect-2 = ابدأ البحث من شريط العنوان لترى الاقتراحات من { $engineName } و من تأريخ التصفح.
 
 ##
@@ -152,6 +107,8 @@ page-action-manage-extension =
     .label = أدِر الامتدادات…
 page-action-remove-from-urlbar =
     .label = أزل من شريط العناوين
+page-action-remove-extension =
+    .label = أزِل الامتداد
 
 ## Auto-hide Context Menu
 
@@ -242,3 +199,48 @@ identity-enable-mixed-content-blocking =
     .accesskey = ف
 identity-more-info-link-text =
     .label = المزيد من المعلومات
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = صغّر
+browser-window-maximize-button =
+    .tooltiptext = كبِّر
+browser-window-close-button =
+    .tooltiptext = أغلق
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = الكمرة التي ستُشارك:
+    .accesskey = م
+popup-select-microphone =
+    .value = الميكروفون الذي سيُشارك:
+    .accesskey = ك
+popup-all-windows-shared = ستُشارك كل النوافذ الظاهرة على شاشتك.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = افتح أولا أدوات المطورين من قائمة مطوّري الوِب لاستعمال الاختصار F12.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = ابحث أو أدخل عنوانا
+urlbar-placeholder =
+    .placeholder = ابحث أو أدخل عنوانا
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = يخضع المتصفح للتحكم عن بعد
+urlbar-permissions-granted =
+    .tooltiptext = منحت هذا الموقع صلاحيات أخرى.
+urlbar-switch-to-tab =
+    .value = انتقل إلى اللسان:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = الامتداد:
+urlbar-go-end-cap =
+    .tooltiptext = اذهب للعنوان في شريط الموقع
+urlbar-page-action-button =
+    .tooltiptext = إجراءات الصفحة
+urlbar-pocket-button =
+    .tooltiptext = احفظ في { -pocket-brand-name }

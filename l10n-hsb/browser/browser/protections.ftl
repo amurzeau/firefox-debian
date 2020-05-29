@@ -39,6 +39,12 @@ protection-report-page-title = Škit priwatnosće
 protection-report-content-title = Škit priwatnosće
 etp-card-title = Polěpšeny slědowanski škit
 etp-card-content = Přesćěhowaki wam online slěduja, zo bychu informacije wo wašich přehladowanskich zwučenosćach a zajimach hromadźili. { -brand-short-name } wjele z tutych přesćěhowakow a druhe złóstne skripty blokuje.
+protection-report-webpage-title = Přehlad škitow
+protection-report-page-content-title = Přehlad škitow
+protection-report-page-summary = { -brand-short-name } móže wašu priwatnosć za kulisami škitać, mjeztym zo přehladujeće. To je personalizowane zjeće tutych škitnych naprawow, mjez nimi nastroje, kotrež wašu wěstotu online kontroluja.
+etp-card-title-always = Polěpšeny slědowanski škit: přeco zmóžnjeny
+etp-card-title-custom-not-blocking = Polěpšeny slědowanski škit: ZNJEMÓŽNJENY
+etp-card-content-summary = Hdyž njeznate předewzaća pospytuja, wam skradźu po webje slědować, { -brand-short-name } wjele z nich awtomatisce blokuje.
 protection-report-etp-card-content-custom-not-blocking = Kóždy škit je tuchwilu wotpinjeny. Wubjerće, kotre přesćěhowaki maja so přez rjadowanje wašich škitnych nastajenjow { -brand-short-name } blokować.
 protection-report-manage-protections = Nastajenja rjadować
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -58,16 +64,23 @@ cryptominer-tab-title = Kryptokopanje
 cryptominer-tab-content = Kryptokopanje ličenski wukon wašeho systema wužiwa, zo by digitalne pjenjezy dobyło. Kryptokopanske skripty wašu bateriju prózdnja, waš ličak spomaleja a móža wašu přetrjebu energije powyšić. <a data-l10n-name="learn-more-link">Dalše informacije</a>
 protections-close-button =
     .aria-label = Začinić
+protections-close-button2 =
+    .aria-label = Začinić
+    .title = Začinić
 mobile-app-title = Wabjenske přesćěhowaki přez dalše graty blokować
 mobile-app-card-content = Mobilny wobhladowak ze zatwarjenym škitom přećiwo wabjenskemu slědowanju wužiwać
 mobile-app-links = Wobhladowak { -brand-product-name } za <a data-l10n-name="android-mobile-inline-link">Android</a> a <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Njezabywajće ženje wjace hesło
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Rjadowanje hesłow
 lockwise-header-content = { -lockwise-brand-name } waše hesła we wašim wobhladowaku wěsće składuje.
 lockwise-header-content-logged-in = Składujće a synchronizujće hesła za wšě waše graty.
 protection-report-view-logins-button = Přizjewjenja pokazać
     .title = K składowanym přizjewjenjam
-lockwise-no-logins-content = Wobstarajće sej nałoženje <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }, zo byšće swoje hesła wšudźe sobu wzał.
+protection-report-save-passwords-button = Hesła składować
+    .title = Hesła w { -lockwise-brand-short-name } składować
+protection-report-manage-passwords-button = Hesła rjadować
+    .title = Hesła w { -lockwise-brand-short-name } rjadować
 lockwise-mobile-app-title = Wzmiće swoje hesła wšudźe sobu
 lockwise-no-logins-card-content = Wužiwajće hesła, kotrež sće w { -brand-short-name } składował, na kóždym graće.
 lockwise-app-links = { -lockwise-brand-name } za <a data-l10n-name="lockwise-android-inline-link">Android</a> a <a data-l10n-name="lockwise-ios-inline-link"></a>
@@ -81,6 +94,27 @@ lockwise-passwords-stored =
         [few] Wěsće składowane hesła <a data-l10n-name="lockwise-how-it-works">Kak to funguje</a>
        *[other] Wěsće składowanych hesłow <a data-l10n-name="lockwise-how-it-works">Kak to funguje</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] { $count } hesło je so datowej dźěrje wustajiło.
+        [two] { $count } hesle stej so datowej dźěrje wustajiłoj.
+        [few] { $count } hesła su so datowej dźěrje wustajili.
+       *[other] { $count } hesłow je so datowej dźěrje wustajiło.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] { $count } hesło je so wěsće składowało.
+        [two] { $count } hesle stej so wěsće składowałoj.
+        [few] { $count } hesła su so wěsće składowali.
+       *[other] { $count } hesłow je so wěsće składowało.
+    }
+lockwise-how-it-works-link = Kak funguje
 turn-on-sync = { -sync-brand-short-name } zmóžnić
     .title = K synchronizowanskim nastajenjam
 manage-connected-devices = Graty rjadować…
@@ -99,6 +133,12 @@ monitor-header-content-no-account = Přepruwujće { -monitor-brand-name }, zo by
 monitor-header-content-signed-in = { -monitor-brand-name } was warnuje, jeli waše informacije su so w znatej datowej dźěrje zjewili.
 monitor-sign-up = Registrujće so za warnowanja wo datowych dźěrach
 auto-scan = Dźensa awtomatisce skenowany
+monitor-emails-tooltip =
+    .title = Dohladowane e-mejlowe adresy w { -monitor-brand-short-name } pokazać
+monitor-breaches-tooltip =
+    .title = Znate datowe dźěry w { -monitor-brand-short-name } pokazać
+monitor-passwords-tooltip =
+    .title = Wotkryte hesła w { -monitor-brand-short-name } pokazać
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

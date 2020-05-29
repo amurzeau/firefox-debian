@@ -3,11 +3,11 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 webpage-languages-window =
-    .title = 웹페이지 언어 설정
+    .title = 웹 페이지 언어 설정
     .style = width: 40em
 languages-close-key =
     .key = w
-languages-description = 일부 웹 사이트 내용에 여러 가지 언어가 함께 포함 있는 경우가 있습니다. 이 때 웹 페이지를 표시할 언어를 선호도 순으로 선택하세요
+languages-description = 웹 페이지는 여러 언어로 제공되는 경우가 있습니다. 이런 웹 페이지를 표시할 언어를 선호하는 순서대로 선택하세요
 languages-customize-spoof-english =
     .label = 향상된 개인 정보 보호를 위해 웹 페이지의 영어 버전을 요청하기
 languages-customize-moveup =

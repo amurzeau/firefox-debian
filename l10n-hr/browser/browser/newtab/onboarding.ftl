@@ -31,7 +31,7 @@ onboarding-join-form-body = Za početak unesi svoju adresu e-pošte.
 onboarding-join-form-email =
     .placeholder = Upiši e-adresu
 onboarding-join-form-email-error = Potrebna je ispravna adresa e-pošte
-onboarding-join-form-legal = Ukoliko nastavite, slažete se s <a data-l10n-name="terms">Uvjetima pružanja usluge</a> i <a data-l10n-name="privacy">Politikom privatnosti</a>.
+onboarding-join-form-legal = Ukoliko nastaviš, slažeš se s <a data-l10n-name="terms">Uvjetima pružanja usluge</a> i <a data-l10n-name="privacy">Politikom privatnosti</a>.
 onboarding-join-form-continue = Nastavi
 # This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
 onboarding-join-form-signin-label = Već imaš račun?
@@ -136,7 +136,7 @@ onboarding-pocket-anywhere-title = Čitaj i slušaj bilo gdje
 onboarding-pocket-anywhere-text2 = Spremi svoj omiljeni sadržaj lokalno s { -pocket-brand-name } aplikacijom i čitaj, slušaj i gledaj kad god želiš.
 onboarding-pocket-anywhere-button = Probaj { -pocket-brand-name }
 onboarding-lockwise-passwords-title = Ponesi svoje lozinke sa sobom
-onboarding-lockwise-passwords-text2 = Zaštitite lozinke koje spremite i jednostavno se prijavite u svoje račune s { -lockwise-brand-name }.
+onboarding-lockwise-passwords-text2 = Zaštiti lozinke koje spremaš i jednostavno se prijavi na svoje račune s { -lockwise-brand-name }.
 onboarding-lockwise-passwords-button2 = Preuzmi program
 onboarding-lockwise-strong-passwords-title = Stvori i spremi jake lozinke
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } stvara snažne lozinke na licu mjesta i sprema ih sve na jedno mjesto.

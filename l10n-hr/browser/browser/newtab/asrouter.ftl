@@ -65,7 +65,7 @@ cfr-doorhanger-pintab-description = Jednostavan pristup tvojim najkorištenijim 
 
 ## These messages are steps on how to use the feature and are shown together.
 
-cfr-doorhanger-pintab-step1 = <b>Desni klik</b> na karticu koju želite zakačiti.
+cfr-doorhanger-pintab-step1 = <b>Desni klik</b> na karticu koju želiš zakačiti.
 cfr-doorhanger-pintab-step2 = Odaberi <b>Zakači karticu</b> iz izbornika.
 cfr-doorhanger-pintab-step3 = Ukoliko je stranica osvježena, vidjet ćete plavu točku na zakačenoj kartici.
 cfr-doorhanger-pintab-animation-pause = Pauziraj
@@ -126,10 +126,6 @@ cfr-whatsnew-lockwise-take-link-text = Preuzmi aplikaciju
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Tipkaj manje, pronađi više s adresnom trakom
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Otvori web stranice koja najčešće koristiš jednim klikom u adresnu traku. Pronađi stvari brže pomoću { $searchEngineName } rezultata i tvoje povijesti pregledavanja.
-cfr-whatsnew-searchbar-body-generic = Otvori web stranice koja najčešće koristiš jednim klikom u adresnu traku. Pronađi stvari brže pomoću rezultata pretrage tvoje povijesti pregledavanja.
 cfr-whatsnew-searchbar-body-topsites = Sada, jednostavno odaberi adresnu traku i jedan okvir će se proširiti s poveznicama tvojih najkorištenijih stranica.
 cfr-whatsnew-searchbar-icon-alt-text = Ikona za povećalo
 
@@ -218,3 +214,24 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Vidi sve
     .accesskey = s
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = Stvaraj sigurne lozinke na jednostavan način
+cfr-whatsnew-lockwise-body = Teško je smisliti jedinstvene, sigurne lozinke za svaki račun. Prilikom stvaranja lozinke, odaberite polje za lozinku kako biste koristili sigurnu, od strane { -brand-shorter-name } generiranu lozinku.
+cfr-whatsnew-lockwise-icon-alt = { -lockwise-brand-short-name } ikona
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = Dobijajte upozorenja o ranjivim zaporkama
+cfr-whatsnew-passwords-body = Hakeri znaju da ljudi ponovno koriste iste lozinke. Ukoliko ste koristili istu lozinku na različitim stranicama, i jednoj od tih stranica ukradu podatke, vidjet ćete obavijest u { -lockwise-brand-short-name } da biste trebali izmijeniti svoju lozinku na stranicama koje ju koriste.
+cfr-whatsnew-passwords-icon-alt = Ikona ranjive lozinke
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = Prebacite sliku-u-slici na puni zaslon
+cfr-whatsnew-pip-fullscreen-body = Kada prebacite video u mali plutajući prozor, sada možete dvostrukim klikom povećati taj video na cijeli zaslon.
+cfr-whatsnew-pip-fullscreen-icon-alt = Ikona slike-u-slici

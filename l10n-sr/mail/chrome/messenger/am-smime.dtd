@@ -12,6 +12,16 @@
 <!ENTITY alwaysEncryptMessage.label "Обавезно (порука се може послати само ако сви примаоци имају сертификате)">
 <!ENTITY alwaysEncryptMessage.accesskey "з">
 <!ENTITY encryptionCert.message "Користи овај сертификат да шифрујеш и дешифрујеш поруке које примим:">
+
+<!ENTITY e2eTitle.label "Шифровање с краја на крај">
+<!ENTITY e2eIntro.description "Да бисте слали шифроване или дигитално потписане поруке, потребно је да подесите начин шифровања, било OpenPGP или S/MIME.">
+<!ENTITY e2eLearnMore.label "Сазнајте више">
+
+<!ENTITY e2eEnc.description "Без шифровања с краја на крај, садржај ваших порука је доступан вашем мејл провајдеру и могуће је праћење.">
+<!ENTITY e2eeReqWarning.description "Уколико вам је потребно шифровање, да бисте послали поруку морате имати јавни кључ или сертификат свих прималаца.">
+
+<!ENTITY e2eTechPref.description "Пожељни начин шифровања:">
+
 <!ENTITY digitalSign.certificate.button "Изабери…">
 <!ENTITY digitalSign.certificate.accesskey "И">
 <!ENTITY digitalSign.certificate_clear.button "Очисти">
@@ -31,7 +41,14 @@
 <!ENTITY manageDevices.label "Безбедносни уређаји">
 <!ENTITY manageDevices.accesskey "ј">
 
+
+
+
+
+
+
 <!-- Strings for the cert picker dialog -->
 <!ENTITY certPicker.title "Изабери сертификат">
 <!ENTITY certPicker.info  "Сертификат:">
 <!ENTITY certPicker.detailsLabel "Појединости изабраног сертификата:">
+

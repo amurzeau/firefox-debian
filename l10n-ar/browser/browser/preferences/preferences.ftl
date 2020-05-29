@@ -289,6 +289,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = استخدم { $app-name } (المبدئي)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] استعمل التطبيق المبدئي لنظام ماك‎أوإس
+            [windows] استعمل التطبيق المبدئي لنظام وِندوز
+           *[other] استعمل التطبيق المبدئي للنظام
+        }
 applications-use-other =
     .label = استخدم تطبيقًا آخر…
 applications-select-helper = اختر التّطبيق المساعد
@@ -310,6 +317,8 @@ applications-use-plugin-in =
     .label = استخدم { $plugin-name } (في { -brand-short-name })
 applications-preview-inapp =
     .label = عاين في { -brand-short-name }
+applications-open-inapp =
+    .label = افتح في { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -761,6 +770,9 @@ privacy-header = خصوصية المتصفح
 ## Privacy Section - Logins and Passwords
 
 logins-header = جلسات الولوج وكلمات السر
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = جلسات الولوج وكلمات السر
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = اطلب مني حفظ كلمات سر و بيانات ولوج مواقع الوِب
@@ -790,6 +802,19 @@ forms-master-pw-change =
     .accesskey = ر
 forms-master-pw-fips-title = أنت حاليًّا في وضع FIPS. يتطلّب FIPS كلمة سر غير فارغة.
 forms-master-pw-fips-desc = فشل تغيير كلمة السر
+
+## OS Authentication dialog
+
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message = أكِّد هويتك لإنشاء كلمة سر رئيسية.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = أدخِل معلومات ولوج وِندوز لتصنع كلمة سر رئيسية. يساعد هذا الأمر على حماية أمن حساباتك.
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = إنشاء كلمة سر رئيسية
+master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
 

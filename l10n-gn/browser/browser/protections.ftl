@@ -54,16 +54,23 @@ cryptominer-tab-title = Criptomineros
 cryptominer-tab-content = Umi criptominero oipurúva nde apopyvusu rembipurupyahu oguenohẽ hag̃ua viru ñandutiguáva. Umi ojuapykuerigua ipapapýva mbohapeha oipurupa ibatería, omombegue ne mohendaha ha ikatu ohupi electricidad repy. <a data-l10n-name="learn-more-link">Kuaave</a>
 protections-close-button =
     .aria-label = Mboty
+protections-close-button2 =
+    .aria-label = Mboty
+    .title = Mboty
 mobile-app-title = Ejoko ñemurã rapykuehoha hetave mba’e’okápe
 mobile-app-card-content = Eipuru kundahára oku’éva ñemo’ã ijeheguáva ndive ñemurã rapykuehoha rovake.
 mobile-app-links = Pe kundahára { -brand-product-name } <a data-l10n-name="android-mobile-inline-link">Android</a> peg̃uarã ha <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Anivéke nderesarái ne ñe’ẽñemígui
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Ñe’ẽñemi ñeñangareko
 lockwise-header-content = { -lockwise-brand-name } ombyaty iñe’ẽñemi ikundahápe tekorosãme.
 lockwise-header-content-logged-in = Embyaty ha embojuehe ne ñe’ẽñemi opaite ne mba’e’okápe tekorosãme.
 protection-report-view-logins-button = Ehecha tembiapo ñepyrũ
     .title = Eho jeikeha ñongatupyrépe
-lockwise-no-logins-content = Eguereko pe tembipuru’i <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> egueraha hag̃ua ne ñe’ẽñemi opa hendápe.
+protection-report-save-passwords-button = Eñongatu Ñe'ẽñemi
+    .title = Eñongatu Ñe'ẽñemi { -lockwise-brand-short-name }-pe
+protection-report-manage-passwords-button = Eñangareko Ñe’ẽñemíre
+    .title = Eñangareko Ñe’ẽñemíre { -lockwise-brand-short-name }-pe
 lockwise-mobile-app-title = Egueraha ne ñe’ẽñemi opa hendápe
 lockwise-no-logins-card-content = Eipuru ñe’ẽñemi eñongatupyre { -brand-short-name } oimeraẽva mba’e’okápe.
 lockwise-app-links = { -lockwise-brand-name } <a data-l10n-name="lockwise-android-inline-link">Android</a> peg̃uarã ha <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -75,6 +82,23 @@ lockwise-passwords-stored =
         [one] Ñe’ẽñemi mbyatypyre tekorosãme <a data-l10n-name="lockwise-how-it-works">Mba’éicha omba’apo</a>
        *[other] Ñe’ẽñemi mbyatypyre tekorosãme <a data-l10n-name="lockwise-how-it-works">Mba’éicha omba’apo</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] 1 ñe’ẽñemi oikekuaákuri peteĩ mba’ekuaarã ñembyaípe.
+       *[other] { $count } ñe’ẽñemi oikekuaákuri peteĩ mba’ekuaarã ñembyaípe.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] 1 ñe’ẽñemi oñembyaty tekorosãme.
+       *[other] Iñe’ẽñeminguéra oñembyaty tekorosãme.
+    }
+lockwise-how-it-works-link = Mba’éicha omba’apo
 turn-on-sync = Emyandy { -sync-brand-short-name }...
     .title = Eho ñembojuehe erohoryvévape
 manage-connected-devices = Mba'e'oka ñangarekoha…

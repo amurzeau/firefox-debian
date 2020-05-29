@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Kundaha ñemi)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Kundaha ñemi)
-       *[other] { $title } - { -brand-full-name } (Kundaha ñemi)
-    }
 urlbar-identity-button =
     .aria-label = Ehecha marandu ko tenda pegua
 
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Ehai sa'ive, ejuhuve: Eheka { $engineName } kundaharape rendaite guive.
 urlbar-search-tips-redirect-2 = Eñepyrũ eheka kundaharape rendápe ehecha hag̃ua { $engineName } ñe’ẽporã ha ikundaha rembiasakue.
-
-##
-
 
 ##
 
@@ -245,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = E
 identity-more-info-link-text =
     .label = Maranduve
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Momichĩ
+browser-window-maximize-button =
+    .tooltiptext = Mbotuicha
+browser-window-restore-down-button =
+    .tooltiptext = Embojevyjey Yvýgotyo
+browser-window-close-button =
+    .tooltiptext = Mboty
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Ta'angamýi hetápe guarãva:
+    .accesskey = C
+popup-select-microphone =
+    .value = Ñe'ẽatãha hetápe g̃uarãva:
+    .accesskey = M
+popup-all-windows-shared = Oñemosarambíta opaite ovetã ojehecháva mba'erechahápe.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = Eipurútarõ mbopya’eha F12 embojurujaraẽ DevTools ñanduti Mboguatahára poravorãme.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Ñe'ẽreka ýrõ kundaharape
+urlbar-placeholder =
+    .placeholder = Ñe'ẽreka ýrõ kundaharape
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Kundahára oĩ ñangarekoha okayguáva poguýpe
+urlbar-permissions-granted =
+    .tooltiptext = Oñeme’ẽ ko ñanduti rendápe ñemoneĩ jo’a.
+urlbar-switch-to-tab =
+    .value = Tendayképe jeguerova:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Jepysokue:
+urlbar-go-end-cap =
+    .tooltiptext = Kundaharape renda URL-pe jeho
+urlbar-page-action-button =
+    .tooltiptext = Kuatiarogue rembiapo
+urlbar-pocket-button =
+    .tooltiptext = Eñongatu { -pocket-brand-name }-pe

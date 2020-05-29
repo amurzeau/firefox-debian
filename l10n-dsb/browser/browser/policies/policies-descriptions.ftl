@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Kontrolu za standardnym wobglědowakom pśi sta
 policy-DownloadDirectory = Nastajśo a zastajśo ześěgnjeński zarědnik.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Blokěrowanje wopśimjeśa zmóžniś abo znjemóžniś a jo na žycenje zastajiś.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Encrypted Media Extension zmóžniś abo znjemóžniś a jo na žycenje zastajiś.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -76,13 +78,15 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Zestarjone zaźaržanj
 
 policy-LocalFileLinks = Wěstym websedłam dowóliś, na lokalne dataje wótkazaś.
 policy-NetworkPrediction = Seśowe pśedzacytanje (DNS-pśedzacytanje) zmóžniś abo znjemóžniś.
-policy-NewTabPage = Bok nowego rejtarka zmóžniś abo znjemóžniś.
+policy-NewTabPage = Bok nowego rejtarika zmóžniś abo znjemóžniś.
 policy-NoDefaultBookmarks = Napóranje standardnych cytańskich znamjenjow { -brand-short-name } znjemóžniś, a inteligentnych cytańskich znamjenjow (nejcesćej woglědane, tuchylne wobznamjenja). Glědajśo: Toś to pšawidło se jano wustatkujo, gaž jo pśed prědnym startom profila wužywaśo.
 policy-OfferToSaveLogins = Nastajenje wunuźiś, kótarež { -brand-short-name } zmóžnja, se skłaźone pśizjawjenja a gronidłaa spomnjeś. Ako true tak teke false se akceptěrujotej.
 policy-OfferToSaveLoginsDefault = Stajśo standardnu gódnotu, kótaraž { -brand-short-name } zmóžnja, se skłaźone pśizjawjenja a gronidłaa spomnjeś. Ako true tak teke false se akceptěrujotej.
 policy-OverrideFirstRunPage = Bok pśepisaś, kótaryž se pśi prědnom starśe pokazujo. Stajśo toś to pšawidło na prozne, jolic cośo toś ten bok znjemóžniś.
 policy-OverridePostUpdatePage = Bok Nowe funkcije a změny pó aktualizaciji pśepisaś. Stajśo toś to pšawidło na prozne, jolic cośo toś ten bok znjemóžniś.
 policy-PasswordManagerEnabled = Składowanje gronidłow do zastojnika gronidłow zmóžniś.
+# PDF.js and PDF should not be translated
+policy-PDFjs = PDF.js znjemóžniś abo konfigurěrowaś, zatwarjony PDF-wobglědowak w { -brand-short-name }.
 policy-Permissions2 = Pšawa za kameru, mikrofon, stojnišćo, powěźeńki a awtomatiske wótgraśe konfigurěrowaś.
 policy-PopupBlocking = Wěstym websedłam dowóliś, wuskokujuce wokna pó standarźe pokazaś.
 policy-Preferences = Gódnotu za pódsajźbu nastajenjow stajiś a zastajiś

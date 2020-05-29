@@ -310,7 +310,11 @@ main-context-menu-inspect-element =
     .label = Examinar l’element
     .accesskey = x
 main-context-menu-inspect-a11y-properties =
-    .label = Inspectar las proprietats d’accessibilitat
+    .label = Examinar las proprietats d’accessibilitat
 main-context-menu-eme-learn-more =
     .label = Ne saber mai suls DRM…
     .accesskey = D
+# Checkbox displayed at the bottom of the What's New panel, allowing users to 
+# enable/disable What's New notifications.
+cfr-whatsnew-panel-footer-checkbox =
+    .label = Me notificar de las novèlas foncionalitats
