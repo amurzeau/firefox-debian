@@ -1,17 +1,17 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python3
 
 import os
 import re
 import sys
-import httplib
-import urllib2
-import urlparse
+import http.client
+import urllib.request, urllib.error, urllib.parse
+import urllib.parse
 
 
 def main():
     product = sys.argv[1]
 
-    conn = httplib.HTTPSConnection('download.mozilla.org')
+    conn = http.client.HTTPSConnection('download.mozilla.org')
     conn.request('HEAD', '/?product=%s-latest&os=linux&lang=en-US' % product)
     res = conn.getresponse()
     assert res.status == 302
@@ -22,7 +22,7 @@ def main():
     else:
         variant = ''
 
-    u = urlparse.urlparse(location)
+    u = urllib.parse.urlparse(location)
     p = u.path.split('/')
     assert p[0] == ''
     assert p[1] == 'pub'
@@ -39,12 +39,12 @@ def main():
         url = location.replace('.tar.bz2', '.txt')
         assert url != location
 
-        f = urllib2.urlopen(url)
-        print version, ' '.join(l.rstrip() for l in f.readlines())
+        f = urllib.request.urlopen(url)
+        print(version, ' '.join(l.rstrip() for l in f.readlines()))
         f.close()
     elif p[3] == 'releases':
         version = p[4]
-        print version
+        print(version)
 
 if __name__ == '__main__':
     main()

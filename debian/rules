@@ -15,7 +15,7 @@ $(call lazy,DEB_BUILD_ARCH_BITS,$$(shell dpkg-architecture -qDEB_BUILD_ARCH_BITS
 $(call lazy,DEB_HOST_ARCH,$$(shell dpkg-architecture -qDEB_HOST_ARCH))
 $(call lazy,DEB_HOST_ARCH_ENDIAN,$$(shell dpkg-architecture -qDEB_HOST_ARCH_ENDIAN))
 
-PYTHON := python2.7 -B
+PYTHON := python3 -B
 
 PRODUCT := browser
 include debian/upstream.mk
@@ -184,7 +184,7 @@ $(call lazy,L10N_PACKAGES,$$(foreach lang,$$(L10N_LANGS),$($(PRODUCT))-l10n-$$(c
 $(call lazy,L10N_PACKAGES_DEPS,$$(shell echo $$(L10N_PACKAGES) | sed 's/ /, /g'))
 
 debian/l10n/$(PRODUCT)-l10n.control: %: %.in
-	$(PYTHON) debian/l10n/gen $(L10N_LANGS) > $@
+	PYTHONIOENCODING=utf-8 $(PYTHON) debian/l10n/gen $(L10N_LANGS) > $@
 
 $(call lazy,LIBAVCODEC,$$(shell awk -F\" '/libavcodec\.so/ { sub(/libavcodec\.so\./,"", $$$$2); p = "libavcodec" $$$$2 " | libavcodec-extra" $$$$2; if (d) { d = d " | " p } else { d = p } } END { print d }' dom/media/platforms/ffmpeg/FFmpegRuntimeLinker.cpp))
 

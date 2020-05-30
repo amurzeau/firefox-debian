@@ -5,13 +5,11 @@ import os
 import re
 import sys
 import codecs
-sys.stdout = codecs.getwriter('utf8')(sys.stdout)
-
 from xml import sax
 
 class Iso3166(sax.handler.ContentHandler, dict):
   def startElement(self, name, attrs):
-    if attrs.has_key('alpha_2_code'):
+    if 'alpha_2_code' in attrs:
       self[attrs['alpha_2_code'].lower()] = attrs['name']
 
 class Iso639(sax.handler.ContentHandler, dict):
@@ -110,15 +108,15 @@ for code in sys.argv[1:]:
     if ',' in country:
       country = country[:country.index(',')]
     str += ' (' + country + ')'
-  print
-  print '%define L10N_LANG', code.lower()
-  print '%define L10N_LANGUAGE', str
+  print()
+  print('%define L10N_LANG', code.lower())
+  print('%define L10N_LANGUAGE', str)
   if code.lower() in recommends:
-    print '%define L10N_RECOMMENDS', recommends[code.lower()]
+    print('%define L10N_RECOMMENDS', recommends[code.lower()])
   else:
-    print '%undef L10N_RECOMMENDS'
+    print('%undef L10N_RECOMMENDS')
   if code.lower() in ICEWEASEL_L10N:
-    print '%define L10N_TRANSITION 1'
+    print('%define L10N_TRANSITION 1')
   else:
-    print '%undef L10N_TRANSITION'
-  print '%include @PRODUCT@-l10n.control.in'
+    print('%undef L10N_TRANSITION')
+  print('%include @PRODUCT@-l10n.control.in')
