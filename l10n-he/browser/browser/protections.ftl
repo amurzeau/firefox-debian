@@ -35,6 +35,10 @@ protection-report-page-title = הגנות פרטיות
 protection-report-content-title = הגנות פרטיות
 etp-card-title = הגנת מעקב מתקדמת
 etp-card-content = רכיבי מעקב עוקבים אחריך ברשת כדי לאסוף מידע על הרגלי הגלישה ותחומי העניין שלך. { -brand-short-name } חוסם הרבה מרכיבי המעקב האלו, לרבות תסריטים זדוניים אחרים.
+protection-report-page-summary = ‏{ -brand-short-name } יכול להגן על הפרטיות שלך מאחורי הקלעים בזמן הגלישה. להלן תקציר מותאם אישית של הגנות אלה, לרבות כלים המאפשרים להיות בשליטה על האבטחה המקוונת שלך.
+etp-card-title-always = הגנת מעקב מתקדמת: תמיד פעילה
+etp-card-title-custom-not-blocking = הגנת מעקב מתקדמת: כבויה
+etp-card-content-summary = כשחברות בלתי ידועות מנסות לעקוב אחריך בסתר ברחבי הרשת, { -brand-short-name } חוסם רבים מהם באופן אוטומטי.
 protection-report-etp-card-content-custom-not-blocking = כל ההגנות כבויות כרגע. ניתן לבחור באילו רכיבי מעקב יש לחסום על־ידי ניהול הגדרות ההגנות של { -brand-short-name }.
 protection-report-manage-protections = ניהול הגדרות
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -53,15 +57,23 @@ cryptominer-tab-title = כורי מטבעות דיגיטליים
 cryptominer-tab-content = כורי מטבעות דיגיטליים משתמשים בכוח העיבוד של המערכת שלך כדי לכרות כסף דיגיטלי. תסריטי כריית מטבעות מרוקנים את הסוללה שלך, מאטים את המחשב שלך ומגדילים את חשבון החשמל שלך. <a data-l10n-name="learn-more-link">מידע נוסף</a>
 protections-close-button =
     .aria-label = סגירה
+protections-close-button2 =
+    .aria-label = סגירה
+    .title = סגירה
 mobile-app-title = חסימת רכיבי מעקב של פרסומות ביותר מכשירים
 mobile-app-card-content = ניתן להשתמש בדפדפן הנייד עם הגנה מובנית מפני מעקב של פרסומות.
 mobile-app-links = דפדפן { -brand-product-name } עבור <a data-l10n-name="android-mobile-inline-link">Android</a> ו־<a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = אף ססמה לא תלך עוד לאיבוד
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = ניהול ססמאות
 lockwise-header-content = { -lockwise-brand-name } מאחסן באופן מאובטח את הססמאות שלך בדפדפן.
 lockwise-header-content-logged-in = אחסון וסנכרון הססמאות שלך באופן מאובטח לכל המכשירים שלך.
 protection-report-view-logins-button = הצגת כניסות
     .title = מעבר לכניסות השמורות
+protection-report-save-passwords-button = שמירת ססמאות
+    .title = שמירת ססמאות ב־{ -lockwise-brand-short-name }
+protection-report-manage-passwords-button = ניהול ססמאות
+    .title = ניהול ססמאות ב־{ -lockwise-brand-short-name }
 lockwise-mobile-app-title = לקחת את הססמאות שלך לכל מקום
 lockwise-no-logins-card-content = ניתן להשתמש בססמאות השמורות ב־{ -brand-short-name } בכל מכשיר.
 lockwise-app-links = { -lockwise-brand-name } עבור <a data-l10n-name="lockwise-android-inline-link">Android</a> ו־<a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -73,6 +85,23 @@ lockwise-passwords-stored =
         [one] ססמאות מאוחסנות באופן מאובטח <a data-l10n-name="lockwise-how-it-works">איך זה עובד</a>
        *[other] ססמאות מאוחסנות באופן מאובטח <a data-l10n-name="lockwise-how-it-works">איך זה עובד</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] יתכן שססמה אחת נחשפה בדליפת נתונים.
+       *[other] יתכן ש־{ $count } ססמאות נחשפו בדליפת נתונים.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] ססמה אחת מאוחסנת בצורה מאובטחת.
+       *[other] הססמאות שלך מאוחסנות בצורה מאובטחת.
+    }
+lockwise-how-it-works-link = איך זה עובד
 turn-on-sync = הפעלת { -sync-brand-short-name }…
     .title = מעבר להעדפות סנכרון
 manage-connected-devices = ניהול מכשירים…
@@ -84,16 +113,49 @@ lockwise-connected-device-status =
        *[other] מחובר ל־{ $count } מכשירים
     }
 monitor-link = איך זה עובד
+monitor-header-content-no-account = ניתן לבדוק את { -monitor-brand-name } כדי לראות אם היית חלק מדליפת נתונים מוכרת, ולקבל התרעות לגבי דליפות חדשות.
+monitor-header-content-signed-in = { -monitor-brand-name } מזהיר אותך אם המידע שלך נחשף בדליפת נתונים מוכרת.
+monitor-sign-up = הרשמה להתרעות על דליפות
 auto-scan = נסרק באופן אוטומטי היום
+monitor-emails-tooltip =
+    .title = הצגת כתובות דוא״ל מנוטרות ב־{ -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = הצגת דליפות נתונים מוכרות ב־{ -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = הצגת ססמאות שנחשפו ב־{ -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-monitored-emails =
     { $count ->
-        [one] כתובת דוא״ל במעקב
-       *[other] כתובות דוא״ל במעקב
+        [one] כתובת דוא״ל מנוטרות
+       *[other] כתובות דוא״ל מנוטרות
+    }
+# This string is displayed after a large numeral that indicates the total number
+# of known data breaches. Don’t add $count to
+# your localization, because it would result in the number showing twice.
+info-known-breaches-found =
+    { $count ->
+        [one] דליפת נתונים מוכרת חשפה מידע עליך
+       *[other] דליפות נתונים מוכרות חשפו מידע עליך
+    }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords. Don’t add $count to
+# your localization, because it would result in the number showing twice.
+info-exposed-passwords-found =
+    { $count ->
+        [one] ססמה אחת נחשפה בכל הדליפות
+       *[other] ססמאות נחשפו בכל הדליפות
     }
 full-report-link = הצגת הדוח המלא ב־<a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>
+# This string is displayed after a large numeral that indicates the total number
+# of saved logins which may have been exposed. Don’t add $count to
+# your localization, because it would result in the number showing twice.
+password-warning =
+    { $count ->
+        [one] יתכן שכניסה שמורה אחת נחשפה בדליפת נתונים. מומלץ לשנות את הססמה הזאת לטובת אבטחה מקוונת טובה יותר. <a data-l10n-name="lockwise-link"> הצגת כניסות שמורות</a>
+       *[other] יתכן שכניסות שמורות נחשפו בדליפת נתונים. מומלץ לשנות את הססמאות האלו לטובת אבטחה מקוונת טובה יותר. <a data-l10n-name="lockwise-link"> הצגת כניסות שמורות</a>
+    }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

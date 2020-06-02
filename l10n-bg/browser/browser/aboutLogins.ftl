@@ -24,8 +24,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Отваря менюто
-# This menuitem is only visible on Windows
-menu-menuitem-import = Внасяне на пароли…
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Внасяне от друг мрежов четец…
 menu-menuitem-preferences =
@@ -49,7 +47,7 @@ login-list-count =
 login-list-sort-label-text = Подреждане по:
 login-list-name-option = Име (A-Z)
 login-list-name-reverse-option = Име (Z-A)
-login-list-breached-option = Взломени страници
+about-logins-login-list-alerts-option = Предупреждения
 login-list-last-changed-option = Последна промяна
 login-list-last-used-option = Последно използване
 login-list-intro-title = Няма намерени регистрации
@@ -61,6 +59,8 @@ login-list-item-subtitle-new-login = Въведете данните за вхо
 login-list-item-subtitle-missing-username = (без потребителско име)
 about-logins-list-item-breach-icon =
     .title = Взломена страница
+about-logins-list-item-vulnerable-password-icon =
+    .title = Уязвима парола
 
 ## Introduction screen
 
@@ -96,6 +96,30 @@ login-item-cancel-button = Отказ
 login-item-time-changed = Последна промяна: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Създадване: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Последна употреба: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
+
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen by attempting to edit a login in about:logins
+about-logins-edit-login-os-auth-dialog-message = Потвърдете самоличността си, за да редактирате запазените данни за вход.
+# This message can be seen by attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = промени данни за вход
+# This message can be seen by attempting to reveal a password in about:logins
+about-logins-reveal-password-os-auth-dialog-message = Потвърдете самоличността си, за да разкриете запазената парола.
+# This message can be seen by attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = разкрие запазена парола
+# This message can be seen by attempting to copy a password in about:logins
+about-logins-copy-password-os-auth-dialog-message = Потвърдете самоличността си, за да копирате запазената парола.
+# This message can be seen by attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = копира запазена парола
 
 ## Master Password notification
 
@@ -136,10 +160,21 @@ confirm-discard-changes-dialog-confirm-button = Отхвърляне
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Пробив в страница
 breach-alert-text = Паролите са изтекли или откраднати от този уебсайт, откакто последно сте обновили данните си за вход. Променете паролата си, за да защитите сметката си.
-breach-alert-link = Научете повече за този пробив.
-breach-alert-dismiss =
-    .title = Затваряне на предупреждението
+about-logins-breach-alert-date = Пробивът е станал на { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Отидете на { $hostname }
+about-logins-breach-alert-learn-more-link = Научете повече
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Уязвима парола
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Към { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Научете повече
 
 ## Error Messages
 

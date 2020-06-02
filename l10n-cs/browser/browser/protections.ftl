@@ -68,16 +68,23 @@ cryptominer-tab-title = Těžba kryptoměn
 cryptominer-tab-content = Těžba kryptoměn využívá výpočetní výkon vašeho počítače k získávání digitálních měn. Běžící skripty vybíjí vaši baterii a zpomalují váš počítač. <a data-l10n-name="learn-more-link">Zjistit více</a>
 protections-close-button =
     .aria-label = Zavřít
+protections-close-button2 =
+    .aria-label = Zavřít
+    .title = Zavřít
 mobile-app-title = Blokování sledujících reklam napříč zařízeními
 mobile-app-card-content = Používejte mobilní prohlížeč s vestavěnou ochranou proti sledujícím reklamám.
 mobile-app-links = Prohlížeč { -brand-product-name } pro <a data-l10n-name="android-mobile-inline-link">Android</a> a <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Už žádná zapomenutá hesla
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Správce hesel
 lockwise-header-content = { -lockwise-brand-name } bezpečně uchovává vaše hesla ve vašem prohlížeči.
 lockwise-header-content-logged-in = Bezpečně uchovává a synchronizuje vaše hesla na všech vašich zařízeních.
 protection-report-view-logins-button = Zobrazit přihlašovací údaje
     .title = Zobrazit uložené přihlašovací údaje
-lockwise-no-logins-content = Stáhněte si aplikaci <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> a mějte svá hesla všude s sebou.
+protection-report-save-passwords-button = Uložit hesla
+    .title = Uložit hesla do { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Správa hesel
+    .title = Spravovat hesla v { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Vezměte si svá hesla všude s sebou
 lockwise-no-logins-card-content = Používejte hesla uložená ve { -brand-short-name(case: "loc") } na jakémkoliv zařízení.
 lockwise-app-links = { -lockwise-brand-name } pro <a data-l10n-name="lockwise-android-inline-link">Android</a> a <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -85,6 +92,24 @@ lockwise-app-links = { -lockwise-brand-name } pro <a data-l10n-name="lockwise-an
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 lockwise-passwords-stored = Bezpečně uložené přihlašovací údaje <a data-l10n-name="lockwise-how-it-works">Jak to funguje</a>
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] Jedno heslo mohlo být vyzrazeno v některém z úniků dat.
+        [few] { $count } hesla mohla být vyzrazena v některém z úniků dat.
+       *[other] { $count } hesel mohlo být vyzrazeno v některém z úniků dat.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] Vaše heslo je bezpečně uloženo.
+       *[other] Vaše hesla jsou bezpečně uložena.
+    }
+lockwise-how-it-works-link = Jak to funguje
 turn-on-sync = Zapnout { -sync-brand-short-name(case: "acc") }…
     .title = Otevře nastavení synchronizace
 manage-connected-devices = Správa zařízení…

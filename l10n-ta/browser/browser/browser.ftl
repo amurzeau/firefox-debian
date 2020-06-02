@@ -2,66 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (கமுக்க உலாவல்)
-       *[default] { -brand-full-name }
-    }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (கமுக்க உலாவல்)
-       *[default] { $title } - { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (கமுக்க உலாவல்)
-       *[other] { $title } - { -brand-full-name } (கமுக்க உலாவல்)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = தள தகவலினைப் பார்
 
@@ -226,3 +166,41 @@ identity-enable-mixed-content-blocking =
     .accesskey = E
 identity-more-info-link-text =
     .label = கூடுதல் தகவலுக்கு...
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = குறைத்தல்
+browser-window-close-button =
+    .tooltiptext = மூடுக
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = பகிர வேண்டிய படக்கருவி:
+    .accesskey = C
+popup-select-microphone =
+    .value = பகிர வேண்டிய ஒலிவாங்கி:
+    .accesskey = M
+popup-all-windows-shared = திரையில் பார்வையிலுள்ள அனைத்து சாளரங்களும் பகிரப்படும்.
+
+## DevTools F12 popup
+
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = சொல்லைத் தேடுங்கள் அல்லது முகவரியை உள்ளிடுங்கள்
+urlbar-placeholder =
+    .placeholder = சொல்லைத் தேடுங்கள் அல்லது முகவரியை உள்ளிடுங்கள்
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = தொலை கட்டுப்பாட்டில் உலாவி
+urlbar-switch-to-tab =
+    .value = கீற்றுக்கு மாற்று:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = நீட்சிகள்:
+urlbar-go-end-cap =
+    .tooltiptext = இடப் பட்டையில் முகவரிக்கு செல்லவும்
+urlbar-page-action-button =
+    .tooltiptext = பக்க செயல்கள்

@@ -37,6 +37,12 @@ protection-report-page-title = Privatumo apsaugos
 protection-report-content-title = Privatumo apsaugos
 etp-card-title = Išplėsta apsauga nuo stebėjimo
 etp-card-content = Stebėjimo elementai seka jus internete, siekdami surinkti informacijos apie jūsų naršymo įpročius ir pomėgius. „{ -brand-short-name }“ blokuoja daugelį šių elementų ir kitų kenksmingų scenarijų.
+protection-report-webpage-title = Apsaugos skydelis
+protection-report-page-content-title = Apsaugos skydelis
+protection-report-page-summary = „{ -brand-short-name }“ gali saugoti jūsų privatumą jums naršant. Čia pateikiama asmeninė šios apsaugos santrauka, kartu su įrankiais, kurie leidžia tai valdyti.
+etp-card-title-always = Išplėsta apsauga nuo stebėjimo: visada įjungta
+etp-card-title-custom-not-blocking = Išplėsta apsauga nuo stebėjimo: išjungta
+etp-card-content-summary = Kai nežinomos kompanijos slaptai bando sekti jus internete, „{ -brand-short-name }“ daugumą jų blokuoja automatiškai.
 protection-report-etp-card-content-custom-not-blocking = Šiuo metu visos apsaugos yra išjungtos. Pasirinkite, ką norite blokuoti, per savo „{ -brand-short-name }“ apsaugų nuostatas.
 protection-report-manage-protections = Keisti nuostatas
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -56,15 +62,23 @@ cryptominer-tab-title = Kriptovaliutų kasėjai
 cryptominer-tab-content = Kriptovaliutų kasėjai naudoja jūsų kompiuterio resursus, kad iškastų skaitmeninių pinigų. Šis procesas eikvoja jūsų bateriją, lėtina kompiuterio veikimą, ir gali padidinti sąskaitą už elektrą. <a data-l10n-name="learn-more-link">Sužinoti daugiau</a>
 protections-close-button =
     .aria-label = Užverti
+protections-close-button2 =
+    .aria-label = Užverti
+    .title = Užverti
 mobile-app-title = Blokuokite reklaminius elementus ir kituose įrenginiuose
 mobile-app-card-content = Naudokite mobiliąją naršyklę su integruota apsauga nuo reklaminių stebėjimo elementų.
 mobile-app-links = „{ -brand-product-name }“ naršyklė, skirta <a data-l10n-name="android-mobile-inline-link">„Android“</a> ir <a data-l10n-name="ios-mobile-inline-link">„iOS“</a>
 lockwise-title = Daugiau nepamirškite nė vieno slaptažodžio
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Slaptažodžių tvarkymas
 lockwise-header-content = „{ -lockwise-brand-name }“ saugiai įrašo slaptažodžius į jūsų naršyklę.
 lockwise-header-content-logged-in = Saugiai laikykite ir sinchronizuokite slaptažodžius tarp visų savo įrenginių.
 protection-report-view-logins-button = Peržiūrėti prisijungimus
     .title = Eiti į įrašytus prisijungimus
+protection-report-save-passwords-button = Laikyti slaptažodžius
+    .title = Laikyti slaptažodžius su „{ -lockwise-brand-short-name }“
+protection-report-manage-passwords-button = Tvarkyti slaptažodžius
+    .title = Tvarkyti slaptažodžius su „{ -lockwise-brand-short-name }“
 lockwise-mobile-app-title = Turėkite savo slaptažodžius visur
 lockwise-no-logins-card-content = Slaptažodžius, esančius „{ -brand-short-name }“, galite naudoti bet kuriame įrenginyje.
 lockwise-app-links = „{ -lockwise-brand-name }“, skirta „<a data-l10n-name="lockwise-android-inline-link">„Android“</a> ir <a data-l10n-name="lockwise-ios-inline-link">„iOS“</a>
@@ -77,6 +91,25 @@ lockwise-passwords-stored =
         [few] slaptažodžiai įrašyti saugiai <a data-l10n-name="lockwise-how-it-works">Kaip tai veikia</a>
        *[other] slaptažodžių įrašyti saugiai <a data-l10n-name="lockwise-how-it-works">Kaip tai veikia</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] 1 slaptažodis galėjo patekti tarp nutekėjusių duomenų.
+        [few] { $count } slaptažodžiai galėjo patekti tarp nutekėjusių duomenų.
+       *[other] { $count } slaptažodžių galėjo patekti tarp nutekėjusių duomenų.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] 1 saugiai laikomas slaptažodis.
+        [few] Jūsų slaptažodžiai laikomi saugiai.
+       *[other] Jūsų slaptažodžiai laikomi saugiai.
+    }
+lockwise-how-it-works-link = Kaip tai veikia
 turn-on-sync = Įjungti „{ -sync-brand-short-name }“…
     .title = Eiti į sinchronizavimo nuostatas
 manage-connected-devices = Tvarkyti įrenginius…
@@ -94,6 +127,12 @@ monitor-header-content-no-account = „{ -monitor-brand-name }“ pateikia infor
 monitor-header-content-signed-in = „{ -monitor-brand-name }“ perspėja, kai jūsų duomenys pasirodo žinomuose duomenų nutekėjimuose.
 monitor-sign-up = Gauti įspėjimus apie duomenų nutekėjimus
 auto-scan = Automatiškai skenuota šiandien
+monitor-emails-tooltip =
+    .title = Peržiūrėti stebimus el. pašto adresus per „{ -monitor-brand-short-name }“
+monitor-breaches-tooltip =
+    .title = Peržiūrėti žinomus duomenų nutekėjimus per „{ -monitor-brand-short-name }“
+monitor-passwords-tooltip =
+    .title = Peržiūrėti nutekėjusius slaptažodžius per „{ -monitor-brand-short-name }“
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

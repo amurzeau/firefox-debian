@@ -232,6 +232,10 @@ translate-attribution = Çeviriler: <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = İstisnalar…
     .accesskey = s
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Tarihleri, saatleri, sayıları ve ölçüleri biçimlendirmek için “{ $localeName }” işletim sistemi ayarlarımı kullan
 check-user-spelling =
     .label = Yazarken yazım denetimi yap
     .accesskey = t
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = { $app-name } kullanılsın (varsayılan)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Varsayılan macOS uygulamasını kullan
+            [windows] Varsayılan Windows uygulamasını kullan
+           *[other] Varsayılan sistem uygulamasını kullan
+        }
 applications-use-other =
     .label = Başkasını kullan…
 applications-select-helper = Yardımcı uygulamayı seçin
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = { $plugin-name } kullan ({ -brand-short-name } içinde)
 applications-preview-inapp =
     .label = { -brand-short-name } ile ön izleme yap
+applications-open-inapp =
+    .label = { -brand-short-name } ile aç
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -752,6 +769,9 @@ privacy-header = Tarayıcı gizliliği
 ## Privacy Section - Logins and Passwords
 
 logins-header = Hesaplar ve parolalar
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Hesaplar ve parolalar
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Sitelerdeki kullanıcı adı ve parolalarımı kaydetmeyi öner
@@ -786,6 +806,8 @@ forms-master-pw-fips-desc = Parola değiştirme başarısız
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Ana parola oluşturmak için kimliğinizi doğrulayın.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Ana parola oluşturmak için Windows hesap bilgilerinizi girin. Bu sayede hesaplarınızı daha güvenli bir şekilde koruyabiliriz.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -863,6 +885,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Siteler arası takipçiler
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Siteler arası takipçiler ve sosyal medya takipçileri
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Siteler arası takipçiler ve sosyal medya takipçileri, kalan çerezleri izole et
 sitedata-option-block-unvisited =
     .label = Ziyaret etmediğim sitelerden gelen çerezler
 sitedata-option-block-all-third-party =
@@ -939,6 +963,7 @@ content-blocking-etp-strict-desc = Daha güçlü koruma, ama bazı siteler ve i�
 content-blocking-etp-custom-desc = Hangi takipçilerin ve betiklerin engelleneceğini seçin.
 content-blocking-private-windows = Gizli pencelerde takip amaçlı içerikler
 content-blocking-cross-site-tracking-cookies = Siteler arası takip çerezleri
+content-blocking-cross-site-tracking-cookies-plus-isolate = Siteler arası takipçiler ve takip çerezleri, kalan çerezleri izole et
 content-blocking-social-media-trackers = Sosyal medya takipçileri
 content-blocking-all-cookies = Tüm çerezler
 content-blocking-unvisited-cookies = Ziyaret etmediğim sitelerden gelen çerezler
@@ -951,6 +976,7 @@ content-blocking-warning-title = Dikkat!
 content-blocking-warning-description = İçerikleri engellemek bazı sitelerin bozulmasına neden olabilir. Güvendiğiniz sitelerde engellemeyi kolayca kapatabilirsiniz.
 content-blocking-learn-how = Engellemeyi kapatmayı öğrenin
 content-blocking-etp-warning-description = Takipçileri engellemek bazı sitelerin düzgün çalışmamasına yol açabilir. Takipçi içeren bir sayfanın tüm içeriğini yüklemek için sayfayı tazeleyin.
+content-blocking-and-isolating-etp-warning-description = Takipçileri engellemek ve çerezleri izole etmek bazı sitelerin düzgün çalışmamasına yol açabilir. Takipçi içeren bir sayfanın tüm içeriğini yüklemek için sayfayı tazeleyin.
 content-blocking-warning-learn-how = Nasıl yapılacağını öğrenin
 content-blocking-reload-description = Bu değişiklikleri uygulamak için sekmelerinizi tazelemeniz gerekiyor.
 content-blocking-reload-tabs-button =

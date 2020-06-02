@@ -220,6 +220,10 @@ translate-attribution = Dịch bởi <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Ngoại lệ...
     .accesskey = N
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Sử dụng các cài đặt hệ điều hành của bạn cho nhóm “{ $localeName }” để định dạng ngày, giờ, số và số đo.
 check-user-spelling =
     .label = Kiểm tra chính tả khi bạn gõ
     .accesskey = t
@@ -268,6 +272,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Dùng { $app-name } (mặc định)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Sử dụng ứng dụng mặc định macOS
+            [windows] Sử dụng ứng dụng mặc định Windows
+           *[other] Sử dụng ứng dụng mặc định hệ thống
+        }
 applications-use-other =
     .label = Dùng chương trình khác…
 applications-select-helper = Chọn ứng dụng trợ giúp
@@ -293,6 +304,8 @@ applications-use-plugin-in =
     .label = Dùng { $plugin-name } (trong { -brand-short-name })
 applications-preview-inapp =
     .label = Xem trước trong { -brand-short-name }
+applications-open-inapp =
+    .label = Mở bằng { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -306,12 +319,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -736,6 +753,9 @@ privacy-header = Duyệt web riêng tư
 ## Privacy Section - Logins and Passwords
 
 logins-header = Đăng nhập & mật khẩu
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Đăng nhập & mật khẩu
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Hỏi để lưu lại thông tin đăng nhập và mật khẩu cho trang web
@@ -758,18 +778,20 @@ forms-saved-logins =
     .label = Đăng nhập đã lưu…
     .accesskey = L
 forms-master-pw-use =
-    .label = Dùng một mật khẩu chính
+    .label = Dùng mật khẩu chính
     .accesskey = U
 forms-master-pw-change =
     .label = Thay đổi mật khẩu chính…
     .accesskey = M
-forms-master-pw-fips-title = Bạn đang ở chế độ FIPS. FIPS yêu cầu Mật khẩu Chính không được để trống.
+forms-master-pw-fips-title = Bạn đang ở chế độ FIPS. FIPS yêu cầu mật khẩu chính không được để trống.
 forms-master-pw-fips-desc = Thay đổi mật khẩu không thành công
 
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Xác nhận danh tính của bạn để tạo mật khẩu chính.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Để tạo mật khẩu chính, hãy nhập thông tin đăng nhập Windows của bạn. Điều này giúp bảo vệ tính bảo mật của tài khoản của bạn.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These

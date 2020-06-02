@@ -232,6 +232,10 @@ translate-attribution = Sivujen kääntäjä <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Poikkeukset…
     .accesskey = i
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Käytä käyttöjärjestelmän asetuksia alueelle ”{ $localeName }” muotoilemaan päivämäärät, kellonajat, luvut ja mittayksiköt.
 check-user-spelling =
     .label = Oikolue käyttäjän kirjoitukset
     .accesskey = l
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Käytä ohjelmaa { $app-name } (oletus)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Käytä macOS:n oletussovellusta
+            [windows] Käytä Windowsin oletussovellusta
+           *[other] Käytä järjestelmän oletussovellusta
+        }
 applications-use-other =
     .label = Valitse uusi apuohjelma…
 applications-select-helper = Valitse uusi apuohjelma
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = Käytä liitännäistä { $plugin-name } (ohjelmassa { -brand-short-name })
 applications-preview-inapp =
     .label = Esikatsele { -brand-short-name }issa
+applications-open-inapp =
+    .label = Avaa { -brand-short-name(case: "inessive") }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -332,7 +349,7 @@ play-drm-content =
     .label = Toista DRM-suojattua sisältöä
     .accesskey = D
 play-drm-content-learn-more = Lue lisää
-update-application-title = Selaimen päivitykset
+update-application-title = { -brand-short-name }in päivitykset
 update-application-description = Pidä { -brand-short-name } ajan tasalla parhaan suorituskyvyn, vakauden ja turvallisuuden vuoksi.
 update-application-version = Versio { $version } <a data-l10n-name="learn-more">Mitä uutta</a>
 update-history =
@@ -752,6 +769,9 @@ privacy-header = Selaimen tietosuoja
 ## Privacy Section - Logins and Passwords
 
 logins-header = Käyttäjätunnukset ja salasanat
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Käyttäjätunnukset ja salasanat
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Ehdota sivustojen käyttäjätunnusten ja salasanojen tallentamista
@@ -1126,13 +1146,13 @@ space-alert-over-5gb-pref-button =
         }
 space-alert-over-5gb-message =
     { PLATFORM() ->
-        [windows] { -brand-short-name }ilta loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit tyhjentää sivustotiedot avaamalla Asetukset > Tietosuoja ja turvallisuus > Evästeet ja sivustotiedot.
-       *[other] { -brand-short-name }ilta loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit tyhjentää sivustotiedot avaamalla Asetukset > Tietosuoja ja turvallisuus > Evästeet ja sivustotiedot.
+        [windows] { -brand-short-name(case: "ablative") } loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit tyhjentää sivustotiedot avaamalla Asetukset > Tietosuoja ja turvallisuus > Evästeet ja sivustotiedot.
+       *[other] { -brand-short-name(case: "ablative") } loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit tyhjentää sivustotiedot avaamalla Asetukset > Tietosuoja ja turvallisuus > Evästeet ja sivustotiedot.
     }
 space-alert-under-5gb-ok-button =
     .label = Selvä
     .accesskey = S
-space-alert-under-5gb-message = { -brand-short-name }ilta loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit lukea levyn käytön optimoimisesta selaamisen sujuvoittamiseksi painamalla ”Lue lisää”.
+space-alert-under-5gb-message = { -brand-short-name(case: "ablative") } loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit lukea levyn käytön optimoimisesta selaamisen sujuvoittamiseksi painamalla ”Lue lisää”.
 
 ## The following strings are used in the Download section of settings
 

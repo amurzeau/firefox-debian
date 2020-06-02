@@ -37,6 +37,9 @@ protection-report-page-title = Zaštite privatnosti
 protection-report-content-title = Zaštite privatnosti
 etp-card-title = Poboljšana zaštita od praćenja
 etp-card-content = Programi za praćenje prate tvoje radnje prilikom pregledavanja interneta i služe za prikupljanje podataka o tvojim navikama i interesima. { -brand-short-name } blokira mnoge takve programe kao i druge zlonamjerne skripte.
+etp-card-title-always = Poboljšana zaštita od praćenja: uvijek uključeno
+etp-card-title-custom-not-blocking = Poboljšana zaštita od praćenja: ISKLJUČENO
+etp-card-content-summary = Kad te nepoznate kompanije pokušaju potajno pratiti na internetu, { -brand-short-name } automatski zaustavlja mnoge od njih.
 protection-report-etp-card-content-custom-not-blocking = Sve zaštite su trenutačno isključene. Upravljaj programima za praćenje koje želiš blokirati u { -brand-short-name } postavkama zaštite.
 protection-report-manage-protections = Upravljaj postavkama
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -56,15 +59,23 @@ cryptominer-tab-title = Kripto rudari
 cryptominer-tab-content = Krupto rudari koriste računalnu snagu tvog sustava kako bi rudarili digitalni novac. Skripte za kripto rudarenje troše bateriju, usporavaju računalo i povećavaju račun za struju. <a data-l10n-name="learn-more-link">Saznaj više</a>
 protections-close-button =
     .aria-label = Zatvori
+protections-close-button2 =
+    .aria-label = Zatvori
+    .title = Zatvori
 mobile-app-title = Blokiraj oglase koji te prate na više uređaja
 mobile-app-card-content = Koristi mobilni preglednik s ugrađenom zaštitom od praćenja.
 mobile-app-links = { -brand-product-name } preglednik za <a data-l10n-name="android-mobile-inline-link">Android</a> i <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Ne zaboravi lozinku nikad više
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Upravljanje lozinkama
 lockwise-header-content = { -lockwise-brand-name } sigurno sprema tvoje lozinke u pregledniku.
 lockwise-header-content-logged-in = Spremaj i sinkroniziraj lozinke na svim svojim uređajima na siguran način.
 protection-report-view-logins-button = Prikaži prijave
     .title = Idi na spremljene prijave
+protection-report-save-passwords-button = Spremi lozinke
+    .title = Spremi lozinke u { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Upravljanje lozinkama
+    .title = Upravljanje lozinkama s { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Ponesi svoje lozinke sa sobom
 lockwise-no-logins-card-content = Koristi lozinke koje su spremljene u { -brand-short-name }u na bilo kojem uređaju.
 lockwise-app-links = { -lockwise-brand-name } za <a data-l10n-name="lockwise-android-inline-link">Android</a> i <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -77,6 +88,25 @@ lockwise-passwords-stored =
         [few] lozinke sigurno spremljene <a data-l10n-name="lockwise-how-it-works">Kako funkcionira</a>
        *[other] lozinki sigurno spremljeno <a data-l10n-name="lockwise-how-it-works">Kako funkcionira</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] { $count } lozinka je možda izložena curenju podataka.
+        [few] { $count } lozinke su možda izložene curenju podataka.
+       *[other] { $count } lozinki je možda izloženo curenju podataka.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] $count lozinka je sigurno pohranjena.
+        [few] $count lozinke su sigurno pohranjene.
+       *[other] $count lozinki je sigurno pohranjeno.
+    }
+lockwise-how-it-works-link = Kako ovo funkcionira
 turn-on-sync = Uključi { -sync-brand-short-name } …
     .title = Prijeđi na postavke sinkronizacije
 manage-connected-devices = Upravljaj uređajima …
@@ -94,6 +124,12 @@ monitor-header-content-no-account = Koristi { -monitor-brand-name } i provjeri, 
 monitor-header-content-signed-in = { -monitor-brand-name } te upozorava ukoliko su se tvoji podaci pojavili u curenju podataka.
 monitor-sign-up = Prijavi se za upozorenja o curenju podataka
 auto-scan = Danas automatski pretraženo
+monitor-emails-tooltip =
+    .title = Pogledaj praćene e-adrese na { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Pogledaj poznata curenja podataka na { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Pogledaj izložene lozinke na { -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

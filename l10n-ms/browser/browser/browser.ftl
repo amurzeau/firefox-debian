@@ -2,66 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Pelayaran Peribadi)
-       *[default] { -brand-full-name }
-    }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (Pelayaran Peribadi)
-       *[default] { $title } - { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Pelayaran Peribadi)
-       *[other] { $title } - { -brand-full-name } (Pelayaran Peribadi)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = Papar maklumat laman
 
@@ -112,7 +52,6 @@ urlbar-addons-notification-anchor =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Taip sedikit, cari selanjutnya: Carian { $engineName } dari bar alamat anda.
-urlbar-search-tips-redirect = Mulakan carian anda di sini untuk melihat cadangan daripada { $engineName } dan sejarah pelayaran anda.
 
 ##
 
@@ -228,3 +167,41 @@ identity-enable-mixed-content-blocking =
     .accesskey = D
 identity-more-info-link-text =
     .label = Maklumat Lanjut
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Minimum
+browser-window-close-button =
+    .tooltiptext = Tutup
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Kamera untuk dikongsi:
+    .accesskey = K
+popup-select-microphone =
+    .value = Mikrofon untuk dikongsi:
+    .accesskey = M
+popup-all-windows-shared = Semua tetingkap yang kelihatan pada skrin anda akan dikongsi.
+
+## DevTools F12 popup
+
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Cari atau masukkan alamat
+urlbar-placeholder =
+    .placeholder = Cari atau masukkan alamat
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Pelayar berada dalam kawalan jauh
+urlbar-switch-to-tab =
+    .value = Tukar ke tab:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Ekstensi:
+urlbar-go-end-cap =
+    .tooltiptext = Pergi ke alamat dalam Bar Lokasi
+urlbar-page-action-button =
+    .tooltiptext = Tindakan halaman

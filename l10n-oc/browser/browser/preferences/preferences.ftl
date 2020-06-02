@@ -232,6 +232,10 @@ translate-attribution = Traduccions per <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Excepcions…
     .accesskey = x
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Utilizar los paramètres de vòstre sistèma operatiu en « { $localeName } » per formatar las datas, las oras, los nombres e las mesuras.
 check-user-spelling =
     .label = Verificar l'ortografia en picant
     .accesskey = t
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Utilizar { $app-name } (per defaut)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Utilizar l’aplicacion macOS par defaut
+            [windows] Utilizar l’aplicacion Windows per defaut
+           *[other] Utilizar l’aplicacion sistèma per defaut
+        }
 applications-use-other =
     .label = Utilizar un autre…
 applications-select-helper = Seleccionatz l'ajuda de l'aplicacion
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = Utilizar { $plugin-name } (dins { -brand-short-name })
 applications-preview-inapp =
     .label = Previsualizar dins { -brand-short-name }
+applications-open-inapp =
+    .label = Dobrir dins { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -752,6 +769,9 @@ privacy-header = Confidencialitat del navegador
 ## Privacy Section - Logins and Passwords
 
 logins-header = Identificants e senhals
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Identificants e senhals
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Demandar per salvar los identificants e senhals dels sites
@@ -786,6 +806,8 @@ forms-master-pw-fips-desc = La modificacion de senhal a pas capitat
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Verificatz vòstra identitat per crear un senhal principal.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Per crear un senhal màger, picatz vòstras informacions de connexion Windows. Aquò permet de servar la seguretat dels comptes.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These

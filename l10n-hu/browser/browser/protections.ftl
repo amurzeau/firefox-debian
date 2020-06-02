@@ -35,6 +35,12 @@ protection-report-page-title = Adatvédelem
 protection-report-content-title = Adatvédelem
 etp-card-title = Továbbfejlesztett követés elleni védelem
 etp-card-content = A nyomkövetők követik Önt online, és információkat gyűjtenek a böngészési szokásairól és érdeklődési köreiről. A { -brand-short-name } számos ilyen követőt és rosszindulatú parancsfájlt blokkol.
+protection-report-webpage-title = Védelmi vezérlőpult
+protection-report-page-content-title = Védelmi vezérlőpult
+protection-report-page-summary = Amíg Ön böngészik, a { -brand-short-name } a színfalak mögött gondoskodik az adatvédelméről. Ez ezen védelmek személyre szabott összefoglalója, olyan eszközökkel, melyekkel átveheti az irányítást az online biztonsága felett.
+etp-card-title-always = Továbbfejlesztett követés elleni védelem: Mindig bekapcsolva
+etp-card-title-custom-not-blocking = Továbbfejlesztett követés elleni védelem: KI
+etp-card-content-summary = Ha ismeretlen vállalatok próbálják titokban követni a weben, a { -brand-short-name } sokukat automatikusan megállítja.
 protection-report-etp-card-content-custom-not-blocking = Jelenleg minden védelem ki van kapcsolva. A { -brand-short-name } védelmi beállításainak kezelésével válassza ki, mely nyomkövetőket blokkolja.
 protection-report-manage-protections = Beállítások kezelése
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -54,16 +60,23 @@ cryptominer-tab-title = Kriptobányászok
 cryptominer-tab-content = A kriptobányászok az Ön rendszerének erőforrásait használják digitális pénzek bányászatához. A kriptobányászok lemerítik az akkumulátort, lelassítják a számítógépét és növelhetik a villanyszámláját. <a data-l10n-name="learn-more-link">További tudnivalók</a>
 protections-close-button =
     .aria-label = Bezárás
+protections-close-button2 =
+    .aria-label = Bezárás
+    .title = Bezárás
 mobile-app-title = Blokkolja a hirdetéskövetőket több eszközön
 mobile-app-card-content = Használja a beépített hirdetéskövetés elleni védelemmel ellátott mobilböngészőt.
 mobile-app-links = { -brand-product-name } Böngésző <a data-l10n-name="android-mobile-inline-link">Androidra</a> és <a data-l10n-name="ios-mobile-inline-link">iOS-re</a>
 lockwise-title = Ne felejtsen el egyetlen jelszót sem
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Jelszókezelés
 lockwise-header-content = A { -lockwise-brand-name } biztonságosan tárolja a jelszavait a böngészőjében.
 lockwise-header-content-logged-in = Tárolja biztonságosan, és szinkronizálja a jelszavait az összes eszközén.
 protection-report-view-logins-button = Bejelentkezések megtekintése
     .title = Ugrás a mentett bejelentkezésekhez
-lockwise-no-logins-content = Szerezze be a <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> alkalmazást, hogy bárhová elvigye a jelszavait.
+protection-report-save-passwords-button = Jelszavak mentése
+    .title = Jelszavak mentése ezzel: { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Jelszavak kezelése
+    .title = Jelszavak kezelése ezzel: { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Vigye magával a jelszavait bárhová
 lockwise-no-logins-card-content = Használja a { -brand-short-name }ban mentett jelszavait bármely eszközön.
 lockwise-app-links = { -lockwise-brand-name } <a data-l10n-name="lockwise-android-inline-link">Androidra</a> és <a data-l10n-name="lockwise-ios-inline-link">iOS-re</a>
@@ -75,6 +88,23 @@ lockwise-passwords-stored =
         [one] Jelszó biztonságosan tárolva <a data-l10n-name="lockwise-how-it-works">Hogyan működik</a>
        *[other] Jelszavak biztonságosan tárolva <a data-l10n-name="lockwise-how-it-works">Hogyan működik</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] 1 jelszó adatsértésben lehet érintett.
+       *[other] { $count } jelszó adatsértésben lehet érintett.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] 1 jelszó biztonságosan tárolva.
+       *[other] Jelszavait biztonságosan tárolja.
+    }
+lockwise-how-it-works-link = Hogyan működik
 turn-on-sync = { -sync-brand-short-name } bekapcsolása…
     .title = Ugrás a szinkronizálási beállításokhoz
 manage-connected-devices = Eszközök kezelése…
@@ -91,6 +121,12 @@ monitor-header-content-no-account = Ellenőrizze a { -monitor-brand-name } oldal
 monitor-header-content-signed-in = A { -monitor-brand-name } figyelmezteti, ha az adatai új adatsértésben jelennek meg.
 monitor-sign-up = Iratkozzon fel az adatsértési figyelmeztetésekre
 auto-scan = Automatikusan ellenőrizve ma
+monitor-emails-tooltip =
+    .title = Megfigyelt e-mail címek megtekintése a { -monitor-brand-short-name }on
+monitor-breaches-tooltip =
+    .title = Ismert adatsértések megtekintése a { -monitor-brand-short-name }on
+monitor-passwords-tooltip =
+    .title = Kikerült jelszavak megtekintése a { -monitor-brand-short-name }on
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

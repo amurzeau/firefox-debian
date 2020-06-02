@@ -34,6 +34,7 @@ app-basics-title = Të dhëna bazë mbi Aplikacionin
 app-basics-name = Emër
 app-basics-version = Version
 app-basics-build-id = ID Montimi
+app-basics-distribution-id = ID Shpërndarjeje
 app-basics-update-channel = Kanal Përditësimi
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -285,6 +286,11 @@ sandbox-proc-type-content = lëndë
 sandbox-proc-type-file = lëndë kartele
 sandbox-proc-type-media-plugin = shtojcë mediash
 sandbox-proc-type-data-decoder = shkodues të dhënash
+startup-cache-title = Fshehtinë Nisjeje
+startup-cache-disk-cache-path = Shteg Fshehtine Disku
+startup-cache-ignore-disk-cache = Shpërfill Fshehtinë Disku
+startup-cache-found-disk-cache-on-init = U gjet Fshehtinë Disku në Init
+startup-cache-wrote-to-disk-cache = U shkrua në Fshehtinë Disku
 launcher-process-status-0 = E aktivizuar
 launcher-process-status-1 = Çaktivizuar për shkak dështimesh
 launcher-process-status-2 = Çaktivizuar forcërisht

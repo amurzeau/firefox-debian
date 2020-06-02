@@ -20,3 +20,10 @@
 <!ENTITY prefLightningShow.label             "Lightning-installatie bekendmaken">
 <!ENTITY prefLightningShow.accesskey         "L">
 <!ENTITY prefCompatWarning                   "WAARSCHUWING: het uitschakelen van deze instellingen kan ertoe leiden dat websites of services niet goed werken.">
+<!ENTITY prefFirefoxStrict.label             "Als Firefox identificeren">
+<!ENTITY prefFirefoxStrict.accesskey         "F">
+<!ENTITY prefFirefoxNone.label               "Als SeaMonkey identificeren">
+<!ENTITY prefFirefoxNone.accesskey           "M">
+<!ENTITY prefFirefoxCompat2.label            "Als SeaMonkey identificeren en Firefox-compatibiliteit promoten">
+<!ENTITY prefFirefoxCompat2.accesskey        "c">
+<!ENTITY prefCompatWarning2.desc             "WAARSCHUWING: het wijzigen van deze instelling kan ertoe leiden dat websites of services niet goed werken.">

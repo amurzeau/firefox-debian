@@ -2,50 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Brabhsadh prìobhaideach)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Brabhsadh prìobhaideach)
-       *[other] { $title } - { -brand-full-name } (Brabhsadh prìobhaideach)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = Seall fiosrachadh na làraich-lìn
 
@@ -108,7 +64,6 @@ urlbar-tip-icon-description =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Nas lugha de sgrìobhadh: Dèan lorg le { $engineName } o bhàr an t-seòlaidh fhèin.
-urlbar-search-tips-redirect = Tòisich air lorg an-seo ’s chì thu molaidhean o { $engineName } agus on eachdraidh bhrabhsaidh agad.
 urlbar-search-tips-redirect-2 = Dèan lorg ann am bàr an t-seòlaidh ’s chì thu molaidhean o { $engineName } agus on eachdraidh bhrabhsaidh agad.
 
 ##
@@ -244,3 +199,43 @@ identity-enable-mixed-content-blocking =
     .accesskey = u
 identity-more-info-link-text =
     .label = Barrachd fiosrachaidh
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Lughdaich
+browser-window-close-button =
+    .tooltiptext = Dùin
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = An camara a thèid a cho-roinneadh:
+    .accesskey = c
+popup-select-microphone =
+    .value = Am micreofon a thèid a cho-roinneadh:
+    .accesskey = m
+popup-all-windows-shared = Thèid gach uinneag a tha ri fhaicinn air an sgrìn agad a cho-roinneadh.
+
+## DevTools F12 popup
+
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Cuir ann lorg no seòladh
+urlbar-placeholder =
+    .placeholder = Cuir ann lorg no seòladh
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Tha am brabhsair fo smachd cèin
+urlbar-switch-to-tab =
+    .value = Gearr leum gun taba:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Leudachan:
+urlbar-go-end-cap =
+    .tooltiptext = Rach dhan t-seòladh a tha ann am bàr an t-seòlaidh
+urlbar-page-action-button =
+    .tooltiptext = Gnìomhan na duilleige
+urlbar-pocket-button =
+    .tooltiptext = Sàbhail ann am { -pocket-brand-name }

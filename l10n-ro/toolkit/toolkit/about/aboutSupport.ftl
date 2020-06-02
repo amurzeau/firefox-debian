@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-page-title = Informații de depanare
+page-title = Informații pentru depanare
 page-subtitle =
     Această pagină conține informații tehnice care ar putea fi utile atunci când
     încerci să rezolvi o problemă. Dacă cauți răspunsuri la întrebări comune despre
@@ -34,6 +34,7 @@ app-basics-title = Informații de bază privind aplicația
 app-basics-name = Nume
 app-basics-version = Versiune
 app-basics-build-id = ID-ul versiunii compilate
+app-basics-distribution-id = ID distribuție
 app-basics-update-channel = Canal de actualizare
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -259,13 +260,13 @@ webgl2-renderer = Renderul driverului WebGL 2
 webgl2-version = Versiunea driverului WebGL 2
 webgl2-driver-extensions = Extensiile driverului WebGL 2
 webgl2-extensions = Extensii WebGL 2
-blocklisted-bug = Pe lista de blocări din cauza problemelor cunoscute
+blocklisted-bug = Pe lista de blocări din cauza unor probleme cunoscute
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
-unknown-failure = Pe lista de blocări; codu de eroare { $failureCode }
+unknown-failure = Pus pe lista de blocări; cod de eroare { $failureCode }
 d3d11layers-crash-guard = Compozitor D3D11
 d3d11video-crash-guard = Decodor video D3D11
 d3d9video-crash-buard = Decodor video D3D9
@@ -316,14 +317,14 @@ multi-process-status-6 = Dezactivat din cauza introducerii de text neacceptat
 multi-process-status-7 = Dezactivate de suplimente
 multi-process-status-8 = Dezactivate forțat
 multi-process-status-unknown = Stare necunoscută
-async-pan-zoom = Panoramare/zoom asincron
+async-pan-zoom = Panoramare/focalizare asincronă
 apz-none = fără
 wheel-enabled = intrare pentru rotița mouse-ului activată
 touch-enabled = intrare tactilă activată
 drag-enabled = tragerea barei de derulare activată
 keyboard-enabled = tastatură activată
 autoscroll-enabled = autoderulare activată
-zooming-enabled = Zoom lin prin pișcare activat
+zooming-enabled = Focalizare lină prin pișcare activată
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

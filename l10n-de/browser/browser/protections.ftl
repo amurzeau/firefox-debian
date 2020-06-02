@@ -35,6 +35,8 @@ protection-report-page-title = Privatsphäre-Schutzmaßnahmen
 protection-report-content-title = Privatsphäre-Schutzmaßnahmen
 etp-card-title = Verbesserter Tracking-Schutz (Schutz vor Aktivitätenverfolgung)
 etp-card-content = Skripte zur Aktivitätenverfolgung (Online-Tracker) folgen Ihnen über Websites hinweg und sammeln Informationen über Ihre Browser-Gewohnheiten und Interessen. { -brand-short-name } blockiert viele dieser Skripte zur Aktivitätenverfolgung und andere böswillige Skripte.
+etp-card-title-always = Verbesserter Tracking-Schutz: Immer an
+etp-card-title-custom-not-blocking = Verbesserter Tracking-Schutz: AUS
 protection-report-etp-card-content-custom-not-blocking = Derzeit sind alle Schutzmaßnahmen deaktiviert. Die zu blockierenden Elemente zur Aktivitätenverfolgung können in den Schutzmaßnahmen-Einstellungen von { -brand-short-name } festgelegt werden.
 protection-report-manage-protections = Einstellungen verwalten
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -54,15 +56,23 @@ cryptominer-tab-title = Heimliche Digitalwährungsberechner (Krypto-Miner)
 cryptominer-tab-content = Heimliche Digitalwährungsberechner (Krypto-Miner) verwenden die Rechenleistung Ihres Computers, um digitales Geld zu erzeugen. Dabei wird die Batterie schnell entladen, der Computer verlangsamt und die Energierechnung erhöht. <a data-l10n-name="learn-more-link">Weitere Informationen</a>
 protections-close-button =
     .aria-label = Schließen
+protections-close-button2 =
+    .aria-label = Schließen
+    .title = Schließen
 mobile-app-title = Blockieren Sie Werbe-Tracker auf mehreren Geräten
 mobile-app-card-content = Verwenden Sie den mobilen Browser mit eingebautem Schutz vor Werbe-Tracking.
 mobile-app-links = { -brand-product-name }-Browser für <a data-l10n-name="android-mobile-inline-link">Android</a> und <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Nie wieder ein Passwort vergessen
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Passwortverwaltung
 lockwise-header-content = { -lockwise-brand-name } speichert Passwörter sicher in Ihrem Browser.
 lockwise-header-content-logged-in = Speichern Sie Passwörter sicher und synchronisieren Sie diese mit allen Ihren Geräten.
 protection-report-view-logins-button = Zugangsdaten anzeigen
     .title = Gespeicherte Zugangsdaten öffnen
+protection-report-save-passwords-button = Passwörter speichern
+    .title = Passwörter in { -lockwise-brand-short-name } speichern
+protection-report-manage-passwords-button = Passwörter verwalten
+    .title = Passwörter in { -lockwise-brand-short-name } verwalten
 lockwise-mobile-app-title = Nehmen Sie Ihre Passwörter überall mit
 lockwise-no-logins-card-content = Verwenden Sie in { -brand-short-name } gespeicherte Passwörter auf jedem Gerät.
 lockwise-app-links = { -lockwise-brand-name } für <a data-l10n-name="lockwise-android-inline-link">Android</a> und <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -74,6 +84,7 @@ lockwise-passwords-stored =
         [one] Passwort sicher gespeichert <a data-l10n-name="lockwise-how-it-works">Wie es funktioniert</a>
        *[other] Passwörter sicher gespeichert <a data-l10n-name="lockwise-how-it-works">Wie es funktioniert</a>
     }
+lockwise-how-it-works-link = Wie es funktioniert
 turn-on-sync = { -sync-brand-short-name } aktivieren…
     .title = Sync-Einstellungen öffnen
 manage-connected-devices = Geräte verwalten…

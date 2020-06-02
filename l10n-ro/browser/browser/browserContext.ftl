@@ -62,9 +62,6 @@ toolbar-button-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-page =
-    .aria-label = Marchează pagina
-    .accesskey = m
 main-context-menu-bookmark-add =
     .aria-label = Marchează pagina
     .accesskey = m
@@ -262,7 +259,7 @@ main-context-menu-keyword =
     .label = Adaugă un cuvânt-cheie pentru această căutare…
     .accesskey = K
 main-context-menu-link-send-to-device =
-    .label = Trimite linkul unui dispozitiv
+    .label = Trimite linkul către un dispozitiv
     .accesskey = n
 main-context-menu-frame =
     .label = Acest cadru
@@ -301,7 +298,7 @@ main-context-menu-view-page-source =
     .label = Vezi sursa paginii
     .accesskey = V
 main-context-menu-view-page-info =
-    .label = Vezi informații privind pagina
+    .label = Afișează informații despre pagină
     .accesskey = I
 main-context-menu-bidi-switch-text =
     .label = Schimbă direcția textului

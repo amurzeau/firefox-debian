@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = 禁用启动时的默认浏览器检查。
 policy-DownloadDirectory = 设置并锁定下载目录。
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = 启用或禁用内容拦截，并可选择锁定该功能。
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = 启用或禁用“加密媒体扩展（EME）”，并可选择锁定该功能。
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = 允许 { -brand-short-name } 提供登录账�
 policy-OverrideFirstRunPage = 覆盖首次运行页面。如果您想禁用首次运行页面，将此策略设为空白。
 policy-OverridePostUpdatePage = 覆盖更新后的“新版变化”页面。如果您想禁用更新后页面，将此策略设为空白。
 policy-PasswordManagerEnabled = 启用密码管理器的密码保存功能。
+# PDF.js and PDF should not be translated
+policy-PDFjs = 禁用或配置 { -brand-short-name } 内置的 PDF 阅读器 PDF.js。
 policy-Permissions2 = 配置摄像头、麦克风、位置、通知和自动播放的权限。
 policy-PopupBlocking = 默认允许特定网站显示弹出式窗口。
 policy-Preferences = 设置并锁定若干首选项的值。

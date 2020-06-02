@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (사생활 보호 모드)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (사생활 보호 모드)
-       *[other] { $title } - { -brand-full-name } (사생활 보호 모드)
-    }
 urlbar-identity-button =
     .aria-label = 사이트 정보 보기
 
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = 적게 입력, 많이 찾기: 주소 표시줄에서 바로 { $engineName } 검색어로 검색해 보세요.
 urlbar-search-tips-redirect-2 = 주소 표시줄에서 검색을 시작하여 { $engineName }의 제안 및 방문 기록을 확인하세요.
-
-##
-
 
 ##
 
@@ -245,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = E
 identity-more-info-link-text =
     .label = 자세한 정보
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = 최소화
+browser-window-maximize-button =
+    .tooltiptext = 최대화
+browser-window-restore-down-button =
+    .tooltiptext = 이전 크기로 복원
+browser-window-close-button =
+    .tooltiptext = 닫기
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = 공유할 카메라:
+    .accesskey = C
+popup-select-microphone =
+    .value = 공유할 마이크:
+    .accesskey = M
+popup-all-windows-shared = 화면에 표시되어 있는 모든 창을 공유합니다.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = F12 단축키를 사용하려면, 먼저 웹 개발자 메뉴를 통해 DevTools를 여세요.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = 검색어 또는 주소 입력
+urlbar-placeholder =
+    .placeholder = 검색어 또는 주소 입력
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = 브라우저가 원격 제어중
+urlbar-permissions-granted =
+    .tooltiptext = 이 웹 사이트에 추가 권한을 부여했습니다.
+urlbar-switch-to-tab =
+    .value = 탭 전환:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = 확장 기능:
+urlbar-go-end-cap =
+    .tooltiptext = 주소 표시줄의 주소로 이동
+urlbar-page-action-button =
+    .tooltiptext = 페이지 작업
+urlbar-pocket-button =
+    .tooltiptext = { -pocket-brand-name }에 저장

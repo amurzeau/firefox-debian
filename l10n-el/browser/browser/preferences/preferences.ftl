@@ -483,7 +483,7 @@ home-prefs-topsites-description = Οι ιστοσελίδες που επισκ�
 # Variables:
 #  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 home-prefs-recommended-by-header =
-    .label = Προτεινόμενο από τον πάροχο { $provider }
+    .label = Προτάσεις του { $provider }
 home-prefs-recommended-by-description = Εξαιρετικό περιεχόμενο από το διαδίκτυο, εξατομικευμένο για εσάς
 home-prefs-recommended-by-learn-more = Πώς λειτουργεί
 home-prefs-recommended-by-option-sponsored-stories =
@@ -743,6 +743,9 @@ privacy-header = Απόρρητο προγράμματος περιήγησης
 ## Privacy Section - Logins and Passwords
 
 logins-header = Συνδέσεις & κωδικοί πρόσβασης
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Συνδέσεις & κωδικοί πρόσβασης
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Ερώτηση για αποθήκευση συνδέσεων και κωδικών πρόσβασης για ιστοσελίδες
@@ -1108,7 +1111,7 @@ space-alert-under-5gb-message = Το { -brand-short-name } δεν έχει επ�
 
 desktop-folder-name = Επιφάνεια εργασίας
 downloads-folder-name = Ληφθέντα αρχεία
-choose-download-folder-title = Επιλογή φακέλου λήψης αρχείων:
+choose-download-folder-title = Επιλογή φακέλου λήψεων:
 # Variables:
 #   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
 save-files-to-cloud-storage =

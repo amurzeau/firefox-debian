@@ -44,6 +44,9 @@ category-search =
 pane-privacy-title = Suturo & Kisal
 category-privacy =
     .tooltiptext = { pane-privacy-title }
+pane-sync-title2 = { -sync-brand-short-name }
+category-sync2 =
+    .tooltiptext = { pane-sync-title2 }
 help-button-label = Wallitorde { -brand-short-name }
 addons-button-label = Jokke & Kettule
 focus-search =
@@ -197,6 +200,8 @@ advanced-fonts =
 colors-settings =
     .label = Nooneeji…
     .accesskey = N
+preferences-default-zoom-value =
+    .label = { $percentage }
 language-header = Ɗemngal
 choose-language-description = Suɓo ɗemngal njiɗ-ɗaa ngam jaytinde kelle
 choose-button =
@@ -281,11 +286,17 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending }{ $type }
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Huutoro { $plugin-name } (nder { -brand-short-name })
 applications-preview-inapp =
     .label = Yiytino e { -brand-short-name }
+applications-open-inapp =
+    .label = Uddit e { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -299,12 +310,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -340,6 +355,12 @@ update-pref-write-failure-title = Gallugol binndol
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Daɗndugol cuɓaaɗe aaɓnotaako. Binndol aaɓnotaako nder fiilde:{ $path }
+update-setting-write-failure-title = Juumre e danndugol cuɓoraaɗe kesɗitine
+update-in-progress-message = Aɗa yiɗiɗ { -brand-short-name } jokka e ɗee kesɗitine?
+update-in-progress-ok-button = &Woppu
+# Continue is the cancel button so pressing escape or using a platform standard
+# method of closing the UI will not discard the update.
+update-in-progress-cancel-button = &Jokku
 
 ## General Section - Performance
 
@@ -379,9 +400,13 @@ browsing-use-cursor-navigation =
 browsing-search-on-start-typing =
     .label = Yiylo binndi so mi fuɗɗiima tappude
     .accesskey = n
+browsing-picture-in-picture-learn-more = Ɓeydu humpito
 browsing-cfr-recommendations =
     .label = Wasiyo jokke so aɗa wanngoo
     .accesskey = y
+browsing-cfr-features =
+    .label = Wasiyo fannuuji so aɗa wanngoo
+    .accesskey = f
 browsing-cfr-recommendations-learn-more = Jokku taro
 
 ## General Section - Proxy
@@ -481,6 +506,7 @@ search-bar-shown =
     .label = Ɓeydu palal njiilaw e palal kuutorɗe
 search-engine-default-header = Yiylorde Woowaande
 search-engine-default-desc = Suɓo yiylorde woowaande ngam huutoraade e palal ñiiɓirɗe e yiylorde.
+search-suggestions-header = Yiylo wasiyaaji
 search-suggestions-option =
     .label = Hokku wasiyaaji njiilaw
     .accesskey = w
@@ -519,10 +545,19 @@ search-keyword-warning-bookmark = A suɓiima helmere yiylorde wonnde e huutoreed
 ## Containers Section
 
 containers-back-link = « Rutto Caggal
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Rutto e Cuɓe
+           *[other] Rutto e Cuɓoraaɗe
+        }
 containers-header = Tabbe Mooftirɗe
 containers-add-button =
     .label = Ɓeydu Mooftiree Hesere
     .accesskey = Ɓ
+containers-new-tab-check =
+    .label = Suɓo mooftirde ngam tabbere hesere kala
+    .accesskey = S
 containers-preferences-button =
     .label = Cuɓaaɗe
 containers-remove-button =
@@ -542,6 +577,9 @@ sync-signedout-account-create = A alaa konte? Fuɗɗo jooni
 sync-signedout-account-signin =
     .label = Seŋo…
     .accesskey = I
+sync-signedout-account-signin2 =
+    .label = Seŋo e { -sync-brand-short-name }…
+    .accesskey = e
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -562,6 +600,9 @@ sync-profile-picture =
 sync-disconnect =
     .label = Seŋtondir…
     .accesskey = d
+sync-sign-out =
+    .label = Seŋto…
+    .accesskey = ŋ
 sync-manage-account = Toppito konte
     .accesskey = o
 sync-signedin-unverified = { $email } ƴeewtaaka.
@@ -576,13 +617,31 @@ sync-sign-in =
     .label = Seŋao
     .accesskey = g
 sync-signedin-settings-header = Yahdin teelte
-sync-signedin-settings-desc = Suɓo ko pot-ɗaa yahdinde nder masiŋon maa kuutortookon { -brand-short-name }.
+sync-signedin-settings-desc = Suɓo ko pot-ɗaa yahdinde nder kaɓirɗi maa kuutortookon { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
+prefs-sync-setup =
+    .label = Teelto { -sync-brand-short-name }…
+    .accesskey = T
 
 ## The list of things currently syncing.
 
+sync-currently-syncing-bookmarks = Maantore
+sync-currently-syncing-history = Aslol
+sync-currently-syncing-tabs = Uddit tabbe
+sync-currently-syncing-logins-passwords = Ceŋorɗe e pinle
+sync-currently-syncing-addresses = Ñiiɓirɗe
+sync-currently-syncing-creditcards = Karte banke
+sync-currently-syncing-addons = Ɓeyditte
+sync-currently-syncing-prefs =
+    { PLATFORM() ->
+        [windows] Cuɓe
+       *[other] Cuɓoraaɗe
+    }
+sync-change-options =
+    .label = Waylu…
+    .accesskey = W
 
 ## The "Choose what to sync" dialog.
 
@@ -599,6 +658,10 @@ sync-engine-tabs =
 sync-engine-logins =
     .label = Ceŋorɗe
     .tooltiptext = Inle kuutoro kam e finndeeji ɗi dannduɗaa
+    .accesskey = C
+sync-engine-logins-passwords =
+    .label = Ceŋorɗe e pinle
+    .tooltiptext = Innde kuutoro e pinle ndannduɗaa
     .accesskey = C
 sync-engine-addresses =
     .label = Ñiiɓirɗe
@@ -633,6 +696,8 @@ sync-device-name-cancel =
 sync-device-name-save =
     .label = Danndu
     .accesskey = D
+sync-connect-another-device = Seŋ kaɓirgol goɗngol
+sync-manage-devices = Toppito kaɓirɗe
 sync-tos-link = Laabi Carwol
 sync-fxa-privacy-notice = Tintinol Suturo
 
@@ -646,12 +711,17 @@ privacy-header = Suturo Wanngorde
 ## Privacy Section - Logins and Passwords
 
 logins-header = Ceŋorɗe & Pinle
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Ceŋorɗe & Pinle
+    .searchkeywords = { -lockwise-brand-short-name }
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Laaɓndo mbele a hisnat baccooje e pinle lowe
     .accesskey = r
 forms-exceptions =
     .label = Paltooje…
     .accesskey = a
+forms-breach-alerts-learn-more-link = Ɓeydu humpito
 forms-saved-logins =
     .label = Ceŋorɗe Danndaaɗe…
     .accesskey = D
@@ -663,6 +733,10 @@ forms-master-pw-change =
     .accesskey = B
 forms-master-pw-fips-title = Ngon-ɗaa ɗoo ko e mbayka FIPS. Mbayka FIPS ena naamnii Finnde Baabaare nde ɓolɗaani.
 forms-master-pw-fips-desc = Baylugol Finnde Woorii
+
+## OS Authentication dialog
+
+master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
 
@@ -727,6 +801,10 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Sifaa paddaaɗo
     .accesskey = S
+sitedata-option-block-trackers =
+    .label = Rewindotooɓe woɗɓe
+sitedata-option-block-cross-site-trackers =
+    .label = Rewindotooɓe hakkunde lowe
 sitedata-clear =
     .label = Momtu Keɓe…
     .accesskey = l
@@ -863,8 +941,8 @@ certs-view =
     .label = Yiy Seedamfaaji…
     .accesskey = C
 certs-devices =
-    .label = Masiŋon Kisal…
-    .accesskey = D
+    .label = kaɓirɗi Kisal…
+    .accesskey = k
 space-alert-learn-more-button =
     .label = Jokku taro
     .accesskey = L

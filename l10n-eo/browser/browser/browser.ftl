@@ -2,50 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Privata retumo)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Privata retumo)
-       *[other] { $title } - { -brand-full-name } (Privata retumo)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = Vidi informon de la retejo
 
@@ -108,7 +64,6 @@ urlbar-tip-icon-description =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Tajpu malpli, trovi pli: serĉi per { $engineName } rekte el via adresa strio.
-urlbar-search-tips-redirect = Komencu vian serĉon ĉi tie por vidi sugestojn el { $engineName } kaj el via retuma historio.
 urlbar-search-tips-redirect-2 = Komencu vian serĉon en la adresa strio por vidi sugestojn el { $engineName } kaj el via retuma historio.
 
 ##
@@ -154,6 +109,8 @@ page-action-manage-extension =
     .label = Administri etendaĵon…
 page-action-remove-from-urlbar =
     .label = Forigi el adresa strio
+page-action-remove-extension =
+    .label = Forigi etendaĵon
 
 ## Auto-hide Context Menu
 
@@ -244,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = A
 identity-more-info-link-text =
     .label = Pli da informo
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Malplejgrandigi
+browser-window-maximize-button =
+    .tooltiptext = Plejgrandigi
+browser-window-restore-down-button =
+    .tooltiptext = Remeti antaŭan grandon
+browser-window-close-button =
+    .tooltiptext = Fermi
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Dividota filmilo:
+    .accesskey = f
+popup-select-microphone =
+    .value = Dividota mikrofono:
+    .accesskey = m
+popup-all-windows-shared = Ĉiuj videblaj fenestroj en via ekrano estos dividitaj.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = Por uzi la ŝparvojon F12, unue malfermu la ilojn por programistoj el la menuo Teksaĵa programisto.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Serĉu ion aŭ tajpu adreson
+urlbar-placeholder =
+    .placeholder = Serĉu ion aŭ tajpu adreson
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = La retumilo estas sub fora regado
+urlbar-permissions-granted =
+    .tooltiptext = Vi aldonis permesojn al tiu ĉi retejo.
+urlbar-switch-to-tab =
+    .value = Iri al langeto:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Etendaĵo:
+urlbar-go-end-cap =
+    .tooltiptext = Iri al la adreso en la retadresa strio
+urlbar-page-action-button =
+    .tooltiptext = Retpaĝaj agoj
+urlbar-pocket-button =
+    .tooltiptext = Konservi en { -pocket-brand-name }

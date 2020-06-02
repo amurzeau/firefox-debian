@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Գաղտնի Դիտարկում)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Գաղտնի Դիտարկում)
-       *[other] { $title } - { -brand-full-name } (Գաղտնի Դիտարկում)
-    }
 urlbar-identity-button =
     .aria-label = Դիտել կայքի տեղեկությունը
 
@@ -109,9 +68,6 @@ urlbar-search-tips-redirect-2 = Սկսեք ձեր որոնումը այստեղ�
 
 ##
 
-
-##
-
 urlbar-geolocation-blocked =
     .tooltiptext = Դուք արգելափակել եք տեղադրության տեղեկությունը այս կայքի համար:
 urlbar-xr-blocked =
@@ -153,6 +109,8 @@ page-action-manage-extension =
     .label = Կառավարել ընդլայնումը...
 page-action-remove-from-urlbar =
     .label = ՀԵռացնել Հասցեագոտուց
+page-action-remove-extension =
+    .label = Հեռացնել ընդլայնումը
 
 ## Auto-hide Context Menu
 
@@ -243,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = Մ
 identity-more-info-link-text =
     .label = Մանրամասն
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Փոքրացնել
+browser-window-maximize-button =
+    .tooltiptext = Առավելացնել
+browser-window-restore-down-button =
+    .tooltiptext = Վերականգնել ներքև
+browser-window-close-button =
+    .tooltiptext = Փակել
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Մուտք տեսախցիկին.
+    .accesskey = C
+popup-select-microphone =
+    .value = Մուտք խոսափողին.
+    .accesskey = Մ
+popup-all-windows-shared = Էկրանի բոլոր տեսանելի պատուհանները կտարածվեն:
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = F12 դյուրանցումը օգտագործելու համար առաջին հերթին բացեք DevTools-ը Վեբ մշակողի ցանկի միջոցով:
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Մուտքագրեք կայքի հասցե կամ որոնում
+urlbar-placeholder =
+    .placeholder = Մուտքագրեք կայքի հասցե կամ որոնում
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Դիտարկել հեռակա կառավարմամբ
+urlbar-permissions-granted =
+    .tooltiptext = Դուք տրամադրել եք այս կայքէջին լրացուցիչ թույլտվություններ:
+urlbar-switch-to-tab =
+    .value = Անցնել ներդիրի՝
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Ընդլայնում՝
+urlbar-go-end-cap =
+    .tooltiptext = Գնալ Հասցեի Տողում նշված հասցեով
+urlbar-page-action-button =
+    .tooltiptext = Էջի գործույթները
+urlbar-pocket-button =
+    .tooltiptext = Պահպանել { -pocket-brand-name }-ում

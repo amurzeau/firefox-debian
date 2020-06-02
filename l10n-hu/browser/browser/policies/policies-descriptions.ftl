@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Az alapértelmezett böngésző ellenőrzés ki
 policy-DownloadDirectory = A letöltési könyvtár beállítása és zárolása.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = A Tartalomblokkolás engedélyezése vagy letiltása, és válaszható módon, annak zárolása.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = A Titkosított médiakiterjesztések engedélyezése vagy letiltása, és válaszható módon, annak zárolása.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = Adja meg az alapértelmezett értéket, hogy a
 policy-OverrideFirstRunPage = Az első indítás oldal felülbírálása. Állítsa üres értékre ezt a házirendet, ha le akarja tiltani a az első indítás oldalt.
 policy-OverridePostUpdatePage = A frissítés utáni „Újdonságok” oldal felülbírálása. Állítsa üres ezt a házirendet, ha azt szeretné, hogy ne legyen frissítés utáni oldal.
 policy-PasswordManagerEnabled = A jelszavak jelszókezelőbe történő mentésének engedélyezése.
+# PDF.js and PDF should not be translated
+policy-PDFjs = A PDF.js-nek, a { -brand-short-name } beépített PDF-megjelenítőjének, letiltása vagy beállítása.
 policy-Permissions2 = A kamera, mikrofon, helyadatok, értesítések és automatikus lejátszás jogosultságának beállítása.
 policy-PopupBlocking = Bizonyos weboldalak alapértelmezetten jeleníthessenek meg felugró ablakokat.
 policy-Preferences = Értékek beállítása és zárolása a beállítások egy részhalmazánál.

@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (privat surfning)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Privat surfning)
-       *[other] { $title } - { -brand-full-name } (Privat surfning)
-    }
 urlbar-identity-button =
     .aria-label = Visa webbplatsinformation
 
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Skriv mindre, hitta mer: Sök med { $engineName } direkt från ditt adressfält.
 urlbar-search-tips-redirect-2 = Starta din sökning i adressfältet för att se förslag från { $engineName } och din surfhistorik.
-
-##
-
 
 ##
 
@@ -245,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = E
 identity-more-info-link-text =
     .label = Mer information
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Minimera
+browser-window-maximize-button =
+    .tooltiptext = Maximera
+browser-window-restore-down-button =
+    .tooltiptext = Återställ nedåt
+browser-window-close-button =
+    .tooltiptext = Stäng
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Kamera att dela:
+    .accesskey = K
+popup-select-microphone =
+    .value = Mikrofon att dela:
+    .accesskey = M
+popup-all-windows-shared = Alla synliga fönster på din skärm kommer att delas.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = För att använda tangentbordskommandot F12, öppnar du först DevTools i Webbutvecklare-menyn.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Sök eller ange adress
+urlbar-placeholder =
+    .placeholder = Sök eller ange adress
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Webbläsaren är fjärrstyrd
+urlbar-permissions-granted =
+    .tooltiptext = Du har beviljat denna webbplats ytterligare behörigheter.
+urlbar-switch-to-tab =
+    .value = Växla till flik:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Tillägg:
+urlbar-go-end-cap =
+    .tooltiptext = Gå till adressen i adressfältet
+urlbar-page-action-button =
+    .tooltiptext = Åtgärder för sida
+urlbar-pocket-button =
+    .tooltiptext = Spara till { -pocket-brand-name }

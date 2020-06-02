@@ -48,7 +48,6 @@ login-list-count =
 login-list-sort-label-text = Poredaj po:
 login-list-name-option = Naziv (A-Z)
 login-list-name-reverse-option = Naziv (Z-A)
-login-list-breached-option = Hakirane web stranice
 about-logins-login-list-alerts-option = Upozorenja
 login-list-last-changed-option = Zadnja promjena
 login-list-last-used-option = Zadnja upotreba
@@ -68,7 +67,7 @@ about-logins-list-item-vulnerable-password-icon =
 
 login-intro-heading = Tražiš svoje spremljene prijave? Postavi { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-in = Nema sinkroniziranih prijava.
-login-intro-description = Ako si svoje prijave spremio/la na { -brand-product-name } na jednom drugom uređaju, evo kako ih možeš preuzeti ovamo:
+login-intro-description = Ako svoje prijave imaš spremljene na { -brand-product-name } na jednom drugom uređaju, evo kako ih možeš preuzeti ovamo:
 login-intro-instruction-fxa = Otvori račun ili se prijavi na svoj { -fxaccount-brand-name }, na uređaju gdje su tvoje prijave spremljene
 login-intro-instruction-fxa-settings = Provjeri, je li odabran potvrdni okvir prijave u { -sync-brand-short-name } postavkama
 about-logins-intro-instruction-help = Posjeti <a data-l10n-name="help-link">{ -lockwise-brand-short-name } podršku</a> za dodatnu pomoć
@@ -109,17 +108,23 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 
 # This message can be seen by attempting to edit a login in about:logins
 about-logins-edit-login-os-auth-dialog-message = Potvrdi svoj identitet za uređivanje spremljene prijave.
-# This message can be seen by attempting to edit a login in about:logins
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message-win = Za uređivanje prijave, upiši svoje podatke za prijavu na Windows. To pomaže zaštiti sigurnost tvojih računa.
+# This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = uredi spremljenu prijavu
 # This message can be seen by attempting to reveal a password in about:logins
 about-logins-reveal-password-os-auth-dialog-message = Potvrdi svoj identitet za prikazivanje spremljene prijave.
-# This message can be seen by attempting to reveal a password in about:logins
+# This message can be seen when attempting to reveal a password in about:logins on Windows.
+about-logins-reveal-password-os-auth-dialog-message-win = Za prikaz tvoje lozinke, upiši svoje podatke za prijavu na Windows. To pomaže zaštiti sigurnost tvojih računa.
+# This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = prikaži spremljenu lozinku
 # This message can be seen by attempting to copy a password in about:logins
 about-logins-copy-password-os-auth-dialog-message = Potvrdi svoj identitet za kopiranje spremljene prijave.
-# This message can be seen by attempting to copy a password in about:logins
+# This message can be seen when attempting to copy a password in about:logins on Windows.
+about-logins-copy-password-os-auth-dialog-message-win = Za kopiranje tvoje lozinke, upiši svoje podatke za prijavu na Windows. To pomaže zaštiti sigurnost tvojih računa.
+# This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = kopiraj spremljenu lozinku
 
@@ -163,10 +168,7 @@ confirm-discard-changes-dialog-confirm-button = Odbaci
 ## Breach Alert notification
 
 about-logins-breach-alert-title = Hakirana web-stranica
-breach-alert-text = Lozinke su procurile ili su ukradene s ove web-stranice od kad si zadnji puta aktualizirao/la svoje podatke za prijavu. Promijeni svoju lozinku kako bi zaštitio/la svoj račun.
-breach-alert-link = Saznaj više o ovom curenju podataka.
-breach-alert-dismiss =
-    .title = Zatvori ovo upozorenje
+breach-alert-text = Lozinke su procurile ili su ukradene s ove web-stranice od zadnjeg aktualiziranja tvojih podataka za prijavu. Za zaštitu svog računa, promijeni lozinku.
 about-logins-breach-alert-date = Curenje podataka dogodilo se { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
@@ -176,7 +178,7 @@ about-logins-breach-alert-learn-more-link = Saznaj više
 ## Vulnerable Password notification
 
 about-logins-vulnerable-alert-title = Ranjiva lozinka
-about-logins-vulnerable-alert-text = Ova je lozinka procurila ili je ukradena zbog curenja podataka druge tvrtke. Ponovna upotreba vjerodajnica riskira sve tvoje račune. Preporučujemo da promijeniš ovu lozinku.
+about-logins-vulnerable-alert-text2 = Ova lozinka je korištena na drugom računu čiji podaci su vjerojatno procurili u javnost. Ponovno korištenje lozinke na različitim računima riskirate krađu podataka na svim računima. Promijenite lozinku.
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-vulnerable-alert-link = Idi na { $hostname }

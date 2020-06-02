@@ -57,6 +57,10 @@ newtab-confirm-delete-history-p2 = ਇਕ ਕਾਰਵਾਈ ਨੂੰ ਅਣਕ
 newtab-menu-section-tooltip =
     .title = ਮੇਨੂ ਖੋਲ੍ਹੋ
     .aria-label = ਮੇਨੂ ਖੋਲ੍ਹੋ
+# Tooltip for dismiss button
+newtab-dismiss-button-tooltip =
+    .title = ਹਟਾਓ
+    .aria-label = ਹਟਾਓ
 # This tooltip is for the context menu of Pocket cards or Topsites
 # Variables:
 #  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
@@ -160,6 +164,10 @@ newtab-section-header-pocket = { $provider } ਵਲੋਂ ਸਿਫਾਰਸ਼�
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
 newtab-empty-section-highlights = ਬਰਾਊਜ਼ ਕਰਨਾ ਸ਼ੁਰੂ ਕਰੋ ਅਤੇ ਅਸੀਂ ਕੁਝ ਵਧੀਆ ਲੇਖ, ਵਿਡੀਓ ਤੇ ਤੁਹਾਡੇ ਵਲੋਂ ਖੋਲ੍ਹੋ ਗਏ ਜਾਂ ਬੁੱਕਮਾਰਕ ਕੀਤੇ ਹੋਰ ਸਫ਼ੇ ਇੱਥੇ ਦਿਖਾਵਾਂਗੇ।
+# Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
+# Variables:
+#  $provider (String): Name of the content provider for this section, e.g "Pocket".
+newtab-empty-section-topstories = ਤੁਸੀਂ ਪੂਰਾ ਕਰ ਚੁੱਕੇ ਹੋ। { $provider } ਵਲੋਂ ਹੋਰ ਕਹਾਣੀਆਂ ਲਈ ਬਾਅਦ ਵਿੱਚ ਵਾਪਸ ਚੈਕ ਕਰੀਓ। ਉਡੀਕ ਨਹੀਂ ਕਰ ਸਕਦੇ? ਤਾਂ ਫੇਰ ਵੈੱਬ ਉਤੋਂ ਹੋਰ ਵਧੀਆ ਕਹਾਣੀਆਂ ਵਾਸਤੇ ਹਰਮਨਪਿਆਰੇ ਵਿਸ਼ੇ ਨੂੰ ਚੁਣੋ।
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -175,7 +183,6 @@ newtab-discovery-empty-section-topstories-timed-out = ਓਹ ਹੋ! ਅਸੀ�
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = ਪ੍ਰਸਿੱਧ ਵਿਸ਼ੇ:
 newtab-pocket-more-recommendations = ਹੋਰ ਸਿਫਾਰਸ਼ਾਂ
-newtab-pocket-whats-pocket = { -pocket-brand-name } ਕੀ ਹੈ?
 newtab-pocket-learn-more = ਹੋਰ ਜਾਣੋ
 newtab-pocket-cta-button = { -pocket-brand-name } ਲਵੋ
 newtab-pocket-cta-text = { -pocket-brand-name } ਵਿਚ ਆਪਣੀਆਂ ਕਹਾਣੀਆਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰੋ, ਅਤੇ ਆਪਣੇ ਮਨ ਨੂੰ ਦਿਲਚਸਪ ਪੜ੍ਹ ਕੇ ਮਜਬੂਰ ਕਰੋ।

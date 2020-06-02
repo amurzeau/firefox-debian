@@ -232,6 +232,10 @@ translate-attribution = Traduções por <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Exceções…
     .accesskey = x
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Utilize as definições do sistema operativo para o “{ $localeName }” para formatar datas, horas, números e medidas.
 check-user-spelling =
     .label = Verificar a sua ortografia enquanto escreve
     .accesskey = t
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Utilizar { $app-name } (predefinição)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Utilizar aplicação predefinida do macOS
+            [windows] Utilizar aplicação predefinida do Windows
+           *[other] Utilizar aplicação predefinida do sistema
+        }
 applications-use-other =
     .label = Outra…
 applications-select-helper = Selecione a aplicação auxiliar
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = Utilizar { $plugin-name } (em { -brand-short-name })
 applications-preview-inapp =
     .label = Pré-visualizar no { -brand-short-name }
+applications-open-inapp =
+    .label = Abrir no { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -752,6 +769,9 @@ privacy-header = Privacidade do navegador
 ## Privacy Section - Logins and Passwords
 
 logins-header = Credenciais e palavras-passe
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Credenciais e palavras-passe
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Pedir para guardar credenciais e palavras-passe para sites
@@ -786,6 +806,8 @@ forms-master-pw-fips-desc = Erro ao alterar palavra-passe
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Confirme a sua identidade para criar uma palavra-passe mestra.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Para criar uma palavra-passe mestra, introduza as suas credenciais de autenticação do Windows. Isto ajuda a proteger a segurança das suas contas.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -1056,20 +1078,20 @@ collection-privacy-notice = Aviso de privacidade
 collection-health-report-telemetry-disabled = Deixou de permitir que o { -vendor-short-name } recolha dados técnicos e de interação. Todos os dados anteriores serão eliminados dentro de 30 dias.
 collection-health-report-telemetry-disabled-link = Saber mais
 collection-health-report =
-    .label = Permitir ao { -brand-short-name } enviar dados técnicos e de interação para a { -vendor-short-name }
+    .label = Permitir que o { -brand-short-name } envie os dados técnicos e de interação para a { -vendor-short-name }
     .accesskey = r
 collection-health-report-link = Saber mais
 collection-studies =
     .label = Permitir ao { -brand-short-name } instalar e executar estudos
 collection-studies-link = Ver estudos do { -brand-short-name }
 addon-recommendations =
-    .label = Permitir ao { -brand-short-name } fazer recomendações personalizadas de extensões
+    .label = Permitir que o { -brand-short-name } faça recomendações personalizadas de extensões
 addon-recommendations-link = Saber mais
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
 collection-health-report-disabled = Relato de dados está desativado para a configuração desta compilação
 collection-backlogged-crash-reports =
-    .label = Permitir ao { -brand-short-name } enviar relatórios de falha pendentes em seu nome
+    .label = Permitir que o { -brand-short-name } envie os relatórios pendentes de falhas em seu nome
     .accesskey = f
 collection-backlogged-crash-reports-link = Saber mais
 

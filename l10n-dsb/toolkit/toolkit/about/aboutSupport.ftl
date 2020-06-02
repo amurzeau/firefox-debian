@@ -31,6 +31,7 @@ app-basics-title = Zakłady nałoženja
 app-basics-name = Mě
 app-basics-version = Wersija
 app-basics-build-id = Wersijowy ID
+app-basics-distribution-id = ID distribucije
 app-basics-update-channel = Aktualizěrowański kanal
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -282,7 +283,7 @@ uses-tiling = Wužywa kachlicki
 content-uses-tiling = Wužywa kachlickowanje (wopśimjeśe)
 off-main-thread-paint-enabled = Off Main Thread Painting zmóžnjony
 off-main-thread-paint-worker-count = Licba workerow Off Main Thread Painting
-target-frame-rate = Celowa wobcerkowa cestosć
+target-frame-rate = Celowa wobceŕkowa cestosć
 min-lib-versions = Wótcakowana minimalna wersija
 loaded-lib-versions = Wužyta wersija
 has-seccomp-bpf = Seccomp-BPF (Filtrowanje systemowych zawołanjow)

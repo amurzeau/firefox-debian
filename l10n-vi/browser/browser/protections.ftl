@@ -33,6 +33,12 @@ protection-report-page-title = Bảo vệ quyền riêng tư
 protection-report-content-title = Bảo vệ quyền riêng tư
 etp-card-title = Trình chống theo dõi nâng cao
 etp-card-content = Trình theo dõi theo bạn trên mạng để thu thập thông tin về thói quen và sở thích duyệt web của bạn. { -brand-short-name } chặn nhiều trình theo dõi và các tập lệnh độc hại khác.
+protection-report-webpage-title = Bảng điều khiển bảo vệ
+protection-report-page-content-title = Bảng điều khiển bảo vệ
+protection-report-page-summary = { -brand-short-name } có thể bảo vệ quyền riêng tư của bạn đằng sau hậu trường trong khi bạn duyệt. Đây là bản tóm tắt được cá nhân hóa về các biện pháp bảo vệ đó, bao gồm các công cụ để kiểm soát an ninh trực tuyến của bạn.
+etp-card-title-always = Trình chống theo dõi nâng cao: Luôn bật
+etp-card-title-custom-not-blocking = Trình chống theo dõi nâng cao: TẮT
+etp-card-content-summary = Khi các công ty không xác định cố gắng bí mật theo dõi bạn trên web, { -brand-short-name } sẽ tự động dừng nhiều thứ trong số đó.
 protection-report-etp-card-content-custom-not-blocking = Tất cả các bảo vệ hiện đang tắt. Chọn trình theo dõi nào sẽ chặn bằng cách quản lý cài đặt bảo vệ { -brand-short-name } của bạn.
 protection-report-manage-protections = Quản lý cài đặt
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -52,16 +58,23 @@ cryptominer-tab-title = Tiền điện tử
 cryptominer-tab-content = Tiền điện tử sử dụng sức mạnh tính toán của hệ thống của bạn để khai thác tiền kỹ thuật số. Các tập lệnh mã hóa làm cạn kiệt pin của bạn, làm chậm máy tính của bạn và có thể tăng hóa đơn năng lượng của bạn. <a data-l10n-name="learn-more-link">Tìm hiểu thêm</a>
 protections-close-button =
     .aria-label = Đóng
+protections-close-button2 =
+    .aria-label = Đóng
+    .title = Đóng
 mobile-app-title = Chặn trình theo dõi quảng cáo trên nhiều thiết bị hơn
 mobile-app-card-content = Sử dụng trình duyệt di động có bảo vệ tích hợp chống theo dõi quảng cáo.
 mobile-app-links = Trình duyệt { -brand-product-name } dành cho <a data-l10n-name="android-mobile-inline-link">Android</a> và <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Không bao giờ quên mật khẩu lần nữa
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Quản lý mật khẩu
 lockwise-header-content = { -lockwise-brand-name } lưu trữ an toàn mật khẩu của bạn trong trình duyệt của bạn.
 lockwise-header-content-logged-in = Lưu trữ an toàn và đồng bộ hóa mật khẩu của bạn với tất cả các thiết bị của bạn.
 protection-report-view-logins-button = Xem thông tin đăng nhập
     .title = Đi đến Thông tin đăng nhập đã lưu
-lockwise-no-logins-content = Tải ứng dụng <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> để mang mật khẩu của bạn đi khắp mọi nơi.
+protection-report-save-passwords-button = Lưu mật khẩu
+    .title = Lưu mật khẩu trên { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Quản lý mật khẩu
+    .title = Quản lý mật khẩu trên { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Mang mật khẩu của bạn đi khắp mọi nơi
 lockwise-no-logins-card-content = Sử dụng mật khẩu được lưu trong { -brand-short-name } trên bất kỳ thiết bị nào.
 lockwise-app-links = { -lockwise-brand-name } dành cho <a data-l10n-name="lockwise-android-inline-link">Android</a> và <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -72,6 +85,21 @@ lockwise-passwords-stored =
     { $count ->
        *[other] Mật khẩu được lưu trữ an toàn <a data-l10n-name="lockwise-how-it-works">Cách thức hoạt động</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+       *[other] { $count } mật khẩu có thể đã bị lộ do rò rỉ dữ liệu.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+       *[other] Mật khẩu của bạn đang được lưu trữ an toàn.
+    }
+lockwise-how-it-works-link = Nó hoạt động như thế nào
 turn-on-sync = Bật { -sync-brand-short-name }…
     .title = Đi đến tùy chọn đồng bộ hóa
 manage-connected-devices = Quản lý thiết bị…
@@ -87,6 +115,12 @@ monitor-header-content-no-account = Kiểm tra tại { -monitor-brand-name } đ�
 monitor-header-content-signed-in = { -monitor-brand-name } cảnh báo bạn nếu thông tin của bạn xuất hiện trong một vụ rò rỉ dữ liệu đã biết.
 monitor-sign-up = Đăng ký cảnh báo vụ rò rỉ
 auto-scan = Tự động quét ngày hôm nay
+monitor-emails-tooltip =
+    .title = Xem địa chỉ email được giám sát trên { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Xem các rò rỉ dữ liệu đã biết trên { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Xem mật khẩu bị lộ trên { -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

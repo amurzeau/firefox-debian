@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Kontrole op standertbrowser by opstarten útske
 policy-DownloadDirectory = De downloadmap ynstelle en beskoattelje.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Ynhâldsblokkearring ynskeakelje of útskeakelje en opsjoneel beskoattelje.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Fersifere media-útwreidingen yn- of útskeakelje en opsjoneel beskoattelje.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = De standertwearde ynstelle foar it tastean dat
 policy-OverrideFirstRunPage = De side dy't foar it earst iepene wurdt ferfange. Stel dizze beliedsregel yn op leech as jo de oanbelangjende side útskeakelje wolle.
 policy-OverridePostUpdatePage = De side ‘Wat is der nij’ nei in fernijing ferfange. Stel dizze beliedsregel yn op leech as jo de oanbelangjende side útskeakelje wolle.
 policy-PasswordManagerEnabled = Bewarjen fan wachtwurden yn de wachtwurdbehearder ynskeakelje.
+# PDF.js and PDF should not be translated
+policy-PDFjs = PDF.js, de yn { -brand-short-name } ynboude PDF-lêzer, útskeakelje of ynstelle.
 policy-Permissions2 = Tastimmingen foar kamera, mikrofoan, lokaasje, notifikaasjes en automatysk ôfspyljen konfigurearje.
 policy-PopupBlocking = Tastean dat bepaalde websites standert pop-ups werjaan.
 policy-Preferences = De wearde foar in subset fan foarkarren ynstelle en beskoattelje.

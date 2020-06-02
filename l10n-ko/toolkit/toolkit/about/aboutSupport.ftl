@@ -31,6 +31,7 @@ app-basics-title = 응용 프로그램 기본 정보
 app-basics-name = 이름
 app-basics-version = 버전
 app-basics-build-id = 빌드 ID
+app-basics-distribution-id = 배포 ID
 app-basics-update-channel = 업데이트 채널
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -103,7 +104,7 @@ a11y-handler-used = 접근 가능한 핸들러 사용됨
 a11y-instantiator = 접근성 기능 사용 앱
 library-version-title = 라이브러리 버전
 copy-text-to-clipboard-label = 클립보드에 텍스트 복사
-copy-raw-data-to-clipboard-label = 클립보드에 원본 데이터 복사
+copy-raw-data-to-clipboard-label = 클립보드에 원시 데이터 복사
 sandbox-title = 샌드박스
 sandbox-sys-call-log-title = 거절된 시스템 콜
 sandbox-sys-call-index = #
@@ -180,7 +181,7 @@ crashes-time-days = { $days }일 전
 # Variables
 # $reports (integer) - Number of pending reports
 pending-reports = 모든 충돌 보고서(기간안에 있는 { $reports }개의 보류된 충돌 보고서 포함)
-raw-data-copied = 원본 데이터를 클립보드에 복사함
+raw-data-copied = 원시 데이터를 클립보드에 복사함
 text-copied = 문자열을 클립보드에 복사함
 
 ## The verb "blocked" here refers to a graphics feature such as "Direct2D" or "OpenGL layers".

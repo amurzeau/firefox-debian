@@ -53,7 +53,7 @@
 <!ENTITY saveAsFileCmd.key "S">
 <!ENTITY saveAsTemplateCmd.label "Șablon">
 <!ENTITY saveAsTemplateCmd.accesskey "l">
-<!ENTITY getNewMsgForCmd.label "Obține mesajele noi pentru">
+<!ENTITY getNewMsgForCmd.label "Descarcă mesajele noi pentru">
 <!ENTITY getNewMsgForCmd.accesskey "w">
 <!ENTITY getAllNewMsgCmdPopupMenu.label "Toate conturile">
 <!ENTITY getAllNewMsgCmdPopupMenu.accesskey "a">
@@ -82,9 +82,9 @@
 <!ENTITY synchronizeOfflineCmd.accesskey "S">
 <!ENTITY settingsOfflineCmd2.label "Setări pentru lucrul offline">
 <!ENTITY settingsOfflineCmd2.accesskey "e">
-<!ENTITY downloadSelectedCmd.label "Obține mesajele selectate">
+<!ENTITY downloadSelectedCmd.label "Descarcă mesajele selectate">
 <!ENTITY downloadSelectedCmd.accesskey "l">
-<!ENTITY downloadStarredCmd.label "Obține mesajele cu steluță">
+<!ENTITY downloadStarredCmd.label "Descarcă mesajele cu steluță">
 <!ENTITY downloadStarredCmd.accesskey "A">
 <!ENTITY printCmd.label "Tipărește…">
 <!ENTITY printCmd.accesskey "p">
@@ -239,7 +239,7 @@
 <!ENTITY ignoredThreadsCmd.label "Conversații ignorate">
 <!ENTITY ignoredThreadsCmd.accesskey "i">
 
-<!ENTITY headersMenu.label "Anteturi">
+<!ENTITY headersMenu.label "Antete">
 <!ENTITY headersMenu.accesskey "n">
 <!ENTITY headersAllCmd.label "Toate">
 <!ENTITY headersAllCmd.accesskey "a">
@@ -275,12 +275,12 @@
 <!ENTITY getAllNewMessagesCmd.key "Y">
 
 <!-- Search Menu -->
-<!ENTITY findMenu.label "Găsește">
+<!ENTITY findMenu.label "Caută">
 <!ENTITY findMenu.accesskey "G">
-<!ENTITY findCmd.label "Găsește în acest mesaj…">
+<!ENTITY findCmd.label "Caută în acest mesaj…">
 <!ENTITY findCmd.accesskey "G">
 <!ENTITY findCmd.key "F">
-<!ENTITY findAgainCmd.label "Găsește din nou">
+<!ENTITY findAgainCmd.label "Caută din nou">
 <!ENTITY findAgainCmd.accesskey "G">
 <!ENTITY findAgainCmd.key "G">
 <!ENTITY findAgainCmd.key2 "VK_F3">
@@ -289,6 +289,8 @@
 <!ENTITY searchMailCmd.label "Caută mesaje…">
 <!ENTITY searchMailCmd.accesskey "m">
 <!ENTITY searchMailCmd.key "F">
+<!ENTITY glodaSearchCmd.label "Căutare globală…">
+<!ENTITY glodaSearchCmd.accesskey "G">
 <!ENTITY searchAddressesCmd.label "Caută adrese…">
 <!ENTITY searchAddressesCmd.accesskey "s">
 
@@ -393,7 +395,7 @@
 <!ENTITY killThreadMenu.label "Ignoră conversația">
 <!ENTITY killThreadMenu.accesskey "I">
 <!ENTITY killThreadMenu.key "k">
-<!ENTITY killSubthreadMenu.label "Ignoră conversația subsidiară">
+<!ENTITY killSubthreadMenu.label "Ignoră conversația subordonată">
 <!ENTITY killSubthreadMenu.accesskey "S">
 <!ENTITY killSubthreadMenu.key "k">
 <!ENTITY watchThreadMenu.label "Urmărește conversația">
@@ -473,7 +475,7 @@
 <!ENTITY addonPrefsUnix.label "Preferințe suplimente">
 <!ENTITY addonPrefsUnix.accesskey "P">
 <!ENTITY addonNoPrefs.label "Nu au fost găsite setările de supliment.">
-<!ENTITY activitymanager.label "Manager de activitate">
+<!ENTITY activitymanager.label "Manager de activități">
 <!ENTITY activitymanager.accesskey "a">
 <!ENTITY imAccountsStatus.label "Stare chat">
 <!ENTITY imAccountsStatus.accesskey "S">
@@ -486,7 +488,7 @@
 <!ENTITY savedFiles.label "Fișiere salvate">
 <!ENTITY savedFiles.accesskey "l">
 <!ENTITY savedFiles.key "j">
-<!ENTITY filtersCmd2.label "Filtre pentru mesaje">
+<!ENTITY filtersCmd2.label "Filtre de mesaje">
 <!ENTITY filtersCmd2.accesskey "F">
 <!ENTITY filtersApply.label "Execută filtre pe dosar">
 <!ENTITY filtersApply.accesskey "r">
@@ -536,7 +538,7 @@
 <!ENTITY scratchpadCmd.keytext "F4">
 
 <!-- Mail Toolbar -->
-<!ENTITY getMsgButton1.label "Obține mesajele">
+<!ENTITY getMsgButton1.label "Descarcă mesajele">
 <!ENTITY newMsgButton.label "Scrie">
 <!ENTITY replyButton.label "Răspunde">
 <!ENTITY replyAllButton.label "Răspunde tuturor">
@@ -624,9 +626,9 @@
 <!-- Phishing Button Popup -->
 <!ENTITY phishingOptionIgnore.label "Ignoră avertismentul pentru acest mesaj">
 <!ENTITY phishingOptionIgnore.accesskey "n">
-<!ENTITY phishingOptionSettings.label "Editează opțiunile de detectare a înșelăciunii prin e-mail…">
+<!ENTITY phishingOptionSettings.label "Editează opțiunile de detectare a tentativelor de înșelăciune prin e-mail…">
 <!ENTITY phishingOptionSettings.accesskey "d">
-<!ENTITY phishingOptionSettingsUnix.label "Editează preferințele pentru detectarea înșelăciunii prin e-mail…">
+<!ENTITY phishingOptionSettingsUnix.label "Editează preferințele pentru detectarea tentativelor de înșelăciune prin e-mail…">
 <!ENTITY phishingOptionSettingsUnix.accesskey "d">
 
 <!-- AppMenu Popup -->
@@ -640,7 +642,7 @@
 <!-- Tags Menu Popup -->
 <!ENTITY addNewTag.label "Etichetă nouă…">
 <!ENTITY addNewTag.accesskey "n">
-<!ENTITY manageTags.label "Gestionează etichete…">
+<!ENTITY manageTags.label "Gestionează etichetele…">
 <!ENTITY manageTags.accesskey "M">
 
 <!-- Folder Pane -->
@@ -650,7 +652,7 @@
 <!ENTITY folderSizeColumn.label "Mărime">
 
 <!-- Folder Pane Context Menu -->
-<!ENTITY folderContextGetMessages.label "Obține mesajele">
+<!ENTITY folderContextGetMessages.label "Descarcă mesajele">
 <!ENTITY folderContextGetMessages.accesskey "A">
 <!ENTITY folderContextMarkAllFoldersRead.label "Marchează toate dosarele ca fiind citite">
 <!ENTITY folderContextPauseAllUpdates.label "Pune pe pauză toate actualizările">
@@ -804,7 +806,7 @@
 <!ENTITY contextKillThreadMenu.label "Ignoră conversația">
 <!ENTITY contextKillSubthreadMenu.accesskey "b">
 <!ENTITY contextKillThreadMenu.accesskey "I">
-<!ENTITY contextKillSubthreadMenu.label "Ignoră conversația subsidiară">
+<!ENTITY contextKillSubthreadMenu.label "Ignoră conversația subordonată">
 <!ENTITY contextWatchThreadMenu.label "Urmărește conversația">
 <!-- LOCALIZATION NOTE (contextWatchThreadMenu.accesskey):
      In the en-US locale we ran out of access keys, so there is an empty access key for
@@ -954,7 +956,7 @@
 <!ENTITY minimizeWindow.label "Minimizează">
 <!ENTITY minimizeWindow.key "M">
 <!ENTITY bringAllToFront.label "Adu-le pe toate în prim-plan">
-<!ENTITY zoomWindow.label "Lupă">
+<!ENTITY zoomWindow.label "Focalizare">
 
 <!-- Mac OS X Application Menu (Cocoa widgets) -->
 <!ENTITY preferencesCmdMac2.label       "Preferințe">

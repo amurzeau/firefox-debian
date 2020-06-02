@@ -126,7 +126,7 @@ use-firefox-sync = Підказка: При цьому використовую�
 get-started-not-logged-in = Увійти в { -sync-brand-short-name(case: "acc") }…
 get-started-configured = Відкрити налаштування { -sync-brand-short-name(case: "dat") }
 always-check-default =
-    .label = Завжди перевіряти чи є { -brand-short-name } типовим браузером
+    .label = Завжди перевіряти чи { -brand-short-name } типовий браузер
     .accesskey = б
 is-default = { -brand-short-name } зараз ваш типовий браузер
 is-not-default = { -brand-short-name } не є вашим типовим браузером
@@ -216,7 +216,7 @@ preferences-zoom-text-only =
     .label = Збільшувати лише текст
     .accesskey = к
 language-header = Мова
-choose-language-description = Оберіть бажану мову для показу веб-сторінок
+choose-language-description = Оберіть бажану мову для показу вебсторінок
 choose-button =
     .label = Вибрати…
     .accesskey = а
@@ -235,6 +235,10 @@ translate-attribution = Переклад виконується <img data-l10n-n
 translate-exceptions =
     .label = Винятки…
     .accesskey = н
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Використовувати налаштування вашої операційної системи “{ $localeName }” для форматування дати, часу, чисел та одиниць вимірювання.
 check-user-spelling =
     .label = Перевіряти орфографію під час введення тексту
     .accesskey = г
@@ -283,6 +287,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Використовувати { $app-name } (типово)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Використовувати типову програму macOS
+            [windows] Використовувати типову програму Windows
+           *[other] Використовувати типову системну програму
+        }
 applications-use-other =
     .label = Використовувати іншу…
 applications-select-helper = Виберіть допоміжну програму
@@ -308,6 +319,8 @@ applications-use-plugin-in =
     .label = Використовувати { $plugin-name } (у { -brand-short-name })
 applications-preview-inapp =
     .label = Переглядати в { -brand-short-name }
+applications-open-inapp =
+    .label = Відкрити в { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -321,12 +334,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -368,7 +385,7 @@ update-setting-write-failure-title = Помилка збереження нал�
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
-    { -brand-short-name } зіткнувся з помилкою і не зберіг цю зміну. Зверніть увагу, що для встановлення цього налаштування оновлення необхідний дозвіл запису в файл нижче. Ви або системний адміністратор можуть вирішити цю помилку, надавши користувачам групи повний контроль над цим файлом.
+    { -brand-short-name } зіткнувся з помилкою і не зберіг цю зміну. Зверніть увагу, що для встановлення цього налаштування оновлення необхідний дозвіл запису в файл нижче. Ви або системний адміністратор можуть виправити цю помилку, надавши користувачам групи повний контроль над цим файлом.
     
     Не вдалося записати в файл: { $path }
 update-in-progress-title = Триває оновлення
@@ -580,7 +597,7 @@ containers-back-button =
             [windows] Назад до налаштувань
            *[other] Назад до налаштувань
         }
-containers-header = Вкладки контейнера
+containers-header = Контейнери вкладок
 containers-add-button =
     .label = Додати новий контейнер
     .accesskey = к
@@ -756,6 +773,9 @@ privacy-header = Приватність браузера
 ## Privacy Section - Logins and Passwords
 
 logins-header = Входи і паролі
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Входи і паролі
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Запит збереження паролів для вебсайтів
@@ -790,6 +810,8 @@ forms-master-pw-fips-desc = Не вдалося змінити пароль
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Підтвердьте свій доступ, щоб створити головний пароль.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Щоб створити головний пароль, введіть свої облікові дані входу для Windows. Це допомагає захистити ваші збережені паролі.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -953,7 +975,7 @@ content-blocking-all-windows-trackers = Відомі елементи стеже
 content-blocking-all-windows-tracking-content = Стеження у всіх вікнах
 content-blocking-all-third-party-cookies = Усі сторонні куки
 content-blocking-cryptominers = Криптомайнери
-content-blocking-fingerprinters = Зчитування відбитку браузера
+content-blocking-fingerprinters = Зчитування цифрового відбитка
 content-blocking-warning-title = Увага!
 content-blocking-warning-description = Блокування вмісту може пошкоджувати роботу деяких вебсайтів. Можна легко вимкнути блокування для сайтів, яким ви довіряєте.
 content-blocking-learn-how = Навчитися
@@ -989,7 +1011,7 @@ content-blocking-cryptominers-label =
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
-    .label = Зчитування відбитку браузера
+    .label = Зчитування цифрового відбитка
     .accesskey = к
 
 ## Privacy Section - Tracking

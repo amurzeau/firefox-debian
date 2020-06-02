@@ -2,70 +2,29 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Priwatny modus)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Priwatny modus)
-       *[other] { $title } - { -brand-full-name } (Priwatny modus)
-    }
 urlbar-identity-button =
     .aria-label = Sedłowe informacije se woglědaś
 
 ## Tooltips for images appearing in the address bar
 
 urlbar-services-notification-anchor =
-    .tooltiptext = Wobcerk instalaciskeje powěźeńki wócyniś
+    .tooltiptext = Wobceŕk instalaciskeje powěźeńki wócyniś
 urlbar-web-notification-anchor =
     .tooltiptext = Změńśo, lěc móžośo powěźeńki wót sedła dostaś
 urlbar-midi-notification-anchor =
-    .tooltiptext = MIDI-wobcerk wócyniś
+    .tooltiptext = MIDI-wobceŕk wócyniś
 urlbar-eme-notification-anchor =
     .tooltiptext = Wužywanje softwary DRM zastojaś
 urlbar-web-authn-anchor =
-    .tooltiptext = Wobcerk webawtentifikacije wócyniś
+    .tooltiptext = Wobceŕk webawtentifikacije wócyniś
 urlbar-canvas-notification-anchor =
     .tooltiptext = Pšawo za ekstrahěrowanje canvas zastojaś
 urlbar-web-rtc-share-microphone-notification-anchor =
     .tooltiptext = Źělenje wašogo mikrofona ze sedłom zastojaś
 urlbar-default-notification-anchor =
-    .tooltiptext = Wobcerk powěsćow wócyniś
+    .tooltiptext = Wobceŕk powěsćow wócyniś
 urlbar-geolocation-notification-anchor =
-    .tooltiptext = Wobcerk městnowego napšašowanja wócyniś
+    .tooltiptext = Wobceŕk městnowego napšašowanja wócyniś
 urlbar-xr-notification-anchor =
     .tooltiptext = Dialog za pšawa wirtuelneje reality wócyniś
 urlbar-storage-access-anchor =
@@ -75,9 +34,9 @@ urlbar-translate-notification-anchor =
 urlbar-web-rtc-share-screen-notification-anchor =
     .tooltiptext = Źělenje wašych woknow abo wašeje wobrazowki ze sedłom zastojaś
 urlbar-indexed-db-notification-anchor =
-    .tooltiptext = Wobcerk powěźeńki składowanja offline wócyniś
+    .tooltiptext = Wobceŕk powěźeńki składowanja offline wócyniś
 urlbar-password-notification-anchor =
-    .tooltiptext = Wobcerk powěźeńki składowanja gronidła wócyniś
+    .tooltiptext = Wobceŕk powěźeńki składowanja gronidła wócyniś
 urlbar-translated-notification-anchor =
     .tooltiptext = Pśełožowanje boka zastojaś
 urlbar-plugins-notification-anchor =
@@ -85,11 +44,11 @@ urlbar-plugins-notification-anchor =
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = Źělenje wašeje kamery a/abo wašogo mikrofona ze sedłom zastojaś
 urlbar-autoplay-notification-anchor =
-    .tooltiptext = Wobcerk za awtomatiske wótgraśe wócyniś
+    .tooltiptext = Wobceŕk za awtomatiske wótgraśe wócyniś
 urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Daty w trajnem składowaku składowaś
 urlbar-addons-notification-anchor =
-    .tooltiptext = Wobcerk powěźeńki dodankoweje instalacije wócyniś
+    .tooltiptext = Wobceŕk powěźeńki dodankoweje instalacije wócyniś
 urlbar-tip-help-icon =
     .title = Pomoc se wobstaraś
 urlbar-search-tips-confirm = W pórěźe, som zrozměł
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Pišćo mjenjej, namakajśo wěcej: Pytajśo z { $engineName } direktnje ze swójogo adresowego póla.
 urlbar-search-tips-redirect-2 = Zachopśo swójo pytanje w adresowem pólu, aby naraźenja wót { $engineName } a ze swójeje pśeglědowańskeje historije wiźeł.
-
-##
-
 
 ##
 
@@ -177,7 +133,7 @@ search-one-offs-change-settings-button =
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Pytańske nastajenja změniś
 search-one-offs-context-open-new-tab =
-    .label = W nowem rejtarku pytaś
+    .label = W nowem rejtariku pytaś
     .accesskey = r
 search-one-offs-context-set-as-default =
     .label = Ako standardnu pytnicu nastajiś
@@ -245,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = z
 identity-more-info-link-text =
     .label = Dalšne informacije
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Miniměrowaś
+browser-window-maximize-button =
+    .tooltiptext = Maksiměrowaś
+browser-window-restore-down-button =
+    .tooltiptext = Wótnowiś
+browser-window-close-button =
+    .tooltiptext = Zacyniś
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Kamera, kotaraž ma se gromaźe wužywaś:
+    .accesskey = K
+popup-select-microphone =
+    .value = Mikrofon, kótaryž ma se gromaźe wužywaś:
+    .accesskey = M
+popup-all-windows-shared = Wšykne widobne wokna na wašej wobrazowce budu se źěliś.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = Aby tastu F12 wužywał, wócyńśo nejpjerwjej DevTools pśez meni Webwuwijaŕ.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Pytaś abo adresu zapódaś
+urlbar-placeholder =
+    .placeholder = Pytaś abo adresu zapódaś
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Wobglědowak se zdaloka wóźi
+urlbar-permissions-granted =
+    .tooltiptext = Sćo pśizwólił toś tomu websedłoju pśidatne pšawa.
+urlbar-switch-to-tab =
+    .value = K rejtarikoju pśejś:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Rozšyrjenje:
+urlbar-go-end-cap =
+    .tooltiptext = K adresy w adresowem pólu
+urlbar-page-action-button =
+    .tooltiptext = Akcije boka
+urlbar-pocket-button =
+    .tooltiptext = Pla { -pocket-brand-name } składowaś

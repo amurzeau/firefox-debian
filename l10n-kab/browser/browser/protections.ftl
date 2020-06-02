@@ -35,6 +35,12 @@ protection-report-page-title = Taɣellist n tbaḍnit
 protection-report-content-title = Ammesten n tbaḍnit
 etp-card-title = Ammesten mgal aḍfaṛ yettwaseǧhed
 etp-card-content = Ineḍfaṛen ad k-ḍefṛen srid akken ad leqḍen talɣut ɣef tnumi-ik n tunigin akked wayen tḥemmleḍ. { -brand-short-name } ad yessewḥel ddeqs n yineḍfaṛen-a akked yir iskripten.
+protection-report-webpage-title = Ammesten n tfelwit n usenqed
+protection-report-page-content-title = Ammesten n tfelwit n usenqed
+protection-report-page-summary = { -brand-short-name } yezmer ad yeḥrez tabaḍnit-ik ɣef wayen yeffren mi ara tettinigeḍ. D agzul udmawan n tigra-nni, daɣen akked yifecka akken ad yezg usenqed n tɣellist-inek srid.
+etp-card-title-always = Ammesten mgal aḍfaṛ yettwaseǧhed: Yezga iteddu
+etp-card-title-custom-not-blocking = Ammesten mgal aḍfaṛ yettwaseǧhed: Yensa
+etp-card-content-summary = Ma yilint tkebbaniyin ur nettwassen ara ttaεraḍent ad k-ḍefrent s tuffra deg web, { -brand-short-name } yessewḥal aṭas deg-sent s wudem awurman.
 protection-report-etp-card-content-custom-not-blocking = Meṛṛa ammesten yensa akka tura. Fren ineḍfaṛen ara tesweḥleḍ s usefrek n yiɣewwaṛen n ummesten n { -brand-short-name }.
 protection-report-manage-protections = Sefrek iɣewwaṛen
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -54,16 +60,23 @@ cryptominer-tab-title = Ikripṭuminaren
 cryptominer-tab-content = Ikripṭuminaren seqdacen tazmert n usiḍen n unagraw-ik akken ad kksen tadrimt tumḍint. Iskripten n yikripṭuminaren sseɣṣen aẓru-ik, saẓayen aselkim-ik, daɣen zemren ad salin tafaturt-ik n ṣṣehd. <a data-l10n-name="learn-more-link">Issin ugar</a>
 protections-close-button =
     .aria-label = Mdel
+protections-close-button2 =
+    .aria-label = Mdel
+    .title = Mdel
 mobile-app-title = Sewḥel ineḍfaren deg ugar n yibenkan
 mobile-app-card-content = Seqdec iminig aziraz s ummesten usliɣ mgal aḍfaṛ n udellel.
 mobile-app-links = Iminig { -brand-product-name }  i <a data-l10n-name="android-mobile-inline-link">Android</a> akked <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Ur sṛuḥuy ara awalen-ik uffiren
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Asefrek n wawal uffir
 lockwise-header-content = { -lockwise-brand-name } iseklas awalen uffiren-ik deg iminig-ik s wudem aɣelsan.
 lockwise-header-content-logged-in = Sekles daɣen mtawi awalen-ik uffiren ɣef yibenkan-ik meṛṛa s wudem aɣelsan.
 protection-report-view-logins-button = Sken-d tuqniwin
     .title = Ddu ɣer inekcumen yettwakelse
-lockwise-no-logins-content = Zdem asnas <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> akken ad tawiḍ awalen uffrien-ik anda teddiḍ.
+protection-report-save-passwords-button = Sekles awalen uffiren
+    .title = Sekles awalen uffiren deg { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Sefrek awalen uffiren
+    .title = Sefrek awalen uffiren deg { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Awi awalen uffiren anda teddiḍ
 lockwise-no-logins-card-content = Seqdec awalen uffiren yettwaskelsen deg  { -brand-short-name } deg yal ibenk.
 lockwise-app-links = { -lockwise-brand-name } i <a data-l10n-name="lockwise-android-inline-link">Android</a> akked <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -75,6 +88,23 @@ lockwise-passwords-stored =
         [one] Awal uffir yettwakles s wudem aɣelsan <a data-l10n-name="lockwise-how-it-works"> Amek iteddu</a>
        *[other] Awalen uffiren ttwakelsen s wudem aɣelsan <a data-l10n-name="lockwise-how-it-works"> Amek iteddu</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] 1 awal uffir ahat yettwasken-d deg trewla n yisefka.
+       *[other] { $count } awalen uffiren ahat ttwaseknen-d deg trewla n yisefka.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] 1 awal-ik uffir yettwakles s wudem aɣelsan.
+       *[other] Awalen-ik uffiren ttwakelsen s wudem aɣelsan.
+    }
+lockwise-how-it-works-link = Amek itteddu
 turn-on-sync = Rmed { -sync-brand-short-name }...
     .title = Ldi ismenyifen n umtawi
 manage-connected-devices = Sefrek ibenkan…
@@ -91,6 +121,12 @@ monitor-header-content-no-account = Ddu ɣer { -monitor-brand-name } akken ad wa
 monitor-header-content-signed-in = { -monitor-brand-name } ad k-id-yelɣu ma yella talɣut-ik tban-d deg trewla n yisefka yettwassnen.
 monitor-sign-up = jerred ɣer yilɣa n trewla n yisefa
 auto-scan = Yettwasenqed ass-a akken iwata
+monitor-emails-tooltip =
+    .title = Sken tansiwin n yimayl yettuεassen ɣef { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Sken tirewliwin n yisefka yettwassnen ɣef { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Sken awalen uffiren i d-ibanen ɣef { -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

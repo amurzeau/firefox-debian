@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = 시작할 때 기본 브라우저 확인을 사
 policy-DownloadDirectory = 다운로드 디렉터리를 설정하고 잠급니다.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = 콘텐츠 차단을 사용하거나 사용하지 않게 하고 선택적으로 잠급니다.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = 암호화된 미디어 확장 기능을 사용하거나 사용하지 않게 하고 선택적으로 잠급니다.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = 저장된 로그인과 비밀번호를 기억�
 policy-OverrideFirstRunPage = 첫 실행 페이지를 재정의 합니다. 첫 실행 페이지를 사용 안 하려면 이 정책을 빈칸으로 설정하세요.
 policy-OverridePostUpdatePage = 업데이트 후 "새 기능" 페이지를 재정의 합니다. 업데이트 후 페이지를 사용 안 하려면 이 정책을 빈칸으로 설정하세요.
 policy-PasswordManagerEnabled = 비밀번호 관리자에 비밀번호 저장을 사용합니다.
+# PDF.js and PDF should not be translated
+policy-PDFjs = { -brand-short-name }에 내장된 PDF 뷰어인 PDF.js를 사용 안하거나 구성합니다.
 policy-Permissions2 = 카메라, 마이크, 위치, 알림 및 자동 재생에 대한 권한을 구성합니다.
 policy-PopupBlocking = 기본으로 특정 웹 사이트가 팝업을 보여주도록 허용합니다.
 policy-Preferences = 설정의 하위 집합에 대한 값을 설정하고 잠급니다.

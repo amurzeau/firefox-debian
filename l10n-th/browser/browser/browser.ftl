@@ -2,50 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (การเรียกดูแบบส่วนตัว)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (การเรียกดูแบบส่วนตัว)
-       *[other] { $title } - { -brand-full-name } (การเรียกดูแบบส่วนตัว)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = ดูข้อมูลไซต์
 
@@ -108,7 +64,6 @@ urlbar-tip-icon-description =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = พิมพ์น้อยลง ค้นหามากขึ้น: ค้นหา { $engineName } โดยตรงจากแถบที่อยู่ของคุณ
-urlbar-search-tips-redirect = เริ่มการค้นหาของคุณที่นี่เพื่อดูข้อเสนอแนะจาก { $engineName } และประวัติการเรียกดูของคุณ
 urlbar-search-tips-redirect-2 = เริ่มการค้นหาของคุณในแถบที่อยู่เพื่อดูข้อเสนอแนะจาก { $engineName } และประวัติการเรียกดูของคุณ
 
 ##
@@ -154,6 +109,8 @@ page-action-manage-extension =
     .label = จัดการส่วนขยาย…
 page-action-remove-from-urlbar =
     .label = เอาออกจากแถบที่อยู่
+page-action-remove-extension =
+    .label = เอาส่วนขยายออก
 
 ## Auto-hide Context Menu
 
@@ -244,3 +201,48 @@ identity-enable-mixed-content-blocking =
     .accesskey = ป
 identity-more-info-link-text =
     .label = ข้อมูลเพิ่มเติม
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = ย่อ
+browser-window-maximize-button =
+    .tooltiptext = ขยาย
+browser-window-close-button =
+    .tooltiptext = ปิด
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = กล้องที่แบ่งปัน:
+    .accesskey = ก
+popup-select-microphone =
+    .value = ไมโครโฟนที่แบ่งปัน:
+    .accesskey = ม
+popup-all-windows-shared = หน้าต่างที่ปรากฏอยู่ทั้งหมดบนหน้าจอของคุณจะถูกแบ่งปัน
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = หากต้องการใช้ทางลัด F12 ให้เปิด DevTools ก่อนผ่านเมนู Web Developer
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = ค้นหาหรือป้อนที่อยู่
+urlbar-placeholder =
+    .placeholder = ค้นหาหรือป้อนที่อยู่
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = เบราว์เซอร์อยู่ภายใต้การควบคุมระยะไกล
+urlbar-permissions-granted =
+    .tooltiptext = คุณได้อนุญาตไซต์นี้ด้วยสิทธิเพิ่มเติม
+urlbar-switch-to-tab =
+    .value = สลับไปยังแท็บ:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = ส่วนขยาย:
+urlbar-go-end-cap =
+    .tooltiptext = ไปยังที่อยู่ในแถบตำแหน่งที่ตั้ง
+urlbar-page-action-button =
+    .tooltiptext = การกระทำหน้า
+urlbar-pocket-button =
+    .tooltiptext = บันทึกไปยัง { -pocket-brand-name }

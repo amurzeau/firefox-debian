@@ -119,11 +119,7 @@ cfr-whatsnew-lockwise-take-link-text = Obtener le application
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Scribe minus, trova plus con le barra de adresse
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Accede al sitos que tu usa le plus con un sol clic in le barra de adresse. Trova cosas plus rapidemente con le resultatos de { $searchEngineName } e de tu chronologia de navigation.
-cfr-whatsnew-searchbar-body-generic = Accede al sitos que tu usa le plus con un sol clic in le barra de adresse. Trova cosas plus rapidemente con resultatos de recerca ab tu chronologia de navigation.
-cfr-whatsnew-searchbar-body-topsites = Si tu selige le barra del adresses, apparera un lista de ligamines a tu sitos principal.
+cfr-whatsnew-searchbar-body-topsites = Ora, selige le barra de adresse, e un quadro apparera con un lista de ligamines a tu sitos principal.
 cfr-whatsnew-searchbar-icon-alt-text = Icone de lupa
 
 ## Picture-in-Picture
@@ -215,17 +211,17 @@ cfr-doorhanger-milestone-ok-button = Vider toto
 ## Lockwise message
 
 cfr-whatsnew-lockwise-header = Crea facilemente contrasignos secur
-cfr-whatsnew-lockwise-body = Trovar un contrasigno unic e secur pro cata conto es difficile. Quando tu besonia de un nove contrasigno, selige le option pertinente pro usar un contrasigno secur, generate automaticamente per { -brand-shorter-name }.
+cfr-whatsnew-lockwise-body = Trovar un contrasigno unic e secur pro cata conto es difficile. Quando tu crea un nove contrasigno, selige le campo de contrasigno pro usar un contrasigno secur, generate automaticamente per { -brand-shorter-name }.
 cfr-whatsnew-lockwise-icon-alt = Icone de { -lockwise-brand-short-name }
 
 ## Vulnerable Passwords message
 
-cfr-whatsnew-passwords-header = Recipe un aviso in caso de contrasigno vulnerabile
-cfr-whatsnew-passwords-body = Le piratas informatic sape que plure personas reusa le mesme contrasignos. Si tu usa le mesme contrasigno in sitos differente e uno de iste sitos es implicate in un violation de datos, tu videra un aviso in { -lockwise-brand-short-name } pro supplantar le contrasigno in tote le sitos implicate.
-cfr-whatsnew-passwords-icon-alt = Icone de un clave de contrasigno vulnerabile
+cfr-whatsnew-passwords-header = Recipe un aviso in caso de contrasignos vulnerabile
+cfr-whatsnew-passwords-body = Le piratas informatic sape que le gente reusa le mesme contrasignos. Si tu usa le mesme contrasigno in sitos differente e un de iste sitos es implicate in un violation de datos, tu videra un aviso in { -lockwise-brand-short-name } pro cambiar tu contrasigno in tote iste sitos.
+cfr-whatsnew-passwords-icon-alt = Icone de clave pro contrasigno vulnerabile
 
 ## Picture-in-Picture fullscreen message
 
-cfr-whatsnew-pip-fullscreen-header = Usar pictura-in-pictura a schermo plen
-cfr-whatsnew-pip-fullscreen-body = Quando tu transfereva un video in un fenestra flottante, tu pote duple-cliccar supra illo pro lo render a schermo plen.
-cfr-whatsnew-pip-fullscreen-icon-alt = Icone de pictura-in-pictura
+cfr-whatsnew-pip-fullscreen-header = Mitter imagine-in-imagine a plen schermo
+cfr-whatsnew-pip-fullscreen-body = Quando tu mitte un video in un fenestra flottante, tu pote ora duple-cliccar sur illo pro passar al plen schermo.
+cfr-whatsnew-pip-fullscreen-icon-alt = Icone imagine-in-imagine

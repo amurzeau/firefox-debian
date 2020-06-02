@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Жекелік шолу режимі)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Жекелік шолу режимі)
-       *[other] { $title } - { -brand-full-name } (Жекелік шолу режимі)
-    }
 urlbar-identity-button =
     .aria-label = Сайт ақпаратын қарау
 
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Азырақ теріп, көбірек табыңыз: { $engineName } қызметінен тура адрестік жолақтан іздеңіз.
 urlbar-search-tips-redirect-2 = { $engineName } және шолу тарихы ұсыныстарын көру үшін, іздеуді адрестік жолағында бастаңыз.
-
-##
-
 
 ##
 
@@ -245,3 +201,45 @@ identity-enable-mixed-content-blocking =
     .accesskey = е
 identity-more-info-link-text =
     .label = Көбірек білу
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Бүктеу
+browser-window-close-button =
+    .tooltiptext = Жабу
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Бөлісу үшін камера:
+    .accesskey = м
+popup-select-microphone =
+    .value = Бөлісу үшін микрофон:
+    .accesskey = м
+popup-all-windows-shared = Экраныңыздаға барлық көрінетін терезелермен бөлісетін боласыз.
+
+## DevTools F12 popup
+
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Іздеу немесе адрес
+urlbar-placeholder =
+    .placeholder = Іздеу немесе адрес
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Браузер қашықтан басқарылуда
+urlbar-permissions-granted =
+    .tooltiptext = Бұл веб-сайтқа қосымша рұқсаттарды бердіңіз.
+urlbar-switch-to-tab =
+    .value = Бетке ауысу:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Кеңейту:
+urlbar-go-end-cap =
+    .tooltiptext = Енгізілген адреске өту
+urlbar-page-action-button =
+    .tooltiptext = Бет әрекеттері
+urlbar-pocket-button =
+    .tooltiptext = { -pocket-brand-name }-ке сақтау

@@ -2,65 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Brabhsáil Phríobháideach)
-       *[default] { -brand-full-name }
-    }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (Brabhsáil Phríobháideach)
-       *[default] { $title } - { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Brabhsáil Phríobháideach)
-       *[other] { $title } - { -brand-full-name } (Brabhsáil Phríobháideach)
-    }
-
-##
 
 urlbar-identity-button =
     .aria-label = Eolas faoin suíomh
@@ -123,10 +64,12 @@ urlbar-screen-blocked =
     .tooltiptext = Chuir tú cosc ar an suíomh seo do scáileán a chomhroinnt.
 urlbar-persistent-storage-blocked =
     .tooltiptext = Chuir tú cosc ar stóras seasmhach ar an suíomh seo.
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Cuir an leabharmharc seo in eagar ({ $shortcut })
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -151,12 +94,14 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = An uair seo, cuardaigh le:
+
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Socruithe Cuardaigh
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Athraigh na socruithe cuardaigh
+
 search-one-offs-context-open-new-tab =
     .label = Cuardaigh i gCluaisín Nua
     .accesskey = r
@@ -208,3 +153,45 @@ identity-enable-mixed-content-blocking =
     .accesskey = C
 identity-more-info-link-text =
     .label = Tuilleadh Eolais
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Íoslaghdaigh
+browser-window-close-button =
+    .tooltiptext = Dún
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Ceamara le comhroinnt:
+    .accesskey = C
+popup-select-microphone =
+    .value = Micreafón le comhroinnt:
+    .accesskey = M
+popup-all-windows-shared = Comhroinnfear gach fuinneog infheicthe ar do scáileáin.
+
+## DevTools F12 popup
+
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Cuardaigh nó cuir seoladh isteach
+urlbar-placeholder =
+    .placeholder = Cuardaigh nó cuir seoladh isteach
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Tá an brabhsálaí faoi chianrialú
+urlbar-switch-to-tab =
+    .value = Téigh go cluaisín:
+
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Eisínteacht:
+
+urlbar-go-end-cap =
+    .tooltiptext = Téigh go dtí an seoladh atá sa Bharra Suímh
+urlbar-page-action-button =
+    .tooltiptext = Gníomhartha leathanaigh
+urlbar-pocket-button =
+    .tooltiptext = Sábháil i b{ -pocket-brand-name }

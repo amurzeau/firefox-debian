@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-account-central-title = Bienvenido a { -brand-short-name }
+account-central-title = Bienvenido a { -brand-full-name }
 account-settings = Configuraciones de la cuenta
 #   $accounts (Number) - the number of configured accounts
 setup-title =
@@ -38,3 +38,19 @@ newsgroups-label = Grupos de noticias
 newsgroups-description = { -brand-short-name } le permite conectarte a todos los grupos de noticias que desee.
 import-title = Importar desde otro programa
 import-paragraph = { -brand-short-name } le permite importar mensajes de correo, entradas de la libreta de direcciones, suscripciones de canales, preferencias y/o filtros de otros programas de correo y formatos comunes de libreta de direcciones.
+import-label = Importar
+    .aria-label = Importar datos de otros programas
+about-paragraph = Thunderbird es el lider en clientes de correo electrónico y calendario para todas las plataformas de código abierto, gratuito, tanto para el uso empresarial como el personal. Queremos mantenerlo seguro y que sea aun mejor. Una donación nos va a permitir contratar desarrolladores, pagar por la infraestructura y continuar mejorando.
+about-paragraph-2 = <b> ¡Thunderbird está financiado por usuarios como usted! Si le gusta Thunderbird, considere hacer una donación.</b> La mejor manera de asegurarse de que Thunderbird permanezca disponible es
+about-donation = hacer una donación
+explore-link = Explore las funciones
+support-link = Ayuda
+involved-link = Involúcrese
+developer-link = Documentación para desarrolladores
+read = Mensajes leídos
+compose = Redactar un mensaje nuevo
+search = Buscar mensajes
+filter = Administrar filtros de mensajes
+nntp-subscription = Administrar suscripciones a grupos de noticias
+rss-subscription = Administrar suscripciones a canales
+e2e = Cifrado de punta a punta

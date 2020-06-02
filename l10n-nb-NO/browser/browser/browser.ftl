@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Privat nettlesing)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Privat nettlesing)
-       *[other] { $title } - { -brand-full-name } (Privat nettlesing)
-    }
 urlbar-identity-button =
     .aria-label = Vis nettstedsinformasjon
 
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Skriv mindre, finn mer: Søk med { $engineName } direkte fra adresselinjen din.
 urlbar-search-tips-redirect-2 = Start ditt søk i adressefeltet for å se forslag fra { $engineName } og din nettleserhistorikk.
-
-##
-
 
 ##
 
@@ -245,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = S
 identity-more-info-link-text =
     .label = Mer informasjon
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Minimer
+browser-window-maximize-button =
+    .tooltiptext = Maksimer
+browser-window-restore-down-button =
+    .tooltiptext = Gjenopprett ned
+browser-window-close-button =
+    .tooltiptext = Lukk
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Kamera som deles:
+    .accesskey = K
+popup-select-microphone =
+    .value = Mikrofon som deles:
+    .accesskey = M
+popup-all-windows-shared = Alle synlige vinduer på skjermen vil deles.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = For å bruke F12-snarveien, må du først åpne DevTools via menyen for Nettsideutvikling
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Søk eller skriv inn adresse
+urlbar-placeholder =
+    .placeholder = Søk eller skriv inn adresse
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Nettleseren er under fjernstyring
+urlbar-permissions-granted =
+    .tooltiptext = Du har gitt dette nettstedet noen spesialtillatelser.
+urlbar-switch-to-tab =
+    .value = Bytt til fane:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Utvidelse:
+urlbar-go-end-cap =
+    .tooltiptext = Gå til adressen i adresselinjen
+urlbar-page-action-button =
+    .tooltiptext = Sidehandlinger
+urlbar-pocket-button =
+    .tooltiptext = Lagre til { -pocket-brand-name }

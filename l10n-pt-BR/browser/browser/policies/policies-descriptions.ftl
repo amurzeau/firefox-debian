@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Desativar a verificação de navegador padrão 
 policy-DownloadDirectory = Definir e bloquear o diretório de download.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Ativar ou desativar o bloqueio de conteúdo e, opcionalmente, impedir que seja alterado.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Ativar ou desativar Extensões de Mídias Criptografadas e, opcionalmente, bloquear.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = Definir o valor padrão para permitir que o { 
 policy-OverrideFirstRunPage = Substituir a página de primeira execução. Defina esta política como vazio se quiser desativar a página de primeira execução.
 policy-OverridePostUpdatePage = Substituir a página “Novidades” exibida após uma atualização. Defina esta política como vazio se quiser desativar a exibição de uma página após atualizações.
 policy-PasswordManagerEnabled = Ativar salvamento de senhas no gerenciador de senhas.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Desativar ou configurar o PDF.js, o visor de PDF integrado no { -brand-short-name }.
 policy-Permissions2 = Configurar permissões de câmera, microfone, localização, notificações e reprodução automática.
 policy-PopupBlocking = Permitir que determinados sites exibam popups como padrão.
 policy-Preferences = Definir e bloquear o valor de um subconjunto de preferências.

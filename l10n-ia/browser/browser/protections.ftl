@@ -35,6 +35,12 @@ protection-report-page-title = Protectiones del vita private
 protection-report-content-title = Protectiones del vita private
 etp-card-title = Protection antitraciamento reinfortiate
 etp-card-content = Le traciatores te seque in linea pro colliger informationes sur tu habitos e interesses de navigation. { -brand-short-name } bloca multes de iste traciatores e altere scripts maligne.
+protection-report-webpage-title = Pannello de protectiones
+protection-report-page-content-title = Pannello de protectiones
+protection-report-page-summary = { -brand-short-name } pote proteger tu vita private durante que tu naviga. Ecce un summario personal de iste protectiones, con utensiles pro prender le controlo de tu securitate in linea.
+etp-card-title-always = Protection antitraciamento reinfortiate: Sempre active
+etp-card-title-custom-not-blocking = Protection antitraciamento reinfortiate: NON ACTIVE
+etp-card-content-summary = Quando interprisas incognite tenta de sequer te secretemente sur le Web, { -brand-short-name } impedi automaticamente multes de illos.
 protection-report-etp-card-content-custom-not-blocking = Tote le protectiones es actualmente disactivate. Selige le traciatores a blocar per gerer le parametros de protection de { -brand-short-name }.
 protection-report-manage-protections = Gerer le parametros
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -54,15 +60,23 @@ cryptominer-tab-title = Cryptominatores
 cryptominer-tab-content = Cryptominatores usa le potentia de calculo de tu systema pro excavar moneta digital. Scripts de cryptominage exhauri tu batteria, relenta tu computator e pote accrescer le factura de tu energia.<a data-l10n-name="learn-more-link">Saper plus</a>
 protections-close-button =
     .aria-label = Clauder
+protections-close-button2 =
+    .aria-label = Clauder
+    .title = Clauder
 mobile-app-title = Blocar traciatores publicitari sur plure apparatos
 mobile-app-card-content = Usa le navigator mobile con protection integrate contra traciamento publicitari.
 mobile-app-links = Navigator { -brand-product-name } pro <a data-l10n-name="android-mobile-inline-link">Android</a> e <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Non oblida plus tu contrasignos
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Gestion de contrasignos
 lockwise-header-content = { -lockwise-brand-name } immagazina con securitate tu contrasignos in tu navigator.
 lockwise-header-content-logged-in = Memorisa e synchronisa tu contrasignos sur tote tu apparatos in tote securitate.
 protection-report-view-logins-button = Vider credentiales
     .title = Ir a Credentiales salvate
+protection-report-save-passwords-button = Salvar contrasignos
+    .title = Salvar contrasignos sur { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Gerer contrasignos
+    .title = Gerer contrasignos sur { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Porta tu contrasignos sempre con te
 lockwise-no-logins-card-content = Usa le contrasignos salvate in { -brand-short-name } sur qualcunque apparato.
 lockwise-app-links = { -lockwise-brand-name } pro <a data-l10n-name="lockwise-android-inline-link">Android</a> e <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -74,6 +88,23 @@ lockwise-passwords-stored =
         [one] contrasigno memorisate con securitate <a data-l10n-name="lockwise-how-it-works">Como functiona</a>
        *[other] contrasignos memorisate con securitate <a data-l10n-name="lockwise-how-it-works">Como functiona</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] 1 contrasigno pote haber essite exponite in un violation de datos.
+       *[other] { $count } contrasignos pote haber essite exponite in un violation de datos.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] 1 contrasigno immagazinate in modo secur.
+       *[other] Tu contrasignos es immagazinate in modo secur.
+    }
+lockwise-how-it-works-link = Como functiona
 turn-on-sync = Accende { -sync-brand-short-name }…
     .title = Ir al preferentias de Sync
 manage-connected-devices = Gerer apparatos…
@@ -90,6 +121,12 @@ monitor-header-content-no-account = Consulta { -monitor-brand-name } pro vider s
 monitor-header-content-signed-in = { -monitor-brand-name } te adverti si tu information ha apparite in un violation cognoscite de datos.
 monitor-sign-up = Inscriber te al Avisos de violation
 auto-scan = Controlate automaticamente hodie
+monitor-emails-tooltip =
+    .title = Vider le adresses de e-mail surveliate sur { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Vider le violationes de datos cognoscite sur { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Vider le contrasignos exponite sur { -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

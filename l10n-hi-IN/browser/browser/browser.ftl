@@ -2,50 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (निजी ब्राउज़िंग)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (निजी ब्राउज़िंग)
-       *[other] { $title } - { -brand-full-name } (निजी ब्राउज़िंग)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = साइट की जानकारी देखें
 
@@ -106,7 +62,6 @@ urlbar-tip-icon-description =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = कम टाइप करें, अधिक खोजें: सीधे अपने पता पट्टी { $engineName } खोजें.
-urlbar-search-tips-redirect = { $engineName } और अपने ब्राउज़िंग इतिहास से सुझाव देखने के लिए अपनी खोज यहां प्रारंभ करें.
 urlbar-search-tips-redirect-2 = { $engineName } और अपने ब्राउज़िंग इतिहास से सुझाव देखने के लिए अपनी खोज पता पट्टी में प्रारंभ करें।
 
 ##
@@ -150,6 +105,8 @@ page-action-manage-extension =
     .label = एक्सटेंशन प्रबंधित करें …
 page-action-remove-from-urlbar =
     .label = पतापट्टी से हटायें
+page-action-remove-extension =
+    .label = एक्सटेंशन हटाएं
 
 ## Auto-hide Context Menu
 
@@ -238,3 +195,43 @@ identity-enable-mixed-content-blocking =
     .accesskey = स
 identity-more-info-link-text =
     .label = अधिक सूचना
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = न्यूनतम करें
+browser-window-close-button =
+    .tooltiptext = बंद करें
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = साझा करने के लिए कैमरा:
+    .accesskey = C
+popup-select-microphone =
+    .value = साझा करने के लिए माइक्रोफोन:
+    .accesskey = M
+popup-all-windows-shared = आपके स्क्रीन पर सभी दृश्य विंडो साझा किए जाएँगे.
+
+## DevTools F12 popup
+
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = खोजें या पता दर्ज करें
+urlbar-placeholder =
+    .placeholder = खोजें या पता दर्ज करें
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = ब्राउज़र रिमोट कंट्रोल के तहत है
+urlbar-switch-to-tab =
+    .value = टैब में जाएँ:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = विस्तारक:
+urlbar-go-end-cap =
+    .tooltiptext = स्थान पट्टी पर पता में जाएँ
+urlbar-page-action-button =
+    .tooltiptext = पृष्ठ क्रियाएँ
+urlbar-pocket-button =
+    .tooltiptext = { -pocket-brand-name } में सहेजें

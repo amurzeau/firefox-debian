@@ -18,12 +18,10 @@ graph-total-tracker-summary =
         [one] <b>{ $count }</b> sporings-mekanismer blokeret siden { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
        *[other] <b>{ $count }</b> sporings-mekanismer blokeret siden { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
     }
-
 # Text displayed instead of the graph when in Private Mode
 graph-private-window = { -brand-short-name } fortsætter med at blokere sporings-teknologier i private vinduer, men gemmer ikke en oversigt over, hvad der blev blokeret.
 # Weekly summary of the graph when the graph is empty in Private Mode
 graph-week-summary-private-window = Sporings-mekanismer, { -brand-short-name } blokerede denne uge
-
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 # The category name in the <b> tag will be bold.
@@ -38,9 +36,16 @@ protection-report-content-title = Privatlivs-beskyttelse
 etp-card-title = Udvidet beskyttelse mod sporing
 etp-card-content = Sporings-teknologier følger dig rundt på nettet for at indsamle information om dine vaner og interesser. { -brand-short-name } blokerer mange af disse sporings-teknologier og andre ondsindede scripts.
 
+protection-report-webpage-title = Oversigt over beskyttelse
+protection-report-page-content-title = Oversigt over beskyttelse
+protection-report-page-summary = { -brand-short-name } kan beskytte dit privatliv, mens du bruger nettet. Dette viser dit personlige resume over, hvordan du er beskyttet - samt værktøj til at tage kontrol over din online identitet.
+
+etp-card-title-always = Udvidet beskyttelse mod sporing: Altid slået til
+etp-card-title-custom-not-blocking = Udvidet beskyttelse mod sporing: SLÅET FRA
+etp-card-content-summary = Når ukendte virksomheder i hemmelighed følger dig på nettet, så stopper { -brand-short-name } automatisk mange af dem.
+
 protection-report-etp-card-content-custom-not-blocking = Beskyttelse er slået fra. Du kan vælge, hvilke sporings-teknologier der skal blokeres, i indstillingerne for beskyttelse i { -brand-short-name }.
 protection-report-manage-protections = Håndter indstillinger
-
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
 # capitalization for this string should match the output for your locale.
 graph-today = I dag
@@ -56,25 +61,28 @@ fingerprinter-tab-title = Fingerprinters
 fingerprinter-tab-content = Fingerprinters indsamler indstillinger fra din browser og din computer for at skabe en profil af dig. Ved at bruge dette digitale fingeraftryk kan de spore dig på tværs af forskellige websteder. <a data-l10n-name="learn-more-link">Læs mere</a>
 cryptominer-tab-title = Cryptominers
 cryptominer-tab-content = Cryptominers bruger din computers ressourcer til at udvinde digital valuta. Cryptomining-scripts gør din computer langsommere og får den til at bruge mere strøm, og de kan dermed dræne dit batteri. <a data-l10n-name="learn-more-link">Læs mere</a>
-
 protections-close-button =
-  .aria-label = Luk
-
+    .aria-label = Luk
+protections-close-button2 =
+    .aria-label = Luk
+    .title = Luk
 mobile-app-title = Bloker sporing fra reklamer på alle enheder
 mobile-app-card-content = Brug mobil-browseren med indbygget beskyttelse mod sporing fra reklamer.
 mobile-app-links = { -brand-product-name }-browser til <a data-l10n-name="android-mobile-inline-link">Android</a> og <a data-l10n-name="ios-mobile-inline-link">iOS</a>
-
 lockwise-title = Glem aldrig en adgangskode igen
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Håndtering af adgangskoder
 lockwise-header-content = { -lockwise-brand-name } gemmer dine adgangskoder i din browser på en sikker måde.
 lockwise-header-content-logged-in = Gem og synkroniser dine adgangskoder på alle dine enheder.
 protection-report-view-logins-button = Vis logins
     .title = Gå til gemte logins
-
+protection-report-save-passwords-button = Gem adgangskoder
+  .title = Gem adgangskoder i { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Håndter adgangskoder
+  .title = Håndter adgangskoder i { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Tag dine adgangskoder med overalt
 lockwise-no-logins-card-content = Brug adgangskoder gemt i { -brand-short-name } på enhver enhed.
 lockwise-app-links = { -lockwise-brand-name } til <a data-l10n-name="lockwise-android-inline-link">Android</a> og <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
-
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
@@ -83,25 +91,50 @@ lockwise-passwords-stored =
         [one] adgangsskode gemt sikkert <a data-l10n-name="lockwise-how-it-works">Sådan virker det</a>
        *[other] adgangskoder gemt sikkert <a data-l10n-name="lockwise-how-it-works">Sådan virker det</a>
     }
+
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins = 
+  { $count ->
+      [one] 1 adgangskode kan være kompromitteret i en datalæk.
+     *[other] { $count } adgangskoder kan være kompromitteret i en datalæk.
+  }
+
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+  { $count ->
+     [one] 1 adgangskode gemt sikkert.
+    *[other] Dine adgangskoder er gemt sikkert.
+  }
+lockwise-how-it-works-link = Sådan virker det
+
 turn-on-sync = Aktivér { -sync-brand-short-name }…
     .title = Gå til sync-indstillinger
-
 manage-connected-devices = Håndter enheder…
-
 # Variables:
 #   $count (Number) - Number of devices connected with sync.
 lockwise-connected-device-status =
-  { $count ->
-     [one] Forbundet til { $count } enhed
-    *[other] Forbundet til { $count } enheder
-  }
-
+    { $count ->
+        [one] Forbundet til { $count } enhed
+       *[other] Forbundet til { $count } enheder
+    }
 monitor-title = Hold øje med datalæk
 monitor-link = Sådan virker det
 monitor-header-content-no-account = Brug { -monitor-brand-name } til at se, om dine informationer har været ramt af en datalæk - og få advarsler om nye datalæk.
 monitor-header-content-signed-in = { -monitor-brand-name } advarer dig, hvis dine informationer har været ramt af en datalæk.
 monitor-sign-up = Tilmeld dig advarsler om datalæk
 auto-scan = Automatisk skannet i dag
+
+monitor-emails-tooltip =
+  .title = Vis overvågede mailadresser på { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+  .title = Vis kendte datalæk på { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+  .title = Vis kompromitterede adgangskoder på { -monitor-brand-short-name }
+
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

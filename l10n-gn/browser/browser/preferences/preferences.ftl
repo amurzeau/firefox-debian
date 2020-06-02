@@ -232,6 +232,10 @@ translate-attribution = Ñe'ẽasaha <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Oĩ'ỹva…
     .accesskey = ĩ
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Eipuru ñemboheko nde apopyvusu oku’éva pegua “{ $localeName }” emonandi hag̃ua ára, aravo, papapy ha ha’ãha.
 check-user-spelling =
     .label = Haingatu jehaikuévo jehechajey
     .accesskey = t
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = { $app-name } jeporu (ijypykue)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Eipuru tembipuru’i macOS ijypykuéva
+            [windows] Eipuru tembipuru’i Windows ijypykuéva
+           *[other] Eipuru tembipuru’i apopyvusugua ijypykuéva
+        }
 applications-use-other =
     .label = Ambuéva jepuru…
 applications-select-helper = Eiporavo tembipuru'i pytyvõrãva
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = { $plugin-name } jepuru ({ -brand-short-name }-pe)
 applications-preview-inapp =
     .label = { -brand-short-name }-pe jehecha'ypy
+applications-open-inapp =
+    .label = Ijurujáva { -brand-short-name }-pe
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -752,6 +769,9 @@ privacy-header = Kundahára Ñemigua
 ## Privacy Section - Logins and Passwords
 
 logins-header = Tembiapo ñepyrũ ha ñe’ẽñemi
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Tembiapo ñepyrũ ha ñe’ẽñemi
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Eporandu eñongatu hag̃ua tembiapo ñepyrũ ha ñe’ẽñemi ñandutípe

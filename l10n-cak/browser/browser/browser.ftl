@@ -2,66 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Palaqinem Wichin)
-       *[default] { -brand-full-name }
-    }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (Palaqinem Wichin)
-       *[default] { $title } - { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Palaqinem Wichin)
-       *[other] { $title } - { -brand-full-name } (Palaqinem Wichin)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = Titz'et retamab'al ruxaq k'amaya'l
 
@@ -124,7 +64,6 @@ urlbar-tip-icon-description =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Jub'a' katz'ib'an, k'ïy tawila': Tikanöx { $engineName } choj pa rochoch etalib'äl.
-urlbar-search-tips-redirect = Tatikirisaj kanoxïk wawe' richin ye'atz'ët taq ruchilab'exik { $engineName } chuqa' runatab'al awokik'amaya'l.
 urlbar-search-tips-redirect-2 = Tatikirisaj kanoxïk pa ri rukajtz'ik ochochib'äl richin ye'atz'ët taq ruchilab'exik { $engineName } chuqa' runatab'al awokik'amaya'l.
 
 ##
@@ -170,6 +109,8 @@ page-action-manage-extension =
     .label = Tinuk'samajïx K'amal…
 page-action-remove-from-urlbar =
     .label = Tiyuj el chupam ri Kikajtz'ik Ochoch
+page-action-remove-extension =
+    .label = Tiyuj K'amal
 
 ## Auto-hide Context Menu
 
@@ -260,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = T
 identity-more-info-link-text =
     .label = Ch'aqa' chik rutzijol
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Ch'utinarisaxïk
+browser-window-maximize-button =
+    .tooltiptext = Tinimirisäx
+browser-window-restore-down-button =
+    .tooltiptext = Tichojmirisäx Ikim
+browser-window-close-button =
+    .tooltiptext = Titz'apïx
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Rutaluxik elesäy wachib'äl
+    .accesskey = e
+popup-select-microphone =
+    .value = Q'asäy ch'ab'äl richin rutaluxik:
+    .accesskey = Q
+popup-all-windows-shared = Xkekomonïx konojel ri tz'etel taq tzuwäch e k'o pa ri ruwäch.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = Richin nokisäx ri F12 chojokem, nab'ey tajaqa' ri DevTools rik'in ri rucha'osamaj Web B'anonel.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Tikanöx chuqa' titz'ib'äx ri ochochib'äl
+urlbar-placeholder =
+    .placeholder = Tikanöx chuqa' titz'ib'äx ri ochochib'äl
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Ri Okik'amaya'l k'o pa ruq'a' ri näj chajinïk
+urlbar-permissions-granted =
+    .tooltiptext = Xaya' ruwi' ya'oj q'ij chi re re ajk'amaya'l ruxaq re'.
+urlbar-switch-to-tab =
+    .value = Rujalik ri ruwi':
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = K'amal:
+urlbar-go-end-cap =
+    .tooltiptext = Tib'e pa JAY richin ri rucholob'al taq ochochib'äl
+urlbar-page-action-button =
+    .tooltiptext = Taq rub'anoj ruxaq
+urlbar-pocket-button =
+    .tooltiptext = Tiyak pa { -pocket-brand-name }

@@ -26,6 +26,7 @@ policy-DisabledCiphers = Malaktivigi ĉifradon.
 policy-DefaultDownloadDirectory = Difini la norman dosierujon por elŝutoj.
 policy-DisableAppUpdate = Malpermesi al retumilo ĝisdatigiĝi.
 policy-DisableBuiltinPDFViewer = Malaktivigi PDF.js (PDF-legilo inkluzivita en { -brand-short-name }).
+policy-DisableDefaultBrowserAgent = Eviti ke la norma retumila agento faru ion ajn. Tio nur aplikeblas al Windows, ĉar aliaj sistemoj ne havas tiun agenton.
 policy-DisableDeveloperTools = Bloki aliron al la iloj por programistoj.
 policy-DisableFeedbackCommands = Malaktivigi eblojn “sendi opiniojn” kaj “denunci trompan retejon” en la menuo de helpo.
 policy-DisableFirefoxAccounts = Malaktivigi servojn bazitaj sur { -fxaccount-brand-name }, inkluzive Speguladon.
@@ -52,6 +53,8 @@ policy-DontCheckDefaultBrowser = Malaktivigi ĉe starto la kontrolon pri la norm
 policy-DownloadDirectory = Difini kaj fiksi la dosierujon por elŝutoj.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Aktivigi aŭ malaktivigi la blokadon de enhavo kaj kun la eblo bloki ĝin.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Aktivigi aŭ malaktivigi la etendaĵoj de ĉifitraj aŭdvidaĵoj (EME) kaj laŭvole bloki ĝin.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -65,6 +68,14 @@ policy-HardwareAcceleration = Se estas "malvera" la aparata akcelo estos malŝal
 policy-Homepage = Difini kaj havi la eblon ŝlosi la ekan paĝon.
 policy-InstallAddonsPermission = Permesi al kelkaj retejoj la instalon de aldonaĵoj.
 policy-LegacyProfiles = Malaktivigi la trajton, kiu postulas malsamajn profilojn por ĉiu instalaĵo.
+
+## Do not translate "SameSite", it's the name of a cookie attribute.
+
+policy-LegacySameSiteCookieBehaviorEnabled = Aktivigi la norman tradician konduton de SameSite por kuketoj.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Reiri al la tradicia konduto de SameSite por kuketoj en specifaj retejoj.
+
+##
+
 policy-LocalFileLinks = Permesi al kelkaj difinitaj retejoj havi ligilojn al lokaj dosieroj.
 policy-NetworkPrediction = Aktivigi aŭ malaktivigi retan prognozon (antaŭlegon de DNS).
 policy-NewTabPage = Aktivigi aŭ malaktivigi la paĝon por novaj langetoj.
@@ -74,6 +85,8 @@ policy-OfferToSaveLoginsDefault = Elekti ĉu { -brand-short-name } norme propona
 policy-OverrideFirstRunPage = Ŝanĝi la paĝon de unua starto. Lasu tiun ĉi politikon malplena se vi volas malaktivigi la paĝon de unua starto.
 policy-OverridePostUpdatePage = Ŝanĝi la postĝisdatigan paĝon "Kio estas nova". Lasu tiun ĉi politikon malplena se vi volas malaktivigi la paĝon post ĝisdatigo.
 policy-PasswordManagerEnabled = Aktivigi konservadon de pasvortoj en la pasvorta administranto.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Malaktivigi aŭ agordi PDF.js, la integritan legilon de PDF en { -brand-short-name }.
 policy-Permissions2 = Agordi permesojn por filmilo, mikrofono, pozicio,sciigoj kaj aŭtomata ludado.
 policy-PopupBlocking = Norme permesi al kelkaj retejoj montri ŝprucfenestrojn.
 policy-Preferences = Difini kaj bloki la valoron por aro de preferoj.

@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Sens asenqed amezwer i yiminig deg tnekra.
 policy-DownloadDirectory = Ad yesbadu daɣen ad iṣekkeṛ akaram n usider.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Rmed neɣ sens asewḥel n ugbur u sekker-it ma tebɣiḍ.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Rmed neɣ sens isiɣzaf n wallalen n teywalt yettwawgelhen rnu sekkeṛ-it ma tebɣiḍ.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = Sbadu ma yella, swudem amezwer, { -brand-short
 policy-OverrideFirstRunPage = Beddel asebter amezwaru n uskar. Sbadu tasertit d tilemt ma tebɣiḍ ad tsenseḍ asebter amezwaru n uskar.
 policy-OverridePostUpdatePage = Beddel asebter "Acu-t amaynut" seld aleqqem. sbadu tasertit d tilemt ma tebɣiḍ ad tsenseḍ  asebter n uleqqem.
 policy-PasswordManagerEnabled = Rmed asekles n wawalen uffiren deg umsefrak n wawalen uffiren.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Sens neɣ swel PDF.js, ameskan PDF usliɣ deg { -brand-short-name }.
 policy-Permissions2 = Swel tisirag i tkamirat, asawaḍ, adig, ilɣa akked tɣuri tawurmant.
 policy-PopupBlocking = Sireg kra n ismal web ad skanayen Isfuyla udhimens wudem amezwer.
 policy-Preferences = Ad yesbadu daɣen ad iṣekkeṛ azal n tegrumma tasnawant n yismenyifen.

@@ -18,12 +18,10 @@ graph-total-tracker-summary =
         [one] <b>{ $count }</b> elemento tracciante bloccato dal { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
        *[other] <b>{ $count }</b> elementi traccianti bloccati dal { DATETIME($earliestDate, day: "numeric", month: "long", year: "numeric") }
     }
-
 # Text displayed instead of the graph when in Private Mode
 graph-private-window = { -brand-short-name } continua a bloccare gli elementi traccianti in navigazione anonima, ma non viene conservato un registro di ciò che è stato bloccato.
 # Weekly summary of the graph when the graph is empty in Private Mode
 graph-week-summary-private-window = Elementi traccianti bloccati da { -brand-short-name } questa settimana
-
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 # The category name in the <b> tag will be bold.
@@ -37,6 +35,13 @@ protection-report-page-title = Protezioni per la privacy
 protection-report-content-title = Protezioni per la privacy
 etp-card-title = Protezione antitracciamento avanzata
 etp-card-content = Gli elementi traccianti ti seguono online al fine di raccogliere informazioni sui tuoi interessi e le tue abitudini di navigazione. { -brand-short-name } blocca molti di questi traccianti e altri script dannosi.
+protection-report-webpage-title = Dashboard protezioni
+protection-report-page-content-title = Dashboard protezioni
+protection-report-page-summary = { -brand-short-name } protegge la tua privacy mentre navighi. Questa è una sintesi personalizzata delle protezioni attive e include strumenti per garantire la tua sicurezza online.
+protection-report-settings-link = Gestisci le impostazioni relative a privacy e sicurezza
+etp-card-title-always = Protezione antitracciamento avanzata: sempre attiva
+etp-card-title-custom-not-blocking = Protezione antitracciamento avanzata: DISATTIVATA
+etp-card-content-summary = { -brand-short-name } blocca molte società sconosciute che, di nascosto, cercano di seguire le tue attività sul Web.
 protection-report-etp-card-content-custom-not-blocking = Tutte le protezioni sono attualmente disattivate. Scegli quali elementi traccianti bloccare nelle impostazioni di { -brand-short-name }.
 protection-report-manage-protections = Gestisci impostazioni
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -55,24 +60,48 @@ fingerprinter-tab-content = I fingerprinter raccolgono informazioni sulle impost
 cryptominer-tab-title = Cryptominer
 cryptominer-tab-content = I cryptominer utilizzano le risorse del sistema per effettuare il “mining” di valute digitali. Questi script consumano la batteria, rallentano il computer e possono aumentare il costo della bolletta elettrica. <a data-l10n-name="learn-more-link">Ulteriori informazioni</a>
 protections-close-button =
-  .aria-label = Chiudi
+    .aria-label = Chiudi
+protections-close-button2 =
+    .aria-label = Chiudi
+    .title = Chiudi
 mobile-app-title = Blocca le pubblicità traccianti su tutti i tuoi dispositivi
 mobile-app-card-content = Utilizza il browser <em>mobile</em> con protezione integrata contro le pubblicità traccianti.
 mobile-app-links = Browser { -brand-product-name } per <a data-l10n-name="android-mobile-inline-link">Android</a> e <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Non dimenticare più le tue password
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Gestione password
 lockwise-header-content = { -lockwise-brand-name } salva le tue password in modo sicuro direttamente nel browser.
 lockwise-header-content-logged-in = Salva le password in modo sicuro e sincronizzale su tutti i tuoi dispositivi.
 protection-report-view-logins-button = Visualizza credenziali
     .title = Vai alle credenziali salvate
+protection-report-save-passwords-button = Salva password
+    .title = Salva password in { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Gestisci password
+    .title = Gestisci password in { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Porta le tue password sempre con te
 lockwise-no-logins-card-content = Utilizza le password salvate in { -brand-short-name } su qualsiasi dispositivo.
 lockwise-app-links = { -lockwise-brand-name } per <a data-l10n-name="lockwise-android-inline-link">Android</a> e <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
-
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 lockwise-passwords-stored = Password salvate in modo sicuro <a data-l10n-name="lockwise-how-it-works">Come funziona</a>
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] 1 password potrebbe essere stata compromessa in una violazione di dati.
+       *[other] { $count } password potrebbero essere state compromesse in una violazione di dati.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+  { $count ->
+      [one] 1 password salvata in modo sicuro.
+     *[other] Le tue password sono salvate in modo sicuro.
+  }
+lockwise-how-it-works-link = Come funziona
 turn-on-sync = Attiva { -sync-brand-short-name }…
     .title = Apri le impostazioni di sincronizzazione
 manage-connected-devices = Gestisci dispositivi…
@@ -89,6 +118,14 @@ monitor-header-content-no-account = Controlla { -monitor-brand-name } per verifi
 monitor-header-content-signed-in = { -monitor-brand-name } ti avvisa se le tue informazioni compaiono in una violazione di dati conosciuta.
 monitor-sign-up = Iscriviti per ricevere avvisi sulle violazioni
 auto-scan = Controllato automaticamente oggi
+
+monitor-emails-tooltip =
+  .title = Visualizza indirizzi email gestiti in { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+  .title = Visualizza violazioni di dati conosciute in { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+  .title = Visualizza password compromesse in { -monitor-brand-short-name }
+
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
@@ -102,18 +139,22 @@ info-monitored-emails =
 # your localization, because it would result in the number showing twice.
 info-known-breaches-found =
     { $count ->
-        [one] Violazione di dati conosciuta che ha esposto le tue informazioni
-       *[other] Violazioni di dati conosciute che hanno esposto le tue informazioni
+        [one] Violazione di dati conosciuta che ha compromesso le tue informazioni
+       *[other] Violazioni di dati conosciute che hanno compromesso le tue informazioni
     }
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
-info-exposed-passwords-found = Password esposte da tutte le violazioni
+info-exposed-passwords-found =
+    { $count ->
+        [one] Password compromessa in tutte le violazioni
+       *[other] Password compromesse in tutte le violazioni
+    }
 full-report-link = Visualizza il rapporto completo in <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>
 # This string is displayed after a large numeral that indicates the total number
 # of saved logins which may have been exposed. Don’t add $count to
 # your localization, because it would result in the number showing twice.
-password-warning = Credenziali salvate potrebbero essere state esposte in una violazione di dati. Cambia queste password per garantire la tua sicurezza online. <a data-l10n-name="lockwise-link">Visualizza le credenziali salvate</a>
+password-warning = Credenziali salvate potrebbero essere state compromesse in una violazione di dati. Cambia queste password per garantire la tua sicurezza online. <a data-l10n-name="lockwise-link">Visualizza le credenziali salvate</a>
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

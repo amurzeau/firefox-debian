@@ -232,6 +232,10 @@ translate-attribution = Tradukita de <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Esceptoj…
     .accesskey = s
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Uzi la agordojn de via mastruma sistemo por “{ $localeName }” por la formo de datoj, horoj, numeroj kaj mezuroj.
 check-user-spelling =
     .label = Kontroli literumadon dum tajpado
     .accesskey = t
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Uzi { $app-name } (ĉefa)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Uzi la norman programon de macOS
+            [windows] Uzi la norman programan de Windows
+           *[other] Uzi la norman programon de la sistemo
+        }
 applications-use-other =
     .label = Uzi alian…
 applications-select-helper = Elekti helpan programon
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = Uzi { $plugin-name } (en { -brand-short-name })
 applications-preview-inapp =
     .label = Antaŭvidi en { -brand-short-name }
+applications-open-inapp =
+    .label = Malfermi per { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -752,6 +769,9 @@ privacy-header = Retumila privateco
 ## Privacy Section - Logins and Passwords
 
 logins-header = Akreditiloj kaj pasvortoj
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Akreditiloj kaj pasvortoj
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Demandi ĉu konservi akreditilojn kaj pasvortojn por retejoj
@@ -786,6 +806,8 @@ forms-master-pw-fips-desc = Pasvorto malsukcese ŝanĝita
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Konfirmu vian identecon por krei ĉefan pasvorton.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Por krei ĉefan pasvorton vi devas tajpi viajn legitimilojn de Windows . Tio ĉi helpas vin protekti la sekurecon de viaj kontoj.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -863,6 +885,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Interetejaj spuriloj
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Interretejaj kaj sociretaj spuriloj
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Interretejaj kaj sociretaj spuriloj, kaj izoli ceterajn kuketojn
 sitedata-option-block-unvisited =
     .label = Kuketoj el nevizititaj retejoj
 sitedata-option-block-all-third-party =
@@ -939,6 +963,7 @@ content-blocking-etp-strict-desc = Pli forta proteko, sed kelkaj retejoj aŭ enh
 content-blocking-etp-custom-desc = Elektu blokotajn spurilojn kaj skriptojn
 content-blocking-private-windows = Spurila enhavo en privataj fenestroj
 content-blocking-cross-site-tracking-cookies = Interretejaj spuriloj
+content-blocking-cross-site-tracking-cookies-plus-isolate = Interretejaj spurilaj kuketoj, kaj izoli ceterajn kuketojn
 content-blocking-social-media-trackers = Sociretaj spuriloj
 content-blocking-all-cookies = Ĉiuj kuketoj
 content-blocking-unvisited-cookies = Kuketoj el ne vizititaj retejoj
@@ -951,6 +976,7 @@ content-blocking-warning-title = Atentu!
 content-blocking-warning-description = La blokado de enhavo povas misfunkciigi kelkajn retejojn. Estas facile malaktivigi la blokadon por retejoj, kiujn vi fidas.
 content-blocking-learn-how = Pli da informo
 content-blocking-etp-warning-description = Blokado de spuriloj povas influi la funkciadon de kelkaj retejoj. Reŝargu paĝon kun spuriloj por ŝargi la tutan enhavon.
+content-blocking-and-isolating-etp-warning-description = Blokado de spuriloj kaj izolado de kuketoj povus influi la funkciadon de kelkaj retejoj. Reŝargu paĝon kun spuriloj por ŝargi la tutan enhavon.
 content-blocking-warning-learn-how = Pli da informo
 content-blocking-reload-description = Vi bezonos reŝargi viajn langetojn por apliki tiujn ĉi ŝanĝojn.
 content-blocking-reload-tabs-button =

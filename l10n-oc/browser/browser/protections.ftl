@@ -35,6 +35,12 @@ protection-report-page-title = Proteccion de la vida privada
 protection-report-content-title = Proteccions de la vida privada
 etp-card-title = Proteccion contra lo seguiment renfortida
 etp-card-content = Los traçadors vos pistan en linha per reculhir d’informacions sus vòstras abituds de navegacion e vòstres interèsses. { -brand-short-name } bloca fòrça d’aqueles elements de seguiment e scripts malvolents.
+protection-report-webpage-title = Taula de bòrd de las proteccions
+protection-report-page-content-title = Taula de bòrd de las proteccions
+protection-report-page-summary = { -brand-short-name } pòt protegir vòstra vida privada en colissa pendent que navegatz. Vaquí un resumit d’aquelas proteccions, que conten d’aisinas per contrarotlar vòstre seguretat en linha.
+etp-card-title-always = Proteccion renfortida contra lo seguiment : totjorn activada
+etp-card-title-custom-not-blocking = Proteccion renfortida contra lo seguiment : DESACTIVADA
+etp-card-content-summary = Quand de companhiás desconegudas ensajan de vos seguir secrètament pel monde, { -brand-short-name } n’arrèsta automaticament un molon d’aquelas.
 protection-report-etp-card-content-custom-not-blocking = Actualament totas las proteccions son desactivadas. Causissètz quins traçadors blocar en gerir vòstres paramètres de proteccion de { -brand-short-name }.
 protection-report-manage-protections = Gerir los paramètres
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -54,16 +60,23 @@ cryptominer-tab-title = Minaires de criptomonedas
 cryptominer-tab-content = Los minaires de criptomoneda utilizan la poténcia de calcul de vòstre ordenador per minar de moneda numerica. Los scripts de minaires sollicitan la bateria, alentisson l’ordenador e aumentan vòstra factura d’electricitat. <a data-l10n-name="learn-more-link">Ne saber mai</a>
 protections-close-button =
     .aria-label = Tampar
+protections-close-button2 =
+    .aria-label = Tampar
+    .title = Tampar
 mobile-app-title = Blocatz los traçadors de publicitat sus mai d’un periferic
 mobile-app-card-content = Utilizatz lo navegador mobil amb una proteccion integrada contra las publicitats que pistan.
 mobile-app-links = Navegador { -brand-product-name } per <a data-l10n-name="android-mobile-inline-link">Android</a> et <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Oblidatz pas jamai un senhal
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Gestion de senhal
 lockwise-header-content = { -lockwise-brand-name } gardatz d’un biais segur vòstres senhals dins lo navegador.
 lockwise-header-content-logged-in = Salvatz e sincronizatz vòstres senhals sus totes vòstres periferics d’un biais segur.
 protection-report-view-logins-button = Veire los identificants
     .title = Anar als identificants gardats
-lockwise-no-logins-content = Installatz l’aplicacion <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> per accedir a vòstres senhals de pertot.
+protection-report-save-passwords-button = Salvar los senhals
+    .title = Salvar los senhals dins { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Gestion dels senhals
+    .title = Gestion dels senhals de { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Emportatz vòstres senhals pertot
 lockwise-no-logins-card-content = Utilizatz los senhals gardats dins { -brand-short-name } sus qual que siá periferic.
 lockwise-app-links = { -lockwise-brand-name } per <a data-l10n-name="lockwise-android-inline-link">Android</a> e <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -75,6 +88,23 @@ lockwise-passwords-stored =
         [one] Senhal gardat de forma segura <a data-l10n-name="lockwise-how-it-works">Cossí fonciona</a>
        *[other] Senhals gardats de forma segura <a data-l10n-name="lockwise-how-it-works">Cossí fonciona</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] 1 senhal pòt aver estat divulgat a causa d’una pèrda de donadas.
+       *[other] { $count } senhals pòdon aver estats divulgats a causa d’una pèrda de donadas.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] 1 senhal es gardat en seguretat
+       *[other] Vòstres senhals son gardats en seguretat
+    }
+lockwise-how-it-works-link = Cossí fonciona
 turn-on-sync = Activar { -sync-brand-short-name }…
     .title = Anar a las preferéncias
 manage-connected-devices = Gerir los periferics…
@@ -91,6 +121,12 @@ monitor-header-content-no-account = Consultatz { -monitor-brand-name } per verif
 monitor-header-content-signed-in = { -monitor-brand-name } vos avisa se vòstras informacions apareisson dins una pèrda de donadas coneguda.
 monitor-sign-up = S’inscriure a las alèrtas de pèrdas de donadas
 auto-scan = Automaticament verificat uèi
+monitor-emails-tooltip =
+    .title = Veire las adreças electronicas sus { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Veire las divulgacions de donadas conegudas sus { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Veire los senhals esbrudits sus { -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

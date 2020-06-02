@@ -37,6 +37,12 @@ protection-report-page-title = Меры аховы прыватнасці
 protection-report-content-title = Меры аховы прыватнасці
 etp-card-title = Узмоцненая ахова ад сачэння
 etp-card-content = Трэкеры ідуць за вамі па сеціве, каб сабраць інфармацыю пра вашыя звычкі і зацікаўленасці. { -brand-short-name } блакуе многія з гэтых трэкераў і іншых зламысных скрыптоў.
+protection-report-webpage-title = Панэль стану аховы
+protection-report-page-content-title = Панэль стану аховы
+protection-report-page-summary = { -brand-short-name } можа ахоўваць вашу прыватнасць за кадрам падчас аглядання. Гэта персаналізаваная зводка аб ахове, уключна з інструментамі для кантролю вашай бяспекі ў Інтэрнэце.
+etp-card-title-always = Узмоцненая ахова ад сачэння: заўсёды ўключана
+etp-card-title-custom-not-blocking = Узмоцненая ахова ад сачэння: ВЫКЛЮЧАНА
+etp-card-content-summary = Калі нераспазнаныя кампаніі спрабуюць таемна сачыць за вамі ў Інтэрнэце, { -brand-short-name } аўтаматычна спыняе многія з іх.
 protection-report-etp-card-content-custom-not-blocking = Усе меры аховы зараз адключаны. Выберыце, якія трэкеры трэба заблакаваць, кіруючы наладамі аховы { -brand-short-name }.
 protection-report-manage-protections = Кіраваць наладамі
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -56,16 +62,23 @@ cryptominer-tab-title = Майнеры крыптавалют
 cryptominer-tab-content = Майнеры крыптавалют выкарыстоўваюць вылічальную магутнасць вашай сістэмы, каб здабываць лічбавыя грошы. Скрыпты для здабычы крыптавалют разраджаюць вашу батарэю, запавольваюць працу камп'ютара і могуць павялічыць ваш выдаткі на электраэнергію. <a data-l10n-name="learn-more-link">Даведацца больш</a>
 protections-close-button =
     .aria-label = Закрыць
+protections-close-button2 =
+    .aria-label = Закрыць
+    .title = Закрыць
 mobile-app-title = Блакуйце рэкламныя трэкеры на некалькіх прыладах
 mobile-app-card-content = Выкарыстоўвайце мабільны браўзер з убудаванай аховай ад рэкламнага сачэння.
 mobile-app-links = { -brand-product-name } Браўзер для <a data-l10n-name="android-mobile-inline-link">Android</a> і <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Больш ніколі не забывайце свой пароль
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Кіраванне паролямі
 lockwise-header-content = { -lockwise-brand-name } надзейна захоўвае вашы паролі ў вашым браўзеры.
 lockwise-header-content-logged-in = Бяспечна захоўвайце і сінхранізуйце паролі на ўсіх сваіх прыладах.
 protection-report-view-logins-button = Прагляд лагінаў
     .title = Перайсці да захаваных лагінаў
-lockwise-no-logins-content = Атрымайце праграму <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a>, каб трымаць свае паролі заўжды пры сабе.
+protection-report-save-passwords-button = Захоўваць паролі
+    .title = Захоўваць паролі ў { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Кіраваць паролямі
+    .title = Кіраваць паролямі ў { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Вазьміце свае паролі ўсюды
 lockwise-no-logins-card-content = Выкарыстоўвайце паролі, захаваныя ў { -brand-short-name }, на любой прыладзе.
 lockwise-app-links = { -lockwise-brand-name } для <a data-l10n-name="lockwise-android-inline-link">Android</a> і <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -78,6 +91,25 @@ lockwise-passwords-stored =
         [few] Паролі надзейна захаваны <a data-l10n-name="lockwise-how-it-works">Як гэта працуе</a>
        *[many] Паролі надзейна захаваны <a data-l10n-name="lockwise-how-it-works">Як гэта працуе</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] 1 пароль, імаверна, выкрыты ў выніку ўцечкі дадзеных.
+        [few] { $count } паролі, імаверна, выкрыты ў выніку ўцечкі дадзеных.
+       *[many] { $count } пароляў, імаверна, выкрыта ў выніку ўцечкі дадзеных.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] Надзейна захоўваецца { $count } пароль.
+        [few] Вашы паролі надзейна захоўваюцца.
+       *[many] Вашы паролі надзейна захоўваюцца.
+    }
+lockwise-how-it-works-link = Як гэта працуе
 turn-on-sync = Уключыць { -sync-brand-short-name }…
     .title = Перайсці да налад сінхранізацыі
 manage-connected-devices = Кіраваць прыладамі…
@@ -95,6 +127,12 @@ monitor-header-content-no-account = Паспрабуйце { -monitor-brand-name
 monitor-header-content-signed-in = { -monitor-brand-name } папярэдзіць, калі вашы звесткі з'явяцца ў вядомым парушэнні дадзеных.
 monitor-sign-up = Падпішыцеся на абвесткі аб уцечках
 auto-scan = Аўтаматычна прасканавана сёння
+monitor-emails-tooltip =
+    .title = Пабачыць адрасы пошты, якія назіраюцца ў { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Пабачыць вядомыя ўцечкі дадзеных на { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Пабачыць выкрытыя паролі на { -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

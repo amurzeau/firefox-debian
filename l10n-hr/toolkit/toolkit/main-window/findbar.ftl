@@ -6,9 +6,9 @@
 ### This file contains the entities needed to use the Find Bar.
 
 findbar-next =
-    .tooltiptext = Pronađi iduće javljanje ovog izraza
+    .tooltiptext = Pronađi sljedeće pojavljivanje ovog izraza
 findbar-previous =
-    .tooltiptext = Pronađi prethodno javljanje ovog izraza
+    .tooltiptext = Pronađi prethodno pojavljivanje ovog izraza
 findbar-find-button-close =
     .tooltiptext = Zatvori traku pretraživanja
 findbar-highlight-all2 =
@@ -18,14 +18,14 @@ findbar-highlight-all2 =
             [macos] I
            *[other] I
         }
-    .tooltiptext = Istakni sva ponavljanja fraze
+    .tooltiptext = Istakni sva ponavljanja traženog izraza
 findbar-case-sensitive =
-    .label = Razlikovanje velikih i malih slova
+    .label = Razlikuj velika i mala slova
     .accesskey = j
-    .tooltiptext = Pretraživanje s razlikovanjem velikih i malih slova
+    .tooltiptext = Razlikuj velika i mala slova prilikom pretraživanja
 findbar-match-diacritics =
-    .label = Razlikovanje dijakritičkih znakova
-    .accesskey = d
+    .label = Razlikuj dijakritičke znakove
+    .accesskey = a
     .tooltiptext = Razlikuj slova s dijakritičkim znakovima i osnovna slova (npr. kad tražiš riječi „kuca”, riječ „kuća” se neće prikazati u rezultatima)
 findbar-entire-word =
     .label = Cijele riječi

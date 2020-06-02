@@ -62,9 +62,6 @@ toolbar-button-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-page =
-    .aria-label = i-Bookmark ang Pahinang Ito
-    .accesskey = m
 main-context-menu-bookmark-add =
     .aria-label = i-Bookmark ang Pahinang Ito
     .accesskey = m
@@ -265,7 +262,7 @@ main-context-menu-link-send-to-device =
     .label = Ipadala ang Link sa Device
     .accesskey = D
 main-context-menu-frame =
-    .label = Eto ang Frame
+    .label = Ang Frame na Ito
     .accesskey = h
 main-context-menu-frame-show-this =
     .label = Ipakita lang ang Frame na ito
@@ -317,3 +314,7 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = Alamin ang tungkol sa DRM…
     .accesskey = D
+# Checkbox displayed at the bottom of the What's New panel, allowing users to 
+# enable/disable What's New notifications.
+cfr-whatsnew-panel-footer-checkbox =
+    .label = Mag-abiso tungkol sa mga bagong feature

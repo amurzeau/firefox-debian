@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Désactiver la vérification du navigateur par 
 policy-DownloadDirectory = Définir et verrouiller le répertoire de téléchargement.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Activer ou désactiver le blocage de contenu et permettre de verrouiller ce choix.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Activer ou désactiver les extensions de médias chiffrés (EME) et permettre de verrouiller ce choix.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -61,7 +63,7 @@ policy-ExtensionSettings = Gérer tous les aspects de l’installation d’exten
 policy-ExtensionUpdate = Activer ou désactiver la mise à jour automatique des extensions.
 policy-FirefoxHome = Configurer l’accueil de Firefox.
 policy-FlashPlugin = Autoriser ou non l’utilisation du plugin Flash.
-policy-HardwareAcceleration = Si faux, désactive l’accélération matérielle.
+policy-HardwareAcceleration = Positionner à false pour désactiver l’accélération matérielle.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Définir la page d’accueil et permettre de la verrouiller.
 policy-InstallAddonsPermission = Autoriser certains sites web à installer des extensions.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = Définir si, par défaut, { -brand-short-name 
 policy-OverrideFirstRunPage = Contrôler la page de premier démarrage. Laissez cette règle vide pour désactiver la page de premier démarrage.
 policy-OverridePostUpdatePage = Contrôler la page « Nouveautés » après une mise à jour. Laissez cette règle vide pour désactiver la page après une mise à jour.
 policy-PasswordManagerEnabled = Activer l’enregistrement des mots de passe dans le gestionnaire de mots de passe.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Désactiver ou configurer PDF.js, la visionneuse PDF intégrée dans { -brand-short-name }.
 policy-Permissions2 = Configurer les permissions pour la caméra, le microphone, la localisation, les notifications et la lecture automatique.
 policy-PopupBlocking = Autoriser certains sites web à afficher des popups par défaut.
 policy-Preferences = Définir et verrouiller la valeur d’un sous-ensemble de préférences.

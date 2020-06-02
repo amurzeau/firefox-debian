@@ -2,50 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Privat browsing)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Privat browsing)
-       *[other] { $title } - { -brand-full-name } (Privat browsing)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = Vis information om websted
 
@@ -108,7 +64,6 @@ urlbar-tip-icon-description =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Tast mindre, find mere: Søg med { $engineName } direkte i adressefeltet.
-
 urlbar-search-tips-redirect-2 = Start din søgning i adressefeltet for at få forslag fra { $engineName } og din browserhistorik.
 
 ##
@@ -154,7 +109,6 @@ page-action-manage-extension =
     .label = Håndter udvidelse…
 page-action-remove-from-urlbar =
     .label = Fjern fra adressefeltet
-
 page-action-remove-extension =
     .label = Fjern udvidelse
 
@@ -247,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = A
 identity-more-info-link-text =
     .label = Mere information
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Minimer
+browser-window-maximize-button =
+    .tooltiptext = Maksimer
+browser-window-restore-down-button =
+    .tooltiptext = Gendan fra maksimeret
+browser-window-close-button =
+    .tooltiptext = Luk
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Kamera til deling:
+    .accesskey = K
+popup-select-microphone =
+    .value = Mikrofon til deling:
+    .accesskey = M
+popup-all-windows-shared = Alle synlige vinduer på din skærm vil blive delt.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = For at bruge F12 som genvej skal du først åbne udviklerværktøj fra menuen Webudvikler.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Søg eller indtast en adresse
+urlbar-placeholder =
+    .placeholder = Søg eller indtast en adresse
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Browseren fjernstyres
+urlbar-permissions-granted =
+    .tooltiptext = Du har givet dette websted yderligere tilladelser.
+urlbar-switch-to-tab =
+    .value = Skift til faneblad:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Udvidelse:
+urlbar-go-end-cap =
+    .tooltiptext = Gå til adressen i adressefeltet
+urlbar-page-action-button =
+    .tooltiptext = Sidehandlinger
+urlbar-pocket-button =
+    .tooltiptext = Gem til { -pocket-brand-name }

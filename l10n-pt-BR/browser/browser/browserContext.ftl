@@ -62,9 +62,6 @@ toolbar-button-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-page =
-    .aria-label = Adicionar esta página aos favoritos
-    .accesskey = m
 main-context-menu-bookmark-add =
     .aria-label = Adicionar esta página aos favoritos
     .accesskey = m
@@ -259,7 +256,7 @@ main-context-menu-generate-new-password =
     .label = Usar senha gerada…
     .accesskey = g
 main-context-menu-keyword =
-    .label = Adicionar uma palavra-chave para esta pesquisa…
+    .label = Adicionar um atalho para esta pesquisa…
     .accesskey = r
 main-context-menu-link-send-to-device =
     .label = Enviar Link para dispositivo
@@ -317,3 +314,7 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = Saiba mais sobre DRM…
     .accesskey = D
+# Checkbox displayed at the bottom of the What's New panel, allowing users to 
+# enable/disable What's New notifications.
+cfr-whatsnew-panel-footer-checkbox =
+    .label = Me notificar sobre novos recursos

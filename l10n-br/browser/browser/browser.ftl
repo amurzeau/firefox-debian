@@ -2,66 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Merdeiñ prevez)
-       *[default] { -brand-full-name }
-    }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (Merdeiñ prevez)
-       *[default] { $title } - { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Merdeiñ prevez)
-       *[other] { $title } - { -brand-full-name } (Merdeiñ prevez)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = Gwelout titouroù al lec'hienn
 
@@ -124,7 +64,7 @@ urlbar-tip-icon-description =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Skrivit nebeutoc'h, kavit muioc'h: Klaskit war { $engineName } adalek ho parrenn chomlec'h.
-urlbar-search-tips-redirect = Krogit gant ar c'hlask amañ evit gwelout alioù eus { $engineName } hag ho roll istor merdeiñ.
+urlbar-search-tips-redirect-2 = Krogit ho klask er varrenn-chomlec'h evit gwelout alioù klask { $engineName } hag ho roll istor merdeiñ.
 
 ##
 
@@ -169,6 +109,8 @@ page-action-manage-extension =
     .label = Merañ an askouezh...
 page-action-remove-from-urlbar =
     .label = Lemel kuit diouzh ar varrenn chomlec'h
+page-action-remove-extension =
+    .label = Dilemel an askouezh
 
 ## Auto-hide Context Menu
 
@@ -259,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = G
 identity-more-info-link-text =
     .label = Muioc'h a stlennoù
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Bihanaat
+browser-window-maximize-button =
+    .tooltiptext = Brasaat
+browser-window-restore-down-button =
+    .tooltiptext = Assav
+browser-window-close-button =
+    .tooltiptext = Serriñ
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Webkam da rannañ :
+    .accesskey = W
+popup-select-microphone =
+    .value = Mikrofon da rannañ :
+    .accesskey = M
+popup-all-windows-shared = Rannet e vo an holl brenestroù gwelus war ho skramm.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = Evit ober gant ar verradenn F12, digorit DevTools dre al lañser diorroen web.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Bizskrivit un termen da glask pe ur chomlec'h
+urlbar-placeholder =
+    .placeholder = Bizskrivit un termen da glask pe ur chomlec'h
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Reoliet a-bell eo ar merdeer
+urlbar-permissions-granted =
+    .tooltiptext = Roet ho peus aotreoù ouzhpenn d'al lec'hienn-mañ.
+urlbar-switch-to-tab =
+    .value = Mont d'an ivinell :
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Askouezh:
+urlbar-go-end-cap =
+    .tooltiptext = Mont d'ar chomlec'h er varrenn lec'hiañ
+urlbar-page-action-button =
+    .tooltiptext = Gweredoù ar bajenn
+urlbar-pocket-button =
+    .tooltiptext = Enrollañ etrezek { -pocket-brand-name }

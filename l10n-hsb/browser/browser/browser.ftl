@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Priwatny modus)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Priwatny modus)
-       *[other] { $title } - { -brand-full-name } (Priwatny modus)
-    }
 urlbar-identity-button =
     .aria-label = Sydłowe informacije wobhladać
 
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Pisajće mjenje, namakajće wjace: Pytajće z { $engineName } direktnje ze swojeho adresoweho pola.
 urlbar-search-tips-redirect-2 = Započńće swoje pytanje w adresowym polu, zo byšće namjety wot { $engineName } a ze swojeje přehladowanskeje historije widźał.
-
-##
-
 
 ##
 
@@ -245,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = z
 identity-more-info-link-text =
     .label = Dalše informacije
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Miniměrować
+browser-window-maximize-button =
+    .tooltiptext = Maksiměrować
+browser-window-restore-down-button =
+    .tooltiptext = Pomjeńšić
+browser-window-close-button =
+    .tooltiptext = Začinić
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Kamera, kotraž ma so hromadźe wužiwać:
+    .accesskey = K
+popup-select-microphone =
+    .value = Mikrofon, kotryž ma so hromadźe wužiwać:
+    .accesskey = M
+popup-all-windows-shared = Wšě widźomne wokna na wašej wobrazowce budu so dźělić.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = Zo byšće tastu F12 wužiwał, wočińće najprjedy DevTools přez meni Webwuwiwar.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Pytać abo adresu zapodać
+urlbar-placeholder =
+    .placeholder = Pytać abo adresu zapodać
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Wobhladowak so zdaloka wodźi
+urlbar-permissions-granted =
+    .tooltiptext = Sće tutomu websydłu přidatne prawa dał.
+urlbar-switch-to-tab =
+    .value = K rajtarkej přeńć:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Rozšěrjenje:
+urlbar-go-end-cap =
+    .tooltiptext = K adresy w adresowym polu
+urlbar-page-action-button =
+    .tooltiptext = Akcije strony
+urlbar-pocket-button =
+    .tooltiptext = Pola { -pocket-brand-name } składować

@@ -232,6 +232,10 @@ translate-attribution = Tasuqilt sɣuṛ <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Tisuraf…
     .accesskey = r
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Seqdec iɣewwaṛen n unagraw-ik n wammud i “{ $localeName }” akken  ad tmesleḍ izmaz, akuden, imḍanen, d yiktazalen.
 check-user-spelling =
     .label = Senqed tira-iw ticki ttaruɣ
     .accesskey = q
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Seqdec { $app-name } (s uwennez amezwaru)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Seqdec asnas amezwer n macOS
+            [windows] Seqdec asnas amezwer n Windows
+           *[other] Seqdec asnas amezwer n unagraw
+        }
 applications-use-other =
     .label = Seqdec wiyaḍ...
 applications-select-helper = Seqdec asnas azɣaray
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = Seqdec { $plugin-name } (deg { -brand-short-name })
 applications-preview-inapp =
     .label = Sken deg { -brand-short-name }
+applications-open-inapp =
+    .label = Ldi deg { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -752,6 +769,9 @@ privacy-header = Tabaḍnit n iminig
 ## Privacy Section - Logins and Passwords
 
 logins-header = Inekcam & wawalen uffiren
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Inekcam & wawalen uffiren
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Suter akken ad teskelseḍ inekcam d wawalen uffiren i yismal web
@@ -786,6 +806,8 @@ forms-master-pw-fips-desc = Asnifel n wawal uffir agejdan ur yeddi ara
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Senqed timagit-ik akken ad ternuḍ awal uffir agejdan.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Akken ad ternuḍ awal-inek uffir agejdan, sekcem inekcam-inek n tuqqna n Windows. Ayagi ad iεiwen deg ummesten n tɣellist n yimiḍanen-inek.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These

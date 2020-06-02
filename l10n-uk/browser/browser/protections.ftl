@@ -37,6 +37,12 @@ protection-report-page-title = Захист приватності
 protection-report-content-title = Захист приватності
 etp-card-title = Розширений захист від стеження
 etp-card-content = Елементи стеження переслідують вас в мережі з метою збору інформації про ваші звички та інтереси. { -brand-short-name } блокує багато такого стеження, а також інші підозрілі скрипти.
+protection-report-webpage-title = Панель стану безпеки
+protection-report-page-content-title = Панель стану безпеки
+protection-report-page-summary = { -brand-short-name } може непомітно захищати вашу приватність під час перебування в Інтернеті. Це персоналізований підсумок стану захисту, включаючи засоби контролю вашої безпеки в Інтернеті.
+etp-card-title-always = Розширений захист від стеження: Завжди увімкнено
+etp-card-title-custom-not-blocking = Розширений захист від стеження: ВИМКНЕНО
+etp-card-content-summary = Коли невідомі компанії намагаються потайки стежити за вами в Інтернеті, { -brand-short-name } автоматично блокує більшість з них.
 protection-report-etp-card-content-custom-not-blocking = Всі засоби захисту зараз вимкнено. Оберіть, які елементи стеження блокувати, в налаштуваннях захисту { -brand-short-name }.
 protection-report-manage-protections = Керувати налаштуваннями
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -50,22 +56,29 @@ cookie-tab-title = Куки стеження між сайтами
 cookie-tab-content = Ці куки переслідують вас від одного сайту до іншого, з метою збирання даних про вашу діяльність онлайн. Вони встановлюються сторонніми рекламними й аналітичними компаніями. Блокування куків стеження між сайтами зменшує кількість реклами, що переслідує вас. <a data-l10n-name="learn-more-link">Докладніше</a>
 tracker-tab-title = Вміст стеження
 tracker-tab-description = Вебсайти можуть завантажувати зовнішню рекламу, відео, а також інший вміст з кодом стеження. Блокування такого вмісту може допомогти сайтам швидше завантажуватись, але при цьому деякі кнопки, поля форм і входів можуть не працювати. <a data-l10n-name="learn-more-link">Докладніше</a>
-fingerprinter-tab-title = Зчитування відбитку браузера
-fingerprinter-tab-content = Засоби зчитування відбитку браузера збирають дані про налаштування вашого браузера і комп'ютера, з метою створення вашого профілю. Використовуючи такий цифровий відбиток, вони можуть стежити за вами на багатьох різних вебсайтах. <a data-l10n-name="learn-more-link">Докладніше</a>
+fingerprinter-tab-title = Зчитування цифрового відбитка
+fingerprinter-tab-content = Засоби зчитування цифрового відбитка збирають дані про налаштування вашого браузера та комп'ютера, з метою створення вашого профілю. Використовуючи такий цифровий відбиток, вони можуть стежити за вами на багатьох різних вебсайтах. <a data-l10n-name="learn-more-link">Докладніше</a>
 cryptominer-tab-title = Криптомайнери
 cryptominer-tab-content = Криптомайнери використовують ресурси вашої системи для створення цифрових грошей. Криптомайнингові скрипти споживають заряд вашого акумулятора, сповільнюють роботу комп'ютера, а також можуть збільшити ваші витрати на електроенергію. <a data-l10n-name="learn-more-link">Докладніше</a>
 protections-close-button =
     .aria-label = Закрити
+protections-close-button2 =
+    .aria-label = Закрити
+    .title = Закрити
 mobile-app-title = Блокуйте рекламне стеження на всіх пристроях
 mobile-app-card-content = Використовуйте мобільний браузер із вбудованим захистом від стеження.
-mobile-app-links = Браузер { -brand-product-name } для <a data-l10n-name="android-mobile-inline-link">Android</a> та <a data-l10n-name="ios-mobile-inline-link">iOS</a>
+mobile-app-links = { -brand-product-name } для <a data-l10n-name="android-mobile-inline-link">Android</a> та <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Ніколи більше не забувайте пароль
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Керування паролями
 lockwise-header-content = { -lockwise-brand-name } безпечно зберігає ваші паролі в браузері.
 lockwise-header-content-logged-in = Безпечно зберігайте й синхронізуйте свої паролі на всіх пристроях.
 protection-report-view-logins-button = Перегляд записів
     .title = Перейти до збережених паролів
-lockwise-no-logins-content = Отримайте додаток <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a>, щоб мати свої паролі всюди з собою.
+protection-report-save-passwords-button = Зберігати паролі
+    .title = Зберігати паролі в { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Керувати паролями
+    .title = Керувати паролями в { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Отримайте свої паролі всюди
 lockwise-no-logins-card-content = Використовуйте паролі, що збережені в { -brand-short-name }, на будь-якому пристрої.
 lockwise-app-links = { -lockwise-brand-name } для <a data-l10n-name="lockwise-android-inline-link">Android</a> та <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -78,6 +91,25 @@ lockwise-passwords-stored =
         [few] Паролі надійно збережено <a data-l10n-name="lockwise-how-it-works">Як це працює</a>
        *[many] Паролів надійно збережено <a data-l10n-name="lockwise-how-it-works">Як це працює</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] 1 пароль, ймовірно, викрито внаслідок витоку даних.
+        [few] { $count } паролі, ймовірно, викрито внаслідок витоку даних.
+       *[many] { $count } паролів, ймовірно, викрито внаслідок витоку даних.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] Надійно зберігається 1 пароль.
+        [few] Надійно зберігаються { $count } паролі.
+       *[many] Надійно зберігаються { $count } паролів.
+    }
+lockwise-how-it-works-link = Як це працює
 turn-on-sync = Увімкнути { -sync-brand-short-name(case: "acc") }
     .title = Перейти до налаштувань синхронізації
 manage-connected-devices = Керувати пристроями…
@@ -95,6 +127,12 @@ monitor-header-content-no-account = Спробуйте { -monitor-brand-name }, 
 monitor-header-content-signed-in = { -monitor-brand-name } попереджає вас, якщо ваша інформація з'явилася у відомих витоках даних.
 monitor-sign-up = Підписатися на сповіщення
 auto-scan = Автоматично проскановано сьогодні
+monitor-emails-tooltip =
+    .title = Переглянути відстежувані адреси е-пошти на { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Переглянути відомі витоки даних на { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Переглянути викриті паролі на { -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
@@ -165,12 +203,12 @@ bar-tooltip-tracker =
            *[many] { $count } елементів вмісту стеження ({ $percentage }%)
         }
 bar-tooltip-fingerprinter =
-    .title = Зчитування відбитку браузера
+    .title = Зчитування цифрового відбитка
     .aria-label =
         { $count ->
-            [one] { $count } елемент зчитування відбитку браузера ({ $percentage }%)
-            [few] { $count } елементи зчитування відбитку браузера ({ $percentage }%)
-           *[many] { $count } елементів зчитування відбитку браузера ({ $percentage }%)
+            [one] { $count } елемент зчитування цифрового відбитка ({ $percentage }%)
+            [few] { $count } елементи зчитування цифрового відбитка ({ $percentage }%)
+           *[many] { $count } елементів зчитування цифрового відбитка ({ $percentage }%)
         }
 bar-tooltip-cryptominer =
     .title = Криптомайнери

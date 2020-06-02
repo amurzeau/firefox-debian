@@ -34,6 +34,7 @@ app-basics-title = Informações básicas sobre o aplicativo
 app-basics-name = Nome
 app-basics-version = Versão
 app-basics-build-id = ID da compilação
+app-basics-distribution-id = ID da distribuição
 app-basics-update-channel = Canal de atualização
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -102,7 +103,7 @@ js-incremental-gc = GC incremental
 a11y-title = Acessibilidade
 a11y-activated = Ativado
 a11y-force-disabled = Bloquear acessibilidade
-a11y-handler-used = Identificador Acessível Utilizado
+a11y-handler-used = Manipulador de acessibilidade usado
 a11y-instantiator = Instanciador de Acessibilidade
 library-version-title = Versões de bibliotecas
 copy-text-to-clipboard-label = Copiar como texto

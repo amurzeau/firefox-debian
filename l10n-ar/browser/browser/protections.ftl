@@ -43,6 +43,8 @@ protection-report-page-title = تقرير حماية الخصوصية
 protection-report-content-title = تقرير حماية الخصوصية
 etp-card-title = الحماية الموسّعة من التعقب
 etp-card-content = تحاول المتعقّبات معرفة ما تفعل على الشبكة دومًا وجمع المعلومات التي تخصّ عاداتك في التصفّح كما واهتماماتك. يحجب { -brand-short-name } أكثر هذه المتعقّبات وغيرها من سكربتات ضارة.
+etp-card-title-always = الحماية الموسّعة من التعقب: تعمل دومًا
+etp-card-title-custom-not-blocking = الحماية الموسّعة من التعقب: معطّلة
 protection-report-etp-card-content-custom-not-blocking = كلّ مزايا الحماية معطّلة. اختر أيّ متعقّبات تريد حجبها بإدارة إعدادات الحماية في { -brand-short-name }.
 protection-report-manage-protections = أدِر الإعدادات
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -55,13 +57,23 @@ cookie-tab-title = كعكات تتعقّبك بين المواقع
 tracker-tab-title = حجب المحتوى
 fingerprinter-tab-title = مسجّلات البصمات
 cryptominer-tab-title = المُعدّنات المعمّاة
+cryptominer-tab-content = تستعمل المُعدّنات المعمّاة طاقة الحساب في جهازك لتُعدّن أموالا رقمية. يستنزف هذا التعدين المدخرة ويُبطئ الجهاز ويزيد من فاتورة الكهرباء.<a data-l10n-name="learn-more-link">اطّلع على المزيد</a>
+protections-close-button =
+    .aria-label = أغلِق
+protections-close-button2 =
+    .aria-label = أغلِق
+    .title = أغلِق
 lockwise-title = بعد الآن، ”نسيت كلمة السر“ فعل ماض
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = إدارة كلمات السر
 lockwise-header-content = يخزّن { -lockwise-brand-name } كلمات السرّ لديك في متصفّحك بأمان تام.
 lockwise-header-content-logged-in = خزّن كلمات السر وزامنها على مختلف الأجهزة لديك.
 protection-report-view-logins-button = اعرض جلسات الولوج
     .title = انتقل إلى جلسات الولوج
-lockwise-no-logins-content = نزّل تطبيق <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> لتأخذ معك كلمات السر أينما ذهبت.
+protection-report-save-passwords-button = احفظ كلمات السر
+    .title = احفظ كلمات السر في { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = أدِر كلمات السر
+    .title = أدِر كلمات السر في { -lockwise-brand-short-name }
 lockwise-mobile-app-title = خُذ معك كلمات السر أينما ذهبت
 lockwise-no-logins-card-content = استعمل كلمات السر المحفوظة في { -brand-short-name } على أي جهاز.
 turn-on-sync = فعّل { -sync-brand-short-name }…

@@ -5,8 +5,8 @@
 <!ENTITY messageStorage.label "Stocare de mesaje">
 <!ENTITY securitySettings.label "Setări de securitate">
 <!ENTITY serverSettings.label "Setări pentru server">
-<!ENTITY serverType.label "Tipul serverului:">
-<!ENTITY serverName.label "Denumirea serverului:">
+<!ENTITY serverType.label "Tip server:">
+<!ENTITY serverName.label "Denumire server:">
 <!ENTITY serverName.accesskey "S">
 <!ENTITY userName.label "Nume de utilizator:">
 <!ENTITY userName.accesskey "N">
@@ -33,7 +33,7 @@
 <!ENTITY authMethod.accesskey "M">
 <!ENTITY leaveOnServer.label "Lasă mesajele pe server">
 <!ENTITY leaveOnServer.accesskey "g">
-<!ENTITY headersOnly.label "Descarcă doar anteturile">
+<!ENTITY headersOnly.label "Descarcă doar antetele">
 <!ENTITY headersOnly.accesskey "D">
 <!ENTITY deleteByAgeFromServer.label "Pentru cel mult">
 <!ENTITY deleteByAgeFromServer.accesskey "o">

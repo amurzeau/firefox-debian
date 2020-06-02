@@ -62,9 +62,6 @@ toolbar-button-page-save =
 
 ## Simple menu items
 
-main-context-menu-bookmark-page =
-    .aria-label = Toś ten bok ako cytańske znamje składowaś
-    .accesskey = c
 main-context-menu-bookmark-add =
     .aria-label = Toś ten bok ako cytańske znamje składowaś
     .accesskey = c
@@ -89,10 +86,10 @@ main-context-menu-open-link =
     .label = Wótkaz wócyniś
     .accesskey = c
 main-context-menu-open-link-new-tab =
-    .label = Wótkaz w nowem rejtarku wócyniś
+    .label = Wótkaz w nowem rejtariku wócyniś
     .accesskey = r
 main-context-menu-open-link-container-tab =
-    .label = Wótkaz w nowem kontejnerowem rejtarku wócyniś
+    .label = Wótkaz w nowem kontejnerowem rejtariku wócyniś
     .accesskey = t
 main-context-menu-open-link-new-window =
     .label = Wótkaz w nowem woknje wócyniś
@@ -271,7 +268,7 @@ main-context-menu-frame-show-this =
     .label = Jano w toś tom wobłuku pokazaś
     .accesskey = J
 main-context-menu-frame-open-tab =
-    .label = Wobłuk w nowem rejtarku wócyniś
+    .label = Wobłuk w nowem rejtariku wócyniś
     .accesskey = b
 main-context-menu-frame-open-window =
     .label = Wobłuk w nowem woknje wócyniś
@@ -317,3 +314,7 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = Zgóńśo wěcej wó DRM…
     .accesskey = D
+# Checkbox displayed at the bottom of the What's New panel, allowing users to 
+# enable/disable What's New notifications.
+cfr-whatsnew-panel-footer-checkbox =
+    .label = Wo nowych funkcijach informěrowaś

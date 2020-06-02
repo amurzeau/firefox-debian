@@ -31,6 +31,7 @@ app-basics-title = Ri najowäx richin runuk'ulem ri chokoy
 app-basics-name = B'i'aj
 app-basics-version = Ruwäch
 app-basics-build-id = Nimaläj rub'i' molïk
+app-basics-distribution-id = Jachonïk ID
 app-basics-update-channel = Rub'ey taq k'exoj ruwäch
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -287,6 +288,11 @@ sandbox-proc-type-content = rupam
 sandbox-proc-type-file = rupam yakb'äl
 sandbox-proc-type-media-plugin = q'ojom nak'ab'äl
 sandbox-proc-type-data-decoder = sik'inel tzij
+startup-cache-title = Rukache' Tikirib'äl
+startup-cache-disk-cache-path = Rub'ey Rukache' Seteb'äl
+startup-cache-ignore-disk-cache = Tirepüx Rukache' Seteb'äl
+startup-cache-found-disk-cache-on-init = Rukache' Seteb'äl Xilitäj toq Xtikirisäx
+startup-cache-wrote-to-disk-cache = Xtz'ib'äx chi re ri Rukache' Seteb'äl
 launcher-process-status-0 = Tzijon
 launcher-process-status-1 = Xchup ruma sachoj
 launcher-process-status-2 = Xb'an chi xchup
@@ -310,6 +316,7 @@ touch-enabled = chapoj richin nitzij ri okitz'ib'
 drag-enabled = chupul ruqirirexik rukajtz'ik q'axanel
 keyboard-enabled = tzijon pitz'b'äl
 autoscroll-enabled = tzijon autoscroll
+zooming-enabled = xtz'ij rusum eqal ch'opoj
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

@@ -232,6 +232,10 @@ translate-attribution = Oversettelser av <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Unntak …
     .accesskey = n
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Bruk operativsysteminnstillingene for «{ $localeName }» for å formatere datoer, klokkeslett, tall og målinger.
 check-user-spelling =
     .label = Kontroller staving mens du skriver
     .accesskey = t
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Bruk { $app-name } (standard)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Bruk macOS-standardprogrammet
+            [windows] Bruk Windows-standardprogrammet
+           *[other] Bruk systemets standardprogram
+        }
 applications-use-other =
     .label = Annet …
 applications-select-helper = Velg program
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = { $plugin-name } (i { -brand-short-name })
 applications-preview-inapp =
     .label = Forhåndsvis i { -brand-short-name }
+applications-open-inapp =
+    .label = Åpne i { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -752,6 +769,9 @@ privacy-header = Nettleserpersonvern
 ## Privacy Section - Logins and Passwords
 
 logins-header = Innlogginger og passord
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Innlogginger og passord
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Spør om å lagre brukernavn og passord for nettsteder
@@ -786,6 +806,8 @@ forms-master-pw-fips-desc = Passordendring mislyktes
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Bekreft identiteten din for å opprette et hovedpassord.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen for Windows for å opprette et hovedpassord. Dette vil gjøre kontoene dine tryggere.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -864,7 +886,7 @@ sitedata-option-block-cross-site-trackers =
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Sporing på tvers av nettsteder og sporere via sosiale medier
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
-    .label = Sporere på tvers av nettsteder og sosiale medier, og isoler gjenværende infokapsler
+    .label = Sporere på tvers av nettsteder og sosiale medier, og isolering av gjenværende infokapsler
 sitedata-option-block-unvisited =
     .label = Infokapsler fra ubesøkte nettsteder
 sitedata-option-block-all-third-party =

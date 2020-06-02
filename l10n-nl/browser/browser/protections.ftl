@@ -35,6 +35,12 @@ protection-report-page-title = Privacybeschermingen
 protection-report-content-title = Privacybeschermingen
 etp-card-title = Verbeterde bescherming tegen volgen
 etp-card-content = Trackers volgen u online om gegevens over uw surfgedrag en interesses te verzamelen. { -brand-short-name } blokkeert veel van deze trackers en andere kwaadwillende scripts.
+protection-report-webpage-title = Beveiligingsdashboard
+protection-report-page-content-title = Beveiligingsdashboard
+protection-report-page-summary = { -brand-short-name } kan achter de schermen uw privacy beschermen terwijl u surft. Dit is een gepersonaliseerde samenvatting van die bescherming, inclusief hulpmiddelen om grip te krijgen op uw online beveiliging.
+etp-card-title-always = Verbeterde bescherming tegen beveiliging: altijd aan
+etp-card-title-custom-not-blocking = Verbeterde bescherming tegen volgen: UIT
+etp-card-content-summary = Wanneer onbekende bedrijven u stiekem proberen te volgen op het web, stopt { -brand-short-name } er veel automatisch.
 protection-report-etp-card-content-custom-not-blocking = Alle beschermingen zijn momenteel uitgeschakeld. Kies welke trackers u wilt blokkeren door uw beschermingsinstellingen in { -brand-short-name } te beheren.
 protection-report-manage-protections = Instellingen beheren
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -54,16 +60,23 @@ cryptominer-tab-title = Cryptominers
 cryptominer-tab-content = Cryptominers gebruiken de rekenkracht van uw systeem om digitale valuta te genereren. Cryptominer-scripts trekken uw accu leeg, vertragen uw computer en kunnen uw energierekening omhoog jagen. <a data-l10n-name="learn-more-link">Meer info</a>
 protections-close-button =
     .aria-label = Sluiten
+protections-close-button2 =
+    .aria-label = Sluiten
+    .title = Sluiten
 mobile-app-title = Blokkeer advertentietrackers op meerdere apparaten
 mobile-app-card-content = Gebruik de mobiele browser met ingebouwde bescherming tegen advertentietrackers.
 mobile-app-links = { -brand-product-name } Browser voor <a data-l10n-name="android-mobile-inline-link">Android</a> en <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Vergeet nooit meer een wachtwoord
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Wachtwoordenbeheer
 lockwise-header-content = { -lockwise-brand-name } slaat uw wachtwoorden veilig op in uw browser.
 lockwise-header-content-logged-in = Bewaar en synchroniseer uw wachtwoorden veilig op al uw apparaten.
 protection-report-view-logins-button = Aanmeldingen weergeven
     .title = Naar opgeslagen aanmeldingen
-lockwise-no-logins-content = Download de <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a>-app om uw wachtwoorden overal mee naartoe te nemen.
+protection-report-save-passwords-button = Wachtwoorden opslaan
+    .title = Wachtwoorden opslaan in { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Wachtwoorden beheren
+    .title = Wachtwoorden in { -lockwise-brand-short-name } beheren
 lockwise-mobile-app-title = Neem uw wachtwoorden overal mee naartoe
 lockwise-no-logins-card-content = Gebruik in { -brand-short-name } opgeslagen wachtwoorden op elk apparaat.
 lockwise-app-links = { -lockwise-brand-name } voor <a data-l10n-name="lockwise-android-inline-link">Android</a> en <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -75,6 +88,23 @@ lockwise-passwords-stored =
         [one] wachtwoord veilig opgeslagen <a data-l10n-name="lockwise-how-it-works">Hoe het werkt</a>
        *[other] wachtwoorden veilig opgeslagen <a data-l10n-name="lockwise-how-it-works">Hoe het werkt</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] Er is mogelijk een wachtwoord gelekt in een datalek.
+       *[other] Er zijn mogelijk { $count } wachtwoorden gelekt in een datalek.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] Een wachtwoord is veilig opgeslagen.
+       *[other] Uw wachtwoorden worden veilig opgeslagen.
+    }
+lockwise-how-it-works-link = Hoe het werkt
 turn-on-sync = { -sync-brand-short-name } inschakelen…
     .title = Naar synchronisatievoorkeuren
 manage-connected-devices = Apparaten beheren…
@@ -91,6 +121,12 @@ monitor-header-content-no-account = Kijk op { -monitor-brand-name } om te zien o
 monitor-header-content-signed-in = { -monitor-brand-name } waarschuwt u als uw gegevens voorkomen in een bekend datalek.
 monitor-sign-up = Inschrijven voor waarschuwingen over datalekken
 auto-scan = Vandaag automatisch gescand
+monitor-emails-tooltip =
+    .title = Bekijk gecontroleerde e-mailadressen op { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Bekijk bekende datalekken op { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Bekijk gelekte wachtwoorden op { -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

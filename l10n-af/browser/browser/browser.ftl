@@ -2,66 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Private blaaiery)
-       *[default] { -brand-full-name }
-    }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (Private blaaiery)
-       *[default] { $title } - { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Private blaaiery)
-       *[other] { $title } - { -brand-full-name } (Private blaaiery)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = Wys werfinligting
 
@@ -190,3 +130,37 @@ identity-enable-mixed-content-blocking =
     .accesskey = A
 identity-more-info-link-text =
     .label = Meer inligting
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Minimeer
+browser-window-close-button =
+    .tooltiptext = Sluit
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Kamera om te deel:
+    .accesskey = K
+popup-select-microphone =
+    .value = Mikrofoon om te deel:
+    .accesskey = M
+popup-all-windows-shared = Alle sigbare vensters op die skerm sal gedeel word.
+
+## DevTools F12 popup
+
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Soek of tik adres in
+urlbar-placeholder =
+    .placeholder = Soek of tik adres in
+urlbar-switch-to-tab =
+    .value = Verwissel na oortjie:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Uitbreiding:
+urlbar-go-end-cap =
+    .tooltiptext = Gaan na die adres in die adresbalk

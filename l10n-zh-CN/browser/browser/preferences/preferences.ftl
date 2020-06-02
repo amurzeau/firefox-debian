@@ -228,6 +228,10 @@ translate-attribution = 翻译由 <img data-l10n-name="logo"/> 提供
 translate-exceptions =
     .label = 例外…
     .accesskey = x
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = 根据您操作系统的“{ $localeName }”首选项设置日期、时间、数字格式和单位制。
 check-user-spelling =
     .label = 在您输入时检查拼写
     .accesskey = t
@@ -276,6 +280,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = 使用 { $app-name } 处理（默认）
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] 使用 macOS 应用程序
+            [windows] 使用 Windows 应用程序
+           *[other] 使用系统默认应用程序
+        }
 applications-use-other =
     .label = 使用其他…
 applications-select-helper = 选择助手应用程序
@@ -301,6 +312,8 @@ applications-use-plugin-in =
     .label = 使用 { $plugin-name } （在 { -brand-short-name } 中）
 applications-preview-inapp =
     .label = 在 { -brand-short-name } 中预览
+applications-open-inapp =
+    .label = 在 { -brand-short-name } 中打开
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -314,12 +327,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -744,6 +761,9 @@ privacy-header = 浏览器隐私
 ## Privacy Section - Logins and Passwords
 
 logins-header = 登录信息与密码
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = 登录信息与密码
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = 向您询问是否保存网站的登录名和密码
@@ -778,6 +798,8 @@ forms-master-pw-fips-desc = 密码修改失败
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = 验证您的身份以创建主密码。
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = 请输入 Windows 登录凭据，以创建主密码。这有助于保护您的账户安全。
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -910,7 +932,7 @@ content-blocking-standard-desc = 平衡保护与性能。允许部分跟踪器�
 content-blocking-strict-description = 更强的保护，可能导致某些网站异常。
 content-blocking-custom-desc = 选择要拦截的内容。
 content-blocking-private-trackers = 仅在隐私窗口中拦截已知的跟踪器
-content-blocking-third-party-cookies = 第三方跟踪型 Cookie
+content-blocking-third-party-cookies = 第三方跟踪性 Cookie
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -932,8 +954,8 @@ content-blocking-etp-standard-desc = 平衡保护和性能。页面将正常加�
 content-blocking-etp-strict-desc = 更强大的保护，但可能导致某些网站异常。
 content-blocking-etp-custom-desc = 选择要拦截的跟踪器和脚本。
 content-blocking-private-windows = 隐私窗口中的跟踪性内容
-content-blocking-cross-site-tracking-cookies = 跨网站跟踪型 Cookie
-content-blocking-cross-site-tracking-cookies-plus-isolate = 跨网站跟踪型 Cookie，并隔离其余的 Cookie
+content-blocking-cross-site-tracking-cookies = 跨网站跟踪性 Cookie
+content-blocking-cross-site-tracking-cookies-plus-isolate = 跨网站跟踪性 Cookie，并隔离其余的 Cookie
 content-blocking-social-media-trackers = 社交媒体跟踪器
 content-blocking-all-cookies = 所有 Cookie
 content-blocking-unvisited-cookies = 未访问网站的 Cookie

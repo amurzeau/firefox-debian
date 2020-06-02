@@ -154,7 +154,7 @@ warn-on-open-many-tabs =
     .label = Warnować, hdyž móhło wočinjenje wjacorych rajtarkow { -brand-short-name } spomalić
     .accesskey = o
 switch-links-to-new-tabs =
-    .label = Hnydom na wotkaz přepinać, kotryž so w nowym rajtarku wočinja
+    .label = Hnydom k rajtarkej  přeńć, w kotrymž so wotkaz wočinja
     .accesskey = H
 show-tabs-in-taskbar =
     .label = Rajtarkowe přehlady we Windowsowej nadawkowej lajsće pokazać
@@ -238,6 +238,10 @@ translate-attribution = Přełožki wot <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Wuwzaća…
     .accesskey = u
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Nastajenja wašeho dźěłoweho systema za „{ $localeName }“ wužiwać, zo bychu so datumy, časy, ličby a měry formatowali.
 check-user-spelling =
     .label = Při pisanju prawopis kontrolować
     .accesskey = P
@@ -286,6 +290,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = { $app-name } wužiwać (standard)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Standardne nałoženje macOS wužiwać
+            [windows] Standardne nałoženje Windows wužiwać
+           *[other] Standardne nałoženje systema wužiwać
+        }
 applications-use-other =
     .label = Druhu wužiwać…
 applications-select-helper = Pomocne nałoženje wubrać
@@ -311,6 +322,8 @@ applications-use-plugin-in =
     .label = { $plugin-name } wužiwać (w { -brand-short-name })
 applications-preview-inapp =
     .label = Přehlad w { -brand-short-name }
+applications-open-inapp =
+    .label = W { -brand-short-name } wočinić
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -324,12 +337,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -760,6 +777,9 @@ privacy-header = Priwatnosć wobhladowaka
 ## Privacy Section - Logins and Passwords
 
 logins-header = Přizjewjenja a hesła
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Přizjewjenja a hesła
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Prašeć so, hač so maja přizjewjenja a hesła składować
@@ -794,6 +814,8 @@ forms-master-pw-fips-desc = Změnjenje hesła njeje so poradźiło
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Přepruwujće swoju identitu, zo byšće hłowne hesło wutworił.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Zapodajće swoje přizjewjenske daty Windows, zo byšće hłowne hesło wutworił. To wěstotu wašich kontow škita.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These

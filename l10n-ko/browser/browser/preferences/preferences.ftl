@@ -179,7 +179,7 @@ containers-remove-cancel-button = 이 컨테이너 삭제하지 않음
 
 ## General Section - Language & Appearance
 
-language-and-appearance-header = 언어와 표현
+language-and-appearance-header = 언어와 모양
 fonts-and-colors-header = 글꼴과 색상
 default-font = 기본 글꼴
     .accesskey = D
@@ -220,6 +220,10 @@ translate-attribution = 번역:  <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = 예외…
     .accesskey = x
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = 날짜, 시간, 숫자 및 측정 단위 형식에 “{ $localeName }”에 대한 운영 체제 설정을 사용
 check-user-spelling =
     .label = 입력할 때 맞춤법 검사
     .accesskey = t
@@ -243,7 +247,7 @@ download-choose-folder =
            *[other] o
         }
 download-always-ask-where =
-    .label = 파일 저장 위치 항상 묻기
+    .label = 파일을 저장할 위치를 항상 묻기
     .accesskey = A
 applications-header = 응용 프로그램
 applications-description = { -brand-short-name }가 웹에서 다운로드한 파일이나 탐색하는 동안에 사용하는 응용 프로그램을 처리하는 방법을 선택하세요.
@@ -268,6 +272,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = { $app-name } 사용(기본값)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] macOS 기본 응용 프로그램 사용
+            [windows] Windows 기본 응용 프로그램 사용
+           *[other] 시스템 기본 응용 프로그램 사용
+        }
 applications-use-other =
     .label = 다른 프로그램 사용…
 applications-select-helper = 도우미 응용 프로그램 선택
@@ -293,6 +304,8 @@ applications-use-plugin-in =
     .label = { $plugin-name } 사용({ -brand-short-name })
 applications-preview-inapp =
     .label = { -brand-short-name } 미리 보기
+applications-open-inapp =
+    .label = { -brand-short-name }에서 열기
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -306,12 +319,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -736,6 +753,9 @@ privacy-header = 브라우저 개인정보
 ## Privacy Section - Logins and Passwords
 
 logins-header = 로그인과 비밀번호
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = 로그인과 비밀번호
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = 웹 사이트의 로그인과 비밀번호를 기억할지 묻기
@@ -770,6 +790,8 @@ forms-master-pw-fips-desc = 비밀번호 변경 실패
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = 마스터 비밀번호를 만들기 위해 ID를 확인하세요.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = 마스터 비밀번호를 만들려면, Windows 로그인 자격 증명을 입력하세요. 이는 계정의 보안을 보호하는데 도움이 됩니다.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -828,7 +850,7 @@ sitedata-total-size-calculating = 사이트 데이터와 캐시 크기 계산 �
 sitedata-total-size = 현재 저장된 쿠키, 사이트 데이터 및 캐시가 { $value } { $unit }의 디스크를 사용하고 있습니다.
 sitedata-learn-more = 더 알아보기
 sitedata-delete-on-close =
-    .label = { -brand-short-name }가 닫힐 때 쿠키와 사이트 데이터를 삭제
+    .label = { -brand-short-name }를 닫을 때 쿠키와 사이트 데이터를 삭제
     .accesskey = c
 sitedata-delete-on-close-private-browsing = 영구 사생활 보호 모드에서는 { -brand-short-name }가 닫히면 쿠키와 사이트 데이터가 항상 지워집니다.
 sitedata-allow-cookies-option =

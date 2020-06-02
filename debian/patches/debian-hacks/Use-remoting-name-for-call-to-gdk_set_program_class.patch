@@ -8,7 +8,7 @@ Closes: #907574
  1 file changed, 3 insertions(+), 4 deletions(-)
 
 diff --git a/widget/gtk/nsAppShell.cpp b/widget/gtk/nsAppShell.cpp
-index d56149ae970..def38583462 100644
+index 163a93e2d1a..04355060297 100644
 --- a/widget/gtk/nsAppShell.cpp
 +++ b/widget/gtk/nsAppShell.cpp
 @@ -24,6 +24,7 @@
@@ -19,16 +19,16 @@ index d56149ae970..def38583462 100644
  #include "ScreenHelperGTK.h"
  #include "HeadlessScreenHelper.h"
  #include "mozilla/widget/ScreenManager.h"
-@@ -176,10 +177,8 @@ nsresult nsAppShell::Init() {
-     // option when program uses gdk_set_program_class().
-     //
-     // See https://bugzilla.gnome.org/show_bug.cgi?id=747634
--    nsAutoString brandName;
--    mozilla::widget::WidgetUtils::GetBrandShortName(brandName);
--    if (!brandName.IsEmpty()) {
--      gdk_set_program_class(NS_ConvertUTF16toUTF8(brandName).get());
-+    if (gAppData) {
-+      gdk_set_program_class(gAppData->remotingName);
+@@ -178,10 +179,8 @@ nsresult nsAppShell::Init() {
+       // creating top-level windows. (At this point, a child process hasn't
+       // received the list of registered chrome packages, so the
+       // GetBrandShortName call would fail anyway.)
+-      nsAutoString brandName;
+-      mozilla::widget::WidgetUtils::GetBrandShortName(brandName);
+-      if (!brandName.IsEmpty()) {
+-        gdk_set_program_class(NS_ConvertUTF16toUTF8(brandName).get());
++      if (gAppData) {
++        gdk_set_program_class(gAppData->remotingName);
+       }
      }
    }
- 

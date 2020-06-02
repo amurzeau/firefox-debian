@@ -125,10 +125,6 @@ cfr-whatsnew-lockwise-take-link-text = ਐਪ ਲਵੋ
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = ਘੱਟ ਟਾਈਪ ਕਰੋ, ਐਡਰੈਸ ਬਾਰ ਨਾਲ ਹੋਰ ਲੱਭੋ
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = ਉਨ੍ਹਾਂ ਸਾਈਟਾਂ ਤੇ ਜਾਓ ਜਿਨ੍ਹਾਂ ਦੀ ਤੁਸੀਂ ਐਡਰੈਸ ਬਾਰ ਤੇ ਇਕ ਕਲਿੱਕ ਨਾਲ ਸਭ ਤੋਂ ਵੱਧ ਵਰਤੋਂ ਕਰਦੇ ਹੋ। { $searchEngineName } ਅਤੇ ਆਪਣੇ ਬਰਾਉਜ਼ਿੰਗ ਇਤਿਹਾਸ ਤੋਂ ਖੋਜ ਨਤੀਜਿਆਂ ਨਾਲ ਚੀਜ਼ਾਂ ਨੂੰ ਤੇਜ਼ੀ ਨਾਲ ਲੱਭੋ।
-cfr-whatsnew-searchbar-body-generic = ਉਨ੍ਹਾਂ ਸਾਈਟਾਂ ਤੇ ਜਾਓ ਜਿਨ੍ਹਾਂ ਦੀ ਤੁਸੀਂ ਐਡਰੈਸ ਬਾਰ ਤੇ ਇਕ ਕਲਿੱਕ ਨਾਲ ਸਭ ਤੋਂ ਵੱਧ ਵਰਤੋਂ ਕਰਦੇ ਹੋ। ਆਪਣੇ ਬਰਾਉਜ਼ਿੰਗ ਇਤਿਹਾਸ ਤੋਂ ਖੋਜ ਨਤੀਜਿਆਂ ਨਾਲ ਚੀਜ਼ਾਂ ਨੂੰ ਤੇਜ਼ੀ ਨਾਲ ਲੱਭੋ।
 cfr-whatsnew-searchbar-body-topsites = ਹੁਣ ਸਿਰਫ਼ ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਚੁਣੋ ਅਤੇ ਡੱਬਾ ਤੁਹਾਡੀਆਂ ਸਿਖਰਲੀਆਂ ਸਾਈਟਾਂ ਦੇ ਲਿੰਕਾਂ ਨਾਲ ਭਰ ਜਾਵੇਗਾ।
 cfr-whatsnew-searchbar-icon-alt-text = ਵੱਡਦਰਸ਼ੀ ਸ਼ੀਸ਼ਾ ਆਈਕਾਨ
 
@@ -214,3 +210,24 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = ਸਾਰੇ ਵੇਖੋ
     .accesskey = S
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = ਅਸਾਨੀ ਨਾਲ ਸੁਰੱਖਿਅਤ ਪਾਸਵਰਡ ਬਣਾਓ
+cfr-whatsnew-lockwise-body = ਹਰ ਖਾਤੇ ਲਈ ਵਿਲੱਖਣ, ਸੁਰੱਖਿਅਤ ਪਾਸਵਰਡ ਸੋਚਣੇ ਔਖੇ ਹਨ। ਜਦੋਂ ਪਾਸਵਰਡ ਬਣਾਉਣਾ ਹੋਵੇ ਤਾਂ { -brand-shorter-name } ਵਲੋਂ ਸੁਰੱਖਿਅਤ ਤਿਆਰ ਕੀਤੇ ਪਾਸਵਰਡ ਨੂੰ ਵਰਤਣ ਲਈ ਪਾਸਵਰਡ ਖੇਤਰ ਨੂੰ ਚੁਣੋ।
+cfr-whatsnew-lockwise-icon-alt = { -lockwise-brand-short-name } ਆਈਕਨ
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = ਕਮਜ਼ੋਰ ਪਾਸਵਰਡਾਂ ਬਾਰੇ ਚੇਤਾਵਨੀਆਂ ਲਵੋ
+cfr-whatsnew-passwords-body = ਹੈਕਰਾਂ ਨੂੰ ਪਤਾ ਹੈ ਕਿ ਲੋਕ ਇਕੋ ਪਾਸਵਰਡ ਵਾਰ-ਵਾਰ ਵਰਤਦੇ ਹਨ। ਜੇ ਤੁਸੀਂ ਇਕੋ ਪਾਸਵਰਡ ਕਈ ਸਾਈਤਾਂ ਲਈ ਵਰਤਿਆ ਹੈ ਅਤੇ ਉਹਨਾਂ ਸਾਈਟਾਂ ਵਿੱਚੋਂ ਇੱਕ ਡਾਟਾ ਸੰਨ੍ਹ ਵਿੱਚ ਸੀ ਤਾਂ ਤੁਹਾਨੂੰ ਉਹਨਾਂ ਸਾਈਟਾਂ ਉੱਤੇ ਆਪਣੇ ਪਾਸਵਰਡ ਨੂੰ ਬਦਲਣ ਲਈ { -lockwise-brand-short-name } ਵਿੱਚ ਚੇਤਾਵਨੀ ਮਿਲੇਗੀ।
+cfr-whatsnew-passwords-icon-alt = ਕਮਜ਼ੋਰ ਪਾਸਵਰਡ ਕੁੰਜੀ ਆਈਕਾਨ
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = ਤਸਵੀਰ-ਵਿੱਚ-ਤਸਵੀਰ ਨੂੰ ਪੂਰੀ ਸਕਰੀਨ ਉੱਤੇ ਲੈ ਜਾਓ
+cfr-whatsnew-pip-fullscreen-body = ਜਦੋਂ ਤੁਸੀਂ ਵੀਡੀਓ ਨੂੰ ਤਰਦੀ ਵਿੰਡੋ ਵਿੱਚ ਅੱਡ ਕਰਦੇ ਹੋ ਤਾਂ ਹੁਣ ਤੁਸੀਂ ਉਸ ਵਿੰਡੋ ਉੱਤੇ ਦੋ ਵਾਰ ਕਲਿੱਕ ਕਰਕੇ ਪੂਰੀ ਸਕਰੀਨ ਉੱਤੇ ਭੇਜ ਸਕਦੇ ਹੋ।
+cfr-whatsnew-pip-fullscreen-icon-alt = ਤਸਵੀਰ-ਚ-ਤਸਵੀਰ ਆਈਕਾਨ

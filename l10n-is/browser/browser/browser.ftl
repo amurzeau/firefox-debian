@@ -2,66 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Huliðsstilling)
-       *[default] { -brand-full-name }
-    }
-# This is the default window title in case there is a content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Example Title - Mozilla Firefox"
-# "private" - "Example Title - Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-#   $title (String) - Content title string.
-browser-main-window-content-title =
-    { $mode ->
-        [private] { $title } - { -brand-full-name } (Huliðsstilling)
-       *[default] { $title } - { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Huliðsstilling)
-       *[other] { $title } - { -brand-full-name } (Huliðsstilling)
-    }
-
-##
-
 urlbar-identity-button =
     .aria-label = Skoða upplýsingar um vefsvæði
 
@@ -114,7 +54,6 @@ urlbar-addons-notification-anchor =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Minni innsláttur, finna meira: Leitaðu með { $engineName } beint frá leitarslá.
-urlbar-search-tips-redirect = Byrjaðu að leita hér til að sjá tillögur frá { $engineName } og leitarferli.
 
 ##
 
@@ -233,3 +172,43 @@ identity-enable-mixed-content-blocking =
     .accesskey = e
 identity-more-info-link-text =
     .label = Nánari upplýsingar
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = Minnka
+browser-window-close-button =
+    .tooltiptext = Loka
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Myndavél til að deila:
+    .accesskey = y
+popup-select-microphone =
+    .value = Hljóðnemi til að deila:
+    .accesskey = m
+popup-all-windows-shared = Öllum sýnilegum gluggum á skjánum verður deilt.
+
+## DevTools F12 popup
+
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Leita eða sláðu inn veffang
+urlbar-placeholder =
+    .placeholder = Leita eða sláðu inn veffang
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Vafri er á fjarstýringu
+urlbar-switch-to-tab =
+    .value = Fara á flipa:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Skráarending:
+urlbar-go-end-cap =
+    .tooltiptext = Hoppa á tengilinn sem er í staðsetningarslánni
+urlbar-page-action-button =
+    .tooltiptext = Síðu aðgerðir
+urlbar-pocket-button =
+    .tooltiptext = Vista í { -pocket-brand-name }

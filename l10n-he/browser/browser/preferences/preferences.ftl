@@ -148,10 +148,10 @@ open-new-link-as-tabs =
     .label = פתיחת קישורים בלשוניות במקום בחלונות חדשים
     .accesskey = ח
 warn-on-close-multiple-tabs =
-    .label = הזהרה בעת סגירת מספר לשוניות
+    .label = הצגת אזהרה בעת סגירת מספר לשוניות
     .accesskey = ז
 warn-on-open-many-tabs =
-    .label = הזהרה בעת פתיחה של מספר לשוניות שעשויה להאט את { -brand-short-name }
+    .label = הצגת אזהרה כאשר פתיחת מספר לשוניות עשויה להאט את { -brand-short-name }
     .accesskey = פ
 switch-links-to-new-tabs =
     .label = מעבר מיידי בפתיחה של קישור בלשונית חדשה
@@ -221,7 +221,7 @@ choose-browser-language-description = נא לבחור את השפות בהן י�
 manage-browser-languages-button =
     .label = הגדרת חלופות…
     .accesskey = ח
-confirm-browser-language-change-description = הפעלת { -brand-short-name } מחדש כדי להחיל את השינויים האלה
+confirm-browser-language-change-description = יש להפעיל את { -brand-short-name } מחדש כדי להחיל את השינויים האלה
 confirm-browser-language-change-button = החלה והפעלה מחדש
 translate-web-pages =
     .label = תרגום תוכן רשת
@@ -280,6 +280,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = שימוש ב־{ $app-name } (ברירת מחדל)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] שימוש ביישום ברירת המחדל של macOS
+            [windows] שימוש ביישום ברירת המחדל של Windows
+           *[other] שימוש ביישום ברירת המחדל של המערכת
+        }
 applications-use-other =
     .label = שימוש ביישום אחר…
 applications-select-helper = בחירת יישום מסייע
@@ -305,6 +312,8 @@ applications-use-plugin-in =
     .label = השתמש בתוסף { $plugin-name } (בתוך { -brand-short-name })
 applications-preview-inapp =
     .label = תצוגה מקדימה ב־{ -brand-short-name }
+applications-open-inapp =
+    .label = פתיחה ב־{ -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +327,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -752,6 +765,9 @@ privacy-header = פרטיות דפדפן
 ## Privacy Section - Logins and Passwords
 
 logins-header = כניסות וססמאות
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = כניסות וססמאות
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = הצגת בקשה לשמירת פרטי כניסה וססמאות לאתרים
@@ -759,6 +775,9 @@ forms-ask-to-save-logins =
 forms-exceptions =
     .label = חריגות…
     .accesskey = ר
+forms-generate-passwords =
+    .label = הצעה ויצירת ססמאות חזקות
+    .accesskey = ס
 forms-breach-alerts =
     .label = הצגת התרעות על ססמאות עבור אתרים שנפרצו
     .accesskey = ס
@@ -783,6 +802,8 @@ forms-master-pw-fips-desc = שינוי הססמה נכשל
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = יש לאמת את הזהות שלך כדי ליצור ססמה ראשית.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = כדי ליצור ססמה ראשית, יש להזין את פרטי הכניסה שלך ל־Windows. פעולה זאת מסייעת בהגנה על אבטחת החשבונות שלך.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -940,6 +961,7 @@ content-blocking-warning-title = לתשומת לבך!
 content-blocking-warning-description = חסימת תוכן עלולה לגרום לאתרים מסוימים להישבר. קל לבטל חסימה עבור אתרים בטוחים.
 content-blocking-learn-how = מידע נוסף
 content-blocking-etp-warning-description = חסימת רכיבי מעקב עשויה להשפיע על הפונקציונליות של אתרים מסוימים. יש לטעון מחדש דף עם רכיבי מעקב כדי לטעון את כל התוכן.
+content-blocking-and-isolating-etp-warning-description = חסימת רכיבי מעקב ובידוד עוגיות עשויים להשפיע על הפונקציונליות של אתרים מסוימים. יש לטעון מחדש דף עם רכיבי מעקב כדי לטעון את כל התוכן.
 content-blocking-warning-learn-how = מידע נוסף
 content-blocking-reload-description = יהיה עליך לטעון מחדש את הלשוניות שלך כדי להחיל שינויים אלו.
 content-blocking-reload-tabs-button =
@@ -1023,7 +1045,7 @@ permissions-block-popups-exceptions =
     .label = חריגות…
     .accesskey = ר
 permissions-addon-install-warning =
-    .label = הזהרה כאשר אתרים מנסים להתקין תוספות
+    .label = הצגת אזהרה כשאתרים מנסים להתקין תוספות
     .accesskey = ה
 permissions-addon-exceptions =
     .label = חריגות…
@@ -1072,7 +1094,7 @@ security-block-downloads =
     .label = חסימת הורדות מסוכנות
     .accesskey = ה
 security-block-uncommon-software =
-    .label = הזהרה על תוכנות לא נפוצות ותכנות לא רצויות
+    .label = הצגת אזהרה מפני תכניות לא רצויות ולא נפוצות
     .accesskey = ת
 
 ## Privacy Section - Certificates

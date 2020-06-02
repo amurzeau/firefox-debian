@@ -35,6 +35,12 @@ protection-report-page-title = Mbrojtje Privatësie
 protection-report-content-title = Mbrojtje Privatësie
 etp-card-title = Mbrojtje e Thelluar Nga Gjurmimi
 etp-card-content = Gjurmuesit ju ndjekin nëpër internet për të grumbulluar të dhëna rreth zakoneve dhe interesave tuaja të shfletimit. { -brand-short-name } bllokon mjaft prej këtyre gjurmuesve dhe programtheve të tjerë dashakeqë.
+protection-report-webpage-title = Pult Mbrojtjesh
+protection-report-page-content-title = Pult Mbrojtjesh
+protection-report-page-summary = { -brand-short-name }-i mund të mbrojë privatësinë tuaj në prapaskenë, teksa shfletoni. Kjo është një përmbledhje e personalizuar e këtyre mbrojtjeve, përfshi mjete për të marrë kontrollin e sigurisë tuaj internetore.
+etp-card-title-always = Mbrojtje e Thelluar Nga Gjurmimi: Përherë On
+etp-card-title-custom-not-blocking = Mbrojtje e Thelluar Nga Gjurmimi: OFF
+etp-card-content-summary = Kur shoqëri të panjohura rreken t’ju ndjekin fshehtazi nëpër internet, { -brand-short-name }-i ndalon automatikisht mjaft prej tyre.
 protection-report-etp-card-content-custom-not-blocking = Krejt mbrojtjet janë të çaktivizuara. Duke administruar rregullimet tuaja për mbrojtje { -brand-short-name }, zgjidhni cilët gjurmues të bllokohen.
 protection-report-manage-protections = Administroni Rregullime
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -54,16 +60,23 @@ cryptominer-tab-title = Nxjerrës kriptomonedhash
 cryptominer-tab-content = Nxjerrësit e kriptomonedhave e përdorin fuqinë përllogaritëse të sistemit tuaj për të nxjerrë para dixhitale. Programthet për nxjerrje kriptomonedhash konsumojnë energjinë e baterisë tuaj, ngadalësojnë kompjuterin tuaj dhe mund të sjellin shtim të faturës tuaj për energjinë. <a data-l10n-name="learn-more-link">Mësoni më tepër</a>
 protections-close-button =
     .aria-label = Mbylle
+protections-close-button2 =
+    .aria-label = Mbylle
+    .title = Mbylle
 mobile-app-title = Bllokoni gjurmues reklamash nëpër më shumë pajisje
 mobile-app-card-content = Përdorni shfletuesin për celular me mbrojtje të brendshme kundër gjurmuesve të reklamave
 mobile-app-links = Shfletuesi { -brand-product-name } për <a data-l10n-name="android-mobile-inline-link">Android</a> dhe <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Mos harroni kurrë më një fjalëkalim
 lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Administrim Fjalëkalimesh
 lockwise-header-content = { -lockwise-brand-name } depoziton në mënyrë të sigurt fjalëkalimet tuaj në shfletuesin tuaj.
 lockwise-header-content-logged-in = Depozitoni dhe njëkohësoni në mënyrë të sigurt fjalëkalimet tuaj në krejt pajisjet tuaja.
 protection-report-view-logins-button = Shihni Kredenciale Hyrjesh
     .title = Kaloni te Kredenciale të Ruajtura Hyrjesh
-lockwise-no-logins-content = Merrni aplikacionin <a data-l10n-name="lockwise-inline-link">{ -lockwise-brand-name }</a> që t’i merrni kudo me vete fjalëkalimet tuaj.
+protection-report-save-passwords-button = Ruaj Fjalëkalime
+    .title = Ruajini Fjalëkalimet në { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Administroni Fjalëkalime
+    .title = Administroni Fjalëkalime në { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Merrini fjalëkalimet tuaja kudo
 lockwise-no-logins-card-content = Përdorni në çfarëdo pajisje fjalëkalime të ruajtur në { -brand-short-name }.
 lockwise-app-links = { -lockwise-brand-name } për <a data-l10n-name="lockwise-android-inline-link">Android</a> dhe <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -75,6 +88,23 @@ lockwise-passwords-stored =
         [one] Fjalëkalim i depozituar në mënyrë të sigurt <a data-l10n-name="lockwise-how-it-works">Si funksionon</a>
        *[other] Fjalëkalime të depozituar në mënyrë të sigurt <a data-l10n-name="lockwise-how-it-works">Si funksionon</a>
     }
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] 1 fjalëkalim mund të jetë ekspoziar në cenim të dhënash.
+       *[other] { $count } fjalëkalime mund të jenë ekspozuar në një cenim të dhënash.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] 1 fjalëkalim u depozitua në mënyrë të sigurt.
+       *[other] Fjalëkalimet tuaj po depozitohen në mënyrë të sigurt.
+    }
+lockwise-how-it-works-link = Si funksionon
 turn-on-sync = Aktivizoni { -sync-brand-short-name }…
     .title = Shkoni te parapëlqimet rreth njëkohësimit
 manage-connected-devices = Administroni pajisje…
@@ -91,6 +121,12 @@ monitor-header-content-no-account = Kontrolloni me { -monitor-brand-name } që t
 monitor-header-content-signed-in = { -monitor-brand-name } ju vë në dijeni, nëse të dhënat tuaja janë shfaqur te një cenim i ditur të dhënash.
 monitor-sign-up = Regjistrohuni për Sinjalizime rreth Cenimesh
 auto-scan = Kontrolluar automatikisht sot
+monitor-emails-tooltip =
+    .title = Shihni adresa email të mbikëqyrura në { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Shihni cenime të ditur të dhënash në { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Shihni fjalëkalime të ekspozuar në { -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.

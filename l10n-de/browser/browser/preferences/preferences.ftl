@@ -232,6 +232,10 @@ translate-attribution = Übersetzung mittels <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Ausnahmen…
     .accesskey = u
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Einstellungen des Betriebssystems für "{ $localeName }" verwenden, um Datum, Uhrzeit, Zahlen und Maßeinheiten zu formatieren.
 check-user-spelling =
     .label = Rechtschreibung während der Eingabe überprüfen
     .accesskey = R
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Mit { $app-name } öffnen (Standard)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] macOS-Standardanwendung verwenden
+            [windows] Windows-Standardanwendung verwenden
+           *[other] System-Standardanwendung verwenden
+        }
 applications-use-other =
     .label = Andere Anwendung…
 applications-select-helper = Hilfsanwendung wählen
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = { $plugin-name } (in { -brand-short-name }) verwenden
 applications-preview-inapp =
     .label = Vorschau in { -brand-short-name }
+applications-open-inapp =
+    .label = In { -brand-short-name } öffnen
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -752,6 +769,9 @@ privacy-header = Browser-Datenschutz
 ## Privacy Section - Logins and Passwords
 
 logins-header = Zugangsdaten & Passwörter
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Zugangsdaten & Passwörter
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Fragen, ob Zugangsdaten und Passwörter für Websites gespeichert werden sollen
@@ -863,6 +883,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Zur seitenübergreifenden Aktivitätenverfolgung
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Zur seitenübergreifenden Aktivitätenverfolgung und von sozialen Netzwerken
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Zur seitenübergreifenden Aktivitätenverfolgung und von sozialen Netzwerken, dabei verbleibende Cookies isolieren
 sitedata-option-block-unvisited =
     .label = Cookies von nicht besuchten Websites
 sitedata-option-block-all-third-party =
@@ -939,6 +961,7 @@ content-blocking-etp-strict-desc = Stärkerer Schutz, einige Websites oder manch
 content-blocking-etp-custom-desc = Wählen Sie, welche Art von Skripten zur Aktivitätenverfolgung und sonstige Inhalte blockiert werden.
 content-blocking-private-windows = Inhalte zur Aktivitätenverfolgung in privaten Fenstern
 content-blocking-cross-site-tracking-cookies = Cookies zur seitenübergreifenden Aktivitätenverfolgung
+content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies zur seitenübergreifenden Aktivitätenverfolgung, dabei verbleibende Cookies isolieren
 content-blocking-social-media-trackers = Skripte zur Aktivitätenverfolgung durch soziale Netzwerke
 content-blocking-all-cookies = Alle Cookies
 content-blocking-unvisited-cookies = Cookies von nicht besuchten Websites
@@ -951,6 +974,7 @@ content-blocking-warning-title = Achtung!
 content-blocking-warning-description = Das Blockieren von Inhalten kann bei einigen Websites zu Problemen führen. Das Deaktivieren des Blockierens für von Ihnen vertraute Seiten ist ganz einfach.
 content-blocking-learn-how = Erfahren Sie mehr
 content-blocking-etp-warning-description = Das Blockieren von Skripten zur Aktivitätenverfolgung kann Auswirkungen auf das Funktionieren einiger Websites haben. Laden Sie eine Seite einschließlich Skripten zur Aktivitätenverfolgung neu, damit der komplette Inhalte geladen wird.
+content-blocking-and-isolating-etp-warning-description = Das Blockieren von Skripten zur Aktivitätenverfolgung und das Isolieren von Cookies kann Auswirkungen auf das Funktionieren einiger Websites haben. Laden Sie eine Seite einschließlich Skripten zur Aktivitätenverfolgung neu, damit der komplette Inhalte geladen wird.
 content-blocking-warning-learn-how = Weitere Informationen
 content-blocking-reload-description = Um die Änderungen anzuwenden, müssen alle Tabs neu geladen werden.
 content-blocking-reload-tabs-button =

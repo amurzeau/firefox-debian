@@ -6,13 +6,13 @@
 ### This file contains the entities needed to use the Find Bar.
 
 findbar-next =
-    .tooltiptext = Găsește apariția următoare a textului
+    .tooltiptext = Mergi la apariția următoare a textului
 findbar-previous =
-    .tooltiptext = Găsește apariția anterioară a textului
+    .tooltiptext = Mergi la apariția anterioară a textului
 findbar-find-button-close =
     .tooltiptext = Închide bara de căutare
 findbar-highlight-all2 =
-    .label = Evidențiază toate
+    .label = Evidențiază-le pe toate
     .accesskey =
         { PLATFORM() ->
             [macos] l
@@ -20,7 +20,7 @@ findbar-highlight-all2 =
         }
     .tooltiptext = Evidențiază toate aparițiile textului
 findbar-case-sensitive =
-    .label = Corelează literele mari și mici
+    .label = Ține cont de majuscule și minuscule
     .accesskey = c
     .tooltiptext = Căutare cu respectarea scrierii cu litere mari și mici
 findbar-match-diacritics =

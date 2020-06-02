@@ -37,7 +37,7 @@ same accesskey but will never be visible at the same time. -->
 <!ENTITY  unpinTab.accesskey                 "b">
 <!ENTITY  sendPageToDevice.label             "Trimite pagina unui dispozitiv">
 <!ENTITY  sendPageToDevice.accesskey         "n">
-<!ENTITY  sendLinkToDevice.label             "Trimite linkul unui dispozitiv">
+<!ENTITY  sendLinkToDevice.label             "Trimite linkul către un dispozitiv">
 <!ENTITY  sendLinkToDevice.accesskey         "n">
 <!ENTITY  undoCloseTab.label                 "Anulează închiderea filei">
 <!ENTITY  undoCloseTab.accesskey             "U">
@@ -98,7 +98,7 @@ shortcut shown in the GUI. SafariCommandKey is an alias provided for the
 convenience of Safari and Chrome users on macOS. See bug 1398988. -->
 <!ENTITY pageSourceCmd.SafariCommandKey "u">
 
-<!ENTITY pageInfoCmd.label "Informații privind pagina">
+<!ENTITY pageInfoCmd.label "Informații despre pagină">
 <!ENTITY pageInfoCmd.accesskey "I">
 <!ENTITY pageInfoCmd.commandkey "i">
 <!ENTITY ldbCmd.label "Depanator de așezare în pagină">
@@ -120,7 +120,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY toggleReaderMode.key "R">
 <!ENTITY toggleReaderMode.win.keycode "VK_F9">
 
-<!ENTITY fxaSignIn.label "Autentifică-te în &syncBrand.shortName.label;">
+<!ENTITY fxaSignIn.label "Autentificare în &syncBrand.shortName.label;">
 <!ENTITY fxaSignedIn.tooltip "Deschide preferințele pentru &syncBrand.shortName.label;">
 <!ENTITY fxaSignInError.label "Reconectează-te în &syncBrand.shortName.label;">
 <!ENTITY fxaUnverified.label "Verifică-ți contul">
@@ -163,14 +163,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.connectAnotherDevice2.label "Conectează alt dispozitiv…">
 <!ENTITY fxa.menu.firefoxAccount "&syncBrand.fxAccount.label;">
 
-<!ENTITY fxa.menu.signin.label "Autentifică-te în &brandProductName;">
+<!ENTITY fxa.menu.signin.label "Autentificare în &brandProductName;">
 <!ENTITY fxa.menu.turnOnSync.label "Activează &syncBrand.shortName.label;">
 <!ENTITY fxa.menu.firefoxServices.label "Servicii &brandProductName;">
 <!ENTITY fxa.menu.account.label "Cont">
 <!ENTITY fxa.menu.settings.label "Setări">
 <!ENTITY fxa.menu.accountSettings.label "Setările contului">
 <!ENTITY fxa.menu.manageAccount2.label "Gestionează contul">
-<!ENTITY fxa.menu.signOut.label "Deconectează-te…">
+<!ENTITY fxa.menu.signOut.label "Deconectare…">
 <!ENTITY fxa.menu.setupSync.label "Configurare &syncBrand.shortName.label;…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
@@ -289,6 +289,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Afișează istoricul">
 
+
 <!ENTITY searchItem.title             "Caută">
 
 <!-- Toolbar items -->
@@ -352,6 +353,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newUserContext.accesskey         "B">
 <!ENTITY manageUserContext.label          "Gestionează containerele">
 <!ENTITY manageUserContext.accesskey      "O">
+
 <!ENTITY newNavigatorCmd.label        "Fereastră nouă">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "N">
@@ -444,7 +446,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.notsignedin.label "Autentifică-te pentru a vedea o listă cu file de pe celelalte dispozitive.">
 <!ENTITY appMenuRemoteTabs.welcome.label "Afișează o listă cu filele de pe celelalte dispozitive.">
 <!ENTITY appMenuRemoteTabs.unverified.label "Contul tău trebuie verificat.">
-<!ENTITY appMenuRemoteTabs.signin.label "Autentifică-te la Sync">
+<!ENTITY appMenuRemoteTabs.signin.label "Autentificare în Sync">
 <!ENTITY appMenuRemoteTabs.signintosync.label "Autentificare în &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.turnonsync.label "Activează &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Gestionează dispozitivele…">
@@ -600,7 +602,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY viewPageSourceCmd.accesskey  "V">
 <!ENTITY viewFrameSourceCmd.label     "Vezi sursa cadrului">
 <!ENTITY viewFrameSourceCmd.accesskey "V">
-<!ENTITY viewPageInfoCmd.label        "Vezi informații privind pagina">
+<!ENTITY viewPageInfoCmd.label        "Afișează informații despre pagină">
 <!ENTITY viewPageInfoCmd.accesskey    "I">
 <!ENTITY viewFrameInfoCmd.label       "Vezi informații despre cadru">
 <!ENTITY viewFrameInfoCmd.accesskey   "I">
@@ -759,10 +761,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY fullZoomResetCmd.commandkey    "0">
 <!ENTITY fullZoomResetCmd.commandkey2   "">
 
-<!ENTITY fullZoomToggleCmd.label        "Zoom doar pe text">
+<!ENTITY fullZoomToggleCmd.label        "Focalizare doar pe text">
 <!ENTITY fullZoomToggleCmd.accesskey    "T">
 
-<!ENTITY fullZoom.label                 "Zoom">
+<!ENTITY fullZoom.label                 "Focalizare">
 <!ENTITY fullZoom.accesskey             "Z">
 
 <!ENTITY sidebarCloseButton.tooltip     "Închide bara laterală">
@@ -788,7 +790,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY pageStyleMenu.accesskey "y">
 <!ENTITY pageStyleNoStyle.label "Niciun stil">
 <!ENTITY pageStyleNoStyle.accesskey "n">
-<!ENTITY pageStylePersistentOnly.label "Stilul paginii de bază">
+<!ENTITY pageStylePersistentOnly.label "Stilul de bază al paginii">
 <!ENTITY pageStylePersistentOnly.accesskey "b">
 
 <!ENTITY allowPopups.accesskey "p">
@@ -806,10 +808,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY bidiSwitchTextDirectionItem.accesskey    "w">
 <!ENTITY bidiSwitchTextDirectionItem.commandkey   "X">
 
-<!ENTITY findOnCmd.label     "Găsește în această pagină…">
+<!ENTITY findOnCmd.label     "Caută în pagină…">
 <!ENTITY findOnCmd.accesskey "F">
 <!ENTITY findOnCmd.commandkey "f">
-<!ENTITY findAgainCmd.label  "Găsește din nou">
+<!ENTITY findAgainCmd.label  "Caută din nou">
 <!ENTITY findAgainCmd.accesskey "g">
 <!ENTITY findAgainCmd.commandkey "g">
 <!ENTITY findAgainCmd.commandkey2 "VK_F3">
@@ -938,7 +940,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncBrand.shortName.label    "Sync">
 
-<!ENTITY syncSignIn.label             "Autentifică-te în &syncBrand.shortName.label;…">
+<!ENTITY syncSignIn.label             "Autentificare în &syncBrand.shortName.label;…">
 <!ENTITY syncSignIn.accesskey         "Y">
 <!ENTITY syncSyncNowItem.label        "Sincronizează acum">
 <!ENTITY syncSyncNowItemSyncing.label "Se sincronizează…">
@@ -1022,6 +1024,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      and pluginActivateAlways.label strings above on a single line. This must be
      a CSS length value. -->
 <!ENTITY pluginNotification.width "28em">
+
 
 <!ENTITY uiTour.infoPanel.close "Închide">
 

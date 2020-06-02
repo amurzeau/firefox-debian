@@ -232,6 +232,10 @@ translate-attribution = Përkthime nga <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Përjashtime…
     .accesskey = P
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Që të formatoni data, kohë, numra dhe njësi matëse, përdorni rregullimet e sistemit tuaj operativ për “{ $localeName }”.
 check-user-spelling =
     .label = Kontrollo drejtshkrimin në shtypje e sipër
     .accesskey = o
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Përdor { $app-name } (parazgjedhje)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Përdor aplikacion parazgjedhje të macOS-it
+            [windows] Përdor aplikacion parazgjedhje të Windows-it
+           *[other] Përdor aplikacion parazgjedhje të sistemit
+        }
 applications-use-other =
     .label = Përdorni tjetër…
 applications-select-helper = Përzgjidhni Aplikacion Ndihmës
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = Përdor { $plugin-name } (te { -brand-short-name })
 applications-preview-inapp =
     .label = Paraparje në { -brand-short-name }
+applications-open-inapp =
+    .label = Hape në { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -752,6 +769,9 @@ privacy-header = Privatësi Shfletuesi
 ## Privacy Section - Logins and Passwords
 
 logins-header = Kredenciale Hyrjesh dhe Fjalëkalime
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Kredenciale Hyrjesh dhe Fjalëkalime
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Pyet të ruhen apo jo kredenciale hyrjesh dhe fjalëkalime për sajte
@@ -786,6 +806,8 @@ forms-master-pw-fips-desc = Ndryshimi i Fjalëkalimit Dështoi
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Që të krijoni një Fjalëkalim të Përgjithshëm, verifikoni identitetin tuaj.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Që të krijoni një Fjalëkalim të Përgjithshëm, jepni kredencialet tuaj për hyrje në Windows. Kjo ndihmon të mbrohet siguria e llogarive tuaja.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -863,6 +885,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Gjurmues nga sajte në sajte
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Gjurmues nga sajte në sajte dhe mediash shoqërore
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Gjurmues nga sajti në sajt dhe mediash shoqëroe, dhe izolo cookie-et e mbetura
 sitedata-option-block-unvisited =
     .label = Cookies nga sajte të pavizituar
 sitedata-option-block-all-third-party =
@@ -939,6 +963,7 @@ content-blocking-etp-strict-desc = Mbrojtje më e fortë, por mund të shkaktoj�
 content-blocking-etp-custom-desc = Zgjidhni cilët gjurmues dhe programthe të bllokohen.
 content-blocking-private-windows = Lëndë gjurmimi në Dritare Private
 content-blocking-cross-site-tracking-cookies = Cookies gjurmimi nga sajte në sajte
+content-blocking-cross-site-tracking-cookies-plus-isolate = Cookie-t për gjurmim nga sajti në sajt, dhe izolo cookie-t e mbetura
 content-blocking-social-media-trackers = Gjurmues prej mediash shoqërore
 content-blocking-all-cookies = Krejt cookie-t
 content-blocking-unvisited-cookies = Cookies nga sajte të pavizituar
@@ -951,6 +976,7 @@ content-blocking-warning-title = Kini mendjen!
 content-blocking-warning-description = Bllokimi i lëndës mund të dëmtojë funksionimin e disa sajteve. Është e lehtë të çaktivizoni bllokimin për sajte të cilëve u zini besë.
 content-blocking-learn-how = Mësoni se si
 content-blocking-etp-warning-description = Bllokimi i gjurmuesve mund të ndikojë në funksionimin e disa sajteve. Për të lejuar krejt lëndën, ringarkoni një faqe me gjurmues.
+content-blocking-and-isolating-etp-warning-description = Bllokimi i gjurmuesve dhe izolimi i cookie-ve mund të ndikojë në funksionimin e disa sajteve. Për të lejuar krejt lëndën, ringarkoni një faqe me gjurmues.
 content-blocking-warning-learn-how = Mësoni se si
 content-blocking-reload-description = Do t’ju duhet të ringarkoni skedat tuaja që të zbatohen këto ndryshime.
 content-blocking-reload-tabs-button =

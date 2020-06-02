@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } （隐私浏览）
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - （隐私浏览）
-       *[other] { $title } - { -brand-full-name } （隐私浏览）
-    }
 urlbar-identity-button =
     .aria-label = 查看网站信息
 
@@ -109,9 +68,6 @@ urlbar-search-tips-redirect-2 = 在地址栏搜索，可以看到 { $engineName 
 
 ##
 
-
-##
-
 urlbar-geolocation-blocked =
     .tooltiptext = 您已阻止此网站获取位置信息。
 urlbar-xr-blocked =
@@ -169,7 +125,7 @@ full-screen-exit =
 
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
-search-one-offs-with-title = 更多搜索引擎：
+search-one-offs-with-title = 请选择这次要用的搜索引擎：
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -245,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = E
 identity-more-info-link-text =
     .label = 更多信息
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = 最小化
+browser-window-maximize-button =
+    .tooltiptext = 最大化
+browser-window-restore-down-button =
+    .tooltiptext = 向下还原
+browser-window-close-button =
+    .tooltiptext = 关闭
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = 共享的摄像头：
+    .accesskey = C
+popup-select-microphone =
+    .value = 共享的麦克风：
+    .accesskey = M
+popup-all-windows-shared = 您的屏幕上的所有可见窗口都将被共享。
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = 请通过“Web 开发者”菜单打开开发者工具，才能使用 F12 快捷键。
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = 搜索或输入网址
+urlbar-placeholder =
+    .placeholder = 搜索或输入网址
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = 浏览器正被远程控制
+urlbar-permissions-granted =
+    .tooltiptext = 您已授予此站点更多权限。
+urlbar-switch-to-tab =
+    .value = 切换到标签页：
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = 扩展：
+urlbar-go-end-cap =
+    .tooltiptext = 转到地址栏中指向的网址
+urlbar-page-action-button =
+    .tooltiptext = 页面动作
+urlbar-pocket-button =
+    .tooltiptext = 保存到 { -pocket-brand-name }

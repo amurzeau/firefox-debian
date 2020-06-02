@@ -48,11 +48,13 @@ policy-DisableSystemAddonUpdate = Ngăn trình duyệt cài đặt và cập nh�
 policy-DisableTelemetry = Tắt Telemetry.
 policy-DisplayBookmarksToolbar = Hiển thị thanh công cụ dấu trang theo mặc định.
 policy-DisplayMenuBar = Hiển thị thanh bảng chọn theo mặc định.
-policy-DNSOverHTTPS = Cấu hình DNS qua HTTPS.
+policy-DNSOverHTTPS = Cấu hình DNS over HTTPS.
 policy-DontCheckDefaultBrowser = Tắt kiểm tra trình duyệt mặc định khi khởi động.
 policy-DownloadDirectory = Đặt và khóa thư mục tải xuống.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Kích hoạt hoặc vô hiệu hóa chặn nội dung và tùy chọn khóa nó.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Bật hoặc tắt tiện ích mở rộng phương tiện được mã hóa và tùy chọn khóa nó.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = Đặt giá trị mặc định để cho phé
 policy-OverrideFirstRunPage = Ghi đè trang chạy đầu tiên. Bỏ trống chính sách này nếu bạn muốn vô hiệu hóa trang chạy đầu tiên.
 policy-OverridePostUpdatePage = Ghi đè lên trang cập nhật "Có gì mới". Bỏ trống chính sách này nếu bạn muốn tắt trang cập nhật sau.
 policy-PasswordManagerEnabled = Cho phép lưu mật khẩu vào trình quản lý mật khẩu.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Vô hiệu hóa hoặc cấu hình PDF.js, trình xem PDF tích hợp trong { -brand-short-name }.
 policy-Permissions2 = Cấu hình quyền truy cập cho máy ảnh, micrô, vị trí, thông báo và tự động phát.
 policy-PopupBlocking = Cho phép các trang web nhất định hiển thị cửa sổ bật lên theo mặc định.
 policy-Preferences = Đặt và khóa giá trị cho một tập hợp con ưu tiên.

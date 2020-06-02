@@ -53,6 +53,8 @@ policy-DontCheckDefaultBrowser = Disactivar le controlo Navigator predefinite al
 policy-DownloadDirectory = Configura e bloca le plica del discargas.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Activar o disactivar le blocage de contento e optionalmente serrar lo.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Activar o disactivar le extensiones de medios cryptate e optionalmente blocar los.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -83,6 +85,8 @@ policy-OfferToSaveLoginsDefault = Indica le valor predefinite pro permitter a { 
 policy-OverrideFirstRunPage = Supplantar le pagina del lanceamento initial.
 policy-OverridePostUpdatePage = Supplantar le pagina de “Novas” post-actualisation. Defini iste criterio a blanc si tu desira disactivar le pagina de post-actualisation.
 policy-PasswordManagerEnabled = Activar salvamento de contrasignos al gestor de contrasignos.
+# PDF.js and PDF should not be translated
+policy-PDFjs = Disactivar o configurar PDF.js, le visor de PDF integrate in { -brand-short-name }.
 policy-Permissions2 = Configurar le permissiones pro camera, microphono, position, notificationes e autoreproduction.
 policy-PopupBlocking = Permitter a certe sitos web de monstrar fenestras emergente per predefinition.
 policy-Preferences = Defini e bloca le valor de un sub-ensemble de preferentias.

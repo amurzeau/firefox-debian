@@ -114,7 +114,7 @@ onboarding-firefox-monitor-text = Binabantayan ng { -monitor-brand-name } kung a
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } monitors if your email has appeared in a known data breach and alerts you if it appears in a new breach.
 onboarding-firefox-monitor-button = Mag-sign up para sa mga Alert
 onboarding-browse-privately-title = Mag-browse nang Pribado
-onboarding-browse-privately-text = Binubura ng Private Browsing ang kasaysayan ng mga hinanap mo para hindi malaman ng ibang mga gumagamit ng iyong computer.
+onboarding-browse-privately-text = Inaalis ng Private Browsing ang bakas ng mga hinanap mo para hindi malaman ng ibang mga gumagamit ng iyong computer.
 onboarding-browse-privately-button = Magbukas ng Private Window
 onboarding-firefox-send-title = Panatilihing pribado ang iyong mga Shared File
 onboarding-firefox-send-text2 = I-upload mo ang iyong mga file sa { -send-brand-name } para maipamahagi mo ito nang may end-to-end encryption at link na kusang mag-eexpire.
@@ -147,6 +147,7 @@ onboarding-facebook-container-button = Idagdag ang Extension
 onboarding-import-browser-settings-title = I-import ang iyong mga Bookmark, Password, at iba pa
 onboarding-import-browser-settings-text = Sumabak agad — madali mong dalhin kasama mo ang iyong mga site at setting sa Chrome.
 onboarding-import-browser-settings-button = i-Import ang Chrome Data
+onboarding-personal-data-promise-text = Binibigyang-respeto ng { -brand-product-name } ang iyong data sa pamamagitan ng pagkuha lang ng talagang kailangan, pagprotekta rito, at sa pagiging malinaw kung paano namin ito gagamitin.
 onboarding-personal-data-promise-button = Basahin ang aming Pangako
 
 ## Message strings belonging to the Return to AMO flow

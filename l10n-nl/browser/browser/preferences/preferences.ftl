@@ -232,6 +232,10 @@ translate-attribution = Vertalingen door <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Uitzonderingen…
     .accesskey = z
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = De instellingen voor ‘{ $localeName }’ van uw besturingssysteem gebruiken om data, tijden, getallen en metingen op te maken.
 check-user-spelling =
     .label = Uw spelling controleren tijdens het typen
     .accesskey = s
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = { $app-name } gebruiken (standaard)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Standaardtoepassing in macOS gebruiken
+            [windows] Standaardtoepassing in Windows gebruiken
+           *[other] Standaard systeemtoepassing gebruiken
+        }
 applications-use-other =
     .label = Andere gebruiken…
 applications-select-helper = Hulptoepassing selecteren
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = { $plugin-name } gebruiken (in { -brand-short-name })
 applications-preview-inapp =
     .label = Voorbeeld in { -brand-short-name }
+applications-open-inapp =
+    .label = Openen in { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -752,6 +769,9 @@ privacy-header = Browserprivacy
 ## Privacy Section - Logins and Passwords
 
 logins-header = Aanmeldingen en wachtwoorden
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Aanmeldingen en wachtwoorden
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Vragen voor opslaan van aanmeldingen en wachtwoorden voor websites
@@ -786,6 +806,8 @@ forms-master-pw-fips-desc = Wachtwoordwijziging mislukt
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Verifieer uw identiteit om een hoofdwachtwoord aan te maken.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Voer uw aanmeldgegevens voor Windows in om een hoofdwachtwoord in te stellen. Hierdoor wordt de beveiliging van uw accounts beschermd.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These

@@ -21,11 +21,11 @@ onboarding-button-label-get-started = תחילת עבודה
 onboarding-welcome-header = ברוכים הבאים אל { -brand-short-name }
 onboarding-welcome-body = הדפדפן כבר בידיך.<br/>עכשיו נציג את שאר { -brand-product-name }.
 onboarding-welcome-learn-more = מידע נוסף על היתרונות.
+onboarding-join-form-header = הצטרפות אל { -brand-product-name }
 onboarding-welcome-modal-get-body = הדפדפן כבר בידיך.<br/>עכשיו הזמן להפיק את המירב מ־{ -brand-product-name }.
 onboarding-welcome-modal-privacy-body = יש לך דפדפן. עכשיו נוסיף קצת חיזוקי פרטיות.
 onboarding-welcome-modal-family-learn-more = מידע נוסף על משפחת מוצרי { -brand-product-name }.
 onboarding-welcome-form-header = תחילת עבודה
-onboarding-join-form-header = הצטרפות אל { -brand-product-name }
 onboarding-join-form-body = נא להכניס את כתובת הדוא״ל שלך כדי להתחיל.
 onboarding-join-form-email =
     .placeholder = נא להכניס דוא״ל
@@ -68,9 +68,18 @@ onboarding-benefit-products-title = מוצרים שימושיים
 onboarding-benefit-products-text = לבצע משימות עם משפחת כלים שמכבדת את הפרטיות שלך בכל המכשירים שלך.
 onboarding-benefit-knowledge-title = ידע מעשי
 onboarding-benefit-privacy-title = פרטיות אמיתית
+# "Personal Data Promise" is a concept that should be translated consistently
+# across the product. It refers to a concept shown elsewhere to the user: "The
+# Firefox Personal Data Promise is the way we honor your data in everything we
+# make and do. We take less data. We keep it safe. And we make sure that we are
+# transparent about how we use it."
+onboarding-benefit-privacy-text = כל מה שאנו עושים מכבד את הבטחתנו בנוגע לנתונים אישיים: לקחת פחות. להגן בקפידה. ללא סודות.
 onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = לקחת את הסימניות, הססמאות ופריטים נוספים שלך לכל מקום בו יש לך את { -brand-product-name }.
 onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = קבלת התרעה כאשר המידע האישי שלך נחשף בדליפת נתונים ידועה.
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = ניהול ססמאות בצורה מאובטחת וניידת.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -96,6 +105,8 @@ onboarding-data-sync-title = ההגדרות שלך הולכות אתך
 # "Sync" is short for synchronize.
 onboarding-data-sync-text2 = סנכרון הסימניות, הססמאות ופריטים נוספים שלך בכל מקום בו יש לך את { -brand-product-name }.
 onboarding-data-sync-button2 = כניסה ל־{ -sync-brand-short-name }
+onboarding-firefox-monitor-text = { -monitor-brand-name } בודק אם הדוא״ל שלך נחשף בדליפת נתונים ומתריע לך אם הוא נחשף בדליפה חדשה.
+onboarding-firefox-monitor-text2 = { -monitor-brand-name } בודק אם הדוא״ל שלך נחשף בדליפת נתונים מוכרת ומתריע לך אם הוא נחשף בדליפה חדשה.
 onboarding-firefox-monitor-button = הרשמה להתרעות
 onboarding-browse-privately-title = גלישה בפרטיות
 onboarding-browse-privately-text = גלישה פרטית מנקה את היסטוריית החיפוש והגלישה שלך כדי לשמור עליה בסוד מכל מי שמשתמש במחשב שלך.
@@ -109,6 +120,8 @@ onboarding-mobile-phone-button = הורדת דפדפן לנייד
 onboarding-pocket-anywhere-button = לנסות את { -pocket-brand-name }
 onboarding-lockwise-passwords-title = לקחת את הססמאות שלך לכל מקום
 onboarding-lockwise-passwords-button2 = הורדת היישומון
+onboarding-lockwise-strong-passwords-title = יצירה ואחסון ססמאות חזקות
+onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } יוצר ססמאות חזקות ושומר את כולן במקום אחד.
 onboarding-lockwise-strong-passwords-button = ניהול הכניסות שלך
 onboarding-facebook-container-title = הגדרת גבולות מול Facebook
 onboarding-facebook-container-button = הוספת ההרחבה

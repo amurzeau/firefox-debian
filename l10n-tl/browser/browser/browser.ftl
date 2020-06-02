@@ -2,47 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# This is the default window title in case there is no content
-# title to be displayed.
-#
-# Depending on the $mode, the string will look like this (in en-US):
-#
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox (Private Browsing)"
-#
-# Variables
-#   $mode (String) - "private" in case of a private browsing mode, "default" otherwise.
-browser-main-window-title =
-    { $mode ->
-        [private] { -brand-full-name } (Private Browsing)
-       *[default] { -brand-full-name }
-    }
-
-## This is the default window title in case there is content
-## title to be displayed.
-##
-## On macOS the title doesn't include the brand name, on all other
-## platforms it does.
-##
-## For example, in private mode on Windows, the title will be:
-## "Example Title - Mozilla Firefox (Private Browsing)"
-##
-## while on macOS in default mode it will be:
-## "Example Title"
-##
-## Variables
-##   $title (String) - Content title string.
-
-browser-main-window-content-title-default =
-    { PLATFORM() ->
-        [macos] { $title }
-       *[other] { $title } - { -brand-full-name }
-    }
-browser-main-window-content-title-private =
-    { PLATFORM() ->
-        [macos] { $title } - (Private Browsing)
-       *[other] { $title } - { -brand-full-name } (Private Browsing)
-    }
 urlbar-identity-button =
     .aria-label = Tingnan ang impormasyon ng site
 
@@ -106,9 +65,6 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Shortcut: Hanapin ang { $engineName } direkta mula sa iyong address bar.
 urlbar-search-tips-redirect-2 = Simulan ang iyong paghahanap sa address bar para makakita ng mga mungkahi mula sa { $engineName } at sa iyong browsing history.
-
-##
-
 
 ##
 
@@ -245,3 +201,50 @@ identity-enable-mixed-content-blocking =
     .accesskey = E
 identity-more-info-link-text =
     .label = Karagdagang Impormasyon
+
+## Window controls
+
+browser-window-minimize-button =
+    .tooltiptext = i-Minimize
+browser-window-maximize-button =
+    .tooltiptext = Palakihin
+browser-window-restore-down-button =
+    .tooltiptext = Restore Down
+browser-window-close-button =
+    .tooltiptext = Isara
+
+## WebRTC Pop-up notifications
+
+popup-select-camera =
+    .value = Camera na ibabahagi:
+    .accesskey = C
+popup-select-microphone =
+    .value = Mga mikropono na pwedeng ibahagi:
+    .accesskey = M
+popup-all-windows-shared = Lahat ng nakikitang window sa iyong screen ay ibabahagi.
+
+## DevTools F12 popup
+
+enable-devtools-popup-description = Para gamitin ang F1 2 shortcut, unang buksan ang DevTools sa Web Developer menu.
+
+## URL Bar
+
+urlbar-default-placeholder =
+    .defaultPlaceholder = Hanapin o ilagay ang address
+urlbar-placeholder =
+    .placeholder = Hanapin o ilagay ang address
+urlbar-remote-control-notification-anchor =
+    .tooltiptext = Browser ay kasalukuyang nire-remote kontrol
+urlbar-permissions-granted =
+    .tooltiptext = Ipinagkaloob mo sa website na ito ang mga karagdagang pahintulot.
+urlbar-switch-to-tab =
+    .value = Lumipat sa tab:
+# Used to indicate that a selected autocomplete entry is provided by an extension.
+urlbar-extension =
+    .value = Extension:
+urlbar-go-end-cap =
+    .tooltiptext = Pumunta sa lokasyon na nasa Location Bar
+urlbar-page-action-button =
+    .tooltiptext = Page actions
+urlbar-pocket-button =
+    .tooltiptext = I-save sa { -pocket-brand-name }

@@ -232,6 +232,10 @@ translate-attribution = Omsettingar av <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Unntak…
     .accesskey = n
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Bruk operativsystem-innstillingane for «{ $localeName }» for å formatere datoar, klokkeslett, tal og målingar.
 check-user-spelling =
     .label = Kontroller stavinga mi når eg tastar
     .accesskey = K
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Bruk { $app-name } (standard)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Bruk macOS-standardprogrammet
+            [windows] Bruk Windows-standardprogrammet
+           *[other] Bruk standardprogrammet til systemet
+        }
 applications-use-other =
     .label = Bruk anna…
 applications-select-helper = Vel hjelpeprogram
@@ -305,6 +316,8 @@ applications-use-plugin-in =
     .label = Bruk { $plugin-name } (i { -brand-short-name })
 applications-preview-inapp =
     .label = Førehandsvis i { -brand-short-name }
+applications-open-inapp =
+    .label = Opne i { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -318,12 +331,16 @@ applications-use-app-label =
     .value = { applications-use-app.label }
 applications-preview-inapp-label =
     .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -444,7 +461,7 @@ home-new-windows-tabs-description2 = Vel kva du vil sjå når du opnar startsida
 home-homepage-mode-label = Startside og nye vindauge
 home-newtabs-mode-label = Nye faner
 home-restore-defaults =
-    .label = Bruk standard
+    .label = Bruk standardinnstillingar
     .accesskey = r
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
@@ -752,6 +769,9 @@ privacy-header = Nettlesarpersonvern
 ## Privacy Section - Logins and Passwords
 
 logins-header = Innloggingar og passord
+# The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
+pane-privacy-logins-and-passwords-header = Innloggingar og passord
+    .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Spør om å lagre innloggingar og passord for nettsider
@@ -786,6 +806,8 @@ forms-master-pw-fips-desc = Mislykka passordendring
 
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message = Stadfest identiteten din for å opprette eit hovudpassord.
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen for Windows for å opprette eit hovudpassord. Dette vil gjere kontoane dine tryggare.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These

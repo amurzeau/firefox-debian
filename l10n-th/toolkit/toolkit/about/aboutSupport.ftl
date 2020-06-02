@@ -31,6 +31,7 @@ app-basics-title = พื้นฐานแอปพลิเคชัน
 app-basics-name = ชื่อ
 app-basics-version = รุ่น
 app-basics-build-id = Build ID
+app-basics-distribution-id = ID การแจกจ่าย
 app-basics-update-channel = ช่องทางการอัปเดต
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -267,6 +268,11 @@ sandbox-proc-type-content = เนื้อหา
 sandbox-proc-type-file = เนื้อหาไฟล์
 sandbox-proc-type-media-plugin = ปลั๊กอินสื่อ
 sandbox-proc-type-data-decoder = ตัวถอดรหัสข้อมูล
+startup-cache-title = แคชเมื่อเริ่มการทำงาน
+startup-cache-disk-cache-path = เส้นทางแคชดิสก์
+startup-cache-ignore-disk-cache = ละเว้นแคชดิสก์
+startup-cache-found-disk-cache-on-init = แคชดิสก์ที่พบเมื่อเตรียมใช้งาน
+startup-cache-wrote-to-disk-cache = ที่เขียนลงในแคชดิสก์
 launcher-process-status-0 = เปิดใช้งานอยู่
 launcher-process-status-1 = ถูกปิดใช้งานเนื่องจากความล้มเหลว
 launcher-process-status-2 = ถูกปิดใช้งานโดยการบังคับ
@@ -290,6 +296,7 @@ touch-enabled = เปิดใช้งานการป้อนข้อม�
 drag-enabled = เปิดใช้งานการลากแถบเลื่อนแล้ว
 keyboard-enabled = เปิดใช้งานแป้นพิมพ์แล้ว
 autoscroll-enabled = เปิดใช้งานการเลื่อนอัตโนมัติแล้ว
+zooming-enabled = เปิดใช้งานการซูมโดยการหุบ/กางนิ้วแบบราบรื่นแล้ว
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference
