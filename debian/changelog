@@ -1,3 +1,15 @@
+firefox-esr (68.9.0esr-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fixes for mfsa2020-21, also known as:
+    CVE-2020-12399, CVE-2020-12405, CVE-2020-12406, CVE-2020-12410.
+
+  * debian/rules: Force using old PKCS11 API when building against newer NSS
+    releases. Closes: #961762.
+  * debian/control*: Bump nss build dependencies.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 03 Jun 2020 06:11:28 +0900
+
 firefox-esr (68.8.0esr-1) unstable; urgency=medium
 
   * New upstream release
