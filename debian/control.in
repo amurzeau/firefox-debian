@@ -31,7 +31,7 @@ Build-Depends: autotools-dev,
                libnspr4-dev (>= 2:@NSPR_VERSION@~),
 %endif
 %if USE_SYSTEM_NSS
-%define NSS_VERSION 3.51.1
+%define NSS_VERSION 3.52.1
                libnss3-dev (>= 2:@NSS_VERSION@~),
 %endif
 %if USE_SYSTEM_VPX
@@ -63,7 +63,7 @@ Build-Depends: autotools-dev,
                libclang-dev,
                clang,
 %endif
-               cbindgen (>= 0.13.1),
+               cbindgen (>= 0.14.1),
 %if DIST == jessie || DIST == stretch
                nodejs-mozilla (>= 10),
 %else
