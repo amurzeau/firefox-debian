@@ -1,3 +1,21 @@
+firefox (77.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fixes for mfsa2020-20, also known as:
+    CVE-2020-12399, CVE-2020-12405, CVE-2020-12406, CVE-2020-12407,
+    CVE-2020-12408, CVE-2020-12409, CVE-2020-12410, CVE-2020-12411.
+
+  * debian/l10n/gen, debian/l10n_revs.py, debian/latest_nightly.py,
+    debian/rules, debian/symbols.mk: Convert to python 3.
+  * debian/control*: Bump nss and cbindgen build dependencies.
+  * debian/rules:
+    - Revert PKCS11 API change from 76.0.1-1 because the new API is
+      now explicitly used by upstream code.
+    - Stop passing -fno-schedule-insns2 -fno-lifetime-dse and
+      -fno-delete-null-pointer-checks to GCC.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 03 Jun 2020 07:53:04 +0900
+
 firefox (76.0.1-2) unstable; urgency=medium
 
   * debian/browser.mozconfig.in: Allow addon sideload. Closes: #960084.
