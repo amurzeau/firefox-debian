@@ -181,7 +181,7 @@ $(call lazy,LIBAVCODEC,$$(shell awk -F\" '/libavcodec\.so/ { sub(/libavcodec\.so
 $(PREPROCESSED_FILES): VARS = GRE_VERSION $(PRODUCT) $(call uc,$(PRODUCT)) $(Product) MOZ_APP_REMOTINGNAME $(SYSTEM_LIBS_VARS) SHORT_SOURCE_CHANNEL DIST TRANSITION MOZ_FFVPX CRASH_REPORTER DEB_HOST_ARCH
 debian/control: VARS += L10N_PACKAGES_DEPS PRODUCT LIBAVCODEC
 $(PREPROCESSED_FILES):
-	./mach python --no-virtualenv python/mozbuild/mozbuild/preprocessor.py --marker % -Fsubstitution $(foreach var,$(VARS),-D$(var)="$($(var))" )$< -o $@
+	python3 ./mach python --no-virtualenv python/mozbuild/mozbuild/preprocessor.py --marker % -Fsubstitution $(foreach var,$(VARS),-D$(var)="$($(var))" )$< -o $@
 
 ifdef TRANSITION
 MAINTSCRIPTS := $(addprefix debian/,$(addsuffix .maintscript,$(shell awk -F/ '$$1 != "searchplugins" { next } $$2 == "locale" && $$3 != "en-US" { p="iceweasel-l10n-" $$3 } $$2 == "common" || ($$2 "/" $$3 == "locale/en-US") { p="iceweasel" } !done[p] { print p; done[p] = 1 }' debian/removed_conffiles)))
@@ -236,7 +236,7 @@ ifeq ($(DEB_HOST_ARCH_ENDIAN),big)
 	cd build-$(PRODUCT) && \
 	MOZCONFIG=mozconfig.icu \
 	$(CONFIGURE_ENV) \
-	../mach python ../intl/icu_sources_data.py "$(CURDIR)"
+	python3 ../mach python ../intl/icu_sources_data.py "$(CURDIR)"
 endif
 	cd build-$(PRODUCT) && \
 	MOZCONFIG=$(CURDIR)/debian/$($(PRODUCT)).mozconfig \

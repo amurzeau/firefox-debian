@@ -23,7 +23,6 @@ Build-Depends: autotools-dev,
                zlib1g-dev,
 %endif
                libreadline-dev,
-               python2.7,
                python3,
                dpkg-dev,
 %if USE_SYSTEM_NSPR
