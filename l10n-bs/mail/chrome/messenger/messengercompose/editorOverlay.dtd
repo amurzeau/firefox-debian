@@ -1,6 +1,7 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
 <!-- Attn: Localization - some of the menus in this dialog directly affect mail also. -->
 <!-- File menu items -->
 
@@ -81,6 +82,8 @@
 <!ENTITY incrementFontSize.key "&gt;">
 <!-- > is above this key on many keyboards -->
 <!ENTITY incrementFontSize.key2 "."> 
+
+<!-- > is above this key on many keyboards -->
 
 <!ENTITY fontSizeMenu.label "Veličina">
 <!ENTITY fontSizeMenu.accesskey "i">
@@ -296,6 +299,7 @@
 <!ENTITY findToolbarCmd.tooltip "Pronađi tekst na stranici">
 <!ENTITY spellToolbarCmd.label "Pravopis">
 <!ENTITY spellToolbarCmd.tooltip "Provjeri pravopis izabranog teksta ili cijele stranice">
+
 <!ENTITY imageToolbarCmd.label "Slika">
 <!ENTITY imageToolbarCmd.tooltip "Umetni novu sliku ili promijeni postavke izabrane slike">
 <!ENTITY hruleToolbarCmd.label "H.Linija">
@@ -308,7 +312,6 @@
 <!ENTITY anchorToolbarCmd.tooltip "Umetni novi imenovani achor ili uredi postavke postojećeg">
 <!ENTITY TextColorButton.tooltip "Izaberi boju teksta">
 <!ENTITY BackgroundColorButton.tooltip "Izaberi boju pozadine">
-<!ENTITY throbber.tooltip "Otvori &vendorShortName; početnu stranicu">
 <!ENTITY HighlightColorButton.tooltip "Izaberi boju isticanja teksta">
 <!-- Editor toolbar -->
 

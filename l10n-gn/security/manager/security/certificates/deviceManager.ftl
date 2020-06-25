@@ -87,7 +87,7 @@ devinfo-label =
 devinfo-serialnum =
     .label = Papapy syryry
 fips-nonempty-password-required = Pe FIPS reko oikotevẽ peteĩ ñe'ẽñemi ha'etéva oñemoheñóiva peteĩteĩva mba'e'oka tekorosãrãme g̃uarã. Emopyenda pe ñe'ẽñemi eñeha'ã mboyve emyandy pe FIPS reko.
-unable-to-toggle-fips = Ndaikatúi emoambue pe FIPS reko mba'e'oka rekorosãrãme g̃uarã. Ikatúramo esẽ ha upéi emoñepyrũjey ko tembipuru'i.
+unable-to-toggle-fips = Ndaikatúi emoambue pe FIPS reko mba’e’oka rekorosãrãme g̃uarã. Ikatúramo esẽ ha upéi emoñepyrũjey ko tembipuru’i.
 load-pk11-module-file-picker-title = Eiporavo peteĩ mba'e'oka PKCS#11 emyenyhẽ hag̃ua
 # Load Module Dialog
 load-module-help-empty-module-name =

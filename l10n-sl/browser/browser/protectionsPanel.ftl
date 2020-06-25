@@ -58,6 +58,8 @@ protections-panel-not-found-label = Ni zaznanih
 
 protections-panel-settings-label = Nastavitve zaščite
 protections-panel-showreport-label = Prikaži poročilo
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Nadzorna plošča zaščit
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

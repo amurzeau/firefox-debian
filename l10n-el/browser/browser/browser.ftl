@@ -2,6 +2,50 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (Ιδιωτική Περιήγηση)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (Ιδιωτική Περιήγηση)
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (Ιδιωτική Περιήγηση)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (Ιδιωτική Περιήγηση)
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = Πληροφορίες ιστοσελίδας
 
@@ -109,6 +153,8 @@ page-action-manage-extension =
     .label = Διαχείριση επέκτασης…
 page-action-remove-from-urlbar =
     .label = Αφαίρεση από τη γραμμή διευθύνσεων
+page-action-remove-extension =
+    .label = Αφαίρεση επέκτασης
 
 ## Auto-hide Context Menu
 
@@ -204,6 +250,10 @@ identity-more-info-link-text =
 
 browser-window-minimize-button =
     .tooltiptext = Ελαχιστοποίηση
+browser-window-maximize-button =
+    .tooltiptext = Μεγιστοποίηση
+browser-window-restore-down-button =
+    .tooltiptext = Επαναφορά κάτω
 browser-window-close-button =
     .tooltiptext = Κλείσιμο
 
@@ -216,9 +266,27 @@ popup-select-microphone =
     .value = Μοιραστείτε το μικρόφωνο:
     .accesskey = Μ
 popup-all-windows-shared = Θα μοιραστούν όλα τα ορατά παράθυρα της οθόνη σας.
+popup-screen-sharing-not-now =
+    .label = Όχι τώρα
+    .accesskey = ρ
+popup-screen-sharing-never =
+    .label = Να μην επιτρέπεται ποτέ
+    .accesskey = Ν
+popup-silence-notifications-checkbox = Απενεργοποίηση ειδοποιήσεων από το { -brand-short-name } κατά την κοινή χρήση
+popup-silence-notifications-checkbox-warning = Το { -brand-short-name } δεν θα εμφανίζει ειδοποιήσεις κατά την κοινή χρήση.
+
+## WebRTC window or screen share tab switch warning
+
+sharing-warning-window = Μοιράζεστε το { -brand-short-name }. Άλλα άτομα μπορούν να δουν όταν μεταβείτε σε μια νέα καρτέλα.
+sharing-warning-screen = Μοιράζεστε ολόκληρη την οθόνη σας. Οι άλλοι χρήστες μπορούν να δουν ότι κάνετε εναλλαγή σε νέα καρτέλα.
+sharing-warning-proceed-to-tab =
+    .label = Συνέχεια στην καρτέλα
+sharing-warning-disable-for-session =
+    .label = Απενεργοποίηση προστασίας κοινής χρήσης για αυτή τη συνεδρία
 
 ## DevTools F12 popup
 
+enable-devtools-popup-description = Για να χρησιμοποιήσετε τη συντόμευση F12, ανοίξτε πρώτα τα DevTools μέσω του μενού προγραμματιστών ιστού.
 
 ## URL Bar
 
@@ -228,12 +296,14 @@ urlbar-placeholder =
     .placeholder = Αναζήτηση όρου ή εισαγωγή διεύθυνσης
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Το πρόγραμμα περιήγησης ελέγχεται απομακρυσμένα
+urlbar-permissions-granted =
+    .tooltiptext = Έχετε χορηγήσει πρόσθετα δικαιώματα σε αυτή την ιστοσελίδα.
 urlbar-switch-to-tab =
     .value = Μετάβαση σε καρτέλα:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Επέκταση:
-urlbar-go-end-cap =
+urlbar-go-button =
     .tooltiptext = Μετάβαση στη διεύθυνση της γραμμής διευθύνσεων
 urlbar-page-action-button =
     .tooltiptext = Ενέργειες σελίδας

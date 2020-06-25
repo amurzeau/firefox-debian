@@ -22,6 +22,7 @@ set-password-new-password = Nhập mật khẩu mới:
 set-password-reenter-password = Nhập lại mật khẩu mới:
 set-password-meter = Độ an toàn mật khẩu
 set-password-meter-loading = Đang tải
+master-password-admin = Quản trị viên của bạn yêu cầu bạn phải đặt mật khẩu chính để lưu mật khẩu.
 master-password-description = Mật khẩu chính được dùng để bảo vệ các thông tin nhạy cảm khi bạn duyệt web. Nếu tạo một Mật khẩu chính, bạn sẽ được yêu cầu nhập nó trong mỗi phiên làm việc khi { -brand-short-name } truy vấn các thông tin đã được lưu và bảo vệ bởi mật khẩu.
 master-password-warning = Hãy nhớ kĩ mật khẩu chính của mình. Nếu quên, bạn sẽ không thể truy cập các thông tin mà nó bảo vệ.
 remove-password =

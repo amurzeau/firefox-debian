@@ -5,3 +5,16 @@
 toolbar-context-menu-undo-close-tab =
     .label = Rhoxisa ukuvala ithebhu
     .accesskey = R
+
+# Can appear on the same context menu as menubarCmd ("Menu Bar") and
+# personalbarCmd ("Bookmarks Toolbar"), so they should have different
+# access keys.
+toolbar-context-menu-pin-to-overflow-menu =
+    .label = Qhoboshela kwiMenyu yokuPhuphuma
+    .accesskey = Q
+toolbar-context-menu-remove-from-toolbar =
+    .label = Yishenxise kwiThulbha
+    .accesskey = Y
+toolbar-context-menu-view-customize-toolbar =
+    .label = Lungiselela…
+    .accesskey = L

@@ -16,6 +16,9 @@ certificate-viewer-certificate-authority = Վկայագրման կենտրոնը
 certificate-viewer-cipher-suite = Ծածկագրի հավաքակազմ
 certificate-viewer-common-name = Սովորական անուն
 certificate-viewer-email-address = էլ․փոստի հասցեն
+# Variables:
+#   $firstCertName (String) - Common Name for the displayed certificate
+certificate-viewer-tab-title = Վկայական { $firstCertName }-ի համար
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
 certificate-viewer-inc-country = Երկրի գրանցում
 certificate-viewer-country = Երկիր
@@ -29,6 +32,8 @@ certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = Ստեղնի փոխանակման խումբ
 certificate-viewer-key-id = Ստեղնի ID
 certificate-viewer-key-size = Ստեղնի չափը
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-locality = Inc. տեղադրությունը
 certificate-viewer-locality = Տեղադրություն
 certificate-viewer-location = Տեղադրություն
 certificate-viewer-logid = Գրանցման ID
@@ -46,6 +51,7 @@ certificate-viewer-purposes = Նպատակներ
 certificate-viewer-qualifier = Որակավորիչ
 certificate-viewer-qualifiers = Որակավորիչներ
 certificate-viewer-required = Պահանջված
+certificate-viewer-unsupported = &lt;չաջակցվող&gt;
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
 certificate-viewer-inc-state-province = Նահանգի/գավառի գրանցում
 certificate-viewer-state-province = Նահանգ/գավառ
@@ -97,3 +103,16 @@ certificate-viewer-download-pem =
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (chain)
     .download = { $fileName }-chain.pem
+# The title attribute for Critical Extension icon
+certificate-viewer-critical-extension =
+    .title = Այս ընդլայնումը նշվել է որպես կրիտիկական, ինչը նշանակում է, որ հաճախորդները պետք է մերժեն վկայագիրը, եթե նրանք չեն հասկանում դա:
+certificate-viewer-export = Արտահանել
+    .download = { $fileName }.pem
+
+## Labels for tabs displayed in stand-alone about:certificate page
+
+certificate-viewer-tab-mine = Ձեր վկայագրերը
+certificate-viewer-tab-people = Մարդիկ
+certificate-viewer-tab-servers = Սպասարկիչներ
+certificate-viewer-tab-ca = Հեղինակություններ
+certificate-viewer-tab-unkonwn = Անհայտ

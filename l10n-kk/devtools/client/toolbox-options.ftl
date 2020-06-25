@@ -103,6 +103,8 @@ options-enable-chrome-tooltip =
 options-enable-remote-label = Қашықтан жөндеуді іске қосу
 options-enable-remote-tooltip =
     .title = Бұл баптауды іске қосу нәтижесінде әзірлеуші құралдарына Firefox OS сияқты қашықтағы нұсқаларын жөндеу рұқсат етіледі
+options-enable-remote-tooltip2 =
+    .title = Бұл параметрді іске қосу осы браузер экземплярын қашықтан жөндеуге мүмкіндік береді
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = HTTP арқылы жасайтын қызметтік жұмыс үрдістерін іске қосу (құралдар панелі ашық болған кезде)
 options-enable-service-workers-http-tooltip =
@@ -113,11 +115,6 @@ options-source-maps-tooltip =
     .title = Бұл опцияны іске қоссаңыз, бастапқы код құралдарда сәйкестелген болады.
 # The message shown for settings that trigger page reload
 options-context-triggers-page-refresh = * Ағымдағы сессия ғана, парақты қайта жүктейді
-
-##
-
-# The heading for the Debugger section
-options-debugger-label = Жөндеуші
 # The label for the checkbox that toggles the display of the platform data in the
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config
 options-show-platform-data-label = Gecko платформасының деректерін көрсету

@@ -167,7 +167,7 @@ browser-containers-settings =
     .label = 설정…
     .accesskey = i
 containers-disable-alert-title = 모든 컨테이너 탭을 닫으시겠습니까?
-containers-disable-alert-desc = 지금 컨테이너 탭을 비활성화 하면 { $tabCount }개의 컨테이너 탭이 닫히게 됩니다. 컨테이너 탭을 비활성화 하시겠습니까?
+containers-disable-alert-desc = 지금 컨테이너 탭을 비활성화하면 { $tabCount }개의 컨테이너 탭이 닫히게 됩니다. 컨테이너 탭을 비활성화하시겠습니까?
 containers-disable-alert-ok-button = 컨테이너 탭 { $tabCount }개 닫기
 containers-disable-alert-cancel-button = 활성화 하기
 containers-remove-alert-title = 이 컨테이너를 삭제하시겠습니까?
@@ -286,7 +286,7 @@ applications-manage-app =
     .label = 응용 프로그램 세부사항…
 applications-always-ask =
     .label = 항상 물어 보기
-applications-type-pdf = PDF 문서(PDF)
+applications-type-pdf = Portable Document Format (PDF)
 # Variables:
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
@@ -302,8 +302,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } 사용({ -brand-short-name })
-applications-preview-inapp =
-    .label = { -brand-short-name } 미리 보기
 applications-open-inapp =
     .label = { -brand-short-name }에서 열기
 
@@ -317,8 +315,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -375,10 +371,10 @@ update-setting-write-failure-message =
     파일에 쓸 수 없음: { $path }
 update-in-progress-title = 업데이트 진행 중
 update-in-progress-message = { -brand-short-name }가 이 업데이트를 계속하길 원하십니까?
-update-in-progress-ok-button = 취소
+update-in-progress-ok-button = 취소(&D)
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
-update-in-progress-cancel-button = 계속
+update-in-progress-cancel-button = 계속(&C)
 
 ## General Section - Performance
 
@@ -454,7 +450,7 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Firefox 홈페이지(기본값)
+    .label = Firefox 홈 (기본값)
 home-mode-choice-custom =
     .label = 사용자 지정 URL…
 home-mode-choice-blank =
@@ -485,11 +481,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = 상위 사이트
 home-prefs-topsites-description = 가장 많이 방문한 사이트
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = { $provider } 추천
 home-prefs-recommended-by-description = 여러분에게 맞춰진 웹에서 제공되는 훌륭한 콘텐츠
+home-prefs-recommended-by-description-update = { $provider }에 의해 큐레이션된 웹의 뛰어난 콘텐츠
+
+##
+
 home-prefs-recommended-by-learn-more = 사용 방법
 home-prefs-recommended-by-option-sponsored-stories =
     .label = 후원된 스토리
@@ -546,6 +548,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = 사생활 보호 창에 검색 제안 표시
 suggestions-addressbar-settings = 방문 기록, 북마크 및 탭 제안에 대한 설정 변경
+suggestions-addressbar-settings-generic = 다른 주소 표시줄 제안에 대한 설정 변경
 search-suggestions-cant-show = 기록을 기억하지 않도록 { -brand-short-name }를 구성했기 때문에 검색 제안이 주소창 결과에 표시되지 않습니다.
 search-one-click-header = 원클릭 검색 엔진
 search-one-click-desc = 키워드 입력을 시작했을 때 주소 표시줄과 검색 표시줄 아래에 나타날 대체 검색 엔진을 선택하세요.
@@ -596,7 +599,7 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = 웹과 함께 하세요.
-sync-signedout-description = 북마크, 기록, 탭, 비밀번호, 부가 기능, 설정을 모든 기기에 걸쳐 동기화 하세요.
+sync-signedout-description = 북마크, 기록, 탭, 비밀번호, 부가 기능, 설정을 모든 기기에 걸쳐 동기화하세요.
 sync-signedout-account-title = { -fxaccount-brand-name }과 연결
 sync-signedout-account-create = 계정이 없으신가요? 시작하세요
     .accesskey = C
@@ -614,7 +617,7 @@ sync-signedout-account-signin2 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = 모바일 기기와 동기화하기 위해서 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 또는 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>용 Firefox를 다운로드 하세요.
+sync-mobile-promo = 모바일 기기와 동기화하기 위해서 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 또는 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>용 Firefox를 다운로드하세요.
 
 ## Sync Section - Signed in
 
@@ -745,14 +748,14 @@ sync-fxa-privacy-notice = 개인 정보 보호 정책
 
 ## Privacy Section
 
-privacy-header = 브라우저 개인정보
+privacy-header = 브라우저 개인 정보
 
 ## Privacy Section - Forms
 
+logins-header = 로그인과 비밀번호
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = 로그인과 비밀번호
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = 로그인과 비밀번호
     .searchkeywords = { -lockwise-brand-short-name }
@@ -788,8 +791,6 @@ forms-master-pw-fips-desc = 비밀번호 변경 실패
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = 마스터 비밀번호를 만들기 위해 ID를 확인하세요.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = 마스터 비밀번호를 만들려면, Windows 로그인 자격 증명을 입력하세요. 이는 계정의 보안을 보호하는데 도움이 됩니다.
 # This message can be seen by trying to add a Master Password.
@@ -886,6 +887,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = 권한 관리…
     .accesskey = P
+sitedata-cookies-exceptions =
+    .label = 예외 관리…
+    .accesskey = x
 
 ## Privacy Section - Address Bar
 
@@ -900,6 +904,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = 열린 탭
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = 상위 사이트
+    .accesskey = T
 addressbar-suggestions-settings = 검색 엔진 제안 설정 변경
 
 ## Privacy Section - Content Blocking
@@ -959,7 +966,6 @@ content-blocking-fingerprinters = 핑거프린터
 content-blocking-warning-title = 조심하세요!
 content-blocking-warning-description = 콘텐츠를 차단하면 일부 웹 사이트가 깨질 수 있습니다. 신뢰할 수 있는 사이트에 대한 차단은 쉽게 해제 할 수 있습니다.
 content-blocking-learn-how = 방법 알아보기
-content-blocking-etp-warning-description = 추적기 차단은 일부 사이트의 기능에 영향을 줄 수 있습니다. 모든 콘텐츠를 로드하려면 추적기가 있는 페이지를 다시 로드하세요.
 content-blocking-and-isolating-etp-warning-description = 추적기 차단 및 쿠키 격리는 일부 사이트의 기능에 영향을 줄 수 있습니다. 모든 콘텐츠를 로드하려면 추적기가 있는 페이지를 다시 로드하세요.
 content-blocking-warning-learn-how = 방법 알아보기
 content-blocking-reload-description = 변경 사항을 적용하려면 탭을 다시 로드해야 합니다.
@@ -1058,7 +1064,7 @@ permissions-a11y-privacy-link = 더 알아보기
 
 collection-header = { -brand-short-name } 데이터 수집과 사용
 collection-description = { -brand-short-name }를 모두를 위해 제공하고 개선하기 위해서 필요한 것만 수집하고 선택권을 제공하기 위해 노력합니다. 개인 정보를 전송하기 전에 항상 허가여부를 묻습니다.
-collection-privacy-notice = 개인정보 안내
+collection-privacy-notice = 개인 정보 안내
 collection-health-report-telemetry-disabled = { -vendor-short-name }에서 더 이상 기술 및 상호 작용 데이터를 캡처할 수 없습니다. 모든 과거 데이터는 30일 이내에 삭제됩니다.
 collection-health-report-telemetry-disabled-link = 더 알아보기
 collection-health-report =
@@ -1132,8 +1138,8 @@ space-alert-over-5gb-pref-button =
         }
 space-alert-over-5gb-message =
     { PLATFORM() ->
-        [windows] { -brand-short-name } 디스크 용량이 부족합니다. 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 옵션 > 개인정보와 보안 > 쿠키 및 사이트 데이터에서 저장된 데이터를 지울 수 있습니다.
-       *[other] { -brand-short-name } 디스크 용량이 부족합니다. 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 설정 > 개인정보와 보안 > 쿠키 및 사이트 데이터에서 저장된 데이터를 지울 수 있습니다.
+        [windows] { -brand-short-name } 디스크 용량이 부족합니다. 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 설정 > 개인 정보 및 보안 > 쿠키 및 사이트 데이터에서 저장된 데이터를 지울 수 있습니다.
+       *[other] { -brand-short-name } 디스크 용량이 부족합니다. 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 설정 > 개인 정보 및 보안 > 쿠키 및 사이트 데이터에서 저장된 데이터를 지울 수 있습니다.
     }
 space-alert-under-5gb-ok-button =
     .label = 확인

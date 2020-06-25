@@ -103,6 +103,11 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argomenti
 safe-mode-title = Prova la modalità provvisoria
 restart-in-safe-mode-label = Riavvia disattivando i componenti aggiuntivi…
+clear-startup-cache-title = Prova a cancellare la cache di avvio
+clear-startup-cache-label = Cancella cache di avvio…
+startup-cache-dialog-title = Cancellazione cache di avvio
+startup-cache-dialog-body = Riavviare { -brand-short-name } per cancellare la cache di avvio. Questa operazione non modificherà le impostazioni esistenti né rimuoverà alcuna estensione installata in { -brand-short-name }.
+restart-button-label = Riavvia
 
 ## Media titles
 
@@ -110,6 +115,7 @@ audio-backend = Back-end audio
 max-audio-channels = Numero massimo di canali
 channel-layout = Layout preferito dei canali
 sample-rate = Frequenza di campionamento preferita
+roundtrip-latency = Latenza di andata e ritorno (deviazione standard)
 media-title = Media
 media-output-devices-title = Dispositivi di output
 media-input-devices-title = Dispositivi di input

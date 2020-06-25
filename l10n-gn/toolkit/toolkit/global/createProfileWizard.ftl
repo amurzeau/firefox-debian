@@ -14,12 +14,12 @@ create-profile-first-page-header =
        *[other] Eg̃uahẽporãite { create-profile-window.title }-pe
     }
 profile-creation-explanation-1 = { -brand-short-name } oñongatu marandu ñembohekopyahu rehegua ha erororyvéva nemba'eteépe.
-profile-creation-explanation-2 = Emoherakuãramo ko monguatia { -brand-short-name } mba'éva ambue puruhára ndive; ikatu oipuru mba'etee omboyke hag̃ua marandu peteĩteĩ puruhára mba'éva. Upevarã, peteĩteĩ puruhára omoheñoiva'erã imba'eteerã.
-profile-creation-explanation-3 = Neañomi eipurúramo ko monguatiapy { -brand-short-name } mba'éva, eguerekova'erã peteĩ mba'ete jepe. Eipotáramo, ikatu emoheñói hetaiterei mba'etee eñongatu haguã heta ñembohekopyahu aty ha erohoryvéva. Techapyrãramo, ikatu eguerekose mba'etee moha'eñomby neañomi g̃uarã ha avei tembiapohápe g̃uarã.
+profile-creation-explanation-2 = Emoherakuãrõ ko monguatia { -brand-short-name } mba’éva ambue puruhára ndive; ikatu oipuru mba’etee omboyke hag̃ua marandu peteĩteĩ puruhára mba'éva. Upevarã, peteĩteĩ puruhára omoheñói imba’eteerã.
+profile-creation-explanation-3 = Neañomi eipurúramo ko monguatiapy { -brand-short-name } mba’éva, eguerekova’erã peteĩ mba’ete jepe. Eipotáramo, ikatu emoheñói hetaiterei mba’etee eñongatu haguã heta ñembohekopyahu aty ha erohoryvéva. Techapyrãramo, ikatu eguerekose mba’etee moha’eñomby neañomi g̃uarã ha avei tembiapohápe g̃uarã.
 profile-creation-explanation-4 =
     { PLATFORM() ->
-        [macos] Emoheñói ñepyrũ hag̃ua nemba'ete, ejopy Jeku'ejey.
-       *[other] Emoheñói ñepyrũ hag̃ua nemba'ete, ejopy Upeigua.
+        [macos] Emoheñói ñepyrũ hag̃ua nemba’ete, ejopy Jeku’ejey.
+       *[other] Emoheñói ñepyrũ hag̃ua nemba’ete, ejopy Upeigua.
     }
 
 ## Second wizard page

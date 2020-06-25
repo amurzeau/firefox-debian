@@ -103,6 +103,8 @@ options-enable-chrome-tooltip =
 options-enable-remote-label = Ebligi foran senerarigon
 options-enable-remote-tooltip =
     .title = Ŝalto de tiu ĉi elekteblo permesos al la programistaj iloj la senerarigon de foraj programoj, kiel tiuj de Firefox OS
+options-enable-remote-tooltip2 =
+    .title = Ŝalto de tiu ĉi eblo prefero permesos la foran senerarigon de tiu ĉi nuna programo
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = Aktivigi Service Workers sur HTTP (kiam la ilujo estas malfermita)
 options-enable-service-workers-http-tooltip =
@@ -113,11 +115,6 @@ options-source-maps-tooltip =
     .title = Se vi aktivigas tiun ĉi elekteblon, fontoj estos mapitaj en la iloj.
 # The message shown for settings that trigger page reload
 options-context-triggers-page-refresh = * Nur en la nuna seanco, tio reŝargas la paĝon
-
-##
-
-# The heading for the Debugger section
-options-debugger-label = Erarserĉilo
 # The label for the checkbox that toggles the display of the platform data in the
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config
 options-show-platform-data-label = Montri datumojn de la soklo de Gecko

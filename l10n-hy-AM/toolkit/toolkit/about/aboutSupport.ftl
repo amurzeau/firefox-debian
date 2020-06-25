@@ -31,6 +31,7 @@ app-basics-title = Տեղեկություն հավելվածի մասին
 app-basics-name = Անուն
 app-basics-version = Տարբերակ
 app-basics-build-id = Կառուցման ID
+app-basics-distribution-id = Բաշխման ID
 app-basics-update-channel = Թարմացումների աղբյուր
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -89,6 +90,8 @@ graphics-crash-guards-title = Վթարի պաշտպանի անջատած յու�
 graphics-workarounds-title = Շրջանցիկներ
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Պատուհանի հաղորդակարգ
+# Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
+graphics-desktop-environment = Աշխատասեղանի միջավայր
 place-database-title = Տվյալների շտեմարան
 place-database-integrity = Շտեմարաններ
 place-database-verify-integrity = Ստուգել ամբողջությունը
@@ -113,6 +116,11 @@ sandbox-sys-call-number = Համզանգ
 sandbox-sys-call-args = Փաստարկներ
 safe-mode-title = Օգտ. Ապահով կերպը
 restart-in-safe-mode-label = Վերամեկնարկել՝ անջատելով հավելումները...
+clear-startup-cache-title = Փորձեք մաքրել ինքնամեկնարկի շտեմը
+clear-startup-cache-label = Մաքրել ինքնամեկնարկի շտեմը…
+startup-cache-dialog-title = Մաքրել ինքնամեկնարկի շտեմը
+startup-cache-dialog-body = Վերամեկնարկեք { -brand-short-name }-ը՝ ինքնամեկնարկի շտեմը մաքրելու համար: Դա չի փոխի ձեր կարգավորումները կամ հեռացնի ընդլայնումները, որոնք ավելացրել եք { -brand-short-name }-ում:
+restart-button-label = Վերամեկնարկել
 
 ## Media titles
 
@@ -120,6 +128,7 @@ audio-backend = Ձայնային հետընթաց
 max-audio-channels = Առավելագույն կապուղիներ
 channel-layout = Նախընտրելի ալիքի դասավորությունը
 sample-rate = Նախընտրելի նմուշի փոխարժեք
+roundtrip-latency = Շրջանաձև հապաղում (ստանդարտ շեղում)
 media-title = Մեդիա
 media-output-devices-title = Արտածելու սարքեր
 media-input-devices-title = Ներածելու սարքեր
@@ -285,6 +294,11 @@ sandbox-proc-type-content = բովանդակությունը
 sandbox-proc-type-file = ֆայլի բովանդակություն
 sandbox-proc-type-media-plugin = մեդիա բաղադրիչ
 sandbox-proc-type-data-decoder = տվյալների վերծանիչ
+startup-cache-title = Ինքնամեկնարկի շտեմ
+startup-cache-disk-cache-path = Հիշասարքի շտեմի ուղի
+startup-cache-ignore-disk-cache = Անտեսել հիշասարքի շտեմը
+startup-cache-found-disk-cache-on-init = Սկզբնավորման ժամանակ գտնվել է հիշասարքի շտեմ
+startup-cache-wrote-to-disk-cache = Գրվել է հիշասարքի շտեմում
 launcher-process-status-0 = Միացված
 launcher-process-status-1 = Անջատված է ձախողման պատճառով
 launcher-process-status-2 = Ուժով անջատված
@@ -308,6 +322,7 @@ touch-enabled = հպմամբ մուտքագրումը միացված է
 drag-enabled = գլորագոտու քաշելը միացված է
 keyboard-enabled = ստեղնաշարի միացված է
 autoscroll-enabled = ինքնապտտումը միացված է
+zooming-enabled = շարժումների սահուն չափափոխումը միացված է
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

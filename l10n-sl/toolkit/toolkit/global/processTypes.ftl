@@ -26,3 +26,5 @@ process-type-webisolated = Ločena spletna vsebina
 process-type-gpu = GPE
 # process used to perform network operations
 process-type-socket = Vtičnica
+# process preallocated; may change to other types
+process-type-prealloc = Vnaprej dodeljeno

@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE (places.library.title): use "Library", "Archive" or "Repository" -->
-<!ENTITY places.library.title  "Mba'erysýi">
+<!ENTITY places.library.title  "Mba’erysýi">
 <!ENTITY places.library.width  "700">
 <!ENTITY places.library.height "500">
 <!ENTITY organize.label        "Mohenda">
@@ -20,7 +20,7 @@
 <!ENTITY view.columns.accesskey         "C">
 <!ENTITY view.sort.label                "Mohenda">
 <!ENTITY view.sort.accesskey            "M">
-<!ENTITY view.unsorted.label            "Mohenda'ỹva">
+<!ENTITY view.unsorted.label            "Mohenda’ỹva">
 <!ENTITY view.unsorted.accesskey        "M">
 <!ENTITY view.sortAscending.label       "A > Z ñemohenda">
 <!ENTITY view.sortAscending.accesskey   "A">
@@ -31,7 +31,7 @@
 <!ENTITY importBookmarksFromHTML.accesskey "I">
 <!ENTITY exportBookmarksToHTML.label       "Techaukaha jereraha HTML-ramo">
 <!ENTITY exportBookmarksToHTML.accesskey   "E">
-<!ENTITY importOtherBrowser.label          "Mba'ekuaarã jereru...">
+<!ENTITY importOtherBrowser.label          "Mba’ekuaarã jereru…">
 <!ENTITY importOtherBrowser.accesskey      "A">
 
 <!ENTITY cmd.backup.label               "Mbokuatia...">
@@ -55,7 +55,7 @@
 <!ENTITY cmd.open_all_in_tabs.label      "Tendayképe jeikepa">
 <!ENTITY cmd.open_all_in_tabs.accesskey  "O">
 
-<!ENTITY cmd.properties.label      "Mba'ejára">
+<!ENTITY cmd.properties.label      "Mba’ejára">
 <!ENTITY cmd.properties.accesskey  "M">
 
 <!ENTITY cmd.sortby_name.label              "Teraite rupi Ñemohenda">
@@ -70,18 +70,11 @@
 <!ENTITY cmd.new_separator.label           "Mopa'ũha pyahu">
 <!ENTITY cmd.new_separator.accesskey       "S">
 
-<!ENTITY cmd.reloadLivebookmark.label      "Techaukaha oku'éva myenyhẽjey">
-<!ENTITY cmd.reloadLivebookmark.accesskey  "R">
-
-<!ENTITY cmd.moveBookmarks.label                  "Gueraha…">
-<!ENTITY cmd.moveBookmarks.accesskey              "M">
-
 <!ENTITY col.name.label          "Téra">
 <!ENTITY col.tags.label          "Teramoĩ">
 <!ENTITY col.url.label           "Tendaréra">
 <!ENTITY col.mostrecentvisit.label "Jeike ramo pyahuvéva">
 <!ENTITY col.visitcount.label    "Jeikehague jepapa">
-<!ENTITY col.description.label   "Moha'ãnga">
 <!ENTITY col.dateadded.label     "Mbojoapypyre">
 <!ENTITY col.lastmodified.label  "Ñemoambue ramove">
 
@@ -90,19 +83,15 @@
 
 <!ENTITY cmd.find.key  "f">
 
-<!ENTITY maintenance.label      "Mba'ereru ha Ñongatuguy">
+<!ENTITY maintenance.label      "Mba’ereru ha Ñongatuguy">
 <!ENTITY maintenance.accesskey  "I">
-<!ENTITY maintenance.tooltip    "Nde rechahaukakuéra mba'ereru ha mba'ereraha">
+<!ENTITY maintenance.tooltip    "Nde rechahaukakuéra mba’ereru ha mba’ereraha">
 
 <!ENTITY backButton.tooltip  "Tapykuévo jeho">
 
 <!ENTITY forwardButton.tooltip  "Tenonde jeho">
 
-<!ENTITY detailsPane.more.label "Hetave">
-<!ENTITY detailsPane.more.accesskey "e">
-<!ENTITY detailsPane.less.label "Sa'ive">
-<!ENTITY detailsPane.less.accesskey "e">
-<!ENTITY detailsPane.selectAnItemText.description "Eiporavo peteĩ mba'epuru ehecha ha embosako'i hag̃ua imba'etee">
+<!ENTITY detailsPane.selectAnItemText.description "Eiporavo peteĩ mba’epuru ehecha ha embosako’i hag̃ua imba’etee">
 
 <!ENTITY view.label               "Hecha">
 <!ENTITY view.accesskey           "w">

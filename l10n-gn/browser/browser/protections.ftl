@@ -31,10 +31,20 @@ protection-report-header-details-strict = Ñemo’ã oñembohape <b>Estricto</b>
     .title = Eho ñemigua moĩporãme
 protection-report-header-details-custom = Ñemo’ã oñembohape <b>Personalizado</b>
     .title = Eho ñemigua moĩporãme
-protection-report-page-title = Ñemigua ñemo'ã
+protection-report-page-title = Ñemigua ñemo’ã
 protection-report-content-title = Ñemigua mo’ãha
 etp-card-title = Tapykueho mo’ãha mbotuichapyre
 etp-card-content = Umi tapykuehoha oike ñandutípe ombyaty hag̃ua marandu umi nerembiapo rapykuere. { -brand-short-name } ojoko heta tapykuehoha ha ambue scripts imarãva.
+protection-report-webpage-title = Ñemo’ãha renda
+protection-report-page-content-title = Ñemo’ãha renda
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
+protection-report-page-summary = { -brand-short-name } omo’ãkuaa ne ñemigua heta pa’ũme eikundaha aja. Kóva ha’e momichĩmbyre umi ñemo’ã rehegua, oikehápe avei umi tembipuru eñangarekokuaa hag̃ua ne tekorosã ñandutípe.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } omo’ãkuaa ne ñemigua heta pa’ũme eikundaha aja. Kóva ha’e momichĩmbyre umi ñemo’ã rehegua, oikehápe avei umi tembipuru eñangarekokuaa hag̃ua ne tekorosã ñandutípe.
+protection-report-settings-link = Eñangareko ne ñemigua ha tekorosã ñembohekóre
+etp-card-title-always = Ñemo’ã tapykuehoha iporãvéva rovake: Hendy tapia
+etp-card-title-custom-not-blocking = Ñemo’ã tapykuehoha iporãvéva rovake: Ogue
+etp-card-content-description = { -brand-short-name } ombyke ijehegui umi atyguasúpe ani ohapykuehóvo ñanduti rupi kañyhápe.
 protection-report-etp-card-content-custom-not-blocking = Opaite ñemo’ã oñemboguepa ko’ág̃a. Eiporavo mba’e tapykuehohápa ejokóta emoambuévo { -brand-short-name } mo’ãha ñemboheko.
 protection-report-manage-protections = Eñangareko ñembohekóre
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -52,8 +62,6 @@ fingerprinter-tab-title = Ñemokuãhũ
 fingerprinter-tab-content = Umi kuãhũ kuaaukaha ombyaty ne kundahára ñemoĩporã ha ne mohendaha omoheñói hag̃ua mba’ete nenba’erã. Oipurúvo ko kuãhũ ikatu ohapykueho opaichagua ñanduti renda guive. <a data-l10n-name="learn-more-link">Kuaave</a>
 cryptominer-tab-title = Criptomineros
 cryptominer-tab-content = Umi criptominero oipurúva nde apopyvusu rembipurupyahu oguenohẽ hag̃ua viru ñandutiguáva. Umi ojuapykuerigua ipapapýva mbohapeha oipurupa ibatería, omombegue ne mohendaha ha ikatu ohupi electricidad repy. <a data-l10n-name="learn-more-link">Kuaave</a>
-protections-close-button =
-    .aria-label = Mboty
 protections-close-button2 =
     .aria-label = Mboty
     .title = Mboty
@@ -101,7 +109,7 @@ lockwise-scanned-text-no-breached-logins =
 lockwise-how-it-works-link = Mba’éicha omba’apo
 turn-on-sync = Emyandy { -sync-brand-short-name }...
     .title = Eho ñembojuehe erohoryvévape
-manage-connected-devices = Mba'e'oka ñangarekoha…
+manage-connected-devices = Mba’e’oka ñangarekoha…
 # Variables:
 #   $count (Number) - Number of devices connected with sync.
 lockwise-connected-device-status =
@@ -110,11 +118,19 @@ lockwise-connected-device-status =
        *[other] Oike mba’e’okuérape { $count } ndive
     }
 monitor-title = Ema’ẽag̃uíke mba’ekuaarã ñembyaíre
-monitor-link = Mba'éichapa oba'apo
+monitor-link = Mba’éichapa omba’apo
 monitor-header-content-no-account = Ehecha { -monitor-brand-name } eikuaa hag̃ua oĩpara’e mba’ekuaarã kuaapýva ñembyaípe ha oñembou hag̃ua ndéve kyhyjyrã mba’evai rehegua.
 monitor-header-content-signed-in = { -monitor-brand-name } ne nemongyhyje ne marandu’i oĩ haguére mba’ekuaarã ñembyai kuaapývape.
 monitor-sign-up = Eñemboheraguapy og̃uahẽ hag̃ua ndéve ñembyai rehegua
+monitor-sign-up-link = Eñemboheraguapy ñembogua kyhyjerãme
+    .title = Eñemboheraguapy ñembogua kyhyjerãme { -monitor-brand-name } rupi
 auto-scan = Ijehegui ohechajey ko árape
+monitor-emails-tooltip =
+    .title = Ehecha ñanduti veve kundaharape hechapyre { -monitor-brand-short-name }-pe
+monitor-breaches-tooltip =
+    .title = Ehecha mba’ekuaarã ñembogua kuaapyre { -monitor-brand-short-name }-pe
+monitor-passwords-tooltip =
+    .title = Ehecha ñe’ẽñemi ivaikuaáva { -monitor-brand-short-name }-pe
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
@@ -130,6 +146,14 @@ info-known-breaches-found =
     { $count ->
         [one] Mba’ekuaarã kuaapýva ñembyai omomarãkuaa ne marandu
        *[other] Mba’ekuaarãkuéra kuaapýva ñembyai omomarãkuaa ne marandu
+    }
+# This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] Mba’ekuaarã ñembyai ojekuaáva ikurusúva oĩporãmavaramo
+       *[other] Mba’ekuaarãkuéra ñembyai ojekuaáva ikurusúva oĩporãmavaramo
     }
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
@@ -148,6 +172,41 @@ password-warning =
         [one] Tembiapo ñepyrũ ñongatupyre ikatu kuri oĩ mba’ekuaarã imarãkuaahápe. Emoambue ko ñe’ẽñemi hekorosãve hag̃ua ñandutípe. <a data-l10n-name="lockwise-link">Ehecha tembiapo ñepyrũ ñongatupyre</a>
        *[other] Tembiapo ñepyrũ ñongatupyre ikatu kuri oĩ mba’ekuaarã imarãkuaahápe. Emoambue ko ñe’ẽñemi hekorosãve hag̃ua ñandutípe. <a data-l10n-name="lockwise-link">Ehecha tembiapo ñepyrũ ñongatupyre</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] Ñe’ẽñemi ojehecháva ñembogua oĩporã’ỹvaramo
+       *[other] Ñe’ẽñemikuéra ojehecháva ñembogua oĩporã’ỹvaramo
+    }
+monitor-no-breaches-title = ¡Marandu iporãva!
+monitor-no-breaches-description = Ndaipóri ñembogua ojekuaáva. Eñambuéramo, roikuaaukáta ndéve.
+monitor-view-report-link = Ehecha marandu’i
+    .title = Emoĩporã  ñembogua { -monitor-brand-short-name }-pe
+monitor-breaches-unresolved-title = Emoĩporã umi ñembyai
+monitor-breaches-unresolved-description = Ahechajey rire mba’emimi ñembyai rehegua ha roñeha’ã romo’ã ne marandu, ikatúma eikuaa ñembyai oĩporãmaha.
+monitor-manage-breaches-link = Emongu’e ñembogua
+    .title = Emongu’e ñembogua { -monitor-brand-short-name }-pe
+monitor-breaches-resolved-title = ¡Iporã! Emoĩporãmbáma ñembogua ojekuaáva.
+monitor-breaches-resolved-description = Ne ñanduti veve ojehechárõ oĩha ñembyai pyahúpe, romomarandúta.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+        [one] { $numBreachesResolved } { $numBreaches } mba’e ñembyai mongurusupyre oĩporãmavaramo
+       *[other] { $numBreachesResolved } { $numBreaches } mba’e ñembyai mongurusupyre oĩporãmavaramo
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved }% oĩmbáma
+monitor-partial-breaches-motivation-title-start = ¡Ñepyrũ guasu!
+monitor-partial-breaches-motivation-title-middle = ¡Eku’e péicha!
+monitor-partial-breaches-motivation-title-end = ¡Opapotáma! Eho hese péicha.
+monitor-partial-breaches-motivation-description = Emoĩporã hembýva ñembogua { -monitor-brand-short-name } rupive.
+monitor-resolve-breaches-link = Emoĩpórã ñembogua
+    .title = Emoĩpórã ñembogua { -monitor-brand-short-name }-pe
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

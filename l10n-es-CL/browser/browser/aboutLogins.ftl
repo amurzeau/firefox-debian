@@ -2,7 +2,13 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-about-logins-page-title = Conexiones y contraseñas
+
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
+about-logins-page-title = Credenciales y contraseñas
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
@@ -13,8 +19,8 @@ login-app-promo-android =
 login-app-promo-apple =
     .alt = Descárgalo en la App Store
 login-filter =
-    .placeholder = Buscar conexiones
-create-login-button = Crear nueva conexión
+    .placeholder = Buscar credenciales
+create-login-button = Crear nueva credencial
 fxaccounts-sign-in-text = Ten tus contraseñas en tus otros dispositivos
 fxaccounts-sign-in-button = Conectarse a { -sync-brand-short-name }
 fxaccounts-avatar-button =
@@ -26,6 +32,7 @@ menu =
     .title = Abrir menú
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Importar desde otro navegador…
+about-logins-menu-menuitem-export-logins = Exportar credenciales…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Opciones
@@ -38,11 +45,11 @@ menu-menuitem-iphone-app = { -lockwise-brand-short-name } para iPhone e iPad
 ## Login List
 
 login-list =
-    .aria-label = Conexiones que coinciden con criterios de búsqueda
+    .aria-label = Credenciales que coinciden con  loscriterios de búsqueda
 login-list-count =
     { $count ->
-        [one] { $count } conexión
-       *[other] { $count } conexiones
+        [one] { $count } credencial
+       *[other] { $count } credenciales
     }
 login-list-sort-label-text = Ordenar por:
 login-list-name-option = Nombre (A-Z)
@@ -50,11 +57,11 @@ login-list-name-reverse-option = Nombre (Z-A)
 about-logins-login-list-alerts-option = Alertas
 login-list-last-changed-option = Última modificación
 login-list-last-used-option = Último uso
-login-list-intro-title = No se encontraron conexiones
+login-list-intro-title = No se encontraron credenciales
 login-list-intro-description = Cuando guardas una contraseña en { -brand-product-name }, esta será mostrada aquí.
-about-logins-login-list-empty-search-title = No se encontraron conexiones
+about-logins-login-list-empty-search-title = No se encontraron credenciales
 about-logins-login-list-empty-search-description = No hay resultados que coincidan con tu búsqueda.
-login-list-item-title-new-login = Nueva conexión
+login-list-item-title-new-login = Nueva credencial
 login-list-item-subtitle-new-login = Ingresa tus credenciales de conexión
 login-list-item-subtitle-missing-username = (sin nombre de usuario)
 about-logins-list-item-breach-icon =
@@ -65,16 +72,16 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = ¿Buscas tus contraseñas guardadas? Configura { -sync-brand-short-name }.
-about-logins-login-intro-heading-logged-in = No se encontraron conexiones sincronizadas.
-login-intro-description = Si guardaste tus conexiones en { -brand-product-name } en un dispositivo diferente, estas son las instrucciones para que las puedas tener también aquí:
-login-intro-instruction-fxa = Crea o conéctate a tu { -fxaccount-brand-name } en el dispositivo en que tienes guardadas tus conexiones
-login-intro-instruction-fxa-settings = Asegúrate de seleccionar la marca de conexiones en los ajustes de { -sync-brand-short-name }
+about-logins-login-intro-heading-logged-in = No se encontraron credenciales sincronizadas.
+login-intro-description = Si guardaste tus credenciales en { -brand-product-name } en un dispositivo diferente, estas son las instrucciones para que puedas tenerlas también aquí:
+login-intro-instruction-fxa = Crea o conéctate a tu { -fxaccount-brand-name } en el dispositivo en que tienes guardadas tus credenciales
+login-intro-instruction-fxa-settings = Asegúrate de seleccionar la marca de credenciales en los ajustes de { -sync-brand-short-name }
 about-logins-intro-instruction-help = Visita el <a data-l10n-name="help-link">Soporte de { -lockwise-brand-short-name }</a> para más ayuda
-about-logins-intro-import = Si tus conexiones están guardadas en otro navegador, puedes <a data-l10n-name="import-link">importarlas a { -lockwise-brand-short-name }</a>
+about-logins-intro-import = Si tus credenciales están guardadas en otro navegador, puedes <a data-l10n-name="import-link">importarlas a { -lockwise-brand-short-name }</a>
 
 ## Login
 
-login-item-new-login-title = crear una nueva conexión
+login-item-new-login-title = crear una nueva credencial
 login-item-edit-button = Editar
 about-logins-login-item-remove-button = Eliminar
 login-item-origin-label = Dirección del sitio web
@@ -105,31 +112,30 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
-# This message can be seen by attempting to edit a login in about:logins
-about-logins-edit-login-os-auth-dialog-message = Verifica tu identidad para editar la conexión guardada.
 # This message can be seen when attempting to edit a login in about:logins on Windows.
-about-logins-edit-login-os-auth-dialog-message-win = Para editar tu conexión, ingresa tus credenciales de inicio de sesión de Windows. Esto ayuda a proteger la seguridad de tus cuentas.
+about-logins-edit-login-os-auth-dialog-message-win = Para editar tu credencial, ingresa tus datos de inicio de sesión de Windows. Esto ayuda a proteger la seguridad de tus cuentas.
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
-about-logins-edit-login-os-auth-dialog-message-macosx = editar la conexión guardada
-# This message can be seen by attempting to reveal a password in about:logins
-about-logins-reveal-password-os-auth-dialog-message = Verifica tu identidad para revelar la contraseña guardada.
+about-logins-edit-login-os-auth-dialog-message-macosx = editar la credencial guardada
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
 about-logins-reveal-password-os-auth-dialog-message-win = Para ver tu contraseña, ingresa tus credenciales de inicio de sesión de Windows. Esto ayuda a proteger la seguridad de tus cuentas.
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = revelar la contraseña guardada
-# This message can be seen by attempting to copy a password in about:logins
-about-logins-copy-password-os-auth-dialog-message = Verifica tu identidad para copiar la contraseña guardada.
 # This message can be seen when attempting to copy a password in about:logins on Windows.
 about-logins-copy-password-os-auth-dialog-message-win = Para copiar tu contraseña, ingresa tus credenciales de inicio de sesión de Windows. Esto ayuda a proteger la seguridad de tus cuentas.
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = copiar la contraseña guardada
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message-win = Para exportar tus credenciales, ingresa tus datos de inicio de sesión de Windows. Esto ayuda a proteger la seguridad de tus cuentas.
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message-macosx = exportar credenciales y contraseñas guardadas
 
 ## Master Password notification
 
-master-password-notification-message = Por favor, ingresa tu contraseña maestra para ver tus conexiones y contraseñas guardadas
+master-password-notification-message = Por favor, ingresa tu contraseña maestra para ver tus credenciales y contraseñas guardadas
 master-password-reload-button =
     .label = Conectarse
     .accesskey = L
@@ -138,8 +144,8 @@ master-password-reload-button =
 
 enable-password-sync-notification-message =
     { PLATFORM() ->
-        [windows] ¿Quieres tener tus conexiones en todas partes en que usas { -brand-product-name }? Ve a Opciones de { -sync-brand-short-name } y selecciona la casilla de verificación de Conexiones.
-       *[other] ¿Quieres tener tus conexiones en todas partes en que usas { -brand-product-name }? Ve a Preferencias de { -sync-brand-short-name } y selecciona la casilla de verificación de Conexiones.
+        [windows] ¿Quieres tener tus credenciales en todas partes en que usas { -brand-product-name }? Ve a Opciones de { -sync-brand-short-name } y selecciona la casilla de verificación de credenciales.
+       *[other] ¿Quieres tener tus credenciales en todas partes en que usas { -brand-product-name }? Ve a Preferencias de { -sync-brand-short-name } y selecciona la casilla de verificación de credenciales.
     }
 enable-password-sync-preferences-button =
     .label =
@@ -157,9 +163,12 @@ about-logins-enable-password-sync-dont-ask-again-button =
 confirmation-dialog-cancel-button = Cancelar
 confirmation-dialog-dismiss-button =
     .title = Cancelar
-about-logins-confirm-remove-dialog-title = ¿Eliminar esta conexión?
+about-logins-confirm-remove-dialog-title = ¿Eliminar esta credencial?
 confirm-delete-dialog-message = Esta acción no puede revertirse.
 about-logins-confirm-remove-dialog-confirm-button = Eliminar
+about-logins-confirm-export-dialog-title = Exportar credenciales y contraseñas
+about-logins-confirm-export-dialog-message = Tus contraseñas serán guardadas como texto legible (por ejemplo, BadP@ssw0rd) por lo que cualquiera que pueda abrir el archivo exportado podrá verlas.
+about-logins-confirm-export-dialog-confirm-button = Exportar…
 confirm-discard-changes-dialog-title = ¿Descartar cambios sin guardar?
 confirm-discard-changes-dialog-message = Todos los cambios sin guardar se perderán.
 confirm-discard-changes-dialog-confirm-button = Descartar
@@ -167,7 +176,7 @@ confirm-discard-changes-dialog-confirm-button = Descartar
 ## Breach Alert notification
 
 about-logins-breach-alert-title = Filtración de sitio
-breach-alert-text = Se filtraron o robaron contraseñas de este sitio desde la última vez en que actualizaste tus datos de conexión. Cambia tu contraseña para proteger tu cuenta.
+breach-alert-text = Se filtraron o robaron contraseñas de este sitio desde la última vez en que actualizaste los datos de tu credencial. Cambia tu contraseña para proteger tu cuenta.
 about-logins-breach-alert-date = Esta filtración ocurrió el { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
@@ -192,3 +201,19 @@ about-logins-vulnerable-alert-learn-more-link = Aprender más
 about-logins-error-message-duplicate-login-with-link = Ya existe una entrada para { $loginTitle } con ese nombre de usuario. <a data-l10n-name="duplicate-link">¿Ir a la entrada existente?</a>
 # This is a generic error message.
 about-logins-error-message-default = Ocurrió un error mientras se intentaba guardar esta contraseña.
+
+## Login Export Dialog
+
+# Title of the file picker dialog
+about-logins-export-file-picker-title = Exportar archivo de credenciales…
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename = logins.csv
+about-logins-export-file-picker-export-button = Exportar
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] Documento CSV
+       *[other] Archivo CSV
+    }

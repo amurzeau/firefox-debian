@@ -9,15 +9,6 @@
 remove-address-row-type = Вилучити поле { $type }
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
-address-input-type =
-    { $count ->
-        [0] Порожнє поле вводу { $type }
-        [one] Поле вводу { $type } з однією адресою
-        [few] Поле вводу { $type } з { $count } адресами
-       *[many] Поле вводу { $type } з { $count } адресами
-    }
-#   $type (String) - the type of the addressing row
-#   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
         [0] { $type }
@@ -45,3 +36,28 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Перемістити в поле Прихована копія
     .accesskey = х
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [1] { $count } вкладення
+            [one] { $count } вкладення
+            [few] { $count } вкладення
+           *[many] { $count } вкладень
+        }
+    .accesskey = в
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [1] { $count } вкладення
+            [one] { $count } вкладення
+            [few] { $count } вкладення
+           *[many] { $count } вкладень
+        }
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+button-return-receipt =
+    .label = Підтвердження отримання
+    .tooltiptext = Надсилати запит про підтвердження отримання цього повідомлення

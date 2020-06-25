@@ -2,6 +2,50 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (Прыватнае агляданне)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (Прыватнае агляданне)
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (Прыватнае агляданне)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (Прыватнае агляданне)
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = Звесткі аб сайце
 
@@ -222,6 +266,23 @@ popup-select-microphone =
     .value = Да якога мікрафона даць доступ:
     .accesskey = М
 popup-all-windows-shared = Усе бачныя вокны на вашым экране будуць абагулены.
+popup-screen-sharing-not-now =
+    .label = Не цяпер
+    .accesskey = ц
+popup-screen-sharing-never =
+    .label = Ніколі не дазваляць
+    .accesskey = і
+popup-silence-notifications-checkbox = Адключыць абвесткі ад { -brand-short-name } на час супольнага доступу
+popup-silence-notifications-checkbox-warning = { -brand-short-name } не будзе паказваць абвесткі ў час супольнага доступу.
+
+## WebRTC window or screen share tab switch warning
+
+sharing-warning-window = Вы адкрываеце доступ да { -brand-short-name }. Іншыя людзі могуць бачыць, калі вы пераходзіце на новую картку.
+sharing-warning-screen = Вы адкрываеце доступ да ўсяго экрана. Іншыя людзі могуць бачыць, калі вы пераходзіце на новую картку.
+sharing-warning-proceed-to-tab =
+    .label = Перайсці на картку
+sharing-warning-disable-for-session =
+    .label = Адключыць ахову агульнага доступу на гэты сеанс
 
 ## DevTools F12 popup
 
@@ -242,7 +303,7 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Пашырэнне:
-urlbar-go-end-cap =
+urlbar-go-button =
     .tooltiptext = Пайсці па адрасе, які зараз у адрасным радку
 urlbar-page-action-button =
     .tooltiptext = Дзеянні старонкі

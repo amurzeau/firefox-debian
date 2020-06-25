@@ -103,6 +103,8 @@ options-enable-chrome-tooltip =
 options-enable-remote-label = Povoliť vzdialené ladenie
 options-enable-remote-tooltip =
     .title = Zapnutie tejto voľby vám umožní používať vývojárske nástroje na ladenie vzdialených inštancií, napr. Firefox OS
+options-enable-remote-tooltip2 =
+    .title = Zapnutím tejto možnosti umožníte ladenie tejto inštancie prehliadača na diaľku
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = Povoliť Service Workery cez HTTP (ak sú vývojárske nástroje otvorené)
 options-enable-service-workers-http-tooltip =
@@ -113,11 +115,6 @@ options-source-maps-tooltip =
     .title = Ak túto voľbu zapnete, zdroje budú mapované v nástrojoch.
 # The message shown for settings that trigger page reload
 options-context-triggers-page-refresh = * Len pre aktuálnu reláciu, opäť načíta obsah stránky
-
-##
-
-# The heading for the Debugger section
-options-debugger-label = Ladenie
 # The label for the checkbox that toggles the display of the platform data in the
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config
 options-show-platform-data-label = Zobrazovať údaje platformy Gecko

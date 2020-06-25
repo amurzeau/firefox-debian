@@ -5,11 +5,12 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = Z druheho wobhladowaka importować…
 appmenuitem-protection-report-title = Škit priwatnosće
 appmenuitem-protection-report-tooltip =
     .tooltiptext = K wašej rozprawje priwatnosće přeńć
+appmenuitem-protection-dashboard-title = Přehlad škitow
+appmenuitem-customize-mode =
+    .label = Přiměrić…
 
 ## Zoom Controls
 
@@ -22,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = Nětko synchronizować
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Nowe funkcije a změny
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = Wo nowych funkcijach informować
+    .accesskey = f

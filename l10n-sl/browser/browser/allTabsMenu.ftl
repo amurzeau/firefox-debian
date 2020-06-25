@@ -4,6 +4,15 @@
 
 all-tabs-menu-undo-close-tab =
     .label = Ponovno odpri zavihek
+all-tabs-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Ponovno odpri zavihek
+            [one] Ponovno odpri zavihek
+            [two] Ponovno odpri zavihka
+            [few] Ponovno odpri zavihke
+           *[other] Ponovno odpri zavihke
+        }
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = Išči zavihke

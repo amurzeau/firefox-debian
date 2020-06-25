@@ -232,6 +232,10 @@ translate-attribution = Translaziuns da <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Excepziuns…
     .accesskey = x
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Utilisar la configuraziun dil sistem operativ per «{ $localeName }» per definir il format da datas, temp, numers ed unitads da mesira.
 check-user-spelling =
     .label = Controllar l'ortografia durant l'endataziun
     .accesskey = t
@@ -310,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Utilisar { $plugin-name } (en { -brand-short-name })
-applications-preview-inapp =
-    .label = Prevista en { -brand-short-name }
 applications-open-inapp =
     .label = Avrir en { -brand-short-name }
 
@@ -325,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -493,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Paginas preferidas
 home-prefs-topsites-description = Las paginas che ti visitas il pli savens
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Recumandà da { $provider }
 home-prefs-recommended-by-description = Cuntegn interessant ord il web, persunalisà per tai
+home-prefs-recommended-by-description-update = Cuntegn excepziunal ord il web, tschernì da { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Co ch'i funcziuna
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Artitgels sponsurads
@@ -558,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Mussar propostas da tschertga en fanestras privatas
 suggestions-addressbar-settings = Modifitgar las preferenzas per las propostas da la cronologia da navigaziun, dals segnapaginas e dals tabs
+suggestions-addressbar-settings-generic = Midar las preferenzas per avair autras propostas en la trav d'adressas
 search-suggestions-cant-show = Propostas da tschertgar na vegnan betg mussadas en la trav d'adressas perquai che ti has configurà { -brand-short-name } uschia che la cronologia na vegn betg memorisada.
 search-one-click-header = Maschinas da tschertgar cun-in-clic
 search-one-click-desc = Tscherna las maschinas da tschertgar alternativas che cumparan sut la trav d'adressas e la trav da tschertgar sche ti cumenzas a tippar in pled.
@@ -761,10 +768,10 @@ privacy-header = Protecziun da datas
 
 ## Privacy Section - Forms
 
+logins-header = Infurmaziuns d'annunzia & pleds-clav
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Infurmaziuns d'annunzia & pleds-clav
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Infurmaziuns d'annunzia & pleds-clav
     .searchkeywords = { -lockwise-brand-short-name }
@@ -801,7 +808,7 @@ forms-master-pw-fips-desc = I n'è betg reussì da midar il pled-clav
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verifitgescha tia identitad per crear in pled clav universal.
+master-password-os-auth-dialog-message-win = Per crear in pled-clav universal, endatescha tias datas d'annunzia per Windows. Quai gida a garantir la segirezza da tes contos.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -879,6 +886,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Fastizaders tranter websites
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Fastizaders tranter websites e da raits socialas
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Fastizaders interpaginals e fastizaders da medias socialas ed isolar ils cookies restants
 sitedata-option-block-unvisited =
     .label = Cookies da websites betg visitadas
 sitedata-option-block-all-third-party =
@@ -894,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Administrar las permissiuns…
     .accesskey = p
+sitedata-cookies-exceptions =
+    .label = Administrar las excepziuns…
+    .accesskey = x
 
 ## Privacy Section - Address Bar
 
@@ -908,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Tabs averts
     .accesskey = b
+addressbar-locbar-topsites-option =
+    .label = Paginas preferidas
+    .accesskey = P
 addressbar-suggestions-settings = Midar las preferenzas per propostas da maschinas da tschertgar
 
 ## Privacy Section - Content Blocking
@@ -955,6 +970,7 @@ content-blocking-etp-strict-desc = Ina protecziun pli severa, ma po avair per co
 content-blocking-etp-custom-desc = Tscherna ils fastizaders ed ils scripts che duain vegnir bloccads.
 content-blocking-private-windows = Cuntegn che fastizescha en fanestras privatas
 content-blocking-cross-site-tracking-cookies = Cookies che fastizeschan tranter websites
+content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies che fastizeschan tranter paginas ed isolar ils cookies restants
 content-blocking-social-media-trackers = Fastizaders da raits socialas
 content-blocking-all-cookies = Tut ils cookies
 content-blocking-unvisited-cookies = Cookies da websites betg visitadas
@@ -966,7 +982,6 @@ content-blocking-fingerprinters = Improntaders dal det
 content-blocking-warning-title = Attenziun!
 content-blocking-warning-description = La bloccada da cuntegn po impedir che tschertas websites funcziunian. Igl è simpel da deactivar la bloccada per las websites che ti tegnas per fidablas.
 content-blocking-learn-how = Vegnir a savair co
-content-blocking-etp-warning-description = La bloccada da fastizaders po influenzar las funcziunalitads da tschertas websites. Rechargiar ina pagina cun fastizaders per chargiar l'entir cuntegn.
 content-blocking-and-isolating-etp-warning-description = La bloccada da fastizaders e l'isolaziun da cookies po influenzar las funcziunalitads da tschertas websites. Rechargiar ina pagina cun fastizaders per chargiar l'entir cuntegn.
 content-blocking-warning-learn-how = Vegnir a savair co
 content-blocking-reload-description = Igl è necessari da rechargiar ils tabs per applitgar las midadas.

@@ -317,8 +317,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Ужываць { $plugin-name } (у { -brand-short-name })
-applications-preview-inapp =
-    .label = Перадпрагляд у { -brand-short-name }
 applications-open-inapp =
     .label = Адкрываць у { -brand-short-name }
 
@@ -332,8 +330,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -500,11 +496,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Папулярныя сайты
 home-prefs-topsites-description = Сайты, якія вы наведваеце найчасцей
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Рэкамендавана { $provider }
 home-prefs-recommended-by-description = Выдатнае змесціва з усяго інтэрнэту, выбранае спецыяльна для вас
+home-prefs-recommended-by-description-update = Выключнае змесціва з усяго інтэрнэту, падабранае { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Як гэта працуе
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Артыкулы ад спонсараў
@@ -566,6 +568,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Паказваць пошукавыя прапановы ў прыватных вокнах
 suggestions-addressbar-settings = Змяніць перавагі для гісторыі прагляду, закладак і прапаноў картак
+suggestions-addressbar-settings-generic = Змяніць налады для іншых падказак у адрасным радку
 search-suggestions-cant-show = Пошукавыя прапановы у панэлі адрасу паказвацца не будуць, бо вы наладзілі { -brand-short-name } ніколі не запамінаць гісторыю.
 search-one-click-header = Пашукавікі ў адну пстрычку
 search-one-click-desc = Абярыце альтэрнатыўныя пашукавікі, якія з'яўляюцца пад адрасным радком ці панэллю пошуку, калі вы пачынаеце ўводзіць ключавое слова.
@@ -769,10 +772,10 @@ privacy-header = Прыватнасць браўзера
 
 ## Privacy Section - Forms
 
+logins-header = Лагіны & Паролі
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Лагіны & Паролі
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Лагіны & Паролі
     .searchkeywords = { -lockwise-brand-short-name }
@@ -808,8 +811,6 @@ forms-master-pw-fips-desc = Няўдача змянення пароля
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Пацвердзіце сваю асобу, каб стварыць галоўны пароль.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Каб стварыць галоўны пароль, увядзіце свае ўліковыя дадзеныя для ўваходу ў Windows. Гэта дапамагае захоўваць бяспеку вашых уліковых запісаў.
 # This message can be seen by trying to add a Master Password.
@@ -906,6 +907,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Кіраваць дазволамі...
     .accesskey = з
+sitedata-cookies-exceptions =
+    .label = Кіраваць выключэннямі…
+    .accesskey = ч
 
 ## Privacy Section - Address Bar
 
@@ -920,6 +924,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Адкрытыя карткі
     .accesskey = А
+addressbar-locbar-topsites-option =
+    .label = Папулярныя сайты
+    .accesskey = П
 addressbar-suggestions-settings = Змяніць налады для падказак пашукавіка
 
 ## Privacy Section - Content Blocking
@@ -979,7 +986,6 @@ content-blocking-fingerprinters = Збіральнікі адбіткаў пал
 content-blocking-warning-title = Увага!
 content-blocking-warning-description = Блакаванне змесціва можа парушыць працу некаторых вэб-сайтаў. Адключыць блакаванне на сайтах, якім вы давяраеце, лёгка.
 content-blocking-learn-how = Даведацца, як
-content-blocking-etp-warning-description = Блакаванне трэкераў можа адбіцца на функцыянальнасці некаторых сайтаў. Абнавіце старонку з трэкерамі, каб загрузіць усё змесціва.
 content-blocking-and-isolating-etp-warning-description = Блакаванне трэкераў і ізаляванне кукаў можа адбіцца на функцыянальнасці некаторых сайтаў. Абнавіце старонку з трэкерамі, каб загрузіць усё змесціва.
 content-blocking-warning-learn-how = Даведацца, як
 content-blocking-reload-description = Вам трэба будзе перазагрузіць свае карткі, каб прымяніць гэтыя змены.

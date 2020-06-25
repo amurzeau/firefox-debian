@@ -63,6 +63,7 @@ policy-ExtensionSettings = 확장 기능 설치의 모든 측면을 관리합니
 policy-ExtensionUpdate = 확장 기능 자동 업데이트를 사용하거나 사용하지 않게 합니다.
 policy-FirefoxHome = Firefox 홈을 구성합니다.
 policy-FlashPlugin = 플래시 플러그인의 사용을 허용하거나 거부합니다.
+policy-Handlers = 기본 응용 프로그램 핸들러를 구성합니다.
 policy-HardwareAcceleration = False 값이면 하드웨어 가속 기능을 끕니다.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = 홈페이지를 설정하고 선택적으로 잠급니다.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = 지정된 사이트의
 ##
 
 policy-LocalFileLinks = 특정 웹 사이트가 로컬 파일을 링크하도록 허용합니다.
+policy-MasterPassword = 마스터 비밀번호 사용을 요구하거나 금지합니다.
 policy-NetworkPrediction = 네트워크 예측(DNS 프리페칭)을 사용하거나 사용하지 않게 합니다.
 policy-NewTabPage = 새 탭 페이지를 사용하거나 사용하지 않게 합니다.
 policy-NoDefaultBookmarks = { -brand-short-name } 기본 북마크 번들과 스마트 북마크(자주 방문, 최근 태그)가 생성되지 않게 합니다. 참고: 이 정책은 프로필을 처음으로 실행하기 전에만 효과적입니다.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = 비밀번호 관리자에 비밀번호 저장을
 # PDF.js and PDF should not be translated
 policy-PDFjs = { -brand-short-name }에 내장된 PDF 뷰어인 PDF.js를 사용 안하거나 구성합니다.
 policy-Permissions2 = 카메라, 마이크, 위치, 알림 및 자동 재생에 대한 권한을 구성합니다.
+policy-PictureInPicture = 화면 속 화면을 사용하거나 사용하지 않게 합니다.
 policy-PopupBlocking = 기본으로 특정 웹 사이트가 팝업을 보여주도록 허용합니다.
 policy-Preferences = 설정의 하위 집합에 대한 값을 설정하고 잠급니다.
 policy-PromptForDownloadLocation = 다운로드시 파일 저장 위치를 물어봅니다.

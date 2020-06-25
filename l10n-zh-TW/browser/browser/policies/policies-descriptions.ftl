@@ -63,6 +63,7 @@ policy-ExtensionSettings = 管理擴充套件的各種安裝設定。
 policy-ExtensionUpdate = 開啟或關閉擴充套件自動更新。
 policy-FirefoxHome = 設定 Firefox Home。
 policy-FlashPlugin = 允許或拒絕使用 Flash 擴充套件。
+policy-Handlers = 設定預設應用程式處理方式。
 policy-HardwareAcceleration = 若為 false，就會關閉硬體加速。
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = 設定或鎖定首頁。
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = 對指定的網站恢�
 ##
 
 policy-LocalFileLinks = 允許特定網站鏈結到本機檔案。
+policy-MasterPassword = 要求使用或不允許使用主控密碼。
 policy-NetworkPrediction = 開啟或關閉網路預測（DNS 預讀）功能。
 policy-NewTabPage = 啟用或停用「新分頁」頁面。
 policy-NoDefaultBookmarks = 停止建立 { -brand-short-name } 內建的預設書籤及智慧書籤（最常造訪、最近新增的標籤）。註: 此原則僅在設定檔首次啟動前設定才有效。
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = 允許使用密碼管理員來儲存密碼。
 # PDF.js and PDF should not be translated
 policy-PDFjs = 停用或設定 { -brand-short-name } 內建的 PDF 閱讀器 PDF.js。
 policy-Permissions2 = 設定攝影機、麥克風、地理位置、通知、自動播放等權限。
+policy-PictureInPicture = 開啟或關閉子母畫面功能。
 policy-PopupBlocking = 允許某些網站預設可顯示彈出視窗。
 policy-Preferences = 鎖定部分偏好設定的內容。
 policy-PromptForDownloadLocation = 下載檔案時，詢問要將檔案儲存至何處。

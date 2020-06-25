@@ -113,6 +113,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY enterFullScreenCmd.accesskey "F">
 <!ENTITY exitFullScreenCmd.label "पडदाभरपासून बाहेर पडा">
 <!ENTITY exitFullScreenCmd.accesskey "F">
+
 <!ENTITY fullScreenCmd.label "पडदाभर">
 <!ENTITY fullScreenCmd.accesskey "F">
 <!ENTITY fullScreenCmd.macCommandKey "f">
@@ -127,8 +128,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaUnverified.label "आपले खाते सत्यापित करा">
 
 
-<!ENTITY togglePictureInPicture.key2 "}">
-<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
+<!-- } is above this key on many keyboards -->
+
 
 <!ENTITY fullScreenMinimize.tooltip "छोटे करा">
 <!ENTITY fullScreenRestore.tooltip "पूर्वस्थितीत आणा">
@@ -174,7 +175,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.settings.label "सेटिंग">
 <!ENTITY fxa.menu.accountSettings.label "खाते सेटिंग">
 <!ENTITY fxa.menu.signOut.label "साइन आउट करा…">
-<!ENTITY fxa.menu.deviceSettings.label "उपकरण सेटिंग">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
      for the Firefox Account toolbar menu screen.  -->
@@ -242,7 +242,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY stopCmd.label                "थांबा">
 <!ENTITY stopCmd.accesskey            "S">
 <!ENTITY stopCmd.macCommandKey        ".">
+
 <!ENTITY goEndCap.tooltip             "स्थान पट्टीतील पत्त्यावर जा">
+
 <!ENTITY printButton.label            "छापा">
 <!ENTITY printButton.tooltip          "हे पृष्ठ छापा">
 
@@ -286,6 +288,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "इतिहास दाखवा">
+
 
 <!ENTITY searchItem.title             "शोधा">
 
@@ -350,6 +353,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newUserContext.accesskey         "b">
 <!ENTITY manageUserContext.label          "कंटेनर व्यवस्थापित करा">
 <!ENTITY manageUserContext.accesskey      "O">
+
 <!ENTITY newNavigatorCmd.label        "नवीन पटल">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "N">
@@ -398,6 +402,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY viewCustomizeToolbar.label       "मनपसंत करा…">
 <!ENTITY viewCustomizeToolbar.accesskey     "C">
+
 <!ENTITY overflowCustomizeToolbar.label       "साधनपट्टी बदला...">
 <!ENTITY overflowCustomizeToolbar.accesskey   "C">
 
@@ -486,6 +491,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY moreMenu.label "अजून">
 
 <!ENTITY openCmd.commandkey           "l">
+
 <!ENTITY urlbar.placeholder2          "शोधा किंवा पत्ता द्या">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
@@ -569,6 +575,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY searchSetAsDefault.accesskey "D">
 
 <!ENTITY openLinkCmdInTab.label       "दुवा नवीन टॅबमध्ये उघडा">
+
 <!ENTITY openLinkCmdInTab.accesskey   "T">
 <!ENTITY openLinkCmd.label            "दुव्याला नवीन पटलात उघडा">
 <!ENTITY openLinkCmd.accesskey        "W">
@@ -617,11 +624,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisLinkCmd.accesskey  "L">
 <!ENTITY bookmarkThisFrameCmd.label      "या चौकटाला वाचनखूण लावा">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "m">
+
 <!ENTITY pageAction.copyLink.label    "दुव्याची प्रत बनवा">
 
 <!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
   "Pocket" is a brand name. -->
 <!ENTITY pocketButton.tooltiptext     "Pocket मध्ये जतन करा">
+
 <!ENTITY saveToPocketCmd.label        "पृष्ठ Pocket मध्ये जतन करा">
 <!ENTITY saveToPocketCmd.accesskey    "k">
 <!ENTITY saveLinkToPocketCmd.label    "दुवा Pocket मध्ये जतन करा">
@@ -830,17 +839,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.connectionSecure "सुरक्षित जोडणी">
 <!ENTITY identity.connectionNotSecure "जोडणी असुरक्षित आहे">
 
-<!ENTITY identity.connectionSecure3 "जोडणी सुरक्षित">
-<!ENTITY identity.connectionNotSecure2 "असुरक्षित जोडणी">
-<!ENTITY identity.connectionNotSecureSecurityView "आपण या साइटशी सुरक्षितपणे कनेक्ट केलेले नाही.">
 <!ENTITY identity.connectionFile "हे पृष्ठ आपल्या संगणकावर संचयीत केले गेले आहे.">
 <!ENTITY identity.connectionVerified2 ":द्वारे चालवण्यात येणाऱ्या साईटला आपण सुरक्षितपणे जुळलेले आहात">
-<!ENTITY identity.connectionVerified3 "आपण या साइटशी सुरक्षितपणे कनेक्ट केले आहे.">
 <!ENTITY identity.connectionInternal "हे सुरक्षित &brandShortName; पृष्ठ आहे.">
 <!ENTITY identity.extensionPage "हे पृष्ठ एका विस्तारापासून लोड केलेले आहे.">
 <!ENTITY identity.insecureLoginForms2 "आपण ह्या पृष्ठावर दिलेल्या लॉग इन माहितीबरोबर तडजोड होऊ शकते.">
-
-<!ENTITY identity.evOwnerLabel2 "यांना प्रमाणपत्र दिले:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; ने ह्या पृष्ठावरील काही असुरक्षित भाग अडवले आहेत.">
@@ -875,53 +878,10 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "परवानगी">
 
-<!ENTITY identity.permissions3 "परवानग्या">
 <!ENTITY identity.permissionsEmpty "आपण ह्या साईटला काही विशेष परवानग्या दिलेल्या नाहीत.">
 <!ENTITY identity.permissionsReloadHint "आपल्याला बदल लागू करण्यासाठी पृष्ठ पुन्हा लोड करावे लागू शकते.">
 <!ENTITY identity.permissionsPreferences.tooltip "परवानग्या प्राधान्ये उघडा">
 <!ENTITY identity.contentBlockingPreferences.tooltip "मजकूर अवरोधन प्राधान्यता उघडा">
-
-
-<!ENTITY protections.etpON.header "या साइटसाठी वर्धित ट्रॅकिंग संरक्षण चालू आहे">
-<!ENTITY protections.etpOFF.header "या साइटसाठी वर्धित ट्रॅकिंग संरक्षण बंद आहे">
-<!-- LOCALIZATION NOTE:
-     protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
-<!ENTITY protections.etpMoreInfo.label "वर्धित ट्रॅकिंग संरक्षण बद्दल अधिक माहिती">
-<!ENTITY protections.settings.label "संरक्षण सेटिंग">
-<!ENTITY protections.showreport.label "अहवाल दर्शवा">
-<!-- LOCALIZATION NOTE:
-     protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
-     protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
-<!ENTITY protections.siteNotWorking.label "साइट कार्यरत नाही?">
-<!ENTITY protections.siteNotWorkingView.title "साइट कार्यरत नाही?">
-<!-- LOCALIZATION NOTE:
-     In the Site Not Working? view, we suggest turning off protections if
-     the user is experiencing issues with any of a variety of functionality.
-     protections.siteNotWorkingView.header: The header of the list
-     protections.siteNotWorkingView.issueList.*: The list items, shown in a <ul> -->
-<!ENTITY protections.siteNotWorkingView.header "आपल्‍याला यासह समस्‍या येत असल्यास संरक्षण बंद करा:">
-<!ENTITY protections.siteNotWorkingView.issueList.logInFields "लॉगिन फील्ड">
-<!ENTITY protections.siteNotWorkingView.issueList.forms "फॉर्म">
-<!ENTITY protections.siteNotWorkingView.issueList.payments "देयके">
-<!ENTITY protections.siteNotWorkingView.issueList.comments "टिप्पण्या">
-<!ENTITY protections.siteNotWorkingView.issueList.videos "व्हिडीओ">
-<!ENTITY protections.siteNotWorkingView.sendReport.label "अहवाल पाठवा">
-
-<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
-     In the protections panel, Content Blocking category items are in three sections:
-     "Blocked" for categories being blocked in the current page,
-     "Allowed" for categories detected but not blocked in the current page, and
-     "None Detected" for categories not detected in the current page.
-     These strings are used in the header labels of each of these sections. -->
-<!ENTITY protections.blocking2.label "अवरोधित">
-<!ENTITY protections.notBlocking2.label "अनुमत">
-<!ENTITY protections.notFound.label "काहीही आढळले नाही">
-<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
-     The "Allowed" header also includes a "Why?" link that, when hovered, shows
-     a tooltip explaining why these items were not blocked in the page. -->
-<!ENTITY protections.notBlocking.why.label "का?">
-<!ENTITY protections.notBlocking.why.etpOff2.tooltip "या साइटवरील सर्व ट्रॅकर लोड केले गेले आहेत कारण संरक्षण बंद आहे.">
-<!ENTITY protections.noTrackersFound.description "या पृष्ठावर &brandShortName; ला ज्ञात कोणतेही ट्रॅकर आढळले नाहीत.">
 
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
@@ -967,13 +927,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.cookies.label "कुकीज">
 <!ENTITY contentBlocking.cookiesView.label "कुकीज आणि साईट माहिती">
 
-<!ENTITY contentBlocking.trackingProtection4.label "ट्रॅकिंग मजकूर">
-
-<!ENTITY contentBlocking.manageSettings2.label "संरक्षण सेटिंग व्यवस्थापित करा">
-<!ENTITY contentBlocking.manageSettings2.accesskey "M">
-
-<!ENTITY contentBlocking.socialblock.label "सोशल मीडिया ट्रॅकर">
-
 <!ENTITY contentBlocking.cryptominers.label "क्रिप्टोमाइनर">
 <!ENTITY contentBlocking.cryptominersView.label "क्रिप्टोमाइनर">
 
@@ -984,11 +937,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView.label "समस्या अहवाल द्या">
 <!ENTITY contentBlocking.breakageReportView.learnMore "अधिक जाणून घ्या">
 
-<!ENTITY contentBlocking.breakageReportView.title "एक तुटलेली साइट नोंदवा">
-<!ENTITY contentBlocking.breakageReportView2.learnMore "अधिक जाणा">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "URL">
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "आपल्याला कोणती समस्या आहे? (पर्यायी)">
-<!ENTITY contentBlocking.breakageReportView2.collection.comments.label "पर्यायी: समस्येचे वर्णन करा">
 <!ENTITY contentBlocking.breakageReportView.sendReport.label "अहवाल पाठवा">
 <!ENTITY contentBlocking.breakageReportView.cancel.label "रद्द करा">
 
@@ -1016,6 +966,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      and pluginActivateAlways.label strings above on a single line. This must be
      a CSS length value. -->
 <!ENTITY pluginNotification.width "28em">
+
 
 <!ENTITY uiTour.infoPanel.close "बंद करा">
 

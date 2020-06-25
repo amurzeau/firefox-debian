@@ -24,4 +24,4 @@ crashes-submitted-label = Jejavy ñemondo momarandu
 date-submitted-heading = Ñemondo ára
 view-crash-button-label = Hecha
 no-reports-label = Ndojeguerahaukái jejavy momarandu.
-no-config-label = Ko tembipuru'i noñembohekói ohechauka hag̃ua marandu'i jejavy rehegua. Oñembohekova'erã pe jerohoryvéva <code>breakpad.reportURL</code>.
+no-config-label = Ko tembipuru’i noñembohekói ohechauka hag̃ua marandu’i jejavy rehegua. Oñembohekova’erã pe jerohoryvéva <code>breakpad.reportURL</code>.

@@ -26,3 +26,5 @@ process-type-webisolated = Изоловани веб садржај
 process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Сокет
+# process preallocated; may change to other types
+process-type-prealloc = Унапред додељено

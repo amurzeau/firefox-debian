@@ -2,6 +2,52 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (Priwatny modus)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (Priwatny modus)
+
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (Priwatny modus)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (Priwatny modus)
+
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = Sydłowe informacije wobhladać
 
@@ -92,10 +138,12 @@ urlbar-midi-blocked =
     .tooltiptext = Sće přistup na MIDI za tute websydło zablokował.
 urlbar-install-blocked =
     .tooltiptext = Sće instalowanje přidatkow za tute websydło zablokował.
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Tutu zapołožku ({ $shortcut }) wobdźěłać
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -126,12 +174,14 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Nětko pytać z:
+
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Pytanske nastajenja
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Pytanske nastajenja změnić
+
 search-one-offs-context-open-new-tab =
     .label = W nowym rajtarku pytać
     .accesskey = r
@@ -147,8 +197,10 @@ search-one-offs-context-set-as-default-private =
 bookmark-panel-show-editor-checkbox =
     .label = Editor při składowanju pokazać
     .accesskey = E
+
 bookmark-panel-done-button =
     .label = Dokónčeny
+
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -223,9 +275,30 @@ popup-select-microphone =
     .accesskey = M
 popup-all-windows-shared = Wšě widźomne wokna na wašej wobrazowce budu so dźělić.
 
+popup-screen-sharing-not-now =
+    .label = Nic nětko
+    .accesskey = c
+
+popup-screen-sharing-never =
+    .label = Ženje njedowolić
+    .accesskey = e
+
+popup-silence-notifications-checkbox = Zdźělenja w { -brand-short-name } znjemóžnić, mjeztym zo dźěliće
+popup-silence-notifications-checkbox-warning = { -brand-short-name } njebudźe zdźělenja pokazować, mjeztym zo dźěliće.
+
+## WebRTC window or screen share tab switch warning
+
+sharing-warning-window = Dźěliće { -brand-short-name }. Druhe wosoby móža widźeć, hdyž k nowemu rajtarkej přeńdźeće.
+sharing-warning-screen = Dźěliće swoju cyłu wobrazowku. Druhe wosoby móža widźeć, hdyž k nowemu rajtarkej přeńdźeće.
+sharing-warning-proceed-to-tab =
+    .label = K rajtarkej postupować
+sharing-warning-disable-for-session =
+    .label = Dźělenski škit za tute posedźenje znjemóžnić
+
 ## DevTools F12 popup
 
 enable-devtools-popup-description = Zo byšće tastu F12 wužiwał, wočińće najprjedy DevTools přez meni Webwuwiwar.
+
 
 ## URL Bar
 
@@ -239,10 +312,12 @@ urlbar-permissions-granted =
     .tooltiptext = Sće tutomu websydłu přidatne prawa dał.
 urlbar-switch-to-tab =
     .value = K rajtarkej přeńć:
+
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Rozšěrjenje:
-urlbar-go-end-cap =
+
+urlbar-go-button =
     .tooltiptext = K adresy w adresowym polu
 urlbar-page-action-button =
     .tooltiptext = Akcije strony

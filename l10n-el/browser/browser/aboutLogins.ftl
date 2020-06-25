@@ -2,6 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 about-logins-page-title = Συνδέσεις & κωδικοί πρόσβασης
 
 # "Google Play" and "App Store" are both branding and should not be translated
@@ -24,8 +30,9 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Άνοιγμα μενού
-# This menuitem is only visible on Windows
-menu-menuitem-import = Εισαγωγή κωδικών πρόσβασης...
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = Εισαγωγή από άλλο πρόγραμμα περιήγησης…
+about-logins-menu-menuitem-export-logins = Εξαγωγή συνδέσεων…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Επιλογές
@@ -37,6 +44,8 @@ menu-menuitem-iphone-app = { -lockwise-brand-short-name } για iPhone και i
 
 ## Login List
 
+login-list =
+    .aria-label = Αντιστοιχίες συνδέσεων στην αναζήτηση
 login-list-count =
     { $count ->
         [one] { $count } σύνδεση
@@ -45,7 +54,7 @@ login-list-count =
 login-list-sort-label-text = Ταξινόμηση κατά:
 login-list-name-option = Όνομα (Α-Ω)
 login-list-name-reverse-option = Όνομα (Ω-Α)
-login-list-breached-option = Παραβιασμένες ιστοσελίδες
+about-logins-login-list-alerts-option = Ειδοποιήσεις
 login-list-last-changed-option = Τελευταία αλλαγή
 login-list-last-used-option = Τελευταία χρήση
 login-list-intro-title = Δεν βρέθηκαν συνδέσεις
@@ -57,6 +66,8 @@ login-list-item-subtitle-new-login = Εισαγάγετε τα διαπιστε�
 login-list-item-subtitle-missing-username = (χωρίς όνομα χρήστη)
 about-logins-list-item-breach-icon =
     .title = Παραβιασμένη ιστοσελίδα
+about-logins-list-item-vulnerable-password-icon =
+    .title = Ευάλωτος κωδικός πρόσβασης
 
 ## Introduction screen
 
@@ -93,6 +104,35 @@ login-item-time-changed = Τελευταία αλλαγή: { DATETIME($timeChang
 login-item-time-created = Δημιουργία: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Τελευταία χρήση: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
 
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message-win = Για να επεξεργαστείτε τη σύνδεσή σας, εισάγετε τα διαπιστευτήρια σύνδεσης των Windows. Αυτό συμβάλλει στην προστασία των λογαριασμών σας.
+# This message can be seen when attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = επεξεργαστεί την αποθηκευμένη σύνδεση
+# This message can be seen when attempting to reveal a password in about:logins on Windows.
+about-logins-reveal-password-os-auth-dialog-message-win = Για να δείτε τον κωδικό πρόσβασής σας, εισάγετε τα διαπιστευτήρια σύνδεσης των Windows. Αυτό συμβάλλει στην προστασία των λογαριασμών σας.
+# This message can be seen when attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = αποκαλύψει τον αποθηκευμένο κωδικό πρόσβασης
+# This message can be seen when attempting to copy a password in about:logins on Windows.
+about-logins-copy-password-os-auth-dialog-message-win = Για να αντιγράψετε τον κωδικό πρόσβασής σας, εισάγετε τα διαπιστευτήρια σύνδεσης των Windows. Αυτό συμβάλλει στην προστασία των λογαριασμών σας.
+# This message can be seen when attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = αντιγράψει τον αποθηκευμένο κωδικό πρόσβασης
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message-win = Για να εξαγάγετε τις συνδέσεις σας, εισάγετε τα διαπιστευτήρια σύνδεσης των Windows. Αυτό συμβάλλει στην προστασία των λογαριασμών σας.
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message-macosx = εξαγάγει αποθηκευμένες συνδέσεις και κωδικούς πρόσβασης
+
 ## Master Password notification
 
 master-password-notification-message = Παρακαλούμε εισάγετε τον κύριο κωδικό πρόσβασής σας για να δείτε τις αποθηκευμένες συνδέσεις.
@@ -126,16 +166,31 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Αφαίρεση αυτής της σύνδεσης;
 confirm-delete-dialog-message = Δεν είναι δυνατή η αναίρεση αυτής της ενέργειας.
 about-logins-confirm-remove-dialog-confirm-button = Αφαίρεση
+about-logins-confirm-export-dialog-title = Εξαγωγή συνδέσεων και κωδικών πρόσβασης
+about-logins-confirm-export-dialog-message = Οι κωδικοί πρόσβασής σας θα αποθηκευτούν ως αναγνώσιμο κείμενο (π.χ. BadP@ssw0rd), επομένως όποιος ανοίξει το αρχείο θα μπορέσει να τους δει.
+about-logins-confirm-export-dialog-confirm-button = Εξαγωγή…
 confirm-discard-changes-dialog-title = Απόρριψη μη αποθηκευμένων αλλαγών;
 confirm-discard-changes-dialog-message = Όλες οι μη αποθηκευμένες αλλαγές θα χαθούν.
 confirm-discard-changes-dialog-confirm-button = Απόρριψη
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Παραβίαση ιστοσελίδας
 breach-alert-text = Από την τελευταία φορά που αλλάξατε τα στοιχεία σύνδεσής σας σε αυτόν τον ιστότοπο, έχουν υπάρξει περιπτώσεις διαρροής ή κλοπής κωδικών. Για να προστατεύσετε το λογαριασμό σας, αλλάξτε τον κωδικό σας.
-breach-alert-link = Μάθετε περισσότερα σχετικά με αυτή την παραβίαση
-breach-alert-dismiss =
-    .title = Κλείσιμο αυτής της ειδοποίησης
+about-logins-breach-alert-date = Η παραβίαση συνέβη στις { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Μετάβαση στο { $hostname }
+about-logins-breach-alert-learn-more-link = Μάθετε περισσότερα
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Ευάλωτος κωδικός πρόσβασης
+about-logins-vulnerable-alert-text2 = Αυτός ο κωδικός πρόσβασης έχει χρησιμοποιηθεί σε άλλο λογαριασμό με πιθανή παραβίαση δεδομένων. Η επαναχρησιμοποίηση διαπιστευτηρίων θέτει σε κίνδυνο όλους τους λογαριασμούς σας. Αλλάξτε αυτό τον κωδικό πρόσβασης.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Μετάβαση στο { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Μάθετε περισσότερα
 
 ## Error Messages
 
@@ -146,3 +201,19 @@ breach-alert-dismiss =
 about-logins-error-message-duplicate-login-with-link = Υπάρχει ήδη καταχώρηση για το { $loginTitle } με αυτό το όνομα χρήστη. <a data-l10n-name="duplicate-link">Μετάβαση στην υπάρχουσα καταχώρηση;</a>
 # This is a generic error message.
 about-logins-error-message-default = Προέκυψε σφάλμα κατά την αποθήκευση του κωδικού πρόσβασης.
+
+## Login Export Dialog
+
+# Title of the file picker dialog
+about-logins-export-file-picker-title = Εξαγωγή αρχείου συνδέσεων
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename = logins.csv
+about-logins-export-file-picker-export-button = Εξαγωγή
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] Έγγραφο CSV
+       *[other] Αρχείο CSV
+    }

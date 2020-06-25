@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Utilizar { $plugin-name } (dins { -brand-short-name })
-applications-preview-inapp =
-    .label = Previsualizar dins { -brand-short-name }
 applications-open-inapp =
     .label = Dobrir dins { -brand-short-name }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Sites populars
 home-prefs-topsites-description = Los sites que visitatz mai sovent
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Recomandat per { $provider }
 home-prefs-recommended-by-description = De contengut interessant de tot lo web, personalizat per vos
+home-prefs-recommended-by-description-update = Contengut excepcional de pertot del web, seleccionat per { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Cossí fonciona
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Articles pairinejats
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Mostrar las suggestions de recèrca en navegacion privada
 suggestions-addressbar-settings = Modificar las preferéncias per las suggestions d’istoric de navegacion, dels marcapaginas e dels onglets
+suggestions-addressbar-settings-generic = Cambiar las preferéncias per las suggestions de la barra d’adreça
 search-suggestions-cant-show = Recercar las suggestions que son pas afichadas dins los resultats de la barra d'adreça qu'avètz configurat { -brand-short-name } per pas jamai servar l'istoric.
 search-one-click-header = Motor de recèrca en un clic
 search-one-click-desc = Causissètz de motors de recerca altenatius qu'apareisson jos las barras d'adreça e de recèrca quand començatz d’escriure un mot-clau.
@@ -765,10 +768,10 @@ privacy-header = Confidencialitat del navegador
 
 ## Privacy Section - Forms
 
+logins-header = Identificants e senhals
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Identificants e senhals
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Identificants e senhals
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = La modificacion de senhal a pas capitat
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verificatz vòstra identitat per crear un senhal principal.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Per crear un senhal màger, picatz vòstras informacions de connexion Windows. Aquò permet de servar la seguretat dels comptes.
 # This message can be seen by trying to add a Master Password.
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Gerir las autorizacions…
     .accesskey = a
+sitedata-cookies-exceptions =
+    .label = Gerir las excepcions…
+    .accesskey = x
 
 ## Privacy Section - Address Bar
 
@@ -916,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Onglets dobèrts
     .accesskey = D
+addressbar-locbar-topsites-option =
+    .label = Mai visitats
+    .accesskey = M
 addressbar-suggestions-settings = Cambiar las preferéncias per las suggestions del motor de recèrca
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Generadors d’emprentas numericas
 content-blocking-warning-title = Atencion !
 content-blocking-warning-description = Lo blocatge del contengut pòt copar qualques sites. Es facil de desactivar lo blocatge pels sites que vos fisatz.
 content-blocking-learn-how = Descobrissètz cossí far
-content-blocking-etp-warning-description = Lo blocatge de traçadors pòt aver una incidéncia sus las foncionalitats de certans sites. Tornatz cargar una pagina amb los traçadors per cargar tot lo contengut.
 content-blocking-and-isolating-etp-warning-description = Lo blocatge de traçadors e l’isolacion dels cookies pòdon aver una incidéncia sus las foncionalitats de certans sites. Tornatz cargar una pagina amb los traçadors per cargar tot lo contengut.
 content-blocking-warning-learn-how = M’ensenhar cossí far
 content-blocking-reload-description = Car tornar cargar los onglets per aplicar aquestas modificacions.

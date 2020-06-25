@@ -226,3 +226,15 @@ cfr-whatsnew-passwords-icon-alt = Güvensiz parola anahtar simgesi
 cfr-whatsnew-pip-fullscreen-header = Görüntü içinde görüntüyü tam ekrana taşıyın
 cfr-whatsnew-pip-fullscreen-body = Görüntü içinde görüntü modunda açtığınız videolara çift tıklayarak onları tam ekran yapabilirsiniz.
 cfr-whatsnew-pip-fullscreen-icon-alt = Görüntü içinde görüntü simgesi
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Korumalara hızlı bir bakış
+cfr-whatsnew-protections-body = Korumalar panosu, veri ihlalleri ve parola yönetimi hakkında özet raporlar içerir. İhlallerin kaçını çözdüğünüzü izleyebilir, kayıtlı parolalarınızın veri ihlalleri kapsamında ele geçirilip geçirilmediğini görebilirsiniz.
+cfr-whatsnew-protections-cta-link = Korumalar panosunu aç
+cfr-whatsnew-protections-icon-alt = Kalkan simgesi
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Daha iyi PDF deneyimi
+cfr-whatsnew-better-pdf-body = PDF belgeleri artık doğrudan { -brand-short-name } içinde açılıyor, böylece işleriniz kolaylaşıyor.

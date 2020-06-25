@@ -8,6 +8,9 @@ certmgr-title =
 certmgr-tab-mine =
     .label = Tu certificatos
 
+certmgr-tab-remembered =
+    .label = Decisiones de authentication
+
 certmgr-tab-people =
     .label = Personas
 
@@ -18,6 +21,7 @@ certmgr-tab-ca =
     .label = Autoritates
 
 certmgr-mine = Tu ha certificatos ex iste organisationes que identifica te
+certmgr-remembered = Iste certificatos es usate pro identificar te al sitos web
 certmgr-people = Tu ha certificatos sur le file que identifica iste personas
 certmgr-servers = Tu ha certificatos sur le file que identifica iste servitores
 certmgr-ca = Tu ha certificatos sur le file que identifica iste autoritates
@@ -73,6 +77,9 @@ certmgr-edit-cert-trust-email =
 certmgr-delete-cert =
     .title = Deler le certificato
     .style = width: 48em; height: 24em;
+
+certmgr-cert-host =
+    .label = Hoste
 
 certmgr-cert-name =
     .label = Nomine del certificato

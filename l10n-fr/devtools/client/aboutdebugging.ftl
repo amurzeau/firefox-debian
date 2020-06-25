@@ -302,6 +302,9 @@ about-debugging-worker-push-service =
 # Displayed as title of the inspect button when service worker debugging is disabled.
 about-debugging-worker-inspect-action-disabled =
     .title = L’inspection du Service Worker est actuellement désactivée pour le mode multiprocessus de { -brand-shorter-name }
+# Displayed as title of the inspect button for zombie tabs (e.g. tabs loaded via a session restore).
+about-debugging-zombie-tab-inspect-action-disabled =
+    .title = L’onglet n’est pas complètement chargé et ne peut pas être inspecté
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-main-process-name = Processus principal

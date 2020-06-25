@@ -122,10 +122,6 @@ cfr-whatsnew-lockwise-take-link-text = Tải ứng dụng
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Nhập ít hơn, tìm nhiều hơn với thanh địa chỉ
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Truy cập các trang web bạn sử dụng nhiều nhất với một cú nhấp chuột vào thanh địa chỉ. Tìm mọi thứ nhanh hơn với kết quả từ { $searchEngineName } và lịch sử duyệt web của bạn.
-cfr-whatsnew-searchbar-body-generic = Truy cập các trang web bạn sử dụng nhiều nhất với một cú nhấp chuột vào thanh địa chỉ. Tìm mọi thứ nhanh hơn với kết quả tìm kiếm từ lịch sử duyệt web của bạn.
 cfr-whatsnew-searchbar-body-topsites = Bây giờ, chỉ cần chọn thanh địa chỉ và một hộp sẽ mở rộng với các liên kết đến các trang web hàng đầu của bạn.
 cfr-whatsnew-searchbar-icon-alt-text = Biểu tượng kính lúp
 
@@ -231,3 +227,15 @@ cfr-whatsnew-passwords-icon-alt = Biểu tượng khóa mật khẩu dễ bị t
 cfr-whatsnew-pip-fullscreen-header = Làm cho hình trong hình toàn màn hình
 cfr-whatsnew-pip-fullscreen-body = Khi bạn bật video vào một cửa sổ nổi, bây giờ bạn có thể nhấp đúp vào cửa sổ đó để vào chế độ toàn màn hình.
 cfr-whatsnew-pip-fullscreen-icon-alt = Biểu tượng hình trong hình
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Bảo vệ trong nháy mắt
+cfr-whatsnew-protections-body = Bảng điều khiển bảo vệ bao gồm các báo cáo tóm tắt về rò rỉ dữ liệu và quản lý mật khẩu. Bây giờ bạn có thể theo dõi có bao nhiêu rò rỉ mà bạn đã giải quyết và xem liệu bất kỳ mật khẩu đã lưu nào của bạn có thể bị lộ trong một rò rỉ dữ liệu hay không.
+cfr-whatsnew-protections-cta-link = Xem bảng điều khiển bảo vệ
+cfr-whatsnew-protections-icon-alt = Biểu tượng khiên
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Trải nghiệm PDF tốt hơn
+cfr-whatsnew-better-pdf-body = Tài liệu PDF hiện mở trực tiếp bằng { -brand-short-name }, giữ cho công việc của bạn trong tầm tay dễ dàng.

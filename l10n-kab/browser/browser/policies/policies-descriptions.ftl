@@ -63,6 +63,7 @@ policy-ExtensionSettings = Sefrek meṛṛa timeẓra n usbeddi n yisiɣzaf.
 policy-ExtensionUpdate = Emed neɣ sens alqem awurman n iseɣzaf.
 policy-FirefoxHome = Swel asebter agejdan n Firefox.
 policy-FlashPlugin = Sireg neɣ gdel asemres n uzegrir Flash.
+policy-Handlers = Swel imsefrak n usnas s wuem amezwer.
 policy-HardwareAcceleration = Ma ur yelli d ameɣtu, sens tasɣiwelt n warrum.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Sbadu akked sewḥel ma tebɣiḍ asebter agejdan.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Uɣal ɣer tikli taqdi
 ##
 
 policy-LocalFileLinks = Sireg ismal usdiden i useqdec n yiseɣqan ɣer yifuyla idiganen.
+policy-MasterPassword = Creḍ neɣ sewḥel aseqdec n wawal uffir agejdan.
 policy-NetworkPrediction = Ad yeǧǧ neɣ ad yegdel tifin n yiẓeḍwa (taɣuri tuzwirt DNS)
 policy-NewTabPage = Ad yermed neɣ ad yessens asebter agejdan n yiccer amaynut.
 policy-NoDefaultBookmarks = Sens timerna n tecraḍ n isebtar s wudem imezwer yettunefken akked { -brand-short-name }, akked tecraḍ n isebtar tuḥricin (Yettwarzan aṭas, tibzimin n melmi kan). Awennit: tasertit-agi ad teddu akken ilaq ticki tettwarmed send asenker amenzu n umaƔnu.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Rmed asekles n wawalen uffiren deg umsefrak n wa
 # PDF.js and PDF should not be translated
 policy-PDFjs = Sens neɣ swel PDF.js, ameskan PDF usliɣ deg { -brand-short-name }.
 policy-Permissions2 = Swel tisirag i tkamirat, asawaḍ, adig, ilɣa akked tɣuri tawurmant.
+policy-PictureInPicture = Rmed neɣ sens tugna deg tugna.
 policy-PopupBlocking = Sireg kra n ismal web ad skanayen Isfuyla udhimens wudem amezwer.
 policy-Preferences = Ad yesbadu daɣen ad iṣekkeṛ azal n tegrumma tasnawant n yismenyifen.
 policy-PromptForDownloadLocation = Suter anida ara ttwaskelsen yifuyla deg usider.

@@ -346,7 +346,7 @@ discopane-intro = 확장 기능 및 테마는 브라우저용 앱과 비슷하�
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations = 이러한 추천 중 일부는 개인화된 것입니다. 설치한 다른 확장 기능, 프로필 설정 및 사용 통계를 기반으로 합니다.
 discopane-notice-learn-more = 더 알아보기
-privacy-policy = 개인 정보 보호 정책
+privacy-policy = 개인정보 보호정책
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
 #   $author (string) - The name of the add-on developer.
@@ -479,8 +479,6 @@ locale-heading = 언어 관리
 updates-heading = 업데이트 관리
 discover-heading = { -brand-short-name } 개인화
 shortcuts-heading = 확장 기능 단축키 관리
-theme-heading-search-label = 더 많은 테마 찾기
-extension-heading-search-label = 더 많은 확장 기능 찾기
 default-heading-search-label = 더 많은 부가 기능 찾기
 addons-heading-search-input =
     .placeholder = addons.mozilla.org 검색

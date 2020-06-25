@@ -70,7 +70,7 @@ serviceworker-empty-suggestions-debugger = Lépjen végig a Service Worker regis
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Vizsgálja meg a más tartományokból származó Service Workereket. <a>Nyissa meg az about:debugging oldalt</a>
 # Header for the Manifest page when we have an actual manifest
-manifest-view-header = Alkalmazás leírófájl
+manifest-view-header = Alkalmazás-jegyzékfájl
 # Header for the Manifest page when there's no manifest to inspect
 # The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
 manifest-empty-intro = Meg kell adnia egy webalkalmazás jegyzékfájlt, hogy itt vizsgálhassa. <a>További tudnivalók</a>
@@ -83,20 +83,20 @@ manifest-item-presentation = Megjelenítés
 # Header for the Icon section of Manifest inspection displayed in the application panel.
 manifest-item-icons = Ikonok
 # Text displayed while we are loading the manifest file
-manifest-loading = Leírófájl betöltése…
+manifest-loading = Jegyzékfájl betöltése…
 # Text displayed when the manifest has been successfully loaded
-manifest-loaded-ok = Leírófájl betöltve.
+manifest-loaded-ok = Jegyzékfájl betöltve.
 # Text displayed as a caption when there has been an error while trying to
 # load the manifest
-manifest-loaded-error = Hiba történt a leírófájl betöltésekor:
+manifest-loaded-error = Hiba történt a jegyzékfájl betöltésekor:
 # Text displayed as an error when there has been a Firefox DevTools error while
 # trying to load the manifest
 manifest-loaded-devtools-error = Firefox fejlesztői eszközök hiba
 # Text displayed when the page has no manifest available
-manifest-non-existing = Nem található vizsgálható leírófájl.
+manifest-non-existing = Nem található vizsgálható jegyzékfájl.
 # Text displayed when the page has a manifest embedded in a Data URL and
 # thus we cannot link to it.
-manifest-json-link-data-url = A leíró az adat URL-be van ágyazva.
+manifest-json-link-data-url = A jegyzékfájl az adat URL-be van ágyazva.
 # Text displayed at manifest icons to label their purpose, as declared
 # in the manifest.
 manifest-icon-purpose = Cél: <code>{ $purpose }</code>

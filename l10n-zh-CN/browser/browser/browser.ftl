@@ -2,6 +2,52 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } （隐私浏览）
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } （隐私浏览）
+
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - （隐私浏览）
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - （隐私浏览）
+
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = 查看网站信息
 
@@ -92,10 +138,12 @@ urlbar-midi-blocked =
     .tooltiptext = 您已阻止此网站访问 MIDI。
 urlbar-install-blocked =
     .tooltiptext = 您已阻止此网站安装附加组件。
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = 编辑此书签 ({ $shortcut })
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -126,12 +174,14 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = 请选择这次要用的搜索引擎：
+
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = 更改搜索设置
 search-one-offs-change-settings-compact-button =
     .tooltiptext = 更改搜索设置
+
 search-one-offs-context-open-new-tab =
     .label = 在新标签页中搜索
     .accesskey = T
@@ -147,8 +197,10 @@ search-one-offs-context-set-as-default-private =
 bookmark-panel-show-editor-checkbox =
     .label = 保存时显示编辑器
     .accesskey = S
+
 bookmark-panel-done-button =
     .label = 完成
+
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -223,9 +275,30 @@ popup-select-microphone =
     .accesskey = M
 popup-all-windows-shared = 您的屏幕上的所有可见窗口都将被共享。
 
+popup-screen-sharing-not-now =
+    .label = 暂时不要
+    .accesskey = w
+
+popup-screen-sharing-never =
+    .label = 永不允许
+    .accesskey = N
+
+popup-silence-notifications-checkbox = 共享时，不显示 { -brand-short-name } 的通知
+popup-silence-notifications-checkbox-warning = { -brand-short-name } 将不会在共享时显示通知。
+
+## WebRTC window or screen share tab switch warning
+
+sharing-warning-window = 您正在共享 { -brand-short-name }。当切换到新标签页时，其他人可以看到。
+sharing-warning-screen = 您正在共享完整屏幕。当切换到新标签页时，其他人可以看到。
+sharing-warning-proceed-to-tab =
+    .label = 继续前往标签页
+sharing-warning-disable-for-session =
+    .label = 在本次会话期间禁用共享保护
+
 ## DevTools F12 popup
 
 enable-devtools-popup-description = 请通过“Web 开发者”菜单打开开发者工具，才能使用 F12 快捷键。
+
 
 ## URL Bar
 
@@ -239,10 +312,12 @@ urlbar-permissions-granted =
     .tooltiptext = 您已授予此站点更多权限。
 urlbar-switch-to-tab =
     .value = 切换到标签页：
+
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = 扩展：
-urlbar-go-end-cap =
+
+urlbar-go-button =
     .tooltiptext = 转到地址栏中指向的网址
 urlbar-page-action-button =
     .tooltiptext = 页面动作

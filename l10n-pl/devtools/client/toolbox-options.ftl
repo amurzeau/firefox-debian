@@ -103,6 +103,8 @@ options-enable-chrome-tooltip =
 options-enable-remote-label = Debugowanie zdalne
 options-enable-remote-tooltip =
     .title = Włączenie tej opcji pozwoli na debugowanie zdalnych instancji, takich jak Firefox OS, z poziomu narzędzi dla programistów
+options-enable-remote-tooltip2 =
+    .title = Włączenie tej opcji pozwoli na zdalne debugowanie tej instancji przeglądarki
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = Wątki usługowe przez HTTP (gdy narzędzia są otwarte)
 options-enable-service-workers-http-tooltip =
@@ -113,11 +115,6 @@ options-source-maps-tooltip =
     .title = Po włączeniu tej funkcji, źródła będą mapowane w narzędziach
 # The message shown for settings that trigger page reload
 options-context-triggers-page-refresh = * Tylko bieżąca sesja, przeładowuje stronę
-
-##
-
-# The heading for the Debugger section
-options-debugger-label = Debuger
 # The label for the checkbox that toggles the display of the platform data in the
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config
 options-show-platform-data-label = Informacje platformy Gecko

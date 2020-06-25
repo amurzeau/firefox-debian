@@ -13,8 +13,10 @@ about-config-search-input =
 
 ## These strings appear on the warning you see when first visiting about:config.
 
+about-config-intro-warning-title = Vanni avanti ma atento
+about-config-intro-warning-button = Acetta o reizego e vanni avanti
 
-
+##
 
 about-config-page-title = Preferense avansæ
 about-config-search-input1 =

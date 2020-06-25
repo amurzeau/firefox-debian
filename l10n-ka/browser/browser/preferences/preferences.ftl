@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } მოდული ({ -brand-short-name }-ში)
-applications-preview-inapp =
-    .label = გახსნის { -brand-short-name }
 applications-open-inapp =
     .label = გახსნის { -brand-short-name }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = რჩეული საიტები
 home-prefs-topsites-description = ხშირად მონახულებული საიტები
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = { $provider } გირჩევთ
 home-prefs-recommended-by-description = მნიშვნელოვანი ამბები ინტერნეტ-სამყაროდან, შერჩეული თქვენი ინტერესების მიხედვით
+home-prefs-recommended-by-description-update = გამორჩეული მასალები ინტერნეტში, უზრუნველყოფს { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = როგორ მუშაობს
 home-prefs-recommended-by-option-sponsored-stories =
     .label = დაფინანსებული სტატიები
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = ძიების შემოთავაზებების ჩვენება პირად ფანჯრებში
 suggestions-addressbar-settings = პარამეტრების შეცვლა ისტორიის, სანიშნებისა და ჩანართის შემოთავაზებებისთვის
+suggestions-addressbar-settings-generic = სხვა მისამართების ველის შემოთავაზებების პარამეტრები
 search-suggestions-cant-show = მისამართების ველში ძიების შემოთავაზებები არ გამოჩნდება, ვინაიდან მითითებული გაქვთ, რომ { -brand-short-name } არასოდეს დაიმახსოვრებს ისტორიას.
 search-one-click-header = ერთწკაპიანი საძიებო სისტემები
 search-one-click-desc = მიუთითეთ სათადარიგო საძიებო სისტემები, რომლებიც გამოჩნდება მისამართებისა და ძიების ველების ქვემოთ, საძებნი ფრაზის აკრეფისას.
@@ -613,7 +616,7 @@ containers-remove-button =
 
 sync-signedout-caption = წაიყოლეთ თქვენი მონაცემები თან
 sync-signedout-description = დაასინქრონეთ თქვენი სანიშნები, ისტორია, ჩანართები, პაროლები, დამატებები და პარამეტრები ყველა მოწყობილობაზე.
-sync-signedout-account-title = { -fxaccount-brand-name } – დაკავშირება
+sync-signedout-account-title = { -fxaccount-brand-name(case: "add") } დაკავშირება
 sync-signedout-account-create = არ გაქვთ ანგარიში? შექმენით
     .accesskey = ქ
 sync-signedout-account-signin =
@@ -765,10 +768,10 @@ privacy-header = ბრაუზერის პირადულობა
 
 ## Privacy Section - Forms
 
+logins-header = ანგარიშის სახელები და პაროლები
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = ანგარიშის სახელები და პაროლები
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = ანგარიშის სახელები და პაროლები
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = პაროლის შეცვლა ვერ �
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = თქვენი ვინაობის დამოწმება, მთავარი პაროლის დასაყენებლად.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = მთავარი პაროლის შესაქმნელად, დაამოწმეთ Windows-ანგარიში. ეს დაგეხმარებათ დაიცვათ თქვენი ანგარიშების უსაფრთხოება.
 # This message can be seen by trying to add a Master Password.
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = ნებართვების მართვა...
     .accesskey = ნ
+sitedata-cookies-exceptions =
+    .label = გამონაკლისების მართვა
+    .accesskey = კ
 
 ## Privacy Section - Address Bar
 
@@ -916,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = გახსნილი ჩანართები
     .accesskey = გ
+addressbar-locbar-topsites-option =
+    .label = რჩეული საიტები
+    .accesskey = ჩ
 addressbar-suggestions-settings = საძიებო სისტემის შემოთავაზებების პარამეტრები
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = მომხმარებლის ამო
 content-blocking-warning-title = ფრთხილად!
 content-blocking-warning-description = შიგთავსის შეზღუდვის შედეგად, საიტების ნაწილმა შესაძლოა ვერ იმუშაოს გამართულად. სანდო საიტებზე, მარტივად შეგეძლებათ შეზღუდვის გათიშვა.
 content-blocking-learn-how = იხილეთ ვრცლად
-content-blocking-etp-warning-description = მეთვალყურეების შეზღუდვით, შესაძლოა დაზიანდეს ზოგიერთი საიტის შესაძლებლობები. შიგთავსის სრულად სანახავად, ხელახლა გახსენით გვერდი დაშვებული მეთვალყურეებით.
 content-blocking-and-isolating-etp-warning-description = მეთვალყურეების შეზღუდვით და ფუნთუშების გამიჯვნით, შესაძლოა დაზიანდეს ზოგიერთი საიტის შესაძლებლობები. შიგთავსის სრულად სანახავად, ხელახლა გახსენით გვერდი დაშვებული მეთვალყურეებით.
 content-blocking-warning-learn-how = იხილეთ როგორ
 content-blocking-reload-description = საჭიროა ჩანართების ხელახლა გახსნა ცვლილებების ასახვისთვის.

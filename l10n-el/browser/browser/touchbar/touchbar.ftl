@@ -9,6 +9,7 @@ forward = Εμπρός
 reload = Ανανέωση
 home = Αρχική
 fullscreen = Πλήρης οθόνη
+touchbar-fullscreen-exit = Έξοδος από πλήρη οθόνη
 find = Εύρεση
 new-tab = Νέα καρτέλα
 add-bookmark = Προσθήκη σελιδοδείκτη
@@ -33,5 +34,5 @@ search-opentabs = Ανοικτές καρτέλες
 search-tags = Ετικέτες
 search-titles = Τίτλοι
 
-
+##
 

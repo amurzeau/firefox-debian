@@ -203,3 +203,12 @@ cfr-whatsnew-passwords-icon-alt = סמל מפתח ססמה פגיעה
 
 cfr-whatsnew-pip-fullscreen-header = העברת מצב תמונה בתוך תמונה למסך מלא
 cfr-whatsnew-pip-fullscreen-icon-alt = סמל תמונה בתוך תמונה
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-cta-link = הצגת לוח ההגנות
+cfr-whatsnew-protections-icon-alt = סמל מגן
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = חוויית PDF טובה יותר

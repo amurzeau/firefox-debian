@@ -9,13 +9,6 @@
 remove-address-row-type = { $type } 필드 삭제
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
-address-input-type =
-    { $count ->
-        [0] { $type } 입력 필드 비우기
-       *[other] { $count }개 주소의 { $type } 입력 필드
-    }
-#   $type (String) - the type of the addressing row
-#   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
         [0] { $type }
@@ -40,3 +33,24 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = 숨은 참조로 이동
     .accesskey = b
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [1] { $count } 첨부파일
+           *[other] { $count } 첨부파일
+        }
+    .accesskey = m
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [1] { $count } 첨부파일
+           *[other] { $count } 첨부파일
+        }
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+button-return-receipt =
+    .label = 수신 확인
+    .tooltiptext = 이 메시지에 대한 수신 확인을 요청

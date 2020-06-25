@@ -2,6 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 about-logins-page-title = جلسات الولوج وكلمات السر
 
 # "Google Play" and "App Store" are both branding and should not be translated
@@ -12,9 +17,12 @@ login-app-promo-android =
     .alt = نزّله من متجر غوغل
 login-app-promo-apple =
     .alt = نزّله من متجر آبل
+
 login-filter =
     .placeholder = ابحث في جلسات الولوج
+
 create-login-button = أنشئ جلسة ولوج جديدة
+
 fxaccounts-sign-in-text = استعمل كلمات السر لحساباتك في أجهزتك الأخرى
 fxaccounts-sign-in-button = لِج إلى { -sync-brand-short-name }
 fxaccounts-avatar-button =
@@ -107,22 +115,18 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
-# This message can be seen by attempting to edit a login in about:logins
-about-logins-edit-login-os-auth-dialog-message = أكِّد هويتك لتُحرّر جلسة الولوج المحفوظة.
 # This message can be seen when attempting to edit a login in about:logins on Windows.
 about-logins-edit-login-os-auth-dialog-message-win = أدخِل معلومات ولوج وِندوز لتعدّل جلسة الولوج. يساعد هذا الأمر على حماية أمن حساباتك.
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = تحرير جلسة الولوج المحفوظة
-# This message can be seen by attempting to reveal a password in about:logins
-about-logins-reveal-password-os-auth-dialog-message = أكِّد هويتك لعرض كلمة السر المحفوظة.
+
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
 about-logins-reveal-password-os-auth-dialog-message-win = أدخِل معلومات ولوج وِندوز لتعرض كلمة السر. يساعد هذا الأمر على حماية أمن حساباتك.
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = عرض كلمة السر المحفوظة
-# This message can be seen by attempting to copy a password in about:logins
-about-logins-copy-password-os-auth-dialog-message = أكِّد هويتك لتنسخ كلمة السر المحفوظة.
+
 # This message can be seen when attempting to copy a password in about:logins on Windows.
 about-logins-copy-password-os-auth-dialog-message-win = أدخِل معلومات ولوج وِندوز لتنسخ كلمة السر. يساعد هذا الأمر على حماية أمن حساباتك.
 # This message can be seen when attempting to copy a password in about:logins
@@ -159,9 +163,11 @@ about-logins-enable-password-sync-dont-ask-again-button =
 confirmation-dialog-cancel-button = ألغِ
 confirmation-dialog-dismiss-button =
     .title = ألغِ
+
 about-logins-confirm-remove-dialog-title = أنُزيل هذا الولوج؟
 confirm-delete-dialog-message = هذا إجراء لا عودة فيه.
 about-logins-confirm-remove-dialog-confirm-button = أزِل
+
 confirm-discard-changes-dialog-title = أتريد إهمال التغييرات غير المحفوظة؟
 confirm-discard-changes-dialog-message = ستفقد كل تغيير لم تحفظه.
 confirm-discard-changes-dialog-confirm-button = أهمِل
@@ -191,5 +197,10 @@ about-logins-vulnerable-alert-learn-more-link = اطّلع على المزيد
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
 about-logins-error-message-duplicate-login-with-link = جلسة الولوج باسم المستخدم { $loginTitle } موجودة. <a data-l10n-name="duplicate-link">أتريد أن تراها؟</a>
+
 # This is a generic error message.
 about-logins-error-message-default = حدث خطأ أثناء محاولة حفظ كلمة السر هذه.
+
+
+## Login Export Dialog
+

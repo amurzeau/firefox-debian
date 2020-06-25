@@ -58,6 +58,8 @@ protections-panel-not-found-label = Ешнәрсе табылмады
 
 protections-panel-settings-label = Қорғаныс баптаулары
 protections-panel-showreport-label = Есептемені көрсету
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Қорғаныс панелі
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

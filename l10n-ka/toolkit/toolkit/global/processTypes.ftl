@@ -26,3 +26,5 @@ process-type-webisolated = განცალკევებული ვებ�
 process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = სოკეტი
+# process preallocated; may change to other types
+process-type-prealloc = წინასწარ განაწილებული

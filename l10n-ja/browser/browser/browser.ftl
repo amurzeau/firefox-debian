@@ -3,6 +3,49 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (プライベートブラウジング)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (プライベートブラウジング)
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (プライベートブラウジング)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (プライベートブラウジング)
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = サイトの情報を表示
 
@@ -63,6 +106,7 @@ urlbar-tip-icon-description =
 ## homepage of their default search engine.
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
 urlbar-search-tips-onboard = 少ない入力でたくさん見つかる: アドレスバーから { $engineName } ですぐ検索します。
 urlbar-search-tips-redirect-2 = アドレスバーで検索を始めると、{ $engineName } からの検索候補と閲覧履歴が表示されます。
 
@@ -223,10 +267,29 @@ popup-select-microphone =
     .accesskey = M
 popup-all-windows-shared = 画面に表示されているすべてのウィンドウを共有します。
 
+popup-screen-sharing-not-now =
+  .label = 後で
+  .accesskey = w
+
+popup-screen-sharing-never =
+  .label = 以後許可しない
+  .accesskey = N
+
+popup-silence-notifications-checkbox = 共有中は { -brand-short-name } からの通知を無効にする。
+popup-silence-notifications-checkbox-warning = 共有中は { -brand-short-name } からの通知を表示しないようにします。
+
+## WebRTC window or screen share tab switch warning
+
+sharing-warning-window = { -brand-short-name } を共有しています。新しいタブ に切り替えると、他の人にも見えます。
+sharing-warning-screen = 全画面を共有しています。新しいタブ に切り替えると、他の人にも見えます。
+sharing-warning-proceed-to-tab =
+  .label = タブに移動
+sharing-warning-disable-for-session =
+  .label = このセッションでは共有保護を無効にする。
+
 ## DevTools F12 popup
 
 enable-devtools-popup-description = F12 ショートカットを使うには、最初にメニューのウェブ開発から開発ツールを開いてください。
-
 
 ## URL Bar
 
@@ -243,7 +306,7 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = 拡張機能:
-urlbar-go-end-cap =
+urlbar-go-button =
     .tooltiptext = アドレスバーに入力された URL へ移動します
 urlbar-page-action-button =
     .tooltiptext = ページ操作

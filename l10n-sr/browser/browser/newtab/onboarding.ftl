@@ -128,6 +128,9 @@ onboarding-send-tabs-title = Пошаљите себи отворене јези
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
 onboarding-send-tabs-text = Шаљите језичке са једног уређаја на други - без копирања и лепљења или напуштања прегледача.
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text2 = Једноставно шаљите језичке са једног уређаја на други - без копирања и лепљења веза или напуштања прегледача.
 onboarding-send-tabs-button = Почните да користите слање језичака
 onboarding-pocket-anywhere-title = Читајте и слушајте било где
 onboarding-pocket-anywhere-text2 = Сачувајте ваш омиљени садржај офлајн уз помоћ { -pocket-brand-name } апликације и читајте, слушајте и гледајте кад год вам то одговара.
@@ -135,9 +138,18 @@ onboarding-pocket-anywhere-button = Испробајте { -pocket-brand-name }
 onboarding-lockwise-passwords-title = Понесите ваше лозинке свугде
 onboarding-lockwise-passwords-text2 = Држите лозинке заштићеним и једноставно се пријавите у налоге преко { -lockwise-brand-name }.
 onboarding-lockwise-passwords-button2 = Преузмите апликацију
+onboarding-lockwise-strong-passwords-title = Стварајте и чувајте јаке лозинке
+onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } ствара јаке лозинке у трену и све их чува на једном месту.
+onboarding-lockwise-strong-passwords-button = Управљајте вашим пријавама
 onboarding-facebook-container-title = Поставите границе с Facebook-ом
 onboarding-facebook-container-text2 = { -facebook-container-brand-name } држи ваш профил одвојеним од свега осталог и на тај начин отежава Facebook-у да вас бомбардује рекламама.
 onboarding-facebook-container-button = Додајте проширење
+onboarding-import-browser-settings-title = Увезите ваше обележиваче, лозинке и више
+onboarding-import-browser-settings-text = Слободно истражите — понесите са собом Chrome странице и подешавања.
+onboarding-import-browser-settings-button = Увезите Chrome податке
+onboarding-personal-data-promise-title = Дизајниран за приватност
+onboarding-personal-data-promise-text = { -brand-product-name } поштује ваше податке тако што их прикупља мање, штити их и даје до знања на који начин их користи.
+onboarding-personal-data-promise-button = Прочитајте наше обећање
 
 ## Message strings belonging to the Return to AMO flow
 

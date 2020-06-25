@@ -26,3 +26,5 @@ process-type-webisolated = 隔離的網頁內容
 process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Socket
+# process preallocated; may change to other types
+process-type-prealloc = 預先分配

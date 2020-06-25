@@ -4,6 +4,14 @@
 
 all-tabs-menu-undo-close-tab =
     .label = Anulează închiderea filei
+all-tabs-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Anulează închiderea filei
+            [one] Anulează închiderea filei
+            [few] Anulează închiderea filelor
+           *[other] Anulează închiderea filelor
+        }
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = Caută în file

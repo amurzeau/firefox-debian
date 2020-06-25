@@ -2,6 +2,50 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (Palaqinem Wichin)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (Palaqinem Wichin)
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (Palaqinem Wichin)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (Palaqinem Wichin)
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = Titz'et retamab'al ruxaq k'amaya'l
 
@@ -146,7 +190,7 @@ search-one-offs-context-set-as-default-private =
 
 bookmark-panel-show-editor-checkbox =
     .label = Tik'ut k'exob'äl toq niyak
-    .accesskey = S
+    .accesskey = k
 bookmark-panel-done-button =
     .label = Xk'achoj
 # Width of the bookmark panel.
@@ -222,6 +266,23 @@ popup-select-microphone =
     .value = Q'asäy ch'ab'äl richin rutaluxik:
     .accesskey = Q
 popup-all-windows-shared = Xkekomonïx konojel ri tz'etel taq tzuwäch e k'o pa ri ruwäch.
+popup-screen-sharing-not-now =
+    .label = Wakami mani
+    .accesskey = W
+popup-screen-sharing-never =
+    .label = Majub'ey Tiya' Q'ij
+    .accesskey = M
+popup-silence-notifications-checkbox = Kechup taq rutzijol { -brand-short-name } toq nikomonïx
+popup-silence-notifications-checkbox-warning = Man xkeruk'üt ta pe taq tzijol ri { -brand-short-name } toq nikomonin.
+
+## WebRTC window or screen share tab switch warning
+
+sharing-warning-window = Nikomonin ri { -brand-short-name }. Juley chik winaqi' yetikïr nikitz'ët toq niq'ax pa jun k'ak'a' ruwi'.
+sharing-warning-screen = Nakomonij ri tz'aqät ruwa. chik winaqi' yetikïr nikitz'ët toq niq'ax pa jun k'ak'a' ruwi'.
+sharing-warning-proceed-to-tab =
+    .label = Tib'e pa Ruwi'
+sharing-warning-disable-for-session =
+    .label = Tichup ri komon ruwäch chajinïk pa re molojri'ïl re'
 
 ## DevTools F12 popup
 
@@ -242,7 +303,7 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = K'amal:
-urlbar-go-end-cap =
+urlbar-go-button =
     .tooltiptext = Tib'e pa JAY richin ri rucholob'al taq ochochib'äl
 urlbar-page-action-button =
     .tooltiptext = Taq rub'anoj ruxaq

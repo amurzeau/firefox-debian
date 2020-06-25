@@ -103,6 +103,8 @@ options-enable-chrome-tooltip =
 options-enable-remote-label = Уключыць аддаленую адладку
 options-enable-remote-tooltip =
     .title = Калі ўключана, дазваляе прыладам распрацоўшчыка адладжваць аддаленыя экзэмпляры, такія як Firefox OS
+options-enable-remote-tooltip2 =
+    .title = Уключэнне гэтага параметра дазволіць аддаленую адладку гэтага экзэмпляра браўзера
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = Уключыць воркеры сэрвісу праз HTTP (калі панэль прылад адкрыта)
 options-enable-service-workers-http-tooltip =
@@ -113,11 +115,6 @@ options-source-maps-tooltip =
     .title = Калі ўключана, зыходныя коды будуць супастаўлены ў інструментах.
 # The message shown for settings that trigger page reload
 options-context-triggers-page-refresh = * Толькі для бягучага сеанса, перазагружае старонку
-
-##
-
-# The heading for the Debugger section
-options-debugger-label = Адладчык
 # The label for the checkbox that toggles the display of the platform data in the
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config
 options-show-platform-data-label = Паказаць звесткі платформы Gecko

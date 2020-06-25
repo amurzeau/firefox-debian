@@ -21,12 +21,12 @@ onboarding-button-label-get-started = Έναρξη
 onboarding-welcome-header = Καλώς ήλθατε στο { -brand-short-name }
 onboarding-welcome-body = Έχετε το πρόγραμμα περιήγησης.<br/>Γνωρίστε τα υπόλοιπα προϊόντα του { -brand-product-name }.
 onboarding-welcome-learn-more = Μάθετε περισσότερα σχετικά με τα οφέλη.
+onboarding-join-form-header = Γίνετε μέλος του { -brand-product-name }
 onboarding-welcome-modal-get-body = Έχετε το πρόγραμμα περιήγησης.<br/>Αξιοποιήστε στο έπακρο το { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Εξασφαλίστε την προστασία του απορρήτου σας.
 onboarding-welcome-modal-privacy-body = Έχετε το πρόγραμμα περιήγησης. Ας προστατεύσουμε περισσότερο το απόρρητό σας.
 onboarding-welcome-modal-family-learn-more = Μάθετε περισσότερα για την οικογένεια προϊόντων { -brand-product-name }.
 onboarding-welcome-form-header = Έναρξη εδώ
-onboarding-join-form-header = Γίνετε μέλος του { -brand-product-name }
 onboarding-join-form-body = Εισάγετε τη διεύθυνση email σας για να ξεκινήσετε.
 onboarding-join-form-email =
     .placeholder = Εισάγετε το email σας
@@ -78,8 +78,11 @@ onboarding-benefit-privacy-title = Πραγματική ιδιωτικότητα
 # transparent about how we use it."
 onboarding-benefit-privacy-text = Όλα όσα κάνουμε τιμούν την υπόσχεση μας σχετικά με τα προσωπικά δεδομένα: Λιγότερα δεδομένα. Με ασφάλεια. Χωρίς μυστικά.
 onboarding-benefit-sync-title = { -sync-brand-short-name }
+onboarding-benefit-sync-text = Πάρτε τους σελιδοδείκτες, τους κωδικούς πρόσβασης, το ιστορικό σας και πολλά άλλα σε κάθε συσκευή με { -brand-product-name }.
 onboarding-benefit-monitor-title = { -monitor-brand-short-name }
+onboarding-benefit-monitor-text = Λάβετε ειδοποίηση όταν διαρρεύσουν τα προσωπικά στοιχεία σας.
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
+onboarding-benefit-lockwise-text = Διαχειριστείτε κωδικούς πρόσβασης που είναι ασφαλείς και φορητοί.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -108,6 +111,7 @@ onboarding-data-sync-text2 = Συγχρονίστε τους σελιδοδεί�
 onboarding-data-sync-button2 = Σύνδεση στο { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Ενημερωθείτε για παραβιάσεις δεδομένων
 onboarding-firefox-monitor-text = Το { -monitor-brand-name } διαπιστώνει αν το email σας έχει εμφανιστεί σε παραβίαση δεδομένων και σας ειδοποιεί αν εμφανιστεί σε νέα παράβαση.
+onboarding-firefox-monitor-text2 = Το { -monitor-brand-name } ελέγχει αν το email σας έχει εμφανιστεί σε κάποια παραβίαση δεδομένων και σας ειδοποιεί αν εμφανιστεί σε νέα παράβαση.
 onboarding-firefox-monitor-button = Εγγραφή για ειδοποιήσεις
 onboarding-browse-privately-title = Ιδιωτική περιήγηση
 onboarding-browse-privately-text = Η ιδιωτική περιήγηση διαγράφει το ιστορικό αναζήτησης και περιήγησής σας για να διατηρούνται κρυφά από άλλους χρήστες του υπολογιστή σας.
@@ -124,6 +128,9 @@ onboarding-send-tabs-title = Άμεση αποστολή καρτελών στι
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
 onboarding-send-tabs-text = Η λειτουργία αποστολής καρτελών μοιράζεται άμεσα τις σελίδες σας με τις συσκευές σας χωρίς αντιγραφή-επικόλληση και χωρίς να φύγετε από το πρόγραμμα περιήγησης.
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text2 = Μοιραστείτε εύκολα σελίδες με τις συσκευές σας χωρίς αντιγραφή συνδέσμων και χωρίς να φύγετε από το πρόγραμμα περιήγησης.
 onboarding-send-tabs-button = Έναρξη χρήσης της αποστολής καρτελών
 onboarding-pocket-anywhere-title = Διαβάστε και ακούστε οπουδήποτε
 onboarding-pocket-anywhere-text2 = Αποθηκεύστε το αγαπημένο σας περιεχόμενο εκτός σύνδεσης με την εφαρμογή { -pocket-brand-name } και διαβάστε, ακούστε και παρακολουθήστε όποτε σας βολεύει.
@@ -137,7 +144,12 @@ onboarding-lockwise-strong-passwords-button = Διαχείριση συνδέσ�
 onboarding-facebook-container-title = Θέστε όρια με το Facebook
 onboarding-facebook-container-text2 = Το { -facebook-container-brand-name } διατηρεί ξεχωριστά το προφίλ σας από όλα τα άλλα, εμποδίζοντας τις στοχευμένες διαφημίσεις του Facebook.
 onboarding-facebook-container-button = Προσθήκη επέκτασης
+onboarding-import-browser-settings-title = Εισάγετε τους σελιδοδείκτες, τους κωδικούς πρόσβασης σας και άλλα
+onboarding-import-browser-settings-text = Ξεκινήστε αμέσως—εισάγετε εύκολα τις ιστοσελίδες και τις ρυθμίσεις του Chrome.
 onboarding-import-browser-settings-button = Εισαγωγή δεδομένων Chrome
+onboarding-personal-data-promise-title = Ιδιωτικό εκ κατασκευής
+onboarding-personal-data-promise-text = Το { -brand-product-name } αντιμετωπίζει τα δεδομένα σας με σεβασμό, συλλέγοντας όσο το δυνατό λιγότερα, προστατεύοντάς τα και είναι ξεκάθαρο πώς τα χρησιμοποιούμε.
+onboarding-personal-data-promise-button = Διαβάστε την υπόσχεσή μας
 
 ## Message strings belonging to the Return to AMO flow
 

@@ -42,6 +42,8 @@
 <!ENTITY  newMessageCmd.accesskey "m">
 <!ENTITY  newContactCmd.label "Contacte de la llibreta d'adreces…">
 <!ENTITY  newContactCmd.accesskey "C">
+<!ENTITY openMenuCmd.label "Obre">
+<!ENTITY openMenuCmd.accesskey "O">
 <!ENTITY openMessageFileCmd.label "Obre un missatge desat…">
 <!ENTITY openMessageFileCmd.accesskey "O">
 <!ENTITY saveAsMenu.label "Anomena i desa">
@@ -287,6 +289,8 @@
 <!ENTITY searchMailCmd.label "Cerca els missatges…">
 <!ENTITY searchMailCmd.accesskey "e">
 <!ENTITY searchMailCmd.key "f">
+<!ENTITY glodaSearchCmd.label "Cerca global…">
+<!ENTITY glodaSearchCmd.accesskey "C">
 <!ENTITY searchAddressesCmd.label "Cerca les adreces…">
 <!ENTITY searchAddressesCmd.accesskey "d">
 
@@ -349,7 +353,7 @@
 <!ENTITY replyMsgCmd.key "r">
 <!ENTITY replySenderCmd.label "Respon només al remitent">
 <!ENTITY replySenderCmd.accesskey "R">
-<!ENTITY replyNewsgroupCmd2.label "Segueix al grup de notícies">
+<!ENTITY replyNewsgroupCmd2.label "Segueix al grup de discussió">
 <!ENTITY replyNewsgroupCmd2.accesskey "u">
 <!ENTITY replyToAllMsgCmd.label "Respon a tots">
 <!ENTITY replyToAllMsgCmd.accesskey "p">
@@ -586,6 +590,7 @@
 <!ENTITY fileButton.tooltip "Mou el missatge seleccionat">
 <!ENTITY archiveButton.tooltip "Arxiva els missatges seleccionats">
 <!ENTITY openConversationButton.tooltip "Mostra la conversa del missatge seleccionat">
+<!ENTITY openMsgConversationButton.tooltip "Mostra la conversa del missatge seleccionat">
 <!ENTITY nextButton.tooltip "Vés al següent missatge per llegir">
 <!ENTITY nextMsgButton.tooltip "Vés al missatge següent">
 <!ENTITY previousButton.tooltip "Vés a l'anterior missatge per llegir">
@@ -705,6 +710,7 @@
 <!ENTITY saveAsVirtualFolderMenu.label "Desa la cerca com una carpeta…">
 
 <!-- Thread Pane -->
+<!ENTITY selectColumn.label "Seleccioneu missatges">
 <!ENTITY threadColumn.label "Conversa">
 <!ENTITY fromColumn.label "Remitent">
 <!ENTITY recipientColumn.label "Destinatari">
@@ -726,8 +732,11 @@
 <!ENTITY idColumn.label "Ordre de recepció">
 <!ENTITY attachmentColumn.label "Adjuncions">
 
+<!ENTITY deleteColumn.label "Suprimeix">
+
 <!-- Thread Pane Tooltips -->
 <!ENTITY columnChooser2.tooltip "Tria les columnes que es mostraran">
+<!ENTITY selectColumn.tooltip "Commuta la selecció de tots els missatges">
 <!ENTITY threadColumn2.tooltip "Mostra les converses de missatges">
 <!ENTITY fromColumn2.tooltip "Ordena per remitent">
 <!ENTITY recipientColumn2.tooltip "Ordena per destinatari">
@@ -748,6 +757,8 @@
 <!ENTITY locationColumn2.tooltip "Ordena per ubicació">
 <!ENTITY idColumn2.tooltip "Ordena per ordre de recepció">
 <!ENTITY attachmentColumn2.tooltip "Ordena per adjuncions">
+
+<!ENTITY deleteColumn.tooltip "Suprimeix un missatge">
 
 <!-- Thread Pane Context Menu -->
 <!ENTITY contextNewMsgFromTemplate.label "Missatge nou a partir de la plantilla">
@@ -772,7 +783,7 @@
 <!ENTITY contextArchive.accesskey "x">
 <!ENTITY contextReplySender.label "Respon només al remitent">
 <!ENTITY contextReplySender.accesskey "R">
-<!ENTITY contextReplyNewsgroup2.label "Segueix al grup de notícies">
+<!ENTITY contextReplyNewsgroup2.label "Segueix al grup de discussió">
 <!ENTITY contextReplyNewsgroup2.accesskey "u">
 <!ENTITY contextReplyAll.label "Respon a tots">
 <!ENTITY contextReplyAll.accesskey "p">
@@ -968,3 +979,7 @@
 <!ENTITY dockOptions.label              "Opcions de la icona de l'aplicació…">
 <!ENTITY writeNewMessageDock.label      "Escriu un missatge nou">
 <!ENTITY openAddressBookDock.label      "Obre la llibreta d'adreces">
+
+<!-- Content tab Navigation buttons -->
+<!ENTITY browseBackButton.tooltip    "Vés una pàgina enrere">
+<!ENTITY browseForwardButton.tooltip "Vés una pàgina endavant">

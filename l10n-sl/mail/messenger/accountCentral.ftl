@@ -14,6 +14,7 @@ email-label = E-pošta
     .aria-label = Poveži z obstoječim e-poštnim računom
 calendar-label = Koledar
     .aria-label = Ustvari nov koledar
+calendar-description = { -brand-short-name } omogoča urejanje dogodkov za boljšo organiziranost. Če vzpostavite povezavo z oddaljenim koledarjem, bodo vsi vaši dogodki sinhronizirani v vseh napravah.
 chat-label = Klepet
     .aria-label = Poveži račun za klepet
 filelink-label = Filelink

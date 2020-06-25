@@ -5,11 +5,12 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = Importoni nga Tjetër Shfletues…
 appmenuitem-protection-report-title = Mbrojtje Privatësie
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Shkoni te raporti juaj mbi privatësinë
+appmenuitem-protection-dashboard-title = Pult Mbrojtjesh
+appmenuitem-customize-mode =
+    .label = Përshtateni…
 
 ## Zoom Controls
 
@@ -22,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = Njëkohësohu Tani
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Ç’ka të Re
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = Njoftomëni për veçori të reja
+    .accesskey = N

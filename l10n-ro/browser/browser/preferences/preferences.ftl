@@ -207,13 +207,13 @@ colors-settings =
     .label = Culori…
     .accesskey = C
 # Zoom is a noun, and the message is used as header for a group of options
-preferences-zoom-header = Focalizare
-preferences-default-zoom = Focalizare implicită
+preferences-zoom-header = Zoom
+preferences-default-zoom = Zoom implicit
     .accesskey = z
 preferences-default-zoom-value =
     .label = { $percentage }%
 preferences-zoom-text-only =
-    .label = Focalizare doar pe text
+    .label = Zoom doar pe text
     .accesskey = t
 language-header = Limbă
 choose-language-description = Alege limba în care preferi să vezi paginile
@@ -235,7 +235,7 @@ translate-attribution = Traduceri de <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Excepții…
     .accesskey = x
-# Variables: 
+# Variables:
 #    $localeName (string) - Localized name of the locale to be used.
 use-system-locale =
     .label = Folosește setările sistemului de operare în „{ $localeName }” pentru formatul datelor, orelor, numerelor și unități de măsură.
@@ -310,8 +310,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Folosește { $plugin-name } (în { -brand-short-name })
-applications-preview-inapp =
-    .label = Previzualizează în { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -323,8 +321,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
@@ -487,11 +483,16 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Site-uri de top
 home-prefs-topsites-description = Site-urile pe care le vizitezi cel mai des
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Recomandat de { $provider }
 home-prefs-recommended-by-description = Conținut nemaipomenit de pe web, personalizat pentru tine
+
+##
+
 home-prefs-recommended-by-learn-more = Cum funcționează
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Articole sponsorizate
@@ -553,6 +554,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Afișează sugestii de căutare în ferestrele private
 suggestions-addressbar-settings = Modifică preferințele pentru istoricul de navigare, marcaje și sugestii cu privire la file
+suggestions-addressbar-settings-generic = Schimbă preferințele pentru alte sugestii în bara de adrese
 search-suggestions-cant-show = Sugestiile de căutare nu vor fi afișate în rezultatele din bara de adrese deoarece ai configurat { -brand-short-name } ca să nu țină minte niciodată istoricul.
 search-one-click-header = Motoare de căutare la un clic distanță
 search-one-click-desc = Alege motoarele de căutare alternative care apar sub bara de adresă și bara de căutare atunci când începi să introduci un cuvânt cheie.
@@ -631,10 +633,10 @@ sync-mobile-promo = Descarcă Firefox pentru <img data-l10n-name="android-icon"/
 sync-profile-picture =
     .tooltiptext = Schimbă fotografia de profil
 sync-disconnect =
-    .label = Deconectare…
+    .label = Deconectează-te…
     .accesskey = D
 sync-sign-out =
-    .label = Deconectare…
+    .label = Deconectează-te…
     .accesskey = g
 sync-manage-account = Gestionează contul
     .accesskey = o
@@ -756,10 +758,10 @@ privacy-header = Confidențialitate în browser
 
 ## Privacy Section - Forms
 
+logins-header = Autentificări și parole
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Autentificări și parole
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Autentificări și parole
     .searchkeywords = { -lockwise-brand-short-name }
@@ -774,7 +776,7 @@ forms-generate-passwords =
     .label = Sugerează și generează parole puternice
     .accesskey = u
 forms-breach-alerts =
-    .label = Afișează alerte despre parole pentru site-uri web cu breșe de securitate
+    .label = Afișează alerte despre parole pentru site-urile web a căror securitate a fost încălcată
     .accesskey = b
 forms-breach-alerts-learn-more-link = Află mai multe
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
@@ -795,8 +797,6 @@ forms-master-pw-fips-desc = Schimbarea parolei a eșuat
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verifică-ți identitatea pentru a crea o parolă generală.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -905,6 +905,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = File deschise
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = Site-uri de top
+    .accesskey = T
 addressbar-suggestions-settings = Schimbă preferințele pentru sugestiile motoarelor de căutare…
 
 ## Privacy Section - Content Blocking
@@ -964,7 +967,6 @@ content-blocking-fingerprinters = Generatoare de amprente digitale
 content-blocking-warning-title = Atenție!
 content-blocking-warning-description = Blocarea conținutului poate împiedica funcționarea unor site-uri web. Deblocarea se poare realiza ușor pentru site-urile în care ai încredere.
 content-blocking-learn-how = Află cum
-content-blocking-etp-warning-description = Blocarea elementelor de urmărire poate afecta funcționalitatea unor site-uri. Reîncarcă o pagină cu elemente de urmărire pentru a încărca tot conținutul.
 content-blocking-and-isolating-etp-warning-description = Blocarea elementelor de urmărire și izolarea cookie-urilor pot afecta funcționalitatea unor site-uri. Reîmprospătează pagina cu elementele de urmărire ca să încarci tot conținutul.
 content-blocking-warning-learn-how = Află cum
 content-blocking-reload-description = Va trebui să reîncarci filele pentru aplicarea acestor modificări.

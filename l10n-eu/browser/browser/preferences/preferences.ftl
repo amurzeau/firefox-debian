@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Erabili { $plugin-name } ({ -brand-short-name }(e)n)
-applications-preview-inapp =
-    .label = Aurreikusi { -brand-short-name }(e)n
 applications-open-inapp =
     .label = Ireki { -brand-short-name }(e)n
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -431,7 +427,7 @@ browsing-search-on-start-typing =
     .label = Bilatu testua idazten hasi bezain laster
     .accesskey = B
 browsing-picture-in-picture-toggle-enabled =
-    .label = Gaitu bideoa beste bideo batean ikusteko kontrolak
+    .label = Gaitu bideoa beste leiho batean ikusteko kontrolak
     .accesskey = G
 browsing-picture-in-picture-learn-more = Argibide gehiago
 browsing-cfr-recommendations =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Gune erabilienak
 home-prefs-topsites-description = Gehien bisitatzen dituzun guneak
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = { $provider } hornitzaileak gomendatuta
 home-prefs-recommended-by-description = Webeko eduki baliotsua, zuretzat pertsonalizatuta
+home-prefs-recommended-by-description-update = Webeko aparteko edukia, { $provider } hornitzaileak bilduta
+
+##
+
 home-prefs-recommended-by-learn-more = Nola dabilen
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Babesleen istorioak
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Erakutsi bilaketa-iradokizunak leiho pribatuetan
 suggestions-addressbar-settings = Aldatu nabigatze-historia, laster-marka eta fitxen iradokizunen hobespenak
+suggestions-addressbar-settings-generic = Aldatu hobespenak bilaketa-motorren bestelako iradokizunetarako
 search-suggestions-cant-show = Bilaketa-iradokizunak ez dira helbide-barran erakutsiko { -brand-short-name }(e)k historia inoiz ez gogoratzeko konfiguratu duzulako.
 search-one-click-header = Klik bakarreko bilaketa-motorrak
 search-one-click-desc = Aukeratu gako-hitz bat idazten hastean helbide- eta bilaketa-barren azpian agertzen diren ordezko bilaketa-motorrak.
@@ -765,10 +768,10 @@ privacy-header = Nabigatzailearen pribatutasuna
 
 ## Privacy Section - Forms
 
+logins-header = Saio-hasierak eta pasahitzak
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Saio-hasierak eta pasahitzak
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Saio-hasierak eta pasahitzak
     .searchkeywords = { -lockwise-brand-short-name }
@@ -805,7 +808,7 @@ forms-master-pw-fips-desc = Pasahitz aldaketak huts egin du
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Egiaztatu zure identitatea pasahitz nagusia sortzeko.
+master-password-os-auth-dialog-message-win = Pasahitz nagusi bat sortzeko, sartu zure Windows kredentzialak. Honek zure kontuen segurtasuna babesten laguntzen du.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -900,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Kudeatu baimenak
     .accesskey = b
+sitedata-cookies-exceptions =
+    .label = Kudeatu salbuespenak…
+    .accesskey = s
 
 ## Privacy Section - Address Bar
 
@@ -914,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Irekitako fitxak
     .accesskey = I
+addressbar-locbar-topsites-option =
+    .label = Gune erabilienak
+    .accesskey = r
 addressbar-suggestions-settings = Aldatu bilaketa-motorren iradokizunetarako hobespenak
 
 ## Privacy Section - Content Blocking
@@ -973,7 +982,6 @@ content-blocking-fingerprinters = Hatz-marka bidezko jarraipena egiten duten ele
 content-blocking-warning-title = Argi!
 content-blocking-warning-description = Edukia blokeatzeak zenbait webgune haustea eragin lezake. Erraza da konfiantzazko guneetarako blokeoa desgaitzea.
 content-blocking-learn-how = Ikasi nola
-content-blocking-etp-warning-description = Jarraipen-elementuak blokeatuz gero, zenbait gunetako eginbideak kaltetu litezke. Eduki guztiak kargatzeko, berritu jarraipen-elementuak dituen orria.
 content-blocking-and-isolating-etp-warning-description = Jarraipen-elementuak blokeatuz eta cookieak bakartuz gero, zenbait gunetako eginbideak kaltetu litezke. Eduki guztiak kargatzeko, berritu jarraipen-elementuak dituen orria.
 content-blocking-warning-learn-how = Ikasi nola
 content-blocking-reload-description = Zure fitxak berritu beharko dituzu aldaketa hauek eragina izan dezaten.

@@ -20,9 +20,9 @@ fonts-langgroup-bengali =
 fonts-langgroup-simpl-chinese =
     .label = Chino mombykypyre
 fonts-langgroup-trad-chinese-hk =
-    .label = Chino mba'e teéva (Hong Kong)
+    .label = Chino mba’e teéva (Hong Kong)
 fonts-langgroup-trad-chinese =
-    .label = Chino mba'e teéva (Taiwan)
+    .label = Chino mba’e teéva (Taiwan)
 fonts-langgroup-cyrillic =
     .label = Cirílico
 fonts-langgroup-devanagari =
@@ -67,7 +67,7 @@ fonts-langgroup-thai =
 fonts-langgroup-tibetan =
     .label = Tibetano
 fonts-langgroup-canadian =
-    .label = Ñe'ẽpehẽ pe'a joajupyréva Canadá pegua
+    .label = Ñe’ẽpehẽ pe’a joajupyréva Canadá pegua
 fonts-langgroup-other =
     .label = Otros sistemas de escrituraAmbue jehai apopyvusu
 
@@ -103,7 +103,7 @@ fonts-allow-own =
 ## of the language.
 
 fonts-languages-fallback-header = Moñe'ẽrã mbopapapy tetepy rejapyrépe g̃uarã
-fonts-languages-fallback-desc = Ko moñe'ẽrã mbopapapy ojepuru pe tetepy rejapyrépe g̃uarã nomombe'úiva imbopapapy.
+fonts-languages-fallback-desc = Ko moñe’ẽrã mbopapapy ojepuru pe tetepy rejapyrépe g̃uarã nomombe’úiva imbopapapy.
 fonts-languages-fallback-label = Ñembopapapy moñe'ẽrã guerujeýva rehegua
     .accesskey = T
 fonts-languages-fallback-name-auto =
@@ -119,7 +119,7 @@ fonts-languages-fallback-name-cewindows =
 fonts-languages-fallback-name-simplified =
     .label = Chino, mombykypyre
 fonts-languages-fallback-name-traditional =
-    .label = Chino, mba'eteéva
+    .label = Chino, mba’eteéva
 fonts-languages-fallback-name-cyrillic =
     .label = Cirílico
 fonts-languages-fallback-name-greek =
@@ -138,9 +138,6 @@ fonts-languages-fallback-name-vietnamese =
     .label = Vietnamita
 fonts-languages-fallback-name-other =
     .label = Ambuekuéra (oikehápe Europeo Occidental)
-fonts-very-large-warning-title = Tuicha teñoiha michĩmíva.
-fonts-very-large-warning-message = Eiporavo peteĩ mba'e tuicháva teñoiha michĩmíva rehegua (hetave 24 píxeles-gui). Kóva ikatu ombohasy térã ndereipurukuaaivoi heta kuatiarogue imboheko mbaretéva koichagua.
-fonts-very-large-warning-accept = Eñongatu che moambuepyre upéicharõ jepe
 # Variables:
 #   $name {string, "Arial"} - Name of the default font
 fonts-label-default =

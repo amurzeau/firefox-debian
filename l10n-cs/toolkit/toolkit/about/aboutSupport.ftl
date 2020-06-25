@@ -127,6 +127,11 @@ sandbox-sys-call-number = Systémové volání
 sandbox-sys-call-args = Argumenty
 safe-mode-title = Vyzkoušet nouzový režim
 restart-in-safe-mode-label = Restartovat se zakázanými doplňky…
+clear-startup-cache-title = Zkuste vymazat mezipaměť spouštění
+clear-startup-cache-label = Vymazat mezipaměť spouštění…
+startup-cache-dialog-title = Vymazání mezipaměti spouštění
+startup-cache-dialog-body = Pro vymazání mezipaměti spouštění se { -brand-short-name } restartuje. Nedojde k žádné změně vašich nastavení ani odstranění rozšíření, které jste si do { -brand-short-name(case: "gen") } nainstalovali.
+restart-button-label = Restartovat
 
 ## Media titles
 
@@ -134,6 +139,7 @@ audio-backend = Audio Backend
 max-audio-channels = Maximální počet kanálů
 channel-layout = Preferované rozložení kanálů
 sample-rate = Preferovaná vzorkovací frekvence
+roundtrip-latency = Zpoždění (směrodatná odchylka)
 media-title = Média
 media-output-devices-title = Výstupní zařízení
 media-input-devices-title = Vstupní zařízení

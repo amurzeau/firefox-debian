@@ -116,6 +116,11 @@ sandbox-sys-call-number = Asiwel n unagraw
 sandbox-sys-call-args = Tiɣiriyin
 safe-mode-title = Ɛreḍ deg uskar aɣelsan
 restart-in-safe-mode-label = Ales asenker s izegrar irurmiden…
+clear-startup-cache-title = Ɛreḍ ad tsefḍeḍ tanekkra tuffirt
+clear-startup-cache-label = Sfeḍ tanekkra tuffirt…
+startup-cache-dialog-title = Sfeḍ tanekkra tuffirt
+startup-cache-dialog-body = Ales asenker { -brand-short-name } i usfaḍ n tnekkra tuffirt. Ayagi ur yettbeddil ara deg yiɣewwaren-inek/inem, ur itekkes ara izegrar i terniḍ ɣer { -brand-short-name }.
+restart-button-label = Ales asenker
 
 ## Media titles
 
@@ -123,6 +128,7 @@ audio-backend = Ameslaw ɣer deffir
 max-audio-channels = Amḍan afellay n ibuda
 channel-layout = Taneɣruft n udabu i tebɣiḍ
 sample-rate = Afmiḍi n imedyaten i tebɣiḍ
+roundtrip-latency = Akud n ugani s tirza d tuɣalin (Amgared tizeɣt)
 media-title = Allalen n teγwalt
 media-output-devices-title = Ibenkan n tuffɣa
 media-input-devices-title = Ibenkan n n unekcum

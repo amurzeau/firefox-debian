@@ -4,6 +4,13 @@
 
 all-tabs-menu-undo-close-tab =
     .label = Αναίρεση κλεισίματος καρτέλας
+all-tabs-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Αναίρεση κλεισίματος καρτέλας
+            [one] Αναίρεση κλεισίματος καρτέλας
+           *[other] Αναίρεση κλεισίματος καρτελών
+        }
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = Αναζήτηση καρτελών

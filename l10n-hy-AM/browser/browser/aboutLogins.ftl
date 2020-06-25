@@ -2,6 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 about-logins-page-title = Մուտքագրումներ և գաղտնաբառեր
 
 # "Google Play" and "App Store" are both branding and should not be translated
@@ -26,6 +32,7 @@ menu =
     .title = Բացել ցանկը
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Ներմուծել այլ դիտարկիչից...
+about-logins-menu-menuitem-export-logins = Մուտքագրումների արտահանում…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Ընտրանքներ
@@ -105,21 +112,26 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
-# This message can be seen by attempting to edit a login in about:logins
-about-logins-edit-login-os-auth-dialog-message = Ստուգեք ձեր ինքնությունը ՝ պահպանված մուտքը խմբագրելու համար:
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message-win = Ձեր մուտքագրումը խմբագրելու համար մուտքագրեք ձեր Windows մուտքի հավատարմագրերը: Սա օգնում է պաշտպանել ձեր հաշիվների անվտանգությունը:
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = խմբագրել պահպանված մուտքանունը
-# This message can be seen by attempting to reveal a password in about:logins
-about-logins-reveal-password-os-auth-dialog-message = Ստուգեք ձեր ինքնությունը`պահպանված գաղտնաբառը բացահայտելու համար:
+# This message can be seen when attempting to reveal a password in about:logins on Windows.
+about-logins-reveal-password-os-auth-dialog-message-win = Ձեր մուտքագրումը խմբագրելու համար մուտքագրեք ձեր Windows մուտքի հավատարմագրերը: Սա օգնում է պաշտպանել ձեր հաշիվների անվտանգությունը:
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = բացահայտել պահպանված գաղտնաբառը
-# This message can be seen by attempting to copy a password in about:logins
-about-logins-copy-password-os-auth-dialog-message = Ստուգեք ձեր ինքնությունը`պահպանված գաղտնաբառը պատճենելու համար:
+# This message can be seen when attempting to copy a password in about:logins on Windows.
+about-logins-copy-password-os-auth-dialog-message-win = Ձեր մուտքագրումը պատճենելու համար մուտքագրեք ձեր Windows մուտքի հավատարմագրերը: Սա օգնում է պաշտպանել ձեր հաշիվների անվտանգությունը:
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = պատճենեք պահպանված գաղտնաբառը
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message-win = Ձեր մուտքագրումը արտահանելու համար մուտքագրեք ձեր Windows մուտքի հավատարմագրերը: Սա օգնում է պաշտպանել ձեր հաշիվների անվտանգությունը:
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message-macosx = արտահանել պահպանված մուտքանունները և գաղտնաբառերը
 
 ## Master Password notification
 
@@ -154,6 +166,9 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Հեռացնե՞լ այս մուտքանունը։
 confirm-delete-dialog-message = Այս գործողությունը չի կարող ետարկվել:
 about-logins-confirm-remove-dialog-confirm-button = Հեռացնել
+about-logins-confirm-export-dialog-title = Արտահանել մուտքանունները և գաղտնաբառերը
+about-logins-confirm-export-dialog-message = Ձեր գաղտնաբառերը կպահպանվեն որպես ընթեռնելի տեքստ (օր. ՝ BadP@ssw0rd), այնպես որ յուրաքանչյուրը, ով կարող է բացել արտահանվող ֆայլը, կարող է դիտել դրանք:
+about-logins-confirm-export-dialog-confirm-button = Արտահանել...
 confirm-discard-changes-dialog-title = Վերանայե՞լ չփրկված փոփոխությունները:
 confirm-discard-changes-dialog-message = Բոլոր չպահպանված փոփոխությունները կկորչեն:
 confirm-discard-changes-dialog-confirm-button = Մերժել
@@ -162,6 +177,7 @@ confirm-discard-changes-dialog-confirm-button = Մերժել
 
 about-logins-breach-alert-title = Վեբ կայքի խախտում
 breach-alert-text = Այս կայքի գաղտնաբառերը արտահոսք են կամ գողացել են այն բանից հետո, երբ վերջին անգամ թարմացրել եք ձեր մուտքի տվյալները: Փոխեք ձեր գաղտնաբառը ՝ ձեր հաշիվը պաշտպանելու համար:
+about-logins-breach-alert-date = Այս խախտումը տեղի է ունեցել { DATETIME($date, day: "numeric", month: "long", year: "numeric") }-ին
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-breach-alert-link = Անցնել { $hostname }-ին
@@ -185,3 +201,19 @@ about-logins-vulnerable-alert-learn-more-link = Իմանալ ավելին
 about-logins-error-message-duplicate-login-with-link = { $loginTitle }-ի այդ անունով մուտքը արդեն գոյություն ունի։ <a data-l10n-name="duplicate-link">Գնա՞լ առկա մուտքագրումները։</a>
 # This is a generic error message.
 about-logins-error-message-default = Գաղտնաբառի պահման ժամանակ հայտնվեց սխալ։
+
+## Login Export Dialog
+
+# Title of the file picker dialog
+about-logins-export-file-picker-title = Մուտքագրումների ֆայլի արտահանում
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename = logins.csv
+about-logins-export-file-picker-export-button = Արտահանել
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV փաստաթուղթ
+       *[other] CSV ֆայլ
+    }

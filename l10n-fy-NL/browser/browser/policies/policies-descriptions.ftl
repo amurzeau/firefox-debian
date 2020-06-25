@@ -63,6 +63,7 @@ policy-ExtensionSettings = Alle aspekten fan ynstallaasje fan útwreidingen behe
 policy-ExtensionUpdate = Automatyske útwreiding-fernijingen ynskeakelje of útskeakelje.
 policy-FirefoxHome = De startside fan Firefox ynstelle.
 policy-FlashPlugin = Gebrûk fan de Flash-ynstekker tastean of wegerje.
+policy-Handlers = Standert tapassinghandlers konfigurearje
 policy-HardwareAcceleration = Wannear false, hardwarefersnelling útskeakelje.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = De startside ynstelle en opsjoneel beskoattelje.
@@ -72,11 +73,12 @@ policy-LegacyProfiles = Funksje om in ôfsûnderlik profyl foar elke ynstallaasj
 ## Do not translate "SameSite", it's the name of a cookie attribute.
 
 policy-LegacySameSiteCookieBehaviorEnabled = Standertynstelling foar ferâldere SameSite-cookiegedrach ynskeakelje.
-policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Op spesifike websites tebekgean nei ferâludere SameSite-gedrach foar cookies.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Op spesifike websites tebekgean nei ferâldere SameSite-gedrach foar cookies.
 
 ##
 
 policy-LocalFileLinks = Spesifike websites tastean te keppeljen nei lokale bestannen.
+policy-MasterPassword = In haadwachtwurd fereaskje of foarkomme.
 policy-NetworkPrediction = ‘Network prediction’ (DNS prefetching) ynskeakelje of útskeakelje.
 policy-NewTabPage = De nije-ljepblêdside ynskeakelje of útskeakelje.
 policy-NoDefaultBookmarks = Oanmeitsjen fan de standertblêdwizers dy't mei { -brand-short-name } mei levere wurde útskeakelje, krekt as de Tûke blêdwizers (Meast besocht, Resinte labels). Noat: dizze beliedsregel is allinnich fan krêft by gebrûk derfan eardat it profyl foar it earst útfierd wurdt.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Bewarjen fan wachtwurden yn de wachtwurdbehearde
 # PDF.js and PDF should not be translated
 policy-PDFjs = PDF.js, de yn { -brand-short-name } ynboude PDF-lêzer, útskeakelje of ynstelle.
 policy-Permissions2 = Tastimmingen foar kamera, mikrofoan, lokaasje, notifikaasjes en automatysk ôfspyljen konfigurearje.
+policy-PictureInPicture = Picture-in-Picture yn- of útskeakelje.
 policy-PopupBlocking = Tastean dat bepaalde websites standert pop-ups werjaan.
 policy-Preferences = De wearde foar in subset fan foarkarren ynstelle en beskoattelje.
 policy-PromptForDownloadLocation = Freegje wêr't downloade bestannen bewarre moatte wurde.

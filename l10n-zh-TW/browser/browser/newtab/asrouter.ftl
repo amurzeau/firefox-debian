@@ -116,10 +116,6 @@ cfr-whatsnew-lockwise-take-link-text = 下載 App
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = 使用網址列，打得更少，找得更多
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = 在網址列上點擊，即可快速前往最常開啟的網站。使用來自 { $searchEngineName } 與瀏覽紀錄的搜尋結果，讓您更快找到東西。
-cfr-whatsnew-searchbar-body-generic = 在網址列上點擊，即可快速前往最常開啟的網站。使用來自瀏覽紀錄的搜尋結果，讓您更快找到東西。
 cfr-whatsnew-searchbar-body-topsites = 現在只要選擇網址列，就會顯示包含熱門網站連結的方框。
 cfr-whatsnew-searchbar-icon-alt-text = 放大鏡圖示
 
@@ -225,3 +221,15 @@ cfr-whatsnew-passwords-icon-alt = 不安全的密碼鑰匙圖示
 cfr-whatsnew-pip-fullscreen-header = 從子母畫面放大成全螢幕
 cfr-whatsnew-pip-fullscreen-body = 當您將影片縮到子母畫面中播放時，只要雙擊該視窗就能用全螢幕播放。
 cfr-whatsnew-pip-fullscreen-icon-alt = 子母畫面圖示
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = 保護項目，一目了然
+cfr-whatsnew-protections-body = 保護資訊儀錶板當中包含了資料外洩事件與密碼管理的相關摘要報告。現在起您可以追蹤已經處理過幾場資料外洩事件，並且看看是否還有已遭外洩的密碼。
+cfr-whatsnew-protections-cta-link = 檢視保護資訊儀錶板
+cfr-whatsnew-protections-icon-alt = 盾牌圖示
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = 更好的 PDF 閱讀體驗
+cfr-whatsnew-better-pdf-body = 現在可以直接在 { -brand-short-name } 直接開啟 PDF 文件，更輕鬆完成工作。

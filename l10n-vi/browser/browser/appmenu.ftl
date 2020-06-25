@@ -5,11 +5,12 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = Nhập dữ liệu từ trình duyệt khác…
 appmenuitem-protection-report-title = Bảo vệ quyền riêng tư
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Đi đến báo cáo bảo mật của bạn
+appmenuitem-protection-dashboard-title = Bảng điều khiển bảo vệ
+appmenuitem-customize-mode =
+    .label = Tùy biến…
 
 ## Zoom Controls
 
@@ -22,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = Đồng bộ ngay
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Có gì mới
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = Thông báo về các tính năng mới
+    .accesskey = f

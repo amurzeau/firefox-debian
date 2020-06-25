@@ -125,10 +125,6 @@ cfr-whatsnew-lockwise-take-link-text = Hanki sovellus
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Kirjoita vähemmän, löydä enemmän osoitepalkilla
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Siirry eniten käyttämillesi sivustoille yhdellä osoiterivin napsautuksella. Löydä asioita nopeammin { $searchEngineName }-hakutuloksilla ja selaushistorialla.
-cfr-whatsnew-searchbar-body-generic = Siirry eniten käyttämillesi sivustoille yhdellä osoiterivin napsautuksella. Löydä asioita nopeammin selaushistorian hakutuloksilla.
 cfr-whatsnew-searchbar-body-topsites = Nyt vain valitse osoitepalkki, niin se näyttää linkkejä ykkössivustoihin.
 cfr-whatsnew-searchbar-icon-alt-text = Suurennuslasin kuvake
 
@@ -235,3 +231,15 @@ cfr-whatsnew-passwords-icon-alt = Vaarantuneen salasanan avainkuvake
 cfr-whatsnew-pip-fullscreen-header = Vie kuva kuvassa -näkymä koko näytölle
 cfr-whatsnew-pip-fullscreen-body = Kun ponnahdutat videon kelluvaan ikkunaan, voit nyt kaksoisnapsauttaa kyseistä ikkunaa siirtyäksesi koko näytön tilaan.
 cfr-whatsnew-pip-fullscreen-icon-alt = Kuva kuvassa -kuvake
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Suojausten yhteenveto
+cfr-whatsnew-protections-body = Suojausten yhteenveto sisältää yhteenvetoraportit tietovuodoista ja salasanojen hallinnasta. Voit nyt katsoa, kuinka monta tietovuotoa olet selvittänyt ja onko tallentamiasi salasanoja vuotanut tietovuodossa.
+cfr-whatsnew-protections-cta-link = Näytä suojausten yhteenveto
+cfr-whatsnew-protections-icon-alt = Kilpikuvake
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Parempi PDF-kokemus
+cfr-whatsnew-better-pdf-body = PDF-tiedostot avautuvat nyt suoraan { -brand-short-name(case: "inessive") }, mikä saattaa helpottaa työskentelyäsi.

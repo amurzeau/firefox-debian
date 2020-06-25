@@ -310,8 +310,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = 使用 { $plugin-name } （在 { -brand-short-name } 中）
-applications-preview-inapp =
-    .label = 在 { -brand-short-name } 中预览
 applications-open-inapp =
     .label = 在 { -brand-short-name } 中打开
 
@@ -325,8 +323,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -493,11 +489,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = 常用网站
 home-prefs-topsites-description = 您经常访问的网站
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = { $provider } 推荐
 home-prefs-recommended-by-description = 来自网络的精彩内容，为您量身打造
+home-prefs-recommended-by-description-update = 由 { $provider } 整理提供的网络精选内容
+
+##
+
 home-prefs-recommended-by-learn-more = 使用方法
 home-prefs-recommended-by-option-sponsored-stories =
     .label = 赞助内容
@@ -554,6 +556,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = 在隐私窗口中显示搜索建议
 suggestions-addressbar-settings = 更改浏览记录、书签、标签页建议的首选项
+suggestions-addressbar-settings-generic = 更改其他地址栏建议首选项
 search-suggestions-cant-show = 由于您已经设置 { -brand-short-name } 不要记住浏览历史，地址栏中将不会显示搜索建议。
 search-one-click-header = 快捷搜索引擎列表
 search-one-click-desc = 请选择在地址栏和搜索栏输入关键词时，您希望显示在下方的其他可选用的搜索引擎。
@@ -757,10 +760,10 @@ privacy-header = 浏览器隐私
 
 ## Privacy Section - Forms
 
+logins-header = 登录信息与密码
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = 登录信息与密码
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = 登录信息与密码
     .searchkeywords = { -lockwise-brand-short-name }
@@ -796,8 +799,6 @@ forms-master-pw-fips-desc = 密码修改失败
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = 验证您的身份以创建主密码。
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = 请输入 Windows 登录凭据，以创建主密码。这有助于保护您的账户安全。
 # This message can be seen by trying to add a Master Password.
@@ -894,6 +895,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = 管理权限…
     .accesskey = P
+sitedata-cookies-exceptions =
+    .label = 管理例外…
+    .accesskey = x
 
 ## Privacy Section - Address Bar
 
@@ -908,6 +912,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = 已打开的标签页
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = 常用网站
+    .accesskey = T
 addressbar-suggestions-settings = 更改搜索引擎建议的首选项
 
 ## Privacy Section - Content Blocking
@@ -967,7 +974,6 @@ content-blocking-fingerprinters = 数字指纹跟踪程序
 content-blocking-warning-title = 注意！
 content-blocking-warning-description = 拦截内容后可能导致某些网站异常。但对您信任的网站禁用拦截非常简单。
 content-blocking-learn-how = 了解方法
-content-blocking-etp-warning-description = 拦截跟踪器可能会影响某些网站的功能。放行跟踪器，重载页面即可加载所有内容。
 content-blocking-and-isolating-etp-warning-description = 拦截跟踪器并隔离 Cookie 可能会影响某些网站的功能。放行跟踪器，重载页面即可加载所有内容。
 content-blocking-warning-learn-how = 了解要如何做
 content-blocking-reload-description = 需要重新载入标签页才能应用变更。

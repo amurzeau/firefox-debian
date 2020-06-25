@@ -34,8 +34,6 @@ cookie-tab-title = کراس-سائٹ ٹریکنگ کوکیز
 tracker-tab-title = ٹریکنگ مواد
 fingerprinter-tab-title = فنگر پرنٹرز
 cryptominer-tab-title = کریپٹومینر
-protections-close-button =
-    .aria-label = بند کریں
 protections-close-button2 =
     .aria-label = بند کریں
     .title = بند کریں
@@ -86,6 +84,8 @@ info-exposed-passwords-found =
         [one] پاس ورڈ تمام خلاف ورزیوں کے بے نقاب
        *[other] پاس ورڈز تمام خلاف ورزیوں کے بے نقاب
     }
+monitor-no-breaches-title = اچھی خبر!
+monitor-partial-breaches-motivation-title-start = زبردست آغاز!
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

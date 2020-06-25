@@ -22,6 +22,7 @@ set-password-new-password = Nowe hesło zapisać:
 set-password-reenter-password = Hesło wospjetować:
 set-password-meter = Měridło kajkosće hesła
 set-password-meter-loading = Začituje so
+master-password-admin = Waš administrator sej žada, zo hłowne hesło nastajeće, zo byšće hesła składował.
 master-password-description = Hłowne hesło so wužiwa, zo bychu so diskretne informacije kaž hesło škitali. Jeli hłowne hesło wutworiće, budźe so was jónkróc na posedźenje za nim prašeć, hdyž { -brand-short-name } składowane informacije škitane z tutym hesłom wotwołuje.
 master-password-warning = Prošu zawěsćće, zo sej hłowne hesło, kotrež scé stajił, spomjatkujeće. Jeli swoje hłowne hesło zabudźeće, njemóžeće na z nim škitane informacije přistup měć.
 remove-password =

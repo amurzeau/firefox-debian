@@ -115,6 +115,11 @@ sandbox-sys-call-number = Järjestelmäkutsu
 sandbox-sys-call-args = Argumentit
 safe-mode-title = Kokeile vikasietotilaa
 restart-in-safe-mode-label = Käynnistä uudelleen ilman lisäosia…
+clear-startup-cache-title = Kokeile tyhjentää käynnistyksen välimuisti
+clear-startup-cache-label = Tyhjennä käynnistyksen välimuisti…
+startup-cache-dialog-title = Käynnistyksen välimuistin tyhjennys
+startup-cache-dialog-body = Käynnistyksen välimuistin tyhjentämiseksi { -brand-short-name } käynnistetään uudestaan. Tämä ei muuta asetuksia eikä poista laajennuksia, jotka on lisätty { -brand-short-name(case: "illative") }.
+restart-button-label = Käynnistä uudestaan
 
 ## Media titles
 
@@ -122,6 +127,7 @@ audio-backend = Äänen taustajärjestelmä
 max-audio-channels = Kanavia enintään
 channel-layout = Ensisijainen kanava-asettelu
 sample-rate = Ensisijainen näytteenottotaajuus
+roundtrip-latency = Edestakainen viive (keskihajonta)
 media-title = Media
 media-output-devices-title = Toistolaitteet
 media-input-devices-title = Syöttölaitteet

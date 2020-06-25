@@ -37,6 +37,7 @@
 <!ENTITY imapLong.label                  "IMAP (Adgang til mapper og meddelelser fra flere computere)">
 <!ENTITY pop3Long.label                  "POP3 (Hent alle meddelelser til denne computer, mapper findes kun lokalt)">
 
+<!ENTITY manualConfigTable.summary       "Serverindstillinger">
 <!ENTITY incoming.label                  "Indgående:">
 <!ENTITY incomingColumn.label            "Indgående">
 <!ENTITY outgoing.label                  "Udgående:">
@@ -81,7 +82,7 @@
 <!ENTITY manual-edit.label               "Manuel konfiguration">
 <!ENTITY manual-edit.accesskey           "K">
 <!ENTITY manual-config.label             "Manuel opsætning…">
-<!ENTITY manual-config.accesskey         "M">
+<!ENTITY manual-config.accesskey         "O">
 <!ENTITY open-provisioner.label          "Få en ny mailadresse…">
 <!ENTITY open-provisioner.accesskey      "å">
 

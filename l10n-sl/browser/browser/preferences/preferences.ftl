@@ -320,8 +320,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Uporabi { $plugin-name } (v { -brand-short-name })
-applications-preview-inapp =
-    .label = Predogled v { -brand-short-name }u
 applications-open-inapp =
     .label = Odpri v { -brand-short-name }u
 
@@ -335,8 +333,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -503,11 +499,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Glavne strani
 home-prefs-topsites-description = Strani, ki jih največkrat obiščete
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Priporoča { $provider }
 home-prefs-recommended-by-description = Odlična vsebina iz celega spleta, prilagojena vašemu okusu
+home-prefs-recommended-by-description-update = Izjemna vsebina z vsega spleta, ki jo izbira { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Kako deluje
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Zgodbe oglaševalcev
@@ -570,6 +572,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Prikazuj predloge iskanja v zasebnih oknih
 suggestions-addressbar-settings = Spremeni nastavitve za zgodovino brskanja, zaznamke in predloge zavihkov
+suggestions-addressbar-settings-generic = Spremeni nastavitve drugih predlogov naslovne vrstice
 search-suggestions-cant-show = Predlogi iskanja v vrstici z naslovom ne bodo prikazani, ker ste { -brand-short-name } nastavili tako, da si nikoli ne zapomni zgodovine.
 search-one-click-header = Iskalniki, dostopni z enim klikom
 search-one-click-desc = Izberite nadomestne iskalnike, ki se pojavijo pod naslovno in iskalno vrstico, ko začnete vnašati ključno besedo.
@@ -773,10 +776,10 @@ privacy-header = Zasebnost brskalnika
 
 ## Privacy Section - Forms
 
+logins-header = Prijave in gesla
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Prijave in gesla
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Prijave in gesla
     .searchkeywords = { -lockwise-brand-short-name }
@@ -812,8 +815,6 @@ forms-master-pw-fips-desc = Sprememba gesla neuspešna
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Potrdite svojo identiteto za ustvarjanje glavnega gesla.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Če želite ustvariti glavno geslo, vnesite svoje podatke za prijavo v sistem Windows. To pomaga zaščititi varnost vaših računov.
 # This message can be seen by trying to add a Master Password.
@@ -910,6 +911,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Upravljanje dovoljenj ...
     .accesskey = a
+sitedata-cookies-exceptions =
+    .label = Upravljanje izjem ...
+    .accesskey = z
 
 ## Privacy Section - Address Bar
 
@@ -924,6 +928,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = odprte zavihke
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = Glavne strani
+    .accesskey = G
 addressbar-suggestions-settings = Spremeni nastavitve predlogov iskanja
 
 ## Privacy Section - Content Blocking
@@ -983,7 +990,6 @@ content-blocking-fingerprinters = Sledilce prstnih odtisov
 content-blocking-warning-title = Opozorilo!
 content-blocking-warning-description = Zavračanje vsebine lahko povzroči nedelovanje nekaterih spletnih mest. Zavračanje vsebine strani, ki jim zaupate, lahko enostavno onemogočite.
 content-blocking-learn-how = Naučite se, kako
-content-blocking-etp-warning-description = Zavračanje sledilcev lahko vpliva na delovanje nekaterih strani. Naložite stran s sledilci, da naložite vso vsebino.
 content-blocking-and-isolating-etp-warning-description = Zavračanje sledilcev in izolacija piškotkov lahko vplivata na delovanje nekaterih strani. Naložite stran s sledilci, da naložite vso vsebino.
 content-blocking-warning-learn-how = Naučite se, kako
 content-blocking-reload-description = Za uveljavitev sprememb boste morali znova naložiti zavihke.
@@ -1083,7 +1089,7 @@ permissions-a11y-privacy-link = Več o tem
 collection-header = Zbiranje in uporaba podatkov { -brand-short-name }a
 collection-description = Trudimo se, da vam ponudimo izbiro in da zbiramo samo tisto, kar potrebujemo za razvoj in izboljšave { -brand-short-name }a za vse uporabnike. Pred sprejemanjem osebnih podatkov vas vedno vprašamo za dovoljenje.
 collection-privacy-notice = Obvestilo o zasebnosti
-collection-health-report-telemetry-disabled = Organizaciji { -vendor-short-name } ne dovoljujete zajemanja tehničnih podatkov in podatkov o uporabi. Vsi pretekli podatki bodo izbrisani v 30 dneh.
+collection-health-report-telemetry-disabled = Organizaciji { -vendor-short-name } ne dovoljujete več zajemanja tehničnih podatkov in podatkov o uporabi. Vsi pretekli podatki bodo izbrisani v 30 dneh.
 collection-health-report-telemetry-disabled-link = Več o tem
 collection-health-report =
     .label = { -brand-short-name }u dovoli pošiljanje tehničnih podatkov in podatkov o uporabi organizaciji { -vendor-short-name }

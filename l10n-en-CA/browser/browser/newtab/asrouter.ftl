@@ -125,10 +125,6 @@ cfr-whatsnew-lockwise-take-link-text = Get the app
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Type less, find more with the address bar
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Get to the sites you use most with a single click into the address bar. Find things faster with results from { $searchEngineName } and your browsing history.
-cfr-whatsnew-searchbar-body-generic = Get to the sites you use most with a single click into the address bar. Find things faster with search results from your browsing history.
 cfr-whatsnew-searchbar-body-topsites = Now, just select the address bar, and a box will expand with links to your top sites.
 cfr-whatsnew-searchbar-icon-alt-text = Magnifying glass icon
 
@@ -235,3 +231,15 @@ cfr-whatsnew-passwords-icon-alt = Vulnerable password key icon
 cfr-whatsnew-pip-fullscreen-header = Take picture-in-picture fullscreen
 cfr-whatsnew-pip-fullscreen-body = When you pop a video into a floating window, you can now double-click on that window to go fullscreen.
 cfr-whatsnew-pip-fullscreen-icon-alt = Picture-in-picture icon
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Protections at a glance
+cfr-whatsnew-protections-body = The Protections Dashboard includes summary reports about data breaches and password management. You can now track how many breaches you’ve resolved, and see if any of your saved passwords may have been exposed in a data breach.
+cfr-whatsnew-protections-cta-link = View Protections Dashboard
+cfr-whatsnew-protections-icon-alt = Shield icon
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Better PDF experience
+cfr-whatsnew-better-pdf-body = PDF documents now open directly in { -brand-short-name }, keeping your workflow within easy reach.

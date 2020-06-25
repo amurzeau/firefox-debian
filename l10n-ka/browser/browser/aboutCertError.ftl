@@ -55,6 +55,10 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Certificate chain:
+open-in-new-window-for-csp-or-xfo-error = საიტის გახსნა ახალ ფანჯარაში
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = თქვენი უსაფრთხოებისთვის, { $hostname } არ დაუშვებს და { -brand-short-name } არ აჩვენებს გვერდს, თუ მასში სხვა საიტი იქნება ჩაშენებული. ამ გვერდის სანახავად, მისი ცალკე ფანჯარაში გახსნა დაგჭირდებათ.
 
 ## Messages used for certificate error titles
 
@@ -85,6 +89,7 @@ unknownSocketType-title = გაუთვალისწინებელი �
 nssFailure2-title = უსაფრთხო დაკავშირება ვერ მოხერხდა
 cspBlocked-title = შეზღუდულია, შიგთავსის უსაფრთხოების დებულების შესაბამისად.
 xfoBlocked-title = ზღუდავს დებულება X-Frame-Options
+csp-xfo-error-title = { -brand-short-name } ვერ ხსნის ამ გვერდს
 corruptedContentError-title = დაზიანებული შიგთავსის შეცდომა
 remoteXUL-title = დისტანციური XUL
 sslv3Used-title = უსაფრთხო კავშირი ვერ ხერხდება

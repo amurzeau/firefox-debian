@@ -5,11 +5,11 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = दूसरे ब्राउज़र से आयात करें…
 appmenuitem-protection-report-title = गोपनीयता सुरक्षाएँ
 appmenuitem-protection-report-tooltip =
     .tooltiptext = अपनी गोपनीयता रिपोर्ट पर जाएं
+appmenuitem-customize-mode =
+    .label = मनपसंद बनाएँ…
 
 ## Zoom Controls
 
@@ -22,3 +22,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = अब तुल्यकालित करें
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = क्या नया है
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = नई सुविधाओं के बारे में सूचित करें
+    .accesskey = f

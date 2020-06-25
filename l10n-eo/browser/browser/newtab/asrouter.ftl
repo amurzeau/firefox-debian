@@ -231,3 +231,15 @@ cfr-whatsnew-passwords-icon-alt = Emblemo de sendefenda pasvorto
 cfr-whatsnew-pip-fullscreen-header = Iri el la eta al la granda ekrano
 cfr-whatsnew-pip-fullscreen-body = Kiam vi ŝprucigas filmeton en ŝvebantan fenestron, vi povas nun duoble alklaki tiun fenestro por vidi ĝin plenekrane.
 cfr-whatsnew-pip-fullscreen-icon-alt = Emblemo de bildo en bildo.
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Superrigardo de protektoj
+cfr-whatsnew-protections-body = La panelo de protektoj inkluzivas resumajn raportojn pri datumfuĝoj kaj administro de pasvortoj. Vi nun povas sevki la kvanton de solvitaj datumfuĝoj kaj vidi ĉu iu ajn el viaj konservitaj pasvortoj povus esti elmetita de datumfuĝo.
+cfr-whatsnew-protections-cta-link = Vidi panelon de protektoj
+cfr-whatsnew-protections-icon-alt = Emblemo de ŝildo
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Pli bona sperto kun PDF
+cfr-whatsnew-better-pdf-body = Dokumentoj PDF malfermiĝas nun rekte en { -brand-short-name }, kio helpas teni viajn aferojn ĉemane.

@@ -5,11 +5,12 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = Importuoti iš kitos naršyklės…
 appmenuitem-protection-report-title = Privatumo apsaugos
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Eiti į jūsų privatumo ataskaitą
+appmenuitem-protection-dashboard-title = Apsaugos skydelis
+appmenuitem-customize-mode =
+    .label = Tvarkyti…
 
 ## Zoom Controls
 
@@ -22,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = Sinchronizuoti dabar
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Kas naujo
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = Pranešti apie naujas funkcijas
+    .accesskey = f

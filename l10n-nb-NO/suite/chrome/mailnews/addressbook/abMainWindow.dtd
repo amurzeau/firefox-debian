@@ -7,24 +7,24 @@
 
 <!-- Menus:  the . means that the menu item isn't implemented yet -->
 
+<!ENTITY blankResultsPaneMessage.label                  "Denne adresseboken viser kontakter bare etter at du har gjort et søk">
+<!ENTITY localResultsOnlyMessage.label                  "Kontakter fra eksterne adressebøker vises ikke før du søker">
 <!-- File Menu -->
 <!ENTITY newContact.label                               "Kontakt …">
-<!-- LOCALIZATION NOTE (newContact.accesskey) : DONT_TRANSLATE -->
 <!ENTITY newContact.accesskey                           "K">
+<!ENTITY newContact.key                                 "N">
 <!ENTITY newListCmd.label                               "E-postliste …">
-<!-- LOCALIZATION NOTE (newListCmd.accesskey) : DONT_TRANSLATE -->
 <!ENTITY newListCmd.accesskey                           "E">
 <!ENTITY newAddressBookCmd.label                        "Adressebok …">
 <!ENTITY newAddressBookCmd.accesskey                    "d">
 <!ENTITY newLDAPDirectoryCmd.label                      "LDAP-katalog …">
-<!-- LOCALIZATION NOTE (newLDAPDirectoryCmd.accesskey) : DONT_TRANSLATE -->
 <!ENTITY newLDAPDirectoryCmd.accesskey                  "L">
 <!ENTITY newIM.label                                    "IM">
 <!ENTITY printContactViewCmd.label                      "Skriv ut kontakt …">
 <!ENTITY printContactViewCmd.accesskey                  "k">
+<!ENTITY printContactViewCmd.key                        "P">
 <!ENTITY printPreviewContactViewCmd.label               "Forhåndsvisning av kontakt">
 <!ENTITY printPreviewContactViewCmd.accesskey           "v">
-<!ENTITY printContactViewCmd.key                        "P">
 <!ENTITY printAddressBook.label                         "Skriv ut adressebok …">
 <!ENTITY printAddressBook.accesskey                     "a">
 <!ENTITY printPreviewAddressBook.label                  "Forhåndsvisning av adressebok">
@@ -40,7 +40,6 @@
 <!ENTITY swapFirstNameLastNameCmd.label                 "Bytt om for/etternavn">
 <!ENTITY swapFirstNameLastNameCmd.accesskey             "B">
 <!ENTITY propertiesCmd.label                            "Egenskaper …">
-<!-- LOCALIZATION NOTE (propertiesCmd.accesskey) : DONT_TRANSLATE -->
 <!ENTITY propertiesCmd.accesskey                        "E">
 <!ENTITY propertiesCmd.key                              "i">
 
@@ -83,8 +82,10 @@
 <!ENTITY newmsgButton.accesskey                         "n">
 <!ENTITY deleteItemButton.label                         "Slett">
 <!ENTITY deleteItemButton.accesskey                     "S">
-<!ENTITY newimButton.label                              "Lynmelding">
+<!ENTITY newimButton.label                              "Direktemelding">
 <!ENTITY newimButton.accesskey                          "I">
+<!ENTITY printButton.label                              "Skriv ut">
+<!ENTITY printButton.accesskey                          "r">
 <!ENTITY searchNameAndEmail.placeholder                 "Søk i navn og e-postadresse">
 <!ENTITY searchBox.title                                "Søk">
 
@@ -94,7 +95,8 @@
 <!ENTITY newlistButton.tooltip                          "Lag en ny liste">
 <!ENTITY editItemButton.tooltip                         "Rediger valgt element">
 <!ENTITY newmsgButton.tooltip                           "Send en e-post">
-<!ENTITY newIM.tooltip                                  "Send en melding eller chat">
+<!ENTITY newIM.tooltip                                  "Send en direktemelding eller chatt">
+<!ENTITY printButton.tooltip                            "Skriv ut valgt element">
 <!ENTITY deleteItemButton.tooltip                       "Slett valgt element">
 <!ENTITY throbber.tooltip                               "Gå til hjemmesiden til &vendorShortName;">
 <!ENTITY throbber.tooltip2                              "Gå til hjemmesiden til &brandShortName;">
@@ -108,6 +110,7 @@
 <!ENTITY contact.heading                                "Kontakt">
 <!ENTITY home.heading                                   "Hjem">
 <!ENTITY other.heading                                  "Annet">
+<!ENTITY chat.heading                                   "Nettprat">
 <!ENTITY phone.heading                                  "Telefon">
 <!ENTITY work.heading                                   "Arbeid">
 <!-- Special Box Headings, for mailing lists -->

@@ -37,10 +37,14 @@ etp-card-title = Protección de seguimiento mejorada
 etp-card-content = Los rastreadores te siguen en línea para recolectar información sobre tus hábitos de navegación e intereses. { -brand-short-name } bloquea muchos de estos rastreadores y otros scripts maliciosos.
 protection-report-webpage-title = Panel de protecciones
 protection-report-page-content-title = Panel de protecciones
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } puede proteger tu privacidad tras bambalinas mientras navegas. Este es un resumen personalizado de aquellas protecciones, incluyendo las herramientas para tomar el control de tu vida en línea.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } protege tu privacidad tras bambalinas mientras navegas. Este es un resumen personalizado de aquellas protecciones, incluyendo las herramientas para tomar el control de tu vida en línea.
+protection-report-settings-link = Gestiona tu configuración de privacidad y seguridad
 etp-card-title-always = Protección de seguimiento mejorada: Siempre activa
 etp-card-title-custom-not-blocking = Protección de seguimiento mejorada: DESACTIVADA
-etp-card-content-summary = Cuando compañías desconocidas intentan seguirte en secreto por la web, { -brand-short-name } detiene automáticamente a muchas de ellas.
+etp-card-content-description = { -brand-short-name } automáticamente detiene a las compañías que te sigen en secreto por la web.
 protection-report-etp-card-content-custom-not-blocking = Actualmente están todas las protecciones desactivadas. Elije que rastreadores bloquear en tus ajustes de protección de { -brand-short-name }.
 protection-report-manage-protections = Administrar ajustes
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -58,8 +62,6 @@ fingerprinter-tab-title = Creadores de huellas (Fingerprinters)
 fingerprinter-tab-content = Los creadores de huellas (Fingerprinters) recolectan ajustes de tu navegador y computador para crear un perfil tuyo. Usando esta huella digital ellos pueden seguirte a través de diferentes sitios web. <a data-l10n-name="learn-more-link">Aprender más</a>
 cryptominer-tab-title = Criptomineros
 cryptominer-tab-content = Los criptomineros utilizan la potencia de cómputo de tu sistema para la minería de dinero digital. Los scripts utilizados para ello consumen tu batería, relentecen tu computador e incrementan el valor de tu boleta de electricidad. <a data-l10n-name="learn-more-link">Aprender más</a>
-protections-close-button =
-    .aria-label = Cerrar
 protections-close-button2 =
     .aria-label = Cerrar
     .title = Cerrar
@@ -71,8 +73,8 @@ lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-title-logged-in2 = Administración de contraseñas
 lockwise-header-content = { -lockwise-brand-name } almacena de forma segura tus contraseñas en tu navegador.
 lockwise-header-content-logged-in = Almacena de forma segura tus contraseñas y sincronízalas en todos tus dispositivos.
-protection-report-view-logins-button = Ver conexiones
-    .title = Ir a las conexiones guardadas
+protection-report-view-logins-button = Ver credenciales
+    .title = Ir a las credenciales guardadas
 protection-report-save-passwords-button = Guardar contraseñas
     .title = Guardar contraseñas en { -lockwise-brand-short-name }
 protection-report-manage-passwords-button = Gestionar contraseñas
@@ -120,6 +122,8 @@ monitor-link = Cómo funciona
 monitor-header-content-no-account = Revisa { -monitor-brand-name } para ver si has sido parte de una filtración de datos conocida, y recibe alertas sobre nuevas filtraciones.
 monitor-header-content-signed-in = { -monitor-brand-name } te advierte si tu información ha aparecido en una filtración de datos conocida.
 monitor-sign-up = Regístrate para recibir alertas de filtraciones
+monitor-sign-up-link = Regístrate para recibir alertas de filtraciones
+    .title = Regístrate para recibir alertas de filtraciones en { -monitor-brand-name }
 auto-scan = Escaneado automáticamente el día de hoy
 monitor-emails-tooltip =
     .title = Ver las direcciones de correo supervisadas en { -monitor-brand-short-name }
@@ -144,6 +148,14 @@ info-known-breaches-found =
        *[other] filtraciones conocidas han expuesto tu información
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] Filtración de datos conocida marcada como resuelta
+       *[other] Filtraciones de datos conocidas marcadas como resueltas
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -157,9 +169,44 @@ full-report-link = Ver el reporte completo en <a data-l10n-name="monitor-inline-
 # your localization, because it would result in the number showing twice.
 password-warning =
     { $count ->
-        [one] conexión guardada podría haberse visto expuesta en una filtración de datos. Cambia la contraseña para una mejor seguridad en línea. <a data-l10n-name="lockwise-link">Ver conexiones guardadas</a>
-       *[other] conexiones guardadas podrían haberse visto expuesta en una filtración de datos. Cambia la contraseña para una mejor seguridad en línea. <a data-l10n-name="lockwise-link">Ver conexiones guardadas</a>
+        [one] Una credencial guardada podría haberse visto expuesta en una filtración de datos. Cambia su contraseña para una mejor seguridad en línea. <a data-l10n-name="lockwise-link">Ver credenciales guardadas</a>
+       *[other] Credenciales guardadas podrían haberse visto expuestsa en una filtración de datos. Cambia sus contraseñas para una mejor seguridad en línea. <a data-l10n-name="lockwise-link">Ver credenciales guardadas</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] Contraseña expuesta en filtraciones no resueltas
+       *[other] Contraseñas expuestas en filtraciones no resueltas
+    }
+monitor-no-breaches-title = ¡Buenas noticias!
+monitor-no-breaches-description = No tienes filtraciones conocidas. Si eso cambia, te lo haremos saber.
+monitor-view-report-link = Ver reporte
+    .title = Resuelve las filtraciones en { -monitor-brand-short-name }
+monitor-breaches-unresolved-title = Resuelve tus filtraciones
+monitor-breaches-unresolved-description = Después de revisar los detalles de una filtración y tomar los pasos para proteger tu información, puedes marcar las filtraciones como resueltas.
+monitor-manage-breaches-link = Gestionar filtraciones
+    .title = Gestiona filtraciones en { -monitor-brand-short-name }
+monitor-breaches-resolved-title = ¡Genial! Has resuelto todas las filtraciones conocidas.
+monitor-breaches-resolved-description = Si su correo aparece en cualquier filtración nueva, te lo haremos saber.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+        [one] { $numBreachesResolved } de { $numBreaches } filtración marcada como resuelta
+       *[other] { $numBreachesResolved } de { $numBreaches } filtraciones marcadas como resueltas
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved }% completo
+monitor-partial-breaches-motivation-title-start = ¡Empezaste bien!
+monitor-partial-breaches-motivation-title-middle = ¡Sigue así!
+monitor-partial-breaches-motivation-title-end = ¡Casi listo! Continúa.
+monitor-partial-breaches-motivation-description = Resuelve el resto de tus filtraciones en { -monitor-brand-short-name }.
+monitor-resolve-breaches-link = Resolver filtraciones
+    .title = Resuelve filtraciones en { -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

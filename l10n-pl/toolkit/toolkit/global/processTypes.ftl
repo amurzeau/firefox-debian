@@ -26,3 +26,5 @@ process-type-webisolated = Wydzielone strony
 process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Gniazdo
+# process preallocated; may change to other types
+process-type-prealloc = Wstępnie przydzielony

@@ -2,6 +2,52 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (निजी ब्राउजिङ्ग)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (निजी ब्राउजिङ्ग)
+
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (निजी ब्राउजिङ्ग)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (निजी ब्राउजिङ्ग)
+
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = साइट जानकारी हेर्नुहोस्
 
@@ -68,10 +114,12 @@ urlbar-canvas-blocked =
     .tooltiptext = तपाईँले यो वेबसाइटको लागि क्यानभस डाटाको निकास अवरुद्ध गर्नु भएको छ।
 urlbar-midi-blocked =
     .tooltiptext = तपाईँले यो वेबसाइटको लागि MIDI अवरुद्ध गर्नु भएको छ।
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = यस ({ $shortcut }) पुस्तकचिनोलाई सम्पादन गर्नुहोस्
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -103,6 +151,7 @@ search-one-offs-change-settings-button =
     .label = खोज सेटिङ परिवर्तन गर्नुहोस्
 search-one-offs-change-settings-compact-button =
     .tooltiptext = खोज सेटिङ परिवर्तन गर्नुहोस्
+
 search-one-offs-context-open-new-tab =
     .label = नयाँ ट्याबमा खोज्नुहोस्
     .accesskey = T
@@ -168,6 +217,9 @@ popup-select-microphone =
     .accesskey = M
 popup-all-windows-shared = तपाईँको स्क्रिन मा सबै देखिने सञ्झ्यालहरू साझेदारी गरिनेछ।
 
+## WebRTC window or screen share tab switch warning
+
+
 ## DevTools F12 popup
 
 
@@ -181,10 +233,12 @@ urlbar-remote-control-notification-anchor =
     .tooltiptext = ब्राउजर रिमोट कंट्रोल अन्तर्गत छ
 urlbar-switch-to-tab =
     .value = यस ट्याबमा स्विच गर्नुहोस्:
+
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = एक्सटेन्सन:
-urlbar-go-end-cap =
+
+urlbar-go-button =
     .tooltiptext = लोकेसन बारमा भएको स्थानमा जानुहोस्
 urlbar-page-action-button =
     .tooltiptext = पृष्ठ कार्यहरु

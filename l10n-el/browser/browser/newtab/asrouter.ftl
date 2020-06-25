@@ -94,7 +94,14 @@ cfr-whatsnew-button =
     .tooltiptext = Τι νέο υπάρχει
 cfr-whatsnew-panel-header = Τι νέο υπάρχει
 cfr-whatsnew-release-notes-link-text = Διαβάστε τις σημειώσεις έκδοσης
+cfr-whatsnew-fx70-title = Το { -brand-short-name } μάχεται σκληρά για το απόρρητό σας
+cfr-whatsnew-fx70-body =
+    Η τελευταία ενημέρωση βελτιώνει την προστασία από καταγραφή και κάνει τη
+    δημιουργία ασφαλών κωδικών πρόσβασης πιο εύκολη από ποτέ για κάθε ιστοσελίδα.
 cfr-whatsnew-tracking-protect-title = Προστατεύστε τον εαυτό σας από ιχνηλάτες
+cfr-whatsnew-tracking-protect-body =
+    Το { -brand-short-name } αποκλείει πολλούς κοινούς ιχνηλάτες κοινωνικών δικτύων και μεταξύ ιστοσελίδων που
+    παρακολοθούν τη δραστηριότητά σας στο διαδίκτυο.
 cfr-whatsnew-tracking-protect-link-text = Προβολή της αναφοράς σας
 # This string is displayed before a large numeral that indicates the total
 # number of tracking elements blocked. Don’t add $blockedCount to your
@@ -107,32 +114,58 @@ cfr-whatsnew-tracking-blocked-title =
 cfr-whatsnew-tracking-blocked-subtitle = Από τις { DATETIME($earliestDate, month: "long", year: "numeric") }
 cfr-whatsnew-tracking-blocked-link-text = Προβολή αναφοράς
 cfr-whatsnew-lockwise-backup-title = Δημιουργήστε αντίγραφα ασφαλείας των κωδικών πρόσβασής σας
+cfr-whatsnew-lockwise-backup-body = Δημιουργήστε ασφαλείς κωδικούς πρόσβασης, διαθέσιμους από όλες τις συσκευές σας.
 cfr-whatsnew-lockwise-backup-link-text = Ενεργοποίηση των αντιγράφων ασφαλείας
 cfr-whatsnew-lockwise-take-title = Πάρτε τους κωδικούς σας μαζί σας
+cfr-whatsnew-lockwise-take-body =
+    Η εφαρμογή { -lockwise-brand-short-name } για κινητές συσκευές σας επιτρέπει ασφαλή πρόσβαση
+    στα αντίγραφα ασφαλείας των κωδικών πρόσβασης σας από οπουδήποτε.
 cfr-whatsnew-lockwise-take-link-text = Λήψη εφαρμογής
 
 ## Search Bar
 
+cfr-whatsnew-searchbar-title = Πληκτρολογήστε λιγότερο, βρείτε περισσότερα με τη γραμμή διευθύνσεων
+cfr-whatsnew-searchbar-body-topsites = Τώρα, απλώς επιλέξτε τη γραμμή διευθύνσεων και θα εμφανιστεί ένα πλαίσιο με συνδέσμους για τις κορυφαίες ιστοσελίδες σας.
 cfr-whatsnew-searchbar-icon-alt-text = Εικονίδιο μεγεθυντικού φακού
 
 ## Picture-in-Picture
 
-cfr-whatsnew-pip-cta = Μάθε περισσότερα
+cfr-whatsnew-pip-header = Παρακολουθήστε βίντεο κατά την περιήγηση
+cfr-whatsnew-pip-body = Η εικόνα-εντός-εικόνας εμφανίζει το βίντεο σε αναδυόμενο παράθυρο, ώστε να μπορείτε να το παρακολουθείτε ενώ εργάζεστε σε άλλες καρτέλες.
+cfr-whatsnew-pip-cta = Μάθετε περισσότερα
 
 ## Permission Prompt
 
+cfr-whatsnew-permission-prompt-header = Λιγότερα ενοχλητικά αναδυόμενα παράθυρα
+cfr-whatsnew-permission-prompt-body = Το { -brand-shorter-name } αποκλείει πλέον την αυτόματη αίτηση για αποστολή αναδυόμενων μηνυμάτων από ιστοσελίδες.
 cfr-whatsnew-permission-prompt-cta = Μάθετε περισσότερα
 
 ## Fingerprinter Counter
 
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Αποκλείστηκε fingerprinter
+       *[other] Αποκλείστηκαν fingerprinters
+    }
+cfr-whatsnew-fingerprinter-counter-body = Το { -brand-shorter-name } αποκλείει πολλά fingerprinters που συλλέγουν κρυφά πληροφορίες σχετικά με τη συσκευή και τη δραστηριότητά σας για να δημιουργήσουν ένα διαφημιστικό προφίλ για εσάς.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Fingerprinters
+cfr-whatsnew-fingerprinter-counter-body-alt = Το { -brand-shorter-name } μπορεί να αποκλείσει πολλά fingerprinters που συλλέγουν κρυφά πληροφορίες σχετικά με τη συσκευή και τη δραστηριότητά σας για να δημιουργήσουν ένα διαφημιστικό προφίλ για εσάς.
 
 ## Bookmark Sync
 
+cfr-doorhanger-sync-bookmarks-header = Λάβετε αυτό το σελιδοδείκτη στο τηλέφωνό σας
+cfr-doorhanger-sync-bookmarks-body = Πάρτε τους σελιδοδείκτες, τους κωδικούς πρόσβασης, το ιστορικό σας και πολλά άλλα, σε όποια συσκευή έχετε συνδεθεί στο { -brand-product-name }.
 cfr-doorhanger-sync-bookmarks-ok-button = Ενεργοποίηση { -sync-brand-short-name }
     .accesskey = Ε
 
 ## Login Sync
 
+cfr-doorhanger-sync-logins-header = Δεν θα χάσετε ποτέ ξανά κωδικό πρόσβασης
+cfr-doorhanger-sync-logins-body = Αποθηκεύστε και συγχρονίστε με ασφάλεια τους κωδικούς πρόσβασής σας σε όλες τις συσκευές σας.
 cfr-doorhanger-sync-logins-ok-button = Ενεργοποίηση { -sync-brand-short-name }
     .accesskey = Ε
 
@@ -140,12 +173,14 @@ cfr-doorhanger-sync-logins-ok-button = Ενεργοποίηση { -sync-brand-sh
 
 cfr-doorhanger-send-tab-header = Διαβάστε το εν κινήσει
 cfr-doorhanger-send-tab-recipe-header = Πάρτε αυτή τη συνταγή στην κουζίνα
+cfr-doorhanger-send-tab-body = Η Αποστολή καρτέλας σας επιτρέπει να μοιραστείτε εύκολα αυτό το σύνδεσμο με το τηλέφωνό σας ή οπουδήποτε έχετε συνδεθεί στο { -brand-product-name }.
 cfr-doorhanger-send-tab-ok-button = Δοκιμάστε την καρτέλα "Αποστολή"
     .accesskey = Δ
 
 ## Firefox Send
 
 cfr-doorhanger-firefox-send-header = Μοιραστείτε αυτό το PDF με ασφάλεια
+cfr-doorhanger-firefox-send-body = Προστατεύστε τα ευαίσθητα έγγραφά σας από αδιάκριτα μάτια με κρυπτογράφηση από άκρο σε άκρο και ένα σύνδεσμο που εξαφανίζεται όταν τελειώσετε.
 cfr-doorhanger-firefox-send-ok-button = Δοκιμή του { -send-brand-name }
     .accesskey = Δ
 
@@ -157,9 +192,54 @@ cfr-doorhanger-socialtracking-close-button = Κλείσιμο
     .accesskey = Κ
 cfr-doorhanger-socialtracking-dont-show-again = Να μην εμφανιστούν ξανά τέτοια μηνύματα
     .accesskey = Ν
+cfr-doorhanger-socialtracking-heading = Το { -brand-short-name } εμπόδισε την καταγραφή σας από ένα κοινωνικό δίκτυο
 cfr-doorhanger-socialtracking-description = Η ιδιωτηκότητα σας έχει σημασία. Το { -brand-short-name } αποκλείει πλέον τους συνηθισμένους ιχνηλάτες κοινωνικών δικτύων, περιορίζοντας πόσα δεδομένα συλλέγουν για το τι κάνετε στο διαδίκτυο.
+cfr-doorhanger-fingerprinters-heading = Το { -brand-short-name } απέκλεισε ένα fingerprinter σε αυτή τη σελίδα
+cfr-doorhanger-fingerprinters-description = Το απόρρητό σας έχει σημασία. Το { -brand-short-name } αποκλείει πλέον τα fingerprinters, τα οποία συλλέγουν προσωπικές πληροφορίες σχετικά με τη συσκευή σας για να σας παρακολουθούν.
+cfr-doorhanger-cryptominers-heading = Το { -brand-short-name } απέκλεισε ένα cryptominer σε αυτή τη σελίδα
+cfr-doorhanger-cryptominers-description = Το απόρρητό σας έχει σημασία. Το { -brand-short-name } αποκλείει πλέον τα cryptominers, τα οποία χρησιμοποιούν την υπολογιστική ισχύ του συστήματός σας για να εξορύξουν ψηφιακό χρήμα.
 
 ## Enhanced Tracking Protection Milestones
 
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+       *[other] Το { -brand-short-name } απέκλεισε πάνω από <b>{ $blockedCount }</b> ιχνηλάτες από τις { $date }!
+    }
 cfr-doorhanger-milestone-ok-button = Προβολή όλων
     .accesskey = Π
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = Δημιουργήστε εύκολα ασφαλείς κωδικούς πρόσβασης
+cfr-whatsnew-lockwise-body = Είναι δύσκολο να σκεφτεί κανείς μοναδικούς, ασφαλείς κωδικούς πρόσβασης για κάθε λογαριασμό. Κατά τη δημιουργία κωδικών πρόσβασης, επιλέξτε το πεδίο κωδικού πρόσβασης για να χρησιμοποιήσετε έναν ασφαλή κωδικό πρόσβασης που δημιουργείται από το { -brand-shorter-name }.
+cfr-whatsnew-lockwise-icon-alt = εικονίδιο { -lockwise-brand-short-name }
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = Λάβετε ειδοποιήσεις για ευάλωτους κωδικούς πρόσβασης
+cfr-whatsnew-passwords-body = Οι χάκερ γνωρίζουν ότι οι χρήστες χρησιμοποιούν τους ίδιους κωδικούς πρόσβασης. Αν χρησιμοποιείτε τον ίδιο κωδικό πρόσβασης σε πολλαπλές ιστοσελίδες και μια από αυτές παραβιαστεί, θα δείτε μια ειδοποίηση στο { -lockwise-brand-short-name } για να αλλάξετε τον κωδικό πρόσβασής σας σε αυτές τις ιστοσελίδες.
+cfr-whatsnew-passwords-icon-alt = Εικονίδιο ευάλωτου κωδικού πρόσβασης
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = Επέκταση εικόνας-εντός-εικόνας σε πλήρη οθόνη
+cfr-whatsnew-pip-fullscreen-body = Όταν προβάλλετε βίντεο σε αναδυόμενο παράθυρο, μπορείτε πλέον να κάνετε διπλό κλικ σε αυτό το παράθυρο για να μεταβείτε σε πλήρη οθόνη.
+cfr-whatsnew-pip-fullscreen-icon-alt = Εικονίδιο εικόνας-εντός-εικόνας
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Μέθοδοι προστασίες με μια ματιά
+cfr-whatsnew-protections-body = Ο πίνακας προστασίας περιλαμβάνει περιληπτικές αναφορές σχετικά με τις παραβιάσεις δεδομένων και τη διαχείριση κωδικών πρόσβασης. Μπορείτε πλέον να παρακολουθείτε πόσες διαρροές έχετε επιλύσει και να βλέπετε αν κάποιος από τους αποθηκευμένους κωδικούς πρόσβασής σας έχει εκτεθεί σε παραβίαση δεδομένων.
+cfr-whatsnew-protections-cta-link = Προβολή πίνακα προστασίας
+cfr-whatsnew-protections-icon-alt = Εικονίδιο ασπίδας
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Καλύτερη εμπειρία PDF
+cfr-whatsnew-better-pdf-body = Τα έγγραφα PDF πλέον ανοίγουν απευθείας στο { -brand-short-name } για ακόμα πιο βολική εργασία.

@@ -1,6 +1,7 @@
 <!-- This Source Code Form is subject to the terms of the Mozilla Public
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
 <!-- Attn: Localization - some of the menus in this dialog directly affect mail also. -->
 <!-- File menu items -->
 <!-- Edit menu items -->
@@ -75,6 +76,8 @@
 <!ENTITY incrementFontSize.key "&gt;">
 <!-- > is above this key on many keyboards -->
 <!ENTITY incrementFontSize.key2 "."> 
+
+<!-- > is above this key on many keyboards -->
 
 <!ENTITY fontSizeMenu.label "Grootte">
 <!ENTITY fontSizeMenu.accesskey "G">
@@ -289,6 +292,7 @@
 <!ENTITY findToolbarCmd.tooltip "Vind teks in bladsy">
 <!ENTITY spellToolbarCmd.label "Spel">
 <!ENTITY spellToolbarCmd.tooltip "Toets spelling van gemerkte teks of hele bladsy">
+
 <!ENTITY imageToolbarCmd.label "Prent">
 <!ENTITY imageToolbarCmd.tooltip "Voeg nuwe prent in of redigeer gemerkte prent se eienskappe">
 <!ENTITY hruleToolbarCmd.label "H.streep">
@@ -301,8 +305,8 @@
 <!ENTITY anchorToolbarCmd.tooltip "Voeg nuwe genoemde anker in of redigeer gemerkte anker se eienskappe">
 <!ENTITY TextColorButton.tooltip "Kies kleur vir teks">
 <!ENTITY BackgroundColorButton.tooltip "Kies kleur vir agtergrond">
-<!ENTITY throbber.tooltip "Gaan na &vendorShortName; se tuisblad">
 <!ENTITY HighlightColorButton.tooltip "Kies verligkleur vir teks">
+
 <!-- Editor toolbar -->
 <!ENTITY decreaseFontSizeToolbarCmd.tooltip "Kleiner lettertipe">
 <!ENTITY increaseFontSizeToolbarCmd.tooltip "Groter lettertipe">

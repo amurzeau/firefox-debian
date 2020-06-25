@@ -119,6 +119,11 @@ sandbox-sys-call-number = 系統呼叫
 sandbox-sys-call-args = 引數
 safe-mode-title = 試試安全模式
 restart-in-safe-mode-label = 重新啟動但停用附加元件…
+clear-startup-cache-title = 嘗試清除啟動快取
+clear-startup-cache-label = 清除啟動快取…
+startup-cache-dialog-title = 清除啟動快取
+startup-cache-dialog-body = 重新啟動 { -brand-short-name } 來清除啟動快取。將不會影響您的設定，或已安裝到 { -brand-short-name } 的擴充套件。
+restart-button-label = 重新啟動
 
 ## Media titles
 
@@ -126,6 +131,7 @@ audio-backend = 音效後端
 max-audio-channels = 最大頻道數
 channel-layout = 偏好頻道類型
 sample-rate = 偏好取樣率
+roundtrip-latency = 往返延遲（標準差）
 media-title = 媒體
 media-output-devices-title = 輸出裝置
 media-input-devices-title = 輸入裝置

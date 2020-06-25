@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Usar { $plugin-name } (en { -brand-short-name })
-applications-preview-inapp =
-    .label = Vista previa en { -brand-short-name }
 applications-open-inapp =
     .label = Abrir en { -brand-short-name }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Sitios frecuentes
 home-prefs-topsites-description = Los sitios que más visitas
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Recomendado por { $provider }
 home-prefs-recommended-by-description = El mejor contenido de toda la web, seleccionado para ti
+home-prefs-recommended-by-description-update = Contenido excepcional de toda la web, revisado por { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Cómo funciona
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Historias patrocinadas
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Mostrar sugerencias de búsqueda en ventanas privadas
 suggestions-addressbar-settings = Cambia las preferencias para las sugerencias del historial de navegación, marcadores y pestañas
+suggestions-addressbar-settings-generic = Cambia las preferencias para otras sugerencias de la barra de direcciones
 search-suggestions-cant-show = Las sugerencias de búsqueda no serán mostradas en la barra de direcciones porque configuraste { -brand-short-name } para que nunca recuerde el historial.
 search-one-click-header = Motores de búsqueda rápida
 search-one-click-desc = Elegir los motores de búsqueda alternativos que aparecen bajo la barra de direcciones y la barra de búsqueda cuando empiezas a escribir una palabra clave.
@@ -680,7 +683,7 @@ sync-currently-syncing-heading = Actualmente estás sincronizando estos elemento
 sync-currently-syncing-bookmarks = Marcadores
 sync-currently-syncing-history = Historial
 sync-currently-syncing-tabs = Pestañas abiertas
-sync-currently-syncing-logins-passwords = Conexiones y contraseñas
+sync-currently-syncing-logins-passwords = Credenciales y contraseñas
 sync-currently-syncing-addresses = Direcciones
 sync-currently-syncing-creditcards = Tarjetas de crédito
 sync-currently-syncing-addons = Complementos
@@ -713,12 +716,12 @@ sync-engine-tabs =
     .tooltiptext = Una lista de lo que está abierto en todos los dispositivos sincronizados
     .accesskey = t
 sync-engine-logins =
-    .label = Conexiones
+    .label = Credenciales
     .tooltiptext = Usuarios y contraseñas que has guardado
     .accesskey = L
 sync-engine-logins-passwords =
-    .label = Conexiones y contraseñas
-    .tooltiptext = Nombres de usuario y contraseñas que has guardado
+    .label = Credenciales y contraseñas
+    .tooltiptext = Usuarios y contraseñas que has guardado
     .accesskey = L
 sync-engine-addresses =
     .label = Direcciones
@@ -765,16 +768,16 @@ privacy-header = Privacidad del navegador
 
 ## Privacy Section - Forms
 
+logins-header = Credenciales y contraseñas
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Conexiones y contraseñas
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
-pane-privacy-logins-and-passwords-header = Conexiones y contraseñas
+pane-privacy-logins-and-passwords-header = Credenciales y contraseñas
     .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
-    .label = Preguntar para guardar conexiones y contraseñas para sitios web
+    .label = Preguntar para guardar credenciales y contraseñas para sitios web
     .accesskey = r
 forms-exceptions =
     .label = Excepciones…
@@ -788,10 +791,10 @@ forms-breach-alerts =
 forms-breach-alerts-learn-more-link = Aprender más
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
-    .label = Autocompletar conexiones y contraseñas
+    .label = Autocompletar credenciales y contraseñas
     .accesskey = i
 forms-saved-logins =
-    .label = Conexiones guardadas…
+    .label = Credenciales guardadas…
     .accesskey = L
 forms-master-pw-use =
     .label = Usar una contraseña maestra
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = Falló el cambio de contraseña
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verifica tu identidad para crear una contraseña maestra.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Para crear una contraseña maestra, ingresa tus credenciales de inicio de sesión de Windows. Esto ayuda a proteger la seguridad de tus cuentas.
 # This message can be seen by trying to add a Master Password.
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Gestionar permisos…
     .accesskey = P
+sitedata-cookies-exceptions =
+    .label = Gestionar excepciones…
+    .accesskey = x
 
 ## Privacy Section - Address Bar
 
@@ -916,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Pestañas abiertas
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = Sitios frecuentes
+    .accesskey = T
 addressbar-suggestions-settings = Cambia las preferencias para las sugerencias de los motores de búsqueda
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Creadores de huellas (Fingerprinters)
 content-blocking-warning-title = ¡Atención!
 content-blocking-warning-description = Bloquear el contenido puede hacer que algunos sitios dejen de funcionar. Es fácil desactivar el bloqueo para los sitios de confianza.
 content-blocking-learn-how = Aprender cómo
-content-blocking-etp-warning-description = Bloquear los rastreadores puede impactar en la funcionalidad de algunos sitios. Recarga una página con rastreadores para cargar todo el contenido.
 content-blocking-and-isolating-etp-warning-description = Bloquear los rastreadores y aislar las cookies puede impactar en la funcionalidad de algunos sitios. Recarga una página con rastreadores para cargar todo el contenido.
 content-blocking-warning-learn-how = Aprender cómo
 content-blocking-reload-description = Tendrás que recargar tus pestañas para aplicar estos cambios.

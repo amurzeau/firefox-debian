@@ -37,10 +37,14 @@ etp-card-title = Utzirisan Chajinem chuwäch Ojqanem
 etp-card-content = Ri ojqanela' yatkojqaj pa k'amab'ey richin nikimöl ri awetamab'al chi rij ri ye'ab'än chuqa' ri niqa chawäch nakanoj. { -brand-short-name } ke'aq'ata' k'ïy chi ke ri taq ojqanela' ri' chuqa' ch'aqa' chik tz'ilanel taq skrip.
 protection-report-webpage-title = Rupas taq Chajinïk
 protection-report-page-content-title = Rupas taq Chajinïk
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } nitikïr nuchajij ri awichinaem toq atokinäq pa k'amaya'l. Rere' jun ichinan ch'uti kitzijol ri taq chajinïk, achi'el chuqa' ri taq samajib'äl richin nichap ri jikomal pa k'amab'ey.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } nuchajij ri awichinaem toq atokinäq pa k'amaya'l. Rere' jun ichinan ch'uti kitzijol ri taq chajinïk, achi'el chuqa' ri taq samajib'äl richin nichap ri jikomal pa k'amab'ey.
+protection-report-settings-link = Tanuk'samajij runuk'ulem awichinanem chuqa' ajikomal
 etp-card-title-always = Utzirisan Chajinïk chuwäch Ojqanem: Jutaqil Tzijïl
 etp-card-title-custom-not-blocking = Utzirisan Chajinïk chuwäch Ojqanem: CHUPÜL
-etp-card-content-summary = Toq man etaman ta kiwa taq ajk'ayij nikitojtob'ej yatkoqaj pan ewäl pan ajk'amaya'l, { -brand-short-name } pa ruyonil yeruq'ät k'ïy chi ke ri'.
+etp-card-content-description = { -brand-short-name } ruyonil yeruq'ät ri ajk'ayij moloj yatkojqaj pan ewäl pan ajk'amaya'l.
 protection-report-etp-card-content-custom-not-blocking = Echupun ronojel ri taq chajinïk wakami. Ke'acha' ri taq ojqanela' yeq'at rik'in nanuk'samajij kinuk'ulem taq ruchajinik { -brand-short-name }.
 protection-report-manage-protections = Tinuk'samajïx Runuk'ulem
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -58,8 +62,6 @@ fingerprinter-tab-title = B'anöy ruwi' q'ab'aj
 fingerprinter-tab-content = Ri b'anöy ruwi' q'ab'aj nikimöl taq runuk'ulem awokik'amaya'l chuqa' akematz'ib' richin nikitz'ük jun ruwäch ab'i'. Toq nikokisaj re retal ruwi' q'ab'aj, yetikïr yatkitzeqelib'ej pa jalajoj taq ajk'amaya'l ruxaq. <a data-l10n-name="learn-more-link">Tetamäx ch'aqa' chik</a>
 cryptominer-tab-title = Cryptominers
 cryptominer-tab-content = Ri ajkriptom nikokisaj ruchuq'a' ruq'inoj akematz'ib' richin rub'anik kematz'ib'il pwäq. Ri taq skrip ye'okisäx chi kipam, nikokisaj ri awateriya', eqal nikib'än chi re ri akematz'ib' chuqa' nikijotob'a' rajil ruwujil asaqil. <a data-l10n-name="learn-more-link">Tetamäx ch'aqa' chik</a>
-protections-close-button =
-    .aria-label = Titz'apïx
 protections-close-button2 =
     .aria-label = Titz'apïx
     .title = Titz'apïx
@@ -120,6 +122,8 @@ monitor-link = Achike rub'eyal nisamäj
 monitor-header-content-no-account = Tanik'oj { -monitor-brand-name } richin natz'ët we xatz'iläx pa jun tz'ilanem tzij etaman ruwäch chuqa' tak'ulu' rutzijol k'ayewal chi kij k'ak'a' taq tz'ilanem.
 monitor-header-content-signed-in = { -monitor-brand-name } nuya' rutzijol chawe toq ri awetamab'al k'o pa jun rutz'ilanem tzij etaman ruwäch.
 monitor-sign-up = Tatz'ib'aj awi' richin Ye'ak'ül Kitzijol K'ayewal
+monitor-sign-up-link = Tatz'ib'aj awi' richin Ye'ak'ül Kitzijol K'ayewal
+    .title = Tatz'ib'aj awi' richin Ye'ak'ül Kitzijol K'ayewal pa { -monitor-brand-name }
 auto-scan = Ruyonil nitz'ajwachib'ëx wakami
 monitor-emails-tooltip =
     .title = Ketz'et ri kochochib'al taqoya'al xetz'ët pa { -monitor-brand-short-name }
@@ -144,6 +148,14 @@ info-known-breaches-found =
        *[other] Taq tz'ilanem tzij etaman kiwäch, xkik'üt ri awetamab'al.
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] Rutz'ilanem tzij etaman ruwa ya'on retal chi xsol yan ruwäch
+       *[other] Kitz'ilanem taq tzij etaman kiwa ya'on ketal chi xsol yan kiwäch
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -160,6 +172,41 @@ password-warning =
         [one] Tikirib'äl molojri'ïl tikirel k'utun pa tz'ilanem taq tzij. Tijal re ewan tzij richin ajikomal pa k'amab'ey. <a data-l10n-name="lockwise-link">Ketz'et tikirib'äl taq molojri'ïl</a>
        *[other] Tikirib'äl taq molojri'ïl tikirel ek'utun pa tz'ilanem taq tzij. Kejal re ewan taq tzij richin ajikomal pa k'amab'ey. <a data-l10n-name="lockwise-link"> Ketz'et tikirib'äl taq molojri'ïl eyakon</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] Ewan tzij k'utun pa taq tz'ilanem ri man solon ta
+       *[other] Ewan taq tzij ek'utun pa taq tz'ilanem ri man esolon ta
+    }
+monitor-no-breaches-title = ¡Jeb'ël rutzijol!
+monitor-no-breaches-description = Majun atz'ilanem etaman ruwa. We nujäl riri', xtiqaya' rutzijol chawe.
+monitor-view-report-link = Titz'et Rutzijol
+    .title = Tisol tz'ilanem pa { -monitor-brand-short-name }
+monitor-breaches-unresolved-title = Kesol ri taq tz'ilanem
+monitor-breaches-unresolved-description = Chi rij ninik'öx rucholajil ri tz'ilanem chuqa' noqäx rub'eyal richin nichajïx ri awetamab'al, yatikïr naya' kan retal achi'el chi xsol.
+monitor-manage-breaches-link = Kenuk'samajïx taq tz'ilanem
+    .title = Kenuk'samajïx taq tz'ilanem pa { -monitor-brand-short-name }
+monitor-breaches-resolved-title = ¡Yalan ütz! Xe'asöl ronojel ri taq tz'ilanem etaman kiwa.
+monitor-breaches-resolved-description = We ri ataqoya'l xtiwachin pa xab'achike k'ak'a' tz'ilanem, xtiqaya' rutzijol chawe.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+        [one] { $numBreachesResolved } richin { $numBreaches } tz'ilanem ya'on retal achi'el solon
+       *[other] { $numBreachesResolved } richin { $numBreaches } taq tz'ilanem ya'on ketal achi'el esolon
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved } % tz'aqatisan
+monitor-partial-breaches-motivation-title-start = ¡Xatikirisaj ütz!
+monitor-partial-breaches-motivation-title-middle = ¡Ke ri' tab'ana'!
+monitor-partial-breaches-motivation-title-end = ¡Nik'is yan! Ke ri' tab'ana'.
+monitor-partial-breaches-motivation-description = Ke'asolo' ri ch'aqa' chik taq tz'ilanem pa { -monitor-brand-short-name }
+monitor-resolve-breaches-link = Kesol taq Tz'ilanem
+    .title = Kesol taq Tz'ilanem pa { -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

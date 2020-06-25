@@ -8,6 +8,9 @@
 appmenuitem-protection-report-title = Προστασία απορρήτου
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Μεταβείτε στην αναφορά απορρήτου σας
+appmenuitem-protection-dashboard-title = Πίνακας προστασίας
+appmenuitem-customize-mode =
+    .label = Προσαρμογή…
 
 ## Zoom Controls
 
@@ -20,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = Συγχρονισμός τώρα
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Τι νέο υπάρχει
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = Ειδοποίηση για νέες λειτουργίες
+    .accesskey = λ

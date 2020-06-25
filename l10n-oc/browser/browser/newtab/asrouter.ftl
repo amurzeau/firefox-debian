@@ -125,10 +125,6 @@ cfr-whatsnew-lockwise-take-link-text = Obténer l’aplicacion
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Escrivètz mens, trobatz mai amb la barra d’adreça
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Accedissètz als sites qu'utilisatz mai en un sol clic dins la barra d'adreça. Trobatz las causas mai rapidament amb los resultats de { $searchEngineName } e vòstre istoric de navigacion.
-cfr-whatsnew-searchbar-body-generic = Accedissètz als sites qu'utilisatz mai en un sol clic dins la barra d'adreça. Trobatz las causas mai rapidament amb los resultats de recerca de vòstre istoric de navigacion.
 cfr-whatsnew-searchbar-body-topsites = Ara, seleccionatz simplament la barra d'adreça, e una bóstia s'agrandirà amb de ligams cap a vòstres melhors sites.
 cfr-whatsnew-searchbar-icon-alt-text = Icòna de la lópia
 
@@ -236,3 +232,15 @@ cfr-whatsnew-passwords-icon-alt = icòna d’una clau pas fisabla
 cfr-whatsnew-pip-fullscreen-header = Passar la vidèo incrustada en plen ecran
 cfr-whatsnew-pip-fullscreen-body = Quand plaçatz una vidèo dins una fenèstra bandejanta, podètz ara doble-clicar dessús per la passar en plen ecran.
 cfr-whatsnew-pip-fullscreen-icon-alt = icòna vidèos incrustada
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Proteccion en una ulhada
+cfr-whatsnew-protections-body = La teula de bòrd de las proteccions conten los rapòrts resumits tocant las divulgacions de donadas e la gestion dels senhals. D’ara endavant seguir lo nombre de divulgacions qu’avètz resolgudas e veire s’un de vòstres senhals salvats pòt aver èsser exposat a una pèrd de donadas.
+cfr-whatsnew-protections-cta-link = Veire la taula de bòrd de las proteccions
+cfr-whatsnew-protections-icon-alt = Icòna d’escut
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Melhora experiéncia PDF
+cfr-whatsnew-better-pdf-body = Los documents se dobrisson ara dirèctament dins { -brand-short-name }, per contunhar vòstre trabalh fòra distraccion.

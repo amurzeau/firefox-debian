@@ -232,3 +232,15 @@ cfr-whatsnew-passwords-icon-alt = დაუცველი პაროლის
 cfr-whatsnew-pip-fullscreen-header = გაშალეთ ეკრანი-ეკრანში სრულ ეკრანზე
 cfr-whatsnew-pip-fullscreen-body = როცა ვიდეო ამოხტება ცალკე ფანჯარაში, მასზე ორჯერ დაწკაპებით შეძლებთ მთელ ეკრანზე გაშალოთ.
 cfr-whatsnew-pip-fullscreen-icon-alt = ეკრანი-ეკრანში ხატულა
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = დაცვისთვის თვალის შევლება
+cfr-whatsnew-protections-body = დაცვის მაჩვენებლების გვერდი შეიცავს შემაჯამებელ ცნობებს ანგარიშების მიტაცებებსა და პაროლების მართვაზე. შეგიძლიათ თვალი ადევნოთ, რამდენი გაქვთ გამოსწორებული და იხილოთ, თქვენი რომელიმე პაროლი გამჟღავნებულ მონაცემებში ხომ არ აღმოჩენილა.
+cfr-whatsnew-protections-cta-link = დაცვის მაჩვენებლების ნახვა
+cfr-whatsnew-protections-icon-alt = ფარის ნიშანი
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = PDF-თან მოხერხებული მუშაობა
+cfr-whatsnew-better-pdf-body = PDF-დოკუმენტებს ახლა უკვე პირდაპირ გახსნის { -brand-short-name }, საჭირო მასალები კიდევ უფრო ახლოს გექნებათ.

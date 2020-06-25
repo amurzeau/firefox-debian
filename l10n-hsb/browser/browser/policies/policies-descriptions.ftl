@@ -63,6 +63,7 @@ policy-ExtensionSettings = Wšě aspekty instalacije rozšěrjenjow rjadować.
 policy-ExtensionUpdate = Awtomatiske aktualizacije rozšěrjenjow zmóžnić abo znjemóžnić.
 policy-FirefoxHome = Firefox Home konfigurować.
 policy-FlashPlugin = Wužiwanje tykača Flash dowolić abo zakazać.
+policy-Handlers = Standardne nałoženske předźěłaki konfigurować
 policy-HardwareAcceleration = Jeli njewěrno, hardwarowe pospěšenje znjemóžnić.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Startowu stronu nastajić a na přeće zawrěć.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Zestarjene zadźeržen
 ##
 
 policy-LocalFileLinks = Wěstym websydłam dowolić, na lokalne dataje wotkazać.
+policy-MasterPassword = Hłowne hesło požadać abo jeho wužiwanju zadźěwać
 policy-NetworkPrediction = Syćowe předzačitanje (DNS-předzačitanje) zmóžnić abo znjemóžnić.
 policy-NewTabPage = Stronu noweho rajtarka zmóžnić abo znjemóžnić.
 policy-NoDefaultBookmarks = Wutworjenje standardnych zapołožkow { -brand-short-name } znjemóžnić, a inteligentnych zapołožkow (najhusćišo wopytane, tuchwilne znački). Kedźbu: Tute prawidło so jenož wuskutkuje, hdyž jo před prěnim startom profila wužiwaće.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Składowanje hesłow do zrjadowaka hesłow zmó�
 # PDF.js and PDF should not be translated
 policy-PDFjs = PDF.js znjemóžnić abo konfigurować, zatwarjeny PDF-wobhladowak w { -brand-short-name }.
 policy-Permissions2 = Prawa za kameru, mikrofon, adresu, zdźělenki a awtomatiske wothraće konfigurować.
+policy-PictureInPicture = Wobraz-we-wobrazu zmóžnić abo znjemóžnić.
 policy-PopupBlocking = Wěstym websydłam dowolić, wuskakowace wokna po standardźe pokazać.
 policy-Preferences = Hódnotu za podsadźbu nastajenjow stajić a zawrěć
 policy-PromptForDownloadLocation = Prašeć so, hdźež maja so dataje při sćehnjenju składować.

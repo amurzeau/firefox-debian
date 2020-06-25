@@ -85,7 +85,7 @@ newtab-menu-archive-pocket = { -pocket-brand-name }లో ఆర్కయివ�
 
 newtab-privacy-modal-button-done = పూర్తయింది
 
-
+##
 
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = ఇష్టాంశాన్ని తొలగించు
@@ -156,13 +156,14 @@ newtab-empty-section-topstories = మీరు పట్టుబడ్డార
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
 newtab-discovery-empty-section-topstories-try-again-button = మళ్ళీ ప్రయత్నించు
+newtab-discovery-empty-section-topstories-loading = వస్తోంది…
 
 ## Pocket Content Section.
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = ప్రముఖ అంశాలు:
 newtab-pocket-more-recommendations = మరిన్ని సిఫారసులు
-newtab-pocket-how-it-works = ఇది ఎలా పనిచేస్తుంది
+newtab-pocket-learn-more = ఇంకా తెలుసుకోండి
 newtab-pocket-cta-button = { -pocket-brand-name } పొందండి
 
 ## Error Fallback Content.

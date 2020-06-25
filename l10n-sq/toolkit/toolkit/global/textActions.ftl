@@ -32,6 +32,6 @@ text-action-delete =
     .accesskey = F
 text-action-select-all =
     .label = Përzgjidhe Krejt
-    .accesskey = P
+    .accesskey = e
 text-action-select-all-shortcut =
     .key = A

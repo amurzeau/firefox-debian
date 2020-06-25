@@ -4,6 +4,13 @@
 
 all-tabs-menu-undo-close-tab =
     .label = Restaurar il tab serrà
+all-tabs-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Restaurar tabs serrads
+            [one] Restaurar il tab serrà
+           *[other] Restaurar ils tabs serrads
+        }
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = Tschertgar en ils tabs

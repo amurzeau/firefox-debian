@@ -13,9 +13,9 @@ cfr-doorhanger-pintab-heading = Eipuru kóva: Emboja tendayke
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Mba’ére ahechahína kóva
-cfr-doorhanger-extension-cancel-button = Ko'ág̃a nahániri
+cfr-doorhanger-extension-cancel-button = Ko’ág̃a nahániri
     .accesskey = N
-cfr-doorhanger-extension-ok-button = Embojuaju ko'ág̃a
+cfr-doorhanger-extension-ok-button = Embojuaju ko’ág̃a
     .accesskey = A
 cfr-doorhanger-pintab-ok-button = Emboja ko tendayke
     .accesskey = P
@@ -30,15 +30,15 @@ cfr-doorhanger-extension-learn-more-link = Kuaave
 cfr-doorhanger-extension-author = Hese { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
-cfr-doorhanger-extension-notification = Je'ete
-cfr-doorhanger-extension-notification2 = Je'eporã
-    .tooltiptext = Jepysokue je'eporã
-    .a11y-announcement = Jepysokue je'eporã eipurukuaáva
+cfr-doorhanger-extension-notification = Je’ete
+cfr-doorhanger-extension-notification2 = Je’eporã
+    .tooltiptext = Jepysokue je’eporã
+    .a11y-announcement = Jepysokue je’eporã eipurukuaáva
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
-cfr-doorhanger-feature-notification = Je'eporã
-    .tooltiptext = Peteĩchagua je'eporã
-    .a11y-announcement = Peteĩchagua je'eporã eipurukuaáva
+cfr-doorhanger-feature-notification = Je’eporã
+    .tooltiptext = Peteĩchagua je’eporã
+    .a11y-announcement = Peteĩchagua je’eporã eipurukuaáva
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -67,7 +67,7 @@ cfr-doorhanger-pintab-step1 = <b>Eikutu akatúa gotyo</b> pe tendayke emombytas�
 cfr-doorhanger-pintab-step2 = Eiporavo <b>Emboja tendayke</b> poravorãme.
 cfr-doorhanger-pintab-step3 = Pe tenda oguerekóramo ñembohekopyahu, ehecháta peteĩ kyta hovy tendayke mbojapyrépe.
 cfr-doorhanger-pintab-animation-pause = Mbopyta
-cfr-doorhanger-pintab-animation-resume = Eku'ejey
+cfr-doorhanger-pintab-animation-resume = Eku’ejey
 
 ## Firefox Accounts Message
 
@@ -90,9 +90,9 @@ cfr-protections-panel-link-text = Eikuaave
 # the notification icon
 cfr-badge-reader-label-newfeature = Peteĩchagua pyahu:
 cfr-whatsnew-button =
-    .label = Oĩpa mba'e pyahu
-    .tooltiptext = Oĩpa mba'e pyahu
-cfr-whatsnew-panel-header = Oĩpa mba'e pyahu
+    .label = Oĩpa mba’e pyahu
+    .tooltiptext = Oĩpa mba’e pyahu
+cfr-whatsnew-panel-header = Oĩpa mba’e pyahu
 cfr-whatsnew-release-notes-link-text = Emoñe’ẽ jehaipy rehegua
 cfr-whatsnew-fx70-title = { -brand-short-name } oñorairõve ne ñemigua rehe
 cfr-whatsnew-fx70-body = Ñembohekopyahu omo’ã porãve jehapykuehópe ha ikatu emoheñói ñe’ẽñemi hekorosãva peteĩteĩva tendápe g̃uarã.
@@ -116,15 +116,11 @@ cfr-whatsnew-lockwise-backup-body = Ko’ág̃a ikatúma ejapo ñe’ẽñemi he
 cfr-whatsnew-lockwise-backup-link-text = Emyandy ñongatujo’a
 cfr-whatsnew-lockwise-take-title = Egueraha ne ñe’ẽñemi nendive
 cfr-whatsnew-lockwise-take-body = Pe tembipuru’i oku’éva { -lockwise-brand-short-name } omoneĩ eikévo tekorosãme nde ñe’ẽñemi ñongatupyrépe oimeraẽva tenda guive.
-cfr-whatsnew-lockwise-take-link-text = Eguereko tembipuru'i
+cfr-whatsnew-lockwise-take-link-text = Eguereko tembipuru’i
 
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Ehai sa’ive, ejuhuve kundaharape renda ndive
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Eike umi tenda eipuruvévape eikutúvo kundahára renda. Ejuhu pya’eve eipotáva { $searchEngineName } ndive ha nde kundahára rembiasakue.
-cfr-whatsnew-searchbar-body-generic = Eike umi tenda eipuruvévape eikutúvo kundahára renda. Ejuhu pya’eve kuaapyre ndive ha nde kundahára rembiasakue.
 cfr-whatsnew-searchbar-body-topsites = Ko’ág̃a, eiporavo kundaharape renda ha okakuaáta kora juajuha ndive ne renda eipuruvévape.
 cfr-whatsnew-searchbar-icon-alt-text = Mbotuichaha ra’ãnga’i
 
@@ -231,3 +227,15 @@ cfr-whatsnew-passwords-icon-alt = Ñe’ẽñemi mba’eñemi ivaikuaáva ra’�
 cfr-whatsnew-pip-fullscreen-header = Ejapyhy peteĩva ta’ãnga mba’erechaha tuichaháicha
 cfr-whatsnew-pip-fullscreen-body = Osẽvo ta’ãngamýi ovetã ho’ytávape, ág̃a ikatu eikutujo’a ovetãme ehasa hag̃ua mba’erechaha tuichávape.
 cfr-whatsnew-pip-fullscreen-icon-alt = Peteĩva ta’ãnga ra’ãnga’i
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Ñemo’ã ma’ẽ rehegua
+cfr-whatsnew-protections-body = Pe ñemo’ã ra’ãngarupa omoinge marandu mbykymíva mba’ekuaarã ñembyai reheguápe ha ñe’ẽñemi ñangarekóre. Ko’ág̃a ikatu ehapykueho mboy ñembyaípa emoĩporã ha ehecha ñe’ẽñemi ñongatupyre ikatupara’e ombyai mba’ekuaarãme.
+cfr-whatsnew-protections-cta-link = Ehecha ñe’ẽñemi ra’ãngarupa
+cfr-whatsnew-protections-icon-alt = Jokoha ra’ãngachu’i
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Tembiapo porãve PDF-pe
+cfr-whatsnew-better-pdf-body = Kuatiakuéra PDF ko’ág̃a ijurujáma { -brand-short-name }-pe, péicha oreko hembiapo opavave ohupyty hag̃uáicha.

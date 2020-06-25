@@ -2,6 +2,52 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (Tunigin Tusligt)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (Tunigin Tusligt)
+
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (Tunigin Tusligt)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (Tunigin Tusligt)
+
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = Sken talɣut n usmel
 
@@ -92,10 +138,12 @@ urlbar-midi-blocked =
     .tooltiptext = Tesweḥleḍ anekcum i MIDI γer usmel-agi.
 urlbar-install-blocked =
     .tooltiptext = Tesweḥleḍ asbeddi n yizegrar i usmel-a.
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Ẓreg tacreḍṭ-a n usebter ({ $shortcut })
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -126,12 +174,14 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Tikkelt-agi, nadi s:
+
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Iɣewwaren n unadi
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Beddel iɣewwaren n unadi
+
 search-one-offs-context-open-new-tab =
     .label = Nadi deg yiccer amaynut
     .accesskey = c
@@ -147,8 +197,10 @@ search-one-offs-context-set-as-default-private =
 bookmark-panel-show-editor-checkbox =
     .label = Sken amaẓrag deg usekles
     .accesskey = k
+
 bookmark-panel-done-button =
     .label = Immed
+
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -223,9 +275,30 @@ popup-select-microphone =
     .accesskey = S
 popup-all-windows-shared = Akk isfuyla ibanen deg ugdil-ik ad ttwabḍun.
 
+popup-screen-sharing-not-now =
+    .label = Mačči tura
+    .accesskey = w
+
+popup-screen-sharing-never =
+    .label = Ur sirig ara
+    .accesskey = N
+
+popup-silence-notifications-checkbox = Kkes ilɣa n { -brand-short-name } di lawan n beṭṭu
+popup-silence-notifications-checkbox-warning = { -brand-short-name } ur yeskanay ara ilɣa mi ara tbeṭṭuḍ.
+
+## WebRTC window or screen share tab switch warning
+
+sharing-warning-window = Tbeṭṭuḍ { -brand-short-name }. Imdanen-nniḍen zemren ad walin mi ara tedduḍ ɣer yiccer amaynut.
+sharing-warning-screen = Tbeṭṭuḍ akk agdil-inek . Imdanen-nniḍen zemren ad walin mi ara tedduḍ ɣer yiccer amaynut.
+sharing-warning-proceed-to-tab =
+    .label = Ɛeddi ɣeryiccer
+sharing-warning-disable-for-session =
+    .label = Kkes beṭṭu n urmad n ummesten n tɣimit-a
+
 ## DevTools F12 popup
 
 enable-devtools-popup-description = Akken ad tesqedceḍ anegzum F12, ldi qbel DevTools s wumuɣ web n uneflay.
+
 
 ## URL Bar
 
@@ -239,10 +312,12 @@ urlbar-permissions-granted =
     .tooltiptext = Ɣur-k tisirag-nniḍen akken ad tkecmeḍ ɣeṛ usmel-a web.
 urlbar-switch-to-tab =
     .value = Ddu ɣer yiccer:
+
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Asiɣzef:
-urlbar-go-end-cap =
+
+urlbar-go-button =
     .tooltiptext = Ddu ɣer usebter n ufeggag n tansa
 urlbar-page-action-button =
     .tooltiptext = Asebter n tigawin

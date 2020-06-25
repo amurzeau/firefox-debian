@@ -63,6 +63,7 @@ policy-ExtensionSettings = Kenuk'samajiïx ronojel ri taq rub'anikil kiyakik taq
 policy-ExtensionUpdate = Ketzij o kechup ri ruyonil kik'exoj taq k'amal.
 policy-FirefoxHome = Tib'an runuk'ulem Rutikirib'al Firefox.
 policy-FlashPlugin = Niya' q'ij o man niya' ta q'ij nokisäx ri Flash nak'ab'äl.
+policy-Handlers = Tinuk'samajïx rajchajinela' chokoy k'o wi.
 policy-HardwareAcceleration = We man qitzij ta, tichup ranin ch'akulkem.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Tiya' chuqa' ütz niq'at ri tikirib'äl ruxaq.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Titzolin rik'in ri rub
 ##
 
 policy-LocalFileLinks = Tiya' q'ij chi ri ajk'amaya'l ruxaq tikixima' ki' kik'in ri aj wawe' taq yakb'äl.
+policy-MasterPassword = Tik'utüx o man tokisäx jun ajtij ewan tzij.
 policy-NetworkPrediction = Titzij o tichup ri nutz'et k'amab'ey (DNS nab'ey rukanoxik).
 policy-NewTabPage = Titzij o tichup ri ruxaq K'ak'a' Ruwi'.
 policy-NoDefaultBookmarks = Kechup ri kitz'ukik taq yaketal e k'o wi etz'aqatisan rik'in { -brand-short-name }, chuqa' ri na'owinäq taq yaketal (Yalan Etz'eton, K'a ri' Ketz'et taq Yaketal). Ch'utitzijol: ütz re na'ojil re' we nokisäx pa ri nab'ey rusamajixik ruwäch b'i'aj.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Titzij keyak ewan taq tzij pa ri kinuk'samajixik
 # PDF.js and PDF should not be translated
 policy-PDFjs = Tichup o tib'an runuk'ulem PDF.js, ri tz'etöy PDF pa { -brand-short-name }.
 policy-Permissions2 = Tib'an kinuk'ulem ya'oj taq q'ij kichin elesäy wachib'äl, q'asäy ch'ab'äl, k'ojlib'äl, taq rutzijol chuqa' ruyonil nitzij.
+policy-PictureInPicture = Titzij o tichup Picture-in-Picture.
 policy-PopupBlocking = Tiya' q'ij chi jujun taq ajk'amaya'l ruxaq kekik'utu' elenel taq tzuwäch achi'el e k'o wi.
 policy-Preferences = Tajikib'a' chuqa' taq'ata' ri rejqalem jun rachmolaj ajowanïk.
 policy-PromptForDownloadLocation = Tik'utüx akuchi' yeyak ri taq yakb'äl toq yeqasäx.

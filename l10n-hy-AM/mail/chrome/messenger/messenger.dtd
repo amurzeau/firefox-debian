@@ -32,7 +32,7 @@
 <!ENTITY newExistingEmailAccountCmd.accesskey "Ա">
 <!ENTITY newIMAccountCmd.label "Զրույցի հաշիվ...">
 <!ENTITY newIMAccountCmd.accesskey "Զ">
-<!ENTITY newFeedAccountCmd.label "Շղթայի հաշիվը…">
+<!ENTITY newFeedAccountCmd.label "Սնման հաշիվ…">
 <!ENTITY newFeedAccountCmd.accesskey "ա">
 <!ENTITY newIMContactCmd.label "Զրուցել կոնտակտի հետ...">
 <!ENTITY newIMContactCmd.accesskey "h">
@@ -289,6 +289,8 @@
 <!ENTITY searchMailCmd.label "Նամակների որոնում...">
 <!ENTITY searchMailCmd.accesskey "ո">
 <!ENTITY searchMailCmd.key "Փ">
+<!ENTITY glodaSearchCmd.label "Ընդհանրական որոնում…">
+<!ENTITY glodaSearchCmd.accesskey "G">
 <!ENTITY searchAddressesCmd.label "Հասցեների որոնում...">
 <!ENTITY searchAddressesCmd.accesskey "Հ">
 
@@ -446,7 +448,7 @@
 <!ENTITY openInConversationCmd.key "o">
 <!ENTITY openAttachmentListCmd.label "Կցորդներ">
 <!ENTITY openAttachmentListCmd.accesskey "h">
-<!ENTITY openFeedMessage1.label "When Opening Feed Messages">
+<!ENTITY openFeedMessage1.label "Սնման հաղորդագրություն բացելիս">
 <!ENTITY openFeedMessage1.accesskey "O">
 <!ENTITY openFeedWebPage.label "Բացել որպես վեբ էջ">
 <!ENTITY openFeedWebPage.accesskey "W">
@@ -470,7 +472,7 @@
 <!ENTITY addons.accesskey "A">
 <!ENTITY addonPrefs.label "Լրացուցիչ ընտրանքներ">
 <!ENTITY addonPrefs.accesskey "O">
-<!ENTITY addonPrefsUnix.label "Լրացուցիչ նախաընտրություններ">
+<!ENTITY addonPrefsUnix.label "Հավելումների նախապատվություններ">
 <!ENTITY addonPrefsUnix.accesskey "P">
 <!ENTITY addonNoPrefs.label "Լրացուցիչ կարգավորումներ չեն գտնվել:">
 <!ENTITY activitymanager.label "Ակտիվության կառավարիչ">
@@ -618,7 +620,7 @@
 <!ENTITY remoteContentOptionsAllowForMsg.accesskey "Ց">
 <!ENTITY editRemoteContentSettings.label "Խմբագրել հեռակա բովանդակության ընտրանքները...">
 <!ENTITY editRemoteContentSettings.accesskey "Խ">
-<!ENTITY editRemoteContentSettingsUnix.label "Խմբագրել հեռակա բվանդակության կարգավորումները...">
+<!ENTITY editRemoteContentSettingsUnix.label "Խմբագրել հեռակա բվանդակության նախապատվությունները...">
 <!ENTITY editRemoteContentSettingsUnix.accesskey "Խ">
 
 <!-- Phishing Button Popup -->
@@ -626,7 +628,7 @@
 <!ENTITY phishingOptionIgnore.accesskey "ե">
 <!ENTITY phishingOptionSettings.label "Խմբագրել խաբեբայության որոշման ընտրանքները...">
 <!ENTITY phishingOptionSettings.accesskey "բ">
-<!ENTITY phishingOptionSettingsUnix.label "Խմբագրել խաբեբայության որոշման կարգավորումները...">
+<!ENTITY phishingOptionSettingsUnix.label "Խմբագրել խաբեբայության որոշման նախապատվությունները...">
 <!ENTITY phishingOptionSettingsUnix.accesskey "բ">
 
 <!-- AppMenu Popup -->
@@ -756,6 +758,7 @@
 <!ENTITY idColumn2.tooltip "Տեսակավորել ըստ՝ ստանալու կարգի">
 <!ENTITY attachmentColumn2.tooltip "Տեսակավորել ըստ՝ կցորդների">
 
+<!ENTITY deleteColumn.tooltip "Ջնջել նամակը">
 
 <!-- Thread Pane Context Menu -->
 <!ENTITY contextNewMsgFromTemplate.label "Նոր հաղորդագրություն՝ ձևանմուշից">
@@ -960,7 +963,7 @@
 <!ENTITY zoomWindow.label "Չափը">
 
 <!-- Mac OS X Application Menu (Cocoa widgets) -->
-<!ENTITY preferencesCmdMac2.label       "Կարգավորումներ">
+<!ENTITY preferencesCmdMac2.label       "Նախապատվությունները">
 <!ENTITY preferencesCmdMac.commandkey   ",">
 <!ENTITY preferencesCmdMac.modifiers    "accel">
 <!ENTITY servicesMenuMac.label          "Ծառայություններ">

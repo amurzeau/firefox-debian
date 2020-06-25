@@ -58,6 +58,8 @@ protections-panel-not-found-label = Ur ittwaf ara
 
 protections-panel-settings-label = Iɣewwaṛen n tɣellist
 protections-panel-showreport-label = Sken aneqqis
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Ammesten n tfelwit n usenqed
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

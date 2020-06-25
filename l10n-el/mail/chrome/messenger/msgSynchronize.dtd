@@ -4,6 +4,8 @@
 
 <!-- extracted from MsgSynchronize.xul and msgSelectOfflineFolders.xul-->
 
+<!-- extracted from MsgSynchronize.xhtml and msgSelectOfflineFolders.xhtml-->
+
 <!ENTITY MsgSynchronize.label "Λήψη και συγχρονισμός μηνυμάτων">
 <!ENTITY MsgSelect.label "Στοιχεία για χρήση εκτός σύνδεσης">
 <!ENTITY MsgSyncDesc.label "Αν έχετε ήδη επιλέξει φακέλους αλληλογραφίας και συζητήσεων για εργασία χωρίς σύνδεση, μπορείτε να κάνετε λήψη ή και να τους συγχρονίσετε τώρα.Αλλιώς χρησιμοποιήστε το κουμπί &quot;Επιλογή&quot; για να επιλέξετε φακέλους. ">
@@ -20,4 +22,4 @@
 <!ENTITY selectButton.accesskey "λ">
 <!ENTITY MsgSelectDesc.label "Επιλέξτε τους φακέλους αλληλογραφίας και συζητήσεων που θέλετε να χρησιμοποιείτε εκτός σύνδεσης.">
 <!ENTITY MsgSelectInd.label "Λήψη">
-<!ENTITY MsgSelectItems.label "Φάκελοι και ομάδες συζητήσεων">
+<!ENTITY MsgSelectItems.label "Φάκελοι και ομάδες ειδήσεων">

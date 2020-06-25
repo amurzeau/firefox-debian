@@ -3,7 +3,13 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 all-tabs-menu-undo-close-tab =
-    .label = 닫은 탭 다시 열기
+    .label = 탭 닫기 취소
+all-tabs-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] 탭 닫기 취소
+           *[other] 탭 닫기 취소
+        }
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = 탭 검색

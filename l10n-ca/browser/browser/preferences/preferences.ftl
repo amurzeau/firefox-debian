@@ -5,7 +5,7 @@
 do-not-track-description = Envia als llocs web el senyal «No vull ser seguit» per informar-los que no vull que em facin el seguiment
 do-not-track-learn-more = Més informació
 do-not-track-option-default-content-blocking-known =
-    .label = Només quan el { -brand-short-name } estigui configurat per bloquejar els elements de seguiment coneguts
+    .label = Només si el { -brand-short-name } està configurat per blocar els elements de seguiment coneguts
 do-not-track-option-always =
     .label = Sempre
 pref-page =
@@ -232,6 +232,10 @@ translate-attribution = Traducció feta per <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Excepcions…
     .accesskey = x
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Utilitza els paràmetres del sistema operatiu de «{ $localeName }» per formatar dates, hores, nombres i mesures.
 check-user-spelling =
     .label = Verifica l'ortografia a mesura que s'escriu
     .accesskey = o
@@ -280,9 +284,16 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Utilitza { $app-name } (per defecte)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Utilitza l'aplicació per defecte del macOS
+            [windows] Utilitza l'aplicació per defecte del Windows
+           *[other] Utilitza l'aplicació per defecte del sistema
+        }
 applications-use-other =
     .label = Utilitza una altra aplicació…
-applications-select-helper = Selecciona l'aplicació ajudant
+applications-select-helper = Seleccioneu l'aplicació auxiliar
 applications-manage-app =
     .label = Detalls de l'aplicació…
 applications-always-ask =
@@ -303,8 +314,8 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Utilitza { $plugin-name } (en el { -brand-short-name })
-applications-preview-inapp =
-    .label = Previsualitza al { -brand-short-name }
+applications-open-inapp =
+    .label = Obre en el { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -316,14 +327,16 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -480,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Llocs principals
 home-prefs-topsites-description = Els llocs que visiteu més sovint
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Recomanat per { $provider }
 home-prefs-recommended-by-description = El contingut més interessant de tot el web, personalitzat per a vós
+home-prefs-recommended-by-description-update = Contingut excepcional d'arreu del web, seleccionat per { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Com funciona
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Articles patrocinats
@@ -545,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Mostra suggeriments de cerca en les finestres privades
 suggestions-addressbar-settings = Canvieu les preferències dels suggeriments de l'historial de navegació, de les adreces d'interès i de les pestanyes
+suggestions-addressbar-settings-generic = Canvia les preferències d'altres suggeriments de la barra d'adreces
 search-suggestions-cant-show = No es mostraran suggeriments de cerca als resultats de la barra d'ubicació perquè heu configurat el { -brand-short-name } per tal que no recordi mai l'historial.
 search-one-click-header = Motors de cerca amb un sol clic
 search-one-click-desc = Trieu els motors de cerca alternatius que es mostraran sota la barra d'adreces i de cerca en començar a escriure una paraula.
@@ -748,10 +768,10 @@ privacy-header = Privadesa del navegador
 
 ## Privacy Section - Forms
 
+logins-header = Inicis de sessió i contrasenyes
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Inicis de sessió i contrasenyes
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Inicis de sessió i contrasenyes
     .searchkeywords = { -lockwise-brand-short-name }
@@ -782,11 +802,19 @@ forms-master-pw-use =
 forms-master-pw-change =
     .label = Canvia la contrasenya mestra…
     .accesskey = m
-forms-master-pw-fips-title = Us trobeu en mode FIPS. El FIPS requereix una contrasenya mestra no buida.
+forms-master-pw-fips-title = Us trobeu en mode FIPS. El FIPS requereix una contrasenya mestra que no sigui buida.
 forms-master-pw-fips-desc = El canvi de contrasenya ha fallat
 
 ## OS Authentication dialog
 
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Per crear una contrasenya mestra, introduïu les vostres credencials d'inici de sessió al Windows. Això ajuda a protegir la seguretat dels vostres comptes.
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = crear una contrasenya mestra
+master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
 
@@ -858,6 +886,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Elements de seguiment entre llocs
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Elements de seguiment de xarxes socials i entre llocs
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Elements de seguiment de xarxes socials i entre llocs, i aïlla les galetes restants
 sitedata-option-block-unvisited =
     .label = Galetes de llocs web no visitats
 sitedata-option-block-all-third-party =
@@ -873,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Gestiona els permisos…
     .accesskey = p
+sitedata-cookies-exceptions =
+    .label = Gestiona les excepcions…
+    .accesskey = x
 
 ## Privacy Section - Address Bar
 
@@ -887,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Pestanyes obertes
     .accesskey = P
+addressbar-locbar-topsites-option =
+    .label = Llocs principals
+    .accesskey = L
 addressbar-suggestions-settings = Canvia les preferències dels suggeriments de motors de cerca
 
 ## Privacy Section - Content Blocking
@@ -934,6 +970,7 @@ content-blocking-etp-strict-desc = Més protecció, però pot fer que alguns llo
 content-blocking-etp-custom-desc = Trieu quins elements de seguiment i scripts cal blocar.
 content-blocking-private-windows = Contingut que fa seguiment en finestres privades
 content-blocking-cross-site-tracking-cookies = Galetes de seguiment entre llocs
+content-blocking-cross-site-tracking-cookies-plus-isolate = Galetes de seguiment entre llocs, i aïlla les galetes restants
 content-blocking-social-media-trackers = Elements de seguiment de xarxes socials
 content-blocking-all-cookies = Totes les galetes
 content-blocking-unvisited-cookies = Galetes de llocs no visitats
@@ -945,7 +982,7 @@ content-blocking-fingerprinters = Generadors d'empremtes digitals
 content-blocking-warning-title = Atenció!
 content-blocking-warning-description = El bloqueig de contingut pot fer que alguns llocs web no funcionin correctament. És fàcil desactivar el bloqueig dels llocs en què confieu.
 content-blocking-learn-how = Vegeu com fer-ho
-content-blocking-etp-warning-description = El bloqueig d'elements de seguiment pot afectar la funcionalitat d'alguns llocs. Torneu a carregar la pàgina amb els elements de seguiment per carregar-ne tot el contingut.
+content-blocking-and-isolating-etp-warning-description = El bloqueig d'elements de seguiment i l'aïllament de galetes pot afectar la funcionalitat d'alguns llocs. Torneu a carregar la pàgina amb els elements de seguiment per carregar-ne tot el contingut.
 content-blocking-warning-learn-how = Vegeu com fer-ho
 content-blocking-reload-description = Cal tornar a carregar les pestanyes per aplicar aquests canvis.
 content-blocking-reload-tabs-button =
@@ -1072,7 +1109,7 @@ collection-backlogged-crash-reports-link = Més informació
 security-header = Seguretat
 security-browsing-protection = Protecció contra contingut enganyós i programari perillós
 security-enable-safe-browsing =
-    .label = Bloca el contingut perillós i maliciós
+    .label = Bloca el contingut enganyós i perillós
     .accesskey = B
 security-enable-safe-browsing-link = Més informació
 security-block-downloads =

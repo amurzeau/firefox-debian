@@ -49,6 +49,9 @@
 
 <!ENTITY folderProps.name.label                  "Enw:">
 <!ENTITY folderProps.name.accesskey              "E">
+<!ENTITY folderProps.color.label                 "Lliw Eicon:">
+<!ENTITY folderProps.color.accesskey             "E">
+<!ENTITY folderProps.reset.tooltip               "Adfer lliw rhagosodedig">
 <!ENTITY folderProps.location.label              "Lleoliad:">
 <!ENTITY folderProps.location.accesskey          "L">
 
@@ -56,6 +59,7 @@
 <!ENTITY privileges.button.label                 "Breintiau…">
 <!ENTITY privileges.button.accesskey             "B">
 <!ENTITY permissionsDesc.label                   "Mae gennych y caniatâd canlynol:">
+<!ENTITY folderOtherUsers.label                  "Eraill sydd â mynediad i'r ffolder hon:">
 <!ENTITY folderType.label                        "Math o Ffolder:">
 
 <!ENTITY folderQuotaTab.label                    "Cwota">

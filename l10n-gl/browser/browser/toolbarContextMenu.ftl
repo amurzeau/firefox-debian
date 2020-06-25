@@ -20,3 +20,26 @@ toolbar-context-menu-select-all-tabs =
 toolbar-context-menu-undo-close-tab =
     .label = Anular o peche da lapela
     .accesskey = u
+
+toolbar-context-menu-manage-extension =
+    .label = Xestionar extensión
+    .accesskey = e
+toolbar-context-menu-remove-extension =
+    .label = Retirar extensión
+    .accesskey = x
+
+# Can appear on the same context menu as menubarCmd ("Menu Bar") and
+# personalbarCmd ("Bookmarks Toolbar"), so they should have different
+# access keys.
+toolbar-context-menu-pin-to-overflow-menu =
+    .label = Fixar ao menú adicional (»)
+    .accesskey = F
+toolbar-context-menu-auto-hide-downloads-button =
+    .label = Agochar automaticamente na barra de ferramentas
+    .accesskey = A
+toolbar-context-menu-remove-from-toolbar =
+    .label = Retirar da barra de ferramentas
+    .accesskey = R
+toolbar-context-menu-view-customize-toolbar =
+    .label = Personalizar…
+    .accesskey = P

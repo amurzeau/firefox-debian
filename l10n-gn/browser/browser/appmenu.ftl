@@ -5,11 +5,12 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = Egueru ambue kundahára guive…
 appmenuitem-protection-report-title = Ñemiguáva ñemo’ã
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Tereho ne marandu’i ñemiguápe
+appmenuitem-protection-dashboard-title = Ñemo’ãha renda
+appmenuitem-customize-mode =
+    .label = Ñemomba’e…
 
 ## Zoom Controls
 
@@ -21,4 +22,13 @@ appmenuitem-zoom-reduce =
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
-    .label = Embojuehe ko'ág̃a
+    .label = Embojuehe ko’ág̃a
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Oĩpa mba’e pyahu
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = Eikuaauka tembiapoite pyahu
+    .accesskey = f

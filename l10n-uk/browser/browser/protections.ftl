@@ -37,12 +37,16 @@ protection-report-page-title = Захист приватності
 protection-report-content-title = Захист приватності
 etp-card-title = Розширений захист від стеження
 etp-card-content = Елементи стеження переслідують вас в мережі з метою збору інформації про ваші звички та інтереси. { -brand-short-name } блокує багато такого стеження, а також інші підозрілі скрипти.
-protection-report-webpage-title = Панель стану безпеки
-protection-report-page-content-title = Панель стану безпеки
+protection-report-webpage-title = Панель стану захисту
+protection-report-page-content-title = Панель стану захисту
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } може непомітно захищати вашу приватність під час перебування в Інтернеті. Це персоналізований підсумок стану захисту, включаючи засоби контролю вашої безпеки в Інтернеті.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } непомітно захищає вашу приватність під час перебування в Інтернеті. Це персоналізований підсумок стану захисту, включаючи засоби контролю вашої безпеки в Інтернеті.
+protection-report-settings-link = Керуйте своїми налаштуваннями приватності й безпеки
 etp-card-title-always = Розширений захист від стеження: Завжди увімкнено
 etp-card-title-custom-not-blocking = Розширений захист від стеження: ВИМКНЕНО
-etp-card-content-summary = Коли невідомі компанії намагаються потайки стежити за вами в Інтернеті, { -brand-short-name } автоматично блокує більшість з них.
+etp-card-content-description = { -brand-short-name } автоматично блокує таємне стеження компаній за вами в Інтернеті.
 protection-report-etp-card-content-custom-not-blocking = Всі засоби захисту зараз вимкнено. Оберіть, які елементи стеження блокувати, в налаштуваннях захисту { -brand-short-name }.
 protection-report-manage-protections = Керувати налаштуваннями
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -60,8 +64,6 @@ fingerprinter-tab-title = Зчитування цифрового відбитк
 fingerprinter-tab-content = Засоби зчитування цифрового відбитка збирають дані про налаштування вашого браузера та комп'ютера, з метою створення вашого профілю. Використовуючи такий цифровий відбиток, вони можуть стежити за вами на багатьох різних вебсайтах. <a data-l10n-name="learn-more-link">Докладніше</a>
 cryptominer-tab-title = Криптомайнери
 cryptominer-tab-content = Криптомайнери використовують ресурси вашої системи для створення цифрових грошей. Криптомайнингові скрипти споживають заряд вашого акумулятора, сповільнюють роботу комп'ютера, а також можуть збільшити ваші витрати на електроенергію. <a data-l10n-name="learn-more-link">Докладніше</a>
-protections-close-button =
-    .aria-label = Закрити
 protections-close-button2 =
     .aria-label = Закрити
     .title = Закрити
@@ -121,11 +123,13 @@ lockwise-connected-device-status =
         [few] Під'єднано до { $count } пристроїв
        *[many] Під'єднано до { $count } пристроїв
     }
-monitor-title = Стежте за витоками даних
+monitor-title = Стеження за витоками даних
 monitor-link = Як це працює
 monitor-header-content-no-account = Спробуйте { -monitor-brand-name }, щоб перевірити чи ви потрапили до відомого витоку даних, а також отримуйте попередження про нові витоки.
 monitor-header-content-signed-in = { -monitor-brand-name } попереджає вас, якщо ваша інформація з'явилася у відомих витоках даних.
 monitor-sign-up = Підписатися на сповіщення
+monitor-sign-up-link = Підписатися на сповіщення
+    .title = Підписатися на сповіщення про витоки від { -monitor-brand-name }
 auto-scan = Автоматично проскановано сьогодні
 monitor-emails-tooltip =
     .title = Переглянути відстежувані адреси е-пошти на { -monitor-brand-short-name }
@@ -152,6 +156,15 @@ info-known-breaches-found =
        *[many] Відомих витоків даних викрили вашу інформацію
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] Відомий витік даних позначено розвʼязаним
+        [few] Відомі витоки даних позначено розвʼязаними
+       *[many] Відомих витоків даних позначено розвʼязаними
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -170,6 +183,43 @@ password-warning =
         [few] Збережені паролі могли бути викриті у витоку даних. Змініть ці паролі для кращого захисту онлайн. <a data-l10n-name="lockwise-link">Переглянути збережені паролі</a>
        *[many] Збережених паролів могло бути викрито у витоку даних. Змініть ці паролі для кращого захисту онлайн. <a data-l10n-name="lockwise-link">Переглянути збережені паролі</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] Викритий пароль у нерозвʼязаних витоках
+        [few] Викриті паролі у нерозвʼязаних витоках
+       *[many] Викритих паролів у нерозвʼязаних витоках
+    }
+monitor-no-breaches-title = Гарні новини!
+monitor-no-breaches-description = У вас немає відомих витоків даних. Якщо щось зміниться, ми повідомимо вас.
+monitor-view-report-link = Переглянути звіт
+    .title = Розв'язати проблеми, пов'язані з витоками даних на { -monitor-brand-short-name }
+monitor-breaches-unresolved-title = Розв'язати проблеми витоку даних
+monitor-breaches-unresolved-description = Після перегляду подробиць про витік даних та вжиття заходів для захисту вашої інформації, ви можете позначити витік вирішеним.
+monitor-manage-breaches-link = Керувати витоками
+    .title = Керування витоками даних на { -monitor-brand-short-name }
+monitor-breaches-resolved-title = Чудово! Ви розв'язали всі відомі витоки даних.
+monitor-breaches-resolved-description = Якщо ваша е-пошта з'явиться в нових витоках даних, ми вас повідомимо.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+        [one] { $numBreachesResolved } витік даних з { $numBreaches } позначено розв'язаним
+        [few] { $numBreachesResolved } витоки даних з { $numBreaches } позначено розв'язаними
+       *[many] { $numBreachesResolved } витоків даних з { $numBreaches } позначено розв'язаними
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved }% завершено
+monitor-partial-breaches-motivation-title-start = Гарний початок!
+monitor-partial-breaches-motivation-title-middle = Так тримати!
+monitor-partial-breaches-motivation-title-end = Майже завершено! Так тримати.
+monitor-partial-breaches-motivation-description = Розв'яжіть решту своїх витоків даних на { -monitor-brand-short-name }.
+monitor-resolve-breaches-link = Розв'язати витоки
+    .title = Розв'язати витоки даних на { -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

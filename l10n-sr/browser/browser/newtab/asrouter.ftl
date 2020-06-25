@@ -127,15 +127,37 @@ cfr-whatsnew-lockwise-take-link-text = Преузмите апликацију
 
 ## Search Bar
 
+cfr-whatsnew-searchbar-title = Куцајте мање, нађите више помоћу адресне траке
+cfr-whatsnew-searchbar-body-topsites = Сада само одаберите адресну траку и оквир ће се проширити са везама до ваших најпосећенијих страница.
+cfr-whatsnew-searchbar-icon-alt-text = Иконица лупе
 
 ## Picture-in-Picture
 
+cfr-whatsnew-pip-header = Гледајте видео записе док прегледате
+cfr-whatsnew-pip-body = Слика-у-слици режим избаци видео у плутајући прозор, тако да можете гледати док радите у другим језичцима.
+cfr-whatsnew-pip-cta = Сазнајте више
 
 ## Permission Prompt
 
+cfr-whatsnew-permission-prompt-header = Мање иритантних искакајућих прозора
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } сада блокира странице од аутоматског захтевања да вам шаљу искакајуће поруке.
+cfr-whatsnew-permission-prompt-cta = Сазнајте више
 
 ## Fingerprinter Counter
 
+# This string is displayed before a large numeral that indicates the total
+# number of tracking elements blocked. Don’t add $fingerprinterCount to your
+# localization, because it would result in the number showing twice.
+cfr-whatsnew-fingerprinter-counter-header =
+    { $fingerprinterCount ->
+        [one] Блокиран узимач дигиталних отисака
+        [few] Блокирана узимача дигиталних отисака
+       *[other] Блокирано узимача дигиталних отисака
+    }
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } блокира многе узимаче дигиталних отисака, који тајно прикупљају информације о вашем уређају и радњама у сврху израде рекламног профила за вас.
+# Message variation when fingerprinters count is less than 10
+cfr-whatsnew-fingerprinter-counter-header-alt = Узимачи дигиталних отисака
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } може да блокира узимаче дигиталних отисака који тајно прикупљају информације о вашем уређају и радњама у сврху израде рекламног профила за вас.
 
 ## Bookmark Sync
 
@@ -172,6 +194,8 @@ cfr-doorhanger-socialtracking-ok-button = Погледај заштите
     .accesskey = П
 cfr-doorhanger-socialtracking-close-button = Затвори
     .accesskey = З
+cfr-doorhanger-socialtracking-dont-show-again = Немој ми више показивати овакве поруке
+    .accesskey = D
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } је блокирао друштвену мрежу да вас прати овде
 cfr-doorhanger-socialtracking-description = Ваша приватност је битна. Од сада надаље, { -brand-short-name } блокира уобичајене софтвере за праћење с друштвених мрежа и ограничава ове веб странице да прикупљају вашу мрежну активност.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } је блокирао програм за праћење дигиталних отисака на овој страници
@@ -192,3 +216,36 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Погледај све
     .accesskey = П
+
+## What’s New Panel Content for Firefox 76
+
+
+## Lockwise message
+
+cfr-whatsnew-lockwise-header = Лако правите сигурне лозинке
+cfr-whatsnew-lockwise-body = Није лако смислити јединствене и сигурне лозинке за сваки налог. Када правите лозинку, изаберите одговарајуће поље да бисте добили сигурну лозинку, коју смишља { -brand-shorter-name }.
+cfr-whatsnew-lockwise-icon-alt = { -lockwise-brand-short-name } иконица
+
+## Vulnerable Passwords message
+
+cfr-whatsnew-passwords-header = Добијајте упозорења о рањивим лозинкама
+cfr-whatsnew-passwords-body = Хакери знају да људи понављају своје лозинке. Ако сте користили исту лозинку на више страница и једна од њих је била жртва цурења података, видећете упозорење у { -lockwise-brand-short-name }-у са захтевом да измените вашу лозинку на тим страницама.
+cfr-whatsnew-passwords-icon-alt = Иконица рањиве лозинке
+
+## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = Проширите слика-у-слици режим на цели екран
+cfr-whatsnew-pip-fullscreen-body = Када видео поставите у плутајући прозор, сада га можете двапут кликнути да бисте прешли на цео екран.
+cfr-whatsnew-pip-fullscreen-icon-alt = Слика-у-слици иконица
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Заштита на први поглед
+cfr-whatsnew-protections-body = Контролна табла заштите укључује сажетке извештаја о цурењу података и управљању лозинком. Сада можете пратити број решених цурења и видети да ли је и нека од ваших сачуваних лозинки била изложена цурењу података.
+cfr-whatsnew-protections-cta-link = Погледај контролну таблу заштите
+cfr-whatsnew-protections-icon-alt = Иконица штита
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Боље PDF искуство
+cfr-whatsnew-better-pdf-body = PDF документи се сада отварају директно у { -brand-short-name }-у, олакшавајући ток рада.

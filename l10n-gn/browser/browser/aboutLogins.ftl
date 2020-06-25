@@ -2,6 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 about-logins-page-title = Tembiapo ñepyrũ ha ñe’ẽñemi
 
 # "Google Play" and "App Store" are both branding and should not be translated
@@ -26,6 +32,7 @@ menu =
     .title = Poravorãme jeike
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Egueru ambue kundahára guive…
+about-logins-menu-menuitem-export-logins = Emba’egueraha tembiapo ñepyrũ…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Jeporavorã
@@ -47,7 +54,6 @@ login-list-count =
 login-list-sort-label-text = Omoĩporã:
 login-list-name-option = Téra  (A-Z)
 login-list-name-reverse-option = Téra (Z-A)
-login-list-breached-option = Ñanduti renda imarãmava
 about-logins-login-list-alerts-option = Kyhyjerã
 login-list-last-changed-option = Ñemoambue ipyahuvéva
 login-list-last-used-option = Ojepurúva ipahaitépe
@@ -57,7 +63,7 @@ about-logins-login-list-empty-search-title = Ndojejuhúi tembiapo ñepyrũ
 about-logins-login-list-empty-search-description = Ndaipóri pe ehekáva.
 login-list-item-title-new-login = Tembiapo ñepyrũ pyahu
 login-list-item-subtitle-new-login = Emoinge nde reraite tembiapo ñepyrũme
-login-list-item-subtitle-missing-username = (puruhára hera'ỹva)
+login-list-item-subtitle-missing-username = (puruhára hera’ỹva)
 about-logins-list-item-breach-icon =
     .title = Ñanduti renda imarãva
 about-logins-list-item-vulnerable-password-icon =
@@ -76,7 +82,7 @@ about-logins-intro-import = Ne rembiapo ñepyrũ oñeñongatúramo ambue kundah�
 ## Login
 
 login-item-new-login-title = Tembiapo ñepyrũ pyahu moheñói
-login-item-edit-button = Mbosako'i
+login-item-edit-button = Mbosako’i
 about-logins-login-item-remove-button = Mboguete
 login-item-origin-label = Ñanduti kundaharape
 login-item-origin =
@@ -86,7 +92,7 @@ about-logins-login-item-username =
     .placeholder = (puruhára hera’ỹva)
 login-item-copy-username-button-text = Monguatia
 login-item-copied-username-button-text = Monguatiapyre!
-login-item-password-label = Ñe'ẽñemi
+login-item-password-label = Ñe’ẽñemi
 login-item-password-reveal-checkbox =
     .aria-label = Ehechauka ñe’ẽñemi
 login-item-copy-password-button-text = Monguatia
@@ -106,21 +112,26 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
-# This message can be seen by attempting to edit a login in about:logins
-about-logins-edit-login-os-auth-dialog-message = Ehechajey nde reraite embosako’i hag̃ua tembiapo ñepyrũ ñongatupyre.
-# This message can be seen by attempting to edit a login in about:logins
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message-win = Embosako’ívo tembiapo ñepyrũ, emoĩ nde reraite Windows rembiapo ñepyrũme. Oipytyvõta emo’ãvo ne mba’ete rekorosã.
+# This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = embosako’i tembiapo ñepyrũ ñongatupyre
-# This message can be seen by attempting to reveal a password in about:logins
-about-logins-reveal-password-os-auth-dialog-message = Ehechajey nde reraite embosako’i hag̃ua ñe’ẽñemi ñongatupyre.
-# This message can be seen by attempting to reveal a password in about:logins
+# This message can be seen when attempting to reveal a password in about:logins on Windows.
+about-logins-reveal-password-os-auth-dialog-message-win = Ehecha hag̃ua ñe’ẽñemi, emoinge nde reraite tembiapo ñepyrũ pegua. Oipytyvõta emo’ãvo ne mba’etekuéra rekorosã.
+# This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = embosako’i ñe’ẽñemi ñongatupyre
-# This message can be seen by attempting to copy a password in about:logins
-about-logins-copy-password-os-auth-dialog-message = Ehechajey nde reraite ehechauka hag̃ua ñe’ẽñemi ñongatupyre.
-# This message can be seen by attempting to copy a password in about:logins
+# This message can be seen when attempting to copy a password in about:logins on Windows.
+about-logins-copy-password-os-auth-dialog-message-win = Emonguatia hag̃ua ñe’ẽñemi, emoinge nde reraite Windows rembiapo ñepyrũme. Oipytyvõta emo’ãvo ne mba’etekuéra rekorosã.
+# This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = embokuatia ñe’ẽñemi ñongatupyre
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message-win = Eguerahaukávo ne rembiapo ñepyrũ, emoĩ nde reraite Windows rembiapópe. Oipytyvõta emo’ãvo ne mba’ete rekorosã.
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message-macosx = erahauka puruhára ha ñe’ẽñemi ñongatupyre
 
 ## Master Password notification
 
@@ -155,6 +166,9 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = ¿Emboguete ko tembiapo ñepyrũ?
 confirm-delete-dialog-message = Ko tembiapoite ndaikatúi emboguevi.
 about-logins-confirm-remove-dialog-confirm-button = Mboguete
+about-logins-confirm-export-dialog-title = Emba’egueraha tembiapo ñepyrũ ha ñe’ẽñemi
+about-logins-confirm-export-dialog-message = Ñe’ẽñemi oñeñongatúta moñe’ẽrãrõ (techapyrã, BadP@ssw0rd) oimeraẽva ombojurujakuaáva marandurenda guerahaukapyre ikatu ohecha.
+about-logins-confirm-export-dialog-confirm-button = Emba’egueraha…
 confirm-discard-changes-dialog-title = ¿Emboyke moambue eñongatu’ỹva?
 confirm-discard-changes-dialog-message = Opaite ñemoambue oñeñongatu’ỹva oguepáta.
 confirm-discard-changes-dialog-confirm-button = Hejarei
@@ -163,9 +177,6 @@ confirm-discard-changes-dialog-confirm-button = Hejarei
 
 about-logins-breach-alert-title = Ñanduti renda ñembyai
 breach-alert-text = Umi ñe’ẽñemi oñembogua térã oñemonda ko ñanduti rendágui hekopyahu rire ne mba’ekuaarã rembiapo ñepyrũ. Emoambue ne ñe’ẽñemi emo’ã hag̃ua ne mba’ete.
-breach-alert-link = Eñemomaranduve ko mba’evai rehegua.
-breach-alert-dismiss =
-    .title = Emboty ko kyhyjeha
 about-logins-breach-alert-date = Ko jejapo’ỹ oiko { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
@@ -190,3 +201,19 @@ about-logins-vulnerable-alert-learn-more-link = Kuaave
 about-logins-error-message-duplicate-login-with-link = Eikekuaáma { $loginTitle } ko puruhára réra reheve. <a data-l10n-name="duplicate-link">¿Ehosépa pe jeikehápe?</a>
 # This is a generic error message.
 about-logins-error-message-default = Oiko jejavy eñongatukuévo ñe’ẽñemi.
+
+## Login Export Dialog
+
+# Title of the file picker dialog
+about-logins-export-file-picker-title = Emba’egueraha tembiapo ñepyrũ marandurenda
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename = logins.csv
+about-logins-export-file-picker-export-button = Mba’egueraha
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV Kuatiaite
+       *[other] CSV Marandurenda
+    }

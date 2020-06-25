@@ -13,6 +13,8 @@
 <!ENTITY name.accesskey "Y">
 <!ENTITY email.label "电子邮件地址：">
 <!ENTITY email.accesskey "E">
+<!ENTITY catchAll.label "当邮件投递头匹配时，以此身份回复：">
+<!ENTITY catchAll.accesskey "d">
 <!ENTITY replyTo.label "回复地址：">
 <!ENTITY replyTo.accesskey "s">
 <!ENTITY replyTo.placeholder "接收者将回复到这个其他地址">

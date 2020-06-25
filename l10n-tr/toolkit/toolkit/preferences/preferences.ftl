@@ -22,6 +22,7 @@ set-password-new-password = Yeni parola:
 set-password-reenter-password = Yeni parola (tekrar):
 set-password-meter = Parola kalite ölçümü
 set-password-meter-loading = Yükleniyor
+master-password-admin = Yöneticiniz, parolaları kaydetmek için bir ana parola belirlemenizi şart koşuyor.
 master-password-description = Ana parola ile diğer parolalarınızı koruyabilirsiniz. Ana parola oluşturmanız durumunda { -brand-short-name } her oturumda kayıtlı bilgilere ulaşmak istediğinde size ana parolayı soracaktır.
 master-password-warning = Lütfen ana parolanızı unutmayacağınızdan emin olun. Ana parolanızı unutursanız, ana parolayla korunan hiçbir bilgiye erişemezsiniz.
 remove-password =

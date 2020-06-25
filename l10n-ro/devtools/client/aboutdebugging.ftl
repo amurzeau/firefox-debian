@@ -91,7 +91,7 @@ about-debugging-setup-connect-heading = Conectează un dispozitiv
 # USB section of the Setup page
 about-debugging-setup-usb-title = USB
 # Explanatory text displayed in the Setup page when USB debugging is disabled
-about-debugging-setup-usb-disabled = La activare, vor fi descărcate și adăugate componentele de depanare Android USB necesare pentru { -brand-shorter-name }
+about-debugging-setup-usb-disabled = La activare, vor fi descărcate și adăugate componentele de depanare Android USB necesare pentru { -brand-shorter-name }.
 # Text of the button displayed in the USB section of the setup page when USB debugging is disabled.
 # Clicking on it will download components needed to debug USB Devices remotely.
 about-debugging-setup-usb-enable-button = Activează dispozitivele USB

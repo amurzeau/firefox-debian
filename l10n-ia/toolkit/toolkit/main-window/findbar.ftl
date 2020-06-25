@@ -29,7 +29,7 @@ findbar-case-sensitive =
 
 findbar-match-diacritics =
     .label = Distinguer diacriticos
-    .accesskey = D
+    .accesskey = i
     .tooltiptext = Differentiar inter litteras accentuate e lor litteras de base (per exemplo, si tu cerca “resume”, “résumé” non es trovate)
 
 findbar-entire-word =

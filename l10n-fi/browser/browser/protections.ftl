@@ -37,8 +37,14 @@ etp-card-title = Tehostettu seurannan suojaus
 etp-card-content = Seuraimet seuraavat sinua verkossa ja keräävät tietoja selaustapoihisi ja kiinnostuksen kohteisiisi liittyen. { -brand-short-name } estää monet näistä seuraimista ja muita haitallisia komentosarjoja.
 protection-report-webpage-title = Suojausten yhteenveto
 protection-report-page-content-title = Suojausten yhteenveto
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
+protection-report-page-summary = { -brand-short-name } voi suojata yksityisyyttäsi kulisseissa, kun selaat verkkoa. Tämä on yhteenveto näistä suojauksista, joihin kuuluu työkaluja, joiden avulla voit hallita turvallisuuttasi verkossa.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } suojaa yksityisyyttäsi kulisseissa, kun selaat verkkoa. Tämä on henkilökohtainen yhteenveto näistä suojauksista, joihin kuuluu työkaluja, joiden avulla voit hallita turvallisuuttasi verkossa.
+protection-report-settings-link = Hallitse tietosuojan ja turvallisuuden asetuksia
 etp-card-title-always = Tehostettu seurannan suojaus: Aina päällä
 etp-card-title-custom-not-blocking = Tehostettu seurannan suojaus: POIS PÄÄLTÄ
+etp-card-content-description = { -brand-short-name } estää automaattisesti yrityksiä seuraamasta sinua salaa ympäri verkkoa.
 protection-report-etp-card-content-custom-not-blocking = Kaikki suojaukset ovat pois päältä. Valitse estettävät seuraimet { -brand-short-name }-suojausasetuksista.
 protection-report-manage-protections = Hallitse asetuksia
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -56,8 +62,6 @@ fingerprinter-tab-title = Yksilöijät
 fingerprinter-tab-content = Yksilöijät keräävät asetustietoja selaimestasi sekä tietokoneestasi ja luovat näiden tietojen avulla profiilin sinusta. Tätä digitaalista sormenjälkeä hyödyntämällä sinua voidaan seurata eri verkkosivustojen välillä. <a data-l10n-name="learn-more-link">Lue lisää</a>
 cryptominer-tab-title = Kryptolouhijat
 cryptominer-tab-content = Kryptolouhijat käyttävät tietokoneesi laskentatehoa digitaalisen rahan louhintaan. Kryptolouhintaan tarkoitetut komentosarjat kuluttavat tietokoneen akkua, hidastavat tietokonetta ja voivat vaikuttaa sähkölaskun loppusummaan. <a data-l10n-name="learn-more-link">Lue lisää</a>
-protections-close-button =
-    .aria-label = Sulje
 protections-close-button2 =
     .aria-label = Sulje
     .title = Sulje
@@ -118,7 +122,15 @@ monitor-link = Kuinka se toimii
 monitor-header-content-no-account = Tutustu { -monitor-brand-name }iin nähdäksesi onko tietojasi paljastunut tunnetuissa tietovuodoissa, ja vastaanota hälytys jos tietojasi paljastuu uusissa vuodoissa.
 monitor-header-content-signed-in = { -monitor-brand-name } varoittaa sinua, jos tietosi paljastuvat tunnetussa tietovuodossa.
 monitor-sign-up = Tilaa vuotohälytykset
+monitor-sign-up-link = Tilaa vuotohälytykset
+    .title = Tilaa vuotohälytykset { -monitor-brand-name }-palvelussa
 auto-scan = Automaattisesti tarkistettu tänään
+monitor-emails-tooltip =
+    .title = Tarkista seurattavat sähköpostiosoitteet { -monitor-brand-short-name }-palvelusta
+monitor-breaches-tooltip =
+    .title = Katso tunnetut tietovuodot { -monitor-brand-short-name }-palvelusta
+monitor-passwords-tooltip =
+    .title = Katso paljastuneet salasanat { -monitor-brand-short-name }-palvelusta
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
@@ -134,6 +146,14 @@ info-known-breaches-found =
     { $count ->
         [one] Tunnettu tietovuoto on paljastanut tietojasi
        *[other] Tunnettua tietovuotoa on paljastanut tietojasi
+    }
+# This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] Tunnettu tietovuoto merkitty selvitetyksi
+       *[other] Tunnettua tietovuotoa merkitty selvitetyksi
     }
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
@@ -152,6 +172,40 @@ password-warning =
         [one] Tallennettu kirjautumistieto saattaa olla paljastunut tietovuodossa. Vaihda tämä salasana parantaaksesi tietoturvaasi verkossa. <a data-l10n-name="lockwise-link">Näytä tallennetut kirjautumistiedot</a>
        *[other] Tallennettuja kirjautumistietoja saattaa olla paljastunut tietovuodossa. Vaihda nämä salasanat parantaaksesi tietoturvaasi verkossa. <a data-l10n-name="lockwise-link">Näytä tallennetut kirjautumistiedot</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] Salasana paljastunut selvittämättömissä vuodoissa
+       *[other] Salasanaa paljastunut selvittämättömissä vuodoissa
+    }
+monitor-no-breaches-title = Hyviä uutisia!
+monitor-no-breaches-description = Ei tunnettuja tietovuotoja. Saat tiedon, jos tilanne muuttuu.
+monitor-view-report-link = Näytä raportti
+    .title = Selvitä vuodot { -monitor-brand-short-name }-palvelussa
+monitor-breaches-unresolved-title = Selvitä tietovuodot
+monitor-breaches-unresolved-description = Voit merkitä tietovuodon selvitetyksi, kun olet katsonut vuodon tiedot ja tehnyt tarvittavan tietojesi suojaamiseksi.
+monitor-manage-breaches-link = Hallitse vuotoja
+    .title = Hallitse vuotoja { -monitor-brand-short-name }-palvelussa
+monitor-breaches-resolved-title = Hienoa! Olet selvittänyt kaikki tunnetut tietovuodot.
+monitor-breaches-resolved-description = Jos sähköpostiosoitteesi ilmenee uusissa vuodoissa, ilmoitamme siitä sinulle.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+       *[other] { $numBreachesResolved }/{ $numBreaches } tietovuotoa on merkitty selvitetyksi
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved } % valmiina
+monitor-partial-breaches-motivation-title-start = Hieno alku!
+monitor-partial-breaches-motivation-title-middle = Jatka samoin!
+monitor-partial-breaches-motivation-title-end = Melkein valmista! Jatka samoin.
+monitor-partial-breaches-motivation-description = Selvitä loput vuodoista { -monitor-brand-short-name }-palvelussa.
+monitor-resolve-breaches-link = Selvitä vuodot
+    .title = Selvitä vuodot { -monitor-brand-short-name }-palvelussa
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

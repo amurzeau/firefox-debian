@@ -89,6 +89,7 @@ newtab-menu-show-privacy-info = Sponsor kami & privasi Anda
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = Selesai
+newtab-privacy-modal-button-manage = Kelola pengaturan konten sponsor
 newtab-privacy-modal-header = Privasi Anda penting.
 newtab-privacy-modal-paragraph-2 = Selain menampilkan berbagai kisah menawan, kami juga menampilkan konten yang relevan, yang telah diperiksa dari sponsor tertentu, untuk Anda. Yakinlah, <strong>data penjelajahan Anda tidak pernah meninggalkan { -brand-product-name } Anda</strong> — kami dan sponsor kami tidak melihatnya.
 newtab-privacy-modal-link = Pelajari cara privasi bekerja di tab baru
@@ -132,6 +133,10 @@ newtab-label-download = Terunduh
 # Variables:
 #  $sponsorOrSource (String): This is the name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · Pesan Sponsor
+# This string is used at the bottom of story cards to indicate sponsored content
+# Variables:
+#  $sponsor (String): This is the name of a sponsor
+newtab-label-sponsored-by = Disponsori oleh { $sponsor }
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.

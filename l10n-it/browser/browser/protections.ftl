@@ -35,13 +35,16 @@ protection-report-page-title = Protezioni per la privacy
 protection-report-content-title = Protezioni per la privacy
 etp-card-title = Protezione antitracciamento avanzata
 etp-card-content = Gli elementi traccianti ti seguono online al fine di raccogliere informazioni sui tuoi interessi e le tue abitudini di navigazione. { -brand-short-name } blocca molti di questi traccianti e altri script dannosi.
-protection-report-webpage-title = Dashboard protezioni
-protection-report-page-content-title = Dashboard protezioni
-protection-report-page-summary = { -brand-short-name } protegge la tua privacy mentre navighi. Questa è una sintesi personalizzata delle protezioni attive e include strumenti per garantire la tua sicurezza online.
+protection-report-webpage-title = Pannello protezioni
+protection-report-page-content-title = Pannello protezioni
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
+protection-report-page-summary = { -brand-short-name } è in grado di proteggere la tua privacy mentre navighi. Questa è una sintesi personalizzata delle protezioni attive e include strumenti per garantire la tua sicurezza online.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } protegge la tua privacy mentre navighi. Questa è una sintesi personalizzata delle protezioni attive e include strumenti per garantire la tua sicurezza online.
 protection-report-settings-link = Gestisci le impostazioni relative a privacy e sicurezza
 etp-card-title-always = Protezione antitracciamento avanzata: sempre attiva
 etp-card-title-custom-not-blocking = Protezione antitracciamento avanzata: DISATTIVATA
-etp-card-content-summary = { -brand-short-name } blocca molte società sconosciute che, di nascosto, cercano di seguire le tue attività sul Web.
+etp-card-content-description = { -brand-short-name } blocca automaticamente le società che, di nascosto, cercano di seguire le tue attività sul Web.
 protection-report-etp-card-content-custom-not-blocking = Tutte le protezioni sono attualmente disattivate. Scegli quali elementi traccianti bloccare nelle impostazioni di { -brand-short-name }.
 protection-report-manage-protections = Gestisci impostazioni
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -59,8 +62,6 @@ fingerprinter-tab-title = Fingerprinter
 fingerprinter-tab-content = I fingerprinter raccolgono informazioni sulle impostazioni del browser e del computer al fine di creare un tuo profilo. Utilizzando questa “impronta digitale” sono in grado di seguirti attraverso siti diversi. <a data-l10n-name="learn-more-link">Ulteriori informazioni</a>
 cryptominer-tab-title = Cryptominer
 cryptominer-tab-content = I cryptominer utilizzano le risorse del sistema per effettuare il “mining” di valute digitali. Questi script consumano la batteria, rallentano il computer e possono aumentare il costo della bolletta elettrica. <a data-l10n-name="learn-more-link">Ulteriori informazioni</a>
-protections-close-button =
-    .aria-label = Chiudi
 protections-close-button2 =
     .aria-label = Chiudi
     .title = Chiudi
@@ -117,6 +118,8 @@ monitor-link = Come funziona
 monitor-header-content-no-account = Controlla { -monitor-brand-name } per verificare se sei stato coinvolto in una violazione di dati conosciuta e ricevere avvisi per nuove violazioni.
 monitor-header-content-signed-in = { -monitor-brand-name } ti avvisa se le tue informazioni compaiono in una violazione di dati conosciuta.
 monitor-sign-up = Iscriviti per ricevere avvisi sulle violazioni
+monitor-sign-up-link = Iscriviti per ricevere avvisi sulle violazioni
+  .title = Iscriviti per ricevere avvisi sulle violazioni in { -monitor-brand-name }
 auto-scan = Controllato automaticamente oggi
 
 monitor-emails-tooltip =
@@ -145,12 +148,60 @@ info-known-breaches-found =
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] Violazione di dati conosciuta contrassegnata come risolta
+       *[other] Violazioni di dati conosciute contrassegnate come risolte
+    }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords. Don’t add $count to
+# your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
     { $count ->
         [one] Password compromessa in tutte le violazioni
        *[other] Password compromesse in tutte le violazioni
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords. Don’t add $count to
+# your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved = =
+    { $count ->
+        [one] Password compromessa in violazioni non risolte
+       *[other] Password compromesse in violazioni non risolte
+    }
 full-report-link = Visualizza il rapporto completo in <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>
+
+monitor-no-breaches-title = Ottime notizie
+monitor-no-breaches-description = Non sono presenti violazioni di dati conosciute. Ti faremo sapere se la situazione dovesse cambiare.
+monitor-view-report-link = Visualizza rapporto
+  .title = Risolvi le violazioni su { -monitor-brand-short-name }
+monitor-breaches-unresolved-title = Risolvi le tue violazioni
+monitor-breaches-unresolved-description = Dopo aver verificato i dettagli di ogni violazione e aver preso le misure necessarie per proteggere i tuoi dati, puoi contrassegnare le violazioni come risolte.
+monitor-manage-breaches-link = Gestisci violazioni
+  .title = Gestisci le violazioni su { -monitor-brand-short-name }
+monitor-breaches-resolved-title = Ottimo, hai risolto tutte le violazioni di dati conosciute.
+monitor-breaches-resolved-description = Ti faremo sapere se la tua email dovesse apparire in una nuova violazione.
+
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+  { $numBreachesResolved ->
+    [one] { $numBreachesResolved } violazione su { $numBreaches } contrassegnata come risolta
+   *[other] { $numBreachesResolved } violazioni su { $numBreaches } contrassegnate come risolte
+  }
+
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved }% completato
+
+monitor-partial-breaches-motivation-title-start = Ottimo inizio!
+monitor-partial-breaches-motivation-title-middle = Continua così!
+monitor-partial-breaches-motivation-title-end = Quasi finito. Continua così!
+monitor-partial-breaches-motivation-description = Risolvi le altre violazioni su { -monitor-brand-short-name }.
+monitor-resolve-breaches-link = Risolvi violazioni
+  .title = Risolvi le violazioni su { -monitor-brand-short-name }
+
 # This string is displayed after a large numeral that indicates the total number
 # of saved logins which may have been exposed. Don’t add $count to
 # your localization, because it would result in the number showing twice.

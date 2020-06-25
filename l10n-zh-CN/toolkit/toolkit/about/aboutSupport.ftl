@@ -119,6 +119,11 @@ sandbox-sys-call-number = 系统调用
 sandbox-sys-call-args = 参数
 safe-mode-title = 尝试安全模式
 restart-in-safe-mode-label = 以安全模式重启浏览器…
+clear-startup-cache-title = 尝试清除启动缓存
+clear-startup-cache-label = 清除启动缓存...
+startup-cache-dialog-title = 清除启动缓存
+startup-cache-dialog-body = 重启 { -brand-short-name } 以清除启动缓存。这不会更改您的设置，也不会移除您添加到 { -brand-short-name } 中的扩展。
+restart-button-label = 重启
 
 ## Media titles
 
@@ -126,6 +131,7 @@ audio-backend = 音频后端
 max-audio-channels = 最大声道
 channel-layout = 首选声道布局
 sample-rate = 首选采样率
+roundtrip-latency = 往返延迟（标准差）
 media-title = 媒体
 media-output-devices-title = 输出设备
 media-input-devices-title = 输入设备

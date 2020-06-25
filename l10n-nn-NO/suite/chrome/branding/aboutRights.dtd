@@ -20,6 +20,7 @@
 <!ENTITY rights.intro-point1b "Mozilla Public License">
 <!ENTITY rights.intro-point1c ". Dette tyder at du kan bruka, kopiera og distribuera &brandShortName; til andre. Du kan også endra kjeldekoden til &brandShortName; som du vil, for å passa til dine behov. Mozilla Public License gjev deg også rett til å distribuera endra versjonar.">
 
+<!ENTITY rights.intro-point2a "SeaMonkey e.V gjev deg ikkje rett til å bruke SeaMonkey-varemerka eller logoar. Meir informasjon om varemerke kan du finna ">
 
 <!ENTITY rights.intro-point2b "her">
 <!ENTITY rights.intro-point2c ".">
@@ -35,7 +36,9 @@
 
 <!-- point 4 text for official branded builds -->
 <!ENTITY rights.intro-point4b "tenestevilkåra">
+<!ENTITY rights.intro-point4c ".">
 
+<!ENTITY rights.webservices-header "&brandFullName; informasjonstenester">
 
 <!-- Note that this paragraph references entities from extensions.dtd,
      preferences.dtd, pref-smartupdate.dtd, and pref-security.dtd,
@@ -44,11 +47,13 @@
 <!-- intro paragraph for branded builds -->
 <!-- intro paragraph for branded builds -->
 <!ENTITY rights3.webservices-b "her">
+<!ENTITY rights3.webservices-c ". Andre funksjonar og tenester kan slåast på eller av i programinnstillingane.">
 
 <!-- add-on related points for branded builds -->
 <!ENTITY rights.addons-a "Utvidingstenester: ">
 <!ENTITY rights.addons-term1 "Opne programinnstillingane">
 <!ENTITY rights.addons-term2 "Vel &smart.label;-panelet i &advance.label;-kategorien">
+<!ENTITY rights.addons-term4 "Tillegstenestene er slått av no">
 
 <!-- safe browsing points for branded builds -->
 <!ENTITY rights.safebrowsing-a "Trygg nettlesing: ">

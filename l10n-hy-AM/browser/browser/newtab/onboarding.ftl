@@ -21,12 +21,12 @@ onboarding-button-label-get-started = Սկսել
 onboarding-welcome-header = Բարի գալուստ { -brand-short-name }
 onboarding-welcome-body = Դուք ունեք զննարկիչ: <br/> Ծանոթացեք { -brand-product-name } -ի մնացած մասի հետ:
 onboarding-welcome-learn-more = Իմացեք ավելին առավելությունների մասին:
+onboarding-join-form-header = Միանալ { -brand-product-name }
 onboarding-welcome-modal-get-body = Դուք ունեք զննարկիչը։<br/>Հիմա ստացեք առավելագույնը { -brand-product-name }-ից։
 onboarding-welcome-modal-supercharge-body = Գերազանցեք ձեր գաղտնիության պաշտպանությունը։
 onboarding-welcome-modal-privacy-body = Դուք ունեք զննարկիչ։ եկեք ավելացնենք ավելի շատ գաղտնիության պաշտպանություն։
 onboarding-welcome-modal-family-learn-more = Իմացեք { -brand-product-name } ապրանքների ընտանիքի մասին։
 onboarding-welcome-form-header = Սկսեք այստեղ
-onboarding-join-form-header = Միանալ { -brand-product-name }
 onboarding-join-form-body = Սկսելու համար մուտքագրեք ձեր էլ. Փոստի հասցեն:
 onboarding-join-form-email =
     .placeholder = Մուտքագրեք էլ․ փոստ
@@ -147,6 +147,9 @@ onboarding-facebook-container-button = Ավելացնել ընդլայնում
 onboarding-import-browser-settings-title = Ներածեք Ձեր էջանիշերը, գաղտնաբառերը և ավելին
 onboarding-import-browser-settings-text = Սուզվեք աջ — հեշտությամբ բերեք ձեր Chrome կայքերն ու պարամետրերը ձեզ հետ:
 onboarding-import-browser-settings-button = Ներածել Chrome-ի տվյալները
+onboarding-personal-data-promise-title = Անձնական է իր ձևավորմամբ
+onboarding-personal-data-promise-text = { -brand-product-name }-ը վերաբերվում է ձեր տվյալներին հարգանքով՝ վերցնելով ավելի քիչ, պաշտպանելով այն և անկեղղծ լինելով, թե ինչպես ենք մենք օգտագործում այն:
+onboarding-personal-data-promise-button = Կարդացեք մեր Խոստումը
 
 ## Message strings belonging to the Return to AMO flow
 

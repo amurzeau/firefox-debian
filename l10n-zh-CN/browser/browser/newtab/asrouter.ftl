@@ -221,3 +221,15 @@ cfr-whatsnew-passwords-icon-alt = 不安全密码钥匙图标
 cfr-whatsnew-pip-fullscreen-header = 画中画快速切换全屏
 cfr-whatsnew-pip-fullscreen-body = 当您将视频弹出到浮窗时，双击该窗口即可全屏显示。
 cfr-whatsnew-pip-fullscreen-icon-alt = 画中画图标
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = 保护信息，一目了然
+cfr-whatsnew-protections-body = 保护信息面板包含有关数据外泄和密码管理的摘要报告。现在，您可以跟踪已处理的外泄事件数量，并检查是否有任何存放的密码已遭泄露。
+cfr-whatsnew-protections-cta-link = 查看保护信息面板
+cfr-whatsnew-protections-icon-alt = 盾牌图标
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = 更佳的 PDF 体验
+cfr-whatsnew-better-pdf-body = PDF 文档现可直接在 { -brand-short-name } 中打开，让您的工作流程更顺畅。

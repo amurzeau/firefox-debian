@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Seqdec { $plugin-name } (deg { -brand-short-name })
-applications-preview-inapp =
-    .label = Sken deg { -brand-short-name }
 applications-open-inapp =
     .label = Ldi deg { -brand-short-name }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Ismal ifazen
 home-prefs-topsites-description = Ismal i tettwaliḍ aṭas
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Iwelleh-it-id { $provider }
 home-prefs-recommended-by-description = Agbur meqqren seg umaḍal, yettwag i kečč
+home-prefs-recommended-by-description-update = Agbur yelhan i yettwafen deg Web sɣur { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Amek iteddu
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Tiqṣidin yettwarefden
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Sken isumar n unadi deg isfuyla n tunigin tusligin
 suggestions-addressbar-settings = Beddel ismenyifen i uzray n tunigin, ticraḍ n yisebtar akked isumar n yiccaren
+suggestions-addressbar-settings-generic = Snifel ismenyifen i yisumar n ufeggag n tansa
 search-suggestions-cant-show = Anadi n isumar ur d ittwaskan ara deg yigmaḍ n ufeggag n tansa acku tsewleḍ { -brand-short-name } akken ur iḥerrez ara azray.
 search-one-click-header = Imseddayen n unadi ara tkecmeḍ s yiwen n usiti
 search-one-click-desc = Fren imseddayen n unadi-nniḍen ad d-ibanen daw ufeggag n tansa akked ufeggag n unadi m'ara ad tebduḍ ad tsekcameḍ awal n tsarut.
@@ -765,10 +768,10 @@ privacy-header = Tabaḍnit n iminig
 
 ## Privacy Section - Forms
 
+logins-header = Inekcam & wawalen uffiren
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Inekcam & wawalen uffiren
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Inekcam & wawalen uffiren
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = Asnifel n wawal uffir agejdan ur yeddi ara
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Senqed timagit-ik akken ad ternuḍ awal uffir agejdan.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Akken ad ternuḍ awal-inek uffir agejdan, sekcem inekcam-inek n tuqqna n Windows. Ayagi ad iεiwen deg ummesten n tɣellist n yimiḍanen-inek.
 # This message can be seen by trying to add a Master Password.
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Sefrek tisirag...
     .accesskey = s
+sitedata-cookies-exceptions =
+    .label = Sefrek tisuraf…
+    .accesskey = x
 
 ## Privacy Section - Address Bar
 
@@ -916,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Iccaren yeldin
     .accesskey = I
+addressbar-locbar-topsites-option =
+    .label = Ismal ufrinen
+    .accesskey = T
 addressbar-suggestions-settings = Snifel ismenyifen i yisumar n umsedday n unadi
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Idsilen umḍinen
 content-blocking-warning-title = Aqeṛṛu d afella!
 content-blocking-warning-description = Asewḥel n ugbru yezmer ur yettaǧǧa ara kra n yismal ad ddun akken iwata. Tzemreḍ s wudem fessusen ad tsenseḍ asewḥel i yismal i tettamned.
 content-blocking-learn-how = Issin amek
-content-blocking-etp-warning-description = Asewḥel n yineḍfaṛen yezmer ad yeglu s kra n lexṣaṣ deg tmahilin n kra n yismal. Smiren asebter s yineḍfaṛen akken ad d-yali ugbur meṛṛa.
 content-blocking-and-isolating-etp-warning-description = Asewḥel n yineḍfaren d uɛzal n yinagan n tuqqna yezmer ad iḥaz tamahilt n kra n yismal. Smiren asebter s yineḍfaren akken ad d-yali ugbur meṛṛa.
 content-blocking-warning-learn-how = Issin amek
 content-blocking-reload-description = Yessefk ad talseḍ asali n yiccaren-ik akken ad ddun ibeddilen-a.

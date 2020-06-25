@@ -89,6 +89,7 @@ newtab-menu-show-privacy-info = Sponsorët tanë & privatësia jonë
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = Kaq qe
+newtab-privacy-modal-button-manage = Administroni rregullime lënde të sponsorizuar
 newtab-privacy-modal-header = Privatësia juaj ka rëndësi.
 newtab-privacy-modal-paragraph-2 = Jo vetëm ju shërbejmë histori tërheqëse, por ju shfaqim edhe lëndë me vlerë, të kontrolluar mirë, prej sponsorësh të përzgjedhur. Flijeni mendjen, <strong>të dhënat e shfletimit tuaj nuk ikin kurrë nga kopja juaj personale e { -brand-product-name }-it</strong> — as ne nuk i shohim dot, as sponsorët tanë.
 newtab-privacy-modal-link = Mësoni se si funksionon privatësia në skedën e re
@@ -132,6 +133,10 @@ newtab-label-download = Të shkarkuara
 # Variables:
 #  $sponsorOrSource (String): This is the name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · E sponsorizuar
+# This string is used at the bottom of story cards to indicate sponsored content
+# Variables:
+#  $sponsor (String): This is the name of a sponsor
+newtab-label-sponsored-by = Sponsorizuar nga { $sponsor }
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -143,8 +148,8 @@ newtab-section-menu-manage-section = Administroni Ndarjen
 newtab-section-menu-manage-webext = Administroni Zgjerimin
 newtab-section-menu-add-topsite = Shtoni Sajt Kryesues
 newtab-section-menu-add-search-engine = Shtoni Motor Kërkimesh
-newtab-section-menu-move-up = Shpjere Sipër
-newtab-section-menu-move-down = Zbrite
+newtab-section-menu-move-up = Ngrije
+newtab-section-menu-move-down = Ule
 newtab-section-menu-privacy-notice = Shënim Mbi Privatësinë
 
 ## Section aria-labels
@@ -157,7 +162,7 @@ newtab-section-expand-section-label =
 ## Section Headers.
 
 newtab-section-header-topsites = Sajte Kryesues
-newtab-section-header-highlights = Highlights
+newtab-section-header-highlights = Në Pah
 # Variables:
 #  $provider (String): Name of the corresponding content provider.
 newtab-section-header-pocket = Rekomanduar nga { $provider }

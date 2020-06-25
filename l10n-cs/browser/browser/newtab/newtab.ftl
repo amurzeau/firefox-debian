@@ -89,6 +89,7 @@ newtab-menu-show-privacy-info = Naši sponzoři a vaše soukromí
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = Hotovo
+newtab-privacy-modal-button-manage = Nastavení sponzorovaného obsahu
 newtab-privacy-modal-header = Na vašem soukromí záleží.
 newtab-privacy-modal-paragraph-2 =
     Kromě zajímavých článků zobrazujeme také relevantní a prověřený obsah od vybraných sponzorů. Nemusíte se ale bát, <strong>vaše údaje nikdy neopustí { -brand-product-name.gender ->
@@ -138,6 +139,10 @@ newtab-label-download = Staženo
 # Variables:
 #  $sponsorOrSource (String): This is the name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · sponzrováno
+# This string is used at the bottom of story cards to indicate sponsored content
+# Variables:
+#  $sponsor (String): This is the name of a sponsor
+newtab-label-sponsored-by = Sponzorováno společností { $sponsor }
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -198,4 +203,4 @@ newtab-pocket-cta-text = Ukládejte si články do { -pocket-brand-name(case: "g
 ## This message and suggested action link are shown in each section of UI that fails to render.
 
 newtab-error-fallback-info = Jejda, při načítání tohoto obsahu se něco pokazilo.
-newtab-error-fallback-refresh-link = Obnovte prosím stránku a zkuste to znovu.
+newtab-error-fallback-refresh-link = Opětovným načtením stránky to zkuste znovu.

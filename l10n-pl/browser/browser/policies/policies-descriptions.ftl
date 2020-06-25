@@ -63,6 +63,7 @@ policy-ExtensionSettings = Zarządzanie wszystkimi aspektami instalacji rozszerz
 policy-ExtensionUpdate = Włączenie lub wyłączenie automatycznego aktualizowania rozszerzeń.
 policy-FirefoxHome = Konfiguracja strony startowej Firefoksa.
 policy-FlashPlugin = Zezwalanie lub zabranianie korzystania z wtyczki Flash.
+policy-Handlers = Konfiguracja domyślnych aplikacji obsługujących typy plików.
 policy-HardwareAcceleration = Wartość „fałsz” wyłącza przyspieszanie sprzętowe.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Ustawienie i opcjonalna blokada strony startowej.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Wracanie do starego za
 ##
 
 policy-LocalFileLinks = Zezwalanie podanym witrynom na odnośniki do lokalnych plików.
+policy-MasterPassword = Wymaganie lub uniemożliwienie używania hasła głównego.
 policy-NetworkPrediction = Włączenie lub wyłączenie przewidywania sieci (wstępnego pobierania DNS).
 policy-NewTabPage = Włączenie lub wyłączenie strony nowej karty.
 policy-NoDefaultBookmarks = Wyłączenie tworzenia domyślnych zakładek dołączonych do przeglądarki { -brand-short-name } oraz dynamicznych zakładek („Często odwiedzane” i „Ostatnio używane etykiety”). Uwaga: ta zasada jest uwzględniana tylko przed pierwszym uruchomieniem profilu.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Włączenie zachowywania haseł w menedżerze h
 # PDF.js and PDF should not be translated
 policy-PDFjs = Wyłączenie lub konfiguracja PDF.js, wbudowanej przeglądarki plików PDF w programie { -brand-short-name }.
 policy-Permissions2 = Konfiguracja uprawnień kamery, mikrofonu, położenia, powiadomień i automatycznego odtwarzania.
+policy-PictureInPicture = Włączenie lub wyłączenie funkcji „Obraz w obrazie”.
 policy-PopupBlocking = Domyślne zezwalanie pewnym witrynom na otwieranie wyskakujących okien.
 policy-Preferences = Ustawienie i zablokowanie wartości dla podzbioru preferencji.
 policy-PromptForDownloadLocation = Pytanie, gdzie zapisywać pliki podczas pobierania.

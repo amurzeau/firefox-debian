@@ -294,6 +294,7 @@
 <!ENTITY findToolbarCmd.tooltip "Buscar texto en la página">
 <!ENTITY spellToolbarCmd.label "Ortografía">
 <!ENTITY spellToolbarCmd.tooltip "Revisar ortografía de la selección o de la página entera">
+
 <!ENTITY imageToolbarCmd.label "Imagen">
 <!ENTITY imageToolbarCmd.tooltip "Inserta una nueva imagen o edita las propiedades de la imagen seleccionada">
 <!ENTITY hruleToolbarCmd.label "Línea Hor.">
@@ -306,7 +307,6 @@
 <!ENTITY anchorToolbarCmd.tooltip "Inserta un nuevo enlace con nombre o modifica las propiedades del enlace con nombre seleccionado">
 <!ENTITY TextColorButton.tooltip "Elija un color para el texto">
 <!ENTITY BackgroundColorButton.tooltip "Elija un color para el fondo">
-<!ENTITY throbber.tooltip "Ir a la página web de &vendorShortName;">
 <!ENTITY throbber.tooltip2 "Ir a la página de inicio de &brandShortName;">
 <!ENTITY HighlightColorButton.tooltip "Elegir color para remarcar texto">
 

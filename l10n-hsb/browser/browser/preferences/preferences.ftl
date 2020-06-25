@@ -320,8 +320,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } wužiwać (w { -brand-short-name })
-applications-preview-inapp =
-    .label = Přehlad w { -brand-short-name }
 applications-open-inapp =
     .label = W { -brand-short-name } wočinić
 
@@ -335,8 +333,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -503,11 +499,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Najhusćišo wopytane sydła
 home-prefs-topsites-description = Sydła, kotrež najhusćišo wopytujeće
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Wot { $provider } doporučeny
 home-prefs-recommended-by-description = Wulkotny wobsah z cyłeho weba, wubrany specielnje za was
+home-prefs-recommended-by-description-update = Wurjadny wobsah z cyłeho weba, wubrany wot { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Kak funguje
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsorowane stawizny
@@ -570,6 +572,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Pytanske namjety w priwatnych woknach pokazać
 suggestions-addressbar-settings = Wubjerće nastajenja za přehladowansku historiju, zapołožki a rajtarkowe namjety
+suggestions-addressbar-settings-generic = Nastajenja za druhe namjety adresoweho pola změnić
 search-suggestions-cant-show = Pytanske namjety njebudu so we wuslědkach adresoweho pola pokazać, dokelž sće { -brand-short-name } tak konfigurował, zo sej ženje historiju njespomjatkuje.
 search-one-click-header = Pytawy z jednym kliknjenjom
 search-one-click-desc = Wubjerće alternatiwne pytawy, kotrež so pod adresowym polom a pytanskim polom jewja, hdyž klučowe słowo zapodawaće.
@@ -773,10 +776,10 @@ privacy-header = Priwatnosć wobhladowaka
 
 ## Privacy Section - Forms
 
+logins-header = Přizjewjenja a hesła
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Přizjewjenja a hesła
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Přizjewjenja a hesła
     .searchkeywords = { -lockwise-brand-short-name }
@@ -812,8 +815,6 @@ forms-master-pw-fips-desc = Změnjenje hesła njeje so poradźiło
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Přepruwujće swoju identitu, zo byšće hłowne hesło wutworił.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Zapodajće swoje přizjewjenske daty Windows, zo byšće hłowne hesło wutworił. To wěstotu wašich kontow škita.
 # This message can be seen by trying to add a Master Password.
@@ -910,6 +911,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Prawa rjadować…
     .accesskey = P
+sitedata-cookies-exceptions =
+    .label = Wuwzaća rjadować…
+    .accesskey = W
 
 ## Privacy Section - Address Bar
 
@@ -924,6 +928,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Wočinjene rajtarki
     .accesskey = o
+addressbar-locbar-topsites-option =
+    .label = Najhusćišo wopytane sydła
+    .accesskey = N
 addressbar-suggestions-settings = Nastajenja za namjety pytawy změnić
 
 ## Privacy Section - Content Blocking
@@ -983,7 +990,6 @@ content-blocking-fingerprinters = Porstowe wotćišće
 content-blocking-warning-title = Kedźbu!
 content-blocking-warning-description = Blokowanje wobsaha móže zawinować, zo někotre websydła hižo njefunguja. Je lochko, blokowanje za sydła znjemóžnić, kotrymž dowěrjeće.
 content-blocking-learn-how = Zhońće kak
-content-blocking-etp-warning-description = Blokowanje přesćěhowakow móhło funkcionalnosć někotrych websydłow wobwliwować. Začitajće stronu z přesćěhowakami znowa, zo byšće wšón wobsah začitał.
 content-blocking-and-isolating-etp-warning-description = Blokowanje přesćěhowakow a izolowanje placko móhłoj funkcionalnosć někotrych websydłow wobwliwować. Začitajće stronu z přesćěhowakami znowa, zo byšće wšón wobsah začitał.
 content-blocking-warning-learn-how = Zhońće kak
 content-blocking-reload-description = Dyrbiće swoje rajtarki znowa začitać, zo byšće tute změny nałožił.

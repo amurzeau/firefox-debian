@@ -294,6 +294,7 @@
 <!ENTITY findToolbarCmd.tooltip "Canfod y testun ar y dudalen">
 <!ENTITY spellToolbarCmd.label "Sillafu">
 <!ENTITY spellToolbarCmd.tooltip "Gwirio sillafu o adran neu o'r dudalen gyfan">
+
 <!ENTITY imageToolbarCmd.label "Delwedd">
 <!ENTITY imageToolbarCmd.tooltip "Mewnosod delwedd newydd neu olygu priodweddau'r ddelwedd">
 <!ENTITY hruleToolbarCmd.label "H.Line">
@@ -306,7 +307,6 @@
 <!ENTITY anchorToolbarCmd.tooltip "Mewnosod angor a enwyd neu olygu priodweddau'r angor">
 <!ENTITY TextColorButton.tooltip "Dewiswch liw i'r testun">
 <!ENTITY BackgroundColorButton.tooltip "Dewiswch liw i'r cefndir">
-<!ENTITY throbber.tooltip "Mynd i dudalen gartref &vendorShortName;">
 <!ENTITY throbber.tooltip2 "Ewch i dudalen cartref &brandShortName;">
 <!ENTITY HighlightColorButton.tooltip "Dewis lliw amlygu ar gyfer y testun">
 

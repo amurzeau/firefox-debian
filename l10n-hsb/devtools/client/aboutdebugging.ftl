@@ -302,6 +302,9 @@ about-debugging-worker-push-service =
 # Displayed as title of the inspect button when service worker debugging is disabled.
 about-debugging-worker-inspect-action-disabled =
     .title = Přepruwowanje service worker je tuchwilu znjemóžnjene za multiprocesowy { -brand-shorter-name }
+# Displayed as title of the inspect button for zombie tabs (e.g. tabs loaded via a session restore).
+about-debugging-zombie-tab-inspect-action-disabled =
+    .title = Rajtark njeje so dospołnje začitał a njeda so přepruwować
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-main-process-name = Hłowny proces

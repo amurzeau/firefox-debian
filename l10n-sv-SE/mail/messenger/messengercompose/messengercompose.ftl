@@ -9,14 +9,6 @@
 remove-address-row-type = Ta bort fältet { $type }
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
-address-input-type =
-    { $count ->
-        [0] Tomt inmatningsfält { $type }
-        [one] Inmatningsfält { $type } med en adress
-       *[other] Inmatningsfält { $type } med { $count } adresser
-    }
-#   $type (String) - the type of the addressing row
-#   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
         [0] { $type }
@@ -42,3 +34,26 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Flytta till Dold kopia
     .accesskey = D
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [1] { $count } bilaga
+            [one] { $count } bilaga
+           *[other] { $count } bilagor
+        }
+    .accesskey = b
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [1] Bilagor
+            [one] { $count } bilaga
+           *[other] { $count } bilagor
+        }
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+button-return-receipt =
+    .label = Kvitto
+    .tooltiptext = Begär ett returkvitto för detta meddelande

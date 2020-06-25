@@ -49,6 +49,9 @@
 
 <!ENTITY folderProps.name.label                  "Isem:">
 <!ENTITY folderProps.name.accesskey              "I">
+<!ENTITY folderProps.color.label                 "Ini n tegnit:">
+<!ENTITY folderProps.color.accesskey             "I">
+<!ENTITY folderProps.reset.tooltip               "Err-d ini amezwer">
 <!ENTITY folderProps.location.label              "Adig:">
 <!ENTITY folderProps.location.accesskey          "A">
 
@@ -56,6 +59,7 @@
 <!ENTITY privileges.button.label                 "Tiseglutin…">
 <!ENTITY privileges.button.accesskey             "g">
 <!ENTITY permissionsDesc.label                   "Ɣur-k tisirag-agi:">
+<!ENTITY folderOtherUsers.label                  "Imdanen-nniḍen yesεan azref ad kecmen ɣer ukaram-a:">
 <!ENTITY folderType.label                        "Tawsit n ukaram:">
 
 <!ENTITY folderQuotaTab.label                    "Amur">

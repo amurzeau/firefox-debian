@@ -22,6 +22,7 @@ set-password-new-password = Novo geslo:
 set-password-reenter-password = Ponovno vnesite novo geslo:
 set-password-meter = Merilnik kakovosti gesla
 set-password-meter-loading = Nalagam
+master-password-admin = Vaš skrbnik zahteva, da imate za shranjevanje gesel nastavljeno glavno geslo.
 master-password-description = Glavno geslo ščiti podatke, kot so gesla spletnih strani. Če ga ustvarite, ga boste morali vnesti po enkrat v vsaki seji, v kateri bo { -brand-short-name } poskusil uporabiti shranjene podatke.
 master-password-warning = Prepričajte se, da ste si zapomnili glavno geslo, sicer ne boste mogli uporabljati podatkov, ki jih ščiti.
 remove-password =

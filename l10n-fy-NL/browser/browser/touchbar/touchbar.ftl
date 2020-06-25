@@ -20,6 +20,7 @@ open-location = Fier sykterm of adres yn
 share = Diele
 close-window = Finster slute
 open-sidebar = Sidebalken
+
 # This string describes shortcuts for search.
 search-popover = Fluchkeppelingen sykje
 # Describes searches limited to a specific scope
@@ -30,7 +31,7 @@ search-search-in = Sykje yn:
 
 search-bookmarks = Blêdwizers
 search-history = Skiednis
-search-opentabs = Iepen ljeplêden
+search-opentabs = Iepen ljepblêden
 search-tags = Labels
 search-titles = Titels
 

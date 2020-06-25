@@ -63,6 +63,7 @@ policy-ExtensionSettings = Administroni krejt anët e instalimit të zgjerimeve.
 policy-ExtensionUpdate = Aktivizoni ose çaktivizoni përditësime të vetvetishme të zgjerimeve.
 policy-FirefoxHome = Formësoni Kreun e Firefox-it
 policy-FlashPlugin = Lejoni ose jo përdorimin e shtojcës Flash.
+policy-Handlers = Formësoni trajtues parazgjedhje aplikacionesh.
 policy-HardwareAcceleration = Në u caktoftë "false", çaktivizohet përshpejtimi përmes hardware-it.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Caktoni faqen hyrëse, dhe kyçeni në daçi.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Rikthe sjelljen e diku
 ##
 
 policy-LocalFileLinks = Lejo sajte specifikë të krijojnë lidhje te kartela vendore.
+policy-MasterPassword = Kërko doemos ose pengo përdorimin e një fjalëkalimi të përgjithshëm.
 policy-NetworkPrediction = Aktivizoni ose çaktivizoni parashikim rrjeti (<em>DNS prefetching</em>).
 policy-NewTabPage = Aktivizoni ose çaktivizoni faqen Skedë e Re.
 policy-NoDefaultBookmarks = Çaktivizoni krijimin e faqerojtësve parazgjedhje të paketuar me { -brand-short-name }-in, dhe Faqerojtës të Mençur (Më të Vizituarit, Etiketa Së Fundi). Shënim: ky rregull ka efekt vetëm nëse përdoret përpara xhirimit për herë të parë nën profilin përkatës.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Aktivizoni ruajtjen e fjalëkalimeve te përgjeg
 # PDF.js and PDF should not be translated
 policy-PDFjs = Çaktivizoni pse formësoni PDF.js, parësin e brendshëm të PDF-ve në { -brand-short-name }.
 policy-Permissions2 = Formësoni lejet për kamerën, mikrofonin, vendndodhjen, njoftimet dhe vetëluajtjen.
+policy-PictureInPicture = Aktivizoni ose çaktivizoni veçorinë “Picture-in-Picture”.
 policy-PopupBlocking = Lejojuni, si parazgjedhje, disa sajteve të shfaqin flluska.
 policy-Preferences = Caktoni dhe kyçni vlerën për një nëngrup parapëlqimesh.
 policy-PromptForDownloadLocation = Pyet ku të ruhen kartelat kur shkarkohen.

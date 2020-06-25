@@ -63,6 +63,7 @@ policy-ExtensionSettings = Alle Einstellungen für die Erweiterungsinstallation 
 policy-ExtensionUpdate = Automatische Add-on-Updates aktivieren oder deaktivieren
 policy-FirefoxHome = Firefox-Startseite konfigurieren
 policy-FlashPlugin = Flash-Plugin-Verwendung erlauben oder verbieten
+policy-Handlers = Standardanwendungen für das Öffnen von Dateien, Protokollen und MIME-Typen festlegen
 policy-HardwareAcceleration = Hardwarebeschleunigung deaktiviert, falls false
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Startseite festlegen und optional zusätzlich unveränderbar setzen
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Veraltetes Cookie-Verh
 ##
 
 policy-LocalFileLinks = Festgelegten Websites Zugriff auf lokale Dateien erlauben
+policy-MasterPassword = Benutzung eines Master-Passworts erfordern oder verhindern
 policy-NetworkPrediction = Spekulative DNS-Abfragen für noch nicht angeforderte Ressourcen ("DNS-Prefetching") aktivieren oder deaktivieren
 policy-NewTabPage = Startseite für neue Tabs aktivieren oder deaktivieren
 policy-NoDefaultBookmarks = Standardlesezeichen von { -brand-short-name } und Intelligente Lesezeichenordner ("Meistbesucht", "Kürzlich verwendete Schlagwörter") nicht erstellen. Hinweis: Diese Richtlinie findet nur Anwendung, wenn sie vor dem ersten Ausführen des Profils aktiv wurde.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Speichern von Passwörtern in der Passwortverwal
 # PDF.js and PDF should not be translated
 policy-PDFjs = Eingebauten PDF-Betrachter von { -brand-short-name } (PDF.js) deaktivieren oder konfigurieren
 policy-Permissions2 = Berechtigungen für Kamera, Mikrofon, Standort, Benachrichtigungen und automatische Wiedergabe festlegen
+policy-PictureInPicture = Bild-im-Bild-Modus aktivieren oder deaktivieren
 policy-PopupBlocking = Popups für festgelegte Websites standardmäßig anzeigen
 policy-Preferences = Werte von bestimmten Einstellungen festlegen und Änderungen daran verhindern
 policy-PromptForDownloadLocation = Für gestartete Downloads nach Speicherort fragen
@@ -96,7 +99,7 @@ policy-RequestedLocales = Sprachen für die Anwendungsoberfläche in bevorzugter
 policy-SanitizeOnShutdown2 = Navigationsdaten beim Beenden löschen
 policy-SearchBar = Standardposition der Suchleiste setzen. Der Benutzer darf sie weiterhin anpassen.
 policy-SearchEngines = Suchmaschineneinstellungen anpassen. Diese Richtlinie ist nur für Versionen des Extended Support Release (ESR) verfügbar.
-policy-SearchSuggestEnabled = Suchvoschläge aktivieren oder deaktivieren
+policy-SearchSuggestEnabled = Suchvorschläge aktivieren oder deaktivieren
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = PKCS#11-Module installieren
 policy-SSLVersionMax = Höchste zu verwendende SSL-Version festlegen

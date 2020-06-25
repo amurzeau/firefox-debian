@@ -26,3 +26,5 @@ process-type-webisolated = Elkülönített webtartalom
 process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Foglalat
+# process preallocated; may change to other types
+process-type-prealloc = Előre lefoglalt

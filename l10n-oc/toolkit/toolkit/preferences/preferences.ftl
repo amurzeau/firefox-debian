@@ -22,6 +22,7 @@ set-password-new-password = Picatz lo senhal actual :
 set-password-reenter-password = Tornatz picatz lo senhal :
 set-password-meter = Mesura de la qualitat del senhal
 set-password-meter-loading = Cargament
+master-password-admin = Vòstre administrator requerís qu’ajatz un senhal principal definit per salvar vòstres senhals.
 master-password-description = Un senhal principal servís per protegir d'entresenhas sensiblas coma los senhals utilizats suls sites. Se ne creatz un, vos serà demandat de l'introduire un còp per session quand { -brand-short-name } accedís a las entresenhas enregistradas protegidas per aqueste senhal.
 master-password-warning = Fasètz atencion a oblidar pas lo senhal principal. Se lo oblidetz, auretz pas mai accès a las entresenhas que protegís.
 remove-password =

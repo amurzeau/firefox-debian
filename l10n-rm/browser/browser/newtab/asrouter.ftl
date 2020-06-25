@@ -212,11 +212,29 @@ cfr-doorhanger-milestone-ok-button = Vesair tut
 ## Lockwise message
 
 cfr-whatsnew-lockwise-header = Crear a moda simpla pleds-clav segirs
+cfr-whatsnew-lockwise-body = Igl è cumplitgà da chattar pleds-clav unics e segirs per mintga conto. Cun crear in pled-clav, tscherner il champ dal pled-clav per utilisar in pled-clav segir, generà da { -brand-shorter-name }.
 cfr-whatsnew-lockwise-icon-alt = Icona da { -lockwise-brand-short-name }
 
 ## Vulnerable Passwords message
 
+cfr-whatsnew-passwords-header = Retschaiva avertiments davart pleds-clav periclitads
+cfr-whatsnew-passwords-body = Hackers san che blera glieud dovra pliras giadas il medem pled-clav. Sche ti dovras il medem pled-clav sin differentas websites ed ina da questas websites è pertutgada dad ina sperdita da datas, vesas ti in avertiment en { -lockwise-brand-short-name } che ta recumonda da midar tes pled-clav sin questas websites.
+cfr-whatsnew-passwords-icon-alt = Icona per in pled-clav periclità
 
 ## Picture-in-Picture fullscreen message
 
+cfr-whatsnew-pip-fullscreen-header = Midar dal modus maletg-en-maletg a maletg entir
+cfr-whatsnew-pip-fullscreen-body = Suenter avair midà in video en ina fanestra flottanta, pos ti ussa midar en maletg entir cun in clic dubel sin questa fanestra.
 cfr-whatsnew-pip-fullscreen-icon-alt = Icona da maletg-en-maletg
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Las mesiras da protecziun en in sguard
+cfr-whatsnew-protections-body = La survista da las protecziuns includa infurmaziuns davart sperditas da datas e l'administraziun da pleds-clav. Ti pos ussa persequitar quants problems en connex cun sperditas da datas che ti has schlià e vesair sche ti has anc pleds-clav memorisads ch'èn pertutgads da sperditas da datas.
+cfr-whatsnew-protections-cta-link = Mussar la survista da las protecziuns
+cfr-whatsnew-protections-icon-alt = Icona dal scut
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Meglra experientscha en connex cun PDFs
+cfr-whatsnew-better-pdf-body = PDFs vegnan ussa averts direct en { -brand-short-name } per betg cumplitgar tes process da lavur.

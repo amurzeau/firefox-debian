@@ -116,6 +116,11 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Ymresymiadau
 safe-mode-title = Defnyddiwch y Modd Diogel
 restart-in-safe-mode-label = Ailgychwyn gydag Ychwanegion wedi eu Hanalluogi…
+clear-startup-cache-title = Ceisiwch glirio'r storfa gychwyn
+clear-startup-cache-label = Clirio'r storfa gychwyn…
+startup-cache-dialog-title = Clirio'r storfa gychwyn
+startup-cache-dialog-body = Ailgychwyn { -brand-short-name } i glirio storfa cychwyn. Ni fydd hyn yn newid eich gosodiadau nac yn dileu estyniadau rydych chi wedi'u hychwanegu at { -brand-short-name }.
+restart-button-label = Ailgychwyn
 
 ## Media titles
 
@@ -123,6 +128,7 @@ audio-backend = Cefn Sain
 max-audio-channels = Mwyaf o Sianeli
 channel-layout = Cynllun Sianeli Amgen
 sample-rate = Graddfa Samplo Amgen
+roundtrip-latency = Cylchdro cudd (gwyriad safonol)
 media-title = Cyfrwng
 media-output-devices-title = Dyfeisiau Allbwn
 media-input-devices-title = Dyfeisiau Mewnbwn

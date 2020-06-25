@@ -119,7 +119,7 @@
 <!ENTITY menuFavoriteFolder.label "最愛資料夾">
 <!ENTITY menuFavoriteFolder.accesskey "v">
 <!ENTITY folderPropsCmd2.label "屬性">
-<!ENTITY folderPropsFolderCmd2.label "資料夾屬性…">
+<!ENTITY folderPropsFolderCmd2.label "資料夾屬性">
 <!ENTITY folderPropsNewsgroupCmd2.label "新聞群組屬性">
 <!ENTITY folderPropsCmd.accesskey "o">
 <!ENTITY undoDeleteMsgCmd.label "取消刪除郵件">
@@ -155,7 +155,7 @@
 <!ENTITY showFolderPaneCmd.accesskey "F">
 <!ENTITY showFolderPaneColsCmd.label "資料夾窗格欄位">
 <!ENTITY showFolderPaneColsCmd.accesskey "P">
-<!ENTITY showMessageCmd.label "預覽面板">
+<!ENTITY showMessageCmd.label "訊息窗格">
 <!ENTITY showMessageCmd.accesskey "M">
 
 <!ENTITY folderView.label "資料夾">
@@ -604,7 +604,7 @@
 <!ENTITY stopButton.tooltip "停止傳送">
 <!ENTITY junkButton.tooltip "標示所選訊息為垃圾信">
 <!ENTITY notJunkButton.tooltip "標示所選訊息為非垃圾信">
-<!ENTITY addressBookButton.tooltip "開啟通訊錄">
+<!ENTITY addressBookButton.tooltip "前往通訊錄">
 <!ENTITY chatButton.tooltip "顯示聊天分頁">
 <!ENTITY tagButton.tooltip "將郵件加上標籤">
 <!ENTITY compactButton.tooltip "從指定資料夾移除已刪郵件">

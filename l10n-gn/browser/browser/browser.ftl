@@ -2,13 +2,57 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (Kundaha ñemi)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (Kundaha ñemi)
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (Kundaha ñemi)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (Kundaha ñemi)
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = Ehecha marandu ko tenda pegua
 
 ## Tooltips for images appearing in the address bar
 
 urlbar-services-notification-anchor =
-    .tooltiptext = Eike ñe'ẽmondo ñemohenda ra'ãngarupápe
+    .tooltiptext = Eike ñe’ẽmondo ñemohenda ra'ãngarupápe
 urlbar-web-notification-anchor =
     .tooltiptext = Emoambue eipotárõ oñemog̃uahẽ ndéve ñemomarandu ko ñandutirenda omondóva.
 urlbar-midi-notification-anchor =
@@ -20,9 +64,9 @@ urlbar-web-authn-anchor =
 urlbar-canvas-notification-anchor =
     .tooltiptext = Ñangareko Moñeĩ Oñeguehohẽ hag̃ua Canvas
 urlbar-web-rtc-share-microphone-notification-anchor =
-    .tooltiptext = Eipuruhína neñe'atãha ko tenda ndive
+    .tooltiptext = Eipuruhína neñe’atãha ko tenda ndive
 urlbar-default-notification-anchor =
-    .tooltiptext = Eike ñe'ẽmondo rupápe
+    .tooltiptext = Eike ñe’ẽmondo rupápe
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Tendaite jerurepy rupa ijurujáva
 urlbar-xr-notification-anchor =
@@ -30,25 +74,25 @@ urlbar-xr-notification-anchor =
 urlbar-storage-access-anchor =
     .tooltiptext = Embojuruja kundaha rembiapo ñemoneĩ rupa
 urlbar-translate-notification-anchor =
-    .tooltiptext = Emoñe'ẽasa ko kuatiarogue
+    .tooltiptext = Emoñe’ẽasa ko kuatiarogue
 urlbar-web-rtc-share-screen-notification-anchor =
-    .tooltiptext = Eñangareko moherakuã nerovetã térã mba'erechaha ko tenda ndive
+    .tooltiptext = Eñangareko moherakuã nerovetã térã mba’erechaha ko tenda ndive
 urlbar-indexed-db-notification-anchor =
     .tooltiptext = Eguereko ñangarekoha rekaha. Eikutu Esc eguereko jey hag̃ua pe ñangarekoha.
 urlbar-password-notification-anchor =
-    .tooltiptext = Eike ñe'ẽmondo rupa ñe'ẽñemi ñongatuhápe
+    .tooltiptext = Eike ñe’ẽmondo rupa ñe’ẽñemi ñongatuhápe
 urlbar-translated-notification-anchor =
-    .tooltiptext = Eñangareko kuatiarogue ñe'ẽasa rehe
+    .tooltiptext = Eñangareko kuatiarogue ñe’ẽasa rehe
 urlbar-plugins-notification-anchor =
-    .tooltiptext = Mba'ejoajurã jepuru ñangareko
+    .tooltiptext = Mba’ejoajurã jepuru ñangareko
 urlbar-web-rtc-share-devices-notification-anchor =
-    .tooltiptext = Eñangareko moherakuã nerovetã térã mba'erechaha ko tenda ndive
+    .tooltiptext = Eñangareko moherakuã nerovetã térã mba’erechaha ko tenda ndive
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Embojuruja ñemboheta ijeheguíva ra’angarupa
 urlbar-persistent-storage-notification-anchor =
-    .tooltiptext = Mba'ekuaarã ñembyaty, ñembyaty hi'arekuaávape
+    .tooltiptext = Mba’ekuaarã mboheta ñembyaty hi’arekuaávape
 urlbar-addons-notification-anchor =
-    .tooltiptext = Eike ñe'ẽmondo moĩmbaha ñemohenda ra'ãngarupápe
+    .tooltiptext = Eike ñe’ẽmondo moĩmbaha ñemohenda ra’ãngarupápe
 urlbar-tip-help-icon =
     .title = Eipota pytyvõ
 urlbar-search-tips-confirm = Oĩma, aikumbýma
@@ -77,11 +121,11 @@ urlbar-web-notifications-blocked =
 urlbar-camera-blocked =
     .tooltiptext = Ejokóma ne ta'ãngamýi ko ñanduti rendápe g̃uarã.
 urlbar-microphone-blocked =
-    .tooltiptext = Ejokóma ne ñe'ẽatãha ko ñanduti rendápe g̃uarã.
+    .tooltiptext = Ejokóma ne ñe’ẽatãha ko ñanduti rendápe g̃uarã.
 urlbar-screen-blocked =
-    .tooltiptext = Ejokóma ko ñanduti renda emoherakuã hag̃ua ne mba'erechaha.
+    .tooltiptext = Ejokóma ko ñanduti renda emoherakuã hag̃ua ne mba’erechaha.
 urlbar-persistent-storage-blocked =
-    .tooltiptext = Ejokóma mba'ekuaarã ñembyaty hi'aréva ko ñanduti renda pegua.
+    .tooltiptext = Ejokóma mba’ekuaarã ñembyaty hi’aréva ko ñanduti renda pegua.
 urlbar-popup-blocked =
     .tooltiptext = Ejokoukákuri ovetã apysẽva ko ñandutirendápe g̃uarã.
 urlbar-autoplay-media-blocked =
@@ -95,7 +139,7 @@ urlbar-install-blocked =
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
-    .tooltiptext = Ko techaukaha mbosako'i ({ $shortcut })
+    .tooltiptext = Ko techaukaha mbosako’i ({ $shortcut })
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -118,34 +162,34 @@ full-screen-autohide =
     .label = Tembipuru renda moñemi
     .accesskey = H
 full-screen-exit =
-    .label = Mba'erechaha tuichavéva rekógui ñesẽ
+    .label = Mba’erechaha tuichavéva rekógui ñesẽ
     .accesskey = F
 
 ## Search Engine selection buttons (one-offs)
 
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
-search-one-offs-with-title = Ko'ág̃a, eheka hendive:
+search-one-offs-with-title = Ko’ág̃a, eheka hendive:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
-    .label = Jeheka mba'epytyvõrã moambue
+    .label = Jeheka mba’epytyvõrã moambue
 search-one-offs-change-settings-compact-button =
-    .tooltiptext = Jeheka mba'epytyvõrã moambue
+    .tooltiptext = Jeheka mba’epytyvõrã moambue
 search-one-offs-context-open-new-tab =
     .label = Tendayke pyahúpe jeheka
     .accesskey = T
 search-one-offs-context-set-as-default =
-    .label = Emopyenda ijypykuévaramo ha jehekaha mongu'eha
+    .label = Emopyenda ijypykuévaramo ha jehekaha mongu’eha
     .accesskey = D
 search-one-offs-context-set-as-default-private =
-    .label = Emoĩ jehekaha mongu'eha ijypykuévaramo ovetã ñemíme
-    .accesskey = E
+    .label = Emoĩ jehekaha mongu’eha ijypykuévaramo ovetã ñemíme
+    .accesskey = P
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
-    .label = Ehechauka mbosako'iha eñongatúvo
+    .label = Ehechauka mbosako’iha eñongatúvo
     .accesskey = S
 bookmark-panel-done-button =
     .label = Mohu'ã
@@ -157,21 +201,21 @@ bookmark-panel =
 
 ## Identity Panel
 
-identity-connection-not-secure = Jeikekatu'ỹ
+identity-connection-not-secure = Jeikekatu’ỹ
 identity-connection-secure = Jeikekatu
 identity-connection-internal = Kóva { -brand-short-name } jeroviáva; kuatiarogue.
 identity-connection-file = Ko kuatiarogue oñeñongatu mohendahápe.
 identity-extension-page = Ko kuatiarogue oñemyanyhẽ jepysokue guive.
-identity-active-blocked = { -brand-short-name } ojokóma ko kuatiarogue pehẽ ijerovia'ỹha.
+identity-active-blocked = { -brand-short-name } ojokóma ko kuatiarogue pehẽ ijerovia’ỹha.
 identity-custom-root = Jeike ohechapyréva mboajepyre me’ẽha Mozilla omoneĩ’ỹva.
-identity-passive-loaded = Ko kuatiarogue pehẽ heta hendápe nda'ijeroviapái (mba'era'ãngáramo).
+identity-passive-loaded = Ko kuatiarogue pehẽ heta hendápe nda’ijeroviapái (mba’era’ãngáramo).
 identity-active-loaded = Ndereguerekói pa'ũ ko kuatiaroguépe g̃uarã.
 identity-weak-encryption = Ko kuatiarogue oipuru ñangarekoha ikangýva.
-identity-insecure-login-forms = Ojehaiva'ekue jeike hag̃ua ko kuatiaroguépe oñemondakuaa.
+identity-insecure-login-forms = Ojehaiva’ekue jeike hag̃ua ko kuatiaroguépe oñemondakuaa.
 identity-permissions =
     .value = Moneĩ
 identity-permissions-reload-hint = Ikatu hína kuatiarogue emyanyhẽjey umi moambuepyre oñemboheko hag̃ua.
-identity-permissions-empty = Nome'ẽi ko tenda ñemoneĩ ha'etéva.
+identity-permissions-empty = Nome’ẽi ko tenda ñemoneĩ ha’etéva.
 identity-clear-site-data =
     .label = Emopotĩ kookie ha mba’ekuaarã tendágui…
 identity-connection-not-secure-security-view = Nde jeike nahekorosãi ko tendápe.
@@ -179,25 +223,25 @@ identity-connection-verified = Eikehína tekorosãme ko tendápe.
 identity-ev-owner-label = Mboajepyre osẽmava:
 identity-description-custom-root = Mozilla nomoneĩri ko mboajepyre me’ẽhápe. Ikatu oñembojuaju apopyvusu oku’éva térã ñangarekoha rupive. <label data-l10n-name="link">Kuaave</label>
 identity-remove-cert-exception =
-    .label = Emongue oĩ'ỹva
-    .accesskey = E
-identity-description-insecure = Nde jeike ko tendápe naiñemíri. Marandu remondóva ikatu ohecha ambue tapicha (ñe'ẽñemíramo, ñe'ẽmondo, kuatia'atã ñemurã ha ambue).
+    .label = Emongue oĩ’ỹva
+    .accesskey = R
+identity-description-insecure = Nde jeike ko tendápe naiñemíri. Marandu remondóva ikatu ohecha ambue tapicha (ñe’ẽñemíramo, ñe’ẽmondo, kuatia’atã ñemurã ha ambue).
 identity-description-insecure-login-forms = Pe marandu tembiapo ñepyrũ pegua emoingéva ko kuatiaroguépe nahekorosãi ha ikatu noĩporãmbái.
 identity-description-weak-cipher-intro = Nde jeike ko ñanduti rendápe oipuru ñangarekoha ikangýva ha naiñemíri.
 identity-description-weak-cipher-risk = Ambue tapichakuéra ikatu ohecha nemarandu térã omoambue ñanduti kuatiarogue reko.
-identity-description-active-blocked = { -brand-short-name } ojokóma ko kuatiarogue pehẽ ijerovia'ỹha. <label data-l10n-name="link">Kuaave</label>
+identity-description-active-blocked = { -brand-short-name } ojokóma ko kuatiarogue pehẽ ijerovia’ỹha. <label data-l10n-name="link">Kuaave</label>
 identity-description-passive-loaded = Nde jeike naiñemíri ha nemarandu remoingéva ko tendápe ikatu ohecha ambue tapicha.
-identity-description-passive-loaded-insecure = Ko ñanduti renda oguereko hetepy ndaijeroviapáiva (mba'era'ãngáramo). <label data-l10n-name="link">Kuaave</label>
-identity-description-passive-loaded-mixed = { -brand-short-name } ojokóramo jepe heta retepy, oĩ gueteri tetepy kuatiaroguépe ndaijegueroviapáiva (mba'era'ãngáramo). <label data-l10n-name="link">Kuaave</label>
+identity-description-passive-loaded-insecure = Ko ñanduti renda oguereko hetepy ndaijeroviapáiva (mba’era'ãngáramo). <label data-l10n-name="link">Kuaave</label>
+identity-description-passive-loaded-mixed = { -brand-short-name } ojokóramo jepe heta retepy, oĩ gueteri tetepy kuatiaroguépe ndaijegueroviapáiva (mba’era’ãngáramo). <label data-l10n-name="link">Kuaave</label>
 identity-description-active-loaded = Ko ñanduti renda oguereko hetepy ndaijeroviapáiva (guiõramo) ha nde jeike pype naiñemíri.
-identity-description-active-loaded-insecure = Marandu remondóva ko kuatiaroguépe ikatu ohecha ambue tapicha (ñe'ẽñemíramo, ñe'ẽmondo, kuatia'atã ñemurã ha ambue).
+identity-description-active-loaded-insecure = Marandu remondóva ko kuatiaroguépe ikatu ohecha ambue tapicha (ñe’ẽñemíramo, ñe’ẽmondo, kuatia’atã ñemurã ha ambue).
 identity-learn-more =
     .value = Kuaave
 identity-disable-mixed-content-blocking =
-    .label = Emonge ñemo'ã sapy'aite
+    .label = Emonge ñemo’ã sapy’aite
     .accesskey = D
 identity-enable-mixed-content-blocking =
-    .label = Ñemo'ã myandy
+    .label = Ñemo’ã myandy
     .accesskey = E
 identity-more-info-link-text =
     .label = Maranduve
@@ -219,9 +263,26 @@ popup-select-camera =
     .value = Ta'angamýi hetápe guarãva:
     .accesskey = C
 popup-select-microphone =
-    .value = Ñe'ẽatãha hetápe g̃uarãva:
+    .value = Ñe’ẽatãha hetápe g̃uarãva:
     .accesskey = M
-popup-all-windows-shared = Oñemosarambíta opaite ovetã ojehecháva mba'erechahápe.
+popup-all-windows-shared = Oñemosarambíta opaite ovetã ojehecháva mba’erechahápe.
+popup-screen-sharing-not-now =
+    .label = Ani ko’ág̃a
+    .accesskey = w
+popup-screen-sharing-never =
+    .label = Ani emoneĩ araka’eve
+    .accesskey = N
+popup-silence-notifications-checkbox = Embogue momarandu’i { -brand-short-name } emoherakuã aja
+popup-silence-notifications-checkbox-warning = { -brand-short-name } ndohechaukamo’ãi momarandu’i oñemoherakuã aja.
+
+## WebRTC window or screen share tab switch warning
+
+sharing-warning-window = Emoherakuãhína { -brand-short-name }. Ambue tapicha ikatu ohecha ohasávo ovetã pyahúpe.
+sharing-warning-screen = Emoherakuã mba’erechaha tuichavéva. Ambue tapicha ikatu ohecha ohasávo ovetã pyahúpe.
+sharing-warning-proceed-to-tab =
+    .label = Eho tendayképe
+sharing-warning-disable-for-session =
+    .label = Eipe’a ñemo’ã ko tendápe g̃uarã
 
 ## DevTools F12 popup
 
@@ -230,9 +291,9 @@ enable-devtools-popup-description = Eipurútarõ mbopya’eha F12 embojurujara�
 ## URL Bar
 
 urlbar-default-placeholder =
-    .defaultPlaceholder = Ñe'ẽreka ýrõ kundaharape
+    .defaultPlaceholder = Ñe’ẽreka ýrõ kundaharape
 urlbar-placeholder =
-    .placeholder = Ñe'ẽreka ýrõ kundaharape
+    .placeholder = Ñe’ẽreka ýrõ kundaharape
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Kundahára oĩ ñangarekoha okayguáva poguýpe
 urlbar-permissions-granted =
@@ -242,7 +303,7 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Jepysokue:
-urlbar-go-end-cap =
+urlbar-go-button =
     .tooltiptext = Kundaharape renda URL-pe jeho
 urlbar-page-action-button =
     .tooltiptext = Kuatiarogue rembiapo

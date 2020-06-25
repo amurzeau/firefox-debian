@@ -4,6 +4,12 @@
 
 all-tabs-menu-undo-close-tab =
     .label = Mở lại thẻ vừa đóng
+all-tabs-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Mở lại thẻ vừa đóng
+           *[other] Mở lại các thẻ vừa đóng
+        }
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = Tìm kiếm thẻ

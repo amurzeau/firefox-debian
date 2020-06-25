@@ -103,6 +103,8 @@ options-enable-chrome-tooltip =
 options-enable-remote-label = Daloke pytanje za zmólkami
 options-enable-remote-tooltip =
     .title = Zmóžnjenje toś togo nastajenja dowólijo wuwijaŕskim rědam, daloku instancu Firefox ako Firefox OS za zmólkami pśepytowaś
+options-enable-remote-tooltip2 =
+    .title = Gaž toś to nastajenje zmóžnjaśo, se instanca wobglědowaka znazdala za zmólkami pśepytujo
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = Service worker pśez HTTP zmóžniś (gaž rědy su wócynjone)
 options-enable-service-workers-http-tooltip =

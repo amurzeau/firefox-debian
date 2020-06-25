@@ -26,3 +26,5 @@ process-type-webisolated = ਨਿਖੇੜੀ ਵੈੱਬ ਸਮੱਗਰੀ
 process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = ਸਾਕਟ
+# process preallocated; may change to other types
+process-type-prealloc = ਪਹਿਲਾਂ ਜਾਰੀ ਕੀਤਾ

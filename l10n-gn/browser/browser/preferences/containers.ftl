@@ -10,8 +10,10 @@ containers-window-new =
 containers-window-update =
     .title = { $name } Guerekoha jeguerohoryvéva
     .style = width: 45em
+
 containers-window-close =
     .key = w
+
 # This is a term to store style to be applied
 # on the three labels in the containers add/edit dialog:
 #   - name
@@ -22,20 +24,26 @@ containers-window-close =
 # of the three messages ensures that all three labels
 # will be aligned correctly.
 -containers-labels-style = min-width: 4rem
+
 containers-name-label = Téra
     .accesskey = T
     .style = { -containers-labels-style }
+
 containers-name-text =
     .placeholder = Emoinge guerekoha réra
+
 containers-icon-label = Ta'ãngachu'i
     .accesskey = T
     .style = { -containers-labels-style }
+
 containers-color-label = Sa'y
     .accesskey = S
     .style = { -containers-labels-style }
+
 containers-button-done =
     .label = Apopyre
     .accesskey = A
+
 containers-color-blue =
     .label = Hovy
 containers-color-turquoise =
@@ -54,6 +62,7 @@ containers-color-purple =
     .label = Pytãũ
 containers-color-toolbar =
     .label = Embojoja tembipuru renda
+
 containers-icon-fence =
     .label = Korajere
 containers-icon-fingerprint =
@@ -65,7 +74,7 @@ containers-icon-briefcase =
 containers-icon-dollar =
     .label = Dólar reheguaite
 containers-icon-cart =
-    .label = Mba'yruguata'i jejoguaha
+    .label = Mba’yruguata’i jejoguaha
 containers-icon-circle =
     .label = Kyta
 containers-icon-vacation =

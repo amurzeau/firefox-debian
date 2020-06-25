@@ -9,14 +9,6 @@
 remove-address-row-type = Fjern { $type }-feltet
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
-address-input-type =
-    { $count ->
-        [0] Tomt { $type } inntastingsfelt
-        [one] { $type } inntastingsfelt med en adresse
-       *[other] { $type } inntastingsfelt med { $count } adresser
-    }
-#   $type (String) - the type of the addressing row
-#   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
         [0] { $type }
@@ -34,11 +26,32 @@ pill-action-edit =
     .label = Rediger adresse
     .accesskey = e
 pill-action-move-to =
-    .label = Flytt til Til
+    .label = Flytt til Til-feltet
     .accesskey = t
 pill-action-move-cc =
-    .label = Flytt til Kopi
+    .label = Flytt til Kopi-feltet
     .accesskey = K
 pill-action-move-bcc =
-    .label = Flytt til Blindkopi
+    .label = Flytt til Blindkopi-feltet
     .accesskey = B
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [1] { $count } vedlegg
+           *[other] { $count } vedlegg
+        }
+    .accesskey = v
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [1] { $count } vedlegg
+           *[other] { $count } vedlegg
+        }
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+button-return-receipt =
+    .label = Kvittering
+    .tooltiptext = Be om returkvittering for denne meldingen

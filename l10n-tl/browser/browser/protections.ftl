@@ -52,8 +52,6 @@ fingerprinter-tab-title = Mga fingerprinter
 fingerprinter-tab-content = Nangangalap ang mga fingerprinter ng mga setting sa iyong browser at computer para makagawa ng profile mo. Gamit ang digital fingerprint na ito, pwede ka nilang bantayan sa iba't-ibang mga website. <a data-l10n-name="learn-more-link">Alamin</a>
 cryptominer-tab-title = Mga cryptominer
 cryptominer-tab-content = Ginagamit ng mga cryptominer ang computing power ng sistema mo para kumita ng digital na pera. Ang mga cryptomining script ay nakakaubos ng baterya mo, nagpapabagal sa computer, at pwedeng dumagdag sa bayarin mo sa kuryente. <a data-l10n-name="learn-more-link">Alamin</a>
-protections-close-button =
-    .aria-label = Isara
 protections-close-button2 =
     .aria-label = Isara
     .title = Isara
@@ -74,6 +72,7 @@ lockwise-passwords-stored =
         [one] Ligtas na naimbak ang password <a data-l10n-name="lockwise-how-it-works">Paano gumagana</a>
        *[other] Ligtas na naimbak ang mga password <a data-l10n-name="lockwise-how-it-works">Paano gumagana</a>
     }
+lockwise-how-it-works-link = Paano ito gumagana
 turn-on-sync = Buksan ang { -sync-brand-short-name }...
     .title = Pumunta sa sync preferences
 manage-connected-devices = Pamahalaan ang mga device…
@@ -123,6 +122,9 @@ password-warning =
         [one] Ang naka-save na login ay maaaring nalantad sa isang data breach. Baguhin ang password na ito para sa mas mabuting seguridad online. <a data-l10n-name="lockwise-link">Tingnan ang mga Naka-save na Login</a>
        *[other] Ang mga naka-save na login ay maaaring nalantad sa isang data breach. Baguhin ang mga password na ito para sa mas mabuting seguridad online. <a data-l10n-name="lockwise-link">Tingnan ang mga Naka-save na Login</a>
     }
+monitor-no-breaches-title = Magandang balita!
+monitor-view-report-link = Tingnan ang Report
+    .title = Resolve breaches on { -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

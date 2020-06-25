@@ -26,6 +26,7 @@ policy-DisabledCiphers = השבתת צפנים.
 policy-DefaultDownloadDirectory = הגדרת תיקיית ההורדות ברירת המחדל.
 policy-DisableAppUpdate = מניעת עדכון הדפדפן.
 policy-DisableBuiltinPDFViewer = השבתת PDF.js, מציג ה־PDF המובנה ב־{ -brand-short-name }.
+policy-DisableDefaultBrowserAgent = למנוע מסוכן הדפדפן ברירת המחדל מלבצע פעולות כלשהן. תקף ל־Windows בלבד; בסביבות אחרות אין את הסוכן הזה.
 policy-DisableDeveloperTools = חסימת גישה לכלי הפיתוח.
 policy-DisableFeedbackCommands = השבתת פקודות לשליחת משוב מתפריט העזרה (שליחת משוב ודיווח על אתר מטעה).
 policy-DisableFirefoxAccounts = השבתת שירותים מבוססי { -fxaccount-brand-name }, לרבות Sync.
@@ -62,6 +63,7 @@ policy-ExtensionSettings = ניהול כל ההיבטים של התקנת הרח
 policy-ExtensionUpdate = הפעלה או השבתה של עדכונים אוטומטיים להרחבות.
 policy-FirefoxHome = הגדרת תצורה של מסך הבית של Firefox.
 policy-FlashPlugin = לאפשר או לדחות את השימוש בתוסף החיצוני Flash.
+policy-Handlers = קביעת תצורה של מטפלים ביישומי ברירת מחדל.
 policy-HardwareAcceleration = כיבוי האצת חומרה אם מוגדר כ־false.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = הגדרה ונעילה כרשות של דף הבית.
@@ -74,6 +76,7 @@ policy-LegacyProfiles = השבתת התכונה האוכפת פרופיל נפר
 ##
 
 policy-LocalFileLinks = לאפשר לאתרים מסויימים לקשר לקבצים מקומיים.
+policy-MasterPassword = לדרוש או למנוע שימוש בססמה ראשית.
 policy-NetworkPrediction = הפעלה או השבתה של חיזוי רשתי (אחזור מוקדם באמצעות DNS).
 policy-NewTabPage = הפעלה או השבתה של דף הלשונית החדשה.
 policy-NoDefaultBookmarks = ביטול יצירת הסימניות המוגדרות כברירת מחדל עם { -brand-short-name }, ואת הסימניות החכמות (הנצפות ביותר, תגים אחרונים). הערה: מדיניות זו יעילה רק אם נעשה בה שימוש קודם להפעלה הראשונה של הפרופיל.
@@ -85,6 +88,7 @@ policy-PasswordManagerEnabled = הפעלה של שמירת ססמאות במנה
 # PDF.js and PDF should not be translated
 policy-PDFjs = השבתה או הגדרת התצורה של PDF.js, מציג ה־PDF המובנה ב־{ -brand-short-name }.
 policy-Permissions2 = קביעת תצורה של הרשאות עבור מצלמה, מיקרופון, מיקום, התרעות וניגון אוטומטי.
+policy-PictureInPicture = הפעלה או השבתה של תמונה בתוך תמונה.
 policy-PopupBlocking = לאפשר לאתרים מסוימים להקפיץ חלונות כברירת מחדל.
 policy-Preferences = הגדרה ונעילת הערכים עבור חלק מההעדפות.
 policy-PromptForDownloadLocation = הצגת שאלה היכן לשמור קבצים בזמן הורדה.

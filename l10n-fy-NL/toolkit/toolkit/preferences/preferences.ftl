@@ -22,6 +22,7 @@ set-password-new-password = Nij wachtwurd ynfiere:
 set-password-reenter-password = Wachtwurd opnij ynfiere:
 set-password-meter = Wachtwurdkwaliteitsmeter
 set-password-meter-loading = Lade
+master-password-admin = Jo behearder fereasket dat jo in haadwachtwurd ynsteld hawwe om wachtwurden te bewarjen.
 master-password-description = In haadwachtwurd wurdt brûkt om gefoelige gegevens te beskermjen, lykas wachtwurden foar websites. As jo in haadwachtwurd oanmeitsje sil jo by elke sesje ien kear frege wurde dit yn te fieren as { -brand-short-name } troch it wachtwurd beskerme bewarre ynformaasje ophellet.
 master-password-warning = Wês wis dat jo it ynstelde haadwachtwurd ûnthâlde. As jo jo haadwachtwurd ferjitte, sille jo net langer yn steat wêze om tagong te krijen ta de earder beskerme gegevens.
 remove-password =

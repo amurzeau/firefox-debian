@@ -125,10 +125,6 @@ cfr-whatsnew-lockwise-take-link-text = Obtenga la aplicación
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Escriba menos, encuentre más con la barra de direcciones
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Acceda a los sitios que usa más con un solo clic en la barra de direcciones. Encuentre las cosas más rápido con los resultados de { $searchEngineName } y su historial de navegación.
-cfr-whatsnew-searchbar-body-generic = Acceda a los sitios que usa más con un solo clic en la barra de direcciones. Encuentre las cosas más rápido con los resultados de { $searchEngineName } y su historial de navegación.
 cfr-whatsnew-searchbar-body-topsites = Ahora, simplemente seleccione la barra de direcciones y se va a expandir un cuadro con enlaces a sus sitios principales.
 cfr-whatsnew-searchbar-icon-alt-text = Ícono de lupa
 
@@ -235,3 +231,15 @@ cfr-whatsnew-passwords-icon-alt = Icono de contraseña vulnerable
 cfr-whatsnew-pip-fullscreen-header = Llevar el picture-in-picture a pantalla completa
 cfr-whatsnew-pip-fullscreen-body = Cuando lleva un video a una ventana flotante, puede hacer doble clic en esa ventana para llevarlo a pantalla completa.
 cfr-whatsnew-pip-fullscreen-icon-alt = Ícono de picture-in-picture
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Protecciones a la vista
+cfr-whatsnew-protections-body = El Panel de protecciones incluye informes resumidos sobre violaciones de datos y administración de contraseñas. Ahora puede realizar un seguimiento de cuántas violaciones resolvió y ver si alguna de sus contraseñas guardadas pudo estar expuesta en una violación de datos.
+cfr-whatsnew-protections-cta-link = Ver Panel de protecciones
+cfr-whatsnew-protections-icon-alt = Icono de escudo
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Mejor experiencia en PDF
+cfr-whatsnew-better-pdf-body = Los documentos PDF ahora se abren directamente en { -brand-short-name }, manteniendo su flujo de trabajo al alcance de la mano.

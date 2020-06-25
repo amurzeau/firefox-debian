@@ -11,12 +11,12 @@ do-not-track-option-always =
 pref-page =
     .title =
         { PLATFORM() ->
-            [windows] Elektebloj
+            [windows] Preferoj
            *[other] Preferoj
         }
 pref-page-title =
     { PLATFORM() ->
-        [windows] Elektebloj
+        [windows] Preferoj
        *[other] Preferoj
     }
 # This is used to determine the width of the search field in about:preferences,
@@ -31,7 +31,7 @@ search-input-box =
     .style = width: 16.5em
     .placeholder =
         { PLATFORM() ->
-            [windows] Serĉi en elektebloj
+            [windows] Serĉi en preferoj
            *[other] Serĉi en preferoj
         }
 managed-notice = Via retumilo estas administrata de via organizo.
@@ -110,7 +110,7 @@ search-results-header = Serĉrezultoj
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message =
     { PLATFORM() ->
-        [windows] Bedaŭrinde ne estis rezultoj por “<span data-l10n-name="query"></span>” en Elektebloj.
+        [windows] Bedaŭrinde ne estis rezultoj por “<span data-l10n-name="query"></span>” en Preferoj.
        *[other] Bedaŭrinde ne estis rezultoj por “<span data-l10n-name="query"></span>” en Preferoj.
     }
 search-results-help-link = Ĉu vi bezonas helpon? Vizitu <a data-l10n-name="url">Helpo por { -brand-short-name }</a>
@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Uzi { $plugin-name } (en { -brand-short-name })
-applications-preview-inapp =
-    .label = Antaŭvidi en { -brand-short-name }
 applications-open-inapp =
     .label = Malfermi per { -brand-short-name }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Plej vizitaj
 home-prefs-topsites-description = Viaj plej vizititaj retejoj
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Rekomendita de { $provider }
 home-prefs-recommended-by-description = Bonega enhavo de la tuta Teksaĵo, personecigita por vi
+home-prefs-recommended-by-description-update = Eksterordinara enhavo el la reto, reviziita de { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Kiel funkcias tio
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Patronitaj artikoloj
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Montri serĉajn sugestojn en privataj fenestroj
 suggestions-addressbar-settings = Ŝanĝi preferojn por retuma historio, legosignoj kaj langetaj sugestoj
+suggestions-addressbar-settings-generic = Ŝanĝi preferojn por la aliaj sugestoj de la adresa strio
 search-suggestions-cant-show = Sugestoj de serĉiloj ne aperos en la rezultoj de la adresa strio ĉar vi petis al { -brand-short-name } neniam memori la historion.
 search-one-click-header = Serĉiloj per unu alklako
 search-one-click-desc = Elekti la alternativajn serĉilojn, kiuj aperos sub la adresa kaj serĉa strio kiam vi ektajpas ŝlosilvorton.
@@ -590,7 +593,7 @@ containers-back-link = « Iri reen
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
-            [windows] Reen al elektebloj
+            [windows] Reen al preferoj
            *[other] Reen al preferoj
         }
 containers-header = Ingaj langetoj
@@ -735,7 +738,7 @@ sync-engine-addons =
 sync-engine-prefs =
     .label =
         { PLATFORM() ->
-            [windows] Elektebloj
+            [windows] preferojn
            *[other] preferojn
         }
     .tooltiptext = Ĝeneralaj, privatecaj kaj sekurecaj agordoj ŝanĝitaj de vi
@@ -765,10 +768,10 @@ privacy-header = Retumila privateco
 
 ## Privacy Section - Forms
 
+logins-header = Akreditiloj kaj pasvortoj
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Akreditiloj kaj pasvortoj
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Akreditiloj kaj pasvortoj
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = Pasvorto malsukcese ŝanĝita
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Konfirmu vian identecon por krei ĉefan pasvorton.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Por krei ĉefan pasvorton vi devas tajpi viajn legitimilojn de Windows . Tio ĉi helpas vin protekti la sekurecon de viaj kontoj.
 # This message can be seen by trying to add a Master Password.
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Administri permesojn…
     .accesskey = A
+sitedata-cookies-exceptions =
+    .label = Administri esceptojn…
+    .accesskey = e
 
 ## Privacy Section - Address Bar
 
@@ -916,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = malfermitaj langetoj
     .accesskey = m
+addressbar-locbar-topsites-option =
+    .label = Plej vizititaj
+    .accesskey = v
 addressbar-suggestions-settings = Ŝanĝi preferojn pri serĉilaj sugestoj
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Identigiloj de ciferecaj spuroj
 content-blocking-warning-title = Atentu!
 content-blocking-warning-description = La blokado de enhavo povas misfunkciigi kelkajn retejojn. Estas facile malaktivigi la blokadon por retejoj, kiujn vi fidas.
 content-blocking-learn-how = Pli da informo
-content-blocking-etp-warning-description = Blokado de spuriloj povas influi la funkciadon de kelkaj retejoj. Reŝargu paĝon kun spuriloj por ŝargi la tutan enhavon.
 content-blocking-and-isolating-etp-warning-description = Blokado de spuriloj kaj izolado de kuketoj povus influi la funkciadon de kelkaj retejoj. Reŝargu paĝon kun spuriloj por ŝargi la tutan enhavon.
 content-blocking-warning-learn-how = Pli da informo
 content-blocking-reload-description = Vi bezonos reŝargi viajn langetojn por apliki tiujn ĉi ŝanĝojn.
@@ -1148,7 +1154,7 @@ space-alert-over-5gb-pref-button =
         }
 space-alert-over-5gb-message =
     { PLATFORM() ->
-        [windows] Elĉerpiĝas la diska spaco por { -brand-short-name }. Enhavo de retejoj povas aperi malĝuste. Vi povas viŝi konservitajn retejajn datumojn en Elektebloj > Privateco kaj sekureco > Kuketoj kaj retejaj datumoj.
+        [windows] Elĉerpiĝas la diska spaco por { -brand-short-name }. Enhavo de retejoj povas aperi malĝuste. Vi povas viŝi konservitajn retejajn datumojn en Preferoj > Privateco kaj sekureco > Kuketoj kaj retejaj datumoj.
        *[other] Elĉerpiĝas la diska spaco por { -brand-short-name }. Enhavo de retejoj povas aperi malĝuste. Vi povas viŝi konservitajn retejajn datumojn en Preferoj > Privateco kaj sekureco > Kuketoj kaj retejaj datumoj.
     }
 space-alert-under-5gb-ok-button =

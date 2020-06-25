@@ -2,6 +2,50 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (نجی براوزنگ)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (نجی براوزنگ)
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (نجی براوزنگ)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (نجی براوزنگ)
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = سائٹ کی معلومات کا نظارہ کریں
 
@@ -51,7 +95,7 @@ urlbar-addons-notification-anchor =
     .tooltiptext = ایڈاون کا تنصیب شدہ پیغام کا پینل کھولیں
 urlbar-tip-help-icon =
     .title = مدد حاصل کریں
-urlbar-search-tips-confirm = ٹھیک ہے ، سمجھ آگیا
+urlbar-search-tips-confirm = ٹھیک ہے، سمجھ آگیا
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
 # localized equivalent.
@@ -206,6 +250,8 @@ browser-window-minimize-button =
     .tooltiptext = چھوٹا کریں
 browser-window-maximize-button =
     .tooltiptext = بڑا کریں
+browser-window-restore-down-button =
+    .tooltiptext = نیچے بحال کریں
 browser-window-close-button =
     .tooltiptext = بند کریں
 
@@ -218,6 +264,17 @@ popup-select-microphone =
     .value = شیئر کرنے کےلیے مائیکروفون:
     .accesskey = M
 popup-all-windows-shared = آپ کی سکرین پر نظر آنے والے تمام دریچے شیئر کیے جائیں گے۔
+popup-screen-sharing-not-now =
+    .label = ابھی نہیں
+    .accesskey = w
+popup-screen-sharing-never =
+    .label = کبھی اجازت نہیں دیں
+    .accesskey = N
+
+## WebRTC window or screen share tab switch warning
+
+sharing-warning-proceed-to-tab =
+    .label = ٹیب پر آگے بڑھیں
 
 ## DevTools F12 popup
 
@@ -237,7 +294,7 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = ایکسٹینشن:
-urlbar-go-end-cap =
+urlbar-go-button =
     .tooltiptext = محل وقوع بار میں دیے گئے پتے پر جائیں
 urlbar-page-action-button =
     .tooltiptext = صفحہ اعمال

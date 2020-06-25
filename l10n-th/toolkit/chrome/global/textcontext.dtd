@@ -29,11 +29,9 @@
 
 <!ENTITY fillLoginMenu.label          "กรอกการเข้าสู่ระบบ">
 <!ENTITY fillLoginMenu.accesskey      "ก">
-<!ENTITY useGeneratedPassword.label   "ใช้รหัสผ่านที่สร้างขึ้นอย่างปลอดภัย…">
-<!ENTITY useGeneratedPassword.accesskey "ป">
 <!ENTITY fillPasswordMenu.label       "กรอกรหัสผ่าน">
 <!ENTITY fillPasswordMenu.accesskey   "ก">
 <!ENTITY fillUsernameMenu.label       "กรอกชื่อผู้ใช้">
 <!ENTITY fillUsernameMenu.accesskey   "ก">
 <!ENTITY noLoginSuggestions.label     "(ไม่มีข้อเสนอแนะการเข้าสู่ระบบ)">
-<!ENTITY viewSavedLogins.label        "ดูการเข้าสู่ระบบที่บันทึกไว้">
+<!ENTITY viewSavedLogins.label        "ดูข้อมูลการเข้าสู่ระบบที่บันทึกไว้">

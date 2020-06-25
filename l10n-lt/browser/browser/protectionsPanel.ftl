@@ -58,6 +58,8 @@ protections-panel-not-found-label = Neaptikta jokių
 
 protections-panel-settings-label = Apsaugos nuostatos
 protections-panel-showreport-label = Rodyti ataskaitą
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Apsaugos skydelis
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

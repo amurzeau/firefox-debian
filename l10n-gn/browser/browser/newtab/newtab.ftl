@@ -7,7 +7,7 @@
 
 newtab-page-title = Tendayke Pyahu
 newtab-settings-button =
-    .title = Eñemomba'e ne Tendayke Pyahu roguére
+    .title = Eñemomba’e ne Tendayke Pyahu roguére
 
 ## Search box component.
 
@@ -25,7 +25,7 @@ newtab-search-box-search-the-web-input =
 
 newtab-topsites-add-search-engine-header = Embojuaju hekaha
 newtab-topsites-add-topsites-header = Tenda Pyahu Ojeikevéva
-newtab-topsites-edit-topsites-header = Tenda Ojeikevéva Mbosako'i
+newtab-topsites-edit-topsites-header = Tenda Ojeikevéva Mbosako’i
 newtab-topsites-title-label = Teratee
 newtab-topsites-title-input =
     .placeholder = Ehai herarã
@@ -47,7 +47,7 @@ newtab-topsites-add-button = Embojoapy
 
 ## Top Sites - Delete history confirmation dialog.
 
-newtab-confirm-delete-history-p1 = Añetehápepa renohẽse oimeraẽva mba'e ko toguepegua tembiasakue rysýigui?
+newtab-confirm-delete-history-p1 = Añetehápepa renohẽse oimeraẽva mba’e ko toguepegua tembiasakue rysýigui?
 # "This action" refers to deleting a page from history.
 newtab-confirm-delete-history-p2 = Ko ojejapóva ndaikatuvéima oñemboguevi.
 
@@ -69,17 +69,17 @@ newtab-menu-content-tooltip =
     .aria-label = Embojuruja poravorã { $title } peg̃uarã
 # Tooltip on an empty topsite box to open the New Top Site dialog.
 newtab-menu-topsites-placeholder-tooltip =
-    .title = Embosako'i ko tenda
-    .aria-label = Embosako'i ko tenda
+    .title = Embosako’i ko tenda
+    .aria-label = Embosako’i ko tenda
 
 ## Context Menu: These strings are displayed in a context menu and are meant as a call to action for a given page.
 
-newtab-menu-edit-topsites = Mbosako'i
+newtab-menu-edit-topsites = Mbosako’i
 newtab-menu-open-new-window = Jeike Ovetã Pyahúpe
 newtab-menu-open-new-private-window = Jeike Ovetã Ñemi Pyahúpe
 newtab-menu-dismiss = Emboyke
 newtab-menu-pin = Mboja
-newtab-menu-unpin = Mboja'ỹ
+newtab-menu-unpin = Mboja’ỹ
 newtab-menu-delete-history = Tembiasakue Rysýigui Ñeguenohẽ
 newtab-menu-save-to-pocket = Eñongatu { -pocket-brand-name }-pe
 newtab-menu-delete-pocket = Embogue { -pocket-brand-name }-pe
@@ -89,6 +89,7 @@ newtab-menu-show-privacy-info = Ore pytyvõhára ha iñemigua
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = Oĩma
+newtab-privacy-modal-button-manage = Ema’ẽ tetepy mboheko tepyme’ẽpyre
 newtab-privacy-modal-header = Ne ñemigua tuichamba’e.
 newtab-privacy-modal-paragraph-2 =
     Ome’ẽse avei tembiasakue oporombovy’áva, avei rohechauka marandu iporãva,
@@ -126,7 +127,7 @@ newtab-menu-open-file = Embojuruja marandurenda
 ## the page is bookmarked, or is currently open on another device.
 
 newtab-label-visited = Jeikepyre
-newtab-label-bookmarked = Oñeñongatuva'ekue techaukaháramo
+newtab-label-bookmarked = Oñeñongatuva’ekue techaukaháramo
 newtab-label-removed-bookmark = Techaukaha mboguepyre
 newtab-label-recommended = Ojehechajepíva
 newtab-label-saved = { -pocket-brand-name }-pe ñongatupyre
@@ -135,6 +136,10 @@ newtab-label-download = Mboguejypyre
 # Variables:
 #  $sponsorOrSource (String): This is the name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · Tepyme’ẽmbyre
+# This string is used at the bottom of story cards to indicate sponsored content
+# Variables:
+#  $sponsor (String): This is the name of a sponsor
+newtab-label-sponsored-by = Ohepyme’ẽva { $sponsor }
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -143,7 +148,7 @@ newtab-section-menu-remove-section = Emboguete vore
 newtab-section-menu-collapse-section = Embopytupa vore
 newtab-section-menu-expand-section = Emyasãi vore
 newtab-section-menu-manage-section = Eñagareko vorére
-newtab-section-menu-manage-webext = Emongu'e jepysokue
+newtab-section-menu-manage-webext = Emongu’e jepysokue
 newtab-section-menu-add-topsite = Embojuaju Tenda ojeikeveha
 newtab-section-menu-add-search-engine = Embojuaju hekaha
 newtab-section-menu-move-up = Jupi
@@ -160,18 +165,18 @@ newtab-section-expand-section-label =
 ## Section Headers.
 
 newtab-section-header-topsites = Tenda Ojehechavéva
-newtab-section-header-highlights = Mba'eporãitéva
+newtab-section-header-highlights = Mba’eporãitéva
 # Variables:
 #  $provider (String): Name of the corresponding content provider.
-newtab-section-header-pocket = { $provider } he'i ndéve reike hag̃ua
+newtab-section-header-pocket = { $provider } he’i ndéve reike hag̃ua
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
-newtab-empty-section-highlights = Eñepyrũ eikundaha ha rohechaukáta ndéve mba'ehai, mba'erecharã oĩva ha ambue ñandutirenda reikeva'ekue ýrõ rembotechaukava'ekue.
+newtab-empty-section-highlights = Eñepyrũ eikundaha ha rohechaukáta ndéve mba’ehai, mba’erecharã oĩva ha ambue ñandutirenda reikeva’ekue ýrõ rembotechaukava’ekue.
 # Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 # Variables:
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".
-newtab-empty-section-topstories = Ko'ág̃a reikuaapáma ipyahúva. Eikejey ag̃ave ápe eikuaávo mombe'upy pyahu { $provider } oikuave'ẽva ndéve. Ndaikatuvéima reha'ãrõ? Eiporavo peteĩ ñe'ẽmbyrã ha emoñe'ẽve oĩvéva ñande yvy ape ári.
+newtab-empty-section-topstories = Ko’ág̃a reikuaapáma ipyahúva. Eikejey ag̃ave ápe eikuaávo mombe’upy pyahu { $provider } oikuave’ẽva ndéve. Ndaikatuvéima reha’ãrõ? Eiporavo peteĩ ñe’ẽmbyrã ha emoñe’ẽve oĩvéva ñande yvy ape ári.
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
@@ -185,7 +190,7 @@ newtab-discovery-empty-section-topstories-timed-out = ¡Háke! Haimete ñamyanyh
 ## Pocket Content Section.
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
-newtab-pocket-read-more = Ñe'ẽmbyrã Ojehayhuvéva:
+newtab-pocket-read-more = Ñe’ẽmbyrã Ojehayhuvéva:
 newtab-pocket-more-recommendations = Hetave je’eporã
 newtab-pocket-learn-more = Kuaave
 newtab-pocket-cta-button = Eguereko { -pocket-brand-name }

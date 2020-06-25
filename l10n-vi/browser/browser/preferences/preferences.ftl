@@ -302,8 +302,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Dùng { $plugin-name } (trong { -brand-short-name })
-applications-preview-inapp =
-    .label = Xem trước trong { -brand-short-name }
 applications-open-inapp =
     .label = Mở bằng { -brand-short-name }
 
@@ -317,8 +315,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -485,11 +481,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Các trang Web hàng đầu
 home-prefs-topsites-description = Những trang bạn truy cập nhiều nhất
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Được đề xuất bởi { $provider }
 home-prefs-recommended-by-description = Nội dung tuyệt vời từ trên web, được cá nhân hóa cho bạn
+home-prefs-recommended-by-description-update = Nội dung đặc biệt trên web, được quản lý bởi { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Nó hoạt động như thế nào
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Bài viết quảng cáo
@@ -546,6 +548,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Hiển thị đề xuất tìm kiếm trong cửa sổ riêng tư
 suggestions-addressbar-settings = Thay đổi tùy chọn cho lịch sử duyệt web, dấu trang và đề xuất thẻ
+suggestions-addressbar-settings-generic = Thay đổi tùy chọn cho các đề xuất trên thanh địa chỉ khác
 search-suggestions-cant-show = Gợi ý tìm kiếm sẽ không được hiện ở thanh địa chỉ vì bạn đã thiết lập { -brand-short-name } không bao giờ ghi nhớ lịch sử.
 search-one-click-header = Công cụ tìm kiếm với một lần nhấn
 search-one-click-desc = Chọn các công cụ tìm kiếm thay thế xuất hiện bên dưới thanh địa chỉ và thanh tìm kiếm khi bạn bắt đầu nhập một từ khoá.
@@ -749,10 +752,10 @@ privacy-header = Duyệt web riêng tư
 
 ## Privacy Section - Forms
 
+logins-header = Đăng nhập & mật khẩu
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Đăng nhập & mật khẩu
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Đăng nhập & mật khẩu
     .searchkeywords = { -lockwise-brand-short-name }
@@ -788,8 +791,6 @@ forms-master-pw-fips-desc = Thay đổi mật khẩu không thành công
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Xác nhận danh tính của bạn để tạo mật khẩu chính.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Để tạo mật khẩu chính, hãy nhập thông tin đăng nhập Windows của bạn. Điều này giúp bảo vệ tính bảo mật của tài khoản của bạn.
 # This message can be seen by trying to add a Master Password.
@@ -886,6 +887,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Quản lí các quyền...
     .accesskey = P
+sitedata-cookies-exceptions =
+    .label = Quản lý các ngoại lệ…
+    .accesskey = x
 
 ## Privacy Section - Address Bar
 
@@ -900,6 +904,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Các thẻ đang mở
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = Trang web hàng đầu
+    .accesskey = T
 addressbar-suggestions-settings = Thay đổi tùy chỉnh phần gợi ý của công cụ tìm kiếm
 
 ## Privacy Section - Content Blocking
@@ -959,7 +966,6 @@ content-blocking-fingerprinters = Vân tay
 content-blocking-warning-title = Hãy cân nhắc!
 content-blocking-warning-description = Chặn nội dung có thể khiến một số trang web bị hỏng. Dễ dàng vô hiệu hóa chặn cho các trang web mà bạn tin tưởng.
 content-blocking-learn-how = Tìm hiểu cách thức
-content-blocking-etp-warning-description = Chặn trình theo dõi có thể ảnh hưởng đến chức năng của một số trang web. Tải lại một trang với trình theo dõi để tải tất cả nội dung.
 content-blocking-and-isolating-etp-warning-description = Chặn trình theo dõi và cô lập cookie có thể ảnh hưởng đến chức năng của một số trang web. Tải lại một trang với trình theo dõi để tải tất cả nội dung.
 content-blocking-warning-learn-how = Tìm hiểu cách thức
 content-blocking-reload-description = Bạn sẽ cần tải lại các thẻ của mình để áp dụng những thay đổi này.

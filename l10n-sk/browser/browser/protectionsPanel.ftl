@@ -58,6 +58,8 @@ protections-panel-not-found-label = Nenájdené
 
 protections-panel-settings-label = Nastavenia ochrany
 protections-panel-showreport-label = Zobraziť podrobnosti
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Nástenka ochrany súkromia
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

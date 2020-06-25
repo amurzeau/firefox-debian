@@ -9,14 +9,6 @@
 remove-address-row-type = Het veld { $type } verwijderen
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
-address-input-type =
-    { $count ->
-        [0] Leeg invoerveld { $type }
-        [one] Invoerveld { $type } met een adres
-       *[other] Invoerveld { $type } met { $count } adressen
-    }
-#   $type (String) - the type of the addressing row
-#   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
         [0] { $type }
@@ -42,3 +34,24 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Verplaatsen naar Bcc
     .accesskey = B
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [one] { $count } bijlage
+           *[other] { $count } bijlagen
+        }
+    .accesskey = l
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [one] { $count } bijlage
+           *[other] { $count } bijlagen
+        }
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+button-return-receipt =
+    .label = Ontvangstbevestiging
+    .tooltiptext = Een ontvangstbevestiging voor dit bericht vragen

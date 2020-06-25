@@ -2,6 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 about-logins-page-title = لاگ ان اور پاس ورڈ
 
 # "Google Play" and "App Store" are both branding and should not be translated
@@ -18,7 +24,7 @@ create-login-button = نیا لاگ ان بنائیں
 fxaccounts-sign-in-text = اپنے پاسورڈ  دوسرے آلات پر حاصل کریں
 fxaccounts-sign-in-button = { -sync-brand-short-name } میں  سائن ان کریں
 fxaccounts-avatar-button =
-    .title = اکاؤنٹ کا منظم کریں
+    .title = اکاؤنٹ کو  منظم کریں
 
 ## The ⋯ menu that is in the top corner of the page
 
@@ -47,7 +53,6 @@ login-list-count =
 login-list-sort-label-text = کے مطابق چھانٹیں:
 login-list-name-option = نام (A-Z)
 login-list-name-reverse-option = نام  (Z-A)
-login-list-breached-option = خلاف ورزی کرنے والی ویب سائٹیں
 about-logins-login-list-alerts-option = انتباہات
 login-list-last-changed-option = آخری بار ترمیم کردہ
 login-list-last-used-option = آخری استعمال
@@ -59,14 +64,14 @@ login-list-item-title-new-login = نیا لاگ ان
 login-list-item-subtitle-new-login = لاگ ان کی سندیں درج کریں۔
 login-list-item-subtitle-missing-username = (صارف نام کا نہیں)
 about-logins-list-item-breach-icon =
-    .title = خلاف ورزی کرنے والی ویب سائٹیں
+    .title = بریچڈ ویب سائٹیں
 about-logins-list-item-vulnerable-password-icon =
     .title = کمزور پاسورڈ
 
 ## Introduction screen
 
 login-intro-heading = اپنے محفوظ شدہ لاگ ان ڈھونڈ رہے ہیں؟ { -sync-brand-short-name } مرتب کریں۔
-about-logins-login-intro-heading-logged-in = کوئی ہمہ وقت ساز  لاگ ان نہیں ملا۔
+about-logins-login-intro-heading-logged-in = کوئی سینکڈ لاگ ان نہیں ملا۔
 login-intro-description = اگر آپ نے اپنے لاگ انز { -brand-product-name } کو کسی دوسرے آلے پر محفوظ کیاہوا ہے تو، انہیں یہاں حاصل کرنے کا طریقہ یوں ہے:
 login-intro-instruction-fxa = وہ آلہ جہاں آپ کے لاگ انز محفوظ ہیں ان پر اپنا { -fxaccount-brand-name } بنائیں یا سائن ان کریں
 about-logins-intro-import = اگر آپ کے لاگ انز کسی دوسرے براؤزر میں محفوظ ہیں تو ، آپ <a data-l10n-name="import-link"> ان کو { -lockwise-brand-short-name }</a> میں درآمد کرسکتے ہیں
@@ -86,7 +91,7 @@ login-item-copy-username-button-text = نقل کریں
 login-item-copied-username-button-text = نقل شدہ!
 login-item-password-label = پاس ورڈ
 login-item-password-reveal-checkbox =
-    .aria-label = پاس ورڈ  دکھائیں
+    .aria-label = پاس ورڈ دکھائیں
 login-item-copy-password-button-text = نقل کریں
 login-item-copied-password-button-text = نقل شدہ!
 login-item-save-changes-button = تبدیلیاں محفوظ کریں
@@ -104,19 +109,13 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
-# This message can be seen by attempting to edit a login in about:logins
-about-logins-edit-login-os-auth-dialog-message = محفوظ کردہ لاگ ان میں ترمیم کرنے کے لئے اپنی شناخت کی تصدیق کریں۔
-# This message can be seen by attempting to edit a login in about:logins
+# This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = محفوظ کردہ لاگ ان میں تدوین کریں
-# This message can be seen by attempting to reveal a password in about:logins
-about-logins-reveal-password-os-auth-dialog-message = محفوظ شدہ پاس ورڈ کو ظاہر کرنے کے لئے اپنی شناخت کی تصدیق کریں۔
-# This message can be seen by attempting to reveal a password in about:logins
+# This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = محفوظ شدہ پاس ورڈ کو ظاہر کریں
-# This message can be seen by attempting to copy a password in about:logins
-about-logins-copy-password-os-auth-dialog-message = محفوظ شدہ پاس ورڈ کی نقل کرنے کے لئے اپنی شناخت کی تصدیق کریں۔
-# This message can be seen by attempting to copy a password in about:logins
+# This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = محفوظ شدہ پاس ورڈ کو نقل کریں
 
@@ -148,17 +147,15 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = اس لاگ ان کو ہٹائیں؟
 confirm-delete-dialog-message = یہ عمل کلعدم نہیں ہو سکتا۔
 about-logins-confirm-remove-dialog-confirm-button = ہٹائیں
-confirm-discard-changes-dialog-title = غیر محفوظ شدہ تبدیلیاں ضائع کریں؟
+about-logins-confirm-export-dialog-confirm-button = برآمد کریں…
+confirm-discard-changes-dialog-title = غیر محفوظ شدہ تبدیلیاں ہٹاییں؟
 confirm-discard-changes-dialog-message = سبھی غیر محفوظ شدہ تبدیلیاں ختم ہوجائیں گی۔
 confirm-discard-changes-dialog-confirm-button = رد کريں
 
 ## Breach Alert notification
 
-about-logins-breach-alert-title = ویب سائٹ کی خلاف ورزی
+about-logins-breach-alert-title = ویب سائٹ بریچ
 breach-alert-text = اس ویب سائٹ سے پاس ورڈز لیک یا چوری ہوگئے تھے جب سے آپ نے لاگ ان کی تفصیلات کو آخری بار اپ ڈیٹ کیا تھا۔ اپنے اکاؤنٹ کی حفاظت کے لئے اپنا پاس ورڈ تبدیل کریں۔
-breach-alert-link = اس خلاف ورزی کے بارے میں مزید معلومات حاصل کریں۔
-breach-alert-dismiss =
-    .title = اس انتباہ کو بند کریں
 about-logins-breach-alert-date = یہخلافورزی { DATETIME($date, day: "numeric", month: "long", year: "numeric") } ہوئی ہے
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
@@ -177,3 +174,19 @@ about-logins-vulnerable-alert-learn-more-link = مزید سیکھیں
 
 # This is a generic error message.
 about-logins-error-message-default = اس پاس ورڈ کو محفوظ کرنے کی کوشش کرتے وقت ایک نقص پیش آگیا۔
+
+## Login Export Dialog
+
+# Title of the file picker dialog
+about-logins-export-file-picker-title = لاگ ان فائل برآمد کریں
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename = logins.csv
+about-logins-export-file-picker-export-button = برآمد کریں
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV دستاویز
+       *[other] CSV فائل
+    }

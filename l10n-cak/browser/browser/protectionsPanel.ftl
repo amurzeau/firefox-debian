@@ -58,6 +58,8 @@ protections-panel-not-found-label = Man Xilitäj Ta
 
 protections-panel-settings-label = Runuk'ulem Ojqanem
 protections-panel-showreport-label = Tik'ut Rutzijol
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Rupas taq Chajinïk
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

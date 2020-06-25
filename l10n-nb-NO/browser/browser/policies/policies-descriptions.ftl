@@ -63,6 +63,7 @@ policy-ExtensionSettings = Håndter alle aspekter av utvidelsesinstallasjon.
 policy-ExtensionUpdate = Slå på eller slå av automatisk utvidelsesoppdateringer.
 policy-FirefoxHome = Konfigurer Firefox-startside.
 policy-FlashPlugin = Tillat eller nekt bruk av programtillegget Flash.
+policy-Handlers = Konfigurer standard applikasjonsbehandlere.
 policy-HardwareAcceleration = Hvis deaktivert, slå av maskinvareakselerasjon.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Sett og eventuelt lås startsiden.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Gå tilbake til foreld
 ##
 
 policy-LocalFileLinks = Tillat at bestemte nettsteder kobler til lokale filer.
+policy-MasterPassword = Krev eller forhindre bruk av hovedpassord.
 policy-NetworkPrediction = Aktiver eller deaktiver nettverkspredikering (DNS-prefetch).
 policy-NewTabPage = Slå på eller av ny fane-siden.
 policy-NoDefaultBookmarks = Deaktiver opprettelse av standardbokmerker, som følger med { -brand-short-name }, samt de smarte bokmerkene (Mest besøkte, Siste brukte etiketter). NB: Denne policyen fungerer bare om den er aktivert før profilen blir brukt for første gang.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Slå på lagring av passord til passordbehandler
 # PDF.js and PDF should not be translated
 policy-PDFjs = Deaktiver eller konfigurer PDF.js, det innebygde PDF-visningsprogrammet i { -brand-short-name }.
 policy-Permissions2 = Konfigurer tillatelser for kamera, mikrofon, plassering og auto-avspilling.
+policy-PictureInPicture = Slå på eller av bilde-i-bilde
 policy-PopupBlocking = Tillat at visse nettsteder skal kunne vise sprettoppvinduer som standard.
 policy-Preferences = Still inn og lås verdien for en undergruppe av innstillingene.
 policy-PromptForDownloadLocation = Spør hvor du skal lagre filer når du laster ned.

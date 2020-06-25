@@ -53,6 +53,7 @@
 <!ENTITY viewMenu_resetzoom_accesskey "v">
 
 <!ENTITY projectButton_label "App megnyitása">
+
 <!ENTITY runtimeButton_label "Futtatókörnyezet kiválasztása">
 
 <!-- We try to repicate Firefox' bindings: -->
@@ -85,7 +86,7 @@
 <!ENTITY details_error_header "hibák">
 <!ENTITY details_description "Leírás">
 <!ENTITY details_location "Hely">
-<!ENTITY details_manifestURL "App azonosító">
+<!ENTITY details_manifestURL "Alkalmazásazonosító">
 <!ENTITY details_removeProject_button "Projekt eltávolítása">
 
 <!-- New App -->
@@ -118,12 +119,6 @@
 
 <!-- Runtime Details -->
 <!ENTITY runtimedetails_title "Futtatókörnyezet infó">
-<!ENTITY runtimedetails_adbIsRoot "Az ADB rootként fut:">
-<!ENTITY runtimedetails_summonADBRoot "root eszköz">
-<!ENTITY runtimedetails_ADBRootWarning "(feloldott rendszerbetöltőt igényel)">
-<!ENTITY runtimedetails_unrestrictedPrivileges "Korlátlan fejlesztői jogosultságok:">
-<!ENTITY runtimedetails_requestPrivileges "magasabb jogosultságok kérése">
-<!ENTITY runtimedetails_privilegesWarning "(Újraindítja az eszközt. Root hozzáférést igényel.)">
 
 <!-- Device Preferences and Settings -->
 <!ENTITY device_typeboolean "Logikai">

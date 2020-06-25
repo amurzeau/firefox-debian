@@ -349,7 +349,7 @@ applications-use-app-default =
     .label = Použít { $app-name } (výchozí)
 applications-use-os-default =
     .label =
-        Použít výchozí aplikaci
+        Použít výchozí aplikaci 
         { PLATFORM() ->
             [macos] systému macOS
             [windows] systému Windows
@@ -362,7 +362,7 @@ applications-manage-app =
     .label = Podrobnosti o aplikaci…
 applications-always-ask =
     .label = Vždy se zeptat
-applications-type-pdf = Přenositelný formát dokumentu (PDF)
+applications-type-pdf = Přenositelný formát dokumentů (PDF)
 # Variables:
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
@@ -384,14 +384,6 @@ applications-use-plugin-in =
             [neuter] v { -brand-short-name(case: "loc") }
            *[other] v aplikaci { -brand-short-name }
         })
-applications-preview-inapp =
-    .label =
-        Zobrazit náhled { -brand-short-name.gender ->
-            [masculine] ve { -brand-short-name(case: "loc") }
-            [feminine] v { -brand-short-name(case: "loc") }
-            [neuter] v { -brand-short-name(case: "loc") }
-           *[other] v aplikaci { -brand-short-name }
-        }
 applications-open-inapp =
     .label =
         Otevřít { -brand-short-name.gender ->
@@ -399,7 +391,7 @@ applications-open-inapp =
             [feminine] v { -brand-short-name(case: "loc") }
             [neuter] v { -brand-short-name(case: "loc") }
            *[other] v aplikaci { -brand-short-name }
-        }.
+        }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -411,8 +403,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -626,11 +616,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Top stránky
 home-prefs-topsites-description = Nejnavštěvovanější stránky
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Doporučení ze služby { $provider }
 home-prefs-recommended-by-description = Skvělý obsah z celého webu, vybraný speciálně pro vás
+home-prefs-recommended-by-description-update = Výjimečný obsah z celého internetu, vybraný službou { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Jak to funguje
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponzorované články
@@ -703,6 +699,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Našeptávat vyhledávání také v anonymních oknech
 suggestions-addressbar-settings = Nastavit našeptávání z historie prohlížení, záložek a otevřených panelů
+suggestions-addressbar-settings-generic = Změnit předvolby našeptávání v adresním řádku
 search-suggestions-cant-show =
     Návrhy vyhledávání se nebudou adresním řádku zobrazovat, protože jste { -brand-short-name.gender ->
         [masculine] { -brand-short-name(case: "acc") }
@@ -800,7 +797,7 @@ sync-sign-out =
 sync-manage-account = Spravovat účet
     .accesskey = S
 sync-signedin-unverified = Účet { $email } není ověřen.
-sync-signedin-login-failure = Pro přihlášení se znovu připojte { $email }
+sync-signedin-login-failure = Pro opětovné připojení účtem { $email } se přihlaste
 sync-resend-verification =
     .label = Znovu odeslat ověření
     .accesskey = d
@@ -921,10 +918,10 @@ privacy-header = Nastavení soukromí
 
 ## Privacy Section - Forms
 
+logins-header = Přihlašovací údaje
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Přihlašovací údaje
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Přihlašovací údaje
     .searchkeywords = { -lockwise-brand-short-name }
@@ -961,7 +958,7 @@ forms-master-pw-fips-desc = Neúspěšná změna hesla
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Pro vytvoření hlavního hesla nejprve ověřte svou totožnost.
+master-password-os-auth-dialog-message-win = Pro nastavení hlavního hesla prosím zadejte své přihlašovací údaje k systému Windows. Toto opatření pomáhá v zabezpečení vašich účtů.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -1068,6 +1065,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Spravovat oprávnění…
     .accesskey = S
+sitedata-cookies-exceptions =
+    .label = Výjimky…
+    .accesskey = k
 
 ## Privacy Section - Address Bar
 
@@ -1082,6 +1082,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Otevřené panely
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = Top stránky
+    .accesskey = T
 addressbar-suggestions-settings = Nastavit našeptávání vyhledávače
 
 ## Privacy Section - Content Blocking
@@ -1141,8 +1144,7 @@ content-blocking-fingerprinters = Vytváření otisku prohlížeče
 content-blocking-warning-title = Pozor!
 content-blocking-warning-description = Blokování obsahu může omezit fungování některých stránek. Pro stránky, kterým důvěřujete, ho můžete snadno vypnout.
 content-blocking-learn-how = Jak na to?
-content-blocking-etp-warning-description = Blokování sledujícího obsahu může ovlivnit fungování některých stránek. Pro zobrazení veškerého obsahu obnovte stránku s povolenými sledovacími prvky.
-content-blocking-and-isolating-etp-warning-description = Blokování sledujícího obsahu a izolace cookies může ovlivnit fungování některých stránek. Pro zobrazení veškerého obsahu obnovte stránku s povolenými sledovacími prvky.
+content-blocking-and-isolating-etp-warning-description = Blokování sledujícího obsahu a izolace cookies může ovlivnit fungování některých stránek. Pro zobrazení veškerého obsahu znovu načtěte stránku s povolenými sledovacími prvky.
 content-blocking-warning-learn-how = Jak na to
 content-blocking-reload-description = Aby se změny projevily, načtěte znovu své panely.
 content-blocking-reload-tabs-button =
@@ -1179,8 +1181,8 @@ content-blocking-fingerprinters-label =
 ## Privacy Section - Tracking
 
 tracking-manage-exceptions =
-    .label = Spravovat výjimky…
-    .accesskey = p
+    .label = Výjimky…
+    .accesskey = k
 
 ## Privacy Section - Permissions
 

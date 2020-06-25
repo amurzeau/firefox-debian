@@ -11,6 +11,8 @@
 <!ENTITY name.accesskey "b">
 <!ENTITY email.label "Dirección de correo electrónico:">
 <!ENTITY email.accesskey "D">
+<!ENTITY catchAll.label "Responder desde esta identidad cuando las cabeceras de distribución coinciden:">
+<!ENTITY catchAll.accesskey "d">
 <!ENTITY replyTo.label "Dirección de respuesta:">
 <!ENTITY replyTo.accesskey "s">
 <!ENTITY replyTo.placeholder "Los destinatarios responderán a esta otra dirección">

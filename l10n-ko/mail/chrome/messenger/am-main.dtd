@@ -4,6 +4,8 @@
 
 <!-- extracted from am-main.xul -->
 
+<!-- extracted from am-main.xhtml -->
+
 <!ENTITY accountTitle.label "계정 설정">
 <!ENTITY accountName.label "계정 이름:">
 <!ENTITY accountName.accesskey "N">
@@ -13,6 +15,8 @@
 <!ENTITY name.accesskey "Y">
 <!ENTITY email.label "메일 주소:">
 <!ENTITY email.accesskey "E">
+<!ENTITY catchAll.label "배달 헤더가 일치 할 때 이 ID로 회신:">
+<!ENTITY catchAll.accesskey "d">
 <!ENTITY replyTo.label "회신 주소:">
 <!ENTITY replyTo.accesskey "s">
 <!ENTITY replyTo.placeholder "수신자가 답장을 할 다른 메일 주소">

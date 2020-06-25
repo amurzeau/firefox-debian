@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Käytä liitännäistä { $plugin-name } (ohjelmassa { -brand-short-name })
-applications-preview-inapp =
-    .label = Esikatsele { -brand-short-name }issa
 applications-open-inapp =
     .label = Avaa { -brand-short-name(case: "inessive") }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Ykkössivustot
 home-prefs-topsites-description = Useimmin vierailemasi sivustot
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Suositukset lähteestä { $provider }
 home-prefs-recommended-by-description = Hyvää sisältöä kaikkialta verkosta, juuri sinulle
+home-prefs-recommended-by-description-update = Poikkeuksellista sisältöä ympäri internetiä, valikoijana { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Kuinka se toimii
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsoroidut tarinat
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Näytä hakuehdotukset yksityisissä ikkunoissa
 suggestions-addressbar-settings = Muuta selaushistorian, kirjanmerkkien ja välilehtien ehdotusten asetuksia
+suggestions-addressbar-settings-generic = Muuta osoitepalkin muiden ehdotusten asetuksia
 search-suggestions-cant-show = Hakuehdotuksia ei näytetä osoitepalkista tehtävistä hauista, koska olet valinnut, että { -brand-short-name } ei muista historiaa.
 search-one-click-header = Hakukoneet pikavalikossa
 search-one-click-desc = Valitse vaihtoehtoiset hakukoneet, jotka ilmestyvät osoite- ja hakupalkin alalaitaan, kun alat kirjoittaa hakusanoja.
@@ -765,10 +768,10 @@ privacy-header = Selaimen tietosuoja
 
 ## Privacy Section - Forms
 
+logins-header = Käyttäjätunnukset ja salasanat
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Käyttäjätunnukset ja salasanat
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Käyttäjätunnukset ja salasanat
     .searchkeywords = { -lockwise-brand-short-name }
@@ -805,7 +808,7 @@ forms-master-pw-fips-desc = Salasanan vaihto epäonnistui
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Vahvista henkilöllisyytesi, jotta voit luoda pääsalasanan.
+master-password-os-auth-dialog-message-win = Luo pääsalasana kirjoittamalla Windows-kirjautumistiedot. Tämä auttaa suojaamaan tilejäsi.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -900,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Hallitse oikeuksia…
     .accesskey = o
+sitedata-cookies-exceptions =
+    .label = Hallitse poikkeuksia…
+    .accesskey = p
 
 ## Privacy Section - Address Bar
 
@@ -914,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = avoimista välilehdistä
     .accesskey = a
+addressbar-locbar-topsites-option =
+    .label = ykkössivustoista
+    .accesskey = y
 addressbar-suggestions-settings = Muuta hakukoneiden ehdotusten asetuksia
 
 ## Privacy Section - Content Blocking
@@ -973,7 +982,6 @@ content-blocking-fingerprinters = Yksilöijät
 content-blocking-warning-title = Huomio!
 content-blocking-warning-description = Sisällön estäminen voi aiheuttaa joidenkin sivustojen toimimattomuutta. Voit poistaa eston luottamiltasi sivustoilta.
 content-blocking-learn-how = Lue miten
-content-blocking-etp-warning-description = Seuraimien estäminen saattaa vaikuttaa joidenkin sivustojen toimintaan. Lataa sivu uudelleen seurainten kera ladataksesi kaiken sisällön.
 content-blocking-and-isolating-etp-warning-description = Seurainten estäminen ja evästeiden eristäminen saattaa vaikuttaa joidenkin sivustojen toimivuuteen. Lataa sivu uudelleen seurainten kera ladataksesi kaiken sisällön.
 content-blocking-warning-learn-how = Lue lisää
 content-blocking-reload-description = Kaikki välilehdet tarvitsee päivittää, jotta muutokset tulevat voimaan.

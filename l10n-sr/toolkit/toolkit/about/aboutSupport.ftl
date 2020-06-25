@@ -119,6 +119,11 @@ sandbox-sys-call-number = Системски позив
 sandbox-sys-call-args = Аргументи
 safe-mode-title = Покушај безбедни режим
 restart-in-safe-mode-label = Рестартуј са онемогућеним додацима…
+clear-startup-cache-title = Покушајте да избришете предмеморију покретања
+clear-startup-cache-label = Избриши предмеморију покретања…
+startup-cache-dialog-title = Избриши предмеморију покретања
+startup-cache-dialog-body = Поново покрените { -brand-short-name } да бисте избрисали предмеморију покретања. Ово неће променити подешавања или уклонити проширења која сте додали у { -brand-short-name }.
+restart-button-label = Поново покрени
 
 ## Media titles
 
@@ -126,6 +131,7 @@ audio-backend = Audio Backend
 max-audio-channels = Највише канала
 channel-layout = Жељени распоред канала
 sample-rate = Жељена стопа семпла
+roundtrip-latency = Латенција у повратном правцу (стандардна девијација)
 media-title = Медиј
 media-output-devices-title = Излазни уређаји
 media-input-devices-title = Улазни уређаји

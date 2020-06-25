@@ -7,8 +7,8 @@ page-subtitle = Ko kuatiarogue oguereko marandu aporekoguáva ikatúva eipuru em
 crashes-title = Marandu jejavyguáva
 crashes-id = ID momarandu
 crashes-send-date = Mondopyre
-crashes-all-reports = Opaite marandu'i jejavy rehegua
-crashes-no-config = Ko tembipuru'i oñembohekopyahu ohechauka hag̃ua marandu jejavy rehegua.
+crashes-all-reports = Opaite marandu’i jejavy rehegua
+crashes-no-config = Ko tembipuru’i oñembohekopyahu ohechauka hag̃ua marandu jejavy rehegua.
 extensions-title = Mba'ejoapyrã
 extensions-name = Téra
 extensions-enabled = Myandypyre
@@ -27,7 +27,7 @@ features-id = ID
 processes-title = Tapereko okayguáva
 processes-type = Peteĩchagua
 processes-count = Papa
-app-basics-title = Tembipuru'i ñemboheko ypy
+app-basics-title = Tembipuru’i ñemboheko ypy
 app-basics-name = Téra
 app-basics-version = Peteĩchagua
 app-basics-build-id = ID jejapo
@@ -53,7 +53,7 @@ app-basics-enabled-plugins = Mba'ejoajurã myendypyre
 app-basics-build-config = Mbyatypy ñemboheko
 app-basics-user-agent = Puruhára pytyvõha
 app-basics-os = OS
-app-basics-memory-use = Mandu'arenda jepuru
+app-basics-memory-use = Mandu’arenda jepuru
 app-basics-performance = Mba'eaporã
 app-basics-service-workers = Mba'apohára mba'epytyvõrã mboguapyréva
 app-basics-profiles = Mba'etekuéra
@@ -116,6 +116,11 @@ sandbox-sys-call-number = Ñehenói pumbyrýpe
 sandbox-sys-call-args = Je'ekuaaite
 safe-mode-title = Eipuru teko jerovia
 restart-in-safe-mode-label = Moĩmbaha oguepyréva moñepyrũjey…
+clear-startup-cache-title = Emohenda kache ñepyrũha ñembogue
+clear-startup-cache-label = Embogue kache ñepyrũha…
+startup-cache-dialog-title = Embogue kache ñepyrũha
+startup-cache-dialog-body = Emoñepyrũjey { -brand-short-name } embogue hag̃ua kache ñepyrũha. Kóva nomoambuéi ñemboheko ha jepysokue oñembojuajúva { -brand-short-name } rehe.
+restart-button-label = Ñepyrũjey
 
 ## Media titles
 
@@ -123,6 +128,7 @@ audio-backend = Mba'epu ñangarekoha huguapeguáva
 max-audio-channels = Max mbohapeha
 channel-layout = Mbohapeha ñemoĩ ojererohorýva
 sample-rate = Techaukarã py'ỹigua ojererohorýva
+roundtrip-latency = Latencia ou ha ohóva (ojeréva ypykuete)
 media-title = Marandu myasãiha
 media-output-devices-title = Mba'e'oka osẽha
 media-input-devices-title = Mba'e'oka oikeha
@@ -142,12 +148,12 @@ media-capabilities-enumerate = Embopapapy mba’ekuaarã guapyha
 ##
 
 intl-title = Mongakuaa & ñemohenda
-intl-app-title = Tembipuru'i ñemboheko
+intl-app-title = Tembipuru’i ñemboheko
 intl-locales-requested = Ñe'ẽnguéra jerurepyre
 intl-locales-available = Ñe'ẽnguéra ojepurukuaáva
-intl-locales-supported = Ñe'ẽnguéra tembipuru'i rehegua
+intl-locales-supported = Ñe’ẽnguéra tembipuru’i rehegua
 intl-locales-default = Ñe'ẽnguéra ijypykuéva
-intl-os-title = Apopyvusu oku'éva
+intl-os-title = Apopyvusu oku’éva
 intl-os-prefs-system-locales = Ñe'ẽnguéra apopyvusu rehegua
 intl-regional-prefs = Jerohoryvéva tendaguáva
 
@@ -170,8 +176,8 @@ remote-debugging-url = URL
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
     { $days ->
-        [one] Marandu'i jejavy rehegua ko { $days } ára peguáva
-       *[other] Marandu'i jejavy rehegua ohasaramóva { $days } ára peguáva
+        [one] Marandu’i jejavy rehegua ko { $days } ára peguáva
+       *[other] Marandu’i jejavy rehegua ohasaramóva { $days } ára peguáva
     }
 # Variables
 # $minutes (integer) - Number of minutes since crash
@@ -208,7 +214,7 @@ text-copied = Moñe'ẽrã oñembohasáma kuatiajokohápe
 
 blocked-driver = Ojejokóva peteĩchaguápe g̃uarã ta'ãnga ñangarekohárape.
 blocked-gfx-card = Ojejoko ikuatia'atã ha'ãngávape g̃uarã oguereko rupi apañuãi ñangarekoha omoĩporã'ỹva.
-blocked-os-version = Ojejokóva peteĩchaguápe g̃uarã nde apopyvusu oku'éva pegua.
+blocked-os-version = Ojejokóva peteĩchaguápe g̃uarã nde apopyvusu oku’éva pegua.
 blocked-mismatched-version = Ojoko ha'ãnga ñangarekoha peteĩchagua oĩporã'ỹva jehaipy ha DLL pa'ũme.
 # Variables
 # $driverVersion - The graphics driver version string
@@ -294,7 +300,7 @@ startup-cache-ignore-disk-cache = Ehejarei Disco Kache
 startup-cache-found-disk-cache-on-init = Ojejuhu disco kache Init-pe
 startup-cache-wrote-to-disk-cache = Ehai Disco Kachépe
 launcher-process-status-0 = Jurujapyre
-launcher-process-status-1 = Ojepe'apyre ojavy rupi
+launcher-process-status-1 = Ojepe’apyre ojavy rupi
 launcher-process-status-2 = Mbaretépe jepe’apyre
 launcher-process-status-unknown = Tekotee ojekuaa’ỹva
 # Variables
@@ -305,7 +311,7 @@ multi-process-status-0 = Puruhára myandypyre
 multi-process-status-1 = Myendypyre ijypykue rupi
 multi-process-status-2 = Oĩmbaporã'ỹva
 multi-process-status-4 = Oguémava tembirpuru jeikekuaahágui
-multi-process-status-6 = Oñemomba'apo'ỹva oguereko rupi jehai ndojehaiva'erãi
+multi-process-status-6 = Oñemomba’apo’ỹva oreko rupi jehai ndojehaiva’erãi
 multi-process-status-7 = Oñemomba'apo'ỹ moĩmbaha rupive
 multi-process-status-8 = Oñemongepyre mbaretépe
 multi-process-status-unknown = Jeiko ojekuaa'ỹva
@@ -313,9 +319,9 @@ async-pan-zoom = Ojuehe'ỹva Pan/Zoom
 apz-none = Avave
 wheel-enabled = omoneĩ jereha jeike
 touch-enabled = jeikeha jepokóva jurujapyre
-drag-enabled = embosyryry oku'éva renda myendypyre
+drag-enabled = embosyryry oku’éva renda myendypyre
 keyboard-enabled = tairenda myandypyre
-autoscroll-enabled = ñemongu'e ijeheguíva ijurujáma
+autoscroll-enabled = ñemongu’e ijeheguíva ijurujáma
 zooming-enabled = zoom ñepichã’i myandypyre
 
 ## Variables

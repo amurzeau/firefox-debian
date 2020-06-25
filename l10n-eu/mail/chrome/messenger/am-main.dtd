@@ -4,6 +4,8 @@
 
 <!-- extracted from am-main.xul -->
 
+<!-- extracted from am-main.xhtml -->
+
 <!ENTITY accountTitle.label "Kontu-ezarpenak">
 <!ENTITY accountName.label "Kontuaren izena:">
 <!ENTITY accountName.accesskey "n">
@@ -13,6 +15,8 @@
 <!ENTITY name.accesskey "Z">
 <!ENTITY email.label "Helbide elektronikoa:">
 <!ENTITY email.accesskey "e">
+<!ENTITY catchAll.label "Erantzun identitate honetatik banaketa goiburuak bat datozenean:">
+<!ENTITY catchAll.accesskey "b">
 <!ENTITY replyTo.label "Erantzun-honi helbidea:">
 <!ENTITY replyTo.accesskey "h">
 <!ENTITY replyTo.placeholder "Hartzaileek beste helbide honetara erantzungo dute">

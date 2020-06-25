@@ -32,7 +32,7 @@ protections-panel-site-not-working-view =
 ## The "Allowed" header also includes a "Why?" link that, when hovered, shows
 ## a tooltip explaining why these items were not blocked in the page.
 
-protections-panel-not-blocking-why-label = ¿Mba'ére?
+protections-panel-not-blocking-why-label = ¿Mba’ére?
 protections-panel-not-blocking-why-etp-on-tooltip = Ko’ãva jejoko ikatu ombyai mba’epuru ñanduti renda pegua. Jehapykuehoha’ỹre heta votõ, myanyhẽha ha tembiapo ñepyrũ rekoha ikatu ndoikói.
 protections-panel-not-blocking-why-etp-off-tooltip = Opaite tepykuehoha ko tenda pegua oñemyanyhẽ ñemo’ãha ojepe’aite rupi.
 
@@ -57,7 +57,9 @@ protections-panel-not-found-label = Ndaipóri juhupyre
 ##
 
 protections-panel-settings-label = Ñemo’ã ñemboheko
-protections-panel-showreport-label = Ehechauka marandu'i
+protections-panel-showreport-label = Ehechauka marandu’i
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Ñemo’ãha rupa
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.
@@ -67,10 +69,10 @@ protections-panel-site-not-working-view-header = Eipe’a umi ñemo’ãha nemoa
 # The list items, shown in a <ul>
 protections-panel-site-not-working-view-issue-list-login-fields = Tembiapo ñepyrũ rekoha
 protections-panel-site-not-working-view-issue-list-forms = Myañyhẽha
-protections-panel-site-not-working-view-issue-list-payments = Jehepume'ẽ
+protections-panel-site-not-working-view-issue-list-payments = Jehepume’ẽ
 protections-panel-site-not-working-view-issue-list-comments = Je'erei
 protections-panel-site-not-working-view-issue-list-videos = Ta'ãngamýi
-protections-panel-site-not-working-view-send-report = Emondo marandu'i
+protections-panel-site-not-working-view-send-report = Emondo marandu’i
 
 ##
 
@@ -94,4 +96,4 @@ protections-panel-content-blocking-breakage-report-view-collection-comments-labe
 protections-panel-content-blocking-breakage-report-view-cancel =
     .label = Heja
 protections-panel-content-blocking-breakage-report-view-send-report =
-    .label = Emondo ñemombe'u
+    .label = Emondo ñemombe’u

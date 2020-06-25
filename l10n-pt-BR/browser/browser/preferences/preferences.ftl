@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Usar { $plugin-name } (no { -brand-short-name })
-applications-preview-inapp =
-    .label = Ver no próprio { -brand-short-name }
 applications-open-inapp =
     .label = Abrir no { -brand-short-name }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Sites preferidos
 home-prefs-topsites-description = Os sites que você mais visita
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Recomendado pelo { $provider }
 home-prefs-recommended-by-description = Os melhores conteúdos disponíveis na Web, personalizados pra você
+home-prefs-recommended-by-description-update = Conteúdo excepcional da web afora, curadoria de { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Como funciona
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Histórias patrocinadas
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Mostrar sugestões de pesquisa em janelas privativas
 suggestions-addressbar-settings = Alterar preferências de sugestões de histórico de navegação, favoritos e abas
+suggestions-addressbar-settings-generic = Alterar preferências de outras sugestões da barra de endereços
 search-suggestions-cant-show = As sugestões de pesquisa não serão mostradas nos resultados da barra de endereço, porque você configurou o { -brand-short-name } para nunca memorizar o histórico.
 search-one-click-header = Mecanismos de pesquisa em um clique
 search-one-click-desc = Escolha os mecanismos de pesquisa alternativos que aparecem abaixo da barra de endereços e da barra de pesquisa quando você começa a digitar um atalho.
@@ -765,10 +768,10 @@ privacy-header = Privacidade do navegador
 
 ## Privacy Section - Forms
 
+logins-header = Contas e senhas
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Contas e senhas
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Contas e senhas
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = Falha na alteração da senha
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Confirme sua identidade para criar uma senha mestra.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Para criar uma senha mestra, insira suas credenciais de acesso ao Windows. Isso ajuda a proteger a segurança de suas contas.
 # This message can be seen by trying to add a Master Password.
@@ -886,7 +887,7 @@ sitedata-option-block-cross-site-trackers =
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Rastreadores entre sites e de mídias sociais
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
-    .label = Rastreadores entre sites e de mídias sociais, e isolar os cookies restantes
+    .label = Rastreadores entre sites e de mídias sociais, isolar os cookies restantes
 sitedata-option-block-unvisited =
     .label = Cookies de sites não visitados
 sitedata-option-block-all-third-party =
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Gerenciar permissões…
     .accesskey = p
+sitedata-cookies-exceptions =
+    .label = Gerenciar exceções…
+    .accesskey = x
 
 ## Privacy Section - Address Bar
 
@@ -916,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Abas abertas
     .accesskey = A
+addressbar-locbar-topsites-option =
+    .label = Sites preferidos
+    .accesskey = S
 addressbar-suggestions-settings = Alterar preferências de sugestões de mecanismos de pesquisa
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Fingerprinters (rastreadores de identidade dig
 content-blocking-warning-title = Atenção!
 content-blocking-warning-description = O bloqueio de conteúdo pode fazer alguns sites não funcionarem direito. É fácil desativar o bloqueio em sites que você confia.
 content-blocking-learn-how = Saiba como
-content-blocking-etp-warning-description = Bloquear rastreadores pode afetar a funcionalidade de alguns sites. Você pode desativar a proteção aprimorada contra rastreamento somente em um site para carregar todo o conteúdo.
 content-blocking-and-isolating-etp-warning-description = Bloquear rastreadores e isolar cookies pode afetar a funcionalidade de alguns sites. Desative a proteção contra rastreamento em um site para carregar todo o conteúdo.
 content-blocking-warning-learn-how = Saiba como
 content-blocking-reload-description = É preciso recarregar as abas para aplicar essas mudanças.

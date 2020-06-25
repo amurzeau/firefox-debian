@@ -21,6 +21,7 @@ cert-error-details-hsts-label = HTTP స్క్రిప్ట్ ట్రా
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP పబ్లిక్ కీ పిన్నింగ్: { $hasHPKP }
 cert-error-details-cert-chain-label = ధృవీకరణపత్రం చైన్:
+open-in-new-window-for-csp-or-xfo-error = సైటును కొత్త కిటికీలో తెరువు
 
 ## Messages used for certificate error titles
 

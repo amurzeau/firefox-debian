@@ -57,6 +57,10 @@ newtab-confirm-delete-history-p2 = Αυτή η ενέργεια δεν μπορ�
 newtab-menu-section-tooltip =
     .title = Άνοιγμα μενού
     .aria-label = Άνοιγμα μενού
+# Tooltip for dismiss button
+newtab-dismiss-button-tooltip =
+    .title = Αφαίρεση
+    .aria-label = Αφαίρεση
 # This tooltip is for the context menu of Pocket cards or Topsites
 # Variables:
 #  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
@@ -85,6 +89,7 @@ newtab-menu-show-privacy-info = Οι χορηγοί μας & το απόρρητ
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = Τέλος
+newtab-privacy-modal-button-manage = Διαχείριση ρυθμίσεων χορηγούμενου περιεχομένου
 newtab-privacy-modal-header = Το απόρρητό σας έχει σημασία.
 newtab-privacy-modal-paragraph-2 =
     Εκτός από την παράδοση μαγευτικών ιστοριών, σας εμφανίζουμε σχετικό,
@@ -132,6 +137,10 @@ newtab-label-download = Λήψεις
 # Variables:
 #  $sponsorOrSource (String): This is the name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · Χορηγία
+# This string is used at the bottom of story cards to indicate sponsored content
+# Variables:
+#  $sponsor (String): This is the name of a sponsor
+newtab-label-sponsored-by = Χορηγία από { $sponsor }
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.

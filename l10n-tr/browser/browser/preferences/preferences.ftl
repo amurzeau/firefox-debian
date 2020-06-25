@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } kullan ({ -brand-short-name } içinde)
-applications-preview-inapp =
-    .label = { -brand-short-name } ile ön izleme yap
 applications-open-inapp =
     .label = { -brand-short-name } ile aç
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,12 +493,18 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Sık kullanılan siteler
 home-prefs-topsites-description = En çok ziyaret ettiğiniz siteler
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = { $provider } öneriyor
 home-prefs-recommended-by-description = İnternetin her yanından sizin için seçtiğimiz kaliteli içerikler
-home-prefs-recommended-by-learn-more = Nasıl çalışıyor?
+home-prefs-recommended-by-description-update = { $provider } tarafından seçilen harika içerikler
+
+##
+
+home-prefs-recommended-by-learn-more = Nasıl çalışır?
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsorlu haberler
 home-prefs-highlights-header =
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Gizli pencerelerde arama önerilerini göster
 suggestions-addressbar-settings = Gezinti geçmişi, yer imleri ve sekme önerileri tercihlerini değiştirin
+suggestions-addressbar-settings-generic = Diğer adres çubuğu önerileri için tercihleri değiştir
 search-suggestions-cant-show = { -brand-short-name } tarayıcısını geçmişi hatırlamayacak şekilde ayarladığınız için konum çubuğu sonuçlarında arama önerileri gösterilmeyecektir.
 search-one-click-header = Tek tıklamalı arama motorları
 search-one-click-desc = Anahtar kelimeleri yazmaya başladığınızda adres çubuğunun ve arama çubuğunun altında görünecek alternatif arama motorlarını seçin.
@@ -765,10 +768,10 @@ privacy-header = Tarayıcı gizliliği
 
 ## Privacy Section - Forms
 
+logins-header = Hesaplar ve parolalar
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Hesaplar ve parolalar
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Hesaplar ve parolalar
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = Parola değiştirme başarısız
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Ana parola oluşturmak için kimliğinizi doğrulayın.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Ana parola oluşturmak için Windows hesap bilgilerinizi girin. Bu sayede hesaplarınızı daha güvenli bir şekilde koruyabiliriz.
 # This message can be seen by trying to add a Master Password.
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = İzinleri yönet…
     .accesskey = z
+sitedata-cookies-exceptions =
+    .label = İstisnaları yönet…
+    .accesskey = İ
 
 ## Privacy Section - Address Bar
 
@@ -916,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Açık sekmeler
     .accesskey = s
+addressbar-locbar-topsites-option =
+    .label = Sık kullanılanlar
+    .accesskey = S
 addressbar-suggestions-settings = Arama motoru önerileri için tercihleri değiştir
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Parmak izi toplayıcılar
 content-blocking-warning-title = Dikkat!
 content-blocking-warning-description = İçerikleri engellemek bazı sitelerin bozulmasına neden olabilir. Güvendiğiniz sitelerde engellemeyi kolayca kapatabilirsiniz.
 content-blocking-learn-how = Engellemeyi kapatmayı öğrenin
-content-blocking-etp-warning-description = Takipçileri engellemek bazı sitelerin düzgün çalışmamasına yol açabilir. Takipçi içeren bir sayfanın tüm içeriğini yüklemek için sayfayı tazeleyin.
 content-blocking-and-isolating-etp-warning-description = Takipçileri engellemek ve çerezleri izole etmek bazı sitelerin düzgün çalışmamasına yol açabilir. Takipçi içeren bir sayfanın tüm içeriğini yüklemek için sayfayı tazeleyin.
 content-blocking-warning-learn-how = Nasıl yapılacağını öğrenin
 content-blocking-reload-description = Bu değişiklikleri uygulamak için sekmelerinizi tazelemeniz gerekiyor.

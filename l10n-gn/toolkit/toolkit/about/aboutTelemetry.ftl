@@ -18,14 +18,14 @@ about-telemetry-next-ping = > >
 about-telemetry-page-title = Telemetría mba'ekuaarã
 about-telemetry-current-store = Ñembyatyha ag̃agua:
 about-telemetry-more-information = ¿Ehekavépa marandu?
-about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Firefox mba'ekuaarã kuatia</a> oguereko guataha mba'éichapa emba'apova'erã mba'ekuaarã rembipuru rehegua.
+about-telemetry-firefox-data-doc = <a data-l10n-name="data-doc-link">Firefox mba'ekuaarã kuatia</a> oreko guataha mba’éichapa emba’apóta mba’ekuaarã rembipurúre.
 about-telemetry-telemetry-client-doc = <a data-l10n-name="client-doc-link">Telemetry Firefox mba'éva kuatiatee</a> ogueroike mba'e ñemyesakã, API kuatiatee ha mba'ekuaarã rehegua.
 about-telemetry-telemetry-dashboard = Umi <a data-l10n-name="dashboard-link">Telemetry rechaha</a> ohechauka ndéve Mozilla mba'ekuaarã og̃uahẽva Telemetry rupive.
 about-telemetry-telemetry-probe-dictionary = Pe <a data-l10n-name="probe-dictionary-link">Probe Dictionary</a> ome’ẽ mba’emimi ha ñemoha’anga Telemetry ombyatyva’ekue sónda.
 about-telemetry-show-in-Firefox-json-viewer = Eike JSON hechahápe
 about-telemetry-home-section = Ñepyrũ
 about-telemetry-general-data-section = Opaichagua marandu
-about-telemetry-environment-data-section = Mba'ekuarã tekohápe g̃uarã
+about-telemetry-environment-data-section = Mba’ekuaarã tekohápe g̃uarã
 about-telemetry-session-info-section = Marandu tembiapo rehegua
 about-telemetry-scalar-section = Jejupi
 about-telemetry-keyed-scalar-section = Jupikuaa papapýva
@@ -70,7 +70,7 @@ about-telemetry-histogram-stats =
     }
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-page-subtitle = Ko kuatiarogue ohechauka marandu tembiapokue rehegua, hardware, jeporu ha ñemomba'etee ombyatyva'ekue Telemetry. Ko marandu oñemondo { $telemetryServerOwner }-pe oipytyvõ { -brand-full-name }-pe oiko porãve hag̃ua.
+about-telemetry-page-subtitle = Ko kuatiarogue ohechauka marandu tembiapokue rehegua, hardware, jeporu ha ñemomba’etee ombyatýva Telemetry. Ko marandu oñemondo { $telemetryServerOwner }-pe oipytyvõ { -brand-full-name }-pe oiko porãve hag̃ua.
 about-telemetry-settings-explanation = Telemetría ombyaty hína { about-telemetry-data-type } ha iñemyenyhẽ oĩ <a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>.
 # Variables:
 #   $name (String): ping name, e.g. “saved-session”
@@ -133,7 +133,7 @@ about-telemetry-captured-stacks-title = { $stackKey } (japyhypyre rehegua: { $ca
 #   $lateWriteCount (Integer): the number of the late writes
 about-telemetry-late-writes-title = Jehaipy itapykuéva #{ $lateWriteCount }
 about-telemetry-stack-title = Mbojo'apy:
-about-telemetry-memory-map-title = Mandu'arenda mba'era'anga:
+about-telemetry-memory-map-title = Mandu’arenda mba’era’ãnga:
 about-telemetry-error-fetching-symbols = Oiko peteĩ jejavy eguerusejeývo umi ta'ãnga'i. Ehechajey eimépa ñandutípe ha eha'ãjey upe rire.
 about-telemetry-time-stamp-header = ára papaha
 about-telemetry-category-header = mba'éichagua

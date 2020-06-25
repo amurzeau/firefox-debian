@@ -89,6 +89,7 @@ newtab-menu-show-privacy-info = Niaj patronoj kaj via privateco
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = Farita
+newtab-privacy-modal-button-manage = Administri agordojn de patronita enhavo
 newtab-privacy-modal-header = Via privateco gravas.
 newtab-privacy-modal-paragraph-2 = Krom allogajn artikolojn ni montras al vi ankaŭ gravajn, zorge reviziitan enhavon el elektitaj patronoj. Estu certa, viaj retumaj datumoj neniam foriras el via loka instalaĵo de { -brand-product-name } — ni ne vidas ilin, kaj ankaŭ ne niaj patronoj.
 newtab-privacy-modal-link = Pli da informo pri privateco en novaj folioj
@@ -132,6 +133,10 @@ newtab-label-download = Elŝutita
 # Variables:
 #  $sponsorOrSource (String): This is the name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · Patronita
+# This string is used at the bottom of story cards to indicate sponsored content
+# Variables:
+#  $sponsor (String): This is the name of a sponsor
+newtab-label-sponsored-by = Patronita de { $sponsor }
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.

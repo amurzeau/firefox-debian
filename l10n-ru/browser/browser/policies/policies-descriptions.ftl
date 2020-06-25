@@ -63,6 +63,7 @@ policy-ExtensionSettings = Управляет всеми аспектами ус
 policy-ExtensionUpdate = Включает или отключает автоматические обновления расширений.
 policy-FirefoxHome = Настраивает домашнюю страницу Firefox.
 policy-FlashPlugin = Разрешает или запрещает использование плагина Flash.
+policy-Handlers = Настраивает обработчики приложений по умолчанию.
 policy-HardwareAcceleration = Отключает аппаратное ускорение, если установлена в false.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Устанавливает домашнюю страницу и, по желанию, блокирует её смену.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Переключить
 ##
 
 policy-LocalFileLinks = Разрешает определённым веб-сайтам ссылаться на локальные файлы.
+policy-MasterPassword = Требовать или не давать использовать мастер-пароль.
 policy-NetworkPrediction = Включает или отключает прогнозирование сети (предварительная выборка DNS).
 policy-NewTabPage = Включает или отключает страницу новой вкладки.
 policy-NoDefaultBookmarks = Отключает создание закладок по умолчанию, идущих вместе с { -brand-short-name }, и Умных Закладок (Часто посещаемые, Последние метки). Примечание: эта политика действует только в том случае, если она используется до первого запуска профиля.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Включает сохранение парол
 # PDF.js and PDF should not be translated
 policy-PDFjs = Отключает или настраивает PDF.js, встроенный просмотрщик PDF в { -brand-short-name }.
 policy-Permissions2 = Настраивает разрешения для камеры, микрофона, местоположения, уведомлений и автовоспроизведения.
+policy-PictureInPicture = Включает или отключает функцию «Картинка в картинке».
 policy-PopupBlocking = Разрешает некоторым веб-сайтам открывать всплывающие окна по умолчанию.
 policy-Preferences = Устанавливает и фиксирует значение набора настроек.
 policy-PromptForDownloadLocation = Спрашивает, куда сохранять файлы при загрузке.

@@ -63,6 +63,7 @@ policy-ExtensionSettings = Manage all aspects of extension installation.
 policy-ExtensionUpdate = Enable or disable automatic extension updates.
 policy-FirefoxHome = Configure Firefox Home.
 policy-FlashPlugin = Allow or deny usage of the Flash plugin.
+policy-Handlers = Configure default application handlers.
 policy-HardwareAcceleration = If false, turn off hardware acceleration.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Set and optionally lock the homepage.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Revert to legacy SameS
 ##
 
 policy-LocalFileLinks = Allow specific websites to link to local files.
+policy-MasterPassword = Require or prevent using a master password.
 policy-NetworkPrediction = Enable or disable network prediction (DNS prefetching).
 policy-NewTabPage = Enable or disable the New Tab page.
 policy-NoDefaultBookmarks = Disable creation of the default bookmarks bundled with { -brand-short-name }, and the Smart Bookmarks (Most Visited, Recent Tags). Note: this policy is only effective if used before the first run of the profile.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Enable saving passwords to the password manager.
 # PDF.js and PDF should not be translated
 policy-PDFjs = Disable or configure PDF.js, the built-in PDF viewer in { -brand-short-name }.
 policy-Permissions2 = Configure permissions for camera, microphone, location, notifications, and autoplay.
+policy-PictureInPicture = Enable or disable Picture-in-Picture.
 policy-PopupBlocking = Allow certain websites to display popups by default.
 policy-Preferences = Set and lock the value for a subset of preferences.
 policy-PromptForDownloadLocation = Ask where to save files when downloading.

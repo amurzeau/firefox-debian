@@ -116,6 +116,11 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Taq rutzijol
 safe-mode-title = Titojtob'ëx ütz rub'anikil
 restart-in-safe-mode-label = Titikirisäx chik kik'in ri chupül taq tz'aqat…
+clear-startup-cache-title = Titojtob'ëx niyuj ri rujumej ruyakoj tikirib'äl
+clear-startup-cache-label = Tiyuj rujumejyak tikirib'äl…
+startup-cache-dialog-title = Tiyuj rujumejyak tikirib'äl
+startup-cache-dialog-body = Titikirisäx chik { -brand-short-name } richin niyuj ri rujumej ruyakoj tikirib'äl. Re re' man xtujäl ta ri anuk'ulem chuqa' man xkeruyüj ta ri taq k'amal e'atz'aqatisan pa { -brand-short-name }.
+restart-button-label = Titikirisäx chik
 
 ## Media titles
 
@@ -123,6 +128,7 @@ audio-backend = Q'ojom Backend
 max-audio-channels = Nima'q taq b'ey
 channel-layout = Ruwachib'enik Ajowan B'ey
 sample-rate = Ajowan Q'ijun Tz'etb'äl
+roundtrip-latency = Rulatensya b'enam chuqa' tzolojnem (junaman jech'unïk)
 media-title = Q'ojom
 media-output-devices-title = Elem taq Okisaxel
 media-input-devices-title = Okib'äl taq Okisaxel

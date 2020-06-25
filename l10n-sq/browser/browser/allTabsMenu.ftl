@@ -4,6 +4,13 @@
 
 all-tabs-menu-undo-close-tab =
     .label = Zhbëje Mbylljen e Skedës
+all-tabs-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Zhbëje Mbylljen e Skedës
+            [one] Zhbëje Mbylljen e Skedës
+           *[other] Zhbëje Mbylljen e Skedave
+        }
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = Kërko Në Skeda

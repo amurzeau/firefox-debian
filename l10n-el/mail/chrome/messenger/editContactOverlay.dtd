@@ -8,14 +8,11 @@
 <!ENTITY editContactName.label "Όνομα:">
 <!ENTITY editContactName.accesskey "ν">
 
-<!ENTITY editContactEmail.label "E-mail:">
+<!ENTITY editContactEmail.label "Email:">
 <!ENTITY editContactEmail.accesskey "Δ">
 
-<!ENTITY editContactAddressBook.label "Βιβλίο διευθύνσεων:">
+<!ENTITY editContactAddressBook.label "Ευρετήριο διευθύνσεων:">
 <!ENTITY editContactAddressBook.accesskey "θ">
-
-<!ENTITY editContactPanelCancel.label "Ακύρωση">
-<!ENTITY editContactPanelCancel.accesskey "κ">
 
 <!ENTITY editContactPanelDone.label "Τέλος">
 <!ENTITY editContactPanelDone.accesskey "Ο">

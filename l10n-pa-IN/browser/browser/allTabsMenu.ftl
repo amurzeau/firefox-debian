@@ -4,6 +4,13 @@
 
 all-tabs-menu-undo-close-tab =
     .label = ਬੰਦ ਕੀਤੀ ਟੈਬ ਨੂੰ ਵਾਪਸ ਖੋਲ੍ਹੋ
+all-tabs-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] ਬੰਦ ਕੀਤੀ ਟੈਬ ਵਾਪਸ ਲਵੋ
+            [one] ਬੰਦ ਕੀਤੀ ਟੈਬ ਵਾਪਸ ਲਵੋ
+           *[other] ਬੰਦ ਕੀਤੀਆਂ ਟੈਬਾਂ ਵਾਪਸ ਲਵੋ
+        }
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = ਟੈਬਾਂ ਲੱਭੋ

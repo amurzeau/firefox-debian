@@ -232,6 +232,10 @@ translate-attribution = Аударманы ұсынған <img data-l10n-name="l
 translate-exceptions =
     .label = Осыдан бөлек…
     .accesskey = О
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Операциялық жүйеңіздің "{ $localeName }" баптауларын күн, уақыт, сандар және өлшемдерді пішімдеу үшін қолдану.
 check-user-spelling =
     .label = Мәтін терілген кезде орфографияны тексеру
     .accesskey = о
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = { $app-name } қолдану (әрқашан да)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] macOS үнсіз келісім қолданбасын қолдану
+            [windows] Windows үнсіз келісім қолданбасын қолдану
+           *[other] Жүйелік үнсіз келісім қолданбасын қолдану
+        }
 applications-use-other =
     .label = Басқасын қолдану…
 applications-select-helper = Көмекші бағдарламаны таңдаңыз
@@ -303,8 +314,8 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } қолдану ({ -brand-short-name } құрамында)
-applications-preview-inapp =
-    .label = { -brand-short-name } ішінде алдын-ала қарау
+applications-open-inapp =
+    .label = { -brand-short-name } көмегімен ашу
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -316,14 +327,16 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -359,7 +372,7 @@ update-pref-write-failure-title = Жазу қатесі
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Баптауды сақтау мүмкін емес. Файлға жазу қатесі: { $path }
-update-setting-write-failure-title = Жаңарту баптауларын сақтау қатемен аяқталды.
+update-setting-write-failure-title = Жаңарту баптауларын сақтау қатемен аяқталды
 # Variables:
 #   $path (String) - Path to the configuration file
 # The newlines between the main text and the line containing the path is
@@ -480,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Үздік сайттар
 home-prefs-topsites-description = Сіз жиі шолатын сайттар
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Ұсынушы { $provider }
 home-prefs-recommended-by-description = Бүкіл Интернеттен алынған тамаша контент, талғамыңызға сай таңдалған
+home-prefs-recommended-by-description-update = Интернеттен қызық материалдар, { $provider } жинаған
+
+##
+
 home-prefs-recommended-by-learn-more = Ол қалай жұмыс істейді
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Демеушілер мақалалары
@@ -545,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Іздеу жүйелерінің ұсыныстарын жекелік терезелерінде көрсету
 suggestions-addressbar-settings = Шолу тарихы, бетбелгілер және беттер ұсыныстары үшін баптауларды өзгерту
+suggestions-addressbar-settings-generic = Адрестік жолақ үшін басқа ұсыныстар баптауларын өзгерту
 search-suggestions-cant-show = Орналасу жолағынан іздеу нәтижелерінде іздеу ұсыныстары көрсетілмейді, өйткені сіз { -brand-short-name } өнімін тарихты есте сақтамайтындай етіп баптадыңыз.
 search-one-click-header = Бірлік шертумен іздеу қызметтері
 search-one-click-desc = Сіз кілттік сөзді енгізген кезде адрестік жолағы және іздеу өрістерінің астында көрсетілетін қосымша іздеу жүйелерін таңдаңыз.
@@ -748,10 +768,10 @@ privacy-header = Браузер жекелігі
 
 ## Privacy Section - Forms
 
+logins-header = Логиндер және парольдер
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Логиндер және парольдер
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Логиндер және парольдер
     .searchkeywords = { -lockwise-brand-short-name }
@@ -787,6 +807,8 @@ forms-master-pw-fips-desc = Парольді өзгерту сәтсіз аяқ�
 
 ## OS Authentication dialog
 
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Басты парольді жасау үшін, Windows ішіне кірудің есептік жазба мәліметтерін енгізіңіз. Бұл тіркелгілеріңіздің қауіпсіздігін қорғауға көмектеседі.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -864,6 +886,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Сайтаралық трекерлер
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Сайтаралық және әлеуметтік желілер трекерлері
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Сайтаралық және әлеуметтік желілер трекерлері, және қалған cookie файлдарын оқшаулау
 sitedata-option-block-unvisited =
     .label = Қаралмаған веб-сайттардан cookies файлдары
 sitedata-option-block-all-third-party =
@@ -879,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Рұқсаттарды басқару…
     .accesskey = р
+sitedata-cookies-exceptions =
+    .label = Ережеден тыс жағдайларды басқару…
+    .accesskey = ж
 
 ## Privacy Section - Address Bar
 
@@ -893,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Ашық беттер
     .accesskey = А
+addressbar-locbar-topsites-option =
+    .label = Үздік сайттар
+    .accesskey = з
 addressbar-suggestions-settings = Іздеу жүйесінің ұсыныстары үшін қалауларды өзгерту
 
 ## Privacy Section - Content Blocking
@@ -940,6 +970,7 @@ content-blocking-etp-strict-desc = Қатаңырақ қорғаныс, біра
 content-blocking-etp-custom-desc = Қай трекерлер мен скрипттерді блоктауды таңдаңыз.
 content-blocking-private-windows = Жекелік шолу терезелерінде бақылайтын құрама
 content-blocking-cross-site-tracking-cookies = Сайтаралық бақылайтын cookie файлдары
+content-blocking-cross-site-tracking-cookies-plus-isolate = Сайтаралық бақылау трекерлері, және қалған cookie файлдарын оқшаулау
 content-blocking-social-media-trackers = Әлеуметтік желілер трекерлері
 content-blocking-all-cookies = Барлық cookie файлдары
 content-blocking-unvisited-cookies = Қаралмаған сайттардың cookies файлдары
@@ -951,7 +982,7 @@ content-blocking-fingerprinters = Баспаны жинаушылар
 content-blocking-warning-title = Ескерту!
 content-blocking-warning-description = Құраманы бұғаттау кейбір веб-сайттар жұмысын бұзуы мүмкін. Сенімді сайттар үшін бұғаттауды өшіру оңай.
 content-blocking-learn-how = Көбірек білу
-content-blocking-etp-warning-description = Трекерлерді бұғаттау кейбір сайттардың жұмысына әсер етуі мүмкін. Барлық мазмұнды жүктеу үшін трекерлермен бетті қайта жүктеңіз.
+content-blocking-and-isolating-etp-warning-description = Трекерлерді бұғаттау және cookie файлдарын оқшаулау кейбір сайттардың жұмысына әсер етуі мүмкін. Барлық мазмұнды жүктеу үшін трекерлермен бетті қайта жүктеңіз.
 content-blocking-warning-learn-how = Көбірек білу
 content-blocking-reload-description = Бұл өзгерістер іске асуы үшін беттерді қайта жүктеу керек болады.
 content-blocking-reload-tabs-button =
@@ -1047,7 +1078,7 @@ permissions-a11y-privacy-link = Көбірек білу
 
 ## Privacy Section - Data Collection
 
-collection-header = { -brand-short-name } деректер жинауы және қолданылуы
+collection-header = { -brand-short-name } деректер жинауы және қолдануы
 collection-description = Біз сізге таңдауды қолыңызға беріп, тек әркім үшін { -brand-short-name } өнімін ұсыну және жақсарту мақсатында керек деректерді жинаймыз. Жеке ақпаратты алу алдында біз әрқашан рұқсатты сұраймыз.
 collection-privacy-notice = Жекелік ескертуі
 collection-health-report-telemetry-disabled = Сіз { -vendor-short-name } үшін ешбір техникалық және әрекеттесу мәліметтерін жинауға енді рұқсат етпейсіз. Барлық бұрыңғы деректер 30 күннің ішінде өшірілетін болады.

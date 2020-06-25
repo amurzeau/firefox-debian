@@ -2,6 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 about-logins-page-title = Date de autentificare și parole
 
 # "Google Play" and "App Store" are both branding and should not be translated
@@ -26,6 +32,7 @@ menu =
     .title = Deschide meniul
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Importă din alt browser…
+about-logins-menu-menuitem-export-logins = Exportă date de autentificare…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Opțiuni
@@ -59,7 +66,7 @@ login-list-item-title-new-login = Date de autentificare noi
 login-list-item-subtitle-new-login = Introdu datele tale de autentificare
 login-list-item-subtitle-missing-username = (niciun nume de utilizator)
 about-logins-list-item-breach-icon =
-    .title = Site web cu breșă(e) de securitate
+    .title = Site web a cărui securitate a fost încălcată
 about-logins-list-item-vulnerable-password-icon =
     .title = Parolă vulnerabilă
 
@@ -106,19 +113,13 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
-# This message can be seen by attempting to edit a login in about:logins
-about-logins-edit-login-os-auth-dialog-message = Verifică-ți identitatea pentru a edita datele de autentificare salvate.
-# This message can be seen by attempting to edit a login in about:logins
+# This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = editează datele de autentificare salvate
-# This message can be seen by attempting to reveal a password in about:logins
-about-logins-reveal-password-os-auth-dialog-message = Verifică-ți identitatea pentru a dezvălui parola salvată.
-# This message can be seen by attempting to reveal a password in about:logins
+# This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = afișează parola salvată
-# This message can be seen by attempting to copy a password in about:logins
-about-logins-copy-password-os-auth-dialog-message = Verifică-ți identitatea pentru a copia parola salvată.
-# This message can be seen by attempting to copy a password in about:logins
+# This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = copiază parola salvată
 
@@ -155,15 +156,17 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Elimini această autentificare?
 confirm-delete-dialog-message = Această acțiune este ireversibilă.
 about-logins-confirm-remove-dialog-confirm-button = Elimină
+about-logins-confirm-export-dialog-title = Exportă autentificări și parole
+about-logins-confirm-export-dialog-confirm-button = Exportă…
 confirm-discard-changes-dialog-title = Înlături modificările nesalvate?
 confirm-discard-changes-dialog-message = Toate modificările nesalvate vor fi pierdute.
 confirm-discard-changes-dialog-confirm-button = Înlătură
 
 ## Breach Alert notification
 
-about-logins-breach-alert-title = Breșă de securitate pe site-ul web
+about-logins-breach-alert-title = Încălcarea securității datelor în cazul unui site web
 breach-alert-text = Parolele au fost divulgate sau furate de pe acest site web după ce ți-ai actualizat ultima oară detaliile de autentificare. Schimbă parola ca să îți protejezi contul.
-about-logins-breach-alert-date = Această breșă de date a apărut la data de { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+about-logins-breach-alert-date = Această încălcare a securității datelor a apărut la data de { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-breach-alert-link = Mergi la { $hostname }
@@ -172,7 +175,7 @@ about-logins-breach-alert-learn-more-link = Află mai multe
 ## Vulnerable Password notification
 
 about-logins-vulnerable-alert-title = Parolă vulnerabilă
-about-logins-vulnerable-alert-text2 = Această parolă a fost folosită pentru un alt cont care a fost implicat, cel mai probabil, într-o breșă de date. Refolosirea datelor de autentificare îți va pune contul în pericol. Schimbă această parolă.
+about-logins-vulnerable-alert-text2 = Această parolă a fost folosită pentru un alt cont care a fost implicat, cel mai probabil, într-o încălcare a securității datelor. Refolosirea datelor de autentificare îți va pune contul în pericol. Schimbă această parolă.
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-vulnerable-alert-link = Mergi la { $hostname }
@@ -187,3 +190,13 @@ about-logins-vulnerable-alert-learn-more-link = Află mai multe
 about-logins-error-message-duplicate-login-with-link = Deja există o intrare pentru { $loginTitle } cu acest nume de utilizator. <a data-l10n-name="duplicate-link">Mergi la intrarea existentă?</a>
 # This is a generic error message.
 about-logins-error-message-default = A apărut o eroare la încercarea de salvare a acestei parole.
+
+## Login Export Dialog
+
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] Document CSV
+       *[other] Fișier CSV
+    }

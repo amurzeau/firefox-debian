@@ -22,6 +22,7 @@ set-password-new-password = Introduza a nova palavra-passe:
 set-password-reenter-password = Volte a introduzir a palavra-passe:
 set-password-meter = Indicador de qualidade da palavra-passe
 set-password-meter-loading = A carregar
+master-password-admin = O seu administrador exige que você tenha uma palavra-passe mestra definida para guardar palavras-passe.
 master-password-description = Uma palavra-passe mestra é utilizada para proteger informação sensível como, palavras-passe de sites.  Se criar uma palavra-passe mestra, ser-lhe-á solicitado que a introduza uma vez por cada sessão quando o { -brand-short-name } adquire informação protegida pela palavra-passe mestra.
 master-password-warning = Por favor certifique-se de que memoriza a palavra-passe mestra definida. Se se esquecer da sua palavra-passe mestra, não irá conseguir aceder a qualquer informação protegida pela mesma.
 remove-password =

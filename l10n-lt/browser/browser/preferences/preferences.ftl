@@ -317,8 +317,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Naudoti „{ $plugin-name }“ papildinį (programoje „{ -brand-short-name }“)
-applications-preview-inapp =
-    .label = Peržiūrėti naudojant „{ -brand-short-name }“
 applications-open-inapp =
     .label = Atverti per „{ -brand-short-name }“
 
@@ -332,8 +330,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -500,11 +496,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Lankomiausios svetainės
 home-prefs-topsites-description = Dažniausiai lankomos svetainės
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Rekomendavo „{ $provider }“
 home-prefs-recommended-by-description = Puikus turinys iš viso saityno, parinktas specialiai jums
+home-prefs-recommended-by-description-update = Išskirtinis turinys iš viso interneto, atrinktas „{ $provider }“
+
+##
+
 home-prefs-recommended-by-learn-more = Kaip tai veikia
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Rėmėjų straipsniai
@@ -566,6 +568,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Rodyti paieškos žodžių siūlymus privačiojo naršymo languose.
 suggestions-addressbar-settings = Keiskite naršymo žurnalo, adresyno, ir kortelių siūlymų nuostatas
+suggestions-addressbar-settings-generic = Keisti kitų adreso juostos siūlymų nuostatas
 search-suggestions-cant-show = Paieškos žodžių siūlymai adreso lauke nebus rodomi, kadangi esate nustatę, jog „{ -brand-short-name }“ niekada nevestų žurnalo.
 search-one-click-header = Ieškyklės vienu spustelėjimu
 search-one-click-desc = Pasirinkite alternatyvias ieškykles, kurios pasirodo po adreso ir paieškos laukais, kai pradedate vesti žodį.
@@ -769,10 +772,10 @@ privacy-header = Naršyklės privatumas
 
 ## Privacy Section - Forms
 
+logins-header = Prisijungimai ir slaptažodžiai
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Prisijungimai ir slaptažodžiai
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Prisijungimai ir slaptažodžiai
     .searchkeywords = { -lockwise-brand-short-name }
@@ -808,8 +811,6 @@ forms-master-pw-fips-desc = Slaptažodžio pakeisti nepavyko
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Norėdami sukurti pagrindinį slaptažodį, patvirtinkite savo tapatybę.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Norėdami sukurti pagrindinį slaptažodį, įveskite savo „Windows“ prisijungimo duomenis. Tai padeda apsaugoti jūsų paskyras.
 # This message can be seen by trying to add a Master Password.
@@ -906,6 +907,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Tvarkyti leidimus…
     .accesskey = l
+sitedata-cookies-exceptions =
+    .label = Tvarkyti išimtis…
+    .accesskey = m
 
 ## Privacy Section - Address Bar
 
@@ -920,6 +924,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = atvertų kortelių
     .accesskey = v
+addressbar-locbar-topsites-option =
+    .label = Lankomiausios svetainės
+    .accesskey = L
 addressbar-suggestions-settings = Keisti ieškyklių siūlymų nuostatas
 
 ## Privacy Section - Content Blocking
@@ -979,7 +986,6 @@ content-blocking-fingerprinters = Skaitmeninių atspaudų stebėjimas
 content-blocking-warning-title = Dėmesio!
 content-blocking-warning-description = Blokuojant turinį gali sutrikti kai kurių svetainių veikimas. Blokavimą galima lengvai išjungti patikimose svetainėse.
 content-blocking-learn-how = Sužinoti kaip
-content-blocking-etp-warning-description = Stebėjimo elementų blokavimas gali sutrikdyti kai kurių svetainių veikimą. Norėdami įkelti visą turinį, tinklalapį su stebėjimo elementais įkelkite iš naujo.
 content-blocking-and-isolating-etp-warning-description = Stebėjimo elementų blokavimas ir slapukų izoliavimas gali sutrikdyti kai kurių svetainių veikimą. Norėdami įkelti visą turinį, tinklalapį su stebėjimo elementais įkelkite iš naujo.
 content-blocking-warning-learn-how = Sužinoti kaip
 content-blocking-reload-description = Norėdami pritaikyti šiuos pakeitimus, turėsite įkelti savo korteles iš naujo.

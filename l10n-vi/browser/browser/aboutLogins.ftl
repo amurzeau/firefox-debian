@@ -2,6 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 about-logins-page-title = Đăng nhập & mật khẩu
 
 # "Google Play" and "App Store" are both branding and should not be translated
@@ -26,6 +32,7 @@ menu =
     .title = Mở menu
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Nhập dữ liệu từ trình duyệt khác…
+about-logins-menu-menuitem-export-logins = Xuất thông tin đăng nhập…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Tùy chọn
@@ -104,27 +111,26 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
-# This message can be seen by attempting to edit a login in about:logins
-about-logins-edit-login-os-auth-dialog-message = Xác nhận danh tính của bạn để chỉnh sửa đăng nhập đã lưu.
 # This message can be seen when attempting to edit a login in about:logins on Windows.
 about-logins-edit-login-os-auth-dialog-message-win = Để chỉnh sửa thông tin đăng nhập của bạn, hãy nhập thông tin đăng nhập Windows của bạn. Điều này giúp bảo vệ tính bảo mật của tài khoản của bạn.
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = chỉnh sửa thông tin đăng nhập đã lưu
-# This message can be seen by attempting to reveal a password in about:logins
-about-logins-reveal-password-os-auth-dialog-message = Xác nhận danh tính của bạn để hiển thị mật khẩu đã lưu.
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
 about-logins-reveal-password-os-auth-dialog-message-win = Để xem mật khẩu của bạn, nhập thông tin đăng nhập Windows của bạn. Điều này giúp bảo vệ tính bảo mật của tài khoản của bạn.
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = hiển thị mật khẩu đã lưu
-# This message can be seen by attempting to copy a password in about:logins
-about-logins-copy-password-os-auth-dialog-message = Xác nhận danh tính của bạn để sao chép mật khẩu đã lưu.
 # This message can be seen when attempting to copy a password in about:logins on Windows.
 about-logins-copy-password-os-auth-dialog-message-win = Để sao chép mật khẩu của bạn, hãy nhập thông tin đăng nhập Windows của bạn. Điều này giúp bảo vệ tính bảo mật của tài khoản của bạn.
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = sao chép mật khẩu đã lưu
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message-win = Để xuất ra thông tin đăng nhập của bạn, hãy nhập thông tin đăng nhập Windows của bạn. Điều này giúp bảo mật tài khoản của bạn.
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message-macosx = xuất thông tin đăng nhập và mật khẩu
 
 ## Master Password notification
 
@@ -159,6 +165,9 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Xoá thông tin đăng nhập này?
 confirm-delete-dialog-message = Thao tác này không thể hoàn tác được.
 about-logins-confirm-remove-dialog-confirm-button = Xóa
+about-logins-confirm-export-dialog-title = Xuất thông tin đăng nhập và mật khẩu
+about-logins-confirm-export-dialog-message = Mật khẩu của bạn sẽ được lưu dưới dạng văn bản có thể đọc được (ví dụ: BadP@ssw0rd) để bất kỳ ai có thể mở tập tin được xuất đều có thể xem chúng.
+about-logins-confirm-export-dialog-confirm-button = Xuất…
 confirm-discard-changes-dialog-title = Hủy bỏ những thay đổi chưa lưu?
 confirm-discard-changes-dialog-message = Tất cả các thay đổi chưa được lưu sẽ bị mất.
 confirm-discard-changes-dialog-confirm-button = Loại bỏ
@@ -191,3 +200,19 @@ about-logins-vulnerable-alert-learn-more-link = Tìm hiểu thêm
 about-logins-error-message-duplicate-login-with-link = Một mục nhập cho { $loginTitle } với tên người dùng đã tồn tại. <a data-l10n-name="duplicate-link">Chuyển đến giá trị hiện có?</a>
 # This is a generic error message.
 about-logins-error-message-default = Đã xảy ra lỗi trong khi cố gắng lưu mật khẩu này.
+
+## Login Export Dialog
+
+# Title of the file picker dialog
+about-logins-export-file-picker-title = Xuất tập tin đăng nhập
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename = logins.csv
+about-logins-export-file-picker-export-button = Xuất
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] Tài liệu CSV
+       *[other] Tập tin CSV
+    }

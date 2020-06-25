@@ -55,6 +55,10 @@ cert-error-details-hsts-label = Форсированное защищённое 
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = Привязка открытого ключа HTTP (HPKP): { $hasHPKP }
 cert-error-details-cert-chain-label = Цепочка сертификата:
+open-in-new-window-for-csp-or-xfo-error = Открыть сайт в новом окне
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = Для обеспечения вашей безопасности { $hostname } не разрешил { -brand-short-name } отобразить страницу, так как она встроена в другой сайт. Чтобы увидеть эту страницу, вам нужно открыть её в новом окне.
 
 ## Messages used for certificate error titles
 
@@ -85,6 +89,7 @@ unknownSocketType-title = Неизвестный/неопознанный отв
 nssFailure2-title = Ошибка при установлении защищённого соединения
 cspBlocked-title = Заблокировано политикой защиты содержимого
 xfoBlocked-title = Заблокировано политикой X-Frame-Options
+csp-xfo-error-title = { -brand-short-name } не может открыть эту страницу
 corruptedContentError-title = Ошибка искажения содержимого
 remoteXUL-title = Удалённый XUL
 sslv3Used-title = Установка защищённого соединения не удалась

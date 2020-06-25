@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Använd { $plugin-name } (i { -brand-short-name })
-applications-preview-inapp =
-    .label = Förhandsgranska i { -brand-short-name }
 applications-open-inapp =
     .label = Öppna i { -brand-short-name }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Mest besökta
 home-prefs-topsites-description = Sidorna du besöker mest
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Rekommenderas av { $provider }
 home-prefs-recommended-by-description = Bra innehåll från hela webben, anpassat för dig
+home-prefs-recommended-by-description-update = Exceptionellt innehåll från hela internet, sammanställt av { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Hur fungerar det
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsrade nyheter
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Visa sökförslag i privata fönster
 suggestions-addressbar-settings = Ändra inställningar för surfhistorik, bokmärken och flikförslag
+suggestions-addressbar-settings-generic = Ändra inställningar för andra förslag i adressfältet
 search-suggestions-cant-show = Sökförslag kommer inte att visas i adressfältet eftersom du har konfigurerat { -brand-short-name } att aldrig spara historik.
 search-one-click-header = Sökfältets sökmotorer
 search-one-click-desc = Välj alternativa sökmotorer som visas under adressfältet och sökfältet när du börjar skriva in ett nyckelord.
@@ -765,10 +768,10 @@ privacy-header = Webbläsarintegritet
 
 ## Privacy Section - Forms
 
+logins-header = Inloggningar & lösenord
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Inloggningar & lösenord
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Inloggningar & lösenord
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = Ändring av lösenordet misslyckades
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verifiera din identitet för att skapa ett huvudlösenord.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Om du vill skapa ett huvudlösenord anger du dina inloggningsuppgifter för Windows. Detta skyddar dina kontons säkerhet.
 # This message can be seen by trying to add a Master Password.
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Hantera behörigheter...
     .accesskey = b
+sitedata-cookies-exceptions =
+    .label = Hantera undantag…
+    .accesskey = x
 
 ## Privacy Section - Address Bar
 
@@ -916,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Öppna flikar
     .accesskey = Ö
+addressbar-locbar-topsites-option =
+    .label = Mest besökta
+    .accesskey = T
 addressbar-suggestions-settings = Ändra inställningar för förslag från sökmotorn
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Fingeravtrycksspårare
 content-blocking-warning-title = Se upp!
 content-blocking-warning-description = Att blockera innehåll kan begränsa funktionaliteten hos vissa webbplatser. Det är enkelt att inaktivera blockering för webbplatser du litar på.
 content-blocking-learn-how = Lär dig hur
-content-blocking-etp-warning-description = Blockering av spårare kan påverka funktionaliteten på vissa webbplatser. Ladda om en sida med spårare för att ladda allt innehåll.
 content-blocking-and-isolating-etp-warning-description = Blockering av spårare och isolering av kakor kan påverka funktionaliteten på vissa webbplatser. Ladda om en sida med spårare för att ladda allt innehåll.
 content-blocking-warning-learn-how = Lär dig hur
 content-blocking-reload-description = Du måste ladda om dina flikar för att kunna tillämpa ändringarna.

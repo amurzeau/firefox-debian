@@ -31,6 +31,7 @@ app-basics-title = Informasi Dasar Aplikasi
 app-basics-name = Nama
 app-basics-version = Versi
 app-basics-build-id = ID Build
+app-basics-distribution-id = ID Distribusi
 app-basics-update-channel = Kanal Pemutakhiran
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -115,6 +116,11 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumen
 safe-mode-title = Coba Mode Aman
 restart-in-safe-mode-label = Mulai Ulang dengan Pengaya Dinonaktifkan…
+clear-startup-cache-title = Coba bersihkan tembolok permulaan
+clear-startup-cache-label = Hapus tembolok permulaan...
+startup-cache-dialog-title = Hapus tembolok permulaan
+startup-cache-dialog-body = Mulai ulang { -brand-short-name } untuk menghapus tembolok permulaan. Ini tidak adakan mengubah pengaturan Anda atau menghapus ekstensi yang Anda tambahkan ke { -brand-short-name }.
+restart-button-label = Mulai Ulang
 
 ## Media titles
 
@@ -122,6 +128,7 @@ audio-backend = Backend Audio
 max-audio-channels = Kanal Maksimal
 channel-layout = Tata Letak Saluran Pilihan
 sample-rate = Tingkat Sampel Pilihan
+roundtrip-latency = Roundtrip latency (standar deviasi)
 media-title = Media
 media-output-devices-title = Peranti Keluaran
 media-input-devices-title = Peranti Masukan
@@ -267,6 +274,11 @@ sandbox-proc-type-content = konten
 sandbox-proc-type-file = konten berkas
 sandbox-proc-type-media-plugin = plugin media
 sandbox-proc-type-data-decoder = dekoder data
+startup-cache-title = Tembolok Permulaan
+startup-cache-disk-cache-path = Jalur Tembolok Disk
+startup-cache-ignore-disk-cache = Abaikan Tembolok Disk
+startup-cache-found-disk-cache-on-init = Tembolok Disk di Init ditemukan
+startup-cache-wrote-to-disk-cache = Menulis ke Tembolok Disk
 launcher-process-status-0 = Diaktifkan
 launcher-process-status-1 = Dinonaktifkan karena kegagalan
 launcher-process-status-2 = Dinonaktifkan secara paksa
@@ -290,6 +302,7 @@ touch-enabled = input sentuh diaktifkan
 drag-enabled = penyeretan bilah penggulung aktif
 keyboard-enabled = papan tik diaktifkan
 autoscroll-enabled = gulir otomatis diaktifkan
+zooming-enabled = pinch-zoom halus diaktifkan
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

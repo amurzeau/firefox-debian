@@ -116,6 +116,11 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argument
 safe-mode-title = Prøv trygg modus
 restart-in-safe-mode-label = Start på nytt utan tillegg…
+clear-startup-cache-title = Prøv å tøme oppstart-snøgglageret
+clear-startup-cache-label = Tøm oppstart-snøgglageret…
+startup-cache-dialog-title = Tøm oppstart-snøgglageret
+startup-cache-dialog-body = Start { -brand-short-name } på nytt for å tøme oppstartsnøgglageret. Dette vil ikkje endre innstillingane dine eller fjerne utvidingar du har lagt til i { -brand-short-name }.
+restart-button-label = Start på nytt
 
 ## Media titles
 
@@ -123,6 +128,7 @@ audio-backend = Lydgrensesnitt
 max-audio-channels = Maks kanalar
 channel-layout = Føretrekt kanaloppsett
 sample-rate = Føretrekt samplingsfart
+roundtrip-latency = Tur-/retur-forseinking (standardavvik)
 media-title = Media
 media-output-devices-title = Ut-einingar
 media-input-devices-title = Inn-einingar

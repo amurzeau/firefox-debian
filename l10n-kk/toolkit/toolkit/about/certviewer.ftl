@@ -16,6 +16,9 @@ certificate-viewer-certificate-authority = Сертификаттау ортал
 certificate-viewer-cipher-suite = Шифрлер отбасы
 certificate-viewer-common-name = Жалпы аты
 certificate-viewer-email-address = Эл. пошта адресі
+# Variables:
+#   $firstCertName (String) - Common Name for the displayed certificate
+certificate-viewer-tab-title = { $firstCertName } үшін сертификат
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
 certificate-viewer-inc-country = Тіркелу елі
 certificate-viewer-country = Ел
@@ -29,6 +32,8 @@ certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = Кілттермен алмасу тобы
 certificate-viewer-key-id = Кілт идентификаторы
 certificate-viewer-key-size = Кілт өлшемі
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-locality = Заңды тұлғаның орналасқан жері
 certificate-viewer-locality = Орналасуы
 certificate-viewer-location = Орналасуы
 certificate-viewer-logid = Лог идентификаторы
@@ -95,3 +100,16 @@ certificate-viewer-download-pem = PEM (сертификат)
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (сертификаттар тізбегі)
     .download = { $fileName }-chain.pem
+# The title attribute for Critical Extension icon
+certificate-viewer-critical-extension =
+    .title = Бұл кеңейту өте маңызды деп белгіленді, яғни клиенттер оны түсінбесе, сертификаттан бас тартуы керек.
+certificate-viewer-export = Экспорттау
+    .download = { $fileName }.pem
+
+## Labels for tabs displayed in stand-alone about:certificate page
+
+certificate-viewer-tab-mine = Сіздің сертификаттарыңыз
+certificate-viewer-tab-people = Адамдар
+certificate-viewer-tab-servers = Серверлер
+certificate-viewer-tab-ca = Сертификаттау орталықтары
+certificate-viewer-tab-unkonwn = Белгісіз

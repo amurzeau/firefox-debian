@@ -63,6 +63,7 @@ policy-ExtensionSettings = Gerer tote le aspectos del installation de extensione
 policy-ExtensionUpdate = Activar o disactivar le actualisation automatic de extensiones.
 policy-FirefoxHome = Configura Firefox Home.
 policy-FlashPlugin = Permitter o refusar le uso del plug-in Flash.
+policy-Handlers = Configurar gestores de application predefinite.
 policy-HardwareAcceleration = Si false, disactivar le acceleration hardware.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Definir e optionalmente blocar le pagina principal.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Usar le comportamento 
 ##
 
 policy-LocalFileLinks = Permitter a sitos web specific de ligar a files local.
+policy-MasterPassword = Require o impedi usar un contrasigno maestro.
 policy-NetworkPrediction = Activar o disactivar prediction del rete (prelectura del DNS).
 policy-NewTabPage = Activar o disactivar le pagina Nove scheda.
 policy-NoDefaultBookmarks = Disactivar le creation del marcapaginas predefinite impacchettate con { -brand-short-name } e le Marcapaginas intelligente (Plus Visitate, Tags recente). Nota: iste criterio es efficace solo si usate ante le prime uso del profilo.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Activar salvamento de contrasignos al gestor de 
 # PDF.js and PDF should not be translated
 policy-PDFjs = Disactivar o configurar PDF.js, le visor de PDF integrate in { -brand-short-name }.
 policy-Permissions2 = Configurar le permissiones pro camera, microphono, position, notificationes e autoreproduction.
+policy-PictureInPicture = Activar o disactivar Imagine annidate
 policy-PopupBlocking = Permitter a certe sitos web de monstrar fenestras emergente per predefinition.
 policy-Preferences = Defini e bloca le valor de un sub-ensemble de preferentias.
 policy-PromptForDownloadLocation = Demandar ubi salvar le files quando on discarga.

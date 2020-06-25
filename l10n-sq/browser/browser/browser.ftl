@@ -2,6 +2,50 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (Shfletim Privat)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (Shfletim Privat)
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (Shfletim Privat)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (Shfletim Privat)
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = Shihni të dhëna sajti
 
@@ -36,7 +80,7 @@ urlbar-web-rtc-share-screen-notification-anchor =
 urlbar-indexed-db-notification-anchor =
     .tooltiptext = Hapni panelin për depozitim jashtë linje
 urlbar-password-notification-anchor =
-    .tooltiptext = Hapni panelin e mesazhit Ruaje fjalëkalimin
+    .tooltiptext = Hapni panel mesazhi ruajtje fjalëkalimi
 urlbar-translated-notification-anchor =
     .tooltiptext = Administroni përkthim faqeje
 urlbar-plugins-notification-anchor =
@@ -222,6 +266,23 @@ popup-select-microphone =
     .value = Mikrofon për ndarje me të tjerët:
     .accesskey = M
 popup-all-windows-shared = Do të ndahen me të tjerët krejt dritaret e dukshme në ekranin tuaj.
+popup-screen-sharing-not-now =
+    .label = Jo Tani
+    .accesskey = J
+popup-screen-sharing-never =
+    .label = Mos e Lejo Kurrë
+    .accesskey = K
+popup-silence-notifications-checkbox = Çaktivizo njoftime nga { -brand-short-name }-i, ndërkohë që bëhet ndarje me të tjerë
+popup-silence-notifications-checkbox-warning = { -brand-short-name }-i s’do të shfaqë njoftime, kur jeni duke ndarë gjëra me të tjerë.
+
+## WebRTC window or screen share tab switch warning
+
+sharing-warning-window = Jeni duke ndarë { -brand-short-name }-in me të tjerë. Persona të tjerë mund ta shohin, kur kaloni te një skedë e re.
+sharing-warning-screen = Po ndani me të tjerë krejt ekranin. Persona të tjerë mund ta shohin, kur kaloni te një skedë e re.
+sharing-warning-proceed-to-tab =
+    .label = Kalo te Skeda
+sharing-warning-disable-for-session =
+    .label = Çaktivizo mbrojtje ndarjeje për këtë sesion
 
 ## DevTools F12 popup
 
@@ -242,7 +303,7 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Zgjerim:
-urlbar-go-end-cap =
+urlbar-go-button =
     .tooltiptext = Shkoni te adresa e dhënë te Shtylla e Vendndodhjeve
 urlbar-page-action-button =
     .tooltiptext = Veprime faqeje

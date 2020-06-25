@@ -148,6 +148,7 @@ onboarding-import-browser-settings-title = Importa tes segnapaginas, pleds-clav 
 onboarding-import-browser-settings-text = Cumenza direct — e porta tias paginas e las preferenzas da Chrome cun tai.
 onboarding-import-browser-settings-button = Importar las datas da Chrome
 onboarding-personal-data-promise-title = Privat per princip
+onboarding-personal-data-promise-text = { -brand-product-name } tracta tias datas cun respect cun rimnar damain, las proteger e declerar co ellas vegnan duvradas.
 onboarding-personal-data-promise-button = Leger nossa empermischun
 
 ## Message strings belonging to the Return to AMO flow

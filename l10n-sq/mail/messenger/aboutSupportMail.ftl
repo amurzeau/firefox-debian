@@ -15,3 +15,4 @@ accounts-auth-method = Metodë mirëfilltësimi
 accounts-default = Parazgjedhje?
 identity-name = Identitet
 send-via-email = Dërgoje përmes email-i
+app-basics-telemetry = Të dhëna Telemetry-e

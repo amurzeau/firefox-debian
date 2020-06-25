@@ -119,6 +119,11 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumenten
 safe-mode-title = Veilige modus proberen
 restart-in-safe-mode-label = Herstarten met uitgeschakelde add-ons…
+clear-startup-cache-title = Opstartbuffer proberen te wissen
+clear-startup-cache-label = Opstartbuffer wissen…
+startup-cache-dialog-title = Opstartbuffer wissen
+startup-cache-dialog-body = Herstart { -brand-short-name } om de opstartbuffer te wissen. Dit wijzigt uw instellingen niet en verwijdert geen aan { -brand-short-name } toegevoegde extensies.
+restart-button-label = Herstarten
 
 ## Media titles
 
@@ -126,6 +131,7 @@ audio-backend = Audio-backend
 max-audio-channels = Max. kanalen
 channel-layout = Kanaalindeling van voorkeur
 sample-rate = Samplefrequentie van voorkeur
+roundtrip-latency = Retentielatentie (standaarddeviatie)
 media-title = Media
 media-output-devices-title = Uitvoerapparaten
 media-input-devices-title = Invoerapparaten

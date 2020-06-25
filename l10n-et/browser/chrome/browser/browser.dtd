@@ -113,6 +113,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY enterFullScreenCmd.accesskey "t">
 <!ENTITY exitFullScreenCmd.label "Välju täisekraanirežiimist">
 <!ENTITY exitFullScreenCmd.accesskey "V">
+
 <!ENTITY fullScreenCmd.label "Täisekraani režiim">
 <!ENTITY fullScreenCmd.accesskey "r">
 <!ENTITY fullScreenCmd.macCommandKey "f">
@@ -127,8 +128,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaUnverified.label "Kinnita oma konto">
 
 
-<!ENTITY togglePictureInPicture.key2 "}">
-<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
+<!-- } is above this key on many keyboards -->
+
 
 <!ENTITY fullScreenMinimize.tooltip "Minimeeri">
 <!ENTITY fullScreenRestore.tooltip "Taasta">
@@ -150,15 +151,15 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.unverified.description.label "Enne sünkroonimise alustamist pead oma konto kinnitama.">
 <!ENTITY fxa.unverified.button.label "Ava &syncBrand.shortName.label;i sätted…">
 
-<!ENTITY pictureInPictureHideToggle.label "Peida pilt-pildis lüliti">
-<!ENTITY pictureInPictureHideToggle.accesskey "p">
-
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
      followed by the user's email. -->
 <!ENTITY fxa.menu.signedInAs.label "Sisse logitud kasutajana">
 <!ENTITY fxa.menu.manageAccount.label "Halda kontot…">
 <!ENTITY fxa.menu.syncSettings.label "&syncBrand.shortName.label;i sätted…">
+
+<!ENTITY pictureInPictureHideToggle.label "Peida pilt-pildis lüliti">
+<!ENTITY pictureInPictureHideToggle.accesskey "p">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
@@ -175,7 +176,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.settings.label "Sätted">
 <!ENTITY fxa.menu.accountSettings.label "Konto sätted">
 <!ENTITY fxa.menu.signOut.label "Logi välja…">
-<!ENTITY fxa.menu.deviceSettings.label "Seadme sätted">
 <!ENTITY fxa.menu.setupSync.label "Seadista &syncBrand.shortName.label;…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
@@ -245,7 +245,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY stopCmd.label                "Peata">
 <!ENTITY stopCmd.accesskey            "P">
 <!ENTITY stopCmd.macCommandKey        ".">
+
 <!ENTITY goEndCap.tooltip             "Mine aadressiribal olevale aadressile">
+
 <!ENTITY printButton.label            "Prindi">
 <!ENTITY printButton.tooltip          "Prindi see leht">
 
@@ -276,8 +278,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Halda DRM-tarkvara kasutust">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Ava MIDI paneel">
 
-<!ENTITY urlbar.permissionsGranted.tooltip       "Sa oled taganud sellele saidile täiendavaid õigusi.">
-
 <!ENTITY urlbar.cameraBlocked.tooltip            "Oled sellel lehel keelanud kaamera kasutamise.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Oled sellel lehel keelanud mikrofoni kasutamise.">
 <!ENTITY urlbar.screenBlocked.tooltip            "Oled sellel lehel keelanud ekraanijagamise.">
@@ -292,6 +292,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.installBlocked.tooltip           "Oled sellel lehel keelanud lisade paigaldamise.">
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Kuva ajalugu">
+
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "Sa oled taganud sellele saidile täiendavaid õigusi.">
+
 
 <!ENTITY searchItem.title             "Otsi">
 
@@ -356,6 +360,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newUserContext.accesskey         "o">
 <!ENTITY manageUserContext.label          "Halda konteinereid">
 <!ENTITY manageUserContext.accesskey      "H">
+
 <!ENTITY newNavigatorCmd.label        "Uus aken">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "U">
@@ -404,6 +409,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY viewCustomizeToolbar.label       "Kohanda...">
 <!ENTITY viewCustomizeToolbar.accesskey     "o">
+
 <!ENTITY overflowCustomizeToolbar.label       "Kohanda tööriistariba…">
 <!ENTITY overflowCustomizeToolbar.accesskey   "K">
 
@@ -496,6 +502,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY moreMenu.label "Veel">
 
 <!ENTITY openCmd.commandkey           "l">
+
 <!ENTITY urlbar.placeholder2          "Otsi või sisesta aadress">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
@@ -568,11 +575,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
      them when the user has not typed any keyword. -->
 <!ENTITY searchWithHeader.label       "Vali otsingumootor:">
 
-<!-- LOCALIZATION NOTE (searchWithDesc.label):
-     This string prompts the user to use the list of one-click search engines in
-     the Urlbar and searchbar. -->
-<!ENTITY searchWithDesc.label         "Seekord soorita otsing järgneva otsingumootoriga:">
-
 <!-- LOCALIZATION NOTE (changeSearchSettings.button):
      This string won't wrap, so if the translated string is longer,
      consider translating it as if it said only "Search Settings". -->
@@ -585,6 +587,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY searchSetAsDefault.accesskey "M">
 
 <!ENTITY openLinkCmdInTab.label       "Ava link uuel kaardil">
+
 <!ENTITY openLinkCmdInTab.accesskey   "k">
 <!ENTITY openLinkCmd.label            "Ava link uues aknas">
 <!ENTITY openLinkCmd.accesskey        "l">
@@ -633,11 +636,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisLinkCmd.accesskey  "n">
 <!ENTITY bookmarkThisFrameCmd.label      "Lisa see paneel järjehoidjatesse">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "e">
+
 <!ENTITY pageAction.copyLink.label    "Kopeeri link">
 
 <!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
   "Pocket" is a brand name. -->
 <!ENTITY pocketButton.tooltiptext     "Salvesta Pocketisse">
+
 <!ENTITY saveToPocketCmd.label        "Salvesta leht Pocketisse">
 <!ENTITY saveToPocketCmd.accesskey    "k">
 <!ENTITY saveLinkToPocketCmd.label    "Salvesta link Pocketisse">
@@ -846,18 +851,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.connectionSecure "Turvaline ühendus">
 <!ENTITY identity.connectionNotSecure "Ebaturvaline ühendus">
 
-<!ENTITY identity.connectionSecure3 "Turvaline ühendus">
-<!ENTITY identity.connectionNotSecure2 "Ebaturvaline ühendus">
-<!ENTITY identity.connectionNotSecureSecurityView "Ühendus selle saidiga pole turvaline.">
 <!ENTITY identity.connectionFile "See leht on loodud arvutisse salvestatud faili põhjal.">
 <!ENTITY identity.connectionVerified2 "Ühendus selle saidiga on turvaline. Saidi omanik on ">
-<!ENTITY identity.connectionVerified3 "Ühendus selle saidiga on turvaline.">
 <!ENTITY identity.connectionInternal "See on turvaline &brandShortName;i leht.">
 <!ENTITY identity.extensionPage "Selle lehe sisu pärineb laienduselt.">
 <!ENTITY identity.insecureLoginForms2 "Sellele lehele sisestatavad kasutajakonto andmed võivad ohus olla.">
 <!ENTITY identity.customRoot "Ühenduse on verifitseerinud Mozillale tundmatu serdi väljaandja.">
-
-<!ENTITY identity.evOwnerLabel2 "Serdi omanik:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; blokkis sellel lehel mõned ebaturvalised osad.">
@@ -893,65 +892,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Õigused">
 
-<!ENTITY identity.permissions3 "Õigused">
 <!ENTITY identity.permissionsEmpty "Sellele saidile pole tagatud ühtki eriõigust.">
 <!ENTITY identity.permissionsReloadHint "Muudatuste rakendumiseks pead võib-olla lehe uuesti laadima.">
 <!ENTITY identity.permissionsPreferences.tooltip "Ava õiguste sätted">
 <!ENTITY identity.contentBlockingPreferences.tooltip "Ava sisu blokkimise sätted">
 
-
-<!ENTITY protections.etpON.header "Täiustatud jälitamisvastane kaitse on sellel saidil SEES">
-<!ENTITY protections.etpOFF.header "Täiustatud jälitamisvastane kaitse on sellel saidil VÄLJAS">
-<!-- LOCALIZATION NOTE:
-     protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
-<!ENTITY protections.etpMoreInfo.label "Rohkem teavet täiustatud jälitamisvastase kaitse kohta">
-<!ENTITY protections.settings.label "Kaitse sätted">
-<!ENTITY protections.showreport.label "Vaata raportit">
-<!-- LOCALIZATION NOTE:
-     protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
-     protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
-<!ENTITY protections.siteNotWorking.label "Sait ei tööta?">
-<!ENTITY protections.siteNotWorkingView.title "Sait ei tööta?">
-<!-- LOCALIZATION NOTE:
-     In the Site Not Working? view, we suggest turning off protections if
-     the user is experiencing issues with any of a variety of functionality.
-     protections.siteNotWorkingView.header: The header of the list
-     protections.siteNotWorkingView.issueList.*: The list items, shown in a <ul> -->
-<!ENTITY protections.siteNotWorkingView.header "Lülita kaitse välja, kui sul esineb probleeme järgnevate asjadega:">
-<!ENTITY protections.siteNotWorkingView.issueList.logInFields "sisselogimisväljad">
-<!ENTITY protections.siteNotWorkingView.issueList.forms "vormid">
-<!ENTITY protections.siteNotWorkingView.issueList.payments "maksed">
-<!ENTITY protections.siteNotWorkingView.issueList.comments "kommentaarid">
-<!ENTITY protections.siteNotWorkingView.issueList.videos "videod">
-<!ENTITY protections.siteNotWorkingView.sendReport.label "Saada raport">
-
-<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
-     In the protections panel, Content Blocking category items are in three sections:
-     "Blocked" for categories being blocked in the current page,
-     "Allowed" for categories detected but not blocked in the current page, and
-     "None Detected" for categories not detected in the current page.
-     These strings are used in the header labels of each of these sections. -->
-<!ENTITY protections.blocking2.label "Blokitud">
-<!ENTITY protections.notBlocking2.label "Lubatud">
-<!ENTITY protections.notFound.label "Ei tuvastatud">
-<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
-     The "Allowed" header also includes a "Why?" link that, when hovered, shows
-     a tooltip explaining why these items were not blocked in the page. -->
-<!ENTITY protections.notBlocking.why.label "Miks?">
-<!ENTITY protections.notBlocking.why.etpOn.tooltip "Nende blokkimine võib mõned saidid katki teha. Ilma jälitajateta mõned nupud, vormid ja sisselogimisväljad ei pruugi töötada.">
-<!ENTITY protections.notBlocking.why.etpOff.tooltip "Kaitse väljalülitamine lubab kõik jälitajad sellel saidil. See võib ka parandada saidi funktsionaalsust.">
-<!ENTITY protections.socialMediaTrackers.label "Sotsiaalmeedia jälitajad">
-<!ENTITY protections.crossSiteTrackingCookies.label "Saitideülesed jälitamisküpsised">
-<!ENTITY protections.trackingContent.label "Jälitav sisu">
-<!ENTITY protections.fingerprinters.label "Seadmetuvastajad">
-<!ENTITY protections.cryptominers.label "Krüptorahakaevurid">
-<!ENTITY protections.noTrackersFound.description "Sellelt lehelt ei tuvastatud ühtki &brandShortName;ile teadaolevat jälitajat.">
-
-<!ENTITY protections.crossSiteTrackingCookies.description "Need küpsised jälitavad sind saidilt saidile, et koguda infot sinu veebitegevuse kohta. Neid määravad kolmandad osapooled, näiteks reklaamijad ja analüüsiettevõtted.">
-<!ENTITY protections.cryptominers.description "Krüptorahakaevurid kasutavad sinu süsteemi arvutusressursse digitaalse raha kaevandamiseks. Krüptoraha kaevandamise skriptid tühjendavad sinu seadme akut, aeglustavad sinu arvutit ja suurendavad sinu elektriarvet.">
-<!ENTITY protections.fingerprinters.description "Seadmetuvastajad koguvad profileerimiseks sinu brauseri ja arvuti sätteid. Neid digitaalseid sõrmejälgi kasutades saavad nad jälitada sind erinevatel saitidel.">
-<!ENTITY protections.trackingContent2.description "Saidid võivad laadida väliseid reklaame, videoid ja muud sisu, mis sisaldab jälitavat koodi. Jälitava sisu blokkimine võib panna saidid kiiremini avanema, kuid mõned nupud, vormid ja sisselogimise väljad ei pruugi enam toimida.">
-<!ENTITY protections.socialMediaTrackers.description "Suhtlusvõrgustikud paigaldavad jälitajaid teistele saitidele, et jälgida, mida sa teed, näed või võrgus olles vaatad. See võimaldab sotsiaalmeediaettevõtetel sinu kohta rohkem teada saada kui ainult seda, mida jagad oma sotsiaalmeedia profiilides.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -998,15 +943,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.cookies.label "Küpsised">
 <!ENTITY contentBlocking.cookiesView.label "Küpsised ja saidi andmed">
 
-<!ENTITY contentBlocking.trackingProtection4.label "Jälitav sisu">
-
-<!ENTITY contentBlocking.manageSettings2.label "Halda kaitse sätteid">
-<!ENTITY contentBlocking.manageSettings2.accesskey "H">
-
-<!ENTITY contentBlocking.socialblock.label "Sotsiaalmeedia jälitajad">
-
-<!ENTITY contentBlocking.cookies2.label "Saitideülesed jälitamisküpsised">
-
 <!ENTITY contentBlocking.cryptominers.label "Krüptorahakaevurid">
 <!ENTITY contentBlocking.cryptominersView.label "Krüptorahakaevurid">
 
@@ -1018,12 +954,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView2.description "Sisu blokkimine võib põhjustada probleeme mõningate saitidega. Probleemidest raporteerimisega aitad sa teha &brandShortName;i paremaks kõigi jaoks. (Raportiga saadetakse Mozillale nii külastatava saidi URL kui ka infot sinu brauseri sätete kohta.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Rohkem teavet">
 
-<!ENTITY contentBlocking.breakageReportView.title "Raporteeri katkisest saidist">
-<!ENTITY contentBlocking.breakageReportView3.description "Teatud jälitajate blokkimine võib põhjustada probleeme mõningate saitidega. Probleemidest raporteerimisega aitad sa teha &brandShortName;i paremaks kõigi jaoks. Selle raportiga saadetakse Mozillale nii külastatava saidi URL kui ka infot sinu brauseri sätete kohta.">
-<!ENTITY contentBlocking.breakageReportView2.learnMore "Rohkem teavet">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "URL">
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "Millised probleemid esinesid? (valikuline)">
-<!ENTITY contentBlocking.breakageReportView2.collection.comments.label "Valikuline: kirjelda probleemi">
 <!ENTITY contentBlocking.breakageReportView.sendReport.label "Saada raport">
 <!ENTITY contentBlocking.breakageReportView.cancel.label "Loobu">
 
@@ -1051,6 +983,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      and pluginActivateAlways.label strings above on a single line. This must be
      a CSS length value. -->
 <!ENTITY pluginNotification.width "28em">
+
 
 <!ENTITY uiTour.infoPanel.close "Sulge">
 

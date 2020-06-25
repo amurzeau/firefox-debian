@@ -5,11 +5,12 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = Inportatu beste nabigatzaile batetik…
 appmenuitem-protection-report-title = Pribatutasun-babesak
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Joan zure pribatutasun-txostenera
+appmenuitem-protection-dashboard-title = Babesen panela
+appmenuitem-customize-mode =
+    .label = Pertsonalizatu…
 
 ## Zoom Controls
 
@@ -22,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = Sinkronizatu orain
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Nobedadeak
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = Jakinarazi eginbide berriei buruz
+    .accesskey = k

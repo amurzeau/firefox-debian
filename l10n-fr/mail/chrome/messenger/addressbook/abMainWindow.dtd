@@ -4,7 +4,7 @@
 
 <!ENTITY addressbookWindow.title                        "Carnet d’adresses">
 <!ENTITY blankResultsPaneMessage.label                  "Ce carnet d’adresses affiche uniquement les contacts lorsque vous effectuez une recherche">
-<!ENTITY localResultsOnlyMessage.label                  "Les contacts des carnets d’adresses distants ne sont pas affichés tant que vous n’effectuez pas de recherche">
+<!ENTITY localResultsOnlyMessage.label                  "Les contacts des carnets d’adresses distants n’apparaissent que lorsque vous effectuez une recherche">
 
 <!-- File Menu -->
 <!ENTITY fileMenu.label                                 "Fichier">
@@ -18,6 +18,8 @@
 <!ENTITY newListCmd.accesskey                           "l">
 <!ENTITY newAddressBookCmd.label                        "Carnet d’adresses…">
 <!ENTITY newAddressBookCmd.accesskey                    "c">
+<!ENTITY newCardDAVBookCmd.label                        "Carnet d’adresses CardDAV…">
+<!ENTITY newCardDAVBookCmd.accesskey                    "V">
 <!ENTITY newLDAPDirectoryCmd.label                      "Annuaire LDAP…">
 <!ENTITY newLDAPDirectoryCmd.accesskey                  "A">
 <!ENTITY newMessageCmd.label                            "Message">

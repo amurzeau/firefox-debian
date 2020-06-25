@@ -2,6 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 about-logins-page-title = ანგარიშები და პაროლები
 
 # "Google Play" and "App Store" are both branding and should not be translated
@@ -26,6 +32,7 @@ menu =
     .title = მენიუს გახსნა
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = გადმოტანა სხვა ბრაუზერიდან…
+about-logins-menu-menuitem-export-logins = მონაცემების გატანა…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] პარამეტრები
@@ -105,27 +112,26 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
-# This message can be seen by attempting to edit a login in about:logins
-about-logins-edit-login-os-auth-dialog-message = თქვენი ვინაობის დამოწმებას, შენახული მონაცემის ჩასასწორებლად.
 # This message can be seen when attempting to edit a login in about:logins on Windows.
 about-logins-edit-login-os-auth-dialog-message-win = მონაცემების ჩასასწორებლად, დაამოწმეთ Windows-ანგარიში. ეს დაგეხმარებათ დაიცვათ თქვენი ანგარიშების უსაფრთხოება.
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = შენახული მონაცემის ჩასწორებას
-# This message can be seen by attempting to reveal a password in about:logins
-about-logins-reveal-password-os-auth-dialog-message = თქვენი ვინაობის დამოწმებას, შენახულ პაროლთან წვდომისთვის.
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
 about-logins-reveal-password-os-auth-dialog-message-win = პაროლის სანახავად, დაამოწმეთ Windows-ანგარიში. ეს დაგეხმარებათ დაიცვათ თქვენი ანგარიშების უსაფრთხოება.
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = შენახულ პაროლთან წვდომას
-# This message can be seen by attempting to copy a password in about:logins
-about-logins-copy-password-os-auth-dialog-message = თქვენი ვინაობის დამოწმებას, შენახული პაროლის ასლისთვის.
 # This message can be seen when attempting to copy a password in about:logins on Windows.
 about-logins-copy-password-os-auth-dialog-message-win = პაროლის ასლის ასაღებად, დაამოწმეთ Windows-ანგარიში. ეს დაგეხმარებათ დაიცვათ თქვენი ანგარიშების უსაფრთხოება.
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = შენახული პაროლის ასლის აღებას
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message-win = მონაცემების გასატანად, დაამოწმეთ Windows-ანგარიში. ეს დაგეხმარებათ დაიცვათ თქვენი ანგარიშების უსაფრთხოება.
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message-macosx = ანგარიშების მონაცემებისა და პაროლების გატანა
 
 ## Master Password notification
 
@@ -160,6 +166,9 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = მოცილდეს ეს მონაცემები?
 confirm-delete-dialog-message = ეს ქმედება შეუქცევადია.
 about-logins-confirm-remove-dialog-confirm-button = მოცილება
+about-logins-confirm-export-dialog-title = მონაცემებისა და პაროლების გატანა
+about-logins-confirm-export-dialog-message = თქვენი პაროლები შეინახება წასაკითხ ტექსტად (მაგ. BadP@ssw0rd) ასე რომ, ნებისმიერს შეეძლება მათი ნახვა, თუ გატანილ ფაილს გახსნის.
+about-logins-confirm-export-dialog-confirm-button = გატანა…
 confirm-discard-changes-dialog-title = გაუქმდეს შეუნახავი ცვლილებები?
 confirm-discard-changes-dialog-message = ყველა შეუნახავი ცვლილება დაიკარგება.
 confirm-discard-changes-dialog-confirm-button = გაუქმება
@@ -192,3 +201,19 @@ about-logins-vulnerable-alert-learn-more-link = იხილეთ ვრცლ�
 about-logins-error-message-duplicate-login-with-link = ჩანაწერი ანგარიშისთვის { $loginTitle } ამ მომხმარებლის სახელით უკვე არსებობს. <a data-l10n-name="duplicate-link">გსურთ გასავლა ამ ჩანაწერზე?</a>
 # This is a generic error message.
 about-logins-error-message-default = შეცდომა, ამ პაროლის შენახვისას.
+
+## Login Export Dialog
+
+# Title of the file picker dialog
+about-logins-export-file-picker-title = მონაცემების ფაილის გატანა
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename = logins.csv
+about-logins-export-file-picker-export-button = გატანა
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV-დოკუმენტი
+       *[other] CSV-ფაილი
+    }

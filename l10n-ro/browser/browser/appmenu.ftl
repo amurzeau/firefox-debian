@@ -8,6 +8,9 @@
 appmenuitem-protection-report-title = Protecții pentru confidențialitate
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Mergi la raportul de protecție a vieții private
+appmenuitem-protection-dashboard-title = Tablou de bord privind protecțiile
+appmenuitem-customize-mode =
+    .label = Personalizează…
 
 ## Zoom Controls
 
@@ -20,3 +23,7 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = Sincronizează acum
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Ce este nou

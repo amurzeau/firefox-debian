@@ -63,6 +63,7 @@ policy-ExtensionSettings = Administrar todos los aspectos de la instalación de 
 policy-ExtensionUpdate = Habilitar o deshabilitar las actualizaciones automáticas de las extensiones.
 policy-FirefoxHome = Configurar inicio de Firefox.
 policy-FlashPlugin = Permitir o denegar el uso del plugin Flash.
+policy-Handlers = Configurar controladores de aplicaciones predeterminados.
 policy-HardwareAcceleration = Si es falso, desactivar la aceleración de hardware.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Establecer y bloquear opcionalmente la página de inicio.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Vuelva al comportamien
 ##
 
 policy-LocalFileLinks = Permitir que sitios web específicos se enlacen con archivos locales.
+policy-MasterPassword = Pedir o evitar el uso de una contraseña maestra.
 policy-NetworkPrediction = Habilitar o deshabilitar la predicción de la red (búsqueda previa de DNS).
 policy-NewTabPage = Habilitar o deshabilitar la página Nueva pestaña.
 policy-NoDefaultBookmarks = Deshabilitar la creación de los marcadores predeterminados incluidos con { -brand-short-name }, y los marcadores inteligentes (etiquetas más visitadas y recientes). Nota: esta política solo es efectiva si se usa antes de la primera ejecución del perfil.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Habilitar guardar contraseñas en el administrad
 # PDF.js and PDF should not be translated
 policy-PDFjs = Deshabilitar o configurar PDF.js, el visor de PDF incorporado en { -brand-short-name }.
 policy-Permissions2 = Configurar permisos para cámara, micrófono, ubicación, notificaciones y reproducción automática.
+policy-PictureInPicture = Habilitar o deshabilitar Picture-in-Picture.
 policy-PopupBlocking = Permitir que ciertos sitios web muestren ventanas emergentes de manera predeterminada.
 policy-Preferences = Establezca y bloquee el valor para un subconjunto de preferencias.
 policy-PromptForDownloadLocation = Preguntar dónde guardar archivos al descargar.

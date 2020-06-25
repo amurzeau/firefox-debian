@@ -5,19 +5,19 @@
 <!ENTITY window.width                      "40em">
 
 <!ENTITY cookiesonsystem.label             "Τα ακόλουθα cookies είναι αποθηκευμένα στον υπολογιστή σας:">
-<!ENTITY cookiename.label                  "Όνομα Cookie">
+<!ENTITY cookiename.label                  "Όνομα cookie">
 <!ENTITY cookiedomain.label                "Σελίδα">
-<!ENTITY button.removecookie.label         "Απομάκρυνση Cookie">
+<!ENTITY button.removecookie.label         "Αφαίρεση cookie">
 <!ENTITY button.removecookie.accesskey     "ρ">
-<!ENTITY button.removeallcookies.label     "Απομάκρυνση όλων των Cookies">
+<!ENTITY button.removeallcookies.label     "Αφαίρεση όλων των cookies">
 <!ENTITY button.removeallcookies.accesskey "λ">
 
 <!ENTITY props.name.label                  "Όνομα:">
 <!ENTITY props.value.label                 "Περιεχόμενο:">
 <!ENTITY props.domain.label                "Σύστημα:">
 <!ENTITY props.path.label                  "Διαδρομή:">
-<!ENTITY props.secure.label                "Στάλθηκε για:">
-<!ENTITY props.expires.label               "Λήγει:">
+<!ENTITY props.secure.label                "Αποστολή για:">
+<!ENTITY props.expires.label               "Λήξη:">
 <!ENTITY props.container.label             "Περιβάλλον:">
 
 <!ENTITY window.title                      "Cookies">

@@ -232,6 +232,10 @@ translate-attribution = Μεταφράσεις από <img data-l10n-name="logo"
 translate-exceptions =
     .label = Εξαιρέσεις…
     .accesskey = ξ
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Χρησιμοποιήστε τις ρυθμίσεις του συστήματος σας για το “{ $localeName }” για μορφοποίηση ημερομηνίας, ώρας, αριθμών και μετρήσεων.
 check-user-spelling =
     .label = Έλεγχος ορθογραφίας κατά την πληκτρολόγηση
     .accesskey = π
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Χρήση εφαρμογής "{ $app-name }" (προεπιλογή)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Χρήση προεπιλεγμένης εφαρμογής macOS
+            [windows] Χρήση προεπιλεγμένης εφαρμογής Windows
+           *[other] Χρήση προεπιλεγμένης εφαρμογής συστήματος
+        }
 applications-use-other =
     .label = Χρήση άλλης…
 applications-select-helper = Επιλογή βοηθητικής εφαρμογής
@@ -303,8 +314,8 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Χρήση αρθρώματος "{ $plugin-name }" (σε { -brand-short-name })
-applications-preview-inapp =
-    .label = Προεπισκόπηση σε { -brand-short-name }
+applications-open-inapp =
+    .label = Άνοιγμα στο { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -316,14 +327,16 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -480,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Κορυφαίες ιστοσελίδες
 home-prefs-topsites-description = Οι ιστοσελίδες που επισκέπτεστε περισσότερο
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Προτάσεις του { $provider }
 home-prefs-recommended-by-description = Εξαιρετικό περιεχόμενο από το διαδίκτυο, εξατομικευμένο για εσάς
+home-prefs-recommended-by-description-update = Εξαιρετικό περιεχόμενο από όλο το διαδίκτυο, με την επιμέλεια του { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Πώς λειτουργεί
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Χορηγούμενες ιστορίες
@@ -523,7 +542,12 @@ search-bar-shown =
 search-engine-default-header = Προεπιλεγμένη μηχανή αναζήτησης
 search-engine-default-desc = Επιλέξτε την προεπιλεγμένη μηχανή αναζήτησης για χρήση στη γραμμή διευθύνσεων και στη γραμμή αναζήτησης.
 search-engine-default-desc-2 = Αυτή είναι η προεπιλεγμένη μηχανή αναζήτησης στη γραμμή διευθύνσεων και τη γραμμή αναζήτησης. Μπορείτε να την αλλάξετε ανά πάσα στιγμή.
+search-engine-default-private-desc-2 = Επιλέξτε μια διαφορετική προεπιλεγμένη μηχανή αναζήτησης μόνο για ιδιωτικά παράθυρα
+search-separate-default-engine =
+    .label = Χρήση αυτής της μηχανής αναζήτησης σε ιδιωτικά παράθυρα
+    .accesskey = Χ
 search-suggestions-header = Προτάσεις αναζήτησης
+search-suggestions-desc = Επιλέξτε πώς εμφανίζονται οι προτάσεις από τις μηχανές αναζήτησης.
 search-suggestions-option =
     .label = Παροχή προτάσεων αναζήτησης
     .accesskey = Π
@@ -540,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Εμφάνιση προτάσεων αναζήτησης σε ιδιωτικά παράθυρα
 suggestions-addressbar-settings = Αλλαγή προτιμήσεων για προτάσεις ιστορικού περιήγησης, σελιδοδεικτών και καρτελών
+suggestions-addressbar-settings-generic = Αλλαγή προτιμήσεων για άλλες προτάσεις στη γραμμή διευθύνσεων
 search-suggestions-cant-show = Οι προτάσεις αναζήτησης δεν θα εμφανίζονται στη γραμμή διευθύνσεων, καθώς έχετε ρυθμίσει το { -brand-short-name } ώστε να μην διατηρεί ποτέ το ιστορικό.
 search-one-click-header = Μηχανές αναζήτησης με ένα κλικ
 search-one-click-desc = Επιλέξτε τις εναλλακτικές μηχανές αναζήτησης που εμφανίζονται κάτω από τη γραμμή διευθύνσεων και τη γραμμή αναζήτησης όταν αρχίσετε να πληκτρολογείτε μια λέξη-κλειδί.
@@ -575,6 +600,9 @@ containers-header = Θεματικές καρτέλες
 containers-add-button =
     .label = Προσθήκη νέας θεματικής ενότητας
     .accesskey = Π
+containers-new-tab-check =
+    .label = Επιλέξτε κατηγορία για κάθε νέα καρτέλα
+    .accesskey = Ε
 containers-preferences-button =
     .label = Προτιμήσεις
 containers-remove-button =
@@ -643,6 +671,7 @@ prefs-syncing-off = Συγχρονισμός: ΑΝΕΝΕΡΓΟΣ
 prefs-sync-setup =
     .label = Ρύθμιση { -sync-brand-short-name }…
     .accesskey = Ρ
+prefs-sync-offer-setup-label = Συγχρονίστε τους σελιδοδείκτες, το ιστορικό, τις καρτέλες, τους κωδικούς πρόσβασης, τα πρόσθετα και τις προτιμήσεις σας με όλες τις συσκευές σας.
 prefs-sync-now =
     .labelnotsyncing = Συγχρονισμός τώρα
     .accesskeynotsyncing = Τ
@@ -739,10 +768,10 @@ privacy-header = Απόρρητο προγράμματος περιήγησης
 
 ## Privacy Section - Forms
 
+logins-header = Συνδέσεις & κωδικοί πρόσβασης
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Συνδέσεις & κωδικοί πρόσβασης
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Συνδέσεις & κωδικοί πρόσβασης
     .searchkeywords = { -lockwise-brand-short-name }
@@ -756,6 +785,9 @@ forms-exceptions =
 forms-generate-passwords =
     .label = Πρόταση και δημιουργία ισχυρών κωδικών πρόσβασης
     .accesskey = ρ
+forms-breach-alerts =
+    .label = Εμφάνιση ειδοποιήσεων για κωδικούς πρόσβασης από παραβιασμένες ιστοσελίδες
+    .accesskey = μ
 forms-breach-alerts-learn-more-link = Μάθετε περισσότερα
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
@@ -775,6 +807,14 @@ forms-master-pw-fips-desc = Αποτυχία αλλαγής κωδικού
 
 ## OS Authentication dialog
 
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Για να δημιουργήσετε κύριο κωδικό πρόσβασής σας, εισάγετε τα διαπιστευτήρια σύνδεσης των Windows. Αυτό συμβάλλει στην προστασία των λογαριασμών σας.
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = δημιουργήσει κύριο κωδικό πρόσβασης
+master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
 
@@ -842,6 +882,12 @@ sitedata-block-desc = Αποκλεισμένος τύπος
     .accesskey = τ
 sitedata-option-block-trackers =
     .label = Ιχνηλάτες τρίτων
+sitedata-option-block-cross-site-trackers =
+    .label = Ιχνηλάτες μεταξύ ιστοσελίδων
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = Ιχνηλάτες μεταξύ ιστοσελίδων και κοινωνικών μέσων
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Cookies ιχνηλάτησης και κοινωνικών μέσω μεταξύ ιστοσελίδων και απομόνωση των υπόλοιπων
 sitedata-option-block-unvisited =
     .label = Cookies από ιστοσελίδες που δεν έχετε επισκεφθεί
 sitedata-option-block-all-third-party =
@@ -857,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Διαχείριση δικαιωμάτων…
     .accesskey = δ
+sitedata-cookies-exceptions =
+    .label = Διαχείριση εξαιρέσεων…
+    .accesskey = σ
 
 ## Privacy Section - Address Bar
 
@@ -871,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Ανοικτών καρτελών
     .accesskey = Ο
+addressbar-locbar-topsites-option =
+    .label = Δημοφιλείς ιστοσελίδες
+    .accesskey = Δ
 addressbar-suggestions-settings = Αλλαγή προτιμήσεων για τις προτάσεις μηχανών αναζήτησης
 
 ## Privacy Section - Content Blocking
@@ -917,18 +969,20 @@ content-blocking-etp-standard-desc = Ισορροπία μεταξύ προστ�
 content-blocking-etp-strict-desc = Ισχυρότερη προστασία, αλλά πιθανή δυσλειτουργία μερικών ιστοσελίδων ή περιεχομένου.
 content-blocking-etp-custom-desc = Επιλέξτε ιχνηλάτες και σενάρια για αποκλεισμό.
 content-blocking-private-windows = Περιεχόμενο καταγραφής σε ιδιωτικά παράθυρα
+content-blocking-cross-site-tracking-cookies = Cookies ιχνηλάτησης μεταξύ ιστοσελίδων
+content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies ιχνηλάτησης μεταξύ ιστοσελίδων και απομόνωση των υπόλοιπων
 content-blocking-social-media-trackers = Ιχνηλάτες κοινωνικών δικτύων
 content-blocking-all-cookies = Όλα τα cookies
 content-blocking-unvisited-cookies = Cookies από ιστοσελίδες που δεν έχετε επισκεφθεί
 content-blocking-all-windows-trackers = Γνωστοί ιχνηλάτες σε όλα τα ιδιωτικά παράθυρα
 content-blocking-all-windows-tracking-content = Περιεχόμενο καταγραφής σε όλα τα παράθυρα
 content-blocking-all-third-party-cookies = Όλα τα cookies τρίτων
-content-blocking-cryptominers = Εξορύκτες κρυπτονομισμάτων
-content-blocking-fingerprinters = Ανιχνευτές αποτυπωμάτων
+content-blocking-cryptominers = Cryptominers
+content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Προσοχή!
 content-blocking-warning-description = Η φραγή περιεχομένου μπορεί να προκαλέσει δυσλειτουργία σε ορισμένες ιστοσελίδες. Μπορείτε εύκολα να απενεργοποιήσετε τη φραγή σε ιστοσελίδες που εμπιστεύεστε.
 content-blocking-learn-how = Μάθετε πώς
-content-blocking-etp-warning-description = Η φραγή ιχνηλατών μπορεί να επηρεάσει τη λειτουργικότητα ορισμένων ιστοσελίδων. Φορτώστε εκ νέου μια σελίδα με ιχνηλάτες για να φορτώσετε όλο το περιεχόμενο.
+content-blocking-and-isolating-etp-warning-description = Η φραγή ιχνηλατών και η απομόνωση cookies μπορούν να επηρεάσουν τη λειτουργικότητα ορισμένων ιστοσελίδων. Φορτώστε εκ νέου μια σελίδα με ιχνηλάτες για να φορτώσετε όλο το περιεχόμενο.
 content-blocking-warning-learn-how = Μάθετε πώς
 content-blocking-reload-description = Θα πρέπει να φορτώσετε ξανά τις καρτέλες σας για εφαρμογή των αλλαγών αυτών.
 content-blocking-reload-tabs-button =
@@ -954,13 +1008,13 @@ content-blocking-expand-section =
     .tooltiptext = Περισσότερες πληροφορίες
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
-    .label = Εξορύκτες κρυπτονομισμάτων
-    .accesskey = ξ
+    .label = Cryptominers
+    .accesskey = y
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
-    .label = Ανιχνευτές αποτυπωμάτων
-    .accesskey = Α
+    .label = Fingerprinters
+    .accesskey = F
 
 ## Privacy Section - Tracking
 
@@ -1027,6 +1081,7 @@ permissions-a11y-privacy-link = Μάθετε περισσότερα
 collection-header = Συλλογή και χρήση δεδομένων { -brand-short-name }
 collection-description = Αγωνιζόμαστε για να σάς παρέχουμε επιλογές και συλλέγουμε μόνο αυτά που χρειαζόμαστε, ώστε να παρέχουμε και να βελτιώσουμε το { -brand-short-name } για όλους. Ζητούμε πάντα την άδεια πριν λάβουμε προσωπικές πληροφορίες.
 collection-privacy-notice = Σημείωση απορρήτου
+collection-health-report-telemetry-disabled = Δεν επιτρέπεται πλέον στο { -vendor-short-name } η συλλογή τεχνικών δεδομένων και δεδομένων αλληλεπίδρασης. Όλα τα προηγούμενα δεδομένα θα διαγραφούν μέσα σε 30 ημέρες.
 collection-health-report-telemetry-disabled-link = Μάθετε περισσότερα
 collection-health-report =
     .label = Να επιτρέπεται στο { -brand-short-name } η αποστολή τεχνικών και διαδραστικών δεδομένων στη { -vendor-short-name }

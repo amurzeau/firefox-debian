@@ -14,7 +14,7 @@ downloads-panel =
 ##
 
 # The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of 
+# a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
 downloads-panel-list =
     .style = width: 70ch
@@ -36,6 +36,12 @@ downloads-cmd-show-menuitem =
 downloads-cmd-show-menuitem-mac =
     .label = Sken-d di Finder
     .accesskey = F
+downloads-cmd-use-system-default =
+    .label = Ldi deg umeskan n unagraw
+    .accesskey = L
+downloads-cmd-always-use-system-default =
+    .label = Ldi yal tikkelt deg umeskan n unagraw
+    .accesskey = d
 downloads-cmd-show-button =
     .tooltiptext =
         { PLATFORM() ->

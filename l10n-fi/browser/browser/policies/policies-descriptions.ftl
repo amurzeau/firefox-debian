@@ -63,6 +63,7 @@ policy-ExtensionSettings = Hallitse kaikkia laajennusten asennukseen liittyviä 
 policy-ExtensionUpdate = Ota käyttöön tai poista käytöstä laajennusten automaattipäivitykset.
 policy-FirefoxHome = Muokkaa Firefox-aloitussivun asetuksia.
 policy-FlashPlugin = Salli tai estä Flash-liitännäisen käyttö.
+policy-Handlers = Määritä oletussovelluskäsittelijät.
 policy-HardwareAcceleration = Jos epätosi, poista laitteistokiihdytys käytöstä.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Aseta ja valinnaisesti lukitse aloitussivu.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Palaa vanhaan SameSite
 ##
 
 policy-LocalFileLinks = Salli tiettyjen sivustojen linkittää paikallisiin tiedostoihin.
+policy-MasterPassword = Vaadi tai estä pääsalasanan käyttö.
 policy-NetworkPrediction = Ota käyttöön tai poista käytöstä verkkoennakointi (DNS-esihaku).
 policy-NewTabPage = Ota käyttöön tai poista käytöstä Uusi välilehti -sivu
 policy-NoDefaultBookmarks = Poista käytöstä { -brand-short-name }in mukana tulevien oletuskirjanmerkkien luonti ja älykkäiden kirjanmerkkien (Useimmin avatut, Viimeiset avainsanat) luonti. Huomaa: tällä käytännöllä on vaikutusta vain, kun profiili käynnistetään ensimmäisen kerran.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Ota käyttöön salasanojen tallennus salasanoje
 # PDF.js and PDF should not be translated
 policy-PDFjs = Poista käytöstä tai määritä PDF.js, { -brand-short-name }in sisäänrakennettu PDF-katselin.
 policy-Permissions2 = Aseta kameran, mikrofonin, sijainnin, ilmoitusten ja automaattisen toiston käyttöoikeuksien asetukset.
+policy-PictureInPicture = Ota käyttöön tai poista käytöstä Kuva kuvassa -ominaisuus.
 policy-PopupBlocking = Salli tiettyjen sivustojen näyttää ponnahdusikkunoita oletusarvoisesti.
 policy-Preferences = Aseta ja lukitse arvo asetusten osajoukolle.
 policy-PromptForDownloadLocation = Kysy ladattaessa minne tiedostot tallennetaan.

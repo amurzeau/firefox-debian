@@ -63,6 +63,7 @@ policy-ExtensionSettings = Upravljaj vse vidike namestitve razširitve.
 policy-ExtensionUpdate = Omogoči ali onemogoči samodejno posodabljanje razširitev.
 policy-FirefoxHome = Nastavi Firefoxovo domačo stran.
 policy-FlashPlugin = Dovoli ali zavrni uporabo vtičnika Flash.
+policy-Handlers = Nastavite privzete upravljalce aplikacij.
 policy-HardwareAcceleration = Če je "false", izklopi strojno pospeševanje.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Nastavi in po potrebi zakleni domačo stran.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Ponastavi zastarelo ve
 ##
 
 policy-LocalFileLinks = Določenim spletnim stranem dovoli povezovanje na krajevne datoteke.
+policy-MasterPassword = Zahtevaj ali prepreči uporabo glavnega gesla.
 policy-NetworkPrediction = Omogoči ali onemogoči napovedovanje omrežja (vnaprejšnje pridobivanje DNS).
 policy-NewTabPage = Omogoči ali onemogoči stran novega zavihka.
 policy-NoDefaultBookmarks = Onemogoči ustvarjanje privzetih zaznamkov, vključenih v { -brand-short-name }, in Pametnih zaznamkov (Najbolj obiskano, Nedavne oznake). Opomba: ta pravilnik je uveljavljen, samo če je nastavljen pred prvo uporabo profila.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Omogoči shranjevanje gesel v upravitelja gesel.
 # PDF.js and PDF should not be translated
 policy-PDFjs = Onemogoči ali nastavi PDF.js, pregledovalnik PDF brskalnika { -brand-short-name }.
 policy-Permissions2 = Nastavi dovoljenja za kamero, mikrofon, lokacijo, obvestila in samodejno predvajanje.
+policy-PictureInPicture = Omogoči ali onemogoči sliko v sliki
 policy-PopupBlocking = Določenim spletnim stranem dovoli privzeto prikazovanje pojavnih oken.
 policy-Preferences = Nastavi in zakleni vrednost podnabora nastavitev.
 policy-PromptForDownloadLocation = Pri prenosu vprašaj, kam shraniti datoteko.

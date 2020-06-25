@@ -5,11 +5,11 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = استورِد من متصفح آخر…
 appmenuitem-protection-report-title = تقرير حماية الخصوصية
 appmenuitem-protection-report-tooltip =
     .tooltiptext = انتقل إلى تقرير الخصوصية
+appmenuitem-customize-mode =
+    .label = خصّص…
 
 ## Zoom Controls
 
@@ -22,3 +22,7 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = زامِن الآن
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = ما الجديد

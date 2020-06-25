@@ -100,7 +100,7 @@ place-database-integrity = Цілісність
 place-database-verify-integrity = Перевірити цілісність
 js-title = JavaScript
 js-incremental-gc = Інкрементний GC
-a11y-title = Можливості доступності
+a11y-title = Доступність
 a11y-activated = Активовано
 a11y-force-disabled = Блокувати можливості доступності
 a11y-handler-used = Використовується обробник доступності
@@ -119,6 +119,11 @@ sandbox-sys-call-number = Системний виклик
 sandbox-sys-call-args = Аргументи
 safe-mode-title = Спробувати безпечний режим
 restart-in-safe-mode-label = Перезапустити з вимкненими додатками…
+clear-startup-cache-title = Спробуйте очистити кеш запуску
+clear-startup-cache-label = Очистити кеш запуску…
+startup-cache-dialog-title = Очистити кеш запуску
+startup-cache-dialog-body = Перезапустіть { -brand-short-name } для очищення кешу запуску. Ця дія не змінить ваших налаштувань та не вилучить розширень, які ви встановили в { -brand-short-name }.
+restart-button-label = Перезапустити
 
 ## Media titles
 
@@ -126,6 +131,7 @@ audio-backend = Обробка аудіо
 max-audio-channels = Максимальне число каналів
 channel-layout = Основний формат каналів
 sample-rate = Основна частота
+roundtrip-latency = Затримка в обох напрямках (стандартне відхилення)
 media-title = Медіа
 media-output-devices-title = Пристрої відтворення
 media-input-devices-title = Пристрої введення

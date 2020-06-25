@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } brûke (yn { -brand-short-name })
-applications-preview-inapp =
-    .label = Foarbyld yn { -brand-short-name }
 applications-open-inapp =
     .label = Iepenje yn { -brand-short-name }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Topwebsites
 home-prefs-topsites-description = De troch jo meast besochte websites
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Oanrekommandearre troch { $provider }
 home-prefs-recommended-by-description = Bjusterbaarlike ynhâld fan it ynternet, oanpast foar jo
+home-prefs-recommended-by-description-update = Utsûnderlike ynhâld fan it hiele ynternet, gearstald troch { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Hoe it wurket
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsore ferhalen
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Syksuggestjes werjaan yn priveefinsters
 suggestions-addressbar-settings = Foarkarren foar navigaasjeskiednis, blêdwizers en ljepblêdfoarstellen wizigje
+suggestions-addressbar-settings-generic = Foarkarren foar oare adresbalksuggestjes wizigje
 search-suggestions-cant-show = Sykfoarstellen wurde net yn lokaasjebalkresultaten toand, omdat jo { -brand-short-name } konfigurearre hawwe om nea skiednis te ûnthâlden.
 search-one-click-header = Ien-klik-sykmasinen
 search-one-click-desc = Kies de alternative sykmasinen dy't ûnder de adresbalke en sykbalke ferskine as jo in kaaiwurd begjinne yn te fieren.
@@ -679,7 +682,7 @@ prefs-sync-now =
 sync-currently-syncing-heading = Jo syngronisearje op it stuit dizze items:
 sync-currently-syncing-bookmarks = Blêdwizers
 sync-currently-syncing-history = Skiednis
-sync-currently-syncing-tabs = Iepen ljeplêden
+sync-currently-syncing-tabs = Iepen ljepblêden
 sync-currently-syncing-logins-passwords = Oanmeldingen en wachtwurden
 sync-currently-syncing-addresses = Adressen
 sync-currently-syncing-creditcards = Creditcards
@@ -765,10 +768,10 @@ privacy-header = Browserprivacy
 
 ## Privacy Section - Forms
 
+logins-header = Oanmeldingen & Wachtwurden
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Oanmeldingen & Wachtwurden
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Oanmeldingen & Wachtwurden
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = Wachtwurdwiziging mislearre.
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Ferifiearje jo identiteit om in haadwachtwurd oan te meitsjen.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Fier jo oanmeldgegevens foar Windows yn om in haadwachtwurd yn te stellen. Hjirtroch wurdt de befeiliging fan jo accounts beskerme.
 # This message can be seen by trying to add a Master Password.
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Tastimmingen beheare…
     .accesskey = T
+sitedata-cookies-exceptions =
+    .label = Utsûnderingen beheare…
+    .accesskey = s
 
 ## Privacy Section - Address Bar
 
@@ -914,8 +918,11 @@ addressbar-locbar-bookmarks-option =
     .label = Blêdwizers
     .accesskey = d
 addressbar-locbar-openpage-option =
-    .label = Iepen ljeplêden
+    .label = Iepen ljepblêden
     .accesskey = I
+addressbar-locbar-topsites-option =
+    .label = Topwebsites
+    .accesskey = T
 addressbar-suggestions-settings = Foarkarren foar sykmasinesuggestjes wizigje
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Let op!
 content-blocking-warning-description = It blokkearjen fan ynhâld kin derfoar soargje dat bepaalde websites net goed wurkje. Blokkearring kin ienfâldich útskeakele wurde foar websites dy't jo fertrouwe.
 content-blocking-learn-how = Mear ynfo
-content-blocking-etp-warning-description = It blokkearjen fan trackers kin de funksjonaliteit fan guon websites beynfloedzje. Laad in side mei trackers opnij om alle ynhâld te laden.
 content-blocking-and-isolating-etp-warning-description = It blokkearjen fan trackers en isolearjen fan cookies kin de funksjonaliteit fan guon websites beynfloedzje. Laad in side mei trackers opnij om alle ynhâld te laden.
 content-blocking-warning-learn-how = Mear ynfo
 content-blocking-reload-description = Jo moatte jo ljepblêden fernije om dizze wizigingen ta te passen.

@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Bruk { $plugin-name } (i { -brand-short-name })
-applications-preview-inapp =
-    .label = Førehandsvis i { -brand-short-name }
 applications-open-inapp =
     .label = Opne i { -brand-short-name }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Mest besøkte
 home-prefs-topsites-description = Sidene du besøkjer mest
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Tilrådd av { $provider }
 home-prefs-recommended-by-description = Bra innhald frå heile nettet, tilpassa for deg
+home-prefs-recommended-by-description-update = Eineståande innhald frå heile nettet sett saman av { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Korleis det fungerar
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsa historiar
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Vel søkjeforslag i private vindauge
 suggestions-addressbar-settings = Endre innstillingar for nettlesarhistorikk, bokmerke og faneforslag
+suggestions-addressbar-settings-generic = Endre innstillingar for andre adresselinjeforslag
 search-suggestions-cant-show = Søkjeforslag vil ikkje visast i adresselinjeresultata fordi du har konfigurert { -brand-short-name } til å aldri hugse historikk.
 search-one-click-header = Eittklikks-søkjemotorar
 search-one-click-desc = Vel alternative søkjemotorar som vert viste under adresselinja og søkelinja når du byrjar å skrive inn eit søkjeord.
@@ -765,10 +768,10 @@ privacy-header = Nettlesarpersonvern
 
 ## Privacy Section - Forms
 
+logins-header = Innloggingar og passord
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Innloggingar og passord
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Innloggingar og passord
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = Mislykka passordendring
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Stadfest identiteten din for å opprette eit hovudpassord.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen for Windows for å opprette eit hovudpassord. Dette vil gjere kontoane dine tryggare.
 # This message can be seen by trying to add a Master Password.
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Handter løyve…
     .accesskey = H
+sitedata-cookies-exceptions =
+    .label = Handter unntak…
+    .accesskey = H
 
 ## Privacy Section - Address Bar
 
@@ -916,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Opne faner
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = Mest besøkte nettstadar
+    .accesskey = M
 addressbar-suggestions-settings = Endre innstillingar for søkjeforslag
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Viktig!
 content-blocking-warning-description = Blokkering av innhald kan føre til at nokre nettstadar sluttar å fungere. Det er enkelt å deaktivere blokkering for nettstadar du stolar på.
 content-blocking-learn-how = Finn ut korleis
-content-blocking-etp-warning-description = Blokkering av sporfølgjarar kan påverke funksjonaliteten på nokre nettstadar.
 content-blocking-and-isolating-etp-warning-description = Blokkering av sporfølgjarar og isolering av infokapslar kan påverke funksjonaliteten på nokre nettstadar. Last nettsida inn på nytt med sporfølgjarar for å laste alt innhald.
 content-blocking-warning-learn-how = Les korleis
 content-blocking-reload-description = Du må oppdatere fanene dine for å kunne bruke desse endringane.

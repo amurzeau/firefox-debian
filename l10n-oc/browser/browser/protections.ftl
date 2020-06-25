@@ -37,10 +37,14 @@ etp-card-title = Proteccion contra lo seguiment renfortida
 etp-card-content = Los traçadors vos pistan en linha per reculhir d’informacions sus vòstras abituds de navegacion e vòstres interèsses. { -brand-short-name } bloca fòrça d’aqueles elements de seguiment e scripts malvolents.
 protection-report-webpage-title = Taula de bòrd de las proteccions
 protection-report-page-content-title = Taula de bòrd de las proteccions
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } pòt protegir vòstra vida privada en colissa pendent que navegatz. Vaquí un resumit d’aquelas proteccions, que conten d’aisinas per contrarotlar vòstre seguretat en linha.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } protegís vòstra vida privada en colissa pendent que navegatz. Vaquí un resumit d’aquelas proteccions, que conten d’aisinas per contrarotlar vòstre seguretat en linha.
+protection-report-settings-link = Gerir los paramètres de vida privada e de seguretat
 etp-card-title-always = Proteccion renfortida contra lo seguiment : totjorn activada
 etp-card-title-custom-not-blocking = Proteccion renfortida contra lo seguiment : DESACTIVADA
-etp-card-content-summary = Quand de companhiás desconegudas ensajan de vos seguir secrètament pel monde, { -brand-short-name } n’arrèsta automaticament un molon d’aquelas.
+etp-card-content-description = { -brand-short-name } empacha automaticament las entrepresas de vos pistar secrètament pel web.
 protection-report-etp-card-content-custom-not-blocking = Actualament totas las proteccions son desactivadas. Causissètz quins traçadors blocar en gerir vòstres paramètres de proteccion de { -brand-short-name }.
 protection-report-manage-protections = Gerir los paramètres
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -58,8 +62,6 @@ fingerprinter-tab-title = Generadors d’emprentas numericas
 fingerprinter-tab-content = Los generadors d’emprentas numericas reculhisson los paramètres del navegador e de l’ordenador per crear un perfil vòstre. En utilizant aquesta emprenta numerica vos pòdon seguir de site en site. <a data-l10n-name="learn-more-link">Ne saber mai</a>
 cryptominer-tab-title = Minaires de criptomonedas
 cryptominer-tab-content = Los minaires de criptomoneda utilizan la poténcia de calcul de vòstre ordenador per minar de moneda numerica. Los scripts de minaires sollicitan la bateria, alentisson l’ordenador e aumentan vòstra factura d’electricitat. <a data-l10n-name="learn-more-link">Ne saber mai</a>
-protections-close-button =
-    .aria-label = Tampar
 protections-close-button2 =
     .aria-label = Tampar
     .title = Tampar
@@ -120,6 +122,8 @@ monitor-link = Cossí fonciona
 monitor-header-content-no-account = Consultatz { -monitor-brand-name } per verificar s’una pèrda de donadas vos concernís e per recebre d’alèrtas en cas de nòvas pèrdas.
 monitor-header-content-signed-in = { -monitor-brand-name } vos avisa se vòstras informacions apareisson dins una pèrda de donadas coneguda.
 monitor-sign-up = S’inscriure a las alèrtas de pèrdas de donadas
+monitor-sign-up-link = S’inscriure a las alèrtas de pèrdas de donadas
+    .title = S’inscriure a las alèrtas de pèrdas de donadas sus { -monitor-brand-name }
 auto-scan = Automaticament verificat uèi
 monitor-emails-tooltip =
     .title = Veire las adreças electronicas sus { -monitor-brand-short-name }
@@ -144,6 +148,14 @@ info-known-breaches-found =
        *[other] pèrdas de donadas an divulgat vòstras informacions
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] divulgacion de donadas coneguda marcada coma resolvuda
+       *[other] divulgacions de donadas conegudas marcadas coma resolvuda
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -160,6 +172,41 @@ password-warning =
         [one] senhal salvat pòt aver estat divulgat via una pèrda de donadas. Cambiatz aqueste senhal per mai de seguretat en linha. <a data-l10n-name="lockwise-link">Veire los senhals salvats</a>
        *[other] senhals salvats pòdon aver estats divulgats via una pèrda de donadas. Cambiatz aquestes senhals per mai de seguretat en linha. <a data-l10n-name="lockwise-link">Veire los senhals salvats</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] senhal divulgats demest totas las pèrdas de donadas pas regladas
+       *[other] senhals divulgats demest totas las pèrdas de donadas pas regladas
+    }
+monitor-no-breaches-title = Bona novèla !
+monitor-no-breaches-description = Sembla que sètz pas concernit per cap de divulgacion. Se per cas càmbia vos avisarem.
+monitor-view-report-link = Veire lo rapòrt
+    .title = Resòlver las divulgacions sus { -monitor-brand-short-name }
+monitor-breaches-unresolved-title = Reglatz vòstras divulgacions de donadas
+monitor-breaches-unresolved-description = Aprèp aver repassat los detalhs de las pèrdas de donadas e pres las accions per protegir vòstras informacions, podètz marcar las divulgacions coma regladas.
+monitor-manage-breaches-link = Gerir las divulgacions
+    .title = Gerir las divulgacions sus { -monitor-brand-short-name }
+monitor-breaches-resolved-title = Crane ! Avètz regladas totas las divulgacions de donadas conegudas.
+monitor-breaches-resolved-description = Se vòstra adreça electronica apareis  dins una pèrda novèla de donadas, vos avisarem.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+        [one] { $numBreachesResolved } pèrda sus { $numBreaches } marcada coma resolguda
+       *[other] { $numBreachesResolved } pèrdas sus { $numBreaches } marcadas coma resolgudas
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved }% acabat
+monitor-partial-breaches-motivation-title-start = Bona debuta !
+monitor-partial-breaches-motivation-title-middle = Gardatz lo ritme !
+monitor-partial-breaches-motivation-title-end = Gaireben terminat ! Anem !
+monitor-partial-breaches-motivation-description = Reglatz la rèsta de las pèrdas de donadas sus { -monitor-brand-short-name }.
+monitor-resolve-breaches-link = Resòlver vòstras divulgacions de donadas
+    .title = Resòlver vòstras divulgacions de donadas sus { -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

@@ -2,6 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 about-logins-page-title = Prihlasovacie údaje
 
 # "Google Play" and "App Store" are both branding and should not be translated
@@ -26,6 +32,7 @@ menu =
     .title = Otvoriť ponuku
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Importovať z iného prehliadača…
+about-logins-menu-menuitem-export-logins = Exportovať prihlasovacie údaje…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Možnosti
@@ -48,7 +55,6 @@ login-list-count =
 login-list-sort-label-text = Zoradiť podľa:
 login-list-name-option = názvu (A-Z)
 login-list-name-reverse-option = názvu (Z-A)
-login-list-breached-option = Stránky, na ktorých došlo k úniku dát
 about-logins-login-list-alerts-option = Upozornenia
 login-list-last-changed-option = poslednej úpravy
 login-list-last-used-option = posledného použitia
@@ -107,19 +113,13 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
-# This message can be seen by attempting to edit a login in about:logins
-about-logins-edit-login-os-auth-dialog-message = Ak chcete upraviť prihlasovacie údaje, najprv overte svoju totožnosť.
-# This message can be seen by attempting to edit a login in about:logins
+# This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = upraviť uložené prihlasovacie údaje
-# This message can be seen by attempting to reveal a password in about:logins
-about-logins-reveal-password-os-auth-dialog-message = Pre zobrazenie uloženého hesla najprv overte svoju totožnosť.
-# This message can be seen by attempting to reveal a password in about:logins
+# This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = zobraziť uložené heslo
-# This message can be seen by attempting to copy a password in about:logins
-about-logins-copy-password-os-auth-dialog-message = Pre skopírovanie uloženého hesla najprv overte svoju totožnosť.
-# This message can be seen by attempting to copy a password in about:logins
+# This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = skopírovať uložené heslo
 
@@ -156,6 +156,9 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Chcete odstrániť tento prihlasovací údaj?
 confirm-delete-dialog-message = Túto akciu nie je možné vrátiť späť.
 about-logins-confirm-remove-dialog-confirm-button = Odstrániť
+about-logins-confirm-export-dialog-title = Exportovať prihlasovacie údaje
+about-logins-confirm-export-dialog-message = Vaše heslá budú uložené v čitateľnom formáte (napr. h3slo) takže ktokoľvek, kto bude môcť otvoriť tento súbor, bude môcť zistiť vaše heslá.
+about-logins-confirm-export-dialog-confirm-button = Exportovať…
 confirm-discard-changes-dialog-title = Chcete zahodiť neuložené zmeny?
 confirm-discard-changes-dialog-message = Všetky neuložené zmeny budú stratené.
 confirm-discard-changes-dialog-confirm-button = Zahodiť
@@ -164,9 +167,6 @@ confirm-discard-changes-dialog-confirm-button = Zahodiť
 
 about-logins-breach-alert-title = Únik z webovej stránky
 breach-alert-text = Na tejto stránke prišlo od vašej poslednej zmeny prihlasovacích údajov k úniku dát. Za účelom ochrany vášho účtu vám odporúčame zmeniť si heslo.
-breach-alert-link = Ďalšie informácie o tomto úniku.
-breach-alert-dismiss =
-    .title = Zavrieť toto upozornenie
 about-logins-breach-alert-date = K tomuto úniku došlo { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
@@ -191,3 +191,9 @@ about-logins-vulnerable-alert-learn-more-link = Ďalšie informácie
 about-logins-error-message-duplicate-login-with-link = Prihlasovacie údaje pre { $loginTitle } s rovnakým používateľským menom už existujú. <a data-l10n-name="duplicate-link">Prejsť na existujúce prihlasovacie údaje.</a>
 # This is a generic error message.
 about-logins-error-message-default = Pri pokuse o uloženie tohto hesla nastala chyba.
+
+## Login Export Dialog
+
+# Title of the file picker dialog
+about-logins-export-file-picker-title = Exportovať súbor s prihlasovacími údajmi
+about-logins-export-file-picker-export-button = Exportovať

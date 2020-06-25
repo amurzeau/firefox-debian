@@ -13,9 +13,21 @@
 <!ENTITY alwaysEncryptMessage.accesskey "P">
 <!ENTITY encryptionCert.message "Bruk dette sertifikatet til å kryptera og dekryptera meldingar sendt til deg:">
 
+<!ENTITY e2eTitle.label "Ende-til-ende-kryptering">
+<!ENTITY e2eIntro.description "For å sende krypterte eller digitalt signerte meldingar, må du konfigurere ein krypteringsteknologi, anten OpenPGP eller S/MIME.">
+<!ENTITY e2eLearnMore.label "Les meir">
 
+<!ENTITY e2eEnc.description "Utan ende-til-ende-kryptering kan innhaldet i meldingane lett eksponerast for e-postleverandøren din og for masseovervaking.">
+<!ENTITY e2eeReqWarning.description "Dersom du treng kryptering, må du ha den offentlege nøkkelen eller sertifikatet til kvar mottaker for å sende ei melding.">
 
+<!ENTITY e2eSigning.description "Ein digital signatur gjer at mottakarar kan stadfeste at meldinga vart sendt av deg, og at innhaldet ikkje er endra.">
+<!ENTITY e2eTechPref.description "Føretrekt krypteringsteknologi:">
 
+<!ENTITY doNotEncrypt.label "Ikkje slå på kryptering som standard">
+<!ENTITY doNotEncrypt.accesskey "k">
+<!ENTITY requireEncryptMessage.label "Krev kryptering som standard">
+<!ENTITY requireEncryptMessage.accesskey "y">
+<!ENTITY encryptionCert2.message "Personleg sertifikat for kryptering:">
 <!ENTITY digitalSign.certificate.button "Vel…">
 <!ENTITY digitalSign.certificate.accesskey "V">
 <!ENTITY digitalSign.certificate_clear.button "Tøm">
@@ -26,6 +38,7 @@
 <!ENTITY encryption.certificate_clear.accesskey "ø">
 <!ENTITY signingGroupTitle.label "Digital signering">
 <!ENTITY signMessage.label "Signer meldingar digitalt (som standard)">
+<!ENTITY signMessage2.label "Legg til den digitale signaturen min som standard">
 <!ENTITY signMessage.accesskey "S">
 <!ENTITY signingCert.message "Bruk dette sertifikatet til å signera meldingar du sender digitalt:">
 
@@ -35,14 +48,24 @@
 <!ENTITY manageDevices.label "Tryggingseiningar">
 <!ENTITY manageDevices.accesskey "T">
 
+<!ENTITY signingCert2.message "Personleg sertifikat for digital signering:">
 
+<!ENTITY sendingDefaults.label "Standardinnstillingar for sending av meldingar">
 
+<!ENTITY technologyAutomatic.label "Vel automatisk basert på tilgjengelege nøklar eller sertifikat">
 
+<!ENTITY certificates2.label "S/MIME">
+<!ENTITY manageCerts3.label "Handter S/MIME-sertifikat">
+<!ENTITY manageCerts3.accesskey "M">
+<!ENTITY manageDevices2.label "S/MIME-tryggingseiningar">
+<!ENTITY manageDevices2.accesskey "e">
 
+<!ENTITY technologySMIME.label "Føretrekk S/MIME">
 <!ENTITY technologyOpenPGP.label "Føretrekk OpenPGP">
 
 <!ENTITY openpgpKeys.label "OpenPGP">
 <!ENTITY manageKeys.label "Handter OpenPGP-nøklar">
+<!ENTITY manageKeys.accesskey "n">
 
 <!-- Strings for the cert picker dialog -->
 <!ENTITY certPicker.title "Vel sertifikat">

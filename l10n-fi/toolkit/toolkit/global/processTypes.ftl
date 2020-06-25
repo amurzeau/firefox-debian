@@ -26,3 +26,5 @@ process-type-webisolated = Eristetty verkkosisältö
 process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Pistoke
+# process preallocated; may change to other types
+process-type-prealloc = Esijaettu

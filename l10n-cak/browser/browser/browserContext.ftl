@@ -55,8 +55,8 @@ toolbar-button-stop-reload =
 ## Save Page
 
 main-context-menu-page-save =
-    .label = Tiyak ruxaq achi'el…
-    .accesskey = p
+    .label = Tiyak Ruxaq Achi'el…
+    .accesskey = R
 toolbar-button-page-save =
     .label = { main-context-menu-page-save.label }
 
@@ -314,7 +314,3 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = Tetamäx ch'aqa' chik chi rij ri DRM…
     .accesskey = D
-# Checkbox displayed at the bottom of the What's New panel, allowing users to 
-# enable/disable What's New notifications.
-cfr-whatsnew-panel-footer-checkbox =
-    .label = Tiya' rutzijol chi kij ch'aqa' chik taq samaj

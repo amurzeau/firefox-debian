@@ -10,3 +10,5 @@ pictureinpicture-mute =
     .aria-label = ధ్వని లేకుండా చేయి
 pictureinpicture-unmute =
     .aria-label = ధ్వనిని ప్రవేశపెట్టు
+pictureinpicture-close =
+    .aria-label = మూసివేయి

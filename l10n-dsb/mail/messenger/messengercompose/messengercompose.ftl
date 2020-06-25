@@ -9,16 +9,6 @@
 remove-address-row-type = Pólo typa { $type } wótwónoźeś
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
-address-input-type =
-    { $count ->
-        [0] Prozne zapódawańske pólo typa { $type }
-        [one] Zapódawańske pólo typa { $type } z jadneju adresu
-        [two] Zapódawańske pólo typa { $type } z { $count } adresoma
-        [few] Zapódawańske pólo typa { $type } z { $count } adresami
-       *[other] Zapódawańske pólo typa { $type } z { $count } adresami
-    }
-#   $type (String) - the type of the addressing row
-#   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
         [0] { $type }
@@ -48,3 +38,30 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Do schowaneje kopije pśesunuś
     .accesskey = s
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [1] { $count } pśidank
+            [one] { $count } pśidank
+            [two] { $count } pśidanka
+            [few] { $count } pśidanki
+           *[other] { $count } pśidankow
+        }
+    .accesskey = d
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [1] { $count } pśidank
+            [one] { $count } pśidank
+            [two] { $count } pśidanka
+            [few] { $count } pśidanki
+           *[other] { $count } pśidankow
+        }
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+button-return-receipt =
+    .label = Kwitowanka
+    .tooltiptext = Kwintowanku za toś tu powěsć pominaś

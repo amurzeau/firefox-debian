@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Tokisäx { $plugin-name } (pa { -brand-short-name })
-applications-preview-inapp =
-    .label = Titz'etb'ëx pa { -brand-short-name }
 applications-open-inapp =
     .label = Tijaq pa { -brand-short-name }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Jeb'ël Taq Ruxaq
 home-prefs-topsites-description = Taq ruxaq yalan ye'atz'ët
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Chilab'en ruma { $provider }
 home-prefs-recommended-by-description = Nïm rupam chijun ri ajk'amaya'l, ichinan awuma rat
+home-prefs-recommended-by-description-update = Man relik ta chi rupam chijun ri ajk'amaya'l, to'on ruma { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Achike rub'eyal nisamäj
 home-prefs-recommended-by-option-sponsored-stories =
     .label = To'on taq B'anob'äl
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Kek'ut pe taq kichilab'exik kanoxik pa Ichinan taq Tzuwäch
 suggestions-addressbar-settings = Kejal taq rajowaxik runatab'al okem pa k'amaya'l, taq yaketal chuqa' kichilab'exik taq ruwi'
+suggestions-addressbar-settings-generic = Kek'ex ri taq kajowab'al ch'aqa' chik taq kichilab'enik kikajtz'ik ochochib'äl
 search-suggestions-cant-show = Man xkeq'alajin ta pe ri taq chilab'exïk richin nikanöx pa rukajtz'ik ochochib'äl ruma chi anuk'un ri { -brand-short-name } richin majub'ey tunataj ri anatab'al.
 search-one-click-header = Samajel taq kanob'äl rik'in jupitz'oj
 search-one-click-desc = Ke'acha' chi kikojol ri kik'u'x taq kanob'äl yeq'alajin pe chuxe' ri kikajtz'ik taq ochochib'äl chuqa' ri rukajtz'ik kanoxïk toq natz'ib'aj qa jun ruxe'el tzij.
@@ -615,10 +618,10 @@ sync-signedout-caption = Tak'waj awik'in ri Ajk'amaya'l
 sync-signedout-description = Ke'axima' ri taq ayaketal, natab'äl, taq ruwi', taq ewan tzij, taq tz'aqat chuqa' taq ajowab'äl chi kikojol konojel ri taq awokisaxel.
 sync-signedout-account-title = Tib'an okem rik'in jun { -fxaccount-brand-name }
 sync-signedout-account-create = ¿La man k'o ta jun ataqoya'l? Titikirisäx
-    .accesskey = C
+    .accesskey = q
 sync-signedout-account-signin =
     .label = Titikirisäx molojri'ïl…
-    .accesskey = C
+    .accesskey = t
 sync-signedout-account-signin2 =
     .label = Tatz'ib'aj ab'i' pa { -sync-brand-short-name }…
     .accesskey = p
@@ -654,7 +657,7 @@ sync-resend-verification =
     .accesskey = q
 sync-remove-account =
     .label = Tiyuj Rub'i' Taqoya'l
-    .accesskey = p
+    .accesskey = y
 sync-sign-in =
     .label = Tatikirisaj molojri'ïl
     .accesskey = t
@@ -765,10 +768,10 @@ privacy-header = Richinanem Okik'amaya'l
 
 ## Privacy Section - Forms
 
+logins-header = Kitikirisanïk Molojri'ïl & Ewan taq Tzij
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Kitikirisanïk Molojri'ïl & Ewan taq Tzij
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Kitikirisanïk Molojri'ïl & Ewan taq Tzij
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = Sachoj toq nijal ri ewan tzij
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Tanik'oj ri ab'anikil richin natz'ük jun Ajtij Ewan Tzij.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Richin natz'ük jun ajtij ewan atzij, tatz'ib'aj ri ruwujil rutikirisaxik molojri'ïl richin Windows. Re re' nuto' richin nuchajij rujikomal ri rub'i' ataqoya'l.
 # This message can be seen by trying to add a Master Password.
@@ -854,7 +855,7 @@ history-clear-on-close-settings =
     .accesskey = N
 history-clear-button =
     .label = Tiyuj el ri Natab'äl…
-    .accesskey = s
+    .accesskey = t
 
 ## Privacy Section - Site Data
 
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Kenuk'samajïx taq Ya'oj Q'ij...
     .accesskey = Y
+sitedata-cookies-exceptions =
+    .label = Kenuk'samajïx taq Man Relik Ta...
+    .accesskey = R
 
 ## Privacy Section - Address Bar
 
@@ -916,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Kejaq taq ruwi'
     .accesskey = K
+addressbar-locbar-topsites-option =
+    .label = Jeb'ël taq ruxaq
+    .accesskey = J
 addressbar-suggestions-settings = Kek'ex ri taq kajowab'al ri taq kichilab'enik kisamajinel taq kanob'äl
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = ¡Tak'axäx!
 content-blocking-warning-description = Ri ruq'atik rupam nitikïr nub'än chi jujun ajk'amaya'l ruxaq man ütz ta yesamäj. Man k'ayew ta richin nachüp ri kiq'atik ruxaq k'amaya'l akuqub'an ak'u'x chi kij.
 content-blocking-learn-how = Tetamäx achike rub'eyal
-content-blocking-etp-warning-description = Ri kiq'atik taq ojqanela' rik'in jub'a' nutz'ila' rub'eyal yesamäj jujun taq ruxaq. Tasamajij chik jun ruxaq rik'in ojqanela' richin nasamajib'ej ronojel ri rupam.
 content-blocking-and-isolating-etp-warning-description = Rik'in yeq'at taq ojqanela' chuqa' yejech'üx ri taq kuki rik'in jub'a' nutz'ila' rub'eyal yesamäj jujun taq ruxaq. Tasamajij chik jun ruxaq rik'in ojqanela' richin nasamajib'ej ronojel ri rupam.
 content-blocking-warning-learn-how = Tetamäx achike rub'eyal
 content-blocking-reload-description = K'o chi ye'asamajib'ej chik ri taq ruwi' richin ye'awokisaj re taq jaloj re'.
@@ -1030,15 +1036,15 @@ permissions-xr-settings =
 permissions-camera = Elesäy wachib'äl
 permissions-camera-settings =
     .label = Taq nuk'ulem…
-    .accesskey = w
+    .accesskey = m
 permissions-microphone = Q'asäy ch'ab'äl
 permissions-microphone-settings =
     .label = Taq nuk'ulem…
-    .accesskey = c
+    .accesskey = m
 permissions-notification = Taq rutzijol
 permissions-notification-settings =
     .label = Taq nuk'ulem…
-    .accesskey = r
+    .accesskey = k
 permissions-notification-link = Tetamäx ch'aqa' chik
 permissions-notification-pause =
     .label = Keq'at ri taq rutzijol k'a toq ri { -brand-short-name } nitikïr chik
@@ -1119,7 +1125,7 @@ certs-header = Taq ruwujil b'i'aj
 certs-personal-label = Toq jun ruk'u'x samaj nuk'utuj pe ri ruwujil ab'i'
 certs-select-auto-option =
     .label = Pa ruyonil ticha' jun
-    .accesskey = S
+    .accesskey = c
 certs-select-ask-option =
     .label = Junelïk tik'utüx pe
     .accesskey = J

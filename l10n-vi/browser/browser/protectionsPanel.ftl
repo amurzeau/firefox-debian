@@ -58,6 +58,8 @@ protections-panel-not-found-label = Không phát hiện
 
 protections-panel-settings-label = Cài đặt bảo vệ
 protections-panel-showreport-label = Hiển thị báo cáo
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Bảng điều khiển bảo vệ
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

@@ -5,11 +5,12 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = Impor dari Peramban Lain…
 appmenuitem-protection-report-title = Perlindungan Privasi
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Buka laporan privasi Anda
+appmenuitem-protection-dashboard-title = Dasbor Perlindungan
+appmenuitem-customize-mode =
+    .label = Ubahsuai…
 
 ## Zoom Controls
 
@@ -22,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = Sinkronkan Sekarang
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Yang Baru
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = Beri tahu tentang fitur baru
+    .accesskey = f

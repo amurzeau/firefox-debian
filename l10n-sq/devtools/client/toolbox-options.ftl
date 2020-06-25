@@ -62,7 +62,7 @@ options-screenshot-clipboard-label = Foto ekrani në të papastër
 options-screenshot-clipboard-tooltip =
     .title = E ruan foton e ekranit drejt e në të papastër
 # Label for the checkbox that toggles the camera shutter audio for screenshot tool
-options-screenshot-audio-label = Prodho tingull shkrepje të kamerës
+options-screenshot-audio-label = Prodho tingull shkrepjeje të kamerës
 options-screenshot-audio-tooltip =
     .title = Aktivizon tingullin e kamerës kur bëhen foto ekrani
 
@@ -103,6 +103,8 @@ options-enable-chrome-tooltip =
 options-enable-remote-label = Aktivizoni diagnostikim të largët
 options-enable-remote-tooltip =
     .title = Aktivizimi i kësaj mundësie do t'u lejojë mjeteve të zhvilluesit të diagnostikojnë një instancë të largët, fjala vjen Firefox OS
+options-enable-remote-tooltip2 =
+    .title = Aktivizimi i kësaj mundësie do të lejojë diagnostikimin së largëti të kësaj instance shfletuesi
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = Aktivizoni Service Workers përmes HTTP-je (kur grupi i mjeteve është hapur)
 options-enable-service-workers-http-tooltip =
@@ -113,11 +115,6 @@ options-source-maps-tooltip =
     .title = Nëse e aktivizoni këtë mundësi, burimet do të pasqyrohen te mjetet.
 # The message shown for settings that trigger page reload
 options-context-triggers-page-refresh = * Vetëm për sesionin e tanishëm, ringarkon faqen
-
-##
-
-# The heading for the Debugger section
-options-debugger-label = Diagnostikues
 # The label for the checkbox that toggles the display of the platform data in the
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config
 options-show-platform-data-label = Shfaqni të dhëna paltforme Gecko

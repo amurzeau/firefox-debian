@@ -22,6 +22,7 @@ set-password-new-password = Ange nytt lösenord:
 set-password-reenter-password = Bekräfta lösenordet:
 set-password-meter = Kvalitetsmätare för lösenord
 set-password-meter-loading = Laddar
+master-password-admin = Din administratör kräver att du har ett huvudlösenord inställt för att spara lösenord.
 master-password-description = Ett huvudlösenord används för att skydda känsliga uppgifter såsom lösenord för webbplatser.  Om du skapar ett huvudlösenord kommer du att tillfrågas om det en gång per session när { -brand-short-name } använder sparade uppgifter som skyddas av huvudlösenordet.
 master-password-warning = Var noga med att inte glömma bort ditt huvudlösenord.  Om du glömmer bort huvudlösenordet kommer du inte längre att kunna komma åt de uppgifter som skyddas av det.
 remove-password =

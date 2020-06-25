@@ -26,3 +26,5 @@ process-type-webisolated = Izolěrowane webwopśimjeśe
 process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Soket
+# process preallocated; may change to other types
+process-type-prealloc = Pśedwobsajźone

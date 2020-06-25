@@ -63,6 +63,7 @@ policy-ExtensionSettings = Eklenti kurulumunun tüm yönlerini yönet.
 policy-ExtensionUpdate = Otomatik eklenti güncellemelerini aç veya kapat.
 policy-FirefoxHome = Firefox giriş sayfasını yapılandır.
 policy-FlashPlugin = Flash yan uygulama kullanımını engelle ya da kullanımına izin ver.
+policy-Handlers = Varsayılan uygulama işleyicilerini yapılandır.
 policy-HardwareAcceleration = false ise donanım ivmelenmesini kapat.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Giriş sayfasını ayarla ve isteğe bağlı olarak kilitle.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Belirtilen sitelerdeki
 ##
 
 policy-LocalFileLinks = Belirli web sitelerinin yerel dosyalara bağlantı vermesine izin ver.
+policy-MasterPassword = Ana parola kullanılmasını zorunlu tut veya yasakla.
 policy-NetworkPrediction = Ağ tahminini (DNS prefetching) aç veya kapat.
 policy-NewTabPage = Yeni Sekme sayfasını etkinleştir veya devre dışı bırak.
 policy-NoDefaultBookmarks = { -brand-short-name }  ile birlikte gelen varsayılan yer imlerinin ve akıllı yer imlerinin (en çok ziyaret edilenler, son kullanılan etiketler) oluşturulmasını devre dışı bırak. Not: Bu ilke yalnızca profil ilk kez çalıştırılmadan önce kullanılırsa etkili olur.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Parolaları parola yöneticisine kaydetmeyi aç.
 # PDF.js and PDF should not be translated
 policy-PDFjs = Dahili { -brand-short-name } PDF göstericisi olan PDF.js’i devre dışı bırak veya yapılandır.
 policy-Permissions2 = Kamera, mikrofon, konum, bildirim ve otomatik oynatma izinlerini yapılandır.
+policy-PictureInPicture = Görüntü içinde görüntü özelliğini aç veya kapat.
 policy-PopupBlocking = Belirli web sitelerin varsayılan olarak açılır pencere açmasına izin ver.
 policy-Preferences = Bir tercihler alt kümesinin değerini ayarlayıp kilitle.
 policy-PromptForDownloadLocation = Dosya indirirken nereye kaydedileceklerini sor.

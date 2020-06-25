@@ -116,6 +116,11 @@ sandbox-sys-call-number = Sistem çağrısı
 sandbox-sys-call-args = Parametreler
 safe-mode-title = Güvenli kipi deneyin
 restart-in-safe-mode-label = Eklentileri devre dışı bırakıp yeniden başlat…
+clear-startup-cache-title = Başlangıç önbelleğini temizlemeyi deneyin
+clear-startup-cache-label = Başlangıç önbelleğini temizle…
+startup-cache-dialog-title = Başlangıç önbelleğini temizle
+startup-cache-dialog-body = Başlangıç önbelleğini temizlemek için { -brand-short-name } tarayıcınızı yeniden başlatın. Bu işlem, ayarlarınızı değiştirmez ve mevcut eklentilerinizi kaldırmaz.
+restart-button-label = Yeniden başlat
 
 ## Media titles
 
@@ -123,6 +128,7 @@ audio-backend = Ses arka ucu
 max-audio-channels = En fazla kanal
 channel-layout = Tercih edilen kanal düzeni
 sample-rate = Tercih edilen örnek oranı
+roundtrip-latency = Gidiş dönüş gecikmesi (standart sapma)
 media-title = Ortam
 media-output-devices-title = Çıktı cihazları
 media-input-devices-title = Girdi cihazları

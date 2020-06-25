@@ -23,7 +23,7 @@ newtab-search-box-search-the-web-input =
 
 ## Top Sites - General form dialog.
 
-newtab-topsites-add-search-engine-header = Titz'aqatisäx kanob'äl
+newtab-topsites-add-search-engine-header = Titz'aqatisäx Kanob'äl
 newtab-topsites-add-topsites-header = K'ak'a' Utziläj Ruxaq K'amaya'l
 newtab-topsites-edit-topsites-header = Tinuk' re Utziläj Ruxaq K'amaya'l re'
 newtab-topsites-title-label = B'i'aj
@@ -89,6 +89,7 @@ newtab-menu-show-privacy-info = Ri e qato'onela' & ri kichinanem
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = Xk'is
+newtab-privacy-modal-button-manage = Tinuk'samajïx runuk'ulem rupam to'on rub'anikil
 newtab-privacy-modal-header = K'o rejqalem ri kichinanem.
 newtab-privacy-modal-paragraph-2 =
     Man xa xe ta jeb'ël taq b'anob'äl yeqak'üt, chuqa' yeqak'üt nïm taq etamab'äl.
@@ -135,6 +136,10 @@ newtab-label-download = Xqasäx
 # Variables:
 #  $sponsorOrSource (String): This is the name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · To'on
+# This string is used at the bottom of story cards to indicate sponsored content
+# Variables:
+#  $sponsor (String): This is the name of a sponsor
+newtab-label-sponsored-by = Xto' rub'anikil ruma { $sponsor }
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -145,7 +150,7 @@ newtab-section-menu-expand-section = Tirik' Peraj
 newtab-section-menu-manage-section = Tinuk'samajïx Peraj
 newtab-section-menu-manage-webext = Tinuk'samajïx K'amal
 newtab-section-menu-add-topsite = Titz'aqatisäx K'ïy Ruwinaq Ruxaq K'amaya'l
-newtab-section-menu-add-search-engine = Titz'aqatisäx kanob'äl
+newtab-section-menu-add-search-engine = Titz'aqatisäx Kanob'äl
 newtab-section-menu-move-up = Tijotob'äx
 newtab-section-menu-move-down = Tiqasäx qa
 newtab-section-menu-privacy-notice = Ichinan na'oj

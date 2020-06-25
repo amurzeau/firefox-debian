@@ -3,28 +3,28 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 
-<!ENTITY migrationWizard.title          "Import Wizard">
+<!ENTITY migrationWizard.title          "Enportilo de datumoj kaj agordoj">
 
-<!ENTITY importFromWin.label            "Import Options, Account Settings, Address Book, Filters and other data from:">
-<!ENTITY importFromNonWin.label         "Import Preferences, Account Settings, Address Book, Filters, and other data from:">
-<!ENTITY importSourceNotFound.label     "No application to import data from found.">
+<!ENTITY importFromWin.label            "Enporti elekteblojn, agordoj pri kontoj, adresaron, filtrilojn kaj aliajn datumojn el:">
+<!ENTITY importFromNonWin.label         "Enporti preferojn, agordoj pri kontoj, adresaron, filtrilojn kaj aliajn datumojn el:">
+<!ENTITY importSourceNotFound.label     "Ne trovis programon el kiu eblas enporti datumojn.">
 
-<!ENTITY importFromNothing.label        "Don't import anything">
-<!ENTITY importFromNothing.accesskey    "D">
-<!ENTITY importFromSeamonkey3.label     "SeaMonkey 2 or later">
+<!ENTITY importFromNothing.label        "Enporti nenion">
+<!ENTITY importFromNothing.accesskey    "n">
+<!ENTITY importFromSeamonkey3.label     "SeaMonkey (versio 2 aŭ pli nova)">
 <!ENTITY importFromSeamonkey3.accesskey "S">
 <!ENTITY importFromOutlook.label        "Outlook">
 <!ENTITY importFromOutlook.accesskey    "O">
 
-<!ENTITY importSource.title             "Import Settings and Mail Folders">
-<!ENTITY importItems.title              "Items to Import">
-<!ENTITY importItems.label              "Select which items to import:">
+<!ENTITY importSource.title             "Enporti agordojn kaj mesaĝujojn">
+<!ENTITY importItems.title              "Elementoj por enporti">
+<!ENTITY importItems.label              "Elekti elementojn por enporti:">
 
-<!ENTITY migrating.title                "Importing…">
-<!ENTITY migrating.label                "The following items are currently being imported…">
+<!ENTITY migrating.title                "Enportado…">
+<!ENTITY migrating.label                "La jenaj elementoj estas nune enportataj…">
 
-<!ENTITY selectProfile.title            "Select Profile">
-<!ENTITY selectProfile.label            "The following profiles are available to import from:">
+<!ENTITY selectProfile.title            "Elekti profilon">
+<!ENTITY selectProfile.label            "Eblas enporti el la jenaj profiloj:">
 
-<!ENTITY done.title                     "Import Complete">
-<!ENTITY done.label                     "The following items were successfully imported:">
+<!ENTITY done.title                     "Enportado finita">
+<!ENTITY done.label                     "La jenaj elementoj estas sukcese enportitaj:">

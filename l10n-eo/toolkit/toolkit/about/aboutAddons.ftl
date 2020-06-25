@@ -30,7 +30,7 @@ sidebar-help-button-title =
     .title = Helpo pri aldonaĵoj
 preferences =
     { PLATFORM() ->
-        [windows] Elektebloj de { -brand-short-name }
+        [windows] Preferoj de { -brand-short-name }
        *[other] Preferoj de { -brand-short-name }
     }
 tools-menu =
@@ -38,7 +38,7 @@ tools-menu =
 sidebar-preferences-button-title =
     .title =
         { PLATFORM() ->
-            [windows] Elektebloj de { -brand-short-name }
+            [windows] Preferoj de { -brand-short-name }
            *[other] Preferoj de { -brand-short-name }
         }
 show-unsigned-extensions-button =
@@ -57,7 +57,7 @@ cmd-find-updates =
 cmd-preferences =
     .label =
         { PLATFORM() ->
-            [windows] Elektebloj
+            [windows] Preferoj
            *[other] Preferoj
         }
     .accesskey =
@@ -133,7 +133,7 @@ detail-check-for-updates =
 detail-show-preferences =
     .label =
         { PLATFORM() ->
-            [windows] Elektebloj
+            [windows] Preferoj
            *[other] Preferoj
         }
     .accesskey =
@@ -361,7 +361,7 @@ find-more-addons = Serĉi pli da aldonaĵoj
 # This is a label for the button to open the "more options" menu, it is only
 # used for screen readers.
 addon-options-button =
-    .aria-label = Pli da elektebloj
+    .aria-label = Pli da ebloj
 
 ## Add-on actions
 
@@ -371,7 +371,7 @@ remove-addon-button = Forigi
 remove-addon-disabled-button = Ne eblas forigi ĝin. <a data-l10n-name="link">Kial?</a>
 disable-addon-button = Malaktivigi
 enable-addon-button = Aktivigi
-expand-addon-button = Pli da elektebloj
+expand-addon-button = Pli da ebloj
 # This is used for the toggle on the extension card, it's a checkbox and this
 # is always its label.
 extension-enable-addon-button-label =
@@ -477,8 +477,6 @@ locale-heading = Administri lingvojn
 updates-heading = Administri viajn ĝisdatigojn
 discover-heading = Personecigu vian { -brand-short-name }
 shortcuts-heading = Administri alirklavojn de etendaĵoj
-theme-heading-search-label = Serĉi pli da etosoj
-extension-heading-search-label = Serĉi pli da etendaĵoj
 default-heading-search-label = Serĉi pli da aldonaĵoj
 addons-heading-search-input =
     .placeholder = Serĉi en addons.mozilla.org

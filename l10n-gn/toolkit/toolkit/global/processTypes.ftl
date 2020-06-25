@@ -26,3 +26,5 @@ process-type-webisolated = Ñanduti retepy mombyrygua
 process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Moingeha
+# process preallocated; may change to other types
+process-type-prealloc = Mboherapyre

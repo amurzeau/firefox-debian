@@ -63,6 +63,7 @@ policy-ExtensionSettings = Tvarkyti visus priedų įdiegimo aspektus.
 policy-ExtensionUpdate = Įjungti arba išjungti automatinius priedų naujinimus.
 policy-FirefoxHome = Konfigūruoti „Firefox“ pradžios ekraną.
 policy-FlashPlugin = Leisti arba drausti „Flash“ plėtinio naudojimą.
+policy-Handlers = Konfigūruoti numatytąsias programas.
 policy-HardwareAcceleration = Jei „false“, išjungti aparatinį spartinimą.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Nustatyti ir papildomai užrakinti pradžios tinklalapį.
@@ -88,6 +89,7 @@ policy-PasswordManagerEnabled = Įjungti slaptažodžių įrašymą į slaptažo
 # PDF.js and PDF should not be translated
 policy-PDFjs = Išjungti arba konfigūruoti „PDF.js“, į „{ -brand-short-name }“ integruotą PDF failų žiūryklę.
 policy-Permissions2 = Konfigūruoti kameros, mikrofono, buvimo vietos nustatymo, pranešimų ir automatinio grojimo leidimus.
+policy-PictureInPicture = Įjungti arba išjungti vaizdą vaizde.
 policy-PopupBlocking = Leisti kai kurioms svetainėms pagal numatymą rodyti iškylančiuosius langus.
 policy-Preferences = Nustatykite ir užfiksuokite nuostatų rinkinio reikšmę.
 policy-PromptForDownloadLocation = Klausti, kur įrašyti atsiunčiamus failus.

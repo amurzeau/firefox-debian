@@ -131,10 +131,6 @@ cfr-whatsnew-lockwise-take-link-text = Prenesite aplikacijo
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Pišite manj, najdite več z naslovno vrstico
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Z enim klikom v naslovno vrstico prikličite najpogosteje uporabljane strani. Hitreje poiščite stvari z rezultati iskalnika { $searchEngineName } in iz zgodovine brskanja.
-cfr-whatsnew-searchbar-body-generic = Dostopajte do strani, ki jih največkrat uporabljajte, z enim klikom v naslovni vrstici. Hitreje poiščite stvari z rezultati iskanja iz zgodovine brskanja.
 cfr-whatsnew-searchbar-body-topsites = Izberite naslovno vrstico in polje se bo razširilo s povezavami do vaših najljubših strani.
 cfr-whatsnew-searchbar-icon-alt-text = Ikona povečevalnega stekla
 
@@ -246,3 +242,15 @@ cfr-whatsnew-passwords-icon-alt = Ikona ranljivega gesla
 cfr-whatsnew-pip-fullscreen-header = Popeljite sliko v sliki v celozaslonski način
 cfr-whatsnew-pip-fullscreen-body = Ko predvajate video v plavajočem oknu, lahko zdaj dvokliknete to okno za ogled v celozaslonskem načinu.
 cfr-whatsnew-pip-fullscreen-icon-alt = Ikona slike v sliki
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Zaščite na dosegu roke
+cfr-whatsnew-protections-body = Nadzorna plošča zaščit vključuje poročila povzetkov o krajah podatkov in upravljanju gesel. Zdaj lahko spremljate, koliko kraj ste razrešili in preverite, ali je bilo katero od shranjenih gesel morda izpostavljeno kraji podatkov.
+cfr-whatsnew-protections-cta-link = Prikaži nadzorno ploščo zaščit
+cfr-whatsnew-protections-icon-alt = Ikona ščita
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Boljša izkušnja z dokumenti PDF
+cfr-whatsnew-better-pdf-body = Dokumenti PDF se zdaj odpirajo neposredno v { -brand-short-name }u, s čimer je vaše delo enostavnejše.

@@ -124,7 +124,7 @@ separate-profile-mode =
     .label = Jednoczesne działanie programu { -brand-short-name } oraz programu Firefox
 use-firefox-sync = Podczas jednoczesnego działania wykorzystywane są oddzielne profile. Można wykorzystać { -sync-brand-short-name(case: "acc", capitalization: "lower") }, aby dzielić dane między nimi.
 get-started-not-logged-in = Zaloguj się do { -sync-brand-short-name(case: "gen", capitalization: "lower") }…
-get-started-configured = Otwórz ustawienia { -sync-brand-short-name(case: "gen", capitalization: "lower") }
+get-started-configured = Otwórz preferencje { -sync-brand-short-name(case: "gen", capitalization: "lower") }
 always-check-default =
     .label = Sprawdzanie, czy { -brand-short-name } jest domyślną przeglądarką
     .accesskey = e
@@ -317,8 +317,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Wtyczka { $plugin-name } (w programie { -brand-short-name })
-applications-preview-inapp =
-    .label = Podgląd w programie { -brand-short-name }
 applications-open-inapp =
     .label = Otwórz w programie { -brand-short-name }
 
@@ -332,8 +330,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -378,7 +374,7 @@ update-enable-search-update =
 update-pref-write-failure-title = Błąd zapisu
 # Variables:
 #   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Nie udało się zapisać ustawienia. Nie można było zapisać pliku: { $path }
+update-pref-write-failure-message = Nie udało się zapisać preferencji. Nie można było zapisać pliku: { $path }
 update-setting-write-failure-title = Błąd podczas zachowywania preferencji aktualizacji
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -500,11 +496,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Popularne
 home-prefs-topsites-description = Najczęściej odwiedzane strony.
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Polecane przez { $provider }
 home-prefs-recommended-by-description = Świetne rzeczy z całego Internetu, wybrane specjalnie dla Ciebie
+home-prefs-recommended-by-description-update = Wyjątkowe rzeczy z całego Internetu, wybrane przez { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Jak to działa?
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsorowane artykuły
@@ -565,7 +567,8 @@ search-show-suggestions-above-history-option =
     .label = Podpowiedzi wyszukiwania nad historią przeglądania w wynikach paska adresu
 search-show-suggestions-private-windows =
     .label = Podpowiedzi wyszukiwania w prywatnych oknach
-suggestions-addressbar-settings = Zmień ustawienia podpowiedzi z historii przeglądania, zakładek i kart
+suggestions-addressbar-settings = Zmień preferencje podpowiedzi z historii przeglądania, zakładek i kart
+suggestions-addressbar-settings-generic = Zmień preferencje innych podpowiedzi w pasku adresu
 search-suggestions-cant-show = Podpowiedzi wyszukiwania nie będą wyświetlane w wynikach paska adresu, ponieważ wyłączono zachowywanie historii przeglądania programu { -brand-short-name }.
 search-one-click-header = Dodatkowe wyszukiwarki
 search-one-click-desc = Wybierz dodatkowe wyszukiwarki wyświetlane na dole wyników wyszukiwania w pasku adresu i pasku wyszukiwania.
@@ -616,7 +619,7 @@ containers-remove-button =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Zabierz swoją sieć ze sobą
-sync-signedout-description = Synchronizuj zakładki, historię, karty, hasła, dodatki i ustawienia między wszystkimi swoimi urządzeniami.
+sync-signedout-description = Synchronizuj zakładki, historię, karty, hasła, dodatki i preferencje między wszystkimi swoimi urządzeniami.
 sync-signedout-account-title = { -fxaccount-brand-name }
 sync-signedout-account-create = Nie masz konta? Utwórz je…
     .accesskey = U
@@ -672,7 +675,7 @@ prefs-syncing-off = Synchronizowanie: wyłączone
 prefs-sync-setup =
     .label = Skonfiguruj { -sync-brand-short-name(case: "acc", capitalization: "lower") }…
     .accesskey = S
-prefs-sync-offer-setup-label = Synchronizuj zakładki, historię, karty, hasła, dodatki i ustawienia między wszystkimi swoimi urządzeniami.
+prefs-sync-offer-setup-label = Synchronizuj zakładki, historię, karty, hasła, dodatki i preferencje między wszystkimi swoimi urządzeniami.
 prefs-sync-now =
     .labelnotsyncing = Synchronizuj teraz
     .accesskeynotsyncing = S
@@ -769,10 +772,10 @@ privacy-header = Prywatność
 
 ## Privacy Section - Forms
 
+logins-header = Dane logowania i hasła
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Dane logowania i hasła
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Dane logowania i hasła
     .searchkeywords = { -lockwise-brand-short-name }
@@ -808,8 +811,6 @@ forms-master-pw-fips-desc = Zmiana hasła się nie powiodła.
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Potwierdź swoją tożsamość, aby utworzyć hasło główne.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Aby utworzyć hasło główne, wprowadź swoje dane logowania do systemu Windows. Pomaga to chronić bezpieczeństwo Twoich kont.
 # This message can be seen by trying to add a Master Password.
@@ -906,6 +907,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Wyjątki…
     .accesskey = W
+sitedata-cookies-exceptions =
+    .label = Wyjątki…
+    .accesskey = W
 
 ## Privacy Section - Address Bar
 
@@ -920,7 +924,10 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = otwartych kartach
     .accesskey = k
-addressbar-suggestions-settings = Zmień ustawienia podpowiedzi dostarczanych przez wyszukiwarki
+addressbar-locbar-topsites-option =
+    .label = popularnych witrynach
+    .accesskey = w
+addressbar-suggestions-settings = Zmień preferencje podpowiedzi dostarczanych przez wyszukiwarki
 
 ## Privacy Section - Content Blocking
 
@@ -979,7 +986,6 @@ content-blocking-fingerprinters = elementy śledzące przez zbieranie informacji
 content-blocking-warning-title = Ostrzeżenie
 content-blocking-warning-description = Blokowanie treści może powodować problemy z niektórymi stronami. Blokowanie można łatwo wyłączyć na stronach, którym ufasz.
 content-blocking-learn-how = Więcej informacji
-content-blocking-etp-warning-description = Blokowanie elementów śledzących może wpłynąć na funkcjonowanie niektórych stron. Odśwież stronę z włączonymi elementami śledzącymi, aby wyświetlić całą jej zawartość.
 content-blocking-and-isolating-etp-warning-description = Blokowanie elementów śledzących i izolowanie ciasteczek może wpłynąć na funkcjonowanie niektórych stron. Odśwież stronę z włączonymi elementami śledzącymi, aby wyświetlić całą jej zawartość.
 content-blocking-warning-learn-how = Więcej informacji
 content-blocking-reload-description = Zastosowanie tych zmian wymaga odświeżenia kart.

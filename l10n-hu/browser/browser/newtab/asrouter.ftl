@@ -123,10 +123,6 @@ cfr-whatsnew-lockwise-take-link-text = Alkalmazás beszerzése
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Gépeljen kevesebbet, találjon meg több mindent a címsorban
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Keresse fel a legtöbbet használt webhelyeit egyetlen kattintással a címsorban. Találjon dolgokat gyorsabban a(z) { $searchEngineName } és az előzményei találataival.
-cfr-whatsnew-searchbar-body-generic = Keresse fel a legtöbbet használt webhelyeit egyetlen kattintással a címsorban. Találjon dolgokat gyorsabban a böngészési előzményei találataival.
 cfr-whatsnew-searchbar-body-topsites = Most válassza ki a címsort, és a doboz kibővül a legnépszerűbb webhelyeire mutató hivatkozásokkal.
 cfr-whatsnew-searchbar-icon-alt-text = Nagyító ikon
 
@@ -234,3 +230,15 @@ cfr-whatsnew-passwords-icon-alt = Sebezhető jelszó kulcs ikonja
 cfr-whatsnew-pip-fullscreen-header = Tegye teljes képernyőre a kép a képben funkciót
 cfr-whatsnew-pip-fullscreen-body = Ha egy videót lebegő ablakba tesz, akkor most már dupla kattintással teljes képernyőjűvé teheti az ablakot.
 cfr-whatsnew-pip-fullscreen-icon-alt = Kép a képben ikon
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = A védelmekről röviden
+cfr-whatsnew-protections-body = A Védelmi vezérlőpult összefoglaló jelentéseket tartalmaz az adatsértésekről és a jelszókezelésről. Most már nyomon tudja követni, hogy hány adatsértés történt, és megnézheti, hogy a mentett jelszavai megjelentek-e egy adatsértésben.
+cfr-whatsnew-protections-cta-link = Védelmi vezérlőpult megtekintése
+cfr-whatsnew-protections-icon-alt = Pajzs ikon
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Jobb PDF-élmény
+cfr-whatsnew-better-pdf-body = A PDF-dokumentumok már közvetlenül a { -brand-short-name }ban nyílnak meg, így a munkafolyamata egyszerű maradhat.

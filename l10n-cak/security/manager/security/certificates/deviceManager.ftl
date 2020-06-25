@@ -51,7 +51,7 @@ load-device-filename =
     .accesskey = r
 load-device-browse =
     .label = Tinik'öx…
-    .accesskey = B
+    .accesskey = n
 
 ## Token Manager
 

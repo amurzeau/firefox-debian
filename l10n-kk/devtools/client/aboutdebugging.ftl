@@ -186,6 +186,9 @@ about-debugging-browser-version-too-old = Байланысқан браузер 
 # backward compatible changes broke the debugger in those scenarios (Bug 1528219).
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 about-debugging-browser-version-too-old-67-debugger = Жөндеуші панелі байланысқан браузермен жұмыс жасамауы мүмкін. Бұл браузермен Жөндеушіні қолданам десеңіз, кем дегенде Firefox { $runtimeVersion } қолданыңыз.
+# Dedicated message for a backward compatibility issue that occurs when connecting:
+# from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
+about-debugging-browser-version-too-old-fennec = Firefox-тың бұл нұсқасы Android үшін Firefox-ті (68) жөндей алмайды. Сынау үшін телефонға Android үшін Firefox Nightly орнатуды ұсынамыз. <a>Көбірек білу</a>
 # This string is displayed in the runtime page if the remote browser version is too recent.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeID } is the build ID of the remote browser (for instance "20181231", format is yyyyMMdd)
@@ -299,6 +302,9 @@ about-debugging-worker-push-service =
 # Displayed as title of the inspect button when service worker debugging is disabled.
 about-debugging-worker-inspect-action-disabled =
     .title = Service Worker бақылау қазір көппроцестік { -brand-shorter-name } үшін сөндірілген
+# Displayed as title of the inspect button for zombie tabs (e.g. tabs loaded via a session restore).
+about-debugging-zombie-tab-inspect-action-disabled =
+    .title = Бет толығымен жүктелмеген, оны бақылау мүмкін емес
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-main-process-name = Басты процесс

@@ -9,16 +9,6 @@
 remove-address-row-type = Odstrani polje { $type }
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
-address-input-type =
-    { $count ->
-        [0] Prazno vnosno polje { $type }
-        [one] Vnosno polje { $type } z enim naslovom
-        [two] Vnosno polje { $type } z dvema naslovoma
-        [few] Vnosno polje { $type } s { $count } naslovi
-       *[other] Vnosno polje { $type } s { $count } naslovi
-    }
-#   $type (String) - the type of the addressing row
-#   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
         [0] { $type }
@@ -48,3 +38,30 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Premakni v Skp
     .accesskey = S
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [1] { $count } priponka
+            [one] { $count } priponka
+            [two] { $count } priponki
+            [few] { $count } priponke
+           *[other] { $count } priponke
+        }
+    .accesskey = p
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [1] { $count } priponka
+            [one] { $count } priponka
+            [two] { $count } priponki
+            [few] { $count } priponke
+           *[other] { $count } priponk
+        }
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+button-return-receipt =
+    .label = Povratnica
+    .tooltiptext = Zahtevaj potrdilo o prejemu za to sporočilo

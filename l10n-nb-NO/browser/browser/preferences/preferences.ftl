@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } (i { -brand-short-name })
-applications-preview-inapp =
-    .label = Forhåndsvis i { -brand-short-name }
 applications-open-inapp =
     .label = Åpne i { -brand-short-name }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Mest besøkte
 home-prefs-topsites-description = Mest besøkte nettsteder
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Anbefalt av { $provider }
 home-prefs-recommended-by-description = Bra innhold fra hele nettet, tilpasset for deg
+home-prefs-recommended-by-description-update = Enestående innhold fra hele nettet, satt sammen av { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Hvordan det virker
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsede historier
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Vis søkeforslag i private vindu
 suggestions-addressbar-settings = Endre innstillinger for nettleserhistorikk, bokmerker og faneforslag
+suggestions-addressbar-settings-generic = Endre innstillinger for andre adresselinjeforslag
 search-suggestions-cant-show = Søkeforslag vil ikke vises i adresselinjeresultatene fordi du har konfigurert { -brand-short-name } til å aldri huske historikk.
 search-one-click-header = Ettklikks søkemotorer
 search-one-click-desc = Velg alternative søkemotorer som vises under adresselinjen og søkelinjen når du begynner å skrive inn et søkeord.
@@ -765,10 +768,10 @@ privacy-header = Nettleserpersonvern
 
 ## Privacy Section - Forms
 
+logins-header = Innlogginger og passord
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Innlogginger og passord
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Innlogginger og passord
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = Passordendring mislyktes
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Bekreft identiteten din for å opprette et hovedpassord.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen for Windows for å opprette et hovedpassord. Dette vil gjøre kontoene dine tryggere.
 # This message can be seen by trying to add a Master Password.
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Behandle tillatelser…
     .accesskey = B
+sitedata-cookies-exceptions =
+    .label = Behandle unntak…
+    .accesskey = B
 
 ## Privacy Section - Address Bar
 
@@ -916,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Åpne faner
     .accesskey = f
+addressbar-locbar-topsites-option =
+    .label = Mest besøkte nettsteder
+    .accesskey = M
 addressbar-suggestions-settings = Endre innstillinger for søkeforslag
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Se opp!
 content-blocking-warning-description = Blokkering av innhold kan føre til at noen nettsteder slutter å fungere. Det er enkelt å deaktivere blokkering for nettsteder du stoler på.
 content-blocking-learn-how = Finn ut hvordan
-content-blocking-etp-warning-description = Blokkering av sporere kan påvirke funksjonaliteten på noen nettsteder.
 content-blocking-and-isolating-etp-warning-description = Blokkering av sporere og isolering av infokapsler kan påvirke funksjonaliteten på noen nettsteder. Gjeninnlast nettsiden med sporere for å laste alt innhold.
 content-blocking-warning-learn-how = Les hvordan
 content-blocking-reload-description = Du må oppdatere fanene dine for å kunne bruke disse endringene.
@@ -1075,7 +1081,7 @@ permissions-a11y-privacy-link = Les mer
 collection-header = Datainnsamling og bruk for { -brand-short-name }
 collection-description = Vi prøver alltid å gi deg valg og samler bare det vi trenger for å levere og forbedre { -brand-short-name } for alle. Vi ber alltid om tillatelse før vi aksepterer personopplysninger.
 collection-privacy-notice = Personvernbestemmelser
-collection-health-report-telemetry-disabled = Du tillater ikke lenger { -vendor-short-name } å samle inn teknisk- og interaksjonsdata. Alle tidligere data vil bli slettet innen 30 dager.
+collection-health-report-telemetry-disabled = Du tillater ikke lenger { -vendor-short-name } å samle inn teknisk data og data om bruk. Alle tidligere data vil bli slettet innen 30 dager.
 collection-health-report-telemetry-disabled-link = Les mer
 collection-health-report =
     .label = Tillat { -brand-short-name } å sende tekniske data og data for bruk til { -vendor-short-name }

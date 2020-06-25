@@ -9,6 +9,12 @@ protections-panel-sitefixedsendreport-label = El lloc ja funciona? Envieu un inf
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
 
+protections-popup-footer-protection-label-strict = Estricta
+    .label = Estricta
+protections-popup-footer-protection-label-custom = Personalitzada
+    .label = Personalitzada
+protections-popup-footer-protection-label-standard = Estàndard
+    .label = Estàndard
 
 ##
 

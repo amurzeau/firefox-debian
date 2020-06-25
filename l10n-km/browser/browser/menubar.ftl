@@ -58,27 +58,6 @@ menu-file-go-offline =
 menu-edit =
     .label = កែសម្រួល
     .accesskey = E
-menu-edit-undo =
-    .label = មិនធ្វើវិញ
-    .accesskey = U
-menu-edit-redo =
-    .label = ធ្វើវិញ
-    .accesskey = R
-menu-edit-cut =
-    .label = កាត់
-    .accesskey = t
-menu-edit-copy =
-    .label = ចម្លង
-    .accesskey = C
-menu-edit-paste =
-    .label = បិទភ្ជាប់
-    .accesskey = P
-menu-edit-delete =
-    .label = លុប
-    .accesskey = D
-menu-edit-select-all =
-    .label = ជ្រើស​ទាំងអស់
-    .accesskey = A
 menu-edit-find-on =
     .label = ស្វែងរក​ក្នុង​ទំព័រ​នេះ...
     .accesskey = F
@@ -118,9 +97,6 @@ menu-view-full-zoom-enlarge =
 menu-view-full-zoom-reduce =
     .label = ​បង្រួម
     .accesskey = O
-menu-view-full-zoom-reset =
-    .label = កំណត់​ឡើង​វិញ
-    .accesskey = R
 menu-view-full-zoom-toggle =
     .label = ពង្រីក​តែអត្ថបទ​ប៉ុណ្ណោះ
     .accesskey = T
@@ -172,6 +148,8 @@ menu-history-synced-tabs =
     .label = ផ្ទាំង​ដែល​បាន​ធ្វើ​សមកាលកម្ម
 menu-history-restore-last-session =
     .label = ស្ដារ​សម័យ​មុន
+menu-history-hidden-tabs =
+    .label = ផ្ទាំងដែលលាក់
 menu-history-undo-menu =
     .label = ផ្ទាំង​ដែល​បិទ​ថ្មីៗ
 menu-history-undo-window-menu =
@@ -231,6 +209,9 @@ menu-preferences =
             [windows] O
            *[other] n
         }
+menu-tools-layout-debugger =
+    .label = កម្មវិធីបំបាត់កំហុសប្លង់
+    .accesskey = L
 
 ## Window Menu
 
@@ -241,6 +222,35 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+menu-help =
+    .label = ជំនួយ
+    .accesskey = H
+menu-help-product =
+    .label = ជំនួយ { -brand-shorter-name }
+    .accesskey = H
+menu-help-show-tour =
+    .label = ទេសចរណ៍ { -brand-shorter-name }
+    .accesskey = o
+menu-help-keyboard-shortcuts =
+    .label = គ្រាប់ចុច​ផ្លូវកាត់
+    .accesskey = K
+menu-help-troubleshooting-info =
+    .label = ព័ត៌មាន​អំពី​ដំណោះស្រាយ​បញ្ហា
+    .accesskey = T
+menu-help-feedback-page =
+    .label = ដាក់​ស្នើ​មតិកែលម្អ…
+    .accesskey = S
+menu-help-safe-mode-without-addons =
+    .label = ចាប់ផ្ដើម​ឡើងវិញ​ដោយ​បិទ​ដំណើរការកម្មវិធី​បន្ថែម…
+    .accesskey = R
+menu-help-safe-mode-with-addons =
+    .label = ចាប់ផ្ដើម​ឡើងវិញ​ដោយ​បើកដំណើរការ​​កម្មវិធី​បន្ថែម
+    .accesskey = R
+# Label of the Help menu item. Either this or
+# menu-help-notdeceptive is shown.
+menu-help-report-deceptive-site =
+    .label = រាយការណ៍​អំពី​វេបសាយ​បញ្ឆោត…
+    .accesskey = D
 menu-help-not-deceptive =
     .label = នេះ​មិនមែន​ជា​វេបសាយ​បញ្ឆោត​ទេ…
     .accesskey = d

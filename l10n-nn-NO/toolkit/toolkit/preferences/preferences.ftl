@@ -22,6 +22,7 @@ set-password-new-password = Nytt passord:
 set-password-reenter-password = Gjenta nytt passord:
 set-password-meter = Måling av passordkvalitet
 set-password-meter-loading = Lastar
+master-password-admin = Administratoren din krev at du har eit hovudpassord for å lagre passord.
 master-password-description = Eit hovudpassord vert brukt for å verne sensitiv informasjon, som t.d. passord for nettstadar.  Om du lagar eit hovudpassord vil du bli spurt om passordet for kvar programøkt når { -brand-short-name } hentar ut lagra informasjon som er verna av passordet.
 master-password-warning = Ver sikker på at du hugsar hovudpassordet.  Om du gløymer det, vil du ikkje få tilgang til opplysningane som er verna av det.
 remove-password =

@@ -2,6 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 about-logins-page-title = Prijave & lozinke
 
 # "Google Play" and "App Store" are both branding and should not be translated
@@ -12,9 +17,12 @@ login-app-promo-android =
     .alt = Preuzmite na Google Play
 login-app-promo-apple =
     .alt = Preuzmite na App Store
+
 login-filter =
     .placeholder = Pretraži prijave
+
 create-login-button = Kreiraj novu prijavu
+
 fxaccounts-sign-in-text = Pristupite lozinkama na drugim uređajima
 fxaccounts-sign-in-button = Prijava na { -sync-brand-short-name }
 fxaccounts-avatar-button =
@@ -24,8 +32,6 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Otvori meni
-# This menuitem is only visible on Windows
-menu-menuitem-import = Uvoz lozinki…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Opcije
@@ -61,6 +67,12 @@ login-intro-instruction-fxa = Kreirajte ili se prijavite na vaš { -fxaccount-br
 ## Login
 
 
+## OS Authentication dialog
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
 ## Master Password notification
 
 
@@ -73,5 +85,10 @@ login-intro-instruction-fxa = Kreirajte ili se prijavite na vaš { -fxaccount-br
 ## Breach Alert notification
 
 
+## Vulnerable Password notification
+
 ## Error Messages
+
+
+## Login Export Dialog
 

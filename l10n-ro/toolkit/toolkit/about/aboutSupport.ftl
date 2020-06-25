@@ -317,14 +317,14 @@ multi-process-status-6 = Dezactivat din cauza introducerii de text neacceptat
 multi-process-status-7 = Dezactivate de suplimente
 multi-process-status-8 = Dezactivate forțat
 multi-process-status-unknown = Stare necunoscută
-async-pan-zoom = Panoramare/focalizare asincronă
+async-pan-zoom = Panoramare/zoom asincron(ă)
 apz-none = fără
 wheel-enabled = intrare pentru rotița mouse-ului activată
 touch-enabled = intrare tactilă activată
 drag-enabled = tragerea barei de derulare activată
 keyboard-enabled = tastatură activată
 autoscroll-enabled = autoderulare activată
-zooming-enabled = Focalizare lină prin pișcare activată
+zooming-enabled = Zoom lin prin apropiere/depărtare cu degetele activat
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

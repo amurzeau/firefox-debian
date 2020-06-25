@@ -56,6 +56,17 @@ move-to-new-window =
 undo-close-tab =
     .label = Kapatılan sekmeyi aç
     .accesskey = ı
+tab-context-close-multiple-tabs =
+    .label = Birden çok sekmeyi kapat
+    .accesskey = B
+tab-context-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Kapatılan sekmeyi aç
+            [one] Kapatılan sekmeyi aç
+           *[other] Kapatılan sekmeleri aç
+        }
+    .accesskey = l
 close-tab =
     .label = Sekmeyi kapat
     .accesskey = e
