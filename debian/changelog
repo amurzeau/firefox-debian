@@ -1,3 +1,20 @@
+firefox (78.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fixes for mfsa2020-24, also known as:
+    CVE-2020-12415, CVE-2020-12416, CVE-2020-12417, CVE-2020-12418,
+    CVE-2020-12419, CVE-2020-12420, CVE-2020-12421, CVE-2020-12422,
+    CVE-2020-12424, CVE-2020-12425, CVE-2020-12426.
+
+  * debian/control*: Bump nss build dependency.
+  * debian/control*, debian/rules: Remove build dependency on python2.7.
+  * debian/browser.mozconfig.in: Remove obsolete configure options.
+
+  * build/virtualenv_packages.txt: Don't install enum and enum34 virtualenv
+    packages in python3 virtualenvs. bz#1632429.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 01 Jul 2020 10:14:06 +0900
+
 firefox (77.0-1) unstable; urgency=medium
 
   * New upstream release
