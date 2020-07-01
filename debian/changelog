@@ -1,3 +1,12 @@
+firefox-esr (68.10.0esr-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fixes for mfsa2020-25, also known as:
+    CVE-2020-12417, CVE-2020-12418, CVE-2020-12419, CVE-2020-12420,
+    CVE-2020-12421.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 01 Jul 2020 09:08:58 +0900
+
 firefox-esr (68.9.0esr-1) unstable; urgency=medium
 
   * New upstream release
