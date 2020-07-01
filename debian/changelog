@@ -77,6 +77,9 @@ firefox (75.0-1) unstable; urgency=medium
     that upstream needs that version.
   * debian/browser.install.in: Don't install .chk files, they aren't
     produced anymore.
+  * debian/browser.install.in, debian/browser.mozconfig.in, debian/control*,
+    debian/rules: Don't build against system sqlite. This is not supported
+    anymore.
 
   * python/mozbuild/mozbuild/nodeutil.py: Allow to build with older
     versions of nodejs 10.
