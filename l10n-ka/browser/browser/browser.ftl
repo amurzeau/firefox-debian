@@ -2,6 +2,50 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (პირადი ფანჯარა)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (პირადი ფანჯარა)
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (პირადი ფანჯარა)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (პირადი ფანჯარა)
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = საიტის ინფორმაციის ჩვენება
 
@@ -222,6 +266,23 @@ popup-select-microphone =
     .value = გასაზიარებელი მიკროფონი:
     .accesskey = მ
 popup-all-windows-shared = ეკრანზე ნაჩვენები ყველა ფანჯარა გაზიარდება.
+popup-screen-sharing-not-now =
+    .label = ახლა არა
+    .accesskey = ლ
+popup-screen-sharing-never =
+    .label = არასდროს დაიშვას
+    .accesskey = ა
+popup-silence-notifications-checkbox = შეჩერდეს შეტყობინებები, როცა { -brand-short-name } აზიარებს
+popup-silence-notifications-checkbox-warning = { -brand-short-name } არ გამოაჩენს შეტყობინებებს მაშინ, როცა რამეს აზიარებთ.
+
+## WebRTC window or screen share tab switch warning
+
+sharing-warning-window = თქვენ გაზიარებული გაქვთ { -brand-short-name }. სხვები დაინახავენ, ახალ ჩანართზე რომ გადახვალთ.
+sharing-warning-screen = თქვენ გაზიარებული გაქვთ მთლიანი ეკრანი. სხვები დაინახავენ, ახალ ჩანართზე რომ გადახვალთ.
+sharing-warning-proceed-to-tab =
+    .label = ჩანართზე გაგრძელება
+sharing-warning-disable-for-session =
+    .label = ამ სეანსზე გაზიარების დაცვის გამორთვა
 
 ## DevTools F12 popup
 
@@ -242,7 +303,7 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = გაფართოება:
-urlbar-go-end-cap =
+urlbar-go-button =
     .tooltiptext = მისამართზე გადასვლა
 urlbar-page-action-button =
     .tooltiptext = ვებგვერდზე მოქმედებები

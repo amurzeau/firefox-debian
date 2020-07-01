@@ -24,3 +24,7 @@ process-type-webisolated = Απομονωμένο διαδικτυακό περ�
 # process used to communicate with the GPU for
 # graphics acceleration
 process-type-gpu = GPU
+# process used to perform network operations
+process-type-socket = Υποδοχή
+# process preallocated; may change to other types
+process-type-prealloc = Προκατανεμημένο

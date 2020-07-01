@@ -20,3 +20,26 @@ toolbar-context-menu-select-all-tabs =
 toolbar-context-menu-undo-close-tab =
     .label = برگردان زبانه بسته شده
     .accesskey = ب
+
+toolbar-context-menu-manage-extension =
+    .label = مدیریت افزودنی‌ها
+    .accesskey = E
+toolbar-context-menu-remove-extension =
+    .label = حذف افزونه
+    .accesskey = v
+
+# Can appear on the same context menu as menubarCmd ("Menu Bar") and
+# personalbarCmd ("Bookmarks Toolbar"), so they should have different
+# access keys.
+toolbar-context-menu-pin-to-overflow-menu =
+    .label = سنجاق کردن به منو شناور
+    .accesskey = س
+toolbar-context-menu-auto-hide-downloads-button =
+    .label = مخفی کردن خودکار در نوارابزار
+    .accesskey = A
+toolbar-context-menu-remove-from-toolbar =
+    .label = حذف از نوارابزار
+    .accesskey = ح
+toolbar-context-menu-view-customize-toolbar =
+    .label = سفارشی‌سازی…
+    .accesskey = س

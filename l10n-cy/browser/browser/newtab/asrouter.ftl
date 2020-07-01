@@ -137,10 +137,6 @@ cfr-whatsnew-lockwise-take-link-text = Estyn yr ap
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Teipio llai, darganfod mwy gyda'r bar cyfeiriad
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Gallwch gyrraedd y gwefannau rydych chi'n eu defnyddio fwyaf gydag un clic i'r bar cyfeiriad. Dewch o hyd i bethau'n gynt gyda chanlyniadau gan { $searchEngineName } a'ch hanes pori.
-cfr-whatsnew-searchbar-body-generic = Gallwch gyrraedd y gwefannau rydych chi'n eu defnyddio fwyaf gydag un clic i'r bar cyfeiriad. Dewch o hyd i bethau'n gynt gyda chanlyniadau chwilio o'ch hanes pori.
 cfr-whatsnew-searchbar-body-topsites = Nawr, dewiswch y bar cyfeiriadau, a bydd blwch yn ehangu gyda dolenni i'ch prif wefannau.
 cfr-whatsnew-searchbar-icon-alt-text = Eicon chwyddwydr
 
@@ -256,3 +252,15 @@ cfr-whatsnew-passwords-icon-alt = Eicon allwedd cyfrinair bregus
 cfr-whatsnew-pip-fullscreen-header = Cymerwch llun-mewn-llun sgrin lawn
 cfr-whatsnew-pip-fullscreen-body = Pan fyddwch yn gosod fideo i mewn i ffenestr sy'n arnofio, gallwch nawr glicio ddwywaith ar y ffenestr honno i droi'n sgrin lawn.
 cfr-whatsnew-pip-fullscreen-icon-alt = Eicon llun mewn llun
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Cipolwg ar ddiogelwch
+cfr-whatsnew-protections-body = Mae'r Bwrdd Gwaith Diogelwch yn cynnwys adroddiadau cryno am dor-data a rheoli cyfrineiriau. Nawr gallwch chi olrhain faint o dor-data rydych chi wedi'u datrys, a gweld a allai unrhyw un o'ch cyfrineiriau sydd wedi'u cadw fod wedi bod yn agored i dor-data.
+cfr-whatsnew-protections-cta-link = Gweld y Bwrdd Gwaith Diogelwch
+cfr-whatsnew-protections-icon-alt = Eicon tarian
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Gwell profiad PDF
+cfr-whatsnew-better-pdf-body = Mae dogfennau PDF nawr yn agor yn uniongyrchol yn { -brand-short-name }, gan gadw'ch llif gwaith o fewn cyrraedd.

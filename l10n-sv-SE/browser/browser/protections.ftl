@@ -37,10 +37,14 @@ etp-card-title = Förbättrat spårningsskydd
 etp-card-content = Spårare följer dig runt online för att samla in information om dina surfvanor och intressen. { -brand-short-name } blockerar många av dessa spårare och andra skadliga skript.
 protection-report-webpage-title = Säkerhetsöversikt
 protection-report-page-content-title = Säkerhetsöversikt
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } kan skydda din integritet bakom kulisserna medan du surfar. Detta är en personlig sammanfattning av dessa skydd, inklusive verktyg för att ta kontroll över din online-säkerhet.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } skyddar din integritet bakom kulisserna medan du surfar. Detta är en personlig sammanfattning av dessa skydd, inklusive verktyg för att ta kontroll över din online-säkerhet.
+protection-report-settings-link = Hantera dina integritets och säkerhetsinställningar
 etp-card-title-always = Förbättrat spårningsskydd: Alltid på
 etp-card-title-custom-not-blocking = Förbättrat spårningsskydd: Av
-etp-card-content-summary = När okända företag försöker följa dig hemligt på nätet stoppar { -brand-short-name } automatiskt många av dem.
+etp-card-content-description = { -brand-short-name } stoppar automatiskt företag från att i hemlighet följa dig på nätet.
 protection-report-etp-card-content-custom-not-blocking = Alla skydd är för närvarande avstängda. Välj vilka spårare som ska blockeras genom att hantera dina { -brand-short-name }-skyddsinställningar.
 protection-report-manage-protections = Hantera inställningar
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -58,8 +62,6 @@ fingerprinter-tab-title = Fingeravtrycksspårare
 fingerprinter-tab-content = Fingeravtrycksspårare samlar inställningar från din webbläsare och dator för att skapa en profil av dig. Med det här digitala fingeravtrycket kan de spåra dig på olika webbplatser. <a data-l10n-name="learn-more-link">Läs mer</a>
 cryptominer-tab-title = Kryptogrävare
 cryptominer-tab-content = Kryptogrävare använder ditt systems datakraft för att utvinna digitala pengar. Kryptogrävar-skript tömmer ditt batteri, slöar ner din dator och kan öka energiräkningen. <a data-l10n-name="learn-more-link">Läs mer</a>
-protections-close-button =
-    .aria-label = Stäng
 protections-close-button2 =
     .aria-label = Stäng
     .title = Stäng
@@ -120,6 +122,8 @@ monitor-link = Hur fungerar det
 monitor-header-content-no-account = Kontrollera { -monitor-brand-name } för att se om du har varit en del av ett känt dataintrång och få varningar om nya intrång.
 monitor-header-content-signed-in = { -monitor-brand-name } varnar dig om din information har dykt upp i ett känt dataintrång.
 monitor-sign-up = Registrera dig för intrångsvarningar
+monitor-sign-up-link = Registrera dig för intrångsvarningar
+    .title = Registrera dig för intrångsvarningar på { -monitor-brand-name }
 auto-scan = Skannas automatiskt idag
 monitor-emails-tooltip =
     .title = Visa övervakade e-postadresser på { -monitor-brand-short-name }
@@ -144,6 +148,14 @@ info-known-breaches-found =
        *[other] Kända dataintrång har avslöjat din information
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] Känt dataintrång markerat som löst
+       *[other] Kända dataintrång markerade som lösta
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -160,6 +172,41 @@ password-warning =
         [one] Lagrat lösenord kan ha avslöjats i ett intrång. Ändra detta lösenord för att nå en bättre säkerhet online. <a data-l10n-name="lockwise-link">Visa lagrade lösenord</a>
        *[other] Lagrade lösenord kan ha avslöjats i ett intrång. Ändra dessa lösenord för att nå en bättre säkerhet online. <a data-l10n-name="lockwise-link">Visa lagrade lösenord</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] Lösenord exponerat i olösta intrång
+       *[other] Lösenord exponerade i olösta intrång
+    }
+monitor-no-breaches-title = Goda nyheter!
+monitor-no-breaches-description = Du har inga kända intrång. Om det ändras, kommer vi att meddela dig.
+monitor-view-report-link = Visa rapport
+    .title = Lös intrång på { -monitor-brand-short-name }
+monitor-breaches-unresolved-title = Lös dina intrång
+monitor-breaches-unresolved-description = Efter att ha granskat information om intrånget och vidtagit åtgärder för att skydda din information kan du markera intrången som lösta.
+monitor-manage-breaches-link = Hantera intrång
+    .title = Hantera intrång på { -monitor-brand-short-name }
+monitor-breaches-resolved-title = Trevligt! Du har löst alla kända intrång.
+monitor-breaches-resolved-description = Om din e-postadress dyker upp i några nya kända intrång, kommer vi att meddela dig.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+        [one] { $numBreachesResolved } av { $numBreaches } intrång markerade som lösta
+       *[other] { $numBreachesResolved } av { $numBreaches } intrång markerade som lösta
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved }% färdig
+monitor-partial-breaches-motivation-title-start = Bra start!
+monitor-partial-breaches-motivation-title-middle = Fortsätt så!
+monitor-partial-breaches-motivation-title-end = Nästan klar! Fortsätt så.
+monitor-partial-breaches-motivation-description = Lös resten av dina intrång på { -monitor-brand-short-name }.
+monitor-resolve-breaches-link = Lös intrång
+    .title = Lös intrång på { -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

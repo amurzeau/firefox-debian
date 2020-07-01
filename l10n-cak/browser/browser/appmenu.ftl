@@ -5,11 +5,12 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = Tijik' pa Jun Chik Okik'amaya'l…
 appmenuitem-protection-report-title = Richinanem Chajinem
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Tatz'eta' ri ichinan rutzijol
+appmenuitem-protection-dashboard-title = Rupas taq Chajinïk
+appmenuitem-customize-mode =
+    .label = Tichinäx…
 
 ## Zoom Controls
 
@@ -22,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = Tixim Wakami
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Achike natzijoj
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = Tiya' rutzijol chi kij ch'aqa' chik taq samaj
+    .accesskey = s

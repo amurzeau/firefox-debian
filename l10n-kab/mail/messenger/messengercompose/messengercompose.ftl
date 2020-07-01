@@ -9,14 +9,6 @@
 remove-address-row-type = Kkes urti { $type }
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
-address-input-type =
-    { $count ->
-        [0] Urti n unekcum { $type } d ilem
-        [one] Urti n unekcum { $type } s yiwet n tensa
-       *[other] Urti n unekcum { $type } akked tensiwin { $count }
-    }
-#   $type (String) - the type of the addressing row
-#   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
         [0] { $type }
@@ -42,3 +34,26 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Awi ɣer unɣal uffir
     .accesskey = ɣ
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [1] Taceqquft yeddan { $count }
+            [one] Taceqquft yeddan { $count }
+           *[other] Ticeqqufin yeddan { $count }
+        }
+    .accesskey = m
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [1] Taceqquft yeddan { $count }
+            [one] Taceqquft yeddan { $count }
+           *[other] Taceqqufin yeddan { $count }
+        }
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+button-return-receipt =
+    .label = Awwaḍ
+    .tooltiptext = Suter anagi n wawwaḍ i yizen-a

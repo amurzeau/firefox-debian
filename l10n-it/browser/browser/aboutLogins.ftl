@@ -26,6 +26,7 @@ menu =
     .title = Apri menu
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Importa da un altro browser…
+about-logins-menu-menuitem-export-logins = Esporta credenziali…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Opzioni
@@ -101,29 +102,29 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
-# This message can be seen when attempting to edit a login in about:logins
-about-logins-edit-login-os-auth-dialog-message = Verificare la propria identità per modificare le credenziali salvate.
 # This message can be seen when attempting to edit a login in about:logins on Windows.
 about-logins-edit-login-os-auth-dialog-message-win = Per modificare queste credenziali, inserire le credenziali di accesso a Windows. Questo aiuta a garantire la sicurezza dei tuoi account.
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = modificare le credenziali salvate
 
-# This message can be seen when attempting to reveal a password in about:logins
-about-logins-reveal-password-os-auth-dialog-message = Verificare la propria identità per mostrare la password salvata.
 # This message can be seen when attempting to reveal a password in about:logins on Windows.
 about-logins-reveal-password-os-auth-dialog-message-win = Per visualizzare la password, inserire le credenziali di accesso a Windows. Questo aiuta a garantire la sicurezza dei tuoi account.
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = mostrare la password salvata
 
-# This message can be seen when attempting to copy a password in about:logins
-about-logins-copy-password-os-auth-dialog-message = Verificare la propria identità per copiare la password salvata.
 # This message can be seen when attempting to copy a password in about:logins on Windows.
 about-logins-copy-password-os-auth-dialog-message-win = Per copiare la password, inserire le credenziali di accesso a Windows. Questo aiuta a garantire la sicurezza dei tuoi account.
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = copiare la password salvata
+
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message-win = Per esportare le credenziali salvate, inserire le credenziali di accesso a Windows. Questo aiuta a garantire la sicurezza dei tuoi account.
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message-macosx = esportare credenziali e password salvate
 
 ## Master Password notification
 
@@ -159,6 +160,11 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Rimuovere queste credenziali?
 confirm-delete-dialog-message = Questa operazione non può essere annullata.
 about-logins-confirm-remove-dialog-confirm-button = Rimuovi
+
+about-logins-confirm-export-dialog-title = Esportazione credenziali e password
+about-logins-confirm-export-dialog-message = Le password verranno salvate come testo leggibile (ad esempio “Password123”). Chiunque abbia accesso al file esportato potrà vederle.
+about-logins-confirm-export-dialog-confirm-button = Esporta…
+
 confirm-discard-changes-dialog-title = Ignorare le modifiche non salvate?
 confirm-discard-changes-dialog-message = Tutte le modifiche non salvate andranno perse.
 confirm-discard-changes-dialog-confirm-button = Ignora
@@ -192,3 +198,19 @@ about-logins-vulnerable-alert-learn-more-link = Ulteriori informazioni
 about-logins-error-message-duplicate-login-with-link = È già presente un elemento per { $loginTitle } con lo stesso nome utente. <a data-l10n-name="duplicate-link">Passare all’elemento esistente?</a>
 # This is a generic error message.
 about-logins-error-message-default = Si è verificato un errore durante il salvataggio della password.
+
+## Login Export Dialog
+
+# Title of the file picker dialog
+about-logins-export-file-picker-title = Esportazione credenziali
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename = credenziali.csv
+about-logins-export-file-picker-export-button = Esporta
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-export-file-picker-csv-filter-title =
+  { PLATFORM() ->
+      [macos] Documento CSV
+     *[other] File CSV
+  }

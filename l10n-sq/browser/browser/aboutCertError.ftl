@@ -55,6 +55,10 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Varg dëshmish:
+open-in-new-window-for-csp-or-xfo-error = Hape Sajtin në Dritare të Re
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = Për të mbrojtur sigurinë tuaj, { $hostname } s’do ta lejojë { -brand-short-name }-in të shfaqë faqen, nëse e ka trupëzuar një sajt tjetër. Që të shihni këtë faqe, duhet ta hapni në një dritare tjetër.
 
 ## Messages used for certificate error titles
 
@@ -85,6 +89,7 @@ unknownSocketType-title = Përgjigje e papritur prej shërbyesit
 nssFailure2-title = Dështoi Lidhja e Sigurt
 cspBlocked-title = Bllokuar nga Rregulla Sigurie Lënde
 xfoBlocked-title = Bllokuar nga Rregulla mbi X-Frame-Options
+csp-xfo-error-title = { -brand-short-name }-i S’mund Ta Hapë Këtë Faqe
 corruptedContentError-title = Gabim nga Lëndë e Dëmtuar
 remoteXUL-title = XUL i Largët
 sslv3Used-title = S'arrin të Lidhet Në Mënyrë të Sigurt

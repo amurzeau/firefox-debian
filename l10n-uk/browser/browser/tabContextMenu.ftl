@@ -56,6 +56,18 @@ move-to-new-window =
 undo-close-tab =
     .label = Відновити закриту вкладку
     .accesskey = о
+tab-context-close-multiple-tabs =
+    .label = Закрити кілька вкладок
+    .accesskey = к
+tab-context-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Відновити закриту вкладку
+            [one] Відновити закриту вкладку
+            [few] Відновити закриті вкладки
+           *[many] Відновити закриті вкладки
+        }
+    .accesskey = В
 close-tab =
     .label = Закрити вкладку
     .accesskey = к

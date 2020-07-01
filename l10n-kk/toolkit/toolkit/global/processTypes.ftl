@@ -24,3 +24,7 @@ process-type-webisolated = Оқшауланған веб-мазмұны
 # process used to communicate with the GPU for
 # graphics acceleration
 process-type-gpu = GPU
+# process used to perform network operations
+process-type-socket = Сокет
+# process preallocated; may change to other types
+process-type-prealloc = Алдын-ала бөлінген

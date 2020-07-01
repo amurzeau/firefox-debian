@@ -15,3 +15,4 @@ accounts-auth-method = Método de autenticação
 accounts-default = Predefinição?
 identity-name = Identidade
 send-via-email = Enviar via email
+app-basics-telemetry = Dados de telemetria

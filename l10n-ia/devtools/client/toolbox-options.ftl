@@ -118,6 +118,9 @@ options-enable-remote-label = Activar le depuration remote
 options-enable-remote-tooltip =
     .title = Activar iste option permittera al instrumentos de disveloppamento de depurar un instantia remote como Firefox OS
 
+options-enable-remote-tooltip2 =
+    .title = Activar iste option consentira de depurar iste instantia de navigator a distantia
+
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = Activar le Service Workers via HTTP (quando le instrumentario es aperte)
 options-enable-service-workers-http-tooltip =

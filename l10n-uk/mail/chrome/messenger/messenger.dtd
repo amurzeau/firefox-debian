@@ -504,8 +504,8 @@
 <!ENTITY importCmd.accesskey "І">
 <!ENTITY clearRecentHistory.label "Очистити недавню історію…">
 <!ENTITY clearRecentHistory.accesskey "О">
-<!ENTITY accountManagerCmd2.label "Параметри облікового запису…">
-<!ENTITY accountManagerCmd2.accesskey "П">
+<!ENTITY accountManagerCmd2.label "Налаштування облікового запису">
+<!ENTITY accountManagerCmd2.accesskey "Н">
 <!-- LOCALIZATION NOTE (accountManagerCmdUnix.accesskey):
      Belongs to accountManagerCmd.label, which is placed under the Edit menu
      on Unix systems
@@ -850,7 +850,7 @@
      of its descendents. The user selects the folder using the same widget as the
      move to/copy to mechanism (via a series of popups).
   -->
-<!ENTITY columnPicker.applyToFolderAndChildren.label "Теки та нащадків…">
+<!ENTITY columnPicker.applyToFolderAndChildren.label "Теки та вкладених тек…">
 <!-- LOCALIZATION NOTE (columnPicker.thisFolder.label):
      This is used in the folder selection widget for the
      "columnPicker.applyToFolder.label" and

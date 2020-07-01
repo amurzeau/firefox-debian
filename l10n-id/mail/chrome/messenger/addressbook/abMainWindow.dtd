@@ -3,6 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY addressbookWindow.title                        "Buku Alamat">
+<!ENTITY blankResultsPaneMessage.label                  "Buku alamat ini menampilkan kontak hanya setelah pencarian">
 <!ENTITY localResultsOnlyMessage.label                  "Kontak dari buku alamat jarak jauh tidak ditampilkan hingga Anda mencarinya">
 
 <!-- File Menu -->
@@ -74,6 +75,7 @@
 <!-- LOCALIZATION NOTE (hideSwapFnLnUI) : DONT_TRANSLATE -->
 <!-- Swap FN/LN UI  Set to "false" to show swap fn/ln UI -->
 <!ENTITY hideSwapFnLnUI "true">
+<!ENTITY contactPropertiesMenu.label                    "Properti Kontak">
 
 <!-- View Menu -->
 <!ENTITY viewMenu.label                                 "Tampilan">
@@ -119,6 +121,7 @@ because displayed names don't have the comma in between. -->
 <!ENTITY importCmd.accesskey                            "I">
 <!ENTITY exportCmd.label                                "Ekspor…">
 <!ENTITY exportCmd.accesskey                            "E">
+<!ENTITY preferencesCmd2.label                          "Opsi">
 <!ENTITY preferencesCmdUnix.label                       "Pengaturan">
 <!ENTITY preferencesCmdUnix.accesskey                   "P">
 
@@ -127,6 +130,12 @@ because displayed names don't have the comma in between. -->
 <!ENTITY newContactButton.accesskey                     "K">
 <!ENTITY newlistButton.label                            "Daftar Baru">
 <!ENTITY newlistButton.accesskey                        "D">
+<!ENTITY editPropertiesButton.label                     "Sunting">
+<!ENTITY propertiesContext.label                        "Properti">
+<!ENTITY abPropertiesContext.label                      "Properti">
+<!ENTITY editContactContext.label                       "Sunting Kontak">
+<!ENTITY editMailingListContext.label                   "Sunting Daftar">
+<!ENTITY editMailingListContext.accesskey               "E">
 <!ENTITY newmsgButton.label                             "Tulis">
 <!ENTITY newmsgButton.accesskey                         "T">
 <!ENTITY newIM.label                                    "Pesan Instan">
@@ -139,12 +148,11 @@ because displayed names don't have the comma in between. -->
 <!ENTITY newContactButton.tooltip                       "Buat data kenalan baru">
 <!ENTITY newlistButton.tooltip                          "Buat daftar alamat baru">
 <!ENTITY editPropertiesButton.tooltip                   "Ubah item terpilih">
+<!ENTITY editAbPropertiesButton.tooltip                 "Sunting properti dari buku alamat yang dipilih">
+<!ENTITY editContactPropertiesButton.tooltip            "Sunting kontak terpilih">
 <!ENTITY newmsgButton.tooltip                           "Kirim email">
 <!ENTITY newIM.tooltip                                  "Kirim pesan instan atau chatting">
 <!ENTITY deleteButton2.tooltip                          "Hapus item terpilih">
-
-<!-- Dir Tree header -->
-<!ENTITY dirTreeHeader.label                            "Buku Alamat">
 
 <!-- Search Bar -->
 <!ENTITY SearchNameOrEmail.label                        "Nama atau Email">
@@ -154,11 +162,13 @@ because displayed names don't have the comma in between. -->
 <!ENTITY searchItem.title "Cari Cepat">
 
 <!-- Results Pane -->
+<!ENTITY Addrbook.label                                 "Buku Alamat">
 <!ENTITY GeneratedName.label                            "Nama">
 <!ENTITY GeneratedName.accesskey                        "N">
 <!ENTITY PrimaryEmail.label                             "Email">
 <!ENTITY PrimaryEmail.accesskey                         "E">
 <!ENTITY ChatName.label                                 "Nama Obrolan">
+<!ENTITY ChatName.accesskey                             "C">
 <!ENTITY Company.label                                  "Organisasi">
 <!ENTITY Company.accesskey                              "O">
 <!ENTITY NickName.label                                 "Nama alias">

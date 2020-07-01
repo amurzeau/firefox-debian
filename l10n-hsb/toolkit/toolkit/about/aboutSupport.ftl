@@ -116,6 +116,11 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumenty
 safe-mode-title = Wěsty modus spytać
 restart-in-safe-mode-label = Ze znjemóžnjenymi přidatkami startować…
+clear-startup-cache-title = Spytajće startowy pufrowak wuprózdnić
+clear-startup-cache-label = Startowy pufrowak wuprózdnić…
+startup-cache-dialog-title = Startowy pufrowak wuprózdnić
+startup-cache-dialog-body = Startujće { -brand-short-name } znowa, zo byšće startowy pufrowak wuprózdnił. To waše nastajenja njezměni abo rozšěrjenja njewotstroni, kotrež sće { -brand-short-name } přidał.
+restart-button-label = Znowa startować
 
 ## Media titles
 
@@ -123,6 +128,7 @@ audio-backend = Awdiobackend
 max-audio-channels = Maksimalna ličba kanalow
 channel-layout = Preferowane kanalowe wuhotowanje
 sample-rate = Preferowana wottasowanska rata
+roundtrip-latency = Wobběhowa latenca (standardne wotchilenje)
 media-title = Medije
 media-output-devices-title = Wudawanske graty
 media-input-devices-title = Zapodawanske graty

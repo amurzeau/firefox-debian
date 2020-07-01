@@ -18,8 +18,8 @@
 
 <!ENTITY cmd.uninstallAddon.label             "Malinstali">
 <!ENTITY cmd.uninstallAddon.accesskey         "l">
-<!ENTITY cmd.showPreferencesWin.label         "Elektebloj">
-<!ENTITY cmd.showPreferencesWin.tooltip       "Ŝanĝi la elekteblojn de tiu ĉi aldonaĵo">
+<!ENTITY cmd.showPreferencesWin.label         "Preferoj">
+<!ENTITY cmd.showPreferencesWin.tooltip       "Ŝanĝi la preferojn de tiu ĉi aldonaĵo">
 <!ENTITY cmd.showPreferencesUnix.label        "Preferoj">
 <!ENTITY cmd.showPreferencesUnix.tooltip      "Ŝanĝi la preferojn de tiu ĉi aldonaĵo">
 
@@ -68,4 +68,6 @@
 <!ENTITY addon.createdBy.label                "De ">
 
 <!ENTITY settings.path.button.label           "Esplori…">
+
+<!-- addon actions -->
 <!ENTITY setting.learnmore "Pli da informo…">

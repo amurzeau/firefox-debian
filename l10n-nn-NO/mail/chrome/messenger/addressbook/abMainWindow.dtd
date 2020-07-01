@@ -18,6 +18,8 @@
 <!ENTITY newListCmd.accesskey                           "E">
 <!ENTITY newAddressBookCmd.label                        "Adressebok …">
 <!ENTITY newAddressBookCmd.accesskey                    "d">
+<!ENTITY newCardDAVBookCmd.label                        "CardDAV-adressebok...">
+<!ENTITY newCardDAVBookCmd.accesskey                    "V">
 <!ENTITY newLDAPDirectoryCmd.label                      "LDAP-katalog …">
 <!ENTITY newLDAPDirectoryCmd.accesskey                  "L">
 <!ENTITY newMessageCmd.label                            "Melding">
@@ -164,6 +166,7 @@ because displayed names don't have the comma in between. -->
 <!ENTITY deleteButton2.accesskey                        "S">
 
 <!-- Address Book Toolbar Tooltips -->
+<!ENTITY columnChooser.tooltip                          "Vel kolonner å vise">
 <!ENTITY newContactButton.tooltip                       "Opprett eit nytt adressekort">
 <!ENTITY newlistButton.tooltip                          "Opprett ei ny liste">
 <!ENTITY editPropertiesButton.tooltip                   "Rediger valde element">
@@ -173,9 +176,6 @@ because displayed names don't have the comma in between. -->
 <!ENTITY newmsgButton.tooltip                           "Send ein e-post">
 <!ENTITY newIM.tooltip                                  "Send ei melding eller chat">
 <!ENTITY deleteButton2.tooltip                          "Slett valde element">
-
-<!-- Dir Tree header -->
-<!ENTITY dirTreeHeader.label                            "Adressebøker">
 
 <!-- Search Bar -->
 <!ENTITY SearchNameOrEmail.label                        "Namn eller e-post">

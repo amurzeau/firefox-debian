@@ -32,6 +32,8 @@ inactive-css-not-inline-or-tablecell = <strong>{ $property }</strong>-ը չու�
 inactive-css-property-because-of-display = <strong>{ $property }</strong>-ը չունի որևէ ազդեցություն այս տարրի վրա, քանզի այն ունի <strong>{ $display }</strong>-ի ցուցադրում։
 inactive-css-not-display-block-on-floated = <strong>ցուցադրման</strong> արժեքը փոխվել է ենթահամակարգի կողմից <strong>արգելափակել</strong>, որովհետև բաղադրիչը <strong>տեղաշարժվել է<strong>։
 inactive-css-property-is-impossible-to-override-in-visited = <strong>․այցելված</strong> սահմանափակման պատճառով անհնար է վերագրել <strong>{ $property }</strong>։
+inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> չունի որևէ ազդեցություն այս տարրի վրա, քանզի այն ցանցային բաղադրիչ չէ։
+inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> չունի որևէ ազդեցություն այս տարրի վրա, քանզի <strong>overflow:hidden</strong>-ը կայված չէ:
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -51,3 +53,5 @@ inactive-css-not-inline-or-tablecell-fix = Փորձե<strong>ցուցադրել�
 inactive-css-non-replaced-inline-or-table-row-or-row-group-fix = Փորձեք ավելացնել <strong>ցուցադրել․ներտողային-արգելափակումը</strong> կամ <strong>ցուցադրել․արգելափակումը</strong>։ { learn-more }
 inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Փորձեք ավելացնել <strong>ցուցադրել․ներտողային-արգելափակումը</strong>։ { learn-more }
 inactive-css-not-display-block-on-floated-fix = Փորձեք հեռացնել <strong>լողանցումը</strong> կամ ավելացնել <strong>ցուցադրման․արգելափակումը</strong>։ { learn-more }
+inactive-css-position-property-on-unpositioned-box-fix = Փորձեք կարգավորել իր </ strong>դիրքի</ strong> հատկությունը մեկ այլում, քան <strong>static</strong>-ը:{ learn-more }
+inactive-text-overflow-when-no-overflow-fix = Փորձեք ավելացնել <strong>overflow:hidden</strong>. { learn-more }

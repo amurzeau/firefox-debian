@@ -84,12 +84,13 @@ newtab-menu-delete-history = 기록에서 삭제
 newtab-menu-save-to-pocket = { -pocket-brand-name }에 저장
 newtab-menu-delete-pocket = { -pocket-brand-name }에서 삭제
 newtab-menu-archive-pocket = { -pocket-brand-name }에 보관
-newtab-menu-show-privacy-info = 우리의 스폰서와 개인정보 보호
+newtab-menu-show-privacy-info = 우리의 스폰서와 개인 정보 보호
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = 완료
-newtab-privacy-modal-header = 개인정보는 중요합니다.
+newtab-privacy-modal-button-manage = 후원 콘텐츠 설정 관리
+newtab-privacy-modal-header = 개인 정보는 중요합니다.
 newtab-privacy-modal-paragraph-2 =
     매력적인 이야기를 정리해서 보여주는 것 뿐만 아니라, 엄선된 스폰서로 부터
     관련성 높은 콘텐츠를 보여줍니다. 안심하세요. <strong>사용자의 탐색 데이터는 
@@ -136,6 +137,10 @@ newtab-label-download = 다운로드됨
 # Variables:
 #  $sponsorOrSource (String): This is the name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · 후원
+# This string is used at the bottom of story cards to indicate sponsored content
+# Variables:
+#  $sponsor (String): This is the name of a sponsor
+newtab-label-sponsored-by = { $sponsor } 후원
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.

@@ -26,3 +26,5 @@ process-type-webisolated = Izolita enhavo de retejoj
 process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Konektingo
+# process preallocated; may change to other types
+process-type-prealloc = Antaŭe asignita

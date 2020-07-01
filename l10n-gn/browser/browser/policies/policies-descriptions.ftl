@@ -29,7 +29,7 @@ policy-DisableBuiltinPDFViewer = Eipe’aite PDF.js, PDF jehechaha oĩva { -bran
 policy-DisableDefaultBrowserAgent = Omboyke pe kundahára ijypyguáva oñepyrũvo hembiapo. Kóva ojokupyty Windows ndive añoite; ambue plataforma ndorekói hesegua.
 policy-DisableDeveloperTools = Ejoko ñangarekohára rembipurúpe jeike.
 policy-DisableFeedbackCommands = Eipe’a mbohapeha emondo hag̃ua neñe’ẽ pytyvõha poravorã guive (Emondo neñe’ẽ ha emomarandu tenda imarãva).
-policy-DisableFirefoxAccounts = Eipe’a mba'epytyvõrã { -fxaccount-brand-name } pegua, oĩhápe avei Sync.
+policy-DisableFirefoxAccounts = Eipe’a mba’epytyvõrã { -fxaccount-brand-name } pegua, oĩhápe avei Sync.
 # Firefox Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = Eipe’a Firefox Screenshots rembiapoite.
 policy-DisableFirefoxStudies = Ani eheja { -brand-short-name } omomba’apo ñembokatupyry.
@@ -45,7 +45,7 @@ policy-DisableSafeMode = Eipe’a tembiapoite emoñepyrũ hag̃ua tekorosã rek�
 policy-DisableSecurityBypass = Ani eheja puruhárape ohejareívo tekorosã rehegua.
 policy-DisableSetAsDesktopBackground = Eipe’a pe poravorã mbohekopyréva mba’erechaha ruguarã ta’angápe g̃uarãva.
 policy-DisableSystemAddonUpdate = Ani eheja kundahárape omohenda ha ombohekopyahu apopyvusu moimbaha.
-policy-DisableTelemetry = Eipe'aite Telemetría.
+policy-DisableTelemetry = Eipe’aite Telemetría.
 policy-DisplayBookmarksToolbar = Ehechauka Techaukaha rembipuru renda ijypykue rupi.
 policy-DisplayMenuBar = Ehechauka Poravorã renda ijypykue rupi.
 policy-DNSOverHTTPS = Emboheko DNS pe HTTPS ári.
@@ -63,6 +63,7 @@ policy-ExtensionSettings = Eñangareko opaite mba’e jepysokue ñemohendáre.
 policy-ExtensionUpdate = Embojuruja térã eipe’a ñembohekopyahu ijeheguíva jepysokue rehegua.
 policy-FirefoxHome = Emboheko Firefox ñepyrũ.
 policy-FlashPlugin = Emoneĩ térã embotove mboguejyrã’i Flash jepuru.
+policy-Handlers = Emboheko tembipuru’i ñangarekoha ypykuegua.
 policy-HardwareAcceleration = Japúramo, eipe’a hardware mbopya’eha.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Emopyenda ha ejoko ejaposẽramo kuatiarogue ñepyrũha.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Ejevy SameSite reko gu
 ##
 
 policy-LocalFileLinks = Emoneĩ ñanduti renda moha’eñopyrépe ojuajúvo marandurenda pypeguáva.
+policy-MasterPassword = Ejerure térã emboyke ñe’ẽñemi ha’etéva jepuru.
 policy-NetworkPrediction = Embojuruja térã eipe’a ñanduti kuaapy (DNS oheka mboyve).
 policy-NewTabPage = Emyandy ha embogue kuatiarogue Tendayke Pyahu.
 policy-NoDefaultBookmarks = Eipe’a techaukaha ijypyguáva ñemoheñói oikehápe { -brand-short-name }, ha umi techaukaha ha’evéva (teramoĩ ojehecha ha ojehupiramovéva). Kuaarã: ko purureko oiko eipurúvo mba’ete tembiapo ñepyrũgua mboyve añoite.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Embojuruja ñe’ẽñemi ñongatu ñe’ẽñem
 # PDF.js and PDF should not be translated
 policy-PDFjs = Eipe’a térã emboheko PDF.js, PDF jehechaha oĩva { -brand-short-name } ryepýpe.
 policy-Permissions2 = Emboheko ñemoneĩ ta’anganohẽha, ñe’ẽatãha, tendaite, marandu’í ha ñembohetápe g̃uarã.
+policy-PictureInPicture = Emyandy térã embogue Picture-in-Picture.
 policy-PopupBlocking = Emoneĩ ndahetái ñanduti rendápe ohechaukávo ovetã iñapysẽva ijypykue rupi.
 policy-Preferences = Emboheko ha ejoko tepykue jeguerohoryvéva aty’ípe g̃uarã.
 policy-PromptForDownloadLocation = Eporandu moõpa eñongatúta marandurenda emboguejykuévo.

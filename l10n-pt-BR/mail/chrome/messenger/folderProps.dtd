@@ -21,9 +21,9 @@
 <!ENTITY retentionUseAccount.accesskey "U">
 <!ENTITY daysOld.label "dias">
 <!ENTITY message.label "mensagens">
-<!ENTITY retentionCleanup.label "Para recuperar espaço em disco, mensagens antigas podem ser permanentemente excluídas.">
-<!ENTITY retentionCleanupImap.label "Para recuperar espaço em disco, mensagens antigas podem ser permanentemente excluídas (tanto as cópias locais como as originais no servidor remoto).">
-<!ENTITY retentionCleanupPop.label "Para recuperar espaço em disco, mensagens antigas podem ser permanentemente excluídas (incluindo as originais no servidor remoto).">
+<!ENTITY retentionCleanup.label "Para recuperar espaço em disco, mensagens antigas podem ser excluídas permanentemente.">
+<!ENTITY retentionCleanupImap.label "Para recuperar espaço em disco, mensagens antigas podem ser excluídas permanentemente, tanto cópias locais como originais no servidor remoto.">
+<!ENTITY retentionCleanupPop.label "Para recuperar espaço em disco, mensagens antigas podem ser excluídas permanentemente, incluindo originais no servidor remoto.">
 <!ENTITY retentionDeleteMsg.label "Excluir mensagens com mais de">
 <!ENTITY retentionDeleteMsg.accesskey "x">
 <!ENTITY retentionKeepAll.label "Não excluir nenhuma mensagem">
@@ -49,6 +49,9 @@
 
 <!ENTITY folderProps.name.label                  "Nome:">
 <!ENTITY folderProps.name.accesskey              "N">
+<!ENTITY folderProps.color.label                 "Cor do ícone:">
+<!ENTITY folderProps.color.accesskey             "C">
+<!ENTITY folderProps.reset.tooltip               "Restaurar cor padrão">
 <!ENTITY folderProps.location.label              "Local:">
 <!ENTITY folderProps.location.accesskey          "E">
 
@@ -56,6 +59,7 @@
 <!ENTITY privileges.button.label                 "Privilégios…">
 <!ENTITY privileges.button.accesskey             "D">
 <!ENTITY permissionsDesc.label                   "Você tem as seguintes permissões:">
+<!ENTITY folderOtherUsers.label                  "Outros com acesso a esta pasta:">
 <!ENTITY folderType.label                        "Tipo da pasta:">
 
 <!ENTITY folderQuotaTab.label                    "Cota">

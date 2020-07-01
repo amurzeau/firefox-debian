@@ -55,6 +55,10 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Rangkaian sertifikat:
+open-in-new-window-for-csp-or-xfo-error = Buka Situs di Jendela Baru
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = Untuk melindungi keamanan Anda, { $hostname } tidak akan mengizinkan { -brand-short-name } untuk menampilkan laman jika situs lain telah menyematkannya. Untuk melihat laman ini, Anda harus membukanya di jendela baru.
 
 ## Messages used for certificate error titles
 
@@ -85,6 +89,7 @@ unknownSocketType-title = Jawaban yang tidak diharapkan dari server
 nssFailure2-title = Sambungan Aman Gagal
 cspBlocked-title = Diblokir oleh Kebijakan Keamanan Konten
 xfoBlocked-title = Diblokir oleh Kebijakan X-Frame-Options
+csp-xfo-error-title = { -brand-short-name } Tidak Dapat Membuka Laman Ini
 corruptedContentError-title = Galat Konten Rusak
 remoteXUL-title = XUL Jarak Jauh
 sslv3Used-title = Gagal Tersambung dengan Aman

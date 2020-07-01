@@ -5,17 +5,22 @@
 blocklist-window =
     .title = Doggi Daaƴol
     .style = width: 55em
-blocklist-desc = Aɗa waawi suɓaade doggol { -brand-short-name } foti huutoraade ngam daaƴde Geɗe Geese baawɗe rewindaade dille peeragol maa.
+
+blocklist-description = Suɓo doggol { -brand-short-name } ina walla e daaƴde ñukkinde ceŋiiɗe. Totti doggi ɗi ko <a data-l10n-name="disconnect-link" title="Disconnect"> Seŋto</a>
 blocklist-close-key =
     .key = w
+
 blocklist-treehead-list =
     .label = Doggol
+
 blocklist-button-cancel =
     .label = Haaytu
     .accesskey = H
+
 blocklist-button-ok =
     .label = Danndu bayle
     .accesskey = S
+
 # This template constructs the name of the block list in the block lists dialog.
 # It combines the list name and description.
 # e.g. "Standard (Recommended). This list does a pretty good job."
@@ -24,7 +29,8 @@ blocklist-button-ok =
 #   $listName {string, "Standard (Recommended)."} - List name.
 #   $description {string, "This list does a pretty good job."} - Description of the list.
 blocklist-item-list-template = { $listName } { $description }
-blocklist-item-moz-std-name = Seŋtu.am ndeenka koyka (Ena wasiyaa).
-blocklist-item-moz-std-desc = Yamir won e dewindorɗe ngam lowe mbaawa dogde no haanirta.
-blocklist-item-moz-full-name = Seŋtu.am ndeenka tekkuka.
-blocklist-item-moz-full-desc = Faloto dewindorɗe ganndaaɗe. Won e lowe maa mbaɗ caɗe yilleede.
+
+blocklist-item-moz-std-listName = Tolno 1 doggol daaƴol
+blocklist-item-moz-std-description = Ina yamira won e ñukkinde helde lowe gese
+blocklist-item-moz-full-listName = Tolno 2 doggol daaƴol
+blocklist-item-moz-full-description = Ina daaƴa ñukkinde teskaaɗe. Ina waawi won e lowe geese e loowdi mbaasa loowtude no haanirta nii.

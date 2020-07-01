@@ -87,9 +87,15 @@ security-view-identity-domain =
     .value = តំបន់បណ្ដាញ៖
 security-view-identity-verifier =
     .value = ផ្ទៀងផ្ទាត់​ដោយ៖
+security-view-identity-validity =
+    .value = ផុត​កំណត់​នៅ​ថ្ងៃ៖
 security-view-privacy =
     .value = ភាព​ឯកជន & ប្រវត្តិ
 security-view-privacy-history-value = តើ​ខ្ញុំ​បាន​ចូល​ទស្សនា​តំបន់បណ្ដាញ​នេះ​មុន​ថ្ងៃនេះ​ឬ ?
+security-view-privacy-sitedata-value = តើវិបសាយនេះរក្សាទុកព័ត៌មាននៅក្នុងកុំព្យូទ័ររបស់ខ្ញុំទេ?
+security-view-privacy-clearsitedata =
+    .label = ជម្រះខូឃី និងទិន្នន័យគេហទំព័រ
+    .accesskey = ជ
 security-view-privacy-passwords-value = តើ​ខ្ញុំ​បាន​រក្សាទុក​ពាក្យសម្ងាត់​សម្រាប់​តំបន់បណ្ដាញ​នេះ​ឬ ?
 security-view-privacy-viewpasswords =
     .label = មើល​ពាក្យ​សម្ងាត់​ដែល​បាន​រក្សា​ទុក
@@ -105,6 +111,10 @@ help-button =
 ##   $value (number) - Amount of data being stored
 ##   $unit (string) - The unit of data being stored (Usually KB)
 
+security-site-data-cookies = បាទ/ចាស ខូឃីនិងទិន្នន័យគេហទំព័រ { $value } { $unit }
+security-site-data-only = បាទ/ចាស ទិន្នន័យគេហទំព័រ { $value } { $unit }
+security-site-data-cookies-only = បាទ/ចាស ខូឃី
+security-site-data-no = ទេ
 image-size-unknown = មិន​ស្គាល់
 not-set-verified-by = មិន​ត្រូវ​បាន​បញ្ជាក់
 page-info-not-specified =

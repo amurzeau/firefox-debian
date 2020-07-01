@@ -101,8 +101,8 @@ menu-view-full-zoom-reduce =
     .label = Ch'utinarisaxïk
     .accesskey = C
 menu-view-full-zoom-actual-size =
-    .label = Qitzij Runimilem
-    .accesskey = Q
+    .label = Runimilem Wakami
+    .accesskey = W
 menu-view-full-zoom-toggle =
     .label = Tinimirisäx xa xe ri tz'ib'
     .accesskey = t
@@ -233,7 +233,7 @@ menu-tools-layout-debugger =
 menu-window-menu =
     .label = Window
 menu-window-bring-all-to-front =
-    .label = Ruk'amik chuwäch ronojel
+    .label = Tik'am pe Ronojel Chuwa
 
 ## Help Menu
 

@@ -55,6 +55,7 @@ cert-error-details-hsts-label = សុវត្ថិភាព​ដឹកជញ
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = ការ​ខ្ទាស់​កូន​សោ​សាធារណៈ HTTP៖ { $hasHPKP }
 cert-error-details-cert-chain-label = ច្រវាក់​​វិញ្ញាបនបត្រ៖
+open-in-new-window-for-csp-or-xfo-error = បើក​គេហទំព័រ​នៅ​ក្នុង​ផ្ទាំង​ថ្មី
 
 ## Messages used for certificate error titles
 

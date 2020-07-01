@@ -70,7 +70,7 @@
 <!ENTITY fontCourier.accesskey "c">
 
 <!-- Font Size SubMenu -->
-<!ENTITY FontSizeSelect.tooltip "글자 크기 선택">
+<!ENTITY FontSizeSelect.tooltip "글꼴 크기 선택">
 <!ENTITY decreaseFontSize.label "작게">
 <!ENTITY decreaseFontSize.accesskey "r">
 <!ENTITY decrementFontSize.key "-">
@@ -294,6 +294,7 @@
 <!ENTITY findToolbarCmd.tooltip "페이지에서 단어 찾기">
 <!ENTITY spellToolbarCmd.label "맞춤법">
 <!ENTITY spellToolbarCmd.tooltip "선택된 모든 페이지에서 맞춤법 검사">
+
 <!ENTITY imageToolbarCmd.label "이미지">
 <!ENTITY imageToolbarCmd.tooltip "새 이미지을 삽입하거나 선택된 이미지 편집">
 <!ENTITY hruleToolbarCmd.label "가로선">
@@ -306,14 +307,13 @@
 <!ENTITY anchorToolbarCmd.tooltip "새 내부 링크를 삽입하거나 선택된 내부 링크 편집">
 <!ENTITY TextColorButton.tooltip "글자색 선택">
 <!ENTITY BackgroundColorButton.tooltip "배경색 선택">
-<!ENTITY throbber.tooltip "&vendorShortName; 홈 페이지 가기">
 <!ENTITY throbber.tooltip2 "&brandShortName; 홈페이지 가기">
 <!ENTITY HighlightColorButton.tooltip "글자 강조색 선택">
 
 <!-- Editor toolbar -->
-<!ENTITY absoluteFontSizeToolbarCmd.tooltip "폰트 크기 설정">
-<!ENTITY decreaseFontSizeToolbarCmd.tooltip "글자 작게">
-<!ENTITY increaseFontSizeToolbarCmd.tooltip "글자 크게">
+<!ENTITY absoluteFontSizeToolbarCmd.tooltip "글꼴 크기 설정">
+<!ENTITY decreaseFontSizeToolbarCmd.tooltip "글꼴 크기 작게">
+<!ENTITY increaseFontSizeToolbarCmd.tooltip "글꼴 크기 크게">
 <!ENTITY boldToolbarCmd.tooltip "굵게">
 <!ENTITY italicToolbarCmd.tooltip "기울임">
 <!ENTITY underlineToolbarCmd.tooltip "밑줄">

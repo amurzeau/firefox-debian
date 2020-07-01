@@ -21,7 +21,7 @@ cfr-doorhanger-pintab-ok-button = 이 탭 고정
     .accesskey = P
 cfr-doorhanger-extension-manage-settings-button = 추천 설정 관리
     .accesskey = M
-cfr-doorhanger-extension-never-show-recommendation = 이 추천을 보여주지 않음
+cfr-doorhanger-extension-never-show-recommendation = 이 추천을 표시하지 않음
     .accesskey = S
 cfr-doorhanger-extension-learn-more-link = 더 알아보기
 # This string is used on a new line below the add-on name
@@ -116,10 +116,6 @@ cfr-whatsnew-lockwise-take-link-text = 앱 받기
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = 주소 표시줄에 더 적게 입력하고 더 많이 찾기
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = 주소 표시줄에서 한 번 클릭하여 많이 사용하는 사이트로 이동하십시오. { $searchEngineName }의 결과와 방문 기록을 통해 더 빨리 찾을 수 있습니다.
-cfr-whatsnew-searchbar-body-generic = 주소 표시줄에서 한 번 클릭하여 많이 사용하는 사이트로 이동하십시오. 방문 기록의 검색 결과를 통해 더 빨리 찾을 수 있습니다.
 cfr-whatsnew-searchbar-body-topsites = 이제 주소 표시줄을 선택하면, 상자가 확장되어 상위 사이트에 대한 링크가 표시됩니다.
 cfr-whatsnew-searchbar-icon-alt-text = 돋보기 아이콘
 
@@ -225,3 +221,15 @@ cfr-whatsnew-passwords-icon-alt = 취약한 비밀번호 키 아이콘
 cfr-whatsnew-pip-fullscreen-header = 화면 속 화면을 전체 화면에서 보세요
 cfr-whatsnew-pip-fullscreen-body = 동영상을 떠 있는 창에 띄웠을때, 해당 창을 더블 클릭해서 전체 화면으로 전환할 수 있습니다.
 cfr-whatsnew-pip-fullscreen-icon-alt = 화면 속 화면 아이콘
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = 보호 기능을 한 눈에 확인
+cfr-whatsnew-protections-body = 보호 대시보드에는 데이터 유출 및 비밀번호 관리에 대한 요약 보고서가 포함되어 있습니다. 이제 해결된 유출 수를 추적하고 저장된 비밀번호 중 데이터 유출에 노출된 비밀번호가 있는지 확인할 수 있습니다.
+cfr-whatsnew-protections-cta-link = 보호 대시보드 보기
+cfr-whatsnew-protections-icon-alt = 방패 아이콘
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = 더 나은 PDF 경험
+cfr-whatsnew-better-pdf-body = 이제 PDF 문서가 { -brand-short-name }에서 직접 열리므로 워크플로에 쉽게 접근할 수 있습니다.

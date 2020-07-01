@@ -53,13 +53,13 @@ menu-file-import-from-another-browser =
     .label = Egueruka ambue kundaháragui…
     .accesskey = I
 menu-file-go-offline =
-    .label = Mba'apo ñanduti'ỹre
+    .label = Mba’apo ñanduti’ỹre
     .accesskey = k
 
 ## Edit Menu
 
 menu-edit =
-    .label = Mbosako'i
+    .label = Mbosako’i
     .accesskey = E
 menu-edit-find-on =
     .label = Ko kuatiaroguépe jeheka…
@@ -68,7 +68,7 @@ menu-edit-find-again =
     .label = Jeheka jey
     .accesskey = g
 menu-edit-bidi-switch-text-direction =
-    .label = Kundaharape moñe'ẽrã moambue
+    .label = Kundaharape moñe’ẽrã moambue
     .accesskey = w
 
 ## View Menu
@@ -80,7 +80,7 @@ menu-view-toolbars-menu =
     .label = Tembiporu renda
     .accesskey = T
 menu-view-customize-toolbar =
-    .label = Ñemomba'e…
+    .label = Ñemomba’e…
     .accesskey = C
 menu-view-sidebar =
     .label = Ta'ãngarupa yke
@@ -104,32 +104,32 @@ menu-view-full-zoom-actual-size =
     .label = Tuichakuete
     .accesskey = A
 menu-view-full-zoom-toggle =
-    .label = Moñe'ẽrã año mongakuaa
+    .label = Moñe’ẽrã año mongakuaa
     .accesskey = T
 menu-view-page-style-menu =
     .label = Kuatiarogue mbohekoha
     .accesskey = y
 menu-view-page-style-no-style =
-    .label = Mboheko'ỹva
-    .accesskey = N
+    .label = Mboheko’ỹva
+    .accesskey = n
 menu-view-page-basic-style =
     .label = Kuatiarogue mbohekoha ypygua
     .accesskey = B
 menu-view-charset =
-    .label = Moñe'ẽrã mbopapapy
+    .label = Moñe’ẽrã mbopapapy
     .accesskey = c
 
 ## These should match what Safari and other Apple applications
 ## use on macOS.
 
 menu-view-enter-full-screen =
-    .label = Mba'erechaha tuichavévape jeike
+    .label = Mba’erechaha tuichavévape jeike
     .accesskey = F
 menu-view-exit-full-screen =
-    .label = Mba'erechaha tuichavévagui ñesẽ
+    .label = Mba’erechaha tuichavévagui ñesẽ
     .accesskey = F
 menu-view-full-screen =
-    .label = Mba'erechaha tuichavéva
+    .label = Mba’erechaha tuichavéva
     .accesskey = F
 
 ##
@@ -171,7 +171,7 @@ menu-bookmarks-show-all =
 menu-bookmark-this-page =
     .label = Kuatiarogue mbojoapy
 menu-bookmark-edit =
-    .label = Ko techaukaha mbosako'i
+    .label = Ko techaukaha mbosako’i
 menu-bookmarks-all-tabs =
     .label = Tendayke mbojoapy techaukaháre…
 menu-bookmarks-toolbar =
@@ -199,7 +199,7 @@ menu-tools-turn-on-sync =
     .label = Emyandy { -sync-brand-short-name }...
     .accesskey = n
 menu-tools-sync-now =
-    .label = Embojuehe ko'ág̃a
+    .label = Embojuehe ko’ág̃a
     .accesskey = S
 menu-tools-fxa-re-auth =
     .label = Eikejey { -brand-product-name }-pe...
@@ -225,7 +225,7 @@ menu-preferences =
            *[other] n
         }
 menu-tools-layout-debugger =
-    .label = Moha'ãnga mopotĩha
+    .label = Moha’ãnga mopotĩha
     .accesskey = L
 
 ## Window Menu
@@ -267,8 +267,8 @@ menu-help-safe-mode-with-addons =
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.
 menu-help-report-deceptive-site =
-    .label = Emombe'u ñandutirenda ivaiha...
-    .accesskey = d
+    .label = Emombe’u ñandutirenda ivaiha…
+    .accesskey = D
 menu-help-not-deceptive =
-    .label = Kóva ndaha'éi tenda ombotavyséva…
+    .label = Kóva ndaha’éi tenda ombotavyséva…
     .accesskey = d

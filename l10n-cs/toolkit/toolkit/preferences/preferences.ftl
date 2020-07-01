@@ -22,6 +22,7 @@ set-password-new-password = Zadejte nové heslo:
 set-password-reenter-password = Zopakujte heslo:
 set-password-meter = Kvalita hesla
 set-password-meter-loading = Načítání
+master-password-admin = Správce vašeho systému vyžaduje před ukládání hesel nastavení hlavního hesla.
 master-password-description = Hlavní heslo slouží k ochraně citlivých údajů, jako jsou třeba hesla k webovým účtům. Pokud si vytvoříte hlavní heslo, budete na něj dotázáni jednou během každé relace, pokud bude { -brand-short-name } potřebovat pracovat s uloženými údaji chráněnými tímto heslem.
 master-password-warning = Ujistěte se, že si toto hlavní heslo opravdu pamatujete. Bez jeho znalosti nebudete moci přistupovat k uloženým údajům chráněným tímto heslem.
 remove-password =

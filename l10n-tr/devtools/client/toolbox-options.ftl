@@ -103,6 +103,8 @@ options-enable-chrome-tooltip =
 options-enable-remote-label = Uzaktan hata ayıklamayı etkinleştir
 options-enable-remote-tooltip =
     .title = Bu seçeneği açmak, geliştirici araçlarının Firefox OS gibi uzaktaki bir ortamda hata ayıklamasına olanak tanır
+options-enable-remote-tooltip2 =
+    .title = Bu seçeneği açarsanız bu tarayıcıda uzaktan hata ayıklamaya izin verilir
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = HTTP üzerinden Service Worker’ları etkinleştir (araç kutusu açıkken)
 options-enable-service-workers-http-tooltip =
@@ -113,11 +115,6 @@ options-source-maps-tooltip =
     .title = Bu seçeneği etkinleştirirseniz kaynaklar araçlarda haritalanacaktır.
 # The message shown for settings that trigger page reload
 options-context-triggers-page-refresh = * Yalnızca bu oturumda geçerli, sayfayı yeniden yükler
-
-##
-
-# The heading for the Debugger section
-options-debugger-label = Hata ayıklayıcı
 # The label for the checkbox that toggles the display of the platform data in the
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config
 options-show-platform-data-label = Gecko platform verilerini göster

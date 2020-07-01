@@ -26,3 +26,5 @@ process-type-webisolated = Rupam K'amaya'l pa Mejmïk
 process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Chuq'b'äl
+# process preallocated; may change to other types
+process-type-prealloc = Ya'on chik chi re

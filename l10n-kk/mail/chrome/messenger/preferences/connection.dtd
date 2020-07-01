@@ -23,6 +23,8 @@
 <!ENTITY  http.accesskey                "H">
 <!ENTITY  ssl.label                     "SSL проксиі:">
 <!ENTITY  ssl.accesskey                 "S">
+<!ENTITY  https.label                   "HTTP прокси:">
+<!ENTITY  https.accesskey               "с">
 <!ENTITY  socks.label                   "SOCKS хосты:">
 <!ENTITY  socks.accesskey               "C">
 <!ENTITY  socks4.label                  "SOCKS 4">
@@ -40,6 +42,12 @@
 <!ENTITY  noproxyExplain.label          "Мысалы: .mozilla.org, .net.nz, 192.168.1.0/24">
 <!ENTITY  shareproxy.label              "Бұл проксиді барлық хаттамалар үшін қолдану">
 <!ENTITY  shareproxy.accesskey          "к">
+<!-- LOCALIZATION NOTE (noproxyLocalhostDesc.label): Do not translate
+  localhost, 127.0.0.1 and ::1.
+-->
+<!ENTITY  noproxyLocalhostDesc.label    "localhost, 127.0.0.1, және ::1 адрестеріне байланыстар проксиді қолданбайды.">
+<!ENTITY  proxyHttpSharing.label        "HTTPS үшін де бұл проксиді қолдану">
+<!ENTITY  proxyHttpSharing.accesskey    "к">
 <!ENTITY  autologinproxy.label          "Пароль сақталып тұрса, аутентификацияны сұрамау">
 <!ENTITY  autologinproxy.accesskey      "и">
 <!ENTITY  autologinproxy.tooltip        "Бұл баптау тіркелгі ақпараты сақталған прокси серверлерде тыныш аутентификацияны жасайды. Аутентификация сәтсіз болса, тіркелгі ақпараты сізден сұралады.">
@@ -47,12 +55,4 @@
 <!ENTITY  socksRemoteDNS.accesskey      "д">
 <!ENTITY  dnsOverHttps.label            "HTTPS арқылы DNS іске қосу">
 <!ENTITY  dnsOverHttps.accesskey        "е">
-<!ENTITY  dnsOverHttpsUrl.label         "URL сілтемесі">
-<!ENTITY  dnsOverHttpsUrl.accesskey     "с">
-<!ENTITY  dnsOverHttpsUrl.tooltip       "HTTPS арқылы DNS шешу үшін URL сілтемесі">
-<!ENTITY  dnsOverHttpsUrlDefault.label     "Бастапқысын қолдану">
-<!ENTITY  dnsOverHttpsUrlDefault.accesskey "ы">
 <!ENTITY  dnsOverHttpsUrlDefault.tooltip   "HTTPS арқылы DNS шешу үшін бастапқы URL қолдану">
-<!ENTITY  dnsOverHttpsUrlCustom.label      "Таңдауыңызша">
-<!ENTITY  dnsOverHttpsUrlCustom.accesskey  "т">
-<!ENTITY  dnsOverHttpsUrlCustom.tooltip    "HTTPS арқылы DNS шешу үшін таңдамалы URL енгізіңіз">

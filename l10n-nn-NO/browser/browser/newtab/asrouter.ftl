@@ -125,10 +125,6 @@ cfr-whatsnew-lockwise-take-link-text = Last ned appen
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Skriv mindre, finn meir med adressefeltet
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Gå til nettstadane du brukar mest med eit enkelt klikk i adressefeltet. Finn ting raskare med søkjeresultat frå { $searchEngineName } og nettlesarhistorikken.
-cfr-whatsnew-searchbar-body-generic = Gå til nettstadane du brukar mest med eit enkelt klikk i adressefeltet. Finn ting raskare med søkjeresultater frå nettlesarhistorikken.
 cfr-whatsnew-searchbar-body-topsites = Vel adresselinja, og ein boks med lenker til dei mest besøkte nettstadane dine vil bli vist.
 cfr-whatsnew-searchbar-icon-alt-text = Forstørringsglas-ikon
 
@@ -235,3 +231,15 @@ cfr-whatsnew-passwords-icon-alt = Sårbart passord, nøkkelikon
 cfr-whatsnew-pip-fullscreen-header = Ta bilde-i-bilde fullskjerm
 cfr-whatsnew-pip-fullscreen-body = Når du sprett ein video inn i eit flytande vindauge, kan du no dobbelklikke på det vindauget for å gå i fullskjerm.
 cfr-whatsnew-pip-fullscreen-icon-alt = Bilde-i-bilde ikon
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Vern på ein augneblink
+cfr-whatsnew-protections-body = Tryggingsoversikta inneheld samandragsrapportar om datalekkasjar og passordhandtering. Du kan no spore kor mange datalekkasjar du har løyst, og sjå om nokon av dei lagra passorda dine kan ha blitt eksponerte i ein datalekkasje.
+cfr-whatsnew-protections-cta-link = Vis tryggingsoversyn
+cfr-whatsnew-protections-icon-alt = Skjoldikon
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Betre PDF-oppleving
+cfr-whatsnew-better-pdf-body = PDF-dokument vert no opna direkte i { -brand-short-name }, og held arbeidsflyten innan same program.

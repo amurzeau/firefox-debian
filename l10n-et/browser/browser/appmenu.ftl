@@ -8,8 +8,17 @@
 appmenuitem-protection-report-title = Privaatsuse kaitse
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Vaata oma privaatsuse raportit
+appmenuitem-customize-mode =
+    .label = Kohanda...
+
+## Zoom Controls
+
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Sünkroniseeri kohe
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Mis on uut?

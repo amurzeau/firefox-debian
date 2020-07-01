@@ -121,6 +121,7 @@ cfr-whatsnew-lockwise-take-link-text = Ստանալ հավելվածը
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Մուտքագրեք ավելի քիչ, ավելին գտնեք հասցեի տողի հետ
+cfr-whatsnew-searchbar-body-topsites = Այժմ պարզապես ընտրեք հասցեների գոտին և տուփը կլրացվի ձեր լավագույն կայքերի հղումներով:
 cfr-whatsnew-searchbar-icon-alt-text = Խոշորացույցի պատկերակ
 
 ## Picture-in-Picture
@@ -212,10 +213,30 @@ cfr-doorhanger-milestone-ok-button = Պահպանել բոլորը
 
 ## Lockwise message
 
+cfr-whatsnew-lockwise-header = Հեշտությամբ ստեղծեք անվտանգ գաղտնաբառեր
+cfr-whatsnew-lockwise-body = Յուրաքանչյուր հաշվի համար դժվար է մտածել եզակի, անվտանգ գաղտնաբառ: Գաղտնաբառ ստեղծելիս ընտրեք գաղտնաբառի դաշտը՝ օգտագործելու համար անվտանգ, { -brand-shorter-name }-ի կողմից ստեղծված գաղտնաբառ:
+cfr-whatsnew-lockwise-icon-alt = { -lockwise-brand-short-name } պատկերակ
 
 ## Vulnerable Passwords message
 
+cfr-whatsnew-passwords-header = Զգուշացումներ ստանալ խոցելի գաղտնաբառերի մասին
+cfr-whatsnew-passwords-body = Հակերները գիտեն, որ մարդիկ օգտագործում են նույն գաղտնաբառերը: Եթե դուք օգտագործում եք նույն գաղտնաբառը բազմաթիվ կայքերում, և այդ կայքերից մեկը տվյալների խախտման մեջ է, ապա այդ կայքերում ձեր գաղտնաբառը փոխելու համար կտեսնեք ազդանշան { -lockwise-brand-short-name }-ում:
+cfr-whatsnew-passwords-icon-alt = Խոցելի գաղտնաբառի բանալու պատկերակ
 
 ## Picture-in-Picture fullscreen message
 
+cfr-whatsnew-pip-fullscreen-header = Ստանալ լիաէկրանի նկարը նկարում
+cfr-whatsnew-pip-fullscreen-body = Երբ դուք տեսանյութը տեղափոխում եք լողացող պատուհան՝ այժմ կարող եք կրկնակի սեղմել այդ պատուհանին և անցնել լիաէկրան:
 cfr-whatsnew-pip-fullscreen-icon-alt = Նկար-նկարում պատկերակ
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Պաշտպանություն առաջին հայացքից
+cfr-whatsnew-protections-body = Պաշտպանությունների վահանակը ներառում է տվյալների խախտումների և գաղտնաբառերի կառավարման ընդհանրական զեկույցներ: Այժմ կարող եք հետևել, թե որքան խախտումներ եք դուք ուղղել և տեսնել, թե ձեր պահպանած գաղտնաբառերից քանիսին են ներառվել տվյալների խախտումներում:
+cfr-whatsnew-protections-cta-link = Դիտել պաշտպանության վահանակը
+cfr-whatsnew-protections-icon-alt = Վահանի պատկերակը
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Ավելի լավ PDF փորձառություն
+cfr-whatsnew-better-pdf-body = PDF փաստաթղթերն այժմ բացվում են ուղղակիորեն { -brand-short-name }-ում, պահպանելով ձեր աշխատահոսքը հասանելիության պայմաններում:

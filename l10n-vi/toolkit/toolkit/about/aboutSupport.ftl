@@ -116,6 +116,11 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Tham số
 safe-mode-title = Thử dùng chế độ an toàn
 restart-in-safe-mode-label = Khởi động lại và vô hiệu hóa các tiện ích…
+clear-startup-cache-title = Hãy thử xóa bộ nhớ đệm khởi động
+clear-startup-cache-label = Xóa bộ nhớ đệm khởi động…
+startup-cache-dialog-title = Xóa bộ nhớ đệm khởi động
+startup-cache-dialog-body = Khởi động lại { -brand-short-name } để xóa bộ nhớ đệm khởi động. Điều này sẽ không thay đổi cài đặt của bạn hoặc xóa các tiện ích mở rộng mà bạn đã thêm vào { -brand-short-name }.
+restart-button-label = Khởi động lại
 
 ## Media titles
 

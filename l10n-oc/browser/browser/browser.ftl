@@ -2,6 +2,50 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (Navegacion privada)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (Navegacion privada)
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (Navegacion privada)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (Navegacion privada)
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = Afichar las informacions sul site internet
 
@@ -171,7 +215,7 @@ identity-insecure-login-forms = Los identificants marcats sus aquela pagina pòd
 identity-permissions =
     .value = Permissions
 identity-permissions-reload-hint = Benlèu deuriatz actualizar la pagina per que s'apliquen los cambiaments.
-identity-permissions-empty = Avètz donat pas cap de permission espaciala a aquel site.
+identity-permissions-empty = Avètz pas donat cap de permission espaciala a aquel site.
 identity-clear-site-data =
     .label = Escafar los cookies e las donadas de site…
 identity-connection-not-secure-security-view = Sètz pas connectat amb seguretat a aquel site.
@@ -222,6 +266,23 @@ popup-select-microphone =
     .value = Microfòn de partejar :
     .accesskey = M
 popup-all-windows-shared = L'ensemble de las fenèstras visiblas sus vòstre ecran seràn partejadas.
+popup-screen-sharing-not-now =
+    .label = Pas ara
+    .accesskey = P
+popup-screen-sharing-never =
+    .label = Autorizar pas jamai
+    .accesskey = p
+popup-silence-notifications-checkbox = Desactivar las notificacions de { -brand-short-name } pendent lo partatge
+popup-silence-notifications-checkbox-warning = { -brand-short-name } mostrarà pas de notificacions pendent lo partatge.
+
+## WebRTC window or screen share tab switch warning
+
+sharing-warning-window = Partejatz { -brand-short-name }. Qualqu’un mai pòt veire quand cambiatz d’onglet.
+sharing-warning-screen = Sètz a partejar vòstre ecran. D’autras personas pòdon vire quand cambiatz d’onglet.
+sharing-warning-proceed-to-tab =
+    .label = Passar a l’onglet
+sharing-warning-disable-for-session =
+    .label = Desactivar lo partiment per aquesta session
 
 ## DevTools F12 popup
 
@@ -242,7 +303,7 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Extension :
-urlbar-go-end-cap =
+urlbar-go-button =
     .tooltiptext = Anar a la pagina indicada dins la barra d'adreça
 urlbar-page-action-button =
     .tooltiptext = Accions de la pagina

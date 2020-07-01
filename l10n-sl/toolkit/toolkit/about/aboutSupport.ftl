@@ -119,6 +119,11 @@ sandbox-sys-call-number = Sistemski klic
 sandbox-sys-call-args = Argumenti
 safe-mode-title = Poskusite varni način
 restart-in-safe-mode-label = Ponovno zaženi z onemogočenimi dodatki …
+clear-startup-cache-title = Poskusite počistiti predpomnilnik zagona
+clear-startup-cache-label = Počisti predpomnilnik zagona …
+startup-cache-dialog-title = Počistite predpomnilnik zagona
+startup-cache-dialog-body = Ponovno zaženite { -brand-short-name }, da počistite predpomnilnik zagona. To ne bo spremenilo vaših nastavitev ali odstranilo razširitev, ki ste jih dodali v { -brand-short-name }.
+restart-button-label = Ponovno zaženi
 
 ## Media titles
 
@@ -126,6 +131,7 @@ audio-backend = Zvočno zaledje
 max-audio-channels = Največje število kanalov
 channel-layout = Prednostna razporeditev kanalov
 sample-rate = Prednostna hitrost vzorčenja
+roundtrip-latency = Zakasnitev povratnega potovanja (standardni odklon)
 media-title = Predstavnost
 media-output-devices-title = Izhodne naprave
 media-input-devices-title = Vhodne naprave

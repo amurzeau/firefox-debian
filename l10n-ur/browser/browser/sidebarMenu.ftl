@@ -7,6 +7,6 @@ sidebar-menu-bookmarks =
 sidebar-menu-history =
     .label = سابقات
 sidebar-menu-synced-tabs =
-    .label = ہمہ وقت ساز ٹیب
+    .label = سینک ہو چکے ٹیبز
 sidebar-menu-close =
     .label = بغلی بار بند کریں

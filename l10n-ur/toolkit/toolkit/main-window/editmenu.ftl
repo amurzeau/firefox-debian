@@ -4,11 +4,11 @@
 
 
 ### This file contains the entities needed for the 'edit' menu
-### It's currently only used for the Browser Console
+### It's currently only used for the Browser Console and Developer Toolbox
 
 editmenu-undo =
-    .label = واپس  کرے
-    .accesskey = ا
+    .label = کالعدم کریں
+    .accesskey = U
 editmenu-redo =
     .label = دوبارہ کرے
     .accesskey = ر

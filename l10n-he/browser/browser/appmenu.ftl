@@ -5,11 +5,12 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = ייבוא מדפדפן אחר…
 appmenuitem-protection-report-title = הגנות פרטיות
 appmenuitem-protection-report-tooltip =
     .tooltiptext = מעבר לדוח הפרטיות שלך
+appmenuitem-protection-dashboard-title = לוח הגנות
+appmenuitem-customize-mode =
+    .label = התאמה אישית…
 
 ## Zoom Controls
 
@@ -22,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = סנכרון כעת
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = מה חדש
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = הצגת התרעות על תכונות חדשות
+    .accesskey = ה

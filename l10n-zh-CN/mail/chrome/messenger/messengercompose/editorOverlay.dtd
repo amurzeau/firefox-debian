@@ -294,6 +294,7 @@
 <!ENTITY findToolbarCmd.tooltip "在页面中查找文本">
 <!ENTITY spellToolbarCmd.label "拼写">
 <!ENTITY spellToolbarCmd.tooltip "检查选中部分或整个页面的拼写">
+
 <!ENTITY imageToolbarCmd.label "图像">
 <!ENTITY imageToolbarCmd.tooltip "插入新图像或编辑选择图像的特性">
 <!ENTITY hruleToolbarCmd.label "水平线">
@@ -306,7 +307,6 @@
 <!ENTITY anchorToolbarCmd.tooltip "插入新的锚标或编辑选择的锚标特性">
 <!ENTITY TextColorButton.tooltip "为文本选择颜色">
 <!ENTITY BackgroundColorButton.tooltip "选择背景颜色">
-<!ENTITY throbber.tooltip "转到 &vendorShortName; 主页">
 <!ENTITY throbber.tooltip2 "前往 &brandShortName; 主页">
 <!ENTITY HighlightColorButton.tooltip "选择文本的加亮颜色">
 

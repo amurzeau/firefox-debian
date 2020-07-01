@@ -232,10 +232,10 @@ main-context-menu-video-image-save-as =
     .label = Uložit snímek jako…
     .accesskey = U
 main-context-menu-video-email =
-    .label = Poslat video…
+    .label = Poslat video e-mailem…
     .accesskey = a
 main-context-menu-audio-email =
-    .label = Poslat audio…
+    .label = Poslat audio e-mailem…
     .accesskey = a
 main-context-menu-plugin-play =
     .label = Spustit zásuvný modul
@@ -314,7 +314,3 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = Zjistit více o DRM…
     .accesskey = D
-# Checkbox displayed at the bottom of the What's New panel, allowing users to 
-# enable/disable What's New notifications.
-cfr-whatsnew-panel-footer-checkbox =
-    .label = Informovat o nových funkcích

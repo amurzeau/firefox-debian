@@ -2,6 +2,52 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (Приватно прелистување)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (Приватно прелистување)
+
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (Приватно прелистување)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (Приватно прелистување)
+
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = Видете ги информациите за веб-сајтот
 
@@ -69,6 +115,7 @@ search-one-offs-change-settings-button =
     .label = Промени поставки за пребарување
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Промени поставки за пребарување
+
 search-one-offs-context-open-new-tab =
     .label = Пребарај во ново јазиче
     .accesskey = П
@@ -133,6 +180,9 @@ popup-select-microphone =
     .accesskey = м
 popup-all-windows-shared = Сите видливи прозорци на вашиот екран ќе бидат споделени.
 
+## WebRTC window or screen share tab switch warning
+
+
 ## DevTools F12 popup
 
 
@@ -146,10 +196,12 @@ urlbar-remote-control-notification-anchor =
     .tooltiptext = Прелистувачот е контролиран далечински
 urlbar-switch-to-tab =
     .value = Оди до јазиче:
+
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Проширување:
-urlbar-go-end-cap =
+
+urlbar-go-button =
     .tooltiptext = Ја отвора адресата во локациската лента
 urlbar-page-action-button =
     .tooltiptext = Активности на страница

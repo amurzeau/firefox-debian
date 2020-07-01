@@ -4,6 +4,13 @@
 
 all-tabs-menu-undo-close-tab =
     .label = Malfari fermadon de langeto
+all-tabs-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Malfermi fermadon de langeto
+            [one] Malfermi fermadon de langeto
+           *[other] Malfermi fermadon de langetoj
+        }
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = Serĉi langetojn

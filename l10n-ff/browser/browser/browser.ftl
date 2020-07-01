@@ -2,6 +2,52 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (Peeragol Suturo)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (Peeragol Suturo)
+
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (Peeragol Suturo)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (Peeragol Suturo)
+
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = Yiy humpito lowre ndee
 
@@ -88,10 +134,12 @@ urlbar-midi-blocked =
     .tooltiptext = A daaƴii keɓgol MIDI wonande ndee lowre geese.
 urlbar-install-blocked =
     .tooltiptext = A daaƴii aafgol ɓeyditte e ndee lowre geese.
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Taƴto ngol maantorol ({ $shortcut })
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -122,26 +170,33 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ngol laawol, yiylo e:
+
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Wayly Teelte Njiilaw
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Waylu teelte njiilaw
+
 search-one-offs-context-open-new-tab =
     .label = Yiylo e Tabbere Hesere
     .accesskey = T
 search-one-offs-context-set-as-default =
     .label = Waɗtu Yiylorɗe Woowaanɗe
     .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = Waɗtu Yiylorɗe Woowaanɗe ngam Windows Keeriiɗo
+    .accesskey = P
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Hollu taƴtorde kisnugol
     .accesskey = 5
+
 bookmark-panel-done-button =
     .label = Gasii
+
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -199,6 +254,8 @@ identity-more-info-link-text =
 
 browser-window-minimize-button =
     .tooltiptext = Taggu
+browser-window-maximize-button =
+    .tooltiptext = Mawnin
 browser-window-close-button =
     .tooltiptext = Uddu
 
@@ -212,9 +269,13 @@ popup-select-microphone =
     .accesskey = M
 popup-all-windows-shared = Kala henorde yiyotonde e yaynirde maaɗa maa lolline.
 
+## WebRTC window or screen share tab switch warning
+
+
 ## DevTools F12 popup
 
 enable-devtools-popup-description = Ngam huutoraade sodorde F12, uddit tawo DevTools e dosol topayɓe geese.
+
 
 ## URL Bar
 
@@ -228,10 +289,12 @@ urlbar-permissions-granted =
     .tooltiptext = A hokkii ndee lowre jamirooje goɗɗe.
 urlbar-switch-to-tab =
     .value = Yah to tabbere:
+
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Timmitere:
-urlbar-go-end-cap =
+
+urlbar-go-button =
     .tooltiptext = Yah to ñiiɓirde wonde e Palal Nokkuuje
 urlbar-page-action-button =
     .tooltiptext = Baɗe hello

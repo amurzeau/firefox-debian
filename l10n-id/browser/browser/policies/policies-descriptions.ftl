@@ -63,6 +63,7 @@ policy-ExtensionSettings = Kelola semua aspek pemasangan ekstensi.
 policy-ExtensionUpdate = Aktifkan atau nonaktifkan pembaruan ekstensi otomatis.
 policy-FirefoxHome = Atur Firefox Home.
 policy-FlashPlugin = Izinkan atau tolak penggunaan plugin Flash.
+policy-Handlers = Konfigurasikan penanganan aplikasi baku.
 policy-HardwareAcceleration = Jika bernilai false, menonaktifkan akselerasi perangkat keras.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Mengatur dan mengunci halaman beranda secara opsional.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Kembalikan ke perilaku
 ##
 
 policy-LocalFileLinks = Izinkan situs web tertentu untuk bertaut dengan berkas lokal.
+policy-MasterPassword = Membutuhkan atau mencegah penggunaan kata sandi utama.
 policy-NetworkPrediction = Aktifkan atau nonaktifkan prediksi jaringan (DNS prefetching).
 policy-NewTabPage = Aktifkan atau nonaktifkan laman Tab Baru.
 policy-NoDefaultBookmarks = Nonaktifkan pembuatan markah default yang dibundel dengan { -brand-short-name } serta Markah Cerdas (Sering Mampir, Tag Terbaru). Catatan: kebijakan ini hanya efektif jika digunakan sebelum menjalankan profil pertama.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Aktifkan penyimpanan sandi melalui manajer sandi
 # PDF.js and PDF should not be translated
 policy-PDFjs = Nonaktifkan atau atur konfigurasi PDF.js, penampil PDF bawaan di { -brand-short-name }.
 policy-Permissions2 = Atur izin untuk kamera, mikrofon, lokasi, notifikasi, dan putar-otomatis.
+policy-PictureInPicture = Aktifkan atau nonaktifkan Picture-in-Picture.
 policy-PopupBlocking = Izinkan situs tertentu untuk menampilkan pop-up secara otomatis.
 policy-Preferences = Tetapkan dan kunci nilai untuk subset preferensi.
 policy-PromptForDownloadLocation = Tanyakan di mana berkas disimpan saat mengunduh.

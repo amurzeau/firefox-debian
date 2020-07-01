@@ -81,6 +81,7 @@ policy-ExtensionSettings = Správa všech aspektů instalace rozšíření.
 policy-ExtensionUpdate = Vypnutí nebo zapnutí automatických aktualizací rozšíření.
 policy-FirefoxHome = Nastavení domovské stránky prohlížeče.
 policy-FlashPlugin = Povolení nebo zablokování zásuvného modulu Flash.
+policy-Handlers = Nastavení výchozích aplikací pro odkazy a typy souborů.
 policy-HardwareAcceleration = Hodnota false vypne použití hardwarové akcelerace.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Nastavení a případné uzamčení domovské stránky.
@@ -95,6 +96,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Nastaví staré výcho
 ##
 
 policy-LocalFileLinks = Povolí vybraným stránkám odkazovat na soubory uložené na místním disku.
+policy-MasterPassword = Vyžadovat nebo zabránit používání hlavního hesla.
 policy-NetworkPrediction = Povolení nebo zakázání přednačítání DNS.
 policy-NewTabPage = Povolení nebo zákaz stránky nového panelu.
 policy-NoDefaultBookmarks =
@@ -118,6 +120,7 @@ policy-PasswordManagerEnabled = Povolení ukládat přihlašovací údaje do spr
 # PDF.js and PDF should not be translated
 policy-PDFjs = Zablokování nebo nastavení PDF prohlížeče PDF.js vestavěného v aplikaci { -brand-short-name }.
 policy-Permissions2 = Nastavení oprávnění pro kameru, mikrofon, polohu, oznámení a automatické přehrávání.
+policy-PictureInPicture = Povolení nebo zakázání režimu obraz v obraze.
 policy-PopupBlocking = Povolení zobrazování vyskakovacích oken ve výchozím stavu.
 policy-Preferences = Nastavení a uzamčení hodnoty pro podmnožinu předvoleb.
 policy-PromptForDownloadLocation = Zeptat se na adresář před stažením souboru.

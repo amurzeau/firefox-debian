@@ -22,6 +22,7 @@ set-password-new-password = Rhoi'r cyfrinair newydd:
 set-password-reenter-password = Rhoi'r cyfrinair eto:
 set-password-meter = Mesurydd ansawdd y cyfrinair
 set-password-meter-loading = Llwytho
+master-password-admin = Mae eich gweinyddwr yn mynnu bod gennych Brif Gyfrinair wedi'i osod er mwyn cadw cyfrineiriau.
 master-password-description = Mae Prif Gyfrinair yn cael ei ddefnyddio i amddiffyn gwybodaeth sensitif fel cyfrineiriau gwefannau.  Os fyddwch yn creu Prif Gyfrinair bydd gofyn i chi ei rhoi unwaith y sesiwn pan fydd { -brand-short-name } yn estyn gwybodaeth wedi ei gadw'n ddiogel gan y cyfrinair.
 master-password-warning = Gwnewch yn siŵr eich bod yn cofio'r Prif Gyfrinair.  Os byddwch yn anghofio eich Prif Gyfieithiad, ni fydd modd i chi gael mynediad at unrhyw wybodaeth mae'n ei amddiffyn.
 remove-password =

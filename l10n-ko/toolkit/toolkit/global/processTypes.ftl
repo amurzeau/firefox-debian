@@ -26,3 +26,5 @@ process-type-webisolated = 격리된 웹 콘텐츠
 process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = 소켓
+# process preallocated; may change to other types
+process-type-prealloc = 사전 할당

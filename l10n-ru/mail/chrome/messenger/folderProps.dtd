@@ -49,6 +49,9 @@
 
 <!ENTITY folderProps.name.label                  "Имя:">
 <!ENTITY folderProps.name.accesskey              "м">
+<!ENTITY folderProps.color.label                 "Цвет значка:">
+<!ENTITY folderProps.color.accesskey             "ч">
+<!ENTITY folderProps.reset.tooltip               "Восстановить цвет по умолчанию">
 <!ENTITY folderProps.location.label              "Адрес:">
 <!ENTITY folderProps.location.accesskey          "д">
 
@@ -56,6 +59,7 @@
 <!ENTITY privileges.button.label                 "Привилегии…">
 <!ENTITY privileges.button.accesskey             "и">
 <!ENTITY permissionsDesc.label                   "У вас есть следующие права:">
+<!ENTITY folderOtherUsers.label                  "Другие с доступом к этой папке:">
 <!ENTITY folderType.label                        "Тип папки:">
 
 <!ENTITY folderQuotaTab.label                    "Квота">

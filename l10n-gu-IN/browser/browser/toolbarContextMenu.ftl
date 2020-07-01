@@ -20,3 +20,26 @@ toolbar-context-menu-select-all-tabs =
 toolbar-context-menu-undo-close-tab =
     .label = બંધ ટૅબને ફરી લાવો
     .accesskey = U
+
+toolbar-context-menu-manage-extension =
+    .label = એક્સ્ટેંશનનો વહીવટ કરો
+    .accesskey = E
+toolbar-context-menu-remove-extension =
+    .label = એક્સ્ટેંશન દૂર કરો
+    .accesskey = v
+
+# Can appear on the same context menu as menubarCmd ("Menu Bar") and
+# personalbarCmd ("Bookmarks Toolbar"), so they should have different
+# access keys.
+toolbar-context-menu-pin-to-overflow-menu =
+    .label = ઓવરફ્લો મેનૂ પર પિન કરો
+    .accesskey = P
+toolbar-context-menu-auto-hide-downloads-button =
+    .label = ટૂલબાર સ્વતઃ-છુપાવો
+    .accesskey = A
+toolbar-context-menu-remove-from-toolbar =
+    .label = સાધનપટ્ટીમાંથી દૂર કરો
+    .accesskey = R
+toolbar-context-menu-view-customize-toolbar =
+    .label = વૈવિધ્યપૂર્ણ બનાવો...
+    .accesskey = C

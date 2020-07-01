@@ -22,7 +22,7 @@ reset-password-window =
     .style = width: 40em
 reset-password-button-label =
     .label = Mbojevyjey
-reset-password-text = Emoañete jeýramo neñe'ẽñemi ha'etéva, umi ñanduti neñe'ẽñemi ha ñanduti veve embyatypyre, umi myanyhẽha mba'ekuarã, mboajepyréva avamba'etéva ha ñe'ẽñemi ñemiguáva hesaraipáta. ¿Añetehápe eguerusejey neñe'ẽñemi ha'etéva?
+reset-password-text = Emoañete jeýramo neñe’ẽñemi ha’etéva, umi ñanduti neñe’ẽñemi ha ñanduti veve embyatypyre, umi myanyhẽha mba’ekuaarã, mboajepyréva avamba’etéva ha ñe’ẽñemi ñemiguáva hesaraipáta. ¿Añetehápe eguerusejey neñe’ẽñemi ha’etéva?
 
 ## Downloading cert dialog
 
@@ -51,7 +51,7 @@ client-auth-cert-details = Mboajepyréva poravopyre mba'emimi:
 
 set-password-window =
     .title = Eiporavo peteĩ ñe'ẽñemi pytyvõrãva mboajepyrévape g̃uarã
-set-password-message = Mboajepyre ykekoha ñe'ẽñemi emoĩva ko'ápe omo'ãta pe marandurenda ykekoháva emoheñói potaitévape. Emoĩva'erã ko ñe'ẽñemi eguerekokuaa hag̃uáicha pe monguatiapy ykekoháva.
+set-password-message = Mboajepyre ykekoha ñe’ẽñemi emoĩva ko’ápe omo'ãta pe marandurenda ykekoháva emoheñói potaitévape. Emoĩva’erã ko ñe’ẽñemi eguerekokuaa hag̃uáicha pe monguatiapy ykekoháva.
 set-password-backup-pw =
     .value = Ñe'ẽñemi pytyvõrãva mboajepyréva mba'éva:
 set-password-repeat-backup-pw =

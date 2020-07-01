@@ -55,6 +55,10 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Chadaina da certificats:
+open-in-new-window-for-csp-or-xfo-error = Avrir la website en ina nova fanestra
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = Per proteger tia segirezza na permetta { $hostname } betg a { -brand-short-name } da visualisar la pagina sche in'autra website l'ha incorporada. Per vesair questa pagina la stos ti avrir en ina nova fanestra.
 
 ## Messages used for certificate error titles
 
@@ -85,6 +89,7 @@ unknownSocketType-title = Resposta nuncorrecta
 nssFailure2-title = La connexiun segira n'è betg reussida
 cspBlocked-title = Bloccà da las directivas per la segirezza dal cuntegn
 xfoBlocked-title = Bloccà dad ina directiva X-Frame-Options
+csp-xfo-error-title = { -brand-short-name } na po betg avrir questa pagina
 corruptedContentError-title = Errur da cuntegn donnegià
 remoteXUL-title = Remote-XUL
 sslv3Used-title = Impussibel da connectar a moda segira

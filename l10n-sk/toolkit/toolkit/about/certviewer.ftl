@@ -16,6 +16,9 @@ certificate-viewer-certificate-authority = Certifikačná autorita
 certificate-viewer-cipher-suite = Šifrovacia množina
 certificate-viewer-common-name = Bežný názov
 certificate-viewer-email-address = E-mailová adresa
+# Variables:
+#   $firstCertName (String) - Common Name for the displayed certificate
+certificate-viewer-tab-title = Certifikát pre { $firstCertName }
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
 certificate-viewer-inc-country = Krajina
 certificate-viewer-country = Krajina
@@ -29,6 +32,8 @@ certificate-viewer-id = ID
 certificate-viewer-key-exchange-group = Skupina pre výmenu kľúčov
 certificate-viewer-key-id = ID kľúča
 certificate-viewer-key-size = Veľkosť kľúča
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-locality = Sídlo spoločnosti
 certificate-viewer-locality = Lokalita
 certificate-viewer-location = Umiestnenie
 certificate-viewer-logid = ID protokolu
@@ -104,3 +109,4 @@ certificate-viewer-tab-mine = Vaše certifikáty
 certificate-viewer-tab-people = Ľudia
 certificate-viewer-tab-servers = Servery
 certificate-viewer-tab-ca = Autority
+certificate-viewer-tab-unkonwn = Neznáme

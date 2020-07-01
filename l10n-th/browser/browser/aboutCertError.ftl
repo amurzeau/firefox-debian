@@ -55,6 +55,10 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = สายใบรับรอง:
+open-in-new-window-for-csp-or-xfo-error = เปิดไซต์ในหน้าต่างใหม่
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = เพื่อปกป้องความปลอดภัยของคุณ { $hostname } จะไม่อนุญาตให้ { -brand-short-name } แสดงหน้าหากไซต์อื่นฝังไว้ หากต้องการดูหน้านี้ คุณต้องเปิดในหน้าต่างใหม่
 
 ## Messages used for certificate error titles
 
@@ -85,6 +89,7 @@ unknownSocketType-title = การตอบสนองที่ไม่คา
 nssFailure2-title = การเชื่อมต่อปลอดภัยล้มเหลว
 cspBlocked-title = ปิดกั้นแล้วโดยนโยบายความปลอดภัยของเนื้อหา
 xfoBlocked-title = ถูกปิดกั้นโดยนโยบาย X-Frame-Options
+csp-xfo-error-title = { -brand-short-name } ไม่สามารถเปิดหน้านี้ได้
 corruptedContentError-title = ข้อผิดพลาดเนื้อหาเสียหาย
 remoteXUL-title = XUL ระยะไกล
 sslv3Used-title = ไม่สามารถเชื่อมต่ออย่างปลอดภัย

@@ -113,6 +113,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY enterFullScreenCmd.accesskey "n">
 <!ENTITY exitFullScreenCmd.label "Avslutt fullskjerm">
 <!ENTITY exitFullScreenCmd.accesskey "v">
+
 <!ENTITY fullScreenCmd.label "Fullskjerm">
 <!ENTITY fullScreenCmd.accesskey "F">
 <!ENTITY fullScreenCmd.macCommandKey "f">
@@ -127,8 +128,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaUnverified.label "Stadfest kontoen din">
 
 
-<!ENTITY togglePictureInPicture.key2 "}">
-<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
+<!-- } is above this key on many keyboards -->
+
 
 <!ENTITY fullScreenMinimize.tooltip "Minimer">
 <!ENTITY fullScreenRestore.tooltip "Bygg oppatt">
@@ -175,7 +176,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.accountSettings.label "Kontoinnstillingar">
 <!ENTITY fxa.menu.manageAccount2.label "Handter konto">
 <!ENTITY fxa.menu.signOut.label "Logg ut…">
-<!ENTITY fxa.menu.deviceSettings.label "Einingsinnstillingar">
 <!ENTITY fxa.menu.setupSync.label "Konfigurer &syncBrand.shortName.label;…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
@@ -246,7 +246,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY stopCmd.accesskey            "S">
 
 <!ENTITY stopCmd.macCommandKey        ".">
+
 <!ENTITY goEndCap.tooltip             "Gå til adressa i adresselinja">
+
 <!ENTITY printButton.label            "Skriv ut">
 <!ENTITY printButton.tooltip          "Skriv ut denne sida">
 
@@ -277,8 +279,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "Handter bruken av DRM-programvare">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "Opne MIDI-panel">
 
-<!ENTITY urlbar.permissionsGranted.tooltip       "Du har gjeve denne nettstaden ytterlegare løyve.">
-
 <!ENTITY urlbar.cameraBlocked.tooltip            "Du har blokkert kameraet for denne nettstaden.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Du har blokkert mikrofonen for denne nettstaden.">
 <!ENTITY urlbar.screenBlocked.tooltip            "Du har blokkert denne nettstaden frå å dele skjermen din.">
@@ -294,6 +294,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Vis historikk">
+
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "Du har gjeve denne nettstaden ytterlegare løyve.">
+
 
 <!ENTITY searchItem.title             "Søk">
 
@@ -358,6 +362,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newUserContext.accesskey         "i">
 <!ENTITY manageUserContext.label          "Handter behaldarar">
 <!ENTITY manageUserContext.accesskey      "H">
+
 <!ENTITY newNavigatorCmd.label        "Nytt vindauge">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "N">
@@ -406,6 +411,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY viewCustomizeToolbar.label       "Tilpass…">
 <!ENTITY viewCustomizeToolbar.accesskey     "T">
+
 <!ENTITY overflowCustomizeToolbar.label       "Tilpass verktøylinja…">
 <!ENTITY overflowCustomizeToolbar.accesskey   "T">
 
@@ -498,6 +504,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY moreMenu.label "Fleire">
 
 <!ENTITY openCmd.commandkey           "l">
+
 <!ENTITY urlbar.placeholder2          "Søk eller skriv inn ei adresse">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
@@ -631,11 +638,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisLinkCmd.accesskey  "B">
 <!ENTITY bookmarkThisFrameCmd.label      "Bokmerk denne ramma">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "B">
+
 <!ENTITY pageAction.copyLink.label    "Kopier lenke">
 
 <!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
   "Pocket" is a brand name. -->
 <!ENTITY pocketButton.tooltiptext     "Lagre til Pocket">
+
 <!ENTITY saveToPocketCmd.label        "Lagre sida til Pocket">
 <!ENTITY saveToPocketCmd.accesskey    "k">
 <!ENTITY saveLinkToPocketCmd.label    "Lagre lenke til Pocket">
@@ -846,18 +855,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.connectionSecure "Trygt samband">
 <!ENTITY identity.connectionNotSecure "Tilkoplinga er ikkje sikker">
 
-<!ENTITY identity.connectionSecure3 "Tilkoplinga er sikker">
-<!ENTITY identity.connectionNotSecure2 "Tilkoplinga er ikkje sikker">
-<!ENTITY identity.connectionNotSecureSecurityView "Du er ikkje sikkert kopla til denne nettstaden.">
 <!ENTITY identity.connectionFile "Denne sida er lagra på datamaskina di.">
 <!ENTITY identity.connectionVerified2 "Sikker tilkopling til nettstaden, eigd av:">
-<!ENTITY identity.connectionVerified3 "Du er sikkert kopla til denne nettstaden.">
 <!ENTITY identity.connectionInternal "Dette er ei sikker &brandShortName;-side.">
 <!ENTITY identity.extensionPage "Denne sida er lasta frå ei utviding.">
 <!ENTITY identity.insecureLoginForms2 "Innloggingsinfo skrive inn på denne sida kan lesast av tredjepart.">
 <!ENTITY identity.customRoot "Tilkoplinga vart stadfesta av ein sertifikatutskrivar som Mozilla ikkje kjenner.">
-
-<!ENTITY identity.evOwnerLabel2 "Sertifikat skrive ut til:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; har blokkert delar av denne sida som ikkje er sikre.">
@@ -893,60 +896,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Løyve">
 
-<!ENTITY identity.permissions3 "Løyve">
 <!ENTITY identity.permissionsEmpty "Du har ikkje gjeve denne nettstaden spesielle løyve.">
 <!ENTITY identity.permissionsReloadHint "Du må kanskje laste sida på nytt for at endringane skal gjelde.">
 <!ENTITY identity.permissionsPreferences.tooltip "Opne innstillingar for løyve">
 <!ENTITY identity.contentBlockingPreferences.tooltip "Opne innstillingar for innhaldsblokkering">
 
-
-<!ENTITY protections.etpON.header "Utvida sporingsvern er slått PÅ for denne nettstaden">
-<!ENTITY protections.etpOFF.header "Utvida sporingsvern er slått AV for denne nettstaden">
-<!-- LOCALIZATION NOTE:
-     protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
-<!ENTITY protections.etpMoreInfo.label "Meir informasjon om utvida sporingsvern">
-<!ENTITY protections.settings.label "Innstillingar for vern">
-<!ENTITY protections.showreport.label "Vis rapport">
-<!-- LOCALIZATION NOTE:
-     protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
-     protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
-<!ENTITY protections.siteNotWorking.label "Fungerer ikkje nettstaden?">
-<!ENTITY protections.siteNotWorkingView.title "Fungerer ikkje nettstaden?">
-<!-- LOCALIZATION NOTE:
-     In the Site Not Working? view, we suggest turning off protections if
-     the user is experiencing issues with any of a variety of functionality.
-     protections.siteNotWorkingView.header: The header of the list
-     protections.siteNotWorkingView.issueList.*: The list items, shown in a <ul> -->
-<!ENTITY protections.siteNotWorkingView.header "Slå av vern om du har problem med:">
-<!ENTITY protections.siteNotWorkingView.issueList.logInFields "Innloggingsfelt">
-<!ENTITY protections.siteNotWorkingView.issueList.forms "Skjema">
-<!ENTITY protections.siteNotWorkingView.issueList.payments "Betalingar">
-<!ENTITY protections.siteNotWorkingView.issueList.comments "Kommentarar">
-<!ENTITY protections.siteNotWorkingView.issueList.videos "Videoar">
-<!ENTITY protections.siteNotWorkingView.sendReport.label "Send inn ein rapport">
-
-<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
-     In the protections panel, Content Blocking category items are in three sections:
-     "Blocked" for categories being blocked in the current page,
-     "Allowed" for categories detected but not blocked in the current page, and
-     "None Detected" for categories not detected in the current page.
-     These strings are used in the header labels of each of these sections. -->
-<!ENTITY protections.blocking2.label "Blokkert">
-<!ENTITY protections.notBlocking2.label "Tillate">
-<!ENTITY protections.notFound.label "Ingen oppdaga">
-<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
-     The "Allowed" header also includes a "Why?" link that, when hovered, shows
-     a tooltip explaining why these items were not blocked in the page. -->
-<!ENTITY protections.notBlocking.why.label "Kvifor?">
-<!ENTITY protections.notBlocking.why.etpOn.tooltip "Blokkering av desse kan føre til feil med element på nokre nettstadar. Utan sporfølgjarar fungerer kanskje ikkje nokre knappar, skjema og innloggingsfelt.">
-<!ENTITY protections.notBlocking.why.etpOff2.tooltip "Alle sporfølgjarar på denne nettstaden er lasta fordi sporingsvernet er slått av.">
-<!ENTITY protections.noTrackersFound.description "Ingen sporfølgjarar kjende for &brandShortName; vart oppdaga på denne sida.">
-
-<!ENTITY protections.crossSiteTrackingCookies.description "Desse infokapslane følgjer deg frå side til side for å samle inn data om kva du gjer på nettet. Dei kjem frå tredjepartar som annonsørar og analyseselskap.">
-<!ENTITY protections.cryptominers.description "Kryptominarar brukar datakrafta til systemet for å utvinne digitale pengar. Kryptomineringsskript tappar batteriet, gjer datamaskina tregare og kan auke straumrekninga.">
-<!ENTITY protections.fingerprinters.description "Fingerprinters samlar innstillingar frå nettlesaren din og datamaskina for å opprette ein profil av deg. Ved hjelp av dette digitale fingeravtrykket kan dei spore deg på ulike nettstadar.">
-<!ENTITY protections.trackingContent2.description "Nettstadar kan laste eksterne annonsar, videoar og annna innhald med sporingskode. Blokkering av sporingsinnhald kan gjere at nettstadar lastar raskare, men det kan hende at nokre knappar, skjema og innloggingsfelt ikkje fungerer.">
-<!ENTITY protections.socialMediaTrackers.description "Sosiale nettverk plasserer sporfølgjarar på andre nettstadar for å følgje det du gjer og ser på nettet. Dette gjer at sosiale mediaselskap kan lære meir om deg utover det du deler på profilane dine på sosiale medium.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -992,13 +946,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.cookies.label "Infokapslar">
 <!ENTITY contentBlocking.cookiesView.label "Infokapslar og nettsidedata">
 
-<!ENTITY contentBlocking.trackingProtection4.label "Sporingsinnhald">
-
-<!ENTITY contentBlocking.manageSettings2.label "Handter instillingar for vern">
-<!ENTITY contentBlocking.manageSettings2.accesskey "n">
-
-<!ENTITY contentBlocking.socialblock.label "Sporing via sosiale medium">
-
 <!ENTITY contentBlocking.cryptominers.label "Kryptominarar">
 <!ENTITY contentBlocking.cryptominersView.label "Kryptominarar">
 
@@ -1010,12 +957,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView2.description "Innhaldsblokkering kan føre til problem med enkelte nettsider. Når du rapporterer problem, hjelper du til med å gjere &brandShortName; betre for alle. (Dette vil sende ein URL, samt informasjon om nettlesarinnstillingane dine, til Mozilla.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "Les meir">
 
-<!ENTITY contentBlocking.breakageReportView.title "Rapporter problem med ein nettstad">
-<!ENTITY contentBlocking.breakageReportView3.description "Blokkering av visse sporfølgjarar kan føre til problem med enkelte nettstadar. Rapportering av desse problema er med på å gjere &brandShortName; betre for alle. Ved sending av denne rapporten vil du sende ein URL og informasjon om nettlesarinnstillingane dine, til Mozilla.">
-<!ENTITY contentBlocking.breakageReportView2.learnMore "Les meir">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "URL-adresse">
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "Kva for problem har du? (Valfri)">
-<!ENTITY contentBlocking.breakageReportView2.collection.comments.label "Valfritt: Beskriv problemet">
 <!ENTITY contentBlocking.breakageReportView.sendReport.label "Send rapport">
 <!ENTITY contentBlocking.breakageReportView.cancel.label "Avbryt">
 
@@ -1043,6 +986,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      and pluginActivateAlways.label strings above on a single line. This must be
      a CSS length value. -->
 <!ENTITY pluginNotification.width "28em">
+
 
 <!ENTITY uiTour.infoPanel.close "Lat att">
 

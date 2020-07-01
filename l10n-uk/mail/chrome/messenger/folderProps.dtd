@@ -49,6 +49,9 @@
 
 <!ENTITY folderProps.name.label                  "Назва:">
 <!ENTITY folderProps.name.accesskey              "а">
+<!ENTITY folderProps.color.label                 "Колір піктограми:">
+<!ENTITY folderProps.color.accesskey             "л">
+<!ENTITY folderProps.reset.tooltip               "Відновити типовий колір">
 <!ENTITY folderProps.location.label              "Розташування:">
 <!ENTITY folderProps.location.accesskey          "о">
 
@@ -56,6 +59,7 @@
 <!ENTITY privileges.button.label                 "Привілеї…">
 <!ENTITY privileges.button.accesskey             "П">
 <!ENTITY permissionsDesc.label                   "У вас є наступні права:">
+<!ENTITY folderOtherUsers.label                  "Інші, з доступом до цієї теки:">
 <!ENTITY folderType.label                        "Тип теки:">
 
 <!ENTITY folderQuotaTab.label                    "Квота">

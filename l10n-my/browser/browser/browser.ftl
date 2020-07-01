@@ -2,6 +2,52 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (လုံခြုံစွာ ဝဘ်ဆိုက်ကြည့်ရှုခြင်း)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (လုံခြုံစွာ ဝဘ်ဆိုက်ကြည့်ရှုခြင်း)
+
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (လုံခြုံစွာ ဝဘ်ဆိုက်ကြည့်ရှုခြင်း)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (လုံခြုံစွာ ဝဘ်ဆိုက်ကြည့်ရှုခြင်း)
+
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = ဝဘ်ဆိုက် ၏ အချက်အလက်ကို ကြည့်ရန်
 
@@ -68,10 +114,12 @@ urlbar-canvas-blocked =
     .tooltiptext = ယခုဝဘ်ဆိုက်အတွက် canvas data extraction ကို တားဆီးထားသည်။
 urlbar-midi-blocked =
     .tooltiptext = ယခုဝဘ်ဆိုက်အတွက် MIDI အသုံးပြုခြင်းကို တားဆီးထားသည်။
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = စာအမှတ်အားပြင်မည် ({ $shortcut })
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -103,6 +151,7 @@ search-one-offs-change-settings-button =
     .label = ရှာဖွေရေး အပြင်အဆင်များကို ပြောင်းလဲရန်
 search-one-offs-change-settings-compact-button =
     .tooltiptext = ရှာဖွေမှု အပြင်အဆင်များကို ပြောင်းလဲရန်
+
 search-one-offs-context-open-new-tab =
     .label = တပ်ဗ်အသစ်တွင် ရှာရန်
     .accesskey = T
@@ -114,6 +163,7 @@ search-one-offs-context-set-as-default =
 
 bookmark-panel-done-button =
     .label = ပြီးပြီ
+
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -175,6 +225,9 @@ popup-select-microphone =
     .accesskey = M
 popup-all-windows-shared = သင့်စကရင်ပေါ်ရှိ မြင်ရသော ဝင်းဒိုးအားလုံး မျှဝေပေးမည်။
 
+## WebRTC window or screen share tab switch warning
+
+
 ## DevTools F12 popup
 
 
@@ -188,10 +241,12 @@ urlbar-remote-control-notification-anchor =
     .tooltiptext = ဘရောင်ဇာသည် အဝေးရောက်ထိန်းချုပ်မှုအောက်တွင် ရှိနေသည်
 urlbar-switch-to-tab =
     .value = ထိုတပ်ဗ်သို့ ပြောင်းကြည့်မည်
+
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = ထပ်ပေါင်းဆော့ဖ်ဝဲလ်။
-urlbar-go-end-cap =
+
+urlbar-go-button =
     .tooltiptext = လမ်းကြောင်းအတန်းထဲရှိ လိပ်စာသို့ သွားပါ
 urlbar-page-action-button =
     .tooltiptext = စာမျက်နှာရှိ ဆောင်ရွက်နိုင်သည်များ

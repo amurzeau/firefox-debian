@@ -3,6 +3,11 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 # "Google Play" and "App Store" are both branding and should not be translated
 
 
@@ -38,6 +43,12 @@ login-item-cancel-button = Hætta við
 login-item-time-changed = Síðast breytt: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
 login-item-time-created = Created: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 
+## OS Authentication dialog
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
 ## Master Password notification
 
 master-password-reload-button =
@@ -53,5 +64,10 @@ master-password-reload-button =
 ## Breach Alert notification
 
 
+## Vulnerable Password notification
+
 ## Error Messages
+
+
+## Login Export Dialog
 

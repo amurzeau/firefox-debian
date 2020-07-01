@@ -113,6 +113,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY enterFullScreenCmd.accesskey "B">
 <!ENTITY exitFullScreenCmd.label "Kilépés a teljes képernyős módból">
 <!ENTITY exitFullScreenCmd.accesskey "K">
+
 <!ENTITY fullScreenCmd.label "Teljes képernyő">
 <!ENTITY fullScreenCmd.accesskey "T">
 <!ENTITY fullScreenCmd.macCommandKey "f">
@@ -127,8 +128,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxaUnverified.label "Fiók ellenőrzése">
 
 
-<!ENTITY togglePictureInPicture.key2 "}">
-<!ENTITY togglePictureInPicture.key "]"> <!-- } is above this key on many keyboards -->
+<!-- } is above this key on many keyboards -->
+
 
 <!ENTITY fullScreenMinimize.tooltip "Kis méret">
 <!ENTITY fullScreenRestore.tooltip "Helyreállítás">
@@ -175,7 +176,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY fxa.menu.accountSettings.label "Fiókbeállítások">
 <!ENTITY fxa.menu.manageAccount2.label "Fiók kezelése">
 <!ENTITY fxa.menu.signOut.label "Kijelentkezés…">
-<!ENTITY fxa.menu.deviceSettings.label "Eszközbeállítások">
 <!ENTITY fxa.menu.setupSync.label "&syncBrand.shortName.label; beállítása…">
 
 <!-- LOCALIZATION NOTE (fxa.service) Used to define the different FxA services
@@ -246,7 +246,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY stopCmd.accesskey            "L">
 
 <!ENTITY stopCmd.macCommandKey        ".">
+
 <!ENTITY goEndCap.tooltip             "Ugrás a címmezőben levő címre">
+
 <!ENTITY printButton.label            "Nyomtatás">
 <!ENTITY printButton.tooltip          "Oldal kinyomtatása">
 
@@ -277,8 +279,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.emeNotificationAnchor.tooltip             "DRM-es szoftver használatának kezelése">
 <!ENTITY urlbar.midiNotificationAnchor.tooltip            "MIDI panel megnyitása">
 
-<!ENTITY urlbar.permissionsGranted.tooltip       "További engedélyeket adott ennek az oldalnak.">
-
 <!ENTITY urlbar.cameraBlocked.tooltip            "Blokkolta a kamerát ezen az oldalon.">
 <!ENTITY urlbar.microphoneBlocked.tooltip        "Blokkolta a mikrofont ezen az oldalon.">
 <!ENTITY urlbar.screenBlocked.tooltip            "Blokkolta a képernyőmegosztást ezen az oldalon.">
@@ -294,6 +294,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Előzmények megjelenítése">
+
+
+<!ENTITY urlbar.permissionsGranted.tooltip       "További engedélyeket adott ennek az oldalnak.">
+
 
 <!ENTITY searchItem.title             "Keresés">
 
@@ -358,6 +362,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newUserContext.accesskey         "k">
 <!ENTITY manageUserContext.label          "Konténerek kezelése">
 <!ENTITY manageUserContext.accesskey      "O">
+
 <!ENTITY newNavigatorCmd.label        "Új ablak">
 <!ENTITY newNavigatorCmd.key        "N">
 <!ENTITY newNavigatorCmd.accesskey      "a">
@@ -406,6 +411,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY viewCustomizeToolbar.label       "Testreszabás…">
 <!ENTITY viewCustomizeToolbar.accesskey     "T">
+
 <!ENTITY overflowCustomizeToolbar.label       "Eszköztár testreszabása…">
 <!ENTITY overflowCustomizeToolbar.accesskey   "E">
 
@@ -498,6 +504,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY moreMenu.label "Több">
 
 <!ENTITY openCmd.commandkey           "l">
+
 <!ENTITY urlbar.placeholder2          "Keresés vagy cím">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
@@ -631,11 +638,13 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkThisLinkCmd.accesskey  "f">
 <!ENTITY bookmarkThisFrameCmd.label      "Keret hozzáadása a könyvjelzőkhöz">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "h">
+
 <!ENTITY pageAction.copyLink.label    "Hivatkozás másolása">
 
 <!-- LOCALIZATION NOTE(pocket-button.tooltiptext, saveToPocketCmd.label, saveLinkToPocketCmd.label, pocketMenuitem.label):
   "Pocket" is a brand name. -->
 <!ENTITY pocketButton.tooltiptext     "Mentés a Pocketbe">
+
 <!ENTITY saveToPocketCmd.label        "Oldal mentése a Pocketbe">
 <!ENTITY saveToPocketCmd.accesskey    "k">
 <!ENTITY saveLinkToPocketCmd.label    "Hivatkozás mentése a Pocketbe">
@@ -846,18 +855,12 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.connectionSecure "Biztonságos kapcsolat">
 <!ENTITY identity.connectionNotSecure "A kapcsolat nem biztonságos">
 
-<!ENTITY identity.connectionSecure3 "A kapcsolat biztonságos">
-<!ENTITY identity.connectionNotSecure2 "A kapcsolat nem biztonságos">
-<!ENTITY identity.connectionNotSecureSecurityView "Nem biztonságosan kapcsolódik ehhez az oldalhoz.">
 <!ENTITY identity.connectionFile "Ez az oldal a számítógépén van tárolva.">
 <!ENTITY identity.connectionVerified2 "Biztonságosan kapcsolódott ehhez ez oldalhoz; a tulajdonosa:">
-<!ENTITY identity.connectionVerified3 "Biztonságosan kapcsolódik ehhez az oldalhoz.">
 <!ENTITY identity.connectionInternal "Ez egy biztonságos &brandShortName; oldal.">
 <!ENTITY identity.extensionPage "Ez az oldal kiegészítőből lett betöltve.">
 <!ENTITY identity.insecureLoginForms2 "Az oldalon megadott bejelentkezési adatok nincsenek biztonságban.">
 <!ENTITY identity.customRoot "A kapcsolatot egy olyan tanúsítványkibocsátó igazolta, amelyet a Mozilla nem ismeri fel.">
-
-<!ENTITY identity.evOwnerLabel2 "Tanúsítvány kiállítva ennek:">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "A &brandShortName; blokkolta az oldal néhány nem biztonságos elemét.">
@@ -893,60 +896,11 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY identity.permissions "Engedélyek">
 
-<!ENTITY identity.permissions3 "Engedélyek">
 <!ENTITY identity.permissionsEmpty "Nem adott speciális engedélyeket ennek az oldalnak.">
 <!ENTITY identity.permissionsReloadHint "Lehet hogy újra kell töltenie az oldalt a változások érvényesítéséhez.">
 <!ENTITY identity.permissionsPreferences.tooltip "Engedélybeállítások megnyitása">
 <!ENTITY identity.contentBlockingPreferences.tooltip "Tartalomblokkolási beállítások megnyitása">
 
-
-<!ENTITY protections.etpON.header "A továbbfejlesztett követés elleni védelem BE van kapcsolva ezen a webhelyen">
-<!ENTITY protections.etpOFF.header "A továbbfejlesztett követés elleni védelem KI van kapcsolva ezen a webhelyen">
-<!-- LOCALIZATION NOTE:
-     protections.etpMoreInfo.label: The text a screen reader speaks when focused on the info button. -->
-<!ENTITY protections.etpMoreInfo.label "További információk a továbbfejlesztett követés elleni védelemről">
-<!ENTITY protections.settings.label "Védelmi beállítások">
-<!ENTITY protections.showreport.label "Jelentés megjelenítése">
-<!-- LOCALIZATION NOTE:
-     protections.siteNotWorking.label: The link to be clicked to open the sub-panel view
-     protections.siteNotWorkingView.title: The heading/title of the sub-panel view -->
-<!ENTITY protections.siteNotWorking.label "Nem működik az oldal?">
-<!ENTITY protections.siteNotWorkingView.title "Nem működik az oldal?">
-<!-- LOCALIZATION NOTE:
-     In the Site Not Working? view, we suggest turning off protections if
-     the user is experiencing issues with any of a variety of functionality.
-     protections.siteNotWorkingView.header: The header of the list
-     protections.siteNotWorkingView.issueList.*: The list items, shown in a <ul> -->
-<!ENTITY protections.siteNotWorkingView.header "Kapcsolja ki a védelmet, ha problémái vannak a következőkkel:">
-<!ENTITY protections.siteNotWorkingView.issueList.logInFields "Bejelentkezési mezők">
-<!ENTITY protections.siteNotWorkingView.issueList.forms "Űrlapok">
-<!ENTITY protections.siteNotWorkingView.issueList.payments "Fizetések">
-<!ENTITY protections.siteNotWorkingView.issueList.comments "Megjegyzések">
-<!ENTITY protections.siteNotWorkingView.issueList.videos "Videók">
-<!ENTITY protections.siteNotWorkingView.sendReport.label "Jelentés küldése">
-
-<!-- LOCALIZATION NOTE (protections.blocking2.label, protections.notBlocking2.label, protections.notFound.label):
-     In the protections panel, Content Blocking category items are in three sections:
-     "Blocked" for categories being blocked in the current page,
-     "Allowed" for categories detected but not blocked in the current page, and
-     "None Detected" for categories not detected in the current page.
-     These strings are used in the header labels of each of these sections. -->
-<!ENTITY protections.blocking2.label "Blokkolva">
-<!ENTITY protections.notBlocking2.label "Engedélyezve">
-<!ENTITY protections.notFound.label "Nincs észlelve">
-<!-- LOCALIZATION NOTE (protections.notBlocking.why.label, protections.notBlocking.why.etp*.tooltip):
-     The "Allowed" header also includes a "Why?" link that, when hovered, shows
-     a tooltip explaining why these items were not blocked in the page. -->
-<!ENTITY protections.notBlocking.why.label "Miért?">
-<!ENTITY protections.notBlocking.why.etpOn.tooltip "Ezek blokkolása egyes webhelyek elemeinek hibáit okozhatja. A nyomkövetők nélkül egyes gombok, űrlapok és bejelentkezési mezők lehet, hogy nem fognak működni.">
-<!ENTITY protections.notBlocking.why.etpOff2.tooltip "A webhely összes nyomkövetője be lett töltve, mert a védelem ki van kapcsolva.">
-<!ENTITY protections.noTrackersFound.description "Egyetlen ismert nyomkövetőt sem észlelt a &brandShortName; ezen az oldalon.">
-
-<!ENTITY protections.crossSiteTrackingCookies.description "Ezek a sütik követik Ön oldalról oldalra, és adatokat gyűjtenek az online tevékenységéről. Ezeket olyan harmadik felek állítják be, mint a hirdetők és az elemző cégek.">
-<!ENTITY protections.cryptominers.description "A kriptobányászok az Ön rendszerének erőforrásait használják digitális pénzek bányászatához. A kriptobányászok lemerítik az akkumulátort, lelassítják a számítógépét és növelhetik a villanyszámláját.">
-<!ENTITY protections.fingerprinters.description "A ujjlenyomat-készítők beállításokat gyűjtenek a böngészőjéből és számítógépéből, hogy profilt hozzanak létre Önről. A digitális ujjlenyomat használatával követhetik Ön a különböző webhelyek között.">
-<!ENTITY protections.trackingContent2.description "A weboldalak külső hirdetéseket, videókat és más követési kódot tartalmazó tartalmakat tölthetnek be. A nyomkövető tartalmak blokkolása az oldalak gyorsabb betöltését eredményezheti, de egyes gombok, űrlapok és bejelentkezési mezők lehet, hogy nem fognak működni.">
-<!ENTITY protections.socialMediaTrackers.description "A közösségi hálózatok nyomkövetőket helyeznek el más weboldalakon, hogy kövessék mit tesz, lát és néz online. Így a közösségi médiával foglalkozó cégek többet tudhatnak meg Önről, mint amit megoszt a közösségimédia-profiljaiban.">
 
 <!-- Name for the tabs toolbar as spoken by screen readers.
      The word "toolbar" is appended automatically and should not be contained below! -->
@@ -992,13 +946,6 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.cookies.label "Sütik">
 <!ENTITY contentBlocking.cookiesView.label "Sütik és oldaladatok">
 
-<!ENTITY contentBlocking.trackingProtection4.label "Nyomkövető tartalom">
-
-<!ENTITY contentBlocking.manageSettings2.label "Védelmi beállítások kezelése">
-<!ENTITY contentBlocking.manageSettings2.accesskey "k">
-
-<!ENTITY contentBlocking.socialblock.label "Közösségimédia-követők">
-
 <!ENTITY contentBlocking.cryptominers.label "Kriptobányászok">
 <!ENTITY contentBlocking.cryptominersView.label "Kriptobányászok">
 
@@ -1010,12 +957,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY contentBlocking.breakageReportView2.description "A tartalomblokkolás problémákat okozhat néhány weboldalon. Ha bejelenti a problémákat, akkor segít jobbá tenni a &brandShortName; böngészőt mindenki számára. (Ez elküldi az URL-t, valamint a böngészőbeállításait a Mozillának.)">
 <!ENTITY contentBlocking.breakageReportView.learnMore "További tudnivalók">
 
-<!ENTITY contentBlocking.breakageReportView.title "Hibás webhely bejelentése">
-<!ENTITY contentBlocking.breakageReportView3.description "Egyes nyomkövetők blokkolása problémákat okozhat néhány weboldalon. Ezen problémák bejelentése segít jobbá tenni a &brandShortName; böngészőt mindenki számára. A jelentés elküldi az URL-t és a böngészőbeállításait a Mozillának.">
-<!ENTITY contentBlocking.breakageReportView2.learnMore "További tudnivalók">
 <!ENTITY contentBlocking.breakageReportView.collection.url.label "URL">
 <!ENTITY contentBlocking.breakageReportView.collection.comments.label "Milyen problémái voltak? (Nem kötelező)">
-<!ENTITY contentBlocking.breakageReportView2.collection.comments.label "Nem kötelező: Írja le a problémát">
 <!ENTITY contentBlocking.breakageReportView.sendReport.label "Jelentés küldése">
 <!ENTITY contentBlocking.breakageReportView.cancel.label "Mégse">
 
@@ -1043,6 +986,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      and pluginActivateAlways.label strings above on a single line. This must be
      a CSS length value. -->
 <!ENTITY pluginNotification.width "28em">
+
 
 <!ENTITY uiTour.infoPanel.close "Bezárás">
 

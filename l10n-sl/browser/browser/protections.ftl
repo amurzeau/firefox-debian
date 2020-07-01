@@ -41,10 +41,14 @@ etp-card-title = Izboljšana zaščita pred sledenjem
 etp-card-content = Sledilci vas spremljajo po spletu ter zbirajo podatke o vaših navadah in zanimanjih. { -brand-short-name } zavrača veliko teh sledilcev in drugih zlonamernih skriptov.
 protection-report-webpage-title = Nadzorna plošča zaščit
 protection-report-page-content-title = Nadzorna plošča zaščit
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } lahko med brskanjem neopazno ščiti vašo zasebnost. To je prilagojen povzetek zaščit, vključno z orodji za nadzor nad vašo spletno varnostjo.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } med brskanjem neopazno ščiti vašo zasebnost. To je prilagojen povzetek zaščit, vključno z orodji za nadzor nad vašo spletno varnostjo.
+protection-report-settings-link = Upravljaj nastavitve zasebnosti in varnosti
 etp-card-title-always = Izboljšana zaščita pred sledenjem: vedno vključena
 etp-card-title-custom-not-blocking = Izboljšana zaščita pred sledenjem: izključena
-etp-card-content-summary = Ko vam neznana podjetja poskušajo na skrivaj slediti po spletu, { -brand-short-name } mnoge od njih samodejno ustavi.
+etp-card-content-description = { -brand-short-name } samodejno prepreči, da bi vas podjetja na skrivaj spremljala po spletu.
 protection-report-etp-card-content-custom-not-blocking = Vse zaščite so trenutno izklopljene. V nastavitvah { -brand-short-name }a izberite, katere sledilce želite zavračati.
 protection-report-manage-protections = Upravljanje nastavitev
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -62,8 +66,6 @@ fingerprinter-tab-title = Sledilci prstnih odtisov
 fingerprinter-tab-content = Sledilci prstnih odtisov zbirajo nastavitve vašega brskalnika in računalnika, da si ustvarijo vaš profil. S pomočjo digitalnega prstnega odtisa vam lahko sledijo na različnih spletnih straneh. <a data-l10n-name="learn-more-link">Več o tem</a>
 cryptominer-tab-title = Kriptorudarji
 cryptominer-tab-content = Kriptorudarji izrabljajo zmogljivost vašega računalnika za rudarjenje digitalnega denarja. Rudarski skripti vam praznijo baterijo, upočasnjujejo računalnik in zasolijo račun za elektriko. <a data-l10n-name="learn-more-link">Več o tem</a>
-protections-close-button =
-    .aria-label = Zapri
 protections-close-button2 =
     .aria-label = Zapri
     .title = Zapri
@@ -132,6 +134,8 @@ monitor-link = Kako deluje
 monitor-header-content-no-account = Preverite s { -monitor-brand-name }jem, ali ste bili vpleteni v znano krajo podatkov, ter prejemajte opozorila o novih krajah.
 monitor-header-content-signed-in = { -monitor-brand-name } vas opozori, če se vaši podatki pojavijo v znani kraji podatkov.
 monitor-sign-up = Prijavite se na opozorila o krajah
+monitor-sign-up-link = Prijavite se na opozorila o krajah
+    .title = Prijavite se na opozorila o krajah v { -monitor-brand-name }ju
 auto-scan = Samodejno preverjeno danes
 monitor-emails-tooltip =
     .title = Oglejte si nadzorovane e-poštne naslove v { -monitor-brand-short-name }ju
@@ -160,6 +164,16 @@ info-known-breaches-found =
        *[other] znanih kraj podatkov je izpostavilo vaše podatke
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] znana kraja je bila označena kot razrešena
+        [two] znani kraji sta bili označena kot razrešeni
+        [few] znane kraje so bile označene kot razrešene
+       *[other] znanih kraj je bilo označenih kot razrešenih
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -180,6 +194,45 @@ password-warning =
         [few] Shranjene prijave so morda bile izpostavljene v kraji podatkov. Za večjo varnost na spletu spremenite gesla. <a data-l10n-name="lockwise-link">Ogled shranjenih prijav</a>
        *[other] Shranjenih prijav je morda bilo izpostavljenih v kraji podatkov. Za večjo varnost na spletu spremenite gesla. <a data-l10n-name="lockwise-link">Ogled shranjenih prijav</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] geslo je bilo izpostavljeno v nerazrešenih krajah
+        [two] gesli sta bili izpostavljeni v nerazrešenih krajah
+        [few] gesla so bila izpostavljena v nerazrešenih krajah
+       *[other] gesel je bilo izpostavljenih v nerazrešenih krajah
+    }
+monitor-no-breaches-title = Dobre novice!
+monitor-no-breaches-description = Niste bili udeleženi v znanih krajah. Če se to spremeni, vas bomo obvestili.
+monitor-view-report-link = Prikaži poročilo
+    .title = Razrešite kraje v { -monitor-brand-short-name }ju
+monitor-breaches-unresolved-title = Razrešite svoje kraje
+monitor-breaches-unresolved-description = Po pregledu podrobnosti o kraji podatkov in izvedbi ukrepov za zaščito vaših podatkov, lahko kraje podatkov označite kot razrešene.
+monitor-manage-breaches-link = Upravljajte kraje
+    .title = Upravljajte kraje v { -monitor-brand-short-name }ju
+monitor-breaches-resolved-title = Super! Razrešili ste vse znane kraje.
+monitor-breaches-resolved-description = Če se bo vaš e-poštni naslov pojavil v novih krajah, vas bomo obvestili.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+        [one] { $numBreachesResolved } od { $numBreaches } kraj podatkov je bila označena kot razrešena
+        [two] { $numBreachesResolved } od { $numBreaches } kraj podatkov sta bili označeni kot razrešeni
+        [few] { $numBreachesResolved } od { $numBreaches } kraj podatkov so bile označene kot razrešene
+       *[other] { $numBreachesResolved } od { $numBreaches } kraj podatkov je bilo označenih kot razrešenih
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved }% dokončano
+monitor-partial-breaches-motivation-title-start = Odličen začetek!
+monitor-partial-breaches-motivation-title-middle = Nadaljujte!
+monitor-partial-breaches-motivation-title-end = Skoraj ste končali! Nadaljujte.
+monitor-partial-breaches-motivation-description = Razrešite ostale kraje v { -monitor-brand-short-name }ju.
+monitor-resolve-breaches-link = Razreši kraje
+    .title = Razrešite kraje v { -monitor-brand-short-name }ju
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

@@ -4,6 +4,14 @@
 
 all-tabs-menu-undo-close-tab =
     .label = Врати затворен језичак
+all-tabs-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Врати затворен језичак
+            [one] Врати затворен језичак
+            [few] Врати затворена језичка
+           *[other] Врати затворених језичака
+        }
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = Претражи језичке

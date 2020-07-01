@@ -8,6 +8,9 @@
 appmenuitem-protection-report-title = Mesiras da protecziun
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Avrir il rapport davart las mesiras per la protecziun da datas
+appmenuitem-protection-dashboard-title = Survista da las protecziuns
+appmenuitem-customize-mode =
+    .label = Persunalisar…
 
 ## Zoom Controls
 
@@ -20,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = Sincronisar ussa
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Novaziuns
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = Infurmar davart novas funcziunalitads
+    .accesskey = f

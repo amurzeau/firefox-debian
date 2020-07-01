@@ -125,10 +125,6 @@ cfr-whatsnew-lockwise-take-link-text = App downloaden
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Typ minder, vind meer met de adresbalk
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Bezoek uw meestbezochte websites met één klik in de adresbalk. Vind dingen sneller met resultaten van { $searchEngineName } en uw navigatiegeschiedenis.
-cfr-whatsnew-searchbar-body-generic = Bezoek uw meest bezochte websites met één klik in de adresbalk. Vind dingen sneller met zoekresultaten uit uw navigatiegeschiedenis.
 cfr-whatsnew-searchbar-body-topsites = Selecteer nu eenvoudigweg de adresbalk en een vak zal uitbreiden met snelkoppelingen naar uw topwebsites.
 cfr-whatsnew-searchbar-icon-alt-text = Vergrootglaspictogram
 
@@ -236,3 +232,15 @@ cfr-whatsnew-passwords-icon-alt = Sleutelpictogram voor kwetsbaar wachtwoord
 cfr-whatsnew-pip-fullscreen-header = Maak picture-in-picture schermvullend
 cfr-whatsnew-pip-fullscreen-body = Wanneer u een video in een zwevend scherm plaatst, kunt u daar nu op dubbelklikken om het schermvullend te maken.
 cfr-whatsnew-pip-fullscreen-icon-alt = Pictogram Picture-in-Picture
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Beschermingen in een oogopslag
+cfr-whatsnew-protections-body = Het Beveiligingsdashboard bevat samenvattingen over datalekken en wachtwoordbeheer. U kunt nu volgen hoeveel datalekken u hebt opgelost en bekijken of uw opgeslagen wachtwoorden mogelijk zijn getroffen door een datalek.
+cfr-whatsnew-protections-cta-link = Beveiligingsdashboard bekijken
+cfr-whatsnew-protections-icon-alt = Schildpictogram
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Betere PDF-ervaring
+cfr-whatsnew-better-pdf-body = PDF-documenten worden nu rechtstreeks geopend in { -brand-short-name }, waardoor uw werk binnen handbereik blijft.

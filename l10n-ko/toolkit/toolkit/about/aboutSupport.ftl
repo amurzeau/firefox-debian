@@ -116,6 +116,11 @@ sandbox-sys-call-number = 시스템 콜
 sandbox-sys-call-args = 인자
 safe-mode-title = 안전 모드 시도
 restart-in-safe-mode-label = 부가 기능을 끄고 다시 시작…
+clear-startup-cache-title = 시작 캐시 삭제 시도
+clear-startup-cache-label = 시작 캐시 삭제…
+startup-cache-dialog-title = 시작 캐시 삭제
+startup-cache-dialog-body = 시작 캐시를 삭제하려면 { -brand-short-name }를 다시 시작하세요. 설정이 변경되거나 { -brand-short-name }에 추가한 확장 기능이 제거되지는 않습니다.
+restart-button-label = 다시 시작
 
 ## Media titles
 
@@ -123,6 +128,7 @@ audio-backend = 오디오 백엔드
 max-audio-channels = 최대 채널
 channel-layout = 기본 채널 레이아웃
 sample-rate = 기본 샘플 비율
+roundtrip-latency = 왕복 지연 시간 (표준 편차)
 media-title = 미디어
 media-output-devices-title = 출력 기기
 media-input-devices-title = 입력 기기

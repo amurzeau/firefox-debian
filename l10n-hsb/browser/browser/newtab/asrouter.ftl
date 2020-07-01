@@ -127,10 +127,6 @@ cfr-whatsnew-lockwise-take-link-text = Wobstarajće sej nałoženje
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Pisajće mjenje a namakajće wjace z adresowym polom
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Wobstarajće sej sydła, kotrež najhusćišo wužiwaće, z jednym kliknjenjom. Namakajće wěcy spěšnišo z wuslědkami z { $searchEngineName } a ze swojeje přehladowanskeje historije.
-cfr-whatsnew-searchbar-body-generic = Wobstarajće sej sydła, kotrež najhusćišo wužiwaće, z jednym kliknjenjom. Namakajće wěcy spěšnišo z pytanskimi wuslědkami z  swojeje přehladowanskeje historije.
 cfr-whatsnew-searchbar-body-topsites = Wubjerće nětko prosće adresowe polo a  kašćik z wotkazami na waše najlubše sydła so wočini.
 cfr-whatsnew-searchbar-icon-alt-text = Lupowy symbol
 
@@ -242,3 +238,15 @@ cfr-whatsnew-passwords-icon-alt = Symbol zranitych hesłow
 cfr-whatsnew-pip-fullscreen-header = Połnu wobrazowku wobraz-we-wobrazu wužiwać
 cfr-whatsnew-pip-fullscreen-body = Hdyž widejo do znošowaceho so wokna tykaće, móžeće dwójce na te wokno kliknyć, zo byšće jo w połnej wobrazowce wobhladał.
 cfr-whatsnew-pip-fullscreen-icon-alt = Symbol wobraz-we-wobrazu
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Škity na jedne pohladnjenje
+cfr-whatsnew-protections-body = Přehlad škitow zjimace rozprawy wo datowych dźěrach a rjadowanju hesłow. Móžeće nětko slědować, kelko dźěrow sće rozrisał a widźeć, hač jedne abo wjace hesłow bě datowej dźěrje wustajene.
+cfr-whatsnew-protections-cta-link = Přehlad škitow pokazać
+cfr-whatsnew-protections-icon-alt = Tarčowy symbol
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Lěpše PDF-dožiwjenje
+cfr-whatsnew-better-pdf-body = PDF-dokumenty so nětko direktnje w { -brand-short-name } wočinjeja, bjeztoho zo byšće dyrbjał dźěłowy wotběh přetorhnyć.

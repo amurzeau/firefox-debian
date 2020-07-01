@@ -152,6 +152,9 @@ about-debugging-debug-target-list-empty = अभी तक कुछ नही�
 # A target can be an addon, a tab, a worker...
 about-debugging-debug-target-inspect-button = जाँचें
 # Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
+# Clicking on the button will reload the extension.
+about-debugging-tmp-extension-reload-button = पुनः लोड करें
+# Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will uninstall the extension and remove it from the page.
 about-debugging-tmp-extension-remove-button = हटाएं
 # Text displayed for extensions in "runtime" pages, before displaying a link the extension's
@@ -177,9 +180,24 @@ about-debugging-extension-id =
 about-debugging-worker-action-push = पुश
 # This string is displayed as a label of the button that starts a service worker.
 about-debugging-worker-action-start = प्रारंभ
+# This string is displayed as a label of the button that unregisters a service worker.
+about-debugging-worker-action-unregister = अपंजीकृत करें
+# Displayed for service workers in runtime pages that are currently running (service
+# worker instance is active).
+about-debugging-worker-status-running = क्रियाशील
+# Displayed for service workers in runtime pages that are registered but stopped.
+about-debugging-worker-status-stopped = रुका हुआ
+# Displayed for service workers in runtime pages that are registering.
+about-debugging-worker-status-registering = पंजीकृत किया जा रहा है
+# Displayed for service workers in runtime pages, to label the scope of a worker
+about-debugging-worker-scope =
+    .label = स्कोप
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-main-process-name = मुख्य प्रक्रिया
+# Displayed as description for the Main Process debug target in the Processes category.
+# Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
+about-debugging-main-process-description2 = लक्षित ब्राउज़र के लिए मुख्य प्रक्रिया
 # Label text used for the error details of message component.
 about-debugging-message-details-label-error = त्रुटि विवरण
 # Label text used for the warning details of message component.

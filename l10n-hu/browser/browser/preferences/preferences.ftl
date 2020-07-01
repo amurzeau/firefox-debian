@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } használata ({ -brand-short-name } böngészőben)
-applications-preview-inapp =
-    .label = Előnézet a { -brand-short-name } böngészőben
 applications-open-inapp =
     .label = Megnyitás a { -brand-short-name }ban
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Népszerű oldalak
 home-prefs-topsites-description = A leggyakrabban látogatott oldalak
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = A(z) { $provider } ajánlásával
 home-prefs-recommended-by-description = Nagyszerű tartalom szerte a webről, személyre szabva
+home-prefs-recommended-by-description-update = Kivételes tartalom szerte az internetről, a { $provider } válogatásában
+
+##
+
 home-prefs-recommended-by-learn-more = Hogyan működik
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Szponzorált történetek
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Keresési javaslatok megjelenítése a privát ablakokban
 suggestions-addressbar-settings = Böngészési előzmények, könyvjelzők és lapjavaslatok beállításainak módosítása
+suggestions-addressbar-settings-generic = Címsávjavaslatok beállításainak módosítása
 search-suggestions-cant-show = A keresési javaslatok nem jelennek meg a címsáv találatai között, mert a { -brand-short-name } nem jegyzi meg az előzményeket.
 search-one-click-header = Egy kattintásos keresőszolgáltatások
 search-one-click-desc = Válassza ki a címsáv alatt és a keresősávban gépeléskor megjelenő alternatív keresőszolgáltatatásokat.
@@ -765,10 +768,10 @@ privacy-header = Böngésző adatvédelme
 
 ## Privacy Section - Forms
 
+logins-header = Bejelentkezések és jelszavak
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Bejelentkezések és jelszavak
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Bejelentkezések és jelszavak
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = Sikertelen jelszóváltoztatás
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Igazolja személyazonosságát a mesterjelszó létrehozásához.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Mesterjelszó létrehozásához írja be a Windows bejelentkezési hitelesítő adatait. Ez elősegíti a fiókjai biztonságának védelmét.
 # This message can be seen by trying to add a Master Password.
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Engedélyek kezelése…
     .accesskey = E
+sitedata-cookies-exceptions =
+    .label = Kivételek kezelése…
+    .accesskey = K
 
 ## Privacy Section - Address Bar
 
@@ -916,13 +920,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Nyitott lapok
     .accesskey = N
+addressbar-locbar-topsites-option =
+    .label = Kedvenc oldalak
+    .accesskey = K
 addressbar-suggestions-settings = Keresőszolgáltatás-javaslatok beállításainak módosítása
 
 ## Privacy Section - Content Blocking
 
 content-blocking-header = Tartalomblokkolás
 content-blocking-section-description = Védje meg a magánszféráját böngészés közben. Blokkolja a láthatatlan tartalmakat, melyek követik, hogy mely oldalakat látogat, és profilt építenek Önről. Egyes tartalmak blokkolása a weboldalak gyorsabb betöltését is eredményezheti.
-content-blocking-enhanced-tracking-protection = Továbbfejlesztett követés elleni védelem
+content-blocking-enhanced-tracking-protection = Fokozott követés elleni védelem
 content-blocking-section-top-level-description = A nyomkövetők követik Önt online, és információkat gyűjtenek a böngészési szokásairól és érdeklődési köreiről. A { -brand-short-name } számos ilyen követőt és rosszindulatú parancsfájlt blokkol.
 content-blocking-learn-more = További tudnivalók
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Ujjlenyomat-készítők
 content-blocking-warning-title = Figyelem!
 content-blocking-warning-description = A tartalomblokkolás egyes webhelyek hibás működését okozhatja. A blokkolás könnyen letiltható azokon az oldalakon, melyekben megbízik.
 content-blocking-learn-how = Tudja meg, hogyan
-content-blocking-etp-warning-description = A nyomkövetők blokkolása befolyásolhatja az egyes webhelyek működését. Töltse újra az oldalt a nyomkövetőkkel, hogy betöltse az összes tartalmat.
 content-blocking-and-isolating-etp-warning-description = A nyomkövetők blokkolása és a sütik elkülönítése befolyásolhatja az egyes webhelyek működését. Töltse újra az oldalt a nyomkövetőkkel, hogy betöltse az összes tartalmat.
 content-blocking-warning-learn-how = Tudja meg, hogyan
 content-blocking-reload-description = A módosítások alkalmazásához frissítenie kell a lapokat.

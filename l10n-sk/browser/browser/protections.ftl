@@ -37,6 +37,10 @@ protection-report-page-title = Ochrana súkromia
 protection-report-content-title = Ochrana súkromia
 etp-card-title = Rozšírená ochrana pred sledovaním
 etp-card-content = Sledovacie prvky zbierajú informácie o tom, čo na internete robíte. { -brand-short-name } blokuje množstvo takýchto prvkov a ďalších škodlivých skriptov.
+protection-report-webpage-title = Nástenka ochrany súkromia
+protection-report-page-content-title = Nástenka ochrany súkromia
+etp-card-title-always = Rozšírená ochrana pred sledovaním: vždy zapnutá
+etp-card-title-custom-not-blocking = Rozšírená ochrana pred sledovaním: VYPNUTÁ
 protection-report-etp-card-content-custom-not-blocking = Všetky prvky ochrany sú v tejto chvíli vypnuté. V nastaveniach aplikácie { -brand-short-name } vyberte, ktoré sledovacie prvky chcete blokovať.
 protection-report-manage-protections = Možnosti
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -54,8 +58,6 @@ fingerprinter-tab-title = Odtlačok prehliadača
 fingerprinter-tab-content = Zberom informácií o vašom prehliadači a počítači je možné vytvoriť unikátny odtlačok, ktorý je potom možné použiť na vaše sledovanie naprieč rôznymi webovými stránkami. <a data-l10n-name="learn-more-link">Ďalšie informácie</a>
 cryptominer-tab-title = Ťažba kryptomien
 cryptominer-tab-content = Ťažba kryptomien používa výpočtový výkon vášho počítača na získavanie digitálnych mien. Bežiace skripty vybíjajú vašu batériu a spomaľujú váš počítač. <a data-l10n-name="learn-more-link">Ďalšie informácie</a>
-protections-close-button =
-    .aria-label = Zavrieť
 protections-close-button2 =
     .aria-label = Zavrieť
     .title = Zavrieť
@@ -68,6 +70,10 @@ lockwise-header-content = { -lockwise-brand-name } bezpečne uchováva vaše hes
 lockwise-header-content-logged-in = Ukladajte a synchronizujte heslá bezpečne naprieč svojimi zariadeniami.
 protection-report-view-logins-button = Zobraziť prihlasovacie údaje
     .title = Prejsť na prihlasovacie údaje
+protection-report-save-passwords-button = Uložiť heslá
+    .title = Uložiť heslá do { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Spravovať heslá
+    .title = Spravovať heslá v { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Vezmite si svoje heslá so sebou
 lockwise-no-logins-card-content = Používajte heslá uložené v { -brand-short-name } na akomkoľvek zariadení.
 lockwise-app-links = { -lockwise-brand-name } pre <a data-l10n-name="lockwise-android-inline-link">Android</a> a <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
@@ -97,6 +103,8 @@ monitor-link = Ako to funguje
 monitor-header-content-no-account = { -monitor-brand-name } skontroluje, či boli vaše údaje súčasťou nejakého známeho úniku dát a upozorní vás, ak sa vyskytnú v nejakom novom.
 monitor-header-content-signed-in = { -monitor-brand-name } vás upozorní, ak sa vaše údaje objavia v známom úniku dát.
 monitor-sign-up = Prihláste sa na odber upozornení
+monitor-sign-up-link = Prihláste sa na odber upozornení
+    .title = Prihláste sa na odber upozornení cez { -monitor-brand-name }
 auto-scan = Automaticky skenované: dnes
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
@@ -135,6 +143,8 @@ password-warning =
         [few] Uložené prihlasovacie údaje mohli byť súčasťou úniku dát. Z bezpečnostných dôvodov odporúčame zmenu hesla. <a data-l10n-name="lockwise-link">Zobraziť uložené prihlasovacie údaje</a>
        *[other] Uložené prihlasovacie údaje mohli byť súčasťou úniku dát. Z bezpečnostných dôvodov odporúčame zmenu hesla. <a data-l10n-name="lockwise-link">Zobraziť uložené prihlasovacie údaje</a>
     }
+monitor-no-breaches-title = Dobré správy!
+monitor-breaches-unresolved-description = Po preskúmaní podrobností o úniku a prijatí opatrení na ochranu vašich osobných údajov môžete označiť úniky ako vyriešené.
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

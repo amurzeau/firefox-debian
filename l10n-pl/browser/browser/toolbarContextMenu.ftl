@@ -20,3 +20,39 @@ toolbar-context-menu-select-all-tabs =
 toolbar-context-menu-undo-close-tab =
     .label = Przywróć zamkniętą kartę
     .accesskey = P
+toolbar-context-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Przywróć zamkniętą kartę
+            [one] Przywróć zamkniętą kartę
+            [few] Przywróć zamknięte karty
+           *[many] Przywróć zamknięte karty
+        }
+    .accesskey = P
+toolbar-context-menu-manage-extension =
+    .label = Zarządzaj rozszerzeniem
+    .accesskey = Z
+toolbar-context-menu-remove-extension =
+    .label = Usuń rozszerzenie
+    .accesskey = U
+# This label is used in the extensions toolbar buttons context menus,
+# a user can use this command to submit to Mozilla an abuse report
+# related to that extension. "Report" is a verb.
+toolbar-context-menu-report-extension =
+    .label = Zgłoś rozszerzenie
+    .accesskey = o
+# Can appear on the same context menu as menubarCmd ("Menu Bar") and
+# personalbarCmd ("Bookmarks Toolbar"), so they should have different
+# access keys.
+toolbar-context-menu-pin-to-overflow-menu =
+    .label = Przypnij do menu ukrywania
+    .accesskey = P
+toolbar-context-menu-auto-hide-downloads-button =
+    .label = Automatyczne ukrywanie na pasku narzędzi
+    .accesskey = A
+toolbar-context-menu-remove-from-toolbar =
+    .label = Usuń z paska narzędzi
+    .accesskey = n
+toolbar-context-menu-view-customize-toolbar =
+    .label = Dostosuj…
+    .accesskey = t

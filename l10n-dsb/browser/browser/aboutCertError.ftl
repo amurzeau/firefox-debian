@@ -55,6 +55,10 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Certifikatowy rjeśaz:
+open-in-new-window-for-csp-or-xfo-error = Sedło w nowem woknje wócyniś
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = Aby swóju wěstotu šćitał, { $hostname } { -brand-short-name } njedowólijo, bok pokazaś, jolic jo zasajźony w drugem sedle. Aby toś ten bok wiźeł, musyśo jen w nowem woknje wócyniś.
 
 ## Messages used for certificate error titles
 
@@ -85,6 +89,7 @@ unknownSocketType-title = Njewótčakane wótegrono ze serwera
 nssFailure2-title = Wěsty zwisk njejo móžny
 cspBlocked-title = Pśez wěstotne pšawidła za wopśimjeśe zablokěrowany
 xfoBlocked-title = Pśez pšawidła X-Frame-Options zablokěrowane
+csp-xfo-error-title = { -brand-short-name } njamóžo toś ten bok wócyniś
 corruptedContentError-title = Zmólka - wobškóźone wopśimjeśe
 remoteXUL-title = Daloki XUL
 sslv3Used-title = Wěsty zwisk njejo móžny

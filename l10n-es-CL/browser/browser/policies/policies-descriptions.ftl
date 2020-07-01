@@ -36,7 +36,7 @@ policy-DisableFirefoxStudies = Evitar que { -brand-short-name } ejecute estudios
 policy-DisableForgetButton = Evitar el acceso al botón Olvidar.
 policy-DisableFormHistory = No recordar el historial de búsqueda y formularios.
 policy-DisableMasterPasswordCreation = De ser verdadero, una contraseña maestra no puede ser creada.
-policy-DisablePasswordReveal = No permitir que las contraseñas sean reveladas en las conexiones guardadas.
+policy-DisablePasswordReveal = No permitir que las contraseñas sean reveladas en las credenciales guardadas.
 policy-DisablePocket = Deshabilitar la función para guardar páginas web en Pocket.
 policy-DisablePrivateBrowsing = Deshabilitar navegación privada.
 policy-DisableProfileImport = Deshabilitar el comando de menú para importar datos desde otro navegador.
@@ -63,6 +63,7 @@ policy-ExtensionSettings = Gestionar todos los aspectos de la instalación de ex
 policy-ExtensionUpdate = Activar o desactivar actualizaciones automáticas de extensiones.
 policy-FirefoxHome = Configurar el inicio de Firefox.
 policy-FlashPlugin = Permitir o denegar el uso del complemento Flash.
+policy-Handlers = Configurar gestores de aplicación predeterminados.
 policy-HardwareAcceleration = De ser falso, desactiva la aceleración por hardware.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Establecer y bloquear opcionalmente la página de inicio.
@@ -77,17 +78,19 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Revierte al comportami
 ##
 
 policy-LocalFileLinks = Permitir a sitios web específicos enlazar a archivos locales.
+policy-MasterPassword = Requerir o evitar usando una contraseña maestra.
 policy-NetworkPrediction = Activar o desactivar predicción de red (obtención adelantada de DNS).
 policy-NewTabPage = Activar o desactivar la página Nueva pestaña.
 policy-NoDefaultBookmarks = Desactiva la creación por defecto de marcadores incluidos con { -brand-short-name }, y los marcadores inteligentes (Más visitados, Etiquetas recientes). Nota: esta política solo es efectiva si es usada antes de la primera ejecución del perfil.
-policy-OfferToSaveLogins = Refuerza el ajuste para permitir a { -brand-short-name } ofrecer recordar las conexiones y contraseñas guardadas. Se aceptan tanto el valor verdadero como falso.
-policy-OfferToSaveLoginsDefault = Ajusta el valor predeterminado para permitir a { -brand-short-name } ofrecer recordar las conexiones y contraseñas guardadas. Se aceptan tanto el valor verdadero como falso.
+policy-OfferToSaveLogins = Refuerza el ajuste para permitir a { -brand-short-name } ofrecer recordar las credenciales y contraseñas guardadas. Se aceptan tanto el valor verdadero como falso.
+policy-OfferToSaveLoginsDefault = Ajusta el valor predeterminado para permitir a { -brand-short-name } ofrecer recordar las credenciales y contraseñas guardadas. Se aceptan tanto el valor verdadero como falso.
 policy-OverrideFirstRunPage = Saltarse la página de primera ejecución. Deja esta política en blanco si deseas desactivar la página de primera ejecución.
 policy-OverridePostUpdatePage = Saltarse la página "Qué hay de nuevo" post actualización. Deja esta política en blanco si deseas desactivar la página post actualización.
 policy-PasswordManagerEnabled = Habilitar el guardado de contraseñas en el administrador de contraseñas.
 # PDF.js and PDF should not be translated
 policy-PDFjs = Deshabilitar o configurar PDF.js, el visor de PDF integrado en { -brand-short-name }.
 policy-Permissions2 = Configurar permisos para cámara, micrófono, ubicación, notificaciones y reproducción automática.
+policy-PictureInPicture = Activa o desactiva Picture-in-Picture.
 policy-PopupBlocking = Permitir que ciertos sitios web muestren ventanas emergentes de manera por defecto.
 policy-Preferences = Fija y bloquea el valor para un subconjunto de preferencias.
 policy-PromptForDownloadLocation = Preguntar dónde guardar archivos al descargar.

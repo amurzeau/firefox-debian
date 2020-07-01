@@ -444,7 +444,7 @@
 <!ENTITY openMessageWindowCmd.accesskey "О">
 <!ENTITY openMessageWindowCmd.key "o">
 <!ENTITY openInConversationCmd.label "Открыть в разговоре">
-<!ENTITY openInConversationCmd.accesskey "г">
+<!ENTITY openInConversationCmd.accesskey "а">
 <!ENTITY openInConversationCmd.key "o">
 <!ENTITY openAttachmentListCmd.label "Вложения">
 <!ENTITY openAttachmentListCmd.accesskey "ж">

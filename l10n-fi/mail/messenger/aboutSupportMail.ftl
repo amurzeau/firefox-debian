@@ -15,3 +15,4 @@ accounts-auth-method = Todennustapa
 accounts-default = Oletus?
 identity-name = Identiteetti
 send-via-email = Lähetä sähköpostilla
+app-basics-telemetry = Kaukomittaustiedot

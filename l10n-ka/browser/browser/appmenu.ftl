@@ -5,11 +5,12 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = გადმოტანა სხვა ბრაუზერიდან…
 appmenuitem-protection-report-title = პირადულობის დაცვა
 appmenuitem-protection-report-tooltip =
     .tooltiptext = პირადულობის ანგარიშზე გადასვლა
+appmenuitem-protection-dashboard-title = დაცვის მაჩვენებლები
+appmenuitem-customize-mode =
+    .label = მორგება…
 
 ## Zoom Controls
 
@@ -22,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = დასინქრონება ახლავე
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = რა სიახლეებია
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = ცნობები, ახალ შესაძლებლობებზე
+    .accesskey = ც

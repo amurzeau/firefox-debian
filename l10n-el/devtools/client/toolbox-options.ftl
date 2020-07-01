@@ -103,6 +103,8 @@ options-enable-chrome-tooltip =
 options-enable-remote-label = Ενεργοποίηση απομακρυσμένης αποσφαλμάτωσης
 options-enable-remote-tooltip =
     .title = Η ενεργοποίηση αυτής της επιλογής θα επιτρέψει στα εργαλεία προγραμματιστή να αποσφαλματώσουν μια απομακρυσμένη παρουσία, όπως το Firefox OS
+options-enable-remote-tooltip2 =
+    .title = Η ενεργοποίηση αυτής της επιλογής θα επιτρέψει τον εντοπισμό σφαλμάτων σε αυτό το παράθυρο του προγράμματος περιήγησης απομακρυσμένα
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = Ενεργοποίηση Service Workers μέσω HTTP (όταν είναι ανοικτή η εργαλειοθήκη)
 options-enable-service-workers-http-tooltip =
@@ -113,11 +115,6 @@ options-source-maps-tooltip =
     .title = Αν ενεργοποιήσετε αυτή την επιλογή, οι πηγές θα αντιστοιχιστούν στα εργαλεία.
 # The message shown for settings that trigger page reload
 options-context-triggers-page-refresh = * Τρέχουσα συνεδρία μόνο, επαναφορτώνει τη σελίδα
-
-##
-
-# The heading for the Debugger section
-options-debugger-label = Αποσφαλμάτωση
 # The label for the checkbox that toggles the display of the platform data in the
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config
 options-show-platform-data-label = Εμφάνιση δεδομένων πλατφόρμας Gecko

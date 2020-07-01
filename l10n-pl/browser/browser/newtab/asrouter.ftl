@@ -130,10 +130,6 @@ cfr-whatsnew-lockwise-take-link-text = Pobierz aplikację
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Pisz mniej, znajdź więcej za pomocą paska adresu
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Otwieraj najczęściej odwiedzane strony jednym kliknięciem na pasku adresu. Wyszukuj szybciej dzięki wynikom z { $searchEngineName } i historii przeglądania.
-cfr-whatsnew-searchbar-body-generic = Otwieraj najczęściej odwiedzane strony jednym kliknięciem na pasku adresu. Wyszukuj szybciej dzięki wynikom z historii przeglądania.
 cfr-whatsnew-searchbar-body-topsites = Teraz wystarczy kliknąć pasek adresu, a pojawią się odnośniki do najczęściej odwiedzanych stron.
 cfr-whatsnew-searchbar-icon-alt-text = Ikona lupy
 
@@ -243,3 +239,15 @@ cfr-whatsnew-passwords-icon-alt = Ikona potencjalnie niebezpiecznego hasła
 cfr-whatsnew-pip-fullscreen-header = Przełącz obraz w obrazie na pełny ekran
 cfr-whatsnew-pip-fullscreen-body = Po wyciągnięciu wideo do ruchomego okienka można teraz kliknąć je podwójnie, aby włączyć tryb pełnoekranowy.
 cfr-whatsnew-pip-fullscreen-icon-alt = Ikona obrazu w obrazie
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Ochrona w pigułce
+cfr-whatsnew-protections-body = Panel ochrony zawiera podsumowanie informacji o wyciekach danych i zarządzaniu hasłami. Można teraz śledzić, ile wycieków danych rozwiązano, a także zobaczyć, czy któreś z zachowanych haseł mogło paść ofiarą wycieku.
+cfr-whatsnew-protections-cta-link = Otwórz panel ochrony
+cfr-whatsnew-protections-icon-alt = Ikona tarczy
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Lepsza obsługa plików PDF
+cfr-whatsnew-better-pdf-body = Dokumenty PDF są teraz otwierane bezpośrednio w przeglądarce { -brand-short-name }, ułatwiając z nimi pracę.

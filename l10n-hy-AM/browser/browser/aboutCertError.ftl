@@ -55,6 +55,10 @@ cert-error-details-hsts-label = HTTP խիստ փոխանցման անվտանգ�
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Վկայագրի նպատակ.
+open-in-new-window-for-csp-or-xfo-error = Բացել կայքը նոր պատուհանում
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = Ձեր անվտանգությունը պաշտպանելու համար { $hostname }-ը թույլ չի տա, որ { -brand-short-name }-ը ցուցադրի էջը, եթե մեկ այլ կայք ներկառուցել է այն: Այս էջը տեսնելու համար հարկավոր է այն բացել նոր պատուհանում:
 
 ## Messages used for certificate error titles
 
@@ -85,6 +89,7 @@ unknownSocketType-title = Սպասարկիչի պատասխանը անհասկա
 nssFailure2-title = Չհաջողվեց կատարել Պաշտպանված կապակցում
 cspBlocked-title = Արգելափակվել է Կոնտենտի Անվտանգության Քաղաքականության կողմից
 xfoBlocked-title = Արգելափակված է X-Frame-Options քաղաքականությամբ
+csp-xfo-error-title = { -brand-short-name } Հնարավոր չէ բացել այս էջը
 corruptedContentError-title = Բովանդակությունը վնասված է
 remoteXUL-title = Հեռադիր XUL
 sslv3Used-title = Չհաջողվեց անվտանգ կապակցումը

@@ -37,10 +37,14 @@ etp-card-title = Plibonigita protekto kontraŭ spurado
 etp-card-content = Spuriloj sekvas vin en la reto por kolekti informon pri via kutima retumo kaj pri viaj interesoj. { -brand-short-name } blokas plurajn el tiuj spuriloj kaj aliajn malicajn skriptojn.
 protection-report-webpage-title = Panelo de protektoj
 protection-report-page-content-title = Panelo de protektoj
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } povas malantaŭ la scenejo protekti vian privatecon dum vi retumas. Tio ĉi estas personecigita resumo de tiuj protektoj, kaj inkluzivas la ilojn por regi vian sekurecon en la reto.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = Malantaŭ la scenejo { -brand-short-name } protektas vian privatecon dum vi retumas. Tio ĉi estas personecigita resumo de tiuj protektoj, kaj inkluzivas la ilojn por regi vian sekurecon en la reto.
+protection-report-settings-link = Administri vian privatecajn kaj sekurecajn agordojn
 etp-card-title-always = Plibonigita protekto kontraŭ spurado: ĉiam ŝaltita
 etp-card-title-custom-not-blocking = Plibonigita protekto kontraŭ spurado: MALŜALTITA
-etp-card-content-summary = Kiam nekonataj entrepenoj volas sekrete sekvi vin tra la reto, { -brand-short-name } aŭtomate haltigas multajn el ili.
+etp-card-content-description = { -brand-short-name } aŭtomate evitas ke entreprenoj sekrete sekvu vin tra la reto.
 protection-report-etp-card-content-custom-not-blocking = Ĉiuj protektoj estas nun malŝaltitaj. Elektu la spurilojn, kiujn vi volas bloki, per administrado de la agordoj pri protekto de { -brand-short-name }.
 protection-report-manage-protections = Administri agordojn
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -58,8 +62,6 @@ fingerprinter-tab-title = Identigiloj de ciferecaj spuroj
 fingerprinter-tab-content = La identigiloj de ciferecaj spuroj kolektas agordojn de via retumilo kaj komputilo por krei profilon de vi. Per tiu cifereca spuro, ili povas sekvi vin tra malsamaj retejoj.<a data-l10n-name="learn-more-link">Pli da informo</a>
 cryptominer-tab-title = Miniloj de ĉifromono
 cryptominer-tab-content = La miniloj de ĉifromono uzas la kalkulpovon de via komputilo por mini ciferecan monon. Minado de ĉifromono eluzas vian baterion, malrapidigas vian komputilon kaj povas konsumi pli da elekto, kiun vi devos pagi. <a data-l10n-name="learn-more-link">Pli da informo</a>
-protections-close-button =
-    .aria-label = Fermi
 protections-close-button2 =
     .aria-label = Fermi
     .title = Fermi
@@ -120,6 +122,8 @@ monitor-link = Kiel funkcias tio
 monitor-header-content-no-account = Kontrolu { -monitor-brand-name } por vidi ĉu vi estis viktimo de konata datumfuĝo kaj ricevu atentigojn pri novaj datumfuĝoj.
 monitor-header-content-signed-in = { -monitor-brand-name } avertas vin se viaj informoj aperas en konata datumfuĝo.
 monitor-sign-up = Abonu la atentigojn pri datumfuĝoj
+monitor-sign-up-link = Aboni la atentigojn pri datumfuĝoj
+    .title = Aboni la atentigojn pri datumfuĝoj en { -monitor-brand-name }
 auto-scan = Aŭtomate kontrolitaj hodiaŭ
 monitor-emails-tooltip =
     .title = Vidi prizorgatajn retpoŝtajn adresojn en { -monitor-brand-short-name }
@@ -144,6 +148,14 @@ info-known-breaches-found =
        *[other] konataj datumfuĝoj elmetis viajn informojn
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] Konata datumfuĝo markita kiel solvita
+       *[other] Konataj datumfuĝoj markitaj kiel solvitaj
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -160,6 +172,41 @@ password-warning =
         [one] Konservita legitimilo estis eble elmetita de datumfuĝo. Ŝanĝu tiun ĉi pasvorton por pli bona sekureco reta. <a data-l10n-name="lockwise-link">Vidi konservitajn legitimiloj</a>
        *[other] Konservitaj legitimiloj estis eble elmetitaj de datumfuĝo. Ŝanĝu tiujn ĉi pasvortojn por pli bona sekureco reta. <a data-l10n-name="lockwise-link">Vidi konservitajn legitimiloj</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] Pasvorto elmetita en ne solvitaj datumfuĝoj
+       *[other] Pasvortoj elmetitaj en ne solvitaj datumfuĝoj
+    }
+monitor-no-breaches-title = Bonaj novaĵoj!
+monitor-no-breaches-description = Vi ne aperas en iu ajn konata datumfuĝo. Se tio ŝanĝiĝas, ni sciigos vin pri tio.
+monitor-view-report-link = Vidi raporton
+    .title = Solvi datumfuĝojn en { -monitor-brand-short-name }
+monitor-breaches-unresolved-title = Solvu viajn datumfuĝojn
+monitor-breaches-unresolved-description = Post revizio de la datumfuĝaj detaloj kaj farinte ion por protekti viajn informojn, vi povas marki datumfuĝojn kiel solvitajn.
+monitor-manage-breaches-link = Administri datumfuĝoj
+    .title = Administri datumfuĝoj en { -monitor-brand-short-name }
+monitor-breaches-resolved-title = Tre bone! Vi solvis ĉiujn konatajn datumfuĝojn.
+monitor-breaches-resolved-description = Se via retadreso aperas en nova datumfuĝo, ni sciigos vin pri tio.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+        [one] { $numBreachesResolved } el { $numBreaches } datumfuĝo markitaj kiel solvita
+       *[other] { $numBreachesResolved } el { $numBreaches } datumfuĝoj markitaj kiel solvitaj
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved }% finita
+monitor-partial-breaches-motivation-title-start = Bona komenco!
+monitor-partial-breaches-motivation-title-middle = Daŭrigu tiel!
+monitor-partial-breaches-motivation-title-end = Preskaŭ finita! Ne ĉesu.
+monitor-partial-breaches-motivation-description = Solvu viajn ceterajn datumfuĝoj en { -monitor-brand-short-name }.
+monitor-resolve-breaches-link = Solvi datumfuĝoj
+    .title = Solvi datumfuĝoj en { -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

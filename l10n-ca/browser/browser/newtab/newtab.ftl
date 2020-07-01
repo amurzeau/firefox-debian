@@ -57,6 +57,10 @@ newtab-confirm-delete-history-p2 = Aquesta acció no es pot desfer.
 newtab-menu-section-tooltip =
     .title = Obre el menú
     .aria-label = Obre el menú
+# Tooltip for dismiss button
+newtab-dismiss-button-tooltip =
+    .title = Elimina
+    .aria-label = Elimina
 # This tooltip is for the context menu of Pocket cards or Topsites
 # Variables:
 #  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
@@ -85,6 +89,7 @@ newtab-menu-show-privacy-info = Els nostres patrocinadors i la vostra privadesa
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = Fet
+newtab-privacy-modal-button-manage = Gestiona els paràmetres de contingut patrocinat
 newtab-privacy-modal-header = La vostra privadesa és important.
 newtab-privacy-modal-paragraph-2 =
     A més de mostrar els articles més captivadors, també us mostrem contingut
@@ -132,6 +137,10 @@ newtab-label-download = Baixat
 # Variables:
 #  $sponsorOrSource (String): This is the name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · Patrocinat
+# This string is used at the bottom of story cards to indicate sponsored content
+# Variables:
+#  $sponsor (String): This is the name of a sponsor
+newtab-label-sponsored-by = Patrocinat per { $sponsor }
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -184,7 +193,6 @@ newtab-discovery-empty-section-topstories-timed-out = Ups! Sembla que aquesta se
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = Temes populars:
 newtab-pocket-more-recommendations = Més recomanacions
-newtab-pocket-whats-pocket = Què és el { -pocket-brand-name }?
 newtab-pocket-learn-more = Més informació
 newtab-pocket-cta-button = Obtén el { -pocket-brand-name }
 newtab-pocket-cta-text = Deseu els vostres articles preferits al { -pocket-brand-name } i gaudiu d'altres recomanacions fascinants.

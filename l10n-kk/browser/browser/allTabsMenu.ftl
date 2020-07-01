@@ -4,6 +4,12 @@
 
 all-tabs-menu-undo-close-tab =
     .label = Жабылған бетті қайтару
+all-tabs-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Жабылған бетті қайтару
+           *[other] Жабылған беттерді қайтару
+        }
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = Беттерден іздеу

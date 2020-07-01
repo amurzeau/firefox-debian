@@ -26,3 +26,5 @@ process-type-webisolated = Agbur web yettwaɛezlen
 process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Agrudmawan
+# process preallocated; may change to other types
+process-type-prealloc = Adeg uzwir

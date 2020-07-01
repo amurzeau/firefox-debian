@@ -9,15 +9,6 @@
 remove-address-row-type = Usuń adresy z pola „{ $type }”
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
-address-input-type =
-    { $count ->
-        [0] Puste pole „{ $type }”
-        [one] Pole „{ $type }” z jednym adresem
-        [few] Pole „{ $type }” z { $count } adresami
-       *[many] Pole „{ $type }” z { $count } adresami
-    }
-#   $type (String) - the type of the addressing row
-#   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
         [0] { $type }
@@ -45,3 +36,28 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Przenieś do pola „Ukryta kopia”
     .accesskey = U
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [1] { $count } załącznik
+            [one] { $count } załącznik
+            [few] { $count } załączniki
+           *[many] { $count } załączników
+        }
+    .accesskey = z
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [1] { $count } załącznik
+            [one] { $count } załącznik
+            [few] { $count } załączniki
+           *[many] { $count } załączników
+        }
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+button-return-receipt =
+    .label = Potwierdzenie
+    .tooltiptext = Żądaj potwierdzenia dostarczenia tej wiadomości

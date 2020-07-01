@@ -14,3 +14,20 @@ toolbar-context-menu-select-all-tabs =
 toolbar-context-menu-undo-close-tab =
     .label = మూసిన ట్యాబుని తిరిగి తెరువు
     .accesskey = U
+
+toolbar-context-menu-manage-extension =
+    .label = పొడగింత నిర్వహణ
+    .accesskey = E
+
+# Can appear on the same context menu as menubarCmd ("Menu Bar") and
+# personalbarCmd ("Bookmarks Toolbar"), so they should have different
+# access keys.
+toolbar-context-menu-pin-to-overflow-menu =
+    .label = Overflow మెనూకు పిన్ చెయ్
+    .accesskey = P
+toolbar-context-menu-remove-from-toolbar =
+    .label = పనిముట్ల పట్టీ నుండి తీసివేయి
+    .accesskey = R
+toolbar-context-menu-view-customize-toolbar =
+    .label = అభిమతీకరించు…
+    .accesskey = C

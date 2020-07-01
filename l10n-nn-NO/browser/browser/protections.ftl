@@ -37,10 +37,14 @@ etp-card-title = Utvida sporingsvern
 etp-card-content = Sporfølgjarar følgjer deg rundt på nettet for å samle informasjon om surfevanane og interessene dine. { -brand-short-name } blokkerer mange av desse sporfølgjarane og andre vondsinna skript.
 protection-report-webpage-title = Tryggingspanel
 protection-report-page-content-title = Tryggingspanel
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } kan ta vare på personvernet ditt bak kulissene medan du surfar. Dette er ei personleg oppsummering av desse verna, inkludert verktøy for å ta kontroll over sikkerheita di på nettet.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } tar vare på personvernet ditt bak kulissene medan du surfar. Dette er ei personleg oppsummering av desse verna, inkludert verktøy for å ta kontroll over dsikkerheita di på nettet.
+protection-report-settings-link = Handter personvern- og tryggingsinnstillingar
 etp-card-title-always = Utvida sporingsvern: Alltid på
 etp-card-title-custom-not-blocking = Utvida sporingsvern: AV
-etp-card-content-summary = Når ukjende selskap prøver å følgje deg, i løynd, rundt om på nettet, stoppar { -brand-short-name } mange av dei automatisk.
+etp-card-content-description = { -brand-short-name } stoppar selskap automatisk frå å følgje deg rundt på nettet i det skjulte.
 protection-report-etp-card-content-custom-not-blocking = Alt vern er for tida slått av. Vel kva for sporfølgjarar du vil blokkere ved å handtere innstillingar for vern i { -brand-short-name }.
 protection-report-manage-protections = Handter innstillingar
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -58,8 +62,6 @@ fingerprinter-tab-title = Fingerprinters
 fingerprinter-tab-content = Fingerprinters samlar innstillingar frå nettlesaren din og datamaskina di for å lage ein profil av deg. Ved hjelp av dette digitale fingeravtrykket kan dei spore deg på forskjellige nettstadar. <a data-l10n-name="learn-more-link">Les meir</a>
 cryptominer-tab-title = Kryptominarar
 cryptominer-tab-content = Kryptominarar brukar datakrafta til systemet for å utvinne digitale pengar. Kryptomineringsskript tappar batteriet, gjer datamaskina tregare og kan auke straumrekninga. <a data-l10n-name="learn-more-link">Les meir</a>
-protections-close-button =
-    .aria-label = Lat att
 protections-close-button2 =
     .aria-label = Lat att
     .title = Lat att
@@ -120,6 +122,8 @@ monitor-link = Korleis det verkar
 monitor-header-content-no-account = SJekk { -monitor-brand-name } for å sjå om du har vore ein del av ein datalekkasje, og få varsel om nye datalekkasjar.
 monitor-header-content-signed-in = { -monitor-brand-name } åtvarar deg om informasjonen din har dukka opp i ein kjend datalekkasje.
 monitor-sign-up = Registrer deg for datalekkasjevarsel
+monitor-sign-up-link = Registrer deg for datalekkasjevarsel
+    .title = Registrer deg for datalekkasjevarsel på { -monitor-brand-name }
 auto-scan = Automatisk skanna i dag
 monitor-emails-tooltip =
     .title = Vis overvaka e-postadresser på { -monitor-brand-short-name }
@@ -144,6 +148,14 @@ info-known-breaches-found =
        *[other] Kjende datalekkasjar har eksponert informasjonen din
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] Kjend datalekkasje merkt som løyst
+       *[other] Kjende datalekkasjar merkte som løyste
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -160,6 +172,40 @@ password-warning =
         [one] Lagra innlogging kan ha blitt eksponert i ein datalekkasje. Endre dette passordet for betre sikkerheit på nettet <a data-l10n-name="lockwise-link">Vis lagra innloggingar</a>
        *[other] Lagra innloggingar kan ha blitt eksponerte i ein datalekkasje. Endre desse passorda for betre sikkerheit på nettet <a data-l10n-name="lockwise-link">Vis lagra innloggingar</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] Passord eksponerte i uløyste datalekkasjar
+       *[other] Passord eksponerte i uløyste datalekkasjar
+    }
+monitor-no-breaches-title = Gode nyheiter!
+monitor-no-breaches-description = Du har ingen kjende datalekkasjear. Om det endrar seg, vil vi gi deg beskjed.
+monitor-view-report-link = Vis rapport
+    .title = Løys datalekkasjar på { -monitor-brand-short-name }
+monitor-breaches-unresolved-title = Løys datalekkasjane dine
+monitor-breaches-unresolved-description = Etter å ha gått gjennom datalekkasje-detaljar, og sett i verk tiltak for å ta vare på den personlege informasjonen din, kan du merke datalekkasjar som løyste.
+monitor-manage-breaches-link = Handter datalekkasjer
+    .title = Handter datalekkasjar på { -monitor-brand-short-name }
+monitor-breaches-resolved-title = Bra! Du har løyst alle kjende datalekkasjar.
+monitor-breaches-resolved-description = Vi vil gi deg beskjed om e-postadressa di dukkar opp i nye datalekkasjar.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+       *[other] { $numBreachesResolved } av { $numBreaches } datalekkasjar er merkte som løyste
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved } % fullført
+monitor-partial-breaches-motivation-title-start = Bra start!
+monitor-partial-breaches-motivation-title-middle = Hald fram slik!
+monitor-partial-breaches-motivation-title-end = Nesten ferdig! Hald fram slik.
+monitor-partial-breaches-motivation-description = Løys resten av datalekkasjane dine på { -monitor-brand-short-name }.
+monitor-resolve-breaches-link = Løys datalekkasjar
+    .title = Løys datalekkasjar på { -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

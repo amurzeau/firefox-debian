@@ -184,7 +184,7 @@ cfr-doorhanger-send-tab-ok-button = Send Tab wopytaś
 ## Firefox Send
 
 cfr-doorhanger-firefox-send-header = Źělśo toś ten PDF wěsće
-cfr-doorhanger-firefox-send-body = Šćitajśo swoje sensibelne dokumenty pśed narskimi póglědnjenjami z koděrowanim kóńc do kóńca a z wótkazom, kótaryž se zgubijo, gaž sćo gótowy.
+cfr-doorhanger-firefox-send-body = Šćitajśo swóje sensibelne dokumenty pśed narskimi póglědnjenjami z koděrowanim kóńc do kóńca a z wótkazom, kótaryž se zgubijo, gaž sćo gótowy.
 cfr-doorhanger-firefox-send-ok-button = { -send-brand-name } wopytaś
     .accesskey = o
 
@@ -238,3 +238,15 @@ cfr-whatsnew-passwords-icon-alt = Symbol kluca zranliwego gronidła
 cfr-whatsnew-pip-fullscreen-header = Połnu wobrazowku wobraz-we-wobrazu wužywaś
 cfr-whatsnew-pip-fullscreen-body = Gaž wideo do znošujucego se wokna tkajośo, móžośo dwójcy na to wokno kliknuś, aby se jo w połnej wobrazowce woglědał.
 cfr-whatsnew-pip-fullscreen-icon-alt = Symbol wobraz-we-wobrazu
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Šćity na jadno póglědnjenje
+cfr-whatsnew-protections-body = Pśeglěd šćitow zespominujuce rozpšawy wó datowych źěrach a zastojanju gronidłow. Móžośo něnto slědowaś, wjele źěrow sćo rozwězał a wiźeś, lěc jadno abo wěcej gronidłow jo było datowej źěrje wustajone.
+cfr-whatsnew-protections-cta-link = Pśeglěd šćitow pokazaś
+cfr-whatsnew-protections-icon-alt = Šćitowy symbol
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Lěpše PDF-dožywjenje
+cfr-whatsnew-better-pdf-body = PDF-dokumenty se něnto direktnje w { -brand-short-name } wócynjaju, bźeztogo aby musył źěłowy wótběg pśetergnuś.

@@ -22,6 +22,7 @@ set-password-new-password = Ingresa nueva contraseña:
 set-password-reenter-password = Re-ingresa contraseña:
 set-password-meter = Medidor de calidad de la contraseña
 set-password-meter-loading = Cargando
+master-password-admin = Tu administrador requiere que tengas configurada una contraseña maestra para guardar las contraseñas.
 master-password-description = Una contraseña maestra se usa para proteger información sensible como contraseñas de sitios. Si creas una contraseña maestra, deberás introducirla una vez por sesión cuando { -brand-short-name } recupere la información que estás protegiendo.
 master-password-warning = Procura recordar bien o escribir en un lugar seguro esta contraseña ya que, si la olvidas, no podrás acceder a ninguna información protegida por ésta.
 remove-password =

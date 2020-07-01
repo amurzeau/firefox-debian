@@ -29,7 +29,13 @@ graph-total-tracker-summary =
 # Text displayed instead of the graph when in Private Mode
 graph-private-window = { -brand-short-name } nadále blokuje sledovací prvky v anonymních oknech, ale neukládá si informace, co bylo zablokováno.
 # Weekly summary of the graph when the graph is empty in Private Mode
-graph-week-summary-private-window = Sledovací prvky zablokované tento týden
+graph-week-summary-private-window =
+    Sledovací prvky, které { -brand-short-name.gender ->
+        [masculine] { -brand-short-name } během tohoto týdne zablokoval
+        [feminine] { -brand-short-name } během tohoto týdne zablokovala
+        [neuter] { -brand-short-name } během tohoto týdne zablokovalo
+       *[other] aplikace { -brand-short-name } během tohoto týdne zablokovala
+    }
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 # The category name in the <b> tag will be bold.
@@ -43,6 +49,16 @@ protection-report-page-title = Ochrana soukromí
 protection-report-content-title = Ochrana soukromí
 etp-card-title = Rozšířená ochrana proti sledování
 etp-card-content = Sledovací prvky sbírají informace, co a kde na internetu děláte, jaké máte návyky a co vás zajímá. { -brand-short-name } blokuje mnoho takových prvků i dalších škodlivých skriptů.
+protection-report-webpage-title = Přehled ochrany soukromí
+protection-report-page-content-title = Přehled ochrany soukromí
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
+protection-report-page-summary = { -brand-short-name } chrání vaše soukromí během prohlížení. Toto je přehled ochranných opatření a nástrojů, se kterými máte kontrolu nad svým online zabezpečením.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } chrání vaše soukromí během prohlížení. Toto je přehled ochranných opatření a nástrojů, se kterými máte kontrolu nad svým online zabezpečením.
+protection-report-settings-link = Nastavení soukromí a zabezpečení
+etp-card-title-always = Rozšířená ochrana proti sledování: vždy zapnutá
+etp-card-title-custom-not-blocking = Rozšířená ochrana proti sledování: vypnutá
+etp-card-content-description = { -brand-short-name } automaticky zabrání společnostem v tajném sledování vašeho prohlížení webu.
 protection-report-etp-card-content-custom-not-blocking =
     Všechny ochrany jsou v tuto chvíli vypnuté. V nastavení { -brand-short-name.gender ->
         [masculine] { -brand-short-name(case: "gen") }
@@ -66,8 +82,6 @@ fingerprinter-tab-title = Vytváření otisku prohlížeče
 fingerprinter-tab-content = Sběrem informací o vašem prohlížeči a počítači lze vytvořit unikátní otisk a ten pak použít k vašemu sledování napříč různými a nijak nesouvisejícími servery a webovými stránkami. <a data-l10n-name="learn-more-link">Zjistit více</a>
 cryptominer-tab-title = Těžba kryptoměn
 cryptominer-tab-content = Těžba kryptoměn využívá výpočetní výkon vašeho počítače k získávání digitálních měn. Běžící skripty vybíjí vaši baterii a zpomalují váš počítač. <a data-l10n-name="learn-more-link">Zjistit více</a>
-protections-close-button =
-    .aria-label = Zavřít
 protections-close-button2 =
     .aria-label = Zavřít
     .title = Zavřít
@@ -107,6 +121,7 @@ lockwise-scanned-text-breached-logins =
 lockwise-scanned-text-no-breached-logins =
     { $count ->
         [one] Vaše heslo je bezpečně uloženo.
+        [few] Vaše hesla jsou bezpečně uložena.
        *[other] Vaše hesla jsou bezpečně uložena.
     }
 lockwise-how-it-works-link = Jak to funguje
@@ -126,7 +141,15 @@ monitor-link = Jak to funguje
 monitor-header-content-no-account = { -monitor-brand-name } zkotrolujte, zda byly vaše údaje součástí nějakého známého úniku dat, a může vás i upozornit, pokud se vyskytnou nějakém novém.
 monitor-header-content-signed-in = { -monitor-brand-name } vás upozorní, pokud se nějaké vaše údaje objeví ve známém úniku dat.
 monitor-sign-up = Nastavit upozornění na úniky dat
+monitor-sign-up-link = Nastavit upozornění na úniky dat
+    .title = Nastavit v { -monitor-brand-name(case: "loc") } upozornění na úniky dat
 auto-scan = Automaticky skenováno: dnes
+monitor-emails-tooltip =
+    .title = Zobrazit e-mailové adresy sledované službou { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Zobrazit uniky dat známé službě { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Zobrazit ve službě { -monitor-brand-short-name } seznam uniklých hesel
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
@@ -136,6 +159,10 @@ info-monitored-emails = Počet sledovaných e-mailových adres
 # your localization, because it would result in the number showing twice.
 info-known-breaches-found = Počet známých úniků dat, které obsahují vaše údaje
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved = Počet známých úniků dat označených jako vyřešené
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found = Počet vašich hesel vyzrazených ve všech únicích
@@ -144,6 +171,48 @@ full-report-link = Zobrazit kompletní přehled ve <a data-l10n-name="monitor-in
 # of saved logins which may have been exposed. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 password-warning = Počet přihlašovacích údajů, které byly ohroženy nějakým únikem dat. Z bezpečnostních důvodů doporučujeme taková hesla změnit. <a data-l10n-name="lockwise-link">Zobrazit uložené přihlašovací údaje</a>
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved = Počet hesel uniklých v nevyřešených únicích
+monitor-no-breaches-title = Dobré zprávy
+monitor-no-breaches-description = Nemáte žádné známé úniky dat. Pokud se to změní, dáme vám vědět.
+monitor-view-report-link = Zobrazit podrobnosti
+    .title = Vyřešit hlášení úniků v { -monitor-brand-short-name(case: "loc") }
+monitor-breaches-unresolved-title = Vyřešte důsledky úniků dat
+monitor-breaches-unresolved-description = Po přezkoumání podrobností o úniku a přijetí opatření k ochraně vašich dat můžete označit úniky jako vyřešené.
+monitor-manage-breaches-link = Správa úniků
+    .title = Správa informací o únicích s { -monitor-brand-short-name(case: "ins") }
+monitor-breaches-resolved-title = Vyřešili jste všechny známé úniky dat.
+monitor-breaches-resolved-description = Pokud se vaše e-mailová adresa objeví v nějakém novém úniku, dáme vám vědět.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreachesResolved ->
+        [0] Žádný
+        [one] Jeden
+        [few] { $numBreachesResolved }
+       *[other] { $numBreachesResolved }
+    } { $numBreaches ->
+        [one] z jednoho úniku
+        [few] ze { $numBreaches } úniků
+       *[other] z { $numBreaches } úniků
+    } { $numBreachesResolved ->
+        [0] jste neoznačili jako vyřešený
+        [one] jste označili jako vyřešený
+        [few] jste označili jako vyřešené
+       *[other] jste označili jako vyřešené
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = Hotovo na { $percentageResolved } %
+monitor-partial-breaches-motivation-title-start = Skvělý začátek
+monitor-partial-breaches-motivation-title-middle = Jen tak dál
+monitor-partial-breaches-motivation-title-end = Máte skoro hotovo, jen tak dál.
+monitor-partial-breaches-motivation-description = Vyřešte zbytek úniků díky službě { -monitor-brand-short-name }.
+monitor-resolve-breaches-link = Vyřešit úniky
+    .title = Vyřešte úniky díky { -monitor-brand-short-name(case: "dat") }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

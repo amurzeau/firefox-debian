@@ -9,16 +9,6 @@
 remove-address-row-type = Polo typa { $type } wotstronić
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
-address-input-type =
-    { $count ->
-        [0] Pródzne zapodawanske polo typa { $type }
-        [one] Zapodawanske polo typa { $type } z jednej adresu
-        [two] Zapodawanske polo typa { $type } z { $count } adresomaj
-        [few] Zapodawanske polo typa { $type } z { $count } adresami
-       *[other] Zapodawanske polo typa { $type } z { $count } adresami
-    }
-#   $type (String) - the type of the addressing row
-#   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
         [0] { $type }
@@ -48,3 +38,30 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Do schowaneje kopije přesunyć
     .accesskey = s
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [1] { $count } přidatk
+            [one] { $count } přidatk
+            [two] { $count } přidatkaj
+            [few] { $count } přidatki
+           *[other] { $count } přidatkow
+        }
+    .accesskey = d
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [1] { $count } přidatk
+            [one] { $count } přidatk
+            [two] { $count } přidatkaj
+            [few] { $count } přidatki
+           *[other] { $count } přidatkow
+        }
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+button-return-receipt =
+    .label = Kwitowanka
+    .tooltiptext = Kwitowanku za tutu powěsć požadać

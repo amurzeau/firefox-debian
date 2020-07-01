@@ -5,11 +5,12 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = Enporti el alia retumilo…
 appmenuitem-protection-report-title = Protekto de privateco
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Vidu vian raporton pri privateco
+appmenuitem-protection-dashboard-title = Panelo de protektoj
+appmenuitem-customize-mode =
+    .label = Personecigi…
 
 ## Zoom Controls
 
@@ -22,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = Speguli nun
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Novaĵoj
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = Sciigi pri novaj trajtoj
+    .accesskey = S

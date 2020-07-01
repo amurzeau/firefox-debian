@@ -125,10 +125,6 @@ cfr-whatsnew-lockwise-take-link-text = Obter a aplicação
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Escreva menos e encontre mais, com a barra de endereço
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Aceda aos sites que mais utiliza, com um único clique na barra de endereço. Encontre coisas mais rapidamente com os resultados do { $searchEngineName } e o seu histórico de navegação.
-cfr-whatsnew-searchbar-body-generic = Aceda aos sites que mais utiliza, com um único clique na barra de endereço. Encontre coisas mais rapidamente com os resultados de pesquisa do seu histórico de navegação.
 cfr-whatsnew-searchbar-body-topsites = Agora, basta selecionar a barra de endereço e será expandida uma caixa com ligações para os principais sites.
 cfr-whatsnew-searchbar-icon-alt-text = Ícone de lupa
 
@@ -228,7 +224,7 @@ cfr-whatsnew-lockwise-icon-alt = Ícone do { -lockwise-brand-short-name }
 ## Vulnerable Passwords message
 
 cfr-whatsnew-passwords-header = Receba alertas sobre palavras-passe vulneráveis
-cfr-whatsnew-passwords-body = Os piratas sabem que as pessoas reutilizam as mesmas palavras-passe. Se utilizou a mesma palavra-passe em vários sites e um desses sites teve uma falha de segurança de dados, irá ver um alerta no { -lockwise-brand-short-name } para alterar a sua palavra-passe nesses sites.
+cfr-whatsnew-passwords-body = Os piratas sabem que as pessoas reutilizam as mesmas palavras-passe. Se utilizou a mesma palavra-passe em vários sites e um desses sites teve uma violação de dados, irá ver um alerta no { -lockwise-brand-short-name } para alterar a sua palavra-passe nesses sites.
 cfr-whatsnew-passwords-icon-alt = Ícone de chave de palavra-passe vulnerável
 
 ## Picture-in-Picture fullscreen message
@@ -236,3 +232,15 @@ cfr-whatsnew-passwords-icon-alt = Ícone de chave de palavra-passe vulnerável
 cfr-whatsnew-pip-fullscreen-header = Colocar o vídeo em janela flutuante em ecrã inteiro
 cfr-whatsnew-pip-fullscreen-body = Quando coloca um vídeo numa janela flutuante, agora pode clicar duas vezes nessa janela para o vídeo ocupar o ecrã inteiro.
 cfr-whatsnew-pip-fullscreen-icon-alt = Ícone de vídeo em janela flutuante
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Visão geral das proteções
+cfr-whatsnew-protections-body = O Painel de protecão inclui relatórios resumidos sobre violações de dados e gestão de palavras-passe. Agora pode acompanhar quantas violações de dados resolveu e ver se alguma das suas palavras-passe guardadas pode ter sido exposta em uma violação de dados.
+cfr-whatsnew-protections-cta-link = Ver painel de proteções
+cfr-whatsnew-protections-icon-alt = Ícone de um escudo
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Melhor experiência com PDF
+cfr-whatsnew-better-pdf-body = Os documentos PDF são agora abertos diretamente no { -brand-short-name }, mantendo e facilitando o seu fluxo de trabalho.

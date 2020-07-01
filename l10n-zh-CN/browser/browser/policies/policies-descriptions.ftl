@@ -63,6 +63,7 @@ policy-ExtensionSettings = 管理扩展的各种安装设置。
 policy-ExtensionUpdate = 启用或禁用扩展自动更新。
 policy-FirefoxHome = 配置 Firefox 主页。
 policy-FlashPlugin = 允许或拒绝使用 Flash 插件。
+policy-Handlers = 配置默认应用程序处理方式。
 policy-HardwareAcceleration = 若为 false，将会关闭硬件加速。
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = 设置主页，可选择锁定。
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = 对指定的网站恢�
 ##
 
 policy-LocalFileLinks = 允许特定网站链接到本地文件。
+policy-MasterPassword = 要求或禁止使用主密码。
 policy-NetworkPrediction = 启用或禁用网络预测（DNS 预读取）功能。
 policy-NewTabPage = 启用或禁用“新标签页”页面。
 policy-NoDefaultBookmarks = 禁止创建 { -brand-short-name } 捆绑的默认书签以及智能书签（最常访问、最近使用的标签）。注意：此策略仅在配置文件首次运行时生效。
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = 启用密码管理器的密码保存功能。
 # PDF.js and PDF should not be translated
 policy-PDFjs = 禁用或配置 { -brand-short-name } 内置的 PDF 阅读器 PDF.js。
 policy-Permissions2 = 配置摄像头、麦克风、位置、通知和自动播放的权限。
+policy-PictureInPicture = 启用或禁用画中画。
 policy-PopupBlocking = 默认允许特定网站显示弹出式窗口。
 policy-Preferences = 设置并锁定若干首选项的值。
 policy-PromptForDownloadLocation = 下载前询问文件保存位置。

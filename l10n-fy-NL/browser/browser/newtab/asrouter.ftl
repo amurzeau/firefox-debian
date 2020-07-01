@@ -125,10 +125,6 @@ cfr-whatsnew-lockwise-take-link-text = App downloade
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Typ minder, fyn mear mei de adresbalke
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Besykje jo meas tbesochte websites mei ien klik yn de adresbalke. Fyn dingen flugger mei resultaten fan { $searchEngineName } en jo navigaasjeskiednis.
-cfr-whatsnew-searchbar-body-generic = Besykje jo meast besochte websites mei ien klik yn de adresbalke. Fyn dingen flugger mei sykresultaten út jo navigaasjeskiednis.
 cfr-whatsnew-searchbar-body-topsites = Selektearje no ienfâldichwei de adresbalke en in fek sil útwreidzje mei fluchkeppelingen nei jo topwebsites.
 cfr-whatsnew-searchbar-icon-alt-text = Fergrutglêspiktogram
 
@@ -236,3 +232,15 @@ cfr-whatsnew-passwords-icon-alt = Kaaipiktogram foar kwetsber wachtwurd
 cfr-whatsnew-pip-fullscreen-header = Meitsje picture-in-picture skermfullend
 cfr-whatsnew-pip-fullscreen-body = Wannear't jo in fideo yn in swevend skerm pleatse, kinne jo dêr no op dûbelklikke om it skermfullend te meitsjen.
 cfr-whatsnew-pip-fullscreen-icon-alt = Piktogram Picture-in-Picture
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Beskerming yn ien eachopslach
+cfr-whatsnew-protections-body = It Befeiligingsdashboerd befettet gearfettingen oer datalekken en wachtwurdbehear. Jo kinne no folgje hofolle datalekken jo oplost hawwe en besjen oft jo bewarre wachtwurden mooglik troffen binne troch in datalek.
+cfr-whatsnew-protections-cta-link = Befeiligingsdashboerd besjen
+cfr-whatsnew-protections-icon-alt = Skildpiktogram
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Bettere PDF-ûnderfining
+cfr-whatsnew-better-pdf-body = PDF-dokuminten wurde no streekrjocht iepene yn { -brand-short-name }, wêrtroch jo wurk deunby bliuwt.

@@ -2,6 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 about-logins-page-title = Inicis de sessió i contrasenyes
 
 # "Google Play" and "App Store" are both branding and should not be translated
@@ -12,9 +17,12 @@ login-app-promo-android =
     .alt = Disponible a Google Play
 login-app-promo-apple =
     .alt = Baixeu-lo de l'App Store
+
 login-filter =
     .placeholder = Cerca els inicis de sessió
+
 create-login-button = Crea un inici de sessió
+
 fxaccounts-sign-in-text = Accediu a les contrasenyes en tots els vostres dispositius
 fxaccounts-sign-in-button = Inicia la sessió al { -sync-brand-short-name }
 fxaccounts-avatar-button =
@@ -24,10 +32,8 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Obre el menú
-# This menuitem is only visible on Windows
-menu-menuitem-import = Importa contrasenyes…
 # This menuitem is only visible on Windows and macOS
-about-logins-menu-menuitem-import-from-another-browser = Importa des d'un altre navegador…
+about-logins-menu-menuitem-import-from-another-browser = Importa d'un altre navegador…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Opcions
@@ -49,7 +55,7 @@ login-list-count =
 login-list-sort-label-text = Ordena per:
 login-list-name-option = Nom (A-Z)
 login-list-name-reverse-option = Nom (Z-A)
-login-list-breached-option = Llocs web amb filtracions de dades
+about-logins-login-list-alerts-option = Alertes
 login-list-last-changed-option = Darrera modificació
 login-list-last-used-option = Darrer ús
 login-list-intro-title = No s'ha trobat cap inici de sessió
@@ -61,6 +67,8 @@ login-list-item-subtitle-new-login = Introduïu les credencials d'inici de sessi
 login-list-item-subtitle-missing-username = (cap nom d'usuari)
 about-logins-list-item-breach-icon =
     .title = Lloc web amb filtració de dades
+about-logins-list-item-vulnerable-password-icon =
+    .title = Contrasenya vulnerable
 
 ## Introduction screen
 
@@ -97,6 +105,32 @@ login-item-time-changed = Darrera modificació: { DATETIME($timeChanged, day: "n
 login-item-time-created = Creat: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
 login-item-time-used = Darrer ús: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
 
+## OS Authentication dialog
+
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
+## The macOS strings are preceded by the operating system with "Firefox is trying to "
+## and includes subtitle of "Enter password for the user "xxx" to allow this." These
+## notes are only valid for English. Please test in your respected locale.
+
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message-win = Per editar l'inici de sessió, introduïu les vostres credencials d'inici de sessió al Windows. Això ajuda a protegir la seguretat dels vostres comptes.
+# This message can be seen when attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = editar l'inici de sessió desat
+
+# This message can be seen when attempting to reveal a password in about:logins on Windows.
+about-logins-reveal-password-os-auth-dialog-message-win = Per veure la contrasenya, introduïu les vostres credencials d'inici de sessió al Windows. Això ajuda a protegir la seguretat dels vostres comptes.
+# This message can be seen when attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = mostrar la contrasenya desada
+
+# This message can be seen when attempting to copy a password in about:logins on Windows.
+about-logins-copy-password-os-auth-dialog-message-win = Per copiar la contrasenya, introduïu les vostres credencials d'inici de sessió al Windows. Això ajuda a protegir la seguretat dels vostres comptes.
+# This message can be seen when attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = copiar la contrasenya desada
+
 ## Master Password notification
 
 master-password-notification-message = Introduïu la contrasenya mestra per veure els inicis de sessió i les contrasenyes desats
@@ -127,19 +161,33 @@ about-logins-enable-password-sync-dont-ask-again-button =
 confirmation-dialog-cancel-button = Cancel·la
 confirmation-dialog-dismiss-button =
     .title = Cancel·la
+
 about-logins-confirm-remove-dialog-title = Voleu eliminar aquest inici de sessió?
 confirm-delete-dialog-message = Aquesta acció no es pot desfer.
 about-logins-confirm-remove-dialog-confirm-button = Elimina
+
 confirm-discard-changes-dialog-title = Voleu descartar els canvis no desats?
 confirm-discard-changes-dialog-message = Es perdran tots els canvis que no hàgiu desat.
 confirm-discard-changes-dialog-confirm-button = Descarta
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Filtració de dades del lloc web
 breach-alert-text = S'han filtrat o robat contrasenyes d'aquest lloc web des de la darrera vegada que en vàreu actualitzar les vostres dades d'inici de sessió. Canvieu la contrasenya per protegir el vostre compte.
-breach-alert-link = Més informació sobre aquesta filtració.
-breach-alert-dismiss =
-    .title = Tanca aquesta alerta
+about-logins-breach-alert-date = Data de la filtració: { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Vés a { $hostname }
+about-logins-breach-alert-learn-more-link = Més informació
+
+## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Contrasenya vulnerable
+about-logins-vulnerable-alert-text2 = Aquesta contrasenya s'ha utilitzat en un altre compte que probablement ha estat compromès. Reutilitzar credencials posa tots els vostres comptes en perill. Canvieu aquesta contrasenya.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Vés a { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Més informació
 
 ## Error Messages
 
@@ -148,5 +196,10 @@ breach-alert-dismiss =
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
 about-logins-error-message-duplicate-login-with-link = Ja existeix una entrada per a { $loginTitle } amb aquest nom d'usuari. <a data-l10n-name="duplicate-link">Voleu anar a l'entrada existent?</a>
+
 # This is a generic error message.
 about-logins-error-message-default = S'ha produït un error en intentar desar aquesta contrasenya.
+
+
+## Login Export Dialog
+

@@ -5,11 +5,11 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = Ion-phortaich o bhrabhsair eile…
 appmenuitem-protection-report-title = Dìon prìobhaideachd
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Tadhail air an aithisg phrìobhaideachd agad
+appmenuitem-customize-mode =
+    .label = Gnàthaich…
 
 ## Zoom Controls
 
@@ -22,3 +22,7 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = Sioncronaich an-dràsta
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Na tha ùr

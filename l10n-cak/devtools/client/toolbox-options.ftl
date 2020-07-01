@@ -103,6 +103,8 @@ options-enable-chrome-tooltip =
 options-enable-remote-label = Titz'ij ri näj chojmirisaxïk
 options-enable-remote-tooltip =
     .title = Toq nokisäx re jun cha'oj re', nuya' q'ij chi ke ri taq kisamajib'al b'anöl kema' nikichojmirisaj jun näj peraj achi'el ri Firefox OS
+options-enable-remote-tooltip2 =
+    .title = Rik'in nitzij re re' xtub'än chi xtichojmirisäx re ruperaj okik'amaya'l chi näj rub'anikil
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = Titzij ri samajela' pa samaj rik'in HTTP (Toq jaqäl ri kikaxa taq samajib'äl)
 options-enable-service-workers-http-tooltip =
@@ -113,11 +115,6 @@ options-source-maps-tooltip =
     .title = We natzïj re cha'oj xe'el re' xke'atzu' pa ri taq samajib'äl.
 # The message shown for settings that trigger page reload
 options-context-triggers-page-refresh = * Xa xe re moloj wakami chanin, tasamajib'ej ri ruxaq
-
-##
-
-# The heading for the Debugger section
-options-debugger-label = Chojmirisab'äl
 # The label for the checkbox that toggles the display of the platform data in the
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config
 options-show-platform-data-label = Tik'ut pe ri kinuk'uche'el taq tzij richin Gecko

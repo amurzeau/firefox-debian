@@ -2,6 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 about-logins-page-title = Пријаве и лозинке
 
 # "Google Play" and "App Store" are both branding and should not be translated
@@ -13,8 +19,8 @@ login-app-promo-android =
 login-app-promo-apple =
     .alt = Преузмите на App Store-у
 login-filter =
-    .placeholder = Претражи пријаве
-create-login-button = Направи нову пријаву
+    .placeholder = Претражите пријаве
+create-login-button = Направите нову пријаву
 fxaccounts-sign-in-text = Пронађите своје лозинке на свим својим уређајима
 fxaccounts-sign-in-button = Пријавите се у { -sync-brand-short-name }
 fxaccounts-avatar-button =
@@ -26,10 +32,11 @@ menu =
     .title = Отвори мени
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Увези из другог прегледача…
+about-logins-menu-menuitem-export-logins = Извезите пријаве…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Опције
-       *[other] Поставке
+       *[other] Подешавања
     }
 about-logins-menu-menuitem-help = Помоћ
 menu-menuitem-android-app = { -lockwise-brand-short-name } за Андроид
@@ -47,7 +54,7 @@ login-list-count =
     }
 login-list-sort-label-text = Поређај по:
 login-list-name-option = Назив (А-Ш)
-login-list-name-reverse-option = Име (А-Ш)
+login-list-name-reverse-option = Назив (А-Ш)
 about-logins-login-list-alerts-option = Упозорења
 login-list-last-changed-option = Последња измена
 login-list-last-used-option = Последњи пут коришћено
@@ -75,7 +82,7 @@ about-logins-intro-import = Ако су ваше пријаве сачуване
 
 ## Login
 
-login-item-new-login-title = Направи нову пријаву
+login-item-new-login-title = Направите нову пријаву
 login-item-edit-button = Уреди
 about-logins-login-item-remove-button = Уклони
 login-item-origin-label = Адреса веб странице
@@ -106,21 +113,26 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
-# This message can be seen by attempting to edit a login in about:logins
-about-logins-edit-login-os-auth-dialog-message = Потврдите ваш идентитет да уредите сачувану пријаву.
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message-win = Да бисте уредили пријаву, унесите ваше податке за пријаву у Windows. Ово помаже у заштити ваших налога.
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = уредите сачувану пријаву
-# This message can be seen by attempting to reveal a password in about:logins
-about-logins-reveal-password-os-auth-dialog-message = Потврдите ваш идентитет да откријете сачувану лозинку.
+# This message can be seen when attempting to reveal a password in about:logins on Windows.
+about-logins-reveal-password-os-auth-dialog-message-win = Да бисте видели лозинку, унестие ваше податке за пријаву у Windows. Ово помаже у заштити ваших налога.
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = откријте сачувану лозинку
-# This message can be seen by attempting to copy a password in about:logins
-about-logins-copy-password-os-auth-dialog-message = Потврдите ваш идентитет да копирате сачувану лозинку.
+# This message can be seen when attempting to copy a password in about:logins on Windows.
+about-logins-copy-password-os-auth-dialog-message-win = Да бисте копирали лозинку, унесите ваше податке за пријаву у Windows. Ово помаже у заштити ваших налога.
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = копирајте сачувану лозинку
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message-win = Да бисте извезли ваше пријаве, унесите ваше Windows податке за пријаву. Ово помаже у заштити ваших налога.
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message-macosx = извезите сачуване пријаве и лозинке
 
 ## Master Password notification
 
@@ -153,8 +165,11 @@ confirmation-dialog-cancel-button = Откажи
 confirmation-dialog-dismiss-button =
     .title = Откажи
 about-logins-confirm-remove-dialog-title = Уклонити ову пријаву?
-confirm-delete-dialog-message = Ова радња је неопозива.
+confirm-delete-dialog-message = Ова радња се не може опозвати.
 about-logins-confirm-remove-dialog-confirm-button = Уклони
+about-logins-confirm-export-dialog-title = Извезите пријаве и лозинке
+about-logins-confirm-export-dialog-message = Ваше лозинке ће бити сачуване као читљив текст (нпр. BadP@ssw0rd) тако да може погледати свако ко може да отвори извезену датотеку.
+about-logins-confirm-export-dialog-confirm-button = Извоз…
 confirm-discard-changes-dialog-title = Одбацити несачуване измене?
 confirm-discard-changes-dialog-message = Све несачуване измене ће бити изгубљене.
 confirm-discard-changes-dialog-confirm-button = Одбаци
@@ -187,3 +202,19 @@ about-logins-vulnerable-alert-learn-more-link = Сазнајте више
 about-logins-error-message-duplicate-login-with-link = Унос { $loginTitle } са овим корисничким именом већ постоји. <a data-l10n-name="duplicate-link">Идите на постојећи унос?</a>
 # This is a generic error message.
 about-logins-error-message-default = Дошло је до грешке приликом покушаја чувања лозинке.
+
+## Login Export Dialog
+
+# Title of the file picker dialog
+about-logins-export-file-picker-title = Извези датотеке пријаве
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename = logins.csv
+about-logins-export-file-picker-export-button = Извоз
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV документ
+       *[other] CSV датотека
+    }

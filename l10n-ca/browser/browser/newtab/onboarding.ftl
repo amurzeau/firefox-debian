@@ -21,12 +21,12 @@ onboarding-button-label-get-started = Primers passos
 onboarding-welcome-header = Us donem la benvinguda al { -brand-short-name }
 onboarding-welcome-body = Ja teniu el navegador.<br/>Ara descobriu la resta del { -brand-product-name }.
 onboarding-welcome-learn-more = Més informació sobre els beneficis.
+onboarding-join-form-header = Uniu-vos al { -brand-product-name }
 onboarding-welcome-modal-get-body = Ja teniu el navegador.<br/>Ara traieu tot el profit del { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Protecció de la privadesa al màxim nivell.
 onboarding-welcome-modal-privacy-body = Ja teniu el navegador. Ara afegim més protecció de la privadesa.
 onboarding-welcome-modal-family-learn-more = Més informació sobre la família de productes del { -brand-product-name }.
 onboarding-welcome-form-header = Comenceu aquí
-onboarding-join-form-header = Uniu-vos al { -brand-product-name }
 onboarding-join-form-body = Introduïu la vostra adreça electrònica per començar.
 onboarding-join-form-email =
     .placeholder = Introduïu l'adreça electrònica
@@ -52,7 +52,7 @@ onboarding-fullpage-form-email =
 
 onboarding-sync-welcome-header = El vostre { -brand-product-name }, a tot arreu
 onboarding-sync-welcome-content = Accediu a les vostres adreces d'interès, historial, contrasenyes i preferències en tots els vostres dispositius.
-onboarding-sync-welcome-learn-more-link = Més informació sobre el Compte del Firefox
+onboarding-sync-welcome-learn-more-link = Més informació sobre els Comptes del Firefox
 onboarding-sync-form-input =
     .placeholder = Adreça electrònica
 onboarding-sync-form-continue-button = Continua
@@ -147,6 +147,9 @@ onboarding-facebook-container-button = Afegeix l'extensió
 onboarding-import-browser-settings-title = Importeu les vostres adreces d'interès, contrasenyes i molt més
 onboarding-import-browser-settings-text = Importeu fàcilment els vostres llocs i paràmetres del Chrome.
 onboarding-import-browser-settings-button = Importa les dades del Chrome
+onboarding-personal-data-promise-title = Privat per disseny
+onboarding-personal-data-promise-text = El { -brand-product-name } tracta les vostres dades amb respecte, capturant-ne menys, protegint-les i explicant clarament com les utilitzem.
+onboarding-personal-data-promise-button = Llegiu la nostra Promesa
 
 ## Message strings belonging to the Return to AMO flow
 

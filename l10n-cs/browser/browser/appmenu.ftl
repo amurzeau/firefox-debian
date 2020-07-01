@@ -5,11 +5,12 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = Importovat z jiného prohlížeče…
 appmenuitem-protection-report-title = Ochrana soukromí
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Otevře přehled ochrany vašeho soukromí
+appmenuitem-protection-dashboard-title = Přehled ochrany soukromí
+appmenuitem-customize-mode =
+    .label = Nastavení tlačítek a lišt…
 
 ## Zoom Controls
 
@@ -22,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = Synchronizovat
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Co je nového
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = Informovat o nových funkcích
+    .accesskey = f

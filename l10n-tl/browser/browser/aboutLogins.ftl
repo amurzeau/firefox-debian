@@ -2,6 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 about-logins-page-title = Mga Login at Password
 
 # "Google Play" and "App Store" are both branding and should not be translated
@@ -26,6 +32,7 @@ menu =
     .title = Buksan ang menu
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Mag-import mula sa Ibang Browser…
+about-logins-menu-menuitem-export-logins = i-Export ang mga Login…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Mga Kagustuhan
@@ -47,7 +54,6 @@ login-list-count =
 login-list-sort-label-text = Pagsunud-sunurin ayon sa:
 login-list-name-option = Pangalan (A-Z)
 login-list-name-reverse-option = Pangalan (Z-A)
-login-list-breached-option = Mga Nakompromisong Website
 about-logins-login-list-alerts-option = Mga Alerto
 login-list-last-changed-option = Huling Binago
 login-list-last-used-option = Huling Ginamit
@@ -106,13 +112,13 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
-# This message can be seen by attempting to edit a login in about:logins
+# This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = i-edit ang naka-save na login
-# This message can be seen by attempting to reveal a password in about:logins
+# This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = ipakita ang naka-save na password
-# This message can be seen by attempting to copy a password in about:logins
+# This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = kopyahin ang naka-save na password
 
@@ -149,6 +155,7 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Alisin ang login?
 confirm-delete-dialog-message = Itong action ay hindi na mababawi.
 about-logins-confirm-remove-dialog-confirm-button = Tanggalin
+about-logins-confirm-export-dialog-confirm-button = i-Export…
 confirm-discard-changes-dialog-title = Itapon ang mga hindi nai-save na pagbabago?
 confirm-discard-changes-dialog-message = Lahat ng hindi nai-save na mga pagbabago ay mawawala.
 confirm-discard-changes-dialog-confirm-button = Balewalain
@@ -157,9 +164,6 @@ confirm-discard-changes-dialog-confirm-button = Balewalain
 
 about-logins-breach-alert-title = Website Breach
 breach-alert-text = May mga passwords na nabunyag o ninakaw mula sa website na ito mula noong huli kang nag-update sa ang iyong mga detalye sa pag-login.Baguhin ang iyong password upang maprotektahan ang iyong account.
-breach-alert-link = Matuto ng higit pa tungkol sa paglabag na ito.
-breach-alert-dismiss =
-    .title = Isara ang alerto na ito
 about-logins-breach-alert-date = Naganap ang breach na ito noong { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
@@ -184,3 +188,17 @@ about-logins-vulnerable-alert-learn-more-link = Alamin
 about-logins-error-message-duplicate-login-with-link = May entry na sa { $loginTitle } na may ganyang username. <a data-l10n-name="duplicate-link">Puntahan ang entry na ito?</a>
 # This is a generic error message.
 about-logins-error-message-default = Nagkaroon ng problema habang sine-save ang password na ito.
+
+## Login Export Dialog
+
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename = logins.csv
+about-logins-export-file-picker-export-button = i-Export
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV Document
+       *[other] CSV File
+    }

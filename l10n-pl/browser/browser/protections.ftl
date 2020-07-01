@@ -39,10 +39,14 @@ etp-card-title = Wzmocniona ochrona przed śledzeniem
 etp-card-content = Elementy śledzące monitorują Cię w Internecie, zbierając informacje o Twoich działaniach i zainteresowaniach. { -brand-short-name } blokuje wiele tych elementów i inne złośliwe skrypty.
 protection-report-webpage-title = Panel ochrony
 protection-report-page-content-title = Panel ochrony
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } może po cichu chronić Twoją prywatność, kiedy Ty przeglądasz Internet. Poniżej znajduje się spersonalizowane podsumowanie ochrony, a także narzędzia do przejęcia kontroli nad własnym bezpieczeństwem w sieci.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } po cichu chroni Twoją prywatność, kiedy Ty przeglądasz Internet. Poniżej znajduje się spersonalizowane podsumowanie ochrony, a także narzędzia do przejęcia kontroli nad własnym bezpieczeństwem w sieci.
+protection-report-settings-link = Otwórz ustawienia prywatności i bezpieczeństwa
 etp-card-title-always = Wzmocniona ochrona przed śledzeniem: zawsze włączona
 etp-card-title-custom-not-blocking = Wzmocniona ochrona przed śledzeniem: wyłączona
-etp-card-content-summary = Kiedy nieznane firmy próbują potajemnie śledzić Cię w Internecie, { -brand-short-name } automatycznie zatrzymuje wiele z nich.
+etp-card-content-description = { -brand-short-name } automatycznie uniemożliwia firmom potajemne śledzenie Cię w Internecie.
 protection-report-etp-card-content-custom-not-blocking = Cała ochrona jest obecnie wyłączona. Wybierz, które elementy śledzące blokować w ustawieniach ochrony przeglądarki { -brand-short-name }.
 protection-report-manage-protections = Otwórz ustawienia
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -60,8 +64,6 @@ fingerprinter-tab-title = Elementy śledzące przez zbieranie informacji o konf
 fingerprinter-tab-content = Te elementy zbierają ustawienia przeglądarki i komputera, aby utworzyć profil użytkownika. Za pomocą tego cyfrowego odcisku palca mogą śledzić Cię między różnymi witrynami. <a data-l10n-name="learn-more-link">Więcej informacji</a>
 cryptominer-tab-title = Elementy używające komputera użytkownika do generowania kryptowalut
 cryptominer-tab-content = Te elementy wykorzystują moc obliczeniową Twojego komputera do generowania cyfrowych walut. Skrypty generujące kryptowaluty rozładowują baterię, spowalniają komputer i mogą zwiększyć rachunek za prąd. <a data-l10n-name="learn-more-link">Więcej informacji</a>
-protections-close-button =
-    .aria-label = Zamknij
 protections-close-button2 =
     .aria-label = Zamknij
     .title = Zamknij
@@ -125,7 +127,9 @@ monitor-title = Miej oko na wycieki danych
 monitor-link = Jak to działa
 monitor-header-content-no-account = Wypróbuj { -monitor-brand-name }, aby sprawdzić, czy Twoje dane nie wyciekły i otrzymywać powiadomienia o nowych wyciekach danych.
 monitor-header-content-signed-in = { -monitor-brand-name } ostrzega, jeśli Twoje dane pojawiły się w znanym wycieku.
-monitor-sign-up = Subskrybuj powiadomienia o wyciekach
+monitor-sign-up = Subskrybuj powiadomienia o wyciekach danych
+monitor-sign-up-link = Subskrybuj powiadomienia o wyciekach danych
+    .title = Subskrybuj powiadomienia o wyciekach danych w serwisie { -monitor-brand-name }
 auto-scan = Automatycznie przeskanowano dzisiaj
 monitor-emails-tooltip =
     .title = Wyświetl monitorowane adresy e-mail w serwisie { -monitor-brand-short-name }
@@ -152,6 +156,15 @@ info-known-breaches-found =
        *[many] znanych wycieków ujawniło Twoje dane
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] znany wyciek danych oznaczony jako rozwiązany
+        [few] znane wycieki danych oznaczone jako rozwiązane
+       *[many] znanych wycieków danych oznaczonych jako rozwiązane
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -160,7 +173,7 @@ info-exposed-passwords-found =
         [few] hasła zostały ujawnione we wszystkich wyciekach
        *[many] haseł zostało ujawnionych we wszystkich wyciekach
     }
-full-report-link = Wyświetl pełny raport w usłudze <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>
+full-report-link = Wyświetl pełny raport w serwisie <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>
 # This string is displayed after a large numeral that indicates the total number
 # of saved logins which may have been exposed. Don’t add $count to
 # your localization, because it would result in the number showing twice.
@@ -170,6 +183,43 @@ password-warning =
         [few] zachowane dane logowania mogły zostać ujawnione w wycieku danych. Zmień te hasła, aby zachować bezpieczeństwo w Internecie. <a data-l10n-name="lockwise-link">Wyświetl zachowane dane logowania</a>
        *[many] zachowanych danych logowania mogło zostać ujawnionych w wycieku danych. Zmień te hasła, aby zachować bezpieczeństwo w Internecie. <a data-l10n-name="lockwise-link">Wyświetl zachowane dane logowania</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] hasło zostało ujawnione w nierozwiązanych wyciekach
+        [few] hasła zostały ujawnione w nierozwiązanych wyciekach
+       *[many] haseł zostało ujawnionych w nierozwiązanych wyciekach
+    }
+monitor-no-breaches-title = Dobre wieści!
+monitor-no-breaches-description = Nie masz żadnych znanych wycieków danych. Damy Ci znać, jeśli to się zmieni.
+monitor-view-report-link = Wyświetl raport
+    .title = Rozwiąż wycieki danych w serwisie { -monitor-brand-short-name }
+monitor-breaches-unresolved-title = Rozwiąż swoje wycieki danych
+monitor-breaches-unresolved-description = Po sprawdzeniu informacji o wycieku i podjęciu kroków w celu ochrony swoich danych, możesz oznaczyć wyciek jako rozwiązany.
+monitor-manage-breaches-link = Zarządzaj wyciekami danych
+    .title = Zarządzaj wyciekami danych w serwisie { -monitor-brand-short-name }
+monitor-breaches-resolved-title = Nieźle! Rozwiązano wszystkie znane wycieki danych.
+monitor-breaches-resolved-description = Damy Ci znać, jeśli Twój adres e-mail pojawi się w nowych wyciekach danych.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreachesResolved ->
+        [one] { $numBreachesResolved } wyciek jest oznaczony jako rozwiązany
+        [few] { $numBreachesResolved } z { $numBreaches } wycieków są oznaczone jako rozwiązane
+       *[many] { $numBreachesResolved } z { $numBreaches } wycieków jest oznaczonych jako rozwiązane
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = Rozwiązano { $percentageResolved }%
+monitor-partial-breaches-motivation-title-start = Świetny początek!
+monitor-partial-breaches-motivation-title-middle = Tak trzymaj!
+monitor-partial-breaches-motivation-title-end = Prawie gotowe! Tak trzymaj.
+monitor-partial-breaches-motivation-description = Rozwiąż pozostałe wycieki danych w serwisie { -monitor-brand-short-name }.
+monitor-resolve-breaches-link = Rozwiąż wycieki danych
+    .title = Rozwiąż wycieki danych w serwisie { -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

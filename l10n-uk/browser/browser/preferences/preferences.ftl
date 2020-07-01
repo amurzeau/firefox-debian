@@ -317,8 +317,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Використовувати { $plugin-name } (у { -brand-short-name })
-applications-preview-inapp =
-    .label = Переглядати в { -brand-short-name }
 applications-open-inapp =
     .label = Відкрити в { -brand-short-name }
 
@@ -332,8 +330,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -500,11 +496,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Популярні сайти
 home-prefs-topsites-description = Сайти, які ви відвідуєте найчастіше
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Рекомендовано { $provider }
 home-prefs-recommended-by-description = Чудові матеріали з усього інтернету, відібрані спеціально для вас
+home-prefs-recommended-by-description-update = Винятково цікаві матеріали з мережі від { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Як це працює
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Матеріали від спонсорів
@@ -566,6 +568,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Показувати пошукові пропозиції у приватних вікнах
 suggestions-addressbar-settings = Змінити налаштування для історії перегляду, закладок та пропозицій для вкладок
+suggestions-addressbar-settings-generic = Змінити налаштування для інших пропозицій панелі адреси
 search-suggestions-cant-show = Пошукові пропозиції не будуть показуватись в панелі адреси, тому що ви налаштували { -brand-short-name } ніколи не запам'ятовувати історію.
 search-one-click-header = Засоби пошуку в один клік
 search-one-click-desc = Оберіть альтернативні пошукові засоби, що з'являються під рядками адреси і пошуку, коли ви починаєте вводити запит.
@@ -769,10 +772,10 @@ privacy-header = Приватність браузера
 
 ## Privacy Section - Forms
 
+logins-header = Входи і паролі
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Входи і паролі
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Входи і паролі
     .searchkeywords = { -lockwise-brand-short-name }
@@ -808,8 +811,6 @@ forms-master-pw-fips-desc = Не вдалося змінити пароль
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Підтвердьте свій доступ, щоб створити головний пароль.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Щоб створити головний пароль, введіть свої облікові дані входу для Windows. Це допомагає захистити ваші збережені паролі.
 # This message can be seen by trying to add a Master Password.
@@ -906,6 +907,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Керувати дозволами…
     .accesskey = з
+sitedata-cookies-exceptions =
+    .label = Керувати винятками…
+    .accesskey = я
 
 ## Privacy Section - Address Bar
 
@@ -920,6 +924,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Відкриті вкладки
     .accesskey = в
+addressbar-locbar-topsites-option =
+    .label = Популярні сайти
+    .accesskey = с
 addressbar-suggestions-settings = Змінити налаштування пропозицій засобів пошуку
 
 ## Privacy Section - Content Blocking
@@ -979,7 +986,6 @@ content-blocking-fingerprinters = Зчитування цифрового від
 content-blocking-warning-title = Увага!
 content-blocking-warning-description = Блокування вмісту може пошкоджувати роботу деяких вебсайтів. Можна легко вимкнути блокування для сайтів, яким ви довіряєте.
 content-blocking-learn-how = Навчитися
-content-blocking-etp-warning-description = Блокування стеження може вплинути на функціональність деяких сайтів. Перезавантажте сторінку зі стеженням, щоб завантажити весь вміст.
 content-blocking-and-isolating-etp-warning-description = Блокування стеження та ізолювання куків може вплинути на функціональність деяких сайтів. Перезавантажте сторінку з елементами стеження, щоб завантажити весь вміст.
 content-blocking-warning-learn-how = Навчитися
 content-blocking-reload-description = Вам необхідно перезавантажити вкладки для застосування змін.

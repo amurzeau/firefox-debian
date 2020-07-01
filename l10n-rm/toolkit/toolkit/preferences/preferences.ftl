@@ -22,6 +22,7 @@ set-password-new-password = Pled-clav nov:
 set-password-reenter-password = Pled-clav nov (repeter):
 set-password-meter = Valitaziun da la qualitad dal pled-clav
 set-password-meter-loading = Chargiar
+master-password-admin = L'administratur da tes computer pretenda che ti creeschias in pled-clav universal per pudair memorisar pleds-clav.
 master-password-description = Il pled-clav universal vegn utilisà per proteger tias datas sensiblas (p.ex. pleds-clav). Sche ti defineschas in pled-clav universal, vegns ti dumandà ina giada per sesida d'endatar il pled-clav universal uschespert che { -brand-short-name } sto avair access a las datotecas protegidas.
 master-password-warning = Ti na dastgas betg emblidar il pled-clav universal che ti has definì. Sche ti emblidas il pled-clav universal, na datti nagina pussaivladad d'acceder a las datas ch'èn protegidas dad el.
 remove-password =

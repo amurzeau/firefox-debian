@@ -42,7 +42,7 @@ protections-panel-no-trackers-found = Në këtë faqe s’u pikasën gjurmues t�
 protections-panel-content-blocking-tracking-protection = Lëndë Gjurmimi
 protections-panel-content-blocking-socialblock = Gjurmues Prej Mediash Shoqërore
 protections-panel-content-blocking-cryptominers-label = Nxjerrës kriptomonedhash
-protections-panel-content-blocking-fingerprinters-label = Krijues shenja gishtash
+protections-panel-content-blocking-fingerprinters-label = Krijues shenjash gishtash
 
 ## In the protections panel, Content Blocking category items are in three sections:
 ##   "Blocked" for categories being blocked in the current page,
@@ -58,6 +58,8 @@ protections-panel-not-found-label = S'u Pikas Ndonjë
 
 protections-panel-settings-label = Rregullime Mbrojtjeje
 protections-panel-showreport-label = Shfaqe Raportin
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Pult Mbrojtjesh
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

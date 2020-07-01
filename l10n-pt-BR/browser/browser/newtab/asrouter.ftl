@@ -121,10 +121,6 @@ cfr-whatsnew-lockwise-take-link-text = Instalar o aplicativo
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Digite menos, encontre mais usando a barra de endereços
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Acesse os sites que você mais usa com um simples clique na barra de endereços. Encontre coisas mais rápido com resultados do { $searchEngineName } e de seu histórico de navegação.
-cfr-whatsnew-searchbar-body-generic = Acesse os sites que você mais usa com um simples clique na barra de endereços. Encontre coisas mais rápido com resultados de pesquisa em seu histórico de navegação.
 cfr-whatsnew-searchbar-body-topsites = Agora basta selecionar a barra de endereços e aparecem links para seus sites preferidos.
 cfr-whatsnew-searchbar-icon-alt-text = Ícone da lente de aumento
 
@@ -231,3 +227,15 @@ cfr-whatsnew-passwords-icon-alt = Ícone de chave de senha vulnerável
 cfr-whatsnew-pip-fullscreen-header = Use picture-in-picture em tela inteira
 cfr-whatsnew-pip-fullscreen-body = Após transferir um vídeo para uma janela flutuante, agora você pode dar um duplo-clique nessa janela para exibir em tela inteira.
 cfr-whatsnew-pip-fullscreen-icon-alt = Ícone de picture-in-picture
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Visão geral das proteções
+cfr-whatsnew-protections-body = O painel de proteções inclui relatórios concisos sobre vazamentos de dados e gerenciamento de senhas. Agora você pode acompanhar quantos vazamentos já resolveu e ver se alguma de suas senhas salvas pode ter sido exposta em um vazamento de dados.
+cfr-whatsnew-protections-cta-link = Ver painel de proteções
+cfr-whatsnew-protections-icon-alt = Ícone de escudo
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Melhor experiência de uso em PDF
+cfr-whatsnew-better-pdf-body = Documentos PDF agora são abertos diretamente no { -brand-short-name }, mantendo seu fluxo de trabalho facilmente ao alcance.

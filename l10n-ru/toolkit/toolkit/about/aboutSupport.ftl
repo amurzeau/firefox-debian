@@ -114,8 +114,13 @@ sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = Тип процесса
 sandbox-sys-call-number = Системный вызов
 sandbox-sys-call-args = Параметры
-safe-mode-title = Попробовать безопасный режим
+safe-mode-title = Попробуйте безопасный режим
 restart-in-safe-mode-label = Перезапустить с отключёнными дополнениями…
+clear-startup-cache-title = Попробуйте очистить кэш запуска
+clear-startup-cache-label = Очистить кэш запуска…
+startup-cache-dialog-title = Очистка кэша запуска
+startup-cache-dialog-body = Перезапустите { -brand-short-name }, чтобы очистить кэш запуска. Это не изменит ваши настройки и не удалит расширения, которые вы добавили в { -brand-short-name }.
+restart-button-label = Перезапустить
 
 ## Media titles
 
@@ -123,6 +128,7 @@ audio-backend = Звуковая подсистема
 max-audio-channels = Максимальное число каналов
 channel-layout = Предпочтительный формат каналов
 sample-rate = Предпочтительная частота дискретизации
+roundtrip-latency = Круговая задержка (стандартное отклонение)
 media-title = Медиа
 media-output-devices-title = Устройства вывода
 media-input-devices-title = Устройства ввода

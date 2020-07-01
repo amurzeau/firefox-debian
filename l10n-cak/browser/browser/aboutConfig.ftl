@@ -18,7 +18,7 @@ about-config-intro-warning-text = Kejal ri q'axinäq taq rajowaxik nuk'ulem, nit
 about-config-intro-warning-checkbox = Tiya' rutzijol chwe toq yinok pa re taq ajowaxik re'.
 about-config-intro-warning-button = Xinwetamaj ri K'ayewal chuqa' Tinsamajij el
 
-
+##
 
 # This is shown on the page before searching but after the warning is accepted.
 about-config-caution-text = Kejal re taq rajowaxik nitikir nutz'ila' rub'eyal nisamäj o ri rujikomal { -brand-short-name }.
@@ -47,7 +47,7 @@ about-config-pref-delete-button =
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 
-about-config-pref-add-type-boolean = Ja' manäq
+about-config-pref-add-type-boolean = Ja'/manäq
 about-config-pref-add-type-number = Ajilab'äl
 about-config-pref-add-type-string = Cholajil
 

@@ -3,14 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY  windowClose.key                  "w">
-<!ENTITY  preferencesDefaultTitleMac.title "Կարգավորումներ">
+<!ENTITY  preferencesDefaultTitleMac.title "Նախապատվություններ">
 <!ENTITY  preferencesDefaultTitleWin.title "Ընտրանքներ">
 <!ENTITY  preferencesCloseButton.label     "Փակել">
 <!ENTITY  preferencesCloseButton.accesskey "C">
 
-<!ENTITY  prefWindow.titleWin     "Կարգավորումներ">
-<!ENTITY  prefWindow.titleGNOME   "&brandShortName;-ի կարգավորումները">
-<!ENTITY  prefWindow.titleMAC     "Կարգավորումներ…">
+<!ENTITY  prefWindow.titleWin     "Ընտրանքներ">
+<!ENTITY  prefWindow.titleGNOME   "&brandShortName;-ի նախապատվություններ ը">
+<!ENTITY  prefWindow.titleMAC     "Նախապատվություններ">
 
 <!ENTITY paneGeneral.title        "Գլխավոր">
 <!ENTITY paneDisplay.title        "Ցուցադրիչ">

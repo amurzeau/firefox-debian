@@ -122,10 +122,6 @@ cfr-whatsnew-lockwise-take-link-text = Қолданбаны алу
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Адрестік жолақ көмегімен азырақ теріп, көбірек табыңыз.
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Көбірек қолданатын сайттарға адрестік жолағында бір шертумен өтіңіз. Нәрселерді { $searchEngineName } және шолу тарихы нәтижелерімен тезірек табыңыз.
-cfr-whatsnew-searchbar-body-generic = Көбірек қолданатын сайттарға адрестік жолағында бір шертумен өтіңіз. Нәрселерді шолу тарихы іздеу нәтижелерімен тезірек табыңыз.
 cfr-whatsnew-searchbar-body-topsites = Енді адрестік жолағын таңдасаңыз, ол топ сайттарыңыз бар сілтемелермен кеңейеді.
 cfr-whatsnew-searchbar-icon-alt-text = Үлкейту әйнегі таңбашасы
 
@@ -217,10 +213,29 @@ cfr-doorhanger-milestone-ok-button = Барлығын қарау
 ## Lockwise message
 
 cfr-whatsnew-lockwise-header = Қауіпсіз парольдерді оңай жасау
+cfr-whatsnew-lockwise-body = Әр тіркелгі үшін бірегей, қауіпсіз парольді ойлап табу оңай емес. Парольді жасау кезінде, { -brand-shorter-name } ұсынатын қауіпсіз, генерацияланған парольді қолдану үшін, пароль өрісін таңдаңыз.
 cfr-whatsnew-lockwise-icon-alt = { -lockwise-brand-short-name } таңбашасы
 
 ## Vulnerable Passwords message
 
+cfr-whatsnew-passwords-header = Осал парольдер жөнінде ескертулерді алыңыз
+cfr-whatsnew-passwords-body = Хакерлер адамдардың бірдей парольдерді қайта қолданатынын біледі. Егер сіз бір парольді бірнеше сайтта қолданған болсаңыз және сол сайттардың бірінде деректер бұзылған болса, сол сайттардағы паролін өзгерту туралы { -lockwise-brand-short-name } ескертуін көресіз.
+cfr-whatsnew-passwords-icon-alt = Осал паролі кілтінің белгісі
 
 ## Picture-in-Picture fullscreen message
 
+cfr-whatsnew-pip-fullscreen-header = Суреттегі суретті толық экранға шығарыңыз
+cfr-whatsnew-pip-fullscreen-body = Видеоны қалқымалы терезеге бөліп жібергеннен кейін, оны енді қос шерту арқылы толық экран режиміне ауыстыруға болады.
+cfr-whatsnew-pip-fullscreen-icon-alt = Суреттегі сурет таңбашасы
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Қорғаныс көрінісі
+cfr-whatsnew-protections-body = Қорғаныс панелінде деректерді бұзу және парольдерді басқару туралы жиынтық есептері бар. Енді сіз қанша деректер бұзушылығын шешкеніңізді және сақталған парольдеріңіздің қайсысы болса да, деректер бұзушылықтарда ашылғаны туралы ақпаратты бақылай аласыз.
+cfr-whatsnew-protections-cta-link = Қорғаныс панелін қарау
+cfr-whatsnew-protections-icon-alt = Қалқан таңбашасы
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = PDF-пен жақсырақ жұмыс
+cfr-whatsnew-better-pdf-body = PDF құжаттары енді тікелей { -brand-short-name } ішінде ашылып, жұмыс үрдісіңізді жеңілдетеді.

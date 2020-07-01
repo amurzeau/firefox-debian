@@ -15,6 +15,7 @@ dialog-title =
 dialog-title-everything =
     .title = សម្អាត​ប្រវត្តិ​ទាំង​អស់
     .style = width: 34em
+clear-data-settings-label = ពេល​បិទ { -brand-short-name } ​គួរ​តែ​សម្អាត​ទាំងអស់​ដោយ​ស្វ័យ​ប្រវត្តិ
 
 ## clear-time-duration-prefix is followed by a dropdown list, with
 ## values localized using clear-time-duration-value-* messages.

@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } gebruiken (in { -brand-short-name })
-applications-preview-inapp =
-    .label = Voorbeeld in { -brand-short-name }
 applications-open-inapp =
     .label = Openen in { -brand-short-name }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Topwebsites
 home-prefs-topsites-description = De websites die u het vaakst bezoekt
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Aanbevolen door { $provider }
 home-prefs-recommended-by-description = Geweldige inhoud van het web, gepersonaliseerd voor u
+home-prefs-recommended-by-description-update = Uitzonderlijke inhoud van het hele internet, samengesteld door { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Hoe het werkt
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Gesponsorde verhalen
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Zoeksuggesties weergeven in privévensters
 suggestions-addressbar-settings = Voorkeuren voor navigatiegeschiedenis, bladwijzers en tabbladsuggesties wijzigen
+suggestions-addressbar-settings-generic = Voorkeuren voor overige adresbalksuggesties wijzigen
 search-suggestions-cant-show = Zoeksuggesties worden niet in locatiebalkresultaten getoond, omdat u { -brand-short-name } hebt geconfigureerd om nooit geschiedenis te onthouden.
 search-one-click-header = Eén-klik-zoekmachines
 search-one-click-desc = Kies de alternatieve zoekmachines die onder de adresbalk en zoekbalk verschijnen als u een sleutelwoord begint in te voeren.
@@ -765,10 +768,10 @@ privacy-header = Browserprivacy
 
 ## Privacy Section - Forms
 
+logins-header = Aanmeldingen en wachtwoorden
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Aanmeldingen en wachtwoorden
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Aanmeldingen en wachtwoorden
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = Wachtwoordwijziging mislukt
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verifieer uw identiteit om een hoofdwachtwoord aan te maken.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Voer uw aanmeldgegevens voor Windows in om een hoofdwachtwoord in te stellen. Hierdoor wordt de beveiliging van uw accounts beschermd.
 # This message can be seen by trying to add a Master Password.
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Toestemmingen beheren…
     .accesskey = T
+sitedata-cookies-exceptions =
+    .label = Uitzonderingen beheren…
+    .accesskey = z
 
 ## Privacy Section - Address Bar
 
@@ -916,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Open tabbladen
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = Topwebsites
+    .accesskey = T
 addressbar-suggestions-settings = Voorkeuren voor zoekmachinesuggesties wijzigen
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Let op!
 content-blocking-warning-description = Het blokkeren van inhoud kan ervoor zorgen dat bepaalde websites niet goed werken. Blokkering kan eenvoudig worden uitgeschakeld voor websites die u vertrouwt.
 content-blocking-learn-how = Meer info
-content-blocking-etp-warning-description = Het blokkeren van trackers kan de functionaliteit van sommige websites beïnvloeden. Laad een pagina met trackers opnieuw om alle inhoud te laden.
 content-blocking-and-isolating-etp-warning-description = Het blokkeren van trackers en isoleren van cookies kan de functionaliteit van sommige websites beïnvloeden. Laad een pagina met trackers opnieuw om alle inhoud te laden.
 content-blocking-warning-learn-how = Meer info
 content-blocking-reload-description = U dient uw tabbladen te vernieuwen om deze wijzigingen toe te passen.

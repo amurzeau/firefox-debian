@@ -302,8 +302,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = ใช้ { $plugin-name } (ใน { -brand-short-name })
-applications-preview-inapp =
-    .label = แสดงตัวอย่างใน { -brand-short-name }
 applications-open-inapp =
     .label = เปิดใน { -brand-short-name }
 
@@ -317,8 +315,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -485,11 +481,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = ไซต์เด่น
 home-prefs-topsites-description = ไซต์ที่คุณเยี่ยมชมมากที่สุด
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = แนะนำโดย { $provider }
 home-prefs-recommended-by-description = เนื้อหาที่ยอดเยี่ยมจากเว็บต่าง ๆ ปรับแต่งให้เป็นส่วนบุคคลเพื่อคุณ
+home-prefs-recommended-by-description-update = เนื้อหาสุดพิเศษจากเว็บทั่วโลกที่คัดสรรมาโดย { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = วิธีการทำงาน
 home-prefs-recommended-by-option-sponsored-stories =
     .label = เรื่องราวที่ได้รับการสนับสนุน
@@ -546,6 +548,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = แสดงคำแนะนำการค้นหาในหน้าต่างส่วนตัว
 suggestions-addressbar-settings = เปลี่ยนค่ากำหนดสำหรับประวัติการท่องเว็บ ที่คั่นหน้า และแท็บแนะนำ
+suggestions-addressbar-settings-generic = เปลี่ยนค่ากำหนดข้อเสนอแนะจากแถบที่อยู่อื่น ๆ
 search-suggestions-cant-show = ข้อเสนอแนะการค้นหาจะไม่แสดงในผลลัพธ์ของแถบตำแหน่งที่ตั้งเนื่องจากคุณได้กำหนดค่า { -brand-short-name } ให้ไม่จดจำประวัติเสมอ
 search-one-click-header = เครื่องมือค้นหาในคลิกเดียว
 search-one-click-desc = เลือกเครื่องมือค้นหาทางเลือกที่จะปรากฏด้านล่างแถบที่อยู่และแถบค้นหาเมื่อคุณเริ่มป้อนคำสำคัญ
@@ -664,7 +667,7 @@ sync-currently-syncing-heading = คุณกำลังซิงค์รา�
 sync-currently-syncing-bookmarks = ที่คั่นหน้า
 sync-currently-syncing-history = ประวัติ
 sync-currently-syncing-tabs = แท็บที่เปิด
-sync-currently-syncing-logins-passwords = การเข้าสู่ระบบและรหัสผ่าน
+sync-currently-syncing-logins-passwords = ข้อมูลการเข้าสู่ระบบและรหัสผ่าน
 sync-currently-syncing-addresses = ที่อยู่
 sync-currently-syncing-creditcards = บัตรเครดิต
 sync-currently-syncing-addons = ส่วนเสริม
@@ -697,12 +700,12 @@ sync-engine-tabs =
     .tooltiptext = รายการสิ่งที่เปิดอยู่ในอุปกรณ์ที่ซิงค์ทั้งหมด
     .accesskey = บ
 sync-engine-logins =
-    .label = การเข้าสู่ระบบ
+    .label = ข้อมูลการเข้าสู่ระบบ
     .tooltiptext = ชื่อผู้ใช้และรหัสผ่านที่คุณได้บันทึกไว้
     .accesskey = ก
 sync-engine-logins-passwords =
-    .label = การเข้าสู่ระบบและรหัสผ่าน
-    .tooltiptext = ชื่อผู้ใช้และรหัสผ่านที่คุณบันทึกไว้
+    .label = ข้อมูลการเข้าสู่ระบบและรหัสผ่าน
+    .tooltiptext = ชื่อผู้ใช้และรหัสผ่านที่คุณได้บันทึกไว้
     .accesskey = L
 sync-engine-addresses =
     .label = ที่อยู่
@@ -749,16 +752,16 @@ privacy-header = ความเป็นส่วนตัวเบราว์
 
 ## Privacy Section - Forms
 
+logins-header = ข้อมูลการเข้าสู่ระบบและรหัสผ่าน
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = การเข้าสู่ระบบและรหัสผ่าน
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
-pane-privacy-logins-and-passwords-header = การเข้าสู่ระบบและรหัสผ่าน
+pane-privacy-logins-and-passwords-header = ข้อมูลการเข้าสู่ระบบและรหัสผ่าน
     .searchkeywords = { -lockwise-brand-short-name }
 # Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
-    .label = ถามเพื่อบันทึกการเข้าสู่ระบบและรหัสผ่านสำหรับเว็บไซต์
+    .label = ถามเพื่อบันทึกข้อมูลการเข้าสู่ระบบและรหัสผ่านสำหรับเว็บไซต์
     .accesskey = ถ
 forms-exceptions =
     .label = ข้อยกเว้น…
@@ -775,7 +778,7 @@ forms-fill-logins-and-passwords =
     .label = กรอกข้อมูลการเข้าสู่ระบบและรหัสผ่านอัตโนมัติ
     .accesskey = ร
 forms-saved-logins =
-    .label = การเข้าสู่ระบบที่บันทึกไว้…
+    .label = ข้อมูลการเข้าสู่ระบบที่บันทึกไว้…
     .accesskey = ก
 forms-master-pw-use =
     .label = ใช้รหัสผ่านหลัก
@@ -789,7 +792,7 @@ forms-master-pw-fips-desc = การเปลี่ยนรหัสผ่า�
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = ยืนยันตัวตนของคุณเพื่อสร้างรหัสผ่านหลัก
+master-password-os-auth-dialog-message-win = หากต้องการสร้างรหัสผ่านหลัก ให้ป้อนข้อมูลประจำตัวการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่าง ๆ ของคุณ
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -884,6 +887,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = จัดการสิทธิอนุญาต…
     .accesskey = ด
+sitedata-cookies-exceptions =
+    .label = จัดการข้อยกเว้น…
+    .accesskey = ข
 
 ## Privacy Section - Address Bar
 
@@ -898,6 +904,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = แท็บที่เปิดอยู่
     .accesskey = บ
+addressbar-locbar-topsites-option =
+    .label = ไซต์เด่น
+    .accesskey = ด
 addressbar-suggestions-settings = เปลี่ยนค่ากำหนดข้อเสนอแนะจากเครื่องมือค้นหา
 
 ## Privacy Section - Content Blocking
@@ -957,7 +966,6 @@ content-blocking-fingerprinters = ลายนิ้วมือดิจิท�
 content-blocking-warning-title = ระวัง!
 content-blocking-warning-description = การปิดกั้นเนื้อหาอาจส่งผลให้บางเว็บใช้การไม่ได้ แต่มันก็ง่ายที่จะปลดการปิดกั้นสำหรับเว็บที่คุณไว้ใจ
 content-blocking-learn-how = เรียนรู้วิธี
-content-blocking-etp-warning-description = การปิดกั้นตัวติดตามอาจส่งผลต่อการทำงานของบางไซต์ โหลดหน้าเว็บใหม่ด้วยตัวติดตามเพื่อโหลดเนื้อหาทั้งหมด
 content-blocking-and-isolating-etp-warning-description = การปิดกั้นตัวติดตามและแยกคุกกี้อาจส่งผลกระทบต่อการทำงานของบางไซต์ได้ โหลดหน้าใหม่พร้อมตัวติดตามเพื่อโหลดเนื้อหาทั้งหมด
 content-blocking-warning-learn-how = เรียนรู้วิธี
 content-blocking-reload-description = คุณจะต้องโหลดแท็บของคุณใหม่เพื่อใช้การเปลี่ยนแปลงเหล่านี้

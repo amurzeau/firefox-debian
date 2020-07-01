@@ -294,6 +294,7 @@
 <!ENTITY findToolbarCmd.tooltip "Tekst sykje op side">
 <!ENTITY spellToolbarCmd.label "Stavering">
 <!ENTITY spellToolbarCmd.tooltip "Stavering fan seleksje of hiele side kontrolearje">
+
 <!ENTITY imageToolbarCmd.label "Ofbylding">
 <!ENTITY imageToolbarCmd.tooltip "Nije ôfbylding ynfoegje of eigenskippen fan selektearre ôfbylding oanpasse">
 <!ENTITY hruleToolbarCmd.label "H.line">
@@ -306,7 +307,6 @@
 <!ENTITY anchorToolbarCmd.tooltip "Nije ankerferwizing ynfoegje of eigenskippen fan selektearre ankerferwizing oanpasse">
 <!ENTITY TextColorButton.tooltip "Tekstkleur kieze">
 <!ENTITY BackgroundColorButton.tooltip "Eftergrûnkleur kieze">
-<!ENTITY throbber.tooltip "Gean nei de thússide fan &vendorShortName;">
 <!ENTITY throbber.tooltip2 "Gean nei de thússide fan &brandShortName;">
 <!ENTITY HighlightColorButton.tooltip "Markearringskleur foar tekst kieze">
 

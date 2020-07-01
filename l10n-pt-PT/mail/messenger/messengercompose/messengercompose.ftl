@@ -9,14 +9,6 @@
 remove-address-row-type = Remover o campo { $type }
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
-address-input-type =
-    { $count ->
-        [0] Campo de introdução de { $type } vazio
-        [one] Campo de introdução de { $type } com um endereço
-       *[other] Campo de introdução de { $type } com { $count } endereços
-    }
-#   $type (String) - the type of the addressing row
-#   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
         [0] { $type }
@@ -42,3 +34,25 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Mover para Bcc
     .accesskey = B
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [1] { $count } anexo
+           *[other] { $count } anexos
+        }
+    .accesskey = x
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [1] { $count } anexo
+            [one] { $count } anexo
+           *[other] { $count } anexos
+        }
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+button-return-receipt =
+    .label = Recibo
+    .tooltiptext = Solicitar um recibo de leitura para esta mensagem

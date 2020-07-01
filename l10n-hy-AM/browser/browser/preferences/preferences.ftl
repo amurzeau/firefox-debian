@@ -232,6 +232,10 @@ translate-attribution = Թարգմանել է՝ <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Բացառություններ…
     .accesskey = ա
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Օգտագործեք ձեր օպերացիոն համակարգի կարգավորումները “{ $localeName }”–ի համար՝ ձևաչափելու ամսաթվերը, ժամերը, համարները և չափումները:
 check-user-spelling =
     .label = Տեքստ մուտքագրելիս ստուգել ուղղագրությունը
     .accesskey = մ
@@ -280,6 +284,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Օգտագործել { $app-name }-ը (լռելյայն)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Օգտագործել macOS կանխադրված հավելվածը
+            [windows] Օգտագործել Windows կանխադրված հավելվածը
+           *[other] Օգտագործել համակարգի կանխադրված հավելվածը
+        }
 applications-use-other =
     .label = Օգտագործել մեկ ուրիշը…
 applications-select-helper = Ընտրել Սատարող Ծրագիրը
@@ -303,8 +314,8 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Օգտագործել { $plugin-name } ({ -brand-short-name }-ում)
-applications-preview-inapp =
-    .label = Դիտել { -brand-short-name }-ում
+applications-open-inapp =
+    .label = Բացել { -brand-short-name }-ում
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -316,14 +327,16 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -360,6 +373,14 @@ update-pref-write-failure-title = Գրեք ձախողում
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Անհնար է պահպանել նախապատվությունները: Հնարավոր չէ գրել ֆայլում. { $path }
 update-setting-write-failure-title = Սխալ պահպանեում է թարմացման նախընտրությունները
+# Variables:
+#   $path (String) - Path to the configuration file
+# The newlines between the main text and the line containing the path is
+# intentional so the path is easier to identify.
+update-setting-write-failure-message =
+    { -brand-short-name }-ը բախվել է սխալի և չի պահպանել այս փոփոխությունը։ Նկատի ունեցեք, որ այս թարմացման նախընտրանքի կարգավորումը պահանջում է թույլատվություն՝ ստորև նիշքում գրելու համար։ Դուք կամ համակարգի վարիչը կարող եք լուծել սխալը օգտագործողների խմբին շնորհելով այս նիշքի ողջ կառավարումը։
+    
+    Հնարավոր չէ գրել ֆայլում՝ { $path }
 update-in-progress-title = Արդիացվում է
 update-in-progress-message = Ցանկանո՞ւմ եք,որ { -brand-short-name }-ը շարունակի այս արդիացմամբ:
 update-in-progress-ok-button = &Հրաժարվել
@@ -472,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Լավագույն կայքեր
 home-prefs-topsites-description = Ամենաշատ այցելած կայքեր
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Առաջարկվում է { $provider }
 home-prefs-recommended-by-description = Հիանալի բովանդակություն համացանցից, անձնավորված ձեզ համար
+home-prefs-recommended-by-description-update = Բացառիկ բովանդակություն ամբողջ ցանցից, { $provider }-ի կողմից
+
+##
+
 home-prefs-recommended-by-learn-more = Ինչպես է դա աշխատում
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Հովանավորված կայքեր
@@ -537,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Ցույց տալ որոնման առաջարկները մասնավոր պատուհանում
 suggestions-addressbar-settings = Փոխեք նախապատվությունները թերթելու պատմությունը, էջանիշները և ներդիրի առաջարկները
+suggestions-addressbar-settings-generic = Փոխել նախապատվությունները հասցեի գոտու այլ առաջարկների համար
 search-suggestions-cant-show = Որոնման առաջարկությունները չեն ցուցադրվի գտնման վայրի տողի արդյունքներում, քանի որ դուք կազմաձևել եք { -brand-short-name }-ը, որ երբեք չհիշի պատմությունը։
 search-one-click-header = Մեկ սեղմամբ որոնիչներ
 search-one-click-desc = Ընտրեք այլընտրանքային որոնիչներ, որոնք կերևան ստորև հասցեի գոտում և որոնման գոտիում, երբ մուտքագրեք հիմնաբառ:
@@ -740,10 +768,10 @@ privacy-header = Դիտարկիչի գաղտնիություն
 
 ## Privacy Section - Forms
 
+logins-header = Մուտքանուններ և Գաղտնաբառեր
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Մուտքանուններ և Գաղտնաբառեր
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Մուտքանուններ և Գաղտնաբառեր
     .searchkeywords = { -lockwise-brand-short-name }
@@ -780,7 +808,7 @@ forms-master-pw-fips-desc = Գաղտնաբառի Փոփոխությունը Չհ
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Ստուգեք ձեր ինքնությունը `Վարպետ գաղտնաբառ ստեղծելու համար:
+master-password-os-auth-dialog-message-win = Գլխավոր գաղտնաբառ ստեղծելու համար մուտքագրեք ձեր Windows մուտքի հավատարմագրերը: Սա օգնում է պաշտպանել ձեր հաշիվների անվտանգությունը:
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -858,6 +886,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Միջակայքային հետևումներ
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Խաչաձև կայքի և սոցիալական միջավայրի վնասներ
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Խաչաձև կայքերի և սոցիալական մեդիայի հետագծիչներ, և մեկուսացնում են մնացած թխուկները
 sitedata-option-block-unvisited =
     .label = Նշոցիկներ չայցելած վեբ կայքերից
 sitedata-option-block-all-third-party =
@@ -873,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Կառավարել թույլատրությունները…
     .accesskey = P
+sitedata-cookies-exceptions =
+    .label = Կառավարել ընդլայնումները...
+    .accesskey = x
 
 ## Privacy Section - Address Bar
 
@@ -887,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Բացել ներդիրները
     .accesskey = Բ
+addressbar-locbar-topsites-option =
+    .label = Լավագույն կայքեր
+    .accesskey = T
 addressbar-suggestions-settings = Փոխել որոնիչների նախապատվությունները
 
 ## Privacy Section - Content Blocking
@@ -934,6 +970,7 @@ content-blocking-etp-strict-desc = Ավելի ուժեղ պաշտպանությ�
 content-blocking-etp-custom-desc = Ընտրեք, որ հետևումները և գրվածքները արգելափակել։
 content-blocking-private-windows = Անձնական պատուհաններում բովանդակության հետևում
 content-blocking-cross-site-tracking-cookies = Միջակայքային հետևող նշոցիկներ
+content-blocking-cross-site-tracking-cookies-plus-isolate = Խաչաձև կայքերի հետագծումների թխուկներ, և մեկուսացնում է մնացած թխուկները
 content-blocking-social-media-trackers = Սոցիալական մեդիայի հետագծումներ
 content-blocking-all-cookies = Բոլոր նշոցիկները
 content-blocking-unvisited-cookies = Նշոցիկներ չստուգված կայքերից
@@ -945,7 +982,7 @@ content-blocking-fingerprinters = Մատնահետքեր
 content-blocking-warning-title = Ուշադրություն։
 content-blocking-warning-description = Բովանդակության արգելափակումը կարող է որոշ կայքերի կոտրման պատճառ դառնալ։ Հեշտ է անջատել վստահված կայքերի արգելափակումը։
 content-blocking-learn-how = Սովորել, թե ինչպես
-content-blocking-etp-warning-description = Հետևման արգելափակումը կարող է ազդել որոշ կայքերի գործառությանը։ Վերբեռնե՛ք էջը հետևումներով ողջ բովանդակությունը բեռնելու համար։
+content-blocking-and-isolating-etp-warning-description = Հետագծմանն արգելափակումը կարող է ազդել որոշ կայքերի գործառությանը։ Կրկին բեռնեք էջը հետագծումներով՝ ողջ բովանդակությունը բեռնելու համար։
 content-blocking-warning-learn-how = Իմանալ ինչպես
 content-blocking-reload-description = Ձեզ հարկավոր կլինի վերբեռնել ձեր ներդիրները այս փոփոխությունները հաստատելու համար։
 content-blocking-reload-tabs-button =

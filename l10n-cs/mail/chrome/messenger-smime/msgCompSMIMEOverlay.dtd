@@ -5,10 +5,25 @@
 <!--LOCALIZATION NOTE msgCompSMIMEOverlay.dtd UI for s/mime hooks in message composition -->
 
 <!ENTITY menu_securityEncryptRequire.label "Zašifrovat zprávu">
+
+<!ENTITY menu_securityDoNotEncrypt.label "Nešifrovat">
+
+<!-- not yet used
+<!ENTITY menu_securityEncryptOptional.label "Allow Encryption">
+<!ENTITY menu_securityEncryptOptional.accesskey "w">
+-->
+
+<!ENTITY menu_securityEncryptRequire2.label "Vyžadovat šifrování">
 <!ENTITY menu_securityEncryptRequire.accesskey "Z">
 
 <!ENTITY menu_securitySign.label "Elektronicky podepsat zprávu">
 <!ENTITY menu_securitySign.accesskey "E">
+
+
+<!ENTITY menu_securityTech.label "Technologie šifrování">
+
+<!ENTITY menu_techPGP.label "OpenPGP">
+<!ENTITY menu_techSMIME.label "S/MIME">
 
 <!ENTITY menu_securityStatus.label "Zobrazit informace o zabezpečení">
 <!ENTITY menu_securityStatus.accesskey "o">

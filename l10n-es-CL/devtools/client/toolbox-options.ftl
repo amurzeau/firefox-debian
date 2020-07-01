@@ -103,6 +103,8 @@ options-enable-chrome-tooltip =
 options-enable-remote-label = Activar depuración remota
 options-enable-remote-tooltip =
     .title = Activar esta opción permitirá a las herramientas de desarrollador depurar una instancia remota como Firefox OS
+options-enable-remote-tooltip2 =
+    .title = Activar esta opción permitirá depurar esta instancia del navegador de forma remota
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = Activar Service Workers a través de HTTP (mientras las herramientas estén abiertas)
 options-enable-service-workers-http-tooltip =
@@ -113,11 +115,6 @@ options-source-maps-tooltip =
     .title = Si activas esta opción, las fuentes serán mapeadas en las herramientas.
 # The message shown for settings that trigger page reload
 options-context-triggers-page-refresh = * Solo en la sesión actual, recarga la página
-
-##
-
-# The heading for the Debugger section
-options-debugger-label = Depurador
 # The label for the checkbox that toggles the display of the platform data in the
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config
 options-show-platform-data-label = Mostrar datos de la plataforma Gecko

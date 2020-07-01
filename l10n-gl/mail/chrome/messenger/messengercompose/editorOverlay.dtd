@@ -294,6 +294,7 @@
 <!ENTITY findToolbarCmd.tooltip "Localizar texto na páxina">
 <!ENTITY spellToolbarCmd.label "Ortografía">
 <!ENTITY spellToolbarCmd.tooltip "Verificación ortográfica da selección ou da páxina enteira">
+
 <!ENTITY imageToolbarCmd.label "Imaxe">
 <!ENTITY imageToolbarCmd.tooltip "Inserir imaxe ou editar as propiedades das imaxes seleccionadas">
 <!ENTITY hruleToolbarCmd.label "Liña h.">
@@ -306,7 +307,6 @@
 <!ENTITY anchorToolbarCmd.tooltip "Inserir áncora con nome ou editar as propiedades das áncoras seleccionadas">
 <!ENTITY TextColorButton.tooltip "Escoller cor do texto">
 <!ENTITY BackgroundColorButton.tooltip "Escoller cor de fondo">
-<!ENTITY throbber.tooltip "Ir á páxina de inicio de &vendorShortName;">
 <!ENTITY HighlightColorButton.tooltip "Escoller cor de realce do texto">
 
 <!-- Editor toolbar -->

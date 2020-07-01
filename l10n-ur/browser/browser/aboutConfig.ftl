@@ -41,15 +41,15 @@ about-config-pref-edit-button =
 about-config-pref-save-button =
     .title = محفوظ کریں
 about-config-pref-reset-button =
-    .title = پھر سیٹ کریں
+    .title = ری سیٹ کریں
 about-config-pref-delete-button =
     .title = حذف کریں
 
 ## Labels for the type selection radio buttons shown when adding preferences.
 
-about-config-pref-add-type-boolean = بولیائی
+about-config-pref-add-type-boolean = بولین
 about-config-pref-add-type-number = نمبر
-about-config-pref-add-type-string = اسٹرنگ
+about-config-pref-add-type-string = سٹرنگ
 
 ## Preferences with a non-default value are differentiated visually, and at the
 ## same time the state is made accessible to screen readers using an aria-label

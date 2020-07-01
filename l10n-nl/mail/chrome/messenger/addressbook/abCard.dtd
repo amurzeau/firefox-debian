@@ -30,7 +30,7 @@
 <!ENTITY PhoneticField1.label           "Fonetisch:">
 <!ENTITY PhoneticField2.label           "Fonetisch:">
 <!ENTITY DisplayName.label              "Weergave:">
-<!ENTITY DisplayName.accesskey          "a">
+<!ENTITY DisplayName.accesskey          "g">
 <!ENTITY preferDisplayName.label        "Altijd weergavenaam boven berichtkop verkiezen">
 <!ENTITY preferDisplayName.accesskey    "z">
 <!ENTITY NickName.label                 "Bijnaam:">
@@ -50,7 +50,7 @@
 <!ENTITY WorkPhone.label                "Werk:">
 <!ENTITY WorkPhone.accesskey            "r">
 <!ENTITY HomePhone.label                "Thuis:">
-<!ENTITY HomePhone.accesskey            "u">
+<!ENTITY HomePhone.accesskey            "s">
 <!ENTITY FaxNumber.label                "Fax:">
 <!ENTITY FaxNumber.accesskey            "x">
 <!ENTITY PagerNumber.label              "Pieper:">
@@ -61,21 +61,21 @@
 <!ENTITY Home.tab                       "Privé">
 <!ENTITY Home.accesskey                 "P">
 <!ENTITY HomeAddress.label              "Adres:">
-<!ENTITY HomeAddress.accesskey          "A">
+<!ENTITY HomeAddress.accesskey          "d">
 <!ENTITY HomeAddress2.label             "">
 <!ENTITY HomeAddress2.accesskey         "">
 <!ENTITY HomeCity.label                 "Woonplaats:">
-<!ENTITY HomeCity.accesskey             "n">
+<!ENTITY HomeCity.accesskey             "s">
 <!ENTITY HomeState.label                "Provincie:">
 <!ENTITY HomeState.accesskey            "v">
 <!ENTITY HomeZipCode.label              "Postcode:">
-<!ENTITY HomeZipCode.accesskey          "t">
+<!ENTITY HomeZipCode.accesskey          "e">
 <!ENTITY HomeCountry.label              "Land:">
 <!ENTITY HomeCountry.accesskey          "L">
 <!ENTITY HomeWebPage.label              "Webpagina:">
 <!ENTITY HomeWebPage.accesskey          "b">
 <!ENTITY Birthday.label                 "Verjaardag:">
-<!ENTITY Birthday.accesskey             "e">
+<!ENTITY Birthday.accesskey             "r">
 <!ENTITY Month.placeholder              "Maand">
 <!ENTITY Day.placeholder                "Dag">
 <!ENTITY Year.placeholder               "Jaar">
@@ -87,11 +87,11 @@
 <!ENTITY JobTitle.label                 "Functie:">
 <!ENTITY JobTitle.accesskey             "u">
 <!ENTITY Department.label               "Afdeling:">
-<!ENTITY Department.accesskey           "d">
+<!ENTITY Department.accesskey           "i">
 <!ENTITY Company.label                  "Organisatie:">
 <!ENTITY Company.accesskey              "r">
 <!ENTITY WorkAddress.label              "Adres:">
-<!ENTITY WorkAddress.accesskey          "A">
+<!ENTITY WorkAddress.accesskey          "d">
 <!ENTITY WorkAddress2.label             "">
 <!ENTITY WorkAddress2.accesskey         "">
 <!ENTITY WorkCity.label                 "Plaats:">
@@ -99,7 +99,7 @@
 <!ENTITY WorkState.label                "Provincie:">
 <!ENTITY WorkState.accesskey            "v">
 <!ENTITY WorkZipCode.label              "Postcode:">
-<!ENTITY WorkZipCode.accesskey          "t">
+<!ENTITY WorkZipCode.accesskey          "e">
 <!ENTITY WorkCountry.label              "Land:">
 <!ENTITY WorkCountry.accesskey          "L">
 <!ENTITY WorkWebPage.label              "Webpagina:">
@@ -116,14 +116,14 @@
 <!ENTITY Custom4.label                  "Overig 4:">
 <!ENTITY Custom4.accesskey              "4">
 <!ENTITY Notes.label                    "Aantekeningen">
-<!ENTITY Notes.accesskey                "A">
+<!ENTITY Notes.accesskey                "n">
 
 <!ENTITY Chat.tab                       "Chat">
-<!ENTITY Chat.accesskey                 "t">
+<!ENTITY Chat.accesskey                 "a">
 <!ENTITY Gtalk.label                    "Google Talk:">
 <!ENTITY Gtalk.accesskey                "G">
 <!ENTITY AIM.label                      "AIM:">
-<!ENTITY AIM2.accesskey                 "A">
+<!ENTITY AIM2.accesskey                 "M">
 <!ENTITY Yahoo.label                    "Yahoo!:">
 <!ENTITY Yahoo.accesskey                "Y">
 <!ENTITY Skype.label                    "Skype:">
@@ -131,7 +131,7 @@
 <!ENTITY QQ.label                       "QQ:">
 <!ENTITY QQ.accesskey                   "Q">
 <!ENTITY MSN.label                      "MSN:">
-<!ENTITY MSN2.accesskey                 "M">
+<!ENTITY MSN2.accesskey                 "N">
 <!ENTITY ICQ.label                      "ICQ:">
 <!ENTITY ICQ.accesskey                  "I">
 <!ENTITY XMPP.label                     "Jabber-ID:">
@@ -142,7 +142,7 @@
 <!ENTITY Photo.tab                      "Foto">
 <!ENTITY Photo.accesskey                "F">
 <!ENTITY GenericPhoto.label             "Algemene foto">
-<!ENTITY GenericPhoto.accesskey         "A">
+<!ENTITY GenericPhoto.accesskey         "e">
 <!ENTITY DefaultPhoto.label             "Standaard">
 <!ENTITY PhotoFile.label                "Op deze computer">
 <!ENTITY PhotoFile.accesskey            "d">

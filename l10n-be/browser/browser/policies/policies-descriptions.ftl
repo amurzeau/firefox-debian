@@ -63,6 +63,7 @@ policy-ExtensionSettings = Кіраваць усімі аспектамі ўст
 policy-ExtensionUpdate = Уключае або выключае аўтаматычнае абнаўленне пашырэнняў.
 policy-FirefoxHome = Наладзіць хатнюю старонку Firefox.
 policy-FlashPlugin = Дазволіць або забараніць выкарыстанне плагіна Flash.
+policy-Handlers = Наладзіць прадвызначаныя апрацоўшчыкі праграм.
 policy-HardwareAcceleration = Калі false, адключыць апаратнае паскарэнне.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Усталяваць хатнюю старонку і па жаданні забараніць змяненне.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Вярнуцца да 
 ##
 
 policy-LocalFileLinks = Дазволіць пэўным вэб-сайтам спасылацца на лакальныя файлы.
+policy-MasterPassword = Патрабаваць або забараняць выкарыстанне галоўнага пароля.
 policy-NetworkPrediction = Уключае або выключае прадбачанне сеткі (папярэдняе атрыманне DNS).
 policy-NewTabPage = Уключыць або выключыць старонку новай карткі.
 policy-NoDefaultBookmarks = Выключыць стварэнне тыповых закладак, што ідуць разам з { -brand-short-name }, а таксама разумных закладак (Часта наведваныя, Нядаўнія тэгі). Заўвага: гэта палітыка дзейсная толькі калі выкарыстоўваецца перад першым запускам профілю.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Уключыць захаванне пароля
 # PDF.js and PDF should not be translated
 policy-PDFjs = Адключыць або наладзіць PDF.js, убудаваны ў { -brand-short-name } праглядальнік PDF.
 policy-Permissions2 = Наладзіць дазволы для камеры, мікрафона, месцазнаходжання, абвестак і аўтапрайгравання.
+policy-PictureInPicture = Уключыць або выключыць выяву ў выяве.
 policy-PopupBlocking = Дазволіць пэўным вэб-сайтам тыпова паказваць усплыўныя вокны.
 policy-Preferences = Устанавіць і зафіксаваць значэнне для падмноства пераваг.
 policy-PromptForDownloadLocation = Пытаць, куды захаваць файлы, пры сцягванні.

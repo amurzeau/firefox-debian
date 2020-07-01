@@ -294,6 +294,7 @@
 <!ENTITY findToolbarCmd.tooltip "Знайсці тэкст на старонцы">
 <!ENTITY spellToolbarCmd.label "Правапіс">
 <!ENTITY spellToolbarCmd.tooltip "Праверыць правапіс вылучэння або ўсёй старонкі ">
+
 <!ENTITY imageToolbarCmd.label "Выява">
 <!ENTITY imageToolbarCmd.tooltip "Уставіць новую выяву або правіць уласцівасці выбранай">
 <!ENTITY hruleToolbarCmd.label "Г.рыска">
@@ -306,7 +307,6 @@
 <!ENTITY anchorToolbarCmd.tooltip "Уставіць новы іменаваны якар або рэдагаваць уласцівасці вылучанага якара ">
 <!ENTITY TextColorButton.tooltip "Выбраць колер тэксту">
 <!ENTITY BackgroundColorButton.tooltip "Выбраць колер фону">
-<!ENTITY throbber.tooltip "Наведаць хатнюю старонку &vendorShortName;">
 <!ENTITY HighlightColorButton.tooltip "Выбраць колер падфарбоўкі для тэксту">
 
 <!-- Editor toolbar -->

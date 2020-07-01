@@ -34,13 +34,14 @@ app-basics-title = Βασικά εφαρμογής
 app-basics-name = Όνομα
 app-basics-version = Έκδοση
 app-basics-build-id = ID έκδοσης
+app-basics-distribution-id = ID διανομής
 app-basics-update-channel = Κανάλι ενημερώσεων
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
 app-basics-update-dir =
     { PLATFORM() ->
-        [linux] Ενημέρωση καταλόγου
-       *[other] Ενημέρωση φακέλου
+        [linux] Κατάλογος ενημέρωσης
+       *[other] Φάκελος ενημέρωσης
     }
 app-basics-update-history = Ιστορικό ενημερώσεων
 app-basics-show-update-history = Προβολή ιστορικού ενημερώσεων
@@ -118,6 +119,11 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Επιχειρήματα
 safe-mode-title = Δοκιμή ασφαλούς λειτουργίας
 restart-in-safe-mode-label = Επανεκκίνηση με τα πρόσθετα απενεργοποιημένα…
+clear-startup-cache-title = Δοκιμάστε να εκκαθαρίσετε την προσωρινή μνήμη εκκίνησης
+clear-startup-cache-label = Εκκαθάριση προσωρινής μνήμης εκκίνησης…
+startup-cache-dialog-title = Εκκαθάριση προσωρινής μνήμης εκκίνησης
+startup-cache-dialog-body = Επανεκκινήστε το { -brand-short-name } για να εκκαθαρίσετε την προσωρινή μνήμη εκκίνησης. Αυτό δεν θα αλλάξει τις ρυθμίσεις σας, ούτε θα καταργήσει τις επεκτάσεις που έχετε προσθέσει στο { -brand-short-name }.
+restart-button-label = Επανεκκίνηση
 
 ## Media titles
 
@@ -125,6 +131,7 @@ audio-backend = Υποσύστημα ήχου
 max-audio-channels = Μέγιστος αριθμός καναλιών
 channel-layout = Επιθυμητή διάταξη καναλιών
 sample-rate = Επιθυμητός ρυθμός δειγματοληψίας
+roundtrip-latency = Καθυστέρηση μετ' επιστροφής (τυπική απόκλιση)
 media-title = Πολυμέσα
 media-output-devices-title = Συσκευές εξόδου
 media-input-devices-title = Συσκευές εισόδου
@@ -290,6 +297,11 @@ sandbox-proc-type-content = περιεχόμενο
 sandbox-proc-type-file = περιεχόμενο αρχείου
 sandbox-proc-type-media-plugin = άρθρωμα πολυμέσων
 sandbox-proc-type-data-decoder = αποκωδικοποιητής δεδομένων
+startup-cache-title = Προσωρινή μνήμη εκκίνησης
+startup-cache-disk-cache-path = Διαδρομή προσωρινής μνήμης δίσκου
+startup-cache-ignore-disk-cache = Παράβλεψη προσωρινής μνήμης δίσκου
+startup-cache-found-disk-cache-on-init = Εύρεση προσωρινής μνήμης δίσκου στο Init
+startup-cache-wrote-to-disk-cache = Εγγράφηκε στην προσωρινή μνήμη δίσκου
 launcher-process-status-0 = Ενεργό
 launcher-process-status-1 = Ανενεργό λόγω αποτυχίας
 launcher-process-status-2 = Ανενεργό εξαναγκαστικά
@@ -313,6 +325,7 @@ touch-enabled = είσοδος αφής ενεργοποιημένη
 drag-enabled = σύρσιμο γραμμής κύλισης ενεργοποιημένο
 keyboard-enabled = πληκτρολόγιο ενεργό
 autoscroll-enabled = αυτόματη κύλιση ενεργή
+zooming-enabled = ομαλό ζουμ ενεργό
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

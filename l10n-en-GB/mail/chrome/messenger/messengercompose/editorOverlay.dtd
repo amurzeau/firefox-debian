@@ -294,6 +294,7 @@
 <!ENTITY findToolbarCmd.tooltip "Find text in page">
 <!ENTITY spellToolbarCmd.label "Spell">
 <!ENTITY spellToolbarCmd.tooltip "Check spelling of selection or entire page">
+
 <!ENTITY imageToolbarCmd.label "Image">
 <!ENTITY imageToolbarCmd.tooltip "Insert new image or edit selected image's properties">
 <!ENTITY hruleToolbarCmd.label "H.Line">
@@ -306,7 +307,6 @@
 <!ENTITY anchorToolbarCmd.tooltip "Insert new named anchor or edit selected anchor's properties">
 <!ENTITY TextColorButton.tooltip "Choose colour for text">
 <!ENTITY BackgroundColorButton.tooltip "Choose colour for background">
-<!ENTITY throbber.tooltip "Go to the &vendorShortName; home page">
 <!ENTITY throbber.tooltip2 "Go to the &brandShortName; home page">
 <!ENTITY HighlightColorButton.tooltip "Choose highlight colour for text">
 

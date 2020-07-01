@@ -294,6 +294,7 @@
 <!ENTITY findToolbarCmd.tooltip "Знайти текст на сторінці">
 <!ENTITY spellToolbarCmd.label "Орфографія">
 <!ENTITY spellToolbarCmd.tooltip "Перевірити орфографію виділеного уривка або всієї сторінки">
+
 <!ENTITY imageToolbarCmd.label "Зображення">
 <!ENTITY imageToolbarCmd.tooltip "Вставити нове зображення або змінити властивості виділеного">
 <!ENTITY hruleToolbarCmd.label "Роздільник">
@@ -313,7 +314,7 @@
 <!ENTITY absoluteFontSizeToolbarCmd.tooltip "Встановити розмір шрифту">
 <!ENTITY decreaseFontSizeToolbarCmd.tooltip "Менший розмір шрифту">
 <!ENTITY increaseFontSizeToolbarCmd.tooltip "Більший розмір шрифту">
-<!ENTITY boldToolbarCmd.tooltip "Напівжирний">
+<!ENTITY boldToolbarCmd.tooltip "Жирний">
 <!ENTITY italicToolbarCmd.tooltip "Курсив">
 <!ENTITY underlineToolbarCmd.tooltip "Підкреслений">
 <!ENTITY bulletListToolbarCmd.tooltip "Додати або вилучити маркірований список">

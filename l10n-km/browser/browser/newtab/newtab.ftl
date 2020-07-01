@@ -45,7 +45,7 @@ newtab-topsites-save-button = រក្សាទុក
 newtab-topsites-preview-button = មើល​សាកល្បង
 newtab-topsites-add-button = បន្ថែម
 
-## Top Sites - Delete history confirmation dialog. 
+## Top Sites - Delete history confirmation dialog.
 
 newtab-confirm-delete-history-p1 = តើអ្នកប្រាកដថាអ្នកចង់លុបគ្រប់វត្ថុនៃទំព័រនេះពីប្រវត្តិរបស់អ្នកឬ?
 # "This action" refers to deleting a page from history.
@@ -57,6 +57,12 @@ newtab-confirm-delete-history-p2 = សកម្មភាពនេះមិនអ
 newtab-menu-section-tooltip =
     .title = បើក​ម៉ឺនុយ
     .aria-label = បើក​ម៉ឺនុយ
+# This tooltip is for the context menu of Pocket cards or Topsites
+# Variables:
+#  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
+newtab-menu-content-tooltip =
+    .title = បើក​ម៉ឺនុយ
+    .aria-label = បើកម៉ឺនុយបរិបទសម្រាប់ { $title }
 # Tooltip on an empty topsite box to open the New Top Site dialog.
 newtab-menu-topsites-placeholder-tooltip =
     .title = កែសម្រួលសាយនេះ
@@ -74,21 +80,33 @@ newtab-menu-delete-history = លុប​ពី​ប្រវត្តិ
 newtab-menu-save-to-pocket = រក្សាទុកទៅ { -pocket-brand-name }
 newtab-menu-delete-pocket = លុបចេញពី { -pocket-brand-name }
 newtab-menu-archive-pocket = ទុកក្នុងប័ណ្ណសារក្នុង { -pocket-brand-name }
+
+## Message displayed in a modal window to explain privacy and provide context for sponsored content.
+
+
+##
+
 # Bookmark is a noun in this case, "Remove bookmark".
 newtab-menu-remove-bookmark = លុប​ចំណាំ​ចេញ
 # Bookmark is a verb here.
 newtab-menu-bookmark = ចំណាំ
 
-## Context Menu - Downloaded Menu. "Download" in these cases is not a verb, 
+## Context Menu - Downloaded Menu. "Download" in these cases is not a verb,
 ## it is a noun. As in, "Copy the link that belongs to this downloaded item".
 
 newtab-menu-copy-download-link = ចម្លង​តំណ​ទាញ​យក
 newtab-menu-go-to-download-page = ទៅ​កាន់​ទំព័រ​ទាញ​យក
+newtab-menu-remove-download = យក​ចេញពី​ប្រវត្តិ
 
 ## Context Menu - Download Menu: These are platform specific strings found in the context menu of an item that has
 ## been downloaded. The intention behind "this action" is that it will show where the downloaded file exists on the file
 ## system for each operating system.
 
+newtab-menu-show-file =
+    { PLATFORM() ->
+        [macos] បង្ហាញក្នុង Finder
+       *[other] បើក​ថត​ដែល​ផ្ទុក
+    }
 newtab-menu-open-file = បើកឯកសារ
 
 ## Card Labels: These labels are associated to pages to give
@@ -101,7 +119,7 @@ newtab-label-recommended = និន្នាការ
 newtab-label-saved = បានរក្សាទុកទៅ { -pocket-brand-name }
 newtab-label-download = បានទាញយក
 
-## Section Menu: These strings are displayed in the section context menu and are 
+## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
 
 newtab-section-menu-remove-section = លុប​ផ្នែក​ចេញ
@@ -114,6 +132,9 @@ newtab-section-menu-add-search-engine = បន្ថែម​ម៉ាស៊ី�
 newtab-section-menu-move-up = ​ផ្លាស់ទី​ឡើង​លើ
 newtab-section-menu-move-down = ផ្លាស់ទី​ចុះក្រោម
 newtab-section-menu-privacy-notice = ការជូនដំណឹង​អំពី​ឯកជនភាព
+
+## Section aria-labels
+
 
 ## Section Headers.
 
@@ -131,11 +152,15 @@ newtab-empty-section-highlights = ចាប់ផ្តើមការរុក�
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = អ្នកបានអានរឿងទាំងអស់ហើយ។ ពិនិត្យ​រឿង​ដែល​ពេញនិយមបំផុត​ឡើងវិញ​​ពី { $provider }។ មិនអាចរង់ចាំ? ជ្រើសរើសប្រធានបទកំពុងពេញនិយម ដើម្បីស្វែងរករឿងដ៏អស្ចារ្យនៅ​លើ​អ៊ីនធឺណិត។
 
+## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
+
+
 ## Pocket Content Section.
 
 # This is shown at the bottom of the trending stories section and precedes a list of links to popular topics.
 newtab-pocket-read-more = ប្រធានបទកំពុងពេញនិយម៖
-newtab-pocket-how-it-works = របៀប​ដែល​វា​ដំណើរការ
+newtab-pocket-more-recommendations = ការណែនាំច្រើនទៀត
+newtab-pocket-cta-button = ទាញយក { -pocket-brand-name }
 
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.

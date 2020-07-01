@@ -19,7 +19,7 @@ sentence. -->
 <!ENTITY  reportIdleAfter.accesskey     "δ">
 <!ENTITY  idleTime                      "λεπτά αδράνειας">
 
-<!ENTITY  andSetStatusToAway.label      "και να ορίζεται η κατάσταση μου σε Μακρυά με αυτό το μήνυμα κατάστασης:">
+<!ENTITY  andSetStatusToAway.label      'και να ορίζεται η κατάστασή μου σε "Εκτός υπολογιστή" με το εξής μήνυμα:'>
 <!ENTITY  andSetStatusToAway.accesskey  "υ">
 
 <!ENTITY  sendTyping.label              "Αποστολή ειδοποιήσεων πληκτρολόγησης στις συνομιλίες">
@@ -28,10 +28,10 @@ sentence. -->
 <!ENTITY  chatNotifications.label             "Όταν έρχονται μηνύματα που απευθύνονται σε εσάς:">
 <!ENTITY  desktopChatNotifications.label      "Εμφάνιση ειδοποίησης:">
 <!ENTITY  desktopChatNotifications.accesskey  "ε">
-<!ENTITY  completeNotification.label          "με το όνομα του αποστολέα και μια προεπισκόπηση του μηνύματος">
-<!ENTITY  buddyInfoOnly.label                 "μόνο με το όνομα του αποστολέα">
+<!ENTITY  completeNotification.label          "με όνομα αποστολέα και προεπισκόπηση μηνύματος">
+<!ENTITY  buddyInfoOnly.label                 "μόνο με όνομα αποστολέα">
 <!ENTITY  dummyNotification.label             "χωρίς καμία πληροφορία">
-<!ENTITY  getAttention.label                  "Φλασάρισμα του αντικειμένου στην μπάρα εργασιών">
+<!ENTITY  getAttention.label                  "Αναλαμπή στοιχείου γραμμής εργασιών">
 <!ENTITY  getAttention.accesskey              "Φ">
 <!ENTITY  getAttentionMac.label               "Κίνηση του εικονιδίου στην μπάρα">
 <!ENTITY  getAttentionMac.accesskey           "κ">
@@ -39,8 +39,8 @@ sentence. -->
 <!ENTITY  chatSound.label                     "Αναπαραγωγή ήχου">
 <!ENTITY  play.label                          "Αναπαραγωγή">
 <!ENTITY  play.accesskey                      "Α">
-<!ENTITY  systemSound.label                   "Προεπιλεγμένος ήχος συστήματος για νέο email">
-<!ENTITY  systemSound.accesskey               "ρ">
+<!ENTITY  systemSound.label                   "Προεπιλεγμένος ήχος συστήματος για νέα email">
+<!ENTITY  systemSound.accesskey               "Π">
 <!ENTITY  customsound.label                   "Χρήση του ακόλουθου αρχείου ήχου">
 <!ENTITY  customsound.accesskey               "χ">
 <!ENTITY  browse.label                        "Περιήγηση…">

@@ -302,8 +302,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Gunakan { $plugin-name } (di { -brand-short-name })
-applications-preview-inapp =
-    .label = Pratinjau di { -brand-short-name }
 applications-open-inapp =
     .label = Buka di { -brand-short-name }
 
@@ -317,8 +315,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -485,11 +481,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Situs Teratas
 home-prefs-topsites-description = Situs yang sering Anda kunjungi
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Disarankan oleh { $provider }
 home-prefs-recommended-by-description = Konten bermutu dari seluruh web, khusus untuk Anda
+home-prefs-recommended-by-description-update = Konten luar biasa dari seluruh web, dikuratori oleh { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Panduan
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Konten Sponsor
@@ -546,6 +548,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Tampilkan saran pencarian di Jendela Pribadi
 suggestions-addressbar-settings = Ubah preferensi untuk riwayat penjelajahan, markah, dan saran tab.
+suggestions-addressbar-settings-generic = Ubah preferensi untuk saran bilah alamat lainnya
 search-suggestions-cant-show = Saran pencarian tidak akan ditampilkan di hasil bilah lokasi karena Anda telah mengatur { -brand-short-name } agar tidak mengingat riwayat.
 search-one-click-header = Mesin pencari sekali klik
 search-one-click-desc = Pilih mesin pencari alternatif yang muncul di bawah bilah alamat dan bilah pencarian ketika Anda mulai memasukkan kata kunci.
@@ -749,10 +752,10 @@ privacy-header = Privasi Peramban
 
 ## Privacy Section - Forms
 
+logins-header = Info Masuk & Sandi
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Info Masuk & Sandi
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Info Masuk & Sandi
     .searchkeywords = { -lockwise-brand-short-name }
@@ -788,8 +791,6 @@ forms-master-pw-fips-desc = Sandi Gagal Diubah
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verifikasikan identitas Anda untuk membuat Kata Sandi Utama.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Untuk membuat Kata Sandi Utama, masukkan kredensial info masuk Windows Anda. Hal ini membantu melindungi keamanan akun Anda.
 # This message can be seen by trying to add a Master Password.
@@ -886,6 +887,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Kelola Izin…
     .accesskey = K
+sitedata-cookies-exceptions =
+    .label = Kelola Pengecualian…
+    .accesskey = K
 
 ## Privacy Section - Address Bar
 
@@ -899,6 +903,9 @@ addressbar-locbar-bookmarks-option =
     .accesskey = M
 addressbar-locbar-openpage-option =
     .label = Tab terbuka
+    .accesskey = T
+addressbar-locbar-topsites-option =
+    .label = Situs teratas
     .accesskey = T
 addressbar-suggestions-settings = Ubah pengaturan untuk saran mesin pencari
 
@@ -959,7 +966,6 @@ content-blocking-fingerprinters = Pelacak Sidik
 content-blocking-warning-title = Perhatian!
 content-blocking-warning-description = Pemblokiran konten bisa menyebabkan beberapa situs web tidak berfungsi. Mudah sekali untuk menonaktifkan pemblokiran pada situs yang Anda percayai.
 content-blocking-learn-how = Pelajari caranya
-content-blocking-etp-warning-description = Pemblokiran pelacak dapat memengaruhi fungsionalitas beberapa situs tertentu. Muat ulang halaman beserta pelacak untuk memuat semua konten.
 content-blocking-and-isolating-etp-warning-description = Memblokir pelacak dan mengisolasi kuki dapat memengaruhi fungsionalitas beberapa situs. Muat ulang laman dengan pelacak untuk memuat semua konten.
 content-blocking-warning-learn-how = Pelajari caranya
 content-blocking-reload-description = Anda harus memuat ulang tab Anda untuk menerapkan perubahan ini.

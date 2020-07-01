@@ -9,18 +9,6 @@
 remove-address-row-type = Tynnwch y maes { $type }
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
-address-input-type =
-    { $count ->
-        [0] Maes mewnbwn { $type } gwag
-        [zero] Maes mewnbwn { $type } gwag
-        [one] Maes mewnbwn { $type } gydag un cyfeiriad
-        [two] Maes mewnbwn { $type } gyda { $count } cyfeiriad
-        [few] Maes mewnbwn { $type } gyda { $count } cyfeiriad
-        [many] Maes mewnbwn { $type } gyda { $count } cyfeiriad
-       *[other] Maes mewnbwn { $type } gyda { $count } cyfeiriad
-    }
-#   $type (String) - the type of the addressing row
-#   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
         [0] { $type }
@@ -54,3 +42,34 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Symud i Bcc
     .accesskey = B
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [1] { $count } Atodiad
+            [zero] { $count } Atodiadau
+            [one] { $count } Atodiad
+            [two] { $count } Atodiad
+            [few] { $count } Atodiad
+            [many] { $count } Atodiad
+           *[other] { $count } Atodiad
+        }
+    .accesskey = A
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [1] Atodiadau
+            [zero] { $count } Atodiadau
+            [one] { $count } Atodiad
+            [two] { $count } Atodiad
+            [few] { $count } Atodiad
+            [many] { $count } Atodiad
+           *[other] { $count } Atodiad
+        }
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+button-return-receipt =
+    .label = Derbynneb
+    .tooltiptext = Gofyn am dderbynneb dychwelyd i'r neges hon

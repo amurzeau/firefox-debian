@@ -55,6 +55,10 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Сертификаттар тізбегі:
+open-in-new-window-for-csp-or-xfo-error = Сайтты жаңа терезеде ашу
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = Қауіпсіздігіңізді қорғау үшін, { $hostname } { -brand-short-name } үшін бетті көрсетуге рұқсат етпейді, егер оны басқа сайт ендірілген болса. Бұл бетті қарау үшін, оны жаңа терезеде ашыңыз.
 
 ## Messages used for certificate error titles
 
@@ -85,6 +89,7 @@ unknownSocketType-title = Сервердің жауабы күтпеген тү�
 nssFailure2-title = Қорғалған байланысты орнату сәтсіз аяқталды
 cspBlocked-title = Құрамасының қауіпсіздік саясатымен блокталған
 xfoBlocked-title = X-Frame-Options саясатымен бұғаттаған
+csp-xfo-error-title = { -brand-short-name } бұл парақты аша алмайды
 corruptedContentError-title = Зақымдалған құрама қатесі
 remoteXUL-title = Қашықтағы XUL
 sslv3Used-title = Қауіпсіз түрде байланысу мүмкін емес

@@ -39,10 +39,14 @@ etp-card-title = Узмоцненая ахова ад сачэння
 etp-card-content = Трэкеры ідуць за вамі па сеціве, каб сабраць інфармацыю пра вашыя звычкі і зацікаўленасці. { -brand-short-name } блакуе многія з гэтых трэкераў і іншых зламысных скрыптоў.
 protection-report-webpage-title = Панэль стану аховы
 protection-report-page-content-title = Панэль стану аховы
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } можа ахоўваць вашу прыватнасць за кадрам падчас аглядання. Гэта персаналізаваная зводка аб ахове, уключна з інструментамі для кантролю вашай бяспекі ў Інтэрнэце.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } ахоўвае вашу прыватнасць за кадрам падчас аглядання. Гэта персаналізаваная зводка аб ахове, уключна з інструментамі для кантролю вашай бяспекі ў Інтэрнэце.
+protection-report-settings-link = Кіруйце сваімі наладамі прыватнасці і бяспекі
 etp-card-title-always = Узмоцненая ахова ад сачэння: заўсёды ўключана
 etp-card-title-custom-not-blocking = Узмоцненая ахова ад сачэння: ВЫКЛЮЧАНА
-etp-card-content-summary = Калі нераспазнаныя кампаніі спрабуюць таемна сачыць за вамі ў Інтэрнэце, { -brand-short-name } аўтаматычна спыняе многія з іх.
+etp-card-content-description = { -brand-short-name } аўтаматычна спыняе таемнае сачэнне кампаній за вамі ў Інтэрнэце.
 protection-report-etp-card-content-custom-not-blocking = Усе меры аховы зараз адключаны. Выберыце, якія трэкеры трэба заблакаваць, кіруючы наладамі аховы { -brand-short-name }.
 protection-report-manage-protections = Кіраваць наладамі
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -60,8 +64,6 @@ fingerprinter-tab-title = Збіральнікі адбіткаў пальцаў
 fingerprinter-tab-content = Збіральнікі адбіткаў пальцаў збіраюць налады вашага браўзера і камп'ютара для стварэння вашага профілю. Выкарыстоўваючы гэты лічбавы адбітак, яны могуць асочваць вас на розных сайтах. <a data-l10n-name="learn-more-link">Даведацца больш</a>
 cryptominer-tab-title = Майнеры крыптавалют
 cryptominer-tab-content = Майнеры крыптавалют выкарыстоўваюць вылічальную магутнасць вашай сістэмы, каб здабываць лічбавыя грошы. Скрыпты для здабычы крыптавалют разраджаюць вашу батарэю, запавольваюць працу камп'ютара і могуць павялічыць ваш выдаткі на электраэнергію. <a data-l10n-name="learn-more-link">Даведацца больш</a>
-protections-close-button =
-    .aria-label = Закрыць
 protections-close-button2 =
     .aria-label = Закрыць
     .title = Закрыць
@@ -126,6 +128,8 @@ monitor-link = Як гэта працуе
 monitor-header-content-no-account = Паспрабуйце { -monitor-brand-name }, каб спраўдзіць, ці не ўцяклі вашы дадзеныя у вядомых узломах, і атрымліваць апавяшчэнні аб новых уцечках.
 monitor-header-content-signed-in = { -monitor-brand-name } папярэдзіць, калі вашы звесткі з'явяцца ў вядомым парушэнні дадзеных.
 monitor-sign-up = Падпішыцеся на абвесткі аб уцечках
+monitor-sign-up-link = Падпісацца на абвесткі аб уцечках
+    .title = Падпісацца на абвесткі аб уцечках ад { -monitor-brand-name }
 auto-scan = Аўтаматычна прасканавана сёння
 monitor-emails-tooltip =
     .title = Пабачыць адрасы пошты, якія назіраюцца ў { -monitor-brand-short-name }
@@ -152,6 +156,15 @@ info-known-breaches-found =
        *[many] Вядомых парушэнняў дадзеных раскрылі вашу інфармацыю
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] Вядомая ўцечка дадзеных пазначана як вырашаная
+        [few] Вядомыя ўцечкі дадзеных адзначаны як вырашаныя
+       *[many] Вядомых уцечак дадзеных адзначана як вырашаныя
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -170,6 +183,43 @@ password-warning =
         [few] Захаваныя лагіны могуць быць раскрыты пры ўцечцы дадзеных. Змяніце гэтыя паролі для лепшай бяспекі ў сеціве. <a data-l10n-name="lockwise-link">Паглядзець захаваныя лагіны</a>
        *[many] Захаваныя лагіны могуць быць раскрыты пры ўцечцы дадзеных. Змяніце гэтыя паролі для лепшай бяспекі ў сеціве. <a data-l10n-name="lockwise-link">Паглядзець захаваныя лагіны</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] Пароль выяўлены ў нявырашаных уцечках
+        [few] Паролі выяўлены ў нявырашаных уцечках
+       *[many] Пароляў выяўлена ў нявырашаных уцечках
+    }
+monitor-no-breaches-title = Добрыя навіны!
+monitor-no-breaches-description = У вас няма вядомых уцечак дадзеных. Калі гэта зменіцца, мы вам паведамім.
+monitor-view-report-link = Паглядзець справаздачу
+    .title = Вырашыць праблемы, звязаныя з уцечкамі звестак, на { -monitor-brand-short-name }
+monitor-breaches-unresolved-title = Вырашыце свае ўцечкі
+monitor-breaches-unresolved-description = Прааналізаваўшы падрабязнасці уцечкі і прыняўшы меры па абароне сваёй інфармацыі, вы можаце адзначыць уцечкі як вырашаныя.
+monitor-manage-breaches-link = Кіраваць уцечкамі дадзеных
+    .title = Кіраваць уцечкамі дадзеных на { -monitor-brand-short-name }
+monitor-breaches-resolved-title = Нядрэнна! Вы вырашылі ўсе вядомыя ўцечкі дадзеных.
+monitor-breaches-resolved-description = Калі ваш адрас пошты з'явіцца ў любых новых уцечках, мы паведамім вам.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+        [one] { $numBreachesResolved } з { $numBreaches } уцечак пазначана як вырашаная
+        [few] { $numBreachesResolved } з { $numBreaches } уцечак пазначаны як вырашаныя
+       *[many] { $numBreachesResolved } з { $numBreaches } уцечак пазначана як вырашаныя
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved } завершана
+monitor-partial-breaches-motivation-title-start = Выдатны пачатак!
+monitor-partial-breaches-motivation-title-middle = Так трымаць!
+monitor-partial-breaches-motivation-title-end = Амаль гатова! Так трымаць.
+monitor-partial-breaches-motivation-description = Развяжыце рэшту сваіх уцечак дадзеных на { -monitor-brand-short-name }.
+monitor-resolve-breaches-link = Вырашыць уцечкі
+    .title = Вырашыць уцечкі на { -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

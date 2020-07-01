@@ -304,6 +304,9 @@ about-debugging-worker-push-service =
 # Displayed as title of the inspect button when service worker debugging is disabled.
 about-debugging-worker-inspect-action-disabled =
     .title = Mbikëqyrja e Service Worker-it është aktualisht e çaktivizuar për { -brand-shorter-name } multiproces
+# Displayed as title of the inspect button for zombie tabs (e.g. tabs loaded via a session restore).
+about-debugging-zombie-tab-inspect-action-disabled =
+    .title = Skeda s’është ngarkuar plotësisht dhe s’mund të inspektohet
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-main-process-name = Procesi Kryesor

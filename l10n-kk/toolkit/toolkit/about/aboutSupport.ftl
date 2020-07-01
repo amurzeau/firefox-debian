@@ -31,6 +31,7 @@ app-basics-title = Қолданба негіздері
 app-basics-name = Аты
 app-basics-version = Нұсқасы
 app-basics-build-id = Жинақ ID-і
+app-basics-distribution-id = Таратылым ID
 app-basics-update-channel = Жаңарту арнасы
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -115,6 +116,11 @@ sandbox-sys-call-number = Жүйелік шақыру
 sandbox-sys-call-args = Аргументтер
 safe-mode-title = Қауіпсіз режимін қолданып көру
 restart-in-safe-mode-label = Сөндірілген кеңейтулермен қайта қосу…
+clear-startup-cache-title = Іске қосылу кэшін тарартып көріңіз
+clear-startup-cache-label = Іске қосылу кэшін тазарту…
+startup-cache-dialog-title = Іске қосылу кэшін тазарту
+startup-cache-dialog-body = Іске қосылу кэшін тазарту үшін { -brand-short-name } қайта іске қосыңыз. Бұл сіздің баптаулараңызы өзгертпейді, немесе сіз { -brand-short-name } ішіне қосқан кеңейтулерді өшірмейді.
+restart-button-label = Қайта қосу
 
 ## Media titles
 
@@ -122,6 +128,7 @@ audio-backend = Аудио файлдарын ойнату бағдарлама�
 max-audio-channels = Макс. арналар
 channel-layout = Таңдамалы арналар жаймасы
 sample-rate = Таңдамалы кадрлар жиілігі
+roundtrip-latency = Айналма жолдың кідірісі (стандартты ауытқу)
 media-title = Мультимедиа
 media-output-devices-title = Шығыс құрылғылары
 media-input-devices-title = Енгізу құрылғылары
@@ -287,6 +294,11 @@ sandbox-proc-type-content = құрамасы
 sandbox-proc-type-file = файл құрамасы
 sandbox-proc-type-media-plugin = медиа плагині
 sandbox-proc-type-data-decoder = деректер декодері
+startup-cache-title = Іске қосу кэші
+startup-cache-disk-cache-path = Диск кэш жолы
+startup-cache-ignore-disk-cache = Диск кэшін елемеу
+startup-cache-found-disk-cache-on-init = Іске қосылу кезінде диск кэші табылды
+startup-cache-wrote-to-disk-cache = Диск кэшіне жазылды
 launcher-process-status-0 = Іске қосулы
 launcher-process-status-1 = Ақаулығы салдарынан сөндірілген
 launcher-process-status-2 = Мәжбүрлі сөндірілген
@@ -310,6 +322,7 @@ touch-enabled = сенсорлық енгізу іске қосылған
 drag-enabled = айналдыру жолағының ұстап тарту іске қосылған
 keyboard-enabled = пернетақта іске қосылған
 autoscroll-enabled = автоайналдыру іске қосылған
+zooming-enabled = тегіс ыммен масштабтау іске қосылған
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

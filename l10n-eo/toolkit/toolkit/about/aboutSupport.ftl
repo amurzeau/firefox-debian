@@ -116,6 +116,11 @@ sandbox-sys-call-number = Sistema voko
 sandbox-sys-call-args = Parametroj
 safe-mode-title = Provi la sekuran reĝimon
 restart-in-safe-mode-label = Restartigi kun ĉiuj aldonaĵoj malaktivaj…
+clear-startup-cache-title = Provu viŝi la startan staplon
+clear-startup-cache-label = Viŝi startan staplon…
+startup-cache-dialog-title = Viŝi startan staplon
+startup-cache-dialog-body = Restartigi { -brand-short-name } por viŝi la startan staplon. Tiu ago ne ŝanĝos viajn agordojn nek forigos etendaĵojn aldonitaj de vi al { -brand-short-name }.
+restart-button-label = Restartigi
 
 ## Media titles
 
@@ -123,6 +128,7 @@ audio-backend = Sonsistemo
 max-audio-channels = Maksimuma nombro de kanaloj
 channel-layout = Preferata aranĝo de kanaloj
 sample-rate = Preferata specimena frekvenco
+roundtrip-latency = Tien-reena tempo (norma devio)
 media-title = Aŭdvidaĵo
 media-output-devices-title = Eligaj aparatoj
 media-input-devices-title = Enigaj aparatoj

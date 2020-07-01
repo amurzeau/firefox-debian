@@ -2,20 +2,35 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 ## App Menu
 
 appmenuitem-protection-report-title = Privatlivs-beskyttelse
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Vis rapport om beskyttelse af dit privatliv
 
+appmenuitem-protection-dashboard-title = Oversigt over beskyttelse
+appmenuitem-customize-mode =
+    .label = Tilpas…
+
 ## Zoom Controls
 
 appmenuitem-zoom-enlarge =
-  .label = Zoom ind
+    .label = Zoom ind
 appmenuitem-zoom-reduce =
-  .label = Zoom ud
+    .label = Zoom ud
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Synkroniser nu
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Nyheder
+
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+  .label = Giv besked om nye funktioner
+  .accesskey = f

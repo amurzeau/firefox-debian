@@ -5,11 +5,12 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = 從另一套瀏覽器匯入…
 appmenuitem-protection-report-title = 隱私保護
 appmenuitem-protection-report-tooltip =
     .tooltiptext = 前往您的隱私報告
+appmenuitem-protection-dashboard-title = 保護資訊儀錶板
+appmenuitem-customize-mode =
+    .label = 自訂…
 
 ## Zoom Controls
 
@@ -22,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = 立刻同步
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = 有什麼新鮮事
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = 有新功能推出時通知我
+    .accesskey = f

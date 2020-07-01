@@ -55,6 +55,10 @@ cert-error-details-hsts-label = „HTTP Strict Transport Security“: { $hasHSTS
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP viešojo rakto įsiminimas: { $hasHPKP }
 cert-error-details-cert-chain-label = Liudijimų grandinė:
+open-in-new-window-for-csp-or-xfo-error = Atverti svetainę naujame lange
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = Kad apsaugotų jūsų saugumą, { $hostname } neleis „{ -brand-short-name }“ parodyti tinklalapio, jei jis yra įterptas kitoje svetainėje. Norėdami matyti šį tinklalapį, turite jį atverti naujame lange.
 
 ## Messages used for certificate error titles
 
@@ -85,6 +89,7 @@ unknownSocketType-title = Netikėtas serverio atsakas
 nssFailure2-title = Saugaus ryšio užmegzti nepavyko
 cspBlocked-title = Užblokuota dėl saugumo politikos
 xfoBlocked-title = Užblokuota dėl „X-Frame-Options“ politikos
+csp-xfo-error-title = „{ -brand-short-name }“ negali atverti šio tinklalapio
 corruptedContentError-title = Klaida: duomenys pažeisti
 remoteXUL-title = XUL iš tinklo
 sslv3Used-title = Nepavyko prisijungti saugiai

@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Utiliser { $plugin-name } (dans { -brand-short-name })
-applications-preview-inapp =
-    .label = Aperçu dans { -brand-short-name }
 applications-open-inapp =
     .label = Ouvrir dans { -brand-short-name }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Sites les plus visités
 home-prefs-topsites-description = Les sites que vous visitez le plus
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Recommandations par { $provider }
 home-prefs-recommended-by-description = Du contenu intéressant en provenance du Web, personnalisé pour vous
+home-prefs-recommended-by-description-update = Contenu exceptionnel déniché sur le Web par { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Mode d’emploi
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Articles sponsorisés
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Afficher les suggestions de recherche dans les fenêtres de navigation privée
 suggestions-addressbar-settings = Modifier les préférences pour les suggestions de l’historique de navigation, des marque-pages et des onglets
+suggestions-addressbar-settings-generic = Modifier les préférences pour les suggestions de la barre d’adresse
 search-suggestions-cant-show = Les suggestions de recherche ne seront pas affichées parmi les résultats de la barre d’adresse car vous avez configuré { -brand-short-name } de façon à ce qu’il ne conserve jamais l’historique.
 search-one-click-header = Moteurs de recherche accessibles en un clic
 search-one-click-desc = Sélectionnez les moteurs de recherche alternatifs qui apparaissent sous la barre d’adresse et la barre de recherche lorsque vous commencez à saisir un mot-clé.
@@ -765,10 +768,10 @@ privacy-header = Vie privée
 
 ## Privacy Section - Forms
 
+logins-header = Identifiants et mots de passe
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Identifiants et mots de passe
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Identifiants et mots de passe
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = Échec de la modification du mot de passe principal
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Vérifiez votre identité pour créer un mot de passe principal.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Pour créer un mot de passe principal, entrez vos informations de connexion Windows. Cela permet de conserver la sécurité de vos comptes.
 # This message can be seen by trying to add a Master Password.
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Gérer les permissions…
     .accesskey = p
+sitedata-cookies-exceptions =
+    .label = Gérer les exceptions…
+    .accesskey = x
 
 ## Privacy Section - Address Bar
 
@@ -916,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Les onglets ouverts
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = Les sites les plus visités
+    .accesskey = v
 addressbar-suggestions-settings = Modifier les préférences pour les suggestions de recherche
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Détecteurs d’empreinte numérique
 content-blocking-warning-title = Attention !
 content-blocking-warning-description = Le blocage de contenu peut empêcher certains sites de fonctionner. Vous pouvez facilement désactiver le blocage pour les sites en lesquels vous avez confiance.
 content-blocking-learn-how = Découvrez comment
-content-blocking-etp-warning-description = Le blocage des traqueurs peut avoir une incidence sur les fonctionnalités de certains sites. Actualisez une page avec les traqueurs pour charger tout le contenu.
 content-blocking-and-isolating-etp-warning-description = Le blocage des traqueurs et l’isolation des cookies peut avoir une incidence sur les fonctionnalités de certains sites. Actualisez une page avec des traqueurs pour charger tout le contenu.
 content-blocking-warning-learn-how = Me montrer comment faire
 content-blocking-reload-description = Vous devrez actualiser vos onglets pour appliquer ces modifications.

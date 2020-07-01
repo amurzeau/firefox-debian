@@ -29,11 +29,11 @@ about-debugging-sidebar-setup =
 about-debugging-sidebar-usb-enabled = USB jurujapyre
 # Text displayed in the about:debugging sidebar when USB devices discovery is disabled
 # (for instance because the mandatory ADB extension is not installed).
-about-debugging-sidebar-usb-disabled = USB pe'apyre
+about-debugging-sidebar-usb-disabled = USB pe’apyre
 # Connection status (connected) for runtime items in the sidebar
 aboutdebugging-sidebar-runtime-connection-status-connected = Jeikepyre
 # Connection status (disconnected) for runtime items in the sidebar
-aboutdebugging-sidebar-runtime-connection-status-disconnected = Pe'apyre
+aboutdebugging-sidebar-runtime-connection-status-disconnected = Pe’apyre
 # Text displayed in the about:debugging sidebar when no device was found.
 about-debugging-sidebar-no-devices = Ndojejuhúi mba’e’oka.
 # Text displayed in buttons found in sidebar items representing remote runtimes.
@@ -74,7 +74,7 @@ about-debugging-sidebar-support-icon =
     .alt = Pytyvõrã ra'ãngachu'i
 # Text displayed in a sidebar button to refresh the list of USB devices. Clicking on it
 # will attempt to update the list of devices displayed in the sidebar.
-about-debugging-refresh-usb-devices-button = Embohekopyahu mba'e'oka
+about-debugging-refresh-usb-devices-button = Embohekopyahu mba’e’oka
 
 # Setup Page strings
 
@@ -83,11 +83,11 @@ about-debugging-setup-title = Ñembosako’i
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Emboheko mba’éichapa eikéta emopotĩ hag̃ua okáguio ne mba’e’oka.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox = Eipuru <a>{ about-debugging-this-firefox-runtime-name }</a> emopotĩ hag̃ua tendayke, jepysokue ha Mba'apohára mba'epytyvõrãguáva ko peteĩchagua { -brand-shorter-name }.
+about-debugging-setup-this-firefox = Eipuru <a>{ about-debugging-this-firefox-runtime-name }</a> emopotĩ hag̃ua tendayke, jepysokue ha Mba’apohára mba’epytyvõrãguáva ko peteĩchagua { -brand-shorter-name }.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox2 = Eipuru { about-debugging-this-firefox-runtime-name }</a> emopotĩ hag̃ua tendayke, jepysokue ha service workers kóva ko { -brand-shorter-name } rehegua.
 # Title of the heading Connect section of the Setup page.
-about-debugging-setup-connect-heading = Embojuaju peteĩ mba'e'oka
+about-debugging-setup-connect-heading = Embojuaju peteĩ mba’e’oka
 # USB section of the Setup page
 about-debugging-setup-usb-title = USB
 # Explanatory text displayed in the Setup page when USB debugging is disabled
@@ -102,7 +102,7 @@ about-debugging-setup-usb-disable-button = Eipe’a USB mba’e’oka
 about-debugging-setup-usb-updating-button = Hekopyahuhína...
 # USB section of the Setup page (USB status)
 about-debugging-setup-usb-status-enabled = Jurujapyre
-about-debugging-setup-usb-status-disabled = Pe'apyre
+about-debugging-setup-usb-status-disabled = Pe’apyre
 about-debugging-setup-usb-status-updating = Hekopyahuhína...
 # USB section step by step guide
 about-debugging-setup-usb-step-enable-dev-menu2 = Emyandy mboguatahára poravoha ne Android mba’e’okápe.
@@ -157,13 +157,13 @@ about-debugging-runtime-tabs =
     .name = Tendayke
 # Title of the service workers category.
 about-debugging-runtime-service-workers =
-    .name = Mba'apohára mba'epytyvõrãguáva
+    .name = Mba’apohára mba’epytyvõrãguáva
 # Title of the shared workers category.
 about-debugging-runtime-shared-workers =
-    .name = Mba'apohára oñondiveguáva
+    .name = Mba’apohára oñondiveguáva
 # Title of the other workers category.
 about-debugging-runtime-other-workers =
-    .name = Ambue mba'apohára
+    .name = Ambue mba’apohára
 # Title of the processes category.
 about-debugging-runtime-processes =
     .name = Tapereko
@@ -208,7 +208,7 @@ about-debugging-runtime-disconnect-button = Ñesẽte
 about-debugging-connection-prompt-enable-button = Embojuruja jeikeha rechaha
 # Text of the connection prompt button displayed in Runtime pages, when the preference
 # "devtools.debugger.prompt-connection" is true on the target runtime.
-about-debugging-connection-prompt-disable-button = Eipe'a jeikeha rechaha
+about-debugging-connection-prompt-disable-button = Eipe’a jeikeha rechaha
 # Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
 about-debugging-profiler-dialog-title2 = Ñemyatyrõha
 # Clicking on the header of a debug target category will expand or collapse the debug
@@ -298,10 +298,13 @@ about-debugging-worker-scope =
 # Displayed for service workers in runtime pages, to label the push service endpoint (url)
 # of a worker
 about-debugging-worker-push-service =
-    .label = Mba'epytyvõrã ñemondo
+    .label = Mba’epytyvõrã ñemondo
 # Displayed as title of the inspect button when service worker debugging is disabled.
 about-debugging-worker-inspect-action-disabled =
     .title = Service Worker ñemoinge ko’ág̃a ndoikói multiproceso { -brand-shorter-name } peg̃uarã
+# Displayed as title of the inspect button for zombie tabs (e.g. tabs loaded via a session restore).
+about-debugging-zombie-tab-inspect-action-disabled =
+    .title = Tendayke nahenyhẽmbái ha ndaikatúi ojehechajey
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-main-process-name = Tembiapo ñemboguata
@@ -317,8 +320,8 @@ about-debugging-multiprocess-toolbox-description = Tapereko ha’etéva ha tetep
 about-debugging-message-close-icon =
     .alt = Emboty ñe’ẽmondo
 # Label text used for the error details of message component.
-about-debugging-message-details-label-error = Mba'emimi jejavygua
+about-debugging-message-details-label-error = Mba’emimi jejavygua
 # Label text used for the warning details of message component.
-about-debugging-message-details-label-warning = Mba'emimi je'epihyigua
+about-debugging-message-details-label-warning = Mba’emimi je’epihyigua
 # Label text used for default state of details of message component.
-about-debugging-message-details-label = Mba'emimi
+about-debugging-message-details-label = Mba’emimi

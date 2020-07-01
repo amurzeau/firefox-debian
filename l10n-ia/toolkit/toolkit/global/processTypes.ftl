@@ -26,3 +26,5 @@ process-type-webisolated = Contento web isolate
 process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Socket
+# process preallocated; may change to other types
+process-type-prealloc = Pre-allocate

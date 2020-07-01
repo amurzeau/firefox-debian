@@ -184,7 +184,7 @@ main-context-menu-media-video-leave-fullscreen =
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
 main-context-menu-media-pip =
-    .label = Bideoa beste bideo batean
+    .label = Bideoa beste leiho batean
     .accesskey = b
 main-context-menu-image-reload =
     .label = Berritu irudia
@@ -314,7 +314,3 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = DRMri buruzko argibide gehiago…
     .accesskey = D
-# Checkbox displayed at the bottom of the What's New panel, allowing users to 
-# enable/disable What's New notifications.
-cfr-whatsnew-panel-footer-checkbox =
-    .label = Jakinarazi eginbide berriei buruz

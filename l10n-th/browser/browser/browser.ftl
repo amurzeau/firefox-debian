@@ -2,6 +2,50 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (การเรียกดูแบบส่วนตัว)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (การเรียกดูแบบส่วนตัว)
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (การเรียกดูแบบส่วนตัว)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (การเรียกดูแบบส่วนตัว)
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = ดูข้อมูลไซต์
 
@@ -167,7 +211,7 @@ identity-custom-root = การเชื่อมต่อถูกตรวจ
 identity-passive-loaded = บางส่วนของหน้านี้ไม่ปลอดภัย (อย่างเช่น ภาพ)
 identity-active-loaded = คุณได้ปิดใช้งานการป้องกันในหน้านี้
 identity-weak-encryption = หน้านี้ใช้การเข้ารหัสที่อ่อนแอ
-identity-insecure-login-forms = การเข้าสู่ระบบที่ป้อนในหน้านี้อาจถูกบุกรุกได้
+identity-insecure-login-forms = ข้อมูลการเข้าสู่ระบบที่ใส่ไว้บนหน้านี้อาจถูกบุกรุกได้
 identity-permissions =
     .value = สิทธิอนุญาต
 identity-permissions-reload-hint = คุณอาจจำเป็นต้องโหลดหน้าใหม่เพื่อให้การเปลี่ยนแปลงมีผล
@@ -208,6 +252,8 @@ browser-window-minimize-button =
     .tooltiptext = ย่อ
 browser-window-maximize-button =
     .tooltiptext = ขยาย
+browser-window-restore-down-button =
+    .tooltiptext = คืนค่าลงล่าง
 browser-window-close-button =
     .tooltiptext = ปิด
 
@@ -220,6 +266,23 @@ popup-select-microphone =
     .value = ไมโครโฟนที่แบ่งปัน:
     .accesskey = ม
 popup-all-windows-shared = หน้าต่างที่ปรากฏอยู่ทั้งหมดบนหน้าจอของคุณจะถูกแบ่งปัน
+popup-screen-sharing-not-now =
+    .label = ไม่ใช่ตอนนี้
+    .accesskey = w
+popup-screen-sharing-never =
+    .label = ไม่อนุญาตเสมอ
+    .accesskey = ม
+popup-silence-notifications-checkbox = ปิดใช้งานการแจ้งเตือนจาก { -brand-short-name } ขณะที่แบ่งปัน
+popup-silence-notifications-checkbox-warning = { -brand-short-name } จะไม่แสดงการแจ้งเตือนขณะที่คุณกำลังแบ่งปัน
+
+## WebRTC window or screen share tab switch warning
+
+sharing-warning-window = คุณกำลังแบ่งปัน { -brand-short-name } คนอื่น ๆ สามารถเห็นได้เมื่อคุณสลับไปยังแท็บใหม่
+sharing-warning-screen = คุณกำลังแบ่งปันทั้งหน้าจอของคุณ คนอื่น ๆ สามารถเห็นได้เมื่อคุณสลับไปยังแท็บใหม่
+sharing-warning-proceed-to-tab =
+    .label = ไปยังแท็บต่อ
+sharing-warning-disable-for-session =
+    .label = ปิดใช้งานการป้องกันการแบ่งปันในวาระนี้
 
 ## DevTools F12 popup
 
@@ -240,7 +303,7 @@ urlbar-switch-to-tab =
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = ส่วนขยาย:
-urlbar-go-end-cap =
+urlbar-go-button =
     .tooltiptext = ไปยังที่อยู่ในแถบตำแหน่งที่ตั้ง
 urlbar-page-action-button =
     .tooltiptext = การกระทำหน้า

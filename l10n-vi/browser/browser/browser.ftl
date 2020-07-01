@@ -2,6 +2,52 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (Duyệt web riêng tư)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (Duyệt web riêng tư)
+
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (Duyệt web riêng tư)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (Duyệt web riêng tư)
+
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = Xem thông tin trang
 
@@ -92,10 +138,12 @@ urlbar-midi-blocked =
     .tooltiptext = Bạn đã chặn quyền truy cập MIDI của trang web này.
 urlbar-install-blocked =
     .tooltiptext = Bạn đã chặn cài đặt tiện ích cho trang web này.
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Chỉnh sửa dấu trang này ({ $shortcut })
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -126,12 +174,14 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Lần này, tìm kiếm với:
+
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Thay đổi thiết lập tìm kiếm
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Thay đổi cài đặt tìm kiếm
+
 search-one-offs-context-open-new-tab =
     .label = Tìm trong thẻ mới
     .accesskey = T
@@ -147,8 +197,10 @@ search-one-offs-context-set-as-default-private =
 bookmark-panel-show-editor-checkbox =
     .label = Hiện trình chỉnh sửa này khi lưu
     .accesskey = S
+
 bookmark-panel-done-button =
     .label = Xong
+
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -223,9 +275,30 @@ popup-select-microphone =
     .accesskey = M
 popup-all-windows-shared = Tất cả các cửa sổ trên màn hình sẽ được chia sẻ.
 
+popup-screen-sharing-not-now =
+    .label = Không phải bây giờ
+    .accesskey = w
+
+popup-screen-sharing-never =
+    .label = Không bao giờ cho phép
+    .accesskey = N
+
+popup-silence-notifications-checkbox = Vô hiệu hóa thông báo từ { -brand-short-name } trong khi chia sẻ
+popup-silence-notifications-checkbox-warning = { -brand-short-name } sẽ không hiển thị thông báo trong khi bạn đang chia sẻ.
+
+## WebRTC window or screen share tab switch warning
+
+sharing-warning-window = Bạn đang chia sẻ { -brand-short-name }. Người khác có thể thấy khi bạn chuyển sang một thẻ mới.
+sharing-warning-screen = Bạn đang chia sẻ toàn bộ màn hình của bạn. Người khác có thể thấy khi bạn chuyển sang một thẻ mới.
+sharing-warning-proceed-to-tab =
+    .label = Tiếp tục với thẻ
+sharing-warning-disable-for-session =
+    .label = Vô hiệu hóa bảo vệ chia sẻ cho phiên này
+
 ## DevTools F12 popup
 
 enable-devtools-popup-description = Để sử dụng phím tắt F12, trước tiên hãy mở DevTools thông qua menu Nhà phát triển Web.
+
 
 ## URL Bar
 
@@ -239,10 +312,12 @@ urlbar-permissions-granted =
     .tooltiptext = Bạn đã cấp cho trang web này các quyền bổ sung.
 urlbar-switch-to-tab =
     .value = Chuyển qua thẻ:
+
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Tiện ích mở rộng:
-urlbar-go-end-cap =
+
+urlbar-go-button =
     .tooltiptext = Mở trang trong thanh địa chỉ
 urlbar-page-action-button =
     .tooltiptext = Hành động trên trang

@@ -58,6 +58,8 @@ protections-panel-not-found-label = Neniu eltrovita
 
 protections-panel-settings-label = Agordoj de protekto
 protections-panel-showreport-label = Montri raporton
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Panelo de protektoj
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

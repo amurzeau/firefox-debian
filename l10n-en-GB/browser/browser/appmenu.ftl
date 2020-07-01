@@ -5,11 +5,12 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = Import from Another Browser…
 appmenuitem-protection-report-title = Privacy Protections
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Go to your privacy report
+appmenuitem-protection-dashboard-title = Protections Dashboard
+appmenuitem-customize-mode =
+    .label = Customise…
 
 ## Zoom Controls
 
@@ -22,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = Synchronise Now
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = What’s New
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = Notify about new features
+    .accesskey = f

@@ -302,8 +302,6 @@ applications-file-ending-with-type = { applications-file-ending }（{ $type }）
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = 使用 { $plugin-name } (在 { -brand-short-name } 開啟)
-applications-preview-inapp =
-    .label = 在 { -brand-short-name } 中預覽
 applications-open-inapp =
     .label = 用 { -brand-short-name } 開啟
 
@@ -317,8 +315,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -485,11 +481,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = 熱門網站
 home-prefs-topsites-description = 最常造訪的網站
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = { $provider } 推薦
 home-prefs-recommended-by-description = 網路上的各種超棒內容，為您量身打造
+home-prefs-recommended-by-description-update = 由 { $provider } 整理提供的網路精選內容
+
+##
+
 home-prefs-recommended-by-learn-more = 原理是什麼
 home-prefs-recommended-by-option-sponsored-stories =
     .label = 贊助內容
@@ -546,6 +548,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = 於隱私瀏覽視窗中顯示搜尋建議
 suggestions-addressbar-settings = 更改上網紀錄、書籤、分頁建議的相關偏好設定
+suggestions-addressbar-settings-generic = 修改其他網址列建議偏好設定
 search-suggestions-cant-show = 由於您已經設定 { -brand-short-name } 不要記住瀏覽紀錄，網址列中將不會顯示建議搜尋結果。
 search-one-click-header = 快捷搜尋引擎清單
 search-one-click-desc = 請選擇當您在網址列或搜尋列輸入關鍵字時，可選用的其他搜尋引擎。
@@ -749,10 +752,10 @@ privacy-header = 瀏覽器隱私權
 
 ## Privacy Section - Forms
 
+logins-header = 登入資訊與密碼
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = 登入資訊與密碼
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = 登入資訊與密碼
     .searchkeywords = { -lockwise-brand-short-name }
@@ -788,8 +791,6 @@ forms-master-pw-fips-desc = 密碼變更失敗
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = 確認您的身分以建立主控密碼。
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = 請在下方輸入您的 Windows 登入帳號密碼才能建立主控密碼。這個動作是為了保護您的登入資訊安全。
 # This message can be seen by trying to add a Master Password.
@@ -886,6 +887,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = 管理權限…
     .accesskey = P
+sitedata-cookies-exceptions =
+    .label = 管理例外網站…
+    .accesskey = X
 
 ## Privacy Section - Address Bar
 
@@ -900,6 +904,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = 開啟分頁
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = 熱門網站
+    .accesskey = T
 addressbar-suggestions-settings = 修改搜尋建議偏好設定
 
 ## Privacy Section - Content Blocking
@@ -959,7 +966,6 @@ content-blocking-fingerprinters = 數位指紋追蹤程式
 content-blocking-warning-title = 注意！
 content-blocking-warning-description = 封鎖內容後可能造成某些網站無法正常運作。很簡單就能為您信任的網站關閉封鎖功能。
 content-blocking-learn-how = 了解要怎麼做
-content-blocking-etp-warning-description = 封鎖追蹤器可能會造成某些網站運作不正常。重新載入含有追蹤器的頁面即可載入所有內容。
 content-blocking-and-isolating-etp-warning-description = 封鎖追蹤器並隔離 Cookie 可能會造成某些網站運作不正常。重新載入含有追蹤器的頁面即可載入所有內容。
 content-blocking-warning-learn-how = 了解要怎麼做
 content-blocking-reload-description = 需要重新載入分頁才能套用變更。

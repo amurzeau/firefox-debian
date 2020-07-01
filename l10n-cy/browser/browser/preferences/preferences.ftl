@@ -326,8 +326,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Defnyddio { $plugin-name } (yn { -brand-short-name })
-applications-preview-inapp =
-    .label = Rhagolwg yn { -brand-short-name }
 applications-open-inapp =
     .label = Agorwch yn { -brand-short-name }
 
@@ -341,8 +339,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -509,11 +505,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Hoff Wefannau
 home-prefs-topsites-description = Y gwefannau rydych yn ymweld â nhw amlaf
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Argymhellwyd gan { $provider }
 home-prefs-recommended-by-description = Cynnwys gwych o ar draws y we, wedi ei ddewis yn arbennig i chi
+home-prefs-recommended-by-description-update = Cynnwys eithriadol o bob rhan o'r we, wedi'i guradu gan { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Sut mae'n gweithio
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Straeon wedi eu Noddi
@@ -578,6 +580,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Dangos awgrymiadau chwilio mewn Ffenestri Preifat
 suggestions-addressbar-settings = Newid dewisiadau ar gyfer hanes pori, nodau tudalen ac awgrymiadau tabiau
+suggestions-addressbar-settings-generic = Newid dewisiadau awgrymiadau eraill y bar cyfeiriad
 search-suggestions-cant-show = Ni fydd awgrymiadau chwilio'n cael eu dangos yn y bar lleoliad gan eich bod wedi ffurfweddu { -brand-short-name } i byth cofio hanes.
 search-one-click-header = Peiriannau Chwilio Un Clic
 search-one-click-desc = Dewis peiriant chwilio arall sy'n ymddangos o dan y bar cyfeiriad a'r bar chwilio pan fyddwch yn cychwyn allweddair.
@@ -781,10 +784,10 @@ privacy-header = Preifatrwydd y Porwr
 
 ## Privacy Section - Forms
 
+logins-header = Mewngofnodion a Chyfrineiriau
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Mewngofnodion a Chyfrineiriau
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Mewngofnodion a Chyfrineiriau
     .searchkeywords = { -lockwise-brand-short-name }
@@ -820,8 +823,6 @@ forms-master-pw-fips-desc = Methu Newid eich Cyfrinair
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Gwiriwch eich hunaniaeth i greu Prif Gyfrinair.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = I greu Prif Gyfrinair, rhowch eich manylion mewngofnodi Windows. Mae hyn yn helpu i amddiffyn diogelwch eich cyfrifon.
 # This message can be seen by trying to add a Master Password.
@@ -918,6 +919,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Rheoli Caniatâd...
     .accesskey = R
+sitedata-cookies-exceptions =
+    .label = Rheoli Eithriadau…
+    .accesskey = R
 
 ## Privacy Section - Address Bar
 
@@ -932,6 +936,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Tabiau agored
     .accesskey = T
+addressbar-locbar-topsites-option =
+    .label = Hoff wefannau
+    .accesskey = H
 addressbar-suggestions-settings = Newid dewisiadau am awgrymiadau peiriannau chwilio
 
 ## Privacy Section - Content Blocking
@@ -991,7 +998,6 @@ content-blocking-fingerprinters = Bysbrintwyr
 content-blocking-warning-title = Rhybudd!
 content-blocking-warning-description = Gall rhwystro cynnwys achosi i rai gwefannau dorri. Mae'n hawdd i analluogi rhwystro gwefannau rydych chi'n ymddiried ynddyn nhw.
 content-blocking-learn-how = Dysgu sut
-content-blocking-etp-warning-description = Gall rhwystro tracwyr effeithio ar ymarferoldeb rhai gwefannau. Ail-lwythwch dudalen gyda thracwyr i lwytho'r holl gynnwys.
 content-blocking-and-isolating-etp-warning-description = Gall rhwystro tracwyr effeithio ar ymarferoldeb rhai gwefannau. Ail-lwythwch dudalen gyda thracwyr i lwytho'r holl gynnwys.
 content-blocking-warning-learn-how = Dysgu sut
 content-blocking-reload-description = Bydd angen ail lwytho'ch tabiau i osod y newidiadau hyn.

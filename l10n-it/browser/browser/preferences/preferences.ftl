@@ -315,8 +315,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Usa { $plugin-name } (in { -brand-short-name })
-applications-preview-inapp =
-    .label = Anteprima in { -brand-short-name }
 applications-open-inapp =
     .label = Apri in { -brand-short-name }
 
@@ -330,8 +328,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -492,11 +488,16 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Siti principali
 home-prefs-topsites-description = I siti più visitati
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Consigliati da { $provider }
 home-prefs-recommended-by-description = Contenuti interessanti da tutto il Web, personalizzati per te.
+home-prefs-recommended-by-description-update = Contenuti eccezionali da tutto il Web, a cura di { $provider }
+##
+
 home-prefs-recommended-by-learn-more = Come funziona
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Articoli sponsorizzati
@@ -557,6 +558,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Visualizza suggerimenti di ricerca nelle finestre anonime
 suggestions-addressbar-settings = Modifica le impostazioni dei suggerimenti per cronologia di navigazione, segnalibri e schede
+suggestions-addressbar-settings-generic = Modifica le impostazioni per altri tipi di suggerimenti nella barra degli indirizzi
 search-suggestions-cant-show = I suggerimenti di ricerca non verranno visualizzati tra i risultati della barra degli indirizzi in quanto { -brand-short-name } è configurato per non salvare la cronologia.
 search-one-click-header = Motori di ricerca in un clic
 search-one-click-desc = Scegli i motori di ricerca alternativi che appaiono nella barra degli indirizzi e nella barra di ricerca quando si inizia a digitare una parola chiave.
@@ -798,7 +800,6 @@ forms-master-pw-fips-desc = La password non è stata cambiata
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verificare la propria identità per creare una password principale.
 master-password-os-auth-dialog-message-win = Per creare una password principale, inserire le credenziali di accesso a Windows. Questo aiuta a garantire la sicurezza dei tuoi account.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
@@ -894,6 +895,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Gestisci permessi…
     .accesskey = G
+sitedata-cookies-exceptions =
+    .label = Gestisci eccezioni…
+    .accesskey = z
 
 ## Privacy Section - Address Bar
 
@@ -908,6 +912,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Schede aperte
     .accesskey = d
+addressbar-locbar-topsites-option =
+    .label = Siti principali
+    .accesskey = a
 addressbar-suggestions-settings = Modifica le impostazioni relative ai suggerimenti dei motori di ricerca
 
 ## Privacy Section - Content Blocking
@@ -964,7 +971,6 @@ content-blocking-fingerprinters = Fingerprinter
 content-blocking-warning-title = Attenzione
 content-blocking-warning-description = Il blocco di contenuti potrebbe impedire il corretto funzionamento di alcuni siti. È semplice disattivare il blocco per i siti che ritieni affidabili.
 content-blocking-learn-how = Scopri come
-content-blocking-etp-warning-description = Il blocco degli elementi traccianti può impedire il corretto funzionamento di alcuni siti. Ricaricare la pagina con gli elementi traccianti per visualizzare tutti i contenuti.
 content-blocking-and-isolating-etp-warning-description = Il blocco degli elementi traccianti e l’isolamento dei cookie possono impedire il corretto funzionamento di alcuni siti. Ricaricare la pagina con gli elementi traccianti per visualizzare tutti i contenuti.
 content-blocking-warning-learn-how = Scopri come
 content-blocking-reload-description = È necessario ricaricare le schede per applicare le modifiche.

@@ -317,8 +317,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Koristi { $plugin-name } (u { -brand-short-name })
-applications-preview-inapp =
-    .label = Pogled u { -brand-short-name }
 applications-open-inapp =
     .label = Otvori u { -brand-short-name }
 
@@ -332,8 +330,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -494,17 +490,22 @@ choose-bookmark =
 ## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Firefox početni sadržaj
-home-prefs-content-description = Odaberi sadržaj koji želitš na svojoj Firefox početnoj stranici.
+home-prefs-content-description = Odaberi sadržaj koji želiš na početnoj stranici Firefoxa.
 home-prefs-search-header =
     .label = Web pretraživanje
 home-prefs-topsites-header =
     .label = Najbolje stranice
 home-prefs-topsites-description = Stranice koje najviše posjećujete
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Preporučeno od { $provider }
 home-prefs-recommended-by-description = Vrhunski sadržaj iz svih krajeva interneta, presonaliziran za tebe
+
+##
+
 home-prefs-recommended-by-learn-more = Kako ovo funkcionira
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponzorirane priče
@@ -769,10 +770,10 @@ privacy-header = Privatnost preglednika
 
 ## Privacy Section - Forms
 
+logins-header = Prijave i lozinke
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Prijave i lozinke
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Prijave i lozinke
     .searchkeywords = { -lockwise-brand-short-name }
@@ -808,8 +809,6 @@ forms-master-pw-fips-desc = Promjena lozinke nije uspjela
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Potvrdi svoj identitet za stvaranje glavne lozinke.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -977,7 +976,6 @@ content-blocking-fingerprinters = Jedinstvene otiske
 content-blocking-warning-title = Upozorenje!
 content-blocking-warning-description = Blokiranje sadržaja može uzrokovati greške u prikazu nekih web stranica. Lako možete isključiti blokiranje na stranicama kojima vjerujete.
 content-blocking-learn-how = Saznaj kako
-content-blocking-etp-warning-description = Blokiranje programa za praćenje moglo bi utjecati na funkcionalnost nekih web lokacija. Učitaj stranicu s programima za praćenje, kako bi se učitao sav sadržaj.
 content-blocking-and-isolating-etp-warning-description = Blokiranje pratitelja i izoliranje kolačića može utjecati na funkcionalnost nekih stranica. Ponovno učitajte stranicu sa pratiteljem kako bi se učitao sav sadržaj.
 content-blocking-warning-learn-how = Saznaj kako
 content-blocking-reload-description = Morat ćeš ponovo učitati svoje kartice, kako bi se ove promjene primijenile.
@@ -1087,7 +1085,7 @@ collection-studies =
     .label = Dozvoli { -brand-short-name }u instalirati i pokrenuti studije
 collection-studies-link = Pregledaj { -brand-short-name } studije
 addon-recommendations =
-    .label = Dopusiti { -brand-short-name } da radi presonalizirane preporuke dodataka
+    .label = Dozvoli { -brand-short-name }u da radi personalizirane preporuke dodataka
 addon-recommendations-link = Saznaj više
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.

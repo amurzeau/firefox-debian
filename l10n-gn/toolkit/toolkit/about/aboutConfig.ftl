@@ -10,7 +10,7 @@ config-window =
 # This text should be attention grabbing and playful
 config-about-warning-title =
     .value = Kóva ikatu omboyke jeroviaha
-config-about-warning-text = Ko'ã jerohoryvéva opátamava ñemoambue ikatu ombyai tekopyta, tekorosã ha apopyre ko tembipuru'i rehegua. Eku'ekuaajey ejeroviaitéramo añoite pe ejapóva rehe.
+config-about-warning-text = Ko’ã jerohoryvéva opátamava ñemoambue ikatu ombyai tekopyta, tekorosã ha apopyre ko tembipuru’i rehegua. Eku’ekuaajey ejeroviaitéramo añoite pe ejapóva rehe.
 config-about-warning-button =
     .label = Amoneĩ kyhyjerã!
 config-about-warning-checkbox =

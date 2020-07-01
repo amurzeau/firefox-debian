@@ -35,10 +35,16 @@ protection-report-page-title = הגנות פרטיות
 protection-report-content-title = הגנות פרטיות
 etp-card-title = הגנת מעקב מתקדמת
 etp-card-content = רכיבי מעקב עוקבים אחריך ברשת כדי לאסוף מידע על הרגלי הגלישה ותחומי העניין שלך. { -brand-short-name } חוסם הרבה מרכיבי המעקב האלו, לרבות תסריטים זדוניים אחרים.
+protection-report-webpage-title = לוח הגנות
+protection-report-page-content-title = לוח הגנות
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = ‏{ -brand-short-name } יכול להגן על הפרטיות שלך מאחורי הקלעים בזמן הגלישה. להלן תקציר מותאם אישית של הגנות אלה, לרבות כלים המאפשרים להיות בשליטה על האבטחה המקוונת שלך.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = ‏{ -brand-short-name } מגן על הפרטיות שלך מאחורי הקלעים בזמן הגלישה. להלן תקציר מותאם אישית של הגנות אלה, לרבות כלים המאפשרים להיות בשליטה על האבטחה המקוונת שלך.
+protection-report-settings-link = ניהול הגדרות הפרטיות והאבטחה שלך
 etp-card-title-always = הגנת מעקב מתקדמת: תמיד פעילה
 etp-card-title-custom-not-blocking = הגנת מעקב מתקדמת: כבויה
-etp-card-content-summary = כשחברות בלתי ידועות מנסות לעקוב אחריך בסתר ברחבי הרשת, { -brand-short-name } חוסם רבים מהם באופן אוטומטי.
+etp-card-content-description = { -brand-short-name } מונע באופן אוטומטי מחברות לעקוב אחריך בסתר ברחבי הרשת.
 protection-report-etp-card-content-custom-not-blocking = כל ההגנות כבויות כרגע. ניתן לבחור באילו רכיבי מעקב יש לחסום על־ידי ניהול הגדרות ההגנות של { -brand-short-name }.
 protection-report-manage-protections = ניהול הגדרות
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -55,8 +61,6 @@ tracker-tab-description = אתרים עשויים לטעון פרסומות חי
 fingerprinter-tab-title = רכיבי זהות דיגיטלית
 cryptominer-tab-title = כורי מטבעות דיגיטליים
 cryptominer-tab-content = כורי מטבעות דיגיטליים משתמשים בכוח העיבוד של המערכת שלך כדי לכרות כסף דיגיטלי. תסריטי כריית מטבעות מרוקנים את הסוללה שלך, מאטים את המחשב שלך ומגדילים את חשבון החשמל שלך. <a data-l10n-name="learn-more-link">מידע נוסף</a>
-protections-close-button =
-    .aria-label = סגירה
 protections-close-button2 =
     .aria-label = סגירה
     .title = סגירה
@@ -112,10 +116,13 @@ lockwise-connected-device-status =
         [one] מחובר למכשיר אחד
        *[other] מחובר ל־{ $count } מכשירים
     }
+monitor-title = קבלת התרעות על דליפות נתונים
 monitor-link = איך זה עובד
 monitor-header-content-no-account = ניתן לבדוק את { -monitor-brand-name } כדי לראות אם היית חלק מדליפת נתונים מוכרת, ולקבל התרעות לגבי דליפות חדשות.
 monitor-header-content-signed-in = { -monitor-brand-name } מזהיר אותך אם המידע שלך נחשף בדליפת נתונים מוכרת.
 monitor-sign-up = הרשמה להתרעות על דליפות
+monitor-sign-up-link = הרשמה להתרעות על דליפות
+    .title = הרשמה להתרעות על דליפות ב־{ -monitor-brand-name }
 auto-scan = נסרק באופן אוטומטי היום
 monitor-emails-tooltip =
     .title = הצגת כתובות דוא״ל מנוטרות ב־{ -monitor-brand-short-name }
@@ -128,7 +135,7 @@ monitor-passwords-tooltip =
 # your localization, because it would result in the number showing twice.
 info-monitored-emails =
     { $count ->
-        [one] כתובת דוא״ל מנוטרות
+        [one] כתובת דוא״ל מנוטרת
        *[other] כתובות דוא״ל מנוטרות
     }
 # This string is displayed after a large numeral that indicates the total number
@@ -138,6 +145,14 @@ info-known-breaches-found =
     { $count ->
         [one] דליפת נתונים מוכרת חשפה מידע עליך
        *[other] דליפות נתונים מוכרות חשפו מידע עליך
+    }
+# This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] דליפת נתונים מוכרת אחת סומנה שטופלה
+       *[other] דליפות נתונים מוכרות סומנו שטופלו
     }
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
@@ -156,6 +171,38 @@ password-warning =
         [one] יתכן שכניסה שמורה אחת נחשפה בדליפת נתונים. מומלץ לשנות את הססמה הזאת לטובת אבטחה מקוונת טובה יותר. <a data-l10n-name="lockwise-link"> הצגת כניסות שמורות</a>
        *[other] יתכן שכניסות שמורות נחשפו בדליפת נתונים. מומלץ לשנות את הססמאות האלו לטובת אבטחה מקוונת טובה יותר. <a data-l10n-name="lockwise-link"> הצגת כניסות שמורות</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] ססמה אחת נחשפה בדליפות שטרם טופלו
+       *[other] ססמאות נחשפו בדליפות שטרם טופלו
+    }
+monitor-no-breaches-title = חדשות טובות!
+monitor-no-breaches-description = אין לך דליפות מוכרות. אם זה ישתנה, נודיע לך על כך.
+monitor-view-report-link = הצגת דוח
+    .title = טיפול בדליפות ב־{ -monitor-brand-short-name }
+monitor-breaches-unresolved-title = טיפול בדליפות שלך
+monitor-manage-breaches-link = ניהול דליפות
+    .title = ניהול דליפות ב־{ -monitor-brand-short-name }
+monitor-breaches-resolved-title = יופי! טיפלת בכל הדליפות המוכרות.
+monitor-breaches-resolved-description = אם הדוא״ל שלך יופיע בדליפות חדשות כלשהן, נודיע לך על כך.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+        [one] דליפה { $numBreachesResolved } מתוך { $numBreaches } סומנה שטופלה
+       *[other] { $numBreachesResolved } מתוך { $numBreaches } דליפות סומנו שטופלו
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved }% הושלמו
+monitor-partial-breaches-motivation-title-start = התחלה נהדרת!
+monitor-partial-breaches-motivation-description = ניתן לטפל בשאר הדליפות שלך ב־{ -monitor-brand-short-name }.
+monitor-resolve-breaches-link = טיפול בדליפות
+    .title = טיפול בדליפות ב־{ -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

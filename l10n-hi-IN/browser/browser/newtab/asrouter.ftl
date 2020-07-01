@@ -193,3 +193,10 @@ cfr-whatsnew-lockwise-icon-alt = { -lockwise-brand-short-name } आइकॉन
 
 ## Picture-in-Picture fullscreen message
 
+
+## Protections Dashboard message
+
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = बेहतर PDF अनुभव

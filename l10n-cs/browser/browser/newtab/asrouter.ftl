@@ -117,10 +117,6 @@ cfr-whatsnew-lockwise-take-link-text = Stáhnout aplikaci
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Použijte adresní řádek - pište méně, najdete více
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Jediným klepnutím do adresního řádku se dostanete na nejčastěji navštěvované stránky z vaší historie prohlížení, stejně jako rychlé vyhledávání pomocí vyhledávače { $searchEngineName }.
-cfr-whatsnew-searchbar-body-generic = Jediným klepnutím do adresního řádku se dostanete na nejčastěji navštěvované stránky z vaší historie prohlížení.
 cfr-whatsnew-searchbar-body-topsites = Po klepnutí do adresního řádku uvidíte odkazy na své top stránky.
 cfr-whatsnew-searchbar-icon-alt-text = Ikona lupy
 
@@ -260,3 +256,15 @@ cfr-whatsnew-passwords-icon-alt = Ikona zranitelného hesla
 cfr-whatsnew-pip-fullscreen-header = Otevřete si obraz v obraze na celou obrazovku
 cfr-whatsnew-pip-fullscreen-body = Při otevření videa v plovoucím okně ho můžete poklepáním zvětšit na celou obrazovku.
 cfr-whatsnew-pip-fullscreen-icon-alt = Ikona obrazu v obraze
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Ochrana soukromí na dosah ruky
+cfr-whatsnew-protections-body = Přehled ochrany soukromí obsahuje souhrnné informace o únicích dat a správě vašich hesel. Snad také zjistíte, následky kolika úniků dat už jste vyřešili, nebo jestli mohly být vaše přihlašovací údaje součástí nějakého nového úniku dat.
+cfr-whatsnew-protections-cta-link = Zobrazit přehled ochrany soukromí
+cfr-whatsnew-protections-icon-alt = Ikona štítu
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Vylepšené prohlížení PDF
+cfr-whatsnew-better-pdf-body = Soubory PDF se nyní otevírají přímo ve { -brand-short-name(case: "loc") }, takže je máte hned po ruce.

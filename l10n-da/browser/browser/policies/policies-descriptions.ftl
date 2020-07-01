@@ -109,6 +109,8 @@ policy-FirefoxHome = Indstil Firefox' startside.
 
 policy-FlashPlugin = Tillad eller afvis brug af Flash-plugin.
 
+policy-Handlers = Indstil håndtering af standard-applikationer.
+
 policy-HardwareAcceleration = False slår hardware-acceleration fra.
 
 # “lock” means that the user won’t be able to change this setting
@@ -125,6 +127,8 @@ policy-LegacySameSiteCookieBehaviorEnabled = Aktiver standard-indstilling for fo
 policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Gå tilbage til forældet SameSite-opførsel for cookies på bestemte websteder.
 
 policy-LocalFileLinks = Tillad specifikke websteder at linke til lokale filer.
+
+policy-MasterPassword = Kræv eller deaktiver brug af hovedadgangskode.
 
 policy-NetworkPrediction = Slå network prediction (DNS prefetching) til eller fra.
 
@@ -146,6 +150,8 @@ policy-PDFjs = Deaktiver eller konfigurer PDF.js, den indbyggede PDF-læser i { 
 policy-OverridePostUpdatePage = Erstat siden Nyheder, der vises efter opdatering. Lad politikken være tom, hvis siden efter opdatering skal deaktiveres. 
 
 policy-Permissions2 = Indstil tilladelser for kamera, mikrofon, position, beskeder og automatisk afspilning.
+
+policy-PictureInPicture = Slå Billede-i-billede til eller fra.
 
 policy-PopupBlocking = Tillad bestemte websteder at vise pop op-vinduer som standard.
 

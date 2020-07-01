@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Use { $plugin-name } (in { -brand-short-name })
-applications-preview-inapp =
-    .label = Preview in { -brand-short-name }
 applications-open-inapp =
     .label = Open in { -brand-short-name }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Top Sites
 home-prefs-topsites-description = The sites you visit most
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Recommended by { $provider }
 home-prefs-recommended-by-description = Great content from around the web, personalised for you
+home-prefs-recommended-by-description-update = Exceptional content from across the web, curated by { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = How it works
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsored Stories
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Show search suggestions in Private Windows
 suggestions-addressbar-settings = Change preferences for browsing history, bookmarks, and tab suggestions
+suggestions-addressbar-settings-generic = Change preferences for other address bar suggestions
 search-suggestions-cant-show = Search suggestions will not be shown in location bar results because you have configured { -brand-short-name } to never remember history.
 search-one-click-header = One-Click Search Engines
 search-one-click-desc = Choose the alternative search engines that appear below the address bar and search bar when you start to enter a keyword.
@@ -765,10 +768,10 @@ privacy-header = Browser Privacy
 
 ## Privacy Section - Forms
 
+logins-header = Logins and Passwords
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Logins and Passwords
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Logins and Passwords
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = Password Change Failed
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verify your identity to create a Master Password.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = To create a Master Password, enter your Windows login credentials. This helps protect the security of your accounts.
 # This message can be seen by trying to add a Master Password.
@@ -863,7 +864,7 @@ sitedata-total-size-calculating = Calculating site data and cache size…
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = Your stored cookies, site data, and cache are currently using { $value } { $unit } of disc space.
+sitedata-total-size = Your stored cookies, site data, and cache are currently using { $value } { $unit } of disk space.
 sitedata-learn-more = Learn more
 sitedata-delete-on-close =
     .label = Delete cookies and site data when { -brand-short-name } is closed
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Manage Permissions…
     .accesskey = P
+sitedata-cookies-exceptions =
+    .label = Manage Exceptions…
+    .accesskey = x
 
 ## Privacy Section - Address Bar
 
@@ -916,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Open tabs
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = Top sites
+    .accesskey = T
 addressbar-suggestions-settings = Change preferences for search engine suggestions
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Heads up!
 content-blocking-warning-description = Blocking content can cause some web sites to break. It’s easy to disable blocking for sites you trust.
 content-blocking-learn-how = Learn how
-content-blocking-etp-warning-description = Blocking trackers could impact the functionality of some sites. Reload a page with trackers to load all content.
 content-blocking-and-isolating-etp-warning-description = Blocking trackers and isolating cookies could impact the functionality of some sites. Reload a page with trackers to load all content.
 content-blocking-warning-learn-how = Learn how
 content-blocking-reload-description = You will need to reload your tabs to apply these changes.
@@ -1148,13 +1154,13 @@ space-alert-over-5gb-pref-button =
         }
 space-alert-over-5gb-message =
     { PLATFORM() ->
-        [windows] { -brand-short-name } is running out of disc space. Web site contents may not display properly. You can clear stored data in Options > Privacy & Security > Cookies and Site Data.
-       *[other] { -brand-short-name } is running out of disc space. Web site contents may not display properly. You can clear stored data in Preferences > Privacy & Security > Cookies and Site Data.
+        [windows] { -brand-short-name } is running out of disk space. Web site contents may not display properly. You can clear stored data in Options > Privacy & Security > Cookies and Site Data.
+       *[other] { -brand-short-name } is running out of disk space. Web site contents may not display properly. You can clear stored data in Preferences > Privacy & Security > Cookies and Site Data.
     }
 space-alert-under-5gb-ok-button =
     .label = OK, Got it
     .accesskey = K
-space-alert-under-5gb-message = { -brand-short-name } is running out of disc space. Web site contents may not display properly. Visit “Learn More” to optimise your disc usage for better browsing experience.
+space-alert-under-5gb-message = { -brand-short-name } is running out of disk space. Web site contents may not display properly. Visit “Learn More” to optimise your disk usage for better browsing experience.
 
 ## The following strings are used in the Download section of settings
 

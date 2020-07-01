@@ -121,10 +121,6 @@ cfr-whatsnew-lockwise-take-link-text = Obtener la aplicación
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Escribe menos, encuentra más con la barra de direcciones
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Accede a los sitios que más usas con un solo clic en la barra de direcciones. Encuentra las cosas más rápido con los resultados de { $searchEngineName } y tu historial de navegación.
-cfr-whatsnew-searchbar-body-generic = Accede a los sitios que más usas con un solo clic en la barra de direcciones. Encuentra cosas más rápido con los resultados de búsqueda de tu historial de navegación.
 cfr-whatsnew-searchbar-body-topsites = Ahora, solo selecciona la barra de direcciones y una caja se expandirá con los enlaces a tus sitios frecuentes.
 cfr-whatsnew-searchbar-icon-alt-text = Ícono de lupa
 
@@ -231,3 +227,15 @@ cfr-whatsnew-passwords-icon-alt = Ícono de contraseña vulnerable
 cfr-whatsnew-pip-fullscreen-header = Llevar el picture-in-picture a pantalla completa
 cfr-whatsnew-pip-fullscreen-body = Cuando llevas un video a una ventana flotante, puedes a continuación hacer doble clic en esa ventana para llevarlo a pantalla completa.
 cfr-whatsnew-pip-fullscreen-icon-alt = Ícono de picture-in-picture
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Protecciones de un vistazo
+cfr-whatsnew-protections-body = El Panel de protección incluye informes resumidos sobre filtraciones de datos y administración de contraseñas. Ahora puede realizar un seguimiento de la cantidad de filtraciones que has resuelto y ver si alguna de tus contraseñas guardadas puede haberse visto expuesta en una filtración de datos.
+cfr-whatsnew-protections-cta-link = Ver panel de protecciones
+cfr-whatsnew-protections-icon-alt = Ícono de escudo
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Mejor experiencia en PDF
+cfr-whatsnew-better-pdf-body = Los documentos PDF ahora se abren directamente en { -brand-short-name }, manteniendo tu flujo de trabajo al alcance.

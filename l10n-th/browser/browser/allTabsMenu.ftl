@@ -4,6 +4,12 @@
 
 all-tabs-menu-undo-close-tab =
     .label = เลิกทำการปิดแท็บ
+all-tabs-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] เรียกคืนแท็บที่เพิ่งปิด
+           *[other] เรียกคืนแท็บที่เพิ่งปิด
+        }
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = ค้นหาแท็บ

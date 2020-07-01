@@ -6,8 +6,8 @@
 ## Settings
 
 site-data-settings-window =
-    .title = Eñagareko Kookie ha tenda mba'ekuaarãre
-site-data-settings-description = Ko'ãva ñanduti renda ombyaty kookie ha mba'ekuaarã ne mohendahápe. { -brand-short-name } oguereko ñanduti renda mba'ekuaarã ñembyatypy imboguete peve, ha ombogue avei ñanduti renda mba'ekuaarã ñembyatypy oĩmba'ỹva oikotevẽ rupi pa'ũ.
+    .title = Eñagareko Kookie ha tenda mba’ekuaarãre
+site-data-settings-description = Ko’ãva ñanduti renda ombyaty kookie ha mba’ekuaarã ne mohendahápe. { -brand-short-name } oguereko ñanduti renda mba’ekuaarã ñembyatypy imboguete peve, ha ombogue avei ñanduti renda mba’ekuaarã ñembyatypy oĩmba’ỹva oikotevẽ rupi pa’ũ.
 site-data-search-textbox =
     .placeholder = Ñanduti renda jeheka
     .accesskey = S
@@ -36,7 +36,7 @@ site-data-button-save =
 site-storage-usage =
     .value = { $value } { $unit }
 site-storage-persistent =
-    .value = { site-storage-usage.value } (Hova'atãva)
+    .value = { site-storage-usage.value } (Hova’atãva)
 site-data-remove-all =
     .label = Emboguepaite
     .accesskey = e
@@ -49,6 +49,6 @@ site-data-remove-shown =
 site-data-removing-dialog =
     .title = { site-data-removing-header }
     .buttonlabelaccept = Mboguete
-site-data-removing-header = Emboguete Kookie ha tenda mba'ekuaarã
-site-data-removing-desc = Emboguetéramo Kookie ha tenda mba'ekuaarã ikatu nde pe'a ñanduti rendágui. ¿Ejaposépa añetehápe ñemoambue?
-site-data-removing-table = Emboguetéta Kookie ha tenda mba'ekuaarã ko'ã ñanduti rendágui
+site-data-removing-header = Emboguete Kookie ha tenda mba’ekuaarã
+site-data-removing-desc = Emboguetéramo Kookie ha tenda mba’ekuaarã ikatu nde pe’a ñanduti rendágui. ¿Ejaposépa añetehápe ñemoambue?
+site-data-removing-table = Emboguetéta Kookie ha tenda mba’ekuaarã ko’ã ñanduti rendágui

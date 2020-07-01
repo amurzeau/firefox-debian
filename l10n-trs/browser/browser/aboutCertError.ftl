@@ -55,6 +55,7 @@ cert-error-details-hsts-label = Yitïnj hauw ga'anj ma riña HTTP ahī: { $hasHS
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = Gachrun' klave HTTP: { $hasHPKP }
 cert-error-details-cert-chain-label = Daj niko' dugui' sertifikadô:
+open-in-new-window-for-csp-or-xfo-error = Na’nīn sitio riña a’ngô bentanâ nākàa
 
 ## Messages used for certificate error titles
 

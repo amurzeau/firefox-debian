@@ -68,7 +68,7 @@ permissions-exceptions-content-blocking-window =
     .style = { permissions-window.style }
 permissions-exceptions-content-blocking-desc = Letiltotta a tartalomblokkolást ezeken az oldalakon.
 permissions-exceptions-etp-window =
-    .title = Kivételek a továbbfejlesztett követés elleni védelemhez
+    .title = Kivételek a fokozott követés elleni védelemhez
     .style = { permissions-window.style }
 permissions-exceptions-etp-desc = Ezeken a webhelyeken kikapcsolta a védelmeket.
 

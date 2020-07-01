@@ -119,17 +119,13 @@ cfr-whatsnew-lockwise-take-link-text = Eskuratu aplikazioa
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Idatzi gutxiago eta aurkitu gehiago helbide-barra erabiliz
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Sartu gehien bisitatzen dituzun webguneetara helbide-barran klik bakarra eginez. Bilatu gauzak azkarrago { $searchEngineName } bilatzaileko eta zure nabigatze-historiako emaitzekin.
-cfr-whatsnew-searchbar-body-generic = Sartu gehien bisitatzen dituzun webguneetara helbide-barran klik bakarra eginez. Bilatu gauzak azkarrago bilatzaileko eta zure nabigatze-historiako emaitzekin.
 cfr-whatsnew-searchbar-body-topsites = Orain, hautatu helbide-barra eta kutxa bat hedatuko da zure zure gune erabilienetarako loturekin.
 cfr-whatsnew-searchbar-icon-alt-text = Luparen ikonoa
 
 ## Picture-in-Picture
 
 cfr-whatsnew-pip-header = Ikusi bideoak nabigatu ahala
-cfr-whatsnew-pip-body = Bideoa beste bideo batean erabiliz, bideoa leiho mugikor batera mugitzen denez, beste fitxetan lan egin bitartean bideoa ikusten jarrai dezakezu.
+cfr-whatsnew-pip-body = Bideoa beste leiho batean erabiliz, bideoa leiho mugikor batera mugitzen denez, beste fitxetan lan egin bitartean bideoa ikusten jarrai dezakezu.
 cfr-whatsnew-pip-cta = Argibide gehiago
 
 ## Permission Prompt
@@ -227,6 +223,15 @@ cfr-whatsnew-passwords-icon-alt = Babesik gabeko pasahitzaren giltzaren ikonoa
 
 ## Picture-in-Picture fullscreen message
 
-cfr-whatsnew-pip-fullscreen-header = Bideoa beste batean pantaila osoan ikusteko aukera
+cfr-whatsnew-pip-fullscreen-header = Bideoa beste leiho batean pantaila osoan ikusteko aukera
 cfr-whatsnew-pip-fullscreen-body = Bideo bat leiho mugikor batera eramatean, orain klik bikoitzarekin pantaila osora ere eraman dezakezu.
-cfr-whatsnew-pip-fullscreen-icon-alt = Bideoa beste bideo batean eginbideko ikonoa
+cfr-whatsnew-pip-fullscreen-icon-alt = Bideoa beste leiho batean eginbideko ikonoa
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-icon-alt = Babesaren ikonoa
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = PDF esperientzia hobetua
+cfr-whatsnew-better-pdf-body = PDF dokumentuak orain zuzenean { -brand-short-name }(e)n irekitzen dira, zure lan egiteko modua erraztuz.

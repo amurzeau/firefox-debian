@@ -294,6 +294,8 @@
 <!ENTITY findToolbarCmd.tooltip "Sök text på sidan">
 <!ENTITY spellToolbarCmd.label "Stavning">
 <!ENTITY spellToolbarCmd.tooltip "Kontrollera stavningen i markering eller på hela sidan">
+
+<!-- Toolbar-only items -->
 <!ENTITY imageToolbarCmd.label "Bild">
 <!ENTITY imageToolbarCmd.tooltip "Infoga ny bild eller ändra egenskaperna för markerad bild">
 <!ENTITY hruleToolbarCmd.label "V. linje">
@@ -306,7 +308,6 @@
 <!ENTITY anchorToolbarCmd.tooltip "Infoga ett nytt namngivet ankare eller ändra egenskaperna för markerat ankare">
 <!ENTITY TextColorButton.tooltip "Välj färg för texten">
 <!ENTITY BackgroundColorButton.tooltip "Välj färg för bakgrunden">
-<!ENTITY throbber.tooltip "Gå till &vendorShortName;s webbplats">
 <!ENTITY throbber.tooltip2 "Gå till &brandShortName; hemsida">
 <!ENTITY HighlightColorButton.tooltip "Välj markeringsfärg för text">
 
@@ -317,8 +318,8 @@
 <!ENTITY boldToolbarCmd.tooltip "Halvfet">
 <!ENTITY italicToolbarCmd.tooltip "Kursiv">
 <!ENTITY underlineToolbarCmd.tooltip "Understruken">
-<!ENTITY bulletListToolbarCmd.tooltip "Tillämpa eller ta bort lista med bomber">
-<!ENTITY numberListToolbarCmd.tooltip "Tillämpa eller ta bort numrerad lista">
+<!ENTITY bulletListToolbarCmd.tooltip "Använd eller ta bort punktlista">
+<!ENTITY numberListToolbarCmd.tooltip "Använd eller ta bort numrerad lista">
 <!ENTITY outdentToolbarCmd.tooltip "Dra ut text (flytta åt vänster)">
 <!ENTITY indentToolbarCmd.tooltip "Dra in text (flytta åt höger)">
 <!ENTITY AlignPopupButton.tooltip "Välj kantställning">

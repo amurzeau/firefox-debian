@@ -210,3 +210,10 @@ cfr-whatsnew-passwords-icon-alt = کمزور پاس ورڈ کی کلیدی آئ�
 ## Picture-in-Picture fullscreen message
 
 cfr-whatsnew-pip-fullscreen-icon-alt = پکچر-ان-پکچر آئیکن
+
+## Protections Dashboard message
+
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = بہتر پی ڈی ایف کا تجربہ

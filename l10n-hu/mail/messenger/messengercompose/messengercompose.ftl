@@ -9,14 +9,6 @@
 remove-address-row-type = A(z) { $type } mező eltávolítása
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
-address-input-type =
-    { $count ->
-        [0] Üres { $type } típusú beviteli mező
-        [one] { $type } beviteli mező egy címmel
-       *[other] { $type } beviteli mező { $count } címmel
-    }
-#   $type (String) - the type of the addressing row
-#   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
         [0] { $type }
@@ -42,3 +34,26 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Áthelyezés a vakmásolatba
     .accesskey = v
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [1] { $count } melléklet
+            [one] { $count } melléklet
+           *[other] { $count } melléklet
+        }
+    .accesskey = m
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [1] { $count } melléklet
+            [one] { $count } melléklet
+           *[other] { $count } melléklet
+        }
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+button-return-receipt =
+    .label = Visszaigazolás
+    .tooltiptext = Visszaigazolás kérése az üzenetről

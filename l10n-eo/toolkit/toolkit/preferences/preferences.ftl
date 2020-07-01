@@ -22,6 +22,7 @@ set-password-new-password = Tajpu novan pasvorton:
 set-password-reenter-password = Retajpu pasvorton:
 set-password-meter = Mezurilo de pasvorta kvalito
 set-password-meter-loading = Ŝarganta
+master-password-admin = Via administranto postulas de vi la uzon de ĉefa pasvorto por povi konservi pasvortojn.
 master-password-description = Ĉefa pasvorto estas uzata por protekti delikatan informon, kiel retejaj pasvortoj. Se vi kreis ĉefan pasvorton, oni petos al vi tajpi ĝin po unu fojo en ĉiu seanco kiam { -brand-short-name } reprenas konservitan informon protektitan de la pasvorto.
 master-password-warning = Bonvolu certiĝi, ke vi memoros la ĉefan pasvorton, kiun vi ĵus elektis. Se vi forgesos ĝin, vi ne povos aliri la informon protektatan de ĝi.
 remove-password =

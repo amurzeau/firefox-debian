@@ -119,6 +119,11 @@ sandbox-sys-call-number = Chamadas de sistema
 sandbox-sys-call-args = Argumentos
 safe-mode-title = Experimente o modo de segurança
 restart-in-safe-mode-label = Reiniciar com extensões desativadas…
+clear-startup-cache-title = Experimente limpar o cache de inicialização
+clear-startup-cache-label = Limpar cache de inicialização…
+startup-cache-dialog-title = Limpar cache de inicialização
+startup-cache-dialog-body = Reinicie o { -brand-short-name } para limpar o cache de inicialização. Isso não altera suas configurações nem remove extensões que você adicionou ao { -brand-short-name }.
+restart-button-label = Reiniciar
 
 ## Media titles
 
@@ -126,6 +131,7 @@ audio-backend = Infraestrutura de Áudio
 max-audio-channels = Máximo de Canais
 channel-layout = Formato de Canal Preferido
 sample-rate = Taxa de amostragem preferida
+roundtrip-latency = Latência de ida e volta (desvio padrão)
 media-title = Mídia
 media-output-devices-title = Dispositivos de Saída
 media-input-devices-title = Dispositivos de Entrada

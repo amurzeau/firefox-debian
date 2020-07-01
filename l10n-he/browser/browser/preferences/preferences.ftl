@@ -232,6 +232,10 @@ translate-attribution = תרגום של <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = חריגות…
     .accesskey = ג
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = שימוש בהגדרות מערכת ההפעלה שלך עבור ״{ $localeName }״ כדי לעצב תאריכים, זמנים, מספרים ומידות.
 check-user-spelling =
     .label = בדיקת איות תוך כדי הקלדה
     .accesskey = ב
@@ -310,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ‏({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = השתמש בתוסף { $plugin-name } (בתוך { -brand-short-name })
-applications-preview-inapp =
-    .label = תצוגה מקדימה ב־{ -brand-short-name }
 applications-open-inapp =
     .label = פתיחה ב־{ -brand-short-name }
 
@@ -325,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -493,11 +493,16 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = אתרים מובילים
 home-prefs-topsites-description = האתרים בהם ביקרת הכי הרבה
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = מומלץ על־ידי { $provider }
 home-prefs-recommended-by-description = תוכן נהדר מכל רחבי הרשת, בהתאמה אישית להעדפותיך
+
+##
+
 home-prefs-recommended-by-learn-more = איך זה עובד
 home-prefs-recommended-by-option-sponsored-stories =
     .label = סיפורים ממומנים
@@ -558,6 +563,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = הצגת הצעות חיפוש בחלונות פרטיים
 suggestions-addressbar-settings = שינוי העדפות עבור היסטוריית גלישה, סימניות והצעות לשוניות
+suggestions-addressbar-settings-generic = שינוי העדפות עבור הצעות אחרות של שורת הכתובת
 search-suggestions-cant-show = הצעות חיפוש לא יופיעו בתוצאות סרגל המיקום מכיוון שהגדרת ש־{ -brand-short-name } לעולם לא לזכור היסטוריה.
 search-one-click-header = מנועי חיפוש בלחיצה אחת
 search-one-click-desc = בחירת מנועי חיפוש חלופיים שיופיעו מתחת לשורת הכתובת ושורת החיפוש עם תחילת ההקלדה של מילות מפתח.
@@ -761,10 +767,10 @@ privacy-header = פרטיות דפדפן
 
 ## Privacy Section - Forms
 
+logins-header = כניסות וססמאות
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = כניסות וססמאות
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = כניסות וססמאות
     .searchkeywords = { -lockwise-brand-short-name }
@@ -801,9 +807,12 @@ forms-master-pw-fips-desc = שינוי הססמה נכשל
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = יש לאמת את הזהות שלך כדי ליצור ססמה ראשית.
-# This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = כדי ליצור ססמה ראשית, יש להזין את פרטי הכניסה שלך ל־Windows. פעולה זאת מסייעת בהגנה על אבטחת החשבונות שלך.
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = ליצור ססמה ראשית
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -889,6 +898,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = ניהול הרשאות…
     .accesskey = ה
+sitedata-cookies-exceptions =
+    .label = ניהול חריגות…
+    .accesskey = ח
 
 ## Privacy Section - Address Bar
 
@@ -903,6 +915,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = לשוניות פתוחות
     .accesskey = ל
+addressbar-locbar-topsites-option =
+    .label = אתרים מובילים
+    .accesskey = מ
 addressbar-suggestions-settings = שינוי העדפות של הצעות מנועי חיפוש
 
 ## Privacy Section - Content Blocking
@@ -960,7 +975,6 @@ content-blocking-fingerprinters = רכיבי זהות דיגיטלית
 content-blocking-warning-title = לתשומת לבך!
 content-blocking-warning-description = חסימת תוכן עלולה לגרום לאתרים מסוימים להישבר. קל לבטל חסימה עבור אתרים בטוחים.
 content-blocking-learn-how = מידע נוסף
-content-blocking-etp-warning-description = חסימת רכיבי מעקב עשויה להשפיע על הפונקציונליות של אתרים מסוימים. יש לטעון מחדש דף עם רכיבי מעקב כדי לטעון את כל התוכן.
 content-blocking-and-isolating-etp-warning-description = חסימת רכיבי מעקב ובידוד עוגיות עשויים להשפיע על הפונקציונליות של אתרים מסוימים. יש לטעון מחדש דף עם רכיבי מעקב כדי לטעון את כל התוכן.
 content-blocking-warning-learn-how = מידע נוסף
 content-blocking-reload-description = יהיה עליך לטעון מחדש את הלשוניות שלך כדי להחיל שינויים אלו.

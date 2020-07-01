@@ -15,3 +15,4 @@ accounts-auth-method = Tarrayt n usesteb
 accounts-default = Amezwer?
 identity-name = Tamagit
 send-via-email = Azen s yimayl
+app-basics-telemetry = Isefka n tilisɣelt

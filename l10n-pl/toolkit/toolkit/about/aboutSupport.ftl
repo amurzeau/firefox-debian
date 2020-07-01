@@ -120,6 +120,11 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Parametry
 safe-mode-title = Tryb awaryjny
 restart-in-safe-mode-label = Uruchom ponownie z wyłączonymi dodatkami…
+clear-startup-cache-title = Spróbuj wyczyścić pamięć podręczną uruchamiania
+clear-startup-cache-label = Wyczyść pamięć podręczną uruchamiania…
+startup-cache-dialog-title = Wyczyść pamięć podręczną uruchamiania
+startup-cache-dialog-body = Uruchom program { -brand-short-name } ponownie, aby wyczyścić pamięć podręczną uruchamiania. Nie spowoduje to zmiany ustawień ani usunięcia rozszerzeń dodanych do programu.
+restart-button-label = Uruchom ponownie
 
 ## Media titles
 
@@ -127,6 +132,7 @@ audio-backend = Mechanizm dźwięku
 max-audio-channels = Maksymalna liczba kanałów
 channel-layout = Preferowany układ kanałów
 sample-rate = Preferowana częstotliwość próbkowania
+roundtrip-latency = Opóźnienie w obie strony (odchylenie standardowe)
 media-title = Media
 media-output-devices-title = Urządzenia wyjściowe
 media-input-devices-title = Urządzenia wejściowe

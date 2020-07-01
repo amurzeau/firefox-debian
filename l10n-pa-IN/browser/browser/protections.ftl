@@ -37,10 +37,14 @@ etp-card-title = ਵਧੇਰੇ ਟਰੈਕਿੰਗ ਸੁਰੱਖਿਆ
 etp-card-content = ਟਰੈਕਰ ਤੁਹਾਡੀਆਂ ਬਰਾਊਜ਼ ਕਰਨ ਦੀਆਂ ਆਦਤਾਂ ਅਤੇ ਦਿਲਚਸਪੀਆਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਇਕੱਤਰ ਕਰਨ ਲਈ ਆਨਲਾਈਨ ਤੁਹਾਡਾ ਪਿੱਛਾ ਕਰਦੇ ਹਨ। { -brand-short-name } ਇਹਨਾਂ ਟਰੈਕਰਾਂ ਅਤੇ ਹੋਰ ਖੁਣਸੀ ਸਕ੍ਰਿਪਟਾਂ ਉੱਤੇ ਪਾਬੰਦੀ ਲਾਉਂਦਾ ਹੈ।
 protection-report-webpage-title = ਸੁਰੱਖਿਆ ਡੈਸ਼ਬੋਰਡ
 protection-report-page-content-title = ਸੁਰੱਖਿਆ ਡੈਸ਼ਬੋਰਡ
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } ਤੁਹਾਡੇ ਵਲੋਂ ਬਰਾਊਜ਼ ਕਰਨ ਦੇ ਦੌਰਾਨ ਪਰਦੇ ਪਿੱਛੇ ਤੁਹਾਡੀ ਪਰਦੇਦਾਰੀ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਦਾ ਹੈ। ਇਹ ਉਹਨਾਂ ਸੁਰੱਖਿਆਵਾਂ ਦੀ ਨਿੱਜੀ ਬਣਾਈ ਸੰਖੇਪ ਜਾਣਕਾਰੀ ਹੈ, ਜਿਸ ਵਿੱਚ ਤੁਹਾਡੀ ਆਨਲਾਈਨ ਸੁਰੱਖਿਆ ਨੂੰ ਕੰਟਰੋਲ ਕਰਨ ਲਈ ਟੂਲ ਸ਼ਾਮਲ ਹਨ।
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } ਤੁਹਾਡੇ ਵਲੋਂ ਬਰਾਊਜ਼ ਕਰਨ ਦੇ ਦੌਰਾਨ ਪਰਦੇ ਪਿੱਛੇ ਤੁਹਾਡੀ ਪਰਦੇਦਾਰੀ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰ ਸਕਦਾ ਹੈ। ਇਹ ਉਹਨਾਂ ਸੁਰੱਖਿਆਵਾਂ ਦੀ ਨਿੱਜੀ ਬਣਾਈ ਸੰਖੇਪ ਜਾਣਕਾਰੀ ਹੈ, ਜਿਸ ਵਿੱਚ ਤੁਹਾਡੀ ਆਨਲਾਈਨ ਸੁਰੱਖਿਆ ਨੂੰ ਕੰਟਰੋਲ ਕਰਨ ਲਈ ਟੂਲ ਸ਼ਾਮਲ ਹਨ।
+protection-report-settings-link = ਆਪਣੀ ਪਰਦੇਦਾਰੀ ਅਤੇ ਸੁਰੱਖਿਆ ਸੈਟਿੰਗਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ
 etp-card-title-always = ਵਾਧਾ ਕੀਤੀ ਟਰੈਕਿੰਗ ਸੁਰੱਖਿਆ: ਹਮੇਸ਼ਾ ਚਾਲੂ
 etp-card-title-custom-not-blocking = ਵਾਧਾ ਕੀਤੀ ਟਰੈਕਿੰਗ ਸੁਰੱਖਿਆ: ਬੰਦ
-etp-card-content-summary = ਜਦੋਂ ਅਣਪਛਾਤੀਆਂ ਕੰਪਨੀਆਂ ਵੈੱਬ ਉੱਤੇ ਚੋਰੀ ਛਿਪੇ ਤੁਹਾਡਾ ਪਿੱਛਾ ਕਰਨ ਦੀ ਕੋਸ਼ਿਸ਼ ਕਰਦੀਆਂ ਹਨ ਤਾਂ { -brand-short-name } ਆਪਣੇ-ਆਪ ਉਹਨਾਂ ਨੂੰ ਰੋਕ ਦਿੰਦਾ ਹੈ।
+etp-card-content-description = { -brand-short-name } ਵੈੱਬ ਉੱਤੇ ਕੰਪਨੀਆਂ ਨੂੰ ਤੁਹਾਡਾ ਪਿੱਛਾ ਕਰਨ ਤੋਂ ਆਪਣੇ ਆਪ ਰੋਕਦਾ ਹੈ।
 protection-report-etp-card-content-custom-not-blocking = ਸਾਰੀਆਂ ਸੁਰੱਖਿਆਵਾਂ ਨੂੰ ਇਸ ਵੇਲੇ ਬੰਦ ਕੀਤਾ ਹੈ। ਆਪਣੀਆਂ { -brand-short-name } ਸੁਰੱਖਿਆ ਸੈਟਿੰਗਾਂ ਦਾ ਇੰਤਾਜ਼ਮ ਕਰਕੇ ਪਾਬੰਦੀ ਲਾਉਣ ਵਾਲੇ ਟਰੈਕਰਾਂ ਨੂੰ ਚੁਣੋ।
 protection-report-manage-protections = ਸੈਟਿੰਗਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -58,8 +62,6 @@ fingerprinter-tab-title = ਫਿੰਗਰਪਰਿੰਟਰ
 fingerprinter-tab-content = ਫਿੰਗਰਪਰਿੰਟਰ ਤੁਹਾਡੇ ਬਾਰੇ ਪਰੋਫਾਈਲ ਬਣਾਉਣ ਲਈ ਤੁਹਾਡੇ ਬਰਾਊਜ਼ਰ ਅਤੇ ਕੰਪਿਊਟਰ ਤੋਂ ਸੈਟਿੰਗਾਂ ਇਕੱਤਰ ਕਰਦੇ ਹਨ। ਇਹ ਡਿਜ਼ਿਟਲ ਫਿੰਗਰਪਰਿੰਟ ਵਰਤ ਕੇ ਉਹ ਤੁਹਾਨੂੰ ਵੱਖੋ-ਵੱਖ ਵੈੱਬਸਾਈਟਾਂ ਦੁਆਲੇ ਟਰੈਕ ਕਰ ਸਕਦੇ ਹਨ। <a data-l10n-name="learn-more-link">ਹੋਰ ਸਿੱਖੋ</a>
 cryptominer-tab-title = ਕ੍ਰਿਪਟੋਮਾਈਨਰ
 cryptominer-tab-content = ਕ੍ਰਿਪਟੋਮਾਈਨਰ ਡਿਜ਼ਿਟਲ ਧਨ ਦੀ ਟਕਸਾਲ ਦੇ ਰੂਪ ਵਿੱਚ ਤੁਹਾਡੇ ਕੰਪਿਊਟਰ ਦੀ ਊਰਜਾ ਨੂੰ ਗੁਪਤ ਰੂਪ ਵਿੱਚ ਵਰਤਦੇ ਹਨ। ਕ੍ਰਿਪਟੋਮਾਈਨਰ ਸਕ੍ਰਿਪਟ ਤੁਹਾਡੀ ਬੈਟਰੀ ਖਪਾਉਂਦੀਆਂ ਹਨ, ਤੁਹਾਡੇ ਕੰਪਿਊਟਰ ਨੂੰ ਹੌਲੀ ਕਰਦੀਆਂ ਹਨ ਅਤੇ ਤੁਹਾਡੇ ਬਿਜਲੀ ਦੇ ਬਿੱਲ ‘ਚ ਵੀ ਵਾਧਾ ਕਰ ਸਕਦੀਆਂ ਹਨ। <a data-l10n-name="learn-more-link">ਹੋਰ ਜਾਣੋ</a>
-protections-close-button =
-    .aria-label = ਬੰਦ ਕਰੋ
 protections-close-button2 =
     .aria-label = ਬੰਦ ਕਰੋ
     .title = ਬੰਦ ਕਰੋ
@@ -120,6 +122,8 @@ monitor-link = ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ
 monitor-header-content-no-account = { -monitor-brand-name } ਨਾਲ ਪਤਾ ਕਰੋ ਕਿ ਕੀ ਤੁਸੀਂ ਕਿਸੇ ਜਾਣੇ-ਪਛਾਣੇ ਡਾਟਾ ਸੰਨ੍ਹ ਦਾ ਹਿੱਸਾ ਹੋ ਅਤੇ ਨਵੇਂ ਲੱਗੇ ਸੰਨ੍ਹਾਂ ਬਾਰੇ ਖ਼ਬਰਦਾਰ ਵੀ ਰਹੋ।
 monitor-header-content-signed-in = { -monitor-brand-name } ਤੁਹਾਨੂੰ ਸਾਵਧਾਨ ਕਰੇਗਾ, ਜੇ ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਕਿਸੇ ਪਤਾ ਲੱਗੀ ਡਾਟਾ ਸੰਨ੍ਹ ‘ਚ ਲੱਭਿਆ ਗਿਆ।
 monitor-sign-up = ਸੰਨ੍ਹ ਲੱਗਣ ਦੀਆਂ ਚੇਤਾਵਨੀਆਂ ਲਈ ਸਾਈਨ ਅੱਪ ਕਰੋ
+monitor-sign-up-link = ਸੰਨ੍ਹ ਲੱਗਣ ਚੇਤਾਵਨੀਆਂ ਲਈ ਸਾਈਨ ਅੱਪ ਕਰੋ
+    .title = { -monitor-brand-name } ਨਾਲ ਸੰਨ੍ਹ ਲੱਗਣ ਚੇਤਾਵਨੀਆਂ ਲਈ ਸਾਈਨ ਅੱਪ ਕਰੋ
 auto-scan = ਅੱਜ ਆਪਣੇ-ਆਪ ਸਕੈਨ ਕੀਤਾ
 monitor-emails-tooltip =
     .title = { -monitor-brand-short-name } ਨਾਲ ਨਿਗਰਾਨੀ ਕੀਤੇ ਈਮੇਲ ਵੇਖੋ
@@ -144,6 +148,14 @@ info-known-breaches-found =
        *[other] ਪਤਾ ਲੱਗੀਆਂ ਡਾਟਾ ਸੰਨ੍ਹ ‘ਚ ਤੁਹਾਡੀ ਜਾਣਕਾਰੀ ਨਸ਼ਰ ਹੈ
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] ਜਾਣੀ-ਪਛਾਣੀ ਡਾਟਾ ਸੰਨ੍ਹ ਨੂੰ ਹੱਲ ਕੀਤੀ ਨਿਸ਼ਾਨੀ ਲਾਓ
+       *[other] ਜਾਣੀਆਂ-ਪਛਾਣੀਆਂ ਡਾਟਾ ਸੰਨ੍ਹਾਂ ਨੂੰ ਹੱਲ ਕੀਤੀ ਨਿਸ਼ਾਨੀ ਲਾਓ
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -160,6 +172,41 @@ password-warning =
         [one] ਸੰਭਾਲੇ ਲਾਗਇਨ ਡਾਟਾ ਸੰਨ੍ਹ ‘ਚ ਨਸ਼ਰ ਹੋ ਸਕਦਾ ਹੈ। ਚੰਗੀ ਆਨਲਾਈਨ ਸੁਰੱਖਿਆ ਵਾਸਤੇ ਇਹ ਪਾਸਵਰਡ ਬਦਲੋ। <a data-l10n-name="lockwise-link">ਸੰਭਾਲੇ ਲਾਗਇਨ ਵੇੇਖੋ</a>
        *[other] ਸੰਭਾਲੇ ਲਾਗਇਨ ਡਾਟਾ ਸੰਨ੍ਹ ‘ਚ ਨਸ਼ਰ ਹੋ ਸਕਦੇ ਹਨ। ਚੰਗੀ ਆਨਲਾਈਨ ਸੁਰੱਖਿਆ ਵਾਸਤੇ ਇਹ ਪਾਸਵਰਡ ਬਦਲੋ। <a data-l10n-name="lockwise-link">ਸੰਭਾਲੇ ਲਾਗਇਨ ਵੇੇਖੋ</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] ਨਾ ਹੱਲ ਕੀਤੀਆਂ ਸੰਨ੍ਹਾਂ ਵਿੱਚ ਨਸ਼ਰ ਹੋਇਆ ਪਾਸਵਰਡ
+       *[other] ਨਾ ਹੱਲ ਕੀਤੀਆਂ ਸੰਨ੍ਹਾਂ ਵਿੱਚ ਨਸ਼ਰ ਹੋਏ ਪਾਸਵਰਡ
+    }
+monitor-no-breaches-title = ਚੰਗੀ ਖ਼ਬਰ ਹੈ!
+monitor-no-breaches-description = ਤੁਹਾਡੇ ਲਈ ਕੋਈ ਸੰਨ੍ਹ ਨਹੀਂ ਲੱਗੀ ਹੈ। ਜੇ ਕੋਈ ਲੱਗੀ ਤਾਂ ਅਸੀਂ ਤੁਹਾਨੂੰ ਦੱਸਾਂਗੇ।
+monitor-view-report-link = ਰਿਪੋਰਟ ਵੇਖੋ
+    .title = { -monitor-brand-short-name } ਰਾਹੀਂ ਲੱਗੀਆਂ ਸੰਨ੍ਹਾਂ ਬੰਦ ਕਰੋ
+monitor-breaches-unresolved-title = ਆਪਣੀਆਂ ਲੱਗੀਆਂ ਸੰਨ੍ਹਾਂ ਨੂੰ ਹੱਲ ਕਰੋ
+monitor-breaches-unresolved-description = ਲੱਗੀ ਸੰਨ੍ਹ ਦੇ ਵੇਰਵੇਖਣ ਅਤੇ ਆਪਣੀ ਜਾਣਕਾਰੀ ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਕਦਮ ਚੁੱਖਣ ਦੇ ਬਾਅਦ ਤੁਸੀਂ ਸੰਨ੍ਹ ਨੂੰ ਹੱਲ ਹੋਣ ਦਾ ਨਿਸ਼ਾਨ ਲਾ ਸਕਦੇ ਹੋ।
+monitor-manage-breaches-link = ਸੰਨ੍ਹਾਂ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ
+    .title = { -monitor-brand-short-name } ਰਾਹੀਂ ਸੰਨ੍ਹਾਂ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ
+monitor-breaches-resolved-title = ਵਧੀਆ! ਤੁਸੀਂ ਸਾਰੇ ਜਾਣੀਆਂ-ਪਛਾਣੀਆਂ ਸੰਨ੍ਹਾਂ ਨੂੰ ਹੱਲ ਕਰ ਚੁੱਕੇ ਹੋ।
+monitor-breaches-resolved-description = ਜੇ ਤੁਹਾਡਾ ਈਮੇਲ ਕਿਸੇ ਨਵੀਂ ਲੱਗੀ ਸੰਨ੍ਹ ਵਿੱਚ ਦਿਖਾਈ ਦਿੱਤੀ ਤਾਂ ਅਸੀਂ ਤੁਹਾਨੂੰ ਦੱਸਾਂਗੇ।
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+        [one] { $numBreaches } ਸੰਨ੍ਹਾਂ ਵਿੱਚੋਂ { $numBreachesResolved } ਨੂੰ ਹੱਲ਼ ਨਿਸ਼ਾਨ ਲਾਓ
+       *[other] { $numBreaches } ਸੰਨ੍ਹਾਂ ਵਿੱਚੋਂ { $numBreachesResolved } ਨੂੰ ਹੱਲ਼ ਨਿਸ਼ਾਨ ਲਾਓ
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved }% ਪੂਰਾ
+monitor-partial-breaches-motivation-title-start = ਬਹੁਤ ਵਧੀਆ ਸ਼ੁਰੂਆਤ!
+monitor-partial-breaches-motivation-title-middle = ਇੰਝ ਹੀ ਰੱਖੋ!
+monitor-partial-breaches-motivation-title-end = ਲਗਭਗ ਹੋ ਗਿਆ! ਇੰਝ ਹੀ ਰੱਖੋ।
+monitor-partial-breaches-motivation-description = ਆਪਣੇ ਬਾਕੀ ਰਹਿੰਦੀਆਂ ਸੰਨ੍ਹਾਂ ਨੂੰ { -monitor-brand-short-name } ਰਾਹੀਂ ਹੱਲ ਕਰੋ।
+monitor-resolve-breaches-link = ਲੱਗੀਆਂ ਸੰਨ੍ਹਾਂ ਨੂੰ ਹੱਲ ਕਰੋ
+    .title = { -monitor-brand-short-name } ਰਾਹੀਂ ਲੱਗੀਆਂ ਸੰਨ੍ਹਾਂ ਨੂੰ ਹੱਲ ਕਰੋ
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

@@ -294,6 +294,7 @@
 <!ENTITY findToolbarCmd.tooltip "Найти текст на странице">
 <!ENTITY spellToolbarCmd.label "Орфография">
 <!ENTITY spellToolbarCmd.tooltip "Проверить орфографию выделенного отрывка или всей страницы">
+
 <!ENTITY imageToolbarCmd.label "Изображение">
 <!ENTITY imageToolbarCmd.tooltip "Вставить новое изображение или изменить свойства выделенного">
 <!ENTITY hruleToolbarCmd.label "Разделитель">
@@ -306,7 +307,6 @@
 <!ENTITY anchorToolbarCmd.tooltip "Вставить новый якорь или изменить свойства выделенного">
 <!ENTITY TextColorButton.tooltip "Выбор цвета для текста">
 <!ENTITY BackgroundColorButton.tooltip "Выбор цвета для фона">
-<!ENTITY throbber.tooltip "Перейти на домашнюю страницу &vendorShortName;">
 <!ENTITY throbber.tooltip2 "Перейти на домашнюю страницу &brandShortName;">
 <!ENTITY HighlightColorButton.tooltip "Выберите цвет подсветки текста">
 

@@ -119,10 +119,6 @@ cfr-whatsnew-lockwise-take-link-text = Merrni aplikacionin
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Shtypni më pak, gjeni më shumë me shtyllën e adresave
-# Variables:
-#   $searchEngineName - Name of the current default search engine as also shown in the urlbar.
-cfr-whatsnew-searchbar-body-enginename = Shkoni te sajtet që vizitoni më tepër me një klikim të vetëm te shtylla e adresave. Gjeni gjëra më shpejt, me përfundime prej { $searchEngineName } dhe historikut tuaj të shfletimit.
-cfr-whatsnew-searchbar-body-generic = Shkoni te sajtet që vizitoni më tepër me një klikim të vetëm te shtylla e adresave. Gjejini gjëra më shpejt, me përfundime kërkimi prej historikut tuaj të shfletimit.
 cfr-whatsnew-searchbar-body-topsites = Tani, thjesht përzgjidhni shtyllën e adresave, dhe do të zgjerohet një kuadrat me lidhje për te sajtet tuaj kryesues.
 cfr-whatsnew-searchbar-icon-alt-text = Ikonë thjerrëze zmadhimi
 
@@ -150,7 +146,7 @@ cfr-whatsnew-fingerprinter-counter-header =
     }
 cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name }-i bllokon mjaft nga krijuesit e shenjave të gishtave që grumbullojnë fshehtas informacion mbi pajisjen dhe veprimet tuaja, për të krijuar një profil tuajin të synuar nga reklamuesit.
 # Message variation when fingerprinters count is less than 10
-cfr-whatsnew-fingerprinter-counter-header-alt = Krijues shenja gishtash
+cfr-whatsnew-fingerprinter-counter-header-alt = Krijues shenjash gishtash
 cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name }-i mund të bllokojë krijues shenjash gishtash që grumbullojnë fshehtas informacion mbi pajisjen dhe veprimet tuaja, për të krijuar një profil tuajin të synuar nga reklamuesit.
 
 ## Bookmark Sync
@@ -230,3 +226,15 @@ cfr-whatsnew-passwords-icon-alt = Ikonë dry fjalëkalimi të cenueshëm
 cfr-whatsnew-pip-fullscreen-header = Bëni foto-në-foto sa krejt ekrani
 cfr-whatsnew-pip-fullscreen-body = Kur hapni një video brenda një dritareje pezull, tani mundeni të dyklikoni mbi atë dritare për ta kaluar sa krejt ekrani.
 cfr-whatsnew-pip-fullscreen-icon-alt = Ikonë foto-në foto
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Mbrojtje përmbledhtasi
+cfr-whatsnew-protections-body = Pulti i Mbrojtjeve përfshin raporte përmbledhëse rreth cenimesh të dhënash dhe administrimi fjalëkalimesh. Tani mund të ndiqni se sa cenime keni zgjidhur, dhe të shihni nëse ndonjë nga fjalëkalimet tuaj të ruajtur është ekspozuar në një cenim të dhënash.
+cfr-whatsnew-protections-cta-link = Shihni Pult Mbrojtjesh
+cfr-whatsnew-protections-icon-alt = Ikona mburojë
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Punim më i mirë me PDF-të
+cfr-whatsnew-better-pdf-body = Dokumentet PDF tani hapen drejt e në { -brand-short-name }, duke e lehtësuar rrjedhën tuaj të punës.

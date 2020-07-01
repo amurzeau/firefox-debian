@@ -63,6 +63,7 @@ policy-ExtensionSettings = Управљајте свим аспектима ин
 policy-ExtensionUpdate = Омогућите или онемогућите аутоматска ажурирања проширења.
 policy-FirefoxHome = Подесите Firefox Home.
 policy-FlashPlugin = Дозволи или забрани коришћење Flash прикључка.
+policy-Handlers = Подесите подразумеване менаџере апликација.
 policy-HardwareAcceleration = Ако је нетачно, искључи хардверско убрзавање.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Постави и по избору закључај почетну страну.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Вратите се н
 ##
 
 policy-LocalFileLinks = Дозволи одређеним сајтовима везе ка локалним датотекама.
+policy-MasterPassword = Захтевајте или спречите употребу главне лозинке.
 policy-NetworkPrediction = Омогући или онемогући предвиђање мрежних захтева (превентивни DNS упити).
 policy-NewTabPage = Омогућите или онемогућите страницу новог језичка.
 policy-NoDefaultBookmarks = Онемогући стварање подразумеваних белешки упакованих уз програм { -brand-short-name } и стварање паметних белешки (најчешће посећене, недавне ознаке). Напомена: ова полиса је делотворна само ако се искористи пре првог покретања профила.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Омогућите снимање лозинки
 # PDF.js and PDF should not be translated
 policy-PDFjs = Онемогућите или подесите PDF.js, уграђени PDF читач за { -brand-short-name }.
 policy-Permissions2 = Конфигуришите дозволе за камеру, микрофон, локацију, обавештења и аутоматску репродукцију.
+policy-PictureInPicture = Омогућите или онемогућите режим слике-у-слици.
 policy-PopupBlocking = Подразумевано дозволи одређеним сајтовима приказ искачућих прозора .
 policy-Preferences = Подесите и закључајте вредност за подскуп поставки.
 policy-PromptForDownloadLocation = Упитај где треба сачувати датотеке након преузимања.

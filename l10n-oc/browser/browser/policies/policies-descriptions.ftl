@@ -63,6 +63,7 @@ policy-ExtensionSettings = Gerir totes los aspècte de l’installacion d’exte
 policy-ExtensionUpdate = Activar o desactivar la mesa a jorn automatica de las extensions.
 policy-FirefoxHome = Configurar l’acuèlh de Firefox.
 policy-FlashPlugin = Autoriza o pas l’utilizacion del plugin Flash.
+policy-Handlers = Configurar los gestionaris d’aplicacions per defaut.
 policy-HardwareAcceleration = Se fals, desactiva l’acceleracion materiala.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Definís la pagina d’acuèlh e prepausa de la verrolhar.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Bascular lo compòrtam
 ##
 
 policy-LocalFileLinks = Autorizar los sites web a utilizar los ligams locals.
+policy-MasterPassword = Requerir o empachar l’utilizacion d’un senhal principal.
 policy-NetworkPrediction = Activar o desactivar la prediccion ret (resolucion DNS anticipada).
 policy-NewTabPage = Activar o desactivar la pagina d’onglet novèl.
 policy-NoDefaultBookmarks = Desactivar la creacion automatica dels marcapaginas per defaut integrats de { -brand-short-name }, e tanben los marcapaginas intelligents (sites mai visitats e sites mai recents); Nòta : aquesta politica s’aplica pas que s’es activada al primièr lançament del perfil.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Activar lo salvament dels senhals al gestionari 
 # PDF.js and PDF should not be translated
 policy-PDFjs = Desactivar o configurar PDF.js, lo visionador integrat de PDF dins { -brand-short-name }.
 policy-Permissions2 = Configurar las autorizacions per la camèra, lo microfòn, la localizacion, las notificacions e la lectura automatica.
+policy-PictureInPicture = Activar o desactivar l’incrustacion vidèo.
 policy-PopupBlocking = Autoriza unes sites web a mostrar de fenèstras surgentas per defaut.
 policy-Preferences = Definir e verrolhar la valor d’un jos-ensemble de preferéncias.
 policy-PromptForDownloadLocation = Demandar ont enregistrar los fichièrs pendent lo telecargament.

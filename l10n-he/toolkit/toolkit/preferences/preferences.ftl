@@ -22,6 +22,7 @@ set-password-new-password = הכנס ססמה חדשה:
 set-password-reenter-password = הכנס את הססמה שוב:
 set-password-meter = מד איכות ססמה
 set-password-meter-loading = בטעינה
+master-password-admin = מנהל המערכת שלך דורש שתהיה מוגדרת ססמה ראשית כדי לשמור ססמאות.
 master-password-description = הססמה הראשית שלך מגינה על מידע רגיש כמו ססמאות לאתרים. אם תיצור ססמה ראשית תתבקש להקליד אותה פעם אחת עבור כל הפעלה כאשר { -brand-short-name } מוצא נתונים שמורים המוגנים על־ידי הססמה.
 master-password-warning = אנא ודא שאתה זוכר את הססמה הראשית שקבעת. אם תשכח את הססמה הראשית, לא תוכל לגשת למידע שנשמר באמצעותה.
 remove-password =

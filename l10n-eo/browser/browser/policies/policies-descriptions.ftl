@@ -58,11 +58,12 @@ policy-EncryptedMediaExtensions = Aktivigi aŭ malaktivigi la etendaĵoj de ĉif
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
-policy-Extensions = Instali, malinstali aŭ ŝlosi etendaĵojn. La elekteblo "instali" akceptas retadresojn aŭ vojojn kiel parametrojn. La elektebloj "malinstali" kaj "ŝlosi" akceptas identigilojn de etendaĵo.
+policy-Extensions = Instali, malinstali aŭ ŝlosi etendaĵojn. La elekteblo "instali" akceptas retadresojn aŭ vojojn kiel parametrojn. La ebloj "malinstali" kaj "ŝlosi" akceptas identigilojn de etendaĵo.
 policy-ExtensionSettings = Administri ĉiujn agordojn por instalo de etendaĵoj.
 policy-ExtensionUpdate = Aktivigi aŭ malaktivigi aŭtomatan ĝisdatigon de etendaĵoj.
 policy-FirefoxHome = Agordi la ekan paĝon de Firefox.
 policy-FlashPlugin = Permesi aŭ malpermesi la uzon de la kromprogramo Flash.
+policy-Handlers = Agordi la normajn programajn traktilojn.
 policy-HardwareAcceleration = Se estas "malvera" la aparata akcelo estos malŝaltita.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Difini kaj havi la eblon ŝlosi la ekan paĝon.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Reiri al la tradicia k
 ##
 
 policy-LocalFileLinks = Permesi al kelkaj difinitaj retejoj havi ligilojn al lokaj dosieroj.
+policy-MasterPassword = Postuli aŭ eviti la uzon de ĉefa pasvorto.
 policy-NetworkPrediction = Aktivigi aŭ malaktivigi retan prognozon (antaŭlegon de DNS).
 policy-NewTabPage = Aktivigi aŭ malaktivigi la paĝon por novaj langetoj.
 policy-NoDefaultBookmarks = Malaktivigi kreadon de la normaj legosignoj inkluzivitaj kun { -brand-short-name }, kaj de la inteligentaj legosignoj (pli ofte vizititaj, ĵusaj etikedoj). Rimarko: tiu ĉi politiko nur efikas se ĝi estas uzita antaŭ la unua uzo de la profilo.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Aktivigi konservadon de pasvortoj en la pasvorta
 # PDF.js and PDF should not be translated
 policy-PDFjs = Malaktivigi aŭ agordi PDF.js, la integritan legilon de PDF en { -brand-short-name }.
 policy-Permissions2 = Agordi permesojn por filmilo, mikrofono, pozicio,sciigoj kaj aŭtomata ludado.
+policy-PictureInPicture = Aktivigi aŭ malaktivigi la reĝimon bildo en bildo
 policy-PopupBlocking = Norme permesi al kelkaj retejoj montri ŝprucfenestrojn.
 policy-Preferences = Difini kaj bloki la valoron por aro de preferoj.
 policy-PromptForDownloadLocation = Demandi kie konservi elŝutitajn dosierojn.

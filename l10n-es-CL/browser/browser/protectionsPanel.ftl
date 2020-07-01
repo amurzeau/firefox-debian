@@ -58,6 +58,8 @@ protections-panel-not-found-label = Nada detectado
 
 protections-panel-settings-label = Ajustes de protección
 protections-panel-showreport-label = Mostrar reporte
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Panel de protecciones
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.
@@ -65,7 +67,7 @@ protections-panel-showreport-label = Mostrar reporte
 # The header of the list
 protections-panel-site-not-working-view-header = Desactiva las protecciones si tienes problemas con:
 # The list items, shown in a <ul>
-protections-panel-site-not-working-view-issue-list-login-fields = Campos de conexión
+protections-panel-site-not-working-view-issue-list-login-fields = Campos de credenciales
 protections-panel-site-not-working-view-issue-list-forms = Formularios
 protections-panel-site-not-working-view-issue-list-payments = Pagos
 protections-panel-site-not-working-view-issue-list-comments = Comentarios

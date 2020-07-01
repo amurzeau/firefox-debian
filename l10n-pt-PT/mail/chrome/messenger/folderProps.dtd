@@ -49,6 +49,9 @@
 
 <!ENTITY folderProps.name.label                  "Nome:">
 <!ENTITY folderProps.name.accesskey              "N">
+<!ENTITY folderProps.color.label                 "Cor do ícone:">
+<!ENTITY folderProps.color.accesskey             "o">
+<!ENTITY folderProps.reset.tooltip               "Restaurar cor predefinida">
 <!ENTITY folderProps.location.label              "Localização:">
 <!ENTITY folderProps.location.accesskey          "L">
 
@@ -56,6 +59,7 @@
 <!ENTITY privileges.button.label                 "Privilégios...">
 <!ENTITY privileges.button.accesskey             "P">
 <!ENTITY permissionsDesc.label                   "Tem estas permissões:">
+<!ENTITY folderOtherUsers.label                  "Outros com acesso a esta pasta:">
 <!ENTITY folderType.label                        "Tipo de pasta:">
 
 <!ENTITY folderQuotaTab.label                    "Cota">

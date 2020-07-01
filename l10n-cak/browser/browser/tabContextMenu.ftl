@@ -15,8 +15,8 @@ duplicate-tabs =
     .label = Kekamulüx taq Ruwi'
     .accesskey = K
 close-tabs-to-the-end =
-    .label = Ketz'apïx taq ruwi' pan ajkiq'a'
-    .accesskey = a
+    .label = Ketz'apïx taq Ruwi' pan Ajkiq'a'
+    .accesskey = i
 close-other-tabs =
     .label = Ketz'apïx ri ch'aqa' chik taq ruwi'
     .accesskey = K
@@ -31,10 +31,10 @@ unpin-tab =
     .accesskey = t
 pin-selected-tabs =
     .label = Titz'ajb'äx Ruwi'
-    .accesskey = P
+    .accesskey = t
 unpin-selected-tabs =
-    .label = Tiyuj Ruwi'
-    .accesskey = b
+    .label = Man Titz'ajb'äx Ruwi'
+    .accesskey = t
 bookmark-selected-tabs =
     .label = Tiya' ketal ri taq Yaketal…
     .accesskey = k
@@ -56,12 +56,23 @@ move-to-new-window =
 undo-close-tab =
     .label = Titzolïx Titz'apïx Ruwi'
     .accesskey = T
+tab-context-close-multiple-tabs =
+    .label = Ketz'apïx K'ïy Taq Ruwi'
+    .accesskey = y
+tab-context-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Titzolïx Nitz'apïx Ruwi'
+            [one] Titzolïx Nitz'apïx Ruwi'
+           *[other] Titzolïx Yetz'apïx Kiwi'
+        }
+    .accesskey = T
 close-tab =
     .label = Titz'apïx ruwi’
     .accesskey = T
 close-tabs =
     .label = Ketz'apïx taq Ruwi'
-    .accesskey = S
+    .accesskey = K
 move-tabs =
     .label = Kesilöx taq Ruwi'
     .accesskey = x

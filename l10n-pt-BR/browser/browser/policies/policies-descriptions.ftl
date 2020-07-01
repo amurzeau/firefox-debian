@@ -63,6 +63,7 @@ policy-ExtensionSettings = Gerenciar todos os aspectos da instalação de extens
 policy-ExtensionUpdate = Ativar ou desativar atualizações automáticas de extensões.
 policy-FirefoxHome = Configurar a página inicial do Firefox.
 policy-FlashPlugin = Permitir ou negar o uso do plugin Flash.
+policy-Handlers = Configurar manipuladores de aplicativos padrão.
 policy-HardwareAcceleration = Caso definido como "false", desativar a aceleração de hardware.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Definir a página inicial e, opcionalmente, impedir que seja alterada.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Reverter para o compor
 ##
 
 policy-LocalFileLinks = Permitir que sites específicos tenham links para arquivos locais.
+policy-MasterPassword = Exigir ou impedir o uso de uma senha mestra.
 policy-NetworkPrediction = Ativar ou desativar predição de rede (carregamento antecipado de DNS).
 policy-NewTabPage = Ativar ou desativar a página de nova aba.
 policy-NoDefaultBookmarks = Desativar a criação de favoritos padrões empacotados com o { -brand-short-name }, além dos favoritos inteligente (mais visitados e etiquetas recentes). Nota: esta política somente é efetiva se usada antes da primeira execução do perfil.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Ativar salvamento de senhas no gerenciador de se
 # PDF.js and PDF should not be translated
 policy-PDFjs = Desativar ou configurar o PDF.js, o visor de PDF integrado no { -brand-short-name }.
 policy-Permissions2 = Configurar permissões de câmera, microfone, localização, notificações e reprodução automática.
+policy-PictureInPicture = Ativar ou desativar picture-in-picture.
 policy-PopupBlocking = Permitir que determinados sites exibam popups como padrão.
 policy-Preferences = Definir e bloquear o valor de um subconjunto de preferências.
 policy-PromptForDownloadLocation = Perguntar onde salvar arquivos ao baixar.

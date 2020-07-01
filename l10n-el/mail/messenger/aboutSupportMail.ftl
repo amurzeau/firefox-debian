@@ -15,3 +15,4 @@ accounts-auth-method = Μέθοδος ταυτοποίησης
 accounts-default = Προεπιλογή;
 identity-name = Ταυτότητα
 send-via-email = Αποστολή μέσω email
+app-basics-telemetry = Δεδομένα τηλεμετρίας

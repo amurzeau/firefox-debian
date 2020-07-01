@@ -9,9 +9,20 @@ protections-panel-sitefixedsendreport-label = साइट ठीक हो ग�
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
 
+protections-popup-footer-protection-label-strict = सख्‍त
+    .label = सख्‍त
+protections-popup-footer-protection-label-custom = मनपसंद
+    .label = मनपसंद
+protections-popup-footer-protection-label-standard = मानक
+    .label = मानक
 
 ##
 
+# The text a screen reader speaks when focused on the info button.
+protections-panel-etp-more-info =
+    .aria-label = उन्नत ट्रैकिंग सुरक्षा के बारे में अधिक जानकारी
+protections-panel-etp-on-header = इस साइट के लिए उन्नत ट्रैकिंग सुरक्षा चालू है।
+protections-panel-etp-off-header = इस साइट के लिए उन्नत ट्रैकिंग सुरक्षा बंद है।
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = साइट काम नहीं कर रही?
 # The heading/title of the sub-panel view

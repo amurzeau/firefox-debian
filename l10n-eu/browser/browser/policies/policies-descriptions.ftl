@@ -63,6 +63,7 @@ policy-ExtensionSettings = Kudeatu hedapenen instalazioko arlo guztiak.
 policy-ExtensionUpdate = Gaitu edo desgaitu hedapenen eguneraketa automatikoa.
 policy-FirefoxHome = Konfiguratu Firefox Home.
 policy-FlashPlugin = Baimendu edo ukatu Flash plugina erabiltzea.
+policy-Handlers = Konfiguratu aplikazio-maneiatzaile lehenetsiak.
 policy-HardwareAcceleration = Ez badago ezarrita, hardware-azelerazioa desgaituko da.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Hasiera-orria ezarri eta ezarpen bidez aldatzea.
@@ -88,6 +89,7 @@ policy-PasswordManagerEnabled = Gaitu pasahitzak pasahitz-kudeatzailean gordetze
 # PDF.js and PDF should not be translated
 policy-PDFjs = Desgaitu edo konfiguratu PDF.js, { -brand-short-name }(r)en integratutako PDF ikustailea.
 policy-Permissions2 = Konfiguratu kamera, mikrofonoa, kokapena, jakinarazpenak eta erreprodukzio automatikoa erabiltzeko baimenak.
+policy-PictureInPicture = Gaitu edo desgaitu bideo beste leiho batean ikusteko eginbidea.
 policy-PopupBlocking = Baimendu zenbait webguneri lehenespenez popup leihoak bistaratzea.
 policy-Preferences = Ezarri eta blokeatu hobespen-azpimultzo baten balioak.
 policy-PromptForDownloadLocation = Galdetu non gorde deskargatutako fitxategiak.

@@ -224,3 +224,15 @@ cfr-whatsnew-passwords-icon-alt = Icône de clé de mot de passe vulnérable
 cfr-whatsnew-pip-fullscreen-header = Passez du petit au grand écran
 cfr-whatsnew-pip-fullscreen-body = Lorsque vous avez placé une vidéo dans une fenêtre flottante, vous pouvez maintenant double-cliquer sur celle-ci pour passer en plein écran.
 cfr-whatsnew-pip-fullscreen-icon-alt = Icône d’incrustation vidéo
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Protections en un coup d’œil
+cfr-whatsnew-protections-body = Le tableau de bord des protections comprend des rapports récapitulatifs sur les fuites de données et la gestion des mots de passe. Vous pouvez désormais suivre le nombre de fuites que vous avez résolues et voir si l’un de vos mots de passe enregistrés peut avoir été exposé dans une fuite de données.
+cfr-whatsnew-protections-cta-link = Afficher le tableau de bord des protections
+cfr-whatsnew-protections-icon-alt = Icône de bouclier
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Meilleure expérience PDF
+cfr-whatsnew-better-pdf-body = Les documents PDF s’ouvrent maintenant directement dans { -brand-short-name }, gardant vos outils de travail à portée de main.

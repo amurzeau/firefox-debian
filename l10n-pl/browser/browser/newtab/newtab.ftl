@@ -89,6 +89,7 @@ newtab-menu-show-privacy-info = Nasi sponsorzy i Twoja prywatność
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = OK
+newtab-privacy-modal-button-manage = Zarządzaj ustawieniami treści sponsorowanych
 newtab-privacy-modal-header = Twoja prywatność jest ważna.
 newtab-privacy-modal-paragraph-2 =
     Oprócz ciekawych artykułów pokazujemy Ci również spersonalizowane,
@@ -136,6 +137,10 @@ newtab-label-download = Z pobranych
 # Variables:
 #  $sponsorOrSource (String): This is the name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · Sponsorowane
+# This string is used at the bottom of story cards to indicate sponsored content
+# Variables:
+#  $sponsor (String): This is the name of a sponsor
+newtab-label-sponsored-by = Sponsor: { $sponsor }
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.

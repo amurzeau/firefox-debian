@@ -14,6 +14,7 @@
                        for the help button in the menubar but Gnome does not.   -->
 <!ENTITY helpMenuWin.label        "Pytyvõ"> 
 <!ENTITY helpMenuWin.accesskey    "P">
+
 <!ENTITY aboutProduct2.label      "&brandShorterName; rehegua">
 <!ENTITY aboutProduct2.accesskey  "A">
 <!ENTITY productHelp2.label       "&brandShorterName; Oipytyvõ">
@@ -40,7 +41,7 @@
 <!ENTITY preferencesCmdMac.label        "Jerohoryvéva…">
 <!ENTITY preferencesCmdMac.commandkey   ",">
 
-<!ENTITY servicesMenuMac.label          "Mba'epytyvõrã">
+<!ENTITY servicesMenuMac.label          "Mba’epytyvõrã">
 
 <!ENTITY hideThisAppCmdMac2.label       "&brandShorterName; moñemi">
 <!ENTITY hideThisAppCmdMac2.commandkey  "H">
@@ -50,4 +51,4 @@
 
 <!ENTITY showAllAppsCmdMac.label        "Techaukapaite">
 
-<!ENTITY touchBarCmdMac.label           "Eñemomba'e pokogua rendáre…">
+<!ENTITY touchBarCmdMac.label           "Eñemomba’e pokogua rendáre…">

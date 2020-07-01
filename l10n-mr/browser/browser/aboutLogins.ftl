@@ -2,6 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 about-logins-page-title = लॉगिन व संकेतशब्द
 
 # "Google Play" and "App Store" are both branding and should not be translated
@@ -12,9 +17,12 @@ login-app-promo-android =
     .alt = Google Play वर मिळवा
 login-app-promo-apple =
     .alt = App Store वरुन डाउनलोड करा
+
 login-filter =
     .placeholder = लॉगिन शोधा
+
 create-login-button = नविन लॉगिन बनवा
+
 fxaccounts-sign-in-text = आपल्या इतर उपकरणांवर आपले पासवर्ड मिळवा
 fxaccounts-sign-in-button = { -sync-brand-short-name } मध्ये साइन इन करा
 fxaccounts-avatar-button =
@@ -104,7 +112,9 @@ about-logins-enable-password-sync-dont-ask-again-button =
 confirmation-dialog-cancel-button = रद्द करा
 confirmation-dialog-dismiss-button =
     .title = रद्द करा
+
 confirm-delete-dialog-message = ही कृती बदलू शकत नाही
+
 confirm-discard-changes-dialog-title = जतन न केलेले बदल टाकून द्यायचे?
 confirm-discard-changes-dialog-message = सर्व जतन न केलेले बदल गमावले जातील.
 confirm-discard-changes-dialog-confirm-button = रद्द करा
@@ -123,3 +133,7 @@ about-logins-breach-alert-learn-more-link = अधिक जाणा
 
 # This is a generic error message.
 about-logins-error-message-default = हा पासवर्ड साठवताना त्रुटी आली.
+
+
+## Login Export Dialog
+

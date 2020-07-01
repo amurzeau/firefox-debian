@@ -314,8 +314,6 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Usar { $plugin-name } (in { -brand-short-name })
-applications-preview-inapp =
-    .label = Vista preliminar in { -brand-short-name }
 applications-open-inapp =
     .label = Aperir in { -brand-short-name }
 
@@ -329,8 +327,6 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
 applications-open-inapp-label =
     .value = { applications-open-inapp.label }
 applications-always-ask-label =
@@ -497,11 +493,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Sitos preferite
 home-prefs-topsites-description = Le sitos que tu visita le plus
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Recommendate per { $provider }
 home-prefs-recommended-by-description = Grande contento ex tote le Web, personalisate pro te
+home-prefs-recommended-by-description-update = Contentos exceptional de tote le Web, curate per { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Como illo labora
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Articulos sponsorisate
@@ -562,6 +564,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Monstrar suggestiones de recerca in fenestras private
 suggestions-addressbar-settings = Cambiar preferentias pro suggestiones a base de chronologia, marcapaginas e schedas
+suggestions-addressbar-settings-generic = Cambiar preferentias pro altere suggestiones in le barra de adresse
 search-suggestions-cant-show = Le suggestiones de recerca non essera monstrate inter le resultatos del barra de adresse perque tu ha configurate { -brand-short-name } pro non memorisar jammais le chronologia.
 search-one-click-header = Motores de recerca a un sol clic
 search-one-click-desc = Elige le motores de recerca alternative que appare infra le barra de adresse o le de recerca quando tu comencia a scriber un parola clave.
@@ -765,10 +768,10 @@ privacy-header = Confidentialitate del navigator
 
 ## Privacy Section - Forms
 
+logins-header = Authenticationes e contrasignos
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Authenticationes e contrasignos
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Authenticationes e contrasignos
     .searchkeywords = { -lockwise-brand-short-name }
@@ -804,8 +807,6 @@ forms-master-pw-fips-desc = Le cambio de contrasigno ha fallite
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verifica tu identitate pro crear un contrasigno maestro.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Pro crear un contrasigno principal, insere tu credentiales de accesso a Windows. Isto permitte de garantir le securitate de tu contos.
 # This message can be seen by trying to add a Master Password.
@@ -902,6 +903,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Gerer le permissiones…
     .accesskey = p
+sitedata-cookies-exceptions =
+    .label = Gerer exceptiones…
+    .accesskey = G
 
 ## Privacy Section - Address Bar
 
@@ -916,6 +920,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Schedas aperite
     .accesskey = S
+addressbar-locbar-topsites-option =
+    .label = Sitos popular
+    .accesskey = p
 addressbar-suggestions-settings = Cambiar le preferentias pro le suggestiones del motor de recerca
 
 ## Privacy Section - Content Blocking
@@ -975,7 +982,6 @@ content-blocking-fingerprinters = Dactylogrammatores
 content-blocking-warning-title = Attention!
 content-blocking-warning-description = Alcun sitos web pote non functionar correctemente con le blocage de contento. Es facile disactivar le blocage pro le sitos in que tu ha confidentia.
 content-blocking-learn-how = Apprender como
-content-blocking-etp-warning-description = Blocar traciatores pote impedir le functionamento de certe sitos. Recarga un pagina con su traciatores pro cargar tote le contento.
 content-blocking-and-isolating-etp-warning-description = Blocar traciatores e isolar cookies poterea impedir le functionamento de alcun sitos. Recarga un pagina con traciatores pro cargar tote le contento.
 content-blocking-warning-learn-how = Apprende como
 content-blocking-reload-description = Tu debera recargar tu schedas pro applicar iste cambios.

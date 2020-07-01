@@ -56,6 +56,16 @@ move-to-new-window =
 undo-close-tab =
     .label = Annuler la fermeture de l’onglet
     .accesskey = e
+tab-context-close-multiple-tabs =
+    .label = Fermer plusieurs onglets
+    .accesskey = l
+tab-context-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [one] Annuler la fermeture de l’onglet
+           *[other] Annuler la fermeture des onglets
+        }
+    .accesskey = n
 close-tab =
     .label = Fermer l’onglet
     .accesskey = F

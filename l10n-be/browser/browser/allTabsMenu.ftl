@@ -4,6 +4,14 @@
 
 all-tabs-menu-undo-close-tab =
     .label = Адмяніць закрыццё карткі
+all-tabs-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Адмяніць закрыццё карткі
+            [one] Адмяніць закрыццё карткі
+            [few] Адмяніць закрыццё картак
+           *[many] Адмяніць закрыццё картак
+        }
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = Шукаць карткі

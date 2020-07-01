@@ -4,6 +4,13 @@
 
 all-tabs-menu-undo-close-tab =
     .label = Հետարկել փակված ներդիրը
+all-tabs-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Հետարկել փակված ներդիրը
+            [one] Հետարկել փակված ներդիրները
+           *[other] Հետարկել փակված ներդիրները
+        }
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = Որոնել ներդիրները

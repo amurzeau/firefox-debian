@@ -54,6 +54,7 @@
 <!ENTITY editLinkCmd.accesskey "i">
 
 <!-- Font Face SubMenu -->
+<!ENTITY FontFaceSelect.title "Skrifttype">
 <!ENTITY FontFaceSelect.tooltip "Vælg en skrifttype">
 <!ENTITY fontfaceMenu.label "Skrifttype">
 <!ENTITY fontfaceMenu.accesskey "S">
@@ -70,6 +71,7 @@
 <!ENTITY fontCourier.accesskey "C">
 
 <!-- Font Size SubMenu -->
+<!ENTITY FontSizeSelect.title "Skriftstørrelse">
 <!ENTITY FontSizeSelect.tooltip "Vælg skriftstørrelse">
 <!ENTITY decreaseFontSize.label "Mindre">
 <!ENTITY decreaseFontSize.accesskey "M">
@@ -180,6 +182,7 @@
 <!ENTITY listPropsCmd.label "Egenskaber for liste…">
 <!ENTITY listPropsCmd.accesskey "l">
 
+<!ENTITY ParagraphSelect.title "Afsnit">
 <!ENTITY ParagraphSelect.tooltip "Vælg et afsnitsformat">
 <!-- Shared in Paragraph, and Toolbar menulist -->
 <!ENTITY bodyTextCmd.label "Alm. tekst">
@@ -205,9 +208,12 @@
 <!ENTITY alignJustify.tooltip "Lige marginer">
 
 <!-- Layer toolbar items -->
+<!ENTITY absolutePosition.label "Placering">
 <!ENTITY layer.tooltip "Lag">
-<!ENTITY layerSendToBack.tooltip "Flyt bagud">
-<!ENTITY layerBringToFront.tooltip "Flyt frem">
+<!ENTITY decreaseZIndex.label "Placer bagerst">
+<!ENTITY layerSendToBack.tooltip "Placer bagerst">
+<!ENTITY increaseZIndex.label "Placer forrest">
+<!ENTITY layerBringToFront.tooltip "Placer forrest">
 
 <!ENTITY increaseIndent.label "Forøg indrykning">
 <!ENTITY increaseIndent.accesskey "i">
@@ -304,28 +310,46 @@
 <!ENTITY linkToolbarCmd.tooltip "Indsæt nyt link eller rediger egenskaberne for det markerede link">
 <!ENTITY anchorToolbarCmd.label "Linkmål">
 <!ENTITY anchorToolbarCmd.tooltip "Indsæt nyt linkmål eller rediger det markerede linkmåls egenskaber">
+<!ENTITY colorButtons.title "Farver">
 <!ENTITY TextColorButton.tooltip "Vælg tekstfarve">
 <!ENTITY BackgroundColorButton.tooltip "Vælg baggrundsfarve">
 <!ENTITY throbber.tooltip "Gå til &vendorShortName;s webside">
 <!ENTITY throbber.tooltip2 "Gå til &brandShortName;s webside">
+<!ENTITY HighlightColorButton.label "Overstregningspen">
 <!ENTITY HighlightColorButton.tooltip "Vælg farve for fremhævet tekst">
 
 <!-- Editor toolbar -->
+<!ENTITY absoluteFontSize.label "Skriftstørrelse">
 <!ENTITY absoluteFontSizeToolbarCmd.tooltip "Angiv skriftstørrelse">
+<!ENTITY smaller.label "Mindre">
 <!ENTITY decreaseFontSizeToolbarCmd.tooltip "Mindre skriftstørrelse">
+<!ENTITY larger.label "Større">
 <!ENTITY increaseFontSizeToolbarCmd.tooltip "Større skriftstørrelse">
+<!ENTITY bold.label "Fed">
 <!ENTITY boldToolbarCmd.tooltip "Fed">
+<!ENTITY italic.label "Kursiv">
 <!ENTITY italicToolbarCmd.tooltip "Kursiv">
+<!ENTITY underline.label "Understreg">
 <!ENTITY underlineToolbarCmd.tooltip "Understreg">
+<!ENTITY bullets.label "Punkttegn">
 <!ENTITY bulletListToolbarCmd.tooltip "Opret eller fjern uordnet liste">
+<!ENTITY numbers.label "Nummerering">
 <!ENTITY numberListToolbarCmd.tooltip "Opret eller fjern ordnet liste">
+<!ENTITY outdent.label "Ryk ud">
 <!ENTITY outdentToolbarCmd.tooltip "Afindryk tekst (ryk til venstre)">
+<!ENTITY indent.label "Ryk ind">
 <!ENTITY indentToolbarCmd.tooltip "Indryk tekst (ryk til højre)">
+<!ENTITY AlignPopupButton.label "Justering">
 <!ENTITY AlignPopupButton.tooltip "Vælg tekstjustering">
+<!ENTITY InsertPopupButton.label "Indsæt">
 <!ENTITY InsertPopupButton.tooltip "Indsæt et link, linkmål, billede, en vandret linje, eller en tabel">
+<!ENTITY alignLeftButton.label "Venstrejuster">
 <!ENTITY alignLeftButton.tooltip "Juster tekst langs venstre margin">
+<!ENTITY alignCenterButton.label "Centrer">
 <!ENTITY alignCenterButton.tooltip "Centrer tekst">
+<!ENTITY alignRightButton.label "Højrejuster">
 <!ENTITY alignRightButton.tooltip "Juster tekst langs højre margin">
+<!ENTITY alignJustifyButton.label "Lige marginer">
 <!ENTITY alignJustifyButton.tooltip "Juster teksten langs højre og venstre margin">
 
 <!-- Structure Toolbar Context Menu items -->

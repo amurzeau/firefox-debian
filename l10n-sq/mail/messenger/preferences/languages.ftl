@@ -3,11 +3,11 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 languages-customize-moveup =
-    .label = Shpjere Sipër
-    .accesskey = S
+    .label = Ngrije
+    .accesskey = N
 languages-customize-movedown =
-    .label = Zbrite Poshtë
-    .accesskey = P
+    .label = Ule
+    .accesskey = U
 languages-customize-remove =
     .label = Hiqe
     .accesskey = H

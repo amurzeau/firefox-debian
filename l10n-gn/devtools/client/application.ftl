@@ -13,17 +13,17 @@
 ### best documentation on web development on the web.
 
 # Header for the list of Service Workers displayed in the application panel for the current page.
-serviceworker-list-header = Mba'apohára oporopytyvõva
+serviceworker-list-header = Mba’apohára oporopytyvõva
 # Text displayed next to the list of Service Workers to encourage users to check out
 # about:debugging to see all registered Service Workers.
-serviceworker-list-aboutdebugging = Embojuruja <a>about:debugging</a> Service Workers peg̃uarã ha ambue mba'etépe avei
+serviceworker-list-aboutdebugging = Embojuruja <a>about:debugging</a> Service Workers peg̃uarã ha ambue mba’etépe avei
 # Text for the button to unregister a Service Worker. Displayed for active Service Workers.
-serviceworker-worker-unregister = Eipe'a mboheraguapy
+serviceworker-worker-unregister = Eipe’a mboheraguapy
 # Text for the debug link displayed for an already started Service Worker. Clicking on the
 # link opens a new devtools toolbox for this service worker. The title attribute is only
 # displayed when the link is disabled.
 serviceworker-worker-debug = Mopotĩ
-    .title = Mba'apohára oporopytyvõva añoite ikatu oñemopotĩ
+    .title = Mba’apohára oporopytyvõva añoite ikatu oñemopotĩ
 # Text for the start link displayed for a registered but not running Service Worker.
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start = Moñepyrũ
@@ -116,9 +116,9 @@ sidebar-item-manifest = Je'epyre
     .alt = Je'epyre ra'ãnga
     .title = Je'epyre
 # Sidebar navigation item for Service Workers sidebar item section
-sidebar-item-service-workers = Mba'apohára mba'epytyvõrãguáva
-    .alt = Mba'apohára mba'epytyvõrãguáva ra'ãnga
-    .title = Mba'apohára mba'epytyvõrãguáva
+sidebar-item-service-workers = Mba’apohára mba’epytyvõrãguáva
+    .alt = Mba’apohára mba’epytyvõrãguáva ra’ãnga
+    .title = Mba’apohára mba’epytyvõrãguáva
 # Text for the ALT and TITLE attributes of the warning icon
 icon-warning =
     .alt = Ta'ãngachu'i kyhyjerã

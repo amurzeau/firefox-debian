@@ -58,6 +58,8 @@ protections-panel-not-found-label = ਕੋਈ ਨਹੀਂ ਖੋਜੇ
 
 protections-panel-settings-label = ਸੁਰੱਖਿਆ ਸੈਟਿੰਗਾਂ
 protections-panel-showreport-label = ਰਿਪੋਰਟ ਵੇਖਾਓ
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = ਸੁਰੱਖਿਆ ਡੈਸ਼ਬੋਰਡ
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

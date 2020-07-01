@@ -20,3 +20,33 @@ toolbar-context-menu-select-all-tabs =
 toolbar-context-menu-undo-close-tab =
     .label = বন্ধ করা ট্যাব পুনরায় খুলুন U
     .accesskey = U
+
+toolbar-context-menu-manage-extension =
+    .label = এক্সটেনশন ব্যবস্থাপনা
+    .accesskey = E
+toolbar-context-menu-remove-extension =
+    .label = এক্সটেনশন অপসারণ করুন
+    .accesskey = v
+
+# This label is used in the extensions toolbar buttons context menus,
+# a user can use this command to submit to Mozilla an abuse report
+# related to that extension. "Report" is a verb.
+toolbar-context-menu-report-extension =
+    .label = রিপোর্ট এক্সটেনশন
+    .accesskey = o
+
+# Can appear on the same context menu as menubarCmd ("Menu Bar") and
+# personalbarCmd ("Bookmarks Toolbar"), so they should have different
+# access keys.
+toolbar-context-menu-pin-to-overflow-menu =
+    .label = ওভারফ্লো মেনুতে পিন করুন
+    .accesskey = P
+toolbar-context-menu-auto-hide-downloads-button =
+    .label = টুলবারে অটো-হাইড করুন
+    .accesskey = A
+toolbar-context-menu-remove-from-toolbar =
+    .label = টুলবার থেকে সরিয়ে ফেলুন R
+    .accesskey = R
+toolbar-context-menu-view-customize-toolbar =
+    .label = নিজের পছন্দানুযায়ী নির্বাচন…
+    .accesskey = C

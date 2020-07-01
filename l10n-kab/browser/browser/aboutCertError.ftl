@@ -55,6 +55,10 @@ cert-error-details-hsts-label = Taɣellist n umesni ufrin HTTP: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = Public Key Pinning HTTP:{ $hasHPKP }
 cert-error-details-cert-chain-label = Azrar n uselkin:
+open-in-new-window-for-csp-or-xfo-error = Ldi asmel deg usfaylu amaynut
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = Akken ad tḥarzeḍ taɣellist-inek, { $hostname } ur isirig ara i { -brand-short-name } ad d-yesken asebter ma yella i isuleɣ-it usmel-nniḍen. Akken ad twaliḍ asebter-a, ilaq-ak ad t-teldiḍ deg usfaylu-nniḍen.
 
 ## Messages used for certificate error titles
 
@@ -85,6 +89,7 @@ unknownSocketType-title = Aqeddac yerra-d yir tiririt ur nettwaṛǧi ara
 nssFailure2-title = Tuqqna taɣelsant ur teddi ara
 cspBlocked-title = Tessewḥel-it tsertit n tɣellist n ugbur
 xfoBlocked-title = Tessewḥel-it tsertit X-Frame-Options
+csp-xfo-error-title = { -brand-short-name } ur yezmir ara ad yeldi asebter-a
 corruptedContentError-title = Tuccḍa tekka-d seg ugbur ixesṛen
 remoteXUL-title = XUL anmeggag
 sslv3Used-title = Ur yezmir ara ad yeqqen s wudem aɣelsan

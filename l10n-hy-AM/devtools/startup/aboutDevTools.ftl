@@ -41,6 +41,7 @@ features-responsive-desc = Փորձարկեք կայքերը Ձեր զննարկ
 features-visual-editing-title = Տեսողական խմբագրում
 features-visual-editing-desc = Լավ֊համալրված շարժապատկերումներ, հավասարեցում և լիցք։ <a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-performance-title = Արդյունավետություն
+features-performance-desc = Ապակողպեք նեղ տեղերը, պարզեցրեք ընթացները, բարելավեք արտադրողականությունը:<a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-memory-title = Հիշողություն
 features-memory-desc = Գտնեք հիշողության բացվածքները և դարձրեք Ձեր ծրագիրը սեղմված։ <a data-l10n-name="learn-more">{ features-learn-more }</a>
 # Variables:

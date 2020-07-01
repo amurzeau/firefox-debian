@@ -157,7 +157,7 @@ about-debugging-runtime-tabs =
     .name = 分頁
 # Title of the service workers category.
 about-debugging-runtime-service-workers =
-    .name = Service Workers
+    .name = Service Worker
 # Title of the shared workers category.
 about-debugging-runtime-shared-workers =
     .name = 共享 Workers
@@ -302,6 +302,9 @@ about-debugging-worker-push-service =
 # Displayed as title of the inspect button when service worker debugging is disabled.
 about-debugging-worker-inspect-action-disabled =
     .title = 多程序的 { -brand-shorter-name } 目前暫時無法使用 Service Worker 檢測
+# Displayed as title of the inspect button for zombie tabs (e.g. tabs loaded via a session restore).
+about-debugging-zombie-tab-inspect-action-disabled =
+    .title = 還沒有完全載入分頁內容，無法檢測
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-main-process-name = 主要 Process

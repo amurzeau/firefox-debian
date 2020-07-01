@@ -294,6 +294,7 @@
 <!ENTITY findToolbarCmd.tooltip "Szöveg keresése az oldalon">
 <!ENTITY spellToolbarCmd.label "Helyesírás">
 <!ENTITY spellToolbarCmd.tooltip "A kijelölt rész vagy az egész oldal helyesírásának ellenőrzése">
+
 <!ENTITY imageToolbarCmd.label "Kép">
 <!ENTITY imageToolbarCmd.tooltip "Új kép beszúrása vagy a kijelölt tulajdonságainak módosítása">
 <!ENTITY hruleToolbarCmd.label "Vízszintes vonal">
@@ -306,7 +307,6 @@
 <!ENTITY anchorToolbarCmd.tooltip "Új horgony beszúrása vagy a kijelölt tulajdonságainak módosítása">
 <!ENTITY TextColorButton.tooltip "A szöveg színének beállítása">
 <!ENTITY BackgroundColorButton.tooltip "A háttér színének beállítása">
-<!ENTITY throbber.tooltip "Ugrás a &vendorShortName; honlapjára">
 <!ENTITY throbber.tooltip2 "Ugrás a &brandShortName; honlapjára">
 <!ENTITY HighlightColorButton.tooltip "Szövegkiemelésre használt szín kiválasztása">
 

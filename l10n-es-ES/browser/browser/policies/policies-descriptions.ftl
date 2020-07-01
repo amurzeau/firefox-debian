@@ -63,6 +63,7 @@ policy-ExtensionSettings = Administrar todos los aspectos de la instalación de 
 policy-ExtensionUpdate = Habilitar o deshabilitar actualizaciones automáticas de extensiones.
 policy-FirefoxHome = Configurar la página de inicio de Firefox.
 policy-FlashPlugin = Permitir o denegar el uso del plugin Flash.
+policy-Handlers = Configurar gestores de aplicación predeterminados.
 policy-HardwareAcceleration = Si es falso, desactiva la aceleración por hardware.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Establecer y opcionalmente bloquear la página de inicio.
@@ -77,6 +78,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Volver al comportamien
 ##
 
 policy-LocalFileLinks = Permitir a sitios web concretos enlazar a archivos locales.
+policy-MasterPassword = Requerir o evitar el uso de una contraseña maestra.
 policy-NetworkPrediction = Habilitar o deshabilitar la predicción de red (búsqueda previa de DNS).
 policy-NewTabPage = Habilitar o deshabilitar la página Nueva pestaña.
 policy-NoDefaultBookmarks = Desactivar la creación de los marcadores predeterminados incluidos con { -brand-short-name } y los marcadores inteligentes (Más visitados, Etiquetas recientes). Nota: esta política solo es válida si se utiliza antes de la primera ejecución del perfil.
@@ -88,6 +90,7 @@ policy-PasswordManagerEnabled = Activar el guardado de contraseñas en el admini
 # PDF.js and PDF should not be translated
 policy-PDFjs = Desactivar o configurar PDF.js, el visor de PDF integrado en { -brand-short-name }.
 policy-Permissions2 = Configurar permisos para cámara, micrófono, ubicación, notificaciones y reproducción automática.
+policy-PictureInPicture = Activar o desactivar Picture-in-Picture.
 policy-PopupBlocking = Permitir que ciertos sitios web muestren ventanas emergentes de forma predeterminada.
 policy-Preferences = Establezca y bloquee el valor para un subconjunto de preferencias.
 policy-PromptForDownloadLocation = Preguntar dónde guardar los archivos que se descargan.

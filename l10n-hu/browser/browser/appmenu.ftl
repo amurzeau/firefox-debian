@@ -5,11 +5,12 @@
 
 ## App Menu
 
-appmenuitem-import-from-another-browser =
-    .label = Importálás egy másik böngészőből…
 appmenuitem-protection-report-title = Adatvédelem
 appmenuitem-protection-report-tooltip =
     .tooltiptext = Ugrás az adatvédelmi jelentéséhez
+appmenuitem-protection-dashboard-title = Védelmi vezérlőpult
+appmenuitem-customize-mode =
+    .label = Testreszabás…
 
 ## Zoom Controls
 
@@ -22,3 +23,12 @@ appmenuitem-zoom-reduce =
 
 fxa-toolbar-sync-now =
     .label = Szinkronizálás
+
+## What's New panel in App menu.
+
+whatsnew-panel-header = Újdonságok
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = Értesítés az új funkciókról
+    .accesskey = f

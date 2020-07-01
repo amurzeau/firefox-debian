@@ -283,6 +283,7 @@
 <!ENTITY findToolbarCmd.tooltip "Cari teks di laman">
 <!ENTITY spellToolbarCmd.label "Periksa Ejaan">
 <!ENTITY spellToolbarCmd.tooltip "Periksa Ejaan saat mengetik atau seluruh laman">
+
 <!ENTITY imageToolbarCmd.label "Gambar">
 <!ENTITY imageToolbarCmd.tooltip "Sisipkan gambar baru atau sunting properti gambar yang dipilih">
 <!ENTITY hruleToolbarCmd.label "G.Mendatar">
@@ -295,7 +296,6 @@
 <!ENTITY anchorToolbarCmd.tooltip "Sisipkan penanda bernama baru atau sunting properti penanda bernama terpilih">
 <!ENTITY TextColorButton.tooltip "Pilih warna untuk teks">
 <!ENTITY BackgroundColorButton.tooltip "Pilih warna untuk latar belakang">
-<!ENTITY throbber.tooltip "Buka laman untuk &vendorShortName;">
 <!ENTITY HighlightColorButton.tooltip "Pilih warna penyorot teks">
 
 <!-- Editor toolbar -->

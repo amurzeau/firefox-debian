@@ -4,6 +4,14 @@
 
 all-tabs-menu-undo-close-tab =
     .label = Przywróć zamkniętą kartę
+all-tabs-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Przywróć zamkniętą kartę
+            [one] Przywróć zamkniętą kartę
+            [few] Przywróć zamknięte karty
+           *[many] Przywróć zamknięte karty
+        }
 # "Search" is a verb, as in "Search through tabs".
 all-tabs-menu-search-tabs =
     .label = Przeszukaj karty

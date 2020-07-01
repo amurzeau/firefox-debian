@@ -4,6 +4,8 @@
 
 <!-- extracted from am-addressing.xul -->
 
+<!-- extracted from am-addressing.xhtml -->
+
 <!ENTITY addressing.label          "Նոր նամակ &amp; Հասցեավորում">
 <!ENTITY addressingGroupTitle.label "Հասցեագրում">
 <!ENTITY addressingText.label      "Հասցեները նայելիս.">
@@ -18,6 +20,8 @@
 <!ENTITY directoriesNone.label     "Չկա">
 
 <!-- am-addressing.xul -->
+
+<!-- am-addressing.xhtml -->
 
 <!ENTITY compositionGroupTitle.label          "Նամակ գրել">
 <!-- LOCALIZATION NOTE (useHtml.label) : do not translate "html" in below line -->
@@ -40,8 +44,8 @@
 <!ENTITY includeSigOnForward.label            "Փոխանցելիս ներառել ստորագրությունը">
 <!ENTITY includeSigOnForward.accesskey        "Փ">
 
-<!ENTITY globalComposingPrefs.label           "Նոր նամակ գրելու հիմնական կարգավորումներ...">
+<!ENTITY globalComposingPrefs.label           "Նոր նամակ գրելու հիմնական նախապատվություններ...">
 <!ENTITY globalComposingPrefs.accesskey       "G">
 
-<!ENTITY globalAddressingPrefs.label          "Ընդհանրական հասցեագրման կարգավորումներ…">
+<!ENTITY globalAddressingPrefs.label          "Ընդհանրական հասցեագրման նախապատվություններ…">
 <!ENTITY globalAddressingPrefs.accesskey      "կ">

@@ -33,8 +33,8 @@ about-private-browsing-info-description = { -brand-short-name } forviŝos vian s
 about-private-browsing-search-banner-title = { $engineName } estas via norma serĉilo en privataj fenestroj
 about-private-browsing-search-banner-description =
     { PLATFORM() ->
-        [windows] Por elekti malsaman serĉilon, iru al <a data-l10n-name="link-options">Elektebloj</a>
-       *[other] Por elekti malsaman serĉilon, iru al <a data-l10n-name="link-options">Elektebloj</a>
+        [windows] Por elekti malsaman serĉilon, iru al <a data-l10n-name="link-options">Preferoj</a>
+       *[other] Por elekti malsaman serĉilon, iru al <a data-l10n-name="link-options">Preferoj</a>
     }
 about-private-browsing-search-banner-close-button =
     .aria-label = Fermi

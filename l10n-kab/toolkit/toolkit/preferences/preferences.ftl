@@ -22,6 +22,7 @@ set-password-new-password = Sekcem awal uffir amaynut:
 set-password-reenter-password = Sekcem tikelt-nniḍen awal uffir:
 set-password-meter = Asɣel n tɣaṛa n wawal uffir
 set-password-meter-loading = Asali
+master-password-admin = Anedbal-inek/inem yesra ad tesεuḍ awal uffir agejdan i uḥraz n wawalen uffiren.
 master-password-description = Awal uffir agejdan ittuseqdac akken ad immesten talɣut tamḥulfut am awalen uffiren n usmel. Ma terniḍ Awal-a uffir agejdan, ad k-yettusuter yal tikelt deg tesnekreḍ tiɣimit ticki { -brand-short-name } yettnadi talɣut ittummestnen s wawal-agi uffir.
 master-password-warning = Ma ulac aɣilif, ur teţu ara awal uffir agejdan. Ma teţuḍ-t, ur teţizmireḍ ara ad tkecmeḍ ɣer telɣut i yemmestan.
 remove-password =

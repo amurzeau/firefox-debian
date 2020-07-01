@@ -20,9 +20,9 @@ protections-popup-footer-protection-label-standard = Szokásos
 
 # The text a screen reader speaks when focused on the info button.
 protections-panel-etp-more-info =
-    .aria-label = További információk a továbbfejlesztett követés elleni védelemről
-protections-panel-etp-on-header = A továbbfejlesztett követés elleni védelem BE van kapcsolva ezen a webhelyen
-protections-panel-etp-off-header = A továbbfejlesztett követés elleni védelem KI van kapcsolva ezen a webhelyen
+    .aria-label = További információk a fokozott követés elleni védelemről
+protections-panel-etp-on-header = A fokozott követés elleni védelem BE van kapcsolva ezen a webhelyen
+protections-panel-etp-off-header = A fokozott követés elleni védelem KI van kapcsolva ezen a webhelyen
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = Nem működik az oldal?
 # The heading/title of the sub-panel view
@@ -58,6 +58,8 @@ protections-panel-not-found-label = Nincs észlelve
 
 protections-panel-settings-label = Védelmi beállítások
 protections-panel-showreport-label = Jelentés megjelenítése
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Védelmi vezérlőpult
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

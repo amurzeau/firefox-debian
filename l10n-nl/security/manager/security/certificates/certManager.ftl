@@ -8,6 +8,9 @@ certmgr-title =
 certmgr-tab-mine =
     .label = Uw certificaten
 
+certmgr-tab-remembered =
+    .label = Authenticatiebeslissingen
+
 certmgr-tab-people =
     .label = Personen
 
@@ -18,6 +21,7 @@ certmgr-tab-ca =
     .label = Organisaties
 
 certmgr-mine = U hebt certificaten van deze organisaties, die u identificeren
+certmgr-remembered = Deze certificaten worden gebruikt om u bij websites te identificeren
 certmgr-people = U hebt certificaten gearchiveerd die deze personen identificeren
 certmgr-servers = U hebt certificaten gearchiveerd die deze servers identificeren
 certmgr-ca = U hebt certificaten gearchiveerd die deze certificaatautoriteiten identificeren
@@ -33,18 +37,6 @@ certmgr-detail-pretty-print-tab-title =
 certmgr-pending-label =
     .value = Certificaat wordt geverifieerd…
 
-certmgr-subject-info-label =
-    .value = Uitgegeven aan
-
-certmgr-issuer-info-label =
-    .value = Uitgegeven door
-
-certmgr-period-of-validity-label =
-    .value = Geldigheidsduur
-
-certmgr-fingerprints-label =
-    .value = Vingerafdrukken
-
 certmgr-subject-label = Uitgegeven aan
 
 certmgr-issuer-label = Uitgegeven door
@@ -57,24 +49,6 @@ certmgr-cert-detail =
     .title = Detail van certificaat
     .buttonlabelaccept = Sluiten
     .buttonaccesskeyaccept = S
-
-certmgr-cert-detail-cn =
-    .value = Algemene naam (CN)
-
-certmgr-cert-detail-o =
-    .value = Organisatie (O)
-
-certmgr-cert-detail-ou =
-    .value = Organisatorische eenheid (OU)
-
-certmgr-cert-detail-serialnumber =
-    .value = Serienummer
-
-certmgr-cert-detail-sha256-fingerprint =
-    .value = SHA-256-vingerafdruk
-
-certmgr-cert-detail-sha1-fingerprint =
-    .value = SHA1-vingerafdruk
 
 certmgr-cert-detail-commonname = Algemene naam (CN)
 
@@ -104,6 +78,9 @@ certmgr-delete-cert =
     .title = Certificaat verwijderen
     .style = width: 48em; height: 24em;
 
+certmgr-cert-host =
+    .label = Host
+
 certmgr-cert-name =
     .label = Certificaatnaam
 
@@ -121,16 +98,10 @@ certmgr-begins-on = Begint op
 certmgr-begins-label =
     .label = Begint op
 
-certmgr-begins-value =
-    .value = { certmgr-begins-label.label }
-
 certmgr-expires-on = Verloopt op
 
 certmgr-expires-label =
     .label = Verloopt op
-
-certmgr-expires-value =
-    .value = { certmgr-expires-label.label }
 
 certmgr-email =
     .label = E-mailadres
@@ -219,11 +190,13 @@ pkcs12-info-no-smartcard-backup = Het is niet mogelijk om een reservekopie te ma
 pkcs12-dup-data = Het certificaat en de privésleutel bestaan al op het beveiligingsapparaat.
 
 ## PKCS#12 file dialogs
+
 choose-p12-backup-file-dialog = Bestandsnaam voor reservekopie
 file-browse-pkcs12-spec = PKCS12-bestanden
 choose-p12-restore-file-dialog = Certificaatbestand voor importeren
 
 ## Import certificate(s) file dialog
+
 file-browse-certificate-spec = Certificaatbestanden
 import-ca-certs-prompt = Bestand met te importeren CA-certificaten selecteren
 import-email-cert-prompt = Bestand met te importeren e-mailcertificaat van iemand anders selecteren
@@ -307,6 +280,7 @@ cert-not-verified_algorithm-disabled = Dit certificaat kon niet worden geverifie
 cert-not-verified-unknown = Dit certificaat kon om onbekende redenen niet worden geverifieerd.
 
 ## Add Security Exception dialog
+
 add-exception-branded-warning = U staat op het punt te overschrijven hoe { -brand-short-name } deze website identificeert.
 add-exception-invalid-header = Deze website probeert zich te identificeren met ongeldige informatie.
 add-exception-domain-mismatch-short = Verkeerde website
@@ -323,6 +297,7 @@ add-exception-no-cert-short = Geen informatie beschikbaar
 add-exception-no-cert-long = Kan geen identificatiestatus van deze website verkrijgen.
 
 ## Certificate export "Save as" and error dialogs
+
 save-cert-as = Certificaat opslaan als bestand
 cert-format-base64 = X.509-certificaat (PEM)
 cert-format-base64-chain = X.509-certificaat met keten (PEM)

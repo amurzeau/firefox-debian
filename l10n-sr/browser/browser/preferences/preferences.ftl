@@ -206,6 +206,15 @@ advanced-fonts =
 colors-settings =
     .label = Боје…
     .accesskey = Б
+# Zoom is a noun, and the message is used as header for a group of options
+preferences-zoom-header = Увећање
+preferences-default-zoom = Подразумевано увећање
+    .accesskey = z
+preferences-default-zoom-value =
+    .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = Увећај само текст
+    .accesskey = t
 language-header = Језик
 choose-language-description = Изаберите омиљени језик за приказ страница
 choose-button =
@@ -226,6 +235,10 @@ translate-attribution = Превео је <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Изузеци…
     .accesskey = ц
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Користите подешавања вашег оперативног система за “{ $localeName }” за формат датума, времена, бројева и мера.
 check-user-spelling =
     .label = Проверавај правопис док куцам
     .accesskey = р
@@ -274,6 +287,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Користи { $app-name } (подразумевано)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Користите macOS подразумевану апликацију
+            [windows] Користите Windows подразумевану апликацију
+           *[other] Користите системску подразумевану апликацију
+        }
 applications-use-other =
     .label = Користи друго…
 applications-select-helper = Избор помоћног програма
@@ -297,8 +317,8 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Користи { $plugin-name } (за { -brand-short-name })
-applications-preview-inapp =
-    .label = За преглед: { -brand-short-name }
+applications-open-inapp =
+    .label = Отвори у { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -310,14 +330,16 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
-applications-preview-inapp-label =
-    .value = { applications-preview-inapp.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -474,11 +496,17 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Омиљени сајтови
 home-prefs-topsites-description = Сајтови које највише посећујете
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Предложио { $provider }
 home-prefs-recommended-by-description = Одличан садржај из целог света, персонализован за вас
+home-prefs-recommended-by-description-update = Истакнути садржај са интернета, који обезбеђује { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Како ово ради
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Спонзорисане приче
@@ -540,6 +568,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Прикажи предлоге за претрагу у приватном прегледању
 suggestions-addressbar-settings = Промените подешавања за историју прегледавања, обележиваче и предлоге језичака
+suggestions-addressbar-settings-generic = Измените посдешавања предлога претраживања
 search-suggestions-cant-show = Предлози претраге неће бити приказани у траци за локацију зато што сте подесили да { -brand-short-name } никада не памти историју.
 search-one-click-header = One-click претраживачи
 search-one-click-desc = Изаберите алтернативне претраживаче који ће се појављивати испод адресне траке и траке за претрагу приликом уноса кључне речи.
@@ -565,6 +594,12 @@ search-keyword-warning-bookmark = Изабрали сте кључну реч к
 ## Containers Section
 
 containers-back-link = « Иди назад
+containers-back-button =
+    .aria-label =
+        { PLATFORM() ->
+            [windows] Назаад на Опције
+           *[other] Назад на Подешавања
+        }
 containers-header = Контејнер језичци
 containers-add-button =
     .label = Додај нови контејнер
@@ -731,10 +766,10 @@ privacy-header = Приватност прегледача
 
 ## Privacy Section - Forms
 
+logins-header = Пријаве и лозинке
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Пријаве и лозинке
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Пријаве и лозинке
     .searchkeywords = { -lockwise-brand-short-name }
@@ -929,7 +964,6 @@ content-blocking-fingerprinters = Хватаче отиска
 content-blocking-warning-title = Напомена!
 content-blocking-warning-description = Блокирање садржаја може узроковати сломљене сајтове у неким случајевима. Лако је онемогућити блокирање за сајтове којима верујете.
 content-blocking-learn-how = Сазнајте више
-content-blocking-etp-warning-description = Блокирање пратилаца може узроковати неисправности на неким веб страницама. Поново учитајте страницу са омогућеним пратиоцима да бисте учитали сав садржај.
 content-blocking-warning-learn-how = Научите како
 content-blocking-reload-description = Да бисте применили ове измене, морате поново учитати своје језичке.
 content-blocking-reload-tabs-button =
@@ -976,6 +1010,7 @@ permissions-location = Локација
 permissions-location-settings =
     .label = Поставке…
     .accesskey = е
+permissions-xr = Виртуелна реалност
 permissions-camera = Камера
 permissions-camera-settings =
     .label = Поставке…

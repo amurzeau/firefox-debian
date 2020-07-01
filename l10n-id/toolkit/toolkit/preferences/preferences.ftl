@@ -22,6 +22,7 @@ set-password-new-password = Sandi baru:
 set-password-reenter-password = Konfirmasi sandi baru:
 set-password-meter = Ukuran kualitas sandi
 set-password-meter-loading = Memuat
+master-password-admin = Administrator Anda mengharuskan Anda memiliki Kata Sandi Utama untuk menyimpan kata sandi.
 master-password-description = Sandi Utama digunakan untuk melindungi informasi sensitif seperti sandi untuk log-masuk situs. Apabila Anda membuat Sandi Utama, Anda akan diminta untuk memasukkannya satu kali per sesi ketika { -brand-short-name } mengambil informasi tersimpan yang dilindungi oleh password tersebut.
 master-password-warning = Pastikan Anda mengingat Sandi Utama yang telah ditentukan. Apabila Anda lupa Sandi Utama Anda, Anda tidak akan bisa mengakses semua informasi yang dilindungi dengannya.
 remove-password =

@@ -37,10 +37,14 @@ etp-card-title = Gelişmiş İzlenme Koruması
 etp-card-content = Takipçiler, gezinti alışkanlıklarınız ve ilgi alanlarınız hakkında bilgi toplamak için internette sizi takip eder. { -brand-short-name } bu takipçilerin ve diğer kötü amaçlı betiklerin çoğunu engeller.
 protection-report-webpage-title = Korumalar Panosu
 protection-report-page-content-title = Korumalar Panosu
-protection-report-page-summary = Siz web’de gezinirken { -brand-short-name } arka planda gizliliğinizi korur. Aşağıda bu korumaların özetini ve çevrimiçi güvenliğinizi artırmanızı sağlayacak araçları görüyorsunuz.
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
+protection-report-page-summary = Siz web’de gezinirken { -brand-short-name } arka planda gizliliğinizi koruyabilir. Aşağıda bu korumaların özetini ve çevrimiçi güvenliğinizi artırmanızı sağlayacak araçları görüyorsunuz.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = Siz web’de gezinirken { -brand-short-name } arka planda gizliliğinizi korur. Aşağıda bu korumaların özetini ve çevrimiçi güvenliğinizi artırmanızı sağlayacak araçları görüyorsunuz.
+protection-report-settings-link = Gizlilik ve güvenlik ayarlarınızı yönetin
 etp-card-title-always = Gelişmiş izlenme koruması: Her zaman açık
 etp-card-title-custom-not-blocking = Gelişmiş izlenme koruması: KAPALI
-etp-card-content-summary = Adını bile duymadığınız şirketler sizi web’de gizlice takip etmeye çalışabilir. { -brand-short-name } onların çoğunu otomatik olarak durdurur.
+etp-card-content-description = { -brand-short-name }, şirketlerin sizi web’de gizlice takip etmesini otomatik olarak engeller.
 protection-report-etp-card-content-custom-not-blocking = Şu anda tüm korumalar kapalı. { -brand-short-name } koruma ayarlarınızı yöneterek hangi takipçilerin engelleneceğini seçebilirsiniz.
 protection-report-manage-protections = Ayarları yönet
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -58,8 +62,6 @@ fingerprinter-tab-title = Parmak izi toplayıcılar
 fingerprinter-tab-content = Parmak izi toplayıcılar profilinizi oluşturmak için tarayıcı ve bilgisayarınızdaki ayarları toplarlar. Bu dijital parmak izini kullanarak farklı web siteler arasında sizi takip edebilirler. <a data-l10n-name="learn-more-link">Daha fazla bilgi alın</a>
 cryptominer-tab-title = Kripto madencileri
 cryptominer-tab-content = Kripto madencileri sayısal para madenciliğinde bulunmak için sisteminizin hesaplama gücünü kullanır. Kripto madencilik komut dosyaları pilinizi tüketir, bilgisayarınızı yavaşlatır ve elektrik faturanızı kabartabilir. <a data-l10n-name="learn-more-link">Daha fazla bilgi alın</a>
-protections-close-button =
-    .aria-label = Kapat
 protections-close-button2 =
     .aria-label = Kapat
     .title = Kapat
@@ -70,7 +72,7 @@ lockwise-title = Bir daha hiçbir parolayı unutmayın
 lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-title-logged-in2 = Parola yönetimi
 lockwise-header-content = { -lockwise-brand-name } parolalarınızı tarayınızda güvenle saklar.
-lockwise-header-content-logged-in = Parolalarınızı güvenle saklayın ve tüm cihazlarınızla senkronize edin.
+lockwise-header-content-logged-in = Parolalarınızı güvenle saklayıp tüm cihazlarınızla senkronize edebilirsiniz.
 protection-report-view-logins-button = Hesapları göster
     .title = Kayıtlı hesaplara git
 protection-report-save-passwords-button = Parolaları kaydet
@@ -104,7 +106,7 @@ lockwise-scanned-text-no-breached-logins =
         [one] 1 parolanız güvenle saklanıyor.
        *[other] Parolalarınız güvenle saklanıyor.
     }
-lockwise-how-it-works-link = Nasıl çalışıyor?
+lockwise-how-it-works-link = Nasıl çalışır?
 turn-on-sync = { -sync-brand-short-name }’i etkinleştir…
     .title = Eşitleme tercihlerine git
 manage-connected-devices = Cihazları yönet…
@@ -120,6 +122,8 @@ monitor-link = Nasıl çalışır?
 monitor-header-content-no-account = Bilinen veri ihlallerinde bilgilerinizin çalınıp çalınmadığını öğrenmek ve yeni ihlallerden haberdar olmak için { -monitor-brand-name }’ü ziyaret edin.
 monitor-header-content-signed-in = Bilgileriniz bilinen bir veri ihlalinde yer alırsa { -monitor-brand-name } sizi uyarır.
 monitor-sign-up = İhlal uyarılarına kaydolun
+monitor-sign-up-link = İhlal uyarılarına kaydolun
+    .title = { -monitor-brand-name }'de ihlal uyarılarına kaydolun
 auto-scan = Bugün otomatik olarak tarandı
 monitor-emails-tooltip =
     .title = İzlenen e-posta adreslerini { -monitor-brand-short-name }’de görün
@@ -144,6 +148,14 @@ info-known-breaches-found =
        *[other] veri ihlalinde bilgileriniz ele geçirildi
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] veri ihlali çözüldü olarak işaretlendi
+       *[other] veri ihlali çözüldü olarak işaretlendi
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -160,6 +172,41 @@ password-warning =
         [one] Kayıtlı hesabınız bir veri ihlalinde ele geçirilmiş olabilir. Güvenliğinizi artırmak için bu parolayı değiştirin. <a data-l10n-name="lockwise-link">Kayıtlı hesapları göster</a>
        *[other] Kayıtlı hesaplarınız bir veri ihlalinde ele geçirilmiş olabilir. Güvenliğinizi artırmak için bu parolayı değiştirin. <a data-l10n-name="lockwise-link">Kayıtlı hesapları göster</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] parolanız çözülmemiş veri ihlallerinde ele geçirildi
+       *[other] parolanız çözülmemiş veri ihlallerinde ele geçirildi
+    }
+monitor-no-breaches-title = Her şey yolunda!
+monitor-no-breaches-description = Bilinen veri ihlallerinde yer almıyorsunuz. Bu durum değişirse size haber vereceğiz.
+monitor-view-report-link = Raporu görüntüle
+    .title = { -monitor-brand-short-name }'de ihlalleri çözün
+monitor-breaches-unresolved-title = İhlallerinizi çözün
+monitor-breaches-unresolved-description = İhlal ayrıntılarını inceleyip bilgilerinizi korumak için gereken adımları attıktan sonra ihlalleri "çözüldü" olarak işaretleyebilirsiniz.
+monitor-manage-breaches-link = İhlalleri yönet
+    .title = İhlalleri { -monitor-brand-short-name }’de yönetin
+monitor-breaches-resolved-title = Güzel! Bilinen tüm ihlalleri çözdünüz.
+monitor-breaches-resolved-description = E-postanız yeni bir ihlalde ortaya çıkarsa size haber vereceğiz.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+        [one] { $numBreaches } ihlalden { $numBreachesResolved } tanesi çözüldü olarak işaretlendi
+       *[other] { $numBreaches } ihlalden { $numBreachesResolved } tanesi çözüldü olarak işaretlendi
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = %{ $percentageResolved } tamamlandı
+monitor-partial-breaches-motivation-title-start = İyi başladınız!
+monitor-partial-breaches-motivation-title-middle = Aynen böyle devam!
+monitor-partial-breaches-motivation-title-end = Bitmek üzere! Aynen böyle devam.
+monitor-partial-breaches-motivation-description = Geri kalan ihallerinizi { -monitor-brand-short-name }’de çözün.
+monitor-resolve-breaches-link = İhlalleri çöz
+    .title = İhlalleri { -monitor-brand-short-name }’de çözün
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

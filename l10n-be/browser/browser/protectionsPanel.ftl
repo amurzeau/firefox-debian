@@ -58,6 +58,8 @@ protections-panel-not-found-label = Не выяўлены
 
 protections-panel-settings-label = Налады аховы
 protections-panel-showreport-label = Паказаць справаздачу
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Панэль аховы
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

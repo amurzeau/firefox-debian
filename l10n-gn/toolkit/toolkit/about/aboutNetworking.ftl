@@ -3,30 +3,18 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 title = Ñanduti raperã rehegua
-warning = Kóva ha'e oñeha'ãva gueteri. Ndojepuruva'erãi peteĩ kakuaapáva rehe'ỹ.
+warning = Kóva ha’e oñeha’ãva gueteri. Ndojepuruva’erãi peteĩ kakuaapáva rehe’ỹ.
 show-next-time-checkbox = Ehechauka ko kyhyjerã peteĩhápe
 ok = MONEĨ
 http = HTTP
 sockets = Moingeha
 dns = DNS
-dnssuffix = Ñe'ẽpehẽ upeigua DNS
 websockets = WebSockets
 refresh = Mbopiro'y
 auto-refresh = Embopiro'y ijehegui 3 aravo'ive og̃uahẽvo
 hostname = Mohendahavusu réra
 port = Mbojuajuhaite
 http2 = HTTP/2
-about-networking-title = Ñanduti raperã rehegua
-about-networking-http = HTTP
-about-networking-sockets = Moingeha
-about-networking-dns = DNS
-about-networking-dns-suffix = Ñe'ẽpehẽ upeigua DNS
-about-networking-websockets = WebSockets
-about-networking-refresh = Mbopiro'y
-about-networking-auto-refresh = Embopiro'y ijehegui 3 aravo'ive og̃uahẽvo
-about-networking-hostname = Mohendahavusu réra
-about-networking-port = Mbojuajuhaite
-about-networking-http-version = HTTP peteĩchagua
 ssl = SSL
 active = Myandypyre
 idle = okéva
@@ -69,8 +57,18 @@ rcwn-avg-long = Mombytegua ipukúva
 rcwn-std-dev-long = Ñemboyke ha'etéva ipukúva
 rcwn-cache-slow = Kache nemba'etéva imbeguéva
 rcwn-cache-not-slow = Kache nemba'etéva imbegue'ỹva
-networkid = Ñanduti ID
-networkid-id = Ñanduti ID
+about-networking-title = Ñanduti raperã rehegua
+about-networking-http = HTTP
+about-networking-sockets = Moingeha
+about-networking-dns = DNS
+about-networking-dns-clear-cache-button = Embogue DNS kache
+about-networking-dns-suffix = Ñe'ẽpehẽ upeigua DNS
+about-networking-websockets = WebSockets
+about-networking-refresh = Mbopiro'y
+about-networking-auto-refresh = Embopiro'y ijehegui 3 aravo'ive og̃uahẽvo
+about-networking-hostname = Mohendahavusu réra
+about-networking-port = Mbojuajuhaite
+about-networking-http-version = HTTP peteĩchagua
 about-networking-ssl = SSL
 about-networking-active = Myandypyre
 about-networking-idle = okéva
@@ -82,6 +80,7 @@ about-networking-family = Pehẽngue
 about-networking-trr = TRR
 about-networking-addresses = Kundaharape
 about-networking-expires = Paha (aravo'ive)
+about-networking-originAttributesSuffix = Mba’eñemi momombyryha
 about-networking-messages-sent = Marandu mondopyre
 about-networking-messages-received = Marandu japyhypyre
 about-networking-bytes-sent = Bytes mondopyre
@@ -118,8 +117,6 @@ about-networking-networkid-id = Ñanduti ID
 
 ## Link is intended as "network link"
 
-networkid-isUp = Juajuha oĩ yvate
-networkid-statusKnown = Pe juajuha reko ojekuaa
 about-networking-networkid-is-up = Juajuha oĩ yvate
 about-networking-networkid-status-known = Pe juajuha reko ojekuaa
 

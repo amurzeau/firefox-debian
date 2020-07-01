@@ -55,6 +55,10 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 # $hasHPKP (Boolean) - Indicates whether HPKP header is present.
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Ακολουθία πιστοποιητικού:
+open-in-new-window-for-csp-or-xfo-error = Άνοιγμα ιστοσελίδας σε νέο παράθυρο
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = Για τη δική σας ασφάλεια, το { $hostname } δεν θα επιτρέψει στο { -brand-short-name } την εμφάνιση της σελίδας αν κάποια άλλη ιστοσελίδα την έχει ενσωματώσει. Για να δείτε αυτή τη σελίδα, πρέπει να την ανοίξετε σε νέο παράθυρο.
 
 ## Messages used for certificate error titles
 
@@ -84,6 +88,8 @@ redirectLoop-title = Η σελίδα δεν ανακατευθύνει σωστ�
 unknownSocketType-title = Απρόσμενη απάντηση από τον εξυπηρετητή
 nssFailure2-title = Αποτυχία ασφαλούς σύνδεσης
 cspBlocked-title = Έχει φραγεί από την πολιτική προστασίας περιεχομένου
+xfoBlocked-title = Αποκλείστηκε από τις επιλογές πολιτικής X-Frame
+csp-xfo-error-title = Το { -brand-short-name } δεν μπορεί να ανοίξει τη σελίδα
 corruptedContentError-title = Σφάλμα κατεστραμμένου περιεχομένου
 remoteXUL-title = Απομακρυσμένο XUL
 sslv3Used-title = Αδύνατη η ασφαλής σύνδεση

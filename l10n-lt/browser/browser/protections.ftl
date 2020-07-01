@@ -39,10 +39,14 @@ etp-card-title = Išplėsta apsauga nuo stebėjimo
 etp-card-content = Stebėjimo elementai seka jus internete, siekdami surinkti informacijos apie jūsų naršymo įpročius ir pomėgius. „{ -brand-short-name }“ blokuoja daugelį šių elementų ir kitų kenksmingų scenarijų.
 protection-report-webpage-title = Apsaugos skydelis
 protection-report-page-content-title = Apsaugos skydelis
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = „{ -brand-short-name }“ gali saugoti jūsų privatumą jums naršant. Čia pateikiama asmeninė šios apsaugos santrauka, kartu su įrankiais, kurie leidžia tai valdyti.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = „{ -brand-short-name }“ saugo jūsų privatumą jums naršant. Čia pateikiama asmeninė šios apsaugos santrauka, kartu su įrankiais, kurie leidžia tai valdyti.
+protection-report-settings-link = Tvarkykite savo privatumo ir saugumo nuostatas
 etp-card-title-always = Išplėsta apsauga nuo stebėjimo: visada įjungta
 etp-card-title-custom-not-blocking = Išplėsta apsauga nuo stebėjimo: išjungta
-etp-card-content-summary = Kai nežinomos kompanijos slaptai bando sekti jus internete, „{ -brand-short-name }“ daugumą jų blokuoja automatiškai.
+etp-card-content-description = „{ -brand-short-name }“ automatiškai blokuoja kompanijų bandymus sekti jūsų veiklą internete.
 protection-report-etp-card-content-custom-not-blocking = Šiuo metu visos apsaugos yra išjungtos. Pasirinkite, ką norite blokuoti, per savo „{ -brand-short-name }“ apsaugų nuostatas.
 protection-report-manage-protections = Keisti nuostatas
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -60,8 +64,6 @@ fingerprinter-tab-title = Skaitmeninių atspaudų stebėjimas
 fingerprinter-tab-content = Skaitmeninių atspaudų stebėjimo metu surenkama informacija apie jūsų naršyklės ir kompiuterio parametrus, kad būtų sudarytas jūsų profilis. Jį turint, jus galima sekti tarp skirtingų svetainių. <a data-l10n-name="learn-more-link">Sužinoti daugiau</a>
 cryptominer-tab-title = Kriptovaliutų kasėjai
 cryptominer-tab-content = Kriptovaliutų kasėjai naudoja jūsų kompiuterio resursus, kad iškastų skaitmeninių pinigų. Šis procesas eikvoja jūsų bateriją, lėtina kompiuterio veikimą, ir gali padidinti sąskaitą už elektrą. <a data-l10n-name="learn-more-link">Sužinoti daugiau</a>
-protections-close-button =
-    .aria-label = Užverti
 protections-close-button2 =
     .aria-label = Užverti
     .title = Užverti
@@ -126,6 +128,8 @@ monitor-link = Kaip tai veikia
 monitor-header-content-no-account = „{ -monitor-brand-name }“ pateikia informaciją apie tai, ar jūsų duomenys yra patekę tarp nutekėjusių, ir gali pranešti apie naujus pažeidimus.
 monitor-header-content-signed-in = „{ -monitor-brand-name }“ perspėja, kai jūsų duomenys pasirodo žinomuose duomenų nutekėjimuose.
 monitor-sign-up = Gauti įspėjimus apie duomenų nutekėjimus
+monitor-sign-up-link = Gauti įspėjimus apie duomenų nutekėjimus
+    .title = Gauti įspėjimus apie duomenų nutekėjimus su „{ -monitor-brand-name }“
 auto-scan = Automatiškai skenuota šiandien
 monitor-emails-tooltip =
     .title = Peržiūrėti stebimus el. pašto adresus per „{ -monitor-brand-short-name }“
@@ -152,6 +156,15 @@ info-known-breaches-found =
        *[other] žinomų duomenų nutekėjimų atskleidė jūsų informaciją
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] patikrintas žinomas duomenų nutekėjimas
+        [few] patikrinti žinomi duomenų nutekėjimai
+       *[other] patikrintų žinomų duomenų nutekėjimų
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -170,6 +183,43 @@ password-warning =
         [few] įrašyti prisijungimai galėjo patekti tarp nutekėjusių duomenų. Pasikeiskite šiuos slaptažodžius dėl didesnio saugumo. <a data-l10n-name="lockwise-link">Peržiūrėti įrašytus prisijungimus</a>
        *[other] Įrašytų prisijungimų galėjo patekti tarp nutekėjusių duomenų. Pasikeiskite šiuos slaptažodžius dėl didesnio saugumo. <a data-l10n-name="lockwise-link">Peržiūrėti įrašytus prisijungimus</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] nepatikrintas nutekėjęs slaptažodis
+        [few] nepatikrinti nutekėję slaptažodžiai
+       *[other] nepatikrintų nutekėjusių slaptažodžių
+    }
+monitor-no-breaches-title = Geros žinios!
+monitor-no-breaches-description = Neturite jokių žinomų duomenų nutekėjimų. Jei tai pasikeis, jums pranešime.
+monitor-view-report-link = Peržiūrėti ataskaitą
+    .title = Patikrinti nutekėjimus su „{ -monitor-brand-short-name }“
+monitor-breaches-unresolved-title = Patikrinkite savo nutekėjimus
+monitor-breaches-unresolved-description = Peržiūrėję nutekėjimų informaciją ir apsaugoję savo duomenis, galite pažymėti nutekėjimus kaip patikrintus.
+monitor-manage-breaches-link = Tvarkyti nutekėjimus
+    .title = Tvarkyti nutekėjimus su „{ -monitor-brand-short-name }“
+monitor-breaches-resolved-title = Puiku! Patikrinote visus žinomus nutekėjimus.
+monitor-breaches-resolved-description = Jei jūsų el. paštas pasirodys naujuose nutekėjimuose, jums pranešime.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+        [one] Patikrintas { $numBreachesResolved } iš { $numBreaches } nutekėjimų
+        [few] Patikrinti { $numBreachesResolved } iš { $numBreaches } nutekėjimų
+       *[other] Patikrinta { $numBreachesResolved } iš { $numBreaches } nutekėjimų
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = Užbaigta { $percentageResolved }%
+monitor-partial-breaches-motivation-title-start = Puiki pradžia!
+monitor-partial-breaches-motivation-title-middle = Tęskite toliau!
+monitor-partial-breaches-motivation-title-end = Beveik baigta! Tęskite toliau.
+monitor-partial-breaches-motivation-description = Patikrinkite savo likusius nutekėjimus su „{ -monitor-brand-short-name }“.
+monitor-resolve-breaches-link = Patikrinti nutekėjimus
+    .title = Patikrinti nutekėjimus su „{ -monitor-brand-short-name }“
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

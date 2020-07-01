@@ -9,14 +9,6 @@
 remove-address-row-type = Poista { $type } -kenttä
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
-address-input-type =
-    { $count ->
-        [0] Tyhjä { $type }-syöttökenttä
-        [one] { $type }-syöttökenttä ja yksi osoite
-       *[other] { $type }-syöttökenttä ja { $count } osoitetta
-    }
-#   $type (String) - the type of the addressing row
-#   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
         [0] { $type }
@@ -42,3 +34,24 @@ pill-action-move-cc =
 pill-action-move-bcc =
     .label = Siirrä piilokopion vastaanottajaksi
     .accesskey = p
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [1] { $count } liite
+           *[other] { $count } liitettä
+        }
+    .accesskey = m
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [1] { $count } liite
+           *[other] { $count } liitettä
+        }
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+button-return-receipt =
+    .label = Vastaanottokuittaus
+    .tooltiptext = Pyydä tämän viestin vastaanottokuittausta

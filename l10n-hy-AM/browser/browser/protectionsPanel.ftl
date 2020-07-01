@@ -9,6 +9,12 @@ protections-panel-sitefixedsendreport-label = Կայքը շտկվա՞ծ է։ Ո�
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
 
+protections-popup-footer-protection-label-strict = Խիստ
+    .label = Խիստ
+protections-popup-footer-protection-label-custom = Հարմարեցված
+    .label = Հարմարեցված
+protections-popup-footer-protection-label-standard = Ստանդարտ
+    .label = Ստանդարտ
 
 ##
 
@@ -52,6 +58,8 @@ protections-panel-not-found-label = Ոչ մեկը չի հայտնաբերվել
 
 protections-panel-settings-label = Պաշտպանության կարգավորումներ
 protections-panel-showreport-label = Ցույց տալ զեկույց
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Պաշտպանության վահանակ
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

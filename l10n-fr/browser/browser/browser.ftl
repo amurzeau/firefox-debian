@@ -2,6 +2,52 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+## The main browser window's title
+
+# These are the default window titles everywhere except macOS. The first two
+# attributes are used when the web content opened has no title:
+#
+# default - "Mozilla Firefox"
+# private - "Mozilla Firefox (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } (Navigation privée)
+    .data-content-title-default = { $content-title } - { -brand-full-name }
+    .data-content-title-private = { $content-title } - { -brand-full-name } (Navigation privée)
+
+# These are the default window titles on macOS. The first two are for use when
+# there is no content title:
+#
+# "default" - "Mozilla Firefox"
+# "private" - "Mozilla Firefox - (Private Browsing)"
+#
+# The last two are for use when there *is* a content title.
+# Do not use the brand name in the last two attributes, as we do on non-macOS.
+#
+# Also note the other subtle difference here: we use a `-` to separate the
+# brand name from `(Private Browsing)`, which does not happen on other OSes.
+#
+# Variables:
+#  $content-title (String): the title of the web content.
+browser-main-window-mac =
+    .data-title-default = { -brand-full-name }
+    .data-title-private = { -brand-full-name } - (Navigation privée)
+    .data-content-title-default = { $content-title }
+    .data-content-title-private = { $content-title } - (Navigation privée)
+
+# This gets set as the initial title, and is overridden as soon as we start
+# updating the titlebar based on loaded tabs or private browsing state.
+# This should match the `data-title-default` attribute in both
+# `browser-main-window` and `browser-main-window-mac`.
+browser-main-window-title = { -brand-full-name }
+
+##
+
 urlbar-identity-button =
     .aria-label = Afficher les informations du site
 
@@ -92,10 +138,12 @@ urlbar-midi-blocked =
     .tooltiptext = Vous avez bloqué l’accès MIDI pour ce site web.
 urlbar-install-blocked =
     .tooltiptext = Vous avez bloqué l’installation de modules complémentaires pour ce site web.
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Modifier ce marque-page ({ $shortcut })
+
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -126,12 +174,14 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Pour cette fois-ci, rechercher avec :
+
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Paramètres de recherche
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Modifier les paramètres de recherche
+
 search-one-offs-context-open-new-tab =
     .label = Rechercher dans un nouvel onglet
     .accesskey = R
@@ -147,8 +197,10 @@ search-one-offs-context-set-as-default-private =
 bookmark-panel-show-editor-checkbox =
     .label = Afficher l’éditeur lors de l’enregistrement
     .accesskey = A
+
 bookmark-panel-done-button =
     .label = Terminer
+
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -223,9 +275,30 @@ popup-select-microphone =
     .accesskey = M
 popup-all-windows-shared = L’ensemble des fenêtres visibles sur votre écran seront partagées.
 
+popup-screen-sharing-not-now =
+    .label = Plus tard
+    .accesskey = P
+
+popup-screen-sharing-never =
+    .label = Ne jamais autoriser
+    .accesskey = N
+
+popup-silence-notifications-checkbox = Désactiver les notifications de { -brand-short-name } pendant le partage
+popup-silence-notifications-checkbox-warning = { -brand-short-name } n’affichera pas de notifications pendant le partage.
+
+## WebRTC window or screen share tab switch warning
+
+sharing-warning-window = Vous partagez { -brand-short-name }. D’autres personnes peuvent voir lorsque vous changez d’onglet.
+sharing-warning-screen = Vous partagez votre écran. D’autres personnes peuvent voir quand vous changez d’onglet.
+sharing-warning-proceed-to-tab =
+    .label = Passer à l’onglet
+sharing-warning-disable-for-session =
+    .label = Désactiver la protection de partage pour cette session
+
 ## DevTools F12 popup
 
 enable-devtools-popup-description = Pour utiliser le raccourci F12, ouvrez d’abord les outils de développement via le menu Développement web.
+
 
 ## URL Bar
 
@@ -239,10 +312,12 @@ urlbar-permissions-granted =
     .tooltiptext = Vous avez accordé des permissions supplémentaires à ce site web.
 urlbar-switch-to-tab =
     .value = Aller à l’onglet :
+
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Extension :
-urlbar-go-end-cap =
+
+urlbar-go-button =
     .tooltiptext = Se rendre à la page indiquée dans la barre d’adresse
 urlbar-page-action-button =
     .tooltiptext = Actions pour la page

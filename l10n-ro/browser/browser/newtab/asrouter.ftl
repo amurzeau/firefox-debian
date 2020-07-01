@@ -223,7 +223,7 @@ cfr-whatsnew-lockwise-icon-alt = Pictogramă { -lockwise-brand-short-name }
 ## Vulnerable Passwords message
 
 cfr-whatsnew-passwords-header = Obține alerte despre parole vulnerabile
-cfr-whatsnew-passwords-body = Hackerii știu că oamenii refolosesc parolele. Dacă ai folosit aceeași parolă pe mai multe site-uri și unul dintre acele site-uri a fost implicat într-o breșă de date, vei vedea o alertă în { -lockwise-brand-short-name } ca să îți schimbi parola pe acele site-uri.
+cfr-whatsnew-passwords-body = Hackerii știu că oamenii refolosesc parolele. Dacă ai folosit aceeași parolă pe mai multe site-uri și unul dintre acele site-uri a fost implicat într-o încălcare a securității datelor, vei vedea o alertă în { -lockwise-brand-short-name } ca să îți schimbi parola pe acele site-uri.
 cfr-whatsnew-passwords-icon-alt = Pictogramă de parolă vulnerabilă
 
 ## Picture-in-Picture fullscreen message
@@ -231,3 +231,10 @@ cfr-whatsnew-passwords-icon-alt = Pictogramă de parolă vulnerabilă
 cfr-whatsnew-pip-fullscreen-header = Folosește modul imagine-în-imagine pe tot ecranul
 cfr-whatsnew-pip-fullscreen-body = Când deschizi un videoclip într-o fereastră flotantă, poți da dublu clic pe ea ca să o vezi pe tot ecranul.
 cfr-whatsnew-pip-fullscreen-icon-alt = Pictogramă de imagine-în-imagine
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-cta-link = Vezi tabloul de bord privind protecțiile
+
+## Better PDF message
+

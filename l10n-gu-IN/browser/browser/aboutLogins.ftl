@@ -2,6 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+# NOTE: New strings should use the about-logins- prefix.
+
 about-logins-page-title = લોગિન્સ અને પાસવર્ડ્સ
 
 # "Google Play" and "App Store" are both branding and should not be translated
@@ -12,9 +17,12 @@ login-app-promo-android =
     .alt = તેને ગૂગલ પ્લે પર મેળવો
 login-app-promo-apple =
     .alt = એપ સ્ટોર પર ડાઉનલોડ કરો
+
 login-filter =
     .placeholder = લોગિન્સ શોધો
+
 create-login-button = નવું લોગિન બનાવો
+
 fxaccounts-sign-in-text = તમારા પાસવર્ડ્સ તમારા અન્ય ઉપકરણો પર મેળવો
 fxaccounts-sign-in-button = { -sync-brand-short-name } પર સાઇન ઇન કરો
 fxaccounts-avatar-button =
@@ -45,7 +53,6 @@ login-list-count =
 login-list-sort-label-text = આનાથી સૉર્ટ કરો:
 login-list-name-option = નામ (A-Z)
 login-list-name-reverse-option = નામ (Z-A)
-login-list-breached-option = ભંગ કરેલી વેબસાઇટ્સ
 about-logins-login-list-alerts-option = ચેતવણીઓ
 login-list-last-changed-option = છેલ્લે સુધારેલ
 login-list-last-used-option = છેલ્લે વપરાયેલ
@@ -105,6 +112,7 @@ login-item-time-used = છેલ્લે વપરાયેલ: { DATETIME($tim
 # This message can be seen by attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = સાચવેલા પાસવર્ડને જાહેર કરો
+
 # This message can be seen by attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = સાચવેલા પાસવર્ડની નકલ કરો
@@ -132,18 +140,17 @@ about-logins-enable-password-sync-dont-ask-again-button =
 confirmation-dialog-cancel-button = રદ કરો
 confirmation-dialog-dismiss-button =
     .title = રદ કરો
+
 about-logins-confirm-remove-dialog-title = આ લોગિન ને દૂર કરીએ?
 confirm-delete-dialog-message = આ ક્રિયા પૂર્વવત્ કરી શકાતી નથી.
 about-logins-confirm-remove-dialog-confirm-button = દૂર કરો
+
 confirm-discard-changes-dialog-title = વણસાચવેલા ફેરફારોને કાઢી નાખો?
 confirm-discard-changes-dialog-message = બધા વણસાચવેલા ફેરફારો ખોવાઈ જશે.
 confirm-discard-changes-dialog-confirm-button = કાઢી નાખો
 
 ## Breach Alert notification
 
-breach-alert-link = આ ઉલ્લંઘન વિશે વધુ જાણો.
-breach-alert-dismiss =
-    .title = આ ચેતવણી બંધ કરો
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-breach-alert-link = { $hostname } પર જાઓ
@@ -161,3 +168,7 @@ about-logins-vulnerable-alert-learn-more-link = વધુ જાણો
 
 # This is a generic error message.
 about-logins-error-message-default = આ પાસવર્ડને સાચવવાનો પ્રયાસ કરતી વખતે એક ભૂલ આવી.
+
+
+## Login Export Dialog
+

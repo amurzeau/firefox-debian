@@ -15,10 +15,10 @@ duplicate-tabs =
     .label = 탭 복제
     .accesskey = D
 close-tabs-to-the-end =
-    .label = 오른쪽 탭 모두 닫기
+    .label = 오른쪽 탭 닫기
     .accesskey = i
 close-other-tabs =
-    .label = 다른 탭 모두 닫기
+    .label = 다른 탭 닫기
     .accesskey = o
 reload-tabs =
     .label = 탭 새로 고침
@@ -54,7 +54,17 @@ move-to-new-window =
     .label = 새 창으로 이동
     .accesskey = W
 undo-close-tab =
-    .label = 닫은 탭 다시 열기
+    .label = 탭 닫기 취소
+    .accesskey = U
+tab-context-close-multiple-tabs =
+    .label = 여러 탭 닫기
+    .accesskey = M
+tab-context-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] 탭 닫기 취소
+           *[other] 탭 닫기 취소
+        }
     .accesskey = U
 close-tab =
     .label = 탭 닫기

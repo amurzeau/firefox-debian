@@ -247,7 +247,7 @@ main-context-menu-save-to-pocket =
     .label = Ruaje Faqen te { -pocket-brand-name }
     .accesskey = k
 main-context-menu-send-to-device =
-    .label = Dërgoje Faqen te Pajisja
+    .label = Dërgoje Faqen te Pajisje
     .accesskey = P
 main-context-menu-view-background-image =
     .label = Shihni Figurë Sfondi
@@ -314,7 +314,3 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = Mësoni më tepër rreth DRM-s…
     .accesskey = D
-# Checkbox displayed at the bottom of the What's New panel, allowing users to 
-# enable/disable What's New notifications.
-cfr-whatsnew-panel-footer-checkbox =
-    .label = Njoftomëni për veçori të reja

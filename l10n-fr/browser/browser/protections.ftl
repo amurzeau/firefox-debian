@@ -37,10 +37,14 @@ etp-card-title = Protection renforcée contre le pistage
 etp-card-content = Les traqueurs vous suivent en ligne pour collecter des informations sur vos habitudes de navigation et vos centres d’intérêt. { -brand-short-name } bloque un grand nombre de ces traqueurs et de scripts malveillants.
 protection-report-webpage-title = Tableau de bord des protections
 protection-report-page-content-title = Tableau de bord des protections
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
 protection-report-page-summary = { -brand-short-name } peut protéger votre vie privée en arrière-plan pendant que vous naviguez. Voici un résumé personnalisé de ces protections, avec des outils pour prendre le contrôle de votre sécurité en ligne.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } protège votre vie privée en arrière-plan pendant que vous naviguez. Voici un résumé personnalisé de ces protections, avec des outils pour prendre le contrôle de votre sécurité en ligne.
+protection-report-settings-link = Gérer vos paramètres de confidentialité et de sécurité
 etp-card-title-always = Protection renforcée contre le pistage : toujours activée
 etp-card-title-custom-not-blocking = Protection renforcée contre le pistage : DÉSACTIVÉE
-etp-card-content-summary = Lorsque des entreprises inconnues essaient de vous suivre secrètement sur le Web, { -brand-short-name } arrête automatiquement bon nombre d’entre elles.
+etp-card-content-description = { -brand-short-name } empêche automatiquement les entreprises de vous suivre secrètement sur le Web.
 protection-report-etp-card-content-custom-not-blocking = Toutes les protections sont actuellement désactivées. Choisissez les traqueurs à bloquer en gérant les paramètres de protection de { -brand-short-name }.
 protection-report-manage-protections = Gérer les paramètres
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -58,8 +62,6 @@ fingerprinter-tab-title = Détecteurs d’empreinte numérique
 fingerprinter-tab-content = Les détecteurs d’empreinte numérique recueillent les paramètres de votre navigateur et de votre ordinateur pour créer un profil de vous. En utilisant cette empreinte numérique, ils peuvent vous pister sur différents sites web. <a data-l10n-name="learn-more-link">En savoir plus</a>
 cryptominer-tab-title = Mineurs de cryptomonnaies
 cryptominer-tab-content = Les mineurs de cryptomonnaies utilisent la puissance de calcul de votre système pour « extraire » de l’argent numérique. Les scripts de cryptominage déchargent votre batterie, ralentissent votre ordinateur et peuvent augmenter votre facture énergétique. <a data-l10n-name="learn-more-link">En savoir plus</a>
-protections-close-button =
-    .aria-label = Fermer
 protections-close-button2 =
     .aria-label = Fermer
     .title = Fermer
@@ -120,6 +122,8 @@ monitor-link = Principes de fonctionnement
 monitor-header-content-no-account = Consultez { -monitor-brand-name } pour vérifier si une fuite de données vous concerne et pour recevoir des alertes en cas de nouvelles fuites.
 monitor-header-content-signed-in = { -monitor-brand-name } vous alerte si vos informations apparaissent dans une fuite de données connue
 monitor-sign-up = S’inscrire aux alertes de fuites de données
+monitor-sign-up-link = S’inscrire aux alertes de fuites de données
+    .title = S’inscrire aux alertes de fuites de données sur { -monitor-brand-name }
 auto-scan = Vérifiées aujourd’hui automatiquement
 monitor-emails-tooltip =
     .title = Afficher les adresses électroniques surveillées sur { -monitor-brand-short-name }
@@ -144,6 +148,14 @@ info-known-breaches-found =
        *[other] fuites de données connues ont compromis vos informations
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] fuite de données connue marquée comme réglée
+       *[other] fuites de données connues marquées comme réglées
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -160,6 +172,41 @@ password-warning =
         [one] mot de passe enregistré peut avoir été compromis par une fuite de données. Changez ce mot de passe pour une sécurité en ligne accrue. <a data-l10n-name="lockwise-link">Voir les mots de passe enregistrés</a>
        *[other] mots de passe enregistrés peuvent avoir été compromis par une fuite de données. Changez ces mots de passe pour une sécurité en ligne accrue. <a data-l10n-name="lockwise-link">Voir les mots de passe enregistrés</a>
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] mot de passe compromis parmi les fuites de données non réglées
+       *[other] mots de passe compromis parmi les fuites de données non réglées
+    }
+monitor-no-breaches-title = Bonne nouvelle !
+monitor-no-breaches-description = Vous n’apparaissez dans aucune fuite de données connue. Si cela vient à changer, nous vous en aviserons.
+monitor-view-report-link = Voir le rapport
+    .title = Régler les fuites de données avec { -monitor-brand-short-name }
+monitor-breaches-unresolved-title = Réglez vos fuites de données
+monitor-breaches-unresolved-description = Après avoir examiné les détails des fuites de données et pris des mesures pour protéger vos informations, vous pouvez marquer les fuites comme réglées.
+monitor-manage-breaches-link = Gérer les fuites de données
+    .title = Gérer les fuites de données avec { -monitor-brand-short-name }
+monitor-breaches-resolved-title = Bien ! Vous avez réglé toutes les fuites de données connues.
+monitor-breaches-resolved-description = Si votre adresse électronique figure dans de nouvelles fuites de donnés, nous vous préviendrons.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreachesResolved ->
+        [one] { $numBreachesResolved } fuite sur { $numBreaches } marquée comme réglée
+       *[other] { $numBreachesResolved } fuites sur { $numBreaches } marquées comme réglées
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = Terminé à { $percentageResolved } %
+monitor-partial-breaches-motivation-title-start = Un bon début !
+monitor-partial-breaches-motivation-title-middle = Gardez le rythme !
+monitor-partial-breaches-motivation-title-end = C’est presque fini. Continuez !
+monitor-partial-breaches-motivation-description = Réglez vos autres fuites de données avec { -monitor-brand-short-name }.
+monitor-resolve-breaches-link = Régler vos fuites de données
+    .title = Régler vos fuites de données avec { -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

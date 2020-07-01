@@ -49,7 +49,7 @@ clear-site-data-cache-empty =
     .label = Contento web in cache
     .accesskey = W
 
-clear-site-data-cache-info = Requirera sitos web pro recargar imagines e datos
+clear-site-data-cache-info = Obliga sitos web a recargar imagines e datos
 
 clear-site-data-cancel =
     .label = Cancellar
