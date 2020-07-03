@@ -1,3 +1,34 @@
+firefox (78.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+  * debian/rules:
+    - Replace --disable-ion with --disable-jit.
+    - Don't generated the ICU data file for big-endian manually.
+
+  * js/src/jit/mips-shared/MacroAssembler-mips-shared-inl.h,
+    js/src/jit/mips64/MacroAssembler-mips64-inl.h: Add branchTestSymbol
+    and fallibleUnboxPtr. bz#1642265.
+  * config/external/icu/data/*icudata*, config/external/icu/data/moz.build,
+    js/moz.configure: Unify the includion of the ICU data file. bz#1650299.
+  * config/external/icu/common/moz.build,
+    config/external/icu/common/sources.mozbuild,
+    config/external/icu/data/convert_icudata.py,
+    config/external/icu/data/moz.build,
+    config/external/icu/defs.mozbuild,
+    config/external/icu/i18n/moz.build,
+    config/external/icu/i18n/sources.mozbuild,
+    config/external/icu/icupkg/moz.build,
+    config/external/icu/icupkg/sources.mozbuild,
+    config/external/icu/moz.build,
+    config/external/icu/toolutil/moz.build,
+    config/external/icu/toolutil/sources.mozbuild,
+    config/recurse.mk,
+    intl/icu_sources_data.py: Automatically convert the little-endian ICU data
+    file for big-endian builds.
+
+ -- Mike Hommey <glandium@debian.org>  Fri, 03 Jul 2020 17:07:38 +0900
+
 firefox (78.0-1) unstable; urgency=medium
 
   * New upstream release
