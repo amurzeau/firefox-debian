@@ -142,7 +142,7 @@ CXX := g++
 endif
 
 ifneq (,$(filter mips mipsel,$(DEB_HOST_ARCH)))
-CONFIGURE_FLAGS += --disable-ion
+CONFIGURE_FLAGS += --disable-jit
 endif
 
 CXXFLAGS = $(CFLAGS)
