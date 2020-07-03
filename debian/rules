@@ -13,7 +13,6 @@ $(call lazy,DEB_HOST_GNU_TYPE,$$(shell dpkg-architecture -qDEB_HOST_GNU_TYPE))
 $(call lazy,DEB_BUILD_GNU_TYPE,$$(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE))
 $(call lazy,DEB_BUILD_ARCH_BITS,$$(shell dpkg-architecture -qDEB_BUILD_ARCH_BITS))
 $(call lazy,DEB_HOST_ARCH,$$(shell dpkg-architecture -qDEB_HOST_ARCH))
-$(call lazy,DEB_HOST_ARCH_ENDIAN,$$(shell dpkg-architecture -qDEB_HOST_ARCH_ENDIAN))
 
 PYTHON := python3 -B
 
@@ -148,12 +147,7 @@ endif
 CXXFLAGS = $(CFLAGS)
 RUSTFLAGS = --remap-path-prefix=$(CURDIR)=.
 
-ifeq ($(DEB_HOST_ARCH_ENDIAN),big)
-ICU_VERSION := $(shell echo U_ICU_VERSION_MAJOR_NUM | cpp -P -include $(CURDIR)/intl/icu/source/common/unicode/uvernum.h)
-ICU_DATA_FILE = icudt$(ICU_VERSION)b.dat
-endif
-
-EXPORTS := CC CXX CFLAGS CXXFLAGS CPPFLAGS LDFLAGS MOZILLA_OFFICIAL ICU_DATA_FILE RUSTFLAGS
+EXPORTS := CC CXX CFLAGS CXXFLAGS CPPFLAGS LDFLAGS MOZILLA_OFFICIAL RUSTFLAGS
 $(call lazy,CONFIGURE_ENV,$$(foreach export,$(EXPORTS),$$(export)="$$($$(export))"))
 
 IN_FILES := $(wildcard debian/*.in)
@@ -231,13 +225,6 @@ stamps/configure-check-$(PRODUCT):: stamps/configure-$(PRODUCT)
 
 stamps/configure-$(PRODUCT):: stamps/prepare-configure debian/$($(PRODUCT)).mozconfig
 	$(if $(wildcard build-$(PRODUCT)),,mkdir build-$(PRODUCT))
-ifeq ($(DEB_HOST_ARCH_ENDIAN),big)
-	echo mk_add_options MOZ_OBJDIR=build-$(PRODUCT) > build-$(PRODUCT)/mozconfig.icu
-	cd build-$(PRODUCT) && \
-	MOZCONFIG=mozconfig.icu \
-	$(CONFIGURE_ENV) \
-	python3 ../mach python ../intl/icu_sources_data.py "$(CURDIR)"
-endif
 	cd build-$(PRODUCT) && \
 	MOZCONFIG=$(CURDIR)/debian/$($(PRODUCT)).mozconfig \
 	ASFLAGS="-g" \
@@ -285,10 +272,6 @@ override_dh_auto_clean::
 	rm -f $$(cat debian/extra-clean 2>/dev/null) debian/extra-clean old-configure js/src/old-configure
 	rm -rf stamps l10n $(CARGO_HOME)
 	debian/rules debian/control TESTDIR=
-
-ifeq ($(DEB_HOST_ARCH_ENDIAN),big)
-	rm -f config/external/icu/data/$(ICU_DATA_FILE)
-endif
 
 	dh_auto_clean --builddirectory=build-$(PRODUCT)
 	dh_auto_clean --builddirectory=build-l10n
