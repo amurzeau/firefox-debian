@@ -79,10 +79,10 @@ cmd-contribute =
     .accesskey = C
     .tooltiptext = Eipytyvõ moimbaha ñemboguatápe
 discover-title = Mba'épa umi moĩmbaha.
-discover-description = Umi moĩmbaha ha’e tembipuru’i ombohapéva emomba’ete hag̃ua { -brand-short-name } tembiaporã oguerekóva térã moimbyréva. Eipuru ta’ãngarupa yke oikuave’ẽva aravo, ohechaukáva ára rehegua térã peteĩ téma ñemoha’ãngáva ejapo hag̃ua { -brand-short-name }-gui nemba’ete.
-discover-footer = Eikete vove ñandutípe, ko ta'ãngarupa ome'ẽta heta mba'e iporã ha ojehecharamovéva moĩmbaha eipuruséramo g̃uarã.
+discover-description = Moĩmbaha ha’e tembipuru’i ombohapéva emomba’ete hag̃ua { -brand-short-name } tembiaporã oguerekóva térã moimbyréva. Eipuru ta’ãngarupa yke oikuave’ẽva aravo, ohechaukáva ára rehegua térã téma ñemoha’ãngáva ejapo hag̃ua { -brand-short-name }-gui nemba’ete.
+discover-footer = Eikete vove ñandutípe, ko ta’ãngarupa ome’ẽta heta mba’e iporã ha ojehecharamovéva moĩmbaha eipuruséramo g̃uarã.
 detail-version =
-    .label = Peteïchagua
+    .label = Peteĩchagua
 detail-last-updated =
     .label = Ñembohekopyahu ramovéva
 detail-contributions-description = Ko moimbaha mboguatahára ojerure eipytyvõ okueve hag̃ua mboguatahápe ejapóvo peteĩ michĩmíva mba'eme'ẽ.
@@ -147,14 +147,14 @@ detail-show-preferences =
            *[other] Emoambue jerohoryvéva ko moĩmbaha rehegua
         }
 detail-rating =
-    .value = Ñehepyme'ẽ
+    .value = Ñehepyme’ẽ
 addon-restart-now =
     .label = Emoñepyrũjey ko'ág̃a
 disabled-unsigned-heading =
     .value = Heta moimbaha ojepe’aitéma
 disabled-unsigned-description = Ko'ã moĩmbaha ndojehechajeýi ojepuru hag̃uáicha { -brand-short-name }-pe. Ikatu<label data-l10n-name="find-addons">Myengoviarã juhu</label> térã ejerure mboguatahárape ojehechajey hag̃ua.
 disabled-unsigned-learn-more = Eikuaave oreñeha'ã rehegua ikatu hag̃uáicha roipytyvõ peime hag̃ua jeikekatúpe.
-disabled-unsigned-devinfo = Umi mboguatahára oipotáva moimbaha jehechapyréva ikatu omoñe'ẽve ohóvo ko <label data-l10n-name="learn-more">popeguáva</label>.
+disabled-unsigned-devinfo = Umi mboguatahára oipotáva moimbaha jehechapyréva ikatu omoñe’ẽve ohóvo ko <label data-l10n-name="learn-more">popeguáva</label>.
 plugin-deprecation-description = Oĩpa nderejuhúiva? Sapy'ánte oĩ mba'ejoajurã ndaikatuvéima ojepuru { -brand-short-name } ndive. <label data-l10n-name="learn-more">Jeikuaave.</label>
 legacy-warning-show-legacy = Opaite mba'ejoapyrã jehecha
 legacy-extensions =
@@ -186,12 +186,12 @@ addon-category-theme-title =
 addon-category-plugin = Mba'ejoajurã
 addon-category-plugin-title =
     .title = Mba'ejoajurã
-addon-category-dictionary = Ñe'ẽryru
+addon-category-dictionary = Ñe’ẽryru
 addon-category-dictionary-title =
-    .title = Ñe'ẽryru
-addon-category-locale = Ñe'ẽita
+    .title = Ñe’ẽryru
+addon-category-locale = Ñe’ẽita
 addon-category-locale-title =
-    .title = Ñe'ẽita
+    .title = Ñe’ẽita
 addon-category-available-updates = Ñembohekopyahu eipurukuaáva
 addon-category-available-updates-title =
     .title = Ñembohekopyahu eipurukuaáva
@@ -333,7 +333,7 @@ shortcuts-card-expand-button =
         [one] Ehechave { $numberToShow }
        *[other] Ehechave { $numberToShow }
     }
-shortcuts-card-collapse-button = Ehechauka'ive
+shortcuts-card-collapse-button = Ehechauka’ive
 go-back-button =
     .tooltiptext = Guevijey
 header-back-button =
@@ -391,18 +391,18 @@ permissions-addon-button = Moneĩ
 addons-enabled-heading = Mbojurujapyre
 addons-disabled-heading = Pe’apyre
 extension-enabled-heading = Myandypyre
-extension-disabled-heading = Ojepuruve'ỹva
+extension-disabled-heading = Ojepuruve’ỹva
 theme-enabled-heading = Myandypyre
-theme-disabled-heading = Ojepuruve'ỹva
+theme-disabled-heading = Ojepuruve’ỹva
 plugin-enabled-heading = Myandypyre
-plugin-disabled-heading = Ojepuruve'ỹva
+plugin-disabled-heading = Ojepuruve’ỹva
 dictionary-enabled-heading = Myandypyre
-dictionary-disabled-heading = Ojepuruve'ỹva
+dictionary-disabled-heading = Ojepuruve’ỹva
 locale-enabled-heading = Myandypyre
-locale-disabled-heading = Ojepuruve'ỹva
+locale-disabled-heading = Ojepuruve’ỹva
 ask-to-activate-button = Eporandu emyandy hag̃ua
 always-activate-button = Emyandy tapia
-never-activate-button = Ani emyandy araka'eve
+never-activate-button = Ani emyandy araka’eve
 addon-detail-author-label = Apohára
 addon-detail-version-label = Peteĩchagua
 addon-detail-last-updated-label = Mbohekopyahu paha
@@ -453,8 +453,8 @@ addon-detail-private-browsing-disallow = Ani emoneĩ
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended =
-    .title = Je'eporãpyre
-    .alt = Je'eporãpyre
+    .title = Je’eporãpyre
+    .alt = Je’eporãpyre
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended2 =

@@ -148,11 +148,11 @@ cfr-whatsnew-fingerprinter-counter-header =
     [one] Fingerprinter bloccato
    *[other] Fingerprinter bloccati
   }
-cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } blocca molti fingerprinter che, in segreto, raccolgono informazioni sul tuo dispositivo e sulle tue azioni online. Questi dati vengono utilizzati per creare un tuo profilo e mostrarti pubblicità mirate.
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } blocca molti fingerprinter che, di nascosto, raccolgono informazioni sul tuo dispositivo e sulle tue azioni online. Questi dati vengono utilizzati per creare un tuo profilo e mostrarti pubblicità mirate.
 
 # Message variation when fingerprinters count is less than 10
 cfr-whatsnew-fingerprinter-counter-header-alt = Fingerprinter
-cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } può bloccare i fingerprinter che, in segreto, raccolgono informazioni sul tuo dispositivo e sulle tue azioni online. Questi dati vengono utilizzati per creare un tuo profilo e mostrarti pubblicità mirate.
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } può bloccare i fingerprinter che, di nascosto, raccolgono informazioni sul tuo dispositivo e sulle tue azioni online. Questi dati vengono utilizzati per creare un tuo profilo e mostrarti pubblicità mirate.
 
 ## Bookmark Sync
 
@@ -212,6 +212,8 @@ cfr-protections-panel-link-text = Ulteriori informazioni
 cfr-doorhanger-milestone-heading = { -brand-short-name } ha bloccato oltre <b>{ $blockedCount }</b> elementi traccianti dal { $date }.
 cfr-doorhanger-milestone-ok-button = Visualizza tutto
   .accesskey = V
+cfr-doorhanger-milestone-close-button = Chiudi
+  .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -244,3 +246,18 @@ cfr-whatsnew-protections-icon-alt = Icona dello scudo
 
 cfr-whatsnew-better-pdf-header = Esperienza migliore con i PDF
 cfr-whatsnew-better-pdf-body = Adesso è possibile aprire i documenti PDF direttamente in { -brand-short-name }, senza intralciare il tuo flusso di lavoro.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = La tua privacy è importante. { -brand-short-name } ora indirizza in modo sicuro le richieste DNS, quando possibile, a un servizio fornito da un partner per proteggerti durante la navigazione.
+cfr-doorhanger-doh-header = Ricerche DNS più sicure e crittate
+cfr-doorhanger-doh-primary-button = OK, ricevuto
+  .accesskey = O
+cfr-doorhanger-doh-secondary-button = Disattiva
+  .accesskey = D
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Protezione automatica contro subdole tecniche di tracciamento
+cfr-whatsnew-clear-cookies-body = Alcuni elementi traccianti ti reindirizzano su altri siti web che, di nascosto, impostano cookie nel browser. Adesso { -brand-short-name } elimina automaticamente questi cookie, impedendogli di seguirti.
+cfr-whatsnew-clear-cookies-image-alt = Illustrazione cookie bloccati

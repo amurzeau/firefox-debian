@@ -1,11 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Пријаве и лозинке
@@ -32,6 +27,7 @@ menu =
     .title = Отвори мени
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Увези из другог прегледача…
+about-logins-menu-menuitem-import-from-a-file = Увезите из датотеке:…
 about-logins-menu-menuitem-export-logins = Извезите пријаве…
 menu-menuitem-preferences =
     { PLATFORM() ->
@@ -73,12 +69,14 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = Тражите сачуване пријаве? Подесите { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-out = Тражите сачуване пријаве? Подесите { -sync-brand-short-name } или их увезите.
 about-logins-login-intro-heading-logged-in = Нису пронађене синхронизоване пријаве.
 login-intro-description = Уколико сте пријаве сачували у програму { -brand-product-name } на неком другом уређају, следите ове кораке:
 login-intro-instruction-fxa = Направите или се пријавите на ваш { -fxaccount-brand-name } налог, на уређају где су ваше пријаве сачуване
 login-intro-instruction-fxa-settings = Уверите се да сте штиклирали „Пријаве“ { -sync-brand-short-name } подешавањима
 about-logins-intro-instruction-help = Посетите <a data-l10n-name="help-link">страницу подршке за { -lockwise-brand-short-name }</a>
 about-logins-intro-import = Ако су ваше пријаве сачуване у другом прегледачу, можете да их <a data-l10n-name="import-link">увезете у { -lockwise-brand-short-name }</a>
+about-logins-intro-import2 = Ако сте сачували своје пријаве изван { -brand-product-name }-а, можете их <a data-l10n-name="import-browser-link">увести из другог прегледача</a> или <a data-l10n-name="import-file-link">из датотеке</a>
 
 ## Login
 
@@ -138,8 +136,8 @@ about-logins-export-password-os-auth-dialog-message-macosx = извезите с
 
 master-password-notification-message = Унесите своју главну лозинку да бисте видели сачуване пријаве и лозинке
 master-password-reload-button =
-    .label = Пријави ме
-    .accesskey = р
+    .label = Пријава
+    .accesskey = L
 
 ## Password Sync notification
 
@@ -154,10 +152,10 @@ enable-password-sync-preferences-button =
             [windows] Посетите { -sync-brand-short-name } опције
            *[other] Посетите { -sync-brand-short-name } подешавања
         }
-    .accesskey = П
+    .accesskey = V
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = Не питај ме поново
-    .accesskey = Н
+    .accesskey = D
 
 ## Dialogs
 
@@ -214,6 +212,19 @@ about-logins-export-file-picker-export-button = Извоз
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
 about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV документ
+       *[other] CSV датотека
+    }
+
+## Login Import Dialog
+
+# Title of the file picker dialog
+about-logins-import-file-picker-title = Увези пријавну датотеку
+about-logins-import-file-picker-import-button = Увези
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
     { PLATFORM() ->
         [macos] CSV документ
        *[other] CSV датотека

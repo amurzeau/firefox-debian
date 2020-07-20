@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = Experimentos { -brand-short-name }
+category-experimental =
+    .tooltiptext = Experimentos { -brand-short-name }
+pane-experimental-subtitle = Proceder con precaución
+pane-experimental-search-results-header = { -brand-short-name } Experimentos: proceder con precaución
+pane-experimental-description = Cambiar las preferencias de configuración avanzada puede afectar el rendimiento o la seguridad de { -brand-short-name }.
 help-button-label = Soporte de { -brand-short-name }
 addons-button-label = Extensiones y temas
 focus-search =
@@ -499,7 +505,6 @@ home-prefs-topsites-description = Los sitios que más visita
 
 home-prefs-recommended-by-header =
     .label = Recomendado por { $provider }
-home-prefs-recommended-by-description = El mejor contenido de toda la web, personalizado para usted
 home-prefs-recommended-by-description-update = Contenido excepcional de toda la web  por patrocinado por { $provider }
 
 ##
@@ -563,7 +568,6 @@ search-show-suggestions-above-history-option =
     .label = Mostrar sugerencias de búsqueda antes que el historial en los resultados de la barra de direcciones
 search-show-suggestions-private-windows =
     .label = Mostrar sugerencias de búsqueda en pestañas privadas
-suggestions-addressbar-settings = Cambiar las preferencias para el historial de navegación, marcadores y sugerencias de pestañas
 suggestions-addressbar-settings-generic = Cambiar preferencias para otras sugerencias de la barra de direcciones
 search-suggestions-cant-show = Las sugerencias de búsqueda no se mostrarán en la barra de direcciones porque ha configurado { -brand-short-name } para que nunca recuerde el historial.
 search-one-click-header = Buscadores con un clic
@@ -1161,6 +1165,18 @@ space-alert-under-5gb-ok-button =
     .label = Perfecto, lo entiendo
     .accesskey = P
 space-alert-under-5gb-message = { -brand-short-name } se está quedando sin espacio en disco. Contenidos del sitio web pueden no mostrarse correctamente. Ver “Conocer más” para optimizar el uso del disco para una mejor experiencia de navegación.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Modo solo HTTPS
+httpsonly-description = HTTPS proporciona una conexión segura y encriptada entre { -brand-short-name } y los sitios web que visita. La mayoría de los sitios web admiten HTTPS, y si el modo HTTPS-Only está habilitado, entonces { -brand-short-name } actualizará todas las conexiones a HTTPS.
+httpsonly-learn-more = Conocer más
+httpsonly-radio-enabled =
+    .label = Habilitar el modo solo HTTPS en todas las ventanas
+httpsonly-radio-enabled-pbm =
+    .label = Habilitar el modo solo HTTPS solo en ventanas privadas
+httpsonly-radio-disabled =
+    .label = No habilitar el modo solo HTTPS
 
 ## The following strings are used in the Download section of settings
 

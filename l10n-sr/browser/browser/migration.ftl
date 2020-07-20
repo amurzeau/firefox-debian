@@ -18,13 +18,13 @@ import-from-edge =
     .accesskey = E
 import-from-edge-legacy =
     .label = Microsoft Edge Legacy
-    .accesskey = Л
+    .accesskey = L
 import-from-edge-beta =
     .label = Microsoft Edge Beta
-    .accesskey = д
+    .accesskey = d
 import-from-nothing =
     .label = Не увози ништа
-    .accesskey = Н
+    .accesskey = D
 import-from-safari =
     .label = Safari
     .accesskey = S
@@ -45,7 +45,7 @@ import-from-chromium =
     .accesskey = u
 import-from-firefox =
     .label = Firefox
-    .accesskey = F
+    .accesskey = x
 import-from-360se =
     .label = 360 Secure Browser
     .accesskey = 3
@@ -88,10 +88,57 @@ imported-edge-reading-list = Листа за читање (из Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.
 
+browser-data-cookies-checkbox =
+    .label = Колачићи
+browser-data-cookies-label =
+    .value = Колачићи
+browser-data-history-checkbox =
+    .label =
+        { $browser ->
+            [firefox] Историја прегледања и обележивачи
+           *[other] Историја прегледања
+        }
+browser-data-history-label =
+    .value =
+        { $browser ->
+            [firefox] Историја прегледања и обележивачи
+           *[other] Историја прегледања
+        }
+browser-data-formdata-checkbox =
+    .label = Сачувани формулари
+browser-data-formdata-label =
+    .value = Сачувани формулари
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-checkbox =
+    .label = Сачуване пријаве и лозинке
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-label =
+    .value = Сачуване пријаве и лозинке
+browser-data-bookmarks-checkbox =
+    .label =
+        { $browser ->
+            [ie] Омиљено
+            [edge] Омиљено
+           *[other] Обележивачи
+        }
+browser-data-bookmarks-label =
+    .value =
+        { $browser ->
+            [ie] Омиљено
+            [edge] Омиљено
+           *[other] Обележивачи
+        }
+browser-data-otherdata-checkbox =
+    .label = Остали подаци
+browser-data-otherdata-label =
+    .label = Остали подаци
 browser-data-session-checkbox =
     .label = Прозори и језичци
 browser-data-session-label =

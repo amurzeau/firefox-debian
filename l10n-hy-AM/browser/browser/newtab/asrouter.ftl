@@ -188,7 +188,7 @@ cfr-doorhanger-socialtracking-close-button = Փակել
     .accesskey = C
 cfr-doorhanger-socialtracking-dont-show-again = Այլևս ցույց մի տվեք այսպիսի հաղորդագրություններ
     .accesskey = D
-cfr-doorhanger-socialtracking-heading = { -brand-short-name }-ը դադարեցրել է հանրային ցանցի հետապնդումը
+cfr-doorhanger-socialtracking-heading = { -brand-short-name }-ը դադարեցրել է սոցիալական ցանցի հետագծումը
 cfr-doorhanger-socialtracking-description = Ձեր գաղտնիությունը կարևոր է: { -brand-short-name }-ը այժմ արգելափակում է հանրային մեդիայի ընդհանուր վտանգները, սահմանելով, թե որքան տվյալներ կարող են հավաքել ձեր առցանց գործողությունների մասին։
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } արգելափակում է մատնահետքը այս էջում
 cfr-doorhanger-fingerprinters-description = Ձեր գաղտնիությունը կարևոր է: { -brand-short-name }-ն այժմ արգելափակում է մատնահետքեր, որոնք հավաքում են ձեր սարքի մասին եզակի անձնական տեղեկություններ վնասելու համար։
@@ -207,6 +207,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Պահպանել բոլորը
     .accesskey = S
+cfr-doorhanger-milestone-close-button = Փակել
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -240,3 +242,12 @@ cfr-whatsnew-protections-icon-alt = Վահանի պատկերակը
 
 cfr-whatsnew-better-pdf-header = Ավելի լավ PDF փորձառություն
 cfr-whatsnew-better-pdf-body = PDF փաստաթղթերն այժմ բացվում են ուղղակիորեն { -brand-short-name }-ում, պահպանելով ձեր աշխատահոսքը հասանելիության պայմաններում:
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Ձեր գաղտնիությունը կարևոր է: { -brand-short-name }-ն այժմ ապահով կերպով ուղարկում է ձեր DNS հարցումները, երբ դա հնարավոր է, գործընկեր ծառայությանը՝ զններկելիս Ձեզ պաշտպանվելու համար:
+cfr-doorhanger-doh-header = Ավելի անվտանգ, գաղտնագրված DNS որոնումներ
+cfr-doorhanger-doh-primary-button = Լավ, հասկացա
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Անջատել
+    .accesskey = D

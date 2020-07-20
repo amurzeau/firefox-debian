@@ -71,7 +71,7 @@ about-debugging-sidebar-support = Mopotĩha pytyvõha
 # Text to show as the ALT attribute of a help icon that accompanies the help about
 # debugging link in the footer of the sidebar
 about-debugging-sidebar-support-icon =
-    .alt = Pytyvõrã ra'ãngachu'i
+    .alt = Pytyvõrã ra’ãngachu’i
 # Text displayed in a sidebar button to refresh the list of USB devices. Clicking on it
 # will attempt to update the list of devices displayed in the sidebar.
 about-debugging-refresh-usb-devices-button = Embohekopyahu mba’e’oka
@@ -178,7 +178,7 @@ about-debugging-runtime-service-workers-not-compatible = Pe kundahára ñembohek
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
-about-debugging-browser-version-too-old = Aravo tembiaporã joajupyre oguereko itujáva ({ $runtimeVersion }). Ojokutyvéva ha’e ({ $minVersion }). Kóva ha'e peteĩ ñemboheko ndojokupytýiva ha ikatu ombyai DevTools rembiapo. Okatúpiko hembohekopyahu aravo tembiaporã joajupyre ndive. <a>Apañuãi ñemoĩporã</a>
+about-debugging-browser-version-too-old = Aravo tembiaporã joajupyre oguereko itujáva ({ $runtimeVersion }). Ojokutyvéva ha’e ({ $minVersion }). Kóva ha’e peteĩ ñemboheko ndojokupytýiva ha ikatu ombyai DevTools rembiapo. Okatúpiko hembohekopyahu aravo tembiaporã joajupyre ndive. <a>Apañuãi ñemoĩporã</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
 # - from Fx 67 to 66 or to 65
 # - from Fx 68 to 66
@@ -246,7 +246,7 @@ about-debugging-tmp-extension-temporary-id = Ko ñanduti jepysokue oguereko hera
 # Text displayed for extensions in "runtime" pages, before displaying a link the extension's
 # manifest URL.
 about-debugging-extension-manifest-url =
-    .label = URL je'epyre
+    .label = URL je’epyre
 # Text displayed for extensions in "runtime" pages, before displaying the extension's uuid.
 # UUIDs look like b293e463-481e-5148-a487-5aaf7a130429
 about-debugging-extension-uuid =

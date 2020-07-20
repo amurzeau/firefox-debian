@@ -17,6 +17,12 @@ extensions-name = Назив
 extensions-enabled = Укључен
 extensions-version = Издање
 extensions-id = ID
+support-addons-title = Додаци
+support-addons-name = Назив
+support-addons-type = Тип
+support-addons-enabled = Омогућено
+support-addons-version = Издање
+support-addons-id = ID
 security-software-title = Безбедносни софтвер
 security-software-type = Тип
 security-software-name = Име
@@ -74,6 +80,9 @@ show-dir-label =
         [windows] Отвори фасциклу
        *[other] Отвори фасциклу
     }
+experimental-features-title = Експерименталне функције
+experimental-features-name = Назив
+experimental-features-value = Вредност
 modified-key-prefs-title = Важне измењене поставке
 modified-prefs-name = Назив
 modified-prefs-value = Вредност
@@ -270,6 +279,9 @@ blocklisted-bug = На црној листи због познатих проб�
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = грешка { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Блокирано због познатих проблема: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = На црној листи; код грешке { $failureCode }

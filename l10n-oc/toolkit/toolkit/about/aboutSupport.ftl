@@ -14,6 +14,12 @@ extensions-name = Nom
 extensions-enabled = Activat
 extensions-version = Version
 extensions-id = ID
+support-addons-title = Moduls complementaris
+support-addons-name = Nom
+support-addons-type = Tipe
+support-addons-enabled = Activat
+support-addons-version = Version
+support-addons-id = ID
 security-software-title = Logicial de seguretat
 security-software-type = Tipe
 security-software-name = Nom
@@ -71,6 +77,9 @@ show-dir-label =
         [windows] Dobrir lo dossièr
        *[other] Dobrir lo dossièr correspondent
     }
+experimental-features-title = Foncions experimentalas
+experimental-features-name = Nom
+experimental-features-value = Valor
 modified-key-prefs-title = Preferéncias modificadas importantas
 modified-prefs-name = Nom
 modified-prefs-value = Valor
@@ -262,6 +271,9 @@ blocklisted-bug = Plaçat dins la lista de blocatge per causa de donadas conegud
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = error { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Botat en lista negra a causa d’un problèma conegut : <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Plaçat dins la lista de blocatge; còde d'error { $failureCode }

@@ -120,6 +120,24 @@ browser-data-passwords-checkbox =
 # label in the main hamburger menu that opens about:logins.
 browser-data-passwords-label =
     .value = ข้อมูลการเข้าสู่ระบบและรหัสผ่านที่บันทึกไว้
+browser-data-bookmarks-checkbox =
+    .label =
+        { $browser ->
+            [ie] รายการโปรด
+            [edge] รายการโปรด
+           *[other] ที่คั่นหน้า
+        }
+browser-data-bookmarks-label =
+    .value =
+        { $browser ->
+            [ie] รายการโปรด
+            [edge] รายการโปรด
+           *[other] ที่คั่นหน้า
+        }
+browser-data-otherdata-checkbox =
+    .label = ข้อมูลอื่น ๆ
+browser-data-otherdata-label =
+    .label = ข้อมูลอื่น ๆ
 browser-data-session-checkbox =
     .label = หน้าต่างและแท็บ
 browser-data-session-label =

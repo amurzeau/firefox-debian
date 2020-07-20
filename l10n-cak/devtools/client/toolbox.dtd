@@ -134,7 +134,7 @@
 <!-- LOCALIZATION NOTE (options.timestampMessages.label): This is the
    - label for the checkbox that toggles timestamps in the Web Console -->
 <!ENTITY options.timestampMessages.label      "Ketzij taq retal q'ijul">
-<!ENTITY options.timestampMessages.tooltip    "We natzïj re cha'oj re', ri taq choloj chuqa' elem pa ri Ajk'amaya'l temeb'äl xtuk'üt pe jun retal q'ijul">
+<!ENTITY options.timestampMessages.tooltip    "We natzïj re cha'oj re', ri taq choloj chuqa' ri nilitäj pa ri Ajk'amaya'l temeb'äl xtuk'üt pe jun retal q'ijul">
 
 <!-- LOCALIZATION NOTE (options.debugger.label): This is the label for the
   -  heading of the group of Debugger preferences in the options panel. -->
@@ -142,7 +142,7 @@
 
 <!-- LOCALIZATION NOTE (options.sourceMaps.label): This is the
    - label for the checkbox that toggles source maps in all tools -->
-<!ENTITY options.sourceMaps.label      "Titzij kitzub'al xe'el ">
+<!ENTITY options.sourceMaps.label      "Titzij Rusetul Xe'el">
 <!ENTITY options.sourceMaps.tooltip1   "We natzïj re cha'oj xe'el re' xke'atzu' pa ri taq samajib'äl.">
 
 <!-- LOCALIZATION NOTE (options.styleeditor.label): This is the label for the
@@ -185,7 +185,7 @@
 <!ENTITY options.sourceeditor.detectindentation.tooltip "Tawila' ri ruchi' cholaj ri k'o ruq'ij chupam ruxe'el">
 <!ENTITY options.sourceeditor.autoclosebrackets.label   "Tutz'apij ri' ruyon ri q'inijuch'">
 <!ENTITY options.sourceeditor.autoclosebrackets.tooltip "Tich'ap pa ruyonil tz'apin taq q'inijuch'">
-<!ENTITY options.sourceeditor.expandtab.label           "Ruchi' cholaj nrokisab'ej taq kojol ">
+<!ENTITY options.sourceeditor.expandtab.label           "Ruchi' cholaj nrokisab'ej taq kojol">
 <!ENTITY options.sourceeditor.expandtab.tooltip         "Ke'okisäx taq kojol pa ruk'exel ri rutz'ib' alk'utu'">
 <!ENTITY options.sourceeditor.tabsize.label             "Runimilem ruwi'">
 <!ENTITY options.sourceeditor.tabsize.accesskey         "R">

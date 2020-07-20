@@ -14,6 +14,12 @@ extensions-name = B'i'aj
 extensions-enabled = Tzijon
 extensions-version = Ruwäch
 extensions-id = ID
+support-addons-title = Taq tz'aqat
+support-addons-name = B'i'aj
+support-addons-type = Ruwäch
+support-addons-enabled = Tzijon
+support-addons-version = Ruwäch
+support-addons-id = ID
 security-software-title = Software de seguridad
 security-software-type = Ruwäch
 security-software-name = B'i'aj
@@ -41,7 +47,7 @@ app-basics-update-dir =
        *[other] Rumolb'al K'exoj
     }
 app-basics-update-history = Kinatab'al taq k'exoj ruwäch
-app-basics-show-update-history = Tik'ut pe ri kinatab'al taq k'exoj ruwäch
+app-basics-show-update-history = Tik'ut Kinatab'al taq K'exoj
 # Represents the path to the binary used to start the application.
 app-basics-binary = Ruwinari Chokoy
 app-basics-profile-dir =
@@ -71,6 +77,9 @@ show-dir-label =
         [windows] Tijaq yakwuj
        *[other] Tijaq ri cholb'äl
     }
+experimental-features-title = Soltojtob'enel taq Rub'anikil
+experimental-features-name = B'i'aj
+experimental-features-value = Retal
 modified-key-prefs-title = K'exon nimaläj taq ajowanïk
 modified-prefs-name = B'i'aj
 modified-prefs-value = Retal
@@ -96,7 +105,7 @@ place-database-title = Taq kik'ojlem cholxe'el tzij
 place-database-integrity = Ch'ajch'ojri'ïl
 place-database-verify-integrity = Tinik'öx ch'ajch'ojri'ïl
 js-title = JavaScript
-js-incremental-gc = Rusik'ik k'iyirisan q'ayïs
+js-incremental-gc = Rusik'ik k'iyirisan q'ayïs\u0020
 a11y-title = Okel
 a11y-activated = Tzijïl
 a11y-force-disabled = Tichajïx apo ri okel
@@ -129,7 +138,7 @@ max-audio-channels = Nima'q taq b'ey
 channel-layout = Ruwachib'enik Ajowan B'ey
 sample-rate = Ajowan Q'ijun Tz'etb'äl
 roundtrip-latency = Rulatensya b'enam chuqa' tzolojnem (junaman jech'unïk)
-media-title = Q'ojom
+media-title = K'ïy k'oxom
 media-output-devices-title = Elem taq Okisaxel
 media-input-devices-title = Okib'äl taq Okisaxel
 media-device-name = B'i'aj
@@ -309,7 +318,7 @@ launcher-process-status-unknown = Man etaman ta täq rub'anikil
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
 multi-process-status-0 = Tzijon ruma ri winäq
 multi-process-status-1 = Tzijon wi pe
-multi-process-status-2 = Chupül
+multi-process-status-2 = Chupun
 multi-process-status-4 = Chupun kuma ri taq samajib'äl richin okel
 multi-process-status-6 = Xchuputäj ruma xatz'ib'aj rucholajem tzij ri man koch'el ta
 multi-process-status-7 = Xchuputäj kuma ri taq tz'aqat

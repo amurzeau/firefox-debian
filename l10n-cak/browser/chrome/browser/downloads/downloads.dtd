@@ -15,7 +15,7 @@
 
 <!ENTITY cmd.pause.label                  "Rupab'axik">
 <!ENTITY cmd.pause.accesskey              "R">
-<!ENTITY cmd.resume.label                 "Tisamajïx chik qa">
+<!ENTITY cmd.resume.label                 "Titikïr chik el">
 <!ENTITY cmd.resume.accesskey             "T">
 <!ENTITY cmd.cancel.label                 "Tiq'at">
 <!-- LOCALIZATION NOTE (cmd.show.label, cmd.show.accesskey, cmd.showMac.label,
@@ -23,17 +23,17 @@
      The show and showMac commands are never shown together, thus they can share
      the same access key (though the two access keys can also be different).
      -->
-<!ENTITY cmd.show.label                   "Tijaq ri yaksamaj k'o rupam">
+<!ENTITY cmd.show.label                   "Tijaq ri Yaksamaj K'o Rupam">
 <!ENTITY cmd.show.accesskey               "T">
-<!ENTITY cmd.showMac.label                "Tik'ut pe pan ilonel">
+<!ENTITY cmd.showMac.label                "Tik'ut Pa Finder">
 <!ENTITY cmd.showMac.accesskey            "i">
 <!ENTITY cmd.showDownloads.label          "Tik'ut pe Kiyakwuj taq Qasanïk">
 <!ENTITY cmd.retry.label                  "Titojtob'ëx chik">
 <!ENTITY cmd.goToDownloadPage.label       "Tib'e pa ri ruxaq akuchi' niqasäx">
 <!ENTITY cmd.goToDownloadPage.accesskey   "T">
-<!ENTITY cmd.copyDownloadLink.label       "Tiwachib'ëx ri rub'ey richin niqasäx">
+<!ENTITY cmd.copyDownloadLink.label       "Tiwachib'ëx Ruximonel Qasanïk">
 <!ENTITY cmd.copyDownloadLink.accesskey   "r">
-<!ENTITY cmd.removeFromHistory.label      "Tiyuj el chupam ri natab'äl">
+<!ENTITY cmd.removeFromHistory.label      "Tiyuj Pa Natab'äl">
 <!ENTITY cmd.removeFromHistory.accesskey  "y">
 <!ENTITY cmd.clearList2.label             "Tiyuj nab'ey tz'ub'al pas">
 <!ENTITY cmd.clearList2.accesskey         "y">
@@ -47,7 +47,7 @@
 <!-- LOCALIZATION NOTE (cmd.removeFile.label):
      This is the tooltip of the action button shown when malware is blocked.
      -->
-<!ENTITY cmd.removeFile.label             "Telesäx el ri yakb'äl">
+<!ENTITY cmd.removeFile.label             "Tiyuj Yakb'äl">
 <!-- LOCALIZATION NOTE (cmd.chooseUnblock.label):
      This is the tooltip of the action button shown when potentially unwanted
      downloads are blocked. This opens a dialog where the user can choose
@@ -77,7 +77,7 @@
      Displayed when hovering a download which is able to be retried by users,
      indicates that it's possible to download this file again.
      -->
-<!ENTITY retryDownload.label              "Titojtob'ëx chik qasanïk">
+<!ENTITY retryDownload.label              "Titojtob'ëx chik Niqasäx">
 
 <!-- LOCALIZATION NOTE (cancelDownload.label):
      Displayed when hovering a download which is able to be cancelled by users,
@@ -96,7 +96,7 @@
      malware, when there is an associated explanation page on the Mozilla site.
      Note: This string doesn't exist in the UI yet.  See bug 1053890.
      -->
-<!ENTITY learnMore.label                  "Tetamäx ch'aqa' chik">
+<!ENTITY learnMore.label                  "Tetamäx Ch'aqa' Chik">
 
 <!-- LOCALIZATION NOTE (downloadsHistory.label, downloadsHistory.accesskey):
      This string is shown at the bottom of the Downloads Panel when all the

@@ -6,6 +6,7 @@
 ## These messages are used as headings in the recommendation doorhanger
 
 cfr-doorhanger-extension-heading = సిఫార్సు చేయబడిన పొడగింత
+cfr-doorhanger-feature-heading = సిఫార్సు చేసిన సౌలభ్యం
 cfr-doorhanger-pintab-heading = ఇది ప్రయత్నించండి: ట్యాబును పిన్ చెయ్యడం
 
 ##
@@ -28,6 +29,14 @@ cfr-doorhanger-extension-author = { $name } నుండి
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = సిఫార్సు
+cfr-doorhanger-extension-notification2 = సిఫార్సు
+    .tooltiptext = పొడగింత సిఫార్సు
+    .a11y-announcement = పొడగింత సిఫార్సు అందుబాటులో ఉంది
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = సిఫార్సు
+    .tooltiptext = సౌలభ్యపు సిఫార్సు
+    .a11y-announcement = సౌలభ్యపు సిఫార్సు అందుబాటులో ఉంది
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -73,7 +82,12 @@ cfr-whatsnew-button =
     .label = కొత్తవి ఏమిటి
     .tooltiptext = కొత్తవి ఏమిటి
 cfr-whatsnew-panel-header = కొత్తవి ఏమిటి
+cfr-whatsnew-release-notes-link-text = విడుదల గమనికలను చదవండి
+cfr-whatsnew-fx70-title = మీ గోప్యత కోసం { -brand-short-name } ఇప్పుడు మరింత గట్టిగా పోరాడుతుంది
+cfr-whatsnew-tracking-protect-title = ట్రాకర్ల నుండి మిమ్మల్ని మీరు రక్షించుకోండి
+cfr-whatsnew-tracking-protect-link-text = మీ నివేదికను చూడండి
 cfr-whatsnew-tracking-blocked-link-text = నివేదికను చూడండి
+cfr-whatsnew-lockwise-take-link-text = అనువర్తనాన్ని పొందండి
 
 ## Search Bar
 
@@ -127,4 +141,16 @@ cfr-doorhanger-milestone-ok-button = అన్నింటినీ చూడం
 
 
 ## Picture-in-Picture fullscreen message
+
+
+## Protections Dashboard message
+
+
+## Better PDF message
+
+
+## DOH Message
+
+
+## What's new: Cookies message
 

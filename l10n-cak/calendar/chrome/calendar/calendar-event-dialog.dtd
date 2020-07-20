@@ -70,7 +70,7 @@
 
 <!ENTITY  event.menu.item.delete.label                    "Tiyuj…">
 <!ENTITY  event.menu.item.delete.accesskey                "y">
-<!ENTITY  event.menu.item.page.setup.label                "Runuk'ulem ruxaq">
+<!ENTITY  event.menu.item.page.setup.label                "Runuk'ulem Ruxaq">
 <!ENTITY  event.menu.item.page.setup.accesskey            "u">
 <!ENTITY  event.menu.item.print.label                     "Titz'ajb'äx">
 <!ENTITY  event.menu.item.print.accesskey                 "b">
@@ -87,11 +87,11 @@
 <!ENTITY  event.menu.edit.copy.accesskey                  "C">
 <!ENTITY  event.menu.edit.paste.label                     "Titz'ajb'äx">
 <!ENTITY  event.menu.edit.paste.accesskey                 "b">
-<!ENTITY  event.menu.edit.select.all.label                "Ticha' ronojel">
+<!ENTITY  event.menu.edit.select.all.label                "Ticha' Ronojel">
 <!ENTITY  event.menu.edit.select.all.accesskey            "A">
 
 <!ENTITY  event.menu.view.label                           "Titz'et">
-<!ENTITY  event.menu.view.accesskey                       "V">
+<!ENTITY  event.menu.view.accesskey                       "t">
 <!ENTITY  event.menu.view.toolbars.label                  "Taq cholsamajib'äl">
 <!ENTITY  event.menu.view.toolbars.accesskey              "T">
 <!ENTITY  event.menu.view.toolbars.customize.label        "Tichinäx…">
@@ -130,7 +130,7 @@
 
 <!-- Main page -->
 <!ENTITY event.title.textbox.label                        "B'i'aj:" >
-<!ENTITY event.location.label                             "K'ojlib'äl:" >
+<!ENTITY event.location.label                             "Ochochib'al:" >
 <!ENTITY event.categories.label                           "Ruwäch:">
 <!ENTITY event.calendar.label                             "Cholb'äl q'ij:" >
 <!ENTITY event.calendar.accesskey                         "C">
@@ -143,7 +143,7 @@
 <!ENTITY event.attachments.url.label                      "Ajk'amaya'l Ruxaq…">
 <!ENTITY event.attachments.popup.remove.label             "Tiyuj" >
 <!ENTITY event.attachments.popup.open.label               "Tijaq" >
-<!ENTITY event.attachments.popup.removeAll.label          "Keyuj Konojel" >
+<!ENTITY event.attachments.popup.removeAll.label          "Keyuj Ronojel" >
 <!ENTITY event.priority2.label                            "Ya'on ruq'ij:">
 
 <!ENTITY event.reminder.custom.label                      "Ichinan…" >

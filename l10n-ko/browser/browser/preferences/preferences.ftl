@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name } 실험
+category-experimental =
+    .tooltiptext = { -brand-short-name } 실험
+pane-experimental-subtitle = 주의해서 진행하세요
+pane-experimental-search-results-header = { -brand-short-name } 실험: 주의해서 진행하세요
+pane-experimental-description = 고급 구성 설정을 변경하면 { -brand-short-name }의 성능 또는 보안에 영향을 줄 수 있습니다.
 help-button-label = { -brand-short-name } 도움말
 addons-button-label = 확장 기능 및 테마
 focus-search =
@@ -487,7 +493,6 @@ home-prefs-topsites-description = 가장 많이 방문한 사이트
 
 home-prefs-recommended-by-header =
     .label = { $provider } 추천
-home-prefs-recommended-by-description = 여러분에게 맞춰진 웹에서 제공되는 훌륭한 콘텐츠
 home-prefs-recommended-by-description-update = { $provider }에 의해 큐레이션된 웹의 뛰어난 콘텐츠
 
 ##
@@ -547,7 +552,6 @@ search-show-suggestions-above-history-option =
     .label = 주소 표시줄 결과의 방문 기록 앞에 검색 제안 표시
 search-show-suggestions-private-windows =
     .label = 사생활 보호 창에 검색 제안 표시
-suggestions-addressbar-settings = 방문 기록, 북마크 및 탭 제안에 대한 설정 변경
 suggestions-addressbar-settings-generic = 다른 주소 표시줄 제안에 대한 설정 변경
 search-suggestions-cant-show = 기록을 기억하지 않도록 { -brand-short-name }를 구성했기 때문에 검색 제안이 주소창 결과에 표시되지 않습니다.
 search-one-click-header = 원클릭 검색 엔진
@@ -573,7 +577,7 @@ search-keyword-warning-bookmark = 북마크에서 이미 사용 중인 키워드
 
 ## Containers Section
 
-containers-back-link = « 뒤로가기
+containers-back-link = « 뒤로 가기
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -775,7 +779,7 @@ forms-breach-alerts =
 forms-breach-alerts-learn-more-link = 더 알아보기
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
-    .label = 로그인과 비밀번호 자동완성
+    .label = 로그인과 비밀번호 자동 채우기
     .accesskey = i
 forms-saved-logins =
     .label = 저장된 로그인…
@@ -820,25 +824,25 @@ history-remember-option-never =
     .label = 기록을 기억 안 함
 history-remember-option-custom =
     .label = 기록에 사용자 지정 설정 사용
-history-remember-description = { -brand-short-name }가 방문, 다운로드, 양식 및 검색 기록을 저장합니다.
-history-dontremember-description = { -brand-short-name }는 사생활 보호 모드와 같은 설정을 가지며 웹 사이트 방문 중 어떤 기록도 저장하지 않습니다.
+history-remember-description = { -brand-short-name }가 방문, 다운로드, 양식 및 검색 기록을 기억합니다.
+history-dontremember-description = { -brand-short-name }는 사생활 보호 모드와 같은 설정을 가지며, 웹 사이트 방문 중 어떤 기록도 기억하지 않습니다.
 history-private-browsing-permanent =
     .label = 항상 사생활 보호 모드 사용
     .accesskey = p
 history-remember-browser-option =
-    .label = 방문 및 다운로드 기록 저장
+    .label = 방문 및 다운로드 기록 기억
     .accesskey = b
 history-remember-search-option =
-    .label = 검색 및 양식 기록 저장
+    .label = 검색 및 양식 기록 기억
     .accesskey = f
 history-clear-on-close-option =
-    .label = { -brand-short-name }를 닫을 때 기록 삭제
+    .label = { -brand-short-name }를 닫을 때 기록 지우기
     .accesskey = r
 history-clear-on-close-settings =
     .label = 설정…
     .accesskey = t
 history-clear-button =
-    .label = 기록 삭제…
+    .label = 기록 지우기…
     .accesskey = s
 
 ## Privacy Section - Site Data
@@ -853,7 +857,7 @@ sitedata-learn-more = 더 알아보기
 sitedata-delete-on-close =
     .label = { -brand-short-name }를 닫을 때 쿠키와 사이트 데이터를 삭제
     .accesskey = c
-sitedata-delete-on-close-private-browsing = 영구 사생활 보호 모드에서는 { -brand-short-name }가 닫히면 쿠키와 사이트 데이터가 항상 지워집니다.
+sitedata-delete-on-close-private-browsing = 영구 사생활 보호 모드에서는 { -brand-short-name }를 닫으면 쿠키와 사이트 데이터가 항상 지워집니다.
 sitedata-allow-cookies-option =
     .label = 쿠키와 사이트 데이터 허용
     .accesskey = A
@@ -879,7 +883,7 @@ sitedata-option-block-all-third-party =
 sitedata-option-block-all =
     .label = 모든 쿠키 (웹 사이트가 제대로 작동 안하게 됨)
 sitedata-clear =
-    .label = 데이터 삭제…
+    .label = 데이터 지우기…
     .accesskey = l
 sitedata-settings =
     .label = 데이터 관리…
@@ -912,7 +916,7 @@ addressbar-suggestions-settings = 검색 엔진 제안 설정 변경
 ## Privacy Section - Content Blocking
 
 content-blocking-header = 콘텐츠 차단
-content-blocking-section-description = 탐색하는 동안 개인 정보를 보호하세요. 사용자가 방문하는 사이트를 추적하고 개인을 식별하는 보이지 않는 콘텐츠를 차단합니다. 이 콘텐츠 중 일부를 차단하면 페이지가 더 빨리 로드 될 수 있습니다.
+content-blocking-section-description = 탐색하는 동안 개인 정보를 보호하세요. 사용자가 방문하는 사이트를 추적하고 개인을 식별하는 보이지 않는 콘텐츠를 차단합니다. 이 콘텐츠 중 일부를 차단하면 페이지가 더 빨리 로드될 수 있습니다.
 content-blocking-enhanced-tracking-protection = 향상된 추적 방지 기능
 content-blocking-section-top-level-description = 추적기는 온라인에서 사용자를 따라다니며 탐색 습관과 관심사에 대한 정보를 수집합니다. { -brand-short-name }는 이러한 많은 추적기 및 기타 악성 스크립트를 차단합니다.
 content-blocking-learn-more = 더 알아보기
@@ -963,7 +967,7 @@ content-blocking-all-windows-tracking-content = 모든 창의 추적 콘텐츠
 content-blocking-all-third-party-cookies = 모든 제3자 쿠키
 content-blocking-cryptominers = 크립토마이너
 content-blocking-fingerprinters = 핑거프린터
-content-blocking-warning-title = 조심하세요!
+content-blocking-warning-title = 주의하세요!
 content-blocking-warning-description = 콘텐츠를 차단하면 일부 웹 사이트가 깨질 수 있습니다. 신뢰할 수 있는 사이트에 대한 차단은 쉽게 해제 할 수 있습니다.
 content-blocking-learn-how = 방법 알아보기
 content-blocking-and-isolating-etp-warning-description = 추적기 차단 및 쿠키 격리는 일부 사이트의 기능에 영향을 줄 수 있습니다. 모든 콘텐츠를 로드하려면 추적기가 있는 페이지를 다시 로드하세요.
@@ -1145,6 +1149,18 @@ space-alert-under-5gb-ok-button =
     .label = 확인
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } 디스크 용량이 부족합니다. 웹 사이트 내용이 제대로 표시되지 않을 수 있습니다. 더 나은 인터넷 경험을 위해 디스크 용량을 최적화하는 방법을 알아보려면 “더 알아보기”를 방문하세요.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = HTTPS 전용 모드
+httpsonly-description = HTTPS는 { -brand-short-name }와 사용자가 방문한 웹 사이트 간에 안전한 암호화된 연결을 제공합니다. 대부분의 웹 사이트는 HTTPS를 지원하며, HTTPS 전용 모드를 사용하도록 설정한 경우 { -brand-short-name }는 모든 연결을 HTTPS로 업그레이드합니다.
+httpsonly-learn-more = 더 알아보기
+httpsonly-radio-enabled =
+    .label = 모든 창에서 HTTPS 전용 모드 사용
+httpsonly-radio-enabled-pbm =
+    .label = 사생활 보호 창에서만 HTTPS 전용 모드 사용
+httpsonly-radio-disabled =
+    .label = HTTPS 전용 모드 사용 안 함
 
 ## The following strings are used in the Download section of settings
 

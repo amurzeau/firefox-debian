@@ -200,6 +200,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = 檢視全部
     .accesskey = S
+cfr-doorhanger-milestone-close-button = 關閉
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -233,3 +235,18 @@ cfr-whatsnew-protections-icon-alt = 盾牌圖示
 
 cfr-whatsnew-better-pdf-header = 更好的 PDF 閱讀體驗
 cfr-whatsnew-better-pdf-body = 現在可以直接在 { -brand-short-name } 直接開啟 PDF 文件，更輕鬆完成工作。
+
+## DOH Message
+
+cfr-doorhanger-doh-body = 您的隱私權相當重要。現在起，{ -brand-short-name } 會在您上網時，盡可能透過夥伴所提供的服務安全地進行 DNS 查詢，以保護您的隱私。
+cfr-doorhanger-doh-header = 更安全、加密的 DNS 查詢
+cfr-doorhanger-doh-primary-button = 好，知道了
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = 停用
+    .accesskey = D
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = 自動保護，不受隱蔽的手法追蹤
+cfr-whatsnew-clear-cookies-body = 有些網站會將您重新導向到偷偷設定 Cookie 進行追蹤的網站。{ -brand-short-name } 現在起，會自動清除這些 Cookie 讓您不被追蹤。
+cfr-whatsnew-clear-cookies-image-alt = 封鎖 Cookie 的插圖

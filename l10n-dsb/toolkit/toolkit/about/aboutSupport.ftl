@@ -14,6 +14,12 @@ extensions-name = Mě
 extensions-enabled = Zmóžnjony
 extensions-version = Wersija
 extensions-id = ID
+support-addons-title = Dodanki
+support-addons-name = Mě
+support-addons-type = Typ
+support-addons-enabled = Zmóžnjony
+support-addons-version = Wersija
+support-addons-id = ID
 security-software-title = Wěstotna software
 security-software-type = Typ
 security-software-name = Mě
@@ -71,6 +77,9 @@ show-dir-label =
         [windows] Zarědnik wócyniś
        *[other] Zarědnik wócyniś
     }
+experimental-features-title = Eksperimentelne funkcije
+experimental-features-name = Mě
+experimental-features-value = Gódnota
 modified-key-prefs-title = Wažne změnjone nastajenja
 modified-prefs-name = Mě
 modified-prefs-value = Gódnota
@@ -272,6 +281,9 @@ blocklisted-bug = W blokěrowańskej lisćinje znatych problemow dla
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = programowa zmólka { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = W blokěrowańskej lisćinje znatych problemow dla: <a data-l10n-name="bug-link">programowa zmólka { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = W blokěrowańskej lisćinje; zmólkowy kod { $failureCode }

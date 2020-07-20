@@ -193,6 +193,8 @@ cfr-doorhanger-cryptominers-heading = { -brand-short-name } نے اس صفحے �
 
 cfr-doorhanger-milestone-ok-button = تمام دیکھیں
     .accesskey = س
+cfr-doorhanger-milestone-close-button = بند کریں
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -217,3 +219,8 @@ cfr-whatsnew-pip-fullscreen-icon-alt = پکچر-ان-پکچر آئیکن
 ## Better PDF message
 
 cfr-whatsnew-better-pdf-header = بہتر پی ڈی ایف کا تجربہ
+
+## DOH Message
+
+cfr-doorhanger-doh-primary-button = ٹھیک ہے مجھے سمجھ آگئی ہے
+    .accesskey = O

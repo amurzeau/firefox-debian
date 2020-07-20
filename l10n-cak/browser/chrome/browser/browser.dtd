@@ -15,7 +15,7 @@
                                                                 inside the private browsing mode -->
 <!ENTITY mainWindow.titlePrivateBrowsingSuffix "(Palaqinem Wichin)">
 
-<!ENTITY appmenu.tooltip                     "Tijaq ri k'utüy samaj">
+<!ENTITY appmenu.tooltip                     "Tijaq k'utsamaj">
 <!ENTITY navbarOverflow.label                "Ch'aqa' chik Samajib'äl…">
 
 <!-- Tab context menu -->
@@ -43,24 +43,24 @@ same accesskey but will never be visible at the same time. -->
 <!ENTITY  undoCloseTab.accesskey             "T">
 <!ENTITY  hiddenTabs.label                   "Ewan taq Ruwi'">
 
-<!ENTITY  listAllTabs.label      "Kik'utik konojel ri taq ruwi' kajtz'ïk">
+<!ENTITY  listAllTabs.label      "Kecholajïx ronojel taq ruwi'">
 <!-- LOCALIZATION NOTE (allTabsMenu.searchTabs.label): "Search" is a verb, as
 in "Search through tabs". -->
 <!ENTITY  allTabsMenu.searchTabs.label       "Kekanöx taq Ruwi'">
 
-<!ENTITY tabCmd.label "K'ak'a' ruwi'">
+<!ENTITY tabCmd.label "K'ak'a' Ruwi'">
 <!ENTITY tabCmd.accesskey "r">
 <!ENTITY tabCmd.commandkey "t">
 <!-- LOCALIZATION NOTE (openLocationCmd.label): "Open Location" is only
 displayed on OS X, and only on windows that aren't main browser windows, or
 when there are no windows but Firefox is still running. -->
 <!ENTITY openLocationCmd.label "Tijaq ri k'ojlemal…">
-<!ENTITY openFileCmd.label "Tijaq yakb'äl…">
+<!ENTITY openFileCmd.label "Tijaq Yakb'äl…">
 <!ENTITY openFileCmd.accesskey "T">
 <!ENTITY openFileCmd.commandkey "o">
 <!ENTITY printSetupCmd.label "Tinuk'samajïx ruxaq…">
 <!ENTITY printSetupCmd.accesskey "n">
-<!ENTITY printPreviewCmd.label "Nab'ey tz'etoj">
+<!ENTITY printPreviewCmd.label "Nab'ey Tz'etoj">
 <!ENTITY printPreviewCmd.accesskey "e">
 <!ENTITY printCmd.label "Titz'ajb'äx…">
 <!ENTITY printCmd.accesskey "T">
@@ -68,7 +68,7 @@ when there are no windows but Firefox is still running. -->
 <!ENTITY importFromAnotherBrowserCmd.label "Tijik' pa Jun Chik Okik'amaya'l…">
 <!ENTITY importFromAnotherBrowserCmd.accesskey "T">
 
-<!ENTITY taskManagerCmd.label "Kinuk'samajixik taq Samaj">
+<!ENTITY taskManagerCmd.label "Kinuk'samajel taq Samaj">
 
 <!ENTITY goOfflineCmd.label "Chupül rusamaj">
 <!ENTITY goOfflineCmd.accesskey "m">
@@ -212,7 +212,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY closeWindow.label "Titz'apïx Tzuwäch">
 <!ENTITY closeWindow.accesskey "w">
 
-<!ENTITY bookmarksMenu.label "Yaketal">
+<!ENTITY bookmarksMenu.label "Taq yaketal">
 <!ENTITY bookmarksMenu.accesskey "y">
 <!ENTITY bookmarkThisPageCmd.label "Titz'aqatisäx re ruxaq re' pa taq yaketal">
 <!ENTITY editThisBookmarkCmd.label "Tinuk' re yaketal re'">
@@ -234,12 +234,11 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY forwardButton.tooltip        "Jun chik ruxaq">
 <!ENTITY backForwardButtonMenu.tooltip "Tapitz'a' ruka'n ruwi' ri ch'oy, taqirirej pa xulan richin natz'ët ri natab'äl">
 <!ENTITY backForwardButtonMenuMac.tooltip "Taqirirej richin niq'alajin pe ri natab'äl">
-<!ENTITY reloadCmd.label              "Tisamajib'ëx chik">
+<!ENTITY reloadCmd.label              "Tisamajïx chik">
 <!ENTITY reloadCmd.accesskey          "c">
 <!ENTITY stopCmd.label                "Tiq'at">
 <!ENTITY stopCmd.accesskey            "T">
 <!ENTITY stopCmd.macCommandKey        ".">
-
 <!ENTITY goEndCap.tooltip             "Tib'e pa JAY richin ri rucholob'al taq ochochib'äl">
 
 <!ENTITY printButton.label            "Titz'ajb'äx">
@@ -257,7 +256,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "Tinuk'samajïx rokisaxik nak'ab'äl">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "Tijalwachïx we yatikïr ye'ak'ül taq rutzijol re ruxaq k'amaya'l re'">
 <!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "Keyak taq tzij pa Jutaqil Yakoj">
-
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "Ri Okik'amaya'l k'o pa ruq'a' ri näj chajinïk">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "Tijaq ri Ajk'amaya'l Juxunem pas">
 <!ENTITY urlbar.storageAccessAnchor.tooltip               "Tijaq ri kipas kiya'oj q'ij taq rusamaj okem pa k'amaya'l">
@@ -288,27 +286,24 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY urlbar.openHistoryPopup.tooltip                "Tik'ut pe ri natab'äl">
 
-<!ENTITY urlbar.permissionsGranted.tooltip       "Xaya' ruwi' ya'oj q'ij chi re re ajk'amaya'l ruxaq re'.">
-
-
 <!ENTITY searchItem.title             "Tikanöx">
 
 <!-- Toolbar items -->
 <!ENTITY homeButton.label             "Tikirib'äl">
 <!ENTITY homeButton.defaultPage.tooltip "&brandShortName; Rutikirib'al Ruxaq">
 
-<!ENTITY bookmarksButton.label          "Yaketal">
+<!ENTITY bookmarksButton.label          "Taq yaketal">
 <!ENTITY bookmarksCmd.commandkey "b">
 
-<!ENTITY bookmarksSubview.label             "Yaketal">
-<!ENTITY bookmarksMenuButton2.label         "Kik'utsamaj Yaketal">
+<!ENTITY bookmarksSubview.label             "Taq yaketal">
+<!ENTITY bookmarksMenuButton2.label         "Kik'utsamaj taq Yaketal">
 <!ENTITY bookmarksMenuButton.other.label    "Ch'aqa' chik taq Yaketal">
 <!ENTITY bookmarksMenuButton.mobile.label   "Taq ruyaketal oyonib'äl">
 <!ENTITY viewBookmarksSidebar2.label        "Titz'et ri ajxikin kipas taq yaketal">
 <!ENTITY hideBookmarksSidebar.label         "Tewüx ri Ajxikin Kipas taq Yaketal">
 <!ENTITY viewBookmarksToolbar.label         "Titz'et rukatz'ik taq yaketal">
 <!ENTITY hideBookmarksToolbar.label         "Tewüx ri Kikajtz'ik taq Yaketal">
-<!ENTITY searchBookmarks.label              "Kekanöx taq yaketal">
+<!ENTITY searchBookmarks.label              "Kekanöx Yaketal">
 <!ENTITY bookmarkingTools.label             "Taq kisamajib'al ri yakoj etal">
 <!ENTITY addBookmarksMenu.label             "Titz'aqatisäx Kik'utsamaj taq Yaketal pa Molsamajib'äl">
 <!ENTITY removeBookmarksMenu.label          "Tiyuj el Kik'utsamaj taq Yaketal pa Molsamajib'äl">
@@ -360,8 +355,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newPrivateWindow.label     "K'ak'a' ichinan tzuwäch">
 <!ENTITY newPrivateWindow.accesskey "t">
 
-<!ENTITY editMenu.label         "K'exob'äl">
-<!ENTITY editMenu.accesskey       "e">
+<!ENTITY editMenu.label         "Nuk'b'äl">
+<!ENTITY editMenu.accesskey       "N">
 <!ENTITY undoCmd.label            "Titzolïx">
 <!ENTITY undoCmd.key            "Z">
 <!ENTITY undoCmd.accesskey          "t">
@@ -380,26 +375,25 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY deleteCmd.label          "Tiyuj">
 <!ENTITY deleteCmd.key            "D">
 <!ENTITY deleteCmd.accesskey        "T">
-<!ENTITY selectAllCmd.label         "Ticha' ronojel">
+<!ENTITY selectAllCmd.label         "Ticha' Ronojel">
 <!ENTITY selectAllCmd.key         "A">
 <!ENTITY selectAllCmd.accesskey       "r">
 <!ENTITY preferencesCmd2.label       "Taq cha'oj">
 <!ENTITY preferencesCmd2.accesskey     "c">
-<!ENTITY preferencesCmdUnix.label       "Taq Ajowanel">
+<!ENTITY preferencesCmdUnix.label       "Taq ajowab'äl">
 <!ENTITY preferencesCmdUnix.accesskey     "o">
-<!ENTITY logins.label                           "Kitikirisaxik molojri'ïl chuqa' Ewan taq Tzij">
+<!ENTITY logins.label                           "Kitikirisaxik Molojri'ïl chuqa' Ewan taq Tzij">
 
-<!ENTITY clearRecentHistory.label               "Tiyuj ri k'ak'a' natab'äl…">
+<!ENTITY clearRecentHistory.label               "Tiyuj K'ak'a' Natab'äl…">
 
 <!ENTITY privateBrowsingCmd.commandkey          "p">
 
 <!ENTITY viewMenu.label         "Tz'etob'äl">
 <!ENTITY viewMenu.accesskey       "T">
-<!ENTITY viewToolbarsMenu.label       "Cholsamajib'äl">
+<!ENTITY viewToolbarsMenu.label       "Taq cholsamajib'äl">
 <!ENTITY viewToolbarsMenu.accesskey     "i">
 <!ENTITY viewSidebarMenu.label "Chuchi' Cholab'äl">
 <!ENTITY viewSidebarMenu.accesskey "C">
-
 <!ENTITY viewCustomizeToolbar.label       "Tichinäx…">
 <!ENTITY viewCustomizeToolbar.accesskey     "T">
 
@@ -408,16 +402,16 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY historyMenu.label "Natab'äl">
 <!ENTITY historyMenu.accesskey "t">
-<!ENTITY historyUndoMenu.label "Taq ruwi' k'a b'a' etz'apin">
+<!ENTITY historyUndoMenu.label "Taq Ruwi' k'a b'a' Ketz'apïx">
 <!-- LOCALIZATION NOTE (historyUndoWindowMenu): see bug 394759 -->
 <!ENTITY historyUndoWindowMenu.label "Taq k'ajtz'ib' k'a b'a' etz'apin">
-<!ENTITY historyRestoreLastSession.label "Titzolin pa ri molojri'ïl xik'o">
+<!ENTITY historyRestoreLastSession.label "Titzolin ri Jun Kan Molojri'ïl">
 
 <!ENTITY showAllHistoryCmd2.label "Tik'ut pe ronojel ri natab'äl">
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
 <!ENTITY appMenuHistory.showAll.label "Tik'ut pe ronojel ri natab'äl">
-<!ENTITY appMenuHistory.clearRecent.label "Tiyuj ri k'ak'a' natab'äl…">
+<!ENTITY appMenuHistory.clearRecent.label "Tiyuj K'ak'a' Natab'äl…">
 <!ENTITY appMenuHistory.restoreSession.label "Titzolin pa ri molojri'ïl xik'o">
 <!ENTITY appMenuHistory.viewSidebar.label "Titz'et runatab'al Sidebar">
 <!ENTITY appMenuHistory.hideSidebar.label "Tewäx Runatab'al Sidebar">
@@ -450,7 +444,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signin.label "Tatikirisaj molojri'ïl pa Ximojri'ïl">
 <!ENTITY appMenuRemoteTabs.signintosync.label "Tatz'ib'aj ab'i' pa &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.turnonsync.label "Tokisäx pa &syncBrand.shortName.label;…">
-<!ENTITY appMenuRemoteTabs.managedevices.label "Kenuk'samajïx taq okisaxel…">
+<!ENTITY appMenuRemoteTabs.managedevices.label "Kenuk'samajïx Okisab'äl…">
 <!ENTITY appMenuRemoteTabs.sidebar.label "Ketz'et ximïl taq ruwi' pa ajxikin kajtz'ik">
 <!ENTITY appMenuRemoteTabs.hidesidebar.label "Tewüx Ximïl taq Ruwi' pan Ajxikin Kajtz'ik">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Tokisäx Jun Chik Okisaxel">
@@ -494,8 +488,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY moreMenu.label "Ch'aqa' chik">
 
 <!ENTITY openCmd.commandkey           "l">
-
-<!ENTITY urlbar.placeholder2          "Tikanöx chuqa' titz'ib'äx ri ochochib'äl">
+<!ENTITY urlbar.placeholder2          "Tikanöx o titz'ib'äx ochochib'äl">
 <!ENTITY urlbar.accesskey             "d">
 <!-- LOCALIZATION NOTE (urlbar.extension.label): Used to indicate that a selected autocomplete entry is provided by an extension. -->
 <!ENTITY urlbar.extension.label       "K'amal:">
@@ -577,7 +570,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY searchSetAsDefault.label     "Tiya' achi'el ruk'amon wi pe chi kanob'äl">
 <!ENTITY searchSetAsDefault.accesskey "r">
 
-<!ENTITY openLinkCmdInTab.label       "Tijaq ximonel pa jun k'ak'a' ruwi'">
+<!ENTITY openLinkCmdInTab.label       "Tijaq Ximonel pa K'ak'a' Ruwi'">
 
 <!ENTITY openLinkCmdInTab.accesskey   "r">
 <!ENTITY openLinkCmd.label            "Tijaq ximonel tzij pa jun k'ak'a' Tzuwäch">
@@ -644,7 +637,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY emailPageCmd.label           "Titaq ximonel tzij…">
 <!ENTITY emailPageCmd.accesskey       "T">
-<!ENTITY savePageCmd.label            "Tiyak ruxaq achi'el…">
+<!ENTITY savePageCmd.label            "Tiyak Ruxaq Achi'el…">
 <!ENTITY savePageCmd.accesskey        "a">
 <!-- alternate for content area context menu -->
 <!ENTITY savePageCmd.accesskey2       "p">
@@ -653,9 +646,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY saveFrameCmd.accesskey       "R">
 <!ENTITY printFrameCmd.label          "Titz'ajb'äx ruchi'…">
 <!ENTITY printFrameCmd.accesskey      "T">
-<!ENTITY saveLinkCmd.label            "Tiyak ximon tzij achi'el…">
+<!ENTITY saveLinkCmd.label            "Tiyak Ximonel Achi'el…">
 <!ENTITY saveLinkCmd.accesskey        "o">
-<!ENTITY saveImageCmd.label           "Ruyakik wachib'äl achi'el…">
+<!ENTITY saveImageCmd.label           "Tiyak Wachib'äl Achi'el…">
 <!ENTITY saveImageCmd.accesskey       "y">
 <!ENTITY saveVideoCmd.label           "Tiyak silowachib'äl achi'el…">
 <!ENTITY saveVideoCmd.accesskey       "s">
@@ -676,10 +669,10 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 Location" and "Copy Email Address" should be the same if possible; the two
 context menu items are mutually exclusive. -->
 <!ENTITY copyLinkCmd.accesskey        "i">
-<!ENTITY copyImageCmd.label           "Ruwachib'exik rub'ey wachib'äl">
+<!ENTITY copyImageCmd.label           "Tiwachib'ëx Rub'ey Wachib'äl">
 <!ENTITY copyImageCmd.accesskey       "i">
-<!ENTITY copyImageContentsCmd.label   "Ruwachib'exik wachib'äl">
-<!ENTITY copyImageContentsCmd.accesskey  "R">
+<!ENTITY copyImageContentsCmd.label   "Tiwachib'ëx Wachib'äl">
+<!ENTITY copyImageContentsCmd.accesskey  "w">
 <!ENTITY copyVideoURLCmd.label        "Ruwachib'exik rub'ey silowachib'äl">
 <!ENTITY copyVideoURLCmd.accesskey    "w">
 <!ENTITY copyAudioURLCmd.label        "Ruwachib'exik rub'ey q'ojom">
@@ -760,7 +753,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY fullZoomReduceCmd.commandkey   "-">
 <!ENTITY fullZoomReduceCmd.commandkey2  "">
 
-<!ENTITY fullZoomResetCmd.label         "Tikirib'alil">
+<!ENTITY fullZoomResetCmd.label         "Titzolïx">
 <!ENTITY fullZoomResetCmd.accesskey     "T">
 <!ENTITY fullZoomResetCmd.commandkey    "0">
 <!ENTITY fullZoomResetCmd.commandkey2   "">
@@ -771,8 +764,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY fullZoom.label                 "Runimilem">
 <!ENTITY fullZoom.accesskey             "R">
 
-<!ENTITY sidebarCloseButton.tooltip     "Titz'apïx ajxikin kajtz'ik">
-<!ENTITY sidebarMenuClose.label         "Titz'apïx ajxikin">
+<!ENTITY sidebarCloseButton.tooltip     "Titz'apïx ajxikin">
+<!ENTITY sidebarMenuClose.label         "Titz'apïx Ajxikin">
 
 <!ENTITY quitApplicationCmdWin2.label       "Tel">
 <!ENTITY quitApplicationCmdWin2.accesskey   "e">
@@ -808,7 +801,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY bidiSwitchPageDirectionItem.label        "Rujalik rub'eyal re ruxaq re'">
 <!ENTITY bidiSwitchPageDirectionItem.accesskey    "r">
-<!ENTITY bidiSwitchTextDirectionItem.label        "Rujalik rub'eyal ri tz'ib'">
+<!ENTITY bidiSwitchTextDirectionItem.label        "Tijal Rub'eyal ri Tz'ib'">
 <!ENTITY bidiSwitchTextDirectionItem.accesskey    "r">
 <!ENTITY bidiSwitchTextDirectionItem.commandkey   "X">
 
@@ -821,20 +814,20 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY findAgainCmd.commandkey2 "VK_F3">
 <!ENTITY findSelectionCmd.commandkey "e">
 
-<!ENTITY spellAddDictionaries.label "Ketz'aqatisäx Soltzij…">
-<!ENTITY spellAddDictionaries.accesskey "R">
+<!ENTITY spellAddDictionaries.label "Ketz'aqatisäx taq Soltzij…">
+<!ENTITY spellAddDictionaries.accesskey "K">
 
 <!-- LOCALIZATION NOTE (editBookmark.panel.width): width of the bookmark panel.
      Should be large enough to fully display the Done and Cancel/
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
-<!ENTITY editBookmark.done.label                     "Xk'achoj">
+<!ENTITY editBookmark.done.label                     "Xk'is">
 <!ENTITY editBookmark.showForNewBookmarks.label       "Tik'ut k'exob'äl toq niyak">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "k">
 
 <!-- LOCALIZATION NOTE (identity.securityView.label)
      This is the header of the security subview in the Site Identity panel. -->
-<!ENTITY identity.securityView.label "Rujikomal ri Ruxaq K'amaya'l">
+<!ENTITY identity.securityView.label "Ruchajixik Ruxaq K'amaya'l">
 
 <!ENTITY identity.connection "Okem">
 <!ENTITY identity.connectionSecure "Ütz Okem">
@@ -844,8 +837,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.connectionInternal "Re re' ütz chi &brandShortName; ruxaq.">
 <!ENTITY identity.extensionPage "Re jun ruxaq k'amaya'l re' nisamajib'ëx pa jun k'amal.">
 <!ENTITY identity.insecureLoginForms2 "Kitikirib'al taq molojri'ïl etz'ib'an pa re ruxaq k'amaya'l re' rik'in jub'a' ye'itzelan.">
-<!ENTITY identity.customRoot "Xjikib'äx ri okem ruma ya'öl iqitzijib'äl, ri man retaman ta ruwäch ri Mozilla.
-">
+<!ENTITY identity.customRoot "Xjikib'äx ri okem ruma ya'öl iqitzijib'äl, ri man retaman ta ruwäch ri Mozilla.">
 
 <!-- Strings for connection state warnings. -->
 <!ENTITY identity.activeBlocked "&brandShortName; xeruq'ät ri itzel taq ruperaj re ruxaq re'.">
@@ -870,9 +862,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.enableMixedContentBlocking.accesskey "T">
 <!ENTITY identity.disableMixedContentBlocking.label "Wakami yan tz'apäl ri chajinïk">
 <!ENTITY identity.disableMixedContentBlocking.accesskey "t">
-<!ENTITY identity.learnMore "Tetamäx ch'aqa' chik">
+<!ENTITY identity.learnMore "Tetamäx Ch'aqa' Chik">
 
-<!ENTITY identity.removeCertException.label "Telesäx el ri man ja ta jun">
+<!ENTITY identity.removeCertException.label "Tiyuj Man Relik Ta">
 <!ENTITY identity.removeCertException.accesskey "T">
 
 <!ENTITY identity.moreInfoLinkText2 "Ch'aqa' chik rutzijol">
@@ -883,7 +875,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.permissionsEmpty "Majun chi ya'oj q'ij ya'on chawe' pa re ruxaq k'amaya'l re'.">
 <!ENTITY identity.permissionsReloadHint "Rik'in jub'a' k'o chi yatok chik pa ruxaq richin yesamäj ri taq k'exoj.">
 <!ENTITY identity.permissionsPreferences.tooltip "Kejaq Taq Rajowaxik Ya'oj Q'ij">
-<!ENTITY identity.contentBlockingPreferences.tooltip "Tijaq Rajowab'al Ruq'atik Rupam">
+<!ENTITY identity.contentBlockingPreferences.tooltip "Kejaq taq Rajowab'al Ruq'atik Rupam">
 
 
 <!-- Name for the tabs toolbar as spoken by screen readers.

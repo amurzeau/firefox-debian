@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = Eksperimenty { -brand-short-name }
+category-experimental =
+    .tooltiptext = Eksperimenty { -brand-short-name }
+pane-experimental-subtitle = Z glědanim pókšacowaś
+pane-experimental-search-results-header = Eksperimenty { -brand-short-name }: pókšacujśo z glědanim
+pane-experimental-description = Gaž nastajenja rozšyrjoneje konfiguracije změnijośo, móžo to wugbaśe abo wěstotu { -brand-short-name } wobwliwowaś.
 help-button-label = Pomoc { -brand-short-name }
 addons-button-label = Rozšyrjenja a drastwy
 focus-search =
@@ -505,7 +511,6 @@ home-prefs-topsites-description = Sedła, ku kótarymž se nejcesćej woglědujo
 
 home-prefs-recommended-by-header =
     .label = Wót { $provider } dopórucony
-home-prefs-recommended-by-description = Wjelicne wopśimjeśe z cełego weba, wubrane specielnje za was
 home-prefs-recommended-by-description-update = Wurědne wopśimjeśe z cełego weba, wubrane wót { $provider }
 
 ##
@@ -571,7 +576,6 @@ search-show-suggestions-above-history-option =
     .label = Pytańske naraźenja pśed pśeglědowańskeju historiju we wuslědkach adresowego póla pokazaś
 search-show-suggestions-private-windows =
     .label = Pytańske naraźenja w priwatnych woknach pokazaś
-suggestions-addressbar-settings = Wubjeŕśo nastajenja za pśeglědowańsku historiju, cytańske znamjenja a rejtarikowe naraźenja
 suggestions-addressbar-settings-generic = Nastajenja za druge naraźenja adresowego póla změniś
 search-suggestions-cant-show = Pytańske naraźenja njebudu se we wuslědkach adresowego póla pokazaś, dokulaž sćo { -brand-short-name } tak konfigurěrował, až njespomnjejo se nigda historiju.
 search-one-click-header = Pytnice z jadnym kliknjenim
@@ -1169,6 +1173,18 @@ space-alert-under-5gb-ok-button =
     .label = W pórěźe, som zrozměł
     .accesskey = z
 space-alert-under-5gb-message = { -brand-short-name } njama wěcej dosć składowańskego ruma. Wopśimjeśe websedła se snaź korektnje njezwobraznijo. Móžośo na “Dalšne informacije” kliknuś, aby swój składowe wužyśe za lěpše pśeglědowańske dožywjenje opiměrował.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Modus Jano-HTTPS
+httpsonly-description = HTTPS wěsty, skoděrowany zwisk mjazy { -brand-short-name } a websedłami bitujo, ku kótarymž se woglědujośo. Nejwěcej websedłow HTTPS pódpěra, a jolic modus Jano-HTTPS jo zmóžnjony, { -brand-short-name } buźo wše zwiski na HTTPS aktualizěrowaś.
+httpsonly-learn-more = Dalšne informacije
+httpsonly-radio-enabled =
+    .label = Modus Jano-HTTPS we wšych woknach zmóžniś
+httpsonly-radio-enabled-pbm =
+    .label = Modus Jano-HTTPS jano w priwatnych woknach zmóžniś
+httpsonly-radio-disabled =
+    .label = Modus Jano-HTTPS njezmóžniś
 
 ## The following strings are used in the Download section of settings
 

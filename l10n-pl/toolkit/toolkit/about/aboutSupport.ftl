@@ -18,6 +18,12 @@ extensions-name = Nazwa
 extensions-enabled = Włączone
 extensions-version = Wersja
 extensions-id = ID
+support-addons-title = Dodatki
+support-addons-name = Nazwa
+support-addons-type = Typ
+support-addons-enabled = Włączone
+support-addons-version = Wersja
+support-addons-id = ID
 security-software-title = Oprogramowanie zabezpieczające
 security-software-type = Typ
 security-software-name = Nazwa
@@ -75,6 +81,9 @@ show-dir-label =
         [windows] Otwórz folder
        *[other] Otwórz katalog
     }
+experimental-features-title = Funkcje eksperymentalne
+experimental-features-name = Nazwa
+experimental-features-value = Wartość
 modified-key-prefs-title = Ważne zmodyfikowane ustawienia
 modified-prefs-name = Nazwa
 modified-prefs-value = Wartość
@@ -271,6 +280,9 @@ blocklisted-bug = Zablokowano z powodu znanych problemów
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = zgłoszenie { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Zablokowano z powodu znanych problemów: <a data-l10n-name="bug-link">zgłoszenie { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Zablokowano. Kod błędu: { $failureCode }

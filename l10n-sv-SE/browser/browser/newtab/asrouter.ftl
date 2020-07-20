@@ -211,6 +211,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Visa alla
     .accesskey = V
+cfr-doorhanger-milestone-close-button = Stäng
+    .accesskey = S
 
 ## What’s New Panel Content for Firefox 76
 
@@ -244,3 +246,18 @@ cfr-whatsnew-protections-icon-alt = Sköldikon
 
 cfr-whatsnew-better-pdf-header = Bättre PDF-upplevelse
 cfr-whatsnew-better-pdf-body = PDF-dokument öppnas nu direkt i { -brand-short-name } och håller ditt arbetsflöde inom räckhåll.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Din integritet är viktig. { -brand-short-name } dirigerar nu dina DNS-uppslag säkert, när det är möjligt, till en partnerservice för att skydda dig medan du surfar.
+cfr-doorhanger-doh-header = Säkrare, krypterade DNS-uppslag
+cfr-doorhanger-doh-primary-button = Ok, jag förstår
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Inaktivera
+    .accesskey = I
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Automatiskt skydd mot lömsk spårningstaktik
+cfr-whatsnew-clear-cookies-body = Vissa spårare omdirigerar dig till andra webbplatser som i hemlighet ställer in kakor. { -brand-short-name } rensar nu automatiskt de kakorna så att du inte kan följas.
+cfr-whatsnew-clear-cookies-image-alt = Kaka blockerade illustration

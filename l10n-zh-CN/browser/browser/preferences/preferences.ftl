@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name } 实验
+category-experimental =
+    .tooltiptext = { -brand-short-name } 实验
+pane-experimental-subtitle = 三思而后行
+pane-experimental-search-results-header = { -brand-short-name } 实验：三思而后行
+pane-experimental-description = 更改高级配置的首选项可能会影响 { -brand-short-name } 的性能和安全性。
 help-button-label = { -brand-short-name } 帮助
 addons-button-label = 扩展和主题
 focus-search =
@@ -495,7 +501,6 @@ home-prefs-topsites-description = 您经常访问的网站
 
 home-prefs-recommended-by-header =
     .label = { $provider } 推荐
-home-prefs-recommended-by-description = 来自网络的精彩内容，为您量身打造
 home-prefs-recommended-by-description-update = 由 { $provider } 整理提供的网络精选内容
 
 ##
@@ -555,7 +560,6 @@ search-show-suggestions-above-history-option =
     .label = 在地址栏显示的结果中，将搜索建议显示在浏览历史上方
 search-show-suggestions-private-windows =
     .label = 在隐私窗口中显示搜索建议
-suggestions-addressbar-settings = 更改浏览记录、书签、标签页建议的首选项
 suggestions-addressbar-settings-generic = 更改其他地址栏建议首选项
 search-suggestions-cant-show = 由于您已经设置 { -brand-short-name } 不要记住浏览历史，地址栏中将不会显示搜索建议。
 search-one-click-header = 快捷搜索引擎列表
@@ -1153,6 +1157,18 @@ space-alert-under-5gb-ok-button =
     .label = 我知道了
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } 运行所需的磁盘空间不足。网站内容可能无法正常显示。点击“详细了解”了解如何优化您的磁盘空间，从而获得更好的浏览体验。
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = HTTPS-Only 模式
+httpsonly-description = HTTPS 可在 { -brand-short-name } 和您访问的网站之间提供安全、加密的连接。现今，大多数网站都支持 HTTPS，若选择启用 HTTPS-Only 模式，{ -brand-short-name } 将会升级所有连接为 HTTPS。
+httpsonly-learn-more = 详细了解
+httpsonly-radio-enabled =
+    .label = 在所有窗口启用 HTTPS-Only 模式
+httpsonly-radio-enabled-pbm =
+    .label = 仅在隐私窗口启用 HTTPS-Only 模式
+httpsonly-radio-disabled =
+    .label = 不启用 HTTPS-Only 模式
 
 ## The following strings are used in the Download section of settings
 

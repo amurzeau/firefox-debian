@@ -129,6 +129,7 @@ cfr-whatsnew-pip-cta = מידע נוסף
 ## Permission Prompt
 
 cfr-whatsnew-permission-prompt-header = פחות חלונות קופצים מעצבנים
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } מונע מעתה באופן אוטומטי מאתרים לבקש לשלוח לך הודעות קופצות.
 cfr-whatsnew-permission-prompt-cta = מידע נוסף
 
 ## Fingerprinter Counter
@@ -184,6 +185,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = צפייה בהכל
     .accesskey = צ
+cfr-doorhanger-milestone-close-button = סגירה
+    .accesskey = ס
 
 ## What’s New Panel Content for Firefox 76
 
@@ -206,9 +209,24 @@ cfr-whatsnew-pip-fullscreen-icon-alt = סמל תמונה בתוך תמונה
 
 ## Protections Dashboard message
 
+cfr-whatsnew-protections-header = הגנות במבט חטוף
 cfr-whatsnew-protections-cta-link = הצגת לוח ההגנות
 cfr-whatsnew-protections-icon-alt = סמל מגן
 
 ## Better PDF message
 
 cfr-whatsnew-better-pdf-header = חוויית PDF טובה יותר
+
+## DOH Message
+
+cfr-doorhanger-doh-body = הפרטיות שלך חשובה. { -brand-short-name } מעביר כעת את בקשות ה־DNS שלך, כאשר ניתן, לשירות שותף כדי להגן עליך בזמן הגלישה.
+cfr-doorhanger-doh-header = חיפושי DNS מוצפנים ומאובטחים יותר
+cfr-doorhanger-doh-primary-button = בסדר, הבנתי
+    .accesskey = ב
+cfr-doorhanger-doh-secondary-button = השבתה
+    .accesskey = ה
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = הגנה אוטומטית מפני תכסיסי מעקב
+cfr-whatsnew-clear-cookies-body = ישנם רכיבי מעקב המפנים אותך לאתרים אחרים המגדירים עוגיות בחשאי. { -brand-short-name } כעת מנקה באופן אוטומטי את העוגיות האלו כך שלא יהיה ניתן לעקוב אחריך.

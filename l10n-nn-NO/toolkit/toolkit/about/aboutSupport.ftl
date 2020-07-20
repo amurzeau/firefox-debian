@@ -14,6 +14,12 @@ extensions-name = Namn
 extensions-enabled = Påslått
 extensions-version = Versjon
 extensions-id = ID
+support-addons-title = Tillegg
+support-addons-name = Namn
+support-addons-type = Type
+support-addons-enabled = Slått på
+support-addons-version = Versjon
+support-addons-id = ID
 security-software-title = Sikkerheitsprogram
 security-software-type = Type
 security-software-name = Namn
@@ -71,6 +77,9 @@ show-dir-label =
         [windows] Opne mappe
        *[other] Opne mappe
     }
+experimental-features-title = Eksperimentelle funksjonar
+experimental-features-name = Namn
+experimental-features-value = Verdi
 modified-key-prefs-title = Viktige endra innstillingar
 modified-prefs-name = Namn
 modified-prefs-value = Verdi
@@ -262,6 +271,9 @@ blocklisted-bug = Svartelista på grunn av kjende problem
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = feil { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Blokkert på grunn av kjende problem: <a data-l10n-name="bug-link">feilrapport { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Svartlista; feilkode { $failureCode }

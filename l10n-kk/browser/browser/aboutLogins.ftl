@@ -1,11 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Логиндер және парольдер
@@ -20,7 +15,7 @@ login-app-promo-apple =
     .alt = App Store ішінен жүктеп алыңыз
 login-filter =
     .placeholder = Логиндерден іздеу
-create-login-button = Жаңа торапты жасау
+create-login-button = Жаңа логинді жасау
 fxaccounts-sign-in-text = Парольдеріңізді басқа құрылғыларыңызды алыңыз
 fxaccounts-sign-in-button = { -sync-brand-short-name } ішіне кіріңіз
 fxaccounts-avatar-button =
@@ -32,6 +27,7 @@ menu =
     .title = Мәзірді ашу
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Басқа браузерден импорттау…
+about-logins-menu-menuitem-import-from-a-file = Файлдан импорттау…
 about-logins-menu-menuitem-export-logins = Логиндерді экспорттау…
 menu-menuitem-preferences =
     { PLATFORM() ->
@@ -71,12 +67,14 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = Сақталған логиндерді іздеудесіз бе? { -sync-brand-short-name } баптаңыз.
+about-logins-login-intro-heading-logged-out = Сақталған логиндерді іздеудесіз бе? { -sync-brand-short-name } баптаңыз немесе оларды импорттаңыз.
 about-logins-login-intro-heading-logged-in = Синхрондалған логиндер табылмады.
 login-intro-description = Логиндерді басқа құрылғыдағы { -brand-product-name } ішіне сақтасаңыз, оларды осында келесідей алуға болады:
 login-intro-instruction-fxa = Логиндеріңіз сақталған құрылғыда { -fxaccount-brand-name } тіркелгісін жасаңыз немесе оған кіріңіз
 login-intro-instruction-fxa-settings = { -sync-brand-short-name } баптауларында Логиндер белгіленгеніне көз жеткізіңіз
 about-logins-intro-instruction-help = Көбірек білу үшін, <a data-l10n-name="help-link">{ -lockwise-brand-short-name } қолдау көрсету сайтын</a> шолыңыз
 about-logins-intro-import = Егер сіздің логиндеріңіз басқа браузерде сақталған болса, оларды <a data-l10n-name="import-link">{ -lockwise-brand-short-name } ішіне импорттай аласыз</a>
+about-logins-intro-import2 = Егер сіздің логиндеріңіз { -brand-product-name } сыртында сақталса, оларды <a data-l10n-name="import-browser-link">басқа браузерден</a> немесе <a data-l10n-name="import-file-link">файлдан</a> импорттауға болады
 
 ## Login
 
@@ -212,6 +210,19 @@ about-logins-export-file-picker-export-button = Экспорттау
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
 about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV құжаты
+       *[other] CSV файлы
+    }
+
+## Login Import Dialog
+
+# Title of the file picker dialog
+about-logins-import-file-picker-title = Логиндер файлын импорттау
+about-logins-import-file-picker-import-button = Импорттау
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
     { PLATFORM() ->
         [macos] CSV құжаты
        *[other] CSV файлы

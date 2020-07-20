@@ -206,6 +206,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Hechapa
     .accesskey = H
+cfr-doorhanger-milestone-close-button = Mboty
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -239,3 +241,12 @@ cfr-whatsnew-protections-icon-alt = Jokoha ra’ãngachu’i
 
 cfr-whatsnew-better-pdf-header = Tembiapo porãve PDF-pe
 cfr-whatsnew-better-pdf-body = Kuatiakuéra PDF ko’ág̃a ijurujáma { -brand-short-name }-pe, péicha oreko hembiapo opavave ohupyty hag̃uáicha.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Ne ñemigua tuichamba’e. { -brand-short-name } ombohape tekorosãme umi ne mba’ejerure DNS ikatu vove peteĩ mba’epuru oñembyatýva nemo’ã hag̃ua eikundaha aja.
+cfr-doorhanger-doh-header = Jehekapy DNS hekorosã ha ipapapýva
+cfr-doorhanger-doh-primary-button = OK, Aikumbýma
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Pe’a
+    .accesskey = D

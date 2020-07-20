@@ -14,6 +14,12 @@ extensions-name = Namn
 extensions-enabled = Aktiverad
 extensions-version = Version
 extensions-id = ID
+support-addons-title = Tillägg
+support-addons-name = Namn
+support-addons-type = Typ
+support-addons-enabled = Aktiverad
+support-addons-version = Version
+support-addons-id = ID
 security-software-title = Säkerhetsprogram
 security-software-type = Typ
 security-software-name = Namn
@@ -71,6 +77,9 @@ show-dir-label =
         [windows] Öppna mapp
        *[other] Öppna katalog
     }
+experimental-features-title = Experimentella funktioner
+experimental-features-name = Namn
+experimental-features-value = Värde
 modified-key-prefs-title = Viktiga ändrade inställningar
 modified-prefs-name = Namn
 modified-prefs-value = Värde
@@ -262,6 +271,9 @@ blocklisted-bug = Svartlistad på grund av kända problem
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bugg { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Blockerad på grund av kända problem: <a data-l10n-name="bug-link">bugg { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Svartlistad; felkod { $failureCode }

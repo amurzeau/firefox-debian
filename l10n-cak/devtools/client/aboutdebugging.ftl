@@ -157,10 +157,10 @@ about-debugging-runtime-tabs =
     .name = Taq ruwi'
 # Title of the service workers category.
 about-debugging-runtime-service-workers =
-    .name = Samajela' pa Samaj
+    .name = Service Workers
 # Title of the shared workers category.
 about-debugging-runtime-shared-workers =
-    .name = Komonin Samajela'
+    .name = Komonin Workers
 # Title of the other workers category.
 about-debugging-runtime-other-workers =
     .name = Ch'aqa' chik Samajela'
@@ -210,7 +210,7 @@ about-debugging-connection-prompt-enable-button = Titzij ri tz'etöy okem
 # "devtools.debugger.prompt-connection" is true on the target runtime.
 about-debugging-connection-prompt-disable-button = Tichup ri tz'etöy okem
 # Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
-about-debugging-profiler-dialog-title2 = B'i'aj wachib'äl
+about-debugging-profiler-dialog-title2 = Wachinel B'i'aj
 # Clicking on the header of a debug target category will expand or collapse the debug
 # target items in the category. This text is used as ’title’ attribute of the header,
 # to describe this feature.
@@ -232,7 +232,7 @@ about-debugging-tmp-extension-install-button = Tisamajib'ëx Jumej Tz'aqat…
 about-debugging-tmp-extension-install-error = Xwachin jun sachoj toq niyak ri jumej tz'aqat.
 # Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
-about-debugging-tmp-extension-reload-button = Tisamajib'ëx chik
+about-debugging-tmp-extension-reload-button = Tisamajïx chik
 # Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will uninstall the extension and remove it from the page.
 about-debugging-tmp-extension-remove-button = Tiyuj
@@ -263,15 +263,15 @@ about-debugging-extension-id =
 # to a service worker.
 # Notes, this relates to the "Push" API, which is normally not localized so it is
 # probably better to not localize it.
-about-debugging-worker-action-push = Tinim
+about-debugging-worker-action-push = Push
 # This string is displayed as a label of the button that starts a service worker.
 about-debugging-worker-action-start = Titikirisäx
 # This string is displayed as a label of the button that pushes a test payload
 # to a service worker.
 # Note this relates to the "Push" API, which is normally not localized so it is
 # probably better to not localize it.
-about-debugging-worker-action-push2 = Tinim
-    .disabledTitle = Chupül ri runimik Service Worker pa k'ïy tajinïk { -brand-shorter-name }
+about-debugging-worker-action-push2 = Push
+    .disabledTitle = Chupül ri Service Worker push pa k'ïy tajinïk { -brand-shorter-name }
 # This string is displayed as a label of the button that starts a service worker.
 about-debugging-worker-action-start2 = Titikirisäx
     .disabledTitle = Chupül ri rutikirib'al Service Worker richin k'ïy tajinïk { -brand-shorter-name }
@@ -280,25 +280,25 @@ about-debugging-worker-action-unregister = Tiyuj ri tz'ib'axïk
 # Displayed for service workers in runtime pages that listen to Fetch events.
 about-debugging-worker-fetch-listening =
     .label = Fetch
-    .value = Nak'axäx richin yekanöx taq molojri'ïl
+    .value = Ye'ak'axäx fetch taq nimaq'ij
 # Displayed for service workers in runtime pages that do not listen to Fetch events.
 about-debugging-worker-fetch-not-listening =
     .label = Fetch
-    .value = Man ke'ak'axäx fetch taq molojri'ïl
+    .value = Man Ye'ak'axäx ta fetch taq nimaq'ij
 # Displayed for service workers in runtime pages that are currently running (service
 # worker instance is active).
-about-debugging-worker-status-running = Rub'anik
+about-debugging-worker-status-running = Nib'an
 # Displayed for service workers in runtime pages that are registered but stopped.
-about-debugging-worker-status-stopped = Pab'an
+about-debugging-worker-status-stopped = Q'aton
 # Displayed for service workers in runtime pages that are registering.
-about-debugging-worker-status-registering = Nitz'ib'äx
+about-debugging-worker-status-registering = Nitz'ib'äx b'i'aj
 # Displayed for service workers in runtime pages, to label the scope of a worker
 about-debugging-worker-scope =
     .label = Akuchi' napon
 # Displayed for service workers in runtime pages, to label the push service endpoint (url)
 # of a worker
 about-debugging-worker-push-service =
-    .label = Samaj richin Taqoj
+    .label = Push Samaj
 # Displayed as title of the inspect button when service worker debugging is disabled.
 about-debugging-worker-inspect-action-disabled =
     .title = Chupül ri runik'oxik Service Worker richin k'ïy tajinïk { -brand-shorter-name }
@@ -320,7 +320,7 @@ about-debugging-multiprocess-toolbox-description = Nïm Tajinïk chuqa'  Rutajin
 about-debugging-message-close-icon =
     .alt = Titz'apïx rutzijol
 # Label text used for the error details of message component.
-about-debugging-message-details-label-error = Rub'anikil sachoj
+about-debugging-message-details-label-error = Kisachoj taq b'anikil
 # Label text used for the warning details of message component.
 about-debugging-message-details-label-warning = Rub'anikil k'ayewal
 # Label text used for default state of details of message component.

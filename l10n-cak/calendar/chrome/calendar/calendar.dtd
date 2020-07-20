@@ -47,7 +47,7 @@
 
 <!ENTITY calendar.nextday.label                 "Jun chik Q'ij" >
 <!ENTITY calendar.prevday.label                 "Jun Kan Q'ij" >
-<!ENTITY calendar.nextday.accesskey             "x" >
+<!ENTITY calendar.nextday.accesskey             "u" >
 <!ENTITY calendar.prevday.accesskey             "K" >
 <!ENTITY calendar.nextweek.label                "Jun Chik Apo Wuqq'ij" >
 <!ENTITY calendar.prevweek.label                "Jun Kan Wuqq'ij" >
@@ -73,7 +73,7 @@
 
 <!ENTITY calendar.list.header.label                 "Cholb'äl q'ij">
 
-<!ENTITY calendar.task.filter.title.label           "Tik'ut pe">
+<!ENTITY calendar.task.filter.title.label           "Tik'ut">
 <!ENTITY calendar.task.filter.all.label             "Ronojel">
 <!ENTITY calendar.task.filter.all.accesskey         "R">
 <!ENTITY calendar.task.filter.today.label           "Wakami">
@@ -156,7 +156,7 @@
 
 <!-- Calendar Alarm Dialog -->
 
-<!ENTITY calendar.alarm.location.label              "K'ojlib'äl:" >
+<!ENTITY calendar.alarm.location.label              "Ochochib'al:" >
 <!ENTITY calendar.alarm.details.label               "Kib'anikil…" >
 
 <!ENTITY calendar.alarm.dismiss.label               "Tichup ruwäch" >
@@ -182,7 +182,7 @@
 <!ENTITY calendarproperties.color.label                    "B'onil:">
 <!ENTITY calendarproperties.caldav.label                   "CalDAV">
 <!ENTITY calendarproperties.format.label                   "B'anikil:">
-<!ENTITY calendarproperties.location.label                 "K'ojlib'äl:">
+<!ENTITY calendarproperties.location.label                 "Ochochib'al:">
 <!ENTITY calendarproperties.name.label                     "B'i'aj:">
 <!ENTITY calendarproperties.readonly.label                 "Xa xe Sik'inïk">
 <!ENTITY calendarproperties.unsubscribe.label              "Tiq'at rutz'ib'axik b'i'aj">
@@ -197,8 +197,8 @@
 <!-- Calendar Printing -->
 <!ENTITY calendar.print.title.label "B'i'aj:">
 <!ENTITY calendar.print.layout.label "Wachib'enïk:">
-<!ENTITY calendar.print.currentView2.label "Rutzub'al wakami">
-<!ENTITY calendar.print.events.label "Taq Molojri'ïl">
+<!ENTITY calendar.print.currentView2.label "Rutzub'al Wakami">
+<!ENTITY calendar.print.events.label "Taq Nimaq'ij">
 <!ENTITY calendar.print.from.label "Richin:">
 <!ENTITY calendar.print.to.label "Chi re:">
 <!ENTITY calendar.print.optionsGroup.label "Taq cha'oj">

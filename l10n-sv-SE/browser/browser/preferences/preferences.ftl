@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name } Experiment
+category-experimental =
+    .tooltiptext = { -brand-short-name } Experiment
+pane-experimental-subtitle = Fortsätt med försiktighet
+pane-experimental-search-results-header = { -brand-short-name } Experiment: Fortsätt med försiktighet
+pane-experimental-description = Att ändra avancerade konfigurationsinställningar kan påverka { -brand-short-name }s prestanda eller säkerhet.
 help-button-label = Support { -brand-short-name }
 addons-button-label = Utökningar & Teman
 focus-search =
@@ -499,7 +505,6 @@ home-prefs-topsites-description = Sidorna du besöker mest
 
 home-prefs-recommended-by-header =
     .label = Rekommenderas av { $provider }
-home-prefs-recommended-by-description = Bra innehåll från hela webben, anpassat för dig
 home-prefs-recommended-by-description-update = Exceptionellt innehåll från hela internet, sammanställt av { $provider }
 
 ##
@@ -563,7 +568,6 @@ search-show-suggestions-above-history-option =
     .label = Visa sökförslag före surfhistoriken i adressfältets resultat
 search-show-suggestions-private-windows =
     .label = Visa sökförslag i privata fönster
-suggestions-addressbar-settings = Ändra inställningar för surfhistorik, bokmärken och flikförslag
 suggestions-addressbar-settings-generic = Ändra inställningar för andra förslag i adressfältet
 search-suggestions-cant-show = Sökförslag kommer inte att visas i adressfältet eftersom du har konfigurerat { -brand-short-name } att aldrig spara historik.
 search-one-click-header = Sökfältets sökmotorer
@@ -1161,6 +1165,18 @@ space-alert-under-5gb-ok-button =
     .label = Ok, jag förstår
     .accesskey = k
 space-alert-under-5gb-message = { -brand-short-name } håller på att få slut på diskutrymme. Webbplatsens innehåll kanske inte visas korrekt. Besök “Läs mer” för att optimera din diskanvändning för en bättre webbupplevelse.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Endast HTTPS-läge
+httpsonly-description = HTTPS ger en säker, krypterad anslutning mellan { -brand-short-name } och de webbplatser du besöker. De flesta webbplatser stöder HTTPS och om endast HTTPS-läget är aktiverat kommer { -brand-short-name } att uppgradera alla anslutningar till HTTPS.
+httpsonly-learn-more = Läs mer
+httpsonly-radio-enabled =
+    .label = Aktivera endast HTTPS-läge i alla fönster
+httpsonly-radio-enabled-pbm =
+    .label = Aktivera endast HTTPS-läge i privata fönster
+httpsonly-radio-disabled =
+    .label = Aktivera inte endast HTTPS-läge
 
 ## The following strings are used in the Download section of settings
 

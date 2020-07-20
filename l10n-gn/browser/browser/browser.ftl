@@ -52,11 +52,11 @@ urlbar-identity-button =
 ## Tooltips for images appearing in the address bar
 
 urlbar-services-notification-anchor =
-    .tooltiptext = Eike ñe’ẽmondo ñemohenda ra'ãngarupápe
+    .tooltiptext = Eike ñe’ẽmondo ñemohenda ra’ãngarupápe
 urlbar-web-notification-anchor =
     .tooltiptext = Emoambue eipotárõ oñemog̃uahẽ ndéve ñemomarandu ko ñandutirenda omondóva.
 urlbar-midi-notification-anchor =
-    .tooltiptext = Eike ta'ãngarupa MIDI pe
+    .tooltiptext = Eike ta’ãngarupa MIDI pe
 urlbar-eme-notification-anchor =
     .tooltiptext = Eñangareko DRM software jepuru rehe
 urlbar-web-authn-anchor =
@@ -107,7 +107,7 @@ urlbar-tip-icon-description =
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
-urlbar-search-tips-onboard = Ehai sa'ive, ejuhuve: Eheka { $engineName } kundaharape rendaite guive.
+urlbar-search-tips-onboard = Ehai sa’ive, ejuhuve: Eheka { $engineName } kundaharape rendaite guive.
 urlbar-search-tips-redirect-2 = Eñepyrũ eheka kundaharape rendápe ehecha hag̃ua { $engineName } ñe’ẽporã ha ikundaha rembiasakue.
 
 ##
@@ -119,7 +119,7 @@ urlbar-xr-blocked =
 urlbar-web-notifications-blocked =
     .tooltiptext = Ejokóma ñemomarandu ko ñanduti rendápe g̃uarã.
 urlbar-camera-blocked =
-    .tooltiptext = Ejokóma ne ta'ãngamýi ko ñanduti rendápe g̃uarã.
+    .tooltiptext = Ejokóma ne ta’ãngamýi ko ñanduti rendápe g̃uarã.
 urlbar-microphone-blocked =
     .tooltiptext = Ejokóma ne ñe’ẽatãha ko ñanduti rendápe g̃uarã.
 urlbar-screen-blocked =
@@ -192,7 +192,7 @@ bookmark-panel-show-editor-checkbox =
     .label = Ehechauka mbosako’iha eñongatúvo
     .accesskey = S
 bookmark-panel-done-button =
-    .label = Mohu'ã
+    .label = Mohu’ã
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -231,7 +231,7 @@ identity-description-weak-cipher-intro = Nde jeike ko ñanduti rendápe oipuru �
 identity-description-weak-cipher-risk = Ambue tapichakuéra ikatu ohecha nemarandu térã omoambue ñanduti kuatiarogue reko.
 identity-description-active-blocked = { -brand-short-name } ojokóma ko kuatiarogue pehẽ ijerovia’ỹha. <label data-l10n-name="link">Kuaave</label>
 identity-description-passive-loaded = Nde jeike naiñemíri ha nemarandu remoingéva ko tendápe ikatu ohecha ambue tapicha.
-identity-description-passive-loaded-insecure = Ko ñanduti renda oguereko hetepy ndaijeroviapáiva (mba’era'ãngáramo). <label data-l10n-name="link">Kuaave</label>
+identity-description-passive-loaded-insecure = Ñanduti renda oguereko hetepy ndaijeroviapáiva (mba’era’ãngáramo). <label data-l10n-name="link">Kuaave</label>
 identity-description-passive-loaded-mixed = { -brand-short-name } ojokóramo jepe heta retepy, oĩ gueteri tetepy kuatiaroguépe ndaijegueroviapáiva (mba’era’ãngáramo). <label data-l10n-name="link">Kuaave</label>
 identity-description-active-loaded = Ko ñanduti renda oguereko hetepy ndaijeroviapáiva (guiõramo) ha nde jeike pype naiñemíri.
 identity-description-active-loaded-insecure = Marandu remondóva ko kuatiaroguépe ikatu ohecha ambue tapicha (ñe’ẽñemíramo, ñe’ẽmondo, kuatia’atã ñemurã ha ambue).
@@ -260,7 +260,7 @@ browser-window-close-button =
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
-    .value = Ta'angamýi hetápe guarãva:
+    .value = Ta’angamýi hetápe guarãva:
     .accesskey = C
 popup-select-microphone =
     .value = Ñe’ẽatãha hetápe g̃uarãva:

@@ -210,6 +210,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Προβολή όλων
     .accesskey = Π
+cfr-doorhanger-milestone-close-button = Κλείσιμο
+    .accesskey = Κ
 
 ## What’s New Panel Content for Firefox 76
 
@@ -243,3 +245,10 @@ cfr-whatsnew-protections-icon-alt = Εικονίδιο ασπίδας
 
 cfr-whatsnew-better-pdf-header = Καλύτερη εμπειρία PDF
 cfr-whatsnew-better-pdf-body = Τα έγγραφα PDF πλέον ανοίγουν απευθείας στο { -brand-short-name } για ακόμα πιο βολική εργασία.
+
+## DOH Message
+
+cfr-doorhanger-doh-primary-button = Το κατάλαβα
+    .accesskey = Τ
+cfr-doorhanger-doh-secondary-button = Απενεργοποίηση
+    .accesskey = Α

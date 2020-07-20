@@ -17,6 +17,12 @@ extensions-name = 名稱
 extensions-enabled = 已啟用
 extensions-version = 版本
 extensions-id = ID
+support-addons-title = 附加元件
+support-addons-name = 名稱
+support-addons-type = 類型
+support-addons-enabled = 已啟用
+support-addons-version = 版本
+support-addons-id = ID
 security-software-title = 安全軟體
 security-software-type = 類型
 security-software-name = 名稱
@@ -74,6 +80,9 @@ show-dir-label =
         [windows] 開啟資料夾
        *[other] 開啟資料夾
     }
+experimental-features-title = 實驗功能
+experimental-features-name = 名稱
+experimental-features-value = 值
 modified-key-prefs-title = 修改過的重要偏好設定
 modified-prefs-name = 名稱
 modified-prefs-value = 值
@@ -245,6 +254,9 @@ blocklisted-bug = 因為有已知問題被封鎖
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = 由於有已知問題，被加入封鎖名單: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = 已封鎖，錯誤代碼 { $failureCode }

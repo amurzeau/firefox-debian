@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name }-eksperimenter
+category-experimental =
+    .tooltiptext = { -brand-short-name }-eksperimenter
+pane-experimental-subtitle = Fortsæt på eget ansvar
+pane-experimental-search-results-header = { -brand-short-name }-eksperimenter: Fortsæt på eget ansvar
+pane-experimental-description = Ved at ændre avancerede indstillinger kan du påvirke ydelse eller sikkerhed for { -brand-short-name }.
 help-button-label = Hjælp til { -brand-short-name }
 addons-button-label = Udvidelser og temaer
 focus-search =
@@ -232,12 +238,10 @@ translate-attribution = Oversættelser af <img data-l10n-name="logo"/>
 translate-exceptions =
     .label = Undtagelser…
     .accesskey = n
-
 # Variables:
 #    $localeName (string) - Localized name of the locale to be used.
-use-system-locale = 
-   .label = Brug dit operativsystems indstillinger for "{ $localeName }" til at formatere datoer, klokkeslæt, tal og måleenheder.
-
+use-system-locale =
+    .label = Brug dit operativsystems indstillinger for "{ $localeName }" til at formatere datoer, klokkeslæt, tal og måleenheder.
 check-user-spelling =
     .label = Kontroller min stavning mens jeg taster
     .accesskey = K
@@ -286,7 +290,6 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = Brug { $app-name } (standard)
-
 applications-use-os-default =
     .label =
         { PLATFORM() ->
@@ -294,7 +297,6 @@ applications-use-os-default =
             [windows] Brug standard-applikationen i  Windows
            *[other] Brug systemets standard-applikation
         }
-
 applications-use-other =
     .label = Vælg en anden…
 applications-select-helper = Vælg hjælpeprogram
@@ -497,12 +499,16 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Mest besøgte websider
 home-prefs-topsites-description = Mest besøgte websider
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
+## Variables:
+##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
+
 home-prefs-recommended-by-header =
     .label = Anbefalet af { $provider }
-home-prefs-recommended-by-description = Spændende indhold fra nettet, specielt udvalgt til dig
 home-prefs-recommended-by-description-update = Spændende indhold fra nettet, udvalgt af { $provider }
+
+##
+
 home-prefs-recommended-by-learn-more = Sådan virker det
 home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsorerede historier
@@ -562,8 +568,6 @@ search-show-suggestions-above-history-option =
     .label = Vis søgeforslag før resultater fra min browserhistorik i adressefeltet
 search-show-suggestions-private-windows =
     .label = Vis søgeforslag i private vinduer
-suggestions-addressbar-settings = Skift indstillinger for søgeforslag fra browserhistorik, bogmærker og åbne faneblade.
-
 suggestions-addressbar-settings-generic = Skift indstillinger for andre forslag i adressefeltet.
 search-suggestions-cant-show = Søgeforslag vil ikke blive vist i adressefeltet, fordi du har sat { -brand-short-name } op til aldrig at gemme historik.
 search-one-click-header = Lyn-søgetjenester
@@ -768,13 +772,14 @@ privacy-header = Beskyttelse af privatliv
 
 ## Privacy Section - Forms
 
+logins-header = Logins og adgangskoder
 
 ## Privacy Section - Logins and Passwords
 
-logins-header = Logins og adgangskoder
 # The search keyword isn't shown to users but is used to find relevant settings in about:preferences.
 pane-privacy-logins-and-passwords-header = Logins og adgangskoder
     .searchkeywords = { -lockwise-brand-short-name }
+# Checkbox to control whether UI is shown to users to save or fill logins/passwords.
 forms-ask-to-save-logins =
     .label = Spørg om at gemme logins og adgangskoder til websteder
     .accesskey = l
@@ -788,6 +793,7 @@ forms-breach-alerts =
     .label = Vis advarsler om adgangskoder for hackede websteder
     .accesskey = a
 forms-breach-alerts-learn-more-link = Læs mere
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = Autofyld logins og adgangskoder
     .accesskey = i
@@ -901,7 +907,6 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Håndter tilladelser…
     .accesskey = t
-
 sitedata-cookies-exceptions =
     .label = Håndter undtagelser…
     .accesskey = u
@@ -919,11 +924,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Åbne faneblade
     .accesskey = f
-
 addressbar-locbar-topsites-option =
     .label = Mest besøgte websider
     .accesskey = M
-
 addressbar-suggestions-settings = Skift indstillinger for søgeforslag
 
 ## Privacy Section - Content Blocking
@@ -1162,6 +1165,18 @@ space-alert-under-5gb-ok-button =
     .label = OK
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } er ved at løbe tør for diskplads. Websteds-indhold bliver muligvis ikke vist korrekt. Klik på "Læs mere" og lær, hvordan du kan få en bedre browsing-oplevelse ved at optimere diskforbrug.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Tilstanden Kun-HTTPS
+httpsonly-description = HTTPS sørger for en sikker, krypteret forbindelse mellem { -brand-short-name } og de websteder, du besøger. De fleste websteder understøtter HTTPS, og hvis kun-HTTPS er slået til, så opgraderer { -brand-short-name } alle forbindelser til HTTPS.
+httpsonly-learn-more = Læs mere
+httpsonly-radio-enabled =
+    .label = Slå kun-HTTPS til for alle vinduer
+httpsonly-radio-enabled-pbm =
+    .label = Slå udelukkende kun-HTTPS til for private vinduer
+httpsonly-radio-disabled =
+    .label = Slå ikke kun-HTTPS til
 
 ## The following strings are used in the Download section of settings
 

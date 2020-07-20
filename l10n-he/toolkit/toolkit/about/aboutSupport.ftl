@@ -17,6 +17,12 @@ extensions-name = שם
 extensions-enabled = מאופשר
 extensions-version = גרסה
 extensions-id = מזהה
+support-addons-title = תוספות
+support-addons-name = שם
+support-addons-type = סוג
+support-addons-enabled = מופעלת
+support-addons-version = גרסה
+support-addons-id = מזהה
 security-software-title = תוכנת אבטחה
 security-software-type = סוג
 security-software-name = שם
@@ -27,12 +33,14 @@ features-title = התכונות של { -brand-short-name }
 features-name = שם
 features-version = גרסה
 features-id = מזהה
+processes-title = תהליכים מרוחקים
 processes-type = סוג
 processes-count = כמות
 app-basics-title = מידע יישום בסיסי
 app-basics-name = שם
 app-basics-version = גרסה
 app-basics-build-id = מזהה גרסה
+app-basics-distribution-id = מזהה הפצה
 app-basics-update-channel = ערוץ עדכונים
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -57,8 +65,10 @@ app-basics-performance = ביצועים
 app-basics-service-workers = Service Workers רשומים
 app-basics-profiles = פרופילים
 app-basics-multi-process-support = חלונות מרובי תהליכים
+app-basics-remote-processes-count = תהליכים מרוחקים
 app-basics-enterprise-policies = ערכות מדיניות ארגוניות
 app-basics-location-service-key-google = מפתח עבור שירותי המיקום של Google
+app-basics-safebrowsing-key-google = Google Safebrowsing Key
 app-basics-key-mozilla = מפתח עבור שירותי המיקום של Mozilla
 app-basics-safe-mode = מצב בטוח
 show-dir-label =
@@ -67,6 +77,9 @@ show-dir-label =
         [windows] פתיחת תיקייה
        *[other] פתיחת ספרייה
     }
+experimental-features-title = תכונות ניסיוניות
+experimental-features-name = שם
+experimental-features-value = ערך
 modified-key-prefs-title = העדפות חשובות ששונו
 modified-prefs-name = שם
 modified-prefs-value = ערך
@@ -84,6 +97,10 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = יומן החלטות
 graphics-crash-guards-title = תכונות מנוטרלות של מגן הקריסות
 graphics-workarounds-title = מעקפים
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = פרוטוקול חלון
+# Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
+graphics-desktop-environment = סביבת שולחן עבודה
 place-database-title = מסד נתוני מיקום
 place-database-integrity = תקינות
 place-database-verify-integrity = וידוא תקינות
@@ -239,6 +256,9 @@ blocklisted-bug = הוכנס לרשימה שחורה עקב בעיות ידוע�
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = באג { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = נחסם עקב בעיות ידועות: <a data-l10n-name="bug-link">תקלה { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = הוכנס לרשימה השחורה, קוד כישלון { $failureCode }
 d3d11video-crash-guard = מפענח הווידאו D3D11
@@ -264,6 +284,7 @@ can-sandbox-media = ארגז חול לתוספים חיצוניים עבור מ�
 sandbox-proc-type-content = תוכן
 sandbox-proc-type-file = תוכן קובץ
 sandbox-proc-type-media-plugin = תוסף מדיה
+startup-cache-title = מטמון הפעלה
 startup-cache-disk-cache-path = נתיב מטמון הכונן
 startup-cache-ignore-disk-cache = התעלמות ממטמון הכונן
 startup-cache-wrote-to-disk-cache = נכתב למטמון הכונן

@@ -4,6 +4,7 @@
 
 <!ENTITY windowTitle.label            "Assistente de chat">
 
+<!ENTITY accountProtocolTitle.label   "Rete chat">
 <!ENTITY accountProtocolField.label   "Rete:">
 <!ENTITY accountProtocolGetMore.label "Reciper plus...">
 
@@ -17,9 +18,11 @@
 
 <!ENTITY accountAdvancedTitle.label   "Optiones avantiate">
 <!ENTITY accountAdvanced.newMailNotification.label   "Notificar nove emails">
+<!ENTITY accountAliasGroupbox.caption "Alias local">
 <!ENTITY accountAliasField.label      "Alias:">
 <!ENTITY accountProxySettings.caption "Parametros de proxy">
 <!ENTITY accountProxySettings.change.label     "Cambiar…">
 <!ENTITY accountProxySettings.change.accessKey "C">
 
 <!ENTITY accountSummaryTitle.label   "Summario">
+<!ENTITY accountSummary.connectNow.label "Connecter se ora a iste conto.">

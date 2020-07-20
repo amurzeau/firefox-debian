@@ -258,6 +258,8 @@ identity-more-info-link-text =
 
 browser-window-minimize-button =
     .tooltiptext = Минимизиране
+browser-window-maximize-button =
+    .tooltiptext = Увеличаване
 browser-window-close-button =
     .tooltiptext = Затваряне
 
@@ -270,6 +272,14 @@ popup-select-microphone =
     .value = Микрофон за споделяне:
     .accesskey = М
 popup-all-windows-shared = Всички видими прозорци на вашия екран ще бъдат споделени.
+
+popup-screen-sharing-not-now =
+    .label = Не сега
+    .accesskey = а
+
+popup-screen-sharing-never =
+    .label = Никога
+    .accesskey = Н
 
 ## WebRTC window or screen share tab switch warning
 

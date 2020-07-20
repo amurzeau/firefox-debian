@@ -217,6 +217,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Wšě pokazać
     .accesskey = k
+cfr-doorhanger-milestone-close-button = Začinić
+    .accesskey = Z
 
 ## What’s New Panel Content for Firefox 76
 
@@ -250,3 +252,18 @@ cfr-whatsnew-protections-icon-alt = Tarčowy symbol
 
 cfr-whatsnew-better-pdf-header = Lěpše PDF-dožiwjenje
 cfr-whatsnew-better-pdf-body = PDF-dokumenty so nětko direktnje w { -brand-short-name } wočinjeja, bjeztoho zo byšće dyrbjał dźěłowy wotběh přetorhnyć.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Waša priwatnosć je wažna. { -brand-short-name } nětko, hdyžkuli je móžno, partnerskej słužbje waše DNS-naprašowanja wěsće přenošuje, zo by was škitał, mjeztym zo přehladujeće.
+cfr-doorhanger-doh-header = Wjace wěstych zaklučowanych DNS-pytanjow
+cfr-doorhanger-doh-primary-button = W porjadku, sym zrozumił
+    .accesskey = r
+cfr-doorhanger-doh-secondary-button = Znjemóžnić
+    .accesskey = Z
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Awtomatiski škit před zachribjetnymi slědowanskimi taktikami
+cfr-whatsnew-clear-cookies-body = Někotre přesćěhowaki was k druhim websydłam dale sposrědkuja, kotrež skradźu placki stajeja. { -brand-short-name } nětko te placki awtomatisce haša, zo njeby móžno było, wam slědować.
+cfr-whatsnew-clear-cookies-image-alt = Ilustracija za zablokowany plack

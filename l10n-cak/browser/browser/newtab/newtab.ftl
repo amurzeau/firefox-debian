@@ -5,7 +5,7 @@
 
 ### Firefox Home / New Tab strings for about:home / about:newtab.
 
-newtab-page-title = K'ak'a' ruwi'
+newtab-page-title = K'ak'a' Ruwi'
 newtab-settings-button =
     .title = Tawichinaj ri ruxaq richin K'ak'a' Ruwi'
 
@@ -15,11 +15,11 @@ newtab-settings-button =
 newtab-search-box-search-button =
     .title = Tikanöx
     .aria-label = Tikanöx
-newtab-search-box-search-the-web-text = Tikanöx pa Ajk'amaya'l
+newtab-search-box-search-the-web-text = Tikanöx pan Ajk'amaya'l
 newtab-search-box-search-the-web-input =
-    .placeholder = Tikanöx pa Ajk'amaya'l
-    .title = Tikanöx pa Ajk'amaya'l
-    .aria-label = Tikanöx pa Ajk'amaya'l
+    .placeholder = Tikanöx pan Ajk'amaya'l
+    .title = Tikanöx pan Ajk'amaya'l
+    .aria-label = Tikanöx pan Ajk'amaya'l
 
 ## Top Sites - General form dialog.
 
@@ -49,14 +49,14 @@ newtab-topsites-add-button = Titz'aqatisäx
 
 newtab-confirm-delete-history-p1 = ¿La kan nawajo ye'ayüj el ronojel ri kib'eyal re taq ruxaq re' chi kikojol ri anatab'al?
 # "This action" refers to deleting a page from history.
-newtab-confirm-delete-history-p2 = Man yatikïr ta najäl re b'anïk re'.
+newtab-confirm-delete-history-p2 = Man tikirel ta nitzolïx re b'anïk.
 
 ## Context Menu - Action Tooltips.
 
 # General tooltip for context menus.
 newtab-menu-section-tooltip =
-    .title = Tijaq k'utüy samaj
-    .aria-label = Tijaq k'utüy samaj
+    .title = Tijaq k'utsamaj
+    .aria-label = Tijaq k'utsamaj
 # Tooltip for dismiss button
 newtab-dismiss-button-tooltip =
     .title = Tiyuj
@@ -65,7 +65,7 @@ newtab-dismiss-button-tooltip =
 # Variables:
 #  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
 newtab-menu-content-tooltip =
-    .title = Tijaq k'utüy samaj
+    .title = Tijaq k'utsamaj
     .aria-label = Tijar ri ruk'utsamaj k'ojlem richin { $title }
 # Tooltip on an empty topsite box to open the New Top Site dialog.
 newtab-menu-topsites-placeholder-tooltip =
@@ -109,7 +109,7 @@ newtab-menu-bookmark = Yaketal
 
 newtab-menu-copy-download-link = Tiwachib'ëx Ruximonel Qasanïk
 newtab-menu-go-to-download-page = Tib'e pa Ruxaq Qasanïk
-newtab-menu-remove-download = Tiyuj el pa Natab'äl
+newtab-menu-remove-download = Tiyuj pa Natab'äl
 
 ## Context Menu - Download Menu: These are platform specific strings found in the context menu of an item that has
 ## been downloaded. The intention behind "this action" is that it will show where the downloaded file exists on the file
@@ -127,7 +127,7 @@ newtab-menu-open-file = Tijaq Yakb'äl
 ## the page is bookmarked, or is currently open on another device.
 
 newtab-label-visited = Tz'eton
-newtab-label-bookmarked = Yakon retal
+newtab-label-bookmarked = Yaketan
 newtab-label-removed-bookmark = Yaketal elesan el
 newtab-label-recommended = Rujawaxik
 newtab-label-saved = Yakon pa { -pocket-brand-name }
@@ -145,7 +145,7 @@ newtab-label-sponsored-by = Xto' rub'anikil ruma { $sponsor }
 ## meant as a call to action for the given section.
 
 newtab-section-menu-remove-section = Tiyuj Tanaj
-newtab-section-menu-collapse-section = Tiwulüx Peraj
+newtab-section-menu-collapse-section = Tich'utinarisäx Peraj
 newtab-section-menu-expand-section = Tirik' Peraj
 newtab-section-menu-manage-section = Tinuk'samajïx Peraj
 newtab-section-menu-manage-webext = Tinuk'samajïx K'amal
@@ -153,12 +153,12 @@ newtab-section-menu-add-topsite = Titz'aqatisäx K'ïy Ruwinaq Ruxaq K'amaya'l
 newtab-section-menu-add-search-engine = Titz'aqatisäx Kanob'äl
 newtab-section-menu-move-up = Tijotob'äx
 newtab-section-menu-move-down = Tiqasäx qa
-newtab-section-menu-privacy-notice = Ichinan na'oj
+newtab-section-menu-privacy-notice = Ichinan Na'oj
 
 ## Section aria-labels
 
 newtab-section-collapse-section-label =
-    .aria-label = Tik'ol Peraj
+    .aria-label = Tich'utinarisäx Peraj
 newtab-section-expand-section-label =
     .aria-label = Tirik' Peraj
 
@@ -183,7 +183,7 @@ newtab-empty-section-topstories = Xaq'i'. Katzolin chik pe richin ye'ak'ül ri u
 newtab-discovery-empty-section-topstories-header = ¡Awojqan ronojel!
 newtab-discovery-empty-section-topstories-content = K'a xkatzolin pe richin ch'aqa' chik taq b'anob'äl.
 newtab-discovery-empty-section-topstories-try-again-button = Titojtob'ëx Chik
-newtab-discovery-empty-section-topstories-loading = Nisamajib'ëx...
+newtab-discovery-empty-section-topstories-loading = Nisamäj…
 # Displays when a layout in a section took too long to fetch articles.
 newtab-discovery-empty-section-topstories-timed-out = ¡Uy! B'ama nisamajïx re peraj re', jub'a' chik xrajo'.
 

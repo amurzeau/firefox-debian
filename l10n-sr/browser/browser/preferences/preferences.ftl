@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name } експерименти
+category-experimental =
+    .tooltiptext = { -brand-short-name } експерименти
+pane-experimental-subtitle = Наставите с опрезом
+pane-experimental-search-results-header = { -brand-short-name } експерименти: наставите с опрезом
+pane-experimental-description = Измена напредних подешавања може деловати на { -brand-short-name } перформансе или безбедност.
 help-button-label = { -brand-short-name } подршка
 addons-button-label = Проширења и теме
 focus-search =
@@ -502,7 +508,6 @@ home-prefs-topsites-description = Сајтови које највише пос�
 
 home-prefs-recommended-by-header =
     .label = Предложио { $provider }
-home-prefs-recommended-by-description = Одличан садржај из целог света, персонализован за вас
 home-prefs-recommended-by-description-update = Истакнути садржај са интернета, који обезбеђује { $provider }
 
 ##
@@ -567,7 +572,6 @@ search-show-suggestions-above-history-option =
     .label = Прикажи предлоге претраге испред историје прегледања у резултатима у адресној траци
 search-show-suggestions-private-windows =
     .label = Прикажи предлоге за претрагу у приватном прегледању
-suggestions-addressbar-settings = Промените подешавања за историју прегледавања, обележиваче и предлоге језичака
 suggestions-addressbar-settings-generic = Измените посдешавања предлога претраживања
 search-suggestions-cant-show = Предлози претраге неће бити приказани у траци за локацију зато што сте подесили да { -brand-short-name } никада не памти историју.
 search-one-click-header = One-click претраживачи
@@ -604,6 +608,9 @@ containers-header = Контејнер језичци
 containers-add-button =
     .label = Додај нови контејнер
     .accesskey = Д
+containers-new-tab-check =
+    .label = Изаберите контејнер за сваки нови језичак
+    .accesskey = S
 containers-preferences-button =
     .label = Поставке
 containers-remove-button =
@@ -623,6 +630,9 @@ sync-signedout-account-create = Немате налог? Направите га
 sync-signedout-account-signin =
     .label = Пријави се…
     .accesskey = ј
+sync-signedout-account-signin2 =
+    .label = Пријавите се у { -sync-brand-short-name }…
+    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -805,6 +815,13 @@ forms-master-pw-fips-desc = Грешка приликом промене лоз�
 
 ## OS Authentication dialog
 
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Да бисте направили главну лозинку, унесите ваше Windows податке за пријаву. Ово помаже у заштити ваших налога.
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = направи главну лозинку
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -877,6 +894,8 @@ sitedata-option-block-cross-site-trackers =
     .label = Виешстранични пратиоци
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Вишестранични пратиоци и пратиоци са друштвених мрежа
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Пратиоци с унакрсних страница и друштвених мрежа, те изолација преосталих колачића
 sitedata-option-block-unvisited =
     .label = Колачићи са непосећених веб сајтова
 sitedata-option-block-all-third-party =
@@ -892,6 +911,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Управљам овлашћењима…
     .accesskey = п
+sitedata-cookies-exceptions =
+    .label = Управљај изузецима…
+    .accesskey = x
 
 ## Privacy Section - Address Bar
 
@@ -906,6 +928,9 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Отворене језичке
     .accesskey = ј
+addressbar-locbar-topsites-option =
+    .label = Популарне странице
+    .accesskey = T
 addressbar-suggestions-settings = Измени поставке предлога претраживања
 
 ## Privacy Section - Content Blocking
@@ -953,6 +978,7 @@ content-blocking-etp-strict-desc = Заштита је моћнија, али м
 content-blocking-etp-custom-desc = Изаберите које пратиоце и скрипте треба блокирати.
 content-blocking-private-windows = Садржај који прати у приватним прозорима
 content-blocking-cross-site-tracking-cookies = Вишестранични колачићи-пратиоци
+content-blocking-cross-site-tracking-cookies-plus-isolate = Пратиоци с унакрсних страница и изолација преосталих колачића
 content-blocking-social-media-trackers = Пратиоци с друштвених мрежа
 content-blocking-all-cookies = Сви колачићи
 content-blocking-unvisited-cookies = Колачићи са непосећених страница
@@ -964,6 +990,7 @@ content-blocking-fingerprinters = Хватаче отиска
 content-blocking-warning-title = Напомена!
 content-blocking-warning-description = Блокирање садржаја може узроковати сломљене сајтове у неким случајевима. Лако је онемогућити блокирање за сајтове којима верујете.
 content-blocking-learn-how = Сазнајте више
+content-blocking-and-isolating-etp-warning-description = Блокирање пратилаца и изолација колачића може утицати на функционалност неких страница. Поново учитајте страницу с пратиоцима да бисте учитали сав садржај.
 content-blocking-warning-learn-how = Научите како
 content-blocking-reload-description = Да бисте применили ове измене, морате поново учитати своје језичке.
 content-blocking-reload-tabs-button =
@@ -1011,6 +1038,9 @@ permissions-location-settings =
     .label = Поставке…
     .accesskey = е
 permissions-xr = Виртуелна реалност
+permissions-xr-settings =
+    .label = Подешавања…
+    .accesskey = t
 permissions-camera = Камера
 permissions-camera-settings =
     .label = Поставке…
@@ -1059,6 +1089,7 @@ permissions-a11y-privacy-link = Сазнајте више
 collection-header = { -brand-short-name } сакупљање и коришћење података
 collection-description = Трудимо се да вам пружимо избор и да сакупљамо само оно што нам је потребно да градимо и побољшамо { -brand-short-name } за све. Увек ћемо питати за дозволу пре примања личних података.
 collection-privacy-notice = Обавештење о приватности
+collection-health-report-telemetry-disabled = Више не дозвољавате { -vendor-short-name }-у да снима техничке и интерактивне податке. Сви протекли подаци биће избрисани у року од 30 дана.
 collection-health-report-telemetry-disabled-link = Сазнајте више
 collection-health-report =
     .label = Дозволи { -brand-short-name }-у да шаље техничке и интерактивне податке { -vendor-short-name }-и

@@ -14,6 +14,12 @@ extensions-name = Аты
 extensions-enabled = Іске қосулы
 extensions-version = Нұсқасы
 extensions-id = ID
+support-addons-title = Қосымшалар
+support-addons-name = Аты
+support-addons-type = Түрі
+support-addons-enabled = Іске қосылған
+support-addons-version = Нұсқасы
+support-addons-id = ID
 security-software-title = Қауіпсіздік БҚ-сы
 security-software-type = Түрі
 security-software-name = Аты
@@ -71,6 +77,9 @@ show-dir-label =
         [windows] Буманы ашу
        *[other] Буманы ашу
     }
+experimental-features-title = Эксперименталды мүмкіндіктер
+experimental-features-name = Аты
+experimental-features-value = Мәні
 modified-key-prefs-title = Өзгертілген маңызды баптаулар
 modified-prefs-name = Аты
 modified-prefs-value = Мәні
@@ -262,6 +271,9 @@ blocklisted-bug = Белгілі осалдылықтар салдарынан �
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = ақаулық { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Белгілі мәселелерге байланысты бұғатталған: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Блоктізіміде; қателік коды { $failureCode }

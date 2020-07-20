@@ -5,16 +5,21 @@
 <!ENTITY toField4.label "Untuk">
 <!ENTITY fromField4.label "Dari">
 <!ENTITY senderField4.label "Pengirim">
+<!ENTITY author.label "Pembuat">
 <!ENTITY organizationField4.label "Organisasi">
 <!ENTITY replyToField4.label "Balas ke">
 
 <!ENTITY subjectField4.label "Subjek">
 <!ENTITY ccField4.label "Cc">
 <!ENTITY bccField4.label "Bcc">
+<!ENTITY newsgroupsField4.label "Newsgroups">
+<!ENTITY followupToField4.label "Tindaklanjut ke:">
 <!ENTITY tagsHdr4.label "Tag">
 <!ENTITY dateField4.label "Tanggal">
 <!ENTITY userAgentField4.label "Agen pengguna">
 <!ENTITY referencesField4.label "Referensi">
+<!ENTITY messageIdField4.label "ID Pesan">
+<!ENTITY inReplyToField4.label "Sebagai balasan untuk">
 <!ENTITY originalWebsite4.label "Situs web">
 
 <!ENTITY hdrArchiveButton1.label "Arsipkan">
@@ -67,6 +72,8 @@
 <!ENTITY otherActionsPrint1.accesskey "C">
 
 <!-- Attachment bar context menu items -->
+<!ENTITY startExpandedCmd.label    "Awalnya Tampilkan Panel Lampiran">
+<!ENTITY startExpandedCmd.accesskey    "S">
 
 <!-- Attachment context menu items -->
 <!ENTITY openAttachmentCmd.label    "Buka">
@@ -87,6 +94,11 @@
 <!ENTITY deleteAllAttachmentsCmd.accesskey    "e">
 
 <!ENTITY openAttachment.tooltip "Buka berkas terlampir">
+
+<!ENTITY detachedAttachmentFolder.show.label        "Buka Foldernya">
+<!ENTITY detachedAttachmentFolder.show.accesskey    "F">
+<!ENTITY detachedAttachmentFolder.showMac.label     "Tampilkan di Finder">
+<!ENTITY detachedAttachmentFolder.showMac.accesskey "F">
 
 <!-- Attachment toolbar items -->
 <!ENTITY saveAttachmentButton1.label       "Simpan">

@@ -2,7 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
 close-button =
     .aria-label = Затваряне
 
@@ -24,6 +23,12 @@ category-chat =
 pane-calendar-title = Календар
 category-calendar =
     .tooltiptext = Календар
+
+collection-health-report-telemetry-disabled-link = Научете повече
+
+collection-health-report-link = Научете повече
+
+collection-backlogged-crash-reports-link = Научете повече
 
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,6 +550,9 @@ cookies-button =
     .label = Показване на бисквитките…
     .accesskey = П
 
+learn-button =
+    .label = Научете повече
+
 passwords-description = { -brand-short-name } може да запомни паролите на всичките ви регистрации.
 
 passwords-button =
@@ -723,6 +731,8 @@ chat-variant-label =
 chat-header-label =
     .label = Показване на заглавен ред
     .accesskey = з
+
+## Preferences UI Search Results
 
 ## Preferences UI Search Results
 

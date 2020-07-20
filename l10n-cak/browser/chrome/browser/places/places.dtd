@@ -38,7 +38,7 @@
 <!ENTITY cmd.backup.accesskey           "T">
 <!ENTITY cmd.restore2.label             "Titzolïx ruk'ojlem">
 <!ENTITY cmd.restore2.accesskey         "T">
-<!ENTITY cmd.restoreFromFile.label      "Ticha' yamb'äl…">
+<!ENTITY cmd.restoreFromFile.label      "Ticha' Yakb'äl…">
 <!ENTITY cmd.restoreFromFile.accesskey  "T">
 
 <!ENTITY cmd.deleteDomainData.label     "Timestäx re ruxaq k'amaya'l re'">
@@ -46,16 +46,16 @@
 
 <!ENTITY cmd.open.label                  "Tijaq">
 <!ENTITY cmd.open.accesskey              "T">
-<!ENTITY cmd.open_window.label           "Tijaq pa jun k'ak'a' tzuwach">
+<!ENTITY cmd.open_window.label           "Tijaq pa jun K'ak'a' Tzuwäch">
 <!ENTITY cmd.open_window.accesskey       "k">
-<!ENTITY cmd.open_private_window.label     "Tijaq pa jun k'ak'a' ichinan tzuwäch">
+<!ENTITY cmd.open_private_window.label     "Tijaq pa jun K'ak'a' Ichinan Tzuwäch">
 <!ENTITY cmd.open_private_window.accesskey "i">
-<!ENTITY cmd.open_tab.label              "Tijaq jun k'ak'a' ruwi'">
+<!ENTITY cmd.open_tab.label              "Tijaq pa jun K'ak'a' Ruwi'">
 <!ENTITY cmd.open_tab.accesskey          "k">
-<!ENTITY cmd.open_all_in_tabs.label      "Tiqaj ronojel rik'in ruwi'">
+<!ENTITY cmd.open_all_in_tabs.label      "Tiqaj Ronojel rik'in taq Ruwi'">
 <!ENTITY cmd.open_all_in_tabs.accesskey  "T">
 
-<!ENTITY cmd.properties.label      "Taq ch'akulal">
+<!ENTITY cmd.properties.label      "Taq ichinil">
 <!ENTITY cmd.properties.accesskey  "a">
 
 <!ENTITY cmd.sortby_name.label              "Tinuk' chi b'i'aj">
@@ -76,10 +76,10 @@
 <!ENTITY col.mostrecentvisit.label "Ruk'isib'äl Tz'etoj">
 <!ENTITY col.visitcount.label    "Jarupe' taq tz'etoj">
 <!ENTITY col.dateadded.label     "Tz'aqatisan">
-<!ENTITY col.lastmodified.label  "Ruk'isib'äl k'exoj">
+<!ENTITY col.lastmodified.label  "Ruk'isib'äl K'exoj">
 
-<!ENTITY historySearch.placeholder  "Tikanöx ri natab'äl">
-<!ENTITY bookmarksSearch.placeholder  "Kekanöx taq yaketal">
+<!ENTITY historySearch.placeholder  "Tikanöx natab'äl">
+<!ENTITY bookmarksSearch.placeholder  "Kekanöx yaketal">
 
 <!ENTITY cmd.find.key  "f">
 

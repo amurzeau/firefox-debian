@@ -192,7 +192,7 @@ bookmark-panel-show-editor-checkbox =
     .label = Tik'ut k'exob'äl toq niyak
     .accesskey = k
 bookmark-panel-done-button =
-    .label = Xk'achoj
+    .label = Xk'is
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -223,8 +223,8 @@ identity-connection-verified = Ütz ri awokem pa re ruxaq k'amaya'l re'.
 identity-ev-owner-label = Iqitzijib'äl talun richin:
 identity-description-custom-root = Ri Mozilla man retaman ta ruwäch ri ruya'öl iqitzijib'äl Mozilla. Rik'in jub'a' xtz'aqatisäx pa jun samajel q'inoj o ruma jun nuk'samajel. <label data-l10n-name="link">Tetamäx ch'aqa' chik</label>
 identity-remove-cert-exception =
-    .label = Telesäx el ri man ja ta jun
-    .accesskey = T
+    .label = Tiyuj Man Relik Ta
+    .accesskey = y
 identity-description-insecure = Man ichinan ta ri owokem pa re ruxaq k'amaya'l re'. Ronojel ri etamab'äl xke'atäq el, ch'aqa' chik tikirel xkekitz'ët (achi'el ewan taq tzij, taq rutzijol, ch'utit'im pwäq, ch'aqa' chik).
 identity-description-insecure-login-forms = Ri retamab'al rutikirisanïk molojri'ïl xtatz'ib'aj pa re ruxaq k'amaya'l re' man chajin ta, ruma ri' rik'in jub'a' nitziläx.
 identity-description-weak-cipher-intro = Ri awokem pa re ruxaq k'amaya'l re' nrokisaj lawalïk skript ruma ri man ichinan ta.
@@ -236,7 +236,7 @@ identity-description-passive-loaded-mixed = Stape' { -brand-short-name } xuq'ät
 identity-description-active-loaded = Re ruxaq k'amaya'l re' k'o itzel taq na'oj chupam (achi'el taq skript) man awichinan ta ri awokem we yatok chupam.
 identity-description-active-loaded-insecure = Ri taq etamab'äl xke'akomonij rik'in re ruxaq k'amaya'l re', tikirel nikitz'ët juley chik winaqi' (achi'el ewan taq tzij, taq rutzijol, t'im pwäq, ch'aqa' chik).
 identity-learn-more =
-    .value = Tetamäx ch'aqa' chik
+    .value = Tetamäx Ch'aqa' Chik
 identity-disable-mixed-content-blocking =
     .label = Wakami yan tz'apäl ri chajinïk
     .accesskey = t
@@ -267,7 +267,7 @@ popup-select-microphone =
     .accesskey = Q
 popup-all-windows-shared = Xkekomonïx konojel ri tz'etel taq tzuwäch e k'o pa ri ruwäch.
 popup-screen-sharing-not-now =
-    .label = Wakami mani
+    .label = Wakami Mani
     .accesskey = W
 popup-screen-sharing-never =
     .label = Majub'ey Tiya' Q'ij
@@ -291,9 +291,9 @@ enable-devtools-popup-description = Richin nokisäx ri F12 chojokem, nab'ey taja
 ## URL Bar
 
 urlbar-default-placeholder =
-    .defaultPlaceholder = Tikanöx chuqa' titz'ib'äx ri ochochib'äl
+    .defaultPlaceholder = Tikanöx o titz'ib'äx ochochib'äl
 urlbar-placeholder =
-    .placeholder = Tikanöx chuqa' titz'ib'äx ri ochochib'äl
+    .placeholder = Tikanöx o titz'ib'äx ochochib'äl
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Ri Okik'amaya'l k'o pa ruq'a' ri näj chajinïk
 urlbar-permissions-granted =

@@ -209,6 +209,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Összes megjelenítése
     .accesskey = m
+cfr-doorhanger-milestone-close-button = Bezárás
+    .accesskey = B
 
 ## What’s New Panel Content for Firefox 76
 
@@ -242,3 +244,18 @@ cfr-whatsnew-protections-icon-alt = Pajzs ikon
 
 cfr-whatsnew-better-pdf-header = Jobb PDF-élmény
 cfr-whatsnew-better-pdf-body = A PDF-dokumentumok már közvetlenül a { -brand-short-name }ban nyílnak meg, így a munkafolyamata egyszerű maradhat.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Számít az adatvédelem. A { -brand-short-name }, amikor csak lehet, biztonságosan továbbítja a DNS-kéréseit egy partnerszolgáltatóhoz, hogy megvédje Önt, miközben böngészik.
+cfr-doorhanger-doh-header = Biztonságosabb, titkosított DNS-keresések
+cfr-doorhanger-doh-primary-button = Rendben, értem
+    .accesskey = R
+cfr-doorhanger-doh-secondary-button = Letiltás
+    .accesskey = t
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Automatikus védelem az alattomos követési taktikákkal szemben
+cfr-whatsnew-clear-cookies-body = Egyes nyomkövetők más weboldalakra irányítják át, melyek titokban sütiket állítanak be. A { -brand-short-name } most már automatikusa törli ezeket a sütiket, így nem tudják követni Önt.
+cfr-whatsnew-clear-cookies-image-alt = Sütiblokkolási illusztráció

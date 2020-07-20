@@ -14,6 +14,12 @@ extensions-name = Enw
 extensions-enabled = Galluogwyd
 extensions-version = Fersiwn
 extensions-id = ID
+support-addons-title = Ychwanegion
+support-addons-name = Enw
+support-addons-type = Math
+support-addons-enabled = Galluogwyd
+support-addons-version = Fersiwn
+support-addons-id = ID
 security-software-title = Meddalwedd Diogelwch
 security-software-type = Math
 security-software-name = Enw
@@ -71,6 +77,9 @@ show-dir-label =
         [windows] Agor Ffolder
        *[other] Agor Cyfeiriadur
     }
+experimental-features-title = Nodweddion Arbrofol
+experimental-features-name = Enw
+experimental-features-value = Gwerth
 modified-key-prefs-title = Dewisiadau Pwysig wedi eu Newid
 modified-prefs-name = Enw
 modified-prefs-value = Gwerth
@@ -282,6 +291,9 @@ blocklisted-bug = Wedi eu rhwystro ar sail gwybodaeth hysbys
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = gwall { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Ar y Rhestr Rhwystro oherwydd materion hysbys: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Wedi ei rwystro; gwall cod { $failureCode }

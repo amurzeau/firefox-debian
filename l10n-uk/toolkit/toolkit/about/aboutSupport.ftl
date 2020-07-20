@@ -17,6 +17,12 @@ extensions-name = Назва
 extensions-enabled = Увімкнено
 extensions-version = Версія
 extensions-id = ID
+support-addons-title = Додатки
+support-addons-name = Назва
+support-addons-type = Тип
+support-addons-enabled = Увімкнено
+support-addons-version = Версія
+support-addons-id = ID
 security-software-title = Програмне забезпечення для захисту
 security-software-type = Тип
 security-software-name = Назва
@@ -74,6 +80,9 @@ show-dir-label =
         [windows] Відкрити теку
        *[other] Відкрити каталог
     }
+experimental-features-title = Експериментальні можливості
+experimental-features-name = Назва
+experimental-features-value = Значення
 modified-key-prefs-title = Важливі змінені налаштування
 modified-prefs-name = Назва
 modified-prefs-value = Значення
@@ -270,6 +279,9 @@ blocklisted-bug = Заблоковано через відомі проблем�
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = вада { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Заблоковано, у зв'язку з відомими проблемами: <a data-l10n-name="bug-link">звіт { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Заблоковано; код помилки { $failureCode }

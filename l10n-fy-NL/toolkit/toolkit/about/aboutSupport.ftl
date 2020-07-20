@@ -17,6 +17,12 @@ extensions-name = Namme
 extensions-enabled = Ynskeakele
 extensions-version = Ferzje
 extensions-id = ID
+support-addons-title = Add-ons
+support-addons-name = Namme
+support-addons-type = Type
+support-addons-enabled = Ynskeakele
+support-addons-version = Ferzje
+support-addons-id = ID
 security-software-title = Befeiligingssoftware
 security-software-type = Type
 security-software-name = Namme
@@ -74,6 +80,9 @@ show-dir-label =
         [windows] Map iepenje
        *[other] Map iepenje
     }
+experimental-features-title = Eksperimintele funksjes
+experimental-features-name = Namme
+experimental-features-value = Wearde
 modified-key-prefs-title = Wichtige oanpaste foarkarren
 modified-prefs-name = Namme
 modified-prefs-value = Wearde
@@ -265,6 +274,9 @@ blocklisted-bug = Om bekende problemen op de blokkearlist
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Blokkearre fanwegen bekende problemen: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Op blokkearlist; flaterkoade { $failureCode }

@@ -63,7 +63,7 @@ csp-xfo-blocked-long-desc = Richin nichajïx ri ajikomal, man xtuya' ta q'ij ri 
 ## Messages used for certificate error titles
 
 connectionFailure-title = Man tikirel ta nok
-deniedPortAccess-title = Re ochochib'äl re' q'aton rusamaj
+deniedPortAccess-title = Q'aton re ochochib'äl re'
 # "Hmm" is a sound made when considering or puzzling over something.
 # You don't have to include it in your translation if your language does not have a written word like this.
 dnsNotFound-title = Hmm. K'o qak'ayewal richin niqïl ri ruxaq k'amaya'l.
@@ -75,26 +75,24 @@ captivePortal-title = Tok pa k'amab'ey
 # You don't have to include it in your translation if your language does not have a written word like this.
 malformedURI-title = Hmm. Man ütz ta niwachin ri ochochib'äl ri'.
 netInterrupt-title = Xq'at ri okem
-notCached-title = Xk'is ruq'ijul ri wuj
+notCached-title = Xk'is Ruq'ijul ri Wuj
 netOffline-title = Pa rub'eyal majun okem
 contentEncodingError-title = Sachoj pa rucholajil rupam
 unsafeContentType-title = Itzel ruwäch chi yakb'äl
 netReset-title = Tikirisan chik ri okem
 netTimeout-title = Xxik'o ruq'ijul ri okem
 unknownProtocolFound-title = Man nich'ob'otäj ta ri ochochib'äl
-proxyConnectFailure-title = Ri proxy ruk'u'x samaj tajin yerutzolij ri taq okem
+proxyConnectFailure-title = Ja ri proxy k'uxasamaj nixutun ri okem
 proxyResolveFailure-title = Man nilitäj ta ri proxi ruk'u'x samaj
 redirectLoop-title = Man ütz ta tajin niq'axan ri ruxaq k'amaya'l
 unknownSocketType-title = Man oyob'en ta re rutzijol tajin nuya' pe ri ruk'u'x samaj
 nssFailure2-title = Xq'ate' ri ütz okem
-cspBlocked-title = Q'aton ruma ri Runa'ojil Rujikomal Rupam Etamab'äl
-xfoBlocked-title = Xq'at ruma ri X-Frame-Options Na'ojil
 csp-xfo-error-title = { -brand-short-name } Man Nitikïr Ta Nujäq Re Ruxaq Re'
-corruptedContentError-title = Sachoj ruma itzel rupam
+corruptedContentError-title = Sachoj Ruma Itzel Rupam
 remoteXUL-title = Näj XUL
 sslv3Used-title = Man tikirel ta ütz nok
 inadequateSecurityError-title = Itzel ri awokem
-blockedByPolicy-title = Q'aton Ruxaq
+blockedByPolicy-title = Xq'at Ruxaq
 clockSkewError-title = Sachinäq ri ruch'utiq'ijub'al akematz'ib'
 networkProtocolError-title = Rusachoj Rub'eyal Nisamäj K'amb'ey
 nssBadCert-title = Rutzijol K'ayewal: Nimaläj Ruk'ayewal Jikomal Petenäq

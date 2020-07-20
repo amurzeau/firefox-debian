@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name }ovi poskusi
+category-experimental =
+    .tooltiptext = { -brand-short-name }ovi poskusi
+pane-experimental-subtitle = Nadaljujte previdno
+pane-experimental-search-results-header = { -brand-short-name }ovi poskusi: nadaljujte previdno
+pane-experimental-description = Spreminjanje naprednih nastavitev lahko vpliva na delovanje ali varnost { -brand-short-name }a.
 help-button-label = Podpora za { -brand-short-name }
 addons-button-label = Razširitve in teme
 focus-search =
@@ -505,7 +511,6 @@ home-prefs-topsites-description = Strani, ki jih največkrat obiščete
 
 home-prefs-recommended-by-header =
     .label = Priporoča { $provider }
-home-prefs-recommended-by-description = Odlična vsebina iz celega spleta, prilagojena vašemu okusu
 home-prefs-recommended-by-description-update = Izjemna vsebina z vsega spleta, ki jo izbira { $provider }
 
 ##
@@ -571,7 +576,6 @@ search-show-suggestions-above-history-option =
     .label = Med rezultati naslovne vrstice prikaži predloge iskanja pred zgodovino brskanja
 search-show-suggestions-private-windows =
     .label = Prikazuj predloge iskanja v zasebnih oknih
-suggestions-addressbar-settings = Spremeni nastavitve za zgodovino brskanja, zaznamke in predloge zavihkov
 suggestions-addressbar-settings-generic = Spremeni nastavitve drugih predlogov naslovne vrstice
 search-suggestions-cant-show = Predlogi iskanja v vrstici z naslovom ne bodo prikazani, ker ste { -brand-short-name } nastavili tako, da si nikoli ne zapomni zgodovine.
 search-one-click-header = Iskalniki, dostopni z enim klikom
@@ -821,7 +825,7 @@ master-password-os-auth-dialog-message-win = Če želite ustvariti glavno geslo,
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = ustvari glavno geslo
+master-password-os-auth-dialog-message-macosx = create a Master Password
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -1169,6 +1173,14 @@ space-alert-under-5gb-ok-button =
     .label = V redu, razumem
     .accesskey = V
 space-alert-under-5gb-message = Brskalniku { -brand-short-name } zmanjkuje prostora na disku. Strani se morda ne bodo prikazovale pravilno. Obiščite "Več o tem" za optimizacijo uporabe prostora na disku in boljšo izkušnjo brskanja po spletu.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Način "samo HTTPS"
+httpsonly-description = HTTPS zagotavlja varno, šifrirano povezavo med { -brand-short-name }om in spletnimi mesti, ki jih obiščete. Večina spletnih mest podpira HTTPS, in če je omogočen način "samo HTTPS", bo { -brand-short-name } nadgradil vse povezave na HTTPS.
+httpsonly-learn-more = Več o tem
+httpsonly-radio-enabled =
+    .label = Omogoči način "samo HTTPS" v vseh oknih
 
 ## The following strings are used in the Download section of settings
 

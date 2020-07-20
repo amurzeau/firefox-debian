@@ -22,7 +22,7 @@ downloads-cmd-pause =
     .label = Rupab'axik
     .accesskey = R
 downloads-cmd-resume =
-    .label = Tisamajïx chik qa
+    .label = Titikïr chik el
     .accesskey = T
 downloads-cmd-cancel =
     .tooltiptext = Tiq'at
@@ -34,8 +34,8 @@ downloads-cmd-show-menuitem =
     .accesskey = T
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
-    .label = Tik'ut pe pan ilonel
-    .accesskey = i
+    .label = Tik'ut Pa Finder
+    .accesskey = F
 downloads-cmd-use-system-default =
     .label = Tijaq pa ri Rutz'etöy Q'inoj
     .accesskey = t
@@ -70,10 +70,10 @@ downloads-cmd-go-to-download-page =
     .label = Tib'e pa ri ruxaq akuchi' niqasäx
     .accesskey = T
 downloads-cmd-copy-download-link =
-    .label = Tiwachib'ëx ri rub'ey richin niqasäx
-    .accesskey = r
+    .label = Tiwachib'ëx Ruximonel Qasanïk
+    .accesskey = R
 downloads-cmd-remove-from-history =
-    .label = Tiyuj el chupam ri natab'äl
+    .label = Tiyuj Pa Natab'äl
     .accesskey = y
 downloads-cmd-clear-list =
     .label = Tiyuj nab'ey tz'ub'al pas
@@ -87,9 +87,9 @@ downloads-cmd-unblock =
     .accesskey = a
 # This is the tooltip of the action button shown when malware is blocked.
 downloads-cmd-remove-file =
-    .tooltiptext = Telesäx el ri yakb'äl
+    .tooltiptext = Tiyuj Yakb'äl
 downloads-cmd-remove-file-panel =
-    .aria-label = Telesäx el ri yakb'äl
+    .aria-label = Tiyuj Yakb'äl
 # This is the tooltip of the action button shown when potentially unwanted
 # downloads are blocked. This opens a dialog where the user can choose
 # whether to unblock or remove the download. Removing is the default option.
@@ -115,7 +115,7 @@ downloads-open-file =
 # Displayed when hovering a download which is able to be retried by users,
 # indicates that it's possible to download this file again.
 downloads-retry-download =
-    .value = Titojtob'ëx chik qasanïk
+    .value = Titojtob'ëx chik Niqasäx
 # Displayed when hovering a download which is able to be cancelled by users,
 # indicates that it's possible to cancel and stop the download.
 downloads-cancel-download =

@@ -17,6 +17,12 @@ extensions-name = Nomine
 extensions-enabled = Activate
 extensions-version = Version
 extensions-id = ID
+support-addons-title = Additivos
+support-addons-name = Nomine
+support-addons-type = Typo
+support-addons-enabled = Activate
+support-addons-version = Version
+support-addons-id = ID
 security-software-title = Software de securitate
 security-software-type = Typo
 security-software-name = Nomine
@@ -74,6 +80,9 @@ show-dir-label =
         [windows] Aperir le dossier
        *[other] Aperir le directorio
     }
+experimental-features-title = Functionalitates experimental
+experimental-features-name = Nomine
+experimental-features-value = Valor
 modified-key-prefs-title = Preferentias importante modificate
 modified-prefs-name = Nomine
 modified-prefs-value = Valor
@@ -265,6 +274,9 @@ blocklisted-bug = Inserite in le lista del blocates per problemas note
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = error { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Inserite in lista del blocadas per note problemas: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Inserite in le lista del blocates: codice de error { $failureCode }

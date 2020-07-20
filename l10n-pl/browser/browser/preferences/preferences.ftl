@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = Ustawienia dotyczące synchronizacji
+pane-experimental-title = Eksperymenty przeglądarki { -brand-short-name }
+category-experimental =
+    .tooltiptext = Eksperymenty przeglądarki { -brand-short-name }
+pane-experimental-subtitle = Zachowaj ostrożność
+pane-experimental-search-results-header = Eksperymenty przeglądarki { -brand-short-name }: zachowaj ostrożność
+pane-experimental-description = Modyfikacja zaawansowanych preferencji może wpłynąć na wydajność lub bezpieczeństwo przeglądarki { -brand-short-name }.
 help-button-label = Wsparcie programu { -brand-short-name }
 addons-button-label = Dodatki i motywy
 focus-search =
@@ -502,7 +508,6 @@ home-prefs-topsites-description = Najczęściej odwiedzane strony.
 
 home-prefs-recommended-by-header =
     .label = Polecane przez { $provider }
-home-prefs-recommended-by-description = Świetne rzeczy z całego Internetu, wybrane specjalnie dla Ciebie
 home-prefs-recommended-by-description-update = Wyjątkowe rzeczy z całego Internetu, wybrane przez { $provider }
 
 ##
@@ -567,7 +572,6 @@ search-show-suggestions-above-history-option =
     .label = Podpowiedzi wyszukiwania nad historią przeglądania w wynikach paska adresu
 search-show-suggestions-private-windows =
     .label = Podpowiedzi wyszukiwania w prywatnych oknach
-suggestions-addressbar-settings = Zmień preferencje podpowiedzi z historii przeglądania, zakładek i kart
 suggestions-addressbar-settings-generic = Zmień preferencje innych podpowiedzi w pasku adresu
 search-suggestions-cant-show = Podpowiedzi wyszukiwania nie będą wyświetlane w wynikach paska adresu, ponieważ wyłączono zachowywanie historii przeglądania programu { -brand-short-name }.
 search-one-click-header = Dodatkowe wyszukiwarki
@@ -1165,6 +1169,18 @@ space-alert-under-5gb-ok-button =
     .label = OK
     .accesskey = O
 space-alert-under-5gb-message = Przeglądarce { -brand-short-name } zaczyna brakować miejsca na dysku. Zawartość stron może być wyświetlana niepoprawnie. Skorzystaj z odnośnika „Więcej informacji”, aby zoptymalizować użycie dysku dla lepszego przeglądania.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Tryb używania wyłącznie protokołu HTTPS
+httpsonly-description = Protokół HTTPS zapewnia zabezpieczone, zaszyfrowane połączenie między przeglądarką { -brand-short-name } a odwiedzanymi witrynami. Większość witryn obsługuje HTTPS, a jeśli tryb używania wyłącznie protokołu HTTPS jest włączony, to { -brand-short-name } przełączy wszystkie połączenia na HTTPS.
+httpsonly-learn-more = Więcej informacji
+httpsonly-radio-enabled =
+    .label = Tryb używania wyłącznie protokołu HTTPS we wszystkich oknach
+httpsonly-radio-enabled-pbm =
+    .label = Tryb używania wyłącznie protokołu HTTPS tylko w oknach prywatnych
+httpsonly-radio-disabled =
+    .label = Nie włączaj trybu używania wyłącznie protokołu HTTPS
 
 ## The following strings are used in the Download section of settings
 

@@ -203,6 +203,8 @@ cfr-doorhanger-cryptominers-description = Le respect de votre vie privée est im
 cfr-doorhanger-milestone-heading = { -brand-short-name } a bloqué plus de <b>{ $blockedCount }</b> traqueurs depuis { $date }.
 cfr-doorhanger-milestone-ok-button = Tout afficher
     .accesskey = T
+cfr-doorhanger-milestone-close-button = Fermer
+    .accesskey = F
 
 ## What’s New Panel Content for Firefox 76
 
@@ -236,3 +238,18 @@ cfr-whatsnew-protections-icon-alt = Icône de bouclier
 
 cfr-whatsnew-better-pdf-header = Meilleure expérience PDF
 cfr-whatsnew-better-pdf-body = Les documents PDF s’ouvrent maintenant directement dans { -brand-short-name }, gardant vos outils de travail à portée de main.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Le respect de votre vie privée est important. Désormais, et lorsque cela est possible, { -brand-short-name } envoie vos requêtes DNS de manière sécurisée vers un service fourni par un partenaire pour vous protéger pendant votre navigation.
+cfr-doorhanger-doh-header = Des requêtes DNS chiffrées et plus sûres
+cfr-doorhanger-doh-primary-button = D’accord, j’ai compris.
+    .accesskey = o
+cfr-doorhanger-doh-secondary-button = Désactiver
+    .accesskey = D
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Protection automatique contre les techniques de pistage discrètes
+cfr-whatsnew-clear-cookies-body = Certains traqueurs vous redirigent vers d’autres sites qui créent des cookies cachés. { -brand-short-name } est désormais capable d’effacer ces cookies afin que vous ne puissiez pas être pisté·e.
+cfr-whatsnew-clear-cookies-image-alt = Illustration d’un cookie bloqué

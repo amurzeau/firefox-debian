@@ -6,7 +6,7 @@
 %brandDTD;
 
 <!ENTITY loadError.label "Apañuái oñemyenyhẽvo kuatiarogue">
-<!ENTITY retry.label "Eha'ãjey">
+<!ENTITY retry.label "Eha’ãjey">
 <!ENTITY returnToPreviousPage.label "Eguevi">
 <!ENTITY returnToPreviousPage1.label "Eguevi (mboajepyre)">
 <!ENTITY advanced2.label "Opapotáva…">
@@ -51,27 +51,31 @@
 
 <!ENTITY malformedURI.pageTitle "URL ndoikóiva">
 <!-- Localization note (malformedURI.title1) - "Hmm" is a sound made when considering or puzzling over something. You don't have to include it in your translation if your language does not have a written word like this. -->
-<!ENTITY malformedURI.title1 "Hmm. Ko kundaharape ha'ete ku ndoikóiva.">
+<!ENTITY malformedURI.title1 "Hmm. Ko kundaharape ha’ete ku ndoikóiva.">
 
 <!ENTITY netInterrupt.title "Pe jeike ojejokóma">
 
 <!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
 
-<!ENTITY notCached.title "Kuatia oikove'ỹmava">
+<!ENTITY notCached.title "Kuatia oikove’ỹmava">
 
-<!ENTITY notCached.longDesc "<p>Kuatia jerurepyre noĩvéima ojepuru hag̃uáicha kache &brandShortName;-pe.</p><ul><li>Kyhyje tekorosãrãramo, &brandShortName; ndojeruremo’ãvéima ijehegui kuatiakuéra takate’ỹha.</li><li>Eikutu Ñeha'ãjey ejerure jey hag̃ua pe kuatia ñanduti renda pegua.</li></ul>">
+<!ENTITY notCached.longDesc "<p>Kuatia jerurepyre noĩvéima ojepuru hag̃uáicha kache &brandShortName;-pe.</p><ul><li>Kyhyje tekorosãrãramo, &brandShortName; ndojeruremo’ãvéima ijehegui kuatiakuéra takate’ỹha.</li><li>Eikutu Ñeha’ãjey ejerure jey hag̃ua pe kuatia ñanduti renda pegua.</li></ul>">
 
-<!ENTITY netOffline.title "Jeikekatu'ỹre">
+<!ENTITY netOffline.title "Jeikekatu’ỹre">
 
 <!ENTITY netOffline.longDesc2 "<ul> <li>Ejopy &quot;Ha&apos;ã jey&quot; remoambue hag̃ua jeikekatúpe ha kuatiarogue myenyhẽjey.</li> </ul>">
 
 <!ENTITY contentEncodingError.title "Tetepy mbopapapy jejavy">
 
-<!ENTITY contentEncodingError.longDesc "<ul> <li>Eñe'ẽ ñanduti renda jára ndive emomarandu hag̃ua chupe ko apañuãi.</li> </ul>">
+<!ENTITY contentEncodingError.longDesc "<ul>
+  <li>Eñe’ẽ ñanduti renda jára ndive emomarandu hag̃ua chupe ko apañuãi.</li>
+</ul>">
 
 <!ENTITY unsafeContentType.title "Koichagua marandurenda hekotee'ỹva">
 
-<!ENTITY unsafeContentType.longDesc "<ul> <li>Eñe'ẽ ñanduti renda jára ndive emomarandu hag̃ua chupekuéra ko apañuãi rehegua.</li> </ul>">
+<!ENTITY unsafeContentType.longDesc "<ul>
+  <li>Eñe’ẽ ñanduti renda jára ndive emomarandu hag̃ua chupekuéra ko apañuãi rehegua.</li>
+</ul>">
 
 <!ENTITY netReset.title "Jeike oñepyrũjeýma">
 
@@ -87,7 +91,7 @@
 
 <!ENTITY proxyConnectFailure.title "Mohendahavusu proxy ombotove jeike">
 
-<!ENTITY proxyConnectFailure.longDesc "<ul> <li>Ehechajey proxy ñemboheko eikuaaite hag̃ua oĩ porãpa.</li> <li>Eñe'ẽ ñanduti ñangarekohára ndive eikuaaite hag̃ua mohendahavusu proxy oiko porãiteha.</li> </ul>">
+<!ENTITY proxyConnectFailure.longDesc "<ul> <li>Ehechajey proxy ñemboheko eikuaaite hag̃ua oĩ porãpa.</li> <li>Eñe’ẽ ñanduti ñangarekohára ndive eikuaaite hag̃ua mohendahavusu proxy oiko porãiteha.</li> </ul>">
 
 <!ENTITY proxyResolveFailure.title "Ndaikatúi ojejuhu mohendahavusu proxy">
 
@@ -100,7 +104,7 @@
     kookie ñeg̃uahẽ.</li>
 </ul>">
 
-<!ENTITY unknownSocketType.title "Mbohovái eha'ãrõ'ỹva mohendahavusúgui">
+<!ENTITY unknownSocketType.title "Mbohovái eha’ãrõ’ỹva mohendahavusúgui">
 
 <!ENTITY unknownSocketType.longDesc "<ul>
   <li>Ehechajey nde apopyvusu oguerekópa ñangarekoha imba’eteéva
@@ -158,7 +162,7 @@ Pe arapapaha ne mohendaha rehegua oĩporã <span id='wrongSystemTime_systemDate2
 
 <!ENTITY xfoBlocked.longDesc "<p>&brandShortName; omboyke ko kuatiarogue henyhẽvo ko apu’ápe pe kuatiarogue oreko rupi X-Frame purureko nomoneĩriva.</p>">
 
-<!ENTITY corruptedContentErrorv2.longDesc "<p>Pe Kuatiarogue ehechaséva ndaikatúi ojehechauka ndéve ojejuhu rupi peteĩ jejavy mba’ekuaarã ñembohasakuévo.</p><ul><li>Eñe'ẽ ko ñanduti renda jarakuéra ndive emomarandu hag̃ua chupekuéra ko apañuãi.</li></ul>">
+<!ENTITY corruptedContentErrorv2.longDesc "<p>Pe Kuatiarogue ehechaséva ndaikatúi ojehechauka ndéve ojejuhu rupi peteĩ jejavy mba’ekuaarã ñembohasakuévo.</p><ul><li>Eñe’ẽ ko ñanduti renda jarakuéra ndive emomarandu hag̃ua chupekuéra ko apañuãi.</li></ul>">
 
 <!ENTITY securityOverride.exceptionButton1Label "Emoneĩ imarãkuaáva ha eku’ejey">
 
@@ -167,7 +171,7 @@ Pe arapapaha ne mohendaha rehegua oĩporã <span id='wrongSystemTime_systemDate2
 
 <!ENTITY remoteXUL.title "XUL okaygua">
 
-<!ENTITY remoteXUL.longDesc "<p><ul><li>Eñe'ẽ ñanduti renda jarakuéra ndive emomarandu hag̃ua chupekuéra ko apañuãi.</li></ul></p>">
+<!ENTITY remoteXUL.longDesc "<p><ul><li>Eñe’ẽ ñanduti renda jarakuéra ndive emomarandu hag̃ua chupekuéra ko apañuãi.</li></ul></p>">
 
 <!ENTITY sslv3Used.title "Ndaikatúi eikekatu">
 
@@ -178,7 +182,7 @@ Pe arapapaha ne mohendaha rehegua oĩporã <span id='wrongSystemTime_systemDate2
 <!ENTITY certerror.pagetitle2  "Jesarekorã: Imarãkuaáva tekorosã tenondeve">
 <!ENTITY certerror.sts.pagetitle  "Ndoikéi: Ikatu iñapañuãi tekorosãrã">
 <!ENTITY certerror.whatShouldIDo.badStsCertExplanation1 "<span class='hostname'></span> oguereko tekorosã purureko hérava HTTP Strict transporte Security (HSTS), he’iséva &brandShortName; oiketaha hendive tekorosãme. Ndaikatúi embojuaju oĩ’ỹva eike hag̃ua ko tendápe.">
-<!ENTITY certerror.copyToClipboard.label "Moñe'ẽrã mbohasa kuatiajokohápe">
+<!ENTITY certerror.copyToClipboard.label "Moñe’ẽrã mbohasa kuatiajokohápe">
 
 <!ENTITY inadequateSecurityError.title "Nde jeike ndahekokatúi">
 

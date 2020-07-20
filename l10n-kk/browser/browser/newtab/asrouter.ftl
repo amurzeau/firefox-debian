@@ -206,6 +206,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Барлығын қарау
     .accesskey = р
+cfr-doorhanger-milestone-close-button = Жабу
+    .accesskey = Ж
 
 ## What’s New Panel Content for Firefox 76
 
@@ -239,3 +241,18 @@ cfr-whatsnew-protections-icon-alt = Қалқан таңбашасы
 
 cfr-whatsnew-better-pdf-header = PDF-пен жақсырақ жұмыс
 cfr-whatsnew-better-pdf-body = PDF құжаттары енді тікелей { -brand-short-name } ішінде ашылып, жұмыс үрдісіңізді жеңілдетеді.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Сіздің жекелігіңіз маңызды. { -brand-short-name } енді шолу кезінде сізді қорғау үшін DNS сұранымдарыңызды мүмкін болған кезде серіктес қызметі арқылы қауіпсіз түрде бағыттайды.
+cfr-doorhanger-doh-header = Одан әрі қауіпсіз, шифрленген DNS іздеулері
+cfr-doorhanger-doh-primary-button = Жақсы, түсіндім
+    .accesskey = а
+cfr-doorhanger-doh-secondary-button = Сөндіру
+    .accesskey = д
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Жасырын бақылау техникасынан автоматты қорғаныс
+cfr-whatsnew-clear-cookies-body = Кейбір трекерлер сізді cookie файлдарын құпия түрде орнататын басқа веб-сайттарға бағыттайды. { -brand-short-name } енді бұл cookie файлдарын автоматты түрде тазартады, сондықтан олар сізді бақылай алмайды.
+cfr-whatsnew-clear-cookies-image-alt = Cookie файлы блокталған кескін

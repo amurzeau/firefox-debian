@@ -8,6 +8,8 @@
 <!ENTITY  language.accesskey                      "H">
 
 <!ENTITY  size.label                              "Ukuran:">
+<!ENTITY  sizeProportional.accesskey              "e">
+<!ENTITY  sizeMonospace.accesskey                 "i">
 
 <!ENTITY  proportional.label                      "Proporsional:">
 <!ENTITY  proportional.accesskey                  "P">
@@ -29,6 +31,7 @@
 <!ENTITY  font.langGroup.korean                   "Korea">
 <!ENTITY  font.langGroup.cyrillic                 "Cyrillic">
 <!ENTITY  font.langGroup.el                       "Yunani">
+<!ENTITY  font.langGroup.other                    "Sistem Aksara Lainnya">
 <!ENTITY  font.langGroup.thai                     "Thailand">
 <!ENTITY  font.langGroup.hebrew                   "Ibrani">
 <!ENTITY  font.langGroup.arabic                   "Arab">
@@ -44,9 +47,11 @@
 <!ENTITY  font.langGroup.khmer                    "Khmer">
 <!ENTITY  font.langGroup.malayalam                "Malayalam">
 <!ENTITY  font.langGroup.math                     "Matematika">
+<!ENTITY  font.langGroup.odia                     "Bahasa Oriya">
 <!ENTITY  font.langGroup.telugu                   "Telugu">
 <!ENTITY  font.langGroup.kannada                  "Kannada">
 <!ENTITY  font.langGroup.sinhala                  "Sinhala">
+<!ENTITY  font.langGroup.tibetan                  "Bahasa Tibet">
 <!-- Minimum font size -->
 <!ENTITY minSize.label                            "Ukuran huruf terkecil:">
 <!ENTITY minSize.accesskey                        "k">
@@ -66,6 +71,10 @@
 <!-- Language settings -->
 <!ENTITY sendDefaultCharset.label         "Email Keluar:">
 <!ENTITY sendDefaultCharset.accesskey     "u">
+<!ENTITY languagesTitle2.label            "Pengodean Teks">
+<!ENTITY composingDescription2.label      "Atur penyandian teks asal untuk mengirim dan menerima surel">
 
 <!ENTITY viewDefaultCharsetList.label     "Email Masuk:">
 <!ENTITY viewDefaultCharsetList.accesskey  "i">
+<!ENTITY replyInDefaultCharset3.label     "Jika memungkinkan, gunakan pengodean teks asal di balasan">
+<!ENTITY replyInDefaultCharset3.accesskey "h">

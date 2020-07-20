@@ -51,6 +51,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = Esperimenti di { -brand-short-name }
+category-experimental =
+    .tooltiptext = Esperimenti di { -brand-short-name }
+pane-experimental-subtitle = Procedere con cautela
+pane-experimental-search-results-header = Esperimenti di { -brand-short-name }: procedere con cautela
+pane-experimental-description = La modifica delle impostazioni avanzate di configurazione può compromettere le prestazioni e la sicurezza di { -brand-short-name }.
 help-button-label = Supporto per { -brand-short-name }
 addons-button-label = Estensioni e temi
 focus-search =
@@ -494,7 +500,6 @@ home-prefs-topsites-description = I siti più visitati
 
 home-prefs-recommended-by-header =
     .label = Consigliati da { $provider }
-home-prefs-recommended-by-description = Contenuti interessanti da tutto il Web, personalizzati per te.
 home-prefs-recommended-by-description-update = Contenuti eccezionali da tutto il Web, a cura di { $provider }
 ##
 
@@ -557,7 +562,6 @@ search-show-suggestions-above-history-option =
     .label = Visualizza suggerimenti di ricerca prima della cronologia nei risultati della barra degli indirizzi
 search-show-suggestions-private-windows =
     .label = Visualizza suggerimenti di ricerca nelle finestre anonime
-suggestions-addressbar-settings = Modifica le impostazioni dei suggerimenti per cronologia di navigazione, segnalibri e schede
 suggestions-addressbar-settings-generic = Modifica le impostazioni per altri tipi di suggerimenti nella barra degli indirizzi
 search-suggestions-cant-show = I suggerimenti di ricerca non verranno visualizzati tra i risultati della barra degli indirizzi in quanto { -brand-short-name } è configurato per non salvare la cronologia.
 search-one-click-header = Motori di ricerca in un clic
@@ -1147,6 +1151,18 @@ space-alert-under-5gb-ok-button =
     .label = OK, ricevuto
     .accesskey = K
 space-alert-under-5gb-message = Lo spazio a disposizione di { -brand-short-name } sta per esaurirsi. Il contenuto dei siti web potrebbe non essere visualizzato correttamente. Visita il link “Ulteriori informazioni” per scoprire come ottimizzare l’utilizzo dello spazio su disco e migliorare l’esperienza di navigazione.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Modalità solo HTTPS
+httpsonly-description = HTTPS garantisce una connessione sicura e crittata tra { -brand-short-name } e i siti web visitati. La maggior parte dei siti web supporta HTTPS e, quando la modalità solo HTTPS è attiva, { -brand-short-name } si connetterà automaticamente con HTTPS.
+httpsonly-learn-more = Ulteriori informazioni
+httpsonly-radio-enabled =
+    .label = Attiva in tutte le finestre
+httpsonly-radio-enabled-pbm =
+    .label = Attiva solo in finestre anonime
+httpsonly-radio-disabled =
+    .label = Non attivare
 
 ## The following strings are used in the Download section of settings
 

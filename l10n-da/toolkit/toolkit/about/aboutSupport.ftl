@@ -17,6 +17,12 @@ extensions-name = Navn
 extensions-enabled = Aktiveret
 extensions-version = Version
 extensions-id = ID
+support-addons-title = Tilføjelser
+support-addons-name = Navn
+support-addons-type = Type
+support-addons-enabled = Aktiveret
+support-addons-version = Version
+support-addons-id = ID
 security-software-title = Sikkerheds-software
 security-software-type = Type
 security-software-name = Navn
@@ -74,6 +80,9 @@ show-dir-label =
         [windows] Åbn mappe
        *[other] Åbn mappe
     }
+experimental-features-title = Eksperimentelle funktioner
+experimental-features-name = Navn
+experimental-features-value = Værdi
 modified-key-prefs-title = Vigtige ændrede indstillinger
 modified-prefs-name = Navn
 modified-prefs-value = Værdi
@@ -119,7 +128,6 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumenter
 safe-mode-title = Prøv fejlsikret tilstand
 restart-in-safe-mode-label = Genstart med tilføjelser deaktiveret…
-
 clear-startup-cache-title = Prøv at rydde opstarts-cachen
 clear-startup-cache-label = Ryd opstarts-cachen…
 startup-cache-dialog-title = Ryd opstarts-cachen
@@ -173,6 +181,7 @@ intl-regional-prefs = Regionale indstillinger
 remote-debugging-title = Remote debugging (Chromium-protokol)
 remote-debugging-accepting-connections = Accepterer forbindelser
 remote-debugging-url = URL
+
 ##
 
 # Variables
@@ -266,6 +275,9 @@ blocklisted-bug = Blokeret på grund af kendte problemer
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Blokeret på grund af kendte problemer: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Blokeret; fejlkode { $failureCode }
 d3d11layers-crash-guard = D3D11-kompositoren
@@ -273,9 +285,7 @@ d3d11video-crash-guard = D3D11-videodekoder
 d3d9video-crash-buard = D3D9-videodekoder
 d3d9video-crash-guard = D3D9-videodekoder
 glcontext-crash-guard = OpenGL
-
 wmfvpxvideo-crash-guard = WMF VPX-videodekoder
-
 reset-on-next-restart = Nulstil ved næste genstart
 gpu-process-kill-button = Afslut GPU-process
 gpu-device-reset = Device Reset
@@ -299,13 +309,11 @@ sandbox-proc-type-content = indhold
 sandbox-proc-type-file = fil-indhold
 sandbox-proc-type-media-plugin = medie-plugin
 sandbox-proc-type-data-decoder = data-decoder
-
 startup-cache-title = Opstarts-cache
 startup-cache-disk-cache-path = Sti til disk-cache
 startup-cache-ignore-disk-cache = Ignorer disk-cache
 startup-cache-found-disk-cache-on-init = Fandt disk-cache på Init
 startup-cache-wrote-to-disk-cache = Skrev til disk-cache
-
 launcher-process-status-0 = Aktiveret
 launcher-process-status-1 = Deaktiveret på grund af en fejl
 launcher-process-status-2 = Deaktiveret
@@ -329,8 +337,7 @@ touch-enabled = input fra trykfølsom skærm
 drag-enabled = træk i rullebjælke
 keyboard-enabled = tastatur
 autoscroll-enabled = autoscroll
-
-zooming-enabled = smooth pinch-zoom 
+zooming-enabled = smooth pinch-zoom
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

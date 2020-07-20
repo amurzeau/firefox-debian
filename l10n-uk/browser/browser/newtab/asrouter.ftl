@@ -201,7 +201,7 @@ cfr-doorhanger-socialtracking-description = Ваша приватність ма
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } заблокував зчитування цифрового відбитка на цій сторінці
 cfr-doorhanger-fingerprinters-description = Ваша приватність має значення. { -brand-short-name } тепер блокує зчитування цифрового відбитка, що збирає частинки інформації, яка використовується для ідентифікації вашого пристрою і стеження за вами.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } заблокував криптомайнер на цій сторінці
-cfr-doorhanger-cryptominers-description = Ваша приватність має значення. { -brand-short-name } тепер блокує криптомайнери, які використовують ресурси вашої системи для видобутку цифрових грошей.
+cfr-doorhanger-cryptominers-description = Ваша приватність має значення. { -brand-short-name } тепер блокує криптомайнери, які використовують ресурси вашої системи для добування криптовалют.
 
 ## Enhanced Tracking Protection Milestones
 
@@ -216,6 +216,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Дивитись все
     .accesskey = в
+cfr-doorhanger-milestone-close-button = Закрити
+    .accesskey = З
 
 ## What’s New Panel Content for Firefox 76
 
@@ -249,3 +251,18 @@ cfr-whatsnew-protections-icon-alt = Піктограма щита
 
 cfr-whatsnew-better-pdf-header = Краща робота з PDF
 cfr-whatsnew-better-pdf-body = PDF-документи тепер відкриваються безпосередньо в { -brand-short-name }, забезпечуючи швидкий доступ під час роботи.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Ваша приватність має значення. { -brand-short-name } тепер надійно спрямовує ваші DNS-запити, коли це можливо, до партнерського сервісу, щоб захистити вас під час перегляду.
+cfr-doorhanger-doh-header = Безпечніша, зашифрована перевірка DNS
+cfr-doorhanger-doh-primary-button = Гаразд, зрозуміло
+    .accesskey = Г
+cfr-doorhanger-doh-secondary-button = Вимкнути
+    .accesskey = В
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Автоматичний захист від підступної тактики стеження
+cfr-whatsnew-clear-cookies-body = Деякі елементи стеження спрямовують вас на інші вебсайти, які таємно встановлюють куки. { -brand-short-name } тепер автоматично очищає їх, тож вони більше не можуть стежити за вами.
+cfr-whatsnew-clear-cookies-image-alt = Приклад блокування кук

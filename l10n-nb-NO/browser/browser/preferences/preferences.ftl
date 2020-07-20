@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name }-eksperiment
+category-experimental =
+    .tooltiptext = { -brand-short-name }-eksperiment
+pane-experimental-subtitle = Fortsett med forsiktighet
+pane-experimental-search-results-header = { -brand-short-name }-eksperimenter: Fortsett med forsiktighet
+pane-experimental-description = Endrer du avanserte konfigurasjonsinnstillinger kan det påvirke ytelse eller sikkerhet i { -brand-short-name }.
 help-button-label = { -brand-short-name } brukerstøtte
 addons-button-label = Utvidelser og tema
 focus-search =
@@ -499,7 +505,6 @@ home-prefs-topsites-description = Mest besøkte nettsteder
 
 home-prefs-recommended-by-header =
     .label = Anbefalt av { $provider }
-home-prefs-recommended-by-description = Bra innhold fra hele nettet, tilpasset for deg
 home-prefs-recommended-by-description-update = Enestående innhold fra hele nettet, satt sammen av { $provider }
 
 ##
@@ -563,7 +568,6 @@ search-show-suggestions-above-history-option =
     .label = Vis søkeforslag før nettleserhistorikk i adressefeltsresultatene
 search-show-suggestions-private-windows =
     .label = Vis søkeforslag i private vindu
-suggestions-addressbar-settings = Endre innstillinger for nettleserhistorikk, bokmerker og faneforslag
 suggestions-addressbar-settings-generic = Endre innstillinger for andre adresselinjeforslag
 search-suggestions-cant-show = Søkeforslag vil ikke vises i adresselinjeresultatene fordi du har konfigurert { -brand-short-name } til å aldri huske historikk.
 search-one-click-header = Ettklikks søkemotorer
@@ -1161,6 +1165,18 @@ space-alert-under-5gb-ok-button =
     .label = OK, jeg skjønner
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } er i ferd med å gå tom for plass på disken. Det kan hende at innholdet på nettsiden ikke vises ordentlig. Gå til «Les mer» for å optimalisere diskbruken din for en bedre nettleseropplevelse.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Bare HTTPS-modus
+httpsonly-description = HTTPS gir en sikker, kryptert forbindelse mellom { -brand-short-name } og nettstedene du besøker. De fleste nettsteder støtter HTTPS, og hvis bare HTTPS-modus er aktivert, vil { -brand-short-name } oppgradere alle tilkoblinger til HTTPS.
+httpsonly-learn-more = Les mer
+httpsonly-radio-enabled =
+    .label = Aktiver bare HTTPS-modus i alle vinduer
+httpsonly-radio-enabled-pbm =
+    .label = Aktiver bare HTTPS-modus kun i private vinduer
+httpsonly-radio-disabled =
+    .label = Ikke aktiver bare HTTPS-modus
 
 ## The following strings are used in the Download section of settings
 

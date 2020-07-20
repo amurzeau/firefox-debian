@@ -214,7 +214,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!ENTITY bookmarksMenu.label "Σελιδοδείκτες">
 <!ENTITY bookmarksMenu.accesskey "Σ">
-<!ENTITY bookmarkThisPageCmd.label "Προσθήκη στους σελιδοδείκτες">
+<!ENTITY bookmarkThisPageCmd.label "Δημιουργία σελιδοδείκτη">
 <!ENTITY editThisBookmarkCmd.label "Επεξεργασία σελιδοδείκτη">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
 
@@ -303,8 +303,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksMenuButton2.label         "Μενού σελιδοδεικτών">
 <!ENTITY bookmarksMenuButton.other.label    "Άλλοι σελιδοδείκτες">
 <!ENTITY bookmarksMenuButton.mobile.label   "Σελιδοδείκτες κινητού">
-<!ENTITY viewBookmarksSidebar2.label        "Προβολή πλευρικής στήλης σελιδοδεικτών">
-<!ENTITY hideBookmarksSidebar.label         "Απόκρυψη πλευρικής στήλης σελιδοδεικτών">
+<!ENTITY viewBookmarksSidebar2.label        "Προβολή στήλης σελιδοδεικτών">
+<!ENTITY hideBookmarksSidebar.label         "Απόκρυψη στήλης σελιδοδεικτών">
 <!ENTITY viewBookmarksToolbar.label         "Προβολή γραμμής σελιδοδεικτών">
 <!ENTITY hideBookmarksToolbar.label         "Απόκρυψη γραμμής σελιδοδεικτών">
 <!ENTITY searchBookmarks.label              "Αναζήτηση σελιδοδεικτών">
@@ -338,7 +338,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY addons.accesskey             "θ">
 <!ENTITY addons.commandkey            "A">
 
-<!ENTITY webDeveloperMenu.label       "Εργαλεία προγραμματιστή">
+<!ENTITY webDeveloperMenu.label       "Προγραμματισμός ιστού">
 <!ENTITY webDeveloperMenu.accesskey   "Π">
 
 <!ENTITY inspectContextMenu.label     "Επιθεώρηση στοιχείου">
@@ -418,8 +418,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuHistory.showAll.label "Προβολή όλου του ιστορικού">
 <!ENTITY appMenuHistory.clearRecent.label "Εκκαθάριση πρόσφατου ιστορικού…">
 <!ENTITY appMenuHistory.restoreSession.label "Επαναφορά προηγούμενης συνεδρίας">
-<!ENTITY appMenuHistory.viewSidebar.label "Προβολή πλευρικής στήλης ιστορικού">
-<!ENTITY appMenuHistory.hideSidebar.label "Απόκρυψη πλευρικής γραμμής ιστορικού">
+<!ENTITY appMenuHistory.viewSidebar.label "Προβολή στήλης ιστορικού">
+<!ENTITY appMenuHistory.hideSidebar.label "Απόκρυψη στήλης ιστορικού">
 <!ENTITY appMenuHistory.recentHistory.label "Πρόσφατο ιστορικό">
 <!ENTITY appMenuHelp.label "Βοήθεια">
 
@@ -450,8 +450,8 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY appMenuRemoteTabs.signintosync.label "Σύνδεση στο &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.turnonsync.label "Ενεργοποίηση &syncBrand.shortName.label;…">
 <!ENTITY appMenuRemoteTabs.managedevices.label "Διαχείριση συσκευών…">
-<!ENTITY appMenuRemoteTabs.sidebar.label "Δείτε την πλευρική στήλη του Συγχρονισμού">
-<!ENTITY appMenuRemoteTabs.hidesidebar.label "Απόκρυψη πλευρικής γραμμής συγχρονισμένων καρτελών">
+<!ENTITY appMenuRemoteTabs.sidebar.label "Προβολή στήλης συγχρονισμένων καρτελών">
+<!ENTITY appMenuRemoteTabs.hidesidebar.label "Απόκρυψη στήλης συγχρονισμένων καρτελών">
 <!ENTITY appMenuRemoteTabs.connectdevice.label "Σύνδεση άλλης συσκευής">
 
 <!ENTITY appMenuRecentHighlights.label "Πρόσφατες κορυφαίες στιγμές">
@@ -620,7 +620,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY viewBGImageCmd.accesskey     "β">
 <!ENTITY setDesktopBackgroundCmd.label      "Ορισμός ως ταπετσαρία…">
 <!ENTITY setDesktopBackgroundCmd.accesskey  "τ">
-<!ENTITY bookmarkPageCmd2.label       "Προσθήκη στους σελιδοδείκτες">
+<!ENTITY bookmarkPageCmd2.label       "Δημιουργία σελιδοδείκτη">
 <!ENTITY bookmarkPageCmd2.accesskey   "θ">
 <!ENTITY bookmarkThisLinkCmd.label      "Προσθήκη στους σελιδοδείκτες">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "δ">

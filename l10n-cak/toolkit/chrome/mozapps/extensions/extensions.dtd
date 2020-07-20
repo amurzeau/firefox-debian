@@ -8,16 +8,16 @@
 <!ENTITY cmd.disableAddon.label               "Tichup">
 <!ENTITY cmd.disableAddon.accesskey           "T">
 
-<!ENTITY cmd.askToActivate.label              "Tik'utüx richin nitzij">
+<!ENTITY cmd.askToActivate.label              "Tik'utüx chi Nitzij">
 <!ENTITY cmd.askToActivate.tooltip            "Tik'utüx pe richin toq xtokisäx re tz'aqat re'">
-<!ENTITY cmd.alwaysActivate.label             "Junelïk tzijïl">
+<!ENTITY cmd.alwaysActivate.label             "Junelïk Tzijïl">
 <!ENTITY cmd.alwaysActivate.tooltip           "Junelïk tokisäx re tz'aqat re'">
-<!ENTITY cmd.neverActivate.label              "Majub'ey titzij">
+<!ENTITY cmd.neverActivate.label              "Majub'ey Titzij">
 <!ENTITY cmd.neverActivate.tooltip            "Majub'ey tokisäx re tz'aqat re'">
 <!ENTITY cmd.stateMenu.tooltip                "Tijal toq re tz'aqat re' tzijïl">
 
-<!ENTITY cmd.uninstallAddon.label             "Telesäx">
-<!ENTITY cmd.uninstallAddon.accesskey         "s">
+<!ENTITY cmd.uninstallAddon.label             "Tiyuj">
+<!ENTITY cmd.uninstallAddon.accesskey         "y">
 <!ENTITY cmd.showPreferencesWin.label         "Taq cha'oj">
 <!ENTITY cmd.showPreferencesWin.tooltip       "Kejal ri taq rucha'oj re tz'aqat re'">
 <!ENTITY cmd.showPreferencesUnix.label        "Taq ajowab'äl">
@@ -62,11 +62,12 @@
 <!ENTITY addon.updateAvailable.label          "K'o jun k'exoj">
 <!ENTITY addon.checkingForUpdates.label       "Tajin yekanöx taq k'exoj ruwäch…">
 <!ENTITY addon.releaseNotes.label             "Ruch'utitzijol re ruwäch re'">
-<!ENTITY addon.loadingReleaseNotes.label      "Tajin nusamajib'ej…">
-<!ENTITY addon.errorLoadingReleaseNotes.label "Takuyu' qamak, xa xk'ulwachitäj jun sachoj toq tajin nok pa ch'utaq rutzijol ri ko'öl wuj.">
+<!ENTITY addon.loadingReleaseNotes.label      "Nisamäj…">
+<!ENTITY addon.errorLoadingReleaseNotes.label "Takuyu' qamak, xa xk'ulwachitäj jun sachoj toq nok pa ch'utaq rutzijol ri ko'öl wuj.">
 
 <!ENTITY addon.createdBy.label                "Ruma">
 
 <!ENTITY settings.path.button.label           "Tinik'öx…">
 
+<!-- addon actions -->
 <!ENTITY setting.learnmore "Tetamäx ch'aqa' chik…">

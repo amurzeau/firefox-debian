@@ -17,6 +17,12 @@ extensions-name = Naam
 extensions-enabled = Ingeschakeld
 extensions-version = Versie
 extensions-id = ID
+support-addons-title = Add-ons
+support-addons-name = Naam
+support-addons-type = Type
+support-addons-enabled = Ingeschakeld
+support-addons-version = Versie
+support-addons-id = ID
 security-software-title = Beveiligingssoftware
 security-software-type = Type
 security-software-name = Naam
@@ -74,6 +80,9 @@ show-dir-label =
         [windows] Map openen
        *[other] Map openen
     }
+experimental-features-title = Experimentele functies
+experimental-features-name = Naam
+experimental-features-value = Waarde
 modified-key-prefs-title = Belangrijke aangepaste voorkeuren
 modified-prefs-name = Naam
 modified-prefs-value = Waarde
@@ -265,6 +274,9 @@ blocklisted-bug = Geblokkeerd vanwege bekende problemen
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Geblokkeerd vanwege bekende problemen: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Op blokkeerlijst; foutcode { $failureCode }

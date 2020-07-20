@@ -19,6 +19,9 @@ onboarding-button-label-get-started = Бастау
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = { -brand-short-name } өніміне қош келдіңіз
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = <span data-l10n-name="zap">{ -brand-short-name }</span> ішіне қош келдіңіз
 onboarding-welcome-body = Браузеріңіз бар.<br/>{ -brand-product-name } қалған бөлігімен танысыңыз.
 onboarding-welcome-learn-more = Артықшылықтары туралы көбірек біліңіз.
 onboarding-join-form-header = { -brand-product-name } қоғамдастығына қосылыңыз
@@ -41,6 +44,16 @@ onboarding-start-browsing-button-label = Шолуды бастау
 onboarding-cards-dismiss =
     .title = Тайдыру
     .aria-label = Тайдыру
+# Tooltip displayed on hover of top sites in import settings screen during onboarding flow.
+# This support welcome screen showing top sites imported from the user's default browser.
+# Title text is kept multiline to ensure tooltip container width is not more than 40 characters.
+onboarding-import-sites-info =
+    .title =
+        Бұл сайттар осы құрылғыдан табылды.
+        { -brand-short-name } деректерді басқа
+        браузерден деректерді сіз оларды
+        импорттағанша дейін синхрондамайды.
+    .aria-label = { onboarding-import-sites-info.title }
 
 ## Welcome full page string
 
