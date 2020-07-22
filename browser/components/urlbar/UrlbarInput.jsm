@@ -494,18 +494,42 @@ class UrlbarInput {
     // the appropriate engine submission url.
     let browser = this.window.gBrowser.selectedBrowser;
     let lastLocationChange = browser.lastLocationChange;
-    UrlbarUtils.getHeuristicResultFor(url).then(newResult => {
-      // Because this happens asynchronously, we must verify that the browser
-      // location did not change in the meanwhile.
-      if (
-        where != "current" ||
-        browser.lastLocationChange == lastLocationChange
-      ) {
-        this.pickResult(newResult, event, null, browser);
-      }
-    });
-    // Don't add further handling here, the getHeuristicResultFor call above is
-    // our last resort.
+    UrlbarUtils.getHeuristicResultFor(url)
+      .then(newResult => {
+        // Because this happens asynchronously, we must verify that the browser
+        // location did not change in the meanwhile.
+        if (
+          where != "current" ||
+          browser.lastLocationChange == lastLocationChange
+        ) {
+          this.pickResult(newResult, event, null, browser);
+        }
+      })
+      .catch(ex => {
+        if (url) {
+          // Something went wrong, we should always have a heuristic result,
+          // otherwise it means we're not able to search at all, maybe because
+          // some parts of the profile are corrupt.
+          // The urlbar should still allow to search or visit the typed string,
+          // so that the user can look for help to resolve the problem.
+          let flags =
+            Ci.nsIURIFixup.FIXUP_FLAG_FIX_SCHEME_TYPOS |
+            Ci.nsIURIFixup.FIXUP_FLAG_ALLOW_KEYWORD_LOOKUP;
+          if (this.isPrivate) {
+            flags |= Ci.nsIURIFixup.FIXUP_FLAG_PRIVATE_CONTEXT;
+          }
+          let postData = {};
+          let uri = Services.uriFixup.createFixupURI(url, flags, postData);
+          if (
+            where != "current" ||
+            browser.lastLocationChange == lastLocationChange
+          ) {
+            openParams.postData = postData.value;
+            this._loadURL(uri.spec, where, openParams, null, browser);
+          }
+        }
+      });
+    // Don't add further handling here, the catch above is our last resort.
   }
 
   handleRevert() {
@@ -1533,6 +1557,7 @@ class UrlbarInput {
       }
     }
     uri = this.makeURIReadable(uri);
+    let displaySpec = uri.displaySpec;
 
     // If the entire URL is selected, just use the actual loaded URI,
     // unless we want a decoded URI, or it's a data: or javascript: URI,
@@ -1543,19 +1568,17 @@ class UrlbarInput {
       !uri.schemeIs("data") &&
       !UrlbarPrefs.get("decodeURLsOnCopy")
     ) {
-      return uri.displaySpec;
+      return displaySpec;
     }
 
     // Just the beginning of the URL is selected, or we want a decoded
     // url. First check for a trimmed value.
-    let spec = uri.displaySpec;
-    let trimmedSpec = this._trimValue(spec);
-    if (spec != trimmedSpec) {
-      // Prepend the portion that _trimValue removed from the beginning.
-      // This assumes _trimValue will only truncate the URL at
-      // the beginning or end (or both).
-      let trimmedSegments = spec.split(trimmedSpec);
-      selectedVal = trimmedSegments[0] + selectedVal;
+
+    if (
+      !selectedVal.startsWith(BrowserUtils.trimURLProtocol) &&
+      displaySpec != this._trimValue(displaySpec)
+    ) {
+      selectedVal = BrowserUtils.trimURLProtocol + selectedVal;
     }
 
     return selectedVal;
