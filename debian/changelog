@@ -1,3 +1,11 @@
+firefox-esr (68.11.0esr-1) unstable; urgency=medium
+
+  * New upstream release
+  * Fixes for mfsa2020-31, also known as:
+    CVE-2020-15652, CVE-2020-6514, CVE-2020-6463, CVE-2020-15659.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 29 Jul 2020 07:23:16 +0900
+
 firefox-esr (68.10.0esr-1) unstable; urgency=medium
 
   * New upstream release
