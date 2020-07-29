@@ -26,7 +26,7 @@ Build-Depends: autotools-dev,
                python3 (>= 3.6),
                dpkg-dev,
 %if USE_SYSTEM_NSPR
-%define NSPR_VERSION 4.25
+%define NSPR_VERSION 4.26
                libnspr4-dev (>= 2:@NSPR_VERSION@~),
 %endif
 %if USE_SYSTEM_NSS
