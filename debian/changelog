@@ -1,3 +1,21 @@
+firefox (79.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2020-30, also known as:
+    CVE-2020-15652, CVE-2020-6514, CVE-2020-15655, CVE-2020-15653,
+    CVE-2020-6463, CVE-2020-15656, CVE-2020-15658, CVE-2020-15654,
+    CVE-2020-15659.
+
+  * debian/control*: Bump cbindgen, rustc, cargo, nss and python3 build
+    dependencies.
+  * debian/rules: Add -Cembed-bitcode=yes to rust command lines when
+    using rustc >= 1.45.0.
+
+  * build/moz.configure/rust.configure, debian/control*: Allow to build with
+    cargo in unstable as of 2020-07-29.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 29 Jul 2020 13:45:30 +0900
+
 firefox (78.0.2-1) unstable; urgency=medium
 
   * New upstream release.
