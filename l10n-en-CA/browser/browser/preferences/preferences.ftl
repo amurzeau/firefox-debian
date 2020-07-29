@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name } Experiments
+category-experimental =
+    .tooltiptext = { -brand-short-name } Experiments
+pane-experimental-subtitle = Proceed with Caution
+pane-experimental-search-results-header = { -brand-short-name } Experiments: Proceed with Caution
+pane-experimental-description = Changing advanced configuration preferences can impact { -brand-short-name } performance or security.
 help-button-label = { -brand-short-name } Support
 addons-button-label = Extensions & Themes
 focus-search =
@@ -499,7 +505,6 @@ home-prefs-topsites-description = The sites you visit most
 
 home-prefs-recommended-by-header =
     .label = Recommended by { $provider }
-home-prefs-recommended-by-description = Great content from around the web, personalized for you
 home-prefs-recommended-by-description-update = Exceptional content from across the web, curated by { $provider }
 
 ##
@@ -563,7 +568,6 @@ search-show-suggestions-above-history-option =
     .label = Show search suggestions ahead of browsing history in address bar results
 search-show-suggestions-private-windows =
     .label = Show search suggestions in Private Windows
-suggestions-addressbar-settings = Change preferences for browsing history, bookmarks, and tab suggestions
 suggestions-addressbar-settings-generic = Change preferences for other address bar suggestions
 search-suggestions-cant-show = Search suggestions will not be shown in location bar results because you have configured { -brand-short-name } to never remember history.
 search-one-click-header = One-Click Search Engines
@@ -1161,6 +1165,18 @@ space-alert-under-5gb-ok-button =
     .label = OK, Got it
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } is running out of disk space. Website contents may not display properly. Visit “Learn More” to optimize your disk usage for better browsing experience.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = HTTPS-Only Mode
+httpsonly-description = HTTPS provides a secure, encrypted connection between { -brand-short-name } and the websites you visit. Most websites support HTTPS, and if HTTPS-Only Mode is enabled, then { -brand-short-name } will upgrade all connections to HTTPS.
+httpsonly-learn-more = Learn more
+httpsonly-radio-enabled =
+    .label = Enable HTTPS-Only Mode in all windows
+httpsonly-radio-enabled-pbm =
+    .label = Enable HTTPS-Only Mode in private windows only
+httpsonly-radio-disabled =
+    .label = Don’t enable HTTPS-Only Mode
 
 ## The following strings are used in the Download section of settings
 

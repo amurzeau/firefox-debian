@@ -32,6 +32,7 @@ menu =
     .title = مینیو کھولیں
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = دوسرے براؤزر سے درآمد کریں…
+about-logins-menu-menuitem-export-logins = لاگ انس برآمد کریں…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] اختیارات
@@ -74,6 +75,8 @@ login-intro-heading = اپنے محفوظ شدہ لاگ ان ڈھونڈ رہے �
 about-logins-login-intro-heading-logged-in = کوئی سینکڈ لاگ ان نہیں ملا۔
 login-intro-description = اگر آپ نے اپنے لاگ انز { -brand-product-name } کو کسی دوسرے آلے پر محفوظ کیاہوا ہے تو، انہیں یہاں حاصل کرنے کا طریقہ یوں ہے:
 login-intro-instruction-fxa = وہ آلہ جہاں آپ کے لاگ انز محفوظ ہیں ان پر اپنا { -fxaccount-brand-name } بنائیں یا سائن ان کریں
+login-intro-instruction-fxa-settings = یقینی بنائیں کہ آپ نے { -sync-brand-short-name } کے سیٹنگز میں لاگ انس کے چیک باکس کو منتخب کیا ہے
+about-logins-intro-instruction-help = مزید مدد کے لئے <a data-l10n-name="help-link">{ -lockwise-brand-short-name } معاونت</a> پر جائیں
 about-logins-intro-import = اگر آپ کے لاگ انز کسی دوسرے براؤزر میں محفوظ ہیں تو ، آپ <a data-l10n-name="import-link"> ان کو { -lockwise-brand-short-name }</a> میں درآمد کرسکتے ہیں
 
 ## Login
@@ -147,6 +150,7 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = اس لاگ ان کو ہٹائیں؟
 confirm-delete-dialog-message = یہ عمل کلعدم نہیں ہو سکتا۔
 about-logins-confirm-remove-dialog-confirm-button = ہٹائیں
+about-logins-confirm-export-dialog-title = لاگ ان اور پاس ورڈ برآمد کریں
 about-logins-confirm-export-dialog-confirm-button = برآمد کریں…
 confirm-discard-changes-dialog-title = غیر محفوظ شدہ تبدیلیاں ہٹاییں؟
 confirm-discard-changes-dialog-message = سبھی غیر محفوظ شدہ تبدیلیاں ختم ہوجائیں گی۔

@@ -26,7 +26,7 @@ general-url =
 general-type =
     .value = Peteĩchagua:
 general-mode =
-    .value = Moha'ãnga reko:
+    .value = Moha’ãnga reko:
 general-size =
     .value = Tuichakue:
 general-referrer =
@@ -34,7 +34,7 @@ general-referrer =
 general-modified =
     .value = Moambuepyréva:
 general-encoding =
-    .value = Moñe'ẽrã mbopapapy:
+    .value = Moñe’ẽrã mbopapapy:
 general-meta-name =
     .label = Téra
 general-meta-content =
@@ -45,9 +45,9 @@ media-tab =
 media-location =
     .value = Kundaharape:
 media-text =
-    .value = Moñe'ẽrã hesegua:
+    .value = Moñe’ẽrã hesegua:
 media-alt-header =
-    .label = Moñe'ẽrã mokõiguáva
+    .label = Moñe’ẽrã mokõiguáva
 media-address =
     .label = Tape
 media-type =
@@ -98,7 +98,7 @@ security-view-privacy-sitedata-value = ¿Ko ñanduti renda ombyaty marandu che m
 security-view-privacy-clearsitedata =
     .label = Emboguete umi kookie ha mba’ekuaarã tenda pegua
     .accesskey = C
-security-view-privacy-passwords-value = Oñeñongatúpa ñe'ẽñemi ko ñanduti rendápe
+security-view-privacy-passwords-value = Oñeñongatúpa ñe’ẽñemi ko ñanduti rendápe
 security-view-privacy-viewpasswords =
     .label = Terañemi ñongatuguáva jehecha
     .accesskey = w
@@ -118,26 +118,26 @@ security-site-data-only = Hẽe,{ $value } { $unit } tendakuéra mba’ekuaarã
 security-site-data-cookies-only = Hẽe, umi kookie
 security-site-data-no = Ahániri
 image-size-unknown = Ojekuaa'ỹva
-not-set-verified-by = Moha'eñopyre'ỹva
+not-set-verified-by = Moha’eñopyre’ỹva
 page-info-not-specified =
-    .value = Moha'eñopyre'ỹva
-not-set-alternative-text = Moha'eñopyre'ỹva
-not-set-date = Moha'eñopyre'ỹva
+    .value = Moha’eñopyre’ỹva
+not-set-alternative-text = Moha’eñopyre’ỹva
+not-set-date = Moha’eñopyre’ỹva
 media-img = Ta´ãnga
 media-bg-img = Tugua
 media-border-img = Tembe’y
-media-list-img = Ta'ãngamirĩ
+media-list-img = Ta’ãngamirĩ
 media-cursor = Hekaha
 media-object = Mba’e
 media-embed = Jupapo
-media-link = Ta'ãnga'i
+media-link = Ta’ãnga’i
 media-input = Jeikeha
 media-video = Ta´ãngamyi
 media-audio = Hendupyrã
 saved-passwords-yes = Héẽ
 saved-passwords-no = Nahániri
 no-page-title =
-    .value = Kuatiarogue heratee'ÿva:
+    .value = Kuatiarogue heratee’ỹva:
 general-quirks-mode =
     .value = Ayvu okupytýva
 general-strict-mode =
@@ -145,9 +145,9 @@ general-strict-mode =
 security-no-owner = Ko ñanduti renda nomomarandúi ijára rehegua.
 page-info-security-no-owner =
     .value = Ko ñanduti renda nomomarandúi ijára rehegua.
-media-select-folder = Eiporavo peteĩ ñongatuha ta'ãngakuéra rendarã
+media-select-folder = Eiporavo peteĩ ñongatuha ta’ãngakuéra rendarã
 media-unknown-not-cached =
-    .value = Ojekuaa'ỹva (ndaha'éi kachépe)
+    .value = Ojekuaa’ỹva (ndaha’éi kachépe)
 permissions-use-default =
     .label = Ijypykue jepuru
 security-no-visits = Nahániri
@@ -189,15 +189,15 @@ properties-general-size =
 media-animated-image-type =
     .value =
         { $frames ->
-            [one] { $type } Ta'anga (kyre'ỹ, { $frames } kora)
-           *[other] { $type } Ta'anga (kyre'ỹ, { $frames } korakuéra)
+            [one] { $type } Ta’ãnga (kyre’ỹ, { $frames } kora)
+           *[other] { $type } Ta’ãnga (kyre’ỹ, { $frames } korakuéra)
         }
 # This string is used to display the type of
 # an image
 # Variables:
 #   $type (string) - The type of an image
 media-image-type =
-    .value = Ta'ãnga { $type }
+    .value = Ta’ãnga { $type }
 # This string is used to display the size of a scaled image
 # in both scaled and unscaled pixels
 # Variables:
@@ -223,7 +223,7 @@ media-file-size = { $size } KB
 # Variables:
 #   $website (string) - The website name
 media-block-image =
-    .label = Ta'ãnga { $website } rehegua jejoko
+    .label = Ta’ãnga { $website } rehegua jejoko
     .accesskey = B
 # This string is used to display the URL of the website on top of the
 # pageInfo dialog box

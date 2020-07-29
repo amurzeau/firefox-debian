@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = Експерименти { -brand-short-name }
+category-experimental =
+    .tooltiptext = Експерименти { -brand-short-name }
+pane-experimental-subtitle = Продовжуйте обережно
+pane-experimental-search-results-header = Експерименти { -brand-short-name }: Продовжуйте з обережністю
+pane-experimental-description = Зміна розширених налаштувань може вплинути на швидкодію і безпеку { -brand-short-name }.
 help-button-label = Підтримка { -brand-short-name }
 addons-button-label = Розширення і теми
 focus-search =
@@ -502,7 +508,6 @@ home-prefs-topsites-description = Сайти, які ви відвідуєте �
 
 home-prefs-recommended-by-header =
     .label = Рекомендовано { $provider }
-home-prefs-recommended-by-description = Чудові матеріали з усього інтернету, відібрані спеціально для вас
 home-prefs-recommended-by-description-update = Винятково цікаві матеріали з мережі від { $provider }
 
 ##
@@ -567,7 +572,6 @@ search-show-suggestions-above-history-option =
     .label = Показувати пошукові пропозиції перед історією перегляду в результатах панелі адреси
 search-show-suggestions-private-windows =
     .label = Показувати пошукові пропозиції у приватних вікнах
-suggestions-addressbar-settings = Змінити налаштування для історії перегляду, закладок та пропозицій для вкладок
 suggestions-addressbar-settings-generic = Змінити налаштування для інших пропозицій панелі адреси
 search-suggestions-cant-show = Пошукові пропозиції не будуть показуватись в панелі адреси, тому що ви налаштували { -brand-short-name } ніколи не запам'ятовувати історію.
 search-one-click-header = Засоби пошуку в один клік
@@ -588,7 +592,7 @@ search-find-more-link = Знайти інші засоби пошуку
 search-keyword-warning-title = Це скорочення вже використовується
 # Variables:
 #   $name (String) - Name of a search engine.
-search-keyword-warning-engine = Ви вибрали скорочення, котре вже використовує «{ $name }». Будь ласка, вкажіть інше.
+search-keyword-warning-engine = Ви вибрали скорочення, яке вже використовується “{ $name }”. Будь ласка, вкажіть інше.
 search-keyword-warning-bookmark = Ви вибрали скорочення, котре вже використовується закладкою. Будь ласка, вкажіть інше.
 
 ## Containers Section
@@ -1013,12 +1017,12 @@ content-blocking-expand-section =
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = Криптомайнери
-    .accesskey = К
+    .accesskey = п
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
     .label = Зчитування цифрового відбитка
-    .accesskey = к
+    .accesskey = б
 
 ## Privacy Section - Tracking
 
@@ -1165,6 +1169,18 @@ space-alert-under-5gb-ok-button =
     .label = Гаразд, зрозуміло
     .accesskey = Г
 space-alert-under-5gb-message = У { -brand-short-name } закінчується місце на диску. Вміст вебсайтів може показуватись неправильно. Натисніть “Докладніше”, щоб оптимізувати використання вашого диска для кращої роботи.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = HTTPS-режим
+httpsonly-description = HTTPS забезпечує захищене, зашифроване з'єднання між { -brand-short-name } та відвідуваними вебсайтами. Більшість вебсайтів підтримують HTTPS, тому якщо увімкнено HTTPS-режим, { -brand-short-name } перенаправлятиме усі з'єднання до HTTPS.
+httpsonly-learn-more = Докладніше
+httpsonly-radio-enabled =
+    .label = Увімкнути HTTPS-режим у всіх вікнах
+httpsonly-radio-enabled-pbm =
+    .label = Увімкнути HTTPS-режим лише у приватних вікнах
+httpsonly-radio-disabled =
+    .label = Не вмикати HTTPS-режим
 
 ## The following strings are used in the Download section of settings
 

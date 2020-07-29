@@ -50,6 +50,10 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name } eksperimenti
+category-experimental =
+    .tooltiptext = { -brand-short-name } eksperimenti
+pane-experimental-subtitle = Nastavi s oprezom
 help-button-label = { -brand-short-name } podrška
 addons-button-label = Proširenja i teme
 focus-search =
@@ -903,6 +907,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = Upravljaj dozvolama …
     .accesskey = U
+sitedata-cookies-exceptions =
+    .label = Upravljanje iznimkama…
+    .accesskey = z
 
 ## Privacy Section - Address Bar
 

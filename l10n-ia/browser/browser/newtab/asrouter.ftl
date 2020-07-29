@@ -204,6 +204,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Vider toto
     .accesskey = t
+cfr-doorhanger-milestone-close-button = Clauder
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -230,10 +232,19 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Icone imagine-in-imagine
 
 cfr-whatsnew-protections-header = Protectiones al prime colpo de oculos
 cfr-whatsnew-protections-body = Le Pannello de controlo protectiones include  reportos summari re gestion de violationes de datos e contrasignos. Tu pote ora traciar quante violationes tu ha resolvite e vider si tote tu contrasignos salvate ha forsan essite exponite in un violation de datos.
-cfr-whatsnew-protections-cta-link = Vider annello de protectiones
+cfr-whatsnew-protections-cta-link = Vider pannello de protectiones
 cfr-whatsnew-protections-icon-alt = Icone escudo
 
 ## Better PDF message
 
 cfr-whatsnew-better-pdf-header = Melior experientia PDF
 cfr-whatsnew-better-pdf-body = Le documentos PDF ora aperi directemente in { -brand-short-name }, sin molestar tu fluxo de labor.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Tu confidentialitate es importante. { -brand-short-name } ora adressa con securitate tu requestas de DNS quandocunque possibile a un servicio partner pro proteger te durante tu navigation.
+cfr-doorhanger-doh-header = Recercas DNS plus secur e ciphrate
+cfr-doorhanger-doh-primary-button = De accordo
+    .accesskey = a
+cfr-doorhanger-doh-secondary-button = Disactivar
+    .accesskey = D

@@ -36,9 +36,9 @@ certificate-viewer-serial-number = सीरीयल नंबर
 certificate-viewer-version = संस्करण
 certificate-viewer-issuer-name = जारीकर्ता का नाम
 certificate-viewer-validity = वैधता
+certificate-viewer-authority-info-aia = प्राधिकरण जानकारी (AIA)
 certificate-viewer-certificate-policies = प्रमाणपत्र नीतियां
-
-# This message is used as a row header in the Miscellaneous section. 
+# This message is used as a row header in the Miscellaneous section.
 # The associated data cell contains links to download the certificate.
 certificate-viewer-download = डाउनलोड
 # This message is used to replace boolean values (true/false) in several certificate fields, e.g. Certificate Authority
@@ -56,3 +56,5 @@ certificate-viewer-boolean =
 
 ## Labels for tabs displayed in stand-alone about:certificate page
 
+certificate-viewer-tab-mine = आपका प्रमाणपत्र
+certificate-viewer-tab-servers = सर्वर

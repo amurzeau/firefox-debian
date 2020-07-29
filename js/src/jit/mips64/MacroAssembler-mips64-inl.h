@@ -143,6 +143,15 @@ void MacroAssembler::xorPtr(Register src, Register dest) { ma_xor(dest, src); }
 void MacroAssembler::xorPtr(Imm32 imm, Register dest) { ma_xor(dest, imm); }
 
 // ===============================================================
+// Swap instructions
+
+void MacroAssembler::byteSwap64(Register64 reg64) {
+  Register reg = reg64.reg;
+  ma_dsbh(reg, reg);
+  ma_dshd(reg, reg);
+}
+
+// ===============================================================
 // Arithmetic functions
 
 void MacroAssembler::addPtr(Register src, Register dest) {
@@ -694,13 +703,23 @@ inline void MacroAssembler::cmpPtrSet(Assembler::Condition cond, Address lhs,
 template <>
 inline void MacroAssembler::cmpPtrSet(Assembler::Condition cond, Register lhs,
                                       Address rhs, Register dest) {
+  MOZ_ASSERT(lhs != ScratchRegister);
   loadPtr(rhs, ScratchRegister);
   cmpPtrSet(cond, lhs, ScratchRegister, dest);
 }
 
 template <>
+inline void MacroAssembler::cmpPtrSet(Assembler::Condition cond, Address lhs,
+                                      Register rhs, Register dest) {
+  MOZ_ASSERT(rhs != ScratchRegister);
+  loadPtr(lhs, ScratchRegister);
+  cmpPtrSet(cond, ScratchRegister, rhs, dest);
+}
+
+template <>
 inline void MacroAssembler::cmp32Set(Assembler::Condition cond, Register lhs,
                                      Address rhs, Register dest) {
+  MOZ_ASSERT(lhs != ScratchRegister);
   load32(rhs, ScratchRegister);
   cmp32Set(cond, lhs, ScratchRegister, dest);
 }
@@ -708,6 +727,7 @@ inline void MacroAssembler::cmp32Set(Assembler::Condition cond, Register lhs,
 template <>
 inline void MacroAssembler::cmp32Set(Assembler::Condition cond, Address lhs,
                                      Register rhs, Register dest) {
+  MOZ_ASSERT(rhs != ScratchRegister);
   load32(lhs, ScratchRegister);
   cmp32Set(cond, ScratchRegister, rhs, dest);
 }

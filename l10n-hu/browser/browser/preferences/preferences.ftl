@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name } kísérletek
+category-experimental =
+    .tooltiptext = { -brand-short-name } kísérletek
+pane-experimental-subtitle = Óvatosan haladjon tovább
+pane-experimental-search-results-header = { -brand-short-name }-kísérletek: Óvatosan menjen tovább
+pane-experimental-description = A speciális beállítások megváltoztatása befolyásolhatja a { -brand-short-name } teljesítményét vagy biztonságát.
 help-button-label = { -brand-short-name } támogatás
 addons-button-label = Kiegészítők és témák
 focus-search =
@@ -499,7 +505,6 @@ home-prefs-topsites-description = A leggyakrabban látogatott oldalak
 
 home-prefs-recommended-by-header =
     .label = A(z) { $provider } ajánlásával
-home-prefs-recommended-by-description = Nagyszerű tartalom szerte a webről, személyre szabva
 home-prefs-recommended-by-description-update = Kivételes tartalom szerte az internetről, a { $provider } válogatásában
 
 ##
@@ -563,7 +568,6 @@ search-show-suggestions-above-history-option =
     .label = Keresési javaslatok megjelenítése a böngészési előzmények előtt a címsor találatai között
 search-show-suggestions-private-windows =
     .label = Keresési javaslatok megjelenítése a privát ablakokban
-suggestions-addressbar-settings = Böngészési előzmények, könyvjelzők és lapjavaslatok beállításainak módosítása
 suggestions-addressbar-settings-generic = Címsávjavaslatok beállításainak módosítása
 search-suggestions-cant-show = A keresési javaslatok nem jelennek meg a címsáv találatai között, mert a { -brand-short-name } nem jegyzi meg az előzményeket.
 search-one-click-header = Egy kattintásos keresőszolgáltatások
@@ -1161,6 +1165,18 @@ space-alert-under-5gb-ok-button =
     .label = Rendben, értem
     .accesskey = R
 space-alert-under-5gb-message = A { -brand-short-name } kezd kifogyni a lemezhelyből. A weboldalak tartalma nem feltétlenül jelenik meg helyesen. A lemezhasználat optimalizálásával a böngészés simábbá tehető, olvassa el a „További tudnivalókat”.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Csak HTTPS mód
+httpsonly-description = A HTTPS biztonságos, titkosított kapcsolatot biztosít a { -brand-short-name } és a meglátogatott webhelyek között. A legtöbb webhely támogatja a HTTPS-t, és ha a Csak HTTPS mód engedélyezve van, akkor a { -brand-short-name } HTTPS-re frissíti az összes kapcsolatot.
+httpsonly-learn-more = További tudnivalók
+httpsonly-radio-enabled =
+    .label = A Csak HTTPS mód engedélyezése az összes ablakban
+httpsonly-radio-enabled-pbm =
+    .label = A Csak HTTPS mód engedélyezése csak privát ablakokban
+httpsonly-radio-disabled =
+    .label = Ne engedélyezze a Csak HTTPS módot
 
 ## The following strings are used in the Download section of settings
 

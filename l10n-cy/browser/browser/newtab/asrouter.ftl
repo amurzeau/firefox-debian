@@ -231,6 +231,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Gweld y Cyfan
     .accesskey = G
+cfr-doorhanger-milestone-close-button = Cau
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -264,3 +266,18 @@ cfr-whatsnew-protections-icon-alt = Eicon tarian
 
 cfr-whatsnew-better-pdf-header = Gwell profiad PDF
 cfr-whatsnew-better-pdf-body = Mae dogfennau PDF nawr yn agor yn uniongyrchol yn { -brand-short-name }, gan gadw'ch llif gwaith o fewn cyrraedd.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Mae eich preifatrwydd yn bwysig. Mae { -brand-short-name } bellach yn cyfeirio eich ceisiadau DNS yn ddiogel pryd bynnag y bo modd at wasanaeth partner i'ch diogelu wrth i chi bori.
+cfr-doorhanger-doh-header = Chwilio DNS mwy diogel, wedi'u hamgryptio
+cfr-doorhanger-doh-primary-button = Iawn, Wedi deall!
+    .accesskey = I
+cfr-doorhanger-doh-secondary-button = Analluogi
+    .accesskey = A
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Diogelwch awtomatig rhag tactegau tracio slei
+cfr-whatsnew-clear-cookies-body = Mae rhai tracwyr yn eich ailgyfeirio i wefannau eraill sy'n gosod cwcis yn gyfrinachol. Mae { -brand-short-name } bellach yn clirio'r cwcis hynny yn awtomatig fel nad oes modd eich dilyn.
+cfr-whatsnew-clear-cookies-image-alt = Llun wedi'i rwystro gan gwci

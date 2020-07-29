@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = Expériences de { -brand-short-name }
+category-experimental =
+    .tooltiptext = Expériences de { -brand-short-name }
+pane-experimental-subtitle = Agissez avec précaution
+pane-experimental-search-results-header = Expériences de { -brand-short-name } : gardez l’œil ouvert
+pane-experimental-description = Modifier les préférences de configuration avancées peut affecter les performances et la sécurité de { -brand-short-name }.
 help-button-label = Assistance de { -brand-short-name }
 addons-button-label = Extensions et thèmes
 focus-search =
@@ -499,7 +505,6 @@ home-prefs-topsites-description = Les sites que vous visitez le plus
 
 home-prefs-recommended-by-header =
     .label = Recommandations par { $provider }
-home-prefs-recommended-by-description = Du contenu intéressant en provenance du Web, personnalisé pour vous
 home-prefs-recommended-by-description-update = Contenu exceptionnel déniché sur le Web par { $provider }
 
 ##
@@ -563,7 +568,6 @@ search-show-suggestions-above-history-option =
     .label = Afficher les suggestions de recherche avant l’historique de navigation dans les résultats de la barre d’adresse
 search-show-suggestions-private-windows =
     .label = Afficher les suggestions de recherche dans les fenêtres de navigation privée
-suggestions-addressbar-settings = Modifier les préférences pour les suggestions de l’historique de navigation, des marque-pages et des onglets
 suggestions-addressbar-settings-generic = Modifier les préférences pour les suggestions de la barre d’adresse
 search-suggestions-cant-show = Les suggestions de recherche ne seront pas affichées parmi les résultats de la barre d’adresse car vous avez configuré { -brand-short-name } de façon à ce qu’il ne conserve jamais l’historique.
 search-one-click-header = Moteurs de recherche accessibles en un clic
@@ -887,7 +891,7 @@ sitedata-option-block-cross-site-trackers =
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Traqueurs intersites et de réseaux sociaux
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
-    .label = Les traqueurs intersites et de réseaux sociaux, et isoler les cookies restants
+    .label = Traqueurs intersites et de réseaux sociaux, et isoler les cookies restants
 sitedata-option-block-unvisited =
     .label = Cookies de sites web non visités
 sitedata-option-block-all-third-party =
@@ -970,7 +974,7 @@ content-blocking-etp-strict-desc = Protection renforcée, mais certains sites ou
 content-blocking-etp-custom-desc = Choisissez les traqueurs et les scripts à bloquer.
 content-blocking-private-windows = Contenu utilisé pour le pistage dans les fenêtres de navigation privée
 content-blocking-cross-site-tracking-cookies = Cookies de pistage intersites
-content-blocking-cross-site-tracking-cookies-plus-isolate = Les traqueurs intersites, et isoler les cookies restants
+content-blocking-cross-site-tracking-cookies-plus-isolate = Traqueurs intersites, et isoler les cookies restants
 content-blocking-social-media-trackers = Traqueurs de réseaux sociaux
 content-blocking-all-cookies = Tous les cookies
 content-blocking-unvisited-cookies = Cookies de sites non visités
@@ -1161,6 +1165,17 @@ space-alert-under-5gb-ok-button =
     .label = OK
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } n’a plus assez d’espace disque. Le contenu des sites web pourrait ne pas s’afficher correctement. Cliquez sur « En savoir plus » pour optimiser l’utilisation de votre disque et ainsi améliorer votre navigation.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Mode HTTPS uniquement
+httpsonly-learn-more = En savoir plus
+httpsonly-radio-enabled =
+    .label = Activer le mode HTTPS uniquement dans toutes les fenêtres
+httpsonly-radio-enabled-pbm =
+    .label = Activer le mode HTTPS uniquement dans les fenêtres privées seulement
+httpsonly-radio-disabled =
+    .label = Ne pas activer le mode HTTPS uniquement
 
 ## The following strings are used in the Download section of settings
 

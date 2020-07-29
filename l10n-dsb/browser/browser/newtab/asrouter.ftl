@@ -217,6 +217,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Wšykne pokazaś
     .accesskey = k
+cfr-doorhanger-milestone-close-button = Zacyniś
+    .accesskey = Z
 
 ## What’s New Panel Content for Firefox 76
 
@@ -250,3 +252,18 @@ cfr-whatsnew-protections-icon-alt = Šćitowy symbol
 
 cfr-whatsnew-better-pdf-header = Lěpše PDF-dožywjenje
 cfr-whatsnew-better-pdf-body = PDF-dokumenty se něnto direktnje w { -brand-short-name } wócynjaju, bźeztogo aby musył źěłowy wótběg pśetergnuś.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Waša priwatnosć jo wažna. { -brand-short-name } něnto, gažkuli jo móžno, partnaŕskej słužbje waše DNS-napšašowanja wěsće pśenosujo, aby was šćitał, mjaztym až pśeglědujośo.
+cfr-doorhanger-doh-header = Wěcej wěstych skoděrowanych DNS-pytanjow
+cfr-doorhanger-doh-primary-button = W pórěźe, som zrozměł
+    .accesskey = r
+cfr-doorhanger-doh-secondary-button = Znjemóžniś
+    .accesskey = Z
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Awtomatiski šćit pśed zakśebjatnymi slědowańskimi taktikami
+cfr-whatsnew-clear-cookies-body = Někotare pśeslědowaki was k drugim websedłam dalej pósrědnjaju, kótarež kšajźu cookieje stajaju. { -brand-short-name } něnto te cookieje awtomatiski lašujo, až  njeby móžno było, wam slědowaś.
+cfr-whatsnew-clear-cookies-image-alt = Ilustracija za zablokěrowany cookie

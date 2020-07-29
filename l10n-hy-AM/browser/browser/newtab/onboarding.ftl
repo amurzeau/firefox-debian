@@ -19,6 +19,9 @@ onboarding-button-label-get-started = Սկսել
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = Բարի գալուստ { -brand-short-name }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Բարի գալուստ <span data-l10n-name="zap">{ -brand-short-name }</span>
 onboarding-welcome-body = Դուք ունեք զննարկիչ: <br/> Ծանոթացեք { -brand-product-name } -ի մնացած մասի հետ:
 onboarding-welcome-learn-more = Իմացեք ավելին առավելությունների մասին:
 onboarding-join-form-header = Միանալ { -brand-product-name }
@@ -92,7 +95,7 @@ onboarding-benefit-lockwise-text = Կառավարեք գաղտնաբառերը, 
 ## The string for the button is found above, in the UI strings section
 
 onboarding-private-browsing-title = Գաղտնի դիտարկում
-onboarding-private-browsing-text = Ինքներդ դիտարկեք: Գաղտնի դիտարկում՝ վեբում ձեզ հետևող առցանց հետագծիչների բովանդակության արգելափակմամբ:
+onboarding-private-browsing-text = Ինքներդ դիտարկեք: Գաղտնի դիտարկում՝ համացանցում ձեզ հետևող առցանց հետագծիչների բովանդակության արգելափակմամբ:
 onboarding-screenshots-title = Էկրանի կորզում
 onboarding-screenshots-text = Ստացեք, պահպանեք և համօգտագործեք էկրանի հանույթները՝ առանց { -brand-short-name }-ը լքելու: Կորզեք էջի մի մասը կամ այն ամբողջութայմբ: Ապա պահպանեք վեբում՝ ավելի հեշտ մատչելու և համօգտագործելու համար:
 onboarding-addons-title = Հավելումներ
@@ -103,7 +106,7 @@ onboarding-ghostery-text = Զննեք ավելի արագ, խելացի կամ �
 onboarding-fxa-title = Սինք
 onboarding-fxa-text = Գրանցեք { -fxaccount-brand-name } և համաժամեցրեք Ձեր էջանիշները, գաղտնաբառերը և բաց ներդիրները ամենուրեք, որտեղ էլ որ օգտագործեք { -brand-short-name }-ը։
 onboarding-tracking-protection-title2 = Պաշտպանություն հետևելուց
-onboarding-tracking-protection-text2 = { -brand-short-name }-ը օգնում է դասարեցնել կայքերից ձեզ առցանց հետևելը, ինչը բարդեցնում է գովազդների հետապնդումը։
+onboarding-tracking-protection-text2 = { -brand-short-name }-ը օգնում է դադարեցնել կայքերի կողմից ձեր առցանց հետագծումը, ինչը բարդեցնում է գովազդների կողմից Ձեզ հետևելը։
 onboarding-tracking-protection-button2 = Ինչպես է դա աշխատում
 onboarding-data-sync-title = Վերցրեք ձեր կարգավորումները ձեզ հետ
 # "Sync" is short for synchronize.

@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = Eksperimen { -brand-short-name }
+category-experimental =
+    .tooltiptext = Eksperimen { -brand-short-name }
+pane-experimental-subtitle = Lanjutkan dengan Kehati-hatian
+pane-experimental-search-results-header = { -brand-short-name } Eksperimen: Lanjutkan dengan Hati-hati
+pane-experimental-description = Mengubah pilihan konfigurasi tingkat lanjut dapat mempengaruhi kinerja atau keamanan { -brand-short-name } .
 help-button-label = Dukungan { -brand-short-name }
 addons-button-label = Ekstensi & Tema
 focus-search =
@@ -487,7 +493,6 @@ home-prefs-topsites-description = Situs yang sering Anda kunjungi
 
 home-prefs-recommended-by-header =
     .label = Disarankan oleh { $provider }
-home-prefs-recommended-by-description = Konten bermutu dari seluruh web, khusus untuk Anda
 home-prefs-recommended-by-description-update = Konten luar biasa dari seluruh web, dikuratori oleh { $provider }
 
 ##
@@ -547,7 +552,6 @@ search-show-suggestions-above-history-option =
     .label = Tampilkan saran pencarian di atas riwayat penjelajahan dalam hasil bilah alamat
 search-show-suggestions-private-windows =
     .label = Tampilkan saran pencarian di Jendela Pribadi
-suggestions-addressbar-settings = Ubah preferensi untuk riwayat penjelajahan, markah, dan saran tab.
 suggestions-addressbar-settings-generic = Ubah preferensi untuk saran bilah alamat lainnya
 search-suggestions-cant-show = Saran pencarian tidak akan ditampilkan di hasil bilah lokasi karena Anda telah mengatur { -brand-short-name } agar tidak mengingat riwayat.
 search-one-click-header = Mesin pencari sekali klik

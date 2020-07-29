@@ -206,6 +206,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Ver tudo
     .accesskey = V
+cfr-doorhanger-milestone-close-button = Fechar
+    .accesskey = F
 
 ## What’s New Panel Content for Firefox 76
 
@@ -239,3 +241,18 @@ cfr-whatsnew-protections-icon-alt = Ícone de escudo
 
 cfr-whatsnew-better-pdf-header = Melhor experiência de uso em PDF
 cfr-whatsnew-better-pdf-body = Documentos PDF agora são abertos diretamente no { -brand-short-name }, mantendo seu fluxo de trabalho facilmente ao alcance.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Sua privacidade é importante. Agora o { -brand-short-name } roteia com segurança suas solicitações de DNS, sempre que possível, para um serviço parceiro para proteger você enquanto navega.
+cfr-doorhanger-doh-header = Pesquisas de DNS mais seguras e criptografadas
+cfr-doorhanger-doh-primary-button = OK, entendi
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Desativar
+    .accesskey = D
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Proteção automática contra táticas furtivas de rastreamento
+cfr-whatsnew-clear-cookies-body = Alguns rastreadores redirecionam para outros sites que secretamente criam cookies. O { -brand-short-name } agora limpa automaticamente esses cookies para que você não possa ser seguido.
+cfr-whatsnew-clear-cookies-image-alt = Ilustração de cookie bloqueado

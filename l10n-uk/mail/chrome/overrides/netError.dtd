@@ -13,7 +13,7 @@
 <!ENTITY connectionFailure.title "Невдала спроба з’єднання">
 <!ENTITY connectionFailure.longDesc "&sharedLongDesc;">
 
-<!ENTITY deniedPortAccess.title "Звернення до даної адреси заборонено">
+<!ENTITY deniedPortAccess.title "Звернення до цієї адреси заборонено">
 <!ENTITY deniedPortAccess.longDesc "">
 
 <!ENTITY dnsNotFound.title "Сервер не знайдено">
@@ -118,7 +118,7 @@
 </ul>
 ">
 
-<!ENTITY redirectLoop.title "Невірне перенаправлення на сторінці">
+<!ENTITY redirectLoop.title "Неправильне перенаправлення на сторінці">
 <!ENTITY redirectLoop.longDesc "
 <ul>
   <li>Ця проблема може виникати при вимиканні або забороні прийняття

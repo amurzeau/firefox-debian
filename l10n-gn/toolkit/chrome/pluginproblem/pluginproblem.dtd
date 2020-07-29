@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE (tapToPlayPlugin): Mobile (used for touch interfaces) only has one type of plugin possible. -->
-<!ENTITY tapToPlayPlugin                                     "Epoko ko'ápe emyandy hag̃ua mboguerã'i.">
+<!ENTITY tapToPlayPlugin                                     "Epoko ko’ápe emyandy hag̃ua mboguerã’i.">
 <!ENTITY clickToActivatePlugin                               "Mba'ejoajurã myendy.">
 <!ENTITY checkForUpdates                                     "Ñembohekopyahu jeheka…">
 <!ENTITY blockedPlugin.label                                 "Ko mba'ejoajurã ojejokóma neñemo'ãrã.">
@@ -23,7 +23,7 @@
 <!ENTITY report.disabled                                     "Crash marandu’i mboguepyre.">
 <!ENTITY report.failed                                       "Ojavy chehechauka.">
 <!ENTITY report.unavailable                                  "Ndaipóri marandu’i eipurukuaáva.">
-<!ENTITY report.comment                                      "Embojuaju peteĩ je'epyre (umi je'epyre ohecháta opavavete)">
+<!ENTITY report.comment                                      "Embojuaju je’epyre (je’epyre ohecháta opavavete)">
 <!ENTITY report.pageURL                                      "URL kuatiarogue ñemoinge">
 
 <!ENTITY plugin.file                                         "Marandurenda">

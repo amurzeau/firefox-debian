@@ -50,8 +50,14 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
-help-button-label = { -brand-short-name } desteği
-addons-button-label = Eklentiler ve temalar
+pane-experimental-title = { -brand-short-name } Deneyleri
+category-experimental =
+    .tooltiptext = { -brand-short-name } Deneyleri
+pane-experimental-subtitle = Dikkatli olun
+pane-experimental-search-results-header = { -brand-short-name } deneyleri: dikkatli olun
+pane-experimental-description = Gelişmiş yapılandırma tercihlerini değiştirmek { -brand-short-name } performansını veya güvenliğini etkileyebilir.
+help-button-label = { -brand-short-name } Desteği
+addons-button-label = Eklentiler ve Temalar
 focus-search =
     .key = f
 close-button =
@@ -235,7 +241,7 @@ translate-exceptions =
 # Variables:
 #    $localeName (string) - Localized name of the locale to be used.
 use-system-locale =
-    .label = Tarihleri, saatleri, sayıları ve ölçüleri biçimlendirmek için “{ $localeName }” işletim sistemi ayarlarımı kullan
+    .label = Tarih, saat, sayı ve ölçüleri biçimlendirmek için “{ $localeName }” işletim sistemi ayarlarımı kullan
 check-user-spelling =
     .label = Yazarken yazım denetimi yap
     .accesskey = t
@@ -499,7 +505,6 @@ home-prefs-topsites-description = En çok ziyaret ettiğiniz siteler
 
 home-prefs-recommended-by-header =
     .label = { $provider } öneriyor
-home-prefs-recommended-by-description = İnternetin her yanından sizin için seçtiğimiz kaliteli içerikler
 home-prefs-recommended-by-description-update = { $provider } tarafından seçilen harika içerikler
 
 ##
@@ -563,7 +568,6 @@ search-show-suggestions-above-history-option =
     .label = Adres çubuğu sonuçlarında arama önerilerini gezinti geçmişinden önce göster
 search-show-suggestions-private-windows =
     .label = Gizli pencerelerde arama önerilerini göster
-suggestions-addressbar-settings = Gezinti geçmişi, yer imleri ve sekme önerileri tercihlerini değiştirin
 suggestions-addressbar-settings-generic = Diğer adres çubuğu önerileri için tercihleri değiştir
 search-suggestions-cant-show = { -brand-short-name } tarayıcısını geçmişi hatırlamayacak şekilde ayarladığınız için konum çubuğu sonuçlarında arama önerileri gösterilmeyecektir.
 search-one-click-header = Tek tıklamalı arama motorları
@@ -1161,6 +1165,17 @@ space-alert-under-5gb-ok-button =
     .label = Anladım
     .accesskey = A
 space-alert-under-5gb-message = { -brand-short-name } tarafından kulllanılabilen disk alanı azaldı. Site içerikleri düzgün görüntülenemeyebilir. Daha iyi bir gezinti deneyimi içi disk kullanımınızı iyileştirmek isterseniz “Daha fazla bilgi al” sayfasını ziyaret edin.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Yalnızca HTTPS modu
+httpsonly-learn-more = Daha fazla bilgi al
+httpsonly-radio-enabled =
+    .label = Yalnızca HTTPS modunu tüm pencerelerde etkinleştir
+httpsonly-radio-enabled-pbm =
+    .label = Yalnızca HTTPS modunu yalnızca gizli pencerelerde etkinleştir
+httpsonly-radio-disabled =
+    .label = Yalnızca HTTPS modunu etkinleştirme
 
 ## The following strings are used in the Download section of settings
 

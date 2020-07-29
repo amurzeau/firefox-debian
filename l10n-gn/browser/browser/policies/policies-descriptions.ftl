@@ -35,7 +35,7 @@ policy-DisableFirefoxScreenshots = Eipe’a Firefox Screenshots rembiapoite.
 policy-DisableFirefoxStudies = Ani eheja { -brand-short-name } omomba’apo ñembokatupyry.
 policy-DisableForgetButton = Ani eheja votõ Tesaráipe jeike.
 policy-DisableFormHistory = Ani nemandu’a jeheka ha tembiasakue myanyhẽha rehe.
-policy-DisableMasterPasswordCreation = Ojepurúramo "true", ndaikatúi emoheñói ñe'ëñemi ha'etéva.
+policy-DisableMasterPasswordCreation = Ojepurúrõ true, ndaikatúi emoheñói ñe’ẽñemi ha’etéva.
 policy-DisablePasswordReveal = Ani emoneĩ ojehecha ñe’ẽñemi tembiapo ñepyrũ ñongatupyrépe.
 policy-DisablePocket = Eipe’a ñanduti renda ñeñongatu rembiapoite Pocket-pe.
 policy-DisablePrivateBrowsing = Eipe’a kundaha ñemigua.
@@ -101,7 +101,7 @@ policy-SearchBar = Emboheko jehekaha rendaite ijypykue rupi. Pe puruhára ikatu 
 policy-SearchEngines = Emboheko jehekaha ñemoĩporã. Ko purureko eipurukuaa pe Extended Support Release (ESR) rupive.
 policy-SearchSuggestEnabled = Emyandy térã embogue jeheka rehegua.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
-policy-SecurityDevices = Emohenda PKCS # 11 ra'ãha.
+policy-SecurityDevices = Emohenda PKCS # 11 ra’ãha.
 policy-SSLVersionMax = Emboheko SSL rembiapokue ipyahuvéva.
 policy-SSLVersionMin = Emboheko SSL rembiapokue oiko’ivéva.
 policy-SupportMenu = Embojuaju mba’epuru poravorãgua ñemomba’epyréva pytyvõha poravorãme.

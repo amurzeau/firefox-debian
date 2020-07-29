@@ -1,25 +1,29 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = ప్రవేశాలు & సంకేతపదాలు
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
+login-app-promo-title = మీ సంకేతపదాలను ఎక్కడికైనా తీసుకెళ్ళండి
+login-app-promo-android =
+    .alt = దీన్ని గూగుల్ ప్లే నుండి పొందండి
+login-app-promo-apple =
+    .alt = App Store నుండి దింపుకోండి
 login-filter =
-    .placeholder = ప్రవేశాలలో వెతకండి
+    .placeholder = ప్రవేశాలను వెతకండి
 create-login-button = కొత్త ప్రవేశాన్ని సృష్టించు
+fxaccounts-sign-in-text = మీ సంకేతపదాలను ఇతర పరికరాల్లో పొందండి
+fxaccounts-sign-in-button = { -sync-brand-short-name } లోనికి ప్రవేశించండి
 fxaccounts-avatar-button =
     .title = ఖాతా నిర్వహించు
 
 ## The ⋯ menu that is in the top corner of the page
 
+menu =
+    .title = మెనూని తెరవండి
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] ఎంపికలు
@@ -29,6 +33,8 @@ about-logins-menu-menuitem-help = సహాయం
 
 ## Login List
 
+login-list =
+    .aria-label = వెతుకులాటకు సరిపోయే ప్రవేశాలు
 login-list-count =
     { $count ->
         [one] { $count } ప్రవేశం
@@ -53,6 +59,8 @@ about-logins-list-item-vulnerable-password-icon =
 
 ## Login
 
+login-item-new-login-title = కొత్త ప్రవేశాన్ని సృష్టించు
+login-item-edit-button = మార్చు
 about-logins-login-item-remove-button = తొలగించు
 login-item-origin-label = వెబ్‌సైటు చిరునామా
 login-item-origin =
@@ -70,6 +78,9 @@ login-item-copied-password-button-text = కాపీ అయ్యింది!
 login-item-save-changes-button = మార్పులను భద్రపరుచు
 login-item-save-new-button = భద్రపరుచు
 login-item-cancel-button = రద్దుచేయి
+login-item-time-changed = చివరి మార్పు: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
+login-item-time-created = సృష్టితం: { DATETIME($timeCreated, day: "numeric", month: "long", year: "numeric") }
+login-item-time-used = చివరి వాడుక: { DATETIME($timeUsed, day: "numeric", month: "long", year: "numeric") }
 
 ## OS Authentication dialog
 
@@ -88,6 +99,13 @@ master-password-reload-button =
 
 ## Password Sync notification
 
+enable-password-sync-preferences-button =
+    .label =
+        { PLATFORM() ->
+            [windows] { -sync-brand-short-name } ఎంపికలను చూడండి
+           *[other] { -sync-brand-short-name } అభిరుచులను చూడండి
+        }
+    .accesskey = V
 about-logins-enable-password-sync-dont-ask-again-button =
     .label = నన్ను మళ్లీ అడగవద్దు
     .accesskey = D
@@ -98,8 +116,11 @@ confirmation-dialog-cancel-button = రద్దుచేయి
 confirmation-dialog-dismiss-button =
     .title = రద్దుచేయి
 about-logins-confirm-remove-dialog-title = ఈ ప్రవేశాన్ని తొలగించాలా?
+confirm-delete-dialog-message = ఈ చర్యను రద్దు చేయలేరు.
 about-logins-confirm-remove-dialog-confirm-button = తొలగించు
 confirm-discard-changes-dialog-title = భద్రపరచని మార్పులను విస్మరించాలా?
+confirm-discard-changes-dialog-message = భద్రపరచని మార్పులన్నీ కోల్పోతారు.
+confirm-discard-changes-dialog-confirm-button = విస్మరించు
 
 ## Breach Alert notification
 
@@ -108,6 +129,9 @@ about-logins-breach-alert-learn-more-link = ఇంకా తెలుసుక�
 ## Vulnerable Password notification
 
 about-logins-vulnerable-alert-title = బలహీనమైన సంకేతపదం
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = { $hostname }కు వెళ్ళండి
 about-logins-vulnerable-alert-learn-more-link = ఇంకా తెలుసుకోండి
 
 ## Error Messages
@@ -116,3 +140,6 @@ about-logins-vulnerable-alert-learn-more-link = ఇంకా తెలుసు�
 ## Login Export Dialog
 
 about-logins-export-file-picker-export-button = ఎగుమతించు
+
+## Login Import Dialog
+

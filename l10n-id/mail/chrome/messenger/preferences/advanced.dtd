@@ -13,7 +13,18 @@
 <!ENTITY enableGlodaSearch.accesskey   "i">
 <!ENTITY dateTimeFormatting.label      "Format Waktu dan Tanggal">
 <!ENTITY languageSelector.label        "Bahasa">
+<!ENTITY allowHWAccel.label            "Gunakan akselerasi perangkat keras jika tersedia">
+<!ENTITY allowHWAccel.accesskey        "h">
+<!ENTITY storeType.label               "Jenis Toko Pesan untuk akun baru:">
+<!ENTITY storeType.accesskey           "T">
+<!ENTITY mboxStore2.label              "File per folder (mbox)">
+<!ENTITY maildirStore.label            "File per pesan (maildir)">
 
+<!ENTITY scrolling.label               "Pengguliran">
+<!ENTITY useAutoScroll.label           "Gunakan pengguliran otomatis">
+<!ENTITY useAutoScroll.accesskey       "U">
+<!ENTITY useSmoothScrolling.label      "Gunakan pengguliran mulus">
+<!ENTITY useSmoothScrolling.accesskey  "m">
 
 <!ENTITY systemIntegration.label       "Integrasi dengan Sistem">
 <!ENTITY alwaysCheckDefault.label      "Periksa apakah &brandShortName; adalah pembaca email default ketika memulai">
@@ -21,6 +32,7 @@
 <!ENTITY searchIntegration.label       "Izinkan &searchIntegration.engineName; untuk pencarian pesan">
 <!ENTITY searchIntegration.accesskey   "p">
 <!ENTITY checkDefaultsNow.label        "Periksa Sekarang…">
+<!ENTITY checkDefaultsNow.accesskey    "N">
 <!ENTITY configEditDesc.label          "Konfigurasi Canggih">
 <!ENTITY configEdit.label              "Penyunting Konfigurasi…">
 <!ENTITY configEdit.accesskey          "g">
@@ -30,9 +42,15 @@
 
 <!-- Data Choices -->
 <!ENTITY telemetrySection.label          "Telemetri">
+<!ENTITY telemetryDesc.label             "Membagikan data kinerja, penggunaan, perangkat keras dan penyesuaian tentang klien surel Anda dengan &vendorShortName; untuk membantu kami membuat &brandShortName; lebih baik">
 <!ENTITY enableTelemetry.label           "Aktifkan Telemetri">
+<!ENTITY enableTelemetry.accesskey       "T">
 <!ENTITY telemetryLearnMore.label        "Pelajari Lebih Lanjut">
 
+<!ENTITY crashReporterSection.label      "Pelapor Kerusakan">
+<!ENTITY crashReporterDesc.label         "&brandShortName; mengirimkan laporan kerusakan untuk membantu &vendorShortName; buat klien surel Anda lebih stabil dan aman">
+<!ENTITY enableCrashReporter.label       "Aktifkan Pelapor Kerusakan">
+<!ENTITY enableCrashReporter.accesskey   "C">
 <!ENTITY crashReporterLearnMore.label    "Pelajari Lebih Lanjut">
 
 <!-- Update -->
@@ -49,9 +67,18 @@
  -->
 <!ENTITY updateApp.version.pre           "Versi ">
 <!ENTITY updateApp.version.post          "">
+<!ENTITY updateAppAllow.description      "Izinkan &brandShortName; untuk">
+<!ENTITY updateAuto.label                "Otomatis pasang pemutakhiran (disarankan: meningkatkan keamanan)">
+<!ENTITY updateAuto.accesskey            "A">
+<!ENTITY updateCheck.label               "Periksa pemutakhiran, biarkan saya memilih apakah akan dipasang atau tidak">
+<!ENTITY updateCheck.accesskey           "C">
 <!ENTITY updateHistory.label             "Tampilkan Riwayat Pemutakhiran">
+<!ENTITY updateHistory.accesskey         "p">
 
+<!ENTITY useService.label                "Gunakan layanan latar belakang untuk memasang pemutakhiran">
+<!ENTITY useService.accesskey            "b">
 
+<!ENTITY updateCrossUserSettingWarning.description "Pengaturan ini akan berlaku untuk semua akun Windows dan &brandShortName; profil menggunakan pemasangan &brandShortName;. ini">
 
 <!-- Networking and Disk Space -->
 <!ENTITY showSettings.label            "Pengaturan…">
@@ -64,6 +91,9 @@
 <!ENTITY showOffline.accesskey         "L">
 
 <!ENTITY Diskspace                       "Ruang Disk">
+<!ENTITY offlineCompactFolders.label     "Padatkan semua folder saat akan disimpan">
+<!ENTITY offlineCompactFolders.accesskey "a">
+<!ENTITY offlineCompactFoldersMB.label   "Total MB">
 
 <!-- LOCALIZATION NOTE:
   The entities useCacheBefore.label and useCacheAfter.label appear on a single
@@ -74,6 +104,8 @@
 <!ENTITY useCacheBefore.label            "Gunakan harddisk untuk tembolok hingga">
 <!ENTITY useCacheBefore.accesskey        "h">
 <!ENTITY useCacheAfter.label             "MB">
+<!ENTITY overrideSmartCacheSize.label    "Gunakan pengaturan tembolok manual">
+<!ENTITY overrideSmartCacheSize.accesskey "v">
 <!ENTITY clearCacheNow.label             "Bersihkan Sekarang">
 <!ENTITY clearCacheNow.accesskey         "g">
 
@@ -82,8 +114,16 @@
 <!ENTITY certs.auto                      "Pilih satu secara otomatis">
 <!ENTITY certs.auto.accesskey            "P">
 <!ENTITY certs.ask                       "Tanyakan selalu">
+<!ENTITY certs.ask.accesskey             "A">
+<!ENTITY enableOCSP.label                "Kueri server penjawab OCSP untuk mengonfirmasikan validitas sertifikat">
+<!ENTITY enableOCSP.accesskey            "Q">
 
 <!ENTITY manageCertificates.label "Kelola Sertifikat">
+<!ENTITY manageCertificates.accesskey "M">
 <!ENTITY viewSecurityDevices.label "Perangkat Keamanan">
 <!ENTITY viewSecurityDevices.accesskey "k">
 
+<!ENTITY manageCertificates2.label "Kelola Sertifikat...">
+<!ENTITY manageCertificates2.accesskey "M">
+<!ENTITY viewSecurityDevices2.label "Peranti Keamanan…">
+<!ENTITY viewSecurityDevices2.accesskey "D">

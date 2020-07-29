@@ -29,7 +29,7 @@
 <!ENTITY closeCmd.label                                 "Titz'apïx">
 <!ENTITY closeCmd.key                                   "W">
 <!ENTITY closeCmd.accesskey                             "t">
-<!ENTITY printSetupCmd.label                            "Tinuk'samajïx Ruxaq…">
+<!ENTITY printSetupCmd.label                            "Tib'an Runuk'ulem Ruxaq…">
 <!ENTITY printSetupCmd.accesskey                        "m">
 <!ENTITY printPreviewContactCmd.label                   "Nab'ey Rutz'etik Rub'i' Achib'il">
 <!ENTITY printPreviewContactCmd.accesskey               "b">
@@ -144,7 +144,7 @@ because displayed names don't have the comma in between. -->
 <!ENTITY newlistButton.label                            "K'ak'a' Cholb'äl">
 <!ENTITY newlistButton.accesskey                        "C">
 <!ENTITY showAsDefault.label                            "Rumolwuj tikirib'äl k'o wi">
-<!ENTITY showAsDefault.accesskey                        "S">
+<!ENTITY showAsDefault.accesskey                        "m">
 <!ENTITY editPropertiesButton.label                     "Tinuk'">
 <!ENTITY propertiesContext.label                        "Taq ichinil">
 <!ENTITY propertiesContext.accesskey                    "i">

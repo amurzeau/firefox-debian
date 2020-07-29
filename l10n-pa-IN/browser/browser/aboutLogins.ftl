@@ -1,11 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = ਲਾਗਇਨ ਤੇ ਪਾਸਵਰਡ
@@ -32,6 +27,7 @@ menu =
     .title = ਮੇਨੂ ਖੋਲ੍ਹੋ
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = …ਹੋਰ ਬਰਾਊਜ਼ਰ ਤੋਂ ਬਰਾਮਦ ਕਰੋ
+about-logins-menu-menuitem-import-from-a-file = …ਤੋਂ ਫ਼ਾਈਲ ਇੰਪੋਰਟ ਕਰੋ
 about-logins-menu-menuitem-export-logins = …ਲਾਗਇਨ ਐਕਸਪੋਰਟ ਕਰੋ
 menu-menuitem-preferences =
     { PLATFORM() ->
@@ -72,6 +68,7 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = ਆਪਣੇ ਸੰਭਾਲੇ ਹੋਏ ਲਾਗਇਨ ਨੂੰ ਲੱਭ ਰਹੇ ਹੋ? { -sync-brand-short-name } ਸੈੱਟ ਅੱਪ ਕਰੋ।
+about-logins-login-intro-heading-logged-out = ਆਪਣੇ ਸੰਭਾਲੇ ਹੋਏ ਲਾਗਇਨ ਨੂੰ ਲੱਭ ਰਹੇ ਹੋ? { -sync-brand-short-name } ਸੈੱਟ ਅੱਪ ਕਰੋ ਜਾਂ ਇੰਪੋਰਟ ਕਰੋ।
 about-logins-login-intro-heading-logged-in = ਕੋਈ ਸਿੰਕ ਕੀਤਾ ਲਾਗਇਨ ਨਹੀਂ ਮਿਲਿਆ ।
 login-intro-description = ਜੇ ਤੁਸੀਂ ਵੱਖਰੇ ਡਿਵਾਈਸ ‘ਤੇ { -brand-product-name } ‘ਚ ਆਪਣੇ ਲਾਗਇਨ ਸੰਭਾਲੇ ਸਨ ਤਾਂ ਉਹਨਾਂ ਨੂੰ ਇੰਞ ਪ੍ਰਾਪਤ ਕਰੋ:
 login-intro-instruction-fxa = ਡਿਵਾਈਸ, ਜਿੱਥੇ ਤੁਹਾਡੇ ਲਾਗਇਨ ਸੰਭਾਲੇ ਹੋਏ ਹਨ, ਉੱਤੇ ਆਪਣਾ { -fxaccount-brand-name } ਬਣਾਓ ਜਾਂ ਸਾਈਨ ਇਨ ਕਰੋ
@@ -216,4 +213,17 @@ about-logins-export-file-picker-csv-filter-title =
     { PLATFORM() ->
         [macos] CSV ਡੌਕੂਮੈਂਟ
        *[other] CSV ਫਾਇਲ
+    }
+
+## Login Import Dialog
+
+# Title of the file picker dialog
+about-logins-import-file-picker-title = ਲਾਗਇਨਾੰ ਵਾਲੀ ਫਾਇਲ ਇੰਪੋਰਟ ਕਰੋ
+about-logins-import-file-picker-import-button = ਇੰਪੋਰਟ ਕਰੋ
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV ਦਸਤਾਵੇਜ਼
+       *[other] CSV ਫ਼ਾਈਲ
     }

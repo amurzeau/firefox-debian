@@ -12,7 +12,7 @@ about-telemetry-archive-ping-type = Ruwäch chi Ping
 about-telemetry-archive-ping-header = Ping
 about-telemetry-option-group-today = Wakami
 about-telemetry-option-group-yesterday = Iwir
-about-telemetry-option-group-older = Nimalaxel
+about-telemetry-option-group-older = Ojer
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
 about-telemetry-page-title = Taq rutzij Telemetry
@@ -31,7 +31,7 @@ about-telemetry-scalar-section = Jotob'enïk
 about-telemetry-keyed-scalar-section = Xakb'äl rik'in ewan tzij
 about-telemetry-histograms-section =   Tem K'ulwäch
 about-telemetry-keyed-histogram-section =   Taq ruk'u'x Tem K'ulwäch
-about-telemetry-events-section = Taq molojri'ïl
+about-telemetry-events-section = Taq Nimaq'ij
 about-telemetry-simple-measurements-section =   Relik taq etab'äl
 about-telemetry-slow-sql-section =   Taq b'ab' SQL ajeqal
 about-telemetry-addon-details-section =   Kib'anikil tz'aqat
@@ -109,7 +109,7 @@ about-telemetry-current-data-sidebar = tzij k'o wakami
 # used in the “Ping Type” select
 about-telemetry-telemetry-ping-type-all = ronojel
 # button label to copy the histogram
-about-telemetry-histogram-copy = Wachib'exïk
+about-telemetry-histogram-copy = Tiwachib'ëx
 # these strings are used in the “Slow SQL Statements” section
 about-telemetry-slow-sql-main = Eqal taq b'ab' SQL pa ri nïm b'ätz'
 about-telemetry-slow-sql-other = Eqal taq b'ab' SQL pa taq achib'il b'ätz'
@@ -118,11 +118,11 @@ about-telemetry-slow-sql-average = Runik'ajal q'ijul (nik'q'ij)
 about-telemetry-slow-sql-statement = B'ab'
 # these strings are used in the “Add-on Details” section
 about-telemetry-addon-table-id = Nimaläj rub'i' tz'aqat
-about-telemetry-addon-table-details = Kib'anikil
+about-telemetry-addon-table-details = Taq b'anikil
 # Variables:
 #   $addonProvider (String): the name of an Add-on Provider (e.g. “XPI”, “Plugin”)
 about-telemetry-addon-provider = Ya'öl { $addonProvider }
-about-telemetry-keys-header = Ch'akulal
+about-telemetry-keys-header = Ichinil
 about-telemetry-names-header = B'i'aj
 about-telemetry-values-header = Retal
 # Variables:

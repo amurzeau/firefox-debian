@@ -19,6 +19,7 @@ onboarding-button-label-get-started = Въведение
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = Добре дошли във { -brand-short-name }
+
 onboarding-welcome-body = Разполагате с четеца.<br/>Запознайте се с останалото от { -brand-product-name }
 onboarding-welcome-learn-more = Научете повече за ползите.
 
@@ -147,6 +148,9 @@ onboarding-mobile-phone-text = Изтеглете { -brand-product-name } за i
 onboarding-mobile-phone-button = Изтеглете мобилен четец
 
 onboarding-send-tabs-title = Незабавно си изпращайте раздели
+# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
+# tab's context menu.
+onboarding-send-tabs-text2 = Лесно споделяйте страници между устройствата си, без да се налага да копирате препратки или да напускате четеца.
 onboarding-send-tabs-button = Започнете да изпращате раздели
 
 onboarding-pocket-anywhere-title = Четете и слушайте навсякъде
@@ -165,6 +169,8 @@ onboarding-facebook-container-button = Добавяне на разширени�
 
 onboarding-import-browser-settings-title = Внесете вашите отметки, пароли и др.
 onboarding-import-browser-settings-button = Внасяне на данни от Chrome
+
+onboarding-personal-data-promise-button = Прочетете нашето обещание
 
 ## Message strings belonging to the Return to AMO flow
 

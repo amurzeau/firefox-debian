@@ -27,6 +27,11 @@ findbar-case-sensitive =
     .accesskey = р
     .tooltiptext = Търсене със съвпадение на регистъра на буквите
 
+findbar-match-diacritics =
+    .label = Без производни букви
+    .accesskey = п
+    .tooltiptext = Не се показват производни букви с ударение и други знаци
+
 findbar-entire-word =
     .label = Цели думи
     .accesskey = д

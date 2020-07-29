@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name } Тәжірибелері
+category-experimental =
+    .tooltiptext = { -brand-short-name } Тәжірибелері
+pane-experimental-subtitle = Абайлап жалғастырыңыз
+pane-experimental-search-results-header = { -brand-short-name } тәжірибелері: Абайлап жалғастырыңыз
+pane-experimental-description = Кеңейтілген баптауларды өзгерту { -brand-short-name } өнімділік немесе қауіпсіздігіне әсерін тигізуі мүмкін.
 help-button-label = { -brand-short-name } қолдауы
 addons-button-label = Кеңейтулер және темалар
 focus-search =
@@ -499,7 +505,6 @@ home-prefs-topsites-description = Сіз жиі шолатын сайттар
 
 home-prefs-recommended-by-header =
     .label = Ұсынушы { $provider }
-home-prefs-recommended-by-description = Бүкіл Интернеттен алынған тамаша контент, талғамыңызға сай таңдалған
 home-prefs-recommended-by-description-update = Интернеттен қызық материалдар, { $provider } жинаған
 
 ##
@@ -563,7 +568,6 @@ search-show-suggestions-above-history-option =
     .label = Адрестік жолақ нәтижелерінде іздеу ұсыныстарын шолу тарихының алдында көрсету
 search-show-suggestions-private-windows =
     .label = Іздеу жүйелерінің ұсыныстарын жекелік терезелерінде көрсету
-suggestions-addressbar-settings = Шолу тарихы, бетбелгілер және беттер ұсыныстары үшін баптауларды өзгерту
 suggestions-addressbar-settings-generic = Адрестік жолақ үшін басқа ұсыныстар баптауларын өзгерту
 search-suggestions-cant-show = Орналасу жолағынан іздеу нәтижелерінде іздеу ұсыныстары көрсетілмейді, өйткені сіз { -brand-short-name } өнімін тарихты есте сақтамайтындай етіп баптадыңыз.
 search-one-click-header = Бірлік шертумен іздеу қызметтері
@@ -1158,9 +1162,21 @@ space-alert-over-5gb-message =
        *[other] { -brand-short-name } үшін бос орын аяқталуда. Вебсайттар құрамасы дұрыс көрсетілмеуі мүмкін. Сіз сайттардың сақталған деректерін Баптаулар > Жекелік және қауіпсіздік > Cookies файлдары және сайттар деректері ішінде өшіре аласыз.
     }
 space-alert-under-5gb-ok-button =
-    .label = ОК, түсіндім
-    .accesskey = О
+    .label = Жақсы, түсіндім
+    .accesskey = а
 space-alert-under-5gb-message = { -brand-short-name } үшін бос орын аяқталуда. Вебсайттар құрамасы дұрыс көрсетілмеуі мүмкін. "Көбірек білу" сілтемесін ашып, интернетті ыңғайлы шолу үшін диск қолданылуын қалай баптау керек екенін білуіңізге болады.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Тек-HTTPS режимі
+httpsonly-description = HTTPS { -brand-short-name } және сіз кіретін веб-сайттар арасында қауіпсіз, шифрленген байланысты ұсынады. Веб-сайттардың көбі HTTPS қолдайды, тек-HTTPS режимі іске қосылған болса, { -brand-short-name } барлық байланыстарды HTTPS-ке дейін жаңартады.
+httpsonly-learn-more = Көбірек білу
+httpsonly-radio-enabled =
+    .label = Барлық терезелерде тек-HTTPS режимін іске қосу
+httpsonly-radio-enabled-pbm =
+    .label = Тек-HTTPS режимін тек жекелік терезелерде іске қосу
+httpsonly-radio-disabled =
+    .label = Тек-HTTPS режимін іске қоспау
 
 ## The following strings are used in the Download section of settings
 

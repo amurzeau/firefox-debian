@@ -17,6 +17,12 @@ extensions-name = Nombre
 extensions-enabled = Habilitada
 extensions-version = Versión
 extensions-id = ID
+support-addons-title = Complementos
+support-addons-name = Nombre
+support-addons-type = Tipo
+support-addons-enabled = Activado
+support-addons-version = Versión
+support-addons-id = ID
 security-software-title = Software de seguridad
 security-software-type = Tipo
 security-software-name = Nombre
@@ -74,6 +80,9 @@ show-dir-label =
         [windows] Abrir carpeta
        *[other] Abrir directorio
     }
+experimental-features-title = Funcionalidades experimentales
+experimental-features-name = Nombre
+experimental-features-value = Valor
 modified-key-prefs-title = Preferencias importantes modificadas
 modified-prefs-name = Nombre
 modified-prefs-value = Valor
@@ -265,6 +274,9 @@ blocklisted-bug = En lista negra debido a problemas conocidos
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = En lista de bloqueo debido a problemas conocidos: <a data-l10n-name="bug-link">{ $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = En lista negra; código de fallo { $failureCode }

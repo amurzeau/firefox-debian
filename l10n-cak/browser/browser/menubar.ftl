@@ -9,8 +9,8 @@ menu-file =
     .label = Yakb'äl
     .accesskey = Y
 menu-file-new-tab =
-    .label = K'ak'a' ruwi'
-    .accesskey = r
+    .label = K'ak'a' Ruwi'
+    .accesskey = R
 menu-file-new-container-tab =
     .label = K'ak'a' k'ojlib'äl ruwi'
     .accesskey = w
@@ -26,7 +26,7 @@ menu-file-new-private-window =
 menu-file-open-location =
     .label = Tijaq ri k'ojlemal…
 menu-file-open-file =
-    .label = Tijaq yakb'äl…
+    .label = Tijaq Yakb'äl…
     .accesskey = T
 menu-file-close =
     .label = Titz'apïx
@@ -35,16 +35,16 @@ menu-file-close-window =
     .label = Titz'apïx Tzuwäch
     .accesskey = w
 menu-file-save-page =
-    .label = Tiyak ruxaq achi'el…
-    .accesskey = a
+    .label = Tiyak Ruxaq Achi'el…
+    .accesskey = A
 menu-file-email-link =
     .label = Titaq ximonel tzij…
     .accesskey = T
 menu-file-print-setup =
-    .label = Tinuk'samajïx ruxaq…
-    .accesskey = n
+    .label = Tib'an Runuk'ulem Ruxaq…
+    .accesskey = u
 menu-file-print-preview =
-    .label = Nab'ey tz'etoj
+    .label = Nab'ey Tz'etoj
     .accesskey = e
 menu-file-print =
     .label = Titz'ajb'äx…
@@ -59,8 +59,8 @@ menu-file-go-offline =
 ## Edit Menu
 
 menu-edit =
-    .label = K'exob'äl
-    .accesskey = e
+    .label = Nuk'b'äl
+    .accesskey = N
 menu-edit-find-on =
     .label = Tikanöx pa Re Ruxaq Re'…
     .accesskey = R
@@ -68,8 +68,8 @@ menu-edit-find-again =
     .label = Tikanöx Chik
     .accesskey = k
 menu-edit-bidi-switch-text-direction =
-    .label = Rujalik rub'eyal ri tz'ib'
-    .accesskey = r
+    .label = Tijal Rub'eyal ri Tz'ib'
+    .accesskey = j
 
 ## View Menu
 
@@ -77,8 +77,8 @@ menu-view =
     .label = Tz'etob'äl
     .accesskey = T
 menu-view-toolbars-menu =
-    .label = Cholsamajib'äl
-    .accesskey = i
+    .label = Taq cholsamajib'äl
+    .accesskey = c
 menu-view-customize-toolbar =
     .label = Tichinäx…
     .accesskey = T
@@ -86,7 +86,7 @@ menu-view-sidebar =
     .label = Chuchi' Cholab'äl
     .accesskey = C
 menu-view-bookmarks =
-    .label = Yaketal
+    .label = Taq yaketal
 menu-view-history-button =
     .label = Natab'äl
 menu-view-synced-tabs-sidebar =
@@ -116,7 +116,7 @@ menu-view-page-basic-style =
     .label = Rutzub'al ruk'u'x ruxaq
     .accesskey = R
 menu-view-charset =
-    .label = Rucholajil rucholajem tzij
+    .label = Rucholajil Tz'ib'atzij
     .accesskey = c
 
 ## These should match what Safari and other Apple applications
@@ -149,22 +149,22 @@ menu-history =
 menu-history-show-all-history =
     .label = Tik'ut pe ronojel ri natab'äl
 menu-history-clear-recent-history =
-    .label = Tiyuj ri k'ak'a' natab'äl…
+    .label = Tiyuj K'ak'a' Natab'äl…
 menu-history-synced-tabs =
     .label = Ximon taq ruwi'
 menu-history-restore-last-session =
-    .label = Titzolin pa ri molojri'ïl xik'o
+    .label = Titzolin ri Jun Kan Molojri'ïl
 menu-history-hidden-tabs =
     .label = Ewan taq Ruwi'
 menu-history-undo-menu =
-    .label = Taq ruwi' k'a b'a' etz'apin
+    .label = Taq Ruwi' k'a b'a' Ketz'apïx
 menu-history-undo-window-menu =
     .label = Taq k'ajtz'ib' k'a b'a' etz'apin
 
 ## Bookmarks Menu
 
 menu-bookmarks-menu =
-    .label = Yaketal
+    .label = Taq yaketal
     .accesskey = y
 menu-bookmarks-show-all =
     .label = Kek'ut konojel ri taq yaketal
@@ -217,7 +217,7 @@ menu-preferences =
     .label =
         { PLATFORM() ->
             [windows] Taq cha'oj
-           *[other] Taq Ajowanel
+           *[other] Taq ajowab'äl
         }
     .accesskey =
         { PLATFORM() ->
@@ -256,13 +256,13 @@ menu-help-troubleshooting-info =
     .label = Etamab'äl richin yesol taq k'ayewal
     .accesskey = E
 menu-help-feedback-page =
-    .label = Ketaq taq rutzijol…
+    .label = Ketaq taq Rutzijol…
     .accesskey = K
 menu-help-safe-mode-without-addons =
     .label = Titikirisäx chik kik'in ri chupül taq tz'aqat…
     .accesskey = T
 menu-help-safe-mode-with-addons =
-    .label = Titikirisäx chik rik'in ri tzijïl taq tz'aqat
+    .label = Titikirisäx chik rik'in Tzijïl taq Tz'aqat
     .accesskey = T
 # Label of the Help menu item. Either this or
 # menu-help-notdeceptive is shown.

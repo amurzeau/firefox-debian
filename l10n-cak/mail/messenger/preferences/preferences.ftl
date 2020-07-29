@@ -86,7 +86,7 @@ start-page-label =
     .label = Toq nitikirisäx { -brand-short-name } tik'ut ri Tikirib'äl Ruxaq pa ruk'ojlemal tzijol
     .accesskey = T
 location-label =
-    .value = K'ojlib'äl:
+    .value = Ochochib'al:
     .accesskey = o
 restore-default-label =
     .label = Titzolïx ri K'o wi
@@ -107,8 +107,8 @@ mail-play-sound-label =
         }
     .accesskey =
         { PLATFORM() ->
-            [macos] m
-           *[other] m
+            [macos] o
+           *[other] o
         }
 mail-play-button =
     .label = Titzij
@@ -192,7 +192,7 @@ check-updates-label =
     .label = Kenik'öx ri taq k'exoj, xa xe chi tiya' q'ij chwe we ninwajo' chi yenyäk
     .accesskey = K
 update-history-button =
-    .label = Tik'ut pe ri Kinatab'al taq K'exoj
+    .label = Tik'ut Kinatab'al taq K'exoj
     .accesskey = x
 use-service =
     .label = Tokisäx jun samaj pa ruka'n b'ey richin yeyak ri taq k'exoj
@@ -282,7 +282,7 @@ action-column-label =
     .label = B'anoj
     .accesskey = B
 save-to-label =
-    .label = Keyak taq yakb'äl pa
+    .label = Keyak yakb'äl pa
     .accesskey = y
 choose-folder-label =
     .label =
@@ -522,7 +522,7 @@ junk-log-button =
     .label = Tik'ut pe tz'ib'anïk
     .accesskey = T
 reset-junk-button =
-    .label = Tiyuj Tojtob'enïk
+    .label = Titzolïx Tojtob'enïk
     .accesskey = T
 phishing-description = { -brand-short-name } nitikïr yerunik'oj taq rutzijol toq yerukanoj ruq'ab'axel ruq'oloj taqoya'l akuchi' yerukanoj ri etamanel taq kob'eyal achoq ik'in yatkiq'öl.
 phishing-label =
@@ -546,8 +546,8 @@ certificate-button =
     .label = Kenuk'samajiïx Kiwujil B'i'aj…
     .accesskey = K
 security-devices-button =
-    .label = Kokisaxel taq Jikomal…
-    .accesskey = K
+    .label = Taq Rokisab'al Jikomal…
+    .accesskey = R
 
 ## Chat Tab
 
@@ -636,6 +636,9 @@ chat-variant-label =
 chat-header-label =
     .label = Tik'ut Jub'i'aj
     .accesskey = J
+
+## Preferences UI Search Results
+
 
 ## Preferences UI Search Results
 

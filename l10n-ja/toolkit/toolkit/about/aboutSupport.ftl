@@ -4,32 +4,37 @@
 
 page-title = トラブルシューティング情報
 page-subtitle = このページには問題発生時に役立てられる技術情報が表示されます。{ -brand-short-name } に関する一般的な質問については <a data-l10n-name="support-link">サポートサイト</a> をご覧ください。
-
 crashes-title = クラッシュレポート
 crashes-id = レポート ID
 crashes-send-date = 送信日時
 crashes-all-reports = すべてのクラッシュレポート
 crashes-no-config = このプログラムはクラッシュレポートを表示できるように設定されていません。
 extensions-title = 拡張機能
-extensions-name = 名前
+extensions-name = アドオン名
 extensions-enabled = 有効
 extensions-version = バージョン
 extensions-id = ID
+support-addons-title = アドオン
+support-addons-name = アドオン名
+support-addons-type = 種類
+support-addons-enabled = 有効
+support-addons-version = バージョン
+support-addons-id = ID
 security-software-title = セキュリティソフトウェア
 security-software-type = 種類
-security-software-name = 名前
+security-software-name = 製品名
 security-software-antivirus = アンチウイルス
 security-software-antispyware = アンチスパイウェア
 security-software-firewall = ファイアウォール
 features-title = { -brand-short-name } の機能
-features-name = 名前
+features-name = 機能名
 features-version = バージョン
 features-id = ID
 processes-title = リモートプロセス
 processes-type = 種類
 processes-count = プロセス数
 app-basics-title = アプリケーション基本情報
-app-basics-name = 名前
+app-basics-name = 製品名
 app-basics-version = バージョン
 app-basics-build-id = ビルド ID
 app-basics-distribution-id = 区域 ID
@@ -70,13 +75,16 @@ show-dir-label =
         [windows] フォルダーを開く
        *[other] ディレクトリーを開く
     }
+experimental-features-title = 実験的な機能
+experimental-features-name = 機能名
+experimental-features-value = 値
 modified-key-prefs-title = 変更された重要な設定
-modified-prefs-name = 名前
+modified-prefs-name = 設定名
 modified-prefs-value = 値
 user-js-title = user.js 設定ファイル
 user-js-description = このプロファイルには、{ -brand-short-name } では作成されない設定値が含まれた <a data-l10n-name="user-js-link">user.js 設定ファイル</a> があります。
 locked-key-prefs-title = ロックされた重要な設定
-locked-prefs-name = 名前
+locked-prefs-name = 設定名
 locked-prefs-value = 値
 graphics-title = グラフィック
 graphics-features-title = 機能
@@ -115,7 +123,6 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = 引数
 safe-mode-title = セーフモードを試す
 restart-in-safe-mode-label = アドオンを無効化して再起動...
-
 clear-startup-cache-title = 起動時キャッシュの消去を試行
 clear-startup-cache-label = 起動時キャッシュを消去...
 startup-cache-dialog-title = 起動時キャッシュの消去
@@ -128,7 +135,6 @@ audio-backend = 音声バックエンド
 max-audio-channels = 最大チャンネル数
 channel-layout = 優先チャンネルレイアウト
 sample-rate = 優先サンプルレート
-
 roundtrip-latency = 往復遅延時間 (標準偏差)
 media-title = メディア
 media-output-devices-title = 出力デバイス
@@ -145,6 +151,7 @@ media-device-latency = 遅延
 media-capabilities-title = メディア性能
 # List all the entries of the database.
 media-capabilities-enumerate = データベースを列挙
+
 ##
 
 intl-title = 国際化とローカライズ
@@ -169,6 +176,7 @@ intl-regional-prefs = 地域設定
 remote-debugging-title = リモートデバッグ (Chromium プロトコル)
 remote-debugging-accepting-connections = 接続の受け入れ
 remote-debugging-url = URL
+
 ##
 
 # Variables
@@ -190,6 +198,7 @@ raw-data-copied = 生データをクリップボードにコピーしました
 text-copied = テキストをクリップボードにコピーしました
 
 ## The verb "blocked" here refers to a graphics feature such as "Direct2D" or "OpenGL layers".
+
 blocked-driver = グラフィックドライバーのバージョンが対応していないため描画支援がブロックされました。
 blocked-gfx-card = グラフィックカードのドライバーの未解決の問題により描画支援がブロックされました。
 blocked-os-version = オペレーティングシステムのバージョンが対応していないため描画支援がブロックされました。
@@ -197,11 +206,9 @@ blocked-mismatched-version = グラフィックドライバーのバージョン
 # Variables
 # $driverVersion - The graphics driver version string
 try-newer-driver = グラフィックドライバーのバージョンが対応していないため描画支援がブロックされました。グラフィックドライバーをバージョン { $driverVersion } 以降に更新してみてください。
-
 # "ClearType" is a proper noun and should not be translated. Feel free to leave English strings if
 # there are no good translations, these are only used in about:support
 clear-type-parameters = ClearType パラメーター
-
 compositing = 画像処理
 hardware-h264 = ハードウェア H264 デコード
 main-thread-no-omtc = メインスレッド、OMTC なし
@@ -213,9 +220,9 @@ virtual-monitor-disp = 仮想デスクトップ
 ## The following strings indicate if an API key has been found.
 ## In some development versions, it's expected for some API keys that they are
 ## not found.
+
 found = あり
 missing = なし
-
 gpu-process-pid = GPUProcessPid
 gpu-process = GPUProcess
 gpu-description = 型番
@@ -239,23 +246,21 @@ webgl2-version = WebGL 2 ドライバーのバージョン
 webgl2-driver-extensions = WebGL 2 ドライバーの拡張
 webgl2-extensions = WebGL 2 拡張
 blocklisted-bug = 既知の問題によりブロックリストに掲載されています
-
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = Bug { $bugNumber }
-
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = 既知の問題によりブロックリストに追加: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = ブロックリストに掲載。失敗コード { $failureCode }
-
 d3d11layers-crash-guard = D3D11 コンポジター
 d3d11video-crash-guard = D3D11 動画デコーダー
 d3d9video-crash-buard = D3D9 動画デコーダー
 d3d9video-crash-guard = D3D9 動画デコーダー
 glcontext-crash-guard = OpenGL
-
 wmfvpxvideo-crash-guard = WMF VPX 動画デコーダー
-
 reset-on-next-restart = 次回起動時にリセット
 gpu-process-kill-button = GPU プロセスを終了
 gpu-device-reset = ハードウェアリセット
@@ -265,10 +270,8 @@ content-uses-tiling = タイリングの使用 (コンテンツ)
 off-main-thread-paint-enabled = メインスレッド外ペイント有効
 off-main-thread-paint-worker-count = メインスレッド外ペイントワーカー数
 target-frame-rate = ターゲットのフレームレート
-
 min-lib-versions = 想定される最低バージョン
 loaded-lib-versions = 使用中のバージョン
-
 has-seccomp-bpf = Seccomp-BPF (システムコールフィルタリング)
 has-seccomp-tsync = Seccomp スレッド同期
 has-user-namespaces = ユーザー名前空間
@@ -281,18 +284,15 @@ sandbox-proc-type-content = コンテンツ
 sandbox-proc-type-file = ファイルコンテンツ
 sandbox-proc-type-media-plugin = メディアプラグイン
 sandbox-proc-type-data-decoder = データデコーダー
-
 startup-cache-title = 起動時キャッシュ
 startup-cache-disk-cache-path = ディスクキャッシュのパス
 startup-cache-ignore-disk-cache = ディスクキャッシュ無視
 startup-cache-found-disk-cache-on-init = 初期化時に見つけたディスクキャッシュ
 startup-cache-wrote-to-disk-cache = ディスクキャッシュへの書き込み
-
 launcher-process-status-0 = 有効
 launcher-process-status-1 = 失敗したため無効
 launcher-process-status-2 = 強制的に無効
 launcher-process-status-unknown = 状態不明
-
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
@@ -305,7 +305,6 @@ multi-process-status-6 = 未サポートのテキスト入力により無効
 multi-process-status-7 = アドオンにより無効
 multi-process-status-8 = 強制的に無効
 multi-process-status-unknown = 状態不明
-
 async-pan-zoom = 非同期パン / ズーム
 apz-none = なし
 wheel-enabled = ホイール入力有効
@@ -313,15 +312,16 @@ touch-enabled = タッチ入力有効
 drag-enabled = スクロールバーのドラッグ有効
 keyboard-enabled = キーボード有効
 autoscroll-enabled = 自動スクロール有効
-
 zooming-enabled = スムーズなピンチズーム有効
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference
+
 wheel-warning = 非同期ホイール入力は未サポートの設定により無効化されます: { $preferenceKey }
 touch-warning = 非同期タッチ入力は未サポートの設定により無効化されます: { $preferenceKey }
 
 ## Strings representing the status of the Enterprise Policies engine.
+
 policies-inactive = 非アクティブ
 policies-active = アクティブ
 policies-error = エラー

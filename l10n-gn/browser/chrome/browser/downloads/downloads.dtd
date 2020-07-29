@@ -28,14 +28,14 @@
 <!ENTITY cmd.showMac.label                "Ehechauka Finder-pe">
 <!ENTITY cmd.showMac.accesskey            "F">
 <!ENTITY cmd.showDownloads.label          "Ñemboguejykuéra Ñongatuha Hechauka">
-<!ENTITY cmd.retry.label                  "Eñeha'ã jey">
+<!ENTITY cmd.retry.label                  "Mboguevi">
 <!ENTITY cmd.goToDownloadPage.label       "Kuatiarogue Omboguejývape Jeho ">
 <!ENTITY cmd.goToDownloadPage.accesskey   "J">
 <!ENTITY cmd.copyDownloadLink.label       "Ñemboguejy rape mbohasarã">
 <!ENTITY cmd.copyDownloadLink.accesskey   "m">
 <!ENTITY cmd.removeFromHistory.label      "Emboguete tembiasakuégui ">
 <!ENTITY cmd.removeFromHistory.accesskey  "m">
-<!ENTITY cmd.clearList2.label             "Embogue jeike hague ra'ãngarupa">
+<!ENTITY cmd.clearList2.label             "Embogue jeike hague ra’ãngarupa">
 <!ENTITY cmd.clearList2.accesskey         "a">
 <!ENTITY cmd.clearDownloads.label         "Mboguejypyre mopotĩ">
 <!ENTITY cmd.clearDownloads.accesskey     "M">
@@ -77,7 +77,7 @@
      Displayed when hovering a download which is able to be retried by users,
      indicates that it's possible to download this file again.
      -->
-<!ENTITY retryDownload.label              "Eha'ãjey ñemboguejy">
+<!ENTITY retryDownload.label              "Eha’ãjey ñemboguejy">
 
 <!-- LOCALIZATION NOTE (cancelDownload.label):
      Displayed when hovering a download which is able to be cancelled by users,
@@ -110,7 +110,7 @@
      This string is shown at the top of the Download Details Panel, to indicate
      that we are showing the details of a single download.
      -->
-<!ENTITY downloadDetails.label            "Ñemboguejy Sa'ikue">
+<!ENTITY downloadDetails.label            "Ñemboguejy Sa’ikue">
 
 <!-- LOCALIZATION NOTE (openDownloadsFolder.label):
      This command is not currently available in the user interface, but the

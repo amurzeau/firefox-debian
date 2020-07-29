@@ -167,6 +167,17 @@ permissions-use-default =
     .label = Както е по подразбиране
 security-no-visits = Не
 
+# This string is used to display the number of meta tags
+# in the General Tab
+# Variables:
+#   $tags (number) - The number of meta tags
+general-meta-tags =
+    .value =
+        { $tags ->
+            [one] Мета информация (1 етикет)
+           *[other] Мета информация ({ $tags } етикета)
+        }
+
 # This string is used to display the number of times
 # the user has visited the website prior
 # Variables:

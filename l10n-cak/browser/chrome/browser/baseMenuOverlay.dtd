@@ -26,13 +26,13 @@
 
 <!ENTITY helpSafeMode.label       "Titikirisäx chik kik'in ri chupül taq tz'aqat…">
 <!ENTITY helpSafeMode.accesskey   "T">
-<!ENTITY helpSafeMode.stop.label       "Titikirisäx chik rik'in ri tzijïl taq tz'aqat">
+<!ENTITY helpSafeMode.stop.label       "Titikirisäx chik rik'in Tzijïl taq Tz'aqat">
 <!ENTITY helpSafeMode.stop.accesskey   "T">
 
 <!ENTITY helpTroubleshootingInfo.label      "Etamab'äl richin yesol taq k'ayewal">
 <!ENTITY helpTroubleshootingInfo.accesskey  "E">
 
-<!ENTITY helpFeedbackPage.label      "Ketaq taq rutzijol…">
+<!ENTITY helpFeedbackPage.label      "Ketaq taq Rutzijol…">
 <!ENTITY helpFeedbackPage.accesskey  "K">
 
 <!ENTITY helpShowTour2.label            "&brandShorterName; B'enam">

@@ -165,7 +165,7 @@ cfr-doorhanger-sync-bookmarks-ok-button = Titzij { -sync-brand-short-name }
 ## Login Sync
 
 cfr-doorhanger-sync-logins-header = Man Tasäch chik jun Ewan Tzij
-cfr-doorhanger-sync-logins-body = Ütz ke'ayaka' ri ewan taq atzij chuqa' ke'axima' pa ronojel taq awokisab'al.
+cfr-doorhanger-sync-logins-body = Ütz ke'ayaka' ri ewan taq atzij chuqa' ke'axima' pa ronojel awokisab'al.
 cfr-doorhanger-sync-logins-ok-button = Titzij { -sync-brand-short-name }
     .accesskey = T
 
@@ -211,6 +211,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Titzet Ronojel
     .accesskey = t
+cfr-doorhanger-milestone-close-button = Titz'apïx
+    .accesskey = t
 
 ## What’s New Panel Content for Firefox 76
 
@@ -244,3 +246,16 @@ cfr-whatsnew-protections-icon-alt = Ruwachib'al Pokob'
 
 cfr-whatsnew-better-pdf-header = Jeb'ël etamab'äl chi rij PDF
 cfr-whatsnew-better-pdf-body = Wakami ri aj PDF taq wuj jumul yejaq pa { -brand-short-name }, akuchi' k'o apon pan aq'a' ronojel ri asamaj.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = K'o rejqalem ri awichinanem. { -brand-short-name } wakami nrojqaj rub'ey pa jikil rub'eyal ri DNS taq k'utuj, akuchi' k'o chi k'o jun achib'ilan samaj richin yatruchajij toq yatok pa k'amaya'l.
+cfr-doorhanger-doh-header = Kikanoxik jikïl chuqa' man etaman ta rusik'ixik taq DNS
+cfr-doorhanger-doh-primary-button = ÜTZ, Wetaman chik
+    .accesskey = T
+cfr-doorhanger-doh-secondary-button = Tichup
+    .accesskey = h
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Yonil taq chajinïk chuwäch q'olonel rub'eyal richin ojqanem

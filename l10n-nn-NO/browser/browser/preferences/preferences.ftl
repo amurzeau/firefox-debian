@@ -5,7 +5,7 @@
 do-not-track-description = Send nettsider eit «Ikkje spor»-signal om at du ikkje vil bli spora
 do-not-track-learn-more = Les meir
 do-not-track-option-default-content-blocking-known =
-    .label = Berre når { -brand-short-name } er innstilt for å blokkere kjende sporfølgjarar
+    .label = Berre når { -brand-short-name } er innstilt for å blokkere kjende sporarar
 do-not-track-option-always =
     .label = Alltid
 pref-page =
@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name }-eksperiment
+category-experimental =
+    .tooltiptext = { -brand-short-name }-eksperiment
+pane-experimental-subtitle = Gå varsamt til verks
+pane-experimental-search-results-header = { -brand-short-name }-eksperiment: Fortset med varsemd
+pane-experimental-description = Endrar du avanserte konfigurasjonsinnstillingar kan det påverke yting eller sikkerheit i { -brand-short-name }.
 help-button-label = Brukarstøtte for { -brand-short-name }
 addons-button-label = Utvidingar og tema
 focus-search =
@@ -499,7 +505,6 @@ home-prefs-topsites-description = Sidene du besøkjer mest
 
 home-prefs-recommended-by-header =
     .label = Tilrådd av { $provider }
-home-prefs-recommended-by-description = Bra innhald frå heile nettet, tilpassa for deg
 home-prefs-recommended-by-description-update = Eineståande innhald frå heile nettet sett saman av { $provider }
 
 ##
@@ -563,7 +568,6 @@ search-show-suggestions-above-history-option =
     .label = Vis søkjeforslag før nettlesarhistorikk i adressefeltresultata
 search-show-suggestions-private-windows =
     .label = Vel søkjeforslag i private vindauge
-suggestions-addressbar-settings = Endre innstillingar for nettlesarhistorikk, bokmerke og faneforslag
 suggestions-addressbar-settings-generic = Endre innstillingar for andre adresselinjeforslag
 search-suggestions-cant-show = Søkjeforslag vil ikkje visast i adresselinjeresultata fordi du har konfigurert { -brand-short-name } til å aldri hugse historikk.
 search-one-click-header = Eittklikks-søkjemotorar
@@ -881,13 +885,13 @@ sitedata-disallow-cookies-option =
 sitedata-block-desc = Type blokkert
     .accesskey = T
 sitedata-option-block-trackers =
-    .label = Tredjeparts-sporfølgjarar
+    .label = Tredjeparts-sporarar
 sitedata-option-block-cross-site-trackers =
     .label = Sporing på tvers av nettstadar
 sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Sporing på tvers av nettstadar og sosiale media-sporfølgjarar
+    .label = Sporing på tvers av nettstadar og sosiale media-sporarar
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
-    .label = Sporfølgjarar på tvers av nettstadar og sosiale medium, og isolering av attståande infokapslar
+    .label = Sporarar på tvers av nettstadar og sosiale medium, og isolering av attståande infokapslar
 sitedata-option-block-unvisited =
     .label = Infokapslar frå ubesøkte nettsider
 sitedata-option-block-all-third-party =
@@ -930,7 +934,7 @@ addressbar-suggestions-settings = Endre innstillingar for søkjeforslag
 content-blocking-header = Innhaldsblokkering
 content-blocking-section-description = Ta vare på personvernet ditt når du surfar. Blokker usynleg innhald som sporar sidene du besøkjer og profilerer deg. Blokkering av noko av dette innhaldet kan gjere sider raskare å laste.
 content-blocking-enhanced-tracking-protection = Utvida sporingsvern
-content-blocking-section-top-level-description = Sporfølgjarar følgjer deg rundt på nettet for å samle informasjon om surfevanane og interessene dine. { -brand-short-name } blokkerer mange av desse sporfølgjarane og andre vondsinna skript.
+content-blocking-section-top-level-description = Sporarar følgjer deg rundt på nettet for å samle informasjon om surfevanane og interessene dine. { -brand-short-name } blokkerer mange av desse sporarane og andre vondsinna skript.
 content-blocking-learn-more = Les meir
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -943,10 +947,10 @@ content-blocking-setting-strict =
 content-blocking-setting-custom =
     .label = Tilpassa
     .accesskey = p
-content-blocking-standard-desc = Balansert for vern og yting. Tillèt nokre sporfølgjarar slik at nettsider fungerer som dei skal.
+content-blocking-standard-desc = Balansert for vern og yting. Tillèt nokre sporarar slik at nettsider fungerer som dei skal.
 content-blocking-strict-description = Sterkare vern kan føre til feil på nettsider.
 content-blocking-custom-desc = Vell kva du vil blokkere.
-content-blocking-private-trackers = Kjende sporfølgjarar berre i Private vindauge
+content-blocking-private-trackers = Kjende sporarar berre i Private vindauge
 content-blocking-third-party-cookies = Tredjeparts sporingsinfokapslar
 
 ## These strings are used to define the different levels of
@@ -967,14 +971,14 @@ enhanced-tracking-protection-setting-custom =
 
 content-blocking-etp-standard-desc = Balansert for vern og yting. Sider vil laste normalt.
 content-blocking-etp-strict-desc = Sterkare vern, men kan føre til at nokre nettstadar eller innhald ikkje vil fungere.
-content-blocking-etp-custom-desc = Vel kva for sporfølgjarar og skript som skal blokkerast.
+content-blocking-etp-custom-desc = Vel kva for sporarar og skript som skal blokkerast.
 content-blocking-private-windows = Sporingsinnhald i private vindauge
 content-blocking-cross-site-tracking-cookies = Sporingsinfokapslar på tvers av nettstadar
 content-blocking-cross-site-tracking-cookies-plus-isolate = Sporingsinfokapsler på tvers av nettstadar, isolering av attståande infokapslar
 content-blocking-social-media-trackers = Sporing via sosiale medium
 content-blocking-all-cookies = Alle infokapslar
 content-blocking-unvisited-cookies = Infokapslar frå ikkje-besøkte nettsider
-content-blocking-all-windows-trackers = Kjende sporfølgjarar i alle vindauge
+content-blocking-all-windows-trackers = Kjende sporarar i alle vindauge
 content-blocking-all-windows-tracking-content = Sporingsinnhald i alle vindauge
 content-blocking-all-third-party-cookies = Alle tredjeparts infokapslar
 content-blocking-cryptominers = Kryptominarar
@@ -982,14 +986,14 @@ content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Viktig!
 content-blocking-warning-description = Blokkering av innhald kan føre til at nokre nettstadar sluttar å fungere. Det er enkelt å deaktivere blokkering for nettstadar du stolar på.
 content-blocking-learn-how = Finn ut korleis
-content-blocking-and-isolating-etp-warning-description = Blokkering av sporfølgjarar og isolering av infokapslar kan påverke funksjonaliteten på nokre nettstadar. Last nettsida inn på nytt med sporfølgjarar for å laste alt innhald.
+content-blocking-and-isolating-etp-warning-description = Blokkering av sporarar og isolering av infokapslar kan påverke funksjonaliteten på nokre nettstadar. Last nettsida inn på nytt med sporarar for å laste alt innhald.
 content-blocking-warning-learn-how = Les korleis
 content-blocking-reload-description = Du må oppdatere fanene dine for å kunne bruke desse endringane.
 content-blocking-reload-tabs-button =
     .label = Oppdater alle faner
     .accesskey = O
 content-blocking-trackers-label =
-    .label = Sporfølgjarar
+    .label = Sporarar
     .accesskey = S
 content-blocking-tracking-content-label =
     .label = Sporingsinnhald
@@ -1161,6 +1165,18 @@ space-alert-under-5gb-ok-button =
     .label = OK, eg forstår det
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } er i ferd med å gå tom for diskplass. Det kan vere at nettinnhaldet på sida ikkje vert vist korrekt. Gå til «Les meir» for å optimere diskbruken din for ei betre nettlesaroppleving.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Berre HTTPS-modus
+httpsonly-description = HTTPS gir eit sikker, kryptert samband mellom { -brand-short-name } og nettstadane du besøkjer. Dei fleste nettstadar støttar HTTPS, og dersom berre HTTPS-modus er slått på, vil { -brand-short-name } oppgradere alle tilkoplingar til HTTPS.
+httpsonly-learn-more = Les meir
+httpsonly-radio-enabled =
+    .label = Slå på berre HTTPS-modus i alle vindauge
+httpsonly-radio-enabled-pbm =
+    .label = Slå på berre HTTPS-modus kun i private vindauge
+httpsonly-radio-disabled =
+    .label = Ikkje slå på berre HTTPS-modus
 
 ## The following strings are used in the Download section of settings
 

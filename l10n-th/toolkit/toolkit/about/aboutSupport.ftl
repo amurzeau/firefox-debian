@@ -14,6 +14,9 @@ extensions-name = ชื่อ
 extensions-enabled = เปิดใช้งานอยู่
 extensions-version = รุ่น
 extensions-id = ID
+support-addons-name = ชื่อ
+support-addons-version = รุ่น
+support-addons-id = ID
 security-software-title = ซอฟต์แวร์ความปลอดภัย
 security-software-type = ชนิด
 security-software-name = ชื่อ
@@ -119,6 +122,8 @@ restart-in-safe-mode-label = เริ่มการทำงานใหม่
 clear-startup-cache-title = ลองล้างแคชเมื่อเริ่มการทำงาน
 clear-startup-cache-label = ล้างแคชเมื่อเริ่มการทำงาน…
 startup-cache-dialog-title = ล้างแคชเมื่อเริ่มการทำงาน
+startup-cache-dialog-body = เริ่มการทำงาน { -brand-short-name } ใหม่เพื่อล้างแคชเมื่อเริ่มการทำงาน การดำเนินการนี้จะไม่เปลี่ยนแปลงการตั้งค่าของคุณหรือเอาส่วนขยายต่าง ๆ ที่คุณเพิ่มใน { -brand-short-name } ออก
+restart-button-label = เริ่มการทำงานใหม่
 
 ## Media titles
 

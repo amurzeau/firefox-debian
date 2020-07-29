@@ -1,11 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Kitikirisaxik molojri'ïl & Ewan taq Tzij
@@ -32,6 +27,7 @@ menu =
     .title = Tijaq k'utsamaj
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Tijik' pa Jun Chik Okik'amaya'l…
+about-logins-menu-menuitem-import-from-a-file = Tijik' pa jun Yakb'äl…
 about-logins-menu-menuitem-export-logins = Tik'wäx el Tikirib'äl Molojri'ïl…
 menu-menuitem-preferences =
     { PLATFORM() ->
@@ -72,6 +68,7 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = ¿La ye'akanoj rutikirib'al taq amolojri'ïl e'ayakon kan? Tab'ana' runuk'ulem { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-out = ¿La ye'akanoj rutikirib'al taq amolojri'ïl e'ayakon kan? Tab'ana' runuk'ulem { -sync-brand-short-name } o Tijik' Wachinel.
 about-logins-login-intro-heading-logged-in = Majun ximon taq tikirib'äl molojri'ïl xe'ilitäj.
 login-intro-description = We xe'ayäk ri rutikirib'al amolojri'ïl pa { -brand-product-name } pa jun chik wi okisab'äl, wawe' nik'ut pe richin nak'ul wawe' chuqa':
 login-intro-instruction-fxa = Tatz'uku' o tatikirisaj molojri'ïl pa { -fxaccount-brand-name } chupam ri okisab'äl, akuchi' e yakäl ri tikirib'äl amolojri'ïl
@@ -94,10 +91,10 @@ login-item-copy-username-button-text = Tiwachib'ëx
 login-item-copied-username-button-text = ¡Xwachib'ëx!
 login-item-password-label = Ewan tzij
 login-item-password-reveal-checkbox =
-    .aria-label = Tik'ut ri ewan tzij
+    .aria-label = Tik'ut ewan tzij
 login-item-copy-password-button-text = Tiwachib'ëx
 login-item-copied-password-button-text = ¡Xwachib'ëx!
-login-item-save-changes-button = Keyak taq Jaloj
+login-item-save-changes-button = Keyak Jaloj
 login-item-save-new-button = Tiyak
 login-item-cancel-button = Tiq'at
 login-item-time-changed = Ruk'isib'äl jaloj: { DATETIME($timeChanged, day: "numeric", month: "long", year: "numeric") }
@@ -155,7 +152,7 @@ enable-password-sync-preferences-button =
         }
     .accesskey = t
 about-logins-enable-password-sync-dont-ask-again-button =
-    .label = Mani nab'än chik pe re k'utunïk re' chwe
+    .label = Mani nik'utüx chik pe chwe
     .accesskey = M
 
 ## Dialogs
@@ -164,7 +161,7 @@ confirmation-dialog-cancel-button = Tiq'at
 confirmation-dialog-dismiss-button =
     .title = Tiq'at
 about-logins-confirm-remove-dialog-title = ¿La niyuj el rutikirib'al re moloj re'?
-confirm-delete-dialog-message = Man nitzolin ta chik re samaj.
+confirm-delete-dialog-message = Man tikirel ta nitzolïx re b'anïk.
 about-logins-confirm-remove-dialog-confirm-button = Tiyuj
 about-logins-confirm-export-dialog-title = Kek'wäx el kitikirisaxik molojri'ïl chuqa' ewan taq tzij
 about-logins-confirm-export-dialog-message = Xkeyak ri ewan taq atzij achi'el tz'etel tz'ib'anïk (achi'el, BadP@ssw0rd) richin chi xab'achike xtijaqon ri yakb'äl k'wa'an, nitikïr nutz'ët.
@@ -216,4 +213,17 @@ about-logins-export-file-picker-csv-filter-title =
     { PLATFORM() ->
         [macos] Wuj CSV
        *[other] Yakb'äl CSV
+    }
+
+## Login Import Dialog
+
+# Title of the file picker dialog
+about-logins-import-file-picker-title = Tijik' Ruyakb'al Tikirib'äl Molojri'ïl
+about-logins-import-file-picker-import-button = Tijik'
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV Wuj
+       *[other] CSV Yakb'äl
     }

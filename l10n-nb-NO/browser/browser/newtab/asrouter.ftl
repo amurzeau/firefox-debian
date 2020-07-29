@@ -210,6 +210,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Vis alle
     .accesskey = s
+cfr-doorhanger-milestone-close-button = Lukk
+    .accesskey = L
 
 ## What’s New Panel Content for Firefox 76
 
@@ -243,3 +245,18 @@ cfr-whatsnew-protections-icon-alt = Skjoldikon
 
 cfr-whatsnew-better-pdf-header = Bedre PDF-opplevelse
 cfr-whatsnew-better-pdf-body = PDF-dokumenter åpnes nå direkte i { -brand-short-name }, og holder arbeidsflyten innen samme program.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Ditt personvern betyr noe. { -brand-short-name } ruter nå dine DNS-forespørsler sikkert når det er mulig, til en tjeneste levert av en partner, for å beskytte deg mens du surfer.
+cfr-doorhanger-doh-header = Sikrere, krypterte DNS-oppslag
+cfr-doorhanger-doh-primary-button = OK, jeg skjønner
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Slå av
+    .accesskey = S
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Automatisk beskyttelse mot lure sporingsmetoder
+cfr-whatsnew-clear-cookies-body = Noen sporere viderekobler deg til andre nettsteder som i hemmelighet setter infokapsler. { -brand-short-name } fjerner nå automatisk infokapslene slik at du ikke kan bli sporet.
+cfr-whatsnew-clear-cookies-image-alt = Illustrasjon for blokkert infokapsel

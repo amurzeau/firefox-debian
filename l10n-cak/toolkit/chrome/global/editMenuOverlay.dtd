@@ -2,8 +2,8 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY editMenu.label            "K'exob'äl">
-<!ENTITY editMenu.accesskey        "e">
+<!ENTITY editMenu.label            "Nuk'b'äl">
+<!ENTITY editMenu.accesskey        "N">
 <!ENTITY undoCmd.label             "Titzolïx">
 <!ENTITY undoCmd.key               "Z">
 <!ENTITY undoCmd.accesskey         "T">
@@ -21,7 +21,7 @@
 <!ENTITY pasteCmd.accesskey        "T">
 <!ENTITY deleteCmd.label           "Tiyuj">
 <!ENTITY deleteCmd.accesskey       "T">
-<!ENTITY selectAllCmd.label        "Ticha' ronojel">
+<!ENTITY selectAllCmd.label        "Ticha' Ronojel">
 <!ENTITY selectAllCmd.key          "A">
 <!ENTITY selectAllCmd.accesskey    "r">
 

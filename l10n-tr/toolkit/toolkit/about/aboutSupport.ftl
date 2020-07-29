@@ -14,6 +14,12 @@ extensions-name = Adı
 extensions-enabled = Etkin mi?
 extensions-version = Sürüm
 extensions-id = Kimlik
+support-addons-title = Eklentiler
+support-addons-name = Adı
+support-addons-type = Tür
+support-addons-enabled = Etkin
+support-addons-version = Sürüm
+support-addons-id = Kimlik
 security-software-title = Güvenlik yazılımları
 security-software-type = Türü
 security-software-name = Adı
@@ -71,6 +77,9 @@ show-dir-label =
         [windows] Klasörü aç
        *[other] Dizini aç
     }
+experimental-features-title = Deneysel özellikler
+experimental-features-name = Adı
+experimental-features-value = Değer
 modified-key-prefs-title = Değiştirilmiş önemli tercihler
 modified-prefs-name = Adı
 modified-prefs-value = Değer
@@ -262,6 +271,9 @@ blocklisted-bug = Bilinen sorunlar nedeniyle engellendi
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Bilinen sorunlar nedeniyle engellendi: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Engellendi. Hata kodu { $failureCode }

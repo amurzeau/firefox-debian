@@ -9,40 +9,29 @@ colors-window =
             [macos] width: 43em
            *[other] width: 48em
         }
-
 colors-close-key =
     .key = w
-
 colors-page-override = Премостите боје наведене на страници са својим изборима испод
-    .accesskey = П
-
+    .accesskey = O
 colors-page-override-option-always =
     .label = Увек
 colors-page-override-option-auto =
     .label = Само са темама високог контраста
 colors-page-override-option-never =
     .label = Никад
-
 colors-text-and-background = Текст и позадина
-
 colors-text-header = Текст
-    .accesskey = Т
-
+    .accesskey = T
 colors-background = Позадина
-    .accesskey = П
-
+    .accesskey = B
 colors-use-system =
     .label = Користи системске боје
-    .accesskey = К
-
+    .accesskey = s
 colors-underline-links =
     .label = Подвуци везе
-    .accesskey = о
-
+    .accesskey = U
 colors-links-header = Боје везе
-
 colors-unvisited-links = Непосећене везе
-    .accesskey = в
-
+    .accesskey = L
 colors-visited-links = Посећене везе
-    .accesskey = о
+    .accesskey = V

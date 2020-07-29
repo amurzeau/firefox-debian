@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 do-not-track-description = საიტებისთვის „არ მითვალთვალო“ მოთხოვნის გაგზავნა
-do-not-track-learn-more = იხილეთ ვრცლად
+do-not-track-learn-more = ვრცლად
 do-not-track-option-default-content-blocking-known =
     .label = მხოლოდ მაშინ, როცა { -brand-short-name } ზღუდავს ცნობილ მეთვალყურეებს
 do-not-track-option-always =
@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name } ცდები
+category-experimental =
+    .tooltiptext = { -brand-short-name } ცდები
+pane-experimental-subtitle = განაგრძეთ სიფრთხილით
+pane-experimental-search-results-header = { -brand-short-name } ცდები: განაგრძეთ სიფრთხილით
+pane-experimental-description = გაფართოებული პარამეტრების შეცვლით, შესაძლოა დაზიანდეს { -brand-short-name } წარმადობის ან უსაფრთხოების კუთხით.
 help-button-label = { -brand-short-name } დახმარება
 addons-button-label = გაფართოებები და თემები
 focus-search =
@@ -162,7 +168,7 @@ show-tabs-in-taskbar =
 browser-containers-enabled =
     .label = სათავსი ჩანართების ჩართვა
     .accesskey = ჩ
-browser-containers-learn-more = იხილეთ ვრცლად
+browser-containers-learn-more = ვრცლად
 browser-containers-settings =
     .label = პარამეტრები…
     .accesskey = პ
@@ -344,7 +350,7 @@ drm-content-header = ციფრული უფლებების მარ
 play-drm-content =
     .label = DRM-ს დაქვემდებარებული შიგთავსის გაშვება
     .accesskey = D
-play-drm-content-learn-more = იხილეთ ვრცლად
+play-drm-content-learn-more = ვრცლად
 update-application-title = { -brand-short-name } – განახლებები
 update-application-description = მუდმივად განაახლეთ { -brand-short-name }, რომ შეინარჩუნოთ წარმადობა, მდგრადობა და უსაფრთხოება.
 update-application-version = ვერსია { $version } <a data-l10n-name="learn-more">რა არის ახალი</a>
@@ -395,7 +401,7 @@ performance-use-recommended-settings-checkbox =
     .label = წარმადობის სასურველი პარამეტრების გამოყენება
     .accesskey = წ
 performance-use-recommended-settings-desc = ეს პარამეტრები მორგებულია თქვენი კომპიუტერის აპარატურასა და საოპერაციო სისტემაზე.
-performance-settings-learn-more = იხილეთ ვრცლად
+performance-settings-learn-more = ვრცლად
 performance-allow-hw-accel =
     .label = ხელმისაწვდომობის შემთხვევაში აპარატული აჩქარების გამოყენება
     .accesskey = მ
@@ -436,7 +442,7 @@ browsing-cfr-recommendations =
 browsing-cfr-features =
     .label = შესაძლებლობების შემოთავაზებები, გვერდების მონახულებისას
     .accesskey = ზ
-browsing-cfr-recommendations-learn-more = იხილეთ ვრცლად
+browsing-cfr-recommendations-learn-more = ვრცლად
 
 ## General Section - Proxy
 
@@ -499,7 +505,6 @@ home-prefs-topsites-description = ხშირად მონახულებ
 
 home-prefs-recommended-by-header =
     .label = { $provider } გირჩევთ
-home-prefs-recommended-by-description = მნიშვნელოვანი ამბები ინტერნეტ-სამყაროდან, შერჩეული თქვენი ინტერესების მიხედვით
 home-prefs-recommended-by-description-update = გამორჩეული მასალები ინტერნეტში, უზრუნველყოფს { $provider }
 
 ##
@@ -563,7 +568,6 @@ search-show-suggestions-above-history-option =
     .label = ძიების შემოთავაზებების, მონახულებული გვერდების ისტორიაზე წინ გამოჩენა, მისამართების ველის შედეგებში
 search-show-suggestions-private-windows =
     .label = ძიების შემოთავაზებების ჩვენება პირად ფანჯრებში
-suggestions-addressbar-settings = პარამეტრების შეცვლა ისტორიის, სანიშნებისა და ჩანართის შემოთავაზებებისთვის
 suggestions-addressbar-settings-generic = სხვა მისამართების ველის შემოთავაზებების პარამეტრები
 search-suggestions-cant-show = მისამართების ველში ძიების შემოთავაზებები არ გამოჩნდება, ვინაიდან მითითებული გაქვთ, რომ { -brand-short-name } არასოდეს დაიმახსოვრებს ისტორიას.
 search-one-click-header = ერთწკაპიანი საძიებო სისტემები
@@ -788,7 +792,7 @@ forms-generate-passwords =
 forms-breach-alerts =
     .label = შეტყობინება პაროლებზე, იერიშმიტანილი საიტებისთვის
     .accesskey = შ
-forms-breach-alerts-learn-more-link = იხილეთ ვრცლად
+forms-breach-alerts-learn-more-link = ვრცლად
 # Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
 forms-fill-logins-and-passwords =
     .label = ანგარიშის მონაცემების თვითშევსება
@@ -931,7 +935,7 @@ content-blocking-header = შიგთავსის შეზღუდვა
 content-blocking-section-description = დაიცავით პირადი მონაცემები საიტების მონახულებისას. შეზღუდეთ გვერდებზე ფარული ნაწილები, რომლებიც თვალს ადევნებს და აღრიცხავს ყველა საიტს, რომელსაც ეწვევით. ზოგიერთი მათგანის შეზღუდვა, აგრეთვე ასწრაფებს გვერდების ჩატვირთვასაც.
 content-blocking-enhanced-tracking-protection = თვალთვალისგან გაძლიერებული დაცვა
 content-blocking-section-top-level-description = მეთვალყურეები თან დაგყვებათ მთელ ინტერნეტში და აგროვებს ინფორმაციას თქვენი ჩვევებისა და მისწრაფებების შესახებ. { -brand-short-name } ზღუდავს ამ მეთვალყურეების უმეტესობასა და სხვა მავნე კოდებსაც.
-content-blocking-learn-more = იხილეთ ვრცლად
+content-blocking-learn-more = ვრცლად
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
@@ -1074,7 +1078,7 @@ permissions-addon-exceptions =
 permissions-a11y-privacy-checkbox =
     .label = დამხმარე საშუალებებისთვის, ბრაუზერთან წვდომის შეზღუდვა
     .accesskey = დ
-permissions-a11y-privacy-link = იხილეთ ვრცლად
+permissions-a11y-privacy-link = ვრცლად
 
 ## Privacy Section - Data Collection
 
@@ -1082,11 +1086,11 @@ collection-header = { -brand-short-name } – მონაცემთა აღ
 collection-description = ჩვენ ვცდილობთ მოგცეთ არჩევანის უფლება და აღვრიცხოთ მხოლოდ ის მონაცემები, რომლებიც დაგვეხმარება, გავაუმჯობესოთ { -brand-short-name }. ჩვენ ყოველთვის დაგეკითხებით, პირადი ინფორმაციის მიღებამდე.
 collection-privacy-notice = პირადი მონაცემების დაცვის განაცხადი
 collection-health-report-telemetry-disabled = თქვენ გააუქმეთ ნებართვა და შედეგად, { -vendor-short-name } ვეღარ შეძლებს ტექნიკური და გამოყენების მონაცემების აღრიცხვას. აქამდე შეგროვებული ყველა მონაცემი, წაიშლება 30 დღეში.
-collection-health-report-telemetry-disabled-link = იხილეთ ვრცლად
+collection-health-report-telemetry-disabled-link = ვრცლად
 collection-health-report =
     .label = ნებართვა, რომ { -brand-short-name } შეძლებს, გადაუგზავნოს ტექნიკური და გამოყენების მონაცემები { -vendor-short-name }-ს
     .accesskey = რ
-collection-health-report-link = იხილეთ ვრცლად
+collection-health-report-link = ვრცლად
 collection-studies =
     .label = ნებართვა, რომ { -brand-short-name } შეძლებს კვლევების დაყენებასა და გაშვებას
 collection-studies-link = იხილეთ { -brand-short-name } – კვლევები
@@ -1111,7 +1115,7 @@ security-browsing-protection = თაღლითური შიგთავს
 security-enable-safe-browsing =
     .label = სახიფათო და თაღლითური შიგთავსის შეზღუდვა
     .accesskey = ღ
-security-enable-safe-browsing-link = იხილეთ ვრცლად
+security-enable-safe-browsing-link = ვრცლად
 security-block-downloads =
     .label = სახიფათო ჩამოტვირთვების აკრძალვა
     .accesskey = ძ
@@ -1160,7 +1164,19 @@ space-alert-over-5gb-message =
 space-alert-under-5gb-ok-button =
     .label = კარგი, გასაგებია
     .accesskey = კ
-space-alert-under-5gb-message = { -brand-short-name } იუწყება, რომ დისკზე ადგილი ეწურება. საიტების შიგთავსი, შეიძლება არ გამოჩნდეს სათანადოდ. “შეიტყვეთ მეტი”, თუ როგორ გამოათავისუფლოთ ადგილი დისკზე რომ გაუმჯობესდეს გვერდების მონახულების პროცესი.
+space-alert-under-5gb-message = { -brand-short-name } იუწყება, რომ დისკზე ადგილი ეწურება. საიტების შიგთავსი, შეიძლება არ გამოჩნდეს სათანადოდ. ეწვიეთ ბმულს „ვრცლად” და გამოათავისუფლეთ ადგილი დისკზე, გვერდების უკეთ მონახულებისთვის.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = მხოლოდ-HTTPS რეჟიმი
+httpsonly-description = HTTPS საშუალებას იძლევა, რომ { -brand-short-name } უსაფრთხოდ და მონაცემთა დაშიფვრით დაუკავშირდეს საიტს, რომელსაც ეწვევით. უმეტეს ვებსაიტზე HTTPS მხარდაჭერილია და როცა მხოლოდ-HTTPS რეჟიმი ჩართულია, { -brand-short-name } ყველა კავშირს უზრუნველჰყოფს HTTPS-ით.
+httpsonly-learn-more = ვრცლად
+httpsonly-radio-enabled =
+    .label = მხოლოდ-HTTPS რეჟიმი ყველა ფანჯარაში
+httpsonly-radio-enabled-pbm =
+    .label = მხოლოდ-HTTPS რეჟიმი პირად ფანჯრებში
+httpsonly-radio-disabled =
+    .label = მხოლოდ-HTTPS რეჟიმის გარეშე
 
 ## The following strings are used in the Download section of settings
 

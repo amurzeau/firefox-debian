@@ -17,6 +17,12 @@ extensions-name = Nimi
 extensions-enabled = Käytössä
 extensions-version = Versio
 extensions-id = ID
+support-addons-title = Lisäosat
+support-addons-name = Nimi
+support-addons-type = Tyyppi
+support-addons-enabled = Käytössä
+support-addons-version = Versio
+support-addons-id = ID
 security-software-title = Tietoturvaohjelmat
 security-software-type = Tyyppi
 security-software-name = Nimi
@@ -70,6 +76,9 @@ show-dir-label =
         [windows] Avaa kansio
        *[other] Avaa kansio
     }
+experimental-features-title = Kokeelliset ominaisuudet
+experimental-features-name = Nimi
+experimental-features-value = Arvo
 modified-key-prefs-title = Tärkeät muutetut asetukset
 modified-prefs-name = Nimi
 modified-prefs-value = Arvo
@@ -261,6 +270,9 @@ blocklisted-bug = Estolistalla tunnettujen ongelmien takia
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = vika { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Estolistalla tunnetuista ongelmista johtuen: <a data-l10n-name="bug-link">vika { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Estolistalla; virhekoodi { $failureCode }

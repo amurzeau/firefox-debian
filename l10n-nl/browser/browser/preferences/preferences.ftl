@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name }-experimenten
+category-experimental =
+    .tooltiptext = { -brand-short-name }-experimenten
+pane-experimental-subtitle = Ga voorzichtig verder
+pane-experimental-search-results-header = { -brand-short-name }-experimenten: voorzichtigheid geadviseerd
+pane-experimental-description = Het wijzigen van geavanceerde configuratievoorkeuren kan de prestaties of veiligheid van { -brand-short-name } beïnvloeden.
 help-button-label = { -brand-short-name } Support
 addons-button-label = Extensies & Thema’s
 focus-search =
@@ -499,7 +505,6 @@ home-prefs-topsites-description = De websites die u het vaakst bezoekt
 
 home-prefs-recommended-by-header =
     .label = Aanbevolen door { $provider }
-home-prefs-recommended-by-description = Geweldige inhoud van het web, gepersonaliseerd voor u
 home-prefs-recommended-by-description-update = Uitzonderlijke inhoud van het hele internet, samengesteld door { $provider }
 
 ##
@@ -563,7 +568,6 @@ search-show-suggestions-above-history-option =
     .label = Zoeksuggesties boven browsergeschiedenis tonen in adresbalkresultaten
 search-show-suggestions-private-windows =
     .label = Zoeksuggesties weergeven in privévensters
-suggestions-addressbar-settings = Voorkeuren voor navigatiegeschiedenis, bladwijzers en tabbladsuggesties wijzigen
 suggestions-addressbar-settings-generic = Voorkeuren voor overige adresbalksuggesties wijzigen
 search-suggestions-cant-show = Zoeksuggesties worden niet in locatiebalkresultaten getoond, omdat u { -brand-short-name } hebt geconfigureerd om nooit geschiedenis te onthouden.
 search-one-click-header = Eén-klik-zoekmachines
@@ -1161,6 +1165,18 @@ space-alert-under-5gb-ok-button =
     .label = OK, begrepen
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } heeft bijna geen schijfruimte meer. Inhoud van websites wordt mogelijk niet goed weergegeven. Bezoek ‘Meer info’ om uw schijfgebruik te optimaliseren voor betere prestaties.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Alleen-HTTPS-modus
+httpsonly-description = HTTPS biedt een veilige, versleutelde verbinding tussen { -brand-short-name } en de door u bezochte websites. De meeste websites ondersteunen HTTPS en als de Alleen-HTTPS-modus is ingeschakeld, zal { -brand-short-name } alle verbindingen upgraden naar HTTPS.
+httpsonly-learn-more = Meer info
+httpsonly-radio-enabled =
+    .label = Alleen-HTTPS-modus in alle vensters inschakelen
+httpsonly-radio-enabled-pbm =
+    .label = Alleen-HTTPS-modus uitsluitend in privévensters inschakelen
+httpsonly-radio-disabled =
+    .label = Alleen-HTTPS-modus niet inschakelen
 
 ## The following strings are used in the Download section of settings
 

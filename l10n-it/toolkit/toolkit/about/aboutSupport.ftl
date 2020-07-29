@@ -14,6 +14,12 @@ extensions-name = Nome
 extensions-enabled = Attiva
 extensions-version = Versione
 extensions-id = ID
+support-addons-title = Componenti aggiuntivi
+support-addons-name = Nome
+support-addons-type = Tipo
+support-addons-enabled = Attivo
+support-addons-version = Versione
+support-addons-id = ID
 security-software-title = Software di sicurezza
 security-software-type = Tipo
 security-software-name = Nome
@@ -60,6 +66,9 @@ show-dir-label =
         [windows] Apri cartella
        *[other] Apri percorso
     }
+experimental-features-title = Funzioni sperimentali
+experimental-features-name = Nome
+experimental-features-value = Valore
 modified-key-prefs-title = Preferenze importanti modificate
 modified-prefs-name = Nome
 modified-prefs-value = Valore
@@ -155,6 +164,7 @@ intl-regional-prefs = Impostazioni internazionali
 remote-debugging-title = Debug remoto (protocollo Chromium)
 remote-debugging-accepting-connections = Connessioni accettate
 remote-debugging-url = URL
+
 ##
 
 # Variables
@@ -247,6 +257,7 @@ blocklisted-bug = Bloccato per problemi noti
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
+support-blocklisted-bug = Bloccato per problemi noti: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Bloccato: codice non funzionante { $failureCode }

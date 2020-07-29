@@ -1,11 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = 我的密码
@@ -32,6 +27,7 @@ menu =
     .title = 打开菜单
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = 从其他浏览器导入…
+about-logins-menu-menuitem-import-from-a-file = 从文件导入…
 about-logins-menu-menuitem-export-logins = 导出登录信息…
 menu-menuitem-preferences =
     { PLATFORM() ->
@@ -71,12 +67,14 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = 在找您保存的登录信息？请设置“{ -sync-brand-short-name }”。
+about-logins-login-intro-heading-logged-out = 在找您保存的登录信息？请设置{ -sync-brand-short-name }或导入。
 about-logins-login-intro-heading-logged-in = 未找到同步的登录信息。
 login-intro-description = 若您曾在其他设备上将登录信息保存到 { -brand-product-name }，请按以下步骤操作：
 login-intro-instruction-fxa = 在您保存登录信息的设备，注册或登录 { -fxaccount-brand-name }
 login-intro-instruction-fxa-settings = 确定您已在“{ -sync-brand-short-name }”设置中勾选了“登录信息”复选框
 about-logins-intro-instruction-help = 若需帮助，请访问 <a data-l10n-name="help-link">{ -lockwise-brand-short-name } 用户支持</a>
 about-logins-intro-import = 若登录信息保存在其他浏览器，您可以<a data-l10n-name="import-link">导入到 { -lockwise-brand-short-name }</a>
+about-logins-intro-import2 = 若您的登录信息并未存储在 { -brand-product-name }，可以<a data-l10n-name="import-browser-link">从另一款浏览器</a>或<a data-l10n-name="import-file-link">文件</a>导入
 
 ## Login
 
@@ -212,6 +210,19 @@ about-logins-export-file-picker-export-button = 导出
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
 about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV 文档
+       *[other] CSV 文件
+    }
+
+## Login Import Dialog
+
+# Title of the file picker dialog
+about-logins-import-file-picker-title = 导入登录信息文件
+about-logins-import-file-picker-import-button = 导入
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
     { PLATFORM() ->
         [macos] CSV 文档
        *[other] CSV 文件

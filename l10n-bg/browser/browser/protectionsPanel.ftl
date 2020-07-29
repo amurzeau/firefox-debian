@@ -56,7 +56,8 @@ protections-panel-not-found-label = Липсващи
 ##
 
 protections-panel-settings-label = Настройки на защитите
-protections-panel-showreport-label = Отчет
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Табло със защити
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

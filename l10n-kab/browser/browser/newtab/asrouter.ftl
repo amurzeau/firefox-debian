@@ -205,6 +205,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Wali akk
     .accesskey = W
+cfr-doorhanger-milestone-close-button = Mdel
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -238,3 +240,17 @@ cfr-whatsnew-protections-icon-alt = Tignit Shield
 
 cfr-whatsnew-better-pdf-header = Tirmit ifazen n PDF
 cfr-whatsnew-better-pdf-body = Imesliyen PDF ttaldayen-d tura srid deg { -brand-short-name }, eǧǧ tiddin n leqdic-ik ɣef wafus.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Aqader n tudert-ik tabaḍnit yeεna-aɣ. { -brand-short-name } yettawi akka tura s wudem aɣelsan isutar-ik.im DNS a melmi i as-tettunefk tegnit ɣer uqeddac amendid akken ad tettummestneḍ mi ara tettinigeḍ.
+cfr-doorhanger-doh-header = Inadiyen DNS s wugar n tɣellist d uwgelhen
+cfr-doorhanger-doh-primary-button = IH awi-t-id
+    .accesskey = o
+cfr-doorhanger-doh-secondary-button = Sens
+    .accesskey = D
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Ammesten awurman mgal tiḥila n uḍfar yettkellixen
+cfr-whatsnew-clear-cookies-body = Kra n yineḍfaren ttwehhin-k/m ɣer kra n yismal web ideg llan inagan n tuqqna d uffiren. Tura, { -brand-short-name } iseffeḍ s wudem awurman inagan-agi n tuqqna akken ur ssawaḍen ara ad k-ḍefren.

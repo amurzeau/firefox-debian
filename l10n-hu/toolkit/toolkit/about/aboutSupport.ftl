@@ -14,6 +14,12 @@ extensions-name = Név
 extensions-enabled = Engedélyezve
 extensions-version = Verzió
 extensions-id = Azonosító
+support-addons-title = Kiegészítők
+support-addons-name = Név
+support-addons-type = Típus
+support-addons-enabled = Engedélyezve
+support-addons-version = Verzió
+support-addons-id = Azonosító
 security-software-title = Biztonsági szoftver
 security-software-type = Típus
 security-software-name = Név
@@ -71,6 +77,9 @@ show-dir-label =
         [windows] Mappa megnyitása
        *[other] Könyvtár megnyitása
     }
+experimental-features-title = Kísérleti funkciók
+experimental-features-name = Név
+experimental-features-value = Érték
 modified-key-prefs-title = Fontos, módosított beállítások
 modified-prefs-name = Név
 modified-prefs-value = Érték
@@ -262,6 +271,9 @@ blocklisted-bug = Ismert problémák miatt blokkolva
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = { $bugNumber } számú hiba
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Ismert problémák miatt blokkolva: <a data-l10n-name="bug-link">{ $bugNumber }. hiba</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Blokkolva, hibakód: { $failureCode }

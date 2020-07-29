@@ -17,6 +17,12 @@ extensions-name = 名称
 extensions-enabled = 启用
 extensions-version = 版本
 extensions-id = ID
+support-addons-title = 附加组件
+support-addons-name = 名称
+support-addons-type = 类型
+support-addons-enabled = 已启用
+support-addons-version = 版本
+support-addons-id = ID
 security-software-title = 安全软件
 security-software-type = 类型
 security-software-name = 名称
@@ -74,6 +80,9 @@ show-dir-label =
         [windows] 打开文件夹
        *[other] 打开目录
     }
+experimental-features-title = 实验性功能
+experimental-features-name = 名称
+experimental-features-value = 值
 modified-key-prefs-title = 修改过的重要首选项
 modified-prefs-name = 名称
 modified-prefs-value = 值
@@ -245,6 +254,9 @@ blocklisted-bug = 因已知问题已被列入黑名单
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = 由于已知问题，被列入屏蔽列表：<a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = 已列入黑名单；故障代码 { $failureCode }

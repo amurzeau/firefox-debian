@@ -182,10 +182,10 @@ index d4741a06685..023b4e9f49e 100644
 +    'icudata.c',
 +]
 diff --git a/js/moz.configure b/js/moz.configure
-index b1c9685733b..4ac0bd8220f 100644
+index 88b7a298ca8..5de646d1592 100644
 --- a/js/moz.configure
 +++ b/js/moz.configure
-@@ -760,13 +760,6 @@ def icu_version(build_env):
+@@ -743,13 +743,6 @@ def icu_version(build_env):
  
  set_config('MOZ_ICU_VERSION', icu_version)
  

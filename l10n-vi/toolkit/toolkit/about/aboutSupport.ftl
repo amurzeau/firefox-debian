@@ -14,6 +14,12 @@ extensions-name = Tên
 extensions-enabled = Đã bật
 extensions-version = Phiên bản
 extensions-id = ID
+support-addons-title = Tiện ích
+support-addons-name = Tên
+support-addons-type = Kiểu
+support-addons-enabled = Đã bật
+support-addons-version = Phiên bản
+support-addons-id = ID
 security-software-title = Phần mềm bảo mật
 security-software-type = Kiểu
 security-software-name = Tên
@@ -71,6 +77,9 @@ show-dir-label =
         [windows] Mở thư mục
        *[other] Mở thư mục
     }
+experimental-features-title = Các tính năng thử nghiệm
+experimental-features-name = Tên
+experimental-features-value = Giá trị
 modified-key-prefs-title = Các tùy chọn quan trọng đã được sửa đổi
 modified-prefs-name = Tên
 modified-prefs-value = Giá trị
@@ -103,8 +112,8 @@ a11y-force-disabled = Ngăn các tùy chọn về trợ năng
 a11y-handler-used = Xử lý truy cập được sử dụng
 a11y-instantiator = Trợ năng truy cập
 library-version-title = Phiên bản thư viện
-copy-text-to-clipboard-label = Sao chép văn bản vào clipboard
-copy-raw-data-to-clipboard-label = Sao chép dữ liệu thô vào clipboard
+copy-text-to-clipboard-label = Sao chép văn bản vào bộ nhớ tạm
+copy-raw-data-to-clipboard-label = Sao chép dữ liệu thô vào bộ nhớ tạm
 sandbox-title = Hộp cát
 sandbox-sys-call-log-title = System Call bị từ chối
 sandbox-sys-call-index = #
@@ -186,8 +195,8 @@ crashes-time-days = { $days } ngày trước
 # Variables
 # $reports (integer) - Number of pending reports
 pending-reports = Tất cả các báo cáo lỗi (bao gồm cả { $reports } báo cáo chưa gửi trong khoảng thời gian đã cho)
-raw-data-copied = Dữ liệu thô đã được sao chép vào bảng tạm
-text-copied = Văn bản đã được sao chép vào bảng tạm
+raw-data-copied = Đã sao chép dữ liệu thô vào bộ nhớ tạm
+text-copied = Đã sao chép văn bản vào bộ nhớ tạm
 
 ## The verb "blocked" here refers to a graphics feature such as "Direct2D" or "OpenGL layers".
 
@@ -241,6 +250,9 @@ blocklisted-bug = Danh sách chặn do các vấn đề đã biết
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = lỗi { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Bị chặn trong danh sách do các sự cố đã biết: <a data-l10n-name="bug-link">mã lỗi { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Danh sách chặn; mã lỗi { $failureCode }

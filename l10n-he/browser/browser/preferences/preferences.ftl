@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = ניסויים של { -brand-short-name }
+category-experimental =
+    .tooltiptext = ניסויים של { -brand-short-name }
+pane-experimental-subtitle = נא להמשיך בזהירות
+pane-experimental-search-results-header = ניסויים של { -brand-short-name }: נא להמשיך בזהירות
+pane-experimental-description = שינוי העדפות התצורה המתקדמות עשוי להשפיע על הביצועים או אבטחה של { -brand-short-name }.
 help-button-label = תמיכה ב־{ -brand-short-name }
 addons-button-label = הרחבות וערכות נושא
 focus-search =
@@ -499,7 +505,6 @@ home-prefs-topsites-description = האתרים בהם ביקרת הכי הרבה
 
 home-prefs-recommended-by-header =
     .label = מומלץ על־ידי { $provider }
-home-prefs-recommended-by-description = תוכן נהדר מכל רחבי הרשת, בהתאמה אישית להעדפותיך
 
 ##
 
@@ -562,7 +567,6 @@ search-show-suggestions-above-history-option =
     .label = הצגת הצעות חיפוש לפני היסטוריית הגלישה בתוצאות שורת הכתובת
 search-show-suggestions-private-windows =
     .label = הצגת הצעות חיפוש בחלונות פרטיים
-suggestions-addressbar-settings = שינוי העדפות עבור היסטוריית גלישה, סימניות והצעות לשוניות
 suggestions-addressbar-settings-generic = שינוי העדפות עבור הצעות אחרות של שורת הכתובת
 search-suggestions-cant-show = הצעות חיפוש לא יופיעו בתוצאות סרגל המיקום מכיוון שהגדרת ש־{ -brand-short-name } לעולם לא לזכור היסטוריה.
 search-one-click-header = מנועי חיפוש בלחיצה אחת
@@ -1153,6 +1157,18 @@ space-alert-under-5gb-ok-button =
     .label = בסדר, הבנתי
     .accesskey = ב
 space-alert-under-5gb-message = ל־{ -brand-short-name } אוזל שטח הדיסק. יתכן שנתוני אתרים לא יוצגו כשורה. ניתן לבקר בקישור של “מידע נוסף” כדי לייעל את אופן השימוש בדיסק לחוויית גלישה טובה יותר.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = מצב HTTPS בלבד
+httpsonly-description = ‏HTTPS מספק חיבור מאובטח ומוצפן בין { -brand-short-name } לבין האתרים שמבקרים בהם. רוב האתרים תומכים ב־HTTPS, ואם מצב HTTPS בלבד מופעל, { -brand-short-name } ישדרג את כל החיבורים ל־HTTPS.
+httpsonly-learn-more = מידע נוסף
+httpsonly-radio-enabled =
+    .label = הפעלת מצב HTTPS בלבד בכל החלונות
+httpsonly-radio-enabled-pbm =
+    .label = הפעלת מצב HTTPS בלבד אך ורק בחלונות פרטיים
+httpsonly-radio-disabled =
+    .label = לא להפעיל מצב HTTPS בלבד
 
 ## The following strings are used in the Download section of settings
 

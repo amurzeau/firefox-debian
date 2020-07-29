@@ -17,6 +17,12 @@ extensions-name = Όνομα
 extensions-enabled = Ενεργές
 extensions-version = Έκδοση
 extensions-id = ID
+support-addons-title = Πρόσθετα
+support-addons-name = Όνομα
+support-addons-type = Τύπος
+support-addons-enabled = Ενεργό
+support-addons-version = Έκδοση
+support-addons-id = ID
 security-software-title = Λογισμικό ασφαλείας
 security-software-type = Τύπος
 security-software-name = Όνομα
@@ -74,6 +80,9 @@ show-dir-label =
         [windows] Άνοιγμα φακέλου
        *[other] Άνοιγμα καταλόγου
     }
+experimental-features-title = Πειραματικές λειτουργίες
+experimental-features-name = Όνομα
+experimental-features-value = Τιμή
 modified-key-prefs-title = Σημαντικές τροποποιημένες προτιμήσεις
 modified-prefs-name = Όνομα
 modified-prefs-value = Τιμή

@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name } 實驗
+category-experimental =
+    .tooltiptext = { -brand-short-name } 實驗
+pane-experimental-subtitle = 調整設定前請務必小心！
+pane-experimental-search-results-header = { -brand-short-name } 實驗功能: 調整設定前請務必小心！
+pane-experimental-description = 調整進階設定，可能會影響 { -brand-short-name } 的效能或安全性。
 help-button-label = { -brand-short-name } 技術支援
 addons-button-label = 擴充套件與佈景主題
 focus-search =
@@ -487,7 +493,6 @@ home-prefs-topsites-description = 最常造訪的網站
 
 home-prefs-recommended-by-header =
     .label = { $provider } 推薦
-home-prefs-recommended-by-description = 網路上的各種超棒內容，為您量身打造
 home-prefs-recommended-by-description-update = 由 { $provider } 整理提供的網路精選內容
 
 ##
@@ -547,7 +552,6 @@ search-show-suggestions-above-history-option =
     .label = 在網址列顯示的結果中，將搜尋建議放在瀏覽紀錄前面
 search-show-suggestions-private-windows =
     .label = 於隱私瀏覽視窗中顯示搜尋建議
-suggestions-addressbar-settings = 更改上網紀錄、書籤、分頁建議的相關偏好設定
 suggestions-addressbar-settings-generic = 修改其他網址列建議偏好設定
 search-suggestions-cant-show = 由於您已經設定 { -brand-short-name } 不要記住瀏覽紀錄，網址列中將不會顯示建議搜尋結果。
 search-one-click-header = 快捷搜尋引擎清單
@@ -1145,6 +1149,18 @@ space-alert-under-5gb-ok-button =
     .label = 好，知道了
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } 的磁碟空間不足，網站內容可能無法正確顯示。請點擊「瞭解更多」清理磁碟空間，讓您有更好的瀏覽體驗。
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = 純 HTTPS 模式
+httpsonly-description = HTTPS 讓您與要造訪的網站間，能夠有安全而加密過的連線。大部分的網站都支援 HTTPS，開啟純 HTTPS 模式後，{ -brand-short-name } 就會將所有的連線都升級為 HTTPS 連線。
+httpsonly-learn-more = 了解更多
+httpsonly-radio-enabled =
+    .label = 在所有視窗都開啟純 HTTPS 模式
+httpsonly-radio-enabled-pbm =
+    .label = 僅在隱私瀏覽視窗開啟純 HTTPS 模式
+httpsonly-radio-disabled =
+    .label = 不開啟純 HTTPS 模式
 
 ## The following strings are used in the Download section of settings
 

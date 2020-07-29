@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name }-eksperiminten
+category-experimental =
+    .tooltiptext = { -brand-short-name }-eksperiminten
+pane-experimental-subtitle = Gean foarsichtich troch
+pane-experimental-search-results-header = { -brand-short-name }-eksperiminten: foarsichtichheid advisearre
+pane-experimental-description = It wizigjen fan avansearre konfiguraasjefoarkarren kin de prestaasjes of feilichheid fan { -brand-short-name } beynfloedzje.
 help-button-label = { -brand-short-name }-stipe
 addons-button-label = Utwreidingen & Tema’s
 focus-search =
@@ -499,7 +505,6 @@ home-prefs-topsites-description = De troch jo meast besochte websites
 
 home-prefs-recommended-by-header =
     .label = Oanrekommandearre troch { $provider }
-home-prefs-recommended-by-description = Bjusterbaarlike ynhâld fan it ynternet, oanpast foar jo
 home-prefs-recommended-by-description-update = Utsûnderlike ynhâld fan it hiele ynternet, gearstald troch { $provider }
 
 ##
@@ -563,7 +568,6 @@ search-show-suggestions-above-history-option =
     .label = Syksuggestjes boppe browserskiednis toane yn adresbalkeresultaten
 search-show-suggestions-private-windows =
     .label = Syksuggestjes werjaan yn priveefinsters
-suggestions-addressbar-settings = Foarkarren foar navigaasjeskiednis, blêdwizers en ljepblêdfoarstellen wizigje
 suggestions-addressbar-settings-generic = Foarkarren foar oare adresbalksuggestjes wizigje
 search-suggestions-cant-show = Sykfoarstellen wurde net yn lokaasjebalkresultaten toand, omdat jo { -brand-short-name } konfigurearre hawwe om nea skiednis te ûnthâlden.
 search-one-click-header = Ien-klik-sykmasinen
@@ -1161,6 +1165,18 @@ space-alert-under-5gb-ok-button =
     .label = Ok, begrepen
     .accesskey = k
 space-alert-under-5gb-message = { -brand-short-name } hat hast gjin skiifromte mear. Ynhâld fan websites wurdt mooglik net goed werjûn. Besykje ‘Mear ynfo’ om jo skiifgebrûk te optimalisearjen foar bettere prestaasjes.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Allinnich-HTTPS-modus
+httpsonly-description = HTTPS biedt in feilige, fersifere ferbining tusken { -brand-short-name } en de troch jo besochte websites. De measte websites stypje HTTPS en as de Allinnich-HTTPS-modus ynskeakele is, sil { -brand-short-name } alle ferbiningen fernije nei HTTPS.
+httpsonly-learn-more = Mear ynfo
+httpsonly-radio-enabled =
+    .label = Allinnich-HTTPS-modus yn alle finsters ynskeakelje
+httpsonly-radio-enabled-pbm =
+    .label = Allinnich-HTTPS-modus yn alle priveefinsters ynskeakelje
+httpsonly-radio-disabled =
+    .label = Allinnich-HTTPS-modus net ynskeakelje
 
 ## The following strings are used in the Download section of settings
 

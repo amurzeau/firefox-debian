@@ -6,7 +6,7 @@ about-telemetry-ping-data-source = Ping mba'ekuaarã reñoiha:
 about-telemetry-show-current-ping-data = Ping mba'ekuaarã ag̃aguáva
 about-telemetry-show-current-data = Mba'ekuaarã ag̃agua
 about-telemetry-show-archived-ping-data = Ping mba'ekuaarã ñongatupyre
-about-telemetry-show-subsession-data = Tembiapo'ive mba'ekuaarã jehchauka
+about-telemetry-show-subsession-data = Tembiapo’ive mba’ekuaarã jehchauka
 about-telemetry-choose-ping = Ping jeporavo:
 about-telemetry-archive-ping-type = Ping Peteĩchagua
 about-telemetry-archive-ping-header = Ping
@@ -33,13 +33,13 @@ about-telemetry-histograms-section = Histograma
 about-telemetry-keyed-histogram-section = Histograma ñemiguáva
 about-telemetry-events-section = Tembiaporã
 about-telemetry-simple-measurements-section = Ha'ãha hypy'ũ'ỹva
-about-telemetry-slow-sql-section = Je'etepyre SQL imbegue
+about-telemetry-slow-sql-section = Je’etepyre SQL imbegue
 about-telemetry-addon-details-section = Moimbaha mba'emimi
 about-telemetry-captured-stacks-section = Japyhypyre mbojo'a
 about-telemetry-late-writes-section = Jehaipy mbotapykuéva
 about-telemetry-raw-payload-section = Hetepy ojehecha'ỹva gueteri
 about-telemetry-raw = Raw JSON
-about-telemetry-full-sql-warning = HAIPYRE'I: SQL ñemopotĩ imbeguéva hendýma. Ikatu ohechauka joajuha opaichagua SQL rehegua hákatu noñemondomo'ãi Telemetry-pe.
+about-telemetry-full-sql-warning = HAIPYRE’I: SQL ñemopotĩ imbeguéva hendýma. Ikatu ohechauka joajuha opaichagua SQL rehegua hákatu noñemondomo’ãi Telemetry-pe.
 about-telemetry-fetch-stack-symbols = Eguerujey tembiapoite réra jepytaite ojo'áva rehegua
 about-telemetry-hide-stack-symbols = Ehechauka mba'ekuaarã mbojo'áva oĩmba'ỹva
 # Selects the correct release version
@@ -75,8 +75,8 @@ about-telemetry-settings-explanation = Telemetría ombyaty hína { about-telemet
 # Variables:
 #   $name (String): ping name, e.g. “saved-session”
 #   $timeStamp (String): ping localized timestamp, e.g. “2017/07/08 10:40:46”
-about-telemetry-ping-details = Marandu peteĩteĩva oñemondo “<a data-l10n-name="ping-link">Turuñe'ẽ</a>”-pe. Ehecha hína { $name }, { $timestamp } turuñe'ẽ.
-about-telemetry-ping-details-current = Marandu peteĩteĩva oñemondo “<a data-l10n-name="ping-link">Turuñe'ẽ</a>“-pe. Ehecha hína ag̃agua turuñe'ẽ.
+about-telemetry-ping-details = Marandu peteĩteĩva oñemondo “<a data-l10n-name="ping-link">Turuñe’ẽ</a>”-pe. Ehecha hína { $name }, { $timestamp } turuñe’ẽ.
+about-telemetry-ping-details-current = Marandu peteĩteĩva oñemondo “<a data-l10n-name="ping-link">Turuñe’ẽ</a>“-pe. Ehecha hína ag̃agua turuñe’ẽ.
 about-telemetry-data-details-current = Marandu peteĩteĩva oñemondo “<a data-l10n-name="ping-link">“-pe. Ojehecha mba’ekuaarã ag̃agua.
 # string used as a placeholder for the search field
 # More info about it can be found here:
@@ -111,17 +111,17 @@ about-telemetry-telemetry-ping-type-all = opavave
 # button label to copy the histogram
 about-telemetry-histogram-copy = Emomokõi
 # these strings are used in the “Slow SQL Statements” section
-about-telemetry-slow-sql-main = Je'etepyre SQL imbeguéva pe tembiapoitépe
-about-telemetry-slow-sql-other = Je'etepyre SQL imbeguéva pe tembiapo mokõiguávape
+about-telemetry-slow-sql-main = Je’etepyre SQL imbeguéva pe tembiapoitépe
+about-telemetry-slow-sql-other = Je’etepyre SQL imbeguéva pe tembiapo mokõiguávape
 about-telemetry-slow-sql-hits = Jejapoporã
 about-telemetry-slow-sql-average = Aravo ohasáva (ms)
-about-telemetry-slow-sql-statement = Je'etepyre
+about-telemetry-slow-sql-statement = Je’etepyre
 # these strings are used in the “Add-on Details” section
 about-telemetry-addon-table-id = ID moĩmbaha rehegua
 about-telemetry-addon-table-details = Mba'emimi
 # Variables:
 #   $addonProvider (String): the name of an Add-on Provider (e.g. “XPI”, “Plugin”)
-about-telemetry-addon-provider = Me'ẽhára { $addonProvider }
+about-telemetry-addon-provider = Me’ẽhára { $addonProvider }
 about-telemetry-keys-header = Mba'etee
 about-telemetry-names-header = Téra
 about-telemetry-values-header = Tepykue
@@ -134,7 +134,7 @@ about-telemetry-captured-stacks-title = { $stackKey } (japyhypyre rehegua: { $ca
 about-telemetry-late-writes-title = Jehaipy itapykuéva #{ $lateWriteCount }
 about-telemetry-stack-title = Mbojo'apy:
 about-telemetry-memory-map-title = Mandu’arenda mba’era’ãnga:
-about-telemetry-error-fetching-symbols = Oiko peteĩ jejavy eguerusejeývo umi ta'ãnga'i. Ehechajey eimépa ñandutípe ha eha'ãjey upe rire.
+about-telemetry-error-fetching-symbols = Oiko peteĩ jejavy eguerusejeývo umi ta’ãnga’i. Ehechajey eimépa ñandutípe ha eha’ãjey upe rire.
 about-telemetry-time-stamp-header = ára papaha
 about-telemetry-category-header = mba'éichagua
 about-telemetry-method-header = tapereko

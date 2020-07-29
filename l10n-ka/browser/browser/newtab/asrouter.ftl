@@ -211,6 +211,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = ყველას ნახვა
     .accesskey = ნ
+cfr-doorhanger-milestone-close-button = დახურვა
+    .accesskey = ხ
 
 ## What’s New Panel Content for Firefox 76
 
@@ -244,3 +246,18 @@ cfr-whatsnew-protections-icon-alt = ფარის ნიშანი
 
 cfr-whatsnew-better-pdf-header = PDF-თან მოხერხებული მუშაობა
 cfr-whatsnew-better-pdf-body = PDF-დოკუმენტებს ახლა უკვე პირდაპირ გახსნის { -brand-short-name }, საჭირო მასალები კიდევ უფრო ახლოს გექნებათ.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = თქვენი პირადულობა უმნიშვნელოვანესია. { -brand-short-name } ახლა უკვე უსაფრთხოდ გადაამისამართებს თქვენს DNS-მოთხოვნებს, როცა კი შესაძლებელი იქნება, პარტნიორი მომსახურების მეშვეობით, რომ გვერდების მონახულებისას მუდამ დაცული იყოთ.
+cfr-doorhanger-doh-header = მეტად უსაფრთხო, დაშიფრული DNS-გარდაქმნები
+cfr-doorhanger-doh-primary-button = კარგი, გასაგებია
+    .accesskey = კ
+cfr-doorhanger-doh-secondary-button = გამორთვა
+    .accesskey = გ
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = თავისთავადი დაცვა თვალთვალის გაიძვერული საშუალებებისგან
+cfr-whatsnew-clear-cookies-body = ზოგიერთი მეთვალყურე გამისამართებთ სხვა საიტებზე, რომლებიც ფარულად აყენებს ფუნთუშებს. { -brand-short-name } ახლა უკვე ავტომატურად მოაცილებს ამ ფუნთუშებს, თვალი რომ ვერ გადევნონ.
+cfr-whatsnew-clear-cookies-image-alt = შეზღუდული ფუნთუშის ნიმუში
