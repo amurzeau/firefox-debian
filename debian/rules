@@ -146,6 +146,9 @@ endif
 
 CXXFLAGS = $(CFLAGS)
 RUSTFLAGS = --remap-path-prefix=$(CURDIR)=.
+ifeq (,$(filter 1.43.% 1.44.%,$(shell rustc --version | awk '{print $$2}')))
+RUSTFLAGS += -Cembed-bitcode=yes
+endif
 
 EXPORTS := CC CXX CFLAGS CXXFLAGS CPPFLAGS LDFLAGS MOZILLA_OFFICIAL RUSTFLAGS
 $(call lazy,CONFIGURE_ENV,$$(foreach export,$(EXPORTS),$$(export)="$$($$(export))"))
