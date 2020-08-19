@@ -42,6 +42,75 @@ onboarding-cards-dismiss =
     .title = Descarta
     .aria-label = Descarta
 
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Us donem la benvinguda al <span data-l10n-name="zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = El navegador ràpid, segur i privat que té el suport d'una organització sense ànim de lucre.
+onboarding-multistage-welcome-primary-button-label = Inicia la configuració
+onboarding-multistage-welcome-secondary-button-label = Inicia la sessió
+onboarding-multistage-welcome-secondary-button-text = Ja teniu un compte?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Importeu les vostres contrasenyes, <br/>adreces d'interès i <span data-l10n-name = "zap">més</span>
+onboarding-multistage-import-subtitle = Veniu d'un altre navegador? Importar-ho tot al { -brand-short-name } és molt fàcil.
+onboarding-multistage-import-primary-button-label = Inicia la importació
+onboarding-multistage-import-secondary-button-label = Ara no
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = S'han trobat els llocs següents en aquest dispositiu. El { -brand-short-name } no desa ni sincronitza les dades de cap altre navegador tret que les importeu.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Primers passos: pantalla { $current } de { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Trieu una <span data-l10n-name = "zap">aparença</span>
+onboarding-multistage-theme-subtitle = Personalitzeu el { -brand-short-name } amb un tema.
+onboarding-multistage-theme-primary-button-label = Desa el tema
+onboarding-multistage-theme-secondary-button-label = Ara no
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Automàtic
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = Utilitza el tema del sistema
+onboarding-multistage-theme-label-light = Clar
+onboarding-multistage-theme-label-dark = Fosc
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
+    .title =
+        Hereta l'aparença del sistema operatiu
+        per als botons, menús i finestres.
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        Utilitza una aparença clara per als
+        botons, menús i finestres.
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        Utilitza una aparença fosca per als
+        botons, menús i finestres.
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title =
+        Utilitza una aparença acolorida per als
+        botons, menús i finestres.
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+
 ## Welcome full page string
 
 onboarding-fullpage-welcome-subheader = Descobriu tot allò que podeu fer.

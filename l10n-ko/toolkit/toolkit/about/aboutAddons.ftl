@@ -346,7 +346,7 @@ discopane-intro = 확장 기능 및 테마는 브라우저용 앱과 비슷하�
 # Notice to make user aware that the recommendations are personalized.
 discopane-notice-recommendations = 이러한 추천 중 일부는 개인화된 것입니다. 설치한 다른 확장 기능, 프로필 설정 및 사용 통계를 기반으로 합니다.
 discopane-notice-learn-more = 더 알아보기
-privacy-policy = 개인정보 보호정책
+privacy-policy = 개인정보처리방침
 # Refers to the author of an add-on, shown below the name of the add-on.
 # Variables:
 #   $author (string) - The name of the add-on developer.
@@ -407,6 +407,9 @@ addon-detail-version-label = 버전
 addon-detail-last-updated-label = 마지막 업데이트
 addon-detail-homepage-label = 홈페이지
 addon-detail-rating-label = 평가
+# Message for add-ons with a staged pending update.
+install-postponed-message = 이 확장 기능은 { -brand-short-name }가 다시 시작될 때 업데이트됩니다.
+install-postponed-button = 지금 업데이트
 # The average rating that the add-on has received.
 # Variables:
 #   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
@@ -462,7 +465,7 @@ available-updates-heading = 업데이트 가능 항목
 recent-updates-heading = 최근 업데이트
 release-notes-loading = 로드 중…
 release-notes-error = 죄송합니다. 출시 정보를 불러오는 중에 오류가 발생했습니다.
-addon-permissions-empty = 이 확장 기능에는 권한이 필요하지 않습니다.
+addon-permissions-empty = 이 확장 기능은 권한이 필요하지 않습니다.
 recommended-extensions-heading = 추천 확장 기능
 recommended-themes-heading = 추천 테마
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

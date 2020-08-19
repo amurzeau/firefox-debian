@@ -10,10 +10,6 @@
 <!ENTITY toggleToolboxF12.keycode          "VK_F12">
 <!ENTITY toggleToolboxF12.keytext          "F12">
 
-<!-- LOCALIZATION NOTE (browserToolboxStatusMessage): This is the label
-  -  shown next to status details when the Browser Toolbox fails to connect or
-  -  appears to be taking a while to do so. -->
-
 <!-- LOCALIZATION NOTE (options.context.advancedSettings): This is the label for
   -  the heading of the advanced settings group in the options panel. -->
 <!ENTITY options.context.advancedSettings "ఉన్నత అమరికలు">
@@ -86,19 +82,19 @@
   -  options.disableJavaScript.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles JavaScript on or off. -->
 <!ENTITY options.disableJavaScript.label     "JavaScript * అచేతనంచేయి">
-<!ENTITY options.disableJavaScript.tooltip   "ఈ ఎంపిక ఆన్ చేయుట వలన ఈ ప్రస్తుత ట్యాబ్ కొరకు జావాస్క్రిప్ట్ అచేతనంచేయబడును. ఒకవేళ ట్యాబ్ లేదా సాధనపెట్టె మూయబడితే అప్పుడు ఈ అమరిక మర్చిపోబడును.">
+<!ENTITY options.disableJavaScript.tooltip   "ఈ ఎంపికను చేతనం చేయడం వలన ప్రస్తుత ట్యాబులో జావాస్క్రిప్ట్ అచేతనమవుతుంది. ఈ ట్యాబుని లేక పనిముట్లపెట్టెను మూసివేసినపుడు ఈ అమరిక మర్చిపోబడుతుంది.">
 
 <!-- LOCALIZATION NOTE (options.disableHTTPCache.label,
   -  options.disableHTTPCache.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles the HTTP cache on or off. -->
-<!ENTITY options.disableHTTPCache.label     "ఆపివేయి HTTP కాష్ ని (టూల్ బాక్స్ తెరిచినప్పుడు)">
-<!ENTITY options.disableHTTPCache.tooltip   "ఈ ఎంపికను టర్నింగ్ టూల్ బాక్స్ తెరిచిన అన్ని ట్యాబ్ల కోసం HTTP కాష్ ను ఆపివేస్తుంది. సేవా ఉద్యోగులు ఈ ఎంపిక ద్వారా ప్రభావితం కాదు.">
+<!ENTITY options.disableHTTPCache.label     "HTTP కాష్‌ని అచేతనించు (టూల్‌బాక్స్ తెరిచివున్నప్పుడు)">
+<!ENTITY options.disableHTTPCache.tooltip   "ఈ ఎంపికను చేతనం చేయడం వలన పనిముట్లపెట్టె తెరిచివున్న ట్యాబులన్నిటిలోనూ HTTP క్యాషె అచేతనమవుతుంది. ఈ ఎంపిక సర్వీస్ వర్కర్లను ప్రభావితం చెయ్యదు.">
 
 <!-- LOCALIZATION NOTE (options.enableServiceWorkersHTTP.label,
   -  options.enableServiceWorkersHTTP.tooltip): This is the options panel label and
   -  tooltip for the checkbox that toggles the service workers testing features on or off. This option enables service workers over HTTP. -->
-<!ENTITY options.enableServiceWorkersHTTP.label     "సర్వీస్ వర్కర్స్ ప్రారంభించు HTTP పైగా (టూల్ బాక్స్ తెరిచినప్పుడు)">
-<!ENTITY options.enableServiceWorkersHTTP.tooltip   "ఈ ఎంపికను ఆన్ చేయడం వల్ల టూల్ బాక్స్ తెరిచిన అన్ని ట్యాబ్ల కోసం HTTP పైగా సేవ కార్మికులు ఎనేబుల్ చేస్తుంది.">
+<!ENTITY options.enableServiceWorkersHTTP.label     "(టూల్‌బాక్స్ తెరిచివున్నప్పుడు) HTTPలో కూడా సర్వీస్ వర్కర్లను చేతనించు">
+<!ENTITY options.enableServiceWorkersHTTP.tooltip   "ఈ ఎంపికను చేతనం చేయడం వలన పనిముట్ల పెట్టె తెరిచివున్న ట్యాబులన్నిటిలోనూ HTTP ద్వారా సర్వీస్ వర్కర్లు చేతనమవుతాయి.">
 
 <!-- LOCALIZATION NOTE (options.selectDefaultTools.label2): This is the label for
   -  the heading of group of checkboxes corresponding to the default developer
@@ -119,7 +115,7 @@
 <!-- LOCALIZATION NOTE (options.toolNotSupported.label): This is the label for
   -  the explanation of the * marker on a tool which is currently not supported
   -  for the target of the toolbox. -->
-<!ENTITY options.toolNotSupported.label  "* ప్రస్తుత సాధనపెట్టె లక్ష్యము కొరకు తోడ్పాటునీయదు">
+<!ENTITY options.toolNotSupported.label  "* ప్రస్తుత పనిముట్లపెట్టె లక్ష్యానికి తోడ్పాటులేదు">
 
 <!-- LOCALIZATION NOTE (options.selectDevToolsTheme.label2): This is the label for
   -  the heading of the radiobox corresponding to the theme of the developer
@@ -187,9 +183,9 @@
 <!ENTITY options.sourceeditor.detectindentation.label   "ఇన్‌డెంటేషన్ గుర్తించు">
 <!ENTITY options.sourceeditor.detectindentation.tooltip "సోర్స్ కాంటెంట్‌పై ఆధారపడి ఇండెంటేషన్ అంచనావేయి">
 <!ENTITY options.sourceeditor.autoclosebrackets.label   "బ్రాకెట్లను స్వయంచాలకంగా మూసివేయి">
-<!ENTITY options.sourceeditor.autoclosebrackets.tooltip "మూసివేత బ్రాకెట్లు స్వయంచాలకంగా చొప్పించును">
+<!ENTITY options.sourceeditor.autoclosebrackets.tooltip "మూసివేత బ్రాకెట్లను స్వయంచాలకంగా చొప్పించు">
 <!ENTITY options.sourceeditor.expandtab.label           "ఇండెంటు కోసం ఖాళీలు వాడు">
-<!ENTITY options.sourceeditor.expandtab.tooltip         "ట్యాబ్ కారెక్టర్ బదులు ఖాళీలు ఉపయోగించు">
+<!ENTITY options.sourceeditor.expandtab.tooltip         "ట్యాబు కారెక్టర్ బదులు ఖాళీలు ఉపయోగించు">
 <!ENTITY options.sourceeditor.tabsize.label             "ట్యాబు పరిమాణం">
 <!ENTITY options.sourceeditor.tabsize.accesskey         "T">
 <!ENTITY options.sourceeditor.keybinding.label          "కీబైండిగ్లు">

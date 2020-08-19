@@ -248,3 +248,9 @@ cfr-doorhanger-doh-primary-button = Entesos
     .accesskey = o
 cfr-doorhanger-doh-secondary-button = Inhabilita
     .accesskey = h
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Protecció automàtica contra les tàctiques de seguiment més elaborades
+cfr-whatsnew-clear-cookies-body = Alguns elements de seguiment us redirigeixen a altres llocs web que desen galetes en secret. Ara el { -brand-short-name } esborra automàticament aquestes galetes perquè no us puguin fer el seguiment.
+cfr-whatsnew-clear-cookies-image-alt = Il·lustració d'una galeta blocada

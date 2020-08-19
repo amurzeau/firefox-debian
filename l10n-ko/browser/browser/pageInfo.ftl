@@ -113,9 +113,9 @@ help-button =
 ##   $value (number) - Amount of data being stored
 ##   $unit (string) - The unit of data being stored (Usually KB)
 
-security-site-data-cookies = 네, 쿠키와 { $value } { $unit }의 사이트 데이터
-security-site-data-only = 네, { $value } { $unit } 사이트 데이터
-security-site-data-cookies-only = 네, 쿠키
+security-site-data-cookies = 예, 쿠키와 { $value } { $unit }의 사이트 데이터
+security-site-data-only = 예, { $value } { $unit } 사이트 데이터
+security-site-data-cookies-only = 예, 쿠키
 security-site-data-no = 아니오
 image-size-unknown = 알 수 없음
 not-set-verified-by = 설정되지 않음
@@ -134,8 +134,8 @@ media-link = 아이콘
 media-input = 입력
 media-video = 동영상
 media-audio = 음성
-saved-passwords-yes = 있음
-saved-passwords-no = 없음
+saved-passwords-yes = 예
+saved-passwords-no = 아니오
 no-page-title =
     .value = 페이지 제목 없음:
 general-quirks-mode =
@@ -150,7 +150,7 @@ media-unknown-not-cached =
     .value = 알 수 없음 (캐시 안 됨)
 permissions-use-default =
     .label = 기본 설정 사용
-security-no-visits = 없음
+security-no-visits = 아니오
 # This string is used to display the number of meta tags
 # in the General Tab
 # Variables:
@@ -167,7 +167,7 @@ general-meta-tags =
 security-visits-number =
     { $visits ->
         [0] 아니오
-       *[other] 네, { $visits }회
+       *[other] 예, { $visits }회
     }
 # This string is used to display the size of a media file
 # Variables:
@@ -202,7 +202,7 @@ media-image-type =
 #   $scaledx (number) - The scaled horizontal size of an image
 #   $scaledy (number) - The scaled vertical size of an image
 media-dimensions-scaled =
-    .value = { $dimx }px × { $dimy }px ({ $scaledx }px × { $scaledy }px로 조정됨)
+    .value = { $dimx }px × { $dimy }px ({ $scaledx }px × { $scaledy }px로 배율 조정됨)
 # This string is used to display the size of an image in pixels
 # Variables:
 #   $dimx (number) - The horizontal size of an image

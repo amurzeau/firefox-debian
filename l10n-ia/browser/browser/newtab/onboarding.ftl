@@ -19,9 +19,6 @@ onboarding-button-label-get-started = Comencia
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = Benvenite a { -brand-short-name }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Benvenite in <span data-l10n-name="zap">{ -brand-short-name }</span>
 onboarding-welcome-body = Tu ha recipite le navigator.<br/>Obtene le resto de { -brand-product-name }.
 onboarding-welcome-learn-more = Saper plus re le beneficios.
 onboarding-join-form-header = Junge te a { -brand-product-name }
@@ -44,6 +41,75 @@ onboarding-start-browsing-button-label = Comencia a navigar
 onboarding-cards-dismiss =
     .title = Dimitter
     .aria-label = Dimitter
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Benvenite in <span data-l10n-name="zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = Le navigator del Web veloce, secur e reservate, supportate per un organisation non lucrative.
+onboarding-multistage-welcome-primary-button-label = Initia configurar
+onboarding-multistage-welcome-secondary-button-label = Aperir session
+onboarding-multistage-welcome-secondary-button-text = Ha tu un conto?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Importa contrasignos, marcapaginas e <span data-l10n-name="zap">altero ancora</span>
+onboarding-multistage-import-subtitle = Veni tu ab un altere navigator? Il es facile transferer toto a { -brand-short-name }.
+onboarding-multistage-import-primary-button-label = Initia importar
+onboarding-multistage-import-secondary-button-label = Non ora
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Le sitos in le lista de presentation hic ha essite trovate sur iste dispositivo. { -brand-short-name } non salva o synchronisa datos de un altere navigator a minus que tu selige de importar los.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Como initiar: pagina { $current } de { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Elige un nove <span data-l10n-name="zap">apparentia</span>
+onboarding-multistage-theme-subtitle = Personalisa { -brand-short-name } per un thema.
+onboarding-multistage-theme-primary-button-label = Salvar le thema
+onboarding-multistage-theme-secondary-button-label = Non ora
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Automatic
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = Usar thema del systema
+onboarding-multistage-theme-label-light = Clar
+onboarding-multistage-theme-label-dark = Obscur
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
+    .title =
+        Heredita le apparentia de tu systema
+        operative pro buttones, menus e fenestras.
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        Usa un apparentia clar pro buttones,
+        menus e fenestras.
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        Usa un apparentia obscur pro 
+        buttones, menus e fenestras.
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title =
+        Usa un apparentia colorate pro 
+        buttones, menus e fenestras.
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
 
 ## Welcome full page string
 
@@ -111,7 +177,7 @@ onboarding-tracking-protection-button2 = Como functiona illo
 onboarding-data-sync-title = Prende tu parametros con te
 # "Sync" is short for synchronize.
 onboarding-data-sync-text2 = Synchronisa tu marcapaginas, contrasignos, etc. sur tote le apparatos ubi tu usa { -brand-product-name }.
-onboarding-data-sync-button2 = Aperir session a { -sync-brand-short-name }
+onboarding-data-sync-button2 = Aperir session in { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Sta alerte al violationes de datos
 onboarding-firefox-monitor-text = { -monitor-brand-name } controla attentemente si tu email ha apparite in un violation de datos e te avisa si illo es implicate in un nove violation.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } controla si tu adresse de e-mail ha apparite in violationes cognoscite de datos e te alerta si illo appare in un nove violation.

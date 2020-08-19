@@ -127,7 +127,7 @@ sandbox-sys-call-proc-type = Τύπος διεργασίας
 sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Επιχειρήματα
 safe-mode-title = Δοκιμή ασφαλούς λειτουργίας
-restart-in-safe-mode-label = Επανεκκίνηση με τα πρόσθετα απενεργοποιημένα…
+restart-in-safe-mode-label = Επανεκκίνηση με ανενεργά πρόσθετα…
 clear-startup-cache-title = Δοκιμάστε να εκκαθαρίσετε την προσωρινή μνήμη εκκίνησης
 clear-startup-cache-label = Εκκαθάριση προσωρινής μνήμης εκκίνησης…
 startup-cache-dialog-title = Εκκαθάριση προσωρινής μνήμης εκκίνησης
@@ -274,6 +274,9 @@ blocklisted-bug = Μπλοκαρίστηκε λόγω γνωστών θεμάτ�
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = σφάλμα { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Προστέθηκε στη λίστα αποκλεισμού λόγω γνωστών ζητημάτων: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Μπλοκαρίστηκε, κωδικός αποτυχίας { $failureCode }

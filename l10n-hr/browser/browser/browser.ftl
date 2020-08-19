@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Tipkaj manje, nađi više: Traži { $engineName } direktno u tvojoj adresnoj traci.
 urlbar-search-tips-redirect-2 = Započni pretragu u adresnoj traci za prikaz prijedloga od { $engineName } i tvoju povijest pregledavanja.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Zabilješke
+urlbar-search-mode-tabs = Kartice
+urlbar-search-mode-history = Povijest
+
 ##
 
 urlbar-geolocation-blocked =
@@ -185,6 +191,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Postavi zadanu pretragu za privatne prozore
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Zabilješke ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Kartice ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Povijest ({ $restrict })
 
 ## Bookmark Panel
 
@@ -272,9 +298,17 @@ popup-screen-sharing-not-now =
 popup-screen-sharing-never =
     .label = Ne dozvoli nikada
     .accesskey = N
+popup-silence-notifications-checkbox = Deaktiviraj { -brand-short-name } obavijesti tijekom dijeljenja
+popup-silence-notifications-checkbox-warning = { -brand-short-name } neće prikazivati obavijesti dok dijeliš.
 
 ## WebRTC window or screen share tab switch warning
 
+sharing-warning-window = Dijeliš { -brand-short-name }. Drugi ljudi mogu vidjeti kad se prebaciš na novu karticu.
+sharing-warning-screen = Dijeliš svoj cijeli ekran. Drugi ljudi mogu vidjeti kad se prebaciš na novu karticu.
+sharing-warning-proceed-to-tab =
+    .label = Prijeđi na karticu
+sharing-warning-disable-for-session =
+    .label = Deaktiviraj zaštitu dijeljenja za ovu sesiju
 
 ## DevTools F12 popup
 
@@ -286,6 +320,10 @@ urlbar-default-placeholder =
     .defaultPlaceholder = Pretraži ili upiši adresu
 urlbar-placeholder =
     .placeholder = Pretraži ili upiši adresu
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Pretraži s { $name } ili unesi adresu
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Preglednik se kontrolira s udaljene lokacije
 urlbar-permissions-granted =

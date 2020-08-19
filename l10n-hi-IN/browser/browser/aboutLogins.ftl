@@ -1,11 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = लॉगिन और पासवर्ड
@@ -53,6 +48,7 @@ login-list-count =
 login-list-sort-label-text = इसके अनुसार:
 login-list-name-option = नाम (A-Z)
 login-list-name-reverse-option = नाम (Z-A)
+about-logins-login-list-alerts-option = चेतावनी
 login-list-last-changed-option = अंतिम परिवर्तन
 login-list-last-used-option = अंतिम प्रयुक्त
 login-list-intro-title = कोई लॉग इन नहीं मिला
@@ -64,6 +60,8 @@ login-list-item-subtitle-new-login = अपनी लॉगिन जानक�
 login-list-item-subtitle-missing-username = (कोई उपयोगकर्ता नाम नहीं)
 about-logins-list-item-breach-icon =
     .title = उलंघित वेबसाइट
+about-logins-list-item-vulnerable-password-icon =
+    .title = असुरक्षित पासवर्ड
 
 ## Introduction screen
 
@@ -108,9 +106,13 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message-win = अपने लॉगिन को संपादित करने के लिए, अपनी Windows लॉगिन क्रेडेंशियल्स दर्ज करें। यह आपके खातों की सुरक्षा को बनाए रखने में मदद करता है।
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = सहेजे गए लॉगिन को संपादित करें
+# This message can be seen when attempting to reveal a password in about:logins on Windows.
+about-logins-reveal-password-os-auth-dialog-message-win = अपना पासवर्ड देखने के लिए, अपनी Windows लॉगिन क्रेडेंशियल्स दर्ज करें। यह आपके खातों की सुरक्षा को बनाए रखने में मदद करता है।
 # This message can be seen when attempting to reveal a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-reveal-password-os-auth-dialog-message-macosx = सहेजे गए पासवर्ड देखें
@@ -121,6 +123,9 @@ about-logins-copy-password-os-auth-dialog-message-macosx = सहेजे ग�
 ## Master Password notification
 
 master-password-notification-message = सहेजे गए लॉगिन और पासवर्ड देखने के लिए कृपया अपना मास्टर पासवर्ड दर्ज करें
+
+## Primary Password notification
+
 master-password-reload-button =
     .label = लॉग इन
     .accesskey = L
@@ -152,7 +157,9 @@ confirm-discard-changes-dialog-confirm-button = छोड़ें
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = वेबसाइट उल्लंघन
 breach-alert-text = आपके अंतिम बार अपना लॉगिन विवरण अपडेट करते समय पासवर्ड इस वेबसाइट से लीक या चोरी हो गए थे। अपने खाते की सुरक्षा के लिए अपना पासवर्ड बदलें।
+about-logins-breach-alert-date = यह उल्लंघन { DATETIME($date, day: "numeric", month: "long", year: "numeric") } पर हुआ
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-breach-alert-link = { $hostname } पर जाएं
@@ -183,3 +190,6 @@ about-logins-export-file-picker-csv-filter-title =
         [macos] CSV दस्तावेज़
        *[other] CSV फाइल
     }
+
+## Login Import Dialog
+

@@ -787,10 +787,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Dùng mật khẩu chính
     .accesskey = U
+forms-primary-pw-use =
+    .label = Sử dụng mật khẩu chính
+    .accesskey = U
+forms-primary-pw-learn-more-link = Tìm hiểu thêm
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Thay đổi mật khẩu chính…
     .accesskey = M
 forms-master-pw-fips-title = Bạn đang ở chế độ FIPS. FIPS yêu cầu mật khẩu chính không được để trống.
+forms-primary-pw-change =
+    .label = Thay đổi mật khẩu chính…
+    .accesskey = P
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Bạn hiện đang ở chế độ FIPS. FIPS yêu cầu tính năng mật khẩu chính.
 forms-master-pw-fips-desc = Thay đổi mật khẩu không thành công
 
 ## OS Authentication dialog
@@ -802,6 +817,13 @@ master-password-os-auth-dialog-message-win = Để tạo mật khẩu chính, h�
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = tạo một mật khẩu chính
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Để tạo mật khẩu chính, hãy nhập thông tin đăng nhập Windows của bạn. Điều này giúp bảo vệ tính bảo mật của tài khoản của bạn.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = tạo một mật khẩu chính
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -1149,6 +1171,18 @@ space-alert-under-5gb-ok-button =
     .label = OK, đã hiểu
     .accesskey = K
 space-alert-under-5gb-message = Không đủ dung lượng đĩa cho { -brand-short-name }. Nội dung trang web có thể không hiển thị chính xác. Truy cập “Tìm hiểu thêm” để tối ưu hóa việc sử dụng đĩa của bạn để có trải nghiệm duyệt web tốt hơn.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Chế độ chỉ HTTPS
+httpsonly-description = HTTPS cung cấp kết nối được mã hóa an toàn giữa { -brand-short-name } và các trang web bạn truy cập. Hầu hết các trang web đều hỗ trợ HTTPS và nếu chế độ chỉ HTTPS được bật, thì { -brand-short-name } sẽ nâng cấp tất cả các kết nối lên HTTPS.
+httpsonly-learn-more = Tìm hiểu thêm
+httpsonly-radio-enabled =
+    .label = Kích hoạt chế độ chỉ HTTPS trong tất cả các cửa sổ
+httpsonly-radio-enabled-pbm =
+    .label = Chỉ kích hoạt chế độ HTTPS trong các cửa sổ riêng tư
+httpsonly-radio-disabled =
+    .label = Không kích hoạt chế độ chỉ HTTPS
 
 ## The following strings are used in the Download section of settings
 

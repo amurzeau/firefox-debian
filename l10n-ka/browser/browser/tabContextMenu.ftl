@@ -28,19 +28,19 @@ pin-tab =
     .accesskey = მ
 unpin-tab =
     .label = მიმაგრების მოხსნა
-    .accesskey = ხ
+    .accesskey = ნ
 pin-selected-tabs =
     .label = ჩანართების მიმაგრება
     .accesskey = მ
 unpin-selected-tabs =
     .label = ჩანართების მოხსნა
-    .accesskey = ხ
+    .accesskey = მ
 bookmark-selected-tabs =
     .label = ჩანართების ჩანიშვნა…
-    .accesskey = ნ
+    .accesskey = ვ
 bookmark-tab =
     .label = ჩანართის ჩანიშვნა
-    .accesskey = ჩ
+    .accesskey = ვ
 reopen-in-container =
     .label = ხელახლა გახსნა სათავსში
     .accesskey = ე
@@ -59,13 +59,17 @@ undo-close-tab =
 tab-context-close-multiple-tabs =
     .label = რამდენიმე ჩანართის დახურვა
     .accesskey = რ
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
             [1] დახურული ჩანართის დაბრუნება
            *[other] დახურული ჩანართების დაბრუნება
         }
-    .accesskey = დ
+    .accesskey = ბ
 close-tab =
     .label = ჩანართის დახურვა
     .accesskey = უ
@@ -77,4 +81,18 @@ move-tabs =
     .accesskey = ტ
 move-tab =
     .label = ჩანართის გადატანა
+    .accesskey = ტ
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] ჩანართის დახურვა
+           *[other] ჩანართების დახურვა
+        }
+    .accesskey = ხ
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] ჩანართის გადატანა
+           *[other] ჩანართების გადატანა
+        }
     .accesskey = ტ

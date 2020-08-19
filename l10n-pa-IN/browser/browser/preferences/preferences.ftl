@@ -55,6 +55,7 @@ category-experimental =
     .tooltiptext = { -brand-short-name } ਤਜਰਬੇ
 pane-experimental-subtitle = ਧਿਆਨ ਨਾਲ ਅੱਗੇ ਵਧੋ
 pane-experimental-search-results-header = { -brand-short-name } ਤਜਰਬਾ: ਧਿਆਨ ਨਾਲ ਜਾਰੀ ਰੱਖੋ
+pane-experimental-description = ਤਕਨੀਕੀ ਸੰਰਚਨਾ ਦੀਆਂ ਪਸੰਦਾਂ ਨੂੰ ਬਦਲਣ ਨਾਲ { -brand-short-name } ਦੀ ਕਾਰਗੁਜ਼ਾਰੀ ਜਾਂ ਸੁਰੱਖਿਆ ਉੱਤੇ ਅਸਰ ਪੈ ਸਕਦਾ ਹੈ।
 help-button-label = { -brand-short-name } ਸਮਰਥਨ
 addons-button-label = ਇਕਸਟੈਨਸ਼ਨਾਂ ਤੇ ਥੀਮ
 focus-search =
@@ -495,6 +496,7 @@ home-prefs-topsites-description = ਤੁਹਾਡੇ ਵੱਲੋਂ ਸਭ ਤ�
 
 home-prefs-recommended-by-header =
     .label = { $provider } ਵਲੋਂ ਸਿਫਾਰਸ਼ੀ
+home-prefs-recommended-by-description-update = { $provider } ਦੀ ਮੇਹਰ ਸਕਦਾ ਵੈੱਬ ਭਰ ਤੋਂ ਖ਼ਾਸ ਸਮੱਗਰੀ
 
 ##
 
@@ -557,6 +559,7 @@ search-show-suggestions-above-history-option =
     .label = ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਨਤੀਜਿਆਂ ਵਿੱਚ ਬਰਾਊਜ਼ ਕਰਨ ਦੇ ਅਤੀਤ ਤੋਂ ਪਹਿਲਾਂ ਹੀ ਖੋਜ ਸੁਝਾਅ ਵੇਖਾਓ
 search-show-suggestions-private-windows =
     .label = ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋਆਂ ਵਿੱਚ ਖੋਜ ਸੁਝਾਅ ਵੇਖਾਓ
+suggestions-addressbar-settings-generic = ਹੋਰ ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਸੁਝਾਆਵਾਂ ਲਈ ਪਸੰਦਾਂ ਨੂੰ ਬਦਲੋ
 search-suggestions-cant-show = ਟਿਕਾਣਾ ਖੋਜ ਨਤੀਜਿਆਂ ਵਿੱਚ ਖੋਜ ਸੁਝਾਅ ਨਹੀਂ ਵੇਖਾਏ ਜਾਣਗੇ, ਕਿਉਂਕਿ ਤੁਸੀਂ { -brand-short-name } ਨੂੰ ਕਦੇ ਵੀ ਅਤੀਤ ਯਾਦ ਨਾ ਰੱਖਣ ਲਈ ਸੰਰਚਿਤ ਕੀਤਾ ਹੈ।
 search-one-click-header = ਇੱਕ-ਕਲਿੱਕ ਖੋਜ ਇੰਜਣ
 search-one-click-desc = ਬਦਲਵੇਂ ਖੋਜ ਇੰਜਣਾਂ ਨੂੰ ਚੁਣੋ, ਜੋ ਕਿ ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਅਤੇ ਖੋਜ ਪੱਟੀ 'ਚ ਦਿਖਾਈ ਦਿੰਦੇ ਹਨ, ਜਦੋਂ ਕਿ ਤੁਸੀਂ ਕੋਈ ਸ਼ਬਦ ਲਿਖਦੇ ਹੋ।
@@ -791,10 +794,24 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = ਮਾਸਟਰ ਪਾਸਵਰਡ ਨੂੰ ਵਰਤੋਂ
     .accesskey = U
+forms-primary-pw-use =
+    .label = ਮੁੱਖ ਪਾਸਵਰਡ ਵਰਤੋਂ
+    .accesskey = U
+forms-primary-pw-learn-more-link = ਹੋਰ ਜਾਣੋ
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = …ਮਾਸਟਰ ਪਾਸਵਰਡ ਨੂੰ ਵਰਤੋਂ
     .accesskey = M
 forms-master-pw-fips-title = ਇਸ ਸਮੇਂ ਤੁਸੀਂ FIPS ਮੋਡ ਵਿੱਚ ਹੋ। FIPS ਨੂੰ ਇੱਕ ਨਾ-ਖਾਲੀ ਮਾਸਟਰ ਪਾਸਵਰਡ ਲੋੜੀਦਾ ਹੈ
+forms-primary-pw-change =
+    .label = …ਮੁੱਖ ਪਾਸਵਰਡ ਬਦਲੋ
+    .accesskey = P
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = ਪਹਿਲਾਂ ਮਾਸਟਰ ਪਾਸਵਰਡ ਵਜੋਂ ਜਾਣਿਆ ਜਾਂਦਾ ਹੈ
 forms-master-pw-fips-desc = ਪਾਸਵਰਡ ਨੂੰ ਬਦਲਣਾ ਫੇਲ੍ਹ ਹੋਇਆ
 
 ## OS Authentication dialog
@@ -806,6 +823,13 @@ master-password-os-auth-dialog-message-win = ਮਾਸਟਰ ਪਾਸਵਰਡ 
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = ਮਾਸਟਰ ਪਾਸਵਰਡ ਬਣਾਓ
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = ਮੁੱਖ ਪਾਸਵਰਡ ਬਣਾਉਣ ਲਈ ਆਪਣੀਆਂ Windows ਲਾਗਇਨ ਪਾਸਵਰਡ ਦਿਓ। ਇਸ ਤੁਹਾਡੇ ਖਾਤਿਆਂ ਦੀ ਸੁਰੱਖਿਆ ਨੂੰ ਬਚਾਉਣ ਲਈ ਮਦਦ ਕਰਦਾ ਹੈ।
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = ਮੁੱਖ ਪਾਸਵਰਡ ਬਣਾਓ
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -974,6 +998,7 @@ content-blocking-fingerprinters = ਫਿੰਗਰਪਰਿੰਟਰ
 content-blocking-warning-title = ਧਿਆਨ ਰੱਖੋ!
 content-blocking-warning-description = ਸਮੱਗਰੀ ਉੱਤੇ ਪਾਬੰਦੀ ਲਾਉਣਾ ਕੁਝ ਵੈੱਬਸਾਈਟਾਂ ਦੇ ਠੀਕ ਤਰ੍ਹਾਂ ਨਾ ਚੱਲਣ ਦਾ ਕਾਰਨ ਹੋ ਸਕਦਾ ਹੈ। ਸਾਈਟਾਂ, ਜਿੰਨਾਂ ਉੱਤੇ ਤੁਹਾਨੂੰ ਭਰੋਸਾ ਹੈ, ਉੱਤੇ ਪਾਬੰਦੀ ਅਸਮਰੱਥ ਕਰਨਾ ਸੌਖਾ ਹੈ।
 content-blocking-learn-how = ਸਿੱਖੋ ਕਿ ਕਿਵੇਂ
+content-blocking-and-isolating-etp-warning-description = ਟਰੈਕਰਾਂ ਅਤੇ ਨਿਖੇੜਨ ਵਾਲੇ ਕੂਕੀਜ਼ ਉੱਤੇ ਪਾਬੰਦੀ ਲਾਉਣ ਨਾਲ ਕੁਝ ਸਾਈਟਾਂ ਦੇ ਕੰਮ ਕਰਨ ਉੱਤੇ ਅਸਰ ਪੈ ਸਕਦਾ ਹੈ। ਸਾਰੀ ਸਮੱਗਰੀ ਲੋਡ ਕਰਨ ਲਈ ਟਰੈਕਰਾਂ ਨਾਲ ਸਫ਼ੇ ਨੂੰ ਮੁੜ-ਲੋਡ ਕਰੋ।
 content-blocking-warning-learn-how = ਹੋਰ ਸਿੱਖੋ
 content-blocking-reload-description = ਇਹ ਤਬਦੀਲੀਆਂ ਲਾਗੂ ਕਰਨ ਲਈ ਤੁਹਾਨੂੰ ਆਪਣੀਆਂ ਟੈਬਾਂ ਨੂੰ ਮੁੜ ਲੋਡ ਕਰਨ ਦੀ ਲੋੜ ਹੋਵੇਗੀ।
 content-blocking-reload-tabs-button =

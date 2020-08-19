@@ -803,10 +803,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Utilizar uma palavra-passe mestra
     .accesskey = U
+forms-primary-pw-use =
+    .label = Utilizar uma palavra-passe principal
+    .accesskey = U
+forms-primary-pw-learn-more-link = Saber mais
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Alterar palavra-passe mestra…
     .accesskey = m
 forms-master-pw-fips-title = Atualmente, está no modo FIPS. Este modo requer uma palavra-passe mestra não vazia.
+forms-primary-pw-change =
+    .label = Alterar palavra-passe principal…
+    .accesskey = p
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = Anteriormente conhecida como palavra-passe mestra
+forms-primary-pw-fips-title = Atualmente, está no modo FIPS. Este modo requer uma palavra-passe principal não vazia.
 forms-master-pw-fips-desc = Erro ao alterar palavra-passe
 
 ## OS Authentication dialog
@@ -818,6 +833,13 @@ master-password-os-auth-dialog-message-win = Para criar uma palavra-passe mestra
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = Criar uma palavra-passe mestra
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Para criar uma palavra-passe principal, introduza as suas credenciais de autenticação do Windows. Isto ajuda a proteger a segurança das suas contas.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = criar uma palavra-passe principal
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -1165,6 +1187,18 @@ space-alert-under-5gb-ok-button =
     .label = OK, entendi
     .accesskey = K
 space-alert-under-5gb-message = O { -brand-short-name } está a ficar sem espaço em disco. Os conteúdos de sites podem não ser apresentados corretamente. Visite “Saber mais” para otimizar a utilização do seu disco e melhorar a experiência de navegação.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Modo apenas HTTPS
+httpsonly-description = O HTTPS fornece um ligação segura e encriptada entre o { -brand-short-name } e os sites que visita. A maioria dos sites suporta HTTPS e se o modo apenas HTTPS estiver ativo, então o { -brand-short-name } irá melhorar/atualizar todas as ligações para HTTPS.
+httpsonly-learn-more = Saber mais
+httpsonly-radio-enabled =
+    .label = Ativar o modo apenas HTTPS em todas as janelas
+httpsonly-radio-enabled-pbm =
+    .label = Ativar o modo apenas HTTPS somente em janelas privadas
+httpsonly-radio-disabled =
+    .label = Não ativar o modo apenas HTTPS
 
 ## The following strings are used in the Download section of settings
 

@@ -36,7 +36,7 @@
 
 <!ENTITY cmd.backup.label               "Tiwachib'ëx…">
 <!ENTITY cmd.backup.accesskey           "T">
-<!ENTITY cmd.restore2.label             "Titzolïx ruk'ojlem">
+<!ENTITY cmd.restore2.label             "Titzolïx">
 <!ENTITY cmd.restore2.accesskey         "T">
 <!ENTITY cmd.restoreFromFile.label      "Ticha' Yakb'äl…">
 <!ENTITY cmd.restoreFromFile.accesskey  "T">
@@ -58,7 +58,7 @@
 <!ENTITY cmd.properties.label      "Taq ichinil">
 <!ENTITY cmd.properties.accesskey  "a">
 
-<!ENTITY cmd.sortby_name.label              "Tinuk' chi b'i'aj">
+<!ENTITY cmd.sortby_name.label              "Tinuk' Chi B'i'aj">
 <!ENTITY cmd.sortby_name.accesskey          "T">
 <!ENTITY cmd.context_sortby_name.accesskey  "r">
 

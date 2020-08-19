@@ -19,9 +19,6 @@ onboarding-button-label-get-started = Bersiap
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = Selamat datang di { -brand-short-name }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Selamat datang di <span data-l10n-name="zap">{ -brand-short-name }</span>
 onboarding-welcome-body = Anda telah mendapatkan perambannya. <br/>Temui lini produk { -brand-product-name } lainnya.
 onboarding-welcome-learn-more = Pelajari lebih lanjut tentang manfaatnya.
 onboarding-join-form-header = Bergabunglah dengan { -brand-product-name }
@@ -44,6 +41,75 @@ onboarding-start-browsing-button-label = Mulai Menjelajah
 onboarding-cards-dismiss =
     .title = Tutup
     .aria-label = Tutup
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Selamat datang di <span data-l10n-name="zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = Peramban cepat, aman, dan pribadi yang didukung oleh nirlaba.
+onboarding-multistage-welcome-primary-button-label = Mulai Penyiapan
+onboarding-multistage-welcome-secondary-button-label = Masuk
+onboarding-multistage-welcome-secondary-button-text = Sudah punya akun?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Impor kata sandi, markah, dan <span data-l10n-name="zap">yang lain</span>
+onboarding-multistage-import-subtitle = Dari peramban lain? Mudah sekali membawa semuanya ke { -brand-short-name }.
+onboarding-multistage-import-primary-button-label = Mulai Impor
+onboarding-multistage-import-secondary-button-label = Jangan sekarang
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Situs yang terdaftar di sini ditemukan di perangkat ini. { -brand-short-name } tidak menyimpan ataupun menyinkronkan data dari peramban lain kecuali Anda memilih untuk mengimpornya.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Memulai: layar { $current } dari { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Pilih <span data-l10n-name="zap">tampilan</span>
+onboarding-multistage-theme-subtitle = Personalisasikan { -brand-short-name } dengan tema.
+onboarding-multistage-theme-primary-button-label = Simpan Tema
+onboarding-multistage-theme-secondary-button-label = Jangan sekarang
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Otomatis
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = Gunakan tema sistem
+onboarding-multistage-theme-label-light = Terang
+onboarding-multistage-theme-label-dark = Gelap
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
+    .title =
+        Mengikuti tampilan dari sistem operasi
+        Anda untuk tombol, menu, dan jendela.
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        Gunakan tampilan cerah untuk
+        tombol, menu, dan jendela.
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        Gunakan tampilan gelap untuk
+        tombol, menu, dan jendela.
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title =
+        Gunakan tampilan berwarna untuk
+        tombol, menu, dan jendela.
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
 
 ## Welcome full page string
 

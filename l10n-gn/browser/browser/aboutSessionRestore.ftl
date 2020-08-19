@@ -2,12 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-restore-page-tab-title = Tembiapopa'ũ mbojevy
+restore-page-tab-title = Tembiapopa’ũ mbojevy
 # The title is intended to be apologetic and disarming, expressing dismay
 # and regret that we are unable to restore the session for the user
 restore-page-error-title = Oreñyrõmi katu ndajaikatúi jahechauka jey ndéve togue rehechava’ekue.
 restore-page-problem-desc = Oreapañuãihína rohechaukajey hag̃ua rehechava’ekue. Eiporavomi Tembiapopa’ũ Jehechaukajey.
-restore-page-try-this = Ndaikatúi gueteri reike jey rehechava’ekuépe? Sapy’ánte oĩ peteĩ tendayke ombyaíva upéva. Ema’ẽmi tendaykekuérare rehecháva’ekue, ha tysýipe eiporavomi umi tendayke reikotevẽtavante, upéi ikatu reñeha’ãjey.
+restore-page-try-this = Ndaikatúi gueteri reikejey rehechava’ekuépe? Sapy’ánte oĩ pe tendayke ombyaíva upéva. Ema’ẽmi tendayke rehechava’ekue, ha tysýipe eiporavomi tendayke eikotevẽva, upéi eha’ãjey.
 restore-page-hide-tabs = Tendayke Ramoitéva Ñomi
 restore-page-show-tabs = Tendayke Ramoitéva Jechauka
 # When tabs are distributed across multiple windows, this message is used as a
@@ -21,10 +21,10 @@ restore-page-restore-header =
 restore-page-list-header =
     .label = Ovetã ha tendayke
 restore-page-try-again-button =
-    .label = Tembiapopa'ũ Ñemoñepyrũjey
+    .label = Tembiapopa’ũ Ñemoñepyrũjey
     .accesskey = R
 restore-page-close-button =
-    .label = Tembiapopa'ũ Pyahu Moñepyrũ
+    .label = Tembiapopa’ũ Pyahu Moñepyrũ
     .accesskey = N
 
 ## The following strings are used in about:welcomeback

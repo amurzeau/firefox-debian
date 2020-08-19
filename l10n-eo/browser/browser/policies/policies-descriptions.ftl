@@ -36,6 +36,7 @@ policy-DisableFirefoxStudies = Malpermesi al { -brand-short-name } fari studojn.
 policy-DisableForgetButton = Malpermesi aliron al la butono "Forgesi".
 policy-DisableFormHistory = Ne memori serĉan kah formularan historion.
 policy-DisableMasterPasswordCreation = Se tio estas aktiva, ne eblos krei ĉefan pasvorton.
+policy-DisablePrimaryPasswordCreation = Se tio estas aktiva, ne eblos krei ĉefan pasvorton.
 policy-DisablePasswordReveal = Ne permesi malkaŝi pasvortojn en konservitaj legitimiloj.
 policy-DisablePocket = Malaktivigi la eblon konservi retpaĝojn en Pocket.
 policy-DisablePrivateBrowsing = Malaktivigi privatan retumon
@@ -79,6 +80,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Reiri al la tradicia k
 
 policy-LocalFileLinks = Permesi al kelkaj difinitaj retejoj havi ligilojn al lokaj dosieroj.
 policy-MasterPassword = Postuli aŭ eviti la uzon de ĉefa pasvorto.
+policy-PrimaryPassword = Postuli aŭ eviti la uzon de ĉefa pasvorto.
 policy-NetworkPrediction = Aktivigi aŭ malaktivigi retan prognozon (antaŭlegon de DNS).
 policy-NewTabPage = Aktivigi aŭ malaktivigi la paĝon por novaj langetoj.
 policy-NoDefaultBookmarks = Malaktivigi kreadon de la normaj legosignoj inkluzivitaj kun { -brand-short-name }, kaj de la inteligentaj legosignoj (pli ofte vizititaj, ĵusaj etikedoj). Rimarko: tiu ĉi politiko nur efikas se ĝi estas uzita antaŭ la unua uzo de la profilo.

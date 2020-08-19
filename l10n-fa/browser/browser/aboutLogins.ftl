@@ -3,12 +3,12 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
-about-logins-page-title = ورود ها و کلمات عبور
+about-logins-page-title = ورودها و گذرواژه‌ها
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
 login-app-promo-title = گذرواژه‌هایتان را همه جا با خود داشته باشید
-login-app-promo-subtitle = برنامه آزاد و رایگان { -lockwise-brand-name } را نصب کنید
+login-app-promo-subtitle = برنامهٔ آزاد و رایگان { -lockwise-brand-name } را نصب کنید
 login-app-promo-android =
     .alt = از Google Play دریافت کنید
 login-app-promo-apple =
@@ -27,6 +27,8 @@ menu =
     .title = باز کردن منو
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = وارد کردن از یک مرورگر دیگر…
+about-logins-menu-menuitem-import-from-a-file = افزودن از طریق یک پرونده…
+about-logins-menu-menuitem-export-logins = برون‌ریزی ورودها…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] گزینه‌ها
@@ -66,12 +68,14 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = دنبال اطلاعات ورود خود می‌گردید؟ { -sync-brand-short-name } را تنظیم کنید.
+about-logins-login-intro-heading-logged-out = به دنبال ورودهای ذخیره شدهٔ خود می‌گردید؟ { -sync-brand-short-name } را انجام دهید یا آنها را درون‌ریزی کنید.
 about-logins-login-intro-heading-logged-in = هیچ ورود همگام شده‌ای پیدا نشد
 login-intro-description = اگر شما ورودتون به{ -brand-product-name } را بر روی دستگاه دیگری ذخیره کرده‌اید،‌ به این شکل بدستشون بیارید:
 login-intro-instruction-fxa = { -fxaccount-brand-name } خود را ایجاد کنید یا بر روی دستگاهی که ورود های خود راثبت کرده اید به این حساب وارد شوید.
 login-intro-instruction-fxa-settings = مطمئن شوید که جعبه ورود در تنظیمات { -sync-brand-short-name } را انتخاب کرده اید.
 about-logins-intro-instruction-help = برای دریافت کمک بیشتری یا پشتیبانی به  <a data-l10n-name="help-link">{ -lockwise-brand-short-name }پشتیبانی</a> مراجعه کنید
 about-logins-intro-import = اگر اطلاعات ورود شما، در مرورگر دیگری ثبت شده است، می‌توانید از طریق <a data-l10n-name="import-link"> آن‌ها را به { -lockwise-brand-short-name }</a> منتقل کنید.
+about-logins-intro-import2 = اگر ورودهای شما خارج از { -brand-product-name } ذخیره شده‌اند، می‌توانید <a data-l10n-name="import-browser-link">آنها را از مرورگری دیگر</a> یا <a data-l10n-name="import-file-link">از طریق یک پرونده</a> وارد کنید
 
 ## Login
 
@@ -106,16 +110,34 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message-win = برای ویرایش ورودتان، گواهی ورود ویندوز خود را وارد کنید. این کار به محافظت از امنیت حسابتان کمک می‌کند.
 # This message can be seen when attempting to edit a login in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-edit-login-os-auth-dialog-message-macosx = ویرایش ورودهای ذخیره شده
+# This message can be seen when attempting to reveal a password in about:logins on Windows.
+about-logins-reveal-password-os-auth-dialog-message-win = برای دیدن گذرواژه خود، گذواژهٔ ویندوز خود را وارد کنید. این به امنیت حساب شما کمک می‌کند.
+# This message can be seen when attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = نمایش گذرواژهٔ ذخیره شده
+# This message can be seen when attempting to copy a password in about:logins on Windows.
+about-logins-copy-password-os-auth-dialog-message-win = برای رونوشت از گذرواژه خود، گذواژهٔ ویندوز خود را وارد کنید. این به امنیت حساب شما کمک می‌کند.
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = کپی رمز عبور ذخیره شده
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message-win = برای برون‌ریزی گذرواژه‌های خود، گذواژهٔ ویندوز خود را وارد کنید. این به امنیت حساب شما کمک می‌کند.
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message-macosx = برون‌ریزی ورودها و گذرواژه‌های ذخیره‌شده
 
 ## Master Password notification
 
 master-password-notification-message = برای دیدن نام‌های کاربری و گذرواژه‌ها، گذرواژهٔ اصلی خود را وارد کنید
+
+## Primary Password notification
+
+about-logins-primary-password-notification-message = برای دیدن ورودها و گذرواژه‌های ذخیره شدهٔ خود، گذاوژهٔ اصلی را وارد کنید
 master-password-reload-button =
     .label = ورود
     .accesskey = و
@@ -146,13 +168,18 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = حذف این ورود؟
 confirm-delete-dialog-message = این عمل قابل برگشت نیست.
 about-logins-confirm-remove-dialog-confirm-button = حذف
+about-logins-confirm-export-dialog-title = برون‌ریزی ورودها و گذرواژه‌ها
+about-logins-confirm-export-dialog-message = گذرواژه‌های شما به عنوان متن قابل خواندن ذخیره خواهد شد (مثلاً BadP@ssw0rd) بنابراین هر کسی که بتواند پرونده صادر شده را باز کند، می‌تواند آنها را ببیند.
+about-logins-confirm-export-dialog-confirm-button = برون‌ریزی…
 confirm-discard-changes-dialog-title = تغییرات ذخیره نشده نادیده گرفته شود؟
 confirm-discard-changes-dialog-message = تمام تغییرات ذخیره نشده از بین می‌روند.
 confirm-discard-changes-dialog-confirm-button = نادیده گرفتن
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = رخنه در وب‌سایت
 breach-alert-text = از آخرین باری که اطلاعات ورود خود را تغییر داده‌اید، گذرواژه‌های مربوط به این وب‌سایت سرقت یا به بیرون درز کرده است. گذرواژه خود را تغییر دهید تا در خطر نباشید.
+about-logins-breach-alert-date = این رخنه در تاریخ { DATETIME($date, day: "numeric", month: "long", year: "numeric") } اتفاق افتاده
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-breach-alert-link = برو به { $hostname }
@@ -161,6 +188,7 @@ about-logins-breach-alert-learn-more-link = بیشتر بدانید
 ## Vulnerable Password notification
 
 about-logins-vulnerable-alert-title = رمز عبور آسیب پذیر
+about-logins-vulnerable-alert-text2 = این گذرواژه در یک حساب دیگر که احتمالاً هک شده است استفاده شده. استفاده مجدد از گذرواژه، تمام حسابهای شما را در معرض خطر قرار می‌دهد. این گذرواژه را تغییر دهید.
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-vulnerable-alert-link = برو به { $hostname }
@@ -178,9 +206,12 @@ about-logins-error-message-default = خطای هنگام ذخیره این گذ�
 
 ## Login Export Dialog
 
+# Title of the file picker dialog
+about-logins-export-file-picker-title = برون‌ریزی پروندهٔ ورودها
 # The default file name shown in the file picker when exporting saved logins.
 # This must end in .csv
 about-logins-export-file-picker-default-filename = ورودها.csv
+about-logins-export-file-picker-export-button = برون‌ریزی
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
 about-logins-export-file-picker-csv-filter-title =
@@ -191,3 +222,13 @@ about-logins-export-file-picker-csv-filter-title =
 
 ## Login Import Dialog
 
+# Title of the file picker dialog
+about-logins-import-file-picker-title = وارد کردن پروندهٔ ورودها
+about-logins-import-file-picker-import-button = درون‌ریزی
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] سند CSV
+       *[other] پرونده CSV
+    }

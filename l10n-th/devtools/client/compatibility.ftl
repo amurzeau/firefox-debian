@@ -5,13 +5,18 @@
 
 ## Messages used as headers in the main pane
 
+compatibility-selected-element-header = องค์ประกอบที่ถูกเลือก
 compatibility-all-elements-header = ปัญหาทั้งหมด
 
 ## Message used as labels for the type of issue
 
 compatibility-issue-deprecated = (เลิกใช้)
 compatibility-issue-experimental = (ทดลอง)
+compatibility-issue-prefixneeded = (จำเป็นต้องใส่คำนำหน้า)
 compatibility-issue-deprecated-experimental = (เลิกใช้, ทดลอง)
+compatibility-issue-deprecated-prefixneeded = (เลิกใช้แล้ว และจำเป็นต้องใส่คำนำหน้า)
+compatibility-issue-experimental-prefixneeded = (เป็นคุณลักษณะทดลอง และจำเป็นต้องใส่คำนำหน้า)
+compatibility-issue-deprecated-experimental-prefixneeded = (เลิกใช้แล้ว เป็นคุณลักษณะทดลอง และจำเป็นต้องใส่คำนำหน้า)
 
 ## Messages used as labels and titles for buttons in the footer
 
@@ -29,5 +34,13 @@ compatibility-target-browsers-header = เบราว์เซอร์เป�
 
 ##
 
+# Text used as the label for the number of nodes where the issue occurred
+# Variables:
+#   $number (Number) - The number of nodes where the issue occurred
+compatibility-issue-occurrences =
+    { $number ->
+       *[other] { $number } ครั้งที่ปรากฏ
+    }
+compatibility-no-issues-found = ไม่พบปัญหาความเข้ากันได้
 compatibility-close-settings-button =
     .title = ปิดการตั้งค่า

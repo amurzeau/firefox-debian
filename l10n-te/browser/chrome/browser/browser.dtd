@@ -136,6 +136,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 
 <!-- LOCALIZATION NOTE (fxa.unverified) Used to define the different labels
      for the Firefox Account toolbar unverified menu screen. -->
+<!ENTITY fxa.unverified.button.label "&syncBrand.shortName.label; అమరికలను తెరువు…">
 
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbart menu screen. The `Signed in as` text is
@@ -147,7 +148,9 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!-- LOCALIZATION NOTE (fxa.menu) Used to define the different labels
      for the Firefox Account toolbar menu screen. The `Signed in as` text is
      followed by the user's email. -->
+<!ENTITY fxa.menu.syncSettings2.label "&syncBrand.shortName.label; అమరికలు">
 
+<!ENTITY fxa.menu.firefoxServices.label "&brandProductName; సేవలు">
 <!ENTITY fxa.menu.account.label "ఖాతా">
 <!ENTITY fxa.menu.accountSettings.label "ఖాతా అమరికలు">
 <!ENTITY fxa.menu.manageAccount2.label "ఖాతా నిర్వహణ">
@@ -231,7 +234,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY urlbar.passwordNotificationAnchor.tooltip        "పాస్‌వర్డ్ భద్రపరచు సందేశపు ప్యానెలును తెరువు">
 <!ENTITY urlbar.pluginsNotificationAnchor.tooltip         "ప్లగ్-ఇన్ వాడకాన్ని నిర్వహించండి">
 <!ENTITY urlbar.webNotificationAnchor.tooltip             "మీరు సైటు నుండి నోటిఫికేషన్లు అందుకుంటారో లేదో మార్చండి">
-<!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "నిరంతర నిల్వ డేటాని నిల్వ చేయండి">
+<!ENTITY urlbar.persistentStorageNotificationAnchor.tooltip     "నిరంతర నిల్వలో డేటాని నిల్వ చేయడం">
 <!ENTITY urlbar.remoteControlNotificationAnchor.tooltip   "విహరణి వ్యవహిత నియంత్రణ కింద ఉంది">
 <!ENTITY urlbar.webAuthnAnchor.tooltip                    "జాల ధ్రువీకరణ ప్యానెలును తెరువు">
 
@@ -436,6 +439,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY customizeMenu.removeFromToolbar.accesskey "R">
 <!ENTITY customizeMenu.addMoreItems.label "మరిన్ని అంశాలను చేర్చండి…">
 <!ENTITY customizeMenu.addMoreItems.accesskey "A">
+<!ENTITY customizeMenu.autoHideDownloadsButton.label "పనిముట్లపట్టీలో స్వయం-దాచు">
 <!ENTITY customizeMenu.autoHideDownloadsButton.accesskey "A">
 <!ENTITY customizeMenu.manageExtension.label "పొడగింత నిర్వహణ">
 <!ENTITY customizeMenu.manageExtension.accesskey "E">
@@ -789,7 +793,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.connection "అనుసంధానం">
 <!ENTITY identity.connectionSecure "సురక్షిత అనుసంధానం">
 <!ENTITY identity.connectionNotSecure "అనుసంధానం సురక్షితమైనది కాదు">
-<!ENTITY identity.connectionFile "ఈ పేజీ మీ కంప్యూటర్లో భద్రమయివుంటుంది.">
+<!ENTITY identity.connectionFile "ఈ పేజీ మీ కంప్యూటర్లో భద్రమైవుంది.">
 <!ENTITY identity.connectionVerified2 "మీరు సురక్షితంగా ఈ సైటుకి అనుసంధానమయ్యారు, యాజమాన్యం:">
 <!ENTITY identity.connectionInternal "ఇది సురక్షిత &brandShortName; పేజీ.">
 <!ENTITY identity.extensionPage "ఈ పేజీ ఒక పొడగింత నుండి తెరవబడింది.">
@@ -937,6 +941,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY homepageControlled.disableButton.label "పొడగింతను అచేతనం చేయి">
 <!ENTITY homepageControlled.disableButton.accesskey "D">
 
+<!ENTITY tabHideControlled.header.message "దాచివున్న ట్యాబులను చూడండి">
 <!ENTITY tabHideControlled.keepButton.label "ట్యాబులను దాచి ఉంచు">
 <!ENTITY tabHideControlled.keepButton.accesskey "K">
 <!ENTITY tabHideControlled.disableButton.label "పొడగింతను అచేతనం చేయి">

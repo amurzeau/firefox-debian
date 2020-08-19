@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Ehai sa’ive, ejuhuve: Eheka { $engineName } kundaharape rendaite guive.
 urlbar-search-tips-redirect-2 = Eñepyrũ eheka kundaharape rendápe ehecha hag̃ua { $engineName } ñe’ẽporã ha ikundaha rembiasakue.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Techaukahakuéra
+urlbar-search-mode-tabs = Tendaykekuéra
+urlbar-search-mode-history = Tembiasakue
+
 ##
 
 urlbar-geolocation-blocked =
@@ -185,6 +191,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Emoĩ jehekaha mongu’eha ijypykuévaramo ovetã ñemíme
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Techaukahakuéra ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Tendaykekuéra ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Tebiasakue ({ $restrict })
 
 ## Bookmark Panel
 
@@ -209,7 +235,7 @@ identity-extension-page = Ko kuatiarogue oñemyanyhẽ jepysokue guive.
 identity-active-blocked = { -brand-short-name } ojokóma ko kuatiarogue pehẽ ijerovia’ỹha.
 identity-custom-root = Jeike ohechapyréva mboajepyre me’ẽha Mozilla omoneĩ’ỹva.
 identity-passive-loaded = Ko kuatiarogue pehẽ heta hendápe nda’ijeroviapái (mba’era’ãngáramo).
-identity-active-loaded = Ndereguerekói pa'ũ ko kuatiaroguépe g̃uarã.
+identity-active-loaded = Ndereguerekói pa’ũ ko kuatiaroguépe g̃uarã.
 identity-weak-encryption = Ko kuatiarogue oipuru ñangarekoha ikangýva.
 identity-insecure-login-forms = Ojehaiva’ekue jeike hag̃ua ko kuatiaroguépe oñemondakuaa.
 identity-permissions =
@@ -294,6 +320,10 @@ urlbar-default-placeholder =
     .defaultPlaceholder = Ñe’ẽreka ýrõ kundaharape
 urlbar-placeholder =
     .placeholder = Ñe’ẽreka ýrõ kundaharape
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Eheka { $name } ndive térã emoinge kundaharape
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Kundahára oĩ ñangarekoha okayguáva poguýpe
 urlbar-permissions-granted =

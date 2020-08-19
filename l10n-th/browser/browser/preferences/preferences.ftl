@@ -50,6 +50,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = คุณลักษณะทดลองของ { -brand-short-name }
+category-experimental =
+    .tooltiptext = คุณลักษณะทดลองของ { -brand-short-name }
+pane-experimental-subtitle = ดำเนินการต่อด้วยความระมัดระวัง
+pane-experimental-search-results-header = คุณลักษณะทดลองของ { -brand-short-name }: ดำเนินการต่อด้วยความระมัดระวัง
+pane-experimental-description = การเปลี่ยนแปลงค่ากำหนดขั้นสูงอาจส่งผลต่อประสิทธิภาพหรือความปลอดภัยของ { -brand-short-name } ได้
 help-button-label = การสนับสนุนของ { -brand-short-name }
 addons-button-label = ส่วนขยายและชุดตกแต่ง
 focus-search =
@@ -487,7 +493,6 @@ home-prefs-topsites-description = ไซต์ที่คุณเยี่ย�
 
 home-prefs-recommended-by-header =
     .label = แนะนำโดย { $provider }
-home-prefs-recommended-by-description = เนื้อหาที่ยอดเยี่ยมจากเว็บต่าง ๆ ปรับแต่งให้เป็นส่วนบุคคลเพื่อคุณ
 home-prefs-recommended-by-description-update = เนื้อหาสุดพิเศษจากเว็บทั่วโลกที่คัดสรรมาโดย { $provider }
 
 ##
@@ -547,7 +552,6 @@ search-show-suggestions-above-history-option =
     .label = แสดงข้อเสนอแนะการค้นหานำหน้าประวัติการเรียกดูในผลลัพธ์ของแถบที่อยู่
 search-show-suggestions-private-windows =
     .label = แสดงคำแนะนำการค้นหาในหน้าต่างส่วนตัว
-suggestions-addressbar-settings = เปลี่ยนค่ากำหนดสำหรับประวัติการท่องเว็บ ที่คั่นหน้า และแท็บแนะนำ
 suggestions-addressbar-settings-generic = เปลี่ยนค่ากำหนดข้อเสนอแนะจากแถบที่อยู่อื่น ๆ
 search-suggestions-cant-show = ข้อเสนอแนะการค้นหาจะไม่แสดงในผลลัพธ์ของแถบตำแหน่งที่ตั้งเนื่องจากคุณได้กำหนดค่า { -brand-short-name } ให้ไม่จดจำประวัติเสมอ
 search-one-click-header = เครื่องมือค้นหาในคลิกเดียว
@@ -783,10 +787,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = ใช้รหัสผ่านหลัก
     .accesskey = ช
+forms-primary-pw-use =
+    .label = ใช้รหัสผ่านหลัก
+    .accesskey = ช
+forms-primary-pw-learn-more-link = เรียนรู้เพิ่มเติม
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = เปลี่ยนรหัสผ่านหลัก…
     .accesskey = ผ
 forms-master-pw-fips-title = คุณกำลังอยู่ในโหมด FIPS ซึ่ง FIPS จำเป็นต้องมีรหัสผ่านหลักที่ไม่ว่างเปล่า
+forms-primary-pw-change =
+    .label = เปลี่ยนรหัสผ่านหลัก…
+    .accesskey = ล
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = คุณกำลังอยู่ในโหมด FIPS ซึ่ง FIPS จำเป็นต้องมีรหัสผ่านหลักที่ไม่ว่างเปล่า
 forms-master-pw-fips-desc = การเปลี่ยนรหัสผ่านล้มเหลว
 
 ## OS Authentication dialog
@@ -798,6 +817,13 @@ master-password-os-auth-dialog-message-win = หากต้องการส�
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = สร้างรหัสผ่านหลัก
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = หากต้องการสร้างรหัสผ่านหลัก ให้ป้อนข้อมูลประจำตัวการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่าง ๆ ของคุณ
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = สร้างรหัสผ่านหลัก
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -1145,6 +1171,18 @@ space-alert-under-5gb-ok-button =
     .label = ตกลง เข้าใจแล้ว
     .accesskey = ต
 space-alert-under-5gb-message = พื้นที่ดิสก์ของ { -brand-short-name } กำลังจะเต็ม เนื้อหาเว็บไซต์อาจแสดงผลไม่ถูกต้อง เยี่ยมชม “เรียนรู้เพิ่มเติม” เพื่อเพิ่มประสิทธิภาพการใช้งานดิสก์ของคุณสำหรับประสบการณ์การท่องเว็บที่ดีขึ้น
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = โหมด HTTPS-Only
+httpsonly-description = HTTPS จะจัดให้มีการเชื่อมต่อแบบเข้ารหัสที่ปลอดภัยระหว่าง { -brand-short-name } และเว็บไซต์ที่คุณเยี่ยมชม เว็บไซต์ส่วนใหญ่จะรองรับ HTTPS และหากเปิดใช้งานโหมด HTTPS-Only แล้ว { -brand-short-name } จะอัปเกรดการเชื่อมต่อทั้งหมดเป็น HTTPS
+httpsonly-learn-more = เรียนรู้เพิ่มเติม
+httpsonly-radio-enabled =
+    .label = เปิดใช้งานโหมด HTTPS-Only ในหน้าต่างทั้งหมด
+httpsonly-radio-enabled-pbm =
+    .label = เปิดใช้งานโหมด HTTPS-Only ในหน้าต่างส่วนตัวเท่านั้น
+httpsonly-radio-disabled =
+    .label = ไม่ต้องเปิดใช้งานโหมด HTTPS-Only
 
 ## The following strings are used in the Download section of settings
 

@@ -54,6 +54,7 @@ pane-experimental-title = { -brand-short-name } eksperimenti
 category-experimental =
     .tooltiptext = { -brand-short-name } eksperimenti
 pane-experimental-subtitle = Nastavi s oprezom
+pane-experimental-search-results-header = { -brand-short-name } eksperimenti: Nastavi s oprezom
 help-button-label = { -brand-short-name } podrška
 addons-button-label = Proširenja i teme
 focus-search =
@@ -353,7 +354,7 @@ play-drm-content =
     .accesskey = p
 play-drm-content-learn-more = Saznaj više
 update-application-title = { -brand-short-name } dopune
-update-application-description = Ažuriraj { -brand-short-name } za najbolju preformansu, stabilnost i sigurnost.
+update-application-description = Aktualiziraj { -brand-short-name } za najbolju performansu, stabilnost i sigurnost.
 update-application-version = Verzija { $version } <a data-l10n-name="learn-more">Što je novo</a>
 update-history =
     .label = Prikaži povijest nadogradnji …
@@ -379,16 +380,16 @@ update-pref-write-failure-title = Greška prilikom zapisivanja
 # Variables:
 #   $path (String) - Path to the configuration file
 update-pref-write-failure-message = Nije moguće spremiti postavke. Nije bilo moguće pisati u datoteku: { $path }
-update-setting-write-failure-title = Greška prilikom spremanju postavki ažuriranja
+update-setting-write-failure-title = Greška prilikom spremanja postavki aktualiziranja
 # Variables:
 #   $path (String) - Path to the configuration file
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
-    { -brand-short-name } je naišao na pogrešku i nije spremio ovu promjenu. Uzmi u obzir da postavljanje postavki za ovo ažuriranje zahtjeva dozvole za pisanje u niže navedenu datoteku. Ti ili tvoj administrator sustava možda možete otkloniti ovu grešku, tako da dozvolite grupi korisnika potpunu kontrolu nad ovom datotekom.
+    { -brand-short-name } je naišao na pogrešku i nije spremio ovu promjenu. Uzmi u obzir da postavljanje postavki za ovo aktualiziranje zahtijeva dozvole za pisanje u niže navedenu datoteku. Ti ili tvoj administrator sustava možda možete otkloniti ovu grešku, tako da dozvolite grupi korisnika potpunu kontrolu nad ovom datotekom.
     
     Nije moguće pisati u datoteku: { $path }
-update-in-progress-title = Ažuriranje u tijeku
+update-in-progress-title = Aktualiziranje u tijeku
 update-in-progress-message = Želiš li { -brand-short-name } nastavi s ovim aktualiziranjem?
 update-in-progress-ok-button = O&dbaci
 # Continue is the cancel button so pressing escape or using a platform standard
@@ -483,8 +484,8 @@ home-homepage-custom-url =
 use-current-pages =
     .label =
         { $tabCount ->
-            [1] Koristi trenutnu stranicu
-           *[other] Koristi trenutne stranice
+            [1] Koristi trenutačnu stranicu
+           *[other] Koristi trenutačne stranice
         }
     .accesskey = c
 choose-bookmark =
@@ -506,7 +507,6 @@ home-prefs-topsites-description = Stranice koje najviše posjećujete
 
 home-prefs-recommended-by-header =
     .label = Preporučeno od { $provider }
-home-prefs-recommended-by-description = Vrhunski sadržaj iz svih krajeva interneta, presonaliziran za tebe
 
 ##
 
@@ -530,7 +530,7 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Isječci
-home-prefs-snippets-description = Ažuriranja od { -vendor-short-name } i { -brand-product-name }a
+home-prefs-snippets-description = Aktualiziranje od { -vendor-short-name } i { -brand-product-name }a
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -570,7 +570,6 @@ search-show-suggestions-above-history-option =
     .label = U adresnoj traci prikaži prijedloge za pretraživanje prije povijesti pregledavanja
 search-show-suggestions-private-windows =
     .label = Prikaži prijedloge za pretraživanje u privatnim prozorima
-suggestions-addressbar-settings = Promijeni postavke za povijest pregledavanja, zabilješke i prijedloge za kartice
 search-suggestions-cant-show = Prijedlozi pretraživanja neće biti prikazani u lokacijskoj traci, jer je { -brand-short-name } podešen, da ne pamti povijest.
 search-one-click-header = Tražilice jednim klikom
 search-one-click-desc = Odaberi alternativne tražilice, koje će se pojaviti ispod adresne trake i trake pretraživanja kad počneš upisivati pojmove.
@@ -805,6 +804,9 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Koristi glavnu lozinku
     .accesskey = u
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Promijeni glavnu lozinku …
     .accesskey = m
@@ -1162,6 +1164,18 @@ space-alert-under-5gb-ok-button =
     .label = U redu, razumijem
     .accesskey = U
 space-alert-under-5gb-message = { -brand-short-name }u ponestaje memorije. Sadržaji stranica se možda neće dobro prikazati. Posjeti „Saznaj više” za optimiranje korištenja memorije za bolje iskustvo tijekom pregledavanja.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Samo HTTPS modus
+httpsonly-description = HTTPS pruža sigurnu, šifriranu vezu između { -brand-short-name } i web-stranica koje posjećuješ. Većina web-stranica podržava HTTPS, a ako je samo HTTPS modus aktiviran, tada će { -brand-short-name } nadograditi sve veze na HTTPS.
+httpsonly-learn-more = Saznaj više
+httpsonly-radio-enabled =
+    .label = Aktiviraj samo HTTPS modus u svim prozorima
+httpsonly-radio-enabled-pbm =
+    .label = Aktiviraj samo HTTPS modus samo u privatnim prozorima
+httpsonly-radio-disabled =
+    .label = Nemoj aktivirati samo HTTPS modus
 
 ## The following strings are used in the Download section of settings
 

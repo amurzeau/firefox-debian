@@ -250,3 +250,9 @@ cfr-doorhanger-doh-primary-button = OK, Aikumbýma
     .accesskey = O
 cfr-doorhanger-doh-secondary-button = Pe’a
     .accesskey = D
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Ñemo’ã ijeheguíva tapykuehoha kañyguáva rovake
+cfr-whatsnew-clear-cookies-body = Oĩ tapykuehoha omondóva ambue ñanduti rendápe ombohekóva kookie kañyhápe. { -brand-short-name } ko’ág̃a ombogue ijehegui umi kookie ani hag̃ua nde rapykueho.
+cfr-whatsnew-clear-cookies-image-alt = Kookie jokopyre ñemoha’ãnga

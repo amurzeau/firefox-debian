@@ -2,7 +2,7 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY loadError.label "Page Load Error">
+<!ENTITY loadError.label "Error de cargament de la pagina">
 <!ENTITY retry.label "Tornar ensajar">
 
 <!-- Specific error messages -->
@@ -33,12 +33,12 @@
 <!ENTITY malformedURI.longDesc "<p>L’adreça fornida es pas dins un format reconegut. Mercés de verificar qu’i aja pas cap d’error a la barra d’adreça e tornatz ensajar.</p>">
 
 <!ENTITY netInterrupt.title "Data Transfer Interrupted">
-<!ENTITY netInterrupt.longDesc "<p>The browser connected successfully, but the connection was interrupted while transferring information.  Please try again.</p><ul><li>Are you unable to browse other sites? Check the computer's network connection.</li><li>Still having trouble? Consult your network administrator or Internet provider for assistance.</li></ul>">
+<!ENTITY netInterrupt.longDesc "<p>Lo navegador s’es corrèctament connectat, mas la connexion es estada interrompuda pendent lo transferiment d’informacions. Tornatz ensajar.</p><ul><li>Podètz pas consultar d’autres sites tanpauc ? Verificatz la connexion de l’ordenador.</li><li>Avètz encara de problèmas ? Consultatz l’administrator ret o vòstre provesidor d’accès Internet per dire d’obténer d’ajuda.</li></ul>">
 
 <!ENTITY notCached.title "Lo document a expirat">
 <!ENTITY notCached.longDesc "<p>Lo document demandat es pas disponible dins lo cache del navegador.</p> <ul> <li>Per de rasons de seguretat, lo navegador redemanda pas automaticament los documents sensibles.</li> <li>Clicar sus « Ensajar tornarmai » per tornar demandar lo document a partir del site Web.</li> </ul>">
 
-<!ENTITY netOffline.title "Offline Mode">
+<!ENTITY netOffline.title "Mòde fòra connexion">
 <!ENTITY netOffline.longDesc2 "<p>Lo navegador es en mòde fòra connexion e se pòt pas connectar a l&apos;adreça indicada.</p><ul><li>L&apos;ordenador es connectat a la ret ?</li><li>Clicatz sul boton &quot;Ensajar tornarmai&quot; per tornar en mòde connectat e recargar la pagina.</li></ul>">
 
 <!ENTITY contentEncodingError.title "Error d'encodatge de contengut">
@@ -47,11 +47,11 @@
 <!ENTITY unsafeContentType.title "Tipe de fichièr pas segur">
 <!ENTITY unsafeContentType.longDesc "<ul> <li>Contactatz lo webmèstre del site per l'assabentar d'aqueste problèma.</li> </ul>">
 
-<!ENTITY netReset.title "Connection Interrupted">
-<!ENTITY netReset.longDesc "<p>The network link was interrupted while negotiating a connection. Please try again.</p>">
+<!ENTITY netReset.title "Connexion interrompuda">
+<!ENTITY netReset.longDesc "<p>Lo ligam ret es estat interromput pendent la negociacion d’una connexion. Tornat ensajar</p>">
 
 <!ENTITY netTimeout.title "Network Timeout">
-<!ENTITY netTimeout.longDesc "<p>Lo navegador a esperat tròp longtemps al moment de la connexion al site e a arrestat d'esperar una responsa.</p> <ul> <li>Benlèu que lo servidor es en suscarga o es temporàriament en pana ? Ensajatz pus tard.</li><li>D'autres sites son tanben inaccessibles ? Verificatz la connexion a la ret de vòstre ordenador.</li> <li>Vòstre ordenador o vòstra ret es protegida per un parafuòc o un proxy?  De paramètres incorrèctes pòdon interferir amb la navegacion sus lo Web.</li> <li>Avètz totjorn de problèmas ? Consultatz vòstre administrator de la ret o vòstre provesidor d'accès a Internet per obténer d'ajuda.</li> </ul>">
+<!ENTITY netTimeout.longDesc "<p>Lo navegador a esperat tròp longtemps al moment de la connexion al site e a arrestat d'esperar una responsa.</p> <ul> <li>Benlèu que lo servidor es en suscarga o es temporàriament en pana ? Ensajatz pus tard.</li><li>D'autres sites son tanben inaccessibles ? Verificatz la connexion a la ret de vòstre ordenador.</li> <li>Vòstre ordenador o vòstra ret es protegida per un parafuòc o un proxy ? De paramètres incorrèctes pòdon interferir amb la navegacion sus lo Web.</li> <li>Avètz totjorn de problèmas ? Consultatz vòstre administrator de la ret o vòstre provesidor d'accès a Internet per obténer d'ajuda.</li> </ul>">
 
 <!ENTITY unknownProtocolFound.title "Protocòl desconegut">
 <!ENTITY unknownProtocolFound.longDesc "<p>L'adreça indica un protocòl (per ex. <q>wxyz://</q>) desconegut del navegador que doncas se pòt pas connectar corrèctament al site.</p><ul><li>Ensajatz d'accedir a de contengut multimèdia o d'autres servicis que son pas de tèxte ? Verificatz los prerequesits logicials del site.</li><li>D'unes protocòls pòdon necessitar un logiciel tèrç o de plugins per que lo navegador los pòsca reconéisser.</li></ul>">

@@ -803,10 +803,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Bruk eit hovudpassord
     .accesskey = r
+forms-primary-pw-use =
+    .label = Bruk eit primært passord
+    .accesskey = B
+forms-primary-pw-learn-more-link = Les meir
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Endre hovudpassord…
     .accesskey = d
 forms-master-pw-fips-title = Du er i FIPS-modus. FIPS krev at du brukar eit hovudpassord.
+forms-primary-pw-change =
+    .label = Endre hovudpassord…
+    .accesskey = E
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = ""
+forms-primary-pw-fips-title = Du er for tida i FIPS-modus. FIPS krev eit hovudpassord.
 forms-master-pw-fips-desc = Mislykka passordendring
 
 ## OS Authentication dialog
@@ -818,6 +833,13 @@ master-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen 
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = opprette eit hovudpassord
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen din for Windows for å lage eit hovudpassord. Dette hvil gjere kontoen din tryggare.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = lag eit hovudpassord
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -981,7 +1003,7 @@ content-blocking-unvisited-cookies = Infokapslar frå ikkje-besøkte nettsider
 content-blocking-all-windows-trackers = Kjende sporarar i alle vindauge
 content-blocking-all-windows-tracking-content = Sporingsinnhald i alle vindauge
 content-blocking-all-third-party-cookies = Alle tredjeparts infokapslar
-content-blocking-cryptominers = Kryptominarar
+content-blocking-cryptominers = Kryptoutvinnarar
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Viktig!
 content-blocking-warning-description = Blokkering av innhald kan føre til at nokre nettstadar sluttar å fungere. Det er enkelt å deaktivere blokkering for nettstadar du stolar på.
@@ -1012,7 +1034,7 @@ content-blocking-expand-section =
     .tooltiptext = Meir informasjon
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
-    .label = Kryptominarar
+    .label = Kryptoutvinnarar
     .accesskey = y
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.

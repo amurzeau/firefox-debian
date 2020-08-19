@@ -803,10 +803,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Seqdec awal uffir agejdan
     .accesskey = S
+forms-primary-pw-use =
+    .label = Seqdec awal uffir agejdan
+    .accesskey = U
+forms-primary-pw-learn-more-link = Issin ugar
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Snifel awal uffir agejdan…
     .accesskey = a
 forms-master-pw-fips-title = Aql-ak deg uskar FIPS . FIPS yesra awal uffir agejdan arilem.
+forms-primary-pw-change =
+    .label = Beddel awal uffir…
+    .accesskey = P
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Aql-ak·akem akka tura deg uskar FIPS . FIPS yesra awal uffir agejdan arilem.
 forms-master-pw-fips-desc = Asnifel n wawal uffir agejdan ur yeddi ara
 
 ## OS Authentication dialog
@@ -818,6 +833,13 @@ master-password-os-auth-dialog-message-win = Akken ad ternuḍ awal-inek uffir a
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = Rnu awal uffir agejdan
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Akken ad ternuḍ awal-inek·inem uffir agejdan, sekcem inekcam-inek·inem n tuqqna n Windows. Ayagi ad yeḍmen aḥraz n tɣellist n yimiḍanen-inek·inem.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = rnu awal uffir agejdan
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -1165,6 +1187,18 @@ space-alert-under-5gb-ok-button =
     .label = IH awi-t-id
     .accesskey = H
 space-alert-under-5gb-message = Amkan n udebṣi iteddu ad yaweḍ ar { -brand-short-name }. Igburen n usmel web ur d-ttbanen ara akken iwata.  Ddu ar "Issin ugar" akken ad tseggmeḍ aseqdec n udebṣi-ik akken tarmit n tunigin ad tuɣal tfaz.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Askar HTTPS-Only
+httpsonly-description = HTTPS yettmuddu-d tuqqna taɣelsant, yettwawgelhen gar { -brand-short-name } d yismal web wuɣur trezzuḍ. Amur meqqren n yismal web ssefraken HTTPS rnu ma yella asker HTTPS yermed, { -brand-short-name } ad ileqqem akk tuqqniwin ɣer HTTPS.
+httpsonly-learn-more = Issin ugar
+httpsonly-radio-enabled =
+    .label = Rmed askar HTTPS-Only deg yisfuyla akk
+httpsonly-radio-enabled-pbm =
+    .label = Rmed askar HTTPS-Only deg yisfuyla usligen kan
+httpsonly-radio-disabled =
+    .label = Ur remmed ara askar HTTPS-Only
 
 ## The following strings are used in the Download section of settings
 

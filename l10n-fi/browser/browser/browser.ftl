@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Kirjoita vähemmän, löydä enemmän: Hae hakukoneella { $engineName } suoraan osoitepalkista.
 urlbar-search-tips-redirect-2 = Aloita hakeminen osoitepalkista, niin näet ehdotukset palvelusta { $engineName } ja selaushistoriastasi.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Kirjanmerkit
+urlbar-search-mode-tabs = Välilehdet
+urlbar-search-mode-history = Historia
+
 ##
 
 urlbar-geolocation-blocked =
@@ -185,6 +191,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Aseta oletushakukoneeksi yksityisissä ikkunoissa
     .accesskey = A
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Kirjanmerkit ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Välilehdet ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Historia ({ $restrict })
 
 ## Bookmark Panel
 
@@ -294,6 +320,10 @@ urlbar-default-placeholder =
     .defaultPlaceholder = Kirjoita osoite tai hakutermi
 urlbar-placeholder =
     .placeholder = Kirjoita osoite tai hakutermi
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Hae hakukoneella { $name } tai kirjoita osoite
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Selain on kauko-ohjauksessa
 urlbar-permissions-granted =

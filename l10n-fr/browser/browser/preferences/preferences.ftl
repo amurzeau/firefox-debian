@@ -803,21 +803,43 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Utiliser un mot de passe principal
     .accesskey = U
+forms-primary-pw-use =
+    .label = Utiliser un mot de passe principal
+    .accesskey = U
+forms-primary-pw-learn-more-link = En savoir plus
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Changer le mot de passe principal…
     .accesskey = C
 forms-master-pw-fips-title = Vous êtes actuellement en mode FIPS. Ce mode nécessite un mot de passe principal non vide.
+forms-primary-pw-change =
+    .label = Changer le mot de passe principal…
+    .accesskey = C
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Vous êtes actuellement en mode FIPS. Ce mode nécessite un mot de passe principal non vide.
 forms-master-pw-fips-desc = Échec de la modification du mot de passe principal
 
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Pour créer un mot de passe principal, entrez vos informations de connexion Windows. Cela permet de conserver la sécurité de vos comptes.
+master-password-os-auth-dialog-message-win = Pour créer un mot de passe principal, entrez vos informations de connexion Windows. Cela contribue à protéger la sécurité de vos comptes.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = créer un mot de passe principal
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Pour créer un mot de passe principal, saisissez vos informations de connexion Windows. Cela contribue à protéger la sécurité de vos comptes.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = créer un mot de passe principal
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -1169,6 +1191,7 @@ space-alert-under-5gb-message = { -brand-short-name } n’a plus assez d’espac
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = Mode HTTPS uniquement
+httpsonly-description = HTTPS procure une connexion sûre et chiffrée entre { -brand-short-name } et les sites web sur lesquels vous vous rendez. La plupart des sites web prennent en charge HTTPS. Si le mode HTTPS uniquement est activé, { -brand-short-name } surclassera alors toutes les connexions en HTTPS.
 httpsonly-learn-more = En savoir plus
 httpsonly-radio-enabled =
     .label = Activer le mode HTTPS uniquement dans toutes les fenêtres

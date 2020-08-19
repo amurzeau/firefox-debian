@@ -19,9 +19,6 @@ onboarding-button-label-get-started = Kom i gang
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = Velkommen til { -brand-short-name }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Velkommen til <span data-l10n-name="zap">{ -brand-short-name }</span>
 onboarding-welcome-body = Du har nettleseren.<br/>Møt resten av { -brand-product-name }.
 onboarding-welcome-learn-more = Les mer om fordelene.
 onboarding-join-form-header = Vær med { -brand-product-name }
@@ -44,16 +41,79 @@ onboarding-start-browsing-button-label = Start nettlesing
 onboarding-cards-dismiss =
     .title = Avslå
     .aria-label = Avslå
-# Tooltip displayed on hover of top sites in import settings screen during onboarding flow.
-# This support welcome screen showing top sites imported from the user's default browser.
-# Title text is kept multiline to ensure tooltip container width is not more than 40 characters.
-onboarding-import-sites-info =
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Velkommen til <span data-l10n-name="zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = Den raske, trygge og private nettleseren som er støttet av en ideell organisasjon.
+onboarding-multistage-welcome-primary-button-label = Start oppsett
+onboarding-multistage-welcome-secondary-button-label = Logg inn
+onboarding-multistage-welcome-secondary-button-text = Har du allerede en konto?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Importer passord, bokmerker og <span data-l10n-name="zap">mer</span>
+onboarding-multistage-import-subtitle = Kommer du fra en annen nettleser? Det er enkelt å ta alt med til { -brand-short-name }.
+onboarding-multistage-import-primary-button-label = Start import
+onboarding-multistage-import-secondary-button-label = Ikke nå
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer =
+    Nettstedene som er oppført her ble funnet på denne enheten.
+    { -brand-short-name } lagrer eller synkroniserer
+    ikke data fra en annen nettleser med mindre du
+    velger å importer den.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Komme i gang: Skjermbilde { $current } av { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Velg et <span data-l10n-name="zap">utseende</span>
+onboarding-multistage-theme-subtitle = Tilpass { -brand-short-name } med et tema.
+onboarding-multistage-theme-primary-button-label = Lagre tema
+onboarding-multistage-theme-secondary-button-label = Ikke nå
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Automatisk
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = Bruk systemtema
+onboarding-multistage-theme-label-light = Lyst
+onboarding-multistage-theme-label-dark = Mørkt
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
     .title =
-        Disse nettstedene ble funnet på denne enheten.
-        { -brand-short-name } lagrer eller synkroniserer
-        ikke data fra en annen nettleser med mindre du
-        velger å importer den.
-    .aria-label = { onboarding-import-sites-info.title }
+        Arv utseendet fra operativsystemet
+        for knapper, menyer og vinduer.
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        Bruk et lyst utseende for knapper,
+        menyer og vinduer.
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        Bruk et mørkt utseende for knapper,
+        menyer og vinduer.
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title =
+        Bruk et fargerikt utseende for knapper,
+        menyer og vinduer.
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
 
 ## Welcome full page string
 
@@ -116,7 +176,7 @@ onboarding-ghostery-text = Surf raskere, smartere eller sikrere med utvidelser s
 onboarding-fxa-title = Synkroniser
 onboarding-fxa-text = Registrer deg for et { -fxaccount-brand-name } og synkroniser dine bokmerker, passord og åpne faner overalt hvor du bruker { -brand-short-name }.
 onboarding-tracking-protection-title2 = Beskyttelse mot sporing
-onboarding-tracking-protection-text2 = { -brand-short-name } bidrar til å stoppe nettsteder fra å spore deg på nettet, noe som gjør det vanskeligere for reklame å følge deg rundt på nettet.
+onboarding-tracking-protection-text2 = { -brand-short-name } bidrar til å stoppe nettsteder fra å spore deg på nettet, noe som gjør det vanskeligere for reklame å spore aktivitetene dine på nettet.
 onboarding-tracking-protection-button2 = Hvordan det virker
 onboarding-data-sync-title = Ta med deg innstillingene dine
 # "Sync" is short for synchronize.

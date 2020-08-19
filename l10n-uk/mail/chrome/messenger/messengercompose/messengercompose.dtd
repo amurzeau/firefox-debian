@@ -3,14 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!--LOCALIZATION NOTE messengercompose.dtd Main UI for message composition -->
-<!ENTITY msgComposeWindow.title "Написання листа: (без теми)">
+<!ENTITY msgComposeWindow.title "Написання повідомлення: (без теми)">
 
 <!-- File Menu -->
 <!ENTITY fileMenu.label "Файл">
 <!ENTITY fileMenu.accesskey "Ф">
 <!ENTITY newMenu.label "Новий">
 <!ENTITY newMenu.accesskey "Н">
-<!ENTITY newMessage.label "Лист">
+<!ENTITY newMessage.label "Повідомлення">
 <!ENTITY newMessage.key "M">
 <!ENTITY newMessageCmd2.key "N">
 <!ENTITY newMessage.accesskey "Л">
@@ -23,7 +23,7 @@
 <!ENTITY attachFileCmd.key "A">
 <!ENTITY attachCloudCmd.label "Filelink">
 <!ENTITY attachCloudCmd.accesskey "i">
-<!ENTITY attachPageCmd.label "Веб-сторінку…">
+<!ENTITY attachPageCmd.label "Вебсторінку…">
 <!ENTITY attachPageCmd.accesskey "е">
 <!--LOCALIZATION NOTE attachVCardCmd.label Don't translate the term 'vCard' -->
 <!ENTITY attachVCardCmd.label "Візитну картку (vCard)">
@@ -90,6 +90,10 @@
 <!ENTITY reorderAttachmentsCmd.key "x">
 <!ENTITY toggleAttachmentPaneCmd.label "Панель вкладень">
 <!ENTITY toggleAttachmentPaneCmd.accesskey "в">
+<!-- LOCALIZATION NOTE (toggleAttachmentPaneCmd.key):
+     As Mac does not have access keys, this key defines a Mac-only, cross-l10n
+     shortcut key (Ctrl+M). Typically, this key should not be translated unless
+     otherwise required by specific needs of the localization. -->
 <!ENTITY toggleAttachmentPaneCmd.key "m">
 <!ENTITY selectAllCmd.label "Виділити все">
 <!ENTITY selectAllCmd.accesskey "с">
@@ -136,7 +140,7 @@
 <!ENTITY viewToolbarsMenuNew.accesskey "н">
 <!ENTITY menubarCmd.label "Панель меню">
 <!ENTITY menubarCmd.accesskey "м">
-<!ENTITY showCompositionToolbarCmd.label "Панель інструментів написання листа">
+<!ENTITY showCompositionToolbarCmd.label "Панель інструментів написання повідомлень">
 <!ENTITY showCompositionToolbarCmd.accesskey "н">
 <!ENTITY showFormattingBarCmd.label "Панель форматування">
 <!ENTITY showFormattingBarCmd.accesskey "ф">
@@ -161,7 +165,7 @@
 <!ENTITY checkSpellingCmd2.accesskey "г">
 <!ENTITY enableInlineSpellChecker.label "Перевірка орфографії під час набору тексту">
 <!ENTITY enableInlineSpellChecker.accesskey "б">
-<!ENTITY quoteCmd.label "Цитувати лист">
+<!ENTITY quoteCmd.label "Цитувати повідомлення">
 <!ENTITY quoteCmd.accesskey "Ц">
 
 <!--LOCALIZATION NOTE attachVCard.label Don't translate the term 'vCard' -->
@@ -237,11 +241,11 @@
 <!-- Mail Toolbar Tooltips -->
 <!ENTITY sendButton.tooltip "Надіслати це повідомлення зараз">
 <!ENTITY sendlaterButton.tooltip "Надіслати це повідомлення пізніше">
-<!ENTITY quoteButton.tooltip "Цитувати попереднй лист">
+<!ENTITY quoteButton.tooltip "Цитувати попереднє повідомлення">
 <!ENTITY addressButton.tooltip "Вибрати адресата з адресної книги">
 <!ENTITY attachButton.tooltip2 "Додати вкладення">
-<!ENTITY spellingButton.tooltip "Перевірити правопис вибірки чи всього листа">
-<!ENTITY saveButton.tooltip "Зберегти цей лист">
+<!ENTITY spellingButton.tooltip "Перевірити правопис вибраного чи всього повідомлення">
+<!ENTITY saveButton.tooltip "Зберегти це повідомлення">
 <!ENTITY cutButton.tooltip              "Вирізати">
 <!ENTITY copyButton.tooltip             "Копіювати">
 <!ENTITY pasteButton.tooltip            "Вставити">
@@ -344,7 +348,7 @@
 <!ENTITY cancelUpload.accesskey "к">
 <!ENTITY convertRegularAttachment.label "Звичайне вкладення">
 <!ENTITY convertRegularAttachment.accesskey "в">
-<!ENTITY attachPage.label "Вкласти веб-сторінку…">
+<!ENTITY attachPage.label "Вкласти вебсторінку…">
 <!ENTITY attachPage.accesskey "е">
 
 <!-- Attachment Pane Header Bar Context Menu -->

@@ -6,12 +6,22 @@
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
 
+protections-popup-footer-protection-label-strict = కఠినం
+    .label = కఠినం
+protections-popup-footer-protection-label-custom = అభిమతం
+    .label = అభిమతం
+protections-popup-footer-protection-label-standard = ప్రామాణికం
+    .label = ప్రామాణికం
 
 ##
 
+# The text a screen reader speaks when focused on the info button.
+protections-panel-etp-more-info =
+    .aria-label = మెరుగైన ట్రాకింగ్ సంరక్షణ గురించి మరింత సమాచారం
+protections-panel-etp-on-header = ఈ సైటుకి మెరుగైన ట్రాకింగ్ సంరక్షణ చేతనంగా ఉంది
+protections-panel-etp-off-header = ఈ సైటుకి మెరుగైన ట్రాకింగ్ సంరక్షణ చేతనంగా లేదు
 # The link to be clicked to open the sub-panel view
 protections-panel-site-not-working = సైటు పనిచేయట్లేదా?
-
 # The heading/title of the sub-panel view
 protections-panel-site-not-working-view =
     .title = సైటు పనిచేయట్లేదా?
@@ -23,6 +33,8 @@ protections-panel-not-blocking-why-label = ఎందుకు?
 
 ##
 
+protections-panel-no-trackers-found = { -brand-short-name }కి తెలిసిన ట్రాకర్లేమీ ఈ పేజీలో కనబడలేదు.
+protections-panel-content-blocking-socialblock = సామాజిక మాధ్యమాల ట్రాకర్లు
 protections-panel-content-blocking-cryptominers-label = క్రిప్టోమైనర్లు
 
 ## In the protections panel, Content Blocking category items are in three sections:
@@ -31,10 +43,15 @@ protections-panel-content-blocking-cryptominers-label = క్రిప్టో
 ##   "None Detected" for categories not detected in the current page.
 ##   These strings are used in the header labels of each of these sections.
 
+protections-panel-blocking-label = నిరోధించబడినవి
+protections-panel-not-blocking-label = అనుమతించబడినవి
+protections-panel-not-found-label = ఇవేమీ కనబడలేదు
 
 ##
 
 protections-panel-settings-label = సంరక్షణ అమరికలు
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = సంరక్షణల డాష్‌బోర్డ్
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.
@@ -46,6 +63,9 @@ protections-panel-site-not-working-view-issue-list-videos = వీడియో�
 
 ##
 
+protections-panel-content-blocking-manage-settings =
+    .label = సంరక్షణ అమరికలను నిర్వహించుకోండి
+    .accesskey = M
 protections-panel-content-blocking-breakage-report-view-collection-url = URL
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = URL

@@ -98,7 +98,7 @@ cfr-whatsnew-panel-header = Što je novo
 cfr-whatsnew-release-notes-link-text = Pročitaj napomene o izdanju
 cfr-whatsnew-fx70-title = { -brand-short-name } sada još bolje brani tvoju privatnost
 cfr-whatsnew-fx70-body =
-    Najnovije ažuriranje poboljšava zaštitu od praćenja i olakšava stvaranje
+    Najnovije aktualiziranje poboljšava zaštitu od praćenja i olakšava stvaranje
     sigurnih lozinki za svaku web lokaciju.
 cfr-whatsnew-tracking-protect-title = Zaštiti se od programa za praćenje
 cfr-whatsnew-tracking-protect-body = { -brand-short-name } blokira mnoge uobičajene programe za praćenje tvojih radnji na društvenim mrežama i web lokacijama.
@@ -249,3 +249,18 @@ cfr-whatsnew-protections-icon-alt = Ikona štita
 
 cfr-whatsnew-better-pdf-header = Bolje PDF iskustvo
 cfr-whatsnew-better-pdf-body = PDF dokumenti se sada otvaraju izravno u { -brand-short-name }, što olakšava rad.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Tvoja privatnost je važna. { -brand-short-name } sada sigurno usmjerava tvoje DNS zahtjeve kad god je to moguće na partnersku uslugu, kako bi te se zaštitilo dok pregledavaš.
+cfr-doorhanger-doh-header = Sigurnije, šifrirano pregledavanje DNS-a
+cfr-doorhanger-doh-primary-button = U redu, razumijem
+    .accesskey = r
+cfr-doorhanger-doh-secondary-button = Deaktiviraj
+    .accesskey = D
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Automatska zaštita od podlih taktika praćenja
+cfr-whatsnew-clear-cookies-body = Neki pratitelji vas preusmjere na druge web stranice koje potajno postave kolačiće. { -brand-short-name } sada automatski briše te kolačiće kako vas ne bi pratili.
+cfr-whatsnew-clear-cookies-image-alt = Ilustracija blokiranog kolačića

@@ -19,9 +19,6 @@ onboarding-button-label-get-started = ਸ਼ੁਰੂ ਕਰੀਏ
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = { -brand-short-name } ਵਲੋਂ ਜੀ ਆਇਆਂ ਨੂੰ
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = <span data-l10n-name="zap">{ -brand-short-name }</span> ਵਲੋਂ ਜੀ ਆਇਆਂ ਨੂੰ
 onboarding-welcome-body = ਤੁਸੀਂ ਬਰਾਊਜ਼ਰ ਤਾਂ ਲੈ ਲਿਆ ਹੈ।<br/>ਬਾਕੀ { -brand-product-name } ਨੂੰ ਜਾਣੋ।
 onboarding-welcome-learn-more = ਫਾਇਦਿਆਂ ਬਾਰੇ ਹੋਰ ਜਾਣੋ।
 onboarding-join-form-header = { -brand-product-name } ਦਾ ਹਿੱਸਾ ਬਣੋ
@@ -44,6 +41,48 @@ onboarding-start-browsing-button-label = ਬਰਾਊਜ਼ ਕਰਨਾ ਸ਼ੁਰ�
 onboarding-cards-dismiss =
     .title = ਰੱਦ ਕਰੋ
     .aria-label = ਰੱਦ ਕਰੋ
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = <span data-l10n-name="zap">{ -brand-short-name }</span> ਵਲੋਂ ਜੀ ਆਇਆਂ ਨੂੰ
+onboarding-multistage-welcome-subtitle = ਤੇਜ਼, ਸੁਰੱਖਿਅਤ ਅਤੇ ਪ੍ਰਾਈਵੇਟ ਬਰਾਊਜ਼ਰ ਹੈ, ਜਿਸ ਦੇ ਪਿੱਛੇ ਗ਼ੈਰ-ਮੁਨਾਫ਼ਾ ਹੈ।
+onboarding-multistage-welcome-primary-button-label = ਸੈੱਟਅਪ ਸ਼ੁਰੂ ਕਰੋ
+onboarding-multistage-welcome-secondary-button-label = ਸਾਈਨ ਇਨ
+onboarding-multistage-welcome-secondary-button-text = ਖਾਤਾ ਹੈ?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = ਆਪਣੇ ਪਾਸਵਰਡ, <br/>ਬੁੱਕਮਾਰਕ ਅਤੇ <span data-l10n-name="zap">ਹੋਰਾਂ</span> ਨੂੰ ਦਰਾਮਦ ਕਰੋ
+onboarding-multistage-import-subtitle = ਹੋਰ ਬਰਾਊਜ਼ਰ ਨੂੰ ਛੱਡ ਕੇ ਆ ਰਹੇ ਹੋ? { -brand-short-name } ਲਈ ਹਰ ਚੀਜ਼ ਲਿਆਉਣ ਸੌਖੀ ਹੈ।
+onboarding-multistage-import-primary-button-label = ਦਰਾਮਦ ਸ਼ੁਰੂ ਕਰੋ
+onboarding-multistage-import-secondary-button-label = ਹਾਲੇ ਨਹੀਂ
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = ਸ਼ੁਰੂ ਕਰੀਏ: { $total } ਵਿੱਚੋਂ { $current } ਸਕਰੀਨ
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = <span data-l10n-name="zap">ਦਿੱਖ</span> ਨੂੰ ਚੁਣੋ
+onboarding-multistage-theme-subtitle = ਥੀਮ ਨਾਲ { -brand-short-name } ਨੂੰ ਆਪਣਾ ਬਣਾਓ।
+onboarding-multistage-theme-primary-button-label = ਥੀਮ ਸੰਭਾਲੋ
+onboarding-multistage-theme-secondary-button-label = ਹਾਲੇ ਨਹੀਂ
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = ਆਟੋਮੈਟਿਕ
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = ਸਿਸਟਮ ਥੀਮ ਵਰਤੋਂ
+onboarding-multistage-theme-label-light = ਹਲਕਾ
+onboarding-multistage-theme-label-dark = ਗੂੜ੍ਹਾ
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
 
 ## Welcome full page string
 

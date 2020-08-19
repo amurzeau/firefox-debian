@@ -803,10 +803,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Ana parola kullan
     .accesskey = n
+forms-primary-pw-use =
+    .label = Ana parola kullan
+    .accesskey = n
+forms-primary-pw-learn-more-link = Daha fazla bilgi al
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Ana parolayı değiştir…
     .accesskey = d
 forms-master-pw-fips-title = Şu anda FIPS kipindesiniz. FIPS için boş olmayan bir ana parola gerekli.
+forms-primary-pw-change =
+    .label = Ana parolayı değiştir…
+    .accesskey = d
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Şu anda FIPS kipindesiniz. FIPS için boş olmayan bir ana parola gereklidir.
 forms-master-pw-fips-desc = Parola değiştirme başarısız
 
 ## OS Authentication dialog
@@ -818,6 +833,13 @@ master-password-os-auth-dialog-message-win = Ana parola oluşturmak için Window
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = ana parola oluşturma
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Ana parola oluşturmak için Windows hesap bilgilerinizi girin. Bu sayede hesaplarınızı daha güvenli bir şekilde koruyabiliriz.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = ana parola oluşturma
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -1169,6 +1191,7 @@ space-alert-under-5gb-message = { -brand-short-name } tarafından kulllanılabil
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = Yalnızca HTTPS modu
+httpsonly-description = HTTPS, ziyaret ettiğiniz sitelerle { -brand-short-name } arasında güvenli ve şifrelenmiş bağlantı sağlar. Çoğu site HTTPS desteği sunar. “Yalnızca HTTPS” modunu açarsanız { -brand-short-name } tüm bağlantılarda HTTPS kullanmaya çalışır.
 httpsonly-learn-more = Daha fazla bilgi al
 httpsonly-radio-enabled =
     .label = Yalnızca HTTPS modunu tüm pencerelerde etkinleştir

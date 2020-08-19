@@ -5,15 +5,18 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = గోప్యతా సంరక్షణలు
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = మీ అంతరంగికతా నివేదికను చూడండి
+appmenuitem-update-banner =
+    .label-update-downloading = { -brand-shorter-name } తాజాకరణ దించుకుంటోంది
 appmenuitem-protection-dashboard-title = సంరక్షణల డాష్‌బోర్డ్
 appmenuitem-customize-mode =
     .label = అభిమతీకరించు…
 
 ## Zoom Controls
 
+appmenuitem-zoom-enlarge =
+    .label = పెద్దగించు
+appmenuitem-zoom-reduce =
+    .label = చిన్నగించు
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
@@ -23,3 +26,8 @@ fxa-toolbar-sync-now =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = కొత్తవి ఏమిటి
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = కొత్త సౌలభ్యాల గురించి తెలియజేయి
+    .accesskey = f

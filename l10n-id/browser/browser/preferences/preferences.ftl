@@ -54,7 +54,7 @@ pane-experimental-title = Eksperimen { -brand-short-name }
 category-experimental =
     .tooltiptext = Eksperimen { -brand-short-name }
 pane-experimental-subtitle = Lanjutkan dengan Kehati-hatian
-pane-experimental-search-results-header = { -brand-short-name } Eksperimen: Lanjutkan dengan Hati-hati
+pane-experimental-search-results-header = Eksperimen { -brand-short-name }: Lanjutkan dengan Hati-hati
 pane-experimental-description = Mengubah pilihan konfigurasi tingkat lanjut dapat mempengaruhi kinerja atau keamanan { -brand-short-name } .
 help-button-label = Dukungan { -brand-short-name }
 addons-button-label = Ekstensi & Tema
@@ -787,10 +787,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Gunakan sandi utama
     .accesskey = m
+forms-primary-pw-use =
+    .label = Gunakan Sandi Utama
+    .accesskey = S
+forms-primary-pw-learn-more-link = Pelajari lebih lanjut
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Ubah Sandi Utama…
     .accesskey = U
 forms-master-pw-fips-title = Anda sedang dalam mode FIPS. Mode ini mewajibkan Sandi Utama harus diisi.
+forms-primary-pw-change =
+    .label = Ubah Sandi Utama…
+    .accesskey = U
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Anda sedang dalam mode FIPS. Mode ini mewajibkan Sandi Utama harus diisi.
 forms-master-pw-fips-desc = Sandi Gagal Diubah
 
 ## OS Authentication dialog
@@ -802,6 +817,13 @@ master-password-os-auth-dialog-message-win = Untuk membuat Kata Sandi Utama, mas
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = membuat Kata Sandi Utama.
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Untuk membuat Sandi Utama, masukkan kredensial info masuk Windows Anda. Hal ini membantu melindungi keamanan akun Anda.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = membuat Sandi Utama
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -1149,6 +1171,18 @@ space-alert-under-5gb-ok-button =
     .label = Oke, Beres
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } kehabisan ruang disk. Konten situs barangkali tidak dapat ditampilkan dengan tepat. Kunjungi “Pelajari Lebih Lanjut” untuk mengoptimalkan penggunaan disk Anda untuk pengalaman penjelajahan yang lebih baik.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Mode Hanya HTTPS
+httpsonly-description = HTTPS menyediakan koneksi yang aman, terenkripsi antara { -brand-short-name } dan situs web yang Anda kunjungi. Kebanyakan situs web mendukung HTTPS, dan jika Mode Hanya HTTPS diaktifkan, maka { -brand-short-name } akan meningkatkan semua koneksi ke HTTPS.
+httpsonly-learn-more = Pelajari lebih lanjut
+httpsonly-radio-enabled =
+    .label = Aktifkan Mode Hanya HTTPS di semua jendela
+httpsonly-radio-enabled-pbm =
+    .label = Aktifkan Mode Hanya HTTPS di jendela pribadi saja
+httpsonly-radio-disabled =
+    .label = Jangan aktifkan Mode Hanya HTTPS
 
 ## The following strings are used in the Download section of settings
 

@@ -1,11 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Contos e contrasignos
@@ -22,7 +17,7 @@ login-filter =
     .placeholder = Cercar credentiales
 create-login-button = Crear nove credentiales
 fxaccounts-sign-in-text = Accede a tu credentiales sur tote tu apparatos
-fxaccounts-sign-in-button = Aperir session a { -sync-brand-short-name }
+fxaccounts-sign-in-button = Aperir session in { -sync-brand-short-name }
 fxaccounts-avatar-button =
     .title = Gerer conto
 
@@ -32,6 +27,7 @@ menu =
     .title = Aperir menu
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Importar ab un altere navigator…
+about-logins-menu-menuitem-import-from-a-file = Importar ab un file…
 about-logins-menu-menuitem-export-logins = Exportar credentiales…
 menu-menuitem-preferences =
     { PLATFORM() ->
@@ -72,12 +68,14 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = Cerca tu le credentiales salvate? Configura { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-out = Cerca tu le credentiales salvate? Configura { -sync-brand-short-name }  o importa los.
 about-logins-login-intro-heading-logged-in = Nulle credentiales synchronisate trovate.
 login-intro-description = Si tu ha salvate tu credentiales in { -brand-product-name } sur un altere apparato, ecce como render los disponibile hic:
 login-intro-instruction-fxa = Crea o identifica te a tu { -fxaccount-brand-name } sur le apparato ubi tu credentiales es salvate
 login-intro-instruction-fxa-settings = Assecura te que le quadrato Credentiales es seligite in le parametros de { -sync-brand-short-name }
 about-logins-intro-instruction-help = Visita le <a data-l10n-name="help-link">supporto pro { -lockwise-brand-short-name }</a> pro plus adjuta
 about-logins-intro-import = Si tu credentiales es salvate in un altere navigator, tu pote <a data-l10n-name="import-link">importar los in { -lockwise-brand-short-name }</a
+about-logins-intro-import2 = Si tu credentiales es salvate foras de { -brand-product-name }, tu pote <a data-l10n-name="import-browser-link">importar los ab un altere navigator</a> o <a data-l10n-name="import-file-link">ab un file</a>
 
 ## Login
 
@@ -136,6 +134,10 @@ about-logins-export-password-os-auth-dialog-message-macosx = exporta credentiale
 ## Master Password notification
 
 master-password-notification-message = Insere tu contrasigno maestro pro vider le credentiales e contrasignos salvate
+
+## Primary Password notification
+
+about-logins-primary-password-notification-message = Insere tu contrasigno primari pro vider le credentiales e contrasignos salvate
 master-password-reload-button =
     .label = Aperir session
     .accesskey = A
@@ -213,6 +215,19 @@ about-logins-export-file-picker-export-button = Exportar
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
 about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] Documento CSV
+       *[other] File CSV
+    }
+
+## Login Import Dialog
+
+# Title of the file picker dialog
+about-logins-import-file-picker-title = Importar file de credentiales
+about-logins-import-file-picker-import-button = Importar
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
     { PLATFORM() ->
         [macos] Documento CSV
        *[other] File CSV

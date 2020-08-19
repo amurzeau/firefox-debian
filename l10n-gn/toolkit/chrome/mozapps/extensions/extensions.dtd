@@ -33,8 +33,8 @@
 <!ENTITY progress.cancel.tooltip              "Heja">
 
 <!ENTITY addon.details.label                  "Hetave">
-<!ENTITY addon.details.tooltip                "Ehechauka mba'emimive ko moimbaha rehegua">
-<!ENTITY addon.unknownDate                    "Ojekuaa'ỹva">
+<!ENTITY addon.details.tooltip                "Ehechauka mba’emimive ko moĩmbaha rehegua">
+<!ENTITY addon.unknownDate                    "Ojekuaa’ỹva">
 <!-- LOCALIZATION NOTE (addon.legacy.label): This appears in a badge next
      to the add-on name for extensions that are not webextensions, which
      will stop working in Firefox 57. -->
@@ -56,11 +56,11 @@
 
 <!ENTITY addon.install.label                  "Emoañete">
 <!ENTITY addon.install.tooltip                "Emohenda ko moimbaha">
-<!ENTITY addon.updateNow.label                "Embohekopyahu ko'ág̃a">
+<!ENTITY addon.updateNow.label                "Embohekopyahu ko’ág̃a">
 <!ENTITY addon.updateNow.tooltip              "Emohenda ñembohekopyahu ko moimbaha rehegua">
 <!ENTITY addon.includeUpdate.label            "Emoinge ñembohekopyahúpe">
 <!ENTITY addon.updateAvailable.label          "Oĩ peteĩ ñembohekopyahu eipurukuaáva">
-<!ENTITY addon.checkingForUpdates.label       "Ñemañajey  mab'e ipyahúvare">
+<!ENTITY addon.checkingForUpdates.label       "Ñemañajey  mba’e ipyahúvare…">
 <!ENTITY addon.releaseNotes.label             "Jehaipy rehegua:">
 <!ENTITY addon.loadingReleaseNotes.label      "Oñemyanyhína…">
 <!ENTITY addon.errorLoadingReleaseNotes.label "Rombyasy, oiko jejavy henyhẽnguévo jehaipyre rehegua.">

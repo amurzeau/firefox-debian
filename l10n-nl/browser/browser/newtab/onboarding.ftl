@@ -19,9 +19,6 @@ onboarding-button-label-get-started = Beginnen
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = Welkom bij { -brand-short-name }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Welkom bij <span data-l10n-name="zap">{ -brand-short-name }</span>
 onboarding-welcome-body = U hebt de browser.<br/>Maak kennis met de rest van { -brand-product-name }.
 onboarding-welcome-learn-more = Meer info over de voordelen.
 onboarding-join-form-header = Doe mee met { -brand-product-name }
@@ -44,16 +41,69 @@ onboarding-start-browsing-button-label = Beginnen met browsen
 onboarding-cards-dismiss =
     .title = Verwijderen
     .aria-label = Verwijderen
-# Tooltip displayed on hover of top sites in import settings screen during onboarding flow.
-# This support welcome screen showing top sites imported from the user's default browser.
-# Title text is kept multiline to ensure tooltip container width is not more than 40 characters.
-onboarding-import-sites-info =
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Welkom bij <span data-l10n-name="zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = De snelle, veilige en privébrowser die wordt gesteund door een non-profitorganisatie.
+onboarding-multistage-welcome-primary-button-label = Instellen starten
+onboarding-multistage-welcome-secondary-button-label = Aanmelden
+onboarding-multistage-welcome-secondary-button-text = Hebt u een account?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Importeer uw wachtwoorden, bladwijzers en <span data-l10n-name = "zap">meer</span>
+onboarding-multistage-import-subtitle = Gebruikte u een andere browser? Het is eenvoudig om alles naar { -brand-short-name } over te brengen.
+onboarding-multistage-import-primary-button-label = Import starten
+onboarding-multistage-import-secondary-button-label = Niet nu
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = De websites in deze lijst zijn op dit apparaat gevonden. { -brand-short-name } bewaart of synchroniseert geen gegevens van een andere browser, tenzij u ervoor kiest ze te importeren.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Aan de slag: scherm { $current } van { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Kies een <span data-l10n-name="zap">uiterlijk</span>
+onboarding-multistage-theme-subtitle = Personaliseer { -brand-short-name } met een thema.
+onboarding-multistage-theme-primary-button-label = Thema opslaan
+onboarding-multistage-theme-secondary-button-label = Niet nu
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Automatisch
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = Systeemthema gebruiken
+onboarding-multistage-theme-label-light = Licht
+onboarding-multistage-theme-label-dark = Donker
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
     .title =
-        Deze websites zijn op dit apparaat gevonden.
-        { -brand-short-name } bewaart of synchroniseert geen gegevens van
-        een andere browser, tenzij u ervoor kiest ze te
-        importeren.
-    .aria-label = { onboarding-import-sites-info.title }
+        Het uiterlijk van uw besturingssysteem
+        overnemen voor knoppen, menu’s en vensters.
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        Een licht uiterlijk gebruiken voor knoppen,
+        menu’s en vensters.
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        Een donker uiterlijk gebruiken voor knoppen,
+        menu’s en vensters.
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
 
 ## Welcome full page string
 

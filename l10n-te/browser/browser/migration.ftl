@@ -16,6 +16,12 @@ import-from-ie =
 import-from-edge =
     .label = Microsoft Edge
     .accesskey = E
+import-from-edge-legacy =
+    .label = Microsoft Edge లెగసీ
+    .accesskey = L
+import-from-edge-beta =
+    .label = Microsoft Edge బీటా
+    .accesskey = d
 import-from-nothing =
     .label = దేనిని దిగుమతి చేయవద్దు
     .accesskey = D
@@ -61,6 +67,7 @@ import-close-source-browser = కొనసాగే ముందు ఎంచు
 imported-bookmarks-source = { $source } నుండి
 source-name-ie = Internet Explorer
 source-name-edge = Microsoft Edge
+source-name-edge-beta = Microsoft Edge బీటా
 source-name-safari = Safari
 source-name-canary = Google Chrome Canary
 source-name-chrome = Google Chrome
@@ -81,10 +88,57 @@ imported-edge-reading-list = చదవాల్సిన జాబితా (ఎ
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.
 
+browser-data-cookies-checkbox =
+    .label = కుకీలు
+browser-data-cookies-label =
+    .value = కుకీలు
+browser-data-history-checkbox =
+    .label =
+        { $browser ->
+            [firefox] విహరణ చరిత్ర, ఇష్టాంశాలు
+           *[other] విహరణ చరిత్ర
+        }
+browser-data-history-label =
+    .value =
+        { $browser ->
+            [firefox] విహరణ చరిత్ర, ఇష్టాంశాలు
+           *[other] విహరణ చరిత్ర
+        }
+browser-data-formdata-checkbox =
+    .label = భద్రపరచిన ఫారాల చరిత్ర
+browser-data-formdata-label =
+    .value = భద్రపరచిన ఫారాల చరిత్ర
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-checkbox =
+    .label = భద్రపరచిన ప్రవేశాలు, సంకేతపదాలు
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-label =
+    .value = భద్రపరచిన ప్రవేశాలు, సంకేతపదాలు
+browser-data-bookmarks-checkbox =
+    .label =
+        { $browser ->
+            [ie] ఇష్టాంశాలు
+            [edge] ఇష్టాంశాలు
+           *[other] ఇష్టాంశాలు
+        }
+browser-data-bookmarks-label =
+    .value =
+        { $browser ->
+            [ie] ఇష్టాంశాలు
+            [edge] ఇష్టాంశాలు
+           *[other] ఇష్టాంశాలు
+        }
+browser-data-otherdata-checkbox =
+    .label = ఇతర డేటా
+browser-data-otherdata-label =
+    .label = ఇతర డేటా
 browser-data-session-checkbox =
     .label = విండోలు, ట్యాబులు
 browser-data-session-label =

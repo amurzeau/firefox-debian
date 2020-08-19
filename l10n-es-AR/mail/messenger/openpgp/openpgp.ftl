@@ -1,0 +1,441 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+e2e-intro-description = Para enviar mensajes cifrados o firmados digitalmente, debe configurar una tecnología de cifrado, ya sea OpenPGP o S/MIME.
+e2e-intro-description-more = Seleccione su clave personal para habilitar el uso de OpenPGP o su certificado personal para habilitar el uso de S/MIME. Para una clave personal o certificado usted posee la clave secreta correspondiente.
+openpgp-key-user-id-label = Cuenta / ID de usuario
+openpgp-keygen-title-label =
+    .title = Generar clave OpenPGP
+openpgp-cancel-key =
+    .label = Cancelar
+    .tooltiptext = Cancelar generación de clave
+openpgp-key-gen-expiry-title =
+    .label = Expiración de clave
+openpgp-key-gen-expire-label = La clave expira en
+openpgp-key-gen-days-label =
+    .label = días
+openpgp-key-gen-months-label =
+    .label = meses
+openpgp-key-gen-years-label =
+    .label = años
+openpgp-key-gen-no-expiry-label =
+    .label = La clave no expira
+openpgp-key-gen-key-size-label = Tamaño de clave
+openpgp-key-gen-console-label = Generación de clave
+openpgp-key-gen-key-type-label = Tipo de clave
+openpgp-key-gen-key-type-rsa =
+    .label = RSA
+openpgp-key-gen-key-type-ecc =
+    .label = ECC (curva elíptica)
+openpgp-generate-key =
+    .label = Generar clave
+    .tooltiptext = Generar una nueva clave OpenPGP compatible para cifrar y/o firmar.
+openpgp-advanced-prefs-button-label =
+    .label = Avanzadas…
+openpgp-keygen-desc = <a data-l10n-name="openpgp-keygen-desc-link">NOTA: La generación de clave puede tomar varios minutos para completarse.</a> No salga de la aplicación mientras la generación de clave esté en proceso. Navegar activamente o realizar operaciones de uso intensivo de disco mientras se genere la clave reaprovisionará el 'grupo de aleatoriedad' y acelerará el proceso. Aparecerá una alerta cuando se complete la generación de clave.
+openpgp-key-expiry-label =
+    .label = Expiración
+openpgp-key-id-label =
+    .label = ID de clave
+openpgp-cannot-change-expiry = Esta es una clave con una estructura compleja, no se admite cambiar su fecha de vencimiento.
+openpgp-key-man-title =
+    .title = Administrador de claves OpenPGP
+openpgp-key-man-generate =
+    .label = Nuevo par de claves
+    .accesskey = v
+openpgp-key-man-gen-revoke =
+    .label = Certificado de revocación
+    .accesskey = r
+openpgp-key-man-ctx-gen-revoke-label =
+    .label = Generar y guardar certificado de revocación
+openpgp-key-man-file-menu =
+    .label = Archivo
+    .accesskey = A
+openpgp-key-man-edit-menu =
+    .label = Editar
+    .accesskey = E
+openpgp-key-man-view-menu =
+    .label = Ver
+    .accesskey = V
+openpgp-key-man-generate-menu =
+    .label = Generar
+    .accesskey = G
+openpgp-key-man-keyserver-menu =
+    .label = Servidor de clave
+    .accesskey = K
+openpgp-key-man-import-public-from-file =
+    .label = Importar clave(s) pública(s) desde archivo
+    .accesskey = I
+openpgp-key-man-import-secret-from-file =
+    .label = Importar clave(s) secreta(s) desde archivo
+openpgp-key-man-import-sig-from-file =
+    .label = Importar revocación(es) desde archivo
+openpgp-key-man-import-from-clipbrd =
+    .label = Importar clave(s) desde el portapapeles
+    .accesskey = I
+openpgp-key-man-import-from-url =
+    .label = Importar clave(s) desde URL
+    .accesskey = U
+openpgp-key-man-export-to-file =
+    .label = Exportar clave(s) pública(s) a archivo
+    .accesskey = E
+openpgp-key-man-send-keys =
+    .label = Enviar clave(s) pública(s) por correo electrónico
+    .accesskey = s
+openpgp-key-man-backup-secret-keys =
+    .label = Respaldar clave(s) secreta(s) en un archivo
+    .accesskey = B
+openpgp-key-man-discover-cmd =
+    .label = Descubrir claves en línea
+    .accesskey = D
+openpgp-key-man-discover-prompt = Para descubrir claves OpenPGP en línea, en servidores de claves o utilizando el protocolo WKD, ingrese una dirección de correo electrónico o una ID de clave.
+openpgp-key-man-discover-progress = Buscando…
+openpgp-key-copy-key =
+    .label = Copiar clave pública
+    .accesskey = C
+openpgp-key-export-key =
+    .label = Exportar clave pública a archivo
+    .accesskey = E
+openpgp-key-backup-key =
+    .label = Respaldar clave secreta en un archivo
+    .accesskey = B
+openpgp-key-send-key =
+    .label = Enviar clave pública por correo electrónico
+    .accesskey = b
+openpgp-key-man-copy-to-clipbrd =
+    .label = Copiar clave(s) pública(s) al portapapeles
+    .accesskey = C
+openpgp-key-man-ctx-expor-to-file-label =
+    .label = Exportar claves a archivo
+openpgp-key-man-ctx-copy-to-clipbrd-label =
+    .label = Copiar claves públicas al portapapeles
+openpgp-key-man-close =
+    .label = Cerrar
+openpgp-key-man-reload =
+    .label = Recargar caché de clave
+    .accesskey = R
+openpgp-key-man-change-expiry =
+    .label = Cambiar fecha de expiración
+    .accesskey = e
+openpgp-key-man-del-key =
+    .label = Borrar clave(s)
+    .accesskey = B
+openpgp-delete-key =
+    .label = Borrar clave
+    .accesskey = o
+openpgp-key-man-revoke-key =
+    .label = Revocar clave
+    .accesskey = R
+openpgp-key-man-key-props =
+    .label = Propiedades de clave
+    .accesskey = v
+openpgp-key-man-key-more =
+    .label = Más
+    .accesskey = M
+openpgp-key-man-view-photo =
+    .label = ID fotográfico
+    .accesskey = f
+openpgp-key-man-ctx-view-photo-label =
+    .label = Ver ID fotográfico
+openpgp-key-man-show-invalid-keys =
+    .label = Mostrar claves inválidas
+    .accesskey = d
+openpgp-key-man-show-others-keys =
+    .label = Mostrar claves de otras personas
+    .accesskey = o
+openpgp-key-man-user-id-label =
+    .label = Nombre
+openpgp-key-man-fingerprint-label =
+    .label = Huella digital
+openpgp-key-man-select-all =
+    .label = Seleccionar todas las claves
+    .accesskey = a
+openpgp-key-man-empty-tree-tooltip =
+    .label = Ingresar términos de búsqueda en el cuadro de arriba
+openpgp-key-man-nothing-found-tooltip =
+    .label = Ninguna clave coincide con los términos de búsqueda
+openpgp-key-man-please-wait-tooltip =
+    .label = Espere mientras las claves se cargan…
+openpgp-key-man-filter-label =
+    .placeholder = Buscar claves
+openpgp-key-man-select-all-key =
+    .key = A
+openpgp-key-man-key-details-key =
+    .key = I
+openpgp-key-details-title =
+    .title = Propiedades de clave
+openpgp-key-details-signatures-tab =
+    .label = Certificationes
+openpgp-key-details-structure-tab =
+    .label = Estructura
+openpgp-key-details-uid-certified-col =
+    .label = ID de usuario / Certificado por
+openpgp-key-details-user-id2-label = Presunto propietario de clave
+openpgp-key-details-id-label =
+    .label = ID
+openpgp-key-details-key-type-label = Tipo
+openpgp-key-details-key-part-label =
+    .label = Parte de la clave
+openpgp-key-details-algorithm-label =
+    .label = Algoritmo
+openpgp-key-details-size-label =
+    .label = Tamaño
+openpgp-key-details-created-label =
+    .label = Creada
+openpgp-key-details-created-header = Creada
+openpgp-key-details-expiry-label =
+    .label = Expiración
+openpgp-key-details-expiry-header = Expiración
+openpgp-key-details-usage-label =
+    .label = Uso
+openpgp-key-details-fingerprint-label = Huella digital
+openpgp-key-details-sel-action =
+    .label = Seleccionar acción…
+    .accesskey = S
+openpgp-key-details-also-known-label = Identidades alternativas presuntas del propietario de la clave:
+openpgp-card-details-close-window-label =
+    .buttonlabelaccept = Cerrar
+openpgp-acceptance-label =
+    .label = Aceptación
+openpgp-acceptance-rejected-label =
+    .label = No, rechazar esta clave.
+openpgp-acceptance-undecided-label =
+    .label = Todavía no, quizás más tarde.
+openpgp-acceptance-unverified-label =
+    .label = Sí, pero no he verificado que sea la clave correcta.
+openpgp-acceptance-verified-label =
+    .label = Sí, he verificado en persona que esta clave tiene la huella digital correcta.
+key-accept-personal =
+    Para esta clave, tiene tanto la parte pública como la secreta. Puede utilizarla como clave personal.
+    Si otra persona le dio esta clave, no la use como clave personal.
+key-personal-warning = ¿Creó esta clave usted mismo y la propiedad de la clave que se muestra se refiere a usted mismo?
+openpgp-personal-no-label =
+    .label = No, no usar como mi clave personal.
+openpgp-personal-yes-label =
+    .label = Sí, tratar esta clave como una clave personal.
+openpgp-copy-cmd-label =
+    .label = Copiar
+
+## e2e encryption settings
+
+#   $count (Number) - the number of configured keys associated with the current identity
+#   $identity (String) - the email address of the currently selected identity
+openpgp-description =
+    { $count ->
+        [0] Thunderbird no tiene una clave personal OpenPGP para <b>{ $identity }</b>
+        [one] Thunderbird encontró { $count } clave personal OpenPGP asociada con <b>{ $identity }</b>
+       *[other] Thunderbird encontró { $count } claves personales OpenPGP asociadas con <b>{ $identity }</b>
+    }
+#   $count (Number) - the number of configured keys associated with the current identity
+#   $key (String) - the currently selected OpenPGP key
+openpgp-selection-status =
+    { $count ->
+        [0] Elija una clave válida para habilitar el protocolo OpenPGP
+        [one] Su configuración actual usa la ID de clave <b> { $key } </b>
+       *[other] Sus configuraciones actuales usan la ID de clave <b> { $key } </b>
+    }
+#   $key (String) - the currently selected OpenPGP key
+openpgp-selection-status-error = Su configuración actual utiliza la clave <b>{ $key }</b> que ya caducó.
+openpgp-add-key-button =
+    .label = Agregar clave…
+    .accesskey = A
+e2e-learn-more = Conocer más
+openpgp-keygen-success = ¡Clave OpenPGP creada exitosamente!
+openpgp-keygen-import-success = ¡Clave OpenPGP importada exitosamente!
+openpgp-keygen-external-success = ¡ID de clave GnuPG externa guardada!
+
+## OpenPGP Key selection area
+
+openpgp-radio-none =
+    .label = Ninguna
+openpgp-radio-none-desc = No use OpenPGP para esta identidad.
+#   $key (String) - the expiration date of the OpenPGP key
+openpgp-radio-key-expires = Expira el: { $date }
+openpgp-key-expires-image =
+    .tooltiptext = La clave expira en menos de 6 meses
+#   $key (String) - the expiration date of the OpenPGP key
+openpgp-radio-key-expired = Expiró el: { $date }
+openpgp-key-expired-image =
+    .tooltiptext = Clave expirada
+openpgp-key-expand-section =
+    .tooltiptext = Más información
+openpgp-key-revoke-title = Revocar clave
+openpgp-key-edit-title = Cambiar clave OpenPGP
+openpgp-key-edit-date-title = Extender fecha de expiración
+openpgp-manager-description = Usar OpenPGP Key Manager para ver y administrar las claves públicas de sus corresponsales y todas las demás claves que no se enumeran anteriormente.
+openpgp-manager-button =
+    .label = Administrador de claves OpenPGP
+    .accesskey = G
+openpgp-key-remove-external =
+    .label = Eliminar ID de clave externa
+    .accesskey = E
+key-external-label = C!ave GnuPG externa
+# Strings in keyDetailsDlg.xhtml
+key-type-public = clave pública
+key-type-primary = clave primaria
+key-type-subkey = subclave
+key-type-pair = par de claves (clave secreta y clave pública)
+key-expiry-never = nunca
+key-usage-encrypt = Cifrar
+key-usage-sign = Firma
+key-usage-certify = Certificar
+key-usage-authentication = Autenticación
+key-does-not-expire = La clave no expira
+key-expired-date = La clave expiró el { $keyExpiry }
+key-expired-simple = La clave ha expirado
+key-revoked-simple = La clave fue revocada
+key-do-you-accept = ¿Acepta está clave para verificar firmas digitales y para cortar mensajes?
+key-accept-warning = Evite aceptar una clave falsa. Utilice un canal de comunicación que no sea el correo electrónico para verificar la huella digital de la clave de su interlocutor.
+# Strings enigmailMsgComposeOverlay.js
+cannot-use-own-key-because = No se puede enviar el mensaje porque hay un problema con su clave personal. { $problem }
+cannot-encrypt-because-missing = No se puede enviar este mensaje cifardo de punta a punta porque hay problemas con las claves de los siguientes destinatarios: { $problem }
+window-locked = La ventana de redacción está bloqueada; enviar cancelado
+# Strings in mimeDecrypt.jsm
+mime-decrypt-encrypted-part-attachment-label = Parte del mensaje cifrado
+mime-decrypt-encrypted-part-concealed-data = Esta es una parte de mensaje cifrado. Tiene que abrirla en una ventana separada haciendo clic en el archivo adjunto.
+# Strings in keyserver.jsm
+keyserver-error-aborted = Abortado
+keyserver-error-unknown = Ocurrió un error desconocido
+keyserver-error-server-error = El servidor de claves informó de un error.
+keyserver-error-import-error = No se pudo importar la clave descargada.
+keyserver-error-unavailable = El servidor de claves no está disponible.
+keyserver-error-security-error = El servidor de claves no admite el acceso cifrado.
+keyserver-error-certificate-error = El certificado del servidor de claves no es válido.
+keyserver-error-unsupported = El servidor de claves no es compatible.
+# Strings in mimeWkdHandler.jsm
+wkd-message-body-req =
+    Su proveedor de correo electrónico procesó su solicitud para cargar su clave pública en el directorio de claves web de OpenPGP.
+    Confirme para completar la publicación de su clave pública.
+wkd-message-body-process =
+    Este es un correo electrónico relacionado con el procesamiento automático para cargar su clave pública en el directorio de claves web de OpenPGP.
+    No es necesario que realice ninguna acción manual en este momento.
+# Strings in persistentCrypto.jsm
+converter-decrypt-body-failed =
+    No se pudo descifrar el mensaje con el asunto
+    { $subject }.
+    ¿Quiere volver a intentarlo con una frase de contraseña diferente o quiere saltarte el mensaje?
+# Strings in gpg.jsm
+unknown-signing-alg = Algoritmo de firma desconocido (ID): { $id })
+unknown-hash-alg = Hash criptográfico desconocido (ID: { $id })
+# Strings in keyUsability.jsm
+expiry-key-expires-soon =
+    Su clave { $desc } caducará en menos de { $days } días.
+    Le recomendamos que cree un nuevo par de claves y que configure las cuentas correspondientes para usarla.
+expiry-keys-expire-soon =
+    Sus siguientes claves caducarán en menos de { $days } días:{ $desc }.
+    Le recomendamos que cree nuevas claves y que configure las cuentas correspondientes para usarlas.
+expiry-key-missing-owner-trust =
+    Su clave secreta { $desc } perdió confianza.
+    Le recomendamos que cambie "confía en las certificaciones" a "ultimate" en la propiedades de la clave.
+expiry-keys-missing-owner-trust =
+    Las siguientes claves secretas no tienen confianza.
+    { $desc }.
+    Le recomendamos que establezca "Confía en las certificaciones" en "ultimate" en las propiedades de la clave.
+expiry-open-key-manager = Abrir administrador de claves OpenPGP
+expiry-open-key-properties = Abrir propiedades de la clave
+# Strings filters.jsm
+filter-folder-required = Debe seleccionar una carpeta de destino.
+filter-decrypt-move-warn-experimental =
+    Advertencia: la acción de filtrado "Descifrar permanentemente" puede provocar la destrucción de mensajes.
+    Le recomendamos encarecidamente que primero pruebe el filtro "Crear copia descifrada", pruebe el resultado con cuidado y comience a usar este filtro solo una vez que esté satisfecho con el resultado.
+filter-term-pgpencrypted-label = OpenPGP cifrado
+filter-key-required = Debe seleccionar una clave de destinatario.
+filter-key-not-found = No se pudo encontrar una clave de cifrado para '{ $desc }'.
+filter-warn-key-not-secret =
+    Advertencia: la acción de filtro "Cifrar en clave" reemplaza a los destinatarios.
+    Si no tiene la clave secreta para '{ $desc }', ya no podrá leer los correos electrónicos.
+# Strings filtersWrapper.jsm
+filter-decrypt-move-label = Descifrar permanentemente (OpenPGP)
+filter-decrypt-copy-label = Crear copia descifrada (OpenPGP)
+filter-encrypt-label = Cifrar a clave (OpenPGP)
+# Strings in enigmailKeyImportInfo.js
+import-info-title =
+    .title = ¡Claves importadas correctamente!
+import-info-bits = Bits
+import-info-created = Creado
+import-info-fpr = Huella digital
+import-info-details = Ver Detalles y administrar la aceptación de claves
+import-info-no-keys = No se importaron las claves.
+# Strings in enigmailKeyManager.js
+import-from-clip = ¿Quiere importar alguna(s) clave(s) del portapapeles?
+import-from-url = Descargue la clave pública de esta URL:
+copy-to-clipbrd-failed = No se pudieron copiar las claves seleccionadas al portapapeles.
+copy-to-clipbrd-ok = Clave(s) copiada(s) al portapapeles
+delete-secret-key =
+    ADVERTENCIA: ¡Está a punto de eliminar una clave secreta!
+    
+    Si elimina su clave secreta, ya no podrá descifrar ningún mensaje cifrado para esa clave, ni podrá revocarla.
+    
+    ¿Realmente quiere eliminar AMBOS, la clave secreta y la clave pública?
+    '{ $userId }'?
+delete-mix =
+    ADVERTENCIA: ¡Está a punto de eliminar una clave secreta!
+    Si elimina su clave secreta, ya no podrá descifrar ningún mensaje cifrado para esa clave, ni podrá revocarla.
+    ¿Realmente quiere eliminar AMBOS, la clave secreta y la clave pública?
+delete-pub-key =
+    ¿Quiere eliminar la clave pública?
+    '{ $userId }'?
+delete-selected-pub-key = ¿Quiere eliminar las claves públicas?
+refresh-all-question = No seleccionó ninguna tecla. ¿Le gustaría actualizar TODAS las claves?
+key-man-button-export-sec-key = Exportar las &claves secretas
+key-man-button-export-pub-key = Exportar solo las &claves públicas
+key-man-button-refresh-all = &Actualizar todas las claves
+key-man-loading-keys = Cargando claves, espere ...
+ascii-armor-file = Archivos blindados ASCII (* .asc)
+no-key-selected = Debe seleccionar al menos una tecla para realizar la operación seleccionada
+export-to-file = Exportar clave pública a un archivo
+export-keypair-to-file = Exportar clave pública y secreta al archivo
+export-secret-key = ¿Quiere incluir la clave secreta en el archivo de claves OpenPGP guardado?
+save-keys-ok = Las claves se guardaron correctamente
+save-keys-failed = Falló el guardado de claves
+default-pub-key-filename = Claves-públicas-exportadas
+default-pub-sec-key-filename = Respaldo-de-claves-secretas
+refresh-key-warn = Advertencia: dependiendo de la cantidad de claves y la velocidad de conexión, actualizar todas las claves puede ser un proceso bastante largo.
+preview-failed = No se puede leer el archivo de la clave pública.
+general-error = Error: { $reason }
+dlg-button-delete = &Eliminar
+
+## Account settings export output
+
+openpgp-export-public-success = <b> ¡Clave pública exportada correctamente! </b>
+openpgp-export-public-fail = <b>¡No se puede exportar la clave pública seleccionada!</b>
+openpgp-export-secret-success = <b>¡Clave secreta exitosamente exportada!</b>
+openpgp-export-secret-fail = <b>¡No se puede exportar la clave pública seleccionada!</b>
+# Strings in keyObj.jsm
+key-ring-pub-key-revoked = La clave { $userId } (ID de clave { $keyId }) está revocada.
+key-man-button-revoke-key = &Revocar clave
+# Strings in keyRing.jsm & decryption.jsm
+key-man-button-import = &Importar
+delete-key-title = Borrar clave OpenPGP
+delete-external-key-title = Eliminar la clave GnuPG externa
+gnupg-file = Archivos GnuPG
+# Strings used in enigmailKeygen.js
+save-revoke-cert-as = Crear y guardar certificado de revocación
+revoke-cert-failed = El certificado de revocación no pudo ser creado.
+key-man-button-generate-key = &Generar clave
+key-abort = ¿Abortar generación de clave?
+key-man-button-generate-key-abort = &Abortar generación de clave
+key-man-button-generate-key-continue = &Continuar generación de clave
+# Strings used in enigmailMsgComposeOverlay.js
+msg-compose-button-send = Enviar men&saje
+msg-compose-details-button-label = Detalles…
+msg-compose-details-button-access-key = D
+key-not-found = Clave '{ $key }' no encontrada
+key-revoked = Clave '{ $key }' revocada
+key-expired = Clave '{ $key }' expirada
+msg-compose-internal-error = Ocurrió un error interno.
+keys-to-export = Seleccionar claves OpenPGP para insertar
+dlg-button-ok = &Aceptar
+dlg-button-close = &Cerrar
+dlg-button-cancel = &Cancelar
+dlg-no-prompt = No mostrar este diálogo nuevamente
+enig-confirm = Confirmación de OpenPGP
+enig-alert = Alerta de OpenPGP
+enig-info = Información de OpenPGP
+# Strings used in persistentCrypto.jsm
+dlg-button-retry = &Reintentar
+# Strings used in enigmailCommon.js
+enig-error = Error de OpenPGP
+enig-alert-title =
+    .title = Alerta de OpenPGP
