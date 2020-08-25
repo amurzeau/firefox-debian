@@ -2,6 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
+# This file gets parsed into a JS dictionary of all known error message ids in
+# gen_aboutneterror_codes.py . If we end up needing fluent attributes or
+# refactoring them in some way, the script will need updating.
+
 # Variables:
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
@@ -80,7 +86,7 @@ ssl-error-illegal-parameter-alert = Pe ambue SSL jeikekatu apýra omboguevijey p
 ssl-error-unsupported-cert-alert = Pe ambue SSL jeikekatu apýra moneĩri mboajepyréva peteĩchagua og̃uahẽva chupe.
 ssl-error-certificate-unknown-alert = Pe ambue SSL jeikekatu apýra oguereko apañuãi ojekuaaporã’ỹva pe mboajepyréva og̃uahẽva chupe ndive.
 ssl-error-generate-random-failure = SSL oguereko peteĩ jejavy pe papapy ijereguáva moheñoihápe.
-ssl-error-sign-hashes-failure = Ndaikatumo'ãi emboheraguapy ñanduti rupi umi mba’ekuaarã jerupyréva ehechajey hag̃ua imboajepyre.
+ssl-error-sign-hashes-failure = Ndaikatumo’ãi emboheraguapy ñanduti rupi umi mba’ekuaarã jerupyréva ehechajey hag̃ua imboajepyre.
 ssl-error-extract-public-key-failure = SSL ndaikatumo’ãi onohẽ ñemigua opavavépe g̃uarãva mboajepyre ambue apýra jeikekatu pegua.
 ssl-error-server-key-exchange-failure = Jejavy ojekuaaporã’ỹva oñemopyenda aja pe ñomongetarã ñemigua ñome’ẽ rehegua SSL mohendahavusúva.
 ssl-error-client-key-exchange-failure = Jejavy ojekuaaporã’ỹva oñemopyenda aja pe ñomongetarã ñemigua ñome’ẽ rehegua SSL ñemuharaguáva.
@@ -109,11 +115,11 @@ ssl-error-decryption-failed-alert = Ambue tendaguáva ndaikatúi ombopapapy’o 
 ssl-error-record-overflow-alert = Ambue tendaguávape og̃uahẽ peteĩ SSL je’epyre ipukuvéva ñemoneĩpyrévagui.
 ssl-error-unknown-ca-alert = Ambue tendaguáva nomboajéi térã ndojeroviái CA rehe oguenohẽva imbojepyréva.
 ssl-error-access-denied-alert = Ambue tendaguávape og̃uahẽ peteĩ mbojepyréva oikóva, hákatu pe jeike oñembotovéma.
-ssl-error-decode-error-alert = Jeike ambue apýra pegua ndaikatuikuri ombopapapy'o peteĩ marandu SSL ñomongetarãva (SSL handshake).
+ssl-error-decode-error-alert = Jeike ambue apýra pegua ndaikatuikuri ombopapapy’o peteĩ marandu SSL ñomongetarãva (SSL handshake).
 ssl-error-decrypt-error-alert = Ambue tendaguáva ohechauka peteĩ jejavy ñemboheraguapy jehechajeýpe térã nimigua ñome’ẽme.
 ssl-error-export-restriction-alert = Ambue tendaguáva omomarandu ñomongetarãva ndoguerekoiha mba’egueraha mbojojaha.
 ssl-error-protocol-version-alert = Ambue tendaguáva peteĩchagua taperekoite ndojoguerahái térã noñemoneĩva.
-ssl-error-insufficient-security-alert = Pe mohendahavusu oikotevẽ mbopapapy ojoapykuerive pe ñemuhára ogueropu'akáva.
+ssl-error-insufficient-security-alert = Pe mohendahavusu oikotevẽ mbopapapy ojoapykuerive ñemuhára oropu’akáva.
 ssl-error-internal-error-alert = Ambue tendaguáva omomarandu oguerekohague peteĩ jejavy pypeguáva.
 ssl-error-user-canceled-alert = Pe puruhára ambue jeike apyraguáva ojokóma ñomongetarãva.
 ssl-error-no-renegotiation-alert = Ambue tendaguáva nomoneĩri ñeñomongetajey SSL rekorosãrã mba’aporã.
@@ -148,9 +154,9 @@ ssl-error-next-protocol-no-protocol = Pe mohendahavusu nomoneĩri mba’evéicha
 ssl-error-inappropriate-fallback-alert = Pe mohendahavusu ombotove jepojopy oipurúva oguejypyréva peteĩchagua TLS itujavéva ome’ẽva mohendahavusúpe ykeko.
 ssl-error-weak-server-cert-key = Pe mohendahavusu mboajepyréva omoinge ñemigua opavaveguáva ikangyetereíva.
 ssl-error-rx-short-dtls-read = Ndaipóri pa’ũ tuicháva mandu’arenda mbyteguáva DTLS peg̃uarã.
-ssl-error-no-supported-signature-algorithm = Algoritmo ñepytyvõ'ỹre TLS teraguapy oñembohekóma.
+ssl-error-no-supported-signature-algorithm = Algoritmo ñepytyvõ’ỹre TLS teraguapy oñembohekóma.
 ssl-error-unsupported-signature-algorithm = Ñomongetaha oipuru ñembojopyru ipu’aka’ỹva teraguapygua ha algoritmo mba’eku’i.
-ssl-error-missing-extended-master-secret = Pe mokõiguáva okuesejey extended_master_secret jepysokue'ỹre.
+ssl-error-missing-extended-master-secret = Pe mokõiguáva okuesejey extended_master_secret jepysokue’ỹre.
 ssl-error-unexpected-extended-master-secret = Pe mokõiguáva okuesejey extended_master_secret jepysokue ñeha’ãrõ’ỹva ndive.
 sec-error-io = Oiko peteĩ jejavy E/S mba’éva pe tekorosãrã ñemoneĩte aja.
 sec-error-library-failure = jejavy aranduka’aty rekorosãrã.
@@ -193,18 +199,18 @@ sec-error-path-len-constraint-invalid = Pe mboajepyréva rape jepysokue ñemomic
 sec-error-cert-usages-invalid = Pe mboajepyréva jepuru rendag̃ua ndoikói.
 sec-internal-only = **Ha’ãha pypegua AÑOITÉVA**
 sec-error-invalid-key = Pe ñemigua nomoneĩri tembiapo jerurepyre rehegua.
-sec-error-unknown-critical-extension = Pe mboajepyréva oguereko peteĩ jepysokue na'iporãi ojekuaa'ỹva.
+sec-error-unknown-critical-extension = Pe mboajepyréva oguereko peteĩ jepysokue na’iporãi ojekuaa’ỹva.
 sec-error-old-crl = CRL pyahu ndaiha’éi upeigua ko’ag̃aguágui.
-sec-error-no-email-cert = Mbopapapy'ỹ térã teraguapypyre: ndoguerekói gueteri peteĩ ñanduti veve mboajepyre.
+sec-error-no-email-cert = Mbopapapy’ỹ térã teraguapypyre: ndoguerekói gueteri peteĩ ñanduti veve mboajepyre.
 sec-error-no-recipient-certs-query = Mbopapapyre’ỹva: ndoguerekói mboajepyréva peteĩteĩva mba’yrúpe g̃uarã.
 sec-error-not-a-recipient = Ndaikatúi oñembopapapy’o: nde ndaha’éi g̃uahẽtaha, térã ndojejuhúi ñemiguáva térã mboajepyre ha’etéva.
-sec-error-pkcs7-keyalg-mismatch = Ndaikatúi oñembopapapy'o: pe algoritmo mbopapapy ñemiguáva ndojoguerahái pe imboajepyre ndive.
+sec-error-pkcs7-keyalg-mismatch = Ndaikatúi oñembopapapy’o: pe algoritmo mbopapapy ñemiguáva ndojoguerahái pe imboajepyre ndive.
 sec-error-pkcs7-bad-signature = Teraguapy oiko’ỹva jehechajey: ndojejuhúi omboheraguapývape, térã ojejuhu hetaiterei omboheraguapývape, térã umi mba’ekuaarã noĩporãi térã imarã.
-sec-error-unsupported-keyalg = Algoritmo ñemiguáva ñoñemoneĩri térã ojekuaa'ỹva.
-sec-error-decryption-disallowed = Ndaikatúi oñembopapapy'o: oñembopapapy ojepurúvo peteĩ algoritmo ñemigua tuichakue oñemoneĩ'ỹva.
-xp-sec-fortezza-bad-card = Kuatia'atã Fortezza noñemoñepyrũi hekopete. Ikatúpiko, ehekyijey ha embojevy iguenohẽhárape.
-xp-sec-fortezza-no-card = Ndojejuhúikuri kuatia'atã Fortezza
-xp-sec-fortezza-none-selected = Ndaipóri kuatia'atã Fortezza ojeporavopyre
+sec-error-unsupported-keyalg = Algoritmo ñemiguáva ñoñemoneĩri térã ojekuaa’ỹva.
+sec-error-decryption-disallowed = Ndaikatúi oñembopapapy’o: oñembopapapy ojepurúvo peteĩ algoritmo ñemigua tuichakue oñemoneĩ’ỹva.
+xp-sec-fortezza-bad-card = Kuatia’atã Fortezza noñemoñepyrũi hekopete. Ikatúpiko, ehekyijey ha embojevy iguenohẽhárape.
+xp-sec-fortezza-no-card = Ndojejuhúikuri kuatia’atã Fortezza
+xp-sec-fortezza-none-selected = Ndaipóri kuatia’atã Fortezza ojeporavopyre
 xp-sec-fortezza-more-info = Eiporavo peteĩ avarekoite og̃uahẽve hag̃ua marandu ...rehegua
 xp-sec-fortezza-person-not-found = Avarekoite ojejuhu’ỹva
 xp-sec-fortezza-no-more-info = Ndaipóri maranduve pe avarekoitépe
@@ -277,7 +283,7 @@ sec-error-ocsp-server-error = Pe mohendahavusu OCSP ryepyetépe oĩ jejavy.
 sec-error-ocsp-try-server-later = Mohendahavusu OCSP oipota eha’ãjey ag̃ave.
 sec-error-ocsp-request-needs-sig = Pe mohendahavusu OCSP oikotevẽ peteĩ teraguapy ko mba’ejerurépe.
 sec-error-ocsp-unauthorized-request = Pe mohendahavusu OCSP ombojevyjey ko mba’ejerure oñemoneĩ’ỹvaramo.
-sec-error-ocsp-unknown-response-status = Pe OCSP mohendahavusu ombojevyjey peteĩ tekotee ojekuaa'ỹetéva.
+sec-error-ocsp-unknown-response-status = OCSP mohendahavusu ombojevyjey tekotee ojekuaa’ỹetéva.
 sec-error-ocsp-unknown-cert = Pe OCSP mohendahavusu ndoguerekói tekotee mboajepyrévape g̃uarã.
 sec-error-ocsp-not-enabled = Emyandyva’erã OCSP emongu’e mboyve ko tembiapo.
 sec-error-ocsp-no-default-responder = Embohekova’erã OCSP mbohovaiha ijypykuéva emongu’e mboyve ko tembiapo.
@@ -299,9 +305,9 @@ sec-error-unrecognized-oid = Mba’e jekuaaukaha noñemoneĩriva.
 sec-error-ocsp-invalid-signing-cert = OCSP ñemboheraguapy mboajepyréva ndoikói OCSP ñembohovái rupi.
 sec-error-revoked-certificate-crl = Mboajepyréva oñembojevyjey tysýi ñembojevy mboajepyréva guenohẽha rupi.
 sec-error-revoked-certificate-ocsp = OCSP me’ẽhára mbohovaiha omomarandu pe mboajepyréva ojejokomaha.
-sec-error-crl-invalid-version = Pe mbojevyjey rysýi mboajepyréva guenohẽhára rehegua oguereko peteĩ papapy peteĩchagua ojekuaa'ỹva.
+sec-error-crl-invalid-version = Mbojevyjey rysýi mboajepyréva guenohẽhára oreko papapy peteĩchagua ojekuaa’ỹva.
 sec-error-crl-v1-critical-extension = Ñembojevypy rysýi V1 guenohẽha mboajepyréva oguereko peteĩ jepysokue oĩvaíva.
-sec-error-crl-unknown-critical-extension = Ñembojevypy rysýi V2 guenohẽha mboajepyréva oguereko peteĩ jepysokue oĩvai jekuaa'ỹva.
+sec-error-crl-unknown-critical-extension = Ñembojevypy rysýi V2 guenohẽha mboajepyréva oreko jepysokue oĩvai jekuaa’ỹva.
 sec-error-unknown-object-type = Peteĩchagua mba’e moha’eñopyre ojekuaa’ỹva.
 sec-error-incompatible-pkcs11 = Ñangarekoha PKCS #11 omomarã jekuaaitéva ojogueraha’ỹ hag̃uáicha.
 sec-error-no-event = Ndaipóri mba’evéichagua tembiaporã pyahu mba’ekuaguáva ko’ag̃aite.
@@ -313,7 +319,7 @@ sec-error-ocsp-bad-signature = OCSP ñembohovái oguereko mboheraguapy oiko’�
 sec-error-out-of-search-limits = Mboajepyréva ñemboaje jeheka oĩhína jehekakuaa mboipýri
 sec-error-invalid-policy-mapping = Pe purureko rapete oguereko anypolicy
 sec-error-policy-validation-failed = Mboajepyréva joajuha ndohupytýi ñemoañete purureko rehegua
-sec-error-unknown-aia-location-type = Peteĩchagua kundaharape ojekuaa'ỹva AIA mboajepyréva jepysokuépe
+sec-error-unknown-aia-location-type = Peteĩchagua kundaharape ojekuaa’ỹva AIA mboajepyréva jepysokuépe
 sec-error-bad-http-response = Pe mohendahavusu ombojevyjey HTTP mbohovái ndoikóiva
 sec-error-bad-ldap-response = Pe mohendahavusu ombojevyjey peteĩ LDAP ñembohovái ndoikóiva
 sec-error-failed-to-encode-data = Jejavy embopapapykuévo mba’ekuaarã ASN1 mbopapapyhandi
@@ -322,11 +328,11 @@ sec-error-libpkix-internal = Oiko peteĩ jejavy hyepyguáva Libpkix mboajepyrév
 sec-error-pkcs11-general-error = Peteĩ PKCS #11 ra’ãha ombojevyjey CKR_GENERAL_ERROR, ombohapévo oikoha peteĩ jejavy ndaikatukuaáiva eguerujey.
 sec-error-pkcs11-function-failed = Peteĩ PKCS #11 ra’ãha ojevyjey CKR_FUNCTION_FAILED, he’iséva pe tembiapoite ejerureva’ekue ndaikatúikuri oiko. Ejapojeýramo peichaite ikatúma oiko ndéve.
 sec-error-pkcs11-device-error = Peteĩ PKCS #11 ra’ãha ombojevyjey CKR_DEVICE_ERROR, he’ihápe oikoha peteĩ apañuãi token térã slot ndive.
-sec-error-bad-info-access-method = Tapereko jeikeha marandúpe ojekuaa'ỹva mboajepyréva jepysokuépe.
+sec-error-bad-info-access-method = Tapereko jeikeha marandúpe ojekuaa’ỹva mboajepyréva jepysokuépe.
 sec-error-crl-import-failed = Oiko jejavy eñeha’ãvo mba’egueru peteĩ CRL.
 sec-error-expired-password = Pe ñe’ẽñemi ndoikovéima.
 sec-error-locked-password = Pe ñe’ẽñemi ojejokóma.
-sec-error-unknown-pkcs11-error = PKCS #11 ojekuaa'ỹva jejavy.
+sec-error-unknown-pkcs11-error = PKCS #11 ojekuaa’ỹva jejavy.
 sec-error-bad-crl-dp-url = URL ndoikói térã noñemoneĩriva kyta réra CRL ñemyasãihápe.
 sec-error-cert-signature-algorithm-disabled = Pe mboajepyréva oñemboheraguapy oipurúkuévo peteĩ algoritmo mboheraguapýva oñemongepyréva nahekorosãi rupi.
 mozilla-pkix-error-key-pinning-failure = Mohendahavusu oipuru kutuha (HPKP), hákatu mba’evéichagua mboajepyre joajuha jeroviaháva ikatu ojejapo oñembojuehe hag̃ua pinset ndive. Kutuha añetéva ndaikatúi oñemyengovia.

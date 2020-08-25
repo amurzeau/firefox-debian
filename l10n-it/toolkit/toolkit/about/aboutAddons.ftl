@@ -161,7 +161,7 @@ private-browsing-description2 =
     Qualunque estensione aggiunta a { -brand-short-name } non funzionerà in
     finestre anonime per impostazione predefinita. Un’estensione non funzionerà
     in finestre anonime e non avrà accesso alle attività online, a meno che il
-    funzionamento sia stato consentito nelle impostazioni. Questa modifica è
+    funzionamento non sia stato consentito nelle impostazioni. Questa modifica è
     stata introdotta per garantire la riservatezza dei dati di navigazione
     quando si utilizzano finestre anonime.
     <label data-l10n-name="private-browsing-learn-more">Scopri come gestire le impostazioni delle estensioni</label>
@@ -404,6 +404,10 @@ addon-detail-version-label = Versione
 addon-detail-last-updated-label = Ultimo aggiornamento
 addon-detail-homepage-label = Sito web
 addon-detail-rating-label = Voto
+# Message for add-ons with a staged pending update.
+install-postponed-message = Questa estensione verrà aggiornata al riavvio di { -brand-short-name }.
+install-postponed-button = Aggiorna adesso
+
 # The average rating that the add-on has received.
 # Variables:
 #   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.

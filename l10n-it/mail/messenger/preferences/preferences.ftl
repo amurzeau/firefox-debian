@@ -41,7 +41,6 @@ composition-addressing-header = Indirizzamento
 privacy-main-header = Privacy
 privacy-passwords-header = Password
 privacy-junk-header = Indesiderata
-privacy-data-collection-header = Raccolta e utilizzo dati
 collection-header = Raccolta e utilizzo dati di { -brand-short-name }
 collection-description = Cerchiamo di garantire agli utenti la possibilità di scegliere, raccogliendo solo i dati necessari per realizzare e migliorare { -brand-short-name } per tutti. Prima di raccogliere dati personali, chiediamo sempre l’autorizzazione.
 collection-privacy-notice = Informativa sulla privacy
@@ -91,12 +90,10 @@ update-in-progress-ok-button = I&nterrompi
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Continua
-addons-button = Estensioni & Temi
+addons-button = Estensioni e temi
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verificare la propria identità per creare una password principale.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Per creare una password principale, inserire le credenziali di accesso a Windows. Questo aiuta a garantire la sicurezza dei tuoi account.
 # This message can be seen by trying to add a Master Password.
@@ -104,6 +101,13 @@ master-password-os-auth-dialog-message-win = Per creare una password principale,
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = creare una password principale
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Per creare una password principale, inserire le credenziali di accesso a Windows. Questo aiuta a garantire la sicurezza dei tuoi account.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = creare una password principale
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -115,7 +119,7 @@ focus-search-shortcut-alt =
     .key = k
 general-legend = Pagina iniziale di { -brand-short-name }
 start-page-label =
-    .label = All'apertura di { -brand-short-name } mostra la pagina iniziale nell'area messaggi
+    .label = All’apertura di { -brand-short-name } mostra la pagina iniziale nell’area messaggi
     .accesskey = d
 location-label =
     .value = Posizione:
@@ -132,8 +136,8 @@ remove-search-engine =
     .accesskey = v
 minimize-to-tray-label =
     .label = Quando { -brand-short-name } è ridotto a icona, spostalo nell’area di notifica
-    .accesskey = m
-new-message-arrival = All'arrivo di un messaggio:
+    .accesskey = n
+new-message-arrival = All’arrivo di un messaggio:
 mail-play-sound-label =
     .label =
         { PLATFORM() ->
@@ -148,7 +152,7 @@ mail-play-sound-label =
 mail-play-button =
     .label = Ascolta
     .accesskey = A
-change-dock-icon = Modifica le preferenze per l'icona dell'app
+change-dock-icon = Modifica le preferenze per l’icona dell’app
 app-icon-options =
     .label = Opzioni icona applicazione…
     .accesskey = n
@@ -160,7 +164,7 @@ customize-alert-label =
     .label = Personalizza…
     .accesskey = z
 tray-icon-label =
-    .label = Mostra un'icona nell'area di notifica
+    .label = Mostra un’icona nell’area di notifica
     .accesskey = t
 mail-system-sound-label =
     .label = Suono predefinito di sistema per nuova posta
@@ -172,12 +176,12 @@ mail-browse-sound-button =
     .label = Sfoglia…
     .accesskey = S
 enable-gloda-search-label =
-    .label = Attiva la ricerca globale e l'indicizzazione
+    .label = Attiva la ricerca globale e l’indicizzazione
     .accesskey = E
 datetime-formatting-legend = Formattazione data e ora
 language-selector-legend = Lingua
 allow-hw-accel =
-    .label = Utilizza l'accelerazione hardware quando disponibile
+    .label = Utilizza l’accelerazione hardware quando disponibile
     .accesskey = h
 store-type-label =
     .value = Modalità di salvataggio dei messaggi per i nuovi account:
@@ -195,7 +199,7 @@ smooth-scrolling-label =
     .accesskey = m
 system-integration-legend = Integrazione col sistema
 always-check-default =
-    .label = Controlla sempre all'avvio se { -brand-short-name } è il programma di posta predefinito
+    .label = Controlla sempre all’avvio se { -brand-short-name } è il programma di posta predefinito
     .accesskey = A
 check-default-button =
     .label = Controlla ora…
@@ -227,7 +231,7 @@ automatic-updates-label =
     .label = Installa automaticamente aggiornamenti (consigliato: maggiore sicurezza)
     .accesskey = n
 check-updates-label =
-    .label = Controlla aggiornamenti ma permetti all'utente di scegliere se installarli
+    .label = Controlla aggiornamenti ma permetti all’utente di scegliere se installarli
     .accesskey = C
 update-history-button =
     .label = Mostra cronologia aggiornamenti
@@ -242,7 +246,7 @@ network-settings-button =
     .label = Impostazioni…
     .accesskey = I
 offline-legend = Non in linea
-offline-settings = Configura le impostazioni 'non in linea'
+offline-settings = Configura le impostazioni “non in linea”
 offline-settings-button =
     .label = Non in linea…
     .accesskey = N
@@ -394,7 +398,7 @@ inline-label =
 as-attachment-label =
     .label = come allegati
 extension-label =
-    .label = Aggiungi l'estensione al nome del file
+    .label = Aggiungi l’estensione al nome del file
     .accesskey = e
 
 ## Note: This will concatenate to "Auto Save every [___] minutes",
@@ -445,7 +449,7 @@ format-description = Configura la formattazione del testo:
 send-options-label =
     .label = Opzioni di invio…
     .accesskey = d
-autocomplete-description = Durante la scrittura dell'indirizzo controlla le corrispondenze in:
+autocomplete-description = Durante la scrittura dell’indirizzo controlla le corrispondenze in:
 ab-label =
     .label = Rubriche locali
     .accesskey = u
@@ -458,7 +462,7 @@ edit-directories-label =
     .label = Modifica cartelle…
     .accesskey = M
 email-picker-label =
-    .label = Aggiungi automaticamente l'indirizzo della posta in uscita a:
+    .label = Aggiungi automaticamente l’indirizzo della posta in uscita a:
     .accesskey = A
 default-directory-label =
     .value = Directory di avvio predefinita nella finestra rubrica:
@@ -499,7 +503,7 @@ remote-content-info =
     .value = Maggiori informazioni sui problemi di privacy dei contenuti remoti
 web-content = Contenuto web
 history-label =
-    .label = Ricordare siti web e link visitati
+    .label = Ricorda siti web e link visitati
     .accesskey = R
 cookies-label =
     .label = Accetta i cookie dai siti
@@ -541,12 +545,21 @@ master-password-label =
 master-password-button =
     .label = Cambia Password principale…
     .accesskey = C
+primary-password-description = È possibile impostare una password principale per proteggere tutte le altre password; sarà però obbligatorio digitarla una volta per sessione.
+primary-password-label =
+    .label = Utilizza una password principale
+    .accesskey = U
+primary-password-button =
+    .label = Cambia la password principale…
+    .accesskey = m
+forms-primary-pw-fips-title = Si è in modalità FIPS. FIPS richiede che la password principale sia impostata.
+forms-master-pw-fips-desc = Modifica della password non riuscita
 junk-description = Scegliere le impostazioni predefinite per la posta indesiderata. Le impostazioni di posta indesiderata specifiche possono essere configurate nelle Impostazioni account.
 junk-label =
     .label = Quando i messaggi sono segnati come posta indesiderata:
     .accesskey = Q
 junk-move-label =
-    .label = Spostali nella cartella "Indesiderata" dell'utente
+    .label = Spostali nella cartella “Indesiderata” dell’utente
     .accesskey = o
 junk-delete-label =
     .label = Eliminali
@@ -567,7 +580,7 @@ phishing-description = { -brand-short-name } è in grado di analizzare i messagg
 phishing-label =
     .label = Avvisa sempre se il messaggio che si sta leggendo è un possibile tentativo di frode
     .accesskey = e
-antivirus-description = { -brand-short-name } è in grado di semplificare il lavoro del software antivirus, permettendo l'analisi della posta in arrivo prima che venga salvata localmente.
+antivirus-description = { -brand-short-name } è in grado di semplificare il lavoro del software antivirus, permettendo l’analisi della posta in arrivo prima che venga salvata localmente.
 antivirus-label =
     .label = Consenti ai programmi antivirus di mettere in quarantena i singoli messaggi in arrivo.
     .accesskey = n
@@ -579,7 +592,7 @@ certificate-ask =
     .label = Chiedere ogni volta
     .accesskey = C
 ocsp-label =
-    .label = Interrogare i risponditori OCSP per confermare l'attuale validità dei certificati
+    .label = Interrogare i risponditori OCSP per confermare l’attuale validità dei certificati
     .accesskey = e
 certificate-button =
     .label = Gestisci certificati…
@@ -596,7 +609,7 @@ startup-label =
 offline-label =
     .label = Mantieni gli account di chat scollegati
 auto-connect-label =
-    .label = Collega l'account di chat automaticamente
+    .label = Collega l’account di chat automaticamente
 
 ## Note: idle-label is displayed first, then there's a field where the user
 ## can enter a number, and itemTime is displayed at the end of the line.
@@ -612,7 +625,7 @@ idle-time-label = minuti di inattività
 ##
 
 away-message-label =
-    .label = ed imposta il mio stato come 'Non disponibile' con questo messaggio:
+    .label = ed imposta il mio stato come “Non disponibile” con questo messaggio:
     .accesskey = e
 send-typing-label =
     .label = Mostra le notifiche di scrittura nelle conversazioni
@@ -630,8 +643,8 @@ notification-empty =
 notification-type-label =
     .label =
         { PLATFORM() ->
-            [macos] Anima l'icona nel dock
-           *[other] Fai lampeggiare l'elemento nella barra delle applicazioni
+            [macos] Anima l’icona nel dock
+           *[other] Fai lampeggiare l’elemento nella barra delle applicazioni
         }
     .accesskey =
         { PLATFORM() ->

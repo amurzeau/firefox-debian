@@ -421,7 +421,7 @@ browsing-use-autoscroll =
     .label = Vieritä sivua automaattisesti
     .accesskey = V
 browsing-use-smooth-scrolling =
-    .label = Vieritä sivua portaattomasti
+    .label = Vieritä sivua tasaisesti
     .accesskey = e
 browsing-use-onscreen-keyboard =
     .label = Näytä kosketusnäppäimistö tarvittaessa
@@ -803,10 +803,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Käytä pääsalasanaa
     .accesskey = K
+forms-primary-pw-use =
+    .label = Käytä pääsalasanaa
+    .accesskey = K
+forms-primary-pw-learn-more-link = Lue lisää
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Muuta pääsalasanaa…
     .accesskey = M
 forms-master-pw-fips-title = Olet FIPS-tilassa ja se vaatii pääsalasanan.
+forms-primary-pw-change =
+    .label = Vaihda pääsalasana…
+    .accesskey = V
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Olet parhaillaan FIPS-tilassa. FIPS edellyttää, että pääsalasana ei ole tyhjä.
 forms-master-pw-fips-desc = Salasanan vaihto epäonnistui
 
 ## OS Authentication dialog
@@ -818,6 +833,13 @@ master-password-os-auth-dialog-message-win = Luo pääsalasana kirjoittamalla Wi
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = asettaa pääsalasanan
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Luo pääsalasana kirjoittamalla Windows-kirjautumistietosi. Tämä auttaa suojaamaan tilejäsi.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = asettaa pääsalasanan
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -1165,6 +1187,18 @@ space-alert-under-5gb-ok-button =
     .label = Selvä
     .accesskey = S
 space-alert-under-5gb-message = { -brand-short-name(case: "ablative") } loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit lukea levyn käytön optimoimisesta selaamisen sujuvoittamiseksi painamalla ”Lue lisää”.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Vain HTTPS -tila
+httpsonly-description = HTTPS:n avulla { -brand-short-name } muodostaa suojatun ja salatun yhteyden vierailemiisi sivustoihin. Useimmat sivustot tukevat HTTPS:ää, ja jos vain HTTPS -tila on käytössä, { -brand-short-name } muuntaa kaikki yhteydet käyttämään HTTPS:ää.
+httpsonly-learn-more = Lue lisää
+httpsonly-radio-enabled =
+    .label = Käytä vain HTTPS -tilaa kaikissa ikkunoissa
+httpsonly-radio-enabled-pbm =
+    .label = Käytä vain HTTPS -tilaa vain yksityisissä ikkunoissa
+httpsonly-radio-disabled =
+    .label = Älä käytä vain HTTPS -tilaa
 
 ## The following strings are used in the Download section of settings
 

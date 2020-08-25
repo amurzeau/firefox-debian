@@ -24,12 +24,15 @@
 
 # LOCALIZATION NOTE (seamonkey_addons):
 # link title for https://addons.thunderbird.net/en-US/seamonkey/
+#define seamonkey_addons Dodatki za SeaMonkey
 
 # LOCALIZATION NOTE (seamonkey_themes):
 # link title for https://addons.thunderbird.net/en-US/seamonkey/themes
+#define seamonkey_themes Teme za SeaMonkey
 
 # LOCALIZATION NOTE (seamonkey_dictionaries):
 # link title for https://addons.thunderbird.net/en-US/seamonkey/dictionaries
+#define seamonkey_dictionaries Slovarji za preverjanje črkovanja
 
 # LOCALIZATION NOTE (seamonkey_plugins):
 # link title for https://addons.thunderbird.net/en-US/seamonkey/plugins
@@ -41,7 +44,9 @@
 
 # LOCALIZATION NOTE (mozdev_seamonkey):
 # link title for http://www.mozdev.org/projects/applications/SeaMonkey.html
+#define mozdev_seamonkey Razširitve za SeaMonkey z mozdev.org
 
+#define community_support Skupnost in podpora
 
 # LOCALIZATION NOTE (seamonkey_community):
 # link title for https://www.seamonkey-project.org/community
@@ -53,6 +58,7 @@
 
 # LOCALIZATION NOTE (seamonkey_support):
 # link title for the mozillaZine SeaMonkey Support forum
+#define seamonkey_support Forum s podporo za SeaMonkey (mozillaZine)
 
 # LOCALIZATION NOTE (seamonkey_l10n):
 # insert full bookmark line for localized SeaMonkey page (personal toolbar)

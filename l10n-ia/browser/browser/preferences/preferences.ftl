@@ -129,7 +129,7 @@ startup-header = Al initio
 separate-profile-mode =
     .label = Permitter que { -brand-short-name } e Firefox exeque al mesme tempore
 use-firefox-sync = Consilio: Profilos distincte es utilisate. Usa { -sync-brand-short-name } pro compartir datos inter illos.
-get-started-not-logged-in = Aperir session a { -sync-brand-short-name }…
+get-started-not-logged-in = Aperir session in { -sync-brand-short-name }…
 get-started-configured = Aperir le preferentias de { -sync-brand-short-name }
 always-check-default =
     .label = Sempre verificar si { -brand-short-name } es tu navigator predefinite
@@ -627,7 +627,7 @@ sync-signedout-account-signin =
     .label = Aperir session…
     .accesskey = A
 sync-signedout-account-signin2 =
-    .label = Aperir session a { -sync-brand-short-name }…
+    .label = Aperir session in { -sync-brand-short-name }…
     .accesskey = A
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
@@ -803,10 +803,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Usar un contrasigno maestro
     .accesskey = U
+forms-primary-pw-use =
+    .label = Usar un contrasigno primari
+    .accesskey = U
+forms-primary-pw-learn-more-link = Saper plus
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Modificar le contrasigno maestro…
     .accesskey = M
 forms-master-pw-fips-title = Tu es actualmente in modo FIPS. Tal modo require un contrasigno maestro non vacue.
+forms-primary-pw-change =
+    .label = Modificar le contrasigno primari…
+    .accesskey = p
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = Formalmente note como contrasigno maestro
+forms-primary-pw-fips-title = Tu es actualmente in modo FIPS. Tal modo require un contrasigno primari non vacue.
 forms-master-pw-fips-desc = Le cambio de contrasigno ha fallite
 
 ## OS Authentication dialog
@@ -818,6 +833,13 @@ master-password-os-auth-dialog-message-win = Pro crear un contrasigno principal,
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = crea un contrasigno principal
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Pro crear un contrasigno primari, insere tu credentiales de accesso a Windows. Isto permitte de garantir le securitate de tu contos.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = Crear un contrasigno primari
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -1165,6 +1187,18 @@ space-alert-under-5gb-ok-button =
     .label = De accordo
     .accesskey = D
 space-alert-under-5gb-message = { -brand-short-name } non ha bastante spatio de disco disponibile. Le contento de sitos web pote non esser monstrate correctemente. Visita “Apprender plus” pro optimisar le uso de tu disco pro un melior experientia de navigation.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Modo solo HTTPS
+httpsonly-description = HTTPS offere un connexion secur e cryptate inter { -brand-short-name } e le sitos web que tu visita. Le major parte del sitos web supporta le HTTPS, e si es activate Modo HTTPS-solo, alora { -brand-short-name } promovera tote le connexiones a HTTPS.
+httpsonly-learn-more = Saper plus
+httpsonly-radio-enabled =
+    .label = Activar le Modo solo HTTPS in tote le fenestras
+httpsonly-radio-enabled-pbm =
+    .label = Activar le Modo solo HTTPS in le fenestras private solmente
+httpsonly-radio-disabled =
+    .label = Non activar le Modo solo HTTPS
 
 ## The following strings are used in the Download section of settings
 

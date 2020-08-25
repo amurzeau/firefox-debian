@@ -23,7 +23,7 @@
 
 # LOCALIZATION NOTE (firefox_help):
 # link title for https://www.mozilla.org/en-US/firefox/help/
-#define firefox_help Pytyvõ ha pytyvõ'ýva
+#define firefox_help Pytyvõ ha pytyvõ’ỹva
 
 # LOCALIZATION NOTE (firefox_customize):
 # link title for https://www.mozilla.org/en-US/firefox/customize/
@@ -59,7 +59,7 @@
 
 # LOCALIZATION NOTE (crashes):
 # Nightly builds only, link title for about:crashes
-#define crashes Opaichagua mab'evai
+#define crashes Opaichagua mba’evai
 
 # LOCALIZATION NOTE (irc):
 # Nightly builds only, link title for ircs://irc.mozilla.org/nightly

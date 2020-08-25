@@ -4,23 +4,22 @@
 
 <!ENTITY securityTitle.label "Захист">
 <!ENTITY securityTab.label "Безпека">
-<!ENTITY securityHeading.label "Щоб отримувати і відсилати зашифровані листи або листи з цифровим підписом, вам потрібно вказати сертифікат ключа шифрування і сертифікат ключа підпису.">
+<!ENTITY securityHeading.label "Щоб отримувати й надсилати захищені повідомлення або повідомлення з цифровим підписом, вам потрібно вказати сертифікат ключа шифрування і сертифікат ключа підпису.">
 <!ENTITY encryptionGroupTitle.label "Шифрування">
-<!ENTITY encryptionChoiceLabel.label "Використовувати шифрування при відсиланні листів:">
+<!ENTITY encryptionChoiceLabel.label "Використовувати шифрування під час надсилання повідомлень:">
 <!ENTITY neverEncrypt.label "Ніколи (не використовувати шифрування)">
 <!ENTITY neverEncrypt.accesskey "Н">
-<!ENTITY alwaysEncryptMessage.label "Завжди (листа не буде відіслано, якщо не у всіх адресатів є сертифікати)">
+<!ENTITY alwaysEncryptMessage.label "Завжди (повідомлення не буде надіслано, якщо не у всіх адресатів є сертифікати)">
 <!ENTITY alwaysEncryptMessage.accesskey "З">
-<!ENTITY encryptionCert.message "Особистий сертифікат для шифрування: ">
+<!ENTITY encryptionCert.message "Застосовуйте цей сертифікат для захисту &amp; розшифрування отриманих повідомлень:">
 
 <!ENTITY e2eTitle.label "Наскрізне шифрування">
-<!ENTITY e2eIntro.description "Щоб надсилати зашифровані або підписані цифровим підписом повідомлення, вам необхідно налаштувати технологію шифрування OpenPGP або S/MIME.">
 <!ENTITY e2eLearnMore.label "Докладніше">
 
 <!ENTITY e2eEnc.description "Якщо не захистити вміст повідомлень наскрізним шифруванням, він може бути легко переглянутий постачальником електронної пошти та засобами масового спостереження.">
-<!ENTITY e2eeReqWarning.description "Якщо вам необхідно надіслати зашифроване повідомлення, ви повинні мати відкритий ключ або сертифікат кожного одержувача.">
+<!ENTITY e2eeReqWarning.description "Якщо вам необхідно надіслати захищене повідомлення, ви повинні мати відкритий ключ або сертифікат кожного одержувача.">
 
-<!ENTITY e2eSigning.description "Цифровий підпис дозволяє одержувачам перевірити, чи було повідомлення надіслане саме вами, та чи не змінено його вміст.">
+<!ENTITY e2eSigning.description "Цифровий підпис дозволяє одержувачам перевірити, чи було повідомлення надіслано саме вами, та чи не змінено його вміст.">
 <!ENTITY e2eTechPref.description "Бажана технологія шифрування:">
 
 <!ENTITY doNotEncrypt.label "Не вмикайте шифрування для усієї пошти">
@@ -37,10 +36,10 @@
 <!ENTITY encryption.certificate_clear.button "Очистити">
 <!ENTITY encryption.certificate_clear.accesskey "и">
 <!ENTITY signingGroupTitle.label "Цифровий підпис">
-<!ENTITY signMessage.label "Підписувати листи цифровим підписом (типово)">
+<!ENTITY signMessage.label "Підписувати повідомлення цифровим підписом (типово)">
 <!ENTITY signMessage2.label "Додати мій цифровий підпис типово">
 <!ENTITY signMessage.accesskey "і">
-<!ENTITY signingCert.message "Особистий сертифікат для підпису:">
+<!ENTITY signingCert.message "Особистий сертифікат для підпису повідомлень:">
 
 <!ENTITY certificates.label "Сертифікати">
 <!ENTITY manageCerts2.label "Керування сертифікатами">
@@ -64,8 +63,6 @@
 <!ENTITY technologyOpenPGP.label "Надавати перевагу OpenPGP">
 
 <!ENTITY openpgpKeys.label "OpenPGP">
-<!ENTITY manageKeys.label "Керувати ключами OpenPGP">
-<!ENTITY manageKeys.accesskey "к">
 
 <!-- Strings for the cert picker dialog -->
 <!ENTITY certPicker.title "Обрати сертифікат">

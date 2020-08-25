@@ -19,9 +19,6 @@ onboarding-button-label-get-started = 시작하기
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = { -brand-short-name }를 사용해 주셔서 감사합니다.
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = <span data-l10n-name="zap">{ -brand-short-name }</span>에 오신 것을 환영합니다
 onboarding-welcome-body = 이제 브라우저가 있습니다.<br/>{ -brand-product-name }의 나머지를 만나 보세요.
 onboarding-welcome-learn-more = 장점 더 알아보기
 onboarding-join-form-header = { -brand-product-name }와 함께하기
@@ -34,7 +31,7 @@ onboarding-join-form-body = 시작하려면 이메일 주소를 입력하세요.
 onboarding-join-form-email =
     .placeholder = 이메일 입력
 onboarding-join-form-email-error = 유효한 이메일이 필요합니다
-onboarding-join-form-legal = 계속 진행하면 <a data-l10n-name="terms">서비스 약관</a> 및 <a data-l10n-name="privacy">개인 정보 보호 정책</a>에 동의하게 됩니다.
+onboarding-join-form-legal = 계속 진행하면 <a data-l10n-name="terms">서비스 약관</a> 및 <a data-l10n-name="privacy">개인정보처리방침</a>에 동의하게 됩니다.
 onboarding-join-form-continue = 계속
 # This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
 onboarding-join-form-signin-label = 계정이 이미 있습니까?
@@ -44,16 +41,75 @@ onboarding-start-browsing-button-label = 탐색 시작
 onboarding-cards-dismiss =
     .title = 닫기
     .aria-label = 닫기
-# Tooltip displayed on hover of top sites in import settings screen during onboarding flow.
-# This support welcome screen showing top sites imported from the user's default browser.
-# Title text is kept multiline to ensure tooltip container width is not more than 40 characters.
-onboarding-import-sites-info =
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = <span data-l10n-name="zap">{ -brand-short-name }</span>에 오신 것을 환영합니다
+onboarding-multistage-welcome-subtitle = 비영리 단체가 지원하는, 빠르고 안전하며 사생활 보호를 위한 브라우저입니다.
+onboarding-multistage-welcome-primary-button-label = 설정 시작
+onboarding-multistage-welcome-secondary-button-label = 로그인
+onboarding-multistage-welcome-secondary-button-text = 계정이 있으십니까?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = 비밀번호, 북마크 및 <span data-l10n-name="zap">기타</span> 가져오기
+onboarding-multistage-import-subtitle = 다른 브라우저에서 오셨나요? 모든 것을 { -brand-short-name }에 쉽게 가져올 수 있습니다.
+onboarding-multistage-import-primary-button-label = 가져오기 시작
+onboarding-multistage-import-secondary-button-label = 나중에
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = 이 기기에서 여기에 나열된 사이트들을 찾았습니다. 사용자가 가져오도록 선택하지 않는 한, { -brand-short-name }는 다른 브라우저로부터 데이터를 저장하거나 동기화하지 않습니다.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = 시작하기:  { $current } / { $total } 화면
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = <span data-l10n-name="zap">외양</span>을 선택하세요
+onboarding-multistage-theme-subtitle = 테마로 { -brand-short-name }를 개인화하세요.
+onboarding-multistage-theme-primary-button-label = 테마 저장
+onboarding-multistage-theme-secondary-button-label = 나중에
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = 자동
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = 시스템 테마 사용
+onboarding-multistage-theme-label-light = 밝게
+onboarding-multistage-theme-label-dark = 어둡게
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
     .title =
-        이 기기에서 이 사이트들을 찾았습니다.
-        사용자가 가져오도록 선택하지 않는 한,
-        { -brand-short-name }는 다른 브라우저로부터
-        데이터를 저장하거나 동기화하지 않습니다.
-    .aria-label = { onboarding-import-sites-info.title }
+        버튼, 메뉴 및 창에
+        운영 체제의 모양을 상속.
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        버튼, 메뉴 및 창에
+        밝은 모양을 사용.
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        버튼, 메뉴 및 창에
+        어두운 모양을 사용.
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title =
+        버튼, 메뉴 및 창에
+        색상 모양을 사용.
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
 
 ## Welcome full page string
 
@@ -83,7 +139,7 @@ onboarding-benefit-products-title = 유용한 제품
 onboarding-benefit-products-text = 내가 사용하는 모든 기기에서 개인 정보를 존중하는 도구를 사용합니다.
 onboarding-benefit-knowledge-title = 실용 지식
 onboarding-benefit-knowledge-text = 온라인에서 더 똑똑하고 안전하게 지내기 위해 알아야 할 모든 것을 배워 보세요.
-onboarding-benefit-privacy-title = 진정한 개인 정보 보호 정책
+onboarding-benefit-privacy-title = 진정한 개인 정보 보호
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we

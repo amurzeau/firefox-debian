@@ -8,7 +8,8 @@ password-quality-meter = Mensurator de qualitate del contrasigno
 
 change-password-window =
     .title = Modificar le contrasigno maestro
-
+change-device-password-window =
+    .title = Cambiar contrasigno
 # Variables:
 # $tokenName (String) - Security device of the change password dialog
 change-password-token = Dispositivo de securitate: { $tokenName }
@@ -21,16 +22,32 @@ change-password-reenter = Nove contrasigno (novemente):
 reset-password-window =
     .title = Reinitialisar le contrasigno maestro
     .style = width: 40em
+pippki-failed-pw-change = Impossibile cambiar contrasigno.
+pippki-incorrect-pw = Tu non insereva le actual contrasigno correcte. Prova ancora.
+pippki-pw-change-ok = Contrasigno cambiate con successo.
+pippki-pw-empty-warning = Tu contrasignos e claves private reservate non essera plus protegite.
+pippki-pw-erased-ok = Tu ha delite tu contrasigno. { pippki-pw-empty-warning }
+pippki-pw-not-wanted = Attention! Tu ha decidite non usar un contrasigno. { pippki-pw-empty-warning }
+pippki-pw-change2empty-in-fips-mode = Tu es actualmente in modo FIPS. FIPS require un contrasigno non vacue.
+
+## Reset Primary Password dialog
+
+reset-primary-password-window =
+    .title = Restabilir contrasigno primari
+    .style = width: 40em
 reset-password-button-label =
     .label = Reinitialisar
-reset-password-text = Si tu reinitialisa tu contrasigno maestro, tote tu contrasignos de e-mail e de web, datos de formularios e claves private essera oblidate. Desira tu vermente reinitialisar tu contrasigno maestro?
+reset-password-text = Si tu reinitialisa tu contrasigno maestro, tote tu contrasignos email e web, tu datos de formularios e claves private essera oblidate. Desira tu vermente reinitialisar tu contrasigno maestro?
+reset-primary-password-text = Si tu reinitialisa tu contrasigno primari, tote tu contrasignos web e email, tu certificatos personal e claves private essera oblidate. Desira tu vermente reinitialisar tu contrasigno primari?
+pippki-reset-password-confirmation-title = Restabilir contrasigno primari
+pippki-reset-password-confirmation-message = Tu contrasigno primari ha essite reinitialisate.
 
 ## Downloading cert dialog
 
 download-cert-window =
-    .title = Discargante le certificato
+    .title = Discargante certificato
     .style = width: 46em
-download-cert-message = On te ha demandate a confider a un nove autoritate de certification (CA).
+download-cert-message = On te ha demandate confider a un nove autoritate de certification (CA).
 download-cert-trust-ssl =
     .label = Confider a iste CA pro identificar sitos del web.
 download-cert-trust-email =

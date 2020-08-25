@@ -19,9 +19,6 @@ onboarding-button-label-get-started = Titikirisäx
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = Ütz apetik pa { -brand-short-name }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Ütz apetik pa <span data-l10n-name = "zap"> { -brand-short-name } </span>
 onboarding-welcome-body = K'o awik'in ri okik'amaya'l.<br/>Tawetamaj ri ch'aqa' chik taq { -brand-product-name }.
 onboarding-welcome-learn-more = Tawetamaj ch'aqa' chik pa ruwi' ri taq rutzil.
 onboarding-join-form-header = Tatunu' awi' rik'in { -brand-product-name }
@@ -44,6 +41,75 @@ onboarding-start-browsing-button-label = Tichap Okem Pa K'amaya'l
 onboarding-cards-dismiss =
     .title = Tichup ruwäch
     .aria-label = Tichup ruwäch
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Ütz apetik pa <span data-l10n-name = "zap"> { -brand-short-name } </span>
+onboarding-multistage-welcome-subtitle = Ri aninäq, jikïl chuqa' ichinan okik'amaya'l temen ruma jun moloj majun ch'akoj rojqan.
+onboarding-multistage-welcome-primary-button-label = Tichap Runuk'ulem
+onboarding-multistage-welcome-secondary-button-label = Titikirisäx molojri'ïl
+onboarding-multistage-welcome-secondary-button-text = ¿La k'o jun rub'i' ataqoya'l?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Ke'ajik'a' ewan taq atzij, <br/>taq yaketal, chuqa' <span data-l10n-name="zap">ch'aqa' chik</span>
+onboarding-multistage-import-subtitle = ¿La atpetenäq pa jun chik okik'amaya'l? Man k'ayew ta nak'waj ronojel pa { -brand-short-name }.
+onboarding-multistage-import-primary-button-label = Titikirisäx Jik'oj
+onboarding-multistage-import-secondary-button-label = Wakami mani
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Xe'ilitäj re taq ruxaq pa re okisab'äl re'. Ri { -brand-short-name } man yeruyäk ta ni xa ta yeruxïm taq kitzij juley taq okik'amaya'l, xa xe we nacha' chi ye'ajïk'.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Nab'ey taq xak: ruwäch { $current } ri { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Tacha' jun <span data-l10n-name="zap">rub'anikil</span>
+onboarding-multistage-theme-subtitle = Tawichinaj { -brand-short-name } rik'in jun wachinel.
+onboarding-multistage-theme-primary-button-label = Tiyak Wachinel
+onboarding-multistage-theme-secondary-button-label = Wakami mani
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Yonil
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = Tokisäx ruwachinel q'inoj
+onboarding-multistage-theme-label-light = Saqsöj
+onboarding-multistage-theme-label-dark = Q'eqq'öj
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
+    .title =
+        Tichinäx kan ri rutzub'al samajel
+        aq'inoj pa taq pitz'b'äl, taq k'utsamaj chuqa' taq ruwi'.
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        Tokisäx jun saqsöj tzub'al pa taq pitz'b'äl,
+        taq k'utsamaj chuqa' pa taq ruwi'.
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        Tokisäx jun q'equm tzub'al pa taq pitz'b'äl,
+        taq k'utsamaj chuqa' pa taq ruwi'.
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title =
+        Tokisäx jeb'ejöj tzub'al pa taq pitz'b'äl,
+        taq k'utsamaj chuqa' pa taq ruwi'.
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
 
 ## Welcome full page string
 

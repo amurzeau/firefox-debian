@@ -19,9 +19,6 @@ onboarding-button-label-get-started = Başlayalım
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = { -brand-short-name } tarayıcısına hoş geldiniz
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = <span data-l10n-name="zap">{ -brand-short-name }</span> tarayıcısına hoş geldiniz
 onboarding-welcome-body = Tarayıcınız hazır. Ama { -brand-product-name } yalnızca bir tarayıcı değil.
 onboarding-welcome-learn-more = Avantajlar hakkında daha fazla bilgi alın.
 onboarding-join-form-header = { -brand-product-name }’a katılın
@@ -44,17 +41,67 @@ onboarding-start-browsing-button-label = Gezinmeye başla
 onboarding-cards-dismiss =
     .title = Kapat
     .aria-label = Kapat
-# Tooltip displayed on hover of top sites in import settings screen during onboarding flow.
-# This support welcome screen showing top sites imported from the user's default browser.
-# Title text is kept multiline to ensure tooltip container width is not more than 40 characters.
-onboarding-import-sites-info =
-    .title =
-        Bu siteler bu cihazda bulundu.
-        { -brand-short-name }, siz başka bir
-        tarayıcıdaki verilerinizi içe 
-        aktarmadıkça verilerinizi 
-        kaydetmez ve eşitlemez.
-    .aria-label = { onboarding-import-sites-info.title }
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = <span data-l10n-name="zap">{ -brand-short-name }</span> tarayıcısına hoş geldiniz
+onboarding-multistage-welcome-subtitle = Kâr amacı gütmeyen, hızlı, güvenli ve gizlilik odaklı tarayıcı.
+onboarding-multistage-welcome-primary-button-label = Kurulumu başlat
+onboarding-multistage-welcome-secondary-button-label = Giriş yap
+onboarding-multistage-welcome-secondary-button-text = Hesabınız var mı?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Parolalarınızı, yer imlerinizi ve <span data-l10n-name="zap">daha fazlasını</span> içe aktarın
+onboarding-multistage-import-subtitle = Başka bir tarayıcıdan mı geliyorsunuz? Her şeyi { -brand-short-name } tarayıcısına taşıyabilirsiniz.
+onboarding-multistage-import-primary-button-label = İçe aktarmayı başlat
+onboarding-multistage-import-secondary-button-label = Daha sonra
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Aşağıdaki siteler bu cihazda bulundu. { -brand-short-name }, siz başka bir tarayıcıdaki verilerinizi içe  aktarmadıkça verilerinizi kaydetmez ve eşitlemez.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Başlarken: ekran { $current } / { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = <span data-l10n-name="zap">Görünümü</span> seçin
+onboarding-multistage-theme-subtitle = { -brand-short-name } tarayıcınızı bir temayla kişiselleştirin.
+onboarding-multistage-theme-primary-button-label = Temayı kaydet
+onboarding-multistage-theme-secondary-button-label = Daha sonra
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Otomatik
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = Sistem temasını kullan
+onboarding-multistage-theme-label-light = Açık
+onboarding-multistage-theme-label-dark = Koyu
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
+    .title = Düğmeler, menüler ve pencereler için işletim sisteminizin görünümünü devralın.
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title = Düğmeler, menüler ve pencereler için açık bir görünüm kullanın.
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title = Düğmeler, menüler ve pencereler için koyu bir görünüm kullanın.
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title = Düğmeler, menüler ve pencereler için renkli bir görünüm kullanın.
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
 
 ## Welcome full page string
 

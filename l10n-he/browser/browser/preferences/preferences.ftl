@@ -802,10 +802,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = שימוש בססמה ראשית
     .accesskey = ש
+forms-primary-pw-use =
+    .label = שימוש בססמה ראשית
+    .accesskey = ש
+forms-primary-pw-learn-more-link = מידע נוסף
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = שינוי ססמה ראשית…
     .accesskey = נ
 forms-master-pw-fips-title = הינך כרגע במצב FIPS. ‏FIPS דורש ססמה ראשית לא־ריקה.
+forms-primary-pw-change =
+    .label = שינוי ססמה ראשית…
+    .accesskey = נ
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = מצבך כרגע הוא FIPS. ‏FIPS דורש ססמה ראשית לא־ריקה.
 forms-master-pw-fips-desc = שינוי הססמה נכשל
 
 ## OS Authentication dialog
@@ -817,6 +832,13 @@ master-password-os-auth-dialog-message-win = כדי ליצור ססמה ראשי
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = ליצור ססמה ראשית
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = כדי ליצור ססמה ראשית, יש להזין את פרטי הכניסה שלך ל־Windows. פעולה זאת מסייעת בהגנה על אבטחת החשבונות שלך.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = ליצור ססמה ראשית
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History

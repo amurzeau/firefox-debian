@@ -3,9 +3,9 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 printpreview-simplify-page-checkbox =
-    .label = 페이지 간소화
+    .label = 페이지 단순화
     .accesskey = i
-    .tooltiptext = 이 페이지는 자동으로 간소화 할 수 없습니다
+    .tooltiptext = 이 페이지는 자동으로 단순화할 수 없습니다
 printpreview-simplify-page-checkbox-enabled =
     .label = { printpreview-simplify-page-checkbox.label }
     .accesskey = { printpreview-simplify-page-checkbox.accesskey }
@@ -20,7 +20,7 @@ printpreview-landscape =
     .label = 가로
     .accesskey = L
 printpreview-scale =
-    .value = 크기
+    .value = 배율:
     .accesskey = S
 printpreview-shrink-to-fit =
     .label = 페이지에 맞게 축소
@@ -32,8 +32,8 @@ printpreview-print =
 printpreview-of =
     .value = /
 printpreview-custom-prompt =
-    .value = 사용자 지정 크기…
-printpreview-custom-scale-prompt-title = 사용자 지정 크기
+    .value = 사용자 지정 배율…
+printpreview-custom-scale-prompt-title = 사용자 지정 배율
 printpreview-page-setup =
     .label = 페이지 설정…
     .accesskey = u
@@ -59,4 +59,3 @@ printpreview-nextarrow =
 printpreview-endarrow =
     .label = { $arrow }
     .tooltiptext = 마지막 페이지
-

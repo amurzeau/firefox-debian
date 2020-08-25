@@ -2,15 +2,15 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!-- Values for changepassword.xul -->
+<!-- Values for changepassword.xhtml -->
 <!ENTITY setPassword.title  "მთავარი პაროლის შეცვლა">
 <!ENTITY setPassword.tokenName.label "უსაფრთხოების მოწყობილობა">
 <!ENTITY setPassword.oldPassword.label "მიმდინარე პაროლი:">
 <!ENTITY setPassword.newPassword.label "ახალი პაროლი:">
 <!ENTITY setPassword.reenterPassword.label "ახალი პაროლი (კვლავ):">
-<!ENTITY setPassword.meter.label "პაროლის ხარისხის მზომი">
+<!ENTITY setPassword.meter.label "პაროლის ხარისხმზომი">
 
-<!-- Values for resetpassword.xul -->
+<!-- Values for resetpassword.xhtml -->
 <!ENTITY resetPasswordButtonLabel "აღდგენა">
 <!ENTITY resetPassword.title  "მთავარი პაროლის განულება">
 <!ENTITY resetPassword.text  "მთავარი პაროლის განულების შემთხვევაში, დაიკარგება ყველა თქვენ მიერ შენახული ელფოსტის პაროლები, ველების მონაცემები, პერსონალური სერტიფიკატები. ნამდვილად გსურთ მთავარი პაროლის განულება?">
@@ -31,7 +31,7 @@
 <!ENTITY clientAuthAsk.message3 "არჩეული სერტიფიკატის მონაცემები:">
 
 <!ENTITY pkcs12.setpassword.title  "სერტიფიკატის დუბლირების პაროლის არჩევა">
-<!ENTITY pkcs12.setpassword.message  "სერტიფიკატის დამარქაფების პაროლი, დაიცავს მის დამარქაფებულ ასლს.  გასაგრძელებლად, საჭიროა პაროლის მითითება.">
+<!ENTITY pkcs12.setpassword.message  "სერტიფიკატის მარქაფის პაროლი, დაიცავს მის დამარქაფებულ ასლს.  მიუთითეთ პაროლი, რომ განაგრძოთ.">
 <!ENTITY pkcs12.setpassword.label1 "სერტიფიკატის დუბლირების პაროლი:">
 <!ENTITY pkcs12.setpassword.label2 "სერტიფიკატის დუბლირების პაროლი (კვლავ):">
 <!ENTITY pkcs12.setpassword.reminder "მნიშვნელოვანია: თუ სერტიფიკატის დუბლირების პაროლი დაგავიწყდათ, დუბლიკატის აღდგენას ვეღარ შეძლებთ.  გთხოვთ საიმედოდ შეინახოთ იგი.">
@@ -42,7 +42,7 @@
 <!-- Strings for the CreateCertInfo dialog  -->
 <!ENTITY createCertInfo.title "საიდუმლო გასაღების შექმნა">
 <!ENTITY createCertInfo.msg1 "მიმდინარეობს გასაღების შექმნა… შესაძლოა რამდენიმე წუთი დასჭირდეს…">
-<!ENTITY createCertInfo.msg2 "შეიცადეთ…">
+<!ENTITY createCertInfo.msg2 "გთხოვთ, მოითმინოთ…">
 
 <!-- Strings for protectedAuth dialog -->
 <!ENTITY protectedAuth.title "უსაფრთხო შესვლა ანგარიშზე სიტყვა-ნიშნის საშუალებით">

@@ -159,7 +159,7 @@ cfr-doorhanger-sync-bookmarks-ok-button = Rmed { -sync-brand-short-name }
 ## Login Sync
 
 cfr-doorhanger-sync-logins-header = Ur sṛuḥuy ara awalen-ik uffiren
-cfr-doorhanger-sync-logins-body = Sekles daɣen mtawi awalen-ik uffiren ɣef yibenkan-ik meṛṛa s wudem aɣelsan.
+cfr-doorhanger-sync-logins-body = Sekles rnu mtawi awalen-ik·im uffiren ɣef yibenkan-ik·im i meṛṛa s wudem aɣelsan.
 cfr-doorhanger-sync-logins-ok-button = Rmed { -sync-brand-short-name }
     .accesskey = R
 
@@ -254,3 +254,4 @@ cfr-doorhanger-doh-secondary-button = Sens
 
 cfr-whatsnew-clear-cookies-header = Ammesten awurman mgal tiḥila n uḍfar yettkellixen
 cfr-whatsnew-clear-cookies-body = Kra n yineḍfaren ttwehhin-k/m ɣer kra n yismal web ideg llan inagan n tuqqna d uffiren. Tura, { -brand-short-name } iseffeḍ s wudem awurman inagan-agi n tuqqna akken ur ssawaḍen ara ad k-ḍefren.
+cfr-whatsnew-clear-cookies-image-alt = Unuɣen n yinagan n tuqqna ttusweḥlen

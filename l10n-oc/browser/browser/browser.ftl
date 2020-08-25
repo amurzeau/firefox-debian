@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Escrivètz mens, trobatz mai : cercatz amb { $engineName } dirèctament de la barra d’adreça.
 urlbar-search-tips-redirect-2 = Començatz vòstra recèrca dins la barra d’adreça per mostrar las suggestions de { $engineName } e de vòstre istoric de navegacion.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Marcapaginas
+urlbar-search-mode-tabs = Onglets
+urlbar-search-mode-history = Istoric
+
 ##
 
 urlbar-geolocation-blocked =
@@ -185,6 +191,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Definir coma motor de recèrca per defaut en navegacion privada
     .accesskey = p
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Marcapaginas ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Onglets ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Istoric ({ $restrict })
 
 ## Bookmark Panel
 
@@ -294,6 +320,10 @@ urlbar-default-placeholder =
     .defaultPlaceholder = Picar un tèrme de recercar o una adreça
 urlbar-placeholder =
     .placeholder = Picar un tèrme de recercar o una adreça
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Recercar amb { $name } o picar una adreça
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Lo navegador es contrarotlat a distància
 urlbar-permissions-granted =

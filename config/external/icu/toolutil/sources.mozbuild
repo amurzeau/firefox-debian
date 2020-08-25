@@ -25,4 +25,3 @@ sources = [
    '/intl/icu/source/tools/toolutil/writesrc.cpp',
    '/intl/icu/source/tools/toolutil/xmlparser.cpp',
 ]
-

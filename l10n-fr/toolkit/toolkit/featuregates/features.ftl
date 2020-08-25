@@ -25,3 +25,13 @@ experimental-features-cookie-samesite-lax-by-default2-description = Traite les c
 experimental-features-cookie-samesite-none-requires-secure2 =
     .label = Cookies : SameSite=None nécessite l’attribut secure
 experimental-features-cookie-samesite-none-requires-secure2-description = Les cookies avec l’attribut « SameSite=None » doivent être munis de l’attribut secure. Cette fonctionnalité nécessite l’activation de « Cookies : SameSite=Lax par défaut ».
+# about:home should be kept in English, as it refers to the the URI for
+# the internal default home page.
+experimental-features-abouthome-startup-cache =
+    .label = Cache de démarrage pour about:home
+experimental-features-abouthome-startup-cache-description = Cache pour le contenu initial de la page about:home qui est chargée par défaut au démarrage. Le but de ce cache est d’améliorer les performances de démarrage.
+# "Service Worker" is an API name and is usually not translated.
+experimental-features-serviceworker-debugger-support =
+    .label = Outils de développement : débogage de Service worker
+# "Service Worker" is an API name and is usually not translated.
+experimental-features-serviceworker-debugger-support-description = Active la prise en charge expérimentale des Service workers dans le panneau Débogueur des outils de développement. Cette fonctionnalité peut ralentir les outils de développement et augmenter la consommation de mémoire.

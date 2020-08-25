@@ -205,6 +205,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Vesair tut
     .accesskey = s
+cfr-doorhanger-milestone-close-button = Serrar
+    .accesskey = S
 
 ## What’s New Panel Content for Firefox 76
 
@@ -238,3 +240,18 @@ cfr-whatsnew-protections-icon-alt = Icona dal scut
 
 cfr-whatsnew-better-pdf-header = Meglra experientscha en connex cun PDFs
 cfr-whatsnew-better-pdf-body = PDFs vegnan ussa averts direct en { -brand-short-name } per betg cumplitgar tes process da lavur.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = La protecziun da tias datas è impurtanta. { -brand-short-name } trametta ussa tias dumondas DNS – adina cura che quai è pussaivel – a moda segirada ad in servetsch dad in partenari. Per ta proteger durant il navigar.
+cfr-doorhanger-doh-header = Retschertgas DNS criptadas e pli segiras
+cfr-doorhanger-doh-primary-button = OK, chapì
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Deactivar
+    .accesskey = D
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Protecziun automatica cunter tacticas malignas da fastizar
+cfr-whatsnew-clear-cookies-body = Tscherts fastizaders ta renvieschan ad autras websites che deponan cookies a moda secreta. { -brand-short-name } stizza ussa automaticamain quests cookies per ch'els na ta suondian betg.
+cfr-whatsnew-clear-cookies-image-alt = Illustraziun dad in cookie bloccà

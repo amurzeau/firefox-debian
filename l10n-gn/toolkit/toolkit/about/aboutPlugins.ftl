@@ -2,10 +2,10 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-title-label = Mba'ejoajurã rehegua
-installed-plugins-label = Mba'ejoajurã oñemohendapyréva
-no-plugins-are-installed-label = Ndaipóri mba'ejoajurã oñemohendapyréva
-deprecation-description = Oĩpa nderejuhúiva? Sapy'ánte oĩ mba'ejoajurã ndaikatuvéima ojepuru. <a data-l10n-name="deprecation-link">Kuaave.</a>
+title-label = Mba’ejoajurã rehegua
+installed-plugins-label = Mba’ejoajurã mohendapyréva
+no-plugins-are-installed-label = Ndaipóri mba’ejoajurã mohendapyréva
+deprecation-description = Oĩpa nderejuhúiva? Sapy’ánte oĩ mba’ejoajurã ndaikatuvéima ojepuru. <a data-l10n-name="deprecation-link">Kuaave.</a>
 
 ## The information of plugins
 ##
@@ -28,5 +28,5 @@ state-dd-enabled-block-list-state = <span data-l10n-name="state">Tekotee:</span>
 state-dd-Disabled = <span data-l10n-name="state">Tekotee:</span> Ojeiporuve’ỹva
 state-dd-Disabled-block-list-state = <span data-l10n-name="state">Tekotee:</span> Ojeiporuve’ỹva ({ $blockListState })
 mime-type-label = MIME peteĩchagua:
-description-label = Moha'ãnga
+description-label = Moha’ãnga
 suffixes-label = Ñe’ẽpehẽ mboyvegua

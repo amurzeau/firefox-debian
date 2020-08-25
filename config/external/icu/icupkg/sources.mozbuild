@@ -2,4 +2,3 @@
 sources = [
    '/intl/icu/source/tools/icupkg/icupkg.cpp',
 ]
-

@@ -67,8 +67,8 @@ CURRENT_DIRS := $($(CURRENT_TIER)_dirs)
 # Need a list of compile targets because we can't use pattern rules:
 # https://savannah.gnu.org/bugs/index.php?42833
 # Only recurse the paths starting with RECURSE_BASE_DIR when provided.
-.PHONY: $(compile_targets) $(syms_targets)
-$(compile_targets) $(syms_targets):
+.PHONY: $(pre_compile_targets) $(compile_targets) $(syms_targets)
+$(pre_compile_targets) $(compile_targets) $(syms_targets):
 	$(if $(filter $(RECURSE_BASE_DIR)%,$@),$(call RECURSE,$(@F),$(@D)))
 
 $(syms_targets): %/syms: %/target
@@ -182,9 +182,8 @@ toolkit/components/telemetry/export: layout/style/ServoCSSPropList.py
 toolkit/components/updateagent/target: toolkit/mozapps/update/common/target
 
 ifeq ($(TARGET_ENDIANNESS),big)
-config/external/icu/data/target-objects: config/external/icu/data/icudt$(MOZ_ICU_VERSION)b.dat
-config/external/icu/data/icudt$(MOZ_ICU_VERSION)b.dat: config/external/icu/icupkg/host
-	$(MAKE) -C $(@D) $(@F)
+config/external/icu/data/target-objects: config/external/icu/data/$(MDDEPDIR)/icudt$(MOZ_ICU_VERSION)b.dat.stub
+config/external/icu/data/$(MDDEPDIR)/icudt$(MOZ_ICU_VERSION)b.dat.stub: config/external/icu/icupkg/host
 endif
 
 ifdef ENABLE_CLANG_PLUGIN

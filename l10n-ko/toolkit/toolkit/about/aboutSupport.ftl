@@ -17,7 +17,7 @@ extensions-id = ID
 support-addons-title = 부가 기능
 support-addons-name = 이름
 support-addons-type = 유형
-support-addons-enabled = 사용함
+support-addons-enabled = 사용
 support-addons-version = 버전
 support-addons-id = ID
 security-software-title = 보안 소프트웨어
@@ -214,7 +214,7 @@ clear-type-parameters = ClearType 매개 변수
 compositing = 합성
 hardware-h264 = 하드웨어 H264 디코딩
 main-thread-no-omtc = 주 스레드, OMTC 아님
-yes = 네
+yes = 예
 no = 아니오
 unknown = 알 수 없음
 virtual-monitor-disp = 가상 모니터 디스플레이
@@ -250,10 +250,10 @@ webgl2-extensions = WebGL 2 확장 기능
 blocklisted-bug = 알려진 문제로 인해 차단됨
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
-bug-link = 버그 { $bugNumber }
+bug-link = bug { $bugNumber }
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
-support-blocklisted-bug = 알려진 문제로 인해 차단됨: <a data-l10n-name="bug-link">버그 { $bugNumber }</a>
+support-blocklisted-bug = 알려진 문제로 인해 차단됨: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = 차단됨; 실패 코드 { $failureCode }

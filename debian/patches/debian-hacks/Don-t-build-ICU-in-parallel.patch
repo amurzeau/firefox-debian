@@ -7,10 +7,10 @@ Subject: Don't build ICU in parallel
  1 file changed, 1 insertion(+), 3 deletions(-)
 
 diff --git a/intl/icu_sources_data.py b/intl/icu_sources_data.py
-index e366f056c65..c6d075da5a0 100644
+index 408267f2b71..b532656a91e 100644
 --- a/intl/icu_sources_data.py
 +++ b/intl/icu_sources_data.py
-@@ -244,9 +244,7 @@ def update_data_file(topsrcdir):
+@@ -250,9 +250,7 @@ def update_data_file(topsrcdir):
      print('Running ICU make...')
      if not try_run(
              'icu-make',

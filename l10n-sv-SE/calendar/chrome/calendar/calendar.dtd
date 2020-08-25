@@ -11,7 +11,7 @@
 
 <!ENTITY calendar.unifinder.todoitems.label       "Uppgifter" >
 
-<!ENTITY calendar.unifinder.showcompletedtodos.label "Visa slutförda Uppgifter">
+<!ENTITY calendar.unifinder.showcompletedtodos.label "Visa slutförda uppgifter">
 
 <!ENTITY calendar.today.button.label          "Idag">
 <!ENTITY calendar.tomorrow.button.label       "Imorgon">
@@ -22,10 +22,10 @@
 <!ENTITY calendar.events.filter.future.label "Alla framtida händelser">
 <!ENTITY calendar.events.filter.current.label "Förnärvarande valda dagen">
 <!ENTITY calendar.events.filter.currentview.label "Händelser i vald vy">
-<!ENTITY calendar.events.filter.next7Days.label "händelser för de nästkommande 7 dagarna">
-<!ENTITY calendar.events.filter.next14Days.label "händelser för de nästkommande 14 dagarna">
-<!ENTITY calendar.events.filter.next31Days.label "händelser för de nästkommande 31 dagarna">
-<!ENTITY calendar.events.filter.thisCalendarMonth.label "händelser denna kalendermånad">
+<!ENTITY calendar.events.filter.next7Days.label "Händelser för de nästkommande 7 dagarna">
+<!ENTITY calendar.events.filter.next14Days.label "Händelser för de nästkommande 14 dagarna">
+<!ENTITY calendar.events.filter.next31Days.label "Händelser för de nästkommande 31 dagarna">
+<!ENTITY calendar.events.filter.thisCalendarMonth.label "Händelser denna kalendermånad">
 
 <!-- LOCALIZATION NOTE(calendar.unifinder.tree.done.tooltip)
    - This label and tooltip is used for the column with the checkbox in the
@@ -220,7 +220,7 @@
 <!ENTITY calendar.context.progress.accesskey          "S">
 <!ENTITY calendar.context.priority.label              "Prioritet">
 <!ENTITY calendar.context.priority.accesskey          "i">
-<!ENTITY calendar.context.postpone.label              "Skjut upp Uppgift">
+<!ENTITY calendar.context.postpone.label              "Skjut upp uppgift">
 <!ENTITY calendar.context.postpone.accesskey          "k">
 
 <!ENTITY percnt "&#38;#37;" ><!--=percent sign-->

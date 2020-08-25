@@ -36,6 +36,7 @@ policy-DisableFirefoxStudies = למנוע מ־{ -brand-short-name } להריץ �
 policy-DisableForgetButton = מניעת גישה לכפתור 'לשכוח'.
 policy-DisableFormHistory = לא לזכור היסטוריית חיפוש וטפסים.
 policy-DisableMasterPasswordCreation = אם true, לא ניתן ליצור ססמה ראשית.
+policy-DisablePrimaryPasswordCreation = אם true, לא ניתן ליצור ססמה ראשית.
 policy-DisablePasswordReveal = לא לאפשר לחשוף ססמאות בכניסות השמורות.
 policy-DisablePocket = השבתת התכונה לשמירת דפי אינטרנט ב־Pocket.
 policy-DisablePrivateBrowsing = השבתת גלישה פרטית.
@@ -77,6 +78,7 @@ policy-LegacyProfiles = השבתת התכונה האוכפת פרופיל נפר
 
 policy-LocalFileLinks = לאפשר לאתרים מסויימים לקשר לקבצים מקומיים.
 policy-MasterPassword = לדרוש או למנוע שימוש בססמה ראשית.
+policy-PrimaryPassword = לדרוש או למנוע שימוש בססמה ראשית.
 policy-NetworkPrediction = הפעלה או השבתה של חיזוי רשתי (אחזור מוקדם באמצעות DNS).
 policy-NewTabPage = הפעלה או השבתה של דף הלשונית החדשה.
 policy-NoDefaultBookmarks = ביטול יצירת הסימניות המוגדרות כברירת מחדל עם { -brand-short-name }, ואת הסימניות החכמות (הנצפות ביותר, תגים אחרונים). הערה: מדיניות זו יעילה רק אם נעשה בה שימוש קודם להפעלה הראשונה של הפרופיל.

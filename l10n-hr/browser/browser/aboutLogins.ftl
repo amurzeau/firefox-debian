@@ -1,11 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Prijave i lozinke
@@ -32,6 +27,7 @@ menu =
     .title = Otvori izbornik
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Uvezi iz jednog drugog preglednika …
+about-logins-menu-menuitem-import-from-a-file = Uvezi iz datoteke …
 about-logins-menu-menuitem-export-logins = Izvezi prijave…
 menu-menuitem-preferences =
     { PLATFORM() ->
@@ -73,12 +69,14 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = Tražiš svoje spremljene prijave? Postavi { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-out = Tražiš svoje spremljene prijave? Postavi { -sync-brand-short-name } ili ih uvezi.
 about-logins-login-intro-heading-logged-in = Nema sinkroniziranih prijava.
 login-intro-description = Ako svoje prijave imaš spremljene na { -brand-product-name } na jednom drugom uređaju, evo kako ih možeš preuzeti ovamo:
 login-intro-instruction-fxa = Otvori račun ili se prijavi na svoj { -fxaccount-brand-name }, na uređaju gdje su tvoje prijave spremljene
 login-intro-instruction-fxa-settings = Provjeri, je li odabran potvrdni okvir prijave u { -sync-brand-short-name } postavkama
 about-logins-intro-instruction-help = Posjeti <a data-l10n-name="help-link">{ -lockwise-brand-short-name } podršku</a> za dodatnu pomoć
 about-logins-intro-import = Ako su tvoje prijave spremljene u jednom drugom pregledniku, možeš ih <a data-l10n-name="import-link"> uvesti u { -lockwise-brand-short-name } </a>
+about-logins-intro-import2 = Ako su tvoje prijave spremljene izvan { -brand-product-name }a, možeš ih <a data-l10n-name="import-browser-link">uvesti iz jednog drugog preglednika</a> ili <a data-l10n-name="import-file-link">iz jedne datoteke</a>
 
 ## Login
 
@@ -137,6 +135,10 @@ about-logins-export-password-os-auth-dialog-message-macosx = izvezi spremljene p
 ## Master Password notification
 
 master-password-notification-message = Za prikaz spremljenih prijava i lozinki, upiši glavnu lozinku
+
+## Primary Password notification
+
+about-logins-primary-password-notification-message = Za prikaz spremljenih prijava i lozinki, upiši glavnu lozinku
 master-password-reload-button =
     .label = Prijava
     .accesskey = r
@@ -214,6 +216,19 @@ about-logins-export-file-picker-export-button = Izvoz
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
 about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV dokument
+       *[other] CSV datoteka
+    }
+
+## Login Import Dialog
+
+# Title of the file picker dialog
+about-logins-import-file-picker-title = Uvezi datoteku s prijavama
+about-logins-import-file-picker-import-button = Uvezi
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
     { PLATFORM() ->
         [macos] CSV dokument
        *[other] CSV datoteka

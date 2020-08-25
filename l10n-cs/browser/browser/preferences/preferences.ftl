@@ -949,10 +949,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Použít hlavní heslo
     .accesskey = u
+forms-primary-pw-use =
+    .label = Použít hlavní heslo
+    .accesskey = P
+forms-primary-pw-learn-more-link = Zjistit více
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Změnit hlavní heslo…
     .accesskey = m
 forms-master-pw-fips-title = Momentálně jste v režimu FIPS, který vyžaduje neprázdné hlavní heslo.
+forms-primary-pw-change =
+    .label = Změnit hlavní heslo…
+    .accesskey = m
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Momentálně jste v režimu FIPS, který vyžaduje neprázdné hlavní heslo.
 forms-master-pw-fips-desc = Neúspěšná změna hesla
 
 ## OS Authentication dialog
@@ -964,6 +979,13 @@ master-password-os-auth-dialog-message-win = Pro nastavení hlavního hesla pros
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = vytvořit hlavní heslo
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Pro nastavení hlavního hesla prosím zadejte své přihlašovací údaje k systému Windows. Toto opatření pomáhá v zabezpečení vašich účtů.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = vytvořit hlavní heslo
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History

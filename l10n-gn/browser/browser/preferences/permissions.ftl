@@ -89,7 +89,7 @@ permissions-exceptions-popup-desc = Ikatu rehechauka mba’e ñanduti renda guiv
 ## Exceptions - Saved Logins
 
 permissions-exceptions-saved-logins-window =
-    .title = Oĩ'ỹva - Emoñepyrũ tembiapo ñongatupyre
+    .title = Oĩ’ỹva - Emoñepyrũ tembiapo ñongatupyre
     .style = { permissions-window.style }
 permissions-exceptions-saved-logins-desc = Tembiapo ñepyrũ ko’ã ñanduti renda noñeñongatumo’ãi
 
@@ -119,7 +119,7 @@ permissions-site-autoplay-desc = Ko’ápe ikatu eñangareko umi tenda ndohapyku
 permissions-site-notification-window =
     .title = Ñemboheko - Momarandu ñemoneĩ
     .style = { permissions-window.style }
-permissions-site-notification-desc = Ko’ã ñanduti renda omba’ejerure ne momarandu hag̃ua. Ikatu emyesakã máva umi ñanduti renda ñemoneĩmbyre ne momarandukuaáva. Avéi ikatu ejoko mba'ejerure pyahu emoneĩ hag̃ua ñemomarandu.
+permissions-site-notification-desc = Ko’ã ñanduti renda omba’ejerure ne momarandu hag̃ua. Ikatu emyesakã máva umi ñanduti renda ñemoneĩmbyre ne momarandukuaáva. Avéi ikatu ejoko mba’ejerure pyahu emoneĩ hag̃ua ñemomarandu.
 permissions-site-notification-disable-label =
     .label = Momarandu mba’ejerure pyahu rehegua jejoko
 permissions-site-notification-disable-desc = Kóva omboykéta umi ñanduti renda noĩriva omba’ejeruréva ñemoneĩ oike hag̃ua nerendaite apytépe. Ejokóramo ñemomarandu ikatu ombyai ambue ñanduti renda.
@@ -159,7 +159,7 @@ permissions-site-camera-disable-desc = Kóva omboykéta ñanduti renda noĩriva 
 permissions-site-microphone-window =
     .title = Ñangareko - Ñe’ẽmbotuichaha Jepuru
     .style = { permissions-window.style }
-permissions-site-microphone-desc = Ko’ã ñanduti renda ojerure ikatúpa oike ñe’ẽ’atãhápe. Ikatu emyesakã mab’e ñanduti rendápa oguereko ñemoneĩ oipurúvo ñe’ẽ’atãha. Avéi ikatu ejoko mba’ejerure pyahu oikeséva ñe’ẽ’atãhápe rehegua.
+permissions-site-microphone-desc = Ko’ã ñanduti renda ojerure ikatúpa oike ñe’ẽ’atãhápe. Ikatu emyesakã mba’e ñanduti rendápa oguereko ñemoneĩ oipurúvo ñe’ẽ’atãha. Avéi ikatu ejoko mba’ejerure pyahu oikeséva ñe’ẽ’atãhápe rehegua.
 permissions-site-microphone-disable-label =
     .label = Mba’ejerure pyahu joko ani hag̃ua ojepuru ne ñe’ẽ’atãha
 permissions-site-microphone-disable-desc = Ko’ãva omboykéta umi ñanduti renda noĩriva omba’ejeruréva ñemoneĩ oike hag̃ua ñe’ẽ’atãhápe. Ejokóramo ñe’ẽ’atãhápe jeike ikatu ombyai ambue ñanduti rendápe.

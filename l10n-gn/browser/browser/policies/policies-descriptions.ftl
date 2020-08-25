@@ -36,6 +36,7 @@ policy-DisableFirefoxStudies = Ani eheja { -brand-short-name } omomba’apo ñem
 policy-DisableForgetButton = Ani eheja votõ Tesaráipe jeike.
 policy-DisableFormHistory = Ani nemandu’a jeheka ha tembiasakue myanyhẽha rehe.
 policy-DisableMasterPasswordCreation = Ojepurúrõ true, ndaikatúi emoheñói ñe’ẽñemi ha’etéva.
+policy-DisablePrimaryPasswordCreation = Añetérõ, ndaikatúi emoheñói Ñe’ẽñemi ha’etéva.
 policy-DisablePasswordReveal = Ani emoneĩ ojehecha ñe’ẽñemi tembiapo ñepyrũ ñongatupyrépe.
 policy-DisablePocket = Eipe’a ñanduti renda ñeñongatu rembiapoite Pocket-pe.
 policy-DisablePrivateBrowsing = Eipe’a kundaha ñemigua.
@@ -79,6 +80,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Ejevy SameSite reko gu
 
 policy-LocalFileLinks = Emoneĩ ñanduti renda moha’eñopyrépe ojuajúvo marandurenda pypeguáva.
 policy-MasterPassword = Ejerure térã emboyke ñe’ẽñemi ha’etéva jepuru.
+policy-PrimaryPassword = Ejerure térã emboyke ñe’ẽñemi ñepyrũgua jepuru.
 policy-NetworkPrediction = Embojuruja térã eipe’a ñanduti kuaapy (DNS oheka mboyve).
 policy-NewTabPage = Emyandy ha embogue kuatiarogue Tendayke Pyahu.
 policy-NoDefaultBookmarks = Eipe’a techaukaha ijypyguáva ñemoheñói oikehápe { -brand-short-name }, ha umi techaukaha ha’evéva (teramoĩ ojehecha ha ojehupiramovéva). Kuaarã: ko purureko oiko eipurúvo mba’ete tembiapo ñepyrũgua mboyve añoite.

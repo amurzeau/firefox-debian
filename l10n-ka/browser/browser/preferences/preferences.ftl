@@ -53,8 +53,8 @@ category-sync2 =
 pane-experimental-title = { -brand-short-name } ცდები
 category-experimental =
     .tooltiptext = { -brand-short-name } ცდები
-pane-experimental-subtitle = განაგრძეთ სიფრთხილით
-pane-experimental-search-results-header = { -brand-short-name } ცდები: განაგრძეთ სიფრთხილით
+pane-experimental-subtitle = გამოიყენეთ სიფრთხილით
+pane-experimental-search-results-header = { -brand-short-name } ცდები: გამოიყენეთ სიფრთხილით
 pane-experimental-description = გაფართოებული პარამეტრების შეცვლით, შესაძლოა დაზიანდეს { -brand-short-name } წარმადობის ან უსაფრთხოების კუთხით.
 help-button-label = { -brand-short-name } დახმარება
 addons-button-label = გაფართოებები და თემები
@@ -348,7 +348,7 @@ applications-use-os-default-label =
 
 drm-content-header = ციფრული უფლებების მართვის (DRM) შიგთავსი
 play-drm-content =
-    .label = DRM-ს დაქვემდებარებული შიგთავსის გაშვება
+    .label = DRM-დაქვემდებარებული შიგთავსის გაშვება
     .accesskey = D
 play-drm-content-learn-more = ვრცლად
 update-application-title = { -brand-short-name } – განახლებები
@@ -803,10 +803,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = მთავარი პაროლის გამოყენება
     .accesskey = პ
+forms-primary-pw-use =
+    .label = მთავარი პაროლის გამოყენება
+    .accesskey = გ
+forms-primary-pw-learn-more-link = ვრცლად
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = მთავარი პაროლის შეცვლა…
     .accesskey = მ
 forms-master-pw-fips-title = თქვენ FIPS რეჟიმში ხართ. FIPS საჭიროებს მთავარ პაროლს.
+forms-primary-pw-change =
+    .label = მთავარი პაროლის შეცვლა…
+    .accesskey = მ
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = თქვენ FIPS-რეჟიმში იმყოფებით. FIPS-ს ესაჭიროება მთავარი პაროლი.
 forms-master-pw-fips-desc = პაროლის შეცვლა ვერ მოხერხდა
 
 ## OS Authentication dialog
@@ -818,6 +833,13 @@ master-password-os-auth-dialog-message-win = მთავარი პარო�
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = მთავარი პაროლის დაყენებას
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = მთავარი პაროლის შესაქმნელად, დაამოწმეთ Windows-ანგარიში. ეს დაგეხმარებათ დაიცვათ თქვენი ანგარიშების უსაფრთხოება.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = მთავარი პაროლის დაყენებას
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -868,7 +890,7 @@ sitedata-total-size-calculating = საიტის მუდმივი დ�
 # Variables:
 #   $value (Number) - Value of the unit (for example: 4.6, 500)
 #   $unit (String) - Name of the unit (for example: "bytes", "KB")
-sitedata-total-size = თქვენ მიერ შენახული ფუნთუშები, საიტის მუდმივი და დროებითი მონაცემები, ამჟამად დისკზე იკავებს { $value } { $unit } მოცულობას.
+sitedata-total-size = თქვენ მიერ შენახულ ფუნთუშებს, ასევე საიტის მუდმივ და დროებით მონაცემებს, ამჟამად დისკზე უკავია { $value } { $unit } მოცულობა.
 sitedata-learn-more = ვრცლად
 sitedata-delete-on-close =
     .label = ფუნთუშებისა და საიტის მონაცემების წაშლა, როცა { -brand-short-name } დაიხურება

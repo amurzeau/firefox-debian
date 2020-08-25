@@ -41,10 +41,9 @@ composition-addressing-header = 주소
 privacy-main-header = 개인 정보
 privacy-passwords-header = 비밀번호
 privacy-junk-header = 스팸
-privacy-data-collection-header = 데이터 수집 및 사용
 collection-header = { -brand-short-name } 데이터 수집과 사용
 collection-description = { -brand-short-name }를 모두를 위해 제공하고 개선하기 위해서 필요한 것만 수집하고 선택권을 제공하기 위해 노력합니다. 개인 정보를 전송하기 전에 항상 허가여부를 묻습니다.
-collection-privacy-notice = 개인정보 고지
+collection-privacy-notice = 개인정보처리방침
 collection-health-report-telemetry-disabled = { -vendor-short-name }에서 더 이상 기술 및 상호 작용 데이터를 캡처할 수 없습니다. 모든 과거 데이터는 30일 이내에 삭제됩니다.
 collection-health-report-telemetry-disabled-link = 더 알아보기
 collection-health-report =
@@ -96,14 +95,19 @@ addons-button = 확장기능과 테마
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = 마스터 비밀번호를 만들기 위해 자격 증명을 검증하세요.
-# This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = 마스터 비밀번호를 만들려면 Windows 로그인 자격 증명을 입력하세요. 이렇게 하면 계정의 보안을 보호할 수 있습니다.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Thunderbird is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = 마스터 비밀번호 만들기
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = 기본 비밀번호를 만들려면, Windows 로그인 자격 증명을 입력하세요. 이는 계정의 보안을 보호하는데 도움이 됩니다.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = 기본 비밀번호 만들기
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -541,6 +545,15 @@ master-password-label =
 master-password-button =
     .label = 기본 암호 변경…
     .accesskey = C
+primary-password-description = 기본 비밀번호는 모든 비밀번호를 보호하지만 세션마다 한번씩 입력해야 합니다.
+primary-password-label =
+    .label = 기본 비밀번호 사용
+    .accesskey = U
+primary-password-button =
+    .label = 기본 비밀번호 변경…
+    .accesskey = C
+forms-primary-pw-fips-title = 현재 FIPS 모드입니다. FIPS는 기본 비밀번호가 설정되어야 합니다.
+forms-master-pw-fips-desc = 비밀번호 변경 실패
 junk-description = 기본 스팸 메일 설정을 하시기 바랍니다. 각 계정마다 스팸 메일 설정을 별도로 하실 수 있습니다.
 junk-label =
     .label = 스팸으로 선택할 때:

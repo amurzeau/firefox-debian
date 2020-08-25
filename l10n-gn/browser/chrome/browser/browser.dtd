@@ -215,7 +215,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksMenu.label "Techaukaha">
 <!ENTITY bookmarksMenu.accesskey "B">
 <!ENTITY bookmarkThisPageCmd.label "Kuatiarogue mbojoapy">
-<!ENTITY editThisBookmarkCmd.label "Ko techaukaha mbosako'i">
+<!ENTITY editThisBookmarkCmd.label "Ko techaukaha mbosako’i">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
 
 <!ENTITY addCurPagesCmd.label "Tendayke mbojoapy techaukaháre…">
@@ -336,7 +336,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY webDeveloperMenu.label       "Ñanduti mboguatahára">
 <!ENTITY webDeveloperMenu.accesskey   "W">
 
-<!ENTITY inspectContextMenu.label     "Mba’epuru ma’ẽ’ag̃ui">
+<!ENTITY inspectContextMenu.label     "Mba’epuru ma’ẽag̃ui">
 <!ENTITY inspectContextMenu.accesskey "Q">
 
 <!ENTITY inspectA11YContextMenu.label     "Ema’ẽag̃ui mba’etee jeikerãva rehe">
@@ -354,7 +354,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY newPrivateWindow.label     "Ovetã ñemi pyahu">
 <!ENTITY newPrivateWindow.accesskey "W">
 
-<!ENTITY editMenu.label         "Mbosako'i">
+<!ENTITY editMenu.label         "Mbosako’i">
 <!ENTITY editMenu.accesskey       "E">
 <!ENTITY undoCmd.label            "Mboguevi">
 <!ENTITY undoCmd.key            "Z">
@@ -404,14 +404,14 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY historyUndoMenu.label "Tendayke oñembotyramóva">
 <!-- LOCALIZATION NOTE (historyUndoWindowMenu): see bug 394759 -->
 <!ENTITY historyUndoWindowMenu.label "Ovetã oñembotyramóva">
-<!ENTITY historyRestoreLastSession.label "Tembiapopa'ũ mboyvegua mbojevy">
+<!ENTITY historyRestoreLastSession.label "Tembiapopa’ũ mboyvegua mbojevy">
 
 <!ENTITY showAllHistoryCmd2.label "Tembiasakue jehechaukapa">
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
 <!ENTITY appMenuHistory.showAll.label "Tembiasakue jehechaukapa">
 <!ENTITY appMenuHistory.clearRecent.label "Tembiasakue ramovéva ñemopotĩ…">
-<!ENTITY appMenuHistory.restoreSession.label "Tembiapopa'ũ ramovéva ñembojevy">
+<!ENTITY appMenuHistory.restoreSession.label "Tembiapopa’ũ ramovéva ñembojevy">
 <!ENTITY appMenuHistory.viewSidebar.label "Tembiasakue renda yke jehechauka">
 <!ENTITY appMenuHistory.hideSidebar.label "Emokañy tembiasakue renda yke">
 <!ENTITY appMenuHistory.recentHistory.label "Tembiasakue ramovéva">
@@ -617,7 +617,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarkPageCmd2.accesskey   "m">
 <!ENTITY bookmarkThisLinkCmd.label      "Ko joajuha mbojoapy techaukaháre">
 <!ENTITY bookmarkThisLinkCmd.accesskey  "L">
-<!ENTITY bookmarkThisFrameCmd.label      "Ko ovetã'i techaukaháre mbojoapy">
+<!ENTITY bookmarkThisFrameCmd.label      "Ko ovetã’i techaukaháre mbojoapy">
 <!ENTITY bookmarkThisFrameCmd.accesskey  "m">
 
 <!ENTITY pageAction.copyLink.label    "Link Mbohasarã">
@@ -699,20 +699,20 @@ items are mutually exclusive. -->
 <!ENTITY mediaMute.accesskey         "M">
 <!ENTITY mediaUnmute.label           "Mba’epu mbojevy">
 <!ENTITY mediaUnmute.accesskey       "m">
-<!ENTITY mediaPlaybackRate2.label     "Mbohetaha Pya'ekue">
+<!ENTITY mediaPlaybackRate2.label     "Mbohetaha Pya’ekue">
 <!ENTITY mediaPlaybackRate2.accesskey "d">
 <!ENTITY mediaPlaybackRate050x2.label "Mbegue (0.5×)">
 <!ENTITY mediaPlaybackRate050x2.accesskey "M">
 <!ENTITY mediaPlaybackRate100x2.label "Ha’etéva">
 <!ENTITY mediaPlaybackRate100x2.accesskey "H">
-<!ENTITY mediaPlaybackRate125x2.label "Pya'e (1.25×)">
+<!ENTITY mediaPlaybackRate125x2.label "Pya’e (1.25×)">
 <!ENTITY mediaPlaybackRate125x2.accesskey "P">
-<!ENTITY mediaPlaybackRate150x2.label "Pya'eve (1.5×)">
+<!ENTITY mediaPlaybackRate150x2.label "Pya’eve (1.5×)">
 <!ENTITY mediaPlaybackRate150x2.accesskey "P">
 <!-- LOCALIZATION NOTE: "Ludicrous" is a reference to the
 movie "Space Balls" and is meant to say that this speed is very
 fast. -->
-<!ENTITY mediaPlaybackRate200x2.label "Oiko'ỹva (2×)">
+<!ENTITY mediaPlaybackRate200x2.label "Oiko’ỹva (2×)">
 <!ENTITY mediaPlaybackRate200x2.accesskey "O">
 <!ENTITY mediaLoop.label             "Mosãha">
 <!ENTITY mediaLoop.accesskey         "M">
@@ -730,9 +730,9 @@ items are mutually exclusive. -->
 <!-- LOCALIZATION NOTE: The access keys for "Show Statistics" and
 "Hide Statistics" are the same because the two context-menu
 items are mutually exclusive. -->
-<!ENTITY videoShowStats.label        "Papapy'atygua jehechauka">
+<!ENTITY videoShowStats.label        "Papapy’atygua jehechauka">
 <!ENTITY videoShowStats.accesskey    "t">
-<!ENTITY videoHideStats.label        "Papapy'atygua moñemi">
+<!ENTITY videoHideStats.label        "Papapy’atygua moñemi">
 <!ENTITY videoHideStats.accesskey    "t">
 
 <!-- LOCALIZATION NOTE :
@@ -784,7 +784,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY pageStyleMenu.label "Kuatiarogue mbohekoha">
 <!ENTITY pageStyleMenu.accesskey "y">
-<!ENTITY pageStyleNoStyle.label "Mboheko'ỹva">
+<!ENTITY pageStyleNoStyle.label "Mboheko’ỹva">
 <!ENTITY pageStyleNoStyle.accesskey "N">
 <!ENTITY pageStylePersistentOnly.label "Kuatiarogue mbohekoha ypygua">
 <!ENTITY pageStylePersistentOnly.accesskey "B">
@@ -793,8 +793,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!-- On Windows we use the term "Options" to describe settings, but
      on Linux and Mac OS X we use "Preferences" - carry that distinction
      over into this string, which is used in the "popup blocked" info bar . -->
-<!ENTITY editPopupSettingsUnix.label "Ovetã apysẽ mbotyreko jeguerohoryvéva mbosako'i…">
-<!ENTITY editPopupSettings.label "Ovetã apysẽ mbotyreko poravorã mbosako'i…">
+<!ENTITY editPopupSettingsUnix.label "Ovetã apysẽ mbotyreko jeguerohoryvéva mbosako’i…">
+<!ENTITY editPopupSettings.label "Ovetã apysẽ mbotyreko poravorã mbosako’i…">
 <!ENTITY editPopupSettings.accesskey "E">
 <!ENTITY dontShowMessage.accesskey "D">
 
@@ -820,8 +820,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
      Should be large enough to fully display the Done and Cancel/
      Remove Bookmark buttons. -->
 <!ENTITY editBookmark.panel.width                    "23em">
-<!ENTITY editBookmark.done.label                     "Mohu'ã">
-<!ENTITY editBookmark.showForNewBookmarks.label       "Ehechauka mbosako'iha eñongatúvo">
+<!ENTITY editBookmark.done.label                     "Mohu’ã">
+<!ENTITY editBookmark.showForNewBookmarks.label       "Ehechauka mbosako’iha eñongatúvo">
 <!ENTITY editBookmark.showForNewBookmarks.accesskey   "S">
 
 <!-- LOCALIZATION NOTE (identity.securityView.label)
@@ -839,9 +839,9 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.customRoot "Jeike ohechapyréva mboajepyre me’ẽha Mozilla omoneĩ’ỹva.">
 
 <!-- Strings for connection state warnings. -->
-<!ENTITY identity.activeBlocked "&brandShortName; ojokóma ko kuatiarogue pehẽ ijerovia'ỹha.">
+<!ENTITY identity.activeBlocked "&brandShortName; ojokóma ko kuatiarogue pehẽ ijerovia’ỹha.">
 <!ENTITY identity.passiveLoaded "Ko kuatiarogue pehẽ heta hendápe nda’ijeroviapái (mba’era’ãngáramo).">
-<!ENTITY identity.activeLoaded "Ndereguerekói pa'ũ ko kuatiaroguépe g̃uarã.">
+<!ENTITY identity.activeLoaded "Ndereguerekói pa’ũ ko kuatiaroguépe g̃uarã.">
 <!ENTITY identity.weakEncryption "Ko kuatiarogue oipuru ñangarekoha ikangýva.">
 
 <!-- Strings for connection state warnings in the subview. -->
@@ -849,7 +849,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.description.insecureLoginForms "Pe marandu tembiapo ñepyrũ pegua emoingéva ko kuatiaroguépe nahekorosãi ha ikatu noĩporãmbái.">
 <!ENTITY identity.description.weakCipher "Nde jeike ko ñanduti rendápe oipuru ñangarekoha ikangýva ha naiñemíri.">
 <!ENTITY identity.description.weakCipher2 "Ambue tapichakuéra ikatu ohecha nemarandu térã omoambue ñanduti kuatiarogue reko.">
-<!ENTITY identity.description.activeBlocked "&brandShortName; ojokóma ko kuatiarogue pehẽ ijerovia'ỹha.">
+<!ENTITY identity.description.activeBlocked "&brandShortName; ojokóma ko kuatiarogue pehẽ ijerovia’ỹha.">
 <!ENTITY identity.description.passiveLoaded "Nde jeike naiñemíri ha nemarandu remoingéva ko tendápe ikatu ohecha ambue tapicha.">
 <!ENTITY identity.description.passiveLoaded2 "Ko ñanduti renda oguereko hetepy ndaijeroviapáiva (mba’era’ãngáramo).">
 <!ENTITY identity.description.passiveLoaded3 "&brandShortName; ojokóramo jepe heta retepy, oĩ gueteri tetepy kuatiaroguépe ndaijegueroviapáiva (mba’era’ãngáramo).">
@@ -863,7 +863,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY identity.disableMixedContentBlocking.accesskey "D">
 <!ENTITY identity.learnMore "Kuaave">
 
-<!ENTITY identity.removeCertException.label "Emongue oĩ'ỹva">
+<!ENTITY identity.removeCertException.label "Emongue oĩ’ỹva">
 <!ENTITY identity.removeCertException.accesskey "E">
 
 <!ENTITY identity.moreInfoLinkText2 "Maranduve">
@@ -890,7 +890,7 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 
 <!ENTITY syncSignIn.label             "&syncBrand.shortName.label;-pe jeike…">
 <!ENTITY syncSignIn.accesskey         "Y">
-<!ENTITY syncSyncNowItem.label        "Embojuehe ko'ág̃a">
+<!ENTITY syncSyncNowItem.label        "Embojuehe ko’ág̃a">
 <!ENTITY syncSyncNowItemSyncing.label "Embojuehehína…">
 <!ENTITY syncSyncNowItem.accesskey    "S">
 <!ENTITY syncReAuthItem.label         "&syncBrand.shortName.label;…-pe jeikejey">

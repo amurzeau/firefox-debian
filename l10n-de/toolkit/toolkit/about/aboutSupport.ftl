@@ -131,7 +131,7 @@ restart-in-safe-mode-label = Mit deaktivierten Add-ons neu starten…
 clear-startup-cache-title = Versuchen Sie, den Start-Cache zu löschen
 clear-startup-cache-label = Start-Cache löschen…
 startup-cache-dialog-title = Start-Cache löschen
-startup-cache-dialog-body = Starten Sie { -brand-short-name } neu, um den Start-Cache zu löschen. Dadurch werden weder Ihre Einstellungen nicht geändert noch die Erweiterungen entfernt, die Sie zu { -brand-short-name } hinzugefügt haben.
+startup-cache-dialog-body = Starten Sie { -brand-short-name } neu, um den Start-Cache zu löschen. Dadurch werden weder Ihre Einstellungen geändert noch die Erweiterungen entfernt, die Sie zu { -brand-short-name } hinzugefügt haben.
 restart-button-label = Neu starten
 
 ## Media titles
@@ -274,6 +274,9 @@ blocklisted-bug = Auf Grund bekannter Probleme blockiert
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = Problem { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Aufgrund bekannter Probleme blockiert: <a data-l10n-name="bug-link">Bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Blockiert; Fehlercode { $failureCode }

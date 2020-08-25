@@ -69,6 +69,10 @@ urlbar-default-notification-anchor =
     .tooltiptext = సందేశపు ప్యానెలును తెరువు
 urlbar-geolocation-notification-anchor =
     .tooltiptext = స్థాన అభ్యర్థన ప్యానెలును తెరువు
+urlbar-xr-notification-anchor =
+    .tooltiptext = వర్చువల్ రియాలిటీ అనుమతి ప్యానెల్ తెరవండి
+urlbar-storage-access-anchor =
+    .tooltiptext = విహారణ కార్యకరాలపు అనుమతి ప్యానెలును తెరువు
 urlbar-translate-notification-anchor =
     .tooltiptext = ఈ పేజీని అనువదించండి
 urlbar-web-rtc-share-screen-notification-anchor =
@@ -83,6 +87,8 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = ప్లగ్-ఇన్ వాడకాన్ని నిర్వహించండి
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = సైటుతో మీ కేమెరా మరియు/లేదా మైక్రోఫోన్ పంచుకోడాన్ని నిర్వహించండి
+urlbar-autoplay-notification-anchor =
+    .tooltiptext = ఆటోప్లే ప్యానెలును తెరవండి
 urlbar-persistent-storage-notification-anchor =
     .tooltiptext = నిరంతర నిల్వ డేటాని నిల్వ చేయండి
 urlbar-addons-notification-anchor =
@@ -101,11 +107,20 @@ urlbar-tip-icon-description =
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
+urlbar-search-tips-onboard = తక్కువ టైపు చేసి, ఎక్కువ కనుగొనండి: నేరుగా మీ చిరునామా పట్టీ నుండే { $engineName }‌లో వెతకండి.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = ఇష్టాంశాలు
+urlbar-search-mode-tabs = ట్యాబులు
+urlbar-search-mode-history = చరిత్ర
 
 ##
 
 urlbar-geolocation-blocked =
     .tooltiptext = మీ స్థాన సమాచారాన్ని వాడకుండా ఈ వెబ్‌సైటుని నిరోధించారు.
+urlbar-xr-blocked =
+    .tooltiptext = మీరు ఈ వెబ్‌సైట్ కోసం వర్చువల్ రియాలిటీ పరికర ప్రాప్యతను నిరోధించారు.
 urlbar-web-notifications-blocked =
     .tooltiptext = నోటిఫికేషన్లు చూపించకుండా ఈ వెబ్‌సైటుని నిరోధించారు.
 urlbar-camera-blocked =
@@ -118,10 +133,14 @@ urlbar-persistent-storage-blocked =
     .tooltiptext = మీరు ఈ వెబ్సైట్ కోసం నిరంతర నిల్వ నిరోధించారు.
 urlbar-popup-blocked =
     .tooltiptext = మీరు ఈ వెబ్‌సైటు యొక్క పాప్-అప్లను నిరోధించారు.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = ఈ వెబ్‌సైటులో ధ్వనితో స్వయంచాలకంగా ఆడే మాధ్యమాలను నిరోధించారు.
 urlbar-canvas-blocked =
     .tooltiptext = ఈ వెబ్‌సైటుని కాన్వాస్ డేటా వెలికితీయకుండా మీరు నిరోధించారు.
 urlbar-midi-blocked =
     .tooltiptext = MIDI సౌలభ్యాన్ని పొందకుండా ఈ వెబ్‌సైటుని మీరు నిరోధించారు.
+urlbar-install-blocked =
+    .tooltiptext = ఈ వెబ్‌సైటు పొడగింతలను స్థాపించకుండా మీరు నిరోధించి ఉన్నారు.
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
@@ -139,6 +158,8 @@ page-action-manage-extension =
     .label = పొడగింత నిర్వహణ…
 page-action-remove-from-urlbar =
     .label = చిరునామా పట్టీ నుండి తొలగించండి
+page-action-remove-extension =
+    .label = పొడగింతను తొలగించు
 
 ## Auto-hide Context Menu
 
@@ -166,6 +187,29 @@ search-one-offs-context-open-new-tab =
 search-one-offs-context-set-as-default =
     .label = అప్రమేయ శోధన యంత్రంగా అమర్చండి
     .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = అంతరంగిక కిటికీల కోసం అప్రమేయ శోధనయంత్రంగా అమర్చు
+    .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = ఇష్టాంశాలు ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = ట్యాబులు ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = చరిత్ర ({ $restrict })
 
 ## Bookmark Panel
 
@@ -185,9 +229,10 @@ bookmark-panel =
 identity-connection-not-secure = అనుసంధానం సురక్షితం కాదు
 identity-connection-secure = సురక్షిత అనుసంధానం
 identity-connection-internal = ఇది సురక్షిత { -brand-short-name } పేజీ.
-identity-connection-file = ఈ పేజీ మీ కంప్యూటర్లో భద్రమయివుంటుంది.
+identity-connection-file = ఈ పేజీ మీ కంప్యూటర్లో భద్రమైవుంది.
 identity-extension-page = ఈ పేజీ ఒక పొడగింత నుండి తెరవబడింది.
 identity-active-blocked = ఈ పేజీలో సురక్షితంకాని భాగాలను { -brand-short-name } నిరోధించింది.
+identity-custom-root = మొజిల్లాచే గుర్తించబడని ధ్రువపత్ర జారీదారు అనుసంధానాన్ని నిర్ధారించారు.
 identity-passive-loaded = ఈ పేజీలోని కొన్ని భాగాలు సురక్షితమైనవి కావు (బొమ్మల వంటివి).
 identity-active-loaded = ఈ పేజీకి రక్షణను మీరు అచేతనం చేసారు.
 identity-weak-encryption = ఈ పేజీ బలహీనమైన ఎన్‌క్రిప్షన్ వాడుతోంది.
@@ -199,7 +244,8 @@ identity-permissions-empty = ఈ సైటుకి మీరు ఎటువం
 identity-clear-site-data =
     .label = కుకీలను, సైటు డేటాను తుడిచివేయి…
 identity-connection-not-secure-security-view = ఈ సైటుకి మీరు సురక్షితంగా అనుసంధానం కాలేదు.
-identity-connection-verified = మీరు ఈ సైటుకు సురక్షితంగా అనుసంధానం అయ్యారు.
+identity-connection-verified = ఈ సైటుకు మీరు సురక్షితంగా అనుసంధానమయ్యారు.
+identity-ev-owner-label = ధ్రువపత్రం వీరికి జారీ అయ్యింది:
 identity-remove-cert-exception =
     .label = మినహాయింపును తొలగించు
     .accesskey = R
@@ -228,6 +274,8 @@ identity-more-info-link-text =
 
 browser-window-minimize-button =
     .tooltiptext = చిన్నదిచేయు
+browser-window-maximize-button =
+    .tooltiptext = పెద్దగించు
 browser-window-close-button =
     .tooltiptext = మూసివేయి
 
@@ -240,9 +288,17 @@ popup-select-microphone =
     .value = పంచుకోవాల్సిన మైక్రోఫోన్:
     .accesskey = M
 popup-all-windows-shared = మీ తెర మీద కనిపించే అన్ని విండోలు పంచుకోబడతాయి.
+popup-screen-sharing-not-now =
+    .label = ఇప్పుడు కాదు
+    .accesskey = w
+popup-screen-sharing-never =
+    .label = ఎప్పటికీ అనుమతించవద్దు
+    .accesskey = N
 
 ## WebRTC window or screen share tab switch warning
 
+sharing-warning-disable-for-session =
+    .label = ఈ సెషనుకి పంచుకోలు రక్షణను అచేతనంచేయి
 
 ## DevTools F12 popup
 
@@ -253,8 +309,14 @@ urlbar-default-placeholder =
     .defaultPlaceholder = వెతకండి లేదా చిరునామాను ఇవ్వండి
 urlbar-placeholder =
     .placeholder = వెతకండి లేదా చిరునామాను ఇవ్వండి
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name }‌తో వెతకండి లేదా చిరునామాను ఇవ్వండి
 urlbar-remote-control-notification-anchor =
     .tooltiptext = విహరణి వ్యవహిత నియంత్రణ కింద ఉంది
+urlbar-permissions-granted =
+    .tooltiptext = ఈ వెబ్‌సైటుకి మీరు అదనపు అనుమతులు ఇచ్చివున్నారు.
 urlbar-switch-to-tab =
     .value = ట్యాబుకు మారు:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
@@ -264,3 +326,5 @@ urlbar-go-button =
     .tooltiptext = ప్రాంతపు పట్టీలో ఉన్న చిరునామాకి వెళ్ళండి
 urlbar-page-action-button =
     .tooltiptext = పేజీ చర్యలు
+urlbar-pocket-button =
+    .tooltiptext = { -pocket-brand-name }‌కి భద్రపరుచు

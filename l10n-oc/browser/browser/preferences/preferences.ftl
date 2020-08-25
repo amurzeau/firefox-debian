@@ -803,10 +803,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Utilizar un senhal principal
     .accesskey = U
+forms-primary-pw-use =
+    .label = Utilizar un senhal principal
+    .accesskey = U
+forms-primary-pw-learn-more-link = Ne saber mai
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Modificar lo senhal principal…
     .accesskey = M
 forms-master-pw-fips-title = Actualament, sètz en mòde FIPS. Lo mòde FIPS necessita un senhal principal pas void.
+forms-primary-pw-change =
+    .label = Modificar lo senhal principal…
+    .accesskey = M
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Actualament, sètz en mòde FIPS. Lo mòde FIPS requerís un senhal principal pas void.
 forms-master-pw-fips-desc = La modificacion de senhal a pas capitat
 
 ## OS Authentication dialog
@@ -818,6 +833,13 @@ master-password-os-auth-dialog-message-win = Per crear un senhal màger, picatz 
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = crear un senhal principal
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Per crear un senhal principal, picatz vòstras informacions de connexion Windows. Aquò permet de servar la seguretat dels comptes.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = crear un senhal principal
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -939,7 +961,7 @@ content-blocking-learn-more = Ne saber mai
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 content-blocking-setting-standard =
-    .label = Standard
+    .label = Estandard
     .accesskey = d
 content-blocking-setting-strict =
     .label = Estricte
@@ -1169,6 +1191,7 @@ space-alert-under-5gb-message = { -brand-short-name } a pas mai d'espaci disc. L
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = Mòde HTTPS solament
+httpsonly-description = Lo HTTPS provesís una connexion segura e chifrada entre { -brand-short-name } e lo site web que visitatz. La màger part dels site web son compatibles HTTPS, se lo mòde HTTPS solament es activat { -brand-short-name } passarà totas las connexion en HTTPS.
 httpsonly-learn-more = Ne saber mai
 httpsonly-radio-enabled =
     .label = Activar lo mòde HTTPS solament dins totas las fenèstras

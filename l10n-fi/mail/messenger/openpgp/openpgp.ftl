@@ -1,0 +1,237 @@
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+e2e-intro-description = Salattujen tai digitaalisesti allekirjoitettujen viestien lähettämistä varten on määritettävä joko OpenPGP- tai S/MIME-salaustekniikka.
+e2e-intro-description-more = Ota käyttöön OpenPGP valitsemalla henkilökohtainen avaimesi, tai S/MIME valitsemalla henkilökohtainen varmenteesi. Henkilökohtaista avainta tai varmennetta varten sinulla on vastaava oma salainen avain.
+openpgp-key-user-id-label = Tili / käyttäjätunnus
+openpgp-keygen-title-label =
+    .title = Luo OpenPGP-avain
+openpgp-cancel-key =
+    .label = Keskeytä
+    .tooltiptext = Keskeytä avaimen luonti
+openpgp-key-gen-expiry-title =
+    .label = Avaimen voimassaoloaika
+openpgp-key-gen-expire-label = Avain vanhenee
+openpgp-key-gen-days-label =
+    .label = vuorokaudessa
+openpgp-key-gen-months-label =
+    .label = kuukaudessa
+openpgp-key-gen-years-label =
+    .label = vuodessa
+openpgp-key-gen-no-expiry-label =
+    .label = Avain ei vanhene
+openpgp-key-gen-key-size-label = Avaimen koko
+openpgp-key-gen-console-label = Avaimen luominen
+openpgp-key-gen-key-type-label = Avaintyyppi
+openpgp-key-gen-key-type-rsa =
+    .label = RSA
+openpgp-key-gen-key-type-ecc =
+    .label = ECC (elliptinen käyrä)
+openpgp-generate-key =
+    .label = Luo avain
+    .tooltiptext = Luo uuden salauksessa ja/tai allekirjoittamisessa tarvittavan OpenPGP -yhteensopivan avaimen
+openpgp-advanced-prefs-button-label =
+    .label = Lisäasetukset…
+openpgp-keygen-desc = <a data-l10n-name="openpgp-keygen-desc-link">HUOMAA: Avaimen luominen saattaa kestää useita minuutteja.</a> Älä sulje sovellusta avaimen luomisen aikana. Aktiivinen selaaminen tai muiden levyintensiivisten toimintojen suorittaminen avaimen luomisen aikana tehostaa 'satunnaisuusaluetta' ja nopeuttaa prosessia. Kun avaimen luominen valmistuu, siitä annetaan ilmoitus.
+openpgp-key-expiry-label =
+    .label = Vanheneminen
+openpgp-key-id-label =
+    .label = Avaintunnus
+openpgp-cannot-change-expiry = Tämä on avain, jolla on monimutkainen rakenne. Sen voimassaoloajan muuttamista ei tueta.
+openpgp-key-man-title =
+    .title = OpenPGP-avainhallinta
+openpgp-key-man-generate =
+    .label = Uusi avainpari
+    .accesskey = U
+openpgp-key-man-gen-revoke =
+    .label = Kumoamisvarmenne
+    .accesskey = K
+openpgp-key-man-ctx-gen-revoke-label =
+    .label = Luo ja tallenna kumoamisvarmenne
+openpgp-key-man-file-menu =
+    .label = Tiedosto
+    .accesskey = T
+openpgp-key-man-edit-menu =
+    .label = Muokkaa
+    .accesskey = M
+openpgp-key-man-view-menu =
+    .label = Näytä
+    .accesskey = N
+openpgp-key-man-generate-menu =
+    .label = Luo
+    .accesskey = L
+openpgp-key-man-keyserver-menu =
+    .label = Avainpalvelin
+    .accesskey = A
+openpgp-key-man-import-public-from-file =
+    .label = Tuo julkiset avaimet tiedostosta
+    .accesskey = T
+openpgp-key-man-import-secret-from-file =
+    .label = Tuo salaiset avaimet tiedostosta
+openpgp-key-man-import-sig-from-file =
+    .label = Tuo kumoamiset tiedostosta
+openpgp-key-man-import-from-clipbrd =
+    .label = Tuo avaimet leikepöydältä
+    .accesskey = u
+openpgp-key-man-import-from-url =
+    .label = Tuo avaimet verkko-osoitteesta
+    .accesskey = o
+openpgp-key-man-export-to-file =
+    .label = Vie julkiset avaimet tiedostoon
+    .accesskey = V
+openpgp-key-man-send-keys =
+    .label = Lähetä julkiset avaimet sähköpostilla
+    .accesskey = e
+openpgp-key-man-backup-secret-keys =
+    .label = Varmuuskopioi salaiset avaimet tiedostoon
+    .accesskey = r
+openpgp-key-man-discover-cmd =
+    .label = Etsi avaimia verkossa
+    .accesskey = E
+openpgp-key-man-discover-prompt = Etsi OpenPGP-avaimia verkossa, avainpalvelimissa tai WKD-protokollaa käyttäen kirjoittamalla joko sähköpostiosoitteesi tai avaintunnuksesi.
+openpgp-key-man-discover-progress = Etsitään…
+openpgp-key-copy-key =
+    .label = Kopioi julkinen avain
+    .accesskey = o
+openpgp-key-export-key =
+    .label = Vie julkinen avain tiedostoon
+    .accesskey = j
+openpgp-key-backup-key =
+    .label = Varmuuskopioi salainen avain tiedostoon
+    .accesskey = s
+openpgp-key-send-key =
+    .label = Lähetä julkinen avain sähköpostilla
+    .accesskey = t
+openpgp-key-man-copy-to-clipbrd =
+    .label = Kopioi julkiset avaimet leikepöydälle
+    .accesskey = d
+openpgp-key-man-ctx-expor-to-file-label =
+    .label = Vie avaimet tiedostoon
+openpgp-key-man-ctx-copy-to-clipbrd-label =
+    .label = Kopioi julkiset avaimet leikepöydälle
+openpgp-key-man-close =
+    .label = Sulje
+openpgp-key-man-reload =
+    .label = Lataa avainvälimuisti uudelleen
+    .accesskey = L
+openpgp-key-man-change-expiry =
+    .label = Muuta vanhemenispäivää
+    .accesskey = t
+openpgp-key-man-del-key =
+    .label = Poista avaimia
+    .accesskey = P
+openpgp-delete-key =
+    .label = Poista avain
+    .accesskey = a
+openpgp-key-man-revoke-key =
+    .label = Kumoa avain
+    .accesskey = m
+openpgp-key-man-key-props =
+    .label = Avaimen ominaisuudet
+    .accesskey = v
+openpgp-key-man-key-more =
+    .label = Lisää
+    .accesskey = L
+openpgp-key-man-show-invalid-keys =
+    .label = Näytä virheelliset avaimet
+    .accesskey = N
+openpgp-key-man-show-others-keys =
+    .label = Näytä muiden ihmisten avaimet
+    .accesskey = m
+openpgp-key-man-user-id-label =
+    .label = Nimi
+openpgp-key-man-fingerprint-label =
+    .label = Sormenjälki
+openpgp-key-man-select-all =
+    .label = Valitse kaikki avaimet
+    .accesskey = k
+openpgp-key-man-empty-tree-tooltip =
+    .label = Kirjoita hakusanat yllä olevaan kenttään
+openpgp-key-man-nothing-found-tooltip =
+    .label = Mikään avain ei vastaa hakusanojasi
+openpgp-key-man-please-wait-tooltip =
+    .label = Odota, avaimia ladataan ...
+openpgp-key-man-filter-label =
+    .placeholder = Etsi avaimia
+openpgp-key-details-title =
+    .title = Avaimen ominaisuudet
+openpgp-key-details-signatures-tab =
+    .label = Varmenteet
+openpgp-key-details-structure-tab =
+    .label = Rakenne
+openpgp-key-details-uid-certified-col =
+    .label = Käyttäjätunnus / varmentanut
+openpgp-key-details-user-id2-label = Oletettu avaimen omistaja
+openpgp-key-details-id-label =
+    .label = Tunniste
+openpgp-key-details-key-type-label = Tyyppi
+openpgp-key-details-key-part-label =
+    .label = Avaimen osa
+openpgp-key-details-algorithm-label =
+    .label = Algoritmi
+openpgp-key-details-size-label =
+    .label = Koko
+openpgp-key-details-created-label =
+    .label = Luotu
+openpgp-key-details-created-header = Luotu
+openpgp-key-details-expiry-label =
+    .label = Vanhentuminen
+openpgp-key-details-expiry-header = Vanhentuminen
+openpgp-key-details-usage-label =
+    .label = Käyttö
+openpgp-key-details-fingerprint-label = Sormenjälki
+openpgp-key-details-sel-action =
+    .label = Valitse toiminto…
+    .accesskey = V
+
+## e2e encryption settings
+
+#   $count (Number) - the number of configured keys associated with the current identity
+#   $key (String) - the currently selected OpenPGP key
+openpgp-selection-status =
+    { $count ->
+        [0] Ota OpenPGP-protokolla käyttöön valitsemalla voimassa oleva avain.
+       *[other] Nykyinen kokoonpanosi käyttää avaintunnusta <b>{ $key }</b>
+    }
+openpgp-add-key-button =
+    .label = Lisää avain…
+    .accesskey = L
+e2e-learn-more = Lue lisää
+openpgp-keygen-success = OpenPGP-avain luotu onnistuneesti!
+openpgp-keygen-import-success = OpenPGP-avainten tuonti onnistui!
+
+## OpenPGP Key selection area
+
+#   $key (String) - the expiration date of the OpenPGP key
+openpgp-radio-key-expires = Vanhenee: { $date }
+key-expiry-never = ei koskaan
+key-expired-simple = Avain on vanhentunut
+keyserver-error-unknown = Tapahtui tuntematon virhe
+keyserver-error-server-error = Avainpalvelin ilmoitti virheestä.
+import-info-fpr = Sormenjälki
+preview-failed = Julkisen avaintiedoston lukeminen ei onnistu.
+general-error = Virhe: { $reason }
+dlg-button-delete = &Poista
+
+## Account settings export output
+
+# Strings in keyRing.jsm & decryption.jsm
+key-man-button-import = &Tuo
+delete-key-title = Poista OpenPGP-avain
+# Strings used in trust.jsm
+key-valid-unknown = tuntematon
+gnupg-file = GnuPG-tiedostot
+import-keys-failed = Avainten tuonti epäonnistui
+# Strings used in enigmailMsgComposeOverlay.js
+msg-compose-button-send = &Lähetä viesti
+key-not-found = Avainta '{ $key }' ei löytynyt
+dlg-button-ok = &OK
+dlg-button-close = &Sulje
+dlg-button-cancel = &Peruuta
+dlg-no-prompt = Älä näytä tätä ikkunaa uudestaan
+# Strings used in persistentCrypto.jsm
+dlg-button-retry = &Yritä uudelleen
+dlg-button-skip = &Ohita
+# Strings used in enigmailCommon.js
+enig-error = OpenPGP-virhe

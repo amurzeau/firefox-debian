@@ -117,7 +117,7 @@
 <!ENTITY menuFavoriteFolder.label "Ajowanel Yakwuj">
 <!ENTITY menuFavoriteFolder.accesskey "w">
 <!ENTITY folderPropsCmd2.label "Taq ichinil">
-<!ENTITY folderPropsFolderCmd2.label "Kiyakwuj Ichinil">
+<!ENTITY folderPropsFolderCmd2.label "Kichinil Yakwuj">
 <!ENTITY folderPropsNewsgroupCmd2.label "Kichinil Kimolaj Tzijol">
 <!ENTITY folderPropsCmd.accesskey "o">
 <!ENTITY undoDeleteMsgCmd.label "Titzolïx Tiyuj Rutzijol">
@@ -461,7 +461,7 @@
 <!ENTITY tasksMenu.accesskey "s">
 <!ENTITY messengerCmd.label "Taqoya'l &amp; Taq Rutzijol">
 <!ENTITY messengerCmd.accesskey "R">
-<!ENTITY addressBookCmd.label "Kiwujil taq Ochochib'äl">
+<!ENTITY addressBookCmd.label "Kiwujil Ochochib'äl">
 <!ENTITY addressBookCmd.accesskey "K">
 <!ENTITY addressBookCmd.key "B">
 <!ENTITY addons.label "Taq tz'aqat">
@@ -561,7 +561,7 @@
 <!ENTITY junkItem.title "Seq'">
 <!ENTITY junkButton.label "Seq'">
 <!ENTITY notJunkButton.label "Man Seq' Ta">
-<!ENTITY addressBookButton.label "Kiwujil taq Ochochib'äl">
+<!ENTITY addressBookButton.label "Kiwujil Ochochib'äl">
 <!ENTITY chatButton.label "Chat">
 <!ENTITY glodaSearch.title "Chijun Kanoxïk">
 <!ENTITY searchItem.title "Anin Kanoxïk">
@@ -967,7 +967,7 @@
 <!ENTITY hideOtherAppsCmdMac.label      "Ke'ewäx Juley Chik">
 <!ENTITY hideOtherAppsCmdMac.commandkey "H">
 <!ENTITY hideOtherAppsCmdMac.modifiers  "accel,alt">
-<!ENTITY showAllAppsCmdMac.label        "Tik'ut pe Ronojel">
+<!ENTITY showAllAppsCmdMac.label        "Tik'ut Ronojel">
 
 <!-- Mac OS X Dock Icon pop-up menu -->
 <!ENTITY dockOptions.label              "Kicha'oj Ruwachaj Chokoy…">

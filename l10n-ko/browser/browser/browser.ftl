@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = 적게 입력, 많이 찾기: 주소 표시줄에서 바로 { $engineName } 검색어로 검색해 보세요.
 urlbar-search-tips-redirect-2 = 주소 표시줄에서 검색을 시작하여 { $engineName }의 제안 및 방문 기록을 확인하세요.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = 북마크
+urlbar-search-mode-tabs = 탭
+urlbar-search-mode-history = 기록
+
 ##
 
 urlbar-geolocation-blocked =
@@ -169,7 +175,7 @@ full-screen-exit =
 
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
-search-one-offs-with-title = 이번에 사용할 검색 엔진:
+search-one-offs-with-title = 이번만 검색:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -185,6 +191,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = 사생활 보호 창의 기본 검색 엔진으로 설정
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = 북마크 ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = 탭 ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = 기록 ({ $restrict })
 
 ## Bookmark Panel
 
@@ -294,6 +320,10 @@ urlbar-default-placeholder =
     .defaultPlaceholder = 검색어 또는 주소 입력
 urlbar-placeholder =
     .placeholder = 검색어 또는 주소 입력
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name } 검색 또는 주소 입력
 urlbar-remote-control-notification-anchor =
     .tooltiptext = 브라우저가 원격 제어중
 urlbar-permissions-granted =

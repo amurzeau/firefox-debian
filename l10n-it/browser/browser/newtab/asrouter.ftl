@@ -129,7 +129,7 @@ cfr-whatsnew-searchbar-icon-alt-text = Icona lente d’ingrandimento
 ## Picture-in-Picture
 
 cfr-whatsnew-pip-header = Guarda i tuoi video mentre navighi
-cfr-whatsnew-pip-body = La funzione picture-in-picture permette di spostare i video in una finestra separata che puoi posizionare come preferisci. In questo modo potrai continuare a guardarli mentre lavori in altre schede.
+cfr-whatsnew-pip-body = La funzione Picture-in-Picture permette di spostare i video in una finestra separata che puoi posizionare come preferisci. In questo modo potrai continuare a guardarli mentre lavori in altre schede.
 cfr-whatsnew-pip-cta = Ulteriori informazioni
 
 ## Permission Prompt
@@ -220,7 +220,7 @@ cfr-doorhanger-milestone-close-button = Chiudi
 ## Lockwise message
 
 cfr-whatsnew-lockwise-header = Crea password sicure in modo semplice
-cfr-whatsnew-lockwise-body = Trovare una password unica e sicura per ogni account è complicato. Quando hai bisogno di creare una nuova password, seleziona l'opzione nel campo della password per utilizzarne una sicura, generata automaticamente da { -brand-shorter-name }.
+cfr-whatsnew-lockwise-body = Trovare una password unica e sicura per ogni account è complicato. Quando hai bisogno di creare una nuova password, seleziona l’opzione nel campo della password per utilizzarne una sicura, generata automaticamente da { -brand-shorter-name }.
 cfr-whatsnew-lockwise-icon-alt = Icona di { -lockwise-brand-short-name }
 
 ## Vulnerable Passwords message
@@ -231,9 +231,9 @@ cfr-whatsnew-passwords-icon-alt = Icona di una chiave per password vulnerabile
 
 ## Picture-in-Picture fullscreen message
 
-cfr-whatsnew-pip-fullscreen-header = Usa picture-in-picture a schermo intero
+cfr-whatsnew-pip-fullscreen-header = Usa Picture-in-Picture a schermo intero
 cfr-whatsnew-pip-fullscreen-body = Dopo aver trasferito il video in una finestra separata, ora puoi fare doppio clic sulla finestra per visualizzarla a schermo intero.
-cfr-whatsnew-pip-fullscreen-icon-alt = Icona di picture-in-picture
+cfr-whatsnew-pip-fullscreen-icon-alt = Icona di Picture-in-Picture
 
 ## Protections Dashboard message
 

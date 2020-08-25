@@ -811,10 +811,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Uporabi glavno geslo
     .accesskey = U
+forms-primary-pw-use =
+    .label = Uporabi glavno geslo
+    .accesskey = U
+forms-primary-pw-learn-more-link = Več o tem
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Nastavi glavno geslo …
     .accesskey = G
 forms-master-pw-fips-title = Trenutno ste v načinu FIPS. FIPS zahteva glavno geslo, ki ni prazno.
+forms-primary-pw-change =
+    .label = Spremeni glavno geslo …
+    .accesskey = p
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Trenutno ste v načinu FIPS. FIPS zahteva glavno geslo, ki ni prazno.
 forms-master-pw-fips-desc = Sprememba gesla neuspešna
 
 ## OS Authentication dialog
@@ -826,6 +841,13 @@ master-password-os-auth-dialog-message-win = Če želite ustvariti glavno geslo,
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = create a Master Password
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Če želite ustvariti glavno geslo, vnesite svoje podatke za prijavo v sistem Windows. To pomaga zaščititi varnost vaših računov.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = create a Primary Password
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -933,8 +955,8 @@ addressbar-locbar-openpage-option =
     .label = odprte zavihke
     .accesskey = O
 addressbar-locbar-topsites-option =
-    .label = Glavne strani
-    .accesskey = G
+    .label = glavne strani
+    .accesskey = g
 addressbar-suggestions-settings = Spremeni nastavitve predlogov iskanja
 
 ## Privacy Section - Content Blocking
@@ -1181,6 +1203,10 @@ httpsonly-description = HTTPS zagotavlja varno, šifrirano povezavo med { -brand
 httpsonly-learn-more = Več o tem
 httpsonly-radio-enabled =
     .label = Omogoči način "samo HTTPS" v vseh oknih
+httpsonly-radio-enabled-pbm =
+    .label = Omogoči način "samo HTTPS" samo v zasebnih oknih
+httpsonly-radio-disabled =
+    .label = Ne omogoči načina "samo HTTPS"
 
 ## The following strings are used in the Download section of settings
 

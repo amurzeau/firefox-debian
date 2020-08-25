@@ -665,7 +665,7 @@ sync-remove-account =
 sync-sign-in =
     .label = Logg inn
     .accesskey = g
-sync-signedin-settings-header = Sync-innstillinger
+sync-signedin-settings-header = Synkroniseringsinnstillinger
 sync-signedin-settings-desc = Velg hva du vil synkronisere på enhetene dine med { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
@@ -803,10 +803,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Bruk et hovedpassord
     .accesskey = r
+forms-primary-pw-use =
+    .label = Bruk et hovedpassord
+    .accesskey = B
+forms-primary-pw-learn-more-link = Les mer
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Endre hovedpassord …
     .accesskey = d
 forms-master-pw-fips-title = Du er i FIPS-modus. FIPS krever at du bruker et hovedpassord.
+forms-primary-pw-change =
+    .label = Endre hovedpassord…
+    .accesskey = p
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Du er for tiden i FIPS-modus. FIPS krever at du bruker et hovedpassord.
 forms-master-pw-fips-desc = Passordendring mislyktes
 
 ## OS Authentication dialog
@@ -818,6 +833,13 @@ master-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen 
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = opprette et hovedpassord
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen for Windows for å opprette et hovedpassord. Dette vil gjøre kontoene dine tryggere.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = opprett et hovedpassord
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -895,7 +917,7 @@ sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
 sitedata-option-block-unvisited =
     .label = Infokapsler fra ubesøkte nettsteder
 sitedata-option-block-all-third-party =
-    .label = Alle tredjeparts infokapsler (kan føre til feil på nettsteder)
+    .label = Alle tredjeparts-infokapsler (kan forårsake feil på nettsteder)
 sitedata-option-block-all =
     .label = Alle infokapsler (vil føre til feil på nettsteder)
 sitedata-clear =
@@ -981,7 +1003,7 @@ content-blocking-unvisited-cookies = Infokapsler fra ubesøkte nettsteder
 content-blocking-all-windows-trackers = Kjente sporere i alle vinduer
 content-blocking-all-windows-tracking-content = Sporingsinnhold i alle vinduer
 content-blocking-all-third-party-cookies = Alle tredjeparts infokapsler
-content-blocking-cryptominers = Kryptominere
+content-blocking-cryptominers = Kryptoutvinnere
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Se opp!
 content-blocking-warning-description = Blokkering av innhold kan føre til at noen nettsteder slutter å fungere. Det er enkelt å deaktivere blokkering for nettsteder du stoler på.
@@ -1012,7 +1034,7 @@ content-blocking-expand-section =
     .tooltiptext = Mer informasjon
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
-    .label = Kryptominere
+    .label = Kryptoutvinnere
     .accesskey = y
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
@@ -1032,7 +1054,7 @@ permissions-header = Tillatelser
 permissions-location = Plassering
 permissions-location-settings =
     .label = Innstillinger…
-    .accesskey = P
+    .accesskey = n
 permissions-xr = Virtuell virkelighet
 permissions-xr-settings =
     .label = Innstillinger…
@@ -1044,7 +1066,7 @@ permissions-camera-settings =
 permissions-microphone = Mikrofon
 permissions-microphone-settings =
     .label = Innstillinger…
-    .accesskey = M
+    .accesskey = n
 permissions-notification = Varsler
 permissions-notification-settings =
     .label = Innstillinger…

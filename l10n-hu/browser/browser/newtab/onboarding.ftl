@@ -19,9 +19,6 @@ onboarding-button-label-get-started = Kezdő lépések
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = Üdvözli a { -brand-short-name }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Üdvözli a <span data-l10n-name="zap">{ -brand-short-name }</span>
 onboarding-welcome-body = Megvan a böngészője.<br/>Ismerkedjen meg a { -brand-product-name } család többi tagjával.
 onboarding-welcome-learn-more = További tudnivalók az előnyökről.
 onboarding-join-form-header = Csatlakozzon a { -brand-product-name }hoz
@@ -44,16 +41,75 @@ onboarding-start-browsing-button-label = Böngészés megkezdése
 onboarding-cards-dismiss =
     .title = Elutasítás
     .aria-label = Elutasítás
-# Tooltip displayed on hover of top sites in import settings screen during onboarding flow.
-# This support welcome screen showing top sites imported from the user's default browser.
-# Title text is kept multiline to ensure tooltip container width is not more than 40 characters.
-onboarding-import-sites-info =
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Üdvözli a <span data-l10n-name="zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = A gyors, biztonságos és privát böngésző, amelyet egy nonprofit szervezet támogat.
+onboarding-multistage-welcome-primary-button-label = Beállítás indítása
+onboarding-multistage-welcome-secondary-button-label = Bejelentkezés
+onboarding-multistage-welcome-secondary-button-text = Van már fiókja?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Jelszavak, könyvjelzők és <span data-l10n-name="zap">egyebek</span> importálása
+onboarding-multistage-import-subtitle = Egy másik böngészőből érkezett? Könnyen áthozhat mindent a { -brand-short-name }ba.
+onboarding-multistage-import-primary-button-label = Importálás indítása
+onboarding-multistage-import-secondary-button-label = Most nem
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Az itt felsorolt webhelyek találhatók ezen az eszközön. A { -brand-short-name } nem menti vagy szinkronizálja az adatokat egy másik böngészőből, kivéve, ha úgy dönt, hogy importálja azokat.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Első lépések: { $current }. képernyő / { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Válasszon egy <span data-l10n-name="zap">megjelenést</span>
+onboarding-multistage-theme-subtitle = Tegye egyedivé a { -brand-short-name }ot egy témával.
+onboarding-multistage-theme-primary-button-label = Téma mentése
+onboarding-multistage-theme-secondary-button-label = Most nem
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Automatikus
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = Rendszertéma használata
+onboarding-multistage-theme-label-light = Világos
+onboarding-multistage-theme-label-dark = Sötét
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
     .title =
-        Ezek a webhelyek találhatók ezen az eszközön.
-        A { -brand-short-name } nem menti vagy szinkronizálja az
-        adatokat másik böngészőből, kivéve, ha úgy dönt,
-        hogy importálja azokat.
-    .aria-label = { onboarding-import-sites-info.title }
+        Az operációs rendszer megjelenésének öröklése a
+        gomboknál, menüknél és ablakoknál.
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        Világos megjelenés használata a gombokhoz,
+        menükhöz és ablakokhoz.
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        Sötét megjelenés használata a gombokhoz,
+        menükhöz és ablakokhoz.
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title =
+        Színes megjelenés használata a gombokhoz,
+        menükhöz és ablakokhoz.
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
 
 ## Welcome full page string
 

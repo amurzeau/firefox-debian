@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Navegación privada)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Navegación privada)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Navegación privada)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Navegación privada)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -97,6 +95,12 @@ urlbar-addons-notification-anchor =
     .tooltiptext = Ubrir lo panel de mensaches d'instalación de complementos
 urlbar-tip-help-icon =
     .title = Obtener aduya
+urlbar-search-tips-confirm = Vale, entendiu!
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = Consello:
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -104,6 +108,13 @@ urlbar-tip-help-icon =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Escribe menos pa trobar mas cosas: Fe busquedas con { $engineName } dreitament dende la barra d'adrezas.
+urlbar-search-tips-redirect-2 = Empecipia la tuya busqueda en a barra d'adrezas pa veyer las sucherencias de { $engineName } y lo tuyo historial de busqueda.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Marcapachinas
+urlbar-search-mode-tabs = Pestanyas
+urlbar-search-mode-history = Historial
 
 ##
 
@@ -131,12 +142,10 @@ urlbar-midi-blocked =
     .tooltiptext = Tiens blocau l'acceso MIDI en esta web.
 urlbar-install-blocked =
     .tooltiptext = Has blocau la instalación de complementos dende este puesto web.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Editar iste marcapachinas ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -150,6 +159,8 @@ page-action-manage-extension =
     .label = Chestionar la extensión…
 page-action-remove-from-urlbar =
     .label = Borrar d'a barra d'adrezas
+page-action-remove-extension =
+    .label = Borrar extensión
 
 ## Auto-hide Context Menu
 
@@ -165,14 +176,12 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Esta vegada, mira con:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Cambiar os achustes de busca
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Cambiar los achustes de busca
-
 search-one-offs-context-open-new-tab =
     .label = Busca en una pestanya nueva
     .accesskey = t
@@ -182,16 +191,34 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Definir como motor de busqueda per defecto en finestras privadas
     .accesskey = D
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Marcapachinas ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Pestanyas ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Historial ({ $restrict })
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Amostrar l'editor mientres se grava
     .accesskey = A
-
 bookmark-panel-done-button =
     .label = Feito
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -200,16 +227,27 @@ bookmark-panel =
 
 ## Identity Panel
 
+identity-connection-not-secure = Connexión insegura
+identity-connection-secure = Connexión segura
 identity-connection-internal = Ista ye una pachina segura de { -brand-short-name }.
 identity-connection-file = Ista pachina s'alza en o suyo ordinadora
 identity-extension-page = Esta pachina ye estada cargada dende una extensión.
 identity-active-blocked = { -brand-short-name } ha blocau partes d'ista pachina que no son seguras.
+identity-custom-root = Connexión verificada per un emisor de certificaus que no ye reconoixiu per Mozilla.
 identity-passive-loaded = Bella parte d'ista pachina no ye segura (p. eix. imachens)
 identity-active-loaded = Ha desactivau a protección en ista pachina.
 identity-weak-encryption = Ista pachina fa servir zifrau feble.
 identity-insecure-login-forms = Los datos de dentrada escritos en ista pachina pueden estar compromesos.
+identity-permissions =
+    .value = Permisos
 identity-permissions-reload-hint = Talment haiga de recargar la pachina pa que s'apliquen los cambios.
 identity-permissions-empty = No ha dau garra permiso especial ta iste puesto.
+identity-clear-site-data =
+    .label = Borrar cookies y datos d'o puesto…
+identity-connection-not-secure-security-view = No yes connectau de traza segura a este puesto:
+identity-connection-verified = Yes connectau de traza segura a este puesto:
+identity-ev-owner-label = Certificau emitiu a:
+identity-description-custom-root = Mozila no reconoix este emisor de certificaus. Talment te l'haiga anyadiu lo tuyo sistema operativo u bell administrador. <label data-l10n-name="link">Saber-ne mas</label>
 identity-remove-cert-exception =
     .label = Eliminar la excepción
     .accesskey = x
@@ -238,6 +276,10 @@ identity-more-info-link-text =
 
 browser-window-minimize-button =
     .tooltiptext = Minimizar
+browser-window-maximize-button =
+    .tooltiptext = Maximizar
+browser-window-restore-down-button =
+    .tooltiptext = Restaurar
 browser-window-close-button =
     .tooltiptext = Zarrar
 
@@ -250,12 +292,27 @@ popup-select-microphone =
     .value = Microfono ta compartir:
     .accesskey = M
 popup-all-windows-shared = Se compartirán todas as finestras visibles en a suya pantalla.
+popup-screen-sharing-not-now =
+    .label = No pas agora
+    .accesskey = g
+popup-screen-sharing-never =
+    .label = No permitir nunca
+    .accesskey = N
+popup-silence-notifications-checkbox = Desactivar notificacions de { -brand-short-name } mientras se comparte
+popup-silence-notifications-checkbox-warning = { -brand-short-name } no amostrará notificacions mientres compartes.
 
 ## WebRTC window or screen share tab switch warning
 
+sharing-warning-window = Yes compartindo { -brand-short-name }. Atras personas pueden veyer quán te mueves ta una nueva pestanya.
+sharing-warning-screen = Yes compartindo tota la pantalla. Atras personas pueden veyer quan cambias ta unatra pestanya.
+sharing-warning-proceed-to-tab =
+    .label = Pasar a la pestanya
+sharing-warning-disable-for-session =
+    .label = Desactivar la protección de compartición pa esta sesión
 
 ## DevTools F12 popup
 
+enable-devtools-popup-description = Pa emplegar l'alcorce F12, ubre en primeras DevTools per medio d'o menú de desenvolvedor web.
 
 ## URL Bar
 
@@ -263,16 +320,22 @@ urlbar-default-placeholder =
     .defaultPlaceholder = Termen a mirar u adreza
 urlbar-placeholder =
     .placeholder = Termen a mirar u adreza
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Mirar con { $name } u escribir una adreza
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Lo navegador ye controlau a distancia
+urlbar-permissions-granted =
+    .tooltiptext = Has dau permisos adicionals a este web.
 urlbar-switch-to-tab =
     .value = Ir ta la pestanya:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Extensión:
-
 urlbar-go-button =
     .tooltiptext = Ir ta la URL d'a barra d'adrezas
 urlbar-page-action-button =
     .tooltiptext = Accions de pachina
+urlbar-pocket-button =
+    .tooltiptext = Alzar en { -pocket-brand-name }

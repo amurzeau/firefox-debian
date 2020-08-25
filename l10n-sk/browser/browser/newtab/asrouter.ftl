@@ -124,6 +124,7 @@ cfr-whatsnew-lockwise-take-link-text = Prevziať aplikáciu
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Používajte panel s adresou - píšte menej, nájdite viac
+cfr-whatsnew-searchbar-body-topsites = Teraz stačí vybrať panel s adresou, ktorý sa zväčší a zobrazí odkazy na vaše najnavštevovanejšie stránky.
 cfr-whatsnew-searchbar-icon-alt-text = Ikona lupy
 
 ## Picture-in-Picture
@@ -135,6 +136,7 @@ cfr-whatsnew-pip-cta = Ďalšie informácie
 ## Permission Prompt
 
 cfr-whatsnew-permission-prompt-header = Menej otravných vyskakovacích okien
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } teraz zabraňuje stránkam automaticky požadovať odosielanie vyskakovacích správ.
 cfr-whatsnew-permission-prompt-cta = Ďalšie informácie
 
 ## Fingerprinter Counter
@@ -186,6 +188,13 @@ cfr-doorhanger-cryptominers-description = Na vašom súkromí záleží. { -bran
 
 ## Enhanced Tracking Protection Milestones
 
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+       *[other] Aplikácia { -brand-short-name } zablokovala od { $date } viac než <b>{ $blockedCount }</b> sledovacích prvkov!
+    }
 cfr-doorhanger-milestone-ok-button = Zobraziť všetko
     .accesskey = v
 cfr-doorhanger-milestone-close-button = Zavrieť
@@ -196,24 +205,32 @@ cfr-doorhanger-milestone-close-button = Zavrieť
 
 ## Lockwise message
 
+cfr-whatsnew-lockwise-header = Vytvárajte zabezpečené heslá s ľahkosťou
 cfr-whatsnew-lockwise-icon-alt = Ikona { -lockwise-brand-short-name(case: "gen") }
 
 ## Vulnerable Passwords message
 
+cfr-whatsnew-passwords-header = Dostávajte upozornenia na zraniteľné heslá
+cfr-whatsnew-passwords-icon-alt = Ikona zraniteľného hesla
 
 ## Picture-in-Picture fullscreen message
 
+cfr-whatsnew-pip-fullscreen-header = Prejdite do režimu obraz v obraze na celú obrazovku
+cfr-whatsnew-pip-fullscreen-body = Teraz môžete dvojitým kliknutím zväčšiť vyskakovacie plávajúce okno do režimu na celú obrazovku.
 cfr-whatsnew-pip-fullscreen-icon-alt = Ikona obrazu v obraze
 
 ## Protections Dashboard message
 
+cfr-whatsnew-protections-header = Prehľad ochrany na jednom mieste
 cfr-whatsnew-protections-icon-alt = Ikona štítu
 
 ## Better PDF message
 
+cfr-whatsnew-better-pdf-header = Lepšia práca s PDF
 
 ## DOH Message
 
+cfr-doorhanger-doh-header = Bezpečnejšie a šifrované vyhľadávanie DNS
 cfr-doorhanger-doh-primary-button = OK, rozumiem
     .accesskey = O
 

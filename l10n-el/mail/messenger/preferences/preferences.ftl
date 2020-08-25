@@ -41,7 +41,6 @@ composition-addressing-header = Διευθυνσιοδότηση
 privacy-main-header = Απόρρητο
 privacy-passwords-header = Κωδικοί πρόσβασης
 privacy-junk-header = Ανεπιθύμητα
-privacy-data-collection-header = Συλλογή και χρήση δεδομένων
 collection-header = Συλλογή και χρήση δεδομένων { -brand-short-name }
 collection-description = Προσπαθούμε να παρέχουμε επιλογές και να συλλέγουμε μόνο τα απαραίτητα, ώστε να προσφέρουμε και να βελτιώνουμε το { -brand-short-name } για όλους. Ζητούμε πάντα άδεια πριν λάβουμε προσωπικές πληροφορίες.
 collection-privacy-notice = Σημείωση απορρήτου
@@ -96,14 +95,19 @@ addons-button = Επεκτάσεις & Θέματα
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Επαληθεύστε την ταυτότητά σας για δημιουργία κύριου κωδικού πρόσβασης.
-# This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Για να δημιουργήσετε κύριο κωδικό πρόσβασης, εισάγετε τα διαπιστευτήρια σύνδεσης των Windows. Αυτό συμβάλλει στην προστασία των λογαριασμών σας.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Thunderbird is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = δημιουργήσει κύριο κωδικό πρόσβασης
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Για να δημιουργήσετε έναν κύριο κωδικό πρόσβασης, εισάγετε τα διαπιστευτήρια των Windows σας. Αυτό θα βοηθήσει στην ασφάλεια των λογαριασμών σας.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = δημιουργήσει κύριο κωδικό πρόσβασης
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -242,7 +246,7 @@ network-settings-button =
     .label = Ρυθμίσεις…
     .accesskey = Θ
 offline-legend = Εκτός σύνδεσης
-offline-settings = Ρυθμίσεις εργασίας χωρίς σύνδεση
+offline-settings = Ρυθμίσεις εργασίας εκτός σύνδεσης
 offline-settings-button =
     .label = Εκτός σύνδεσης…
     .accesskey = Ε
@@ -541,6 +545,15 @@ master-password-label =
 master-password-button =
     .label = Αλλαγή κύριου κωδικού πρόσβασης…
     .accesskey = β
+primary-password-description = Ο κύριος κωδικός πρόσβασης προστατεύει όλους τους κωδικούς πρόσβασής σας, αλλά θα πρέπει να τον εισάγετε σε κάθε συνεδρία.
+primary-password-label =
+    .label = Χρήση κύριου κωδικού πρόσβασης
+    .accesskey = Χ
+primary-password-button =
+    .label = Αλλαγή κύριου κωδικού πρόσβασης…
+    .accesskey = Α
+forms-primary-pw-fips-title = Είστε σε λειτουργία FIPS. Το FIPS απαιτεί μη κενό κύριο κωδικό πρόσβασης.
+forms-master-pw-fips-desc = Αποτυχία αλλαγής κωδικού πρόσβασης
 junk-description = Καθορίστε τις προεπιλεγμένες ρυθμίσεις ανεπιθύμητης αλληλογραφίας. Οι ρυθμίσεις για συγκεκριμένους λογαριασμούς μπορούν να τροποποιηθούν στις ρυθμίσεις λογαριασμού.
 junk-label =
     .label = Όταν επισημαίνεται ως ανεπιθύμητο ένα μήνυμα:
@@ -630,7 +643,7 @@ notification-empty =
 notification-type-label =
     .label =
         { PLATFORM() ->
-            [macos] Κίνηση εικονιδίου στην μπάρα εφαρμογών
+            [macos] Κίνηση εικονιδίου στη γραμμή εφαρμογών
            *[other] Αναλαμπή στοιχείου γραμμής εργασιών
         }
     .accesskey =

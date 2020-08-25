@@ -57,6 +57,10 @@ newtab-confirm-delete-history-p2 = ఈ చర్యను రద్దు చే
 newtab-menu-section-tooltip =
     .title = మెనూని తెరువు
     .aria-label = మెనూని తెరువు
+# Tooltip for dismiss button
+newtab-dismiss-button-tooltip =
+    .title = తీసివేయి
+    .aria-label = తీసివేయి
 # This tooltip is for the context menu of Pocket cards or Topsites
 # Variables:
 #  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
@@ -80,10 +84,14 @@ newtab-menu-delete-history = చరిత్ర నుంచి తీసివ�
 newtab-menu-save-to-pocket = { -pocket-brand-name } కి సేవ్ చేయండి
 newtab-menu-delete-pocket = { -pocket-brand-name } నుండి తొలగించు
 newtab-menu-archive-pocket = { -pocket-brand-name }లో ఆర్కయివ్ చెయ్యి
+newtab-menu-show-privacy-info = మా స్పాన్సర్లు & మీ అంతరంగికత
 
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = పూర్తయింది
+newtab-privacy-modal-button-manage = ప్రాయోజిత విషయపు అమరికలను నిర్వహించండి
+newtab-privacy-modal-header = మీ అంతరంగికత ముఖ్యమైనది.
+newtab-privacy-modal-link = కొత్త ట్యాబులో అంతరంగికత ఎలా పనిచేస్తుందో తెలుసుకోండి
 
 ##
 
@@ -120,6 +128,14 @@ newtab-label-removed-bookmark = ఇష్టాంశం తొలగించ�
 newtab-label-recommended = ట్రెండింగ్
 newtab-label-saved = { -pocket-brand-name }లో భద్రపరచినది
 newtab-label-download = దింపుకున్నవి
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = { $sponsorOrSource } · ప్రాయోజితం
+# This string is used at the bottom of story cards to indicate sponsored content
+# Variables:
+#  $sponsor (String): This is the name of a sponsor
+newtab-label-sponsored-by = { $sponsor }చే ప్రాయోజితం
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
@@ -137,6 +153,10 @@ newtab-section-menu-privacy-notice = అంతరంగికత గమనిక
 
 ## Section aria-labels
 
+newtab-section-collapse-section-label =
+    .aria-label = విభాగాన్ని కుదించు
+newtab-section-expand-section-label =
+    .aria-label = విభాగాన్ని విస్తరించు
 
 ## Section Headers.
 
@@ -156,6 +176,8 @@ newtab-empty-section-topstories = మీరు పట్టుబడ్డార
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 
+newtab-discovery-empty-section-topstories-header = మీరు అన్నీ చూసేసారు!
+newtab-discovery-empty-section-topstories-content = మరిన్న కథనాల కోసం కాసేపటి తర్వాత చూడండి.
 newtab-discovery-empty-section-topstories-try-again-button = మళ్ళీ ప్రయత్నించు
 newtab-discovery-empty-section-topstories-loading = వస్తోంది…
 

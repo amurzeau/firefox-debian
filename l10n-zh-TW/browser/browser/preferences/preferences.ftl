@@ -396,7 +396,7 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = 內容處理程序數量限制
     .accesskey = L
 performance-limit-content-process-enabled-desc = 調高內容處理程序的數量，可改善開啟多個分頁時的效能，但也會使用更多記憶體。
-performance-limit-content-process-blocked-desc = 僅能在多程序的 { -brand-short-name } 當中修改內容處理程序數量。 <a data-l10n-name="learn-more">了解如何確認多程序模式是否已開啟</a>
+performance-limit-content-process-blocked-desc = 僅能在多程序的 { -brand-short-name } 當中修改內容處理程序數量。<a data-l10n-name="learn-more">了解如何確認多程序模式是否已開啟</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
@@ -787,10 +787,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = 使用主控密碼
     .accesskey = U
+forms-primary-pw-use =
+    .label = 使用主控密碼
+    .accesskey = U
+forms-primary-pw-learn-more-link = 了解更多
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = 變更主控密碼…
     .accesskey = M
 forms-master-pw-fips-title = 您目前使用 FIPS 模式。FIPS 模式需要有主控密碼。
+forms-primary-pw-change =
+    .label = 變更主控密碼…
+    .accesskey = P
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = 您目前使用 FIPS 模式。FIPS 模式需要有主控密碼。
 forms-master-pw-fips-desc = 密碼變更失敗
 
 ## OS Authentication dialog
@@ -802,6 +817,13 @@ master-password-os-auth-dialog-message-win = 請在下方輸入您的 Windows �
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = 建立主控密碼
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = 請在下方輸入您的 Windows 登入帳號密碼才能建立主控密碼。這個動作是為了保護您的登入資訊安全。
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = 建立主控密碼
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History

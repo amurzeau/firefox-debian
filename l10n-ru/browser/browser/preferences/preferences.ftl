@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = Передавать сайтам сигнал «Не отслеживать», означающий, чтобы вы не хотите быть отслеживаемыми
+do-not-track-description = Отправлять веб-сайтам сигнал «Не отслеживать», означающий, чтобы вы не хотите, чтобы вас отслеживали
 do-not-track-learn-more = Подробнее
 do-not-track-option-default-content-blocking-known =
     .label = Только когда { -brand-short-name } настроен на блокировку известных трекеров
@@ -807,10 +807,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Использовать мастер-пароль
     .accesskey = о
+forms-primary-pw-use =
+    .label = Использовать мастер-пароль
+    .accesskey = о
+forms-primary-pw-learn-more-link = Подробнее
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Сменить мастер-пароль…
     .accesskey = м
 forms-master-pw-fips-title = Вы работаете в режиме соответствия FIPS. При работе в этом режиме необходимо установить мастер-пароль.
+forms-primary-pw-change =
+    .label = Сменить мастер-пароль…
+    .accesskey = м
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Вы работаете в режиме соответствия FIPS. При работе в этом режиме необходимо установить мастер-пароль.
 forms-master-pw-fips-desc = Смена пароля не удалась
 
 ## OS Authentication dialog
@@ -822,6 +837,13 @@ master-password-os-auth-dialog-message-win = Чтобы создать маст�
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = создать мастер-пароль
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Чтобы создать мастер-пароль, введите ваши учётные данные для входа в Windows. Это поможет защитить безопасность ваших аккаунтов.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = создать мастер-пароль
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History

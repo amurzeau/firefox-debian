@@ -2,8 +2,10 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = నన్ను వెంబడించవద్దని ఆశిస్తున్నానని వెబ్‌సైట్లకు తెలిసేలా “ట్రాక్ చెయ్యవద్దు” అనే సూచనను పంపించు
+do-not-track-description = నా జాడ అనుసరించవద్దని ఆశిస్తున్నానని వెబ్‌సైట్లకు తెలిసేలా “ట్రాక్ చెయ్యవద్దు” అనే సూచనను పంపించు
 do-not-track-learn-more = ఇంకా తెలుసుకోండి
+do-not-track-option-default-content-blocking-known =
+    .label = తెలిసిన ట్రాకర్లను నిరోధించేలా { -brand-short-name } అమర్చివున్నప్పుడు మాత్రమే
 do-not-track-option-always =
     .label = ఎల్లప్పుడూ
 pref-page =
@@ -109,7 +111,7 @@ startup-header = మొదలవడం
 # { -brand-short-name } will be 'Firefox Developer Edition',
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
-    .label = { -brand-short-name }ని మరియు Firefox ని ఒకేసారి నడుపుటకు అనుమతించు
+    .label = { -brand-short-name }, Firefoxలను ఒకేసారి నడవడానికి అనుమతించు
 use-firefox-sync = చిట్కా: ఇది వేర్వేరు ప్రొఫైళ్ళను వాడుతుంది. వాటి మధ్యలో డేటాను పంచుకోడానికి { -sync-brand-short-name }ను వాడండి.
 get-started-not-logged-in = { -sync-brand-short-name } లోనికి ప్రవేశించండి…
 get-started-configured = { -sync-brand-short-name } అభిరుచులను తెరువు
@@ -191,6 +193,8 @@ advanced-fonts =
 colors-settings =
     .label = రంగులు…
     .accesskey = C
+preferences-default-zoom-value =
+    .label = { $percentage }%
 language-header = భాష
 choose-language-description = పేజీలను చూపించడానికి మీ ప్రాధాన్య భాషను ఎంచుకోండి
 choose-button =
@@ -254,6 +258,13 @@ applications-use-app =
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
     .label = { $app-name }ను వాడు (అప్రమేయం)
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] macOS అప్రమేయ అనువర్తనాన్ని వాడు
+            [windows] విండోస్ అప్రమేయ అనువర్తనాన్ని వాడు
+           *[other] వ్యవస్థలో అప్రమేయ అనువర్తనాన్ని వాడు
+        }
 applications-use-other =
     .label = వేరే వాటిని వాడు…
 applications-select-helper = సహాయక అనువర్తనాన్ని ఎన్నుకోండి
@@ -270,9 +281,15 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = { $plugin-name } వాడు ({ -brand-short-name }లో)
+applications-open-inapp =
+    .label = { -brand-short-name }‌లో తెరువు
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -284,12 +301,16 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -299,6 +320,7 @@ play-drm-content =
     .accesskey = P
 play-drm-content-learn-more = ఇంకా తెలుసుకోండి
 update-application-title = { -brand-short-name } తాజాకరణలు
+update-application-description = ఉత్తమ పనితీరు, స్థిరత్వం, భద్రతల కొరకు { -brand-short-name } తాజాగా ఉంచుకోండి.
 update-application-version = సంచిక { $version } <a data-l10n-name="learn-more">కొత్తవి ఏమిటి</a>
 update-history =
     .label = తాజాకరణ చరిత్రను చూపించు…
@@ -391,7 +413,7 @@ home-restore-defaults =
 home-mode-choice-default =
     .label = Firefox ముంగిలి (అప్రమేయం)
 home-mode-choice-custom =
-    .label = ఇష్టానుసారం URLలు...
+    .label = అభిమత URLలు…
 home-mode-choice-blank =
     .label = ఖాళీ పేజీ
 home-homepage-custom-url =
@@ -465,6 +487,9 @@ search-bar-hidden =
 search-bar-shown =
     .label = పనిముట్లపట్టీలో వెతుకుడు పెట్టెను చూపించు
 search-engine-default-header = అప్రమేయ శోధన యంత్రం
+search-separate-default-engine =
+    .label = అంతరంగిక కిటికీలలో ఈ శోధన యంత్రాన్ని వాడు
+    .accesskey = U
 search-suggestions-option =
     .label = వెతుకుడు సలహాలను చూపించు
     .accesskey = s
@@ -564,15 +589,22 @@ sync-remove-account =
 sync-sign-in =
     .label = ప్రవేశించండి
     .accesskey = g
-sync-signedin-settings-header = సింక్ అమరికలు
+sync-signedin-settings-header = Sync అమరికలు
 
 ## Sync section - enabling or disabling sync.
 
+prefs-syncing-on = సింక్రనించడం: చేతనం
+prefs-syncing-off = సింక్రనించడం: అచేతనం
+prefs-sync-now =
+    .labelnotsyncing = ఇప్పుడే సింక్రనించు
+    .accesskeynotsyncing = N
+    .labelsyncing = సింక్రనిస్తోంది…
 
 ## The list of things currently syncing.
 
 sync-currently-syncing-bookmarks = ఇష్టాంశాలు
 sync-currently-syncing-history = చరిత్ర
+sync-currently-syncing-tabs = తెరిచివున్న ట్యాబులు
 sync-currently-syncing-logins-passwords = ప్రవేశాలు, సంకేతపదాలు
 sync-currently-syncing-addresses = చిరునామాలు
 sync-currently-syncing-creditcards = క్రెడిట్ కార్డులు
@@ -672,6 +704,10 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = ప్రధాన సంకేతపదాన్ని వాడు
     .accesskey = U
+forms-primary-pw-learn-more-link = ఇంకా తెలుసుకోండి
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = ప్రధాన సంకేతపదాన్ని మార్చు…
     .accesskey = M
@@ -680,6 +716,7 @@ forms-master-pw-fips-desc = సంకేతపదం మార్పు వి�
 
 ## OS Authentication dialog
 
+master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
 
@@ -727,6 +764,9 @@ history-clear-button =
 sitedata-header = కుకీలు, సైటు డేటా
 sitedata-total-size-calculating = సైటు దత్తాంశం, కాషెల పరిమాణాన్ని లెక్కిస్తున్నాం…
 sitedata-learn-more = మరింత తెలుసుకోండి
+sitedata-delete-on-close =
+    .label = { -brand-short-name }‌ను మూసివేసినపుడు కుకీలను, సైటు డేటాను తొలగించు
+    .accesskey = c
 sitedata-allow-cookies-option =
     .label = కుకీలను, సైటు డేటాను అంగీకరించు
     .accesskey = A
@@ -762,13 +802,17 @@ addressbar-locbar-bookmarks-option =
     .label = ఇష్టాంశాలు
     .accesskey = k
 addressbar-locbar-openpage-option =
-    .label = తెరిచిన ట్యాబులు
+    .label = తెరిచివున్న ట్యాబులు
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = మేటి సైట్లు
+    .accesskey = T
 addressbar-suggestions-settings = సెర్చింజను సూచనల అభిరుచులను మార్చండి
 
 ## Privacy Section - Content Blocking
 
 content-blocking-header = విషయ నిరోధం
+content-blocking-enhanced-tracking-protection = మెరుగైన ట్రాకింగ్ సంరక్షణ
 content-blocking-learn-more = ఇంకా తెలుసుకోండి
 # The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
 # "Standard" in this case is an adjective, meaning "default" or "normal".
@@ -952,8 +996,16 @@ space-alert-under-5gb-ok-button =
     .label = సరే, అర్థమయ్యింది
     .accesskey = K
 
+## Privacy Section - HTTPS-Only
+
+httpsonly-learn-more = ఇంకా తెలుసుకోండి
+
 ## The following strings are used in the Download section of settings
 
 desktop-folder-name = డెస్కుటాప్
 downloads-folder-name = దింపుకోళ్ళు
 choose-download-folder-title = దింపుకోళ్ళ సంచయాన్ని తెరువు:
+# Variables:
+#   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...
+save-files-to-cloud-storage =
+    .label = దస్త్రాలను { $service-name }‌లో భద్రపరుచు

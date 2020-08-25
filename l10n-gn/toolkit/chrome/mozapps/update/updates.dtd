@@ -8,11 +8,11 @@
 
 <!ENTITY  noupdatesfound.title            "Ndojejuhúi ñembohekopyahu">
 <!ENTITY  noupdatesautoenabled.intro      "Ndaipóri ñembohekopyahu ojepurukuaáva. &brandShortName; ohechajeýta tapiaite  oĩpa ñembohekopyahu.">
-<!ENTITY  noupdatesautodisabled.intro     "Ndaipóri ñembohekopyahu ojepurukuaáva. Eha'ãjey ag̃amieve térã  emyandy pe votõ ñembohekopyahu ijeheguíva &brandShortName; mba'éva.">
+<!ENTITY  noupdatesautodisabled.intro     "Ndaipóri ñembohekopyahu ojepurukuaáva. Eha’ãjey ag̃amieve térã  emyandy pe votõ ñembohekopyahu ijeheguíva &brandShortName; mba’éva.">
 
 <!ENTITY  manualUpdate.title              "Ndaikatúi embohekopyahu">
 <!ENTITY  manualUpdate.desc               "Oĩ ñembohekopyahu eipurukuaáva hekorosã ha hekopytáva, hákatu ndereguerekói apopyvusu ñemoneĩ tekotevẽva emboguejy hag̃ua. Eñe’ẽ apopyvusu ñangakohára ndive, térã eha’ãjey nemba’etee guive oguerekóva ñemoneĩ omboguejy hag̃ua software ko mohendahápe.">
-<!ENTITY  manualUpdate.space.desc         "Oĩ ñembohekopyahu eipurukuaáva hekorosã ha hekopytáva, hákatu ndereguerekói pa'ũeta omboguejy hag̃ua.">
+<!ENTITY  manualUpdate.space.desc         "Oĩ ñembohekopyahu eipurukuaáva hekorosã ha hekopytáva, hákatu ndereguerekói pa’ũeta omboguejy hag̃ua.">
 <!ENTITY  manualUpdateGetMsg.label        "Tapiaite ikatu ejuhu ipyahuvéva &brandShortName; amo:">
 
 <!ENTITY  unsupported.title               "Apopyvusu ndojokupytýiva">
@@ -21,16 +21,17 @@
 
 <!ENTITY  clickHere.label                 "Ehechave marandu ko ñembohekopyahu rehegua">
 
-<!ENTITY  evangelism.desc                 "Ojejerure ndéve eipurumi hag̃ua ko ñembohekopyahu &brandShortName;-pe g̃uarã pya'emínte voi.">
+<!ENTITY  evangelism.desc                 "Ojejerure ndéve eipurumi hag̃ua ko
+                                           ñembohekopyahu &brandShortName; peg̃uarã pya’emínte voi.">
 
 <!ENTITY  downloadPage.title              "Omboguejyhína &brandShortName;">
 <!ENTITY  downloading.intro               "Oñemboguejyhína ñembohekopyahu…">
 <!ENTITY  connecting.label                "Oikehína ñembohekopyahu mohendahavusúpe…">
-<!ENTITY  verificationFailedText.label    "&brandShortName; ndaikatúi ohechajeype mba'etépa pe ñembohekopyahu okakuaáva mboguepyre, pe ko'ág̃a omboguejýva pe ñembohekopyahu apu'a opámava.">
+<!ENTITY  verificationFailedText.label    "&brandShortName; ndaikatúi ohechajeype mba’etépa pe ñembohekopyahu okakuaáva mboguepyre, pe ko’ág̃a omboguejýva pe ñembohekopyahu apu’a opámava.">
 
-<!ENTITY  viewDetails.tooltip             "Ko ñembohekopyahu mba'emimi jehecha">
+<!ENTITY  viewDetails.tooltip             "Ko ñembohekopyahu mba’emimi jehecha">
 
-<!ENTITY  details.link                    "Mba'emimi">
+<!ENTITY  details.link                    "Mba’emimi">
 
 <!ENTITY  error.title                     "Ñembohekopyahu ojavýva">
 
@@ -38,17 +39,20 @@
                                            
 <!ENTITY  errorManual.label               "Ikatu embohekopyahu &brandShortName; po rupive eikévo ko juajuhápe ha embojoajúvo:">
                                            
-<!ENTITY  errorpatching.intro             "Ndaikatúi eipuru ñembohekopyahu pehẽva. &brandShortName; oha'ãta jeýta omboguejývo ñembohekopyahu henyhẽva.">
+<!ENTITY  errorpatching.intro             "Ndaikatúi eipuru ñembohekopyahu pehẽva. &brandShortName; oha’ãta jeýta omboguejývo ñembohekopyahu henyhẽva.">
 
-<!ENTITY  genericBackgroundError.label    "&brandShortName; ndaikatúi he'i oĩha peteĩ ñembohekopyahu eipurukuaáva. Ehechajeýke eguerekópa &brandShortName; ipyahuetéva pe:">
+<!ENTITY  genericBackgroundError.label    "&brandShortName; ndaikatúi he’i oĩha peteĩ ñembohekopyahu eipurukuaáva. Ehechajeýke eguerekópa &brandShortName; ipyahuetéva pe:">
                                            
 <!ENTITY  finishedPage.title              "Ñembohekopyahu oĩmbáva emohenda hag̃ua">
-<!ENTITY  finishedPage.text               "Pe ñembohekopyahu oñemohendáta emoñepyrũjey vove &brandShortName;. Ikatu emoñepyrũjey &brandShortName; ko'ag̃aite, térã emba'apove ha emoñepyrũjey ag̃amieve.">
+<!ENTITY  finishedPage.text               "Pe ñembohekopyahu oñemohendáta emoñepyrũjey vove &brandShortName;. Ikatu emoñepyrũjey &brandShortName; ko’ag̃aite, térã emba’apove ha emoñepyrũjey ag̃amieve.">
 
 <!ENTITY  finishedBackgroundPage.text     "Oñemboguejýma peteĩ ñembohekopyahu hekorosã ha hekopytáva &brandShortName;-pe g̃uarã ha ikatúntema emboguejy.">
 <!ENTITY  finishedBackground.name         "Ñembohekopyahu:">
 <!-- LOCALIZATION NOTE (finishedBackground.more): This string describes the button labels defined by restartNowButton and restartLaterButton in updates.properties. -->
-<!ENTITY  finishedBackground.more         "Pe ñembohekopyahu oñemohendáta emoñepyrũjey vove &brandShortName;. Ikatu emoñepyrũjey &brandShortName; ko'ag̃aite, térã emba'apove ha emoñepyrũjey ag̃amieve.">
+<!ENTITY  finishedBackground.more         "Pe ñembohekopyahu oñemohendáta emoñepyrũjey vove &brandShortName;. Ikatu emoñepyrũjey &brandShortName; ko’ag̃aite, térã emba’apove ha emoñepyrũjey ag̃amieve.">
 <!-- LOCALIZATION NOTE (finishedBackground.more): This string describes the button labels defined by restartNowButton and restartLaterButton in updates.properties. -->
-<!ENTITY  finishedBackground.moreElevated "Ko ñembohekopyahu oikotevẽ ñangarekohára ma'ẽ tapia rehe. Ñembohekopyahu oñemohendáta &brandShortName; oñepyrũ vove. Ikatu oñepyrũ jey &brandShortName; ko'ág̃a, emba'apo jey ha emoñepyrũ jey ag̃amieve térã emboykete ko ñembohekopyahu.">
+<!ENTITY  finishedBackground.moreElevated "Ko ñembohekopyahu oikotevẽ ñangarekohára ñema’ẽ tapia rehe.
+                                           Ñembohekopyahu oñemohendáta &brandShortName; oñepyrũ vove. Ikatu oñepyrũ jey
+                                           &brandShortName; ko’ág̃a, emba’apojey ha emoñepyrũ jey ag̃amieve térã emboykete
+                                           ko ñembohekopyahu.">
 

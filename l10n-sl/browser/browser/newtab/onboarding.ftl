@@ -19,9 +19,6 @@ onboarding-button-label-get-started = Začni
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = Dobrodošli v { -brand-short-name }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Dobrodošli v <span data-l10n-name="zap">{ -brand-short-name }u</span>
 onboarding-welcome-body = Brskalnik že imate.<br/>Spoznajte še ostale storitve { -brand-product-name }.
 onboarding-welcome-learn-more = Spoznajte prednosti.
 onboarding-join-form-header = Pridružite se { -brand-product-name }u
@@ -44,16 +41,75 @@ onboarding-start-browsing-button-label = Začnite z brskanjem
 onboarding-cards-dismiss =
     .title = Opusti
     .aria-label = Opusti
-# Tooltip displayed on hover of top sites in import settings screen during onboarding flow.
-# This support welcome screen showing top sites imported from the user's default browser.
-# Title text is kept multiline to ensure tooltip container width is not more than 40 characters.
-onboarding-import-sites-info =
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Dobrodošli v <span data-l10n-name="zap">{ -brand-short-name }u</span>
+onboarding-multistage-welcome-subtitle = Hiter, varen in zaseben brskalnik, ki ga podpira neprofitna organizacija.
+onboarding-multistage-welcome-primary-button-label = Začni nastavitev
+onboarding-multistage-welcome-secondary-button-label = Prijava
+onboarding-multistage-welcome-secondary-button-text = Imate račun?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Uvozite svoja gesla, zaznamke in <span data-l10n-name="zap">drugo</span>
+onboarding-multistage-import-subtitle = Prihajate iz drugega brskalnika? Z lahkoto lahko vse prenesete v { -brand-short-name }.
+onboarding-multistage-import-primary-button-label = Začni uvoz
+onboarding-multistage-import-secondary-button-label = Ne zdaj
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Ta spletna mesta so bila najdena na tej napravi. { -brand-short-name } ne shranjuje ali sinhronizira podatkov iz drugih brskalnikov, razen če se odločite, da jih uvozite.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Prvi koraki: zaslon { $current } od { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Izberite <span data-l10n-name="zap">videz</span>
+onboarding-multistage-theme-subtitle = Prilagodite svoj { -brand-short-name } s temo.
+onboarding-multistage-theme-primary-button-label = Shrani temo
+onboarding-multistage-theme-secondary-button-label = Ne zdaj
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Samodejno
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = Uporabi sistemsko temo
+onboarding-multistage-theme-label-light = Svetla
+onboarding-multistage-theme-label-dark = Temna
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
     .title =
-        Ta spletna mesta so bila najdena v tej napravi.
-        { -brand-short-name } ne shranjuje ali sinhronizira podatkov iz
-        drugih brskalnikov razen, če se odločite, da
-        jih uvozite.
-    .aria-label = 	{ onboarding-import-sites-info.title }
+        Uporabi videz gumbov, menijev in oken
+        operacijskega sistema.
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        Uporabi svetel videz gumbov,
+        menijev in oken.
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        Uporabi temen videz gumbov,
+        menijev in oken.
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title =
+        Uporabi barvit videz gumbov,
+        menijev in oken.
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
 
 ## Welcome full page string
 

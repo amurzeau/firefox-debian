@@ -50,8 +50,24 @@ inactive-css-not-flex-item-fix = Eñeha’ã embojuaju <strong>display:grid</str
 inactive-css-not-flex-item-fix-2 = Embojuaju <strong>display:flex</strong> térã <strong>display:inline-flex</strong> mba’epuru rúpe. { learn-more }
 inactive-css-not-flex-container-fix = Eñeha’ã embojuaju <strong>display:flex</strong> térã <strong>display:inline-flex</strong>. { learn-more }
 inactive-css-not-inline-or-tablecell-fix = Eñeha’ã embojuaju <strong>display:inline</strong> térã <strong>display:table-cell</strong>. { learn-more }
-inactive-css-non-replaced-inline-or-table-row-or-row-group-fix = Eñaha'ã embojuaju <strong>display:inline-block</strong> térã <strong>display:block</strong>. { learn-more }
-inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Eñeha'ã embojuaju <strong>display:inline-block</strong>. { learn-more }
+inactive-css-non-replaced-inline-or-table-row-or-row-group-fix = Eñaha’ã embojuaju <strong>display:inline-block</strong> térã <strong>display:block</strong>. { learn-more }
+inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Eñeha’ã embojuaju <strong>display:inline-block</strong>. { learn-more }
 inactive-css-not-display-block-on-floated-fix = Embogue <strong>vevúiva</strong> térã embojuaju <strong>display:block</strong>. { learn-more }
 inactive-css-position-property-on-unpositioned-box-fix = Eñeha’ã emboheko <strong>rendatee</strong> mba’éva tuichavéva <strong>opytáva</strong>. { learn-more }
-inactive-text-overflow-when-no-overflow-fix = Eñeha'ã embojuaju <strong>overflow:hidden</strong>. { learn-more }
+inactive-text-overflow-when-no-overflow-fix = Eñeha’ã embojuaju <strong>overflow:hidden</strong>. { learn-more }
+
+## In the Rule View when a CSS property may have compatibility issues with other browsers
+## we display an icon. When this icon is hovered this message is displayed to explain why
+## the property is incompatible and the platforms it is incompatible on.
+## Variables:
+##   $property (string) - A CSS declaration name e.g. "-moz-user-select" that can be a platform specific alias.
+##   $rootProperty (string) - A raw CSS property name e.g. "user-select" that is not a platform specific alias.
+
+css-compatibility-default-message = <strong>{ $property }</strong> ndorekói pytyvõ ko’ã kundahárape:
+css-compatibility-deprecated-experimental-message = <strong>{ $property }</strong> ha’e peteĩ mba’etee ipyahúva ha ko’ág̃a ndoikovéima pe W3C he’iháicha. Ndojokupytýi ko’ã kundahára ndive:
+css-compatibility-deprecated-experimental-supported-message = <strong>{ $property }</strong> ha’e peteĩ mba’etee ipyahúva ha ko’ág̃a ndoikovéima pe W3C he’iháicha.
+css-compatibility-deprecated-message = <strong>{ $property }</strong> ha’e peteĩ mba’etee ipyahúva ha ko’ág̃a ndoikovéima pe W3C he’iháicha. Ndojokupytýi ko’ã kundahára ndive:
+css-compatibility-deprecated-supported-message = <strong>{ $property }</strong> ndoikovéima pe W3C he’iháicha.
+css-compatibility-experimental-message = <strong>{ $property }</strong> ha’e peteĩ mba’etee ipyahúva. Ndorekói ñepytyvõ ko’ã kundahárape:
+css-compatibility-experimental-supported-message = <strong>{ $property }</strong> ha’e peteĩ mba’etee ipyahúva.
+css-compatibility-learn-more-message = <span data-l10n-name="link">Eikuaave</span> rehegua <strong>{ $rootProperty }</strong>

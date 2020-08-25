@@ -19,9 +19,6 @@ onboarding-button-label-get-started = Пачаць
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = Вітаем у { -brand-short-name }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Вітаем у <span data-l10n-name="zap">{ -brand-short-name }</span>
 onboarding-welcome-body = У вас ёсць браўзер. <br/>Пазнаёмцеся з астатнімі { -brand-product-name }.
 onboarding-welcome-learn-more = Даведацца больш аб перавагах.
 onboarding-join-form-header = Далучыцца да { -brand-product-name }
@@ -44,16 +41,79 @@ onboarding-start-browsing-button-label = Пачаць агляданне
 onboarding-cards-dismiss =
     .title = Адхіліць
     .aria-label = Адхіліць
-# Tooltip displayed on hover of top sites in import settings screen during onboarding flow.
-# This support welcome screen showing top sites imported from the user's default browser.
-# Title text is kept multiline to ensure tooltip container width is not more than 40 characters.
-onboarding-import-sites-info =
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Вітаем у <span data-l10n-name="zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = Хуткі, бяспечны і прыватны браўзер, які падтрымліваецца некамерцыйнай арганізацыяй.
+onboarding-multistage-welcome-primary-button-label = Пачаць наладу
+onboarding-multistage-welcome-secondary-button-label = Увайсці
+onboarding-multistage-welcome-secondary-button-text = Маеце ўліковы запіс?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Імпартуйце свае паролі, <br/>закладкі і <span data-l10n-name="zap">іншае</span>
+onboarding-multistage-import-subtitle = Пераходзіце з іншага браўзера? Перанесці ўсё ў { -brand-short-name } проста.
+onboarding-multistage-import-primary-button-label = Пачаць імпарт
+onboarding-multistage-import-secondary-button-label = Не зараз
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer =
+    Пералічаныя тут сайты былі знойдзены на гэтай прыладзе.
+    { -brand-short-name } не захоўвае і не сінхранізуе дадзеныя
+    з іншага браўзера, калі вы не выбралі
+    імпартаваць іх.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Пачатак працы: экран { $current } з { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Выберыце <span data-l10n-name="zap">выгляд</span>
+onboarding-multistage-theme-subtitle = Персаналізуйце { -brand-short-name } тэмамі.
+onboarding-multistage-theme-primary-button-label = Захаваць тэму
+onboarding-multistage-theme-secondary-button-label = Не зараз
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Аўтаматычна
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = Выкарыстоўваць сістэмную тэму
+onboarding-multistage-theme-label-light = Светлая
+onboarding-multistage-theme-label-dark = Цёмная
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
     .title =
-        Гэтыя сайты былі знойдзены на гэтай прыладзе.
-        { -brand-short-name } не захоўвае і не сінхранізуе дадзеныя
-        з іншага браўзера, калі вы не выбралі
-        імпартаваць іх.
-    .aria-label = { onboarding-import-sites-info.title }
+        Наследаваць выгляд вашай аперацыйнай
+        сістэмы для кнопак, меню і вокнаў.
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        Выкарыстоўваць светлы выгляд
+        для кнопак, меню і вокнаў.
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        Выкарыстоўваць цёмны выгляд
+        для кнопак, меню і вокнаў.
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title =
+        Выкарыстоўваць каляровы выгляд
+        для кнопак, меню і вокнаў.
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
 
 ## Welcome full page string
 

@@ -42,6 +42,75 @@ onboarding-cards-dismiss =
     .title = ยกเลิก
     .aria-label = ยกเลิก
 
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = ยินดีต้อนรับสู่ <span data-l10n-name="zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = เบราว์เซอร์ที่รวดเร็ว ปลอดภัย และเป็นส่วนตัวที่ได้รับการสนับสนุนโดยองค์กรไม่แสวงหาผลกำไร
+onboarding-multistage-welcome-primary-button-label = เริ่มการตั้งค่า
+onboarding-multistage-welcome-secondary-button-label = ลงชื่อเข้า
+onboarding-multistage-welcome-secondary-button-text = มีบัญชีแล้วหรือไม่?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = นำเข้ารหัสผ่าน <br/>ที่คั่นหน้า และ<span data-l10n-name="zap">อื่น ๆ</span>
+onboarding-multistage-import-subtitle = มาจากเบราว์เซอร์อื่นหรือไม่? คุณสามารถนำทุกอย่างมาสู่ { -brand-short-name } ได้ง่าย ๆ
+onboarding-multistage-import-primary-button-label = เริ่มการนำเข้า
+onboarding-multistage-import-secondary-button-label = ไม่ใช่ตอนนี้
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = ไซต์ที่แสดงที่นี่ถูกพบบนอุปกรณ์นี้ { -brand-short-name } จะไม่บันทึกหรือซิงค์ข้อมูลจากเบราว์เซอร์อื่นเว้นแต่คุณจะเลือกนำเข้า
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = เริ่มต้นใช้งาน: หน้าจอ { $current } จาก { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = เลือก<span data-l10n-name="zap">รูปลักษณ์</span>
+onboarding-multistage-theme-subtitle = ปรับแต่ง { -brand-short-name } ด้วยชุดตกแต่ง
+onboarding-multistage-theme-primary-button-label = บันทึกชุดตกแต่ง
+onboarding-multistage-theme-secondary-button-label = ไม่ใช่ตอนนี้
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = อัตโนมัติ
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = ใช้ชุดตกแต่งระบบ
+onboarding-multistage-theme-label-light = สว่าง
+onboarding-multistage-theme-label-dark = มืด
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
+    .title =
+        สืบทอดรูปลักษณ์ของระบบปฏิบัติการของคุณ
+        สำหรับปุ่ม เมนู และหน้าต่าง
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        ใช้ลักษณะที่ปรากฏแบบสีอ่อนสำหรับปุ่ม
+        เมนู และหน้าต่าง
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        ใช้ลักษณะที่ปรากฏแบบสีเข้มสำหรับปุ่ม
+        เมนู และหน้าต่าง
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title =
+        ใช้ลักษณะที่ปรากฏแบบสีสันสำหรับปุ่ม
+        เมนู และหน้าต่าง
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+
 ## Welcome full page string
 
 onboarding-fullpage-welcome-subheader = มาเริ่มสำรวจทุกอย่างที่คุณทำได้กัน

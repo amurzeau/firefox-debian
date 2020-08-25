@@ -34,7 +34,7 @@ search-input-box =
             [windows] 설정에서 찾기
            *[other] 설정에서 찾기
         }
-managed-notice = 사용자의 브라우저는 회사나 단체에서 관리하고 있습니다.
+managed-notice = 조직에서 브라우저를 관리하고 있습니다.
 pane-general-title = 일반
 category-general =
     .tooltiptext = { pane-general-title }
@@ -65,7 +65,7 @@ close-button =
 
 ## Browser Restart Dialog
 
-feature-enable-requires-restart = 이 기능을 켜려면 { -brand-short-name }를 반드시 다시 시작해야 합니다.
+feature-enable-requires-restart = 이 기능을 사용하려면 { -brand-short-name }를 반드시 다시 시작해야 합니다.
 feature-disable-requires-restart = 이 기능을 끄려면 { -brand-short-name }를 반드시 다시 시작해야 합니다.
 should-restart-title = { -brand-short-name } 다시 시작
 should-restart-ok = 지금 { -brand-short-name } 다시 시작
@@ -96,7 +96,7 @@ extension-controlled-web-notifications = <img data-l10n-name="icon"/> { $name } 
 extension-controlled-default-search = <img data-l10n-name="icon"/> { $name } 확장 기능이 기본 검색 엔진을 설정했습니다.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } 확장 기능에는 컨테이너 탭이 필요합니다.
+extension-controlled-privacy-containers = <img data-l10n-name="icon"/> { $name } 확장 기능은 컨테이너 탭이 필요합니다.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = <img data-l10n-name="icon"/> { $name } 확장 기능이 이 설정을 제어하고 있습니다.
@@ -166,7 +166,7 @@ show-tabs-in-taskbar =
     .label = Windows 작업 표시줄에 탭 미리 보기 표시
     .accesskey = k
 browser-containers-enabled =
-    .label = 컨테이너 탭 활성화
+    .label = 컨테이너 탭 사용
     .accesskey = n
 browser-containers-learn-more = 더 알아보기
 browser-containers-settings =
@@ -263,7 +263,7 @@ applications-type-column =
     .label = 콘텐츠 유형
     .accesskey = T
 applications-action-column =
-    .label = 실행
+    .label = 동작
     .accesskey = A
 # Variables:
 #   $extension (String) - file extension (e.g .TXT)
@@ -748,7 +748,7 @@ sync-connect-another-device = 다른 기기 연결
 sync-manage-devices = 기기 관리
 sync-fxa-begin-pairing = 기기 연결하기
 sync-tos-link = 서비스 약관
-sync-fxa-privacy-notice = 개인 정보 보호 정책
+sync-fxa-privacy-notice = 개인정보처리방침
 
 ## Privacy Section
 
@@ -785,23 +785,45 @@ forms-saved-logins =
     .label = 저장된 로그인…
     .accesskey = L
 forms-master-pw-use =
-    .label = 마스터 비밀번호 사용
+    .label = 기본 비밀번호 사용
     .accesskey = U
+forms-primary-pw-use =
+    .label = 기본 비밀번호 사용
+    .accesskey = U
+forms-primary-pw-learn-more-link = 더 알아보기
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
-    .label = 마스터 비밀번호 변경…
+    .label = 기본 비밀번호 변경…
     .accesskey = M
-forms-master-pw-fips-title = 현재 FIPS 모드입니다. FIPS는 마스터 비밀번호가 설정되어야 합니다.
+forms-master-pw-fips-title = 현재 FIPS 모드입니다. FIPS는 기본 비밀번호가 설정되어야 합니다.
+forms-primary-pw-change =
+    .label = 기본 비밀번호 변경…
+    .accesskey = P
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = 현재 FIPS 모드입니다. FIPS는 기본 비밀번호가 설정되어야 합니다.
 forms-master-pw-fips-desc = 비밀번호 변경 실패
 
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = 마스터 비밀번호를 만들려면, Windows 로그인 자격 증명을 입력하세요. 이는 계정의 보안을 보호하는데 도움이 됩니다.
+master-password-os-auth-dialog-message-win = 기본 비밀번호를 만들려면, Windows 로그인 자격 증명을 입력하세요. 이는 계정의 보안을 보호하는데 도움이 됩니다.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = 마스터 비밀번호 만들기
+master-password-os-auth-dialog-message-macosx = 기본 비밀번호 만들기
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = 기본 비밀번호를 만들려면, Windows 로그인 자격 증명을 입력하세요. 이는 계정의 보안을 보호하는데 도움이 됩니다.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = 기본 비밀번호 만들기
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -1068,7 +1090,7 @@ permissions-a11y-privacy-link = 더 알아보기
 
 collection-header = { -brand-short-name } 데이터 수집과 사용
 collection-description = { -brand-short-name }를 모두를 위해 제공하고 개선하기 위해서 필요한 것만 수집하고 선택권을 제공하기 위해 노력합니다. 개인 정보를 전송하기 전에 항상 허가여부를 묻습니다.
-collection-privacy-notice = 개인 정보 안내
+collection-privacy-notice = 개인정보처리방침
 collection-health-report-telemetry-disabled = { -vendor-short-name }에서 더 이상 기술 및 상호 작용 데이터를 캡처할 수 없습니다. 모든 과거 데이터는 30일 이내에 삭제됩니다.
 collection-health-report-telemetry-disabled-link = 더 알아보기
 collection-health-report =
@@ -1124,7 +1146,7 @@ certs-view =
     .label = 인증서 보기…
     .accesskey = C
 certs-devices =
-    .label = 보안 기기…
+    .label = 보안 장치…
     .accesskey = D
 space-alert-learn-more-button =
     .label = 더 알아보기

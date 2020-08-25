@@ -16,9 +16,11 @@ include('../defs.mozbuild')
 include('sources.mozbuild')
 
 HOST_SOURCES += sources
+HOST_SOURCES += [
+    '/intl/icu/source/stubdata/stubdata.cpp',
+]
 
 HOST_USE_LIBS += [
-    'host_icudata',
     'host_icui18n',
     'host_icutoolutil',
     'host_icuuc',
