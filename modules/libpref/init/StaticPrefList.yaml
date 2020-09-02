@@ -1087,11 +1087,6 @@
   value: "#551A8B"
   mirror: never
 
-- name: browser.find.anonymous_content.enabled
-  type: bool
-  value: true
-  mirror: always
-
 #---------------------------------------------------------------------------
 # Prefs starting with "canvas."
 #---------------------------------------------------------------------------
@@ -1758,9 +1753,10 @@
 # <img loading="lazy">
 #
 # See https://github.com/whatwg/html/pull/3752
+# Disabled due to bug 1648064.
 - name: dom.image-lazy-loading.enabled
   type: RelaxedAtomicBool
-  value: true
+  value: false
   mirror: always
 
 # The root margin for image lazy loading, defined as four (value, percentage)
@@ -2306,6 +2302,13 @@
     value: true
     mirror: always
     do_not_use_directly: true
+
+  # Preference that is used to enable the hack for overrriding xFullPathname in
+  # TelemetryVFS.
+-   name: dom.quotaManager.overrideXFullPathname
+    type: RelaxedAtomicBool
+    value: true
+    mirror: always
 #endif
 
 # Reporting API.
@@ -8111,6 +8114,12 @@
   value: true
   mirror: always
 
+# Whether we always print silently (without a print dialog).
+- name: print.always_print_silent
+  type: RelaxedAtomicBool
+  value: false
+  mirror: always
+
 #---------------------------------------------------------------------------
 # Prefs starting with "privacy."
 #---------------------------------------------------------------------------
@@ -8590,6 +8599,12 @@
 - name: security.view-source.reachable-from-inner-protocol
   type: bool
   value: false
+  mirror: always
+
+# Pref to show warning when submitting from secure to insecure.
+- name: security.warn_submit_secure_to_insecure
+  type: bool
+  value: true
   mirror: always
 
 # Hardware Origin-bound Second Factor Support
