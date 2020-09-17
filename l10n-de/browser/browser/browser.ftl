@@ -318,8 +318,38 @@ enable-devtools-popup-description = Um die F12-Tastenkkombination einzusetzen, m
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Suche oder Adresse eingeben
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Suche oder Adresse eingeben
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Das Web durchsuchen
+    .aria-label = Mit { $name } suchen
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Suchbegriffe eingeben
+    .aria-label = { $name } durchsuchen
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Suchbegriffe eingeben
+    .aria-label = Lesezeichen durchsuchen
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Suchbegriffe eingeben
+    .aria-label = Verlauf durchsuchen
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Suchbegriffe eingeben
+    .aria-label = Tabs durchsuchen
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

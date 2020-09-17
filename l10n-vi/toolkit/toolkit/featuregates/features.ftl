@@ -4,23 +4,9 @@
 
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-css-masonry =
-    .label = CSS Masonry Layout
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
 experimental-features-css-masonry2 =
     .label = CSS: Masonry Layout
 experimental-features-css-masonry-description = Cho phép hỗ trợ cho tính năng thử nghiệm CSS Masonry Layout. Xem <a data-l10n-name="explainer">giải thích</a> để biết mô tả cấp cao về tính năng. Để cung cấp phản hồi, vui lòng nhận xét trong <a data-l10n-name="w3c-su">GitHub issue này</a> hoặc <a data-l10n-name="bug">báo cáo lỗi này</a>.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-gpu =
-    .label = WebGPU
-experimental-features-web-gpu-description = API thử nghiệm cho đồ họa và máy tính trên web
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-avif =
-    .label = AVIF
-experimental-features-avif-description = Hỗ trợ thử nghiệm cho AVIF: Định dạng tập tin hình ảnh AV1
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
@@ -89,7 +75,7 @@ experimental-features-abouthome-startup-cache =
     .label = Bộ nhớ đệm tự chạy của about:home
 experimental-features-abouthome-startup-cache-description = Một bộ nhớ đệm cho tài liệu about:home được tải theo mặc định khi khởi động. Mục đích của bộ nhớ đệm là cải thiện hiệu suất khởi động.
 experimental-features-print-preview-tab-modal =
-    .label = Thiết kế lại bản xem trước khi in
+    .label = Thiết kế lại bản xem trước trang in
 experimental-features-print-preview-tab-modal-description = Giới thiệu bản xem trước bản in được thiết kế lại và cung cấp bản xem trước bản in trên macOS. Điều này có khả năng gây ra vỡ và không bao gồm tất cả các cài đặt liên quan đến in. Để truy cập tất cả các cài đặt liên quan đến in, hãy chọn “In bằng hộp thoại hệ thống…” từ trong bảng In.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.

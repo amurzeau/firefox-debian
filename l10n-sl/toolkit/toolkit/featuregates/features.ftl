@@ -4,13 +4,13 @@
 
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-css-masonry =
-    .label = CSS Masonry Layout
+experimental-features-css-masonry2 =
+    .label = CSS: Masonry Layout
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-web-gpu =
-    .label = WebGPU
+experimental-features-css-focus-visible =
+    .label = CSS: Pseudo-class: :focus-visible
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-avif =
-    .label = AVIF
+experimental-features-css-constructable-stylesheets =
+    .label = CSS: Constructable Stylesheets

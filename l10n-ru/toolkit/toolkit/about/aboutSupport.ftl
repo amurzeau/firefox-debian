@@ -77,6 +77,9 @@ show-dir-label =
         [windows] Открыть папку
        *[other] Открыть каталог
     }
+environment-variables-title = Переменные среды
+environment-variables-name = Имя
+environment-variables-value = Значение
 experimental-features-title = Экспериментальные возможности
 experimental-features-name = Название
 experimental-features-value = Значение
@@ -104,8 +107,6 @@ graphics-desktop-environment = Среда рабочего стола
 place-database-title = База данных Places
 place-database-integrity = Целостность
 place-database-verify-integrity = Проверить целостность
-js-title = JavaScript
-js-incremental-gc = Инкрементальный GC
 a11y-title = Поддержка доступности
 a11y-activated = Активирована
 a11y-force-disabled = Отключение поддержки доступности
@@ -135,7 +136,6 @@ restart-button-label = Перезапустить
 
 audio-backend = Звуковая подсистема
 max-audio-channels = Максимальное число каналов
-channel-layout = Предпочтительный формат каналов
 sample-rate = Предпочтительная частота дискретизации
 roundtrip-latency = Круговая задержка (стандартное отклонение)
 media-title = Медиа
@@ -284,7 +284,6 @@ support-blocklisted-bug = Занесено в чёрный список из-з�
 unknown-failure = Заблокировано; код ошибки { $failureCode }
 d3d11layers-crash-guard = Композитор D3D11
 d3d11video-crash-guard = Видеодекодер D3D11
-d3d9video-crash-buard = Видеодекодер D3D9
 d3d9video-crash-guard = Видеодекодер D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Видеодекодер WMF VPX

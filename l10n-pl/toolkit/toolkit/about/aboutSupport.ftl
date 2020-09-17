@@ -81,6 +81,9 @@ show-dir-label =
         [windows] Otwórz folder
        *[other] Otwórz katalog
     }
+environment-variables-title = Zmienne środowiskowe
+environment-variables-name = Nazwa
+environment-variables-value = Wartość
 experimental-features-title = Funkcje eksperymentalne
 experimental-features-name = Nazwa
 experimental-features-value = Wartość
@@ -108,8 +111,6 @@ graphics-desktop-environment = Środowisko pulpitu
 place-database-title = Baza danych „Places”
 place-database-integrity = Integralność
 place-database-verify-integrity = Sprawdź integralność
-js-title = JavaScript
-js-incremental-gc = Przyrostowy GC
 a11y-title = Ułatwienia dostępu
 a11y-activated = Aktywne
 a11y-force-disabled = Zablokuj ułatwienia dostępu
@@ -139,7 +140,6 @@ restart-button-label = Uruchom ponownie
 
 audio-backend = Mechanizm dźwięku
 max-audio-channels = Maksymalna liczba kanałów
-channel-layout = Preferowany układ kanałów
 sample-rate = Preferowana częstotliwość próbkowania
 roundtrip-latency = Opóźnienie w obie strony (odchylenie standardowe)
 media-title = Media
@@ -288,7 +288,6 @@ support-blocklisted-bug = Zablokowano z powodu znanych problemów: <a data-l10n
 unknown-failure = Zablokowano. Kod błędu: { $failureCode }
 d3d11layers-crash-guard = Kompozytor D3D11
 d3d11video-crash-guard = Dekoder wideo D3D11
-d3d9video-crash-buard = Dekoder wideo D3D9
 d3d9video-crash-guard = Dekoder wideo D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Dekoder wideo WMF VPX

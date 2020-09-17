@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Només si el { -brand-short-name } està configurat per blocar els elements de seguiment coneguts
 do-not-track-option-always =
     .label = Sempre
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Opcions
-           *[other] Preferències
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Opcions
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = L'extensió «<img data-l10n-name="icon
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = L'extensió «<img data-l10n-name="icon"/> { $name }» controla la vostra pàgina de pestanya nova.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Una extensió, <img data-l10n-name="icon"/> { $name }, controla aquest paràmetre.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Una extensió, <img data-l10n-name="icon"/> { $name }, controla aquest paràmetre.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Aquest paràmetre s'aplicarà a 
 update-application-use-service =
     .label = Instal·la les actualitzacions en segon pla
     .accesskey = s
-update-enable-search-update =
-    .label = Actualitza automàticament els motors de cerca
-    .accesskey = e
-update-pref-write-failure-title = Error d'escriptura
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = No s'ha pogut desar la preferència. No s'ha pogut escriure al fitxer: { $path }
 update-setting-write-failure-title = Error en desar les preferències d'actualització
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Afegeix la barra de cerca a la barra d'eines
 search-engine-default-header = Motor de cerca per defecte
-search-engine-default-desc = Trieu el motor de cerca per defecte que s'utilitzarà en la barra d'adreces i de cerca.
 search-engine-default-desc-2 = Aquest és el motor de cerca per defecte en la barra d’adreces i en la barra de cerca. Podeu canviar-lo en qualsevol moment.
 search-engine-default-private-desc-2 = Trieu un altre motor de cerca per defecte només per a les finestres privades
 search-separate-default-engine =
@@ -593,7 +582,6 @@ search-keyword-warning-bookmark = Heu triat una paraula clau que ja utilitza una
 
 ## Containers Section
 
-containers-back-link = « Torna
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +600,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Elimina
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = El vostre web a tot arreu
 sync-signedout-description = Sincronitzeu les vostres adreces d'interès, historial, pestanyes, contrasenyes, complements i preferències en tots els vostres dispositius.
-sync-signedout-account-title = Connecteu-vos amb un { -fxaccount-brand-name }
-sync-signedout-account-create = No teniu un compte? Comencem
-    .accesskey = C
-sync-signedout-account-signin =
-    .label = Inicia la sessió…
-    .accesskey = I
 sync-signedout-account-signin2 =
     .label = Inicia la sessió al { -sync-brand-short-name }…
     .accesskey = I
@@ -639,16 +618,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Baixeu el Firefox per a l'<img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> o per a l'<img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> per sincronitzar amb el vostre dispositiu mòbil.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Canvia la imatge de perfil
-sync-disconnect =
-    .label = Desconnecta…
-    .accesskey = D
 sync-sign-out =
     .label = Tanca la sessió…
     .accesskey = T
@@ -665,8 +638,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Inicia la sessió
     .accesskey = I
-sync-signedin-settings-header = Paràmetres de sincronització
-sync-signedin-settings-desc = Trieu què voleu sincronitzar entre els vostres dispositius que utilitzen el { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +690,6 @@ sync-engine-tabs =
     .label = Pestanyes obertes
     .tooltiptext = Una llista d'allò que està obert en tots els dispositius sincronitzats
     .accesskey = T
-sync-engine-logins =
-    .label = Inicis de sessió
-    .tooltiptext = Noms d'usuari i contrasenyes que heu desat
-    .accesskey = I
 sync-engine-logins-passwords =
     .label = Inicis de sessió i contrasenyes
     .tooltiptext = Noms d'usuari i contrasenyes que heu desat
@@ -761,18 +728,10 @@ sync-device-name-save =
     .label = Desa
     .accesskey = D
 sync-connect-another-device = Connecta un altre dispositiu
-sync-manage-devices = Gestiona els dispositius
-sync-fxa-begin-pairing = Vincula un dispositiu
-sync-tos-link = Condicions del servei
-sync-fxa-privacy-notice = Avís de privadesa
 
 ## Privacy Section
 
 privacy-header = Privadesa del navegador
-
-## Privacy Section - Forms
-
-logins-header = Inicis de sessió i contrasenyes
 
 ## Privacy Section - Logins and Passwords
 
@@ -906,8 +865,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Tipus de contingut blocat
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Elements de seguiment de tercers
 sitedata-option-block-cross-site-trackers =
     .label = Elements de seguiment entre llocs
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -953,27 +910,9 @@ addressbar-suggestions-settings = Canvia les preferències dels suggeriments de 
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Bloqueig de contingut
-content-blocking-section-description = Protegiu la vostra privadesa mentre navegueu. Bloqueu el contingut invisible que fa el seguiment dels llocs que visiteu per crear un perfil vostre amb aquesta informació. Blocant aquest contingut, és possible que les pàgines es carreguin més ràpid.
 content-blocking-enhanced-tracking-protection = Protecció contra el seguiment millorada
 content-blocking-section-top-level-description = Hi ha elements que us fan el seguiment mentre navegueu per recopilar informació sobre els vostres hàbits de navegació i interessos. El { -brand-short-name } bloca molts d'aquests elements de seguiment i altres scripts maliciosos.
 content-blocking-learn-more = Més informació
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Estàndard
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Estricte
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Personalitzat
-    .accesskey = z
-content-blocking-standard-desc = Equilibri entre protecció i rendiment. Permet alguns elements de seguiment perquè els llocs web funcionin correctament.
-content-blocking-strict-description = Més protecció, pot fer que alguns llocs no funcionin correctament.
-content-blocking-custom-desc = Trieu què voleu blocar.
-content-blocking-private-trackers = Elements de seguiment coneguts en finestres privades
-content-blocking-third-party-cookies = Galetes de seguiment de tercers
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1000,23 +939,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Galetes de seguiment
 content-blocking-social-media-trackers = Elements de seguiment de xarxes socials
 content-blocking-all-cookies = Totes les galetes
 content-blocking-unvisited-cookies = Galetes de llocs no visitats
-content-blocking-all-windows-trackers = Elements de seguiment coneguts en totes les finestres
 content-blocking-all-windows-tracking-content = Contingut que fa seguiment en totes les finestres
 content-blocking-all-third-party-cookies = Totes les galetes de tercers
 content-blocking-cryptominers = Miners de criptomonedes
 content-blocking-fingerprinters = Generadors d'empremtes digitals
 content-blocking-warning-title = Atenció!
-content-blocking-warning-description = El bloqueig de contingut pot fer que alguns llocs web no funcionin correctament. És fàcil desactivar el bloqueig dels llocs en què confieu.
-content-blocking-learn-how = Vegeu com fer-ho
 content-blocking-and-isolating-etp-warning-description = El bloqueig d'elements de seguiment i l'aïllament de galetes pot afectar la funcionalitat d'alguns llocs. Torneu a carregar la pàgina amb els elements de seguiment per carregar-ne tot el contingut.
 content-blocking-warning-learn-how = Vegeu com fer-ho
 content-blocking-reload-description = Cal tornar a carregar les pestanyes per aplicar aquests canvis.
 content-blocking-reload-tabs-button =
     .label = Torna a carregar totes les pestanyes
     .accesskey = r
-content-blocking-trackers-label =
-    .label = Elements de seguiment
-    .accesskey = t
 content-blocking-tracking-content-label =
     .label = Contingut que fa seguiment
     .accesskey = o
@@ -1075,12 +1008,6 @@ permissions-notification-link = Més informació
 permissions-notification-pause =
     .label = Posa en pausa les notificacions fins que es reiniciï el { -brand-short-name }
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Bloca la reproducció automàtica de so dels llocs web
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = Excepcions…
-    .accesskey = E
 permissions-autoplay = Reproducció automàtica
 permissions-autoplay-settings =
     .label = Paràmetres…

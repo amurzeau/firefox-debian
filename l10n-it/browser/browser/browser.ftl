@@ -188,7 +188,6 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Imposta come motore di ricerca predefinito in finestre anonime
     .accesskey = a
-
 # Search engine one-off buttons with an @alias shortcut/keyword.
 # Variables:
 #  $engineName (String): The name of the engine.
@@ -318,22 +317,38 @@ urlbar-default-placeholder =
     .defaultPlaceholder = Inserisci un indirizzo o avvia una ricerca
 urlbar-placeholder =
     .placeholder = Inserisci un indirizzo o avvia una ricerca
-
 # This placeholder is used in search mode with search engines that search the
 # entire web.
-urlbar-placeholder-search-mode-web =
-  .placeholder = Cerca sul Web
-
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Cerca sul Web
+    .aria-label = Cerca con { $name }
 # This placeholder is used in search mode with search engines that search a
-# specific site (e.g., Amazon) and local search modes (e.g., bookmarks, history,
-# tabs).
-urlbar-placeholder-search-mode-other =
-  .placeholder = Immetti i termini di ricerca
-
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Immetti i termini di ricerca
+    .aria-label = Cerca in { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Immetti i termini di ricerca
+    .aria-label = Cerca nei segnalibri
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Immetti i termini di ricerca
+    .aria-label = Cerca nella cronologia
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Immetti i termini di ricerca
+    .aria-label = Cerca nelle schede
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
-  .placeholder = Cerca con { $name } o inserisci un indirizzo
+    .placeholder = Cerca con { $name } o inserisci un indirizzo
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Il browser è attualmente controllato da remoto
 urlbar-permissions-granted =
@@ -349,3 +364,19 @@ urlbar-page-action-button =
     .tooltiptext = Azioni per questa pagina
 urlbar-pocket-button =
     .tooltiptext = Salva in { -pocket-brand-name }
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> è ora visualizzato a schermo intero
+fullscreen-warning-no-domain = Questo documento è ora visualizzato a schermo intero
+fullscreen-exit-button = Esci da schermo intero (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Esci da schermo intero (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> sta controllando il puntatore del mouse. Premere Esc per riprenderne il controllo.
+pointerlock-warning-no-domain = Questo documento sta controllando il puntatore del mouse. Premere Esc per riprenderne il controllo.

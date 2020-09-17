@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Mear ynfo
-onboarding-button-label-try-now = No probearje
 onboarding-button-label-get-started = Begjinne
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Begjinne
 onboarding-welcome-header = Wolkom by { -brand-short-name }
 onboarding-welcome-body = Jo hawwe de browser.<br/>Kom yn de kunde mei de rest fan { -brand-product-name }.
 onboarding-welcome-learn-more = Mear ynfo oer de foardielen.
-onboarding-join-form-header = Doch mei mei { -brand-product-name }
 onboarding-welcome-modal-get-body = Jo hawwe de browser.<br/>Helje no it measte út { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Fersterk de beskerming fan jo privacy.
 onboarding-welcome-modal-privacy-body = Jo hawwe de browser. Litte wy mear privacybeskerming tafoegje.
@@ -57,6 +55,9 @@ onboarding-multistage-import-header = Ymportearje jo wachtwurden, blêdwizers en
 onboarding-multistage-import-subtitle = Hawwe jo in oare browser brûkt? It is ienfâldich om alles nei { -brand-short-name } oer te bringen.
 onboarding-multistage-import-primary-button-label = Ymport starte
 onboarding-multistage-import-secondary-button-label = No net
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Dizze websites binne op dit apparaat fûn. { -brand-short-name } bewarret of syngronisearret gjin gegevens fan in oare browser, útsein jo derfoar kieze se te ymportearjen.
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
 # Variables:
 #   $current (Int) - Number of the current page
@@ -83,6 +84,70 @@ onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
 ## doesn't become too long. Line breaks will be preserved when displaying the
 ## tooltip.
 
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
+    .title =
+        It uterlik fan jo bestjoeringssysteem
+        oernimme foar knoppen, menu’s en finsters.
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        In ljocht uterlik brûke foar knoppen,
+        menu‘s en finsters.
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        In donker uterlik brûke foar knoppen,
+        menu‘s en finsters.
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title =
+        In kleurich uterlik brûke foar knoppen,
+        menu‘s en finsters.
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        It uterlik fan jo bestjoeringssysteem
+        oernimme foar knoppen, menu’s en finsters.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        It uterlik fan jo bestjoeringssysteem
+        oernimme foar knoppen, menu’s en finsters.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        In ljocht uterlik brûke foar knoppen,
+        menu‘s en finsters.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        In ljocht uterlik brûke foar knoppen,
+        menu‘s en finsters.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        In donker uterlik brûke foar knoppen,
+        menu‘s en finsters.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        In donker uterlik brûke foar knoppen,
+        menu‘s en finsters.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        In kleurich uterlik brûke foar knoppen,
+        menu‘s en finsters.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        In kleurich uterlik brûke foar knoppen,
+        menu‘s en finsters.
 
 ## Welcome full page string
 
@@ -108,11 +173,7 @@ onboarding-sync-form-sub-header = om troch te gean nei { -sync-brand-name }.
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Nuttige produkten
 onboarding-benefit-products-text = Krij saken dien mei in set helpmiddelen dy't jo privacy respektearje op al jo apparaten.
-onboarding-benefit-knowledge-title = Praktyske kennis
-onboarding-benefit-knowledge-text = Lear alles wat jo witte moatte om tûker en feiliger online te bliuwen.
-onboarding-benefit-privacy-title = Echte privacy
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -133,17 +194,6 @@ onboarding-benefit-lockwise-text = Behear wachtwurden dy't beskerme en draachber
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Priveenavigaasje
-onboarding-private-browsing-text = Sneup op jo eigen. Priveenavigaasje mei Ynhâldsblokkearring blokkearret online trackers dy't jo op it web folgje.
-onboarding-screenshots-title = Screenshots
-onboarding-screenshots-text = Meitsje, bewarje en diel skermôfbyldingen - sûnder { -brand-short-name } te ferlitten. Lis in gebied of in hiele side fêst wylst jo sneupe. Bewarje it dêrnei foar maklike tagong en diele.
-onboarding-addons-title = Add-ons
-onboarding-addons-text = Foegje sels mear funksjes ta dy't { -brand-short-name } hurder foar jo wurkje lit. Fergelykje prizen, besjoch it waarberjocht of druk jo persoanlikheid út mei in oanpast tema.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Sneup flugger, tûker of feiliger mei útwreidingen lykas Ghostery, wêrmei't jo ferfelende advertinsjes blokkearje kinne.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Syngronisearje
-onboarding-fxa-text = Meitsje in { -fxaccount-brand-name } oan en syngronisearje jo blêdwizers, wachtwurden en iepen ljepblêden, oeral wêr't jo { -brand-short-name } brûke.
 onboarding-tracking-protection-title2 = Beskerming tsjin folgjen
 onboarding-tracking-protection-text2 = { -brand-short-name } helpt foar te kommen dat websites jo online folgje, wêrtroch it foar advertinsjes swierder wurdt om jo op it web te folgjen.
 onboarding-tracking-protection-button2 = Hoe't it wurket
@@ -152,7 +202,6 @@ onboarding-data-sync-title = Nim jo ynstellingen mei jo mei
 onboarding-data-sync-text2 = Syngronisearje jo blêdwizers, wachtwurden en mear, oeral wêr't jo { -brand-product-name } brûke.
 onboarding-data-sync-button2 = Oanmelde by { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Bliuw alert op datalekken
-onboarding-firefox-monitor-text = { -monitor-brand-name } hâldt yn de gaten oft jo e-mailadres foar komt yn in datalek en warskôget jo as dit yn in nij datalek ferskynt.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } hâldt yn de gaten oft jo e-mailadres foar komt yn in bekend datalek en warskôget jo as dit yn in nij lek ferskynt.
 onboarding-firefox-monitor-button = Ynskriuwe foar warskôgingen
 onboarding-browse-privately-title = Privee sneupe
@@ -169,17 +218,11 @@ onboarding-mobile-phone-button = Download de browser foar mobyl
 onboarding-send-tabs-title = Stjoer josels daliks ljepblêden
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Send Tabs dielt daliks siden tusken jo apparaten sûnder dat jo hoege te kopiearjen, plakken of de browser hoege te ferlitten.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Diel ienfâldich siden tusken jo apparaten sûnder keppelingen hoege te kopiearjen of de browser te ferlitten.
 onboarding-send-tabs-button = Start mei it gebrûk fan Send Tabs
 onboarding-pocket-anywhere-title = Lês en harkje oeral
 onboarding-pocket-anywhere-text2 = Bewarje jo favorite ynhâld offline mei de { -pocket-brand-name }-app en lês, harkje en sjoch wannear't it jo útkomt.
 onboarding-pocket-anywhere-button = Probearje { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Nim jo wachtwurden oeral mei hinne
-onboarding-lockwise-passwords-text2 = Hâld jo bewarre wachtwurden feilich en meld jo ienfâldich by jo accounts oan mei { -lockwise-brand-name }.
-onboarding-lockwise-passwords-button2 = Download de app
 onboarding-lockwise-strong-passwords-title = Sterke wachtwurden meitsje en beheare
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } makket daliks sterke wachtwurden en bewarret se allegearre op ien plak.
 onboarding-lockwise-strong-passwords-button = Jo oanmeldingen beheare

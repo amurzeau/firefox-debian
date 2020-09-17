@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = მხოლოდ მაშინ, როცა { -brand-short-name } ზღუდავს ცნობილ მეთვალყურეებს
 do-not-track-option-always =
     .label = ყოველთვის
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] პარამეტრები
-           *[other] პარამეტრები
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] პარამეტრები
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = თქვენს საწყის �
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = ახალი ჩანართის გვერდს, ამჟამად მართავს <img data-l10n-name="icon"/> { $name } გაფართოება.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = გაფართოება <img data-l10n-name="icon"/> { $name } მართავს ამ პარამეტრებს.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = გაფართოება <img data-l10n-name="icon"/>{ $name } საზღვრავს ამ პარამეტრს.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = ეს პარამეტრ�
 update-application-use-service =
     .label = განახლებების დასაყენებლად ფონური მომსახურების გამოყენება
     .accesskey = ფ
-update-enable-search-update =
-    .label = საძიებო სისტემების თვითგანახლება
-    .accesskey = ს
-update-pref-write-failure-title = ჩაწერის ხარვეზი
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = პარამეტრის შენახვა შეუძლებელია. ვერ ხერხდება ჩაწერა ფაილში: { $path }
 update-setting-write-failure-title = შეცდომა, განახლების პარამეტრების შენახვისას
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = ძიების ველის დამატება ხელსაწყოთა ზოლზე
 search-engine-default-header = ნაგულისხმევი საძიებო სისტემა
-search-engine-default-desc = მიუთითეთ ნაგულისხმევი საძიებო სისტემა, რომელსაც გამოიყენებთ მისამართებისა და ძიების ველებში.
 search-engine-default-desc-2 = ეს თქვენი ნაგულისხმევი საძიებოა მისამართებისა და ძიების ველებისთვის. ნებისმიერ დროს შეგიძლიათ შეცვლა.
 search-engine-default-private-desc-2 = აირჩიეთ სხვა საძიებო, მხოლოდ პირადი ფანჯრებისთვის
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = ამოშლა
     .accesskey = ა
+search-add-engine =
+    .label = დამატება
+    .accesskey = ტ
 search-find-more-link = სხვა საძიებო სისტემების მონახვა
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = თქვენ მიერ შერჩე�
 
 ## Containers Section
 
-containers-back-link = « უკან
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = წაშლა
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = წაიყოლეთ თქვენი მონაცემები თან
 sync-signedout-description = დაასინქრონეთ თქვენი სანიშნები, ისტორია, ჩანართები, პაროლები, დამატებები და პარამეტრები ყველა მოწყობილობაზე.
-sync-signedout-account-title = { -fxaccount-brand-name(case: "add") } დაკავშირება
-sync-signedout-account-create = არ გაქვთ ანგარიში? შექმენით
-    .accesskey = ქ
-sync-signedout-account-signin =
-    .label = შესვლა
-    .accesskey = შ
 sync-signedout-account-signin2 =
     .label = { -sync-brand-short-name } – შესვლა…
     .accesskey = შ
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Firefox ჩამოტვირთეთ <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android-ისთვის</a> ან <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS-ისთვის</a> თქვენს მობილურ მოწყობილობასთან სინქრონიზაციისთვის.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = პროფილის სურათის შეცვლა
-sync-disconnect =
-    .label = გამოთიშვა…
-    .accesskey = გ
 sync-sign-out =
     .label = გამოსვლა...
     .accesskey = გ
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = შესვლა
     .accesskey = ვ
-sync-signedin-settings-header = სინქრონიზაციის პარამეტრები
-sync-signedin-settings-desc = აირჩიეთ, რისი დასინქრონება გსურთ { -brand-short-name }-ით თქვენს მოწყობილობაზე.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = გახსნილი ჩანართები
     .tooltiptext = ყველა დასინქრონებულ მოწყობილობაზე გახსნილი ჩანართების სია
     .accesskey = ჩ
-sync-engine-logins =
-    .label = შესვლები
-    .tooltiptext = შენახული სახელები და პაროლები
-    .accesskey = შ
 sync-engine-logins-passwords =
     .label = ანგარიშები და პაროლები
     .tooltiptext = მომხმარებლის შენახული სახელები და პაროლები
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = შენახვა
     .accesskey = ე
 sync-connect-another-device = სხვა მოწყობილობასთან დაკავშირება
-sync-manage-devices = მოწყობილობების მართვა
-sync-fxa-begin-pairing = მოწყობილობის მიერთება
-sync-tos-link = გამოყენების პირობები
-sync-fxa-privacy-notice = პირადი მონაცემების დაცვის განაცხადი
 
 ## Privacy Section
 
 privacy-header = ბრაუზერის პირადულობა
-
-## Privacy Section - Forms
-
-logins-header = ანგარიშის სახელები და პაროლები
 
 ## Privacy Section - Logins and Passwords
 
@@ -906,8 +868,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = შეზღუდული შიგთავსი
     .accesskey = გ
-sitedata-option-block-trackers =
-    .label = გარეშე მეთვალყურეები
 sitedata-option-block-cross-site-trackers =
     .label = საიტთაშორისი მეთვალყურეები
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -953,27 +913,9 @@ addressbar-suggestions-settings = საძიებო სისტემის
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = შიგთავსის შეზღუდვა
-content-blocking-section-description = დაიცავით პირადი მონაცემები საიტების მონახულებისას. შეზღუდეთ გვერდებზე ფარული ნაწილები, რომლებიც თვალს ადევნებს და აღრიცხავს ყველა საიტს, რომელსაც ეწვევით. ზოგიერთი მათგანის შეზღუდვა, აგრეთვე ასწრაფებს გვერდების ჩატვირთვასაც.
 content-blocking-enhanced-tracking-protection = თვალთვალისგან გაძლიერებული დაცვა
 content-blocking-section-top-level-description = მეთვალყურეები თან დაგყვებათ მთელ ინტერნეტში და აგროვებს ინფორმაციას თქვენი ჩვევებისა და მისწრაფებების შესახებ. { -brand-short-name } ზღუდავს ამ მეთვალყურეების უმეტესობასა და სხვა მავნე კოდებსაც.
 content-blocking-learn-more = ვრცლად
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = ჩვეულებრივი
-    .accesskey = ჩ
-content-blocking-setting-strict =
-    .label = მკაცრი
-    .accesskey = კ
-content-blocking-setting-custom =
-    .label = მორგებული
-    .accesskey = გ
-content-blocking-standard-desc = წონასწორული მდგომარეობა უსაფრთხოებასა და წარმადობას შორის. მეთვალყურეების ნაწილი დაშვებულია, საიტების გამართულად მუშაობისთვის.
-content-blocking-strict-description = გაძლიერებული დაცვა, მეტ ხარვეზს წარმოშობს საიტზე.
-content-blocking-custom-desc = შესაზღუდი შიგთავსის შერჩევა.
-content-blocking-private-trackers = ცნობილი მეთვალყურეები მხოლოდ პირად ფანჯრებში.
-content-blocking-third-party-cookies = გარეშე მეთვალყურეების ფუნთუშები
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1000,23 +942,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = საიტთა�
 content-blocking-social-media-trackers = სოციალური ქსელის მეთვალყურეები
 content-blocking-all-cookies = ყველა ფუნთუშა
 content-blocking-unvisited-cookies = ფუნთუშები, მოუნახულებელი საიტებიდან
-content-blocking-all-windows-trackers = ცნობილი მეთვალყურეები ყველა ფანჯარაში
 content-blocking-all-windows-tracking-content = მეთვალყურე შიგთავსი ყველა ფანჯარაში
 content-blocking-all-third-party-cookies = ყველა გარეშე ფუნთუშა
 content-blocking-cryptominers = კრიპტოვალუტის გამომმუშავებელი
 content-blocking-fingerprinters = მომხმარებლის ამომცნობი
 content-blocking-warning-title = ფრთხილად!
-content-blocking-warning-description = შიგთავსის შეზღუდვის შედეგად, საიტების ნაწილმა შესაძლოა ვერ იმუშაოს გამართულად. სანდო საიტებზე, მარტივად შეგეძლებათ შეზღუდვის გათიშვა.
-content-blocking-learn-how = იხილეთ ვრცლად
 content-blocking-and-isolating-etp-warning-description = მეთვალყურეების შეზღუდვით და ფუნთუშების გამიჯვნით, შესაძლოა დაზიანდეს ზოგიერთი საიტის შესაძლებლობები. შიგთავსის სრულად სანახავად, ხელახლა გახსენით გვერდი დაშვებული მეთვალყურეებით.
 content-blocking-warning-learn-how = იხილეთ როგორ
 content-blocking-reload-description = საჭიროა ჩანართების ხელახლა გახსნა ცვლილებების ასახვისთვის.
 content-blocking-reload-tabs-button =
     .label = ყველა ჩანართის ხელახლა გახსნა
     .accesskey = ხ
-content-blocking-trackers-label =
-    .label = მეთვალყურეები
-    .accesskey = თ
 content-blocking-tracking-content-label =
     .label = მეთვალყურე შიგთავსი
     .accesskey = თ
@@ -1075,12 +1011,6 @@ permissions-notification-link = ვრცლად
 permissions-notification-pause =
     .label = შეჩერდეს შეტყობინებები, სანამ { -brand-short-name } ხელახლა გაეშვება
     .accesskey = ჩ
-permissions-block-autoplay-media2 =
-    .label = ვებსაიტებისთვის, ხმის თვითგაშვების შეზღუდვა
-    .accesskey = ბ
-permissions-block-autoplay-media-exceptions =
-    .label = გამონაკლისები…
-    .accesskey = ო
 permissions-autoplay = თვითგაშვება
 permissions-autoplay-settings =
     .label = პარამეტრები…

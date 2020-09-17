@@ -6,7 +6,7 @@
 ## Settings
 
 site-data-settings-window =
-    .title = Eñagareko Kookie ha tenda mba’ekuaarãre
+    .title = Eñangareko Kookie ha tenda mba’ekuaarãre
 site-data-settings-description = Ko’ãva ñanduti renda ombyaty kookie ha mba’ekuaarã ne mohendahápe. { -brand-short-name } oguereko ñanduti renda mba’ekuaarã ñembyatypy imboguete peve, ha ombogue avei ñanduti renda mba’ekuaarã ñembyatypy oĩmba’ỹva oikotevẽ rupi pa’ũ.
 site-data-search-textbox =
     .placeholder = Ñanduti renda jeheka

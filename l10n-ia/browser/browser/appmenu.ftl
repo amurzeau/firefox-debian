@@ -29,5 +29,5 @@ whatsnew-panel-header = Novas
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =
-    .label = Notificar me re nove functiones
+    .label = Notificar me sur nove functiones
     .accesskey = f

@@ -318,8 +318,38 @@ enable-devtools-popup-description = Para usar el atajo F12, primero abra DevTool
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Buscar o ingresar dirección
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Buscar o ingresar dirección
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Buscar en la web
+    .aria-label = Buscar con { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Ingresar términos de búsqueda
+    .aria-label = Buscar { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Ingresar términos de búsqueda
+    .aria-label = Buscar en marcadores
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Ingresar términos de búsqueda
+    .aria-label = Buscar en historial
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Ingresar términos de búsqueda
+    .aria-label = Buscar en pestañas
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

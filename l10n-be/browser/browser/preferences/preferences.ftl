@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Толькі калі { -brand-short-name } настаўлены блакаваць вядомыя трэкеры
 do-not-track-option-always =
     .label = Заўсёды
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Налады
-           *[other] Налады
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Налады
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Пашырэнне <img data-l10n-name=
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Пашырэнне <img data-l10n-name="icon"/> { $name } кантралюе вашу старонку новай карткі.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Пашырэнне <img data-l10n-name="icon"/> { $name } кантралюе гэты параметр.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Пашырэнне <img data-l10n-name="icon"/> { $name } кантралюе гэты параметр.
@@ -374,13 +371,6 @@ update-application-warning-cross-user-setting = Гэта налада дзейн
 update-application-use-service =
     .label = Выкарыстоўваць фонавую службу для ўсталявання абнаўленняў
     .accesskey = ф
-update-enable-search-update =
-    .label = Аўтаматычна абнаўляць пашукавікі
-    .accesskey = а
-update-pref-write-failure-title = Збой запісу
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Немагчыма захаваць налады. Не ўдалося запісаць у файл: { $path }
 update-setting-write-failure-title = Памылка пры захаванні налад абнаўлення
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -549,7 +539,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Дадаць радок пошуку на паліцу прылад
 search-engine-default-header = Прадвызначаны пашукавік
-search-engine-default-desc = Выберыце прадвызначаную пошукавую сістэму для выкарыстання ў адрасным радку і панэлі пошуку.
 search-engine-default-desc-2 = Гэта прадвызначаная пошукавая сістэма ў адрасным радку і радку пошуку. Вы можаце пераключыць яе ў любы час.
 search-engine-default-private-desc-2 = Выберыце іншую прадвызначаную пошукавую сістэму толькі для прыватных акон
 search-separate-default-engine =
@@ -586,6 +575,9 @@ search-restore-default =
 search-remove-engine =
     .label = Выдаліць
     .accesskey = д
+search-add-engine =
+    .label = Дадаць
+    .accesskey = Д
 search-find-more-link = Знайсці іншыя пашукавікі
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -597,7 +589,6 @@ search-keyword-warning-bookmark = Вы выбралі ключавое слов�
 
 ## Containers Section
 
-containers-back-link = « Вярнуцца
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -616,20 +607,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Выдаліць
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Вазьміце сваё Сеціва з сабой
 sync-signedout-description = Сінхранізуйце свае закладкі, гісторыю, карткі, паролі, дадаткі і налады на ўсіх вашых прыладах.
-sync-signedout-account-title = Злучыцца з { -fxaccount-brand-name }
-sync-signedout-account-create = Няма ўліковага запісу? Давайце яго створым
-    .accesskey = Н
-sync-signedout-account-signin =
-    .label = Увайсці…
-    .accesskey = а
 sync-signedout-account-signin2 =
     .label = Увайсці ў { -sync-brand-short-name }…
     .accesskey = ў
@@ -643,16 +625,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Сцягнуць Firefox для <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> або <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> каб сінхранізавацца са сваёй мабільнай прыладай.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Змяніць профільную выяву
-sync-disconnect =
-    .label = Адлучыцца…
-    .accesskey = А
 sync-sign-out =
     .label = Выйсці…
     .accesskey = і
@@ -669,8 +645,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Увайсці
     .accesskey = і
-sync-signedin-settings-header = Налады сінхранізацыі
-sync-signedin-settings-desc = Выберыце, што { -brand-short-name } павінен сінхранізаваць на вашых прыладах.
 
 ## Sync section - enabling or disabling sync.
 
@@ -723,10 +697,6 @@ sync-engine-tabs =
     .label = Адкрытыя карткі
     .tooltiptext = Спіс адкрытага на ўсіх сінхранізаваных прыладах
     .accesskey = к
-sync-engine-logins =
-    .label = Лагіны
-    .tooltiptext = Імёны карыстальніка і паролі, якія вы захавалі
-    .accesskey = Л
 sync-engine-logins-passwords =
     .label = Лагіны і паролі
     .tooltiptext = Уліковыя дадзеныя для ўваходу, якія вы захавалі
@@ -765,18 +735,10 @@ sync-device-name-save =
     .label = Захаваць
     .accesskey = х
 sync-connect-another-device = Злучыць іншую прыладу
-sync-manage-devices = Кіраваць прыладамі
-sync-fxa-begin-pairing = Спараваць прыладу
-sync-tos-link = Умовы абслугоўвання
-sync-fxa-privacy-notice = Паведамленне аб прыватнасці
 
 ## Privacy Section
 
 privacy-header = Прыватнасць браўзера
-
-## Privacy Section - Forms
-
-logins-header = Лагіны & Паролі
 
 ## Privacy Section - Logins and Passwords
 
@@ -910,8 +872,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Тып заблакаванага
     .accesskey = Т
-sitedata-option-block-trackers =
-    .label = Трэкеры трэцяга боку
 sitedata-option-block-cross-site-trackers =
     .label = Міжсайтавыя трэкеры
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -957,27 +917,9 @@ addressbar-suggestions-settings = Змяніць налады для падка�
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Блакаванне змесціва
-content-blocking-section-description = Ахоўвайце сваю прыватнасць у час аглядання. Блакуйце нябачнае змесціва, якое асочвае сайты, што вы наведваеце, і збірае ваш профіль. Блакаванне часткі гэтага змесціва можа паскорыць загрузку старонак.
 content-blocking-enhanced-tracking-protection = Узмоцненая ахова ад сачэння
 content-blocking-section-top-level-description = Трэкеры ідуць за вамі па сеціве, каб сабраць інфармацыю пра вашыя звычкі і зацікаўленасці. { -brand-short-name } блакуе многія з гэтых трэкераў і іншых зламысных скрыптоў.
 content-blocking-learn-more = Падрабязней
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Стандартна
-    .accesskey = т
-content-blocking-setting-strict =
-    .label = Строга
-    .accesskey = о
-content-blocking-setting-custom =
-    .label = Адмыслова
-    .accesskey = с
-content-blocking-standard-desc = Збалансаваная абарона і прадукцыйнасць. Дазваляе некаторыя трэкеры, таму сайты працуюць спраўна.
-content-blocking-strict-description = Больш моцная абарона, можа парушыць працу некаторых сайтаў.
-content-blocking-custom-desc = Выберыце, што блакаваць.
-content-blocking-private-trackers = Вядомыя трэкеры толькі ў прыватных вокнах
-content-blocking-third-party-cookies = Трэцебаковыя кукі сачэння
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1004,23 +946,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Міжсайтавы
 content-blocking-social-media-trackers = Трэкеры сацыяльных сетак
 content-blocking-all-cookies = Усе кукі
 content-blocking-unvisited-cookies = Кукі з ненаведаных сайтаў
-content-blocking-all-windows-trackers = Вядомыя трэкеры ва ўсіх вокнах
 content-blocking-all-windows-tracking-content = Элементы сачэння ва ўсіх вокнах
 content-blocking-all-third-party-cookies = Усе кукі трэцяга боку
 content-blocking-cryptominers = Майнеры крыптавалют
 content-blocking-fingerprinters = Збіральнікі адбіткаў пальцаў
 content-blocking-warning-title = Увага!
-content-blocking-warning-description = Блакаванне змесціва можа парушыць працу некаторых вэб-сайтаў. Адключыць блакаванне на сайтах, якім вы давяраеце, лёгка.
-content-blocking-learn-how = Даведацца, як
 content-blocking-and-isolating-etp-warning-description = Блакаванне трэкераў і ізаляванне кукаў можа адбіцца на функцыянальнасці некаторых сайтаў. Абнавіце старонку з трэкерамі, каб загрузіць усё змесціва.
 content-blocking-warning-learn-how = Даведацца, як
 content-blocking-reload-description = Вам трэба будзе перазагрузіць свае карткі, каб прымяніць гэтыя змены.
 content-blocking-reload-tabs-button =
     .label = Перачытаць усе карткі
     .accesskey = к
-content-blocking-trackers-label =
-    .label = Трэкеры
-    .accesskey = е
 content-blocking-tracking-content-label =
     .label = Элементы сачэння
     .accesskey = е
@@ -1079,12 +1015,6 @@ permissions-notification-link = Падрабязней
 permissions-notification-pause =
     .label = Прыпыніць абвесткі да перазапуску { -brand-short-name }
     .accesskey = а
-permissions-block-autoplay-media2 =
-    .label = Блакаваць аўтаматычнае прайграванне гуку на сайтах
-    .accesskey = Б
-permissions-block-autoplay-media-exceptions =
-    .label = Выключэнні…
-    .accesskey = к
 permissions-autoplay = Аўтапрайграванне
 permissions-autoplay-settings =
     .label = Налады…

@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 about-telemetry-ping-data-source = کوائف ماخذ کو پنگ کریں
-about-telemetry-show-current-ping-data = موجودہ پنگ کے کوائف
+about-telemetry-show-current-data = موجودہ ڈیٹا
 about-telemetry-show-archived-ping-data = محفوظہ پنگ کوائف
 about-telemetry-show-subsession-data = ذیلی سیشن کوائف دکھائیں
 about-telemetry-choose-ping = پنگ کا انتخاب کریں
@@ -54,8 +54,6 @@ about-telemetry-filter-placeholder =
 about-telemetry-filter-all-placeholder =
     .placeholder = تمام حصوں میں تلاش کریں
 # used as a tooltip for the “current” ping title in the sidebar
-about-telemetry-current-ping-sidebar = موجودہ پنگ
-# used as a tooltip for the “current” ping title in the sidebar
 about-telemetry-current-data-sidebar = موجودہ ڈیٹا
 # used in the “Ping Type” select
 about-telemetry-telemetry-ping-type-all = تمام
@@ -87,4 +85,5 @@ about-telemetry-category-header = زمرہ
 about-telemetry-method-header = طریقہ
 about-telemetry-object-header = آبجیکٹ
 about-telemetry-extra-header = فالتو
+about-telemetry-origin-origin = اصل
 about-telemetry-origin-count = گنیں

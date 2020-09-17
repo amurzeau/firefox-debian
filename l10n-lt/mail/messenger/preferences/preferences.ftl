@@ -41,6 +41,8 @@ composition-addressing-header = Adresavimas
 privacy-main-header = Privatumas
 privacy-passwords-header = Slaptažodžiai
 privacy-junk-header = Brukalas
+collection-header = „{ -brand-short-name }“ duomenų rinkimas ir naudojimas
+collection-description = Mes siekiame jums leisti rinktis, ir rinkti tik tai, ko reikia tobulinant „{ -brand-short-name }“ . Mes visuomet paprašome leidimo prieš gaudami asmeninę informaciją.
 collection-privacy-notice = Privatumo pranešimas
 collection-health-report-telemetry-disabled = Jūs nebeleidžiate „{ -vendor-short-name }“ rinkti techninių ir naudojimosi duomenų. Visi ankstesni duomenys bus pašalinti per 30 dienų.
 collection-health-report-telemetry-disabled-link = Sužinokite daugiau
@@ -48,6 +50,12 @@ collection-health-report =
     .label = Leisti „{ -brand-short-name }“ siųsti techninius ir naudojimosi duomenis „{ -vendor-short-name }“
     .accesskey = L
 collection-health-report-link = Sužinokite daugiau
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled = Šios programos duomenų siuntimo galimybė išjungta jos kompiliavimo metu
+collection-backlogged-crash-reports =
+    .label = Leisti „{ -brand-short-name }“ siųsti sukauptus strigčių pranešimus jūsų vardu
+    .accesskey = L
 collection-backlogged-crash-reports-link = Sužinokite daugiau
 privacy-security-header = Saugumas
 privacy-scam-detection-title = Suktybių aptikimas
@@ -63,10 +71,6 @@ manage-messenger-languages-button =
     .accesskey = A
 confirm-messenger-language-change-description = Šie pakeitimai bus pritaikyti i naujo paleidus „{ -brand-short-name }“
 confirm-messenger-language-change-button = Pritaikyti ir perleisti
-update-pref-write-failure-title = Įrašymo klaida
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Nepavyko įrašyti nuostatos. Negalima įrašyti į failą: { $path }
 update-setting-write-failure-title = Klaida įrašant naujinimų nuostatas
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -544,6 +548,8 @@ primary-password-label =
 primary-password-button =
     .label = Pakeisti pagrindinį slaptažodį…
     .accesskey = P
+forms-primary-pw-fips-title = Šiuo metu pasirinkta FIPS veiksena. Jai reikia pagrindinio slaptažodžio.
+forms-master-pw-fips-desc = Slaptažodžio pakeisti nepavyko
 junk-description = Brukalo kontrolės nuostatos atskiroms paskyroms parenkamos paskyrų nuostatų lange.
 junk-label =
     .label = Pažymėjus, kad laiškai yra brukalas:
@@ -678,9 +684,29 @@ chat-variant-label =
 chat-header-label =
     .label = Rodyti antraštę
     .accesskey = H
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box =
+    .style = width: 15.4em
+    .placeholder =
+        { PLATFORM() ->
+            [windows] ieškoti nuostatose
+           *[other] ieškoti nuostatose
+        }
 
 ## Preferences UI Search Results
 
-
-## Preferences UI Search Results
-
+search-results-header = Paieškos rezultatai
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message =
+    { PLATFORM() ->
+        [windows] Deja! Nuostatose nėra rezultatų, atitinkančių „<span data-l10n-name="query"></span>“.
+       *[other] Deja! Nuostatose nėra rezultatų, atitinkančių „<span data-l10n-name="query"></span>“.
+    }
+search-results-help-link = Reikia pagalbos? Aplankykite <a data-l10n-name="url">„{ -brand-short-name }“</a>

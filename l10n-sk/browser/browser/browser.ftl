@@ -112,6 +112,7 @@ urlbar-search-tips-redirect-2 = Zadajte sem výraz vyhľadávania a uvidíte ná
 
 ## Local search mode indicator labels in the urlbar
 
+urlbar-search-mode-bookmarks = Záložky
 
 ##
 
@@ -188,6 +189,12 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Nastaviť ako predvolený vyhľadávací modul pre súkromné prehliadanie
     .accesskey = o
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -301,8 +308,14 @@ enable-devtools-popup-description = Ak chcete použiť skratku F12, najprv otvor
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Zadajte adresu alebo výraz vyhľadávania
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Zadajte adresu alebo výraz vyhľadávania
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Vyhľadajte cez { $name } alebo zadajte webovú adresu
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Prehliadač je ovládaný na diaľku
 urlbar-permissions-granted =

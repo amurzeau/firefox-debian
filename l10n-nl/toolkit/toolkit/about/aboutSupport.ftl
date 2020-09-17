@@ -80,6 +80,9 @@ show-dir-label =
         [windows] Map openen
        *[other] Map openen
     }
+environment-variables-title = Omgevingsvariabelen
+environment-variables-name = Naam
+environment-variables-value = Waarde
 experimental-features-title = Experimentele functies
 experimental-features-name = Naam
 experimental-features-value = Waarde
@@ -107,8 +110,6 @@ graphics-desktop-environment = Desktopomgeving
 place-database-title = Places-database
 place-database-integrity = Integriteit
 place-database-verify-integrity = Integriteit verifiëren
-js-title = JavaScript
-js-incremental-gc = Incrementele GC
 a11y-title = Toegankelijkheid
 a11y-activated = Geactiveerd
 a11y-force-disabled = Toegankelijkheid voorkomen
@@ -138,7 +139,6 @@ restart-button-label = Herstarten
 
 audio-backend = Audio-backend
 max-audio-channels = Max. kanalen
-channel-layout = Kanaalindeling van voorkeur
 sample-rate = Samplefrequentie van voorkeur
 roundtrip-latency = Retentielatentie (standaarddeviatie)
 media-title = Media
@@ -282,7 +282,6 @@ support-blocklisted-bug = Geblokkeerd vanwege bekende problemen: <a data-l10n-na
 unknown-failure = Op blokkeerlijst; foutcode { $failureCode }
 d3d11layers-crash-guard = D3D11-compositor
 d3d11video-crash-guard = D3D11-videodecoder
-d3d9video-crash-buard = D3D9-videodecoder
 d3d9video-crash-guard = D3D9-videodecoder
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX-videodecoder

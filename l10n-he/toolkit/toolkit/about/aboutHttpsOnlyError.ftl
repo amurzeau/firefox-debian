@@ -18,3 +18,4 @@ about-httpsonly-explanation-nosupport = סביר להניח שהאתר פשוט 
 about-httpsonly-explanation-risk = יתכן שיש גם גורם זדוני בתמונה. אם החלטת לבקר באתר, עדיף לך לא למלא מידע רגיש כגון ססמאות, כתובות דוא״ל או פרטי כרטיסי אשראי.
 about-httpsonly-button-accept-and-continue = קבלת הסיכון והמשך
 about-httpsonly-button-go-back = חזרה
+about-httpsonly-link-learn-more = מידע נוסף…

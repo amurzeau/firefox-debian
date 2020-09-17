@@ -59,6 +59,7 @@ cfr-doorhanger-extension-total-users =
         [one] { $total } వాడుకరి
        *[other] { $total } వాడుకరులు
     }
+cfr-doorhanger-pintab-description = మీరు ఎక్కువగా వాడే సైట్లకు తేలికగా చేరుకోండి. సైట్లను ట్యాబులో తెరిచి ఉంచండి (మీరు పునఃప్రారంభించినప్పుడు కూడా).
 
 ## These messages are steps on how to use the feature and are shown together.
 
@@ -231,3 +232,4 @@ cfr-doorhanger-doh-secondary-button = అచేతనించు
 
 ## What's new: Cookies message
 
+cfr-whatsnew-clear-cookies-header = ట్రాకింగ్ జిత్తుల నుండి స్వయంచాలక సంరక్షణ

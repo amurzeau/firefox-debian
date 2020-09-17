@@ -2,14 +2,14 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-page-title = Πληροφορίες αντιμετώπισης προβλημάτων
+page-title = Πληροφορίες επίλυσης προβλημάτων
 page-subtitle =
-    Αυτή η σελίδα περιέχει τεχνικές πληροφορίες που πιθανόν να σας φανούν χρήσιμες στην επίλυση κάποιων
-    προβλημάτων. Αν ψάχνετε για απαντήσεις σε συχνές ερωτήσεις για τον
-    { -brand-short-name }, επισκεφτείτε την <a data-l10n-name="support-link">σελίδα υποστήριξης</a>.
+    Αυτή η σελίδα περιέχει τεχνικές πληροφορίες που ενδέχεται να φανούν χρήσιμες κατά
+    την επίλυση προβλημάτων. Αν ψάχνετε για απαντήσεις σε συχνές ερωτήσεις σχετικά με το
+    { -brand-short-name }, δείτε τη <a data-l10n-name="support-link">σελίδα υποστήριξής</a> μας.
 crashes-title = Αναφορές κατάρρευσης
-crashes-id = ID Αναφοράς
-crashes-send-date = Υποβλήθηκε
+crashes-id = ID αναφοράς
+crashes-send-date = Υποβεβλημένα
 crashes-all-reports = Όλες οι αναφορές κατάρρευσης
 crashes-no-config = Αυτή η εφαρμογή δεν έχει ρυθμιστεί για εμφάνιση αναφορών κατάρρευσης.
 extensions-title = Επεκτάσεις
@@ -29,13 +29,13 @@ security-software-name = Όνομα
 security-software-antivirus = Antivirus
 security-software-antispyware = Antispyware
 security-software-firewall = Τείχος προστασίας
-features-title = Χαρακτηριστικά του { -brand-short-name }
+features-title = Χαρακτηριστικά { -brand-short-name }
 features-name = Όνομα
 features-version = Έκδοση
 features-id = ID
 processes-title = Απομακρυσμένες διεργασίες
 processes-type = Τύπος
-processes-count = Αρίθμηση
+processes-count = Πλήθος
 app-basics-title = Βασικά εφαρμογής
 app-basics-name = Όνομα
 app-basics-version = Έκδοση
@@ -46,13 +46,13 @@ app-basics-update-channel = Κανάλι ενημερώσεων
 # as in "Folder for updates". "Update" is a noun, not a verb.
 app-basics-update-dir =
     { PLATFORM() ->
-        [linux] Κατάλογος ενημέρωσης
-       *[other] Φάκελος ενημέρωσης
+        [linux] Κατάλογος ενημερώσεων
+       *[other] Φάκελος ενημερώσεων
     }
 app-basics-update-history = Ιστορικό ενημερώσεων
-app-basics-show-update-history = Προβολή ιστορικού ενημερώσεων
+app-basics-show-update-history = Εμφάνιση ιστορικού ενημερώσεων
 # Represents the path to the binary used to start the application.
-app-basics-binary = Δυαδική εφαρμογή
+app-basics-binary = Αρχείο εφαρμογής
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Κατάλογος προφίλ
@@ -64,9 +64,9 @@ app-basics-user-agent = Πλατφόρμα χρήστη
 app-basics-os = ΛΣ
 app-basics-memory-use = Χρήση μνήμης
 app-basics-performance = Επιδόσεις
-app-basics-service-workers = Εγγεγραμμένα Service Workers
+app-basics-service-workers = Εγγεγραμμένα service worker
 app-basics-profiles = Προφίλ
-app-basics-launcher-process-status = Διαδικασία προγράμματος εκκίνησης
+app-basics-launcher-process-status = Διεργασία εκκίνησης
 app-basics-multi-process-support = Παράθυρα πολυδιεργασιών
 app-basics-remote-processes-count = Απομακρυσμένες διεργασίες
 app-basics-enterprise-policies = Πολιτικές επιχειρήσεων
@@ -76,10 +76,13 @@ app-basics-key-mozilla = Κλειδί υπηρεσίας τοποθεσίας Mo
 app-basics-safe-mode = Ασφαλής λειτουργία
 show-dir-label =
     { PLATFORM() ->
-        [macos] Προβολή στον Finder
+        [macos] Προβολή στο Finder
         [windows] Άνοιγμα φακέλου
        *[other] Άνοιγμα καταλόγου
     }
+environment-variables-title = Μεταβλητές περιβάλλοντος
+environment-variables-name = Όνομα
+environment-variables-value = Τιμή
 experimental-features-title = Πειραματικές λειτουργίες
 experimental-features-name = Όνομα
 experimental-features-value = Τιμή
@@ -87,8 +90,8 @@ modified-key-prefs-title = Σημαντικές τροποποιημένες π�
 modified-prefs-name = Όνομα
 modified-prefs-value = Τιμή
 user-js-title = Προτιμήσεις user.js
-user-js-description = Ο φάκελος του προφίλ σας περιέχει το <a data-l10n-name="user-js-link">αρχείο user.js</a>, που περιέχει προτιμήσεις που δεν δημιουργήθηκαν από τον { -brand-short-name }.
-locked-key-prefs-title = Σημαντικές Κλειδωμένες Προτιμήσεις
+user-js-description = Ο φάκελος του προφίλ σας περιέχει το <a data-l10n-name="user-js-link">αρχείο user.js</a>, το οποίο περιέχει προτιμήσεις που δεν δημιουργήθηκαν από το { -brand-short-name }.
+locked-key-prefs-title = Σημαντικές κλειδωμένες προτιμήσεις
 locked-prefs-name = Όνομα
 locked-prefs-value = Τιμή
 graphics-title = Γραφικά
@@ -98,7 +101,7 @@ graphics-failure-log-title = Αρχείο καταγραφής αποτυχιώ�
 graphics-gpu1-title = GPU #1
 graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Αρχείο καταγραφής αποφάσεων
-graphics-crash-guards-title = Απενεργοποιημένες λειτουργίες φύλαξης κατάρρευσης
+graphics-crash-guards-title = Ανενεργές λειτουργίες φύλαξης καταρρεύσεων
 graphics-workarounds-title = Λύσεις
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Πρωτόκολλο παραθύρου
@@ -107,28 +110,26 @@ graphics-desktop-environment = Περιβάλλον επιφάνειας εργ�
 place-database-title = Βάση δεδομένων τοποθεσιών
 place-database-integrity = Ακεραιότητα
 place-database-verify-integrity = Επαλήθευση ακεραιότητας
-js-title = JavaScript
-js-incremental-gc = Αυξητική ΣΣ
-a11y-title = Προσιτότητα
-a11y-activated = Ενεργοποιήθηκε
-a11y-force-disabled = Να μην επιτρέπεται η προσιτότητα
-a11y-handler-used = Προσβάσιμο όνομα χρήστη σε χρήση
+a11y-title = Προσβασιμότητα
+a11y-activated = Ενεργό
+a11y-force-disabled = Αποτροπή προσβασιμότητας
+a11y-handler-used = Προσβάσιμο handler σε χρήση
 a11y-instantiator = Ενεργοποιητής προσβασιμότητας
 library-version-title = Εκδόσεις βιβλιοθήκης
 copy-text-to-clipboard-label = Αντιγραφή κειμένου στο πρόχειρο
-copy-raw-data-to-clipboard-label = Αντιγραφή δεδομένων raw στο πρόχειρο
+copy-raw-data-to-clipboard-label = Αντιγραφή ακατέργαστων δεδομένων στο πρόχειρο
 sandbox-title = Sandbox
-sandbox-sys-call-log-title = Απορριφθήσες κλήσεις συστήματος
+sandbox-sys-call-log-title = Απορριφθείσες κλήσεις συστήματος
 sandbox-sys-call-index = #
 sandbox-sys-call-age = δευτερόλεπτα πριν
 sandbox-sys-call-pid = PID
 sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = Τύπος διεργασίας
 sandbox-sys-call-number = Syscall
-sandbox-sys-call-args = Επιχειρήματα
+sandbox-sys-call-args = Ορίσματα
 safe-mode-title = Δοκιμή ασφαλούς λειτουργίας
 restart-in-safe-mode-label = Επανεκκίνηση με ανενεργά πρόσθετα…
-clear-startup-cache-title = Δοκιμάστε να εκκαθαρίσετε την προσωρινή μνήμη εκκίνησης
+clear-startup-cache-title = Απαλοιφή προσωρινής μνήμης εκκίνησης
 clear-startup-cache-label = Εκκαθάριση προσωρινής μνήμης εκκίνησης…
 startup-cache-dialog-title = Εκκαθάριση προσωρινής μνήμης εκκίνησης
 startup-cache-dialog-body = Επανεκκινήστε το { -brand-short-name } για να εκκαθαρίσετε την προσωρινή μνήμη εκκίνησης. Αυτό δεν θα αλλάξει τις ρυθμίσεις σας, ούτε θα καταργήσει τις επεκτάσεις που έχετε προσθέσει στο { -brand-short-name }.
@@ -138,7 +139,6 @@ restart-button-label = Επανεκκίνηση
 
 audio-backend = Υποσύστημα ήχου
 max-audio-channels = Μέγιστος αριθμός καναλιών
-channel-layout = Επιθυμητή διάταξη καναλιών
 sample-rate = Επιθυμητός ρυθμός δειγματοληψίας
 roundtrip-latency = Καθυστέρηση μετ' επιστροφής (τυπική απόκλιση)
 media-title = Πολυμέσα
@@ -178,7 +178,7 @@ intl-regional-prefs = Προτιμήσεις περιοχής
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
 
-remote-debugging-title = Απομακρυσμένο debugging (Πρωτόκολλο Chromium)
+remote-debugging-title = Απομακρυσμένος εντοπισμός σφαλμάτων (Πρωτόκολλο Chromium)
 remote-debugging-accepting-connections = Αποδεκτές συνδέσεις
 remote-debugging-url = URL
 
@@ -188,8 +188,8 @@ remote-debugging-url = URL
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
     { $days ->
-        [one] Αναφορές κατάρρευσης για την τελευταία { $days } ημέρα
-       *[other] Αναφορές κατάρρευσης για τις τελευταίες { $days } ημέρες
+        [one] Αναφορές κατάρρευσης της τελευταίας { $days } ημέρας
+       *[other] Αναφορές κατάρρευσης των τελευταίων { $days } ημερών
     }
 # Variables
 # $minutes (integer) - Number of minutes since crash
@@ -219,18 +219,18 @@ pending-reports =
         [one] Όλες οι αναφορές κατάρρευσης (συμπεριλαμβανομένης { $reports } κατάρρευσης σε αναμονή στο δεδομένο χρονικό διάστημα)
        *[other] Όλες οι αναφορές κατάρρευσης (συμπεριλαμβανομένων { $reports } καταρρεύσεων σε αναμονή στο δεδομένο χρονικό διάστημα)
     }
-raw-data-copied = Αντιγράφτηκαν δεδομένα Raw στο πρόχειρο
-text-copied = Αντιγράφτηκε κείμενο στο πρόχειρο
+raw-data-copied = Τα ακατέργαστα δεδομένα αντιγράφτηκαν στο πρόχειρο
+text-copied = Το κείμενο αντιγράφτηκε στο πρόχειρο
 
 ## The verb "blocked" here refers to a graphics feature such as "Direct2D" or "OpenGL layers".
 
-blocked-driver = Δεν υποστηρίζεται από την έκδοση του οδηγού της κάρτας γραφικών σας.
-blocked-gfx-card = Δεν υποστηρίζεται από τη κάρτα γραφικών σας, λόγω ανεπίλυτων προβλημάτων του οδηγού γραφικών.
-blocked-os-version = Δεν υποστηρίζεται από την έκδοση του λειτουργικού σας συστήματος.
-blocked-mismatched-version = Μπλοκαρισμένο λόγω ασυμφωνίας της έκδοσης οδηγού γραφικών μεταξύ μητρώου και DLL.
+blocked-driver = Αποκλείστηκε για την έκδοση του προγράμματος οδήγησης γραφικών σας.
+blocked-gfx-card = Αποκλείστηκε για την κάρτα γραφικών σας, λόγω ανεπίλυτων προβλημάτων προγράμματος οδήγησης.
+blocked-os-version = Αποκλείστηκε για την έκδοση του λειτουργικού σας συστήματος.
+blocked-mismatched-version = Αποκλείστηκε λόγω ασυμφωνίας της έκδοσης του προγράμματος οδήγησης γραφικών μεταξύ μητρώου και DLL.
 # Variables
 # $driverVersion - The graphics driver version string
-try-newer-driver = Δεν υποστηρίζεται από τον οδηγό της κάρτας γραφικών σας. Αναβαθμίστε τον οδηγό γραφικών σε έκδοση { $driverVersion } ή νεότερη.
+try-newer-driver = Αποκλείστηκε για το πρόγραμμα οδήγησης της κάρτας γραφικών σας. Δοκιμάστε να το αναβαθμίστε στην έκδοση { $driverVersion } ή νεότερη.
 # "ClearType" is a proper noun and should not be translated. Feel free to leave English strings if
 # there are no good translations, these are only used in about:support
 clear-type-parameters = Παράμετροι ClearType
@@ -258,31 +258,30 @@ gpu-drivers = Προγράμματα οδήγησης
 gpu-ram = RAM
 gpu-driver-vendor = Εκδότης προγράμματος οδήγησης
 gpu-driver-version = Έκδοση προγράμματος οδήγησης
-gpu-driver-date = Ημερομηνία οδηγού
+gpu-driver-date = Ημερομηνία προγράμματος οδήγησης
 gpu-active = Ενεργό
-webgl1-wsiinfo = Πληροφορίες WSI οδηγού WebGL 1
-webgl1-renderer = Πρόγραμμα απόδοσης WebGL 1
-webgl1-version = Έκδοση οδηγού WebGL 1
-webgl1-driver-extensions = Επεκτάσεις οδηγού WebGL 1
+webgl1-wsiinfo = Πληροφορίες WSI προγράμματος οδήγησης WebGL 1
+webgl1-renderer = Πρόγραμμα οδήγησης απεικόνισης WebGL 1
+webgl1-version = Έκδοση προγράμματος οδήγησης WebGL 1
+webgl1-driver-extensions = Επεκτάσεις προγράμματος οδήγησης WebGL 1
 webgl1-extensions = Επεκτάσεις WebGL 1
-webgl2-wsiinfo = Πληροφορίες WSI οδηγού WebGL 2
-webgl2-renderer = Απόδοση WebGL2
-webgl2-version = Έκδοση οδηγού WebGL 2
-webgl2-driver-extensions = Επεκτάσεις οδηγού WebGL 2
+webgl2-wsiinfo = Πληροφορίες WSI προγράμματος οδήγησης WebGL 2
+webgl2-renderer = Πρόγραμμα οδήγησης απεικόνισης WebGL 2
+webgl2-version = Έκδοση προγράμματος οδήγησης WebGL 2
+webgl2-driver-extensions = Επεκτάσεις προγράμματος οδήγησης WebGL 2
 webgl2-extensions = Επεκτάσεις WebGL 2
-blocklisted-bug = Μπλοκαρίστηκε λόγω γνωστών θεμάτων
+blocklisted-bug = Αποκλείστηκε λόγω γνωστών ζητημάτων
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = σφάλμα { $bugNumber }
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
-support-blocklisted-bug = Προστέθηκε στη λίστα αποκλεισμού λόγω γνωστών ζητημάτων: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+support-blocklisted-bug = Αποκλείστηκε λόγω γνωστών ζητημάτων: <a data-l10n-name="bug-link">σφάλμα { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
-unknown-failure = Μπλοκαρίστηκε, κωδικός αποτυχίας { $failureCode }
+unknown-failure = Αποκλείστηκε· κωδικός αποτυχίας { $failureCode }
 d3d11layers-crash-guard = Συνθέτης D3D11
 d3d11video-crash-guard = Αποκωδικοποιητής βίντεο D3D11
-d3d9video-crash-buard = Αποκωδικοποιητής βίντεο D3D9
 d3d9video-crash-guard = Αποκωδικοποιητής βίντεο D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Αποκωδικοποιητής βίντεο WMF VPX
@@ -292,8 +291,8 @@ gpu-device-reset = Επαναφορά συσκευής
 gpu-device-reset-button = Έναυσμα επαναφοράς συσκευής
 uses-tiling = Χρησιμοποιεί παράθεση
 content-uses-tiling = Χρησιμοποιεί παράθεση (περιεχόμενο)
-off-main-thread-paint-enabled = Η απόδοση γραφικών εκτός κύριου νήματος ενεργοποιήθηκε
-off-main-thread-paint-worker-count = Πλήθος workers ζωγραφικής εκτός κυρίου νήματος
+off-main-thread-paint-enabled = Ενεργό off main thread painting
+off-main-thread-paint-worker-count = Πλήθος workers για off main thread painting
 target-frame-rate = Ρυθμός καρέ στόχου
 min-lib-versions = Αναμενόμενη ελάχιστη έκδοση
 loaded-lib-versions = Έκδοση σε χρήση
@@ -323,18 +322,18 @@ launcher-process-status-unknown = Άγνωστη κατάσταση
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
 multi-process-status-0 = Ενεργοποιήθηκε από το χρήστη
-multi-process-status-1 = Ενεργό από προεπιλογή
+multi-process-status-1 = ενεργό από προεπιλογή
 multi-process-status-2 = Ανενεργό
-multi-process-status-4 = Απενεργοποιημένο από τα εργαλεία προσβασιμότητας
-multi-process-status-6 = Απενεργοποιημένο από μη υποστηριζόμενη είσοδο κειµένου
-multi-process-status-7 = Απενεργοποιήθηκε από πρόσθετα
-multi-process-status-8 = Αναγκαστικώς απενεργοποιημένο
+multi-process-status-4 = Ανενεργό λόγω εργαλείων προσβασιμότητας
+multi-process-status-6 = Ανενεργό λόγω μη υποστηριζόμενης εισόδου κειμένου
+multi-process-status-7 = Ανενεργό λόγω προσθέτων
+multi-process-status-8 = Ανενεργό εξαναγκαστικά
 multi-process-status-unknown = Άγνωστη κατάσταση
-async-pan-zoom = Ασύγχρονο Pan/Zoom
+async-pan-zoom = Ασύγχρονο pan/zoom
 apz-none = κανένα
-wheel-enabled = είσοδος τροχού ενεργοποιημένη
-touch-enabled = είσοδος αφής ενεργοποιημένη
-drag-enabled = σύρσιμο γραμμής κύλισης ενεργοποιημένο
+wheel-enabled = είσοδος ρόδας ενεργή
+touch-enabled = είσοδος αφής ενεργή
+drag-enabled = ολίσθηση γραμμής κύλισης ενεργή
 keyboard-enabled = πληκτρολόγιο ενεργό
 autoscroll-enabled = αυτόματη κύλιση ενεργή
 zooming-enabled = ομαλό ζουμ ενεργό
@@ -342,8 +341,8 @@ zooming-enabled = ομαλό ζουμ ενεργό
 ## Variables
 ## $preferenceKey (string) - String ID of preference
 
-wheel-warning = ασύγχρονη είσοδος τροχού απενεργοποιημένη λόγω μη υποστηριζόμενης προτίμησης: { $preferenceKey }
-touch-warning = ασύγχρονη είσοδος αφής απενεργοποιημένη λόγω μη υποστηριζόμενης προτίμησης: { $preferenceKey }
+wheel-warning = ανενεργή ασύγχρονη είσοδος ρόδας λόγω μη υποστηριζόμενης προτίμησης: { $preferenceKey }
+touch-warning = ανενεργή ασύγχρονη είσοδος αφής λόγω μη υποστηριζόμενης προτίμησης: { $preferenceKey }
 
 ## Strings representing the status of the Enterprise Policies engine.
 

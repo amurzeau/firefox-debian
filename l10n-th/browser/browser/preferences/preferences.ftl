@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = เฉพาะเมื่อ { -brand-short-name } ถูกตั้งให้ปิดกั้นตัวติดตามที่รู้จัก
 do-not-track-option-always =
     .label = เสมอ
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] ตัวเลือก
-           *[other] ค่ากำหนด
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] ตัวเลือก
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = ส่วนขยาย <img data-l10n
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = ส่วนขยาย <img data-l10n-name="icon"/> { $name } กำลังควบคุมหน้าแท็บใหม่ของคุณ
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = ส่วนเสริม <img data-l10n-name="icon"/>{ $name } กำลังควบคุมการตั้งค่านี้
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = ส่วนขยาย <img data-l10n-name="icon"/> { $name } กำลังควบคุมการตั้งค่านี้
@@ -359,13 +356,6 @@ update-application-warning-cross-user-setting = การตั้งค่า�
 update-application-use-service =
     .label = ใช้บริการเบื้องหลังเพื่อติดตั้งการอัปเดต
     .accesskey = ช
-update-enable-search-update =
-    .label = อัปเดตเครื่องมือค้นหาโดยอัตโนมัติ
-    .accesskey = อ
-update-pref-write-failure-title = การเขียนล้มเหลว
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = ไม่สามารถบันทึกค่ากำหนด ไม่สามารถเขียนไปยังไฟล์: { $path }
 update-setting-write-failure-title = เกิดข้อผิดพลาดในการบันทึกค่ากำหนดการอัปเดต
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -529,7 +519,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = เพิ่มแถบค้นหาในแถบเครื่องมือ
 search-engine-default-header = เครื่องมือค้นหาเริ่มต้น
-search-engine-default-desc = เลือกเครื่องมือค้นหาเริ่มต้นที่จะใช้ในแถบที่อยู่และแถบค้นหา
 search-engine-default-desc-2 = นี่คือเครื่องมือค้นหาเริ่มต้นของคุณในแถบที่อยู่และแถบค้นหา คุณสามารถเปลี่ยนได้ตลอดเวลา
 search-engine-default-private-desc-2 = เลือกเครื่องมือค้นหาเริ่มต้นอื่นสำหรับเฉพาะหน้าต่างส่วนตัว
 search-separate-default-engine =
@@ -566,6 +555,9 @@ search-restore-default =
 search-remove-engine =
     .label = เอาออก
     .accesskey = อ
+search-add-engine =
+    .label = เพิ่ม
+    .accesskey = พ
 search-find-more-link = ค้นหาเครื่องมือค้นหาเพิ่มเติม
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -577,7 +569,6 @@ search-keyword-warning-bookmark = คุณได้เลือกคำสำ�
 
 ## Containers Section
 
-containers-back-link = « ย้อนกลับ
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -596,20 +587,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = เอาออก
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = นำเว็บของคุณไปกับคุณ
 sync-signedout-description = ประสานที่คั่นหน้า, ประวัติ, แท็บ, รหัสผ่าน, ส่วนเสริม และค่ากำหนดในอุปกรณ์ทั้งหมดของคุณ
-sync-signedout-account-title = เชื่อมต่อกับ { -fxaccount-brand-name }
-sync-signedout-account-create = ไม่มีบัญชี? เริ่มต้นใช้งาน
-    .accesskey = ม
-sync-signedout-account-signin =
-    .label = ลงชื่อเข้า…
-    .accesskey = ล
 sync-signedout-account-signin2 =
     .label = ลงชื่อเข้า { -sync-brand-short-name }…
     .accesskey = i
@@ -623,16 +605,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = ดาวน์โหลด Firefox สำหรับ <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> หรือ <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> เพื่อซิงค์กับอุปกรณ์มือถือของคุณ
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = เปลี่ยนรูปโปรไฟล์
-sync-disconnect =
-    .label = ตัดการเชื่อมต่อ…
-    .accesskey = ต
 sync-sign-out =
     .label = ลงชื่อออก…
     .accesskey = g
@@ -649,8 +625,6 @@ sync-remove-account =
 sync-sign-in =
     .label = ลงชื่อเข้า
     .accesskey = ง
-sync-signedin-settings-header = การตั้งค่า Sync
-sync-signedin-settings-desc = เลือกสิ่งที่คุณต้องการจะประสานบนอุปกรณ์ของคุณโดยใช้ { -brand-short-name }
 
 ## Sync section - enabling or disabling sync.
 
@@ -703,10 +677,6 @@ sync-engine-tabs =
     .label = แท็บที่เปิดอยู่
     .tooltiptext = รายการสิ่งที่เปิดอยู่ในอุปกรณ์ที่ซิงค์ทั้งหมด
     .accesskey = บ
-sync-engine-logins =
-    .label = ข้อมูลการเข้าสู่ระบบ
-    .tooltiptext = ชื่อผู้ใช้และรหัสผ่านที่คุณได้บันทึกไว้
-    .accesskey = ก
 sync-engine-logins-passwords =
     .label = ข้อมูลการเข้าสู่ระบบและรหัสผ่าน
     .tooltiptext = ชื่อผู้ใช้และรหัสผ่านที่คุณได้บันทึกไว้
@@ -745,18 +715,10 @@ sync-device-name-save =
     .label = บันทึก
     .accesskey = บ
 sync-connect-another-device = เชื่อมต่ออุปกรณ์อื่น
-sync-manage-devices = จัดการอุปกรณ์
-sync-fxa-begin-pairing = จับคู่อุปกรณ์
-sync-tos-link = เงื่อนไขการให้บริการ
-sync-fxa-privacy-notice = ประกาศความเป็นส่วนตัว
 
 ## Privacy Section
 
 privacy-header = ความเป็นส่วนตัวเบราว์เซอร์
-
-## Privacy Section - Forms
-
-logins-header = ข้อมูลการเข้าสู่ระบบและรหัสผ่าน
 
 ## Privacy Section - Logins and Passwords
 
@@ -890,8 +852,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = ชนิดที่ถูกปิดกั้น
     .accesskey = ช
-sitedata-option-block-trackers =
-    .label = ตัวติดตามจากบุคคลที่สาม
 sitedata-option-block-cross-site-trackers =
     .label = ตัวติดตามข้ามไซต์
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -937,27 +897,9 @@ addressbar-suggestions-settings = เปลี่ยนค่ากำหนด�
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = การปิดกั้นเนื้อหา
-content-blocking-section-description = ปกป้องความเป็นส่วนตัวของคุณขณะคุณท่องเว็บ ปิดกั้นเนื้อหาที่มองไม่เห็นที่ติดตามไซต์ที่คุณเยี่ยมชมและสอดส่องข้อมูลส่วนตัวของคุณ การปิดกั้นเนื้อหาบางส่วนอาจทำให้หน้าโหลดเร็วขึ้น
 content-blocking-enhanced-tracking-protection = การป้องกันการติดตามที่มากขึ้น
 content-blocking-section-top-level-description = ตัวติดตามจะติดตามคุณทางออนไลน์เพื่อรวบรวมข้อมูลเกี่ยวกับพฤติกรรมการค้นหาและความสนใจของคุณ { -brand-short-name } ปิดกั้นตัวติดตามและสคริปต์ที่เป็นอันตรายอื่น ๆ จำนวนมาก
 content-blocking-learn-more = เรียนรู้เพิ่มเติม
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = มาตรฐาน
-    .accesskey = ม
-content-blocking-setting-strict =
-    .label = เข้มงวด
-    .accesskey = ข
-content-blocking-setting-custom =
-    .label = กำหนดเอง
-    .accesskey = ก
-content-blocking-standard-desc = การป้องกันและประสิทธิภาพที่สมดุล อนุญาตตัวติดตามบางส่วนเพื่อให้เว็บไซต์ทำงานได้ถูกต้อง
-content-blocking-strict-description = การป้องกันที่แข็งแกร่งขึ้น อาจส่งผลให้ไซต์บางส่วนไม่สมบูรณ์
-content-blocking-custom-desc = เลือกสิ่งที่จะปิดกั้น
-content-blocking-private-trackers = ตัวติดตามที่รู้จักเฉพาะในหน้าต่างส่วนตัว
-content-blocking-third-party-cookies = คุกกี้ติดตามจากบุคคลที่สาม
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -984,23 +926,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = คุกกี้�
 content-blocking-social-media-trackers = ตัวติดตามสื่อสังคมออนไลน์
 content-blocking-all-cookies = คุกกี้ทั้งหมด
 content-blocking-unvisited-cookies = คุกกี้จากไซต์ที่ไม่ได้เยี่ยมชม
-content-blocking-all-windows-trackers = ตัวติดตามที่รู้จักในหน้าต่างทั้งหมด
 content-blocking-all-windows-tracking-content = ตัวติดตามเนื้อหาในทุกหน้าต่าง
 content-blocking-all-third-party-cookies = คุกกี้จากบุคคลที่สามทั้งหมด
 content-blocking-cryptominers = ตัวขุดเหรียญดิจิทัล
 content-blocking-fingerprinters = ลายนิ้วมือดิจิทัล
 content-blocking-warning-title = ระวัง!
-content-blocking-warning-description = การปิดกั้นเนื้อหาอาจส่งผลให้บางเว็บใช้การไม่ได้ แต่มันก็ง่ายที่จะปลดการปิดกั้นสำหรับเว็บที่คุณไว้ใจ
-content-blocking-learn-how = เรียนรู้วิธี
 content-blocking-and-isolating-etp-warning-description = การปิดกั้นตัวติดตามและแยกคุกกี้อาจส่งผลกระทบต่อการทำงานของบางไซต์ได้ โหลดหน้าใหม่พร้อมตัวติดตามเพื่อโหลดเนื้อหาทั้งหมด
 content-blocking-warning-learn-how = เรียนรู้วิธี
 content-blocking-reload-description = คุณจะต้องโหลดแท็บของคุณใหม่เพื่อใช้การเปลี่ยนแปลงเหล่านี้
 content-blocking-reload-tabs-button =
     .label = โหลดแท็บทั้งหมดใหม่
     .accesskey = ล
-content-blocking-trackers-label =
-    .label = ตัวติดตาม
-    .accesskey = ต
 content-blocking-tracking-content-label =
     .label = ตัวติดตามเนื้อหา
     .accesskey = T
@@ -1059,12 +995,6 @@ permissions-notification-link = เรียนรู้เพิ่มเติ
 permissions-notification-pause =
     .label = หยุดการแจ้งเตือนชั่วคราวจนกระทั่ง { -brand-short-name } เริ่มการทำงานใหม่
     .accesskey = ห
-permissions-block-autoplay-media2 =
-    .label = ปิดกั้นเว็บไซต์จากการเล่นเสียงโดยอัตโนมัติ
-    .accesskey = ป
-permissions-block-autoplay-media-exceptions =
-    .label = ข้อยกเว้น…
-    .accesskey = ข
 permissions-autoplay = การเล่นอัตโนมัติ
 permissions-autoplay-settings =
     .label = การตั้งค่า…

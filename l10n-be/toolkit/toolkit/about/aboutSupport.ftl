@@ -80,6 +80,9 @@ show-dir-label =
         [windows] Адкрыць папку
        *[other] Адкрыць дырэкторыю
     }
+environment-variables-title = Зменныя асяроддзя
+environment-variables-name = Назва
+environment-variables-value = Значэнне
 experimental-features-title = Эксперыментальныя магчымасці
 experimental-features-name = Назва
 experimental-features-value = Значэнне
@@ -107,8 +110,6 @@ graphics-desktop-environment = Працоўнае асяроддзе
 place-database-title = База звестак месцаў
 place-database-integrity = Цэльнасць
 place-database-verify-integrity = Праверыць цэльнасць
-js-title = JavaScript
-js-incremental-gc = Incremental GC
 a11y-title = Даступнасць
 a11y-activated = Задзейнічаны
 a11y-force-disabled = Прадухіліць даступнасць
@@ -138,7 +139,6 @@ restart-button-label = Перазапусціць
 
 audio-backend = Аудыё-падсістэма
 max-audio-channels = Макс. колькасць каналаў
-channel-layout = Пераважны фармат канала
 sample-rate = Пераважная частата дыскрэтызацыі
 roundtrip-latency = Затрымка туды і назад (стандартнае адхіленне)
 media-title = Медыя
@@ -287,7 +287,6 @@ support-blocklisted-bug = Заблакавана з-за вядомых праб
 unknown-failure = У спісе блакавання; код памылкі { $failureCode }
 d3d11layers-crash-guard = Кампазітар D3D11
 d3d11video-crash-guard = Відэадэкодэр D3D11
-d3d9video-crash-buard = Відэадэкодэр D3D9
 d3d9video-crash-guard = Відэадэкодэр D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Відэадэкодэр WMF VPX

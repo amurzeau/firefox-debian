@@ -3,9 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 process-type-web = Webinhoud
-# process used to run privileged pages,
-# such as about:home
-process-type-privileged = Bevoegde inhoud
 # process used to run privileged about pages,
 # such as about:home
 process-type-privilegedabout = Over Met privileges

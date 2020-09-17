@@ -32,10 +32,14 @@ pippki-pw-change2empty-in-fips-mode = Trenutno ste v načinu FIPS. FIPS zahteva 
 
 ## Reset Primary Password dialog
 
+reset-primary-password-window =
+    .title = Ponastavi glavno geslo
+    .style = width: 40em
 reset-password-button-label =
     .label = Ponastavi
 reset-password-text = Če ponastavite glavno geslo, bodo vsi vaši osebni podatki pozabljeni (shranjena spletna in e-poštna gesla, podatki o obrazcih, osebna digitalna potrdila in zasebni ključi). Ste prepričani, da želite ponastaviti svoje glavno geslo?
 reset-primary-password-text = Če ponastavite glavno geslo, bodo vsi vaši osebni podatki pozabljeni (shranjena spletna in e-poštna gesla, osebna digitalna potrdila in zasebni ključi). Ste prepričani, da želite ponastaviti svoje glavno geslo?
+pippki-reset-password-confirmation-title = Ponastavi glavno geslo
 pippki-reset-password-confirmation-message = Vaše glavno geslo je bilo ponastavljeno.
 
 ## Downloading cert dialog

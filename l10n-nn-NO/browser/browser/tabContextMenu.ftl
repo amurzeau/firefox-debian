@@ -53,11 +53,8 @@ move-to-end =
 move-to-new-window =
     .label = Flytt til eit nytt vindauge
     .accesskey = F
-undo-close-tab =
-    .label = Angre attlating av fane
-    .accesskey = r
 tab-context-close-multiple-tabs =
-    .label = Lat att flere faner
+    .label = Lat att fleire faner
     .accesskey = f
 
 ## Variables:

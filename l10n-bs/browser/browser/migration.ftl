@@ -85,10 +85,19 @@ imported-edge-reading-list = Lista za čitanje (iz Edge-a)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.
 
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-checkbox =
+    .label = Spašene prijave i lozinke
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-label =
+    .value = Spašene prijave i lozinke
 browser-data-session-checkbox =
     .label = Prozori i tabovi
 browser-data-session-label =

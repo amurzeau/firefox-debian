@@ -2,6 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
+# This file gets parsed into a JS dictionary of all known error message ids in
+# gen_aboutneterror_codes.py . If we end up needing fluent attributes or
+# refactoring them in some way, the script will need updating.
+
 # Variables:
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
@@ -220,8 +226,8 @@ sec-error-no-module = 보안 라이브러리: 요청된 작업을 수행할 수 
 sec-error-no-token = 보안 카드나 토큰이 존재하지 않습니다. 초기화가 필요하거나, 제거되었습니다.
 sec-error-read-only = 보안 라이브러리: 읽기 전용 저장소입니다.
 sec-error-no-slot-selected = 슬롯 또는 토큰이 선택되지 않았습니다.
-sec-error-cert-nickname-collision = 같은 별명의 인증서가 이미 존재합니다.
-sec-error-key-nickname-collision = 같은 별명의 키가 이미 존재합니다.
+sec-error-cert-nickname-collision = 같은 별명의 인증서가 이미 있습니다.
+sec-error-key-nickname-collision = 같은 별명의 키가 이미 있습니다.
 sec-error-safe-not-created = 안전 객체를 생성하는 동안 오류
 sec-error-baggage-not-created = 수화물 객체를 생성하는 동안 오류
 xp-java-remove-principal-error = 대표를 제거할 수 없음
@@ -238,7 +244,7 @@ sec-error-pkcs12-corrupt-pfx-structure = 가져올 수 없습니다.  파일 구
 sec-error-pkcs12-unsupported-pbe-algorithm = 가져올 수 없습니다. 암호화 알고리즘이 지원되지 않습니다.
 sec-error-pkcs12-unsupported-version = 가져올 수 없습니다.  파일 버전이 지원되지 않습니다.
 sec-error-pkcs12-privacy-password-incorrect = 가져올 수 없습니다. 틀린 사적 비밀번호입니다.
-sec-error-pkcs12-cert-collision = 가져올 수 없습니다.  같은 별명이 저장소에 이미 존재합니다.
+sec-error-pkcs12-cert-collision = 가져올 수 없습니다. 같은 별명이 저장소에 이미 있습니다.
 sec-error-user-cancelled = 사용자가 취소를 눌렸습니다.
 sec-error-pkcs12-duplicate-data = 가져오지 않음, 저장소에 이미 존재합니다.
 sec-error-message-send-aborted = 메시지를 보내지 않았습니다.
@@ -305,7 +311,7 @@ sec-error-crl-unknown-critical-extension = 발급자의 V2 인증서 폐기 목�
 sec-error-unknown-object-type = 알 수 없는 객체 유형이 지정 되었습니다.
 sec-error-incompatible-pkcs11 = PKCS #11 드라이버가 호환되지 않는 방식으로 기술적 명세를 어깁니다.
 sec-error-no-event = 현재 새로운 슬롯 이벤트가 존재하지 않습니다.
-sec-error-crl-already-exists = CRL이 이미 존재합니다.
+sec-error-crl-already-exists = CRL이 이미 있습니다.
 sec-error-not-initialized = NSS가 초기화되지 않았습니다.
 sec-error-token-not-logged-in = PKCS #11 토큰이 로그인 되지 않아 작업이 실패했습니다.
 sec-error-ocsp-responder-cert-invalid = 설정된 OCSP 응답자의 인증서가 유효하지 않습니다.

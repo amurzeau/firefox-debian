@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Berre når { -brand-short-name } er innstilt for å blokkere kjende sporarar
 do-not-track-option-always =
     .label = Alltid
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Innstillingar
-           *[other] Innstillingar
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Innstillingar
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Ei utviding, <img data-l10n-name="icon"
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Ei utviding, <img data-l10n-name="icon"/> { $name }, styrer Ny fane-sida di.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Ei utviding, <img data-l10n-name="icon"/> { $name }, styrer denne innstillinga.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Eit tillegg, <img data-l10n-name="icon"/> { $name }, kontrollerer denne innstillinga.
@@ -154,7 +151,7 @@ open-new-link-as-tabs =
     .label = Opne lenker i faner i staden for nye vindauge
     .accesskey = l
 warn-on-close-multiple-tabs =
-    .label = Åtvar meg ved attlating av fleire faner
+    .label = Åtvar meg når eg vil late att fleire faner
     .accesskey = Å
 warn-on-open-many-tabs =
     .label = Åtvar meg når opning av mange faner samstundes kan gjere { -brand-short-name } treg
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Denne innstillinga gjeld for all
 update-application-use-service =
     .label = Bruk ei bakgrunnsteneste for å installere oppdateringar
     .accesskey = B
-update-enable-search-update =
-    .label = Oppdater søkjemotorar automatisk
-    .accesskey = e
-update-pref-write-failure-title = Skrivfeil
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Klarte ikkje å lagre innstillinga. Kunne ikkje skrive til fila: { $path }
 update-setting-write-failure-title = Klarte ikkje å lagre oppdateringsinnstillingar
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -433,7 +423,7 @@ browsing-search-on-start-typing =
     .label = Søk etter tekst når eg byrjar å skrive
     .accesskey = k
 browsing-picture-in-picture-toggle-enabled =
-    .label = Aktiver videokontrollar for bilde-i-bilde
+    .label = Slå på videokontrollar for bilde-i-bilde
     .accesskey = e
 browsing-picture-in-picture-learn-more = Les meir
 browsing-cfr-recommendations =
@@ -545,8 +535,7 @@ search-bar-hidden =
 search-bar-shown =
     .label = Legg til søkjelinje i verktøylinja
 search-engine-default-header = Standard søkjemotor
-search-engine-default-desc = Vel standardsøkjemotor som skal brukast i adresselinja og søkelinja.
-search-engine-default-desc-2 = Dette er standardsøkemotoren din i adresselinja og søkelinja. Du kan byte når som helst.
+search-engine-default-desc-2 = Dette er standardsøkjemotoren din i adresselinja og søkelinja. Du kan byte når som helst.
 search-engine-default-private-desc-2 = Vel ein annan standardsøkjemotor berre for private vindauge
 search-separate-default-engine =
     .label = Bruk denne søkjemotoren i private vindauge
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Fjern
     .accesskey = F
+search-add-engine =
+    .label = Legg til
+    .accesskey = L
 search-find-more-link = Finn fleire søkjemotorar
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = Du har valt eit nøkkelord som allereie vert b
 
 ## Containers Section
 
-containers-back-link = « Gå tilbake
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Fjern
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Ta med deg nettet
 sync-signedout-description = Synkroniser bokmerke, historikk, faner, passord, utvidingar og innstillingar på tvers av alle einingane dine.
-sync-signedout-account-title = Kople til ein { -fxaccount-brand-name }
-sync-signedout-account-create = Har du ikkje ein konto? Kom i gang
-    .accesskey = H
-sync-signedout-account-signin =
-    .label = Logg inn…
-    .accesskey = i
 sync-signedout-account-signin2 =
     .label = Logg inn på { -sync-brand-short-name }…
     .accesskey = i
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Last ned Firefox for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> eller  <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> for å synkronisere med mobileininga di.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Endre profilbilde
-sync-disconnect =
-    .label = Kople frå…
-    .accesskey = f
 sync-sign-out =
     .label = Logg ut…
     .accesskey = g
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Logg inn
     .accesskey = g
-sync-signedin-settings-header = Sync-innstillingar
-sync-signedin-settings-desc = Vel kva du vil synkronisere på einingane dine med { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = Opne faner
     .tooltiptext = Ei liste over kva som er ope på alle synkroniserte einingar
     .accesskey = f
-sync-engine-logins =
-    .label = Innloggingar
-    .tooltiptext = Brukarnamn og passord du har lagra
-    .accesskey = l
 sync-engine-logins-passwords =
     .label = Innloggingar og passord
     .tooltiptext = Brukarnamn og passord som du har lagra
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Lagre
     .accesskey = L
 sync-connect-another-device = Kople til ei anna eining
-sync-manage-devices = Handter einingar
-sync-fxa-begin-pairing = Par ei eining
-sync-tos-link = Tenestevilkår
-sync-fxa-privacy-notice = Personvernpraksis
 
 ## Privacy Section
 
 privacy-header = Nettlesarpersonvern
-
-## Privacy Section - Forms
-
-logins-header = Innloggingar og passord
 
 ## Privacy Section - Logins and Passwords
 
@@ -906,8 +868,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Type blokkert
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Tredjeparts-sporarar
 sitedata-option-block-cross-site-trackers =
     .label = Sporing på tvers av nettstadar
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -953,27 +913,9 @@ addressbar-suggestions-settings = Endre innstillingar for søkjeforslag
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Innhaldsblokkering
-content-blocking-section-description = Ta vare på personvernet ditt når du surfar. Blokker usynleg innhald som sporar sidene du besøkjer og profilerer deg. Blokkering av noko av dette innhaldet kan gjere sider raskare å laste.
 content-blocking-enhanced-tracking-protection = Utvida sporingsvern
 content-blocking-section-top-level-description = Sporarar følgjer deg rundt på nettet for å samle informasjon om surfevanane og interessene dine. { -brand-short-name } blokkerer mange av desse sporarane og andre vondsinna skript.
 content-blocking-learn-more = Les meir
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standard
-    .accesskey = S
-content-blocking-setting-strict =
-    .label = Streng
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Tilpassa
-    .accesskey = p
-content-blocking-standard-desc = Balansert for vern og yting. Tillèt nokre sporarar slik at nettsider fungerer som dei skal.
-content-blocking-strict-description = Sterkare vern kan føre til feil på nettsider.
-content-blocking-custom-desc = Vell kva du vil blokkere.
-content-blocking-private-trackers = Kjende sporarar berre i Private vindauge
-content-blocking-third-party-cookies = Tredjeparts sporingsinfokapslar
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1000,23 +942,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Sporingsinfokapsler 
 content-blocking-social-media-trackers = Sporing via sosiale medium
 content-blocking-all-cookies = Alle infokapslar
 content-blocking-unvisited-cookies = Infokapslar frå ikkje-besøkte nettsider
-content-blocking-all-windows-trackers = Kjende sporarar i alle vindauge
 content-blocking-all-windows-tracking-content = Sporingsinnhald i alle vindauge
 content-blocking-all-third-party-cookies = Alle tredjeparts infokapslar
 content-blocking-cryptominers = Kryptoutvinnarar
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Viktig!
-content-blocking-warning-description = Blokkering av innhald kan føre til at nokre nettstadar sluttar å fungere. Det er enkelt å deaktivere blokkering for nettstadar du stolar på.
-content-blocking-learn-how = Finn ut korleis
 content-blocking-and-isolating-etp-warning-description = Blokkering av sporarar og isolering av infokapslar kan påverke funksjonaliteten på nokre nettstadar. Last nettsida inn på nytt med sporarar for å laste alt innhald.
 content-blocking-warning-learn-how = Les korleis
 content-blocking-reload-description = Du må oppdatere fanene dine for å kunne bruke desse endringane.
 content-blocking-reload-tabs-button =
     .label = Oppdater alle faner
     .accesskey = O
-content-blocking-trackers-label =
-    .label = Sporarar
-    .accesskey = S
 content-blocking-tracking-content-label =
     .label = Sporingsinnhald
     .accesskey = S
@@ -1075,12 +1011,6 @@ permissions-notification-link = Les meir
 permissions-notification-pause =
     .label = Set varsel på pause til { -brand-short-name } startar på nytt
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Blokker nettstadar frå å automatisk spele av lyd
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = Unntak…
-    .accesskey = U
 permissions-autoplay = Automatisk avspeling
 permissions-autoplay-settings =
     .label = Innstillingar

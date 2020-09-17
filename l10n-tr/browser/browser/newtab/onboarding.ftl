@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Daha fazla bilgi al
-onboarding-button-label-try-now = Hemen deneyin
 onboarding-button-label-get-started = Başlayalım
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Başlayalım
 onboarding-welcome-header = { -brand-short-name } tarayıcısına hoş geldiniz
 onboarding-welcome-body = Tarayıcınız hazır. Ama { -brand-product-name } yalnızca bir tarayıcı değil.
 onboarding-welcome-learn-more = Avantajlar hakkında daha fazla bilgi alın.
-onboarding-join-form-header = { -brand-product-name }’a katılın
 onboarding-welcome-modal-get-body = Tarayıcınız hazır. Ama { -brand-product-name } yalnızca bir tarayıcı değil.
 onboarding-welcome-modal-supercharge-body = Gizlilik korumanızı güçlendirin.
 onboarding-welcome-modal-privacy-body = Tarayıcınız hazır. Şimdi biraz daha gizlilik koruması ekleyelim.
@@ -102,6 +100,30 @@ onboarding-multistage-theme-tooltip-dark =
 onboarding-multistage-theme-tooltip-alpenglow =
     .title = Düğmeler, menüler ve pencereler için renkli bir görünüm kullanın.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title = Düğmeler, menüler ve pencereler için işletim sisteminizin görünümünü devralın.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description = Düğmeler, menüler ve pencereler için işletim sisteminizin görünümünü devralın.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title = Düğmeler, menüler ve pencereler için açık bir görünüm kullanın.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description = Düğmeler, menüler ve pencereler için açık bir görünüm kullanın.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title = Düğmeler, menüler ve pencereler için koyu bir görünüm kullanın.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description = Düğmeler, menüler ve pencereler için koyu bir görünüm kullanın.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title = Düğmeler, menüler ve pencereler için renkli bir görünüm kullanın.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description = Düğmeler, menüler ve pencereler için renkli bir görünüm kullanın.
 
 ## Welcome full page string
 
@@ -127,11 +149,7 @@ onboarding-sync-form-sub-header = { -sync-brand-name }'e devam edin.
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Kullanışlı ürünler
 onboarding-benefit-products-text = Tüm cihazlarınızda gizliliğinize saygı gösteren araçlarımızla her işinizi halledin.
-onboarding-benefit-knowledge-title = Pratik bilgi
-onboarding-benefit-knowledge-text = İnterneti anlamak ve internette güvende kalmak için bilmeniz gereken her şeyi öğrenin.
-onboarding-benefit-privacy-title = Gerçek gizlilik
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -152,17 +170,6 @@ onboarding-benefit-lockwise-text = Parolalarınızı güvenle saklayın ve yanı
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Gizli gezinti
-onboarding-private-browsing-text = Yalnız başınıza gezin. İçerik engelleme ile gizli gezinti özelliği, web’de sizi izleyen çevrimiçi takipçileri engeller.
-onboarding-screenshots-title = Screenshots
-onboarding-screenshots-text = { -brand-short-name } tarayıcınızdan çıkmadan ekran görüntüleri alın, kaydedin ve paylaşın. İstediğiniz bölgeyi veya sayfanın tamamını kaydedebilir, web’e yükleyip kolayca paylaşabilirsiniz.
-onboarding-addons-title = Eklentiler
-onboarding-addons-text = { -brand-short-name } tarayıcınıza daha da fazla özellik ekleyebilirsiniz. Çeviri yapın, hava durumuna bakın ya da yeni bir temayla kişiliğinizi yansıtın.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Sinir bozucu reklamları engellemenize izin veren Ghostery gibi eklentilerle daha hızlı, daha akıllı ve daha güvenli gezinebilirsiniz.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Eşitle
-onboarding-fxa-text = Yer imlerinizi, parolalarınızı ve açık sekmelerinizi { -brand-short-name } kullandığınız tüm cihazlarınızla eşitlemek için { -fxaccount-brand-name } açın.
 onboarding-tracking-protection-title2 = İzlenme koruması
 onboarding-tracking-protection-text2 = { -brand-short-name } web sitelerinin internette sizi izlemesini engeller, reklamların hangi sitelerde gezdiğinizi takip etmesini zorlaştırır.
 onboarding-tracking-protection-button2 = Nasıl çalışır?
@@ -171,7 +178,6 @@ onboarding-data-sync-title = Ayarlarınızı yanınızda taşıyın
 onboarding-data-sync-text2 = Yer imlerinizi, parolalarınızı ve daha fazlasını { -brand-product-name } kullandığınız her yerde senkronize edin.
 onboarding-data-sync-button2 = { -sync-brand-short-name }’e giriş yap
 onboarding-firefox-monitor-title = Veri ihlallerinden haberiniz olsun
-onboarding-firefox-monitor-text = { -monitor-brand-name }, e-posta adresinizin veri ihlallerinde yer alıp almadığını takip eder, verileriniz ele geçirilirse sizi uyarır.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name }, e-posta adresinizin veri ihlallerinde yer alıp almadığını takip eder ve verileriniz ele geçirilirse sizi uyarır.
 onboarding-firefox-monitor-button = Uyarılara kaydol
 onboarding-browse-privately-title = Gizlice dolaşın
@@ -188,17 +194,11 @@ onboarding-mobile-phone-button = Mobil tarayıcıyı indir
 onboarding-send-tabs-title = Kendinize sekme gönderin
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Sekme Gönder özelliğiyle, kopyala-yapıştır yapmadan ve tarayıcınızdan ayrılmadan cihazlarınızdan arasında anında sekme paylaşabilirsiniz.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Linkleri kopyalamaya, tarayıcınızdan çıkmaya gerek yok. Sayfaları cihazlarınız arasında kolayca paylaşın.
 onboarding-send-tabs-button = Sekme Gönder’i kullanma başla
 onboarding-pocket-anywhere-title = Her yerde okuyun ve dinleyin
 onboarding-pocket-anywhere-text2 = Beğendiğiniz içerikleri { -pocket-brand-name } uygulamasına çevrimdışı kaydedin; sonra internetiniz yokken bile onları okuyun, dinleyin ve izleyin.
 onboarding-pocket-anywhere-button = { -pocket-brand-name }’ı deneyin
-onboarding-lockwise-passwords-title = Parolalarınızı yanınızda taşıyın
-onboarding-lockwise-passwords-text2 = { -lockwise-brand-name } ile parolalarınızı güvenle kaydedip saklayın, hesaplarınıza kolayca giriş yapın.
-onboarding-lockwise-passwords-button2 = Uygulamayı indir
 onboarding-lockwise-strong-passwords-title = Güçlü parolalar oluşturup saklayın
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } sizin için güçlü parolalar oluşturur ve onları güvenli bir şekilde kaydeder.
 onboarding-lockwise-strong-passwords-button = Hesaplarınızı yönetin

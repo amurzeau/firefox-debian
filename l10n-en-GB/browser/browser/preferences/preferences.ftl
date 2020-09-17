@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Only when { -brand-short-name } is set to block known trackers
 do-not-track-option-always =
     .label = Always
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Options
-           *[other] Preferences
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Options
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = An extension, <img data-l10n-name="icon
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = An extension, <img data-l10n-name="icon"/> { $name }, is controlling your New Tab page.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = An extension, <img data-l10n-name="icon"/> { $name }, is controlling this setting.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = An extension, <img data-l10n-name="icon"/> { $name }, is controlling this setting.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = This setting will apply to all W
 update-application-use-service =
     .label = Use a background service to install updates
     .accesskey = b
-update-enable-search-update =
-    .label = Automatically update search engines
-    .accesskey = e
-update-pref-write-failure-title = Write Failure
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Unable to save preference. Could not write to file: { $path }
 update-setting-write-failure-title = Error saving Update preferences
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Add search bar in toolbar
 search-engine-default-header = Default Search Engine
-search-engine-default-desc = Choose the default search engine to use in the address bar and search bar.
 search-engine-default-desc-2 = This is your default search engine in the address bar and search bar. You can switch it at any time.
 search-engine-default-private-desc-2 = Choose a different default search engine for Private Windows only
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Remove
     .accesskey = R
+search-add-engine =
+    .label = Add
+    .accesskey = A
 search-find-more-link = Find more search engines
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = You have chosen a keyword that is currently in
 
 ## Containers Section
 
-containers-back-link = « Go Backwards
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Remove
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Take your Web with you
 sync-signedout-description = Synchronise your bookmarks, history, tabs, passwords, add-ons, and preferences across all your devices.
-sync-signedout-account-title = Connect with a { -fxaccount-brand-name }
-sync-signedout-account-create = Don’t have an account? Get started
-    .accesskey = C
-sync-signedout-account-signin =
-    .label = Sign In…
-    .accesskey = I
 sync-signedout-account-signin2 =
     .label = Sign in to { -sync-brand-short-name }…
     .accesskey = i
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Download Firefox for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> or <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> to synchronise with your mobile device.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Change profile picture
-sync-disconnect =
-    .label = Disconnect…
-    .accesskey = D
 sync-sign-out =
     .label = Sign Out ...
     .accesskey = g
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Sign in
     .accesskey = g
-sync-signedin-settings-header = Sync Settings
-sync-signedin-settings-desc = Choose what to synchronise on your devices using { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = Open Tabs
     .tooltiptext = A list of what’s open on all synchronised devices
     .accesskey = T
-sync-engine-logins =
-    .label = Logins
-    .tooltiptext = Usernames and passwords you’ve saved
-    .accesskey = L
 sync-engine-logins-passwords =
     .label = Logins and passwords
     .tooltiptext = Usernames and passwords you've saved
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Save
     .accesskey = v
 sync-connect-another-device = Connect another device
-sync-manage-devices = Manage devices
-sync-fxa-begin-pairing = Pair a device
-sync-tos-link = Terms of Service
-sync-fxa-privacy-notice = Privacy Notice
 
 ## Privacy Section
 
 privacy-header = Browser Privacy
-
-## Privacy Section - Forms
-
-logins-header = Logins and Passwords
 
 ## Privacy Section - Logins and Passwords
 
@@ -906,8 +868,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Type blocked
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Third-party trackers
 sitedata-option-block-cross-site-trackers =
     .label = Cross-site trackers
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -953,27 +913,9 @@ addressbar-suggestions-settings = Change preferences for search engine suggestio
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Content Blocking
-content-blocking-section-description = Protect your privacy while you browse. Block invisible content that tracks the sites you visit and profiles you. Blocking some of this content may make pages load faster.
 content-blocking-enhanced-tracking-protection = Enhanced Tracking Protection
 content-blocking-section-top-level-description = Trackers follow you around online to collect information about your browsing habits and interests. { -brand-short-name } blocks many of these trackers and other malicious scripts.
 content-blocking-learn-more = Learn more
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standard
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Strict
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Custom
-    .accesskey = C
-content-blocking-standard-desc = Balanced for protection and performance. Allows some trackers so web sites function properly.
-content-blocking-strict-description = Stronger protection, may cause some sites to break.
-content-blocking-custom-desc = Choose what to block.
-content-blocking-private-trackers = Known trackers only in Private Windows
-content-blocking-third-party-cookies = Third-party tracking cookies
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1000,23 +942,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Cross-site tracking 
 content-blocking-social-media-trackers = Social media trackers
 content-blocking-all-cookies = All cookies
 content-blocking-unvisited-cookies = Cookies from unvisited sites
-content-blocking-all-windows-trackers = Known trackers in all windows
 content-blocking-all-windows-tracking-content = Tracking content in all windows
 content-blocking-all-third-party-cookies = All third-party cookies
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Heads up!
-content-blocking-warning-description = Blocking content can cause some web sites to break. It’s easy to disable blocking for sites you trust.
-content-blocking-learn-how = Learn how
 content-blocking-and-isolating-etp-warning-description = Blocking trackers and isolating cookies could impact the functionality of some sites. Reload a page with trackers to load all content.
 content-blocking-warning-learn-how = Learn how
 content-blocking-reload-description = You will need to reload your tabs to apply these changes.
 content-blocking-reload-tabs-button =
     .label = Reload All Tabs
     .accesskey = R
-content-blocking-trackers-label =
-    .label = Trackers
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = Tracking content
     .accesskey = T
@@ -1075,12 +1011,6 @@ permissions-notification-link = Learn more
 permissions-notification-pause =
     .label = Pause notifications until { -brand-short-name } restarts
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Block web sites from automatically playing sound
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = Exceptions…
-    .accesskey = E
 permissions-autoplay = Autoplay
 permissions-autoplay-settings =
     .label = Settings...

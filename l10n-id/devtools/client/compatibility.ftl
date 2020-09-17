@@ -12,7 +12,9 @@ compatibility-all-elements-header = Semua Masalah
 
 compatibility-issue-deprecated = (usang)
 compatibility-issue-experimental = (eksperimental)
+compatibility-issue-prefixneeded = (diperlukan prefiks)
 compatibility-issue-deprecated-experimental = (usang, eksperimental)
+compatibility-issue-experimental-prefixneeded = (eksperimental, diperlukan prefiks)
 
 ## Messages used as labels and titles for buttons in the footer
 

@@ -104,9 +104,6 @@ about-debugging-setup-title = Setup
 about-debugging-setup-intro = I-configure ang connection method na nais mong ipang-remote debug sa device mo.
 
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox = Gamitin ang <a>{ about-debugging-this-firefox-runtime-name }</a> para makapag-debug ng mga tab, extension at service worker sa bersyong ito ng { -brand-shorter-name }.
-
-# Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox2 = Gamitin ang <a>{ about-debugging-this-firefox-runtime-name }</a> para makapag-debug ng mga extension at service worker sa bersyong ito ng { -brand-shorter-name }.
 
 # Title of the heading Connect section of the Setup page.
@@ -226,12 +223,8 @@ about-debugging-runtime-service-workers-not-compatible = Ang iyong browser confi
 about-debugging-browser-version-too-old = Ang naka-connect na browser ay may lumang version ({ $runtimeVersion }). Ang minimum na suportadong version ay ({ $minVersion }). Ito ay isang hindi suportadong setup at maaaring ikasira ng DevTools. Paki-update ang konektadong browser. <a>Pag-troubleshoot</a>
 
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# - from Fx 67 to 66 or to 65
-# - from Fx 68 to 66
-# Those are normally in range for DevTools compatibility policy, but specific non
-# backward compatible changes broke the debugger in those scenarios (Bug 1528219).
-# { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-about-debugging-browser-version-too-old-67-debugger = Maaaring hindi gumana ang Debugger panel sa nakakonektang browser. Pakigamit ang Firefox { $runtimeVersion } kung kailangan mong gamitin ang Debugger sa browser na ito.
+# from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
+about-debugging-browser-version-too-old-fennec = Ang bersyon na ito ng Firefox ay hindi maaaring mag-debug ng Firefox for Android (68). Inirerekomenda naming mag-install ng Firefox for Android Nightly sa iyong telepono para makapag-test. <a>Karagdagang detalye</a>
 
 # This string is displayed in the runtime page if the remote browser version is too recent.
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
@@ -320,15 +313,6 @@ about-debugging-extension-location =
 # For instance "geckoprofiler@mozilla.com" or "{ed26ddcb-5611-4512-a89a-51b8db81cfb2}".
 about-debugging-extension-id =
     .label = Extension ID
-
-# This string is displayed as a label of the button that pushes a test payload
-# to a service worker.
-# Notes, this relates to the "Push" API, which is normally not localized so it is
-# probably better to not localize it.
-about-debugging-worker-action-push = Push
-
-# This string is displayed as a label of the button that starts a service worker.
-about-debugging-worker-action-start = Simulan
 
 # This string is displayed as a label of the button that pushes a test payload
 # to a service worker.

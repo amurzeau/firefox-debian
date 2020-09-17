@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = იხილეთ ვრცლად
-onboarding-button-label-try-now = გამოცადეთ ახლავე
 onboarding-button-label-get-started = დაწყება
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = დაწყება
 onboarding-welcome-header = მოგესალმებათ { -brand-short-name }
 onboarding-welcome-body = ბრაუზერი უკვე თქვენია.<br/>გაიცანით უკეთ { -brand-product-name }.
 onboarding-welcome-learn-more = იხილეთ, უპირატესობების შესახებ.
-onboarding-join-form-header = შეუერთდით { -brand-product-name }
 onboarding-welcome-modal-get-body = ბრაუზერი უკვე გაქვთ.<br/>ახლა კი იხილეთ, როგორ გამოიყენოთ უკეთ { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = გააძლიერეთ პირადულობის დაცვა.
 onboarding-welcome-modal-privacy-body = ბრაუზერი უკვე გაქვთ. ახლა კი გაუუმჯობესეთ პირადულობის უსაფრთხოება.
@@ -110,6 +108,46 @@ onboarding-multistage-theme-tooltip-alpenglow =
         ფერადი გაფორმების გამოყენება ღილაკებზე,
         მენიუებსა და ფანჯრებზე.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        საოპერაციო სისტემის გაფორმების გადმოტანა
+        ღილაკებზე, მენიუებსა და ფანჯრებზე.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        საოპერაციო სისტემის გაფორმების გადმოტანა
+        ღილაკებზე, მენიუებსა და ფანჯრებზე.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        ნათელი გაფორმების გამოყენება ღილაკებზე,
+        მენიუებსა და ფანჯრებზე.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        ნათელი გაფორმების გამოყენება ღილაკებზე,
+        მენიუებსა და ფანჯრებზე.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        მუქი გაფორმების გამოყენება ღილაკებზე,
+        მენიუებსა და ფანჯრებზე.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        მუქი გაფორმების გამოყენება ღილაკებზე,
+        მენიუებსა და ფანჯრებზე.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        ფერადი გაფორმების გამოყენება ღილაკებზე,
+        მენიუებსა და ფანჯრებზე.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        ფერადი გაფორმების გამოყენება ღილაკებზე,
+        მენიუებსა და ფანჯრებზე.
 
 ## Welcome full page string
 
@@ -135,11 +173,7 @@ onboarding-sync-form-sub-header = { -sync-brand-name }-ზე გადასა
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = სასარგებლო საშუალებები
 onboarding-benefit-products-text = იმუშავეთ შედეგიანად ხელსაწყოების ნაკრებით, რომელიც პატივს სცემს თქვენი პირადი მონაცემების ხელშეუხებლობას, ყველა თქვენს მოწყობილობაზე.
-onboarding-benefit-knowledge-title = გამოსადეგი ცოდნა
-onboarding-benefit-knowledge-text = შეისწავლეთ ყველაფერი, ინტერნეტის გონივრულად და უსაფრთხოდ გამოსაყენებლად.
-onboarding-benefit-privacy-title = ჭეშმარიტი პირადულობა
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -160,17 +194,6 @@ onboarding-benefit-lockwise-text = მართეთ და გადაიტ�
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = პირადი თვალიერების რეჟიმი
-onboarding-private-browsing-text = მოიძიეთ გვერდები ზედამხედველების გარეშე. პირადი თვალიერება შიგთავსის შეზღუდვით თავიდან მოგაცილებთ ყველა მეთვალყურეს, რომელიც თან დაგყვებათ მთელ ინტერნეტში.
-onboarding-screenshots-title = ეკრანის სურათები
-onboarding-screenshots-text = გადაიღეთ, შეინახეთ და გააზიარეთ ეკრანის სურათები – ისე რომ არ მოგიწევთ დატოვოთ { -brand-short-name }. გადაუღეთ სურათი მონიშნულ სივრცეს ან მთლიან ვებგვერდს დათვალიერების დროს. შემდეგ კი შეინახეთ ინტერნეტში, მარტივად წვდომისა და გაზიარებისთვის.
-onboarding-addons-title = დამატებები
-onboarding-addons-text = დამატებები საშუალებას გაძლევთ გააფართოვოთ { -brand-short-name }-ის შესაძლებლობები, რის შედეგადაც უკეთ მოგემსახურებათ. შეადარეთ ფასები, შეამოწმეთ ამინდის პროგნოზი ან შეცვალეთ პროგრამის იერსახე თქვენი გემოვნებით.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = მოიძიეთ უფრო სწრაფად, გონივრულად და უსაფრთხოდ ისეთი გაფართოებების დახმარებით, როგორიცაა Ghostery, რომელიც საშუალებას გაძლევთ შეზღუდოთ მომაბეზრებელი რეკლამები.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = სინქრონიზაცია
-onboarding-fxa-text = შექმენით { -fxaccount-brand-name } და დაასინქრონეთ თქვენი სანიშნები, პაროლები და გახსნილი ჩანართები ყველგან, სადაც გიყენიათ { -brand-short-name }.
 onboarding-tracking-protection-title2 = თვალთვალისგან დაცვა
 onboarding-tracking-protection-text2 = { -brand-short-name } გეხმარებათ, აუკრძალოთ საიტებს თქვენი თვალთვალი ინტერნეტში, რაც ურთულებს რეკლამებს შესაძლებლობას, თვალი გადევნოთ ვებსივრცეში.
 onboarding-tracking-protection-button2 = როგორ მუშაობს
@@ -179,7 +202,6 @@ onboarding-data-sync-title = წაიყოლეთ თქვენი პა�
 onboarding-data-sync-text2 = დაასინქრონეთ თქვენი სანიშნები, პაროლები და სხვა მონაცემები ყველგან, სადაც გიყენიათ { -brand-product-name }.
 onboarding-data-sync-button2 = { -sync-brand-short-name } – შესვლა
 onboarding-firefox-monitor-title = შეიტყვეთ, მონაცემების მიტაცების შესახებ
-onboarding-firefox-monitor-text = { -monitor-brand-name } მუდმივად გადაამოწმებს, არის თუ არა თქვენი ელფოსტა მიტაცებულ მონაცემებს შორის და გაცნობებთ აღმოჩენის შემთხვევაში.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } მუდმივად გადაამოწმებს, არის თუ არა თქვენი ელფოსტა ბოლოს მიტაცებულ მონაცემებს შორის და გაცნობებთ აღმოჩენის შემთხვევაში.
 onboarding-firefox-monitor-button = გამოიწერეთ ცნობები
 onboarding-browse-privately-title = მოინახულეთ გვერდები უსაფრთხოდ
@@ -196,17 +218,11 @@ onboarding-mobile-phone-button = ჩამოტვირთეთ მობი�
 onboarding-send-tabs-title = მყისიერად გადააგზავნეთ ჩანართები
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Send Tabs მყისიერად გააზიარებს გვერდებს თქვენს მოწყობილობებს შორის, ასლის აღების, ჩასმისა და ბრაუზერის დატოვების გარეშე.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = მარტივად გააზიარეთ გვერდები თქვენს მოწყობილობებზე ბმულების ასლების გადატანისა და ბრაუზერის დატოვების გარეშე.
 onboarding-send-tabs-button = გამოიყენეთ Send Tabs
 onboarding-pocket-anywhere-title = წაიკითხეთ და მოისმინეთ ნებისმიერ ადგილას
 onboarding-pocket-anywhere-text2 = გადაინახეთ თქვენი რჩეული მასალები ხაზგარეშედ { -pocket-brand-name }-პროგრამით და წაიკითხეთ, მოისმინეთ ან უყურეთ ხელსაყრელ ადგილას.
 onboarding-pocket-anywhere-button = სცადეთ { -pocket-brand-name }
-onboarding-lockwise-passwords-title = წაიყოლეთ თქვენი პაროლები ყველგან
-onboarding-lockwise-passwords-text2 = შეინახეთ პაროლები უსაფრთხოდ და მარტივად შედით ანგარიშებზე, { -lockwise-brand-name }-ით.
-onboarding-lockwise-passwords-button2 = გადმოწერეთ
 onboarding-lockwise-strong-passwords-title = შექმენით და შეინახეთ ძლიერი პაროლები
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } მყისიერად ქმნის ძლიერ პაროლებს და ერთად ინახავს.
 onboarding-lockwise-strong-passwords-button = ანგარიშების მონაცემების მართვა

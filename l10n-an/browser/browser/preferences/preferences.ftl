@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Nomás quan { -brand-short-name } siga configuau pa blocar los elementos de seguimiento
 do-not-track-option-always =
     .label = Siempre
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Opcions
-           *[other] Preferencias
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Opcions
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Una extensión, <img data-l10n-name="ic
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Una extensión, <img data-l10n-name="icon"/> { $name }, ye controlando la tuya pachina de Nueva Pestanya.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Una extensión, <img data-l10n-name="icon"/> { $name }, ye controlando este parametro.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Una extensión, <img data-l10n-name="icon"/> { $name }, ye controlando este parametro.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Esta configuración s'aplicará 
 update-application-use-service =
     .label = Instalar as actualizacions en un segundo plan
     .accesskey = p
-update-enable-search-update =
-    .label = Esviellar automaticament los motors de busca
-    .accesskey = e
-update-pref-write-failure-title = Fallo d'escritura
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = No se puede alzar esta configuación. No s'ha puesto escribir en o fichero: { $path }
 update-setting-write-failure-title = Error en alzar als preferencias d'actualización
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -493,7 +483,7 @@ choose-bookmark =
 ## Home Section - Firefox Home Content Customization
 
 home-prefs-content-header = Conteniu d'inicio de Firefox
-home-prefs-content-description = Tría qué contenisu quiers veyer en a tuya pachina d'inicio de Firefox.
+home-prefs-content-description = Tría qué contenius quiers veyer en a tuya pachina d'inicio de Firefox.
 home-prefs-search-header =
     .label = Busqueda web
 home-prefs-topsites-header =
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Anyader la barra de busqueda en a barra de ferramientas
 search-engine-default-header = Motor de busca por defecto
-search-engine-default-desc = Trigar lo motor de busqueda per defecto a fer servir en a barra d'adrezas y barra de busqueda.
 search-engine-default-desc-2 = Este ye lo tuyo motor de busqueda per defecto en a barra d'adrezas y en a barra de busqueda. Puetz cambiar-lo en qualsequier momento.
 search-engine-default-private-desc-2 = Triar un motor de busqueda per defecto diferent, nomás pa finestras privadas
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Borrar…
     .accesskey = r
+search-add-engine =
+    .label = Anyadir
+    .accesskey = A
 search-find-more-link = Troba mas motors de busqueda
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = Ha trigau una parola clau que ya emplega unatr
 
 ## Containers Section
 
-containers-back-link = « Ir enta zaga
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Borrar
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Leva-te lo web con tu
 sync-signedout-description = Sincroniza os tuyos marcapachinas, historial, pestanyas, claus, complementos y preferencias entre totz os tuyos dispositivos.
-sync-signedout-account-title = Connectar con una { -fxaccount-brand-name }
-sync-signedout-account-create = No tiens encara cuenta? Empecipia
-    .accesskey = C
-sync-signedout-account-signin =
-    .label = Inicia la sesión…
-    .accesskey = I
 sync-signedout-account-signin2 =
     .label = Dentrar en { -sync-brand-short-name }…
     .accesskey = D
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Descargar Firefos pa <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> u bien lo <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> sincronizar con o tuyo dispositivo mobil.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Cambiar a imachen de perfil
-sync-disconnect =
-    .label = Desconnectar...
-    .accesskey = D
 sync-sign-out =
     .label = Zarrar la sesión…
     .accesskey = Z
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Connectar-se
     .accesskey = g
-sync-signedin-settings-header = Achustes de sincronización
-sync-signedin-settings-desc = Trigar qué sincronizar en os tuyos dispostivos fendo servir { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = Ubrir las pestanyas
     .tooltiptext = Un listau d'o que ye ubierto en totz los dispositivos sincronizaus
     .accesskey = T
-sync-engine-logins =
-    .label = Inicios
-    .tooltiptext = Nombres d'usario y claus que has alzaus
-    .accesskey = I
 sync-engine-logins-passwords =
     .label = Inicios de sesión y claus
     .tooltiptext = Inicios de sesión y claus que has alzau
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Alzar
     .accesskey = z
 sync-connect-another-device = Connectar belatro dispositivo
-sync-manage-devices = Chestionar dispositivos
-sync-fxa-begin-pairing = Asociar un dispositivo
-sync-tos-link = Termins d'o Servicio
-sync-fxa-privacy-notice = Nota sobre privacidat
 
 ## Privacy Section
 
 privacy-header = Privacidat d'o navegador
-
-## Privacy Section - Forms
-
-logins-header = Inicios de sesión y claus
 
 ## Privacy Section - Logins and Passwords
 
@@ -827,14 +789,14 @@ forms-master-pw-fips-desc = O cambio de clau ha fallau
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Pa crear una clau mayestra, escribe las tuyas credencials d'acceso a Windos. Esto te aduya a protecher la seguranza d'as tuyas cuentas.
+master-password-os-auth-dialog-message-win = Pa crear una clau mayestra, escribe las tuyas credencials d'acceso a Windows. Esto te aduya a protecher la seguranza d'as tuyas cuentas.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = Crear una clau mayestra
 # This message can be seen by trying to add a Primary Password.
-primary-password-os-auth-dialog-message-win = Pa crear una clau primaria, escribe las tuyas credencials d'acceso a Windos. Esto te aduya a protecher la seguranza d'as tuyas cuentas.
+primary-password-os-auth-dialog-message-win = Pa crear una clau primaria, escribe las tuyas credencials d'acceso a Windows. Esto te aduya a protecher la seguranza d'as tuyas cuentas.
 # This message can be seen by trying to add a Primary Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
@@ -906,8 +868,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Tipo de conteniu blocau
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Elementos de seguimiento de tercers
 sitedata-option-block-cross-site-trackers =
     .label = Elementos de seguimiento entre puestos
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -953,27 +913,9 @@ addressbar-suggestions-settings = Cam&biar las preferencias de sucherencias en m
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Bloqueyo de conteniu
-content-blocking-section-description = Proteche la tuya privacidat mientres navegas. Bloca lo conteniu invisible que fa seguimiento d'os puestos que vesitas y debuixa lo tuyo perfil. Blocar parte d'este conteniu puede fer que las pachinas se carguen mas aprisa.
 content-blocking-enhanced-tracking-protection = Protección reforzada contra seguimiento
 content-blocking-section-top-level-description = Los elementos de seguimiento te siguen en linia pa replegar información sobre los tuyos habitos de navegación y intereses. { -brand-short-name } bloca muitos d'estes elementos de seguimiento y atros programas maliciosos.
 content-blocking-learn-more = Saber-ne mas
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standard
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Estricto
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Personalizau
-    .accesskey = P
-content-blocking-standard-desc = Equilibrau entre protección y rendimiento. Permite bell elemento de seguimiento pa que los webs funcionen bien.
-content-blocking-strict-description = Una protección mas fuerte, pero podría causar que bell puesto no funcione bien.
-content-blocking-custom-desc = Triga qué quiers blocar
-content-blocking-private-trackers = Elementos de seguimiento conoixius, nomás en a finestras privadas
-content-blocking-third-party-cookies = Cookies de seguimiento de tercers
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1000,23 +942,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Las cookies de segui
 content-blocking-social-media-trackers = Elementos de seguimiento de retz socials
 content-blocking-all-cookies = Totas las cookies
 content-blocking-unvisited-cookies = Cookies de puestos no visitaus
-content-blocking-all-windows-trackers = Elementos de seguimiento conoixius en totas las finestras
 content-blocking-all-windows-tracking-content = Conteniu que fa seguimiento en totas las finestras
 content-blocking-all-third-party-cookies = Totas las cookies de tercers
 content-blocking-cryptominers = Criptominers
 content-blocking-fingerprinters = Ditaladas dichitals
 content-blocking-warning-title = Atención!
-content-blocking-warning-description = Lo bloqueyo de conteniu puede fer que bella pachina no funcione bien. Ye facil desactivar lo bloqueyo pa las pachinas que i confías.
-content-blocking-learn-how = Aprende cómo
 content-blocking-and-isolating-etp-warning-description = Lo bloqueyo d'elementos de seguimiento y l'aíslamiento de cookies podrían afectar a la funcionalidat de bell puesto. Recarga la pachina con elementos de seguimiento pa cargar tot lo conteniu.
 content-blocking-warning-learn-how = Aprende cómo
 content-blocking-reload-description = Habrás de recargar las tuyas pestanyas pa aplicar estes cambios.
 content-blocking-reload-tabs-button =
     .label = Tornar a cargar totas las pestanyas
     .accesskey = r
-content-blocking-trackers-label =
-    .label = Elementos de seguimiento
-    .accesskey = t
 content-blocking-tracking-content-label =
     .label = Conteniu de seguimiento
     .accesskey = t
@@ -1075,12 +1011,6 @@ permissions-notification-link = Saber-ne mas
 permissions-notification-pause =
     .label = Notificacions de pausa dica que { -brand-short-name } se reinicie
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Blocar que pachinas web reproduzcan sonius automaticament
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = Excepcions…
-    .accesskey = E
 permissions-autoplay = Reproducción automatica
 permissions-autoplay-settings =
     .label = Configuración…

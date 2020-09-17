@@ -342,8 +342,38 @@ enable-devtools-popup-description = Pokud chcete používat zkratku F12, otevře
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Zadejte webovou adresu nebo dotaz pro vyhledávač
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Zadejte webovou adresu nebo dotaz pro vyhledávač
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Vyhledat na webu
+    .aria-label = Vyhledat pomocí { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Zadejte hledaný výraz
+    .aria-label = Vyhledat na serveru { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Zadejte hledaný výraz
+    .aria-label = Hledat v záložkách
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Zadejte hledaný výraz
+    .aria-label = Hledat v historii
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Zadejte hledaný výraz
+    .aria-label = Hledat v otevřených panelech
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

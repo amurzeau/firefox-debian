@@ -12,7 +12,11 @@ compatibility-all-elements-header = Alle problemen
 
 compatibility-issue-deprecated = (ferâldere)
 compatibility-issue-experimental = (eksperiminteel)
+compatibility-issue-prefixneeded = (foarheaksel nedich)
 compatibility-issue-deprecated-experimental = (ferâldere, eksperiminteel)
+compatibility-issue-deprecated-prefixneeded = (ferâldere, foarheaksel nedich)
+compatibility-issue-experimental-prefixneeded = (eksperiminteel, foarheaksel nedich)
+compatibility-issue-deprecated-experimental-prefixneeded = (ferâldere, eksperiminteel, foarheaksel nedich)
 
 ## Messages used as labels and titles for buttons in the footer
 

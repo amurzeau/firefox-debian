@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Kun når { -brand-short-name } er indstillet til at blokere kendte sporings-teknologier
 do-not-track-option-always =
     .label = Altid
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Indstillinger
-           *[other] Indstillinger
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Indstillinger
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Udvidelsen <img data-l10n-name="icon"/>
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Udvidelsen <img data-l10n-name="icon"/> { $name } kontrollerer siden Nyt faneblad.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = En udvidelse, <img data-l10n-name="icon"/>{ $name }, kontrollerer denne indstilling.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Udvidelsen <img data-l10n-name="icon"/> { $name } kontrollerer denne indstilling.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Denne indstilling vil gælde all
 update-application-use-service =
     .label = bruge en baggrundsservice til at installere opdateringer
     .accesskey = b
-update-enable-search-update =
-    .label = opdatere søgetjenester automatisk
-    .accesskey = g
-update-pref-write-failure-title = Fejl med at gemme
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Kunne ikke gemme indstillingen. Kunne ikke skrive til filen: { $path }
 update-setting-write-failure-title = Kunne ikke gemme indstillinger for opdatering
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Tilføj søgefeltet til værktøjslinjen
 search-engine-default-header = Standard-søgetjeneste
-search-engine-default-desc = Vælg den søgetjeneste, du vil bruge i adressefeltet og søgefeltet.
 search-engine-default-desc-2 = Dette er din standard-søgetjeneste i adressefeltet og søgefeltet. Du kan altid skifte den ud med en anden.
 search-engine-default-private-desc-2 = Vælg en anden søgetjeneste til brug i private vinduer.
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Fjern
     .accesskey = f
+search-add-engine =
+    .label = Tilføj
+    .accesskey = T
 search-find-more-link = Find flere søgetjenester
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = Du har valgt en genvej som bruges af et bogmæ
 
 ## Containers Section
 
-containers-back-link = « Gå tilbage
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Fjern
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Tag dit net med dig
 sync-signedout-description = Synkroniser dine bogmærker, historik, faneblade, adgangskoder, tilføjelser og indstillinger mellem alle dine enheder.
-sync-signedout-account-title = Opret forbindelse med en { -fxaccount-brand-name }
-sync-signedout-account-create = Har du ingen konto? Opret én her
-    .accesskey = O
-sync-signedout-account-signin =
-    .label = Log ind…
-    .accesskey = i
 sync-signedout-account-signin2 =
     .label = Log ind på { -sync-brand-short-name }…
     .accesskey = i
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Hent Firefox til <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> eller <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> for at synkronisere med din mobil-enhed
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Skift profilbillede
-sync-disconnect =
-    .label = Afbryd…
-    .accesskey = A
 sync-sign-out =
     .label = Log ud…
     .accesskey = u
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Log ind
     .accesskey = L
-sync-signedin-settings-header = Indstillinger for synkronisering
-sync-signedin-settings-desc = Vælg, hvad der skal synkroniseres på dine enheder med { -brand-short-name } installeret.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = Åbne faneblade
     .tooltiptext = En liste over åbne faneblade på alle synkroniserede enheder
     .accesskey = f
-sync-engine-logins =
-    .label = Logins
-    .tooltiptext = Gemte brugernavne og adgangskoder
-    .accesskey = L
 sync-engine-logins-passwords =
     .label = Logins og adgangskoder
     .tooltiptext = Gemte brugernavne og adgangskoder
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Gem
     .accesskey = G
 sync-connect-another-device = Opret forbindelse til en ny enhed
-sync-manage-devices = Håndter enheder
-sync-fxa-begin-pairing = Tilføj enhed
-sync-tos-link = Tjenestevilkår
-sync-fxa-privacy-notice = Privatlivspolitik
 
 ## Privacy Section
 
 privacy-header = Beskyttelse af privatliv
-
-## Privacy Section - Forms
-
-logins-header = Logins og adgangskoder
 
 ## Privacy Section - Logins and Passwords
 
@@ -902,8 +864,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Type blokeret
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Tredjeparts sporings-teknologier
 sitedata-option-block-cross-site-trackers =
     .label = Sporings-teknologier på tværs af websteder
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -949,27 +909,9 @@ addressbar-suggestions-settings = Skift indstillinger for søgeforslag
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Blokering af indhold
-content-blocking-section-description = Beskyt dit privatliv på nettet. Bloker usynligt indhold, der sporer besøgte websteder, og som opretter profiler ud fra din adfærd. Ved at blokere noget af dette indhold kan sider indlæses hurtigere.
 content-blocking-enhanced-tracking-protection = Udvidet beskyttelse mod sporing
 content-blocking-section-top-level-description = Sporings-teknologier følger dig rundt på nettet for at indsamle information om dine vaner og interesser. { -brand-short-name } blokerer mange af disse sporings-teknologier og andre ondsindede scripts.
 content-blocking-learn-more = Læs mere
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standard
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Striks
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Tilpasset
-    .accesskey = T
-content-blocking-standard-desc = Balanceret mellem beskyttelse og ydelse. Tillader nogle sporings-teknologier for at websteder kan fungere ordentligt.
-content-blocking-strict-description = Bedre beskyttelse, men kan forhindre nogle websteder i at fungere.
-content-blocking-custom-desc = Vælg selv, hvad der skal blokeres.
-content-blocking-private-trackers = Kendte sporings-teknologier kun i private vinduer
-content-blocking-third-party-cookies = Sporings-cookies fra tredjepart
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -996,23 +938,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Sporings-cookies på
 content-blocking-social-media-trackers = Sporing via sociale medier
 content-blocking-all-cookies = Alle cookies
 content-blocking-unvisited-cookies = Cookies fra ikke-besøgte websteder
-content-blocking-all-windows-trackers = Kendte sporings-teknologier i alle vinduer
 content-blocking-all-windows-tracking-content = Sporings-indhold i alle vinduer
 content-blocking-all-third-party-cookies = Alle tredjeparts-cookies
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Vigtigt!
-content-blocking-warning-description = Nogle websteder kan holde op med at fungere, når du blokerer indhold. Det er nemt at slå blokering fra for websteder, du stoler på.
-content-blocking-learn-how = Læs hvordan
 content-blocking-and-isolating-etp-warning-description = Nogle websteders funktionalitet kan blive påvirker, når du blokerer sporings-teknologier og isolerer cookies. Genindlæs side med sporings-teknologier for at indlæse alt indhold.
 content-blocking-warning-learn-how = Læs hvordan
 content-blocking-reload-description = Du skal genindlæse dine faneblade, før ændringerne slår igennem.
 content-blocking-reload-tabs-button =
     .label = Genindlæs alle faneblade
     .accesskey = G
-content-blocking-trackers-label =
-    .label = Sporings-elementer
-    .accesskey = S
 content-blocking-tracking-content-label =
     .label = Sporings-indhold
     .accesskey = i
@@ -1071,12 +1007,6 @@ permissions-notification-link = Læs mere
 permissions-notification-pause =
     .label = Sæt beskeder på pause, indtil { -brand-short-name } starter igen
     .accesskey = b
-permissions-block-autoplay-media2 =
-    .label = Lad ikke websteder starte automatisk afspilning af lyd
-    .accesskey = l
-permissions-block-autoplay-media-exceptions =
-    .label = Undtagelser…
-    .accesskey = U
 permissions-autoplay = Automatisk afspilning
 permissions-autoplay-settings =
     .label = Indstillinger…

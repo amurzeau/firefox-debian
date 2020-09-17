@@ -4,7 +4,6 @@
 
 addons-window =
     .title = Përgjegjësi i Shtesave
-
 addons-page-title = Përgjegjësi i Shtesave
 
 search-header =
@@ -13,9 +12,6 @@ search-header =
 
 search-header-shortcut =
     .key = f
-
-loading-label =
-    .value = Po ngarkohet…
 
 list-empty-installed =
     .value = Nuk keni të instaluar ndonjë shtesë të këtij lloji
@@ -32,12 +28,7 @@ list-empty-find-updates =
 list-empty-button =
     .label = Mësoni më tepër rreth shtesave
 
-install-addon-from-file =
-    .label = Instaloni Shtesë Prej Kartele…
-    .accesskey = I
-
 help-button = Asistencë Shtesash
-
 sidebar-help-button-title =
     .title = Asistencë Shtesash
 
@@ -46,10 +37,6 @@ preferences =
         [windows] Mundësi { -brand-short-name }-i
        *[other] Parapëlqime { -brand-short-name }-i
     }
-
-tools-menu =
-    .tooltiptext = Mjete për krejt shtesat
-
 sidebar-preferences-button-title =
     .title =
         { PLATFORM() ->
@@ -62,10 +49,6 @@ show-unsigned-extensions-button =
 
 show-all-extensions-button =
     .label = Shfaqi krejt zgjerimet
-
-debug-addons =
-    .label = Diagnostikoni Shtesa
-    .accesskey = D
 
 cmd-show-details =
     .label = Shfaq Më Tepër të Dhëna
@@ -104,12 +87,6 @@ cmd-contribute =
     .accesskey = K
     .tooltiptext = Kontribuoni në zhvillimin e kësaj shtese
 
-discover-title = Çfarë janë Shtesat?
-
-discover-description = Shtesat janë aplikacione që ju lejojnë ta përshtatni { -brand-short-name }-in përmes funksionesh shtesë ose stilesh ekstra. Provoni një anështyllë që ju kursen kohë, një njoftues moti, ose një pamje sipas një teme të caktuar, që ta bëni { -brand-short-name }-in si ta doni.
-
-discover-footer = Kur jeni i lidhur në Internet, ky kuadrat do të paraqesë disa nga shtesat më të mira dhe më popullore që të mund t'i provoni.
-
 detail-version =
     .label = Version
 
@@ -140,19 +117,13 @@ detail-update-manual =
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Xhiroje në Dritare Private
 
-detail-private-browsing-description2 = Po u lejua, zgjerimi do të mund të hyjë në të dhëna veprimtarish tuajat internetore, teksa shfletoni privatisht. <label data-l10n-name="detail-private-browsing-learn-more">Mësoni më tepër</label>
-
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = Nuk Lejohet në Dritare Private
-detail-private-disallowed-description = Ky zgjerim nuk punon nën shfletim privat. <label data-l10n-name="detail-private-browsing-learn-more">Mësoni më tepër</label>
-
 detail-private-disallowed-description2 = Ky zgjerim nuk punon nën shfletim privat. <a data-l10n-name="learn-more">Mësoni më tepër</label>
 
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Lyp Hyrje në Dritare Private
-detail-private-required-description = Ky zgjerim ka hyrje te të dhëna veprimtarish tuajat internetore, teksa shfletoni privatisht. <label data-l10n-name="detail-private-browsing-learn-more">Mësoni më tepër</label>
-
 detail-private-required-description2 = Ky zgjerim ka hyrje te veprimtaritë tuaja internetore, teksa gjendeni nën shfletim privat. <a data-l10n-name="learn-more">Mësoni më tepër</a>
 
 detail-private-browsing-on =
@@ -226,18 +197,6 @@ private-browsing-description2 =
     { -brand-short-name } s’do të xhirohet në Dritare Private, si parazgjedhje. Veç në e lejofshi te rregullimet, zgjerimi s’do të funksionojë, teksa gjendeni nën shfletim privat, dhe s’do të mund të përdorë veprimtaritë tuaja internetore të atyshme. Këtë ndryshim e kemi bërë për ta mbajtur privat shfletimin tuaj privat.
     <label data-l10n-name="private-browsing-learn-more">Mësoni si të administroni rregullime zgjerimi.</label>
 
-extensions-view-discopane =
-    .name = Rekomandime
-    .tooltiptext = { extensions-view-discopane.name }
-
-extensions-view-recent-updates =
-    .name = Përditësime Së Fundi
-    .tooltiptext = { extensions-view-recent-updates.name }
-
-extensions-view-available-updates =
-    .name = Përditësime të Gatshme
-    .tooltiptext = { extensions-view-available-updates.name }
-
 addon-category-discover = Rekomandime
 addon-category-discover-title =
     .title = Rekomandime
@@ -265,29 +224,6 @@ addon-category-recent-updates-title =
 
 ## These are global warnings
 
-extensions-warning-safe-mode-label =
-    .value = Mënyra e Parrezik ka çaktivizuar krejt shtesat.
-extensions-warning-safe-mode-container =
-    .tooltiptext = { extensions-warning-safe-mode-label.value }
-
-extensions-warning-check-compatibility-label =
-    .value = Kontrolli i përputhshmërisë së shtesave është i çaktivizuar. Keni shtesa të papërputhshme.
-extensions-warning-check-compatibility-container =
-    .tooltiptext = { extensions-warning-check-compatibility-label.value }
-
-extensions-warning-check-compatibility-enable =
-    .label = Aktivizoje
-    .tooltiptext = Aktivizoni kontrollin e përputhshmërisë së shtesave
-
-extensions-warning-update-security-label =
-    .value = Kontrolli i përditësimit të shtesave është i çaktivizuar. Përditësimet mund t'ju hapin punë.
-extensions-warning-update-security-container =
-    .tooltiptext = { extensions-warning-update-security-label.value }
-
-extensions-warning-update-security-enable =
-    .label = Aktivizoje
-    .tooltiptext = Aktivizoni kontrollin e përditësimit të shtesave
-
 extensions-warning-safe-mode = Mënyra e Parrezik ka çaktivizuar krejt shtesat.
 extensions-warning-check-compatibility = Kontrolli i përputhshmërisë së shtesave është i çaktivizuar. Keni shtesa të papërputhshme.
 extensions-warning-check-compatibility-button = Aktivizoje
@@ -299,14 +235,6 @@ extensions-warning-update-security-button = Aktivizoje
 
 ## Strings connected to add-on updates
 
-extensions-updates-check-for-updates =
-    .label = Kontrollo për Përditësime
-    .accesskey = K
-
-extensions-updates-view-updates =
-    .label = Shihni Përditësimet e Fundit
-    .accesskey = S
-
 addon-updates-check-for-updates = Kontrollo për Përditësime
     .accesskey = K
 addon-updates-view-updates = Shihni Përditësimet e Fundit
@@ -314,10 +242,6 @@ addon-updates-view-updates = Shihni Përditësimet e Fundit
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
-
-extensions-updates-update-addons-automatically =
-    .label = Përditësoji Shtesat Vetvetiu
-    .accesskey = P
 
 addon-updates-update-addons-automatically = Përditësoji Shtesat Vetvetiu
     .accesskey = P
@@ -328,36 +252,12 @@ addon-updates-update-addons-automatically = Përditësoji Shtesat Vetvetiu
 ## (which itself is either "Automatically" or "Manually", controlled by the
 ## extensions-updates-update-addons-automatically.label menu item).
 
-extensions-updates-reset-updates-to-automatic =
-    .label = Bëji Krejt Shtesat të Përditësohen Vetvetiu
-    .accesskey = V
-
-extensions-updates-reset-updates-to-manual =
-    .label = Bëji Krejt Shtesat të Përditësohen Dorazi
-    .accesskey = D
-
 addon-updates-reset-updates-to-automatic = Bëji Krejt Shtesat të Përditësohen Vetvetiu
     .accesskey = V
 addon-updates-reset-updates-to-manual = Bëji Krejt Shtesat të Përditësohen Dorazi
     .accesskey = D
 
 ## Status messages displayed when updating add-ons
-
-extensions-updates-updating =
-    .value = Shtesat po përditësohen
-extensions-updates-installed =
-    .value = Shtesat tuaja u përditësuan.
-extensions-updates-downloaded =
-    .value = Përditësimet për shtesat tuaja u shkarkuan.
-extensions-updates-restart =
-    .label = Që të plotësohet instalimi, riniseni tani
-extensions-updates-none-found =
-    .value = Nuk u gjetën përditësime
-extensions-updates-manual-updates-found =
-    .label = Shihni Përditësimet e Gatshme
-extensions-updates-update-selected =
-    .label = Nuk u gjetën përditësime
-    .tooltiptext = Instaloni përditësimet e mundshme prej kësaj liste
 
 addon-updates-updating = Shtesat po përditësohen
 addon-updates-installed = Shtesat tuaja u përditësuan.
@@ -375,10 +275,6 @@ addon-open-about-debugging = Diagnostikoni Shtesa
 
 ## Extension shortcut management
 
-manage-extensions-shortcuts =
-    .label = Administroni Shkurtore Zgjerimesh
-    .accesskey = A
-
 # This is displayed in the page options menu
 addon-manage-extensions-shortcuts = Administroni Shkurtore Zgjerimesh
     .accesskey = A
@@ -387,8 +283,6 @@ shortcuts-no-addons = S’keni të aktivizuar ndonjë zgjerim.
 shortcuts-no-commands = Zgjerimet vijuese nuk kanë shkurtore:
 shortcuts-input =
     .placeholder = Shtypni një shkurtore
-
-shortcuts-browserAction = Aktivizoni zgjerimin
 
 shortcuts-browserAction2 = Aktivizoni buton paneli
 shortcuts-pageAction = Aktivizoni veprim faqeje
@@ -420,9 +314,6 @@ shortcuts-card-expand-button =
     }
 
 shortcuts-card-collapse-button = Shfaq Më Pak
-
-go-back-button =
-    .tooltiptext = Kthehuni mbrapsht
 
 header-back-button =
     .title = Kthehuni mbrapsht
@@ -474,7 +365,6 @@ remove-addon-button = Hiqe
 remove-addon-disabled-button = S’mund të Hiqet <a data-l10n-name="link">Pse?</a>
 disable-addon-button = Çaktivizoje
 enable-addon-button = Aktivizoje
-expand-addon-button = Më tepër Mundësi
 # This is used for the toggle on the extension card, it's a checkbox and this
 # is always its label.
 extension-enable-addon-button-label =
@@ -487,9 +377,6 @@ preferences-addon-button =
 details-addon-button = Hollësi
 release-notes-addon-button = Shënime Versioni
 permissions-addon-button = Leje
-
-addons-enabled-heading = I aktivizuar
-addons-disabled-heading = I çaktivizuar
 
 extension-enabled-heading = E aktivizuar
 extension-disabled-heading = E çaktivizuar
@@ -515,6 +402,10 @@ addon-detail-version-label = Version
 addon-detail-last-updated-label = Përditësuar Së Fundi Më
 addon-detail-homepage-label = Kreu
 addon-detail-rating-label = Vlerësim
+
+# Message for add-ons with a staged pending update.
+install-postponed-message = Ky zgjerim do të përditësohet kur të riniset { -brand-short-name }.
+install-postponed-button = Përditësoje Tani
 
 # The average rating that the add-on has received.
 # Variables:
@@ -552,23 +443,12 @@ install-update-button = Përditësojeni
 
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
-addon-badge-private-browsing-allowed =
-    .title = E lejuar në dritare private
-
-# This is the tooltip text for the private browsing badge in about:addons. The
-# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = E lejuar në dritare private
     .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Nën lejim, zgjerimi do të mund të shohë veprimtaritë tuaja në linjë, teksa shfletoni privatisht. <a data-l10n-name="learn-more">Mësoni më tepër</a>
 addon-detail-private-browsing-allow = Lejoje
 addon-detail-private-browsing-disallow = Mos e Lejo
-
-# This is the tooltip text for the recommended badge for an extension in about:addons. The
-# badge is a small icon displayed next to an extension when it is recommended on AMO.
-addon-badge-recommended =
-    .title = E këshilluar
-    .alt = E këshilluar
 
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.

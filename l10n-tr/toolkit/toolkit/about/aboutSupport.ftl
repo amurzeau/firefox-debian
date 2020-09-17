@@ -77,6 +77,9 @@ show-dir-label =
         [windows] Klasörü aç
        *[other] Dizini aç
     }
+environment-variables-title = Ortam değişkenleri
+environment-variables-name = Adı
+environment-variables-value = Değer
 experimental-features-title = Deneysel özellikler
 experimental-features-name = Adı
 experimental-features-value = Değer
@@ -104,8 +107,6 @@ graphics-desktop-environment = Masaüstü ortamı
 place-database-title = Places veritabanı
 place-database-integrity = Bütünlük
 place-database-verify-integrity = Bütünlüğü doğrula
-js-title = JavaScript
-js-incremental-gc = Artırımlı GC
 a11y-title = Erişilebilirlik
 a11y-activated = Etkinleştirildi mi?
 a11y-force-disabled = Erişilebilirliği engelle
@@ -135,7 +136,6 @@ restart-button-label = Yeniden başlat
 
 audio-backend = Ses arka ucu
 max-audio-channels = En fazla kanal
-channel-layout = Tercih edilen kanal düzeni
 sample-rate = Tercih edilen örnek oranı
 roundtrip-latency = Gidiş dönüş gecikmesi (standart sapma)
 media-title = Ortam
@@ -279,7 +279,6 @@ support-blocklisted-bug = Bilinen sorunlar nedeniyle engellendi: <a data-l10n-na
 unknown-failure = Engellendi. Hata kodu { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video Çözücüsü
-d3d9video-crash-buard = D3D9 Video Çözücüsü
 d3d9video-crash-guard = D3D9 Video Çözücüsü
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX video çözücüsü

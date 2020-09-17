@@ -71,10 +71,6 @@ manage-messenger-languages-button =
     .accesskey = l
 confirm-messenger-language-change-description = Startujće { -brand-short-name } znowa. zo byšće tute změny nałožił
 confirm-messenger-language-change-button = Nałožić a znowa startować
-update-pref-write-failure-title = Pisanski zmylk
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Nastajenje njeda so składować. Njebě móžno do dataje pisać: { $path }
 update-setting-write-failure-title = Zmylk při składowanju aktualizowanskich nastajenjow
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -216,8 +212,8 @@ search-integration-label =
     .label = { search-engine-name } za pytanje za powěsćemi dowolić
     .accesskey = t
 config-editor-button =
-    .label = Editor konfigurować…
-    .accesskey = E
+    .label = Konfiguraciski editor…
+    .accesskey = K
 return-receipts-description = Postajić, kak { -brand-short-name } ma z wobkrućenjemi přijeća wobeńć
 return-receipts-button =
     .label = Wobkrućenja přijeća…
@@ -355,7 +351,7 @@ auto-mark-as-read =
     .label = Powěsće awtomatisce jako přečitane markěrować
     .accesskey = P
 mark-read-no-delay =
-    .label = Hnydom pži zwobraznjenju
+    .label = Hnydom při zwobraznjenju
     .accesskey = H
 
 ## Note: This will concatenate to "After displaying for [___] seconds",
@@ -714,6 +710,3 @@ search-results-empty-message =
        *[other] Bohužel žane wuslědki w nastajenjach za “<span data-l10n-name="query"></span>” njejsu.
     }
 search-results-help-link = Trjebaće pomoc? Wopytajće <a data-l10n-name="url">Pomoc za { -brand-short-name }</a>
-
-## Preferences UI Search Results
-

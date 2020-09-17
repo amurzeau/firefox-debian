@@ -18,3 +18,4 @@ about-httpsonly-explanation-nosupport = Cel mai probabil, site-ul web pur și si
 about-httpsonly-explanation-risk = Este posibil și să fie implicat un atacator. Dacă te decizi să intri pe site, nu trebuie să introduci nicio informație sensibilă, cum ar fi parole, adrese de e-mail sau detalii ale cardurilor de credit.
 about-httpsonly-button-accept-and-continue = Acceptă riscul și continuă
 about-httpsonly-button-go-back = Înapoi
+about-httpsonly-link-learn-more = Află mai multe…

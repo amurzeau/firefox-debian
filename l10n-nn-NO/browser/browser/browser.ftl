@@ -318,8 +318,38 @@ enable-devtools-popup-description = For å bruke F12-snarvegen, må du først op
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Søk eller skriv inn ei adresse
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Søk eller skriv inn ei adresse
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Søk på nettet
+    .aria-label = Søk med { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Skriv inn søketekst
+    .aria-label = Søk { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Skriv inn søketekst
+    .aria-label = Søk i bokmerke
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Skriv inn søketekst
+    .aria-label = Søk i historikk
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Skriv inn søketekst
+    .aria-label = Søk i faner
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

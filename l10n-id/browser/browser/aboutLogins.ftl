@@ -62,7 +62,7 @@ login-list-item-subtitle-missing-username = (tidak ada nama pengguna)
 about-logins-list-item-breach-icon =
     .title = Situs web yang dibobol
 about-logins-list-item-vulnerable-password-icon =
-    .title = Kata sandi rentan
+    .title = Sandi rentan
 
 ## Introduction screen
 
@@ -124,15 +124,15 @@ about-logins-copy-password-os-auth-dialog-message-win = Untuk menyalin kata sand
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = menyalin kata sandi tersimpan.
+
+## Master Password notification
+
+master-password-notification-message = Masukkan kata sandi utama Anda untuk melihat info masuk dan kata sandi yang disimpan
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Untuk mengekspor info masuk Anda, silakan masukkan kredensial info masuk Windows Anda. Ini akan membantu mengamankan akun Anda.
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = mengekspor info masuk dan sandi tersimpan
-
-## Master Password notification
-
-master-password-notification-message = Masukkan kata sandi utama Anda untuk melihat info masuk dan kata sandi yang disimpan
 
 ## Primary Password notification
 

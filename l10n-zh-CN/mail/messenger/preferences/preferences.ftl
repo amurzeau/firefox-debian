@@ -71,10 +71,6 @@ manage-messenger-languages-button =
     .accesskey = I
 confirm-messenger-language-change-description = 重启 { -brand-short-name } 以应用这些更改
 confirm-messenger-language-change-button = 应用并重启客户端
-update-pref-write-failure-title = 写入失败
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = 无法保存首选项。未能写入文件：{ $path }
 update-setting-write-failure-title = 保存“更新”首选项时出错
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -627,7 +623,7 @@ idle-time-label = 分钟时，让我的联系人获知
 ##
 
 away-message-label =
-    .label = ，并设置我的状态为离开，状态文本：
+    .label = 并设置我的状态为离开，且加上此状态信息：
     .accesskey = A
 send-typing-label =
     .label = 在对话时发送正在输入通知
@@ -716,6 +712,3 @@ search-results-empty-message =
        *[other] 很抱歉，没有找到有关 “<span data-l10n-name="query"></span>” 的首选项。
     }
 search-results-help-link = 需要帮助？访问 <a data-l10n-name="url">{ -brand-short-name } 技术支持</a>
-
-## Preferences UI Search Results
-

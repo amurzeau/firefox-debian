@@ -71,10 +71,6 @@ manage-messenger-languages-button =
     .accesskey = დ
 confirm-messenger-language-change-description = გაუშვით { -brand-short-name } ხელახლა, ცვლილებების ასახვისთვის
 confirm-messenger-language-change-button = მიღება და ხელახლა გაშვება
-update-pref-write-failure-title = ჩაწერის ხარვეზი
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = პარამეტრის შენახვა შეუძლებელია. ვერ ხერხდება ჩაწერა ფაილში: { $path }
 update-setting-write-failure-title = შეცდომა, განახლების პარამეტრების შენახვისას
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -485,10 +481,10 @@ add-cloud-account =
     .defaultlabel = დამატება…
 remove-cloud-account =
     .label = მოცილება
-    .accesskey = R
+    .accesskey = მ
 find-cloud-providers =
-    .value = მეტი მომსახურების მოძიება…
-cloud-account-description = ფაილების ბმების საცავის ახალი მომსახურების დამატება
+    .value = სხვა მომსახურების მოძიება…
+cloud-account-description = ფაილების მიბმისთვის, მომსახურე საცავის დამატება
 
 ## Privacy Tab
 
@@ -714,6 +710,3 @@ search-results-empty-message =
        *[other] ვწუხვართ! შედეგები ფრაზისთვის „<span data-l10n-name="query"></span>“ ვერ მოიძებნა.
     }
 search-results-help-link = გესაჭიროებათ დახმარება? ეწვიეთ <a data-l10n-name="url">{ -brand-short-name } მხარდაჭერის გვერდს</a>
-
-## Preferences UI Search Results
-

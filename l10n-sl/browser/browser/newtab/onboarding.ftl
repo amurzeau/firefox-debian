@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Več o tem
-onboarding-button-label-try-now = Preizkusite ga zdaj
 onboarding-button-label-get-started = Začni
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Začni
 onboarding-welcome-header = Dobrodošli v { -brand-short-name }
 onboarding-welcome-body = Brskalnik že imate.<br/>Spoznajte še ostale storitve { -brand-product-name }.
 onboarding-welcome-learn-more = Spoznajte prednosti.
-onboarding-join-form-header = Pridružite se { -brand-product-name }u
 onboarding-welcome-modal-get-body = Brskalnik že imate.<br/>Zdaj pa kar najbolje izkoristite { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Dvignite svojo zaščito zasebnosti.
 onboarding-welcome-modal-privacy-body = Brskalnik že imate. Dodajmo še zaščito zasebnosti.
@@ -110,6 +108,46 @@ onboarding-multistage-theme-tooltip-alpenglow =
         Uporabi barvit videz gumbov,
         menijev in oken.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Uporabi videz gumbov, menijev in oken
+        operacijskega sistema.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Uporabi videz gumbov, menijev in oken
+        operacijskega sistema.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Uporabi svetel videz gumbov,
+        menijev in oken.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Uporabi svetel videz gumbov,
+        menijev in oken.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Uporabi temen videz gumbov,
+        menijev in oken.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Uporabi temen videz gumbov,
+        menijev in oken.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Uporabi barvit videz gumbov,
+        menijev in oken.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Uporabi barvit videz gumbov,
+        menijev in oken.
 
 ## Welcome full page string
 
@@ -135,11 +173,7 @@ onboarding-sync-form-sub-header = za nadaljevanje v { -sync-brand-name }.
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Uporabni izdelki
 onboarding-benefit-products-text = Opravite stvari z družino orodij, ki spoštuje vašo zasebnost na vseh napravah.
-onboarding-benefit-knowledge-title = Praktično znanje
-onboarding-benefit-knowledge-text = Naučite se vsega, kar morate vedeti, da bi bili na spletu pametnejši in varnejši.
-onboarding-benefit-privacy-title = Resnična zasebnost
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -160,17 +194,6 @@ onboarding-benefit-lockwise-text = Upravljajte gesla, ki so zaščitena in preno
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Zasebno brskanje
-onboarding-private-browsing-text = Brskajte sami. Zasebno brskanje z zavračanjem vsebine zavrača spletne sledilce, ki vam sledijo na spletu.
-onboarding-screenshots-title = Posnetki zaslona
-onboarding-screenshots-text = Ustvarjajte, shranjujte in delite posnetke zaslona – ne da bi zapustili { -brand-short-name }. Med brskanjem zajemite celotno stran ali njen del, ter jo shranite na spletu za preprost dostop in deljenje.
-onboarding-addons-title = Dodatki
-onboarding-addons-text = Opremite { -brand-short-name } za vsako nalogo. Primerjajte cene, preverite vremensko napoved ali izrazite svojo osebnost s temo po meri.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Brskajte hitreje, pametneje in varneje z razširitvami, kot je Ghostery, orodje za zavračanje nadležnih oglasov.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Sinhronizacija
-onboarding-fxa-text = Ustvarite { -fxaccount-brand-name } ter sinhronizirajte svoje zaznamke, gesla in odprte zavihke povsod, kjer uporabljate { -brand-short-name }.
 onboarding-tracking-protection-title2 = Zaščita pred sledenjem
 onboarding-tracking-protection-text2 = { -brand-short-name } spletnim mestom preprečuje, da bi vam sledila, tako da vas oglasi težje zasledujejo po spletu.
 onboarding-tracking-protection-button2 = Kako deluje
@@ -179,7 +202,6 @@ onboarding-data-sync-title = Ponesite svoje nastavitve s seboj
 onboarding-data-sync-text2 = Sinhronizirajte zaznamke, gesla in druge podatke povsod, kjer uporabljate { -brand-product-name }.
 onboarding-data-sync-button2 = Prijava v { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Bodite obveščeni o krajah podatkov
-onboarding-firefox-monitor-text = { -monitor-brand-name } spremlja, ali se je vaš e-poštni naslov pojavil v kraji podatkov, in vas obvesti v primeru novih kraj podatkov.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } spremlja, ali se je vaš e-poštni naslov pojavil v znani kraji podatkov, in vas obvesti v primeru novih kraj podatkov.
 onboarding-firefox-monitor-button = Prijavite se na opozorila
 onboarding-browse-privately-title = Brskajte zasebno
@@ -196,17 +218,11 @@ onboarding-mobile-phone-button = Prenesite mobilni brskalnik
 onboarding-send-tabs-title = Takoj si pošljite zavihke
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Pošiljanje zavihkov deli strani med napravami brez kopiranja, lepljenja in zapuščanja brskalnika.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Enostavno delite strani med napravami brez kopiranja povezav in zapuščanja brskalnika.
 onboarding-send-tabs-button = Začnite pošiljati zavihke
 onboarding-pocket-anywhere-title = Berite in poslušajte kjerkoli
 onboarding-pocket-anywhere-text2 = Shranite si priljubljeno vsebino z aplikacijo { -pocket-brand-name } in jo preberite, poslušajte ali si jo oglejte, kadarkoli vam ustreza.
 onboarding-pocket-anywhere-button = Preizkusite { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Vzemite gesla s seboj
-onboarding-lockwise-passwords-text2 = Ohranite shranjena gesla na varnem in se enostavno prijavite v svoje račune z { -lockwise-brand-name }.
-onboarding-lockwise-passwords-button2 = Prenesite aplikacijo
 onboarding-lockwise-strong-passwords-title = Ustvarite in shranjujte močna gesla
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } ustvari močna gesla na kraju samem in jih shrani na eno mesto.
 onboarding-lockwise-strong-passwords-button = Upravljanje prijav

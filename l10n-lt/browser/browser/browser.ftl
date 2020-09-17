@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Rašykite mažiau, raskite daugiau: ieškokite per „{ $engineName }“ tiesiai iš savo adreso lauko.
 urlbar-search-tips-redirect-2 = Pradėkite savo paiešką adreso lauke, norėdami matyti žodžių siūlymus iš „{ $engineName }“ bei jūsų naršymo istorijos.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Adresynas
+urlbar-search-mode-tabs = Kortelės
+urlbar-search-mode-history = Žurnalas
+
 ##
 
 urlbar-geolocation-blocked =
@@ -185,6 +191,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Skirti numatytąja ieškykle privačiojo naršymo langams
     .accesskey = p
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Adresynas ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Kortelės ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Žurnalas ({ $restrict })
 
 ## Bookmark Panel
 
@@ -292,8 +318,42 @@ enable-devtools-popup-description = Norėdami naudoti spartųjį klavišą „F1
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Įveskite adresą arba paieškos žodžius
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Įveskite adresą arba paieškos žodžius
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Ieškokite saityne
+    .aria-label = Ieškoti per „{ $name }“
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Įveskite ieškomą tekstą
+    .aria-label = Ieškoti per „{ $name }“
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Įveskite ieškomą tekstą
+    .aria-label = Ieškoti adresyne
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Įveskite ieškomą tekstą
+    .aria-label = Ieškoti žurnale
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Įveskite ieškomą tekstą
+    .aria-label = Ieškote kortelėse
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Ieškokite per „{ $name }“ arba įveskite adresą
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Naršyklė valdoma per nuotolį
 urlbar-permissions-granted =

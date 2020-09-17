@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Allinnich wannear't { -brand-short-name } ynsteld is om bekende trackers te blokkearjen
 do-not-track-option-always =
     .label = Altyd
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Opsjes
-           *[other] Opsjes
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Opsjes
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = In útwreiding, <img data-l10n-name="ic
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = In útwreiding, <img data-l10n-name="icon"/> { $name }, beheart jo Nij-ljepblêd-side.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = In útwreiding, <img data-l10n-name="icon"/> { $name }, hat behear oer dizze ynstelling.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = In útwreiding, <img data-l10n-name="icon"/> { $name }, hat behear oer dizze ynstelling.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Dizze ynstelling is fan tapassin
 update-application-use-service =
     .label = Brûk in eftergrûntsjinst om fernijingen te ynstallearjen
     .accesskey = a
-update-enable-search-update =
-    .label = Sykmasines automatysk bywurkje
-    .accesskey = y
-update-pref-write-failure-title = Skriuwflater
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Kin foarkar net bewarje. Koe net skriuwe nei bestân: { $path }
 update-setting-write-failure-title = Flater by bewarjen fernijingsfoarkarren
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Sykbalke yn arkbalke tafoegje
 search-engine-default-header = Standertsykmasine
-search-engine-default-desc = Kies de standert sykmasine foar gebrûk yn de adresbalke en sykbalke.
 search-engine-default-desc-2 = Dit is jo standertsykmasine yn de adresbalke en de sykbalke. Jo kinne dizze op elk momint wizigje.
 search-engine-default-private-desc-2 = Kies in oare standertsykmasine dy't jo yn priveefinsters brûke wolle
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Fuortsmite
     .accesskey = F
+search-add-engine =
+    .label = Tafoegje
+    .accesskey = T
 search-find-more-link = Mear sykmasinen fine
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = Jo hawwe in kaaiwurd keazen dat op dit stuit y
 
 ## Containers Section
 
-containers-back-link = « Tebek
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Fuortsmite
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Nim jo web mei jo mei
 sync-signedout-description = Syngronisearje jo blêdwizers, skiednis, ljepblêden, wachtwurden, add-ons en foarkarren op al jo apparaten.
-sync-signedout-account-title = Ferbining meitsje mei in { -fxaccount-brand-name }
-sync-signedout-account-create = Hawwe jo gjin account? Registrearje
-    .accesskey = o
-sync-signedout-account-signin =
-    .label = Oanmelde…
-    .accesskey = O
 sync-signedout-account-signin2 =
     .label = Oanmelde by { -sync-brand-short-name }…
     .accesskey = O
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Download Firefox foar <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> of <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> om mei jo mobile apparaat te syngronisearjen.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Profylôfbylding wizigje
-sync-disconnect =
-    .label = Ferbining ferbrekke…
-    .accesskey = b
 sync-sign-out =
     .label = Ofmelde…
     .accesskey = O
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Oanmelde
     .accesskey = m
-sync-signedin-settings-header = Syngronisaasjeynstellingen
-sync-signedin-settings-desc = Kieze wat jo syngronisearje wolle op jo apparaten dy't { -brand-short-name } brûke.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = Iepen ljepblêden
     .tooltiptext = In list fan wat op alle syngronisearre apparaten iepene is
     .accesskey = b
-sync-engine-logins =
-    .label = Oanmeldingen
-    .tooltiptext = Brûkersnammen en wachtwurden dy't jo bewarre hawwe
-    .accesskey = O
 sync-engine-logins-passwords =
     .label = Oanmeldingen en wachtwurden
     .tooltiptext = Oanmeldingen en wachtwurden dy't jo bewarre hawwe
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Bewarje
     .accesskey = B
 sync-connect-another-device = In oar apparaat ferbine
-sync-manage-devices = Apparaten beheare
-sync-fxa-begin-pairing = In apparaat keppelje
-sync-tos-link = Tsjinstbetingsten (In)
-sync-fxa-privacy-notice = Privacyferklearring
 
 ## Privacy Section
 
 privacy-header = Browserprivacy
-
-## Privacy Section - Forms
-
-logins-header = Oanmeldingen & Wachtwurden
 
 ## Privacy Section - Logins and Passwords
 
@@ -906,8 +868,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Blokkearre type
     .accesskey = t
-sitedata-option-block-trackers =
-    .label = Trackers fan tredden
 sitedata-option-block-cross-site-trackers =
     .label = Cross-site-trackers
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -953,27 +913,9 @@ addressbar-suggestions-settings = Foarkarren foar sykmasinesuggestjes wizigje
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Ynhâldsblokkearring
-content-blocking-section-description = Beskermje jo privacy wylst jo sneupe. Blokkearje ûnsichtbere ynhâld dy't de troch jo besochte websites folget en jo profilearje. Troch wat fan dizze ynhâld te blokkearjen lade siden mooglik flugger.
 content-blocking-enhanced-tracking-protection = Ferbettere beskerming tsjin folgjen
 content-blocking-section-top-level-description = Trackers folgje jo online om gegevens oer jo sneupgedrach en ynteresses te sammeljen. { -brand-short-name } blokkearret in protte fan dizze trackers en oare kweawollende skripts.
 content-blocking-learn-more = Mear ynfo
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standert
-    .accesskey = S
-content-blocking-setting-strict =
-    .label = Streng
-    .accesskey = g
-content-blocking-setting-custom =
-    .label = Oanpast
-    .accesskey = O
-content-blocking-standard-desc = Balansearre foar beskerming en prestaasjes. Stiet bepaalde trackers ta, sadat websites goed wurkje.
-content-blocking-strict-description = Strangere beskerming, kin derfoar soargje dat bepaalde websites net goed wurkje.
-content-blocking-custom-desc = Kies wat der blokkearre wurdt.
-content-blocking-private-trackers = Bekende trackers allinnich yn priveefinsters
-content-blocking-third-party-cookies = Tracking-cookies fan tredden
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1000,23 +942,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Cross-site-trackingc
 content-blocking-social-media-trackers = Sosjale-mediatrackers
 content-blocking-all-cookies = Alle cookies
 content-blocking-unvisited-cookies = Cookies fan net-besochte websites
-content-blocking-all-windows-trackers = Bekende trackers yn alle finsters
 content-blocking-all-windows-tracking-content = Folchynhâld yn alle finsters
 content-blocking-all-third-party-cookies = Alle cookies fan tredden
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Let op!
-content-blocking-warning-description = It blokkearjen fan ynhâld kin derfoar soargje dat bepaalde websites net goed wurkje. Blokkearring kin ienfâldich útskeakele wurde foar websites dy't jo fertrouwe.
-content-blocking-learn-how = Mear ynfo
 content-blocking-and-isolating-etp-warning-description = It blokkearjen fan trackers en isolearjen fan cookies kin de funksjonaliteit fan guon websites beynfloedzje. Laad in side mei trackers opnij om alle ynhâld te laden.
 content-blocking-warning-learn-how = Mear ynfo
 content-blocking-reload-description = Jo moatte jo ljepblêden fernije om dizze wizigingen ta te passen.
 content-blocking-reload-tabs-button =
     .label = Alle ljepblêden fernije
     .accesskey = A
-content-blocking-trackers-label =
-    .label = Trackers
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = Folchynhâld
     .accesskey = F
@@ -1075,12 +1011,6 @@ permissions-notification-link = Mear ynfo
 permissions-notification-pause =
     .label = Notifikaasjes pauzearje oant { -brand-short-name } opnij start wurdt
     .accesskey = N
-permissions-block-autoplay-media2 =
-    .label = Automatysk ôfspyljen fan lûd troch websites blokkearje
-    .accesskey = s
-permissions-block-autoplay-media-exceptions =
-    .label = Utsûnderingen…
-    .accesskey = U
 permissions-autoplay = Automatysk ôfspylje
 permissions-autoplay-settings =
     .label = Ynstellingen…

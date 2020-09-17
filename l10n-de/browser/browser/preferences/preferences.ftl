@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Nur wenn { -brand-short-name } bekannte Elemente zur Aktivitätenverfolgung blockieren soll
 do-not-track-option-always =
     .label = Immer
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Einstellungen
-           *[other] Einstellungen
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Einstellungen
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Die Erweiterung "<img data-l10n-name="i
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Die Erweiterung "<img data-l10n-name="icon"/> { $name }" verwaltet die Startseite neuer Tabs.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Die Erweiterung <img data-l10n-name="icon"/> { $name } kontrolliert diese Einstellung.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Die Erweiterung <img data-l10n-name="icon"/> { $name } kontrolliert diese Einstellung.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Diese Einstellung betrifft alle 
 update-application-use-service =
     .label = Einen Hintergrunddienst verwenden, um Updates zu installieren
     .accesskey = g
-update-enable-search-update =
-    .label = Suchmaschinen automatisch aktualisieren
-    .accesskey = S
-update-pref-write-failure-title = Schreibfehler
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Einstellung konnte nicht gespeichert werden. Fehler beim Schreiben dieser Datei: { $path }
 update-setting-write-failure-title = Fehler beim Speichern der Update-Einstellungen
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Suchleiste zur Symbolleiste hinzufügen
 search-engine-default-header = Standardsuchmaschine
-search-engine-default-desc = Wählen Sie Ihre Standardsuchmaschine für die Adress- und Suchleiste.
 search-engine-default-desc-2 = Das ist Ihre Standardsuchmaschine in der Adress- und Suchleiste. Sie können diese jederzeit ändern.
 search-engine-default-private-desc-2 = Wählen Sie eine andere Standardsuchmaschine nur für private Fenster.
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Entfernen
     .accesskey = E
+search-add-engine =
+    .label = Hinzufügen
+    .accesskey = H
 search-find-more-link = Weitere Suchmaschinen hinzufügen
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = Sie haben ein Schlüsselwort ausgewählt, das 
 
 ## Containers Section
 
-containers-back-link = « Zurück
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Löschen
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = So haben Sie das Web überall dabei.
 sync-signedout-description = Synchronisieren Sie Ihre Lesezeichen, Chronik, Tabs, Passwörter, Add-ons und Einstellungen zwischen allen Ihren Geräten.
-sync-signedout-account-title = Verbinden Sie mit einem { -fxaccount-brand-name }
-sync-signedout-account-create = Haben Sie noch kein Konto? Erstellen Sie eines.
-    .accesskey = H
-sync-signedout-account-signin =
-    .label = Anmelden…
-    .accesskey = A
 sync-signedout-account-signin2 =
     .label = Bei { -sync-brand-short-name } anmelden…
     .accesskey = B
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Firefox für <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> oder <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> herunterladen, um mit Ihrem Handy zu synchronisieren.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Profilbild ändern
-sync-disconnect =
-    .label = Trennen…
-    .accesskey = r
 sync-sign-out =
     .label = Abmelden…
     .accesskey = b
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Anmelden
     .accesskey = m
-sync-signedin-settings-header = Sync-Einstellungen
-sync-signedin-settings-desc = Wählen Sie die zwischen den Geräten zu synchronisierenden { -brand-short-name }-Eigenschaften.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = Offene Tabs
     .tooltiptext = Liste aller offenen Tabs von allen verbundenen Geräten
     .accesskey = T
-sync-engine-logins =
-    .label = Zugangsdaten
-    .tooltiptext = Durch Sie gespeicherte Benutzernamen und Passwörter
-    .accesskey = Z
 sync-engine-logins-passwords =
     .label = Zugangsdaten und Passwörter
     .tooltiptext = Gespeicherte Benutzernamen und Passwörter
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Speichern
     .accesskey = S
 sync-connect-another-device = Weiteres Gerät verbinden
-sync-manage-devices = Geräte verwalten
-sync-fxa-begin-pairing = Gerät verbinden
-sync-tos-link = Nutzungsbedingungen
-sync-fxa-privacy-notice = Datenschutzhinweis
 
 ## Privacy Section
 
 privacy-header = Browser-Datenschutz
-
-## Privacy Section - Forms
-
-logins-header = Zugangsdaten und Passwörter
 
 ## Privacy Section - Logins and Passwords
 
@@ -906,8 +868,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Zu blockieren:
     .accesskey = Z
-sitedata-option-block-trackers =
-    .label = Nutzer verfolgende Elemente von Drittanbietern
 sitedata-option-block-cross-site-trackers =
     .label = Zur seitenübergreifenden Aktivitätenverfolgung
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -953,27 +913,9 @@ addressbar-suggestions-settings = Einstellungen für Suchvorschläge ändern
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Seitenelemente blockieren
-content-blocking-section-description = Schützen Sie Ihre Privatsphäre während des Surfens, indem Sie unsichtbare Inhalte blockieren. Diese verfolgen sonst, welche Websites Sie besuchen, und legen ein Profil über Sie an. Das Blockieren einiger dieser Inhalte kann das Laden von Websites beschleunigen.
 content-blocking-enhanced-tracking-protection = Verbesserter Schutz vor Aktivitätenverfolgung
 content-blocking-section-top-level-description = Skripte zur Aktivitätenverfolgung folgen Ihnen und sammeln Informationen über Ihre Internet-Gewohnheiten und Interessen. { -brand-short-name } blockiert viele dieser Skripte zur Aktivitätenverfolgung und andere böswillige Skripte.
 content-blocking-learn-more = Weitere Informationen
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standard
-    .accesskey = S
-content-blocking-setting-strict =
-    .label = Streng
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Benutzerdefiniert
-    .accesskey = B
-content-blocking-standard-desc = Ausgewogenes Blockieren für gleichzeitigen Schutz und Leistung. Einige Elemente zur Aktivitätenverfolgung werden erlaubt, damit Websites funktionieren.
-content-blocking-strict-description = Besserer Schutz. Einige Websites funktionieren eventuell nicht richtig.
-content-blocking-custom-desc = Entsprechend den Einstellungen blockieren:
-content-blocking-private-trackers = Bekannte Elemente zur Aktivitätenverfolgung nur in privaten Fenstern
-content-blocking-third-party-cookies = Cookies zur Aktivitätenverfolgung von Drittanbietern
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1000,23 +942,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies zur seitenü
 content-blocking-social-media-trackers = Skripte zur Aktivitätenverfolgung durch soziale Netzwerke
 content-blocking-all-cookies = Alle Cookies
 content-blocking-unvisited-cookies = Cookies von nicht besuchten Websites
-content-blocking-all-windows-trackers = Erkannte Elemente zur Aktivitätenverfolgung in allen Fenstern
 content-blocking-all-windows-tracking-content = Inhalte zur Aktivitätenverfolgung in allen Fenstern
 content-blocking-all-third-party-cookies = Alle Cookies von Drittanbietern
 content-blocking-cryptominers = Heimliche Digitalwährungsberechner (Krypto-Miner)
 content-blocking-fingerprinters = Identifizierer (Fingerprinter)
 content-blocking-warning-title = Achtung!
-content-blocking-warning-description = Das Blockieren von Inhalten kann bei einigen Websites zu Problemen führen. Das Deaktivieren des Blockierens für von Ihnen vertraute Seiten ist ganz einfach.
-content-blocking-learn-how = Erfahren Sie mehr
 content-blocking-and-isolating-etp-warning-description = Das Blockieren von Skripten zur Aktivitätenverfolgung und das Isolieren von Cookies kann Auswirkungen auf das Funktionieren einiger Websites haben. Laden Sie eine Seite einschließlich Skripten zur Aktivitätenverfolgung neu, damit der komplette Inhalte geladen wird.
 content-blocking-warning-learn-how = Weitere Informationen
 content-blocking-reload-description = Um die Änderungen anzuwenden, müssen alle Tabs neu geladen werden.
 content-blocking-reload-tabs-button =
     .label = Alle Tabs neu laden
     .accesskey = T
-content-blocking-trackers-label =
-    .label = Elemente zur Aktivitätenverfolgung
-    .accesskey = E
 content-blocking-tracking-content-label =
     .label = Inhalte zur Aktivitätenverfolgung
     .accesskey = n
@@ -1075,12 +1011,6 @@ permissions-notification-link = Weitere Informationen
 permissions-notification-pause =
     .label = Benachrichtigungen bis zum Neustart von { -brand-short-name } deaktivieren
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Automatische Wiedergabe von Audio-Inhalten verhindern
-    .accesskey = u
-permissions-block-autoplay-media-exceptions =
-    .label = Ausnahmen…
-    .accesskey = A
 permissions-autoplay = Automatische Wiedergabe
 permissions-autoplay-settings =
     .label = Einstellungen…
@@ -1117,7 +1047,7 @@ collection-studies =
     .label = { -brand-short-name } das Installieren und Durchführen von Studien erlauben
 collection-studies-link = { -brand-short-name }-Studien ansehen
 addon-recommendations =
-    .label = Personalisierte Erweiterungsempfehlungen durch { -brand-short-name }
+    .label = Personalisierte Erweiterungsempfehlungen durch { -brand-short-name } erlauben
 addon-recommendations-link = Weitere Informationen
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.

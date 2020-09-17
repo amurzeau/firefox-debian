@@ -77,6 +77,9 @@ show-dir-label =
         [windows] Mappa megnyitása
        *[other] Könyvtár megnyitása
     }
+environment-variables-title = Környezeti változók
+environment-variables-name = Név
+environment-variables-value = Érték
 experimental-features-title = Kísérleti funkciók
 experimental-features-name = Név
 experimental-features-value = Érték
@@ -104,8 +107,6 @@ graphics-desktop-environment = Asztali környezet
 place-database-title = Helyek adatbázisa
 place-database-integrity = Sértetlenség
 place-database-verify-integrity = Sértetlenség ellenőrzése
-js-title = JavaScript
-js-incremental-gc = Inkrementális GC
 a11y-title = Kisegítő lehetőségek
 a11y-activated = Aktiválva
 a11y-force-disabled = Kisegítő lehetőségek letiltása
@@ -135,7 +136,6 @@ restart-button-label = Újraindítás
 
 audio-backend = Hang háttérprogram
 max-audio-channels = Csatornák maximum
-channel-layout = Elsődleges csatornakiosztás
 sample-rate = Elsődleges mintavételezési sebesség
 roundtrip-latency = Oda-vissza út késleltetése (szórás)
 media-title = Média
@@ -279,7 +279,6 @@ support-blocklisted-bug = Ismert problémák miatt blokkolva: <a data-l10n-name=
 unknown-failure = Blokkolva, hibakód: { $failureCode }
 d3d11layers-crash-guard = D3D11 kompozitáló
 d3d11video-crash-guard = D3D11 videodekóder
-d3d9video-crash-buard = D3D9 videodekóder
 d3d9video-crash-guard = D3D9 videodekóder
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX videodekóder

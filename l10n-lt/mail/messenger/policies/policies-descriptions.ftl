@@ -24,9 +24,11 @@ policy-Cookies = Leisti ar drausti svetainėms įrašyti slapukus.
 policy-DisabledCiphers = Išjungti šifrus.
 policy-DefaultDownloadDirectory = Nustatyti numatytąjį atsiuntimų aplanką.
 policy-DisableAppUpdate = Neleisti atnaujinti „{ -brand-short-name }“.
+policy-DisableDefaultClientAgent = Neleisti numatytajam kliento agentui atlikti jokių veiksmų. Taikoma tik „Windows“; kitos platformos agento neturi.
 policy-DisableDeveloperTools = Blokuoti prieigą prie programuotojų priemonių.
 policy-DisableFeedbackCommands = Išjungti komandas, skirtas siųsti atsiliepimus iš „Žinyno“ meniu („Siųsti atsiliepimą“ ir „Pranešti apie apgaulingą svetainę“).
 policy-DisableForgetButton = Blokuoti mygtuką „Pamiršti“.
+policy-DisableFormHistory = Neįsiminti įvestų paieškos ir formų laukų reikšmių.
 policy-DisableMasterPasswordCreation = Jei „true“, negalima sukurti pagrindinio slaptažodžio.
 policy-DisablePasswordReveal = Neleisti parodyti slaptažodžių įrašytuose prisijungimuose.
 policy-DisableProfileImport = Išjungti meniu komandą, importuojančią duomenis iš kitų programų.
@@ -40,6 +42,8 @@ policy-DontCheckDefaultClient = Išjungti numatytosios programos tikrinimą pale
 policy-DownloadDirectory = Nustatyti ir užrakinti atsiuntimų aplanką.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Įjungti arba išjungti turinio blokavimą, ir papildomai jį užrakinti.
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Įjungti arba išjungti „Encrypted Media Extensions“ ir, papildomai, juos užrakinti.
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -48,25 +52,32 @@ policy-ExtensionSettings = Tvarkyti visus priedų įdiegimo aspektus.
 policy-ExtensionUpdate = Įjungti arba išjungti automatinius priedų naujinimus.
 policy-HardwareAcceleration = Jei „false“, išjungti aparatinį spartinimą.
 policy-InstallAddonsPermission = Leisti kai kurioms svetainėms diegti priedus.
+policy-LegacyProfiles = Nekurti atskiro profilio kiekvienai įdiegčiai.
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
 
+policy-LegacySameSiteCookieBehaviorEnabled = Įjungti numatytąją pasenusią „SameSite“ slapukų elgesio nuostatą.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Grįžti prie pasenusios „SameSite“ slapukų elgsenos nurodytose svetainėse.
 
 ##
 
 policy-LocalFileLinks = Leisti konkrečioms svetainėms susieti vietinius failus.
 policy-NetworkPrediction = Įjungti arba išjungti tinklo nuspėjimą (parengtinis DNS įkėlimas).
 policy-OfferToSaveLogins = Nuostata leidžia siūlyti „{ -brand-short-name }“ vartotojui išisaugoti įvestus prisijungimus ir slaptažodžius. Priimamos „true“ ir „false“ reikšmės.
+policy-OfferToSaveLoginsDefault = Nustatykite numatytąją reikšme, skirtą „{ -brand-short-name }“ siūlyti įsiminti įrašytus prisijungimus ir slaptažodžius. Priimamos „true“ ir „false“ reikšmės.
 policy-OverrideFirstRunPage = Pakeisti pirmo paleidimo puslapį. Padarykite šią strategiją tuščią, jei norite nerodyti pirmojo paleidimo puslapio.
 policy-OverridePostUpdatePage = Pakeisti po atnaujinimų rodomą puslapį „Kas naujo“. Padarykite šią strategiją tuščią, jei nenorite rodyti atnaujinimų puslapio.
+policy-PasswordManagerEnabled = Įjungti slaptažodžių įrašymą į slaptažodžių tvarkytuvę.
 # PDF.js and PDF should not be translated
 policy-PDFjs = Išjungti arba konfigūruoti „PDF.js“, į „{ -brand-short-name }“ integruotą PDF failų žiūryklę.
+policy-Permissions2 = Konfigūruoti kameros, mikrofono, buvimo vietos nustatymo, pranešimų ir automatinio grojimo leidimus.
 policy-Preferences = Nustatyti ir užfiksuoti nuostatų rinkinio reikšmę.
 policy-PromptForDownloadLocation = Klausti kur įrašyti atsiunčiamus failus.
 policy-Proxy = Konfigūruoti įgaliotųjų serverių nuostatas.
 policy-RequestedLocales = Nustatyti programos prašomų kalbų sąrašą ir jo eiliškumą.
 policy-SanitizeOnShutdown2 = Išvalyti visus naršymo duomenis išjungiant programą.
 policy-SearchEngines = Konfigūruoti ieškyklių nuostatas. Ši strategija galima tik prailginto palaikymo laidos (ESR) versijoje.
+policy-SearchSuggestEnabled = Įjungti arba išjungti paieškos žodžių siūlymus.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Diegti PKCS #11 modulius.
 policy-SSLVersionMax = Nustatykite maksimalią SSL versiją.

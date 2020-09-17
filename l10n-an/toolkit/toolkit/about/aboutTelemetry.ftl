@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 about-telemetry-ping-data-source = Fuent de datos de ping:
-about-telemetry-show-current-ping-data = Datos actuals de ping
+about-telemetry-show-current-data = Datos actuals
 about-telemetry-show-archived-ping-data = Datos de ping archivaus
 about-telemetry-show-subsession-data = Amostrar datos d'a subsession
 about-telemetry-choose-ping = Trigar ping:
@@ -15,10 +15,12 @@ about-telemetry-option-group-older = Mas antigo
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
 about-telemetry-page-title = Datos de telemetría
+about-telemetry-current-store = Almagazenamiento actual:
 about-telemetry-more-information = Yes buscando mas información?
 about-telemetry-firefox-data-doc = La <a data-l10n-name="data-doc-link">Documentación de Datos de Firefox</a> contién guidas sobre cómo treballar con as nuestras ferramientas de datos.
 about-telemetry-telemetry-client-doc = La <a data-l10n-name="client-doc-link">Documentación d'o client de telemetría de Firefox</a> contién la definición d'os diferents conceptos, la documentación de l'API y referencias d'os datos.
 about-telemetry-telemetry-dashboard = Las <a data-l10n-name="dashboard-link">Taulas de telemetría</a> te permiten visualizar los datos recibius por Mozilla gracias a la telemetría.
+about-telemetry-telemetry-probe-dictionary = Lo <a data-l10n-name="probe-dictionary-link">diccionario de prebas</a> da detalles y descripcions para las prebas recollidas por telemetría.
 about-telemetry-show-in-Firefox-json-viewer = Ubrir lo visor de JSON
 about-telemetry-home-section = Inicio
 about-telemetry-general-data-section =   Datos chenerals
@@ -55,6 +57,16 @@ about-telemetry-upload-type =
         [enabled] activau
        *[disabled] desactivau
     }
+# Example Output: 1 sample, average = 0, sum = 0
+# Variables:
+#   $sampleCount (Integer): amount of histogram samples
+#   $prettyAverage (Integer): average of histogram samples
+#   $sum (Integer): sum of histogram samples
+about-telemetry-histogram-stats =
+    { $sampleCount ->
+        [one] { $sampleCount } muestra, media =  { $prettyAverage }, suma = { $sum }
+       *[other] { $sampleCount } muestras, media = { $prettyAverage }, suma = { $sum }
+    }
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-page-subtitle = Ista pachina amuestra información sobre o rendimiento, hardware, uso y personalizacions replegadas por Telemetry. Ista información se ninvia ta { $telemetryServerOwner } ta aduyar a amillorar o { -brand-full-name }.
@@ -63,7 +75,7 @@ about-telemetry-settings-explanation = Telemetría ye replegando { about-telemet
 #   $name (String): ping name, e.g. “saved-session”
 #   $timeStamp (String): ping localized timestamp, e.g. “2017/07/08 10:40:46”
 about-telemetry-ping-details = Cada información se ninvia empaquetada en “<a data-l10n-name="ping-link">pings</a>”. Yes veyendo lo ping { $name }, { $timestamp }.
-about-telemetry-ping-details-current = Cada información se ninvia empaquetada en “<a data-l10n-name="ping-link">pings</a>”. Yes veyendo lo ping actual.
+about-telemetry-data-details-current = Cada información se ninvia empaquetada en “<a data-l10n-name="ping-link">pings</a>”. Yes veyendo los datos actuals.
 # string used as a placeholder for the search field
 # More info about it can be found here:
 # https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/data/main-ping.html
@@ -89,7 +101,7 @@ about-telemetry-no-search-results-all = No i hai garra resultau en“{ $searchTe
 #   $sectionName (String): is replaced by the section name.
 about-telemetry-no-data-to-display = No i hai garra dato disponible en “{ $sectionName }” actualment
 # used as a tooltip for the “current” ping title in the sidebar
-about-telemetry-current-ping-sidebar = ping actual
+about-telemetry-current-data-sidebar = Datos actuals
 # used in the “Ping Type” select
 about-telemetry-telemetry-ping-type-all = totz
 # button label to copy the histogram
@@ -124,3 +136,12 @@ about-telemetry-category-header = categoría
 about-telemetry-method-header = metodo
 about-telemetry-object-header = obchecto
 about-telemetry-extra-header = extra
+about-telemetry-origin-section = Orichen d'a telemetría
+about-telemetry-origin-origin = orichen
+about-telemetry-origin-count = contar
+# Variables:
+#   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
+about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">La telemetria de Firefox Origin</a> codifica los datos antes de ninviar-los pa que { $telemetryServerOwner } pueda contar cosas, pero no sepa si un { -brand-product-name } determinau ha contribuyiu a ixa cuenta. (<a data-l10n-name="prio-blog-link">saber-ne mas</a>)
+# Variables:
+#  $process (String): type of process in subsection headers ( e.g. "content", "parent" )
+about-telemetry-process = Proceso { $process }

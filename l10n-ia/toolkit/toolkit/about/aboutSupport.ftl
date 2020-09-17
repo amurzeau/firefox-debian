@@ -80,6 +80,9 @@ show-dir-label =
         [windows] Aperir le dossier
        *[other] Aperir le directorio
     }
+environment-variables-title = Variabiles de ambiente
+environment-variables-name = Nomine
+environment-variables-value = Valor
 experimental-features-title = Functionalitates experimental
 experimental-features-name = Nomine
 experimental-features-value = Valor
@@ -107,8 +110,6 @@ graphics-desktop-environment = Ambiente scriptorio
 place-database-title = Base de datos de locos
 place-database-integrity = Integritate
 place-database-verify-integrity = Verificar le integritate
-js-title = JavaScript
-js-incremental-gc = Recuperation incremental de memoria
 a11y-title = Accessibilitate
 a11y-activated = Activate
 a11y-force-disabled = Impedir le accessibilitate
@@ -138,7 +139,6 @@ restart-button-label = Reinitiar
 
 audio-backend = Backend audio
 max-audio-channels = Numero maxime de canales
-channel-layout = Disposition de canal preferite
 sample-rate = Frequentia de campion preferite
 roundtrip-latency = Latentia de ir e retorno  (deviation standard)
 media-title = Media
@@ -282,7 +282,6 @@ support-blocklisted-bug = Inserite in lista del blocadas per note problemas: <a 
 unknown-failure = Inserite in le lista del blocates: codice de error { $failureCode }
 d3d11layers-crash-guard = Compositor D3D11
 d3d11video-crash-guard = Decodificator de video D3D11
-d3d9video-crash-buard = Decodificator de video D3D9
 d3d9video-crash-guard = Decodificator de video D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Decodificator de video WMF VPX

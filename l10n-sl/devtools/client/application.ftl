@@ -24,9 +24,6 @@ serviceworker-worker-unregister = Prekliči registracijo
 # displayed when the link is disabled.
 serviceworker-worker-debug = Razhroščevanje
     .title = Možno je zgolj razhroščevanje Service Workerjev, ki se izvajajo
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = Začni
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
 serviceworker-worker-debug-forbidden = Razhroščevanje
@@ -35,6 +32,12 @@ serviceworker-worker-debug-forbidden = Razhroščevanje
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = Začni
     .title = Razhroščevanje service workerjev je možno samo, če je omogočen multi e10s
+# Alt text for the image icon displayed inside a debug link for a service worker.
+serviceworker-worker-inspect-icon =
+    .alt = Preglej
+# Text for the start link displayed for a registered but not running Service Worker.
+# Clicking on the link will attempt to start the service worker.
+serviceworker-worker-start3 = Zaženi
 # Text displayed for the updated time of the service worker. The <time> element will
 # display the last update time of the service worker script.
 serviceworker-worker-updated = Posodobljeno <time>{ DATETIME($date, month: "long", year: "numeric", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric") }</time>
@@ -51,9 +54,6 @@ serviceworker-worker-status = Stanje
 serviceworker-worker-status-running = Se izvaja
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = Ustavljeno
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = V postopku registracije
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = Za pregledovanje Service Workerja ga morate registrirati. <a>Več o tem</a>
@@ -76,6 +76,8 @@ manifest-view-header = Manifest aplikacije
 # Header for the Manifest page when there's no manifest to inspect
 # The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
 manifest-empty-intro = Za pregledovanje Manifesta morate dodati spletno aplikacijo. <a>Več o tem</a>
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro-link = Naučite se, kako dodati manifest
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = Napake in opozorila
 # Header for the Identity section of Manifest inspection displayed in the application panel.

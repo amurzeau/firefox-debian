@@ -68,7 +68,7 @@ remove-all-shown =
     .accesskey = A
 remove-all-passwords-prompt = 비밀번호를 모두 삭제하시겠습니까?
 remove-all-passwords-title = 모든 비밀번호 삭제
-no-master-password-prompt = 정말 암호를 보이게 하시겠습니까?
+no-master-password-prompt = 정말 비밀번호를 보이게 하시겠습니까?
 
 ## OS Authentication dialog
 

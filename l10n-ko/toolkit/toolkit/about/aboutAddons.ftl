@@ -10,8 +10,6 @@ search-header =
     .searchbuttonlabel = 검색
 search-header-shortcut =
     .key = f
-loading-label =
-    .value = 로드 중…
 list-empty-installed =
     .value = 설치한 부가 기능이 없음
 list-empty-available-updates =
@@ -22,9 +20,6 @@ list-empty-find-updates =
     .label = 업데이트 확인
 list-empty-button =
     .label = 부가 기능 더 알아보기
-install-addon-from-file =
-    .label = 파일에서 부가 기능 설치…
-    .accesskey = I
 help-button = 부가 기능 지원
 sidebar-help-button-title =
     .title = 부가 기능 지원
@@ -33,8 +28,6 @@ preferences =
         [windows] { -brand-short-name } 설정
        *[other] { -brand-short-name } 설정
     }
-tools-menu =
-    .tooltiptext = 부가 기능 도구
 sidebar-preferences-button-title =
     .title =
         { PLATFORM() ->
@@ -45,9 +38,6 @@ show-unsigned-extensions-button =
     .label = 몇몇 확장 기능은 확인을 할 수 없음
 show-all-extensions-button =
     .label = 모든 확장 기능 보기
-debug-addons =
-    .label = 부가 기능 디버그
-    .accesskey = B
 cmd-show-details =
     .label = 자세히 보기
     .accesskey = S
@@ -78,9 +68,6 @@ cmd-contribute =
     .label = 기여하기
     .accesskey = C
     .tooltiptext = 이 부가 기능의 개발에 기여하기
-discover-title = 부가 기능 소개
-discover-description = 부가 기능은 { -brand-short-name }를 여러분의 취향에 따라 맞춤 기능을 만들어 주는 애플리케이션 혹은 테마입니다. 메일 혹은 날씨 알림, 원하는 스타일 등 다양한 기능을 제공합니다.
-discover-footer = 인터넷에 연결할 때 최신 추천 부가 기능을 소개해 드립니다.
 detail-version =
     .label = 버전
 detail-last-updated =
@@ -102,15 +89,12 @@ detail-update-manual =
     .tooltiptext = 업데이트 자동 설치 중단
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = 사생활 보호 창에서 실행
-detail-private-browsing-description2 = 허용되면, 확장 기능은 사생활 보호 모드에서 사용자 온라인 활동에 접근할 수 있습니다. <label data-l10n-name="detail-private-browsing-learn-more">더 알아보기</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = 사생활 보호 창에서 허용 안 됨
-detail-private-disallowed-description = 이 확장 기능은 사생활 보호 모드에서는 실행되지 않습니다. <label data-l10n-name="detail-private-browsing-learn-more">더 알아보기</label>
 detail-private-disallowed-description2 = 이 확장 기능은 사생활 보호 모드에서는 실행되지 않습니다. <a data-l10n-name="learn-more">더 알아보기</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = 사생활 보호 창에 대한 접근 필요
-detail-private-required-description = 이 확장 기능은 사생활 보호 모드에서 온라인 활동에 접근 할 수 있습니다. <label data-l10n-name="detail-private-browsing-learn-more">더 알아보기</label>
 detail-private-required-description2 = 이 확장 기능은 사생활 보호 모드에서 온라인 활동에 접근 할 수 있습니다. <a data-l10n-name="learn-more">더 알아보기</a>
 detail-private-browsing-on =
     .label = 허용
@@ -165,15 +149,6 @@ private-browsing-description2 =
     { -brand-short-name }에 추가되는 모든 새 확장 기능은 기본적으로 사생활 보호 창에서 실행되지 않습니다. 만약 사용자가 설정에서 허용하지 않는다면, 확장 기능은 사생활 보호 모드에서 작동하지 않으며, 사용자 온라인 활동에 접근할 수 없습니다.
     사용자의 사생활 보호 모드를 비공개로 유지 하기 위해 이렇게 변경했습니다.
     <label data-l10n-name="private-browsing-learn-more">확장 기능 설정 관리 방법 알아보기</label>
-extensions-view-discopane =
-    .name = 추천
-    .tooltiptext = { extensions-view-discopane.name }
-extensions-view-recent-updates =
-    .name = 최근 업데이트
-    .tooltiptext = { extensions-view-recent-updates.name }
-extensions-view-available-updates =
-    .name = 업데이트 가능 항목
-    .tooltiptext = { extensions-view-available-updates.name }
 addon-category-discover = 추천
 addon-category-discover-title =
     .title = 추천
@@ -201,24 +176,6 @@ addon-category-recent-updates-title =
 
 ## These are global warnings
 
-extensions-warning-safe-mode-label =
-    .value = 안전 모드에서는 모든 부가 기능을 사용할 수 없습니다.
-extensions-warning-safe-mode-container =
-    .tooltiptext = { extensions-warning-safe-mode-label.value }
-extensions-warning-check-compatibility-label =
-    .value = 부가 기능 호환성 확인 기능을 사용 안 합니다. 호환되지 않는 부가 기능이 있을 수 있습니다.
-extensions-warning-check-compatibility-container =
-    .tooltiptext = { extensions-warning-check-compatibility-label.value }
-extensions-warning-check-compatibility-enable =
-    .label = 사용
-    .tooltiptext = 부가 기능 호환성 확인 기능 사용
-extensions-warning-update-security-label =
-    .value = 부가 기능 업데이트 보안 확인 기능을 사용 안 합니다. 업데이트로 인해 문제가 발생 할 수 있습니다.
-extensions-warning-update-security-container =
-    .tooltiptext = { extensions-warning-update-security-label.value }
-extensions-warning-update-security-enable =
-    .label = 사용
-    .tooltiptext = 부가 기능 업데이트 보안 확인 기능 사용
 extensions-warning-safe-mode = 안전 모드에서는 모든 부가 기능을 사용할 수 없습니다.
 extensions-warning-check-compatibility = 부가 기능 호환성 확인 기능을 사용 안 합니다. 호환되지 않는 부가 기능이 있을 수 있습니다.
 extensions-warning-check-compatibility-button = 사용
@@ -229,12 +186,6 @@ extensions-warning-update-security-button = 사용
 
 ## Strings connected to add-on updates
 
-extensions-updates-check-for-updates =
-    .label = 업데이트 확인
-    .accesskey = C
-extensions-updates-view-updates =
-    .label = 최근 업데이트 보기
-    .accesskey = V
 addon-updates-check-for-updates = 업데이트 확인
     .accesskey = C
 addon-updates-view-updates = 최근 업데이트 보기
@@ -243,9 +194,6 @@ addon-updates-view-updates = 최근 업데이트 보기
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
-extensions-updates-update-addons-automatically =
-    .label = 부가 기능을 자동으로 업데이트
-    .accesskey = A
 addon-updates-update-addons-automatically = 부가 기능을 자동으로 업데이트
     .accesskey = A
 
@@ -255,12 +203,6 @@ addon-updates-update-addons-automatically = 부가 기능을 자동으로 업데
 ## (which itself is either "Automatically" or "Manually", controlled by the
 ## extensions-updates-update-addons-automatically.label menu item).
 
-extensions-updates-reset-updates-to-automatic =
-    .label = 모든 부가 기능을 자동 업데이트로 재설정
-    .accesskey = R
-extensions-updates-reset-updates-to-manual =
-    .label = 모든 부가 기능을 수동 업데이트로 재설정
-    .accesskey = R
 addon-updates-reset-updates-to-automatic = 모든 부가 기능을 자동 업데이트로 재설정
     .accesskey = R
 addon-updates-reset-updates-to-manual = 모든 부가 기능을 수동 업데이트로 재설정
@@ -268,21 +210,6 @@ addon-updates-reset-updates-to-manual = 모든 부가 기능을 수동 업데이
 
 ## Status messages displayed when updating add-ons
 
-extensions-updates-updating =
-    .value = 업데이트 확인 중
-extensions-updates-installed =
-    .value = 업데이트 완료
-extensions-updates-downloaded =
-    .value = 부가 기능 업데이트를 다운로드했습니다.
-extensions-updates-restart =
-    .label = 설치를 완료하려면 다시 시작하세요.
-extensions-updates-none-found =
-    .value = 업데이트 없음
-extensions-updates-manual-updates-found =
-    .label = 업데이트 가능 항목 보기
-extensions-updates-update-selected =
-    .label = 업데이트 설치
-    .tooltiptext = 현재 목록 내 업데이트 설치하기
 addon-updates-updating = 업데이트 확인 중
 addon-updates-installed = 업데이트 완료
 addon-updates-none-found = 업데이트 없음
@@ -299,9 +226,6 @@ addon-open-about-debugging = 부가 기능 디버그
 
 ## Extension shortcut management
 
-manage-extensions-shortcuts =
-    .label = 확장 기능 단축키 관리
-    .accesskey = S
 # This is displayed in the page options menu
 addon-manage-extensions-shortcuts = 확장 기능 단축키 관리
     .accesskey = S
@@ -309,7 +233,6 @@ shortcuts-no-addons = 사용하는 확장 기능이 없습니다.
 shortcuts-no-commands = 다음 확장 기능에는 단축키가 없습니다:
 shortcuts-input =
     .placeholder = 단축키 입력
-shortcuts-browserAction = 확장 기능 활성화
 shortcuts-browserAction2 = 도구 모음 버튼 활성화
 shortcuts-pageAction = 페이지 작업 활성화
 shortcuts-sidebarAction = 탐색창 표시/숨기기
@@ -333,8 +256,6 @@ shortcuts-card-expand-button =
        *[other] { $numberToShow }개 더 보기
     }
 shortcuts-card-collapse-button = 간략히 보기
-go-back-button =
-    .tooltiptext = 뒤로 가기
 header-back-button =
     .title = 뒤로 가기
 
@@ -374,7 +295,6 @@ remove-addon-button = 제거
 remove-addon-disabled-button = 제거할 수 없음. <a data-l10n-name="link">이유?</a>
 disable-addon-button = 사용 안 함
 enable-addon-button = 사용함
-expand-addon-button = 옵션 더보기
 # This is used for the toggle on the extension card, it's a checkbox and this
 # is always its label.
 extension-enable-addon-button-label =
@@ -387,8 +307,6 @@ preferences-addon-button =
 details-addon-button = 상세 정보
 release-notes-addon-button = 출시 정보
 permissions-addon-button = 권한
-addons-enabled-heading = 활성화 됨
-addons-disabled-heading = 비활성화 됨
 extension-enabled-heading = 사용함
 extension-disabled-heading = 사용 안 함
 theme-enabled-heading = 사용함
@@ -431,7 +349,7 @@ addon-detail-reviews-link =
 
 # Variables:
 #   $addon (string) - Name of the add-on
-pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span>가 제거되었습니다.
+pending-uninstall-description = <span data-l10n-name="addon-name">{ $addon }</span> 부가 기능이 제거되었습니다.
 pending-uninstall-undo-button = 실행 취소
 addon-detail-updates-label = 자동 업데이트 허용
 addon-detail-updates-radio-default = 기본값
@@ -441,21 +359,12 @@ addon-detail-update-check-label = 업데이트 확인
 install-update-button = 업데이트
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
-addon-badge-private-browsing-allowed =
-    .title = 사생활 보호 창에서 허용됨
-# This is the tooltip text for the private browsing badge in about:addons. The
-# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = 사생활 보호 창에서 허용됨
     .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = 허용된 경우, 확장 기능은 사생활 보호 모드에서 온라인 활동에 접근 할 수 있습니다. <a data-l10n-name="learn-more">더 알아보기</a>
 addon-detail-private-browsing-allow = 허용
 addon-detail-private-browsing-disallow = 허용 안 함
-# This is the tooltip text for the recommended badge for an extension in about:addons. The
-# badge is a small icon displayed next to an extension when it is recommended on AMO.
-addon-badge-recommended =
-    .title = 추천
-    .alt = 추천
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended2 =

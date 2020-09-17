@@ -9,7 +9,12 @@ certificate-viewer-certificate-section-title = प्रमाणपत्र
 
 ## Certificate information labels
 
+certificate-viewer-algorithm = एल्गोरिथ्म
+certificate-viewer-certificate-authority = प्रमाणपत्र प्राधिकार
 certificate-viewer-email-address = ईमेल पता
+# Variables:
+#   $firstCertName (String) - Common Name for the displayed certificate
+certificate-viewer-tab-title = { $firstCertName } के लिए प्रमाणपत्र
 # Inc. means Incorporated, e.g GitHub is incorporated in Delaware
 certificate-viewer-inc-country = सम्मिलित देश
 certificate-viewer-country = देश
@@ -38,6 +43,7 @@ certificate-viewer-issuer-name = जारीकर्ता का नाम
 certificate-viewer-validity = वैधता
 certificate-viewer-authority-info-aia = प्राधिकरण जानकारी (AIA)
 certificate-viewer-certificate-policies = प्रमाणपत्र नीतियां
+
 # This message is used as a row header in the Miscellaneous section.
 # The associated data cell contains links to download the certificate.
 certificate-viewer-download = डाउनलोड

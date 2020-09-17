@@ -318,8 +318,38 @@ enable-devtools-popup-description = Para utilizar o atalho F12, abra primeiro as
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Pesquisar ou introduzir um endereço
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Pesquisar ou introduzir um endereço
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Pesquisar na Internet
+    .aria-label = Procurar com o { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Introduza os termos de pesquisa
+    .aria-label = Procurar em { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Introduza os termos de pesquisa
+    .aria-label = Procurar nos marcadores
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Introduza os termos de pesquisa
+    .aria-label = Procurar no histórico
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Introduza os termos de pesquisa
+    .aria-label = Procurar nos separadores
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

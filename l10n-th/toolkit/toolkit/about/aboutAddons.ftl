@@ -10,8 +10,6 @@ search-header =
     .searchbuttonlabel = ค้นหา
 search-header-shortcut =
     .key = f
-loading-label =
-    .value = กำลังโหลด…
 list-empty-installed =
     .value = คุณไม่ได้ติดตั้งส่วนเสริมประเภทนี้ไว้
 list-empty-available-updates =
@@ -22,9 +20,6 @@ list-empty-find-updates =
     .label = ตรวจสอบการอัปเดต
 list-empty-button =
     .label = เรียนรู้เพิ่มเติมเกี่ยวกับส่วนเสริม
-install-addon-from-file =
-    .label = ติดตั้งส่วนเสริมจากไฟล์…
-    .accesskey = ง
 help-button = การสนับสนุนของส่วนเสริม
 sidebar-help-button-title =
     .title = การสนับสนุนของส่วนเสริม
@@ -33,8 +28,6 @@ preferences =
         [windows] ตัวเลือก { -brand-short-name }
        *[other] ค่ากำหนด { -brand-short-name }
     }
-tools-menu =
-    .tooltiptext = เครื่องมือสำหรับส่วนเสริมทั้งหมด
 sidebar-preferences-button-title =
     .title =
         { PLATFORM() ->
@@ -45,9 +38,6 @@ show-unsigned-extensions-button =
     .label = ไม่สามารถยืนยันส่วนขยายบางตัว
 show-all-extensions-button =
     .label = แสดงส่วนขยายทั้งหมด
-debug-addons =
-    .label = ดีบั๊กส่วนเสริม
-    .accesskey = บ
 cmd-show-details =
     .label = แสดงข้อมูลเพิ่มเติม
     .accesskey = ส
@@ -78,9 +68,6 @@ cmd-contribute =
     .label = มีส่วนร่วม
     .accesskey = ม
     .tooltiptext = มีส่วนร่วมกับการพัฒนาส่วนเสริมนี้
-discover-title = ส่วนเสริมคืออะไร?
-discover-description = ส่วนเสริมคือแอปพลิเคชันที่ช่วยให้คุณปรับแต่ง { -brand-short-name } ให้เป็นส่วนบุคคลด้วยฟังก์ชันการทำงานหรือลักษณะพิเศษ ลองแถบข้างที่ช่วยประหยัดเวลา, ตัวแจ้งสภาพอากาศ หรือชุดตกแต่งเพื่อทำให้ { -brand-short-name } เป็นของคุณเอง
-discover-footer = เมื่อคุณเชื่อมต่อกับอินเทอร์เน็ต บานหน้าต่างนี้จะแสดงส่วนเสริมบางส่วนที่ดีที่สุดและได้รับความนิยมสูงสุดเพื่อให้คุณลองใช้
 detail-version =
     .label = รุ่น
 detail-last-updated =
@@ -102,15 +89,12 @@ detail-update-manual =
     .tooltiptext = ไม่ติดตั้งการอัปเดตโดยอัตโนมัติ
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = เรียกใช้ในหน้าต่างส่วนตัว
-detail-private-browsing-description2 = เมื่ออนุญาตแล้ว ส่วนขยายจะสามารถเข้าถึงกิจกรรมออนไลน์ของคุณขณะท่องเว็บแบบส่วนตัวได้ <label data-l10n-name="detail-private-browsing-learn-more">เรียนรู้เพิ่มเติม</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = ไม่อนุญาตในหน้าต่างส่วนตัว
-detail-private-disallowed-description = ส่วนขยายนี้จะไม่ทำงานในขณะที่เรียกดูแบบส่วนตัว <label data-l10n-name="detail-private-browsing-learn-more">เรียนรู้เพิ่มเติม</label>
 detail-private-disallowed-description2 = ส่วนขยายนี้จะไม่ทำงานในขณะที่เรียกดูแบบส่วนตัว<a data-l10n-name="learn-more">เรียนรู้เพิ่มเติม</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = จำเป็นต้องเข้าถึงหน้าต่างแบบส่วนตัว
-detail-private-required-description = ส่วนขยายนี้จะสามารถเข้าถึงกิจกรรมออนไลน์ของคุณได้ในขณะที่เรียกดูแบบส่วนตัว <label data-l10n-name="detail-private-browsing-learn-more">เรียนรู้เพิ่มเติม</label>
 detail-private-required-description2 = ส่วนขยายนี้สามารถเข้าถึงกิจกรรมออนไลน์ของคุณในขณะที่เรียกดูแบบส่วนตัว<a data-l10n-name="learn-more">เรียนรู้เพิ่มเติม</a>
 detail-private-browsing-on =
     .label = อนุญาต
@@ -166,15 +150,6 @@ private-browsing-description2 =
     ในขณะที่เรียกดูแบบส่วนตัว และจะไม่สามารถเข้าถึงกิจกรรมออนไลน์ของคุณที่นั่นได้ เราได้ทำการเปลี่ยนแปลง
     นี้เพื่อรักษาความเป็นส่วนตัวให้กับการเรียกดูแบบส่วนตัวของคุณ
     <label data-l10n-name="private-browsing-learn-more">เรียนรู้วิธีจัดการการตั้งค่าส่วนขยาย</label>
-extensions-view-discopane =
-    .name = คำแนะนำ
-    .tooltiptext = { extensions-view-discopane.name }
-extensions-view-recent-updates =
-    .name = การอัปเดตล่าสุด
-    .tooltiptext = { extensions-view-recent-updates.name }
-extensions-view-available-updates =
-    .name = การอัปเดตที่มี
-    .tooltiptext = { extensions-view-available-updates.name }
 addon-category-discover = คำแนะนำ
 addon-category-discover-title =
     .title = คำแนะนำ
@@ -202,24 +177,6 @@ addon-category-recent-updates-title =
 
 ## These are global warnings
 
-extensions-warning-safe-mode-label =
-    .value = ส่วนเสริมทั้งหมดถูกปิดใช้งานโดยโหมดปลอดภัย
-extensions-warning-safe-mode-container =
-    .tooltiptext = { extensions-warning-safe-mode-label.value }
-extensions-warning-check-compatibility-label =
-    .value = การตรวจสอบความเข้ากันได้ของส่วนเสริมถูกปิดใช้งาน คุณอาจมีส่วนเสริมที่เข้ากันไม่ได้
-extensions-warning-check-compatibility-container =
-    .tooltiptext = { extensions-warning-check-compatibility-label.value }
-extensions-warning-check-compatibility-enable =
-    .label = เปิดใช้งาน
-    .tooltiptext = เปิดใช้งานการตรวจสอบความเข้ากันได้ของส่วนเสริม
-extensions-warning-update-security-label =
-    .value = การตรวจสอบความปลอดภัยของการอัปเดตส่วนเสริมถูกปิดใช้งาน คุณอาจถูกบุกรุกโดยการอัปเดต
-extensions-warning-update-security-container =
-    .tooltiptext = { extensions-warning-update-security-label.value }
-extensions-warning-update-security-enable =
-    .label = เปิดใช้งาน
-    .tooltiptext = เปิดใช้งานการตรวจสอบความปลอดภัยของการอัปเดตส่วนเสริม
 extensions-warning-safe-mode = ส่วนเสริมทั้งหมดถูกปิดใช้งานโดยโหมดปลอดภัย
 extensions-warning-check-compatibility = การตรวจสอบความเข้ากันได้ของส่วนเสริมถูกปิดใช้งาน คุณอาจมีส่วนเสริมที่เข้ากันไม่ได้
 extensions-warning-check-compatibility-button = เปิดใช้งาน
@@ -230,12 +187,6 @@ extensions-warning-update-security-button = เปิดใช้งาน
 
 ## Strings connected to add-on updates
 
-extensions-updates-check-for-updates =
-    .label = ตรวจสอบการอัปเดต
-    .accesskey = ต
-extensions-updates-view-updates =
-    .label = ดูการอัปเดตล่าสุด
-    .accesskey = ด
 addon-updates-check-for-updates = ตรวจสอบการอัปเดต
     .accesskey = ต
 addon-updates-view-updates = ดูการอัปเดตล่าสุด
@@ -244,9 +195,6 @@ addon-updates-view-updates = ดูการอัปเดตล่าสุด
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
-extensions-updates-update-addons-automatically =
-    .label = อัปเดตส่วนเสริมโดยอัตโนมัติ
-    .accesskey = อ
 addon-updates-update-addons-automatically = อัปเดตส่วนเสริมโดยอัตโนมัติ
     .accesskey = อ
 
@@ -256,12 +204,6 @@ addon-updates-update-addons-automatically = อัปเดตส่วนเส
 ## (which itself is either "Automatically" or "Manually", controlled by the
 ## extensions-updates-update-addons-automatically.label menu item).
 
-extensions-updates-reset-updates-to-automatic =
-    .label = กลับค่าเดิมของส่วนเสริมทั้งหมดเป็นอัปเดตโดยอัตโนมัติ
-    .accesskey = ก
-extensions-updates-reset-updates-to-manual =
-    .label = กลับค่าเดิมของส่วนเสริมทั้งหมดเป็นอัปเดตด้วยตนเอง
-    .accesskey = ก
 addon-updates-reset-updates-to-automatic = กลับค่าเดิมของส่วนเสริมทั้งหมดเป็นอัปเดตโดยอัตโนมัติ
     .accesskey = ก
 addon-updates-reset-updates-to-manual = กลับค่าเดิมของส่วนเสริมทั้งหมดเป็นอัปเดตด้วยตนเอง
@@ -269,21 +211,6 @@ addon-updates-reset-updates-to-manual = กลับค่าเดิมขอ�
 
 ## Status messages displayed when updating add-ons
 
-extensions-updates-updating =
-    .value = กำลังอัปเดตส่วนเสริม
-extensions-updates-installed =
-    .value = อัปเดตส่วนเสริมของคุณแล้ว
-extensions-updates-downloaded =
-    .value = ดาวน์โหลดการอัปเดตสำหรับส่วนเสริมของคุณแล้ว
-extensions-updates-restart =
-    .label = เริ่มการทำงานใหม่ตอนนี้เพื่อให้การติดตั้งเสร็จสมบูรณ์
-extensions-updates-none-found =
-    .value = ไม่พบการอัปเดต
-extensions-updates-manual-updates-found =
-    .label = ดูการอัปเดตที่มี
-extensions-updates-update-selected =
-    .label = ติดตั้งการอัปเดต
-    .tooltiptext = ติดตั้งการอัปเดตที่มีในรายการนี้
 addon-updates-updating = กำลังอัปเดตส่วนเสริม
 addon-updates-installed = อัปเดตส่วนเสริมของคุณแล้ว
 addon-updates-none-found = ไม่พบการอัปเดต
@@ -300,9 +227,6 @@ addon-open-about-debugging = ดีบั๊กส่วนเสริม
 
 ## Extension shortcut management
 
-manage-extensions-shortcuts =
-    .label = จัดการทางลัดส่วนขยาย
-    .accesskey = จ
 # This is displayed in the page options menu
 addon-manage-extensions-shortcuts = จัดการทางลัดส่วนขยาย
     .accesskey = จ
@@ -310,7 +234,6 @@ shortcuts-no-addons = คุณไม่ได้เปิดใช้งาน�
 shortcuts-no-commands = ส่วนขยายดังต่อไปนี้ไม่มีทางลัด:
 shortcuts-input =
     .placeholder = พิมพ์ทางลัด
-shortcuts-browserAction = เปิดใช้งานส่วนขยาย
 shortcuts-browserAction2 = เปิดใช้งานปุ่มแถบเครื่องมือ
 shortcuts-pageAction = เปิดใช้งานการกระทำหน้า
 shortcuts-sidebarAction = เปิด/ปิดแถบข้าง
@@ -334,8 +257,6 @@ shortcuts-card-expand-button =
        *[other] แสดงเพิ่มเติมอีก { $numberToShow }
     }
 shortcuts-card-collapse-button = แสดงน้อยลง
-go-back-button =
-    .tooltiptext = ย้อนกลับ
 header-back-button =
     .title = ย้อนกลับ
 
@@ -382,7 +303,6 @@ remove-addon-button = เอาออก
 remove-addon-disabled-button = ไม่สามารถเอาออกได้ <a data-l10n-name="link">ทำไม?</a>
 disable-addon-button = ปิดใช้งาน
 enable-addon-button = เปิดใช้งาน
-expand-addon-button = ตัวเลือกเพิ่มเติม
 # This is used for the toggle on the extension card, it's a checkbox and this
 # is always its label.
 extension-enable-addon-button-label =
@@ -395,8 +315,6 @@ preferences-addon-button =
 details-addon-button = รายละเอียด
 release-notes-addon-button = บันทึกประจำรุ่น
 permissions-addon-button = การอนุญาต
-addons-enabled-heading = เปิดใช้งานอยู่
-addons-disabled-heading = ปิดใช้งานอยู่
 extension-enabled-heading = ถูกเปิดใช้งาน
 extension-disabled-heading = ถูกปิดใช้งาน
 theme-enabled-heading = ถูกเปิดใช้งาน
@@ -415,6 +333,9 @@ addon-detail-version-label = รุ่น
 addon-detail-last-updated-label = อัปเดตล่าสุด
 addon-detail-homepage-label = หน้าแรก
 addon-detail-rating-label = การจัดอันดับ
+# Message for add-ons with a staged pending update.
+install-postponed-message = ส่วนขยายนี้จะถูกอัปเดตเมื่อ { -brand-short-name } เริ่มการทำงานใหม่
+install-postponed-button = อัปเดตตอนนี้
 # The average rating that the add-on has received.
 # Variables:
 #   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
@@ -446,21 +367,12 @@ addon-detail-update-check-label = ตรวจสอบการอัปเด�
 install-update-button = อัปเดต
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
-addon-badge-private-browsing-allowed =
-    .title = อนุญาตในหน้าต่างส่วนตัวแล้ว
-# This is the tooltip text for the private browsing badge in about:addons. The
-# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = อนุญาตในหน้าต่างส่วนตัวแล้ว
     .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = เมื่อได้รับอนุญาต ส่วนขยายจะสามารถเข้าถึงกิจกรรมออนไลน์ของคุณได้ในขณะที่เรียกดูแบบส่วนตัว <a data-l10n-name="learn-more">เรียนรู้เพิ่มเติม</a>
 addon-detail-private-browsing-allow = อนุญาต
 addon-detail-private-browsing-disallow = ไม่อนุญาต
-# This is the tooltip text for the recommended badge for an extension in about:addons. The
-# badge is a small icon displayed next to an extension when it is recommended on AMO.
-addon-badge-recommended =
-    .title = แนะนำ
-    .alt = แนะนำ
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended2 =

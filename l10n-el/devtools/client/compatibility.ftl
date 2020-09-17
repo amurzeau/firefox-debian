@@ -30,6 +30,7 @@ compatibility-feedback-button-title =
 ## Messages used as headers in settings pane
 
 compatibility-settings-header = Ρυθμίσεις
+compatibility-target-browsers-header = Προγράμματα περιήγησης-στόχοι
 
 ##
 

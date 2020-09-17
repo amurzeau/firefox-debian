@@ -13,18 +13,13 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Sužinoti daugiau
-onboarding-button-label-try-now = Išbandykite dabar
 onboarding-button-label-get-started = Pradėti
 
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = Sveiki, čia „{ -brand-short-name }“
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Sveiki, čia <span data-l10n-name="zap">„{ -brand-short-name }“</span>
 onboarding-welcome-body = Naršyklę jau turite.<br/>Dabar susipažinkite su likusia „{ -brand-product-name }“ šeima.
 onboarding-welcome-learn-more = Sužinokite apie privalumus daugiau.
-onboarding-join-form-header = Prisijungti prie „{ -brand-product-name }“
 onboarding-welcome-modal-get-body = Naršyklę jau turite.<br/>Dabar išnaudokite visas „{ -brand-product-name }“ galimybes.
 onboarding-welcome-modal-supercharge-body = Pagerinkite savo privatumo apsaugą.
 onboarding-welcome-modal-privacy-body = Naršyklę jau turite. Pridėkime daugiau privatumo apsaugos.
@@ -44,16 +39,115 @@ onboarding-start-browsing-button-label = Pradėti naršymą
 onboarding-cards-dismiss =
     .title = Paslėpti
     .aria-label = Paslėpti
-# Tooltip displayed on hover of top sites in import settings screen during onboarding flow.
-# This support welcome screen showing top sites imported from the user's default browser.
-# Title text is kept multiline to ensure tooltip container width is not more than 40 characters.
-onboarding-import-sites-info =
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Sveiki, čia <span data-l10n-name="zap">„{ -brand-short-name }“</span>
+onboarding-multistage-welcome-subtitle = Sparti, saugi, ir privati naršyklė, kurią palaiko ne pelno siekianti įmonė.
+onboarding-multistage-welcome-primary-button-label = Pradėti sąranką
+onboarding-multistage-welcome-secondary-button-label = Prisijunkite
+onboarding-multistage-welcome-secondary-button-text = Turite paskyrą?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Importuokite savo slaptažodžius, <br/>adresyną, ir <span data-l10n-name="zap">daugiau</span>
+onboarding-multistage-import-subtitle = Pereinate iš kitos naršyklės? Labai paprasta viską perkelti į „{ -brand-short-name }“.
+onboarding-multistage-import-primary-button-label = Pradėti importavimą
+onboarding-multistage-import-secondary-button-label = Ne dabar
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Čia išvardintos svetainės buvo rastos šiame įrenginyje. „{ -brand-short-name }“ nesaugo ir nesinchronizuoja duomenų iš kitų naršyklių, nebent juos importuojate.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Pradžia: žingsnis { $current } iš { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Pasirinkite <span data-l10n-name="zap">išvaizdą</span>
+onboarding-multistage-theme-subtitle = Individualizuokite „{ -brand-short-name }“ su grafiniu apvalkalu.
+onboarding-multistage-theme-primary-button-label = Įrašyti grafinį apvalkalą
+onboarding-multistage-theme-secondary-button-label = Ne dabar
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Automatinis
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = Naudoti sistemos grafinis apvalkalą
+onboarding-multistage-theme-label-light = Šviesus
+onboarding-multistage-theme-label-dark = Tamsus
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = „Firefox Alpenglow“
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
     .title =
-        Šios svetainės buvo rastos šiame įrenginyje.
-        „{ -brand-short-name }“ nesaugo ir nesinchronizuoja duomenų
-        iš kitos naršyklės, nebent pasirenkate
-        jų importavimą.
-    .aria-label = { onboarding-import-sites-info.title }
+        Paveldėti jūsų operacinės sistemos spalvas
+        mygtukams, meniu elementams, ir langams.
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        Naudoti šviesias spalvas mygtukams,
+        meniu elementams, ir langams.
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        Naudoti tamsias spalvas mygtukams,
+        meniu elementams, ir langams.
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title =
+        Naudoti įvairiaspalvę išvaizdą mygtukams,
+        meniu elementams, ir langams.
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Paveldėti jūsų operacinės sistemos spalvas
+        mygtukams, meniu elementams, ir langams.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Paveldėti jūsų operacinės sistemos spalvas
+        mygtukams, meniu elementams, ir langams.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Naudoti šviesias spalvas mygtukams,
+        meniu elementams, ir langams.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Naudoti šviesias spalvas mygtukams,
+        meniu elementams, ir langams.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Naudoti tamsias spalvas mygtukams,
+        meniu elementams, ir langams.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Naudoti tamsias spalvas mygtukams,
+        meniu elementams, ir langams.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Naudoti įvairiaspalvę išvaizdą mygtukams,
+        meniu elementams, ir langams.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Naudoti įvairiaspalvę išvaizdą mygtukams,
+        meniu elementams, ir langams.
 
 ## Welcome full page string
 
@@ -79,11 +173,7 @@ onboarding-sync-form-sub-header = norėdami tęsti su „{ -sync-brand-name }“
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Naudingi produktai
 onboarding-benefit-products-text = Atlikite darbus su įrankių šeima, kuri gerbia jūsų privatumą visuose jūsų įrenginiuose.
-onboarding-benefit-knowledge-title = Praktinės žinios
-onboarding-benefit-knowledge-text = Išmokite visko, ko reikia žinoti, kad internete išliktumėte protingesni ir saugesni.
-onboarding-benefit-privacy-title = Tikras privatumas
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -104,17 +194,6 @@ onboarding-benefit-lockwise-text = Tvarkykite saugius ir patogiai pasiekiamus sl
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Privatusis naršymas
-onboarding-private-browsing-text = Naršykite patys. Privatusis naršymas, kartu su turinio blokavimu, blokuoja jūsų veiklą saityne sekančius stebėjimo elementus.
-onboarding-screenshots-title = Ekrano nuotraukos
-onboarding-screenshots-text = Darykite, įrašykite ir dalinkitės ekrano nuotraukomis – nepalikdami „{ -brand-short-name }“. Užfiksuokite sritį arba visą naršomą tinklalapį. Tada įrašykite į saityną patogiam pasiekimui ir dalinimuisi.
-onboarding-addons-title = Priedai
-onboarding-addons-text = Priedai leidžia pridėti funkcionalumo į „{ -brand-short-name }“, kad naršyklė dirbtų daugiau jūsų labui. Palyginkite kainas, patikrinkite orus arba išreikškite savo asmenybę su pasirinktu grafiniu apvalkalu.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Naršykite greičiau, protingiau, ar saugiau su tokiais priedais kaip „Ghostery“, kuris leidžia blokuoti erzinančias reklamas.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Sinchronizavimas
-onboarding-fxa-text = Susikurkite „{ -fxaccount-brand-name }“ ir sinchronizuokite savo adresyną, slaptažodžius, ir atvertas korteles visur, kur naudojate „{ -brand-short-name }“.
 onboarding-tracking-protection-title2 = Apsauga nuo stebėjimo
 onboarding-tracking-protection-text2 = „{ -brand-short-name }“ padeda sustabdyti svetaines nuo jūsų stebėjimo internete, taip apsunkinant jus sekančių reklamų veikimą naršant.
 onboarding-tracking-protection-button2 = Kaip tai veikia
@@ -123,7 +202,6 @@ onboarding-data-sync-title = Pasiimkite savo nuostatas kartu
 onboarding-data-sync-text2 = Sinchronizuokite adresyną, slaptažodžius ir daugiau visur, kur naudojate „{ -brand-product-name }“.
 onboarding-data-sync-button2 = Prisijungti prie „{ -sync-brand-short-name }“
 onboarding-firefox-monitor-title = Būkite įspėti apie duomenų pažeidimus
-onboarding-firefox-monitor-text = „{ -monitor-brand-name }“ stebi, ar jūsų el. paštas pasirodo tarp nutekėjusių duomenų ir apie tai jums praneša.
 onboarding-firefox-monitor-text2 = „{ -monitor-brand-name }“ stebi, ar jūsų el. paštas pasirodo tarp žinomų nutekėjusių duomenų ir apie tai jums praneša.
 onboarding-firefox-monitor-button = Gauti pranešimus
 onboarding-browse-privately-title = Naršykite privačiai
@@ -140,17 +218,11 @@ onboarding-mobile-phone-button = Parsiųsti mobiliąją naršyklę
 onboarding-send-tabs-title = Siųskite sau korteles akimirksniu
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Kortelių persiuntimas akimirksniu pasidalina tinklalapiais tarp jūsų įrenginių, taip išvengiant kopijavimo ir įdėjimo, ar išėjimo iš naršyklės.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Paprastai dalinkitės tinklalapiais tarp savo įrenginių, taip išvengdami kopijavimo, ar išėjimo iš naršyklės.
 onboarding-send-tabs-button = Pradėti naudotis kortelių persiuntimu
 onboarding-pocket-anywhere-title = Skaityti ir klausyti bet kur
 onboarding-pocket-anywhere-text2 = Įrašykite savo mėgstamiausią interneto turinį įrenginyje, naudodamiesi „{ -pocket-brand-name }“ programa. Vėliau galėsite skaityti, klausyti, ar žiūrėti jums patogiu metu.
 onboarding-pocket-anywhere-button = Išbandyti „{ -pocket-brand-name }“
-onboarding-lockwise-passwords-title = Turėkite savo slaptažodžius visuose įrenginiuose
-onboarding-lockwise-passwords-text2 = Laikykite įrašytus slaptažodžius saugiai, ir lengvai prisijunkite prie savo paskyrų su „{ -lockwise-brand-name }“.
-onboarding-lockwise-passwords-button2 = Parsisiųskite programą
 onboarding-lockwise-strong-passwords-title = Susikurkite ir saugokite stiprius slaptažodžius
 onboarding-lockwise-strong-passwords-text = „{ -lockwise-brand-name }“ sukuria stiprius slaptažodžius ir saugo juos visus vienoje vietoje.
 onboarding-lockwise-strong-passwords-button = Tvarkykite savo prisijungimus

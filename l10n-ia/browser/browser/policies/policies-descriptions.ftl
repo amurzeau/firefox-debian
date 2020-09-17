@@ -10,7 +10,7 @@
 ## These are short descriptions for individual policies, to be displayed
 ## in the documentation section in about:policies.
 
-policy-3rdparty = Defini politicas que WebExtensions pote acceder via chrome.storage.managed.
+policy-3rdparty = Defini politicas al quales le WebExtensions pote acceder via chrome.storage.managed.
 policy-AppAutoUpdate = Activar o disactivar le actualisation automatic del application.
 policy-AppUpdateURL = Definir un URL de actualisation personalisate pro le application.
 policy-Authentication = Configurar authentication integrate pro sitos web que lo supporta.
@@ -31,18 +31,18 @@ policy-DisableDeveloperTools = Blocar le accesso al instrumentos del disveloppam
 policy-DisableFeedbackCommands = Disactivar le commandos pro submitter tu commentarios in le menu Adjuta (Submitter tu opinion e Denunciar sito fraudulente).
 policy-DisableFirefoxAccounts = Disactivar le servicios basate sur { -fxaccount-brand-name }, comprendite Sync.
 # Firefox Screenshots is the name of the feature, and should not be translated.
-policy-DisableFirefoxScreenshots = Disactivar le functionalitate Firefox Screenshots.
+policy-DisableFirefoxScreenshots = Disactivar le function Firefox Screenshots.
 policy-DisableFirefoxStudies = Impedir a { -brand-short-name } de exequer studios.
 policy-DisableForgetButton = Impedir accesso al button Oblidar.
 policy-DisableFormHistory = Non rememorar le chronologia de recercas e formularios.
 policy-DisableMasterPasswordCreation = Si ver, non pote esser create un contrasigno maestro.
 policy-DisablePrimaryPasswordCreation = Si ver, non pote esser create un contrasigno primari.
 policy-DisablePasswordReveal = Non permitter de monstrar le contrasignos in le credentiales salvate.
-policy-DisablePocket = Disactivar le functionalitate pro salvar paginas web in Pocket.
+policy-DisablePocket = Disactivar le function pro salvar paginas web in Pocket.
 policy-DisablePrivateBrowsing = Disactivar le Navigation private.
 policy-DisableProfileImport = Disactivar le commando del menu pro importar datos ab un altere navigator.
 policy-DisableProfileRefresh = Disactivar le button Refrescar { -brand-short-name } in le pagina about:support.
-policy-DisableSafeMode = Disactivar le functionalitate pro reinitiar in Modo secur. Nota: le clave Shift pro inserer le Modo secur pote solmente esser disactivate sur Windows per le politicas de gruppo.
+policy-DisableSafeMode = Disactivar le function pro reinitiar in modo secur. Nota: le clave Shift pro entrar in modo secur pote solmente esser disactivate sur Windows usante le politicas de gruppo.
 policy-DisableSecurityBypass = Impedir al usator de ignorar certe avisos de securitate.
 policy-DisableSetAsDesktopBackground = Disactivar le commando de menu Definir como Fundo del scriptorio pro le imagines.
 policy-DisableSystemAddonUpdate = Impedir al navigator de installar e actualisar additivos de systema.

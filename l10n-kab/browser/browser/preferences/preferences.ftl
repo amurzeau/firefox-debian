@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Kan ticki { -brand-short-name } yettusbadu ɣer sewḥel ineḍfaṛen
 do-not-track-option-always =
     .label = Yal tikkelt
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Iɣewwaṛen
-           *[other] Ismenyifen
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Iɣewwaṛen
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Azegrir, <img data-l10n-name="icon"/> {
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Azegrir, <img data-l10n-name="icon"/> { $name }, yesenqad iccer n usebter-inek.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Asiɣzef, <img data-l10n-name="icon"/> { $name }, yessedday aɣewwaṛ-a.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Asiɣzef, <img data-l10n-name="icon"/>{ $name }, isenqad aɣewwar-agi.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Aɣewwaṛ-a ad yeḍḍu ɣef y
 update-application-use-service =
     .label = Seqdec ameẓlu n ugilal i usebded n ileqman
     .accesskey = b
-update-enable-search-update =
-    .label = Lqem awurman n umsedday n unadi
-    .accesskey = Ẓ
-update-pref-write-failure-title = Tuccḍa deg tira
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = UR yezmir ara ad yessekles ismenyifen.Ur yezmir ad yaru de ufaylu: { $path }
 update-setting-write-failure-title = Tuccḍa deg usekles n yismenyifen n uleqqem
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Rnu afeggag n unadi deg ufeggag n ifecka
 search-engine-default-header = Amsedday n unadi amezwer
-search-engine-default-desc = Fren amsedday n unadi amezwer ad tesqedceḍ deg ufeggag n tansa akked deg ufeggag n unadi.
 search-engine-default-desc-2 = Wagi d amsedday-ik n unadi amezwer deg ufeggag n tensa akked ufeggag n unadi. Tzemreḍ ad t-tbeddleḍ melmi tebɣiḍ.
 search-engine-default-private-desc-2 = Fren amsedday-nniḍen n unadi amezwer i yisfuyla n tunigin tusligt.
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Kkes
     .accesskey = K
+search-add-engine =
+    .label = Rnu
+    .accesskey = R
 search-find-more-link = Aff ugar n yimseddayen n unadi
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = Tferneḍ awal n tsarutt i yettusqedcen yakan 
 
 ## Containers Section
 
-containers-back-link = « Uγal
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Kkes
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Awi web-inek yid-k
 sync-signedout-description = Semtawi ticraḍ-inek n yisebtar, azray, accaren, awalen uffiren, izegrar, akked yismenyifen d yibenkan-inek akk.
-sync-signedout-account-title = Qqen ɣer { -fxaccount-brand-name }
-sync-signedout-account-create = Ur tesεiḍ ara amiḍan? Bdu
-    .accesskey = A
-sync-signedout-account-signin =
-    .label = Kcem…
-    .accesskey = G
 sync-signedout-account-signin2 =
     .label = Qqen ɣer { -sync-brand-short-name }…
     .accesskey = Q
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Sider Firefox i <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> neɣ <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOs</a> akken ad temtawiḍ d yibenkan-ik aziraz.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Beddel tugna n umaɣnu
-sync-disconnect =
-    .label = Tuffɣa…
-    .accesskey = k
 sync-sign-out =
     .label = Ffeɣ…
     .accesskey = F
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Qqen
     .accesskey = Q
-sync-signedin-settings-header = Iɣewwaren n umtawi
-sync-signedin-settings-desc = Fren ayen ara temtawiḍ deg yibenk-ik s useqdec n { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = Ldi accaren
     .tooltiptext = Tabdart n wayen akka yeldin deg yibenkan akk yemtawan
     .accesskey = T
-sync-engine-logins =
-    .label = Anekcum
-    .tooltiptext = Isem n uqesdac d wawalen uffiren i teskelseḍ
-    .accesskey = Y
 sync-engine-logins-passwords =
     .label = Inekcam d wawalen uffiren
     .tooltiptext = Ismawen n yiseqdacen akked wawalen uffiren i teskelseḍ
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Sekles
     .accesskey = l
 sync-connect-another-device = Qqen ibenk-nniḍen
-sync-manage-devices = Sefrek ibenkan
-sync-fxa-begin-pairing = Cudd ibenk
-sync-tos-link = Tiwtilin n useqdec
-sync-fxa-privacy-notice = Tasertit n tbaḍnit
 
 ## Privacy Section
 
 privacy-header = Tabaḍnit n iminig
-
-## Privacy Section - Forms
-
-logins-header = Inekcam & wawalen uffiren
 
 ## Privacy Section - Logins and Passwords
 
@@ -906,8 +868,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Tawsit tewḥel
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Ineḍfaren n wis kraḍ
 sitedata-option-block-cross-site-trackers =
     .label = Ineḍfaṛen gar yismal
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -953,27 +913,9 @@ addressbar-suggestions-settings = Snifel ismenyifen i yisumar n umsedday n unadi
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Asewḥel n ugbur
-content-blocking-section-description = Mmesten tabaḍnit-ik deg tunigin. Sewḥel igburen ur d-yettbanen ara, i k-yeṭṭafaṛen seg usmel ɣer wayeḍ daɣen ttwalin amaɣnu-ik. Sewḥel aḥric n yigburen-a i zemren ad sɣiwlen asali n yisebtar.
 content-blocking-enhanced-tracking-protection = Ammesten yettwaseǧhed mgal aḍfaṛ
 content-blocking-section-top-level-description = Ineḍfaṛen ad k-ḍefṛen srid akken ad leqḍen talɣut ɣef tnumi-ik n tunigin akked wayen tḥemmleḍ. { -brand-short-name } ad yessewḥel ddeqs n yineḍfaṛen-a akked yir iskripten.
 content-blocking-learn-more = Issin ugar
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Tizeɣt
-    .accesskey = z
-content-blocking-setting-strict =
-    .label = Uḥris
-    .accesskey = ḥ
-content-blocking-setting-custom =
-    .label = Udmawan
-    .accesskey = d
-content-blocking-standard-desc = Iseggem i ummesten akked tmellit. Isirig kra n ineḍfaren akken ismal web ad ddun akken iwata.
-content-blocking-strict-description = Ammesten iǧehden, maca yezmer ad isewḥel kra n yismal ur teddun ara akken iwata.
-content-blocking-custom-desc = Fren ayen ara tesweḥleḍ.
-content-blocking-private-trackers = Ineḍfaren yettwasnen deg usfaylu uslig kan
-content-blocking-third-party-cookies = Inagan n tuqna n uḍfar n tɣawsiwin tis kraḍ
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1000,23 +942,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Inagan n tuqqna n u�
 content-blocking-social-media-trackers = Ineḍfaṛen n iẓeḍwa inmettiyen
 content-blocking-all-cookies = Inagan n tuqqna meṛṛa
 content-blocking-unvisited-cookies = Inagan n tuqqna n yismal ur yettwarzan ara
-content-blocking-all-windows-trackers = Ineḍfaren yettwasnen deg akk isfuyla
 content-blocking-all-windows-tracking-content = Agbur yettwaseqdec i uḍfaṛ deg yisfuyla meṛṛa
 content-blocking-all-third-party-cookies = Akk inagan n tuqqna n wis kraḍ
 content-blocking-cryptominers = Ikripṭuminaren
 content-blocking-fingerprinters = Idsilen umḍinen
 content-blocking-warning-title = Aqeṛṛu d afella!
-content-blocking-warning-description = Asewḥel n ugbru yezmer ur yettaǧǧa ara kra n yismal ad ddun akken iwata. Tzemreḍ s wudem fessusen ad tsenseḍ asewḥel i yismal i tettamned.
-content-blocking-learn-how = Issin amek
 content-blocking-and-isolating-etp-warning-description = Asewḥel n yineḍfaren d uɛzal n yinagan n tuqqna yezmer ad iḥaz tamahilt n kra n yismal. Smiren asebter s yineḍfaren akken ad d-yali ugbur meṛṛa.
 content-blocking-warning-learn-how = Issin amek
 content-blocking-reload-description = Yessefk ad talseḍ asali n yiccaren-ik akken ad ddun ibeddilen-a.
 content-blocking-reload-tabs-button =
     .label = Smiren akk accaren
     .accesskey = S
-content-blocking-trackers-label =
-    .label = Ineḍfaren
-    .accesskey = I
 content-blocking-tracking-content-label =
     .label = Agbur n uḍfaṛ
     .accesskey = A
@@ -1075,12 +1011,6 @@ permissions-notification-link = Issin ugar
 permissions-notification-pause =
     .label = Saḥbes ilγa arma yekker { -brand-short-name }
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Sewḥel taɣuri tawurmant n yimesli  n yesmal web
-    .accesskey = S
-permissions-block-autoplay-media-exceptions =
-    .label = Tisuraf…
-    .accesskey = r
 permissions-autoplay = Aseddu awurman
 permissions-autoplay-settings =
     .label = Iɣewwaṛen

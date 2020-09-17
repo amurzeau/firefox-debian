@@ -46,6 +46,7 @@ openpgp-keygen-button = Anahtar oluştur
 openpgp-keygen-progress-title = Yeni OpenPGP anahtarınız oluşturuluyor…
 openpgp-keygen-import-progress-title = OpenPGP anahtarlarınız içe aktarılıyor…
 openpgp-import-success = OpenPGP anahtarları başarıyla içe aktarıldı!
+openpgp-import-success-title = İçe aktarma işlemini tamamla
 openpgp-keygen-confirm =
     .label = Onayla
 openpgp-keygen-dismiss =
@@ -58,14 +59,44 @@ openpgp-keygen-import-complete =
 openpgp-keygen-long-expiry = Süresi 100 yıldan fazla olan bir anahtar oluşturamazsınız.
 openpgp-keygen-short-expiry = Anahtarınız en az bir gün geçerli olmalıdır.
 openpgp-keygen-ongoing = Anahtar üretimi devam ediyor!
+openpgp-keygen-error-failed = OpenPGP anahtar üretimi beklenmedik bir şekilde başarısız oldu
 openpgp-keygen-abort-title = Anahtar üretimi iptal edilsin mi?
 openpgp-keygen-abort = OpenPGP anahtar üretimi şu anda devam ediyor. İptal etmek istediğinizden emin misiniz?
 
 ## Import Key section
 
+openpgp-import-key-title = Mevcut bir kişisel OpenPGP anahtarını içe aktar
+openpgp-import-key-legend = Önceden yedeklenmiş bir dosya seçin.
+openpgp-import-key-description = Diğer OpenPGP yazılımlarıyla oluşturulan kişisel anahtarları içe aktarabilirsiniz.
+#   $count (Number) - the number of keys found in the selected files
+openpgp-import-key-list-amount =
+    { $count ->
+        [one] Thunderbird içe aktarılabilecek bir anahtar buldu.
+       *[other] Thunderbird içe aktarılabilecek { $count } anahtar buldu.
+    }
+openpgp-passphrase-prompt-title = Parola gerekli
+#   $identity (String) - the id of the key being imported
+openpgp-passphrase-prompt = Lütfen şu anahtarın kilidini açmak için parolayı girin: { $key }
+openpgp-import-key-button =
+    .label = İçe aktarılacak dosyayı seç…
+    .accesskey = a
+import-key-file = OpenPGP anahtar dosyasını içe aktar
 gnupg-file = GnuPG dosyaları
+import-error-file-size = <b>Hata!</b> 5 MB'den büyük dosyalar desteklenmez.
+#   $error (String) - the reported error from the failed key import method
+import-error-failed = <b>Hata! </b> Dosya içe aktarılamadı. { $error }
+#   $error (String) - the reported error from the failed key import method
+openpgp-import-keys-failed = <b>Hata!</b> Anahtarlar içe aktarılamadı. { $error }
 openpgp-import-identity-label = Kimlik
+openpgp-import-fingerprint-label = Parmak izi
+openpgp-import-bits-label = Bit
+openpgp-import-key-props =
+    .label = Anahtar özellikleri
+    .accesskey = A
 
 ## External Key section
 
 openpgp-external-key-title = Harici GnuPG anahtarı
+openpgp-save-external-button = Anahtar kimliğini kaydet
+openpgp-external-key-input =
+    .placeholder = 123456789341298340

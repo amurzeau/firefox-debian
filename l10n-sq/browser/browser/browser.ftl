@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Shtypni më pak, gjeni më shumë: Kërkoni me { $engineName } drejt e nga shtylla juaj e adresave.
 urlbar-search-tips-redirect-2 = Filloni kërkimin tuaj te shtylla e adresave që të shihni sugjerime nga { $engineName } dhe nga historiku juaj i shfletimit.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Faqerojtës
+urlbar-search-mode-tabs = Skeda
+urlbar-search-mode-history = Historik
+
 ##
 
 urlbar-geolocation-blocked =
@@ -185,6 +191,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Vëre si Motor Kërkimi Parazgjedhje për Dritare Private
     .accesskey = V
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Faqerojtës ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Skeda ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Historik ({ $restrict })
 
 ## Bookmark Panel
 
@@ -292,8 +318,42 @@ enable-devtools-popup-description = Që të përdorni shkurtoren F12, së pari h
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Bëni kërkim ose jepni adresë
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Bëni kërkim ose jepni adresë
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Kërkoni në Web
+    .aria-label = Kërkoni me { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Jepni terma kërkimi
+    .aria-label = Kërkoni me { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Jepni terma kërkimi
+    .aria-label = Kërko te faqerojtësit
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Jepni terma kërkimi
+    .aria-label = Kërko në historik
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Jepni terma kërkimi
+    .aria-label = Kërko në skeda
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Kërkoni me { $name } ose jepni adresë
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Fshiheni Anështyllën e Faqerojtësve
 urlbar-permissions-granted =

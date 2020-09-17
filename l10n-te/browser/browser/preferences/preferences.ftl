@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = తెలిసిన ట్రాకర్లను నిరోధించేలా { -brand-short-name } అమర్చివున్నప్పుడు మాత్రమే
 do-not-track-option-always =
     .label = ఎల్లప్పుడూ
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] ఎంపికలు
-           *[other] అభిరుచులు
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] ఎంపికలు
@@ -195,11 +189,17 @@ colors-settings =
     .accesskey = C
 preferences-default-zoom-value =
     .label = { $percentage }%
+preferences-zoom-text-only =
+    .label = పాఠ్యాన్ని మాత్రమే జూమ్‌ చేయి
+    .accesskey = t
 language-header = భాష
 choose-language-description = పేజీలను చూపించడానికి మీ ప్రాధాన్య భాషను ఎంచుకోండి
 choose-button =
     .label = ఎంచుకోండి…
     .accesskey = o
+manage-browser-languages-button =
+    .label = ప్రత్యామ్నాయాలను అమర్చు…
+    .accesskey = l
 confirm-browser-language-change-description = ఈ మార్పులను ఆపాదించడానికి { -brand-short-name }‌ని పునఃప్రారంభించండి
 confirm-browser-language-change-button = ఆపాదించి పునఃప్రారంభించు
 translate-web-pages =
@@ -338,9 +338,6 @@ update-application-manual =
 update-application-use-service =
     .label = తాజాకరణలను స్థాపించడానికి బ్యాక్‌గ్రౌండ్ సేవను వాడు
     .accesskey = b
-update-enable-search-update =
-    .label = సెర్చింజన్లను స్వయంచాలకంగా తాజాకరించు
-    .accesskey = e
 update-in-progress-title = తాజాకరణ జరుగుతోంది
 update-in-progress-message = { -brand-short-name } ఈ తాజాకరణతో కొనసాగాలని అనుకుంటున్నారా?
 update-in-progress-ok-button = విస్మరించు (&D)
@@ -391,6 +388,7 @@ browsing-cfr-recommendations-learn-more = ఇంకా తెలుసుకో�
 ## General Section - Proxy
 
 network-settings-title = నెట్‌వర్క్ అమరికలు
+network-proxy-connection-description = { -brand-short-name } అంతర్జాలానికి ఎలా అనుసంధామవ్వాలో స్వరూపించండి.
 network-proxy-connection-learn-more = ఇంకా తెలుసుకోండి
 network-proxy-connection-settings =
     .label = అమరికలు…
@@ -490,6 +488,7 @@ search-engine-default-header = అప్రమేయ శోధన యంత్�
 search-separate-default-engine =
     .label = అంతరంగిక కిటికీలలో ఈ శోధన యంత్రాన్ని వాడు
     .accesskey = U
+search-suggestions-header = వెతుకుడు సలహాలు
 search-suggestions-option =
     .label = వెతుకుడు సలహాలను చూపించు
     .accesskey = s
@@ -515,6 +514,9 @@ search-restore-default =
 search-remove-engine =
     .label = తీసివేయి
     .accesskey = R
+search-add-engine =
+    .label = చేర్చు
+    .accesskey = A
 search-find-more-link = మరిన్ని శోధన యంత్రాలను కనుగొనండి
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -526,7 +528,6 @@ search-keyword-warning-bookmark = మీరు ఎంచుకున్న క�
 
 ## Containers Section
 
-containers-back-link = « వెనక్కి వెళ్ళు
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -542,20 +543,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = తొలగించు
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = మీ జాలాన్ని మీతో తీసుకువెళ్ళండి
 sync-signedout-description = మీ ఇష్టాంశాలను, చరిత్రను, ట్యాబులను, సంకేతపదాలను, పొడగింతలను, అభిరుచులను మీ పరికరాలన్నింటిలోనూ సింక్రనైజ్ చెయ్యండి.
-sync-signedout-account-title = ఒక { -fxaccount-brand-name }‌తో అనుసంధానించండి
-sync-signedout-account-create = మీకు ఖాతా లేదా? మొదలుపెట్టండి
-    .accesskey = C
-sync-signedout-account-signin =
-    .label = ప్రవేశించు…
-    .accesskey = i
 # This message contains two links and two icon images.
 #   `<img data-l10n-name="android-icon"/>` - Android logo icon
 #   `<a data-l10n-name="android-link">` - Link to Android Download
@@ -566,16 +558,10 @@ sync-signedout-account-signin =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = మీ మొబైలు పరికరంతో సింక్రనించడానికి Firefoxని <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> లేదా <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> లో దించుకోండి.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = ప్రొఫైల్ చిత్రం మార్చు
-sync-disconnect =
-    .label = అనుసంధానం తెంచు…
-    .accesskey = D
 sync-manage-account = ఖాతా నిర్వహణ
     .accesskey = o
 sync-signedin-unverified = { $email } నిర్థారించబడలేదు.
@@ -589,7 +575,6 @@ sync-remove-account =
 sync-sign-in =
     .label = ప్రవేశించండి
     .accesskey = g
-sync-signedin-settings-header = Sync అమరికలు
 
 ## Sync section - enabling or disabling sync.
 
@@ -630,10 +615,6 @@ sync-engine-tabs =
     .label = తెరిచివున్న ట్యాబులు
     .tooltiptext = సింకైన అన్ని పరికరాల్లో తెరిచివున్న వాటి జాబితా
     .accesskey = T
-sync-engine-logins =
-    .label = ప్రవేశాలు
-    .tooltiptext = మీరు భద్రపరచుకున్న వాడుకరి పేర్లూ, సంకేతపదాలు
-    .accesskey = L
 sync-engine-logins-passwords =
     .label = ప్రవేశాలు, సంకేతపదాలు
     .tooltiptext = మీరు భద్రపరచిన వాడుకరి పేర్లు, సంకేతపదాలు
@@ -672,18 +653,10 @@ sync-device-name-save =
     .label = భద్రపరచు
     .accesskey = v
 sync-connect-another-device = మరొక పరికరాన్ని అనుసంధానించు
-sync-manage-devices = పరికరాల నిర్వహణ
-sync-fxa-begin-pairing = ఒక పరికరాన్ని జతచేయి
-sync-tos-link = సేవా నిబంధనలు
-sync-fxa-privacy-notice = గోప్యతా నోటీసు
 
 ## Privacy Section
 
 privacy-header = విహరిణి గోప్యత
-
-## Privacy Section - Forms
-
-logins-header = ప్రవేశాలు & సంకేతపదాలు
 
 ## Privacy Section - Logins and Passwords
 
@@ -698,10 +671,17 @@ forms-exceptions =
     .label = మినహాయింపులు…
     .accesskey = x
 forms-breach-alerts-learn-more-link = ఇంకా తెలుసుకోండి
+# Checkbox which controls filling saved logins into fields automatically when they appear, in some cases without user interaction.
+forms-fill-logins-and-passwords =
+    .label = ప్రవేశాలను, సంకేతపదాలను స్వయంచాలకంగా పూరించు
+    .accesskey = i
 forms-saved-logins =
     .label = భద్రపరచిన ప్రవేశాలు…
     .accesskey = L
 forms-master-pw-use =
+    .label = ప్రధాన సంకేతపదాన్ని వాడు
+    .accesskey = U
+forms-primary-pw-use =
     .label = ప్రధాన సంకేతపదాన్ని వాడు
     .accesskey = U
 forms-primary-pw-learn-more-link = ఇంకా తెలుసుకోండి
@@ -712,6 +692,9 @@ forms-master-pw-change =
     .label = ప్రధాన సంకేతపదాన్ని మార్చు…
     .accesskey = M
 forms-master-pw-fips-title = మీరు ప్రస్తుతం FIPS రీతిలో ఉన్నారు. FIPS కు ఒక ఖాళీ-కాని ముఖ్య సంకేతపదం అవసరము.
+forms-primary-pw-change =
+    .label = ప్రధాన సంకేతపదాన్ని మార్చు…
+    .accesskey = P
 forms-master-pw-fips-desc = సంకేతపదం మార్పు విఫలమైంది
 
 ## OS Authentication dialog
@@ -777,10 +760,16 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = నిరోధించిన రకం
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = మూడవ-పక్ష ట్రాకర్లు
+sitedata-option-block-cross-site-trackers =
+    .label = క్రాస్-సైట్ ట్రాకర్లు
+sitedata-option-block-cross-site-and-social-media-trackers =
+    .label = క్రాస్-సైటు, సామాజిక మాధ్యమాల ట్రాకర్లు
 sitedata-option-block-unvisited =
     .label = చూడని వెబ్‌సైట్ల కుకీలు
+sitedata-option-block-all-third-party =
+    .label = మూడవ-పక్ష కుకీలన్నీ (కొన్ని వెబ్‌సైట్లు పనిచేయకపోవచ్చు)
+sitedata-option-block-all =
+    .label = కుకీలన్నీ (వెబ్‌సైట్లు పనిచేయకపోడానికి కారణమవుతుంది)
 sitedata-clear =
     .label = డేటాను తుడిచివేయి…
     .accesskey = l
@@ -790,6 +779,9 @@ sitedata-settings =
 sitedata-cookies-permissions =
     .label = అనుమతులను నిర్వహించండి…
     .accesskey = P
+sitedata-cookies-exceptions =
+    .label = మినహాయింపులను నిర్వహించండి…
+    .accesskey = x
 
 ## Privacy Section - Address Bar
 
@@ -811,23 +803,8 @@ addressbar-suggestions-settings = సెర్చింజను సూచనల
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = విషయ నిరోధం
 content-blocking-enhanced-tracking-protection = మెరుగైన ట్రాకింగ్ సంరక్షణ
 content-blocking-learn-more = ఇంకా తెలుసుకోండి
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = ప్రామాణికం
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = కఠినం
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = అభిమతం
-    .accesskey = C
-content-blocking-custom-desc = వేటిని నిరోధించాలో ఎంచుకోండి.
-content-blocking-private-trackers = తెలిసిన ట్రాకర్లు, అంతరంగిక కిటికీల్లో మాత్రమే
-content-blocking-third-party-cookies = మూడవ-పక్ష ట్రాకింగు కుకీలు
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -845,15 +822,21 @@ enhanced-tracking-protection-setting-custom =
 
 ##
 
+content-blocking-private-windows = అంతరంగిక కిటికీలలో ట్రాకింగ్ విషయం
+content-blocking-cross-site-tracking-cookies = క్రాస్ -సైట్ ట్రాకింగ్ కుకీలు
+content-blocking-social-media-trackers = సామాజిక మాధ్యమాల ట్రాకర్లు
 content-blocking-all-cookies = అన్ని కుకీలు
-content-blocking-all-windows-trackers = తెలిసిన ట్రాకర్లు, అన్ని కిటికీల్లోనూ
+content-blocking-unvisited-cookies = చూడని సైట్ల నుండి కుకీలు
 content-blocking-all-third-party-cookies = మూడవ-పక్ష కుకీలన్నీ
 content-blocking-cryptominers = క్రిప్టోమైనర్లు
+content-blocking-fingerprinters = ఫింగర్‌ప్రింటర్లు
 content-blocking-warning-title = గమనిక!
-content-blocking-learn-how = ఎలానో తెలుసుకోండి
 content-blocking-warning-learn-how = ఎలానో తెలుసుకోండి
-content-blocking-trackers-label =
-    .label = ట్రాకర్లు
+content-blocking-reload-tabs-button =
+    .label = ట్యాబులన్నింటినీ మళ్లీ లోడుచేయి
+    .accesskey = R
+content-blocking-tracking-content-label =
+    .label = ట్రాకింగ్ విషయం
     .accesskey = T
 content-blocking-tracking-protection-option-all-windows =
     .label = అన్ని కిటికీల లోనూ
@@ -871,6 +854,11 @@ content-blocking-expand-section =
 content-blocking-cryptominers-label =
     .label = క్రిప్టోమైనర్లు
     .accesskey = y
+# Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
+# that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
+content-blocking-fingerprinters-label =
+    .label = ఫింగర్‌ప్రింటర్లు
+    .accesskey = F
 
 ## Privacy Section - Tracking
 
@@ -901,9 +889,9 @@ permissions-notification-settings =
     .label = అమరికలు…
     .accesskey = n
 permissions-notification-link = ఇంకా తెలుసుకోండి
-permissions-block-autoplay-media-exceptions =
-    .label = మినహాయింపులు…
-    .accesskey = E
+permissions-notification-pause =
+    .label = { -brand-short-name } పునఃప్రారంభమయ్యే వరకూ గమనింపులను నిలిపివేయి
+    .accesskey = n
 permissions-autoplay = స్వీయారంభం
 permissions-autoplay-settings =
     .label = అమరికలు…
@@ -920,6 +908,9 @@ permissions-addon-install-warning =
 permissions-addon-exceptions =
     .label = మినహాయింపులు…
     .accesskey = E
+permissions-a11y-privacy-checkbox =
+    .label = ప్రాప్యత సేవలు నా విహారిణిని చూడకుండా నివారించు
+    .accesskey = a
 permissions-a11y-privacy-link = ఇంకా తెలుసుకోండి
 
 ## Privacy Section - Data Collection
@@ -998,7 +989,10 @@ space-alert-under-5gb-ok-button =
 
 ## Privacy Section - HTTPS-Only
 
+httpsonly-header = HTTPS-మాత్రమే రీతి
 httpsonly-learn-more = ఇంకా తెలుసుకోండి
+httpsonly-radio-disabled =
+    .label = HTTPS-మాత్రమే రీతిని చేతనం చేయవద్దు
 
 ## The following strings are used in the Download section of settings
 

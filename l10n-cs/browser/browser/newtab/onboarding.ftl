@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Zjistit více
-onboarding-button-label-try-now = Vyzkoušet
 onboarding-button-label-get-started = Začínáme
 
 ## Welcome modal dialog strings
@@ -27,13 +26,6 @@ onboarding-welcome-body =
        *[other] aplikace { -brand-product-name }
     }.
 onboarding-welcome-learn-more = Další výhody.
-onboarding-join-form-header =
-    Používejte { -brand-product-name.gender ->
-        [masculine] { -brand-product-name(case: "acc") }
-        [feminine] { -brand-product-name(case: "acc") }
-        [neuter] { -brand-product-name(case: "acc") }
-       *[other] aplikaci { -brand-product-name }
-    }
 onboarding-welcome-modal-get-body =
     Prohlížeč teď už máte.<br/>Využijte { -brand-product-name.gender ->
         [masculine] { -brand-product-name(case: "acc") }
@@ -137,6 +129,30 @@ onboarding-multistage-theme-tooltip-dark =
 onboarding-multistage-theme-tooltip-alpenglow =
     .title = Použije barevný vzhled tlačítek, nabídek a oken.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title = Použije vzhled tlačítek, nabídek a oken podle nastavení vašeho operačního systému.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description = Použije vzhled tlačítek, nabídek a oken podle nastavení vašeho operačního systému.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title = Použije světlý vzhled tlačítek, nabídek a oken.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description = Použije světlý vzhled tlačítek, nabídek a oken.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title = Použije tmavý vzhled tlačítek, nabídek a oken.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description = Použije tmavý vzhled tlačítek, nabídek a oken.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title = Použije barevný vzhled tlačítek, nabídek a oken.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description = Použije barevný vzhled tlačítek, nabídek a oken.
 
 ## Welcome full page string
 
@@ -168,11 +184,7 @@ onboarding-sync-form-sub-header = a používejte { -sync-brand-name(case: "acc")
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Užitečné produkty
 onboarding-benefit-products-text = Používejte nástroje, které respektují vaše soukromí a fungují na všech zařízeních.
-onboarding-benefit-knowledge-title = Praktické informace
-onboarding-benefit-knowledge-text = Dozvíte se vše potřebné o soukromí a bezpečí na internetu.
-onboarding-benefit-privacy-title = Skutečné soukromí
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -199,29 +211,6 @@ onboarding-benefit-lockwise-text = Spravujte hesla bezpečně i na cestách.
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Anonymní prohlížení
-onboarding-private-browsing-text = Prohlížejte internet v soukromí. Funkce anonymního prohlížení a blokování obsahu vám zajistí ochranu před sledovacími prvky.
-onboarding-screenshots-title = Snímky stránek
-onboarding-screenshots-text = Pořizujte, ukládejte a sdílejte snímky stránek přímo v aplikaci { -brand-short-name }. Vyberte oblast nebo celou stránku během jejího prohlížení a uložte si její snímek na web pro snadné sdílení nebo pozdější zobrazení.
-onboarding-addons-title = Doplňky
-onboarding-addons-text =
-    Přidejte si do { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "gen") }
-        [feminine] { -brand-short-name(case: "gen") }
-        [neuter] { -brand-short-name(case: "gen") }
-       *[other] aplikace { -brand-short-name }
-    } další funkce. Porovnávání cen v e-shopech, předpověď počasí nebo vlastní vzhled prohlížeče.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Ještě rychlejší, chytřejší a bezpečnější prohlížení vám umožní např. rozšíření Ghostery, které blokuje otravné reklamy.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Synchronizace
-onboarding-fxa-text =
-    Přihlaste se k { -fxaccount-brand-name(case: "dat", capitalization: "lower") } a synchronizuje své záložky, hesla a otevřené panely kdekoliv používáte { -brand-short-name.gender ->
-        [masculine] { -brand-short-name(case: "acc") }
-        [feminine] { -brand-short-name(case: "acc") }
-        [neuter] { -brand-short-name(case: "acc") }
-       *[other] aplikaci { -brand-short-name }
-    }.
 onboarding-tracking-protection-title2 = Ochrana před sledováním
 onboarding-tracking-protection-text2 = { -brand-short-name } vám pomůže zastavit sledování webovými stránkami a znesnadní reklamám, aby vás následovaly na další weby.
 onboarding-tracking-protection-button2 = Jak to funguje
@@ -236,7 +225,6 @@ onboarding-data-sync-text2 =
     }.
 onboarding-data-sync-button2 = Přihlásit k { -sync-brand-short-name(case: "dat") }
 onboarding-firefox-monitor-title = Buďte informování o únicích dat
-onboarding-firefox-monitor-text = { -monitor-brand-name } hlídá, jestli vaše e-mailová adresa nebyla součástí nějakého úniku dat, a dá vám vědět, pokud ji v nějakém najde.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } hlídá, jestli vaše e-mailová adresa nebyla součástí nějakého známého úniku dat, a dá vám vědět, pokud ji v nějakém najde.
 onboarding-firefox-monitor-button = Nechte si posílat upozornění
 onboarding-browse-privately-title = Prohlížejte v soukromí
@@ -265,17 +253,11 @@ onboarding-mobile-phone-button = Stáhnout mobilní prohlížeč
 onboarding-send-tabs-title = Posílejte si panely mezi zařízeními
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Posílání panelů funguje jako okamžité sdílení stránek mezi vašimi zařízeními. Nemusíte nic kopírovat ani opouštět prohlížeč.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Sdílejte a posílejte stránky mezi svými zařízeními. Nemusíte kopírovat žádné odkazy ani opouštět prohlížeč.
 onboarding-send-tabs-button = Začít posílat panely
 onboarding-pocket-anywhere-title = Čtěte a nechte si číst
 onboarding-pocket-anywhere-text2 = Uložte si svůj oblíbený obsah offline s { -pocket-brand-name(case: "ins") } pro přečtení nebo poslech ve chvíli, kdy se vám to opravdu hodí.
 onboarding-pocket-anywhere-button = Vyzkoušet { -pocket-brand-name(case: "acc") }
-onboarding-lockwise-passwords-title = Mějte svá hesla všude s sebou
-onboarding-lockwise-passwords-text2 = Ukládejte svá hesla bezpečně pomocí { -lockwise-brand-name(case: "gen") }, který vám usnadní rychlé přihlašování do vašich účtů.
-onboarding-lockwise-passwords-button2 = Stáhnout aplikaci
 onboarding-lockwise-strong-passwords-title = Vytváření silných hesel
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } vám na místě vygeneruje silná hesla a uloží je bezpečně na jednom místě.
 onboarding-lockwise-strong-passwords-button = Správa přihlašovacích údajů

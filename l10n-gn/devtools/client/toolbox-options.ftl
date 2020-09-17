@@ -15,7 +15,7 @@ options-select-default-tools-label = Tembipuru mboguatahára ijypyguáva
 options-tool-not-supported-label = * Ndojokupytýi mba’epuru ag̃agua tembipuru ryru rehegua
 # The label for the heading of group of checkboxes corresponding to the developer tools
 # added by add-ons. This heading is hidden when there is no developer tool installed by add-ons.
-options-select-additional-tools-label = Tembiporu Mboguatahára moimbaha omohendapyréra
+options-select-additional-tools-label = Tembiporu Mboguatahára moĩmbaha omohendapyréra
 # The label for the heading of group of checkboxes corresponding to the default developer
 # tool buttons.
 options-select-enabled-toolbox-buttons-label = Tembipuru Ryru ojepurukuaáva
@@ -98,7 +98,7 @@ options-disable-javascript-tooltip =
 # The label for checkbox that toggles chrome debugging, i.e. the devtools.chrome.enabled preference
 options-enable-chrome-label = Emoapysẽ kundaha chrome ha embojuapy tembipuru ryru mopotĩha
 options-enable-chrome-tooltip =
-    .title = Emyandývo ko poravorã eipurukuaáta hetaiterei tembipuru mboguataháva pe kundaha jereguáva (tembipuru rupi > Web Developer > Browser Toolbox) ha moimbaha mopotĩhápe moimbaha Ñangarekoha guive
+    .title = Emyandývo ko poravorã eipurukuaáta hetaiterei tembipuru mboguataháva pe kundaha jereguáva (tembipuru rupi > Web Developer > Browser Toolbox) ha moĩmbaha mopotĩhápe moĩmbaha Ñangarekoha guive
 # The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
 options-enable-remote-label = Ñemopotĩ okayguáva myandy
 options-enable-remote-tooltip2 =

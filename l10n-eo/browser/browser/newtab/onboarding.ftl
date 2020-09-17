@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Pli da informo
-onboarding-button-label-try-now = Provu ĝin nun
 onboarding-button-label-get-started = Unuaj paŝoj
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Unuaj paŝoj
 onboarding-welcome-header = Bonvenon al { -brand-short-name }
 onboarding-welcome-body = Vi havas la retumilon.<br/>Konatiĝu kun la cetero de { -brand-product-name }.
 onboarding-welcome-learn-more = Pli da informo pri la utiloj.
-onboarding-join-form-header = Venu al { -brand-product-name }
 onboarding-welcome-modal-get-body = Vi havas la retumilon.<br/>Nun eltiru la maksimumon el { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Maksimumigi vian privatecan protekton.
 onboarding-welcome-modal-privacy-body = Vi havas la retumilon. Aldonu ni pli da privatecaj protektoj.
@@ -102,6 +100,30 @@ onboarding-multistage-theme-tooltip-dark =
 onboarding-multistage-theme-tooltip-alpenglow =
     .title = Uzi kolorplenan aspekton por butonoj, menuoj kaj fenestroj.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title = Heredi la aspekton de via mastruma sistemo por butonoj, menuoj kaj fenestroj.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description = Heredi la aspekton de via mastruma sistemo por butonoj, menuoj kaj fenestroj.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title = Uzi helan aspekton por butonoj, menuoj kaj fenestroj.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description = Uzi helan aspekton por butonoj, menuoj kaj fenestroj.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title = Uzi malhelan aspekton por butonoj, menuoj kaj fenestroj.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description = Uzi malhelan aspekton por butonoj, menuoj kaj fenestroj.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title = Uzi kolorplenan aspekton por butonoj, menuoj kaj fenestroj.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description = Uzi kolorplenan aspekton por butonoj, menuoj kaj fenestroj.
 
 ## Welcome full page string
 
@@ -127,11 +149,7 @@ onboarding-sync-form-sub-header = por pluiri al { -sync-brand-name }
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Utilaj produktoj
 onboarding-benefit-products-text = Plenumu taskojn per familio de iloj kiuj respektas vian privatecon en ĉiuj viaj aparatoj.
-onboarding-benefit-knowledge-title = Praktikaj konoj
-onboarding-benefit-knowledge-text = Lernu tion kion vi bezonas por retumi inteligente kaj sekure.
-onboarding-benefit-privacy-title = Fakta privateco
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -152,17 +170,6 @@ onboarding-benefit-lockwise-text = Administri pasvortojn tiel ke ili estas kaj p
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Privata retumo
-onboarding-private-browsing-text = Retumu sola. Privata retumo kun blokado de enhavo estas trajto, kiu blokas retajn spurilojn, kiuj sekvas vin tra la reto.
-onboarding-screenshots-title = Ekrankopioj
-onboarding-screenshots-text = Faru, konservu kaj dividu ekrankopiojn sen forlasi { -brand-short-name }. Dum vi retumas, kaptu parton aŭ tutan paĝon. Poste konservu ĝin en la reto por facila aliro kaj divido.
-onboarding-addons-title = Aldonaĵoj
-onboarding-addons-text = Aldonu eĉ pli da trajtoj, kiuj igas { -brand-short-name } labori pli por vi. Komparu prezojn, kontrolu la veterprognozon aŭ esprimu vin per personecigita etoso.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Retumu pli rapide, pli inteligente aŭ pli sekure per etendaĵoj kiel Ghostery, kiu permesas al vi bloki ĝenajn reklamojn.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Spegulado
-onboarding-fxa-text = Registriĝu ĉe { -fxaccount-brand-name } por speguli viajn legosignojn, pasvortojn kaj malfermitajn langetojn ĉie, kie vi uzas { -brand-short-name }.
 onboarding-tracking-protection-title2 = Protekto kontraŭ spurado
 onboarding-tracking-protection-text2 = { -brand-short-name } helpas vin eviti spuradon dum retumo, pro tio estos pli malfacile por reklamoj sekvi vin tra la reto.
 onboarding-tracking-protection-button2 = Kiel tio funkcias
@@ -171,7 +178,6 @@ onboarding-data-sync-title = Portu viajn agordojn kun vi
 onboarding-data-sync-text2 = Spegulu viajn legosignojn, pasvortojn, kaj pli da aferoj, ĉie, kie vi uzas { -brand-product-name }.
 onboarding-data-sync-button2 = Komenci seancon en { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Estu informata pri datumŝteloj
-onboarding-firefox-monitor-text = { -monitor-brand-name } kontrolas ĉu via retpoŝta adreso iam aperis en datumŝtelo kaj atentigas vin se ĝi aperas en nova ŝtelo.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } kontrolas ĉu via retpoŝta adreso iam aperis en konata datumfuĝo kaj atentigas vin se ĝi aperas en nova datumfuĝo.
 onboarding-firefox-monitor-button = Aboni la atentigojn
 onboarding-browse-privately-title = Retumu private
@@ -188,17 +194,11 @@ onboarding-mobile-phone-button = Elŝuti poŝaparatan retumilon
 onboarding-send-tabs-title = Sendu langetojn al via aliaj aparatoj
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Sendu paĝojn senpere inter viaj aparatoj, sed devi kopii, alglui aŭ foriri el la retumilo.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Facile kundividi paĝojn inter viaj aparatoj sed devi kopii ligilojn aŭ forlasi la retumilon.
 onboarding-send-tabs-button = Komencu uzi "Sendi langetojn"
 onboarding-pocket-anywhere-title = Legu kaj aŭskultu ie ajn
 onboarding-pocket-anywhere-text2 = Konservu vian plej ŝatatan enhavo por uzi malkonektite pero la programo { -pocket-brand-name }, kaj legu aŭskultu kaj rigardu kiam vi volas.
 onboarding-pocket-anywhere-button = Provu { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Portu viajn pasvortojn ĉie
-onboarding-lockwise-passwords-text2 = Sekure gardu la pasvortojn kiujn vi konservis kaj facile komencu seancojn en viaj kontoj per { -lockwise-brand-name }.
-onboarding-lockwise-passwords-button2 = Ricevu la programon
 onboarding-lockwise-strong-passwords-title = Krei kaj konservi fortajn pasvortojn
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } kreas fortajn pasvortojn en la momento kaj konservas ĉiujn en unu loko.
 onboarding-lockwise-strong-passwords-button = Administri legitimilojn

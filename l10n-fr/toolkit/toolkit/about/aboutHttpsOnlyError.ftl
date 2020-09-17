@@ -18,3 +18,4 @@ about-httpsonly-explanation-nosupport = Très probablement, le site web ne prend
 about-httpsonly-explanation-risk = Il est également possible qu’un malfaiteur soit impliqué. Si vous décidez de visiter ce site web, il vaut mieux éviter de saisir des informations sensibles comme des mots de passe, des adresses électroniques ou des informations de cartes bancaires.
 about-httpsonly-button-accept-and-continue = Accepter le risque et poursuivre
 about-httpsonly-button-go-back = Retour
+about-httpsonly-link-learn-more = En savoir plus…

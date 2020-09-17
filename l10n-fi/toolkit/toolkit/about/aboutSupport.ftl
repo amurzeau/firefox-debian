@@ -76,6 +76,9 @@ show-dir-label =
         [windows] Avaa kansio
        *[other] Avaa kansio
     }
+environment-variables-title = Ympäristömuuttujat
+environment-variables-name = Nimi
+environment-variables-value = Arvo
 experimental-features-title = Kokeelliset ominaisuudet
 experimental-features-name = Nimi
 experimental-features-value = Arvo
@@ -103,8 +106,6 @@ graphics-desktop-environment = Työpöytäympäristö
 place-database-title = Places-tietokanta
 place-database-integrity = Virheettömyys
 place-database-verify-integrity = Tarkista virheettömyys
-js-title = JavaScript
-js-incremental-gc = Jatkuva roskienkeräys
 a11y-title = Esteettömyystoiminnot
 a11y-activated = Käytössä
 a11y-force-disabled = Estä esteettömyystoiminnot
@@ -134,7 +135,6 @@ restart-button-label = Käynnistä uudestaan
 
 audio-backend = Äänen taustajärjestelmä
 max-audio-channels = Kanavia enintään
-channel-layout = Ensisijainen kanava-asettelu
 sample-rate = Ensisijainen näytteenottotaajuus
 roundtrip-latency = Edestakainen viive (keskihajonta)
 media-title = Media
@@ -278,7 +278,6 @@ support-blocklisted-bug = Estolistalla tunnetuista ongelmista johtuen: <a data-l
 unknown-failure = Estolistalla; virhekoodi { $failureCode }
 d3d11layers-crash-guard = D3D11-koostaminen
 d3d11video-crash-guard = D3D11-videopurkaja
-d3d9video-crash-buard = D3D9-videopurkaja
 d3d9video-crash-guard = D3D9-videopurkaja
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX -videopurkaja

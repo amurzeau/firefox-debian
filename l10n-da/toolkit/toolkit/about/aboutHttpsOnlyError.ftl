@@ -18,3 +18,4 @@ about-httpsonly-explanation-nosupport = Sandsynligvis understøtter webstedet si
 about-httpsonly-explanation-risk = Det er også muligt, at en ondsindet aktør er involveret. Hvis du beslutter at besøge webstedet, så bør du ikke angive følsomme data som fx adgangskoder, mailadresser eller informationer om betalingskort.
 about-httpsonly-button-accept-and-continue = Accepter risikoen og fortsæt
 about-httpsonly-button-go-back = Gå tilbage
+about-httpsonly-link-learn-more = Læs mere…

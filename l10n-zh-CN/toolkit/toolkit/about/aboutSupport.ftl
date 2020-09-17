@@ -80,6 +80,9 @@ show-dir-label =
         [windows] 打开文件夹
        *[other] 打开目录
     }
+environment-variables-title = 环境变量
+environment-variables-name = 名称
+environment-variables-value = 值
 experimental-features-title = 实验性功能
 experimental-features-name = 名称
 experimental-features-value = 值
@@ -107,8 +110,6 @@ graphics-desktop-environment = 桌面环境
 place-database-title = Places 数据库
 place-database-integrity = 完整性
 place-database-verify-integrity = 验证完整性
-js-title = JavaScript
-js-incremental-gc = 渐进式垃圾收集
 a11y-title = 无障碍环境
 a11y-activated = 已激活
 a11y-force-disabled = 强制停用无障碍环境
@@ -138,7 +139,6 @@ restart-button-label = 重启
 
 audio-backend = 音频后端
 max-audio-channels = 最大声道
-channel-layout = 首选声道布局
 sample-rate = 首选采样率
 roundtrip-latency = 往返延迟（标准差）
 media-title = 媒体
@@ -262,7 +262,6 @@ support-blocklisted-bug = 由于已知问题，被列入屏蔽列表：<a data-l
 unknown-failure = 已列入黑名单；故障代码 { $failureCode }
 d3d11layers-crash-guard = D3D11 合成器
 d3d11video-crash-guard = D3D11 视频解码器
-d3d9video-crash-buard = D3D9 视频解码器
 d3d9video-crash-guard = D3D9 视频解码器
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX 视频解码器

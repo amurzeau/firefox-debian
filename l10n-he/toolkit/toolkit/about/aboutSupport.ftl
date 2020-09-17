@@ -77,6 +77,9 @@ show-dir-label =
         [windows] פתיחת תיקייה
        *[other] פתיחת ספרייה
     }
+environment-variables-title = משתנים סביבתיים
+environment-variables-name = שם
+environment-variables-value = ערך
 experimental-features-title = תכונות ניסיוניות
 experimental-features-name = שם
 experimental-features-value = ערך
@@ -104,8 +107,6 @@ graphics-desktop-environment = סביבת שולחן עבודה
 place-database-title = מסד נתוני מיקום
 place-database-integrity = תקינות
 place-database-verify-integrity = וידוא תקינות
-js-title = JavaScript
-js-incremental-gc = איסוף זבל מצטבר
 a11y-title = נגישות
 a11y-activated = מופעל
 a11y-force-disabled = מניעת נגישות
@@ -133,7 +134,6 @@ restart-button-label = הפעלה מחדש
 
 audio-backend = מנגנון שמע
 max-audio-channels = מספר הערוצים המרבי
-channel-layout = פריסת הערוצים המועדפת
 sample-rate = קצב הדגימה המועדף
 media-title = מדיה
 media-output-devices-title = התקני פלט
@@ -262,7 +262,6 @@ support-blocklisted-bug = נחסם עקב בעיות ידועות: <a data-l10n-
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = הוכנס לרשימה השחורה, קוד כישלון { $failureCode }
 d3d11video-crash-guard = מפענח הווידאו D3D11
-d3d9video-crash-buard = מפענח הווידאו D3D9
 d3d9video-crash-guard = מפענח הווידאו D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = מפענח הווידאו WMF VPX

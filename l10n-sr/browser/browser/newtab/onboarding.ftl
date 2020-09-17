@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Сазнај више
-onboarding-button-label-try-now = Пробајте сада
 onboarding-button-label-get-started = Први кораци
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Први кораци
 onboarding-welcome-header = Добродошли у { -brand-short-name }
 onboarding-welcome-body = Имате прегледач. <br/>Упознајте и остатак { -brand-product-name } екипе.
 onboarding-welcome-learn-more = Сазнајте више о предностима.
-onboarding-join-form-header = Придружи се пројекту { -brand-product-name }
 onboarding-welcome-modal-get-body = Имате прегледач.<br/>А сада искористите максимум из { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Појачајте заштиту приватности.
 onboarding-welcome-modal-privacy-body = Инсталација прегледача је завршена. Додајмо сада још више заштите приватности.
@@ -57,31 +55,99 @@ onboarding-multistage-import-header = Увезите ваше лозинке, о
 onboarding-multistage-import-subtitle = Долазите од другог прегледача? Све можете лако увести у { -brand-short-name }.
 onboarding-multistage-import-primary-button-label = Покрени увоз
 onboarding-multistage-import-secondary-button-label = Не сада
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. "look" should stay inside the span.
-onboarding-multistage-theme-header = Изаберите <span data-l10n-name="zap">изглед</span>
-onboarding-multistage-theme-subtitle = Прилагодите { -brand-short-name } темом.
-onboarding-multistage-theme-primary-button-label = Сачувај тему
-onboarding-multistage-theme-secondary-button-label = Не сада
-onboarding-multistage-theme-label-light = Светла
-onboarding-multistage-theme-label-dark = Тамна
-onboarding-multistage-theme-label-colorful = Шарена
-# Tooltip displayed on hover of top sites in import settings screen during onboarding flow.
-# This support welcome screen showing top sites imported from the user's default browser.
-# Title text is kept multiline to ensure tooltip container width is not more than 40 characters.
-onboarding-import-sites-info =
-    .title =
-        Ове странице су пронађене на овом уређају.
-        { -brand-short-name } не чува нити синхронизује податке из
-        другог прегледача уколико ви не изаберете да
-        их увезете.
-    .aria-label = { onboarding-import-sites-info.title }
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Странице са ове листе нису пронађене на овом уређају. { -brand-short-name } не чува нити синхронизује податке из другог прегледача, осим ако не изаберете да их увезете.
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
 # Variables:
 #   $current (Int) - Number of the current page
 #   $total (Int) - Total number of pages
 onboarding-welcome-steps-indicator =
     .aria-label = Први кораци: екран { $current } од { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Изаберите <span data-l10n-name="zap">изглед</span>
+onboarding-multistage-theme-subtitle = Прилагодите { -brand-short-name } темом.
+onboarding-multistage-theme-primary-button-label = Сачувај тему
+onboarding-multistage-theme-secondary-button-label = Не сада
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Аутоматски
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = Користи системску тему
+onboarding-multistage-theme-label-light = Светла
+onboarding-multistage-theme-label-dark = Тамна
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
+    .title =
+        Наследите изглед вашег оперативног
+        система за тастере, меније и прозоре.
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        Користите светли изглед за тастере,
+        меније и прозоре.
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        Користите тамни изглед за тастере,
+        меније и прозоре.
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title =
+        Користите шарени изглед за тастере,
+        меније и прозоре.
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Наследите изглед вашег оперативног
+        система за тастере, меније и прозоре.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Наследите изглед вашег оперативног
+        система за тастере, меније и прозоре.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Користите светли изглед за тастере,
+        меније и прозоре.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Користите светли изглед за тастере,
+        меније и прозоре.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Користите тамни изглед за тастере,
+        меније и прозоре.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Користите тамни изглед за тастере,
+        меније и прозоре.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Користите шарени изглед за тастере,
+        меније и прозоре.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Користите шарени изглед за тастере,
+        меније и прозоре.
 
 ## Welcome full page string
 
@@ -107,11 +173,7 @@ onboarding-sync-form-sub-header = да бисте наставили на { -syn
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Корисни производи
 onboarding-benefit-products-text = Радите ефикасније са породицом алатки које поштују вашу приватност на свим вашим уређајима.
-onboarding-benefit-knowledge-title = Примењена знања
-onboarding-benefit-knowledge-text = Сазнајте све што требате да бисте били паметнији и сигурнији на мрежи.
-onboarding-benefit-privacy-title = Права приватност
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -132,17 +194,6 @@ onboarding-benefit-lockwise-text = Управљајте лозинкама ко�
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Приватно прегледање
-onboarding-private-browsing-text = Прегледајте анонимно. Приватно прегледање са блокирањем садржаја блокира пратиоце на мрежи који вас прате док прегледате веб.
-onboarding-screenshots-title = Снимци екрана
-onboarding-screenshots-text = Правите, чувајте и делите снимке екрана без напуштања програма { -brand-short-name }. Ухватите део странице или целу страницу у току прегледања. Онда сачувајте на вебу зарад лакшег приступа и дељења.
-onboarding-addons-title = Додаци
-onboarding-addons-text = Додајте још могућности које ће учинити { -brand-short-name } бољим за вас. Упоређујте цене, проверите временску прогнозу или изразите вашу личност бирањем прилагођене теме.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Прегледајте брже, паметније или безбедније са проширењима као што је Ghostery које вам дозвољава да блокирате несносне огласе.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Sync
-onboarding-fxa-text = Направите { -fxaccount-brand-name } налог и синхронизујте ваше забелешке, лозинке и отворене језичке где год да користите { -brand-short-name }.
 onboarding-tracking-protection-title2 = Заштита од праћења
 onboarding-tracking-protection-text2 = { -brand-short-name } помаже вам у спречавању веб страница да вас прате на мрежи, што отежава огласима да вас прате на вебу.
 onboarding-tracking-protection-button2 = Како то ради
@@ -151,7 +202,6 @@ onboarding-data-sync-title = Понесите своја подешавања с
 onboarding-data-sync-text2 = Синхронизујте своје забелешке, лозинке и остало свуда где користите { -brand-product-name }.
 onboarding-data-sync-button2 = Пријавите се у { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Будите у приправности од повреде података
-onboarding-firefox-monitor-text = { -monitor-brand-name } надгледа да ли се ваша адреса е-поште појавила у повреди података и упозорава вас ако се појави у новој повреди.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } надгледа вашу имејл адресу ако се појави у познатом цурењу података и обавестиће вас уколико је открије.
 onboarding-firefox-monitor-button = Пријавите се за упозорења
 onboarding-browse-privately-title = Прегледајте приватно
@@ -168,17 +218,11 @@ onboarding-mobile-phone-button = Преузмите мобилни прегле�
 onboarding-send-tabs-title = Пошаљите себи отворене језичке
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Шаљите језичке са једног уређаја на други - без копирања и лепљења или напуштања прегледача.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Једноставно шаљите језичке са једног уређаја на други - без копирања и лепљења веза или напуштања прегледача.
 onboarding-send-tabs-button = Почните да користите слање језичака
 onboarding-pocket-anywhere-title = Читајте и слушајте било где
 onboarding-pocket-anywhere-text2 = Сачувајте ваш омиљени садржај офлајн уз помоћ { -pocket-brand-name } апликације и читајте, слушајте и гледајте кад год вам то одговара.
 onboarding-pocket-anywhere-button = Испробајте { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Понесите ваше лозинке свугде
-onboarding-lockwise-passwords-text2 = Држите лозинке заштићеним и једноставно се пријавите у налоге преко { -lockwise-brand-name }.
-onboarding-lockwise-passwords-button2 = Преузмите апликацију
 onboarding-lockwise-strong-passwords-title = Стварајте и чувајте јаке лозинке
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } ствара јаке лозинке у трену и све их чува на једном месту.
 onboarding-lockwise-strong-passwords-button = Управљајте вашим пријавама

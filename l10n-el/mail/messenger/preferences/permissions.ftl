@@ -39,5 +39,5 @@ permission-can-label = Να επιτρέπεται
 permission-can-access-first-party-label = Να επιτρέπεται μόνο στους άμεσα εμπλεκόμενους
 permission-can-session-label = Να επιτρέπεται για τη συνεδρία
 permission-cannot-label = Φραγή
-invalid-uri-message = Παρακαλώ εισάγετε ένα έγκυρο όνομα
+invalid-uri-message = Παρακαλούμε εισάγετε ένα έγκυρο όνομα συστήματος
 invalid-uri-title = Εισήχθηκε μη έγκυρο όνομα συστήματος

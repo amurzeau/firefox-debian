@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Tìm hiểu thêm
-onboarding-button-label-try-now = Dùng thử ngay
 onboarding-button-label-get-started = Bắt đầu
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Bắt đầu
 onboarding-welcome-header = Chào mừng đến với { -brand-short-name }
 onboarding-welcome-body = Bạn đã có trình duyệt.<br/>Xem phần còn lại của { -brand-product-name }.
 onboarding-welcome-learn-more = Tìm hiểu thêm về các tiện ích.
-onboarding-join-form-header = Kết nối { -brand-product-name }
 onboarding-welcome-modal-get-body = Bạn đã có trình duyệt.<br/>Bây giờ hãy tận dụng tối đa { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Bảo vệ quyền riêng tư của bạn.
 onboarding-welcome-modal-privacy-body = Bạn đã có trình duyệt. Hãy để thêm bảo vệ quyền riêng tư.
@@ -110,6 +108,46 @@ onboarding-multistage-theme-tooltip-alpenglow =
         Sử dụng giao diện đầy màu sắc cho các nút,
         menu và cửa sổ
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Kế thừa sự xuất hiện của hệ điều hành
+        của bạn cho các nút, menu và cửa sổ.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Kế thừa sự xuất hiện của hệ điều hành
+        của bạn cho các nút, menu và cửa sổ.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Sử dụng giao diện sáng cho các nút,
+        menu và cửa sổ.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Sử dụng giao diện sáng cho các nút,
+        menu và cửa sổ.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Sử dụng giao diện tối cho các nút,
+        menu và cửa sổ.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Sử dụng giao diện tối cho các nút,
+        menu và cửa sổ.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Sử dụng giao diện đầy màu sắc cho các nút,
+        menu và cửa sổ
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Sử dụng giao diện đầy màu sắc cho các nút,
+        menu và cửa sổ
 
 ## Welcome full page string
 
@@ -135,11 +173,7 @@ onboarding-sync-form-sub-header = để tiếp tục với { -sync-brand-name }
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Sản phẩm hữu ích
 onboarding-benefit-products-text = Hoàn thành công việc với một nhóm công cụ tôn trọng quyền riêng tư của bạn trên các thiết bị của bạn.
-onboarding-benefit-knowledge-title = Kiến thức thực tế
-onboarding-benefit-knowledge-text = Tìm hiểu mọi thứ bạn cần biết để luôn thông minh hơn và an toàn hơn khi trực tuyến.
-onboarding-benefit-privacy-title = Quyền riêng tư thực sự
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -160,17 +194,6 @@ onboarding-benefit-lockwise-text = Quản lý mật khẩu được bảo vệ v
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Duyệt web riêng tư
-onboarding-private-browsing-text = Duyệt bởi bản thân bạn. Duyệt web riêng tư với Trình chặn nội dung với nhiệm vụ chặn các trình theo dõi trực tuyến theo dõi bạn trên web.
-onboarding-screenshots-title = Ảnh chụp màn hình
-onboarding-screenshots-text = Tạo, lưu và chia sẻ ảnh chụp màn hình - mà không phải rời khỏi { -brand-short-name }. Chụp một khu vực hoặc toàn bộ trang khi bạn duyệt. Sau đó lưu vào web để dễ dàng truy cập và chia sẻ.
-onboarding-addons-title = Tiện ích
-onboarding-addons-text = Thêm nhiều tính năng hơn để { -brand-short-name } sẽ làm việc tích cực hơn cho bạn. So sánh giá cả, kiểm tra thời tiết hoặc thể hiện cá nhân hóa của bạn bằng một chủ đề tùy chỉnh.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Duyệt nhanh hơn, thông minh hơn hoặc an toàn hơn với các tiện ích mở rộng như Ghostery, cho phép bạn chặn quảng cáo gây phiền nhiễu.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Đồng bộ hóa
-onboarding-fxa-text = Đăng ký tài khoản { -fxaccount-brand-name } để đồng bộ dấu trang, mật khẩu và các thẻ đang mở của bạn khi sử dụng { -brand-short-name } ở mọi nơi.
 onboarding-tracking-protection-title2 = Bảo vệ khỏi trình theo dõi
 onboarding-tracking-protection-text2 = { -brand-short-name } giúp ngăn các trang web theo dõi bạn trực tuyến, khiến quảng cáo khó theo dõi bạn hơn trên web.
 onboarding-tracking-protection-button2 = Nó hoạt động như thế nào
@@ -179,7 +202,6 @@ onboarding-data-sync-title = Mang theo các cài đặt của bạn
 onboarding-data-sync-text2 = Đồng bộ hóa dấu trang, mật khẩu và hơn thế nữa ở mọi nơi bạn sử dụng { -brand-product-name }.
 onboarding-data-sync-button2 = Đăng nhập vào { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Cảnh báo về vi phạm dữ liệu
-onboarding-firefox-monitor-text = { -monitor-brand-name } giám sát nếu email của bạn xuất hiện vi phạm dữ liệu và thông báo cho bạn nếu nó xuất hiện trong một vi phạm mới.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } giám sát nếu email của bạn xuất hiện trong vụ rò rỉ dữ liệu đã biết và thông báo cho bạn nếu nó xuất hiện trong vụ rò rỉ mới.
 onboarding-firefox-monitor-button = Đăng ký thông báo
 onboarding-browse-privately-title = Duyệt web riêng tư hơn
@@ -196,17 +218,11 @@ onboarding-mobile-phone-button = Tải về trình duyệt di động
 onboarding-send-tabs-title = Gửi ngay cho chính mình các thẻ
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Gửi thẻ sẽ ngay lập tức chia sẻ các trang giữa các thiết bị của bạn mà không phải sao chép, dán hoặc rời khỏi trình duyệt.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Dễ dàng chia sẻ các trang giữa các thiết bị của bạn mà không phải sao chép liên kết hoặc rời khỏi trình duyệt.
 onboarding-send-tabs-button = Bắt đầu sử dụng trình gửi thẻ
 onboarding-pocket-anywhere-title = Đọc và nghe mọi nơi
 onboarding-pocket-anywhere-text2 = Lưu nội dung yêu thích của bạn ngoại tuyến với ứng dụng { -pocket-brand-name } và đọc, nghe và xem bất cứ khi nào nó tiện lợi cho bạn.
 onboarding-pocket-anywhere-button = Thử { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Mang mật khẩu của bạn đi khắp mọi nơi
-onboarding-lockwise-passwords-text2 = Giữ mật khẩu bạn lưu an toàn và dễ dàng đăng nhập vào tài khoản của bạn bằng { -lockwise-brand-name }.
-onboarding-lockwise-passwords-button2 = Tải ứng dụng
 onboarding-lockwise-strong-passwords-title = Tạo và lưu trữ mật khẩu mạnh
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } tạo mật khẩu mạnh ngay tại chỗ và lưu tất cả chúng vào một nơi.
 onboarding-lockwise-strong-passwords-button = Quản lý thông tin đăng nhập của bạn

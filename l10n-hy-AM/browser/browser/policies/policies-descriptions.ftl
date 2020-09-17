@@ -36,6 +36,7 @@ policy-DisableFirefoxStudies = Կանխարգելել { -brand-short-name }֊-ը
 policy-DisableForgetButton = Կանխարգելել մուտքը Մոռացման կոճակով։
 policy-DisableFormHistory = Չհիշել որոնումները պատմության միջից։
 policy-DisableMasterPasswordCreation = Եթե ճշմարիտ է, հիմնական գաղտնաբառը չի կարող ստեղծվել։
+policy-DisablePrimaryPasswordCreation = Եթե ճիշտ է՝ Հիմնական գաղտնաբառը հնարավոր չէ ստեղծել:
 policy-DisablePasswordReveal = Թույլ մի տվեք, որ գաղտնաբառերը բացահայտվեն պահված մուտքերում։
 policy-DisablePocket = Վեբ կայքերը Pocket-ում պահպանելու համար անջատեք գործառույթը։
 policy-DisablePrivateBrowsing = Անջատել անհատական զննումը։
@@ -79,6 +80,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Վերադարձրեք
 
 policy-LocalFileLinks = Թույլատրել հատուկ կայքերին կապվել տեղային նիշքերի հետ։
 policy-MasterPassword = Պահանջում կամ կանխում է գլխավոր գաղտնաբառի օգտագործումը:
+policy-PrimaryPassword = Պահանջում կամ կանխում է Հիմնական գաղտնաբառի օգտագործումը:
 policy-NetworkPrediction = Միացնել կամ անջատել ցանցի կանխատեսումը (DNS նախապատվությունը):
 policy-NewTabPage = Միացնել կամ անջատել Նոր ներդիրի էջը:
 policy-NoDefaultBookmarks = Անջատեք լռելյայն էջանիշների ստեղծումը, որոնք զուգորդվում են { -brand-short-name } և «Խելացի էջանիշեր» (առավել այցելված, վերջին պիտակներով): Նշում. Այս կանոնը արդյունավետ է միայն այն դեպքում, երբ օգտագործվում է հաշվի առաջին գործարկումից առաջ:

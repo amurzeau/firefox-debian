@@ -84,7 +84,7 @@ open-in-new-window-for-csp-or-xfo-error = 새 창에 사이트 열기
 
 # Variables:
 # $hostname (String) - Hostname of the website blocked by csp or xfo error.
-csp-xfo-blocked-long-desc = 보안을 위해, { $hostname } 사이트는 다른 사이트에서 해당 페이지를 포함하면 { -brand-short-name }가 페이지를 표시하지 못하게합니다. 이 페이지를 보려면 새 창에 열어야 합니다.
+csp-xfo-blocked-long-desc = 보안을 위해 { $hostname } 사이트는 다른 사이트에서 해당 페이지를 포함하면 { -brand-short-name }가 페이지를 표시하지 못하게 합니다. 이 페이지를 보려면 새 창에 열어야 합니다.
 
 ## Messages used for certificate error titles
 
@@ -113,9 +113,7 @@ proxyResolveFailure-title = 프록시 서버를 찾을 수 없음
 redirectLoop-title = 페이지가 제대로 리디렉션되지 않음
 unknownSocketType-title = 서버에서 예기치 않은 응답
 nssFailure2-title = 보안 연결 실패
-cspBlocked-title = 콘텐츠 보안 정책에 의한 차단
-xfoBlocked-title = X-Frame-Options 정책에 의해 차단됨
-csp-xfo-error-title = { -brand-short-name }가 이 페이지를 열 수 없습니다
+csp-xfo-error-title = { -brand-short-name }가 이 페이지를 열 수 없음
 corruptedContentError-title = 손상된 콘텐츠 오류
 remoteXUL-title = 원격 XUL
 sslv3Used-title = 보안 연결을 할 수 없음

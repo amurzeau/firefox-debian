@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Только когда { -brand-short-name } настроен на блокировку известных трекеров
 do-not-track-option-always =
     .label = Всегда
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Настройки
-           *[other] Настройки
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Настройки
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Расширение <img data-l10n-nam
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Расширение <img data-l10n-name="icon"/> { $name } контролирует вашу страницу новой вкладки.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Расширение <img data-l10n-name="icon"/> { $name } контролирует этот параметр.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Расширение <img data-l10n-name="icon"/> { $name } контролирует этот параметр.
@@ -374,13 +371,6 @@ update-application-warning-cross-user-setting = Этот параметр при
 update-application-use-service =
     .label = Использовать фоновую службу для установки обновлений
     .accesskey = ф
-update-enable-search-update =
-    .label = Автоматически обновлять поисковые системы
-    .accesskey = л
-update-pref-write-failure-title = Ошибка записи
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Не удалось сохранить настройку. Не удалось произвести запись в файл: { $path }
 update-setting-write-failure-title = Ошибка при сохранении настроек обновления
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -549,7 +539,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Добавить панель поиска на панель инструментов
 search-engine-default-header = Поисковая система по умолчанию
-search-engine-default-desc = Выберите поисковую систему по умолчанию для использования в панели адреса и панели поиска.
 search-engine-default-desc-2 = Это ваша поисковая система по умолчанию в адресной строке и панели поиска. Вы можете сменить её в любое время.
 search-engine-default-private-desc-2 = Выберите другую поисковую систему по умолчанию для использования только в Приватных окнах
 search-separate-default-engine =
@@ -586,6 +575,9 @@ search-restore-default =
 search-remove-engine =
     .label = Удалить
     .accesskey = и
+search-add-engine =
+    .label = Добавить
+    .accesskey = в
 search-find-more-link = Найти другие поисковые системы
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -597,7 +589,6 @@ search-keyword-warning-bookmark = Вы выбрали краткое имя, к�
 
 ## Containers Section
 
-containers-back-link = « Вернуться назад
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -616,20 +607,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Удалить
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Возьмите свой Интернет с собой
 sync-signedout-description = Синхронизируйте свои закладки, историю, вкладки, пароли, дополнения и настройки на всех ваших устройствах.
-sync-signedout-account-title = Соединитесь с { -fxaccount-brand-name(case: "instrumental") }
-sync-signedout-account-create = Нет аккаунта? Давайте его создадим
-    .accesskey = е
-sync-signedout-account-signin =
-    .label = Войти…
-    .accesskey = о
 sync-signedout-account-signin2 =
     .label = Войти в { -sync-brand-short-name(case: "accusative") }…
     .accesskey = о
@@ -643,16 +625,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Загрузите Firefox для <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> или <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS,</a> чтобы синхронизироваться со своим мобильным устройством.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Изменить фотографию в профиле
-sync-disconnect =
-    .label = Отсоединить…
-    .accesskey = н
 sync-sign-out =
     .label = Выйти…
     .accesskey = ы
@@ -669,8 +645,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Войти
     .accesskey = о
-sync-signedin-settings-header = Параметры синхронизации
-sync-signedin-settings-desc = Выберите, что нужно синхронизировать на ваших устройствах при помощи { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -723,10 +697,6 @@ sync-engine-tabs =
     .label = Открытые вкладки
     .tooltiptext = Список того, что открыто на всех синхронизированных устройствах
     .accesskey = л
-sync-engine-logins =
-    .label = Логины
-    .tooltiptext = Сохранённые имена пользователей и пароли
-    .accesskey = ы
 sync-engine-logins-passwords =
     .label = Логины и пароли
     .tooltiptext = Сохранённые вами имена пользователей и пароли
@@ -765,18 +735,10 @@ sync-device-name-save =
     .label = Сохранить
     .accesskey = х
 sync-connect-another-device = Подключить другое устройство
-sync-manage-devices = Управление устройствами
-sync-fxa-begin-pairing = Соединиться с устройством
-sync-tos-link = Условия службы
-sync-fxa-privacy-notice = Уведомление о приватности
 
 ## Privacy Section
 
 privacy-header = Приватность браузера
-
-## Privacy Section - Forms
-
-logins-header = Логины и пароли
 
 ## Privacy Section - Logins and Passwords
 
@@ -910,8 +872,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Тип заблокированного
     .accesskey = п
-sitedata-option-block-trackers =
-    .label = Сторонние трекеры
 sitedata-option-block-cross-site-trackers =
     .label = Межсайтовые трекеры
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -957,27 +917,9 @@ addressbar-suggestions-settings = Изменить настройки для п�
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Блокировка содержимого
-content-blocking-section-description = Защищайте свою приватность во время веб-сёрфинга. Блокируйте невидимый контент, который отслеживает, какие сайты вы посещаете, и профилирует вас. Блокировка некоторого содержимого может ускорить загрузку страниц.
 content-blocking-enhanced-tracking-protection = Улучшенная защита от отслеживания
 content-blocking-section-top-level-description = Трекеры отслеживают вас в Интернете, чтобы собирать информацию о ваших привычках и интересах. { -brand-short-name } блокирует многие из этих трекеров и других вредоносных скриптов.
 content-blocking-learn-more = Подробнее
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Стандартная
-    .accesskey = н
-content-blocking-setting-strict =
-    .label = Строгая
-    .accesskey = о
-content-blocking-setting-custom =
-    .label = Персональная
-    .accesskey = а
-content-blocking-standard-desc = Баланс защиты и производительности. Разрешает некоторые трекеры для корректной работы веб-сайтов.
-content-blocking-strict-description = Усиленная защита может вызывать проблемы с некоторыми сайтами.
-content-blocking-custom-desc = Выберите, что блокировать.
-content-blocking-private-trackers = Все известные трекеры в приватных окнах
-content-blocking-third-party-cookies = Куки сторонних трекеров
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1004,23 +946,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Межсайтовы
 content-blocking-social-media-trackers = Трекеры социальных сетей
 content-blocking-all-cookies = Все куки
 content-blocking-unvisited-cookies = Куки с непосещённых сайтов
-content-blocking-all-windows-trackers = Все известные трекеры во всех окнах
 content-blocking-all-windows-tracking-content = Отслеживающее содержимое во всех окнах
 content-blocking-all-third-party-cookies = Все сторонние куки
 content-blocking-cryptominers = Криптомайнеры
 content-blocking-fingerprinters = Сборщики цифровых отпечатков
 content-blocking-warning-title = Осторожно!
-content-blocking-warning-description = Блокировка содержимого может вызывать проблемы с некоторыми веб-сайтами. Можно легко отключить блокировку для сайтов, которым вы доверяете.
-content-blocking-learn-how = Подробнее
 content-blocking-and-isolating-etp-warning-description = Блокировка трекеров и изоляция куков может нарушить работу некоторых сайтов. Перезагрузите страницу с трекерами, чтобы загрузить все содержимое.
 content-blocking-warning-learn-how = Подробнее
 content-blocking-reload-description = Вам понадобится обновить свои вкладки, чтобы применить эти изменения.
 content-blocking-reload-tabs-button =
     .label = Обновить все вкладки
     .accesskey = н
-content-blocking-trackers-label =
-    .label = Трекеры
-    .accesskey = е
 content-blocking-tracking-content-label =
     .label = Отслеживающее содержимое
     .accesskey = ж
@@ -1078,12 +1014,6 @@ permissions-notification-settings =
 permissions-notification-link = Подробнее
 permissions-notification-pause =
     .label = Отключить уведомления до перезапуска { -brand-short-name }
-    .accesskey = ю
-permissions-block-autoplay-media2 =
-    .label = Не разрешать веб-сайтам автоматически воспроизводить звук
-    .accesskey = ш
-permissions-block-autoplay-media-exceptions =
-    .label = Исключения…
     .accesskey = ю
 permissions-autoplay = Автовоспроизведение
 permissions-autoplay-settings =

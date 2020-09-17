@@ -11,6 +11,7 @@ profiles-restart-in-safe-mode = निष्क्रिय सहयुक्�
 profiles-restart-normal = सामान्य रूप से पुनः आरंभ करें...
 profiles-flush-fail-title = परिवर्तन सहेजे नहीं गए
 profiles-flush-conflict = { profiles-conflict }
+profiles-flush-restart-button = { -brand-short-name } पुनः आरंभ करें
 
 # Variables:
 #   $name (String) - Name of the profile
@@ -32,6 +33,9 @@ profiles-rename = पुनर्नामकरण
 profiles-remove = हटाएँ
 profiles-set-as-default = मूलभूत प्रोफ़ाइल के रूप में स्थापित करे
 profiles-launch-profile = प्रोफ़ाइल नये ब्राउज़र में प्रक्षेपित करें
+
+profiles-cannot-set-as-default-title = तयशुदा सेट करने में असमर्थ
+profiles-cannot-set-as-default-message = { -brand-short-name } के लिए तयशुदा प्रोफ़ाइल को नहीं बदला जा सकता है।
 
 profiles-yes = हाँ
 profiles-no = नहीं

@@ -80,6 +80,9 @@ show-dir-label =
         [windows] Map iepenje
        *[other] Map iepenje
     }
+environment-variables-title = Omjouwingsfariabelen
+environment-variables-name = Namme
+environment-variables-value = Wearde
 experimental-features-title = Eksperimintele funksjes
 experimental-features-name = Namme
 experimental-features-value = Wearde
@@ -107,8 +110,6 @@ graphics-desktop-environment = Desktopomjouwing
 place-database-title = Places-database
 place-database-integrity = Yntegriteit
 place-database-verify-integrity = Yntegriteit ferifearje
-js-title = JavaScript
-js-incremental-gc = Ynkremintele GC
 a11y-title = Tagonklikheid
 a11y-activated = Aktivearre
 a11y-force-disabled = Tagonklikheid tsjingean
@@ -138,7 +139,6 @@ restart-button-label = Opnij starte
 
 audio-backend = Audio-backend
 max-audio-channels = Maks kanalen
-channel-layout = Oanrekommandearre kanaalmodus
 sample-rate = Oanrekommandearre foarbyldfrekwinsje
 roundtrip-latency = Retinsjelatinsje (standertdeviaasje)
 media-title = Media
@@ -282,7 +282,6 @@ support-blocklisted-bug = Blokkearre fanwegen bekende problemen: <a data-l10n-na
 unknown-failure = Op blokkearlist; flaterkoade { $failureCode }
 d3d11layers-crash-guard = D3D11-compositor
 d3d11video-crash-guard = D3D11-fideodecoder
-d3d9video-crash-buard = D3D9-fideodecoder
 d3d9video-crash-guard = D3D9-fideodecoder
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX-fideodecoder
@@ -293,7 +292,7 @@ gpu-device-reset-button = Apparaatherinisjalisaasje aktivearje
 uses-tiling = Brûkt tegels
 content-uses-tiling = Brûkt Tiling (Ynhâld)
 off-main-thread-paint-enabled = Off Main Thread Painting ynskeakele
-off-main-thread-paint-worker-count = Off Main Thread Painting Worker Count
+off-main-thread-paint-worker-count = Oantal Off Main Thread Painting-workers
 target-frame-rate = Doelframerate
 min-lib-versions = Minimale ferzje ferwachte
 loaded-lib-versions = Brûkte ferzje

@@ -77,6 +77,9 @@ show-dir-label =
         [windows] Tijaq yakwuj
        *[other] Tijaq ri cholb'äl
     }
+environment-variables-title = Ruk'ojlib'al Jalb'äl
+environment-variables-name = B'i'aj
+environment-variables-value = Retal
 experimental-features-title = Soltojtob'enel taq Rub'anikil
 experimental-features-name = B'i'aj
 experimental-features-value = Retal
@@ -104,8 +107,6 @@ graphics-desktop-environment = Ruk'ojlib'al Ajkematz'ib'
 place-database-title = Taq kik'ojlem cholxe'el tzij
 place-database-integrity = Ch'ajch'ojri'ïl
 place-database-verify-integrity = Tinik'öx ch'ajch'ojri'ïl
-js-title = JavaScript
-js-incremental-gc = Rusik'ik k'iyirisan q'ayïs\u0020
 a11y-title = Okel
 a11y-activated = Tzijïl
 a11y-force-disabled = Tichajïx apo ri okel
@@ -135,7 +136,6 @@ restart-button-label = Titikirisäx chik
 
 audio-backend = Q'ojom Backend
 max-audio-channels = Nima'q taq b'ey
-channel-layout = Ruwachib'enik Ajowan B'ey
 sample-rate = Ajowan Q'ijun Tz'etb'äl
 roundtrip-latency = Rulatensya b'enam chuqa' tzolojnem (junaman jech'unïk)
 media-title = K'ïy k'oxom
@@ -272,11 +272,13 @@ blocklisted-bug = Ri q'ëq cholb'äl ruma taq k'ayewal etaman kiwäch
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = sachoj { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Pa ri rucholajem q'atoj ruma k'ayewal etaman kiwa: <a data-l10n-name="bug-link">{ $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Q'ëq cholb'äl: rub'itz'ib' sachoj { $failureCode }
 d3d11layers-crash-guard = D3D11 Chojmirisanel
 d3d11video-crash-guard = D3D11 Silowachib'äl ewanel rusik'ixik
-d3d9video-crash-buard = D3D9 Silowachib'äl Ewanel rusik'ixik
 d3d9video-crash-guard = D3D9 Silowachib'äl Ewanel rusik'ixik
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Silowachib'äl Ewanel Rusik'ixik

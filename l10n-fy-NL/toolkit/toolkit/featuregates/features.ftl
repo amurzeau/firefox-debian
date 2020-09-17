@@ -4,23 +4,9 @@
 
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-css-masonry =
-    .label = CSS Masonry Layout
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
 experimental-features-css-masonry2 =
     .label = CSS: Masonry Layout
 experimental-features-css-masonry-description = Makket stipe foar de eksperimintele funksje CSS Masonry Layout mooglik. Lês de <a data-l10n-name="explainer">útlis</a> foar in globale beskriuwing fan de funksje. Pleats in opmerking yn <a data-l10n-name="w3c-issue">dit GitHub-issue</a> of <a data-l10n-name="bug">dizze bug</a> om kommentaar te leverjen.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-gpu =
-    .label = WebGPU
-experimental-features-web-gpu-description = Eksperimintele API foar ôfbyldingen en berekkeningen op it web
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-avif =
-    .label = AVIF
-experimental-features-avif-description = Eksperimintele stipe foar AVIF: AV1 Image File-opmaak
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
@@ -88,6 +74,9 @@ experimental-features-cookie-samesite-none-requires-secure2-description = Foar c
 experimental-features-abouthome-startup-cache =
     .label = Opstartbuffer about:home
 experimental-features-abouthome-startup-cache-description = In opstartbuffer foar it inisjele about:home-dokumint wurdt by opstarten standert laden. It doel fan dizze buffer is it ferbetterjen fan de opstartprestaasjes.
+experimental-features-print-preview-tab-modal =
+    .label = Nij ûntwerp fan ôfdrukfoarbyld
+experimental-features-print-preview-tab-modal-description = Yntrodusearret it opnij ûntwurpen ôfdrukfoarbyld en makket ôfdrukfoarbyld beskikber op macOS. Dit kin liede ta falen en omfettet net alle ôfdrukrelatearre ynstellingen. Selektearje om tagong te krijen ta alle ôfdrukrelatearre ynstellingen ‘Ofdrukke fia it systeemdialoochfinster…’ yn it paniel Ofdrukke.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-cookie-samesite-schemeful =
@@ -98,3 +87,7 @@ experimental-features-devtools-serviceworker-debugger-support =
     .label = Developer Tools: Service Worker debugging
 # "Service Worker" is an API name and is usually not translated.
 experimental-features-devtools-serviceworker-debugger-support-description = Skeakelet yn it Debugger-paniel eksperimintele stipe foar service workers yn. Dizze funksje kin helpmiddelen foar webûntwikkelers fertrage en it ûnthâldgebrûk ferheegje.
+# Desktop zooming experiment
+experimental-features-graphics-desktop-zooming =
+    .label = Grafysk: Smooth Pinch Zoom
+experimental-features-graphics-desktop-zooming-description = Skeakel stipe yn foar soepel zoome troch knipe op oanraakskermen en presysy-touchpads.

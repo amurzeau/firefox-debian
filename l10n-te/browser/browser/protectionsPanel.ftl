@@ -2,6 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+protections-panel-sendreportview-error = నివేదికను పంపించడంలో ఏదో పొరపాటు దొర్లింది. దయచేసి మళ్ళీ ప్రయత్నించండి.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -34,8 +35,10 @@ protections-panel-not-blocking-why-label = ఎందుకు?
 ##
 
 protections-panel-no-trackers-found = { -brand-short-name }కి తెలిసిన ట్రాకర్లేమీ ఈ పేజీలో కనబడలేదు.
+protections-panel-content-blocking-tracking-protection = ట్రాకింగ్ విషయం
 protections-panel-content-blocking-socialblock = సామాజిక మాధ్యమాల ట్రాకర్లు
 protections-panel-content-blocking-cryptominers-label = క్రిప్టోమైనర్లు
+protections-panel-content-blocking-fingerprinters-label = ఫింగర్‌ప్రింటర్లు
 
 ## In the protections panel, Content Blocking category items are in three sections:
 ##   "Blocked" for categories being blocked in the current page,
@@ -69,6 +72,9 @@ protections-panel-content-blocking-manage-settings =
 protections-panel-content-blocking-breakage-report-view-collection-url = URL
 protections-panel-content-blocking-breakage-report-view-collection-url-label =
     .aria-label = URL
+protections-panel-content-blocking-breakage-report-view-collection-comments = ఐచ్ఛికం: సమస్యను వివరించండి
+protections-panel-content-blocking-breakage-report-view-collection-comments-label =
+    .aria-label = ఐచ్ఛికం: సమస్యను వివరించండి
 protections-panel-content-blocking-breakage-report-view-cancel =
     .label = రద్దుచేయి
 protections-panel-content-blocking-breakage-report-view-send-report =

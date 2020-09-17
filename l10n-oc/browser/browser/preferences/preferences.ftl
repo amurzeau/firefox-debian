@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Solament quand { -brand-short-name } es configurat per blocar los traçadors coneguts
 do-not-track-option-always =
     .label = Totjorn
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Opcions
-           *[other] Preferéncias
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Opcions
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Una extension, <img data-l10n-name="ico
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Una extension, <img data-l10n-name="icon"/> { $name }, contraròtla la pagina Onglet novèl.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Una extension, <img data-l10n-name="icon"/> { $name }, contraròtla aqueste paramètre.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Una extension, <img data-l10n-name="icon"/>{ $name }, contraròtla aqueste paramètre.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Aqueste paramètres s’aplicar�
 update-application-use-service =
     .label = Utilizar un servici en rèireplan per installar las mesas a jorn
     .accesskey = z
-update-enable-search-update =
-    .label = Metre a jorn automaticament los motors de recèrca
-    .accesskey = m
-update-pref-write-failure-title = Fracàs d’escritura
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Enregistrament impossible de las preferéncias. Impossible d’escriure dins lo fichièr : { $path }
 update-setting-write-failure-title = Error en enregistrant las preferéncias de mesas a jorn
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Apondre la barre de recèrca a la barra d'aisinas
 search-engine-default-header = Motor de cerca per defaut
-search-engine-default-desc = Causissètz lo motor de recèrca per defaut per d'utilizar dins las barras d'adreça e de recèrca.
 search-engine-default-desc-2 = Aqueste es lo motor de recèrca per defaut de la barra d’adreça e de a barra de recèrca. Podètz lo cambiar quand volgatz.
 search-engine-default-private-desc-2 = Causissètz un motor de recèrca diferent solament per las fenèstras privadas
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Suprimir
     .accesskey = S
+search-add-engine =
+    .label = Apondre
+    .accesskey = p
 search-find-more-link = Trobar mai de motors de recèrcas
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = Avètz causit un mot clau que ja es utilizat p
 
 ## Containers Section
 
-containers-back-link = « Tornar
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Suprimir
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Emportatz vòstre Web pertot
 sync-signedout-description = Sincronizatz vòstres marcapaginas, istoric, onglets, senhals, moduls, e preferéncias per totes vòstres periferics.
-sync-signedout-account-title = Se connectar amb un { -fxaccount-brand-name }
-sync-signedout-account-create = Avètz pas cap de compte ? Marcatz-vos
-    .accesskey = C
-sync-signedout-account-signin =
-    .label = Connexion…
-    .accesskey = I
 sync-signedout-account-signin2 =
     .label = Se connectar a { -sync-brand-short-name }…
     .accesskey = c
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Telecargatz Firefox per <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> o <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> per sincronizar vòstre periferic mobil.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Cambiar la fòto de perfil de l'utilizaire
-sync-disconnect =
-    .label = Se desconectar…
-    .accesskey = D
 sync-sign-out =
     .label = Se desconnectar
     .accesskey = d
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Connexion
     .accesskey = x
-sync-signedin-settings-header = Paramètres de sincronizacion
-sync-signedin-settings-desc = Causir çò que cal sincronizar per vòstres periferics qu'utilizan { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = Onglets dobèrts
     .tooltiptext = Una lista de çò qu’es dobèrts suls periferics sincronizats
     .accesskey = O
-sync-engine-logins =
-    .label = Identificants
-    .tooltiptext = Los noms d’utilizaires e los senhales qu’avètz salvats
-    .accesskey = I
 sync-engine-logins-passwords =
     .label = Identificants e senhals
     .tooltiptext = Identificants e senhals que gardatz
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Enregistrar
     .accesskey = g
 sync-connect-another-device = Connectar un periferic de mai
-sync-manage-devices = Gerir los periferics
-sync-fxa-begin-pairing = Associar un periferic
-sync-tos-link = Condicions d'utilizacion
-sync-fxa-privacy-notice = Politica de confidencialitat
 
 ## Privacy Section
 
 privacy-header = Confidencialitat del navegador
-
-## Privacy Section - Forms
-
-logins-header = Identificants e senhals
 
 ## Privacy Section - Logins and Passwords
 
@@ -906,8 +868,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Tipe de contengut blocat
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Traçadors tèrces
 sitedata-option-block-cross-site-trackers =
     .label = Traçadors intersites
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -953,27 +913,9 @@ addressbar-suggestions-settings = Cambiar las preferéncias per las suggestions 
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Blocatge de contengut
-content-blocking-section-description = Protegissètz vòstra vida privada pendent vòstra navegacion. Blocatz los contenguts invisibles que vos pistan de site en site e dessenhan vòstre perfil. Lo blocatge d’aqueste contengut pòt far venir mai rapid lo cargament de las paginas.
 content-blocking-enhanced-tracking-protection = Proteccion contra lo seguiment renfortida
 content-blocking-section-top-level-description = Los traçadors vos pistan en linha per reculhir d’informacions sus vòstras abituds de navegacion e vòstres interèsses. { -brand-short-name } bloca fòrça d’aqueles elements de seguiment e scripts malvolents.
 content-blocking-learn-more = Ne saber mai
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Estandard
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Estricte
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Personalizat
-    .accesskey = P
-content-blocking-standard-desc = Equilibri entre proteccion e performança. Permet certans traçadors per que los sites web foncionen corrèctament.
-content-blocking-strict-description = Proteccion renfortida, pòt copar unes sites.
-content-blocking-custom-desc = Causissètz çò que volètz blocar.
-content-blocking-private-trackers = Los traçadors coneguts dins las fenèstras de navegacion privada solament
-content-blocking-third-party-cookies = Cookies de seguiment tèrces
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1000,23 +942,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Los traçadors inter
 content-blocking-social-media-trackers = Traçadors de malhums socials
 content-blocking-all-cookies = Totes los cookies
 content-blocking-unvisited-cookies = Cookies dels sites pas visitats
-content-blocking-all-windows-trackers = Traçadors coneguts dins totas las fenèstras
 content-blocking-all-windows-tracking-content = Contengut utilizat per pistar totas las fenèstras
 content-blocking-all-third-party-cookies = Totes los cookies tèrces
 content-blocking-cryptominers = Minaires de criptomonedas
 content-blocking-fingerprinters = Generadors d’emprentas numericas
 content-blocking-warning-title = Atencion !
-content-blocking-warning-description = Lo blocatge del contengut pòt copar qualques sites. Es facil de desactivar lo blocatge pels sites que vos fisatz.
-content-blocking-learn-how = Descobrissètz cossí far
 content-blocking-and-isolating-etp-warning-description = Lo blocatge de traçadors e l’isolacion dels cookies pòdon aver una incidéncia sus las foncionalitats de certans sites. Tornatz cargar una pagina amb los traçadors per cargar tot lo contengut.
 content-blocking-warning-learn-how = M’ensenhar cossí far
 content-blocking-reload-description = Car tornar cargar los onglets per aplicar aquestas modificacions.
 content-blocking-reload-tabs-button =
     .label = Tornar cargar totes los onglets
     .accesskey = r
-content-blocking-trackers-label =
-    .label = Traçadors
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = Contengut utilizat pel seguiment
     .accesskey = t
@@ -1075,12 +1011,6 @@ permissions-notification-link = Ne saber mai
 permissions-notification-pause =
     .label = Pausar las notificacions fins que { -brand-short-name } reavie
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Empachar los site de lançar automaticament de sons
-    .accesskey = s
-permissions-block-autoplay-media-exceptions =
-    .label = Excepcions…
-    .accesskey = E
 permissions-autoplay = Lectura automatica
 permissions-autoplay-settings =
     .label = Paramètres…

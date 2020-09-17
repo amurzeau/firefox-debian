@@ -89,7 +89,9 @@ newtab-menu-show-privacy-info = رُعاتنا الرسميّون وخصوصيّ
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = تمّ
+newtab-privacy-modal-button-manage = أدِر إعدادات المحتوى المرعيّ
 newtab-privacy-modal-header = خصوصيتك فوق كل شيء.
+newtab-privacy-modal-paragraph-2 = نعرض عليكم محتوى مفحوصًا بحذر من رُعاة مُختارين بعناية، بالإضافة للقصص الآسرة التي نقدّمها. اطمئن <strong>فبياناتك وأنت تتصفّح لا تخرج مطلقًا خارج نسختك من { -brand-product-name }</strong> — إذ لا نحن نراها، ولا رُعاتنا يرونَها.
 newtab-privacy-modal-link = تعرّف على طريقة عمل الخصوصية في الألسنة الجديدة
 
 ##
@@ -127,6 +129,10 @@ newtab-label-removed-bookmark = أُزيلت العلامة
 newtab-label-recommended = مُتداول
 newtab-label-saved = حُفِظت في { -pocket-brand-name }
 newtab-label-download = نُزّل
+# This string is used in the story cards to indicate sponsored content
+# Variables:
+#  $sponsorOrSource (String): This is the name of a company or their domain
+newtab-label-sponsored = برعاية · { $sponsorOrSource }
 # This string is used at the bottom of story cards to indicate sponsored content
 # Variables:
 #  $sponsor (String): This is the name of a sponsor

@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = 僅在 { -brand-short-name } 設定為封鎖已知追蹤器時
 do-not-track-option-always =
     .label = 總是
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] 選項
-           *[other] 偏好設定
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] 選項
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = 擴充套件「<img data-l10n-name="ico
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = 擴充套件「<img data-l10n-name="icon"/> { $name }」正在控制您的新分頁內容。
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = 擴充套件<img data-l10n-name="icon"/> { $name } 正在控制此設定。
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = 擴充套件<img data-l10n-name="icon"/> { $name } 正在控制此設定。
@@ -359,13 +356,6 @@ update-application-warning-cross-user-setting = 此設定將套用到本電腦�
 update-application-use-service =
     .label = 在背景服務當中安裝更新
     .accesskey = b
-update-enable-search-update =
-    .label = 自動更新搜尋引擎
-    .accesskey = e
-update-pref-write-failure-title = 寫入失敗
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = 無法儲存偏好設定。無法寫入檔案: { $path }
 update-setting-write-failure-title = 儲存更新偏好設定時發生錯誤
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -529,7 +519,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = 在工具列加入搜尋列
 search-engine-default-header = 預設搜尋引擎
-search-engine-default-desc = 請選擇在網址列或搜尋列進行搜尋時，預設要使用的搜尋引擎。
 search-engine-default-desc-2 = 這是您在網址列與搜尋列進行搜尋時，預設會使用的搜尋引擎。可以隨時切換。
 search-engine-default-private-desc-2 = 針對隱私瀏覽視窗選擇不同的預設搜尋引擎
 search-separate-default-engine =
@@ -566,6 +555,9 @@ search-restore-default =
 search-remove-engine =
     .label = 移除
     .accesskey = r
+search-add-engine =
+    .label = 新增
+    .accesskey = A
 search-find-more-link = 尋找更多搜尋引擎
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -577,7 +569,6 @@ search-keyword-warning-bookmark = 您選用的關鍵字目前正被書籤項目�
 
 ## Containers Section
 
-containers-back-link = « 返回
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -596,20 +587,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = 移除
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = 把 Web 隨身帶著走
 sync-signedout-description = 在您所有裝置間同步書籤、歷史紀錄、分頁、密碼、附加元件與偏好設定。
-sync-signedout-account-title = 連線到 { -fxaccount-brand-name }
-sync-signedout-account-create = 沒有帳號嗎？開始使用
-    .accesskey = C
-sync-signedout-account-signin =
-    .label = 登入…
-    .accesskey = I
 sync-signedout-account-signin2 =
     .label = 登入 { -sync-brand-short-name }…
     .accesskey = i
@@ -623,16 +605,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = 下載 Firefox for<img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a>或<img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>以與您的行動裝置同步。
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = 更改個人資料照片
-sync-disconnect =
-    .label = 斷線…
-    .accesskey = D
 sync-sign-out =
     .label = 登出…
     .accesskey = g
@@ -649,8 +625,6 @@ sync-remove-account =
 sync-sign-in =
     .label = 登入
     .accesskey = g
-sync-signedin-settings-header = 同步設定
-sync-signedin-settings-desc = 選擇要同步哪些資料到您其他使用 { -brand-short-name } 的裝置
 
 ## Sync section - enabling or disabling sync.
 
@@ -703,10 +677,6 @@ sync-engine-tabs =
     .label = 開啟分頁
     .tooltiptext = 所有同步設備中，開啟的網頁清單
     .accesskey = T
-sync-engine-logins =
-    .label = 登入資訊
-    .tooltiptext = 您儲存的使用者名稱與密碼
-    .accesskey = L
 sync-engine-logins-passwords =
     .label = 登入資訊與密碼
     .tooltiptext = 您儲存的使用者名稱與密碼
@@ -745,18 +715,10 @@ sync-device-name-save =
     .label = 儲存
     .accesskey = v
 sync-connect-another-device = 連結其他裝置
-sync-manage-devices = 管理裝置
-sync-fxa-begin-pairing = 與裝置配對
-sync-tos-link = 服務條款
-sync-fxa-privacy-notice = 隱私權公告
 
 ## Privacy Section
 
 privacy-header = 瀏覽器隱私權
-
-## Privacy Section - Forms
-
-logins-header = 登入資訊與密碼
 
 ## Privacy Section - Logins and Passwords
 
@@ -890,8 +852,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = 要封鎖的類型
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = 第三方追蹤器
 sitedata-option-block-cross-site-trackers =
     .label = 跨網站追蹤器
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -937,27 +897,9 @@ addressbar-suggestions-settings = 修改搜尋建議偏好設定
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = 內容封鎖
-content-blocking-section-description = 在上網時保護您的隱私。封鎖會在不同網站間追蹤您上網，並對使用者進行分類的隱藏內容。封鎖這類內容也可能讓網頁更快載入。
 content-blocking-enhanced-tracking-protection = 加強型追蹤保護
 content-blocking-section-top-level-description = 追蹤器會在網路上跟蹤您，收集您的興趣與喜好。{ -brand-short-name } 會封鎖許多追蹤器與其他有害指令碼。
 content-blocking-learn-more = 了解更多
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = 標準
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = 嚴格
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = 自訂
-    .accesskey = C
-content-blocking-standard-desc = 兼顧保護與效能。放行某些追蹤器以確保網站運作正常。
-content-blocking-strict-description = 保護更強，可能造成某些網站無法正常運作。
-content-blocking-custom-desc = 選擇要封鎖哪些內容。
-content-blocking-private-trackers = 僅在隱私視窗中封鎖已知的追蹤器
-content-blocking-third-party-cookies = 第三方追蹤 Cookie
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -984,23 +926,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = 跨網站追蹤 Cook
 content-blocking-social-media-trackers = 社交媒體追蹤器
 content-blocking-all-cookies = 所有 Cookie
 content-blocking-unvisited-cookies = 來自未造訪過網站的 Cookie
-content-blocking-all-windows-trackers = 在所有視窗封鎖已知的追蹤器
 content-blocking-all-windows-tracking-content = 所有視窗中的追蹤內容
 content-blocking-all-third-party-cookies = 所有第三方 Cookie
 content-blocking-cryptominers = 加密貨幣採礦程式
 content-blocking-fingerprinters = 數位指紋追蹤程式
 content-blocking-warning-title = 注意！
-content-blocking-warning-description = 封鎖內容後可能造成某些網站無法正常運作。很簡單就能為您信任的網站關閉封鎖功能。
-content-blocking-learn-how = 了解要怎麼做
 content-blocking-and-isolating-etp-warning-description = 封鎖追蹤器並隔離 Cookie 可能會造成某些網站運作不正常。重新載入含有追蹤器的頁面即可載入所有內容。
 content-blocking-warning-learn-how = 了解要怎麼做
 content-blocking-reload-description = 需要重新載入分頁才能套用變更。
 content-blocking-reload-tabs-button =
     .label = 重新載入所有分頁
     .accesskey = R
-content-blocking-trackers-label =
-    .label = 追蹤器
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = 追蹤用內容
     .accesskey = T
@@ -1059,12 +995,6 @@ permissions-notification-link = 了解更多
 permissions-notification-pause =
     .label = 暫停通知到 { -brand-short-name } 重新啟動後
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = 防止網站自動播放聲音
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = 例外網站…
-    .accesskey = E
 permissions-autoplay = 自動播放
 permissions-autoplay-settings =
     .label = 設定…

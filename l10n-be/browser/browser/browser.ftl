@@ -318,8 +318,42 @@ enable-devtools-popup-description = Каб выкарыстаць клавішу
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Шукаць ці ўвесці адрас
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Шукаць ці ўвесці адрас
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Пошук у Інтэрнэце
+    .aria-label = Пошук з дапамогай { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Увядзіце пошукавыя тэрміны
+    .aria-label = Шукаць на { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Увядзіце пошукавыя тэрміны
+    .aria-label = Шукаць закладкі
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Увядзіце пошукавыя тэрміны
+    .aria-label = Шукаць у гісторыі
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Увядзіце пошукавыя тэрміны
+    .aria-label = Шукаць карткі
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Шукайце ў { $name } або ўвядзіце адрас
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Браўзер знаходзіцца пад аддаленым кіраваннем
 urlbar-permissions-granted =

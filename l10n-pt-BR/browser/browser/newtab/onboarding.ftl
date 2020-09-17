@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Saiba mais
-onboarding-button-label-try-now = Experimente agora
 onboarding-button-label-get-started = Começar
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Começar
 onboarding-welcome-header = Boas-vindas ao { -brand-short-name }
 onboarding-welcome-body = Você instalou o navegador.<br/>Conheça outros produtos e serviços { -brand-product-name }.
 onboarding-welcome-learn-more = Saiba mais sobre os benefícios.
-onboarding-join-form-header = Junte-se ao { -brand-product-name }
 onboarding-welcome-modal-get-body = Você instalou o navegador.<br/>Agora aproveite ao máximo o { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Potencialize sua proteção de privacidade.
 onboarding-welcome-modal-privacy-body = Você instalou o navegador. Vamos adicionar mais proteção de privacidade.
@@ -102,6 +100,30 @@ onboarding-multistage-theme-tooltip-dark =
 onboarding-multistage-theme-tooltip-alpenglow =
     .title = Usar uma aparência colorida em botões, menus e janelas.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title = Herdar a aparência do seu sistema operacional em botões, menus e janelas.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description = Herdar a aparência do seu sistema operacional em botões, menus e janelas.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title = Usar uma aparência clara em botões, menus e janelas.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description = Usar uma aparência clara em botões, menus e janelas.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title = Usar uma aparência escura em botões, menus e janelas.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description = Usar uma aparência escura em botões, menus e janelas.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title = Usar uma aparência colorida em botões, menus e janelas.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description = Usar uma aparência colorida em botões, menus e janelas.
 
 ## Welcome full page string
 
@@ -127,11 +149,7 @@ onboarding-sync-form-sub-header = para continuar com o { -sync-brand-name }.
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Produtos úteis
 onboarding-benefit-products-text = Faça as coisas com uma família de ferramentas que respeita sua privacidade em todos os seus dispositivos.
-onboarding-benefit-knowledge-title = Conhecimento prático
-onboarding-benefit-knowledge-text = Aprenda tudo o que precisa saber para ficar mais esperto e seguro online.
-onboarding-benefit-privacy-title = Privacidade verdadeira
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -152,17 +170,6 @@ onboarding-benefit-lockwise-text = Gerencie suas senhas de modo protegido e port
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Navegação privativa
-onboarding-private-browsing-text = Navegue sozinho. A navegação privativa com bloqueio de conteúdo impede que rastreadores online sigam você pela web.
-onboarding-screenshots-title = Screenshots
-onboarding-screenshots-text = Crie, salve e compartilhe capturas de tela - sem sair do { -brand-short-name }. Capture uma região ou uma página inteira enquanto navega. Então salve na nuvem para acessar e compartilhar com facilidade.
-onboarding-addons-title = Extensões
-onboarding-addons-text = Adicione ainda mais recursos que fazem o { -brand-short-name } trabalhar mais por você. Compare preços, veja a previsão do tempo ou expresse sua personalidade com um tema personalizado.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Navegue mais rápido, mais esperto, ou mais seguro com extensões como o Ghostery, que permite bloquear propagandas chatas.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Sincronizar
-onboarding-fxa-text = Cadastre uma { -fxaccount-brand-name } e sincronize seus favoritos, senhas e abas abertas onde quer que você use o { -brand-short-name }.
 onboarding-tracking-protection-title2 = Proteção contra rastreamento
 onboarding-tracking-protection-text2 = O { -brand-short-name } ajuda a impedir que sites rastreiem você online, dificultando aos anúncios seguir você pela web.
 onboarding-tracking-protection-button2 = Como funciona
@@ -171,7 +178,6 @@ onboarding-data-sync-title = Leve suas configurações com você
 onboarding-data-sync-text2 = Sincronize favoritos, senhas e outras coisas em todo lugar que usar o { -brand-product-name }.
 onboarding-data-sync-button2 = Entre no { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Fique atento a vazamentos de dados
-onboarding-firefox-monitor-text = O { -monitor-brand-name } verifica se seu e-mail apareceu em um vazamento de dados e manda um alerta para você caso apareça em um novo vazamento.
 onboarding-firefox-monitor-text2 = O { -monitor-brand-name } verifica se seu e-mail apareceu em um vazamento de dados conhecido e envia um alerta caso apareça em um novo vazamento.
 onboarding-firefox-monitor-button = Cadastre-se para receber alertas
 onboarding-browse-privately-title = Navegue com privacidade
@@ -188,17 +194,11 @@ onboarding-mobile-phone-button = Baixe o navegador para celular
 onboarding-send-tabs-title = Envie abas para si mesmo instantaneamente
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = O envio instantâneo de abas compartilha páginas entre seus dispositivos sem precisar copiar, colar ou sair do navegador.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Compartilhe páginas facilmente entre seus dispositivos sem precisar copiar links ou sair do navegador.
 onboarding-send-tabs-button = Comece a usar o envio de abas
 onboarding-pocket-anywhere-title = Leia e ouça em qualquer lugar
 onboarding-pocket-anywhere-text2 = Salve localmente seus conteúdos preferidos com o aplicativo { -pocket-brand-name } e leia, ouça ou assista quando for conveniente para você.
 onboarding-pocket-anywhere-button = Experimente o { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Leve suas senhas para qualquer lugar
-onboarding-lockwise-passwords-text2 = Mantenha seguras as senhas que você salva e entre facilmente em suas contas com o { -lockwise-brand-name }.
-onboarding-lockwise-passwords-button2 = Instale o aplicativo
 onboarding-lockwise-strong-passwords-title = Crie e armazene senhas fortes
 onboarding-lockwise-strong-passwords-text = O { -lockwise-brand-name } cria senhas fortes no local e salva todas elas em um só lugar.
 onboarding-lockwise-strong-passwords-button = Gerencie suas contas de acesso

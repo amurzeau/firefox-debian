@@ -318,8 +318,38 @@ enable-devtools-popup-description = Untuk menggunakan pintasan F12, pertama buka
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Cari atau masukkan alamat
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Cari atau masukkan alamat
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Cari di Web
+    .aria-label = Cari lewat { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Masukkan istilah pencarian
+    .aria-label = Cari di { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Masukan istilah pencarian
+    .aria-label = Cari markah
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Masukan istilah pencarian
+    .aria-label = Cari riwayat
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Masukkan istilah pencarian
+    .aria-label = Cari tab
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

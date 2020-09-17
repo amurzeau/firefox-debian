@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = اكتب بحروف أقل، و جِد نتائج أكثر: ابحث مستخدمًا { $engineName } مباشرة من شريط العنوان.
 urlbar-search-tips-redirect-2 = ابدأ البحث من شريط العنوان لترى الاقتراحات من { $engineName } و من تأريخ التصفح.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = العلامات
+urlbar-search-mode-tabs = الألسنة
+urlbar-search-mode-history = التأريخ
+
 ##
 
 urlbar-geolocation-blocked =
@@ -185,6 +191,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = اضبطه ليكون محرّك البحث المبدئي في النوافذ الخاصة
     .accesskey = ن
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = ‏{ $engineName } ‏({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = العلامات ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = الألسنة ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = التأريخ ({ $restrict })
 
 ## Bookmark Panel
 
@@ -292,8 +318,42 @@ enable-devtools-popup-description = افتح أولا أدوات المطوري�
 
 urlbar-default-placeholder =
     .defaultPlaceholder = ابحث أو أدخل عنوانا
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = ابحث أو أدخل عنوانا
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = ابحث في الوِب
+    .aria-label = ابحث مستعملًا { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = أدخِل نص البحث
+    .aria-label = ابحث عن { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = أدخِل نص البحث
+    .aria-label = ابحث في العلامات
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = أدخِل نص البحث
+    .aria-label = ابحث في التأريخ
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = أدخِل نص البحث
+    .aria-label = ابحث في الألسنة
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = ‫ابحث مستعملًا { $name } أو أدخِل عنوانا
 urlbar-remote-control-notification-anchor =
     .tooltiptext = يخضع المتصفح للتحكم عن بعد
 urlbar-permissions-granted =
@@ -304,7 +364,7 @@ urlbar-switch-to-tab =
 urlbar-extension =
     .value = الامتداد:
 urlbar-go-button =
-    .tooltiptext = اذهب للعنوان في شريط الموقع
+    .tooltiptext = انتقل للعنوان في شريط الموقع
 urlbar-page-action-button =
     .tooltiptext = إجراءات الصفحة
 urlbar-pocket-button =

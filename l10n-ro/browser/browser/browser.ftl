@@ -318,8 +318,42 @@ enable-devtools-popup-description = Pentru a folosi comanda rapidă F12, deschid
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Caută sau introdu adresa
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Caută sau introdu adresa
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Caută pe web
+    .aria-label = Caută cu { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Introdu termenii de căutare
+    .aria-label = Caută { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Introdu termenii de căutare
+    .aria-label = Caută în marcaje
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Introdu termenii de căutare
+    .aria-label = Caută în istoric
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Introdu termenii de căutare
+    .aria-label = Caută în file
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Caută cu { $name } sau introdu adresa
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Browserul este controlat de la distanță
 urlbar-permissions-granted =

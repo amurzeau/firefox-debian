@@ -4,23 +4,9 @@
 
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-css-masonry =
-    .label = CSS Masonry Layout
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
 experimental-features-css-masonry2 =
     .label = CSS: Masonry Layout
 experimental-features-css-masonry-description = Aktiviert die Unterstützung für die experimentelle CSS-Mauerwerk-Darstellung. Weitere Informationen zu den Grundlagen dieser Funktion sind in <a data-l10n-name="explainer">dieser Erläuterung</a> zu finden. Rückmeldung kann per Kommentar  <a data-l10n-name="w3c-issue">in diesem Github Issue</a> oder <a data-l10n-name="bug">in diesem Bug</a> gegeben werden.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-gpu =
-    .label = WebGPU
-experimental-features-web-gpu-description = Experimentelle API für grafische Darstellungen und Berechnungen im Web
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-avif =
-    .label = AVIF
-experimental-features-avif-description = Experimentelle Unterstützung für das Grafik-Dateiformat AVIF:AV1
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
@@ -90,7 +76,7 @@ experimental-features-abouthome-startup-cache =
 experimental-features-abouthome-startup-cache-description = Ein Cache für das anfängliche about:home-Dokument, das beim Start standardmäßig geladen wird. Der Zweck des Caches besteht darin, die Startleistung zu verbessern.
 experimental-features-print-preview-tab-modal =
     .label = Druckvorschau-Redesign
-experimental-features-print-preview-tab-modal-description = Führt die neu gestaltete Druckvorschau ein und stellt diese auf macOS zur Verfügung. Dies führt potenziell zu Problemen und beinhaltet nicht alle druckbezogenen Einstellungen. Um auf alle druckbezogenen Einstellungen zuzugreifen, wählen Sie "Drucken über den Systemdialog…" aus der Druckansicht.
+experimental-features-print-preview-tab-modal-description = Führt die neu gestaltete Druckvorschau ein und stellt diese auf macOS zur Verfügung. Dies führt potenziell zu Problemen und beinhaltet nicht alle druckbezogenen Einstellungen. Um auf alle druckbezogenen Einstellungen zuzugreifen, wählen Sie "Mit Systemdialog drucken…" aus der Druckansicht.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-cookie-samesite-schemeful =
@@ -98,9 +84,9 @@ experimental-features-cookie-samesite-schemeful =
 experimental-features-cookie-samesite-schemeful-description = Cookies aus derselben Domain, aber mit verschiedenen Schemata (z. B. http://example.com und https://example.com) werden als seitenübergreifende Cookies statt innerhalb einer Website behandelt. Verbessert die Sicherheit, führt aber potenziell zu Problemen.
 # "Service Worker" is an API name and is usually not translated.
 experimental-features-devtools-serviceworker-debugger-support =
-    .label = Entwicklertools: Service-Worker-Debugging
+    .label = Entwicklerwerkzeuge: Service-Worker-Debugging
 # "Service Worker" is an API name and is usually not translated.
-experimental-features-devtools-serviceworker-debugger-support-description = Aktiviert experimentelle Unterstützung für Service-Worker in der Debugger-Ansicht. Diese Funktion kann die Entwicklerwerkzeuge verlangsamen und den Speicherverbrauch erhöhen.
+experimental-features-devtools-serviceworker-debugger-support-description = Aktiviert die experimentelle Unterstützung für Service-Worker in der Debugger-Ansicht. Diese Funktion kann die Entwicklerwerkzeuge verlangsamen und den Speicherverbrauch erhöhen.
 # Desktop zooming experiment
 experimental-features-graphics-desktop-zooming =
     .label = Grafik: Sanftes Zoomen durch Antippen

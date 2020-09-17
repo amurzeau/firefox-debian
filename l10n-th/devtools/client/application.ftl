@@ -24,9 +24,6 @@ serviceworker-worker-unregister = เลิกลงทะเบียน
 # displayed when the link is disabled.
 serviceworker-worker-debug = ดีบั๊ก
     .title = สามารถดีบั๊กได้เฉพาะเวิร์กเกอร์บริการที่ทำงานอยู่เท่านั้น
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = เริ่ม
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
 serviceworker-worker-debug-forbidden = ดีบั๊ก
@@ -35,6 +32,9 @@ serviceworker-worker-debug-forbidden = ดีบั๊ก
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = เริ่ม
     .title = สามารถเริ่มตัวทำงานบริการได้หาก multi e10s ถูกปิดใช้งานอยู่เท่านั้น
+# Alt text for the image icon displayed inside a debug link for a service worker.
+serviceworker-worker-inspect-icon =
+    .alt = ตรวจสอบ
 # Text for the start link displayed for a registered but not running Service Worker.
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start3 = เริ่ม
@@ -54,9 +54,6 @@ serviceworker-worker-status = สถานะ
 serviceworker-worker-status-running = กำลังทำงาน
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = หยุดอยู่
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = กำลังลงทะเบียน
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = คุณต้องลงทะเบียนเวิร์กเกอร์บริการเพื่อตรวจสอบที่นี่ <a>เรียนรู้เพิ่มเติม</a>

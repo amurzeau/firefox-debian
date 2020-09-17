@@ -10,8 +10,6 @@ search-header =
     .searchbuttonlabel = Etsi
 search-header-shortcut =
     .key = f
-loading-label =
-    .value = Ladataan…
 list-empty-installed =
     .value = Tämäntyyppisiä lisäosia ei ole asennettuna
 list-empty-available-updates =
@@ -22,9 +20,6 @@ list-empty-find-updates =
     .label = Hae päivityksiä
 list-empty-button =
     .label = Lue lisää lisäosista
-install-addon-from-file =
-    .label = Asenna lisäosa tiedostosta…
-    .accesskey = A
 help-button = Lisäosien tuki
 sidebar-help-button-title =
     .title = Lisäosien tuki
@@ -33,8 +28,6 @@ preferences =
         [windows] { -brand-short-name }-asetukset
        *[other] { -brand-short-name }-asetukset
     }
-tools-menu =
-    .tooltiptext = Työkaluja kaikille lisäosille
 sidebar-preferences-button-title =
     .title =
         { PLATFORM() ->
@@ -45,9 +38,6 @@ show-unsigned-extensions-button =
     .label = Joitain laajennuksia ei voitu varmentaa
 show-all-extensions-button =
     .label = Näytä kaikki laajennukset
-debug-addons =
-    .label = Jäljitä lisäosien virheitä
-    .accesskey = J
 cmd-show-details =
     .label = Näytä lisätietoja
     .accesskey = N
@@ -78,12 +68,6 @@ cmd-contribute =
     .label = Auta
     .accesskey = A
     .tooltiptext = Auta lisäosan kehitystyössä
-discover-title = Mitä lisäosat ovat?
-discover-description =
-    Lisäosat ovat ohjelmia, joiden avulla voit lisätä { -brand-short-name }iin
-    kaipaamiasi toimintoja tai muuttaa ohjelman ulkonäköä. Kokeile vaikka aikaa säästävää sivupaneelia, säätilan kertovaa lisäosaa tai tuoretta
-    ulkonäköä muuttavaa teemaa ja tee { -brand-short-name }ista omasi.
-discover-footer = Kun verkkoyhteys on muodostettu, voit kokeilla tässä paneelissa esiteltyjä suosittuja ja hyviä lisäosia.
 detail-version =
     .label = Versio
 detail-last-updated =
@@ -105,15 +89,12 @@ detail-update-manual =
     .tooltiptext = Älä asenna päivityksiä automaattisesti
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Suoritus yksityisissä ikkunoissa
-detail-private-browsing-description2 = Kun sallittu, tällä laajennuksella on pääsy verkossa tekemiisi asioihin yksityisissä ikkunoissa. <label data-l10n-name="detail-private-browsing-learn-more">Lue lisää</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = Ei sallittu yksityisissä ikkunoissa
-detail-private-disallowed-description = Tätä laajennusta ei suoriteta yksityisissä ikkunoissa. <label data-l10n-name="detail-private-browsing-learn-more">Lue lisää</label>
 detail-private-disallowed-description2 = Tätä laajennusta ei suoriteta yksityisen selauksen aikana. <a data-l10n-name="learn-more">Lue lisää</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Vaatii pääsyn yksityisiin ikkunoihin
-detail-private-required-description = Tällä laajennuksella on pääsy verkkotoimintaasi yksityisissä ikkunoissa. <label data-l10n-name="detail-private-browsing-learn-more">Lue lisää</label>
 detail-private-required-description2 = Tällä laajennuksella on pääsy verkossa tekemiisi toimiin yksityisen selauksen aikana. <a data-l10n-name="learn-more">Lue lisää</a>
 detail-private-browsing-on =
     .label = Salli
@@ -166,15 +147,6 @@ legacy-extensions-description = Nämä laajennukset eivät täytä { -brand-shor
 private-browsing-description2 =
     { -brand-short-name }-laajennusten toiminta yksityisissä ikkunoissa muuttuu. Uutena { -brand-short-name }iin lisättyjä laajennuksia ei enää suoriteta oletuksena yksityisissä ikkunoissa. Jos et salli suorittamista asetuksista, laajennus ei toimi yksityisen selaamisen aikana eikä siten sinä aikana pääse käsiksi tekemisiisi verkossa. Olemme tehneet tämän muutoksen, jotta yksityinen selaus pysyy yksityisenä.
     <label data-l10n-name="private-browsing-learn-more">Lue lisää kuinka hallita laajennusten asetuksia</label>
-extensions-view-discopane =
-    .name = Suositukset
-    .tooltiptext = { extensions-view-discopane.name }
-extensions-view-recent-updates =
-    .name = Tuoreet päivitykset
-    .tooltiptext = { extensions-view-recent-updates.name }
-extensions-view-available-updates =
-    .name = Päivitykset
-    .tooltiptext = Saatavilla olevat päivitykset
 addon-category-discover = Suositukset
 addon-category-discover-title =
     .title = Suositukset
@@ -202,24 +174,6 @@ addon-category-recent-updates-title =
 
 ## These are global warnings
 
-extensions-warning-safe-mode-label =
-    .value = Kaikki lisäosat on poistettu käytöstä vikasietotilassa.
-extensions-warning-safe-mode-container =
-    .tooltiptext = { extensions-warning-safe-mode-label.value }
-extensions-warning-check-compatibility-label =
-    .value = Lisäosien yhteensopivuuden tarkistus ei ole käytössä. Osa lisäosista voi olla epäyhteensopivia.
-extensions-warning-check-compatibility-container =
-    .tooltiptext = { extensions-warning-check-compatibility-label.value }
-extensions-warning-check-compatibility-enable =
-    .label = Ota käyttöön
-    .tooltiptext = Ota lisäosien yhteensopivuuden tarkistus käyttöön
-extensions-warning-update-security-label =
-    .value = Lisäosien päivitysten turvallisuustarkistus ei ole käytössä. Päivitykset voivat saastuttaa koneesi.
-extensions-warning-update-security-container =
-    .tooltiptext = { extensions-warning-update-security-label.value }
-extensions-warning-update-security-enable =
-    .label = Ota käyttöön
-    .tooltiptext = Ota lisäosien päivitysten turvallisuustarkistus käyttöön
 extensions-warning-safe-mode = Kaikki lisäosat on poistettu käytöstä vikasietotilassa.
 extensions-warning-check-compatibility = Lisäosien yhteensopivuuden tarkistus ei ole käytössä. Osa lisäosista voi olla epäyhteensopivia.
 extensions-warning-check-compatibility-button = Ota käyttöön
@@ -230,12 +184,6 @@ extensions-warning-update-security-button = Ota käyttöön
 
 ## Strings connected to add-on updates
 
-extensions-updates-check-for-updates =
-    .label = Hae päivityksiä
-    .accesskey = H
-extensions-updates-view-updates =
-    .label = Näytä tuoreet päivitykset
-    .accesskey = N
 addon-updates-check-for-updates = Hae päivityksiä
     .accesskey = H
 addon-updates-view-updates = Näytä tuoreet päivitykset
@@ -244,9 +192,6 @@ addon-updates-view-updates = Näytä tuoreet päivitykset
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
-extensions-updates-update-addons-automatically =
-    .label = Päivitä lisäosat automaattisesti
-    .accesskey = u
 addon-updates-update-addons-automatically = Päivitä lisäosat automaattisesti
     .accesskey = u
 
@@ -256,12 +201,6 @@ addon-updates-update-addons-automatically = Päivitä lisäosat automaattisesti
 ## (which itself is either "Automatically" or "Manually", controlled by the
 ## extensions-updates-update-addons-automatically.label menu item).
 
-extensions-updates-reset-updates-to-automatic =
-    .label = Aseta kaikki lisäosat päivittymään automaattisesti
-    .accesskey = P
-extensions-updates-reset-updates-to-manual =
-    .label = Aseta kaikki lisäosat päivittymään vain käsin
-    .accesskey = k
 addon-updates-reset-updates-to-automatic = Aseta kaikki lisäosat päivittymään automaattisesti
     .accesskey = P
 addon-updates-reset-updates-to-manual = Aseta kaikki lisäosat päivittymään vain käsin
@@ -269,21 +208,6 @@ addon-updates-reset-updates-to-manual = Aseta kaikki lisäosat päivittymään v
 
 ## Status messages displayed when updating add-ons
 
-extensions-updates-updating =
-    .value = Päivitetään lisäosia
-extensions-updates-installed =
-    .value = Lisäosat on päivitetty.
-extensions-updates-downloaded =
-    .value = Lisäosien päivitykset on ladattu.
-extensions-updates-restart =
-    .label = Käynnistä uudestaan viimeistelläksesi asennuksen
-extensions-updates-none-found =
-    .value = Päivityksiä ei löytynyt
-extensions-updates-manual-updates-found =
-    .label = Näytä saatavilla olevat päivitykset
-extensions-updates-update-selected =
-    .label = Asenna päivitykset
-    .tooltiptext = Asenna tämän listan saatavilla olevat päivitykset
 addon-updates-updating = Päivitetään lisäosia
 addon-updates-installed = Lisäosat on päivitetty.
 addon-updates-none-found = Päivityksiä ei löytynyt
@@ -300,9 +224,6 @@ addon-open-about-debugging = Jäljitä lisäosien virheitä
 
 ## Extension shortcut management
 
-manage-extensions-shortcuts =
-    .label = Hallitse laajennusten pikanäppäimiä
-    .accesskey = t
 # This is displayed in the page options menu
 addon-manage-extensions-shortcuts = Hallitse laajennusten pikanäppäimiä
     .accesskey = t
@@ -310,7 +231,6 @@ shortcuts-no-addons = Yhtäkään lisäosaa ei ole otettu käyttöön.
 shortcuts-no-commands = Seuraavilla laajennuksilla ei ole pikanäppäimiä:
 shortcuts-input =
     .placeholder = Kirjoita näppäinyhdistelmä
-shortcuts-browserAction = Aktivoi laajennus
 shortcuts-browserAction2 = Aktivoi työkalupalkin painike
 shortcuts-pageAction = Aktivoi sivutoiminto
 shortcuts-sidebarAction = Näytä/piilota sivupaneeli
@@ -335,8 +255,6 @@ shortcuts-card-expand-button =
        *[other] Näytä { $numberToShow } lisää
     }
 shortcuts-card-collapse-button = Näytä vähemmän
-go-back-button =
-    .tooltiptext = Takaisin
 header-back-button =
     .title = Takaisin
 
@@ -381,10 +299,9 @@ addon-options-button =
 report-addon-button = Raportoi
 remove-addon-button = Poista
 # The link will always be shown after the other text.
-remove-addon-disabled-button = <a data-l10n-name="link">Miksi</a> tätä ei voi poistaa?
+remove-addon-disabled-button = Tätä ei voi poistaa <a data-l10n-name="link">Miksi?</a>
 disable-addon-button = Poista käytöstä
 enable-addon-button = Käytä
-expand-addon-button = Lisää valintoja
 # This is used for the toggle on the extension card, it's a checkbox and this
 # is always its label.
 extension-enable-addon-button-label =
@@ -393,8 +310,6 @@ preferences-addon-button = Asetukset
 details-addon-button = Tiedot
 release-notes-addon-button = Julkaisutiedot
 permissions-addon-button = Oikeudet
-addons-enabled-heading = Käytössä
-addons-disabled-heading = Ei käytössä
 extension-enabled-heading = Käytössä
 extension-disabled-heading = Ei käytössä
 theme-enabled-heading = Käytössä
@@ -448,21 +363,12 @@ addon-detail-update-check-label = Tarkista päivitykset
 install-update-button = Päivitä
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
-addon-badge-private-browsing-allowed =
-    .title = Sallittu yksityisissä ikkunoissa
-# This is the tooltip text for the private browsing badge in about:addons. The
-# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = Sallittu yksityisissä ikkunnoissa
     .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Kun sallittu, laajennus voi seurata, mitä teet verkossa yksityisen selauksen tilassa. <a data-l10n-name="learn-more">Lue lisää</a>
 addon-detail-private-browsing-allow = Salli
 addon-detail-private-browsing-disallow = Älä salli
-# This is the tooltip text for the recommended badge for an extension in about:addons. The
-# badge is a small icon displayed next to an extension when it is recommended on AMO.
-addon-badge-recommended =
-    .title = Suositeltu
-    .alt = Suositeltu
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended2 =

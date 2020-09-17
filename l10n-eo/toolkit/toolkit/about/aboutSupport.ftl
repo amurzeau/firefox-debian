@@ -77,6 +77,9 @@ show-dir-label =
         [windows] Malfermi dosierujon
        *[other] Malfermi dosierujon
     }
+environment-variables-title = Ĉirkaŭaĵaj variantoj
+environment-variables-name = Nomo
+environment-variables-value = Valoro
 experimental-features-title = Eksperimentaj trajtoj
 experimental-features-name = Nomo
 experimental-features-value = Valoro
@@ -104,8 +107,6 @@ graphics-desktop-environment = Labortabla ĉirkaŭaĵo
 place-database-title = Datumbazo de lokoj
 place-database-integrity = Integreco
 place-database-verify-integrity = Kontroli integrecon
-js-title = JavaScript
-js-incremental-gc = Poioma GC
 a11y-title = Alirebleco
 a11y-activated = Aktiva
 a11y-force-disabled = Eviti alireblon
@@ -135,7 +136,6 @@ restart-button-label = Restartigi
 
 audio-backend = Sonsistemo
 max-audio-channels = Maksimuma nombro de kanaloj
-channel-layout = Preferata aranĝo de kanaloj
 sample-rate = Preferata specimena frekvenco
 roundtrip-latency = Tien-reena tempo (norma devio)
 media-title = Aŭdvidaĵo
@@ -279,7 +279,6 @@ support-blocklisted-bug = Blokita pro konataj problemoj: <a data-l10n-name="bug-
 unknown-failure = En bloklisto; kodo de malsukceso { $failureCode }
 d3d11layers-crash-guard = D3D11 Komponisto
 d3d11video-crash-guard = D3D11 Videa malkodilo
-d3d9video-crash-buard = D3D9 Videa malkodilo
 d3d9video-crash-guard = D3D9 Videa malkodilo
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Videa malkodilo

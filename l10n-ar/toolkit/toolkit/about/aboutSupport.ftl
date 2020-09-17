@@ -14,7 +14,10 @@ extensions-name = الاسم
 extensions-enabled = مفعّل
 extensions-version = النسخة
 extensions-id = المعرّف
+support-addons-title = الإضافات
 support-addons-name = الاسم
+support-addons-type = النوع
+support-addons-enabled = مفعّلة
 support-addons-version = النسخة
 support-addons-id = المعرّف
 security-software-title = برمجيات الحماية
@@ -34,6 +37,7 @@ app-basics-title = أساسيات التطبيق
 app-basics-name = الاسم
 app-basics-version = النسخة
 app-basics-build-id = معرف البناء
+app-basics-distribution-id = معرّف التوزيعة
 app-basics-update-channel = قناة التحديث
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -72,6 +76,12 @@ show-dir-label =
         [windows] افتح المجلد
        *[other] افتح المجلد
     }
+environment-variables-title = متغيرات البيئة
+environment-variables-name = الاسم
+environment-variables-value = القيمة
+experimental-features-title = المزايات التجريبية
+experimental-features-name = الاسم
+experimental-features-value = القيمة
 modified-key-prefs-title = التفضيلات المهمّة المُعدّلة
 modified-prefs-name = الاسم
 modified-prefs-value = قيمة
@@ -91,11 +101,11 @@ graphics-crash-guards-title = خصائص حامي التحطم المعطَّل�
 graphics-workarounds-title = الحلول الالتفافية
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = ميفاق النوافذ
+# Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
+graphics-desktop-environment = بيئة سطح المكتب
 place-database-title = قاعدة بيانات الأماكن
 place-database-integrity = التكامل
 place-database-verify-integrity = تحقّق من التكامل
-js-title = جافاسكربت
-js-incremental-gc = جامع القمامة التزايدي
 a11y-title = الإتاحة
 a11y-activated = مفعّلة
 a11y-force-disabled = امنع الإتاحة
@@ -115,12 +125,16 @@ sandbox-sys-call-number = نداء النظام
 sandbox-sys-call-args = المعطيات
 safe-mode-title = جرّب الوضع الآمن
 restart-in-safe-mode-label = أعِد التشغيل مع تعطيل الإضافات…
+clear-startup-cache-title = جرّب مسح خبيئة البدء
+clear-startup-cache-label = امسح خبيئة البدء…
+startup-cache-dialog-title = امسح خبيئة البدء
+startup-cache-dialog-body = أعِد تشغيل { -brand-short-name } لمسح خبيئة البدء. لن يُغيّر هذا إعداداتك أو يُزيل امتداداتك التي أضفتها إلى { -brand-short-name }.
+restart-button-label = أعِد التشغيل
 
 ## Media titles
 
 audio-backend = سند الصوت
 max-audio-channels = أقصى عدد للقنوات
-channel-layout = تخطيط القنوات المفضل
 sample-rate = معدل العينات المفضل
 media-title = الوسائط
 media-output-devices-title = أجهزة الخَرْج
@@ -156,6 +170,7 @@ intl-regional-prefs = التفضيلات الإقليمية
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
 
+remote-debugging-title = التنقيح عن بُعد (بروتوكول كروميوم)
 
 ##
 
@@ -265,11 +280,13 @@ blocklisted-bug = على قائمة الحجب بسبب مشاكل معروفة 
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = العلة { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = على قائمة الحجب بسبب المشاكل المعروفة: <a data-l10n-name="bug-link">علة { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = على قائمة الحجب؛ رمز العطل { $failureCode }
 d3d11layers-crash-guard = مركّب D3D11
 d3d11video-crash-guard = فاكك ترميز D3D11 للڤديو
-d3d9video-crash-buard = فاكك ترميز D3D9 للڤديو
 d3d9video-crash-guard = فاكك ترميز D3D9 للڤديو
 glcontext-crash-guard = أوپن‌جي‌إل
 reset-on-next-restart = صفّر عند التشغيل التالي
@@ -279,6 +296,7 @@ uses-tiling = يستخدم البلاطات
 content-uses-tiling = يستخدم البلاطات (المحتوى)
 off-main-thread-paint-enabled = الرسم خارج الخيط الرئيسي مفعل
 off-main-thread-paint-worker-count = عدد عمال الرسم خارج الخيط الرئيسي
+target-frame-rate = معدّل الإطارات الهدف
 min-lib-versions = أقل إصدارة مقبولة
 loaded-lib-versions = الإصدارة المستخدمة
 has-seccomp-bpf = ‏Seccomp-BPF (ترشيح استدعاءات النظام)

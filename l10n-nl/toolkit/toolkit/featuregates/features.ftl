@@ -4,23 +4,9 @@
 
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-css-masonry =
-    .label = CSS Masonry Layout
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
 experimental-features-css-masonry2 =
     .label = CSS: Masonry Layout
 experimental-features-css-masonry-description = Maakt ondersteuning voor de experimentele functie CSS Masonry Layout mogelijk. Lees de <a data-l10n-name="explainer">uitleg</a> voor een globale beschrijving van de functie. Plaats een opmerking in <a data-l10n-name="w3c-issue">dit GitHub-issue</a> of <a data-l10n-name="bug">deze bug</a> om feedback te leveren.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-gpu =
-    .label = WebGPU
-experimental-features-web-gpu-description = Experimentele API voor afbeeldingen en berekeningen op het web
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-avif =
-    .label = AVIF
-experimental-features-avif-description = Experimentele ondersteuning voor AVIF: AV1 Image File-opmaak
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
@@ -88,6 +74,9 @@ experimental-features-cookie-samesite-none-requires-secure2-description = Voor c
 experimental-features-abouthome-startup-cache =
     .label = Opstartbuffer about:home
 experimental-features-abouthome-startup-cache-description = Een opstartbuffer voor het initiële about:home-document wordt bij opstarten standaard geladen. Het doel van deze buffer is het verbeteren van de opstartprestaties.
+experimental-features-print-preview-tab-modal =
+    .label = Herontwerp van afdrukvoorbeeld
+experimental-features-print-preview-tab-modal-description = Introduceert het opnieuw ontworpen afdrukvoorbeeld en maakt afdrukvoorbeeld beschikbaar op macOS. Dit kan leiden tot falen en omvat niet alle afdrukgerelateerde instellingen. Selecteer om toegang te krijgen tot alle afdrukgerelateerde instellingen ‘Afdrukken via het systeemdialoogvenster…’ in het paneel Afdrukken.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-cookie-samesite-schemeful =
@@ -98,3 +87,7 @@ experimental-features-devtools-serviceworker-debugger-support =
     .label = Developer Tools: Service Worker debugging
 # "Service Worker" is an API name and is usually not translated.
 experimental-features-devtools-serviceworker-debugger-support-description = Schakelt in het Debugger-paneel experimentele ondersteuning voor service workers in. Deze functie kan hulpmiddelen voor webontwikkelaars vertragen en het geheugengebruik verhogen.
+# Desktop zooming experiment
+experimental-features-graphics-desktop-zooming =
+    .label = Grafisch: Smooth Pinch Zoom
+experimental-features-graphics-desktop-zooming-description = Schakel ondersteuning in voor soepel zoomen door knijpen op aanraakschermen en precisie-touchpads.

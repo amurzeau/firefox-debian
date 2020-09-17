@@ -126,15 +126,19 @@ about-logins-copy-password-os-auth-dialog-message-win = Norėdami nukopijuoti sa
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = nukopijuoti įrašytą slaptažodį
+
+## Master Password notification
+
+master-password-notification-message = Įveskite pagrindinį slaptažodį, norėdami peržiūrėti įrašytus prisijungimus ir slaptažodžius
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Norėdami eksportuoti savo prisijungimus, įveskite savo „Windows“ prisijungimo duomenis. Tai padeda apsaugoti jūsų paskyras.
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = eksportuoti įrašytus prisijungimus ir slaptažodžius
 
-## Master Password notification
+## Primary Password notification
 
-master-password-notification-message = Įveskite pagrindinį slaptažodį, norėdami peržiūrėti įrašytus prisijungimus ir slaptažodžius
+about-logins-primary-password-notification-message = Įveskite pagrindinį slaptažodį, norėdami peržiūrėti įrašytus prisijungimus ir slaptažodžius
 master-password-reload-button =
     .label = Prisijungti
     .accesskey = P

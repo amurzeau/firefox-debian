@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Докладніше
-onboarding-button-label-try-now = Спробувати зараз
 onboarding-button-label-get-started = Розпочнімо
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Розпочнімо
 onboarding-welcome-header = Вітаємо в { -brand-short-name }
 onboarding-welcome-body = Тепер у вас є браузер.<br/>Познайомтеся ближче з { -brand-product-name }.
 onboarding-welcome-learn-more = Дізнатися більше про переваги.
-onboarding-join-form-header = Приєднайтеся до спільноти { -brand-product-name }
 onboarding-welcome-modal-get-body = Ви отримали браузер.<br/>Тепер отримайте максимум можливостей з { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Посильте захист своєї приватності.
 onboarding-welcome-modal-privacy-body = Ви отримали браузер. Тепер додаймо більше захисту приватності.
@@ -110,6 +108,46 @@ onboarding-multistage-theme-tooltip-alpenglow =
         Використовувати різнобарвний вигляд
         кнопок, меню та вікон.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Наслідування зовнішнього вигляду вашої
+        операційної системи кнопками, меню та вікнами.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Наслідування зовнішнього вигляду вашої
+        операційної системи кнопками, меню та вікнами.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Використовувати світлий вигляд
+        кнопок, меню та вікон.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Використовувати світлий вигляд
+        кнопок, меню та вікон.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Використовувати темний вигляд
+        кнопок, меню та вікон.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Використовувати темний вигляд
+        кнопок, меню та вікон.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Використовувати різнобарвний вигляд
+        кнопок, меню та вікон.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Використовувати різнобарвний вигляд
+        кнопок, меню та вікон.
 
 ## Welcome full page string
 
@@ -135,11 +173,7 @@ onboarding-sync-form-sub-header = для продовження в { -sync-brand
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Корисні продукти
 onboarding-benefit-products-text = Виконуйте свої справи з використанням сімейства засобів, що поважають вашу приватність на всіх пристроях.
-onboarding-benefit-knowledge-title = Практичні знання
-onboarding-benefit-knowledge-text = Дізнайтеся про все, що вам необхідно, щоб залишатися розумнішими і захищенішими онлайн.
-onboarding-benefit-privacy-title = Справжня приватність
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -160,17 +194,6 @@ onboarding-benefit-lockwise-text = Отримайте безпечний дос�
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Приватний перегляд
-onboarding-private-browsing-text = Насолоджуйтесь користуванням. Приватний перегляд з блокуванням вмісту захищає від стеження, що переслідує вас в інтернеті.
-onboarding-screenshots-title = Знімки екрану
-onboarding-screenshots-text = Легко робіть знімки області чи цілої сторінки. Зберігайте в мережі й обмінюйтесь знімками екрану безпосередньо в { -brand-short-name }.
-onboarding-addons-title = Додатки
-onboarding-addons-text = Додайте більше функцій до { -brand-short-name }, щоб задовольнити свої потреби. Порівнюйте ціни, перевіряйте погоду, або змінюйте зовнішній вигляд браузера за допомогою тем, щоб зробити його особливим.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Завантажуйте сторінки швидше, кмітливіше та безпечніше, за допомогою таких розширень, як Ghostery, що дозволяють блокувати надокучливу рекламу.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Синхронізувати
-onboarding-fxa-text = Зареєструйтеся в { -fxaccount-brand-name(case: "dat") } і синхронізуйте свої закладки, паролі та відкриті вкладки всюди, де ви використовуєте { -brand-short-name }.
 onboarding-tracking-protection-title2 = Захист від стеження
 onboarding-tracking-protection-text2 = { -brand-short-name } допомагає запобігти стеженню вебсайтами за вами в мережі, ускладнюючи рекламі переслідувати вас.
 onboarding-tracking-protection-button2 = Як це працює
@@ -179,7 +202,6 @@ onboarding-data-sync-title = Синхронізуйте свої налашту�
 onboarding-data-sync-text2 = Синхронізуйте закладки, паролі та інші дані між усіма пристроями { -brand-product-name }.
 onboarding-data-sync-button2 = Увійти в { -sync-brand-short-name(case: "acc") }
 onboarding-firefox-monitor-title = Отримуйте попередження про витоки даних
-onboarding-firefox-monitor-text = { -monitor-brand-name } стежить, чи не з'явилася ваша адреса електронної пошти у витоках даних і одразу повідомляє вас про це.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } стежить, чи не з'явилася ваша адреса електронної пошти у відомих витоках даних і одразу повідомляє вас про це.
 onboarding-firefox-monitor-button = Підписатися на попередження
 onboarding-browse-privately-title = Користуйтесь інтернетом приватно
@@ -196,17 +218,11 @@ onboarding-mobile-phone-button = Завантажити мобільний бр�
 onboarding-send-tabs-title = Миттєво пересилайте собі вкладки
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Надсилання вкладки миттєво пересилає вебсторінки між вашими пристроями без копіювання посилань, не покидаючи браузер.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Легко обмінюйтесь сторінками між своїми пристроями без копіювання посилань та не покидаючи браузер.
 onboarding-send-tabs-button = Почати використання обмін вкладками
 onboarding-pocket-anywhere-title = Читайте і слухайте всюди
 onboarding-pocket-anywhere-text2 = Зберігайте улюблені статті для автономного доступу за допомогою додатка { -pocket-brand-name } і читайте та слухайте їх всюди, де вам зручно.
 onboarding-pocket-anywhere-button = Спробувати { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Зберігайте свої паролі при собі
-onboarding-lockwise-passwords-text2 = Зберігайте свої паролі в безпеці й легко авторизуйтесь в своїх облікових записах за допомогою { -lockwise-brand-name }.
-onboarding-lockwise-passwords-button2 = Отримати додаток
 onboarding-lockwise-strong-passwords-title = Створюйте й зберігайте надійні паролі
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } створює надійні паролі та зберігає їх всі в одному місці.
 onboarding-lockwise-strong-passwords-button = Керуйте своїми паролями

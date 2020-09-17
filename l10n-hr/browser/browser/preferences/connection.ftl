@@ -30,11 +30,6 @@ connection-proxy-http = HTTP Proxy
     .accesskey = H
 connection-proxy-http-port = Port
     .accesskey = U
-connection-proxy-http-share =
-    .label = Koristi ovaj proxy poslužitelj za sve protokole
-    .accesskey = x
-connection-proxy-ssl = SSL Proxy
-    .accesskey = S
 connection-proxy-http-sharing =
     .label = Koristi ovaj proxy i za FTP i HTTPS
     .accesskey = v
@@ -82,8 +77,8 @@ connection-dns-over-https-url-resolver = Koristi pružatelja usluge
 # Variables:
 #   $name (String) - Display name or URL for the DNS over HTTPS provider
 connection-dns-over-https-url-item-default =
-    .label = { $name } (zadano)
-    .tooltiptext = Koristi zadani URL za rješavanje DNS-a preko HTTPS-a
+    .label = { $name } (standardno)
+    .tooltiptext = Koristi standardni URL za rješavanje DNS-a preko HTTPS-a
 connection-dns-over-https-url-custom =
     .label = Prilagođeno
     .accesskey = o

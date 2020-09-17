@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Shortcut: Hanapin ang { $engineName } direkta mula sa iyong address bar.
 urlbar-search-tips-redirect-2 = Simulan ang iyong paghahanap sa address bar para makakita ng mga mungkahi mula sa { $engineName } at sa iyong browsing history.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Mga Bookmark
+urlbar-search-mode-tabs = Mga Tab
+urlbar-search-mode-history = Kasaysayan
+
 ##
 
 urlbar-geolocation-blocked =
@@ -185,6 +191,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Itakda bilang Default Search Engine sa mga Private Window
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Mga Bookmark ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Mga Tab ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Kasaysayan ({ $restrict })
 
 ## Bookmark Panel
 
@@ -286,8 +312,42 @@ enable-devtools-popup-description = Para gamitin ang F1 2 shortcut, unang buksan
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Hanapin o ilagay ang address
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Hanapin o ilagay ang address
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Hanapin sa Web
+    .aria-label = Maghanap gamit ang { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Ipasok ang mga search term
+    .aria-label = Hanapin { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Ipasok ang mga search term
+    .aria-label = Hanapin sa mga bookmark
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Ipasok ang mga search term
+    .aria-label = Hanapin sa kasaysayan
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Ipasok ang mga search term
+    .aria-label = Hanapin sa mga tab
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Maghanap gamit ang { $name } o ipasok ang address
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Browser ay kasalukuyang nire-remote kontrol
 urlbar-permissions-granted =

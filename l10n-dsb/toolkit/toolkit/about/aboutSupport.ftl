@@ -77,6 +77,9 @@ show-dir-label =
         [windows] Zarědnik wócyniś
        *[other] Zarědnik wócyniś
     }
+environment-variables-title = Wokolinowe wariable
+environment-variables-name = Mě
+environment-variables-value = Gódnota
 experimental-features-title = Eksperimentelne funkcije
 experimental-features-name = Mě
 experimental-features-value = Gódnota
@@ -104,8 +107,6 @@ graphics-desktop-environment = Desktopowa wokolina
 place-database-title = Datowa banka historije a cytańskich znamjenjow
 place-database-integrity = Integrita
 place-database-verify-integrity = Integritu pśeglědowaś
-js-title = JavaScript
-js-incremental-gc = Inkrementelny GC
 a11y-title = Bźezbariernosć
 a11y-activated = Aktiwěrowany
 a11y-force-disabled = Bźezbarjernosći zajźowaś
@@ -135,7 +136,6 @@ restart-button-label = Znowego startowaś
 
 audio-backend = Awdiobackend
 max-audio-channels = Maksimalna licba kanalow
-channel-layout = Preferěrowane kanalowe wugótowanje
 sample-rate = Preferěrowana wótsmasowańska rata
 roundtrip-latency = Woběgowa latenca (standardne wótchylenje)
 media-title = Medije
@@ -289,7 +289,6 @@ support-blocklisted-bug = W blokěrowańskej lisćinje znatych problemow dla: <a
 unknown-failure = W blokěrowańskej lisćinje; zmólkowy kod { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video Decoder
-d3d9video-crash-buard = D3D9 Video Decoder
 d3d9video-crash-guard = D3D9 Video Decoder
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Wideodekoder WMF VPX

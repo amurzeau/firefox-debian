@@ -7,7 +7,7 @@ about-logins-page-title = 我的密码
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
-login-app-promo-title = 密码随身带着走
+login-app-promo-title = 随身携带密码
 login-app-promo-subtitle = 免费下载 { -lockwise-brand-name } 应用
 login-app-promo-android =
     .alt = 从 Google Play 获取
@@ -16,7 +16,7 @@ login-app-promo-apple =
 login-filter =
     .placeholder = 搜索登录信息
 create-login-button = 新建登录信息
-fxaccounts-sign-in-text = 在您的其他设备上取得您的密码
+fxaccounts-sign-in-text = 取得您其他设备上的密码
 fxaccounts-sign-in-button = 登录{ -sync-brand-short-name }服务
 fxaccounts-avatar-button =
     .title = 管理账户
@@ -124,15 +124,15 @@ about-logins-copy-password-os-auth-dialog-message-win = 请输入 Windows 登录
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = 复制存放的密码
+
+## Master Password notification
+
+master-password-notification-message = 请输入您的主密码，以查看保存的登录信息
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = 请输入 Windows 登录凭据，以继续导出登录信息。这有助于保护您的账户安全。
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = 导出存放的登录名和密码
-
-## Master Password notification
-
-master-password-notification-message = 请输入您的主密码，以查看保存的登录信息
 
 ## Primary Password notification
 

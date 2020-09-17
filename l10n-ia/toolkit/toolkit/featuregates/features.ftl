@@ -4,23 +4,9 @@
 
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-css-masonry =
-    .label = CSS Masonry Layout
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
 experimental-features-css-masonry2 =
     .label = CSS: Masonry Layout
 experimental-features-css-masonry-description = Activa le assistentia al functionalitate de mappa Masonry CSS experimental. Vide le <a data-l10n-name="explainer">explainer</a> pro un alte nivello de description del functionalitate. Pro fornir commentarios, per favor commenta in <a data-l10n-name="w3c-issue">iste problema de GitHub</a> o <a data-l10n-name="bug">iste error</a>
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-gpu =
-    .label = WebGPU
-experimental-features-web-gpu-description = API experimental pro graphica e elaborationes sur le Web
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-avif =
-    .label = AVIF
-experimental-features-avif-description = Supporto experimental pro AVIF, le formato de file imagine AV1
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
@@ -36,7 +22,7 @@ experimental-features-media-avif-description = Con iste functionalitate activate
 experimental-features-web-api-inputmode =
     .label = Web API: inputmode
 # "inputmode" and "contenteditable" are technical terms and shouldn't be translated.
-experimental-features-web-api-inputmode-description = Nostre implementation del attributo global <a data-l10n-name="mdn-inputmode">inputmode</a> ha essite actualisate in base al <a data-l10n-name="whatwg">specificationes WHATWG</a>, ma nos ancora besonia de facer anque altere cambiamentos, como render lo disponibile pro contentos "contenteditable". Vide <a data-l10n-name="bugzilla">bug 1205133</a> pro altere detalios.
+experimental-features-web-api-inputmode-description = Nostre implementation del attributo global <a data-l10n-name="mdn-inputmode">inputmode</a> ha essite actualisate secundo le <a data-l10n-name="whatwg">specificationes WHATWG</a>, ma nos debe ancora facer altere cambiamentos, p.ex. render lo disponibile pro contento "contenteditable". Vide <a data-l10n-name="bugzilla">bug 1205133</a> pro plus detalios.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-web-api-link-preload =
@@ -71,7 +57,7 @@ experimental-features-devtools-color-scheme-simulation =
 experimental-features-devtools-color-scheme-simulation-description = Adde un option pro simular plure schemas de color e te permitte testar consultation de medios per <a data-l10n-name="mdn-preferscolorscheme">@prefers-color-scheme</a>. Per iste functionalitate tu pote testar tu codice sin deber cambiar parametros in tu navigator (o in tu systema operative, si le navigator seque un configuration del combination de colores pro le systema-integre). Vide <a data-l10n-name="bugzilla1">bug 1550804</a> e <a data-l10n-name="bugzilla2">bug 1137699</a> pro major detalios.
 experimental-features-devtools-execution-context-selector =
     .label = Utensiles de disveloppator: selector del contexto de execution
-experimental-features-devtools-execution-context-selector-description = Iste functionalitate monstra un button sur le linea de commando del consola pro cambiar le contexto in le qual le expression que tu insere sera exequite. Vide <a data-l10n-name="bugzilla1">bug 1605154</a> e <a data-l10n-name="bugzilla2">bug 1605153</a> pro major detalios.
+experimental-features-devtools-execution-context-selector-description = Iste function monstra un button sur le linea de commando del consola pro cambiar le contexto in le qual le expression que tu insere sera executate. Vide <a data-l10n-name="bugzilla1">bug 1605154</a> e <a data-l10n-name="bugzilla2">bug 1605153</a> pro ulterior detalios.
 experimental-features-devtools-compatibility-panel =
     .label = Utensiles de disveloppator: quadro compatibilitate
 experimental-features-devtools-compatibility-panel-description = Un quadro lateral pro le Inspector de pagina que te monstra informationes detaliate super le stato de compatibilitate inter le navigatores de tu application. Vide <a data-l10n-name="bugzilla">bug 1584464</a> pro altere detalios.
@@ -82,7 +68,7 @@ experimental-features-cookie-samesite-lax-by-default2-description = Tractar cook
 # Do not translate 'SameSite', 'Lax' and 'None'.
 experimental-features-cookie-samesite-none-requires-secure2 =
     .label = Cookies: SameSite=None require le attributo secur
-experimental-features-cookie-samesite-none-requires-secure2-description = Le cookies con attributo “SameSite=None” require le attributo secur. Iste functionalitate require “Cookies: SameSite=Lax predefinite”.
+experimental-features-cookie-samesite-none-requires-secure2-description = Le cookies con attributo “SameSite=None” require le attributo "secure". Iste function require “Cookies: SameSite=Lax predefinite”.
 # about:home should be kept in English, as it refers to the the URI for
 # the internal default home page.
 experimental-features-abouthome-startup-cache =
@@ -100,7 +86,7 @@ experimental-features-cookie-samesite-schemeful-description = Tracta cookies del
 experimental-features-devtools-serviceworker-debugger-support =
     .label = Utensiles de disveloppator: depuration de obrero de servicio
 # "Service Worker" is an API name and is usually not translated.
-experimental-features-devtools-serviceworker-debugger-support-description = Activa supporto experimental pro Obreros de servicio in le quadro del Depurator. Iste functionalitate pote relentar le Utensiles de disveloppator e accrescer le consumption de memoria.
+experimental-features-devtools-serviceworker-debugger-support-description = Activa supporto experimental pro Service Workers in le quadro Depurator. Iste function pote relentar le Utensiles de disveloppator e augmentar le consumption de memoria.
 # Desktop zooming experiment
 experimental-features-graphics-desktop-zooming =
     .label = Graphica: zoom a prisa lisie

@@ -63,13 +63,10 @@ permissions-invalid-uri-label = దయచేసి సరైన హోస్ట�
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-content-blocking-window =
-    .title = మినహాయింపులు - విషయ నిరోధం
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = ఈ వెబ్‌సైట్లలో మీకు విషయ నిరోధాన్ని అచేతనం చేసారు.
 permissions-exceptions-etp-window =
     .title = మెరుగైన ట్రాకింగ్ సంరక్షణ కొరకు మినహాయింపులు
     .style = { permissions-window.style }
+permissions-exceptions-etp-desc = ఈ వెబ్‌సైట్లలో మీరు సంరక్షణలను అచేతనం చేసివున్నారు.
 
 ## Exceptions - Cookies
 
@@ -98,12 +95,6 @@ permissions-exceptions-addons-window =
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = పొడిగింతలను స్థాపించుటకు ఏయే వెబ్ సైట్లను అనుమతించాలో మీరు పేర్కొనవచ్చు. మీరు అనుమతించాలనుకున్న వెబ్ సైటు ఖచ్చితమైన చిరునామాను ఇచ్చి అనుమతించు బొత్తాన్ని నొక్కండి.
 
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = మినహాయింపులు - స్వీయారంభం
-    .style = { permissions-window.style }
-
 ## Site Permissions - Autoplay
 
 permissions-site-autoplay-window =
@@ -128,6 +119,9 @@ permissions-site-location-disable-label =
 
 ## Site Permissions - Virtual Reality
 
+permissions-site-xr-window =
+    .title = అమరికలు - వర్చువల్ రియాలిటీ అనుమతులు
+    .style = { permissions-window.style }
 
 ## Site Permissions - Camera
 

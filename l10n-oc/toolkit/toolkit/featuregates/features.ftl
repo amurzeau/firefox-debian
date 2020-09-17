@@ -4,22 +4,8 @@
 
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-css-masonry =
-    .label = CSS Masonry Layout
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
 experimental-features-css-masonry2 =
     .label = CSS : Masonry Layout
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-gpu =
-    .label = WebGPU
-experimental-features-web-gpu-description = API experimentala pel grafisme e los calculs sul Web
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-avif =
-    .label = AVIF
-experimental-features-avif-description = Prisa en carga experimentala pel format d’imagte AVIF : AV1 Image File Format
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
@@ -71,10 +57,13 @@ experimental-features-cookie-samesite-none-requires-secure2-description = Los co
 experimental-features-abouthome-startup-cache =
     .label = cache d’aviada about:home
 experimental-features-abouthome-startup-cache-description = Un cache pel document inicial about:home qu’es cargat cada aviada. La tòca del cache es de melhorar las performanças d’aviada.
+experimental-features-print-preview-tab-modal =
+    .label = Renovacion de l’apercebut abans impression
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-cookie-samesite-schemeful =
     .label = Cookies : Schemeful SameSite
+experimental-features-cookie-samesite-schemeful-description = Tracta los cookies del meteis domeni mas amb d’esquèmas diferents (per exemple http://example.com e https://example.com) coma venent de sites diferents allòc d’un meteis site. Melhora la seguretat, mas còpa potencialament de causas.
 # "Service Worker" is an API name and is usually not translated.
 experimental-features-devtools-serviceworker-debugger-support =
     .label = Aisinas de desvolopament : debuggatge del service worker

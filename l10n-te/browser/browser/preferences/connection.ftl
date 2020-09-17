@@ -30,11 +30,9 @@ connection-proxy-http = HTTP ప్రాక్సీ
     .accesskey = x
 connection-proxy-http-port = పోర్టు
     .accesskey = P
-connection-proxy-http-share =
-    .label = అన్ని ప్రొటోకాలులకు ఈ ప్రాక్సీని వాడు
+connection-proxy-http-sharing =
+    .label = FTP, HTTPSల కోసం కూడా ఈ ప్రాక్సీని వాడు
     .accesskey = s
-connection-proxy-ssl = SSL ప్రాక్సీ
-    .accesskey = L
 connection-proxy-https = HTTPS ప్రాక్సీ
     .accesskey = H
 connection-proxy-ssl-port = పోర్టు
@@ -69,6 +67,9 @@ connection-proxy-autologin =
 connection-proxy-socks-remote-dns =
     .label = SOCKS v5 వాడేటప్పుడు ప్రాక్సీ DNS
     .accesskey = D
+connection-dns-over-https =
+    .label = HTTPS పై DNSను చేతనించు
+    .accesskey = b
 # Variables:
 #   $name (String) - Display name or URL for the DNS over HTTPS provider
 connection-dns-over-https-url-item-default =

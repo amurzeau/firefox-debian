@@ -208,6 +208,8 @@ cert-not-verified-issuer-unknown = Tega digitalnega potrdila ni bilo mogoče pre
 cert-not-verified-ca-invalid = Tega digitalnega potrdila ni bilo mogoče preveriti, ker digitalno potrdilo izdajatelja ni veljavno.
 cert-not-verified_algorithm-disabled = Tega digitalnega potrdila ni bilo mogoče preveriti, ker je bilo podpisano z algoritmom, ki je bil iz varnostnih razlogov onemogočen..
 cert-not-verified-unknown = Tega digitalnega potrdila ni bilo mogoče preveriti iz neznanih razlogov.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Ne pošiljaj klientovega digitalnega potrdila
 
 ## Add Security Exception dialog
 

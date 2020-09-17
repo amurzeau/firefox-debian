@@ -78,10 +78,10 @@ certificate-viewer-ocsp-stapling = OCSP-მიმაგრება
 certificate-viewer-subject-key-id = სუბიექტის გასაღების ID
 certificate-viewer-authority-key-id = უფლებამოსილი მხარის გასაღების ID
 certificate-viewer-authority-info-aia = უფლებამოსილი მხარის მონაცემები (AIA)
-certificate-viewer-certificate-policies = სერთიფიკატის პირობები
+certificate-viewer-certificate-policies = სერტიფიკატის პირობები
 certificate-viewer-embedded-scts = ჩაშენებული SCT- ები
 certificate-viewer-crl-endpoints = CRL-ს მომწოდებლები
-# This message is used as a row header in the Miscellaneous section. 
+# This message is used as a row header in the Miscellaneous section.
 # The associated data cell contains links to download the certificate.
 certificate-viewer-download = ჩამოტვირთვა
 # This message is used to replace boolean values (true/false) in several certificate fields, e.g. Certificate Authority

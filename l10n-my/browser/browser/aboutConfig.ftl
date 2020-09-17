@@ -2,30 +2,22 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# An old map warning, see https://en.wikipedia.org/wiki/Here_be_dragons
-about-config-warning-title = လုပ်စမ်းပါငါမကြောက်ဘူးကွ
-about-config-warning-text = အဆင့်မြင့်တဲ့ အပြင်အဆင်များကို ပြောင်းလဲခြင်းဟာ ဒီလုပ်ငန်းသုံး ကိရိယာရဲ့ ကြံ့ခိုင်မှု၊ လုံခြုံမှုနဲ့ ဆောင်ရွတ်ချက်ကို အ​န္တရယ် ပြုနိုင်တယ်။ သင် ဘာလုပ်နေတယ် ဆိုတာ သေချာမှ သင်ဆက်သွားသင့်တယ်။
-about-config-warning-checkbox = ကျေးဇူးပြုပြီးငါ့ကိုအာရုံနောက်အောင်ထက်လုပ်ပေးပါဦး
-about-config-warning-button = အကျိုးဆက်ကိုလက်ခံနိုင်ပါတယ်
-
-about-config2-title = အဆင်မြင့် ချမှတ်မှုများ
-
-about-config-search-input =
-    .placeholder = ရှာဖွေပါ
 
 ## These strings appear on the warning you see when first visiting about:config.
 
+about-config-intro-warning-title = သတိနှင့် ဆက်လုပ်ပါ
+about-config-intro-warning-text = အဆင့်မြင့် ပြင်ဆင်ချမှတ်မှုများ ကိုပြောင်းလဲ လိုခြင်းသည် { -brand-short-name } ၏ စွမ်းဆောင်ရည် နှင့် လုံခြုံရေး ကို ထိခိုက် စေပါသည်။
+about-config-intro-warning-checkbox = ဤ အပြင်အဆင် ကို ရယူရန်ကြိုးစာတိုင်း ကျွန်ုပ် ကို သတိပေးပါ
+about-config-intro-warning-button = အန္တရာယ် ကို လက်ခံပြီး ဆက်လုပ်ပါမည်
+
 ##
 
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = ဤ အပြင်အဆင်ကို ပြောင်းလဲခြင်းကြောင့် { -brand-short-name } ၏ စွမ်းဆောင်ရည် နှင့် လုံခြုံရေး ကို ထိခိုက် စေပါသည်။
+about-config-page-title = အဆင့်မြင့် အပြင်အဆင်များ
+about-config-search-input1 =
+    .placeholder = အပြင်အဆင်၏ အမည် ဖြင့်ရှာပါ
 about-config-show-all = အားလုံးကို ပြပါ
-
-about-config-pref-add = ထည့်ရန်
-about-config-pref-toggle = အထိန်းခလုပ်
-about-config-pref-edit = တည်းဖြတ်ပါ
-about-config-pref-save = သိမ်းဆည်းပါ
-about-config-pref-reset = မူလအတိုင်း ပြန်သတ်မှတ်ရန်
-about-config-pref-delete = ဖျက်ရန်
-
 about-config-pref-add-button =
     .title = ထည့်ရန်
 about-config-pref-toggle-button =

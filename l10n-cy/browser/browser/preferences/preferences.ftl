@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Dim ond pan mae { -brand-short-name } wedi ei osod i rwystro tracwyr hysbys.
 do-not-track-option-always =
     .label = Bob tro
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Dewisiadau
-           *[other] Dewisiadau
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Dewisiadau
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Mae estyniad <img data-l10n-name="icon"
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Mae estyniad <img data-l10n-name="icon"/> { $name }, yn rheoli eich tudalen Tab Newydd.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Mae estyniad <img data-l10n-name="icon"/> { $name }, yn rheoli'r gosodiad hwn.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Mae estyniad <img data-l10n-name="icon"/> { $name }, yn rheoli'r gosodiad hwn.
@@ -383,13 +380,6 @@ update-application-warning-cross-user-setting = Bydd y gosodiad hwn yn berthnaso
 update-application-use-service =
     .label = Defnyddio gwasanaethau cefndirol i osod diweddariadau
     .accesskey = c
-update-enable-search-update =
-    .label = Diweddaru peiriannau chwilio yn awtomatig
-    .accesskey = p
-update-pref-write-failure-title = Methiant Ysgrifennu
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Methu cadw'r dewisiadau. Methu ysgrifnenu i ffeil: { $path }
 update-setting-write-failure-title = Gwall wrth gadw dewisiadau Diweddaru
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -561,7 +551,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Ychwanegu'r bar chwilio i'r bar offer
 search-engine-default-header = Peiriant Chwilio Rhagosodedig
-search-engine-default-desc = Dewis y peiriant chwilio ragosodedig i'w ddefnyddio yn y bar cyfeiriad a'r bar chwilio.
 search-engine-default-desc-2 = Hwn yw'ch peiriant chwilio rhagosodedig yn y bar cyfeiriad a'r bar chwilio. Gallwch ei newid ar unrhyw adeg.
 search-engine-default-private-desc-2 = Dewiswch beiriant chwilio rhagosodedig i'w ddefnyddio yn y Ffenestr Breifat yn unig.
 search-separate-default-engine =
@@ -598,6 +587,9 @@ search-restore-default =
 search-remove-engine =
     .label = Tynnu
     .accesskey = T
+search-add-engine =
+    .label = Ychwanegu
+    .accesskey = Y
 search-find-more-link = Ychwanegu peiriannau chwilio eraill
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -609,7 +601,6 @@ search-keyword-warning-bookmark = Rydych wedi defnyddio allweddair sy'n cael ei 
 
 ## Containers Section
 
-containers-back-link = « Ewch Nôl
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -628,20 +619,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Tynnu
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Mynd â'ch  Gwe gyda Chi
 sync-signedout-description = Cydweddwch eich nodau tudalen, hanes, tabiau, cyfrineiriau, ychwanegion a dewisiadau ymysg eich dyfeisiau i gyd.
-sync-signedout-account-title = Cysylltwch gyda { -fxaccount-brand-name }
-sync-signedout-account-create = Dim cyfrif? Cychwynnwch arni
-    .accesskey = C
-sync-signedout-account-signin =
-    .label = Mewngofnodi…
-    .accesskey = M
 sync-signedout-account-signin2 =
     .label = Mewngofnodi i { -sync-brand-short-name }…
     .accesskey = M
@@ -655,16 +637,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Llwytho Firefox i lawr ar gyfer <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> neu <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> i gydweddu gyda'ch dyfais symudol.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Newid llun proffil
-sync-disconnect =
-    .label = Datgysylltu…
-    .accesskey = D
 sync-sign-out =
     .label = Allgofnodi…
     .accesskey = A
@@ -681,8 +657,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Mewngofnodi
     .accesskey = M
-sync-signedin-settings-header = Gosodiadau Sync
-sync-signedin-settings-desc = Dewis beth i'w cydweddu ar eich dyfais gan ddefnyddio { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -735,10 +709,6 @@ sync-engine-tabs =
     .label = Agor tabiau
     .tooltiptext = Rhestr o'r hyn sydd ar agor ar bob dyfais wedi eu cydweddu
     .accesskey = T
-sync-engine-logins =
-    .label = Mewngofnodion
-    .tooltiptext = Enwau defnyddwyr a chyfrineiriau rydych wedi eu cadw
-    .accesskey = M
 sync-engine-logins-passwords =
     .label = Mewngofnodion a chyfrineiriau
     .tooltiptext = Enwau defnyddwyr a chyfrineiriau rydych wedi'u cadw
@@ -777,18 +747,10 @@ sync-device-name-save =
     .label = Cadw
     .accesskey = C
 sync-connect-another-device = Cysylltu dyfais arall
-sync-manage-devices = Rheoli dyfeisiau
-sync-fxa-begin-pairing = Paru dyfais
-sync-tos-link = Amodau Gwasanaeth
-sync-fxa-privacy-notice = Rhybudd Preifatrwydd
 
 ## Privacy Section
 
 privacy-header = Preifatrwydd y Porwr
-
-## Privacy Section - Forms
-
-logins-header = Mewngofnodion a Chyfrineiriau
 
 ## Privacy Section - Logins and Passwords
 
@@ -922,8 +884,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Mathau wedi'u rhwystro
     .accesskey = M
-sitedata-option-block-trackers =
-    .label = Tracwyr trydydd parti
 sitedata-option-block-cross-site-trackers =
     .label = Tracwyr traws-gwefan
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -969,27 +929,9 @@ addressbar-suggestions-settings = Newid dewisiadau am awgrymiadau peiriannau chw
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Rhwystro Cynnwys
-content-blocking-section-description = Diogelwch eich preifatrwydd wrth bori. Rhwystrwch gynnwys cudd sy'n tracio'r gwefannau fyddwch chi'n ymweld â nhw ac sy'n creu proffil ohonoch chi. Gall rwystro peth o'r cynnwys hwn wneud i dudalennau lwytho'n gynt.
 content-blocking-enhanced-tracking-protection = Diogelwch Uwch Rhag Tracio
 content-blocking-section-top-level-description = Mae tracwyr yn eich dilyn ar-lein i gasglu gwybodaeth am eich arferion pori a'ch diddordebau. Mae { -brand-short-name } yn rhwystro llawer o'r tracwyr hyn a sgriptiau maleisus eraill.
 content-blocking-learn-more = Dysgu Rhagor
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Safonol
-    .accesskey = S
-content-blocking-setting-strict =
-    .label = Llym
-    .accesskey = L
-content-blocking-setting-custom =
-    .label = Cyfaddasu
-    .accesskey = C
-content-blocking-standard-desc = Cymantoledd rhwng diogelwch a pherfformiad. Yn caniatáu rhai tracwyr fel bod gwefannau'n gweithio'n iawn.
-content-blocking-strict-description = Gall amddiffyniad cryfach beri i rai safleoedd dorri.
-content-blocking-custom-desc = Dewis beth i'w rhwystro.
-content-blocking-private-trackers = Tracwyr hysbys mewn Ffenestri Preifat yn unig.
-content-blocking-third-party-cookies = Cwcis tracio trydydd parti
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1016,23 +958,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Cwcis tracio traws-s
 content-blocking-social-media-trackers = Tracwyr cyfryngau cymdeithasol
 content-blocking-all-cookies = Pob cwci
 content-blocking-unvisited-cookies = Cwcis o safleoedd heb ymweld â nhw
-content-blocking-all-windows-trackers = Tracwyr hysbys ymhob ffenestr
 content-blocking-all-windows-tracking-content = Tracio cynnwys ym mhob ffenestr
 content-blocking-all-third-party-cookies = Pob cwci trydydd parti
 content-blocking-cryptominers = Cryptogloddwyr
 content-blocking-fingerprinters = Bysbrintwyr
 content-blocking-warning-title = Rhybudd!
-content-blocking-warning-description = Gall rhwystro cynnwys achosi i rai gwefannau dorri. Mae'n hawdd i analluogi rhwystro gwefannau rydych chi'n ymddiried ynddyn nhw.
-content-blocking-learn-how = Dysgu sut
 content-blocking-and-isolating-etp-warning-description = Gall rhwystro tracwyr effeithio ar ymarferoldeb rhai gwefannau. Ail-lwythwch dudalen gyda thracwyr i lwytho'r holl gynnwys.
 content-blocking-warning-learn-how = Dysgu sut
 content-blocking-reload-description = Bydd angen ail lwytho'ch tabiau i osod y newidiadau hyn.
 content-blocking-reload-tabs-button =
     .label = Ail lwytho Pob Tab
     .accesskey = A
-content-blocking-trackers-label =
-    .label = Tracwyr
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = Cynnwys tracio
     .accesskey = t
@@ -1091,12 +1027,6 @@ permissions-notification-link = Dysgu rhagor
 permissions-notification-pause =
     .label = Oedi fy hysbysiadau tan { -brand-short-name } ailgychwyn
     .accesskey = O
-permissions-block-autoplay-media2 =
-    .label = Rhwystro gwefannau rhag chwarae sain yn awtomatig
-    .accesskey = R
-permissions-block-autoplay-media-exceptions =
-    .label = Eithriadau...
-    .accesskey = E
 permissions-autoplay = Awtochwarae
 permissions-autoplay-settings =
     .label = Gosodiadau…

@@ -14,7 +14,10 @@ extensions-name = Nome
 extensions-enabled = Activado
 extensions-version = Versión
 extensions-id = ID
+support-addons-title = Complementos
 support-addons-name = Nome
+support-addons-type = Tipo
+support-addons-enabled = Activado
 support-addons-version = Versión
 support-addons-id = ID
 security-software-title = Software de seguranza
@@ -27,13 +30,26 @@ features-title = Características do { -brand-short-name }
 features-name = Nome
 features-version = Versión
 features-id = ID
+processes-title = Procesos remotos
+processes-type = Tipo
+processes-count = Contar
 app-basics-title = Configuración básica do aplicativo
 app-basics-name = Nome
 app-basics-version = Versión
 app-basics-build-id = ID da compilación
+app-basics-distribution-id = Idenfificador de distribución
 app-basics-update-channel = Canle de actualización
+# This message refers to the folder used to store updates on the device,
+# as in "Folder for updates". "Update" is a noun, not a verb.
+app-basics-update-dir =
+    { PLATFORM() ->
+        [linux] Actualizar directorio
+       *[other] Actualizar cartafol
+    }
 app-basics-update-history = Historial de actualizacións
 app-basics-show-update-history = Amosar o historial de actualizacións
+# Represents the path to the binary used to start the application.
+app-basics-binary = Aplicación binaria
 app-basics-profile-dir =
     { PLATFORM() ->
         [linux] Cartafol do perfil
@@ -47,8 +63,12 @@ app-basics-memory-use = Uso de memoria
 app-basics-performance = Rendemento
 app-basics-service-workers = Service Workers rexistrados
 app-basics-profiles = Perfís
+app-basics-launcher-process-status = Proceso de lanzamento
 app-basics-multi-process-support = Xanelas multiproceso
+app-basics-remote-processes-count = Procesos remotos
 app-basics-enterprise-policies = Políticas empresariais
+app-basics-location-service-key-google = Clave de servizo de localización de Google
+app-basics-safebrowsing-key-google = Clave de navegación segura de Google
 app-basics-key-mozilla = Chave do servizo de localización de Mozilla
 app-basics-safe-mode = Modo seguro
 show-dir-label =
@@ -57,6 +77,12 @@ show-dir-label =
         [windows] Abrir cartafol
        *[other] Abrir cartafol
     }
+environment-variables-title = Variables de contorno
+environment-variables-name = Nome
+environment-variables-value = Valor
+experimental-features-title = Características experimentais
+experimental-features-name = Nome
+experimental-features-value = Valor
 modified-key-prefs-title = Preferencias importantes modificadas
 modified-prefs-name = Nome
 modified-prefs-value = Valor
@@ -74,11 +100,13 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Rexistro de decisións
 graphics-crash-guards-title = Características desactivadas para a protección contra fallos
 graphics-workarounds-title = Solucións alternativas
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = Protocolo de xanelas
+# Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
+graphics-desktop-environment = Ambiente de escritorio
 place-database-title = Bases de datos de lugares
 place-database-integrity = Integridade
 place-database-verify-integrity = Verificar a integridade
-js-title = JavaScript
-js-incremental-gc = GC incremental
 a11y-title = Accesibilidade
 a11y-activated = Activada
 a11y-force-disabled = Evitar a accesibilidade
@@ -98,13 +126,18 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumentos
 safe-mode-title = Probar modo seguro
 restart-in-safe-mode-label = Reiniciar cos complementos desactivados…
+clear-startup-cache-title = Intente limpar a caché de inicio
+clear-startup-cache-label = Borrar a caché de inicio ...
+startup-cache-dialog-title = Limpar a caché de inicio
+startup-cache-dialog-body = Reinicie { -brand-short-name } para limpar a caché de inicio. Isto non cambiará a súa configuración nin eliminará as extensións que engadiu a { -brand-short-name }.
+restart-button-label = Reiniciar
 
 ## Media titles
 
 audio-backend = Sistema de son
 max-audio-channels = Número máximo de canles
-channel-layout = Deseño de canles preferida
 sample-rate = Frecuencia de mostraxe preferida
+roundtrip-latency = Latencia de ida e volta (desviación estándar)
 media-title = Medios
 media-output-devices-title = Dispositivos de saída
 media-input-devices-title = Dispositivos de entrada
@@ -117,6 +150,9 @@ media-device-format = Formato
 media-device-channels = Canles
 media-device-rate = Frecuencia
 media-device-latency = Latencia
+media-capabilities-title = Capacidades de multimedia
+# List all the entries of the database.
+media-capabilities-enumerate = Enumerar a base de datos
 
 ##
 
@@ -139,6 +175,9 @@ intl-regional-prefs = Preferencias rexionais
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
 
+remote-debugging-title = Depuración remota (protocolo do Chromium)
+remote-debugging-accepting-connections = Aceptando conexións
+remote-debugging-url = URL
 
 ##
 
@@ -197,6 +236,8 @@ hardware-h264 = Descodificación por hardware H264
 main-thread-no-omtc = fío principal, sen OMTC
 yes = Si
 no = Non
+unknown = Descoñecido
+virtual-monitor-disp = Disposición de monitores virtuais
 
 ## The following strings indicate if an API key has been found.
 ## In some development versions, it's expected for some API keys that they are
@@ -204,12 +245,15 @@ no = Non
 
 found = Atopado
 missing = Ausente
+gpu-process-pid = GPUProcessPid
+gpu-process = GPUProcess
 gpu-description = Descrición
 gpu-vendor-id = ID do fabricante
 gpu-device-id = ID do dispositivo
 gpu-subsys-id = ID do subsistema
 gpu-drivers = Controladores
 gpu-ram = RAM
+gpu-driver-vendor = Vendedor do controlador
 gpu-driver-version = Versión do controlador
 gpu-driver-date = Data do controlador
 gpu-active = Activa
@@ -228,20 +272,25 @@ blocklisted-bug = Pór na lista de bloqueos debido a problemas coñecidos
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Lista bloqueada por problemas coñecidos: <a data-l10n-name="bug-link">erro { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Pór na lista de bloqueos; código do erro { $failureCode }
 d3d11layers-crash-guard = Compositor D3D11
 d3d11video-crash-guard = Descodificador de vídeo D3D11
-d3d9video-crash-buard = Descodificador de vídeo D3D9
 d3d9video-crash-guard = Descodificador de vídeo D3D9
 glcontext-crash-guard = OpenGL
+wmfvpxvideo-crash-guard = Descodificador de vídeo WMF VPX
 reset-on-next-restart = Restabelecer no próximo reinicio
 gpu-process-kill-button = Terminar proceso GPU
+gpu-device-reset = Restablecer dispositivo
 gpu-device-reset-button = Provocar reinicio do dispositivo
 uses-tiling = Usa mosaicos
 content-uses-tiling = Usa mosaicos (contido)
 off-main-thread-paint-enabled = Off Main Thread Painting activado
 off-main-thread-paint-worker-count = Contador de workers Off Main Thread Painting
+target-frame-rate = Taxa de fotogoramas de destino
 min-lib-versions = Esperábase unha versión mínima
 loaded-lib-versions = Versión en uso
 has-seccomp-bpf = Seccomp-BPF (Filtrado de chamadas do sistema)
@@ -255,6 +304,16 @@ effective-content-sandbox-level = Nivel efectivo de illamento (sandbox) para o p
 sandbox-proc-type-content = contido
 sandbox-proc-type-file = contido do ficheiro
 sandbox-proc-type-media-plugin = engadido de medios
+sandbox-proc-type-data-decoder = decodificador de datos
+startup-cache-title = Memoria caché de inicio
+startup-cache-disk-cache-path = Ruta de caché de disco
+startup-cache-ignore-disk-cache = Ignorar a caché do disco
+startup-cache-found-disk-cache-on-init = Atopouse a caché do disco en Init
+startup-cache-wrote-to-disk-cache = Escribiuse na caché de disco
+launcher-process-status-0 = Activado
+launcher-process-status-1 = Desactivado por fallo
+launcher-process-status-2 = Desactivado forzosamente
+launcher-process-status-unknown = Estado descoñecido
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
@@ -274,6 +333,7 @@ touch-enabled = entrada táctil activada
 drag-enabled = arrastre da barra de desprazamento activado
 keyboard-enabled = teclado activado
 autoscroll-enabled = desprazamento automático activado
+zooming-enabled = activado a ampliación suave cun belisco
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

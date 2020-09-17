@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Läs mer
-onboarding-button-label-try-now = Prova nu
 onboarding-button-label-get-started = Kom igång
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Kom igång
 onboarding-welcome-header = Välkommen till { -brand-short-name }
 onboarding-welcome-body = Du har webbläsaren.<br/>Möt resten av { -brand-product-name }.
 onboarding-welcome-learn-more = Läs mer om fördelarna.
-onboarding-join-form-header = Gå med i { -brand-product-name }
 onboarding-welcome-modal-get-body = Du har webbläsaren. <br/>Få ut det mesta av { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Superladda ditt integritetsskydd.
 onboarding-welcome-modal-privacy-body = Du har webbläsaren. Låt oss lägga till mer integritetsskydd.
@@ -113,6 +111,46 @@ onboarding-multistage-theme-tooltip-alpenglow =
         Använd ett färgglatt utseende för knappar,
         menyer och fönster.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Anpassa utseendet på knappar, menyer
+        och fönster efter operativsystemet.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Anpassa utseendet på knappar, menyer
+        och fönster efter operativsystemet.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Använd ett ljust utseende för knappar,
+        menyer och fönster.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Använd ett ljust utseende för knappar,
+        menyer och fönster.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Använd ett mörkt utseende för knappar,
+        menyer och fönster.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Använd ett mörkt utseende för knappar,
+        menyer och fönster.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Använd ett färgglatt utseende för knappar,
+        menyer och fönster.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Använd ett färgglatt utseende för knappar,
+        menyer och fönster.
 
 ## Welcome full page string
 
@@ -138,11 +176,7 @@ onboarding-sync-form-sub-header = för att fortsätta till { -sync-brand-name }.
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Användbara produkter
 onboarding-benefit-products-text = Få saker gjorda med en grupp av verktyg som respekterar din integritet mellan dina enheter.
-onboarding-benefit-knowledge-title = Praktisk kunskap
-onboarding-benefit-knowledge-text = Lär dig allt du behöver veta för att bli smartare och säkrare online.
-onboarding-benefit-privacy-title = Sann integritet
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -163,17 +197,6 @@ onboarding-benefit-lockwise-text = Hantera lösenord som är skyddade och flyttb
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Privat surfning
-onboarding-private-browsing-text = Surfa själv. Privat surfning med innehållsblockning blockerar spårare på internet som följer dig på webben.
-onboarding-screenshots-title = Skärmbilder
-onboarding-screenshots-text = Ta, spara och dela skärmbilder - utan att lämna { -brand-short-name }. Fånga ett område eller en hel sida när du surfar. Spara sedan på webben för enkel åtkomst och delning.
-onboarding-addons-title = Tillägg
-onboarding-addons-text = Lägg till ännu fler funktioner som gör att { -brand-short-name } fungerar bättre för dig. Jämför priser, kolla vädret eller uttryck din personlighet med ett eget tema.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Surfa snabbare, smartare eller säkrare med tillägg som Ghostery, vilken låter dig blockera irriterande annonser.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Sync
-onboarding-fxa-text = Registrera dig för ett { -fxaccount-brand-name } och synkronisera dina bokmärken, lösenord och öppna flikar överallt där du använder { -brand-short-name }.
 onboarding-tracking-protection-title2 = Skydd från spårning
 onboarding-tracking-protection-text2 = { -brand-short-name } hjälper till att stoppa webbplatser från att spåra dig online, vilket gör det svårare för annonser att följa dig på webben.
 onboarding-tracking-protection-button2 = Hur det fungerar
@@ -182,7 +205,6 @@ onboarding-data-sync-title = Ta med dig dina inställningar
 onboarding-data-sync-text2 = Synkronisera dina bokmärken, lösenord och mer överallt där du använder { -brand-product-name }.
 onboarding-data-sync-button2 = Logga in på { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Var uppmärksam på dataintrång
-onboarding-firefox-monitor-text = { -monitor-brand-name } övervakar om din e-postadress har dykt upp i ett dataintrång och varnar dig om det visas i ett nytt intrång.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } övervakar om din e-postadress har förekommit i ett känt dataintrång och varnar dig om det dyker upp i ett nytt intrång.
 onboarding-firefox-monitor-button = Registrera dig för varningar
 onboarding-browse-privately-title = Surfa privat
@@ -199,17 +221,11 @@ onboarding-mobile-phone-button = Hämta mobil webbläsare
 onboarding-send-tabs-title = Skicka snabbt flikar till dig själv
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Send Tabs delar direkt sidor mellan dina enheter utan att behöva kopiera, klistra in eller lämna webbläsaren.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Dela enkelt sidor mellan dina enheter utan att behöva kopiera länkar eller lämna webbläsaren.
 onboarding-send-tabs-button = Börja använda Send Tabs
 onboarding-pocket-anywhere-title = Läs och lyssna var som helst
 onboarding-pocket-anywhere-text2 = Spara ditt favoritinnehåll offline med appen { -pocket-brand-name } och läs, lyssna och kolla när det är bekvämt för dig.
 onboarding-pocket-anywhere-button = Prova { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Ta med dina lösenord överallt
-onboarding-lockwise-passwords-text2 = Håll lösenordet du sparar säkert och logga enkelt in på dina konton med { -lockwise-brand-name }
-onboarding-lockwise-passwords-button2 = Hämta appen
 onboarding-lockwise-strong-passwords-title = Skapa och lagra starka lösenord
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } skapar starka lösenord på plats och sparar dem alla på ett ställe.
 onboarding-lockwise-strong-passwords-button = Hantera dina inloggningar

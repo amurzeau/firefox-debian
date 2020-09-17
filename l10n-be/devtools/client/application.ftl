@@ -24,9 +24,6 @@ serviceworker-worker-unregister = Скасаваць рэгістрацыю
 # displayed when the link is disabled.
 serviceworker-worker-debug = Адладка
     .title = Можна адладжваць толькі запушчаныя service workers
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = Запусціць
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
 serviceworker-worker-debug-forbidden = Адладзіць
@@ -35,6 +32,9 @@ serviceworker-worker-debug-forbidden = Адладзіць
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = Запусціць
     .title = Service worker-ы можна запускаць толькі калі множны e10s выключаны
+# Alt text for the image icon displayed inside a debug link for a service worker.
+serviceworker-worker-inspect-icon =
+    .alt = Даследаваць
 # Text for the start link displayed for a registered but not running Service Worker.
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start3 = Запусціць
@@ -54,9 +54,6 @@ serviceworker-worker-status = Стан
 serviceworker-worker-status-running = Выконваецца
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = Спынены
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = Рэгіструецца
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = Каб інспектаваць Service Worker тут, яго трэба зарэгістраваць. <a>Даведацца больш</a>
@@ -72,13 +69,26 @@ serviceworker-empty-suggestions-debugger = Прайсці праз рэгіст�
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Інспектаваць Service Workers з іншых даменаў. <a>Адкрыць about:debugging</a>
+# Text displayed when no service workers are visible for the current page.
+serviceworker-empty-intro2 = Service workers не знойдзены
 # Link will open https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro-link = Даведацца больш
+# Text displayed when there are no Service Workers to display for the current page,
+# introducing hints to debug Service Worker issues.
+# <a> and <span> are links that will open the webconsole and the debugger, respectively.
+serviceworker-empty-suggestions2 = Калі гэтая старонка мусіць мець service worker, Вы можаце адшукаць памылкі ў <a>Кансолі</a> ці праверыць рэгістрацыю Вашага service worker у <span>Адладчыку</span>.
+# Suggestion to go to about:debugging in order to see Service Workers for all domains.
+# Link will open about:debugging in a new tab.
+serviceworker-empty-suggestions-aboutdebugging2 = Праглядзець service workers з іншых даменаў
 # Header for the Manifest page when we have an actual manifest
 manifest-view-header = Маніфест праграмы
 # Header for the Manifest page when there's no manifest to inspect
 # The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
 manifest-empty-intro = Маніфест для даследавання не знойдзены.
+# Header for the Manifest page when there's no manifest to inspect
+manifest-empty-intro2 = Маніфест web-праграмы не знойдзены
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro-link = Даведайцеся, як дадаць маніфест
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = Памылкі і папярэджанні
 # Header for the Identity section of Manifest inspection displayed in the application panel.

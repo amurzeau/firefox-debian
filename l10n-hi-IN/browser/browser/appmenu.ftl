@@ -5,9 +5,9 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = गोपनीयता सुरक्षाएँ
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = अपनी गोपनीयता रिपोर्ट पर जाएं
+appmenuitem-update-banner =
+    .label-update-downloading = { -brand-shorter-name } अपडेट डाउनलोड हो रहा है
+appmenuitem-protection-dashboard-title = सुरक्षा डैशबोर्ड
 appmenuitem-customize-mode =
     .label = मनपसंद बनाएँ…
 

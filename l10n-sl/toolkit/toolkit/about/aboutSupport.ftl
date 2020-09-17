@@ -80,7 +80,10 @@ show-dir-label =
         [windows] Odpri mapo
        *[other] Odpri mapo
     }
-experimental-features-title = Poskusne zmožnosti
+environment-variables-title = Spremenljivke okolja
+environment-variables-name = Ime
+environment-variables-value = Vrednost
+experimental-features-title = Poskusne zmogljivosti
 experimental-features-name = Ime
 experimental-features-value = Vrednost
 modified-key-prefs-title = Pomembne spremenjene nastavitve
@@ -107,8 +110,6 @@ graphics-desktop-environment = Namizno okolje
 place-database-title = Podatkovna zbirka mest
 place-database-integrity = Celovitost
 place-database-verify-integrity = Preveri celovitost
-js-title = JavaScript
-js-incremental-gc = Inkrementalen GC
 a11y-title = Dostopnost
 a11y-activated = Vključeno
 a11y-force-disabled = Prepreči dostopnost
@@ -138,7 +139,6 @@ restart-button-label = Ponovno zaženi
 
 audio-backend = Zvočno zaledje
 max-audio-channels = Največje število kanalov
-channel-layout = Prednostna razporeditev kanalov
 sample-rate = Prednostna hitrost vzorčenja
 roundtrip-latency = Zakasnitev povratnega potovanja (standardni odklon)
 media-title = Predstavnost
@@ -292,7 +292,6 @@ support-blocklisted-bug = Dodano na seznam zavrnjenih zaradi znanih težav: <a d
 unknown-failure = Dodano na seznam zavrnjenih; koda napake { $failureCode }
 d3d11layers-crash-guard = Sestavljalnik D3D11
 d3d11video-crash-guard = Videodekodirnik D3D11
-d3d9video-crash-buard = Videodekodirnik D3D9
 d3d9video-crash-guard = Videodekodirnik D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Videodekodirnik WMF VPX

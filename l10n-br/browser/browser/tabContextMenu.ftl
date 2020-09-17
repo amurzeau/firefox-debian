@@ -53,9 +53,24 @@ move-to-end =
 move-to-new-window =
     .label = Dilec'hiañ en ur prenestr nevez
     .accesskey = D
-undo-close-tab =
-    .label = Dizober Serriñ an ivinell
-    .accesskey = z
+tab-context-close-multiple-tabs =
+    .label = Serriñ meur a ivinell
+    .accesskey = S
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Dizober serriñ ivinelloù
+            [one] Dizober serriñ ivinelloù
+            [two] Dizober serriñ ivinelloù
+            [few] Dizober serriñ ivinelloù
+            [many] Dizober serriñ ivinelloù
+           *[other] Dizober serriñ ivinelloù
+        }
+    .accesskey = D
 close-tab =
     .label = Serriñ an ivinell
     .accesskey = e

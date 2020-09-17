@@ -318,8 +318,38 @@ enable-devtools-popup-description = Pro usar le clave de accesso directe F12, ap
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Insere un adresse o face un recerca
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Insere un adresse o face un recerca
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Cercar in le Web
+    .aria-label = Cerca con { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Inserer terminos pro le recerca
+    .aria-label = Cerca { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Inserer terminos pro le recerca
+    .aria-label = Marcapaginas de recerca
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Inserer terminos pro le recerca
+    .aria-label = Cerca in le chronologia
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Inserer terminos pro le recerca
+    .aria-label = Cerca in le schedas
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

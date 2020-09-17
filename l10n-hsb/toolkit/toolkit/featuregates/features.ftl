@@ -4,23 +4,9 @@
 
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-css-masonry =
-    .label = CSS Masonry Layout
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
 experimental-features-css-masonry2 =
     .label = CSS: Masonry Layout
 experimental-features-css-masonry-description = Zmóžnja podpěru za eksperimentelnu funkciju CSS Masonry Layout. Hlejće <a data-l10n-name="explainer">rozjasnjensku stronu</a> za  dobre wopisanje tuteje funkcije. Zo byšće komentary zawostajił, komentujće prošu w <a data-l10n-name="w3c-issue">tutym GitHub issue</a> abo <a data-l10n-name="bug">tutej zmylkowej rozprawje</a>.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-gpu =
-    .label = WebGPU
-experimental-features-web-gpu-description = Eksperimentelny API za grafiku a předźěłowanje datow we webje
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-avif =
-    .label = AVIF
-experimental-features-avif-description = Eksperimentelna podpěra za AVIF: wobrazowy format AV1
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
@@ -43,26 +29,32 @@ experimental-features-web-api-link-preload =
     .label = Web API: <link rel="preload">
 # Do not translate "rel", "preload" or "link" here, as they are all HTML spec
 # values that do not get translated.
-experimental-features-web-api-link-preload-description = Atribut <a data-l10n-name="rel">rel</a>z hódnotu <code>"preload"</code> na elemenće <a data-l10n-name="link">&lt;link&gt;</a> m k tomu přinošować, stopnjowanja wukona docpěć, hdyž resursy zašo w žiwjenskim cyklusu strony sćahujeće, zo bychu zašo k dispoziciji byli a mjenje najskerje rysowanje stronow blokowali. Čitajće <a data-l10n-name="readmore">"Preloading content with <code>rel="preload"</code>"</a> abo <a data-l10n-name="bugzilla">zmylkowu rozprawu 1583604</a> za dalše podrobnosće.
+experimental-features-web-api-link-preload-description = Atribut <a data-l10n-name="rel">rel</a>z hódnotu <code>"preload"</code> na elemenće <a data-l10n-name="link">&lt;link&gt;</a> ma k tomu přinošować, stopnjowanja wukona docpěć, hdyž resursy zašo w žiwjenskim cyklusu strony sćahujeće, zo bychu zašo k dispoziciji byli a mjenje najskerje rysowanje stronow blokowali. Čitajće <a data-l10n-name="readmore">"Preloading content with <code>rel="preload"</code>"</a> abo <a data-l10n-name="bugzilla">zmylkowu rozprawu 1583604</a> za dalše podrobnosće.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-css-focus-visible =
     .label = CSS: Pseudo-class: :focus-visible
-experimental-features-css-focus-visible-description = Zmóžnja nałožowanje fokusowych stilow na elementy kaž tłóčatka a formularne wodźenske elementy, hdyž so z pomocu tastatury fokusuja (na př. z tabulatorowej tastu při pohibowanje po elementach) a nic, hdyž so z myšku abo druhim pokazowanskim gratom fokusuja. Hlejće <a data-l10n-name="bugzilla">zmylkowu rozprawu 1617600</a>.
+experimental-features-css-focus-visible-description = Zmóžnja nałožowanje fokusowych stilow na elementy kaž tłóčatka a formularne wodźenske elementy, hdyž so z pomocu tastatury fokusuja (na př. z tabulatorowej tastu při pohibowanju po elementach) a nic, hdyž so z myšku abo druhim pokazowanskim gratom fokusuja. Hlejće <a data-l10n-name="bugzilla">zmylkowu rozprawu 1617600</a>.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-web-api-beforeinput =
     .label = Web API: beforeinput Event
+# The terms "beforeinput", "input", "textarea", and "contenteditable" are technical terms
+# and shouldn't be translated.
+experimental-features-web-api-beforeinput-description = Globalny podawk <a data-l10n-name="mdn-beforeinput">beforeinput</a> so na elementach <a data-l10n-name="mdn-input">&lt;input&gt;</a> a na elementach <a data-l10n-name="mdn-textarea">&lt;textarea&gt;</a> abo na kóždym elemenće, kotrehož atribut <a data-l10n-name="mdn-contenteditable">contenteditable</a> je aktiwizowany, njeposrědnje před změnu hódnoty elementa wuwoła. Podawk webnałoženjam zmóžnja, standardne zadźerženje wobhladowaka za wužiwarsku interakciju přepisać, na př. webnałoženja móža wužiwarske zapodaće jenož za wěste znamješka přetorhnyć abo zasadźenje teksta ze stilemi jenož ze schwalenymi stilemi změnić.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-css-constructable-stylesheets =
     .label = CSS: Constructable Stylesheets
+experimental-features-css-constructable-stylesheets-description = Přidawanje konstruktora interfejsej <a data-l10n-name="mdn-cssstylesheet">CSSStyleSheet</a> kaž tež wulkeje mnohosće přisłušnych změnow zmóžnja, nowe stilowe předłohi direktnje wutworić, bjeztoho zo byšće dyrbjał předłohu HTML přidać. To wosnadja, zaso wužiwajomne stilowe předłohi za wužiwanje z <a data-l10n-name="mdn-shadowdom">Shadow DOM</a> wutworić. Hlejće <a data-l10n-name="bugzilla">zmylkowu rozprawu 1520690</a> za dalše podrobnosće.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-media-session-api =
     .label = Web API: Media Session API
+experimental-features-media-session-api-description = Cyła implementacija { -brand-short-name } API Media Session je tuchwilu eksperimentelna. Tutón API so wužiwa, zo by wobchadźenje ze zdźělenkami z poćahom na medije přiměrił, podawki a daty rjadował, kotrež su wužitne za předstajenje wužiwarskeho powjercha za rjadowanje wothraćow medijow a zo by metadaty medijoweje dataje dóstał. Hlejće <a data-l10n-name="bugzilla">zmylkowu rozprawu 1112032</a> za dalše podrobnosće.
 experimental-features-devtools-color-scheme-simulation =
     .label = Wuwiwarske nastroje: Simulacija barboweje šemy
+experimental-features-devtools-color-scheme-simulation-description = Přidawa opciju za simulowanje rozdźělnych barbowych šemow, kotraž wam zmóžnja, medijowe naprašowanja <a data-l10n-name="mdn-preferscolorscheme">@prefers-color-scheme</a> testować. Z tutym medijowym naprašowanjom móže waša stilowa předłoha na to reagować, hač wužiwar swětły abo ćmowy wužiwarski powjerch preferuje. Tuta funkcija wam zmóžnja, waš kod testować, bjeztoho zo byšće dyrbjał nastajenja w swojim wobhladowaku (abo dźěłowym systemje, jeli wobhladowak so po nastajenju barboweje šemy systema złožuje). Hlejće <a data-l10n-name="bugzilla1">zmylkowu rozprawu 1550804</a> a <a data-l10n-name="bugzilla2">zmylkowu rozprawu 1137699</a> za dalše podrobnosće.
 experimental-features-devtools-execution-context-selector =
     .label = Wuwiwarske nastroje: Selektor wuwjedźenskeho konteksta
 experimental-features-devtools-execution-context-selector-description = Tuta funkcija tłóčatko w přikazowej lince konsole pokazuje, z kotrymž móžeće kontekst změnić, w kotrymž so ma zapodaty wuraz wuwjesć. Hlejće <a data-l10n-name="bugzilla1">zmylk 1605154</a> a <a data-l10n-name="bugzilla2">zmylk 1605153</a> za dalše podrobnosće.

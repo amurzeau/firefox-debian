@@ -76,10 +76,10 @@ downloads-cmd-remove-from-history =
     .label = Ukloni iz povijesti
     .accesskey = s
 downloads-cmd-clear-list =
-    .label = Obriši ploču pregleda
+    .label = Izbriši ploču pregleda
     .accesskey = a
 downloads-cmd-clear-downloads =
-    .label = Obriši preuzimanja
+    .label = Izbriši preuzimanja
     .accesskey = e
 # This command is shown in the context menu when downloads are blocked.
 downloads-cmd-unblock =
@@ -131,7 +131,7 @@ downloads-history =
 downloads-details =
     .title = Detalji preuzimanja
 downloads-clear-downloads-button =
-    .label = Obriši preuzimanja
+    .label = Izbriši preuzimanja
     .tooltiptext = Briše dovršena, otkazana i neuspjela preuzimanja
 # This string is shown when there are no items in the Downloads view, when it
 # is displayed inside a browser tab.

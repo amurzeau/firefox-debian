@@ -4,23 +4,9 @@
 
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-css-masonry =
-    .label = CSS: Masonry Layout
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
 experimental-features-css-masonry2 =
     .label = CSS: Masonry Layout
 experimental-features-css-masonry-description = Aktiverer den eksperimentelle funktion med CSS Masonry-layout. Læs <a data-l10n-name="explainer">denne artikel</a> for at få et overblik over funktionen. Hvis du har feedback, så skriv gerne en kommentar på <a data-l10n-name="w3c-issue">dette issue på GitHub</a> eller på <a data-l10n-name="bug">denne bug</a>.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-gpu =
-    .label = WebGPU
-experimental-features-web-gpu-description = Eksperimentel API til anvendelse af GPU-enheder til grafik og databehandling på nettet
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-avif =
-    .label = AVIF
-experimental-features-avif-description = Eksperimentel understøttelse af AVIF, AV1 Image File Format
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
@@ -88,6 +74,9 @@ experimental-features-cookie-samesite-none-requires-secure2-description = Cookie
 experimental-features-abouthome-startup-cache =
     .label = Start-cache for about:home
 experimental-features-abouthome-startup-cache-description = Cache for det første about:home-dokument, der indlæses som standard ved opstart. Formålet med cachen er at gøre opstarten hurtigere.
+experimental-features-print-preview-tab-modal =
+    .label = Redesign af forhåndsvisning
+experimental-features-print-preview-tab-modal-description = Forhåndsvisning af udskrifter er redesignet - og er nu tilgængelig til macOS. Dette kan medføre nogle fejl og inkluderer ikke alle indstillinger relateret til udskrifter. Vælg "Udskriv ved brug af system-dialogen…" fra udskriftspanelet.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-cookie-samesite-schemeful =

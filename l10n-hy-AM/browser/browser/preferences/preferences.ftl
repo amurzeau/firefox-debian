@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Միայն երբ { -brand-short-name }-ը սահմանված է արգելափակել հայտնի վնասները։
 do-not-track-option-always =
     .label = Միշտ
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Կարգավորումներ
-           *[other] Կարգավորումներ
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Կարգավորումներ
@@ -371,13 +365,6 @@ update-application-warning-cross-user-setting = Այս կարգավորումը 
 update-application-use-service =
     .label = Թարմացումները տեղադրելիս օգտվել խորքային ծառայությունից
     .accesskey = խ
-update-enable-search-update =
-    .label = Ինքնաբար թարմացնել որոնիչները
-    .accesskey = լ
-update-pref-write-failure-title = Գրեք ձախողում
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Անհնար է պահպանել նախապատվությունները: Հնարավոր չէ գրել ֆայլում. { $path }
 update-setting-write-failure-title = Սխալ պահպանեում է թարմացման նախընտրությունները
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +532,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Ավելացնել որոնման գոտին գործիքագոտիում
 search-engine-default-header = Հիմնական որոնիչը
-search-engine-default-desc = Ընտրեք լռելյայն որոնիչը՝ օգտագործելու համար հասցեի և որոնման գոտիում:
 search-engine-default-desc-2 = Սա ձեր լռելյայն որոնման միջոցն է հասցեագոտում և որոնման գոտում։ Դուք կարող եք փոխել այն ցանկացած ժամանակ։
 search-engine-default-private-desc-2 = Ընտրեք այլ լռելյայն որոնման միջոց անձնական պատուհանների համար միայն
 search-separate-default-engine =
@@ -593,7 +579,6 @@ search-keyword-warning-bookmark = Դուք ընտրեցիք հիմնաբառ, ո
 
 ## Containers Section
 
-containers-back-link = « Հետ գնալ
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +597,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Հեռացնել
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Ձեր վեբը Ձեզ հետ է
 sync-signedout-description = Համաժամեցրեք ձեր բոլոր էջանիշերը, պատմությունը, ներդիրները, գաղտնաբաեռրը, հավելումները և կարգավորումները ձեր բոլոր սարքերի միջև:
-sync-signedout-account-title = Կապակցել { -fxaccount-brand-name }-ի հետ
-sync-signedout-account-create = Չունե՞ք հաշիվ: Սկսեք
-    .accesskey = C
-sync-signedout-account-signin =
-    .label = Մուտք գործել...
-    .accesskey = I
 sync-signedout-account-signin2 =
     .label = Մուտք գործել { -sync-brand-short-name }…
     .accesskey = i
@@ -639,16 +615,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Ներբեռնել Firefox-ը <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> կամ <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>-ի համար՝ համաժամեցնելու բջջային սարքի հետ:
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Փոխել պրոֆիլի նկարը
-sync-disconnect =
-    .label = Անջատել...
-    .accesskey = Ա
 sync-sign-out =
     .label = Դուրս գալ…
     .accesskey = g
@@ -665,8 +635,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Մուտք գործել
     .accesskey = տ
-sync-signedin-settings-header = Սինքի կարգավորումներ
-sync-signedin-settings-desc = Ընտրեք, թե { -brand-short-name }-ի միջոցով ինչը համաժամեցնել ձեր սարքերի միջև:
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +687,6 @@ sync-engine-tabs =
     .label = Բացել ներդիրներ
     .tooltiptext = Համաժամեցված բոլոր սարքերում բացվածների ցանկը
     .accesskey = T
-sync-engine-logins =
-    .label = Մուտքագրումներ
-    .tooltiptext = Ձեր պահպանած օգտվողի անունները և գաղտնաբառերը
-    .accesskey = Մ
 sync-engine-logins-passwords =
     .label = Մուտքանուններ և գաղտնաբառեր
     .tooltiptext = Ձեր պահպանած օգտվողի անուններ և գաղտնաբառեր
@@ -761,18 +725,10 @@ sync-device-name-save =
     .label = Պահպանել
     .accesskey = պ
 sync-connect-another-device = Միացնել այլ սարքի
-sync-manage-devices = Կառավարել սարքերը
-sync-fxa-begin-pairing = Կցել սարք
-sync-tos-link = Ծառայության պայմանները
-sync-fxa-privacy-notice = Գաղտնիության Դրույթները
 
 ## Privacy Section
 
 privacy-header = Դիտարկիչի գաղտնիություն
-
-## Privacy Section - Forms
-
-logins-header = Մուտքանուններ և Գաղտնաբառեր
 
 ## Privacy Section - Logins and Passwords
 
@@ -803,10 +759,20 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Օգտագործել Հիմնական գաղտնաբառ
     .accesskey = Օ
+forms-primary-pw-use =
+    .label = Հիմնական գաղտնաբառի օգտագործում
+    .accesskey = U
+forms-primary-pw-learn-more-link = Իմանալ ավելին
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Փոխել Հիմնական գաղտնաբառը…
     .accesskey = Հ
 forms-master-pw-fips-title = Դուք այժմ օգտագործում էք FIPS եղանակը: FIPS-ը պահանջում է Հիմնական Գաղտնաբառի օգտագործում:
+forms-primary-pw-change =
+    .label = Փոխել Հիմնական գաղտնաբառը
+    .accesskey = P
 forms-master-pw-fips-desc = Գաղտնաբառի Փոփոխությունը Չհաջողվեց
 
 ## OS Authentication dialog
@@ -818,6 +784,13 @@ master-password-os-auth-dialog-message-win = Գլխավոր գաղտնաբառ �
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = Ստեղծել Հիմնական գաղտնաբառ
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Հիմնական գաղտնաբառ ստեղծելու համար մուտքագրեք Windows մուտք գործելու ձեր հավատարմագրերը: Դա օգնում է պաշտպանել ձեր հաշվի անվտանգությունը:
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = ստեղծել Հիմնական գաղտնաբառ
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -884,8 +857,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Տեսակը արգելափակված է
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Երրորդ կողմի հետագծիչներ
 sitedata-option-block-cross-site-trackers =
     .label = Միջակայքային հետևումներ
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -931,27 +902,9 @@ addressbar-suggestions-settings = Փոխել որոնիչների նախապատ
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Բովանդակության արգելափակում
-content-blocking-section-description = Պաշտպանում է ձեր գաղտնիությունը՝ զննելիս։ Արգելափակել անտեսանելի բովանդակությունը, որը վնասում է ձեր այցելած կայքերը և հատկագրում ձեզ։ Այս բովանդակությն արգելափակումը կարող է արագացնել որոշ էջերի բեռնումը։
 content-blocking-enhanced-tracking-protection = Կատարելագործում է Հետևման պաշտպանությունը
 content-blocking-section-top-level-description = Հետևողները հետևում են ձեզ առցանց ձեր զննարկման հատկությունների և հետաքրքրությունների մասին տեղեկություն հավաքելու համար։ { -brand-short-name }-ը արգելափակում է այս հետևումներից և այլ վնասարար գրվածքներից շատերը։
 content-blocking-learn-more = Իմանալ ավելին
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Չափօրինակ
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Ճշգրիտ
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Հարմարեցված
-    .accesskey = C
-content-blocking-standard-desc = Համակշռել պաշտպանության և իրականցման համար։ Կարող թույլատրել որոշ վնասներ, վեբ կայքերի ճշգրիտ աշխատանքի համար։
-content-blocking-strict-description = Ավելի ուժեղ պաշտպանություն, կարող է հանդիսանալ որոշ կայքերի կոտրման պատճառ։
-content-blocking-custom-desc = Ընտրեք ինչը արգելափակել.։
-content-blocking-private-trackers = Հայտնի հետևումներ միայն անձնական Windows-ում
-content-blocking-third-party-cookies = Եռատող հետապնդվող թխուկներ
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -978,23 +931,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Խաչաձև կայ�
 content-blocking-social-media-trackers = Սոցիալական մեդիայի հետագծումներ
 content-blocking-all-cookies = Բոլոր նշոցիկները
 content-blocking-unvisited-cookies = Նշոցիկներ չստուգված կայքերից
-content-blocking-all-windows-trackers = Հայտնի հետքերը բոլոր պատուհաններում
 content-blocking-all-windows-tracking-content = Հետևում են բովանդակությանը բոլոր պատուհաններում
 content-blocking-all-third-party-cookies = Բոլոր երրորդ կողմերի նշոցիկները
 content-blocking-cryptominers = Գաղտնազերծիչներ
 content-blocking-fingerprinters = Մատնահետքեր
 content-blocking-warning-title = Ուշադրություն։
-content-blocking-warning-description = Բովանդակության արգելափակումը կարող է որոշ կայքերի կոտրման պատճառ դառնալ։ Հեշտ է անջատել վստահված կայքերի արգելափակումը։
-content-blocking-learn-how = Սովորել, թե ինչպես
 content-blocking-and-isolating-etp-warning-description = Հետագծմանն արգելափակումը կարող է ազդել որոշ կայքերի գործառությանը։ Կրկին բեռնեք էջը հետագծումներով՝ ողջ բովանդակությունը բեռնելու համար։
 content-blocking-warning-learn-how = Իմանալ ինչպես
 content-blocking-reload-description = Ձեզ հարկավոր կլինի վերբեռնել ձեր ներդիրները այս փոփոխությունները հաստատելու համար։
 content-blocking-reload-tabs-button =
     .label = Վերբեռնել բոլոր ներդիրները
     .accesskey = R
-content-blocking-trackers-label =
-    .label = Հետքեր
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = Հետևող բովանդակություն
     .accesskey = T
@@ -1053,12 +1000,6 @@ permissions-notification-link = Իմանալ ավելին
 permissions-notification-pause =
     .label = Դադարեցնել ծանուցումները մինչև { -brand-short-name }-ը վերամեկնարկելը
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Արգելափակել կայքերը ինքնաբերաբար ձայնային նվագումից
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = Բացառություններ…
-    .accesskey = E
 permissions-autoplay = Ինքնանվագարկում
 permissions-autoplay-settings =
     .label = Կարգավորումներ...
@@ -1165,6 +1106,9 @@ space-alert-under-5gb-ok-button =
     .label = Լավ, հասկացա
     .accesskey = ա
 space-alert-under-5gb-message = { -brand-short-name }-ում տեղ չկա: Կայքի բովանդակությունը, հնարավոր է, նորմալ չի ցուցադրվի: Այցելեք «Իմանալ ավելին»՝ լավարկելու համար հիշասարքի օգտագործումը՝ դիտարկումների ավելի լավ փորձառության համար:
+
+## Privacy Section - HTTPS-Only
+
 
 ## The following strings are used in the Download section of settings
 

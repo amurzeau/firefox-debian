@@ -24,9 +24,6 @@ serviceworker-worker-unregister = Telesäx rutz'ib'axik b'i'aj
 # displayed when the link is disabled.
 serviceworker-worker-debug = Tichojmirisäx
     .title = Xa xe ri service workers yesamajïx tikirel yechojmirisäx
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = Titikirisäx
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
 serviceworker-worker-debug-forbidden = Tichojmirisäx
@@ -35,6 +32,12 @@ serviceworker-worker-debug-forbidden = Tichojmirisäx
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = Titikirisäx
     .title = Xa xe tikirel yetikirisäx taq service worker we chupül ri k'ïy e10s.
+# Alt text for the image icon displayed inside a debug link for a service worker.
+serviceworker-worker-inspect-icon =
+    .alt = Tinik'öx
+# Text for the start link displayed for a registered but not running Service Worker.
+# Clicking on the link will attempt to start the service worker.
+serviceworker-worker-start3 = Titikirisäx
 # Text displayed for the updated time of the service worker. The <time> element will
 # display the last update time of the service worker script.
 serviceworker-worker-updated = Xk'ex <time>{ DATETIME($date, month: "long", year: "numeric", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric") }</time>
@@ -51,9 +54,6 @@ serviceworker-worker-status = B'anikil
 serviceworker-worker-status-running = Nib'an
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = Q'aton
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = Nitz'ib'äx b'i'aj
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = K'atzinel natz'ib'aj rub'i' jun Service Worker richin ninik'öx wawe'. <a>Tetamäx ch'aqa' chik</a>
@@ -69,13 +69,26 @@ serviceworker-empty-suggestions-debugger = Tatz'eta' rutz'ib'axik ri Service Wor
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Ke'anik'oj ri Service Workers kichin ch'aqa' chik taq ajk'amal. <a>Tijaq about:debugging</a>
+# Text displayed when no service workers are visible for the current page.
+serviceworker-empty-intro2 = Majun service workers xe'ilitäj
 # Link will open https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro-link = Tetamäx ch'aqa' chik
+# Text displayed when there are no Service Workers to display for the current page,
+# introducing hints to debug Service Worker issues.
+# <a> and <span> are links that will open the webconsole and the debugger, respectively.
+serviceworker-empty-suggestions2 = We ri ruxaq k'o wakami k'o chi ruk'wan jun service worker, yatikïr ye'akanoj taq sachoj pa <a>Temeb'äl</a> o nab'etz'eta' akuchi tz'ib'an ri service worker pa <span>Chojmirisab'äl</span>.
+# Suggestion to go to about:debugging in order to see Service Workers for all domains.
+# Link will open about:debugging in a new tab.
+serviceworker-empty-suggestions-aboutdebugging2 = Ketz'et ch'aqa' service workers kichin ch'aqa' taq ajk'ama'l
 # Header for the Manifest page when we have an actual manifest
 manifest-view-header = Rutzijoxik Chokoy
 # Header for the Manifest page when there's no manifest to inspect
 # The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
 manifest-empty-intro = K'o chi nitz'aqatisäx jun Rutzijoxik ajk'amaya'l chokoy richin ninik'öx wawe'. <a>Tetamäx ch'aqa' chik</a>
+# Header for the Manifest page when there's no manifest to inspect
+manifest-empty-intro2 = Majun rutzijoxik ajk'amaya'l chokoy xilitäj
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro-link = Tawetamaj natz'aqatisaj jun rutzijoxik
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = Taq Sachoj chuqa' Kitzijol K'ayewal
 # Header for the Identity section of Manifest inspection displayed in the application panel.

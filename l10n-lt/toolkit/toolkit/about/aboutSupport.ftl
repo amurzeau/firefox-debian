@@ -77,6 +77,9 @@ show-dir-label =
         [windows] Atverti aplanką
        *[other] Atverti aplanką
     }
+environment-variables-title = Aplinkos kintamieji
+environment-variables-name = Pavadinimas
+environment-variables-value = Reikšmė
 experimental-features-title = Eksperimentinės funkcijos
 experimental-features-name = Pavadinimas
 experimental-features-value = Reikšmė
@@ -104,8 +107,6 @@ graphics-desktop-environment = Darbalaukio aplinka
 place-database-title = Vietų duomenų bazė
 place-database-integrity = Nepažeistumas
 place-database-verify-integrity = Patikrinti nepažeistumą
-js-title = „JavaScript“
-js-incremental-gc = Inkrementinis šiukšlių rinkimas
 a11y-title = Pritaikymas neįgaliesiems
 a11y-activated = Aktyvintas
 a11y-force-disabled = Pritaikymas neįgaliesiems uždraustas
@@ -135,7 +136,6 @@ restart-button-label = Perleisti
 
 audio-backend = Garso posistemė
 max-audio-channels = Daugiausiai kanalų
-channel-layout = Pageidautinas kanalų išdėstymas
 sample-rate = Pageidautinas atkūrimo dažnis
 roundtrip-latency = Abipusė delsa (standartinis nuokrypis)
 media-title = Laikmenos
@@ -284,7 +284,6 @@ support-blocklisted-bug = Užblokuota dėl žinomų problemų: <a data-l10n-name
 unknown-failure = Užblokuota; gedimo kodas { $failureCode }
 d3d11layers-crash-guard = D3D11 rinkėjo gija
 d3d11video-crash-guard = D3D11 vaizdo iškoduotuvas
-d3d9video-crash-buard = D3D9 vaizdo iškoduotuvas
 d3d9video-crash-guard = D3D9 vaizdo iškoduotuvas
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX vaizdo iškoduotuvas

@@ -59,6 +59,8 @@ policy-DisableFormHistory = تلاش اور فارم کی سابقات یاد ن
 
 policy-DisableMasterPasswordCreation = اگر سچ ہے تو، ایک ماسٹر پاس ورڈ بنائی نہی جا سکتی۔
 
+policy-DisablePrimaryPasswordCreation = اگر درست ہے تو ، بنیادی پاس ورڈ نہیں بنایا جاسکتا۔
+
 policy-DisablePasswordReveal = پاس ورڈز کو محفوظ لاگ ان میں ظاہر ہونے کی اجازت نہ دیں۔
 
 policy-DisablePocket = ویب صفحات کو Pocket مے محفوظ کرنے کی خصوصیات سے روکیں۔

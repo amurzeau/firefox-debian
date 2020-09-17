@@ -15,6 +15,11 @@ credit-card-expiration = Expirará el { $month }/{ $year }
 ## include a cardholder name, an expiration date, or both, so we have
 ## four variations.
 
+# Label for a credit card with a number only
+#
+# Variables:
+#   $number (String): Partially-redacted credit card number
+credit-card-label-number = { $number }
 # Label for a credit card with a number and name
 #
 # Variables:

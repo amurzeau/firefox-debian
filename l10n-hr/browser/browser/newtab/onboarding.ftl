@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Saznaj više
-onboarding-button-label-try-now = Isprobaj sada
 onboarding-button-label-get-started = Započnite
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Započnite
 onboarding-welcome-header = Dobro došli u { -brand-short-name }
 onboarding-welcome-body = Imaš preglednik.<br/>Upoznaj ostale { -brand-product-name } dijelove.
 onboarding-welcome-learn-more = Saznaj više o prednostima.
-onboarding-join-form-header = Pridruži se { -brand-product-name }
 onboarding-welcome-modal-get-body = Imaš preglednik.<br/>Sad upoznaj ostatak { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Nadopuni svoju zaštitu privatnosti.
 onboarding-welcome-modal-privacy-body = Imaš preglednik. Dodajmo još više zaštite privatnosti.
@@ -104,6 +102,36 @@ onboarding-multistage-theme-tooltip-dark =
         Koristite tamni izgled za tipke,
         izbornike i prozore.
     .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Naslijedite izgled svog operativnog
+        sustava za tipke, izbornike i prozore.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Naslijedite izgled svog operativnog
+        sustava za tipke, izbornike i prozore.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Koristite svijetli izgled za tipke,
+        izbornike i prozore.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Koristite svijetli izgled za tipke,
+        izbornike i prozore.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Koristite tamni izgled za tipke,
+        izbornike i prozore.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Koristite tamni izgled za tipke,
+        izbornike i prozore.
 
 ## Welcome full page string
 
@@ -129,11 +157,7 @@ onboarding-sync-form-sub-header = i prijavi se u { -sync-brand-name }
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Korisni proizvodi
 onboarding-benefit-products-text = Obavi posao pomoću obitelji alata koji poštuju tvoju privatnost na svim uređajima.
-onboarding-benefit-knowledge-title = Praktično znanje
-onboarding-benefit-knowledge-text = Saznaj sve što trebaš znati za pametnije i sigurnije kretanje po internetu.
-onboarding-benefit-privacy-title = Prava privatnost
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -154,17 +178,6 @@ onboarding-benefit-lockwise-text = Upravljaj lozinkama koje su zaštićene i pre
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Privatno pregledavanje
-onboarding-private-browsing-text = Pregledaj web anonimno. Privatno pregledavanje s blokiranjem sadržaja blokira programe za praćenje koji te prate po internetu.
-onboarding-screenshots-title = Snimke ekrana
-onboarding-screenshots-text = Snimite, spremite i dijelite snimke ekrana - bez napuštanja { -brand-short-name }a. Snimite dio ili cijelu stranicu dok pretražujete. Onda spremite na internet za brzi pristup i dijeljenje.
-onboarding-addons-title = Dodaci
-onboarding-addons-text = Dodaj daljnje funkcije, kako bi { -brand-short-name } radio još bolje za tebe. Usporedi cijene, provjeri vremensku prognozu ili izrazi svoj karakter prilagođenim izgledom.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Pregledaj brže, pametnije i sigurnije s dodacima poput Ghostery, što omogućuje blokiranje dosadnih oglasa.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Sinkronizacija
-onboarding-fxa-text = Otvori { -fxaccount-brand-name } i sinkroniziraj svoje zabilješke, lozinke i otvorene kartice gdjegod koristiš { -brand-short-name }.
 onboarding-tracking-protection-title2 = Zaštita od praćenja
 onboarding-tracking-protection-text2 = { -brand-short-name } sprečava web stranice da te prate po internetu, što reklamama otežava praćenje.
 onboarding-tracking-protection-button2 = Kako ovo funkcionira
@@ -173,14 +186,13 @@ onboarding-data-sync-title = Ponesi svoje postavke sa sobom
 onboarding-data-sync-text2 = Sinkroniziraj svoje zabilješke, lozinke i ostalo gdjegod koristiš { -brand-product-name }.
 onboarding-data-sync-button2 = Prijavi se u { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Pazi na curenje podataka
-onboarding-firefox-monitor-text = { -monitor-brand-name } nadzire, pojavljuje li se tvoja e-adresa u podacima koji su procurili na internetu i obavještava te ukoliko je otkrije.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } nadzire, pojavljuje li se tvoja e-adresa u poznatim podacima koji su procurili na internetu i obavještava te ukoliko je otkrije.
 onboarding-firefox-monitor-button = Prijavi se za upozorenja
 onboarding-browse-privately-title = Pregledaj privatno
 onboarding-browse-privately-text = Privatno pregledavanje briše povijest pretraživanja i pregledavanja kako bi ostalo skriveno od ostalih koje koriste isto računalo.
 onboarding-browse-privately-button = Otvori privatni prozor
 onboarding-firefox-send-title = Drži svoje dijeljene datoteke privatnima
-onboarding-firefox-send-text2 = Prenesite svoje datoteke na { -send-brand-name } kako biste ih dijelili s potpunom enkripcijom i poveznicom koja se automatski briše.
+onboarding-firefox-send-text2 = Prenesi svoje datoteke na { -send-brand-name } kako bi se dijelile pomoću obostranog šifriranja i poveznicom koja se automatski poništava.
 onboarding-firefox-send-button = Isprobaj { -send-brand-name }
 onboarding-mobile-phone-title = Preuzmi { -brand-product-name } za svoj mobitel
 onboarding-mobile-phone-text = Preuzmi { -brand-product-name } za iOS ili Android i sinkroniziraj podatke na svim uređajima.
@@ -190,17 +202,11 @@ onboarding-mobile-phone-button = Preuzmi preglednika za mobitele
 onboarding-send-tabs-title = Trenutno pošalji kartice sebi
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = „Pošalji kartice” trenutno dijeli web stranice između tvojih uređaja, bez da ih moraš kopirati, zalijepiti ili napustiti preglednik.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Jednostavno dijeli stranice između tvojih uređaja bez da moraš kopirati poveznice ili napustiti preglednik.
 onboarding-send-tabs-button = Počni korisitit „Pošalji kartice”
 onboarding-pocket-anywhere-title = Čitaj i slušaj bilo gdje
 onboarding-pocket-anywhere-text2 = Spremi svoj omiljeni sadržaj lokalno s { -pocket-brand-name } aplikacijom i čitaj, slušaj i gledaj kad god želiš.
 onboarding-pocket-anywhere-button = Probaj { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Ponesi svoje lozinke sa sobom
-onboarding-lockwise-passwords-text2 = Zaštiti lozinke koje spremaš i jednostavno se prijavi na svoje račune s { -lockwise-brand-name }.
-onboarding-lockwise-passwords-button2 = Preuzmi program
 onboarding-lockwise-strong-passwords-title = Stvori i spremi jake lozinke
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } stvara snažne lozinke na licu mjesta i sprema ih sve na jedno mjesto.
 onboarding-lockwise-strong-passwords-button = Upravljaj prijavama

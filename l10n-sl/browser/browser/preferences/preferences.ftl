@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Samo, ko je { -brand-short-name } nastavljen na zavračanje znanih sledilcev
 do-not-track-option-always =
     .label = Vedno
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Možnosti
-           *[other] Nastavitve
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Možnosti
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Razširitev <img data-l10n-name="icon"/
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Razširitev <img data-l10n-name="icon"/> { $name } nadzira vašo stran novega zavihka.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = To nastavitev nadzira razširitev <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Razširitev <img data-l10n-name="icon"/> { $name } nadzoruje to nastavitev.
@@ -377,13 +374,6 @@ update-application-warning-cross-user-setting = Ta nastavitev bo uveljavljena v 
 update-application-use-service =
     .label = Uporabi storitev za nameščanje posodobitev v ozadju
     .accesskey = s
-update-enable-search-update =
-    .label = Samodejno posodabljaj iskalnike
-    .accesskey = i
-update-pref-write-failure-title = Napaka pri pisanju
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Nastavitve ni bilo mogoče shraniti. Ni bilo mogoče pisati v datoteko: { $path }
 update-setting-write-failure-title = Napaka pri shranjevanju nastavitev posodobitve
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -553,7 +543,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Dodaj iskalno vrstico v orodno vrstico
 search-engine-default-header = Privzet iskalnik
-search-engine-default-desc = Izberite privzeti iskalnik, ki ga želite uporabiti v naslovni in iskalni vrstici.
 search-engine-default-desc-2 = To je vaš privzeti iskalnik v naslovni vrstici in iskalni vrstici. Kadarkoli ga lahko zamenjate.
 search-engine-default-private-desc-2 = Izberite drug privzet iskalnik posebej za zasebna okna
 search-separate-default-engine =
@@ -590,6 +579,9 @@ search-restore-default =
 search-remove-engine =
     .label = Odstrani
     .accesskey = r
+search-add-engine =
+    .label = Dodaj
+    .accesskey = D
 search-find-more-link = Najdi več iskalnikov
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -601,7 +593,6 @@ search-keyword-warning-bookmark = Izbrali ste ključno besedo, ki jo trenutno up
 
 ## Containers Section
 
-containers-back-link = « Nazaj
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -620,20 +611,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Odstrani
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Ponesite svoj splet s seboj
 sync-signedout-description = Sinhronizirajte zaznamke, zgodovino, zavihke, gesla, dodatke in nastavitve vseh vaših naprav.
-sync-signedout-account-title = Poveži s { -fxaccount-brand-name }om
-sync-signedout-account-create = Še nimate računa? Začnite
-    .accesskey = Š
-sync-signedout-account-signin =
-    .label = Prijava …
-    .accesskey = P
 sync-signedout-account-signin2 =
     .label = Prijava v { -sync-brand-short-name } …
     .accesskey = i
@@ -647,16 +629,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Prenesite Firefox za <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ali <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> za sinhroniziranje z mobilno napravo.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Spremeni sliko profila
-sync-disconnect =
-    .label = Odklopi …
-    .accesskey = k
 sync-sign-out =
     .label = Odjava …
     .accesskey = j
@@ -673,8 +649,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Prijava
     .accesskey = P
-sync-signedin-settings-header = Nastavitve Synca
-sync-signedin-settings-desc = Izberite, kaj želite sinhronizirati med svojimi napravami s pomočjo { -brand-short-name }a
 
 ## Sync section - enabling or disabling sync.
 
@@ -727,10 +701,6 @@ sync-engine-tabs =
     .label = Odprte zavihke
     .tooltiptext = Seznam odprtih stvari na vseh sinhroniziranih napravah
     .accesskey = Z
-sync-engine-logins =
-    .label = Prijave
-    .tooltiptext = Shranjena uporabniška imena in gesla
-    .accesskey = P
 sync-engine-logins-passwords =
     .label = Prijave in gesla
     .tooltiptext = Uporabniška imena in gesla, ki ste jih shranili
@@ -769,18 +739,10 @@ sync-device-name-save =
     .label = Shrani
     .accesskey = S
 sync-connect-another-device = Poveži drugo napravo
-sync-manage-devices = Upravljanje naprav
-sync-fxa-begin-pairing = Seznani napravo
-sync-tos-link = Pogoji uporabe
-sync-fxa-privacy-notice = Obvestilo o zasebnosti
 
 ## Privacy Section
 
 privacy-header = Zasebnost brskalnika
-
-## Privacy Section - Forms
-
-logins-header = Prijave in gesla
 
 ## Privacy Section - Logins and Passwords
 
@@ -914,8 +876,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Zavračaj
     .accesskey = Z
-sitedata-option-block-trackers =
-    .label = Sledilce tretjih strani
 sitedata-option-block-cross-site-trackers =
     .label = Spletne sledilce
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -961,27 +921,9 @@ addressbar-suggestions-settings = Spremeni nastavitve predlogov iskanja
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Zavračanje vsebine
-content-blocking-section-description = Zaščitite svojo zasebnost med brskanjem. Zavrnite nevidno vsebino, ki spremlja vaše obiskane strani in ustvarja profil o vas. Če zavrnete nekaj te vsebine, se lahko strani hitreje naložijo.
 content-blocking-enhanced-tracking-protection = Izboljšana zaščita pred sledenjem
 content-blocking-section-top-level-description = Sledilci vas spremljajo po spletu ter zbirajo podatke o vaših navadah in zanimanjih. { -brand-short-name } zavrača veliko teh sledilcev in drugih zlonamernih skriptov.
 content-blocking-learn-more = Več o tem
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Običajno
-    .accesskey = č
-content-blocking-setting-strict =
-    .label = Strogo
-    .accesskey = S
-content-blocking-setting-custom =
-    .label = Po meri
-    .accesskey = m
-content-blocking-standard-desc = Uravnotežena zaščita in delovanje. Omogoča nekaj sledilcev, tako da spletne strani delujejo pravilno.
-content-blocking-strict-description = Močnejša zaščita; lahko povzroči nedelovanje nekaterih strani.
-content-blocking-custom-desc = Izberite, kaj želite zavračati.
-content-blocking-private-trackers = Znane sledilce samo v zasebnih oknih
-content-blocking-third-party-cookies = Sledilne piškotke tretjih strani
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1008,23 +950,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Spletne sledilce in 
 content-blocking-social-media-trackers = Sledilce družbenih omrežij
 content-blocking-all-cookies = Vse piškotke
 content-blocking-unvisited-cookies = Piškotke neobiskanih spletnih strani
-content-blocking-all-windows-trackers = Znane sledilce v vseh oknih
 content-blocking-all-windows-tracking-content = Sledilno vsebino v vseh oknih
 content-blocking-all-third-party-cookies = Vse piškotke tretjih strani
 content-blocking-cryptominers = Kriptorudarje
 content-blocking-fingerprinters = Sledilce prstnih odtisov
 content-blocking-warning-title = Opozorilo!
-content-blocking-warning-description = Zavračanje vsebine lahko povzroči nedelovanje nekaterih spletnih mest. Zavračanje vsebine strani, ki jim zaupate, lahko enostavno onemogočite.
-content-blocking-learn-how = Naučite se, kako
 content-blocking-and-isolating-etp-warning-description = Zavračanje sledilcev in izolacija piškotkov lahko vplivata na delovanje nekaterih strani. Naložite stran s sledilci, da naložite vso vsebino.
 content-blocking-warning-learn-how = Naučite se, kako
 content-blocking-reload-description = Za uveljavitev sprememb boste morali znova naložiti zavihke.
 content-blocking-reload-tabs-button =
     .label = Znova naloži vse zavihke
     .accesskey = Z
-content-blocking-trackers-label =
-    .label = Sledilce
-    .accesskey = S
 content-blocking-tracking-content-label =
     .label = Sledilno vsebino
     .accesskey = v
@@ -1083,12 +1019,6 @@ permissions-notification-link = Več o tem
 permissions-notification-pause =
     .label = Ne prikazuj obvestil do naslednjega zagona { -brand-short-name }a
     .accesskey = u
-permissions-block-autoplay-media2 =
-    .label = Spletnim stranem prepreči samodejno predvajanje zvoka
-    .accesskey = z
-permissions-block-autoplay-media-exceptions =
-    .label = Izjeme …
-    .accesskey = I
 permissions-autoplay = Samodejno predvajanje
 permissions-autoplay-settings =
     .label = Nastavitve …

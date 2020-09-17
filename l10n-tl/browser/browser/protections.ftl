@@ -22,19 +22,9 @@ graph-total-tracker-summary =
 graph-private-window = Patuloy na hinaharang ng { -brand-short-name } ang mga tracker sa mga Private Window, pero hindi nito nililista kung anu-ano ang mga naharang.
 # Weekly summary of the graph when the graph is empty in Private Mode
 graph-week-summary-private-window = Mga tracker na naharang ng { -brand-short-name } ngayong linggo
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-# The category name in the <b> tag will be bold.
-protection-report-header-details-standard = Ang Antas ng Proteksyon ay naka-set sa <b>Standard</b>
-    .title = Pumunta sa mga Privacy Setting
-protection-report-header-details-strict = Ang Antas ng Proteksyon ay naka-set sa <b>Strikto</b>
-    .title = Pumunta sa mga Privacy Setting
-protection-report-header-details-custom = Ang Antas ng Proteksyon ay naka-set sa <b>Pasadya</b>
-    .title = Pumunta sa mga Privacy Setting
-protection-report-page-title = Mga Proteksyong Pribasiya
-protection-report-content-title = Mga Proteksyong Pribasiya
-etp-card-title = Enhanced Tracking Protection
-etp-card-content = Sinusundan ka ng mga tracker online para makakuha ng impormasyon tungkol sa iyong mga kaugalian at interes sa pagba-browse. Hinaharang ng { -brand-short-name } ang karamihan sa mga tracker na ito at ibang mga delikadong script.
+protection-report-webpage-title = Protections Dashboard
+protection-report-page-content-title = Protections Dashboard
+etp-card-title-custom-not-blocking = Enhanced Tracking Protection: OFF
 protection-report-etp-card-content-custom-not-blocking = Lahat ng proteksyon ay kasalukyang naka-off. Piliin kung alin tracker ang i-blblock sa pamamagitan ng pamamahala ng iyong { -brand-short-name } protection settings.
 protection-report-manage-protections = Pamahalaan ang Settings
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -56,38 +46,20 @@ protections-close-button2 =
     .aria-label = Isara
     .title = Isara
 lockwise-title = Huwag nang muling makalimot ng password
-lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-header-content = Ligtas na iniimbak ng { -lockwise-brand-name } ang mga password mo sa iyong browser.
 lockwise-header-content-logged-in = Ligtas na iimbak at i-sync ang mga password mo sa lahat ng mga device.
-protection-report-view-logins-button = Tingan ang mga Login
-    .title = Pumunta sa mga naka-save na Login
+protection-report-save-passwords-button = I-save ang mga Password
+    .title = Mag-save ng mga Password sa { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Dalhin kahit saan ang mga password mo
 lockwise-no-logins-card-content = Gamitin sa kahit anong device ang mga password na naka-save sa { -brand-short-name }.
 lockwise-app-links = { -lockwise-brand-name } para sa <a data-l10n-name="lockwise-android-inline-link">Android</a> at <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
-# This string is displayed after a large numeral that indicates the total number
-# of email addresses being monitored. Don’t add $count to
-# your localization, because it would result in the number showing twice.
-lockwise-passwords-stored =
-    { $count ->
-        [one] Ligtas na naimbak ang password <a data-l10n-name="lockwise-how-it-works">Paano gumagana</a>
-       *[other] Ligtas na naimbak ang mga password <a data-l10n-name="lockwise-how-it-works">Paano gumagana</a>
-    }
 lockwise-how-it-works-link = Paano ito gumagana
 turn-on-sync = Buksan ang { -sync-brand-short-name }...
     .title = Pumunta sa sync preferences
-manage-connected-devices = Pamahalaan ang mga device…
-# Variables:
-#   $count (Number) - Number of devices connected with sync.
-lockwise-connected-device-status =
-    { $count ->
-        [one] Nakakonekta sa { $count } device
-       *[other] Nakakonekta sa { $count } mga device
-    }
 monitor-title = Maging alisto sa mga data breach
 monitor-link = Paano ito gumagana
 monitor-header-content-no-account = Tingnan ang { -monitor-brand-name } para malaman kung ikaw ay naging parte ng isang naiulat na data breach, at maalerto sa mga bagong breach.
 monitor-header-content-signed-in = Binabalaan ka ng { -monitor-brand-name } kung lumabas ang impormasyon mo sa isang kilalang data breach.
-monitor-sign-up = Mag-sign Up para sa mga Breach Alert
 auto-scan = Kusang na-scan ngayon
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
@@ -113,18 +85,10 @@ info-exposed-passwords-found =
         [one] May password na nalantad sa lahat ng mga breach
        *[other] May mga password na nalantad sa lahat ng mga breach
     }
-full-report-link = Tingnan ang kumpletong ulat sa <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>
-# This string is displayed after a large numeral that indicates the total number
-# of saved logins which may have been exposed. Don’t add $count to
-# your localization, because it would result in the number showing twice.
-password-warning =
-    { $count ->
-        [one] Ang naka-save na login ay maaaring nalantad sa isang data breach. Baguhin ang password na ito para sa mas mabuting seguridad online. <a data-l10n-name="lockwise-link">Tingnan ang mga Naka-save na Login</a>
-       *[other] Ang mga naka-save na login ay maaaring nalantad sa isang data breach. Baguhin ang mga password na ito para sa mas mabuting seguridad online. <a data-l10n-name="lockwise-link">Tingnan ang mga Naka-save na Login</a>
-    }
 monitor-no-breaches-title = Magandang balita!
 monitor-view-report-link = Tingnan ang Report
     .title = Resolve breaches on { -monitor-brand-short-name }
+monitor-partial-breaches-motivation-title-middle = Magaling!
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

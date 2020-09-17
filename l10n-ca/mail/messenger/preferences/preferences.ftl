@@ -41,7 +41,6 @@ composition-addressing-header = Adreçament
 privacy-main-header = Privadesa
 privacy-passwords-header = Contrasenyes
 privacy-junk-header = Correu brossa
-privacy-data-collection-header = Ús i recollida de dades
 collection-header = Ús i recollida de dades i del { -brand-short-name }
 collection-description = Ens esforcem per oferir-vos opcions i recollir només allò que necessitem per proporcionar i millorar el { -brand-short-name } per a tothom. Sempre demanem permís abans de rebre informació personal.
 collection-privacy-notice = Avís de privadesa
@@ -72,10 +71,6 @@ manage-messenger-languages-button =
     .accesskey = l
 confirm-messenger-language-change-description = Reinicieu el { -brand-short-name } per aplicar els canvis
 confirm-messenger-language-change-button = Aplica i reinicia
-update-pref-write-failure-title = Error d'escriptura
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = No s'ha pogut desar la preferència. No s'ha pogut escriure al fitxer: { $path }
 update-setting-write-failure-title = Error en desar les preferències d'actualització
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -96,14 +91,19 @@ addons-button = Extensions i temes
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verifiqueu la vostra identitat per crear una contrasenya mestra.
-# This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Per crear una contrasenya mestra, introduïu les vostres credencials d'inici de sessió al Windows. Això ajuda a protegir la seguretat dels vostres comptes.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Thunderbird is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = crear una contrasenya mestra
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Per crear una contrasenya principal, introduïu les vostres credencials d'inici de sessió al Windows. Això ajuda a protegir la seguretat dels vostres comptes.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = crear una contrasenya principal
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -541,6 +541,15 @@ master-password-label =
 master-password-button =
     .label = Canvia la contrasenya mestra…
     .accesskey = C
+primary-password-description = Una vegada definida, la contrasenya principal protegeix totes les vostres contrasenyes, però heu d'introduir-la una vegada per cada sessió.
+primary-password-label =
+    .label = Utilitza una contrasenya principal
+    .accesskey = U
+primary-password-button =
+    .label = Canvia la contrasenya principal…
+    .accesskey = C
+forms-primary-pw-fips-title = Us trobeu en mode FIPS. El FIPS requereix una contrasenya principal que no sigui buida.
+forms-master-pw-fips-desc = El canvi de contrasenya ha fallat
 junk-description = Definiu els paràmetres de correu brossa per defecte. Els paràmetres específics de cada compte poden configurar-se des dels Paràmetres dels comptes.
 junk-label =
     .label = Quan marqui els missatges com a correu brossa:

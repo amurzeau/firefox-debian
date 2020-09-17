@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Yalnızca { -brand-short-name } bilinen takipçileri engellemeye ayarlandığında
 do-not-track-option-always =
     .label = Her zaman
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Seçenekler
-           *[other] Tercihler
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Seçenekler
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Giriş sayfanızı <img data-l10n-name=
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Yeni Sekme sayfanızı <img data-l10n-name="icon"/> { $name } adlı eklenti yönetiyor.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Bu ayarı <img data-l10n-name="icon"/> { $name } adlı eklenti yönetiyor.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Bu ayarı <img data-l10n-name="icon"/> { $name } adlı eklenti kontrol ediyor.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Bu ayar, bu { -brand-short-name 
 update-application-use-service =
     .label = Güncellemeleri yüklemek için arka plan hizmetini kullan
     .accesskey = h
-update-enable-search-update =
-    .label = Arama motorlarını otomatik olarak güncelle
-    .accesskey = e
-update-pref-write-failure-title = Yazma Hatası
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Tercih kaydedilemiyor. Dosyaya yazılamadı: { $path }
 update-setting-write-failure-title = Güncelleme tercihlerini kaydetmede hata
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Araç çubuğuna arama çubuğunu ekle
 search-engine-default-header = Varsayılan arama motoru
-search-engine-default-desc = Adres çubuğunda ve arama çubuğunda kullanılacak varsayılan arama motorunu seçin.
 search-engine-default-desc-2 = Bu, adres çubuğundaki ve arama çubuğundaki varsayılan arama motorunuzdur. İstediğiniz zaman değiştirebilirsiniz.
 search-engine-default-private-desc-2 = Yalnızca gizli pencerelerde kullanmak istediğiniz arama motorunu seçin
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Kaldır
     .accesskey = K
+search-add-engine =
+    .label = Ekle
+    .accesskey = E
 search-find-more-link = Daha fazla arama motoru bul
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = Şu anda bir yer imi tarafından kullanılan b
 
 ## Containers Section
 
-containers-back-link = « Geri dön
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Sil
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Web’inizi yanınızda taşıyın
 sync-signedout-description = Yer imlerinizi, geçmişinizi, sekmelerinizi, eklentilerinizi ve tercihlerinizi tüm cihazlarınız arasında senkronize edin.
-sync-signedout-account-title = { -fxaccount-brand-name } ile bağlanın
-sync-signedout-account-create = Hesabınız yok mu? Hemen açın
-    .accesskey = H
-sync-signedout-account-signin =
-    .label = Giriş yap…
-    .accesskey = G
 sync-signedout-account-signin2 =
     .label = { -sync-brand-short-name }’e giriş yap…
     .accesskey = r
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Mobil cihazınızla eşitleme yapmak isterseniz <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> veya <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> için Firefox’u indirin.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Profil resmini değiştir
-sync-disconnect =
-    .label = Bağlantıyı kes…
-    .accesskey = B
 sync-sign-out =
     .label = Çıkış yap…
     .accesskey = k
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Giriş yap
     .accesskey = G
-sync-signedin-settings-header = Sync ayarları
-sync-signedin-settings-desc = { -brand-short-name } kullanan cihazlarınız arasında eşitlenecek öğeleri seçin.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = Açık sekmeler
     .tooltiptext = Eşitlenen tüm cihazlarınızdaki açık sekmelerin listesi
     .accesskey = s
-sync-engine-logins =
-    .label = Hesaplar
-    .tooltiptext = Kaydettiğiniz kullanıcı adları ve parolaları
-    .accesskey = H
 sync-engine-logins-passwords =
     .label = Hesaplar ve parolalar
     .tooltiptext = Kaydettiğiniz kullanıcı adları ve parolalar
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Kaydet
     .accesskey = K
 sync-connect-another-device = Başka bir cihaz bağla
-sync-manage-devices = Cihazları yönet
-sync-fxa-begin-pairing = Cihaz eşleştir
-sync-tos-link = Kullanım Koşulları
-sync-fxa-privacy-notice = Gizlilik Bildirimi
 
 ## Privacy Section
 
 privacy-header = Tarayıcı gizliliği
-
-## Privacy Section - Forms
-
-logins-header = Hesaplar ve parolalar
 
 ## Privacy Section - Logins and Passwords
 
@@ -906,8 +868,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Engellenecek tür
     .accesskey = ü
-sitedata-option-block-trackers =
-    .label = Üçüncü taraf takipçileri
 sitedata-option-block-cross-site-trackers =
     .label = Siteler arası takipçiler
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -953,27 +913,9 @@ addressbar-suggestions-settings = Arama motoru önerileri için tercihleri deği
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = İçerik engelleme
-content-blocking-section-description = Gezinirken gizliliğinizi koruyun. Ziyaret ettiğiniz siteleri izleyen ve profilinizi çıkarak görünmez içerikleri engelleyebilirsiniz. Bu içerikleri engellemek sayfaların daha hızlı yüklenmesini de sağlayabilir.
 content-blocking-enhanced-tracking-protection = Gelişmiş izlenme koruması
 content-blocking-section-top-level-description = Takipçiler, gezinti alışkanlıklarınız ve ilgi alanlarınız hakkında bilgi toplamak için internette sizi takip eder. { -brand-short-name } bu takipçilerin ve diğer kötü amaçlı betiklerin çoğunu engeller.
 content-blocking-learn-more = Daha fazla bilgi al
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standart
-    .accesskey = S
-content-blocking-setting-strict =
-    .label = Sıkı
-    .accesskey = k
-content-blocking-setting-custom =
-    .label = Özel
-    .accesskey = Ö
-content-blocking-standard-desc = Koruma ve performans dengesi sunar. Web sitelerinin düzgün çalışabilmesi için bazı takipçilere izin verir.
-content-blocking-strict-description = Daha güçlü koruma. Bazı sitelerin bozulmasına neden olabilir.
-content-blocking-custom-desc = Nelerin engelleneceğini seçin.
-content-blocking-private-trackers = Bilinen takipçileri yalnızca gizli pencelerde engeller
-content-blocking-third-party-cookies = Üçüncü taraf takip çerezlerini engeller
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1000,23 +942,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Siteler arası takip
 content-blocking-social-media-trackers = Sosyal medya takipçileri
 content-blocking-all-cookies = Tüm çerezler
 content-blocking-unvisited-cookies = Ziyaret etmediğim sitelerden gelen çerezler
-content-blocking-all-windows-trackers = Bilinen takipçileri tüm pencerelerde engeller
 content-blocking-all-windows-tracking-content = Tüm pencerelerde takip amaçlı içerikler
 content-blocking-all-third-party-cookies = Tüm üçüncü taraf çerezlerini engeller
 content-blocking-cryptominers = Kripto madencileri
 content-blocking-fingerprinters = Parmak izi toplayıcılar
 content-blocking-warning-title = Dikkat!
-content-blocking-warning-description = İçerikleri engellemek bazı sitelerin bozulmasına neden olabilir. Güvendiğiniz sitelerde engellemeyi kolayca kapatabilirsiniz.
-content-blocking-learn-how = Engellemeyi kapatmayı öğrenin
 content-blocking-and-isolating-etp-warning-description = Takipçileri engellemek ve çerezleri izole etmek bazı sitelerin düzgün çalışmamasına yol açabilir. Takipçi içeren bir sayfanın tüm içeriğini yüklemek için sayfayı tazeleyin.
 content-blocking-warning-learn-how = Nasıl yapılacağını öğrenin
 content-blocking-reload-description = Bu değişiklikleri uygulamak için sekmelerinizi tazelemeniz gerekiyor.
 content-blocking-reload-tabs-button =
     .label = Sekmeleri tazele
     .accesskey = S
-content-blocking-trackers-label =
-    .label = Takipçiler
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = Takip amaçlı içerikler
     .accesskey = T
@@ -1075,12 +1011,6 @@ permissions-notification-link = Daha fazla bilgi al
 permissions-notification-pause =
     .label = { -brand-short-name } yeniden başlatılana dek bildirimleri duraklat
     .accesskey = b
-permissions-block-autoplay-media2 =
-    .label = Web sitelerinin otomatik olarak ses çalmasını engelle
-    .accesskey = s
-permissions-block-autoplay-media-exceptions =
-    .label = İstisnalar…
-    .accesskey = s
 permissions-autoplay = Otomatik oynatma
 permissions-autoplay-settings =
     .label = Ayarlar…

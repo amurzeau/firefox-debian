@@ -18,3 +18,4 @@ about-httpsonly-explanation-nosupport = Najverjetneje spletno mesto ne podpira H
 about-httpsonly-explanation-risk = Možno je tudi, da je vpleten napadalec. Če se odločite za obisk spletnega mesta, ne vnašajte nobenih občutljivih podatkov, kot so gesla, e-poštni naslovi ali podrobnosti kreditnih kartic.
 about-httpsonly-button-accept-and-continue = Sprejmi tveganje in nadaljuj
 about-httpsonly-button-go-back = Nazaj
+about-httpsonly-link-learn-more = Več o tem …

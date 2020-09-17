@@ -23,13 +23,24 @@ reset-password-window =
     .title = ล้างรหัสผ่านหลัก
     .style = width: 40em
 pippki-failed-pw-change = ไม่สามารถเปลี่ยนรหัสผ่านได้
+pippki-incorrect-pw = คุณใส่รหัสผ่านปัจจุบันไม่ถูกต้อง โปรดลองอีกครั้ง
 pippki-pw-change-ok = เปลี่ยนรหัสผ่านสำเร็จแล้ว
+pippki-pw-empty-warning = รหัสผ่านที่บันทึกไว้และคีย์ส่วนตัวของคุณจะไม่ได้รับการปกป้อง
+pippki-pw-erased-ok = คุณได้ลบรหัสผ่านของคุณแล้ว { pippki-pw-empty-warning }
+pippki-pw-not-wanted = คำเตือน! คุณได้ตัดสินใจไม่ใช้รหัสผ่าน { pippki-pw-empty-warning }
+pippki-pw-change2empty-in-fips-mode = ขณะนี้คุณอยู่ในโหมด FIPS ซึ่ง FIPS จำเป็นต้องมีรหัสผ่านที่ไม่ว่างเปล่า
 
 ## Reset Primary Password dialog
 
+reset-primary-password-window =
+    .title = ตั้งรหัสผ่านหลักใหม่
+    .style = width: 40em
 reset-password-button-label =
     .label = ตั้งค่าใหม่
 reset-password-text = หากคุณตั้งรหัสผ่านหลักของคุณใหม่ รหัสผ่านเว็บและอีเมล, ข้อมูลแบบฟอร์ม, ใบรับรองส่วนบุคคล และกุญแจส่วนตัวทั้งหมดที่คุณจัดเก็บจะถูกลืม คุณแน่ใจหรือไม่ว่าต้องการตั้งรหัสผ่านหลักของคุณใหม่?
+reset-primary-password-text = หากคุณตั้งรหัสผ่านหลักของคุณใหม่ รหัสผ่านเว็บและอีเมล, ใบรับรองส่วนบุคคล, และกุญแจส่วนตัวทั้งหมดที่คุณจัดเก็บจะถูกลืม คุณแน่ใจหรือไม่ว่าต้องการตั้งรหัสผ่านหลักของคุณใหม่?
+pippki-reset-password-confirmation-title = ตั้งรหัสผ่านหลักใหม่
+pippki-reset-password-confirmation-message = รหัสผ่านหลักของคุณถูกตั้งใหม่แล้ว
 
 ## Downloading cert dialog
 

@@ -14,10 +14,10 @@ login-app-promo-android =
 login-app-promo-apple =
     .alt = Descarcă de pe App Store
 login-filter =
-    .placeholder = Caută autentificări
+    .placeholder = Caută date de autentificare
 create-login-button = Creează o autentificare nouă
 fxaccounts-sign-in-text = Obține parolele de pe celelalte dispozitive
-fxaccounts-sign-in-button = Autentifică-te în { -sync-brand-short-name }
+fxaccounts-sign-in-button = Intră în contul de { -sync-brand-short-name }
 fxaccounts-avatar-button =
     .title = Gestionează contul
 
@@ -126,15 +126,15 @@ about-logins-copy-password-os-auth-dialog-message-win = Pentru a copia parola, i
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = copiază parola salvată
+
+## Master Password notification
+
+master-password-notification-message = Te rugăm să introduci parola principală ca să vezi datele de autentificare și parolele salvate
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Pentru a exporta datele de autentificare, introdu-ți datele de autentificare pentru Windows. Ajută la protejarea securității conturilor tale.
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = exportă datele de autentificare și parolele salvate
-
-## Master Password notification
-
-master-password-notification-message = Te rugăm să introduci parola principală ca să vezi datele de autentificare și parolele salvate
 
 ## Primary Password notification
 
@@ -169,7 +169,7 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Elimini această autentificare?
 confirm-delete-dialog-message = Această acțiune este ireversibilă.
 about-logins-confirm-remove-dialog-confirm-button = Elimină
-about-logins-confirm-export-dialog-title = Exportă autentificări și parole
+about-logins-confirm-export-dialog-title = Exportă date de autentificare și parole
 about-logins-confirm-export-dialog-message = Parolele tale vor fi salvate în text lizibil (de ex., BadP@ssw0rd) și oricine poate deschide fișierul exportat le va putea vedea.
 about-logins-confirm-export-dialog-confirm-button = Exportă…
 confirm-discard-changes-dialog-title = Înlături modificările nesalvate?
@@ -178,9 +178,9 @@ confirm-discard-changes-dialog-confirm-button = Înlătură
 
 ## Breach Alert notification
 
-about-logins-breach-alert-title = Încălcarea securității datelor în cazul unui site web
+about-logins-breach-alert-title = Încălcare a securității datelor în cazul unui site web
 breach-alert-text = Parolele au fost divulgate sau furate de pe acest site web după ce ți-ai actualizat ultima oară detaliile de autentificare. Schimbă parola ca să îți protejezi contul.
-about-logins-breach-alert-date = Această încălcare a securității datelor a apărut la data de { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+about-logins-breach-alert-date = Această încălcare a securității datelor a avut loc la data de { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
 # Variables:
 #   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
 about-logins-breach-alert-link = Mergi la { $hostname }

@@ -18,3 +18,4 @@ about-httpsonly-explanation-nosupport = Heechstwierskynlik stipet de website ien
 about-httpsonly-explanation-risk = Mooglik is der sprake fan in oanfal. As jo beslute de website te besykjen, soene jo gjin gefoelige gegevens lykas wachtwurden, e-mailadressen of creditcardgegevens ynfiere moatte.
 about-httpsonly-button-accept-and-continue = It risiko oanfurdigje en trochgean
 about-httpsonly-button-go-back = Tebek
+about-httpsonly-link-learn-more = Mear ynfo…

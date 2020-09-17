@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = gdy { -brand-short-name } blokuje znane elementy śledzące
 do-not-track-option-always =
     .label = zawsze
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Opcje
-           *[other] Preferencje
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Opcje
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Rozszerzenie „{ $name }” <img data
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Rozszerzenie „{ $name }” <img data-l10n-name="icon"/> kontroluje stronę nowej karty.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Rozszerzenie „{ $name }” <img data-l10n-name="icon"/> kontroluje to ustawienie.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Rozszerzenie „{ $name }” <img data-l10n-name="icon"/> kontroluje to ustawienie.
@@ -307,7 +304,7 @@ applications-manage-app =
     .label = Szczegóły aplikacji…
 applications-always-ask =
     .label = Zawsze pytaj
-applications-type-pdf = Portable Document Format (PDF)
+applications-type-pdf = Dokument PDF
 # Variables:
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
@@ -374,13 +371,6 @@ update-application-warning-cross-user-setting = To ustawienie będzie obowiązyw
 update-application-use-service =
     .label = Używaj usługi instalowania aktualizacji działającej w tle
     .accesskey = U
-update-enable-search-update =
-    .label = Automatyczne aktualizacje wyszukiwarek
-    .accesskey = z
-update-pref-write-failure-title = Błąd zapisu
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Nie udało się zapisać preferencji. Nie można było zapisać pliku: { $path }
 update-setting-write-failure-title = Błąd podczas zachowywania preferencji aktualizacji
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -549,7 +539,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Osobny pasek wyszukiwania
 search-engine-default-header = Domyślna wyszukiwarka
-search-engine-default-desc = Wybierz domyślną wyszukiwarkę paska adresu i paska wyszukiwania.
 search-engine-default-desc-2 = To domyślna wyszukiwarka paska adresu i paska wyszukiwania. Można ją zmienić w każdej chwili.
 search-engine-default-private-desc-2 = Wybierz inną domyślną wyszukiwarkę tylko w oknach prywatnych.
 search-separate-default-engine =
@@ -586,6 +575,9 @@ search-restore-default =
 search-remove-engine =
     .label = Usuń
     .accesskey = U
+search-add-engine =
+    .label = Dodaj
+    .accesskey = o
 search-find-more-link = Znajdź więcej wyszukiwarek
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -597,7 +589,6 @@ search-keyword-warning-bookmark = Wybrano słowo kluczowe używane obecnie przez
 
 ## Containers Section
 
-containers-back-link = « Wróć
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -616,20 +607,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Usuń
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Zabierz swoją sieć ze sobą
 sync-signedout-description = Synchronizuj zakładki, historię, karty, hasła, dodatki i preferencje między wszystkimi swoimi urządzeniami.
-sync-signedout-account-title = { -fxaccount-brand-name }
-sync-signedout-account-create = Nie masz konta? Utwórz je…
-    .accesskey = U
-sync-signedout-account-signin =
-    .label = Zaloguj się…
-    .accesskey = Z
 sync-signedout-account-signin2 =
     .label = Zaloguj się do { -sync-brand-short-name(case: "gen", capitalization: "lower") }…
     .accesskey = Z
@@ -643,16 +625,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Firefox na <a data-l10n-name="android-link">Androida</a> <img data-l10n-name="android-icon"/> i <a data-l10n-name="ios-link">iOS</a> <img data-l10n-name="ios-icon"/> daje możliwość synchronizacji z urządzeniami przenośnymi.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Zmień obraz przypisany do konta
-sync-disconnect =
-    .label = Rozłącz…
-    .accesskey = R
 sync-sign-out =
     .label = Wyloguj się…
     .accesskey = W
@@ -669,8 +645,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Zaloguj się
     .accesskey = o
-sync-signedin-settings-header = Ustawienia synchronizacji
-sync-signedin-settings-desc = Wybierz, co synchronizować pomiędzy urządzeniami za pomocą przeglądarki { -brand-short-name }:
 
 ## Sync section - enabling or disabling sync.
 
@@ -723,10 +697,6 @@ sync-engine-tabs =
     .label = karty
     .tooltiptext = Lista otwartych stron na wszystkich synchronizowanych urządzeniach
     .accesskey = k
-sync-engine-logins =
-    .label = dane logowania
-    .tooltiptext = Zachowane nazwy użytkownika i hasła
-    .accesskey = l
 sync-engine-logins-passwords =
     .label = dane logowania i hasła
     .tooltiptext = Zachowane nazwy użytkownika i hasła
@@ -765,18 +735,10 @@ sync-device-name-save =
     .label = Zachowaj
     .accesskey = Z
 sync-connect-another-device = Połącz inne urządzenie
-sync-manage-devices = Zarządzaj urządzeniami
-sync-fxa-begin-pairing = Powiąż urządzenie
-sync-tos-link = Warunki korzystania z usługi
-sync-fxa-privacy-notice = Prywatność
 
 ## Privacy Section
 
 privacy-header = Prywatność
-
-## Privacy Section - Forms
-
-logins-header = Dane logowania i hasła
 
 ## Privacy Section - Logins and Passwords
 
@@ -910,8 +872,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Blokowanie:
     .accesskey = B
-sitedata-option-block-trackers =
-    .label = śledzące zewnętrznych witryn
 sitedata-option-block-cross-site-trackers =
     .label = śledzące między witrynami
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -957,27 +917,9 @@ addressbar-suggestions-settings = Zmień preferencje podpowiedzi dostarczanych p
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Blokowanie treści
-content-blocking-section-description = Chroń swoją prywatność podczas przeglądania. Blokuj niewidoczne elementy, które śledzą odwiedzane witryny i Cię profilują. Zablokowanie niektórych treści może przyspieszyć wczytywanie stron.
 content-blocking-enhanced-tracking-protection = Wzmocniona ochrona przed śledzeniem
 content-blocking-section-top-level-description = Elementy śledzące monitorują Cię w Internecie, zbierając informacje o Twoich działaniach i zainteresowaniach. { -brand-short-name } blokuje wiele tych elementów i inne złośliwe skrypty.
 content-blocking-learn-more = Więcej informacji
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standardowe
-    .accesskey = S
-content-blocking-setting-strict =
-    .label = Ścisłe
-    .accesskey = e
-content-blocking-setting-custom =
-    .label = Własne
-    .accesskey = W
-content-blocking-standard-desc = Wyważone pod kątem ochrony i szybkości wczytywania stron. Dopuszcza pewne elementy śledzące, aby strony działały prawidłowo.
-content-blocking-strict-description = Silniejsza ochrona, ale może powodować problemy z niektórymi stronami.
-content-blocking-custom-desc = Wybierz, co blokować:
-content-blocking-private-trackers = znane elementy śledzące w oknach prywatnych
-content-blocking-third-party-cookies = ciasteczka zewnętrznych witryn używane do śledzenia
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1004,23 +946,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = ciasteczka śledząc
 content-blocking-social-media-trackers = elementy śledzące serwisów społecznościowych
 content-blocking-all-cookies = wszystkie ciasteczka
 content-blocking-unvisited-cookies = ciasteczka z nieodwiedzonych witryn
-content-blocking-all-windows-trackers = znane elementy śledzące we wszystkich oknach
 content-blocking-all-windows-tracking-content = treści z elementami śledzącymi we wszystkich oknach
 content-blocking-all-third-party-cookies = wszystkie ciasteczka zewnętrznych witryn
 content-blocking-cryptominers = elementy używające komputera użytkownika do generowania kryptowalut
 content-blocking-fingerprinters = elementy śledzące przez zbieranie informacji o konfiguracji
 content-blocking-warning-title = Ostrzeżenie
-content-blocking-warning-description = Blokowanie treści może powodować problemy z niektórymi stronami. Blokowanie można łatwo wyłączyć na stronach, którym ufasz.
-content-blocking-learn-how = Więcej informacji
 content-blocking-and-isolating-etp-warning-description = Blokowanie elementów śledzących i izolowanie ciasteczek może wpłynąć na funkcjonowanie niektórych stron. Odśwież stronę z włączonymi elementami śledzącymi, aby wyświetlić całą jej zawartość.
 content-blocking-warning-learn-how = Więcej informacji
 content-blocking-reload-description = Zastosowanie tych zmian wymaga odświeżenia kart.
 content-blocking-reload-tabs-button =
     .label = Odśwież wszystkie karty
     .accesskey = O
-content-blocking-trackers-label =
-    .label = elementy śledzące:
-    .accesskey = e
 content-blocking-tracking-content-label =
     .label = treści z elementami śledzącymi:
     .accesskey = e
@@ -1078,12 +1014,6 @@ permissions-notification-settings =
 permissions-notification-link = Więcej informacji
 permissions-notification-pause =
     .label = Wstrzymaj powiadomienia do czasu ponownego uruchomienia przeglądarki { -brand-short-name }
-    .accesskey = W
-permissions-block-autoplay-media2 =
-    .label = Blokowanie automatycznego odtwarzania dźwięku przez strony
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = Wyjątki…
     .accesskey = W
 permissions-autoplay = Automatyczne odtwarzanie
 permissions-autoplay-settings =

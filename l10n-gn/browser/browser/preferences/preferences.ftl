@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = { -brand-short-name } oñemboheko jave ojoko hag̃ua tapykuehohápe añoite
 do-not-track-option-always =
     .label = Katui
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Jeporavorã
-           *[other] Jerohoryvéva
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Jeporavorã
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Jepysokue, <img data-l10n-name="icon"/>
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Jepysokue, <img data-l10n-name="icon"/> { $name }, oma’ẽag̃ui kuatiarogue rendayke pyahúre.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, ohechahína ko ñemboheko.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, oma’ẽag̃ui ko ñemboheko rehe.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Ko ñemboheko ojogueraháta opai
 update-application-use-service =
     .label = Eipuru peteĩ mba’epytyvõrã mokõiha pegua remboguejy hag̃ua tekopyahu
     .accesskey = b
-update-enable-search-update =
-    .label = Jehekaha mongu’eha ñembohekopyahu ijeheguíva
-    .accesskey = e
-update-pref-write-failure-title = Ojavy jehai
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Ndaikatúi eñongatu pe jeguerohoryvéva. Ndaikatúi ehai marandurendápe: { $path }
 update-setting-write-failure-title = Ojavy eñongatúvo mbohekopyahu eguerohoryvéva
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Toñembojoaju jeheka renda tembipuru rendápe
 search-engine-default-header = Hekaha ypykuéva
-search-engine-default-desc = Eiporavo hekaha mongu’eha ijypykuéva eipuru hag̃ua kundaharape ha jehekaha rendápe.
 search-engine-default-desc-2 = Kóva nde jeheka mongu’eha ypyguáva kundaharape renda ha jehekeha rendápe.
 search-engine-default-private-desc-2 = Emoĩ jeheka mongu’eha ypyguáramo ovetã ñemíme g̃uarã
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Pe’a
     .accesskey = R
+search-add-engine =
+    .label = Mbojuaju
+    .accesskey = A
 search-find-more-link = Ejuhu hetave hekaha mongu’eha
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = Eiporavókuri peteĩ jehero oipurúmava ambue 
 
 ## Containers Section
 
-containers-back-link = « Ou jey
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Mboguete
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Egueraha neñanduti nendive
 sync-signedout-description = Embojuehe nde rechaukaha, tembiasakue, tendayke, ñe’ẽñemi, moĩmbaha ha jerohoryvéva opaite nemba’e’oka rupi.
-sync-signedout-account-title = Eike { -fxaccount-brand-name } ndive
-sync-signedout-account-create = Nanemba’etéi gueteri piko? Ejapomi
-    .accesskey = c
-sync-signedout-account-signin =
-    .label = Eike…
-    .accesskey = I
 sync-signedout-account-signin2 =
     .label = Eñepyrũ tembiapo { -sync-brand-short-name }-pe…
     .accesskey = i
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Emboguejy Aguaratata kóvape g̃uarã:<img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> térã <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> embojuehe hag̃ua nemba’e’oka oku’éva rehe.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Emoambue nera’ãnga nemba’ete pegua
-sync-disconnect =
-    .label = Ñesẽte…
-    .accesskey = D
 sync-sign-out =
     .label = Ñesẽte
     .accesskey = ñ
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Eñemboheraguapy
     .accesskey = g
-sync-signedin-settings-header = Ñembojuehe ñemoĩporã
-sync-signedin-settings-desc = Eiporavo mba’éichapa embojuehéta nemba’e’oka { -brand-short-name } ndive.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = Tendayképe jeike
     .tooltiptext = Tysýi ojehechaukahápe opa mba’e jurujáva oĩva mba’e’oka mbojuehepyrépe
     .accesskey = T
-sync-engine-logins =
-    .label = Tembiapo moñepyrũ
-    .tooltiptext = Puruhára réra ha ñe’ẽñemi reñongatúva’ekue
-    .accesskey = L
 sync-engine-logins-passwords =
     .label = Tembiapo ñepyrũ ha ñe’ẽñemi
     .tooltiptext = Puruhára réra ha ñe’ẽñemi ñongatupyre
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Eñongatu
     .accesskey = v
 sync-connect-another-device = Embojuaju ambue mba’e’oka
-sync-manage-devices = Eñangareko mba’e’okáre
-sync-fxa-begin-pairing = Embojoja mba’e’oka
-sync-tos-link = Mba’epytyvõrã ñemboguata
-sync-fxa-privacy-notice = Purureko ñemiguáva momarandu
 
 ## Privacy Section
 
 privacy-header = Kundahára Ñemigua
-
-## Privacy Section - Forms
-
-logins-header = Tembiapo ñepyrũ ha ñe’ẽñemi
 
 ## Privacy Section - Logins and Passwords
 
@@ -906,8 +868,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Peteĩchagua tetepy jokopyre
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Mbohapyháva rekaha
 sitedata-option-block-cross-site-trackers =
     .label = Tenda ojoasáva rapykuehóva
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -953,27 +913,9 @@ addressbar-suggestions-settings = Jerohoryvéva jehekaha mongu’eha je’epyre 
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Ejoko tetepy
-content-blocking-section-description = Emo’ã nde rekoñemi eikundahakuévo. Ejoko tetepy ohapykuehóva umi tenda eike hague ha ojapo mba’ete. Ejokóvo ndahetái tetepy ikatuhína ombopya’eve kuatiarogue ñemyenyhẽ.
 content-blocking-enhanced-tracking-protection = Tapykueho mo’ãha iporãvéva
 content-blocking-section-top-level-description = Umi tapykuehoha oike ñandutípe ombyaty hag̃ua marandu umi nerembiapo rapykuere. { -brand-short-name } ojoko heta tapykuehoha ha ambue scripts imarãva.
 content-blocking-learn-more = Eikuaave
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Ypygua
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Mbaretépe
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Ñemomba’e
-    .accesskey = C
-content-blocking-standard-desc = Ijojáva omo’ã ha oikoporã hag̃ua. Omoneĩ ndahetái tapykuehápe ikatu hag̃uáicha ñanduti renda oiko hekopete.
-content-blocking-strict-description = Peteĩ ñemo’ã imbaretevéva ikatu ombojavyka ndahetái tenda.
-content-blocking-custom-desc = Eiporavo mba’etépa ejokóta.
-content-blocking-private-trackers = Jehekaha ojekuaáva ovetã ñemiguápe añoite
-content-blocking-third-party-cookies = Jehekaha kookie mbohapyguáva
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1000,23 +942,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Kookie rapykueho ten
 content-blocking-social-media-trackers = Ava ñandutieta rapykuehoha
 content-blocking-all-cookies = Opavavete kookie
 content-blocking-unvisited-cookies = Kookie eike’ỹ hague
-content-blocking-all-windows-trackers = Jehekaha ojekuaáva opaite ovetãme
 content-blocking-all-windows-tracking-content = Tetepy rapykuehoha opaite ovetãme
 content-blocking-all-third-party-cookies = Opaite kookie mbohapyguáva
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = ¡Ema’ẽmi!
-content-blocking-warning-description = Tetepy jejoko ikatu nomomba’apo porãi ñanduti renda. Ikatúramo eipe’a pe jokoha tenda ejeroviaha pegua.
-content-blocking-learn-how = Mba’éicha eikuaa
 content-blocking-and-isolating-etp-warning-description = Ejokóvo tapykuehoha ha kookie ñemomombyry ikatu ombyai peteĩva tembiapoite. Emyanyhẽjey kuatiarogue tapykuehoha ndive emyanyhẽ hag̃ua opaite tetepy.
 content-blocking-warning-learn-how = Mba’éichapa eikuaáta
 content-blocking-reload-description = Emonyhẽjeyva’erã umi tendayke oiko hag̃ua ko’ã moambuepyre.
 content-blocking-reload-tabs-button =
     .label = Embohekopyahu opaite tendayke
     .accesskey = E
-content-blocking-trackers-label =
-    .label = Hekahára
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = Tetepy rapykuehoha
     .accesskey = T
@@ -1075,12 +1011,6 @@ permissions-notification-link = Eikuaave
 permissions-notification-pause =
     .label = Tojejoko momarandu’i oñepyrũjey peve { -brand-short-name }
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Ejoko ñanduti renda ani hag̃ua omboheta ñe’ẽpu ijehegui
-    .accesskey = E
-permissions-block-autoplay-media-exceptions =
-    .label = Ykepegua...
-    .accesskey = E
 permissions-autoplay = Mbohetajehegui
 permissions-autoplay-settings =
     .label = Ñemboheko
