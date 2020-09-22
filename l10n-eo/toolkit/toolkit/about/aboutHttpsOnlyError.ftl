@@ -18,3 +18,4 @@ about-httpsonly-explanation-nosupport = Plej verŝajne, la retejo simple ne subt
 about-httpsonly-explanation-risk = Ankaŭ povus esti ke atakanto rilatu tion ĉi. Se vi decidas tamen viziti la retejon, vi ne devus sendi iun ajn delikatan informon, kiel pasvortojn, retpoŝtojn aŭ detalojn de kreditkarto.
 about-httpsonly-button-accept-and-continue = Akcepti la riskon kaj daŭrigi
 about-httpsonly-button-go-back = Iri reen
+about-httpsonly-link-learn-more = Pli da informo…

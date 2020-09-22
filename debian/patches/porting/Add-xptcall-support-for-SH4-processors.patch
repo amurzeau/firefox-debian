@@ -13,10 +13,10 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=382214
  create mode 100644 xpcom/reflect/xptcall/src/md/unix/xptcstubs_linux_sh.cpp
 
 diff --git a/xpcom/reflect/xptcall/md/unix/moz.build b/xpcom/reflect/xptcall/md/unix/moz.build
-index 61a364abb6a..52b79889249 100644
+index 6e9608ec1a5..8ab57b76e1e 100644
 --- a/xpcom/reflect/xptcall/md/unix/moz.build
 +++ b/xpcom/reflect/xptcall/md/unix/moz.build
-@@ -252,6 +252,11 @@ if CONFIG['OS_ARCH'] == 'Linux':
+@@ -257,6 +257,11 @@ if CONFIG['OS_ARCH'] == 'Linux':
              CXXFLAGS += [
                  '-fno-integrated-as',
              ]

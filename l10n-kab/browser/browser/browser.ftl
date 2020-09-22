@@ -318,8 +318,38 @@ enable-devtools-popup-description = Akken ad tesqedceḍ anegzum F12, ldi qbel D
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Nadi neɣ sekcem tansa
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Nadi neɣ sekcem tansa
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Nadi deg uẓeṭṭa web
+    .aria-label = Nadi s { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Sekcem awalen n unadi
+    .aria-label = Nadi s { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Sekcem awalen n unadi
+    .aria-label = Nadi s tecraḍ
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Sekcem awalen n unadi
+    .aria-label = Amazray n unadi
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Sekcem awalen n unadi
+    .aria-label = Iccaren n unadi
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

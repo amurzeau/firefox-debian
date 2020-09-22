@@ -112,6 +112,9 @@ urlbar-search-tips-redirect-2 = เริ่มการค้นหาของ
 
 ## Local search mode indicator labels in the urlbar
 
+urlbar-search-mode-bookmarks = ที่คั่นหน้า
+urlbar-search-mode-tabs = แท็บ
+urlbar-search-mode-history = ประวัติ
 
 ##
 
@@ -188,6 +191,12 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = ตั้งเป็นเครื่องมือค้นหาเริ่มต้นสำหรับหน้าต่างส่วนตัว
     .accesskey = ส
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -196,6 +205,12 @@ search-one-offs-context-set-as-default-private =
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
 
+search-one-offs-bookmarks =
+    .tooltiptext = ที่คั่นหน้า ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = แท็บ ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = ประวัติ ({ $restrict })
 
 ## Bookmark Panel
 
@@ -303,8 +318,42 @@ enable-devtools-popup-description = หากต้องการใช้ท�
 
 urlbar-default-placeholder =
     .defaultPlaceholder = ค้นหาหรือป้อนที่อยู่
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = ค้นหาหรือป้อนที่อยู่
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = ค้นหาเว็บ
+    .aria-label = ค้นหาด้วย { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = ป้อนคำค้นหา
+    .aria-label = ค้นหา { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = ป้อนคำค้นหา
+    .aria-label = ค้นหาที่คั่นหน้า
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = ป้อนคำค้นหา
+    .aria-label = ค้นหาประวัติ
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = ป้อนคำค้นหา
+    .aria-label = ค้นหาแท็บ
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = ค้นหาด้วย { $name } หรือใส่ที่อยู่
 urlbar-remote-control-notification-anchor =
     .tooltiptext = เบราว์เซอร์อยู่ภายใต้การควบคุมระยะไกล
 urlbar-permissions-granted =

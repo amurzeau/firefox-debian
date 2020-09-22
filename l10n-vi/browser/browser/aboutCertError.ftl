@@ -75,7 +75,7 @@ captivePortal-title = Đăng nhập vào mạng
 # You don't have to include it in your translation if your language does not have a written word like this.
 malformedURI-title = Hmm. Địa chỉ không đúng.
 netInterrupt-title = Kết nối bị ngắt
-notCached-title = Tài liệu bị hết hạn
+notCached-title = Tài liệu đã hết hạn
 netOffline-title = Chế độ ngoại tuyến
 contentEncodingError-title = Lỗi encoding
 unsafeContentType-title = Kiểu tập tin không an toàn

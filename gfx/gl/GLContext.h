@@ -137,6 +137,7 @@ enum class GLFeature {
   texture_half_float,
   texture_half_float_linear,
   texture_non_power_of_two,
+  texture_norm16,
   texture_rg,
   texture_storage,
   texture_swizzle,
@@ -443,6 +444,7 @@ class GLContext : public GenericAtomicRefCounted, public SupportsWeakPtr {
     EXT_texture_compression_s3tc_srgb,
     EXT_texture_filter_anisotropic,
     EXT_texture_format_BGRA8888,
+    EXT_texture_norm16,
     EXT_texture_sRGB,
     EXT_texture_storage,
     EXT_timer_query,
@@ -3359,25 +3361,6 @@ class GLContext : public GenericAtomicRefCounted, public SupportsWeakPtr {
    * contents of the new back buffer are undefined.
    */
   virtual bool SwapBuffers() { return false; }
-
-  /**
-   * If this context supports it, submit a subset of its content instead of
-   * using SwapBuffer.
-   *
-   * Check the result of HasCopySubBuffer Before calling this.
-   *
-   * Only supported by GLX contexts on MESA.
-   */
-  virtual void CopySubBuffer(int x, int y, int w, int h) {
-    MOZ_CRASH("Unsupported CopySubBuffer");
-  }
-
-  /**
-   * Returns true if this context supports CopySubBuffer.
-   *
-   * Only supported by GLX contexts on MESA.
-   */
-  virtual bool HasCopySubBuffer() const { return false; }
 
   /**
    * Stores a damage region (in origin bottom left coordinates), which

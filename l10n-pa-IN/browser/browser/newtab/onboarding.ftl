@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = ਹੋਰ ਜਾਣੋ
-onboarding-button-label-try-now = ਹੁਣੇ ਕੋਸ਼ਿਸ਼ ਕਰੋ
 onboarding-button-label-get-started = ਸ਼ੁਰੂ ਕਰੀਏ
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = ਸ਼ੁਰੂ ਕਰੀਏ
 onboarding-welcome-header = { -brand-short-name } ਵਲੋਂ ਜੀ ਆਇਆਂ ਨੂੰ
 onboarding-welcome-body = ਤੁਸੀਂ ਬਰਾਊਜ਼ਰ ਤਾਂ ਲੈ ਲਿਆ ਹੈ।<br/>ਬਾਕੀ { -brand-product-name } ਨੂੰ ਜਾਣੋ।
 onboarding-welcome-learn-more = ਫਾਇਦਿਆਂ ਬਾਰੇ ਹੋਰ ਜਾਣੋ।
-onboarding-join-form-header = { -brand-product-name } ਦਾ ਹਿੱਸਾ ਬਣੋ
 onboarding-welcome-modal-get-body = ਤੁਹਾਡੇ ਕੋਲ ਨਵਾਂ ਨਕੋਰ ਬਰਾਊਜ਼ਰ ਹੈ।<br/>ਹੁਣ { -brand-product-name } ਦਾ ਪੂਰਾ ਫਾਇਦਾ ਲਵੋ।
 onboarding-welcome-modal-supercharge-body = ਆਪਣੀ ਪਰਦੇਦਾਰੀ ਸੁਰੱਖਿਆ ਨੂੰ ਵਧੀਆ ਬਣਾਓ।
 onboarding-welcome-modal-privacy-body = ਤੁਸੀਂ ਬਰਾਊਜ਼ਰ ਲੈ ਲਿਆ ਹੈ। ਆਓ ਫੇਰ ਹੋਰ ਪਰਦੇਦਾਰੀ ਸੁਰੱਖਿਆ ਜੋੜੀਏ।
@@ -57,6 +55,9 @@ onboarding-multistage-import-header = ਆਪਣੇ ਪਾਸਵਰਡ, <br/>ਬ�
 onboarding-multistage-import-subtitle = ਹੋਰ ਬਰਾਊਜ਼ਰ ਨੂੰ ਛੱਡ ਕੇ ਆ ਰਹੇ ਹੋ? { -brand-short-name } ਲਈ ਹਰ ਚੀਜ਼ ਲਿਆਉਣ ਸੌਖੀ ਹੈ।
 onboarding-multistage-import-primary-button-label = ਦਰਾਮਦ ਸ਼ੁਰੂ ਕਰੋ
 onboarding-multistage-import-secondary-button-label = ਹਾਲੇ ਨਹੀਂ
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = ਇੱਥੇ ਸੂਚੀਬੱਧ ਸਾਈਟਾਂ ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ ਮਿਲੀਆਂ ਸਨ। { -brand-short-name } ਕਿਸੇ ਹੋਰ ਬਰਾਊਜ਼ਰ ਤੋਂ ਡਾਟਾ ਉਦੋੱ ਤੱਕ ਸੰਭਾਲਦਾ ਜਾਂ ਸਿੰਕ ਨਹੀਂ ਕਰਦਾ, ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ ਇਸ ਨੂੰ ਦਰਾਮਦ ਕਰਨ ਦੀ ਚੋਣ ਨਹੀਂ ਕਰਦੇ।
 # Aria-label to make the "steps" of multistage onboarding visible to screen readers.
 # Variables:
 #   $current (Int) - Number of the current page
@@ -83,6 +84,70 @@ onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
 ## doesn't become too long. Line breaks will be preserved when displaying the
 ## tooltip.
 
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
+    .title =
+        ਬਟਨ, ਮੀਨੂ ਅਤੇ ਵਿੰਡੋਆਂ ਲਈ ਆਪਣੇ ਓਪਰੇਟਿੰਗ
+        ਸਿਸਟਮ ਦੀ ਦਿੱਖ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰੋ।
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        ਬਟਨਾਂ, ਮੀਨੂ ਅਤੇ ਵਿੰਡੋਆਂ ਲਈ ਫਿੱਕੀ ਦਿੱਖ
+        ਵਰਤੋ।
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        ਬਟਨਾਂ, ਮੀਨੂ ਅਤੇ ਵਿੰਡੋਆਂ ਲਈ ਗੂੜ੍ਹੀ
+        ਦਿੱਖ ਵਰਤੋ।
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title =
+        ਬਟਨਾਂ, ਮੀਨੂ ਅਤੇ ਵਿੰਡੋਆਂ ਲਈ ਰੰਗਦਾਰ
+        ਦਿੱਖ ਵਰਤੋ।
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        ਬਟਨ, ਮੀਨੂ ਅਤੇ ਵਿੰਡੋਆਂ ਲਈ ਆਪਣੇ ਓਪਰੇਟਿੰਗ
+        ਸਿਸਟਮ ਦੀ ਦਿੱਖ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰੋ।
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        ਬਟਨ, ਮੀਨੂ ਅਤੇ ਵਿੰਡੋਆਂ ਲਈ ਆਪਣੇ ਓਪਰੇਟਿੰਗ
+        ਸਿਸਟਮ ਦੀ ਦਿੱਖ ਨੂੰ ਪ੍ਰਾਪਤ ਕਰੋ।
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        ਬਟਨਾਂ, ਮੀਨੂ ਅਤੇ ਵਿੰਡੋਆਂ ਲਈ ਫਿੱਕੀ ਦਿੱਖ
+        ਵਰਤੋ।
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        ਬਟਨਾਂ, ਮੀਨੂ ਅਤੇ ਵਿੰਡੋਆਂ ਲਈ ਫਿੱਕੀ ਦਿੱਖ
+        ਵਰਤੋ।
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        ਬਟਨਾਂ, ਮੀਨੂ ਅਤੇ ਵਿੰਡੋਆਂ ਲਈ ਗੂੜ੍ਹੀ
+        ਦਿੱਖ ਵਰਤੋ।
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        ਬਟਨਾਂ, ਮੀਨੂ ਅਤੇ ਵਿੰਡੋਆਂ ਲਈ ਗੂੜ੍ਹੀ
+        ਦਿੱਖ ਵਰਤੋ।
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        ਬਟਨਾਂ, ਮੀਨੂ ਅਤੇ ਵਿੰਡੋਆਂ ਲਈ ਰੰਗਦਾਰ
+        ਦਿੱਖ ਵਰਤੋ।
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        ਬਟਨਾਂ, ਮੀਨੂ ਅਤੇ ਵਿੰਡੋਆਂ ਲਈ ਰੰਗਦਾਰ
+        ਦਿੱਖ ਵਰਤੋ।
 
 ## Welcome full page string
 
@@ -108,11 +173,7 @@ onboarding-sync-form-sub-header = { -sync-brand-name } ਨਾਲ ਜਾਰੀ �
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = ਫਾਇਦੇਮੰਦ ਉਤਪਾਦ
 onboarding-benefit-products-text = ਸੰਦਾਂ ਦੇ ਸਮੂਹ ਨਾਲ ਕੰਮ ਕਰੋ, ਜੋ ਕਿ ਤੁਹਾਡੇ ਡਿਵਾਈਸਾਂ ਉੱਤੇ ਤੁਹਾਡੀ ਪਰਦੇਦਾਰੀ ਦਾ ਸਨਮਾਣ ਕਰਦੇ ਹਨ।
-onboarding-benefit-knowledge-title = ਅਮਲੀ ਗਿਆਨ
-onboarding-benefit-knowledge-text = ਆਨਲਾਈਨ ਵੱਧ ਚੁਸਤ ਅਤੇ ਵੱਧ ਸੁਰੱਖਿਅਤ ਰਹਿਣ ਲਈ ਤੁਹਾਨੂੰ ਚਾਹੀਦੀ ਹਰ ਚੀਜ਼ ਸਿੱਖੋ।
-onboarding-benefit-privacy-title = ਅਸਲ ਪਰਦੇਦਾਰੀ
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -133,17 +194,6 @@ onboarding-benefit-lockwise-text = ਪਾਸਵਰਡਾਂ ਦਾ ਇੰਤਜ਼�
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = ਪ੍ਰਾਈਵੇਟ ਬਰਾਊਜ਼ਿੰਗ
-onboarding-private-browsing-text = ਖੁਦ ਬਰਾਊਜ਼ ਕਰੋ। ਸਮੱਗਰੀ 'ਤੇ ਪਾਬੰਦੀ ਨਾਲ ਪ੍ਰਾਈਵੇਟ ਬਰਾਊਜ਼ਿੰਗ ਰਾਹੀਂ ਆਨਲਾਈਨ ਟਰੈਕਰਾਂ ਉੱਤੇ ਪਾਬੰਦੀ ਲੱਗਦੀ ਹੈ, ਜੋ ਕਿ ਵੈੱਬ 'ਤੇ ਤੁਹਾਡਾ ਪਿੱਛਾ ਕਰਦੇ ਹਨ।
-onboarding-screenshots-title = ਸਕਰੀਨਸ਼ਾਟ
-onboarding-screenshots-text = ਸਕਰੀਨਸ਼ਾਟ ਲਵੋ, ਸੁਰੱਖਿਅਤ ਕਰੋ ਅਤੇ ਸਾਂਝਾ ਕਰੋ - ਬਿਨਾਂ { -brand-short-name } ਨੂੰ ਨਹੀਂ ਛੱਡਿਆ। ਜਿਵੇਂ ਤੁਸੀਂ ਬਰਾਊਜ਼ ਕਰਦੇ ਹੋ, ਇੱਕ ਖੇਤਰ ਜਾਂ ਇੱਕ ਪੂਰਾ ਸਫ਼ਾ ਕੈਪਚਰ ਕਰੋ। ਫਿਰ ਆਸਾਨ ਪਹੁੰਚ ਅਤੇ ਸਾਂਝਾ ਕਰਨ ਲਈ ਵੈਬ ਤੇ ਸੁਰੱਖਿਅਤ ਕਰੋ।
-onboarding-addons-title = ਐਡ-ਆਨ
-onboarding-addons-text = ਹੋਰ ਫ਼ੀਚਰ ਜੋੜੋ, ਜੋ ਤੁਹਾਡੇ ਲਈ { -brand-short-name } ਸਖ਼ਤ ਮਿਹਨਤ ਕਰਦੇ ਹਨ। ਕੀਮਤਾਂ ਦੀ ਤੁਲਨਾ ਕਰੋ, ਮੌਸਮ ਦੀ ਜਾਂਚ ਕਰੋ ਜਾਂ ਕਸਟਮ ਥੀਮ ਦੇ ਨਾਲ ਆਪਣੀ ਸ਼ਖਸੀਅਤ ਨੂੰ ਦਰਸਾਓ।
-onboarding-ghostery-title = ਗੋਸਟਰੀ
-onboarding-ghostery-text = ਗੋਸਟਰੀ ਵਰਗੇ ਇਕਸਟੈਨਸ਼ਨਾਂ ਦੇ ਨਾਲ ਤੇਜ਼ੀ, ਚੁਸਤ ਜਾਂ ਸੁਰੱਖਿਅਤ ਬਰਾਊਜ਼ ਕਰੋ, ਜੋ ਤੁਹਾਨੂੰ ਤੰਗ ਕਰਨ ਵਾਲੇ ਇਸ਼ਤਿਹਾਰਾਂ ਰੋਕਣ ਦਿੰਦਾ ਹੈ।
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = ਸਿੰਕ ਕਰੋ
-onboarding-fxa-text = { -fxaccount-brand-name } ਲਈ ਸਾਈਨ ਅੱਪ ਕਰੋ ਅਤੇ ਆਪਣੇ ਬੁੱਕਮਾਰਕਾਂ, ਪਾਸਵਰਡਾਂ ਨੂੰ ਸਿੰਕ ਕਰੋ ਤੇ ਜਿੱਥੇ ਵੀ { -brand-short-name } ਨੂੰ ਵਰਤੋਂ, ਉੱਥੇ ਟੈਬਾਂ ਨੂੰ ਖੋਲ੍ਹੋ।
 onboarding-tracking-protection-title2 = ਟਰੈਕ ਹੋਣ ਤੋਂ ਸੁਰੱਖਿਆ
 onboarding-tracking-protection-text2 = { -brand-short-name } ਵੈੱਬਸਾਈਤਾਂ ਨੂੰ ਤੁਹਾਡੇ ਆਨਲਾਈਨ ਹੋਣ ਨੂੰ ਟਰੈਕ ਕਰਨ ਤੋਂ ਰੋਕਣ ਲਈ ਮਦਦ ਕਰਦਾ ਹੈ, ਵੈੱਬ ਉੱਤੇ ਇਸ਼ਤਿਹਾਰਾ ਨੂੰ ਤੁਹਾਡਾ ਪਿੱਛਾ ਕਰਨਾ ਔਖਾ ਬਣਾ ਦਿੰਦਾ ਹੈ।
 onboarding-tracking-protection-button2 = ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ
@@ -152,7 +202,6 @@ onboarding-data-sync-title = ਆਪਣੀਆਂ ਸੈਟਿੰਗਾਂ ਆਪ�
 onboarding-data-sync-text2 = ਜਿੱਥੇ ਵੀ ਕਿਤੇ ਤੁਸੀਂ { -brand-product-name } ਵਰਤੋ, ਆਪਣੇ ਬੁੱਕਮਾਰਕਾਂ, ਪਾਸਵਰਡਾਂ ਅਤੇ ਹਰ ਚੀਜ਼ ਨੂੰ ਸਿੰਕ ਕਰੋ।
 onboarding-data-sync-button2 = { -sync-brand-short-name } 'ਚ ਸਾਇਨ-ਇਨ ਕਰੋ
 onboarding-firefox-monitor-title = ਡਾਟਾ ਚੋਰੀ ਬਾਰੇ ਚੌਕਸ ਰਹੋ
-onboarding-firefox-monitor-text = { -monitor-brand-name } ਨਿਗਰਾਨੀ ਕਰਦਾ ਹੈ ਕਿ ਜੇ ਤੁਹਾਡਾ ਈਮੇਲ ਡਾਟਾ ਸੰਨ੍ਹ ਲੱਗਣ ਵਿੱਚ ਆਇਆ ਹੈ ਅਤੇ ਤੁਹਾਨੂੰ ਨਵੀਆਂ ਸੰਨ੍ਹ ਲੱਗਣ ਵਿੱਚ ਆਉਣ ਉੱਤੇ ਚੌਕਸ ਕਰਦਾ ਹੈ।
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } ਨਿਗਰਾਨੀ ਕਰਦਾ ਹੈ ਕਿ ਜੇ ਤੁਹਾਡਾ ਈਮੇਲ ਡਾਟਾ ਲੱਭੇ ਕਿਸੇ ਸੰਨ੍ਹ ਲੱਗਣ ਵਿੱਚ ਆਇਆ ਹੈ ਅਤੇ ਤੁਹਾਨੂੰ ਨਵੀਆਂ ਸੰਨ੍ਹ ਲੱਗਣ ਵਿੱਚ ਆਉਣ ਉੱਤੇ ਚੌਕਸ ਕਰਦਾ ਹੈ।
 onboarding-firefox-monitor-button = ਚੌਕਸੀ ਲਈ ਸਾਇਨ ਅੱਪ ਕਰੋ
 onboarding-browse-privately-title = ਪਰਾਈਵੇਟ ਤੌਰ 'ਤੇ ਬਰਾਊਜ਼ ਕਰੋ
@@ -169,17 +218,11 @@ onboarding-mobile-phone-button = ਮੋਬਾਈਲ ਬਰਾਊਜ਼ਰ ਡਾਊ
 onboarding-send-tabs-title = ਟੈਬਾਂ ਖੁਦ ਨੂੰ ਮੌਕੇ 'ਤੇ ਭੇਜੋ
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = ਟੈਬਾਂ ਭੇਜੋ ਤੁਹਾਡੇ ਡਿਵਾਈਸਾਂ ਵਿਚਾਲੇ ਸਫ਼ਿਆਂ ਨੂੰ ਬਿਨਾਂ ਕਾਪੀ, ਚੇਪੋ ਜਾਂ ਬਰਾਊਜ਼ਰ ਤੋਂ ਦੂਰ ਗਏ ਬਿਨਾਂ ਤੁਰੰਤ ਸਾਂਝਾ ਕਰਨ ਦਿੰਦਾ ਹੈ।
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = ਆਪਣੇ ਡਿਵਾਈਸਾਂ ਵਿਚਾਲੇ ਸਫ਼ਿਆਂ ਨੂੰ ਬਿਨਾਂ ਲਿੰਕ ਕਾਪੀ ਕੀਤੇ ਜਾਂ ਬਰਾਊਜ਼ਰ ਛੱਡੇ ਸੌਖੀ ਤਰ੍ਹਾਂ ਸਾਂਝਾ ਕਰੋ।
 onboarding-send-tabs-button = ਟੈਬਾਂ ਭੇਜਣ ਦੀ ਵਰਤੋਂ ਸ਼ੁਰੂ ਕਰੋ
 onboarding-pocket-anywhere-title = ਹਰ ਥਾਂ 'ਤੇ ਪੜ੍ਹੋ ਤੇ ਸੁਣੋ
 onboarding-pocket-anywhere-text2 = { -pocket-brand-name } ਐਪ ਦੇ ਨਾਲ ਆਪਣੀ ਮਨਪਸੰਦ ਸਮੱਗਰੀ ਨੂੰ ਔਫਲਾਈਨ ਸੁਰੱਖਿਅਤ ਕਰੋ ਅਤੇ ਜਦੋਂ ਵੀ ਤੁਹਾਡੇ ਲਈ ਸੁਵਿਧਾਜਨਕ ਹੋਵੇ, ਉਸਨੂੰ ਪੜ੍ਹੋ, ਸੁਣੋ ਅਤੇ ਦੇਖੋ।
 onboarding-pocket-anywhere-button = { -pocket-brand-name } ਵਰਤ ਕੇ ਵੇਖੋ
-onboarding-lockwise-passwords-title = ਆਪਣੇ ਪਾਸਵਰਡ ਹਰ ਥਾਂ ਉੱਤੇ ਲੈ ਜਾਓ
-onboarding-lockwise-passwords-text2 = { -lockwise-brand-name } ਨਾਲ ਆਪਣੇ ਸੰਭਾਲੇ ਪਾਸਵਰਡਾਂ ਨੂੰ ਸੁਰੱਖਿਅਤ ਰੱਖੋ ਅਤੇ ਆਪਣੇ ਖਾਤੇ ਵਿੱਚ ਸੌਖਾ ਲਾਗਇਨ ਕਰੋ।
-onboarding-lockwise-passwords-button2 = ਐਪ ਲਵੋ
 onboarding-lockwise-strong-passwords-title = ਮਜ਼ਬੂਤ ਪਾਸਵਰਡ ਬਣਾਓ ਅਤੇ ਸੰਭਾਲੋ
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } ਮੌਕੇ ਉੱਤੇ ਮਜ਼ਬੂਤ ਪਾਸਵਰਡ ਬਣਾਉਂਦੀ ਅਤੇ ਉਹਨਾਂ ਸਾਰਿਆਂ ਨੂੰ ਇੱਕ ਥਾਂ ਉੱਤੇ ਸੰਭਾਲਦੀ ਹੈ।
 onboarding-lockwise-strong-passwords-button = ਆਪਣੇ ਲਾਗਇਨਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ

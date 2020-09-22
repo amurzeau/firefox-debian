@@ -58,5 +58,5 @@ attachments-placeholder-tooltip =
 key-toggle-attachment-pane =
     .key = { attachment-bucket-count.accesskey }
 button-return-receipt =
-    .label = Recibo
-    .tooltiptext = Solicitar um recibo de retorno desta mensagem
+    .label = Confirmação
+    .tooltiptext = Solicitar uma confirmação de leitura desta mensagem

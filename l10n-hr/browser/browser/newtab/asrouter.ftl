@@ -126,7 +126,7 @@ cfr-whatsnew-lockwise-take-link-text = Preuzmi aplikaciju
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Tipkaj manje, pronađi više s adresnom trakom
-cfr-whatsnew-searchbar-body-topsites = Sada, jednostavno odaberi adresnu traku i jedan okvir će se proširiti s poveznicama tvojih najkorištenijih stranica.
+cfr-whatsnew-searchbar-body-topsites = Sada, jednostavno odaberi adresnu traku i rasklopit će se jedan okvir s poveznicama tvojih najkorištenijih stranica.
 cfr-whatsnew-searchbar-icon-alt-text = Ikona za povećalo
 
 ## Picture-in-Picture

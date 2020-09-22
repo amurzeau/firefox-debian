@@ -80,6 +80,9 @@ show-dir-label =
         [windows] Ouvrir le dossier correspondant
        *[other] Ouvrir le dossier correspondant
     }
+environment-variables-title = Variables d’environnement
+environment-variables-name = Nom
+environment-variables-value = Valeur
 experimental-features-title = Fonctionnalités expérimentales
 experimental-features-name = Nom
 experimental-features-value = Valeur
@@ -107,8 +110,6 @@ graphics-desktop-environment = Environnement de bureau
 place-database-title = Base de données « Places »
 place-database-integrity = Intégrité
 place-database-verify-integrity = Vérifier l’intégrité
-js-title = JavaScript
-js-incremental-gc = Ramasse-miettes incrémentiel
 a11y-title = Accessibilité
 a11y-activated = Activée
 a11y-force-disabled = Empêcher l’accessibilité
@@ -138,7 +139,6 @@ restart-button-label = Redémarrer
 
 audio-backend = Backend audio
 max-audio-channels = Nombre maximum de canaux
-channel-layout = Mode de canal préféré
 sample-rate = Fréquence d’échantillonnage préférée
 roundtrip-latency = Latence aller-retour (écart type)
 media-title = Multimédia
@@ -282,7 +282,6 @@ support-blocklisted-bug = Mis en liste de blocage en raison de problèmes connus
 unknown-failure = Mis sur liste de blocage ; code d’erreur { $failureCode }
 d3d11layers-crash-guard = Compositeur D3D11
 d3d11video-crash-guard = Décodeur vidéo D3D11
-d3d9video-crash-buard = Décodeur vidéo D3D9
 d3d9video-crash-guard = Décodeur vidéo D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Décodeur vidéo WMF VPX

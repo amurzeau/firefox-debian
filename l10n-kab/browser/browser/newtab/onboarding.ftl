@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Lmed ugar
-onboarding-button-label-try-now = Ɛreḍ-it tura
 onboarding-button-label-get-started = Bdu
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Bdu
 onboarding-welcome-header = Ansuf γer { -brand-short-name }
 onboarding-welcome-body = Tesɛiḍ iminig. <br/> Wali ayen id-yeqqimen seg { -brand-product-name }.
 onboarding-welcome-learn-more = Lmed ugar ɣef ayen yeɛnan ibaɣuren.
-onboarding-join-form-header = Kki { -brand-product-name }
 onboarding-welcome-modal-get-body = Tesɛiḍ iminig.<br/>Tura awi-d ayen tzemreḍ seg { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Snerni taɣellist n tbaḑnint-ik/im.
 onboarding-welcome-modal-privacy-body = Tesɛiḑ iminig. Yyaw ad nesnerni taɣellist n tbaḍnit.
@@ -110,6 +108,46 @@ onboarding-multistage-theme-tooltip-alpenglow =
         Seqdec arwes s yiniten i tqeffalin,
         i wumuɣen d yisfuyla.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Ṭṭef arwes n unagraw-ik·im
+        n wammud i tqeffalin, i wumuɣen d yisfuyla.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Ṭṭef arwes n unagraw-ik·im
+        n wammud i tqeffalin, i wumuɣen d yisfuyla.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Seqdec arwes aceεlal i tqeffalin,
+        i wumuɣen d yisfuyla.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Seqdec arwes aceεlal i tqeffalin,
+        i wumuɣen d yisfuyla.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Seqdec arwes aberkan i tqeffalin,
+        i wumuɣen d yisfuyla.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Seqdec arwes aberkan i tqeffalin,
+        i wumuɣen d yisfuyla.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Seqdec arwes s yiniten i tqeffalin,
+        i wumuɣen d yisfuyla.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Seqdec arwes s yiniten i tqeffalin,
+        i wumuɣen d yisfuyla.
 
 ## Welcome full page string
 
@@ -135,11 +173,7 @@ onboarding-sync-form-sub-header = akken ad tkemleḍ akked { -sync-brand-name }
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Ifarisen ara teḥwiǧeḍ
 onboarding-benefit-products-text = Snerni tiffursa s useqdec n tegrumma n yifecka yettqadaṛen tudert-ik tusligt deg yibenkan-ik meṛṛa.
-onboarding-benefit-knowledge-title = Timusniwin ilaqen
-onboarding-benefit-knowledge-text = Lmed akk ayen ilaqen iwakken ad tiliḍ d uḥric yerna d maɣti deg internet.
-onboarding-benefit-privacy-title = Tudert tabaḍnit n tidet
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -160,17 +194,6 @@ onboarding-benefit-lockwise-text = Sefrek awalen uffiren i yettwaḍemnen u ara 
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Tunigin tusligt
-onboarding-private-browsing-text = Inig s yiman-ik. Tunigin s usewḥel n ugbur ad tsewḥel inedfaṛen iqnen i k-yeṭṭafaren di web.
-onboarding-screenshots-title = Tuṭṭfa n wegdil
-onboarding-screenshots-text = Ṭṭef, sekles u bḍu tuṭṭfiwin - war tufɣa seg { -brand-short-name }. Ṭṭef tamnaḍt neɣ akk asebter ticki tettinigeḍ. Sakin sekles ɣer web i unekcum d beṭṭu fessusen.
-onboarding-addons-title = Izegrar
-onboarding-addons-text = Rnu ugar n tmahilin iwakken { -brand-short-name } ad yeqdec akken i wen-iwata. Snemhel atigen, wali addad n tegnawt neɣ sken-d taweggiṭ-ik s usentel udmawan.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Inig s wudem arurad, uḥric, neɣ aɣelsan s isiɣzaf am Ghostery, ara k-yeǧǧen ad tesweḥleḍ adellel ur nemɛin ara.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Sync
-onboarding-fxa-text = Rnu { -fxaccount-brand-name } sakin mtawi ticraḍ-ik n yisebtar, awalen-ik uffiren akked yiccaren yeldin deg yal amḍiq anida i tesseqdaceḍ { -brand-short-name }.
 onboarding-tracking-protection-title2 = Ammesten mgal aḍfar
 onboarding-tracking-protection-text2 = { -brand-short-name } yessewḥal ismal web seg uḍfaṛ deg tunigin-ik, ayen yessiwwiren adellel yettaɛraḍen ad k-yeḍfeṛ deg Web.
 onboarding-tracking-protection-button2 = Amek iteddu
@@ -179,7 +202,6 @@ onboarding-data-sync-title = Awi iɣewwaṛen-ik yid-k
 onboarding-data-sync-text2 = Mtawi ticraḍ-ik n yisebtar, awalen-ik uffiren, d wugar, s kra wanida i tesqedceḍ { -brand-product-name }.
 onboarding-data-sync-button2 = Qqen ɣer { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Ḍfer s lqerban tarewla n yisefka
-onboarding-firefox-monitor-text = { -monitor-brand-name } yessenqad ma yella tansa-ik imayl tella deg trewla n yisefka daɣen ad k-id-yelɣu ticki tella deg trewla-nniḍen tamaynut n yisefka.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } yessenqad ma yella tansa-ik imayl tella deg trewla n yisefka yettwasnen daɣen ad k-id-yelɣu ticki tella deg trewla-nniḍen tamaynut n yisefka.
 onboarding-firefox-monitor-button = jerred akken ak-id-awḍen ilɣa
 onboarding-browse-privately-title = Inig s wudem uslig
@@ -196,17 +218,11 @@ onboarding-mobile-phone-button = Sali-d iminig aziraz
 onboarding-send-tabs-title = Azen i yiman-ik accaren-ik
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Tuzna n yiccaren ad yebḍu isebtar gar yibenkan-ik s war anɣal, asenṭeḍ neɣ tuffɣa seg yiminig.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Bḍu isebtar s wudem fessusen gar yibenkan-ik war ma tneɣleḍ iseɣwan neɣ ad teffɣeḍ seg yiminig.
 onboarding-send-tabs-button = Bdu aseqdec n Send Tabs
 onboarding-pocket-anywhere-title = Ɣer daɣe sel, s kra wanida telliḍ.
 onboarding-pocket-anywhere-text2 = Sekles igburen-ik inurifen s war tuqqna s usnas { -pocket-brand-name } i tɣuri, awali neɣ timesliwt melmi i tebɣiḍ.
 onboarding-pocket-anywhere-button = Ɛreḍ { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Awi awalen uffiren-ik anida tebɣiḍ
-onboarding-lockwise-passwords-text2 = Ḥrez awalen-ik uffiren d iɣelsanen daɣen qqen s wudem ɣer yimiḍanen-ik s { -lockwise-brand-name }.
-onboarding-lockwise-passwords-button2 = Awi asnas
 onboarding-lockwise-strong-passwords-title = Rnu daɣen sekles awalen uffiren iǧehden
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name }irennu awalen uffiren s wudem fessusen daɣen iseklas-iten meṛṛa deg yiwen n umḍiq.
 onboarding-lockwise-strong-passwords-button = Sefrek inekcumen-ik

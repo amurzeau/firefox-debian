@@ -318,8 +318,38 @@ enable-devtools-popup-description = Za uporabo bližnjice F12 prvič odprite raz
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Iskanje ali naslov strani
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Iskanje ali naslov strani
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Išči po spletu
+    .aria-label = Išči z iskalnikom { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Vnesite iskalni niz
+    .aria-label = Iskanje v { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Vnesite iskalni niz
+    .aria-label = Iskanje po zaznamkih
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Vnesite iskalni niz
+    .aria-label = Iskanje po zgodovini
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Vnesite iskalni niz
+    .aria-label = Iskanje po zavihkih
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

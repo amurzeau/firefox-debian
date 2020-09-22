@@ -50,7 +50,7 @@ import-from-360se =
     .label = 360 Secure Browser
     .accesskey = 3
 no-migration-sources = Không tìm thấy chương trình nào chứa dấu trang, lịch sử, hoặc dữ liệu mật khẩu.
-import-source-page-title = Nhập các Thiết lập và Dữ liệu từ
+import-source-page-title = Nhập cài đặt và dữ liệu
 import-items-page-title = Các mục cần nhập
 import-items-description = Chọn các mục để nhập:
 import-migrating-page-title = Đang nhập…
@@ -88,6 +88,7 @@ imported-edge-reading-list = Đang đọc danh sách (từ Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

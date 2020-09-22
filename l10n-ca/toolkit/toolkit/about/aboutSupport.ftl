@@ -17,6 +17,7 @@ extensions-id = ID
 support-addons-title = Complements
 support-addons-name = Nom
 support-addons-type = Tipus
+support-addons-enabled = Activat
 support-addons-version = Versió
 support-addons-id = ID
 security-software-title = Programari de seguretat
@@ -76,6 +77,9 @@ show-dir-label =
         [windows] Obre la carpeta
        *[other] Obre el directori
     }
+environment-variables-title = Variables d'entorn
+environment-variables-name = Nom
+environment-variables-value = Valor
 experimental-features-title = Funcions experimentals
 experimental-features-name = Nom
 experimental-features-value = Valor
@@ -103,8 +107,6 @@ graphics-desktop-environment = Entorn d'escriptori
 place-database-title = Base de dades de llocs
 place-database-integrity = Integritat
 place-database-verify-integrity = Verifica la integritat
-js-title = JavaScript
-js-incremental-gc = Recollida de deixalles incremental
 a11y-title = Accessibilitat
 a11y-activated = Activat
 a11y-force-disabled = Evita l'accessibilitat
@@ -134,7 +136,6 @@ restart-button-label = Reinicia
 
 audio-backend = Sistema de fons d'àudio
 max-audio-channels = Nombre màxim de canals
-channel-layout = Disposició de canals preferida
 sample-rate = Freqüència de mostratge preferida
 roundtrip-latency = Latència d'anada i tornada (desviació estàndard)
 media-title = Multimèdia
@@ -263,7 +264,6 @@ bug-link = error { $bugNumber }
 unknown-failure = És a la llista de bloquejos; codi d'error { $failureCode }
 d3d11layers-crash-guard = Compositor D3D11
 d3d11video-crash-guard = Descodificador de vídeo D3D11
-d3d9video-crash-buard = Descodificador de vídeo D3D9
 d3d9video-crash-guard = Descodificador de vídeo D3D9
 glcontext-crash-guard = OpenGL
 reset-on-next-restart = Reinicialitza als valors per defecte en el proper reinici

@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Payagan lang kung ang { -brand-short-name } ay naka-set na mag-block ng mga kilalang tracker.
 do-not-track-option-always =
     .label = Palagi
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Options
-           *[other] Mga Kagustuhan
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Options
@@ -50,6 +44,11 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = Mga { -brand-short-name } Experiment
+category-experimental =
+    .tooltiptext = Mga { -brand-short-name } Experiment
+pane-experimental-subtitle = Mag-ingat sa Pagpatuloy
+pane-experimental-search-results-header = Mga { -brand-short-name } Experiment: Mag-ingat sa Pagpatuloy
 help-button-label = Suporta sa { -brand-short-name }
 addons-button-label = Mga Extension at Tema
 focus-search =
@@ -354,13 +353,6 @@ update-application-warning-cross-user-setting = Ang setting na ito ay gagamitin 
 update-application-use-service =
     .label = Gumamit ng background service upang ikabit ang mga update
     .accesskey = b
-update-enable-search-update =
-    .label = Kusang i-update ang mga search engine
-    .accesskey = e
-update-pref-write-failure-title = Isulat ang Kabiguan
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Bigong mai-save ang kagustuhan. Hindi makapagsulat sa file: { $path }
 update-setting-write-failure-title = Nagkaroon ng problema sa pag-save ng Update preferences.
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -527,7 +519,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Idagdag ang search bar sa toolbar
 search-engine-default-header = Default na Search Engine
-search-engine-default-desc = Piliin ang default na search engine na gagamitin sa address bar at search bar.
 search-engine-default-private-desc-2 = Pumili ng ibang default na search engine para lang sa mga Private Window
 search-separate-default-engine =
     .label = Gamitin ang search engine na ito sa mga Private Window
@@ -562,6 +553,9 @@ search-restore-default =
 search-remove-engine =
     .label = Alisin
     .accesskey = r
+search-add-engine =
+    .label = Magdagdag
+    .accesskey = A
 search-find-more-link = Maghanap ng mga karagdagang search engine
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -573,7 +567,6 @@ search-keyword-warning-bookmark = Ginagamit na ng isang bookmark ang keyword na 
 
 ## Containers Section
 
-containers-back-link = « Bumalik
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -592,20 +585,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Alisin
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Dalhin Mo Ang Web Kahit Saan
 sync-signedout-description = I-synchronize ang iyong mga bookmark, kasaysayan, tab, password, add-on, at kagustuhan sa lahat ng iyong mga device.
-sync-signedout-account-title = Kumonekta sa isang { -fxaccount-brand-name }
-sync-signedout-account-create = Wala kang account? Magsimula
-    .accesskey = C
-sync-signedout-account-signin =
-    .label = Mag Sign In...
-    .accesskey = I
 sync-signedout-account-signin2 =
     .label = Mag-sign in sa { -sync-brand-short-name }…
     .accesskey = i
@@ -619,16 +603,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = I-download ang Firefox para sa<img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> o <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> upang i-sync sa iyong mobile device.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Baguhin ang larawan ng profile
-sync-disconnect =
-    .label = Idiskonekta...
-    .accesskey = D
 sync-sign-out =
     .label = Mag-sign out...
     .accesskey = g
@@ -645,8 +623,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Mag sign in
     .accesskey = g
-sync-signedin-settings-header = Mga Sync Setting
-sync-signedin-settings-desc = Piliin kung ano ang mag-synchronize sa iyong device gamit ang { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -699,10 +675,6 @@ sync-engine-tabs =
     .label = Mga nakabukas na tab
     .tooltiptext = Listahan ng kung ano ang nakabukas sa mga naka-sync na device
     .accesskey = B
-sync-engine-logins =
-    .label = Mga login
-    .tooltiptext = Iyong mga username at password
-    .accesskey = l
 sync-engine-logins-passwords =
     .label = Mga Login at Password
     .tooltiptext = Mga username at password na naka-save
@@ -741,18 +713,10 @@ sync-device-name-save =
     .label = I-save
     .accesskey = v
 sync-connect-another-device = Magkonekta ng Isa Pang Device
-sync-manage-devices = I-manage ang mga device
-sync-fxa-begin-pairing = I-pares ang isa pang device
-sync-tos-link = Tuntunin ng Serbisyo
-sync-fxa-privacy-notice = Paunawa sa Pribasiya
 
 ## Privacy Section
 
 privacy-header = Browser Privacy
-
-## Privacy Section - Forms
-
-logins-header = Mga Login at mga Password
 
 ## Privacy Section - Logins and Passwords
 
@@ -783,6 +747,10 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Gumamit ng master password
     .accesskey = U
+forms-primary-pw-use =
+    .label = Gumamit ng Primary Password
+    .accesskey = U
+forms-primary-pw-learn-more-link = Alamin
 # This string uses the former name of the Primary Password feature
 # ("Master Password" in English) so that the preferences can be found
 # when searching for the old name. The accesskey is unused.
@@ -790,15 +758,32 @@ forms-master-pw-change =
     .label = Palitan ang Master Password...
     .accesskey = M
 forms-master-pw-fips-title = Kasalukuyang nasa FIPS mode ka.  Nangangailangan ang FIPS ng isang may laman na Master Password.
+forms-primary-pw-change =
+    .label = Palitan ang Primary Password…
+    .accesskey = P
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = Kilala dati bilang Master Password
+forms-primary-pw-fips-title = Kasalukuyan kang naka-FIPS mode. Kinakailangan ng FIPS ng isang hindi blangkong Primary Password.
 forms-master-pw-fips-desc = Nabigo ang Pagpalit ng Password
 
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Para makagawa ng Master Password, ilagay ang iyong Windows login credential. Makatutulong ito sa pagprotekta ng seguridad ng iyong mga account.
+# This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = lumikha ng Master Password
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Para makagawa ng Primary Password, ilagay ang iyong Windows login credential. Makatutulong ito sa pagprotekta ng seguridad ng iyong mga account.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = bumuo ng Primary Password
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -865,8 +850,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Uri ng content na hinaharang
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Third-party na mga tracker
 sitedata-option-block-cross-site-trackers =
     .label = Mga cross-site tracker
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -909,27 +892,9 @@ addressbar-suggestions-settings = Baguhin ang mga kagustuhan para sa mga mungkah
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Content Blocking
-content-blocking-section-description = Protektahan ang iyong pribasiya habang ikaw ay nagba-browse. Harangin ang mga tagong content na tinatrack ang mga site na binibisita mo at pino-profile ka. Maaaring bumilis ang pag-load ng mga page sa pagharang ng mga content na ito.
 content-blocking-enhanced-tracking-protection = Enhanced Tracking Protection
 content-blocking-section-top-level-description = Sinusundan ka ng mga tracker online para mangolekta ng impormasyon tungkol sa iyong mga kaugalian at interes sa pag-browse. Hinaharang ng { -brand-short-name } ang karamihan sa mga tracker na ito at iba pang mga delikadong script.
 content-blocking-learn-more = Alamin pa
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standard
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Istrikto
-    .accesskey = I
-content-blocking-setting-custom =
-    .label = Custom
-    .accesskey = C
-content-blocking-standard-desc = Pinantay para sa proteksyon at performance. Pinapayagan ang ilang mga tracker para gumana ang mga website nang maayos.
-content-blocking-strict-description = Mas malakas na proteksyon, maaaring maging sanhi ng pagkasira ng ilang mga site.
-content-blocking-custom-desc = Piliin kung ano ang i-block.
-content-blocking-private-trackers = Mga kilalang tracker lamang sa mga Private Window
-content-blocking-third-party-cookies = Mga Third-party na tracking cookie
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -955,22 +920,16 @@ content-blocking-cross-site-tracking-cookies = Mga cross-site tracking cookie
 content-blocking-social-media-trackers = Mga social media tracker
 content-blocking-all-cookies = Lahat ng mga cookie
 content-blocking-unvisited-cookies = Mga cookie mula sa mga hindi binibisitang site
-content-blocking-all-windows-trackers = Mga kilalang tracker sa lahat ng window
 content-blocking-all-windows-tracking-content = Tracking content sa lahat ng mga window
 content-blocking-all-third-party-cookies = Lahat ng mga third-party na mga cookie
 content-blocking-cryptominers = Mga Cryptominer
 content-blocking-fingerprinters = Mga Fingerprinter
 content-blocking-warning-title = Mag-ingat!
-content-blocking-warning-description = Ang pagharang sa mga content ay maaaring maging sanhi para masira ang ilang mga website. Madali namang mag-disable ng pagharang para sa mga pinagkakatiwalaang site.
-content-blocking-learn-how = Alamin kung papaano
 content-blocking-warning-learn-how = Alamin kung paano
 content-blocking-reload-description = Kailangan mong i-reload ang iyong mga tab upang makita ang mga pagbabago.
 content-blocking-reload-tabs-button =
     .label = I-reload ang lahat ng mga tab
     .accesskey = R
-content-blocking-trackers-label =
-    .label = Mga tracker
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = Tracking content
     .accesskey = T
@@ -1029,12 +988,6 @@ permissions-notification-link = Alamin
 permissions-notification-pause =
     .label = I-pause ang mga notification hanggang sa i-restart ang { -brand-short-name }
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Harangin ang mga website mula sa kusang pagpapaandar ng tunog
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = Mga Exception...
-    .accesskey = E
 permissions-autoplay = Autoplay
 permissions-autoplay-settings =
     .label = Mga Setting...
@@ -1144,6 +1097,14 @@ space-alert-under-5gb-message = Nauubusan na ng disk space ang { -brand-short-na
 
 ## Privacy Section - HTTPS-Only
 
+httpsonly-header = HTTPS-Only Mode
+httpsonly-learn-more = Alamin
+httpsonly-radio-enabled =
+    .label = I-enable ang HTTPS-Only Mode sa lahat ng mga window
+httpsonly-radio-enabled-pbm =
+    .label = I-enable ang HTTPS-Only Mode sa mga private window lamang
+httpsonly-radio-disabled =
+    .label = Huwag i-enable ang HTTPS-Only Mode
 
 ## The following strings are used in the Download section of settings
 

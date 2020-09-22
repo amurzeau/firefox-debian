@@ -77,6 +77,9 @@ show-dir-label =
         [windows] Opne mappe
        *[other] Opne mappe
     }
+environment-variables-title = Miljøvariablar
+environment-variables-name = Namn
+environment-variables-value = Verdi
 experimental-features-title = Eksperimentelle funksjonar
 experimental-features-name = Namn
 experimental-features-value = Verdi
@@ -104,8 +107,6 @@ graphics-desktop-environment = Skrivebordsmiljø
 place-database-title = Plasser database
 place-database-integrity = Integritet
 place-database-verify-integrity = Stadfest integritet
-js-title = JavaScript
-js-incremental-gc = Inkrementell GC
 a11y-title = Tilgjenge
 a11y-activated = Aktivert
 a11y-force-disabled = Hindra tilgjenge
@@ -135,7 +136,6 @@ restart-button-label = Start på nytt
 
 audio-backend = Lydgrensesnitt
 max-audio-channels = Maks kanalar
-channel-layout = Føretrekt kanaloppsett
 sample-rate = Føretrekt samplingsfart
 roundtrip-latency = Tur-/retur-forseinking (standardavvik)
 media-title = Media
@@ -279,7 +279,6 @@ support-blocklisted-bug = Blokkert på grunn av kjende problem: <a data-l10n-nam
 unknown-failure = Svartlista; feilkode { $failureCode }
 d3d11layers-crash-guard = D3D11-kompositoren
 d3d11video-crash-guard = D3D11 videodekodar
-d3d9video-crash-buard = D3D9 videodekodar
 d3d9video-crash-guard = D3D9 videodekodar
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Video-dekodar

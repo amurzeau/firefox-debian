@@ -208,6 +208,8 @@ cert-not-verified-issuer-unknown = S’verifikoi dot këtë dëshmi, sepse lësh
 cert-not-verified-ca-invalid = S’verifikoi dot këtë dëshmi, sepse dëshmia e AD-ve është e pavlefshme.
 cert-not-verified_algorithm-disabled = Kjo dëshmi nuk u verifikua dot, ngaqë qe nënshkruar duke përdorur një algoritëm nënshkrimesh i cili është i çaktivizuar, pasi nuk është algoritëm i sigurt.
 cert-not-verified-unknown = Për arsye të panjohura, s’verifikoi dot këtë dëshmi.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Mos dërgo dëshmi klienti
 
 ## Add Security Exception dialog
 

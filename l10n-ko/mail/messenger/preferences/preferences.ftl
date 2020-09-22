@@ -67,14 +67,10 @@ chat-notifications-title = 알림
 chat-pane-styling-header = 스타일링
 choose-messenger-language-description = { -brand-short-name }가 메뉴와 메시지, 알림을 표시할 언어를 선택하세요.
 manage-messenger-languages-button =
-    .label = 대체 수단 설정…
+    .label = 대체 설정…
     .accesskey = l
 confirm-messenger-language-change-description = 변경사항 적용을 위해 { -brand-short-name }를 재시작
 confirm-messenger-language-change-button = 적용하고 재시작
-update-pref-write-failure-title = 저장 실패
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = 설정을 저장할 수 없습니다. 파일에 저장할 수 없습니다: { $path }
 update-setting-write-failure-title = 업데이트 설정 저장 중 오류 발생
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -95,12 +91,12 @@ addons-button = 확장기능과 테마
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = 마스터 비밀번호를 만들려면 Windows 로그인 자격 증명을 입력하세요. 이렇게 하면 계정의 보안을 보호할 수 있습니다.
+master-password-os-auth-dialog-message-win = 기본 비밀번호를 만들려면 Windows 로그인 자격 증명을 입력하세요. 이렇게 하면 계정의 보안을 보호할 수 있습니다.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Thunderbird is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = 마스터 비밀번호 만들기
+master-password-os-auth-dialog-message-macosx = 기본 비밀번호 만들기
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = 기본 비밀번호를 만들려면, Windows 로그인 자격 증명을 입력하세요. 이는 계정의 보안을 보호하는데 도움이 됩니다.
 # This message can be seen by trying to add a Primary Password.
@@ -538,12 +534,12 @@ passwords-description = { -brand-short-name }는 계정 암호를 저장할 수 
 passwords-button =
     .label = 저장된 암호 목록…
     .accesskey = S
-master-password-description = 기본 암호는 모든 일반 암호를 보호합니다. 프로그램 다시 시작할 때 다시 입력해야 합니다.
+master-password-description = 기본 비밀번호는 모든 일반 비밀번호를 보호합니다. 프로그램 시작할 때 다시 입력해야 합니다.
 master-password-label =
-    .label = 기본 암호 사용
+    .label = 기본 비밀번호 사용
     .accesskey = U
 master-password-button =
-    .label = 기본 암호 변경…
+    .label = 기본 비밀번호 변경…
     .accesskey = C
 primary-password-description = 기본 비밀번호는 모든 비밀번호를 보호하지만 세션마다 한번씩 입력해야 합니다.
 primary-password-label =

@@ -80,6 +80,9 @@ show-dir-label =
         [windows] Open Folder
        *[other] Open Directory
     }
+environment-variables-title = Environment Variables
+environment-variables-name = Name
+environment-variables-value = Value
 experimental-features-title = Experimental Features
 experimental-features-name = Name
 experimental-features-value = Value
@@ -107,8 +110,6 @@ graphics-desktop-environment = Desktop Environment
 place-database-title = Places Database
 place-database-integrity = Integrity
 place-database-verify-integrity = Verify Integrity
-js-title = JavaScript
-js-incremental-gc = Incremental GC
 a11y-title = Accessibility
 a11y-activated = Activated
 a11y-force-disabled = Prevent Accessibility
@@ -138,7 +139,6 @@ restart-button-label = Restart
 
 audio-backend = Audio Backend
 max-audio-channels = Max Channels
-channel-layout = Preferred Channel Layout
 sample-rate = Preferred Sample Rate
 roundtrip-latency = Roundtrip latency (standard deviation)
 media-title = Media
@@ -282,7 +282,6 @@ support-blocklisted-bug = Blocklisted due to known issues: <a data-l10n-name="bu
 unknown-failure = Blocklisted; failure code { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video Decoder
-d3d9video-crash-buard = D3D9 Video Decoder
 d3d9video-crash-guard = D3D9 Video Decoder
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Video Decoder

@@ -318,8 +318,42 @@ enable-devtools-popup-description = Richin nokisäx ri F12 chojokem, nab'ey taja
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Tikanöx o titz'ib'äx ochochib'äl
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Tikanöx o titz'ib'äx ochochib'äl
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Tikanöx pa Web
+    .aria-label = Tikanöx rik'in { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Ketz'ib'äx tzij yekanöx
+    .aria-label = Tikanöx { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Ketz'ib'äx tzij yekanöx
+    .aria-label = Kekanöx taq yaketal
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Ketz'ib'äx tzij yekanöx
+    .aria-label = Tikanöx natab'äl
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Ketz'ib'äx tzij yekanöx
+    .aria-label = Kekanöx ruwi'
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Tikanöx rik'in { $name }  o titz'ib'äx ochochib'äl
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Ri Okik'amaya'l k'o pa ruq'a' ri näj chajinïk
 urlbar-permissions-granted =

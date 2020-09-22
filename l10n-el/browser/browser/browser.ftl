@@ -318,8 +318,42 @@ enable-devtools-popup-description = Για να χρησιμοποιήσετε �
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Αναζήτηση όρου ή εισαγωγή διεύθυνσης
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Αναζήτηση όρου ή εισαγωγή διεύθυνσης
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Αναζήτηση στο διαδίκτυο
+    .aria-label = Αναζήτηση με { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Εισάγετε όρους αναζήτησης
+    .aria-label = Αναζήτηση { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Εισάγετε όρους αναζήτησης
+    .aria-label = Αναζήτηση σελιδοδεικτών
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Εισάγετε όρους αναζήτησης
+    .aria-label = Αναζήτηση ιστορικού
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Εισάγετε όρους αναζήτησης
+    .aria-label = Αναζήτηση καρτελών
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Αναζήτηση με { $name } ή πληκτρολόγηση διεύθυνσης
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Το πρόγραμμα περιήγησης ελέγχεται απομακρυσμένα
 urlbar-permissions-granted =

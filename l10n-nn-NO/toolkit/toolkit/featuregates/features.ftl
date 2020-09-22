@@ -4,23 +4,9 @@
 
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-css-masonry =
-    .label = CSS Masonry Layout
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
 experimental-features-css-masonry2 =
     .label = CSS: Masonry Layout
 experimental-features-css-masonry-description = Aktiverer støtte for den eksperimentelle CSS Masonry Layout-funksjonen. Sjå denne <a data-l10n-name="explainer">forklaringa</a> for ei skildring av funksjonen på høgt nivå. For å gi tilbakemelding, kommenter <a data-l10n-name="w3c-issue">denne GitHub-saka</a> eller <a data-l10n-name="bug">denne feilrapporten</a>.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-gpu =
-    .label = WebGPU
-experimental-features-web-gpu-description = Eksperimentell API for grafikk og databehandling på nettet
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-avif =
-    .label = AVIF
-experimental-features-avif-description = Eksperimentell støtte for AVIF: AV1 bildefilformat
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
@@ -71,7 +57,7 @@ experimental-features-devtools-color-scheme-simulation =
 experimental-features-devtools-color-scheme-simulation-description = Legg til eit alternativ for å simulere ulike fargeskjema som lar deg teste <a data-l10n-name="mdn-preferscolorscheme">@prefers-color-schema</a>-mediespørjing. Ved å bruke denne mediespørjinga lar stilsettet ditt svare på om brukaren føretrekkjer eit lyst eller mørkt brukargrensesnitt. Denne funksjonen lar deg teste koden din utan å måtte endre innstillingar i nettlesaren (eller operativsystemet, dersom nettlesaren følgjer ei systemavhengig fargevalinnstilling). Sjå <a data-l10n-name="bugzilla1">bug 1550804</a> og <a data-l10n-name="bugzilla2">bug 1137699</a> for meir informasjon.
 experimental-features-devtools-execution-context-selector =
     .label = Utviklarverktøy: Utføringskontektsveljar
-experimental-features-devtools-execution-context-selector-description = Denne funksjonen viser ein knapp på kommandolinja til konsollen som lèt deg endre konteksten der uttrykket du skriv inn, skal køyrast. Sjå <a data-l10n-name="bugzilla1">bug 1605154</a> og <a data-l10n-name="bugzilla1">bug 1605153</a> for meir informasjon.
+experimental-features-devtools-execution-context-selector-description = Denne funksjonen viser ein knapp på kommandolinja til konsollen som lèt deg endre konteksten der uttrykket du skriv inn, skal køyrast. Sjå <a data-l10n-name="bugzilla1">bug 1605154</a> og <a data-l10n-name="bugzilla2">bug 1605153</a> for meir informasjon.
 experimental-features-devtools-compatibility-panel =
     .label = Utviklarverktøy: Kompatibilitetspanel
 experimental-features-devtools-compatibility-panel-description = Eit sidepanel for Page Inspector som viser deg informasjon om kompatibilitetsstatusen til appen på tvers av nettlesarar. Sjå <a data-l10n-name="bugzilla">bug 1584464</a> for meir informasjon.

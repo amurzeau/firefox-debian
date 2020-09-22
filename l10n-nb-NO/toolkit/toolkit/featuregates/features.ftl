@@ -4,23 +4,9 @@
 
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-css-masonry =
-    .label = CSS Masonry Layout
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
 experimental-features-css-masonry2 =
     .label = CSS: Masonry Layout
 experimental-features-css-masonry-description = Aktiverer støtte for den eksperimentelle CSS Masonry Layout-funksjonen. Se denne <a data-l10n-name="explainer">forklaringen</a> for en beskrivelse av funksjonen på høyt nivå. For å gi tilbakemelding, kommenter <a data-l10n-name="w3c-issue">denne GitHub-saken</a> eller <a data-l10n-name="bug">denne feilrapporten</a>.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-gpu =
-    .label = WebGPU
-experimental-features-web-gpu-description = Eksperimentell API for grafikk og databehandling på nettet
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-avif =
-    .label = AVIF
-experimental-features-avif-description = Eksperimentell støtte for AVIF: AV1 bildefilformat
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
@@ -71,7 +57,7 @@ experimental-features-devtools-color-scheme-simulation =
 experimental-features-devtools-color-scheme-simulation-description = Legger til et alternativ for å simulere forskjellige fargeskjemaer som lar deg teste <a data-l10n-name="mdn-preferscolorscheme">@prefers-color-schema</a>-mediespørring. Ved å bruke denne mediespørringen lar stilsettet ditt svare på om brukeren foretrekker et lyst eller mørkt brukergrensesnitt. Denne funksjonen lar deg teste koden din uten å måtte endre innstillinger i nettleseren (eller operativsystemet, hvis nettleseren følger en systemavhengig fargevalginnstilling). Se <a data-l10n-name="bugzilla1">bug 1550804</a> og <a data-l10n-name="bugzilla2">bug 1137699</a> for mer informasjon.
 experimental-features-devtools-execution-context-selector =
     .label = Utviklerverktøy: Utførelseskontektsvelger
-experimental-features-devtools-execution-context-selector-description = Denne funksjonen viser en knapp på konsollens kommandolinje som lar deg endre konteksten der uttrykket du skriver inn, skal kjøres. Se <a data-l10n-name="bugzilla1">bug 1605154</a> og <a data-l10n-name="bugzilla1">bug 1605153</a> for mer informasjon.
+experimental-features-devtools-execution-context-selector-description = Denne funksjonen viser en knapp på konsollens kommandolinje som lar deg endre konteksten der uttrykket du skriver inn, skal kjøres. Se <a data-l10n-name="bugzilla1">bug 1605154</a> og <a data-l10n-name="bugzilla2">bug 1605153</a> for mer informasjon.
 experimental-features-devtools-compatibility-panel =
     .label = Utviklerverktøy: Kompatibilitetspanel
 experimental-features-devtools-compatibility-panel-description = Et sidepanel for Page Inspector som viser deg informasjon om appens kompatibilitetsstatus på tvers av nettlesere. Se <a data-l10n-name="bugzilla">bug 1584464</a> for mer informasjon.
@@ -90,7 +76,7 @@ experimental-features-abouthome-startup-cache =
 experimental-features-abouthome-startup-cache-description = Et hurtigbuffer for det første about:home-dokument som er lastet som standard ved oppstart. Hensikten med hurtigbufferet er å forbedre oppstartsytelsen.
 experimental-features-print-preview-tab-modal =
     .label = Redesign av forhåndsvisning
-experimental-features-print-preview-tab-modal-description = Introduserer den redesignede forhåndsvisning av utskrifter og gjør forhåndsvisning av utskrift tilgjengelig på macOS. Dette introduserer potensielle feil og inkluderer ikke alle utskriftsrelaterte innstillinger. For å få tilgang til alle utskriftsrelaterte innstillinger, velger «Skriv ut ved hjelp av systemdialogvinduet…» fra utskriftspanelet.
+experimental-features-print-preview-tab-modal-description = Introduserer den redesignede forhåndsvisning av utskrifter og gjør forhåndsvisning av utskrift tilgjengelig på macOS. Dette introduserer potensielle feil og inkluderer ikke alle utskriftsrelaterte innstillinger. For å få tilgang til alle utskriftsrelaterte innstillinger, velg «Skriv ut ved hjelp av systemdialogvinduet…» fra utskriftspanelet.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-cookie-samesite-schemeful =

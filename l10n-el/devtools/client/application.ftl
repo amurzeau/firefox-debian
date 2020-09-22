@@ -22,19 +22,19 @@ serviceworker-worker-unregister = Κατάργηση εγγραφής
 # Text for the debug link displayed for an already started Service Worker. Clicking on the
 # link opens a new devtools toolbox for this service worker. The title attribute is only
 # displayed when the link is disabled.
-serviceworker-worker-debug = Αποσφαλμάτωση
-    .title = Μόνο τα εκτελούμενα service workers μπορούν να αποσφαλματωθούν
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = Έναρξη
+serviceworker-worker-debug = Εντοπισμός σφαλμάτων
+    .title = Ο εντοπισμός σφαλμάτων μπορεί να γίνει μόνο για τα εκτελούμενα service workers
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
-serviceworker-worker-debug-forbidden = Αποσφαλμάτωση
-    .title = Η αποσφαλμάτωση των service workers μπορεί να γίνει μόνο αν είναι ανενεργό το multi e10s
+serviceworker-worker-debug-forbidden = Εντοπισμός σφαλμάτων
+    .title = Ο εντοπισμός σφαλμάτων των service workers μπορεί να γίνει μόνο αν είναι ανενεργό το multi e10s
 # Text for the start link displayed for a registered but not running Service Worker.
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = Έναρξη
     .title = Η έναρξη των service workers μπορεί να γίνει μόνο αν είναι ανενεργό το multi e10s
+# Alt text for the image icon displayed inside a debug link for a service worker.
+serviceworker-worker-inspect-icon =
+    .alt = Επιθεώρηση
 # Text for the start link displayed for a registered but not running Service Worker.
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start3 = Έναρξη
@@ -54,9 +54,6 @@ serviceworker-worker-status = Κατάσταση
 serviceworker-worker-status-running = Σε λειτουργία
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = Σε διακοπή
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = Γίνεται καταχώρηση
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = Θα πρέπει να καταχωρήσετε ένα Service Worker για να επιθεωρηθεί εδώ. <a>Μάθετε περισσότερα</a>
@@ -76,6 +73,10 @@ serviceworker-empty-suggestions-aboutdebugging = Επιθεωρήστε Service 
 serviceworker-empty-intro2 = Δεν βρέθηκαν service workers
 # Link will open https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro-link = Μάθετε περισσότερα
+# Text displayed when there are no Service Workers to display for the current page,
+# introducing hints to debug Service Worker issues.
+# <a> and <span> are links that will open the webconsole and the debugger, respectively.
+serviceworker-empty-suggestions2 = Αν η τρέχουσα σελίδα θα έπρεπε να έχει service worker, μπορείτε να αναζητήσετε σφάλματα στην <a>Κονσόλα</a> ή κάντε την εγγραφή του service worker σας στον <span>Εντοπισμό σφαλμάτων</span>.
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging2 = Προβολή service workers από άλλους τομείς

@@ -77,6 +77,9 @@ show-dir-label =
         [windows] Rjadowak wočinić
        *[other] Zapis wočinić
     }
+environment-variables-title = Wokolinowe wariable
+environment-variables-name = Mjeno
+environment-variables-value = Hódnota
 experimental-features-title = Eksperimentelne funkcije
 experimental-features-name = Mjeno
 experimental-features-value = Hódnota
@@ -104,8 +107,6 @@ graphics-desktop-environment = Desktopowa wokolina
 place-database-title = Datowa banka historije a zapołožkow
 place-database-integrity = Integrita
 place-database-verify-integrity = Integritu přepruwować
-js-title = JavaScript
-js-incremental-gc = Inkrementelny GC
 a11y-title = Bjezbarjernosć
 a11y-activated = Aktiwizowany
 a11y-force-disabled = Bjezbarjernosći zadźěwać
@@ -135,7 +136,6 @@ restart-button-label = Znowa startować
 
 audio-backend = Awdiobackend
 max-audio-channels = Maksimalna ličba kanalow
-channel-layout = Preferowane kanalowe wuhotowanje
 sample-rate = Preferowana wottasowanska rata
 roundtrip-latency = Wobběhowa latenca (standardne wotchilenje)
 media-title = Medije
@@ -289,7 +289,6 @@ support-blocklisted-bug = W blokowanskej lisćinje znatych problemow dla: <a dat
 unknown-failure = W blokowanskej lisćinje; zmylkowy kod { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video Decoder
-d3d9video-crash-buard = D3D9 Video Decoder
 d3d9video-crash-guard = D3D9 Video Decoder
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Widejodekoder WMF VPX

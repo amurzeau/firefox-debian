@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Les meir
-onboarding-button-label-try-now = Prøv det no
 onboarding-button-label-get-started = Kom i gang
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Kom i gang
 onboarding-welcome-header = Velkomen til { -brand-short-name }
 onboarding-welcome-body = Du har nettlesaren.<br/>Møt resten av { -brand-product-name }.
 onboarding-welcome-learn-more = Les meir om fordelane.
-onboarding-join-form-header = Ver med { -brand-product-name } på ferda
 onboarding-welcome-modal-get-body = Du har nettlesaren.<br/>Få mest mogleg ut av { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Forsterk personvernsikringa di.
 onboarding-welcome-modal-privacy-body = Du har nettlesaren. La oss leggje til meir personvernsikring.
@@ -114,12 +112,52 @@ onboarding-multistage-theme-tooltip-alpenglow =
         Bruk ein fargerik utsjånad for knappar,
         menyer og vinduer.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Arv utsjånad frå operativsystemet
+        for knapper, menyer og vinduer.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Arv utsjånad frå operativsystemet
+        for knapper, menyer og vinduer.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Bruk ein lys utsjånad for knappar,
+        menyer og vinduer.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Bruk ein lys utsjånad for knappar,
+        menyer og vinduer.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Bruk ein mørk utsjånad for knappar,
+        menyer og vinduer.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Bruk ein mørk utsjånad for knappar,
+        menyer og vinduer.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Bruk ein fargerik utsjånad for knappar,
+        menyer og vinduer.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Bruk ein fargerik utsjånad for knappar,
+        menyer og vinduer.
 
 ## Welcome full page string
 
 onboarding-fullpage-welcome-subheader = La oss starte å utforske alt du kan gjere.
 onboarding-fullpage-form-email =
-    .placeholder = Di e-postadresse…
+    .placeholder = E-postadressa di…
 
 ## Firefox Sync modal dialog strings.
 
@@ -139,11 +177,7 @@ onboarding-sync-form-sub-header = for å fortsetje til { -sync-brand-name }.
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Nyttige produkt
 onboarding-benefit-products-text = Få ting gjort med ein familie av verktøy som respekterer personvernet ditt på alle einingane dine.
-onboarding-benefit-knowledge-title = Praktisk kunnskap
-onboarding-benefit-knowledge-text = Lær alt du treng å vite for å ha ei betre og sikrare oppleving på nettet.
-onboarding-benefit-privacy-title = Ekte personvern
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -164,17 +198,6 @@ onboarding-benefit-lockwise-text = Handter passord som er verna og flyttbare.
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Privat nettlesing
-onboarding-private-browsing-text = Surf sjølv. Privat nettlesing med innhaldsblokkering blokkerer online-sporarar som følgjer etter deg på nettet.
-onboarding-screenshots-title = Skjermbilde
-onboarding-screenshots-text = Ta, lagre og del skjermbilde - utan å forlate { -brand-short-name }. Ta skjermbilde av eit område eller ei heil side medan du surfar. Deretter lagrar du dei på nettet for enkel tilgang og deling.
-onboarding-addons-title = Tillegg
-onboarding-addons-text = Legg til endå fleire funksjonar som gjer at { -brand-short-name } fungerar betre for deg. Samanlikn prisar, sjekk vêret eller uttrykk personlegdomen din med eit tilpassa tema.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Surf raskare, smartare eller sikrare med utvidingar som Ghostery, som lèt deg blokkere irriterande annonsar.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Synkroniser
-onboarding-fxa-text = Registrer deg for eit { -fxaccount-brand-name } og synkroniser bokmerka dine, passord og opne faner overalt der du brukar { -brand-short-name }.
 onboarding-tracking-protection-title2 = Vern mot sporing
 onboarding-tracking-protection-text2 = { -brand-short-name } hjelper til med å stoppe nettstadar frå å spore deg på nettet, noko som gjer det vanskelegare for reklamar å følgje deg rundt om på nettet.
 onboarding-tracking-protection-button2 = Korleis det verkar
@@ -183,7 +206,6 @@ onboarding-data-sync-title = Ta med deg innstillingane dine
 onboarding-data-sync-text2 = Synkroniser bokmerka dine, passord og meir overalt der du brukar { -brand-product-name }.
 onboarding-data-sync-button2 = Logg inn på { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Hald auge med datalekkasjar
-onboarding-firefox-monitor-text = { -monitor-brand-name } overvakar om e-postenadressa di har vore med i ein datalekkasje og varslar deg om ho dukkar opp i nye lekkasjar.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } overvakar om e-postenadressa di har vore med i ein kjend datalekkasje og varslar deg om ho dukkar opp i nye lekkasjar.
 onboarding-firefox-monitor-button = Registrer deg for varslingar
 onboarding-browse-privately-title = Surf privat
@@ -200,17 +222,11 @@ onboarding-mobile-phone-button = Last ned mobilnettlesar
 onboarding-send-tabs-title = Send raskt faner til deg sjølv
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Send faner deler direkte sider mellom einingane dine, utan å måtte kopiere, lime inn eller forlate nettlesaren.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Del sider enkelt mellom einingane dine utan å måtte kopiere lenker eller forlate nettlesaren.
 onboarding-send-tabs-button = Prøv funksjonen
 onboarding-pocket-anywhere-title = Les og lytt kvar som helst
 onboarding-pocket-anywhere-text2 = Lagre favorittinnhaldet ditt fråkopla med { -pocket-brand-name }-appen. Så kan du lese, lytte og sjå når det passar deg.
 onboarding-pocket-anywhere-button = Prøv { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Ta med deg passorda overalt
-onboarding-lockwise-passwords-text2 = Oppbevar passorda du lagrar sikkert, og logg deg enkelt inn på kontoane dine med { -lockwise-brand-name }.
-onboarding-lockwise-passwords-button2 = Last ned appen
 onboarding-lockwise-strong-passwords-title = Opprett og lagre sterke passord
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } opprettar sterke passord med ein gong, og lagrar alle på ein stad.
 onboarding-lockwise-strong-passwords-button = Handter innloggingane dine

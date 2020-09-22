@@ -80,6 +80,9 @@ show-dir-label =
         [windows] Avrir l'ordinatur
        *[other] Avrir l'ordinatur
     }
+environment-variables-title = Variablas d'ambient
+environment-variables-name = Num
+environment-variables-value = Valur
 experimental-features-title = Funcziuns experimentalas
 experimental-features-name = Num
 experimental-features-value = Valur
@@ -107,8 +110,6 @@ graphics-desktop-environment = Sistem da desktop
 place-database-title = Banca da datas «Places»
 place-database-integrity = Integritad
 place-database-verify-integrity = Verifitgar l'integritad
-js-title = JavaScript
-js-incremental-gc = GC incremental
 a11y-title = Accessibladad
 a11y-activated = Activà
 a11y-force-disabled = Impedir l'accessibladad
@@ -138,7 +139,6 @@ restart-button-label = Reaviar
 
 audio-backend = Backend dad audio
 max-audio-channels = Maximum da chanals
-channel-layout = Modus da chanals preferì
 sample-rate = Frequenza da scannar preferida
 roundtrip-latency = Latenza da l'ir e turnar (deviaziun da standard)
 media-title = Multimedia
@@ -282,7 +282,6 @@ support-blocklisted-bug = Bloccà pervia da sbagls enconuschents: <a data-l10n-n
 unknown-failure = Sin la glista naira; numer da sbagl { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = Decodader da video D3D11
-d3d9video-crash-buard = Decodader da video D3D9
 d3d9video-crash-guard = Decodader da video D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Video Decoder

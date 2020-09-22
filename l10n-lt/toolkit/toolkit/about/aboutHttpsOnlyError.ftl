@@ -18,3 +18,4 @@ about-httpsonly-explanation-nosupport = Greičiausiai svetainė tiesiog nepaliko
 about-httpsonly-explanation-risk = Visgi yra galimybė, kad įsivėlęs piktavalis. Jeigu nuspręsite aplankyti svetainę, neveskite jokios slaptos informacijos, kaip kad slaptažodžiai, el pašto adresai, ar banko kortelių duomenys.
 about-httpsonly-button-accept-and-continue = Priimti riziką ir tęsti
 about-httpsonly-button-go-back = Eiti atgal
+about-httpsonly-link-learn-more = Sužinoti daugiau…

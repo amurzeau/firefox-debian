@@ -318,8 +318,38 @@ enable-devtools-popup-description = Por uzi la ŝparvojon F12, unue malfermu la 
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Serĉu ion aŭ tajpu adreson
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Serĉu ion aŭ tajpu adreson
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Serĉi en la teksaĵo
+    .aria-label = Serĉi per { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Tajpu serĉan tekston
+    .aria-label = Serĉi { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Tajpu serĉan tekston
+    .aria-label = Serĉi legosignojn
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Tajpu serĉan tekston
+    .aria-label = Serĉi historion
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Tajpu serĉan tekston
+    .aria-label = Serĉi langetojn
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

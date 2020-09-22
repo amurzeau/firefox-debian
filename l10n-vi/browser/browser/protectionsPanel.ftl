@@ -42,7 +42,7 @@ protections-panel-no-trackers-found = { -brand-short-name } không phát hiện 
 protections-panel-content-blocking-tracking-protection = Trình theo dõi nội dung
 protections-panel-content-blocking-socialblock = Trình theo dõi truyền thông xã hội
 protections-panel-content-blocking-cryptominers-label = Tiền điện tử
-protections-panel-content-blocking-fingerprinters-label = Vân tay
+protections-panel-content-blocking-fingerprinters-label = Dấu vân tay
 
 ## In the protections panel, Content Blocking category items are in three sections:
 ##   "Blocked" for categories being blocked in the current page,
@@ -57,7 +57,6 @@ protections-panel-not-found-label = Không phát hiện
 ##
 
 protections-panel-settings-label = Cài đặt bảo vệ
-protections-panel-showreport-label = Hiển thị báo cáo
 # This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
 protections-panel-protectionsdashboard-label = Bảng điều khiển bảo vệ
 

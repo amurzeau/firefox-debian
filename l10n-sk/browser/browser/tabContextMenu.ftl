@@ -52,13 +52,10 @@ move-to-end =
     .accesskey = k
 move-to-new-window =
     .label = Presunúť do nového okna
-    .accesskey = k
-undo-close-tab =
-    .label = Obnoviť zatvorenú kartu
-    .accesskey = a
+    .accesskey = d
 tab-context-close-multiple-tabs =
     .label = Zavrieť viaceré karty
-    .accesskey = Z
+    .accesskey = c
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -83,18 +80,18 @@ move-tabs =
     .accesskey = s
 move-tab =
     .label = Presunúť kartu
-    .accesskey = s
+    .accesskey = u
 tab-context-close-tabs =
     .label =
         { $tabCount ->
-            [1] Zatvoriť kartu
-           *[other] Zatvoriť karty
+            [1] Zavrieť kartu
+           *[other] Zavrieť karty
         }
-    .accesskey = C
+    .accesskey = Z
 tab-context-move-tabs =
     .label =
         { $tabCount ->
             [1] Presunúť kartu
            *[other] Presunúť karty
         }
-    .accesskey = v
+    .accesskey = u

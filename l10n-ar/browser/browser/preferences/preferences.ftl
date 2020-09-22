@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = فقط حين يُضبط { -brand-short-name } على حجب المتعقّبات المعروفة
 do-not-track-option-always =
     .label = دائمًا
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] الخيارات
-           *[other] التفضيلات
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] الخيارات
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = يتحكم أحد الامتدادات 
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = يتحكم أحد الامتدادات (<img data-l10n-name="icon"/> { $name }) في صفحة اللسان الجديد.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = يتحكم أحد الامتدادات (<img data-l10n-name="icon"/> { $name }) في هذا الإعداد.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = يتحكّم الامتداد <img data-l10n-name="icon"/> { $name } بهذا الإعداد.
@@ -322,6 +319,10 @@ applications-type-pdf-with-type = { applications-type-pdf } ({ $type })
 #   $type (String) - the MIME type (e.g application/binary)
 applications-type-description-with-type = { $type-description } ({ $type })
 # Variables:
+#   $extension (String) - file extension (e.g .TXT)
+#   $type (String) - the MIME type (e.g application/binary)
+applications-file-ending-with-type = { applications-file-ending } ({ $type })
+# Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = استخدم { $plugin-name } (في { -brand-short-name })
@@ -338,12 +339,16 @@ applications-action-save-label =
     .value = { applications-action-save.label }
 applications-use-app-label =
     .value = { applications-use-app.label }
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 applications-use-app-default-label =
     .value = { applications-use-app-default.label }
 applications-use-other-label =
     .value = { applications-use-other.label }
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -372,13 +377,6 @@ update-application-warning-cross-user-setting = سيُطبّق هذا الإعد
 update-application-use-service =
     .label = استخدم خدمة تعمل في الخلفية لتنصيب التحديثات
     .accesskey = خ
-update-enable-search-update =
-    .label = حدّث محركات البحث تلقائيًا
-    .accesskey = ك
-update-pref-write-failure-title = فشلت الكتابة
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = تعذّر حفظ التفضيلات. تعذّرت الكتابة في الملف: { $path }
 update-setting-write-failure-title = حدث عُطل أثناء تحديث التفضيلات
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -549,7 +547,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = أضف شريط البحث إلى شريط الأدوات
 search-engine-default-header = محرك البحث المبدئي
-search-engine-default-desc = اختر محرك البحث المبدئي في شريطي العناوين و البحث.
 search-engine-default-desc-2 = هذا هو محرّك البحث المبدئي في شريطي العنوان والبحث. يمكنك تغييره متى شئت.
 search-engine-default-private-desc-2 = اختر محرّك بحث مبدئي آخر ليُستعمل في النوافذ الخاصة فقط
 search-separate-default-engine =
@@ -572,6 +569,7 @@ search-show-suggestions-above-history-option =
     .label = فضّل اقتراحات البحث على تأريخ التصفح في نتائج شريط العنوان
 search-show-suggestions-private-windows =
     .label = اعرض اقتراحات البحث في النوافذ الخاصة
+suggestions-addressbar-settings-generic = غيّر تفضيلات اقتراحات شريط العنوان
 search-suggestions-cant-show = لن تظهر اقتراحات البحث في نتائج شريط الموقع لأنّك أعددت { -brand-short-name } على ألّا يتذكر التأريخ.
 search-one-click-header = محركات البحث بنقرة واحدة
 search-one-click-desc = اختر محركات البحث البديلة التي تظهر تحت شريطي العناوين و البحث عندما تكتب كلمة بحث.
@@ -585,6 +583,9 @@ search-restore-default =
 search-remove-engine =
     .label = احذف
     .accesskey = ح
+search-add-engine =
+    .label = أضِف
+    .accesskey = ض
 search-find-more-link = اعثر على المزيد من محركات البحث
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -596,7 +597,6 @@ search-keyword-warning-bookmark = لقد اخترت كلمة مفتاحية تس
 
 ## Containers Section
 
-containers-back-link = → عد للخلف
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -615,20 +615,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = أزِل
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = خُذ الوِب معك
 sync-signedout-description = زامن علاماتك، و تأريخك، و ألسنتك، و كلمات سرك، و إضافاتك و التفضيلات بين كل أجهزتك.
-sync-signedout-account-title = اتصل باستخدام { -fxaccount-brand-name }
-sync-signedout-account-create = أليس لديك حساب؟ لتبدأ
-    .accesskey = س
-sync-signedout-account-signin =
-    .label = لِج…
-    .accesskey = ل
 sync-signedout-account-signin2 =
     .label = لِج إلى { -sync-brand-short-name }…
     .accesskey = ل
@@ -642,16 +633,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = نزّل Firefox لنظامي <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">أندرويد</a> أو <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">آي أو إس</a> للمزامنة مع هاتفك المحمول.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = غيّر صورة الحساب
-sync-disconnect =
-    .label = اقطع الاتصال…
-    .accesskey = ط
 sync-sign-out =
     .label = اخرج…
     .accesskey = خ
@@ -668,8 +653,6 @@ sync-remove-account =
 sync-sign-in =
     .label = لِج
     .accesskey = ل
-sync-signedin-settings-header = إعدادات المزامنة
-sync-signedin-settings-desc = اختر مالذي تريد مزامنته على أجهزتك باستخدام { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -722,10 +705,6 @@ sync-engine-tabs =
     .label = الألسنة المفتوحة
     .tooltiptext = قائمة بالألسنة المفتوحة على كل الأجهزة
     .accesskey = س
-sync-engine-logins =
-    .label = جلسات الولوج
-    .tooltiptext = أسماء المستخدمين وكلمات السر التي حفظتها
-    .accesskey = س
 sync-engine-logins-passwords =
     .label = جلسات الولوج وكلمات السر
     .tooltiptext = أسماء المستخدمين وكلمات السر التي حفظتها
@@ -764,18 +743,10 @@ sync-device-name-save =
     .label = احفظ
     .accesskey = ح
 sync-connect-another-device = صِلْ جهازا آخر
-sync-manage-devices = أدِر الأجهزة
-sync-fxa-begin-pairing = اقرن أحد أجهزتك
-sync-tos-link = بنود الخدمة
-sync-fxa-privacy-notice = تنويه الخصوصية
 
 ## Privacy Section
 
 privacy-header = خصوصية المتصفح
-
-## Privacy Section - Forms
-
-logins-header = جلسات الولوج وكلمات السر
 
 ## Privacy Section - Logins and Passwords
 
@@ -806,10 +777,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = استخدم كلمة سر رئيسيّة
     .accesskey = خ
+forms-primary-pw-use =
+    .label = استعمل كلمة سر رئيسيّة
+    .accesskey = س
+forms-primary-pw-learn-more-link = اطّلع على المزيد
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = غيّر كلمة السر الرئيسيّة…
     .accesskey = ر
 forms-master-pw-fips-title = أنت حاليًّا في وضع FIPS. يتطلّب FIPS كلمة سر غير فارغة.
+forms-primary-pw-change =
+    .label = غيّر كلمة السر الرئيسيّة…
+    .accesskey = غ
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = أنت حاليًّا في وضع FIPS. يتطلّب FIPS كلمة سر رئيسية غير فارغة.
 forms-master-pw-fips-desc = فشل تغيير كلمة السر
 
 ## OS Authentication dialog
@@ -821,6 +807,13 @@ master-password-os-auth-dialog-message-win = أدخِل معلومات ولوج 
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = إنشاء كلمة سر رئيسية
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = أدخِل معلومات ولوج وِندوز لتصنع كلمة سر رئيسية. يساعد هذا الأمر على حماية أمن حساباتك.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = أنشِئ كلمة سر رئيسية
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -887,8 +880,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = النوع المحجوب
     .accesskey = ن
-sitedata-option-block-trackers =
-    .label = متعقّبات الأطراف الثالثة
 sitedata-option-block-cross-site-trackers =
     .label = المتعقّبات بين المواقع
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -932,27 +923,9 @@ addressbar-suggestions-settings = غيّر تفضيلات اقتراحات مح�
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = حجب المحتوى
-content-blocking-section-description = احمِ خصوصيتك وأنت تتصفح الوِب بحجب المحتوى الذي يتعقّب المواقع التي تزورها دون أن تعلم، كما ويسجّلها باسمك. يمكنك بحجب جزء من هذا المحتوى تحميل الصفحات بسرعة أكبر.
 content-blocking-enhanced-tracking-protection = الحماية الموسّعة من التعقب
 content-blocking-section-top-level-description = تحاول المتعقّبات معرفة ما تفعل على الشبكة دومًا وجمع المعلومات التي تخصّ عاداتك في التصفّح كما واهتماماتك. يحجب { -brand-short-name } أكثر هذه المتعقّبات وغيرها من سكربتات ضارة.
 content-blocking-learn-more = اطّلع على المزيد
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = قياسي
-    .accesskey = ق
-content-blocking-setting-strict =
-    .label = صارم
-    .accesskey = ص
-content-blocking-setting-custom =
-    .label = مخصّص
-    .accesskey = خ
-content-blocking-standard-desc = الموازنة بين الحماية والأداء. يتيح عمل بعض المتعقّبات لتعمل المواقع كما ينبغي.
-content-blocking-strict-description = حماية أقوى وأعتى، لكنها قد تعطب بعض المواقع.
-content-blocking-custom-desc = اختر ما تريد حجبه.
-content-blocking-private-trackers = المتعقّبات المعروفة فقط في النوافذ الخاصة
-content-blocking-third-party-cookies = الكعكات التعقّبية من الأطراف الثالثة
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -978,22 +951,17 @@ content-blocking-cross-site-tracking-cookies = كعكات تتعقّبك بين 
 content-blocking-social-media-trackers = متعقبات مواقع التواصل الاجتماعي
 content-blocking-all-cookies = كل الكعكات
 content-blocking-unvisited-cookies = الكعكات من المواقع غير المُزارة
-content-blocking-all-windows-trackers = المتعقّبات المعروفة في كل النوافذ
 content-blocking-all-windows-tracking-content = المحتوى الذي يتعقّبك في كل النوافذ
 content-blocking-all-third-party-cookies = كل الكعكات من الأطراف الثالثة
 content-blocking-cryptominers = المُعدّنات المعمّاة
 content-blocking-fingerprinters = مسجّلات البصمات
 content-blocking-warning-title = انتبه!
-content-blocking-warning-description = يمكن أن تعطب بعض المواقع إن حُجب المحتوى. يمكنك بسهولة إلغاء أي نوع حجب للمواقع التي تثق بها.
-content-blocking-learn-how = اطّلع على الطريقة
+content-blocking-and-isolating-etp-warning-description = يمكن أن يضرّ حجب المتعقّبات وعزل الكعكات بمزايا بعض المواقع. أعِد تحميل الصفحات التي فيها متعقّبات لتحميل كلّ محتواها.
 content-blocking-warning-learn-how = اطّلع على المزيد
 content-blocking-reload-description = عليك إعادة تحميل الألسنة لتأخذ هذه التغييرات مفعولها.
 content-blocking-reload-tabs-button =
     .label = أعِد تحميل كل الألسنة
     .accesskey = ع
-content-blocking-trackers-label =
-    .label = المتعقّبات
-    .accesskey = ق
 content-blocking-tracking-content-label =
     .label = المحتوى الذي يتعقّبك
     .accesskey = ح
@@ -1052,12 +1020,6 @@ permissions-notification-link = اطّلع على المزيد
 permissions-notification-pause =
     .label = ألبِث التنبيهات حتى يُعاد تشغيل { -brand-short-name }
     .accesskey = ث
-permissions-block-autoplay-media2 =
-    .label = امنع المواقع من تشغيل الصوت تلقائيا
-    .accesskey = م
-permissions-block-autoplay-media-exceptions =
-    .label = الاستثناءات…
-    .accesskey = س
 permissions-autoplay = التشغيل التلقائي
 permissions-autoplay-settings =
     .label = الإعدادات…
@@ -1163,10 +1125,18 @@ space-alert-over-5gb-message =
 space-alert-under-5gb-ok-button =
     .label = حسنًا، فهمت
     .accesskey = ح
-space-alert-under-5gb-message = مساحة القرص قاربت على النفاذ من { -brand-short-name }. قد لا يُعرض محتوى المواقع كما ينبغي. اذهب إلى ”اطّلع على المزيد“ لتحسين استخدام القرص لتصفح أحسن.
+space-alert-under-5gb-message = مساحة القرص قاربت على النفاذ من { -brand-short-name }. قد لا يُعرض محتوى المواقع كما ينبغي. انتقل إلى ”اطّلع على المزيد“ لتحسين استخدام القرص لتصفح أحسن.
 
 ## Privacy Section - HTTPS-Only
 
+httpsonly-header = وضع HTTPS فقط
+httpsonly-learn-more = اطّلع على المزيد
+httpsonly-radio-enabled =
+    .label = فعّل وضع HTTPS فقط في كل النوافذ
+httpsonly-radio-enabled-pbm =
+    .label = فعّل وضع HTTPS فقط في النوافذ الخاصة فقط
+httpsonly-radio-disabled =
+    .label = لا تفعّل وضع HTTPS فقط
 
 ## The following strings are used in the Download section of settings
 

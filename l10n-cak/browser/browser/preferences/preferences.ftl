@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Xa xe toq { -brand-short-name } b'anon runuk'ulem richin yeruq'ät ojqanela' etaman kiwäch
 do-not-track-option-always =
     .label = Junelïk
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Taq cha'oj
-           *[other] Taq ajowab'äl
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Taq cha'oj
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Jun k'amal, <img data-l10n-name="icon"/
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Jun k'amal, <img data-l10n-name="icon"/> { $name }, ruchajin ri ruxaq K'ak'a' Ruwi'.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Jun k'amal, <img data-l10n-name="icon"/> { $name }, nuchajij re runuk'ulem re'.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Jun k'amal, <img data-l10n-name="icon"/> { $name }, nuchajij re runuk'ulem re'.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Re runuk'ulem re' xtisamajïx pa
 update-application-use-service =
     .label = Tokisäx jun samaj pa ruka'n b'ey richin yeyak ri taq k'exoj ruwäch
     .accesskey = r
-update-enable-search-update =
-    .label = Pa yonil k'exoj chuqa' ruk'wayöl kanob'äl
-    .accesskey = x
-update-pref-write-failure-title = Rusachoj Tz'ib'anïk
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Man xyake' ta ri ajowab'äl. Man xtz'ib'äx ta chi re ri yakb'äl: { $path }
 update-setting-write-failure-title = Xsach toq xyak ri Ruk'exoj taq ajowab'äl
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Titz'aqatisäx ri rukajtz'ik kanoxïk pa molsamajib'äl
 search-engine-default-header = K'o wi chi Kanob'äl
-search-engine-default-desc = Tacha' ri ruk'u'x kanob'äl kan k'o wi richin nawokisaj pa ri kikajtz'ik taq ochochib'äl chuqa' pa ri rukajtz'ik kanoxïk.
 search-engine-default-desc-2 = Re re' jun rokik'amaya'l kanoxïk ri k'o pa kikajtz'ik ochochib'äl chuqa' pa ri rukajtz'ik kanoxïk. Yatikïr najäl pa xab'achike ramaj.
 search-engine-default-private-desc-2 = Ticha achi'el ri rokik'amaya'l kanoxïk k'o kichin Ichinan taq Tzuwäch
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Tiyuj
     .accesskey = y
+search-add-engine =
+    .label = Titz'aqatisäx
+    .accesskey = t
 search-find-more-link = Kekanöx ch'aqa' chik kik'u'x taq kanob'äl
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = Xacha' jun ewan tzij okisan ruma jun yaketal. 
 
 ## Containers Section
 
-containers-back-link = « Titzolin
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Tiyuj
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Tak'waj awik'in ri Ajk'amaya'l
 sync-signedout-description = Ke'axima' ri taq ayaketal, natab'äl, taq ruwi', taq ewan tzij, taq tz'aqat chuqa' taq ajowab'äl chi kikojol konojel ri taq awokisaxel.
-sync-signedout-account-title = Tib'an okem rik'in jun { -fxaccount-brand-name }
-sync-signedout-account-create = ¿La man k'o ta jun ataqoya'l? Titikirisäx
-    .accesskey = q
-sync-signedout-account-signin =
-    .label = Titikirisäx molojri'ïl…
-    .accesskey = t
 sync-signedout-account-signin2 =
     .label = Tatz'ib'aj ab'i' pa { -sync-brand-short-name }…
     .accesskey = p
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Taqasaj Firefox richin <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> chuqa' <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> richin naxïm rik'in ri awoyonib'al okisaxel.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Tijal ruwachib'al ruwäch b'i'aj
-sync-disconnect =
-    .label = Nichup…
-    .accesskey = c
 sync-sign-out =
     .label = Titz'apïx Molojri'ïl…
     .accesskey = p
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Titikirisäx molojri'ïl
     .accesskey = t
-sync-signedin-settings-header = Taq Runuk'ulem Ximojri'ïl
-sync-signedin-settings-desc = Tacha' achike ye'axïm pa taq awokisaxel rik'in { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = Kejaq ruwi'
     .tooltiptext = Jun rucholb'al ri achike jaqäl pa konojel ri taq okisab'äl eximon
     .accesskey = r
-sync-engine-logins =
-    .label = Ketikirisäx molojri'ïl
-    .tooltiptext = Kib'i' winäq chuqa' ewan taq tzij e'ayakon
-    .accesskey = K
 sync-engine-logins-passwords =
     .label = Kitikirisaxik molojri'ïl chuqa' ewan taq tzij
     .tooltiptext = Rub'i' winäq chuqa' ewan taq rutzij eruyakon
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Tiyak
     .accesskey = a
 sync-connect-another-device = Tokisäx jun chik okisaxel
-sync-manage-devices = Kenuk'samajïx taq okisaxel
-sync-fxa-begin-pairing = Tichojmirisäx jun okisaxel
-sync-tos-link = Taq Rojqanem Samaj
-sync-fxa-privacy-notice = Ichinan Na'oj
 
 ## Privacy Section
 
 privacy-header = Richinanem Okik'amaya'l
-
-## Privacy Section - Forms
-
-logins-header = Kitikirisaxik Molojri'ïl chuqa' Ewan taq Tzij
 
 ## Privacy Section - Logins and Passwords
 
@@ -803,6 +765,10 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Tokisäx ri nimaläj ewan tzij
     .accesskey = T
+forms-primary-pw-use =
+    .label = Tokisäx jun Nab'ey Ewan Tzij
+    .accesskey = k
+forms-primary-pw-learn-more-link = Tetamäx ch'aqa' chik
 # This string uses the former name of the Primary Password feature
 # ("Master Password" in English) so that the preferences can be found
 # when searching for the old name. The accesskey is unused.
@@ -810,6 +776,14 @@ forms-master-pw-change =
     .label = Tijal Ajtij Ewan Tzij…
     .accesskey = A
 forms-master-pw-fips-title = Wakami at k'o pa rub'eyal FIPS. FIPS nrajo' jun nimaläj ewan tzij, ri man kowöl ta.
+forms-primary-pw-change =
+    .label = Tijal Nab'ey Ewan Tzij…
+    .accesskey = N
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = Etaman ruwa achi'el Ajtij Ewan Tzij
+forms-primary-pw-fips-title = Wakami at k'o pa rub'eyal FIPS. FIPS nrajo' jun Nab'ey Ewan Tzij ri man kowöl ta.
 forms-master-pw-fips-desc = Xsach toq Nijal ri Ewan Tzij
 
 ## OS Authentication dialog
@@ -821,6 +795,13 @@ master-password-os-auth-dialog-message-win = Richin natz'ük jun ajtij ewan atzi
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = Titz'uk jun Nimaläj Ewan Tzij
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Richin natz'ük jun Nab'ey Ewan Tzij, tatz'ib'aj ri ruwujil rutikirisaxik molojri'ïl richin Windows. Re re' nuto' richin nuchajij rujikomal ri rub'i' ataqoya'l.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = Titz'uk jun Nab'ey Ewan Tzij
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -887,8 +868,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Q'aton ruwäch
     .accesskey = r
-sitedata-option-block-trackers =
-    .label = Rojqanela' aj rox winäq
 sitedata-option-block-cross-site-trackers =
     .label = Kojqanela' xoch'in taq ruxaq
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -934,27 +913,9 @@ addressbar-suggestions-settings = Kek'ex ri taq kajowab'al ri taq kichilab'enik 
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Ruq'atik Rupam
-content-blocking-section-description = Tachajij ri awichinanem toq yatok pa k'amaya'l. Ke'aq'ata' rupam yekikanoj ri ruxaq e'atz'eton chuqa' yerunük' taq ruwäch b'i'aj. Yeq'at taq rupam nitikïr nub'än chi yesamäj anin ri taq ruxaq.
 content-blocking-enhanced-tracking-protection = Utzirisan Chajinïk chuwäch Ojqanem
 content-blocking-section-top-level-description = Ri ojqanela' yatkojqaj pa k'amab'ey richin nikimöl ri awetamab'al chi rij ri ye'ab'än chuqa' ri niqa chawäch nakanoj. { -brand-short-name } ke'aq'ata' k'ïy chi ke ri taq ojqanela' ri' chuqa' ch'aqa' chik tz'ilanel taq skrip.
 content-blocking-learn-more = Tetamäx Ch'aqa' Chik
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Pa rub'eyal
-    .accesskey = b
-content-blocking-setting-strict =
-    .label = Nimaläj
-    .accesskey = l
-content-blocking-setting-custom =
-    .label = Ichinan
-    .accesskey = I
-content-blocking-standard-desc = Pajon richin ri chajinïk chuqa' ri rub'eyal nisamäj. Niya' q'ij chi ke jujun taq ojqanela' richin ütz yesamäj ri ajk'amaya'l ruxaq.
-content-blocking-strict-description = Jun nïm chajinïk, rik'in jub'a' nub'än chi jujun taq ruxaq k'amaya'l man ütz ta yesamäj.
-content-blocking-custom-desc = Ticha' achike niq'at.
-content-blocking-private-trackers = Ojqanela' etaman kiwäch xa xe pa Ichinan Tzuwäch
-content-blocking-third-party-cookies = Kikuki ojqanem kichin aj rox winäq
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -981,23 +942,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Taq kikuki kojqanem 
 content-blocking-social-media-trackers = Kojqanela' aj winäq k'amab'ey
 content-blocking-all-cookies = Ronojel taq kuki
 content-blocking-unvisited-cookies = Taq kikuki ruxaq k'amaya'l man e tz'eton ta
-content-blocking-all-windows-trackers = Ojqanela' etaman kiwäch pa ronojel tzuwäch
 content-blocking-all-windows-tracking-content = Rojqaxik rupam pa ronojel tzuwäch
 content-blocking-all-third-party-cookies = Ronojel kikuki aj rox winäq
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = ¡Tak'axäx!
-content-blocking-warning-description = Ri ruq'atik rupam nitikïr nub'än chi jujun ajk'amaya'l ruxaq man ütz ta yesamäj. Man k'ayew ta richin nachüp ri kiq'atik ruxaq k'amaya'l akuqub'an ak'u'x chi kij.
-content-blocking-learn-how = Tetamäx achike rub'eyal
 content-blocking-and-isolating-etp-warning-description = Rik'in yeq'at taq ojqanela' chuqa' yejech'üx ri taq kuki rik'in jub'a' nutz'ila' rub'eyal yesamäj jujun taq ruxaq. Tasamajij chik jun ruxaq rik'in ojqanela' richin nasamajib'ej ronojel ri rupam.
 content-blocking-warning-learn-how = Tetamäx achike rub'eyal
 content-blocking-reload-description = K'o chi ye'asamajib'ej chik ri taq ruwi' richin ye'awokisaj re taq jaloj re'.
 content-blocking-reload-tabs-button =
     .label = Kesamajib'ëx Chik Konojel Ri Taq Ruwi'
     .accesskey = K
-content-blocking-trackers-label =
-    .label = Ojqanela'
-    .accesskey = O
 content-blocking-tracking-content-label =
     .label = Rupam ojqanem
     .accesskey = o
@@ -1056,12 +1011,6 @@ permissions-notification-link = Tetamäx ch'aqa' chik
 permissions-notification-pause =
     .label = Keq'at ri taq rutzijol k'a toq ri { -brand-short-name } nitikïr chik
     .accesskey = r
-permissions-block-autoplay-media2 =
-    .label = Keq'at taq ajk'amaya'l ruxaq richin chi man pa ruyonil ta ketzij ri taq k'oxom
-    .accesskey = q
-permissions-block-autoplay-media-exceptions =
-    .label = Taq man relik ta…
-    .accesskey = E
 permissions-autoplay = Ruyon titzijtäj
 permissions-autoplay-settings =
     .label = Taq nuk'ulem…
@@ -1172,6 +1121,7 @@ space-alert-under-5gb-message = { -brand-short-name } tajin majun rupam nikanaj 
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = HTTPS-Only B'anikil
+httpsonly-description = Ri HTTPS nuya' jun jikïl chuqa' ewäl rusik'ixik okem chi kikojol ri { -brand-short-name } chuqa' ri ajk'amaya'l taq ruxaq ye'atz'ët. B'ama konojel ri ajk'amaya'l taq ruxaq yekik'ül ri HTTPS, chuqa' we tzijïl ri HTTPS-Only b'anikil, ri { -brand-short-name } xkeruk'ëx konojel ri taq okem pa HTTPS.
 httpsonly-learn-more = Tetamäx ch'aqa' chik
 httpsonly-radio-enabled =
     .label = Titzij HTTPS-Only B'anikil chi jun taq tzuwäch

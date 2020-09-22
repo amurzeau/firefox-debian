@@ -220,6 +220,7 @@ enum class WebGLExtensionID : uint8_t {
   EXT_texture_compression_bptc,
   EXT_texture_compression_rgtc,
   EXT_texture_filter_anisotropic,
+  EXT_texture_norm16,
   MOZ_debug,
   OES_element_index_uint,
   OES_fbo_render_mipmap,
@@ -245,11 +246,6 @@ enum class WebGLExtensionID : uint8_t {
   WEBGL_lose_context,
   Max
 };
-
-template <typename T>
-inline constexpr auto EnumValue(const T v) {
-  return static_cast<typename std::underlying_type<T>::type>(v);
-}
 
 class UniqueBuffer {
   // Like UniquePtr<>, but for void* and malloc/calloc/free.
@@ -735,10 +731,13 @@ class RawBuffer final {
         mLen(data.length()),
         mOwned(std::move(owned)) {}
 
+  explicit RawBuffer(const size_t len) : mLen(len) {}
+
   ~RawBuffer() = default;
 
   Range<const T> Data() const { return {mBegin, mLen}; }
-  const auto& begin() const { return mBegin; };
+  const auto& begin() const { return mBegin; }
+  const auto& size() const { return mLen; }
 
   RawBuffer() = default;
 

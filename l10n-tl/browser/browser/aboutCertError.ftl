@@ -84,6 +84,7 @@ proxyResolveFailure-title = Hindi mahanap ang proxy server
 redirectLoop-title = Ang pahina ay hindi nag didirekta ng maayos
 unknownSocketType-title = Hindi inaasahang tugon mula sa server
 nssFailure2-title = Nabigo ang Ligtas na Koneksyon
+csp-xfo-error-title = { -brand-short-name } Hindi Mabuksan ang Pahinang Ito
 corruptedContentError-title = Corrupted Content Error
 remoteXUL-title = Remote XUL
 sslv3Used-title = Hindi Makakonekta nang Ligtas

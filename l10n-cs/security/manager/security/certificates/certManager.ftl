@@ -208,6 +208,8 @@ cert-not-verified-issuer-unknown = Certifikát nemohl být ověřen, protože je
 cert-not-verified-ca-invalid = Certifikát nemohl být ověřen, protože certifikát CA je neplatný.
 cert-not-verified_algorithm-disabled = Certifikát nemohl být ověřen, protože byl podepsán algoritmem, který je z bezpečnostních důvodů zakázán.
 cert-not-verified-unknown = Certifikát nemohl být z neznámého důvodu ověřen.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Neposílat klientský certifikát
 
 ## Add Security Exception dialog
 

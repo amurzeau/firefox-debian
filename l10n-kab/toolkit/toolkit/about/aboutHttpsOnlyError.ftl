@@ -18,3 +18,4 @@ about-httpsonly-explanation-nosupport = Ahat, asmel web ur isefrak ara s sshala 
 about-httpsonly-explanation-risk = Yezmer daɣen yella uẓeddam yettekkan. Ma yella tenwiḍ ad terzuḍ ɣer usmel web, ur ilaq ara ad teskecmeḍ kra seg talɣut tabaḍnit am wawalen uffiren, imaylen neɣ ttfaṣil n tkarḍa n usellek.
 about-httpsonly-button-accept-and-continue = Qbel ugur, tkemmleḍ
 about-httpsonly-button-go-back = Uɣal ɣer deffir
+about-httpsonly-link-learn-more = Issin ugar…

@@ -8,7 +8,6 @@ password-quality-meter = Գաղտնաբառի ապահովությունը
 
 change-password-window =
     .title = Փոխել Հիմնական գաղտնաբառը
-
 # Variables:
 # $tokenName (String) - Security device of the change password dialog
 change-password-token = Անվտանգության Սարք: { $tokenName }
@@ -21,9 +20,18 @@ change-password-reenter = Նոր գաղտնաբառ (կրկին) ՝
 reset-password-window =
     .title = Մաքրել Հիմնական գաղտնաբառը
     .style = width: 40em
+
+## Reset Primary Password dialog
+
+reset-primary-password-window =
+    .title = Վերակայել Հիմնական գաղտնաբառը
+    .style = width: 40em
 reset-password-button-label =
     .label = Վերադարձնել
-reset-password-text = Եթե մաքրեք Ձեր հիմնական գաղտնաբառը, ապա բոլոր պահպանված Վեբ և Էլ-Փոստ գաղտնաբառերը, ձեվերի տվյալները, անհատական արտոնաթղթերը, անձնական բանալիները կմոռացվեն: Համո՞զված եք, որ ցանկանում եք հիմնական գաղտնաբառը մաքրել:
+reset-password-text = Եթե մաքրեք Ձեր Հիմնական գաղտնաբառը, ապա բոլոր պահպանված Վեբ և Էլ-Փոստ գաղտնաբառերը, ձեվերի տվյալները, անհատական արտոնաթղթերը, անձնական բանալիները կմոռացվեն: Համո՞զված եք, որ ցանկանում եք հիմնական գաղտնաբառը մաքրել:
+reset-primary-password-text = Եթե մաքրեք Ձեր Հիմնական գաղտնաբառը, ապա բոլոր պահպանված Վեբ և Էլ. Փոստ գաղտնաբառերը, անհատական հավատարմագրերը, անձնական բանալիները կմոռացվեն: Համոզվա՞ծ եք, որ ցանկանում եք վերակայել Հիմնական գաղտնաբառը:
+pippki-reset-password-confirmation-title = Վերակայել Հիմնական գաղտնաբառը
+pippki-reset-password-confirmation-message = Ձեր հիմնական գաղտնաբառը վերակայվել է:
 
 ## Downloading cert dialog
 

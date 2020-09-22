@@ -175,7 +175,7 @@ full-screen-exit =
 
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
-search-one-offs-with-title = 请选择这次要用的搜索引擎：
+search-one-offs-with-title = 这次要用的搜索引擎：
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -247,7 +247,7 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = 您并未安全地连接至此网站。
 identity-connection-verified = 您已安全地连接至此网站。
 identity-ev-owner-label = 证书颁发给：
-identity-description-custom-root = Mozilla 不认可此证书颁发者，可能是由您的操作系统或超级管理员所添加的。 <label data-l10n-name="link">详细了解</label>
+identity-description-custom-root = Mozilla 不认识此证书颁发者。它可能是由您的操作系统或管理员身份添加。 <label data-l10n-name="link">详细了解</label>
 identity-remove-cert-exception =
     .label = 移除例外
     .accesskey = R
@@ -318,8 +318,38 @@ enable-devtools-popup-description = 请通过“Web 开发者”菜单打开开�
 
 urlbar-default-placeholder =
     .defaultPlaceholder = 搜索或输入网址
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = 搜索或输入网址
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = 网上搜索
+    .aria-label = 使用 { $name } 搜索
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = 输入搜索词
+    .aria-label = 搜索 { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = 输入搜索词
+    .aria-label = 搜索书签
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = 输入搜索词
+    .aria-label = 搜索历史记录
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = 输入搜索词
+    .aria-label = 搜索标签页
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

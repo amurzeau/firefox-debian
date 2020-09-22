@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = 仅当 { -brand-short-name } 设置为拦截已知跟踪器时
 do-not-track-option-always =
     .label = 一律发送
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] 选项
-           *[other] 首选项
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] 选项
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = 扩展 <img data-l10n-name="icon"/> { $
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = 扩展 <img data-l10n-name="icon"/> { $name } 正在控制您的新标签页。
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = 扩展 <img data-l10n-name="icon"/> { $name } 正在控制此设置。
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = 扩展 <img data-l10n-name="icon"/> { $name } 正在控制此设置。
@@ -367,13 +364,6 @@ update-application-warning-cross-user-setting = 此设置将影响使用这份 {
 update-application-use-service =
     .label = 使用一项系统服务以静默安装更新
     .accesskey = b
-update-enable-search-update =
-    .label = 自动更新搜索引擎
-    .accesskey = e
-update-pref-write-failure-title = 写入失败
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = 无法保存首选项。未能写入文件：{ $path }
 update-setting-write-failure-title = 保存“更新”首选项时出错
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -537,7 +527,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = 添加搜索栏到工具栏
 search-engine-default-header = 默认搜索引擎
-search-engine-default-desc = 选择在地址栏和搜索栏中搜索时默认使用的搜索引擎。
 search-engine-default-desc-2 = 这是地址栏和搜索栏中的默认搜索引擎，您可以随时切换。
 search-engine-default-private-desc-2 = 为隐私窗口选择不同的默认搜索引擎
 search-separate-default-engine =
@@ -574,6 +563,9 @@ search-restore-default =
 search-remove-engine =
     .label = 移除
     .accesskey = R
+search-add-engine =
+    .label = 添加
+    .accesskey = A
 search-find-more-link = 寻找更多搜索引擎
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -585,7 +577,6 @@ search-keyword-warning-bookmark = 您选择的关键词已用于某个书签，�
 
 ## Containers Section
 
-containers-back-link = « 返回
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -604,20 +595,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = 移除
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = 让您个性化的网络体验随身相伴
 sync-signedout-description = 在您的各种设备间同步您的书签、历史记录、标签页、密码、附加组件与首选项。
-sync-signedout-account-title = 使用 { -fxaccount-brand-name }登录，开启同步功能
-sync-signedout-account-create = 没有账户吗？注册一个吧
-    .accesskey = C
-sync-signedout-account-signin =
-    .label = 登录…
-    .accesskey = I
 sync-signedout-account-signin2 =
     .label = 登录{ -sync-brand-short-name }服务…
     .accesskey = i
@@ -631,16 +613,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = 在 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 或者 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> 上安装 Firefox，让您的个性体验随身相伴。
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = 更改头像
-sync-disconnect =
-    .label = 解绑…
-    .accesskey = D
 sync-sign-out =
     .label = 退出登录…
     .accesskey = g
@@ -657,8 +633,6 @@ sync-remove-account =
 sync-sign-in =
     .label = 登录
     .accesskey = g
-sync-signedin-settings-header = 同步设置
-sync-signedin-settings-desc = 选择 { -brand-short-name } 要在您的设备间同步哪些数据。
 
 ## Sync section - enabling or disabling sync.
 
@@ -711,10 +685,6 @@ sync-engine-tabs =
     .label = 打开的标签页
     .tooltiptext = 已同步的所有设备目前打开什么
     .accesskey = T
-sync-engine-logins =
-    .label = 登录信息
-    .tooltiptext = 您已保存的用户名和密码
-    .accesskey = L
 sync-engine-logins-passwords =
     .label = 登录名和密码
     .tooltiptext = 您存入的用户名和密码
@@ -753,18 +723,10 @@ sync-device-name-save =
     .label = 保存
     .accesskey = v
 sync-connect-another-device = 绑定其他设备
-sync-manage-devices = 管理设备
-sync-fxa-begin-pairing = 配对设备
-sync-tos-link = 服务条款
-sync-fxa-privacy-notice = 隐私声明
 
 ## Privacy Section
 
 privacy-header = 浏览器隐私
-
-## Privacy Section - Forms
-
-logins-header = 登录信息与密码
 
 ## Privacy Section - Logins and Passwords
 
@@ -898,8 +860,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = 阻止类型
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = 第三方跟踪器
 sitedata-option-block-cross-site-trackers =
     .label = 跨网站跟踪器
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -945,27 +905,9 @@ addressbar-suggestions-settings = 更改搜索引擎建议的首选项
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = 内容拦截
-content-blocking-section-description = 在浏览时保护您的隐私。拦截会跟踪您访问活动，并分析用户特征的隐藏内容。拦截此类内容也可能使页面加载更快。
 content-blocking-enhanced-tracking-protection = 增强型跟踪保护
 content-blocking-section-top-level-description = 跟踪器会跟踪您的在线活动，收集您的浏览习惯与兴趣爱好。{ -brand-short-name } 可拦截众多跟踪器和其他恶意脚本。
 content-blocking-learn-more = 详细了解
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = 标准
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = 严格
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = 自定义
-    .accesskey = C
-content-blocking-standard-desc = 平衡保护与性能。允许部分跟踪器以确保网站运行正常。
-content-blocking-strict-description = 更强的保护，可能导致某些网站异常。
-content-blocking-custom-desc = 选择要拦截的内容。
-content-blocking-private-trackers = 仅在隐私窗口中拦截已知的跟踪器
-content-blocking-third-party-cookies = 第三方跟踪性 Cookie
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -992,23 +934,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = 跨网站跟踪性 C
 content-blocking-social-media-trackers = 社交媒体跟踪器
 content-blocking-all-cookies = 所有 Cookie
 content-blocking-unvisited-cookies = 未访问网站的 Cookie
-content-blocking-all-windows-trackers = 在所有窗口拦截已知的跟踪器
 content-blocking-all-windows-tracking-content = 所有窗口中的跟踪性内容
 content-blocking-all-third-party-cookies = 所有第三方 Cookie
 content-blocking-cryptominers = 加密货币挖矿程序
 content-blocking-fingerprinters = 数字指纹跟踪程序
 content-blocking-warning-title = 注意！
-content-blocking-warning-description = 拦截内容后可能导致某些网站异常。但对您信任的网站禁用拦截非常简单。
-content-blocking-learn-how = 了解方法
 content-blocking-and-isolating-etp-warning-description = 拦截跟踪器并隔离 Cookie 可能会影响某些网站的功能。放行跟踪器，重载页面即可加载所有内容。
 content-blocking-warning-learn-how = 了解要如何做
 content-blocking-reload-description = 需要重新载入标签页才能应用变更。
 content-blocking-reload-tabs-button =
     .label = 重新载入所有标签页
     .accesskey = R
-content-blocking-trackers-label =
-    .label = 跟踪器
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = 跟踪性内容
     .accesskey = T
@@ -1067,12 +1003,6 @@ permissions-notification-link = 详细了解
 permissions-notification-pause =
     .label = 暂停通知直至下次打开 { -brand-short-name }
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = 阻止网站自动播放声音
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = 例外…
-    .accesskey = E
 permissions-autoplay = 自动播放
 permissions-autoplay-settings =
     .label = 设置…

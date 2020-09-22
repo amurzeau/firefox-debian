@@ -24,19 +24,6 @@ graph-total-tracker-summary =
 graph-private-window = { -brand-short-name } nastavlja blokirati programe za praćenje u privatnim prozorima, ali ne vodi evidenciju o tome što je blokirano.
 # Weekly summary of the graph when the graph is empty in Private Mode
 graph-week-summary-private-window = Programi za praćenje, koje je { -brand-short-name } blokirao ovaj tjedan
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-# The category name in the <b> tag will be bold.
-protection-report-header-details-standard = Razina zaštite je postavljena na <b>Standardna</b>
-    .title = Idite na Postavke privatnosti
-protection-report-header-details-strict = Razina zaštite je postavljena na <b>Stroga</b>
-    .title = Idite na Postavke privatnosti
-protection-report-header-details-custom = Razina zaštite je postavljena na <b>Prilagođena</b>
-    .title = Idite na Postavke privatnosti
-protection-report-page-title = Zaštite privatnosti
-protection-report-content-title = Zaštite privatnosti
-etp-card-title = Poboljšana zaštita od praćenja
-etp-card-content = Programi za praćenje prate tvoje radnje prilikom pregledavanja interneta i služe za prikupljanje podataka o tvojim navikama i interesima. { -brand-short-name } blokira mnoge takve programe kao i druge zlonamjerne skripte.
 protection-report-webpage-title = Nadzorna ploča zaštite
 protection-report-page-content-title = Nadzorna ploča zaštite
 protection-report-settings-link = Upravljaj svojim postavkama za privatnost i sigurnost
@@ -66,12 +53,9 @@ mobile-app-title = Blokiraj oglase koji te prate na više uređaja
 mobile-app-card-content = Koristi mobilni preglednik s ugrađenom zaštitom od praćenja.
 mobile-app-links = { -brand-product-name } preglednik za <a data-l10n-name="android-mobile-inline-link">Android</a> i <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Ne zaboravi lozinku nikad više
-lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-title-logged-in2 = Upravljanje lozinkama
 lockwise-header-content = { -lockwise-brand-name } sigurno sprema tvoje lozinke u pregledniku.
 lockwise-header-content-logged-in = Spremaj i sinkroniziraj lozinke na svim svojim uređajima na siguran način.
-protection-report-view-logins-button = Prikaži prijave
-    .title = Idi na spremljene prijave
 protection-report-save-passwords-button = Spremi lozinke
     .title = Spremi lozinke u { -lockwise-brand-short-name }
 protection-report-manage-passwords-button = Upravljanje lozinkama
@@ -79,15 +63,6 @@ protection-report-manage-passwords-button = Upravljanje lozinkama
 lockwise-mobile-app-title = Ponesi svoje lozinke sa sobom
 lockwise-no-logins-card-content = Koristi lozinke koje su spremljene u { -brand-short-name }u na bilo kojem uređaju.
 lockwise-app-links = { -lockwise-brand-name } za <a data-l10n-name="lockwise-android-inline-link">Android</a> i <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
-# This string is displayed after a large numeral that indicates the total number
-# of email addresses being monitored. Don’t add $count to
-# your localization, because it would result in the number showing twice.
-lockwise-passwords-stored =
-    { $count ->
-        [one] lozinka sigurno spremljena <a data-l10n-name="lockwise-how-it-works">Kako funkcionira</a>
-        [few] lozinke sigurno spremljene <a data-l10n-name="lockwise-how-it-works">Kako funkcionira</a>
-       *[other] lozinki sigurno spremljeno <a data-l10n-name="lockwise-how-it-works">Kako funkcionira</a>
-    }
 # Variables:
 # $count (Number) - Number of passwords exposed in data breaches.
 lockwise-scanned-text-breached-logins =
@@ -109,20 +84,10 @@ lockwise-scanned-text-no-breached-logins =
 lockwise-how-it-works-link = Kako ovo funkcionira
 turn-on-sync = Uključi { -sync-brand-short-name } …
     .title = Prijeđi na postavke sinkronizacije
-manage-connected-devices = Upravljaj uređajima …
-# Variables:
-#   $count (Number) - Number of devices connected with sync.
-lockwise-connected-device-status =
-    { $count ->
-        [one] Povezano s { $count } uređajem
-        [few] Povezano s { $count } uređaja
-       *[other] Povezano s { $count } uređaja
-    }
 monitor-title = Pazi na curenje podataka
 monitor-link = Kako funkcionira
 monitor-header-content-no-account = Koristi { -monitor-brand-name } i provjeri, je li se tvoji podaci nalaze u poznatom curenja podataka te dobivaj obavijesti o novim curenjima podataka.
 monitor-header-content-signed-in = { -monitor-brand-name } te upozorava ukoliko su se tvoji podaci pojavili u curenju podataka.
-monitor-sign-up = Prijavi se za upozorenja o curenju podataka
 auto-scan = Danas automatski pretraženo
 monitor-emails-tooltip =
     .title = Pogledaj praćene e-adrese na { -monitor-brand-short-name }
@@ -157,16 +122,13 @@ info-exposed-passwords-found =
         [few] lozinke su izložene u curenju podataka
        *[other] lozinki je izloženo u curenju podataka
     }
-full-report-link = Pogledaj cjeloviti izvještaj na <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>
-# This string is displayed after a large numeral that indicates the total number
-# of saved logins which may have been exposed. Don’t add $count to
-# your localization, because it would result in the number showing twice.
-password-warning =
-    { $count ->
-        [one] Spremljene prijave su možda izložene u curenju podataka. Izmijenite ove lozinke za bolju sigurnost na internetu. <a data-l10n-name="lockwise-link">Prikaži spremljene prijave</a>
-        [few] Spremljene prijave su možda izložene u curenju podataka. Izmijenite ove lozinke za bolju sigurnost na internetu. <a data-l10n-name="lockwise-link">Prikaži spremljene prijave</a>
-       *[other] Spremljene prijave su možda izložene u curenju podataka. Izmijenite ove lozinke za bolju sigurnost na internetu. <a data-l10n-name="lockwise-link">Prikaži spremljene prijave</a>
-    }
+monitor-no-breaches-title = Dobre vijesti!
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved } % gotovo
+monitor-partial-breaches-motivation-title-start = Odličan početak!
+monitor-partial-breaches-motivation-title-middle = Samo tako nastavi!
+monitor-partial-breaches-motivation-title-end = Skoro gotovo! Samo tako nastavi.
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

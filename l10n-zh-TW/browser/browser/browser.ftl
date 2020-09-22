@@ -318,8 +318,38 @@ enable-devtools-popup-description = 請透過「網頁開發者」選單開啟�
 
 urlbar-default-placeholder =
     .defaultPlaceholder = 搜尋或輸入網址
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = 搜尋或輸入網址
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = 搜尋 Web
+    .aria-label = 使用 { $name } 搜尋
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = 輸入搜尋詞彙
+    .aria-label = 搜尋 { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = 輸入搜尋詞彙
+    .aria-label = 搜尋書籤
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = 輸入搜尋詞彙
+    .aria-label = 搜尋瀏覽紀錄
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = 輸入搜尋詞彙
+    .aria-label = 搜尋分頁
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

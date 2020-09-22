@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = מידע נוסף
-onboarding-button-label-try-now = נסו זאת כעת
 onboarding-button-label-get-started = תחילת עבודה
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = תחילת עבודה
 onboarding-welcome-header = ברוכים הבאים אל { -brand-short-name }
 onboarding-welcome-body = הדפדפן כבר בידיך.<br/>עכשיו נציג את שאר { -brand-product-name }.
 onboarding-welcome-learn-more = מידע נוסף על היתרונות.
-onboarding-join-form-header = הצטרפות אל { -brand-product-name }
 onboarding-welcome-modal-get-body = הדפדפן כבר בידיך.<br/>עכשיו הזמן להפיק את המירב מ־{ -brand-product-name }.
 onboarding-welcome-modal-privacy-body = יש לך דפדפן. עכשיו נוסיף קצת חיזוקי פרטיות.
 onboarding-welcome-modal-family-learn-more = מידע נוסף על משפחת מוצרי { -brand-product-name }.
@@ -111,6 +109,46 @@ onboarding-multistage-theme-tooltip-alpenglow =
         שימוש בתצוגה צבעונית עבור כפתורים,
         תפריטים וחלונות.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        שימוש במראה של מערכת ההפעלה שלך
+        עבור כפתורים, תפריטים וחלונות.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        שימוש במראה של מערכת ההפעלה שלך
+        עבור כפתורים, תפריטים וחלונות.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        שימוש בתצוגה בהירה עבור כפתורים,
+        תפריטים וחלונות.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        שימוש בתצוגה בהירה עבור כפתורים,
+        תפריטים וחלונות.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        שימוש בתצוגה כהה עבור כפתורים,
+        תפריטים וחלונות.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        שימוש בתצוגה כהה עבור כפתורים,
+        תפריטים וחלונות.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        שימוש בתצוגה צבעונית עבור כפתורים,
+        תפריטים וחלונות.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        שימוש בתצוגה צבעונית עבור כפתורים,
+        תפריטים וחלונות.
 
 ## Welcome full page string
 
@@ -135,10 +173,7 @@ onboarding-sync-form-sub-header = כדי להמשיך אל { -sync-brand-name }
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = מוצרים שימושיים
 onboarding-benefit-products-text = לבצע משימות עם משפחת כלים שמכבדת את הפרטיות שלך בכל המכשירים שלך.
-onboarding-benefit-knowledge-title = ידע מעשי
-onboarding-benefit-privacy-title = פרטיות אמיתית
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -159,17 +194,6 @@ onboarding-benefit-lockwise-text = ניהול ססמאות בצורה מאובט
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = גלישה פרטית
-onboarding-private-browsing-text = תנו לגלוש בשקט. גלישה פרטית עם חסימת תוכן חוסמת אתרים שעוקבים אחריך ברחבי האינטרנט.
-onboarding-screenshots-title = צילומי מסך
-onboarding-screenshots-text = ניתן לצלם, לשמור ולשתף צילומי מסך מבלי לצאת מ־{ -brand-short-name }. ניתן לצלם את הדף כולו או חלק ממנו בעת הגלישה. לאחר מכן ניתן לשמור לאינטרנט לצורך גישה ושיתוף פשוטים.
-onboarding-addons-title = תוספות
-onboarding-addons-text = הוספת תכונות נוספות כדי ש־{ -brand-short-name } יתאמץ בשבילך. ניתן להשוות מחירים, לבדוק את מזג האוויר או להציג את האופי שלך לעולם עם ערכת נושא לבחירתך.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = גלישה מהירה, חכמה או בטוחה יותר עם הרחבות כמו Ghostery, המאפשרת לך לחסום פרסומות מעצבנות.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = סנכרון
-onboarding-fxa-text = הירשמו ל־{ -fxaccount-brand-name } וסנכרנו את הסימניות, הססמאות והלשוניות הפתוחות בכל מקום שבו תשתמשו ב־{ -brand-short-name }.
 onboarding-tracking-protection-title2 = הגנה מפני מעקב
 onboarding-tracking-protection-text2 = { -brand-short-name } מסייע למנוע מאתרים לעקוב אחריך ברשת, ומקשה על מודעות לעקוב אחריך ברחבי האינטרנט.
 onboarding-tracking-protection-button2 = איך זה עובד
@@ -177,7 +201,6 @@ onboarding-data-sync-title = ההגדרות שלך הולכות אתך
 # "Sync" is short for synchronize.
 onboarding-data-sync-text2 = סנכרון הסימניות, הססמאות ופריטים נוספים שלך בכל מקום בו יש לך את { -brand-product-name }.
 onboarding-data-sync-button2 = כניסה ל־{ -sync-brand-short-name }
-onboarding-firefox-monitor-text = { -monitor-brand-name } בודק אם הדוא״ל שלך נחשף בדליפת נתונים ומתריע לך אם הוא נחשף בדליפה חדשה.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } בודק אם הדוא״ל שלך נחשף בדליפת נתונים מוכרת ומתריע לך אם הוא נחשף בדליפה חדשה.
 onboarding-firefox-monitor-button = הרשמה להתרעות
 onboarding-browse-privately-title = גלישה בפרטיות
@@ -192,15 +215,10 @@ onboarding-mobile-phone-text = ניתן להוריד את { -brand-product-name 
 onboarding-mobile-phone-button = הורדת דפדפן לנייד
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = ‏Send Tabs משתף באופן מיידי דפים בין המכשירים שלך מבלי להעתיק, להדביק או לעזוב את הדפדפן.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = שיתוף פשוט של דפים בין המכשירים שלך מבלי להעתיק את הקישורים או לעזוב את הדפדפן.
 onboarding-send-tabs-button = התחלת שימוש ב־Send Tabs
 onboarding-pocket-anywhere-text2 = ניתן לשמור את התכנים המועדפים עליך באופן לא מקוון עם { -pocket-brand-name } ולקרוא, לשמוע ולצפות בהם מתי שנוח לך.
 onboarding-pocket-anywhere-button = לנסות את { -pocket-brand-name }
-onboarding-lockwise-passwords-title = לקחת את הססמאות שלך לכל מקום
-onboarding-lockwise-passwords-button2 = הורדת היישומון
 onboarding-lockwise-strong-passwords-title = יצירה ואחסון ססמאות חזקות
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } יוצר ססמאות חזקות ושומר את כולן במקום אחד.
 onboarding-lockwise-strong-passwords-button = ניהול הכניסות שלך

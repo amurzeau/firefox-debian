@@ -317,8 +317,38 @@ sharing-warning-disable-for-session =
 
 urlbar-default-placeholder =
     .defaultPlaceholder = חיפוש או הקלדת כתובת
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = חיפוש או הקלדת כתובת
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = חיפוש ברשת
+    .aria-label = חיפוש באמצעות { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = נא להקליד מונח לחיפוש
+    .aria-label = חיפוש ב־{ $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = נא להקליד מונח לחיפוש
+    .aria-label = חיפוש בסימניות
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = נא להקליד מונח לחיפוש
+    .aria-label = חיפוש בהיסטוריה
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = נא להקליד מונח לחיפוש
+    .aria-label = חיפוש בלשוניות
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

@@ -41,8 +41,8 @@ protection-report-manage-protections = Gestionează setările
 graph-today = Astăzi
 # This string is used to describe the graph for screenreader users.
 graph-legend-description = Un grafic ce conține numărul total de elemente de urmărire din fiecare tip blocate în această săptămână.
-social-tab-title = Elemente de urmărire ale rețelelor sociale
-social-tab-contant = Rețelele sociale plasează elemente de urmărire pe alte site-uri web pentru a urmări ceea ce faci, vezi și urmărești online. Acest lucru permite companiilor rețelelor sociale să afle mai multe despre tine, dincolo de ceea ce împărtășești pe profilurile rețelelor sociale. <a data-l10n-name="learn-more-link">Află mai multe</a>
+social-tab-title = Elemente de urmărire de pe rețele de socializare
+social-tab-contant = Rețelele de socializare plasează elemente de urmărire pe alte site-uri web pentru a urmări ce faci, ce vezi și ce urmărești online. Ele permit firmelor care dețin rețelele de socializare să afle mai multe despre tine, dincolo de ce partajezi pe profilurile de pe rețelele de socializare. <a data-l10n-name="learn-more-link">Află mai multe</a>
 cookie-tab-title = Cookie-uri de urmărire între site-uri
 cookie-tab-content = Aceste cookie-uri te urmăresc de pe un site pe altul și adună date despre ce faci online. Acestea sunt setate de părți terțe, precum agenții de publicitate și companiile de analitică. Blocarea cookie-urilor de urmărire între site-uri reduce numărul de reclame care se țin după tine. <a data-l10n-name="learn-more-link">Află mai multe</a>
 tracker-tab-title = Conținut de urmărire
@@ -91,7 +91,7 @@ turn-on-sync = Activează { -sync-brand-short-name }...
     .title = Mergi la preferințele de sincronizare
 monitor-title = Stai cu ochii pe încălcările securității datelor
 monitor-link = Cum funcționează
-monitor-header-content-no-account = Verifică { -monitor-brand-name } pentru a vedea dacă faci parte dintr-o încălcare cunoscută a securității datelor și pentru a obține alerte despre încălcările noi.
+monitor-header-content-no-account = Intră pe { -monitor-brand-name } și vezi dacă ai fost implicat(ă) într-o încălcare cunoscută a securității datelor și pentru a obține alerte despre încălcările noi.
 monitor-header-content-signed-in = { -monitor-brand-name } te avertizează dacă informațiile tale apar într-o încălcare cunoscută a securității datelor.
 monitor-sign-up-link = Înregistrează-te pentru alerte privind încălcările securității datelor
     .title = Înregistrează-te pentru alerte privind încălcările securității datelor pe { -monitor-brand-name }
@@ -99,7 +99,7 @@ auto-scan = Scanat automat astăzi
 monitor-emails-tooltip =
     .title = Afișează adresele de e-mail monitorizate în { -monitor-brand-short-name }
 monitor-breaches-tooltip =
-    .title = Vezi încălcările securității datelor pe { -monitor-brand-short-name }
+    .title = Vezi încălcările cunoscute ale securității datelor pe { -monitor-brand-short-name }
 monitor-passwords-tooltip =
     .title = Afișează parolele expuse în { -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
@@ -151,18 +151,18 @@ monitor-no-breaches-title = Vești bune!
 monitor-no-breaches-description = Nu apari în nicio încălcare cunoscută. Dacă apar noutăți, te vom anunța.
 monitor-view-report-link = Vezi raportul
     .title = Rezolvă încălcările securității datelor pe { -monitor-brand-short-name }
-monitor-breaches-unresolved-title = Rezolvă încălcările securității datelor
+monitor-breaches-unresolved-title = Rezolvă-ți încălcările securității datelor
 monitor-breaches-unresolved-description = După ce ai văzut detaliile încălcărilor securității datelor și ai luat măsuri ca să îți protejezi informațiile, poți marca încălcările ca rezolvate.
 monitor-manage-breaches-link = Gestionează încălcările securității datelor
     .title = Gestionează încălcările securității datelor cu { -monitor-brand-short-name }
 monitor-breaches-resolved-title = Bun! Ai rezolvat toate încălcări cunoscute ale securității datelor.
-monitor-breaches-resolved-description = Dacă adresa ta de e-mail apare în orice încălcări noi ale securității datelor, te vom anunța.
+monitor-breaches-resolved-description = Te vom anunța dacă adresa ta de e-mail apare în orice încălcări noi ale securității datelor.
 # Variables:
 # $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
 # $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
 monitor-partial-breaches-title =
     { $numBreaches ->
-        [one] { $numBreachesResolved } din { $numBreaches } încălcări marcate ca rezolvate
+        [one] { $numBreachesResolved } din { $numBreaches } încălcare marcată ca rezolvată
         [few] { $numBreachesResolved } din { $numBreaches } încălcări marcate ca rezolvate
        *[other] { $numBreachesResolved } din { $numBreaches } de încălcări marcate ca rezolvate
     }
@@ -184,12 +184,12 @@ monitor-resolve-breaches-link = Rezolvă încălcările securității datelor
 ##   $percentage (Number) - Percentage this type of tracker contributes to the whole graph
 
 bar-tooltip-social =
-    .title = Elemente de urmărire ale rețelelor sociale
+    .title = Elemente de urmărire de pe rețele de socializare
     .aria-label =
         { $count ->
-            [one] { $count } element de urmărire al rețelelor sociale ({ $percentage }%)
-            [few] { $count } elemente de urmărire ale rețelelor sociale ({ $percentage }%)
-           *[other] { $count } de elemente de urmărire ale rețelelor sociale ({ $percentage }%)
+            [one] { $count } element de urmărire de pe rețele de socializare ({ $percentage }%)
+            [few] { $count } elemente de urmărire de pe rețele de socializare ({ $percentage }%)
+           *[other] { $count } de elemente de urmărire de pe rețele de socializare ({ $percentage }%)
         }
 bar-tooltip-cookie =
     .title = Cookie-uri de urmărire între site-uri

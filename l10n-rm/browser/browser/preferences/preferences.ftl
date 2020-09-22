@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Mo sche { -brand-short-name } è configurà uschia che fastizaders enconuschents vegnan bloccads
 do-not-track-option-always =
     .label = Adina
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Preferenzas
-           *[other] Preferenzas
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Preferenzas
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Ina extensiun, <img data-l10n-name="ico
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Ina extensiun, <img data-l10n-name="icon"/> { $name }, administrescha la pagina da partenza da novs tabs.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Ina extensiun, <img data-l10n-name="icon"/> { $name }, controllescha quest parameter.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Ina extensiun, <img data-l10n-name="icon"/> { $name } administrescha quest parameter.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Quest parameter pertutga tut ils
 update-application-use-service =
     .label = Utilisar in servetsch per installar actualisaziuns senza interrupziun
     .accesskey = r
-update-enable-search-update =
-    .label = Actualisar automaticamain maschinas da tschertgar
-    .accesskey = t
-update-pref-write-failure-title = Errur cun memorisar
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Errur durant memorisar la preferenza. Impussibel da scriver en la datoteca: { $path }
 update-setting-write-failure-title = Errur cun memorisar preferenzas per actualisaziuns
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Agiuntar la trav da tschertgar a la trav d'utensils
 search-engine-default-header = Maschina da tschertgar da standard
-search-engine-default-desc = Tscherna la maschina da tschertgar da standard per la trav d'adressas e la trav da tschertgar.
 search-engine-default-desc-2 = Quai è la maschina da tschertgar predefinida per la trav d'adressas e la trav da tschertga. Ti la pos midar da tut temp.
 search-engine-default-private-desc-2 = Tscherna in'autra maschina da tschertgar da standard mo per fanestras privatas
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Allontanar
     .accesskey = r
+search-add-engine =
+    .label = Agiuntar
+    .accesskey = A
 search-find-more-link = Chattar ulteriuras maschinas da tschertgar
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = Ti has tschernì in pled magic che vegn gia ut
 
 ## Containers Section
 
-containers-back-link = « Turnar
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Allontanar
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Prenda tes web cun tai
 sync-signedout-description = Sincronisescha tes segnapaginas, tia cronologia, tes tabs, tes pleds-clav, tes supplements e tias preferenzas cun tut tes apparats.
-sync-signedout-account-title = Connectar cun in { -fxaccount-brand-name }
-sync-signedout-account-create = Ti n'has nagin conto? Ta registrescha
-    .accesskey = c
-sync-signedout-account-signin =
-    .label = S'annunziar…
-    .accesskey = a
 sync-signedout-account-signin2 =
     .label = S'annunziar tar { -sync-brand-short-name }…
     .accesskey = t
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Telechargiar Firefox per <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> u <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> per sincronisar cun tes apparat mobil.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Midar il maletg da profil
-sync-disconnect =
-    .label = Deconnectar…
-    .accesskey = D
 sync-sign-out =
     .label = Sortir…
     .accesskey = o
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = S'annunziar
     .accesskey = a
-sync-signedin-settings-header = Parameters da Sync
-sync-signedin-settings-desc = Tscherna tge che duai vegnir sincronisà tranter tes apparats che utiliseschan { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = Tabs averts
     .tooltiptext = Ina glista dals tabs averts sin tut ils apparats sincronisads
     .accesskey = T
-sync-engine-logins =
-    .label = Infurmaziuns d'annunzia
-    .tooltiptext = Nums d'utilisader e pleds-clav che ti has memorisà
-    .accesskey = I
 sync-engine-logins-passwords =
     .label = Infurmaziuns d'annunzia e pleds-clav
     .tooltiptext = Nums d'utilisader e pleds-clav che ti has memorisà
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Memorisar
     .accesskey = m
 sync-connect-another-device = Colliar in auter apparat
-sync-manage-devices = Administrar ils apparats
-sync-fxa-begin-pairing = Associar in apparat
-sync-tos-link = Contract da licenza
-sync-fxa-privacy-notice = Infurmaziuns davart la protecziun da datas
 
 ## Privacy Section
 
 privacy-header = Protecziun da datas
-
-## Privacy Section - Forms
-
-logins-header = Infurmaziuns d'annunzia & pleds-clav
 
 ## Privacy Section - Logins and Passwords
 
@@ -902,8 +864,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Tip da cuntegn bloccà
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Fastizaders da terzas partidas
 sitedata-option-block-cross-site-trackers =
     .label = Fastizaders tranter websites
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -949,27 +909,9 @@ addressbar-suggestions-settings = Midar las preferenzas per propostas da maschin
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Bloccada da cuntegn
-content-blocking-section-description = Protegia tia sfera privata durant la navigaziun. Blochescha cuntegn invisibel che po fastizar las websites che ti visitas e skizzar tes profil. Cun bloccar ina part da quest cuntegn chargian las paginas eventualmain pli svelt.
 content-blocking-enhanced-tracking-protection = Protecziun avanzada cunter il fastizar
 content-blocking-section-top-level-description = Fastizaders ta suondan online per rimnar infurmaziuns davart tias disas da navigar e tes interess. { -brand-short-name } blochescha blers da quests fastizaders ed auters scripts donnegius.
 content-blocking-learn-more = Ulteriuras infurmaziuns
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standard
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Restrictiv
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Persunalisà
-    .accesskey = P
-content-blocking-standard-desc = Equiliber tranter protecziun e prestaziun. Permetta tscherts fastizaders per che las websites funcziunian endretg.
-content-blocking-strict-description = Ina protecziun pli severa, po avair per consequenza che tschertas websites na funcziuneschan betg pli.
-content-blocking-custom-desc = Tscherna tge bloccar.
-content-blocking-private-trackers = Fastizaders enconuschents mo en il modus privat
-content-blocking-third-party-cookies = Cookies che fastizeschan da terzas partidas
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -996,23 +938,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies che fastizes
 content-blocking-social-media-trackers = Fastizaders da raits socialas
 content-blocking-all-cookies = Tut ils cookies
 content-blocking-unvisited-cookies = Cookies da websites betg visitadas
-content-blocking-all-windows-trackers = Fastizaders enconuschents en tut las fanestras
 content-blocking-all-windows-tracking-content = Cuntegn che fastizescha en tut las fanestras
 content-blocking-all-third-party-cookies = Tut ils cookies da terzas partidas
 content-blocking-cryptominers = Criptominiers
 content-blocking-fingerprinters = Improntaders dal det
 content-blocking-warning-title = Attenziun!
-content-blocking-warning-description = La bloccada da cuntegn po impedir che tschertas websites funcziunian. Igl è simpel da deactivar la bloccada per las websites che ti tegnas per fidablas.
-content-blocking-learn-how = Vegnir a savair co
 content-blocking-and-isolating-etp-warning-description = La bloccada da fastizaders e l'isolaziun da cookies po influenzar las funcziunalitads da tschertas websites. Rechargiar ina pagina cun fastizaders per chargiar l'entir cuntegn.
 content-blocking-warning-learn-how = Vegnir a savair co
 content-blocking-reload-description = Igl è necessari da rechargiar ils tabs per applitgar las midadas.
 content-blocking-reload-tabs-button =
     .label = Rechargiar tut ils tabs
     .accesskey = R
-content-blocking-trackers-label =
-    .label = Fastizaders
-    .accesskey = F
 content-blocking-tracking-content-label =
     .label = Cuntegn che fastizescha
     .accesskey = t
@@ -1071,12 +1007,6 @@ permissions-notification-link = Ulteriuras infurmaziuns
 permissions-notification-pause =
     .label = Modus da pausa per las communicaziuns enfin che { -brand-short-name } vegn reavià
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Impedir che websites reproduceschian automaticamain tun
-    .accesskey = I
-permissions-block-autoplay-media-exceptions =
-    .label = Excepziuns…
-    .accesskey = E
 permissions-autoplay = Reproducziun automatica
 permissions-autoplay-settings =
     .label = Parameters…

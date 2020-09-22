@@ -191,6 +191,12 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Als standaardzoekmachine voor privévensters instellen
     .accesskey = p
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -199,6 +205,12 @@ search-one-offs-context-set-as-default-private =
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
 
+search-one-offs-bookmarks =
+    .tooltiptext = Bladwijzers ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Tabbladen ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Geschiedenis ({ $restrict })
 
 ## Bookmark Panel
 
@@ -306,8 +318,42 @@ enable-devtools-popup-description = Open eerst DevTools in het menu Webontwikkel
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Voer zoekterm of adres in
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Voer zoekterm of adres in
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Zoeken op het web
+    .aria-label = Zoeken met { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Voer zoektermen in
+    .aria-label = Zoeken op { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Voer zoektermen in
+    .aria-label = Zoeken in bladwijzers
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Voer zoektermen in
+    .aria-label = Zoeken in geschiedenis
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Voer zoektermen in
+    .aria-label = Zoeken in tabbladen
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Voer zoekterm voor { $name } of adres in
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Browser wordt op afstand bestuurd
 urlbar-permissions-granted =

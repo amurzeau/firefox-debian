@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Dysgu Rhagor
-onboarding-button-label-try-now = Rhowch brawf arno nawr
 onboarding-button-label-get-started = Cychwyn Arni
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Cychwyn Arni
 onboarding-welcome-header = Croeso i { -brand-short-name }
 onboarding-welcome-body = Mae'r porwr gyda chi. <br/> Dyma weddill { -brand-product-name }.
 onboarding-welcome-learn-more = Dysgu rhagor am y buddiannau.
-onboarding-join-form-header = Ymunwch â { -brand-product-name }
 onboarding-welcome-modal-get-body = Mae'r porwr gennych. <br/>Nawr, manteisiwch i'r eithaf ar { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Cryfhewch eich diogelwch preifatrwydd.
 onboarding-welcome-modal-privacy-body = Mae'r porwr gennych chi. Gadewch i ni ychwanegu mwy o ddiogelwch preifatrwydd.
@@ -110,6 +108,46 @@ onboarding-multistage-theme-tooltip-alpenglow =
         Defnyddio gwedd liwgar ar gyfer botymau,
         dewislenni, a ffenestri.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Dilyn gwedd eich system weithredu
+        ar gyfer botymau, dewislenni a ffenestri.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Dilyn gwedd eich system weithredu
+        ar gyfer botymau, dewislenni a ffenestri.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Defnyddio gwedd olau ar gyfer botymau,
+        dewislenni, a ffenestri.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Defnyddio gwedd olau ar gyfer botymau,
+        dewislenni, a ffenestri.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Defnyddio gwedd dywyll ar gyfer botymau,
+        dewislenni, a ffenestri.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Defnyddio gwedd dywyll ar gyfer botymau,
+        dewislenni, a ffenestri.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Defnyddio gwedd liwgar ar gyfer botymau,
+        dewislenni, a ffenestri.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Defnyddio gwedd liwgar ar gyfer botymau,
+        dewislenni, a ffenestri.
 
 ## Welcome full page string
 
@@ -135,11 +173,7 @@ onboarding-sync-form-sub-header = ac ymlaen i { -sync-brand-name }
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Cynnyrch Defnyddiol
 onboarding-benefit-products-text = Gwnewch bethau gyda chasgliad o offer sy'n parchu eich preifatrwydd ar draws eich dyfeisiau.
-onboarding-benefit-knowledge-title = Gwybodaeth Ymarferol
-onboarding-benefit-knowledge-text = Dysgwch bopeth y mae angen i chi ei wybod i gadw'n fwy doeth a mwy diogel ar-lein.
-onboarding-benefit-privacy-title = Gwir Breifatrwydd
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -160,17 +194,6 @@ onboarding-benefit-lockwise-text = Rheoli cyfrineiriau sy'n ddiogel ac yn gludad
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Pori Preifat
-onboarding-private-browsing-text = Pori ar eich pen eich hun. Mae Pori Preifat gyda Rhwystro Cynnwys yn rhwystro tracwyr ar-lein sy'n eich dilyn o amgylch y we.
-onboarding-screenshots-title = Screenshots
-onboarding-screenshots-text = Cymrwch luniau sgrin, eu cadw a'u rhannu - heb adael { -brand-short-name }. Cipiwch adran neu dudalen gyfan wrth i chi bori, Yna cadwch nhw i'r we ar gyfer mynediad a rhannu hawdd.
-onboarding-addons-title = Ychwanegion
-onboarding-addons-text = Ychwnaegwch ragor o nodweddion sy'n gwneud i { -brand-short-name } weithio'n galetach ar eich cyfer. Cymharu prisiau, gwybod am y tywydd neu mynegu eich hun gyda thema gyfaddas.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Porwch yn gynt, yn glyfrach neu yn fwy diogel gydag estyniadau fel Ghostery, cyn gadael i chi rwystro hysbysebion trafferthus.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Sync
-onboarding-fxa-text = Cofrestrwch am { -fxaccount-brand-name } a chydweddu eich nodau tudalen, cyfrineiriau a thabiau agored ymhob man lle rydych yn defnyddio { -brand-short-name }.
 onboarding-tracking-protection-title2 = Diogelu Rhag Tracio
 onboarding-tracking-protection-text2 = Mae { -brand-short-name } yn helpu i atal gwefannau rhag eich tracio ar-lein, gan ei gwneud yn anos i hysbysebion eich dilyn o gwmpas y we.
 onboarding-tracking-protection-button2 = Sut mae'n Gweithio
@@ -179,7 +202,6 @@ onboarding-data-sync-title = Mynd â'ch Gosodiadau gyda Chi
 onboarding-data-sync-text2 = Cydweddwch eich nodau tudalen, cyfrineiriau, a mwy ym mhob man y byddwch yn defnyddio { -brand-product-name }.
 onboarding-data-sync-button2 = Mewngofnodwch i { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Cadw'n effro i achosion o dor-data
-onboarding-firefox-monitor-text = Mae { -monitor-brand-name } yn monitro os yw eich e-bost wedi ymddangos mewn tor-data ac yn eich rhybuddio os yw'n ymddangos mewn tor-data newydd.
 onboarding-firefox-monitor-text2 = Mae { -monitor-brand-name } yn monitro os yw eich e-bost wedi ymddangos mewn tor-data ac yn eich rhybuddio os yw'n ymddangos mewn tor-data newydd.
 onboarding-firefox-monitor-button = Cofrestru am Rhybuddion
 onboarding-browse-privately-title = Pori'n Breifat
@@ -196,17 +218,11 @@ onboarding-mobile-phone-button = Llwytho Porwr Symudol i lawr
 onboarding-send-tabs-title = Anfon Tabiau Atoch Chi eich Hun
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Mae Anfon Tabiau yn rhannu tudalennau yn syth rhwng eich dyfeisiau heb orfod copïo, gludo na gadael y porwr.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Rhannu tudalennau'n hawdd rhwng eich dyfeisiau heb orfod copïo dolenni na gadael y porwr.
 onboarding-send-tabs-button = Cychwyn Defnyddio Anfon Tabiau
 onboarding-pocket-anywhere-title = Darllen a Gwrando yn Unrhyw Le
 onboarding-pocket-anywhere-text2 = Cadwch eich hoff gynnwys all-lein gyda'r Ap { -pocket-brand-name } a darllenwch, gwrandewch, a gwyliwch pryd bynnag y mae'n gyfleus i chi.
 onboarding-pocket-anywhere-button = Rhoi cynnig ar { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Mynd â'ch Cyfrineiriau i Bob Man
-onboarding-lockwise-passwords-text2 = Cadwch y cyfrineiriau rydych chi'n eu cadw'n ddiogel er mwyn mewngofnodi'n hawdd i'ch cyfrifon gyda { -lockwise-brand-name }.
-onboarding-lockwise-passwords-button2 = Estyn yr Ap
 onboarding-lockwise-strong-passwords-title = Creu a Chadw Cyfrineiriau Cryf
 onboarding-lockwise-strong-passwords-text = Mae { -lockwise-brand-name } yn creu cyfrineiriau cryf yn y fan a'r lle ac yn cadw pob un ohonyn nhw mewn un man.
 onboarding-lockwise-strong-passwords-button = Rheoli'ch Mewngofnodi

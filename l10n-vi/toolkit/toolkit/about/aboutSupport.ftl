@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-page-title = Thông tin gỡ rối vấn đề
+page-title = Thông tin xử lý sự cố
 page-subtitle = Trang này chứa thông tin kĩ thuật có thể có ích khi bạn đang cố giải quyết một vấn đề. Nếu bạn đang tìm câu trả lời cho các câu hỏi thông thường về { -brand-short-name }, hãy xem <a data-l10n-name="support-link">trang web hỗ trợ</a> của chúng tôi.
 crashes-title = Trình báo cáo lỗi
 crashes-id = ID báo cáo
@@ -77,6 +77,9 @@ show-dir-label =
         [windows] Mở thư mục
        *[other] Mở thư mục
     }
+environment-variables-title = Biến môi trường
+environment-variables-name = Tên
+environment-variables-value = Giá trị
 experimental-features-title = Các tính năng thử nghiệm
 experimental-features-name = Tên
 experimental-features-value = Giá trị
@@ -104,8 +107,6 @@ graphics-desktop-environment = Môi trường máy tính để bàn
 place-database-title = Cơ sở dữ liệu địa điểm
 place-database-integrity = Tính toàn vẹn
 place-database-verify-integrity = Xác nhận tính toàn vẹn
-js-title = JavaScript
-js-incremental-gc = Tăng tốc GC
 a11y-title = Trợ năng
 a11y-activated = Được kích hoạt
 a11y-force-disabled = Ngăn các tùy chọn về trợ năng
@@ -135,8 +136,8 @@ restart-button-label = Khởi động lại
 
 audio-backend = Âm thanh đầu cuối
 max-audio-channels = Kênh tối đa
-channel-layout = Bố cục kênh ưu tiên
 sample-rate = Tỷ lệ mẫu ưu tiên
+roundtrip-latency = Thời gian trễ trọn vòng (độ lệch chuẩn)
 media-title = Đa phương tiện
 media-output-devices-title = Các thiết bị đầu ra
 media-input-devices-title = Thiết bị đầu vào
@@ -258,7 +259,6 @@ support-blocklisted-bug = Bị chặn trong danh sách do các sự cố đã bi
 unknown-failure = Danh sách chặn; mã lỗi { $failureCode }
 d3d11layers-crash-guard = Bộ soạn nhạc D3D11
 d3d11video-crash-guard = Bộ giải mã video D3D11
-d3d9video-crash-buard = Bộ giải mã video D3D9
 d3d9video-crash-guard = Bộ giải mã video D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Bộ giải mã video WMF VPX

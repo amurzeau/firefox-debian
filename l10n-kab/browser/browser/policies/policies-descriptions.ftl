@@ -50,7 +50,7 @@ policy-DisableTelemetry = Sens tilisɣelt.
 policy-DisplayBookmarksToolbar = Deg umezwer sken-d afeggag n ifecka n ticraḍ.
 policy-DisplayMenuBar = Sken afeggag n wumuɣ s wudem amezwer.
 policy-DNSOverHTTPS = Swel DNS s HTTPS.
-policy-DontCheckDefaultBrowser = Sens asenqed amezwer i yiminig deg tnekra.
+policy-DontCheckDefaultBrowser = Sens asenqed n yiminig  amezwer deg tnekra.
 policy-DownloadDirectory = Ad yesbadu daɣen ad iṣekkeṛ akaram n usider.
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Rmed neɣ sens asewḥel n ugbur u sekker-it ma tebɣiḍ.

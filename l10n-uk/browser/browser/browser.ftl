@@ -318,8 +318,38 @@ enable-devtools-popup-description = Щоб використовувати F12, �
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Введіть пошуковий запит чи адресу
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Введіть пошуковий запит чи адресу
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Пошук в Інтернеті
+    .aria-label = Шукати за допомогою { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Введіть пошукові терміни
+    .aria-label = Шукати { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Введіть пошукові терміни
+    .aria-label = Шукати в закладках
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Введіть пошукові терміни
+    .aria-label = Шукати в історії
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Введіть пошукові терміни
+    .aria-label = Шукати у вкладках
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

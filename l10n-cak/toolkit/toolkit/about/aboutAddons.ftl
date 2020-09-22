@@ -10,8 +10,6 @@ search-header =
     .searchbuttonlabel = Tikanöx
 search-header-shortcut =
     .key = f
-loading-label =
-    .value = Nisamäj…
 list-empty-installed =
     .value = Man ayakon ta re ruwäch tz'aqat re'
 list-empty-available-updates =
@@ -22,9 +20,6 @@ list-empty-find-updates =
     .label = Kenik'öx Taq K'exoj
 list-empty-button =
     .label = Tetamäx ch'aqa' chik chi kij ri taq tz'aqat
-install-addon-from-file =
-    .label = Tiyak ri tz'aqat rik'in ri yakb'äl…
-    .accesskey = T
 help-button = Kitob'al Tz'aqat
 sidebar-help-button-title =
     .title = Kitob'al Tz'aqat
@@ -33,8 +28,6 @@ preferences =
         [windows] { -brand-short-name } Taq Cha'oj
        *[other] { -brand-short-name } Taq Ajowab'äl
     }
-tools-menu =
-    .tooltiptext = Taq kisamajib'al konojel ri taq tz'aqat
 sidebar-preferences-button-title =
     .title =
         { PLATFORM() ->
@@ -45,9 +38,6 @@ show-unsigned-extensions-button =
     .label = Jujun taq k'amal man tikirel ta yenik'öx
 show-all-extensions-button =
     .label = Kek'ut pe konojel ri taq ruk'amal
-debug-addons =
-    .label = Kechojmirisäx taq Tz'aqat
-    .accesskey = c
 cmd-show-details =
     .label = Kek'ut pe ch'aqa' chik rutzijol
     .accesskey = K
@@ -78,9 +68,6 @@ cmd-contribute =
     .label = Kato'on
     .accesskey = K
     .tooltiptext = Kato'on chi nisamajïx re tz'aqat re'
-discover-title = ¿Atux ri taq tz'aqat?
-discover-description = Ri taq tz'aqat taq e chokoy, ri nikiya' q'ij chawe richin nawichinaj { -brand-short-name } rik'in rutz'aqat rusamaj o rub'anikil. Tatojtob'ej rik'in rukajtz'ik ruchi' richin nayäk aramaj, jun rutzijonel rub'anikil ri q'ij o tatz'eta' konojel ri taq na'oj richin naya' kan { -brand-short-name } achi'el arayib'al.
-discover-footer = Toq atokinäq pa k'amaya'l, re pas re' xtiwachin pe jujun chi ke ri e ütz chuqa' ri konojel yekanon ri taq tz'aqat ri', richin ye'atojtob'ej.
 detail-version =
     .label = Ruwäch
 detail-last-updated =
@@ -102,15 +89,12 @@ detail-update-manual =
     .tooltiptext = Man keyak pa kiyonil ri taq k'exoj
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Kesamajïx pa Ichinan Tzuwäch
-detail-private-browsing-description2 = Toq xtiya' q'ij, ri k'amal xtok pa ri asamaj pa k'amab'ey toq yatok pa ichinan okem. <label data-l10n-name="detail-private-browsing-learn-more">Tawetamaj ch'aqa' chik</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = Man ya'on ta q'ij pan Ichinan Tzuwäch
-detail-private-disallowed-description = Man nisamäj ta pa ichinan okem pa k'amaya'l re k'amal re'. <label data-l10n-name="detail-private-browsing-learn-more">Tetamäx ch'aqa' chik</label>
 detail-private-disallowed-description2 = Man nisamäj ta pa ichinan okem pa k'amaya'l re k'amal re'. <a data-l10n-name="learn-more">Tetamäx ch'aqa' chik</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Nrajo' Okem pa Ichinan Tzuwäch
-detail-private-required-description = Re k'amal re' nok pan taq asamaj richin k'amab'ey toq atokinäq pan ichinan okem pa k'amaya'l. <label data-l10n-name="detail-private-browsing-learn-more">Tetamäx ch'aqa' chik</label>
 detail-private-required-description2 = Re k'amal re' tikirel nok pa samaj pa k'amab'ey toq k'o pa ichinan okem pa k'amaya'l. <a data-l10n-name="learn-more">Tetamäx ch'aqa' chik</a>
 detail-private-browsing-on =
     .label = Tiya' q'ij
@@ -166,15 +150,6 @@ private-browsing-description2 =
     k'amal man xtisamäj ta pa ichinan okem pa k'amaya'l, chuqa' man xkatikïr ta xkatok pa ri asamaj richin k'amab'ey
     chi ri'. Xqab'än re jaloj re' richin nichinäx ri ichinan awokem pa k'amaya'l
     <label data-l10n-name="private-browsing-learn-more">Tawetamaj achike rub'eyal ninuk'samajïx ri runuk'ulem k'amal.</label>
-extensions-view-discopane =
-    .name = Taq chilab'enïk
-    .tooltiptext = { extensions-view-discopane.name }
-extensions-view-recent-updates =
-    .name = K'ak'a' taq K'exoj
-    .tooltiptext = { extensions-view-recent-updates.name }
-extensions-view-available-updates =
-    .name = Taq K'exoj K'o
-    .tooltiptext = { extensions-view-available-updates.name }
 addon-category-discover = Taq chilab'enïk
 addon-category-discover-title =
     .title = Taq chilab'enïk
@@ -202,24 +177,6 @@ addon-category-recent-updates-title =
 
 ## These are global warnings
 
-extensions-warning-safe-mode-label =
-    .value = Konojel ri taq tz'aqat xechup pa ri ütz rub'eyal.
-extensions-warning-safe-mode-container =
-    .tooltiptext = { extensions-warning-safe-mode-label.value }
-extensions-warning-check-compatibility-label =
-    .value = Chupül ri runuk'oxik richin we nikik'äm ki' ri taq tz'aqat. Rik'in jub'a' k'o jujun taq tz'aqat, ri man nikik'äm ta ki'.
-extensions-warning-check-compatibility-container =
-    .tooltiptext = { extensions-warning-check-compatibility-label.value }
-extensions-warning-check-compatibility-enable =
-    .label = Titzij
-    .tooltiptext = Titzij ri runik'oxik richin chi nikik'äm ki' ri taq tz'aqat.
-extensions-warning-update-security-label =
-    .value = Chupül ri runik'oxik chajinïk richin kik'exoj taq tz'aqat. Rik'in jub'a' k'o pa k'ayewal ri awokik'amaya'l kuma ri taq k'exoj.
-extensions-warning-update-security-container =
-    .tooltiptext = { extensions-warning-update-security-label.value }
-extensions-warning-update-security-enable =
-    .label = Titzij
-    .tooltiptext = Titzij ri ya'öl retal chajinïk richin nik'ex ri tz'aqat
 extensions-warning-safe-mode = Konojel ri taq tz'aqat xechup pa ri ütz rub'eyal.
 extensions-warning-check-compatibility = Chupül ri runuk'oxik richin we nikik'äm ki' ri taq tz'aqat. Rik'in jub'a' k'o jujun taq tz'aqat, ri man nikik'äm ta ki'.
 extensions-warning-check-compatibility-button = Titzij
@@ -230,12 +187,6 @@ extensions-warning-update-security-button = Titzij
 
 ## Strings connected to add-on updates
 
-extensions-updates-check-for-updates =
-    .label = Kenik'öx taq K'exoj
-    .accesskey = K
-extensions-updates-view-updates =
-    .label = Ketz'et k'ak'a' taq k'exoj
-    .accesskey = K
 addon-updates-check-for-updates = Kenik'öx taq K'exoj
     .accesskey = K
 addon-updates-view-updates = Ketz'et k'ak'a' taq k'exoj
@@ -244,9 +195,6 @@ addon-updates-view-updates = Ketz'et k'ak'a' taq k'exoj
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
-extensions-updates-update-addons-automatically =
-    .label = kek'ex taq tz'aqat pa kiyonil
-    .accesskey = k
 addon-updates-update-addons-automatically = kek'ex taq tz'aqat pa kiyonil
     .accesskey = k
 
@@ -256,12 +204,6 @@ addon-updates-update-addons-automatically = kek'ex taq tz'aqat pa kiyonil
 ## (which itself is either "Automatically" or "Manually", controlled by the
 ## extensions-updates-update-addons-automatically.label menu item).
 
-extensions-updates-reset-updates-to-automatic =
-    .label = Titzolïx chi kij konojel ri taq tz'aqat richin kek'ex pa kiyonil
-    .accesskey = T
-extensions-updates-reset-updates-to-manual =
-    .label = Titzolïx chi kij konojel ri taq tz'aqat richin kek'ex pa chi q'ab'aj.
-    .accesskey = T
 addon-updates-reset-updates-to-automatic = Titzolïx chi kij konojel ri taq tz'aqat richin kek'ex pa kiyonil
     .accesskey = T
 addon-updates-reset-updates-to-manual = Titzolïx chi kij konojel ri taq tz'aqat richin kek'ex pa chi q'ab'aj.
@@ -269,21 +211,6 @@ addon-updates-reset-updates-to-manual = Titzolïx chi kij konojel ri taq tz'aqat
 
 ## Status messages displayed when updating add-ons
 
-extensions-updates-updating =
-    .value = Tajin yek'ex ri taq tz'aqat
-extensions-updates-installed =
-    .value = Xek'extäj re taq atz'aqat re'.
-extensions-updates-downloaded =
-    .value = Xeq'at ri kik'exoj ri taq atz'aqat.
-extensions-updates-restart =
-    .label = Tatikirisaj chik wakami richin natz'aqatisaj ri yakoj
-extensions-updates-none-found =
-    .value = Majun taq k'exoj ruwäch xe'ilitäj
-extensions-updates-manual-updates-found =
-    .label = Ketz'et ri taq k'exoj e k'o
-extensions-updates-update-selected =
-    .label = Keyak taq k'exoj
-    .tooltiptext = Keyak ri taq k'exoj e k'o pa re rucholajem re'
 addon-updates-updating = Tajin yek'ex ri taq tz'aqat
 addon-updates-installed = Xek'extäj re taq atz'aqat re'.
 addon-updates-none-found = Majun taq k'exoj ruwäch xe'ilitäj
@@ -300,9 +227,6 @@ addon-open-about-debugging = Kechojmirisäx taq Tz'aqat
 
 ## Extension shortcut management
 
-manage-extensions-shortcuts =
-    .label = Kenuk'samajïx Kichojokem taq K'amal
-    .accesskey = i
 # This is displayed in the page options menu
 addon-manage-extensions-shortcuts = Kenuk'samajïx Kichojokem taq K'amal
     .accesskey = i
@@ -310,7 +234,6 @@ shortcuts-no-addons = Majun ak'amal atzijon.
 shortcuts-no-commands = Re taq k'amal re' majun ruq'a' rokem pitz'b'äl:
 shortcuts-input =
     .placeholder = Tatz'ib'aj jun chojokem
-shortcuts-browserAction = Titzij k'amal
 shortcuts-browserAction2 = Titzij rupitz'b'al rukajtz'ik samajib'äl
 shortcuts-pageAction = Titzij rub'anoj ruxaq
 shortcuts-sidebarAction = Tik'exlöx ri ajxikin kajtz'ik
@@ -335,8 +258,6 @@ shortcuts-card-expand-button =
        *[other] Kek'ut { $numberToShow } Ch'aqa' Chik
     }
 shortcuts-card-collapse-button = Tik'ut pe Jub'a'
-go-back-button =
-    .tooltiptext = Titzolin
 header-back-button =
     .title = Titzolin
 
@@ -381,7 +302,6 @@ remove-addon-button = Tiyuj
 remove-addon-disabled-button = Man Tikirel ta Niyuj el <a data-l10n-name="link">¿Aruma?</a>
 disable-addon-button = Tichup
 enable-addon-button = Titzij
-expand-addon-button = Ch'aqa' chik taq Cha'oj
 # This is used for the toggle on the extension card, it's a checkbox and this
 # is always its label.
 extension-enable-addon-button-label =
@@ -394,8 +314,6 @@ preferences-addon-button =
 details-addon-button = Taq b'anikil
 release-notes-addon-button = Ruch'utitzijol Ruwäch
 permissions-addon-button = Taq ya'oj q'ij
-addons-enabled-heading = Tzijon
-addons-disabled-heading = Chupun
 extension-enabled-heading = Tzijon
 extension-disabled-heading = Chupun
 theme-enabled-heading = Tzijon
@@ -414,6 +332,9 @@ addon-detail-version-label = Ruwäch
 addon-detail-last-updated-label = Ruk'isib'äl K'exoj
 addon-detail-homepage-label = Tikirib'äl ruxaq
 addon-detail-rating-label = Kejqalem
+# Message for add-ons with a staged pending update.
+install-postponed-message = Re k'amal re' xtik'extäj toq xtitikïr chik { -brand-short-name }.
+install-postponed-button = Tik'exWakami
 # The average rating that the add-on has received.
 # Variables:
 #   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
@@ -446,21 +367,12 @@ addon-detail-update-check-label = Kenik'öx taq K'exoj
 install-update-button = Tik'ex
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
-addon-badge-private-browsing-allowed =
-    .title = Tiya' q'ij pa taq ichinan tzuwäch
-# This is the tooltip text for the private browsing badge in about:addons. The
-# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = Tiya' q'ij pa taq ichinan tzuwäch
     .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Toq tzij, ri k'amal pa ronojel samaj xtok wi toq atokinäq pa k'amaya'l pan ichinan rub'anikil. <a data-l10n-name="learn-more">Tetamäx ch'aqa' chik</a>
 addon-detail-private-browsing-allow = Tiya' q'ij
 addon-detail-private-browsing-disallow = Man Tiya' Q'ij
-# This is the tooltip text for the recommended badge for an extension in about:addons. The
-# badge is a small icon displayed next to an extension when it is recommended on AMO.
-addon-badge-recommended =
-    .title = Taq chilab'exïk
-    .alt = Taq chilab'exïk
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended2 =

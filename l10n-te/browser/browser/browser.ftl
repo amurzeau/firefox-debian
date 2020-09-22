@@ -246,6 +246,7 @@ identity-clear-site-data =
 identity-connection-not-secure-security-view = ఈ సైటుకి మీరు సురక్షితంగా అనుసంధానం కాలేదు.
 identity-connection-verified = ఈ సైటుకు మీరు సురక్షితంగా అనుసంధానమయ్యారు.
 identity-ev-owner-label = ధ్రువపత్రం వీరికి జారీ అయ్యింది:
+identity-description-custom-root = ఈ ధ్రువపత్రపు జారీదారు మొజిల్లాకు తెలియనివారు. ఇది మీ నిర్వాహక వ్యవస్థ నుండి లేదా నిర్వాహకుడిచే చేర్చబడి ఉండవచ్చు. <label data-l10n-name="link">ఇంకా తెలుసుకోండి</label>
 identity-remove-cert-exception =
     .label = మినహాయింపును తొలగించు
     .accesskey = R
@@ -307,8 +308,38 @@ sharing-warning-disable-for-session =
 
 urlbar-default-placeholder =
     .defaultPlaceholder = వెతకండి లేదా చిరునామాను ఇవ్వండి
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = వెతకండి లేదా చిరునామాను ఇవ్వండి
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = జాలంలో వెతకండి
+    .aria-label = { $name }తో జాలంలో వెతకండి
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = వెతుకుడు పదాలను ఇవ్వండి
+    .aria-label = { $name }‌లో వెతకండి
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = వెతుకుడు పదాలను ఇవ్వండి
+    .aria-label = ఇష్టాంశాలలో వెతకండి
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = వెతుకుడు పదాలను ఇవ్వండి
+    .aria-label = చరిత్రలో వెతకండి
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = వెతుకుడు పదాలను ఇవ్వండి
+    .aria-label = ట్యాబులలో వెతకండి
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

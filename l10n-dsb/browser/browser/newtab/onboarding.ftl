@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Dalšne informacije
-onboarding-button-label-try-now = Wopytajśo něnto
 onboarding-button-label-get-started = Prědne kšace
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Prědne kšace
 onboarding-welcome-header = Witajśo k { -brand-short-name }
 onboarding-welcome-body = Maśo wobglědowak.<br/>Póznajśo zbytk { -brand-product-name }.
 onboarding-welcome-learn-more = Dalšne informacije wó lěpšynach.
-onboarding-join-form-header = Pśizamkniśo se k { -brand-product-name }
 onboarding-welcome-modal-get-body = Maśo wobglědowak.<br/>Wuwónoźćo nejlěpše z { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Pśeśěžćo swój šćit priwatnosći.
 onboarding-welcome-modal-privacy-body = Maśo wobglědowak. Pśidajmy wěcej šćita priwatnosći.
@@ -114,6 +112,46 @@ onboarding-multistage-theme-tooltip-alpenglow =
         Barwny naglěd za tłocaški,
         menije a wokna.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Naglěd z wašogo źěłowego
+        systema za tłocaški, menije a wokna zderbnuś.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Naglěd z wašogo źěłowego
+        systema za tłocaški, menije a wokna zderbnuś.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Swětły naglěd za tłocaški,
+        menije a wokna.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Swětły naglěd za tłocaški,
+        menije a wokna.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Śamny naglěd za tłocaški,
+        menije a wokna.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Śamny naglěd za tłocaški,
+        menije a wokna.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Barwny naglěd za tłocaški,
+        menije a wokna.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Barwny naglěd za tłocaški,
+        menije a wokna.
 
 ## Welcome full page string
 
@@ -139,11 +177,7 @@ onboarding-sync-form-sub-header = aby z { -sync-brand-name } pókšacował.
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Wužytne produkty
 onboarding-benefit-products-text = Gótujśo wěcy z rědami, kótarež wašu priwatnosć na wšych rědach respektěruju.
-onboarding-benefit-knowledge-title = Praktiska wěda
-onboarding-benefit-knowledge-text = Zgóńśo wšykno, což musyśo wěźeś, aby wěcej inteligentny a wěsty online był.
-onboarding-benefit-privacy-title = Napšawdna priwatnosć
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -164,17 +198,6 @@ onboarding-benefit-lockwise-text = Zastojśo gronidła, kótarež su šćitane a
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Priwatny modus
-onboarding-private-browsing-text = Pśeglědujśo za se. Priwatny modus z blokowanim wopśimjeśa blokěrujo pśeslědowaki online, kótarež wam pśez web slěduju.
-onboarding-screenshots-title = Fota wobrazowki
-onboarding-screenshots-text = Gótujśo, składujśo a źělśo fota wobrazowki - bźez togo, aby { -brand-short-name } spušćił. Fotografěrujśo wobceŕk abo ceły bok. mjaztym až pśeglědujośo. Składujśo pótom we webje za lažki pśistup a źělenje.
-onboarding-addons-title = Dodanki
-onboarding-addons-text = Pśidajśo dalšne funkcije, aby { -brand-short-name } źurnjej za was źěłał. Pśirownajśo płaśizny, wobgóńśo se za wjedrom abo zwurazniśo swóju wósobinu ze swójskeju drastwu.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Pśeglědujśo malsnjej, wěcej inteligentnje abo wěsćej z rozšyrjenjami ako Ghostery, kótarež wam zmóžnja, gramne wabjenje blokěrowaś.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Snychronizěrowaś
-onboarding-fxa-text = Registrěrujśo se za { -fxaccount-brand-name } a synchronizěrujśo swóje cytańske znamjenja, gronidła a wócynjone rejtariki, źožkuli { -brand-short-name } wužywaśo.
 onboarding-tracking-protection-title2 = Šćit pśeśiwo slědowanjeju
 onboarding-tracking-protection-text2 = { -brand-short-name } wam pomaga, websedłam zawoboraś, wam online slědowaś, aby za wabjenje śěžčej było, wam pó webje slědowaś.
 onboarding-tracking-protection-button2 = Kak funkcioněrujo
@@ -183,7 +206,6 @@ onboarding-data-sync-title = Wzejśo swóje nastajenja sobu
 onboarding-data-sync-text2 = Synchronizěrujśo swóje cytańske znamjenja a gronidła a wěcej wšuźi, źož { -brand-product-name } wužywaśo.
 onboarding-data-sync-button2 = Pla { -sync-brand-short-name } pśizjawiś
 onboarding-firefox-monitor-title = Dajśo se pśi datowych źěrach warnowaś
-onboarding-firefox-monitor-text = { -monitor-brand-name } doglědujo, lěc jo se waša e-mailowa adresa južo w datowej źěrje zjawiła a warnujo was, gdyž se w nowej źěrje pokazujo.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } doglědujo, lěc jo se waša e-mailowa adresa južo w znatej datowej źěrje zjawiła a warnujo was, gdyž se w nowej źěrje pokazujo.
 onboarding-firefox-monitor-button = Za powěźeńki registrěrowaś
 onboarding-browse-privately-title = Pśeglědowajśo z priwatnosću
@@ -200,17 +222,11 @@ onboarding-mobile-phone-button = Mobilny wobglědowak ześěgnuś
 onboarding-send-tabs-title = Sćelśo něd rejtariki
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Sen Tabs ned boki mjazy wašymi rědami źěli, bźeztogo aby kopěrował, zasajźił abo wobglědowak spušćił.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Źělśo lažko boki mjazy wašymi rědami, mimo aby wótkaze kopěrował abo wobglědowak spušćił.
 onboarding-send-tabs-button = Wužywajśo Send Tabs
 onboarding-pocket-anywhere-title = Cytajśo a słuchajśo wšuźi
 onboarding-pocket-anywhere-text2 = Składujśo swój nejlubše wopśimjeśe offline z nałoženim { -pocket-brand-name } a cytajśo, słuchajśo a woglědajśo, gažkuli se wam góźi.
 onboarding-pocket-anywhere-button = { -pocket-brand-name } wopytaś
-onboarding-lockwise-passwords-title = Wzejśo swóje gronidła wšuźi sobu
-onboarding-lockwise-passwords-text2 = Źaržćo gronidła, kótarež składujośo, wěste a pśizjawśo se lažko pla swójich kontow z { -lockwise-brand-name }.
-onboarding-lockwise-passwords-button2 = Nałoženje wobstaraś
 onboarding-lockwise-strong-passwords-title = Mócne gronidła napóraś a składowaś
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } ned mócne gronidła napórajo a składujo je na jadnom městnje.
 onboarding-lockwise-strong-passwords-button = Waše pśizjawjenja zastojaś

@@ -77,6 +77,9 @@ show-dir-label =
         [windows] Dobrir lo dossièr
        *[other] Dobrir lo dossièr correspondent
     }
+environment-variables-title = Variablas d’environament
+environment-variables-name = Nom
+environment-variables-value = Valor
 experimental-features-title = Foncions experimentalas
 experimental-features-name = Nom
 experimental-features-value = Valor
@@ -104,8 +107,6 @@ graphics-desktop-environment = Environament de burèu
 place-database-title = Basa de donada de lòcs
 place-database-integrity = Integritat
 place-database-verify-integrity = Verificar l'integritat
-js-title = JavaScript
-js-incremental-gc = Amassamicas incremental
 a11y-title = Accessibilitat
 a11y-activated = Activar
 a11y-force-disabled = Limitar l'accessibilitat
@@ -135,7 +136,6 @@ restart-button-label = Reaviar
 
 audio-backend = Sistèma de retorn àudio
 max-audio-channels = Nombre de canals maximal
-channel-layout = Mòde de canal preferit
 sample-rate = Taus d'escandalhatge preferit
 roundtrip-latency = Laténcia anar-tornar (desviacion estandarda)
 media-title = Mèdia
@@ -279,7 +279,6 @@ support-blocklisted-bug = Botat en lista negra a causa d’un problèma conegut�
 unknown-failure = Plaçat dins la lista de blocatge; còde d'error { $failureCode }
 d3d11layers-crash-guard = Compositor D3D11
 d3d11video-crash-guard = Desencodador vidèo D3D11
-d3d9video-crash-buard = Desencodador vidèo D3D9
 d3d9video-crash-guard = Desencodador vidèo D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Desencodador vidèo WMF VPX

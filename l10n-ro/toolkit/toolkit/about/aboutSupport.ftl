@@ -80,6 +80,9 @@ show-dir-label =
         [windows] Deschide dosarul
        *[other] Deschide directorul
     }
+environment-variables-title = Variabile de mediu
+environment-variables-name = Denumire
+environment-variables-value = Valoare
 experimental-features-title = Funcționalități experimentale
 experimental-features-name = Denumire
 experimental-features-value = Valoare
@@ -107,8 +110,6 @@ graphics-desktop-environment = Mediu desktop
 place-database-title = Bază de date cu locuri
 place-database-integrity = Integritate
 place-database-verify-integrity = Verifică integritatea
-js-title = JavaScript
-js-incremental-gc = GC incremental
 a11y-title = Accesibilitate
 a11y-activated = Activat
 a11y-force-disabled = Împiedică accesibilitatea
@@ -138,7 +139,6 @@ restart-button-label = Repornește
 
 audio-backend = Backend audio
 max-audio-channels = Canale maxime
-channel-layout = Aspect preferat al canalelor
 sample-rate = Rată de eșantionare preferată
 roundtrip-latency = Latență dus-întors (deviație standard)
 media-title = Media
@@ -287,7 +287,6 @@ support-blocklisted-bug = Pus pe lista de blocare din cauza problemelor cunoscut
 unknown-failure = Pus pe lista de blocări; cod de eroare { $failureCode }
 d3d11layers-crash-guard = Compozitor D3D11
 d3d11video-crash-guard = Decodor video D3D11
-d3d9video-crash-buard = Decodor video D3D9
 d3d9video-crash-guard = Decodor video D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Decodor video WMF VPX

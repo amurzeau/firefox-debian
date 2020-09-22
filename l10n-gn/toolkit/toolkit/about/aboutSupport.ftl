@@ -77,6 +77,9 @@ show-dir-label =
         [windows] Ñongatuha ijurujáva
        *[other] Marandurenda’atýpe jeike
     }
+environment-variables-title = Jeregua moambuekuaa
+environment-variables-name = Téra
+environment-variables-value = Tepykue
 experimental-features-title = Tembiapoite oñeha’ãramóva
 experimental-features-name = Téra
 experimental-features-value = Tepykue
@@ -104,8 +107,6 @@ graphics-desktop-environment = Mohendaha jeregua
 place-database-title = Mba’ekuaarã renda
 place-database-integrity = Tekoite
 place-database-verify-integrity = Tekoporã Jehechajey
-js-title = JavaScript
-js-incremental-gc = Mbotuicháva GC
 a11y-title = Jeikekuaa
 a11y-activated = Myandypyre
 a11y-force-disabled = Jeikekuaa jejoko
@@ -135,7 +136,6 @@ restart-button-label = Ñepyrũjey
 
 audio-backend = Mba’epu ñangarekoha huguapeguáva
 max-audio-channels = Max mbohapeha
-channel-layout = Mbohapeha ñemoĩ ojererohorýva
 sample-rate = Techaukarã py’ỹigua ojererohorýva
 roundtrip-latency = Latencia ou ha ohóva (ojeréva ypykuete)
 media-title = Marandu myasãiha
@@ -279,7 +279,6 @@ support-blocklisted-bug = Tysýi jokopyre apañuãi ojekuaáva rupi: <a data-l10
 unknown-failure = Tysýi vai; ayvu jejavy { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Ta’ãngamýi Mbopapapy’oha
-d3d9video-crash-buard = D3D9 Ta’ãngamýi Mbopapapy’oha
 d3d9video-crash-guard = D3D9 Ta’ãngamýi Mbopapapy’oha
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Ta’ãngamýi Mbopapapy’oha WMF VPX

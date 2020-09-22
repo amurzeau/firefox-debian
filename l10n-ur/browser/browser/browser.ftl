@@ -205,8 +205,12 @@ search-one-offs-engine-with-alias =
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
 
+search-one-offs-bookmarks =
+    .tooltiptext = بُک مارکس ({ $restrict })
 search-one-offs-tabs =
     .tooltiptext = تبز  ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = سابقات ({ $restrict })
 
 ## Bookmark Panel
 
@@ -292,6 +296,8 @@ popup-screen-sharing-not-now =
 popup-screen-sharing-never =
     .label = کبھی اجازت نہیں دیں
     .accesskey = N
+popup-silence-notifications-checkbox = اشتراک کے دوران { -brand-short-name } سے اطلاعات کو غیر فعال کریں
+popup-silence-notifications-checkbox-warning = شیئرنگ کے عمل کے دوران { -brand-short-name } اطلاعات نہیں دکھایے گا.
 
 ## WebRTC window or screen share tab switch warning
 
@@ -305,8 +311,22 @@ sharing-warning-proceed-to-tab =
 
 urlbar-default-placeholder =
     .defaultPlaceholder = تلاش کریں یا پتہ داخل کریں
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = تلاش کریں یا پتہ داخل کریں
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = ویب پر تلاش کریں
+    .aria-label = { $name } کے ساتھ تلاش کریں
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name } کے ساتھ تلاش کریں یا پتہ درج کریں
 urlbar-remote-control-notification-anchor =
     .tooltiptext = براؤزر ریموٹ کنٹرول کے تحت ہے
 urlbar-permissions-granted =

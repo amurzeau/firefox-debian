@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = { -brand-short-name }가 알려진 추적기를 차단하도록 설정된 경우에만
 do-not-track-option-always =
     .label = 항상
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] 설정
-           *[other] 환경 설정
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] 설정
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = <img data-l10n-name="icon"/> { $name } 
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = <img data-l10n-name="icon"/> { $name } 확장 기능이 새 탭 페이지를 제어하고 있습니다.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = <img data-l10n-name="icon"/> { $name } 확장 기능이 이 설정을 제어하고 있습니다.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = <img data-l10n-name="icon"/> { $name } 확장 기능이 이 설정을 제어하고 있습니다.
@@ -359,13 +356,6 @@ update-application-warning-cross-user-setting = 이 설정은 이 { -brand-short
 update-application-use-service =
     .label = 업데이트 설치 시 백그라운드 작업으로 하기
     .accesskey = b
-update-enable-search-update =
-    .label = 검색 엔진 자동 업데이트
-    .accesskey = e
-update-pref-write-failure-title = 쓰기 실패
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = 환경 설정을 저장할 수 없습니다. 파일에 쓸 수 없습니다: { $path }
 update-setting-write-failure-title = 업데이트 설정 저장 중 오류 발생
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -516,8 +506,8 @@ home-prefs-highlights-option-saved-to-pocket =
 # expresses the idea of "a small message, shortened from something else,
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
-    .label = 짧은 요약
-home-prefs-snippets-description = { -vendor-short-name }와 { -brand-product-name } 소식
+    .label = 짧은 소식
+home-prefs-snippets-description = { -vendor-short-name }와 { -brand-product-name }에 대한 업데이트
 home-prefs-sections-rows-option =
     .label = { $num } 행
 
@@ -529,7 +519,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = 도구 모음에 검색 표시줄 추가
 search-engine-default-header = 기본 검색 엔진
-search-engine-default-desc = 주소 표시줄과 검색 표시줄에서 사용할 기본 검색 엔진을 선택하세요.
 search-engine-default-desc-2 = 주소 표시줄과 검색 표시줄의 기본 검색 엔진입니다. 언제든지 바꿀 수 있습니다.
 search-engine-default-private-desc-2 = 사생활 보호 창에서만 사용할 다른 기본 검색 엔진을 선택하세요
 search-separate-default-engine =
@@ -553,7 +542,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = 사생활 보호 창에 검색 제안 표시
 suggestions-addressbar-settings-generic = 다른 주소 표시줄 제안에 대한 설정 변경
-search-suggestions-cant-show = 기록을 기억하지 않도록 { -brand-short-name }를 구성했기 때문에 검색 제안이 주소창 결과에 표시되지 않습니다.
+search-suggestions-cant-show = 방문 기록을 저장하지 않도록 { -brand-short-name }를 설정했기 때문에 검색 제안이 주소 표시 줄 결과에 표시되지 않습니다.
 search-one-click-header = 원클릭 검색 엔진
 search-one-click-desc = 키워드 입력을 시작했을 때 주소 표시줄과 검색 표시줄 아래에 나타날 대체 검색 엔진을 선택하세요.
 search-choose-engine-column =
@@ -566,6 +555,9 @@ search-restore-default =
 search-remove-engine =
     .label = 삭제
     .accesskey = R
+search-add-engine =
+    .label = 추가
+    .accesskey = A
 search-find-more-link = 더 많은 검색 엔진 찾기
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -577,7 +569,6 @@ search-keyword-warning-bookmark = 북마크에서 이미 사용 중인 키워드
 
 ## Containers Section
 
-containers-back-link = « 뒤로 가기
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -596,20 +587,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = 삭제
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = 웹과 함께 하세요.
 sync-signedout-description = 북마크, 기록, 탭, 비밀번호, 부가 기능, 설정을 모든 기기에 걸쳐 동기화하세요.
-sync-signedout-account-title = { -fxaccount-brand-name }과 연결
-sync-signedout-account-create = 계정이 없으신가요? 시작하세요
-    .accesskey = C
-sync-signedout-account-signin =
-    .label = 로그인…
-    .accesskey = I
 sync-signedout-account-signin2 =
     .label = { -sync-brand-short-name }에 로그인…
     .accesskey = i
@@ -623,16 +605,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = 모바일 기기와 동기화하기 위해서 <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> 또는 <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>용 Firefox를 다운로드하세요.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = 프로필 사진 변경
-sync-disconnect =
-    .label = 연결 끊기…
-    .accesskey = D
 sync-sign-out =
     .label = 로그아웃…
     .accesskey = g
@@ -649,8 +625,6 @@ sync-remove-account =
 sync-sign-in =
     .label = 로그인
     .accesskey = g
-sync-signedin-settings-header = 동기화 설정
-sync-signedin-settings-desc = { -brand-short-name }를 사용 중인 기기에서 동기화할 내용을 선택하세요.
 
 ## Sync section - enabling or disabling sync.
 
@@ -703,10 +677,6 @@ sync-engine-tabs =
     .label = 열린 탭
     .tooltiptext = 모든 동기화된 기기에서 열린 탭의 목록
     .accesskey = T
-sync-engine-logins =
-    .label = 로그인
-    .tooltiptext = 저장한 사용자 이름과 비밀번호
-    .accesskey = L
 sync-engine-logins-passwords =
     .label = 로그인과 비밀번호
     .tooltiptext = 저장한 사용자 이름과 비밀번호
@@ -745,18 +715,10 @@ sync-device-name-save =
     .label = 저장
     .accesskey = v
 sync-connect-another-device = 다른 기기 연결
-sync-manage-devices = 기기 관리
-sync-fxa-begin-pairing = 기기 연결하기
-sync-tos-link = 서비스 약관
-sync-fxa-privacy-notice = 개인정보처리방침
 
 ## Privacy Section
 
 privacy-header = 브라우저 개인 정보
-
-## Privacy Section - Forms
-
-logins-header = 로그인과 비밀번호
 
 ## Privacy Section - Logins and Passwords
 
@@ -890,8 +852,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = 차단 유형
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = 제3자 추적기
 sitedata-option-block-cross-site-trackers =
     .label = 교차 사이트 추적기
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -937,27 +897,9 @@ addressbar-suggestions-settings = 검색 엔진 제안 설정 변경
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = 콘텐츠 차단
-content-blocking-section-description = 탐색하는 동안 개인 정보를 보호하세요. 사용자가 방문하는 사이트를 추적하고 개인을 식별하는 보이지 않는 콘텐츠를 차단합니다. 이 콘텐츠 중 일부를 차단하면 페이지가 더 빨리 로드될 수 있습니다.
 content-blocking-enhanced-tracking-protection = 향상된 추적 방지 기능
 content-blocking-section-top-level-description = 추적기는 온라인에서 사용자를 따라다니며 탐색 습관과 관심사에 대한 정보를 수집합니다. { -brand-short-name }는 이러한 많은 추적기 및 기타 악성 스크립트를 차단합니다.
 content-blocking-learn-more = 더 알아보기
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = 표준
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = 엄격
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = 사용자 지정
-    .accesskey = C
-content-blocking-standard-desc = 보호와 성능 사이의 균형을 유지합니다. 웹 사이트가 제대로 작동하도록 일부 추적기를 허용합니다.
-content-blocking-strict-description = 강한 보호 기능으로 인해 일부 사이트가 손상될 수 있습니다.
-content-blocking-custom-desc = 차단할 항목을 선택하세요.
-content-blocking-private-trackers = 사생활 보호 창에서 알려진 추적기만
-content-blocking-third-party-cookies = 제3자 추적 쿠키
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -984,23 +926,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = 교차 사이트 추
 content-blocking-social-media-trackers = 소셜 미디어 추적기
 content-blocking-all-cookies = 모든 쿠키
 content-blocking-unvisited-cookies = 방문하지 않은 사이트의 쿠키
-content-blocking-all-windows-trackers = 알려진 추적기를 모든 창에서
 content-blocking-all-windows-tracking-content = 모든 창의 추적 콘텐츠
 content-blocking-all-third-party-cookies = 모든 제3자 쿠키
-content-blocking-cryptominers = 크립토마이너
-content-blocking-fingerprinters = 핑거프린터
+content-blocking-cryptominers = 암호화폐 채굴기
+content-blocking-fingerprinters = 디지털 지문
 content-blocking-warning-title = 주의하세요!
-content-blocking-warning-description = 콘텐츠를 차단하면 일부 웹 사이트가 깨질 수 있습니다. 신뢰할 수 있는 사이트에 대한 차단은 쉽게 해제 할 수 있습니다.
-content-blocking-learn-how = 방법 알아보기
 content-blocking-and-isolating-etp-warning-description = 추적기 차단 및 쿠키 격리는 일부 사이트의 기능에 영향을 줄 수 있습니다. 모든 콘텐츠를 로드하려면 추적기가 있는 페이지를 다시 로드하세요.
 content-blocking-warning-learn-how = 방법 알아보기
 content-blocking-reload-description = 변경 사항을 적용하려면 탭을 다시 로드해야 합니다.
 content-blocking-reload-tabs-button =
     .label = 모든 탭 다시 읽기
     .accesskey = R
-content-blocking-trackers-label =
-    .label = 추적기
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = 추적 콘텐츠
     .accesskey = T
@@ -1018,12 +954,12 @@ content-blocking-expand-section =
     .tooltiptext = 더 알아보기
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
-    .label = 크립토마이너
+    .label = 암호화폐 채굴기
     .accesskey = y
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
-    .label = 핑거프린터
+    .label = 디지털 지문
     .accesskey = F
 
 ## Privacy Section - Tracking
@@ -1059,12 +995,6 @@ permissions-notification-link = 더 알아보기
 permissions-notification-pause =
     .label = { -brand-short-name }가 다시 시작될 때까지 알림을 일시 중지
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = 웹 사이트가 자동으로 소리를 재생하는 것 차단
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = 예외 목록…
-    .accesskey = E
 permissions-autoplay = 자동 재생
 permissions-autoplay-settings =
     .label = 설정…

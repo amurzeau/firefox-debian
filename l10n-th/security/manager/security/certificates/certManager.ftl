@@ -208,6 +208,8 @@ cert-not-verified-issuer-unknown = ไม่สามารถพิสูจน
 cert-not-verified-ca-invalid = ไม่สามารถพิสูจน์ใบรับรองที่ CA ไม่ถูกต้องได้
 cert-not-verified_algorithm-disabled = ไม่สามารถพิสูจน์ใบรับรองนี้ เพราะถูกเซ็นรับโดยใช้อัลกอริทึมลายเซ็นที่ถูกปิดใช้งานเนื่องจากใช้อัลกอริทึมที่ไม่ปลอดภัย
 cert-not-verified-unknown = ไม่สามารถพิสูจน์ใบรับรองนี้โดยไม่ทราบสาเหตุ
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = ไม่ต้องส่งใบรับรองไคลเอ็นต์ใด ๆ
 
 ## Add Security Exception dialog
 

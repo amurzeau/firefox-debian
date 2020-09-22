@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Csak akkor, ha a { -brand-short-name } az ismert követők blokkolására van állítva
 do-not-track-option-always =
     .label = Mindig
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Beállítások
-           *[other] Beállítások
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Beállítások
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Egy kiegészítő, a(z) <img data-l10n-
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Egy kiegészítő, a(z) <img data-l10n-name="icon"/> { $name }, vezérli az Új lap oldalt.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Egy kiegészítő, a(z) <img data-l10n-name="icon"/>{ $name }, vezérli ezt a beállítást.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Egy kiegészítő, a(z) <img data-l10n-name="icon"/> { $name } vezérli ezt a beállítást.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Ez a beállítás érvényes az 
 update-application-use-service =
     .label = Háttérben futó szolgáltatás intézze a frissítést
     .accesskey = H
-update-enable-search-update =
-    .label = Keresőszolgáltatások automatikus frissítése
-    .accesskey = u
-update-pref-write-failure-title = Írási hiba
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Nem lehet menteni a beállításokat. Nem lehet a fájlba írni: { $path }
 update-setting-write-failure-title = Hiba történt a Frissítési beállításainak mentésekor
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Keresősáv hozzáadása az eszköztárhoz
 search-engine-default-header = Alapértelmezett keresőszolgáltatás
-search-engine-default-desc = Válassza ki a címsávban és a keresősávban alapértelmezetten használandó keresőszolgáltatást.
 search-engine-default-desc-2 = Ez az alapértelmezett keresőszolgáltatás a cím- és keresősávban. Bármikor átválthatja.
 search-engine-default-private-desc-2 = Válasszon egy másik keresőszolgáltatást kizárólag a privát ablakokhoz
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Eltávolítás
     .accesskey = E
+search-add-engine =
+    .label = Hozzáadás
+    .accesskey = a
 search-find-more-link = További keresőszolgáltatások felvétele
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = Olyan kulcsszót választott, amelyet jelenleg
 
 ## Containers Section
 
-containers-back-link = « Vissza
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Eltávolítás
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Vigye magával a webet
 sync-signedout-description = Szinkronizálja könyvjelzőit, előzményeit, lapjait, jelszavait, kiegészítőit és beállításait minden eszközén.
-sync-signedout-account-title = Kapcsolódjon egy { -fxaccount-brand-name }kal
-sync-signedout-account-create = Nincs felhasználóneve? Kezdjen neki
-    .accesskey = K
-sync-signedout-account-signin =
-    .label = Bejelentkezés…
-    .accesskey = B
 sync-signedout-account-signin2 =
     .label = Bejelentkezés a { -sync-brand-short-name }be…
     .accesskey = j
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Töltse le a Firefox for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> vagy <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> appot a mobileszközével való szinkronizáláshoz.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Profilkép módosítása
-sync-disconnect =
-    .label = A kapcsolat bontása…
-    .accesskey = t
 sync-sign-out =
     .label = Kijelentkezés…
     .accesskey = K
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Bejelentkezés
     .accesskey = B
-sync-signedin-settings-header = Sync beállítások
-sync-signedin-settings-desc = Válassza ki, mit szeretne szinkronizálni eszközei között a { -brand-short-name } segítségével.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = Nyitott lapok
     .tooltiptext = Lista arról, hogy mi van nyitva a szinkronizált eszközökön
     .accesskey = L
-sync-engine-logins =
-    .label = Bejelentkezések
-    .tooltiptext = A mentett felhasználónevek és jelszavak
-    .accesskey = B
 sync-engine-logins-passwords =
     .label = Bejelentkezések és jelszavak
     .tooltiptext = Az Ön által mentett bejelentkezések és jelszavak
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Mentés
     .accesskey = M
 sync-connect-another-device = Másik eszköz csatlakoztatása
-sync-manage-devices = Eszközök kezelése
-sync-fxa-begin-pairing = Eszköz párosítása
-sync-tos-link = A szolgáltatás feltételei
-sync-fxa-privacy-notice = Adatvédelmi megjegyzés
 
 ## Privacy Section
 
 privacy-header = Böngésző adatvédelme
-
-## Privacy Section - Forms
-
-logins-header = Bejelentkezések és jelszavak
 
 ## Privacy Section - Logins and Passwords
 
@@ -906,8 +868,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Blokkolt típus
     .accesskey = B
-sitedata-option-block-trackers =
-    .label = Harmadik féltől származó követők
 sitedata-option-block-cross-site-trackers =
     .label = Weboldalak közti nyomkövetők
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -953,27 +913,9 @@ addressbar-suggestions-settings = Keresőszolgáltatás-javaslatok beállítása
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Tartalomblokkolás
-content-blocking-section-description = Védje meg a magánszféráját böngészés közben. Blokkolja a láthatatlan tartalmakat, melyek követik, hogy mely oldalakat látogat, és profilt építenek Önről. Egyes tartalmak blokkolása a weboldalak gyorsabb betöltését is eredményezheti.
 content-blocking-enhanced-tracking-protection = Fokozott követés elleni védelem
 content-blocking-section-top-level-description = A nyomkövetők követik Önt online, és információkat gyűjtenek a böngészési szokásairól és érdeklődési köreiről. A { -brand-short-name } számos ilyen követőt és rosszindulatú parancsfájlt blokkol.
 content-blocking-learn-more = További tudnivalók
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Szokásos
-    .accesskey = k
-content-blocking-setting-strict =
-    .label = Szigorú
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Egyéni
-    .accesskey = E
-content-blocking-standard-desc = Kiegyensúlyozott védelem és teljesítmény. Engedélyez néhány követőt, hogy a webhelyek megfelelően működjenek.
-content-blocking-strict-description = Erősebb védelem, emiatt egyes weboldalak nem fognak megfelelően működni.
-content-blocking-custom-desc = Válassza ki, mit akar blokkolni.
-content-blocking-private-trackers = Ismert követők csak privát ablakokban
-content-blocking-third-party-cookies = Harmadik féltől származó követő sütik
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1000,23 +942,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Webhelyek közötti 
 content-blocking-social-media-trackers = Közösségimédia-követők
 content-blocking-all-cookies = Minden süti
 content-blocking-unvisited-cookies = Sütik a nem látogatott oldalakról
-content-blocking-all-windows-trackers = Ismert követők minden ablakban
 content-blocking-all-windows-tracking-content = Tartalomkövetés az összes ablakban
 content-blocking-all-third-party-cookies = Összes harmadik féltől származó süti
 content-blocking-cryptominers = Kriptobányászok
 content-blocking-fingerprinters = Ujjlenyomat-készítők
 content-blocking-warning-title = Figyelem!
-content-blocking-warning-description = A tartalomblokkolás egyes webhelyek hibás működését okozhatja. A blokkolás könnyen letiltható azokon az oldalakon, melyekben megbízik.
-content-blocking-learn-how = Tudja meg, hogyan
 content-blocking-and-isolating-etp-warning-description = A nyomkövetők blokkolása és a sütik elkülönítése befolyásolhatja az egyes webhelyek működését. Töltse újra az oldalt a nyomkövetőkkel, hogy betöltse az összes tartalmat.
 content-blocking-warning-learn-how = Tudja meg, hogyan
 content-blocking-reload-description = A módosítások alkalmazásához frissítenie kell a lapokat.
 content-blocking-reload-tabs-button =
     .label = Összes lap frissítése
     .accesskey = R
-content-blocking-trackers-label =
-    .label = Követők
-    .accesskey = K
 content-blocking-tracking-content-label =
     .label = Nyomkövető tartalom
     .accesskey = k
@@ -1075,12 +1011,6 @@ permissions-notification-link = További tudnivalók
 permissions-notification-pause =
     .label = Értesítések kikapcsolása a { -brand-short-name } újraindulásáig
     .accesskey = e
-permissions-block-autoplay-media2 =
-    .label = A weboldalak automatikus hanglejátszásának blokkolása
-    .accesskey = b
-permissions-block-autoplay-media-exceptions =
-    .label = Kivételek…
-    .accesskey = K
 permissions-autoplay = Automatikus lejátszás
 permissions-autoplay-settings =
     .label = Beállítások…

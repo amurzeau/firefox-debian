@@ -16,6 +16,12 @@ import-from-ie =
 import-from-edge =
     .label = Microsoft Edge
     .accesskey = E
+import-from-edge-legacy =
+    .label = Edge da Microsoft antigo
+    .accesskey = L
+import-from-edge-beta =
+    .label = A beta do Edge da Microsoft
+    .accesskey = d
 import-from-nothing =
     .label = Non importar nada
     .accesskey = N
@@ -61,6 +67,7 @@ import-close-source-browser = Asegúrese de que o navegador seleccionado está p
 imported-bookmarks-source = De { $source }
 source-name-ie = Internet Explorer
 source-name-edge = Microsoft Edge
+source-name-edge-beta = Beta do Edge da Microsoft
 source-name-safari = Safari
 source-name-canary = Google Chrome Canary
 source-name-chrome = Google Chrome
@@ -81,10 +88,57 @@ imported-edge-reading-list = Lista de lectura (de Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.
 
+browser-data-cookies-checkbox =
+    .label = Cookies
+browser-data-cookies-label =
+    .value = Cookies
+browser-data-history-checkbox =
+    .label =
+        { $browser ->
+            [firefox] Historial de navegación e marcadores
+           *[other] Historial de navegación
+        }
+browser-data-history-label =
+    .value =
+        { $browser ->
+            [firefox] Historial de navegación e marcadores
+           *[other] Historial de navegación
+        }
+browser-data-formdata-checkbox =
+    .label = Historial de formularios gardados
+browser-data-formdata-label =
+    .value = Historial de formularios gardados
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-checkbox =
+    .label = Inicios de sesión e contrasinais gardados
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-label =
+    .value = Inicios de sesión e contrasinais gardados
+browser-data-bookmarks-checkbox =
+    .label =
+        { $browser ->
+            [ie] Favoritos
+            [edge] Favoritos
+           *[other] Marcadores
+        }
+browser-data-bookmarks-label =
+    .value =
+        { $browser ->
+            [ie] Favoritos
+            [edge] Favoritos
+           *[other] Marcadores
+        }
+browser-data-otherdata-checkbox =
+    .label = Outros datos
+browser-data-otherdata-label =
+    .label = Outros datos
 browser-data-session-checkbox =
     .label = Xanelas e lapelas
 browser-data-session-label =

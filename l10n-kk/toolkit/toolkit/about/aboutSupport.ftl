@@ -77,6 +77,9 @@ show-dir-label =
         [windows] Буманы ашу
        *[other] Буманы ашу
     }
+environment-variables-title = Қоршам айнымалылары
+environment-variables-name = Аты
+environment-variables-value = Мәні
 experimental-features-title = Эксперименталды мүмкіндіктер
 experimental-features-name = Аты
 experimental-features-value = Мәні
@@ -104,8 +107,6 @@ graphics-desktop-environment = Жұмыс үстелі ортасы
 place-database-title = Орналасулар дерекқоры
 place-database-integrity = Бүтіндігі
 place-database-verify-integrity = Бүтіндігін тексеру
-js-title = JavaScript
-js-incremental-gc = Өспелі GC
 a11y-title = Қолжетерлілік
 a11y-activated = Белсендірілген
 a11y-force-disabled = Кеңейтілген мүмкіндіктерге  тыйым салу
@@ -135,7 +136,6 @@ restart-button-label = Қайта қосу
 
 audio-backend = Аудио файлдарын ойнату бағдарламасы
 max-audio-channels = Макс. арналар
-channel-layout = Таңдамалы арналар жаймасы
 sample-rate = Таңдамалы кадрлар жиілігі
 roundtrip-latency = Айналма жолдың кідірісі (стандартты ауытқу)
 media-title = Мультимедиа
@@ -279,7 +279,6 @@ support-blocklisted-bug = Белгілі мәселелерге байланыс
 unknown-failure = Блоктізіміде; қателік коды { $failureCode }
 d3d11layers-crash-guard = D3D11 араластырушысы
 d3d11video-crash-guard = D3D11 видео декодері
-d3d9video-crash-buard = D3D9 видео декодері
 d3d9video-crash-guard = D3D9 видео декодері
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX видео декодері

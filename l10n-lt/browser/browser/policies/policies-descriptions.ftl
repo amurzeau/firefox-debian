@@ -36,6 +36,7 @@ policy-DisableFirefoxStudies = Neleisti „{ -brand-short-name }“ vykdyti tyri
 policy-DisableForgetButton = Blokuoti prieigą prie mygtuką „Pamiršti“.
 policy-DisableFormHistory = Neįsiminti įvestų paieškos ir formų laukų reikšmių.
 policy-DisableMasterPasswordCreation = Jei „true“, negalima sukurti pagrindinio slaptažodžio.
+policy-DisablePrimaryPasswordCreation = Jei „true“, negalima sukurti pagrindinio slaptažodžio.
 policy-DisablePasswordReveal = Neleisti parodyti slaptažodžių įrašytuose prisijungimuose.
 policy-DisablePocket = Išjungti funkcionalumą, skirtą tinklalapių įrašymui į „Pocket“.
 policy-DisablePrivateBrowsing = Išjungti privatųjį naršymą.
@@ -79,6 +80,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Grįžti prie pasenusi
 
 policy-LocalFileLinks = Leisti konkrečioms svetainėms susieti vietinius failus.
 policy-MasterPassword = Reikalauti arba neleisti naudoti pagrindinio slaptažodžio.
+policy-PrimaryPassword = Reikalauti arba neleisti naudoti pagrindinio slaptažodžio.
 policy-NetworkPrediction = Įjungti arba išjungti tinklo nuspėjimą (parengtinis DNS įkėlimas).
 policy-NewTabPage = Įjungti arba išjungti naujos kortelės puslapį.
 policy-NoDefaultBookmarks = Išjungti numatytųjų adresyno įrašų, kurie ateina su „{ -brand-short-name }“, kūrimą, bei išmanųjį adresyną („Lankomiausi“, „Paskiausiai naudotos gairės“). Pastaba: šis nuostatas veikia tik jeigu yra panaudojamas prieš pirmąjį profilio paleidimą.
@@ -90,7 +92,7 @@ policy-PasswordManagerEnabled = Įjungti slaptažodžių įrašymą į slaptažo
 # PDF.js and PDF should not be translated
 policy-PDFjs = Išjungti arba konfigūruoti „PDF.js“, į „{ -brand-short-name }“ integruotą PDF failų žiūryklę.
 policy-Permissions2 = Konfigūruoti kameros, mikrofono, buvimo vietos nustatymo, pranešimų ir automatinio grojimo leidimus.
-policy-PictureInPicture = Įjungti arba išjungti vaizdą vaizde.
+policy-PictureInPicture = Įjungti arba išjungti vaizdą-vaizde.
 policy-PopupBlocking = Leisti kai kurioms svetainėms pagal numatymą rodyti iškylančiuosius langus.
 policy-Preferences = Nustatykite ir užfiksuokite nuostatų rinkinio reikšmę.
 policy-PromptForDownloadLocation = Klausti, kur įrašyti atsiunčiamus failus.

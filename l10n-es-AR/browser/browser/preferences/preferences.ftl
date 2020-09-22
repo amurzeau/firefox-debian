@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Solo cuando { -brand-short-name } está configurado para bloquear los rastreadores conocidos
 do-not-track-option-always =
     .label = Siempre
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Opciones
-           *[other] Preferencias
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Opciones
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = La extensión <img data-l10n-name="icon
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Una extensión, <img data-l10n-name="icon"/> { $name }, controla la página de pestaña nueva.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Una extensión, <img data-l10n-name="icon"/> { $name }, está controlando esta configuración.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Una extensión, <img data-l10n-name="icon"/> { $name }, está controlando esta configuración.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Esta configuración se aplicará
 update-application-use-service =
     .label = Usar un servicio en segundo plano para instalar actualizaciones
     .accesskey = U
-update-enable-search-update =
-    .label = Actualizar automáticamente los buscadores
-    .accesskey = e
-update-pref-write-failure-title = Fallo de escritura
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = No se puede guardar la preferencia. No se pudo escribir en el archivo: { $path }
 update-setting-write-failure-title = Error al guardar las preferencias de actualización
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Agregar barra de búsqueda a la barra de herramientas
 search-engine-default-header = Buscador predeterminado
-search-engine-default-desc = Seleccionar el buscador predeterminado para usar en la barra de direcciones y la barra de búsqueda.
 search-engine-default-desc-2 = Este es su motor de búsqueda predeterminado en la barra de direcciones y la barra de búsqueda. Puede cambiarlo en cualquier momento.
 search-engine-default-private-desc-2 = Establecer como motor de búsqueda predeterminado solo para ventanas privadas
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Eliminar
     .accesskey = r
+search-add-engine =
+    .label = Agregar
+    .accesskey = A
 search-find-more-link = Agregar más buscadores
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = Ha elegido una palabra clave que está actualm
 
 ## Containers Section
 
-containers-back-link = « Ir atrás
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Eliminar
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Llévese la web con usted
 sync-signedout-description = Sincronice marcadores, historial, pestañas, contraseñas, complementos y preferencias en todos sus dispositivos.
-sync-signedout-account-title = Conecte con { -fxaccount-brand-name }
-sync-signedout-account-create = ¿No tiene una cuenta? Comencemos
-    .accesskey = C
-sync-signedout-account-signin =
-    .label = Ingresar…
-    .accesskey = I
 sync-signedout-account-signin2 =
     .label = Iniciar sesión en { -sync-brand-short-name }…
     .accesskey = i
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Descargar Firefox para <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> o <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> para sincronizar con su dispositivo móvil.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Cambiar imagen de perfil
-sync-disconnect =
-    .label = Desconectar…
-    .accesskey = D
 sync-sign-out =
     .label = Cerrar sesión…
     .accesskey = g
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Ingresar
     .accesskey = g
-sync-signedin-settings-header = Opciones de Sync
-sync-signedin-settings-desc = Elegir qué sincronizar en los dispositivos que usan { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = Pestañas abiertas
     .tooltiptext = Una lista de que está abierto en todos los dispositivos sincronizados
     .accesskey = t
-sync-engine-logins =
-    .label = Ingresos
-    .tooltiptext = Usuarios y contraseñas que se hayan guardado
-    .accesskey = I
 sync-engine-logins-passwords =
     .label = Inicios de sesión y contraseñas
     .tooltiptext = Nombres de usuario y contraseñas guardadas
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Guardar
     .accesskey = G
 sync-connect-another-device = Conectar otro dispositivo
-sync-manage-devices = Administrar dispositivos
-sync-fxa-begin-pairing = Conectar un dispositivo
-sync-tos-link = Términos del servicio
-sync-fxa-privacy-notice = Nota de privacidad
 
 ## Privacy Section
 
 privacy-header = Privacidad del navegador
-
-## Privacy Section - Forms
-
-logins-header = Inicios de sesión y contraseñas
 
 ## Privacy Section - Logins and Passwords
 
@@ -817,6 +779,10 @@ forms-master-pw-fips-title = Se encuentra actualmente en modo FIPS. FIPS requier
 forms-primary-pw-change =
     .label = Cambiar la contraseña maestra…
     .accesskey = P
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Se encuentra actualmente en modo FIPS. FIPS requiere una contraseña maestra no vacía.
 forms-master-pw-fips-desc = Cambio Fallido de contraseña
 
@@ -902,8 +868,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Tipo de contenido bloqueado
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Rastreadores de terceros
 sitedata-option-block-cross-site-trackers =
     .label = Rastreadores de sitios cruzados
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -949,27 +913,9 @@ addressbar-suggestions-settings = Cambiar preferencias para sugerencias de busca
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Bloqueo de contenido
-content-blocking-section-description = Proteja su privacidad al navegar. Bloquee contenido que rastree los sitios visitados y arma perfiles. Bloquear algún contenido puede hacer que las páginas carguen más rápido.
 content-blocking-enhanced-tracking-protection = Protección contra rastreo aumentada
 content-blocking-section-top-level-description = Los rastreadores lo siguen en línea para recolectar información sobre sus hábitos e intereses de navegación. { -brand-short-name } bloquea muchos de estos rastreadores y otros scripts maliciosos.
 content-blocking-learn-more = Conocer más
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Estándar
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Estricto
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Personalizado
-    .accesskey = z
-content-blocking-standard-desc = Equilibrado para la protección y el rendimiento. Permite algunos rastreadores para que los sitios web funcionen correctamente.
-content-blocking-strict-description = Una protección más fuerte puede causar que algunos sitios fallen.
-content-blocking-custom-desc = Elegir qué bloquear
-content-blocking-private-trackers = Rastreadores conocidos solo en Ventanas privadas
-content-blocking-third-party-cookies = Cookies de rastreo de terceros
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -996,23 +942,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies de rastreo d
 content-blocking-social-media-trackers = Rastreadores de redes sociales
 content-blocking-all-cookies = Todas las cookies
 content-blocking-unvisited-cookies = Cookies de sitios no visitados
-content-blocking-all-windows-trackers = Rastreadores conocidos en todas las ventanas.
 content-blocking-all-windows-tracking-content = Rastreo de contenido en todas las ventanas
 content-blocking-all-third-party-cookies = Todas las cookies de terceros
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Detectores de huellas digitales
 content-blocking-warning-title = ¡Atención!
-content-blocking-warning-description = El bloqueo de contenido puede hacer que algunos sitios web no se carguen correctamente. Es fácil deshabilitar el bloqueo para sitios en los que confía.
-content-blocking-learn-how = Aprender como
 content-blocking-and-isolating-etp-warning-description = Bloquear los rastreadores y aislar las cookies puede impactar en la funcionalidad de algunos sitios. Recargue una página con los rastreadores para cargar todo el contenido.
 content-blocking-warning-learn-how = Aprender como
 content-blocking-reload-description = Tendrá que volver a cargar las pestañas para aplicar estos cambios.
 content-blocking-reload-tabs-button =
     .label = Recargar todas las pestañas
     .accesskey = R
-content-blocking-trackers-label =
-    .label = Rastreadores
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = Contenido de rastreo
     .accesskey = T
@@ -1071,12 +1011,6 @@ permissions-notification-link = Conocer más
 permissions-notification-pause =
     .label = Pausar notificaciones hasta que se reinicie { -brand-short-name }
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Bloquear sitios web para que no reproduzcan sonido automáticamente
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = Excepciones
-    .accesskey = E
 permissions-autoplay = Autoreproducción
 permissions-autoplay-settings =
     .label = Configuración…

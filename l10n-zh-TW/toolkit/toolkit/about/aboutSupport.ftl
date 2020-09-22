@@ -80,6 +80,9 @@ show-dir-label =
         [windows] 開啟資料夾
        *[other] 開啟資料夾
     }
+environment-variables-title = 環境變數
+environment-variables-name = 名稱
+environment-variables-value = 值
 experimental-features-title = 實驗功能
 experimental-features-name = 名稱
 experimental-features-value = 值
@@ -107,8 +110,6 @@ graphics-desktop-environment = 桌面環境
 place-database-title = Places 資料庫
 place-database-integrity = 資料完整
 place-database-verify-integrity = 確認資料完整
-js-title = JavaScript
-js-incremental-gc = Incremental GC
 a11y-title = 輔助功能
 a11y-activated = 已啟用
 a11y-force-disabled = 已強迫停用輔助功能
@@ -138,7 +139,6 @@ restart-button-label = 重新啟動
 
 audio-backend = 音效後端
 max-audio-channels = 最大頻道數
-channel-layout = 偏好頻道類型
 sample-rate = 偏好取樣率
 roundtrip-latency = 往返延遲（標準差）
 media-title = 媒體
@@ -262,7 +262,6 @@ support-blocklisted-bug = 由於有已知問題，被加入封鎖名單: <a data
 unknown-failure = 已封鎖，錯誤代碼 { $failureCode }
 d3d11layers-crash-guard = D3D11 合成器
 d3d11video-crash-guard = D3D11 視訊解碼器
-d3d9video-crash-buard = D3D9 視訊解碼器
 d3d9video-crash-guard = D3D9 視訊解碼器
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX 視訊解碼器

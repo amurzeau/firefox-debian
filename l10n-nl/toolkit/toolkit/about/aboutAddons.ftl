@@ -10,8 +10,6 @@ search-header =
     .searchbuttonlabel = Zoeken
 search-header-shortcut =
     .key = f
-loading-label =
-    .value = Laden…
 list-empty-installed =
     .value = U hebt geen add-ons van dit type geïnstalleerd
 list-empty-available-updates =
@@ -22,9 +20,6 @@ list-empty-find-updates =
     .label = Controleren op updates
 list-empty-button =
     .label = Meer info over add-ons
-install-addon-from-file =
-    .label = Add-on installeren via bestand…
-    .accesskey = s
 help-button = Add-on-ondersteuning
 sidebar-help-button-title =
     .title = Add-on-ondersteuning
@@ -33,8 +28,6 @@ preferences =
         [windows] { -brand-short-name }-opties
        *[other] { -brand-short-name }-voorkeuren
     }
-tools-menu =
-    .tooltiptext = Hulpmiddelen voor alle add-ons
 sidebar-preferences-button-title =
     .title =
         { PLATFORM() ->
@@ -45,9 +38,6 @@ show-unsigned-extensions-button =
     .label = Sommige extensies konden niet worden geverifieerd
 show-all-extensions-button =
     .label = Alle extensies tonen
-debug-addons =
-    .label = Add-ons debuggen
-    .accesskey = b
 cmd-show-details =
     .label = Meer informatie tonen
     .accesskey = M
@@ -78,14 +68,6 @@ cmd-contribute =
     .label = Bijdragen
     .accesskey = r
     .tooltiptext = Bijdragen aan de ontwikkeling van deze add-on
-discover-title = Wat zijn add-ons?
-discover-description =
-    Add-ons zijn toepassingen waarmee u { -brand-short-name } kunt personaliseren
-    met extra functionaliteit of stijl. Probeer een tijdbesparende zijbalk, een weerbericht of een thema om { -brand-short-name }
-    aan uw wensen aan te passen.
-discover-footer =
-    Wanneer u met het internet bent verbonden, toont dit paneel u een aantal
-    van de beste en meest populaire add-ons die u kunt uitproberen.
 detail-version =
     .label = Versie
 detail-last-updated =
@@ -107,15 +89,12 @@ detail-update-manual =
     .tooltiptext = Updates niet automatisch installeren
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Uitvoeren in privévensters
-detail-private-browsing-description2 = Wanneer toegestaan, heeft de extensie toegang tot uw online-activiteiten tijdens privénavigatie. <label data-l10n-name="detail-private-browsing-learn-more">Meer info</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = Niet toegestaan in privévensters
-detail-private-disallowed-description = Deze extensie werkt niet tijdens privénavigatie. <label data-l10n-name="detail-private-browsing-learn-more">Meer info</label>
 detail-private-disallowed-description2 = Deze extensie wordt tijdens privénavigatie niet uitgevoerd. <a data-l10n-name="learn-more">Meer info</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Vereist toegang tot privévensters
-detail-private-required-description = Deze extensie heeft toegang tot uw online-activiteiten tijdens privénavigatie. <label data-l10n-name="detail-private-browsing-learn-more">Meer info</label>
 detail-private-required-description2 = Deze extensie heeft tijdens privénavigatie toegang tot uw online-activiteiten. <a data-l10n-name="learn-more">Meer info</a>
 detail-private-browsing-on =
     .label = Toestaan
@@ -175,15 +154,6 @@ private-browsing-description2 =
     de extensie niet tijdens privénavigatie, en heeft deze daarin geen toegang tot uw online-activiteiten.
     Deze wijziging is aangebracht om uw privénavigatie privé te houden.
     <label data-l10n-name="private-browsing-learn-more">Meer info over het beheren van extensie-instellingen</label>
-extensions-view-discopane =
-    .name = Aanbevelingen
-    .tooltiptext = { extensions-view-discopane.name }
-extensions-view-recent-updates =
-    .name = Recente updates
-    .tooltiptext = { extensions-view-recent-updates.name }
-extensions-view-available-updates =
-    .name = Beschikbare updates
-    .tooltiptext = { extensions-view-available-updates.name }
 addon-category-discover = Aanbevelingen
 addon-category-discover-title =
     .title = Aanbevelingen
@@ -211,24 +181,6 @@ addon-category-recent-updates-title =
 
 ## These are global warnings
 
-extensions-warning-safe-mode-label =
-    .value = Alle add-ons zijn uitgeschakeld door de veilige modus.
-extensions-warning-safe-mode-container =
-    .tooltiptext = { extensions-warning-safe-mode-label.value }
-extensions-warning-check-compatibility-label =
-    .value = Compatibiliteitscontrole voor add-ons is uitgeschakeld. Mogelijk hebt u incompatibele add-ons.
-extensions-warning-check-compatibility-container =
-    .tooltiptext = { extensions-warning-check-compatibility-label.value }
-extensions-warning-check-compatibility-enable =
-    .label = Inschakelen
-    .tooltiptext = Add-on-compatibiliteitscontrole inschakelen
-extensions-warning-update-security-label =
-    .value = Beveiligingscontrole voor add-on-updates is uitgeschakeld. Mogelijk loopt u een beveiligingsrisico door updates.
-extensions-warning-update-security-container =
-    .tooltiptext = { extensions-warning-update-security-label.value }
-extensions-warning-update-security-enable =
-    .label = Inschakelen
-    .tooltiptext = Beveiligingscontrole voor add-on-updates inschakelen
 extensions-warning-safe-mode = Alle add-ons zijn uitgeschakeld door de veilige modus.
 extensions-warning-check-compatibility = Compatibiliteitscontrole voor add-ons is uitgeschakeld. Mogelijk hebt u incompatibele add-ons.
 extensions-warning-check-compatibility-button = Inschakelen
@@ -239,12 +191,6 @@ extensions-warning-update-security-button = Inschakelen
 
 ## Strings connected to add-on updates
 
-extensions-updates-check-for-updates =
-    .label = Controleren op updates
-    .accesskey = C
-extensions-updates-view-updates =
-    .label = Recente updates bekijken
-    .accesskey = R
 addon-updates-check-for-updates = Controleren op updates
     .accesskey = C
 addon-updates-view-updates = Recente updates bekijken
@@ -253,9 +199,6 @@ addon-updates-view-updates = Recente updates bekijken
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
-extensions-updates-update-addons-automatically =
-    .label = Add-ons automatisch bijwerken
-    .accesskey = a
 addon-updates-update-addons-automatically = Add-ons automatisch bijwerken
     .accesskey = a
 
@@ -265,12 +208,6 @@ addon-updates-update-addons-automatically = Add-ons automatisch bijwerken
 ## (which itself is either "Automatically" or "Manually", controlled by the
 ## extensions-updates-update-addons-automatically.label menu item).
 
-extensions-updates-reset-updates-to-automatic =
-    .label = Alle add-ons terugzetten naar automatisch bijwerken
-    .accesskey = t
-extensions-updates-reset-updates-to-manual =
-    .label = Alle add-ons terugzetten naar handmatig bijwerken
-    .accesskey = t
 addon-updates-reset-updates-to-automatic = Alle add-ons terugzetten naar automatisch bijwerken
     .accesskey = t
 addon-updates-reset-updates-to-manual = Alle add-ons terugzetten naar handmatig bijwerken
@@ -278,21 +215,6 @@ addon-updates-reset-updates-to-manual = Alle add-ons terugzetten naar handmatig 
 
 ## Status messages displayed when updating add-ons
 
-extensions-updates-updating =
-    .value = Add-ons worden bijgewerkt
-extensions-updates-installed =
-    .value = Uw add-ons zijn bijgewerkt.
-extensions-updates-downloaded =
-    .value = Uw add-on-updates zijn gedownload.
-extensions-updates-restart =
-    .label = Herstart nu om de installatie te voltooien.
-extensions-updates-none-found =
-    .value = Geen updates gevonden
-extensions-updates-manual-updates-found =
-    .label = Beschikbare updates bekijken
-extensions-updates-update-selected =
-    .label = Updates installeren
-    .tooltiptext = Beschikbare updates in deze lijst installeren
 addon-updates-updating = Add-ons worden bijgewerkt
 addon-updates-installed = Uw add-ons zijn bijgewerkt.
 addon-updates-none-found = Geen updates gevonden
@@ -309,9 +231,6 @@ addon-open-about-debugging = Add-ons debuggen
 
 ## Extension shortcut management
 
-manage-extensions-shortcuts =
-    .label = Extensiesneltoetsen beheren
-    .accesskey = E
 # This is displayed in the page options menu
 addon-manage-extensions-shortcuts = Extensiesneltoetsen beheren
     .accesskey = E
@@ -319,7 +238,6 @@ shortcuts-no-addons = U hebt geen extensies ingeschakeld.
 shortcuts-no-commands = De volgende extensies hebben geen sneltoetsen:
 shortcuts-input =
     .placeholder = Typ een sneltoets
-shortcuts-browserAction = Extensie activeren
 shortcuts-browserAction2 = Werkbalkknop activeren
 shortcuts-pageAction = Pagina-actie activeren
 shortcuts-sidebarAction = De zijbalk in-/uitschakelen
@@ -343,8 +261,6 @@ shortcuts-card-expand-button =
        *[other] Nog { $numberToShow } tonen
     }
 shortcuts-card-collapse-button = Minder tonen
-go-back-button =
-    .tooltiptext = Teruggaan
 header-back-button =
     .title = Terug
 
@@ -392,7 +308,6 @@ remove-addon-button = Verwijderen
 remove-addon-disabled-button = Kan niet worden verwijderd <a data-l10n-name="link">Waarom?</a>
 disable-addon-button = Uitschakelen
 enable-addon-button = Inschakelen
-expand-addon-button = Meer opties
 # This is used for the toggle on the extension card, it's a checkbox and this
 # is always its label.
 extension-enable-addon-button-label =
@@ -405,8 +320,6 @@ preferences-addon-button =
 details-addon-button = Details
 release-notes-addon-button = Uitgaveopmerkingen
 permissions-addon-button = Toestemmingen
-addons-enabled-heading = Ingeschakeld
-addons-disabled-heading = Uitgeschakeld
 extension-enabled-heading = Ingeschakeld
 extension-disabled-heading = Uitgeschakeld
 theme-enabled-heading = Ingeschakeld
@@ -425,6 +338,8 @@ addon-detail-version-label = Versie
 addon-detail-last-updated-label = Laatst bijgewerkt
 addon-detail-homepage-label = Startpagina
 addon-detail-rating-label = Waardering
+# Message for add-ons with a staged pending update.
+install-postponed-message = Deze extensie wordt bijgewerkt wanneer { -brand-short-name } herstart.
 install-postponed-button = Nu bijwerken
 # The average rating that the add-on has received.
 # Variables:
@@ -458,21 +373,12 @@ addon-detail-update-check-label = Controleren op updates
 install-update-button = Bijwerken
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
-addon-badge-private-browsing-allowed =
-    .title = Toegestaan in privévensters
-# This is the tooltip text for the private browsing badge in about:addons. The
-# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = Toegestaan in privévensters
     .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Wanneer toegestaan, heeft de extensie toegang tot uw online-activiteiten tijdens privénavigatie. <a data-l10n-name="learn-more">Meer info</a>
 addon-detail-private-browsing-allow = Toestaan
 addon-detail-private-browsing-disallow = Niet toestaan
-# This is the tooltip text for the recommended badge for an extension in about:addons. The
-# badge is a small icon displayed next to an extension when it is recommended on AMO.
-addon-badge-recommended =
-    .title = Aanbevolen
-    .alt = Aanbevolen
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended2 =

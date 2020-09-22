@@ -71,10 +71,6 @@ manage-messenger-languages-button =
     .accesskey = l
 confirm-messenger-language-change-description = Reiniciar o { -brand-short-name } para aplicar estas alterações
 confirm-messenger-language-change-button = Aplicar e reiniciar
-update-pref-write-failure-title = Falha de escrita
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Não foi possível salvar a preferência. Falha ao escrever no arquivo: { $path }
 update-setting-write-failure-title = Erro ao salvar preferências de atualização
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -218,7 +214,7 @@ search-integration-label =
 config-editor-button =
     .label = Editor de configurações…
     .accesskey = E
-return-receipts-description = Determine como o { -brand-short-name } trata as confirmações de leitura.
+return-receipts-description = Determinar como o { -brand-short-name } trata confirmações de leitura.
 return-receipts-button =
     .label = Confirmações de leitura…
     .accesskey = C
@@ -714,6 +710,3 @@ search-results-empty-message =
        *[other] Desculpe, “<span data-l10n-name="query"></span>” não foi encontrado nas preferências.
     }
 search-results-help-link = Precisa de ajuda? Visite o <a data-l10n-name="url">suporte do { -brand-short-name }</a>
-
-## Preferences UI Search Results
-

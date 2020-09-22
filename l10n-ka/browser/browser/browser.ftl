@@ -318,8 +318,42 @@ enable-devtools-popup-description = F12 მალსახმობის გა
 
 urlbar-default-placeholder =
     .defaultPlaceholder = მოძებნეთ ან შეიყვანეთ მისამართი
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = მოძებნეთ ან შეიყვანეთ მისამართი
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = ინტერნეტში ძიება
+    .aria-label = { $name } ძიება
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = მიუთითეთ საძიებო ფრაზა
+    .aria-label = ძიება { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = მიუთითეთ საძიებო ფრაზა
+    .aria-label = ძიება სანიშნებში
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = მიუთითეთ საძიებო ფრაზა
+    .aria-label = ძიება ისტორიაში
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = მიუთითეთ საძიებო ფრაზა
+    .aria-label = ძიება ჩანართებში
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = მოძებნეთ { $name } საძიებოთი ან შეიყვანეთ მისამართი
 urlbar-remote-control-notification-anchor =
     .tooltiptext = ბრაუზერი იმყოფება დაშორებული მართვის ქვეშ
 urlbar-permissions-granted =

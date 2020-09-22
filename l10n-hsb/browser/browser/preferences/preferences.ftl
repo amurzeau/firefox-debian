@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Jenož hdyž w { -brand-short-name } je blokowanje znatych přesćěhowakow  nastajene
 do-not-track-option-always =
     .label = Přeco
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Nastajenja
-           *[other] Nastajenja
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Nastajenja
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Rozšěrjenje <img data-l10n-name="icon
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Rozšěrjenje <img data-l10n-name="icon"/> { $name } wašu stronu noweho rajtarka wodźi.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Rozšěrjenje, <img data-l10n-name="icon"/> { $name }, tute nastajenje kontroluje.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Rozšěrjenje, <img data-l10n-name="icon"/> { $name }, tute nastajenje wodźi.
@@ -377,13 +374,6 @@ update-application-warning-cross-user-setting = Tute nastajenje so na wšě kont
 update-application-use-service =
     .label = Pozadkowu słužbu za instalowanje aktualizacijow wužiwać
     .accesskey = P
-update-enable-search-update =
-    .label = Pytawy awtomatisce aktualizować
-    .accesskey = k
-update-pref-write-failure-title = Pisanski zmylk
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Nastajenje njeda so składować. Njebě móžno, do dataje pisać: { $path }
 update-setting-write-failure-title = Zmylk při składowanju aktualizowanskich nastajenjow
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -553,7 +543,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Symbolowej lajsće pytanske polo přidać
 search-engine-default-header = Standardna pytawa
-search-engine-default-desc = Wubjerće standardnu pytawu, kotraž ma so w adresowym polu a pytanskim polu wužiwać.
 search-engine-default-desc-2 = To je waša standardna pytawa w adresowej lajsće a pytanskej lajsće. Móžeće je kóždy raz přepinać.
 search-engine-default-private-desc-2 = Wubjerće druhu standardnu pytawu jenož za priwatny modus
 search-separate-default-engine =
@@ -590,6 +579,9 @@ search-restore-default =
 search-remove-engine =
     .label = Wotstronić
     .accesskey = o
+search-add-engine =
+    .label = Přidać
+    .accesskey = P
 search-find-more-link = Dalše pytawy pytać
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -601,7 +593,6 @@ search-keyword-warning-bookmark = Sće klučowe słowo wubrał, kotrež so runje
 
 ## Containers Section
 
-containers-back-link = « Wróćo
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -620,20 +611,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Wotstronić
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Wzmiće swój web sobu
 sync-signedout-description = Synchronizujće swoje zapołožki, historiju, rajtarki, hesła, přidatki a nastajenja mjez wšěmi wašimi gratami.
-sync-signedout-account-title = Zwjazać z: { -fxaccount-brand-name }
-sync-signedout-account-create = Nimaće konto? Započńće
-    .accesskey = k
-sync-signedout-account-signin =
-    .label = Přizjewić…
-    .accesskey = P
 sync-signedout-account-signin2 =
     .label = So pola { -sync-brand-short-name } přizjewić…
     .accesskey = S
@@ -647,16 +629,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Firefox za <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> abo <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> sćahnyć, zo byšće ze swojim mobilnym gratom synchronizował.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Profilowy wobraz změnić
-sync-disconnect =
-    .label = Zwisk dźělić…
-    .accesskey = Z
 sync-sign-out =
     .label = Wotzjewić…
     .accesskey = t
@@ -673,8 +649,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Přizjewić
     .accesskey = z
-sync-signedin-settings-header = Nastajenja synchronizacije
-sync-signedin-settings-desc = Wubjerće, štož ma so z { -brand-short-name } na wašich gratach synchronizować.
 
 ## Sync section - enabling or disabling sync.
 
@@ -727,10 +701,6 @@ sync-engine-tabs =
     .label = Wotewrjene rajtarki
     .tooltiptext = Lisćina ze wšěm, štož je wočinjene na wšěch synchronizowanych gratach
     .accesskey = r
-sync-engine-logins =
-    .label = Přizjewjenja
-    .tooltiptext = Wužiwarske mjena a hesła, kotrež sće składował
-    .accesskey = P
 sync-engine-logins-passwords =
     .label = Přizjewjenja a hesła
     .tooltiptext = Wužiwarske mjena a hesła, kotrež sće składował
@@ -769,18 +739,10 @@ sync-device-name-save =
     .label = Składować
     .accesskey = k
 sync-connect-another-device = Z druhim gratom zwjazać
-sync-manage-devices = Graty rjadować
-sync-fxa-begin-pairing = Grat zwjazać
-sync-tos-link = Słužbne wuměnjenja
-sync-fxa-privacy-notice = Zdźělenka priwatnosće
 
 ## Privacy Section
 
 privacy-header = Priwatnosć wobhladowaka
-
-## Privacy Section - Forms
-
-logins-header = Přizjewjenja a hesła
 
 ## Privacy Section - Logins and Passwords
 
@@ -914,8 +876,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Zablokowany typ
     .accesskey = Z
-sitedata-option-block-trackers =
-    .label = Přesćěhowaki třećich
 sitedata-option-block-cross-site-trackers =
     .label = Přesćěhowaki mjez sydłami
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -961,27 +921,9 @@ addressbar-suggestions-settings = Nastajenja za namjety pytawy změnić
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Blokowanje wobsaha
-content-blocking-section-description = Škitajće swoju priwatnosć, mjeztym zo přehladujeće. Blokujće njewidźomny wobsah, kotryž sydła slěduje, kotrež wopytujeće, a profil wo was twori. Hdyž tajki wobsah blokujeće, dadźa so strony snano spěšnišo začitać.
 content-blocking-enhanced-tracking-protection = Polěpšeny slědowanski škit
 content-blocking-section-top-level-description = Přesćěhowaki wam online slěduja, zo bychu informacije wo wašich přehladowanskich zwučenosćach a zajimach hromadźili. { -brand-short-name } wjele z tutych přesćěhowakow a druhe złóstne skripty blokuje.
 content-blocking-learn-more = Dalše informacije
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standard
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Striktny
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Swójski
-    .accesskey = S
-content-blocking-standard-desc = Wurunany za škit a wukon. Dowoluje někotre přesćěhowaki, zo bychu websydła porjadnje fungowali.
-content-blocking-strict-description = Sylniši škit, móže zawinować, zo někotre sydła hižo njefunguja.
-content-blocking-custom-desc = Wubjerće, štož chceće blokować.
-content-blocking-private-trackers = Znate přeścěhowaki jenož w priwatnych woknach
-content-blocking-third-party-cookies = Slědowace placki třećich
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1000,7 +942,7 @@ enhanced-tracking-protection-setting-custom =
 ##
 
 content-blocking-etp-standard-desc = Wuwaženy za škit a wukon. Strony so normalnje začitaja.
-content-blocking-etp-strict-desc = Mócniši škit, ale móže zawinować, zo někotre sydła abo wobsa hižo njefunguja.
+content-blocking-etp-strict-desc = Mócniši škit, ale móže zawinować, zo někotre sydła abo wobsah hižo njefunguja.
 content-blocking-etp-custom-desc = Wubjerće, kotre přesćěhowaki a skripty maja so blokować.
 content-blocking-private-windows = Slědowacy škit w priwatnych woknach
 content-blocking-cross-site-tracking-cookies = Slědowace placki mjez sydłami
@@ -1008,23 +950,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Wjacore sydła slěd
 content-blocking-social-media-trackers = Přesćěhowaki socialnych medijow
 content-blocking-all-cookies = Wšě placki
 content-blocking-unvisited-cookies = Placki z njewopytanych sydłow
-content-blocking-all-windows-trackers = Znate přesćěhowaki we wšěch woknach
 content-blocking-all-windows-tracking-content = Slědowacy wobsah we wšěch woknach
 content-blocking-all-third-party-cookies = Wšě placki třećich
 content-blocking-cryptominers = Kryptokopanje
 content-blocking-fingerprinters = Porstowe wotćišće
 content-blocking-warning-title = Kedźbu!
-content-blocking-warning-description = Blokowanje wobsaha móže zawinować, zo někotre websydła hižo njefunguja. Je lochko, blokowanje za sydła znjemóžnić, kotrymž dowěrjeće.
-content-blocking-learn-how = Zhońće kak
 content-blocking-and-isolating-etp-warning-description = Blokowanje přesćěhowakow a izolowanje placko móhłoj funkcionalnosć někotrych websydłow wobwliwować. Začitajće stronu z přesćěhowakami znowa, zo byšće wšón wobsah začitał.
 content-blocking-warning-learn-how = Zhońće kak
 content-blocking-reload-description = Dyrbiće swoje rajtarki znowa začitać, zo byšće tute změny nałožił.
 content-blocking-reload-tabs-button =
     .label = Wšě rajtarki znowa začitać
     .accesskey = W
-content-blocking-trackers-label =
-    .label = Přesćěhowaki
-    .accesskey = P
 content-blocking-tracking-content-label =
     .label = Slědowacy wobsah
     .accesskey = S
@@ -1083,12 +1019,6 @@ permissions-notification-link = Dalše informacije
 permissions-notification-pause =
     .label = Zdźělenja zastajić, doniž so { -brand-short-name } znowa njestartuje
     .accesskey = z
-permissions-block-autoplay-media2 =
-    .label = Websydła při awtomatiskim wothrawanju zynka haćić
-    .accesskey = b
-permissions-block-autoplay-media-exceptions =
-    .label = Wuwzaća…
-    .accesskey = u
 permissions-autoplay = Awtomatiske wothraće
 permissions-autoplay-settings =
     .label = Nastajenja…

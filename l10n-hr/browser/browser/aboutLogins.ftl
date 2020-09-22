@@ -16,7 +16,7 @@ login-app-promo-apple =
 login-filter =
     .placeholder = Pretraži prijave
 create-login-button = Stvori novu prijavu
-fxaccounts-sign-in-text = Dohvati svoje lozinke na drugim uređajima
+fxaccounts-sign-in-text = Preuzmi lozinke na drugim uređajima
 fxaccounts-sign-in-button = Prijavi se u { -sync-brand-short-name }
 fxaccounts-avatar-button =
     .title = Upravljaj računom
@@ -55,7 +55,7 @@ about-logins-login-list-alerts-option = Upozorenja
 login-list-last-changed-option = Zadnja promjena
 login-list-last-used-option = Zadnja upotreba
 login-list-intro-title = Nema prijava
-login-list-intro-description = Kada spremite lozinku u { -brand-product-name }, pojavit će se ovdje.
+login-list-intro-description = Kad spremaš lozinku u { -brand-product-name }u, ona će se pojaviti ovdje.
 about-logins-login-list-empty-search-title = Nema prijava
 about-logins-login-list-empty-search-description = Nema rezultata koji odgovaraju tvojoj pretrazi.
 login-list-item-title-new-login = Nova prijava
@@ -71,9 +71,9 @@ about-logins-list-item-vulnerable-password-icon =
 login-intro-heading = Tražiš svoje spremljene prijave? Postavi { -sync-brand-short-name }.
 about-logins-login-intro-heading-logged-out = Tražiš svoje spremljene prijave? Postavi { -sync-brand-short-name } ili ih uvezi.
 about-logins-login-intro-heading-logged-in = Nema sinkroniziranih prijava.
-login-intro-description = Ako svoje prijave imaš spremljene na { -brand-product-name } na jednom drugom uređaju, evo kako ih možeš preuzeti ovamo:
+login-intro-description = Ako su tvoje prijave spremljene u { -brand-product-name }u na jednom drugom uređaju, evo kako ih ovdje možeš preuzeti:
 login-intro-instruction-fxa = Otvori račun ili se prijavi na svoj { -fxaccount-brand-name }, na uređaju gdje su tvoje prijave spremljene
-login-intro-instruction-fxa-settings = Provjeri, je li odabran potvrdni okvir prijave u { -sync-brand-short-name } postavkama
+login-intro-instruction-fxa-settings = Provjeri, je li potvrdni okvir prijave označen u { -sync-brand-short-name } postavkama
 about-logins-intro-instruction-help = Posjeti <a data-l10n-name="help-link">{ -lockwise-brand-short-name } podršku</a> za dodatnu pomoć
 about-logins-intro-import = Ako su tvoje prijave spremljene u jednom drugom pregledniku, možeš ih <a data-l10n-name="import-link"> uvesti u { -lockwise-brand-short-name } </a>
 about-logins-intro-import2 = Ako su tvoje prijave spremljene izvan { -brand-product-name }a, možeš ih <a data-l10n-name="import-browser-link">uvesti iz jednog drugog preglednika</a> ili <a data-l10n-name="import-file-link">iz jedne datoteke</a>
@@ -126,15 +126,15 @@ about-logins-copy-password-os-auth-dialog-message-win = Za kopiranje tvoje lozin
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = kopiraj spremljenu lozinku
+
+## Master Password notification
+
+master-password-notification-message = Za prikaz spremljenih prijava i lozinki, upiši glavnu lozinku
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Za izvoz tvojih prijava, upiši svoje podatke za prijavu na Windows. To pomaže zaštiti sigurnost tvojih računa.
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = izvezi spremljene prijave i lozinke
-
-## Master Password notification
-
-master-password-notification-message = Za prikaz spremljenih prijava i lozinki, upiši glavnu lozinku
 
 ## Primary Password notification
 

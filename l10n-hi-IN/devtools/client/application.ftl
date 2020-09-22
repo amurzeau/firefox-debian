@@ -24,10 +24,6 @@ serviceworker-worker-unregister = अपंजीकृत
 serviceworker-worker-debug = दोषशोधन करे
     .title = केवल निरंतर सेवा कार्यकर्ताओं का ही दोषशोधन किया जा सकता है
 
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = शुरू करें
-
 # Text displayed next to the URL for the source of the service worker (e-g. "Source my/path/to/worker-js")
 serviceworker-worker-source = स्रोत
 
@@ -44,9 +40,8 @@ serviceworker-worker-status-running = क्रियाशील
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = रुकी हुई
 
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = पंजीकृत किया जा रहा है
+# Link will open https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
+serviceworker-empty-intro-link = अधिक जानें
 
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = त्रुटियां तथा चेतावनीयां

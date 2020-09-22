@@ -51,9 +51,24 @@ about-debugging-network-locations-remove-button = తొలగించు
 
 # Runtime Page strings
 
+# Below are the titles for the various categories of debug targets that can be found
+# on "runtime" pages of about:debugging.
+# Title of the temporary extensions category (only available for "This Firefox" runtime).
+about-debugging-runtime-temporary-extensions =
+    .name = తాత్కాలిక పొడగింతలు
+# Title of the extensions category.
+about-debugging-runtime-extensions =
+    .name = పొడగింతలు
 # Title of the tabs category.
 about-debugging-runtime-tabs =
     .name = ట్యాబులు
+# Title of the service workers category.
+about-debugging-runtime-service-workers =
+    .name = సర్వీస్ వర్కర్లు
+# Displayed for runtime info in runtime pages.
+# { $name } is brand name such as "Firefox Nightly"
+# { $version } is version such as "64.0a1"
+about-debugging-runtime-name = { $name } ({ $version })
 
 # Debug Targets strings
 

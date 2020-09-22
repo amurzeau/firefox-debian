@@ -318,8 +318,38 @@ enable-devtools-popup-description = Az F12 gyorsbillentyű használatához elős
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Keresés vagy cím
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Keresés vagy cím
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Keresés a weben
+    .aria-label = Keresés a(z) { $name } keresővel
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Adja meg a keresési kifejezéseket
+    .aria-label = Keresés a(z) { $name } keresővel
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Adja meg a keresési kifejezéseket
+    .aria-label = Könyvjelzők keresése
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Adja meg a keresési kifejezéseket
+    .aria-label = Előzmények keresése
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Adja meg a keresési kifejezéseket
+    .aria-label = Lapok keresése
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =

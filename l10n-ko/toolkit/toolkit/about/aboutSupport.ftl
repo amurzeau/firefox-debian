@@ -77,6 +77,9 @@ show-dir-label =
         [windows] 폴더 열기
        *[other] 디렉터리 열기
     }
+environment-variables-title = 환경 변수
+environment-variables-name = Name
+environment-variables-value = 값
 experimental-features-title = 실험적인 기능
 experimental-features-name = 이름
 experimental-features-value = 값
@@ -104,8 +107,6 @@ graphics-desktop-environment = 데스크톱 환경
 place-database-title = 위치 데이터베이스
 place-database-integrity = 무결성
 place-database-verify-integrity = 무결성 확인
-js-title = JavaScript
-js-incremental-gc = 인크리멘탈 GC
 a11y-title = 접근성
 a11y-activated = 활성화
 a11y-force-disabled = 접근성 끄기
@@ -123,9 +124,9 @@ sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = 프로세스 타입
 sandbox-sys-call-number = 시스템 콜
 sandbox-sys-call-args = 인자
-safe-mode-title = 안전 모드 시도
+safe-mode-title = 안전 모드 사용해 보기
 restart-in-safe-mode-label = 부가 기능을 끄고 다시 시작…
-clear-startup-cache-title = 시작 캐시 지우기 시도
+clear-startup-cache-title = 시작 캐시 지워 보기
 clear-startup-cache-label = 시작 캐시 지우기…
 startup-cache-dialog-title = 시작 캐시 지우기
 startup-cache-dialog-body = 시작 캐시를 지우려면 { -brand-short-name }를 다시 시작하세요. 설정이 변경되거나 { -brand-short-name }에 추가한 확장 기능이 제거되지는 않습니다.
@@ -135,7 +136,6 @@ restart-button-label = 다시 시작
 
 audio-backend = 오디오 백엔드
 max-audio-channels = 최대 채널
-channel-layout = 기본 채널 레이아웃
 sample-rate = 기본 샘플 비율
 roundtrip-latency = 왕복 지연 시간 (표준 편차)
 media-title = 미디어
@@ -259,7 +259,6 @@ support-blocklisted-bug = 알려진 문제로 인해 차단됨: <a data-l10n-nam
 unknown-failure = 차단됨; 실패 코드 { $failureCode }
 d3d11layers-crash-guard = D3D11 컴포지터
 d3d11video-crash-guard = D3D11 동영상 디코더
-d3d9video-crash-buard = D3D9 동영상 디코더
 d3d9video-crash-guard = D3D9 동영상 디코더
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX 비디오 디코더

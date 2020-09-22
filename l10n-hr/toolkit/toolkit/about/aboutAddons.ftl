@@ -10,8 +10,6 @@ search-header =
     .searchbuttonlabel = Traži
 search-header-shortcut =
     .key = f
-loading-label =
-    .value = Učitavanje…
 list-empty-installed =
     .value = Nemate instaliran nijedan dodatak ove vrste
 list-empty-available-updates =
@@ -22,9 +20,6 @@ list-empty-find-updates =
     .label = Provjeri dostupnost dopuna
 list-empty-button =
     .label = Saznaj više o dodacima
-install-addon-from-file =
-    .label = Instaliraj dodatak iz datoteke…
-    .accesskey = I
 help-button = Podrška za dodatke
 sidebar-help-button-title =
     .title = Podrška za dodatke
@@ -33,8 +28,6 @@ preferences =
         [windows] { -brand-short-name } Mogućnosti
        *[other] { -brand-short-name } Postavke
     }
-tools-menu =
-    .tooltiptext = Alati za sve dodatke
 sidebar-preferences-button-title =
     .title =
         { PLATFORM() ->
@@ -45,9 +38,6 @@ show-unsigned-extensions-button =
     .label = Neka proširenja nisu mogla biti verificirana
 show-all-extensions-button =
     .label = Prikaži sva proširenja
-debug-addons =
-    .label = Otklanjanje grešaka u dodacima
-    .accesskey = g
 cmd-show-details =
     .label = Prikaži više informacija
     .accesskey = f
@@ -78,12 +68,6 @@ cmd-contribute =
     .label = Doprinesite
     .accesskey = D
     .tooltiptext = Doprinesite razvoju ovog dodatka
-discover-title = Što su dodaci?
-discover-description =
-    Dodaci su programi, koji omogućuju prilagođavanje { -brand-short-name }a s dodatnim
-    funkcijama ili stilovima. Za individualiziranje { -brand-short-name }a Isprobaj bočnu traku,
-    obavještavanje o vremenskoj prognozi ili motiv.
-discover-footer = Kada ste spojeni na Internet, u ovom će prozoru biti istaknute neke od najboljih i najpopularnijih dodataka koje možete isprobati.
 detail-version =
     .label = Verzija
 detail-last-updated =
@@ -105,15 +89,12 @@ detail-update-manual =
     .tooltiptext = Nemoj automatski instalirati dopune
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Pokreni u privatnim prozorima
-detail-private-browsing-description2 = Kad je dopušteno, dodatak će imati pristup tvojim aktivnostima dok si u privatnom pretraživanju. <label data-l10n-name="detail-private-browsing-learn-more">Saznaj više</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = Nije dopušteno u privatnim prozorima
-detail-private-disallowed-description = Ovaj dodatak se ne pokreće dok si u privatnom pretraživanju. <label data-l10n-name="detail-private-browsing-learn-more">Saznaj više</label>
 detail-private-disallowed-description2 = Ovaj dodatak se ne pokreće tijekom privatnog pregledavanja. <a data-l10n-name="learn-more">Saznaj više</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Zahtjeva pristup u privatnim prozorima
-detail-private-required-description = Ovaj dodatak ima pristup tvojoj aktivnosti dok si u privatnom pretraživanju. <label data-l10n-name="detail-private-browsing-learn-more">Saznaj više</label>
 detail-private-required-description2 = Ovo proširenje ima pristup tvojim internetskim aktivnostima tijekom privatnog pregledavanja. <a data-l10n-name="learn-more">Saznaj više</a>
 detail-private-browsing-on =
     .label = Dozvoli
@@ -164,15 +145,6 @@ legacy-extensions =
     .value = Zastarjeli dodaci
 legacy-extensions-description = Ovi dodaci ne zadovoljavaju trenutačne { -brand-short-name } standarde te se isključeni. <label data-l10n-name="legacy-learn-more">Saznaj o promjenama u dodacima</label>
 private-browsing-description2 = { -brand-short-name } mijenja način na koji dodaci rade u privatnom pretraživanju. Svaki novi dodatak koji dodaš u { -brand-short-name } neće automatski raditi u privatnom pretraživanju. Ukoliko ne dozvoliš u postavkama, dodatak neće raditi dok koristiš privatno pretraživanje i neće imati pristup tvojim aktivnostima. Napravili smo ovu izmjenu kako bismo zadržali tvoje pretraživanje privatnim. <label data-l10n-name="private-browsing-learn-more">Saznaj kako upravljati postavkama dodataka</label>
-extensions-view-discopane =
-    .name = Preporuke
-    .tooltiptext = { extensions-view-discopane.name }
-extensions-view-recent-updates =
-    .name = Nedavne dopune
-    .tooltiptext = { extensions-view-recent-updates.name }
-extensions-view-available-updates =
-    .name = Dostupne dopune
-    .tooltiptext = { extensions-view-available-updates.name }
 addon-category-discover = Preporuke
 addon-category-discover-title =
     .title = Preporuke
@@ -200,24 +172,6 @@ addon-category-recent-updates-title =
 
 ## These are global warnings
 
-extensions-warning-safe-mode-label =
-    .value = Siguran način rada isključio je sve dodatke.
-extensions-warning-safe-mode-container =
-    .tooltiptext = { extensions-warning-safe-mode-label.value }
-extensions-warning-check-compatibility-label =
-    .value = Provjera kompatibilnosti dodataka je isključena. Možda imaš nekompatibilne dodatke.
-extensions-warning-check-compatibility-container =
-    .tooltiptext = { extensions-warning-check-compatibility-label.value }
-extensions-warning-check-compatibility-enable =
-    .label = Omogući
-    .tooltiptext = Omogući provjeru kompatibilnosti dodataka
-extensions-warning-update-security-label =
-    .value = Provjera dostupnosti sigurnosnih nadogradnji za dodatke je isključena. Nadogradnje mogu naškoditi tvojoj sigurnosti.
-extensions-warning-update-security-container =
-    .tooltiptext = { extensions-warning-update-security-label.value }
-extensions-warning-update-security-enable =
-    .label = Omogući
-    .tooltiptext = Omogući provjeru dostupnosti sigurnosnih dopuna za dodatke
 extensions-warning-safe-mode = Siguran način rada isključio je sve dodatke.
 extensions-warning-check-compatibility = Provjera kompatibilnosti dodataka je isključena. Možda imaš nekompatibilne dodatke.
 extensions-warning-check-compatibility-button = Omogući
@@ -228,12 +182,6 @@ extensions-warning-update-security-button = Omogući
 
 ## Strings connected to add-on updates
 
-extensions-updates-check-for-updates =
-    .label = Provjeri dostupnost dopuna
-    .accesskey = d
-extensions-updates-view-updates =
-    .label = Prikaži nedavne dopune
-    .accesskey = v
 addon-updates-check-for-updates = Provjeri dostupnost dopuna
     .accesskey = d
 addon-updates-view-updates = Prikaži nedavne dopune
@@ -242,9 +190,6 @@ addon-updates-view-updates = Prikaži nedavne dopune
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
-extensions-updates-update-addons-automatically =
-    .label = Automatski aktualiziraj dodatke
-    .accesskey = A
 addon-updates-update-addons-automatically = Automatski aktualiziraj dodatke
     .accesskey = A
 
@@ -254,12 +199,6 @@ addon-updates-update-addons-automatically = Automatski aktualiziraj dodatke
 ## (which itself is either "Automatically" or "Manually", controlled by the
 ## extensions-updates-update-addons-automatically.label menu item).
 
-extensions-updates-reset-updates-to-automatic =
-    .label = Postavi automatsko aktualiziranje za sve dodatke
-    .accesskey = r
-extensions-updates-reset-updates-to-manual =
-    .label = Postavi ručno aktualiziranje za sve dodatke
-    .accesskey = r
 addon-updates-reset-updates-to-automatic = Postavi automatsko aktualiziranje za sve dodatke
     .accesskey = r
 addon-updates-reset-updates-to-manual = Postavi ručno aktualiziranje za sve dodatke
@@ -267,21 +206,6 @@ addon-updates-reset-updates-to-manual = Postavi ručno aktualiziranje za sve dod
 
 ## Status messages displayed when updating add-ons
 
-extensions-updates-updating =
-    .value = Aktualiziranje dodataka
-extensions-updates-installed =
-    .value = Tvoji su dodaci aktualizirani.
-extensions-updates-downloaded =
-    .value = Dopune za tvoje dodatke su preuzete.
-extensions-updates-restart =
-    .label = Ponovo pokreni odmah za dovršetak instalacije
-extensions-updates-none-found =
-    .value = Nema dopuna
-extensions-updates-manual-updates-found =
-    .label = Prikaži dostupne dopune
-extensions-updates-update-selected =
-    .label = Instaliraj dopune
-    .tooltiptext = Instaliraj dostupne dopune s ovog popisa
 addon-updates-updating = Aktualiziranje dodataka
 addon-updates-installed = Tvoji su dodaci aktualizirani.
 addon-updates-none-found = Nema dopuna
@@ -298,17 +222,13 @@ addon-open-about-debugging = Otklanjanje grešaka u dodacima
 
 ## Extension shortcut management
 
-manage-extensions-shortcuts =
-    .label = Upravljaj tipkovničkim prečacima dodatka
-    .accesskey = U
 # This is displayed in the page options menu
 addon-manage-extensions-shortcuts = Upravljaj tipkovničkim prečacima dodatka
     .accesskey = U
-shortcuts-no-addons = Nemaš uključenih proširenja.
+shortcuts-no-addons = Nemaš aktiviranih proširenja.
 shortcuts-no-commands = Sljedeći dodaci nemaju prečace:
 shortcuts-input =
     .placeholder = Upišite prečac
-shortcuts-browserAction = Aktiviraj dodatak
 shortcuts-pageAction = Aktiviraj radnju stranice
 shortcuts-sidebarAction = Prikaži/sakrij bočnu traku
 shortcuts-modifier-mac = Uključi Ctrl, Alt ili ⌘
@@ -333,8 +253,6 @@ shortcuts-card-expand-button =
        *[other] Prikaži još { $numberToShow }
     }
 shortcuts-card-collapse-button = Prikaži manje
-go-back-button =
-    .tooltiptext = Idi natrag
 header-back-button =
     .title = Idi natrag
 
@@ -382,7 +300,6 @@ remove-addon-button = Ukloni
 remove-addon-disabled-button = Ne može se ukloniti. <a data-l10n-name="link">Zašto?</a>
 disable-addon-button = Onemogući
 enable-addon-button = Omogući
-expand-addon-button = Više mogućnosti
 # This is used for the toggle on the extension card, it's a checkbox and this
 # is always its label.
 extension-enable-addon-button-label =
@@ -395,17 +312,15 @@ preferences-addon-button =
 details-addon-button = Detalji
 release-notes-addon-button = Napomene o izdanju
 permissions-addon-button = Dozvole
-addons-enabled-heading = Omogućeno
-addons-disabled-heading = Onemogućeno
-extension-enabled-heading = Omogućeno
+extension-enabled-heading = Aktivirano
 extension-disabled-heading = Onemogućeno
-theme-enabled-heading = Omogućeno
+theme-enabled-heading = Aktivirano
 theme-disabled-heading = Onemogućeno
-plugin-enabled-heading = Omogućeno
+plugin-enabled-heading = Aktivirano
 plugin-disabled-heading = Onemogućeno
-dictionary-enabled-heading = Omogućeno
+dictionary-enabled-heading = Aktivirano
 dictionary-disabled-heading = Onemogućeno
-locale-enabled-heading = Omogućeno
+locale-enabled-heading = Aktivirano
 locale-disabled-heading = Onemogućeno
 ask-to-activate-button = Pitaj prilikom aktivacije
 always-activate-button = Uvijek aktiviraj
@@ -448,21 +363,12 @@ addon-detail-update-check-label = Provjeri dostupnost dopuna
 install-update-button = Aktualiziraj
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
-addon-badge-private-browsing-allowed =
-    .title = Dopušteno u privatnim prozorima
-# This is the tooltip text for the private browsing badge in about:addons. The
-# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = Dopušteno u privatnim prozorima
     .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Kad je dopušteno, dodatak će imati pristup tvojim aktivnostima dok si u privatnom pretraživanju. <a data-l10n-name="learn-more">Saznaj više</a>
 addon-detail-private-browsing-allow = Dozvoli
 addon-detail-private-browsing-disallow = Nemoj dozvoliti
-# This is the tooltip text for the recommended badge for an extension in about:addons. The
-# badge is a small icon displayed next to an extension when it is recommended on AMO.
-addon-badge-recommended =
-    .title = Preporučeno
-    .alt = Preporučeno
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.
 addon-badge-recommended2 =

@@ -97,6 +97,48 @@ browser-data-cookies-checkbox =
     .label = Mga cookie
 browser-data-cookies-label =
     .value = Cookies
+browser-data-history-checkbox =
+    .label =
+        { $browser ->
+            [firefox] Kasaysayan at mga Bookmark
+           *[other] Kasaysayan
+        }
+browser-data-history-label =
+    .value =
+        { $browser ->
+            [firefox] Kasaysayan at mga Bookmark
+           *[other] Kasaysayan
+        }
+browser-data-formdata-checkbox =
+    .label = Naka-save na Form History
+browser-data-formdata-label =
+    .value = Naka-save na Form History
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-checkbox =
+    .label = Naka-save na mga Login at Password
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-label =
+    .value = Naka-save na mga Login at Password
+browser-data-bookmarks-checkbox =
+    .label =
+        { $browser ->
+            [ie] Mga Favorite
+            [edge] Mga Favorite
+           *[other] Mga Bookmark
+        }
+browser-data-bookmarks-label =
+    .value =
+        { $browser ->
+            [ie] Mga Favorite
+            [edge] Mga Favorite
+           *[other] Mga Bookmark
+        }
+browser-data-otherdata-checkbox =
+    .label = Iba Pang Data
+browser-data-otherdata-label =
+    .label = Iba Pang Data
 browser-data-session-checkbox =
     .label = Mga Window at mga tab
 browser-data-session-label =

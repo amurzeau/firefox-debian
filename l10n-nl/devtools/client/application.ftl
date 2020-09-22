@@ -24,9 +24,6 @@ serviceworker-worker-unregister = Registratie opheffen
 # displayed when the link is disabled.
 serviceworker-worker-debug = Debuggen
     .title = Debugging is alleen mogelijk bij actieve service workers
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = Starten
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
 serviceworker-worker-debug-forbidden = Debuggen
@@ -35,6 +32,9 @@ serviceworker-worker-debug-forbidden = Debuggen
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = Starten
     .title = Service workers kunnen alleen gestart worden als multi e10s is uitgeschakeld.
+# Alt text for the image icon displayed inside a debug link for a service worker.
+serviceworker-worker-inspect-icon =
+    .alt = Inspecteren
 # Text for the start link displayed for a registered but not running Service Worker.
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start3 = Starten
@@ -54,9 +54,6 @@ serviceworker-worker-status = Status
 serviceworker-worker-status-running = Actief
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = Gestopt
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = Registreren
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = U dient een Service Worker te registreren om deze hier te inspecteren. <a>Meer info</a>

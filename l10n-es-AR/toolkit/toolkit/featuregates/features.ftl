@@ -4,23 +4,9 @@
 
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
-experimental-features-css-masonry =
-    .label = Diseño de mampostería CSS
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
 experimental-features-css-masonry2 =
     .label = CSS: diseño de mampostería
 experimental-features-css-masonry-description = Habilita la compatibilidad con la función de diseño de mampostería CSS experimental. Consulte el <a data-l10n-name="explainer"> explicador </a> para obtener una descripción de alto nivel de la función. Para enviar comentarios, comente en <a data-l10n-name="w3c-issue"> este problema de GitHub </a> o <a data-l10n-name="bug"> este error </a>.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-web-gpu =
-    .label = WebGPU
-experimental-features-web-gpu-description = API experimental para gráficos e informática en la web
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-avif =
-    .label = AVIF
-experimental-features-avif-description = Ayuda experimental para AVIF: formato de archivo de imagen AV1
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-web-gpu2 =
@@ -55,7 +41,7 @@ experimental-features-web-api-beforeinput =
     .label = Web API: beforeinput Event
 # The terms "beforeinput", "input", "textarea", and "contenteditable" are technical terms
 # and shouldn't be translated.
-experimental-features-web-api-beforeinput-description = El evento global <a data-l10n-name="mdn-beforeinput"> beforeinput </a> se activa en un <a data-l10n-name="mdn-input"> & lt; input & gt; </a> y < un elemento data-l10n-name = "mdn-textarea"> & lt; textarea & gt; </a>, o cualquier elemento cuyo atributo <a data-l10n-name="mdn-contenteditable"> contenteditable </a> esté habilitado, inmediatamente antes de que cambie el valor del elemento. El evento permite que las aplicaciones web anulen el comportamiento predeterminado del navegador para la interacción del usuario, por ejemplo, las aplicaciones web pueden cancelar la entrada del usuario solo para caracteres específicos o pueden modificar pegar texto con estilo solo con estilos aprobados.
+experimental-features-web-api-beforeinput-description = El evento global <a data-l10n-name="mdn-beforeinput">beforeinput</a> se activa en elementos <a data-l10n-name="mdn-input">&lt;input&gt;</a> y <a data-l10n-name="mdn-textarea">&lt;textarea&gt;</a> o cualquier elemento cuyo atributo <a data-l10n-name="mdn-contenteditable">contenteditable</a> esté habilitado, inmediatamente antes de que cambie el valor del elemento. El evento permite que las aplicaciones web anulen el comportamiento predeterminado del navegador para la interacción del usuario, por ejemplo las aplicaciones web pueden cancelar la entrada del usuario solo para caracteres específicos o pueden modificar el pegado de texto con estilo solo con estilos aprobados.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-css-constructable-stylesheets =
@@ -68,7 +54,7 @@ experimental-features-media-session-api =
 experimental-features-media-session-api-description = La implementación completa de { -brand-short-name } de Media Session API es actualmente experimental. Esta API se usa para personalizar el manejo de notificaciones relacionadas con los medios, para manejar eventos y datos útiles para presentar una interface de usuario para manejar reproducción de medios y para obtener metadatos de los archivos. Ver <a data-l10n-name="bugzilla">bug 1112032</a> para más detalles.
 experimental-features-devtools-color-scheme-simulation =
     .label = Herramientas para desarrolladores: simulación de esquemas de color
-experimental-features-devtools-color-scheme-simulation-description = Agrega una opción para simular diferentes esquemas de color que le permite probar <a data-l10n-name="mdn-preferscolorscheme"> @prefers-color-scheme </a> consultas de medios. El uso de esta función permite que su hoja de estilo responda si el usuario prefiere una interfaz de usuario clara u oscura. Estole permite probar su código sin tener que cambiar la configuración de su navegador (o sistema operativo, si el navegador sigue una configuración de esquema de color para todo el sistema). Consulte <a data-l10n-name="bugzilla1"> bug 1550804 </a> y <a data-l10n-name="bugzilla2"> bug 1137699 </a> para obtener más detalles.
+experimental-features-devtools-color-scheme-simulation-description = Agrega una opción para simular diferentes esquemas de color que le permite probar <a data-l10n-name="mdn-preferscolorscheme"> @prefers-color-scheme </a> consultas de medios. El uso de esta función permite que su hoja de estilo responda si el usuario prefiere una interfaz de usuario clara u oscura. Esto le permite probar su código sin tener que cambiar la configuración de su navegador (o sistema operativo, si el navegador sigue una configuración de esquema de color para todo el sistema). Ver <a data-l10n-name="bugzilla1"> bug 1550804 </a> y <a data-l10n-name="bugzilla2"> bug 1137699 </a> para obtener más detalles.
 experimental-features-devtools-execution-context-selector =
     .label = Herramientas de desarrollo: Selector de contexto de ejecución
 experimental-features-devtools-execution-context-selector-description = Esta función muestra un botón en la línea de comando de la consola que le permite cambiar el contexto en el que se ejecutará la expresión que ingrese. Consulte <a data-l10n-name="bugzilla1"> bug 1605154 </a> y <a data-l10n-name="bugzilla2"> bug 1605153 </a> para obtener más detalles.

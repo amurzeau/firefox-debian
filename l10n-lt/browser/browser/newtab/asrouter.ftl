@@ -134,7 +134,7 @@ cfr-whatsnew-searchbar-icon-alt-text = Didinamojo stiklo piktograma
 ## Picture-in-Picture
 
 cfr-whatsnew-pip-header = Žiūrėkite vaizdo įrašus naršydami
-cfr-whatsnew-pip-body = Vaizdo–vaizde veiksena leidžia žiūrėti vaizdo įrašą atskirame lange, kurį galite matyti net vaikščiodami tarp kortelių.
+cfr-whatsnew-pip-body = Vaizdo-vaizde veiksena leidžia žiūrėti vaizdo įrašą atskirame lange, kurį galite matyti net vaikščiodami tarp kortelių.
 cfr-whatsnew-pip-cta = Sužinoti daugiau
 
 ## Permission Prompt
@@ -236,9 +236,9 @@ cfr-whatsnew-passwords-icon-alt = Pažeidžiamo slaptažodžio rakto piktograma
 
 ## Picture-in-Picture fullscreen message
 
-cfr-whatsnew-pip-fullscreen-header = Žiūrėkite vaizdą vaizde visame ekrane
+cfr-whatsnew-pip-fullscreen-header = Žiūrėkite vaizdą-vaizde visame ekrane
 cfr-whatsnew-pip-fullscreen-body = Kai perkeliate vaizdo įrašą į atskirą langą, galite spustelėti dukart ant jo, kad pereitumėte į viso ekrano veikseną.
-cfr-whatsnew-pip-fullscreen-icon-alt = Vaizdo vaizde piktograma
+cfr-whatsnew-pip-fullscreen-icon-alt = Vaizdo-vaizde piktograma
 
 ## Protections Dashboard message
 

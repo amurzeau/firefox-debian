@@ -8,11 +8,10 @@ password-quality-meter = Pangsukat ng kalidad ng password
 
 change-password-window =
     .title = Palitan ang Master Password
-
 # Variables:
 # $tokenName (String) - Security device of the change password dialog
 change-password-token = Security Device: { $tokenName }
-change-password-old = Kasalukuyang na password:
+change-password-old = Kasalukuyang password:
 change-password-new = Bagong password:
 change-password-reenter = Bagong password (ulit):
 
@@ -20,6 +19,12 @@ change-password-reenter = Bagong password (ulit):
 
 reset-password-window =
     .title = Ireset ang Master Password
+    .style = width: 40em
+
+## Reset Primary Password dialog
+
+reset-primary-password-window =
+    .title = I-reset ang Primary Password
     .style = width: 40em
 reset-password-button-label =
     .label = I-reset

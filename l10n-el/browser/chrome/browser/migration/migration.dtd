@@ -5,9 +5,8 @@
 
 <!ENTITY migrationWizard.title          "Βοηθός εισαγωγής">
 
-<!ENTITY importFrom.label               "Εισαγωγή επιλογών, σελιδοδεικτών, ιστορικού, κωδικών και άλλων δεδομένων από:">
-<!ENTITY importFromUnix.label           "Εισαγωγή προτιμήσεων,σελιδοδεικτών, ιστορικού, κωδικών και άλλων δεδομένων από:">
-<!ENTITY importFromBookmarks.label      "Εισαγωγή σελιδοδεικτών από:">
+<!ENTITY importFrom.label               "Εισαγωγή επιλογών, σελιδοδεικτών, ιστορικού, κωδικών πρόσβασης και άλλων δεδομένων από:">
+<!ENTITY importFromUnix.label           "Εισαγωγή προτιμήσεων, σελιδοδεικτών, ιστορικού, κωδικών πρόσβασης και άλλων δεδομένων από:">
 
 <!ENTITY importFromIE.label             "Microsoft Internet Explorer">
 <!ENTITY importFromIE.accesskey         "M">
@@ -39,11 +38,11 @@
 <!ENTITY noMigrationSources.label       "Δεν βρέθηκαν προγράμματα τα οποία περιέχουν σελιδοδείκτες, ιστορικό ή δεδομένα κωδικών.">
 
 <!ENTITY importSource.title             "Εισαγωγή ρυθμίσεων και δεδομένων">
-<!ENTITY importItems.title              "Αντικείμενα προς εισαγωγή">
-<!ENTITY importItems.label              "Επιλέξτε ποια αντικείμενα θα εισαχθούν:">
+<!ENTITY importItems.title              "Στοιχεία προς εισαγωγή">
+<!ENTITY importItems.label              "Επιλέξτε στοιχεία προς εισαγωγή:">
 
 <!ENTITY migrating.title                "Εισαγωγή...">
-<!ENTITY migrating.label                "Τα ακόλουθα αντικείμενα εισάγονται αυτήν τη στιγμή...">
+<!ENTITY migrating.label                "Γίνεται εισαγωγή των παρακάτω στοιχείων αυτή τη στιγμή…">
 
 <!ENTITY selectProfile.title            "Επιλογή προφίλ">
 <!ENTITY selectProfile.label            "Τα ακόλουθα προφίλ είναι διαθέσιμα για εισαγωγή από:">
@@ -51,4 +50,4 @@
 <!ENTITY done.title                     "Η εισαγωγή ολοκληρώθηκε">
 <!ENTITY done.label                     "Τα ακόλουθα στοιχεία εισήχθησαν επιτυχώς:">
 
-<!ENTITY closeSourceBrowser.label       "Παρακαλώ βεβαιωθείτε ότι το επιλεγμένο πρόγραμμα περιήγησης είναι κλειστό προτού συνεχίσετε.">
+<!ENTITY closeSourceBrowser.label       "Παρακαλούμε βεβαιωθείτε ότι το επιλεγμένο πρόγραμμα περιήγησης είναι κλειστό πριν συνεχίσετε.">

@@ -74,7 +74,7 @@ openpgp-keygen-error-failed = La generación de clave OpenPGP falló inesperadam
 #   $identity (String) - the newly generate OpenPGP Key
 openpgp-keygen-error-revocation = La clave OpenPGP se creó ccorrectamente pero no se pudo obtener la revocación de la clave { $key }
 openpgp-keygen-abort-title = ¿Abortar generación de clave?
-openpgp-keygen-abort = OpenPGP La generación de claves está en progreso, ¿está seguro de que desea cancelarla?
+openpgp-keygen-abort = OpenPGP La generación de claves está en progreso, ¿está seguro de que quiere cancelarla?
 #   $identity (String) - the name and email address of the currently selected identity
 openpgp-key-confirm = ¿Generar clave pública y secreta para { $identity }?
 

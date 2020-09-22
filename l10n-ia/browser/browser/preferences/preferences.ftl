@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Solmente quando { -brand-short-name } es adjustate pro blocar traciatores cognoscite.
 do-not-track-option-always =
     .label = Sempre
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Optiones
-           *[other] Preferentias
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Optiones
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = Un extension, <img data-l10n-name="icon
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Un extension, <img data-l10n-name="icon"/> { $name }, controla tu pagina de Nove scheda.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Le extension <img data-l10n-name="icon"/>{ $name } controla iste configuration.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Un extension, <img data-l10n-name="icon"/> { $name }, controla iste configuration.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Iste configuration sera applicat
 update-application-use-service =
     .label = Usar un servicio in secunde plano pro installar le actualisationes
     .accesskey = s
-update-enable-search-update =
-    .label = Actualisar automaticamente le motores de recerca
-    .accesskey = e
-update-pref-write-failure-title = Error de scriptura
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Incapace a salvar le option. Impossibile scriber al file: { $path }
 update-setting-write-failure-title = Impossibile registrar preferentias de actualisation
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Adder le barra de recerca in le barra de instrumentos
 search-engine-default-header = Motor de recerca predefinite
-search-engine-default-desc = Elige le motor de recerca pro usar como predefinition pro le barra de adresse e le de recerca.
 search-engine-default-desc-2 = Isto es tu motor de recerca predefinite in le barras de adresse e de recerca. Tu pote cambiar lo in omne momento.
 search-engine-default-private-desc-2 = Selige un altere motor de recerca predefinite a usar solmente in fenestras private
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Remover
     .accesskey = r
+search-add-engine =
+    .label = Adder
+    .accesskey = A
 search-find-more-link = Adder plus motores de recerca
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = Tu ha eligite un parola clave que es actualmen
 
 ## Containers Section
 
-containers-back-link = « Retornar
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Remover
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Porta le web con te
 sync-signedout-description = Synchronisa tu marcapaginas, chronologia, contrasignos, additivos, e preferentias inter tote tu apparatos.
-sync-signedout-account-title = Connecter se con un { -fxaccount-brand-name }
-sync-signedout-account-create = Non ha un conto? Comencia hic
-    .accesskey = C
-sync-signedout-account-signin =
-    .label = Aperir session…
-    .accesskey = A
 sync-signedout-account-signin2 =
     .label = Aperir session in { -sync-brand-short-name }…
     .accesskey = A
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Discarga Firefox pro <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> o <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> pro synchronisar te con tu apparato mobile.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Cambiar le imagine del profilo
-sync-disconnect =
-    .label = Disconnecter se…
-    .accesskey = D
 sync-sign-out =
     .label = Clauder session…
     .accesskey = C
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Aperir session
     .accesskey = A
-sync-signedin-settings-header = Parametros de Sync
-sync-signedin-settings-desc = Elige lo que tu vole synchronisar in tu apparatos usante { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = Schedas aperite
     .tooltiptext = Un lista de lo que es aperte sur tote le apparatos synchronisate
     .accesskey = T
-sync-engine-logins =
-    .label = Authenticationes
-    .tooltiptext = Nomines de usator e contrasignos que tu salvava
-    .accesskey = A
 sync-engine-logins-passwords =
     .label = Credentiales e contrasignos
     .tooltiptext = Nomines de usator e contrasignos que tu ha salvate
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Salvar
     .accesskey = v
 sync-connect-another-device = Connecter un altere apparato
-sync-manage-devices = Gerer apparatos
-sync-fxa-begin-pairing = Accopular un apparato
-sync-tos-link = Terminos de servicio
-sync-fxa-privacy-notice = Aviso de confidentialitate
 
 ## Privacy Section
 
 privacy-header = Confidentialitate del navigator
-
-## Privacy Section - Forms
-
-logins-header = Authenticationes e contrasignos
 
 ## Privacy Section - Logins and Passwords
 
@@ -906,8 +868,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Typo de contento blocate
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Traciatores de tertios
 sitedata-option-block-cross-site-trackers =
     .label = Traciatores inter sitos
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -953,27 +913,9 @@ addressbar-suggestions-settings = Cambiar le preferentias pro le suggestiones de
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Blocage de contento
-content-blocking-section-description = Protege tu vita private durante que tu naviga. Bloca le contento invisibile que tracia le sitos que tu visita pro mantener un profilo de te. Blocar un parte de iste contento pote render le cargamento de paginas plus rapide.
 content-blocking-enhanced-tracking-protection = Protection antitraciamento reinfortiate
 content-blocking-section-top-level-description = Le traciatores te seque per tote le rete pro colliger informationes sur tu habitos e interesses de navigation. { -brand-short-name } bloca multes de iste traciatores e altere scripts maligne.
 content-blocking-learn-more = Saper plus
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standard
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Stricte
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Personalisate
-    .accesskey = P
-content-blocking-standard-desc = Equilibrio inter protection e rendimento. Permitte alcun traciatores a fin que sitos web functiona correctemente.
-content-blocking-strict-description = Protection plus forte, ma alcun sitos pote faller.
-content-blocking-custom-desc = Elige que blocar.
-content-blocking-private-trackers = Traciatores cognoscite, solmente in fenestras private
-content-blocking-third-party-cookies = Cookies de traciamento de tertios
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1000,23 +942,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies de traciamen
 content-blocking-social-media-trackers = Traciatores de retes social
 content-blocking-all-cookies = Tote le cookies
 content-blocking-unvisited-cookies = Cookie de sitos web non visitate
-content-blocking-all-windows-trackers = Traciatores cognoscite in tote le fenestras
 content-blocking-all-windows-tracking-content = Contento de traciamento in tote le fenestras
 content-blocking-all-third-party-cookies = Tote le cookies de tertios
 content-blocking-cryptominers = Cryptominatores
 content-blocking-fingerprinters = Dactylogrammatores
 content-blocking-warning-title = Attention!
-content-blocking-warning-description = Alcun sitos web pote non functionar correctemente con le blocage de contento. Es facile disactivar le blocage pro le sitos in que tu ha confidentia.
-content-blocking-learn-how = Apprender como
 content-blocking-and-isolating-etp-warning-description = Blocar traciatores e isolar cookies poterea impedir le functionamento de alcun sitos. Recarga un pagina con traciatores pro cargar tote le contento.
 content-blocking-warning-learn-how = Apprende como
 content-blocking-reload-description = Tu debera recargar tu schedas pro applicar iste cambios.
 content-blocking-reload-tabs-button =
     .label = Recargar tote le schedas
     .accesskey = R
-content-blocking-trackers-label =
-    .label = Traciatores
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = Contento de traciamento
     .accesskey = t
@@ -1075,12 +1011,6 @@ permissions-notification-link = Saper plus
 permissions-notification-pause =
     .label = Pausar le notificationes usque { -brand-short-name } reinitia
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Blocar le sitos web de reproducer automaticamente sono
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = Exceptiones…
-    .accesskey = E
 permissions-autoplay = Autoreproduction
 permissions-autoplay-settings =
     .label = Parametros…

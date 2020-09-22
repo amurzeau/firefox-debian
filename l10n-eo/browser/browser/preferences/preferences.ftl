@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Nur kiam { -brand-short-name } estas agordita por bloki konatajn spurilojn
 do-not-track-option-always =
     .label = Ĉiam
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Preferoj
-           *[other] Preferoj
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Preferoj
@@ -88,6 +82,9 @@ extension-controlled-homepage-override = La etendaĵo <img data-l10n-name="icon"
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = La etendaĵo <img data-l10n-name="icon"/> { $name } nuntempe regas vian paĝon por novaj langetoj.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = La etendaĵo <img data-l10n-name="icon"/> { $name } regas tiun ĉi agordon.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = La etendaĵo <img data-l10n-name="icon"/>{ $name } nuntempe regas tiun ĉi agordon.
@@ -371,13 +368,6 @@ update-application-warning-cross-user-setting = Tiu ĉi agordo estos aplikita al
 update-application-use-service =
     .label = Uzi fonan servon por instali ĝisdatigojn
     .accesskey = f
-update-enable-search-update =
-    .label = Aŭtomate ĝisdatigi serĉilojn
-    .accesskey = t
-update-pref-write-failure-title = Malsukcesa skribo
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Ne eblis konservi preferon. Ne eblis skribi en la dosiero: { $path }
 update-setting-write-failure-title = Eraro dum konservo de ĝisdatigoj
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -545,7 +535,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Aldoni serĉan strion al ilaro
 search-engine-default-header = Norma serĉilo
-search-engine-default-desc = Elekti la norman serĉilon por la adresa kaj serĉa strio.
 search-engine-default-desc-2 = Tiu ĉi estas via norma serĉilo en la adresa kaj serĉa strio. Vi povas ŝanĝi ĝin iam ajn.
 search-engine-default-private-desc-2 = Elektu alian normal serĉilon nur por privatajn fenestrojn
 search-separate-default-engine =
@@ -582,6 +571,9 @@ search-restore-default =
 search-remove-engine =
     .label = Forigi
     .accesskey = F
+search-add-engine =
+    .label = Aldoni
+    .accesskey = A
 search-find-more-link = Serĉi pli da serĉiloj
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -593,7 +585,6 @@ search-keyword-warning-bookmark = Vi elektis kategorian vorton kiu estas nuntemp
 
 ## Containers Section
 
-containers-back-link = « Iri reen
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -612,20 +603,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Forigi
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Kunporti vian Teksaĵon kun vi
 sync-signedout-description = Speguli viajn legosignojn, historion, langetojn, pasvortojn, aldonaĵojn kaj preferojn en ĉiuj viaj aparatoj.
-sync-signedout-account-title = Konekti al { -fxaccount-brand-name }
-sync-signedout-account-create = Ĉu vi ne havas konton? Enskribiĝu
-    .accesskey = E
-sync-signedout-account-signin =
-    .label = Komenci seancon…
-    .accesskey = K
 sync-signedout-account-signin2 =
     .label = Komenci seancon en { -sync-brand-short-name }…
     .accesskey = K
@@ -639,16 +621,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Elŝuti Firefox por <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> aŭ <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> por speguli kun via portebla aparato.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Ŝanĝi bildon de profilo
-sync-disconnect =
-    .label = Malkonekti…
-    .accesskey = M
 sync-sign-out =
     .label = Fini seancon…
     .accesskey = F
@@ -665,8 +641,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Komenci seancon
     .accesskey = K
-sync-signedin-settings-header = Agordoj de Spegulado
-sync-signedin-settings-desc = Elekti tion, kion vi volas speguli en la aparatoj viaj, kiuj uzas { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +693,6 @@ sync-engine-tabs =
     .label = malfermitajn langetojn
     .tooltiptext = Listo de ĉio, kio estas malfermita, en ĉiuj spegulitaj aparatoj
     .accesskey = g
-sync-engine-logins =
-    .label = akreditilojn
-    .tooltiptext = Nomoj de uzanto kaj pasvortoj konservitaj de vi
-    .accesskey = A
 sync-engine-logins-passwords =
     .label = legitimilojn
     .tooltiptext = Nomoj de uzanto kaj pasvortoj, kiujn vi konservis
@@ -761,18 +731,10 @@ sync-device-name-save =
     .label = Konservi
     .accesskey = K
 sync-connect-another-device = Konekti alian aparaton
-sync-manage-devices = Administri aparatojn
-sync-fxa-begin-pairing = Asocii aparaton
-sync-tos-link = Kondiĉoj de uzado
-sync-fxa-privacy-notice = Rimarko pri privateco
 
 ## Privacy Section
 
 privacy-header = Retumila privateco
-
-## Privacy Section - Forms
-
-logins-header = Akreditiloj kaj pasvortoj
 
 ## Privacy Section - Logins and Passwords
 
@@ -906,8 +868,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Blokita tipo
     .accesskey = B
-sitedata-option-block-trackers =
-    .label = Nerektaj spuriloj
 sitedata-option-block-cross-site-trackers =
     .label = Interetejaj spuriloj
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -953,27 +913,9 @@ addressbar-suggestions-settings = Ŝanĝi preferojn pri serĉilaj sugestoj
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Blokado de enhavo
-content-blocking-section-description = Protektu vian privatecon dum vi retumas. Bloku nevideblan enhavon, kiu registras la retejojn, kiujn vi vizitas por konstrui profilon pri vi. Bloki parton de tiu enhavo povas rapidigi la ŝargadon de paĝoj.
 content-blocking-enhanced-tracking-protection = Plibonigita protekto kontraŭ spurado
 content-blocking-section-top-level-description = Spuriloj sekvas vin en la reto por kolekti informon pri via kutima retumo kaj pri viaj interesoj. { -brand-short-name } blokas plurajn el tiuj spuriloj kaj aliajn malicajn skriptojn.
 content-blocking-learn-more = Pli da informo
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Norma
-    .accesskey = N
-content-blocking-setting-strict =
-    .label = Strikta
-    .accesskey = S
-content-blocking-setting-custom =
-    .label = Personecigita
-    .accesskey = P
-content-blocking-standard-desc = Ekvilibro inter protekto kaj efikeco. Kelkaj spuriloj estas permesataj, por ke retejoj funkciu bone.
-content-blocking-strict-description = Pli severa protekto, kiu povus misfunkciigi kelkajn retejojn.
-content-blocking-custom-desc = Elektu kion bloki.
-content-blocking-private-trackers = Konataj spuriloj nur en fenestroj de privata retumo.
-content-blocking-third-party-cookies = Spurantaj nerektaj kuketoj
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1000,23 +942,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Interretejaj spurila
 content-blocking-social-media-trackers = Sociretaj spuriloj
 content-blocking-all-cookies = Ĉiuj kuketoj
 content-blocking-unvisited-cookies = Kuketoj el ne vizititaj retejoj
-content-blocking-all-windows-trackers = Konataj spuriloj en ĉiuj fenestroj
 content-blocking-all-windows-tracking-content = Spurila enhavo en ĉiuj fenestroj
 content-blocking-all-third-party-cookies = Ĉiuj nerektaj kuketoj
 content-blocking-cryptominers = Miniloj de ĉifromono
 content-blocking-fingerprinters = Identigiloj de ciferecaj spuroj
 content-blocking-warning-title = Atentu!
-content-blocking-warning-description = La blokado de enhavo povas misfunkciigi kelkajn retejojn. Estas facile malaktivigi la blokadon por retejoj, kiujn vi fidas.
-content-blocking-learn-how = Pli da informo
 content-blocking-and-isolating-etp-warning-description = Blokado de spuriloj kaj izolado de kuketoj povus influi la funkciadon de kelkaj retejoj. Reŝargu paĝon kun spuriloj por ŝargi la tutan enhavon.
 content-blocking-warning-learn-how = Pli da informo
 content-blocking-reload-description = Vi bezonos reŝargi viajn langetojn por apliki tiujn ĉi ŝanĝojn.
 content-blocking-reload-tabs-button =
     .label = Reŝargi ĉiujn langetojn
     .accesskey = R
-content-blocking-trackers-label =
-    .label = Spuriloj
-    .accesskey = S
 content-blocking-tracking-content-label =
     .label = Spurila enhavo
     .accesskey = S
@@ -1075,12 +1011,6 @@ permissions-notification-link = Pli da informo
 permissions-notification-pause =
     .label = Paŭzigi sciigojn ĝis kiam { -brand-short-name } restartos
     .accesskey = P
-permissions-block-autoplay-media2 =
-    .label = Bloki aŭtomatan ludadon de sono en retejoj
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = Esceptoj
-    .accesskey = E
 permissions-autoplay = Aŭtomata ludado
 permissions-autoplay-settings =
     .label = Agordoj…

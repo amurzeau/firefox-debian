@@ -10,6 +10,7 @@ auth-cancel = Atšaukti
 auth-cancelAccessKey = A
 auth-error = Tikrinant jūsų adresato tapatybę įvyko klaida.
 auth-success = Adresato tapatybė sėkmingai patvirtinta.
+auth-successThem = Jūsų kontaktas sėkmingai patikrino jūsų tapatybę. Galbūt norėsite patikrinti jų tapatybę ir užduoti savo klausimą.
 auth-fail = Nepavyko patvirtinti adresato tapatybės.
 auth-waiting = Laukiama, adresatas užbaigs patvirtinimą …
 finger-verify = Patikrinti
@@ -21,7 +22,16 @@ buddycontextmenu-label = Pridėti OTR „pirštų atspaudą“
 alert-start = Bandoma pradėti užšifruotą pokalbį su { $name }.
 # Variables:
 #   $name (String) - the screen name of a chat contact person
+alert-refresh = Bandoma atnaujinti užšifruotą pokalbį su „{ $name }“.
+# Variables:
+#   $name (String) - the screen name of a chat contact person
 alert-gone_insecure = Užšifruotas pokalbis su { $name } baigėsi.
+# Variables:
+#   $name (String) - the screen name of a chat contact person
+finger-unseen = „{ $name }“ tapatybė dar nepatvirtinta. Įprastas pasiklausymas nėra galimas, tačiau su šiek tiek pastangų įmanomas. Užkirskite kelią stebėjimui, patikrindami šio kontakto tapatybę.
+# Variables:
+#   $name (String) - the screen name of a chat contact person
+finger-seen = „{ $name }“ susisiekia su jumis iš neatpažinto kompiuterio. Įprastas pasiklausymas nėra galimas, tačiau su šiek tiek pastangų įmanomas. Užkirskite kelią stebėjimui, patikrindami šio kontakto tapatybę.
 state-not_private = Dabartinis pokalbis nėra privatus.
 # Variables:
 #   $name (String) - the screen name of a chat contact person
@@ -29,6 +39,9 @@ state-unverified = Dabartinis pokalbis yra užšifruotas, bet nėra privatus, ne
 # Variables:
 #   $name (String) - the screen name of a chat contact person
 state-private = { $name } tapatybė patvirtinta. Dabartinis pokalbis yra užšifruotas ir privatus.
+# Variables:
+#   $name (String) - the screen name of a chat contact person
+state-finished = „{ $name }“ baigė užšifruotą pokalbį su jumis; turėtumėt užbaigti ir jūs.
 state-not_private-label = Nesaugus
 state-unverified-label = Nepatikrinta
 state-private-label = Privatus

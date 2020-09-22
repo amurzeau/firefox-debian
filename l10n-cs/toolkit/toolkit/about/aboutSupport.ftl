@@ -82,6 +82,9 @@ show-dir-label =
         [macos] Zobrazit ve Finderu
        *[other] Otevřít
     }
+environment-variables-title = Proměnné prostředí
+environment-variables-name = Název
+environment-variables-value = Hodnota
 experimental-features-title = Experimentální funkce
 experimental-features-name = Název
 experimental-features-value = Hodnota
@@ -115,8 +118,6 @@ graphics-desktop-environment = Desktopové prostředí
 place-database-title = Databáze Places
 place-database-integrity = Integrita
 place-database-verify-integrity = Zkontrolovat integritu
-js-title = JavaScript
-js-incremental-gc = Inkrementální GC
 a11y-title = Přístupnost
 a11y-activated = Aktivována
 a11y-force-disabled = Zakázána
@@ -146,7 +147,6 @@ restart-button-label = Restartovat
 
 audio-backend = Audio Backend
 max-audio-channels = Maximální počet kanálů
-channel-layout = Preferované rozložení kanálů
 sample-rate = Preferovaná vzorkovací frekvence
 roundtrip-latency = Zpoždění (směrodatná odchylka)
 media-title = Média
@@ -295,7 +295,6 @@ support-blocklisted-bug = Zablokováno kvůli známým problémům: <a data-l10n
 unknown-failure = Zablokováno; chybový kód { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video dekodér
-d3d9video-crash-buard = D3D9 Video dekodér
 d3d9video-crash-guard = D3D9 Video dekodér
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Video dekodér

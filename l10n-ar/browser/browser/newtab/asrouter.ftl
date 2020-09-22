@@ -249,10 +249,14 @@ cfr-whatsnew-passwords-body = يعرف المخترقون أن الناس تُع
 
 ## Picture-in-Picture fullscreen message
 
+cfr-whatsnew-pip-fullscreen-header = حوّل الڤديو المعترِض ليملأ الشاشة
+cfr-whatsnew-pip-fullscreen-body = صار بإمكانك الآن (حين تنزع الڤديو ليصير في نافذة مستقلة) نقر النافذة مرتين لتملأ الشاشة.
 cfr-whatsnew-pip-fullscreen-icon-alt = أيقونة الڤديو المعترِض
 
 ## Protections Dashboard message
 
+cfr-whatsnew-protections-header = كل أمور الحماية، في لمحة سريعة
+cfr-whatsnew-protections-body = تشمل لوحة معلومات الحماية تقارير تلخّص تسرّب البيانات وإدارة كلمات السر. يمكنك الآن مراقبة التسريبات التي استجبت إليها، وإن ظهرت إحدى كلمات السر المحفوظة التي تستعمل في إحدى تسريبات البيانات.
 cfr-whatsnew-protections-cta-link = اعرض لوحة معلومات الحماية
 cfr-whatsnew-protections-icon-alt = أيقونة الدرع
 
@@ -263,6 +267,7 @@ cfr-whatsnew-better-pdf-body = تفتح مستندات PDF الآن مباشرة
 
 ## DOH Message
 
+cfr-doorhanger-doh-body = خصوصيّتك مهمة. يُوجّه الآن { -brand-short-name } كل طلبات DNS التي تُجريها (متى كان ممكنًا) إلى خدمة شريكة، ذلك لحمايتك وأنت تتصفّح.
 cfr-doorhanger-doh-primary-button = حسنًا، فهمت
     .accesskey = ح
 cfr-doorhanger-doh-secondary-button = عطّل
@@ -270,3 +275,4 @@ cfr-doorhanger-doh-secondary-button = عطّل
 
 ## What's new: Cookies message
 
+cfr-whatsnew-clear-cookies-body = تُوجّهك بعض المتعقّبات إلى مواقع أخرى تضبط الكعكات دون أن تعلم. يمسح { -brand-short-name } الآن تلقائيًا تلك الكعكات بذلك يستحيل تعقّبك.

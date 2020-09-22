@@ -8,7 +8,7 @@ cert-error-intro = { $hostname } iseqdac aselkin n tɣellist arameɣtu.
 cert-error-mitm-intro = Ismal web skanayn-d tamagit-nsen s iselkinen, itesefrak takebbanit n iselkinen.
 cert-error-mitm-mozilla = { -brand-short-name } tettwaḥrez sɣur takebbanit Mozilla ur ittnadin ara ɣef rbeḥ, isefraken alzuz n iselkinen yeldin s umata (CA). Alzuz n iselkinen CA ittmudu-d tallelt i suqdec deg taɣelist.
 cert-error-mitm-connection = { -brand-short-name } iseqdac alzuz CA Mozilla akken ad isenqed tuqqna taɣelsant, deg wadeg n iselkinen n unagraw n wamud n useqdac, ihi ma yella useɣẓan n mgalavirus neɣ aẓeṭṭa iseqdac aselkin mačči n Mozilla ihi tuqqna ad tettwaḥsab mačči d taɣelsant.
-cert-error-trust-unknown-issuer-intro = Yezmer ad yili walbaɛḍ i iɛarḍen ad yakwer tamagit n usmel, ur issefk ara ad tkemleḍ.
+cert-error-trust-unknown-issuer-intro = Yezmer ad yili welbaɛḍ i iɛerḍen ad yaker tamagit n usmel, ur issefk ara ad tkemmleḍ.
 # Variables:
 # $hostname (String) - Hostname of the website with cert error.
 cert-error-trust-unknown-issuer = Ismal web ttebganen-d timagin-nsen s iselkinen. { -brand-short-name } ur yumin ara { $hostname } acku amazan n aselkin-ines d arussin, Aselkin d uzmilman, neɣ aqeddac ur d-yettazen ara iselkinenn imeɣta.
@@ -87,8 +87,6 @@ proxyResolveFailure-title = Aqeddac apṛuksi ulac-it
 redirectLoop-title = Asebter ur yettuwelleh ara akken iwata
 unknownSocketType-title = Aqeddac yerra-d yir tiririt ur nettwaṛǧi ara
 nssFailure2-title = Tuqqna taɣelsant ur teddi ara
-cspBlocked-title = Tessewḥel-it tsertit n tɣellist n ugbur
-xfoBlocked-title = Tessewḥel-it tsertit X-Frame-Options
 csp-xfo-error-title = { -brand-short-name } ur yezmir ara ad yeldi asebter-a
 corruptedContentError-title = Tuccḍa tekka-d seg ugbur ixesṛen
 remoteXUL-title = XUL anmeggag

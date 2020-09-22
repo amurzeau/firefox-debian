@@ -63,10 +63,6 @@ permissions-invalid-uri-label = Emoinge peteĩ mohendahavusu oikóva réra
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-content-blocking-window =
-    .title = Ykepegua – Tetepy jejoko
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Ojeipe’áma tetepy jejoko ko’ã tenda pegua.
 permissions-exceptions-etp-window =
     .title = Ykepegua tapykuehoha mo’ãha iporãvévape g̃uarã
     .style = { permissions-window.style }
@@ -96,16 +92,9 @@ permissions-exceptions-saved-logins-desc = Tembiapo ñepyrũ ko’ã ñanduti re
 ## Exceptions - Add-ons
 
 permissions-exceptions-addons-window =
-    .title = Tenda ñemoneĩmbyre - Moimbaha ñemohenda
+    .title = Tenda ñemoneĩmbyre - Moĩmbaha ñemohenda
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Ikatu rehechauka mba’e ñanduti renda guivépa ikatu remohenda moĩmbaha. Ehai kundaharape ha’etéva tenda remoneĩséva ha ejopy Moneĩ.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Ykepegua – Ñemboheta ijeheguíva
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Ikatúpa ere mba’e tendápa oñemoneĩ térã oñembotove kookie jepurúpe. Emoinge tenda kundaharape eñangarekoseha ha upéi eikutu Joko térã Moneĩ.
 
 ## Site Permissions - Autoplay
 

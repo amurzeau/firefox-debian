@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Pelajari Lebih Lanjut
-onboarding-button-label-try-now = Coba Sekarang
 onboarding-button-label-get-started = Bersiap
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Bersiap
 onboarding-welcome-header = Selamat datang di { -brand-short-name }
 onboarding-welcome-body = Anda telah mendapatkan perambannya. <br/>Temui lini produk { -brand-product-name } lainnya.
 onboarding-welcome-learn-more = Pelajari lebih lanjut tentang manfaatnya.
-onboarding-join-form-header = Bergabunglah dengan { -brand-product-name }
 onboarding-welcome-modal-get-body = Anda telah mendapatkan perambannya. <br/>Kini dapatkan yang terbaik dari { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Perkuat perlindungan privasi Anda.
 onboarding-welcome-modal-privacy-body = Anda telah mendapatkan perambannya. Mari tambahkan perlindungan privasi lebih lengkap.
@@ -53,7 +51,7 @@ onboarding-multistage-welcome-secondary-button-label = Masuk
 onboarding-multistage-welcome-secondary-button-text = Sudah punya akun?
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
 # automatically added to the text inside it. "more" should stay inside the span.
-onboarding-multistage-import-header = Impor kata sandi, markah, dan <span data-l10n-name="zap">yang lain</span>
+onboarding-multistage-import-header = Impor kata sandi, markah, <br/>dan <span data-l10n-name="zap">yang lain</span>
 onboarding-multistage-import-subtitle = Dari peramban lain? Mudah sekali membawa semuanya ke { -brand-short-name }.
 onboarding-multistage-import-primary-button-label = Mulai Impor
 onboarding-multistage-import-secondary-button-label = Jangan sekarang
@@ -110,6 +108,46 @@ onboarding-multistage-theme-tooltip-alpenglow =
         Gunakan tampilan berwarna untuk
         tombol, menu, dan jendela.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Mengikuti tampilan dari sistem operasi
+        Anda untuk tombol, menu, dan jendela.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Mengikuti tampilan dari sistem operasi
+        Anda untuk tombol, menu, dan jendela.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Gunakan tampilan cerah untuk
+        tombol, menu, dan jendela.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Gunakan tampilan cerah untuk
+        tombol, menu, dan jendela.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Gunakan tampilan gelap untuk
+        tombol, menu, dan jendela.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Gunakan tampilan gelap untuk
+        tombol, menu, dan jendela.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Gunakan tampilan berwarna untuk
+        tombol, menu, dan jendela.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Gunakan tampilan berwarna untuk
+        tombol, menu, dan jendela.
 
 ## Welcome full page string
 
@@ -135,11 +173,7 @@ onboarding-sync-form-sub-header = Lanjutkan ke { -sync-brand-name }
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Produk yang Berguna
 onboarding-benefit-products-text = Selesaikan dengan serangkaian alat yang menghormati privasi Anda di sepanjang perangkat Anda.
-onboarding-benefit-knowledge-title = Pengetahuan Praktis
-onboarding-benefit-knowledge-text = Pelajari semua yang perlu Anda ketahui untuk tetap cerdas dan aman saat daring.
-onboarding-benefit-privacy-title = Privasi Sejati
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -160,17 +194,6 @@ onboarding-benefit-lockwise-text = Mengelola kata sandi yang dilindungi dan port
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Penjelajahan Pribadi
-onboarding-private-browsing-text = Jelajahi sendiri. Penjelajahan pribadi dengan pemblokiran konten akan memblokir pelacak daring yang mengikuti Anda di sekeliling web.
-onboarding-screenshots-title = Tangkapan Layar
-onboarding-screenshots-text = Ambil, simpan, dan bagikan tangkapan layar - tanpa meninggalkan { -brand-short-name }. Ambil tangkapan sebagian atau seluruh laman ketika menjelajah, kemudian simpan di web untuk kemudahan akses dan berbagi.
-onboarding-addons-title = Pengaya
-onboarding-addons-text = Tambahkan fitur-fitur lain yang membuat { -brand-short-name } bekerja lebih keras untuk Anda. Bandingkan harga, periksa cuaca, atau ungkapkan kepribadian Anda dengan tema yang disesuaikan.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Jelajahi lebih cepat, lebih cerdas, atau lebih aman dengan ekstensi seperti Ghostery, yang memungkinkan Anda memblokir iklan-iklan yang menjengkelkan.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Sinkronkan
-onboarding-fxa-text = Daftar { -fxaccount-brand-name } dan sinkronkan markah, kata sandi Anda, dan buka tab di mana pun Anda menggunakan { -brand-short-name }.
 onboarding-tracking-protection-title2 = Perlindungan Dari Pelacakan
 onboarding-tracking-protection-text2 = { -brand-short-name } bantu menghentikan situs Web untuk melacak Anda secara daring, menjadikan lebih sulit bagi iklan untuk mengikuti Anda di web.
 onboarding-tracking-protection-button2 = Panduan
@@ -179,7 +202,6 @@ onboarding-data-sync-title = Bawalah Pengaturan dengan Anda
 onboarding-data-sync-text2 = Sinkronkan markah, kata sandi, dan lainnya di mana pun Anda menggunakan { -brand-product-name }.
 onboarding-data-sync-button2 = Masuk ke { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Selalu Waspada akan Pembobolan Data
-onboarding-firefox-monitor-text = { -monitor-brand-name } memantau jika surel Anda telah muncul dalam pembobolan data dan memberitahu Anda jika muncul dalam pembobolan terbaru.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } memantau jika surel Anda telah muncul dalam pembobolan data publik dan memberitahu Anda jika muncul dalam pembobolan terbaru.
 onboarding-firefox-monitor-button = Daftar untuk Pemberitahuan
 onboarding-browse-privately-title = Menjelajah Secara Privat
@@ -196,17 +218,11 @@ onboarding-mobile-phone-button = Unduh Peramban Seluler
 onboarding-send-tabs-title = Kirim Tab Secara Instan
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Kirim Tab secara instan membagikan laman di antara perangkat Anda tanpa harus menyalin, menempel, atau meninggalkan peramban.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Mudah berbagi halaman di semua perangkat Anda tanpa perlu menyalin tautan atau meninggalkan peramban.
 onboarding-send-tabs-button = Mulai Gunakan Kirim Tab
 onboarding-pocket-anywhere-title = Baca dan Dengarkan di Mana Saja
 onboarding-pocket-anywhere-text2 = Simpan konten favorit Anda luring dengan aplikasi { -pocket-brand-name } dan baca, dengarkan, dan simak kapanpun senyaman Anda.
 onboarding-pocket-anywhere-button = Coba { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Bawa Sandi Anda ke Mana Saja
-onboarding-lockwise-passwords-text2 = Simpan kata sandi yang Anda simpan dengan aman dan mudah masuk ke akun Anda dengan { -lockwise-brand-name }.
-onboarding-lockwise-passwords-button2 = Dapatkan Aplikasinya
 onboarding-lockwise-strong-passwords-title = Buat dan Simpan Sandi yang Kuat
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } menciptakan sandi yang kuat langsung di tempat dan menyimpan semuanya di satu tempat.
 onboarding-lockwise-strong-passwords-button = Kelola Info Masuk Anda

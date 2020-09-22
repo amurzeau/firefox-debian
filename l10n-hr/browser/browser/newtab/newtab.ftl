@@ -40,7 +40,7 @@ newtab-topsites-image-validation = Neuspjelo učitavanje slike. Pokušaj jedan d
 ## Top Sites - General form dialog buttons. These are verbs/actions.
 
 newtab-topsites-cancel-button = Otkaži
-newtab-topsites-delete-history-button = Obriši iz povijesti
+newtab-topsites-delete-history-button = Izbriši iz povijesti
 newtab-topsites-save-button = Spremi
 newtab-topsites-preview-button = Pregled
 newtab-topsites-add-button = Dodaj
@@ -80,7 +80,7 @@ newtab-menu-open-new-private-window = Otvori u novom privatnom prozoru
 newtab-menu-dismiss = Odbaci
 newtab-menu-pin = Zakači
 newtab-menu-unpin = Otkači
-newtab-menu-delete-history = Obriši iz povijesti
+newtab-menu-delete-history = Izbriši iz povijesti
 newtab-menu-save-to-pocket = Spremi u { -pocket-brand-name }
 newtab-menu-delete-pocket = Izbriši iz { -pocket-brand-name }a
 newtab-menu-archive-pocket = Arhiviraj u { -pocket-brand-name }

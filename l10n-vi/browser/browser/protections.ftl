@@ -20,19 +20,6 @@ graph-total-tracker-summary =
 graph-private-window = { -brand-short-name } tiếp tục  chặn trình theo dõi trong cửa sổ riêng tư, nhưng không lưu giữ hồ sơ về những gì đã bị chặn.
 # Weekly summary of the graph when the graph is empty in Private Mode
 graph-week-summary-private-window = Trình theo dõi mà { -brand-short-name } đã chặn trong tuần này
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-# The category name in the <b> tag will be bold.
-protection-report-header-details-standard = Cấp bảo vệ được đặt thành <b>Tiêu chuẩn</b>
-    .title = Đi đến Cài đặt bảo mật
-protection-report-header-details-strict = Cấp bảo vệ được đặt thành <b>Nghiêm ngặt</b>
-    .title = Đi đến Cài đặt bảo mật
-protection-report-header-details-custom = Cấp bảo vệ được đặt thành <b>Tùy chỉnh</b>
-    .title = Đi đến Cài đặt bảo mật
-protection-report-page-title = Bảo vệ quyền riêng tư
-protection-report-content-title = Bảo vệ quyền riêng tư
-etp-card-title = Trình chống theo dõi nâng cao
-etp-card-content = Trình theo dõi theo bạn trên mạng để thu thập thông tin về thói quen và sở thích duyệt web của bạn. { -brand-short-name } chặn nhiều trình theo dõi và các tập lệnh độc hại khác.
 protection-report-webpage-title = Bảng điều khiển bảo vệ
 protection-report-page-content-title = Bảng điều khiển bảo vệ
 # This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
@@ -56,7 +43,7 @@ cookie-tab-title = Cookie theo dõi chéo trang web
 cookie-tab-content = Những cookie này theo bạn từ trang này sang trang khác để thu thập dữ liệu về những gì bạn làm trực tuyến. Chúng được đặt bởi các bên thứ ba như nhà quảng cáo và công ty phân tích. Chặn cookie theo dõi nhiều trang web làm giảm số lượng quảng cáo theo bạn xung quanh. <a data-l10n-name="learn-more-link">Tìm hiểu thêm</a>
 tracker-tab-title = Trình theo dõi nội dung
 tracker-tab-description = Trang web có thể tải quảng cáo bên ngoài, video và nội dung khác với đoạn mã theo dõi. Chặn nội dung theo dõi có thể giúp các trang web tải nhanh hơn, nhưng một số nút, biểu mẫu và trường đăng nhập có thể không hoạt động. <a data-l10n-name="learn-more-link">Tìm hiểu thêm</a>
-fingerprinter-tab-title = Vân tay
+fingerprinter-tab-title = Dấu vân tay
 fingerprinter-tab-content = Dấu vân tay thu thập cài đặt từ trình duyệt và máy tính của bạn để tạo hồ sơ về bạn. Sử dụng dấu vân tay kỹ thuật số này, họ có thể theo dõi bạn trên các trang web khác nhau. <a data-l10n-name="learn-more-link">Tìm hiểu thêm</a>
 cryptominer-tab-title = Tiền điện tử
 cryptominer-tab-content = Tiền điện tử sử dụng sức mạnh tính toán của hệ thống của bạn để khai thác tiền kỹ thuật số. Các tập lệnh mã hóa làm cạn kiệt pin của bạn, làm chậm máy tính của bạn và có thể tăng hóa đơn năng lượng của bạn. <a data-l10n-name="learn-more-link">Tìm hiểu thêm</a>
@@ -67,12 +54,9 @@ mobile-app-title = Chặn trình theo dõi quảng cáo trên nhiều thiết b�
 mobile-app-card-content = Sử dụng trình duyệt di động có bảo vệ tích hợp chống theo dõi quảng cáo.
 mobile-app-links = Trình duyệt { -brand-product-name } dành cho <a data-l10n-name="android-mobile-inline-link">Android</a> và <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Không bao giờ quên mật khẩu lần nữa
-lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-title-logged-in2 = Quản lý mật khẩu
 lockwise-header-content = { -lockwise-brand-name } lưu trữ an toàn mật khẩu của bạn trong trình duyệt của bạn.
 lockwise-header-content-logged-in = Lưu trữ an toàn và đồng bộ hóa mật khẩu của bạn với tất cả các thiết bị của bạn.
-protection-report-view-logins-button = Xem thông tin đăng nhập
-    .title = Đi đến Thông tin đăng nhập đã lưu
 protection-report-save-passwords-button = Lưu mật khẩu
     .title = Lưu mật khẩu trên { -lockwise-brand-short-name }
 protection-report-manage-passwords-button = Quản lý mật khẩu
@@ -80,13 +64,6 @@ protection-report-manage-passwords-button = Quản lý mật khẩu
 lockwise-mobile-app-title = Mang mật khẩu của bạn đi khắp mọi nơi
 lockwise-no-logins-card-content = Sử dụng mật khẩu được lưu trong { -brand-short-name } trên bất kỳ thiết bị nào.
 lockwise-app-links = { -lockwise-brand-name } dành cho <a data-l10n-name="lockwise-android-inline-link">Android</a> và <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
-# This string is displayed after a large numeral that indicates the total number
-# of email addresses being monitored. Don’t add $count to
-# your localization, because it would result in the number showing twice.
-lockwise-passwords-stored =
-    { $count ->
-       *[other] Mật khẩu được lưu trữ an toàn <a data-l10n-name="lockwise-how-it-works">Cách thức hoạt động</a>
-    }
 # Variables:
 # $count (Number) - Number of passwords exposed in data breaches.
 lockwise-scanned-text-breached-logins =
@@ -104,18 +81,10 @@ lockwise-scanned-text-no-breached-logins =
 lockwise-how-it-works-link = Nó hoạt động như thế nào
 turn-on-sync = Bật { -sync-brand-short-name }…
     .title = Đi đến tùy chọn đồng bộ hóa
-manage-connected-devices = Quản lý thiết bị…
-# Variables:
-#   $count (Number) - Number of devices connected with sync.
-lockwise-connected-device-status =
-    { $count ->
-       *[other] Đã kết nối { $count } thiết bị
-    }
 monitor-title = Xem các rò rỉ dữ liệu
 monitor-link = Nó hoạt động như thế nào
 monitor-header-content-no-account = Kiểm tra tại { -monitor-brand-name } để xem bạn có phải là một phần của rò rỉ dữ liệu hay không và nhận thông báo về các rò rỉ mới.
 monitor-header-content-signed-in = { -monitor-brand-name } cảnh báo bạn nếu thông tin của bạn xuất hiện trong một vụ rò rỉ dữ liệu đã biết.
-monitor-sign-up = Đăng ký cảnh báo vụ rò rỉ
 monitor-sign-up-link = Đăng ký cảnh báo vụ rò rỉ
     .title = Đăng ký cảnh báo vụ rò rỉ trên { -monitor-brand-name }
 auto-scan = Tự động quét ngày hôm nay
@@ -152,14 +121,6 @@ info-known-breaches-resolved =
 info-exposed-passwords-found =
     { $count ->
        *[other] Mật khẩu tiếp xúc trên tất cả các vụ rò rỉ
-    }
-full-report-link = Xem báo cáo đầy đủ về <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>
-# This string is displayed after a large numeral that indicates the total number
-# of saved logins which may have been exposed. Don’t add $count to
-# your localization, because it would result in the number showing twice.
-password-warning =
-    { $count ->
-       *[other] Thông tin đăng nhập đã lưu có thể đã bị lộ trong một vụ rò rỉ dữ liệu. Thay đổi các mật khẩu này để bảo mật trực tuyến tốt hơn. <a data-l10n-name="lockwise-link">Xem thông tin đăng nhập đã lưu</a>
     }
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords that are marked as resolved by the user. Don’t add $count
@@ -221,10 +182,10 @@ bar-tooltip-tracker =
            *[other] { $count } trình theo dõi nội dung ({ $percentage }%)
         }
 bar-tooltip-fingerprinter =
-    .title = Vân tay
+    .title = Dấu Vân tay
     .aria-label =
         { $count ->
-           *[other] { $count } vân tay ({ $percentage }%)
+           *[other] { $count } dấu vân tay ({ $percentage }%)
         }
 bar-tooltip-cryptominer =
     .title = Tiền điện tử

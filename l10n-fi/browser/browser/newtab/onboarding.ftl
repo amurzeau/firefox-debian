@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Lue lisää
-onboarding-button-label-try-now = Kokeile nyt
 onboarding-button-label-get-started = Aloita
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Aloita
 onboarding-welcome-header = Tässä { -brand-short-name }, tervetuloa
 onboarding-welcome-body = Sait selaimen.<br/>Tapaa muut { -brand-product-name }-palvelut.
 onboarding-welcome-learn-more = Lue lisää hyödyistä.
-onboarding-join-form-header = Liity { -brand-product-name }iin
 onboarding-welcome-modal-get-body = Sait selaimen.<br/>Nyt tutustu loppuihin { -brand-product-name }-palveluihin.
 onboarding-welcome-modal-supercharge-body = Sähköistä yksityisyydensuojasi.
 onboarding-welcome-modal-privacy-body = Olet saanut selaimen. Lisätään siihen hieman yksityisyyden suojaa.
@@ -110,6 +108,46 @@ onboarding-multistage-theme-tooltip-alpenglow =
         Käytä värikästä ulkoasua
         painikkeille, valikoille ja ikkunoille.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Käytä käyttöjärjestelmän ulkoasua
+        painikkeille, valikoille ja ikkunoille.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Käytä käyttöjärjestelmän ulkoasua
+        painikkeille, valikoille ja ikkunoille.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Käytä vaaleaa ulkoasua
+        painikkeille, valikoille ja ikkunoille.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Käytä vaaleaa ulkoasua
+        painikkeille, valikoille ja ikkunoille.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Käytä tummaa ulkoasua
+        painikkeille, valikoille ja ikkunoile.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Käytä tummaa ulkoasua
+        painikkeille, valikoille ja ikkunoile.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Käytä värikästä ulkoasua
+        painikkeille, valikoille ja ikkunoille.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Käytä värikästä ulkoasua
+        painikkeille, valikoille ja ikkunoille.
 
 ## Welcome full page string
 
@@ -135,11 +173,7 @@ onboarding-sync-form-sub-header = jatkaaksesi { -sync-brand-name } -palveluun.
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Hyödyllisiä tuotteita
 onboarding-benefit-products-text = Hoida hommat välineillä, jotka kunnioittavat yksityisyyttäsi kaikilla laitteilla.
-onboarding-benefit-knowledge-title = Käytännöllistä tietoutta
-onboarding-benefit-knowledge-text = Lue, miten toimia fiksummin ja turvallisemmin verkossa.
-onboarding-benefit-privacy-title = Todellista yksityisyyttä
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -160,17 +194,6 @@ onboarding-benefit-lockwise-text = Hallitse salasanoja, jotka ovat turvassa ja m
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Yksityinen selaus
-onboarding-private-browsing-text = Selaa itseksesi. Yksityinen selaus varustettuna sisällön estotoiminnolla estää verkkoseuraimet, jotka seuraavat liikkeitäsi verkossa.
-onboarding-screenshots-title = Kuvakaappaukset
-onboarding-screenshots-text = Ota, tallenna ja jaa kuvakaappauksia - poistumatta { -brand-short-name }ista. Ota kaappaus sivun tietystä alueesta tai koko sivusta. Tallenna kuvakaappaus verkkoon, jolloin se on vaivatta käytettävissä ja jaettavissa.
-onboarding-addons-title = Lisäosat
-onboarding-addons-text = Lisää ominaisuuksia, joiden myötä { -brand-short-name } soveltuu tarpeisiisi entistä paremmin. Vertaa hintoja, tarkista sääennuste tai ilmaise itseäsi mukautetun teeman avulla.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Selaa nopeammin, älykkäämmin tai turvallisemmin laajennusten avulla; esimerkkinä Ghostery, joka mahdollistaa ärsyttävien mainosten estämisen.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Synkronointi
-onboarding-fxa-text = Luo { -fxaccount-brand-name } ja synkronoi kirjanmerkit, salasanat ja avoimet välilehdet kaikkialla, missä käytät { -brand-short-name }ia.
 onboarding-tracking-protection-title2 = Suojaa seurannalta
 onboarding-tracking-protection-text2 = { -brand-short-name } auttaa estämään sivustoja seuraamasta sinua verkossa, vaikeuttaen mainoksia seuraamasta sinua ympäri verkkoa.
 onboarding-tracking-protection-button2 = Kuinka se toimii
@@ -179,7 +202,6 @@ onboarding-data-sync-title = Ota asetukset mukaasi
 onboarding-data-sync-text2 = Synkronoi kirjanmerkit, salasanat jne. kaikkialle, missä käytät { -brand-product-name }ia.
 onboarding-data-sync-button2 = Kirjaudu sisään { -sync-brand-short-name }-palveluun
 onboarding-firefox-monitor-title = Pysy ajan tasalla tietovuodoista
-onboarding-firefox-monitor-text = { -monitor-brand-name } tarkkailee, onko sähköpostiosoitteesi ollut mukana tietovuodossa, ja ilmoittaa, jos se on mukana uudessa tietovuodossa.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } tarkkailee, onko sähköpostiosoitteesi ollut mukana tunnetuissa tietovuodoissa ja lähettää sinulle hälytyksen, jos joudut osalliseksi uuteen tietovuotoon.
 onboarding-firefox-monitor-button = Tilaa ilmoitukset
 onboarding-browse-privately-title = Selaa yksityisesti
@@ -196,17 +218,11 @@ onboarding-mobile-phone-button = Lataa mobiiliselain
 onboarding-send-tabs-title = Lähetä välilehtiä itsellesi välittömästi
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Välilehden lähettämisen avulla voit jakaa sivuja laitteidesi välillä, tarvitsematta kopioida, liittää tai poistua selaimesta.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Jaa sivuja helposti laitteidesi välillä, tarvitsematta kopioida, liittää tai poistua selaimesta.
 onboarding-send-tabs-button = Kokeile välilehden lähettämistä
 onboarding-pocket-anywhere-title = Lue ja kuuntele kaikkialla
 onboarding-pocket-anywhere-text2 = Tallenna suosikkisisältösi paikallisesti { -pocket-brand-name }-sovelluksella ja lue, kuuntele sekä katsele, kun sinulle sopii.
 onboarding-pocket-anywhere-button = Kokeile { -pocket-brand-name }-palvelua
-onboarding-lockwise-passwords-title = Ota salasanat mukaasi kaikkialle
-onboarding-lockwise-passwords-text2 = Pidä tallentamasi salasanat turvassa ja kirjaudu tileillesi helposti { -lockwise-brand-name } -ohjelmalla.
-onboarding-lockwise-passwords-button2 = Hanki sovellus
 onboarding-lockwise-strong-passwords-title = Luo ja tallenna vahvoja salasanoja
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } luo vahvoja salasanoja saman tien ja säilyttää ne kaikki samassa paikassa.
 onboarding-lockwise-strong-passwords-button = Hallitse kirjautumistietojasi

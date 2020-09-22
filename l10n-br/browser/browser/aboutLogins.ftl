@@ -128,15 +128,19 @@ about-logins-copy-password-os-auth-dialog-message-win = Evit eilañ ho ker-treme
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = eilañ ar ger-tremen enrollet
+
+## Master Password notification
+
+master-password-notification-message = Enankit ho ker-tremen mestr evit gwelout an titouroù kennaskañ enrollet
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Evit ezporzhiañ ho titouroù kennaskañ, enankit ho titouroù Windows. Sikour a ra da wareziñ diogelroez ho kontoù.
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = ezporzhiañ an titouroù kennaskañ enrollet
 
-## Master Password notification
+## Primary Password notification
 
-master-password-notification-message = Enankit ho ker-tremen mestr evit gwelout an titouroù kennaskañ enrollet
+about-logins-primary-password-notification-message = Enankit ho ker-tremen pennañ evit gwelout an titouroù kennaskañ enrollet
 master-password-reload-button =
     .label = Kennaskañ
     .accesskey = K

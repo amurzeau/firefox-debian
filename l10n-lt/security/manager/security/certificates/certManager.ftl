@@ -208,6 +208,8 @@ cert-not-verified-issuer-unknown = Negalima patikrinti šio liudijimo, nes neži
 cert-not-verified-ca-invalid = Negalima patikrinti šio liudijimo, nes LĮ liudijimas negalioja.
 cert-not-verified_algorithm-disabled = Negalima patikrinti šio liudijimo, nes jis pasirašytas, naudojant parašo algoritmą, kuris yra išjungtas, nes nesaugus.
 cert-not-verified-unknown = Negalima patikrinti šio liudijimo (priežastys nežinomos).
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Nesiųsti kliento liudijimo
 
 ## Add Security Exception dialog
 

@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = En savoir plus
-onboarding-button-label-try-now = Essayer
 onboarding-button-label-get-started = Pour commencer
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Pour commencer
 onboarding-welcome-header = Bienvenue dans { -brand-short-name }
 onboarding-welcome-body = Vous avez le navigateur.<br/>Découvrez les autres ressources de { -brand-product-name }.
 onboarding-welcome-learn-more = Découvrir tous les avantages.
-onboarding-join-form-header = Rejoignez { -brand-product-name }
 onboarding-welcome-modal-get-body = Vous avez le navigateur. <br/>Profitez maintenant au maximum de { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Boostez votre protection de la vie privée.
 onboarding-welcome-modal-privacy-body = Vous avez le navigateur. Ajoutons davantage de protection de la vie privée.
@@ -111,6 +109,48 @@ onboarding-multistage-theme-tooltip-alpenglow =
         Utiliser un thème coloré pour les boutons,
         les menus et les fenêtres.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Suivre l’apparence de votre système
+        d’exploitation pour les boutons,
+        les menus et les fenêtres.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Suivre l’apparence de votre système
+        d’exploitation pour les boutons,
+        les menus et les fenêtres.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Utiliser un thème clair pour les boutons,
+        les menus et les fenêtres.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Utiliser un thème clair pour les boutons,
+        les menus et les fenêtres.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Utiliser un thème sombre pour les boutons,
+        les menus et les fenêtres.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Utiliser un thème sombre pour les boutons,
+        les menus et les fenêtres.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Utiliser un thème coloré pour les boutons,
+        les menus et les fenêtres.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Utiliser un thème coloré pour les boutons,
+        les menus et les fenêtres.
 
 ## Welcome full page string
 
@@ -136,11 +176,7 @@ onboarding-sync-form-sub-header = pour continuer avec { -sync-brand-name }.
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Des logiciels à votre service
 onboarding-benefit-products-text = Améliorez votre productivité grâce à un ensemble d’outils qui respectent votre vie privée sur tous vos appareils.
-onboarding-benefit-knowledge-title = Des connaissances utiles
-onboarding-benefit-knowledge-text = Apprenez tout ce qu’il faut savoir pour naviguer intelligemment et en sécurité.
-onboarding-benefit-privacy-title = Le respect de la vie privée, pour de vrai
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -161,17 +197,6 @@ onboarding-benefit-lockwise-text = Gérez des mots de passe protégés et portab
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Navigation privée
-onboarding-private-browsing-text = Naviguez à l’abri des regards. La navigation privée avec blocage de contenu arrête les traqueurs qui vous pistent partout sur le Web.
-onboarding-screenshots-title = Captures d’écran
-onboarding-screenshots-text = Prenez des captures d’écran, enregistrez-les et partagez-les sans quitter { -brand-short-name }. Capturez une zone de la page ou la page entière pendant que vous naviguez. Enregistrez ensuite votre capture en ligne pour y accéder facilement et la partager.
-onboarding-addons-title = Modules complémentaires
-onboarding-addons-text = Ajoutez encore plus de fonctionnalités pour que { -brand-short-name } en fasse davantage pour vous. Comparez les prix, consultez la météo ou affirmez-vous avec un thème personnalisé.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Naviguez plus vite, plus intelligemment ou avec plus de sécurité avec des extensions comme Ghostery qui vous permet de bloquer les publicités envahissantes.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Synchroniser
-onboarding-fxa-text = Créez votre { -fxaccount-brand-name } et synchronisez vos marque-pages, vos mots de passe et onglets ouverts partout où vous utilisez { -brand-short-name }.
 onboarding-tracking-protection-title2 = Protection contre le pistage
 onboarding-tracking-protection-text2 = { -brand-short-name } empêche les sites web de vous pister pendant votre navigation, ce qui complique la tâche des publicités qui tentent de vous suivre sur le Web.
 onboarding-tracking-protection-button2 = Principes de fonctionnement
@@ -180,7 +205,6 @@ onboarding-data-sync-title = Emportez vos paramètres avec vous
 onboarding-data-sync-text2 = Synchronisez marque-pages, mots de passe, etc., partout où vous utilisez { -brand-product-name }.
 onboarding-data-sync-button2 = Se connecter à { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Suivez de près les fuites de données
-onboarding-firefox-monitor-text = { -monitor-brand-name } vérifie si votre adresse électronique fait partie d’une fuite de données et vous alerte si elle apparaît dans une nouvelle fuite de données.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } vérifie si votre adresse électronique fait partie d’une fuite de données connue et vous alerte si elle apparaît dans une nouvelle fuite de données.
 onboarding-firefox-monitor-button = S’abonner aux alertes
 onboarding-browse-privately-title = Naviguez en toute confidentialité
@@ -199,9 +223,6 @@ onboarding-mobile-phone-button = Télécharger le navigateur mobile
 onboarding-send-tabs-title = Envoyez-vous des onglets
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = L’envoi d’onglets partage instantanément des pages entre vos appareils sans avoir à copier, coller ou quitter le navigateur.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Partagez facilement des pages entre vos divers appareils sans copier de liens ni quitter le navigateur.
 onboarding-send-tabs-button =
     Commencer à utiliser
@@ -209,9 +230,6 @@ onboarding-send-tabs-button =
 onboarding-pocket-anywhere-title = Lisez et écoutez, où que vous soyez
 onboarding-pocket-anywhere-text2 = Enregistrez vos contenus préférés hors connexion avec l’application { -pocket-brand-name } pour les lire, regarder ou écouter quand bon vous semble.
 onboarding-pocket-anywhere-button = Essayer { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Emmenez vos mots de passe partout
-onboarding-lockwise-passwords-text2 = Conservez en sécurité les mots de passe que vous enregistrez et connectez-vous en toute simplicité à vos comptes avec { -lockwise-brand-name }.
-onboarding-lockwise-passwords-button2 = Obtenir l’application
 onboarding-lockwise-strong-passwords-title = Créez et stockez des mots de passe robustes
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } crée à la volée des mots de passe robustes et les enregistre tous en un seul endroit.
 onboarding-lockwise-strong-passwords-button = Gérer vos identifiants

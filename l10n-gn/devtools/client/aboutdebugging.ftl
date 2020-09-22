@@ -83,8 +83,6 @@ about-debugging-setup-title = Ñembosako’i
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Emboheko mba’éichapa eikéta emopotĩ hag̃ua okáguio ne mba’e’oka.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox = Eipuru <a>{ about-debugging-this-firefox-runtime-name }</a> emopotĩ hag̃ua tendayke, jepysokue ha Mba’apohára mba’epytyvõrãguáva ko peteĩchagua { -brand-shorter-name }.
-# Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox2 = Eipuru { about-debugging-this-firefox-runtime-name }</a> emopotĩ hag̃ua tendayke, jepysokue ha service workers kóva ko { -brand-shorter-name } rehegua.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Embojuaju peteĩ mba’e’oka
@@ -180,13 +178,6 @@ about-debugging-runtime-service-workers-not-compatible = Pe kundahára ñembohek
 # { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
 about-debugging-browser-version-too-old = Aravo tembiaporã joajupyre oguereko itujáva ({ $runtimeVersion }). Ojokutyvéva ha’e ({ $minVersion }). Kóva ha’e peteĩ ñemboheko ndojokupytýiva ha ikatu ombyai DevTools rembiapo. Okatúpiko hembohekopyahu aravo tembiaporã joajupyre ndive. <a>Apañuãi ñemoĩporã</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# - from Fx 67 to 66 or to 65
-# - from Fx 68 to 66
-# Those are normally in range for DevTools compatibility policy, but specific non
-# backward compatible changes broke the debugger in those scenarios (Bug 1528219).
-# { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-about-debugging-browser-version-too-old-67-debugger = Ikatuhína pe mopotĩha rupa ndoikói aravo eike jave. Eipuru Firefox { $runtimeVersion } eipuruséramo mopotĩha ko kundaha ndive.
-# Dedicated message for a backward compatibility issue that occurs when connecting:
 # from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
 about-debugging-browser-version-too-old-fennec = Ko Firefox rembiapokue ndaikatúi omopotĩ Firefox Android (68) peg̃uarã. Roipota pemohenda Firefox Android Nightly ne pumbyrýpe eha’ãkuaa hag̃ua. <a>Mba’emimive</a>
 # This string is displayed in the runtime page if the remote browser version is too recent.
@@ -227,9 +218,9 @@ about-debugging-debug-target-list-empty = Na’írã gueteri.
 about-debugging-debug-target-inspect-button = Ma’ẽag̃ui
 # Text of a button displayed in the "This Firefox" page, in the Temporary Extension
 # section. Clicking on the button will open a file picker to load a temporary extension
-about-debugging-tmp-extension-install-button = Emyenyhẽ moimbaha sapy’aguáva…
+about-debugging-tmp-extension-install-button = Emyenyhẽ moĩmbaha sapy’aguáva…
 # Text displayed when trying to install a temporary extension in the "This Firefox" page.
-about-debugging-tmp-extension-install-error = Oiko jejavy emohendakuévo moimbaha sapy’agua.
+about-debugging-tmp-extension-install-error = Oiko jejavy emohendakuévo moĩmbaha sapy’agua.
 # Text of a button displayed for a temporary extension loaded in the "This Firefox" page.
 # Clicking on the button will reload the extension.
 about-debugging-tmp-extension-reload-button = Myanyhẽjey
@@ -259,13 +250,6 @@ about-debugging-extension-location =
 # For instance "geckoprofiler@mozilla.com" or "{ed26ddcb-5611-4512-a89a-51b8db81cfb2}".
 about-debugging-extension-id =
     .label = ID jepysokue
-# This string is displayed as a label of the button that pushes a test payload
-# to a service worker.
-# Notes, this relates to the "Push" API, which is normally not localized so it is
-# probably better to not localize it.
-about-debugging-worker-action-push = Myaña
-# This string is displayed as a label of the button that starts a service worker.
-about-debugging-worker-action-start = Ñepyrũ
 # This string is displayed as a label of the button that pushes a test payload
 # to a service worker.
 # Note this relates to the "Push" API, which is normally not localized so it is

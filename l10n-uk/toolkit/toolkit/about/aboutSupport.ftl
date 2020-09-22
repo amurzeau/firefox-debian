@@ -80,6 +80,9 @@ show-dir-label =
         [windows] Відкрити теку
        *[other] Відкрити каталог
     }
+environment-variables-title = Змінні середовища
+environment-variables-name = Назва
+environment-variables-value = Значення
 experimental-features-title = Експериментальні можливості
 experimental-features-name = Назва
 experimental-features-value = Значення
@@ -107,8 +110,6 @@ graphics-desktop-environment = Середовище робочого столу
 place-database-title = База даних Places
 place-database-integrity = Цілісність
 place-database-verify-integrity = Перевірити цілісність
-js-title = JavaScript
-js-incremental-gc = Інкрементний GC
 a11y-title = Доступність
 a11y-activated = Активовано
 a11y-force-disabled = Блокувати можливості доступності
@@ -138,7 +139,6 @@ restart-button-label = Перезапустити
 
 audio-backend = Обробка аудіо
 max-audio-channels = Максимальне число каналів
-channel-layout = Основний формат каналів
 sample-rate = Основна частота
 roundtrip-latency = Затримка в обох напрямках (стандартне відхилення)
 media-title = Медіа
@@ -287,7 +287,6 @@ support-blocklisted-bug = Заблоковано, у зв'язку з відом
 unknown-failure = Заблоковано; код помилки { $failureCode }
 d3d11layers-crash-guard = Композитор D3D11
 d3d11video-crash-guard = Відео декодер D3D11
-d3d9video-crash-buard = Відео декодер D3D9
 d3d9video-crash-guard = Відео декодер D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Відео декодер WMF VPX

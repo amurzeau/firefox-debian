@@ -77,6 +77,9 @@ show-dir-label =
         [windows] Agor Ffolder
        *[other] Agor Cyfeiriadur
     }
+environment-variables-title = Newidiolion Amgylcheddol
+environment-variables-name = Enw
+environment-variables-value = Gwerth
 experimental-features-title = Nodweddion Arbrofol
 experimental-features-name = Enw
 experimental-features-value = Gwerth
@@ -104,8 +107,6 @@ graphics-desktop-environment = Amgylchedd Bwrdd Gwaith
 place-database-title = Cronfa Ddata Mannau
 place-database-integrity = Cyfanrwydd
 place-database-verify-integrity = Gwirio Cyfanrwydd
-js-title = JavaScript
-js-incremental-gc = GC Cynnyddol
 a11y-title = Hygyrchedd
 a11y-activated = Gweithredu
 a11y-force-disabled = Atal Hygyrchedd
@@ -135,7 +136,6 @@ restart-button-label = Ailgychwyn
 
 audio-backend = Cefn Sain
 max-audio-channels = Mwyaf o Sianeli
-channel-layout = Cynllun Sianeli Amgen
 sample-rate = Graddfa Samplo Amgen
 roundtrip-latency = Cylchdro cudd (gwyriad safonol)
 media-title = Cyfrwng
@@ -299,7 +299,6 @@ support-blocklisted-bug = Ar y Rhestr Rhwystro oherwydd materion hysbys: <a data
 unknown-failure = Wedi ei rwystro; gwall cod { $failureCode }
 d3d11layers-crash-guard = Cyfosodwr D3D11
 d3d11video-crash-guard = Dadgodiwr Fideo D3D11
-d3d9video-crash-buard = Dadgodiwr Fideo D3D9
 d3d9video-crash-guard = Dadgodiwr Fideo D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Dadgodiwr Fideo WMF VPX

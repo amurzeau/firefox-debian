@@ -18,3 +18,4 @@ about-httpsonly-explanation-nosupport = Kemungkinan besar, situs web tidak mendu
 about-httpsonly-explanation-risk = Mungkin juga ada penyerang yang terlibat. Jika Anda memutuskan untuk mengunjungi situs web, Anda tidak boleh memasukkan informasi sensitif seperti sandi, surel, atau detail kartu kredit.
 about-httpsonly-button-accept-and-continue = Terima Risikonya dan Lanjutkan
 about-httpsonly-button-go-back = Kembali
+about-httpsonly-link-learn-more = Pelajari Lebih Lanjut…

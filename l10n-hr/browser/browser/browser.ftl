@@ -175,7 +175,7 @@ full-screen-exit =
 
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
-search-one-offs-with-title = Ovaj put traži s:
+search-one-offs-with-title = Ovaj put traži pomoću:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -186,10 +186,10 @@ search-one-offs-context-open-new-tab =
     .label = Traži u novoj kartici
     .accesskey = t
 search-one-offs-context-set-as-default =
-    .label = Postavi kao zadanu tražilicu
+    .label = Postavi kao standardnu tražilicu
     .accesskey = d
 search-one-offs-context-set-as-default-private =
-    .label = Postavi zadanu pretragu za privatne prozore
+    .label = Postavi kao standardnu tražilicu za privatne prozore
     .accesskey = P
 # Search engine one-off buttons with an @alias shortcut/keyword.
 # Variables:
@@ -235,15 +235,15 @@ identity-extension-page = Ova stranica je učitana iz dodatka.
 identity-active-blocked = { -brand-short-name } je blokirao dijelove ove stranice koji nisu sigurni.
 identity-custom-root = Vezu je potvrdio izdavatelj certifikata kojeg Mozilla ne prepoznaje.
 identity-passive-loaded = Dijelovi ove stranice nisu sigurni (poput slika).
-identity-active-loaded = Isključena je zaštita na ovoj stranici.
-identity-weak-encryption = Ova stranica koristi slabu enkripciju.
+identity-active-loaded = Zaštita je deaktivirana na ovoj stranici.
+identity-weak-encryption = Ova stranica koristi slabo šifriranje.
 identity-insecure-login-forms = Prijave na ovoj stranici mogu biti kompromitirane.
 identity-permissions =
     .value = Dozvole
 identity-permissions-reload-hint = Stranica se možda mora ponovo učitati, kako bi se primijenile promjene.
 identity-permissions-empty = Ovoj stranici niste dali nikakva posebna dopuštenja.
 identity-clear-site-data =
-    .label = Obriši kolačiće i podatke stranice…
+    .label = Izbriši kolačiće i podatke stranica …
 identity-connection-not-secure-security-view = Nisi sigurno povezan/a na ovu stranicu.
 identity-connection-verified = Sigurno si povezan/a na ovu stranicu.
 identity-ev-owner-label = Certifikat izdan za:
@@ -317,13 +317,43 @@ enable-devtools-popup-description = Kako biste koristili F12 prečicu, prvo otvo
 ## URL Bar
 
 urlbar-default-placeholder =
-    .defaultPlaceholder = Pretraži ili upiši adresu
+    .defaultPlaceholder = Traži ili upiši adresu
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
-    .placeholder = Pretraži ili upiši adresu
+    .placeholder = Traži ili upiši adresu
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Pretraži web
+    .aria-label = Traži pomoću { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Upiši tražene pojmove
+    .aria-label = Pretraži { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Upiši tražene pojmove
+    .aria-label = Pretraži zabilješke
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Upiši tražene pojmove
+    .aria-label = Pretraži povijest
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Upiši tražene pojmove
+    .aria-label = Pretraži kartice
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
-    .placeholder = Pretraži s { $name } ili unesi adresu
+    .placeholder = Traži pomoću { $name } ili upiši adresu
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Preglednik se kontrolira s udaljene lokacije
 urlbar-permissions-granted =

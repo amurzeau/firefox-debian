@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Көбірек білу
-onboarding-button-label-try-now = Оны қазір көру
 onboarding-button-label-get-started = Бастау
 
 ## Welcome modal dialog strings
@@ -21,7 +20,6 @@ onboarding-button-label-get-started = Бастау
 onboarding-welcome-header = { -brand-short-name } өніміне қош келдіңіз
 onboarding-welcome-body = Браузеріңіз бар.<br/>{ -brand-product-name } қалған бөлігімен танысыңыз.
 onboarding-welcome-learn-more = Артықшылықтары туралы көбірек біліңіз.
-onboarding-join-form-header = { -brand-product-name } қоғамдастығына қосылыңыз
 onboarding-welcome-modal-get-body = Браузеріңіз бар.<br/>Енді { -brand-product-name } максималды мәнін алыңыз.
 onboarding-welcome-modal-supercharge-body = Құпиялылықты қорғаңыз.
 onboarding-welcome-modal-privacy-body = Браузеріңіз бар. Көбірек жекелік қорғанысты қосайық.
@@ -110,6 +108,46 @@ onboarding-multistage-theme-tooltip-alpenglow =
         Батырмалар, мәзірлер және терезелер үшін
         түрлі түсті сыртқы түрін қолдану.
     .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Батырмалар, мәзірлер және терезелер үшін
+        операциялық жүйенің сыртқы түрін мұралау.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Батырмалар, мәзірлер және терезелер үшін
+        операциялық жүйенің сыртқы түрін мұралау.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Батырмалар, мәзірлер және терезелер үшін
+        ашық түсті сыртқы түрін қолдану.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Батырмалар, мәзірлер және терезелер үшін
+        ашық түсті сыртқы түрін қолдану.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Батырмалар, мәзірлер және терезелер үшін
+        күңгірт түсті сыртқы түрін қолдану.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Батырмалар, мәзірлер және терезелер үшін
+        күңгірт түсті сыртқы түрін қолдану.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Батырмалар, мәзірлер және терезелер үшін
+        түрлі түсті сыртқы түрін қолдану.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Батырмалар, мәзірлер және терезелер үшін
+        түрлі түсті сыртқы түрін қолдану.
 
 ## Welcome full page string
 
@@ -135,11 +173,7 @@ onboarding-sync-form-sub-header = { -sync-brand-name } жалғастыру үш
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Пайдалы өнімдер
 onboarding-benefit-products-text = Құрылғыларыңыздағы жеке өміріңізді құрметтейтін құралдар отбасымен жұмыс жасаңыз.
-onboarding-benefit-knowledge-title = Практикалық білім
-onboarding-benefit-knowledge-text = Интернетте ақылдырақ және қауіпсіз болу үшін білуіңіз керек барлық нәрсені біліңіз.
-onboarding-benefit-privacy-title = Шынайы жекелік
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -160,17 +194,6 @@ onboarding-benefit-lockwise-text = Қорғалған және тасымалд�
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Жекелік шолу режимі
-onboarding-private-browsing-text = Өздігінен шолыңыз. Құраманы бұғаттауы бар жекелік шолу режимі интернетте сізді бақылайтын трекерлерді бұғаттайды.
-onboarding-screenshots-title = Скриншоттар
-onboarding-screenshots-text = Скриншоттарды түсіру, сақтау және олармен бөлісу - тура { -brand-short-name } ішінен. Шолу кезінде аймақты немесе толық парақты түсіріп алыңыз. Одан кейін, жеңіл қатынау және бөлісу үшін оны интернетте сақтаңыз.
-onboarding-addons-title = Қосымшалар
-onboarding-addons-text = Сіз үшін { -brand-short-name } күштірек жұмыс жасау үшін, оған мүмкіндіктерді қосыңыз. Бағаларды салыстыру, ауа райын тексеру немесе таңдауыңызша теманы орнатуға болады.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Мазаңызды алатын жарнаманы бұғаттай алатын Ghostery сияқты кеңейтулермен жылдам, ақылды және қауіпсіз түрде шолыңыз.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Синхрондау
-onboarding-fxa-text = { -fxaccount-brand-name } тіркелгісін жасап, өзіңіз { -brand-short-name } қолданатын әр жерде бетбелгілер, парольдер және ашық беттерді синхрондаңыз.
 onboarding-tracking-protection-title2 = Бақылаудан қорғаныс
 onboarding-tracking-protection-text2 = { -brand-short-name } веб-сайттарды сізді желіде бақылауды тоқтатуға көмектеседі, жарнамаға сізді интернетте артыңыздан еруді қиындатады.
 onboarding-tracking-protection-button2 = Ол қалай жұмыс істейді
@@ -179,7 +202,6 @@ onboarding-data-sync-title = Баптауларыңызды өзіңізбен �
 onboarding-data-sync-text2 = { -brand-product-name } қолданатын барлық жерде бетбелгілер, парольдер және т.б. синхрондаңыз.
 onboarding-data-sync-button2 = { -sync-brand-short-name } ішіне кіріңіз
 onboarding-firefox-monitor-title = Деректердің жайылып кетулері туралы біліп отырыңыз
-onboarding-firefox-monitor-text = { -monitor-brand-name } сіздің эл. пошта адресіңіз деректердің жайылып кетуінде көрінгенін бақылап, табылған уақытта сізге хабарлайды.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } сіздің эл. пошта адресіңіз деректердің белгілі ұрлануында көрінгенін бақылап, табылған уақытта сізге хабарлайды.
 onboarding-firefox-monitor-button = Хабарламаларға жазылу
 onboarding-browse-privately-title = Жекелік түрде шолыңыз
@@ -196,17 +218,11 @@ onboarding-mobile-phone-button = Мобильді браузерді жүкте�
 onboarding-send-tabs-title = Браузер беттерін өзіңізге лезде жіберіңіз
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Беттерді жіберу мүмкіндігі құрылғыларыңыз арасында браузер беттерін көшіру, кірістіру немесе браузерден кетусіз-ақ бөлісуге мүмкіндік береді.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Сілтемелерді көшірмей, немесе браузерден кетусіз-ақ беттермен жеңіл түрде бөлісіңіз.
 onboarding-send-tabs-button = Беттерді жіберу мүмкіндігін қолдануды бастау
 onboarding-pocket-anywhere-title = Кез келген жерде оқу және тыңдау
 onboarding-pocket-anywhere-text2 = Таңдамалы мазмұнды оффлайн түрде { -pocket-brand-name } қолданбасымен сақтап, өзіңізге лайықты уақытта оқу, тыңдау немесе қарауға болады.
 onboarding-pocket-anywhere-button = { -pocket-brand-name } қолданып көріңіз
-onboarding-lockwise-passwords-title = Парольдеріңізді өзіңізбен бірге алып жүріңіз
-onboarding-lockwise-passwords-text2 = { -lockwise-brand-name } көмегімен парольдерді қауіпсіз сақтаңыз және тіркелгілеріңізге оңай кіріңіз.
-onboarding-lockwise-passwords-button2 = Қолданбаны алу
 onboarding-lockwise-strong-passwords-title = Қатаң парольдерді жасау және сақтау
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } қатаң парольдерді лезде жасайды және олардың барлығын бір жерде сақтайды.
 onboarding-lockwise-strong-passwords-button = Логиндеріңізді басқару

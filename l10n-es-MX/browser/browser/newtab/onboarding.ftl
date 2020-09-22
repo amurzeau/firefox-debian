@@ -13,18 +13,13 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Más información
-onboarding-button-label-try-now = Pruébalo ahora
 onboarding-button-label-get-started = Comenzar
 
 ## Welcome modal dialog strings
 
 onboarding-welcome-header = Bienvenido a { -brand-short-name }
-# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
-# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
-onboarding-multistage-welcome-header = Te damos la bienvenida a <span data-l10n-name = "zap">{ -brand-short-name }</span>
 onboarding-welcome-body = Conseguiste el navegador.<br/>Conoce el resto de la familia { -brand-product-name }.
 onboarding-welcome-learn-more = Conoce más sobre los beneficios.
-onboarding-join-form-header = Únete a { -brand-product-name }
 onboarding-welcome-modal-get-body = Tienes el navegador.<br/>Ahora sácale el máximo provecho a { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Maximiza tu protección de privacidad.
 onboarding-welcome-modal-privacy-body = Tienes el navegador. Ahora agrega más protección de privacidad.
@@ -44,16 +39,115 @@ onboarding-start-browsing-button-label = Empieza a navegar
 onboarding-cards-dismiss =
     .title = Descartar
     .aria-label = Descartar
-# Tooltip displayed on hover of top sites in import settings screen during onboarding flow.
-# This support welcome screen showing top sites imported from the user's default browser.
-# Title text is kept multiline to ensure tooltip container width is not more than 40 characters.
-onboarding-import-sites-info =
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Te damos la bienvenida a <span data-l10n-name = "zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = El navegador rápido, seguro y privado respaldado por una organización sin fines de lucro.
+onboarding-multistage-welcome-primary-button-label = Iniciar configuración
+onboarding-multistage-welcome-secondary-button-label = Iniciar sesión
+onboarding-multistage-welcome-secondary-button-text = ¿Tienes una cuenta?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Importa tus contraseñas, <br/>marcadores y <span data-l10n-name = "zap">más</span>
+onboarding-multistage-import-subtitle = ¿Vienes de otro navegador? Es fácil traer todo a { -brand-short-name }.
+onboarding-multistage-import-primary-button-label = Iniciar importación
+onboarding-multistage-import-secondary-button-label = Ahora no
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Los sitios listados aquí fueron encontrados en este dispositivo. { -brand-short-name } no guarda ni sincroniza datos de otro navegador a menos que elijas importarlos.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Primeros pasos: pantalla { $current } de { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Selecciona un <span data-l10n-name="zap">aspecto</span>
+onboarding-multistage-theme-subtitle = Personaliza { -brand-short-name } con un tema.
+onboarding-multistage-theme-primary-button-label = Guardar tema
+onboarding-multistage-theme-secondary-button-label = Ahora no
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = Automático
+# System refers to the operating system
+onboarding-multistage-theme-description-automatic = Usar tema del sistema
+onboarding-multistage-theme-label-light = Claro
+onboarding-multistage-theme-label-dark = Oscuro
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic =
     .title =
-        En este dispositivo se encontraron estos sitios.
-        { -brand-short-name } no guarda ni sincroniza datos de
-        otro navegador a menos que elijas
-        importarlo.
-    .aria-label = { onboarding-import-sites-info.title }
+        Heredar la apariencia de tu sistema
+        operativo para botones, menús y ventanas.
+    .aria-label = { onboarding-multistage-theme-tooltip-automatic.title }
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light =
+    .title =
+        Usar una apariencia clara para botones, 
+        menús y ventanas.
+    .aria-label = { onboarding-multistage-theme-tooltip-light.title }
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark =
+    .title =
+        Usar una apariencia oscura para botones, 
+        menús y ventanas.
+    .aria-label = { onboarding-multistage-theme-tooltip-dark.title }
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow =
+    .title =
+        Usar una apariencia colorida para botones,
+        menús y ventanas.
+    .aria-label = { onboarding-multistage-theme-tooltip-alpenglow.title }
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Heredar la apariencia de tu sistema
+        operativo para botones, menús y ventanas.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Heredar la apariencia de tu sistema
+        operativo para botones, menús y ventanas.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Usar una apariencia clara para botones, 
+        menús y ventanas.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Usar una apariencia clara para botones, 
+        menús y ventanas.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Usar una apariencia oscura para botones, 
+        menús y ventanas.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Usar una apariencia oscura para botones, 
+        menús y ventanas.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Usar una apariencia colorida para botones,
+        menús y ventanas.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Usar una apariencia colorida para botones,
+        menús y ventanas.
 
 ## Welcome full page string
 
@@ -79,11 +173,7 @@ onboarding-sync-form-sub-header = para continuar a { -sync-brand-name }.
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Productos útiles
 onboarding-benefit-products-text = Termina tus pendientes con una familia de herramientas que respeta tu privacidad a través de tus dispositivos.
-onboarding-benefit-knowledge-title = Conocimiento práctico
-onboarding-benefit-knowledge-text = Conoce todo lo que necesitas saber para mantenerte inteligente y seguro en línea.
-onboarding-benefit-privacy-title = Privacidad de verdad
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -104,17 +194,6 @@ onboarding-benefit-lockwise-text = Administra tus contraseñas manteniéndolas p
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Navegación Privada
-onboarding-private-browsing-text = Navegue en solitatio. Navegación Privada con Bloqueo de Contenido bloquea los rastreadores en línea que te siguen por la web.
-onboarding-screenshots-title = Screenshots
-onboarding-screenshots-text = Toma, guarda y comparte capturas de pantalla sin dejar { -brand-short-name }. Captura una parte o la página completa mientras navegas. Luego guarda en la web para compartir y acceder fácilmente.
-onboarding-addons-title = Complementos
-onboarding-addons-text = Agrega aun más funcionalidades para hacer que { -brand-short-name } trabaje mejor para ti. Compara precios, mira el clima o expresa tu personalidad con un tema personalizado.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Navega más rápido, de manera más inteligente o segura con complementos como Ghostery que te permite bloquear los molestos anuncios.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Sincronizar
-onboarding-fxa-text = Registrate para tener una { -fxaccount-brand-name } y sincroniza tus marcadores, contraseñas y pestañas abiertas donde uses { -brand-short-name }.
 onboarding-tracking-protection-title2 = Protección antirrastreo
 onboarding-tracking-protection-text2 = { -brand-short-name } te ayuda a impedir que los sitios web te rastreen en línea, por lo que será más difícil que la publicidad te siga mientras navegas.
 onboarding-tracking-protection-button2 = Cómo funciona
@@ -123,7 +202,6 @@ onboarding-data-sync-title = Lleva tu configuración contigo
 onboarding-data-sync-text2 = Sincroniza tus marcadores, contraseñas y más donde sea que uses { -brand-product-name }.
 onboarding-data-sync-button2 = Inicia sesión en { -sync-brand-short-name }
 onboarding-firefox-monitor-title = Mantente alerta de filtraciones de datos
-onboarding-firefox-monitor-text = { -monitor-brand-name } monitorea si tu correo ha aparecido en una filtración de datos y te alerta si aparece en una nueva filtración.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } controla si tu dirección de correo apareció en una filtración de datos conocida y te avisa si aparece en una nueva filtración.
 onboarding-firefox-monitor-button = Regístrate para alertas
 onboarding-browse-privately-title = Navega con privacidad
@@ -140,17 +218,11 @@ onboarding-mobile-phone-button = Descargar navegador para celulares
 onboarding-send-tabs-title = Envíate pestañas al instante
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Enviar pestañas comparte instantáneamente páginas entre tus dispositivos sin tener que copiar, pegar o abandonar el navegador.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Comparte fácilmente páginas entre tus dispositivos sin tener que copiar, pegar o salir del navegador.
 onboarding-send-tabs-button = Empieza a usar Send Tabs
 onboarding-pocket-anywhere-title = Lee y escucha en cualquier lugar
 onboarding-pocket-anywhere-text2 = Guarda tu contenido favorito para disfrutarlo sin conexión con { -pocket-brand-name }. Lee, escucha y mira lo que quieras, cuando quieras.
 onboarding-pocket-anywhere-button = Prueba { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Lleva tus contraseñas a todas partes
-onboarding-lockwise-passwords-text2 = Mantén seguras tus contraseñas y accede con facilidad a tus cuentas con { -lockwise-brand-name }.
-onboarding-lockwise-passwords-button2 = Obtener la aplicación
 onboarding-lockwise-strong-passwords-title = Crea y almacena contraseñas fuertes
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } crea contraseñas fuertes en el acto y las guarda en un único lugar.
 onboarding-lockwise-strong-passwords-button = Administra tus inicios de sesión

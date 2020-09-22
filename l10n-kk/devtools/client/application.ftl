@@ -24,9 +24,6 @@ serviceworker-worker-unregister = Тіркеуден босату
 # displayed when the link is disabled.
 serviceworker-worker-debug = Жөндеу
     .title = Тек орындалып тұрған service worker-ді жөндеуге болады
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = Бастау
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
 serviceworker-worker-debug-forbidden = Жөндеу
@@ -57,9 +54,6 @@ serviceworker-worker-status = Қалып-күйі
 serviceworker-worker-status-running = Орындалуда
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = Тоқтатылған
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = Тіркелуде
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = Service Worker-ді осында бақылау үшін, оны тіркеуіңіз керек. <a>Көбірек білу</a>
@@ -84,6 +78,10 @@ manifest-view-header = Қолданба манифесті
 # Header for the Manifest page when there's no manifest to inspect
 # The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
 manifest-empty-intro = Веб қолданбаны осында бақылау үшін, оған манифестті қосуыңыз керек. <a>Көбірек білу</a>
+# Header for the Manifest page when there's no manifest to inspect
+manifest-empty-intro2 = Веб-қолданба манифесті табылған жоқ
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro-link = Манифестті қалай қосуға болатыны туралы біліңіз
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = Қателер мен ескертулер
 # Header for the Identity section of Manifest inspection displayed in the application panel.

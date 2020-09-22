@@ -77,6 +77,9 @@ show-dir-label =
         [windows] Ldi akaram
        *[other] Ldi akaram
     }
+environment-variables-title = Imuttiyen n twennaṭ
+environment-variables-name = Isem
+environment-variables-value = Azal
 experimental-features-title = Timahihilin tirmitanin
 experimental-features-name = Isem
 experimental-features-value = Azal
@@ -104,8 +107,6 @@ graphics-desktop-environment = Tawennaḍt n tnarit
 place-database-title = Taffa n isefka n idigen
 place-database-integrity = Timmad
 place-database-verify-integrity = Senqed timmad
-js-title = JavaScript
-js-incremental-gc = Amḥettit (GC) aseffansan
 a11y-title = Tuffart
 a11y-activated = Irmed
 a11y-force-disabled = Sewḥel tuffart
@@ -135,7 +136,6 @@ restart-button-label = Ales asenker
 
 audio-backend = Ameslaw ɣer deffir
 max-audio-channels = Amḍan afellay n ibuda
-channel-layout = Taneɣruft n udabu i tebɣiḍ
 sample-rate = Afmiḍi n imedyaten i tebɣiḍ
 roundtrip-latency = Akud n ugani s tirza d tuɣalin (Amgared tizeɣt)
 media-title = Allalen n teγwalt
@@ -279,7 +279,6 @@ support-blocklisted-bug = Tabdart tettusewḥel ssebba n wugur yettwassnen: <a d
 unknown-failure = Yettusewḥel; tangalt n tuccḍa { $failureCode }
 d3d11layers-crash-guard = Amsuddes D3D11
 d3d11video-crash-guard = D3D11 Video Decoder
-d3d9video-crash-buard = D3D9 Video Decoder
 d3d9video-crash-guard = D3D9 Video Decoder
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Video Decoder
@@ -291,7 +290,7 @@ uses-tiling = Iseqdac akallaj
 content-uses-tiling = Seqdec asebleḍ (Agbur)
 off-main-thread-paint-enabled = Painting beṛṛa n tnelli n uselkem agejdan yermed
 off-main-thread-paint-worker-count = Uṭṭun n iseqdacen Painting beṛṛa n tnelli
-target-frame-rate = Afmiḍi n n ukatar asaḍas
+target-frame-rate = Afmiḍi n ukatar asaḍas
 min-lib-versions = Lqem adday itturajun
 loaded-lib-versions = Lqem ittuseqdacen
 has-seccomp-bpf = Seccomp-BPF (Azizdeg n isawalen n unagraw)

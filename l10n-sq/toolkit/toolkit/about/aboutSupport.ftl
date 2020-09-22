@@ -17,7 +17,10 @@ extensions-name = Emër
 extensions-enabled = I aktivizuar
 extensions-version = Version
 extensions-id = ID
+support-addons-title = Shtesa
 support-addons-name = Emër
+support-addons-type = Lloj
+support-addons-enabled = E aktivizuar
 support-addons-version = Version
 support-addons-id = ID
 security-software-title = Software Sigurie
@@ -77,6 +80,12 @@ show-dir-label =
         [windows] Hape Dosjen
        *[other] Hape Drejtorinë
     }
+environment-variables-title = Ndryshore Mjedisi
+environment-variables-name = Emër
+environment-variables-value = Vlerë
+experimental-features-title = Veçori Eksperimentale
+experimental-features-name = Emër
+experimental-features-value = Vlerë
 modified-key-prefs-title = Parapëlqime të Rëndësishme të Ndryshuara
 modified-prefs-name = Emër
 modified-prefs-value = Vlerë
@@ -101,8 +110,6 @@ graphics-desktop-environment = Mjedis Desktop
 place-database-title = Bazë të Dhënash Vendesh
 place-database-integrity = Integritet
 place-database-verify-integrity = Verifikoni Integritetin
-js-title = JavaScript
-js-incremental-gc = GH Shtues
 a11y-title = Përdorshmëri
 a11y-activated = E aktivizuar
 a11y-force-disabled = Parandaloje Përdorshmërinë
@@ -130,7 +137,6 @@ restart-button-label = Rinise
 
 audio-backend = Mekanizëm Audio
 max-audio-channels = Kanale Maksimum
-channel-layout = Skemë e Parapëlqyer Për Kanalin
 sample-rate = Shpejtësi e Parapëlqyer Kampionizimesh
 roundtrip-latency = Vonesë vajtje-ardhje (shmangie standard)
 media-title = Media
@@ -267,11 +273,13 @@ blocklisted-bug = Vënë në listë të zezë, për shkak problemesh të njohura
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = e meta { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Shtuar në listë bllokimesh për shkak çështjesh të njohura: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Vënë në listë të zezë, kod dështimi { $failureCode }
 d3d11layers-crash-guard = Hartues D3D11
 d3d11video-crash-guard = Shkodues Videosh D3D11
-d3d9video-crash-buard = Shkodues Videosh D3D9
 d3d9video-crash-guard = Shkodues Videosh D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Shkodues Videosh WMF VPX

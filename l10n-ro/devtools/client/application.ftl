@@ -24,9 +24,6 @@ serviceworker-worker-unregister = Dezînregistrează
 # displayed when the link is disabled.
 serviceworker-worker-debug = Depanează
     .title = Numai scripturile service worker în curs de rulare pot fi depanate
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = Pornește
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
 serviceworker-worker-debug-forbidden = Depanare
@@ -35,6 +32,9 @@ serviceworker-worker-debug-forbidden = Depanare
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = Start
     .title = Poți porni service workeri numai dacă multi e10s este dezactivat
+# Alt text for the image icon displayed inside a debug link for a service worker.
+serviceworker-worker-inspect-icon =
+    .alt = Inspectează
 # Text for the start link displayed for a registered but not running Service Worker.
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start3 = Pornește
@@ -54,9 +54,6 @@ serviceworker-worker-status = Stare
 serviceworker-worker-status-running = În execuție
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = Oprit
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = Se înregistrează
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = Trebuie să înregistrezi un Service Worker pentru a-l inspecta aici. <a>Află mai multe</a>

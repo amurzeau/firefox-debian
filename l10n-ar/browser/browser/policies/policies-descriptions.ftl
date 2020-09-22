@@ -35,6 +35,7 @@ policy-DisableFirefoxStudies = منع { -brand-short-name } من تشغيل ال
 policy-DisableForgetButton = منع الوصول إلى زر النسيان.
 policy-DisableFormHistory = عدم تذكّر تأريخ الاستمارات والبحث.
 policy-DisableMasterPasswordCreation = إن كان ”صحيح“، فلا يمكن إنشاء كلمة سر رئيسية.
+policy-DisablePrimaryPasswordCreation = إن كان ”صحيح“، فلا يمكن إنشاء كلمة سر رئيسية.
 policy-DisablePasswordReveal = لا تسمح بكشف كلمات السر في جلسات الولوج المحفوظة.
 policy-DisablePocket = تعطيل ميزة حفظ الصفحات في Pocket.
 policy-DisablePrivateBrowsing = تعطيل التصفح الخاص.
@@ -62,6 +63,7 @@ policy-ExtensionSettings = أدِر كل ما يتعلّق بتثبيت الام
 policy-ExtensionUpdate = تفعيل/تعطيل تحديث الامتدادات تلقائيًا.
 policy-FirefoxHome = ضبط صفحة المنزل داخل Firefox.
 policy-FlashPlugin = السماح باستخدام ملحقة فلاش أو منع ذلك.
+policy-Handlers = ضبط طرائق التعامل مع التطبيقات المبدئية.
 policy-HardwareAcceleration = إن كان ”خطأ“، عطِّل التسريع العتادي.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = ضبط صفحة البداية وقفل الخيار إن لزم.
@@ -71,6 +73,7 @@ policy-LegacyProfiles = تعطيل الميزة التي تُجبر بوجود �
 ## Do not translate "SameSite", it's the name of a cookie attribute.
 
 policy-LegacySameSiteCookieBehaviorEnabled = فعّل إعداد سلوك الكعكات SameSite المبدئي العتيق.
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = العودة إلى سلوك الكعكات القديم لِ‍ SameSite على مواقع بذاتها.
 
 ##
 
@@ -83,7 +86,10 @@ policy-OfferToSaveLoginsDefault = اضبط القيمة المبدئية فتس�
 policy-OverrideFirstRunPage = الكتابة على صفحة ”أوّل تشغيل“. اضبط السياسة إلى فراغ إن أردت تعطيل الصفحة.
 policy-OverridePostUpdatePage = الكتابة على صفحة ”ما الجديد“ التي تأتي بعد التحديث. اضبط السياسة إلى فراغ إن أردت تعطيل صفحة ما بعد تثبيت التحديث.
 policy-PasswordManagerEnabled = فعّل حفظ كلمات السر في مدير كلمات السر.
+# PDF.js and PDF should not be translated
+policy-PDFjs = تعطيل أو ضبط PDF.js، عارِض ملفات PDF المضمّن في { -brand-short-name }.
 policy-Permissions2 = ضبط تصاريح الكمرة والمِكرفون والمكان والتنبيهات والتشغيل التلقائي.
+policy-PictureInPicture = تفعيل الڤديو المعترِض أو تعطيله.
 policy-PopupBlocking = السماح لبعض المواقع بعرض المنبثقات مبدئيا.
 policy-Preferences = ضبط وقفل قيمة إحدى المجموعات الفرعية في التفضيلات.
 policy-PromptForDownloadLocation = السؤال عن مكان حفظ الملفات عند تنزيلها.
