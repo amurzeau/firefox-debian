@@ -1,3 +1,21 @@
+firefox (81.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2020-42, also known as:
+    CVE-2020-15675, CVE-2020-15677, CVE-2020-15676, CVE-2020-15678,
+    CVE-2020-15673, CVE-2020-15674.
+
+  * debian/control*: Bump nss build dependency.
+  * debian/rules: Change l10n build integration:
+    - it is not necessary to override LOCALE_MERGEDIR anymore
+    - it is not necessary to call compare-locales manually
+    - set MACH_USE_SYSTEM_PYTHON=1
+
+  * js/src/jit/none/MacroAssembler-none.h: Bump CodeAlignment to 8.
+    bz#1666646.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 23 Sep 2020 07:56:45 +0900
+
 firefox (80.0.1-1) unstable; urgency=medium
 
   * New upstream release.
