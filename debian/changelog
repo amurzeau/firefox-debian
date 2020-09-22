@@ -1,3 +1,16 @@
+firefox-esr (78.3.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2020-43, also known as:
+    CVE-2020-15677, CVE-2020-15676, CVE-2020-15678, CVE-2020-15673.
+
+  * js/src/jit/mips-shared/CodeGenerator-mips-shared.cpp: Add
+    CodeGenerator::visitWasmRegisterResult function. bz#1649655.
+  * js/src/jit/none/MacroAssembler-none.h: Bump CodeAlignment to 8.
+    bz#1666646.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 23 Sep 2020 07:25:27 +0900
+
 firefox-esr (78.2.0esr-1) unstable; urgency=medium
 
   * New upstream release.
