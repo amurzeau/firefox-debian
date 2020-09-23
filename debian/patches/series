@@ -11,6 +11,7 @@ porting/Work-around-Debian-bug-844357.patch
 porting/Use-NEON_FLAGS-instead-of-VPX_ASFLAGS-for-libaom-neo.patch
 porting/Work-around-GCC-ICE-on-mips-i386-and-s390x.patch
 porting/Work-around-another-GCC-ICE-on-arm.patch
+porting/Add-missing-bindings-for-mips-in-the-authenticator-c.patch
 prefs/Set-javascript.options.showInConsole.patch
 prefs/Set-DPI-to-system-settings.patch
 prefs/Don-t-auto-disable-extensions-in-system-directories.patch
