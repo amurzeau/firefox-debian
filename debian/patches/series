@@ -1,6 +1,7 @@
 fixes/Allow-.js-preference-files-to-set-locked-prefs-with-.patch
 fixes/Bug-1526653-Include-struct-definitions-for-user_vfp-.patch
 fixes/Bug-1666646-Bump-CodeAlignment-to-8-in-MacroAssemble.patch
+fixes/Bug-1667007-Fix-AsyncLogger-TracePayload-s-mName-siz.patch
 porting/Add-xptcall-support-for-SH4-processors.patch
 porting/NSS-Fix-FTBFS-on-Hurd-because-of-MAXPATHLEN.patch
 porting/Work-around-Debian-bug-844357.patch
