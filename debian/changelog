@@ -1,3 +1,10 @@
+firefox (81.0-2) unstable; urgency=medium
+
+  * dom/media/AsyncLogger.h: Fix AsyncLogger::TracePayload's mName
+    size calculation. bz#1667007.
+
+ -- Mike Hommey <glandium@debian.org>  Thu, 24 Sep 2020 16:22:35 +0900
+
 firefox (81.0-1) unstable; urgency=medium
 
   * New upstream release.
