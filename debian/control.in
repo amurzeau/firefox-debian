@@ -4,11 +4,7 @@ Priority: optional
 Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.debian.org>
 Uploaders: Mike Hommey <glandium@debian.org>
 Build-Depends: autotools-dev,
-%if DIST == jessie
-               debhelper (>= 9),
-%else
                debhelper (>= 9.20160114),
-%endif
                autoconf2.13,
                libx11-dev,
                libx11-xcb-dev,
@@ -46,14 +42,14 @@ Build-Depends: autotools-dev,
                libpulse-dev,
                libasound2-dev,
                yasm,
-%if DIST == jessie || DIST == stretch
+%if DIST == stretch
                nasm-mozilla (>= 2.14) [amd64 i386],
 %else
                nasm (>= 2.14) [amd64 i386],
 %endif
                rustc (>= 1.43),
                cargo (>= 0.43),
-%if DIST == jessie || DIST == stretch
+%if DIST == stretch
                llvm-4.0-dev,
                libclang-4.0-dev,
                clang-4.0,
@@ -63,7 +59,7 @@ Build-Depends: autotools-dev,
                clang,
 %endif
                cbindgen (>= 0.14.3),
-%if DIST == jessie || DIST == stretch
+%if DIST == stretch
                nodejs-mozilla (>= 10),
 %else
                nodejs (>= 10),
@@ -133,41 +129,6 @@ Section: oldlibs
 Depends: @browser@, ${misc:Depends}
 Description: Web browser based on Firefox - Transitional package
  This is a transitional package, it can be safely removed.
-%endif
-
-%if DIST == jessie
-Package: @browser@-dbg
-Architecture: any
-Priority: extra
-Section: debug
-Depends: @browser@ (= ${binary:Version}),
-%if USE_SYSTEM_NSS
-         libnss3-dbg | libnss3-1d-dbg,
-%endif
-%if USE_SYSTEM_NSPR
-         libnspr4-dbg | libnspr4-0d-dbg,
-%endif
-         ${misc:Depends}
-%if TRANSITION
-Breaks: iceweasel-dbg (<< 45)
-Replaces: iceweasel-dbg (<< 45)
-Provides: iceweasel-dbg
-%endif
-Description: Debugging symbols for @Browser@
- @LONGDESC1@
- @LONGDESC2@
- .
- This package contains the debugging symbols for @browser@.
-%if TRANSITION
-
-Package: iceweasel-dbg
-Architecture: all
-Priority: extra
-Section: oldlibs
-Depends: @browser@-dbg, ${misc:Depends}
-Description: Debugging symbols for Iceweasel - Transitional package
- This is a transitional package, it can be safely removed.
-%endif
 %endif
 
 Package: @browser@-l10n-all
