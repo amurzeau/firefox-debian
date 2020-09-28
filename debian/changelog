@@ -1,3 +1,9 @@
+firefox-esr (78.3.0esr-3) UNRELEASED; urgency=medium
+
+  * Remove jessie support.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Mon, 28 Sep 2020 21:00:45 +0200
+
 firefox-esr (78.3.0esr-2) unstable; urgency=medium
 
   * third-party/rust/authenticator/src/linux/ioctl_mips*.rs: Add missing

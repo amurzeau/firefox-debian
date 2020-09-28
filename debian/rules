@@ -20,13 +20,13 @@ PRODUCT := browser
 include debian/upstream.mk
 
 SYSTEM_LIBS = zlib ffi
-ifeq (,$(filter jessie stretch buster,$(DIST)))
+ifeq (,$(filter stretch buster,$(DIST)))
 SYSTEM_LIBS += nspr nss
 endif
-ifeq (,$(filter jessie stretch,$(DIST)))
+ifeq (,$(filter stretch,$(DIST)))
 SYSTEM_LIBS += libevent
 endif
-ifeq (,$(filter jessie stretch buster,$(DIST)))
+ifeq (,$(filter stretch buster,$(DIST)))
 SYSTEM_LIBS += vpx
 endif
 
@@ -54,7 +54,7 @@ endif
 endif
 
 ifeq (firefox-esr,$(DEBIAN_SOURCE))
-ifneq (,$(filter jessie stretch buster,$(DIST)))
+ifneq (,$(filter stretch buster,$(DIST)))
 TRANSITION = 1
 endif
 endif
@@ -83,17 +83,9 @@ SHARE_DIR := /usr/share/$($(PRODUCT))
 # Work around https://github.com/rust-lang/cargo/issues/7147
 export CARGO_HOME=$(CURDIR)/debian/.cargo
 
-ifneq (,$(filter jessie stretch,$(DIST)))
+ifneq (,$(filter stretch,$(DIST)))
 export NODEJS=/usr/lib/nodejs-mozilla/bin/node
 export NASM=/usr/lib/nasm-mozilla/bin/nasm
-endif
-
-ifneq (jessie,$(DIST))
-LDFLAGS += -Wl,--as-needed
-# Make the linker generate compressed debug sections. dh_strip would do
-# the same anyways, but it allows elfhack to work in combination with
-# unstripped binaries when they would normally be larger than 2GiB.
-LDFLAGS += -Wl,--compress-debug-sections=zlib
 endif
 
 # Disable debug symbols when building on 32-bits machines, because
@@ -311,11 +303,7 @@ override_dh_install-arch: stamps/dh_install
 override_dh_install-indep: stamps/dh_install-l10n
 
 override_dh_strip:
-ifneq (,$(filter jessie,$(DIST)))
-	dh_strip -a --dbg-package=$($(PRODUCT))-dbg
-else
 	dh_strip --dbgsym-migration='$($(PRODUCT))-dbg (<< 49.0-4~)'
-endif
 
 override_dh_strip_nondeterminism:
 
