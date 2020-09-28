@@ -50,9 +50,10 @@ Build-Depends: autotools-dev,
                rustc (>= 1.41),
                cargo (>= 0.42),
 %if DIST == stretch
-               llvm-4.0-dev,
-               libclang-4.0-dev,
-               clang-4.0,
+               gcc-mozilla (>= 7.1),
+               llvm-7-dev,
+               libclang-7-dev,
+               clang-7,
 %else
                llvm-dev,
                libclang-dev,

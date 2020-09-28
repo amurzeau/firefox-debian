@@ -86,6 +86,9 @@ export CARGO_HOME=$(CURDIR)/debian/.cargo
 ifneq (,$(filter stretch,$(DIST)))
 export NODEJS=/usr/lib/nodejs-mozilla/bin/node
 export NASM=/usr/lib/nasm-mozilla/bin/nasm
+export PATH := /usr/lib/llvm-7/bin/:$(PATH)
+export PATH := /usr/lib/gcc-mozilla/bin/:$(PATH)
+LDFLAGS += -static-libstdc++
 endif
 
 # Disable debug symbols when building on 32-bits machines, because
