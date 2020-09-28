@@ -3,6 +3,8 @@ firefox-esr (78.3.0esr-3) UNRELEASED; urgency=medium
   * Remove jessie support.
   * stretch: build with LLVM 7, 4.0 doesn't support -std=gnu++17.
   * stretch: build with GCC 7 from gcc-mozilla.
+  * Call python with -M when regenerating the control files, so as to
+    not generate bytecode files.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Mon, 28 Sep 2020 21:00:45 +0200
 
