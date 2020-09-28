@@ -5,6 +5,8 @@ firefox-esr (78.3.0esr-3) UNRELEASED; urgency=medium
   * stretch: build with GCC 7 from gcc-mozilla.
   * Call python with -M when regenerating the control files, so as to
     not generate bytecode files.
+  * Call debian/l10n/gen with C.UTF-8 as the locale, otherwise it fails
+    in stretch when opening the iso-codes files.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Mon, 28 Sep 2020 21:00:45 +0200
 
