@@ -166,7 +166,7 @@ $(call lazy,L10N_PACKAGES,$$(foreach lang,$$(L10N_LANGS),$($(PRODUCT))-l10n-$$(c
 $(call lazy,L10N_PACKAGES_DEPS,$$(shell echo $$(L10N_PACKAGES) | sed 's/ /, /g'))
 
 debian/l10n/$(PRODUCT)-l10n.control: %: %.in
-	PYTHONIOENCODING=utf-8 $(PYTHON) debian/l10n/gen $(L10N_LANGS) > $@
+	PYTHONIOENCODING=utf-8 LC_ALL=C.UTF-8 $(PYTHON) debian/l10n/gen $(L10N_LANGS) > $@
 
 $(call lazy,LIBAVCODEC,$$(shell awk -F\" '/libavcodec\.so/ { sub(/libavcodec\.so\./,"", $$$$2); p = "libavcodec" $$$$2 " | libavcodec-extra" $$$$2; if (d) { d = d " | " p } else { d = p } } END { print d }' dom/media/platforms/ffmpeg/FFmpegRuntimeLinker.cpp))
 
