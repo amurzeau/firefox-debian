@@ -7,6 +7,7 @@ firefox-esr (78.3.0esr-3) UNRELEASED; urgency=medium
     not generate bytecode files.
   * Call debian/l10n/gen with C.UTF-8 as the locale, otherwise it fails
     in stretch when opening the iso-codes files.
+  * stretch: don't set NASM on !x86.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Mon, 28 Sep 2020 21:00:45 +0200
 

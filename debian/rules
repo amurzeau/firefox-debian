@@ -84,8 +84,10 @@ SHARE_DIR := /usr/share/$($(PRODUCT))
 export CARGO_HOME=$(CURDIR)/debian/.cargo
 
 ifneq (,$(filter stretch,$(DIST)))
-export NODEJS=/usr/lib/nodejs-mozilla/bin/node
+ifneq (,$(filter amd64 i386,$(DEB_HOST_ARCH)))
 export NASM=/usr/lib/nasm-mozilla/bin/nasm
+endif
+export NODEJS=/usr/lib/nodejs-mozilla/bin/node
 export PATH := /usr/lib/llvm-7/bin/:$(PATH)
 export PATH := /usr/lib/gcc-mozilla/bin/:$(PATH)
 LDFLAGS += -static-libstdc++
