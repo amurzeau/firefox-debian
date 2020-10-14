@@ -29,6 +29,8 @@ search-input-box =
            *[other] ابحث في التفضيلات
         }
 managed-notice = تُدير منظّمتك المتصفح الذي تستخدم الآن.
+category-list =
+    .aria-label = الفئات
 pane-general-title = عام
 category-general =
     .tooltiptext = { pane-general-title }
@@ -363,7 +365,7 @@ update-application-version = الإصدارة { $version } <a data-l10n-name="le
 update-history =
     .label = أظهر تأريخ التحديث…
     .accesskey = ظ
-update-application-allow-description = اسمح ل‍{ -brand-short-name } أن
+update-application-allow-description = اسمح لِ‍ { -brand-short-name } أن
 update-application-auto =
     .label = ينزّل التحديثات تلقائيا (مستحسن)
     .accesskey = ن
@@ -572,6 +574,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = غيّر تفضيلات اقتراحات شريط العنوان
 search-suggestions-cant-show = لن تظهر اقتراحات البحث في نتائج شريط الموقع لأنّك أعددت { -brand-short-name } على ألّا يتذكر التأريخ.
 search-one-click-header = محركات البحث بنقرة واحدة
+search-one-click-header2 = اختصارات البحث
 search-one-click-desc = اختر محركات البحث البديلة التي تظهر تحت شريطي العناوين و البحث عندما تكتب كلمة بحث.
 search-choose-engine-column =
     .label = محرك البحث
@@ -884,6 +887,8 @@ sitedata-option-block-cross-site-trackers =
     .label = المتعقّبات بين المواقع
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = المتعقّبات الاجتماعية ومتعقّبات بين المواقع
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = المتعقّبات الاجتماعية وتلك التي تعبر المواقع، واعزل بقية الكعكات
 sitedata-option-block-unvisited =
     .label = الكعكات من المواقع غير المُزارة
 sitedata-option-block-all-third-party =
@@ -948,6 +953,7 @@ content-blocking-etp-strict-desc = حماية أقوى وأعتى، لكنها �
 content-blocking-etp-custom-desc = اختر المتعقّبات والسكربتات التي تريد حجبها.
 content-blocking-private-windows = المحتوى الذي يتعقّبك في النوافذ الخاصة
 content-blocking-cross-site-tracking-cookies = كعكات تتعقّبك بين المواقع
+content-blocking-cross-site-tracking-cookies-plus-isolate = المتعقّبات التي تعبر المواقع، واعزل بقية الكعكات
 content-blocking-social-media-trackers = متعقبات مواقع التواصل الاجتماعي
 content-blocking-all-cookies = كل الكعكات
 content-blocking-unvisited-cookies = الكعكات من المواقع غير المُزارة
@@ -1130,6 +1136,7 @@ space-alert-under-5gb-message = مساحة القرص قاربت على النف
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = وضع HTTPS فقط
+httpsonly-description = يقدّم بروتوكول HTTPS اتصالًا آمنًا ومعمًى بين { -brand-short-name } والمواقع التي تزورها. تدعم أغلب المواقع HTTPS، ولو فعّلت وضع ”HTTPS فقط“ فسيُرقّي { -brand-short-name } كل الاتصالات لتكون ببروتوكول HTTPS.
 httpsonly-learn-more = اطّلع على المزيد
 httpsonly-radio-enabled =
     .label = فعّل وضع HTTPS فقط في كل النوافذ

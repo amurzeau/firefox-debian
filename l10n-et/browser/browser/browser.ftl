@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (privaatne veebilehitsemine)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (privaatne veebilehitsemine)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (privaatne veebilehitsemine)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (privaatne veebilehitsemine)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -103,6 +101,7 @@ urlbar-search-tips-onboard = Sisesta vähem, leia rohkem: otsi otsingumootoriga 
 
 ## Local search mode indicator labels in the urlbar
 
+
 ##
 
 urlbar-geolocation-blocked =
@@ -127,12 +126,10 @@ urlbar-midi-blocked =
     .tooltiptext = Oled sellel lehel keelanud ligipääsu MIDIle.
 urlbar-install-blocked =
     .tooltiptext = Oled sellel lehel keelanud lisade paigaldamise.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Muuda seda järjehoidjat ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -146,6 +143,53 @@ page-action-manage-extension =
     .label = Halda laiendust…
 page-action-remove-from-urlbar =
     .label = Eemalda aadressiribalt
+
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Saada kaart seadmesse
+           *[other] Saada { $tabCount } kaarti seadmesse
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Saada kaart seadmesse
+           *[other] Saada { $tabCount } kaarti seadmesse
+        }
+page-action-pocket-panel =
+    .label = Salvesta leht { -pocket-brand-name }isse
+page-action-copy-url-panel =
+    .label = Kopeeri link
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopeeri link
+page-action-email-link-panel =
+    .label = Saada link e-postiga…
+page-action-email-link-urlbar =
+    .tooltiptext = Saada link e-postiga…
+page-action-share-url-panel =
+    .label = Jaga
+page-action-share-url-urlbar =
+    .tooltiptext = Jaga
+page-action-share-more-panel =
+    .label = Veel…
+page-action-send-tab-not-ready =
+    .label = Seadmeid sünkroniseeritakse…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Tee püsikaardiks
+page-action-pin-tab-urlbar =
+    .tooltiptext = Tee püsikaardiks
+page-action-unpin-tab-panel =
+    .label = Tee tavakaardiks
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Tee tavakaardiks
 
 ## Auto-hide Context Menu
 
@@ -161,14 +205,12 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Seekord soorita otsing järgneva otsingumootoriga:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Muuda otsingu sätteid
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Otsingu sätete muutmine
-
 search-one-offs-context-open-new-tab =
     .label = Soorita otsing uuel kaardil
     .accesskey = S
@@ -183,15 +225,14 @@ search-one-offs-context-set-as-default =
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
 
+
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Lisamisel kuvatakse seda dialoogi
     .accesskey = d
-
 bookmark-panel-done-button =
     .label = Sobib
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -272,24 +313,56 @@ popup-all-windows-shared = Jagatakse kõiki nähtavaid aknaid sinu ekraanil.
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Otsi või sisesta aadress
-
 urlbar-placeholder =
     .placeholder = Otsi või sisesta aadress
-
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Otsi otsingumootoriga { $name } või sisesta veebiaadress
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Veebilehitseja on kaugjuhtimisel
 urlbar-permissions-granted =
     .tooltiptext = Sa oled taganud sellele saidile täiendavaid õigusi.
 urlbar-switch-to-tab =
     .value = Lülitu kaardile:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Laiendus:
-
 urlbar-go-button =
     .tooltiptext = Mine aadressiribal olevale aadressile
 urlbar-page-action-button =
     .tooltiptext = Lehe toimingud
 urlbar-pocket-button =
     .tooltiptext = Salvesta { -pocket-brand-name }isse
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Otsi otsingumootoriga { $engine }
+urlbar-result-action-switch-tab = Vaheta kaarti
+urlbar-result-action-visit = Külasta
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = Sait <span data-l10n-name="domain">{ $domain }</span> on nüüd täisekraanirežiimis
+fullscreen-warning-no-domain = See dokument on nüüd täisekraanirežiimis
+fullscreen-exit-button = Välju täisekraanirežiimist (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Välju täisekraanirežiimist (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = Sait <span data-l10n-name="domain">{ $domain }</span> kontrollib sinu kursori tegevust. Kontrolli tagasivõtmiseks vajuta klahvile Esc.
+pointerlock-warning-no-domain = See dokument kontrollib sinu kursori tegevust. Kontrolli tagasivõtmiseks vajuta klahvile Esc.

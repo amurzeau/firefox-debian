@@ -29,6 +29,8 @@ search-input-box =
            *[other] Tschertgar en las preferenzas
         }
 managed-notice = Tes navigatur vegn administrà da tia organisaziun.
+category-list =
+    .aria-label = Categorias
 pane-general-title = General
 category-general =
     .tooltiptext = { pane-general-title }
@@ -489,6 +491,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Paginas preferidas
 home-prefs-topsites-description = Las paginas che ti visitas il pli savens
+home-prefs-topsites-by-option-sponsored =
+    .label = Websites principalas sponsurisadas
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -560,6 +564,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Midar las preferenzas per avair autras propostas en la trav d'adressas
 search-suggestions-cant-show = Propostas da tschertgar na vegnan betg mussadas en la trav d'adressas perquai che ti has configurà { -brand-short-name } uschia che la cronologia na vegn betg memorisada.
 search-one-click-header = Maschinas da tschertgar cun-in-clic
+search-one-click-header2 = Scursanidas per la tschertga
 search-one-click-desc = Tscherna las maschinas da tschertgar alternativas che cumparan sut la trav d'adressas e la trav da tschertgar sche ti cumenzas a tippar in pled.
 search-choose-engine-column =
     .label = Maschina da tschertgar

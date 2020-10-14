@@ -162,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Ta bort tillägg
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Skicka flik till enhet
+           *[other] Skicka { $tabCount } flikar till enhet
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Skicka flik till enhet
+           *[other] Skicka { $tabCount } flikar till enhet
+        }
+page-action-pocket-panel =
+    .label = Spara sida till { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Kopiera länk
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopiera länk
+page-action-email-link-panel =
+    .label = E-posta länk…
+page-action-email-link-urlbar =
+    .tooltiptext = E-posta länk…
+page-action-share-url-panel =
+    .label = Dela
+page-action-share-url-urlbar =
+    .tooltiptext = Dela
+page-action-share-more-panel =
+    .label = Mer…
+page-action-send-tab-not-ready =
+    .label = Synkar enheter…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Fäst flik
+page-action-pin-tab-urlbar =
+    .tooltiptext = Fäst flik
+page-action-unpin-tab-panel =
+    .label = Gör om till vanlig flik
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Gör om till vanlig flik
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Denna gång, sök med:
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +285,17 @@ identity-passive-loaded = Vissa komponenter av den här sidan är inte säkra (t
 identity-active-loaded = Du har stängt av skyddet på den här sidan.
 identity-weak-encryption = Den här sidan använder en svag kryptering.
 identity-insecure-login-forms = Inloggningar som anges på den här sidan kan äventyras.
+identity-https-only-connection-upgraded = (uppgraderad till HTTPS)
+identity-https-only-label = Endast HTTPS-läge
+identity-https-only-dropdown-on =
+    .label = På
+identity-https-only-dropdown-off =
+    .label = Av
+identity-https-only-dropdown-off-temporarily =
+    .label = Tillfälligt av
+identity-https-only-info-turn-on = Aktivera om du vill att { -brand-short-name } ska uppgradera till en säker anslutning när det är möjligt.
+identity-https-only-info-turn-off = Om webbplatsen verkar trasig kanske du vill stänga av endast HTTPS-läge för att ladda om med osäker HTTP.
+identity-https-only-info-no-upgrade = Det gick inte att uppgradera anslutningen från HTTP.
 identity-permissions =
     .value = Behörigheter
 identity-permissions-reload-hint = Du kan behöva ladda om sidan för att ändringarna ska verkställas.
@@ -369,3 +427,54 @@ urlbar-page-action-button =
     .tooltiptext = Åtgärder för sida
 urlbar-pocket-button =
     .tooltiptext = Spara till { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Sök med { $engine } i ett privat fönster
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Sök i ett privat fönster
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Sök med { $engine }
+urlbar-result-action-switch-tab = Växla till flik
+urlbar-result-action-visit = Besök
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Sök i bokmärken
+urlbar-result-action-search-history = Sök i historik
+urlbar-result-action-search-tabs = Sök i flikar
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Sök med { $engine } direkt från adressfältet
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Sök i { $engine } direkt från adressfältet
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> är nu i helskärm
+fullscreen-warning-no-domain = Detta dokument är nu i helskärm
+fullscreen-exit-button = Avsluta helskärm (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Avsluta helskärm (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> har kontroll över pekaren. Tryck på Esc för att ta tillbaka kontrollen.
+pointerlock-warning-no-domain = Detta dokument har kontroll över pekaren. Tryck på Esc för att ta tillbaka kontrollen.

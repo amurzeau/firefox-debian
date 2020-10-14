@@ -146,6 +146,37 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = တိုးချဲ့မှု ပယ်ဖျက်ပါ
 
+## Page Action menu
+
+page-action-copy-url-panel =
+    .label = လင့်ခ်ကို ကူးယူရန်
+page-action-copy-url-urlbar =
+    .tooltiptext = လင့်ခ်ကို ကူးယူရန်
+page-action-email-link-panel =
+    .label = လင့်ခ်ကို အီးမေးလ်ပို့ရန်…
+page-action-email-link-urlbar =
+    .tooltiptext = လင့်ခ်ကို အီးမေးလ်ပို့ရန်…
+page-action-share-url-panel =
+    .label = မျှဝေ
+page-action-share-url-urlbar =
+    .tooltiptext = မျှဝေ
+page-action-share-more-panel =
+    .label = ပိုမို၍…
+page-action-send-tab-not-ready =
+    .label = ကိရိယာများကို ထပ်တူပြုနေသည်…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = တပ်ဗ်ကို တွယ်ချိတ်ရန်
+page-action-pin-tab-urlbar =
+    .tooltiptext = တပ်ဗ်ကို တွယ်ချိတ်ရန်
+page-action-unpin-tab-panel =
+    .label = တပ်ဗ်ကို တွယ်ထားခြင်းမှ ဖြုတ်ရန်
+page-action-unpin-tab-urlbar =
+    .tooltiptext = တပ်ဗ်ကို တွယ်ထားခြင်းမှ ဖြုတ်ရန်
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -279,6 +310,10 @@ urlbar-default-placeholder =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = ရှာဖွေပါ (သို့) လိပ်စာရိုက်ပါ
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name } ဖြင့် ရှာဖွေပါ သို့မဟုတ် လိပ်စာရိုက်ပါ
 urlbar-remote-control-notification-anchor =
     .tooltiptext = ဘရောင်ဇာသည် အဝေးရောက်ထိန်းချုပ်မှုအောက်တွင် ရှိနေသည်
 urlbar-switch-to-tab =
@@ -292,3 +327,35 @@ urlbar-page-action-button =
     .tooltiptext = စာမျက်နှာရှိ ဆောင်ရွက်နိုင်သည်များ
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name } တွင်သိမ်းပါ
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } နှင့် ရှာဖွေရန်
+urlbar-result-action-switch-tab = တပ်ဗ်အဖြစ်သို့ ပြောင်းပါ
+urlbar-result-action-visit = လည်ပတ်ရန်
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ယခု မြင်ကွင်းအပြည့် ဖြစ်သွားပါပြီ
+fullscreen-warning-no-domain = ဒီစာတမ်းသည် မြင်ကွင်းအပြည့် ဖြစ်သွားပါပြီ
+fullscreen-exit-button = မြင်ကွင်းအပြည့် ကြည့်ရှုခြင်းမှ ထွက်ရန် (ESC) ခလုတ် ကိုနိုပ်ပါ။
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = မြင်ကွင်းအပြည့် ကြည့်ရှုခြင်းမှ ထွက်ရန် (ESC) ခလုတ် ကိုနိုပ်ပါ။
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> သင့်ပွိုင်တာကို ထိန်းချုပ်ထားသည်။ ပြန်လည်ရယူရန် Esc ကို နှိပ်ပါ။
+pointerlock-warning-no-domain = ဒီစာတမ်းသည် သင့်ပွိုင်တာကို ထိန်းချုပ်ထားသည်။ ပြန်လည်ရယူရန် Esc ကို နှိပ်ပါ။

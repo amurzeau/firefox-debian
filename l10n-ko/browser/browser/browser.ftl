@@ -162,6 +162,45 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = 확장 기능 제거
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label = 탭 { $tabCount }개를 기기로 보내기
+page-action-send-tabs-urlbar =
+    .tooltiptext = 탭 { $tabCount }개를 기기로 보내기
+page-action-pocket-panel =
+    .label = 페이지를 { -pocket-brand-name }에 저장
+page-action-copy-url-panel =
+    .label = 링크 복사
+page-action-copy-url-urlbar =
+    .tooltiptext = 링크 복사
+page-action-email-link-panel =
+    .label = 메일로 링크 보내기…
+page-action-email-link-urlbar =
+    .tooltiptext = 메일로 링크 보내기…
+page-action-share-url-panel =
+    .label = 공유
+page-action-share-url-urlbar =
+    .tooltiptext = 공유
+page-action-share-more-panel =
+    .label = 더보기…
+page-action-send-tab-not-ready =
+    .label = 기기를 동기화하고 있습니다…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = 탭 고정
+page-action-pin-tab-urlbar =
+    .tooltiptext = 탭 고정
+page-action-unpin-tab-panel =
+    .label = 탭 고정 해제
+page-action-unpin-tab-urlbar =
+    .tooltiptext = 탭 고정 해제
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +212,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = 이번만 검색:
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +277,17 @@ identity-passive-loaded = 페이지의 일부(이미지 등)가 안전하지 않
 identity-active-loaded = 이 페이지에서 보호를 비활성화하셨습니다.
 identity-weak-encryption = 이 페이지는 약한 암호화를 사용합니다.
 identity-insecure-login-forms = 이 페이지에 입력된 로그인 정보는 노출될 수 있습니다.
+identity-https-only-connection-upgraded = (HTTPS로 업그레이드됨)
+identity-https-only-label = HTTPS 전용 모드
+identity-https-only-dropdown-on =
+    .label = 켜기
+identity-https-only-dropdown-off =
+    .label = 끄기
+identity-https-only-dropdown-off-temporarily =
+    .label = 일시적으로 끄기
+identity-https-only-info-turn-on = 가능한 경우 { -brand-short-name }가 안전한 연결로 업그레이드하도록 하려면 켜세요.
+identity-https-only-info-turn-off = 사이트가 손상된 것 같으면 HTTPS 전용 모드를 끄고 안전하지 않은 HTTP를 사용하여 다시 로드 할 수 있습니다.
+identity-https-only-info-no-upgrade = HTTP에서 연결을 업그레이드할 수 없습니다.
 identity-permissions =
     .value = 권한
 identity-permissions-reload-hint = 변경 사항을 적용하려면 페이지를 다시 로드해야할 수도 있습니다.
@@ -369,3 +419,54 @@ urlbar-page-action-button =
     .tooltiptext = 페이지 작업
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name }에 저장
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = 사생활 보호 창에서 { $engine } 검색
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = 사생활 보호 창에서 검색
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } 검색
+urlbar-result-action-switch-tab = 탭 전환
+urlbar-result-action-visit = 방문
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = 북마크 검색
+urlbar-result-action-search-history = 기록 검색
+urlbar-result-action-search-tabs = 탭 검색
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = 주소 표시줄에서 직접 { $engine } 검색
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = 주소 표시줄에서 직접 { $engine } 검색
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 이 전체 화면 모드입니다
+fullscreen-warning-no-domain = 이 문서는 전체 화면 모드입니다
+fullscreen-exit-button = 전체 화면 종료 (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = 전체 화면 종료 (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 사이트가 포인터를 제어하려 합니다. 다시 제어하려면 ESC 키를 누르세요.
+pointerlock-warning-no-domain = 이 문서가 포인터를 제어하려 합니다. 다시 제어하려면 ESC 키를 누르세요.

@@ -87,3 +87,15 @@ experimental-features-devtools-serviceworker-debugger-support =
     .label = Ifecka n uneflay: Tamseɣtayt n unmahal n umeẓlu
 # "Service Worker" is an API name and is usually not translated.
 experimental-features-devtools-serviceworker-debugger-support-description = Yermed tallalt tarmitant i yimahalen n umeẓlu deg ugalis n temseɣtit. Tamahilt-a yezmer ad terr ifecka n tneflit ẓẓayit, tessalay daɣen asadur n tkatut.
+# Desktop zooming experiment
+experimental-features-graphics-desktop-zooming =
+    .label = Udlifen: Asemɣer/Asemẓi n tuṭṭfa talggaɣt
+experimental-features-graphics-desktop-zooming-description = Rmed tallelt n tuṭṭfa n usemɣer/asemẓi talggaɣt deg ugdil analan akked telqayt n ugertil analan.
+# WebRTC global mute toggle controls
+experimental-features-webrtc-global-mute-toggles =
+    .label = Rmed/Sens imesli amatu n WebRTC
+experimental-features-webrtc-global-mute-toggles-description = Rnu senqaden ɣer umatar n beṭṭu amatu n WebRTC ara yessirgen iseqdacen ad sensen imesli s umata n usawaḍ d tkamiṛat nsen.
+# JS JIT Warp project
+experimental-features-js-warp =
+    .label = JavaScript JIT: Warp
+experimental-features-js-warp-description = Rmed Wrap, d asenfar i usnerni n tmellit n JavaScript d useqdec n tkatut.

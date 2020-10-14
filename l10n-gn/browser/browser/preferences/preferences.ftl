@@ -489,6 +489,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Tenda Ojeikevéva
 home-prefs-topsites-description = Umi tenda ojeikeveha
+home-prefs-topsites-by-option-sponsored =
+    .label = Tenda tuicha ojehepyme’ẽva
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -560,6 +562,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Emoambue erohoryvéva ambue ñe’ãporãpe g̃uarã kundaharape rendápe
 search-suggestions-cant-show = Jeheka je’epyréva ndojekuaamo’ãi kundaharape renda apopyrépe, oñembohekóma rupi { -brand-short-name } aníke nemandu’a tembiasakuére.
 search-one-click-header = Jehekaha mongu’eha jekutu peteĩva
+search-one-click-header2 = Jeheka mbopya’eha
 search-one-click-desc = Eiporavo hekaha mongu’eha mbojopyrukuaa ojekuaáva kundaharape ha jehekaha renda guýpe eñepyrũvo emoinge pe ñe’ẽ ñemigua.
 search-choose-engine-column =
     .label = Jehekaha

@@ -4,13 +4,11 @@
 
 migration-wizard =
     .title = Import-Assistent
-
 import-from =
     { PLATFORM() ->
         [windows] Einstellungen, Lesezeichen, Chronik, Passwörter und sonstige Daten importieren von:
        *[other] Einstellungen, Lesezeichen, Chronik, Passwörter und sonstige Daten importieren von:
     }
-
 import-from-bookmarks = Lesezeichen importieren aus:
 import-from-ie =
     .label = Microsoft Internet Explorer
@@ -51,34 +49,25 @@ import-from-firefox =
 import-from-360se =
     .label = 360 Secure Browser
     .accesskey = 3
-
 no-migration-sources = Es konnte kein Programm gefunden werden, das Lesezeichen-, Chronik- oder Passwortdaten enthält.
-
 import-source-page-title = Einstellungen und Daten importieren
 import-items-page-title = Zu importierende Daten
-
 import-items-description = Wählen Sie bitte aus, welche Daten importiert werden sollen:
-
+import-permissions-page-title = Bitte geben Sie { -brand-short-name } Berechtigungen
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS erfordert, dass Sie { -brand-short-name } ausdrücklich erlauben, auf die Lesezeichen von Safari zuzugreifen. Klicken Sie auf "Fortsetzen" und wählen Sie die Datei "Bookmarks.plist" im Fenster "Datei öffnen".
 import-migrating-page-title = Importieren…
-
 import-migrating-description = Folgende Daten werden momentan importiert:
-
 import-select-profile-page-title = Profil wählen
-
 import-select-profile-description = Es stehen folgende Profile zum Import zur Verfügung:
-
 import-done-page-title = Importieren abgeschlossen
-
 import-done-description = Folgende Daten wurden erfolgreich importiert:
-
 import-close-source-browser = Bitte überprüfen Sie vor dem Fortfahren, dass der gewählte Browser beendet ist.
-
 # Displays which browser the bookmarks are being imported from
 #
 # Variables:
 #   $source (String): The browser the user has chosen to import bookmarks from.
 imported-bookmarks-source = Von { $source }
-
 source-name-ie = Internet Explorer
 source-name-edge = Microsoft Edge
 source-name-edge-beta = Microsoft Edge Beta
@@ -90,22 +79,8 @@ source-name-chrome-dev = Google Chrome Dev
 source-name-chromium = Chromium
 source-name-firefox = Mozilla Firefox
 source-name-360se = 360 Secure Browser
-
 imported-safari-reading-list = Leseliste (von Safari)
 imported-edge-reading-list = Leseliste (von Edge)
-
-## Browser data types
-## All of these strings get a $browser variable passed in.
-## You can use the browser variable to differentiate the name of items,
-## which may have different labels in different browsers.
-## The supported values for the $browser variable are:
-## 360se
-## chrome
-## edge
-## firefox
-## safari
-## The various beta and development versions of edge and chrome all get
-## normalized to just "edge" and "chrome" for these strings.
 
 ## Browser data types
 ## All of these strings get a $browser variable passed in.
@@ -125,7 +100,6 @@ browser-data-cookies-checkbox =
     .label = Cookies
 browser-data-cookies-label =
     .value = Cookies
-
 browser-data-history-checkbox =
     .label =
         { $browser ->
@@ -138,12 +112,10 @@ browser-data-history-label =
             [firefox] Browserverlauf und Lesezeichen
            *[other] Browserverlauf
         }
-
 browser-data-formdata-checkbox =
     .label = Gespeicherte Formulardaten
 browser-data-formdata-label =
     .value = Gespeicherte Formulardaten
-
 # This string should use the same phrase for "logins and passwords" as the
 # label in the main hamburger menu that opens about:logins.
 browser-data-passwords-checkbox =
@@ -152,7 +124,6 @@ browser-data-passwords-checkbox =
 # label in the main hamburger menu that opens about:logins.
 browser-data-passwords-label =
     .value = Gespeicherte Zugangsdaten und Passwörter
-
 browser-data-bookmarks-checkbox =
     .label =
         { $browser ->
@@ -167,12 +138,10 @@ browser-data-bookmarks-label =
             [edge] Favoriten
            *[other] Lesezeichen
         }
-
 browser-data-otherdata-checkbox =
     .label = Sonstige Daten
 browser-data-otherdata-label =
     .label = Sonstige Daten
-
 browser-data-session-checkbox =
     .label = Fenster und Tabs
 browser-data-session-label =

@@ -29,6 +29,8 @@ search-input-box =
            *[other] Rechercher dans les préférences
         }
 managed-notice = Votre navigateur est géré par votre organisation.
+category-list =
+    .aria-label = Catégories
 pane-general-title = Général
 category-general =
     .tooltiptext = { pane-general-title }
@@ -560,6 +562,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Modifier les préférences pour les suggestions de la barre d’adresse
 search-suggestions-cant-show = Les suggestions de recherche ne seront pas affichées parmi les résultats de la barre d’adresse car vous avez configuré { -brand-short-name } de façon à ce qu’il ne conserve jamais l’historique.
 search-one-click-header = Moteurs de recherche accessibles en un clic
+search-one-click-header2 = Raccourcis de recherche
 search-one-click-desc = Sélectionnez les moteurs de recherche alternatifs qui apparaissent sous la barre d’adresse et la barre de recherche lorsque vous commencez à saisir un mot-clé.
 search-choose-engine-column =
     .label = Moteur de recherche

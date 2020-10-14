@@ -29,6 +29,8 @@ search-input-box =
            *[other] Recercar dins Preferéncias
         }
 managed-notice = Vòstra organizacion gerís vòstre navegador.
+category-list =
+    .aria-label = Categorias
 pane-general-title = General
 category-general =
     .tooltiptext = { pane-general-title }
@@ -116,7 +118,7 @@ search-results-empty-message =
         [windows] Desolat ! I a pas de resultats dins Opcions per « <span data-l10n-name="query"></span> ».
        *[other] Desolat ! I a pas de resultats dins Preferéncias per « <span data-l10n-name="query"></span> ».
     }
-search-results-help-link = Vos cal d’ajuda ? Visitatz <a data-l10n-name="url">Assisténcia de { -brand-short-name }</a>
+search-results-help-link = Vos cal d’ajuda ? Consultatz l’<a data-l10n-name="url">Assisténcia de { -brand-short-name }</a>
 
 ## General Section
 
@@ -374,7 +376,7 @@ update-setting-write-failure-title = Error en enregistrant las preferéncias de 
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
-    { -brand-short-name } a rescontrat una error e pas enregistrat aquesta modificacion. Notatz que modificar aqueste preferéncia de mesa a jorn requerís la permission d’escriure sul fichièr çai-jos. Vosautres o un administrator sistèma podètz benlèu corregir aquò en donant al grop Users l’accès complet a aqueste fichièr.
+    { -brand-short-name } a rencontrat una error e pas enregistrat aquesta modificacion. Notatz que modificar aqueste preferéncia de mesa a jorn requerís la permission d’escriure sul fichièr çai-jos. Vosautres o un administrator sistèma podètz benlèu corregir aquò en donant al grop Users l’accès complet a aqueste fichièr.
     
     Escritura impossibla sul fichièr : { $path }
 update-in-progress-title = Actualizacion en cors
@@ -489,6 +491,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Sites populars
 home-prefs-topsites-description = Los sites que visitatz mai sovent
+home-prefs-topsites-by-option-sponsored =
+    .label = Sites pairinejats
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -560,6 +564,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Cambiar las preferéncias per las suggestions de la barra d’adreça
 search-suggestions-cant-show = Recercar las suggestions que son pas afichadas dins los resultats de la barra d'adreça qu'avètz configurat { -brand-short-name } per pas jamai servar l'istoric.
 search-one-click-header = Motor de recèrca en un clic
+search-one-click-header2 = Acorchis de recèrca
 search-one-click-desc = Causissètz de motors de recerca altenatius qu'apareisson jos las barras d'adreça e de recèrca quand començatz d’escriure un mot-clau.
 search-choose-engine-column =
     .label = Motor de recèrca
@@ -901,8 +906,8 @@ addressbar-locbar-history-option =
     .label = Istoric de navegacion
     .accesskey = I
 addressbar-locbar-bookmarks-option =
-    .label = Favorits
-    .accesskey = F
+    .label = Marcapaginas
+    .accesskey = M
 addressbar-locbar-openpage-option =
     .label = Onglets dobèrts
     .accesskey = D

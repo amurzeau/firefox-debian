@@ -91,3 +91,11 @@ experimental-features-devtools-serviceworker-debugger-support-description = Nutz
 experimental-features-graphics-desktop-zooming =
     .label = Graphics: Smooth Pinch Zoom
 experimental-features-graphics-desktop-zooming-description = Nitzij ri tob'äl richin eqal ninimirisäx toq nachäp ri chapel taq ruwa chuqa' ajchapöy pads.
+# WebRTC global mute toggle controls
+experimental-features-webrtc-global-mute-toggles =
+    .label = WebRTC Chijun K'oxom Silowäch
+experimental-features-webrtc-global-mute-toggles-description = Ketz'aqatisäx taq samajib'äl pa ri WebRTC chijun komonïk etanel ri nikiya' q'ij chi ke ri okisanela' yekichüp chijun ri ketal q'asäy taq kich'ab'äl chuqa' elesäy wachib'äl.
+# JS JIT Warp project
+experimental-features-js-warp =
+    .label = JavaScript JIT: Warp
+experimental-features-js-warp-description = Titzij Warp, jun nuk'samaj richin nutziläx ri rub'eyal nisamäj chuqa' rokisaxik ruchuq'a' JavaScript.

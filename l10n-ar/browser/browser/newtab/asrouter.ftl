@@ -245,7 +245,9 @@ cfr-whatsnew-lockwise-icon-alt = أيقونة { -lockwise-brand-short-name }
 
 ## Vulnerable Passwords message
 
+cfr-whatsnew-passwords-header = استلم تنبيهات بخصوص كلمات السر الضعيفة
 cfr-whatsnew-passwords-body = يعرف المخترقون أن الناس تُعيد استعمال كلمات السر نفسها. فإن استعملت نفس كلمة السر في أكثر من موقع، وتسرّبت بيانات إحداها، فسترى في { -lockwise-brand-short-name } تنبيهًا لتغيير كلمة السر في تلك المواقع التي تستعمل نفس الكلمة.
+cfr-whatsnew-passwords-icon-alt = أيقونة مفتاح ”كلمة السر ضعيفة“
 
 ## Picture-in-Picture fullscreen message
 
@@ -268,11 +270,28 @@ cfr-whatsnew-better-pdf-body = تفتح مستندات PDF الآن مباشرة
 ## DOH Message
 
 cfr-doorhanger-doh-body = خصوصيّتك مهمة. يُوجّه الآن { -brand-short-name } كل طلبات DNS التي تُجريها (متى كان ممكنًا) إلى خدمة شريكة، ذلك لحمايتك وأنت تتصفّح.
+cfr-doorhanger-doh-header = عمليات بحث DNS أكثر أمانًا وتعميةً
 cfr-doorhanger-doh-primary-button = حسنًا، فهمت
     .accesskey = ح
 cfr-doorhanger-doh-secondary-button = عطّل
     .accesskey = ط
 
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body = فعّل { -brand-short-name } الميزة التجريبية ”الانشطار/Fission“ (عزل المواقع) لراحتك. تقدّم لك ميزة ”الانشطار“ طبقة حماية إضافية لك وللمواقع التي تزورها ذلك بعزل كل موقع عن غيره في سيرورة منفصلة.
+cfr-doorhanger-fission-header = عزل المواقع
+cfr-doorhanger-fission-primary-button = حسنًا، فهمت
+    .accesskey = ح
+cfr-doorhanger-fission-secondary-button = اطّلع على المزيد
+    .accesskey = ط
+
 ## What's new: Cookies message
 
+cfr-whatsnew-clear-cookies-header = الحماية التلقائية ضد أساليب التعقّب المتخفّية
 cfr-whatsnew-clear-cookies-body = تُوجّهك بعض المتعقّبات إلى مواقع أخرى تضبط الكعكات دون أن تعلم. يمسح { -brand-short-name } الآن تلقائيًا تلك الكعكات بذلك يستحيل تعقّبك.
+cfr-whatsnew-clear-cookies-image-alt = رسمٌ يوضّح ”حجب الكعكات“
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = تحكّمات أخرى بالوسائط
+cfr-whatsnew-media-keys-button = اطّلع على المزيد

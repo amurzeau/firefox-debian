@@ -29,6 +29,8 @@ search-input-box =
            *[other] Keresés a beállításokban
         }
 managed-notice = A böngészőjét a szervezete kezeli.
+category-list =
+    .aria-label = Kategóriák
 pane-general-title = Általános
 category-general =
     .tooltiptext = { pane-general-title }
@@ -489,6 +491,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Népszerű oldalak
 home-prefs-topsites-description = A leggyakrabban látogatott oldalak
+home-prefs-topsites-by-option-sponsored =
+    .label = Szponzorált legjobb oldalak
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -560,6 +564,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Címsávjavaslatok beállításainak módosítása
 search-suggestions-cant-show = A keresési javaslatok nem jelennek meg a címsáv találatai között, mert a { -brand-short-name } nem jegyzi meg az előzményeket.
 search-one-click-header = Egy kattintásos keresőszolgáltatások
+search-one-click-header2 = Keresési gyorsparancsok
 search-one-click-desc = Válassza ki a címsáv alatt és a keresősávban gépeléskor megjelenő alternatív keresőszolgáltatatásokat.
 search-choose-engine-column =
     .label = Keresőszolgáltatás

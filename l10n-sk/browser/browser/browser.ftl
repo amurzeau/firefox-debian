@@ -160,6 +160,55 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Odstrániť rozšírenie
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Odoslať kartu do zariadenia
+            [few] Odoslať { $tabCount } karty do zariadenia
+           *[other] Odoslať { $tabCount } kariet do zariadenia
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Odoslať kartu do zariadenia
+            [few] Odoslať { $tabCount } karty do zariadenia
+           *[other] Odoslať { $tabCount } kariet do zariadenia
+        }
+page-action-pocket-panel =
+    .label = Uložiť stránku do { -pocket-brand-name }u
+page-action-copy-url-panel =
+    .label = Kopírovať odkaz
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopírovať odkaz
+page-action-email-link-panel =
+    .label = Odoslať odkaz…
+page-action-email-link-urlbar =
+    .tooltiptext = Odoslať odkaz…
+page-action-share-url-panel =
+    .label = Zdieľať
+page-action-share-url-urlbar =
+    .tooltiptext = Zdieľať
+page-action-share-more-panel =
+    .label = Viac…
+page-action-send-tab-not-ready =
+    .label = Synchronizovanie zariadení…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Pripnúť kartu
+page-action-pin-tab-urlbar =
+    .tooltiptext = Pripnúť kartu
+page-action-unpin-tab-panel =
+    .label = Zrušiť pripnutie karty
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Zrušiť pripnutie karty
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -331,3 +380,43 @@ urlbar-page-action-button =
     .tooltiptext = Akcie stránky
 urlbar-pocket-button =
     .tooltiptext = Uložiť do { -pocket-brand-name }u
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Vyhľadať v súkromnom okne pomocou { $engine }
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Vyhľadať v súkromnom okne
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Vyhľadať pomocou { $engine }
+urlbar-result-action-switch-tab = Prepnúť na kartu
+urlbar-result-action-visit = Navštíviť
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> je teraz v režime celej obrazovky
+fullscreen-warning-no-domain = Tento dokument je teraz v režime celej obrazovky
+fullscreen-exit-button = Ukončiť režim celej obrazovky (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Ukončiť režim celej obrazovky (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> má kontrolu nad vaším kurzorom. Ovládanie kurzora prevezmete stlačením klávesu Esc.
+pointerlock-warning-no-domain = Tento dokument má kontrolu nad vaším kurzorom. Ovládanie kurzora prevezmete stlačením klávesu Esc.

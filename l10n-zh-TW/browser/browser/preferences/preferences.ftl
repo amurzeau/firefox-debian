@@ -29,6 +29,8 @@ search-input-box =
            *[other] 在偏好設定中尋找
         }
 managed-notice = 您的瀏覽器受到組織管理。
+category-list =
+    .aria-label = 分類
 pane-general-title = 一般
 category-general =
     .tooltiptext = { pane-general-title }
@@ -477,6 +479,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = 熱門網站
 home-prefs-topsites-description = 最常造訪的網站
+home-prefs-topsites-by-option-sponsored =
+    .label = 贊助的熱門網站
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -544,6 +548,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = 修改其他網址列建議偏好設定
 search-suggestions-cant-show = 由於您已經設定 { -brand-short-name } 不要記住瀏覽紀錄，網址列中將不會顯示建議搜尋結果。
 search-one-click-header = 快捷搜尋引擎清單
+search-one-click-header2 = 搜尋快速鍵
 search-one-click-desc = 請選擇當您在網址列或搜尋列輸入關鍵字時，可選用的其他搜尋引擎。
 search-choose-engine-column =
     .label = 搜尋引擎

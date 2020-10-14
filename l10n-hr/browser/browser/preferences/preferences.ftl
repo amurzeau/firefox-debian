@@ -29,6 +29,8 @@ search-input-box =
            *[other] Pronađi u Postavkama
         }
 managed-notice = Tvojim preglednikom upravlja tvoja organizacija.
+category-list =
+    .aria-label = Kategorije
 pane-general-title = Osnovno
 category-general =
     .tooltiptext = { pane-general-title }
@@ -49,6 +51,7 @@ category-experimental =
     .tooltiptext = { -brand-short-name } eksperimenti
 pane-experimental-subtitle = Nastavi s oprezom
 pane-experimental-search-results-header = { -brand-short-name } eksperimenti: Nastavi s oprezom
+pane-experimental-description = Mijenjanje naprednih postavki konfiguracije može utjecati na perfomancu ili sigurnost programa { -brand-short-name }.
 help-button-label = { -brand-short-name } podrška
 addons-button-label = Proširenja i teme
 focus-search =
@@ -81,6 +84,9 @@ extension-controlled-homepage-override = Dodatak, <img data-l10n-name="icon"/> {
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Dodatak, <img data-l10n-name="icon"/> { $name }, kontrolira tvoju stranicu za novu karticu.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Dodatak <img data-l10n-name="icon"/> { $name } upravlja ovom postavkom.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Dodatak, <img data-l10n-name="icon"/> { $name }, kontrolira ovu postavku.
@@ -141,7 +147,7 @@ disable-extension =
     .label = Onemogući dodatak
 tabs-group-header = Kartice
 ctrl-tab-recently-used-order =
-    .label = Ctrl+Tab kruži kroz kartice redosljedom zadnje korištenih
+    .label = Ctrl+Tab kruži kroz kartice redoslijedom zadnjeg korištenja
     .accesskey = T
 open-new-link-as-tabs =
     .label = Otvori poveznice u karticama umjesto novih prozora
@@ -159,7 +165,7 @@ show-tabs-in-taskbar =
     .label = Prikaži preglede kartica u Windows traci zadataka
     .accesskey = k
 browser-containers-enabled =
-    .label = Aktiviraj kontejner kartice
+    .label = Aktiviraj kontejnerske kartice
     .accesskey = m
 browser-containers-learn-more = Saznaj više
 browser-containers-settings =
@@ -289,8 +295,8 @@ applications-use-app-default =
 applications-use-os-default =
     .label =
         { PLATFORM() ->
-            [macos] Koristi macOS zadanu aplikaciju
-            [windows] Koristi Windows zadanu aplikaciju
+            [macos] Koristi zadanu aplikaciju u macOS-u
+            [windows] Koristi zadanu aplikaciju u Windowsu
            *[other] Koristi zadanu aplikaciju sustava
         }
 applications-use-other =
@@ -348,7 +354,7 @@ play-drm-content =
     .accesskey = p
 play-drm-content-learn-more = Saznaj više
 update-application-title = { -brand-short-name } dopune
-update-application-description = Aktualiziraj { -brand-short-name } za najbolju performansu, stabilnost i sigurnost.
+update-application-description = Aktualiziraj { -brand-short-name } za najbolju performancu, stabilnost i sigurnost.
 update-application-version = Verzija { $version } <a data-l10n-name="learn-more">Što je novo</a>
 update-history =
     .label = Prikaži povijest nadogradnji …
@@ -385,7 +391,7 @@ update-in-progress-cancel-button = &Nastavi
 
 ## General Section - Performance
 
-performance-title = Performansa
+performance-title = Performanca
 performance-use-recommended-settings-checkbox =
     .label = Koristi preporučene postavke performanse
     .accesskey = u
@@ -488,12 +494,15 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Najbolje stranice
 home-prefs-topsites-description = Stranice koje najviše posjećujete
+home-prefs-topsites-by-option-sponsored =
+    .label = Sponzorirane najpopularnije stranice
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = Preporučeno od { $provider }
+home-prefs-recommended-by-description-update = Izniman sadržaj sa svih strana weba, kojeg izabire { $provider }
 
 ##
 
@@ -559,6 +568,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Promijeni postavke za ostale prijedloge u adresnoj traci
 search-suggestions-cant-show = Prijedlozi pretraživanja neće biti prikazani u lokacijskoj traci, jer je { -brand-short-name } podešen, da ne pamti povijest.
 search-one-click-header = Tražilice jednim klikom
+search-one-click-header2 = Prečaci za pretraživanje
 search-one-click-desc = Odaberi alternativne tražilice, koje će se pojaviti ispod adresne trake i trake pretraživanja kad počneš upisivati pojmove.
 search-choose-engine-column =
     .label = Tražilica
@@ -570,6 +580,9 @@ search-restore-default =
 search-remove-engine =
     .label = Ukloni
     .accesskey = U
+search-add-engine =
+    .label = Dodaj
+    .accesskey = D
 search-find-more-link = Pronađi daljnje tražilice
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -769,7 +782,7 @@ forms-primary-pw-learn-more-link = Saznaj više
 # ("Master Password" in English) so that the preferences can be found
 # when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
-    .label = Promijeni glavnu lozinku …
+    .label = Promijeni primarnu lozinku …
     .accesskey = m
 forms-master-pw-fips-title = Trenutačno si u FIPS modu. FIPS ne dopušta praznu glavnu lozinku.
 forms-primary-pw-change =
@@ -779,6 +792,7 @@ forms-primary-pw-change =
 # "Master Password" in your language. If you're editing the FTL file directly,
 # use { "" } as the value.
 forms-primary-pw-former-name = Prije poznato kao glavna lozinka
+forms-primary-pw-fips-title = Trenutno si u načinu rada FIPS. FIPS ne dopušta praznu primarnu lozinku.
 forms-master-pw-fips-desc = Promjena lozinke nije uspjela
 
 ## OS Authentication dialog
@@ -788,6 +802,8 @@ forms-master-pw-fips-desc = Promjena lozinke nije uspjela
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = stvori glavnu lozinku
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Za stvaranje primarne lozinke, unesi svoje podatke za prijavu na Windows. Ovo pomaže u zaštiti tvojih računa.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -890,8 +906,11 @@ addressbar-locbar-bookmarks-option =
     .label = Zabilješke
     .accesskey = k
 addressbar-locbar-openpage-option =
-    .label = Otvori kartice
+    .label = Otvorene kartice
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = Najbolje stranice
+    .accesskey = N
 addressbar-suggestions-settings = Promijeni postavke za prijedloge tražilica
 
 ## Privacy Section - Content Blocking

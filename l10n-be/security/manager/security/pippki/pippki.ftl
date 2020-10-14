@@ -22,8 +22,11 @@ change-password-reenter = Новы пароль (ізноў):
 reset-password-window =
     .title = Скіданне галоўнага пароля
     .style = width: 40em
+pippki-failed-pw-change = Не ўдалося змяніць пароль.
+pippki-incorrect-pw = Вы няправільна ўвялі галоўны пароль. Паспрабуйце, калі ласка, ізноў.
 pippki-pw-change-ok = Пароль паспяхова зменены.
 pippki-pw-empty-warning = Вашы захаваныя паролі і прыватныя ключы не будуць абаронены.
+pippki-pw-erased-ok = Вы выдалілі свой пароль. { pippki-pw-empty-warning }
 pippki-pw-not-wanted = Увага! Вы вырашылі не выкарыстоўваць пароль. { pippki-pw-empty-warning }
 pippki-pw-change2empty-in-fips-mode = Зараз вы ў рэжыме FIPS. Для FIPS патрабуецца непусты пароль.
 
@@ -35,6 +38,7 @@ reset-primary-password-window =
 reset-password-button-label =
     .label = Скінуць
 reset-password-text = Калі вы пазбавіцеся вашага галоўнага пароля, усе вашы захаваныя паролі сеціва і э-пошты, даныя формаў, асабістыя пасведчанні і прыватныя ключы згубяцца. Вы сапраўды хочаце скінуць ваш галоўны пароль?
+reset-primary-password-text = Калі вы скінеце свой галоўны пароль, згубяцца ўсе захаваныя паролі для сайтаў і электроннай пошты, асабістыя сертыфікаты і прыватныя ключы. Ці сапраўды хочаце скінуць свой галоўны пароль?
 pippki-reset-password-confirmation-title = Скінуць галоўны пароль
 pippki-reset-password-confirmation-message = Ваш галоўны пароль скінуты.
 

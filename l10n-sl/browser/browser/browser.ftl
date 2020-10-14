@@ -162,6 +162,57 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Odstrani razširitev
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Pošlji zavihek na napravo
+            [two] Pošlji { $tabCount } zavihka na napravo
+            [few] Pošlji { $tabCount } zavihke na napravo
+           *[other] Pošlji { $tabCount } zavihkov na napravo
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Pošlji zavihek na napravo
+            [two] Pošlji { $tabCount } zavihka na napravo
+            [few] Pošlji { $tabCount } zavihke na napravo
+           *[other] Pošlji { $tabCount } zavihkov na napravo
+        }
+page-action-pocket-panel =
+    .label = Shrani stran v { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Kopiraj povezavo
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopiraj povezavo
+page-action-email-link-panel =
+    .label = Pošlji povezavo po e-pošti …
+page-action-email-link-urlbar =
+    .tooltiptext = Pošlji povezavo po e-pošti …
+page-action-share-url-panel =
+    .label = Deli
+page-action-share-url-urlbar =
+    .tooltiptext = Deli
+page-action-share-more-panel =
+    .label = Več …
+page-action-send-tab-not-ready =
+    .label = Sinhroniziranje naprav ...
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Pripni zavihek
+page-action-pin-tab-urlbar =
+    .tooltiptext = Pripni zavihek
+page-action-unpin-tab-panel =
+    .label = Odpni zavihek
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Odpni zavihek
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -369,3 +420,43 @@ urlbar-page-action-button =
     .tooltiptext = Dejanja strani
 urlbar-pocket-button =
     .tooltiptext = Shrani v { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Išči z iskalnikom { $engine } v zasebnem oknu
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Išči v zasebnem oknu
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Išči z iskalnikom { $engine }
+urlbar-result-action-switch-tab = Preklopi na zavihek
+urlbar-result-action-visit = Obišči
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = Stran <span data-l10n-name="domain">{ $domain }</span> je zdaj prikazana čez celoten zaslon
+fullscreen-warning-no-domain = Ta dokument je zdaj prikazan čez celoten zaslon
+fullscreen-exit-button = Izhod iz celozaslonskega načina (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Izhod iz celozaslonskega načina (Esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ima nadzor nad vašim kazalcem. Pritisnite Esc za ponovni prevzem nadzora.
+pointerlock-warning-no-domain = Ta dokument ima nadzor nad vašim kazalcem. Pritisnite Esc za ponovni prevzem nadzora.

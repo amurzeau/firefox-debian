@@ -249,8 +249,23 @@ cfr-doorhanger-doh-primary-button = De accordo
 cfr-doorhanger-doh-secondary-button = Disactivar
     .accesskey = D
 
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body = { -brand-short-name } ha activate un functionalitate experimental: Fission (isolamento sito) pro te. Isolante cata sito in un processo differente, Fission offere un altere strato de securitate pro te e le sitos web que tu visita.
+cfr-doorhanger-fission-header = Isolamento sito
+cfr-doorhanger-fission-primary-button = De accordo
+    .accesskey = a
+cfr-doorhanger-fission-secondary-button = Saper plus
+    .accesskey = S
+
 ## What's new: Cookies message
 
 cfr-whatsnew-clear-cookies-header = Protection automatic contra tacticas de traciamento perfide
 cfr-whatsnew-clear-cookies-body = Alcun traciatores re-adresse te a altere sitos web que configura cookies secretemente. { -brand-short-name } ora automaticamente clara ille cookies de sorta que tu non pote esser sequite.
 cfr-whatsnew-clear-cookies-image-alt = Illustration cookie blocate
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Altere controlos de medios
+cfr-whatsnew-media-keys-body = Reproduce e pausa audio o video justo de tu claviero o bonetto, rendente facile a controlar le medios de un altere scheda, programma o mesmo quando tu computator es blocate.
+cfr-whatsnew-media-keys-button = Apprende como

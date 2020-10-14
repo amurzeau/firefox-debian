@@ -261,8 +261,23 @@ cfr-doorhanger-doh-primary-button = Гаразд, зрозуміло
 cfr-doorhanger-doh-secondary-button = Вимкнути
     .accesskey = В
 
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body = { -brand-short-name } увімкнув для вас експериментальну функцію Fission (ізоляція сайту). Виділяючи кожен сайт в окремий процес, Fission забезпечує додатковий рівень безпеки для вас та вебсайтів, які ви відвідуєте.
+cfr-doorhanger-fission-header = Ізоляція сайту
+cfr-doorhanger-fission-primary-button = Гаразд, зрозуміло
+    .accesskey = Г
+cfr-doorhanger-fission-secondary-button = Докладніше
+    .accesskey = л
+
 ## What's new: Cookies message
 
 cfr-whatsnew-clear-cookies-header = Автоматичний захист від підступної тактики стеження
 cfr-whatsnew-clear-cookies-body = Деякі елементи стеження спрямовують вас на інші вебсайти, які таємно встановлюють куки. { -brand-short-name } тепер автоматично очищає їх, тож вони більше не можуть стежити за вами.
 cfr-whatsnew-clear-cookies-image-alt = Приклад блокування кук
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Більше елементів керування медіа
+cfr-whatsnew-media-keys-body = Відтворюйте та зупиняйте аудіо чи відео прямо з клавіатури або гарнітури, що полегшує керування мультимедіа з іншої вкладки, програми або навіть коли ваш комп'ютер заблоковано. Ви також можете переміщуватися між доріжками за допомогою клавіш вперед і назад.
+cfr-whatsnew-media-keys-button = Навчитися

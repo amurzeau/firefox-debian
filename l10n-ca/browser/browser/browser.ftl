@@ -162,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Elimina l'extensió
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Envia la pestanya a un dispositiu
+           *[other] Envia { $tabCount } pestanyes a un dispositiu
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Envia la pestanya a un dispositiu
+           *[other] Envia { $tabCount } pestanyes a un dispositiu
+        }
+page-action-pocket-panel =
+    .label = Desa la pàgina al { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Copia l'enllaç
+page-action-copy-url-urlbar =
+    .tooltiptext = Copia l'enllaç
+page-action-email-link-panel =
+    .label = Envia l'enllaç per correu…
+page-action-email-link-urlbar =
+    .tooltiptext = Envia l'enllaç per correu…
+page-action-share-url-panel =
+    .label = Comparteix
+page-action-share-url-urlbar =
+    .tooltiptext = Comparteix
+page-action-share-more-panel =
+    .label = Més…
+page-action-send-tab-not-ready =
+    .label = S'estan sincronitzant els dispositius…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Fixa la pestanya
+page-action-pin-tab-urlbar =
+    .tooltiptext = Fixa la pestanya
+page-action-unpin-tab-panel =
+    .label = No fixis la pestanya
+page-action-unpin-tab-urlbar =
+    .tooltiptext = No fixis la pestanya
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -369,3 +416,43 @@ urlbar-page-action-button =
     .tooltiptext = Accions de la pàgina
 urlbar-pocket-button =
     .tooltiptext = Desa al { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Cerca amb { $engine } en una finestra privada
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Cerca en una finestra privada
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Cerca amb { $engine }
+urlbar-result-action-switch-tab = Canvia a la pestanya
+urlbar-result-action-visit = Visita
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> està a pantalla completa
+fullscreen-warning-no-domain = Aquest document està a pantalla completa
+fullscreen-exit-button = Surt de la pantalla completa (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Surt de la pantalla completa (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> té el control del punter. Premeu Esc per recuperar el control.
+pointerlock-warning-no-domain = Aquest document té el control del punter. Premeu Esc per recuperar el control.

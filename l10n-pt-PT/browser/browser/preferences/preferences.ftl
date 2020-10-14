@@ -29,6 +29,8 @@ search-input-box =
            *[other] Localizar nas preferências
         }
 managed-notice = O seu navegador está a ser gerido pela sua organização.
+category-list =
+    .aria-label = Categorias
 pane-general-title = Geral
 category-general =
     .tooltiptext = { pane-general-title }
@@ -489,6 +491,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Sites mais visitados
 home-prefs-topsites-description = Os sites que mais visita
+home-prefs-topsites-by-option-sponsored =
+    .label = Principais sites patrocinados
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -560,6 +564,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Alterar preferências para outras sugestões da barra de endereços
 search-suggestions-cant-show = Sugestões de pesquisa não serão apresentadas nos resultados da barra de localização porque configurou o { -brand-short-name } para nunca memorizar histórico.
 search-one-click-header = Motores de pesquisa de um clique
+search-one-click-header2 = Pesquisar atalhos
 search-one-click-desc = Escolha os motores de pesquisa alternativos que aparecem debaixo da barra de endereço e barra de pesquisa quando começa a introduzir uma palavra-chave.
 search-choose-engine-column =
     .label = Motor de pesquisa

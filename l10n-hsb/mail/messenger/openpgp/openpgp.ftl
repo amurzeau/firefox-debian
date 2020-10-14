@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 e2e-intro-description = Zo byšće zaklučowane abo digitalnje signowane powěsće pósłał, dyrbiće zaklučowansku technologiju konfigurować, pak OpenPGP pak S/MIME.
-e2e-intro-description-more = wubjerće swój wosobinski kluč, zo byšće wužiwanje OpenPGP zmóžnił, abo wosobinski certifikat, zo byšće wužiwanje S/MIME zmóžnił. Za wosobinski kluč abo certifikat maće wotpowědny tajny kluč.
+e2e-intro-description-more = Wubjerće swój wosobinski kluč, zo byšće wužiwanje OpenPGP zmóžnił, abo wosobinski certifikat, zo byšće wužiwanje S/MIME zmóžnił. Za wosobinski kluč abo certifikat maće wotpowědny tajny kluč.
 openpgp-key-user-id-label = Konto/Wužiwarski ID
 openpgp-keygen-title-label =
     .title = OpenPGP-kluč wutworić
@@ -48,7 +48,7 @@ openpgp-key-man-gen-revoke =
     .label = Wotwołanski certifikat
     .accesskey = o
 openpgp-key-man-ctx-gen-revoke-label =
-    .label = Wotwołanski certifikat wutowrić a składować
+    .label = Wotwołanski certifikat wutworić a składować
 openpgp-key-man-file-menu =
     .label = Dataja
     .accesskey = D
@@ -213,7 +213,7 @@ key-personal-warning = Sće tutón kluč sam wutworił a poćahuje so podate klu
 openpgp-personal-no-label =
     .label = Ně, jón jako mój wosobinski kluč njewužiwać.
 openpgp-personal-yes-label =
-    .label = Haj,  tutón kluč jako wosobinski kluč wužiwać.
+    .label = Haj, tutón kluč jako wosobinski kluč wužiwać.
 openpgp-copy-cmd-label =
     .label = Kopěrować
 
@@ -292,7 +292,7 @@ key-revoked-simple = Kluč je so wotwołał
 key-do-you-accept = Akceptujeće, zo so za tutón kluč digitalne signatury a zaklučowanje powěsćow přepruwuje?
 key-accept-warning = Njeakceptujće strašny kluč. Wužiwajće druhi komunikaciski kanal hač e-mejlowy kanal, zo byšće porstowy wotćišć kluča swojeho dopisowarja přepruwował.
 # Strings enigmailMsgComposeOverlay.js
-cannot-use-own-key-because = Njejmóžno powsěć słać, dokelž je problem z wašim wosobinskim klučom. { $problem }
+cannot-use-own-key-because = Njeje móžno powěsć słać, dokelž je problem z wašim wosobinskim klučom. { $problem }
 cannot-encrypt-because-missing = Njeje móžno, tutu powěsć ze zaklučowanjom kónc do kónca pósłác, dokelž su problemy z klučemi slědowacych přijimarjow: { $problem }
 window-locked = Wobdźěłowanske wokno je zawrjene; słanje je so přetorhnyło
 # Strings in mimeDecrypt.jsm
@@ -303,16 +303,16 @@ keyserver-error-aborted = Přetorhnjeny
 keyserver-error-unknown = Njeznaty zmylk je wustupił
 keyserver-error-server-error = Klučowy serwer je zmylk zdźělił.
 keyserver-error-import-error = Sćehnjeny kluč njeda so importować.
-keyserver-error-unavailable = Klučowy serwer k dispoziciji njeje
+keyserver-error-unavailable = Klučowy serwer k dispoziciji njeje.
 keyserver-error-security-error = Klučowy serwer zaklučowany přistup njepodpěruje.
 keyserver-error-certificate-error = Certifikat klučoweho serwera płaćiwy njeje.
 keyserver-error-unsupported = Klučowy serwer so njepodpěruje.
 # Strings in mimeWkdHandler.jsm
 wkd-message-body-req =
-    Waš e-mejlowy poskićowar je waš naprašowanje předźěłał, zo by waš zjawny kluč do zapisa OpenPGP-webklučow nahrał.
+    Waš e-mejlowy poskićowar je waše naprašowanje předźěłał, zo by waš zjawny kluč do zapisa OpenPGP-webklučow nahrał.
     Prošu wobkrućće, zo byšće wozjewjenje swojeho zjawneho kluča dokónčił.
 wkd-message-body-process =
-    To je mejlka nastupajo awtomatiske předźěłowanje, zo so waš zjawny kluč do zapisa OpenPGP-wewbklučow nahrał.
+    To je mejlka nastupajo awtomatiske předźěłowanje, zo so waš zjawny kluč do zapisa OpenPGP-webklučow nahrał.
     Njetrjebaće ničo činić.
 # Strings in persistentCrypto.jsm
 converter-decrypt-body-failed =
@@ -331,7 +331,7 @@ expiry-keys-expire-soon =
     Poručamy, zo nowe kluče wutworjeće a wotpowědne konta konfigurować, zo byšće je wužiwał.
 expiry-key-missing-owner-trust =
     Waš tajny kluč { $desc } dowěry hódny njeje.
-    Poručamy, zo w klučowych kajkosćach „Spušćeće na certifikacijach“ na „doskónčny“ stajeće.
+    Poručamy, zo w klučowych kajkosćach „Spušćeće so na certifikacije“ na „doskónčny“ stajeće.
 expiry-keys-missing-owner-trust =
     Slědowacy z wašich tajnych klučow dowěry hódny njeje.
     { $desc }.
@@ -345,13 +345,13 @@ filter-decrypt-move-warn-experimental =
     Poručamy z dorazom, zo najprjedy filter „Dešifrowanu kopiju wutworić“ pospytujeće, wuslědk starosćiwje testujeće a jenož započinaće, tutón filter wužiwać, hdyž sće spokojom z wuslědkom.
 filter-term-pgpencrypted-label = Z OpenPGP zaklučowany
 filter-key-required = Dyrbiće kluč přijimarja wubrać.
-filter-key-not-found = Zaklučowanski kluč za ‚{ $desc }‘ njeda so namakać-
+filter-key-not-found = Zaklučowanski kluč za ‚{ $desc }‘ njeda so namakać.
 filter-warn-key-not-secret =
     Warnowanje - filtrowanska akcija „Z klučom zaklučować“ přijimarjow wuměnja.
     Jeli tajny kluč za ‚{ $desc }‘ nimaće, njemóžeće hižo mejlki čitać.
 # Strings filtersWrapper.jsm
 filter-decrypt-move-label = Na přeco dešifrować (OpenPGP)
-filter-decrypt-copy-label = dešifrowanu kopiju wutworić (OpenPGP)
+filter-decrypt-copy-label = Dešifrowanu kopiju wutworić (OpenPGP)
 filter-encrypt-label = Z klučom zaklučować (OpenPGP)
 # Strings in enigmailKeyImportInfo.js
 import-info-title =
@@ -412,7 +412,7 @@ key-ring-pub-key-expired = Kluč { $userId } (klučowy ID { $keyId }) je spadny�
 key-ring-key-disabled = Kluč { $userId } (klučowy ID { $keyId }) je znjemóžnjeny; njeda so wužiwać.
 key-ring-key-invalid = Kluč { $userId } (klučowy ID { $keyId }) płaćiwy njeje. Prošu přepruwujće, hač wón je korektny.
 key-ring-key-not-trusted = Kluč { $userId } (klučowy ID { $keyId }) dowěry hódny dosć njeje. Prošu stajće stopjeń dowěry swojeho kluča na „doskónčny“, zo by jón za signowanje wužiwał.
-key-ring-no-secret-key = Zda so, zo tajny kluč za { $userId } (klučowy ID { $keyId }) na swojim klučowcu nimaće; njemóžeće kluč za signwoanje wužiwać.
+key-ring-no-secret-key = Zda so, zo tajny kluč za { $userId } (klučowy ID { $keyId }) na swojim klučowcu nimaće; njemóžeće kluč za signowanje wužiwać.
 key-ring-pub-key-not-for-signing = Kluč { $userId } (klučowy ID { $keyId }) njeda so za signowanje wužiwać.
 key-ring-pub-key-not-for-encryption = Kluč { $userId } (klučowy ID { $keyId }) njeda so za zaklučowanje wužiwać.
 key-ring-sign-sub-keys-revoked = Wšě signowanske podkluče kluča { $userId } (klučowy ID { $keyId } su wotwołane.
@@ -463,13 +463,13 @@ no-key-found = Njemóžachmy kluč namakać, kotryž so k podatym pytanskim krit
 # Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
 fail-key-extract = Zmylk - přikaz klučoweje ekstrakcije njeje so poradźił
 # Strings used in keyRing.jsm
-fail-cancel = Zmylk - dóstaće kluča je so wot wužiwarja přetorhnył
+fail-cancel = Zmylk - dóstaće kluča je so wot wužiwarja přetorhnyło
 not-first-block = Zmylk - prěni OpenPGP-blok blok zjawneho kluča njeje
 import-key-confirm = Zjawne kluče importować, kotrež su w powěsći zasadźene?
 fail-key-import = Zmylk – importowanje kluča njeje so poradźiło
 file-write-failed = Njeje móžno do dataje { $output } pisać
 no-pgp-block = Zmylk - žadyn płaćiwy blok škitanych OpenPGP-datow namakany
-confirm-permissive-import = Import je so nimokulił. Kluč, kotryž pospytujeće importować, móhł wobškodźeny być abo njeznate atributy wužiwać. Chceće pospytować, dźěle importować, kotrež su korektne? To móhło k tomu wjesć, zo import je njedospołny a kluče su njewužiajomne.
+confirm-permissive-import = Import je so nimokulił. Kluč, kotryž pospytujeće importować, móhł wobškodźeny być abo njeznate atributy wužiwać. Chceće pospytować, dźěle importować, kotrež su korektne? To móhło k tomu wjesć, zo import je njedospołny a kluče su njewužiwajomne.
 # Strings used in trust.jsm
 key-valid-unknown = njeznaty
 key-valid-invalid = njepłaćiwy
@@ -486,10 +486,10 @@ import-key-file = Dataju OpenPGP-kluča importować
 import-rev-file = Wotwołansku dataju OpenPGP importować
 gnupg-file = GnuPG-dataje
 import-keys-failed = Importowanje klučow njeje so poradźiło
-passphrase-prompt = Prošu zapodajće hesłowu frazu, kotraž slědowacy kluč přewostaja: { $key }
+passphrase-prompt = Prošu zapodajće hesłowu frazu, kotraž slědowacy kluč dopušća: { $key }
 file-to-big-to-import = Dataja je přewulka. Prošu njeimportujće wulku sadźbu klučow naraz.
 # Strings used in enigmailKeygen.js
-save-revoke-cert-as = Wotwołanski certifikat wutowrić a składować
+save-revoke-cert-as = Wotwołanski certifikat wutworić a składować
 revoke-cert-ok = Wotwołanski certifikat je so wuspěšnje wutworił. Móžeće jón wužiwać, zo byšće swój zjawny kluč za njepłaćiwy deklarował, na př. jeli sće swój tajny kluč zhubił.
 revoke-cert-failed = Wotwołanski certifikat njeda so wutworić.
 gen-going = Wutworjenje kluča hižo běži!
@@ -523,7 +523,7 @@ key-not-found = Kluč ‚{ $key }‘ njeje so namakał
 key-revoked = Kluč ‚{ $key }‘ je so wotwołał
 key-expired = Kluč ‚{ $key }‘ je spadnył
 msg-compose-internal-error = Interny zmylk je nastał.
-keys-to-export = WubjerćeOpenPGP-kluče, kotrež maja so zasadźić
+keys-to-export = Wubjerće OpenPGP-kluče, kotrež maja so zasadźić
 msg-compose-partially-encrypted-inlinePGP =
     Powěsć, na kotruž wotmołwjeće, njezaklučowane a zaklučowane dźěle wobsahowaše. Jeli wotpósłar njemóžeše někotre dźěle powěsće dešifrować, zhubiće snano dowěrliwe informacije, kotrež wotpósłar sam njemóžeše dešifrować.
     Prošu dźiwajće na to, zo wšón citowany tekst ze swojeje wotmołwy tutomu wotpósłarjej wotstronjeće.
@@ -533,7 +533,7 @@ quoted-printable-warn =
     Sće kodowanje ‚quoted-printable‘ za słanje powěsćow zmóžnił. To móhło k njekorektnemu dešifrowanju a/abo přepruwowanju wašeje powěsće wjesć.
     Chceće nětko słanje powěsćow w kodowanju ‚quoted-printable‘ znjemóžnić?
 minimal-line-wrapping =
-    Maće linkowe łamanje pola { $width } znamješkow nastajił. Za korektne zaklučowanje a/abo signowanje, dyrbi tuta hódnota znamjeńša 68 być.
+    Sće linkowe łamanje pola { $width } znamješkow nastajił. Za korektne zaklučowanje a/abo signowanje, dyrbi tuta hódnota znamjeńša 68 być.
     Chceće nětko linkowe łamanje do 68 znamješkow změnić?
 sending-hidden-rcpt = Přijimarjo schowanych kopijow (BCC) njedadźa so wužiwać, hdyž so zaklučowana powěsć sćele. Zo byšće tutu zaklučowanu powěsć pósłał, wotstrońće pak přijimarjow schowanych kopijow pak přesuńće jich do pola Kopija.
 sending-news =
@@ -545,7 +545,7 @@ send-to-news-warning =
     Pokročować?
 save-attachment-header = Dešifrowany přiwěšk składować
 no-temp-dir =
-    Njeje móžno, temporerny zapis namakać, do kotreho da so pisać
+    Njeje móžno, temporerny zapis namakać, do kotrehož da so pisać
     Prošu stajće wokolinowu wariablu TEMP
 possibly-pgp-mime = Powěsć je snano z PGP/MIME zaklučowana abo signowana; wužiwajće funkciju ‚Dešifrować/Přepruwować‘, zo byšće to přepruwował
 cannot-send-sig-because-no-own-key = Tuta powěsć njeda so digitalnje signować, dokelž hišće njejsće zaklučowanje kónc do kónca za <{ $key }> konfigurował
@@ -565,7 +565,7 @@ attachment-pgp-key =
     Klikńće na ‚Importować‘, zo byšće wobsahowane kluče importował abo na ‚Pokazać‘, zo byšće wobsah dataje we woknje wobhladowaka pokazał
 dlg-button-view = &Pokazać
 # Strings used in enigmailMsgHdrViewOverlay.js
-decrypted-msg-with-format-error = Dešifrowana powěsć (wobnowjeny wobškodźeny e-mejlowy format PGPje so najskerje přez stary serwer Exchange zawinował; přez to njeda so snano wuslědk derje čitać)
+decrypted-msg-with-format-error = Dešifrowana powěsć (wobnowjeny wobškodźeny e-mejlowy format PGP je so najskerje přez stary serwer Exchange zawinował; přez to njeda so snano wuslědk derje čitać)
 # Strings used in encryption.jsm
 not-required = Zmylk – žane zaklučowanje trěbne
 # Strings used in windows.jsm
@@ -584,7 +584,7 @@ dlg-button-cancel = &Přetorhnyć
 dlg-no-prompt = Tutón dialog wjace njepokazać.
 enig-prompt = OpenPGP-namołwa
 enig-confirm = OpenPGP-wobkrućenje
-enig-alert = OpenPGP- zdźělenka
+enig-alert = OpenPGP-zdźělenka
 enig-info = OpenPGP-informacije
 # Strings used in persistentCrypto.jsm
 dlg-button-retry = &Hišće raz spytać
@@ -592,4 +592,4 @@ dlg-button-skip = &Přeskočić
 # Strings used in enigmailCommon.js
 enig-error = OpenPGP-zmylk
 enig-alert-title =
-    .title = OpenPGP- zdźělenka
+    .title = OpenPGP-zdźělenka

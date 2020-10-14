@@ -59,3 +59,15 @@ experimental-features-devtools-serviceworker-debugger-support =
     .label = כלי פיתוח: ניפוי שגיאות של Service Worker
 # "Service Worker" is an API name and is usually not translated.
 experimental-features-devtools-serviceworker-debugger-support-description = הפעלת תמיכה ניסיונות עבור Service Workers בחלונית 'ניפוי שגיאות' שבכלי הפיתוח. תכונה זו עשויה להאט את כלי הפיתוח ולהגדיל את צריכת הזיכרון.
+# WebRTC global mute toggle controls
+experimental-features-webrtc-global-mute-toggles =
+    .label = מתגים להשתקה גלובלית של WebRTC
+experimental-features-webrtc-global-mute-toggles-description = הוספת פקדים למחוון השיתוף הגלובלי של WebRTC המאפשר למשתמשים להשתיק את הזנות המיקרופון והמצלמה שלהם.
+# JS JIT Warp project
+experimental-features-js-warp =
+    .label = JavaScript JIT: Warp
+experimental-features-js-warp-description = הפעלת Warp, מיזם לשיפור הביצועים וניצול הזיכרון של JavaScript.
+# Fission is the name of the feature and should not be translated.
+experimental-features-fission =
+    .label = ‏Fission (בידוד אתרים)
+experimental-features-fission-description = ‏Fission (בידוד אתרים) היא תכונה ניסיונית ב־{ -brand-short-name } המספקת שכבת הגנה נוספת מפני באגים של אבטחה. על־ידי בידוד כל אתר לתהליך נפרד, Fission מקשה על אתרים זדוניים לקבל גישה למידע מדפים אחרים בהם המשתמש מבקר. זהו שינוי אדריכלי משמעותי ב־{ -brand-short-name } ונשמח לקבל דיווחים על כל בעיה שתימצא בבדיקות. לפרטים נוספים ניתן לקרוא את  <a data-l10n-name="wiki">הוויקי</a>.

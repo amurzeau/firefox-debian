@@ -256,8 +256,23 @@ cfr-doorhanger-doh-primary-button = Ok, jag förstår
 cfr-doorhanger-doh-secondary-button = Inaktivera
     .accesskey = I
 
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body = { -brand-short-name } har aktiverat en experimentell funktion Fission (webbplatsisolering) åt dig. Genom att isolera varje webbplats i en separat process ger Fission ytterligare ett säkerhetsskikt för dig och de webbplatser du besöker.
+cfr-doorhanger-fission-header = Webbplatsisolering
+cfr-doorhanger-fission-primary-button = Ok, jag förstår
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Läs mer
+    .accesskey = L
+
 ## What's new: Cookies message
 
 cfr-whatsnew-clear-cookies-header = Automatiskt skydd mot lömsk spårningstaktik
 cfr-whatsnew-clear-cookies-body = Vissa spårare omdirigerar dig till andra webbplatser som i hemlighet ställer in kakor. { -brand-short-name } rensar nu automatiskt de kakorna så att du inte kan följas.
 cfr-whatsnew-clear-cookies-image-alt = Kaka blockerade illustration
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Fler mediekontroller
+cfr-whatsnew-media-keys-body = Spela upp och pausa ljud eller video direkt från tangentbordet eller headsetet, vilket gör det enkelt att styra media från en annan flik, ett annat program eller till och med när din dator är låst. Du kan också flytta mellan spår med framåt- och bakåtknapparna.
+cfr-whatsnew-media-keys-button = Lär dig hur

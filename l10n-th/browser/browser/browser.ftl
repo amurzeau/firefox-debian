@@ -162,6 +162,45 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = เอาส่วนขยายออก
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label = ส่ง { $tabCount } แท็บไปยังอุปกรณ์
+page-action-send-tabs-urlbar =
+    .tooltiptext = ส่ง { $tabCount } แท็บไปยังอุปกรณ์
+page-action-pocket-panel =
+    .label = บันทึกหน้าไปยัง { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = คัดลอกลิงก์
+page-action-copy-url-urlbar =
+    .tooltiptext = คัดลอกลิงก์
+page-action-email-link-panel =
+    .label = ส่งอีเมลลิงก์…
+page-action-email-link-urlbar =
+    .tooltiptext = ส่งอีเมลลิงก์…
+page-action-share-url-panel =
+    .label = แบ่งปัน
+page-action-share-url-urlbar =
+    .tooltiptext = แบ่งปัน
+page-action-share-more-panel =
+    .label = เพิ่มเติม…
+page-action-send-tab-not-ready =
+    .label = กำลังซิงค์อุปกรณ์…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = ปักหมุดแท็บ
+page-action-pin-tab-urlbar =
+    .tooltiptext = ปักหมุดแท็บ
+page-action-unpin-tab-panel =
+    .label = ถอนหมุดแท็บ
+page-action-unpin-tab-urlbar =
+    .tooltiptext = ถอนหมุดแท็บ
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +212,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = คราวนี้ค้นหาด้วย:
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +277,14 @@ identity-passive-loaded = บางส่วนของหน้านี้ไ
 identity-active-loaded = คุณได้ปิดใช้งานการป้องกันในหน้านี้
 identity-weak-encryption = หน้านี้ใช้การเข้ารหัสที่อ่อนแอ
 identity-insecure-login-forms = ข้อมูลการเข้าสู่ระบบที่ใส่ไว้บนหน้านี้อาจถูกบุกรุกได้
+identity-https-only-connection-upgraded = (อัปเกรดเป็น HTTPS)
+identity-https-only-label = โหมด HTTPS-Only
+identity-https-only-dropdown-on =
+    .label = เปิด
+identity-https-only-dropdown-off =
+    .label = ปิด
+identity-https-only-dropdown-off-temporarily =
+    .label = ปิดชั่วคราว
 identity-permissions =
     .value = สิทธิอนุญาต
 identity-permissions-reload-hint = คุณอาจจำเป็นต้องโหลดหน้าใหม่เพื่อให้การเปลี่ยนแปลงมีผล
@@ -369,3 +416,54 @@ urlbar-page-action-button =
     .tooltiptext = การกระทำหน้า
 urlbar-pocket-button =
     .tooltiptext = บันทึกไปยัง { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = ค้นหาด้วย { $engine } ในหน้าต่างส่วนตัว
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = ค้นหาในหน้าต่างส่วนตัว
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = ค้นหาด้วย { $engine }
+urlbar-result-action-switch-tab = สลับไปยังแท็บ
+urlbar-result-action-visit = เยี่ยมชม
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = ค้นหาที่คั่นหน้า
+urlbar-result-action-search-history = ค้นหาประวัติ
+urlbar-result-action-search-tabs = ค้นหาแท็บ
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = ค้นหาด้วย { $engine } โดยตรงจากแถบที่อยู่
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = ค้นหา { $engine } โดยตรงจากแถบที่อยู่
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> เต็มหน้าจออยู่
+fullscreen-warning-no-domain = เอกสารนี้เต็มหน้าจออยู่
+fullscreen-exit-button = ออกจากภาพเต็มหน้าจอ (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = ออกจากภาพเต็มหน้าจอ (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ได้ควบคุมตัวชี้ของคุณ กด Esc เพื่อดึงการควบคุมคืน
+pointerlock-warning-no-domain = เอกสารชิ้นนี้ได้ควบคุมตัวชี้ของคุณ กด Esc เพื่อดึงการควบคุมคืน

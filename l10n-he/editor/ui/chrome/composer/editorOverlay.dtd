@@ -8,17 +8,15 @@
 <!ENTITY saveCmd.key "S">
 
 <!-- Edit menu items -->
-<!ENTITY pasteNoFormatting.label "הדבק ללא עיצוב">
+<!ENTITY pasteNoFormatting.label "הדבקה ללא עיצוב">
 <!ENTITY pasteNoFormatting.accesskey "o">
 <!ENTITY pasteNoFormatting.key "V">
-<!ENTITY pasteAs.label "הדבק בצורת">
-<!ENTITY pasteAs.accesskey "a">
-<!ENTITY pasteAsQuotationCmd.label "הדבק כציטוט">
+<!ENTITY pasteAsQuotationCmd.label "הדבקה כציטוט">
 <!ENTITY pasteAsQuotationCmd.accesskey "q">
 <!ENTITY pasteAsQuotationCmd.key "o">
 <!ENTITY findBarCmd.label "חיפוש…">
 <!ENTITY findReplaceCmd.label "חיפוש והחלפה…">
-<!ENTITY enableInlineSpellChecker.label "בדוק איות תוך כדי הקלדה">
+<!ENTITY enableInlineSpellChecker.label "בדיקת איות תוך כדי הקלדה">
 <!ENTITY enableInlineSpellChecker.accesskey "ב">
 <!ENTITY checkSpellingCmd2.label "בדיקת איות">
 <!ENTITY checkSpellingCmd2.accesskey "ב">
@@ -48,13 +46,14 @@
 <!ENTITY insertBreakAllCmd.accesskey "k">
 
 <!-- Used just in context popup. -->
-<!ENTITY createLinkCmd.label "צור קישור...">
+<!ENTITY createLinkCmd.label "יצירת קישור…">
 <!ENTITY createLinkCmd.accesskey "k">
 <!ENTITY editLinkCmd.label "ערוך קישור ב־Composer חדש">
 <!ENTITY editLinkCmd.accesskey "C">
 
 <!-- Font Face SubMenu -->
-<!ENTITY FontFaceSelect.tooltip "בחר גופן">
+<!ENTITY FontFaceSelect.title "גופן">
+<!ENTITY FontFaceSelect.tooltip "בחירת גופן">
 <!ENTITY fontfaceMenu.label "גופן">
 <!ENTITY fontfaceMenu.accesskey "ג">
 <!ENTITY fontVarWidth.label "רוחב משתנה">
@@ -70,41 +69,42 @@
 <!ENTITY fontCourier.accesskey "C">
 
 <!-- Font Size SubMenu -->
-<!ENTITY FontSizeSelect.tooltip "בחר גודל גופן">
+<!ENTITY FontSizeSelect.title "גודל גופן">
+<!ENTITY FontSizeSelect.tooltip "בחירת גודל גופן">
 <!ENTITY decreaseFontSize.label "קטן יותר">
 <!ENTITY decreaseFontSize.accesskey "ק">
 <!ENTITY decrementFontSize.key "&lt;">
 <!ENTITY decrementFontSize.key2 ","> <!-- < is above this key on many keyboards -->
 <!ENTITY increaseFontSize.label "גדול יותר">
-<!ENTITY increaseFontSize.accesskey "g">
+<!ENTITY increaseFontSize.accesskey "ד">
 <!ENTITY incrementFontSize.key "&gt;">
 <!ENTITY incrementFontSize.key2 "."> <!-- > is above this key on many keyboards -->
 
-<!ENTITY fontSizeMenu.label "גודל ">
-<!ENTITY fontSizeMenu.accesskey "z">
+<!ENTITY fontSizeMenu.label "גודל">
+<!ENTITY fontSizeMenu.accesskey "ג">
 <!ENTITY size-tinyCmd.label "קטן מאוד">
-<!ENTITY size-tinyCmd.accesskey "ז">
+<!ENTITY size-tinyCmd.accesskey "ט">
 <!ENTITY size-smallCmd.label "קטן">
-<!ENTITY size-smallCmd.accesskey "s">
+<!ENTITY size-smallCmd.accesskey "ק">
 <!ENTITY size-mediumCmd.label "בינוני">
-<!ENTITY size-mediumCmd.accesskey "d">
+<!ENTITY size-mediumCmd.accesskey "ב">
 <!ENTITY size-largeCmd.label "גדול">
-<!ENTITY size-largeCmd.accesskey "l">
+<!ENTITY size-largeCmd.accesskey "ג">
 <!ENTITY size-extraLargeCmd.label "גדול מאוד">
-<!ENTITY size-extraLargeCmd.accesskey "ג">
+<!ENTITY size-extraLargeCmd.accesskey "ד">
 <!ENTITY size-hugeCmd.label "ענק">
 <!ENTITY size-hugeCmd.accesskey "ע">
 
 <!-- Font Style SubMenu -->
 <!ENTITY fontStyleMenu.label "סגנון טקסט">
-<!ENTITY fontStyleMenu.accesskey "s">
+<!ENTITY fontStyleMenu.accesskey "ס">
 <!ENTITY styleBoldCmd.label "מודגש">
 <!ENTITY styleBoldCmd.accesskey "b">
 <!ENTITY styleBoldCmd.key "b">
 <!ENTITY styleItalicCmd.label "נטוי">
 <!ENTITY styleItalicCmd.accesskey "I">
 <!ENTITY styleItalicCmd.key "i">
-<!ENTITY styleUnderlineCmd.label "קו תחתי">
+<!ENTITY styleUnderlineCmd.label "קו תחתון">
 <!ENTITY styleUnderlineCmd.accesskey "u">
 <!ENTITY styleUnderlineCmd.key "u">
 <!ENTITY styleStrikeThruCmd.label "קו חוצה">
@@ -132,14 +132,14 @@
 <!ENTITY styleVar.label "משתנה">
 <!ENTITY styleVar.accesskey "v">
 
-<!ENTITY formatFontColor.label "צבע טקסט...">
-<!ENTITY formatFontColor.accesskey "c">
-<!ENTITY tableOrCellColor.label "צבע רקע של טבלה או תא...">
+<!ENTITY formatFontColor.label "צבע טקסט…">
+<!ENTITY formatFontColor.accesskey "צ">
+<!ENTITY tableOrCellColor.label "צבע רקע של טבלה או תא…">
 <!ENTITY tableOrCellColor.accesskey "B">
 
 <!ENTITY formatRemoveStyles.key "y">
 <!ENTITY formatRemoveLinks.key "k">
-<!ENTITY formatRemoveNamedAnchors.label "הסר עוגנים בעלי שם">
+<!ENTITY formatRemoveNamedAnchors.label "הסרת עוגנים בעלי שם">
 <!ENTITY formatRemoveNamedAnchors.accesskey "R">
 <!ENTITY formatRemoveNamedAnchors2.key "R">
 
@@ -160,51 +160,53 @@
 <!ENTITY heading6Cmd.label "כותרת 6">
 <!ENTITY heading6Cmd.accesskey "6">
 <!ENTITY paragraphAddressCmd.label "כתובת">
-<!ENTITY paragraphAddressCmd.accesskey "a">
+<!ENTITY paragraphAddressCmd.accesskey "כ">
 <!ENTITY paragraphPreformatCmd.label "מעוצב מראש">
 <!ENTITY paragraphPreformatCmd.accesskey "f">
 
 <!-- List menu items -->
 <!ENTITY formatlistMenu.label "רשימה">
-<!ENTITY formatlistMenu.accesskey "l">
+<!ENTITY formatlistMenu.accesskey "ר">
 <!ENTITY noneCmd.label "ללא">
-<!ENTITY noneCmd.accesskey "N">
+<!ENTITY noneCmd.accesskey "ל">
 <!ENTITY listBulletCmd.label "עם תבליט">
-<!ENTITY listBulletCmd.accesskey "b">
+<!ENTITY listBulletCmd.accesskey "ת">
 <!ENTITY listNumberedCmd.label "ממוספר">
-<!ENTITY listNumberedCmd.accesskey "m">
+<!ENTITY listNumberedCmd.accesskey "ס">
 <!ENTITY listTermCmd.label "מונח">
-<!ENTITY listTermCmd.accesskey "t">
+<!ENTITY listTermCmd.accesskey "ח">
 <!ENTITY listDefinitionCmd.label "הגדרה">
-<!ENTITY listDefinitionCmd.accesskey "d">
-<!ENTITY listPropsCmd.label "מאפייני רשימה...">
-<!ENTITY listPropsCmd.accesskey "l">
+<!ENTITY listDefinitionCmd.accesskey "ה">
+<!ENTITY listPropsCmd.label "מאפייני רשימה…">
+<!ENTITY listPropsCmd.accesskey "ר">
 
-<!ENTITY ParagraphSelect.tooltip "בחר תבנית פסקה">
+<!ENTITY ParagraphSelect.title "פסקה">
+<!ENTITY ParagraphSelect.tooltip "בחירת תבנית פסקה">
 <!-- Shared in Paragraph, and Toolbar menulist -->
 <!ENTITY bodyTextCmd.label "טקסט גוף">
-<!ENTITY bodyTextCmd.accesskey "T">
+<!ENTITY bodyTextCmd.accesskey "ט">
 <!-- isn't used in menu now, but may be added in future -->
 <!ENTITY advancedPropertiesCmd.label "מאפיינים מתקדמים">
-<!ENTITY advancedPropertiesCmd.accesskey "v">
+<!ENTITY advancedPropertiesCmd.accesskey "פ">
 
 <!-- Align menu items -->
-<!ENTITY alignMenu.label "ישור">
-<!ENTITY alignMenu.accesskey "a">
+<!ENTITY alignMenu.label "יישור">
+<!ENTITY alignMenu.accesskey "י">
 <!ENTITY alignLeft.label "שמאל">
-<!ENTITY alignLeft.accesskey "l">
-<!ENTITY alignLeft.tooltip "ישר לשמאל">
+<!ENTITY alignLeft.accesskey "ש">
+<!ENTITY alignLeft.tooltip "יישור לשמאל">
 <!ENTITY alignCenter.label "מרכז">
-<!ENTITY alignCenter.accesskey "c">
-<!ENTITY alignCenter.tooltip "ישר למרכז">
+<!ENTITY alignCenter.accesskey "מ">
+<!ENTITY alignCenter.tooltip "יישור למרכז">
 <!ENTITY alignRight.label "ימין">
-<!ENTITY alignRight.accesskey "r">
-<!ENTITY alignRight.tooltip "ישר לימין">
+<!ENTITY alignRight.accesskey "י">
+<!ENTITY alignRight.tooltip "יישור לימין">
 <!ENTITY alignJustify.label "יישור דו־צידי">
 <!ENTITY alignJustify.accesskey "j">
 <!ENTITY alignJustify.tooltip "מיושר משני הצדדים">
 
 <!-- Layer toolbar items -->
+<!ENTITY absolutePosition.label "מיקום">
 <!ENTITY layer.tooltip "שכבה">
 <!ENTITY layerSendToBack.tooltip "העבר לרקע">
 <!ENTITY layerBringToFront.tooltip "הבא לקידמה">
@@ -224,10 +226,10 @@
 <!ENTITY tableMenu.accesskey "b">
 
 <!-- Select Submenu -->
-<!ENTITY tableSelectMenu.label "בחר">
+<!ENTITY tableSelectMenu.label "בחירה">
 <!ENTITY tableSelectMenu.accesskey "s">
 
-<!ENTITY tableSelectMenu2.label "בחר טבלה">
+<!ENTITY tableSelectMenu2.label "בחירת טבלה">
 <!ENTITY tableSelectMenu2.accesskey "S">
 <!ENTITY tableInsertMenu2.label "הכנס טבלה">
 <!ENTITY tableInsertMenu2.accesskey "I">
@@ -279,7 +281,7 @@
 <!ENTITY tableSplitCell.accesskey "c">
 <!ENTITY convertToTable.label "צור טבלה מקטע נבחר">
 <!ENTITY convertToTable.accesskey "r">
-<!ENTITY tableProperties.label "מאפייני הטבלה...">
+<!ENTITY tableProperties.label "מאפייני הטבלה…">
 <!ENTITY tableProperties.accesskey "o">
 
 <!-- Toolbar-only items -->
@@ -288,12 +290,10 @@
 <!ENTITY cutToolbarCmd.tooltip "גזירה">
 <!ENTITY copyToolbarCmd.tooltip "העתקה">
 <!ENTITY pasteToolbarCmd.tooltip "הדבקה">
-<!ENTITY printToolbarCmd.label "הדפסה">
-<!ENTITY printToolbarCmd.tooltip "הדפס דף זה">
 <!ENTITY findToolbarCmd.label "מצא">
 <!ENTITY findToolbarCmd.tooltip "מצא טקסט בדף">
 <!ENTITY spellToolbarCmd.label "איות">
-<!ENTITY spellToolbarCmd.tooltip "בדוק איות של קטע נבחר או דף שלם">
+<!ENTITY spellToolbarCmd.tooltip "בדיקת איות של קטע נבחר או דף שלם">
 <!ENTITY imageToolbarCmd.label "תמונה">
 <!ENTITY imageToolbarCmd.tooltip "הכנס תמונה חדשה או ערוך מאפייני תמונה נבחרת">
 <!ENTITY hruleToolbarCmd.label "קו אופקי">
@@ -304,43 +304,54 @@
 <!ENTITY linkToolbarCmd.tooltip "הכנס קישור חדש או ערוך מאפייני קישור נבחר">
 <!ENTITY anchorToolbarCmd.label "עוגן">
 <!ENTITY anchorToolbarCmd.tooltip "הכנס עוגן חדש או ערוך מאפייני עוגן נבחר">
-<!ENTITY TextColorButton.tooltip "בחר צבע לטקסט">
-<!ENTITY BackgroundColorButton.tooltip "בחר צבע לרקע">
-<!ENTITY throbber.tooltip "לך לעמוד הבית של &vendorShortName;">
-<!ENTITY HighlightColorButton.tooltip "בחר צבע הדגשה לטקסט">
+<!ENTITY colorButtons.title "צבעים">
+<!ENTITY TextColorButton.tooltip "בחירת צבע לטקסט">
+<!ENTITY BackgroundColorButton.tooltip "בחירת צבע לרקע">
+<!ENTITY HighlightColorButton.tooltip "בחירת צבע הדגשה לטקסט">
 
 <!-- Editor toolbar -->
+<!ENTITY absoluteFontSize.label "גודל גופן">
 <!ENTITY absoluteFontSizeToolbarCmd.tooltip "הגדרת גודל גופן">
+<!ENTITY smaller.label "קטן יותר">
 <!ENTITY decreaseFontSizeToolbarCmd.tooltip "גודל גופן קטן יותר">
+<!ENTITY larger.label "גדול יותר">
 <!ENTITY increaseFontSizeToolbarCmd.tooltip "גודל גופן גדול יותר">
+<!ENTITY bold.label "מודגש">
 <!ENTITY boldToolbarCmd.tooltip "מודגש">
+<!ENTITY italic.label "נטוי">
 <!ENTITY italicToolbarCmd.tooltip "נטוי">
+<!ENTITY underline.label "קו תחתון">
 <!ENTITY underlineToolbarCmd.tooltip "קו תחתי">
+<!ENTITY bullets.label "תבליטים">
 <!ENTITY bulletListToolbarCmd.tooltip "הפעל או הסר רשימה מובלטת">
+<!ENTITY numbers.label "מספרים">
 <!ENTITY numberListToolbarCmd.tooltip "הפעל או הסר רשימה ממוספרת">
 <!ENTITY outdentToolbarCmd.tooltip "הוצא טקסט (הזז שמאל)">
 <!ENTITY indentToolbarCmd.tooltip "הכנס טקסט (הזז ימינה)">
-<!ENTITY AlignPopupButton.tooltip "בחר יישור טקסט">
+<!ENTITY AlignPopupButton.tooltip "בחירת יישור טקסט">
 <!ENTITY InsertPopupButton.tooltip "הכנס קישור, עוגן, תמונה, קו אופקי, או טבלה">
+<!ENTITY alignLeftButton.label "יישור לשמאל">
 <!ENTITY alignLeftButton.tooltip "ישר טקסט לפי שוליים שמאליים">
-<!ENTITY alignCenterButton.tooltip "ישר טקסט למרכז">
+<!ENTITY alignCenterButton.label "יישור למרכז">
+<!ENTITY alignCenterButton.tooltip "יישור טקסט למרכז">
+<!ENTITY alignRightButton.label "יישור לימין">
 <!ENTITY alignRightButton.tooltip "ישר טקסט לפי שוליים ימניים">
 <!ENTITY alignJustifyButton.tooltip "ישר טקסט לפי שוליים שמאליים וימניים">
 
 <!-- Structure Toolbar Context Menu items -->
-<!ENTITY structSelect.label         "בחר">
-<!ENTITY structSelect.accesskey     "s">
-<!ENTITY structRemoveTag.label      "הסר תגית">
-<!ENTITY structRemoveTag.accesskey  "r">
-<!ENTITY structChangeTag.label      "שנה תגית">
-<!ENTITY structChangeTag.accesskey  "c">
+<!ENTITY structSelect.label         "בחירה">
+<!ENTITY structSelect.accesskey     "ב">
+<!ENTITY structRemoveTag.label      "הסרת תגית">
+<!ENTITY structRemoveTag.accesskey  "ס">
+<!ENTITY structChangeTag.label      "שינוי תגית">
+<!ENTITY structChangeTag.accesskey  "ש">
 
 <!-- TOC manipulation -->
 <!ENTITY insertTOC.label          "הוסף">
 <!ENTITY insertTOC.accesskey      "i">
-<!ENTITY updateTOC.label          "עדכן">
-<!ENTITY updateTOC.accesskey      "u">
-<!ENTITY removeTOC.label          "הסר">
-<!ENTITY removeTOC.accesskey      "r">
+<!ENTITY updateTOC.label          "עדכון">
+<!ENTITY updateTOC.accesskey      "ע">
+<!ENTITY removeTOC.label          "הסרה">
+<!ENTITY removeTOC.accesskey      "ה">
 <!ENTITY tocMenu.label            "תוכן עניינים…">
 <!ENTITY tocMenu.accesskey        "b">

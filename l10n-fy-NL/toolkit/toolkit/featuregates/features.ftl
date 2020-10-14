@@ -91,3 +91,15 @@ experimental-features-devtools-serviceworker-debugger-support-description = Skea
 experimental-features-graphics-desktop-zooming =
     .label = Grafysk: Smooth Pinch Zoom
 experimental-features-graphics-desktop-zooming-description = Skeakel stipe yn foar soepel zoome troch knipe op oanraakskermen en presysy-touchpads.
+# WebRTC global mute toggle controls
+experimental-features-webrtc-global-mute-toggles =
+    .label = WebRTC Global Mute-skeakelers
+experimental-features-webrtc-global-mute-toggles-description = Foeget betsjinningen ta oan de algemiene dielyndikator fan WebRTC, wêrmei brûkers harren mikrofoan- en kamerafeeds algemien dôvje kinne.
+# JS JIT Warp project
+experimental-features-js-warp =
+    .label = JavaScript JIT: Warp
+experimental-features-js-warp-description = Warp ynskeakelje, in projekt om de prestaasjes fan JavaScript en ûnthâldgebrûk te ferbetterjen.
+# Fission is the name of the feature and should not be translated.
+experimental-features-fission =
+    .label = Fission (website-isolaasje)
+experimental-features-fission-description = Fission (website-isolaasje) is in eksperimintele funksje yn { -brand-short-name } dy't in ekstra beskermingslaach biedt tsjin befeiligingsbugs. Troch elke website yn in apart proses te isolearjen, makket Fission it swierder foar kweawollende websites om tagong te krijen ta ynformaasje fan oare troch jo besochte siden. Dit is in grutte wiziging yn de arsjitektuer fan { -brand-short-name } en wy stelle it op priis as jo it teste en alle problemen dy't jo tsjinkomme rapportearje. Foar mear details, sjoch <a data-l10n-name="wiki">de wiki</a>.

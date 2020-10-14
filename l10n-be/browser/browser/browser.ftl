@@ -162,6 +162,55 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Выдаліць пашырэнне
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Даслаць картку на прыладу
+            [few] Даслаць { $tabCount } карткі на прыладу
+           *[many] Даслаць { $tabCount } картак на прыладу
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Даслаць картку на прыладу
+            [few] Даслаць { $tabCount } карткі на прыладу
+           *[many] Даслаць { $tabCount } картак на прыладу
+        }
+page-action-pocket-panel =
+    .label = Захаваць старонку ў { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Капіяваць спасылку
+page-action-copy-url-urlbar =
+    .tooltiptext = Капіяваць спасылку
+page-action-email-link-panel =
+    .label = Даслаць спасылку эл.поштай…
+page-action-email-link-urlbar =
+    .tooltiptext = Даслаць спасылку эл.поштай…
+page-action-share-url-panel =
+    .label = Падзяліцца
+page-action-share-url-urlbar =
+    .tooltiptext = Падзяліцца
+page-action-share-more-panel =
+    .label = Больш…
+page-action-send-tab-not-ready =
+    .label = Сінхранізацыя прылад…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Прышпіліць картку
+page-action-pin-tab-urlbar =
+    .tooltiptext = Прышпіліць картку
+page-action-unpin-tab-panel =
+    .label = Адшпіліць картку
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Адшпіліць картку
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,9 +222,9 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
-search-one-offs-with-title = На гэты раз шукайце ў:
+search-one-offs-with-title = Гэтым разам шукаць у:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -238,6 +287,17 @@ identity-passive-loaded = Некаторыя часткі гэтай старо�
 identity-active-loaded = Вы адключылі ахову на гэтай старонцы.
 identity-weak-encryption = Гэта старонка ўжывае слабы тып шыфравання.
 identity-insecure-login-forms = Лагіны, уведзеныя на гэтай старонцы, могуць быць скампраметаваны.
+identity-https-only-connection-upgraded = (абноўлена да HTTPS)
+identity-https-only-label = Рэжым «Толькі HTTPS»
+identity-https-only-dropdown-on =
+    .label = Укл.
+identity-https-only-dropdown-off =
+    .label = Выкл.
+identity-https-only-dropdown-off-temporarily =
+    .label = Часова выкл.
+identity-https-only-info-turn-on = Уключыце, калі хочаце, каб { -brand-short-name } па магчымасці абнаўляўся да бяспечнага злучэння.
+identity-https-only-info-turn-off = Калі сайт выглядае няспраўным, магчыма, вы захочаце адключыць рэжым "Толькі HTTPS", каб перазагрузіць праз небяспечны HTTP.
+identity-https-only-info-no-upgrade = Не ўдалося абнавіць злучэнне з HTTP.
 identity-permissions =
     .value = Дазволы
 identity-permissions-reload-hint = Магчыма, вам спатрэбіцца перазагрузіць старонку, каб змены пачалі дзейнічаць.
@@ -369,3 +429,54 @@ urlbar-page-action-button =
     .tooltiptext = Дзеянні старонкі
 urlbar-pocket-button =
     .tooltiptext = Захаваць у { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Пошук у { $engine } у прыватным акне
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Пошук у прыватным акне
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Пошук з дапамогай { $engine }
+urlbar-result-action-switch-tab = Пераключыцца ў картку
+urlbar-result-action-visit = Наведаць
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Шукаць у закладках
+urlbar-result-action-search-history = Шукаць у гісторыі
+urlbar-result-action-search-tabs = Шукаць у картках
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Шукайце з дапамогай { $engine } наўпрост з адраснага радка
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Шукайце ў { $engine } наўпрост з адраснага радка
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> цяпер поўнаэкранны
+fullscreen-warning-no-domain = Гэты дакумент цяпер поўнаэкранны
+fullscreen-exit-button = Выйсці з поўнаэкраннага рэжыму (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Выйсці з поўнаэкраннага рэжыму (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> кіруе вашым указальнікам. Націсніце Esc, каб узяць кіраванне.
+pointerlock-warning-no-domain = Гэты дакумент кіруе вашым указальнікам. Націсніце Esc, каб узяць кіраванне.

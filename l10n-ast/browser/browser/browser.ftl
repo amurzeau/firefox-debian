@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Restolando en privao)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Restolando en privao)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Restolando en privao)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Restolando en privao)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -90,6 +88,7 @@ urlbar-addons-notification-anchor =
 
 ## Local search mode indicator labels in the urlbar
 
+
 ##
 
 urlbar-geolocation-blocked =
@@ -104,12 +103,10 @@ urlbar-screen-blocked =
     .tooltiptext = Bloquiesti la compartición de pantalla pa esti sitiu web.
 urlbar-popup-blocked =
     .tooltiptext = Bloquiesti los ventanos emerxentes d'esti sitiu web.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Editar esti marcardor ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -119,6 +116,33 @@ urlbar-star-add-bookmark =
 
 page-action-add-to-urlbar =
     .label = Amestar a la barra de direiciones
+
+## Page Action menu
+
+page-action-copy-url-panel =
+    .label = Copiar enllaz
+page-action-copy-url-urlbar =
+    .tooltiptext = Copiar enllaz
+page-action-email-link-panel =
+    .label = Unviar enllaz…
+page-action-email-link-urlbar =
+    .tooltiptext = Unviar enllaz…
+page-action-share-more-panel =
+    .label = Más…
+page-action-send-tab-not-ready =
+    .label = Sincronizando preseos…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Fixar llingüeta
+page-action-pin-tab-urlbar =
+    .tooltiptext = Fixar llingüeta
+page-action-unpin-tab-panel =
+    .label = Desfixar llingüeta
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Desfixar llingüeta
 
 ## Auto-hide Context Menu
 
@@ -137,7 +161,6 @@ search-one-offs-change-settings-button =
     .label = Camudar axustes de gueta
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Camudar preferencies de busca
-
 search-one-offs-context-open-new-tab =
     .label = Guetar en llingüeta nueva
     .accesskey = L
@@ -151,6 +174,7 @@ search-one-offs-context-set-as-default =
 ##    Restriction tokens are special characters users can type in the urlbar to
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
+
 
 ## Bookmark Panel
 
@@ -220,18 +244,46 @@ popup-all-windows-shared = Van compartise toles ventanes visibles na to pantalla
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Guetar o introducir direición
-
 urlbar-placeholder =
     .placeholder = Guetar o introducir direición
-
 urlbar-switch-to-tab =
     .value = Camudar a la llingüeta:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Estensión:
-
 urlbar-go-button =
     .tooltiptext = Va a la direición na barra d'allugamientos
 urlbar-page-action-button =
     .tooltiptext = Aiciones de la páxina
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Guetar con { $engine }
+urlbar-result-action-switch-tab = Camudar a la llingüeta
+urlbar-result-action-visit = Visitar
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ta agora a pantalla completa
+fullscreen-warning-no-domain = Agora esti documentu ta a pantalla completa
+fullscreen-exit-button = Colar de pantalla completa (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Colar de pantalla completa (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> tien el control del to punteru. Primi Esc pa recuperalu.
+pointerlock-warning-no-domain = Esti documentu tien el control del to punteru. Primi Esc pa recuperalu.

@@ -2,6 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 ## The main browser window's title
 
 # These are the default window titles everywhere except macOS. The first two
@@ -18,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (プライベートブラウジング)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (プライベートブラウジング)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -38,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (プライベートブラウジング)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (プライベートブラウジング)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -107,6 +106,7 @@ urlbar-tip-icon-description =
 ## homepage of their default search engine.
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
+
 urlbar-search-tips-onboard = 少ない入力でたくさん見つかる: アドレスバーから { $engineName } ですぐ検索します。
 urlbar-search-tips-redirect-2 = アドレスバーで検索を始めると、{ $engineName } からの検索候補と閲覧履歴が表示されます。
 
@@ -142,12 +142,10 @@ urlbar-midi-blocked =
     .tooltiptext = このウェブサイトの MIDI へのアクセスをブロックしました。
 urlbar-install-blocked =
     .tooltiptext = このウェブサイトのアドオンのインストールをブロックしました。
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = このページのブックマークを編集します ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -164,6 +162,45 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = 拡張機能を削除
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label = { $tabCount } 個のタブを端末へ送信
+page-action-send-tabs-urlbar =
+    .tooltiptext = { $tabCount } 個のタブを端末へ送信
+page-action-pocket-panel =
+    .label = ページを { -pocket-brand-name } に保存
+page-action-copy-url-panel =
+    .label = リンクをコピー
+page-action-copy-url-urlbar =
+    .tooltiptext = リンクをコピー
+page-action-email-link-panel =
+    .label = ページの URL をメールで送信...
+page-action-email-link-urlbar =
+    .tooltiptext = ページの URL をメールで送信...
+page-action-share-url-panel =
+    .label = 共有
+page-action-share-url-urlbar =
+    .tooltiptext = 共有
+page-action-share-more-panel =
+    .label = その他...
+page-action-send-tab-not-ready =
+    .label = 端末を同期しています...
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = タブをピン留め
+page-action-pin-tab-urlbar =
+    .tooltiptext = タブをピン留め
+page-action-unpin-tab-panel =
+    .label = タブのピン留めを外す
+page-action-unpin-tab-urlbar =
+    .tooltiptext = タブのピン留めを外す
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -175,17 +212,15 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = 今回だけ使う検索エンジン:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = 検索設定を変更
 search-one-offs-change-settings-compact-button =
     .tooltiptext = 検索設定を変更します
-
 search-one-offs-context-open-new-tab =
     .label = 新しいタブで検索
     .accesskey = T
@@ -195,7 +230,6 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = プライベートウィンドウの既定の検索エンジンに設定
     .accesskey = P
-
 # Search engine one-off buttons with an @alias shortcut/keyword.
 # Variables:
 #  $engineName (String): The name of the engine.
@@ -222,10 +256,8 @@ search-one-offs-history =
 bookmark-panel-show-editor-checkbox =
     .label = 追加時にエディターを表示する
     .accesskey = S
-
 bookmark-panel-done-button =
     .label = 完了
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -299,15 +331,12 @@ popup-select-microphone =
     .value = 共有するマイク:
     .accesskey = M
 popup-all-windows-shared = 画面に表示されているすべてのウィンドウを共有します。
-
 popup-screen-sharing-not-now =
     .label = 後で
     .accesskey = w
-
 popup-screen-sharing-never =
     .label = 以後許可しない
     .accesskey = N
-
 popup-silence-notifications-checkbox = 共有中は { -brand-short-name } からの通知を無効にする。
 popup-silence-notifications-checkbox-warning = 共有中は { -brand-short-name } からの通知を表示しないようにします。
 
@@ -324,17 +353,14 @@ sharing-warning-disable-for-session =
 
 enable-devtools-popup-description = F12 ショートカットを使うには、最初にメニューのウェブ開発から開発ツールを開いてください。
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = URL または検索語句を入力します
-
 # This placeholder is used when not in search mode and the user's default search
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = URL または検索語句を入力します
-
 # This placeholder is used in search mode with search engines that search the
 # entire web.
 # Variables
@@ -343,7 +369,6 @@ urlbar-placeholder =
 urlbar-placeholder-search-mode-web-2 =
     .placeholder = ウェブを検索します
     .aria-label = { $name } で検索
-
 # This placeholder is used in search mode with search engines that search a
 # specific site (e.g., Amazon).
 # Variables
@@ -352,40 +377,86 @@ urlbar-placeholder-search-mode-web-2 =
 urlbar-placeholder-search-mode-other-engine =
     .placeholder = 検索語句を入力を入力します
     .aria-label = { $name } を検索
-
 # This placeholder is used when searching bookmarks.
 urlbar-placeholder-search-mode-other-bookmarks =
     .placeholder = 検索語句を入力を入力します
     .aria-label = ブックマークを検索
-
 # This placeholder is used when searching history.
 urlbar-placeholder-search-mode-other-history =
     .placeholder = 検索語句を入力を入力します
     .aria-label = 履歴を検索
-
 # This placeholder is used when searching open tabs.
 urlbar-placeholder-search-mode-other-tabs =
     .placeholder = 検索語句を入力を入力します
     .aria-label = タブを検索
-
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
-    .placeholder = Search with { $name } or enter address
+    .placeholder = { $name } で検索、または URL を入力します
 urlbar-remote-control-notification-anchor =
     .tooltiptext = ブラウザーがリモート制御下にあります
 urlbar-permissions-granted =
     .tooltiptext = このウェブサイトで追加の権限を許可しました。
 urlbar-switch-to-tab =
     .value = タブを表示:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = 拡張機能:
-
 urlbar-go-button =
     .tooltiptext = アドレスバーに入力された URL へ移動します
 urlbar-page-action-button =
     .tooltiptext = ページ操作
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name } に保存
+
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = プライベートウィンドウの { $engine } で検索
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = プライベートウィンドウで検索
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } で検索
+urlbar-result-action-switch-tab = タブを表示
+urlbar-result-action-visit = 開く
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = ブックマークを検索
+urlbar-result-action-search-history = 履歴を検索
+urlbar-result-action-search-tabs = タブを検索
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = アドレスバーから直接 { $engine } で検索
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = アドレスバーから直接 { $engine } を検索
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> は現在全画面表示モードです。
+fullscreen-warning-no-domain = このページは現在全画面表示モードです。
+fullscreen-exit-button = 全画面表示モードを終了 (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = 全画面表示モードを終了 (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = マウスポインターは現在、 <span data-l10n-name="domain">{ $domain }</span> が制御しています。制御を取り戻すには、ESC キーを押してください。
+pointerlock-warning-no-domain = マウスポインターは現在、このページが制御しています。制御を取り戻すには、ESC キーを押してください。

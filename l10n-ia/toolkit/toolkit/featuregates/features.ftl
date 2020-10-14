@@ -91,3 +91,15 @@ experimental-features-devtools-serviceworker-debugger-support-description = Acti
 experimental-features-graphics-desktop-zooming =
     .label = Graphica: zoom a prisa lisie
 experimental-features-graphics-desktop-zooming-description = Activa le supporto al zoom a prisa lisie sur schermos tactile e placas tactile de precision.
+# WebRTC global mute toggle controls
+experimental-features-webrtc-global-mute-toggles =
+    .label = Activar/disactivar audio e video WebRTC globalmente
+experimental-features-webrtc-global-mute-toggles-description = Adder controlos al indicator de compartimento global WebRTC que permitte al usatores de silentiar globalmente le fluxos de lor microphono e camera.
+# JS JIT Warp project
+experimental-features-js-warp =
+    .label = JavaScript JIT: Warp
+experimental-features-js-warp-description = Activar Warp, un projecto pro meliorar prestation e uso de memoria de JavaScript.
+# Fission is the name of the feature and should not be translated.
+experimental-features-fission =
+    .label = Fission (Isolation de sitos)
+experimental-features-fission-description = Fission (isolamento sito) es un functionalitate experimental in { -brand-short-name } pro fornir un altere strato de defensa contra defectos de securitate. Isolante cata sito in un processo differente, Fission rende plus ardue pro sitos web maligne acceder a informationes de altere paginas que tu visita. Isto es un major modification architectural in { -brand-short-name } e nos apprecia tu test e reporto de ulle problemas que tu pote incontrar. Pro altere detalios, vider <a data-l10n-name="wiki">le wiki</a>.
