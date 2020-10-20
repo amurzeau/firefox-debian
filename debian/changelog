@@ -1,15 +1,23 @@
-firefox-esr (78.3.0esr-3) UNRELEASED; urgency=medium
+firefox-esr (78.4.0esr-1) unstable; urgency=medium
 
-  * Remove jessie support.
-  * stretch: build with LLVM 7, 4.0 doesn't support -std=gnu++17.
-  * stretch: build with GCC 7 from gcc-mozilla.
-  * Call python with -M when regenerating the control files, so as to
-    not generate bytecode files.
-  * Call debian/l10n/gen with C.UTF-8 as the locale, otherwise it fails
+  * New upstream release.
+  * Fixes for mfsa2020-46, also known as:
+    CVE-2020-15969, CVE-2020-15683.
+
+  [Emilio Pozuelo Monfort]
+  * debian/browser.bug-presubj.in, debian/control.in, debian/rules,
+    debian/symbols.mk, debian/upstream.mk: Remove support for jessie.
+  * debian/control.in, debian/rules: stretch: build with LLVM 7, 4.0 doesn't
+    support -std=gnu++17.
+  * debian/rules:
+    - stretch: build with GCC 7 from gcc-mozilla.
+    - Call python with -B when regenerating the control files, so as to not
+      generate bytecode files.
+    - Call debian/l10n/gen with C.UTF-8 as the locale, otherwise it fails
     in stretch when opening the iso-codes files.
-  * stretch: don't set NASM on !x86.
+    - stretch: don't set NASM on !x86.
 
- -- Emilio Pozuelo Monfort <pochu@debian.org>  Mon, 28 Sep 2020 21:00:45 +0200
+ -- Mike Hommey <glandium@debian.org>  Wed, 21 Oct 2020 06:35:35 +0900
 
 firefox-esr (78.3.0esr-2) unstable; urgency=medium
 
