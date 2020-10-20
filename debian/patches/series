@@ -3,8 +3,6 @@ fixes/Bug-1526653-Include-struct-definitions-for-user_vfp-.patch
 fixes/Bug-1642265-MIPS64-Add-branchTestSymbol-and-fallible.patch
 fixes/Bug-1650299-Unify-the-inclusion-of-the-ICU-data-file.patch
 fixes/Bug-1264836-Automatically-convert-the-little-endian-.patch
-fixes/Bug-1649655-MIPS-Add-CodeGenerator-visitWasmRegister.patch
-fixes/Bug-1666646-Bump-CodeAlignment-to-8-in-MacroAssemble.patch
 porting/Add-xptcall-support-for-SH4-processors.patch
 porting/NSS-Fix-FTBFS-on-Hurd-because-of-MAXPATHLEN.patch
 porting/Work-around-Debian-bug-844357.patch
