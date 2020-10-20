@@ -47,9 +47,6 @@ DIST = bullseye
 endif
 ifneq (,$(filter bpo% deb%,$(DEBIAN_RELEASE_EXTRA)))
 DEBIAN_TARGET := $(subst bpo,,$(subst deb,,$(DEBIAN_RELEASE_EXTRA)))
-ifneq (,$(filter 8%,$(DEBIAN_TARGET)))
-DIST = jessie
-endif
 ifneq (,$(filter 9%,$(DEBIAN_TARGET)))
 DIST = stretch
 endif

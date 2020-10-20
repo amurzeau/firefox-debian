@@ -25,11 +25,7 @@ $(foreach arch,$(ARCHES),$(call download_package,$1,$(lastword $(subst :, ,$(PAC
 endef
 
 $(eval $(call define_package,$(PACKAGE_NAME)))
-ifeq (,$(filter $(DIST),jessie))
 DBG=dbgsym
-else
-DBG=dbg
-endif
 ifeq (,$(filter 45.%,$(PACKAGE_VERSION)))
 DBGTYPE=buildid
 else

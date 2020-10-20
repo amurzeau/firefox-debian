@@ -20,13 +20,13 @@ PRODUCT := browser
 include debian/upstream.mk
 
 SYSTEM_LIBS = zlib ffi
-ifeq (,$(filter jessie stretch buster,$(DIST)))
+ifeq (,$(filter stretch buster,$(DIST)))
 SYSTEM_LIBS += nspr nss
 endif
-ifeq (,$(filter jessie stretch,$(DIST)))
+ifeq (,$(filter stretch,$(DIST)))
 SYSTEM_LIBS += libevent
 endif
-ifeq (,$(filter jessie stretch buster,$(DIST)))
+ifeq (,$(filter stretch buster,$(DIST)))
 SYSTEM_LIBS += vpx
 endif
 
@@ -54,7 +54,7 @@ endif
 endif
 
 ifeq (firefox-esr,$(DEBIAN_SOURCE))
-ifneq (,$(filter jessie stretch buster,$(DIST)))
+ifneq (,$(filter stretch buster,$(DIST)))
 TRANSITION = 1
 endif
 endif
@@ -83,17 +83,14 @@ SHARE_DIR := /usr/share/$($(PRODUCT))
 # Work around https://github.com/rust-lang/cargo/issues/7147
 export CARGO_HOME=$(CURDIR)/debian/.cargo
 
-ifneq (,$(filter jessie stretch,$(DIST)))
-export NODEJS=/usr/lib/nodejs-mozilla/bin/node
+ifneq (,$(filter stretch,$(DIST)))
+ifneq (,$(filter amd64 i386,$(DEB_HOST_ARCH)))
 export NASM=/usr/lib/nasm-mozilla/bin/nasm
 endif
-
-ifneq (jessie,$(DIST))
-LDFLAGS += -Wl,--as-needed
-# Make the linker generate compressed debug sections. dh_strip would do
-# the same anyways, but it allows elfhack to work in combination with
-# unstripped binaries when they would normally be larger than 2GiB.
-LDFLAGS += -Wl,--compress-debug-sections=zlib
+export NODEJS=/usr/lib/nodejs-mozilla/bin/node
+export PATH := /usr/lib/llvm-7/bin/:$(PATH)
+export PATH := /usr/lib/gcc-mozilla/bin/:$(PATH)
+LDFLAGS += -static-libstdc++
 endif
 
 # Disable debug symbols when building on 32-bits machines, because
@@ -168,14 +165,14 @@ $(call lazy,L10N_PACKAGES,$$(foreach lang,$$(L10N_LANGS),$($(PRODUCT))-l10n-$$(c
 $(call lazy,L10N_PACKAGES_DEPS,$$(shell echo $$(L10N_PACKAGES) | sed 's/ /, /g'))
 
 debian/l10n/$(PRODUCT)-l10n.control: %: %.in
-	PYTHONIOENCODING=utf-8 $(PYTHON) debian/l10n/gen $(L10N_LANGS) > $@
+	PYTHONIOENCODING=utf-8 LC_ALL=C.UTF-8 $(PYTHON) debian/l10n/gen $(L10N_LANGS) > $@
 
 $(call lazy,LIBAVCODEC,$$(shell awk -F\" '/libavcodec\.so/ { sub(/libavcodec\.so\./,"", $$$$2); p = "libavcodec" $$$$2 " | libavcodec-extra" $$$$2; if (d) { d = d " | " p } else { d = p } } END { print d }' dom/media/platforms/ffmpeg/FFmpegRuntimeLinker.cpp))
 
 $(PREPROCESSED_FILES): VARS = GRE_VERSION $(PRODUCT) $(call uc,$(PRODUCT)) $(Product) MOZ_APP_REMOTINGNAME $(SYSTEM_LIBS_VARS) SHORT_SOURCE_CHANNEL DIST TRANSITION MOZ_FFVPX CRASH_REPORTER DEB_HOST_ARCH
 debian/control: VARS += L10N_PACKAGES_DEPS PRODUCT LIBAVCODEC
 $(PREPROCESSED_FILES):
-	python3 ./mach python --no-virtualenv python/mozbuild/mozbuild/preprocessor.py --marker % -Fsubstitution $(foreach var,$(VARS),-D$(var)="$($(var))" )$< -o $@
+	$(PYTHON) ./mach python --no-virtualenv python/mozbuild/mozbuild/preprocessor.py --marker % -Fsubstitution $(foreach var,$(VARS),-D$(var)="$($(var))" )$< -o $@
 
 ifdef TRANSITION
 MAINTSCRIPTS := $(addprefix debian/,$(addsuffix .maintscript,$(shell awk -F/ '$$1 != "searchplugins" { next } $$2 == "locale" && $$3 != "en-US" { p="iceweasel-l10n-" $$3 } $$2 == "common" || ($$2 "/" $$3 == "locale/en-US") { p="iceweasel" } !done[p] { print p; done[p] = 1 }' debian/removed_conffiles)))
@@ -311,11 +308,7 @@ override_dh_install-arch: stamps/dh_install
 override_dh_install-indep: stamps/dh_install-l10n
 
 override_dh_strip:
-ifneq (,$(filter jessie,$(DIST)))
-	dh_strip -a --dbg-package=$($(PRODUCT))-dbg
-else
 	dh_strip --dbgsym-migration='$($(PRODUCT))-dbg (<< 49.0-4~)'
-endif
 
 override_dh_strip_nondeterminism:
 
