@@ -159,6 +159,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Rimuovi estensione
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Invia scheda a dispositivo
+           *[other] Invia { $tabCount } schede a dispositivo
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Invia scheda a dispositivo
+           *[other] Invia { $tabCount } schede a dispositivo
+        }
+page-action-pocket-panel =
+    .label = Salva pagina in { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Copia link
+page-action-copy-url-urlbar =
+    .tooltiptext = Copia link
+page-action-email-link-panel =
+    .label = Invia link per email…
+page-action-email-link-urlbar =
+    .tooltiptext = Invia link per email…
+page-action-share-url-panel =
+    .label = Condividi
+page-action-share-url-urlbar =
+    .tooltiptext = Condividi
+page-action-share-more-panel =
+    .label = Altro…
+page-action-send-tab-not-ready =
+    .label = Sincronizzazione dispositivi…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Appunta scheda
+page-action-pin-tab-urlbar =
+    .tooltiptext = Appunta scheda
+page-action-unpin-tab-panel =
+    .label = Rilascia scheda
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Rilascia scheda
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -235,6 +282,19 @@ identity-passive-loaded = Alcuni elementi di questa pagina non sono sicuri (ad e
 identity-active-loaded = La protezione è disattivata per questa pagina.
 identity-weak-encryption = Questa pagina utilizza una crittografia debole.
 identity-insecure-login-forms = Gli accessi effettuati in questa pagina potrebbero essere vulnerabili.
+
+identity-https-only-connection-upgraded = (aggiornato a HTTPS)
+identity-https-only-label = Modalità solo HTTPS
+identity-https-only-dropdown-on =
+    .label = Attiva
+identity-https-only-dropdown-off =
+    .label = Disattivata
+identity-https-only-dropdown-off-temporarily =
+    .label = Disattivata temporaneamente
+identity-https-only-info-turn-on = Attivare per fare in modo che { -brand-short-name } passi a una connessione sicura quando possibile.
+identity-https-only-info-turn-off = Se il sito non funziona correttamente, provare a disattivare la modalità solo HTTPS e ricaricare utilizzando una connessione non sicura HTTP.
+identity-https-only-info-no-upgrade = Impossibile aggiornare la connessione da HTTP.
+
 identity-permissions =
     .value = Permessi
 identity-permissions-reload-hint = Potrebbe essere necessario ricaricare la pagina per rendere effettive le modifiche.
@@ -364,6 +424,42 @@ urlbar-page-action-button =
     .tooltiptext = Azioni per questa pagina
 urlbar-pocket-button =
     .tooltiptext = Salva in { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Cerca con { $engine } in una finestra anonima
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Cerca in una finestra anonima
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Cerca con { $engine }
+urlbar-result-action-switch-tab = Passa alla scheda
+urlbar-result-action-visit = Apri
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Cerca nei segnalibri
+urlbar-result-action-search-history = Cerca nella cronologia
+urlbar-result-action-search-tabs = Cerca nelle schede
+
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Cerca con { $engine } direttamente dalla barra degli indirizzi
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Cerca in { $engine } direttamente dalla barra degli indirizzi
 
 ## Full Screen and Pointer Lock UI
 

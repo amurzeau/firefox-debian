@@ -29,6 +29,8 @@ search-input-box =
            *[other] Zoeken in voorkeuren
         }
 managed-notice = Uw browser wordt door uw organisatie beheerd.
+category-list =
+    .aria-label = Categorieën
 pane-general-title = Algemeen
 category-general =
     .tooltiptext = { pane-general-title }
@@ -489,6 +491,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Topwebsites
 home-prefs-topsites-description = De websites die u het vaakst bezoekt
+home-prefs-topsites-by-option-sponsored =
+    .label = Gesponsorde topwebsites
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -560,6 +564,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Voorkeuren voor overige adresbalksuggesties wijzigen
 search-suggestions-cant-show = Zoeksuggesties worden niet in locatiebalkresultaten getoond, omdat u { -brand-short-name } hebt geconfigureerd om nooit geschiedenis te onthouden.
 search-one-click-header = Eén-klik-zoekmachines
+search-one-click-header2 = Snelkoppelingen zoeken
 search-one-click-desc = Kies de alternatieve zoekmachines die onder de adresbalk en zoekbalk verschijnen als u een sleutelwoord begint in te voeren.
 search-choose-engine-column =
     .label = Zoekmachine

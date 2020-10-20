@@ -407,12 +407,37 @@ key-ring-key-not-trusted = Kyçi { $userId } (ID kyçi { $keyId }) s’është i
 key-ring-no-secret-key = S’duket se keni kyçin e fshehtë për { $userId } (ID kyçi { $keyId }) në vargun tuaj të kyçeve; kyçin s’mund ta përdorni për nënshkrime.
 key-ring-pub-key-not-for-signing = Kyçi { $userId } (ID kyçi { $keyId }) s’mund të përdoret për nënshkrime.
 key-ring-pub-key-not-for-encryption = Kyçi { $userId } (ID kyçi { $keyId }) s’mund të përdoret për fshehtëzim.
+key-ring-sign-sub-keys-revoked = Janë shfuqizuar krejt nënkyçet e nënshkrimit të kyçit { $userId } (ID kyçi { $keyId }).
+key-ring-sign-sub-keys-expired = Kanë skaduar krejt nënkyçet e nënshkrimit të kyçit { $userId } (ID kyçi { $keyId }).
+key-ring-sign-sub-keys-unusable = Janë shfuqizuar, kanë skaduar ose ndryshe janë të papërdorshëm, krejt nënkyçet e nënshkrimit të kyçit { $userId } (ID kyçi { $keyId }).
+key-ring-enc-sub-keys-revoked = Janë shfuqizuar krejt nënkyçet e fshehtëzimit të kyçit { $userId } (ID kyçi { $keyId }).
+key-ring-enc-sub-keys-expired = Kanë skaduar krejt nënkyçet e fshehtëzimit të kyçit { $userId } (ID kyçi { $keyId }).
+key-ring-enc-sub-keys-unusable = Janë shfuqizuar, kanë skaduar ose ndryshe janë të papërdorshëm, krejt nënkyçet e fshehtëzimit të kyçit { $userId } (ID kyçi { $keyId }).
 # Strings in gnupg-keylist.jsm
 keyring-photo = Foto
 user-att-photo = Atribut përdoruesi (figurë JPEG)
 # Strings in key.jsm
 already-revoked = Ky kyç është shfuqizuar tashmë.
+#   $identity (String) - the id and associated user identity of the key being revoked
+revoke-key-question =
+    Ju ndan një hap nga shfuqizimi i kyçit '{ $identity }'.
+    S’do të jeni më në gjendje të nënshkruani me këtë kyç, dhe pasi t’u jetë dhënë të tjerëve, këta s’do të jenë më në gjendje të bëjnë fshehtëzim me atë kyç. Mundeni ende ta përdorni kyçin për të shfshehtëzuar mesazhe të vjetër.
+    Do you want to proceed?
+#   $keyId (String) - the id of the key being revoked
+revoke-key-not-present =
+    S’keni kyç (0x{ $keyId }) që përputhet me këtë dëshmi shfuqizimi!
+    Nëse keni humbur kyçin tuaj, duhet ta importoni (p.sh., nga një shërbyes kyçesh), përpara importimit të dëshmisë së shfuqizimit!
+#   $keyId (String) - the id of the key being revoked
+revoke-key-already-revoked = Kyçi 0x{ $keyId } është shfuqizuar tashmë.
+key-man-button-revoke-key = &Shfuqizoni Kyç
 openpgp-key-revoke-success = Kyçi u shfuqizua me sukses.
+after-revoke-info =
+    Kyçi është shfuqizuar.
+    Ndajeni sërish me të tjerët këtë kyç publik, duke e dërguar me email, ose duke e ngarkuar te një shërbyes kyçesh, për t’u lejuar të tjerëve të dinë se e shfuqizuat kyçin tuaj.
+    As soon as the software used by other people learns about the revocation, it will stop using your old key.
+    If you are using a new key for the same email address, and you attach the new public key to emails you send, then information about your revoked old key will be automatically included.
+# Strings in keyRing.jsm & decryption.jsm
+key-man-button-import = &Importo
 delete-key-title = Fshi Kyç OpenPGP
 delete-external-key-title = Hiq Kyçin e jashtëm GnuPG
 delete-external-key-description = Doni të hiqet kjo ID kyçi të  Jashtëm GnuPG?
@@ -421,6 +446,8 @@ delete-key-in-use-description = S’arrihet të bëhet! Kyçi që përzgjodhët 
 revoke-key-in-use-description = S’arrihet të bëhet! Kyçi që përzgjodhët për shfuqizim është aktualisht në përdorim nga ky identitet. Përzgjidhni një kyç tjetër, ose mos përzgjidhni ndonjë, dhe riprovoni.
 # Strings used in errorHandling.jsm
 key-error-key-spec-not-found = Për adresën email '{ $keySpec }' s’gjendet dot përputhje me ndonjë kyç në vargun tuaj të kyçeve.
+key-error-key-id-not-found = ID-ja e kyçit të formësuar '{ $keySpec }' s’mund të gjendet te vargu juaj i kyçeve.
+key-error-not-accepted-as-personal = S’keni ripohuar se kyçi me ID-në '{ $keySpec }' është kyç i juaji personal.
 # Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
 fail-key-extract = Gabim - urdhri për përftim kyçi dështoi
 # Strings used in keyRing.jsm

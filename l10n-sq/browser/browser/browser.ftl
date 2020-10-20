@@ -162,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Hiqe Zgjerimin
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Dërgoje Skedën te Pajisje
+           *[other] Dërgo { $tabCount } Skedë te Pajisje
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Dërgoje Skedën te Pajisje
+           *[other] Dërgo { $tabCount } Skedë te Pajisje
+        }
+page-action-pocket-panel =
+    .label = Ruaje Faqen te { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Kopjoji Lidhjen
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopjoji Lidhjen
+page-action-email-link-panel =
+    .label = Dërgoni Lidhje me Email…
+page-action-email-link-urlbar =
+    .tooltiptext = Dërgoni Lidhje me Email…
+page-action-share-url-panel =
+    .label = Ndajeni me të tjerët
+page-action-share-url-urlbar =
+    .tooltiptext = Ndajeni me të tjerët
+page-action-share-more-panel =
+    .label = Më tepër…
+page-action-send-tab-not-ready =
+    .label = Po njëkohësohen Pajisje…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Fiksoje Skedën
+page-action-pin-tab-urlbar =
+    .tooltiptext = Fiksoje Skedën
+page-action-unpin-tab-panel =
+    .label = Shfiksoje Skedën
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Shfiksoje Skedën
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -369,3 +416,43 @@ urlbar-page-action-button =
     .tooltiptext = Veprime faqeje
 urlbar-pocket-button =
     .tooltiptext = Ruajeni te { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Kërko me { $engine } në një Dritare Private
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Kërko në Dritare Private
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Kërko me { $engine }
+urlbar-result-action-switch-tab = Kalo te Skeda
+urlbar-result-action-visit = Vizitojeni
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> tani është sa krejt ekrani
+fullscreen-warning-no-domain = Ky dokument tani shfaqet sa krejt ekrani
+fullscreen-exit-button = Dilni nga Sa Krejt Ekrani (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Dilni Nga Sa Krejt Ekrani (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> është në kontroll të kursorit tuaj. Shtypni Esc që të rimerrni kontrollin.
+pointerlock-warning-no-domain = Kursori është nën kontrollin e kursorit tuaj. Shtypni Esc që të rimerrni kontrollin.

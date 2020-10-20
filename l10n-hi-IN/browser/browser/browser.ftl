@@ -162,6 +162,39 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = एक्सटेंशन हटाएं
 
+## Page Action menu
+
+page-action-pocket-panel =
+    .label = { -pocket-brand-name } में पृष्ठ को सहेजें
+page-action-copy-url-panel =
+    .label = कड़ी नकल करें
+page-action-copy-url-urlbar =
+    .tooltiptext = कड़ी नकल करें
+page-action-email-link-panel =
+    .label = कड़ी ईमेल करें…
+page-action-email-link-urlbar =
+    .tooltiptext = कड़ी ईमेल करें…
+page-action-share-url-panel =
+    .label = साझा करें
+page-action-share-url-urlbar =
+    .tooltiptext = साझा करें
+page-action-share-more-panel =
+    .label = अधिक…
+page-action-send-tab-not-ready =
+    .label = उपकरण सिंक हो रहा है…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = टैब पिन करें
+page-action-pin-tab-urlbar =
+    .tooltiptext = टैब पिन करें
+page-action-unpin-tab-panel =
+    .label = टैब का पिन निकालें
+page-action-unpin-tab-urlbar =
+    .tooltiptext = टैब का पिन निकालें
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -319,6 +352,10 @@ urlbar-default-placeholder =
 # engine is unknown.
 urlbar-placeholder =
     .placeholder = खोजें या पता दर्ज करें
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name } के साथ खोजें या पता दर्ज करें
 urlbar-remote-control-notification-anchor =
     .tooltiptext = ब्राउज़र रिमोट कंट्रोल के तहत है
 urlbar-switch-to-tab =
@@ -332,3 +369,43 @@ urlbar-page-action-button =
     .tooltiptext = पृष्ठ क्रियाएँ
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name } में सहेजें
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = निजी विंडो में { $engine } के साथ खोजें
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = एक निजी विंडो में खोजें
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } से खोजें
+urlbar-result-action-switch-tab = 'टैब में स्विच करें
+urlbar-result-action-visit = भ्रमण करें
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> अब पूर्ण स्क्रीन है
+fullscreen-warning-no-domain = यह दस्तावेज़ अब पूर्ण स्क्रीन पर है
+fullscreen-exit-button = पूर्ण स्क्रीन से निकलें (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = पूर्ण स्क्रीन से निकलें (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> अपने सूचक पर नियंत्रण हैं. नियंत्रण फिर से वापस लेने के लिए Esc बटन दबाएँ.
+pointerlock-warning-no-domain = इस दस्तेवाज को आपके सूचक पर नियंत्रण हैं. नियंत्रण फिर से वापस लेने के लिए Esc बटन दबाएँ.

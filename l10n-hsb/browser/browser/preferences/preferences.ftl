@@ -29,6 +29,8 @@ search-input-box =
            *[other] W nastajenjach pytać
         }
 managed-notice = Waš wobhladowka so wot wašeje organizacije rjaduje.
+category-list =
+    .aria-label = Kategorije
 pane-general-title = Powšitkowny
 category-general =
     .tooltiptext = { pane-general-title }
@@ -495,6 +497,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Najhusćišo wopytane sydła
 home-prefs-topsites-description = Sydła, kotrež najhusćišo wopytujeće
+home-prefs-topsites-by-option-sponsored =
+    .label = Sponsorowane najlubše sydła
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -568,6 +572,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Nastajenja za druhe namjety adresoweho pola změnić
 search-suggestions-cant-show = Pytanske namjety njebudu so we wuslědkach adresoweho pola pokazać, dokelž sće { -brand-short-name } tak konfigurował, zo sej ženje historiju njespomjatkuje.
 search-one-click-header = Pytawy z jednym kliknjenjom
+search-one-click-header2 = Pytanske skrótšenki
 search-one-click-desc = Wubjerće alternatiwne pytawy, kotrež so pod adresowym polom a pytanskim polom jewja, hdyž klučowe słowo zapodawaće.
 search-choose-engine-column =
     .label = Pytawa

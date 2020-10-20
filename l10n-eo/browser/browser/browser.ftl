@@ -162,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Forigi etendaĵon
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Sendi langeton al aparato
+           *[other] Sendi { $tabCount } langetojn al aparato
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Sendi langeton al aparato
+           *[other] Sendi { $tabCount } langetojn al aparato
+        }
+page-action-pocket-panel =
+    .label = Konservi paĝon en { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Kopii ligilon
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopii ligilon
+page-action-email-link-panel =
+    .label = Sendi ligilon retpoŝte…
+page-action-email-link-urlbar =
+    .tooltiptext = Sendi ligilon retpoŝte…
+page-action-share-url-panel =
+    .label = Dividi
+page-action-share-url-urlbar =
+    .tooltiptext = Dividi
+page-action-share-more-panel =
+    .label = Pli…
+page-action-send-tab-not-ready =
+    .label = Aparatoj spegulataj…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Alpingli langeton
+page-action-pin-tab-urlbar =
+    .tooltiptext = Alpingli langeton
+page-action-unpin-tab-panel =
+    .label = Depingli langeton
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Depingli langeton
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -369,3 +416,43 @@ urlbar-page-action-button =
     .tooltiptext = Retpaĝaj agoj
 urlbar-pocket-button =
     .tooltiptext = Konservi en { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Serĉi per { $engine } en privata fenestro
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Serĉi en privata fenestro
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Serĉi per { $engine }
+urlbar-result-action-switch-tab = Iri al langeto
+urlbar-result-action-visit = Iri
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> videblas nun plenekrane
+fullscreen-warning-no-domain = Tiu ĉi dokumento videbas nun plenekrane
+fullscreen-exit-button = Eliri el plenekrana reĝimo (Esk)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Eliri el plenekrana reĝimo (esk)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> regas vian musmontrilon. Premu Esk por repreni la regadon.
+pointerlock-warning-no-domain = Tiu ĉi dokumento regas vian musmontrilon. Premu Esk por repreni la regadon.

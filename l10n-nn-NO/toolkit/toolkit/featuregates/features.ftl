@@ -91,3 +91,15 @@ experimental-features-devtools-serviceworker-debugger-support-description = Akti
 experimental-features-graphics-desktop-zooming =
     .label = Grafikk: Jamn knipeskalering
 experimental-features-graphics-desktop-zooming-description = Slå på støtte for jamn knipeskalering med berøringsskjermar og presisjonspeikeplate.
+# WebRTC global mute toggle controls
+experimental-features-webrtc-global-mute-toggles =
+    .label = Slå av/på globale kontrollar for WebRTC
+experimental-features-webrtc-global-mute-toggles-description = Legg til kontrollar i WebRTCs globale delingsvarsel som brukarar kan nytte til å globalt dempe eigen mikrofon og eigne kamerakjelder.
+# JS JIT Warp project
+experimental-features-js-warp =
+    .label = JavaScript JIT: Warp
+experimental-features-js-warp-description = Slå på Warp, eit prosjekt for å forbetre JavaScript-ytelse og minnebruk.
+# Fission is the name of the feature and should not be translated.
+experimental-features-fission =
+    .label = Fission (nettstadisolering)
+experimental-features-fission-description = Fission (nettstadisolering) er ein eksperimentell funksjon i { -brand-short-name } for å gi eit ekstra forsvarslag mot sikkerheitsfeil. Ved å isolere kvar nettstad i ein eigen prosess, gjer Fission det vanskelegare for vondsinna nettstadar å få tilgang til informasjon frå andre sider du besøkjer. Dette er ei stor arkitektonisk endring i { -brand-short-name }, og vi set pris på at du testar og rapporterer eventuelle problem du kan støyte på. For meir informasjon, sjå <a data-l10n-name="wiki">wiki-en</a>.

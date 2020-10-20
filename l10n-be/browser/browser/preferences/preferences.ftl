@@ -29,6 +29,8 @@ search-input-box =
            *[other] Знайсці ў перавагах
         }
 managed-notice = Вашым браўзерам кіруе ваша арганізацыя.
+category-list =
+    .aria-label = Катэгорыі
 pane-general-title = Агульныя
 category-general =
     .tooltiptext = { pane-general-title }
@@ -492,6 +494,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Папулярныя сайты
 home-prefs-topsites-description = Сайты, якія вы наведваеце найчасцей
+home-prefs-topsites-by-option-sponsored =
+    .label = Папулярныя сайты ад спонсараў
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -564,6 +568,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Змяніць налады для іншых падказак у адрасным радку
 search-suggestions-cant-show = Пошукавыя прапановы у панэлі адрасу паказвацца не будуць, бо вы наладзілі { -brand-short-name } ніколі не запамінаць гісторыю.
 search-one-click-header = Пашукавікі ў адну пстрычку
+search-one-click-header2 = Пошукавыя скароты
 search-one-click-desc = Абярыце альтэрнатыўныя пашукавікі, якія з'яўляюцца пад адрасным радком ці панэллю пошуку, калі вы пачынаеце ўводзіць ключавое слова.
 search-choose-engine-column =
     .label = Пашукавік

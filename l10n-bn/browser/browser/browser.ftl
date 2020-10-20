@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (একান্ত ব্রাউজিং)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (একান্ত ব্রাউজিং)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (একান্ত ব্রাউজিং)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (একান্ত ব্রাউজিং)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -113,6 +111,7 @@ urlbar-search-tips-onboard = কম লিখে, বেশি অনুসন�
 
 ## Local search mode indicator labels in the urlbar
 
+
 ##
 
 urlbar-geolocation-blocked =
@@ -137,12 +136,10 @@ urlbar-midi-blocked =
     .tooltiptext = আপনি সাইটটির জন্য MIDI এর প্রবেশ ব্লক করেছেন।
 urlbar-install-blocked =
     .tooltiptext = আপনি এই ওয়েবসাইটের জন্য অ্যাড-অন ইনস্টলেশন বন্ধ করেছেন।
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = এই বুকমার্কটি সম্পাদনা ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -159,6 +156,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = এক্সটেনশন অপসারণ করুন
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] ডিভাইসে ট্যাব পাঠান
+           *[other] ডিভাইসে { $tabCount } ট্যাব পাঠান
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] ডিভাইসে ট্যাব পাঠান
+           *[other] ডিভাইসে { $tabCount } ট্যাব পাঠান
+        }
+page-action-pocket-panel =
+    .label = { -pocket-brand-name } এ পাতাটি সংরক্ষণ করুন
+page-action-copy-url-panel =
+    .label = লিঙ্ক অনুলিপি
+page-action-copy-url-urlbar =
+    .tooltiptext = লিঙ্ক অনুলিপি
+page-action-email-link-panel =
+    .label = লিঙ্ক ইমেইল করুন... E
+page-action-email-link-urlbar =
+    .tooltiptext = লিঙ্ক ইমেইল করুন... E
+page-action-share-url-panel =
+    .label = শেয়ার
+page-action-share-url-urlbar =
+    .tooltiptext = শেয়ার
+page-action-share-more-panel =
+    .label = আরও...
+page-action-send-tab-not-ready =
+    .label = ডিভাইস সিঙ্ক হচ্ছে…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = পিন ট্যাব
+page-action-pin-tab-urlbar =
+    .tooltiptext = পিন ট্যাব
+page-action-unpin-tab-panel =
+    .label = ট্যাব আনপিন b
+page-action-unpin-tab-urlbar =
+    .tooltiptext = ট্যাব আনপিন b
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -170,17 +214,15 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = এবার এর সাথে অনুসন্ধান করুন:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = অনুসন্ধান সেটিং বদল করুন
 search-one-offs-change-settings-compact-button =
     .tooltiptext = অনুসন্ধান সেটিংস পরিবর্তন করুন
-
 search-one-offs-context-open-new-tab =
     .label = নতুন ট্যাবে অনুসন্ধান
     .accesskey = T
@@ -198,15 +240,14 @@ search-one-offs-context-set-as-default-private =
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
 
+
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = সংরক্ষণ করার সময় সম্পাদক দেখাও
     .accesskey = S
-
 bookmark-panel-done-button =
     .label = সম্পন্ন
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -286,29 +327,70 @@ popup-all-windows-shared = আপনার স্ক্রিনের সব �
 
 enable-devtools-popup-description = F12 শর্টকাট ব্যবহার করতে, প্রথমে ওয়েব ডেভেলপার মেনু থেকে DevTools খুলুন।
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = অনুসন্ধান বা ঠিকানা দিন
-
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = অনুসন্ধান বা ঠিকানা দিন
-
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name } দ্বারা অনুসন্ধান করুন অথবা ঠিকানা লিখুন
 urlbar-remote-control-notification-anchor =
     .tooltiptext = ব্রাউজার রিমোর্ট কন্ট্রোলের আওতায়
 urlbar-permissions-granted =
     .tooltiptext = আপনি এই সাইটের জন্য বিশেষ অনুমতি দিয়েছেন।
 urlbar-switch-to-tab =
     .value = ট্যাবে যান:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = এক্সটেনশন:
-
 urlbar-go-button =
     .tooltiptext = ঠিকানার বারে উল্লেখিত পাতা প্রদর্শন করা হবে
 urlbar-page-action-button =
     .tooltiptext = পাতা পদক্ষেপ
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name } এ সংরক্ষণ করুন
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = ব্যক্তিগত উইন্ডোতে { $engine } দিয়ে অনুসন্ধান করুন
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = ব্যক্তিগত উইন্ডোতে অনুসন্ধান করুন
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } দিয়ে অনুসন্ধান করা হবে
+urlbar-result-action-switch-tab = ট্যাবে যান
+urlbar-result-action-visit = পরিদর্শন করুন
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> এখন পূর্ণ পর্দায় রয়েছে
+fullscreen-warning-no-domain = এই ডকুমেন্ট এখন পূর্ণ পর্দায় রয়েছে
+fullscreen-exit-button = পূর্ণ পর্দা বন্ধ করুন (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = পূর্ণ পর্দা বন্ধ করুন (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> আপনার পয়েন্টারের নিয়ন্ত্রণ রয়েছে। পুনরায় নিয়ন্ত্রণ নিতে Esc চাপুন।
+pointerlock-warning-no-domain = এই নথিতে পয়েন্টারের নিয়ন্ত্রণ রয়েছে। পুনরায় নিয়ন্ত্রণ নিতে Esc চাপুন।

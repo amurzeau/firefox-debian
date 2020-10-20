@@ -91,3 +91,15 @@ experimental-features-devtools-serviceworker-debugger-support-description = Akti
 experimental-features-graphics-desktop-zooming =
     .label = Grafik: Sanftes Zoomen durch Antippen
 experimental-features-graphics-desktop-zooming-description = Unterstützung für sanftes Zoomen durch Antippen auf Touchscreens und Präzisions-Touchpads aktivieren
+# WebRTC global mute toggle controls
+experimental-features-webrtc-global-mute-toggles =
+    .label = Globale WebRTC-Stummschaltungs-Steuerung
+experimental-features-webrtc-global-mute-toggles-description = Fügt dem globalen WebRTC-Teilen-Hinweis Steuerelemente hinzu, mit denen Benutzer ihre Mikrofon-und Kamera-Feeds global stummschalten können.
+# JS JIT Warp project
+experimental-features-js-warp =
+    .label = JavaScript JIT: Warp
+experimental-features-js-warp-description = Warp aktivieren: ein Projekt zur Verbesserung der Leistung und des Speicherverbrauchs von JavaScript.
+# Fission is the name of the feature and should not be translated.
+experimental-features-fission =
+    .label = Fission (Seitenisolierung)
+experimental-features-fission-description = Fission (Seitenisolierung) ist eine experimentelle Funktion in { -brand-short-name }, um eine zusätzliche Schutzschicht gegen Sicherheitslücken zu bieten. Indem es jede Website in einen separaten Prozess isoliert, macht Fission es für bösartige Websites schwieriger, Zugriff auf Informationen von anderen Seiten, die Sie besuchen, zu erhalten. Dies ist eine große Architektur-Änderung in { -brand-short-name } und wir freuen uns, wenn Sie alle Probleme, auf die Sie stoßen, testen und melden. Weitere Informationen erhalten Sie <a data-l10n-name="wiki">im Wiki</a>.

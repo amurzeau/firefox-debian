@@ -162,6 +162,61 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Tynnu Estyniad
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [zero] Anfon Tab i Ddyfais
+            [one] Anfon { $tabCount } Tab i Ddyfais
+            [two] Anfon { $tabCount } Dab i Ddyfais
+            [few] Anfon { $tabCount } Thab i Ddyfais
+            [many] Anfon { $tabCount } Tab i Ddyfais
+           *[other] Anfon { $tabCount } Thab i Ddyfais
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [zero] Anfon Tab i Ddyfais
+            [one] Anfon { $tabCount } Tab i Ddyfais
+            [two] Anfon { $tabCount } Dab i Ddyfais
+            [few] Anfon { $tabCount } Thab i Ddyfais
+            [many] Anfon { $tabCount } Tab i Ddyfais
+           *[other] Anfon { $tabCount } Thab i Ddyfais
+        }
+page-action-pocket-panel =
+    .label = Cadw Tudalen i { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Copïo'r Ddolen
+page-action-copy-url-urlbar =
+    .tooltiptext = Copïo'r Ddolen
+page-action-email-link-panel =
+    .label = E-bostio'r Ddolen…
+page-action-email-link-urlbar =
+    .tooltiptext = E-bostio'r Ddolen…
+page-action-share-url-panel =
+    .label = Rhannu
+page-action-share-url-urlbar =
+    .tooltiptext = Rhannu
+page-action-share-more-panel =
+    .label = Rhagor…
+page-action-send-tab-not-ready =
+    .label = Cydweddu Dyfeisiau…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Pinio Tab
+page-action-pin-tab-urlbar =
+    .tooltiptext = Pinio Tab
+page-action-unpin-tab-panel =
+    .label = Dadbinio Tab
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Dadbinio Tab
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +228,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Y tro hwn, chwilio gyda:
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +293,17 @@ identity-passive-loaded = Nid yw rhannau o'r dudalen hon yn ddiogel (megis delwe
 identity-active-loaded = Rydych wedi analluogi diogelwch ar y dudalen hon.
 identity-weak-encryption = Mae'r dudalen hon yn defnyddio amgryptiad gwan.
 identity-insecure-login-forms = Gall mewngofnodion sy'n cael eu cyflwyno ar y dudalen hon gael eu cyfaddawdu.
+identity-https-only-connection-upgraded = (wedi'i uwchraddio i HTTPS)
+identity-https-only-label = Modd HTTPS-yn-Unig
+identity-https-only-dropdown-on =
+    .label = Ymlaen
+identity-https-only-dropdown-off =
+    .label = Diffodd
+identity-https-only-dropdown-off-temporarily =
+    .label = Diffodd dros dro
+identity-https-only-info-turn-on = Trowch ymlaen os ydych chi am i { -brand-short-name } uwchraddio i gysylltiad diogel pan fo hynny'n bosibl.
+identity-https-only-info-turn-off = Os yw'r wefan yn ymddangos wedi torri, efallai yr hoffech ddiffodd Modd HTTPS-yn-Unig i'w ail-lwytho gan ddefnyddio HTTP anniogel.
+identity-https-only-info-no-upgrade = Methu uwchraddio'r cysylltiad o HTTP.
 identity-permissions =
     .value = Caniatâd
 identity-permissions-reload-hint = Efallai y bydd angen ail lwytho'r dudalen i newidiadau ddod ar waith.
@@ -369,3 +435,54 @@ urlbar-page-action-button =
     .tooltiptext = Gweithredoedd tudalen
 urlbar-pocket-button =
     .tooltiptext = Cadw i { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Chwilio gyda { $engine } mewn Ffenestr Breifat
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Chwilio mewn Ffenestr Breifat
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Chwilio gyda { $engine }
+urlbar-result-action-switch-tab = Newid i'r Tab
+urlbar-result-action-visit = Ymweld â
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Chwilio'r Nodau Tudalen
+urlbar-result-action-search-history = Chwilio'r Hanes
+urlbar-result-action-search-tabs = Chwilio'r Tabiau
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Chwilio gyda { $engine } yn syth o'r bar cyfeiriad
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Chwilio gyda { $engine } yn syth o'r bar cyfeiriad
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> nawr yn sgrin lawn
+fullscreen-warning-no-domain = Mae'r ddogfen nawr yn sgrin lawn
+fullscreen-exit-button = Gadael y Sgrin Lawn (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Gadael y Sgrin Lawn (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> reolaeth o'ch pwyntydd. Pwyswch Esc i adennill rheolaeth.
+pointerlock-warning-no-domain = Mae gan y ddogfen hon reolaeth o'ch pwyntydd. Pwyswch Esc i adennill rheolaeth.

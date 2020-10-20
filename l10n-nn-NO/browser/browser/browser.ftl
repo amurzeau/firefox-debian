@@ -162,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Fjern utviding
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Send fane til eining
+           *[other] Send { $tabCount } faner til eining
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Send fane til eining
+           *[other] Send { $tabCount } faner til eining
+        }
+page-action-pocket-panel =
+    .label = Lagre sida til { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Kopier lenke
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopier lenke
+page-action-email-link-panel =
+    .label = Send lenke på e-post…
+page-action-email-link-urlbar =
+    .tooltiptext = Send lenke på e-post…
+page-action-share-url-panel =
+    .label = Del
+page-action-share-url-urlbar =
+    .tooltiptext = Del
+page-action-share-more-panel =
+    .label = Meir…
+page-action-send-tab-not-ready =
+    .label = Synkroniserer einingar…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Fest fane
+page-action-pin-tab-urlbar =
+    .tooltiptext = Fest fane
+page-action-unpin-tab-panel =
+    .label = Løys fane
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Løys fane
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Søk ein gong med:
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +285,17 @@ identity-passive-loaded = Delar av denne sida er ikkje trygg (til dømes bilde).
 identity-active-loaded = Du har slått av vern på denne sida.
 identity-weak-encryption = Denne sida brukar ei svak kryptering.
 identity-insecure-login-forms = Innloggingsinfo skrive inn på denne sida kan lesast av tredjepart.
+identity-https-only-connection-upgraded = (oppgradert til HTTPS)
+identity-https-only-label = Berre-HTTPS-modus
+identity-https-only-dropdown-on =
+    .label = På
+identity-https-only-dropdown-off =
+    .label = Av
+identity-https-only-dropdown-off-temporarily =
+    .label = Mellombels av
+identity-https-only-info-turn-on = Slå på dersom du vil at { -brand-short-name } skal oppgradere til ei sikker tilkopling når det er mogleg.
+identity-https-only-info-turn-off = Dersom nettstaden ser ut til å vere øydelagd, kan det vere lurt å slå av berre-HTTPS modus for å laste inn på nytt ved hjelp av usikker HTTP.
+identity-https-only-info-no-upgrade = Klarte ikkje å oppgradere kopling frå HTTP.
 identity-permissions =
     .value = Løyve
 identity-permissions-reload-hint = Du må kanskje laste sida på nytt for at endringane skal gjelde.
@@ -369,3 +427,54 @@ urlbar-page-action-button =
     .tooltiptext = Sidehandlingar
 urlbar-pocket-button =
     .tooltiptext = Lagre til { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Søk med { $engine } i eit privat vindauge
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Søk i eit privat vindauge
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Søk med { $engine }
+urlbar-result-action-switch-tab = Byt til fane
+urlbar-result-action-visit = Besøk
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Søk i bokmerke
+urlbar-result-action-search-history = Søk i historikk
+urlbar-result-action-search-tabs = Søk i faner
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Søk med { $engine } direket frå adresselinja
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Søk i { $engine } direkte frå adresselinja
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> er no i fullskjerm
+fullscreen-warning-no-domain = Dette dokumentet er no i fullskjerm
+fullscreen-exit-button = Avslutt fullskjerm (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Avslutt fullskjerm (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> har kontroll over peikaren din. Trykk Esc for å ta tilbake kontrollen.
+pointerlock-warning-no-domain = Dette dokumentet har kontroll over musepeikaren. Trykk på Esc for å ta tilbake kontrollen.

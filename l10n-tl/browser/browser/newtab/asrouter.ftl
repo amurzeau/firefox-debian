@@ -230,6 +230,8 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Picture-in-picture icon
 
 ## Protections Dashboard message
 
+cfr-whatsnew-protections-header = Mga proteksyon sa isang sulyap
+cfr-whatsnew-protections-body = Nagtataglay ang Protections Dashboard ng mga nakabuod na ulat tungkol sa mga data breach at password management. Maaari mo nang mabantayan kung ilang mga breach na ang naresolba mo, at makita kung may ilan sa mga naka-save na password ang nalantad sa data breach.
 cfr-whatsnew-protections-cta-link = Tingnan ang Protections Dashboard
 cfr-whatsnew-protections-icon-alt = Shield icon
 
@@ -240,10 +242,30 @@ cfr-whatsnew-better-pdf-body = Direkta nang magbubukas ang mga PDF document sa {
 
 ## DOH Message
 
+cfr-doorhanger-doh-body = Mahalaga ang iyong privacy. Hangga't maaari'y ligtas nang idinadaan ng { -brand-short-name } ang iyong mga DNS request sa isang partner service para maprotektahan ka habang nagba-browse.
+cfr-doorhanger-doh-header = Mas secure at encrypted na DNS lookup
 cfr-doorhanger-doh-primary-button = OK, Nakuha ko
     .accesskey = O
 cfr-doorhanger-doh-secondary-button = i-Disable
     .accesskey = D
 
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body = Nag-enable ang { -brand-short-name } ng Fission (site isolation) na isang eksperimental na feature para sa iyo. Sa pagkakalagay ng bawat site sa sari-sariling mga process, naglalagay ng karagdagang seguridad ang Fission para sa iyo at sa mga website na binibisita mo.
+cfr-doorhanger-fission-header = Site Isolation
+cfr-doorhanger-fission-primary-button = OK, Nakuha ko
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Alamin
+    .accesskey = L
+
 ## What's new: Cookies message
 
+cfr-whatsnew-clear-cookies-header = Awtomatikong proteksyon mula sa mga mapanlinlang na tracking
+cfr-whatsnew-clear-cookies-body = May ilang mga tracker na nireredirect ka sa ibang mga website na patagong naglalagay ng mga cookie. Kusa nang tinatanggal ng { -brand-short-name } ang mga cookie na ito para hindi ka masundan.
+cfr-whatsnew-clear-cookies-image-alt = Pagsasalarawan ng pagharang sa cookie
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Karagdagang media control
+cfr-whatsnew-media-keys-body = Magpaandar o mag-pause ng audio o video direkta mula sa iyong keyboard o headset, para mas madali kontrolin ang media mula sa ibang tab, program, o kahit kapag naka-lock ang computer mo. Pwede ka rin lumipat sa iba't-ibang mga track gamit ang mga forward at back key.
+cfr-whatsnew-media-keys-button = Alamin kung papaano

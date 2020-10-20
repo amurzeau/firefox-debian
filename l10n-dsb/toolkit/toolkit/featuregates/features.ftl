@@ -91,3 +91,10 @@ experimental-features-devtools-serviceworker-debugger-support-description = Zmó
 experimental-features-graphics-desktop-zooming =
     .label = Grafika: pózlažke dwójopalcowe skalěrowanje
 experimental-features-graphics-desktop-zooming-description = Pódpěru za pózlažke dwójopalcowe skalěrowanje na dotyknjeńskich wobrazowkach a preciznostne dótyknjeńske póla zmóžniś.
+# JS JIT Warp project
+experimental-features-js-warp =
+    .label = JavaScript JIT: Warp
+experimental-features-js-warp-description = Zmóžniśo Warp, projekt za pólěpšanje wugbaśa a wužywanja składa JavaScript,
+# Fission is the name of the feature and should not be translated.
+experimental-features-fission =
+    .label = Fission (sedłowa izolacija)

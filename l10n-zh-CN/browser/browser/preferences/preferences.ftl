@@ -29,6 +29,8 @@ search-input-box =
            *[other] 在首选项中查找
         }
 managed-notice = 您的浏览器正由组织管理。
+category-list =
+    .aria-label = 分类
 pane-general-title = 常规
 category-general =
     .tooltiptext = { pane-general-title }
@@ -485,6 +487,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = 常用网站
 home-prefs-topsites-description = 您经常访问的网站
+home-prefs-topsites-by-option-sponsored =
+    .label = 赞助的常用网站
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -552,6 +556,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = 更改其他地址栏建议首选项
 search-suggestions-cant-show = 由于您已经设置 { -brand-short-name } 不要记住浏览历史，地址栏中将不会显示搜索建议。
 search-one-click-header = 快捷搜索引擎列表
+search-one-click-header2 = 快捷搜索
 search-one-click-desc = 请选择在地址栏和搜索栏输入关键词时，您希望显示在下方的其他可选用的搜索引擎。
 search-choose-engine-column =
     .label = 搜索引擎

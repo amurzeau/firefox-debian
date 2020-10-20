@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Ukubhrawuza kwangasese)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Ukubhrawuza kwangasese)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Ukubhrawuza kwangasese)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Ukubhrawuza kwangasese)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -92,6 +90,7 @@ urlbar-addons-notification-anchor =
 
 ## Local search mode indicator labels in the urlbar
 
+
 ##
 
 urlbar-geolocation-blocked =
@@ -106,12 +105,10 @@ urlbar-screen-blocked =
     .tooltiptext = Uyibhlokile le webhusayithi ekwabelaneni ngesikrini sakho.
 urlbar-persistent-storage-blocked =
     .tooltiptext = Ulubhlokile ugcino oluqhubekayo lwedatha kule webhusayithi.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Hlela le bhukhmakhi ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -119,6 +116,27 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
+
+## Page Action menu
+
+page-action-email-link-panel =
+    .label = Ikhonkco leimeyile…
+page-action-email-link-urlbar =
+    .tooltiptext = Ikhonkco leimeyile…
+page-action-send-tab-not-ready =
+    .label = Iingqamanisa iziXhobo…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Qhobosha iithebhu
+page-action-pin-tab-urlbar =
+    .tooltiptext = Qhobosha iithebhu
+page-action-unpin-tab-panel =
+    .label = Khulula iithebhu
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Khulula iithebhu
 
 ## Auto-hide Context Menu
 
@@ -137,7 +155,6 @@ search-one-offs-change-settings-button =
     .label = Tshintsha iisethingi zokukhangela
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Tshintsha iisethingi zokukhangela
-
 search-one-offs-context-open-new-tab =
     .label = Khangela KweNtsha Nethebhu
     .accesskey = T
@@ -151,6 +168,7 @@ search-one-offs-context-set-as-default =
 ##    Restriction tokens are special characters users can type in the urlbar to
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
+
 
 ## Bookmark Panel
 
@@ -220,20 +238,48 @@ popup-all-windows-shared = Zonke iiwindowu ezikwiskrini sakho ziya kwabiwa.
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Khangela okanye ngenisa idilesi
-
 urlbar-placeholder =
     .placeholder = Khangela okanye ngenisa idilesi
-
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Ibhrawza iphantsi kolawulo lwerimoti
 urlbar-switch-to-tab =
     .value = Tshintshela kwithebhu:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Izolulo
-
 urlbar-go-button =
     .tooltiptext = Yiya kwidilesi kwibha yendawo
 urlbar-page-action-button =
     .tooltiptext = Okwenzeka kumakhasi
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Khangela ngo { $engine }
+urlbar-result-action-switch-tab = Tshintshela kwiThebhu
+urlbar-result-action-visit = Tyelela
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ngoku siskrini esipheleleyo
+fullscreen-warning-no-domain = Olu xwebhu ngoku lusiskrini esipheleleyo
+fullscreen-exit-button = Phuma KwiSkrini Esipheleleyo (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Phuma KwiSkrini Esipheleleyo (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ilawula ipoyinta yakho. Cofa uEsc ukuze uphinde uthathe ulawulo.
+pointerlock-warning-no-domain = Olu xwebhu lulawula ipoyinta yakho. Cofa uEsc ukuze uphinde uthathe ulawulo.

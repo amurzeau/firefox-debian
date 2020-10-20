@@ -266,8 +266,23 @@ cfr-doorhanger-doh-primary-button = OK, ricevuto
 cfr-doorhanger-doh-secondary-button = Disattiva
   .accesskey = D
 
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body = { -brand-short-name } ha attivato una funzione sperimentale: Fission (isolamento dei siti). Isolando ciascun sito in un processo separato, Fission fornisce un livello di sicurezza aggiuntivo per te e i siti che visiti.
+cfr-doorhanger-fission-header = Isolamento dei siti
+cfr-doorhanger-fission-primary-button = OK, ricevuto
+  .accesskey = O
+cfr-doorhanger-fission-secondary-button = Ulteriori informazioni
+  .accesskey = U
+
 ## What's new: Cookies message
 
 cfr-whatsnew-clear-cookies-header = Protezione automatica contro subdole tecniche di tracciamento
 cfr-whatsnew-clear-cookies-body = Alcuni elementi traccianti ti reindirizzano su altri siti web che, di nascosto, impostano cookie nel browser. Adesso { -brand-short-name } elimina automaticamente questi cookie, impedendogli di seguirti.
 cfr-whatsnew-clear-cookies-image-alt = Illustrazione cookie bloccati
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Più controlli multimediali
+cfr-whatsnew-media-keys-body = Riproduci o metti in pausa audio e video usando direttamente la tastiera o le cuffie. In questo modo è facile gestire contenuti multimediali da un’altra scheda, un altro programma, o perfino quando il computer è bloccato. Puoi anche spostarti da una traccia all’altra usando i tasti avanti e indietro.
+cfr-whatsnew-media-keys-button = Scopri come

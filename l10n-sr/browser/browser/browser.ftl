@@ -162,6 +162,55 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Уклони проширење
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Пошаљи језичак на уређај
+            [few] Пошаљи { $tabCount } језичка на уређај
+           *[other] Пошаљи { $tabCount } језичака на уређај
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Пошаљи језичак на уређај
+            [few] Пошаљи { $tabCount } језичка на уређај
+           *[other] Пошаљи { $tabCount } језичака на уређај
+        }
+page-action-pocket-panel =
+    .label = Сачувај страницу са услугом { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Копирај везу
+page-action-copy-url-urlbar =
+    .tooltiptext = Копирај везу
+page-action-email-link-panel =
+    .label = Веза е-поште…
+page-action-email-link-urlbar =
+    .tooltiptext = Веза е-поште…
+page-action-share-url-panel =
+    .label = Подели
+page-action-share-url-urlbar =
+    .tooltiptext = Подели
+page-action-share-more-panel =
+    .label = Још…
+page-action-send-tab-not-ready =
+    .label = Синхронизујем уређаје…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Закачи језичак
+page-action-pin-tab-urlbar =
+    .tooltiptext = Закачи језичак
+page-action-unpin-tab-panel =
+    .label = Откачи језичак
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Откачи језичак
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -369,3 +418,43 @@ urlbar-page-action-button =
     .tooltiptext = Радње странице
 urlbar-pocket-button =
     .tooltiptext = Сачувај са услугом { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Претражите уз { $engine } у приватном режиму
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Претражите у приватном режиму
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Претражи са { $engine }
+urlbar-result-action-switch-tab = Пребаци на језичак
+urlbar-result-action-visit = Посети
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> је сада у приказу преко целог екрана
+fullscreen-warning-no-domain = Овај документ се приказује преко целог екрана
+fullscreen-exit-button = Изађи из приказа преко целог екрана (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Изађи из приказа преко целог екрана (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> управља са вашим показивачем. Притисните Esc да преузмете контролу.
+pointerlock-warning-no-domain = Овај документ управља са вашим показивачем. Притисните Esc да преузмете контролу.

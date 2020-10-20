@@ -162,6 +162,59 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Dilemel an askouezh
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Kas an ivinell d'an trevnad
+            [two] Kas { $tabCount } ivinell d'an trevnad
+            [few] Kas { $tabCount } ivinell d'an trevnad
+            [many] Kas { $tabCount } a ivinelloù d'an trevnad
+           *[other] Kas { $tabCount } ivinell d'an trevnad
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Kas an ivinell d'an trevnad
+            [two] Kas { $tabCount } ivinell d'an trevnad
+            [few] Kas { $tabCount } ivinell d'an trevnad
+            [many] Kas { $tabCount } a ivinelloù d'an trevnad
+           *[other] Kas { $tabCount } ivinell d'an trevnad
+        }
+page-action-pocket-panel =
+    .label = Enrollañ ar bajenn etrezek { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Eilañ an ere
+page-action-copy-url-urlbar =
+    .tooltiptext = Eilañ an ere
+page-action-email-link-panel =
+    .label = Kas an ere dre bostel…
+page-action-email-link-urlbar =
+    .tooltiptext = Kas an ere dre bostel…
+page-action-share-url-panel =
+    .label = Rannañ
+page-action-share-url-urlbar =
+    .tooltiptext = Rannañ
+page-action-share-more-panel =
+    .label = Ouzhpenn...
+page-action-send-tab-not-ready =
+    .label = Trevnadoù o c'houbredañ...
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Spilhennañ an ivinell
+page-action-pin-tab-urlbar =
+    .tooltiptext = Spilhennañ an ivinell
+page-action-unpin-tab-panel =
+    .label = Dispilhennañ an ivinell
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Dispilhennañ an ivinell
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -369,3 +422,43 @@ urlbar-page-action-button =
     .tooltiptext = Gweredoù ar bajenn
 urlbar-pocket-button =
     .tooltiptext = Enrollañ etrezek { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Klask gant { $engine } en ur prenestr prevez
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Klask en ur prenestr prevez
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Klask gant { $engine }
+urlbar-result-action-switch-tab = Mont d'an ivinell
+urlbar-result-action-visit = Gweladenniñ
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> a zo e skramm a-bezh
+fullscreen-warning-no-domain = War ar skramm a-bezh emañ an teul-mañ bremañ
+fullscreen-exit-button = Kuitaat ar mod skramm a-bezh (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Kuitaat ar mod skramm a-bezh (Esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> a c'hall reoliñ ho logodenn. Pouezit war Achap evit bezañ mestr outi en-dro.
+pointerlock-warning-no-domain = Meret eo ho logodenn gant an teul-mañ. Pouezit war Achap evit bezañ mestr outi en-dro.

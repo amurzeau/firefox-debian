@@ -162,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Tiyuj K'amal
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Titaq Ruwi' pan Okisab'äl
+           *[other] Ketaq { $tabCount } taq Ruwi' pan Okisab'äl
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Titaq Ruwi' pan Okisab'äl
+           *[other] Ketaq { $tabCount } taq Ruwi' pan Okisab'äl
+        }
+page-action-pocket-panel =
+    .label = Tiyak Ruxaq pa { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Tiwachib'ëx Ximonel
+page-action-copy-url-urlbar =
+    .tooltiptext = Tiwachib'ëx Ximonel
+page-action-email-link-panel =
+    .label = Titaq ximonel tzij…
+page-action-email-link-urlbar =
+    .tooltiptext = Titaq ximonel tzij…
+page-action-share-url-panel =
+    .label = Tikomonïx
+page-action-share-url-urlbar =
+    .tooltiptext = Tikomonïx
+page-action-share-more-panel =
+    .label = Ch'aqa' chik…
+page-action-send-tab-not-ready =
+    .label = Tajin yexim ri taq Okisaxel…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Rujikib'axik ruwi' kajtz'ïk
+page-action-pin-tab-urlbar =
+    .tooltiptext = Rujikib'axik ruwi' kajtz'ïk
+page-action-unpin-tab-panel =
+    .label = Ruyujïk ruwi' kajtz'ik
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Ruyujïk ruwi' kajtz'ik
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Wakami tikanöx rik'in:
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +285,13 @@ identity-passive-loaded = K'o man ütz ta taq ruch'akulal re ruxaq re' (achi'el 
 identity-active-loaded = Xachüp ruchajixik re ruxaq re'.
 identity-weak-encryption = Re ruxaq re' nrokisaj yamayïk chi suq'ch'ab'äl.
 identity-insecure-login-forms = Kitikirib'al taq molojri'ïl etz'ib'an pa re ruxaq k'amaya'l re' rik'in jub'a' ye'itzelan.
+identity-https-only-label = HTTPS-Only B'anikil
+identity-https-only-dropdown-on =
+    .label = Titzij
+identity-https-only-dropdown-off =
+    .label = Tichup
+identity-https-only-dropdown-off-temporarily =
+    .label = Tichup jumej
 identity-permissions =
     .value = Taq ya'oj q'ij
 identity-permissions-reload-hint = Rik'in jub'a' k'o chi yatok chik pa ruxaq richin yesamäj ri taq k'exoj.
@@ -369,3 +423,54 @@ urlbar-page-action-button =
     .tooltiptext = Taq rub'anoj ruxaq
 urlbar-pocket-button =
     .tooltiptext = Tiyak pa { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Tikanöx rik'in { $engine } pa jun Ichinan Tzuwäch
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Tikanöx pa jun Ichinan Tzuwäch
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Tikanöx pa { $engine }
+urlbar-result-action-switch-tab = Tijalwachïx chi ruwi'
+urlbar-result-action-visit = Titz'et
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Kekanöx taq Yaketal
+urlbar-result-action-search-history = Tikanöx Natab'äl
+urlbar-result-action-search-tabs = Kekanöx taq Ruwi'
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Tikanöx rik'in { $engine } pa kikajtz'ik ochochib'äl
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Tikanöx { $engine } pa kikajtz'ik ochochib'äl
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> wakami at k'o pa chijun ruwa kematz'ib'
+fullscreen-warning-no-domain = Wakami re wuj re' k'o pa chijun ruwa kematz'ib'
+fullscreen-exit-button = Tel pa chijun ruwa kematz'ib' (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Tel pa chijun ruwa kematz'ib' (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> chajin ruma ri retal ch'oy. Tapitz'a' Esc richin nachajij chik el.
+pointerlock-warning-no-domain = Re ruxaq wuj re' chajin ruma ri retal ch'oy. Tapitz'a' Esc richin nachajij chik el.

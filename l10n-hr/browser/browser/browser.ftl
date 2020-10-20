@@ -162,6 +162,55 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Ukloni porširenje
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Pošalji { $tabCount } karticu na uređaj
+            [few] Pošalji { $tabCount } kartice na uređaj
+           *[other] Pošalji { $tabCount } kartica na uređaj
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Pošalji { $tabCount } karticu na uređaj
+            [few] Pošalji { $tabCount } kartice na uređaj
+           *[other] Pošalji { $tabCount } kartica na uređaj
+        }
+page-action-pocket-panel =
+    .label = Spremi stranicu u { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Kopiraj poveznicu
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopiraj poveznicu
+page-action-email-link-panel =
+    .label = Pošalji poveznicu e-poštom…
+page-action-email-link-urlbar =
+    .tooltiptext = Pošalji poveznicu e-poštom…
+page-action-share-url-panel =
+    .label = Dijeli
+page-action-share-url-urlbar =
+    .tooltiptext = Dijeli
+page-action-share-more-panel =
+    .label = Više…
+page-action-send-tab-not-ready =
+    .label = Sinkroniziranje uređaja …
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Zakači karticu
+page-action-pin-tab-urlbar =
+    .tooltiptext = Zakači karticu
+page-action-unpin-tab-panel =
+    .label = Otkači karticu
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Otkači karticu
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +222,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ovaj put traži pomoću:
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +287,13 @@ identity-passive-loaded = Dijelovi ove stranice nisu sigurni (poput slika).
 identity-active-loaded = Zaštita je deaktivirana na ovoj stranici.
 identity-weak-encryption = Ova stranica koristi slabo šifriranje.
 identity-insecure-login-forms = Prijave na ovoj stranici mogu biti kompromitirane.
+identity-https-only-connection-upgraded = (nadograđeno na HTTPS)
+identity-https-only-dropdown-on =
+    .label = Uključeno
+identity-https-only-dropdown-off =
+    .label = Isključeno
+identity-https-only-dropdown-off-temporarily =
+    .label = Privremeno isključeno
 identity-permissions =
     .value = Dozvole
 identity-permissions-reload-hint = Stranica se možda mora ponovo učitati, kako bi se primijenile promjene.
@@ -369,3 +425,54 @@ urlbar-page-action-button =
     .tooltiptext = Radnje na stranici
 urlbar-pocket-button =
     .tooltiptext = Spremi u { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Traži pomoću { $engine } u privatnom prozoru
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Pretraži u privatnom prozoru
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Traži pomoću { $engine }
+urlbar-result-action-switch-tab = Prebaci na karticu
+urlbar-result-action-visit = Posjeti
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Pretraži zabilješke
+urlbar-result-action-search-history = Pretraži povijest
+urlbar-result-action-search-tabs = Pretraži kartice
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Pretraži pomoću { $engine } izravno iz adresne trake
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Pretraži { $engine } izravno iz adresne trake
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> se sada prikazuje preko cijelog ekrana
+fullscreen-warning-no-domain = Ovaj dokument se sada prikazuje preko cijelog ekrana
+fullscreen-exit-button = Izađi iz cjeloekranskog prikaza (esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Izađi iz cjeloekranskog prikaza (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ima kontrolu nad pokazivačem. Pritisnite tipku Esc da biste preuzeli kontrolu.
+pointerlock-warning-no-domain = Ovaj dokument ima kontrolu nad pokazivačem. Pritisnite tipku Esc kako biste preuzeli kontrolu.

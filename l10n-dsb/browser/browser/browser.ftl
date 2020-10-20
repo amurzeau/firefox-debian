@@ -162,6 +162,57 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Rozšyrjenje wótwónoźeś
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] { $tabCount } rejtarik na rěd pósłaś
+            [two] { $tabCount } rejtarika na rěd pósłaś
+            [few] { $tabCount } rejtariki na rěd pósłaś
+           *[other] { $tabCount } rejtarikow na rěd pósłaś
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] { $tabCount } rejtarik na rěd pósłaś
+            [two] { $tabCount } rejtarika na rěd pósłaś
+            [few] { $tabCount } rejtariki na rěd pósłaś
+           *[other] { $tabCount } rejtarikow na rěd pósłaś
+        }
+page-action-pocket-panel =
+    .label = Bok do { -pocket-brand-name } składowaś
+page-action-copy-url-panel =
+    .label = Wótkaz kopěrowaś
+page-action-copy-url-urlbar =
+    .tooltiptext = Wótkaz kopěrowaś
+page-action-email-link-panel =
+    .label = Wótkaz e-mailowaś…
+page-action-email-link-urlbar =
+    .tooltiptext = Wótkaz e-mailowaś…
+page-action-share-url-panel =
+    .label = Źěliś
+page-action-share-url-urlbar =
+    .tooltiptext = Źěliś
+page-action-share-more-panel =
+    .label = Wěcej…
+page-action-send-tab-not-ready =
+    .label = Rědy se synchronizěruju…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Rejtarik pśipěś
+page-action-pin-tab-urlbar =
+    .tooltiptext = Rejtarik pśipěś
+page-action-unpin-tab-panel =
+    .label = Rejtarik wótpěś
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Rejtarik wótpěś
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +224,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Něnto pytaś z:
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +289,17 @@ identity-passive-loaded = Źěle toś togo boka njejsu wěste (na pśikład wobr
 identity-active-loaded = Sćo šćit na toś tom boku znjemóžnił.
 identity-weak-encryption = Toś ten bok wužywa słabe koděrowanje.
 identity-insecure-login-forms = Pśizjawjenja, kótarež zapódawaju se na toś tom boku, by mógli wobgrozone byś.
+identity-https-only-connection-upgraded = (na HTTPS zaktualizěrowany)
+identity-https-only-label = Modus jano-HTTPS
+identity-https-only-dropdown-on =
+    .label = Zašaltowany
+identity-https-only-dropdown-off =
+    .label = Wušaltowany
+identity-https-only-dropdown-off-temporarily =
+    .label = Nachylu wušaltowany
+identity-https-only-info-turn-on = Zmóžniśo to, jolic cośo, až { -brand-short-name } na wěsty zwisk aktualizěrujo, jolic móžno.
+identity-https-only-info-turn-off = Jolic se zda, až sedło jo wobškóźone, cośo snaź modus Jano-HTTPS znjemóžniś, aby zasej njewěsty HTTP wužywał.
+identity-https-only-info-no-upgrade = Zwisk njedajo se z HTTP aktualizěrowaś.
 identity-permissions =
     .value = Pšawa
 identity-permissions-reload-hint = Musyśo snaź bok znowego zacytaś, aby se změny wustatkowali.
@@ -369,3 +431,54 @@ urlbar-page-action-button =
     .tooltiptext = Akcije boka
 urlbar-pocket-button =
     .tooltiptext = Pla { -pocket-brand-name } składowaś
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Z { $engine } w priwatnem woknje pytaś
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = W priwatnem woknje pytaś
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Z { $engine } pytaś
+urlbar-result-action-switch-tab = K rejtarikoju pśejś
+urlbar-result-action-visit = Woglědaś se
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Cytańske znamjenja pśepytaś
+urlbar-result-action-search-history = Historiju pśepytaś
+urlbar-result-action-search-tabs = Rejtariki pśepytaś
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Z { $engine } direktnje z adresowego póla pytaś
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Z { $engine } direktnje z adresowego póla pytaś
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> jo něnto połna wobrazowka
+fullscreen-warning-no-domain = Toś ten dokument jo něnto połna wobrazowka
+fullscreen-exit-button = Połnu wobrazowku skóńcyś (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Połnu wobrazowku (esc) skóńcyś
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ma kontrolu nad wašeju špěrku. Tłocćo Esc, aby kontrolu slědk dostał.
+pointerlock-warning-no-domain = Toś ten dokument ma kontrolu nad wašeju špěrku. Tłocćo Esc, aby kontrolu slědk dostał.

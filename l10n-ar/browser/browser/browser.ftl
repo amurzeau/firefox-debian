@@ -162,6 +162,61 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = أزِل الامتداد
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [zero] لا تُرسل شيئا إلى الجهاز
+            [one] أرسِل اللسان إلى الجهاز
+            [two] أرسِل اللسانين إلى الجهاز
+            [few] أرسِل { $tabCount } ألسنة إلى الجهاز
+            [many] أرسِل { $tabCount } لسانا إلى الجهاز
+           *[other] أرسِل { $tabCount } لسان إلى الجهاز
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [zero] لا تُرسل شيئا إلى الجهاز
+            [one] أرسِل اللسان إلى الجهاز
+            [two] أرسِل اللسانين إلى الجهاز
+            [few] أرسِل { $tabCount } ألسنة إلى الجهاز
+            [many] أرسِل { $tabCount } لسانا إلى الجهاز
+           *[other] أرسِل { $tabCount } لسان إلى الجهاز
+        }
+page-action-pocket-panel =
+    .label = احفظ الصفحة في { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = انسخ الرابط
+page-action-copy-url-urlbar =
+    .tooltiptext = انسخ الرابط
+page-action-email-link-panel =
+    .label = أرسل الرابط بالبريد…
+page-action-email-link-urlbar =
+    .tooltiptext = أرسل الرابط بالبريد…
+page-action-share-url-panel =
+    .label = شارِك
+page-action-share-url-urlbar =
+    .tooltiptext = شارِك
+page-action-share-more-panel =
+    .label = أكثر…
+page-action-send-tab-not-ready =
+    .label = يُزامن الأجهزة…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = ثبّت اللسان
+page-action-pin-tab-urlbar =
+    .tooltiptext = ثبّت اللسان
+page-action-unpin-tab-panel =
+    .label = أفلِت اللسان
+page-action-unpin-tab-urlbar =
+    .tooltiptext = أفلِت اللسان
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +228,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = الآن فقط ابحث باستعمال:
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +293,17 @@ identity-passive-loaded = بعض أجزاء هذه الصفحة غير آمنة 
 identity-active-loaded = لقد أوقفت الحماية على هذه الصفحة.
 identity-weak-encryption = تستخدم هذه الصفحة تعمية ضعيفة.
 identity-insecure-login-forms = معلومات الولوج التي تُدخلها في هذه الصفحة قد تكون مخترقة.
+identity-https-only-connection-upgraded = (ترقّى إلى HTTPS)
+identity-https-only-label = وضع HTTPS فقط
+identity-https-only-dropdown-on =
+    .label = مفعّل
+identity-https-only-dropdown-off =
+    .label = معطّل
+identity-https-only-dropdown-off-temporarily =
+    .label = معطّل مؤقتًا
+identity-https-only-info-turn-on = فعّله إن أردت من { -brand-short-name } ترقيته إلى اتصال آمن متى أمكن.
+identity-https-only-info-turn-off = إن شككت أن في الموقع عطب، فيمكنك تعطيل وضع HTTPS فقط لإعادة تحميله باستعمال بروتوكول HTTP غير الآمن.
+identity-https-only-info-no-upgrade = تعذرت ترقية الاتصال من HTTP.
 identity-permissions =
     .value = التصاريح
 identity-permissions-reload-hint = قد تحتاج إعادة تحميل الصفحة لتطبيق التغييرات.
@@ -369,3 +435,54 @@ urlbar-page-action-button =
     .tooltiptext = إجراءات الصفحة
 urlbar-pocket-button =
     .tooltiptext = احفظ في { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = ابحث مستعملًا { $engine } في نافذة خاصة
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = ابحث في نافذةٍ خاصة
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = ابحث مستخدمًا { $engine }
+urlbar-result-action-switch-tab = انتقل إلى اللسان
+urlbar-result-action-visit = زُر
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = ابحث في العلامات
+urlbar-result-action-search-history = ابحث في التأريخ
+urlbar-result-action-search-tabs = ابحث في الألسنة
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = ابحث مستعملًا { $engine } مباشرة من شريط العنوان
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = ابحث مستعملًا { $engine } مباشرة من شريط العنوان
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> يملأ الشاشة الآن
+fullscreen-warning-no-domain = يملأ هذا المستند الشاشة الآن
+fullscreen-exit-button = غادر ملء الشاشة (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = غادر ملء الشاشة (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = يتحكم <span data-l10n-name="domain">{ $domain }</span> في مؤشرك. اضغط Esc لتستعيد التحكم.
+pointerlock-warning-no-domain = يتحكم هذا المستند في مؤشرك. اضغط Esc لتستعيد التحكم.

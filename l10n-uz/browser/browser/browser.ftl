@@ -157,6 +157,53 @@ page-action-manage-extension =
 page-action-remove-from-urlbar =
     .label = Manzil panelidan olib tashlash
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Varaqni qurilmaga joʻnatish
+           *[other] { $tabCount } ta varaqni qurilmaga joʻnatish
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Varaqni qurilmaga joʻnatish
+           *[other] { $tabCount } ta varaqni qurilmaga joʻnatish
+        }
+page-action-pocket-panel =
+    .label = Sahifani { -pocket-brand-name } xizmatiga saqlash
+page-action-copy-url-panel =
+    .label = Havoladan nusxa olish
+page-action-copy-url-urlbar =
+    .tooltiptext = Havoladan nusxa olish
+page-action-email-link-panel =
+    .label = Havolani emaildan joʻnatish
+page-action-email-link-urlbar =
+    .tooltiptext = Havolani emaildan joʻnatish
+page-action-share-url-panel =
+    .label = Bo‘lishish
+page-action-share-url-urlbar =
+    .tooltiptext = Bo‘lishish
+page-action-share-more-panel =
+    .label = Yana…
+page-action-send-tab-not-ready =
+    .label = Qurilmalar sinxronlanmoqda…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Varaqni qistirish
+page-action-pin-tab-urlbar =
+    .tooltiptext = Varaqni qistirish
+page-action-unpin-tab-panel =
+    .label = Qistirilgan varaqni olib tashlash
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Qistirilgan varaqni olib tashlash
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -327,3 +374,41 @@ urlbar-page-action-button =
     .tooltiptext = Sahifa amallari
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name } xizmatiga saqlash
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Maxfiy oynada { $engine } yordamida izlash
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } orqali izlash
+urlbar-result-action-switch-tab = Ichki oynaga o‘tish
+urlbar-result-action-visit = Kirish
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> – hozir butun ekranda
+fullscreen-warning-no-domain = Bu hujjat hozir butun ekranda ko‘rinmoqda
+fullscreen-exit-button = "Butun ekranda" usulidan chiqish (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = "Butun ekranda" usulidan chiqish (Esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ko‘rsatkichingiz ustidan nazorat o‘rnatgan. Nazoratni qo‘lga olish uchun Esc tugmasini bosing.
+pointerlock-warning-no-domain = Bu hujat ko‘rsatkichingiz ustidan nazorat o‘rnatgan. Nazoratni qo‘lga olish uchun Esc tugmasini bosing.

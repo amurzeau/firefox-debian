@@ -24,7 +24,14 @@ graph-private-window = Patuloy na hinaharang ng { -brand-short-name } ang mga tr
 graph-week-summary-private-window = Mga tracker na naharang ng { -brand-short-name } ngayong linggo
 protection-report-webpage-title = Protections Dashboard
 protection-report-page-content-title = Protections Dashboard
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
+protection-report-page-summary = Kayang protektahan ng { -brand-short-name } ang iyong privacy habang nagba-browse. Ito ang pasadyang buod ng mga proteksyong ito, na may kasamang mga kagamitan para makontrol mo ang iyong seguridad online.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = Pinoprotektahan ng { -brand-short-name } ang iyong privacy habang nagba-browse. Ito ang pasadyang buod ng mga proteksyong ito, na may kasamang mga kagamitan para makontrol mo ang iyong seguridad online.
+protection-report-settings-link = I-manage ang iyong mga privacy at security setting
+etp-card-title-always = Enhanced Tracking Protection: Laging Nakabukas
 etp-card-title-custom-not-blocking = Enhanced Tracking Protection: OFF
+etp-card-content-description = Kusang pinipigil ng { -brand-short-name } ang mga kumpanya sa pagsunod sa iyo nang palihim sa web.
 protection-report-etp-card-content-custom-not-blocking = Lahat ng proteksyon ay kasalukyang naka-off. Piliin kung alin tracker ang i-blblock sa pamamagitan ng pamamahala ng iyong { -brand-short-name } protection settings.
 protection-report-manage-protections = Pamahalaan ang Settings
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -45,14 +52,36 @@ cryptominer-tab-content = Ginagamit ng mga cryptominer ang computing power ng si
 protections-close-button2 =
     .aria-label = Isara
     .title = Isara
+mobile-app-title = Harangin ang mga ad tracker sa mas marami pang mga device
+mobile-app-card-content = Gamitin ang mobile browser na may built-in na proteksyon laban sa ad tracking.
+mobile-app-links = { -brand-product-name } Browser para sa <a data-l10n-name="android-mobile-inline-link">Android</a> at <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Huwag nang muling makalimot ng password
+lockwise-title-logged-in2 = Pag-manage ng Password
 lockwise-header-content = Ligtas na iniimbak ng { -lockwise-brand-name } ang mga password mo sa iyong browser.
 lockwise-header-content-logged-in = Ligtas na iimbak at i-sync ang mga password mo sa lahat ng mga device.
 protection-report-save-passwords-button = I-save ang mga Password
     .title = Mag-save ng mga Password sa { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = I-manage ang mga Password
+    .title = I-manage ang mga Password sa { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Dalhin kahit saan ang mga password mo
 lockwise-no-logins-card-content = Gamitin sa kahit anong device ang mga password na naka-save sa { -brand-short-name }.
 lockwise-app-links = { -lockwise-brand-name } para sa <a data-l10n-name="lockwise-android-inline-link">Android</a> at <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
+    { $count ->
+        [one] May 1 password na maaaring nalantad sa isang data breach.
+       *[other] May { $count } password na maaaring nalantad sa isang data breach.
+    }
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] 1 password ang ligtas na naiimbak.
+       *[other] Ang mga password mo ay ligtas na iniimbak.
+    }
 lockwise-how-it-works-link = Paano ito gumagana
 turn-on-sync = Buksan ang { -sync-brand-short-name }...
     .title = Pumunta sa sync preferences
@@ -60,7 +89,15 @@ monitor-title = Maging alisto sa mga data breach
 monitor-link = Paano ito gumagana
 monitor-header-content-no-account = Tingnan ang { -monitor-brand-name } para malaman kung ikaw ay naging parte ng isang naiulat na data breach, at maalerto sa mga bagong breach.
 monitor-header-content-signed-in = Binabalaan ka ng { -monitor-brand-name } kung lumabas ang impormasyon mo sa isang kilalang data breach.
+monitor-sign-up-link = Mag-sign up para sa mga Breach Alert
+    .title = Mag-sign up para sa mga breach alert sa { -monitor-brand-name }
 auto-scan = Kusang na-scan ngayon
+monitor-emails-tooltip =
+    .title = Tingnan ang mga minomonitor na email address sa { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Tingnan ang mga kilalang data breach sa { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Tingnan ang mga nalantad na password sa { -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
@@ -78,6 +115,14 @@ info-known-breaches-found =
        *[other] May mga kilalang data breach na naglantad sa iyong impormasyon
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] Kilalang data breach na nakamarka bilang nalutas na
+       *[other] Mga kilalang data breach na nakamarka bilang nalutas na
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -85,10 +130,41 @@ info-exposed-passwords-found =
         [one] May password na nalantad sa lahat ng mga breach
        *[other] May mga password na nalantad sa lahat ng mga breach
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] Nakalantad ang password sa mga di pa lutas na breach
+       *[other] Nakalantad ang mga password sa mga di pa lutas na breach
+    }
 monitor-no-breaches-title = Magandang balita!
+monitor-no-breaches-description = Wala ka pang mga breach sa ngayon. Kung sakaling magbago ito, babalitaan ka namin.
 monitor-view-report-link = Tingnan ang Report
     .title = Resolve breaches on { -monitor-brand-short-name }
+monitor-breaches-unresolved-title = Resolbahin ang iyong mga breach
+monitor-breaches-unresolved-description = Matapos suriin ang mga detalye ng mga breach at gumawa ng mga hakbang para maprotektahan ang iyong impormasyon, maaari mo nang markahan ang mga breach bilang naresolba na.
+monitor-manage-breaches-link = I-manage ang mga Breach
+    .title = I-manage ang mga breach sa { -monitor-brand-short-name }
+monitor-breaches-resolved-title = Magaling! Naresolba mo na lahat ng mga kilalang breach.
+monitor-breaches-resolved-description = Kung sakaling matagpuan ang email mo sa mga bagong breach, babalitaan ka namin.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+        [one] { $numBreachesResolved } sa { $numBreaches } breach ay namarkahan na bilang naresolba na
+       *[other] { $numBreachesResolved } sa { $numBreaches } breach ay namarkahan na bilang naresolba na
+    }
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved }% kumpleto
+monitor-partial-breaches-motivation-title-start = Magandang pagsisimula!
 monitor-partial-breaches-motivation-title-middle = Magaling!
+monitor-partial-breaches-motivation-title-end = Halos tapos na! Tuluy-tuloy lang.
+monitor-partial-breaches-motivation-description = Resolbahin ang iba mo pang mga breach sa { -monitor-brand-short-name }.
+monitor-resolve-breaches-link = Resolbahin ang mga Breach
+    .title = Resolbahin ang mga Breach sa { -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

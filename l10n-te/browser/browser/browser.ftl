@@ -161,6 +161,37 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = పొడగింతను తొలగించు
 
+## Page Action menu
+
+page-action-copy-url-panel =
+    .label = లంకెను కాపీచెయ్యి
+page-action-copy-url-urlbar =
+    .tooltiptext = లంకెను కాపీచెయ్యి
+page-action-email-link-panel =
+    .label = లింకును ఈమెయిలు చేయి…
+page-action-email-link-urlbar =
+    .tooltiptext = లింకును ఈమెయిలు చేయి…
+page-action-share-url-panel =
+    .label = పంచుకో
+page-action-share-url-urlbar =
+    .tooltiptext = పంచుకో
+page-action-share-more-panel =
+    .label = మరిన్ని…
+page-action-send-tab-not-ready =
+    .label = పరికరాలను సమకాలీకరిస్తోంది…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = ట్యాబుని పిన్ చేయి
+page-action-pin-tab-urlbar =
+    .tooltiptext = ట్యాబుని పిన్ చేయి
+page-action-unpin-tab-panel =
+    .label = ట్యాబు పిన్ను తీసేయి
+page-action-unpin-tab-urlbar =
+    .tooltiptext = ట్యాబు పిన్ను తీసేయి
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -359,3 +390,35 @@ urlbar-page-action-button =
     .tooltiptext = పేజీ చర్యలు
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name }‌కి భద్రపరుచు
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } తో అన్వేషించు
+urlbar-result-action-switch-tab = ట్యాబుకు మారండి
+urlbar-result-action-visit = చూడండి
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ఇప్పుడు నిండు తెరలో ఉంది
+fullscreen-warning-no-domain = ఈ పత్రం ఇప్పుడు నిండు తెరలో ఉంది
+fullscreen-exit-button = నిండు తెరను వదలివెళ్ళు (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = నిండు తెరను వదలివెళ్ళు (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = మీ పాయింటర్ <span data-l10n-name="domain">{ $domain }</span> నియంత్రణలో ఉంది. తిరిగి మీ ఆధీనం లోనికి తెచ్చుకోడానికి Esc నొక్కండి.
+pointerlock-warning-no-domain = మీ పాయింటర్ ఈ పత్రపు నియంత్రణలో ఉంది. తిరిగి మీ ఆధీనం లోనికి తెచ్చుకోడానికి Esc నొక్కండి.

@@ -29,6 +29,8 @@ search-input-box =
            *[other] Af deg ismenyifen
         }
 managed-notice = Iminig-ik tessefrak-it tuddsa-ik.
+category-list =
+    .aria-label = Taggayin
 pane-general-title = Amatu
 category-general =
     .tooltiptext = { pane-general-title }
@@ -489,6 +491,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Ismal ifazen
 home-prefs-topsites-description = Ismal i tettwaliḍ aṭas
+home-prefs-topsites-by-option-sponsored =
+    .label = Ismal ifellay yettwarefden
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -560,6 +564,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Snifel ismenyifen i yisumar n ufeggag n tansa
 search-suggestions-cant-show = Anadi n isumar ur d ittwaskan ara deg yigmaḍ n ufeggag n tansa acku tsewleḍ { -brand-short-name } akken ur iḥerrez ara azray.
 search-one-click-header = Imseddayen n unadi ara tkecmeḍ s yiwen n usiti
+search-one-click-header2 = Nadi inegzumen
 search-one-click-desc = Fren imseddayen n unadi-nniḍen ad d-ibanen daw ufeggag n tansa akked ufeggag n unadi m'ara ad tebduḍ ad tsekcameḍ awal n tsarut.
 search-choose-engine-column =
     .label = Amsedday n unadi
@@ -619,7 +624,7 @@ sync-signedout-account-signin2 =
 #
 # They can be moved within the sentence as needed to adapt
 # to your language, but should not be changed or translated.
-sync-mobile-promo = Sider Firefox i <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> neɣ <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOs</a> akken ad temtawiḍ d yibenkan-ik aziraz.
+sync-mobile-promo = Sader Firefox i <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> neɣ <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOs</a> akken ad temtawiḍ d yibenkan-ik aziraz.
 
 ## Firefox Account - Signed in
 
@@ -1069,7 +1074,7 @@ security-enable-safe-browsing =
     .accesskey = S
 security-enable-safe-browsing-link = Issin ugar
 security-block-downloads =
-    .label = Sewḥel yir asider
+    .label = Sewḥel yir asader
     .accesskey = d
 security-block-uncommon-software =
     .label = Lɣu-yid ɣef iseɣẓanen ur nelhi ara akked wid ur bɣiɣ ara

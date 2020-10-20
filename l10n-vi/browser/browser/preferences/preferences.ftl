@@ -29,6 +29,8 @@ search-input-box =
            *[other] Tìm trong phần tùy chỉnh
         }
 managed-notice = Trình duyệt của bạn đang được quản lý bởi tổ chức của bạn.
+category-list =
+    .aria-label = Thể loại
 pane-general-title = Tổng quát
 category-general =
     .tooltiptext = { pane-general-title }
@@ -93,7 +95,7 @@ extension-controlled-web-notifications = Một tiện ích mở rộng, <img dat
 extension-controlled-default-search = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đã cài đặt công cụ tìm kiếm mặc định của bạn.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, yêu cầu thẻ ngăn chứa.
+extension-controlled-privacy-containers = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, yêu cầu ngăn chứa thẻ.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cài đặt này.
@@ -163,20 +165,20 @@ show-tabs-in-taskbar =
     .label = Hiển thị hình ảnh xem trước thẻ trong thanh tác vụ Windows
     .accesskey = k
 browser-containers-enabled =
-    .label = Kích hoạt thẻ ngăn chứa
+    .label = Kích hoạt ngăn chứa thẻ
     .accesskey = n
 browser-containers-learn-more = Tìm hiểu thêm
 browser-containers-settings =
     .label = Cài đặt…
     .accesskey = i
-containers-disable-alert-title = Đóng tất cả các thẻ ngăn chứa?
-containers-disable-alert-desc = Nếu bạn vô hiệu hóa thẻ ngăn chứa bây giờ, { $tabCount } thẻ ngăn chứa sẽ bị đóng. Bạn có chắc muốn vô hiệu hóa thẻ ngăn chứa?
-containers-disable-alert-ok-button = Đóng { $tabCount } thẻ ngăn chứa
+containers-disable-alert-title = Đóng tất cả các ngăn chứa thẻ?
+containers-disable-alert-desc = Nếu bạn vô hiệu hóa ngăn chứa thẻ bây giờ, { $tabCount } thẻ trong ngăn chứa sẽ bị đóng. Bạn có chắc muốn vô hiệu hóa ngăn chứa thẻ?
+containers-disable-alert-ok-button = Đóng { $tabCount } thẻ trong ngăn chứa
 containers-disable-alert-cancel-button = Tiếp tục bật
 containers-remove-alert-title = Xóa ngăn chứa này?
 # Variables:
 #   $count (Number) - Number of tabs that will be closed.
-containers-remove-alert-msg = Nếu bạn xóa ngăn chứa này bây giờ, { $count } thẻ ngăn chứa sẽ bị đóng. Bạn có chắc muốn xóa ngăn chứa này?
+containers-remove-alert-msg = Nếu bạn xóa ngăn chứa này bây giờ, { $count } thẻ trong ngăn chứa sẽ bị đóng. Bạn có chắc muốn xóa ngăn chứa này?
 containers-remove-ok-button = Xóa ngăn chứa này
 containers-remove-cancel-button = Không xóa ngăn chứa này
 
@@ -477,6 +479,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Các trang Web hàng đầu
 home-prefs-topsites-description = Những trang bạn truy cập nhiều nhất
+home-prefs-topsites-by-option-sponsored =
+    .label = Các trang hàng đầu được tài trợ
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -544,6 +548,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Thay đổi tùy chọn cho các đề xuất trên thanh địa chỉ khác
 search-suggestions-cant-show = Gợi ý tìm kiếm sẽ không được hiện ở thanh địa chỉ vì bạn đã thiết lập { -brand-short-name } không bao giờ ghi nhớ lịch sử.
 search-one-click-header = Công cụ tìm kiếm với một lần nhấn
+search-one-click-header2 = Lối tắt tìm kiếm
 search-one-click-desc = Chọn các công cụ tìm kiếm thay thế xuất hiện bên dưới thanh địa chỉ và thanh tìm kiếm khi bạn bắt đầu nhập một từ khoá.
 search-choose-engine-column =
     .label = Công cụ tìm kiếm
@@ -575,7 +580,7 @@ containers-back-button =
             [windows] Quay lại Tùy chọn
            *[other] Quay lại Tùy chỉnh
         }
-containers-header = Thẻ ngăn chứa
+containers-header = Ngăn chứa thẻ
 containers-add-button =
     .label = Thêm ngăn chứa mới
     .accesskey = T

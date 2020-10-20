@@ -29,6 +29,8 @@ search-input-box =
            *[other] Sök i inställningar
         }
 managed-notice = Din webbläsare hanteras av din organisation.
+category-list =
+    .aria-label = Kategorier
 pane-general-title = Allmänt
 category-general =
     .tooltiptext = { pane-general-title }
@@ -489,6 +491,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Mest besökta
 home-prefs-topsites-description = Sidorna du besöker mest
+home-prefs-topsites-by-option-sponsored =
+    .label = Sponsrade toppwebbplatser
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -560,6 +564,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Ändra inställningar för andra förslag i adressfältet
 search-suggestions-cant-show = Sökförslag kommer inte att visas i adressfältet eftersom du har konfigurerat { -brand-short-name } att aldrig spara historik.
 search-one-click-header = Sökfältets sökmotorer
+search-one-click-header2 = Sökgenvägar
 search-one-click-desc = Välj alternativa sökmotorer som visas under adressfältet och sökfältet när du börjar skriva in ett nyckelord.
 search-choose-engine-column =
     .label = Sökmotor

@@ -90,7 +90,7 @@ urlbar-web-rtc-share-devices-notification-anchor =
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Deschide panoul de redare automată
 urlbar-persistent-storage-notification-anchor =
-    .tooltiptext = Stochează date în stocarea persistentă
+    .tooltiptext = Stochează date în spațiul de stocare persistent
 urlbar-addons-notification-anchor =
     .tooltiptext = Deschide panoul cu mesaje privind instalarea de suplimente
 urlbar-tip-help-icon =
@@ -131,7 +131,7 @@ urlbar-microphone-blocked =
 urlbar-screen-blocked =
     .tooltiptext = Ai blocat partajarea ecranului pe acest site web.
 urlbar-persistent-storage-blocked =
-    .tooltiptext = Ai blocat stocarea persistentă de date pentru acest site web.
+    .tooltiptext = Ai blocat stocarea persistentă a datelor pentru acest site web.
 urlbar-popup-blocked =
     .tooltiptext = Ai blocat ferestrele pop-up pe acest site.
 urlbar-autoplay-media-blocked =
@@ -161,6 +161,55 @@ page-action-remove-from-urlbar =
     .label = Elimină din bara de adresă
 page-action-remove-extension =
     .label = Elimină extensia
+
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Trimite fila către un dispozitiv
+            [few] Trimite { $tabCount } file către un dispozitiv
+           *[other] Trimite { $tabCount } de file către un dispozitiv
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Trimite fila către un dispozitiv
+            [few] Trimite { $tabCount } file către un dispozitiv
+           *[other] Trimite { $tabCount } de file către un dispozitiv
+        }
+page-action-pocket-panel =
+    .label = Salvează pagina în { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Copiază linkul
+page-action-copy-url-urlbar =
+    .tooltiptext = Copiază linkul
+page-action-email-link-panel =
+    .label = Trimite linkul prin e-mail…
+page-action-email-link-urlbar =
+    .tooltiptext = Trimite linkul prin e-mail…
+page-action-share-url-panel =
+    .label = Partajează
+page-action-share-url-urlbar =
+    .tooltiptext = Partajează
+page-action-share-more-panel =
+    .label = Mai multe…
+page-action-send-tab-not-ready =
+    .label = Se sincronizează dispozitivele…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Fixează fila
+page-action-pin-tab-urlbar =
+    .tooltiptext = Fixează fila
+page-action-unpin-tab-panel =
+    .label = Anulează fixarea filei
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Anulează fixarea filei
 
 ## Auto-hide Context Menu
 
@@ -369,3 +418,43 @@ urlbar-page-action-button =
     .tooltiptext = Acțiuni pe pagină
 urlbar-pocket-button =
     .tooltiptext = Salvează în { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Caută pe { $engine } într-o fereastră privată
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Caută într-o fereastră privată
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Caută pe { $engine }
+urlbar-result-action-switch-tab = Comută la fila
+urlbar-result-action-visit = Vizitează
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> este acum în modul de ecran complet
+fullscreen-warning-no-domain = Documentul este acum în modul de ecran complet
+fullscreen-exit-button = Ieși din modul de ecran complet (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Ieși din modul de ecran complet (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> controlează acum cursorul. Apasă Esc pentru a prelua controlul.
+pointerlock-warning-no-domain = Documentul controlează acum cursorul. Apasă Esc pentru a prelua controlul.

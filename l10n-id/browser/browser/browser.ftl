@@ -162,6 +162,45 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Hapus Ekstensi
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label = Kirim Tab ke { $tabCount } Peranti
+page-action-send-tabs-urlbar =
+    .tooltiptext = Kirim Tab ke { $tabCount } Peranti
+page-action-pocket-panel =
+    .label = Simpan Laman ke { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Salin Tautan
+page-action-copy-url-urlbar =
+    .tooltiptext = Salin Tautan
+page-action-email-link-panel =
+    .label = Surelkan Tautan…
+page-action-email-link-urlbar =
+    .tooltiptext = Surelkan Tautan…
+page-action-share-url-panel =
+    .label = Bagikan
+page-action-share-url-urlbar =
+    .tooltiptext = Bagikan
+page-action-share-more-panel =
+    .label = Lainnya…
+page-action-send-tab-not-ready =
+    .label = Menyinkronkan Peranti…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Sematkan Tab
+page-action-pin-tab-urlbar =
+    .tooltiptext = Sematkan Tab
+page-action-unpin-tab-panel =
+    .label = Copot dari Tab Permanen
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Copot dari Tab Permanen
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -369,3 +408,43 @@ urlbar-page-action-button =
     .tooltiptext = Tindakan laman
 urlbar-pocket-button =
     .tooltiptext = Simpan ke { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Cari lewat { $engine } di Jendela Pribadi
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Cari di Jendela Pribadi
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Cari lewat { $engine }
+urlbar-result-action-switch-tab = Pindah ke Tab
+urlbar-result-action-visit = Kunjungi
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> sekarang dalam layar penuh
+fullscreen-warning-no-domain = Sekarang dokumen ini dalam layar penuh
+fullscreen-exit-button = Keluar dari Layar Penuh (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Keluar dari Layar Penuh (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> memiliki kendali atas penunjuk Anda. Tekan Esc untuk mengembalikan kendali.
+pointerlock-warning-no-domain = Dokumen ini memiliki kendali atas pointer Anda. Tekan Esc untuk mengambil kembali kendali.

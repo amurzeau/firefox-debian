@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Nabigatze pribatua)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Nabigatze pribatua)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Nabigatze pribatua)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Nabigatze pribatua)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -114,6 +112,7 @@ urlbar-search-tips-redirect-2 = Hasi zure bilaketa helbide-barran { $engineName 
 
 ## Local search mode indicator labels in the urlbar
 
+
 ##
 
 urlbar-geolocation-blocked =
@@ -140,12 +139,10 @@ urlbar-midi-blocked =
     .tooltiptext = MIDI sarbidea blokeatuta daukazu webgune honetarako.
 urlbar-install-blocked =
     .tooltiptext = Gehigarrien instalazioa blokeatuta daukazu webgune honetarako.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Editatu laster-marka ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -162,6 +159,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Kendu hedapena
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Bidali fitxa gailura
+           *[other] Bidali { $tabCount } fitxa gailura
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Bidali fitxa gailura
+           *[other] Bidali { $tabCount } fitxa gailura
+        }
+page-action-pocket-panel =
+    .label = Gorde orria { -pocket-brand-name }-en
+page-action-copy-url-panel =
+    .label = Kopiatu lotura
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopiatu lotura
+page-action-email-link-panel =
+    .label = Bidali lotura postaz…
+page-action-email-link-urlbar =
+    .tooltiptext = Bidali lotura postaz…
+page-action-share-url-panel =
+    .label = Partekatu
+page-action-share-url-urlbar =
+    .tooltiptext = Partekatu
+page-action-share-more-panel =
+    .label = Gehiago…
+page-action-send-tab-not-ready =
+    .label = Gailuak sinkronizatzen…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Ainguratu fitxa
+page-action-pin-tab-urlbar =
+    .tooltiptext = Ainguratu fitxa
+page-action-unpin-tab-panel =
+    .label = Desainguratu fitxa
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Desainguratu fitxa
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -176,14 +220,12 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Oraingoan, bilatu honekin:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Aldatu bilaketa-ezarpenak
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Aldatu bilaketa-ezarpenak
-
 search-one-offs-context-open-new-tab =
     .label = Bilatu fitxa berrian
     .accesskey = f
@@ -201,15 +243,14 @@ search-one-offs-context-set-as-default-private =
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
 
+
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Erakutsi editorea gordetzean
     .accesskey = E
-
 bookmark-panel-done-button =
     .label = Eginda
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -283,15 +324,12 @@ popup-select-microphone =
     .value = Partekatzeko mikrofonoa:
     .accesskey = m
 popup-all-windows-shared = Zure pantailan ikusgai dauden leiho guztiak partekatuko dira.
-
 popup-screen-sharing-not-now =
     .label = Une honetan ez
     .accesskey = z
-
 popup-screen-sharing-never =
     .label = Inoiz ez baimendu
     .accesskey = n
-
 popup-silence-notifications-checkbox = Partekatu bitartean, desgaitu { -brand-short-name }(r)en jakinarazpenak
 popup-silence-notifications-checkbox-warning = { -brand-short-name }(e)k ez du jakinarazpenik bistaratuko partekatzen ari zaren bitartean.
 
@@ -308,29 +346,68 @@ sharing-warning-disable-for-session =
 
 enable-devtools-popup-description = F12 lasterbidea erabiltzeko, ireki lehenik garatzaile-tresnak 'Web garapena' menutik.
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Idatzi bilaketa edo helbidea
-
 urlbar-placeholder =
     .placeholder = Idatzi bilaketa edo helbidea
-
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Bilatu { $name } erabiliz edo idatzi helbidea
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Nabigatzailea urruneko agintepean dago
 urlbar-permissions-granted =
     .tooltiptext = Baimen bereziak eman dizkiozu webgune honi.
 urlbar-switch-to-tab =
     .value = Aldatu fitxara:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Hedapena:
-
 urlbar-go-button =
     .tooltiptext = Joan kokapen-barrako helbidera
 urlbar-page-action-button =
     .tooltiptext = Orri-ekintzak
 urlbar-pocket-button =
     .tooltiptext = Gorde { -pocket-brand-name }-en
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Bilatu leiho pribatuan { $engine } erabiliz
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Bilatu leiho pribatuan
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Bilatu { $engine } erabiliz
+urlbar-result-action-switch-tab = Aldatu fitxara
+urlbar-result-action-visit = Bisitatu
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> pantaila osoan dago orain
+fullscreen-warning-no-domain = Dokumentua pantaila osoan dago orain
+fullscreen-exit-button = Irten pantaila osotik (Esk)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Irten pantaila osotik (esk)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> (e)k zure erakuslearen kontrola dauka. Kontrola berreskuratzeko, sakatu eskape tekla.
+pointerlock-warning-no-domain = Dokumentu honek zure erakuslearen kontrola dauka. Kontrola berreskuratzeko, sakatu eskape tekla.

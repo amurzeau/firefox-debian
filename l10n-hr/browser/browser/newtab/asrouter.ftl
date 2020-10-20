@@ -229,7 +229,7 @@ cfr-whatsnew-lockwise-icon-alt = { -lockwise-brand-short-name } ikona
 ## Vulnerable Passwords message
 
 cfr-whatsnew-passwords-header = Dobijajte upozorenja o ranjivim zaporkama
-cfr-whatsnew-passwords-body = Hakeri znaju da ljudi ponovno koriste iste lozinke. Ukoliko ste koristili istu lozinku na različitim stranicama, i jednoj od tih stranica ukradu podatke, vidjet ćete obavijest u { -lockwise-brand-short-name } da biste trebali izmijeniti svoju lozinku na stranicama koje ju koriste.
+cfr-whatsnew-passwords-body = Hakeri znaju da ljudi ponovo koriste iste lozinke. Ukoliko koristiš istu lozinku na različitim stranicama i ako jednoj od tih stranica ukradu podatke, { -lockwise-brand-short-name } će te obavijestiti da trebaš promijeniti svoju lozinku na stranicama koje ju koriste.
 cfr-whatsnew-passwords-icon-alt = Ikona ranjive lozinke
 
 ## Picture-in-Picture fullscreen message
@@ -259,8 +259,18 @@ cfr-doorhanger-doh-primary-button = U redu, razumijem
 cfr-doorhanger-doh-secondary-button = Deaktiviraj
     .accesskey = D
 
+## Fission Experiment Message
+
+cfr-doorhanger-fission-header = Izolacija stranice
+
 ## What's new: Cookies message
 
 cfr-whatsnew-clear-cookies-header = Automatska zaštita od podlih taktika praćenja
 cfr-whatsnew-clear-cookies-body = Neki pratitelji vas preusmjere na druge web stranice koje potajno postave kolačiće. { -brand-short-name } sada automatski briše te kolačiće kako vas ne bi pratili.
 cfr-whatsnew-clear-cookies-image-alt = Ilustracija blokiranog kolačića
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Više medijskih kontrola
+cfr-whatsnew-media-keys-body = Reproduciraj i pauziraj zvuk ili video izravno s tipkovnicom ili slušalicama, što olakšava upravljanje medijima iz druge kartice, programa ili čak kada je računalo zaključano. Možeš se i kretati između pjesama pomoću tipki naprijed i natrag.
+cfr-whatsnew-media-keys-button = Saznaj kako

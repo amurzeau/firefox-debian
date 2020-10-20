@@ -88,6 +88,8 @@ monitor-title = Pazi na curenje podataka
 monitor-link = Kako funkcionira
 monitor-header-content-no-account = Koristi { -monitor-brand-name } i provjeri, je li se tvoji podaci nalaze u poznatom curenja podataka te dobivaj obavijesti o novim curenjima podataka.
 monitor-header-content-signed-in = { -monitor-brand-name } te upozorava ukoliko su se tvoji podaci pojavili u curenju podataka.
+monitor-sign-up-link = Prijavi se za upozorenja o curenju podataka
+    .title = Prijavi se za upozorenja o curenju podataka na { -monitor-brand-name }
 auto-scan = Danas automatski pretraženo
 monitor-emails-tooltip =
     .title = Pogledaj praćene e-adrese na { -monitor-brand-short-name }
@@ -114,21 +116,60 @@ info-known-breaches-found =
        *[other] poznatih curenja podataka je izložilo tvoje informacije
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] Poznato curenje podataka označeno kao riješeno
+        [few] Poznata curenja podataka označena kao riješena
+       *[other] Poznatih curenja podataka označena kao riješena
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
     { $count ->
-        [one] lozinka je izložena u curenja podataka
-        [few] lozinke su izložene u curenju podataka
-       *[other] lozinki je izloženo u curenju podataka
+        [one] lozinka je izložena u svim curenjima podataka
+        [few] lozinke su izložene u svim curenjima podataka
+       *[other] lozinki je izloženo u svim curenjima podataka
+    }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] Lozinka izložena u neriješenim curenjima podataka
+        [few] Lozinke izložene u neriješenim curenjima podataka
+       *[other] Lozinki izloženo u neriješenim curenjima podataka
     }
 monitor-no-breaches-title = Dobre vijesti!
+monitor-no-breaches-description = Ne pojavljuješ se u poznatim curenjima podataka. Ako se to promijeni, obavijestit ćemo te.
+monitor-view-report-link = Pogledaj izvještaj
+    .title = Riješi curenja podataka na { -monitor-brand-short-name }
+monitor-breaches-unresolved-title = Riješi curenja tvojih podataka
+monitor-breaches-unresolved-description = Nakon pregleda detalja curenja podataka i poduzimanja koraka za zaštitu tvojih podataka, curenja podataka možeš označiti kao riješena.
+monitor-manage-breaches-link = Upravljaj curenjima podataka
+    .title = Upravljaj curenjima podataka na { -monitor-brand-short-name }
+monitor-breaches-resolved-title = Super! Sva poznata curenja podataka su riješena.
+monitor-breaches-resolved-description = Ako se tvoja e-adresa pojavi u nekom novom curenju podataka, obavijestit ćemo te.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+        [one] { $numBreachesResolved } od { $numBreaches } curenja podataka označeno kao riješeno
+        [few] { $numBreachesResolved } od { $numBreaches } curenja podataka označena kao riješena
+       *[other] { $numBreachesResolved } od { $numBreaches } curenja podataka označena kao riješena
+    }
 # Variables:
 # $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
 monitor-partial-breaches-percentage = { $percentageResolved } % gotovo
 monitor-partial-breaches-motivation-title-start = Odličan početak!
 monitor-partial-breaches-motivation-title-middle = Samo tako nastavi!
 monitor-partial-breaches-motivation-title-end = Skoro gotovo! Samo tako nastavi.
+monitor-partial-breaches-motivation-description = Riješi ostala curenja podataka na { -monitor-brand-short-name }.
+monitor-resolve-breaches-link = Riješi curenja podataka
+    .title = Riješi curenja podataka na { -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

@@ -29,6 +29,8 @@ search-input-box =
            *[other] Søk i innstillingar
         }
 managed-notice = Nettlessaren din vert administrert av organisasjonen din.
+category-list =
+    .aria-label = Kategoriar
 pane-general-title = Generelt
 category-general =
     .tooltiptext = { pane-general-title }
@@ -489,6 +491,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Mest besøkte
 home-prefs-topsites-description = Sidene du besøkjer mest
+home-prefs-topsites-by-option-sponsored =
+    .label = Sponsa toppsider
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -560,6 +564,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Endre innstillingar for andre adresselinjeforslag
 search-suggestions-cant-show = Søkjeforslag vil ikkje visast i adresselinjeresultata fordi du har konfigurert { -brand-short-name } til å aldri hugse historikk.
 search-one-click-header = Eittklikks-søkjemotorar
+search-one-click-header2 = Søkesnarvegar
 search-one-click-desc = Vel alternative søkjemotorar som vert viste under adresselinja og søkelinja når du byrjar å skrive inn eit søkjeord.
 search-choose-engine-column =
     .label = Søkjemotor

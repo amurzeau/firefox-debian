@@ -162,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Suprimir l’extension
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Enviar l’onglet a un periferic
+           *[other] Enviar { $tabCount } onglets al periferic
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Enviar l’onglet a un periferic
+           *[other] Enviar { $tabCount } onglets al periferic
+        }
+page-action-pocket-panel =
+    .label = Salvar la pagina dins { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Copiar lo ligam
+page-action-copy-url-urlbar =
+    .tooltiptext = Copiar lo ligam
+page-action-email-link-panel =
+    .label = Enviar per corrièl un ligam cap a la pagina…
+page-action-email-link-urlbar =
+    .tooltiptext = Enviar per corrièl un ligam cap a la pagina…
+page-action-share-url-panel =
+    .label = Partejar
+page-action-share-url-urlbar =
+    .tooltiptext = Partejar
+page-action-share-more-panel =
+    .label = Mai…
+page-action-send-tab-not-ready =
+    .label = Sincronisacion dels periferics…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Penjar l’onglets
+page-action-pin-tab-urlbar =
+    .tooltiptext = Penjar l’onglets
+page-action-unpin-tab-panel =
+    .label = Despenjar l’onglet
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Despenjar l’onglet
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Aqueste còp, recercar amb :
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +285,17 @@ identity-passive-loaded = D'elements de la pagina son pas segurs (coma los imatg
 identity-active-loaded = Avètz desactivat la proteccion sus aquela pagina.
 identity-weak-encryption = Aquela pagina utiliza un chiframent flac.
 identity-insecure-login-forms = Los identificants marcats sus aquela pagina pòdon far perilh.
+identity-https-only-connection-upgraded = (passat al HTTPS)
+identity-https-only-label = Mòde HTTPS sonque
+identity-https-only-dropdown-on =
+    .label = Activat
+identity-https-only-dropdown-off =
+    .label = Desactivat
+identity-https-only-dropdown-off-temporarily =
+    .label = Temporàriament desactivat
+identity-https-only-info-turn-on = Activatatz-lo se volètz que { -brand-short-name } passe a una connexion segura quand es possible.
+identity-https-only-info-turn-off = Se lo site sembla copat, ensajatz de desactivar lo mòde HTTPS sonque per tornar cargar en HTTP pas segur.
+identity-https-only-info-no-upgrade = Passatge de la connexion en HTTPS impossible.
 identity-permissions =
     .value = Permissions
 identity-permissions-reload-hint = Benlèu deuriatz actualizar la pagina per que s'apliquen los cambiaments.
@@ -369,3 +427,54 @@ urlbar-page-action-button =
     .tooltiptext = Accions de la pagina
 urlbar-pocket-button =
     .tooltiptext = Enregistrar dins { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Cercar amb { $engine } dins una fenèstra de navegacion privada
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Recercar dins una fenèstra privada
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Recercar amb { $engine }
+urlbar-result-action-switch-tab = Anar a l'onglet
+urlbar-result-action-visit = Visitar
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Cercar dins los marcapaginas
+urlbar-result-action-search-history = Cercar dins l’istoric
+urlbar-result-action-search-tabs = Cercar pels onglets
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Cercar amb { $engine } dirèctament dins la barra d’adreça
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Cercar dins { $engine } dirèctament dins la barra d’adreça
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> es en ecran complet
+fullscreen-warning-no-domain = Ara, aqueste document es en ecran complet
+fullscreen-exit-button = Sortir del mòde ecran complet (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Sortir del mòde ecran complet (Esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> a lo contra-ròtle sus la vòstra mirga. Quichatz sus Esc per tornar recuperar lo contra-ròtle.
+pointerlock-warning-no-domain = Aqueste document a lo contraròtle sul vòstre gredon. Quichatz Esc per tornar prendre lo contra-ròtle.

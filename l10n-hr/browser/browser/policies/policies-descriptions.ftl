@@ -36,7 +36,7 @@ policy-DisableFirefoxStudies = Spriječite { -brand-short-name } da pokreće stu
 policy-DisableForgetButton = Spriječite pristup tipki za brisanje povijesti pretraživanja.
 policy-DisableFormHistory = Nemoj pamtiti povijest pretraživanja i obrazaca.
 policy-DisableMasterPasswordCreation = Ukoliko je točno, korisnik neće moći stvoriti glavnu lozinku.
-policy-DisablePrimaryPasswordCreation = Ukoliko je točno, neće biti moguće postaviti glavnu lozinku.
+policy-DisablePrimaryPasswordCreation = Ukoliko je točno, neće biti moguće postaviti primarnu lozinku.
 policy-DisablePasswordReveal = Nemoj dozvoliti prikaz spremljenih lozinki.
 policy-DisablePocket = Onemogući mogućnost spremanja web stranica u Pocket.
 policy-DisablePrivateBrowsing = Onemogući privatno pregledavanje.
@@ -80,6 +80,7 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Vrati se na staro pona
 
 policy-LocalFileLinks = Omogućite određenim web stranicama poveznice na lokalne datoteke.
 policy-MasterPassword = Zahtijevaj ili spriječi upotrebu glavne lozinke.
+policy-ManagedBookmarks = Konfigurira popis zabilješki kojima upravlja administrator, a koje korisnik ne može mijenjati.
 policy-PrimaryPassword = Zahtijevaj ili spriječi upotrebu glavne lozinke.
 policy-NetworkPrediction = Aktiviraj ili deaktiviraj predviđanje mreže (DNS prefetching).
 policy-NewTabPage = Aktiviraj ili deaktiviraj stranicu Nova kartica.

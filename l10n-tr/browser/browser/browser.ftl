@@ -162,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Eklentiyi kaldır
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Sekmeyi cihaza gönder
+           *[other] { $tabCount } sekmeyi cihaza gönder
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Sekmeyi cihaza gönder
+           *[other] { $tabCount } sekmeyi cihaza gönder
+        }
+page-action-pocket-panel =
+    .label = Sayfayı { -pocket-brand-name }’a kaydet
+page-action-copy-url-panel =
+    .label = Bağlantıyı kopyala
+page-action-copy-url-urlbar =
+    .tooltiptext = Bağlantıyı kopyala
+page-action-email-link-panel =
+    .label = Bağlantıyı e-postayla gönder…
+page-action-email-link-urlbar =
+    .tooltiptext = Bağlantıyı e-postayla gönder…
+page-action-share-url-panel =
+    .label = Paylaş
+page-action-share-url-urlbar =
+    .tooltiptext = Paylaş
+page-action-share-more-panel =
+    .label = Daha fazla…
+page-action-send-tab-not-ready =
+    .label = Cihazlar eşitleniyor…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Sekmeyi sabitle
+page-action-pin-tab-urlbar =
+    .tooltiptext = Sekmeyi sabitle
+page-action-unpin-tab-panel =
+    .label = Normal sekmeye dönüştür
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Normal sekmeye dönüştür
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Bir de bununla aramayı deneyin:
 # This string won't wrap, so if the translated string is longer,
@@ -369,3 +416,54 @@ urlbar-page-action-button =
     .tooltiptext = Sayfa eylemleri
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name }’a kaydet
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Gizli pencerede { $engine } ile ara
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Gizli pencerede ara
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } ile ara
+urlbar-result-action-switch-tab = Sekmeye geç
+urlbar-result-action-visit = Ziyaret et
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Yer imlerinde ara
+urlbar-result-action-search-history = Geçmişte ara
+urlbar-result-action-search-tabs = Sekmelerde ara
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = { $engine } ile doğrudan adres çubuğundan arama yapın
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = { $engine } ile doğrudan adres çubuğundan arama yapın
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> artık tam ekran
+fullscreen-warning-no-domain = Bu belge artık tam ekran
+fullscreen-exit-button = Tam ekrandan çık (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Tam ekrandan çık (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> işaretçinizi kontrol ediyor. Kontrolü geri almak için Esc tuşuna basın.
+pointerlock-warning-no-domain = Bu belge işaretçinizi kontrol ediyor. Kontrolü geri almak için Esc tuşuna basın.

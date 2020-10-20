@@ -33,6 +33,9 @@ search-input-box =
 
 managed-notice = Il browser è gestito dalla propria azienda.
 
+category-list =
+    .aria-label = Categorie
+
 pane-general-title = Generale
 category-general =
     .tooltiptext = { pane-general-title }
@@ -616,6 +619,9 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Siti principali
 home-prefs-topsites-description = I siti più visitati
+home-prefs-topsites-by-option-sponsored =
+    .label = Siti principali sponsorizzati
+
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -697,6 +703,7 @@ suggestions-addressbar-settings-generic = Modifica le impostazioni per altri tip
 search-suggestions-cant-show = I suggerimenti di ricerca non verranno visualizzati tra i risultati della barra degli indirizzi in quanto { -brand-short-name } è configurato per non salvare la cronologia.
 
 search-one-click-header = Motori di ricerca in un clic
+search-one-click-header2 = Scorciatoie di ricerca
 
 search-one-click-desc = Scegli i motori di ricerca alternativi che appaiono nella barra degli indirizzi e nella barra di ricerca quando si inizia a digitare una parola chiave.
 

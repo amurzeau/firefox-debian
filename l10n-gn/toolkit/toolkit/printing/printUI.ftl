@@ -38,7 +38,6 @@ printui-less-settings = Emboheko sa’ive
 printui-paper-size-label = Kuatia tuichakue
 # Section title (noun) for the print scaling options
 printui-scale = Jupiha
-printui-scale-fit-to-page = Embojuehe kuatiaroguére
 printui-scale-fit-to-page-width = Emoĩporã kuatiarogue pekue
 # Label for input control where user can set the scale percentage
 printui-scale-pcent = Jupiha
@@ -53,6 +52,11 @@ printui-margins = Mbokoraha
 printui-margins-default = Ijypykue
 printui-margins-min = Michĩvéva
 printui-margins-none = Avave
+printui-margins-custom = Ñemomba’epyre
+printui-margins-custom-top = Yvatevéva
+printui-margins-custom-bottom = Michĩvéva
+printui-margins-custom-left = Asugua
+printui-margins-custom-right = Akatuagua
 printui-system-dialog-link = Emonguatia eipurúvo apopyvusu rovetã…
 printui-primary-button = Ñemonguatia
 printui-primary-button-save = Ñongatu
@@ -82,6 +86,7 @@ printui-paper-tabloid = Kuatiahaipyre
 ## Error messages shown when a user has an invalid input
 
 printui-error-invalid-scale = Pe jupiha ha’eva’erã 10 ha 200 pa’ũme.
+printui-error-invalid-margin = Emoinge peteĩ oikóva kuatia tuichakue poravopyrépe g̃uarã.
 # Variables
 # $numPages (integer) - Number of pages
 printui-error-invalid-range = Pe rango ha’eva’erã papapy 1 ha { $numPages } pa’ũme.

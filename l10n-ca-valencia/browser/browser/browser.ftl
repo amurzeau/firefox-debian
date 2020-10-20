@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Navegació privada)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Navegació privada)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Navegació privada)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Navegació privada)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -114,6 +112,7 @@ urlbar-search-tips-redirect-2 = Comenceu la vostra cerca en la barra d'adreces p
 
 ## Local search mode indicator labels in the urlbar
 
+
 ##
 
 urlbar-geolocation-blocked =
@@ -140,12 +139,10 @@ urlbar-midi-blocked =
     .tooltiptext = Heu blocat l'accés MIDI per a este lloc web.
 urlbar-install-blocked =
     .tooltiptext = Heu blocat la instal·lació de complements per a este lloc web.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Edita l'adreça d'interés ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -162,6 +159,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Elimina l'extensió
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Envia la pestanya a un dispositiu
+           *[other] Envia { $tabCount } pestanyes a un dispositiu
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Envia la pestanya a un dispositiu
+           *[other] Envia { $tabCount } pestanyes a un dispositiu
+        }
+page-action-pocket-panel =
+    .label = Guarda la pàgina al { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Copia l'enllaç
+page-action-copy-url-urlbar =
+    .tooltiptext = Copia l'enllaç
+page-action-email-link-panel =
+    .label = Envia l'enllaç per correu…
+page-action-email-link-urlbar =
+    .tooltiptext = Envia l'enllaç per correu…
+page-action-share-url-panel =
+    .label = Comparteix
+page-action-share-url-urlbar =
+    .tooltiptext = Comparteix
+page-action-share-more-panel =
+    .label = Més…
+page-action-send-tab-not-ready =
+    .label = S'estan sincronitzant els dispositius…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Fixa la pestanya
+page-action-pin-tab-urlbar =
+    .tooltiptext = Fixa la pestanya
+page-action-unpin-tab-panel =
+    .label = No fixis la pestanya
+page-action-unpin-tab-urlbar =
+    .tooltiptext = No fixis la pestanya
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -176,14 +220,12 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Esta vegada, cerca amb:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Canvia els paràmetres de cerca
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Canvia els paràmetres de cerca
-
 search-one-offs-context-open-new-tab =
     .label = Cerca en una pestanya nova
     .accesskey = t
@@ -201,15 +243,14 @@ search-one-offs-context-set-as-default-private =
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
 
+
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Mostra l'editor en guardar
     .accesskey = s
-
 bookmark-panel-done-button =
     .label = Fet
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -283,15 +324,12 @@ popup-select-microphone =
     .value = Micròfon per compartir:
     .accesskey = M
 popup-all-windows-shared = Es compartiran totes les finestres visibles de la pantalla.
-
 popup-screen-sharing-not-now =
     .label = Ara no
     .accesskey = A
-
 popup-screen-sharing-never =
     .label = No permetes mai
     .accesskey = N
-
 popup-silence-notifications-checkbox = Desactiva les notificacions del { -brand-short-name } mentre s'estiga compartint
 popup-silence-notifications-checkbox-warning = El { -brand-short-name } no mostrarà notificacions mentre estigueu compartint.
 
@@ -308,29 +346,68 @@ sharing-warning-disable-for-session =
 
 enable-devtools-popup-description = Per a usar la drecera F12, primer obriu DevTools en el menú Desenvolupador web.
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Escriviu una cerca o adreça
-
 urlbar-placeholder =
     .placeholder = Escriviu una cerca o adreça
-
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Cerqueu amb { $name } o escriviu una adreça
 urlbar-remote-control-notification-anchor =
     .tooltiptext = El navegador està sota control remot
 urlbar-permissions-granted =
     .tooltiptext = Heu donat permisos addicionals a este lloc web.
 urlbar-switch-to-tab =
     .value = Canvia a la pestanya:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Extensió:
-
 urlbar-go-button =
     .tooltiptext = Vés a l'adreça de la barra d'ubicació
 urlbar-page-action-button =
     .tooltiptext = Accions de la pàgina
 urlbar-pocket-button =
     .tooltiptext = Guarda al { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Cerca amb { $engine } en una finestra privada
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Cerca en una finestra privada
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Cerca amb { $engine }
+urlbar-result-action-switch-tab = Canvia a la pestanya
+urlbar-result-action-visit = Visita
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> està a pantalla completa
+fullscreen-warning-no-domain = Este document està a pantalla completa
+fullscreen-exit-button = Ix de la pantalla completa (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Ix de la pantalla completa (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> té el control del punter. Premeu Esc per recuperar el control.
+pointerlock-warning-no-domain = Este document té el control del punter. Premeu Esc per recuperar el control.

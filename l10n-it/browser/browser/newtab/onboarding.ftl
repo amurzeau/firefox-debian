@@ -40,6 +40,16 @@ onboarding-cards-dismiss =
     .title = Rimuovi
     .aria-label = Rimuovi
 
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = Ottimo, ora hai installato { -brand-short-name }
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = Perché adesso non provi <img data-l10n-name="icon"/> <b>{ $addon-name }</b>?
+return-to-amo-add-extension-label = Aggiungi l’estensione
+
 ## Multistage 3-screen onboarding flow strings (about:welcome pages)
 
 # The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
@@ -76,7 +86,6 @@ onboarding-multistage-theme-secondary-button-label = Non adesso
 # Automatic theme uses operating system color settings
 onboarding-multistage-theme-label-automatic = Automatico
 # System refers to the operating system
-onboarding-multistage-theme-description-automatic = Utilizza il tema del sistema
 onboarding-multistage-theme-label-light = Chiaro
 onboarding-multistage-theme-label-dark = Scuro
 onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow

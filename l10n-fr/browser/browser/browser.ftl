@@ -162,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Supprimer l’extension
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Envoyer l’onglet à un appareil
+           *[other] Envoyer { $tabCount } onglets à un appareil
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Envoyer l’onglet à un appareil
+           *[other] Envoyer { $tabCount } onglets à un appareil
+        }
+page-action-pocket-panel =
+    .label = Enregistrer la page dans { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Copier le lien
+page-action-copy-url-urlbar =
+    .tooltiptext = Copier le lien
+page-action-email-link-panel =
+    .label = Envoyer par courriel un lien vers la page…
+page-action-email-link-urlbar =
+    .tooltiptext = Envoyer par courriel un lien vers la page…
+page-action-share-url-panel =
+    .label = Partager
+page-action-share-url-urlbar =
+    .tooltiptext = Partager
+page-action-share-more-panel =
+    .label = Plus…
+page-action-send-tab-not-ready =
+    .label = Synchronisation des appareils…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Épingler cet onglet
+page-action-pin-tab-urlbar =
+    .tooltiptext = Épingler cet onglet
+page-action-unpin-tab-panel =
+    .label = Désépingler cet onglet
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Désépingler cet onglet
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Pour cette fois-ci, rechercher avec :
 # This string won't wrap, so if the translated string is longer,
@@ -369,3 +416,54 @@ urlbar-page-action-button =
     .tooltiptext = Actions pour la page
 urlbar-pocket-button =
     .tooltiptext = Enregistrer dans { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Rechercher avec { $engine } dans une fenêtre de navigation privée
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Rechercher dans une fenêtre de navigation privée
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Rechercher avec { $engine }
+urlbar-result-action-switch-tab = Aller à l’onglet
+urlbar-result-action-visit = Consulter
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Rechercher dans les marque-pages
+urlbar-result-action-search-history = Rechercher dans l’historique
+urlbar-result-action-search-tabs = Rechercher dans les onglets
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Rechercher avec { $engine } directement depuis la barre d’adresse
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Recherche { $engine } directement depuis la barre d’adresse
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> est désormais en plein écran
+fullscreen-warning-no-domain = Ce document est désormais en plein écran
+fullscreen-exit-button = Quitter le mode plein écran (Échap)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Quitter le mode plein écran (« esc »)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> contrôle votre pointeur. Appuyez sur Échap pour reprendre le contrôle.
+pointerlock-warning-no-domain = Ce document contrôle votre pointeur. Appuyez sur Échap pour reprendre le contrôle.

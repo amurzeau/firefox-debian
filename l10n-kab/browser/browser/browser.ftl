@@ -162,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Kkes asiɣzef
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Azen iccer ɣer yibenk
+           *[other] Azen { $tabCount } waccaren ɣer yibenk
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Azen iccer ɣer yibenk
+           *[other] Azen { $tabCount } waccaren ɣer yibenk
+        }
+page-action-pocket-panel =
+    .label = Sekles asebter ɣer { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Nɣel aseɣwen
+page-action-copy-url-urlbar =
+    .tooltiptext = Nɣel aseɣwen
+page-action-email-link-panel =
+    .label = Azen s yimayl aseɣwen ɣeṛ usebter…
+page-action-email-link-urlbar =
+    .tooltiptext = Azen s yimayl aseɣwen ɣeṛ usebter…
+page-action-share-url-panel =
+    .label = Bḍu
+page-action-share-url-urlbar =
+    .tooltiptext = Bḍu
+page-action-share-more-panel =
+    .label = Ugar…
+page-action-send-tab-not-ready =
+    .label = Amtawi n yibenkan…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Rzi iccer-a
+page-action-pin-tab-urlbar =
+    .tooltiptext = Rzi iccer-a
+page-action-unpin-tab-panel =
+    .label = Serreḥ i yiccer-a
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Serreḥ i yiccer-a
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Tikkelt-agi, nadi s:
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +285,17 @@ identity-passive-loaded = Kra n yiḥricen deg usebter-a mačči d iɣelsanen (a
 identity-active-loaded = Tessenseḍ ammesten deg usebter-a.
 identity-weak-encryption = Asebter-a isseqdac awgelhen fessusen.
 identity-insecure-login-forms = Isem n useqdac d wawal uffir i tesqedceḍ deg usmel-a zemren ad ttwakren.
+identity-https-only-connection-upgraded = (leqqem ɣer HTTPS)
+identity-https-only-label = Askar HTTPS-Only
+identity-https-only-dropdown-on =
+    .label = Yermed
+identity-https-only-dropdown-off =
+    .label = Yensa
+identity-https-only-dropdown-off-temporarily =
+    .label = Sens i kra n wakud
+identity-https-only-info-turn-on = Rmed ma yella tebɣiḍ { -brand-short-name } i uleqqem ɣer tuqqna taɣellsant ma yili tella.
+identity-https-only-info-turn-off = Ma yella asmel yettban yerreẓ, tzemreḍ ad tsenseḍ kan askar HTTPS i wakken ad talseḍ asali s useqdec HTTP araɣelsan.
+identity-https-only-info-no-upgrade = Aleqqem n tuggna seg HTTP d awezɣi.
 identity-permissions =
     .value = Tisirag
 identity-permissions-reload-hint = Ahat tesriḍ ad d-tessaliḍ tikelt-nniḍen asebter akken ad yemmed wayen i tbeddleḍ.
@@ -369,3 +427,54 @@ urlbar-page-action-button =
     .tooltiptext = Asebter n tigawin
 urlbar-pocket-button =
     .tooltiptext = Sekles ɣer { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Nadi s { $engine } deg usfaylu uslig
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Nadi deg usfaylu uslig
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Nadi s { $engine }:
+urlbar-result-action-switch-tab = Ddu ɣer yiccer
+urlbar-result-action-visit = Rzu
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Nadi ticraḍ n yisebtar
+urlbar-result-action-search-history = Nadi deg umazray
+urlbar-result-action-search-tabs = Nadi deg waccaren
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Nadi s { $engine } srid seg ugalis n tansa
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Nadi s { $engine } srid seg ugalis n tansa
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> atan tura deg ugdil ačaran
+fullscreen-warning-no-domain = Isemli-a, atan tura deg ugdil ačuṛan
+fullscreen-exit-button = Ffeɣ seg ugdil ačuṛan (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Ffeɣ seg ugdil ačuṛan (Esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> Ɣur-s asenqed n usewwaṛ-inek. Sit ɣef tqeffalt n usenser akken ad teṭṭfeḍ asewwaṛ.
+pointerlock-warning-no-domain = Isemli-a yeṭṭef asewwaṛ-ik. Sit ɣef Esc akken ad teṭṭfeḍ asewwaṛ.

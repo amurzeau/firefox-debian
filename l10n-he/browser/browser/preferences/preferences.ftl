@@ -29,6 +29,8 @@ search-input-box =
            *[other] חיפוש בהעדפות
         }
 managed-notice = הדפדפן שלך מנוהל על־ידי הארגון שלך.
+category-list =
+    .aria-label = קטגוריות
 pane-general-title = כללי
 category-general =
     .tooltiptext = { pane-general-title }
@@ -489,6 +491,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = אתרים מובילים
 home-prefs-topsites-description = האתרים בהם ביקרת הכי הרבה
+home-prefs-topsites-by-option-sponsored =
+    .label = אתרים מובילים ממומנים
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -559,6 +563,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = שינוי העדפות עבור הצעות אחרות של שורת הכתובת
 search-suggestions-cant-show = הצעות חיפוש לא יופיעו בתוצאות סרגל המיקום מכיוון שהגדרת ש־{ -brand-short-name } לעולם לא לזכור היסטוריה.
 search-one-click-header = מנועי חיפוש בלחיצה אחת
+search-one-click-header2 = קיצורי דרך לחיפוש
 search-one-click-desc = בחירת מנועי חיפוש חלופיים שיופיעו מתחת לשורת הכתובת ושורת החיפוש עם תחילת ההקלדה של מילות מפתח.
 search-choose-engine-column =
     .label = מנוע חיפוש

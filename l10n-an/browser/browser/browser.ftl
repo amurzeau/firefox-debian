@@ -162,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Borrar extensión
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Ninviar la pestanya a lo dispositivo
+           *[other] Ninviar { $tabCount } pestanyas a lo dispositivo
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Ninviar la pestanya a lo dispositivo
+           *[other] Ninviar { $tabCount } pestanyas a lo dispositivo
+        }
+page-action-pocket-panel =
+    .label = Alzar la pachina en { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Copiar lo vinclo
+page-action-copy-url-urlbar =
+    .tooltiptext = Copiar lo vinclo
+page-action-email-link-panel =
+    .label = Ninviar vinclo por correu…
+page-action-email-link-urlbar =
+    .tooltiptext = Ninviar vinclo por correu…
+page-action-share-url-panel =
+    .label = Compartir
+page-action-share-url-urlbar =
+    .tooltiptext = Compartir
+page-action-share-more-panel =
+    .label = Mas…
+page-action-send-tab-not-ready =
+    .label = Sincronizando dispositivos…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Clavar a pestanya
+page-action-pin-tab-urlbar =
+    .tooltiptext = Clavar a pestanya
+page-action-unpin-tab-panel =
+    .label = Desclavar a pestanya
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Desclavar a pestanya
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -369,3 +416,43 @@ urlbar-page-action-button =
     .tooltiptext = Accions de pachina
 urlbar-pocket-button =
     .tooltiptext = Alzar en { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Mirar con { $engine } en una finestra privada
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Mirar en una finestra privada
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Mirar con { $engine }
+urlbar-result-action-switch-tab = Cambiar t'a pestanya
+urlbar-result-action-visit = Vesitar
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ye a pantalla completa
+fullscreen-warning-no-domain = Iste documento ye a pantalla completa
+fullscreen-exit-button = Salir d'a pantalla completa (esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Salir d'a pantalla completa (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> tien lo control d'o puntero. Prete Esc pa recuperar-ne lo control
+pointerlock-warning-no-domain = Iste documento tien lo control d'o puntero. Prete Esc pa recuperar-ne lo control.

@@ -162,6 +162,55 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Pašalinti priedą
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Siųsti kortelę į įrenginį
+            [few] Siųsti { $tabCount } kortelių į įrenginį
+           *[other] Siųsti { $tabCount } korteles į įrenginį
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Siųsti kortelę į įrenginį
+            [few] Siųsti { $tabCount } kortelių į įrenginį
+           *[other] Siųsti { $tabCount } korteles į įrenginį
+        }
+page-action-pocket-panel =
+    .label = Įrašyti tinklalapį į „{ -pocket-brand-name }“
+page-action-copy-url-panel =
+    .label = Kopijuoti saitą
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopijuoti saitą
+page-action-email-link-panel =
+    .label = Išsiųsti saitą el. paštu…
+page-action-email-link-urlbar =
+    .tooltiptext = Išsiųsti saitą el. paštu…
+page-action-share-url-panel =
+    .label = Dalintis
+page-action-share-url-urlbar =
+    .tooltiptext = Dalintis
+page-action-share-more-panel =
+    .label = Daugiau…
+page-action-send-tab-not-ready =
+    .label = Sinchronizuojami įrenginiai…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Įsegti kortelę
+page-action-pin-tab-urlbar =
+    .tooltiptext = Įsegti kortelę
+page-action-unpin-tab-panel =
+    .label = Išsegti kortelę
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Išsegti kortelę
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -369,3 +418,43 @@ urlbar-page-action-button =
     .tooltiptext = Tinklalapio veiksmai
 urlbar-pocket-button =
     .tooltiptext = Įrašyti į „{ -pocket-brand-name }“
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Ieškoti privačiojo naršymo lange su „{ $engine }“
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Ieškoti privačiojo naršymo lange
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Ieškoti per „{ $engine }“
+urlbar-result-action-switch-tab = Pereiti į kortelę
+urlbar-result-action-visit = Aplankyti
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> dabar yra visame ekrane
+fullscreen-warning-no-domain = Šis dokumentas dabar yra visame ekrane
+fullscreen-exit-button = Grįžti iš viso ekrano (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Grįžti iš viso ekrano (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> valdo jūsų žymeklį. Spustelėkite Esc, norėdami atgauti valdymą.
+pointerlock-warning-no-domain = Šis dokumentas valdo jūsų žymeklį. Spustelėkite Esc, norėdami atgauti valdymą.

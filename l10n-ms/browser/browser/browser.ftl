@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Pelayaran Peribadi)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Pelayaran Peribadi)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Pelayaran Peribadi)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Pelayaran Peribadi)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -101,6 +99,7 @@ urlbar-search-tips-onboard = Taip sedikit, cari selanjutnya: Carian { $engineNam
 
 ## Local search mode indicator labels in the urlbar
 
+
 ##
 
 urlbar-geolocation-blocked =
@@ -123,12 +122,10 @@ urlbar-canvas-blocked =
     .tooltiptext = Anda telah menyekat ekstraksi data kanvas untuk laman web ini.
 urlbar-midi-blocked =
     .tooltiptext = Anda telah menyekat akses MIDI untuk laman web ini.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Edit tandabuku ini ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -142,6 +139,43 @@ page-action-manage-extension =
     .label = Urus Ekstensi…
 page-action-remove-from-urlbar =
     .label = Buang daripada Bar Alamat
+
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label = Hantar { $tabCount } Tab ke Peranti
+page-action-send-tabs-urlbar =
+    .tooltiptext = Hantar { $tabCount } Tab ke Peranti
+page-action-copy-url-panel =
+    .label = Salin Pautan
+page-action-copy-url-urlbar =
+    .tooltiptext = Salin Pautan
+page-action-email-link-panel =
+    .label = Pautan E-mel…
+page-action-email-link-urlbar =
+    .tooltiptext = Pautan E-mel…
+page-action-share-url-panel =
+    .label = Kongsi
+page-action-share-url-urlbar =
+    .tooltiptext = Kongsi
+page-action-share-more-panel =
+    .label = Selanjutnya…
+page-action-send-tab-not-ready =
+    .label = Sync Peranti…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Pin Tab
+page-action-pin-tab-urlbar =
+    .tooltiptext = Pin Tab
+page-action-unpin-tab-panel =
+    .label = Buang pin Tab
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Buang pin Tab
 
 ## Auto-hide Context Menu
 
@@ -160,7 +194,6 @@ search-one-offs-change-settings-button =
     .label = Ubah Tetapan Carian
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Ubah tetapan carian
-
 search-one-offs-context-open-new-tab =
     .label = Cari dalam Tab Baru
     .accesskey = T
@@ -175,15 +208,14 @@ search-one-offs-context-set-as-default =
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
 
+
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Papar editor apabila menyimpan
     .accesskey = P
-
 bookmark-panel-done-button =
     .label = Siap
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -255,20 +287,52 @@ popup-all-windows-shared = Semua tetingkap yang kelihatan pada skrin anda akan d
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Cari atau masukkan alamat
-
 urlbar-placeholder =
     .placeholder = Cari atau masukkan alamat
-
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Cari dengan { $name } atau masukkan alamat
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Pelayar berada dalam kawalan jauh
 urlbar-switch-to-tab =
     .value = Tukar ke tab:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Ekstensi:
-
 urlbar-go-button =
     .tooltiptext = Pergi ke alamat dalam Bar Lokasi
 urlbar-page-action-button =
     .tooltiptext = Tindakan halaman
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Cari dengan { $engine }
+urlbar-result-action-switch-tab = Tukar ke Tab
+urlbar-result-action-visit = Lawati
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> kini skrin penuh
+fullscreen-warning-no-domain = Dokumen ini skrin penuh
+fullscreen-exit-button = Keluar dari Skrin Penuh (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Keluar dari Skrin Penuh (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> mempunyai kawalan ke atas penunjuk anda. Tekan Esc untuk mengambil kembali kawalan.
+pointerlock-warning-no-domain = Dokumen ini mempunyai kawalan ke atas penunjuk anda. Tekan Esc untuk mengambil kembali kawalan.

@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (निजी ब्राउजिङ्ग)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (निजी ब्राउजिङ्ग)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (निजी ब्राउजिङ्ग)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (निजी ब्राउजिङ्ग)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -96,6 +94,7 @@ urlbar-addons-notification-anchor =
 
 ## Local search mode indicator labels in the urlbar
 
+
 ##
 
 urlbar-geolocation-blocked =
@@ -116,12 +115,10 @@ urlbar-canvas-blocked =
     .tooltiptext = तपाईँले यो वेबसाइटको लागि क्यानभस डाटाको निकास अवरुद्ध गर्नु भएको छ।
 urlbar-midi-blocked =
     .tooltiptext = तपाईँले यो वेबसाइटको लागि MIDI अवरुद्ध गर्नु भएको छ।
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = यस ({ $shortcut }) पुस्तकचिनोलाई सम्पादन गर्नुहोस्
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -135,6 +132,31 @@ page-action-manage-extension =
     .label = एक्स्टेनसन व्यवस्थित गर्नुहोस्
 page-action-remove-from-urlbar =
     .label = ठेगानापट्टिबाट हटाउनुहोस्
+
+## Page Action menu
+
+page-action-copy-url-panel =
+    .label = लिङ्कको प्रतिलिपि बनाउनुहोस्
+page-action-copy-url-urlbar =
+    .tooltiptext = लिङ्कको प्रतिलिपि बनाउनुहोस्
+page-action-email-link-panel =
+    .label = लिङ्कलाई इमेल गर्नुहोस्
+page-action-email-link-urlbar =
+    .tooltiptext = लिङ्कलाई इमेल गर्नुहोस्
+page-action-send-tab-not-ready =
+    .label = उपकरणहरू समक्रमण गरिंदै…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = ट्याबलाई पिन गर्नुहोस्
+page-action-pin-tab-urlbar =
+    .tooltiptext = ट्याबलाई पिन गर्नुहोस्
+page-action-unpin-tab-panel =
+    .label = ट्याबलाई अनपिन गर्नुहोस्
+page-action-unpin-tab-urlbar =
+    .tooltiptext = ट्याबलाई अनपिन गर्नुहोस्
 
 ## Auto-hide Context Menu
 
@@ -153,7 +175,6 @@ search-one-offs-change-settings-button =
     .label = खोज सेटिङ परिवर्तन गर्नुहोस्
 search-one-offs-change-settings-compact-button =
     .tooltiptext = खोज सेटिङ परिवर्तन गर्नुहोस्
-
 search-one-offs-context-open-new-tab =
     .label = नयाँ ट्याबमा खोज्नुहोस्
     .accesskey = T
@@ -167,6 +188,7 @@ search-one-offs-context-set-as-default =
 ##    Restriction tokens are special characters users can type in the urlbar to
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
+
 
 ## Bookmark Panel
 
@@ -236,20 +258,52 @@ popup-all-windows-shared = तपाईँको स्क्रिन मा �
 
 urlbar-default-placeholder =
     .defaultPlaceholder = खोज वा ठेगाना राखनुहोस्।
-
 urlbar-placeholder =
     .placeholder = खोज वा ठेगाना राखनुहोस्।
-
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name } सँग खोज्नुहोस् वा ठेगाना राखनुहोस्।
 urlbar-remote-control-notification-anchor =
     .tooltiptext = ब्राउजर रिमोट कंट्रोल अन्तर्गत छ
 urlbar-switch-to-tab =
     .value = यस ट्याबमा स्विच गर्नुहोस्:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = एक्सटेन्सन:
-
 urlbar-go-button =
     .tooltiptext = लोकेसन बारमा भएको स्थानमा जानुहोस्
 urlbar-page-action-button =
     .tooltiptext = पृष्ठ कार्यहरु
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } संग खोज्नुहोस्
+urlbar-result-action-switch-tab = ट्याबमा स्विच गर्नुहोस्
+urlbar-result-action-visit = भ्रमण गर्नुहोस्
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> पुरा स्क्रिन अहिले भयो
+fullscreen-warning-no-domain = तपाईँको खाता पुरा पर्दाको भएको छ
+fullscreen-exit-button = पुरा पर्दाबाट निस्कनुहोस् (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = पुरा स्क्रिनबाट निस्कनुहोस (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> तपाईँको सूचक नियन्त्रण बाहिर छ। नियन्त्रण आफ्नो नियन्त्रणमा ल्याउन Esc थिच्नुहोस्।
+pointerlock-warning-no-domain = तपाईँको पोइन्टर यो डकुमेन्टको नियन्त्रणमा छ। नियन्त्रण फिर्ता लिन Esc थिच्नुहोस्।

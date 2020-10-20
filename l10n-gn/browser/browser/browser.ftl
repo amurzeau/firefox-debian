@@ -162,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Emboguete jepysokue
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Emondo tendayke mba’e’okápe
+           *[other] Emondo umi tendayke { $tabCount } mba’e’okápe
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Emondo tendayke mba’e’okápe
+           *[other] Emondo umi tendayke { $tabCount } mba’e’okápe
+        }
+page-action-pocket-panel =
+    .label = Eñongatu kuatiarogue { -pocket-brand-name }-pe
+page-action-copy-url-panel =
+    .label = Link Mbohasarã
+page-action-copy-url-urlbar =
+    .tooltiptext = Link Mbohasarã
+page-action-email-link-panel =
+    .label = Joajuha mondo…
+page-action-email-link-urlbar =
+    .tooltiptext = Joajuha mondo…
+page-action-share-url-panel =
+    .label = Moherakuã
+page-action-share-url-urlbar =
+    .tooltiptext = Moherakuã
+page-action-share-more-panel =
+    .label = Hetave…
+page-action-send-tab-not-ready =
+    .label = Mba’e’oka ñembojuehe…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Tendayke mombytapy
+page-action-pin-tab-urlbar =
+    .tooltiptext = Tendayke mombytapy
+page-action-unpin-tab-panel =
+    .label = Tendayke mombytapy mbogue
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Tendayke mombytapy mbogue
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ko’ág̃a, eheka hendive:
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +285,12 @@ identity-passive-loaded = Ko kuatiarogue pehẽ heta hendápe nda’ijeroviapái
 identity-active-loaded = Ndereguerekói pa’ũ ko kuatiaroguépe g̃uarã.
 identity-weak-encryption = Ko kuatiarogue oipuru ñangarekoha ikangýva.
 identity-insecure-login-forms = Ojehaiva’ekue jeike hag̃ua ko kuatiaroguépe oñemondakuaa.
+identity-https-only-connection-upgraded = (HTTPS hekopyahupyre)
+identity-https-only-label = HTTPS ayvúpe año
+identity-https-only-dropdown-on =
+    .label = Myandy
+identity-https-only-dropdown-off =
+    .label = Mbogue
 identity-permissions =
     .value = Moneĩ
 identity-permissions-reload-hint = Ikatu hína kuatiarogue emyanyhẽjey umi moambuepyre oñemboheko hag̃ua.
@@ -369,3 +422,54 @@ urlbar-page-action-button =
     .tooltiptext = Kuatiarogue rembiapo
 urlbar-pocket-button =
     .tooltiptext = Eñongatu { -pocket-brand-name }-pe
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Eheka { $engine } ndive ovetã ñemíme
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Eheka ovetã ñemíme
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Eheka { $engine } ndive
+urlbar-result-action-switch-tab = Tendayképe jeguerova
+urlbar-result-action-visit = Jeho
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Eheka techaukahápe
+urlbar-result-action-search-history = Eheka tembiasakuépe
+urlbar-result-action-search-tabs = Eheka tendayke
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Eheka { $engine } ndive kundaharape renda guive
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Eheka { $engine } ndive kundaharape renda guive
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ha’e mba’erechaha henyhẽva ko’ág̃a
+fullscreen-warning-no-domain = Ko kuatia oĩ hína ko’ág̃a mba’erechaha tuichavévape
+fullscreen-exit-button = Esẽ mba’erechaha tuichavévagui (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Esẽ mba’erechaha tuichavévagui (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> eñangarekópa nde hekaha rehe. Eikutu Esc eguerujey hag̃ua hekaha.
+pointerlock-warning-no-domain = Ko kuatia oñangareko nde hekaha rehe. Eikutu Esc eguerujey hag̃ua hekaha.

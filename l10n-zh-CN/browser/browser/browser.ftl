@@ -162,6 +162,45 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = 移除扩展
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label = 发送 { $tabCount } 个标签页到设备
+page-action-send-tabs-urlbar =
+    .tooltiptext = 发送 { $tabCount } 个标签页到设备
+page-action-pocket-panel =
+    .label = 保存页面到 { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = 复制链接
+page-action-copy-url-urlbar =
+    .tooltiptext = 复制链接
+page-action-email-link-panel =
+    .label = 用邮件发送链接…
+page-action-email-link-urlbar =
+    .tooltiptext = 用邮件发送链接…
+page-action-share-url-panel =
+    .label = 共享
+page-action-share-url-urlbar =
+    .tooltiptext = 共享
+page-action-share-more-panel =
+    .label = 更多…
+page-action-send-tab-not-ready =
+    .label = 正在同步设备…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = 固定标签页
+page-action-pin-tab-urlbar =
+    .tooltiptext = 固定标签页
+page-action-unpin-tab-panel =
+    .label = 取消固定标签页
+page-action-unpin-tab-urlbar =
+    .tooltiptext = 取消固定标签页
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +212,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = 这次要用的搜索引擎：
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +277,17 @@ identity-passive-loaded = 此页面上部分内容不安全（例如图像）。
 identity-active-loaded = 您在此页面上已禁用保护。
 identity-weak-encryption = 此页面使用较弱加密。
 identity-insecure-login-forms = 在此网页上输入的登录信息可能会泄露。
+identity-https-only-connection-upgraded = （升级为 HTTPS）
+identity-https-only-label = HTTPS-Only 模式
+identity-https-only-dropdown-on =
+    .label = 开启
+identity-https-only-dropdown-off =
+    .label = 关闭
+identity-https-only-dropdown-off-temporarily =
+    .label = 暂时关闭
+identity-https-only-info-turn-on = 若想要 { -brand-short-name } 尽可能升级为安全连接，请开启此选项。
+identity-https-only-info-turn-off = 若网站看起来不正常，则可能需要关闭 HTTPS-Only 模式，使用不安全的 HTTP 重新载入。
+identity-https-only-info-no-upgrade = 无法将网站连接从 HTTP 升级。
 identity-permissions =
     .value = 权限
 identity-permissions-reload-hint = 您可能需要重新载入此页面以应用更改。
@@ -369,3 +419,54 @@ urlbar-page-action-button =
     .tooltiptext = 页面动作
 urlbar-pocket-button =
     .tooltiptext = 保存到 { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = 在隐私窗口中用 { $engine } 搜索
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = 在隐私窗口中搜索
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = 使用 { $engine } 搜索
+urlbar-result-action-switch-tab = 切换到标签页
+urlbar-result-action-visit = 访问
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = 搜索书签
+urlbar-result-action-search-history = 搜索历史记录
+urlbar-result-action-search-tabs = 搜索标签页
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = 直接从地址栏 { $engine } 一下
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = 直接从地址栏在 { $engine } 上搜索
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 已进入全屏模式
+fullscreen-warning-no-domain = 此文档已进入全屏模式
+fullscreen-exit-button = 退出全屏模式(Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = 退出全屏模式 (Esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 已控制您的鼠标指针。按 Esc 键可收回控制权。
+pointerlock-warning-no-domain = 此文档已控制您的鼠标指针。按 Esc 键可收回控制权。

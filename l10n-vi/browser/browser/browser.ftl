@@ -162,6 +162,45 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Xóa tiện ích mở rộng
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label = Gửi { $tabCount } thẻ đến thiết bị
+page-action-send-tabs-urlbar =
+    .tooltiptext = Gửi { $tabCount } thẻ đến thiết bị
+page-action-pocket-panel =
+    .label = Lưu trang vào { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Sao chép liên kết
+page-action-copy-url-urlbar =
+    .tooltiptext = Sao chép liên kết
+page-action-email-link-panel =
+    .label = Gửi liên kết qua email…
+page-action-email-link-urlbar =
+    .tooltiptext = Gửi liên kết qua email…
+page-action-share-url-panel =
+    .label = Chia sẻ
+page-action-share-url-urlbar =
+    .tooltiptext = Chia sẻ
+page-action-share-more-panel =
+    .label = Thêm…
+page-action-send-tab-not-ready =
+    .label = Đang đồng bộ các thiết bị…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Ghim thẻ
+page-action-pin-tab-urlbar =
+    .tooltiptext = Ghim thẻ
+page-action-unpin-tab-panel =
+    .label = Gỡ thẻ
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Gỡ thẻ
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +212,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Lần này, tìm kiếm với:
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +277,17 @@ identity-passive-loaded = Có nhiều thành phân của trang không an toàn (
 identity-active-loaded = Bạn đã tắt tính năng bảo vệ trên trang này.
 identity-weak-encryption = Trang này sử dụng mã hóa yếu.
 identity-insecure-login-forms = Đăng nhập vào trang này bạn có thể bị xâm nhập.
+identity-https-only-connection-upgraded = (đã nâng cấp lên HTTPS)
+identity-https-only-label = Chế độ chỉ HTTPS
+identity-https-only-dropdown-on =
+    .label = Bật
+identity-https-only-dropdown-off =
+    .label = Tắt
+identity-https-only-dropdown-off-temporarily =
+    .label = Tắt tạm thời
+identity-https-only-info-turn-on = Bật nếu bạn muốn { -brand-short-name } nâng cấp lên kết nối an toàn khi có thể.
+identity-https-only-info-turn-off = Nếu trang web có vẻ bị lỗi, bạn có thể muốn tắt Chế độ chỉ HTTPS để tải lại bằng chế độ không an toàn HTTP.
+identity-https-only-info-no-upgrade = Không thể nâng cấp kết nối từ HTTP.
 identity-permissions =
     .value = Quyền hạn
 identity-permissions-reload-hint = Bạn có thể cần phải tải lại trang để các thay đổi được áp dụng.
@@ -369,3 +419,54 @@ urlbar-page-action-button =
     .tooltiptext = Hành động trên trang
 urlbar-pocket-button =
     .tooltiptext = Lưu vào { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Tìm kiếm với { $engine } trong cửa sổ riêng tư
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Tìm kiếm trong cửa sổ riêng tư
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Tìm với { $engine }
+urlbar-result-action-switch-tab = Chuyển sang thẻ
+urlbar-result-action-visit = Truy cập
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Tìm kiếm dấu trang
+urlbar-result-action-search-history = Tìm kiếm lịch sử
+urlbar-result-action-search-tabs = Tìm kiếm thẻ
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Tìm kiếm với { $engine } trực tiếp từ thanh địa chỉ
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Tìm kiếm { $engine } trực tiếp từ thanh địa chỉ
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> giờ đã hiển thị toàn màn hình
+fullscreen-warning-no-domain = Trang này giờ đã hiển thị toàn màn hình
+fullscreen-exit-button = Thoát toàn màn hình (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Thoát toàn màn hình (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> có quyền điều khiển con trỏ của bạn. Ấn Esc để lấy lại quyền điều khiển.
+pointerlock-warning-no-domain = Trang này có quyền điều khiển con trỏ của bạn. Ấn Esc để lấy lại quyền điều khiển.

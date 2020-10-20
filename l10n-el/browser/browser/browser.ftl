@@ -162,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Αφαίρεση επέκτασης
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Αποστολή καρτέλας σε συσκευή
+           *[other] Αποστολή { $tabCount } καρτελών σε συσκευή
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Αποστολή καρτέλας σε συσκευή
+           *[other] Αποστολή { $tabCount } καρτελών σε συσκευή
+        }
+page-action-pocket-panel =
+    .label = Αποθήκευση σελίδας στο { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Αντιγραφή συνδέσμου
+page-action-copy-url-urlbar =
+    .tooltiptext = Αντιγραφή συνδέσμου
+page-action-email-link-panel =
+    .label = Αποστολή συνδέσμου…
+page-action-email-link-urlbar =
+    .tooltiptext = Αποστολή συνδέσμου…
+page-action-share-url-panel =
+    .label = Κοινή χρήση
+page-action-share-url-urlbar =
+    .tooltiptext = Κοινή χρήση
+page-action-share-more-panel =
+    .label = Περισσότερα…
+page-action-send-tab-not-ready =
+    .label = Συγχρονισμός συσκευών…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Καρφίτσωμα καρτέλας
+page-action-pin-tab-urlbar =
+    .tooltiptext = Καρφίτσωμα καρτέλας
+page-action-unpin-tab-panel =
+    .label = Ξεκαρφίτσωμα καρτέλας
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Ξεκαρφίτσωμα καρτέλας
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Αυτή τη φορά, αναζήτηση με:
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +285,12 @@ identity-passive-loaded = Κάποια τμήματα αυτής της σελί
 identity-active-loaded = Έχετε απενεργοποιήσει την προστασία σε αυτή τη σελίδα.
 identity-weak-encryption = Αυτή η σελίδα χρησιμοποιεί μη ισχυρή κρυπτογράφηση.
 identity-insecure-login-forms = Τα στοιχεία σύνδεσης που πληκτρολογήσατε σε αυτή την σελίδα μπορεί να διαρεύσουν.
+identity-https-only-connection-upgraded = (αναβαθμίστηκε σε HTTPS)
+identity-https-only-label = Λειτουργία μόνο-HTTPS
+identity-https-only-dropdown-on =
+    .label = Ενεργό
+identity-https-only-dropdown-off =
+    .label = Ανενεργό
 identity-permissions =
     .value = Δικαιώματα
 identity-permissions-reload-hint = Ίσως χρειαστεί να φορτώσετε εκ νέου τη σελίδα για εφαρμογή των αλλαγών.
@@ -369,3 +422,54 @@ urlbar-page-action-button =
     .tooltiptext = Ενέργειες σελίδας
 urlbar-pocket-button =
     .tooltiptext = Αποθήκευση στο { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Αναζήτηση με { $engine } σε ιδιωτικό παράθυρο
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Αναζήτηση σε ιδιωτικό παράθυρο
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Αναζήτηση με { $engine }
+urlbar-result-action-switch-tab = Εναλλαγή σε καρτέλα
+urlbar-result-action-visit = Επίσκεψη
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Αναζήτηση σελιδοδεικτών
+urlbar-result-action-search-history = Αναζήτηση ιστορικού
+urlbar-result-action-search-tabs = Αναζήτηση καρτελών
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Αναζήτηση με { $engine } απευθείας από τη γραμμή διευθύνσεων
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Αναζήτηση { $engine } απευθείας από τη γραμμή διευθύνσεων
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = Το <span data-l10n-name="domain">{ $domain }</span> εκτελείται σε πλήρη οθόνη
+fullscreen-warning-no-domain = Αυτό το έγγραφο εμφανίζεται σε πλήρη οθόνη
+fullscreen-exit-button = Έξοδος από πλήρη οθόνη (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Έξοδος από πλήρη οθόνη (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = Το <span data-l10n-name="domain">{ $domain }</span> ελέγχει τον κέρσορα. Πατήστε Esc για ανάκτηση ελέγχου.
+pointerlock-warning-no-domain = Αυτό το έγγραφο ελέγχει τον κέρσορα. Πατήστε Esc για ανάκτηση ελέγχου.

@@ -162,6 +162,39 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = ایکسٹینشن ہٹائیں
 
+## Page Action menu
+
+page-action-pocket-panel =
+    .label = { -pocket-brand-name } میں صفحات محوظ کریں
+page-action-copy-url-panel =
+    .label = ربط نقل کریں
+page-action-copy-url-urlbar =
+    .tooltiptext = ربط نقل کریں
+page-action-email-link-panel =
+    .label = ای میل ربط…
+page-action-email-link-urlbar =
+    .tooltiptext = ای میل ربط…
+page-action-share-url-panel =
+    .label = شیئر کریں
+page-action-share-url-urlbar =
+    .tooltiptext = شیئر کریں
+page-action-share-more-panel =
+    .label = مزید…
+page-action-send-tab-not-ready =
+    .label = آلات کی ہمہ وقت سازی کر رہے ہے…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = ٹیب پن کریں
+page-action-pin-tab-urlbar =
+    .tooltiptext = ٹیب پن کریں
+page-action-unpin-tab-panel =
+    .label = ٹیب انپن کریں
+page-action-unpin-tab-urlbar =
+    .tooltiptext = ٹیب انپن کریں
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -342,3 +375,43 @@ urlbar-page-action-button =
     .tooltiptext = صفحہ اعمال
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name } میں محفوظ کریں
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = نجی ونڈو میں { $engine } کے ساتھ تلاش کریں
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = نجی ونڈو میں تلاش کریں
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } سے تلاش کریں
+urlbar-result-action-switch-tab = ٹیب پر جائیں
+urlbar-result-action-visit = دورہ
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> اب پوری اسکرین پر ہے
+fullscreen-warning-no-domain = یہ دستاویز اب پوری اسکرین پر ہے
+fullscreen-exit-button = پوری سکرین سے باہر نکلیں (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = پوری سکرین سے باہر نکلیں (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> آپ کے نشان کار کا کنٹرول ہے۔ Esc دبا کر کنٹرول واپس لیں
+pointerlock-warning-no-domain = اس دستاویز کہ پاس آپ کہ نشان کار کا کنٹرول ہے ۔ کنٹرول واپس حاصل کرنے کے لیے Esc دبائیں ۔

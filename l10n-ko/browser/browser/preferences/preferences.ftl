@@ -29,6 +29,8 @@ search-input-box =
            *[other] 설정에서 찾기
         }
 managed-notice = 조직에서 브라우저를 관리하고 있습니다.
+category-list =
+    .aria-label = 카테고리
 pane-general-title = 일반
 category-general =
     .tooltiptext = { pane-general-title }
@@ -477,6 +479,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = 상위 사이트
 home-prefs-topsites-description = 가장 많이 방문한 사이트
+home-prefs-topsites-by-option-sponsored =
+    .label = 스폰서 상위 사이트
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -489,7 +493,7 @@ home-prefs-recommended-by-description-update = { $provider }에 의해 큐레이
 
 home-prefs-recommended-by-learn-more = 사용 방법
 home-prefs-recommended-by-option-sponsored-stories =
-    .label = 후원된 스토리
+    .label = 스폰서 소식
 home-prefs-highlights-header =
     .label = 하이라이트
 home-prefs-highlights-description = 저장하거나 방문한 사이트 모음
@@ -544,6 +548,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = 다른 주소 표시줄 제안에 대한 설정 변경
 search-suggestions-cant-show = 방문 기록을 저장하지 않도록 { -brand-short-name }를 설정했기 때문에 검색 제안이 주소 표시 줄 결과에 표시되지 않습니다.
 search-one-click-header = 원클릭 검색 엔진
+search-one-click-header2 = 검색 단축키
 search-one-click-desc = 키워드 입력을 시작했을 때 주소 표시줄과 검색 표시줄 아래에 나타날 대체 검색 엔진을 선택하세요.
 search-choose-engine-column =
     .label = 검색 엔진

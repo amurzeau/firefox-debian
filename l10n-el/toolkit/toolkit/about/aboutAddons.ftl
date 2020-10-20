@@ -375,11 +375,22 @@ addon-badge-private-browsing-allowed2 =
 addon-detail-private-browsing-help = Όταν επιτρέπεται, η επέκταση θα έχει πρόσβαση στις δραστηριότητές σας στο διαδίκτυο κατά την ιδιωτική περιήγηση. <a data-l10n-name="learn-more">Μάθετε περισσότερα</a>
 addon-detail-private-browsing-allow = Αποδοχή
 addon-detail-private-browsing-disallow = Απόρριψη
-# This is the tooltip text for the recommended badge for an extension in about:addons. The
-# badge is a small icon displayed next to an extension when it is recommended on AMO.
+
+## This is the tooltip text for the recommended badges for an extension in about:addons. The
+## badge is a small icon displayed next to an extension when it is recommended on AMO.
+
 addon-badge-recommended2 =
     .title = Το { -brand-product-name } προτείνει μόνο επεκτάσεις που πληρούν τα πρότυπα ασφαλείας και επιδόσεών μας
     .aria-label = { addon-badge-recommended2.title }
+addon-badge-line =
+    .title = Αυτή η επέκταση αναπτύχθηκε από τους δημιουργούς του { -brand-product-name }
+    .aria-label = { addon-badge-line.title }
+addon-badge-verified =
+    .title = Ο κώδικας αυτής της επέκτασης έχει ελεγχθεί για ασφάλεια
+    .aria-label = { addon-badge-verified.title }
+
+##
+
 available-updates-heading = Διαθέσιμες ενημερώσεις
 recent-updates-heading = Πρόσφατες ενημερώσεις
 release-notes-loading = Φόρτωση...
@@ -399,7 +410,7 @@ plugin-heading = Διαχείριση των αρθρωμάτων σας
 dictionary-heading = Διαχείριση των λεξικών σας
 locale-heading = Διαχείριση των γλωσσών σας
 updates-heading = Διαχείριση των ενημερώσεών σας
-discover-heading = Εξατομικεύστε το { -brand-short-name } σας
+discover-heading = Εξατομίκευση του { -brand-short-name }
 shortcuts-heading = Διαχείριση συντομεύσεων επεκτάσεων
 default-heading-search-label = Βρείτε περισσότερα πρόσθετα
 addons-heading-search-input =

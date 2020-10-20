@@ -54,7 +54,7 @@ urlbar-identity-button =
 urlbar-services-notification-anchor =
     .tooltiptext = Telepítési üzenetpanel megnyitása
 urlbar-web-notification-anchor =
-    .tooltiptext = Módosítsa, hogy kap-e értesítéseket ettől az oldaltól
+    .tooltiptext = Módosítsa, hogy kaphat-e értesítéseket ettől az oldaltól
 urlbar-midi-notification-anchor =
     .tooltiptext = MIDI panel megnyitása
 urlbar-eme-notification-anchor =
@@ -162,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Kiegészítő eltávolítása
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Lap küldése az eszközre
+           *[other] { $tabCount } lap küldése az eszközre
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Lap küldése az eszközre
+           *[other] { $tabCount } lap küldése az eszközre
+        }
+page-action-pocket-panel =
+    .label = Oldal mentése a { -pocket-brand-name }be
+page-action-copy-url-panel =
+    .label = Hivatkozás másolása
+page-action-copy-url-urlbar =
+    .tooltiptext = Hivatkozás másolása
+page-action-email-link-panel =
+    .label = Hivatkozás küldése e-mailben…
+page-action-email-link-urlbar =
+    .tooltiptext = Hivatkozás küldése e-mailben…
+page-action-share-url-panel =
+    .label = Megosztás
+page-action-share-url-urlbar =
+    .tooltiptext = Megosztás
+page-action-share-more-panel =
+    .label = Továbbiak…
+page-action-send-tab-not-ready =
+    .label = Eszközök szinkronizálása…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Lap rögzítése
+page-action-pin-tab-urlbar =
+    .tooltiptext = Lap rögzítése
+page-action-unpin-tab-panel =
+    .label = Lap feloldása
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Lap feloldása
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -173,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ezúttal keressen a következővel:
 # This string won't wrap, so if the translated string is longer,
@@ -238,6 +285,17 @@ identity-passive-loaded = A weboldal egyes részei nem biztonságosak (például
 identity-active-loaded = Kikapcsolta a védelmet ezen az oldalon.
 identity-weak-encryption = Ez az oldal gyenge titkosítást használ.
 identity-insecure-login-forms = Az oldalon megadott bejelentkezési adatok nincsenek biztonságban.
+identity-https-only-connection-upgraded = (frissítve HTTPS-re)
+identity-https-only-label = Csak HTTPS mód
+identity-https-only-dropdown-on =
+    .label = Be
+identity-https-only-dropdown-off =
+    .label = Ki
+identity-https-only-dropdown-off-temporarily =
+    .label = Ideiglenesen ki
+identity-https-only-info-turn-on = Kapcsolja be, ha azt szeretné, hogy a { -brand-short-name } lehetőleg biztonságos kapcsolatra frissüljön.
+identity-https-only-info-turn-off = Ha a webhely hibásnak tűnik, érdemes kikapcsolnia a Csak HTTPS módot, hogy újratöltse a nem biztonságos HTTP használatával.
+identity-https-only-info-no-upgrade = Nem lehet frissíteni a kapcsolatot HTTP-ről.
 identity-permissions =
     .value = Engedélyek
 identity-permissions-reload-hint = Lehet hogy újra kell töltenie az oldalt a változások érvényesítéséhez.
@@ -369,3 +427,54 @@ urlbar-page-action-button =
     .tooltiptext = Oldalműveletek
 urlbar-pocket-button =
     .tooltiptext = Mentés a { -pocket-brand-name }be
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = { $engine } keresés egy privát ablakban
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Keresés egy privát ablakban
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } keresés
+urlbar-result-action-switch-tab = Váltás erre a lapra
+urlbar-result-action-visit = Keresse fel:
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Könyvjelzők keresése
+urlbar-result-action-search-history = Előzmények keresése
+urlbar-result-action-search-tabs = Lapok keresése
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Keresés a(z) { $engine } segítségével közvetlenül a címsorból
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Keresés a(z) { $engine } webhelyen közvetlenül a címsorból
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = A(z) <span data-l10n-name="domain">{ $domain }</span> mostantól teljes képernyős
+fullscreen-warning-no-domain = A dokumentum mostantól teljes képernyős
+fullscreen-exit-button = Kilépés a teljes képernyőből (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Kilépés a teljes képernyőből (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = A következő irányítja az egérmutatót: <span data-l10n-name="domain">{ $domain }</span> . Nyomja meg az Esc gombot az irányítás visszavételéhez.
+pointerlock-warning-no-domain = Ez a dokumentum vezérli az egérmutatóját. Nyomja meg az Esc gombot az irányítás visszavételéhez.

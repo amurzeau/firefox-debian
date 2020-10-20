@@ -39,17 +39,22 @@ experimental-features-css-focus-visible-description = Emoneĩ umi ma’ẽha omo
 # by various online articles and is technical in nature.
 experimental-features-web-api-beforeinput =
     .label = Web API: beforeinput Event
+# The terms "beforeinput", "input", "textarea", and "contenteditable" are technical terms
+# and shouldn't be translated.
+experimental-features-web-api-beforeinput-description = Pe tembiaporã guasu <a data-l10n-name="mdn-beforeinput">beforeinput</a> hendy umi mba’epuru <a data-l10n-name="mdn-input">&lt;input&gt;</a> ha <a data-l10n-name="mdn-textarea">&lt;textarea&gt;</a>, térã oimeraẽva mba’epuru hekome’ẽva <a data-l10n-name="mdn-contenteditable">mbosako’ikuaáva</a> hendy jave, iñambue mboyve mba’epuru repykue. Tembiaporã omoneĩta ñanduti rembipuru’i omboyke kundahára rekojehegui puruhára rembiapópe, techapyrã, ñanduti rembipuru’i ikatu omboyke puruhára jeike tai’aty ha’etévape térã omoambue moñe’ẽrã ñemboja umi oñemoneĩmbyrévape añoite.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-css-constructable-stylesheets =
     .label = CSS: Constructable Stylesheets
+experimental-features-css-constructable-stylesheets-description = Pe jehechaha apohare <a data-l10n-name="mdn-cssstylesheet"> CSSStyleSheet</a> avei ñemoambueita ojokupytýva ha omoneĩva oñemoheñói hag̃ua kuatia mbohekoha ipyahúva embojuaju’ỹre kuatia HTML rehe. Kóva nombohasyive emoheñoikuaa hag̃ua kuatia mbohekoha ojepurukuaajeýva eipuru hag̃uáicha <a data-l10n-name="mdn-shadowdom">Shadow DOM</a> ndive. Ehecha <a data-l10n-name="bugzilla">bug 1520690</a> eikuaa porãve hag̃ua.
 # The title of the experiment should be kept in English as it may be referenced
 # by various online articles and is technical in nature.
 experimental-features-media-session-api =
     .label = Web API: Media Session API
 experimental-features-media-session-api-description = Hu’ãmbávo { -brand-short-name } Media Session API mba’e oñeha’ãramohína. Ko API ojepuru oñemomba’ete hag̃ua pe marandu’i jepuru momaranduhára rehegua, tembiaporãva ha mba’ekuaarã iporãva ehechauka hag̃ua peteĩ puruhára ohechaha momaranduhára rembipo ha eguereko hag̃ua marandurenda metadato. Ehecha <a data-l10n-name="bugzilla">bug 1112032</a> eikuaave hag̃ua.
 experimental-features-devtools-color-scheme-simulation =
-    .label = Tembipuru mboguatahárape g̃uarã: say aty ñeha’ãha
+    .label = Tembipuru mboguatahárape g̃uarã: sa’y’aty ñeha’ãha
+experimental-features-devtools-color-scheme-simulation-description = Embojuaju jeporavorã eha’ã hag̃ua opáichagua sa’y’aty ñeha’ãha omoneĩtava eporandúvo <a data-l10n-name="mdn-preferscolorscheme">@prefers-color-schem</a>. Pe tembiapoite jepuru omoneĩta nde kuatia mbohekoha ombohováivo puruhára oipotárõ peteĩ techaha hesakã térã iñypytũva. Kóva omoneĩta eipurúvo nde ayvu emoambue’ỹre ne kundahára ñemboheko (térã apopyvusu oku’éva, pe kundahára ohapykuehórõ sa’y’aty ñeha’ãha opaite apopyvusúpe). Eporandu <a data-l10n-name="bugzilla1">bug 1550804</a> ha <a data-l10n-name="bugzilla2">bug 1137699-pe</a> eikuaave hag̃ua.
 experimental-features-devtools-execution-context-selector =
     .label = Mboguatahára rembipuru: Momba’apo Jeregua Poravoha
 experimental-features-devtools-execution-context-selector-description = Ko tembiapoite ohechauka votõ pe mbohapeha mba’e’okarupa omoneĩva omoambuéva pe jeregua hekojeráva pe ñe’ẽrysýi emoingéva. Eporandu <a data-l10n-name="bugzilla1">bug 1605154</a> ha <a data-l10n-name="bugzilla2">bug 1605153</a> eikuaa porãve hag̃ua.
@@ -86,3 +91,11 @@ experimental-features-devtools-serviceworker-debugger-support-description = Embo
 experimental-features-graphics-desktop-zooming =
     .label = Ta’ãnga: Zoom pichãi mbegue
 experimental-features-graphics-desktop-zooming-description = Embojuruja jokupyty zoom peg̃uarã pichãi mbegue mba’erechaha pokoguávape ha aramboha’i oikoitéva.
+# WebRTC global mute toggle controls
+experimental-features-webrtc-global-mute-toggles =
+    .label = Emyandy/embogue WebRTC tuichaháicha
+experimental-features-webrtc-global-mute-toggles-description = Embojuaju moambueha WebRTC iñambuéva tuichaháicha omoneĩva puruharápe omondohóvo tuichaháicha iñe’ẽatãha ha ha’ãngamýi.
+# JS JIT Warp project
+experimental-features-js-warp =
+    .label = JavaScript JIT: Warp
+experimental-features-js-warp-description = Embojuruja Warp, apopyrã oiko ha ojepuruporãve hag̃ua JavaScript mandu’arenda.

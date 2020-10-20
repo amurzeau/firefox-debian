@@ -29,6 +29,8 @@ search-input-box =
            *[other] Canfod yn Dewisiadau
         }
 managed-notice = Mae eich porwr yn cael ei reoli gan eich sefydliad.
+category-list =
+    .aria-label = Categorïau
 pane-general-title = Cyffredinol
 category-general =
     .tooltiptext = { pane-general-title }
@@ -501,6 +503,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Hoff Wefannau
 home-prefs-topsites-description = Y gwefannau rydych yn ymweld â nhw amlaf
+home-prefs-topsites-by-option-sponsored =
+    .label = Hoff Wefannau Wedi eu Noddi
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -576,6 +580,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Newid dewisiadau awgrymiadau eraill y bar cyfeiriad
 search-suggestions-cant-show = Ni fydd awgrymiadau chwilio'n cael eu dangos yn y bar lleoliad gan eich bod wedi ffurfweddu { -brand-short-name } i byth cofio hanes.
 search-one-click-header = Peiriannau Chwilio Un Clic
+search-one-click-header2 = Chwilio'r Llwybrau Byr
 search-one-click-desc = Dewis peiriant chwilio arall sy'n ymddangos o dan y bar cyfeiriad a'r bar chwilio pan fyddwch yn cychwyn allweddair.
 search-choose-engine-column =
     .label = Peiriannau Chwilio
