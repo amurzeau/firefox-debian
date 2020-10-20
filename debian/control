@@ -77,7 +77,6 @@ Description: Mozilla Firefox web browser - Extended Support Release (ESR)
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
 
-
 Package: firefox-esr-l10n-all
 Architecture: all
 Section: metapackages
