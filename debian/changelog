@@ -1,3 +1,31 @@
+firefox (82.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2020-45, also known as:
+    CVE-2020-15969, CVE-2020-15254, CVE-2020-15680, CVE-2020-15681,
+    CVE-2020-15682, CVE-2020-15683, CVE-2020-15684.
+
+  [Emilio Pozuelo Monfort]
+  * debian/browser.bug-presubj.in, debian/control.in, debian/rules,
+    debian/symbols.mk, debian/upstream.mk: Remove support for jessie.
+  * debian/control.in, debian/rules: stretch: build with LLVM 7, 4.0 doesn't
+    support -std=gnu++17.
+  * debian/rules:
+    - stretch: build with GCC 7 from gcc-mozilla.
+    - Call python with -B when regenerating the control files, so as to not
+      generate bytecode files.
+    - Call debian/l10n/gen with C.UTF-8 as the locale, otherwise it fails
+    in stretch when opening the iso-codes files.
+    - stretch: don't set NASM on !x86.
+
+  [Mike Hommey]
+  * debian/control*: Bump nss build dependency.
+
+  * build/unix/elfhack/elf.cpp, build/unix/elfhack/elfxx.h: Fix elfhack
+    for files > 2GiB and < 4GiB. bz#1495733.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 21 Oct 2020 11:53:39 +0900
+
 firefox (81.0-2) unstable; urgency=medium
 
   * dom/media/AsyncLogger.h: Fix AsyncLogger::TracePayload's mName

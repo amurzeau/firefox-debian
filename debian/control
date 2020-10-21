@@ -77,7 +77,6 @@ Description: Mozilla Firefox web browser
  Firefox is a powerful, extensible web browser with support for modern
  web application technologies.
 
-
 Package: firefox-l10n-all
 Architecture: all
 Section: metapackages
