@@ -1,3 +1,10 @@
+firefox-esr (78.4.0esr-2) unstable; urgency=medium
+
+  * debian/rules: Restore parts of debian/rules that were removed by mistake
+    in 78.4.0esr-1, causing FTBFS on at least amd64.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 21 Oct 2020 13:19:24 +0900
+
 firefox-esr (78.4.0esr-1) unstable; urgency=medium
 
   * New upstream release.
