@@ -5,7 +5,6 @@ Maintainer: Maintainers of Mozilla-related packages <team+pkg-mozilla@tracker.de
 Uploaders: Mike Hommey <glandium@debian.org>
 Build-Depends: autotools-dev,
                debhelper (>= 9.20160114),
-               autoconf2.13,
                libx11-dev,
                libx11-xcb-dev,
                libxt-dev,
