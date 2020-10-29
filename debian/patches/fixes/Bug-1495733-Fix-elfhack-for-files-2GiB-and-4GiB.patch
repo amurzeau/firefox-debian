@@ -8,7 +8,7 @@ Subject: Bug 1495733 - Fix elfhack for files > 2GiB and < 4GiB
  2 files changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/build/unix/elfhack/elf.cpp b/build/unix/elfhack/elf.cpp
-index 78de2312c02..679770fcbaa 100644
+index 78de231..679770f 100644
 --- a/build/unix/elfhack/elf.cpp
 +++ b/build/unix/elfhack/elf.cpp
 @@ -509,7 +509,7 @@ ElfSection::ElfSection(Elf_Shdr& s, std::ifstream* file, Elf* parent)
@@ -39,7 +39,7 @@ index 78de2312c02..679770fcbaa 100644
    ElfStrtab_Section* strtab = (ElfStrtab_Section*)getLink();
    file->seekg(shdr.sh_offset);
 diff --git a/build/unix/elfhack/elfxx.h b/build/unix/elfhack/elfxx.h
-index 91e9bbfb837..c309e88c72b 100644
+index 91e9bbf..c309e88 100644
 --- a/build/unix/elfhack/elfxx.h
 +++ b/build/unix/elfhack/elfxx.h
 @@ -583,7 +583,7 @@ class ElfRel_Section : public ElfSection {
