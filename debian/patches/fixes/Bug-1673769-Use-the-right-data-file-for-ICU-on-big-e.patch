@@ -1,0 +1,26 @@
+From: Mike Hommey <mh+mozilla@glandium.org>
+Date: Wed, 28 Oct 2020 02:54:17 +0000
+Subject: Bug 1673769 - Use the right data file for ICU on big endians.
+ r=dmajor, a=pascal
+
+It turns out that CONFIG.get(..., ...) doesn't actually work properly in
+moz.build, so use `or` instead.
+
+Differential Revision: https://phabricator.services.mozilla.com/D94918
+---
+ config/external/icu/data/moz.build | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/config/external/icu/data/moz.build b/config/external/icu/data/moz.build
+index 90336313..d76f112 100644
+--- a/config/external/icu/data/moz.build
++++ b/config/external/icu/data/moz.build
+@@ -22,7 +22,7 @@ data_dir = {
+     'little': SRCDIR,
+     'big': OBJDIR,
+ }
+-endianness = CONFIG.get('TARGET_ENDIANNESS', 'little')
++endianness = CONFIG['TARGET_ENDIANNESS'] or 'little'
+ DEFINES['ICU_DATA_FILE'] = '"%s/%s"' % (data_dir[endianness], data_file[endianness])
+ DEFINES['ICU_DATA_SYMBOL'] = '%sicudt%s_dat' % (prefix, CONFIG['MOZ_ICU_VERSION'])
+ SOURCES += [
