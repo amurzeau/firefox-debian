@@ -1,3 +1,14 @@
+firefox (82.0.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+  * debian/control*: Remove autoconf2.13 build dependency.
+
+  * config/external/icu/data/moz.build: Use the right data file for ICU on
+    big endians. bz#1673769.
+
+ -- Mike Hommey <glandium@debian.org>  Fri, 30 Oct 2020 06:03:59 +0900
+
 firefox (82.0-1) unstable; urgency=medium
 
   * New upstream release.
