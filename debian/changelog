@@ -1,3 +1,10 @@
+firefox-esr (78.4.1esr-2) unstable; urgency=medium
+
+  * Cargo.lock, third_party/rust/proc-macro2, third_party/rust/syn: Update
+    to fix FTBFS with rustc 1.47. bz#1663715.
+
+ -- Mike Hommey <glandium@debian.org>  Tue, 10 Nov 2020 10:23:12 +0900
+
 firefox-esr (78.4.1esr-1) unstable; urgency=medium
 
   * New upstream release.
