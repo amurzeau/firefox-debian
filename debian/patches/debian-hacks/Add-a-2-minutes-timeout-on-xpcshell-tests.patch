@@ -7,7 +7,7 @@ Subject: Add a 2 minutes timeout on xpcshell tests
  1 file changed, 18 insertions(+), 3 deletions(-)
 
 diff --git a/testing/xpcshell/runxpcshelltests.py b/testing/xpcshell/runxpcshelltests.py
-index 5f015169623..166c1d0d72d 100755
+index 5f01516..166c1d0 100755
 --- a/testing/xpcshell/runxpcshelltests.py
 +++ b/testing/xpcshell/runxpcshelltests.py
 @@ -13,6 +13,7 @@ import os

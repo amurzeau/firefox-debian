@@ -26,7 +26,7 @@ Subject: Bug 1264836 - Automatically convert the little-endian ICU data file
  create mode 100644 config/external/icu/toolutil/sources.mozbuild
 
 diff --git a/config/external/icu/common/moz.build b/config/external/icu/common/moz.build
-index 61ff5dc72e3..5e00bc32d62 100644
+index 61ff5dc..5e00bc3 100644
 --- a/config/external/icu/common/moz.build
 +++ b/config/external/icu/common/moz.build
 @@ -23,3 +23,21 @@ if CONFIG['CC_TYPE'] in ('clang', 'gcc'):
@@ -52,7 +52,7 @@ index 61ff5dc72e3..5e00bc32d62 100644
 +        '/intl/icu/source/common/ucnvmbcs.cpp',
 +    ]
 diff --git a/config/external/icu/common/sources.mozbuild b/config/external/icu/common/sources.mozbuild
-index 1582a4f209d..b064e110eb3 100644
+index 1582a4f..b064e11 100644
 --- a/config/external/icu/common/sources.mozbuild
 +++ b/config/external/icu/common/sources.mozbuild
 @@ -1,5 +1,5 @@
@@ -64,7 +64,7 @@ index 1582a4f209d..b064e110eb3 100644
     '/intl/icu/source/common/brkeng.cpp',
 diff --git a/config/external/icu/data/convert_icudata.py b/config/external/icu/data/convert_icudata.py
 new file mode 100644
-index 00000000000..22779274ebd
+index 0000000..2277927
 --- /dev/null
 +++ b/config/external/icu/data/convert_icudata.py
 @@ -0,0 +1,17 @@
@@ -86,7 +86,7 @@ index 00000000000..22779274ebd
 +        output.name,
 +    ])
 diff --git a/config/external/icu/data/moz.build b/config/external/icu/data/moz.build
-index 023b4e9f49e..84a8a9941eb 100644
+index 023b4e9..84a8a99 100644
 --- a/config/external/icu/data/moz.build
 +++ b/config/external/icu/data/moz.build
 @@ -10,8 +10,23 @@ Library('icudata')
@@ -115,7 +115,7 @@ index 023b4e9f49e..84a8a9941eb 100644
 +                  script='convert_icudata.py',
 +                  inputs=[data_file['little']])
 diff --git a/config/external/icu/defs.mozbuild b/config/external/icu/defs.mozbuild
-index 07874b6b3c1..fda0361e300 100644
+index 07874b6..fda0361 100644
 --- a/config/external/icu/defs.mozbuild
 +++ b/config/external/icu/defs.mozbuild
 @@ -24,6 +24,8 @@ DEFINES['U_CHARSET_IS_UTF8'] = True
@@ -136,7 +136,7 @@ index 07874b6b3c1..fda0361e300 100644
 +    if k != 'UCONFIG_NO_LEGACY_CONVERSION':
 +        HOST_DEFINES[k] = v
 diff --git a/config/external/icu/i18n/moz.build b/config/external/icu/i18n/moz.build
-index f5482351c51..890edfcf8d0 100644
+index f548235..890edfc 100644
 --- a/config/external/icu/i18n/moz.build
 +++ b/config/external/icu/i18n/moz.build
 @@ -13,3 +13,11 @@ LOCAL_INCLUDES += ['/intl/icu/source/common']
@@ -152,7 +152,7 @@ index f5482351c51..890edfcf8d0 100644
 +    HOST_SOURCES += sources
 +    HOST_SOURCES += ['/intl/icu/source/i18n/ulocdata.cpp']
 diff --git a/config/external/icu/i18n/sources.mozbuild b/config/external/icu/i18n/sources.mozbuild
-index be7f29f6292..36f93e70753 100644
+index be7f29f..36f93e7 100644
 --- a/config/external/icu/i18n/sources.mozbuild
 +++ b/config/external/icu/i18n/sources.mozbuild
 @@ -1,5 +1,5 @@
@@ -164,7 +164,7 @@ index be7f29f6292..36f93e70753 100644
     '/intl/icu/source/i18n/bocsu.cpp',
 diff --git a/config/external/icu/icupkg/moz.build b/config/external/icu/icupkg/moz.build
 new file mode 100644
-index 00000000000..b4010b1227c
+index 0000000..b4010b1
 --- /dev/null
 +++ b/config/external/icu/icupkg/moz.build
 @@ -0,0 +1,25 @@
@@ -195,7 +195,7 @@ index 00000000000..b4010b1227c
 +]
 diff --git a/config/external/icu/icupkg/sources.mozbuild b/config/external/icu/icupkg/sources.mozbuild
 new file mode 100644
-index 00000000000..68b7520b5b2
+index 0000000..68b7520
 --- /dev/null
 +++ b/config/external/icu/icupkg/sources.mozbuild
 @@ -0,0 +1,5 @@
@@ -205,7 +205,7 @@ index 00000000000..68b7520b5b2
 +]
 +
 diff --git a/config/external/icu/moz.build b/config/external/icu/moz.build
-index b1b2a9de28a..ee203e8cdb4 100644
+index b1b2a9d..ee203e8 100644
 --- a/config/external/icu/moz.build
 +++ b/config/external/icu/moz.build
 @@ -14,4 +14,9 @@ else:
@@ -220,7 +220,7 @@ index b1b2a9de28a..ee203e8cdb4 100644
      USE_LIBS += ['icudata']
 diff --git a/config/external/icu/toolutil/moz.build b/config/external/icu/toolutil/moz.build
 new file mode 100644
-index 00000000000..7de97db9e10
+index 0000000..7de97db
 --- /dev/null
 +++ b/config/external/icu/toolutil/moz.build
 @@ -0,0 +1,20 @@
@@ -246,7 +246,7 @@ index 00000000000..7de97db9e10
 +HOST_SOURCES += sources
 diff --git a/config/external/icu/toolutil/sources.mozbuild b/config/external/icu/toolutil/sources.mozbuild
 new file mode 100644
-index 00000000000..b885078e0e2
+index 0000000..b885078
 --- /dev/null
 +++ b/config/external/icu/toolutil/sources.mozbuild
 @@ -0,0 +1,28 @@
@@ -279,7 +279,7 @@ index 00000000000..b885078e0e2
 +]
 +
 diff --git a/config/recurse.mk b/config/recurse.mk
-index 5f8d950b922..721b9b17548 100644
+index 5f8d950..721b9b1 100644
 --- a/config/recurse.mk
 +++ b/config/recurse.mk
 @@ -184,6 +184,12 @@ toolkit/components/telemetry/export: layout/style/export
@@ -296,7 +296,7 @@ index 5f8d950b922..721b9b17548 100644
  # Only target rules use the clang plugin.
  $(filter %/target %/target-objects,$(filter-out config/export config/host build/unix/stdc++compat/% build/clang-plugin/%,$(compile_targets))): build/clang-plugin/host build/clang-plugin/tests/target-objects
 diff --git a/intl/icu_sources_data.py b/intl/icu_sources_data.py
-index 10378611076..c05e03ceac4 100644
+index 1037861..c05e03c 100644
 --- a/intl/icu_sources_data.py
 +++ b/intl/icu_sources_data.py
 @@ -162,27 +162,32 @@ def write_sources(mozbuild, sources, headers):

@@ -7,7 +7,7 @@ Subject: Set DPI to system settings
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/modules/libpref/init/all.js b/modules/libpref/init/all.js
-index 9316d918191..23fd5946e26 100644
+index 9316d91..23fd594 100644
 --- a/modules/libpref/init/all.js
 +++ b/modules/libpref/init/all.js
 @@ -2495,7 +2495,7 @@ pref("layout.word_select.stop_at_underscore", false);

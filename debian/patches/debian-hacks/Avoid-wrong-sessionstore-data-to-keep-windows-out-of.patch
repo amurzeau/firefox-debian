@@ -12,7 +12,7 @@ Closes: #552426, #553453
  1 file changed, 2 insertions(+), 3 deletions(-)
 
 diff --git a/browser/components/sessionstore/SessionStore.jsm b/browser/components/sessionstore/SessionStore.jsm
-index 6ab86fd5913..c5c8f04b8e6 100644
+index 6ab86fd..c5c8f04 100644
 --- a/browser/components/sessionstore/SessionStore.jsm
 +++ b/browser/components/sessionstore/SessionStore.jsm
 @@ -5114,7 +5114,7 @@ var SessionStoreInternal = {

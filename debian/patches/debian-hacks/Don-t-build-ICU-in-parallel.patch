@@ -7,7 +7,7 @@ Subject: Don't build ICU in parallel
  1 file changed, 1 insertion(+), 3 deletions(-)
 
 diff --git a/intl/icu_sources_data.py b/intl/icu_sources_data.py
-index 10378611076..09a691a426a 100644
+index 1037861..09a691a 100644
 --- a/intl/icu_sources_data.py
 +++ b/intl/icu_sources_data.py
 @@ -247,9 +247,7 @@ def update_data_file(topsrcdir):

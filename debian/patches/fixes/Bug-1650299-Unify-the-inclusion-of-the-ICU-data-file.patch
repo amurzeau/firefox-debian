@@ -23,7 +23,7 @@ Differential Revision: https://phabricator.services.mozilla.com/D82144
 
 diff --git a/config/external/icu/data/genicudata.py b/config/external/icu/data/genicudata.py
 deleted file mode 100644
-index 50bc93988af..00000000000
+index 50bc939..0000000
 --- a/config/external/icu/data/genicudata.py
 +++ /dev/null
 @@ -1,21 +0,0 @@
@@ -50,7 +50,7 @@ index 50bc93988af..00000000000
 -'''.format(data_file=data_file, data_symbol=data_symbol, drive=drive))
 diff --git a/config/external/icu/data/icudata.c b/config/external/icu/data/icudata.c
 new file mode 100644
-index 00000000000..7299ac9f6bc
+index 0000000..7299ac9
 --- /dev/null
 +++ b/config/external/icu/data/icudata.c
 @@ -0,0 +1,28 @@
@@ -84,7 +84,7 @@ index 00000000000..7299ac9f6bc
 +DATA(PREFIXED(ICU_DATA_SYMBOL), ICU_DATA_FILE);
 diff --git a/config/external/icu/data/icudata.s b/config/external/icu/data/icudata.s
 deleted file mode 100644
-index a740f3260b1..00000000000
+index a740f32..0000000
 --- a/config/external/icu/data/icudata.s
 +++ /dev/null
 @@ -1,31 +0,0 @@
@@ -121,7 +121,7 @@ index a740f3260b1..00000000000
 -        incbin ICU_DATA_FILE
 diff --git a/config/external/icu/data/icudata_gas.S b/config/external/icu/data/icudata_gas.S
 deleted file mode 100644
-index 6c9abc822c6..00000000000
+index 6c9abc8..0000000
 --- a/config/external/icu/data/icudata_gas.S
 +++ /dev/null
 @@ -1,17 +0,0 @@
@@ -143,7 +143,7 @@ index 6c9abc822c6..00000000000
 -DATA_SYMBOL:
 -        .incbin ICU_DATA_FILE
 diff --git a/config/external/icu/data/moz.build b/config/external/icu/data/moz.build
-index d4741a06685..023b4e9f49e 100644
+index d4741a0..023b4e9 100644
 --- a/config/external/icu/data/moz.build
 +++ b/config/external/icu/data/moz.build
 @@ -8,29 +8,10 @@
@@ -182,7 +182,7 @@ index d4741a06685..023b4e9f49e 100644
 +    'icudata.c',
 +]
 diff --git a/js/moz.configure b/js/moz.configure
-index b1c9685733b..4ac0bd8220f 100644
+index b1c9685..4ac0bd8 100644
 --- a/js/moz.configure
 +++ b/js/moz.configure
 @@ -760,13 +760,6 @@ def icu_version(build_env):

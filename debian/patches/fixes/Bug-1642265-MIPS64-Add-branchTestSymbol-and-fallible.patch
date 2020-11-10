@@ -10,7 +10,7 @@ Differential Revision: https://phabricator.services.mozilla.com/D77629
  2 files changed, 36 insertions(+)
 
 diff --git a/js/src/jit/mips-shared/MacroAssembler-mips-shared-inl.h b/js/src/jit/mips-shared/MacroAssembler-mips-shared-inl.h
-index 92f6f7ac004..92f169bfdaa 100644
+index 92f6f7a..92f169b 100644
 --- a/js/src/jit/mips-shared/MacroAssembler-mips-shared-inl.h
 +++ b/js/src/jit/mips-shared/MacroAssembler-mips-shared-inl.h
 @@ -741,6 +741,13 @@ void MacroAssembler::branchTestSymbol(Condition cond, const BaseIndex& address,
@@ -28,7 +28,7 @@ index 92f6f7ac004..92f169bfdaa 100644
                                        Label* label) {
    MOZ_ASSERT(cond == Equal || cond == NotEqual);
 diff --git a/js/src/jit/mips64/MacroAssembler-mips64-inl.h b/js/src/jit/mips64/MacroAssembler-mips64-inl.h
-index da3fe771af8..0ed3851f2f8 100644
+index da3fe77..0ed3851 100644
 --- a/js/src/jit/mips64/MacroAssembler-mips64-inl.h
 +++ b/js/src/jit/mips64/MacroAssembler-mips64-inl.h
 @@ -649,6 +649,35 @@ void MacroAssembler::branchTruncateFloat32MaybeModUint32(FloatRegister src,
