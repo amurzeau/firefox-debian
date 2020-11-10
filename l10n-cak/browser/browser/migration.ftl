@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 migration-wizard =
-    .title = Ruto'onel k'amoj
+    .title = Ruto'onel K'amoj
 import-from =
     { PLATFORM() ->
         [windows] Kejik' taq cha'oj, taq yaketal, natab'äl, ewan taq tzij chuqa' juley chik taq rutzij:
@@ -53,7 +53,10 @@ no-migration-sources = Man tikirel ta xe'ilitäj taq cholkema' ri k'o taq yaketa
 import-source-page-title = Kek'am runuk'ulem chuqa' taq tzij
 import-items-page-title = Taq ruch'akulal xkek'am
 import-items-description = Ke'acha' achike taq ruch'akulal xekek'am:
-import-migrating-page-title = Tajin nik'am…
+import-permissions-page-title = Tiya' q'ij chi re { -brand-short-name }
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS nrajo' chi nib'ïx chi ri { -brand-short-name } tok pa ruyaketal Safari. Tapitz'a' pa “Tisamajïx” chuqa' tacha' ri “Bookmarks.plist” yakb'äl pa ri rupas richin niqaj yakb'äl q'aläj.
+import-migrating-page-title = Nijik…
 import-migrating-description = Tajin nik'am re taq ruch'akulal re'…
 import-select-profile-page-title = Tichax rub'anikil
 import-select-profile-description = Tikirel yek'am taq tzij chi kikojol re taq rub'anikil re':
@@ -88,6 +91,7 @@ imported-edge-reading-list = Rucholajem taq sik'inem (richin Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.
@@ -109,9 +113,9 @@ browser-data-history-label =
            *[other] Runatab'al Okem pa K'amaya'l
         }
 browser-data-formdata-checkbox =
-    .label = Yakon Kinatab'al taq Nojwuj
+    .label = Xyak Runojwuj Natab'äl
 browser-data-formdata-label =
-    .value = Yakon Kinatab'al taq Nojwuj
+    .value = Xyak Runojwuj Natab'äl
 # This string should use the same phrase for "logins and passwords" as the
 # label in the main hamburger menu that opens about:logins.
 browser-data-passwords-checkbox =

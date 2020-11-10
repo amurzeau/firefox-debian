@@ -94,6 +94,7 @@ newtab-menu-show-privacy-info = Sponsorii noștri și confidențialitatea ta
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = Terminat
+newtab-privacy-modal-button-manage = Gestionează setările conținuturilor sponsorizate
 newtab-privacy-modal-header = Confidențialitatea ta contează.
 newtab-privacy-modal-paragraph-2 = În plus față de afișarea unor articole captivante, îți arătăm și conținuturi relevante foarte bine cotate de la sponsori selectați. Fii fără grijă, <strong>datele tale de navigare nu pleacă niciodată din exemplarul tău personal de { -brand-product-name }</strong> — nici noi nu le vedem, nici sponsorii noștri.
 newtab-privacy-modal-link = Află cum funcționează confidențialitatea în fila nouă
@@ -139,6 +140,11 @@ newtab-label-download = Descărcat
 #  $sponsorOrSource (String): This is the name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · Sponsorizat
 
+# This string is used at the bottom of story cards to indicate sponsored content
+# Variables:
+#  $sponsor (String): This is the name of a sponsor
+newtab-label-sponsored-by = Sponsorizat de { $sponsor }
+
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
 
@@ -151,7 +157,7 @@ newtab-section-menu-add-topsite = Adaugă site de top
 newtab-section-menu-add-search-engine = Adaugă motor de căutare
 newtab-section-menu-move-up = Mută în sus
 newtab-section-menu-move-down = Mută în jos
-newtab-section-menu-privacy-notice = Declarație de confidențialitate
+newtab-section-menu-privacy-notice = Notificare privind confidențialitatea
 
 ## Section aria-labels
 

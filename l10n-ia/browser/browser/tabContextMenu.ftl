@@ -45,20 +45,21 @@ reopen-in-container =
     .label = Reaperir in un scheda contextual
     .accesskey = e
 move-to-start =
-    .label = Mover al initio
+    .label = Displaciar al initio
     .accesskey = i
 move-to-end =
-    .label = Mover al fin
+    .label = Displaciar al fin
     .accesskey = f
 move-to-new-window =
     .label = Displaciar a un nove fenestra
     .accesskey = f
-undo-close-tab =
-    .label = Reaperir le ultime scheda claudite
-    .accesskey = u
 tab-context-close-multiple-tabs =
     .label = Clauder plure schedas
     .accesskey = p
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -74,8 +75,24 @@ close-tabs =
     .label = Clauder le schedas
     .accesskey = S
 move-tabs =
-    .label = Mover le schedas
-    .accesskey = v
+    .label = Displaciar schedas
+    .accesskey = D
 move-tab =
     .label = Mover le scheda
     .accesskey = v
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Clauder schedas
+            [one] Clauder le scheda
+           *[other] Clauder le schedas
+        }
+    .accesskey = C
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Displaciar scheda
+            [one] Displaciar scheda
+           *[other] Displaciar schedas
+        }
+    .accesskey = M

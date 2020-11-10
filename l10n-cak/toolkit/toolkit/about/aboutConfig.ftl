@@ -29,9 +29,9 @@ config-focus-search-2 =
 ## These strings are used for column headers
 
 config-pref-column =
-    .label = Rub'i' ajowab'äl
+    .label = Rub'i' Ajowab'äl
 config-lock-column =
-    .label = Amaq'
+    .label = B'anikil
 config-type-column =
     .label = Ruwäch
 config-value-column =
@@ -48,7 +48,7 @@ config-column-chooser =
 
 config-copy-pref =
     .key = C
-    .label = Wachib'exïk
+    .label = Tiwachib'ëx
     .accesskey = c
 
 config-copy-name =
@@ -64,12 +64,12 @@ config-modify =
     .accesskey = T
 
 config-toggle =
-    .label = Tik'ex
+    .label = Tik'exlöx
     .accesskey = T
 
 config-reset =
-    .label = Tikirib'alil
-    .accesskey = T
+    .label = Titzolïx
+    .accesskey = o
 
 config-new =
     .label = K'ak'a'

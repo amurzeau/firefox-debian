@@ -2,26 +2,28 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
+# This file gets parsed into a JS dictionary of all known error message ids in
+# gen_aboutneterror_codes.py . If we end up needing fluent attributes or
+# refactoring them in some way, the script will need updating.
+
 # Variables:
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
 ssl-connection-error = Došlo je do pogreške prilikom povezivanja na { $hostname }. { $errorMessage }
-
 # Variables:
 # $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix = Kȏd greške: { $error }
-
 psmerr-ssl-disabled = Sigurno povezivanje nije moguće, jer je SSL protokol deaktiviran.
 psmerr-ssl2-disabled = Sigurno povezivanje nije moguće, jer stranica koristi stariju, nesigurnu verziju protokola.
-
 # This is a multi-line message.
 psmerr-hostreusedissuerandserial =
     Primljen je neispravni certifikat. Kontaktiraj administratora poslužitelja ili pošalji e-poruku sa sljedećim informacijama:
     
     Tvoj certifikat sadrži isti serijski broj kao i još barem jedan certifikat, kojeg je izdalo isto certifikacijsko tijelo. Nabavi novi certifikat s jednistvenim serijskim brojem.
-
-ssl-error-export-only-server = Sigurna komunikacija nije moguća. Čvor ne podržava kriptiranje visoke razine.
-ssl-error-us-only-server = Sigurna komunikacija nije moguća. Čvor zahtijeva kriptiranje visoke razine, koje nije podržano.
+ssl-error-export-only-server = Sigurna komunikacija nije moguća. Čvor ne podržava šifriranje visoke razine.
+ssl-error-us-only-server = Sigurna komunikacija nije moguća. Čvor zahtijeva šifriranje visoke razine, koje nije podržano.
 ssl-error-no-cypher-overlap = Sigurna komunikacija s čvorom nije moguća: nema zajedničkih algoritama šifriranja.
 ssl-error-no-certificate = Certifikat ili ključ potreban za prijavu nije moguće pronaći.
 ssl-error-bad-certificate = Sigurna komunikacija s čvorom nije moguća: certifikat čvora je odbijen.
@@ -38,7 +40,7 @@ ssl-error-bad-mac-alert = SSL čvor obavještava o netočnoj poruci ovjere koda.
 ssl-error-bad-cert-alert = SSL čvor ne može potvrditi tvoj certifikat.
 ssl-error-revoked-cert-alert = SSL čvor je odbio tvoj certifikat jer je opozvan.
 ssl-error-expired-cert-alert = SSL čvor je odbio tvoj certifikat jer je istekao.
-ssl-error-ssl-disabled = Spajanje nije moguće: SSL je onemogućen.
+ssl-error-ssl-disabled = Spajanje nije moguće: SSL je deaktiviran.
 ssl-error-fortezza-pqg = Spajanje nije moguće: SSL čvor je druga FORTEZZA domena.
 ssl-error-unknown-cipher-suite = Zatražen je nepoznati SSL šifrator.
 ssl-error-no-ciphers-supported = U ovom programu nije prisutan niti aktiviran nijedan šifrator.
@@ -104,7 +106,7 @@ ssl-error-no-server-key-for-alg = Poslužitelj nema ključ za pokušani algorita
 ssl-error-token-insertion-removal = PKCS#11 token je unijet ili uklonjen dok je operacija bila u tijeku.
 ssl-error-token-slot-not-found = Nijedan PKCS#11 token nije pronađen za dovršetak potrebne operacije.
 ssl-error-no-compression-overlap = Sigurna komunikacija s čvorom nije moguća: nema zajedničkih algoritmaama sažimanja.
-ssl-error-handshake-not-completed = Pokretanje drugog SSL rukovanja nije moguće dok se trenutno rukovanje ne dovrši.
+ssl-error-handshake-not-completed = Pokretanje drugog SSL rukovanja nije moguće dok se trenutačno rukovanje ne dovrši.
 ssl-error-bad-handshake-hash-value = Od čvora su primljeni netočni iznosi raspršenog rukovanja.
 ssl-error-cert-kea-mismatch = Dani certifikat ne može biti upotrjebljen s odabranim algoritmom razmjene ključa.
 ssl-error-no-trusted-ssl-client-ca = Ne vjeruje se nijednom certifikacijskom tijelu za SSL ovjeru klijenta.
@@ -121,7 +123,7 @@ ssl-error-insufficient-security-alert = Poslužitelj zahtijeva sigurniji šifrat
 ssl-error-internal-error-alert = Čvor javlja da je naišao na internu grešku.
 ssl-error-user-canceled-alert = Korisnik čvora je otkazao rukovanje.
 ssl-error-no-renegotiation-alert = Čvor ne dozvoljava ponovno pregovaranje sigurnosnih parametara SSL-a.
-ssl-error-server-cache-not-configured = Privremena memorija SSL poslužitelja nije podešena i nije onemogućena za ovaj priključak.
+ssl-error-server-cache-not-configured = Privremena memorija SSL poslužitelja nije podešena i nije deaktivirana za ovaj priključak.
 ssl-error-unsupported-extension-alert = SSL čvor ne podržava traženo TLS pozdravno proširenje.
 ssl-error-certificate-unobtainable-alert = SSL čvor nije mogao dobiti tvoj certifikat iz ponuđenog URL-a.
 ssl-error-unrecognized-name-alert = SSL čvor nema nijedan certifikat za traženi DNS naziv.
@@ -147,7 +149,7 @@ ssl-error-rx-unexpected-cert-status = SSL je primio neočekivanu "Certificate St
 ssl-error-unsupported-hash-algorithm = TLS čvor koristi nepodržani hash algoritam.
 ssl-error-digest-failure = Digest funkcija nije uspjela.
 ssl-error-incorrect-signature-algorithm = Digitalno potpisan element ima netočno definiran algoritam potpisa.
-ssl-error-next-protocol-no-callback = Proširenje dogovaranja idućeg protokola je aktivirano, ali ponovni poziv je obrisan prije no što je bio potreban.
+ssl-error-next-protocol-no-callback = Proširenje dogovaranja idućeg protokola je aktivirano, ali ponovni poziv je izbrisan prije no što je bio potreban.
 ssl-error-next-protocol-no-protocol = Poslužitelj ne potžava nijedan protokol kojeg klijent oglašava u ALPN proširenju.
 ssl-error-inappropriate-fallback-alert = Poslužitelj je odbio rukovanja jer je klijent zatražio prelazak na nižu verziju TLS-a, koju poslužitelj ne podržava.
 ssl-error-weak-server-cert-key = Certifikat poslužitelja je sadržavao javni ključ koji je pre slab.
@@ -187,7 +189,7 @@ sec-error-cert-valid = Ovaj certifikat je važeći.
 sec-error-cert-not-valid = Ovaj certifikat nije važeći.
 sec-error-cert-no-response = Cert biblioteka: nema odgovora
 sec-error-expired-issuer-certificate = Certifikat izdavača certifikata je istekao. Provjeri datum i vrijeme na tvom sustavu.
-sec-error-crl-expired = CRL za izdavača certifikata je istekao. Ažuriraj ga ili provjeri datum i vrijeme na tvom sustavu.
+sec-error-crl-expired = CRL za izdavača certifikata je istekao. Aktualiziraj ga ili provjeri datum i vrijeme na tvom sustavu.
 sec-error-crl-bad-signature = CRL za izdavača certifikata ima nevažeći potpis.
 sec-error-crl-invalid = Novi CRL ima nevažeći format.
 sec-error-extension-value-invalid = Vrijednost proširenja certifikata je nevažeća.
@@ -239,7 +241,7 @@ sec-error-pkcs12-invalid-mac = Uvoz nije moguć. Nevažeći MAC. Netočna lozink
 sec-error-pkcs12-unsupported-mac-algorithm = Uvoz nije moguć. MAC algoritam nije podržan.
 sec-error-pkcs12-unsupported-transport-mode = Uvoz nije moguć. Podržan je samo integritet lozinke i privatni način.
 sec-error-pkcs12-corrupt-pfx-structure = Uvoz nije moguć. Struktura datoteke je oštećena.
-sec-error-pkcs12-unsupported-pbe-algorithm = Uvoz nije moguć. Algoritam kriptiranja nije podržan.
+sec-error-pkcs12-unsupported-pbe-algorithm = Uvoz nije moguć. Algoritam šifriranja nije podržan.
 sec-error-pkcs12-unsupported-version = Uvoz nije moguć. Verzija datoteke nije podržana.
 sec-error-pkcs12-privacy-password-incorrect = Uvoz nije moguć. Netočna lozinka privatnosti.
 sec-error-pkcs12-cert-collision = Uvoz nije moguć. Isti nadimak već postoji u bazi podataka.
@@ -266,8 +268,8 @@ sec-error-js-invalid-module-name = Nevaljani naziv modula.
 sec-error-js-invalid-dll = Nevaljana putanja/ime modula.
 sec-error-js-add-mod-failure = Dodavanje modula nije moguće
 sec-error-js-del-mod-failure = Uklanjanje modula nije moguće
-sec-error-old-krl = Novi KRL nije kasniji od trenutnog.
-sec-error-ckl-conflict = Novi CKL ima drugačijeg izdavača od trenutnog CKL-a. Obrišite trenutni CKL.
+sec-error-old-krl = Novi KRL nije kasniji od trenutačnog.
+sec-error-ckl-conflict = Novi CKL ima drugačijeg izdavača od trenutačnog CKL-a. Izbriši trenutačni CKL.
 sec-error-cert-not-in-name-space = Certifikacijskom tijelu ovog certifikata nije dopušteno izdati certifikat s ovim nazivom.
 sec-error-krl-not-yet-valid = Popis opozvanih ključeva za ovaj certifikat još nije valjan.
 sec-error-crl-not-yet-valid = Popis opozvanih certifikata za ovaj certifikat još nije valjan.
@@ -332,7 +334,7 @@ sec-error-expired-password = Lozinka je istekla.
 sec-error-locked-password = Lozinka je zaključana.
 sec-error-unknown-pkcs11-error = Nepoznata PKCS #11 greška.
 sec-error-bad-crl-dp-url = Neispravan ili nepodržan URL u imenu CRL distribucije.
-sec-error-cert-signature-algorithm-disabled = Certifikat je potpisan koristeći algoritam potpisivanja koji je onemogućen jer se smatra nesigurnim.
+sec-error-cert-signature-algorithm-disabled = Certifikat je potpisan koristeći algoritam potpisivanja koji je deaktiviran, jer se smatra nesigurnim.
 mozilla-pkix-error-key-pinning-failure = Poslužitelj koristi "key pinning" (HPKP), ali nije moguće sastaviti nijedan lanac certifikata koji odgovara pinsetu. "Key pinning" prekršaji se ne mogu zaobići.
 mozilla-pkix-error-ca-cert-used-as-end-entity = Poslužitelj koristi certifikat s proširenjem osnovnih uvjeta koji ga identificiraju kao certifikacijsko tijelo. Za ispravno izdan certifikat, ovo ne bi smio biti slučaj.
 mozilla-pkix-error-inadequate-key-size = Poslužitelj je prezentirao certifikat s ključem premale dužine za uspostavljanje sigurne veze.

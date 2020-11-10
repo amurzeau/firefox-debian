@@ -3,9 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 process-type-web = Webinhalt
-# process used to run privileged pages,
-# such as about:home
-process-type-privileged = Inhalt mit zusätzlichen Rechten
 # process used to run privileged about pages,
 # such as about:home
 process-type-privilegedabout = about-Seite mit zusätzlichen Rechten
@@ -27,4 +24,4 @@ process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Socket
 # process preallocated; may change to other types
-process-type-prealloc = preallokiert
+process-type-prealloc = Voralloziert

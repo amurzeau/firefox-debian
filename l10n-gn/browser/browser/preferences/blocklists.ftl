@@ -16,6 +16,9 @@ blocklist-button-cancel =
 blocklist-button-ok =
     .label = Moambue ñongatu
     .accesskey = S
+blocklist-dialog =
+    .buttonlabelaccept = Moambue ñongatu
+    .buttonaccesskeyaccept = S
 # This template constructs the name of the block list in the block lists dialog.
 # It combines the list name and description.
 # e.g. "Standard (Recommended). This list does a pretty good job."

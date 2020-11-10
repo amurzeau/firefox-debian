@@ -5,57 +5,46 @@
 permissions-window =
     .title = અપવાદો
     .style = width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = વેબ સાઈટનું સરનામું
     .accesskey = d
-
 permissions-block =
     .label = બ્લોક
     .accesskey = B
-
 permissions-session =
     .label = સત્ર માટે પરવાનગી આપો
     .accesskey = S
-
 permissions-allow =
     .label = પરવાનગી આપો
     .accesskey = A
-
 permissions-site-name =
     .label = વેબસાઇટ
-
 permissions-status =
     .label = પરિસ્થિતિ
-
 permissions-remove =
     .label = વેબસાઇટ દૂર કરો
     .accesskey = R
-
 permissions-remove-all =
     .label = બધી વેબસાઇટ્સને દૂર કરો
     .accesskey = e
-
 permissions-button-cancel =
     .label = રદ કરો
     .accesskey = C
-
 permissions-button-ok =
     .label = પરિવર્તનો સાચવો
     .accesskey = S
-
+permission-dialog =
+    .buttonlabelaccept = પરિવર્તનો સાચવો
+    .buttonaccesskeyaccept = S
 permissions-searchbox =
     .placeholder = વેબસાઇટ શોધો
-
 permissions-capabilities-allow =
     .label = માન્યતા આપો
 permissions-capabilities-block =
     .label = બ્લોક
 permissions-capabilities-prompt =
     .label = હંમેશા પૂછો
-
 permissions-capabilities-listitem-allow =
     .value = માન્યતા આપો
 permissions-capabilities-listitem-block =
@@ -70,10 +59,6 @@ permissions-invalid-uri-label = મહેરબાની કરીને મા�
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-content-blocking-window =
-    .title = અપવાદો - સામગ્રી અવરોધિત
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = તમે આ સાઇટ માટે સામગ્રી અવરોધને નિષ્ક્રીય કર્યું છે.
 
 ## Exceptions - Cookies
 
@@ -103,14 +88,8 @@ permissions-exceptions-addons-window =
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = કઈ વેબ સાઈટો એડ-ઓન સ્થાપિત કરવા માટે માન્ય છે તે તમે સ્પષ્ટ કરી શકો છો. તમે જે સાઈટને પરવાનગી આપવા માંગો છો તેનું ચોક્કસ સરનામું લખો અને પછી પરવાનગી ક્લિક કરો.
 
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = અપવાદો - સ્વચાલિત
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = તમે ઑડિઓ ચલાવતા અવાજ સાથે મીડિયાને હંમેશા અથવા ક્યારેય મંજૂરી આપતા નથી તે નિર્દિષ્ટ કરી શકો છો. તમે સંચાલિત કરવા માંગો છો તે સાઇટનું સરનામું લખો અને પછી અવરોધિત કરો અથવા પરવાનગી આપો પર ક્લિક કરો.
-
 ## Site Permissions - Autoplay
+
 
 ## Site Permissions - Notifications
 
@@ -133,6 +112,7 @@ permissions-site-location-disable-label =
 permissions-site-location-disable-desc = આ તમારા સ્થાનને મેળવવા માટે પરવાનગીની વિનંતિ કરવાથી ઉપરોક્ત સૂચિબદ્ધ કોઈપણ વેબસાઇટ્સને અટકાવશે. તમારા સ્થાનને મેળવવાની અવરોધિત કરવાથી કેટલીક વેબસાઈટ સુવિધાઓ તૂટી શકે છે.
 
 ## Site Permissions - Virtual Reality
+
 
 ## Site Permissions - Camera
 

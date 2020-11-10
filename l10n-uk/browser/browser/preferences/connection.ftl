@@ -35,12 +35,6 @@ connection-proxy-http = Проксі по HTTP
     .accesskey = H
 connection-proxy-http-port = Порт
     .accesskey = о
-connection-proxy-http-share =
-    .label = Використовувати цей проксі-сервер для всіх протоколів
-    .accesskey = и
-
-connection-proxy-ssl = Проксі по SSL
-    .accesskey = L
 connection-proxy-http-sharing =
     .label = Також використовувати цей проксі для FTP та HTTPS
     .accesskey = ж
@@ -85,7 +79,7 @@ connection-proxy-reload =
 connection-proxy-autologin =
     .label = Не запитувати про автентифікацію, якщо пароль вже збережено
     .accesskey = а
-    .tooltip = Якщо у вас є збережені дані для входу, ця опція проведе вашу авторизацію на проксі без запитів. При невдалій авторизації ви отримаєте запит.
+    .tooltip = Якщо у вас є збережені дані для входу, цей параметр виконає автентифікацію на проксі без запитів. При невдалій автентифікації ви отримаєте запит.
 
 connection-proxy-socks-remote-dns =
     .label = Проксі DNS при використанні SOCKS v5

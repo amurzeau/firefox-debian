@@ -27,14 +27,14 @@ pin-tab =
     .label = Fäst flik
     .accesskey = F
 unpin-tab =
-    .label = Gör om till vanlig flik
-    .accesskey = G
+    .label = Lösgör flik
+    .accesskey = L
 pin-selected-tabs =
     .label = Fäst flikar
     .accesskey = f
 unpin-selected-tabs =
-    .label = Gör om till vanliga flikar
-    .accesskey = f
+    .label = Lösgör flikar
+    .accesskey = L
 bookmark-selected-tabs =
     .label = Bokmärk flikar…
     .accesskey = k
@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Flytta till nytt fönster
     .accesskey = t
-undo-close-tab =
-    .label = Ångra flikstängning
-    .accesskey = g
 tab-context-close-multiple-tabs =
     .label = Stäng flera flikar
     .accesskey = f
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -78,4 +79,20 @@ move-tabs =
     .accesskey = t
 move-tab =
     .label = Flytta flik
+    .accesskey = t
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Stäng flik
+            [one] Stäng flik
+           *[other] Stäng flikar
+        }
+    .accesskey = S
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Flytta flik
+            [one] Flytta flik
+           *[other] Flytta flikar
+        }
     .accesskey = t

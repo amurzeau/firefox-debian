@@ -2,6 +2,10 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY % brandDTD
+    SYSTEM "chrome://branding/locale/brand.dtd">
+  %brandDTD;
+
 <!ENTITY playButton.playLabel "Spylje">
 <!ENTITY playButton.pauseLabel "Pauze">
 <!ENTITY muteButton.muteLabel "Lûd út">
@@ -18,18 +22,14 @@
 the Picture-in-Picture video toggle button when the mouse is hovering it. -->
 <!ENTITY pictureInPicture.label "Picture-in-Picture">
 
-<!ENTITY stats.media "Media">
-<!ENTITY stats.size "Grutte">
-<!ENTITY stats.activity "Aktiviteit">
-<!ENTITY stats.activityPaused "Pauzearre">
-<!ENTITY stats.activityPlaying "Spilet">
-<!ENTITY stats.activityEnded "Beëinige">
-<!ENTITY stats.activitySeeking "(sykje)">
-<!ENTITY stats.volume "Folume">
-<!ENTITY stats.framesParsed "Frames ferwurke">
-<!ENTITY stats.framesDecoded "Frames dekodearre">
-<!ENTITY stats.framesPresented "Frames presintearre">
-<!ENTITY stats.framesPainted "Frames makke">
+<!-- LOCALIZATION NOTE (pictureInPictureToggle.label): This string is used as the
+label for a variation of the Picture-in-Picture video toggle button when the mouse is
+hovering over the video. -->
+<!ENTITY pictureInPictureToggle.label "Picture-in-picture besjen">
+<!-- LOCALIZATION NOTE (pictureInPictureExplainer): This string is used as part of
+a variation of the Picture-in-Picture video toggle button. When using this variation,
+this string appears below the toggle when the mouse hovers the toggle. -->
+<!ENTITY pictureInPictureExplainer "Fideo’s op de foargrûn ôfspylje wylst jo oare saken yn &brandShortName; dogge">
 
 <!ENTITY error.aborted "Fideo laden stopt.">
 <!ENTITY error.network "Fideo ôfspyljen ôfbrutsen fanwegen in netwurkflater.">
@@ -39,13 +39,6 @@ the Picture-in-Picture video toggle button when the mouse is hovering it. -->
 <!ENTITY error.generic "Fideo ôfspyljen ôfbrutsen fanwegen in ûnbekende flater.">
 
 <!ENTITY status.pictureInPicture "Dizze fideo wurdt yn Picture-in-Picture-modus ôfspile.">
-
-<!-- LOCALIZATION NOTE (scrubberScale.nameFormat): the #1 string is the current
-media position, and the #2 string is the total duration. For example, when at
-the 5 minute mark in a 6 hour long video, #1 would be "5:00" and #2 would be
-"6:00:00", result string would be "5:00 of 6:00:00 elapsed".
--->
-<!ENTITY scrubberScale.nameFormat "#1 fan #2 ferrûn">
 
 <!-- LOCALIZATION NOTE (positionAndDuration.nameFormat): the #1 string is the current
 media position, and the #2 string is the total duration. For example, when at

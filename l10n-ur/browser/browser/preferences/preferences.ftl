@@ -7,13 +7,6 @@ do-not-track-learn-more = مزید سیکھیں
 do-not-track-option-always =
     .label = ہمیشہ
 
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] اختیارات
-           *[other] ترجیحات
-        }
-
 pref-page-title =
     { PLATFORM() ->
         [windows] اختیارات
@@ -57,6 +50,11 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+
+pane-experimental-title = { -brand-short-name } تجربات
+category-experimental =
+    .tooltiptext = { -brand-short-name } تجربات
+pane-experimental-subtitle = احتیاط سے آگے بڑھیں
 
 help-button-label = { -brand-short-name } تعاون
 addons-button-label = ایکسٹینشن اور تھیم
@@ -412,12 +410,6 @@ update-application-use-service =
     .label = تازہ کاریاں تنصیب کرنے کے لیے پس منظر سروس استعمال کریں
     .accesskey = b
 
-update-enable-search-update =
-    .label = تلاش کے انجن کو خود بخود اپڈیٹ  کریں
-    .accesskey = e
-
-update-pref-write-failure-title = لکھیں مے ناکام
-
 update-setting-write-failure-title = تازہ کاری کی ترجیحات کو محفوظ کرنے میں مسلہ ہے
 
 update-in-progress-title = اپ ڈیٹ جاری ہے
@@ -562,13 +554,12 @@ home-prefs-topsites-description = سائٹس جو آُپ سب سے زیادہ م
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 home-prefs-recommended-by-header =
     .label = { $provider } کی جانب سے تجویز کردہ
+
 ##
 
-home-prefs-recommended-by-learn-more = یہ کس طرح کام کرتا ہے
+home-prefs-recommended-by-learn-more = یہ کیسے کام کرتا ہے
 home-prefs-recommended-by-option-sponsored-stories =
     .label = سرپرست شدہ کہاناں
 
@@ -607,8 +598,6 @@ search-bar-shown =
     .label = سرچ بار کا ٹولبار مے ا ضافہ کریں۔
 
 search-engine-default-header = طےشدہ تلاش انجن
-search-engine-default-desc = پتے کی بار اور تلاش بار میں استعمال کرنے کیلئے طے شدہ تلاش انجن منتخب کریں۔
-
 search-engine-default-desc-2 = یہ پتہ کی بار اور تلاش کی بار میں یہ آپکا طے شدہ تلاش انجن ہے۔ آپ کسی بھی وقت سوئچ کر سکتے ہیں
 search-engine-default-private-desc-2 = نجی ونڈوں کے لیئے مختلف'طے شدہ تلاش انجن منتخب کریں
 search-separate-default-engine =
@@ -628,8 +617,6 @@ search-show-suggestions-url-bar-option =
 
 search-show-suggestions-private-windows =
     .label = نجی ونڈوز میں تلاش کی تجاویز دکھائیں
-
-suggestions-addressbar-settings = براؤزنگ سابقات، بُک مارکس ، اور ٹیب تجاویز کیلئے ترجیحات تبدیل کریں
 
 search-suggestions-cant-show = تلاش کردہ تجاویز محل وقوع کے بار کے نتائج میں دکھاءی نھیں جائنگے کیونکہ { -brand-short-name } سابقات کبھی یاد نہیں رکھنے پر تشکیل کردہ ہے۔
 
@@ -660,8 +647,6 @@ search-keyword-warning-bookmark = آپ نے ایسا کلیدی لفظ منتخ�
 
 ## Containers Section
 
-containers-back-link = «  واہس جائیں
-
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -691,14 +676,6 @@ containers-remove-button =
 sync-signedout-caption = اپنی ویب اپنے ساتھ رکھیں
 sync-signedout-description = اپنے تمام ڈیوائس اپنے بک مارکس، سابقات، ٹیب، پاس ورڈ، ایڈ اون، اور ترجیحات کو ہم وقت ساز کریں۔
 
-sync-signedout-account-title = کسی { -fxaccount-brand-name } کے ساتھ جڑیں
-sync-signedout-account-create = اکائونٹ نہیں ہے؟ شروع کریں
-    .accesskey = c
-
-sync-signedout-account-signin =
-    .label = سائن ان…
-    .accesskey = I
-
 sync-signedout-account-signin2 =
     .label = { -sync-brand-short-name } میں سائن ان کریں
     .accesskey = i
@@ -721,10 +698,6 @@ sync-mobile-promo = Firefox ڈاؤن لوڈ کریں <img data-l10n-name="androi
 sync-profile-picture =
     .tooltiptext = پروفائل کی تصویر تبدیل کریں
 
-sync-disconnect =
-    .label = منقطع کریں…
-    .accesskey = D
-
 sync-sign-out =
     .label = سائن آؤٹ…
     .accesskey = گ
@@ -746,9 +719,6 @@ sync-remove-account =
 sync-sign-in =
     .label = سائن ان کریں
     .accesskey = g
-
-sync-signedin-settings-header = ہمہ وقت ساز سیٹنگز
-sync-signedin-settings-desc = { -brand-short-name } کا استعمال کرتے ہوئے اپنے آلات پر کیا سنکرونائز کرنا ہے اس کا انتخاب کریں۔
 
 ## Sync section - enabling or disabling sync.
 
@@ -809,11 +779,6 @@ sync-engine-tabs =
     .tooltiptext = تمام ہمہ وقت ساز آلات میں  کیا کھلا ہے اس کی فہرست
     .accesskey = t
 
-sync-engine-logins =
-    .label = لاگانز
-    .tooltiptext = صارف کا نام اور پاسورڈ حو آپ نے نحفوظ کیئے
-    .accesskey = L
-
 sync-engine-logins-passwords =
     .label = لاگ ان اور پاس ورڈ
     .tooltiptext = صارف کے نام اور پاسورڈ جو آپ  نے محفوظ کیے
@@ -856,22 +821,11 @@ sync-device-name-save =
 
 sync-connect-another-device = ایک اور آلہ جوڑیں
 
-sync-manage-devices = آلات کو منظم کریں
-
-sync-fxa-begin-pairing = ایک آلہ جوڑیں
-
-sync-tos-link = سروس کی ٹرمز
-
-sync-fxa-privacy-notice = اطلاع نامہ نجی نوعیت
-
 ## Privacy Section
 
 privacy-header = براؤزر رازداری
 
 ## Privacy Section - Forms
-
-
-logins-header = لاگ ان & پاس ورڈ
 
 ## Privacy Section - Logins and Passwords
 
@@ -901,11 +855,26 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = ماسٹر پاس ورڈ استعمال کریں
     .accesskey = U
+forms-primary-pw-use =
+    .label = بنیادی پاس ورڈ استعمال کریں
+    .accesskey = U
+forms-primary-pw-learn-more-link = مزید سیکھیں
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = ماسٹر پاس ورڈ تبدیل کریں…
     .accesskey = M
 
 forms-master-pw-fips-title = فی الحال آپ FIPS موڈ میں ہیں۔ FIPS کو ایک ناخالی ماسٹر پاس ورڈ درکار ہے۔
+forms-primary-pw-change =
+    .label = بنیادی پاس ورڈ تبدیل کریں…
+    .accesskey = P
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = پہلے ماسٹر پاس ورڈ کے نام سے جانا جاتا تھا
+
 forms-master-pw-fips-desc = پاس ورڈ تبدیلی ناکام
 
 ## OS Authentication dialog
@@ -915,6 +884,12 @@ forms-master-pw-fips-desc = پاس ورڈ تبدیلی ناکام
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = ماسٹر پاس ورڈ بنائیں
+
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = ایک بنیادی پاس ورڈ بنائیں
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -992,9 +967,6 @@ sitedata-disallow-cookies-option =
 sitedata-block-desc = بلاک کی ہوئی مواد
     .accesskey = T
 
-sitedata-option-block-trackers =
-    .label = تیسری تنظیم کے ٹریکر
-
 sitedata-option-block-cross-site-trackers =
     .label = کراس-سائٹ ٹریکر
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -1018,6 +990,10 @@ sitedata-cookies-permissions =
     .label = اجازتوں کو منظم کریں…
     .accesskey = P
 
+sitedata-cookies-exceptions =
+    .label = مستثنیات کو منظم کریں…
+    .accesskey = x
+
 ## Privacy Section - Address Bar
 
 addressbar-header = پتہ کی بار
@@ -1033,33 +1009,17 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = ٹیب کھولیے
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = مقبول سائٹس
+    .accesskey = T
 
 addressbar-suggestions-settings = تلاش کے انجن کی تجاویز کے لئے ترجیحات کو بدلیں
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = مواد روکنا
-
 content-blocking-enhanced-tracking-protection = بہتر سراغ کاری تحفظ
 
 content-blocking-learn-more = مزید سیکھیں
-
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = معیاری
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = سخت
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = مخصوص
-    .accesskey = C
-
-content-blocking-strict-description = مضبوط تحفظ ، کچھ سائٹس کے ٹوٹنے کا سبب بن سکتا ہے۔
-content-blocking-custom-desc = چنیں کیا بلاک کرنا ہے
-
-content-blocking-private-trackers = صرف نجی ونڈوز میں معلوم شدہ ٹریکرز
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1085,25 +1045,18 @@ content-blocking-cross-site-tracking-cookies = کراس-سائٹ ٹریکنگ ک
 content-blocking-social-media-trackers = سوشل میڈیا ٹریکرز
 content-blocking-all-cookies = تمام کوکیز
 content-blocking-unvisited-cookies = نا دیکھی گئی سائٹس کی کوکیز
-content-blocking-all-windows-trackers = تمام ونڈوز میں معلوم شدہ ٹریکرز
 content-blocking-all-windows-tracking-content = تمام ونڈوز میں مواد کی  ٹریکنگ
 content-blocking-all-third-party-cookies = تمام تیسری تنظیم کے کوکیز
 content-blocking-cryptominers = کریپٹومینر
 content-blocking-fingerprinters = فنگر پرنٹرز
 
 content-blocking-warning-title = دھیان دیں!
-content-blocking-learn-how = جانیں کہ کس طرح
-
 content-blocking-warning-learn-how = کیسے سیکھیں
 
 content-blocking-reload-description = آپ کو ان تبدیلیوں کو لاگو کرنے کے لئے اپنے ٹیب کو دوبارہ لوڈ کرنے کی ضرورت ہوگی۔
 content-blocking-reload-tabs-button =
     .label = تمام ٹیب پھر لوڈ کریں
     .accesskey = R
-
-content-blocking-trackers-label =
-    .label = ٹریکرس
-    .accesskey = T
 
 content-blocking-tracking-content-label =
     .label = مواد کی ٹریکنگ
@@ -1169,14 +1122,6 @@ permissions-notification-settings =
     .label = سیٹنگز…
     .accesskey = t
 permissions-notification-link = مزید سیکھیں
-
-permissions-block-autoplay-media2 =
-    .label = ویب سائٹس کو خود بخود آواز چلانے  سے روکیں
-    .accesskey = B
-
-permissions-block-autoplay-media-exceptions =
-    .label = استثنیات…
-    .accesskey = E
 
 permissions-autoplay = آٹو پلے
 
@@ -1285,6 +1230,10 @@ space-alert-over-5gb-pref-button =
 space-alert-under-5gb-ok-button =
     .label = ٹھیک ہے مجھے سمجھ آگئی ہے
     .accesskey = K
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-learn-more = اورجانیے
 
 ## The following strings are used in the Download section of settings
 

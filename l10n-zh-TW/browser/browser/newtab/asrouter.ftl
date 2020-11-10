@@ -200,6 +200,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = 檢視全部
     .accesskey = S
+cfr-doorhanger-milestone-close-button = 關閉
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -233,3 +235,35 @@ cfr-whatsnew-protections-icon-alt = 盾牌圖示
 
 cfr-whatsnew-better-pdf-header = 更好的 PDF 閱讀體驗
 cfr-whatsnew-better-pdf-body = 現在可以直接在 { -brand-short-name } 直接開啟 PDF 文件，更輕鬆完成工作。
+
+## DOH Message
+
+cfr-doorhanger-doh-body = 您的隱私權相當重要。現在起，{ -brand-short-name } 會在您上網時，盡可能透過夥伴所提供的服務安全地進行 DNS 查詢，以保護您的隱私。
+cfr-doorhanger-doh-header = 更安全、加密的 DNS 查詢
+cfr-doorhanger-doh-primary-button = 好，知道了
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = 停用
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = 您的隱私權相當重要。{ -brand-short-name } 現在起會將您開啟的各個網站分別隔離於沙盒中，讓駭客更難偷到您的密碼、信用卡號、或其他敏感資訊。
+cfr-doorhanger-fission-header = 網站隔離
+cfr-doorhanger-fission-primary-button = 好，知道了
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = 了解更多
+    .accesskey = L
+# Deprecated
+cfr-doorhanger-fission-body = { -brand-short-name } 已為您開啟實驗性的 Fission（網站隔離）功能。Fission 透過將各個網站隔離在不同的處理程序中，為您與您造訪的網站提供更多一層的安全性保障。
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = 自動保護，不受隱蔽的手法追蹤
+cfr-whatsnew-clear-cookies-body = 有些網站會將您重新導向到偷偷設定 Cookie 進行追蹤的網站。{ -brand-short-name } 現在起，會自動清除這些 Cookie 讓您不被追蹤。
+cfr-whatsnew-clear-cookies-image-alt = 封鎖 Cookie 的插圖
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = 更多媒體控制元件
+cfr-whatsnew-media-keys-body = 使用鍵盤或耳機直接播放或暫停播放影音內容，讓您更簡單就能從另一個分頁、另一套軟體，甚至是在電腦鎖定時就控制媒體播放。您也可以使用「上一首」或「下一首」按鍵直接切換曲目。
+cfr-whatsnew-media-keys-button = 了解要怎麼做

@@ -13,27 +13,35 @@ cfr-doorhanger-pintab-heading = Пробајте ово: закачи језич
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Зашто видим ово
+
 cfr-doorhanger-extension-cancel-button = Не сада
-    .accesskey = Н
+    .accesskey = N
+
 cfr-doorhanger-extension-ok-button = Додај сада
-    .accesskey = Д
+    .accesskey = A
 cfr-doorhanger-pintab-ok-button = Закачи овај језичак
-    .accesskey = З
+    .accesskey = P
+
 cfr-doorhanger-extension-manage-settings-button = Управљај препорукама
-    .accesskey = У
+    .accesskey = M
+
 cfr-doorhanger-extension-never-show-recommendation = Не приказуј ми ову препоруку
-    .accesskey = Н
+    .accesskey = S
+
 cfr-doorhanger-extension-learn-more-link = Сазнајте више
+
 # This string is used on a new line below the add-on name
 # Variables:
 #   $name (String) - Add-on author name
 cfr-doorhanger-extension-author = по { $name }
+
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Препоруке
 cfr-doorhanger-extension-notification2 = Препорука
     .tooltiptext = Препорука за проширење
     .a11y-announcement = Препорука за проширење је доступна
+
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-feature-notification = Препорука
@@ -61,6 +69,7 @@ cfr-doorhanger-extension-total-users =
         [few] { $total } корисника
        *[other] { $total } корисника
     }
+
 cfr-doorhanger-pintab-description = Имајте брз приступ сајтовима које најчешће користите. Оставите сајтове отвореним у језичку (чак и након поновног покретања).
 
 ## These messages are steps on how to use the feature and are shown together.
@@ -68,8 +77,10 @@ cfr-doorhanger-pintab-description = Имајте брз приступ сајт�
 cfr-doorhanger-pintab-step1 = Кликните <b>десним кликом</b> на језичак који желите закачити.
 cfr-doorhanger-pintab-step2 = Изаберите <b>„Закачи језичак“</b> опцију из менија.
 cfr-doorhanger-pintab-step3 = Уколико има новости на сајту, видећете плаву тачку на вашем закаченом језичку.
+
 cfr-doorhanger-pintab-animation-pause = Заустави
 cfr-doorhanger-pintab-animation-resume = Настави
+
 
 ## Firefox Accounts Message
 
@@ -91,20 +102,26 @@ cfr-protections-panel-link-text = Сазнајте више
 # This string is used by screen readers to offer a text based alternative for
 # the notification icon
 cfr-badge-reader-label-newfeature = Нова функција:
+
 cfr-whatsnew-button =
     .label = Шта је ново
     .tooltiptext = Шта је ново
+
 cfr-whatsnew-panel-header = Шта је ново
+
 cfr-whatsnew-release-notes-link-text = Прочитајте напомене о издању
+
 cfr-whatsnew-fx70-title = { -brand-short-name } се сада бори још више за вашу приватност
 cfr-whatsnew-fx70-body =
     Заштита од праћења је побољшана у најновијој верзији и олакшава вам
     стварање сигурних лозинки за појединачне веб странице.
+
 cfr-whatsnew-tracking-protect-title = Заштитите се од софтвера за праћење
 cfr-whatsnew-tracking-protect-body =
     { -brand-short-name } блокира многе уобичајене софтвере за праћење с друштвених мрежа и других веб страница
     који завирују у вашу активност прегледавања.
 cfr-whatsnew-tracking-protect-link-text = Погледајте извештај о праћењу
+
 # This string is displayed before a large numeral that indicates the total
 # number of tracking elements blocked. Don’t add $blockedCount to your
 # localization, because it would result in the number showing twice.
@@ -116,9 +133,11 @@ cfr-whatsnew-tracking-blocked-title =
     }
 cfr-whatsnew-tracking-blocked-subtitle = Од { DATETIME($earliestDate, month: "long", year: "numeric") }
 cfr-whatsnew-tracking-blocked-link-text = Погледајте извештај
+
 cfr-whatsnew-lockwise-backup-title = Направите резервну копију лозинки
 cfr-whatsnew-lockwise-backup-body = Гениришите сигурне лозинке којима можете приступити било где да се пријављујете.
 cfr-whatsnew-lockwise-backup-link-text = Укључите резерве
+
 cfr-whatsnew-lockwise-take-title = Понесите ваше лозинке са собом
 cfr-whatsnew-lockwise-take-body =
     { -lockwise-brand-short-name } апликација омогућава сигуран приступ вашој
@@ -155,6 +174,7 @@ cfr-whatsnew-fingerprinter-counter-header =
        *[other] Блокирано узимача дигиталних отисака
     }
 cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } блокира многе узимаче дигиталних отисака, који тајно прикупљају информације о вашем уређају и радњама у сврху израде рекламног профила за вас.
+
 # Message variation when fingerprinters count is less than 10
 cfr-whatsnew-fingerprinter-counter-header-alt = Узимачи дигиталних отисака
 cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } може да блокира узимаче дигиталних отисака који тајно прикупљају информације о вашем уређају и радњама у сврху израде рекламног профила за вас.
@@ -164,14 +184,14 @@ cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } може �
 cfr-doorhanger-sync-bookmarks-header = Добијте ову забелешку на свом телефону
 cfr-doorhanger-sync-bookmarks-body = Синхронизујте забелешке, лозинке, историју и друго на свим уређајима који су пријављени у { -brand-product-name }.
 cfr-doorhanger-sync-bookmarks-ok-button = Укључите { -sync-brand-short-name }
-    .accesskey = т
+    .accesskey = T
 
 ## Login Sync
 
 cfr-doorhanger-sync-logins-header = Немојте поново изгубити лозинку
 cfr-doorhanger-sync-logins-body = Безбедно чувајте и синхронизујте ваше лозинке на свим вашим уређајима.
 cfr-doorhanger-sync-logins-ok-button = Укључите { -sync-brand-short-name }
-    .accesskey = т
+    .accesskey = T
 
 ## Send Tab
 
@@ -179,21 +199,21 @@ cfr-doorhanger-send-tab-header = Читајте ово у покрету
 cfr-doorhanger-send-tab-recipe-header = Понесите овај рецепт у кухињу
 cfr-doorhanger-send-tab-body = Слање језичка олакшава дељење веза између вашег телефона и било којих уређаја пријављених у { -brand-product-name }.
 cfr-doorhanger-send-tab-ok-button = Испробајте слање језичака
-    .accesskey = И
+    .accesskey = T
 
 ## Firefox Send
 
 cfr-doorhanger-firefox-send-header = Делите овај PDF безбедно
 cfr-doorhanger-firefox-send-body = Користите шифровање с-краја-на-крај и везе које ће аутоматски нестати након употребе како бисте обезбедили сигурност осетљивих датотека.
 cfr-doorhanger-firefox-send-ok-button = Испробајте { -send-brand-name }
-    .accesskey = И
+    .accesskey = T
 
 ## Social Tracking Protection
 
 cfr-doorhanger-socialtracking-ok-button = Погледај заштите
-    .accesskey = П
+    .accesskey = P
 cfr-doorhanger-socialtracking-close-button = Затвори
-    .accesskey = З
+    .accesskey = C
 cfr-doorhanger-socialtracking-dont-show-again = Немој ми више показивати овакве поруке
     .accesskey = D
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } је блокирао друштвену мрежу да вас прати овде
@@ -215,7 +235,10 @@ cfr-doorhanger-milestone-heading =
        *[other] Од { $date }, { -brand-short-name } је блокирао више од <b>{ $blockedCount }</b> програма за праћење!
     }
 cfr-doorhanger-milestone-ok-button = Погледај све
-    .accesskey = П
+    .accesskey = S
+
+cfr-doorhanger-milestone-close-button = Затвори
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -249,3 +272,18 @@ cfr-whatsnew-protections-icon-alt = Иконица штита
 
 cfr-whatsnew-better-pdf-header = Боље PDF искуство
 cfr-whatsnew-better-pdf-body = PDF документи се сада отварају директно у { -brand-short-name }-у, олакшавајући ток рада.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Ваша приватност је битна. { -brand-short-name } сада безбедно усмерава ваше DNS захтеве, кад год је то могуће, до партнерског сервиса како би вас заштитио док прегледате.
+cfr-doorhanger-doh-header = Још сигурнији, шифровани DNS упити
+cfr-doorhanger-doh-primary-button = У реду, разумем
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Онемогући
+    .accesskey = D
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Аутоматска заштита од подмуклих тактика праћења
+cfr-whatsnew-clear-cookies-body = Неки пратиоци вас преусмеравају на друге странице које тајно постављају колачиће. { -brand-short-name } сада аутоматски брише ове колачиће тако да вас не прате.
+cfr-whatsnew-clear-cookies-image-alt = Колачић је блокирао илустрацију

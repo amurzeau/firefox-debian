@@ -7,6 +7,10 @@ sendoptions-dialog-window =
 
 send-mail-title = Format Teks
 
+auto-downgrade-label =
+    .label = Kirim pesan sebagai teks biasa jika memungkinkan
+    .accesskey = t
+
 default-html-format-label = Saat mengirim pesan dalam format HTML dan salah satu penerima atau lebih tidak didaftar mempunyai kemampuan menerima format HTML:
 
 html-format-ask =

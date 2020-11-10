@@ -2,7 +2,9 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+
 <!ENTITY windowTitle.label "Proprietà elenco">
+
 <!ENTITY ListType.label "Tipo elenco:">
 <!ENTITY bulletStyle.label "Stile:">
 <!ENTITY startingNumber.label "Numero iniziale:">
@@ -11,7 +13,7 @@
 <!ENTITY bulletList.value "Elenco puntato (non numerato)">
 <!ENTITY numberList.value "Elenco numerato">
 <!ENTITY definitionList.value "Elenco definizioni">
-<!ENTITY changeEntireListRadio.label "Cambia l'intero elenco">
+<!ENTITY changeEntireListRadio.label "Cambia l’intero elenco">
 <!ENTITY changeEntireListRadio.accessKey "C">
 <!ENTITY changeSelectedRadio.label "Cambia solo gli elementi selezionati">
 <!ENTITY changeSelectedRadio.accessKey "s">

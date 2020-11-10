@@ -211,6 +211,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Alles bekijken
     .accesskey = A
+cfr-doorhanger-milestone-close-button = Sluiten
+    .accesskey = S
 
 ## What’s New Panel Content for Firefox 76
 
@@ -244,3 +246,35 @@ cfr-whatsnew-protections-icon-alt = Schildpictogram
 
 cfr-whatsnew-better-pdf-header = Betere PDF-ervaring
 cfr-whatsnew-better-pdf-body = PDF-documenten worden nu rechtstreeks geopend in { -brand-short-name }, waardoor uw werk binnen handbereik blijft.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Uw privacy is belangrijk. { -brand-short-name } leidt nu waar mogelijk uw DNS-verzoeken veilig naar een partnerservice om u te beschermen terwijl u surft.
+cfr-doorhanger-doh-header = Veiligere, versleutelde DNS-lookups
+cfr-doorhanger-doh-primary-button = OK, begrepen
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Uitschakelen
+    .accesskey = U
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Uw privacy is belangrijk. { -brand-short-name } isoleert, of sandboxt, websites nu van elkaar, waardoor het voor hackers moeilijker wordt om wachtwoorden, creditcardnummers en andere gevoelige informatie te stelen.
+cfr-doorhanger-fission-header = Website-isolatie
+cfr-doorhanger-fission-primary-button = OK, begrepen
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Meer info
+    .accesskey = M
+# Deprecated
+cfr-doorhanger-fission-body = { -brand-short-name } heeft een experimentele functie Fission (website-isolatie) voor u ingeschakeld. Door elke website in een apart proces te isoleren, biedt Fission een extra beveiligingslaag voor u en de door u bezochte websites.
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Automatische bescherming tegen stiekeme volgtactieken
+cfr-whatsnew-clear-cookies-body = Sommige trackers leiden u door naar andere websites die in het geheim cookies plaatsen. { -brand-short-name } wist die cookies nu automatisch, zodat u niet kunt worden gevolgd.
+cfr-whatsnew-clear-cookies-image-alt = Afbeelding Cookie geblokkeerd
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Meer mediabediening
+cfr-whatsnew-media-keys-body = Speel of pauzeer audio of video rechtstreeks vanaf uw toetsenbord of headset, waardoor het eenvoudig wordt om media vanuit een ander tabblad, programma of zelfs wanneer uw computer is vergrendeld te bedienen. U kunt met de toetsen voor vooruit en achteruit tussen tracks verspringen.
+cfr-whatsnew-media-keys-button = Meer info

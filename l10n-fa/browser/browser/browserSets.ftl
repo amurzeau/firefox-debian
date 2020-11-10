@@ -162,6 +162,12 @@ full-zoom-reduce-shortcut =
 full-zoom-reduce-shortcut-alt =
     .key = { "" }
 
+full-zoom-reduce-shortcut-alt-a =
+    .key = _
+
+full-zoom-reduce-shortcut-alt-b =
+    .key = { "" }
+
 full-zoom-enlarge-shortcut =
     .key = +
 

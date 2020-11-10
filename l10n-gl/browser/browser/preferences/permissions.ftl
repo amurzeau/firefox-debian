@@ -5,57 +5,53 @@
 permissions-window =
     .title = Excepcións
     .style = width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Enderezo do sitio web
     .accesskey = d
-
 permissions-block =
     .label = Bloquear
     .accesskey = B
-
 permissions-session =
     .label = Permitir nesta sesión
     .accesskey = s
-
 permissions-allow =
     .label = Permitir
     .accesskey = P
-
 permissions-site-name =
     .label = Sitio web
-
 permissions-status =
     .label = Estado
-
 permissions-remove =
     .label = Retirar sitio web
     .accesskey = R
-
 permissions-remove-all =
     .label = Retirar todos os sitios web
     .accesskey = e
-
 permissions-button-cancel =
     .label = Cancelar
     .accesskey = C
-
 permissions-button-ok =
     .label = Gardar cambios
     .accesskey = b
-
+permission-dialog =
+    .buttonlabelaccept = Gardar cambios
+    .buttonaccesskeyaccept = b
+permissions-autoplay-menu = Por omisión, para todos os sitios web:
 permissions-searchbox =
     .placeholder = Buscar sitio web
-
+permissions-capabilities-autoplay-allow =
+    .label = Permitir son e vídeo
+permissions-capabilities-autoplay-block =
+    .label = Bloquear son
+permissions-capabilities-autoplay-blockall =
+    .label = Bloquear son e vídeo
 permissions-capabilities-allow =
     .label = Permitir
 permissions-capabilities-block =
     .label = Bloquear
 permissions-capabilities-prompt =
     .label = Preguntar sempre
-
 permissions-capabilities-listitem-allow =
     .value = Permitir
 permissions-capabilities-listitem-block =
@@ -70,10 +66,10 @@ permissions-invalid-uri-label = Introduza un nome de servidor válido
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-content-blocking-window =
-    .title = Excepcións - Bloqueo de contido
+permissions-exceptions-etp-window =
+    .title = Excepcións para a protección avanzada de rastrexo
     .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Desactivou o bloqueo de contido nestes sitios web.
+permissions-exceptions-etp-desc = Desactivou as proteccións nestes sitios web.
 
 ## Exceptions - Cookies
 
@@ -103,14 +99,12 @@ permissions-exceptions-addons-window =
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Pode especificar que sitios web teñen permiso para instalar complementos. Escriba o enderezo exacto do sitio e despois prema Permitir.
 
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Excepcións - Reprodución automática
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Pode especificar que sitios web teñen permiso para a reprodución automática e cales non. Escriba o enderezo do sitio que quere xestionar e prema Bloquear ou Permitir.
-
 ## Site Permissions - Autoplay
+
+permissions-site-autoplay-window =
+    .title = Configuración: Reprodución automática
+    .style = { permissions-window.style }
+permissions-site-autoplay-desc = Aquí pode xestionar os sitios que non seguen a súa configuración de reprodución automática predeterminada.
 
 ## Site Permissions - Notifications
 
@@ -133,6 +127,14 @@ permissions-site-location-disable-label =
 permissions-site-location-disable-desc = Isto evitará que os sitios web non listados arriba soliciten permiso de acceso á localización. Bloquear o acceso á localización pode impedir o funcionamento dalgunhas características dos sitios web.
 
 ## Site Permissions - Virtual Reality
+
+permissions-site-xr-window =
+    .title = Configuración: Permisos de realidade virtual
+    .style = { permissions-window.style }
+permissions-site-xr-desc = Os seguintes sitios web solicitaron acceder aos seus dispositivos de realidade virtual. Pode especificar que sitios web están autorizados a acceder aos seus dispositivos de realidade virtual. Tamén pode bloquear novas solicitudes solicitando acceder aos seus dispositivos de realidade virtual.
+permissions-site-xr-disable-label =
+    .label = Bloquear novas solicitudes que soliciten acceder aos seus dispositivos de realidade virtual
+permissions-site-xr-disable-desc = Isto evitará que os sitios web non listados anteriormente soliciten permiso para acceder aos seus dispositivos de realidade virtual. O bloqueo do acceso aos seus dispositivos de realidade virtual pode estragar as funcións dalgúns sitios web.
 
 ## Site Permissions - Camera
 

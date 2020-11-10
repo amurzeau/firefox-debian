@@ -14,6 +14,12 @@ extensions-name = Namn
 extensions-enabled = Påslått
 extensions-version = Versjon
 extensions-id = ID
+support-addons-title = Tillegg
+support-addons-name = Namn
+support-addons-type = Type
+support-addons-enabled = Slått på
+support-addons-version = Versjon
+support-addons-id = ID
 security-software-title = Sikkerheitsprogram
 security-software-type = Type
 security-software-name = Namn
@@ -59,6 +65,7 @@ app-basics-service-workers = Registrerte tenestearbeidarar
 app-basics-profiles = Profilar
 app-basics-launcher-process-status = Oppstartsprosess
 app-basics-multi-process-support = Multiprosess-vindauge
+app-basics-fission-support = Fission-vindauge
 app-basics-remote-processes-count = Fjernprosessar
 app-basics-enterprise-policies = Bedriftspolitikk
 app-basics-location-service-key-google = Google Location Service-nøkkel
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] Opne mappe
        *[other] Opne mappe
     }
+environment-variables-title = Miljøvariablar
+environment-variables-name = Namn
+environment-variables-value = Verdi
+experimental-features-title = Eksperimentelle funksjonar
+experimental-features-name = Namn
+experimental-features-value = Verdi
 modified-key-prefs-title = Viktige endra innstillingar
 modified-prefs-name = Namn
 modified-prefs-value = Verdi
@@ -95,8 +108,6 @@ graphics-desktop-environment = Skrivebordsmiljø
 place-database-title = Plasser database
 place-database-integrity = Integritet
 place-database-verify-integrity = Stadfest integritet
-js-title = JavaScript
-js-incremental-gc = Inkrementell GC
 a11y-title = Tilgjenge
 a11y-activated = Aktivert
 a11y-force-disabled = Hindra tilgjenge
@@ -126,7 +137,6 @@ restart-button-label = Start på nytt
 
 audio-backend = Lydgrensesnitt
 max-audio-channels = Maks kanalar
-channel-layout = Føretrekt kanaloppsett
 sample-rate = Føretrekt samplingsfart
 roundtrip-latency = Tur-/retur-forseinking (standardavvik)
 media-title = Media
@@ -263,11 +273,13 @@ blocklisted-bug = Svartelista på grunn av kjende problem
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = feil { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Blokkert på grunn av kjende problem: <a data-l10n-name="bug-link">feilrapport { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Svartlista; feilkode { $failureCode }
 d3d11layers-crash-guard = D3D11-kompositoren
 d3d11video-crash-guard = D3D11 videodekodar
-d3d9video-crash-buard = D3D9 videodekodar
 d3d9video-crash-guard = D3D9 videodekodar
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Video-dekodar
@@ -315,6 +327,20 @@ multi-process-status-6 = Slått av av ikkje-støtta tekst-input
 multi-process-status-7 = Slått av av tillegg
 multi-process-status-8 = Tvinga deaktivering
 multi-process-status-unknown = Ukjend status
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Avslått av ekperiment
+fission-status-experiment-treatment = Slått på av eksperiment
+fission-status-disabled-by-e10s-env = Slåt av av miljøet
+fission-status-enabled-by-env = Slått på av miljøet
+fission-status-disabled-by-safe-mode = Slått av av trygg modus
+fission-status-enabled-by-default = Slått på som standard
+fission-status-disabled-by-default = Slått av som standard
+fission-status-enabled-by-user-pref = Slått på av brukar
+fission-status-disabled-by-user-pref = Slått av av brukar
+fission-status-disabled-by-e10s-other = E10s slått av
 async-pan-zoom = Asynkron pan/zoom
 apz-none = ingen
 wheel-enabled = Hjulinnmating slått på
@@ -335,3 +361,12 @@ touch-warning = asynkron tøtsj-input slått av pga. ikkje-støtta innstilling: 
 policies-inactive = Slått av
 policies-active = Slått på
 policies-error = Feil
+
+## Printing section
+
+support-printing-title = Skriv ut
+support-printing-troubleshoot = Feilsøking
+support-printing-clear-settings-button = Fjern lagra utskriftsinnstillingar
+support-printing-modified-settings = Endra utskriftsinnstillingar
+support-printing-prefs-name = Namn
+support-printing-prefs-value = Verdi

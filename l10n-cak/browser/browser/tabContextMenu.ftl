@@ -3,11 +3,11 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 reload-tab =
-    .label = Rejqaxik ruwi' kajtz'ïk
-    .accesskey = R
+    .label = Tisamajïx chik Ruwi'
+    .accesskey = T
 select-all-tabs =
-    .label = Kecha' Ronojel taq Ruwi'
-    .accesskey = K
+    .label = Kecha' Ronojel Ruwi'
+    .accesskey = h
 duplicate-tab =
     .label = Tikamulüx Ruwi'
     .accesskey = T
@@ -15,13 +15,13 @@ duplicate-tabs =
     .label = Kekamulüx taq Ruwi'
     .accesskey = K
 close-tabs-to-the-end =
-    .label = Ketz'apïx taq Ruwi' pan Ajkiq'a'
-    .accesskey = i
+    .label = Ketz'apïx Ruwi' pan Ajkiq'a'
+    .accesskey = j
 close-other-tabs =
     .label = Ketz'apïx ri ch'aqa' chik taq ruwi'
     .accesskey = K
 reload-tabs =
-    .label = Kesamajib'ëx taq Ruwi'
+    .label = Kesamajïx chik taq Ruwi'
     .accesskey = K
 pin-tab =
     .label = Rujikib'axik ruwi' kajtz'ïk
@@ -53,25 +53,26 @@ move-to-end =
 move-to-new-window =
     .label = Tisilöx pa K'ak'a' Tzuwäch
     .accesskey = l
-undo-close-tab =
-    .label = Titzolïx Titz'apïx Ruwi'
-    .accesskey = T
 tab-context-close-multiple-tabs =
     .label = Ketz'apïx K'ïy Taq Ruwi'
     .accesskey = y
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
             [1] Titzolïx Nitz'apïx Ruwi'
             [one] Titzolïx Nitz'apïx Ruwi'
-           *[other] Titzolïx Yetz'apïx Kiwi'
+           *[other] Titzolïx Yetz'apïx Ruwi'
         }
     .accesskey = T
 close-tab =
     .label = Titz'apïx ruwi’
     .accesskey = T
 close-tabs =
-    .label = Ketz'apïx taq Ruwi'
+    .label = Ketz'apïx Ruwi'
     .accesskey = K
 move-tabs =
     .label = Kesilöx taq Ruwi'
@@ -79,3 +80,19 @@ move-tabs =
 move-tab =
     .label = Tisilöx Ruwi'
     .accesskey = x
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Titz'apïx Ruwi'
+            [one] Titz'apïx Ruwi'
+           *[other] Ketz'apïx Ruwi'
+        }
+    .accesskey = t
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Tisilöx Ruwi'
+            [one] Tisilöx Ruwi'
+           *[other] Kesilöx Ruwi'
+        }
+    .accesskey = s

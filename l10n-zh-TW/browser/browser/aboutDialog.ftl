@@ -36,9 +36,9 @@ channel-description = 您目前正使用 <label data-l10n-name="current-channel"
 
 warningDesc-version = { -brand-short-name } 是一個實驗用的測試版本，可能不夠穩定。
 
-community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> 是一個 <label data-l10n-name="community-exp-creditsLink">全球性社群</label>。我們一起努力讓網路保持開放，任誰都可隨意使用。
+community-exp = <label data-l10n-name="community-exp-mozillaLink">{ -vendor-short-name }</label> 是一個<label data-l10n-name="community-exp-creditsLink">全球性社群</label>。我們一起努力讓網路保持開放，任誰都可隨意使用。
 
-community-2 = { -brand-short-name } 是由 <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label> 所開發的產品。Mozilla 是個 <label data-l10n-name="community-creditsLink">全球性社群</label>。我們一起努力讓網路保持開放，任誰都可隨意使用。
+community-2 = { -brand-short-name } 是由 <label data-l10n-name="community-mozillaLink">{ -vendor-short-name }</label> 所開發的產品。Mozilla 是個<label data-l10n-name="community-creditsLink">全球性社群</label>。我們一起努力讓網路保持開放，任誰都可隨意使用。
 
 helpus = 想幫忙嗎？<label data-l10n-name="helpus-donateLink">捐款給我們</label>或<label data-l10n-name="helpus-getInvolvedLink">出力參與！</label>
 

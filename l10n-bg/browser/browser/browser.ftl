@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Поверително разглеждане)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Поверително разглеждане)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Поверително разглеждане)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Поверително разглеждане)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -112,6 +110,9 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Въвеждайте малко, намирайте много: търсете с { $engineName } направо от адресната лента.
 urlbar-search-tips-redirect-2 = Започнете търсене от адресната лента, за да видите предложения от { $engineName } и историята на разглеждане.
 
+## Local search mode indicator labels in the urlbar
+
+
 ##
 
 urlbar-geolocation-blocked =
@@ -138,12 +139,10 @@ urlbar-midi-blocked =
     .tooltiptext = Забранили сте на страницата достъп до MIDI.
 urlbar-install-blocked =
     .tooltiptext = Забранили сте на страницата да инсталира добавки.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Промяна на отметка ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -160,6 +159,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Премахване на разширението
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Изпращане на раздела до устройство
+           *[other] Изпращане на { $tabCount } раздела до устройство
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Изпращане на раздела до устройство
+           *[other] Изпращане на { $tabCount } раздела до устройство
+        }
+page-action-pocket-panel =
+    .label = Запазване на страницата в { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Копиране на препратката
+page-action-copy-url-urlbar =
+    .tooltiptext = Копиране на препратката
+page-action-email-link-panel =
+    .label = Препратка по имейл…
+page-action-email-link-urlbar =
+    .tooltiptext = Препратка по имейл…
+page-action-share-url-panel =
+    .label = Споделяне
+page-action-share-url-urlbar =
+    .tooltiptext = Споделяне
+page-action-share-more-panel =
+    .label = Други…
+page-action-send-tab-not-ready =
+    .label = Синхронизиране на устройства…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Закачане на раздела
+page-action-pin-tab-urlbar =
+    .tooltiptext = Закачане на раздела
+page-action-unpin-tab-panel =
+    .label = Премахване от леснодостъпните
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Премахване от леснодостъпните
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -174,14 +220,12 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Този път търсете с:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Настройки на търсене
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Настройки на търсене
-
 search-one-offs-context-open-new-tab =
     .label = Търсене в нов раздел
     .accesskey = р
@@ -192,15 +236,21 @@ search-one-offs-context-set-as-default-private =
     .label = Задаване като стандартна търсачка в поверителни прозорци
     .accesskey = п
 
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Показване на диалога при запазване
     .accesskey = п
-
 bookmark-panel-done-button =
     .label = Готово
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -258,6 +308,8 @@ identity-more-info-link-text =
 
 browser-window-minimize-button =
     .tooltiptext = Минимизиране
+browser-window-maximize-button =
+    .tooltiptext = Увеличаване
 browser-window-close-button =
     .tooltiptext = Затваряне
 
@@ -270,6 +322,12 @@ popup-select-microphone =
     .value = Микрофон за споделяне:
     .accesskey = М
 popup-all-windows-shared = Всички видими прозорци на вашия екран ще бъдат споделени.
+popup-screen-sharing-not-now =
+    .label = Не сега
+    .accesskey = а
+popup-screen-sharing-never =
+    .label = Никога
+    .accesskey = Н
 
 ## WebRTC window or screen share tab switch warning
 
@@ -283,20 +341,62 @@ urlbar-default-placeholder =
     .defaultPlaceholder = Търсете или въведете адрес
 urlbar-placeholder =
     .placeholder = Търсете или въведете адрес
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Търсене с { $name } или въведете адрес
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Четецът е под дистанционно управление
 urlbar-permissions-granted =
     .tooltiptext = Дали сте допълнителни права на страницата.
 urlbar-switch-to-tab =
     .value = Превключване към раздел:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Разширение:
-
 urlbar-go-button =
     .tooltiptext = Зареждане на адреса в полето
 urlbar-page-action-button =
     .tooltiptext = Действия със страницата
 urlbar-pocket-button =
     .tooltiptext = Запазване в { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Търсене с { $engine } в поверителен прозорец
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Търсене в поверителен прозорец
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Търсене с { $engine }
+urlbar-result-action-switch-tab = Превключване към раздел
+urlbar-result-action-visit = Посещаване
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> на цял екран
+fullscreen-warning-no-domain = Сега документът е на цял екран
+fullscreen-exit-button = Излизане от цял екран (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Излизане от цял екран (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> контролира показалеца на мишката ви. Натиснете Esc, за да си възвърнете контрола.
+pointerlock-warning-no-domain = Този документ контролира показалеца на мишката ви. Натиснете Esc, за да си възвърнете контрола.

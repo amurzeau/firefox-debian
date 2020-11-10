@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 permissions-window =
-    .title = Ta'ãnga ñangarekoha
+    .title = Ta’ãnga ñangarekoha
     .style = width: 45em
 permissions-close-key =
     .key = w
@@ -34,6 +34,9 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Moambue ñongatu
     .accesskey = S
+permission-dialog =
+    .buttonlabelaccept = Moambue ñongatu
+    .buttonaccesskeyaccept = S
 permissions-autoplay-menu = Ijypykuéramo opaite ñanduti rendápe g̃uarã:
 permissions-searchbox =
     .placeholder = Ñandutirenda Jeheka
@@ -63,10 +66,6 @@ permissions-invalid-uri-label = Emoinge peteĩ mohendahavusu oikóva réra
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-content-blocking-window =
-    .title = Ykepegua – Tetepy jejoko
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Ojeipe’áma tetepy jejoko ko’ã tenda pegua.
 permissions-exceptions-etp-window =
     .title = Ykepegua tapykuehoha mo’ãha iporãvévape g̃uarã
     .style = { permissions-window.style }
@@ -84,28 +83,21 @@ permissions-exceptions-cookie-desc = Ikatu ere máva ñanduti rendápa akóinte 
 permissions-exceptions-popup-window =
     .title = Tenda ñemoneĩmbyre - Ovetã apysẽ
     .style = { permissions-window.style }
-permissions-exceptions-popup-desc = Ikatu rehechauka mba’e ñanduti renda guivépa ikatu reike ovetã apysẽme. Ehai kundaharape ha’etéva tenda remoneĩséva ha ejopy Ñemoneĩ.
+permissions-exceptions-popup-desc = Ikatu rehechauka mba’e ñanduti renda guivépa ikatu reike ovetã apysẽme. Ehai kundaharape ha’etéva tenda remoneĩsévape ha ejopy Ñemoneĩ.
 
 ## Exceptions - Saved Logins
 
 permissions-exceptions-saved-logins-window =
-    .title = Oĩ'ỹva - Emoñepyrũ tembiapo ñongatupyre
+    .title = Oĩ’ỹva - Emoñepyrũ tembiapo ñongatupyre
     .style = { permissions-window.style }
 permissions-exceptions-saved-logins-desc = Tembiapo ñepyrũ ko’ã ñanduti renda noñeñongatumo’ãi
 
 ## Exceptions - Add-ons
 
 permissions-exceptions-addons-window =
-    .title = Tenda ñemoneĩmbyre - Moimbaha ñemohenda
+    .title = Tenda ñemoneĩmbyre - Moĩmbaha ñemohenda
     .style = { permissions-window.style }
-permissions-exceptions-addons-desc = Ikatu rehechauka mba’e ñanduti renda guivépa ikatu remohenda moimbaha. Ehai kundaharape ha’etéva tenda remoneĩséva ha ejopy Moneĩ.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Ykepegua – Ñemboheta ijeheguíva
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Ikatúpa ere mba’e tendápa oñemoneĩ térã oñembotove kookie jepurúpe. Emoinge tenda kundaharape eñangarekoseha ha upéi eikutu Joko térã Moneĩ.
+permissions-exceptions-addons-desc = Ikatu rehechauka mba’e ñanduti renda guivépa ikatu remohenda moĩmbaha. Ehai kundaharape ha’etéva tenda remoneĩséva ha ejopy Moneĩ.
 
 ## Site Permissions - Autoplay
 
@@ -119,7 +111,7 @@ permissions-site-autoplay-desc = Ko’ápe ikatu eñangareko umi tenda ndohapyku
 permissions-site-notification-window =
     .title = Ñemboheko - Momarandu ñemoneĩ
     .style = { permissions-window.style }
-permissions-site-notification-desc = Ko’ã ñanduti renda omba’ejerure ne momarandu hag̃ua. Ikatu emyesakã máva umi ñanduti renda ñemoneĩmbyre ne momarandukuaáva. Avéi ikatu ejoko mba'ejerure pyahu emoneĩ hag̃ua ñemomarandu.
+permissions-site-notification-desc = Ko’ã ñanduti renda omba’ejerure ne momarandu hag̃ua. Ikatu emyesakã máva umi ñanduti renda ñemoneĩmbyre ne momarandukuaáva. Avéi ikatu ejoko mba’ejerure pyahu emoneĩ hag̃ua ñemomarandu.
 permissions-site-notification-disable-label =
     .label = Momarandu mba’ejerure pyahu rehegua jejoko
 permissions-site-notification-disable-desc = Kóva omboykéta umi ñanduti renda noĩriva omba’ejeruréva ñemoneĩ oike hag̃ua nerendaite apytépe. Ejokóramo ñemomarandu ikatu ombyai ambue ñanduti renda.
@@ -149,17 +141,17 @@ permissions-site-xr-disable-desc = Kóva omboykéta umi ñanduti renda noĩriva 
 permissions-site-camera-window =
     .title = Ñangareko - Camara Jepuru
     .style = { permissions-window.style }
-permissions-site-camera-desc = Ko’ãva ñanduti renda ojejerure oike hag̃ua ta’ãngamýime. Ikatu ehechauka mab’e ñanduti rendápa oguereko ñemoneĩ oikpurúvo ta’angamýi. Avéi ikatu ejoko mba’ejerure pyahu oikeséva ta’ãngamýime rehegua.
+permissions-site-camera-desc = Ko’ãva ñanduti renda ojejerure oike hag̃ua ta’ãngamýime. Ikatu ehechauka mab’e ñanduti rendápa oreko ñemoneĩ oipurúvo ta’angamýi. Ejokokuaa avei mba’ejerure pyahu oikeséva ta’ãngamýime.
 permissions-site-camera-disable-label =
     .label = Mba’ejerure pyahu joko ani hag̃ua ojepuru ta’ãngamýi
-permissions-site-camera-disable-desc = Kóva omboykéta umi ñanduti renda noĩriva tysýi yvy gotyo guápe ojerurévo ñemoneĩ oike hag̃ua ta'angamýime. Ejokóramo ta'angamýime jeike ikatu ombyai ambue ñanduti rendápe.
+permissions-site-camera-disable-desc = Kóva omboykéta ñanduti renda noĩriva tysýi yvy gotyoguápe ojerurévo ñemoneĩ oike hag̃ua ta’ãngamýime. Ejokóramo ta’ãngamýime jeike ombyaikuaa ambue ñanduti rendápe.
 
 ## Site Permissions - Microphone
 
 permissions-site-microphone-window =
-    .title = Ñangareko - Ñe'ẽmbotuichaha Jepuru
+    .title = Ñangareko - Ñe’ẽmbotuichaha Jepuru
     .style = { permissions-window.style }
-permissions-site-microphone-desc = Ko’ã ñanduti renda ojerure ikatúpa oike ñe’ẽ’atãhápe. Ikatu emyesakã mab’e ñanduti rendápa oguereko ñemoneĩ oipurúvo ñe’ẽ’atãha. Avéi ikatu ejoko mba’ejerure pyahu oikeséva ñe’ẽ’atãhápe rehegua.
+permissions-site-microphone-desc = Ko’ã ñanduti renda ojerure ikatúpa oike ñe’ẽ’atãhápe. Ikatu emyesakã mba’e ñanduti rendápa oguereko ñemoneĩ oipurúvo ñe’ẽ’atãha. Avéi ikatu ejoko mba’ejerure pyahu oikeséva ñe’ẽ’atãhápe rehegua.
 permissions-site-microphone-disable-label =
     .label = Mba’ejerure pyahu joko ani hag̃ua ojepuru ne ñe’ẽ’atãha
 permissions-site-microphone-disable-desc = Ko’ãva omboykéta umi ñanduti renda noĩriva omba’ejeruréva ñemoneĩ oike hag̃ua ñe’ẽ’atãhápe. Ejokóramo ñe’ẽ’atãhápe jeike ikatu ombyai ambue ñanduti rendápe.

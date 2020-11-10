@@ -2,6 +2,10 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY % brandDTD
+    SYSTEM "chrome://branding/locale/brand.dtd">
+  %brandDTD;
+
 <!ENTITY playButton.playLabel "Abspielen">
 <!ENTITY playButton.pauseLabel "Anhalten">
 <!ENTITY muteButton.muteLabel "Ton aus">
@@ -18,18 +22,14 @@
 the Picture-in-Picture video toggle button when the mouse is hovering it. -->
 <!ENTITY pictureInPicture.label "Bild-im-Bild (PiP)">
 
-<!ENTITY stats.media "Medien">
-<!ENTITY stats.size "Größe">
-<!ENTITY stats.activity "Aktivität">
-<!ENTITY stats.activityPaused "Pausiert">
-<!ENTITY stats.activityPlaying "Wird abgespielt">
-<!ENTITY stats.activityEnded "Beendet">
-<!ENTITY stats.activitySeeking "(suchen)">
-<!ENTITY stats.volume "Lautstärke">
-<!ENTITY stats.framesParsed "Frames verarbeitet">
-<!ENTITY stats.framesDecoded "Frames dekodiert">
-<!ENTITY stats.framesPresented "Frames präsentiert">
-<!ENTITY stats.framesPainted "Frames gezeichnet">
+<!-- LOCALIZATION NOTE (pictureInPictureToggle.label): This string is used as the
+label for a variation of the Picture-in-Picture video toggle button when the mouse is
+hovering over the video. -->
+<!ENTITY pictureInPictureToggle.label "In Bild-im-Bild ansehen">
+<!-- LOCALIZATION NOTE (pictureInPictureExplainer): This string is used as part of
+a variation of the Picture-in-Picture video toggle button. When using this variation,
+this string appears below the toggle when the mouse hovers the toggle. -->
+<!ENTITY pictureInPictureExplainer "Spielen Sie Videos im Vordergrund ab, während Sie anderweitig in &brandShortName; beschäftigt sind">
 
 <!ENTITY error.aborted "Laden des Videos gestoppt.">
 <!ENTITY error.network "Abspielen des Videos wegen eines Netzwerkfehlers abgebrochen.">
@@ -39,13 +39,6 @@ the Picture-in-Picture video toggle button when the mouse is hovering it. -->
 <!ENTITY error.generic "Abspielen des Videos wegen eines unbekannten Fehlers abgebrochen.">
 
 <!ENTITY status.pictureInPicture "Dieses Video wird im Modus &quot;Bild im Bild&quot; (PiP) wiedergegeben.">
-
-<!-- LOCALIZATION NOTE (scrubberScale.nameFormat): the #1 string is the current
-media position, and the #2 string is the total duration. For example, when at
-the 5 minute mark in a 6 hour long video, #1 would be "5:00" and #2 would be
-"6:00:00", result string would be "5:00 of 6:00:00 elapsed".
--->
-<!ENTITY scrubberScale.nameFormat "#1 von #2 verstrichen">
 
 <!-- LOCALIZATION NOTE (positionAndDuration.nameFormat): the #1 string is the current
 media position, and the #2 string is the total duration. For example, when at

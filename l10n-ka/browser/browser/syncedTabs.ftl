@@ -4,7 +4,6 @@
 
 synced-tabs-sidebar-title = დასინქრონებული ჩანართები
 synced-tabs-sidebar-noclients-subtitle = გსურთ სხვა მოწყობილობების ჩანართების აქ ნახვა?
-synced-tabs-sidebar-notsignedin = შედით თქვენი სხვა მოწყობილობებიდან ჩანართების სიის სანახავად.
 synced-tabs-sidebar-intro = იხილეთ ჩანართების სია თქვენი სხვა მოწყობილობებიდან.
 synced-tabs-sidebar-unverified = თქვენი ანგარიში საჭიროებს დამოწმებას.
 synced-tabs-sidebar-notabs = გახსნილი ჩანართები არაა
@@ -27,7 +26,7 @@ synced-tabs-context-open-in-new-private-window =
     .accesskey = პ
 synced-tabs-context-bookmark-single-tab =
     .label = ჩანართის ჩანიშვნა…
-    .accesskey = ჩ
+    .accesskey = ვ
 synced-tabs-context-copy =
     .label = ასლი
     .accesskey = ლ

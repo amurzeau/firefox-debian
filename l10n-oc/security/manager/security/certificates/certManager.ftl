@@ -18,6 +18,7 @@ certmgr-mine = De certificats d'aquestas organizacions vos identifican
 certmgr-remembered = Aquestes certificats servisson per vos identificar suls sites Web
 certmgr-people = De certificats d'aqueste fichièr identifican aqueles personas
 certmgr-servers = De certificats d'aqueste fichièr identifican aqueles servidors
+certmgr-server = Aquestas entradas identificant las excepcions a las errors de certificat servidor
 certmgr-ca = De certificats d'aqueste fichièr identifican aquelas autoritats de certificat
 certmgr-detail-general-tab-title =
     .label = General
@@ -161,6 +162,10 @@ delete-ssl-cert-title =
     .title = Supression de las excepcions de certificats de servidor
 delete-ssl-cert-confirm = Volètz vertadièrament suprimir aquestas exceptions de servidors ?
 delete-ssl-cert-impact = Se suprimissètz una excepcion de servidor, restablissètz las verificacions de seguretat usualas per aqueste servidor e demandatz qu'utilize un certificat valid.
+delete-ssl-override-title =
+    .title = Supression de l’excepcion de certificats de servidor
+delete-ssl-override-confirm = Volètz vertadièrament suprimir aquesta excepcion de servidors ?
+delete-ssl-override-impact = Se suprimissètz una excepcion de servidor, restablissètz las verificacions de seguretat usualas per aqueste servidor e demandatz qu'utilize un certificat valid.
 delete-ca-cert-title =
     .title = Suprimir o far pas mai fisança a de certificats d'AC
 delete-ca-cert-confirm = Avètz demandat de suprimir aqueles certificats d'AC. Se s'agís de certificats integrats, cap de fisança lor serà pas mai acordada, aquò's a lo meteis efèit. Volètz vertadièrament suprimir aqueles certificats o alara lor far pas mai fisança ?
@@ -208,6 +213,15 @@ cert-not-verified-issuer-unknown = Impossible de verificar aqueste certificat pe
 cert-not-verified-ca-invalid = Impossible de verificar aqueste certificat perque lo certificat d'AC es pas valid.
 cert-not-verified_algorithm-disabled = Impossible de verificar aqueste certificat perque es estat signat amb l'ajuda d'un algoritme de signatura qu'es estat desactivat perque aqueste algoritme es pas securizat.
 cert-not-verified-unknown = Impossible de verificar aqueste certificat per una rason desconeguda.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Enviar pas de certificat client
+# Used when no cert is stored for an override
+no-cert-stored-for-override = (pas gardat)
+
+## Used to show whether an override is temporary or permanent
+
+permanent-override = Permanent
+temporary-override = Temporari
 
 ## Add Security Exception dialog
 

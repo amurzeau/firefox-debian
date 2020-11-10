@@ -53,8 +53,21 @@ move-to-end =
 move-to-new-window =
     .label = Mută într-o fereastră nouă
     .accesskey = W
-undo-close-tab =
-    .label = Anulează închiderea filei
+tab-context-close-multiple-tabs =
+    .label = Închide mai multe file
+    .accesskey = M
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Anulează închiderea filelor
+            [one] Anulează închiderea filei
+            [few] Anulează închiderea filelor
+           *[other] Anulează închiderea filelor
+        }
     .accesskey = U
 close-tab =
     .label = Închide fila
@@ -67,4 +80,22 @@ move-tabs =
     .accesskey = v
 move-tab =
     .label = Mută fila
+    .accesskey = v
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Închide filele
+            [one] Închide fila
+            [few] Închide filele
+           *[other] Închide filele
+        }
+    .accesskey = C
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Mută filele
+            [one] Mută fila
+            [few] Mută filele
+           *[other] Mută filele
+        }
     .accesskey = v

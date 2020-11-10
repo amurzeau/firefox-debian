@@ -18,6 +18,8 @@
 <!ENTITY newListCmd.accesskey                           "щ">
 <!ENTITY newAddressBookCmd.label                        "Адресник…">
 <!ENTITY newAddressBookCmd.accesskey                    "А">
+<!ENTITY newCardDAVBookCmd.label                        "Адресник на CardDAV…">
+<!ENTITY newCardDAVBookCmd.accesskey                    "д">
 <!ENTITY newLDAPDirectoryCmd.label                      "Директория в LDAP…">
 <!ENTITY newLDAPDirectoryCmd.accesskey                  "Д">
 <!ENTITY newMessageCmd.label                            "Писмо">
@@ -44,38 +46,15 @@
 <!-- Edit Menu -->
 <!ENTITY editMenu.label                                 "Редактиране">
 <!ENTITY editMenu.accesskey                             "Р">
-<!ENTITY undoCmd.label                                  "Отмяна">
-<!ENTITY undoCmd.key                                    "Z">
-<!ENTITY undoCmd.accesskey                              "О">
-<!ENTITY redoCmd.label                                  "Повторение">
-<!ENTITY redoCmd.key                                    "Y">
-<!ENTITY redoCmd.accesskey                              "П">
-<!ENTITY cutCmd.label                                   "Изрязване">
-<!ENTITY cutCmd.key                                     "X">
-<!ENTITY cutCmd.accesskey                               "я">
-<!ENTITY copyCmd.label                                  "Копиране">
-<!ENTITY copyCmd.key                                    "C">
-<!ENTITY copyCmd.accesskey                              "К">
-<!ENTITY pasteCmd.label                                 "Поставяне">
-<!ENTITY pasteCmd.key                                   "V">
-<!ENTITY pasteCmd.accesskey                             "в">
 <!ENTITY deleteCmd.label                                "Изтриване">
-<!ENTITY deleteCmd.accesskey                            "р">
 <!ENTITY deleteAbCmd.label                              "Премахване на адресник">
 <!ENTITY deleteContactCmd.label                         "Премахване на контакт">
 <!ENTITY deleteContactsCmd.label                        "Изтриване на визитки">
 <!ENTITY deleteListCmd.label                            "Изтриване на списък">
 <!ENTITY deleteListsCmd.label                           "Изтриване на списъци">
 <!ENTITY deleteItemsCmd.label                           "Изтриване на позиции">
-<!ENTITY selectAllCmd.label                             "Избиране на всичко">
-<!ENTITY selectAllCmd.key                               "A">
 <!ENTITY searchAddressesCmd.key                         "f">
-<!ENTITY selectAllCmd.accesskey                         "И">
-<!ENTITY swapFirstNameLastNameCmd.label                 "Разменяне лично/фамилно име">
-<!ENTITY swapFirstNameLastNameCmd.accesskey             "м">
 <!-- LOCALIZATION NOTE (hideSwapFnLnUI) : DONT_TRANSLATE -->
-<!-- Swap FN/LN UI  Set to "false" to show swap fn/ln UI -->
-<!ENTITY hideSwapFnLnUI "true">
 <!ENTITY propertiesMenu.label                           "Свойства">
 <!ENTITY propertiesMenu.accesskey                       "в">
 <!ENTITY propertiesCmd.key                              "i">
@@ -164,6 +143,7 @@ because displayed names don't have the comma in between. -->
 <!ENTITY deleteButton2.accesskey                        "з">
 
 <!-- Address Book Toolbar Tooltips -->
+<!ENTITY columnChooser.tooltip                          "Избиране на видими колони">
 <!ENTITY newContactButton.tooltip                       "Създава нова визитка в адресника">
 <!ENTITY newlistButton.tooltip                          "Създава нов списък">
 <!ENTITY editPropertiesButton.tooltip                   "Редактиране на избрания елемент">

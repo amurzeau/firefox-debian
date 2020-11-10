@@ -25,21 +25,18 @@ graph-private-window = En les finestres privades, el { -brand-short-name } segue
 # Weekly summary of the graph when the graph is empty in Private Mode
 graph-week-summary-private-window = Elements de seguiments que el { -brand-short-name } ha blocat aquesta setmana
 
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-# The category name in the <b> tag will be bold.
-protection-report-header-details-standard = El nivell de protecció és: <b>Estàndard</b>
-    .title = Vés als paràmetres de privadesa
-protection-report-header-details-strict = El nivell de protecció és: <b>Estricte</b>
-    .title = Vés als paràmetres de privadesa
-protection-report-header-details-custom = El nivell de protecció és: <b>Personalitzat</b>
-    .title = Vés als paràmetres de privadesa
-protection-report-page-title = Proteccions de privadesa
-protection-report-content-title = Proteccions de privadesa
+protection-report-webpage-title = Tauler de proteccions
+protection-report-page-content-title = Tauler de proteccions
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
+protection-report-page-summary = El { -brand-short-name } pot protegir la vostra privadesa de forma transparent mentre navegueu. Aquest és un resum personalitzat de les proteccions, amb eines per tenir el control de la vostra seguretat a Internet.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = El { -brand-short-name } protegeix la vostra privadesa de forma transparent mentre navegueu. Aquest és un resum personalitzat de les proteccions, amb eines per tenir el control de la vostra seguretat a Internet.
 
-etp-card-title = Protecció contra el seguiment millorada
-etp-card-content = Hi ha elements que us fan el seguiment mentre navegueu per recopilar informació sobre els vostres hàbits de navegació i interessos. El { -brand-short-name } bloca molts d'aquests elements de seguiment i altres scripts maliciosos.
+protection-report-settings-link = Gestiona els paràmetres de privadesa i seguretat
 
+etp-card-title-always = Protecció contra el seguiment millorada: Sempre activada
+etp-card-title-custom-not-blocking = Protecció contra el seguiment millorada: DESACTIVADA
+etp-card-content-description = El { -brand-short-name } bloca automàticament les empreses que, en secret, us fan el seguiment mentre navegueu.
 protection-report-etp-card-content-custom-not-blocking = Actualment totes les proteccions estan desactivades. Trieu quins elements de seguiment voleu blocar en els paràmetres de protecció del { -brand-short-name }.
 protection-report-manage-protections = Gestiona els paràmetres
 
@@ -64,49 +61,63 @@ fingerprinter-tab-content = Els generadors d'empremtes digitals recopilen els pa
 
 cryptominer-tab-title = Miners de criptomonedes
 cryptominer-tab-content = Els miners de criptomonedes utilitzen la potència de càlcul del vostre ordinador per a la mineria de diners digitals. Els scripts de mineria de criptomonedes consumeixen la bateria, alenteixen l'ordinador i poden augmentar la vostra factura d'electricitat. <a data-l10n-name="learn-more-link">Més informació</a>
+
+protections-close-button2 =
+    .aria-label = Tanca
+    .title = Tanca
   
 mobile-app-title = Bloqueu els elements de seguiment de publicitat en més dispositius
 mobile-app-card-content = Utilitzeu el navegador mòbil amb protecció integrada contra els anuncis que us fan seguiment.
 mobile-app-links = Navegador { -brand-product-name } per a l'<a data-l10n-name="android-mobile-inline-link">Android</a> i l'<a data-l10n-name="ios-mobile-inline-link">iOS</a>
 
 lockwise-title = No oblideu mai més cap contrasenya
-lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Gestió de contrasenyes
 lockwise-header-content = { -lockwise-brand-name } emmagatzema les contrasenyes de forma segura en el vostre navegador.
 lockwise-header-content-logged-in = Deseu i sincronitzeu les contrasenyes de forma segura en tots els vostres dispositius.
-protection-report-view-logins-button = Mostra els inicis de sessió
-    .title = Vés als inicis de sessió desats
+protection-report-save-passwords-button = Desa les contrasenyes
+    .title = Desa les contrasenyes en el { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Gestiona les contrasenyes
+    .title = Gestiona les contrasenyes en el { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Accediu a les vostres contrasenyes des de qualsevol lloc
 lockwise-no-logins-card-content = Utilitzeu en qualsevol dispositiu les contrasenyes desades en el { -brand-short-name }.
 lockwise-app-links = { -lockwise-brand-name } per a l'<a data-l10n-name="lockwise-android-inline-link">Android</a> i l'<a data-l10n-name="lockwise-ios-inline-link">iOS</a>
 
-# This string is displayed after a large numeral that indicates the total number
-# of email addresses being monitored. Don’t add $count to
-# your localization, because it would result in the number showing twice.
-lockwise-passwords-stored =
+# Variables:
+# $count (Number) - Number of passwords exposed in data breaches.
+lockwise-scanned-text-breached-logins =
     { $count ->
-        [one] Contrasenya desada de forma segura. <a data-l10n-name="lockwise-how-it-works">Com funciona?</a>
-       *[other] Contrasenyes desades de forma segura. <a data-l10n-name="lockwise-how-it-works">Com funciona?</a>
+        [one] 1 contrasenya pot haver estat exposada en una filtració de dades.
+       *[other] { $count } contrasenyes poden haver estat exposades en una filtració de dades.
     }
+
+# While English doesn't use the number in the plural form, you can add $count to your language
+# if needed for grammatical reasons.
+# Variables:
+# $count (Number) - Number of passwords stored in Lockwise.
+lockwise-scanned-text-no-breached-logins =
+    { $count ->
+        [one] 1 contrasenya emmagatzemada de forma segura.
+       *[other] Les vostres contrasenyes s'emmagatzemen de forma segura.
+    }
+lockwise-how-it-works-link = Com funciona
 
 turn-on-sync = Activa el { -sync-brand-short-name }…
     .title = Vés a les preferències de sincronització
-
-manage-connected-devices = Gestiona els dispositius…
-
-# Variables:
-#   $count (Number) - Number of devices connected with sync.
-lockwise-connected-device-status =
-    { $count ->
-        [one] Connectat a { $count } dispositiu
-       *[other] Connectat a { $count } dispositius
-    }
 
 monitor-title = Tingueu controlades les filtracions de dades
 monitor-link = Com funciona
 monitor-header-content-no-account = Visiteu el { -monitor-brand-name } per veure si hi ha alguna filtració de dades coneguda que us hagi afectat i obteniu alertes de noves filtracions.
 monitor-header-content-signed-in = El { -monitor-brand-name } us avisa si la vostra informació ha aparegut en alguna filtració de dades coneguda.
-monitor-sign-up = Subscriviu-vos-hi per rebre alertes de filtracions
+monitor-sign-up-link = Subscriviu-vos per rebre alertes de filtracions
+    .title = Subscriviu-vos per rebre alertes de filtracions en el { -monitor-brand-name }
 auto-scan = S'ha comprovat avui automàticament
+
+monitor-emails-tooltip =
+    .title = Mostra les adreces electròniques supervisades en el { -monitor-brand-short-name }
+monitor-breaches-tooltip =
+    .title = Mostra les filtracions de dades conegudes en el { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Mostra les contrasenyes exposades en el { -monitor-brand-short-name }
 
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
@@ -127,6 +138,15 @@ info-known-breaches-found =
     }
 
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] filtració de dades coneguda marcada com a resolta
+       *[other] filtracions de dades conegudes marcades com a resoltes
+    }
+
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -135,16 +155,44 @@ info-exposed-passwords-found =
        *[other] contrasenyes exposades entre totes les filtracions
     }
 
-full-report-link = Vegeu l'informe complet al <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>
-
 # This string is displayed after a large numeral that indicates the total number
-# of saved logins which may have been exposed. Don’t add $count to
-# your localization, because it would result in the number showing twice.
-password-warning =
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
     { $count ->
-        [one] inici de sessió pot haver estat exposat en una filtració de dades. Canvieu aquesta contrasenya per millorar la vostra seguretat en línia. <a data-l10n-name="lockwise-link">Mostra els inicis de sessió desats</a>
-       *[other] inicis de sessió poden haver estat exposats en una filtració de dades. Canvieu aquesta contrasenya per millorar la vostra seguretat en línia. <a data-l10n-name="lockwise-link">Mostra els inicis de sessió desats</a>
+        [one] contrasenya exposada en filtracions no resoltes
+       *[other] contrasenyes exposades en filtracions no resoltes
     }
+
+monitor-no-breaches-title = Bones notícies!
+monitor-no-breaches-description = No apareixeu en cap filtració coneguda. Si això canvia, us avisarem.
+monitor-view-report-link = Vegeu l'informe
+    .title = Resol les filtracions amb el { -monitor-brand-short-name }
+monitor-breaches-unresolved-title = Resoleu les filtracions
+monitor-breaches-unresolved-description = Després de revisar els detalls de la filtració i haver adoptat mesures per protegir la vostra informació, podeu marcar les filtracions com a resoltes.
+monitor-manage-breaches-link = Gestiona les filtracions
+    .title = Gestiona les filtracions en el { -monitor-brand-short-name }
+monitor-breaches-resolved-title = Molt bé! Heu resolt totes les filtracions conegudes.
+monitor-breaches-resolved-description = Si la vostra adreça electrònica apareix en una filtració nova, us ho farem saber.
+
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+       *[other] { $numBreachesResolved } de { $numBreaches } filtracions marcades com a resoltes
+    }
+
+# Variables:
+# $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
+monitor-partial-breaches-percentage = { $percentageResolved }% completat
+
+monitor-partial-breaches-motivation-title-start = Bon començament!
+monitor-partial-breaches-motivation-title-middle = Seguiu així!
+monitor-partial-breaches-motivation-title-end = Gairebé heu acabat! Seguiu així.
+monitor-partial-breaches-motivation-description = Resoleu la resta de les filtracions en el { -monitor-brand-short-name }.
+monitor-resolve-breaches-link = Resol les filtracions
+    .title = Resol les filtracions amb el { -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

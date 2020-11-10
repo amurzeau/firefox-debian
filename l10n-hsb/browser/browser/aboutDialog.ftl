@@ -19,8 +19,8 @@ update-checkingForUpdates = Aktualizacije so pytaja…
 update-downloading = <img data-l10n-name="icon"/>Aktualizacija so sćahuje — <label data-l10n-name="download-status"/>
 update-applying = Aktualizacija so nałožuje…
 
-update-failed = Aktualizowanje je so njeporadźiło. <label data-l10n-name="failed-link">Najnowšu wersiju sćahnyć</label>
-update-failed-main = Aktualizowanje je so njeporadźiło. <a data-l10n-name="failed-link-main">Najnowšu wersiju sćahnyć</a>
+update-failed = Aktualizowanje njeje so poradźiło. <label data-l10n-name="failed-link">Najnowšu wersiju sćahnyć</label>
+update-failed-main = Aktualizowanje njeje so poradźiło. <a data-l10n-name="failed-link-main">Najnowšu wersiju sćahnyć</a>
 
 update-adminDisabled = Aktualizacije su so wot twojeho administratora znjemóžnili
 update-noUpdatesFound = { -brand-short-name } je aktualny

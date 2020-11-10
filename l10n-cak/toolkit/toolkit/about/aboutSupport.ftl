@@ -14,6 +14,12 @@ extensions-name = B'i'aj
 extensions-enabled = Tzijon
 extensions-version = Ruwäch
 extensions-id = ID
+support-addons-title = Taq tz'aqat
+support-addons-name = B'i'aj
+support-addons-type = Ruwäch
+support-addons-enabled = Tzijon
+support-addons-version = Ruwäch
+support-addons-id = ID
 security-software-title = Software de seguridad
 security-software-type = Ruwäch
 security-software-name = B'i'aj
@@ -26,7 +32,7 @@ features-version = Ruwäch
 features-id = ID
 processes-title = Näj taq Tajin
 processes-type = Ruwäch
-processes-count = Tawajilaj
+processes-count = Ajilab'äl
 app-basics-title = Ri najowäx richin runuk'ulem ri chokoy
 app-basics-name = B'i'aj
 app-basics-version = Ruwäch
@@ -41,7 +47,7 @@ app-basics-update-dir =
        *[other] Rumolb'al K'exoj
     }
 app-basics-update-history = Kinatab'al taq k'exoj ruwäch
-app-basics-show-update-history = Tik'ut pe ri kinatab'al taq k'exoj ruwäch
+app-basics-show-update-history = Tik'ut Kinatab'al taq K'exoj
 # Represents the path to the binary used to start the application.
 app-basics-binary = Ruwinari Chokoy
 app-basics-profile-dir =
@@ -59,6 +65,7 @@ app-basics-service-workers = Samajela' pa samaj tz'ib'an kib'i'
 app-basics-profiles = Taq ruwäch b'i'aj
 app-basics-launcher-process-status = Rub'anik K'aqonel
 app-basics-multi-process-support = Rutzuwach k'ïy tajin
+app-basics-fission-support = Fission Windows
 app-basics-remote-processes-count = Näj taq Tajin
 app-basics-enterprise-policies = Ajk'aymolojel taq Na'ojil
 app-basics-location-service-key-google = Google K'ojlib'äl Ewan Rutzij Samaj
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] Tijaq yakwuj
        *[other] Tijaq ri cholb'äl
     }
+environment-variables-title = Ruk'ojlib'al Jalb'äl
+environment-variables-name = B'i'aj
+environment-variables-value = Retal
+experimental-features-title = Soltojtob'enel taq Rub'anikil
+experimental-features-name = B'i'aj
+experimental-features-value = Retal
 modified-key-prefs-title = K'exon nimaläj taq ajowanïk
 modified-prefs-name = B'i'aj
 modified-prefs-value = Retal
@@ -95,8 +108,6 @@ graphics-desktop-environment = Ruk'ojlib'al Ajkematz'ib'
 place-database-title = Taq kik'ojlem cholxe'el tzij
 place-database-integrity = Ch'ajch'ojri'ïl
 place-database-verify-integrity = Tinik'öx ch'ajch'ojri'ïl
-js-title = JavaScript
-js-incremental-gc = Rusik'ik k'iyirisan q'ayïs
 a11y-title = Okel
 a11y-activated = Tzijïl
 a11y-force-disabled = Tichajïx apo ri okel
@@ -126,10 +137,9 @@ restart-button-label = Titikirisäx chik
 
 audio-backend = Q'ojom Backend
 max-audio-channels = Nima'q taq b'ey
-channel-layout = Ruwachib'enik Ajowan B'ey
 sample-rate = Ajowan Q'ijun Tz'etb'äl
 roundtrip-latency = Rulatensya b'enam chuqa' tzolojnem (junaman jech'unïk)
-media-title = Q'ojom
+media-title = K'ïy k'oxom
 media-output-devices-title = Elem taq Okisaxel
 media-input-devices-title = Okib'äl taq Okisaxel
 media-device-name = B'i'aj
@@ -238,7 +248,7 @@ found = Xrïl
 missing = Sachon
 gpu-process-pid = GPUProcessPid
 gpu-process = GPUProcess
-gpu-description = Tzijoxkil
+gpu-description = Tzijoxikil
 gpu-vendor-id = ID k'ayinel
 gpu-device-id = ID okisaxel
 gpu-subsys-id = ID Subsys
@@ -263,11 +273,13 @@ blocklisted-bug = Ri q'ëq cholb'äl ruma taq k'ayewal etaman kiwäch
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = sachoj { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Pa ri rucholajem q'atoj ruma k'ayewal etaman kiwa: <a data-l10n-name="bug-link">{ $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Q'ëq cholb'äl: rub'itz'ib' sachoj { $failureCode }
 d3d11layers-crash-guard = D3D11 Chojmirisanel
 d3d11video-crash-guard = D3D11 Silowachib'äl ewanel rusik'ixik
-d3d9video-crash-buard = D3D9 Silowachib'äl Ewanel rusik'ixik
 d3d9video-crash-guard = D3D9 Silowachib'äl Ewanel rusik'ixik
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Silowachib'äl Ewanel Rusik'ixik
@@ -309,12 +321,26 @@ launcher-process-status-unknown = Man etaman ta täq rub'anikil
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
 multi-process-status-0 = Tzijon ruma ri winäq
 multi-process-status-1 = Tzijon wi pe
-multi-process-status-2 = Chupül
+multi-process-status-2 = Chupun
 multi-process-status-4 = Chupun kuma ri taq samajib'äl richin okel
 multi-process-status-6 = Xchuputäj ruma xatz'ib'aj rucholajem tzij ri man koch'el ta
 multi-process-status-7 = Xchuputäj kuma ri taq tz'aqat
 multi-process-status-8 = Xb'an chi xchup
 multi-process-status-unknown = Man etaman ta rub'anikil
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Xchup ruma ri tojtob'enel
+fission-status-experiment-treatment = Xtzij ruma ri tojtob'enel
+fission-status-disabled-by-e10s-env = Xchup ruma ri k'ojlib'äl
+fission-status-enabled-by-env = Xtzij ruma ri k'ojlib'äl
+fission-status-disabled-by-safe-mode = Xchup ruma ri jikïl b'anikil
+fission-status-enabled-by-default = Xtzij wi pe
+fission-status-disabled-by-default = Xchup wi pe
+fission-status-enabled-by-user-pref = Xtzij ruma ri okisanel
+fission-status-disabled-by-user-pref = Xchup ruma ri okisanel
+fission-status-disabled-by-e10s-other = E10s chupun
 async-pan-zoom = Asynchronous Pan/Zoom
 apz-none = majun
 wheel-enabled = xuya' q'ij xok ri seton
@@ -335,3 +361,12 @@ touch-warning = xchuputäj ri rokitz'ib' chapoj meximojri'ïl ruma chi ri pref m
 policies-inactive = Chupül
 policies-active = Tzijïl
 policies-error = Sachoj
+
+## Printing section
+
+support-printing-title = Nitz'ajb'äx
+support-printing-troubleshoot = Kisolik taq k'ayewal
+support-printing-clear-settings-button = Tiyuj kinuk'ulem yakon taq tz'ajb'anïk
+support-printing-modified-settings = Kinuk'ulem jalon taq tz'ajb'anïk
+support-printing-prefs-name = B'i'aj
+support-printing-prefs-value = Retal

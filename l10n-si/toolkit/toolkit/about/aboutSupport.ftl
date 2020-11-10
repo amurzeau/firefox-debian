@@ -18,6 +18,9 @@ extensions-name = නම
 extensions-enabled = බලැති (Enabled)
 extensions-version = නිකුතුව
 extensions-id = ID
+support-addons-name = නම
+support-addons-version = නිකුතුව
+support-addons-id = ID
 security-software-title = ආරක්ෂක මෘදුකාංග
 security-software-type = වර්ගය
 security-software-name = නම
@@ -71,8 +74,6 @@ graphics-failure-log-title = අසමර්ථ වාර්ථාව
 graphics-gpu1-title = GPU #1
 graphics-gpu2-title = GPU #2
 graphics-decision-log-title = තීරණ වාර්ථාව
-js-title = JavaScript
-js-incremental-gc = Incremental GC
 a11y-title = ප්‍රවේශතාව
 a11y-activated = සක්‍රීය කළ
 a11y-force-disabled = පිවිසුම අබල කරන්න
@@ -109,6 +110,7 @@ intl-os-title = මෙහෙයුම් පද්ධතිය
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 

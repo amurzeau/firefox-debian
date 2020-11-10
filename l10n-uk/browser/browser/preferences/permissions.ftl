@@ -5,66 +5,53 @@
 permissions-window =
     .title = Винятки
     .style = width: 36em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Адреса сайту
     .accesskey = д
-
 permissions-block =
     .label = Блокувати
     .accesskey = Б
-
 permissions-session =
     .label = Дозволити на сеанс
     .accesskey = о
-
 permissions-allow =
     .label = Дозволити
     .accesskey = Д
-
 permissions-site-name =
     .label = Вебсайт
-
 permissions-status =
     .label = Стан
-
 permissions-remove =
     .label = Вилучити вебсайт
     .accesskey = л
-
 permissions-remove-all =
     .label = Вилучити всі вебсайти
     .accesskey = с
-
 permissions-button-cancel =
     .label = Скасувати
     .accesskey = С
-
 permissions-button-ok =
     .label = Зберегти зміни
     .accesskey = З
-
+permission-dialog =
+    .buttonlabelaccept = Зберегти зміни
+    .buttonaccesskeyaccept = З
 permissions-autoplay-menu = Типово для всіх вебсайтів:
-
 permissions-searchbox =
     .placeholder = Пошук по сайту
-
 permissions-capabilities-autoplay-allow =
     .label = Дозволити аудіо та відео
 permissions-capabilities-autoplay-block =
     .label = Блокувати аудіо
 permissions-capabilities-autoplay-blockall =
-    .label = Блокувати аудіо і відео
-
+    .label = Блокувати аудіо та відео
 permissions-capabilities-allow =
     .label = Дозволити
 permissions-capabilities-block =
     .label = Блокувати
 permissions-capabilities-prompt =
     .label = Завжди питати
-
 permissions-capabilities-listitem-allow =
     .value = Дозволити
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = Введено неправильне мереж
 permissions-invalid-uri-label = Введіть правильне мережеве ім’я сервера
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = Винятки - Блокування вмісту
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Ви вимкнули блокування вмісту на цих вебсайтах.
 
 permissions-exceptions-etp-window =
     .title = Винятки для розширеного захисту від стеження
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Дозволені вебсайти - Встановлення додатків
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Ви можете вказати, яким сайтам дозволено встановлювати додатки. Введіть точну адресу кожного сайту і натисніть кнопку Дозволити.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Винятки - Автовідтворення
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Ви можете вказати, яким вебсайтам завжди дозволяється автоматично відтворювати медіа зі звуком. Введіть адресу сайту і натисніть кнопку Блокувати або Дозволити.
 
 ## Site Permissions - Autoplay
 

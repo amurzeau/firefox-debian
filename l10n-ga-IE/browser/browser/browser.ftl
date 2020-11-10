@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Brabhsáil Phríobháideach)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Brabhsáil Phríobháideach)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Brabhsáil Phríobháideach)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Brabhsáil Phríobháideach)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -95,6 +93,9 @@ urlbar-search-tips-confirm = Maith go leor, tuigim
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 
+## Local search mode indicator labels in the urlbar
+
+
 ##
 
 urlbar-geolocation-blocked =
@@ -109,12 +110,10 @@ urlbar-screen-blocked =
     .tooltiptext = Chuir tú cosc ar an suíomh seo do scáileán a chomhroinnt.
 urlbar-persistent-storage-blocked =
     .tooltiptext = Chuir tú cosc ar stóras seasmhach ar an suíomh seo.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Cuir an leabharmharc seo in eagar ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -124,6 +123,39 @@ urlbar-star-add-bookmark =
 
 page-action-manage-extension =
     .label = Bainistigh an Breiseán…
+
+## Page Action menu
+
+page-action-pocket-panel =
+    .label = Sábháil an Leathanach i b{ -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Cóipeáil an Nasc
+page-action-copy-url-urlbar =
+    .tooltiptext = Cóipeáil an Nasc
+page-action-email-link-panel =
+    .label = Seol an Nasc trí Ríomhphost…
+page-action-email-link-urlbar =
+    .tooltiptext = Seol an Nasc trí Ríomhphost…
+page-action-share-url-panel =
+    .label = Comhroinn
+page-action-share-url-urlbar =
+    .tooltiptext = Comhroinn
+page-action-share-more-panel =
+    .label = Tuilleadh…
+page-action-send-tab-not-ready =
+    .label = Gléasanna á Sioncronú…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Pionnáil an Cluaisín
+page-action-pin-tab-urlbar =
+    .tooltiptext = Pionnáil an Cluaisín
+page-action-unpin-tab-panel =
+    .label = Díphionnáil an Cluaisín
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Díphionnáil an Cluaisín
 
 ## Auto-hide Context Menu
 
@@ -139,20 +171,26 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = An uair seo, cuardaigh le:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Socruithe Cuardaigh
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Athraigh na socruithe cuardaigh
-
 search-one-offs-context-open-new-tab =
     .label = Cuardaigh i gCluaisín Nua
     .accesskey = r
 search-one-offs-context-set-as-default =
     .label = Socraigh mar Inneall Cuardaigh Réamhshocraithe
     .accesskey = d
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
 
 ## Bookmark Panel
 
@@ -228,18 +266,52 @@ urlbar-default-placeholder =
     .defaultPlaceholder = Cuardaigh nó cuir seoladh isteach
 urlbar-placeholder =
     .placeholder = Cuardaigh nó cuir seoladh isteach
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Cuardaigh le { $name } nó cuir seoladh isteach
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Tá an brabhsálaí faoi chianrialú
 urlbar-switch-to-tab =
     .value = Téigh go cluaisín:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Eisínteacht:
-
 urlbar-go-button =
     .tooltiptext = Téigh go dtí an seoladh atá sa Bharra Suímh
 urlbar-page-action-button =
     .tooltiptext = Gníomhartha leathanaigh
 urlbar-pocket-button =
     .tooltiptext = Sábháil i b{ -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Cuardaigh le { $engine }
+urlbar-result-action-switch-tab = Téigh go Cluaisín
+urlbar-result-action-visit = Oscail
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = Tá <span data-l10n-name="domain">{ $domain }</span> ar lánscáileán anois
+fullscreen-warning-no-domain = Tá an cháipéis seo ar lánscáileán anois
+fullscreen-exit-button = Fág Mód Lánscáileáin (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Fág Mód Lánscáileáin (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = Tá <span data-l10n-name="domain">{ $domain }</span> i gceannas ar do chúrsóir faoi láthair. Brúigh Esc chun dul i gceannas air arís.
+pointerlock-warning-no-domain = Tá an cháipéis seo i gceannas ar do chúrsóir faoi láthair. Brúigh Esc chun dul i gceannas air arís.

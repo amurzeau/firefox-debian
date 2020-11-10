@@ -5,66 +5,53 @@
 permissions-window =
     .title = חריגות
     .style = width: 36em
-
 permissions-close-key =
     .key = w
-
 permissions-address = כתובת אתר
     .accesskey = ת
-
 permissions-block =
     .label = חסום
     .accesskey = ח
-
 permissions-session =
     .label = הרשה למשך ההפעלה
     .accesskey = מ
-
 permissions-allow =
     .label = הרשה
     .accesskey = ש
-
 permissions-site-name =
     .label = אתר
-
 permissions-status =
     .label = מצב
-
 permissions-remove =
     .label = הסרת אתר
     .accesskey = ה
-
 permissions-remove-all =
     .label = הסרת כל האתרים
     .accesskey = ס
-
 permissions-button-cancel =
     .label = ביטול
     .accesskey = ב
-
 permissions-button-ok =
     .label = שמירת שינויים
     .accesskey = ש
-
+permission-dialog =
+    .buttonlabelaccept = שמירת שינויים
+    .buttonaccesskeyaccept = ש
 permissions-autoplay-menu = ברירת מחדל עבור כל האתרים:
-
 permissions-searchbox =
     .placeholder = חיפוש אתר
-
 permissions-capabilities-autoplay-allow =
     .label = הפעלת שמע ווידאו
 permissions-capabilities-autoplay-block =
     .label = חסימת שמע
 permissions-capabilities-autoplay-blockall =
     .label = חסימת שמע ווידאו
-
 permissions-capabilities-allow =
     .label = הרשה
 permissions-capabilities-block =
     .label = חסום
 permissions-capabilities-prompt =
     .label = לשאול תמיד
-
 permissions-capabilities-listitem-allow =
     .value = הרשה
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = הוכנס שם מארח לא חוקי
 permissions-invalid-uri-label = אנא הכנס שם מארח חוקי
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = חריגות - חסימת תוכן
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = ביטלת את חסימת התוכן באתרים אלו.
 
 permissions-exceptions-etp-window =
     .title = חריגות עבור הגנת מעקב מתקדמת
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = אתרים מורשים - התקנת תוספות
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = באפשרותך לציין לאלו אתרים מותר להתקין תוספות. הקלד את הכתובת המדויקת של האתר שברצונך להרשות ואז לחץ על הרשה.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = חריגות - ניגון אוטומטי
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = באפשרותך לציין לאלו אתרים תמיד מותר או אסור לנגן באופן אוטומטי מדיה עם קול. נא להקליד את כתובת האתר שברצונך לנהל ואז ללחוץ על חסום או הרשה.
 
 ## Site Permissions - Autoplay
 

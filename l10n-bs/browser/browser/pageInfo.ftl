@@ -17,6 +17,9 @@ menu-select-all =
     .label = Označi sve
     .accesskey = a
 
+close-dialog =
+    .key = w
+
 general-tab =
     .label = Opće
     .accesskey = O
@@ -68,8 +71,6 @@ media-save-as =
 media-save-image-as =
     .label = Spasi kao…
     .accesskey = e
-media-preview =
-    .value = Pregled medija:
 
 perm-tab =
     .label = Dozvole
@@ -123,12 +124,12 @@ help-button =
 ##   $unit (string) - The unit of data being stored (Usually KB)
 
 security-site-data-cookies = Da, kolačiće o { $value } { $unit } podataka stranice
+security-site-data-only = Da, { $value } { $unit } podataka stranice
 
 security-site-data-cookies-only = Da, kolačiće
 security-site-data-no = Ne
 
 image-size-unknown = Nepoznato
-not-set-verified-by = Neodređeno
 page-info-not-specified =
     .value = Neodređeno
 not-set-alternative-text = Neodređeno
@@ -153,7 +154,6 @@ general-quirks-mode =
     .value = Quirks režim
 general-strict-mode =
     .value = Režim poštivanja standarda
-security-no-owner = Ova web stranica ne pruža informacije o vlasništvu.
 page-info-security-no-owner =
     .value = Ova web stranica ne pruža informacije o vlasništvu.
 media-select-folder = Odaberite direktorij za spašavanje slika
@@ -162,6 +162,55 @@ media-unknown-not-cached =
 permissions-use-default =
     .label = Koristi izvorno
 security-no-visits = Ne
+
+# This string is used to display the number of meta tags
+# in the General Tab
+# Variables:
+#   $tags (number) - The number of meta tags
+general-meta-tags =
+    .value =
+        { $tags ->
+            [one] Meta (1 tag)
+            [few] Meta ({ $tags } taga)
+           *[many] Meta ({ $tags } tagova)
+        }
+
+# This string is used to display the number of times
+# the user has visited the website prior
+# Variables:
+#   $visits (number) - The number of previous visits
+security-visits-number =
+    { $visits ->
+        [0] Ne
+        [one] Da, jednom
+        [few] Da, dvaput
+       *[many] Da, { $visits } puta
+    }
+
+# This string is used to display the size of a media file
+# Variables:
+#   $kb (number) - The size of an image in Kilobytes
+#   $bytes (number) - The size of an image in Bytes
+properties-general-size =
+    .value =
+        { $bytes ->
+            [one] { $kb } KB ({ $bytes } bajt)
+            [few] { $kb } KB ({ $bytes } bajta)
+           *[many] { $kb } KB ({ $bytes } bajta)
+        }
+
+# This string is used to display the type and number
+# of frames of a animated image
+# Variables:
+#   $type (string) - The type of a animated image
+#   $frames (number) - The number of frames in an animated image
+media-animated-image-type =
+    .value =
+        { $frames ->
+            [one] { $type } Slika (animirana, { $frames } frejm)
+            [few] { $type } Slika (animirana, { $frames } frejma)
+           *[many] { $type } Slika (animirana, { $frames } frejmova)
+        }
 
 # This string is used to display the type of
 # an image

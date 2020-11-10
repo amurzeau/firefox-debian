@@ -36,6 +36,7 @@ policy-DisableFirefoxStudies = Man tiya' q'ij chi ri { -brand-short-name } tib'�
 policy-DisableForgetButton = Tiq'at okem pa ri rupitz'b'al Timestäx.
 policy-DisableFormHistory = Man tinatäx ri runatab'al kanob'äl chuqa' taq nojwuj
 policy-DisableMasterPasswordCreation = We nitzij, man nitikïr ta nitz'uk jun ajtij ewan tzij.
+policy-DisablePrimaryPasswordCreation = We qitzij, man nitikïr ta nitz'uk jun aNab'ey Ewan Tzij.
 policy-DisablePasswordReveal = Man tiya' q'ij chi kek'ut ri ewan taq tzij pa yakon taq tikirib'äl molojri'ïl.
 policy-DisablePocket = Tichup ri samaj richin yeyak taq ajk'amaya'l ruxaq pa Pocket.
 policy-DisablePrivateBrowsing = Tichup  ri Ichinan Okem pa K'amaya'l.
@@ -79,6 +80,8 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Titzolin rik'in ri rub
 
 policy-LocalFileLinks = Tiya' q'ij chi ri ajk'amaya'l ruxaq tikixima' ki' kik'in ri aj wawe' taq yakb'äl.
 policy-MasterPassword = Tik'utüx o man tokisäx jun ajtij ewan tzij.
+policy-ManagedBookmarks = Tab'ab'ana' kinuk'ulem jun kicholajem taq yaketal nuk'samajin ruma jun nuk'samajel, ri man nitikïr ta nujäl ri okisanel.
+policy-PrimaryPassword = Tik'utüx o man tokisäx jun Nab'ey Ewan Tzij.
 policy-NetworkPrediction = Titzij o tichup ri nutz'et k'amab'ey (DNS nab'ey rukanoxik).
 policy-NewTabPage = Titzij o tichup ri ruxaq K'ak'a' Ruwi'.
 policy-NoDefaultBookmarks = Kechup ri kitz'ukik taq yaketal e k'o wi etz'aqatisan rik'in { -brand-short-name }, chuqa' ri na'owinäq taq yaketal (Yalan Etz'eton, K'a ri' Ketz'et taq Yaketal). Ch'utitzijol: ütz re na'ojil re' we nokisäx pa ri nab'ey rusamajixik ruwäch b'i'aj.

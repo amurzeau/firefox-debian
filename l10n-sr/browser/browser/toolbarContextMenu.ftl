@@ -17,9 +17,15 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = Изабери све језичке
     .accesskey = И
-toolbar-context-menu-undo-close-tab =
-    .label = Обнови затворене језичке
-    .accesskey = О
+toolbar-context-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Врати затворене језичке
+            [one] Врати затворен језичак
+            [few] Врати затворена језичка
+           *[other] Врати затворених језичака
+        }
+    .accesskey = U
 
 toolbar-context-menu-manage-extension =
     .label = Управљај екстензијама

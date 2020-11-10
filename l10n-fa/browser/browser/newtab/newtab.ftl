@@ -61,6 +61,11 @@ newtab-menu-section-tooltip =
     .title = باز کردن منو
     .aria-label = باز کردن منو
 
+# Tooltip for dismiss button
+newtab-dismiss-button-tooltip =
+    .title = حذف
+    .aria-label = حذف
+
 # This tooltip is for the context menu of Pocket cards or Topsites
 # Variables:
 #  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
@@ -89,6 +94,7 @@ newtab-menu-show-privacy-info = حامیان ما و حریم خصوصی شما
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = انجام شد
+newtab-privacy-modal-button-manage = مدیریتِ تنظیماتِ محتوای مورد حمایت
 newtab-privacy-modal-header = حریم خصوصی شما اهمیت دارد.
 newtab-privacy-modal-link = در مورد حریم خصوصی در برگهٔ جدید بیاموزید
 
@@ -132,6 +138,11 @@ newtab-label-download = دریافت شد
 # Variables:
 #  $sponsorOrSource (String): This is the name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · حمایت مالی شده
+
+# This string is used at the bottom of story cards to indicate sponsored content
+# Variables:
+#  $sponsor (String): This is the name of a sponsor
+newtab-label-sponsored-by = حمایت شده توسط { $sponsor }
 
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.

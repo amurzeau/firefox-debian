@@ -53,8 +53,20 @@ move-to-end =
 move-to-new-window =
     .label = Ilipat sa Bagong Window
     .accesskey = W
-undo-close-tab =
-    .label = Buksang Muli ang Isinarang Tab
+tab-context-close-multiple-tabs =
+    .label = Magsara ng Mga Tab
+    .accesskey = M
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Buksang Muli ang Isinarang Tab
+            [one] Buksang Muli ang Isinarang Tab
+           *[other] Buksang Muli ang mga Isinarang Tab
+        }
     .accesskey = U
 close-tab =
     .label = Isara ang Tab
@@ -67,4 +79,20 @@ move-tabs =
     .accesskey = v
 move-tab =
     .label = Ilipat ang Tab
+    .accesskey = v
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Isara ang Tab
+            [one] Isara ang Tab
+           *[other] Isara ang mga Tab
+        }
+    .accesskey = C
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Ilipat ang Tab
+            [one] Ilipat ang Tab
+           *[other] Ilipat ang mga Tab
+        }
     .accesskey = v

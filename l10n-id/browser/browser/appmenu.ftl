@@ -5,9 +5,8 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = Perlindungan Privasi
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = Buka laporan privasi Anda
+appmenuitem-update-banner =
+    .label-update-downloading = Mengunduh pembaruan { -brand-shorter-name }
 appmenuitem-protection-dashboard-title = Dasbor Perlindungan
 appmenuitem-customize-mode =
     .label = Ubahsuai…
@@ -27,6 +26,7 @@ fxa-toolbar-sync-now =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Yang Baru
+
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

@@ -8,3 +8,7 @@ tag-dialog-window =
 tag-name-label =
     .value = ჭდის სახელი:
     .accesskey = T
+
+tag-color-label =
+    .value = ფერი:
+    .accesskey = ფ

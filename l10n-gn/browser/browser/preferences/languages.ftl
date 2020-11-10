@@ -9,7 +9,7 @@ webpage-languages-window =
 languages-close-key =
     .key = w
 
-languages-description = Ñanduti kuatiarogue sapy'ánte oñekuave'ẽ ndaha'éi peteĩ ñe'ẽme añónte. Eiporavo ñe'ẽnguéra ojehecha hag̃ua ko'ã ñanduti kuatiarogue, jerohoryvéva rupi
+languages-description = Ñanduti kuatiarogue oñekuave’ẽva ndaha’éi ñe’ẽme año. Eiporavo umi ñe’ẽ ojehecha hag̃ua ko’ã ñanduti kuatiarogue, jerohoryvéva rupi
 
 languages-customize-spoof-english =
     .label = Tejejerure ñandutirogue oĩva ingléspe ikatuhag̃uáicha oñeñangarekove che rekovepypeguáre
@@ -27,7 +27,7 @@ languages-customize-remove =
     .accesskey = R
 
 languages-customize-select-language =
-    .placeholder = Eiporavo peteĩ ñe'ẽ mbojoapyrã…
+    .placeholder = Eiporavo peteĩ ñe’ẽ mbojoapyrã…
 
 languages-customize-add =
     .label = Mbojoapy

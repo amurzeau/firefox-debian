@@ -17,17 +17,26 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = Seleccionar todas as lapelas
     .accesskey = S
-toolbar-context-menu-undo-close-tab =
-    .label = Anular o peche da lapela
-    .accesskey = u
-
+toolbar-context-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Desfacer peche de lapela
+            [one] Desfacer o peche da lapela
+           *[other] Desfacer o peche da lapelas
+        }
+    .accesskey = U
 toolbar-context-menu-manage-extension =
     .label = Xestionar extensión
     .accesskey = e
 toolbar-context-menu-remove-extension =
     .label = Retirar extensión
     .accesskey = x
-
+# This label is used in the extensions toolbar buttons context menus,
+# a user can use this command to submit to Mozilla an abuse report
+# related to that extension. "Report" is a verb.
+toolbar-context-menu-report-extension =
+    .label = Denunciar extensión
+    .accesskey = D
 # Can appear on the same context menu as menubarCmd ("Menu Bar") and
 # personalbarCmd ("Bookmarks Toolbar"), so they should have different
 # access keys.
@@ -43,3 +52,12 @@ toolbar-context-menu-remove-from-toolbar =
 toolbar-context-menu-view-customize-toolbar =
     .label = Personalizar…
     .accesskey = P
+toolbar-context-menu-bookmarks-toolbar-always-show =
+    .label = Sempre
+    .accesskey = S
+toolbar-context-menu-bookmarks-toolbar-never-show =
+    .label = Nunca
+    .accesskey = N
+toolbar-context-menu-bookmarks-toolbar-on-new-tab =
+    .label = Só nas lapelas novas
+    .accesskey = l

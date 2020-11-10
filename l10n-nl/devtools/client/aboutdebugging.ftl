@@ -83,8 +83,6 @@ about-debugging-setup-title = Configuratie
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Configureer de verbindingsmethode waarmee u uw apparaat extern wilt debuggen.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox = Gebruik <a>{ about-debugging-this-firefox-runtime-name }</a> om tabbladen, extensies en service workers op deze versie van { -brand-shorter-name } te debuggen.
-# Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox2 = Gebruik <a>{ about-debugging-this-firefox-runtime-name }</a> om extensies en service workers op deze versie van { -brand-shorter-name } te debuggen.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Een apparaat verbinden
@@ -180,13 +178,6 @@ about-debugging-runtime-service-workers-not-compatible = Uw browserconfiguratie 
 # { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
 about-debugging-browser-version-too-old = De verbonden browser heeft een oude versie ({ $runtimeVersion }). De minimaal ondersteunde versie is ({ $minVersion }). Deze configuratie wordt niet ondersteund en kan ervoor zorgen dat DevTools niet goed werkt. Werk de verbonden browser bij. <a>Probleemoplossing</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# - from Fx 67 to 66 or to 65
-# - from Fx 68 to 66
-# Those are normally in range for DevTools compatibility policy, but specific non
-# backward compatible changes broke the debugger in those scenarios (Bug 1528219).
-# { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-about-debugging-browser-version-too-old-67-debugger = Het Debugger-paneel werkt mogelijk niet met de verbonden browser. Gebruik Firefox { $runtimeVersion } als u de Debugger met deze browser moet gebruiken.
-# Dedicated message for a backward compatibility issue that occurs when connecting:
 # from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
 about-debugging-browser-version-too-old-fennec = Deze versie van Firefox kan Firefox voor Android (68) niet debuggen. We raden u aan om voor testdoeleinden Firefox voor Android Nightly op uw telefoon te installeren. <a>Meer info</a>
 # This string is displayed in the runtime page if the remote browser version is too recent.
@@ -259,13 +250,6 @@ about-debugging-extension-location =
 # For instance "geckoprofiler@mozilla.com" or "{ed26ddcb-5611-4512-a89a-51b8db81cfb2}".
 about-debugging-extension-id =
     .label = Extensie-ID
-# This string is displayed as a label of the button that pushes a test payload
-# to a service worker.
-# Notes, this relates to the "Push" API, which is normally not localized so it is
-# probably better to not localize it.
-about-debugging-worker-action-push = Push
-# This string is displayed as a label of the button that starts a service worker.
-about-debugging-worker-action-start = Starten
 # This string is displayed as a label of the button that pushes a test payload
 # to a service worker.
 # Note this relates to the "Push" API, which is normally not localized so it is

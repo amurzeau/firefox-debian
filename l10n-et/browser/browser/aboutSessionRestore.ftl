@@ -28,7 +28,7 @@ restore-page-list-header =
 
 restore-page-try-again-button =
     .label = Taasta seanss
-    .accesskey = T
+    .accesskey = s
 
 restore-page-close-button =
     .label = Alusta uut seanssi

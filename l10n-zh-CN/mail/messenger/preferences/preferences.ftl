@@ -10,6 +10,8 @@ preferences-title =
             [windows] 选项
            *[other] 首选项
         }
+category-list =
+    .aria-label = 分类
 pane-general-title = 常规
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,7 +43,6 @@ composition-addressing-header = 地址
 privacy-main-header = 隐私
 privacy-passwords-header = 密码
 privacy-junk-header = 垃圾邮件
-privacy-data-collection-header = 数据收集与使用
 collection-header = { -brand-short-name } 数据收集与使用
 collection-description = 我们力图为您提供选择权，并保证只收集我们为众人提供和改进 { -brand-short-name } 所需的信息。我们仅在征得您的同意后接收个人信息。
 collection-privacy-notice = 隐私声明
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = I
 confirm-messenger-language-change-description = 重启 { -brand-short-name } 以应用这些更改
 confirm-messenger-language-change-button = 应用并重启客户端
-update-pref-write-failure-title = 写入失败
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = 无法保存首选项。未能写入文件：{ $path }
 update-setting-write-failure-title = 保存“更新”首选项时出错
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -91,12 +88,11 @@ update-in-progress-ok-button = 放弃
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = 继续
+account-button = 账户设置
 addons-button = 扩展和主题
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = 验证您的身份以创建主密码。
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = 请输入 Windows 登录凭据，以创建主密码。这有助于保护您的账户安全。
 # This message can be seen by trying to add a Master Password.
@@ -104,6 +100,13 @@ master-password-os-auth-dialog-message-win = 请输入 Windows 登录凭据，�
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = 创建主密码
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = 请输入 Windows 登录凭据，以创建主密码。这有助于保护您的账户安全。
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = 创建主密码
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -424,7 +427,7 @@ font-label =
     .value = 字体：
     .accesskey = n
 font-size-label =
-    .value = 大小：
+    .value = 字号：
     .accesskey = z
 default-colors-label =
     .label = 使用阅读器的默认颜色
@@ -541,6 +544,15 @@ master-password-label =
 master-password-button =
     .label = 更换主密码…
     .accesskey = C
+primary-password-description = 设置主密码可以保护您所有的密码 - 但是您必须对每次会话输入一次主密码。
+primary-password-label =
+    .label = 使用主密码
+    .accesskey = U
+primary-password-button =
+    .label = 更改主密码…
+    .accesskey = C
+forms-primary-pw-fips-title = 您正处于 FIPS 模式。该模式需要一个非空的主密码。
+forms-master-pw-fips-desc = 密码更改失败
 junk-description =
     设定您默认的垃圾邮件设置。
     可以在“账户设置”中设定特定于账户的垃圾邮件设置。
@@ -614,7 +626,7 @@ idle-time-label = 分钟时，让我的联系人获知
 ##
 
 away-message-label =
-    .label = ，并设置我的状态为离开，状态文本：
+    .label = 并设置我的状态为离开，且加上此状态信息：
     .accesskey = A
 send-typing-label =
     .label = 在对话时发送正在输入通知

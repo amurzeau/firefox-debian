@@ -28,10 +28,6 @@ serviceworker-worker-unregister = Hủy đăng ký
 serviceworker-worker-debug = Gỡ lỗi
     .title = Chỉ dịch vụ đang chạy có thể gỡ lỗi
 
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = Bắt đầu
-
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
 serviceworker-worker-debug-forbidden = Gỡ lỗi
@@ -41,6 +37,14 @@ serviceworker-worker-debug-forbidden = Gỡ lỗi
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = Khởi động
     .title = Chỉ có thể khởi động trình làm việc dịch vụ khi multi e10s bị vô hiệu hóa
+
+# Alt text for the image icon displayed inside a debug link for a service worker.
+serviceworker-worker-inspect-icon =
+    .alt = Kiểm tra
+
+# Text for the start link displayed for a registered but not running Service Worker.
+# Clicking on the link will attempt to start the service worker.
+serviceworker-worker-start3 = Bắt đầu
 
 # Text displayed for the updated time of the service worker. The <time> element will
 # display the last update time of the service worker script.
@@ -62,10 +66,6 @@ serviceworker-worker-status-running = Đang chạy
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = Đã dừng
 
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = Đang đăng ký
-
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = Bạn cần đăng ký một Service Worker để kiểm tra nó ở đây. <a>Tìm hiểu thêm</a>
@@ -86,12 +86,33 @@ serviceworker-empty-suggestions-debugger = Bước qua đăng ký Service Worker
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Kiểm tra Service Worker từ các lĩnh vực khác. <a>Mở about:debugging</a>
 
+# Text displayed when no service workers are visible for the current page.
+serviceworker-empty-intro2 = Không tìm thấy service workers
+
+# Link will open https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
+serviceworker-empty-intro-link = Tìm hiểu thêm
+
+# Text displayed when there are no Service Workers to display for the current page,
+# introducing hints to debug Service Worker issues.
+# <a> and <span> are links that will open the webconsole and the debugger, respectively.
+serviceworker-empty-suggestions2 = Nếu trang hiện tại cần có service worker, bạn có thể tìm lỗi trong <a>Bảng điều khiển</a> hoặc xem qua đăng ký service worker của bạn trong <span>Trình gỡ lỗi</span>.
+
+# Suggestion to go to about:debugging in order to see Service Workers for all domains.
+# Link will open about:debugging in a new tab.
+serviceworker-empty-suggestions-aboutdebugging2 = Xem service workers từ các tên miền khác
+
 # Header for the Manifest page when we have an actual manifest
 manifest-view-header = Bản kê khai ứng dụng
 
 # Header for the Manifest page when there's no manifest to inspect
 # The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
 manifest-empty-intro = Bạn cần thêm một ứng dụng web kê khai để kiểm tra nó ở đây. <a>Tìm hiểu thêm</a>
+
+# Header for the Manifest page when there's no manifest to inspect
+manifest-empty-intro2 = Không phát hiện manifest của ứng dụng web
+
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro-link = Tìm hiểu làm thế nào để thêm manifest
 
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = Lỗi và cảnh báo

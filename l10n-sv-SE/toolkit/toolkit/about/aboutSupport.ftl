@@ -14,6 +14,12 @@ extensions-name = Namn
 extensions-enabled = Aktiverad
 extensions-version = Version
 extensions-id = ID
+support-addons-title = Tillägg
+support-addons-name = Namn
+support-addons-type = Typ
+support-addons-enabled = Aktiverad
+support-addons-version = Version
+support-addons-id = ID
 security-software-title = Säkerhetsprogram
 security-software-type = Typ
 security-software-name = Namn
@@ -59,6 +65,7 @@ app-basics-service-workers = Registrerade Service Workers
 app-basics-profiles = Profiler
 app-basics-launcher-process-status = Uppstartsprocess
 app-basics-multi-process-support = Multiprocess fönster
+app-basics-fission-support = Fission-fönster
 app-basics-remote-processes-count = Fjärrprocesser
 app-basics-enterprise-policies = Företagspolicyer
 app-basics-location-service-key-google = Nyckel Google Location Service
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] Öppna mapp
        *[other] Öppna katalog
     }
+environment-variables-title = Miljövariabler
+environment-variables-name = Namn
+environment-variables-value = Värde
+experimental-features-title = Experimentella funktioner
+experimental-features-name = Namn
+experimental-features-value = Värde
 modified-key-prefs-title = Viktiga ändrade inställningar
 modified-prefs-name = Namn
 modified-prefs-value = Värde
@@ -95,8 +108,6 @@ graphics-desktop-environment = Skrivbordsmiljö
 place-database-title = Platser databas
 place-database-integrity = Integritet
 place-database-verify-integrity = Verifiera integritet
-js-title = JavaScript
-js-incremental-gc = Inkrementell GC
 a11y-title = Tillgänglighet
 a11y-activated = Aktiverad
 a11y-force-disabled = Förhindra tillgänglighet
@@ -126,7 +137,6 @@ restart-button-label = Starta om
 
 audio-backend = Ljudgränssnitt
 max-audio-channels = Max kanaler
-channel-layout = Önskad kanallayout
 sample-rate = Önskad samplingshastighet
 roundtrip-latency = Tur och retur-fördröjning (standardavvikelse)
 media-title = Media
@@ -263,11 +273,13 @@ blocklisted-bug = Svartlistad på grund av kända problem
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bugg { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Blockerad på grund av kända problem: <a data-l10n-name="bug-link">bugg { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Svartlistad; felkod { $failureCode }
 d3d11layers-crash-guard = D3D11 Kompositör
 d3d11video-crash-guard = D3D11 Videoavkodare
-d3d9video-crash-buard = D3D9 Videoavkodare
 d3d9video-crash-guard = D3D9 Videoavkodare
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Videoavkodare
@@ -315,6 +327,20 @@ multi-process-status-6 = Inaktiverad av att textinmatning inte stöds
 multi-process-status-7 = Inaktiverad av tillägg
 multi-process-status-8 = Inaktiverad med tvång
 multi-process-status-unknown = Okänd status
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Inaktiverad av experiment
+fission-status-experiment-treatment = Aktiverad av experiment
+fission-status-disabled-by-e10s-env = Inaktiverad av miljön
+fission-status-enabled-by-env = Aktiverad av miljön
+fission-status-disabled-by-safe-mode = Inaktiverat av säkert läge
+fission-status-enabled-by-default = Aktiverad som standard
+fission-status-disabled-by-default = Inaktiverad som standard
+fission-status-enabled-by-user-pref = Inaktiverad av användaren
+fission-status-disabled-by-user-pref = Inaktiverad av användaren
+fission-status-disabled-by-e10s-other = E10s inaktiverad
 async-pan-zoom = Asynkron panorera/zoom
 apz-none = ingen
 wheel-enabled = hjulinmatning aktiverad
@@ -335,3 +361,12 @@ touch-warning = asynkron tryckinmatning inaktiverad pga inställning ej stöds: 
 policies-inactive = Inaktiv
 policies-active = Aktiv
 policies-error = Fel
+
+## Printing section
+
+support-printing-title = Utskrift
+support-printing-troubleshoot = Felsökning
+support-printing-clear-settings-button = Rensa sparade utskriftsinställningar
+support-printing-modified-settings = Ändrade utskriftsinställningar
+support-printing-prefs-name = Namn
+support-printing-prefs-value = Värde

@@ -17,6 +17,12 @@ extensions-name = 名稱
 extensions-enabled = 已啟用
 extensions-version = 版本
 extensions-id = ID
+support-addons-title = 附加元件
+support-addons-name = 名稱
+support-addons-type = 類型
+support-addons-enabled = 已啟用
+support-addons-version = 版本
+support-addons-id = ID
 security-software-title = 安全軟體
 security-software-type = 類型
 security-software-name = 名稱
@@ -62,6 +68,7 @@ app-basics-service-workers = 註冊的 Service Worker
 app-basics-profiles = 設定檔
 app-basics-launcher-process-status = 啟動器處理程序
 app-basics-multi-process-support = 多程序視窗
+app-basics-fission-support = Fission 視窗
 app-basics-remote-processes-count = 遠端處理程序
 app-basics-enterprise-policies = 企業政策
 app-basics-location-service-key-google = Google Location Service 金鑰
@@ -74,6 +81,12 @@ show-dir-label =
         [windows] 開啟資料夾
        *[other] 開啟資料夾
     }
+environment-variables-title = 環境變數
+environment-variables-name = 名稱
+environment-variables-value = 值
+experimental-features-title = 實驗功能
+experimental-features-name = 名稱
+experimental-features-value = 值
 modified-key-prefs-title = 修改過的重要偏好設定
 modified-prefs-name = 名稱
 modified-prefs-value = 值
@@ -98,8 +111,6 @@ graphics-desktop-environment = 桌面環境
 place-database-title = Places 資料庫
 place-database-integrity = 資料完整
 place-database-verify-integrity = 確認資料完整
-js-title = JavaScript
-js-incremental-gc = Incremental GC
 a11y-title = 輔助功能
 a11y-activated = 已啟用
 a11y-force-disabled = 已強迫停用輔助功能
@@ -129,7 +140,6 @@ restart-button-label = 重新啟動
 
 audio-backend = 音效後端
 max-audio-channels = 最大頻道數
-channel-layout = 偏好頻道類型
 sample-rate = 偏好取樣率
 roundtrip-latency = 往返延遲（標準差）
 media-title = 媒體
@@ -246,11 +256,13 @@ blocklisted-bug = 因為有已知問題被封鎖
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = 由於有已知問題，被加入封鎖名單: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = 已封鎖，錯誤代碼 { $failureCode }
 d3d11layers-crash-guard = D3D11 合成器
 d3d11video-crash-guard = D3D11 視訊解碼器
-d3d9video-crash-buard = D3D9 視訊解碼器
 d3d9video-crash-guard = D3D9 視訊解碼器
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX 視訊解碼器
@@ -298,6 +310,20 @@ multi-process-status-6 = 因不支援的文字輸入工具停用
 multi-process-status-7 = 因附加元件停用
 multi-process-status-8 = 強制停用
 multi-process-status-unknown = 未知狀態
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = 由實驗關閉
+fission-status-experiment-treatment = 由實驗開啟
+fission-status-disabled-by-e10s-env = 由環境關閉
+fission-status-enabled-by-env = 由環境開啟
+fission-status-disabled-by-safe-mode = 因安全模式關閉
+fission-status-enabled-by-default = 預設開啟
+fission-status-disabled-by-default = 預設關閉
+fission-status-enabled-by-user-pref = 由使用者開啟
+fission-status-disabled-by-user-pref = 由使用者關閉
+fission-status-disabled-by-e10s-other = 已停用 e10s
 async-pan-zoom = 異步 Pan/Zoom
 apz-none = 無
 wheel-enabled = 已啟用滾輪輸入
@@ -318,3 +344,12 @@ touch-warning = 因為不支援的偏好設定: { $preferenceKey }，已停用�
 policies-inactive = 未使用
 policies-active = 使用中
 policies-error = 錯誤
+
+## Printing section
+
+support-printing-title = 列印
+support-printing-troubleshoot = 疑難排解
+support-printing-clear-settings-button = 清除儲存的列印設定
+support-printing-modified-settings = 更改過的列印設定
+support-printing-prefs-name = 名稱
+support-printing-prefs-value = 值

@@ -81,3 +81,5 @@ password-os-auth-dialog-message = Norėdami atskleisti išsaugotus slaptažodži
 # notes are only valid for English. Please test in your locale.
 password-os-auth-dialog-message-macosx = atskleisti išsaugotus slaptažodžius
 
+# Don't change this label.
+password-os-auth-dialog-caption = { -brand-full-name }

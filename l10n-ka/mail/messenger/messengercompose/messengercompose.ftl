@@ -9,6 +9,10 @@
 remove-address-row-type = { $type } ველის მოცილება
 
 #   $type (String) - the type of the addressing row
+remove-address-row-type-label =
+    .tooltiptext = { $type } ველის მოცილება
+
+#   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
@@ -41,3 +45,27 @@ pill-action-move-bcc =
     .label = გადატანა ფარული ასლის ველში
     .accesskey = ფ
 
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [1] { $count } დანართი
+           *[other] { $count } დანართი
+        }
+    .accesskey = ნ
+
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [1] { $count } დანართი
+           *[other] { $count } დანართი
+        }
+
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+
+button-return-receipt =
+    .label = ქვითარი
+    .tooltiptext = ქვითრის მოთხოვნა ამ წერილისთვის

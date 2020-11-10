@@ -40,6 +40,8 @@ cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 
 cert-error-details-cert-chain-label = Sertifikātu ķēde:
 
+open-in-new-window-for-csp-or-xfo-error = Atvērt vietni jaunā logā
+
 ## Messages used for certificate error titles
 
 connectionFailure-title = Nevar pieslēgties
@@ -67,8 +69,7 @@ proxyResolveFailure-title = Nevar atrast starpniekserveri
 redirectLoop-title = Lapa netiek korekti pāradresēta
 unknownSocketType-title = Negaidīta atbilde no servera
 nssFailure2-title = Drošais savienojums neizdevās
-cspBlocked-title = Bloķē satura drošības politika
-xfoBlocked-title = Bloķēta ar X-Frame-Options politiku
+csp-xfo-error-title = { -brand-short-name } nevar atvērt šo lapu
 corruptedContentError-title = Bojāta satura kļūda
 remoteXUL-title = Attālināts XUL
 sslv3Used-title = Neizdevās droši pieslēgties

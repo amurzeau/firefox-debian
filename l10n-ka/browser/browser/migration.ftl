@@ -53,6 +53,9 @@ no-migration-sources = სანიშნების, ისტორიის 
 import-source-page-title = პარამეტრებისა და მონაცემთა გადმოტანა
 import-items-page-title = გადმოსატანი მონაცემები
 import-items-description = მიუთითეთ გადმოსატანი მონაცემები:
+import-permissions-page-title = { -brand-short-name } გთხოვთ ნებართვებს
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS საჭიროებს, რომ { -brand-short-name } თქვენი საგანგებო დაშვებით დაუკავშირდეს Safari-ის სანიშნებს. დაწკაპეთ „გაგრძელება” და აირჩიეთ „Bookmarks.plist“ ფაილი, ასარჩევი არედან.
 import-migrating-page-title = გადმოტანა…
 import-migrating-description = გადმოვა შემდეგი მონაცემები…
 import-select-profile-page-title = პროფილის არჩევა
@@ -88,10 +91,57 @@ imported-edge-reading-list = წასაკითხი სია (Edge-და�
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.
 
+browser-data-cookies-checkbox =
+    .label = ფუნთუშები
+browser-data-cookies-label =
+    .value = ფუნთუშები
+browser-data-history-checkbox =
+    .label =
+        { $browser ->
+            [firefox] გვერდების ისტორია და სანიშნები
+           *[other] გვერდების ისტორია
+        }
+browser-data-history-label =
+    .value =
+        { $browser ->
+            [firefox] გვერდების ისტორია და სანიშნები
+           *[other] გვერდების ისტორია
+        }
+browser-data-formdata-checkbox =
+    .label = შევსებული ველების ისტორია
+browser-data-formdata-label =
+    .value = შევსებული ველების ისტორია
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-checkbox =
+    .label = შენახული ანგარიშები და პაროლები
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-label =
+    .value = შენახული ანგარიშები და პაროლები
+browser-data-bookmarks-checkbox =
+    .label =
+        { $browser ->
+            [ie] რჩეულები
+            [edge] რჩეულები
+           *[other] სანიშნები
+        }
+browser-data-bookmarks-label =
+    .value =
+        { $browser ->
+            [ie] რჩეულები
+            [edge] რჩეულები
+           *[other] სანიშნები
+        }
+browser-data-otherdata-checkbox =
+    .label = სხვა მონაცემები
+browser-data-otherdata-label =
+    .label = სხვა მონაცემები
 browser-data-session-checkbox =
     .label = ფანჯრები და ჩანართები
 browser-data-session-label =

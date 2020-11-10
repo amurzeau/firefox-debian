@@ -34,6 +34,9 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Αποθήκευση αλλαγών
     .accesskey = Π
+permission-dialog =
+    .buttonlabelaccept = Αποθήκευση αλλαγών
+    .buttonaccesskeyaccept = Π
 permissions-autoplay-menu = Προεπιλογή για όλες τις ιστοσελίδες:
 permissions-searchbox =
     .placeholder = Αναζήτηση ιστοσελίδας
@@ -63,10 +66,6 @@ permissions-invalid-uri-label = Παρακαλώ εισάγετε ένα έγκ�
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-content-blocking-window =
-    .title = Εξαιρέσεις - Φραγή περιεχομένου
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Έχετε απενεργοποιήσει τη φραγή περιεχομένου σε αυτές τις ιστοσελίδες.
 permissions-exceptions-etp-window =
     .title = Εξαιρέσεις για τη βελτιωμένη προστασία από καταγραφή
     .style = { permissions-window.style }
@@ -99,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Επιτρεπόμενες ιστοσελίδες - Εγκατάσταση προσθέτων
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Μπορείτε να καθορίσετε σε ποιες ιστοσελίδες επιτρέπεται η εγκατάσταση προσθέτων. Πληκτρολογήστε την ακριβή διεύθυνση της ιστοσελίδας που θέλετε να επιτρέψετε και, στη συνέχεια, κάντε κλικ στο "Αποδοχή".
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Εξαιρέσεις - Αυτόματη αναπαραγωγή
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Μπορείτε να καθορίσετε σε ποιες ιστοσελίδες επιτρέπεται ή όχι η αυτόματη αναπαραγωγή πολυμέσων με ήχο. Πληκτρολογήστε τη διεύθυνση της ιστοσελίδας που θέλετε να διαχειριστείτε και, έπειτα, επιλέξτε "Φραγή" ή "Αποδοχή".
 
 ## Site Permissions - Autoplay
 

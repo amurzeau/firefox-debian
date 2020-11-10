@@ -46,38 +46,14 @@
 <!-- Edit Menu -->
 <!ENTITY editMenu.label                                 "Uredi">
 <!ENTITY editMenu.accesskey                             "U">
-<!ENTITY undoCmd.label                                  "Razveljavi">
-<!ENTITY undoCmd.key                                    "Z">
-<!ENTITY undoCmd.accesskey                              "R">
-<!ENTITY redoCmd.label                                  "Uveljavi">
-<!ENTITY redoCmd.key                                    "Y">
-<!ENTITY redoCmd.accesskey                              "U">
-<!ENTITY cutCmd.label                                   "Izreži">
-<!ENTITY cutCmd.key                                     "X">
-<!ENTITY cutCmd.accesskey                               "z">
-<!ENTITY copyCmd.label                                  "Kopiraj">
-<!ENTITY copyCmd.key                                    "C">
-<!ENTITY copyCmd.accesskey                              "K">
-<!ENTITY pasteCmd.label                                 "Prilepi">
-<!ENTITY pasteCmd.key                                   "V">
-<!ENTITY pasteCmd.accesskey                             "P">
 <!ENTITY deleteCmd.label                                "Izbriši">
-<!ENTITY deleteCmd.accesskey                            "b">
 <!ENTITY deleteAbCmd.label                              "Izbriši imenik">
 <!ENTITY deleteContactCmd.label                         "Izbriši stik">
 <!ENTITY deleteContactsCmd.label                        "Izbriši stike">
 <!ENTITY deleteListCmd.label                            "Izbriši seznam">
 <!ENTITY deleteListsCmd.label                           "Izbriši sezname">
 <!ENTITY deleteItemsCmd.label                           "Izbriši predmete">
-<!ENTITY selectAllCmd.label                             "Izberi vse">
-<!ENTITY selectAllCmd.key                               "A">
 <!ENTITY searchAddressesCmd.key                         "f">
-<!ENTITY selectAllCmd.accesskey                         "v">
-<!ENTITY swapFirstNameLastNameCmd.label                 "Zamenjaj ime in priimek">
-<!ENTITY swapFirstNameLastNameCmd.accesskey             "Z">
-<!-- LOCALIZATION NOTE (hideSwapFnLnUI) : DONT_TRANSLATE -->
-<!-- Swap FN/LN UI  Set to "false" to show swap fn/ln UI -->
-<!ENTITY hideSwapFnLnUI "true">
 <!ENTITY propertiesMenu.label                           "Lastnosti">
 <!ENTITY propertiesMenu.accesskey                       "L">
 <!ENTITY propertiesCmd.key                              "i">
@@ -126,9 +102,6 @@ because displayed names don't have the comma in between. -->
 <!ENTITY messengerCmd.label                             "Pošta in novičarske skupine">
 <!ENTITY messengerCmd.accesskey                         "P">
 <!ENTITY messengerCmd.commandkey                        "1">
-<!ENTITY addressBookCmd.label                           "Imenik">
-<!ENTITY addressBookCmd.accesskey                       "I">
-<!ENTITY addressBookCmd.key                             "B">
 <!ENTITY searchAddressesCmd.label                       "Išči po naslovih …">
 <!ENTITY searchAddressesCmd.accesskey                   "š">
 <!ENTITY importCmd.label                                "Uvozi …">
@@ -152,6 +125,8 @@ because displayed names don't have the comma in between. -->
 <!ENTITY propertiesContext.accesskey                    "L">
 <!ENTITY abPropertiesContext.label                      "Lastnosti">
 <!ENTITY abPropertiesContext.accesskey                  "L">
+<!ENTITY syncContext.label                              "Sinhroniziraj">
+<!ENTITY syncContext.accesskey                          "h">
 <!ENTITY editContactContext.label                       "Uredi stik">
 <!ENTITY editContactContext.accesskey                   "s">
 <!ENTITY editMailingListContext.label                   "Uredi seznam">

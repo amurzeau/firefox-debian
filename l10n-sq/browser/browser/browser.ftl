@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Shtypni më pak, gjeni më shumë: Kërkoni me { $engineName } drejt e nga shtylla juaj e adresave.
 urlbar-search-tips-redirect-2 = Filloni kërkimin tuaj te shtylla e adresave që të shihni sugjerime nga { $engineName } dhe nga historiku juaj i shfletimit.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Përzgjidhni këtë shkurtore, që të gjeni më shpejt ç’ju duhet.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Faqerojtës
+urlbar-search-mode-tabs = Skeda
+urlbar-search-mode-history = Historik
 
 ##
 
@@ -156,6 +165,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Hiqe Zgjerimin
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Dërgoje Skedën te Pajisje
+           *[other] Dërgo { $tabCount } Skedë te Pajisje
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Dërgoje Skedën te Pajisje
+           *[other] Dërgo { $tabCount } Skedë te Pajisje
+        }
+page-action-pocket-panel =
+    .label = Ruaje Faqen te { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Kopjoji Lidhjen
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopjoji Lidhjen
+page-action-email-link-panel =
+    .label = Dërgoni Lidhje me Email…
+page-action-email-link-urlbar =
+    .tooltiptext = Dërgoni Lidhje me Email…
+page-action-share-url-panel =
+    .label = Ndajeni me të tjerët
+page-action-share-url-urlbar =
+    .tooltiptext = Ndajeni me të tjerët
+page-action-share-more-panel =
+    .label = Më tepër…
+page-action-send-tab-not-ready =
+    .label = Po njëkohësohen Pajisje…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Fiksoje Skedën
+page-action-pin-tab-urlbar =
+    .tooltiptext = Fiksoje Skedën
+page-action-unpin-tab-panel =
+    .label = Shfiksoje Skedën
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Shfiksoje Skedën
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +223,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Këtë herë kërko me:
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +241,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Vëre si Motor Kërkimi Parazgjedhje për Dritare Private
     .accesskey = V
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Faqerojtës ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Skeda ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Historik ({ $restrict })
 
 ## Bookmark Panel
 
@@ -212,6 +288,17 @@ identity-passive-loaded = Pjesë të kësaj faqeje (fjala vjen, figura) s'janë 
 identity-active-loaded = E keni çaktivizuar mbrojtjen për këtë faqe.
 identity-weak-encryption = Kjo faqe përdor fshehtëzim të dobët.
 identity-insecure-login-forms = Kredencialet e hyrjeve të dhëna në këtë faqe mund të komprometohen.
+identity-https-only-connection-upgraded = (u përmirësua në HTTPS)
+identity-https-only-label = Mënyra Vetëm-HTTPS
+identity-https-only-dropdown-on =
+    .label = On
+identity-https-only-dropdown-off =
+    .label = Off
+identity-https-only-dropdown-off-temporarily =
+    .label = Off përkohësisht
+identity-https-only-info-turn-on2 = Aktivizoni Mënyrën Vetëm-HTTPS për këtë sajt, nëse doni që { -brand-short-name }-i të përmirësojë lidhjen, kur është e mundur.
+identity-https-only-info-turn-off2 = Nëse faqja duket të jetë e dëmtuar, mund të doni të çaktivizoni Mënyrën Vetëm-HTTPS- për këtë sajt, që të ringarkohet duke përdorur HTTP jo të sigurt.
+identity-https-only-info-no-upgrade = S’arrihet të përmirësohet lidhja nga HTTP.
 identity-permissions =
     .value = Leje
 identity-permissions-reload-hint = Mund t'ju duhet të ringarkoni faqen që të hyjnë në fuqi ndryshimet.
@@ -257,6 +344,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Mbylleni
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Importoni faqerojtës…
+    .tooltiptext = Kopjoni në { -brand-short-name } faqerojtës prej një tjetër shfletuesi.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -292,8 +385,42 @@ enable-devtools-popup-description = Që të përdorni shkurtoren F12, së pari h
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Bëni kërkim ose jepni adresë
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Bëni kërkim ose jepni adresë
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Kërkoni në Web
+    .aria-label = Kërkoni me { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Jepni terma kërkimi
+    .aria-label = Kërkoni me { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Jepni terma kërkimi
+    .aria-label = Kërko te faqerojtësit
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Jepni terma kërkimi
+    .aria-label = Kërko në historik
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Jepni terma kërkimi
+    .aria-label = Kërko në skeda
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Kërkoni me { $name } ose jepni adresë
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Fshiheni Anështyllën e Faqerojtësve
 urlbar-permissions-granted =
@@ -309,3 +436,67 @@ urlbar-page-action-button =
     .tooltiptext = Veprime faqeje
 urlbar-pocket-button =
     .tooltiptext = Ruajeni te { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Kërko me { $engine } në një Dritare Private
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Kërko në Dritare Private
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Kërko me { $engine }
+urlbar-result-action-sponsored = E sponsorizuar
+urlbar-result-action-switch-tab = Kalo te Skeda
+urlbar-result-action-visit = Vizitojeni
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Shtypni tastin Tab që të kërkohet me { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Shtypni tastin Tab që të kërkohet me { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Kërkoni me { $engine } drejt e nga shtylla e adresave
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Kërkoni me { $engine } drejt e nga shtylla e adresave
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Kërkoni Te Faqerojtësit
+urlbar-result-action-search-history = Kërkoni te Historiku
+urlbar-result-action-search-tabs = Kërkoni Në Skeda
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> tani është sa krejt ekrani
+fullscreen-warning-no-domain = Ky dokument tani shfaqet sa krejt ekrani
+fullscreen-exit-button = Dilni nga Sa Krejt Ekrani (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Dilni Nga Sa Krejt Ekrani (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> është në kontroll të kursorit tuaj. Shtypni Esc që të rimerrni kontrollin.
+pointerlock-warning-no-domain = Kursori është nën kontrollin e kursorit tuaj. Shtypni Esc që të rimerrni kontrollin.

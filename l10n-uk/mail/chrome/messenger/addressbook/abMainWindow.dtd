@@ -22,7 +22,7 @@
 <!ENTITY newCardDAVBookCmd.accesskey                    "V">
 <!ENTITY newLDAPDirectoryCmd.label                      "Каталог LDAP…">
 <!ENTITY newLDAPDirectoryCmd.accesskey                  "л">
-<!ENTITY newMessageCmd.label                            "Лист">
+<!ENTITY newMessageCmd.label                            "Повідомлення">
 <!ENTITY newMessageCmd.key                              "M">
 <!ENTITY newMessageCmd.accesskey                        "Л">
 <!-- LOCALIZATION NOTE (osxAddressBook) : These entities are only used on Mac -->
@@ -46,38 +46,14 @@
 <!-- Edit Menu -->
 <!ENTITY editMenu.label                                 "Редагування">
 <!ENTITY editMenu.accesskey                             "Р">
-<!ENTITY undoCmd.label                                  "Скасувати">
-<!ENTITY undoCmd.key                                    "Z">
-<!ENTITY undoCmd.accesskey                              "к">
-<!ENTITY redoCmd.label                                  "Повторити">
-<!ENTITY redoCmd.key                                    "Y">
-<!ENTITY redoCmd.accesskey                              "т">
-<!ENTITY cutCmd.label                                   "Вирізати">
-<!ENTITY cutCmd.key                                     "X">
-<!ENTITY cutCmd.accesskey                               "и">
-<!ENTITY copyCmd.label                                  "Копіювати">
-<!ENTITY copyCmd.key                                    "C">
-<!ENTITY copyCmd.accesskey                              "о">
-<!ENTITY pasteCmd.label                                 "Вставити">
-<!ENTITY pasteCmd.key                                   "V">
-<!ENTITY pasteCmd.accesskey                             "с">
 <!ENTITY deleteCmd.label                                "Видалити">
-<!ENTITY deleteCmd.accesskey                            "В">
 <!ENTITY deleteAbCmd.label                              "Видалити адресну книгу">
 <!ENTITY deleteContactCmd.label                         "Видалити контакт">
 <!ENTITY deleteContactsCmd.label                        "Видалити контакти">
 <!ENTITY deleteListCmd.label                            "Видалити список">
 <!ENTITY deleteListsCmd.label                           "Видалити списки">
 <!ENTITY deleteItemsCmd.label                           "Видалити елементи">
-<!ENTITY selectAllCmd.label                             "Виділити все">
-<!ENTITY selectAllCmd.key                               "A">
 <!ENTITY searchAddressesCmd.key                         "f">
-<!ENTITY selectAllCmd.accesskey                         "с">
-<!ENTITY swapFirstNameLastNameCmd.label                 "Поміняти місцями ім’я і прізвище">
-<!ENTITY swapFirstNameLastNameCmd.accesskey             "П">
-<!-- LOCALIZATION NOTE (hideSwapFnLnUI) : DONT_TRANSLATE -->
-<!-- Swap FN/LN UI  Set to "false" to show swap fn/ln UI -->
-<!ENTITY hideSwapFnLnUI "true">
 <!ENTITY propertiesMenu.label                           "Властивості">
 <!ENTITY propertiesMenu.accesskey                       "л">
 <!ENTITY propertiesCmd.key                              "i">
@@ -126,9 +102,6 @@ because displayed names don't have the comma in between. -->
 <!ENTITY messengerCmd.label                             "Пошта і новини">
 <!ENTITY messengerCmd.accesskey                         "П">
 <!ENTITY messengerCmd.commandkey                        "1">
-<!ENTITY addressBookCmd.label                           "Адресна книга">
-<!ENTITY addressBookCmd.accesskey                       "А">
-<!ENTITY addressBookCmd.key                             "B">
 <!ENTITY searchAddressesCmd.label                       "Пошук адрес…">
 <!ENTITY searchAddressesCmd.accesskey                   "а">
 <!ENTITY importCmd.label                                "Імпорт…">
@@ -152,14 +125,16 @@ because displayed names don't have the comma in between. -->
 <!ENTITY propertiesContext.accesskey                    "В">
 <!ENTITY abPropertiesContext.label                      "Властивості">
 <!ENTITY abPropertiesContext.accesskey                  "В">
+<!ENTITY syncContext.label                              "Синхронізувати">
+<!ENTITY syncContext.accesskey                          "х">
 <!ENTITY editContactContext.label                       "Змінити контакт">
 <!ENTITY editContactContext.accesskey                   "З">
 <!ENTITY editMailingListContext.label                   "Змінити список">
 <!ENTITY editMailingListContext.accesskey               "м">
-<!ENTITY newmsgButton.label                             "Лист">
-<!ENTITY newmsgButton.accesskey                         "Л">
-<!ENTITY newIM.label                                    "Звісточку">
-<!ENTITY newIM.accesskey                                "З">
+<!ENTITY newmsgButton.label                             "Написати">
+<!ENTITY newmsgButton.accesskey                         "п">
+<!ENTITY newIM.label                                    "Миттєве повідомлення">
+<!ENTITY newIM.accesskey                                "М">
 <!ENTITY printButton.label                              "Друк…">
 <!ENTITY printButton.accesskey                          "к">
 <!ENTITY deleteButton2.label                            "Видалити">
@@ -173,7 +148,7 @@ because displayed names don't have the comma in between. -->
 <!ENTITY editAbPropertiesButton.tooltip                 "Змінити властивості вибраної адресної книги">
 <!ENTITY editContactPropertiesButton.tooltip            "Змінити вибраний контакт">
 <!ENTITY editMailingListPropertiesButton.tooltip        "Змінити вибраний список розсилки">
-<!ENTITY newmsgButton.tooltip                           "Написати листа">
+<!ENTITY newmsgButton.tooltip                           "Надіслати повідомлення">
 <!ENTITY newIM.tooltip                                  "Надіслати миттєве повідомлення або чат">
 <!ENTITY deleteButton2.tooltip                          "Видалити вибраний елемент">
 

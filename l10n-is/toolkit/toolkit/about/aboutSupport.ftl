@@ -15,6 +15,9 @@ extensions-name = Nafn
 extensions-enabled = Virk
 extensions-version = Útgáfa
 extensions-id = Auðkenni
+support-addons-name = Nafn
+support-addons-version = Útgáfa
+support-addons-id = Auðkenni
 security-software-title = Öryggishugbúnaður
 security-software-type = Tegund
 security-software-name = Nafn
@@ -82,8 +85,6 @@ graphics-workarounds-title = Leiðir framhjá villum
 place-database-title = Gagnagrunnur fyrir staði
 place-database-integrity = Áreiðanleiki
 place-database-verify-integrity = Sannprófa áreiðanleika
-js-title = JavaScript
-js-incremental-gc = Stigvaxandi GC
 a11y-title = Auðveldað aðgengi
 a11y-activated = Virkt
 a11y-force-disabled = Koma í veg fyrir aðgengi
@@ -108,9 +109,7 @@ restart-in-safe-mode-label = Endurræsa með viðbætur óvirkar…
 
 audio-backend = Hljóðkerfi
 max-audio-channels = Hámarksfjöldi rása
-channel-layout = Preferred Channel Layout
 sample-rate = Preferred Sample Rate
-
 media-title = Gögn
 media-output-devices-title = Útakstæki
 media-input-devices-title = Inntakstæki
@@ -144,6 +143,7 @@ intl-regional-prefs = Svæðisstillingar
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -252,7 +252,6 @@ unknown-failure = Á svörtum lista; villukóði { $failureCode }
 
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Vídeó afkóðari
-d3d9video-crash-buard = D3D9 Vídeó afkóðari
 d3d9video-crash-guard = D3D9 Vídeó afkóðari
 glcontext-crash-guard = OpenGL
 

@@ -14,3 +14,9 @@ pictureinpicture-mute =
 pictureinpicture-unmute =
     .aria-label = आवाज दें
 
+pictureinpicture-unpip =
+    .aria-label = टैब पर वापस भेजें
+
+pictureinpicture-close =
+    .aria-label = बंद करें
+

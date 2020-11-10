@@ -97,6 +97,9 @@ urlbar-addons-notification-anchor =
 
 urlbar-search-tips-onboard = វាយតិចជាងនេះ រកច្រើនទៀត៖ ស្វែងរក { $engineName } ភ្លាមៗ ពីរបារអាសយដ្ឋានរបស់អ្នក។
 
+## Local search mode indicator labels in the urlbar
+
+
 ##
 
 urlbar-geolocation-blocked =
@@ -137,6 +140,37 @@ page-action-manage-extension =
 page-action-remove-from-urlbar =
     .label = លុបចេញពីរបារអាសយដ្ឋាន
 
+## Page Action menu
+
+page-action-copy-url-panel =
+    .label = ចម្លង​តំណ
+page-action-copy-url-urlbar =
+    .tooltiptext = ចម្លង​តំណ
+page-action-email-link-panel =
+    .label = តំណ​អ៊ីមែល…
+page-action-email-link-urlbar =
+    .tooltiptext = តំណ​អ៊ីមែល…
+page-action-share-url-panel =
+    .label = ចែករំលែក
+page-action-share-url-urlbar =
+    .tooltiptext = ចែករំលែក
+page-action-share-more-panel =
+    .label = ច្រើន​ទៀត…
+page-action-send-tab-not-ready =
+    .label = កំពុង​ធ្វើ​សមកាលកម្ម​ឧបករណ៍…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = ខ្ទាស់​ផ្ទាំង
+page-action-pin-tab-urlbar =
+    .tooltiptext = ខ្ទាស់​ផ្ទាំង
+page-action-unpin-tab-panel =
+    .label = ដោះ​​ខ្ទាស់​ផ្ទាំង
+page-action-unpin-tab-urlbar =
+    .tooltiptext = ដោះ​​ខ្ទាស់​ផ្ទាំង
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -160,6 +194,14 @@ search-one-offs-context-open-new-tab =
 search-one-offs-context-set-as-default =
     .label = កំណត់​ជា​ម៉ាស៊ីន​ស្វែងរក​លំនាំដើម
     .accesskey = D
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
 
 ## Bookmark Panel
 
@@ -241,6 +283,10 @@ urlbar-default-placeholder =
     .defaultPlaceholder = ស្វែងរក ឬ​បញ្ចូល​អាសយដ្ឋាន
 urlbar-placeholder =
     .placeholder = ស្វែងរក ឬ​បញ្ចូល​អាសយដ្ឋាន
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = ស្វែងរកជាមួយ { $name } ឬបញ្ចូលអាសយដ្ឋាន
 urlbar-remote-control-notification-anchor =
     .tooltiptext = កម្មវិធី​អ៊ីនធឺណិត​គឺ​ស្ថិត​ក្រោម​ការ​ត្រួតពិនិត្យ​ពី​ចម្ងាយ
 urlbar-switch-to-tab =
@@ -252,3 +298,35 @@ urlbar-go-button =
     .tooltiptext = ទៅកាន់​អាសយដ្ឋាន​ក្នុង​របារ​ទីតាំង
 urlbar-page-action-button =
     .tooltiptext = ទំព័រ​សកម្មភាព
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = ស្វែងរក​ជាមួយ { $engine }
+urlbar-result-action-switch-tab = ប្ដូរ​ទៅ​ផ្ទាំង
+urlbar-result-action-visit = មើល
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ឥឡូវ​ពេញ​អេក្រង់
+fullscreen-warning-no-domain = ឥឡូវ​ឯកសារ​នេះ​​ពេញ​អេក្រង់
+fullscreen-exit-button = បិទ​ពេញ​អេក្រង់ (គេច)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = បិទ​ពេញ​អេក្រង់ (គេច)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> មាន​ការ​គ្រប់គ្រង​លើ​ព្រួញ​ចង្អុល​របស់​អ្នក។ ចុច Esc ដើម្បី​ទទួល​បាន​ការ​គ្រប់គ្រង​មកវិញ។
+pointerlock-warning-no-domain = ឯកសារនេះ​មាន​សិទ្ធ​គ្រប់គ្រង​លើ​ព្រួញ​ចង្អុល​របស់​អ្នក។ ចុច Esc ដើម្បី​ទទួល​បាន​ការ​គ្រប់គ្រង​មក​វិញ។

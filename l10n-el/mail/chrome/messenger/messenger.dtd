@@ -128,7 +128,7 @@
 <!ENTITY redoMoveMsgCmd.label "Επανάληψη μετακίνησης μηνύματος">
 <!ENTITY undoCopyMsgCmd.label "Αναίρεση αντιγραφής μηνύματος">
 <!ENTITY redoCopyMsgCmd.label "Επανάληψη αντιγραφής μηνύματος">
-<!ENTITY undoMarkAllCmd.label "Αναίρεση σημείωσης όλων ως αναγνωσμένων">
+<!ENTITY undoMarkAllCmd.label "Αναίρεση επισήμανσης όλων ως αναγνωσμένων">
 <!ENTITY redoMarkAllCmd.label "Επανάληψη επισήμανσης όλων ως αναγνωσμένων">
 <!ENTITY undoDefaultCmd.label "Αναίρεση">
 <!ENTITY undoDefaultCmd.accesskey "ρ">
@@ -212,32 +212,32 @@
 <!ENTITY sortAscending.accesskey "ξ">
 <!ENTITY sortDescending.label "σε φθίνουσα σειρά">
 <!ENTITY sortDescending.accesskey "θ">
-<!ENTITY sortThreaded.label "Σε αλληλουχία">
-<!ENTITY sortThreaded.accesskey "λ">
-<!ENTITY sortUnthreaded.label "Χωρίς αλληλουχία">
-<!ENTITY sortUnthreaded.accesskey "ρ">
+<!ENTITY sortThreaded.label "Σε νήμα">
+<!ENTITY sortThreaded.accesskey "Σ">
+<!ENTITY sortUnthreaded.label "Εκτός νήματος">
+<!ENTITY sortUnthreaded.accesskey "κ">
 <!ENTITY groupBySort.label "Ομαδοποιημένα κατά ταξινόμηση">
 <!ENTITY groupBySort.accesskey "δ">
 <!ENTITY msgsMenu.label "Μηνύματα">
 <!ENTITY msgsMenu.accesskey "ν">
-<!ENTITY threads.label "Αλληλουχίες">
-<!ENTITY threads.accesskey "χ">
+<!ENTITY threads.label "Νήματα">
+<!ENTITY threads.accesskey "μ">
 <!ENTITY allMsgsCmd.label "Όλα">
 <!ENTITY allMsgsCmd.accesskey "α">
-<!ENTITY expandAllThreadsCmd.label "Ανάπτυξη όλων των αλληλουχιών">
+<!ENTITY expandAllThreadsCmd.label "Ανάπτυξη όλων των νημάτων">
 <!ENTITY expandAllThreadsCmd.accesskey "π">
 <!ENTITY expandAllThreadsCmd.key "*">
-<!ENTITY collapseAllThreadsCmd.label "Σύμπτυξη όλων των αλληλουχιών">
+<!ENTITY collapseAllThreadsCmd.label "Σύμπτυξη όλων των νημάτων">
 <!ENTITY collapseAllThreadsCmd.accesskey "μ">
 <!ENTITY collapseAllThreadsCmd.key "\">
 <!ENTITY unreadMsgsCmd.label "Μη αναγνωσμένα">
 <!ENTITY unreadMsgsCmd.accesskey "Μ">
-<!ENTITY threadsWithUnreadCmd.label "Αλληλουχίες με μη αναγνωσμένα">
-<!ENTITY threadsWithUnreadCmd.accesskey "χ">
-<!ENTITY watchedThreadsWithUnreadCmd.label "Επιλεγμένες αλληλουχίες με μη αναγνωσμένα">
-<!ENTITY watchedThreadsWithUnreadCmd.accesskey "π">
-<!ENTITY ignoredThreadsCmd.label "Νήματα που παραβλέπονται">
-<!ENTITY ignoredThreadsCmd.accesskey "γ">
+<!ENTITY threadsWithUnreadCmd.label "Νήματα με μη αναγνωσμένα">
+<!ENTITY threadsWithUnreadCmd.accesskey "Ν">
+<!ENTITY watchedThreadsWithUnreadCmd.label "Παρακολουθούμενα νήματα με μη αναγνωσμένα">
+<!ENTITY watchedThreadsWithUnreadCmd.accesskey "Π">
+<!ENTITY ignoredThreadsCmd.label "Αγνοημένα νήματα">
+<!ENTITY ignoredThreadsCmd.accesskey "α">
 
 <!ENTITY headersMenu.label "Κεφαλίδες">
 <!ENTITY headersMenu.accesskey "φ">
@@ -307,9 +307,9 @@
 <!ENTITY nextUnreadMsgCmd.key "ο">
 <!ENTITY nextStarredMsgCmd.label "Μήνυμα με αστέρι">
 <!ENTITY nextStarredMsgCmd.accesskey "σ">
-<!ENTITY nextUnreadThread.label "Μη αναγνωσμένη αλληλουχία">
+<!ENTITY nextUnreadThread.label "Μη αναγνωσμένο νήμα">
 <!ENTITY nextUnreadThread.accesskey "γ">
-<!ENTITY nextUnreadThread.key "π">
+<!ENTITY nextUnreadThread.key "t">
 <!ENTITY prevMenu.label "Προηγούμενο">
 <!ENTITY prevMenu.accesskey "Π">
 <!ENTITY prevMsgCmd.label "Μήνυμα">
@@ -366,7 +366,7 @@
 <!ENTITY forwardMsgCmd.key "l">
 <!ENTITY forwardAsMenu.label "Προώθηση ως">
 <!ENTITY forwardAsMenu.accesskey "θ">
-<!ENTITY forwardAsInline.label "Ως αντικείμενο μέσα στο μήνυμα">
+<!ENTITY forwardAsInline.label "Εντός μηνύματος">
 <!ENTITY forwardAsInline.accesskey "τ">
 <!ENTITY forwardAsAttachmentCmd.label "Συνημμένο">
 <!ENTITY forwardAsAttachmentCmd.accesskey "μ">
@@ -392,13 +392,13 @@
 <!ENTITY moveToFolderAgain.label "Μετακίνηση ξανά">
 <!ENTITY moveToFolderAgain.accesskey "ξ">
 <!ENTITY moveToFolderAgainCmd.key "m">
-<!ENTITY killThreadMenu.label "Παράβλεψη αλληλουχίας">
+<!ENTITY killThreadMenu.label "Παράβλεψη νήματος">
 <!ENTITY killThreadMenu.accesskey "β">
 <!ENTITY killThreadMenu.key "k">
-<!ENTITY killSubthreadMenu.label "Αγνόηση υποαλληλουχίας">
+<!ENTITY killSubthreadMenu.label "Παράβλεψη υπονήματος">
 <!ENTITY killSubthreadMenu.accesskey "π">
 <!ENTITY killSubthreadMenu.key "k">
-<!ENTITY watchThreadMenu.label "Παρακολούθηση αλληλουχίας">
+<!ENTITY watchThreadMenu.label "Παρακολούθηση νήματος">
 <!ENTITY watchThreadMenu.accesskey "θ">
 <!ENTITY watchThreadMenu.key "w">
 <!ENTITY tagMenu.label "Ετικέτα">
@@ -413,15 +413,15 @@
 <!ENTITY tagCmd7.key "7">
 <!ENTITY tagCmd8.key "8">
 <!ENTITY tagCmd9.key "9">
-<!ENTITY markMenu.label "Σημείωση">
+<!ENTITY markMenu.label "Επισήμανση">
 <!ENTITY markMenu.accesskey "μ">
 <!ENTITY toggleReadCmd.key "m">
 <!ENTITY markAsReadCmd.label "Ως αναγνωσμένο">
 <!ENTITY markAsReadCmd.accesskey "σ">
 <!ENTITY markAsUnreadCmd.label "Ως μη αναγνωσμένο">
 <!ENTITY markAsUnreadCmd.accesskey "μ">
-<!ENTITY markThreadAsReadCmd.label "Αλληλουχίας ως αναγνωσμένης">
-<!ENTITY markThreadAsReadCmd.accesskey "η">
+<!ENTITY markThreadAsReadCmd.label "Νήμα ως αναγνωσμένο">
+<!ENTITY markThreadAsReadCmd.accesskey "Ν">
 <!ENTITY markThreadAsReadCmd.key "r">
 <!ENTITY markReadByDateCmd.label "Ως αναγνωσμένα κατά ημερομηνία...">
 <!ENTITY markReadByDateCmd.accesskey "μ">
@@ -454,7 +454,7 @@
 <!ENTITY openFeedWebPage.accesskey "σ">
 <!ENTITY openFeedSummary.label "Άνοιγμα ως περίληψη">
 <!ENTITY openFeedSummary.accesskey "ψ">
-<!ENTITY openFeedWebPageInMP.label "Εναλλαγή ιστοσελίδας και περίληψης στο ταμπλό μηνυμάτων">
+<!ENTITY openFeedWebPageInMP.label "Εναλλαγή ιστοσελίδας και περίληψης στα μηνύματα">
 <!ENTITY openFeedWebPageInMP.accesskey "γ">
 
 <!-- Windows Menu -->
@@ -525,17 +525,6 @@
 <!ENTITY errorConsoleCmd.label "Κονσόλα σφαλμάτων">
 <!ENTITY errorConsoleCmd.accesskey "ν">
 <!ENTITY errorConsoleCmd.commandkey "j">
-<!ENTITY scratchpadCmd.label "Πρόχειρο">
-<!ENTITY scratchpadCmd.accesskey "Π">
-
-<!--LOCALIZATION NOTE (scratchpadCmd.keycode):
-    This should be a key code constant as per
-    https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode#Constants_for_keyCode_value
-    (but without the DOM_ prefix) -->
-<!ENTITY scratchpadCmd.keycode "VK_F4">
-<!--LOCALIZATION NOTE (scratchpadCmd.keytext):
-    This should be the text printed on the key defined in the previous string. -->
-<!ENTITY scratchpadCmd.keytext "F4">
 
 <!-- Mail Toolbar -->
 <!ENTITY getMsgButton1.label "Λήψη μηνυμάτων">
@@ -589,7 +578,6 @@
 <!ENTITY forwardAsAttachment.tooltip "Προώθηση επιλεγμένου μηνύματος ως συνημμένο">
 <!ENTITY fileButton.tooltip "Αρχειοθέτηση επιλεγμένου μηνύματος">
 <!ENTITY archiveButton.tooltip "Αρχειοθέτηση επιλεγμένων μηνυμάτων">
-<!ENTITY openConversationButton.tooltip "Εμφάνιση συζήτησης για το επιλεγμένο μήνυμα">
 <!ENTITY openMsgConversationButton.tooltip "Εμφάνιση συζήτησης για το επιλεγμένο μήνυμα">
 <!ENTITY nextButton.tooltip "Μετάβαση στο επόμενο μη αναγνωσμένο μήνυμα">
 <!ENTITY nextMsgButton.tooltip "Μετάβαση στο επόμενο μήνυμα">
@@ -599,11 +587,11 @@
 <!ENTITY goBackButton.tooltip "Μετάβαση πίσω ένα μήνυμα">
 <!ENTITY deleteButton.tooltip "Διαγραφή επιλεγμένου μηνύματος ή φακέλου">
 <!ENTITY undeleteButton.tooltip "Ακύρωση διαγραφής επιλεγμένου μηνύματος">
-<!ENTITY markButton.tooltip "Σημείωση μηνυμάτων">
+<!ENTITY markButton.tooltip "Επισήμανση μηνυμάτων">
 <!ENTITY printButton.tooltip "Εκτύπωση μηνύματος">
 <!ENTITY stopButton.tooltip "Διακοπή της τρέχουσας μεταφοράς">
-<!ENTITY junkButton.tooltip "Σημείωση των επιλεγμένων μηνυμάτων ως ανεπιθύμητα">
-<!ENTITY notJunkButton.tooltip "Σημείωση των επιλεγμένων μηνυμάτων ως επιθυμητή αλληλογραφία">
+<!ENTITY junkButton.tooltip "Επισήμανση επιλεγμένων μηνυμάτων ως ανεπιθύμητων">
+<!ENTITY notJunkButton.tooltip "Επισήμανση επιλεγμένων μηνυμάτων ως μη ανεπιθύμητων">
 <!ENTITY addressBookButton.tooltip "Μετάβαση στο ευρετήριο διευθύνσεων">
 <!ENTITY chatButton.tooltip "Εμφάνιση της καρτέλας Συνομιλίας">
 <!ENTITY tagButton.tooltip "Ετικέτα σε μηνύματα">
@@ -636,7 +624,7 @@
 <!ENTITY appmenuNewContactCmd.label "Επαφή βιβλίου διευθύνσεων…">
 <!ENTITY appmenuEditMenu.label "Επεξεργασία">
 <!ENTITY appmenuToolbarLayout.label "Διάταξη γραμμής εργαλείων…">
-<!ENTITY appmenuSelectThread.label "Επιλέξτε νήμα">
+<!ENTITY appmenuSelectThread.label "Επιλογή νήματος">
 <!ENTITY appmenuSelectFlagged.label "Επιλέξτε μηνύματα με αστέρι">
 
 <!-- Tags Menu Popup -->
@@ -678,12 +666,12 @@
 <!ENTITY folderContextSendUnsentMessages.accesskey "κ">
 <!ENTITY folderContextUnsubscribe.label "Αποχώρηση συνδρομητή">
 <!ENTITY folderContextUnsubscribe.accesskey "χ">
-<!ENTITY folderContextMarkNewsgroupRead.label "Σημείωση ομάδας συζήτησης ως αναγνωσμένης">
+<!ENTITY folderContextMarkNewsgroupRead.label "Επισήμανση ομάδας συζητήσεων ως αναγνωσμένης">
 <!ENTITY folderContextMarkNewsgroupRead.accesskey "γ">
-<!ENTITY folderContextMarkMailFolderRead.label "Σημείωση φακέλου ως αναγνωσμένου">
+<!ENTITY folderContextMarkMailFolderRead.label "Επισήμανση φακέλου ως αναγνωσμένου">
 <!ENTITY folderContextMarkMailFolderRead.accesskey "κ">
 <!ENTITY folderContextSubscribe.label "Συνδρομή…">
-<!ENTITY folderContextSubscribe.accesskey "γ">
+<!ENTITY folderContextSubscribe.accesskey "μ">
 <!ENTITY folderContextSearchForMessages.label "Αναζήτηση μηνυμάτων…">
 <!ENTITY folderContextSearchForMessages.accesskey "ζ">
 <!ENTITY folderContextProperties2.label "Ιδιότητες">
@@ -711,7 +699,7 @@
 
 <!-- Thread Pane -->
 <!ENTITY selectColumn.label "Επιλογή μηνυμάτων">
-<!ENTITY threadColumn.label "Αλληλουχία">
+<!ENTITY threadColumn.label "Νήμα">
 <!ENTITY fromColumn.label "Από">
 <!ENTITY recipientColumn.label "Παραλήπτης">
 <!ENTITY correspondentColumn.label "Επιστολογράφοι">
@@ -731,13 +719,12 @@
 <!ENTITY locationColumn.label "Τοποθεσία">
 <!ENTITY idColumn.label "Σειρά παραλαβής">
 <!ENTITY attachmentColumn.label "Συνημμένα">
-
 <!ENTITY deleteColumn.label "Διαγραφή">
 
 <!-- Thread Pane Tooltips -->
 <!ENTITY columnChooser2.tooltip "Επιλογή στηλών για προβολή">
 <!ENTITY selectColumn.tooltip "Εναλλαγή επιλογής όλων των μηνυμάτων">
-<!ENTITY threadColumn2.tooltip "Εμφάνιση αλληλουχιών μηνυμάτων">
+<!ENTITY threadColumn2.tooltip "Προβολή νημάτων μηνυμάτων">
 <!ENTITY fromColumn2.tooltip "Ταξινόμηση κατά αποστολέα">
 <!ENTITY recipientColumn2.tooltip "Ταξινόμηση κατά παραλήπτη">
 <!ENTITY correspondentColumn2.tooltip "Ταξινόμηση κατά των επιστολογράφων">
@@ -749,15 +736,14 @@
 <!ENTITY statusColumn2.tooltip "Ταξινόμηση κατά κατάσταση">
 <!ENTITY sizeColumn2.tooltip "Ταξινόμηση κατά μέγεθος">
 <!ENTITY junkStatusColumn2.tooltip "Ταξινόμηση κατά κατάσταση ανεπιθύμητων">
-<!ENTITY unreadColumn2.tooltip "Αριθμός μη αναγνωσμένων μηνυμάτων στην αλληλουχία">
-<!ENTITY totalColumn2.tooltip "Συνολικός αριθμός μηνυμάτων στην αλληλουχία">
+<!ENTITY unreadColumn2.tooltip "Αριθμός μη αναγνωσμένων μηνυμάτων στο νήμα">
+<!ENTITY totalColumn2.tooltip "Συνολικός αριθμός μηνυμάτων στο νήμα">
 <!ENTITY readColumn2.tooltip "Ταξινόμηση κατά αναγνωσμένο">
 <!ENTITY receivedColumn2.tooltip "Ταξινόμηση κατά ημερομηνία παραλαβής">
 <!ENTITY starredColumn2.tooltip "Ταξινόμηση κατά αστέρι">
 <!ENTITY locationColumn2.tooltip "Ταξινόμηση κατά τοποθεσία">
 <!ENTITY idColumn2.tooltip "Ταξινόμηση κατά σειρά παραλαβής">
 <!ENTITY attachmentColumn2.tooltip "Ταξινόμηση κατά συνημμένο">
-
 <!ENTITY deleteColumn.tooltip "Διαγραφή μηνύματος">
 
 <!-- Thread Pane Context Menu -->
@@ -772,7 +758,7 @@
 <!ENTITY contextOpenNewTab.accesskey "τ">
 <!ENTITY contextOpenConversation.label "Άνοιγμα μηνύματος σε συζήτηση">
 <!ENTITY contextOpenConversation.accesskey "ν">
-<!ENTITY contextOpenContainingFolder.label "Άνοιγμα μηνύματος στον περιεχόμενο φάκελο">
+<!ENTITY contextOpenContainingFolder.label "Άνοιγμα μηνύματος στο φάκελο αποθήκευσης">
 <!ENTITY contextOpenContainingFolder.accesskey "φ">
 <!ENTITY contextEditMsgAsNew.label "Επεξεργασία ως νέο μήνυμα">
 <!ENTITY contextEditMsgAsNew.accesskey "ω">
@@ -807,10 +793,10 @@
 <!ENTITY contextMoveCopyMsgFavoritesMenu.accesskey "Α">
 <!ENTITY contextCopyMsgMenu.label "Αντιγραφή σε">
 <!ENTITY contextCopyMsgMenu.accesskey "ι">
-<!ENTITY contextKillThreadMenu.label "Αγνόηση νήματος">
+<!ENTITY contextKillThreadMenu.label "Παράβλεψη νήματος">
 <!ENTITY contextKillSubthreadMenu.accesskey "β">
-<!ENTITY contextKillThreadMenu.accesskey "Ι">
-<!ENTITY contextKillSubthreadMenu.label "Αγνόηση υπονήματος">
+<!ENTITY contextKillThreadMenu.accesskey "Π">
+<!ENTITY contextKillSubthreadMenu.label "Παράβλεψη υπονήματος">
 <!ENTITY contextWatchThreadMenu.label "Παρακολούθηση νήματος">
 <!-- LOCALIZATION NOTE (contextWatchThreadMenu.accesskey):
      In the en-US locale we ran out of access keys, so there is an empty access key for

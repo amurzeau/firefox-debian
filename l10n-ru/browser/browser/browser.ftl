@@ -17,14 +17,13 @@
 browser-main-window =
     .data-title-default = { -brand-full-name }
     .data-title-private = { -brand-full-name } (Приватный просмотр)
-    .data-content-title-default = { $content-title } - { -brand-full-name }
-    .data-content-title-private = { $content-title } - { -brand-full-name } (Приватный просмотр)
-
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name } (Приватный просмотр)
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -36,10 +35,9 @@ browser-main-window =
 #  $content-title (String): the title of the web content.
 browser-main-window-mac =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } - (Приватный просмотр)
+    .data-title-private = { -brand-full-name } — (Приватный просмотр)
     .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } - (Приватный просмотр)
-
+    .data-content-title-private = { $content-title } — (Приватный просмотр)
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -111,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Печатайте меньше, находите больше: Ищите в { $engineName } прямо из адресной строки.
 urlbar-search-tips-redirect-2 = Начните поиск в адресной строке, чтобы увидеть предложения из { $engineName } и истории посещений.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Выберите этот ярлык, чтобы быстрее найти то, что вам нужно.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Закладки
+urlbar-search-mode-tabs = Вкладки
+urlbar-search-mode-history = Журнал
 
 ##
 
@@ -138,12 +145,10 @@ urlbar-midi-blocked =
     .tooltiptext = Вы заблокировали доступ этого веб-сайта к MIDI.
 urlbar-install-blocked =
     .tooltiptext = Вы заблокировали установку дополнений с этого веб-сайта.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Редактировать эту закладку ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -160,6 +165,55 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Удалить расширение
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Отправить { $tabCount } вкладку на устройство
+            [few] Отправить { $tabCount } вкладки на устройство
+           *[many] Отправить { $tabCount } вкладок на устройство
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Отправить { $tabCount } вкладку на устройство
+            [few] Отправить { $tabCount } вкладки на устройство
+           *[many] Отправить { $tabCount } вкладок на устройство
+        }
+page-action-pocket-panel =
+    .label = Сохранить страницу в { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Копировать ссылку
+page-action-copy-url-urlbar =
+    .tooltiptext = Копировать ссылку
+page-action-email-link-panel =
+    .label = Отправить ссылку по почте…
+page-action-email-link-urlbar =
+    .tooltiptext = Отправить ссылку по почте…
+page-action-share-url-panel =
+    .label = Поделиться
+page-action-share-url-urlbar =
+    .tooltiptext = Поделиться
+page-action-share-more-panel =
+    .label = Ещё…
+page-action-send-tab-not-ready =
+    .label = Синхронизация устройств…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Закрепить вкладку
+page-action-pin-tab-urlbar =
+    .tooltiptext = Закрепить вкладку
+page-action-unpin-tab-panel =
+    .label = Открепить вкладку
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Открепить вкладку
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -171,17 +225,15 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = В этот раз искать с помощью:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Изменить настройки поиска
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Изменить параметры поиска
-
 search-one-offs-context-open-new-tab =
     .label = Искать в новой вкладке
     .accesskey = а
@@ -191,16 +243,34 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Использовать данную поисковую систему по умолчанию в Приватных окнах
     .accesskey = З
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Закладки ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Вкладки ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Журнал ({ $restrict })
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Показывать редактор при сохранении
     .accesskey = ы
-
 bookmark-panel-done-button =
     .label = Готово
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -220,6 +290,17 @@ identity-passive-loaded = Части этой страницы (такие ка�
 identity-active-loaded = Вы отключили защиту на этой странице.
 identity-weak-encryption = Эта страница использует слабое шифрование.
 identity-insecure-login-forms = Учётные данные, вводимые на этой странице, могут быть скомпрометированы.
+identity-https-only-connection-upgraded = (переключено на HTTPS)
+identity-https-only-label = Режим «Только HTTPS»
+identity-https-only-dropdown-on =
+    .label = Включён
+identity-https-only-dropdown-off =
+    .label = Отключён
+identity-https-only-dropdown-off-temporarily =
+    .label = Временно отключён
+identity-https-only-info-turn-on2 = Включите для этого сайта Режим «Только HTTPS», если хотите, чтобы { -brand-short-name } по возможности переключался на безопасное соединение.
+identity-https-only-info-turn-off2 = Если страница кажется сломанной, вы можете отключить для этого сайта режим «Только HTTPS», чтобы перезагрузить его с использованием незащищённого HTTP.
+identity-https-only-info-no-upgrade = Невозможно переключить соединение с HTTP.
 identity-permissions =
     .value = Разрешения
 identity-permissions-reload-hint = Чтобы изменения возымели действие, вам, возможно, потребуется перезагрузить страницу.
@@ -265,6 +346,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Закрыть
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Импорт закладок…
+    .tooltiptext = Скопируйте закладки из другого браузера в { -brand-short-name }.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -274,15 +361,12 @@ popup-select-microphone =
     .value = Доступ к микрофону:
     .accesskey = м
 popup-all-windows-shared = Будет предоставлен доступ ко всем видимым окнам на вашем экране.
-
 popup-screen-sharing-not-now =
     .label = Не сейчас
     .accesskey = е
-
 popup-screen-sharing-never =
     .label = Никогда не разрешать
     .accesskey = и
-
 popup-silence-notifications-checkbox = Отключить уведомления от { -brand-short-name } если к нему предоставлен доступ
 popup-silence-notifications-checkbox-warning = { -brand-short-name } не будет отображать уведомления, пока к нему предоставлен доступ.
 
@@ -299,27 +383,122 @@ sharing-warning-disable-for-session =
 
 enable-devtools-popup-description = Чтобы использовать клавишу F12, сначала откройте Инструменты разработчика через меню Веб-разработка.
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Введите поисковый запрос или адрес
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Введите поисковый запрос или адрес
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Искать в Интернете
+    .aria-label = Поиск с помощью { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Введите поисковый запрос
+    .aria-label = Поиск в { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Введите поисковый запрос
+    .aria-label = Поиск в закладках
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Введите поисковый запрос
+    .aria-label = Поиск в истории
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Введите поисковый запрос
+    .aria-label = Поиск во вкладках
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Найдите в { $name } или введите адрес
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Браузер находится под удалённым управлением
 urlbar-permissions-granted =
     .tooltiptext = Вы предоставили этому веб-сайту дополнительные разрешения.
 urlbar-switch-to-tab =
     .value = Перейти на вкладку:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Расширение:
-
 urlbar-go-button =
     .tooltiptext = Перейти по введённому адресу
 urlbar-page-action-button =
     .tooltiptext = Действия на странице
 urlbar-pocket-button =
     .tooltiptext = Сохранить в { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Искать с помощью { $engine } в приватном окне
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Искать в приватном окне
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Поиск через { $engine }
+urlbar-result-action-sponsored = Спонсировано
+urlbar-result-action-switch-tab = Перейти на вкладку
+urlbar-result-action-visit = Посетить
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Нажмите Tab для поиска с помощью { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Нажмите Tab для поиска в { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Найдите в { $engine } прямо из адресной строки
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Найдите в { $engine } прямо из адресной строки
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Искать в закладках
+urlbar-result-action-search-history = Искать в журнале
+urlbar-result-action-search-tabs = Искать во вкладках
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> теперь находится в полноэкранном режиме
+fullscreen-warning-no-domain = Этот документ теперь находится в полноэкранном режиме
+fullscreen-exit-button = Выйти из полноэкранного режима (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Выйти из полноэкранного режима (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> контролирует ваш указатель мыши. Нажмите Esc, чтобы вернуть себе контроль.
+pointerlock-warning-no-domain = Этот документ контролирует ваш указатель мыши. Нажмите Esc, чтобы вернуть себе контроль.

@@ -38,13 +38,19 @@ policy-DefaultDownloadDirectory = 기본 다운로드 디렉토리를 설정하�
 
 policy-DisableAppUpdate = { -brand-short-name }가 업데이트되지 못하게 합니다.
 
+policy-DisableDefaultClientAgent = 기본 클라이언트 에이전트가 조치를 수행하지 못하게 하십시오. Windows에 만 적용됩니다. 다른 플랫폼에는 에이전트가 없습니다.
+
 policy-DisableDeveloperTools = 개발자 도구 접속을 차단합니다.
 
 policy-DisableFeedbackCommands = 도움말 메뉴의 의견 보내기 명령(의견과 가짜 사이트 신고)을 비활성화합니다.
 
 policy-DisableForgetButton = Forget 버튼에 대한 접근을 금지합니다.
 
-policy-DisableMasterPasswordCreation = True이면 마스터 암호를 만들 수 없습니다.
+policy-DisableFormHistory = 검색과 양식 기록을 저장하지 않습니다.
+
+policy-DisableMasterPasswordCreation = 설정되어 있으면 기본 비밀번호를 만들 수 없습니다.
+
+policy-DisablePasswordReveal = 저장된 로그인에 비밀번호 보기 기능을 허용하지 않습니다.
 
 policy-DisableProfileImport = 다른 앱에서 데이터를 가져오는 메뉴 명령을 작동하지 않게 합니다.
 
@@ -67,6 +73,9 @@ policy-DownloadDirectory = 다운로드 디렉토리를 설정하고 잠급니�
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = 콘텐츠 차단을 작동시키거나 작동하지 않게 하고 선택적으로 이를 고정합니다.
 
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = 암호화된 미디어 확장 기능을 사용하거나 사용하지 않게 하고 선택적으로 잠급니다.
+
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -80,7 +89,13 @@ policy-HardwareAcceleration = False면 하드웨어 가속을 끕니다.
 
 policy-InstallAddonsPermission = 특정 웹사이트가 애드온을 설치하도록 허용합니다.
 
+policy-LegacyProfiles = 각 설치별로 다른 프로필 사용을 강제하는 기능을 사용 안 합니다.
+
 ## Do not translate "SameSite", it's the name of a cookie attribute.
+
+policy-LegacySameSiteCookieBehaviorEnabled = 기본 레거시 SameSite 쿠키 동작 설정을 사용합니다.
+
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = 지정된 사이트의 쿠키에 대해 레거시 SameSite 동작으로 되돌립니다.
 
 ##
 
@@ -90,9 +105,18 @@ policy-NetworkPrediction = 네트워크 예측(DNS의 프리패치)을 작동시
 
 policy-OfferToSaveLogins = { -brand-short-name }가 로그인과 비밀번호 기억을 제공하도록 허용하는 설정을 강제합니다. True와 false 값을 사용할 수 있습니다.
 
+policy-OfferToSaveLoginsDefault = 저장된 로그인과 비밀번호를 기억하도록 { -brand-short-name }가 제공하는 기본값을 설정하세요. true 및 false 값이 모두 허용됩니다.
+
 policy-OverrideFirstRunPage = 처음 시작 페이지 설정을 재정의 합니다. 처음 시작 페이지를 비활성화 하려면 이 정책을 빈칸으로 설정하세요.
 
 policy-OverridePostUpdatePage = “새기능” 업데이트 후 페이지를 재정의 합니다. 업데이트 후 페이지를 비활성화 하려면 이 정책을 빈칸으로 설정하세요.
+
+policy-PasswordManagerEnabled = 비밀번호 관리자에 비밀번호 저장을 사용합니다.
+
+# PDF.js and PDF should not be translated
+policy-PDFjs = { -brand-short-name }에 내장된 PDF 뷰어인 PDF.js를 사용 안하거나 구성합니다.
+
+policy-Permissions2 = 카메라, 마이크, 위치, 알림 및 자동 재생에 대한 권한을 구성합니다.
 
 policy-Preferences = 설정의 하위 집합에 대한 값을 설정하고 고정합니다.
 
@@ -106,6 +130,8 @@ policy-SanitizeOnShutdown2 = 끌 때 탐색 정보를 지웁니다.
 
 policy-SearchEngines = 검색 엔진 설정을 구성합니다. 이 정책은 확장 지원 버전(ESR)에서만 가능합니다.
 
+policy-SearchSuggestEnabled = 검색 제안을 사용하거나 사용하지 않게 합니다.
+
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = PKCS #11 모듈을 설치하십시오.
 
@@ -114,6 +140,8 @@ policy-SSLVersionMax = 최대 SSL 버전을 설정하십시오.
 policy-SSLVersionMin = 최소 SSL 버전을 설정하십시오.
 
 policy-SupportMenu = 도움말 메뉴에 맞춤 지원 메뉴 항목을 추가합니다.
+
+policy-UserMessaging = 사용자에게 특정 메시지를 표시하지 않습니다.
 
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = 특정 웹사이트 방문을 차단합니다. 자세한 형식에 대해서는 문서를 참고하세요.

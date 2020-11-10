@@ -14,12 +14,18 @@ extensions-name = Nom
 extensions-enabled = Activat
 extensions-version = Version
 extensions-id = ID
+support-addons-title = Moduls complementaris
+support-addons-name = Nom
+support-addons-type = Tipe
+support-addons-enabled = Activat
+support-addons-version = Version
+support-addons-id = ID
 security-software-title = Logicial de seguretat
 security-software-type = Tipe
 security-software-name = Nom
 security-software-antivirus = Antivirus
 security-software-antispyware = Antispyware
-security-software-firewall = Parafòc
+security-software-firewall = Parafuòc
 features-title = Foncionalitats de { -brand-short-name }
 features-name = Nom
 features-version = Version
@@ -59,6 +65,7 @@ app-basics-service-workers = Servici Workers enregistrats
 app-basics-profiles = Perfils
 app-basics-launcher-process-status = Processús d’aviada
 app-basics-multi-process-support = Fenèstras multiprocessus
+app-basics-fission-support = Fenèstras Fission
 app-basics-remote-processes-count = Processús distants
 app-basics-enterprise-policies = Estrategias d’entrepresa
 app-basics-location-service-key-google = Clau del servici de localizacion de Google
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] Dobrir lo dossièr
        *[other] Dobrir lo dossièr correspondent
     }
+environment-variables-title = Variablas d’environament
+environment-variables-name = Nom
+environment-variables-value = Valor
+experimental-features-title = Foncions experimentalas
+experimental-features-name = Nom
+experimental-features-value = Valor
 modified-key-prefs-title = Preferéncias modificadas importantas
 modified-prefs-name = Nom
 modified-prefs-value = Valor
@@ -81,7 +94,7 @@ locked-prefs-name = Nom
 locked-prefs-value = Valor
 graphics-title = Acceleracion grafica
 graphics-features-title = Foncionalitats
-graphics-diagnostics-title = Diagnostics
+graphics-diagnostics-title = Diagnostic
 graphics-failure-log-title = Jornal de las errors
 graphics-gpu1-title = GPU #1
 graphics-gpu2-title = GPU #2
@@ -95,8 +108,6 @@ graphics-desktop-environment = Environament de burèu
 place-database-title = Basa de donada de lòcs
 place-database-integrity = Integritat
 place-database-verify-integrity = Verificar l'integritat
-js-title = JavaScript
-js-incremental-gc = Amassamicas incremental
 a11y-title = Accessibilitat
 a11y-activated = Activar
 a11y-force-disabled = Limitar l'accessibilitat
@@ -116,7 +127,7 @@ sandbox-sys-call-number = Crida del sistèma
 sandbox-sys-call-args = Arguments
 safe-mode-title = Ensajar en mòde securizat
 restart-in-safe-mode-label = Reaviar amb los moduls desactivats…
-clear-startup-cache-title = Ensajatz d’escafar lo cache d’aviada
+clear-startup-cache-title = Ensajar d’escafar lo cache d’aviada
 clear-startup-cache-label = Escafar lo cache a l’aviada…
 startup-cache-dialog-title = Escafar lo cache a l’aviada
 startup-cache-dialog-body = Reaviatz { -brand-short-name } per dire d’escafar lo cache d’aviada. Aquò modificarà pas vòstres paramètres o suprimirà pas cap d’extensions qu’apondèretz a { -brand-short-name }.
@@ -126,7 +137,6 @@ restart-button-label = Reaviar
 
 audio-backend = Sistèma de retorn àudio
 max-audio-channels = Nombre de canals maximal
-channel-layout = Mòde de canal preferit
 sample-rate = Taus d'escandalhatge preferit
 roundtrip-latency = Laténcia anar-tornar (desviacion estandarda)
 media-title = Mèdia
@@ -263,11 +273,13 @@ blocklisted-bug = Plaçat dins la lista de blocatge per causa de donadas conegud
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = error { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Botat en lista negra a causa d’un problèma conegut : <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Plaçat dins la lista de blocatge; còde d'error { $failureCode }
 d3d11layers-crash-guard = Compositor D3D11
 d3d11video-crash-guard = Desencodador vidèo D3D11
-d3d9video-crash-buard = Desencodador vidèo D3D9
 d3d9video-crash-guard = Desencodador vidèo D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Desencodador vidèo WMF VPX
@@ -315,6 +327,20 @@ multi-process-status-6 = Desactivat per un biais de sasida non pres en carga
 multi-process-status-7 = Desactivat per de moduls complementaris
 multi-process-status-8 = Desactivat per forma forçada
 multi-process-status-unknown = Estatut desconegut
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Desactivada a causa d’experimentacions
+fission-status-experiment-treatment = Activada a causa d’experimentacions
+fission-status-disabled-by-e10s-env = Desactivada a causa de l’environament
+fission-status-enabled-by-env = Activada a causa de l’environament
+fission-status-disabled-by-safe-mode = Desactivada a causa del mòde segur
+fission-status-enabled-by-default = Activada per defaut
+fission-status-disabled-by-default = Desactivada per defaut
+fission-status-enabled-by-user-pref = Activada per l’utilizaire
+fission-status-disabled-by-user-pref = Desactivada per l’utilizaire
+fission-status-disabled-by-e10s-other = E10s desactivat
 async-pan-zoom = Zoom/Panoramic asincròns
 apz-none = pas cap
 wheel-enabled = entrada rodeta activada
@@ -335,3 +361,12 @@ touch-warning = entrada tactila asincròna desactivada en rason d'una preferénc
 policies-inactive = Inactivas
 policies-active = Activas
 policies-error = Error
+
+## Printing section
+
+support-printing-title = Impression
+support-printing-troubleshoot = Resolucion de problèmas
+support-printing-clear-settings-button = Escafar los paramètres d’impression enregistrats
+support-printing-modified-settings = Paramètres d’impression modificats
+support-printing-prefs-name = Nom
+support-printing-prefs-value = Valor

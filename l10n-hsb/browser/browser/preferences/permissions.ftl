@@ -5,66 +5,53 @@
 permissions-window =
     .title = Wuwzaća
     .style = width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Adresa websydła
     .accesskey = A
-
 permissions-block =
     .label = Blokować
     .accesskey = B
-
 permissions-session =
     .label = Za posedźenje dowolić
     .accesskey = p
-
 permissions-allow =
     .label = Dowolić
     .accesskey = D
-
 permissions-site-name =
     .label = Websydło
-
 permissions-status =
     .label = Status
-
 permissions-remove =
     .label = Websydło wotstronić
     .accesskey = t
-
 permissions-remove-all =
     .label = Wšě websydła wotstronić
     .accesskey = y
-
 permissions-button-cancel =
     .label = Přetorhnyć
     .accesskey = P
-
 permissions-button-ok =
     .label = Změny składować
     .accesskey = s
-
+permission-dialog =
+    .buttonlabelaccept = Změny składować
+    .buttonaccesskeyaccept = s
 permissions-autoplay-menu = Standard za wšě websydła:
-
 permissions-searchbox =
     .placeholder = Websydło pytać
-
 permissions-capabilities-autoplay-allow =
     .label = Awdio a widejo dowolić
 permissions-capabilities-autoplay-block =
     .label = Awdio blokować
 permissions-capabilities-autoplay-blockall =
     .label = Awdio a widejo blokować
-
 permissions-capabilities-allow =
     .label = Dowolić
 permissions-capabilities-block =
     .label = Blokować
 permissions-capabilities-prompt =
     .label = Přeco so prašeć
-
 permissions-capabilities-listitem-allow =
     .value = Dowolić
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = Njepłaćiwe mjeno hosta zapodate
 permissions-invalid-uri-label = Prošu zapodajće płaćiwe mjeno hosta
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = Wuwzaća - Blokowanje wobsaha
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Sće blokowanje wobsaha na tutych websydłach znjemóžnił.
 
 permissions-exceptions-etp-window =
     .title = Wuwzaća za polěpšeny slědowanski škit
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Dowolene sydła - Instalacija přidatkow
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Móžeće podać, kotre websydła smědźa přidatki instalować. Zapisajće eksaktnu adresu sydła, kotrež chceće dowolić a klikńće potom na Dowolić.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Wuwzaća - awtomatiske wothraće
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Móžeće podać, kotre websydła přeco smědźa abo ženje njesmědźa medije awtomatisce ze zynkom wothrać. Zapodajće adresu sydła, kotrež chceće rjadować a klikńće potom na Blokować abo Dowolić.
 
 ## Site Permissions - Autoplay
 

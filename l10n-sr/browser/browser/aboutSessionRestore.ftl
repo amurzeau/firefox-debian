@@ -28,11 +28,11 @@ restore-page-list-header =
 
 restore-page-try-again-button =
     .label = Обнови сесију
-    .accesskey = О
+    .accesskey = R
 
 restore-page-close-button =
     .label = Започни нову сесију
-    .accesskey = н
+    .accesskey = N
 
 ## The following strings are used in about:welcomeback
 
@@ -42,7 +42,7 @@ welcome-back-page-info = { -brand-short-name } је спреман.
 
 welcome-back-restore-button =
     .label = Идемо!
-    .accesskey = И
+    .accesskey = L
 
 welcome-back-restore-all-label = Обновите све прозоре и језичке
 welcome-back-restore-some-label = Обновите само оне које желите

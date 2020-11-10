@@ -14,6 +14,12 @@ extensions-name = Аты
 extensions-enabled = Іске қосулы
 extensions-version = Нұсқасы
 extensions-id = ID
+support-addons-title = Қосымшалар
+support-addons-name = Аты
+support-addons-type = Түрі
+support-addons-enabled = Іске қосылған
+support-addons-version = Нұсқасы
+support-addons-id = ID
 security-software-title = Қауіпсіздік БҚ-сы
 security-software-type = Түрі
 security-software-name = Аты
@@ -71,6 +77,12 @@ show-dir-label =
         [windows] Буманы ашу
        *[other] Буманы ашу
     }
+environment-variables-title = Қоршам айнымалылары
+environment-variables-name = Аты
+environment-variables-value = Мәні
+experimental-features-title = Эксперименталды мүмкіндіктер
+experimental-features-name = Аты
+experimental-features-value = Мәні
 modified-key-prefs-title = Өзгертілген маңызды баптаулар
 modified-prefs-name = Аты
 modified-prefs-value = Мәні
@@ -95,8 +107,6 @@ graphics-desktop-environment = Жұмыс үстелі ортасы
 place-database-title = Орналасулар дерекқоры
 place-database-integrity = Бүтіндігі
 place-database-verify-integrity = Бүтіндігін тексеру
-js-title = JavaScript
-js-incremental-gc = Өспелі GC
 a11y-title = Қолжетерлілік
 a11y-activated = Белсендірілген
 a11y-force-disabled = Кеңейтілген мүмкіндіктерге  тыйым салу
@@ -126,7 +136,6 @@ restart-button-label = Қайта қосу
 
 audio-backend = Аудио файлдарын ойнату бағдарламасы
 max-audio-channels = Макс. арналар
-channel-layout = Таңдамалы арналар жаймасы
 sample-rate = Таңдамалы кадрлар жиілігі
 roundtrip-latency = Айналма жолдың кідірісі (стандартты ауытқу)
 media-title = Мультимедиа
@@ -263,11 +272,13 @@ blocklisted-bug = Белгілі осалдылықтар салдарынан �
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = ақаулық { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Белгілі мәселелерге байланысты бұғатталған: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Блоктізіміде; қателік коды { $failureCode }
 d3d11layers-crash-guard = D3D11 араластырушысы
 d3d11video-crash-guard = D3D11 видео декодері
-d3d9video-crash-buard = D3D9 видео декодері
 d3d9video-crash-guard = D3D9 видео декодері
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX видео декодері

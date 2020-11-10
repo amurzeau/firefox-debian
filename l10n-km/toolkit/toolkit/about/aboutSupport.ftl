@@ -15,6 +15,9 @@ extensions-name = ឈ្មោះ
 extensions-enabled = បាន​អនុញ្ញាត
 extensions-version = កំណែ
 extensions-id = លេខ​សម្គាល់
+support-addons-name = ឈ្មោះ
+support-addons-version = កំណែ
+support-addons-id = លេខ​សម្គាល់
 app-basics-title = មូលដ្ឋាន​គ្រឹះ​របស់​កម្មវិធី
 app-basics-name = ឈ្មោះ
 app-basics-version = កំណែ
@@ -44,8 +47,6 @@ locked-key-prefs-title = ចំណូលចិត្ត​ដែល​បាន�
 locked-prefs-name = ឈ្មោះ
 locked-prefs-value = តម្លៃ
 graphics-title = ក្រាហ្វិក
-js-title = JavaScript
-js-incremental-gc = GC បន្ថែម
 a11y-title = មធ្យោបាយ​ងាយស្រួល
 a11y-activated = បាន​ធ្វើ​ឲ្យ​សកម្ម
 a11y-force-disabled = ការពារ​ពី​ការ​ចូល​ដំណើរការ
@@ -58,7 +59,9 @@ restart-in-safe-mode-label = ចាប់ផ្ដើម​ឡើងវិញ​
 
 ## Media titles
 
+
 ##
+
 
 ## Remote Debugging
 ##
@@ -68,6 +71,7 @@ restart-in-safe-mode-label = ចាប់ផ្ដើម​ឡើងវិញ​
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 

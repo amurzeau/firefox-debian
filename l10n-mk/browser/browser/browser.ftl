@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Приватно прелистување)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Приватно прелистување)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Приватно прелистување)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Приватно прелистување)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -78,6 +76,9 @@ urlbar-persistent-storage-notification-anchor =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 
+## Local search mode indicator labels in the urlbar
+
+
 ##
 
 urlbar-geolocation-blocked =
@@ -98,6 +99,31 @@ page-action-add-to-urlbar =
 page-action-remove-from-urlbar =
     .label = Отстрани од Адресна лента
 
+## Page Action menu
+
+page-action-copy-url-panel =
+    .label = Копирај врска
+page-action-copy-url-urlbar =
+    .tooltiptext = Копирај врска
+page-action-email-link-panel =
+    .label = Испрати линк…
+page-action-email-link-urlbar =
+    .tooltiptext = Испрати линк…
+page-action-send-tab-not-ready =
+    .label = Уредите се синхронизираат…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Закачи јазиче
+page-action-pin-tab-urlbar =
+    .tooltiptext = Закачи јазиче
+page-action-unpin-tab-panel =
+    .label = Откачи јазиче
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Откачи јазиче
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -115,13 +141,20 @@ search-one-offs-change-settings-button =
     .label = Промени поставки за пребарување
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Промени поставки за пребарување
-
 search-one-offs-context-open-new-tab =
     .label = Пребарај во ново јазиче
     .accesskey = П
 search-one-offs-context-set-as-default =
     .label = Постави како основен пребарувач
     .accesskey = П
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
 
 ## Bookmark Panel
 
@@ -196,12 +229,40 @@ urlbar-remote-control-notification-anchor =
     .tooltiptext = Прелистувачот е контролиран далечински
 urlbar-switch-to-tab =
     .value = Оди до јазиче:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Проширување:
-
 urlbar-go-button =
     .tooltiptext = Ја отвора адресата во локациската лента
 urlbar-page-action-button =
     .tooltiptext = Активности на страница
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Пребарај со { $engine }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> сега се прикажува на цел екран
+fullscreen-warning-no-domain = Овој документ сега се прикажува на цел екран
+fullscreen-exit-button = Излези од приказ на цел екран (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Излези од приказ на цел екран (Esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> го контролира вашиот покажувач. Притиснете Esc за да ја преземете контролата.
+pointerlock-warning-no-domain = Овој документ ви ја презема контролата врз покажувачот. Притиснете Esc за да си ја вратите.

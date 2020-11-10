@@ -95,7 +95,7 @@ deniedPortAccess-title = Tilgang til denne adressen er begrenset
 dnsNotFound-title = Hmm. Vi har problemer med å finne nettstedet.
 fileNotFound-title = Fil ikke funnet
 fileAccessDenied-title = Tilgang til filen ble nektet
-generic-title = Oops.
+generic-title = Ops.
 captivePortal-title = Logg inn på nettverket
 # "Hmm" is a sound made when considering or puzzling over something.
 # You don't have to include it in your translation if your language does not have a written word like this.
@@ -113,8 +113,6 @@ proxyResolveFailure-title = Klarte ikke finne proxy
 redirectLoop-title = Nettsiden videresender ikke ordentlig
 unknownSocketType-title = Uventet svar fra server
 nssFailure2-title = Sikker tilkobling mislyktes
-cspBlocked-title = Blokkert av sikkerhetspolicy
-xfoBlocked-title = Blokkert av X-Frame-Options-policy
 csp-xfo-error-title = { -brand-short-name } kan ikke åpne denne siden
 corruptedContentError-title = Ødelagt innhold
 remoteXUL-title = Ekstern XUL

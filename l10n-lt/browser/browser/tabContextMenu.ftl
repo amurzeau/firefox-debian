@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Perkelti į naują langą
     .accesskey = l
-undo-close-tab =
-    .label = Atšaukti kortelės užvėrimą
-    .accesskey = š
 tab-context-close-multiple-tabs =
     .label = Užverti keletą kortelių
     .accesskey = k
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -80,3 +81,21 @@ move-tabs =
 move-tab =
     .label = Perkelti kortelę
     .accesskey = t
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Užverti kortelę
+            [one] Užverti kortelę
+            [few] Užverti korteles
+           *[other] Užverti kortelių
+        }
+    .accesskey = U
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Perkelti kortelę
+            [one] Perkelti kortelę
+            [few] Perkelti korteles
+           *[other] Perkelti kortelių
+        }
+    .accesskey = k

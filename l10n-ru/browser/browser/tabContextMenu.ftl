@@ -53,21 +53,22 @@ move-to-end =
 move-to-new-window =
     .label = Переместить в новое окно
     .accesskey = е
-undo-close-tab =
-    .label = Восстановить закрытую вкладку
-    .accesskey = с
 tab-context-close-multiple-tabs =
     .label = Закрыть несколько вкладок
     .accesskey = ы
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
-        { $tabCount ->
-            [1] Восстановить закрытую вкладку
-            [one] Восстановить закрытую вкладку
-            [few] Восстановить закрытые вкладки
-           *[many] Восстановить закрытые вкладки
+        Восстановить { $tabCount ->
+            [1] закрытую вкладку
+            [one] { $tabCount } закрытую вкладку
+            [few] { $tabCount } закрытые вкладки
+           *[many] { $tabCount } закрытых вкладок
         }
-    .accesskey = л
+    .accesskey = о
 close-tab =
     .label = Закрыть вкладку
     .accesskey = а
@@ -79,4 +80,22 @@ move-tabs =
     .accesskey = м
 move-tab =
     .label = Переместить вкладку
+    .accesskey = м
+tab-context-close-tabs =
+    .label =
+        Закрыть { $tabCount ->
+            [1] вкладку
+            [one] { $tabCount } вкладку
+            [few] { $tabCount } вкладки
+           *[many] { $tabCount } вкладок
+        }
+    .accesskey = ь
+tab-context-move-tabs =
+    .label =
+        Переместить { $tabCount ->
+            [1] вкладку
+            [one] { $tabCount } вкладку
+            [few] { $tabCount } вкладки
+           *[many] { $tabCount } вкладок
+        }
     .accesskey = м

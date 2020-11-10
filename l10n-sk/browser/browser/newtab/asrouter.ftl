@@ -38,7 +38,6 @@ cfr-doorhanger-extension-author = od vývojára { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Odporúčanie
-
 cfr-doorhanger-extension-notification2 = Odporúčanie
     .tooltiptext = Odporúčanie rozšírenia
     .a11y-announcement = K dispozícii je odporúčané rozšírenie
@@ -144,6 +143,7 @@ cfr-whatsnew-lockwise-take-link-text = Prevziať aplikáciu
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Používajte panel s adresou - píšte menej, nájdite viac
+cfr-whatsnew-searchbar-body-topsites = Teraz stačí vybrať panel s adresou, ktorý sa zväčší a zobrazí odkazy na vaše najnavštevovanejšie stránky.
 cfr-whatsnew-searchbar-icon-alt-text = Ikona lupy
 
 ## Picture-in-Picture
@@ -155,6 +155,7 @@ cfr-whatsnew-pip-cta = Ďalšie informácie
 ## Permission Prompt
 
 cfr-whatsnew-permission-prompt-header = Menej otravných vyskakovacích okien
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } teraz zabraňuje stránkam automaticky požadovať odosielanie vyskakovacích správ.
 cfr-whatsnew-permission-prompt-cta = Ďalšie informácie
 
 ## Fingerprinter Counter
@@ -202,17 +203,56 @@ cfr-doorhanger-socialtracking-description = Na vašom súkromí záleží. { -br
 cfr-doorhanger-fingerprinters-heading = Aplikácia { -brand-short-name } zabránila vytvoreniu odtlačku prehliadača
 cfr-doorhanger-fingerprinters-description = Na vašom súkromí záleží. Aplikácia { -brand-short-name } odteraz blokuje tvorbu odtlačkov prehliadača, ktoré sa používajú na vaše sledovanie.
 cfr-doorhanger-cryptominers-heading = Aplikácia { -brand-short-name } zablokovala na tejto stránke ťažbu kryptomien
+cfr-doorhanger-cryptominers-description = Na vašom súkromí záleží. { -brand-short-name } odteraz blokuje ťažbu kryptomien, ktorá spotrebúva výkon vášho počítača na ťažbu digitálnej meny.
 
 ## Enhanced Tracking Protection Milestones
 
+# Variables:
+#   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
+#   $date (String) - The date we began recording the count of blocked trackers
+cfr-doorhanger-milestone-heading =
+    { $blockedCount ->
+       *[other] Aplikácia { -brand-short-name } zablokovala od { $date } viac než <b>{ $blockedCount }</b> sledovacích prvkov!
+    }
 cfr-doorhanger-milestone-ok-button = Zobraziť všetko
     .accesskey = v
 
+cfr-doorhanger-milestone-close-button = Zavrieť
+    .accesskey = Z
+
 ## What’s New Panel Content for Firefox 76
+
 
 ## Lockwise message
 
+cfr-whatsnew-lockwise-header = Vytvárajte zabezpečené heslá s ľahkosťou
+cfr-whatsnew-lockwise-icon-alt = Ikona { -lockwise-brand-short-name(case: "gen") }
+
 ## Vulnerable Passwords message
 
+cfr-whatsnew-passwords-header = Dostávajte upozornenia na zraniteľné heslá
+cfr-whatsnew-passwords-icon-alt = Ikona zraniteľného hesla
+
 ## Picture-in-Picture fullscreen message
+
+cfr-whatsnew-pip-fullscreen-header = Prejdite do režimu obraz v obraze na celú obrazovku
+cfr-whatsnew-pip-fullscreen-body = Teraz môžete dvojitým kliknutím zväčšiť vyskakovacie plávajúce okno do režimu na celú obrazovku.
+cfr-whatsnew-pip-fullscreen-icon-alt = Ikona obrazu v obraze
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Prehľad ochrany na jednom mieste
+cfr-whatsnew-protections-icon-alt = Ikona štítu
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Lepšia práca s PDF
+
+## DOH Message
+
+cfr-doorhanger-doh-header = Bezpečnejšie a šifrované vyhľadávanie DNS
+cfr-doorhanger-doh-primary-button = OK, rozumiem
+    .accesskey = O
+
+## What's new: Cookies message
 

@@ -2,6 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
+# This file gets parsed into a JS dictionary of all known error message ids in
+# gen_aboutneterror_codes.py . If we end up needing fluent attributes or
+# refactoring them in some way, the script will need updating.
+
 # Variables:
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
@@ -29,7 +35,7 @@ ssl-error-bad-client = Serwer je na njepłaćiwe daty wot klienta storčił.
 ssl-error-bad-server = Klient je na njepłaćiwe daty ze serwera storčił.
 ssl-error-unsupported-certificate-type = Njepodpěrany certifikatowy typ.
 ssl-error-unsupported-version = Napřećiwne městno, kotrež njepodpěranu wersiju wěstotneho protokola wužiwa.
-ssl-error-wrong-certificate = Klientowa awtentifikacija je so njeporadźiła: priwatny kluč w datowej bance klučow njewotpowěduje zjawnemu klučej w datowej bance certifikatow.
+ssl-error-wrong-certificate = Klientowa awtentifikacija njeje so poradźiła: priwatny kluč w datowej bance klučow njewotpowěduje zjawnemu klučej w datowej bance certifikatow.
 ssl-error-bad-cert-domain = Wěsta komunikacija z napřećiwnym městnom móžna njeje: požadane domenowe mjeno njewotpowěduje certifikatej serwera.
 ssl-error-post-warning = Njeznaty zmylkowy kod SSL.
 ssl-error-ssl2-disabled = Napřećiwne městno jenož podpěruje SSL wersije 2, kotraž je lokalnje znjemóžnjena.
@@ -88,12 +94,12 @@ ssl-error-sign-hashes-failure = Njeje móžno, daty digitalnje podpisać, štož
 ssl-error-extract-public-key-failure = SSL njemóžeše zjawny kluč z certifikata napřećiwneho městna ekstrahować.
 ssl-error-server-key-exchange-failure = Njepodaty zmylk při předźěłowanju rukuzawdaća ServerKeyExchange SSL.
 ssl-error-client-key-exchange-failure = Njepodaty zmylk při předźěłowanju rukuzawdaća ClientKeyExchange SSL.
-ssl-error-encryption-failure = Zaklučowanski algoritmus masowych datow je so we wubranej šifrowym slědźe njeporadźił.
-ssl-error-decryption-failure = Dešifrowanski algoritmus masowych datow je so we wubranej šifrowym slědźe njeporadźił.
-ssl-error-socket-write-failure = Pospyt zaklučowane daty do socketa pod tym je so njeporadźił.
-ssl-error-md5-digest-failure = Funkcija MD5 digest je so njeporadźiła.
-ssl-error-sha-digest-failure = Funkcija SHA-1 digest je so njeporadźiła.
-ssl-error-mac-computation-failure = Wobličenje MAC je so njeporadźiło.
+ssl-error-encryption-failure = Zaklučowanski algoritmus masowych datow njeje so we wubranej šifrowym slědźe poradźił.
+ssl-error-decryption-failure = Dešifrowanski algoritmus masowych datow njeje so we wubranej šifrowym slědźe poradźił.
+ssl-error-socket-write-failure = Pospyt zaklučowane daty do socketa pod tym njeje so poradźił.
+ssl-error-md5-digest-failure = Funkcija MD5 digest njeje so poradźiła.
+ssl-error-sha-digest-failure = Funkcija SHA-1 digest njeje so poradźiła.
+ssl-error-mac-computation-failure = Wobličenje MAC njeje so poradźiło.
 ssl-error-sym-key-context-failure = Zmylk při wutworjenju konteksta symetriskeho kluča.
 ssl-error-sym-key-unwrap-failure = Zmylk při wupakowanju symetriskeho kluča do powěsće ClientKeyExchange.
 ssl-error-pub-key-size-limit-exceeded = SSL-serwer spyta zjawny kluč za tukrajne zaklučowanje ze šifrowym slědom eksportoweho zaklučowanja.
@@ -203,7 +209,7 @@ sec-error-no-email-cert = Njezaklučowany abo njepodpisany: nimaće e-mejlowy ce
 sec-error-no-recipient-certs-query = Njezaklučowany: nimaće certifikaty za žaneho z přijimowarjow.
 sec-error-not-a-recipient = Dešifrowanje móžne njeje: njejsće přijimowar abo wotpowědowacy certifikat a priwatny kluč njeje so namakał.
 sec-error-pkcs7-keyalg-mismatch = Dešifrowanje móžne njeje: algoritmus klučoweho zaklučowanja njewotpowěduje wašemu certifikatej.
-sec-error-pkcs7-bad-signature = Přepruwowanje podpisa je so njeporadźiło: žadyn podpisar namakany, přewjele podpisarjow namakane abo njepřihódne abo poškodźene daty.
+sec-error-pkcs7-bad-signature = Přepruwowanje podpisa njeje so poradźiło: žadyn podpisar namakany, přewjele podpisarjow namakane abo njepřihódne abo poškodźene daty.
 sec-error-unsupported-keyalg = Njepodpěrowany abo njeznaty klučowy algoritmus.
 sec-error-decryption-disallowed = Dešifrowanje móžne njeje: přez njedowoleny algoritmus abo z njedowolenej klučowej wulkosću zaklučowany.
 xp-sec-fortezza-bad-card = Karta Fortezza njeje so porjadnje inicializowała. Prošu wotstrońće ju a dajće ju swojemu wudawarjej wróćo.
@@ -311,7 +317,7 @@ sec-error-incompatible-pkcs11 = Ćěrjak PKCS #11 rani specifikaciju na inkompat
 sec-error-no-event = Slotowy podawk tuchwilu k dispoziciji njesteji.
 sec-error-crl-already-exists = CRL hižo eksistuje.
 sec-error-not-initialized = NSS njeje inicializowany.
-sec-error-token-not-logged-in = Operacija je so njeporadźiła, dokelž token PKCS#11 njeje přizjewjeny.
+sec-error-token-not-logged-in = Operacija njeje so poradźiła, dokelž token PKCS#11 njeje přizjewjeny.
 sec-error-ocsp-responder-cert-invalid = Certifikat konfigurowaneho OCSP-respondera je njepłaćiwy.
 sec-error-ocsp-bad-signature = OCSP-wotmołwa ma njepłaćiwy podpis.
 sec-error-out-of-search-limits = Pytanje walidowanja certifikatow je zwonka pytanskich mjezow
@@ -320,7 +326,7 @@ sec-error-policy-validation-failed = Rjećaz certifikatow je při walidowanju pr
 sec-error-unknown-aia-location-type = Njeznaty městnostny typ w certifikatowym AIA-rozšěrjenju
 sec-error-bad-http-response = Serwer je njepłaćiwu HTTP-wotmołwu wróćił
 sec-error-bad-ldap-response = Serwer je njepłaćiwu LDAP-wotmołwu wróćił
-sec-error-failed-to-encode-data = Kodowanje datow přez ASN1-kodowak je so njeporadźiło
+sec-error-failed-to-encode-data = Kodowanje datow přez ASN1-kodowak njeje so poradźiło
 sec-error-bad-info-access-location = Njepłaćiwe přistupne městno za informacije w certifikatowym rozšěrjenju
 sec-error-libpkix-internal = Interny Libpkix-zmylk je za walidowanje certifikata wustupił.
 sec-error-pkcs11-general-error = Modul PKCS #11 je CKR_GENERAL_ERROR wrócił, podawajo, zo njeporjedźujomny zmylk je wustupił.

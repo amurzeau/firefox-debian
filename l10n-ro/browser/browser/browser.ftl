@@ -19,12 +19,11 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Navigare privată)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Navigare privată)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Navigare privată)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Navigare privată)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -92,7 +90,7 @@ urlbar-web-rtc-share-devices-notification-anchor =
 urlbar-autoplay-notification-anchor =
     .tooltiptext = Deschide panoul de redare automată
 urlbar-persistent-storage-notification-anchor =
-    .tooltiptext = Stochează date în stocarea persistentă
+    .tooltiptext = Stochează date în spațiul de stocare persistent
 urlbar-addons-notification-anchor =
     .tooltiptext = Deschide panoul cu mesaje privind instalarea de suplimente
 urlbar-tip-help-icon =
@@ -112,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Scrii mai puțin, găsești mai multe: caută cu { $engineName } direct în bara de adrese.
 urlbar-search-tips-redirect-2 = Începe căutarea în bara de adrese ca să vezi sugestii de la { $engineName } și din istoricul tău de navigare.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Marcaje
+urlbar-search-mode-tabs = File
+urlbar-search-mode-history = Istoric
+
 ##
 
 urlbar-geolocation-blocked =
@@ -127,7 +131,7 @@ urlbar-microphone-blocked =
 urlbar-screen-blocked =
     .tooltiptext = Ai blocat partajarea ecranului pe acest site web.
 urlbar-persistent-storage-blocked =
-    .tooltiptext = Ai blocat stocarea persistentă de date pentru acest site web.
+    .tooltiptext = Ai blocat stocarea persistentă a datelor pentru acest site web.
 urlbar-popup-blocked =
     .tooltiptext = Ai blocat ferestrele pop-up pe acest site.
 urlbar-autoplay-media-blocked =
@@ -138,12 +142,10 @@ urlbar-midi-blocked =
     .tooltiptext = Ai blocat accesul MIDI pentru acest site web.
 urlbar-install-blocked =
     .tooltiptext = Ai blocat suplimentele instalate pentru acest site web.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Editează acest marcaj ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -160,28 +162,75 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Elimină extensia
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Trimite fila către un dispozitiv
+            [few] Trimite { $tabCount } file către un dispozitiv
+           *[other] Trimite { $tabCount } de file către un dispozitiv
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Trimite fila către un dispozitiv
+            [few] Trimite { $tabCount } file către un dispozitiv
+           *[other] Trimite { $tabCount } de file către un dispozitiv
+        }
+page-action-pocket-panel =
+    .label = Salvează pagina în { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Copiază linkul
+page-action-copy-url-urlbar =
+    .tooltiptext = Copiază linkul
+page-action-email-link-panel =
+    .label = Trimite linkul prin e-mail…
+page-action-email-link-urlbar =
+    .tooltiptext = Trimite linkul prin e-mail…
+page-action-share-url-panel =
+    .label = Partajează
+page-action-share-url-urlbar =
+    .tooltiptext = Partajează
+page-action-share-more-panel =
+    .label = Mai multe…
+page-action-send-tab-not-ready =
+    .label = Se sincronizează dispozitivele…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Fixează fila
+page-action-pin-tab-urlbar =
+    .tooltiptext = Fixează fila
+page-action-unpin-tab-panel =
+    .label = Anulează fixarea filei
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Anulează fixarea filei
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
     .label = Ascunde barele de instrumente
     .accesskey = H
 full-screen-exit =
-    .label = Ieși din modul de ecran complet
+    .label = Ieși din modul ecran complet
     .accesskey = F
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = De data aceasta, caută cu:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Schimbă setările de căutare
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Schimbă setările de căutare
-
 search-one-offs-context-open-new-tab =
     .label = Caută într-o filă nouă
     .accesskey = T
@@ -191,16 +240,34 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Setează ca motor de căutare implicit în ferestre private
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Marcaje ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = File ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Istoric ({ $restrict })
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Afișează editorul la salvare
     .accesskey = S
-
 bookmark-panel-done-button =
     .label = Terminat
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -265,6 +332,9 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Închide
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -274,33 +344,120 @@ popup-select-microphone =
     .value = Microfonul spre partajare:
     .accesskey = M
 popup-all-windows-shared = Toate ferestrele vizibile pe ecran vor fi partajate.
+popup-screen-sharing-not-now =
+    .label = Nu acum
+    .accesskey = w
+popup-screen-sharing-never =
+    .label = Nu permite niciodată
+    .accesskey = N
+popup-silence-notifications-checkbox = Dezactivează notificările de la { -brand-short-name } în timpul partajărilor
+popup-silence-notifications-checkbox-warning = { -brand-short-name } nu va afișa notificări în timpul partajărilor.
 
 ## WebRTC window or screen share tab switch warning
 
+sharing-warning-window = Partajezi { -brand-short-name }. Alte persoane pot vedea când treci la o filă nouă.
+sharing-warning-screen = Îți partajezi tot ecranul. Alte persoane pot vedea când treci la o filă nouă.
+sharing-warning-proceed-to-tab =
+    .label = Mergi la filă
+sharing-warning-disable-for-session =
+    .label = Dezactivează protecția partajării pentru această sesiune
 
 ## DevTools F12 popup
 
+enable-devtools-popup-description = Pentru a folosi comanda rapidă F12, deschide mai întâi DevTools prin intermediul meniului Dezvoltator web.
 
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Caută sau introdu adresa
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Caută sau introdu adresa
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Caută pe web
+    .aria-label = Caută cu { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Introdu termenii de căutare
+    .aria-label = Caută { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Introdu termenii de căutare
+    .aria-label = Caută în marcaje
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Introdu termenii de căutare
+    .aria-label = Caută în istoric
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Introdu termenii de căutare
+    .aria-label = Caută în file
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Caută cu { $name } sau introdu adresa
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Browserul este controlat de la distanță
 urlbar-permissions-granted =
     .tooltiptext = Ai acordat permisiuni suplimentare acestui site web.
 urlbar-switch-to-tab =
     .value = Treci pe fila:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Extensie:
-
 urlbar-go-button =
     .tooltiptext = Mergi la adresa din bara de adrese
 urlbar-page-action-button =
     .tooltiptext = Acțiuni pe pagină
 urlbar-pocket-button =
     .tooltiptext = Salvează în { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Caută pe { $engine } într-o fereastră privată
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Caută într-o fereastră privată
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Caută pe { $engine }
+urlbar-result-action-switch-tab = Comută la fila
+urlbar-result-action-visit = Vizitează
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> este acum în modul ecran complet
+fullscreen-warning-no-domain = Acest document este acum în ecran complet
+fullscreen-exit-button = Ieși din modul ecran complet (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Ieși din modul ecran complet (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> controlează acum cursorul. Apasă Esc pentru a prelua controlul.
+pointerlock-warning-no-domain = Documentul controlează acum cursorul. Apasă Esc pentru a prelua controlul.

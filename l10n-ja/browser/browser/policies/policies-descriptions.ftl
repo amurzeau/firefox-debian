@@ -41,7 +41,7 @@ policy-DisableAppUpdate = ブラウザの更新を禁止します。
 
 policy-DisableBuiltinPDFViewer = { -brand-short-name } 組み込みの PDF ビューアーの PDF.js を無効にします。
 
-policy-DisableDefaultBrowserAgent = デフォルトブラウザーエージェントのアクションをすべて禁止します。Windows のみ有効です。他のプラットフォームはエージェントがありません。
+policy-DisableDefaultBrowserAgent = Default Browser Agent のアクションをすべて禁止します。Windows のみ有効です。他のプラットフォームはエージェントがありません。
 
 policy-DisableDeveloperTools = 開発ツールへのアクセスをブロックします。
 
@@ -59,6 +59,8 @@ policy-DisableForgetButton = [忘れる]ボタンへのアクセスを禁止し�
 policy-DisableFormHistory = 検索とフォームの履歴を記憶しないようにします。
 
 policy-DisableMasterPasswordCreation = true にすると、マスターパスワードを作成できないようにします。
+
+policy-DisablePrimaryPasswordCreation = true にすると、マスターパスワードを作成できないようにします。
 
 policy-DisablePasswordReveal = 保存されたパスワードの表示を許可しないようにします。
 
@@ -131,6 +133,10 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = 特定のサイトで�
 policy-LocalFileLinks = 特定のウェブサイトにローカルファイルへのリンクを許可します。
 
 policy-MasterPassword = マスターパスワードの使用を要求または抑止します。
+
+policy-ManagedBookmarks = システム管理者により管理されたブックマークのリストを設定します。ユーザーはこのブックマークを変更できません。
+
+policy-PrimaryPassword = マスターパスワードの使用を要求または抑止します。
 
 policy-NetworkPrediction = 先読み機能 (DNS プリフェッチ) を有効または無効にします。
 

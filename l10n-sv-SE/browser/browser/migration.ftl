@@ -53,6 +53,9 @@ no-migration-sources = Hittade inget program som innehåller bokmärken, histori
 import-source-page-title = Importera inställningar och data
 import-items-page-title = Objekt som ska importeras
 import-items-description = Välj poster att importera:
+import-permissions-page-title = Ge { -brand-short-name } behörigheter
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS kräver att du uttryckligen tillåter { -brand-short-name } att komma åt Safaris bokmärken. Klicka på "Fortsätt" och välj filen "Bookmarks.plist" i panelen öppna fil som visas.
 import-migrating-page-title = Importerar…
 import-migrating-description = Följande poster importeras för närvarande…
 import-select-profile-page-title = Välj profil
@@ -88,6 +91,7 @@ imported-edge-reading-list = Läslista (från Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

@@ -203,6 +203,8 @@ cfr-doorhanger-cryptominers-description = Le respect de votre vie privée est im
 cfr-doorhanger-milestone-heading = { -brand-short-name } a bloqué plus de <b>{ $blockedCount }</b> traqueurs depuis { $date }.
 cfr-doorhanger-milestone-ok-button = Tout afficher
     .accesskey = T
+cfr-doorhanger-milestone-close-button = Fermer
+    .accesskey = F
 
 ## What’s New Panel Content for Firefox 76
 
@@ -236,3 +238,33 @@ cfr-whatsnew-protections-icon-alt = Icône de bouclier
 
 cfr-whatsnew-better-pdf-header = Meilleure expérience PDF
 cfr-whatsnew-better-pdf-body = Les documents PDF s’ouvrent maintenant directement dans { -brand-short-name }, gardant vos outils de travail à portée de main.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Le respect de votre vie privée est important. Désormais, et lorsque cela est possible, { -brand-short-name } envoie vos requêtes DNS de manière sécurisée vers un service fourni par un partenaire pour vous protéger pendant votre navigation.
+cfr-doorhanger-doh-header = Des requêtes DNS chiffrées et plus sûres
+cfr-doorhanger-doh-primary-button = D’accord, j’ai compris.
+    .accesskey = o
+cfr-doorhanger-doh-secondary-button = Désactiver
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Votre vie privée est importante. Désormais, { -brand-short-name } isole les sites web les uns des autres, ou les ouvre dans des bacs à sable, compliquant ainsi la tâche des pirates pour dérober mots de passe, numéros de carte bancaire et autres données sensibles.
+cfr-doorhanger-fission-header = Isolement des sites
+cfr-doorhanger-fission-primary-button = J’ai compris
+    .accesskey = c
+cfr-doorhanger-fission-secondary-button = En savoir plus
+    .accesskey = s
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Protection automatique contre les techniques de pistage discrètes
+cfr-whatsnew-clear-cookies-body = Certains traqueurs vous redirigent vers d’autres sites qui créent des cookies cachés. { -brand-short-name } est désormais capable d’effacer ces cookies afin que vous ne puissiez pas être pisté·e.
+cfr-whatsnew-clear-cookies-image-alt = Illustration d’un cookie bloqué
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Plus de contrôles multimédias
+cfr-whatsnew-media-keys-body = Lisez et mettez en pause l’audio ou la vidéo directement depuis votre clavier ou votre casque, ce qui facilite le contrôle des médias à partir d’un autre onglet ou programme, ou même lorsque votre ordinateur est verrouillé. Vous pouvez également vous déplacer entre les pistes à l’aide des touches avant et arrière.
+cfr-whatsnew-media-keys-button = Découvrez comment

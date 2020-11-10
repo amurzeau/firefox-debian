@@ -17,6 +17,12 @@ extensions-name = Naam
 extensions-enabled = Ingeschakeld
 extensions-version = Versie
 extensions-id = ID
+support-addons-title = Add-ons
+support-addons-name = Naam
+support-addons-type = Type
+support-addons-enabled = Ingeschakeld
+support-addons-version = Versie
+support-addons-id = ID
 security-software-title = Beveiligingssoftware
 security-software-type = Type
 security-software-name = Naam
@@ -62,6 +68,7 @@ app-basics-service-workers = Geregistreerde Service Workers
 app-basics-profiles = Profielen
 app-basics-launcher-process-status = Launcher-proces
 app-basics-multi-process-support = Multiprocess-vensters
+app-basics-fission-support = Fission Windows
 app-basics-remote-processes-count = Externe processen
 app-basics-enterprise-policies = Bedrijfsbeleidsregels
 app-basics-location-service-key-google = Google-locatieservicesleutel
@@ -74,6 +81,12 @@ show-dir-label =
         [windows] Map openen
        *[other] Map openen
     }
+environment-variables-title = Omgevingsvariabelen
+environment-variables-name = Naam
+environment-variables-value = Waarde
+experimental-features-title = Experimentele functies
+experimental-features-name = Naam
+experimental-features-value = Waarde
 modified-key-prefs-title = Belangrijke aangepaste voorkeuren
 modified-prefs-name = Naam
 modified-prefs-value = Waarde
@@ -98,8 +111,6 @@ graphics-desktop-environment = Desktopomgeving
 place-database-title = Places-database
 place-database-integrity = Integriteit
 place-database-verify-integrity = Integriteit verifiëren
-js-title = JavaScript
-js-incremental-gc = Incrementele GC
 a11y-title = Toegankelijkheid
 a11y-activated = Geactiveerd
 a11y-force-disabled = Toegankelijkheid voorkomen
@@ -129,7 +140,6 @@ restart-button-label = Herstarten
 
 audio-backend = Audio-backend
 max-audio-channels = Max. kanalen
-channel-layout = Kanaalindeling van voorkeur
 sample-rate = Samplefrequentie van voorkeur
 roundtrip-latency = Retentielatentie (standaarddeviatie)
 media-title = Media
@@ -266,11 +276,13 @@ blocklisted-bug = Geblokkeerd vanwege bekende problemen
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Geblokkeerd vanwege bekende problemen: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Op blokkeerlijst; foutcode { $failureCode }
 d3d11layers-crash-guard = D3D11-compositor
 d3d11video-crash-guard = D3D11-videodecoder
-d3d9video-crash-buard = D3D9-videodecoder
 d3d9video-crash-guard = D3D9-videodecoder
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX-videodecoder
@@ -318,6 +330,20 @@ multi-process-status-6 = Uitgeschakeld door niet-ondersteunde tekstinvoer
 multi-process-status-7 = Uitgeschakeld door add-ons
 multi-process-status-8 = Geforceerd uitgeschakeld
 multi-process-status-unknown = Onbekende status
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Uitgeschakeld door experiment
+fission-status-experiment-treatment = Ingeschakeld door experiment
+fission-status-disabled-by-e10s-env = Uitgeschakeld door omgeving
+fission-status-enabled-by-env = Ingeschakeld door omgeving
+fission-status-disabled-by-safe-mode = Uitgeschakeld door veilige modus
+fission-status-enabled-by-default = Standaard ingeschakeld
+fission-status-disabled-by-default = Standaard uitgeschakeld
+fission-status-enabled-by-user-pref = Ingeschakeld door gebruiker
+fission-status-disabled-by-user-pref = Uitgeschakeld door gebruiker
+fission-status-disabled-by-e10s-other = E10s uitgeschakeld
 async-pan-zoom = Asynchroon pannen/zoomen
 apz-none = geen
 wheel-enabled = wielinvoer ingeschakeld
@@ -338,3 +364,12 @@ touch-warning = async-aanraakinvoer uitgeschakeld vanwege niet-ondersteunde voor
 policies-inactive = Inactief
 policies-active = Actief
 policies-error = Fout
+
+## Printing section
+
+support-printing-title = Afdrukken
+support-printing-troubleshoot = Probleemoplossing
+support-printing-clear-settings-button = Opgeslagen afdrukinstellingen wissen
+support-printing-modified-settings = Gewijzigde afdrukinstellingen
+support-printing-prefs-name = Naam
+support-printing-prefs-value = Waarde

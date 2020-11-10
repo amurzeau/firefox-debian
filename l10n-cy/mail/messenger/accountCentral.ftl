@@ -52,6 +52,8 @@ about-paragraph = Mae Thunderbird yw'r prif raglen e-bost a chalendr, croes blat
 about-paragraph-2 = Mae <b>Thunderbird yn cael ei ariannu gan ddefnyddwyr fel chi! Os ydych chi'n hoff o Thunderbird, ystyriwch roi rhodd.</b> Y ffordd orau i chi sicrhau bod Thunderbird yn parhau i fod ar gael yw i
 about-donation = wneud rhodd
 
+about-paragraph-consider-donation = <b>Mae Thunderbird yn cael ei ariannu gan ddefnyddwyr fel chi! Os ydych chi'n hoffi Thunderbird, ystyriwch wneud rhodd.</b> Y ffordd orau i wneud yn siŵr fod Thunderbird yn parhau i fod ar gael yw <a data-l10n-name="donation-link"> i wneud cyfraniad.</a>
+
 explore-link = Edrych ar y Nodweddion
 support-link = Cefnogaeth
 involved-link = Ymunwch â ni!

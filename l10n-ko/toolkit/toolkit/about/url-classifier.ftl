@@ -28,7 +28,7 @@ url-classifier-cache-ncache-entries = 네거티브 캐시 항목 수
 url-classifier-cache-pcache-entries = 포지티브 캐시 항목 수
 url-classifier-cache-show-entries = 항목 보기
 url-classifier-cache-entries = 캐시 항목
-url-classifier-cache-prefix = 접두어
+url-classifier-cache-prefix = 접두사
 url-classifier-cache-ncache-expiry = 네거티브 캐시 만료
 url-classifier-cache-fullhash = 전체 해시
 url-classifier-cache-pcache-expiry = 포지티브 캐시 만료
@@ -40,6 +40,7 @@ url-classifier-debug-sb-modules = 안전한 탐색 로그 모듈
 url-classifier-debug-modules = 현재 로그 모듈
 url-classifier-debug-sbjs-modules = 안전한 탐색 JS 로그
 url-classifier-debug-file = 현재 로그 파일
+
 url-classifier-trigger-update = 업데이트 실행
 url-classifier-not-available = 해당 없음
 url-classifier-disable-sbjs-log = 안전한 탐색 JS 로그 사용 안 함

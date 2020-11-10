@@ -18,6 +18,12 @@ extensions-name = Názov
 extensions-enabled = Povolené
 extensions-version = Verzia
 extensions-id = ID
+support-addons-title = Doplnky
+support-addons-name = Názov
+support-addons-type = Typ
+support-addons-enabled = Povolené
+support-addons-version = Verzia
+support-addons-id = ID
 security-software-title = Bezpečnostný softvér
 security-software-type = Typ
 security-software-name = Názov
@@ -35,6 +41,7 @@ app-basics-title = Základné nastavenia aplikácie
 app-basics-name = Názov
 app-basics-version = Verzia
 app-basics-build-id = Identifikátor zostavenia
+app-basics-distribution-id = ID distribúcie
 app-basics-update-channel = Kanál aktualizácií
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -74,6 +81,9 @@ show-dir-label =
         [windows] Otvoriť priečinok
        *[other] Otvoriť priečinok
     }
+experimental-features-title = Experimentálne funkcie
+experimental-features-name = Názov
+experimental-features-value = Hodnota
 modified-key-prefs-title = Dôležité upravené nastavenia
 modified-prefs-name = Názov
 modified-prefs-value = Hodnota
@@ -98,8 +108,6 @@ graphics-desktop-environment = Desktopové prostredie
 place-database-title = Databáza umiestnení
 place-database-integrity = Integrita
 place-database-verify-integrity = Skontrolovať integritu
-js-title = JavaScript
-js-incremental-gc = Inkrementálne GC
 a11y-title = Zjednodušenie ovládania
 a11y-activated = Aktivované
 a11y-force-disabled = Zabrániť zapnutiu funkcie Zjednodušenie ovládania
@@ -120,13 +128,13 @@ sandbox-sys-call-args = Argumenty
 safe-mode-title = Vyskúšajte núdzový režim
 restart-in-safe-mode-label = Reštartovať a zakázať doplnky…
 
+restart-button-label = Reštartovať
+
 ## Media titles
 
 audio-backend = Audio Backend
 max-audio-channels = Maximálny počet kanálov
-channel-layout = Preferované nastavenie kanála
 sample-rate = Preferovaný Sample Rate
-
 media-title = Médium
 media-output-devices-title = Výstupné zariadenia
 media-input-devices-title = Vstupné zariadenia
@@ -281,10 +289,8 @@ unknown-failure = Zablokované; chybový kód { $failureCode }
 
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video dekodér
-d3d9video-crash-buard = D3D9 Video dekodér
 d3d9video-crash-guard = D3D9 Video dekodér
 glcontext-crash-guard = OpenGL
-
 wmfvpxvideo-crash-guard = WMF VPX video dekodér
 
 reset-on-next-restart = Obnoviť pri nasledujúcom reštarte

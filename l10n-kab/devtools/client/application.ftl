@@ -28,10 +28,6 @@ serviceworker-worker-unregister = Ffeɣ seg ujerred
 serviceworker-worker-debug = Tamseɣtayt
     .title = Ala aselkem n umezlu workers i yezmren ad yettwaseɣti
 
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = Bdu
-
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
 serviceworker-worker-debug-forbidden = Tamseɣtayt
@@ -41,6 +37,14 @@ serviceworker-worker-debug-forbidden = Tamseɣtayt
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = Bdu
     .title = Izmer kan ad yessenker imeẓla workers ma yella multi e10s yensa
+
+# Alt text for the image icon displayed inside a debug link for a service worker.
+serviceworker-worker-inspect-icon =
+    .alt = Sweḍ
+
+# Text for the start link displayed for a registered but not running Service Worker.
+# Clicking on the link will attempt to start the service worker.
+serviceworker-worker-start3 = Bdu
 
 # Text displayed for the updated time of the service worker. The <time> element will
 # display the last update time of the service worker script.
@@ -62,10 +66,6 @@ serviceworker-worker-status-running = Aselkem
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = Yeḥbes
 
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = Asekles
-
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = Yessef ad tjerrdeḍ ar umeẓlu worker akken ad yettwasleḍ dagi. <a> Issin ugar </a>
@@ -86,12 +86,33 @@ serviceworker-empty-suggestions-debugger = Ddu ar ujerred n umeẓlu worker saki
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Sweḍ ameẓlu workers seg tiɣula-nniden. <a> Ldi about:debugging</a>
 
+# Text displayed when no service workers are visible for the current page.
+serviceworker-empty-intro2 = Ulac inmahalen n umeẓlu yettwafen
+
+# Link will open https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
+serviceworker-empty-intro-link = Issin ugar
+
+# Text displayed when there are no Service Workers to display for the current page,
+# introducing hints to debug Service Worker issues.
+# <a> and <span> are links that will open the webconsole and the debugger, respectively.
+serviceworker-empty-suggestions2 = Ma yella asebter amiran ilaq ad yesεu anmahal n umeẓlu, tzemreḍ ad tqellbeḍ tuccḍiwin deg <a>tdiwent</a> neɣ ddu d usekles n unmahal-inek·inem n umeẓlu deg <span>umseɣti</span>.
+
+# Suggestion to go to about:debugging in order to see Service Workers for all domains.
+# Link will open about:debugging in a new tab.
+serviceworker-empty-suggestions-aboutdebugging2 = Sken inmahalen n umeẓlu n tiɣula-nniḍen
+
 # Header for the Manifest page when we have an actual manifest
 manifest-view-header = Ameskan n usnas
 
 # Header for the Manifest page when there's no manifest to inspect
 # The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
 manifest-empty-intro = Ilaq ad ternuḍ ameskan n usnas web akken ad yettwasweḍ dagi: <a>Issin ugar</a>
+
+# Header for the Manifest page when there's no manifest to inspect
+manifest-empty-intro2 = Ulac ameskan n usnas web yettwafen
+
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro-link = Issin amek ara ternuḍ ameskan
 
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = Tuccḍiwin akked Ilɣa

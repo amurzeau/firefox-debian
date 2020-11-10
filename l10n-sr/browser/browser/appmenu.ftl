@@ -5,9 +5,8 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = Заштите приватности
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = Идите на извештај о приватности
+appmenuitem-update-banner =
+    .label-update-downloading = Преузимање { -brand-shorter-name } ажурирања
 appmenuitem-protection-dashboard-title = Сигурносна командна табла
 appmenuitem-customize-mode =
     .label = Прилагоди…
@@ -27,8 +26,9 @@ fxa-toolbar-sync-now =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Шта је ново
+
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =
     .label = Обавести о новим функцијама
-    .accesskey = ф
+    .accesskey = f

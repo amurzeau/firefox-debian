@@ -5,9 +5,8 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = Diogelu Preifatrwydd
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = Ewch i'ch adroddiad preifatrwydd
+appmenuitem-update-banner =
+    .label-update-downloading = Llwytho diweddariad { -brand-shorter-name } i lawr
 appmenuitem-protection-dashboard-title = Bwrdd Gwaith Diogelwch
 appmenuitem-customize-mode =
     .label = Cyfaddasu…
@@ -27,6 +26,7 @@ fxa-toolbar-sync-now =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Beth sy'n Newydd
+
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

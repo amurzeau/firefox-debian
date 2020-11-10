@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Nur wenn { -brand-short-name } bekannte Elemente zur Aktivitätenverfolgung blockieren soll
 do-not-track-option-always =
     .label = Immer
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Einstellungen
-           *[other] Einstellungen
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Einstellungen
@@ -35,6 +29,8 @@ search-input-box =
            *[other] In Einstellungen suchen
         }
 managed-notice = Der Browser wird durch Ihre Organisation verwaltet.
+category-list =
+    .aria-label = Kategorien
 pane-general-title = Allgemein
 category-general =
     .tooltiptext = { pane-general-title }
@@ -50,6 +46,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name }-Experimente
+category-experimental =
+    .tooltiptext = { -brand-short-name }-Experimente
+pane-experimental-subtitle = Vorsicht!
+pane-experimental-search-results-header = { -brand-short-name } Experimente: Vorsicht!
+pane-experimental-description = Das Ändern von erweiterten Konfigurationseinstellungen kann sich auf die Leistung und Sicherheit von { -brand-short-name } auswirken.
 help-button-label = Hilfe für { -brand-short-name }
 addons-button-label = Erweiterungen & Themes
 focus-search =
@@ -82,6 +84,9 @@ extension-controlled-homepage-override = Die Erweiterung "<img data-l10n-name="i
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Die Erweiterung "<img data-l10n-name="icon"/> { $name }" verwaltet die Startseite neuer Tabs.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Die Erweiterung <img data-l10n-name="icon"/> { $name } kontrolliert diese Einstellung.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Die Erweiterung <img data-l10n-name="icon"/> { $name } kontrolliert diese Einstellung.
@@ -365,13 +370,6 @@ update-application-warning-cross-user-setting = Diese Einstellung betrifft alle 
 update-application-use-service =
     .label = Einen Hintergrunddienst verwenden, um Updates zu installieren
     .accesskey = g
-update-enable-search-update =
-    .label = Suchmaschinen automatisch aktualisieren
-    .accesskey = S
-update-pref-write-failure-title = Schreibfehler
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Einstellung konnte nicht gespeichert werden. Fehler beim Schreiben dieser Datei: { $path }
 update-setting-write-failure-title = Fehler beim Speichern der Update-Einstellungen
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -430,6 +428,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Videosteuerung für Bild-im-Bild (PiP) anzeigen
     .accesskey = V
 browsing-picture-in-picture-learn-more = Weitere Informationen
+browsing-media-control =
+    .label = Medien über Tastatur, Headset oder virtuelle Schnittstelle steuern
+    .accesskey = e
+browsing-media-control-learn-more = Weitere Informationen
 browsing-cfr-recommendations =
     .label = Erweiterungen während des Surfens empfehlen
     .accesskey = h
@@ -493,13 +495,14 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Wichtige Seiten
 home-prefs-topsites-description = Die von Ihnen am meisten besuchten Websites
+home-prefs-topsites-by-option-sponsored =
+    .label = Gesponserte wichtige Seiten
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = Empfohlen von { $provider }
-home-prefs-recommended-by-description = Tolle Inhalte aus dem ganzen Internet, für Sie personalisiert
 home-prefs-recommended-by-description-update = Besondere Inhalte aus dem ganzen Internet, ausgewählt von { $provider }
 
 ##
@@ -540,7 +543,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Suchleiste zur Symbolleiste hinzufügen
 search-engine-default-header = Standardsuchmaschine
-search-engine-default-desc = Wählen Sie Ihre Standardsuchmaschine für die Adress- und Suchleiste.
 search-engine-default-desc-2 = Das ist Ihre Standardsuchmaschine in der Adress- und Suchleiste. Sie können diese jederzeit ändern.
 search-engine-default-private-desc-2 = Wählen Sie eine andere Standardsuchmaschine nur für private Fenster.
 search-separate-default-engine =
@@ -563,10 +565,10 @@ search-show-suggestions-above-history-option =
     .label = In Adressleiste Suchvorschläge vor Einträgen aus der Browser-Chronik anzeigen
 search-show-suggestions-private-windows =
     .label = Suchvorschläge in privaten Fenstern anzeigen
-suggestions-addressbar-settings = Einstellungen für Chronik, Lesezeichen und vorgeschlagene offene Tabs ändern
 suggestions-addressbar-settings-generic = Einstellungen für andere Vorschläge in der Adressleiste ändern
 search-suggestions-cant-show = Suchvorschläge werden nicht in der Adressleiste angezeigt, weil { -brand-short-name } angewiesen wurde, keine Chronik zu speichern.
 search-one-click-header = Ein-Klick-Suchmaschinen
+search-one-click-header2 = Suchmaschinen-Schlüsselwörter
 search-one-click-desc = Wählen Sie die Suchmaschinen, welche unterhalb der Adress- bzw. Suchleiste angezeigt werden, nachdem Sie den Suchbegriff eingegeben haben.
 search-choose-engine-column =
     .label = Suchmaschine
@@ -578,6 +580,9 @@ search-restore-default =
 search-remove-engine =
     .label = Entfernen
     .accesskey = E
+search-add-engine =
+    .label = Hinzufügen
+    .accesskey = H
 search-find-more-link = Weitere Suchmaschinen hinzufügen
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -589,7 +594,6 @@ search-keyword-warning-bookmark = Sie haben ein Schlüsselwort ausgewählt, das 
 
 ## Containers Section
 
-containers-back-link = « Zurück
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -608,20 +612,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Löschen
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = So haben Sie das Web überall dabei.
 sync-signedout-description = Synchronisieren Sie Ihre Lesezeichen, Chronik, Tabs, Passwörter, Add-ons und Einstellungen zwischen allen Ihren Geräten.
-sync-signedout-account-title = Verbinden Sie mit einem { -fxaccount-brand-name }
-sync-signedout-account-create = Haben Sie noch kein Konto? Erstellen Sie eines.
-    .accesskey = H
-sync-signedout-account-signin =
-    .label = Anmelden…
-    .accesskey = A
 sync-signedout-account-signin2 =
     .label = Bei { -sync-brand-short-name } anmelden…
     .accesskey = B
@@ -635,16 +630,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Firefox für <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> oder <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> herunterladen, um mit Ihrem Handy zu synchronisieren.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Profilbild ändern
-sync-disconnect =
-    .label = Trennen…
-    .accesskey = r
 sync-sign-out =
     .label = Abmelden…
     .accesskey = b
@@ -661,8 +650,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Anmelden
     .accesskey = m
-sync-signedin-settings-header = Sync-Einstellungen
-sync-signedin-settings-desc = Wählen Sie die zwischen den Geräten zu synchronisierenden { -brand-short-name }-Eigenschaften.
 
 ## Sync section - enabling or disabling sync.
 
@@ -715,10 +702,6 @@ sync-engine-tabs =
     .label = Offene Tabs
     .tooltiptext = Liste aller offenen Tabs von allen verbundenen Geräten
     .accesskey = T
-sync-engine-logins =
-    .label = Zugangsdaten
-    .tooltiptext = Durch Sie gespeicherte Benutzernamen und Passwörter
-    .accesskey = Z
 sync-engine-logins-passwords =
     .label = Zugangsdaten und Passwörter
     .tooltiptext = Gespeicherte Benutzernamen und Passwörter
@@ -757,18 +740,10 @@ sync-device-name-save =
     .label = Speichern
     .accesskey = S
 sync-connect-another-device = Weiteres Gerät verbinden
-sync-manage-devices = Geräte verwalten
-sync-fxa-begin-pairing = Gerät verbinden
-sync-tos-link = Nutzungsbedingungen
-sync-fxa-privacy-notice = Datenschutzhinweis
 
 ## Privacy Section
 
 privacy-header = Browser-Datenschutz
-
-## Privacy Section - Forms
-
-logins-header = Zugangsdaten und Passwörter
 
 ## Privacy Section - Logins and Passwords
 
@@ -799,10 +774,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Master-Passwort verwenden
     .accesskey = v
+forms-primary-pw-use =
+    .label = Hauptpasswort verwenden
+    .accesskey = v
+forms-primary-pw-learn-more-link = Weitere Informationen
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Master-Passwort ändern…
     .accesskey = M
 forms-master-pw-fips-title = Sie sind derzeit im FIPS-Modus. FIPS benötigt ein nicht leeres Master-Passwort.
+forms-primary-pw-change =
+    .label = Hauptpasswort ändern…
+    .accesskey = H
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = Früher bekannt als Master-Passwort
+forms-primary-pw-fips-title = Sie sind derzeit im FIPS-Modus. FIPS benötigt ein nicht leeres Hauptpasswort.
 forms-master-pw-fips-desc = Ändern des Passworts fehlgeschlagen
 
 ## OS Authentication dialog
@@ -814,6 +804,13 @@ master-password-os-auth-dialog-message-win = Um ein Master-Passwort zu erstellen
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = Master-Passwort festlegen
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Um ein Hauptpasswort zu erstellen, müssen die Anmeldedaten des Windows-Benutzerkontos eingegeben werden. Dies dient dem Schutz Ihrer Zugangsdaten.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = Hauptpasswort festlegen
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -878,14 +875,16 @@ sitedata-disallow-cookies-option =
     .accesskey = B
 # This label means 'type of content that is blocked', and is followed by a drop-down list with content types below.
 # The list items are the strings named sitedata-block-*-option*.
-sitedata-block-desc = Zu blockieren:
-    .accesskey = Z
-sitedata-option-block-trackers =
-    .label = Nutzer verfolgende Elemente von Drittanbietern
+sitedata-block-desc = Typ blockiert
+    .accesskey = T
 sitedata-option-block-cross-site-trackers =
     .label = Zur seitenübergreifenden Aktivitätenverfolgung
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Zur seitenübergreifenden Aktivitätenverfolgung und von sozialen Netzwerken
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Cookies zur seitenübergreifenden Aktivitätenverfolgung - einschließlich Cookies für soziale Netzwerke
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Seitenübergreifende Cookies - einschließlich Cookies für soziale Netzwerke
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Zur seitenübergreifenden Aktivitätenverfolgung und von sozialen Netzwerken, dabei verbleibende Cookies isolieren
 sitedata-option-block-unvisited =
@@ -927,27 +926,9 @@ addressbar-suggestions-settings = Einstellungen für Suchvorschläge ändern
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Seitenelemente blockieren
-content-blocking-section-description = Schützen Sie Ihre Privatsphäre während des Surfens, indem Sie unsichtbare Inhalte blockieren. Diese verfolgen sonst, welche Websites Sie besuchen, und legen ein Profil über Sie an. Das Blockieren einiger dieser Inhalte kann das Laden von Websites beschleunigen.
 content-blocking-enhanced-tracking-protection = Verbesserter Schutz vor Aktivitätenverfolgung
 content-blocking-section-top-level-description = Skripte zur Aktivitätenverfolgung folgen Ihnen und sammeln Informationen über Ihre Internet-Gewohnheiten und Interessen. { -brand-short-name } blockiert viele dieser Skripte zur Aktivitätenverfolgung und andere böswillige Skripte.
 content-blocking-learn-more = Weitere Informationen
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standard
-    .accesskey = S
-content-blocking-setting-strict =
-    .label = Streng
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Benutzerdefiniert
-    .accesskey = B
-content-blocking-standard-desc = Ausgewogenes Blockieren für gleichzeitigen Schutz und Leistung. Einige Elemente zur Aktivitätenverfolgung werden erlaubt, damit Websites funktionieren.
-content-blocking-strict-description = Besserer Schutz. Einige Websites funktionieren eventuell nicht richtig.
-content-blocking-custom-desc = Entsprechend den Einstellungen blockieren:
-content-blocking-private-trackers = Bekannte Elemente zur Aktivitätenverfolgung nur in privaten Fenstern
-content-blocking-third-party-cookies = Cookies zur Aktivitätenverfolgung von Drittanbietern
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -969,28 +950,24 @@ content-blocking-etp-standard-desc = Ausgewogen zwischen Schutz und Leistung. Se
 content-blocking-etp-strict-desc = Stärkerer Schutz, einige Websites oder mancher Inhalt funktioniert eventuell nicht.
 content-blocking-etp-custom-desc = Wählen Sie, welche Art von Skripten zur Aktivitätenverfolgung und sonstige Inhalte blockiert werden.
 content-blocking-private-windows = Inhalte zur Aktivitätenverfolgung in privaten Fenstern
+content-blocking-cross-site-cookies = Seitenübergreifende Cookies
 content-blocking-cross-site-tracking-cookies = Cookies zur seitenübergreifenden Aktivitätenverfolgung
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies zur seitenübergreifenden Aktivitätenverfolgung, dabei verbleibende Cookies isolieren
 content-blocking-social-media-trackers = Skripte zur Aktivitätenverfolgung durch soziale Netzwerke
 content-blocking-all-cookies = Alle Cookies
 content-blocking-unvisited-cookies = Cookies von nicht besuchten Websites
-content-blocking-all-windows-trackers = Erkannte Elemente zur Aktivitätenverfolgung in allen Fenstern
 content-blocking-all-windows-tracking-content = Inhalte zur Aktivitätenverfolgung in allen Fenstern
 content-blocking-all-third-party-cookies = Alle Cookies von Drittanbietern
 content-blocking-cryptominers = Heimliche Digitalwährungsberechner (Krypto-Miner)
 content-blocking-fingerprinters = Identifizierer (Fingerprinter)
 content-blocking-warning-title = Achtung!
-content-blocking-warning-description = Das Blockieren von Inhalten kann bei einigen Websites zu Problemen führen. Das Deaktivieren des Blockierens für von Ihnen vertraute Seiten ist ganz einfach.
-content-blocking-learn-how = Erfahren Sie mehr
-content-blocking-and-isolating-etp-warning-description = Das Blockieren von Skripten zur Aktivitätenverfolgung und das Isolieren von Cookies kann Auswirkungen auf das Funktionieren einiger Websites haben. Laden Sie eine Seite einschließlich Skripten zur Aktivitätenverfolgung neu, damit der komplette Inhalte geladen wird.
+content-blocking-and-isolating-etp-warning-description = Das Blockieren von Skripten zur Aktivitätenverfolgung und das Isolieren von Cookies kann Auswirkungen auf das Funktionieren einiger Websites haben. Laden Sie eine Seite einschließlich Skripten zur Aktivitätenverfolgung neu, damit der komplette Inhalt geladen wird.
+content-blocking-and-isolating-etp-warning-description-2 = Diese Einstellung kann dazu führen, dass einige Websites nicht korrekt Inhalte anzeigen oder funktionieren. Wenn eine Website defekt zu sein scheint, können Sie den Schutz vor Aktivitätenverfolgung für diese Website deaktivieren, um alle Inhalte zu laden.
 content-blocking-warning-learn-how = Weitere Informationen
 content-blocking-reload-description = Um die Änderungen anzuwenden, müssen alle Tabs neu geladen werden.
 content-blocking-reload-tabs-button =
     .label = Alle Tabs neu laden
     .accesskey = T
-content-blocking-trackers-label =
-    .label = Elemente zur Aktivitätenverfolgung
-    .accesskey = E
 content-blocking-tracking-content-label =
     .label = Inhalte zur Aktivitätenverfolgung
     .accesskey = n
@@ -1049,12 +1026,6 @@ permissions-notification-link = Weitere Informationen
 permissions-notification-pause =
     .label = Benachrichtigungen bis zum Neustart von { -brand-short-name } deaktivieren
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Automatische Wiedergabe von Audio-Inhalten verhindern
-    .accesskey = u
-permissions-block-autoplay-media-exceptions =
-    .label = Ausnahmen…
-    .accesskey = A
 permissions-autoplay = Automatische Wiedergabe
 permissions-autoplay-settings =
     .label = Einstellungen…
@@ -1091,7 +1062,7 @@ collection-studies =
     .label = { -brand-short-name } das Installieren und Durchführen von Studien erlauben
 collection-studies-link = { -brand-short-name }-Studien ansehen
 addon-recommendations =
-    .label = Personalisierte Erweiterungsempfehlungen durch { -brand-short-name }
+    .label = Personalisierte Erweiterungsempfehlungen durch { -brand-short-name } erlauben
 addon-recommendations-link = Weitere Informationen
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
@@ -1161,6 +1132,18 @@ space-alert-under-5gb-ok-button =
     .label = OK
     .accesskey = O
 space-alert-under-5gb-message = { -brand-short-name } verfügt über nur noch wenig freien Speicherplatz. Website-Inhalte werden vielleicht nicht richtig angezeigt. Besuchen Sie "Weitere Informationen", um die Speichernutzung für ein besseres Weberlebnis zu optimieren.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Nur-HTTPS-Modus
+httpsonly-description = HTTPS bietet eine sichere, verschlüsselte Verbindung zwischen { -brand-short-name } und den von Ihnen besuchten Websites. Die meisten Websites unterstützen HTTPS und wenn der Nur-HTTPS-Modus aktiviert ist, wird { -brand-short-name } alle Verbindungen zu HTTPS aufrüsten.
+httpsonly-learn-more = Weitere Informationen
+httpsonly-radio-enabled =
+    .label = Nur-HTTPS-Modus in allen Fenstern aktivieren
+httpsonly-radio-enabled-pbm =
+    .label = Nur-HTTPS-Modus nur in privaten Fenstern aktivieren
+httpsonly-radio-disabled =
+    .label = Nur-HTTPS-Modus nicht aktivieren
 
 ## The following strings are used in the Download section of settings
 

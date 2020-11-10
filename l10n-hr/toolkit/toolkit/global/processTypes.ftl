@@ -4,13 +4,9 @@
 
 process-type-web = Web sadržaj
 
-# process used to run privileged pages,
-# such as about:home
-process-type-privileged = Povlašteni sadržaj
-
 # process used to run privileged about pages,
 # such as about:home
-process-type-privilegedabout = Povlašteni O nama
+process-type-privilegedabout = Povlaštene informacije
 
 # process used to run privileged mozilla pages,
 # such as accounts.firefox.com
@@ -33,3 +29,8 @@ process-type-webisolated = Izolirani web sadržaj
 # graphics acceleration
 process-type-gpu = GPU
 
+# process used to perform network operations
+process-type-socket = Utičnica
+
+# process preallocated; may change to other types
+process-type-prealloc = Unaprijed alocirano

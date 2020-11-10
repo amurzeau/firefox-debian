@@ -17,6 +17,12 @@ extensions-name = Ime
 extensions-enabled = Vključeno
 extensions-version = Različica
 extensions-id = ID
+support-addons-title = Dodatki
+support-addons-name = Ime
+support-addons-type = Vrsta
+support-addons-enabled = Omogočen
+support-addons-version = Različica
+support-addons-id = ID
 security-software-title = Varnostna programska oprema
 security-software-type = Vrsta
 security-software-name = Ime
@@ -62,6 +68,7 @@ app-basics-service-workers = Registrirani Service Workerji
 app-basics-profiles = Profili
 app-basics-launcher-process-status = Proces zaganjača
 app-basics-multi-process-support = Večprocesna okna
+app-basics-fission-support = Fission Windows
 app-basics-remote-processes-count = Oddaljeni procesi
 app-basics-enterprise-policies = Pravilniki za podjetja
 app-basics-location-service-key-google = Ključ lokacijskih storitev Google
@@ -74,6 +81,12 @@ show-dir-label =
         [windows] Odpri mapo
        *[other] Odpri mapo
     }
+environment-variables-title = Spremenljivke okolja
+environment-variables-name = Ime
+environment-variables-value = Vrednost
+experimental-features-title = Poskusne zmogljivosti
+experimental-features-name = Ime
+experimental-features-value = Vrednost
 modified-key-prefs-title = Pomembne spremenjene nastavitve
 modified-prefs-name = Ime
 modified-prefs-value = Vrednost
@@ -98,8 +111,6 @@ graphics-desktop-environment = Namizno okolje
 place-database-title = Podatkovna zbirka mest
 place-database-integrity = Celovitost
 place-database-verify-integrity = Preveri celovitost
-js-title = JavaScript
-js-incremental-gc = Inkrementalen GC
 a11y-title = Dostopnost
 a11y-activated = Vključeno
 a11y-force-disabled = Prepreči dostopnost
@@ -129,7 +140,6 @@ restart-button-label = Ponovno zaženi
 
 audio-backend = Zvočno zaledje
 max-audio-channels = Največje število kanalov
-channel-layout = Prednostna razporeditev kanalov
 sample-rate = Prednostna hitrost vzorčenja
 roundtrip-latency = Zakasnitev povratnega potovanja (standardni odklon)
 media-title = Predstavnost
@@ -276,11 +286,13 @@ blocklisted-bug = Dodano na seznam zavrnjenih zaradi znanih težav
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = hrošč { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Dodano na seznam zavrnjenih zaradi znanih težav: <a data-l10n-name="bug-link">hrošč { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Dodano na seznam zavrnjenih; koda napake { $failureCode }
 d3d11layers-crash-guard = Sestavljalnik D3D11
 d3d11video-crash-guard = Videodekodirnik D3D11
-d3d9video-crash-buard = Videodekodirnik D3D9
 d3d9video-crash-guard = Videodekodirnik D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Videodekodirnik WMF VPX
@@ -328,6 +340,14 @@ multi-process-status-6 = Onemogočeno zaradi nepodprtega vnosa besedila
 multi-process-status-7 = Onemogočili dodatki
 multi-process-status-8 = Prisilno onemogočeno
 multi-process-status-unknown = Neznano stanje
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-enabled-by-default = Privzeto omogočeno
+fission-status-disabled-by-default = Privzeto onemogočeno
+fission-status-enabled-by-user-pref = Omogočil uporabnik
+fission-status-disabled-by-user-pref = Onemogočil uporabnik
 async-pan-zoom = Asinhrono pomikanje/povečava
 apz-none = brez
 wheel-enabled = vnos s koleščkom omogočen
@@ -348,3 +368,12 @@ touch-warning = asinhroni vnos na dotik onemogočen zaradi nedpodprte nastavitve
 policies-inactive = Nedejavno
 policies-active = Dejavno
 policies-error = Napaka
+
+## Printing section
+
+support-printing-title = Tiskanje
+support-printing-troubleshoot = Odpravljanje težav
+support-printing-clear-settings-button = Počistite shranjene nastavitve tiskanja
+support-printing-modified-settings = Spremenjene nastavitve tiskanja
+support-printing-prefs-name = Ime
+support-printing-prefs-value = Vrednost

@@ -2,8 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-all-tabs-menu-undo-close-tab =
-    .label = Mở lại thẻ vừa đóng
 all-tabs-menu-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -14,9 +12,9 @@ all-tabs-menu-undo-close-tabs =
 all-tabs-menu-search-tabs =
     .label = Tìm kiếm thẻ
 all-tabs-menu-new-user-context =
-    .label = Thẻ ngăn chứa mới
+    .label = Ngăn chứa thẻ mới
 all-tabs-menu-hidden-tabs =
     .label = Thẻ đã ẩn
 all-tabs-menu-manage-user-context =
-    .label = Quản lý Ngăn chứa
+    .label = Quản lý ngăn chứa
     .accesskey = O

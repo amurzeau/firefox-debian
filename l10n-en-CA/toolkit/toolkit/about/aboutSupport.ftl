@@ -17,6 +17,12 @@ extensions-name = Name
 extensions-enabled = Enabled
 extensions-version = Version
 extensions-id = ID
+support-addons-title = Add-ons
+support-addons-name = Name
+support-addons-type = Type
+support-addons-enabled = Enabled
+support-addons-version = Version
+support-addons-id = ID
 security-software-title = Security Software
 security-software-type = Type
 security-software-name = Name
@@ -62,6 +68,7 @@ app-basics-service-workers = Registered Service Workers
 app-basics-profiles = Profiles
 app-basics-launcher-process-status = Launcher Process
 app-basics-multi-process-support = Multiprocess Windows
+app-basics-fission-support = Fission Windows
 app-basics-remote-processes-count = Remote Processes
 app-basics-enterprise-policies = Enterprise Policies
 app-basics-location-service-key-google = Google Location Service Key
@@ -74,6 +81,12 @@ show-dir-label =
         [windows] Open Folder
        *[other] Open Directory
     }
+environment-variables-title = Environment Variables
+environment-variables-name = Name
+environment-variables-value = Value
+experimental-features-title = Experimental Features
+experimental-features-name = Name
+experimental-features-value = Value
 modified-key-prefs-title = Important Modified Preferences
 modified-prefs-name = Name
 modified-prefs-value = Value
@@ -98,8 +111,6 @@ graphics-desktop-environment = Desktop Environment
 place-database-title = Places Database
 place-database-integrity = Integrity
 place-database-verify-integrity = Verify Integrity
-js-title = JavaScript
-js-incremental-gc = Incremental GC
 a11y-title = Accessibility
 a11y-activated = Activated
 a11y-force-disabled = Prevent Accessibility
@@ -129,7 +140,6 @@ restart-button-label = Restart
 
 audio-backend = Audio Backend
 max-audio-channels = Max Channels
-channel-layout = Preferred Channel Layout
 sample-rate = Preferred Sample Rate
 roundtrip-latency = Roundtrip latency (standard deviation)
 media-title = Media
@@ -266,11 +276,13 @@ blocklisted-bug = Blocklisted due to known issues
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Blocklisted due to known issues: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Blocklisted; failure code { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video Decoder
-d3d9video-crash-buard = D3D9 Video Decoder
 d3d9video-crash-guard = D3D9 Video Decoder
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Video Decoder
@@ -318,6 +330,20 @@ multi-process-status-6 = Disabled by unsupported text input
 multi-process-status-7 = Disabled by add-ons
 multi-process-status-8 = Disabled forcibly
 multi-process-status-unknown = Unknown status
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Disabled by experiment
+fission-status-experiment-treatment = Enabled by experiment
+fission-status-disabled-by-e10s-env = Disabled by environment
+fission-status-enabled-by-env = Enabled by environment
+fission-status-disabled-by-safe-mode = Disabled by safe mode
+fission-status-enabled-by-default = Enabled by default
+fission-status-disabled-by-default = Disabled by default
+fission-status-enabled-by-user-pref = Enabled by user
+fission-status-disabled-by-user-pref = Disabled by user
+fission-status-disabled-by-e10s-other = E10s disabled
 async-pan-zoom = Asynchronous Pan/Zoom
 apz-none = none
 wheel-enabled = wheel input enabled
@@ -338,3 +364,12 @@ touch-warning = async touch input disabled due to unsupported pref: { $preferenc
 policies-inactive = Inactive
 policies-active = Active
 policies-error = Error
+
+## Printing section
+
+support-printing-title = Printing
+support-printing-troubleshoot = Troubleshooting
+support-printing-clear-settings-button = Clear saved print settings
+support-printing-modified-settings = Modified print settings
+support-printing-prefs-name = Name
+support-printing-prefs-value = Value

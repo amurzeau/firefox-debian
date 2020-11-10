@@ -28,10 +28,6 @@ serviceworker-worker-unregister = ביטול רישום
 serviceworker-worker-debug = ניפוי שגיאות
     .title = ניתן לנפות שגיאות רק ב־service workers פעילים
 
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = התחלה
-
 # Text displayed for the updated time of the service worker. The <time> element will
 # display the last update time of the service worker script.
 serviceworker-worker-updated = התעדכן ב־<time>{ DATETIME($date, month: "long", year: "numeric", day: "numeric", hour: "numeric", minute: "numeric", second: "numeric") }</time>
@@ -52,10 +48,6 @@ serviceworker-worker-status-running = פועל
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = נעצר
 
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = בהליך הרשמה
-
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = עליך לרשום Service Worker כדי לחקור אותו כאן. <a>מידע נוסף</a>
@@ -71,6 +63,16 @@ serviceworker-empty-suggestions-console = לחפש אחר שגיאות במסו�
 # Suggestion to go to about:debugging in order to see Service Workers for all domains.
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = לחקור Service Workers ממתחמים אחרים. <a>פתיחת about:debugging</a>
+
+# Text displayed when no service workers are visible for the current page.
+serviceworker-empty-intro2 = לא נמצאו service workers
+
+# Link will open https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
+serviceworker-empty-intro-link = מידע נוסף
+
+# Suggestion to go to about:debugging in order to see Service Workers for all domains.
+# Link will open about:debugging in a new tab.
+serviceworker-empty-suggestions-aboutdebugging2 = הצגת service workers ממתחמים אחרים
 
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = שגיאות ואזהרות

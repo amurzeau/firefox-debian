@@ -14,6 +14,12 @@ extensions-name = Mě
 extensions-enabled = Zmóžnjony
 extensions-version = Wersija
 extensions-id = ID
+support-addons-title = Dodanki
+support-addons-name = Mě
+support-addons-type = Typ
+support-addons-enabled = Zmóžnjony
+support-addons-version = Wersija
+support-addons-id = ID
 security-software-title = Wěstotna software
 security-software-type = Typ
 security-software-name = Mě
@@ -59,6 +65,7 @@ app-basics-service-workers = Zregistrěrowane "service workers"
 app-basics-profiles = Profile
 app-basics-launcher-process-status = Startowański proces
 app-basics-multi-process-support = Multiprocesowe wokna
+app-basics-fission-support = Wokna Fission
 app-basics-remote-processes-count = Zdalone procese
 app-basics-enterprise-policies = Pśedewześowe pšawidła
 app-basics-location-service-key-google = Kluc stojnišćoweje słužby Google
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] Zarědnik wócyniś
        *[other] Zarědnik wócyniś
     }
+environment-variables-title = Wokolinowe wariable
+environment-variables-name = Mě
+environment-variables-value = Gódnota
+experimental-features-title = Eksperimentelne funkcije
+experimental-features-name = Mě
+experimental-features-value = Gódnota
 modified-key-prefs-title = Wažne změnjone nastajenja
 modified-prefs-name = Mě
 modified-prefs-value = Gódnota
@@ -95,8 +108,6 @@ graphics-desktop-environment = Desktopowa wokolina
 place-database-title = Datowa banka historije a cytańskich znamjenjow
 place-database-integrity = Integrita
 place-database-verify-integrity = Integritu pśeglědowaś
-js-title = JavaScript
-js-incremental-gc = Inkrementelny GC
 a11y-title = Bźezbariernosć
 a11y-activated = Aktiwěrowany
 a11y-force-disabled = Bźezbarjernosći zajźowaś
@@ -126,7 +137,6 @@ restart-button-label = Znowego startowaś
 
 audio-backend = Awdiobackend
 max-audio-channels = Maksimalna licba kanalow
-channel-layout = Preferěrowane kanalowe wugótowanje
 sample-rate = Preferěrowana wótsmasowańska rata
 roundtrip-latency = Woběgowa latenca (standardne wótchylenje)
 media-title = Medije
@@ -273,11 +283,13 @@ blocklisted-bug = W blokěrowańskej lisćinje znatych problemow dla
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = programowa zmólka { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = W blokěrowańskej lisćinje znatych problemow dla: <a data-l10n-name="bug-link">programowa zmólka { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = W blokěrowańskej lisćinje; zmólkowy kod { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video Decoder
-d3d9video-crash-buard = D3D9 Video Decoder
 d3d9video-crash-guard = D3D9 Video Decoder
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Wideodekoder WMF VPX
@@ -325,6 +337,20 @@ multi-process-status-6 = Pśez njepódpěrane tekstowe zapódaśe znjemóžnjony
 multi-process-status-7 = Pśez dodanki znjemóžnjony
 multi-process-status-8 = Namócnje znjemóžnjony
 multi-process-status-unknown = Njeznaty status
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Pśez eksperiment znjemóžnjony
+fission-status-experiment-treatment = Pśez eksperiment zmóžnjony
+fission-status-disabled-by-e10s-env = Pśez wokolinu znjemóžnjony
+fission-status-enabled-by-env = Pśez wokolinu zmóžnjony
+fission-status-disabled-by-safe-mode = Pśez wěsty modus znjemóžnjony
+fission-status-enabled-by-default = Pó standarźe zmóžnjony
+fission-status-disabled-by-default = Pó standarźe znjemóžnjony
+fission-status-enabled-by-user-pref = Wót wužywarja zmóžnjony
+fission-status-disabled-by-user-pref = Wót wužywarja znjezmóžnjony
+fission-status-disabled-by-e10s-other = E10s znjemóžnjony
 async-pan-zoom = Asynchrone pśesuwanje/skalěrowanje
 apz-none = žeden
 wheel-enabled = zapódaśe z kólaskom zmóžnjone
@@ -332,7 +358,7 @@ touch-enabled = zapódaśe pśez dotyknjenje zmóžnjone
 drag-enabled = śěgnjenje suwańskeje rědki zmóžnjone
 keyboard-enabled = tastatura zmóžnjona
 autoscroll-enabled = awtomatiske kulanje zmóžnjone
-zooming-enabled = pózlažke šćipate skalěrowanje zmóžnjone
+zooming-enabled = pózlažke dwójopalcowe skalěrowanje zmóžnjone
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference
@@ -345,3 +371,12 @@ touch-warning = asynchrone zapódaśe pśez dotyknjenje jo se njepódpěranego n
 policies-inactive = Njeaktiwny
 policies-active = Aktiwny
 policies-error = Zmólka
+
+## Printing section
+
+support-printing-title = Śišćanje
+support-printing-troubleshoot = Rozwězanje problemow
+support-printing-clear-settings-button = Skłaźone śišćaŕske nastajenja wulašowaś
+support-printing-modified-settings = Změnjone śišćaŕske nastajenja
+support-printing-prefs-name = Mě
+support-printing-prefs-value = Gódnota

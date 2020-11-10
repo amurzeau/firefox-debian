@@ -10,6 +10,8 @@ preferences-title =
             [windows] Dewisiadau
            *[other] Dewisiadau
         }
+category-list =
+    .aria-label = Categorïau
 pane-general-title = Cyffredinol
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,7 +43,6 @@ composition-addressing-header = Cyfeirio
 privacy-main-header = Preifatrwydd
 privacy-passwords-header = Cyfrineiriau
 privacy-junk-header = Sbam
-privacy-data-collection-header = Casglu a Defnydd Data
 collection-header = Casglu a Defnyddio Data { -brand-short-name }
 collection-description = Rydym yn ceisio darparu dewisiadau i chi a chasglu dim ond beth sydd ei angen arnom i ddarparu a gwella { -brand-short-name } ar gyfer pawb. Rydym yn gofyn caniatâd bob tro cyn derbyn manylion personol.
 collection-privacy-notice = Hysbysiad Preifatrwydd
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = G
 confirm-messenger-language-change-description = Ailgychwyn { -brand-short-name } i osod y newidiadau hyn
 confirm-messenger-language-change-button = Gosod ac Ailgychwyn
-update-pref-write-failure-title = Methiant ysgrifennu
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Methu cadw'r dewis. Methu ysgrifennu at ffeil: { $path }
 update-setting-write-failure-title = Gwall wrth gadw dewisiadau Diweddaru
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -91,12 +88,11 @@ update-in-progress-ok-button = &Dileu
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Parhau
+account-button = Gosodiadau'r Cyfrif
 addons-button = Estyniadau a Themâu
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Gwiriwch eich hunaniaeth i greu Prif Gyfrinair.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = I greu Prif Gyfrinair, rhowch eich manylion mewngofnodi Windows. Mae hyn yn helpu i amddiffyn diogelwch eich cyfrifon.
 # This message can be seen by trying to add a Master Password.
@@ -104,6 +100,13 @@ master-password-os-auth-dialog-message-win = I greu Prif Gyfrinair, rhowch eich 
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = creu Prif Gyfrinair
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = I greu Prif Gyfrinair, nodwch fanylion eich mewngofnodi Windows. Mae hyn yn helpu i ddiogelu eich cyfrifon.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = creu Prif Gyfrinair
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -541,6 +544,15 @@ master-password-label =
 master-password-button =
     .label = Newid y Prif Gyfrinair…
     .accesskey = N
+primary-password-description = Mae Prif Gyfrinair yn diogelu eich holl gyfrineiriau, ond rhaid i chi ei osod unwaith y sesiwn.
+primary-password-label =
+    .label = Defnyddio Prif Gyfrinair
+    .accesskey = D
+primary-password-button =
+    .label = Newid y Prif Gyfrinair…
+    .accesskey = N
+forms-primary-pw-fips-title = Rydych ym modd FIPS. Mae FIPS angen Prif Gyfrinair nad yw'n wag.
+forms-master-pw-fips-desc = Methodd Newid eich Cyfrinair
 junk-description = Yma gallwch osod eich gosodiadau sbam rhagosodedig. Mae modd ffurfweddu gosodiadau penodol ar gyfer sbam yn Gosodiadau Cyfrif.
 junk-label =
     .label = Pan fyddai'n marcio negeseuon fel sbam:

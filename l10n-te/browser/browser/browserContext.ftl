@@ -121,6 +121,10 @@ main-context-menu-save-link =
     .label = లింకుని ఇలా భద్రపరచు…
     .accesskey = k
 
+main-context-menu-save-link-to-pocket =
+    .label = లంకెను { -pocket-brand-name }కు భద్రపరుచు
+    .accesskey = o
+
 ## The access keys for "Copy Link Location" and "Copy Email Address"
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
@@ -208,6 +212,12 @@ main-context-menu-media-video-leave-fullscreen =
     .label = నిండు తెరను వదలివెళ్ళు
     .accesskey = u
 
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-pip =
+    .label = బొమ్మలో-బొమ్మ
+    .accesskey = u
+
 main-context-menu-image-reload =
     .label = బొమ్మని మళ్ళీ లోడుచేయి
     .accesskey = R
@@ -284,6 +294,10 @@ main-context-menu-plugin-hide =
     .label = ఈ ప్లగిన్ను దాచు
     .accesskey = H
 
+main-context-menu-save-to-pocket =
+    .label = { -pocket-brand-name }‌లో భద్రపరుచు
+    .accesskey = k
+
 main-context-menu-send-to-device =
     .label = పేజీని పరికరానికి పంపు
     .accesskey = D
@@ -291,6 +305,10 @@ main-context-menu-send-to-device =
 main-context-menu-view-background-image =
     .label = వెనుతలపు బొమ్మని చూడండి
     .accesskey = w
+
+main-context-menu-generate-new-password =
+    .label = సృష్టించిన సంకేతపదాన్ని వాడు…
+    .accesskey = G
 
 main-context-menu-keyword =
     .label = ఈ శోధనకు కీలక పదాన్ని చేర్చండి…
@@ -364,7 +382,9 @@ main-context-menu-inspect-element =
     .label = మూలకం విచారణచేయి
     .accesskey = Q
 
+main-context-menu-inspect-a11y-properties =
+    .label = ప్రాప్యత లక్షణాలను పరిశీలించండి
+
 main-context-menu-eme-learn-more =
     .label = DRM గురించి ఇంకా తెలుసుకోండి…
     .accesskey = D
-

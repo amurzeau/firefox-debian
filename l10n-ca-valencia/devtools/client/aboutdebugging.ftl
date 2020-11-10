@@ -138,6 +138,11 @@ about-debugging-network-locations-add-button = Afig
 # Text to display when there are no locations to show.
 about-debugging-network-locations-empty-text = Encara no s'ha afegit cap ubicació de xarxa.
 
+# Text of the label for the text input that allows users to add new network locations in
+# the Connect page. A host is a hostname and a port separated by a colon, as suggested by
+# the input's placeholder "localhost:6080".
+about-debugging-network-locations-host-input-label = Amfitrió
+
 # Text of a button displayed next to existing network locations in the Connect page.
 # Clicking on it removes the network location from the list.
 about-debugging-network-locations-remove-button = Elimina
@@ -237,8 +242,8 @@ about-debugging-extension-location =
 about-debugging-extension-id =
     .label = ID d'extensió
 
-# This string is displayed as a label of the button that starts a service worker.
-about-debugging-worker-action-start = Inicia
+# This string is displayed as a label of the button that unregisters a service worker.
+about-debugging-worker-action-unregister = Suprimeix el registre
 
 # Displayed for service workers in runtime pages that are currently running (service
 # worker instance is active).

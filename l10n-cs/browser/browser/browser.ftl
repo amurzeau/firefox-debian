@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Méně psaní, více výsledků: používejte { $engineName } přímo z adresního řádku.
 urlbar-search-tips-redirect-2 = Zadejte do adresního řádku vyhledávaný text a uvidíte návrhy z vyhledávače { $engineName } a vaší historie prohlížení.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Záložky
+urlbar-search-mode-tabs = Otevřené panely
+urlbar-search-mode-history = Historie prohlížení
+
 ##
 
 urlbar-geolocation-blocked =
@@ -156,6 +162,55 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Odebrat rozšíření
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Poslat panel do zařízení
+            [few] Poslat { $tabCount } panely do zařízení
+           *[other] Poslat { $tabCount } panelů do zařízení
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Poslat panel do zařízení
+            [few] Poslat { $tabCount } panely do zařízení
+           *[other] Poslat { $tabCount } panelů do zařízení
+        }
+page-action-pocket-panel =
+    .label = Uložit stránku do { -pocket-brand-name(case: "gen") }
+page-action-copy-url-panel =
+    .label = Kopírovat odkaz
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopírovat odkaz
+page-action-email-link-panel =
+    .label = Poslat odkaz e-mailem…
+page-action-email-link-urlbar =
+    .tooltiptext = Poslat odkaz e-mailem…
+page-action-share-url-panel =
+    .label = Sdílet
+page-action-share-url-urlbar =
+    .tooltiptext = Sdílet
+page-action-share-more-panel =
+    .label = Více…
+page-action-send-tab-not-ready =
+    .label = Synchronizace zařízení…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Připnout panel
+page-action-pin-tab-urlbar =
+    .tooltiptext = Připnout panel
+page-action-unpin-tab-panel =
+    .label = Odepnout panel
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Odepnout panel
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +222,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Vyhledat pomocí
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +240,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Nastavit jako výchozí vyhledávač pro anonymní prohlížení
     .accesskey = p
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Záložky ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Otevřené panely ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Historie prohlížení ({ $restrict })
 
 ## Bookmark Panel
 
@@ -316,8 +391,42 @@ enable-devtools-popup-description = Pokud chcete používat zkratku F12, otevře
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Zadejte webovou adresu nebo dotaz pro vyhledávač
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Zadejte webovou adresu nebo dotaz pro vyhledávač
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Vyhledat na webu
+    .aria-label = Vyhledat pomocí { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Zadejte hledaný výraz
+    .aria-label = Vyhledat na serveru { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Zadejte hledaný výraz
+    .aria-label = Hledat v záložkách
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Zadejte hledaný výraz
+    .aria-label = Hledat v historii
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Zadejte hledaný výraz
+    .aria-label = Hledat v otevřených panelech
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Zadejte webovou adresu nebo dotaz pro vyhledávač { $name }
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Prohlížeč je ovládán vzdáleně
 urlbar-permissions-granted =
@@ -333,3 +442,46 @@ urlbar-page-action-button =
     .tooltiptext = Akce stránky
 urlbar-pocket-button =
     .tooltiptext = Uloží do { -pocket-brand-name(case: "gen") }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Vyhledat v anonymním okně pomocí { $engine }
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Vyhledat v anonymním okně
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Vyhledat pomocí { $engine }
+urlbar-result-action-switch-tab = Přepnout na panel
+urlbar-result-action-visit = Navštívit
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Hledat v záložkách
+urlbar-result-action-search-history = Hledat v historii
+urlbar-result-action-search-tabs = Najít panel
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> je teď v režimu celé obrazovky
+fullscreen-warning-no-domain = Tento dokument je teď v režimu celé obrazovky
+fullscreen-exit-button = Ukončit režim celé obrazovky (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Ukončit režim celé obrazovky (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> má kontrolu nad vaším kurzorem. Pro odebrání kontroly stiskněte klávesu Esc.
+pointerlock-warning-no-domain = Tento dokument má kontrolu nad vaším kurzorem. Pro odebrání kontroly stiskněte klávesu Esc.

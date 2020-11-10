@@ -53,10 +53,6 @@ inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> не в
 
 inactive-css-not-grid-or-flex-container-fix = Спробуйте додати <strong>display:grid</strong> або <strong>display:flex</strong>. { learn-more }
 
-inactive-css-not-grid-or-flex-item-fix = Спробуйте додати <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong> або <strong>display:inline-flex</strong>. { learn-more }
-
-inactive-css-not-grid-item-fix = Спробуйте додати <strong>display:grid</strong> або <strong>display:inline-grid</strong> до елемента вищого рівня. { learn-more }
-
 inactive-css-not-grid-or-flex-container-or-multicol-container-fix = Спробуйте додати <strong>display:grid</strong>, <strong>display:flex</strong>, або <strong>columns:2</strong>. { learn-more }
 
 inactive-css-not-grid-or-flex-item-fix-2 = Спробуйте додати <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong>, або <strong>display:inline-flex</strong>. { learn-more }
@@ -64,8 +60,6 @@ inactive-css-not-grid-or-flex-item-fix-2 = Спробуйте додати <stro
 inactive-css-not-grid-item-fix-2 = Спробуйте додати <strong>display:grid</strong> або <strong>display:inline-grid</strong> до елемента вищого рівня. { learn-more }
 
 inactive-css-not-grid-container-fix = Спробуйте додати <strong>display:grid</strong> або <strong>display:inline-grid</strong>. { learn-more }
-
-inactive-css-not-flex-item-fix = Спробуйте додати <strong>display:flex</strong> або <strong>display:inline-flex</strong> до елемента вищого рівня. { learn-more }
 
 inactive-css-not-flex-item-fix-2 = Спробуйте додати <strong>display:flex</strong> або <strong>display:inline-flex</strong> до елемента вищого рівня. { learn-more }
 
@@ -82,3 +76,26 @@ inactive-css-not-display-block-on-floated-fix = Спробуйте вилучи�
 inactive-css-position-property-on-unpositioned-box-fix = Спробуйте налаштувати його властивість <strong>позиції</strong> на щось інше, ніж <strong>static</strong>. { learn-more }
 
 inactive-text-overflow-when-no-overflow-fix = Спробуйте додати <strong>overflow:hidden</strong>. { learn-more }
+
+## In the Rule View when a CSS property may have compatibility issues with other browsers
+## we display an icon. When this icon is hovered this message is displayed to explain why
+## the property is incompatible and the platforms it is incompatible on.
+## Variables:
+##   $property (string) - A CSS declaration name e.g. "-moz-user-select" that can be a platform specific alias.
+##   $rootProperty (string) - A raw CSS property name e.g. "user-select" that is not a platform specific alias.
+
+css-compatibility-default-message = <strong>{ $property }</strong> не підтримується такими браузерами:
+
+css-compatibility-deprecated-experimental-message = <strong>{ $property }</strong> була експериментальною властивістю, яка тепер застаріла за стандартами W3C. Не підтримується такими браузерами:
+
+css-compatibility-deprecated-experimental-supported-message = <strong>{ $property }</strong> була експериментальною властивістю, яка тепер застаріла за стандартами W3C.
+
+css-compatibility-deprecated-message = <strong>{ $property }</strong> застаріла за стандартами W3C. Не підтримується такими браузерами:
+
+css-compatibility-deprecated-supported-message = <strong>{ $property }</strong> застаріла за стандартами W3C.
+
+css-compatibility-experimental-message = <strong>{ $property }</strong> - експериментальна властивість. Не підтримується такими браузерами:
+
+css-compatibility-experimental-supported-message = <strong>{ $property }</strong> - експериментальна властивість.
+
+css-compatibility-learn-more-message = <span data-l10n-name="link">Докладніше</span> про <strong>{ $rootProperty }</strong>

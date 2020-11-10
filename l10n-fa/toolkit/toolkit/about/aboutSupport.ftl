@@ -15,6 +15,9 @@ extensions-name = نام
 extensions-enabled = فعال
 extensions-version = نسخه
 extensions-id = شناسه
+support-addons-name = نام
+support-addons-version = نسخه
+support-addons-id = شناسه
 security-software-title = نرم‌افزار امنیتی
 security-software-type = نوع
 security-software-name = نام
@@ -92,8 +95,6 @@ graphics-window-protocol = پروتکل پنجره
 place-database-title = پایگاه مکان‌ها
 place-database-integrity = یکپارچگی
 place-database-verify-integrity = بررسی یکپارچگی
-js-title = جاوا اسکریپت
-js-incremental-gc = GC افزایشی
 a11y-title = دسترسی‌پذیری
 a11y-activated = فعال‌ شده
 a11y-force-disabled = دسترسی را متوقف کن
@@ -118,9 +119,7 @@ restart-in-safe-mode-label = راه‌اندازی مجدد، همراه با غ
 
 audio-backend = پسانه صوتی
 max-audio-channels = بیشترین میزان کانال‌ها
-channel-layout = لایه کانال ترجیح داده شده
 sample-rate = نرخ مثال ترجیح داده شده
-
 media-title = رسانه
 media-output-devices-title = دستگاه‌های خروجی
 media-input-devices-title = دستگاه‌های ورودی
@@ -134,8 +133,6 @@ media-device-channels = کانال‌ها
 media-device-rate = ارزیابی
 media-device-latency = تاخیر
 media-capabilities-title = قابلیت‌های رسانه
-
-
 
 ##
 
@@ -157,8 +154,6 @@ intl-regional-prefs = ترجیحات منطقه‌ای
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
-
-
 
 
 ##
@@ -268,7 +263,6 @@ unknown-failure = مسدود شده،‌ کد خطا { $failureCode }
 
 d3d11layers-crash-guard = حروفچین D3D11
 d3d11video-crash-guard = رمزگشا فیلم D3D11
-d3d9video-crash-buard = رمزگشا فیلم D3D9
 d3d9video-crash-guard = رمزگشا فیلم D3D9
 glcontext-crash-guard = OpenGL
 

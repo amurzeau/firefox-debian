@@ -2,6 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
+# This file gets parsed into a JS dictionary of all known error message ids in
+# gen_aboutneterror_codes.py . If we end up needing fluent attributes or
+# refactoring them in some way, the script will need updating.
+
 # Variables:
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
@@ -199,7 +205,7 @@ sec-internal-only = **專供內部使用的模組**
 sec-error-invalid-key = 金鑰不支援所請求的操作。
 sec-error-unknown-critical-extension = 憑證含未知的 Critical 擴充欄位。
 sec-error-old-crl = 新憑證廢止清冊不能比目前的清冊還晚。
-sec-error-no-email-cert = 未加密或簽章: 您尚未擁有 Email 憑證。
+sec-error-no-email-cert = 未加密或簽署: 您尚未擁有 Email 憑證。
 sec-error-no-recipient-certs-query = 未加密: 您尚未擁有每個收件人的憑證。
 sec-error-not-a-recipient = 無法解密: 您不是收件人或是找不到相符的憑證或私密金鑰。
 sec-error-pkcs7-keyalg-mismatch = 無法解密: 金鑰加密演算法和您的憑證不符。

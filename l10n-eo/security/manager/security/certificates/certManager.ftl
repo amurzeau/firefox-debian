@@ -18,6 +18,7 @@ certmgr-mine = Vi havas atestilojn de tiuj ĉi organizoj, kiuj identigas vin
 certmgr-remembered = Tiuj ĉi atestiloj estas tuzataj por identigi vin antaŭ retejoj
 certmgr-people = Vi havas konservitajn atestilojn, kiuj identigas tiujn ĉi personojn
 certmgr-servers = Vi havas konservitajn atestilojn, kiu identigas tiujn ĉi servilojn
+certmgr-server = Tiuj registroj identigas esceptojn por atestilaj eraroj
 certmgr-ca = Vi havas konservitajn atestilojn, kiuj identigas tiujn ĉi atestilaj aŭtoritatoj
 certmgr-detail-general-tab-title =
     .label = Ĝenerala
@@ -161,10 +162,14 @@ delete-ssl-cert-title =
     .title = Forviŝi esceptojn de servilaj atestiloj
 delete-ssl-cert-confirm = Ĉu vi certas ke vi volas forviŝi tiun ĉi servilajn esceptojn?
 delete-ssl-cert-impact = Se vi forviŝas servilan escepton vi remetas la normalajn sekurecajn kontrolojn por tiu servilo kaj postulas ke ĝi uzu validan atestilon.
+delete-ssl-override-title =
+    .title = Forigi esceptojn por atestilaj serviloj
+delete-ssl-override-confirm = Ĉu vi certas ke vi volas forigi tiun ĉi servilan escepton?
+delete-ssl-override-impact = Se vi forigas servilan escepton, vi remetas la normalajn sekurecajn kontrolojn por tiu servilo kaj postulas ke ĝi uzu validan atestilon.
 delete-ca-cert-title =
     .title = Delete or Distrust CA Certificates
-delete-ca-cert-confirm = You have requested to delete these CA certificates. For built-in certificates all trust will be removed, which has the same effect. Are you sure you want to delete or distrust?
-delete-ca-cert-impact = If you delete or distrust a certificate authority (CA) certificate, this application will no longer trust any certificates issued by that CA.
+delete-ca-cert-confirm = Vi petis forigon de la atestiloj de tiuj atestilaj aŭtoritatoj (CA). Por la integritaj atestiloj tio egalas al forigo de fido. Ĉu vi volas forigi tiujn atestilojn aŭ ĉu malfidi ilin?
+delete-ca-cert-impact = Se vi forigas aŭ ne plu fidas atestilon de atestila aŭtoritato (CA), tiu ĉi programo ne plu fidos je iu ajn el la atestiloj eldonitaj de tiu CA.
 delete-email-cert-title =
     .title = Forviŝi retpoŝtajn atestilojn
 delete-email-cert-confirm = Ĉu vi certe volas forviŝi ĉi tiujn personajn retpoŝtajn atestilojn?
@@ -208,6 +213,15 @@ cert-not-verified-issuer-unknown = Ne eblis kontroli ĉi tiun atestilon ĉar la 
 cert-not-verified-ca-invalid = Ne eblis kontroli tiun ĉi atestilon ĉar la atestilo de la CA ne estas valida.
 cert-not-verified_algorithm-disabled = Ne eblis kontroli tiun ĉi atestilon ĉar ĝi estis subskribita per susbkriba algoritmo kiu ne plu estas aktiva ĉar ĝi ne estas sekura.
 cert-not-verified-unknown = Ne eblis kontroli ĉi tiun atestilon pro nekonataj kialoj.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Ne sendi klientan atestilon
+# Used when no cert is stored for an override
+no-cert-stored-for-override = (Ne konservita)
+
+## Used to show whether an override is temporary or permanent
+
+permanent-override = Konstanta
+temporary-override = Provizora
 
 ## Add Security Exception dialog
 

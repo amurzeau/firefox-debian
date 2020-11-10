@@ -52,6 +52,8 @@ about-paragraph = Thunderbird är den ledande plattformsoberoende e-post och kal
 about-paragraph-2 = <b>Thunderbird finansieras av användare som du! Om du gillar Thunderbird kan du göra en donation.</b> Det bästa sättet för dig att se till att Thunderbird förblir tillgängligt är att
 about-donation = göra en donation
 
+about-paragraph-consider-donation = <b>Thunderbird finansieras av användare som du! Om du gillar Thunderbird kan du överväga att göra en donation.</b>Det bästa sättet för dig att se till att Thunderbird förblir tillgängligt är att <a data-l10n-name="donation-link">göra en donation</a>.
+
 explore-link = Utforska funktioner
 support-link = Hjälp
 involved-link = Engagera dig
@@ -63,4 +65,4 @@ search = Sök efter meddelanden
 filter = Hantera meddelandefilter
 nntp-subscription = Hantera prenumerationer på diskussionsgrupper
 rss-subscription = Hantera RSS-prenumerationer
-e2e = End-to-end-kryptering
+e2e = End-to-end kryptering

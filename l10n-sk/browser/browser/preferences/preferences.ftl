@@ -9,13 +9,6 @@ do-not-track-option-default-content-blocking-known =
 do-not-track-option-always =
     .label = Vždy
 
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Možnosti
-           *[other] Možnosti
-        }
-
 pref-page-title =
     { PLATFORM() ->
         [windows] Možnosti
@@ -59,6 +52,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+
+pane-experimental-title = Experimenty aplikácie { -brand-short-name }
+category-experimental =
+    .tooltiptext = Experimenty aplikácie { -brand-short-name }
+pane-experimental-subtitle = Buďte obozretní
+pane-experimental-description = Zmeny v pokročilej konfigurácii môžu ovplyvniť výkon a bezpečnosť aplikácie { -brand-short-name }.
 
 help-button-label = Podpora aplikácie { -brand-short-name }
 addons-button-label = Rozšírenia a témy vzhľadu
@@ -295,6 +294,11 @@ translate-exceptions =
     .label = Výnimky…
     .accesskey = m
 
+# Variables:
+#    $localeName (string) - Localized name of the locale to be used.
+use-system-locale =
+    .label = Formátovať dátumy, časy, čísla a jednotky podľa nastavenia jazyka „{ $localeName }“ z operačného systému.
+
 check-user-spelling =
     .label = Kontrolovať pravopis počas písania
     .accesskey = K
@@ -356,6 +360,14 @@ applications-use-app =
 applications-use-app-default =
     .label = Použiť { $app-name } (predvolená)
 
+applications-use-os-default =
+    .label =
+        { PLATFORM() ->
+            [macos] Použiť predvolenú aplikáciu macOS
+            [windows] Použiť predvolenú aplikáciu Windowsu
+           *[other] Použiť predvolenú aplikáciu systému
+        }
+
 applications-use-other =
     .label = Použiť inú…
 applications-select-helper = Výber pomocnej aplikácie
@@ -384,6 +396,8 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
     .label = Použiť { $plugin-name } (v aplikácii { -brand-short-name })
+applications-open-inapp =
+    .label = Otvoriť v aplikácii { -brand-short-name }
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -398,6 +412,9 @@ applications-action-save-label =
 applications-use-app-label =
     .value = { applications-use-app.label }
 
+applications-open-inapp-label =
+    .value = { applications-open-inapp.label }
+
 applications-always-ask-label =
     .value = { applications-always-ask.label }
 
@@ -406,6 +423,9 @@ applications-use-app-default-label =
 
 applications-use-other-label =
     .value = { applications-use-other.label }
+
+applications-use-os-default-label =
+    .value = { applications-use-os-default.label }
 
 ##
 
@@ -446,16 +466,6 @@ update-application-warning-cross-user-setting = Toto nastavenie sa vzťahuje na 
 update-application-use-service =
     .label = Na inštaláciu aktualizácií používať službu na pozadí
     .accesskey = z
-
-update-enable-search-update =
-    .label = Automaticky aktualizovať vyhľadávacie moduly
-    .accesskey = e
-
-update-pref-write-failure-title = Chyba pri zápise
-
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Nepodarilo sa nám uložiť nastavenie. Nebolo možné zapísať údaje do súboru { $path }
 
 update-setting-write-failure-title = Chyba pri ukladaní nastavení aktualizácií
 
@@ -615,11 +625,10 @@ home-prefs-topsites-description = Najnavštevovanejšie stránky
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
-# Variables:
-#  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 home-prefs-recommended-by-header =
     .label = Odporúča { $provider }
-home-prefs-recommended-by-description = Skvelý obsah z celého webu, vybraný špeciálne pre vás
+home-prefs-recommended-by-description-update = Výnimočný obsah z celého internetu, vybraný službou { $provider }
+
 ##
 
 home-prefs-recommended-by-learn-more = Ako to funguje
@@ -662,8 +671,6 @@ search-bar-shown =
     .label = Pridať na panel nástrojov vyhľadávací panel
 
 search-engine-default-header = Predvolený vyhľadávací modul
-search-engine-default-desc = Vyberte si predvolený vyhľadávací modul pre vyhľadávanie z panela s adresou a vyhľadávacieho panela.
-
 search-engine-default-desc-2 = Toto je váš predvolený vyhľadávací modul pre vyhľadávanie z panela s adresou a vyhľadávacieho panela. Kedykoľvek ho môžete zmeniť.
 search-engine-default-private-desc-2 = Vybrať iný vyhľadávací modul pre použitie v súkromnom prehliadaní
 search-separate-default-engine =
@@ -692,7 +699,7 @@ search-show-suggestions-above-history-option =
 search-show-suggestions-private-windows =
     .label = Zobrazovať návrhy vyhľadávania v súkromnom prehliadaní
 
-suggestions-addressbar-settings = Zmeniť nastavenia návrhov vyhľadávania z histórie prehliadania, záložiek a kariet
+suggestions-addressbar-settings-generic = Zmeniť nastavenia návrhov v paneli s adresou
 
 search-suggestions-cant-show = Návrhy vyhľadávania nebudú zobrazené vo výsledkoch panela s adresou, pretože ste { -brand-short-name } nastavili tak, aby si nepamätal históriu.
 
@@ -725,8 +732,6 @@ search-keyword-warning-bookmark = Zadali ste kľúčové slovo, ktoré je v sú�
 
 ## Containers Section
 
-containers-back-link = « Späť
-
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -756,14 +761,6 @@ containers-remove-button =
 sync-signedout-caption = Vezmite si svoj web so sebou
 sync-signedout-description = Synchronizujte si svoje záložky, históriu, karty, heslá, doplnky a nastavenia so všetkými svojimi zariadeniami.
 
-sync-signedout-account-title = Pripojte sa k službe { -fxaccount-brand-name }
-sync-signedout-account-create = Nemáte účet? Začnite tu
-    .accesskey = t
-
-sync-signedout-account-signin =
-    .label = Prihlásiť sa…
-    .accesskey = i
-
 sync-signedout-account-signin2 =
     .label = Prihlásiť sa do služby { -sync-brand-short-name }…
     .accesskey = i
@@ -786,10 +783,6 @@ sync-mobile-promo = Prevezmite si Firefox pre <img data-l10n-name="android-icon
 sync-profile-picture =
     .tooltiptext = Zmeniť obrázok profilu
 
-sync-disconnect =
-    .label = Odpojiť…
-    .accesskey = d
-
 sync-sign-out =
     .label = Odhlásiť sa…
     .accesskey = h
@@ -811,9 +804,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Prihlásiť sa
     .accesskey = i
-
-sync-signedin-settings-header = Nastavenia synchronizácie
-sync-signedin-settings-desc = Vyberte, čo má aplikácia { -brand-short-name } na vašich zariadeniach synchronizovať.
 
 ## Sync section - enabling or disabling sync.
 
@@ -876,11 +866,6 @@ sync-engine-tabs =
     .tooltiptext = Zoznam otvorených kariet v synchronizovaných zariadeniach
     .accesskey = t
 
-sync-engine-logins =
-    .label = Prihlasovacie údaje
-    .tooltiptext = Uložené používateľské mená a heslá
-    .accesskey = l
-
 sync-engine-logins-passwords =
     .label = Prihlasovacie údaje
     .tooltiptext = Prihlasovacie údaje, ktoré ste uložili
@@ -928,22 +913,11 @@ sync-device-name-save =
 
 sync-connect-another-device = Pripojiť ďalšie zariadenie
 
-sync-manage-devices = Spravovať zariadenia
-
-sync-fxa-begin-pairing = Spárovať zariadenie
-
-sync-tos-link = Podmienky používania služby
-
-sync-fxa-privacy-notice = Zásady ochrany súkromia
-
 ## Privacy Section
 
 privacy-header = Súkromie
 
 ## Privacy Section - Forms
-
-
-logins-header = Prihlasovacie údaje
 
 ## Privacy Section - Logins and Passwords
 
@@ -976,20 +950,48 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Používať hlavné heslo
     .accesskey = e
+forms-primary-pw-use =
+    .label = Používať hlavné heslo
+    .accesskey = h
+forms-primary-pw-learn-more-link = Ďalšie informácie
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Zmeniť hlavné heslo…
     .accesskey = h
 
 forms-master-pw-fips-title = Momentálne používate režim FIPS. Tento režim vyžaduje nastavenie hlavného hesla.
+forms-primary-pw-change =
+    .label = Zmeniť hlavné heslo…
+    .accesskey = h
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+
+forms-primary-pw-fips-title = Momentálne sa používa režim FIPS. Režim FIPS vyžaduje nastavenie hlavného hesla.
 forms-master-pw-fips-desc = Heslo sa nepodarilo zmeniť
 
 ## OS Authentication dialog
+
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Ak chcete vytvoriť hlavné heslo, zadajte svoje prihlasovacie údaje k systému Windows. Toto opatrenie nám pomáha v zabezpečení vášho účtu.
 
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = vytvoriť hlavné heslo
+
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Ak chcete vytvoriť hlavné heslo, zadajte svoje prihlasovacie údaje k systému Windows. Toto opatrenie nám pomáha v zabezpečení vášho účtu.
+
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = vytvoriť hlavné heslo
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -1074,13 +1076,12 @@ sitedata-disallow-cookies-option =
 sitedata-block-desc = Blokovať
     .accesskey = l
 
-sitedata-option-block-trackers =
-    .label = Sledovacie prvky tretích strán
-
 sitedata-option-block-cross-site-trackers =
     .label = Sledovacie prvky
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Sledovacie prvky sociálnych sietí
+sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
+    .label = Sledovacie prvky sociálnych sietí, ostatné izolovať
 sitedata-option-block-unvisited =
     .label = Cookies z doposiaľ nenavštívených stránok
 sitedata-option-block-all-third-party =
@@ -1100,6 +1101,10 @@ sitedata-cookies-permissions =
     .label = Spravovať povolenia…
     .accesskey = S
 
+sitedata-cookies-exceptions =
+    .label = Správa výnimiek…
+    .accesskey = v
+
 ## Privacy Section - Address Bar
 
 addressbar-header = Panel s adresou
@@ -1115,39 +1120,19 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = otvorené karty
     .accesskey = e
+addressbar-locbar-topsites-option =
+    .label = Top stránky
+    .accesskey = T
 
 addressbar-suggestions-settings = Zmeniť nastavenia pre návrhy vyhľadávania
 
 ## Privacy Section - Content Blocking
-
-content-blocking-header = Blokovanie obsahu a ochrana pred sledovaním
-
-content-blocking-section-description = Chráňte svoje súkromie pri surfovaní na internete. Zablokujte neviditeľný obsah, ktorý vás sleduje na navštívených stránkach a tvorí profil vášho správania. Blokovanie takéhoto obsahu môže zrýchliť načítavanie stránok.
 
 content-blocking-enhanced-tracking-protection = Rozšírená ochrana pred sledovaním
 
 content-blocking-section-top-level-description = Sledovacie prvky zbierajú informácie o tom, čo na internete robíte. { -brand-short-name } blokuje množstvo takýchto prvkov a ďalších škodlivých skriptov.
 
 content-blocking-learn-more = Ďalšie informácie
-
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Štandardné
-    .accesskey = t
-content-blocking-setting-strict =
-    .label = Prísne
-    .accesskey = P
-content-blocking-setting-custom =
-    .label = Vlastné
-    .accesskey = V
-
-content-blocking-standard-desc = Vyvážená úroveň ochrany a výkonu. Povoľuje niektoré sledovacie sledovacie prvky, aby stránky fungovali správne.
-content-blocking-strict-description = Viac blokovaného obsahu zvyšuje pravdepodobnosť, že niektoré stránky nebudú správne fungovať.
-content-blocking-custom-desc = Vyberte si, čo chcete blokovať.
-
-content-blocking-private-trackers = Známe sledovacie prvky sú blokované v režime súkromného prehliadania
-content-blocking-third-party-cookies = Blokované sú sledovacie cookies tretích strán
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1171,29 +1156,23 @@ content-blocking-etp-custom-desc = Vyberte sledovacie prvky a skripty, ktoré ch
 
 content-blocking-private-windows = Sledovací obsah je blokovaný v súkromných oknách
 content-blocking-cross-site-tracking-cookies = Blokované sú sledovacie cookies
+content-blocking-cross-site-tracking-cookies-plus-isolate = Sledovacie cookies tretích strán, ostatné izolovať
 content-blocking-social-media-trackers = Blokované sú sledovacie prvky sociálnych sietí
 content-blocking-all-cookies = Všetky cookies
 content-blocking-unvisited-cookies = Cookies z nenavštívených stránok
-content-blocking-all-windows-trackers = Známe sledovacie prvky sú blokované vždy
 content-blocking-all-windows-tracking-content = Sledovací obsah je blokovaný vo všetkých oknách
 content-blocking-all-third-party-cookies = Blokované sú všetky cookies tretích strán
 content-blocking-cryptominers = Blokovaná je ťažba kryptomien
 content-blocking-fingerprinters = Blokovaná je tvorba odtlačku prehliadača
 
 content-blocking-warning-title = Pozor!
-content-blocking-warning-description = Blokovanie obsahu môže spôsobiť rozbitie niektorých webových stránok. Na dôveryhodných stránkach môžete blokovanie jednoducho vypnúť.
-content-blocking-learn-how = Ďalšie informácie
-
+content-blocking-and-isolating-etp-warning-description = Blokovanie sledovacích prvkov a izolácia cookies môžu ovplyvniť fungovanie niektorých stránok. Pre načítanie všetkého obsahu obnovte stránku s povolenými sledovacími prvkami.
 content-blocking-warning-learn-how = Ďalšie informácie
 
 content-blocking-reload-description = Aby sa zmeny prejavili, musíte obnoviť vaše karty.
 content-blocking-reload-tabs-button =
     .label = Obnoviť všetky karty
     .accesskey = v
-
-content-blocking-trackers-label =
-    .label = Sledovacie prvky
-    .accesskey = S
 
 content-blocking-tracking-content-label =
     .label = Sledovací obsah
@@ -1263,14 +1242,6 @@ permissions-notification-link = Ďalšie informácie
 permissions-notification-pause =
     .label = Pozastaviť upozornenia do reštartu aplikácie { -brand-short-name }
     .accesskey = n
-
-permissions-block-autoplay-media2 =
-    .label = Zabrániť stránkam automaticky prehrávať zvuk
-    .accesskey = z
-
-permissions-block-autoplay-media-exceptions =
-    .label = Výnimky…
-    .accesskey = V
 
 permissions-autoplay = Automatické prehrávanie
 
@@ -1407,6 +1378,10 @@ space-alert-under-5gb-ok-button =
     .accesskey = K
 
 space-alert-under-5gb-message = Aplikácii { -brand-short-name } dochádza miesto na disku. Obsah webovej stránky sa nemusí zobrazovať správne. Kliknutím na “Ďalšie informácie” sa dozviete viac o optimalizovaní vyžitia disku pre lepší zážitok z prehliadania.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-learn-more = Ďalšie informácie
 
 ## The following strings are used in the Download section of settings
 

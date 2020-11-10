@@ -7,7 +7,7 @@
 ### Firefox" and "version" is used to mean "the specific revision number of a
 ### given Firefox channel". These terms are not synonymous.
 
-title = Nïm taq Rutzijol
+title = Nïm taq Tzijol
 heading = Jaloj pan { -brand-short-name } ruwäch ab'i'
 
 changed-title = ¿Achike xjalatäj?

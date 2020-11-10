@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Μόνο όταν το { -brand-short-name } έχει ρυθμιστεί για φραγή γνωστών ιχνηλατών
 do-not-track-option-always =
     .label = Πάντα
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Επιλογές
-           *[other] Προτιμήσεις
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Επιλογές
@@ -35,6 +29,8 @@ search-input-box =
            *[other] Εύρεση στις προτιμήσεις
         }
 managed-notice = Το πρόγραμμα περιήγησής σας ρυθμίζεται από τον οργανισμό σας.
+category-list =
+    .aria-label = Κατηγορίες
 pane-general-title = Γενικά
 category-general =
     .tooltiptext = { pane-general-title }
@@ -50,6 +46,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = Πειράματα του { -brand-short-name }
+category-experimental =
+    .tooltiptext = Πειράματα του { -brand-short-name }
+pane-experimental-subtitle = Συνεχίστε με προσοχή
+pane-experimental-search-results-header = Πειράματα { -brand-short-name }: Συνεχίστε με προσοχή
+pane-experimental-description = Η αλλαγή παραμέτρων των σύνθετων προτιμήσεων μπορεί να επηρεάσει την απόδοση ή την ασφάλεια του { -brand-short-name }.
 help-button-label = Υποστήριξη { -brand-short-name }
 addons-button-label = Επεκτάσεις & θέματα
 focus-search =
@@ -82,6 +84,9 @@ extension-controlled-homepage-override = Μια επέκταση, το <img data
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Μια επέκταση, το <img data-l10n-name="icon"/> { $name }, ελέγχει τη σελίδα νέας καρτέλας.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Μια επέκταση, το <img data-l10n-name="icon"/> { $name }, ελέγχει αυτή τη ρύθμιση.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Μια επέκταση, το <img data-l10n-name="icon"/> { $name }, ελέγχει αυτή τη ρύθμιση.
@@ -128,7 +133,7 @@ get-started-configured = Άνοιγμα προτιμήσεων του { -sync-br
 always-check-default =
     .label = Να γίνεται πάντα έλεγχος για το αν το { -brand-short-name } είναι το προεπιλεγμένο πρόγραμμα περιήγησής σας
     .accesskey = Π
-is-default = Αυτήν τη στιγμή, το { -brand-short-name } είναι το προεπιλεγμένο πρόγραμμα περιήγησής σας
+is-default = Το { -brand-short-name } είναι το προεπιλεγμένο πρόγραμμα περιήγησής σας
 is-not-default = Το { -brand-short-name } δεν είναι το προεπιλεγμένο πρόγραμμα περιήγησης
 set-as-my-default-browser =
     .label = Ορισμός ως προεπιλογή…
@@ -313,7 +318,7 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 # Variables:
 #   $plugin-name (String) - Name of a plugin (e.g Adobe Flash)
 applications-use-plugin-in =
-    .label = Χρήση αρθρώματος "{ $plugin-name }" (σε { -brand-short-name })
+    .label = Χρήση { $plugin-name } (στο { -brand-short-name })
 applications-open-inapp =
     .label = Άνοιγμα στο { -brand-short-name }
 
@@ -346,7 +351,7 @@ play-drm-content =
     .accesskey = Α
 play-drm-content-learn-more = Μάθετε περισσότερα
 update-application-title = Ενημερώσεις του { -brand-short-name }
-update-application-description = Διατηρείστε το { -brand-short-name } ενημερωμένο για καλύτερη απόδοση, σταθερότητα και ασφάλεια.
+update-application-description = Διατηρείτε το { -brand-short-name } ενημερωμένο για καλύτερη απόδοση, σταθερότητα και ασφάλεια.
 update-application-version = Έκδοση { $version } <a data-l10n-name="learn-more">Τι νέο υπάρχει</a>
 update-history =
     .label = Εμφάνιση ιστορικού ενημερώσεων…
@@ -365,13 +370,6 @@ update-application-warning-cross-user-setting = Αυτή η ρύθμιση θα 
 update-application-use-service =
     .label = Χρήση μιας υπηρεσίας παρασκηνίου για την εγκατάσταση ενημερώσεων
     .accesskey = υ
-update-enable-search-update =
-    .label = Αυτόματη ενημέρωση μηχανών αναζήτησης
-    .accesskey = μ
-update-pref-write-failure-title = Αποτυχία εγγραφής
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Αδυναμία αποθήκευσης προτίμησης. Αδυναμία εγγραφής σε αρχείο: { $path }
 update-setting-write-failure-title = Σφάλμα αποθήκευσης προτιμήσεων ενημερώσεων
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -430,6 +428,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Ενεργοποίηση στοιχείων ελέγχου βίντεο σε λειτουργία εικόνας εντός εικόνας
     .accesskey = Ε
 browsing-picture-in-picture-learn-more = Μάθετε περισσότερα
+browsing-media-control =
+    .label = Έλεγχος πολυμέσων μέσω πληκτρολογίου, ακουστικών ή εικονικού περιβάλλοντος
+    .accesskey = λ
+browsing-media-control-learn-more = Μάθετε περισσότερα
 browsing-cfr-recommendations =
     .label = Πρόταση επεκτάσεων κατά την περιήγησή σας
     .accesskey = Π
@@ -493,13 +495,14 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Κορυφαίες ιστοσελίδες
 home-prefs-topsites-description = Οι ιστοσελίδες που επισκέπτεστε περισσότερο
+home-prefs-topsites-by-option-sponsored =
+    .label = Χορηγούμενες κορυφαίες ιστοσελίδες
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = Προτάσεις του { $provider }
-home-prefs-recommended-by-description = Εξαιρετικό περιεχόμενο από το διαδίκτυο, εξατομικευμένο για εσάς
 home-prefs-recommended-by-description-update = Εξαιρετικό περιεχόμενο από όλο το διαδίκτυο, με την επιμέλεια του { $provider }
 
 ##
@@ -540,7 +543,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Προσθήκη γραμμής αναζήτησης στη γραμμή εργαλείων
 search-engine-default-header = Προεπιλεγμένη μηχανή αναζήτησης
-search-engine-default-desc = Επιλέξτε την προεπιλεγμένη μηχανή αναζήτησης για χρήση στη γραμμή διευθύνσεων και στη γραμμή αναζήτησης.
 search-engine-default-desc-2 = Αυτή είναι η προεπιλεγμένη μηχανή αναζήτησης στη γραμμή διευθύνσεων και τη γραμμή αναζήτησης. Μπορείτε να την αλλάξετε ανά πάσα στιγμή.
 search-engine-default-private-desc-2 = Επιλέξτε μια διαφορετική προεπιλεγμένη μηχανή αναζήτησης μόνο για ιδιωτικά παράθυρα
 search-separate-default-engine =
@@ -563,10 +565,10 @@ search-show-suggestions-above-history-option =
     .label = Εμφάνιση προτάσεων αναζήτησης πριν το ιστορικό περιήγησης στα αποτελέσματα γραμμής διευθύνσεων
 search-show-suggestions-private-windows =
     .label = Εμφάνιση προτάσεων αναζήτησης σε ιδιωτικά παράθυρα
-suggestions-addressbar-settings = Αλλαγή προτιμήσεων για προτάσεις ιστορικού περιήγησης, σελιδοδεικτών και καρτελών
 suggestions-addressbar-settings-generic = Αλλαγή προτιμήσεων για άλλες προτάσεις στη γραμμή διευθύνσεων
 search-suggestions-cant-show = Οι προτάσεις αναζήτησης δεν θα εμφανίζονται στη γραμμή διευθύνσεων, καθώς έχετε ρυθμίσει το { -brand-short-name } ώστε να μην διατηρεί ποτέ το ιστορικό.
 search-one-click-header = Μηχανές αναζήτησης με ένα κλικ
+search-one-click-header2 = Συντομεύσεις αναζήτησης
 search-one-click-desc = Επιλέξτε τις εναλλακτικές μηχανές αναζήτησης που εμφανίζονται κάτω από τη γραμμή διευθύνσεων και τη γραμμή αναζήτησης όταν αρχίσετε να πληκτρολογείτε μια λέξη-κλειδί.
 search-choose-engine-column =
     .label = Μηχανή αναζήτησης
@@ -578,6 +580,9 @@ search-restore-default =
 search-remove-engine =
     .label = Αφαίρεση
     .accesskey = Α
+search-add-engine =
+    .label = Προσθήκη
+    .accesskey = A
 search-find-more-link = Εύρεση περισσότερων μηχανών αναζήτησης
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -589,7 +594,6 @@ search-keyword-warning-bookmark = Έχετε επιλέξει μια λέξη-κ
 
 ## Containers Section
 
-containers-back-link = « Επιστροφή
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -608,20 +612,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Αφαίρεση
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Πάρτε μαζί σας το διαδίκτυο
 sync-signedout-description = Συγχρονίστε τους σελιδοδείκτες, το ιστορικό, τις καρτέλες, τους κωδικούς πρόσβασης, τα πρόσθετα, καθώς και τις προτιμήσεις σας σε όλες τις συσκευές σας.
-sync-signedout-account-title = Σύνδεση με ένα { -fxaccount-brand-name }
-sync-signedout-account-create = Δεν έχετε λογαριασμό; Ξεκινήστε
-    .accesskey = Γ
-sync-signedout-account-signin =
-    .label = Σύνδεση…
-    .accesskey = Σ
 sync-signedout-account-signin2 =
     .label = Σύνδεση στο { -sync-brand-short-name }…
     .accesskey = ν
@@ -635,16 +630,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Κάντε λήψη του Firefox για <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ή <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> για συγχρονισμό με την κινητή σας συσκευή.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Αλλαγή εικόνας προφίλ
-sync-disconnect =
-    .label = Αποσύνδεση…
-    .accesskey = Α
 sync-sign-out =
     .label = Αποσύνδεση…
     .accesskey = ν
@@ -661,8 +650,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Σύνδεση
     .accesskey = σ
-sync-signedin-settings-header = Ρυθμίσεις Sync
-sync-signedin-settings-desc = Επιλέξτε τι θα συγχρονίζεται στις συσκευές σας με το { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -715,10 +702,6 @@ sync-engine-tabs =
     .label = Ανοικτές καρτέλες
     .tooltiptext = Μια λίστα με όλα όσα είναι ανοικτά στις συγχρονισμένες συσκευές
     .accesskey = κ
-sync-engine-logins =
-    .label = Συνδέσεις
-    .tooltiptext = Ονόματα χρήστη και κωδικοί πρόσβασης που έχετε αποθηκεύσει
-    .accesskey = Σ
 sync-engine-logins-passwords =
     .label = Συνδέσεις και κωδικοί πρόσβασης
     .tooltiptext = Αποθηκευμένα ονόματα χρήστη και κωδικοί πρόσβασης
@@ -757,18 +740,10 @@ sync-device-name-save =
     .label = Αποθήκευση
     .accesskey = θ
 sync-connect-another-device = Σύνδεση άλλης συσκευής
-sync-manage-devices = Διαχείριση συσκευών
-sync-fxa-begin-pairing = Σύζευξη συσκευής
-sync-tos-link = Όροι υπηρεσίας
-sync-fxa-privacy-notice = Σημείωση απορρήτου
 
 ## Privacy Section
 
 privacy-header = Απόρρητο προγράμματος περιήγησης
-
-## Privacy Section - Forms
-
-logins-header = Συνδέσεις & κωδικοί πρόσβασης
 
 ## Privacy Section - Logins and Passwords
 
@@ -794,15 +769,30 @@ forms-fill-logins-and-passwords =
     .label = Αυτόματη συμπλήρωση συνδέσεων και κωδικών πρόσβασης
     .accesskey = ρ
 forms-saved-logins =
-    .label = Αποθηκευμένοι λογαριασμοί…
+    .label = Αποθηκευμένες συνδέσεις…
     .accesskey = π
 forms-master-pw-use =
     .label = Χρήση κύριου κωδικού
     .accesskey = ρ
+forms-primary-pw-use =
+    .label = Χρήση κύριου κωδικού πρόσβασης
+    .accesskey = Χ
+forms-primary-pw-learn-more-link = Μάθετε περισσότερα
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Αλλαγή κύριου κωδικού…
     .accesskey = γ
 forms-master-pw-fips-title = Βρίσκεστε σε λειτουργία FIPS . Το FIPS απαιτεί ένα μη-κενό Κύριο κωδικό.
+forms-primary-pw-change =
+    .label = Αλλαγή κύριου κωδικού πρόσβασης…
+    .accesskey = κ
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Είστε σε λειτουργία FIPS. Το FIPS απαιτεί μη κενό κύριο κωδικό πρόσβασης.
 forms-master-pw-fips-desc = Αποτυχία αλλαγής κωδικού
 
 ## OS Authentication dialog
@@ -814,6 +804,13 @@ master-password-os-auth-dialog-message-win = Για να δημιουργήσε�
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = δημιουργήσει κύριο κωδικό πρόσβασης
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Για να δημιουργήσετε έναν κύριο κωδικό πρόσβασης, εισάγετε τα διαπιστευτήρια των Windows σας. Αυτό θα συμβάλλει στην ασφάλεια των λογαριασμών σας.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = δημιουργήσει κύριο κωδικό πρόσβασης
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -880,12 +877,14 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Αποκλεισμένος τύπος
     .accesskey = τ
-sitedata-option-block-trackers =
-    .label = Ιχνηλάτες τρίτων
 sitedata-option-block-cross-site-trackers =
     .label = Ιχνηλάτες μεταξύ ιστοσελίδων
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Ιχνηλάτες μεταξύ ιστοσελίδων και κοινωνικών μέσων
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Cookies καταγραφής μεταξύ ιστοσελίδων — περιλαμβάνει cookies κοινωνικών δικτύων
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Cookies μεταξύ ιστοσελίδων — περιλαμβάνει cookies κοινωνικών δικτύων
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Cookies ιχνηλάτησης και κοινωνικών μέσω μεταξύ ιστοσελίδων και απομόνωση των υπόλοιπων
 sitedata-option-block-unvisited =
@@ -912,7 +911,7 @@ sitedata-cookies-exceptions =
 addressbar-header = Γραμμή διευθύνσεων
 addressbar-suggest = Κατά τη χρήση της γραμμής διευθύνσεων, να γίνεται πρόταση
 addressbar-locbar-history-option =
-    .label = Ιστορικό περιήγησης
+    .label = Ιστορικού περιήγησης
     .accesskey = Ι
 addressbar-locbar-bookmarks-option =
     .label = Σελιδοδεικτών
@@ -921,33 +920,15 @@ addressbar-locbar-openpage-option =
     .label = Ανοικτών καρτελών
     .accesskey = Ο
 addressbar-locbar-topsites-option =
-    .label = Δημοφιλείς ιστοσελίδες
-    .accesskey = Δ
+    .label = Κορυφαίων ιστοσελίδων
+    .accesskey = Κ
 addressbar-suggestions-settings = Αλλαγή προτιμήσεων για τις προτάσεις μηχανών αναζήτησης
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Φραγή περιεχομένου
-content-blocking-section-description = Προστατέψτε το απόρρητό σας ενώ περιηγείστε. Αποκλείστε το αόρατο περιεχόμενο που καταγράφει τις ιστοσελίδες που επισκέπτεστε και δημιουργεί ένα προφίλ για εσάς. Η φραγή μέρους του περιεχομένου αυτού μπορεί να επιταχύνει τη φόρτωση σελίδων.
 content-blocking-enhanced-tracking-protection = Ενισχυμένη προστασία από καταγραφή
 content-blocking-section-top-level-description = Οι ιχνηλάτες σάς ακολουθούν στο διαδίκτυο για να συλλέξουν πληροφορίες σχετικά με τις συνήθειες και τα ενδιαφέροντά σας. Το { -brand-short-name } αποκλείει πολλούς από αυτούς τους ιχνηλάτες και άλλα κακόβουλα σενάρια.
 content-blocking-learn-more = Μάθετε περισσότερα
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Τυπική
-    .accesskey = Τ
-content-blocking-setting-strict =
-    .label = Αυστηρή
-    .accesskey = Α
-content-blocking-setting-custom =
-    .label = Προσαρμοσμένη
-    .accesskey = Π
-content-blocking-standard-desc = Ισορροπία ανάμεσα σε προστασία και επιδόσεις. Επιτρέπει ορισμένους ιχνηλάτες για τη σωστή λειτουργία των ιστοσελίδων.
-content-blocking-strict-description = Ισχυρότερη προστασία, πιθανή δυσλειτουργία ορισμένων ιστοσελίδων.
-content-blocking-custom-desc = Επιλέξτε τι θα αποκλείεται.
-content-blocking-private-trackers = Γνωστοί ιχνηλάτες μόνο σε ιδιωτικά παράθυρα
-content-blocking-third-party-cookies = Cookies καταγραφής τρίτων
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -969,28 +950,24 @@ content-blocking-etp-standard-desc = Ισορροπία μεταξύ προστ�
 content-blocking-etp-strict-desc = Ισχυρότερη προστασία, αλλά πιθανή δυσλειτουργία μερικών ιστοσελίδων ή περιεχομένου.
 content-blocking-etp-custom-desc = Επιλέξτε ιχνηλάτες και σενάρια για αποκλεισμό.
 content-blocking-private-windows = Περιεχόμενο καταγραφής σε ιδιωτικά παράθυρα
+content-blocking-cross-site-cookies = Cookies μεταξύ ιστοσελίδων
 content-blocking-cross-site-tracking-cookies = Cookies ιχνηλάτησης μεταξύ ιστοσελίδων
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies ιχνηλάτησης μεταξύ ιστοσελίδων και απομόνωση των υπόλοιπων
 content-blocking-social-media-trackers = Ιχνηλάτες κοινωνικών δικτύων
 content-blocking-all-cookies = Όλα τα cookies
 content-blocking-unvisited-cookies = Cookies από ιστοσελίδες που δεν έχετε επισκεφθεί
-content-blocking-all-windows-trackers = Γνωστοί ιχνηλάτες σε όλα τα ιδιωτικά παράθυρα
 content-blocking-all-windows-tracking-content = Περιεχόμενο καταγραφής σε όλα τα παράθυρα
 content-blocking-all-third-party-cookies = Όλα τα cookies τρίτων
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Προσοχή!
-content-blocking-warning-description = Η φραγή περιεχομένου μπορεί να προκαλέσει δυσλειτουργία σε ορισμένες ιστοσελίδες. Μπορείτε εύκολα να απενεργοποιήσετε τη φραγή σε ιστοσελίδες που εμπιστεύεστε.
-content-blocking-learn-how = Μάθετε πώς
 content-blocking-and-isolating-etp-warning-description = Η φραγή ιχνηλατών και η απομόνωση cookies μπορούν να επηρεάσουν τη λειτουργικότητα ορισμένων ιστοσελίδων. Φορτώστε εκ νέου μια σελίδα με ιχνηλάτες για να φορτώσετε όλο το περιεχόμενο.
+content-blocking-and-isolating-etp-warning-description-2 = Αυτή η ρύθμιση ενδέχεται να εμποδίσει την εμφάνιση περιεχομένου ή τη σωστή λειτουργία σε ορισμένες ιστοσελίδες. Αν μια ιστοσελίδα δεν λειτουργεί σωστά, μπορείτε να απενεργοποιήσετε την προστασία από καταγραφή για να γίνει φόρτωση όλου του περιεχομένου σε αυτή την ιστοσελίδα.
 content-blocking-warning-learn-how = Μάθετε πώς
 content-blocking-reload-description = Θα πρέπει να φορτώσετε ξανά τις καρτέλες σας για εφαρμογή των αλλαγών αυτών.
 content-blocking-reload-tabs-button =
     .label = Ανανέωση όλων των καρτελών
     .accesskey = Α
-content-blocking-trackers-label =
-    .label = Ιχνηλάτες
-    .accesskey = Ι
 content-blocking-tracking-content-label =
     .label = Περιεχόμενο καταγραφής
     .accesskey = Π
@@ -1049,12 +1026,6 @@ permissions-notification-link = Μάθετε περισσότερα
 permissions-notification-pause =
     .label = Παύση ειδοποιήσεων μέχρι να επανεκκινηθεί το { -brand-short-name }
     .accesskey = ε
-permissions-block-autoplay-media2 =
-    .label = Φραγή αυτόματης αναπαραγωγής ήχου από ιστοσελίδες
-    .accesskey = Φ
-permissions-block-autoplay-media-exceptions =
-    .label = Εξαιρέσεις…
-    .accesskey = Ε
 permissions-autoplay = Αυτόματη αναπαραγωγή
 permissions-autoplay-settings =
     .label = Ρυθμίσεις...
@@ -1162,10 +1133,22 @@ space-alert-under-5gb-ok-button =
     .accesskey = K
 space-alert-under-5gb-message = Το { -brand-short-name } δεν έχει επαρκή χώρο δίσκου. Το περιεχόμενο των ιστοσελίδων ενδέχεται να μην εμφανίζεται σωστά. Επισκεφθείτε το “Μάθετε περισσότερα” για να βελτιστοποιήσετε τη χρήση δίσκου σας για καλύτερη εμπειρία περιήγησης.
 
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Λειτουργία Μόνο-HTTPS
+httpsonly-description = Το HTTPS παρέχει μια ασφαλή, κρυπτογραφημένη σύνδεση μεταξύ του { -brand-short-name } και των ιστοσελίδων που επισκέπτεστε. Οι περισσότερες ιστοσελίδες υποστηρίζουν HTTPS και αν είναι ενεργή η λειτουργία μόνο-HTTPS, τότε το { -brand-short-name } θα αναβαθμίζει όλες τις συνδέσεις σε HTTPS.
+httpsonly-learn-more = Μάθετε περισσότερα
+httpsonly-radio-enabled =
+    .label = Ενεργοποίηση λειτουργίας Μόνο-HTTPS σε όλα τα παράθυρα
+httpsonly-radio-enabled-pbm =
+    .label = Ενεργοποίηση Μόνο-HTTPS μόνο σε ιδιωτικά παράθυρα
+httpsonly-radio-disabled =
+    .label = Να μην ενεργοποιηθεί η λειτουργία Μόνο-HTTPS
+
 ## The following strings are used in the Download section of settings
 
 desktop-folder-name = Επιφάνεια εργασίας
-downloads-folder-name = Ληφθέντα αρχεία
+downloads-folder-name = Στοιχεία λήψεων
 choose-download-folder-title = Επιλογή φακέλου λήψεων:
 # Variables:
 #   $service-name (String) - Name of a cloud storage provider like Dropbox, Google Drive, etc...

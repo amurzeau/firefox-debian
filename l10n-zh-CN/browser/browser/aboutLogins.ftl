@@ -1,18 +1,13 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = 我的密码
 
 # "Google Play" and "App Store" are both branding and should not be translated
 
-login-app-promo-title = 密码随身带着走
+login-app-promo-title = 随身携带密码
 login-app-promo-subtitle = 免费下载 { -lockwise-brand-name } 应用
 login-app-promo-android =
     .alt = 从 Google Play 获取
@@ -21,7 +16,7 @@ login-app-promo-apple =
 login-filter =
     .placeholder = 搜索登录信息
 create-login-button = 新建登录信息
-fxaccounts-sign-in-text = 在您的其他设备上取得您的密码
+fxaccounts-sign-in-text = 取得您其他设备上的密码
 fxaccounts-sign-in-button = 登录{ -sync-brand-short-name }服务
 fxaccounts-avatar-button =
     .title = 管理账户
@@ -32,6 +27,7 @@ menu =
     .title = 打开菜单
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = 从其他浏览器导入…
+about-logins-menu-menuitem-import-from-a-file = 从文件导入…
 about-logins-menu-menuitem-export-logins = 导出登录信息…
 menu-menuitem-preferences =
     { PLATFORM() ->
@@ -71,12 +67,14 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = 在找您保存的登录信息？请设置“{ -sync-brand-short-name }”。
+about-logins-login-intro-heading-logged-out = 在找您保存的登录信息？请设置{ -sync-brand-short-name }或导入。
 about-logins-login-intro-heading-logged-in = 未找到同步的登录信息。
 login-intro-description = 若您曾在其他设备上将登录信息保存到 { -brand-product-name }，请按以下步骤操作：
 login-intro-instruction-fxa = 在您保存登录信息的设备，注册或登录 { -fxaccount-brand-name }
 login-intro-instruction-fxa-settings = 确定您已在“{ -sync-brand-short-name }”设置中勾选了“登录信息”复选框
 about-logins-intro-instruction-help = 若需帮助，请访问 <a data-l10n-name="help-link">{ -lockwise-brand-short-name } 用户支持</a>
 about-logins-intro-import = 若登录信息保存在其他浏览器，您可以<a data-l10n-name="import-link">导入到 { -lockwise-brand-short-name }</a>
+about-logins-intro-import2 = 若您的登录信息并未存储在 { -brand-product-name }，可以<a data-l10n-name="import-browser-link">从另一款浏览器</a>或<a data-l10n-name="import-file-link">文件</a>导入
 
 ## Login
 
@@ -126,15 +124,19 @@ about-logins-copy-password-os-auth-dialog-message-win = 请输入 Windows 登录
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = 复制存放的密码
+
+## Master Password notification
+
+master-password-notification-message = 请输入您的主密码，以查看保存的登录信息
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = 请输入 Windows 登录凭据，以继续导出登录信息。这有助于保护您的账户安全。
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = 导出存放的登录名和密码
 
-## Master Password notification
+## Primary Password notification
 
-master-password-notification-message = 请输入您的主密码，以查看保存的登录信息
+about-logins-primary-password-notification-message = 请输入主密码以查看保存的账号和密码
 master-password-reload-button =
     .label = 登录
     .accesskey = L
@@ -212,6 +214,19 @@ about-logins-export-file-picker-export-button = 导出
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
 about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV 文档
+       *[other] CSV 文件
+    }
+
+## Login Import Dialog
+
+# Title of the file picker dialog
+about-logins-import-file-picker-title = 导入登录信息文件
+about-logins-import-file-picker-import-button = 导入
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
     { PLATFORM() ->
         [macos] CSV 文档
        *[other] CSV 文件

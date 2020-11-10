@@ -19,12 +19,11 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Yeny i mung)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Yeny i mung)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Yeny i mung)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Yeny i mung)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -101,6 +99,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Coo manok, nong mapol: Yeny { $engineName } atir ki ii lanyut me kanonge mamegi.
 urlbar-search-tips-redirect-2 = Cak yeny mamegi ki i lanyut me kanonge me neno tam amia ki bot { $engineName } ki yeny mamegi mukato.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Yer yoo macek man me nongo ngo ma imito oyot.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Alama buk
+urlbar-search-mode-tabs = Dirica matino
+urlbar-search-mode-history = Gin mukato
 
 ##
 
@@ -118,12 +125,10 @@ urlbar-midi-blocked =
     .tooltiptext = I gengo woko nongo MIDI pi kakube man.
 urlbar-install-blocked =
     .tooltiptext = Igengo woko keto med-ikome pi kakube man.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Yub alama buk man ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -138,6 +143,53 @@ page-action-manage-extension =
 page-action-remove-from-urlbar =
     .label = Kwany ki i lanyut me kanonge
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Cwal dirica matidi ii Nyonyo
+           *[other] Cwal dirica matino { $tabCount } ii Nyonyo
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Cwal dirica matidi ii Nyonyo
+           *[other] Cwal dirica matino { $tabCount } ii Nyonyo
+        }
+page-action-pocket-panel =
+    .label = Gwok Potbuk i { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Lok kakube
+page-action-copy-url-urlbar =
+    .tooltiptext = Lok kakube
+page-action-email-link-panel =
+    .label = Cwal kakube…
+page-action-email-link-urlbar =
+    .tooltiptext = Cwal kakube…
+page-action-share-url-panel =
+    .label = Nywaki
+page-action-share-url-urlbar =
+    .tooltiptext = Nywaki
+page-action-share-more-panel =
+    .label = Mapol…
+page-action-send-tab-not-ready =
+    .label = Ribo nyonyo…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Mwon dirica matidi
+page-action-pin-tab-urlbar =
+    .tooltiptext = Mwon dirica matidi
+page-action-unpin-tab-panel =
+    .label = Pe i wal dirica matidi
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Pe i wal dirica matidi
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -149,17 +201,15 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Iwangi, yeny ki:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Lok ter me yeny
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Lok ter me yeny
-
 search-one-offs-context-open-new-tab =
     .label = Yeny i dirica matidi manyen
     .accesskey = d
@@ -170,11 +220,18 @@ search-one-offs-context-set-as-default-private =
     .label = Ter calo Injin Yeny Makwongo pi Dirica me Mung
     .accesskey = D
 
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+
 ## Bookmark Panel
 
 bookmark-panel-done-button =
     .label = Otum
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -234,6 +291,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = Lor
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -246,6 +306,9 @@ popup-all-windows-shared = Ki binywako dirica weng ma nen i wang kompiuta ni.
 
 ## WebRTC window or screen share tab switch warning
 
+sharing-warning-window = Itye ka nywako { -brand-short-name }. Jo mukene twero neno kacce iloke i dirica matidi manyen.
+sharing-warning-proceed-to-tab =
+    .label = Mede i Dirica matidi
 
 ## DevTools F12 popup
 
@@ -254,22 +317,81 @@ popup-all-windows-shared = Ki binywako dirica weng ma nen i wang kompiuta ni.
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Yeny onyo ket kanonge
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Yeny onyo ket kanonge
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Yeny ki { $name } onyo ket kanonge
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Ki tye ka loono layeny ki kama bor
 urlbar-permissions-granted =
     .tooltiptext = Imiyo ki kakube man twero mukene.
 urlbar-switch-to-tab =
     .value = Lokke bot dirica matidi:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Lamed:
-
 urlbar-go-button =
     .tooltiptext = Cit i kanonge ma i lanyut me gintic kabedo
 urlbar-page-action-button =
     .tooltiptext = Jami atima me potbuk
 urlbar-pocket-button =
     .tooltiptext = Gwok i { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Yeny ki { $engine } i Dirica me Mung
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Yeny i Dirica me Mung
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Yeny ki { $engine }
+urlbar-result-action-switch-tab = Lokke i dirica matidi
+urlbar-result-action-visit = Lim
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Dii Dirica matidi me yenyo ki { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Dii Dirica matidi me yenyo { $engine }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Yeny Alama buk
+urlbar-result-action-search-history = Yeny Gin mukato
+urlbar-result-action-search-tabs = Yeny Dirica matino
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> dong opongo wang kio weng
+fullscreen-warning-no-domain = Gin acoya man dong opongo wang kio
+fullscreen-exit-button = Kat woko ki i wang kio ma opong (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Kat woko ki i wang kio ma opong (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> Tye ki twero i kom lacim ma megi. Dii Esc me dwoko twero cen bot in.
+pointerlock-warning-no-domain = Jami eni Tye ki twero i kom lacim ma megi. Dii Esc me dwoko twero cen bot in.

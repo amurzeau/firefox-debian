@@ -56,6 +56,9 @@ cert-error-details-hsts-label = HTTP Strict Transport Security: { $hasHSTS }
 cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 cert-error-details-cert-chain-label = Certificate chain:
 open-in-new-window-for-csp-or-xfo-error = Buksan ang Site sa Bagong Window
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = Para maprotektahan ang iyong seguridad, hindi papayagan ng { $hostname } ang { -brand-short-name } na ipakita ang pahina kung ito ay naka-embed sa isa pang site. Para makita ang pahinang ito, kailangan mong buksan ito sa bagong window.
 
 ## Messages used for certificate error titles
 
@@ -71,7 +74,7 @@ captivePortal-title = Mag log in sa network
 # "Hmm" is a sound made when considering or puzzling over something.
 # You don't have to include it in your translation if your language does not have a written word like this.
 malformedURI-title = Hmm. Ang address na iyon ay hindi tama.
-netInterrupt-title = Nasagabal ang koneksyon
+netInterrupt-title = Natigil ang koneksyon
 notCached-title = Ang Dokumentong ito ay Expired
 netOffline-title = Naka-Offline
 contentEncodingError-title = May mali sa pag-encode na content
@@ -83,9 +86,8 @@ proxyConnectFailure-title = Ang proxy server ay tinatanggihan ang koneksyon
 proxyResolveFailure-title = Hindi mahanap ang proxy server
 redirectLoop-title = Ang pahina ay hindi nag didirekta ng maayos
 unknownSocketType-title = Hindi inaasahang tugon mula sa server
-nssFailure2-title = Bigo ang Secure Connection
-cspBlocked-title = Hinarang ng Content Security Policy
-xfoBlocked-title = Na-Block ng X-Frame_options Policy
+nssFailure2-title = Nabigo ang Ligtas na Koneksyon
+csp-xfo-error-title = Hindi Kayang Buksan ng { -brand-short-name } ang Pahinang Ito
 corruptedContentError-title = Corrupted Content Error
 remoteXUL-title = Remote XUL
 sslv3Used-title = Hindi Makakonekta nang Ligtas

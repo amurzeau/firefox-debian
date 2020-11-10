@@ -17,13 +17,13 @@
 browser-main-window =
     .data-title-default = { -brand-full-name }
     .data-title-private = { -brand-full-name } (პირადი ფანჯარა)
-    .data-content-title-default = { $content-title } - { -brand-full-name }
-    .data-content-title-private = { $content-title } - { -brand-full-name } (პირადი ფანჯარა)
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name } (პირადი ფანჯარა)
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -35,9 +35,9 @@ browser-main-window =
 #  $content-title (String): the title of the web content.
 browser-main-window-mac =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } - (პირადი ფანჯარა)
+    .data-title-private = { -brand-full-name } — (პირადი ფანჯარა)
     .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } - (პირადი ფანჯარა)
+    .data-content-title-private = { $content-title } — (პირადი ფანჯარა)
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -109,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = აკრიფეთ ნაკლები, მონახეთ მეტი: გამოიყენეთ { $engineName } საძიებოდ პირდაპირ მისამართების ველიდან.
 urlbar-search-tips-redirect-2 = დაიწყეთ ძიება და შემოთავაზებებს მოგაწვდით { $engineName } ან იხილავთ დათვალიერების ისტორიიდან.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = აირჩიეთ ეს მალსახმობი, რომ უფრო სწრაფად იპოვოთ ის, რაც გჭირდებათ.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = სანიშნეები
+urlbar-search-mode-tabs = ჩანართები
+urlbar-search-mode-history = ისტორია
 
 ##
 
@@ -156,6 +165,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = გაფართოების მოცილება
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] ჩანართის მოწყობილობაზე გაგზავნა
+           *[other] { $tabCount } ჩანართის მოწყობილობაზე გაგზავნა
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] ჩანართის მოწყობილობაზე გაგზავნა
+           *[other] { $tabCount } ჩანართის მოწყობილობაზე გაგზავნა
+        }
+page-action-pocket-panel =
+    .label = გვერდის შენახვა { -pocket-brand-name }-ში
+page-action-copy-url-panel =
+    .label = ბმულის ასლი
+page-action-copy-url-urlbar =
+    .tooltiptext = ბმულის ასლი
+page-action-email-link-panel =
+    .label = ბმულის გაგზავნა ელფოსტით…
+page-action-email-link-urlbar =
+    .tooltiptext = ბმულის გაგზავნა ელფოსტით…
+page-action-share-url-panel =
+    .label = გაზიარება
+page-action-share-url-urlbar =
+    .tooltiptext = გაზიარება
+page-action-share-more-panel =
+    .label = სხვა…
+page-action-send-tab-not-ready =
+    .label = მოწყობილობების დასინქრონება…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = ჩანართის მიმაგრება
+page-action-pin-tab-urlbar =
+    .tooltiptext = ჩანართის მიმაგრება
+page-action-unpin-tab-panel =
+    .label = მიმაგრების მოხსნა
+page-action-unpin-tab-urlbar =
+    .tooltiptext = მიმაგრების მოხსნა
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +223,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = მოსაძიებლად, შეგიძლიათ გამოიყენოთ:
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +241,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = ნაგულისხმევ საძიებოდ დაყენება პირად ფანჯრებში
     .accesskey = პ
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = სანიშნები ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = ჩანართები ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = ისტორია ({ $restrict })
 
 ## Bookmark Panel
 
@@ -208,10 +284,21 @@ identity-connection-file = ეს გვერდი თქვენს კო�
 identity-extension-page = ეს გვერდი გახსნილია გაფართოების მიერ.
 identity-active-blocked = { -brand-short-name } ზღუდავს გვერდის დაუცველ ნაწილებს.
 identity-custom-root = კავშირი დამოწმებულია სერტიფიკატის გამომშვების მიერ, რომელიც უცნობია Mozilla-სთვის.
-identity-passive-loaded = ამ გვერდის გარკვეული ნაწილი დაუცველია (როგორიცაა სურათები).
+identity-passive-loaded = ამ გვერდის გარკვეული ნაწილი დაუცველია (მაგალითად სურათები).
 identity-active-loaded = ამ გვერდზე დაცვა გამორთული გაქვთ.
 identity-weak-encryption = ეს გვერდი სუსტ დაშიფვრას იყენებს.
 identity-insecure-login-forms = ამ გვერდზე შეყვანილი ანგარიშის მონაცემები შესაძლოა მოიპარონ.
+identity-https-only-connection-upgraded = (განახლებული HTTPS-ზე)
+identity-https-only-label = მხოლოდ-HTTPS რეჟიმი
+identity-https-only-dropdown-on =
+    .label = ჩართ.
+identity-https-only-dropdown-off =
+    .label = გამორთ.
+identity-https-only-dropdown-off-temporarily =
+    .label = დროებით გამორთ.
+identity-https-only-info-turn-on2 = ჩართეთ მხოლოდ-HTTPS რეჟიმი და { -brand-short-name } შეეცდება უსაფრთხო კავშირზე გადაყვანას, შესაძლო შემთხვევებში.
+identity-https-only-info-turn-off2 = თუ გვერდს ხარვეზები ექნება, დაგჭირდებათ მხოლოდ-HTTPS რეჟიმის გამორთვა ამ საიტისთვის და გვერდის არასაიმედო HTTP-ით ჩატვირთვა.
+identity-https-only-info-no-upgrade = ვერ ხერხდება გადასვლა HTTP-დან.
 identity-permissions =
     .value = ნებართვები
 identity-permissions-reload-hint = ცვლილებების ასამოქმედებლად შესაძლოა გვერდის ხელახლა ჩატვირთვა დაგჭირდეთ.
@@ -231,8 +318,8 @@ identity-description-weak-cipher-intro = საიტთან კავში�
 identity-description-weak-cipher-risk = სხვებსაც შეუძლიათ თქვენი ინფორმაციის ნახვა ან ვებსაიტის ქცევის შეცვლა.
 identity-description-active-blocked = { -brand-short-name } ზღუდავს გვერდის დაუცველ ნაწილებს. <label data-l10n-name="link">ვრცლად</label>
 identity-description-passive-loaded = კავშირი დაუცველია და თქვენ მიერ ამ საიტთან გაზიარებული პირადი მონაცემები, შესაძლოა სხვებმაც ნახონ.
-identity-description-passive-loaded-insecure = ეს ვებსაიტი შეიცავს შიგთავსს, რომელიც დაუცველია (როგორიცაა სურათები). <label data-l10n-name="link">ვრცლად</label>
-identity-description-passive-loaded-mixed = მიუხედავად იმისა, რომ { -brand-short-name } ზღუდავს გარკვეულ შიგთავსს, დაუცველი ნაწილი მაინც რჩება (როგორიცაა სურათები). <label data-l10n-name="link">ვრცლად</label>
+identity-description-passive-loaded-insecure = ეს ვებსაიტი შეიცავს შიგთავსს, რომელიც დაუცველია (მაგალითად სურათები). <label data-l10n-name="link">ვრცლად</label>
+identity-description-passive-loaded-mixed = მიუხედავად იმისა, რომ { -brand-short-name } ზღუდავს გარკვეულ შიგთავსს, დაუცველი ნაწილი მაინც რჩება (მაგალითად სურათები). <label data-l10n-name="link">ვრცლად</label>
 identity-description-active-loaded = საიტი შეიცავს შიგთავსს, რომელიც დაუცველია (როგორიცაა სკრიპტები) და მასთან კავშირი, ვერ უზრუნველყოფს პირადი მონაცემების უსაფრთხოებას.
 identity-description-active-loaded-insecure = ინფორმაცია, რომელსაც ამ საიტს გაუზიარებთ შესაძლოა სხვებმაც ნახონ (მაგალითად პაროლები, შეტყობინებები, საკრედიტო ბარათები, ა. შ.).
 identity-learn-more =
@@ -256,6 +343,12 @@ browser-window-restore-down-button =
     .tooltiptext = შემცირება
 browser-window-close-button =
     .tooltiptext = დახურვა
+
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = სანიშნების გადმოტანა…
+    .tooltiptext = სხვა ბრაუზერის ჩანართებს გადმოიტანს { -brand-short-name }.
 
 ## WebRTC Pop-up notifications
 
@@ -292,10 +385,44 @@ enable-devtools-popup-description = F12 მალსახმობის გა
 
 urlbar-default-placeholder =
     .defaultPlaceholder = მოძებნეთ ან შეიყვანეთ მისამართი
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = მოძებნეთ ან შეიყვანეთ მისამართი
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = ინტერნეტში ძიება
+    .aria-label = { $name } ძიება
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = მიუთითეთ საძიებო ფრაზა
+    .aria-label = ძიება { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = მიუთითეთ საძიებო ფრაზა
+    .aria-label = ძიება სანიშნებში
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = მიუთითეთ საძიებო ფრაზა
+    .aria-label = ძიება ისტორიაში
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = მიუთითეთ საძიებო ფრაზა
+    .aria-label = ძიება ჩანართებში
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = მოძებნეთ { $name } საძიებოთი ან შეიყვანეთ მისამართი
 urlbar-remote-control-notification-anchor =
-    .tooltiptext = ბრაუზერი იმყოფება დაშორებული მართვის ქვეშ
+    .tooltiptext = ბრაუზერი დაშორებული მართვის ქვეშაა
 urlbar-permissions-granted =
     .tooltiptext = ამ საიტისთვის დამატებითი უფლებები გაქვთ მინიჭებული.
 urlbar-switch-to-tab =
@@ -309,3 +436,67 @@ urlbar-page-action-button =
     .tooltiptext = ვებგვერდზე მოქმედებები
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name }-ში შენახვა
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = ძიება { $engine } საძიებოთი პირად ფანჯარაში
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = ძიება პირად ფანჯარაში
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } ძიება
+urlbar-result-action-sponsored = დაფინანსებული
+urlbar-result-action-switch-tab = ჩანართზე გადასვლა
+urlbar-result-action-visit = მონახულება
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = დააჭირეთ Tab-ს და გამოიყენეთ { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = დააჭირეთ Tab-ს და გამოიყენეთ { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = საძიებოდ გამოიყენეთ { $engine } პირდაპირ მისამართების ველიდან
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = საძიებოდ გამოიყენეთ { $engine } პირდაპირ მისამართების ველიდან
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = სანიშნების ძიება
+urlbar-result-action-search-history = ისტორიის ძიება
+urlbar-result-action-search-tabs = ჩანართების ძიება
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> სრულ ეკრანზეა
+fullscreen-warning-no-domain = დოკუმენტი სრულ ეკრანზეა
+fullscreen-exit-button = სრული ეკრანიდან გამოსვლა (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = სრული ეკრანიდან გამოსვლა (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> მართავს თქვენს მაჩვენებელს. მართვის დასაბრუნებლად დააჭირეთ Esc ღილაკს.
+pointerlock-warning-no-domain = ეს დოკუმენტი მართავს თქვენს მაჩვენებელს. მართვის დასაბრუნებლად დააჭირეთ Esc ღილაკს.

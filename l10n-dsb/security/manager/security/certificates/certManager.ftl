@@ -18,6 +18,7 @@ certmgr-mine = Maśo certifikaty wót toś tych organizacijow, kótarež was ide
 certmgr-remembered = Toś te certifikaty se wužywaju, aby was na websedłach identificěrowali.
 certmgr-people = Maśo certifikaty wó dataji, kótarež identificěruju toś tych luźi
 certmgr-servers = Maśo certifikaty w dataji, kótarež identificěruju toś te serwery
+certmgr-server = Toś te zapiski zmólkowe wuwześa serwerowego certifikata identificěruju
 certmgr-ca = Maśo certifikaty w dataji, kótarež identificěruju toś te certifikatowe awtority
 certmgr-detail-general-tab-title =
     .label = Powšykne
@@ -161,6 +162,10 @@ delete-ssl-cert-title =
     .title = Serwerowe wuwześa certifikata wulašowaś
 delete-ssl-cert-confirm = Cośo napšawdu toś te serwerowe wuwześa lašowaś?
 delete-ssl-cert-impact = Jolic wulašujośo serwerowe wuwześe, wóbnowijośo zwucone kontrole wěstoty za ten serwer a jo trěbne, až wón wužywa płaśiwy certifikat.
+delete-ssl-override-title =
+    .title = Serwerowe wuwześe certifikata wulašowaś
+delete-ssl-override-confirm = Cośo napšawdu toś to serwerowe wuwześe lašowaś?
+delete-ssl-override-impact = Jolic wulašujośo serwerowe wuwześe, wóbnowijośo zwucone kontrole wěstoty za ten serwer a jo trěbne, až wón wužywa płaśiwy certifikat.
 delete-ca-cert-title =
     .title = Certifikaty certifikatoweje awtority wulašowaś abo jim dowěru zajmjeś
 delete-ca-cert-confirm = Sćo pominał, toś te certifikaty certifikatoweje awtority lašowaś. Za zasajźone certifikaty buźo se dowěrygódnosć wótwónoźeś, což ma ten samske wustatkowanje. Cośo napšawdu lašowaś abo dowěru zajmjeś?
@@ -208,6 +213,15 @@ cert-not-verified-issuer-unknown = Toś ten certifikat njedajo se pśespytaś, d
 cert-not-verified-ca-invalid = Toś ten certifikat njedajo se pśespytaś, dokulaž certifikat certifikatoweje awtority jo njepłaśiwy.
 cert-not-verified_algorithm-disabled = Toś ten certifikat njedajo se pśespytaś, dokulaž jo se ze signěrowańskim algoritmom signěrował, kótaryž jo se znjemóžnił, dokulaž algoritmus njejo wěsty.
 cert-not-verified-unknown = Toś ten certifikat njedajo se z njeznatych pśicynow pśespytaś.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Žeden klientowy certifikat pósłaś
+# Used when no cert is stored for an override
+no-cert-stored-for-override = (Njeskłaźony)
+
+## Used to show whether an override is temporary or permanent
+
+permanent-override = Trajny
+temporary-override = Nachylny
 
 ## Add Security Exception dialog
 

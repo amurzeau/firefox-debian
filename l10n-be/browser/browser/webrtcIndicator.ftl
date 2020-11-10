@@ -19,5 +19,22 @@ webrtc-microphone-button =
     .title = Ваш мікрафон адкрыты для супольнага доступу. Пстрыкніце для кантролю доступу.
 webrtc-camera-button =
     .title = Ваша камера адкрыта для супольнага доступу. Пстрыкніце для кантролю доступу.
+webrtc-microphone-unmuted =
+    .title = Выключыць мікрафон
+webrtc-microphone-muted =
+    .title = Уключыць мікрафон
+webrtc-camera-unmuted =
+    .title = Выключыць камеру
+webrtc-camera-muted =
+    .title = Уключыць камеру
 webrtc-minimize =
     .title = Мінімізаваць індыкатар
+# This string will display as a tooltip on supported systems where we show
+# device sharing state in the OS notification area. We do not use these strings
+# on macOS, as global menu bar items do not have native tooltips.
+webrtc-camera-system-menu =
+    .label = Вы абагульваеце камеру. Націсніце для кантролю сумеснага доступу.
+webrtc-microphone-system-menu =
+    .label = Вы абагульваеце свой мікрафон. Націсніце для кантролю сумеснага доступу.
+webrtc-screen-system-menu =
+    .label = Вы абагульваеце акно ці экран. Націсніце для кантролю сумеснага доступу.

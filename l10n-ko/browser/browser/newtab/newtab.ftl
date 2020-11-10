@@ -51,6 +51,10 @@ newtab-confirm-delete-history-p1 = 정말 기록에서 이 페이지의 모든 �
 # "This action" refers to deleting a page from history.
 newtab-confirm-delete-history-p2 = 이 작업은 취소할 수 없습니다.
 
+## Top Sites - Sponsored label
+
+newtab-topsite-sponsored = 스폰서
+
 ## Context Menu - Action Tooltips.
 
 # General tooltip for context menus.
@@ -89,7 +93,7 @@ newtab-menu-show-privacy-info = 우리의 스폰서와 개인 정보 보호
 ## Message displayed in a modal window to explain privacy and provide context for sponsored content.
 
 newtab-privacy-modal-button-done = 완료
-newtab-privacy-modal-button-manage = 후원 콘텐츠 설정 관리
+newtab-privacy-modal-button-manage = 스폰서 콘텐츠 설정 관리
 newtab-privacy-modal-header = 개인 정보는 중요합니다.
 newtab-privacy-modal-paragraph-2 =
     매력적인 이야기를 정리해서 보여주는 것 뿐만 아니라, 엄선된 스폰서로 부터
@@ -154,7 +158,7 @@ newtab-section-menu-add-topsite = 상위 사이트 추가
 newtab-section-menu-add-search-engine = 검색 엔진 추가
 newtab-section-menu-move-up = 위로 이동
 newtab-section-menu-move-down = 아래로 이동
-newtab-section-menu-privacy-notice = 개인 정보 보호 정책
+newtab-section-menu-privacy-notice = 개인정보처리방침
 
 ## Section aria-labels
 
@@ -184,7 +188,7 @@ newtab-empty-section-topstories = 다 왔습니다. { $provider }에서 제공�
 newtab-discovery-empty-section-topstories-header = 모두 따라 잡았습니다!
 newtab-discovery-empty-section-topstories-content = 더 많은 이야기는 나중에 다시 확인해 보세요.
 newtab-discovery-empty-section-topstories-try-again-button = 다시 시도
-newtab-discovery-empty-section-topstories-loading = 읽는 중…
+newtab-discovery-empty-section-topstories-loading = 로드 중…
 # Displays when a layout in a section took too long to fetch articles.
 newtab-discovery-empty-section-topstories-timed-out = 이런! 이 섹션을 거의 다 로드했지만, 안 된 부분이 있습니다.
 

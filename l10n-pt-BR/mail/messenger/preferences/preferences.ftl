@@ -10,6 +10,8 @@ preferences-title =
             [windows] Opções
            *[other] Preferências
         }
+category-list =
+    .aria-label = Categorias
 pane-general-title = Geral
 category-general =
     .tooltiptext = { pane-general-title }
@@ -19,9 +21,9 @@ category-compose =
 pane-privacy-title = Privacidade e Segurança
 category-privacy =
     .tooltiptext = Privacidade e Segurança
-pane-chat-title = Bate-papo
+pane-chat-title = Conversa
 category-chat =
-    .tooltiptext = Bate-papo
+    .tooltiptext = Conversa
 pane-calendar-title = Agenda
 category-calendar =
     .tooltiptext = Agenda
@@ -41,7 +43,6 @@ composition-addressing-header = Endereçamento
 privacy-main-header = Privacidade
 privacy-passwords-header = Senhas
 privacy-junk-header = Spam
-privacy-data-collection-header = Coleta e uso de dados
 collection-header = Coleta e uso de dados pelo { -brand-short-name }
 collection-description = Nos esforçamos para proporcionar escolhas e coletar somente o necessário para melhorar e fornecer o { -brand-short-name } para todos. Sempre pedimos permissão antes de receber informações pessoais.
 collection-privacy-notice = Aviso de privacidade
@@ -62,7 +63,7 @@ privacy-security-header = Segurança
 privacy-scam-detection-title = Detecção de fraudes
 privacy-anti-virus-title = Antivírus
 privacy-certificates-title = Certificados
-chat-pane-header = Bate papo
+chat-pane-header = Conversa
 chat-status-title = Status
 chat-notifications-title = Notificações
 chat-pane-styling-header = Estilos
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = l
 confirm-messenger-language-change-description = Reiniciar o { -brand-short-name } para aplicar estas alterações
 confirm-messenger-language-change-button = Aplicar e reiniciar
-update-pref-write-failure-title = Falha de escrita
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Não foi possível salvar a preferência. Falha ao escrever no arquivo: { $path }
 update-setting-write-failure-title = Erro ao salvar preferências de atualização
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -91,12 +88,11 @@ update-in-progress-ok-button = &Descartar
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Continuar
+account-button = Configurações da conta
 addons-button = Extensões e Temas
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Confirme sua identidade para criar uma senha mestra.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Para criar uma senha mestra, insira suas credenciais de acesso ao Windows. Isso ajuda a proteger a segurança de suas contas.
 # This message can be seen by trying to add a Master Password.
@@ -104,6 +100,13 @@ master-password-os-auth-dialog-message-win = Para criar uma senha mestra, insira
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = criar uma senha mestra
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Para criar uma senha principal, insira suas credenciais de acesso ao Windows. Isso ajuda a proteger a segurança de suas contas.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = criar uma senha principal
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -214,7 +217,7 @@ search-integration-label =
 config-editor-button =
     .label = Editor de configurações…
     .accesskey = E
-return-receipts-description = Determine como o { -brand-short-name } trata as confirmações de leitura.
+return-receipts-description = Determinar como o { -brand-short-name } trata confirmações de leitura.
 return-receipts-button =
     .label = Confirmações de leitura…
     .accesskey = C
@@ -381,8 +384,8 @@ close-move-delete =
 display-name-label =
     .value = Nome de exibição:
 condensed-addresses-label =
-    .label = Para pessoas em meus contatos, exibir somente o nome
-    .accesskey = P
+    .label = Exibir somente o nome de pessoas em meu catálogo de endereços
+    .accesskey = s
 
 ## Compose Tab
 
@@ -502,7 +505,7 @@ history-label =
     .label = Lembrar sites e links que eu visitei
     .accesskey = r
 cookies-label =
-    .label = Aceitar cookies dos sites
+    .label = Aceitar cookies de sites
     .accesskey = A
 third-party-label =
     .value = Aceitar cookies de terceiros:
@@ -541,6 +544,15 @@ master-password-label =
 master-password-button =
     .label = Modificar senha mestra…
     .accesskey = M
+primary-password-description = Uma senha principal protege todas as suas senhas, mas você deve digitá-la uma vez por sessão.
+primary-password-label =
+    .label = Usar uma senha principal
+    .accesskey = U
+primary-password-button =
+    .label = Alterar senha principal…
+    .accesskey = A
+forms-primary-pw-fips-title = Você está no momento no modo FIPS. O modo FIPS exige uma senha principal não vazia.
+forms-master-pw-fips-desc = Falha na alteração da senha
 junk-description = Defina suas configurações padrão para spam. Opções específicas para cada conta podem ser definidas em “Configurar contas”.
 junk-label =
     .label = Ao marcar mensagens como spam:
@@ -594,9 +606,9 @@ startup-label =
     .value = Ao iniciar o { -brand-short-name }:
     .accesskey = o
 offline-label =
-    .label = Manter minhas contas de bate-papo desconectadas
+    .label = Manter minhas contas de conversa desconectadas
 auto-connect-label =
-    .label = Conectar-se às minhas contas de bate-papo
+    .label = Conectar minhas contas de conversa automaticamente
 
 ## Note: idle-label is displayed first, then there's a field where the user
 ## can enter a number, and itemTime is displayed at the end of the line.
@@ -666,8 +678,8 @@ style-paper =
     .label = Folhas de papel
 style-simple =
     .label = Simples
-preview-label = Pré-visualizar:
-no-preview-label = Nenhum pré-visualização disponível
+preview-label = Visualizar:
+no-preview-label = Nenhuma visualização disponível
 no-preview-description = Este tema não é válido ou está atualmente indisponível (extensão desativada, modo de segurança, …).
 chat-variant-label =
     .value = Variante:

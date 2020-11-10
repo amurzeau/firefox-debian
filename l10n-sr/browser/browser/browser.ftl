@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Приватно прегледање)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Приватно прегледање)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Приватно прегледање)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Приватно прегледање)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -112,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Укуцајте мање, пронађите више: претражујте { $engineName } директно из ваше адресне траке.
 urlbar-search-tips-redirect-2 = Започните вашу претрагу у адресној траци да бисте видели { $engineName } предлоге и вашу историју прегледања.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Обележивачи
+urlbar-search-mode-tabs = Језичци
+urlbar-search-mode-history = Историја
+
 ##
 
 urlbar-geolocation-blocked =
@@ -138,12 +142,10 @@ urlbar-midi-blocked =
     .tooltiptext = Блокирали сте MIDI приступ за овај веб сајт.
 urlbar-install-blocked =
     .tooltiptext = Зауставили сте инсталацију додатка за ову веб локацију.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Уреди ову забелешку ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -160,47 +162,112 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Уклони проширење
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Пошаљи језичак на уређај
+            [few] Пошаљи { $tabCount } језичка на уређај
+           *[other] Пошаљи { $tabCount } језичака на уређај
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Пошаљи језичак на уређај
+            [few] Пошаљи { $tabCount } језичка на уређај
+           *[other] Пошаљи { $tabCount } језичака на уређај
+        }
+page-action-pocket-panel =
+    .label = Сачувај страницу са услугом { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Копирај везу
+page-action-copy-url-urlbar =
+    .tooltiptext = Копирај везу
+page-action-email-link-panel =
+    .label = Веза е-поште…
+page-action-email-link-urlbar =
+    .tooltiptext = Веза е-поште…
+page-action-share-url-panel =
+    .label = Подели
+page-action-share-url-urlbar =
+    .tooltiptext = Подели
+page-action-share-more-panel =
+    .label = Још…
+page-action-send-tab-not-ready =
+    .label = Синхронизујем уређаје…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Закачи језичак
+page-action-pin-tab-urlbar =
+    .tooltiptext = Закачи језичак
+page-action-unpin-tab-panel =
+    .label = Откачи језичак
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Откачи језичак
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
     .label = Сакриј алатне траке
-    .accesskey = С
+    .accesskey = H
 full-screen-exit =
     .label = Обустави приказ преко целог екрана
-    .accesskey = ц
+    .accesskey = F
 
 ## Search Engine selection buttons (one-offs)
 
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Овај пут потражи користећи:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Промени поставке претраге
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Промени поставке претраге
-
 search-one-offs-context-open-new-tab =
     .label = Претражи у новом језичку
-    .accesskey = ј
+    .accesskey = T
 search-one-offs-context-set-as-default =
     .label = Постави као подразумевани претраживач
-    .accesskey = т
+    .accesskey = D
 search-one-offs-context-set-as-default-private =
-    .label = Поставите као подразумевани претраживач за приватни Windows
-    .accesskey = П
+    .label = Постави као подразумевани претраживач за приватни Windows
+    .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Обележивачи ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Језичци ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Историја ({ $restrict })
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Прикажи уређивач приликом чувања
-    .accesskey = П
-
+    .accesskey = S
 bookmark-panel-done-button =
     .label = Готово
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -232,7 +299,7 @@ identity-ev-owner-label = Сертификат издан за:
 identity-description-custom-root = Mozilla не препознаје издавача овог сертификата. Можда је додат из вашег оперативног система или од стране администратора. <label data-l10n-name="link">Сазнајте више</label>
 identity-remove-cert-exception =
     .label = Уклони изузетак
-    .accesskey = и
+    .accesskey = R
 identity-description-insecure = Веза до овог сајта није приватна. Информације које шаљете могу бити прочитане од стране других (као што су лозинке, поруке, кредитне картице, итд.).
 identity-description-insecure-login-forms = Информације за пријаву које сте унели на овој страницу нису сигурне и могу бити угрожене.
 identity-description-weak-cipher-intro = Веза до овог сајта користи слабо шифровање и није приватна.
@@ -247,10 +314,10 @@ identity-learn-more =
     .value = Сазнајте више
 identity-disable-mixed-content-blocking =
     .label = Онемогући заштиту за сада
-    .accesskey = н
+    .accesskey = D
 identity-enable-mixed-content-blocking =
     .label = Омогући заштиту
-    .accesskey = О
+    .accesskey = E
 identity-more-info-link-text =
     .label = Више информација
 
@@ -269,20 +336,17 @@ browser-window-close-button =
 
 popup-select-camera =
     .value = Камера за дељење:
-    .accesskey = К
+    .accesskey = C
 popup-select-microphone =
     .value = Микрофон за дељење:
-    .accesskey = М
+    .accesskey = M
 popup-all-windows-shared = Сви видљиви прозори на екрану ће бити подељени.
-
 popup-screen-sharing-not-now =
     .label = Не сада
-    .accesskey = с
-
+    .accesskey = w
 popup-screen-sharing-never =
     .label = Немој никада
-    .accesskey = Н
-
+    .accesskey = N
 popup-silence-notifications-checkbox = Онемогућите обавештења од { -brand-short-name }-а током дељења
 popup-silence-notifications-checkbox-warning = { -brand-short-name } неће приказивати обавештења док делите.
 
@@ -299,27 +363,98 @@ sharing-warning-disable-for-session =
 
 enable-devtools-popup-description = Да бисте користили пречицу F12, прво отворите DevTools преко Web Developer менија.
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Претражи или унеси адресу
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Претражи или унеси адресу
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Претражи веб
+    .aria-label = Претражи  уз { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Унеси појмове за претрагу
+    .aria-label = Претражи { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Унеси појмове за претрагу
+    .aria-label = Претражи забелешке
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Унеси појмове за претрагу
+    .aria-label = Претражи историју
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Унеси појмове за претрагу
+    .aria-label = Претражи језичке
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Претражи уз { $name } или унеси адресу
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Прегледач је под удаљеним управљањем
 urlbar-permissions-granted =
     .tooltiptext = Дали сте овој страници додатне дозволе.
 urlbar-switch-to-tab =
     .value = Премести на језичак:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Екстензија:
-
 urlbar-go-button =
     .tooltiptext = Приказ адресе уписане у траку за адресе
 urlbar-page-action-button =
     .tooltiptext = Радње странице
 urlbar-pocket-button =
     .tooltiptext = Сачувај са услугом { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Претражите уз { $engine } у приватном режиму
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Претражите у приватном режиму
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Претражи са { $engine }
+urlbar-result-action-switch-tab = Пребаци на језичак
+urlbar-result-action-visit = Посети
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> је сада у приказу преко целог екрана
+fullscreen-warning-no-domain = Овај документ се приказује преко целог екрана
+fullscreen-exit-button = Изађи из приказа преко целог екрана (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Изађи из приказа преко целог екрана (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> управља са вашим показивачем. Притисните Esc да преузмете контролу.
+pointerlock-warning-no-domain = Овај документ управља са вашим показивачем. Притисните Esc да преузмете контролу.

@@ -52,6 +52,8 @@ about-paragraph = Thunderbird domine le marché de la messagerie électronique e
 about-paragraph-2 = <b> Thunderbird est financé par des utilisatrices et utilisateurs comme vous ! Si vous aimez Thunderbird, pensez à faire un don. </b> La meilleure façon pour vous de garantir la disponibilité de Thunderbird est de
 about-donation = faire un don
 
+about-paragraph-consider-donation = <b>Thunderbird est financé par des utilisatrices et utilisateurs comme vous ! Si vous aimez Thunderbird, pensez à faire un don.</b> La meilleure façon pour vous de garantir la disponibilité de Thunderbird est de <a data-l10n-name="donation-link">faire un don</a>.
+
 explore-link = Découvrir les fonctionnalités
 support-link = Assistance
 involved-link = Contribuer

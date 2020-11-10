@@ -53,16 +53,17 @@ move-to-end =
 move-to-new-window =
     .label = Flyt til nyt vindue
     .accesskey = v
-undo-close-tab =
-    .label = Fortryd lukning af faneblad
-    .accesskey = l
 tab-context-close-multiple-tabs =
     .label = Luk flere faneblade
     .accesskey = a
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
-            [1] Fortryk lukning af faneblad
+            [1] Fortryd lukning af faneblad
            *[other] Fortryd lukning af faneblade
         }
     .accesskey = r
@@ -77,4 +78,20 @@ move-tabs =
     .accesskey = y
 move-tab =
     .label = Flyt faneblad
+    .accesskey = y
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Luk faneblad
+            [one] Luk et faneblad
+           *[other] Luk faneblade
+        }
+    .accesskey = u
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Flyt faneblad
+            [one] Flyt et faneblad
+           *[other] Flyt faneblade
+        }
     .accesskey = y

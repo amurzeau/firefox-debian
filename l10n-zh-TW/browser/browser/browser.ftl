@@ -17,14 +17,13 @@
 browser-main-window =
     .data-title-default = { -brand-full-name }
     .data-title-private = { -brand-full-name }（隱私瀏覽模式）
-    .data-content-title-default = { $content-title } - { -brand-full-name }
-    .data-content-title-private = { $content-title } - { -brand-full-name }（隱私瀏覽模式）
-
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name }（隱私瀏覽模式）
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -36,10 +35,9 @@ browser-main-window =
 #  $content-title (String): the title of the web content.
 browser-main-window-mac =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } -（隱私瀏覽模式）
+    .data-title-private = { -brand-full-name } —（隱私瀏覽模式）
     .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } -（隱私瀏覽模式）
-
+    .data-content-title-private = { $content-title } —（隱私瀏覽模式）
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -111,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = 打得更少，找到更多: 直接從網址列進行 { $engineName } 搜尋。
 urlbar-search-tips-redirect-2 = 在網址列進行搜尋，就可看見由 { $engineName } 及瀏覽紀錄提供的搜尋建議。
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = 使用此捷徑，讓您更快找到想要的東西。
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = 書籤
+urlbar-search-mode-tabs = 分頁
+urlbar-search-mode-history = 瀏覽紀錄
 
 ##
 
@@ -138,12 +145,10 @@ urlbar-midi-blocked =
     .tooltiptext = 您已封鎖此網站的 MIDI 存取權限。
 urlbar-install-blocked =
     .tooltiptext = 您已封鎖此網站安裝附加元件。
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = 編輯此書籤 ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -160,6 +165,45 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = 移除擴充套件
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label = 傳送 { $tabCount } 個分頁到裝置
+page-action-send-tabs-urlbar =
+    .tooltiptext = 傳送 { $tabCount } 個分頁到裝置
+page-action-pocket-panel =
+    .label = 將頁面儲存至 { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = 複製鏈結
+page-action-copy-url-urlbar =
+    .tooltiptext = 複製鏈結
+page-action-email-link-panel =
+    .label = 郵寄鏈結…
+page-action-email-link-urlbar =
+    .tooltiptext = 郵寄鏈結…
+page-action-share-url-panel =
+    .label = 分享
+page-action-share-url-urlbar =
+    .tooltiptext = 分享
+page-action-share-more-panel =
+    .label = 更多…
+page-action-send-tab-not-ready =
+    .label = 正在同步裝置…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = 釘選分頁
+page-action-pin-tab-urlbar =
+    .tooltiptext = 釘選分頁
+page-action-unpin-tab-panel =
+    .label = 還原成普通分頁
+page-action-unpin-tab-urlbar =
+    .tooltiptext = 還原成普通分頁
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -171,17 +215,15 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = 這次使用下列搜尋引擎搜尋:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = 變更搜尋設定
 search-one-offs-change-settings-compact-button =
     .tooltiptext = 修改搜尋設定
-
 search-one-offs-context-open-new-tab =
     .label = 在新分頁中搜尋
     .accesskey = T
@@ -191,16 +233,34 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = 設為隱私瀏覽模式中的預設搜尋引擎
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName }（{ $alias }）
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = 書籤（{ $restrict }）
+search-one-offs-tabs =
+    .tooltiptext = 分頁（{ $restrict }）
+search-one-offs-history =
+    .tooltiptext = 瀏覽紀錄（{ $restrict }）
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = 儲存時顯示編輯器
     .accesskey = S
-
 bookmark-panel-done-button =
     .label = 完成
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -220,6 +280,17 @@ identity-passive-loaded = 本頁面中的部分內容（例如圖片）並不安
 identity-active-loaded = 您已停用此頁面中的保護。
 identity-weak-encryption = 此頁面使用了弱強度的加密。
 identity-insecure-login-forms = 在此頁面輸入的登入資訊可能會被洩漏。
+identity-https-only-connection-upgraded = （升級 HTTPS）
+identity-https-only-label = 純 HTTPS 模式
+identity-https-only-dropdown-on =
+    .label = 開啟
+identity-https-only-dropdown-off =
+    .label = 關閉
+identity-https-only-dropdown-off-temporarily =
+    .label = 暫時關閉
+identity-https-only-info-turn-on2 = 若您想要 { -brand-short-name } 盡可能升級使用安全連線，請對此網站開啟純 HTTPS 模式。
+identity-https-only-info-turn-off2 = 若網頁外觀看起來不正常，您可能會想要針對此網站關閉純 HTTPS 模式，使用不安全的 HTTP 重新載入。
+identity-https-only-info-no-upgrade = 無法將網站連線從 HTTP 升級。
 identity-permissions =
     .value = 權限
 identity-permissions-reload-hint = 您可能需要重新載入頁面才能讓變更生效。
@@ -265,6 +336,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = 關閉
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = 匯入書籤…
+    .tooltiptext = 從另一套瀏覽器複製書籤到 { -brand-short-name }。
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -274,15 +351,12 @@ popup-select-microphone =
     .value = 要分享的麥克風:
     .accesskey = M
 popup-all-windows-shared = 將分享您畫面上所有可見的視窗。
-
 popup-screen-sharing-not-now =
     .label = 現在不要
     .accesskey = w
-
 popup-screen-sharing-never =
     .label = 永不允許
     .accesskey = N
-
 popup-silence-notifications-checkbox = 分享時，不顯示 { -brand-short-name } 的通知
 popup-silence-notifications-checkbox-warning = { -brand-short-name } 將不會在進行分享時顯示通知。
 
@@ -299,27 +373,122 @@ sharing-warning-disable-for-session =
 
 enable-devtools-popup-description = 請透過「網頁開發者」選單開啟開發者工具，才能使用 F12 快速鍵。
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = 搜尋或輸入網址
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = 搜尋或輸入網址
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = 搜尋 Web
+    .aria-label = 使用 { $name } 搜尋
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = 輸入搜尋詞彙
+    .aria-label = 搜尋 { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = 輸入搜尋詞彙
+    .aria-label = 搜尋書籤
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = 輸入搜尋詞彙
+    .aria-label = 搜尋瀏覽紀錄
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = 輸入搜尋詞彙
+    .aria-label = 搜尋分頁
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = 使用 { $name } 搜尋或輸入網址
 urlbar-remote-control-notification-anchor =
     .tooltiptext = 瀏覽器正被遠端控制中
 urlbar-permissions-granted =
     .tooltiptext = 您已授予此網站更多權限。
 urlbar-switch-to-tab =
     .value = 切換到分頁:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = 擴充套件:
-
 urlbar-go-button =
     .tooltiptext = 按此前往網址列中的網址
 urlbar-page-action-button =
     .tooltiptext = 頁面操作
 urlbar-pocket-button =
     .tooltiptext = 儲存至 { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = 於隱私瀏覽視窗使用 { $engine } 搜尋
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = 用隱私瀏覽視窗搜尋
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = 使用 { $engine } 進行搜尋
+urlbar-result-action-sponsored = 贊助項目
+urlbar-result-action-switch-tab = 切換至該分頁
+urlbar-result-action-visit = 前往
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = 按 Tab 鍵，使用 { $engine } 搜尋
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = 按 Tab 鍵，搜尋 { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = 從網址列直接使用 { $engine } 搜尋
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = 從網址列直接搜尋 { $engine }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = 搜尋書籤
+urlbar-result-action-search-history = 搜尋瀏覽記錄
+urlbar-result-action-search-tabs = 搜尋分頁
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 已進入全螢幕模式
+fullscreen-warning-no-domain = 此文件已進入全螢幕模式
+fullscreen-exit-button = 離開全螢幕模式（Esc）
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = 離開全螢幕模式（Esc）
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 可控制您的滑鼠游標，按 Esc 取回控制權。
+pointerlock-warning-no-domain = 此文件可控制您的滑鼠游標，按 Esc 取回控制權。

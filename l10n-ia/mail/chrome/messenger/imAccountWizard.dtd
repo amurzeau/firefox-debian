@@ -4,6 +4,8 @@
 
 <!ENTITY windowTitle.label            "Assistente de chat">
 
+<!ENTITY accountProtocolTitle.label   "Rete chat">
+<!ENTITY accountProtocolInfo.label    "Elige le rete de tu conto chat.">
 <!ENTITY accountProtocolField.label   "Rete:">
 <!ENTITY accountProtocolGetMore.label "Reciper plus...">
 
@@ -16,10 +18,15 @@
 <!ENTITY accountPasswordManager.label "Le contrasigno inserite hic essera immagazinate in le gestor de contrasignos. Lassa iste quadro vacue si tu vole que le contrasigno te es demandate a cata connexion.">
 
 <!ENTITY accountAdvancedTitle.label   "Optiones avantiate">
+<!ENTITY accountAdvancedInfo.label    "Senti te libere de saltar iste passo, si tu prefere.">
 <!ENTITY accountAdvanced.newMailNotification.label   "Notificar nove emails">
+<!ENTITY accountAliasGroupbox.caption "Alias local">
 <!ENTITY accountAliasField.label      "Alias:">
+<!ENTITY accountAliasInfo.label       "Isto essera monstrate solo in tu conversationes quando tu parla, le contactos remote non lo videra.">
 <!ENTITY accountProxySettings.caption "Parametros de proxy">
 <!ENTITY accountProxySettings.change.label     "Cambiar…">
 <!ENTITY accountProxySettings.change.accessKey "C">
 
 <!ENTITY accountSummaryTitle.label   "Summario">
+<!ENTITY accountSummaryInfo.label    "Un summario del informationes que tu ha inserite es monstrate infra. Verifica lo ante que le conto es create.">
+<!ENTITY accountSummary.connectNow.label "Connecter se ora a iste conto.">

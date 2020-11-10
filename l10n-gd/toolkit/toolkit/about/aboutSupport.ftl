@@ -15,6 +15,9 @@ extensions-name = Ainm
 extensions-enabled = Air a chur an comas
 extensions-version = Tionndadh
 extensions-id = ID
+support-addons-name = Ainm
+support-addons-version = Tionndadh
+support-addons-id = ID
 security-software-title = Bathar-bog tèarainteachd
 security-software-type = Seòrsa
 security-software-name = Ainm
@@ -82,8 +85,6 @@ graphics-workarounds-title = Workarounds
 place-database-title = Stòr-dàta nan àitichean
 place-database-integrity = Treibhdhireas
 place-database-verify-integrity = Dearbh an treibhdhireas
-js-title = JavaScript
-js-incremental-gc = GC ceum air cheum
 a11y-title = So-ruigsinneachd
 a11y-activated = Air gnìomhachadh
 a11y-force-disabled = Casg air so-ruigsinneachd
@@ -108,9 +109,7 @@ restart-in-safe-mode-label = Ath-thòisich leis na tuilleadan air an cur à coma
 
 audio-backend = Audio Backend
 max-audio-channels = Seanailean air a’ char as motha
-channel-layout = Co-dhealbhadh nan seanail as fhearr dhut
 sample-rate = Reat samplachaidh as fhearr dhut
-
 media-title = Meadhanan
 media-output-devices-title = Uidheaman às-chuir
 media-input-devices-title = Uidheaman ion-chuir
@@ -144,6 +143,7 @@ intl-regional-prefs = Roghainnean roinneil
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -262,7 +262,6 @@ unknown-failure = Blocklisted; failure code { $failureCode }
 
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video Decoder
-d3d9video-crash-buard = D3D9 Video Decoder
 d3d9video-crash-guard = D3D9 Video Decoder
 glcontext-crash-guard = OpenGL
 

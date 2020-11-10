@@ -8,7 +8,7 @@ aboutDialog-title =
 releaseNotes-link = Achike natzijoj
 
 update-checkForUpdatesButton =
-    .label = Kekanöx taq k'exoj
+    .label = Kenik'öx taq k'exoj
     .accesskey = K
 
 update-updateButton =
@@ -17,7 +17,7 @@ update-updateButton =
 
 update-checkingForUpdates = Tajin yekanöx taq k'exoj ruwäch…
 update-downloading = <img data-l10n-name="icon"/>Tajin niqasäx k'exoj ruwäch — <label data-l10n-name="download-status"/>
-update-applying = Rokisaxik k'exoj ruwäch…
+update-applying = Nokisäx k'exoj…
 
 update-failed = Man xuchäp ta ri k'exoj ruwäch. <label data-l10n-name="failed-link">Taqasaj ri k'ak'a' ruwäch</label>
 update-failed-main = Man xuchäp ta ri k'exoj ruwäch. <a data-l10n-name="failed-link-main">Taqasaj ri k'ak'a' ruwäch</a>
@@ -30,7 +30,7 @@ update-manual = Wachel taq k'exoj ruwäch pa <label data-l10n-name="manual-link"
 
 update-unsupported = Man tikirel ta chik nab'an taq k'exoj pa re q'inoj re'. <label data-l10n-name="unsupported-link">Tetamäx ch'aqa' chik</label>
 
-update-restarting = Tajin nitikirisäx chik…
+update-restarting = Nitikirisäx…
 
 channel-description = Tajin nawokisaj ri q'axab'äl <label data-l10n-name="current-channel"></label> kiq'axab'al taq k'exoj ruwäch.
 
@@ -42,9 +42,9 @@ community-2 = { -brand-short-name } wachib'en ruma <label data-l10n-name="commun
 
 helpus = ¿La nawajo' yato'on? <label data-l10n-name="helpus-donateLink">Taya' jun sipanïk</label> o <label data-l10n-name="helpus-getInvolvedLink">¡kato'on!</label>
 
-bottomLinks-license = Na'oj chi rij ya'öl q’ij
+bottomLinks-license = Rutzijol Ya'öl Q'ij
 bottomLinks-rights = Kich'ojib'al K'isib'äl-Okisanel
-bottomLinks-privacy = Runa'ojil ichinanem
+bottomLinks-privacy = Ichinan Na'oj
 
 # Example of resulting string: 66.0.1 (64-bit)
 # Variables:

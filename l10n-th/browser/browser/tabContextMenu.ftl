@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = ย้ายไปยังหน้าต่างใหม่
     .accesskey = ม
-undo-close-tab =
-    .label = เลิกทำการปิดแท็บ
-    .accesskey = ด
 tab-context-close-multiple-tabs =
     .label = ปิดหลายแท็บ
     .accesskey = ล
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -78,3 +79,17 @@ move-tabs =
 move-tab =
     .label = ย้ายแท็บ
     .accesskey = บ
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] ปิดแท็บ
+           *[other] ปิดแท็บ
+        }
+    .accesskey = ป
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] ย้ายแท็บ
+           *[other] ย้ายแท็บ
+        }
+    .accesskey = ย

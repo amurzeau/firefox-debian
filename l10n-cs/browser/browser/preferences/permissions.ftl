@@ -5,66 +5,53 @@
 permissions-window =
     .title = Výjimky
     .style = width: 36em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Adresa webového serveru
     .accesskey = d
-
 permissions-block =
     .label = Blokovat
     .accesskey = B
-
 permissions-session =
     .label = Povolit pro relaci
     .accesskey = o
-
 permissions-allow =
     .label = Povolit
     .accesskey = P
-
 permissions-site-name =
     .label = Server
-
 permissions-status =
     .label = Stav
-
 permissions-remove =
     .label = Odebrat server
     .accesskey = r
-
 permissions-remove-all =
     .label = Odebrat všechny servery
     .accesskey = e
-
 permissions-button-cancel =
     .label = Zrušit
     .accesskey = Z
-
 permissions-button-ok =
     .label = Uložit změny
     .accesskey = U
-
+permission-dialog =
+    .buttonlabelaccept = Uložit změny
+    .buttonaccesskeyaccept = U
 permissions-autoplay-menu = Výchozí nastavení:
-
 permissions-searchbox =
     .placeholder = Hledat
-
 permissions-capabilities-autoplay-allow =
     .label = povolit přehrávání zvuků i videí
 permissions-capabilities-autoplay-block =
     .label = blokovat přehrávání zvuků
 permissions-capabilities-autoplay-blockall =
     .label = blokovat přehrávání zvuků i videí
-
 permissions-capabilities-allow =
     .label = Povolit
 permissions-capabilities-block =
     .label = Blokovat
 permissions-capabilities-prompt =
     .label = Vždy se zeptat
-
 permissions-capabilities-listitem-allow =
     .value = Povolit
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = Neplatný název serveru
 permissions-invalid-uri-label = Vložte prosím platný název serveru
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = Výjimky z blokování obsahu
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Na následujících serverech jste vypnuli funkci blokování obsahu.
 
 permissions-exceptions-etp-window =
     .title = Výjimky pro používání rozšířené ochrany proti sledování
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Důvěryhodné servery pro instalaci doplňků
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Zde můžete určit, které servery mohou instalovat doplňky. Zadejte přesnou adresu serveru a klepněte na tlačítko Povolit.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Servery, které mohou automaticky přehrávat média
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Zde můžete určit, které servery mohou automaticky spouštět přehrávání médií se zvukem. Zadejte adresu serveru a klepněte na tlačítko Blokovat nebo Povolit.
 
 ## Site Permissions - Autoplay
 

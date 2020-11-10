@@ -32,6 +32,8 @@ cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 
 cert-error-details-cert-chain-label = Lanac certifikata:
 
+open-in-new-window-for-csp-or-xfo-error = Otvori stranicu u novom prozoru
+
 ## Messages used for certificate error titles
 
 connectionFailure-title = Neuspješno povezivanje
@@ -59,8 +61,14 @@ proxyResolveFailure-title = Ne mogu da pronađem proxy server
 redirectLoop-title = Stranica ne preusmjerava pravilno
 unknownSocketType-title = Neočekivani odgovor od servera
 nssFailure2-title = Neuspjela sigurna veza
-cspBlocked-title = Blokirala sigurnosna politika sadržaja
+csp-xfo-error-title = { -brand-short-name } ne može otvoriti ovu stranicu
 corruptedContentError-title = Oštećen sadržaj
 remoteXUL-title = Remote XUL
 sslv3Used-title = Uspostava sigurne veze nije uspjela
 inadequateSecurityError-title = Vaša veza nije sigurna
+blockedByPolicy-title = Blokirana stranica
+clockSkewError-title = Sat vašeg računara je pogrešan
+networkProtocolError-title = Greška mrežnog protokola
+nssBadCert-title = Upozorenje: Potencijalni sigurnosni rizik
+nssBadCert-sts-title = Nisam se povezao: Potencijalni sigurnosni problem
+certerror-mitm-title = Softver sprječava da se { -brand-short-name } sigurno poveže na ovu stranicu

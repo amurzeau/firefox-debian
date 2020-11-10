@@ -27,6 +27,11 @@ findbar-case-sensitive =
     .accesskey = C
     .tooltiptext = Nana'uì' ngà nej mayûskula
 
+findbar-match-diacritics =
+    .label = Nāgi’iaj hue'ê nej diacrîtikoCoincidir diacríticos
+    .accesskey = ā
+    .tooltiptext = Nānin’in lêchra ngà nej asênto nī lechrâ achrûn hīô’ (dàj rûn’, ngà nānà’uì’ "como", "cómo" nī si nani’in man
+
 findbar-entire-word =
     .label = Nuguan' hua chre'e
     .accesskey = W

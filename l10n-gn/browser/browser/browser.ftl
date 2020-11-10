@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -52,11 +52,11 @@ urlbar-identity-button =
 ## Tooltips for images appearing in the address bar
 
 urlbar-services-notification-anchor =
-    .tooltiptext = Eike ñe’ẽmondo ñemohenda ra'ãngarupápe
+    .tooltiptext = Eike ñe’ẽmondo ñemohenda ra’ãngarupápe
 urlbar-web-notification-anchor =
     .tooltiptext = Emoambue eipotárõ oñemog̃uahẽ ndéve ñemomarandu ko ñandutirenda omondóva.
 urlbar-midi-notification-anchor =
-    .tooltiptext = Eike ta'ãngarupa MIDI pe
+    .tooltiptext = Eike ta’ãngarupa MIDI pe
 urlbar-eme-notification-anchor =
     .tooltiptext = Eñangareko DRM software jepuru rehe
 urlbar-web-authn-anchor =
@@ -107,8 +107,17 @@ urlbar-tip-icon-description =
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
-urlbar-search-tips-onboard = Ehai sa'ive, ejuhuve: Eheka { $engineName } kundaharape rendaite guive.
+urlbar-search-tips-onboard = Ehai sa’ive, ejuhuve: Eheka { $engineName } kundaharape rendaite guive.
 urlbar-search-tips-redirect-2 = Eñepyrũ eheka kundaharape rendápe ehecha hag̃ua { $engineName } ñe’ẽporã ha ikundaha rembiasakue.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Eiporavo ko jeike pya’eha ejuhu pya’eve hag̃ua ehekáva.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Techaukahakuéra
+urlbar-search-mode-tabs = Tendaykekuéra
+urlbar-search-mode-history = Tembiasakue
 
 ##
 
@@ -119,7 +128,7 @@ urlbar-xr-blocked =
 urlbar-web-notifications-blocked =
     .tooltiptext = Ejokóma ñemomarandu ko ñanduti rendápe g̃uarã.
 urlbar-camera-blocked =
-    .tooltiptext = Ejokóma ne ta'ãngamýi ko ñanduti rendápe g̃uarã.
+    .tooltiptext = Ejokóma ne ta’ãngamýi ko ñanduti rendápe g̃uarã.
 urlbar-microphone-blocked =
     .tooltiptext = Ejokóma ne ñe’ẽatãha ko ñanduti rendápe g̃uarã.
 urlbar-screen-blocked =
@@ -156,6 +165,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Emboguete jepysokue
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Emondo tendayke mba’e’okápe
+           *[other] Emondo umi tendayke { $tabCount } mba’e’okápe
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Emondo tendayke mba’e’okápe
+           *[other] Emondo umi tendayke { $tabCount } mba’e’okápe
+        }
+page-action-pocket-panel =
+    .label = Eñongatu kuatiarogue { -pocket-brand-name }-pe
+page-action-copy-url-panel =
+    .label = Link Mbohasarã
+page-action-copy-url-urlbar =
+    .tooltiptext = Link Mbohasarã
+page-action-email-link-panel =
+    .label = Joajuha mondo…
+page-action-email-link-urlbar =
+    .tooltiptext = Joajuha mondo…
+page-action-share-url-panel =
+    .label = Moherakuã
+page-action-share-url-urlbar =
+    .tooltiptext = Moherakuã
+page-action-share-more-panel =
+    .label = Hetave…
+page-action-send-tab-not-ready =
+    .label = Mba’e’oka ñembojuehe…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Tendayke mombytapy
+page-action-pin-tab-urlbar =
+    .tooltiptext = Tendayke mombytapy
+page-action-unpin-tab-panel =
+    .label = Tendayke mombytapy mbogue
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Tendayke mombytapy mbogue
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +223,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ko’ág̃a, eheka hendive:
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +241,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Emoĩ jehekaha mongu’eha ijypykuévaramo ovetã ñemíme
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Techaukahakuéra ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Tendaykekuéra ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Tebiasakue ({ $restrict })
 
 ## Bookmark Panel
 
@@ -192,7 +268,7 @@ bookmark-panel-show-editor-checkbox =
     .label = Ehechauka mbosako’iha eñongatúvo
     .accesskey = S
 bookmark-panel-done-button =
-    .label = Mohu'ã
+    .label = Mohu’ã
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -209,9 +285,20 @@ identity-extension-page = Ko kuatiarogue oñemyanyhẽ jepysokue guive.
 identity-active-blocked = { -brand-short-name } ojokóma ko kuatiarogue pehẽ ijerovia’ỹha.
 identity-custom-root = Jeike ohechapyréva mboajepyre me’ẽha Mozilla omoneĩ’ỹva.
 identity-passive-loaded = Ko kuatiarogue pehẽ heta hendápe nda’ijeroviapái (mba’era’ãngáramo).
-identity-active-loaded = Ndereguerekói pa'ũ ko kuatiaroguépe g̃uarã.
+identity-active-loaded = Ndereguerekói pa’ũ ko kuatiaroguépe g̃uarã.
 identity-weak-encryption = Ko kuatiarogue oipuru ñangarekoha ikangýva.
 identity-insecure-login-forms = Ojehaiva’ekue jeike hag̃ua ko kuatiaroguépe oñemondakuaa.
+identity-https-only-connection-upgraded = (HTTPS hekopyahupyre)
+identity-https-only-label = HTTPS ayvúpe año
+identity-https-only-dropdown-on =
+    .label = Myandy
+identity-https-only-dropdown-off =
+    .label = Mbogue
+identity-https-only-dropdown-off-temporarily =
+    .label = Jepe’a sapy’agua
+identity-https-only-info-turn-on2 = Emyandy HTTPS ayvu añoite ko tendápe g̃uarã eipotáramo { -brand-short-name } ombohekopyahu nde jeike ikatu vove.
+identity-https-only-info-turn-off2 = Pe tenda ndoikoporãirõ, ikatu emboguese pe HTTPS ayvu añoite emyanyhẽjey hag̃ua eipurúvo HTTP jeike hekorosã’ỹva.
+identity-https-only-info-no-upgrade = Ndaikatúi embohekopyahu jeike HTTP guive.
 identity-permissions =
     .value = Moneĩ
 identity-permissions-reload-hint = Ikatu hína kuatiarogue emyanyhẽjey umi moambuepyre oñemboheko hag̃ua.
@@ -231,7 +318,7 @@ identity-description-weak-cipher-intro = Nde jeike ko ñanduti rendápe oipuru �
 identity-description-weak-cipher-risk = Ambue tapichakuéra ikatu ohecha nemarandu térã omoambue ñanduti kuatiarogue reko.
 identity-description-active-blocked = { -brand-short-name } ojokóma ko kuatiarogue pehẽ ijerovia’ỹha. <label data-l10n-name="link">Kuaave</label>
 identity-description-passive-loaded = Nde jeike naiñemíri ha nemarandu remoingéva ko tendápe ikatu ohecha ambue tapicha.
-identity-description-passive-loaded-insecure = Ko ñanduti renda oguereko hetepy ndaijeroviapáiva (mba’era'ãngáramo). <label data-l10n-name="link">Kuaave</label>
+identity-description-passive-loaded-insecure = Ñanduti renda oguereko hetepy ndaijeroviapáiva (mba’era’ãngáramo). <label data-l10n-name="link">Kuaave</label>
 identity-description-passive-loaded-mixed = { -brand-short-name } ojokóramo jepe heta retepy, oĩ gueteri tetepy kuatiaroguépe ndaijegueroviapáiva (mba’era’ãngáramo). <label data-l10n-name="link">Kuaave</label>
 identity-description-active-loaded = Ko ñanduti renda oguereko hetepy ndaijeroviapáiva (guiõramo) ha nde jeike pype naiñemíri.
 identity-description-active-loaded-insecure = Marandu remondóva ko kuatiaroguépe ikatu ohecha ambue tapicha (ñe’ẽñemíramo, ñe’ẽmondo, kuatia’atã ñemurã ha ambue).
@@ -257,10 +344,16 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Mboty
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Techaukaha jegueru…
+    .tooltiptext = Emonguatia techaukaha ambue kundaháragui { -brand-short-name }-pe.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
-    .value = Ta'angamýi hetápe guarãva:
+    .value = Ta’angamýi hetápe guarãva:
     .accesskey = C
 popup-select-microphone =
     .value = Ñe’ẽatãha hetápe g̃uarãva:
@@ -292,8 +385,42 @@ enable-devtools-popup-description = Eipurútarõ mbopya’eha F12 embojurujara�
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Ñe’ẽreka ýrõ kundaharape
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Ñe’ẽreka ýrõ kundaharape
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Eheka ñandutípe
+    .aria-label = Eheka { $name } ndive
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Emoinge ñe’ẽ ehekaséva
+    .aria-label = Eheka { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Emoinge ñe’ẽ ehekaséva
+    .aria-label = Eheka techaukahápe
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Emoinge ñe’ẽ ehekaséva
+    .aria-label = Eheka tembiasakuépe
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Emoinge ñe’ẽ ehekaséva
+    .aria-label = Eheka tendayképe
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Eheka { $name } ndive térã emoinge kundaharape
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Kundahára oĩ ñangarekoha okayguáva poguýpe
 urlbar-permissions-granted =
@@ -309,3 +436,67 @@ urlbar-page-action-button =
     .tooltiptext = Kuatiarogue rembiapo
 urlbar-pocket-button =
     .tooltiptext = Eñongatu { -pocket-brand-name }-pe
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Eheka { $engine } ndive ovetã ñemíme
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Eheka ovetã ñemíme
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Eheka { $engine } ndive
+urlbar-result-action-sponsored = Pytyvõpyréva
+urlbar-result-action-switch-tab = Tendayképe jeguerova
+urlbar-result-action-visit = Jeho
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Eikutu Tab eheka hag̃ua { $engine } ndive
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Eikutu Tab eheka hag̃ua { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Eheka { $engine } ndive kundaharape renda guive
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Eheka { $engine } ndive kundaharape renda guive
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Eheka techaukahápe
+urlbar-result-action-search-history = Eheka tembiasakuépe
+urlbar-result-action-search-tabs = Eheka tendayke
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ha’e mba’erechaha henyhẽva ko’ág̃a
+fullscreen-warning-no-domain = Ko kuatia oĩ hína ko’ág̃a mba’erechaha tuichavévape
+fullscreen-exit-button = Esẽ mba’erechaha tuichavévagui (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Esẽ mba’erechaha tuichavévagui (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> eñangarekópa nde hekaha rehe. Eikutu Esc eguerujey hag̃ua hekaha.
+pointerlock-warning-no-domain = Ko kuatia oñangareko nde hekaha rehe. Eikutu Esc eguerujey hag̃ua hekaha.

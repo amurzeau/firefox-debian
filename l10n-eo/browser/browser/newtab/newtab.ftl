@@ -51,6 +51,10 @@ newtab-confirm-delete-history-p1 = Ĉu vi certe volas forigi ĉiun aperon de tiu
 # "This action" refers to deleting a page from history.
 newtab-confirm-delete-history-p2 = Tiu ĉi ago ne estas malfarebla.
 
+## Top Sites - Sponsored label
+
+newtab-topsite-sponsored = Patronita
+
 ## Context Menu - Action Tooltips.
 
 # General tooltip for context menus.

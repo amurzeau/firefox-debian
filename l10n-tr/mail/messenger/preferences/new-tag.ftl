@@ -8,3 +8,7 @@ tag-dialog-window =
 tag-name-label =
     .value = Etiket adı:
     .accesskey = t
+
+tag-color-label =
+    .value = Renk:
+    .accesskey = R

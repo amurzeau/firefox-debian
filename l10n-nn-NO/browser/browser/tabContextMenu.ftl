@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Flytt til eit nytt vindauge
     .accesskey = F
-undo-close-tab =
-    .label = Angre attlating av fane
-    .accesskey = r
 tab-context-close-multiple-tabs =
-    .label = Lat att flere faner
+    .label = Lat att fleire faner
     .accesskey = f
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -78,3 +79,17 @@ move-tabs =
 move-tab =
     .label = Flytt fane
     .accesskey = t
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Lat att fane
+           *[other] Lat att faner
+        }
+    .accesskey = L
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Flytt fane
+           *[other] Flytt faner
+        }
+    .accesskey = F

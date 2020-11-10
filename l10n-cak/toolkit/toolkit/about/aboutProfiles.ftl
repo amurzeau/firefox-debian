@@ -32,7 +32,7 @@ profiles-current-profile = Man tajin tan okisäx re ruwäch b'i'aj re' chuqa' ma
 profiles-in-use-profile = Re ruwäch b'i'aj re' nokisäx pa jun chik chokoy ruma ri' man tikirel ta niyuj el.
 
 profiles-rename = Tisik'ïx chik
-profiles-remove = Tiyuj el
+profiles-remove = Tiyuj
 profiles-set-as-default = Tichap kan achi'el ruwäch b'i'aj ri kan k'o wi
 profiles-launch-profile = Ruwäch b'i'aj richin relesaxik pa jun k'ak'a' okik'amaya'l
 

@@ -15,6 +15,9 @@ extensions-name = பெயர்
 extensions-enabled = செயல்படுத்தப்பட்டது
 extensions-version = பதிப்பு
 extensions-id = ID
+support-addons-name = பெயர்
+support-addons-version = பதிப்பு
+support-addons-id = ID
 features-title = { -brand-short-name } அம்சங்கள்
 features-name = பெயர்
 features-version = பதிப்பு
@@ -68,8 +71,6 @@ graphics-workarounds-title = சுற்றுவேலைகள்
 place-database-title = இடத் தரவுத்தளம்
 place-database-integrity = ஒருமைப்பாடு
 place-database-verify-integrity = ஒருமைப்பாட்டை சரிபார்
-js-title = JavaScript
-js-incremental-gc = பெருகும் GC
 a11y-title = அணுகக்கூடியது
 a11y-activated = செயல்படுத்தப்படுகிறது
 a11y-force-disabled = அணுகல்தன்மையை தடுக்கவும்
@@ -93,9 +94,7 @@ restart-in-safe-mode-label = நீட்சிகளை நீக்கிவ�
 
 audio-backend = ஒலி பின்புலம்
 max-audio-channels = அதிகபட்ச சேனல்கள்
-channel-layout = விருப்பமான சேனல் அமைப்பு
 sample-rate = விருப்பமான மாதிரி விகிதம்
-
 media-title = ஊடகம்
 media-output-devices-title = வெளியீடு சாதனங்கள்
 media-input-devices-title = உள்ளீடு சாதனங்கள்
@@ -127,6 +126,7 @@ intl-regional-prefs = வட்டார முன்னுரிமைகள்
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -231,7 +231,6 @@ unknown-failure = தடுக்கப்பட்டது; தோல்வி
 
 d3d11layers-crash-guard = D3D11 தொகுப்பி
 d3d11video-crash-guard = D3D11 காணொளி குறியவிழி
-d3d9video-crash-buard = D3D9 காணொளி குறியவிழி
 d3d9video-crash-guard = D3D9 காணொளி குறியவிழி
 glcontext-crash-guard = OpenGL
 

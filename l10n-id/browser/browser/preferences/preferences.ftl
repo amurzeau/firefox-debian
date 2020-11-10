@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Hanya ketika { -brand-short-name } diatur untuk memblokir pelacak yang diketahui
 do-not-track-option-always =
     .label = Selalu
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Pengaturan
-           *[other] Pengaturan
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Pengaturan
@@ -50,6 +44,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = Eksperimen { -brand-short-name }
+category-experimental =
+    .tooltiptext = Eksperimen { -brand-short-name }
+pane-experimental-subtitle = Lanjutkan dengan Kehati-hatian
+pane-experimental-search-results-header = Eksperimen { -brand-short-name }: Lanjutkan dengan Hati-hati
+pane-experimental-description = Mengubah pilihan konfigurasi tingkat lanjut dapat mempengaruhi kinerja atau keamanan { -brand-short-name } .
 help-button-label = Dukungan { -brand-short-name }
 addons-button-label = Ekstensi & Tema
 focus-search =
@@ -82,6 +82,9 @@ extension-controlled-homepage-override = Ekstensi <img data-l10n-name="icon"/> {
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Ekstensi <img data-l10n-name="icon"/> { $name } mengendalikan laman Tab Baru Anda.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Ekstensi <img data-l10n-name="icon"/> { $name } mengendalikan setelan ini.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Sebuah ekstensi bernama <img data-l10n-name="icon"/> { $name } mengendalikan setelan ini.
@@ -353,13 +356,6 @@ update-application-warning-cross-user-setting = Pengaturan ini akan berlaku untu
 update-application-use-service =
     .label = Gunakan layanan latar belakang untuk memasang pemutakhiran
     .accesskey = l
-update-enable-search-update =
-    .label = Mutakhirkan mesin pencari secara otomatis
-    .accesskey = m
-update-pref-write-failure-title = Kegagalan Penulisan
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Gagal menyimpan preferensi. Tidak dapat menulis ke file: { $path }
 update-setting-write-failure-title = Gagal menyimpan preferensi Pemutakhiran
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -487,7 +483,6 @@ home-prefs-topsites-description = Situs yang sering Anda kunjungi
 
 home-prefs-recommended-by-header =
     .label = Disarankan oleh { $provider }
-home-prefs-recommended-by-description = Konten bermutu dari seluruh web, khusus untuk Anda
 home-prefs-recommended-by-description-update = Konten luar biasa dari seluruh web, dikuratori oleh { $provider }
 
 ##
@@ -524,7 +519,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Tambahkan bilah pencarian di bilah alat
 search-engine-default-header = Mesin Pencari Baku
-search-engine-default-desc = Pilih mesin pencari baku yang akan digunakan di bilah alamat dan bilah pencarian.
 search-engine-default-desc-2 = Ini adalah mesin pencari baku Anda dalam bilah alamat dan bilah pencarian. Anda dapat menggantinya kapan saja.
 search-engine-default-private-desc-2 = Pilih mesin pencari bawaan yang berbeda hanya untuk Jendela Pribadi
 search-separate-default-engine =
@@ -547,10 +541,10 @@ search-show-suggestions-above-history-option =
     .label = Tampilkan saran pencarian di atas riwayat penjelajahan dalam hasil bilah alamat
 search-show-suggestions-private-windows =
     .label = Tampilkan saran pencarian di Jendela Pribadi
-suggestions-addressbar-settings = Ubah preferensi untuk riwayat penjelajahan, markah, dan saran tab.
 suggestions-addressbar-settings-generic = Ubah preferensi untuk saran bilah alamat lainnya
 search-suggestions-cant-show = Saran pencarian tidak akan ditampilkan di hasil bilah lokasi karena Anda telah mengatur { -brand-short-name } agar tidak mengingat riwayat.
 search-one-click-header = Mesin pencari sekali klik
+search-one-click-header2 = Pintasan Pencarian
 search-one-click-desc = Pilih mesin pencari alternatif yang muncul di bawah bilah alamat dan bilah pencarian ketika Anda mulai memasukkan kata kunci.
 search-choose-engine-column =
     .label = Mesin Pencari
@@ -562,6 +556,9 @@ search-restore-default =
 search-remove-engine =
     .label = Hapus
     .accesskey = H
+search-add-engine =
+    .label = Tambah
+    .accesskey = a
 search-find-more-link = Temukan lebih banyak mesin pencari
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -573,7 +570,6 @@ search-keyword-warning-bookmark = Anda telah memilih kata kunci yang sama dengan
 
 ## Containers Section
 
-containers-back-link = « Kembali
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -592,20 +588,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Hapus
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Bawalah Web bersama Anda
 sync-signedout-description = Sinkronkan markah, riwayat, tab, sandi, pengaya, dan pengaturan di berbagai peranti Anda.
-sync-signedout-account-title = Sambungkan dengan { -fxaccount-brand-name }
-sync-signedout-account-create = Tidak punya akun? Buatlah
-    .accesskey = B
-sync-signedout-account-signin =
-    .label = Masuk…
-    .accesskey = M
 sync-signedout-account-signin2 =
     .label = Masuk ke { -sync-brand-short-name }…
     .accesskey = M
@@ -619,16 +606,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Unduh Firefox untuk <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> atau <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> untuk menyinkronkan dengan peranti seluler Anda.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Ubah gambar profil
-sync-disconnect =
-    .label = Putuskan…
-    .accesskey = P
 sync-sign-out =
     .label = Keluar…
     .accesskey = K
@@ -645,8 +626,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Masuk
     .accesskey = M
-sync-signedin-settings-header = Pengaturan Sinkronisasi
-sync-signedin-settings-desc = Pilih apa saja yang akan disinkronkan pada peranti Anda yang menggunakan { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -699,10 +678,6 @@ sync-engine-tabs =
     .label = Tab terbuka
     .tooltiptext = Daftar tab terbuka di semua peranti yang disinkronkan
     .accesskey = T
-sync-engine-logins =
-    .label = Info masuk
-    .tooltiptext = Nama pengguna dan sandi yang Anda simpan
-    .accesskey = I
 sync-engine-logins-passwords =
     .label = Info masuk dan sandi
     .tooltiptext = Nama pengguna dan sandi yang Anda simpan
@@ -741,18 +716,10 @@ sync-device-name-save =
     .label = Simpan
     .accesskey = S
 sync-connect-another-device = Hubungkan perangkat lain
-sync-manage-devices = Kelola perangkat
-sync-fxa-begin-pairing = Pasangkan perangkat
-sync-tos-link = Ketentuan Layanan
-sync-fxa-privacy-notice = Pernyataan Privasi
 
 ## Privacy Section
 
 privacy-header = Privasi Peramban
-
-## Privacy Section - Forms
-
-logins-header = Info Masuk & Sandi
 
 ## Privacy Section - Logins and Passwords
 
@@ -783,10 +750,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Gunakan sandi utama
     .accesskey = m
+forms-primary-pw-use =
+    .label = Gunakan Sandi Utama
+    .accesskey = S
+forms-primary-pw-learn-more-link = Pelajari lebih lanjut
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Ubah Sandi Utama…
     .accesskey = U
 forms-master-pw-fips-title = Anda sedang dalam mode FIPS. Mode ini mewajibkan Sandi Utama harus diisi.
+forms-primary-pw-change =
+    .label = Ubah Sandi Utama…
+    .accesskey = U
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Anda sedang dalam mode FIPS. Mode ini mewajibkan Sandi Utama harus diisi.
 forms-master-pw-fips-desc = Sandi Gagal Diubah
 
 ## OS Authentication dialog
@@ -798,6 +780,13 @@ master-password-os-auth-dialog-message-win = Untuk membuat Kata Sandi Utama, mas
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = membuat Kata Sandi Utama.
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Untuk membuat Sandi Utama, masukkan kredensial info masuk Windows Anda. Hal ini membantu melindungi keamanan akun Anda.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = membuat Sandi Utama
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -864,8 +853,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Tipe yang diblokir
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Pelacak pihak ketiga
 sitedata-option-block-cross-site-trackers =
     .label = Pelacak lintas situs
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -911,27 +898,9 @@ addressbar-suggestions-settings = Ubah pengaturan untuk saran mesin pencari
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Pemblokiran Konten
-content-blocking-section-description = Lindungi privasi Anda saat menjelajah. Blokir konten tak terlihat yang melacak situs yang Anda kunjungi dan profil Anda. Memblokir sebagian konten ini dapat membuat laman dimuat lebih cepat.
 content-blocking-enhanced-tracking-protection = Perlindungan Pelacakan yang Ditingkatkan
 content-blocking-section-top-level-description = Pelacak mengikuti Anda berkeliling daring untuk mengumpulkan informasi tentang kebiasaan dan minat penelusuran Anda. { -brand-short-name } memblokir banyak pelacak dan skrip jahat lainnya.
 content-blocking-learn-more = Pelajari Lebih Lanjut
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standar
-    .accesskey = S
-content-blocking-setting-strict =
-    .label = Ketat
-    .accesskey = K
-content-blocking-setting-custom =
-    .label = Ubahsuai
-    .accesskey = U
-content-blocking-standard-desc = Imbang antara proteksi dan performa. Memungkinkan sejumlah pelacak agar situs berfungsi dengan baik.
-content-blocking-strict-description = Perlindungan yang lebih kuat, dapat menyebabkan beberapa situs rusak.
-content-blocking-custom-desc = Pilih yang diblokir.
-content-blocking-private-trackers = Hanya pelacak yang dikenal di Jendela Pribadi
-content-blocking-third-party-cookies = Kuki pelacak pihak ketiga
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -958,23 +927,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Kuki pelacak lintas 
 content-blocking-social-media-trackers = Pelacak media sosial
 content-blocking-all-cookies = Semua kuki
 content-blocking-unvisited-cookies = Kuki dari situs yang belum dikunjungi
-content-blocking-all-windows-trackers = Pelacak yang dikenal di seluruh jendela
 content-blocking-all-windows-tracking-content = Melacak konten di seluruh jendela
 content-blocking-all-third-party-cookies = Semua kuki pihak ketiga
 content-blocking-cryptominers = Penambang Kripto
 content-blocking-fingerprinters = Pelacak Sidik
 content-blocking-warning-title = Perhatian!
-content-blocking-warning-description = Pemblokiran konten bisa menyebabkan beberapa situs web tidak berfungsi. Mudah sekali untuk menonaktifkan pemblokiran pada situs yang Anda percayai.
-content-blocking-learn-how = Pelajari caranya
 content-blocking-and-isolating-etp-warning-description = Memblokir pelacak dan mengisolasi kuki dapat memengaruhi fungsionalitas beberapa situs. Muat ulang laman dengan pelacak untuk memuat semua konten.
 content-blocking-warning-learn-how = Pelajari caranya
 content-blocking-reload-description = Anda harus memuat ulang tab Anda untuk menerapkan perubahan ini.
 content-blocking-reload-tabs-button =
     .label = Muat Ulang Semua Tab
     .accesskey = M
-content-blocking-trackers-label =
-    .label = Pelacak
-    .accesskey = P
 content-blocking-tracking-content-label =
     .label = Pelacakan konten
     .accesskey = P
@@ -1033,12 +996,6 @@ permissions-notification-link = Pelajari lebih lanjut
 permissions-notification-pause =
     .label = Jeda notifikasi hingga { -brand-short-name } dimulai ulang
     .accesskey = J
-permissions-block-autoplay-media2 =
-    .label = Blokir situs web yang memutar suara secara otomatis
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = Pengecualian…
-    .accesskey = l
 permissions-autoplay = Putar Otomatis
 permissions-autoplay-settings =
     .label = Pengaturan...
@@ -1145,6 +1102,18 @@ space-alert-under-5gb-ok-button =
     .label = Oke, Beres
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } kehabisan ruang disk. Konten situs barangkali tidak dapat ditampilkan dengan tepat. Kunjungi “Pelajari Lebih Lanjut” untuk mengoptimalkan penggunaan disk Anda untuk pengalaman penjelajahan yang lebih baik.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Mode Hanya HTTPS
+httpsonly-description = HTTPS menyediakan koneksi yang aman, terenkripsi antara { -brand-short-name } dan situs web yang Anda kunjungi. Kebanyakan situs web mendukung HTTPS, dan jika Mode Hanya HTTPS diaktifkan, maka { -brand-short-name } akan meningkatkan semua koneksi ke HTTPS.
+httpsonly-learn-more = Pelajari lebih lanjut
+httpsonly-radio-enabled =
+    .label = Aktifkan Mode Hanya HTTPS di semua jendela
+httpsonly-radio-enabled-pbm =
+    .label = Aktifkan Mode Hanya HTTPS di jendela pribadi saja
+httpsonly-radio-disabled =
+    .label = Jangan aktifkan Mode Hanya HTTPS
 
 ## The following strings are used in the Download section of settings
 

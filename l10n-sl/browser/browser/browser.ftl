@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Tipkajte manj, najdite več: Iščite z iskalnikom { $engineName } iz vrstice z naslovom.
 urlbar-search-tips-redirect-2 = Začnite z iskanjem v naslovni vrstici ter spremljajte predloge iskalnika { $engineName } in zgodovine vašega brskanja.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Zaznamki
+urlbar-search-mode-tabs = Zavihki
+urlbar-search-mode-history = Zgodovina
+
 ##
 
 urlbar-geolocation-blocked =
@@ -156,6 +162,57 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Odstrani razširitev
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Pošlji zavihek na napravo
+            [two] Pošlji { $tabCount } zavihka na napravo
+            [few] Pošlji { $tabCount } zavihke na napravo
+           *[other] Pošlji { $tabCount } zavihkov na napravo
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Pošlji zavihek na napravo
+            [two] Pošlji { $tabCount } zavihka na napravo
+            [few] Pošlji { $tabCount } zavihke na napravo
+           *[other] Pošlji { $tabCount } zavihkov na napravo
+        }
+page-action-pocket-panel =
+    .label = Shrani stran v { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Kopiraj povezavo
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopiraj povezavo
+page-action-email-link-panel =
+    .label = Pošlji povezavo po e-pošti …
+page-action-email-link-urlbar =
+    .tooltiptext = Pošlji povezavo po e-pošti …
+page-action-share-url-panel =
+    .label = Deli
+page-action-share-url-urlbar =
+    .tooltiptext = Deli
+page-action-share-more-panel =
+    .label = Več …
+page-action-send-tab-not-ready =
+    .label = Sinhroniziranje naprav ...
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Pripni zavihek
+page-action-pin-tab-urlbar =
+    .tooltiptext = Pripni zavihek
+page-action-unpin-tab-panel =
+    .label = Odpni zavihek
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Odpni zavihek
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +224,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Tokrat išči z iskalnikom:
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +242,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Nastavi kot privzeti iskalnik za zasebna okna
     .accesskey = z
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Zaznamki ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Zavihki ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Zgodovina ({ $restrict })
 
 ## Bookmark Panel
 
@@ -212,6 +289,14 @@ identity-passive-loaded = Deli strani niso varni (npr. slike).
 identity-active-loaded = Zaščita na tej strani je onemogočena.
 identity-weak-encryption = Stran uporablja šibko šifriranje.
 identity-insecure-login-forms = Prijave, ki jih vnesete na tej strani, so lahko ogrožene.
+identity-https-only-connection-upgraded = (nadgrajeno na HTTPS)
+identity-https-only-label = Način "samo HTTPS"
+identity-https-only-dropdown-on =
+    .label = Vključeno
+identity-https-only-dropdown-off =
+    .label = Izključeno
+identity-https-only-dropdown-off-temporarily =
+    .label = Začasno izključeno
 identity-permissions =
     .value = Dovoljenja
 identity-permissions-reload-hint = Za uveljavitev sprememb boste morda morali ponovno naložiti stran.
@@ -257,6 +342,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Zapri
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Uvozi zaznamke …
+    .tooltiptext = Skopirajte zaznamke iz drugega brskalnika v { -brand-short-name }.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -292,8 +383,42 @@ enable-devtools-popup-description = Za uporabo bližnjice F12 prvič odprite raz
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Iskanje ali naslov strani
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Iskanje ali naslov strani
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Išči po spletu
+    .aria-label = Išči z iskalnikom { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Vnesite iskalni niz
+    .aria-label = Iskanje v { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Vnesite iskalni niz
+    .aria-label = Iskanje po zaznamkih
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Vnesite iskalni niz
+    .aria-label = Iskanje po zgodovini
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Vnesite iskalni niz
+    .aria-label = Iskanje po zavihkih
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Iščite z iskalnikom { $name } ali vnesite naslov
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Brskalnik je pod daljinskim upravljanjem
 urlbar-permissions-granted =
@@ -309,3 +434,55 @@ urlbar-page-action-button =
     .tooltiptext = Dejanja strani
 urlbar-pocket-button =
     .tooltiptext = Shrani v { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Išči z iskalnikom { $engine } v zasebnem oknu
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Išči v zasebnem oknu
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Išči z iskalnikom { $engine }
+urlbar-result-action-switch-tab = Preklopi na zavihek
+urlbar-result-action-visit = Obišči
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Pritisnite Tab za iskanje z iskalnikom { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Iščite z iskalnikom { $engine } neposredno iz naslovne vrstice
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Iskanje po zaznamkih
+urlbar-result-action-search-history = Iskanje po zgodovini
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = Stran <span data-l10n-name="domain">{ $domain }</span> je zdaj prikazana čez celoten zaslon
+fullscreen-warning-no-domain = Ta dokument je zdaj prikazan čez celoten zaslon
+fullscreen-exit-button = Izhod iz celozaslonskega načina (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Izhod iz celozaslonskega načina (Esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ima nadzor nad vašim kazalcem. Pritisnite Esc za ponovni prevzem nadzora.
+pointerlock-warning-no-domain = Ta dokument ima nadzor nad vašim kazalcem. Pritisnite Esc za ponovni prevzem nadzora.

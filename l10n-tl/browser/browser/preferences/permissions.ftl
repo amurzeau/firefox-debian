@@ -5,66 +5,53 @@
 permissions-window =
     .title = Mga Exception
     .style = width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Address ng website
     .accesskey = d
-
 permissions-block =
     .label = Harangin
     .accesskey = H
-
 permissions-session =
     .label = Payagan para sa Session
     .accesskey = S
-
 permissions-allow =
     .label = Payagan
     .accesskey = a
-
 permissions-site-name =
     .label = Website
-
 permissions-status =
     .label = Kalagayan
-
 permissions-remove =
     .label = Alisin ang Website
     .accesskey = R
-
 permissions-remove-all =
     .label = Alisin ang Lahat ng mga Website
     .accesskey = e
-
 permissions-button-cancel =
     .label = Kanselahin
     .accesskey = C
-
 permissions-button-ok =
     .label = I-save ang mga Pagbabago
     .accesskey = S
-
+permission-dialog =
+    .buttonlabelaccept = I-save ang mga Pagbabago
+    .buttonaccesskeyaccept = S
 permissions-autoplay-menu = Ang default para sa lahat ng mga website:
-
 permissions-searchbox =
     .placeholder = Maghanap ng Website
-
 permissions-capabilities-autoplay-allow =
     .label = Payagan ang Audio at Video
 permissions-capabilities-autoplay-block =
     .label = Harangin ang Audio
 permissions-capabilities-autoplay-blockall =
     .label = Harangin ang Audio at Video
-
 permissions-capabilities-allow =
     .label = Payagan
 permissions-capabilities-block =
     .label = Harangin
 permissions-capabilities-prompt =
     .label = Palaging Magtanong
-
 permissions-capabilities-listitem-allow =
     .value = Payagan
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = May naipasok na Di-wastong Hostname
 permissions-invalid-uri-label = Maglagay ng wastong hostname
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = Mga Exception - Content Blocking
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Pinatay mo ang Pagharang ng Nilalaman sa site na ito.
 
 permissions-exceptions-etp-window =
     .title = Mga Exception para sa Enhanced Tracking Protection
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Mga Website na Pinapayagan - Pagkabit ng mga Add-on
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Maaari mong tukuyin aling mga website ang pinapayagang magkabit ng mga add-on. I-type ang mismong address ng site na gusto mong payagan at pindutin ang Payagan.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Mga Exception - Autoplay
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Maaari mong banggitin aling mga website ang palagi o di-kailanman papayagan na mag-autoplay ng media na walang tunog. I-type ang address ng site na gusto mong i-manage at pagkatapos ay pindutin ang Harangin o Payagan.
 
 ## Site Permissions - Autoplay
 
@@ -159,6 +134,7 @@ permissions-site-xr-window =
 permissions-site-xr-desc = Ang mga sumusunod na website ay humingi ng access sa iyong mga virtual reality device. Maaari mong tukuyin kung aling website ang puwedeng makapag-acccess ng mga ito. Maaari mo ring i-block ang mga bagong request na humihingi ng access sa mga virtual reality device mo.
 permissions-site-xr-disable-label =
     .label = I-block ang mga bagong request na humihingi ng access sa mga virtual reality device mo
+permissions-site-xr-disable-desc = Ito ang pipigil sa mga website na wala sa listahan sa paghingi ng permiso na i-access ang iyong mga virtual reality device. Ang pagharang ng access sa iyong mga virtual reality device ay maaaring makasira sa ibang features ng website.
 
 ## Site Permissions - Camera
 

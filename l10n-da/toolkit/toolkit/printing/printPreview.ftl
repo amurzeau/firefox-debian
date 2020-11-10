@@ -31,8 +31,6 @@ printpreview-print =
     .accesskey = U
 printpreview-of =
     .value = af
-printpreview-custom-prompt =
-    .value = Tilpasset skalering…
 printpreview-custom-scale-prompt-title = Tilpasset skalering
 printpreview-page-setup =
     .label = Sideopsætning…
@@ -59,3 +57,4 @@ printpreview-nextarrow =
 printpreview-endarrow =
     .label = { $arrow }
     .tooltiptext = Sidste side
+

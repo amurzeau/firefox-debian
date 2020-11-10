@@ -5,10 +5,8 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = Məxfilik Qorumaları
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = Məxfilik hesabatınıza gedin
-
+appmenuitem-update-banner =
+    .label-update-downloading = { -brand-shorter-name } yeniləməsi endirilir
 appmenuitem-customize-mode =
     .label = Fərdiləşdir…
 

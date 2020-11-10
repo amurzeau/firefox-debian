@@ -29,9 +29,9 @@ screenshots-request-error-title = خارج از سرویس.
 screenshots-request-error-details = متاسفم! نتوانستیم عکس شما را ذخیره کنیم. لطفاً بعدا دوباره تلاش کنید.
 
 screenshots-connection-error-title = نمی‌توانیم به تصاویر صفحه شما متصل شویم.
-screenshots-connection-error-details = لطفا اتصال اینترنت خود را بررسی کنید. اگر قادر به اتصال به اینترنت هستید، ممکن است مشکلی موقتی در سرویس تصاویر صفحهٔ فایرفاکس وجود داشته باشد.
+screenshots-connection-error-details = لطفا اتصال اینترنت خود را بررسی کنید. اگر قادر به اتصال به اینترنت هستید، ممکن است مشکلی موقتی در سرویس { -screenshots-brand-name } وجود داشته باشد.
 
-screenshots-login-error-details = به علت وجود مشکل در سرویس تصاویر صفحه فایرفاکس نتوانستیم عکس شما را ذخیره کنیم. لطفاً بعدا دوباره تلاش کنید.
+screenshots-login-error-details = به علت وجود مشکل در سرویس { -screenshots-brand-name } نتوانستیم عکس شما را ذخیره کنیم. لطفاً بعدا دوباره تلاش کنید.
 
 screenshots-unshootable-page-error-title = نمی‌توانیم از این صفحه تصویر بگیریم.
 screenshots-unshootable-page-error-details = این یک صفحه استاندارد وب نیست، بنابراین شما نمی‌توانید از آن تصویر بگیرید.

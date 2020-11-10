@@ -59,10 +59,10 @@
 <!ENTITY privileges.button.label                 "პრივილეგიები…">
 <!ENTITY privileges.button.accesskey             "P">
 <!ENTITY permissionsDesc.label                   "თქვენ გაქვთ შემდეგი უფლებები:">
+<!ENTITY folderOtherUsers.label                  "სხვები, რომელთაც აქვთ წვდომა ამ საქაღალდესთან:">
 <!ENTITY folderType.label                        "საქაღალდის სახეობა:">
 
 <!ENTITY folderQuotaTab.label                    "ზღვარი">
-<!ENTITY folderQuotaRoot.label                   "ძირეულის ზღვარი:">
 <!ENTITY folderQuotaUsage.label                  "გამოყენება:">
 <!ENTITY folderQuotaStatus.label                 "სტატუსი:">
 

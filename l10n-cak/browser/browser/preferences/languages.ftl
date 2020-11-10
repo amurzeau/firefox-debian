@@ -23,8 +23,8 @@ languages-customize-movedown =
     .accesskey = T
 
 languages-customize-remove =
-    .label = Telesäx
-    .accesskey = s
+    .label = Tiyuj
+    .accesskey = y
 
 languages-customize-select-language =
     .placeholder = Tacha' jun ch'ab'äl ri nitz'aqatisäx…
@@ -64,8 +64,8 @@ browser-languages-downloading =
     .label = Niqasäx…
 
 browser-languages-select-language =
-    .label = Tacha' jun ch'ab'äl richin nitz'aqatisäx...
-    .placeholder = Ticha' jun ch'ab'äl richin nitz'aqatisäx...
+    .label = Tacha' jun ch'ab'äl ri nitz'aqatisäx…
+    .placeholder = Tacha' jun ch'ab'äl ri nitz'aqatisäx…
 
 browser-languages-installed-label = Yakon taq ch'ab'äl
 browser-languages-available-label = Wachel taq ch'ab'äl

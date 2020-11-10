@@ -10,6 +10,8 @@ preferences-title =
             [windows] Налаштування
            *[other] Налаштування
         }
+category-list =
+    .aria-label = Категорії
 pane-general-title = Загальні
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,7 +43,6 @@ composition-addressing-header = Адресація
 privacy-main-header = Приватність
 privacy-passwords-header = Паролі
 privacy-junk-header = Спам
-privacy-data-collection-header = Збір та використання даних
 collection-header = Збір та використання даних { -brand-short-name }
 collection-description = Ми прагнемо надати вам вибір і збирати лише дані, необхідні для роботи й вдосконалення { -brand-short-name }. Ми завжди запитуємо дозвіл перед отриманням особистої інформації.
 collection-privacy-notice = Повідомлення про приватність
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = м
 confirm-messenger-language-change-description = Перезапустіть { -brand-short-name } для застосування змін
 confirm-messenger-language-change-button = Застосувати й перезапустити
-update-pref-write-failure-title = Записати звіт про збій
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Не вдалося зберегти налаштування. Неможливо записати в файл: { $path }
 update-setting-write-failure-title = Помилка при збереженні налаштувань оновлення
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -91,12 +88,11 @@ update-in-progress-ok-button = &Відхилити
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Продовжити
+account-button = Налаштування облікового запису
 addons-button = Розширення і теми
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Підтвердьте права доступу, щоб створити головний пароль.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Щоб створити головний пароль, введіть свої облікові дані входу для Windows. Це допомагає захистити ваші збережені паролі.
 # This message can be seen by trying to add a Master Password.
@@ -104,6 +100,13 @@ master-password-os-auth-dialog-message-win = Щоб створити голов�
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = створити головний пароль
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Щоб створити головний пароль, введіть свої облікові дані входу для Windows. Це допомагає захистити ваші збережені паролі.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = створити головний пароль
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -115,7 +118,7 @@ focus-search-shortcut-alt =
     .key = k
 general-legend = Початкова сторінка { -brand-short-name }
 start-page-label =
-    .label = Показувати початкову сторінку в області перегляду листа при запуску { -brand-short-name }
+    .label = Показувати початкову сторінку в області перегляду повідомлення під час запуску { -brand-short-name }
     .accesskey = с
 location-label =
     .value = Розташування:
@@ -133,7 +136,7 @@ remove-search-engine =
 minimize-to-tray-label =
     .label = Коли вікно з { -brand-short-name } згорнуте, перемістіть його в системний лоток
     .accesskey = з
-new-message-arrival = При появі нових листів:
+new-message-arrival = Коли надходять нові повідомлення:
 mail-play-sound-label =
     .label =
         { PLATFORM() ->
@@ -142,7 +145,7 @@ mail-play-sound-label =
         }
     .accesskey =
         { PLATFORM() ->
-            [macos] к
+            [macos] з
            *[other] з
         }
 mail-play-button =
@@ -209,7 +212,7 @@ search-engine-name =
        *[other] { "" }
     }
 search-integration-label =
-    .label = Дозволити { search-engine-name } шукати листи
+    .label = Дозволити { search-engine-name } шукати повідомлення
     .accesskey = S
 config-editor-button =
     .label = Редактор налаштувань
@@ -224,7 +227,7 @@ update-app-legend = Оновлення { -brand-short-name }
 update-app-version = Версія { $version }
 allow-description = Дозволити { -brand-short-name }
 automatic-updates-label =
-    .label = Автоматично встановлювати оновлення (рекомендовано: покращує безпеку)
+    .label = Автоматично встановлювати оновлення (рекомендовано: поліпшує безпеку)
     .accesskey = А
 check-updates-label =
     .label = Перевіряти наявність оновлень, але питати мене чи хочу я їх встановити
@@ -348,7 +351,7 @@ delete-tag-button =
     .label = Вилучити
     .accesskey = В
 auto-mark-as-read =
-    .label = Автоматично позначати листи як прочитані
+    .label = Автоматично позначати повідомлення як прочитані
     .accesskey = А
 mark-read-no-delay =
     .label = Негайно при перегляді
@@ -365,7 +368,7 @@ seconds-label = секунд
 ##
 
 open-msg-label =
-    .value = Відкривати листи у:
+    .value = Відкривати повідомлення в:
 open-msg-tab =
     .label = Новій вкладці
     .accesskey = в
@@ -376,7 +379,7 @@ open-msg-ex-window =
     .label = вже існуючому вікні
     .accesskey = у
 close-move-delete =
-    .label = Закривати вікно листа після видалення/переміщення
+    .label = Закривати вікно повідомлення після видалення/переміщення
     .accesskey = З
 display-name-label =
     .value = Ім’я для показу:
@@ -387,10 +390,10 @@ condensed-addresses-label =
 ## Compose Tab
 
 forward-label =
-    .value = Пересилати листи:
+    .value = Пересилати повідомлення:
     .accesskey = П
 inline-label =
-    .label = Усередині листа
+    .label = Всередині листа
 as-attachment-label =
     .label = Як вкладення
 extension-label =
@@ -408,7 +411,7 @@ auto-save-end = хвилин
 ##
 
 warn-on-send-accel-key =
-    .label = Запитувати підтвердження при використанні клавіатурних скорочень для надсилання листа
+    .label = Запитувати підтвердження під час використання комбінації клавіш для надсилання повідомлення
     .accesskey = З
 spellcheck-label =
     .label = Перевіряти правопис перед надсиланням
@@ -497,7 +500,7 @@ exceptions-button =
     .accesskey = В
 remote-content-info =
     .value = Докладніше про питання приватності й віддалений вміст
-web-content = Веб-вміст
+web-content = Вебвміст
 history-label =
     .label = Пам'ятати відвідані мною вебсайти й посилання
     .accesskey = П
@@ -541,9 +544,18 @@ master-password-label =
 master-password-button =
     .label = Змінити головний пароль…
     .accesskey = З
+primary-password-description = Головний пароль захищає всі ваші паролі, але вам доведеться вводити його один раз на кожен сеанс.
+primary-password-label =
+    .label = Використовувати головний пароль
+    .accesskey = г
+primary-password-button =
+    .label = Змінити головний пароль…
+    .accesskey = і
+forms-primary-pw-fips-title = Зараз ви в режимі FIPS. Для цього режиму необхідно встановити головний пароль.
+forms-master-pw-fips-desc = Не вдалося змінити пароль
 junk-description = Налаштуйте загальні параметри спам-фільтрів. Специфічні для облікових записів параметри можуть бути змінені в налаштуваннях облікового запису.
 junk-label =
-    .label = Коли я позначаю лист як спам:
+    .label = Коли я позначаю повідомлення як спам:
     .accesskey = я
 junk-move-label =
     .label = Перемістити в теку «Спам»
@@ -552,7 +564,7 @@ junk-delete-label =
     .label = Видалити
     .accesskey = л
 junk-read-label =
-    .label = Позначити такі листи прочитаними
+    .label = Позначити такі повідомлення прочитаними
     .accesskey = ч
 junk-log-label =
     .label = Увімкнути журнал роботи адаптивного анти-спам фільтра
@@ -563,13 +575,13 @@ junk-log-button =
 reset-junk-button =
     .label = Скинути дані тренувань
     .accesskey = С
-phishing-description = { -brand-short-name } може аналізувати листи на предмет шахрайства, виявляючи усталені методи обману.
+phishing-description = { -brand-short-name } може аналізувати повідомлення на предмет шахрайства, виявляючи усталені методи обману.
 phishing-label =
-    .label = Повідомляти мене, коли щодо листа, який я читаю, є підозри у шахрайстві
+    .label = Повідомляти мене, якщо я читаю повідомлення схоже на шахрайське
     .accesskey = П
 antivirus-description = { -brand-short-name } може полегшити роботу антивірусу при перевірці вхідних листів на наявність вірусів перед тим, як зберегти їх в поштові теки.
 antivirus-label =
-    .label = Дозволити антивірусу поміщати в карантин окремі вхідні листи
+    .label = Дозволити антивірусу поміщати в карантин окремі вхідні повідомлення
     .accesskey = Д
 certificate-description = Коли сервер запитує мій персональний сертифікат:
 certificate-auto =
@@ -663,7 +675,7 @@ style-bubbles =
 style-dark =
     .label = Темна
 style-paper =
-    .label = Паперовий лист
+    .label = Аркуші паперу
 style-simple =
     .label = Проста
 preview-label = Попередній перегляд:

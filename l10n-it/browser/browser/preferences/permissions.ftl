@@ -34,6 +34,9 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Salva modifiche
     .accesskey = S
+permission-dialog =
+    .buttonlabelaccept = Salva modifiche
+    .buttonaccesskeyaccept = S
 permissions-autoplay-menu = Impostazione predefinita per tutti i siti web:
 permissions-searchbox =
     .placeholder = Cerca sito web
@@ -63,10 +66,6 @@ permissions-invalid-uri-label = Inserire un nome valido per il server
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-content-blocking-window =
-    .title = Eccezioni - Blocco contenuti
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Il blocco contenuti è stato disattivato per i seguenti siti web.
 permissions-exceptions-etp-window =
     .title = Eccezioni per protezione antitracciamento avanzata
     .style = { permissions-window.style }
@@ -100,12 +99,7 @@ permissions-exceptions-addons-window =
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = È possibile specificare quali siti web avranno il permesso di installare componenti aggiuntivi. Inserire l’indirizzo esatto del sito web a cui dare il permesso e fare clic su Consenti.
 
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Eccezioni - Riproduzione automatica
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = È possibile specificare quali siti web avranno sempre il permesso di riprodurre automaticamente contenuti sonori e quali verranno bloccati. Inserire l’indirizzo esatto del sito web da gestire e fare clic su Blocca o Consenti.
+## Site Permissions - Autoplay
 
 permissions-site-autoplay-window =
     .title = Impostazioni - Riproduzione automatica

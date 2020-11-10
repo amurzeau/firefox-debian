@@ -56,6 +56,9 @@ cert-error-details-hsts-label = សុវត្ថិភាព​ដឹកជញ
 cert-error-details-key-pinning-label = ការ​ខ្ទាស់​កូន​សោ​សាធារណៈ HTTP៖ { $hasHPKP }
 cert-error-details-cert-chain-label = ច្រវាក់​​វិញ្ញាបនបត្រ៖
 open-in-new-window-for-csp-or-xfo-error = បើក​គេហទំព័រ​នៅ​ក្នុង​ផ្ទាំង​ថ្មី
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = ដើម្បីការពារសុវត្ថិភាពរបស់អ្នក { $hostname }​ នឹងមិនអនុញ្ញាតឱ្យ { -brand-short-name } បង្ហាញទំព័រ ប្រសិនបើគេហទំព័រផ្សេងទៀតបានបង្កប់។ ដើម្បីមើលទំព័រនេះអ្នកត្រូវបើកវានៅក្នុងផ្ទាំង​ថ្មី។
 
 ## Messages used for certificate error titles
 
@@ -84,7 +87,7 @@ proxyResolveFailure-title = មិន​អាច​រក​ឃើញ​ម៉�
 redirectLoop-title = ទំព័រ​មិន​កំពុងតែ​ប្ដូរ​ទិស​យ៉ាង​ត្រឹមត្រូវ​ទេ
 unknownSocketType-title = ចម្លើយតប​ពី​ម៉ាស៊ីន​បម្រើ​ដែល​មិន​បាន​រំពឹងទុក
 nssFailure2-title = ​ការ​តភ្ជាប់​សុវត្ថិភាព​បរាជ័យ
-cspBlocked-title = បាន​ទប់ស្កាត់​ដោយ​គោលការណ៍​អំពី​សុវត្ថិភាព​មាតិកា
+csp-xfo-error-title = { -brand-short-name } មិនអាចបើកទំព័រនេះបានទេ
 corruptedContentError-title = កំហុស​មាតិកា​ដែល​ខូច
 remoteXUL-title = XUL ពី​ចម្ងាយ
 sslv3Used-title = មិន​អាច​តភ្ជាប់​ដោយ​សុវត្ថិភាព​ឡើយ
@@ -93,3 +96,5 @@ blockedByPolicy-title = ទំព័រត្រូវបានទប់ស្�
 clockSkewError-title = នាឡិកាកុំព្យូទ័ររបស់អ្នកមិនត្រឹមត្រូវ
 networkProtocolError-title = បញ្ហា​​ពិធីការ​បណ្ដាញ
 nssBadCert-title = ប្រុងប្រយ័ត្ន៖ មានហានិភ័យសុវត្ថិភាពដែលអាច​នឹង​កើត​មាន
+nssBadCert-sts-title = មិនបានភ្ជាប់៖ បញ្ហាសុវត្ថិភាពដែល​អាច​កើតឡើង
+certerror-mitm-title = កម្មវិធីកំពុងការពារ { -brand-short-name } ពីការភ្ជាប់ទៅគេហទំព័រនេះដោយសុវត្ថិភាព

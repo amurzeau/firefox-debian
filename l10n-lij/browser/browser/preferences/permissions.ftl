@@ -5,57 +5,46 @@
 permissions-window =
     .title = Eceçioin…
     .style = width: 36em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Indirisso do scito
     .accesskey = d
-
 permissions-block =
     .label = Blòcco
     .accesskey = B
-
 permissions-session =
     .label = Permetti in sta sescion
     .accesskey = s
-
 permissions-allow =
     .label = Permetti
     .accesskey = P
-
 permissions-site-name =
     .label = Scito
-
 permissions-status =
     .label = Stato
-
 permissions-remove =
     .label = Scancella scito
     .accesskey = S
-
 permissions-remove-all =
     .label = Scancella tutti i sciti
     .accesskey = e
-
 permissions-button-cancel =
     .label = Anulla
     .accesskey = A
-
 permissions-button-ok =
     .label = Sarva cangiamenti
     .accesskey = S
-
+permission-dialog =
+    .buttonlabelaccept = Sarva cangiamenti
+    .buttonaccesskeyaccept = S
 permissions-searchbox =
     .placeholder = Çerca scito
-
 permissions-capabilities-allow =
     .label = Permetti
 permissions-capabilities-block =
     .label = Blòcco
 permissions-capabilities-prompt =
     .label = Domanda de longo
-
 permissions-capabilities-listitem-allow =
     .value = Permetti
 permissions-capabilities-listitem-block =
@@ -70,10 +59,6 @@ permissions-invalid-uri-label = Pe piaxei inserisci un nomme de host valido
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-content-blocking-window =
-    .title = Eceçioin - Blòcco di contegnui
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = T'æ dizabilitou o blòcco di contegnui pe sti sciti.
 
 ## Exceptions - Cookies
 
@@ -103,14 +88,8 @@ permissions-exceptions-addons-window =
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Ti ti peu dî quæ sciti peuan arvî ò instalâ di conponenti azonti. Scrivi l'indirisso di sciti a-i quæ ti veu dâ o permisso e sciacca Permetti.
 
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Eceçioin - Aoto-riproduçion
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Ti ti peu dî quæ sciti peuan de longo fâ l'aotoriproduçion co-o son. Scrivi l'indirisso do scito che ti ti veu gestî e sciacca Blòcca ò Permetti.
-
 ## Site Permissions - Autoplay
+
 
 ## Site Permissions - Notifications
 
@@ -133,6 +112,7 @@ permissions-site-location-disable-label =
 permissions-site-location-disable-desc = Questo o blòcca i sciti che no en inta lista chi sorvia da domandâ o permisso de acede a-a teu poxiçion. Blocâ e notifiche o peu inpedî çerte carateristiche do scito.
 
 ## Site Permissions - Virtual Reality
+
 
 ## Site Permissions - Camera
 

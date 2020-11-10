@@ -4,17 +4,19 @@
 
 fonts-window =
     .title = Ruwäch tz'ib'
+
 fonts-window-close =
     .key = w
 
 ## Font groups by language
 
-fonts-langgroup-header = Ruwäch tz'ib' richin:
+fonts-langgroup-header = Ruwäch tz'ib' richin
     .accesskey = R
+
 fonts-langgroup-arabic =
-    .label = aj Arabia
+    .label = Aj Arabia
 fonts-langgroup-armenian =
-    .label = Armenyan
+    .label = Armeni'o'
 fonts-langgroup-bengali =
     .label = Bengali
 fonts-langgroup-simpl-chinese =
@@ -28,9 +30,9 @@ fonts-langgroup-cyrillic =
 fonts-langgroup-devanagari =
     .label = Devanagari
 fonts-langgroup-ethiopic =
-    .label = Eti'ope
+    .label = Eti'ope'
 fonts-langgroup-georgian =
-    .label = Aj Georgia
+    .label = Georgian ch'ab'äl
 fonts-langgroup-el =
     .label = RYEWO
 fonts-langgroup-gujarati =
@@ -63,9 +65,9 @@ fonts-langgroup-tamil =
 fonts-langgroup-telugu =
     .label = Telugu
 fonts-langgroup-thai =
-    .label = Aj Tailanda
+    .label = Taylanes
 fonts-langgroup-tibetan =
-    .label = Aj Tibet
+    .label = Tibetano'
 fonts-langgroup-canadian =
     .label = Rujachik tunun ruk'u'x tzij aj Canada
 fonts-langgroup-other =
@@ -75,24 +77,33 @@ fonts-langgroup-other =
 
 fonts-proportional-header = Junamil
     .accesskey = J
+
 fonts-default-serif =
     .label = Seriw
 fonts-default-sans-serif =
-    .label = Sans-serif
+    .label = Sans Serif
+
 fonts-proportional-size = Nimilem
     .accesskey = l
+
 fonts-serif = Seriw
     .accesskey = S
-fonts-sans-serif = Majun-seriw
+
+fonts-sans-serif = Sans-serif
     .accesskey = n
+
 fonts-monospace = Rujukojol cholaj
     .accesskey = R
+
 fonts-monospace-size = Nimilem
     .accesskey = e
+
 fonts-minsize = Ko'öl runimilem tz'ib'
     .accesskey = o
+
 fonts-minsize-none =
     .label = Majun
+
 fonts-allow-own =
     .label = Tiya' q'ij chi ke ri taq ruxaq tikicha' ri ruwäch kitz'ib', pa ruk'exel ri jun rucha'oj kan
     .accesskey = T
@@ -104,12 +115,14 @@ fonts-allow-own =
 
 fonts-languages-fallback-header = Rucholajil ruwäch tzij richin rupam sipan kan
 fonts-languages-fallback-desc = Re rucholajil rucholajem tz'ib' nokisäx richin ojer rupam, ri man nuya' ta rutzijol ri rucholajil.
+
 fonts-languages-fallback-label = Rucholajil rucholajem tzij, ri kan k'o wi
     .accesskey = R
+
 fonts-languages-fallback-name-auto =
     .label = Ri jikib'an kan richin ri ch'ab'äl re re'
 fonts-languages-fallback-name-arabic =
-    .label = Arawe
+    .label = Aj Arabia
 fonts-languages-fallback-name-baltic =
     .label = Báltic
 fonts-languages-fallback-name-ceiso =
@@ -131,16 +144,17 @@ fonts-languages-fallback-name-japanese =
 fonts-languages-fallback-name-korean =
     .label = KORYANO
 fonts-languages-fallback-name-thai =
-    .label = Aj Tailanda
+    .label = Taylanes
 fonts-languages-fallback-name-turkish =
     .label = Aj Turquia
 fonts-languages-fallback-name-vietnamese =
     .label = aj BYETNAM
 fonts-languages-fallback-name-other =
     .label = Ch'aqa' chik (incl. aj Europa occidental)
+
 # Variables:
 #   $name {string, "Arial"} - Name of the default font
 fonts-label-default =
-    .label = Ruk'amon wi pe ({ $name })
+    .label = K'o wi ({ $name })
 fonts-label-default-unnamed =
     .label = K'o wi

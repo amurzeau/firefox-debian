@@ -4,10 +4,6 @@
 
 process-type-web = Contingut web
 
-# process used to run privileged pages,
-# such as about:home
-process-type-privileged = Contingut privilegiat
-
 # process used to run privileged about pages,
 # such as about:home
 process-type-privilegedabout = Pàgines «about» privilegiades
@@ -33,3 +29,8 @@ process-type-webisolated = Contingut web aïllat
 # graphics acceleration
 process-type-gpu = GPU
 
+# process used to perform network operations
+process-type-socket = Sòcol
+
+# process preallocated; may change to other types
+process-type-prealloc = Preassignat

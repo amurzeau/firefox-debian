@@ -24,23 +24,16 @@ graph-total-tracker-summary =
 graph-private-window = { -brand-short-name } continuă să blocheze elementele de urmărire în ferestrele private, dar nu ține o evidență cu ce a blocat.
 # Weekly summary of the graph when the graph is empty in Private Mode
 graph-week-summary-private-window = Elementele de urmărire blocate de { -brand-short-name } săptămâna aceasta
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-# The category name in the <b> tag will be bold.
-protection-report-header-details-standard = Nivelul de protecție este setat pe <b>Standard</b>
-    .title = Mergi la Setări de confidențialitate
-protection-report-header-details-strict = Nivelul de protecție este setat pe <b>Strict</b>
-    .title = Mergi la Setări de confidențialitate
-protection-report-header-details-custom = Nivelul de protecție este setat pe <b>Personalizat</b>
-    .title = Mergi la Setări de confidențialitate
-protection-report-page-title = Protecții pentru confidențialitate
-protection-report-content-title = Protecții pentru confidențialitate
-etp-card-title = Protecție îmbunătățită împotriva urmăririi
-etp-card-content = Elementele de urmărire te urmăresc online pentru a colecta informații despre obiceiurile și interesele tale de navigare. { -brand-short-name } blochează multe dintre aceste elementele de urmărire și alte scripturi rău-intenționate.
 protection-report-webpage-title = Tablou de bord privind protecțiile
 protection-report-page-content-title = Tablou de bord privind protecțiile
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
+protection-report-page-summary = { -brand-short-name } îți poate proteja confidențialitatea „din culise” în timp ce navighezi. Acesta este un rezumat personalizat cu protecțiile aplicate, inclusiv instrumente pentru a prelua controlul asupra securității tale online.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } îți protejează confidențialitatea „din culise” în timp ce navighezi. Acesta este un rezumat personalizat cu protecțiile aplicate, inclusiv instrumente pentru a prelua controlul asupra securității tale online.
+protection-report-settings-link = Gestionează-ți setările de confidențialitate și securitate
 etp-card-title-always = Protecție îmbunătățită împotriva urmăririi: Activată întotdeauna
 etp-card-title-custom-not-blocking = Protecție îmbunătățită împotriva urmăririi: DEZACTIVATĂ
+etp-card-content-description = { -brand-short-name } împiedică automat firmele să te urmărească în secret pe web.
 protection-report-etp-card-content-custom-not-blocking = Toate protecțiile sunt acum dezactivate. Selectează elementele de urmărire care să fie blocate prin gestionarea setărilor de protecție din { -brand-short-name }.
 protection-report-manage-protections = Gestionează setările
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -48,8 +41,8 @@ protection-report-manage-protections = Gestionează setările
 graph-today = Astăzi
 # This string is used to describe the graph for screenreader users.
 graph-legend-description = Un grafic ce conține numărul total de elemente de urmărire din fiecare tip blocate în această săptămână.
-social-tab-title = Elemente de urmărire ale rețelelor sociale
-social-tab-contant = Rețelele sociale plasează elemente de urmărire pe alte site-uri web pentru a urmări ceea ce faci, vezi și urmărești online. Acest lucru permite companiilor rețelelor sociale să afle mai multe despre tine, dincolo de ceea ce împărtășești pe profilurile rețelelor sociale. <a data-l10n-name="learn-more-link">Află mai multe</a>
+social-tab-title = Elemente de urmărire de pe rețele de socializare
+social-tab-contant = Rețelele de socializare plasează elemente de urmărire pe alte site-uri web pentru a urmări ce faci, ce vezi și ce urmărești online. Ele permit firmelor care dețin rețelele de socializare să afle mai multe despre tine, dincolo de ce partajezi pe profilurile de pe rețelele de socializare. <a data-l10n-name="learn-more-link">Află mai multe</a>
 cookie-tab-title = Cookie-uri de urmărire între site-uri
 cookie-tab-content = Aceste cookie-uri te urmăresc de pe un site pe altul și adună date despre ce faci online. Acestea sunt setate de părți terțe, precum agenții de publicitate și companiile de analitică. Blocarea cookie-urilor de urmărire între site-uri reduce numărul de reclame care se țin după tine. <a data-l10n-name="learn-more-link">Află mai multe</a>
 tracker-tab-title = Conținut de urmărire
@@ -65,23 +58,16 @@ mobile-app-title = Blochează elementele de urmărire din reclame pe mai multe d
 mobile-app-card-content = Folosește browserul pentru dispozitive mobile cu protecție integrată împotriva elementelor de urmărire din reclame.
 mobile-app-links = { -brand-product-name } Browser pentru <a data-l10n-name="android-mobile-inline-link">Android</a> și <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 lockwise-title = Nu mai pierzi niciodată o parolă
-lockwise-title-logged-in = { -lockwise-brand-name }
+lockwise-title-logged-in2 = Gestionarea parolelor
 lockwise-header-content = { -lockwise-brand-name } îți stochează în siguranță parolele în browser.
 lockwise-header-content-logged-in = Stochează-ți și sincronizează-ți parolele în siguranță pe toate dispozitivele.
-protection-report-view-logins-button = Vezi datele de autentificare
-    .title = Mergi la Date de autentificare salvate
+protection-report-save-passwords-button = Salvează parolele
+    .title = Salvează parolele în { -lockwise-brand-short-name }
+protection-report-manage-passwords-button = Gestionează parolele
+    .title = Gestionează parolele cu { -lockwise-brand-short-name }
 lockwise-mobile-app-title = Ia-ți cu tine parolele oriunde
 lockwise-no-logins-card-content = Folosește parolele salvate în { -brand-short-name } pe orice dispozitiv.
 lockwise-app-links = { -lockwise-brand-name } pentru <a data-l10n-name="lockwise-android-inline-link"> Androi</a> și <a data-l10n-name = "lockwise-ios-inline-link" >iOS</a>
-# This string is displayed after a large numeral that indicates the total number
-# of email addresses being monitored. Don’t add $count to
-# your localization, because it would result in the number showing twice.
-lockwise-passwords-stored =
-    { $count ->
-        [one] parolă stocată în siguranță <a data-l10n-name="lockwise-how-it-works">Cum funcționează</a>
-        [few] parole stocate în siguranță <a data-l10n-name="lockwise-how-it-works">Cum funcționează</a>
-       *[other] de parole stocate în siguranță <a data-l10n-name="lockwise-how-it-works">Cum funcționează</a>
-    }
 # Variables:
 # $count (Number) - Number of passwords exposed in data breaches.
 lockwise-scanned-text-breached-logins =
@@ -100,27 +86,22 @@ lockwise-scanned-text-no-breached-logins =
         [few] Parolele tale sunt stocate în siguranță.
        *[other] Parolele tale sunt stocate în siguranță.
     }
+lockwise-how-it-works-link = Cum funcționează
 turn-on-sync = Activează { -sync-brand-short-name }...
     .title = Mergi la preferințele de sincronizare
-manage-connected-devices = Gestionează dispozitivele…
-# Variables:
-#   $count (Number) - Number of devices connected with sync.
-lockwise-connected-device-status =
-    { $count ->
-        [one] Conectat la { $count } dispozitiv
-        [few] Conectat la { $count } dispozitive
-       *[other] Conectat la { $count } de dispozitive
-    }
 monitor-title = Stai cu ochii pe încălcările securității datelor
 monitor-link = Cum funcționează
-monitor-header-content-no-account = Verifică { -monitor-brand-name } pentru a vedea dacă faci parte dintr-o încălcare cunoscută a securității datelor și pentru a obține alerte despre încălcările noi.
+monitor-header-content-no-account = Intră pe { -monitor-brand-name } și vezi dacă ai fost implicat(ă) într-o încălcare cunoscută a securității datelor și pentru a obține alerte despre încălcările noi.
 monitor-header-content-signed-in = { -monitor-brand-name } te avertizează dacă informațiile tale apar într-o încălcare cunoscută a securității datelor.
-monitor-sign-up = Înregistrează-te pentru alerte privind încălcările securității datelor
 monitor-sign-up-link = Înregistrează-te pentru alerte privind încălcările securității datelor
     .title = Înregistrează-te pentru alerte privind încălcările securității datelor pe { -monitor-brand-name }
 auto-scan = Scanat automat astăzi
+monitor-emails-tooltip =
+    .title = Afișează adresele de e-mail monitorizate în { -monitor-brand-short-name }
 monitor-breaches-tooltip =
-    .title = Vezi încălcările securității datelor pe { -monitor-brand-short-name }
+    .title = Vezi încălcările cunoscute ale securității datelor pe { -monitor-brand-short-name }
+monitor-passwords-tooltip =
+    .title = Afișează parolele expuse în { -monitor-brand-short-name }
 # This string is displayed after a large numeral that indicates the total number
 # of email addresses being monitored. Don’t add $count to
 # your localization, because it would result in the number showing twice.
@@ -157,16 +138,6 @@ info-exposed-passwords-found =
         [few] parole expuse în toate încălcările securității datelor
        *[other] de parole expuse în toate încălcările securității datelor
     }
-full-report-link = Vezi raportul complet pe <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>
-# This string is displayed after a large numeral that indicates the total number
-# of saved logins which may have been exposed. Don’t add $count to
-# your localization, because it would result in the number showing twice.
-password-warning =
-    { $count ->
-        [one] set de date de autentificare salvat este posibil să fi fost expus într-o încălcare a securității datelor. Schimbă această parolă pentru o mai bună securitate online. <a data-l10n-name="lockwise-link">Vezi datele de autentificare salvate</a>
-        [few] seturi de date de autentificare salvate este posibil să fi fost expuse într-o încălcare a securității datelor. Schimbă aceste parole pentru o mai bună securitate online. <a data-l10n-name="lockwise-link">Vezi datele de autentificare salvate</a>
-       *[other] de seturi de date de autentificare salvate este posibil să fi fost expuse într-o încălcare a securității datelor. Schimbă aceste parole pentru o mai bună securitate online. <a data-l10n-name="lockwise-link">Vezi datele de autentificare salvate</a>
-    }
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords that are marked as resolved by the user. Don’t add $count
 # to your localization, because it would result in the number showing twice.
@@ -177,14 +148,21 @@ info-exposed-passwords-resolved =
        *[other] de parole expuse în încălcări nerezolvate
     }
 monitor-no-breaches-title = Vești bune!
+monitor-no-breaches-description = Nu apari în nicio încălcare cunoscută. Dacă apar noutăți, te vom anunța.
 monitor-view-report-link = Vezi raportul
     .title = Rezolvă încălcările securității datelor pe { -monitor-brand-short-name }
+monitor-breaches-unresolved-title = Rezolvă-ți încălcările securității datelor
+monitor-breaches-unresolved-description = După ce ai văzut detaliile încălcărilor securității datelor și ai luat măsuri ca să îți protejezi informațiile, poți marca încălcările ca rezolvate.
+monitor-manage-breaches-link = Gestionează încălcările securității datelor
+    .title = Gestionează încălcările securității datelor cu { -monitor-brand-short-name }
+monitor-breaches-resolved-title = Bun! Ai rezolvat toate încălcări cunoscute ale securității datelor.
+monitor-breaches-resolved-description = Te vom anunța dacă adresa ta de e-mail apare în orice încălcări noi ale securității datelor.
 # Variables:
 # $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
 # $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
 monitor-partial-breaches-title =
     { $numBreaches ->
-        [one] { $numBreachesResolved } din { $numBreaches } încălcări marcate ca rezolvate
+        [one] { $numBreachesResolved } din { $numBreaches } încălcare marcată ca rezolvată
         [few] { $numBreachesResolved } din { $numBreaches } încălcări marcate ca rezolvate
        *[other] { $numBreachesResolved } din { $numBreaches } de încălcări marcate ca rezolvate
     }
@@ -192,6 +170,11 @@ monitor-partial-breaches-title =
 # $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
 monitor-partial-breaches-percentage = { $percentageResolved }% terminat
 monitor-partial-breaches-motivation-title-start = Grozav început!
+monitor-partial-breaches-motivation-title-middle = Ține-o tot așa!
+monitor-partial-breaches-motivation-title-end = Aproape gata! Ține-o tot așa.
+monitor-partial-breaches-motivation-description = Rezolvă-ți restul încălcărilor securității datelor în { -monitor-brand-short-name }.
+monitor-resolve-breaches-link = Rezolvă încălcările securității datelor
+    .title = Rezolvă încălcările securității datelor în { -monitor-brand-short-name }
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.
@@ -201,12 +184,12 @@ monitor-partial-breaches-motivation-title-start = Grozav început!
 ##   $percentage (Number) - Percentage this type of tracker contributes to the whole graph
 
 bar-tooltip-social =
-    .title = Elemente de urmărire ale rețelelor sociale
+    .title = Elemente de urmărire de pe rețele de socializare
     .aria-label =
         { $count ->
-            [one] { $count } element de urmărire al rețelelor sociale ({ $percentage }%)
-            [few] { $count } elemente de urmărire ale rețelelor sociale ({ $percentage }%)
-           *[other] { $count } de elemente de urmărire ale rețelelor sociale ({ $percentage }%)
+            [one] { $count } element de urmărire de pe rețele de socializare ({ $percentage }%)
+            [few] { $count } elemente de urmărire de pe rețele de socializare ({ $percentage }%)
+           *[other] { $count } de elemente de urmărire de pe rețele de socializare ({ $percentage }%)
         }
 bar-tooltip-cookie =
     .title = Cookie-uri de urmărire între site-uri

@@ -42,6 +42,8 @@
 <!ENTITY  newMessageCmd.accesskey "п">
 <!ENTITY  newContactCmd.label "Контакт от адресника…">
 <!ENTITY  newContactCmd.accesskey "к">
+<!ENTITY openMenuCmd.label "Отваряне">
+<!ENTITY openMenuCmd.accesskey "о">
 <!ENTITY openMessageFileCmd.label "Отваряне на запазено писмо…">
 <!ENTITY openMessageFileCmd.accesskey "О">
 <!ENTITY saveAsMenu.label "Запазване като">
@@ -287,6 +289,8 @@
 <!ENTITY searchMailCmd.label "Търсене на писма…">
 <!ENTITY searchMailCmd.accesskey "е">
 <!ENTITY searchMailCmd.key "f">
+<!ENTITY glodaSearchCmd.label "Всеобщо търсене">
+<!ENTITY glodaSearchCmd.accesskey "т">
 <!ENTITY searchAddressesCmd.label "Търсене на адреси…">
 <!ENTITY searchAddressesCmd.accesskey "с">
 
@@ -439,6 +443,9 @@
 <!ENTITY openMessageWindowCmd.label "Отваряне на писмо">
 <!ENTITY openMessageWindowCmd.accesskey "я">
 <!ENTITY openMessageWindowCmd.key "o">
+<!ENTITY openInConversationCmd.label "Преглед на разговора">
+<!ENTITY openInConversationCmd.accesskey "е">
+<!ENTITY openInConversationCmd.key "o">
 <!ENTITY openAttachmentListCmd.label "Прикачени файлове">
 <!ENTITY openAttachmentListCmd.accesskey "ф">
 <!ENTITY openFeedMessage1.label "При отваряне на съобщения от емисия">
@@ -518,17 +525,6 @@
 <!ENTITY errorConsoleCmd.label "Конзола за грешки">
 <!ENTITY errorConsoleCmd.accesskey "н">
 <!ENTITY errorConsoleCmd.commandkey "j">
-<!ENTITY scratchpadCmd.label "Бяла дъска">
-<!ENTITY scratchpadCmd.accesskey "Б">
-
-<!--LOCALIZATION NOTE (scratchpadCmd.keycode):
-    This should be a key code constant as per
-    https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode#Constants_for_keyCode_value
-    (but without the DOM_ prefix) -->
-<!ENTITY scratchpadCmd.keycode "VK_F4">
-<!--LOCALIZATION NOTE (scratchpadCmd.keytext):
-    This should be the text printed on the key defined in the previous string. -->
-<!ENTITY scratchpadCmd.keytext "F4">
 
 <!-- Mail Toolbar -->
 <!ENTITY getMsgButton1.label "Изтегляне на писма">
@@ -582,7 +578,7 @@
 <!ENTITY forwardAsAttachment.tooltip "Препращане на избраното съобщение като притурка">
 <!ENTITY fileButton.tooltip "Запазване като файл">
 <!ENTITY archiveButton.tooltip "Архивиране на избраните съобщения">
-<!ENTITY openConversationButton.tooltip "Показване на разговора на избраното съобщение">
+<!ENTITY openMsgConversationButton.tooltip "Показване на разговора на избраното съобщение">
 <!ENTITY nextButton.tooltip "Напред към следващото непрочетено писмо">
 <!ENTITY nextMsgButton.tooltip "Напред към следващото непрочетено писмо">
 <!ENTITY previousButton.tooltip "Назад към предишното непрочетено писмо">
@@ -702,6 +698,7 @@
 <!ENTITY saveAsVirtualFolderMenu.label "Запазване на търсенето като папка…">
 
 <!-- Thread Pane -->
+<!ENTITY selectColumn.label "Избиране на съобщения">
 <!ENTITY threadColumn.label "Дискусия">
 <!ENTITY fromColumn.label "Подател">
 <!ENTITY recipientColumn.label "Получател">
@@ -723,8 +720,11 @@
 <!ENTITY idColumn.label "Ред на получаване">
 <!ENTITY attachmentColumn.label "Прикачени файлове">
 
+<!ENTITY deleteColumn.label "Изтриване">
+
 <!-- Thread Pane Tooltips -->
-<!ENTITY columnChooser2.tooltip "Избиране на видимите колони">
+<!ENTITY columnChooser2.tooltip "Избиране на видими колони">
+<!ENTITY selectColumn.tooltip "Превключва избирането на всички съобщения">
 <!ENTITY threadColumn2.tooltip "Показване на нишките на съобщенията">
 <!ENTITY fromColumn2.tooltip "Сортиране по подател">
 <!ENTITY recipientColumn2.tooltip "Сортиране по получател">
@@ -745,6 +745,8 @@
 <!ENTITY locationColumn2.tooltip "Сортиране по местоположение">
 <!ENTITY idColumn2.tooltip "Сортиране по реда на получаване">
 <!ENTITY attachmentColumn2.tooltip "Сортиране по притурки">
+
+<!ENTITY deleteColumn.tooltip "Изтриване на съобщение">
 
 <!-- Thread Pane Context Menu -->
 <!ENTITY contextNewMsgFromTemplate.label "Съобщение от шаблон">
@@ -966,3 +968,6 @@
 <!ENTITY writeNewMessageDock.label      "Писане на писмо">
 <!ENTITY openAddressBookDock.label      "Отваряне на адресник">
 
+<!-- Content tab Navigation buttons -->
+<!ENTITY browseBackButton.tooltip    "Връщане една страница назад">
+<!ENTITY browseForwardButton.tooltip "Отиване една страница напред">

@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Senkez ɣer usfaylu amaynut
     .accesskey = m
-undo-close-tab =
-    .label = Sefsex amdal n yiccer.
-    .accesskey = S
 tab-context-close-multiple-tabs =
     .label = Mdel aṭas n waccaren
     .accesskey = M
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -79,3 +80,19 @@ move-tabs =
 move-tab =
     .label = Senkez iccer
     .accesskey = n
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Mdel iccer
+            [one] Mdel Iccer
+           *[other] Mdel Iccaren
+        }
+    .accesskey = M
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Senkez iccer
+            [one] Senkez iccer
+           *[other] Senkez iccaren
+        }
+    .accesskey = S

@@ -159,7 +159,7 @@ cfr-doorhanger-sync-bookmarks-ok-button = Rmed { -sync-brand-short-name }
 ## Login Sync
 
 cfr-doorhanger-sync-logins-header = Ur sṛuḥuy ara awalen-ik uffiren
-cfr-doorhanger-sync-logins-body = Sekles daɣen mtawi awalen-ik uffiren ɣef yibenkan-ik meṛṛa s wudem aɣelsan.
+cfr-doorhanger-sync-logins-body = Sekles rnu mtawi awalen-ik·im uffiren ɣef yibenkan-ik·im i meṛṛa s wudem aɣelsan.
 cfr-doorhanger-sync-logins-ok-button = Rmed { -sync-brand-short-name }
     .accesskey = R
 
@@ -205,6 +205,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Wali akk
     .accesskey = W
+cfr-doorhanger-milestone-close-button = Mdel
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -238,3 +240,35 @@ cfr-whatsnew-protections-icon-alt = Tignit Shield
 
 cfr-whatsnew-better-pdf-header = Tirmit ifazen n PDF
 cfr-whatsnew-better-pdf-body = Imesliyen PDF ttaldayen-d tura srid deg { -brand-short-name }, eǧǧ tiddin n leqdic-ik ɣef wafus.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Aqader n tudert-ik tabaḍnit yeεna-aɣ. { -brand-short-name } yettawi akka tura s wudem aɣelsan isutar-ik.im DNS a melmi i as-tettunefk tegnit ɣer uqeddac amendid akken ad tettummestneḍ mi ara tettinigeḍ.
+cfr-doorhanger-doh-header = Inadiyen DNS s wugar n tɣellist d uwgelhen
+cfr-doorhanger-doh-primary-button = IH awi-t-id
+    .accesskey = o
+cfr-doorhanger-doh-secondary-button = Sens
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Tudert-ik·im tabaḍnit tesɛa azal. { -brand-short-name } tura yettaɛzal ismal web wa ɣef wa tett tastant gar-asen, ayen yeswaɛrayen i yimakaren ad ad akren awalen uffiren, uṭṭunen n tkarḍiwin n usmad d telɣut-nniḍen tamḥulfut.
+cfr-doorhanger-fission-header = Aɛzal n usmel
+cfr-doorhanger-fission-primary-button = IH, awi-t
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Issin ugar
+    .accesskey = L
+# Deprecated
+cfr-doorhanger-fission-body = { -brand-short-name } yermed-ak·am tamahilt tarmitant Fission (aɛzal n usmel). S uɛzal n yal asmel deg ukala yettwaɛezlen, Fission ad tmudd tissi-nniḍen n tɣellist i kečč·kemm d yismal web wuɣur i trezzuḍ.
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Ammesten awurman mgal tiḥila n uḍfar yettkellixen
+cfr-whatsnew-clear-cookies-body = Kra n yineḍfaren ttwehhin-k/m ɣer kra n yismal web ideg llan inagan n tuqqna d uffiren. Tura, { -brand-short-name } iseffeḍ s wudem awurman inagan-agi n tuqqna akken ur ssawaḍen ara ad k-ḍefren.
+cfr-whatsnew-clear-cookies-image-alt = Unuɣen n yinagan n tuqqna ttusweḥlen
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Ugar n yisenqaden n umidya
+cfr-whatsnew-media-keys-body = Urar syen seḥbes ameslaw neɣ tavdyut srd seg unasiw neɣ seg ukask inek·inem, ayen yessishlen asenqed n umidya seg yiccer-nniḍen, seg wahil neɣ ula mi ara sekker uselkim-ik·im. Tzemreḍ daɣen ad tedrurmeḍ gar tezlatin s useqdec n tqeffaln sdat d deffir.
+cfr-whatsnew-media-keys-button = Issn amek

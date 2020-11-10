@@ -60,7 +60,7 @@ certificate-viewer-sha-256 = SHA-256
 certificate-viewer-serial-number = სერიული ნომერი
 certificate-viewer-signature-algorithm = ხელმოწერის ალგორითმი
 certificate-viewer-signature-scheme = ხელმოწერის სქემა
-certificate-viewer-timestamp = დროის აღნიშვნა
+certificate-viewer-timestamp = დროის ნიშნული
 certificate-viewer-value = მნიშვნელობა
 certificate-viewer-version = ვერსია
 certificate-viewer-business-category = ბიზნესის კატეგორია
@@ -78,11 +78,10 @@ certificate-viewer-ocsp-stapling = OCSP-მიმაგრება
 certificate-viewer-subject-key-id = სუბიექტის გასაღების ID
 certificate-viewer-authority-key-id = უფლებამოსილი მხარის გასაღების ID
 certificate-viewer-authority-info-aia = უფლებამოსილი მხარის მონაცემები (AIA)
-certificate-viewer-certificate-policies = სერთიფიკატის პირობები
+certificate-viewer-certificate-policies = სერტიფიკატის პირობები
 certificate-viewer-embedded-scts = ჩაშენებული SCT- ები
 certificate-viewer-crl-endpoints = CRL-ს მომწოდებლები
-
-# This message is used as a row header in the Miscellaneous section. 
+# This message is used as a row header in the Miscellaneous section.
 # The associated data cell contains links to download the certificate.
 certificate-viewer-download = ჩამოტვირთვა
 # This message is used to replace boolean values (true/false) in several certificate fields, e.g. Certificate Authority
@@ -101,12 +100,16 @@ certificate-viewer-download-pem = PEM (სერტიფიკატი)
     .download = { $fileName }.pem
 certificate-viewer-download-pem-chain = PEM (ჯაჭვი)
     .download = { $fileName }-chain.pem
-
 # The title attribute for Critical Extension icon
 certificate-viewer-critical-extension =
     .title = ეს გაფართოება მიჩნეულია გადამწვეტად, რაც ნიშნავს, რომ კლიენტებმა უნდა უარყონ სერტიფიკატი, თუ მათთვის გაუგებარია.
 certificate-viewer-export = ცალკე შენახვა
     .download = { $fileName }.pem
+
+##
+
+# Label for a tab where we haven't found a better label:
+certificate-viewer-unknown-group-label = (უცნობი)
 
 ## Labels for tabs displayed in stand-alone about:certificate page
 

@@ -12,7 +12,7 @@ screenshots-save-page-button = Lưu toàn trang
 screenshots-download-button = Tải xuống
 screenshots-download-button-tooltip = Tải về ảnh chụp màn hình
 screenshots-copy-button = Sao chép
-screenshots-copy-button-tooltip = Sao chép ảnh chụp màn hình vào clipboard
+screenshots-copy-button-tooltip = Sao chép ảnh chụp màn hình vào bộ nhớ tạm
 
 screenshots-meta-key =
     { PLATFORM() ->
@@ -20,10 +20,10 @@ screenshots-meta-key =
        *[other] Ctrl
     }
 screenshots-notification-link-copied-title = Đã sao chép liên kết
-screenshots-notification-link-copied-details = Liên kết ảnh chụp màn hình của bạn đã được sao chép vào clipboard. Nhấn { screenshots-meta-key }-V để dán.
+screenshots-notification-link-copied-details = Đã sao chép liên kết ảnh chụp màn hình của bạn vào bộ nhớ tạm. Nhấn { screenshots-meta-key }-V để dán.
 
 screenshots-notification-image-copied-title = Ảnh chụp màn hình đã được sao chép
-screenshots-notification-image-copied-details = Ảnh chụp màn hình của bạn đã được sao chép vào clipboard. Nhấn { screenshots-meta-key }-V để dán.
+screenshots-notification-image-copied-details = Đã sao chép ảnh chụp màn hình của bạn vào bộ nhớ tạm. Nhấn { screenshots-meta-key }-V để dán.
 
 screenshots-request-error-title = Không sử dụng được.
 screenshots-request-error-details = Xin lỗi! Chúng tôi không thể sao lưu ảnh chụp của bạn. Vui lòng thử lại sau.

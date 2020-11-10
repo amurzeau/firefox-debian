@@ -17,6 +17,12 @@ extensions-name = Назва
 extensions-enabled = Задзейнічана
 extensions-version = Версія
 extensions-id = ID
+support-addons-title = Дадаткі
+support-addons-name = Назва
+support-addons-type = Тып
+support-addons-enabled = Уключаны
+support-addons-version = Версія
+support-addons-id = ID
 security-software-title = Праграмы для бяспекі
 security-software-type = Тып
 security-software-name = Назва
@@ -62,6 +68,7 @@ app-basics-service-workers = Зарэгістраваныя сервіс-вор�
 app-basics-profiles = Профілі
 app-basics-launcher-process-status = Пускавы працэс
 app-basics-multi-process-support = Шматпрацэсныя вокны
+app-basics-fission-support = Вокны Fission
 app-basics-remote-processes-count = Адлеглыя працэсы
 app-basics-enterprise-policies = Карпаратыўная палітыка
 app-basics-location-service-key-google = Ключ Службы вызначэння месцазнаходжання ад Google
@@ -74,6 +81,12 @@ show-dir-label =
         [windows] Адкрыць папку
        *[other] Адкрыць дырэкторыю
     }
+environment-variables-title = Зменныя асяроддзя
+environment-variables-name = Назва
+environment-variables-value = Значэнне
+experimental-features-title = Эксперыментальныя магчымасці
+experimental-features-name = Назва
+experimental-features-value = Значэнне
 modified-key-prefs-title = Змененыя важныя налады
 modified-prefs-name = Назва
 modified-prefs-value = Значэнне
@@ -98,8 +111,6 @@ graphics-desktop-environment = Працоўнае асяроддзе
 place-database-title = База звестак месцаў
 place-database-integrity = Цэльнасць
 place-database-verify-integrity = Праверыць цэльнасць
-js-title = JavaScript
-js-incremental-gc = Incremental GC
 a11y-title = Даступнасць
 a11y-activated = Задзейнічаны
 a11y-force-disabled = Прадухіліць даступнасць
@@ -129,7 +140,6 @@ restart-button-label = Перазапусціць
 
 audio-backend = Аудыё-падсістэма
 max-audio-channels = Макс. колькасць каналаў
-channel-layout = Пераважны фармат канала
 sample-rate = Пераважная частата дыскрэтызацыі
 roundtrip-latency = Затрымка туды і назад (стандартнае адхіленне)
 media-title = Медыя
@@ -271,11 +281,13 @@ blocklisted-bug = У спісе блакавання з-за вядомых пр
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = праблема { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Заблакавана з-за вядомых праблем: <a data-l10n-name="bug-link">апісанне { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = У спісе блакавання; код памылкі { $failureCode }
 d3d11layers-crash-guard = Кампазітар D3D11
 d3d11video-crash-guard = Відэадэкодэр D3D11
-d3d9video-crash-buard = Відэадэкодэр D3D9
 d3d9video-crash-guard = Відэадэкодэр D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Відэадэкодэр WMF VPX
@@ -323,6 +335,20 @@ multi-process-status-6 = Выключана непадтрыманым тэкс�
 multi-process-status-7 = Адключана дадатакамі
 multi-process-status-8 = Прымусова адключаны
 multi-process-status-unknown = Невядомы статус
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Адключана эксперыментам
+fission-status-experiment-treatment = Уключана эксперыментам
+fission-status-disabled-by-e10s-env = Адключана асяроддзем
+fission-status-enabled-by-env = Уключана асяроддзем
+fission-status-disabled-by-safe-mode = Адключана ў бяспечным рэжыме
+fission-status-enabled-by-default = Тыпова уключана
+fission-status-disabled-by-default = Тыпова адключана
+fission-status-enabled-by-user-pref = Уключаны карыстальнікам
+fission-status-disabled-by-user-pref = Адключана карыстальнікам
+fission-status-disabled-by-e10s-other = E10s адключаны
 async-pan-zoom = Асінхроннае павелічэнне/маштаб
 apz-none = няма
 wheel-enabled = увод колца ўключаны
@@ -330,7 +356,7 @@ touch-enabled = пальцавы увод ўключаны
 drag-enabled = захоп стужкі прагорткі ўключаны
 keyboard-enabled = клавіятура ўключана
 autoscroll-enabled = аўтапракрутка ўключана
-zooming-enabled = уключана плаўнае маштабаванне жэстам
+zooming-enabled = уключана плаўнае маштабаванне шчыпком
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference
@@ -343,3 +369,12 @@ touch-warning = асінхронны пальцавы ўвод выключан�
 policies-inactive = Неактыўна
 policies-active = Актыўна
 policies-error = Памылка
+
+## Printing section
+
+support-printing-title = Друк
+support-printing-troubleshoot = Вырашэнне праблем
+support-printing-clear-settings-button = Ачысціць захаваныя налады друку
+support-printing-modified-settings = Змененыя параметры друку
+support-printing-prefs-name = Назва
+support-printing-prefs-value = Значэнне

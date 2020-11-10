@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Déplacer vers une nouvelle fenêtre
     .accesskey = n
-undo-close-tab =
-    .label = Annuler la fermeture de l’onglet
-    .accesskey = e
 tab-context-close-multiple-tabs =
     .label = Fermer plusieurs onglets
     .accesskey = l
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -78,3 +79,17 @@ move-tabs =
 move-tab =
     .label = Déplacer l’onglet
     .accesskey = D
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Fermer l’onglet
+           *[other] Fermer les onglets
+        }
+    .accesskey = F
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Déplacer l’onglet
+           *[other] Déplacer les onglets
+        }
+    .accesskey = c

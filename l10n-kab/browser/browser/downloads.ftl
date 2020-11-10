@@ -67,10 +67,10 @@ downloads-cmd-retry =
 downloads-cmd-retry-panel =
     .aria-label = Ɛreḍ i tikelt-nniḍen
 downloads-cmd-go-to-download-page =
-    .label = Ddu ɣer usebter n usider
+    .label = Ddu ɣer usebter n usader
     .accesskey = z
 downloads-cmd-copy-download-link =
-    .label = Nɣel tansa taɣbalut n usider
+    .label = Nɣel tansa taɣbalut n usader
     .accesskey = n
 downloads-cmd-remove-from-history =
     .label = Kkes seg umazray
@@ -83,7 +83,7 @@ downloads-cmd-clear-downloads =
     .accesskey = z
 # This command is shown in the context menu when downloads are blocked.
 downloads-cmd-unblock =
-    .label = Sireg asider
+    .label = aSireg asader
     .accesskey = g
 # This is the tooltip of the action button shown when malware is blocked.
 downloads-cmd-remove-file =
@@ -94,9 +94,9 @@ downloads-cmd-remove-file-panel =
 # downloads are blocked. This opens a dialog where the user can choose
 # whether to unblock or remove the download. Removing is the default option.
 downloads-cmd-choose-unblock =
-    .tooltiptext = Kkes afaylu neɣ sireg asider
+    .tooltiptext = Kkes afaylu neɣ sireg asader
 downloads-cmd-choose-unblock-panel =
-    .aria-label = Kkes afaylu neɣ sireg asider
+    .aria-label = Kkes afaylu neɣ sireg asader
 # This is the tooltip of the action button shown when uncommon downloads are
 # blocked.This opens a dialog where the user can choose whether to open the
 # file or remove the download. Opening is the default option.
@@ -129,7 +129,7 @@ downloads-history =
 # This string is shown at the top of the Download Details Panel, to indicate
 # that we are showing the details of a single download.
 downloads-details =
-    .title = Talqayt n usider
+    .title = Talqayt n usader
 downloads-clear-downloads-button =
     .label = Sfeḍ isadaren
     .tooltiptext = Sfeḍ isadaren immden, ifesxen neɣ wid ur neddi ara

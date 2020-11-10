@@ -38,13 +38,19 @@ policy-DefaultDownloadDirectory = Setează directorul implicit pentru descărcă
 
 policy-DisableAppUpdate = Împiedică actualizările pentru { -brand-short-name }.
 
+policy-DisableDefaultClientAgent = Împiedică agentul clientului implicit să ia vreo măsură. Aplicabilitate numai pentru Windows; alte platforme nu au agentul.
+
 policy-DisableDeveloperTools = Blochează accesul la uneltele pentru dezvoltatori.
 
 policy-DisableFeedbackCommands = Dezactivează comenzile de transmitere de feedback din meniul de Asistență (Transmisie feedback și Raportare site-uri înșelătoare).
 
 policy-DisableForgetButton = Împiedică accesul la butonul Uitare.
 
+policy-DisableFormHistory = Nu memora istoricul căutărilor și formularelor.
+
 policy-DisableMasterPasswordCreation = Dacă este adevărat, nu se poate crea o parolă generală.
+
+policy-DisablePasswordReveal = Nu permite afișarea parolelor în datele de autentificare salvate.
 
 policy-DisableProfileImport = Dezactivează comanda de meniu pentru importul de date din alte aplicații.
 
@@ -67,6 +73,9 @@ policy-DownloadDirectory = Setează și blochează directorul pentru descărcăr
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Activează sau dezactivează Blocarea de conținut și blocheaz-o (opțional).
 
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Activează sau dezactivează extensiile de medii criptate și, opțional, blochează-le.
+
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -80,7 +89,13 @@ policy-HardwareAcceleration = Dacă este fals, dezactivează accelerarea hardwar
 
 policy-InstallAddonsPermission = Permite anumitor site-uri să instaleze suplimente.
 
+policy-LegacyProfiles = Dezactivează funcționalitatea care impune forțat un profil separat pentru fiecare instalare.
+
 ## Do not translate "SameSite", it's the name of a cookie attribute.
+
+policy-LegacySameSiteCookieBehaviorEnabled = Activează setarea implicită a comportamentului moștenit SameSite pentru cookie-uri.
+
+policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Revenire la comportamentul moștenit SameSite pentru cookie-uri pe site-urile specificate.
 
 ##
 
@@ -90,9 +105,18 @@ policy-NetworkPrediction = Activează sau dezactivează predicția de rețea (ob
 
 policy-OfferToSaveLogins = Forțează aplicarea setării pentru a permite { -brand-short-name } să se ofere să rețină date de autentificare și parole salvate. Sunt acceptate ambele valori - adevărat sau fals.
 
+policy-OfferToSaveLoginsDefault = Setează valoarea implicită care să permită { -brand-short-name } să se ofere să rețină datele de autentificare și parolele salvate. Sunt acceptate și valorile adevărate, și pe cele false.
+
 policy-OverrideFirstRunPage = Anulează pagina de întâmpinare la prima utilizare. Lasă politica goală dacă vrei să dezactivezi pagina de întâmpinare la prima utilizare.
 
 policy-OverridePostUpdatePage = Anulează pagina „Noutăți” după actualizare. Lasă politica goală dacă vrei să dezactivezi pagina post-actualizare.
+
+policy-PasswordManagerEnabled = Activează salvarea parolelor în managerul de parole.
+
+# PDF.js and PDF should not be translated
+policy-PDFjs = Dezactivează sau configurează PDF.js, lectorul de PDF-uri încorporat în { -brand-short-name }.
+
+policy-Permissions2 = Configurează permisiunile pentru cameră, microfon, localizare, notificări și redare automată.
 
 policy-Preferences = Setează și blochează valoarea pentru un subset de preferințe.
 
@@ -106,6 +130,8 @@ policy-SanitizeOnShutdown2 = Șterge datele de navigare la închidere.
 
 policy-SearchEngines = Configurează setările motorului de căutare. Această politică este disponibilă numai în versiunea Ediție cu suport extins (ESR).
 
+policy-SearchSuggestEnabled = Activează sau dezactivează sugestiile de căutare.
+
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation
 policy-SecurityDevices = Instalează module PKCS #11.
 
@@ -114,6 +140,8 @@ policy-SSLVersionMax = Setează versiunea maximă SSL.
 policy-SSLVersionMin = Setează versiunea minimă SSL.
 
 policy-SupportMenu = Adaugă un element personalizat din meniul de suport în meniul de asistență.
+
+policy-UserMessaging = Nu arăta anumite mesaje utilizatorului.
 
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Blochează intrarea pe site-uri web. Vezi documentația pentru mai multe detalii despre format.

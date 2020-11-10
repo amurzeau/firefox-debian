@@ -19,12 +19,11 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Navigation privée)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Navigation privée)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Navigation privée)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Navigation privée)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -111,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Écrivez moins, trouvez plus : recherchez avec { $engineName } directement depuis la barre d’adresse.
 urlbar-search-tips-redirect-2 = Commencez votre recherche dans la barre d’adresse pour afficher des suggestions depuis { $engineName } et depuis votre historique de navigation.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Sélectionnez ce raccourci pour trouver plus rapidement ce dont vous avez besoin.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Marque-pages
+urlbar-search-mode-tabs = Onglets
+urlbar-search-mode-history = Historique
 
 ##
 
@@ -138,12 +145,10 @@ urlbar-midi-blocked =
     .tooltiptext = Vous avez bloqué l’accès MIDI pour ce site web.
 urlbar-install-blocked =
     .tooltiptext = Vous avez bloqué l’installation de modules complémentaires pour ce site web.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Modifier ce marque-page ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -160,6 +165,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Supprimer l’extension
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Envoyer l’onglet à un appareil
+           *[other] Envoyer { $tabCount } onglets à un appareil
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Envoyer l’onglet à un appareil
+           *[other] Envoyer { $tabCount } onglets à un appareil
+        }
+page-action-pocket-panel =
+    .label = Enregistrer la page dans { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Copier le lien
+page-action-copy-url-urlbar =
+    .tooltiptext = Copier le lien
+page-action-email-link-panel =
+    .label = Envoyer par courriel un lien vers la page…
+page-action-email-link-urlbar =
+    .tooltiptext = Envoyer par courriel un lien vers la page…
+page-action-share-url-panel =
+    .label = Partager
+page-action-share-url-urlbar =
+    .tooltiptext = Partager
+page-action-share-more-panel =
+    .label = Plus…
+page-action-send-tab-not-ready =
+    .label = Synchronisation des appareils…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Épingler cet onglet
+page-action-pin-tab-urlbar =
+    .tooltiptext = Épingler cet onglet
+page-action-unpin-tab-panel =
+    .label = Désépingler cet onglet
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Désépingler cet onglet
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -171,17 +223,15 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Pour cette fois-ci, rechercher avec :
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Paramètres de recherche
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Modifier les paramètres de recherche
-
 search-one-offs-context-open-new-tab =
     .label = Rechercher dans un nouvel onglet
     .accesskey = R
@@ -191,16 +241,34 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Définir comme moteur de recherche par défaut pour les fenêtres de navigation privée
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Marque-pages ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Onglets ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Historique ({ $restrict })
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Afficher l’éditeur lors de l’enregistrement
     .accesskey = A
-
 bookmark-panel-done-button =
     .label = Terminer
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -220,6 +288,17 @@ identity-passive-loaded = Des éléments de la page ne sont pas sécurisés (tel
 identity-active-loaded = Vous avez désactivé la protection sur cette page.
 identity-weak-encryption = Cette page utilise un faible niveau de chiffrement.
 identity-insecure-login-forms = Les identifiants saisis sur cette page pourraient être compromis.
+identity-https-only-connection-upgraded = (surclassé en HTTPS)
+identity-https-only-label = Mode HTTPS uniquement
+identity-https-only-dropdown-on =
+    .label = Activé
+identity-https-only-dropdown-off =
+    .label = Désactivé
+identity-https-only-dropdown-off-temporarily =
+    .label = Désactivé temporairement
+identity-https-only-info-turn-on2 = Activez le mode « HTTPS uniquement » pour ce site si vous voulez que { -brand-short-name } sécurise la connexion lorsque c’est possible.
+identity-https-only-info-turn-off2 = Si la page ne semble pas fonctionnelle, vous pouvez désactiver le mode « HTTPS uniquement » pour  ce site afin de la recharger en utilisant le protocole non sécurisé HTTP.
+identity-https-only-info-no-upgrade = Impossible de sécuriser la connexion.
 identity-permissions =
     .value = Permissions
 identity-permissions-reload-hint = Vous devrez peut-être actualiser la page pour que les changements prennent effet.
@@ -265,6 +344,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Fermer
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Importer des marque-pages…
+    .tooltiptext = Copier les marque-pages depuis un autre navigateur vers { -brand-short-name }.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -274,15 +359,12 @@ popup-select-microphone =
     .value = Microphone à partager :
     .accesskey = M
 popup-all-windows-shared = L’ensemble des fenêtres visibles sur votre écran seront partagées.
-
 popup-screen-sharing-not-now =
     .label = Plus tard
     .accesskey = P
-
 popup-screen-sharing-never =
     .label = Ne jamais autoriser
     .accesskey = N
-
 popup-silence-notifications-checkbox = Désactiver les notifications de { -brand-short-name } pendant le partage
 popup-silence-notifications-checkbox-warning = { -brand-short-name } n’affichera pas de notifications pendant le partage.
 
@@ -299,27 +381,122 @@ sharing-warning-disable-for-session =
 
 enable-devtools-popup-description = Pour utiliser le raccourci F12, ouvrez d’abord les outils de développement via le menu Développement web.
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Saisir un terme à rechercher ou une adresse
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Saisir un terme à rechercher ou une adresse
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Rechercher sur le Web
+    .aria-label = Rechercher avec { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Saisissez les termes à rechercher
+    .aria-label = Rechercher sur { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Saisissez les termes à rechercher
+    .aria-label = Rechercher dans les marque-pages
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Saisissez les termes à rechercher
+    .aria-label = Rechercher dans l’historique
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Saisissez les termes à rechercher
+    .aria-label = Rechercher dans les onglets
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Rechercher avec { $name } ou saisir une adresse
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Le navigateur est contrôlé à distance
 urlbar-permissions-granted =
     .tooltiptext = Vous avez accordé des permissions supplémentaires à ce site web.
 urlbar-switch-to-tab =
     .value = Aller à l’onglet :
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Extension :
-
 urlbar-go-button =
     .tooltiptext = Se rendre à la page indiquée dans la barre d’adresse
 urlbar-page-action-button =
     .tooltiptext = Actions pour la page
 urlbar-pocket-button =
     .tooltiptext = Enregistrer dans { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Rechercher avec { $engine } dans une fenêtre de navigation privée
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Rechercher dans une fenêtre de navigation privée
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Rechercher avec { $engine }
+urlbar-result-action-sponsored = Sponsorisé
+urlbar-result-action-switch-tab = Aller à l’onglet
+urlbar-result-action-visit = Consulter
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Appuyez sur Tab pour rechercher sur { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Appuyez sur Tab pour rechercher sur { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Rechercher avec { $engine } directement depuis la barre d’adresse
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Recherche { $engine } directement depuis la barre d’adresse
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Rechercher dans les marque-pages
+urlbar-result-action-search-history = Rechercher dans l’historique
+urlbar-result-action-search-tabs = Rechercher dans les onglets
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> est désormais en plein écran
+fullscreen-warning-no-domain = Ce document est désormais en plein écran
+fullscreen-exit-button = Quitter le mode plein écran (Échap)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Quitter le mode plein écran (« esc »)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> contrôle votre pointeur. Appuyez sur Échap pour reprendre le contrôle.
+pointerlock-warning-no-domain = Ce document contrôle votre pointeur. Appuyez sur Échap pour reprendre le contrôle.

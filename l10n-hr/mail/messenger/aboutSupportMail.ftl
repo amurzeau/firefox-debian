@@ -17,3 +17,4 @@ identity-name = Identitet
 
 send-via-email = Pošalji e-poštom
 
+app-basics-telemetry = Telemetrijski podaci

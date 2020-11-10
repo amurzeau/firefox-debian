@@ -13,7 +13,7 @@ options-select-default-tools-label = Standardni programerski alati
 
 # The label for the explanation of the * marker on a tool which is currently not supported
 # for the target of the toolbox.
-options-tool-not-supported-label = * Nije podržano za trenutni cilj alatne trake
+options-tool-not-supported-label = * Nije podržano za trenutačni cilj alatne trake
 
 # The label for the heading of group of checkboxes corresponding to the developer tools
 # added by add-ons. This heading is hidden when there is no developer tool installed by add-ons.
@@ -106,7 +106,7 @@ options-disable-http-cache-tooltip =
 # The label for checkbox that toggles JavaScript on or off
 options-disable-javascript-label = Onemogući JavaScript *
 options-disable-javascript-tooltip =
-    .title = Isključivanje ove opcije će onemogućiti JavaScript za trenutnu karticu. Ako se kartica ili alatna traka zatvore, ova će postavka biti zaboravljena.
+    .title = Isključivanje ove opcije će onemogućiti JavaScript za trenutačnu karticu. Ako se kartica ili alatna traka zatvore, ova će se postavka zaboraviti.
 
 # The label for checkbox that toggles chrome debugging, i.e. the devtools.chrome.enabled preference
 options-enable-chrome-label = Omogući chrome preglednika i alate za otklanjanje grešaka u dodacima
@@ -115,8 +115,6 @@ options-enable-chrome-tooltip =
 
 # The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
 options-enable-remote-label = Omogući udaljeno ispravljanje grešaka
-options-enable-remote-tooltip =
-    .title = Uključivanje ove opcije omogućit će programerskim alatima uklanjaje grešaka udaljene instance poput Firefox OS-a
 
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = Uključi radne procese usluge putem HTTP-a (kad je alatna traka otvorena)
@@ -129,7 +127,7 @@ options-source-maps-tooltip =
     .title = Ako aktiviraš ovu opciju, izvori će se mapirati u alatima.
 
 # The message shown for settings that trigger page reload
-options-context-triggers-page-refresh = * Samo trenutna sesija, ponovo učitava stranicu
+options-context-triggers-page-refresh = * Samo trenutačna sesija, ponovo učitava stranicu
 
 # The label for the checkbox that toggles the display of the platform data in the
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config

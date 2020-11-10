@@ -51,6 +51,10 @@ newtab-confirm-delete-history-p1 = Ste si istí, že chcete odstrániť všetky 
 # "This action" refers to deleting a page from history.
 newtab-confirm-delete-history-p2 = Túto akciu nie je možné vrátiť späť.
 
+## Top Sites - Sponsored label
+
+newtab-topsite-sponsored = Sponzorované
+
 ## Context Menu - Action Tooltips.
 
 # General tooltip for context menus.

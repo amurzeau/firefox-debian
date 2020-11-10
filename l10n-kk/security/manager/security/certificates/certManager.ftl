@@ -208,6 +208,15 @@ cert-not-verified-issuer-unknown = Сертификат верификацияс
 cert-not-verified-ca-invalid = Сертификат верификациясы мүмкін емес - орталықтың сертификаты жарамсыз.
 cert-not-verified_algorithm-disabled = Бұл сертификатты растау мүмкін емес, өйткені оған қауіпсіз емес болғаны үшін сөндірілген алгоритмімен қолтаңба қойылған.
 cert-not-verified-unknown = Сертификат верификациясы белгісіз себептерден мүмкін емес.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Клиент сертификатын жібермеу
+# Used when no cert is stored for an override
+no-cert-stored-for-override = (Сақталмаған)
+
+## Used to show whether an override is temporary or permanent
+
+permanent-override = Тұрақты
+temporary-override = Уақытша
 
 ## Add Security Exception dialog
 
@@ -224,7 +233,7 @@ add-exception-valid-long = Сайт дұрыс, расталған иденти�
 add-exception-checking-short = Ақпаратты тексеру жүруде
 add-exception-checking-long = Сайтты анықтап көру…
 add-exception-no-cert-short = Қолжетерлік ақпарат жоқ
-add-exception-no-cert-long = Берілген сайт үшін идентификация статусын алу мүмкін емес.
+add-exception-no-cert-long = Берілген сайт үшін идентификация күйін алу мүмкін емес.
 
 ## Certificate export "Save as" and error dialogs
 

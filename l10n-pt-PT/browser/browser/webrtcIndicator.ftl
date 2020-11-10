@@ -19,5 +19,22 @@ webrtc-microphone-button =
     .title = O seu microfone está a ser partilhado. Clique para gerir a partilha.
 webrtc-camera-button =
     .title = A sua câmara está a ser partilhada. Clique para gerir a partilha.
+webrtc-microphone-unmuted =
+    .title = Desligar o microfone
+webrtc-microphone-muted =
+    .title = Ligar o microfone
+webrtc-camera-unmuted =
+    .title = Desligar a câmara
+webrtc-camera-muted =
+    .title = Ligar a câmara
 webrtc-minimize =
     .title = Minimizar indicador
+# This string will display as a tooltip on supported systems where we show
+# device sharing state in the OS notification area. We do not use these strings
+# on macOS, as global menu bar items do not have native tooltips.
+webrtc-camera-system-menu =
+    .label = Está a partilhar a sua câmara. Clique para controlar a partilha.
+webrtc-microphone-system-menu =
+    .label = Está a partilhar o seu microfone. Clique para controlar a partilha.
+webrtc-screen-system-menu =
+    .label = Está a partilhar uma janela ou ecrã. Clique para controlar a partilha.

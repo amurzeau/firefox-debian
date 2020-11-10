@@ -53,10 +53,6 @@ inactive-text-overflow-when-no-overflow = <strong>overflow:hidden</strong>이 �
 
 inactive-css-not-grid-or-flex-container-fix = <strong>display:grid</strong> 또는 <strong>display:flex</strong>를 추가하세요. { learn-more }
 
-inactive-css-not-grid-or-flex-item-fix = <strong>display:grid</strong> 또는 <strong>display:flex</strong>, <strong>display:inline-grid</strong>, <strong>display:inline-flex</strong>를 추가하세요. { learn-more }
-
-inactive-css-not-grid-item-fix = <strong>display:grid</strong> 또는 <strong>display:inline-grid</strong>을 항목의 부모에 추가하세요. { learn-more }
-
 inactive-css-not-grid-or-flex-container-or-multicol-container-fix = <strong>display:grid</strong>나 <strong>display:flex</strong>, <strong>columns:2</strong>를 추가하세요. { learn-more }
 
 inactive-css-not-grid-or-flex-item-fix-2 = <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong>, 또는 <strong>display:inline-flex</strong>를 추가해보세요. { learn-more }
@@ -64,8 +60,6 @@ inactive-css-not-grid-or-flex-item-fix-2 = <strong>display:grid</strong>, <stron
 inactive-css-not-grid-item-fix-2 = <strong>display:grid</strong> 또는 <strong>display:inline-grid</strong>를 요소의 부모에 추가해보세요. { learn-more }
 
 inactive-css-not-grid-container-fix = <strong>display:grid</strong> 또는 <strong>display:inline-grid</strong>을 추가하세요. { learn-more }
-
-inactive-css-not-flex-item-fix = <strong>display:flex</strong> 또는 <strong>display:inline-flex</strong>을 항목의 부모에 추가하세요. { learn-more }
 
 inactive-css-not-flex-item-fix-2 = <strong>display:flex</strong> 또는 <strong>display:inline-flex</strong>를 요소의 부모에 추가해보세요. { learn-more }
 
@@ -82,3 +76,26 @@ inactive-css-not-display-block-on-floated-fix = <strong>float</strong>를 제거
 inactive-css-position-property-on-unpositioned-box-fix = <strong>position</strong> 속성을 <strong>static</strong> 이외의 것으로 설정해 보세요. { learn-more }
 
 inactive-text-overflow-when-no-overflow-fix = <strong>overflow:hidden</strong>을 추가하세요. { learn-more }
+
+## In the Rule View when a CSS property may have compatibility issues with other browsers
+## we display an icon. When this icon is hovered this message is displayed to explain why
+## the property is incompatible and the platforms it is incompatible on.
+## Variables:
+##   $property (string) - A CSS declaration name e.g. "-moz-user-select" that can be a platform specific alias.
+##   $rootProperty (string) - A raw CSS property name e.g. "user-select" that is not a platform specific alias.
+
+css-compatibility-default-message = <strong>{ $property }</strong>은(는) 다음 브라우저에서는 지원되지 않습니다:
+
+css-compatibility-deprecated-experimental-message = <strong>{ $property }</strong>은(는) W3C 표준에서 더 이상 사용되지 않는 실험적 속성입니다. 다음 브라우저에서는 지원되지 않습니다:
+
+css-compatibility-deprecated-experimental-supported-message = <strong>{ $property }</strong>은(는) W3C 표준에서 더 이상 사용되지 않는 실험적 속성입니다.
+
+css-compatibility-deprecated-message = <strong>{ $property }</strong>은(는) W3C 표준에서 더 이상 사용되지 않습니다. 다음 브라우저에서는 지원되지 않습니다:
+
+css-compatibility-deprecated-supported-message = <strong>{ $property }</strong>은(는) W3C 표준에서 더 이상 사용되지 않습니다.
+
+css-compatibility-experimental-message = <strong>{ $property }</strong>은(는) 실험적 속성입니다. 다음 브라우저에서는 지원되지 않습니다:
+
+css-compatibility-experimental-supported-message = <strong>{ $property }</strong>은(는) 실험적 속성입니다.
+
+css-compatibility-learn-more-message = <strong>{ $rootProperty }</strong>에 대해 <span data-l10n-name="link">더 알아보기</span>

@@ -4,11 +4,11 @@
 
 bookmark-overlay-name =
     .value = Назив:
-    .accesskey = Н
+    .accesskey = N
 
 bookmark-overlay-location =
     .value = Адреса:
-    .accesskey = А
+    .accesskey = L
 
 bookmark-overlay-folder =
     .value = Фасцикла:
@@ -23,11 +23,11 @@ bookmark-overlay-folders-expander =
 
 bookmark-overlay-new-folder-button =
     .label = Нова фасцикла
-    .accesskey = ф
+    .accesskey = o
 
 bookmark-overlay-tags =
     .value = Ознаке:
-    .accesskey = О
+    .accesskey = T
 
 bookmark-overlay-tags-empty-description =
     .placeholder = Раздвајају се запетама
@@ -39,4 +39,4 @@ bookmark-overlay-tags-expander =
 
 bookmark-overlay-keyword =
     .value = Кључна реч:
-    .accesskey = К
+    .accesskey = K

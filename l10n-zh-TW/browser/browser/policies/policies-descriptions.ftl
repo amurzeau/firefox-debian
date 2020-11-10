@@ -36,6 +36,7 @@ policy-DisableFirefoxStudies = 防止 { -brand-short-name } 進行使用者研�
 policy-DisableForgetButton = 防止使用「忘記」功能。
 policy-DisableFormHistory = 不要記住搜尋與表單填寫紀錄。
 policy-DisableMasterPasswordCreation = 若為 true，將無法建立主控密碼。
+policy-DisablePrimaryPasswordCreation = 若為 true，將無法建立主控密碼。
 policy-DisablePasswordReveal = 不允許於儲存的登入資訊畫面中顯示密碼。
 policy-DisablePocket = 停用儲存網頁到 Pocket 的功能。
 policy-DisablePrivateBrowsing = 停用隱私瀏覽功能。
@@ -68,7 +69,7 @@ policy-HardwareAcceleration = 若為 false，就會關閉硬體加速。
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = 設定或鎖定首頁。
 policy-InstallAddonsPermission = 允許某些網站安裝附加元件。
-policy-LegacyProfiles = 停用「於每一套安裝使用不同設定檔」的功能
+policy-LegacyProfiles = 停用「於每一套安裝使用不同設定檔」的功能。
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
 
@@ -79,6 +80,8 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = 對指定的網站恢�
 
 policy-LocalFileLinks = 允許特定網站鏈結到本機檔案。
 policy-MasterPassword = 要求使用或不允許使用主控密碼。
+policy-ManagedBookmarks = 設定由管理員控管的書籤清單，使用者無法更改。
+policy-PrimaryPassword = 要求使用或不允許使用主控密碼。
 policy-NetworkPrediction = 開啟或關閉網路預測（DNS 預讀）功能。
 policy-NewTabPage = 啟用或停用「新分頁」頁面。
 policy-NoDefaultBookmarks = 停止建立 { -brand-short-name } 內建的預設書籤及智慧書籤（最常造訪、最近新增的標籤）。註: 此原則僅在設定檔首次啟動前設定才有效。

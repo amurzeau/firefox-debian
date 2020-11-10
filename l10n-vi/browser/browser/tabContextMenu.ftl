@@ -42,7 +42,7 @@ bookmark-tab =
     .label = Đánh dấu thẻ
     .accesskey = B
 reopen-in-container =
-    .label = Mở trong Ngăn chứa
+    .label = Mở trong ngăn chứa
     .accesskey = e
 move-to-start =
     .label = Di chuyển lên đầu
@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Di chuyển sang cửa sổ mới
     .accesskey = W
-undo-close-tab =
-    .label = Mở lại thẻ vừa đóng
-    .accesskey = U
 tab-context-close-multiple-tabs =
     .label = Đóng nhiều thẻ
     .accesskey = M
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -77,4 +78,18 @@ move-tabs =
     .accesskey = v
 move-tab =
     .label = Di chuyển thẻ
+    .accesskey = v
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Đóng thẻ
+           *[other] Đóng các thẻ
+        }
+    .accesskey = C
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Di chuyển thẻ
+           *[other] Di chuyển các thẻ
+        }
     .accesskey = v

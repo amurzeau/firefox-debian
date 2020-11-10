@@ -53,6 +53,9 @@ no-migration-sources = Žedne programy namakane, kótarež wopśimuju cytańske 
 import-source-page-title = Daty a nastajenja importěrowaś
 import-items-page-title = Objekty za importěrowanje
 import-items-description = Wubjeŕśo objekty za importěrowanje:
+import-permissions-page-title = Pšosym dajśo { -brand-short-name } pšawa
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS se pomina, až { -brand-short-name } eksplicitnje pśistup k cytańskim znamjenjam Safari dowólujośo. Klikniśo na „Pókšacowaś“ a wubjeŕśo dataju „Bookmarks.plist“ we woknje „Dataju wócyniś“, kótarež se pokazujo.
 import-migrating-page-title = Importěrujo se…
 import-migrating-description = Slědujuce objekty se rowno importěruju…
 import-select-profile-page-title = Profil wubraś
@@ -88,6 +91,7 @@ imported-edge-reading-list = Cytańska lisćina (z Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

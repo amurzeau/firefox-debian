@@ -18,6 +18,7 @@ certmgr-mine = Έχετε πιστοποιητικά από αυτούς του�
 certmgr-remembered = Αυτά τα πιστοποιητικά χρησιμοποιούνται για την ταυτοποίηση σας στις ιστοσελίδες
 certmgr-people = Έχετε πιστοποιητικά στο αρχείο που ταυτοποιούν αυτά τα άτομα
 certmgr-servers = Έχετε πιστοποιητικά στο αρχείο που ταυτοποιούν αυτούς τους διακομιστές
+certmgr-server = Αυτές οι καταχωρήσεις αναγνωρίζουν εξαιρέσεις σφαλμάτων πιστοποιητικού διακομιστή
 certmgr-ca = Έχετε πιστοποιητικά στο αρχείο που ταυτοποιούν αυτές τις αρχές πιστοποιητικών
 certmgr-detail-general-tab-title =
     .label = Γενικά
@@ -69,7 +70,7 @@ certmgr-expires-on = Λήγει στις
 certmgr-expires-label =
     .label = Λήγει στις
 certmgr-email =
-    .label = Ηλεκτρονική διεύθυνση
+    .label = Διεύθυνση email
 certmgr-serial =
     .label = Σειριακός Αριθμός
 certmgr-view =
@@ -161,13 +162,17 @@ delete-ssl-cert-title =
     .title = Διαγραφή εξαιρέσεων πιστοποιητικών ιστοσελίδων
 delete-ssl-cert-confirm = Θέλετε σίγουρα να διαγράψετε αυτές τις εξαιρέσεις διακομιστή;
 delete-ssl-cert-impact = Αν διαγράψετε μια εξαίρεση ιστοσελίδας, θα επαναφέρετε τους συνήθεις ελέγχους ασφαλείας της σελίδας και την απαίτηση ενός έγκυρου πιστοποιητικού.
+delete-ssl-override-title =
+    .title = Διαγραφή εξαίρεσης πιστοποιητικού διακομιστή
+delete-ssl-override-confirm = Θέλετε σίγουρα να διαγράψετε αυτή την εξαίρεση διακομιστή;
+delete-ssl-override-impact = Αν διαγράψετε μια εξαίρεση διακομιστή, θα επαναφέρετε τους συνήθεις ελέγχους ασφαλείας για το διακομιστή αυτό, καθώς και την απαίτηση ενός έγκυρου πιστοποιητικού.
 delete-ca-cert-title =
     .title = Διαγραφή ή άρση εμπιστοσύνης πιστοποητικών CA
 delete-ca-cert-confirm = Ζητήσατε να διαγράψετε αυτά τα πιστοποιητικά CA. Για τα ενσωματωμένα πιστοποιητικά υπάρχει και η επιλογή της άρσης εμπιστοσύνης που έχει το ίδιο αποτέλεσμα. Θέλετε τα τα διαγράψετε ή να άρετε την εμπιστοσύνη σας;
 delete-ca-cert-impact = Αν διαγράψετε ή άρετε την εμπιστοσύνη σας σε ένα πιστοποιητικό αρχής πιστοποίησης (CA), αυτή η εφαρμογή δεν θα εμπιστεύεται πια πιστοποιητικά από αυτή την CA.
 delete-email-cert-title =
-    .title = Διαγραφή πιστοποιητικών e-mail
-delete-email-cert-confirm = Θέλετε σίγουρα να διαγράψετε τα πιστοποιητικά e-mail αυτών των ατόμων;
+    .title = Διαγραφή πιστοποιητικών email
+delete-email-cert-confirm = Θέλετε σίγουρα να διαγράψετε τα πιστοποιητικά email αυτών των ατόμων;
 delete-email-cert-impact = Εάν διαγράψετε ένα πιστοποιητικό e-mail,  δεν θα μπορείτε πια να στέλνετε κρυπτογραφημένη αλληλογραφία σε αυτούς τους ανθρώπους.
 # Used for semi-uniquely representing a cert.
 #
@@ -208,6 +213,15 @@ cert-not-verified-issuer-unknown = Δεν είναι δυνατή η επαλή�
 cert-not-verified-ca-invalid = Δεν είναι δυνατή η επαλήθευση του παρόντος επειδή η αρχή πιστοποίησης είναι άκυρη.
 cert-not-verified_algorithm-disabled = Δεν ήταν δυνατή η επαλήθευση του πιστοποιητικού επειδή υπογράφηκε με ένα αλγόριθμο που έχει απενεργοποιηθεί επειδή θεωρούνταν μη ασφαλής.
 cert-not-verified-unknown = Δεν είναι δυνατή η επαλήθευση του παρόντος πιστοποιητικού για άγνωστους λόγους.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Χωρίς αποστολή πιστοποιητικού πελάτη
+# Used when no cert is stored for an override
+no-cert-stored-for-override = (Μη αποθηκευμένο)
+
+## Used to show whether an override is temporary or permanent
+
+permanent-override = Μόνιμο
+temporary-override = Προσωρινό
 
 ## Add Security Exception dialog
 

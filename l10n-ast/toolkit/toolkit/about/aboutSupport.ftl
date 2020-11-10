@@ -18,6 +18,9 @@ extensions-name = Nome
 extensions-enabled = Activóse
 extensions-version = Versión
 extensions-id = ID
+support-addons-name = Nome
+support-addons-version = Versión
+support-addons-id = ID
 features-title = Carauterístiques de { -brand-short-name }
 features-name = Nome
 features-version = Versión
@@ -71,8 +74,6 @@ graphics-workarounds-title = Soluciones
 place-database-title = Base de datos de llugares
 place-database-integrity = Integridá
 place-database-verify-integrity = Verificar integridá
-js-title = JavaScript
-js-incremental-gc = GC incremental
 a11y-title = Accesibilidá
 a11y-activated = Activóse
 a11y-force-disabled = Evitar accesibilidá
@@ -97,9 +98,7 @@ restart-in-safe-mode-label = Reaniciar con complementos desactivaos…
 
 audio-backend = Backend d'audiu
 max-audio-channels = Canales máximos
-channel-layout = Distribución preferida de canales
 sample-rate = Tasa preferida d'amuesa
-
 media-title = Medios
 media-output-devices-title = Preseos de salida
 media-input-devices-title = Preseos d'entrada
@@ -133,6 +132,7 @@ intl-regional-prefs = Preferencies rexonales
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -237,7 +237,6 @@ unknown-failure = Ta na llistáu de bloquéu; códigu de fallu { $failureCode }
 
 d3d11layers-crash-guard = Compositor D3D11
 d3d11video-crash-guard = Descodificador de videu D3D11
-d3d9video-crash-buard = Descodificador de videu D3D9
 d3d9video-crash-guard = Descodificador de videu D3D9
 glcontext-crash-guard = OpenGL
 

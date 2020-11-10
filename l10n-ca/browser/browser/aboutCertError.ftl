@@ -80,6 +80,12 @@ cert-error-details-key-pinning-label = Fixació de claus públiques HTTP: { $has
 
 cert-error-details-cert-chain-label = Cadena de certificats:
 
+open-in-new-window-for-csp-or-xfo-error = Obre el lloc en una finestra nova
+
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = Per protegir la vostra seguretat, { $hostname } no permetrà al { -brand-short-name } mostrar la pàgina si està incrustada en un altre lloc. Per veure aquesta pàgina, cal obrir-la en una finestra nova.
+
 ## Messages used for certificate error titles
 
 connectionFailure-title = No s'ha pogut connectar
@@ -107,8 +113,7 @@ proxyResolveFailure-title = No s'ha pogut trobar el servidor intermediari
 redirectLoop-title = La pàgina no està redirigint correctament
 unknownSocketType-title = Resposta inesperada del servidor
 nssFailure2-title = Ha fallat la connexió segura
-cspBlocked-title = Blocat per la política de seguretat del contingut
-xfoBlocked-title = Blocat per la política X-Frame-Options
+csp-xfo-error-title = El { -brand-short-name } no pot obrir aquesta pàgina
 corruptedContentError-title = Error de contingut malmès
 remoteXUL-title = XUL remot
 sslv3Used-title = No s'ha pogut connectar de forma segura

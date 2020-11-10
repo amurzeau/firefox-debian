@@ -5,66 +5,53 @@
 permissions-window =
     .title = Excepziuns
     .style = width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Adressa da la website
     .accesskey = d
-
 permissions-block =
     .label = Bloccar
     .accesskey = B
-
 permissions-session =
     .label = Permetter per questa sesida
     .accesskey = P
-
 permissions-allow =
     .label = Permetter
     .accesskey = e
-
 permissions-site-name =
     .label = Website
-
 permissions-status =
     .label = Status
-
 permissions-remove =
     .label = Allontanar la website
     .accesskey = A
-
 permissions-remove-all =
     .label = Allontanar tut las websites
     .accesskey = t
-
 permissions-button-cancel =
     .label = Interrumper
     .accesskey = r
-
 permissions-button-ok =
     .label = Memorisar las midadas
     .accesskey = M
-
+permission-dialog =
+    .buttonlabelaccept = Memorisar las midadas
+    .buttonaccesskeyaccept = M
 permissions-autoplay-menu = Standard per tuttas websites:
-
 permissions-searchbox =
     .placeholder = Tschertgar ina website
-
 permissions-capabilities-autoplay-allow =
     .label = Permetter audio e video
 permissions-capabilities-autoplay-block =
     .label = Bloccar l'audio
 permissions-capabilities-autoplay-blockall =
     .label = Bloccar audio e video
-
 permissions-capabilities-allow =
     .label = Permetter
 permissions-capabilities-block =
     .label = Bloccar
 permissions-capabilities-prompt =
     .label = Adina dumandar
-
 permissions-capabilities-listitem-allow =
     .value = Permetter
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = Ti has endatà in num da host betg valid
 permissions-invalid-uri-label = Endatescha per plaschair in num da host valid
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = Excepziuns - Bloccada da cuntegn
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Ti has deactivà la bloccada da cuntegn sin questas websites.
 
 permissions-exceptions-etp-window =
     .title = Excepziuns per la protecziun avanzada cunter il fastizar
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Websites autorisadas - installaziun da supplements
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Ti pos definir a tge websites che ti permettas d'installar supplements. Inditgescha l'adressa exacta da la website, a la quala ti vuls permetter quai e clicca sin 'Permetter'.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Excepziuns - Reproducziun automatica
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Ti pos definir a tge websites che ti permettas adina u mai da reproducir automaticamain multimedia cun tun. Inditgescha l'adressa exacta da la website che ti vuls administrar e clicca lura sin «Bloccar» u «Permetter».
 
 ## Site Permissions - Autoplay
 

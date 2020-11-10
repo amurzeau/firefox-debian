@@ -15,6 +15,9 @@ extensions-name = Naziv
 extensions-enabled = Omogućen
 extensions-version = Verzija
 extensions-id = ID
+support-addons-name = Naziv
+support-addons-version = Verzija
+support-addons-id = ID
 security-software-title = Sigurnosni softver
 security-software-type = Tip
 security-software-name = Naziv
@@ -93,8 +96,6 @@ graphics-window-protocol = Protokol prozora
 place-database-title = Baza podataka mjesta
 place-database-integrity = Integritet
 place-database-verify-integrity = Verifikuj integritet
-js-title = JavaScript
-js-incremental-gc = Inkrementalni GC
 a11y-title = Pristupačnost
 a11y-activated = Aktivirana
 a11y-force-disabled = Prevencija pristupačnosti
@@ -119,9 +120,7 @@ restart-in-safe-mode-label = Restartuj sa onemogućenim add-onima…
 
 audio-backend = Audio Backend
 max-audio-channels = Max kanala
-channel-layout = Željeni raspored kanala
 sample-rate = Željeni sample rate
-
 media-title = Medij
 media-output-devices-title = Izlazni uređaji
 media-input-devices-title = Ulazni uređaji
@@ -137,8 +136,6 @@ media-device-latency = Kašnjenje
 media-capabilities-title = Mogućnosti medija
 # List all the entries of the database.
 media-capabilities-enumerate = Enumeriraj bazu podataka
-
-
 
 ##
 
@@ -164,8 +161,6 @@ intl-regional-prefs = Regionalne postavke
 remote-debugging-title = Udaljeno debagiranje (Chromium protokol)
 remote-debugging-accepting-connections = Prihvatanje veza
 remote-debugging-url = URL
-
-
 
 ##
 
@@ -280,7 +275,6 @@ unknown-failure = Blokiran; kod neuspjeha { $failureCode }
 
 d3d11layers-crash-guard = D3D11 kompozitor
 d3d11video-crash-guard = D3D11 Video dekoder
-d3d9video-crash-buard = D3D9 Video dekoder
 d3d9video-crash-guard = D3D9 Video dekoder
 glcontext-crash-guard = OpenGL
 

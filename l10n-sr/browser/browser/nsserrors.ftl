@@ -2,6 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
+# This file gets parsed into a JS dictionary of all known error message ids in
+# gen_aboutneterror_codes.py . If we end up needing fluent attributes or
+# refactoring them in some way, the script will need updating.
+
 # Variables:
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
@@ -39,7 +44,7 @@ ssl-error-bad-cert-alert = Удаљени рачунар са SSL не може 
 ssl-error-revoked-cert-alert = Удаљени рачунар са SSL је одбио сертификат јер је опозван.
 ssl-error-expired-cert-alert = Удаљени рачунар са SSL је одбио сертификат јер је истекао.
 ssl-error-ssl-disabled = Није могуће повезати се: SSL је искључен.
-ssl-error-fortezza-pqg = НИје могуће повезати се: удаљени рачунар са SSL се налази у другом FORTEZZA домену.
+ssl-error-fortezza-pqg = Није могуће повезати се: удаљени рачунар са SSL се налази у другом FORTEZZA домену.
 ssl-error-unknown-cipher-suite = Тражен је непознат пакет шифара за SSL.
 ssl-error-no-ciphers-supported = Ниједан пакет шифара није присутан нити укључен у овај програм.
 ssl-error-bad-block-padding = SSL је примио запис са лошом попуном блока (padding).

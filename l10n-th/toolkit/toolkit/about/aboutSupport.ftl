@@ -14,6 +14,12 @@ extensions-name = ชื่อ
 extensions-enabled = เปิดใช้งานอยู่
 extensions-version = รุ่น
 extensions-id = ID
+support-addons-title = ส่วนเสริม
+support-addons-name = ชื่อ
+support-addons-type = ชนิด
+support-addons-enabled = ถูกเปิดใช้งาน
+support-addons-version = รุ่น
+support-addons-id = ID
 security-software-title = ซอฟต์แวร์ความปลอดภัย
 security-software-type = ชนิด
 security-software-name = ชื่อ
@@ -59,6 +65,7 @@ app-basics-service-workers = ตัวทำงานบริการที่
 app-basics-profiles = โปรไฟล์
 app-basics-launcher-process-status = โปรเซสของตัวเรียกใช้
 app-basics-multi-process-support = หน้าต่างแบบหลายโปรเซส
+app-basics-fission-support = หน้าต่าง Fission
 app-basics-remote-processes-count = โปรเซสระยะไกล
 app-basics-enterprise-policies = นโยบายองค์กร
 app-basics-location-service-key-google = คีย์ Google Location Service
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] เปิดโฟลเดอร์
        *[other] เปิดไดเรกทอรี
     }
+environment-variables-title = ตัวแปรสภาพแวดล้อม
+environment-variables-name = ชื่อ
+environment-variables-value = ค่า
+experimental-features-title = คุณลักษณะทดลอง
+experimental-features-name = ชื่อ
+experimental-features-value = ค่า
 modified-key-prefs-title = ค่ากำหนดสำคัญที่ถูกเปลี่ยนแปลง
 modified-prefs-name = ชื่อ
 modified-prefs-value = ค่า
@@ -95,8 +108,6 @@ graphics-desktop-environment = สภาพแวดล้อมเดสก์�
 place-database-title = ฐานข้อมูลสถานที่
 place-database-integrity = ความสมบูรณ์
 place-database-verify-integrity = ยืนยันความสมบูรณ์
-js-title = JavaScript
-js-incremental-gc = ตัวเก็บกวาดขยะแบบเพิ่มขึ้น
 a11y-title = การช่วยการเข้าถึง
 a11y-activated = เปิดใช้งานแล้ว
 a11y-force-disabled = ป้องกันการช่วยการเข้าถึง
@@ -119,13 +130,15 @@ restart-in-safe-mode-label = เริ่มการทำงานใหม่
 clear-startup-cache-title = ลองล้างแคชเมื่อเริ่มการทำงาน
 clear-startup-cache-label = ล้างแคชเมื่อเริ่มการทำงาน…
 startup-cache-dialog-title = ล้างแคชเมื่อเริ่มการทำงาน
+startup-cache-dialog-body = เริ่มการทำงาน { -brand-short-name } ใหม่เพื่อล้างแคชเมื่อเริ่มการทำงาน การดำเนินการนี้จะไม่เปลี่ยนแปลงการตั้งค่าของคุณหรือเอาส่วนขยายต่าง ๆ ที่คุณเพิ่มใน { -brand-short-name } ออก
+restart-button-label = เริ่มการทำงานใหม่
 
 ## Media titles
 
 audio-backend = แบ็กเอนด์เสียง
 max-audio-channels = จำนวนแชนเนลสูงสุด
-channel-layout = เค้าโครงแชนเนลที่ต้องการ
 sample-rate = อัตราการสุ่มตัวอย่างที่ต้องการ
+roundtrip-latency = เวลาหน่วงในการเดินทางแบบเป็นรอบ (ค่าเบี่ยงเบนมาตรฐาน)
 media-title = สื่อ
 media-output-devices-title = อุปกรณ์ส่งออก
 media-input-devices-title = อุปกรณ์รับข้อมูล
@@ -240,11 +253,13 @@ blocklisted-bug = ถูกเพิ่มในรายการปิดก�
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = ข้อบกพร่อง { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = ถูกเพิ่มในรายการปิดกั้นเนื่องจากมีปัญหาที่ทราบสาเหตุ: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = ถูกเพิ่มในรายการปิดกั้นแล้ว; รหัสความล้มเหลว { $failureCode }
 d3d11layers-crash-guard = คอมโพสิเตอร์ D3D11
 d3d11video-crash-guard = ตัวถอดรหัสวิดีโอ D3D11
-d3d9video-crash-buard = ตัวถอดรหัสวิดีโอ D3D9
 d3d9video-crash-guard = ตัวถอดรหัสวิดีโอ D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = ตัวถอดรหัสวิดีโอ WMF VPX
@@ -292,6 +307,20 @@ multi-process-status-6 = ถูกปิดใช้งานโดยการ�
 multi-process-status-7 = ถูกปิดใช้งานโดยส่วนเสริม
 multi-process-status-8 = ถูกปิดใช้งานโดยการบังคับ
 multi-process-status-unknown = ไม่ทราบสถานะ
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = ถูกปิดใช้งานโดยการทดสอบ
+fission-status-experiment-treatment = ถูกเปิดใช้งานโดยการทดสอบ
+fission-status-disabled-by-e10s-env = ถูกปิดใช้งานโดยสภาพแวดล้อม
+fission-status-enabled-by-env = ถูกเปิดใช้งานโดยสภาพแวดล้อม
+fission-status-disabled-by-safe-mode = ถูกปิดใช้งานโดยโหมดปลอดภัย
+fission-status-enabled-by-default = ถูกเปิดใช้งานตามค่าเริ่มต้น
+fission-status-disabled-by-default = ถูกปิดใช้งานตามค่าเริ่มต้น
+fission-status-enabled-by-user-pref = ถูกเปิดใช้งานโดยผู้ใช้
+fission-status-disabled-by-user-pref = ถูกปิดใช้งานโดยผู้ใช้
+fission-status-disabled-by-e10s-other = ปิดใช้งาน E10s แล้ว
 async-pan-zoom = การเลื่อน/ซูมแบบอะซิงโครนัส
 apz-none = ไม่มี
 wheel-enabled = เปิดใช้งานการป้อนข้อมูลด้วยล้อแล้ว
@@ -312,3 +341,12 @@ touch-warning = การป้อนข้อมูลด้วยการส�
 policies-inactive = ไม่มีการใช้งานอยู่
 policies-active = ใช้งานอยู่
 policies-error = ข้อผิดพลาด
+
+## Printing section
+
+support-printing-title = การพิมพ์
+support-printing-troubleshoot = การแก้ไขปัญหา
+support-printing-clear-settings-button = ล้างการตั้งค่าการพิมพ์ที่บันทึกไว้
+support-printing-modified-settings = การตั้งค่าการพิมพ์ที่ถูกเปลี่ยนแปลง
+support-printing-prefs-name = ชื่อ
+support-printing-prefs-value = ค่า

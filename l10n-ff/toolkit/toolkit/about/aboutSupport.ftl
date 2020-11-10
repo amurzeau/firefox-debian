@@ -15,6 +15,9 @@ extensions-name = Innde
 extensions-enabled = Daaƴtaaɗo
 extensions-version = Yamre
 extensions-id = ID
+support-addons-name = Innde
+support-addons-version = Yamre
+support-addons-id = ID
 features-title = { -brand-short-name } Fannuuji
 features-name = Innde
 features-version = Yamre
@@ -68,8 +71,6 @@ graphics-workarounds-title = Taarataare
 place-database-title = Diiñorde Keɓe Nokkuuje
 place-database-integrity = Timmal
 place-database-verify-integrity = Ƴeewto Timmal
-js-title = JavaScript
-js-incremental-gc = Incremental GC
 a11y-title = Weeɓitaare
 a11y-activated = Hurminaama
 a11y-force-disabled = Haɗ Naatgol
@@ -94,9 +95,7 @@ restart-in-safe-mode-label = Hurmitin tawa Ɓeyditte ena Ndaaƴaa…
 
 audio-backend = Yuurnorde Ojoo
 max-audio-channels = Max Channels
-channel-layout = Lelnal seen cuɓaaɗo
 sample-rate = Santaas santiyoŋ cuɓaaɗo
-
 media-title = Mejaa
 media-output-devices-title = Kaɓirkon njaltinirkon
 media-input-devices-title = Kaɓirkon naatnirkon
@@ -129,6 +128,7 @@ intl-regional-prefs = Cuɓoraaɗe Diiwaniyaŋkooje
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -233,7 +233,6 @@ unknown-failure = Ɓeydaama e doggol falo: dokkol { $failureCode }
 
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = Dokkitorde Widewoo D3D11
-d3d9video-crash-buard = Dokkitorde Widewoo D3D9
 d3d9video-crash-guard = Dokkitorde Widewoo D3D9
 glcontext-crash-guard = OpenGL
 

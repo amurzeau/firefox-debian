@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = 새 창으로 이동
     .accesskey = W
-undo-close-tab =
-    .label = 탭 닫기 취소
-    .accesskey = U
 tab-context-close-multiple-tabs =
     .label = 여러 탭 닫기
     .accesskey = M
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -77,4 +78,18 @@ move-tabs =
     .accesskey = v
 move-tab =
     .label = 탭 이동
+    .accesskey = v
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] 탭 닫기
+           *[other] 탭 닫기
+        }
+    .accesskey = C
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] 탭 이동
+           *[other] 탭 이동
+        }
     .accesskey = v

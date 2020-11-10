@@ -2,10 +2,16 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
+# This file gets parsed into a JS dictionary of all known error message ids in
+# gen_aboutneterror_codes.py . If we end up needing fluent attributes or
+# refactoring them in some way, the script will need updating.
+
 # Variables:
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
-ssl-connection-error = Un error ocurrió durante a una conexión a { $hostname }.{ $errorMessage }
+ssl-connection-error = Ocurrió un error durante a una conexión a { $hostname }.{ $errorMessage }
 
 # Variables:
 # $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
@@ -156,7 +162,7 @@ ssl-error-no-supported-signature-algorithm = Un algoritmo de firma TLS no soport
 ssl-error-unsupported-signature-algorithm = El par usó una combinación no soportada de firma y algoritmo hash.
 ssl-error-missing-extended-master-secret = El par trató de continuar sin una extensión extended_master_secret correcta.
 ssl-error-unexpected-extended-master-secret = El par trato de continuar con una extensión extended_master_secret inesperada.
-sec-error-io = Ha ocurrido un error de E/S durante la autorización de seguridad.
+sec-error-io = Ocurrió un error de E/S durante la autorización de seguridad.
 sec-error-library-failure = fallo de la biblioteca de seguridad.
 sec-error-bad-data = biblioteca de seguridad: se han recibido datos incorrectos.
 sec-error-output-len = biblioteca de seguridad: error de longitud de salida.

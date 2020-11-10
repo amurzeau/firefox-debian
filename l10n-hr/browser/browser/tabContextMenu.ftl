@@ -53,9 +53,22 @@ move-to-end =
 move-to-new-window =
     .label = Premjesti u novi prozor
     .accesskey = z
-undo-close-tab =
-    .label = Poništi zatvaranje kartice
-    .accesskey = P
+tab-context-close-multiple-tabs =
+    .label = Zatvori višestruke kartice
+    .accesskey = t
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Poništi zatvaranje kartice
+            [one] Poništi zatvaranje kartice
+            [few] Poništi zatvaranje kartice
+           *[other] Poništi zatvaranje kartica
+        }
+    .accesskey = n
 close-tab =
     .label = Zatvori karticu
     .accesskey = c
@@ -67,4 +80,22 @@ move-tabs =
     .accesskey = m
 move-tab =
     .label = Pomakni karticu
+    .accesskey = m
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Zatvori karticu
+            [one] Zatvori karticu
+            [few] Zatvori kartice
+           *[other] Zatvori kartice
+        }
+    .accesskey = c
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Premjesti karticu
+            [one] Premjesti karticu
+            [few] Premjesti kartice
+           *[other] Premjesti kartice
+        }
     .accesskey = m

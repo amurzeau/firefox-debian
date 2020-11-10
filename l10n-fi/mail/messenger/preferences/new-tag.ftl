@@ -8,3 +8,7 @@ tag-dialog-window =
 tag-name-label =
     .value = Tunnuksen nimi:
     .accesskey = T
+
+tag-color-label =
+    .value = Väri:
+    .accesskey = V

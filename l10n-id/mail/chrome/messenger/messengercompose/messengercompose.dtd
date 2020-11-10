@@ -67,15 +67,9 @@
 <!ENTITY redoCmd.label "Ulangi">
 <!ENTITY redoCmd.key "Y">
 <!ENTITY redoCmd.accesskey "U">
-<!ENTITY cutCmd.label "Potong">
 <!ENTITY cutCmd.key "X">
-<!ENTITY cutCmd.accesskey "P">
-<!ENTITY copyCmd.label "Salin">
 <!ENTITY copyCmd.key "C">
-<!ENTITY copyCmd.accesskey "S">
-<!ENTITY pasteCmd.label "Tempel">
 <!ENTITY pasteCmd.key "V">
-<!ENTITY pasteCmd.accesskey "T">
 <!ENTITY pasteNoFormattingCmd.key "V">
 <!ENTITY pasteAsQuotationCmd.key "o">
 <!ENTITY editRewrapCmd.accesskey "u">
@@ -86,9 +80,11 @@
 <!ENTITY renameAttachmentCmd.label "Ganti nama Lampiran…">
 <!ENTITY renameAttachmentCmd.accesskey "G">
 <!ENTITY reorderAttachmentsCmd.label "Susun Lampiran…">
-<!ENTITY selectAllCmd.label "Pilih Semua">
+<!ENTITY reorderAttachmentsCmd.accesskey "s">
+<!ENTITY reorderAttachmentsCmd.key "x">
+<!ENTITY toggleAttachmentPaneCmd.label "Panel Lampiran">
+<!ENTITY toggleAttachmentPaneCmd.accesskey "m">
 <!ENTITY selectAllCmd.accesskey "a">
-<!ENTITY selectAllCmd.key "A">
 <!ENTITY findBarCmd.label "Cari…">
 <!ENTITY findBarCmd.accesskey "F">
 <!ENTITY findBarCmd.key "F">
@@ -106,6 +102,11 @@
 
 <!-- Reorder Attachment Panel -->
 <!ENTITY reorderAttachmentsPanel.label "Tata Ulang Lampiran">
+<!ENTITY moveAttachmentTopPanelBtn.label "Pindahkan ke Atas">
+<!ENTITY moveAttachmentUpPanelBtn.label "Naikkan">
+<!ENTITY moveAttachmentBundleUpPanelBtn.label "Pindahkan bersama">
+<!ENTITY moveAttachmentDownPanelBtn.label "Turunkan">
+<!ENTITY moveAttachmentBottomPanelBtn.label "Pindahkan ke Dasar">
 
 <!-- LOCALIZATION NOTE (sortAttachmentsPanelBtn.Sort.AZ.label):
      Please ensure that this translation matches
@@ -115,6 +116,9 @@
 <!-- LOCALIZATION NOTE (sortAttachmentsPanelBtn.SortSelection.AZ.label):
      Please ensure that this translation matches
      sortAttachmentsPanelBtn.SortSelection.ZA.label, except for the sort direction. -->
+<!ENTITY sortAttachmentsPanelBtn.SortSelection.AZ.label "Urutkan Pilihan: A - Z">
+<!ENTITY sortAttachmentsPanelBtn.SortSelection.ZA.label "Urutkan Pilihan: Z - A">
+<!ENTITY sortAttachmentsPanelBtn.key "y">
 
 <!-- View Menu -->
 <!ENTITY viewMenu.label "Tampilan">
@@ -200,6 +204,7 @@
 <!ENTITY accountManagerCmd2.label "Setelan Akun">
 <!ENTITY accountManagerCmd2.accesskey "S">
 <!ENTITY accountManagerCmdUnix2.accesskey "S">
+<!ENTITY preferencesCmd2.label "Pilihan">
 <!ENTITY preferencesCmd2.accesskey "O">
 <!ENTITY preferencesCmdUnix.label "Pengaturan">
 <!ENTITY preferencesCmdUnix.accesskey "P">
@@ -234,28 +239,21 @@
 <!ENTITY printButton.tooltip "Cetak pesan ini">
 
 <!-- Headers -->
-<!--LOCALIZATION NOTE headersSpace.style is for aligning  the From:, To: and
-    Subject: rows. It should be larger than the largest Header label  -->
-<!ENTITY headersSpace.style "width: 9em;">
-<!ENTITY fromAddr.label "Dari:">
 <!--LOCALIZATION NOTE headersSpaces.style is for aligning  the From:, To: and
     Subject: rows. It should be larger than the largest Header label  -->
+<!ENTITY headersSpace2.style "width: 8em;">
+<!ENTITY extraRecipients.tooltip "Tipe lain dari bidang pemberian alamat">
+<!ENTITY fromAddr2.label "Dari">
 <!ENTITY fromAddr.accesskey "r">
-<!ENTITY toAddr.label "Kepada:">
-<!ENTITY ccAddr.label "Cc:">
-<!ENTITY bccAddr.label "Bcc:">
-<!ENTITY replyAddr.label "Balas Kepada:">
-<!ENTITY newsgroupsAddr.label "Newsgroup:">
-<!ENTITY followupAddr.label "Lanjutkan Kepada:">
-<!ENTITY subject.label "Subjek:">
+<!ENTITY toAddr2.label "Kepada">
+<!ENTITY ccAddr2.label "Cc">
+<!ENTITY bccAddr2.label "Bcc">
+<!ENTITY replyAddr2.label "Balas-Kepada">
+<!ENTITY newsgroupsAddr2.label "Grup Berita">
+<!ENTITY followupAddr2.label "Tindaklanjut-Kepada:">
+<!ENTITY subject2.label "Subjek">
 <!ENTITY subject.accesskey "S">
-<!-- LOCALIZATION NOTE (attachments.accesskey) This access key character should
-     be taken from the strings of attachmentCount in composeMsgs.properties.
-     Please ensure that this access key is unique: Do not duplicate any other
-     first-level access keys of the compose window, e.g. those of main menu,
-     buttons, or labels (message headers, contacts side bar, attachment reminder
-     bar). -->
-<!ENTITY attachments.accesskey "L">
+<!ENTITY attachmentBucketCloseButton.tooltip "Sembunyikan panel lampiran">
 
 <!-- Format Toolbar, imported from editorAppShell.xhtml -->
 <!ENTITY SmileButton.tooltip "Masukkan gambar smiley">
@@ -303,6 +301,9 @@
 <!ENTITY renameAttachment.label "Ganti Nama…">
 <!ENTITY renameAttachment.accesskey "G">
 <!ENTITY reorderAttachments.label "Tata Ulang Lampiran…">
+<!ENTITY reorderAttachments.accesskey "s">
+<!ENTITY removeAllAttachments.label "Hapus Semua Lampiran">
+<!ENTITY removeAllAttachments.accesskey "v">
 <!ENTITY selectAll.label "Pilih Semua">
 <!ENTITY selectAll.accesskey "a">
 <!ENTITY attachFile.label "Lampirkan berkas…">
@@ -322,6 +323,8 @@
 <!-- LOCALIZATION NOTE (initiallyShowAttachmentPane.label):
      Should use the same wording as startExpandedCmd.label
      in msgHdrViewOverlay.dtd. -->
+<!ENTITY initiallyShowAttachmentPane.label "Awalnya Tampilkan Panel Lampiran">
+<!ENTITY initiallyShowAttachmentPane.accesskey "S">
 
 <!-- Spell checker context menu items -->
 <!ENTITY spellAddDictionaries.label "Tambah Kamus…">
@@ -331,9 +334,12 @@
 <!ENTITY addressesSidebarTitle.label "Kenalan">
 
 <!-- Identity popup customize menuitem -->
+<!ENTITY customizeFromAddress.label "Menyesuaikan Dari Alamat...">
 <!ENTITY customizeFromAddress.accesskey "A">
 
 <!-- Accessibility name for the document -->
 <!ENTITY aria.message.bodyName "Badan pesan">
 
 <!-- Status Bar -->
+<!ENTITY languageStatusButton.tooltip "Pemeriksa ejaan bahasa">
+<!ENTITY encodingStatusPanel.tooltip "Pengkodean teks">

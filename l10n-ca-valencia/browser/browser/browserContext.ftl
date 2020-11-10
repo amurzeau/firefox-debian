@@ -154,12 +154,12 @@ main-context-menu-media-pause =
 ##
 
 main-context-menu-media-mute =
-    .label = Sense so
-    .accesskey = e
+    .label = Silencia
+    .accesskey = S
 
 main-context-menu-media-unmute =
-    .label = Amb so
-    .accesskey = m
+    .label = No silencies
+    .accesskey = N
 
 main-context-menu-media-play-speed =
     .label = Velocitat de reproducció
@@ -388,4 +388,3 @@ main-context-menu-inspect-a11y-properties =
 main-context-menu-eme-learn-more =
     .label = Més informació sobre DRM…
     .accesskey = D
-

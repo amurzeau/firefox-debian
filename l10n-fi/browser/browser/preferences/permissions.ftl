@@ -5,66 +5,53 @@
 permissions-window =
     .title = Poikkeukset
     .style = width: 36em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Sivuston osoite
     .accesskey = i
-
 permissions-block =
     .label = Estä
     .accesskey = E
-
 permissions-session =
     .label = Salli istunnon ajaksi
     .accesskey = i
-
 permissions-allow =
     .label = Salli
     .accesskey = a
-
 permissions-site-name =
     .label = Sivusto
-
 permissions-status =
     .label = Tila
-
 permissions-remove =
     .label = Poista sivusto
     .accesskey = P
-
 permissions-remove-all =
     .label = Poista kaikki sivustot
     .accesskey = k
-
 permissions-button-cancel =
     .label = Peruuta
     .accesskey = P
-
 permissions-button-ok =
     .label = Tallenna muutokset
     .accesskey = T
-
+permission-dialog =
+    .buttonlabelaccept = Tallenna muutokset
+    .buttonaccesskeyaccept = T
 permissions-autoplay-menu = Oletus kaikille sivustoille:
-
 permissions-searchbox =
     .placeholder = Etsi sivustoa
-
 permissions-capabilities-autoplay-allow =
     .label = Salli ääni ja video
 permissions-capabilities-autoplay-block =
     .label = Estä ääni
 permissions-capabilities-autoplay-blockall =
     .label = Estä ääni ja video
-
 permissions-capabilities-allow =
     .label = Salli
 permissions-capabilities-block =
     .label = Estä
 permissions-capabilities-prompt =
     .label = Kysy aina
-
 permissions-capabilities-listitem-allow =
     .value = Salli
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = Virheellinen palvelinnimi annettu
 permissions-invalid-uri-label = Kirjoita kelvollinen palvelinnimi
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = Poikkeukset - Sisällön esto
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Olet poistanut käytöstä sisällön eston näillä sivustoilla.
 
 permissions-exceptions-etp-window =
     .title = Tehostetun seurannan suojauksen poikkeukset
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Sallitut sivustot - Lisäosien asentaminen
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Lisäosia voidaan asentaa määrätyiltä sivustoilta. Kirjoita sivuston osoite ja napsauta Salli.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Poikkeukset - Automaattinen toisto
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Voit valita, mitkä sivustot saavat joko aina tai eivät ikinä toistaa äänellistä mediaa automaattisesti. Kirjoita sivuston osoite ja napsauta Estä tai Salli.
 
 ## Site Permissions - Autoplay
 

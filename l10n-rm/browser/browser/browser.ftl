@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Tippar main e chattar dapli: Tschertga cun { $engineName } directamain en la trav d'adressas.
 urlbar-search-tips-redirect-2 = Cumenza tia tschertga en la trav d'adressas per laschar mussar propostas da { $engineName } e propostas ord tia cronologia.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Tscherna questa scursanida per chattar pli svelt quai che ta serva.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Segnapaginas
+urlbar-search-mode-tabs = Tabs
+urlbar-search-mode-history = Cronologia
 
 ##
 
@@ -156,6 +165,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Allontanar l'extensiun
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Trametter il tab ad in apparat
+           *[other] Trametter { $tabCount } tabs ad in apparat
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Trametter il tab ad in apparat
+           *[other] Trametter { $tabCount } tabs ad in apparat
+        }
+page-action-pocket-panel =
+    .label = Memorisar la pagina en { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Copiar la colliaziun
+page-action-copy-url-urlbar =
+    .tooltiptext = Copiar la colliaziun
+page-action-email-link-panel =
+    .label = Trametter la colliaziun via e-mail…
+page-action-email-link-urlbar =
+    .tooltiptext = Trametter la colliaziun via e-mail…
+page-action-share-url-panel =
+    .label = Cundivider
+page-action-share-url-urlbar =
+    .tooltiptext = Cundivider
+page-action-share-more-panel =
+    .label = Dapli…
+page-action-send-tab-not-ready =
+    .label = Sincronisar apparats…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Fixar il tab
+page-action-pin-tab-urlbar =
+    .tooltiptext = Fixar il tab
+page-action-unpin-tab-panel =
+    .label = Betg pli fixar il tab
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Betg pli fixar il tab
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +223,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Per questa giada, tschertgar cun:
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +241,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Definir sco maschina da tschertgar da standard per fanestras privatas
     .accesskey = p
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Segnapaginas ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Tabs ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Cronologia ({ $restrict })
 
 ## Bookmark Panel
 
@@ -212,6 +288,17 @@ identity-passive-loaded = Parts da questa pagina (p.ex. maletgs) n'èn betg segi
 identity-active-loaded = Ti has deactivà la protecziun per questa pagina.
 identity-weak-encryption = Questa pagina utilisescha in criptadi flaivel.
 identity-insecure-login-forms = Infurmaziuns d'annunzia endatadas sin questa pagina èn eventualmain periclitadas.
+identity-https-only-connection-upgraded = (actualisà a HTTPS)
+identity-https-only-label = Modus mo HTTPS
+identity-https-only-dropdown-on =
+    .label = Activà
+identity-https-only-dropdown-off =
+    .label = Deactivà
+identity-https-only-dropdown-off-temporarily =
+    .label = Deactivà temporarmain
+identity-https-only-info-turn-on2 = Activescha il modus mo HTTPS per questa website sche ti vuls che { -brand-short-name } midia sche pussaivel ad ina connexiun segira.
+identity-https-only-info-turn-off2 = Sche la pagina na funcziunescha betg endretg, pos ti empruvar da deactivar il modus mo HTTPS per questa website per rechargiar cun HTTP betg segirà.
+identity-https-only-info-no-upgrade = Impussibel da remplazzar la connexiun HTTP.
 identity-permissions =
     .value = Autorisaziuns
 identity-permissions-reload-hint = Forsa stos ti chargiar da nov questa pagina per applitgar las midadas.
@@ -257,6 +344,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Serrar
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Importar segnapaginas…
+    .tooltiptext = Copiar segnapaginas dad in auter navigatur en { -brand-short-name }.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -292,8 +385,42 @@ enable-devtools-popup-description = Per utilisar la scursanida F12, l'emprim avr
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Tschertgar u endatar in'adressa
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Tschertgar u endatar in'adressa
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Tschertgar en il web
+    .aria-label = Tschertgar cun { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Endatar terms da tschertga
+    .aria-label = Tschertgar tar { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Endatar terms da tschertga
+    .aria-label = Tschertgar en ils segnapaginas
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Endatar terms da tschertga
+    .aria-label = Tschertgar en la cronologia
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Endatar terms da tschertga
+    .aria-label = Tschertgar tabs
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Tschertgar cun { $name } u endatar in'adressa
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Il navigatur vegn controllà a distanza
 urlbar-permissions-granted =
@@ -309,3 +436,67 @@ urlbar-page-action-button =
     .tooltiptext = Acziuns da pagina
 urlbar-pocket-button =
     .tooltiptext = Memorisar en { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Tschertgar cun { $engine } en ina fanestra privata
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Tschertgar en ina fanestra privata
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Tschertgar cun { $engine }
+urlbar-result-action-sponsored = Sponsurisà
+urlbar-result-action-switch-tab = Midar al tab
+urlbar-result-action-visit = Visitar
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Smatgar la tasta dals tabulaturs per tschertgar cun { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Smatgar la tasta dals tabulaturs per tschertgar en { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Tschertgar cun { $engine } direct en la trav d'adressas
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Tschertgar en { $engine } direct en la trav d'adressas
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Tschertgar en ils segnapaginas
+urlbar-result-action-search-history = Tschertgar en la cronologia
+urlbar-result-action-search-tabs = Tschertgar en ils tabs
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> è ussa en il modus da maletg entir
+fullscreen-warning-no-domain = Quest document è ussa en il modus da maletg entir
+fullscreen-exit-button = Bandunar il modus da maletg entir (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Bandunar il modus da maletg entir (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> controllescha il punctader. Smatga ESC per reacquistar la controlla.
+pointerlock-warning-no-domain = Quest document controllescha il punctader. Smatga ESC per reacquistar la controlla.

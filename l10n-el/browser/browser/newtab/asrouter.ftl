@@ -210,6 +210,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Προβολή όλων
     .accesskey = Π
+cfr-doorhanger-milestone-close-button = Κλείσιμο
+    .accesskey = Κ
 
 ## What’s New Panel Content for Firefox 76
 
@@ -243,3 +245,35 @@ cfr-whatsnew-protections-icon-alt = Εικονίδιο ασπίδας
 
 cfr-whatsnew-better-pdf-header = Καλύτερη εμπειρία PDF
 cfr-whatsnew-better-pdf-body = Τα έγγραφα PDF πλέον ανοίγουν απευθείας στο { -brand-short-name } για ακόμα πιο βολική εργασία.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Το απόρρητό σας έχει σημασία. Το { -brand-short-name } δρομολογεί πλέον με ασφάλεια τα αιτήματα DNS σας, όποτε είναι δυνατόν, σε μια συνεργαζόμενη υπηρεσία για να σας προστατεύσει κατά την περιήγησή σας.
+cfr-doorhanger-doh-header = Πιο ασφαλείς, κρυπτογραφημένες αναζητήσεις DNS
+cfr-doorhanger-doh-primary-button = Το κατάλαβα
+    .accesskey = Τ
+cfr-doorhanger-doh-secondary-button = Απενεργοποίηση
+    .accesskey = Α
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Το απόρρητό σας έχει σημασία. Το { -brand-short-name } πλέον απομονώνει, ή βάζει σε sandbox, κάθε ιστοσελίδα, κάνοντας πιο δύσκολη την πρόσβαση των hackers για υποκλοπή κωδικών πρόσβασης, αριθμών πιστωτικών καρτών και άλλων ευαίσθητων πληροφοριών.
+cfr-doorhanger-fission-header = Απομόνωση ιστοσελίδας
+cfr-doorhanger-fission-primary-button = Το κατάλαβα
+    .accesskey = Τ
+cfr-doorhanger-fission-secondary-button = Μάθετε περισσότερα
+    .accesskey = Μ
+# Deprecated
+cfr-doorhanger-fission-body = Το { -brand-short-name } έχει ενεργοποιήσει μια πειραματική λειτουργία, το Fission (απομόνωση ιστοσελίδας) για εσάς. Απομονώνοντας την κάθε σελίδα σε ξεχωριστή διεργασία, το Fission παρέχει ένα επιπλέον επίπεδο ασφαλείας για εσάς και τις ιστοσελίδες που επισκέπτεστε.
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Αυτόματη προστασία από περίεργες τακτικές ιχνηλάτησης
+cfr-whatsnew-clear-cookies-body = Ορισμένοι ιχνηλάτες σας ανακατευθύνουν σε άλλες ιστοσελίδες που τοποθετούν κρυφά cookies. Το { -brand-short-name } διαγράφει αυτόματα αυτά τα cookies, ώστε να μην μπορούν να σας ακολουθήσουν.
+cfr-whatsnew-clear-cookies-image-alt = Απεικόνιση αποκλεισμού cookie
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Περισσότερα στοιχεία ελέγχου πολυμέσων
+cfr-whatsnew-media-keys-body = Κάντε αναπαραγωγή και παύση ήχου ή βίντεο απευθείας από το πληκτρολόγιό σας ή τα ακουστικά σας, κάνοντας εύκολο τον έλεγχο πολυμέσων από άλλη καρτέλα, πρόγραμμα ή ακόμη και την οθόνη κλειδώματος. Μπορείτε επίσης να κάνετε εναλλαγή κομματιών με τα πλήκτρα "εμπρός" και "πίσω".
+cfr-whatsnew-media-keys-button = Μάθετε πώς

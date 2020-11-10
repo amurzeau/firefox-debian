@@ -66,9 +66,9 @@ options-stylesheet-autocompletion-tooltip =
 options-screenshot-label = Hành vi chụp màn hình
 
 # Label for the checkbox that toggles screenshot to clipboard feature
-options-screenshot-clipboard-label = Sao chép ảnh chụp màn hình vào clipboard
+options-screenshot-clipboard-label = Sao chép ảnh chụp màn hình vào bộ nhớ tạm
 options-screenshot-clipboard-tooltip =
-    .title = Lưu ảnh chụp màn hình trực tiếp vào clipboard
+    .title = Lưu ảnh chụp màn hình trực tiếp vào bộ nhớ tạm
 
 # Label for the checkbox that toggles the camera shutter audio for screenshot tool
 options-screenshot-audio-label = Bật tiếng chụp ảnh
@@ -115,9 +115,6 @@ options-enable-chrome-tooltip =
 
 # The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
 options-enable-remote-label = Cho phép gỡ lỗi từ xa
-options-enable-remote-tooltip =
-    .title = Bật tùy chọn này sẽ cho phép các công cụ dành cho nhà phát triển gỡ lỗi một cá thể từ xa như Firefox OS
-
 options-enable-remote-tooltip2 =
     .title = Bật tùy chọn này sẽ cho phép gỡ lỗi phiên bản trình duyệt này từ xa
 

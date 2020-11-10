@@ -5,66 +5,53 @@
 permissions-window =
     .title = استثناها
     .style = width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = آدرس وب‌سایت
     .accesskey = d
-
 permissions-block =
     .label = باز داشتن
     .accesskey = ب
-
 permissions-session =
     .label = اجازه دادن برای این نشست
     .accesskey = د
-
 permissions-allow =
     .label = اجازه دادن
     .accesskey = ج
-
 permissions-site-name =
     .label = وب‌سایت
-
 permissions-status =
     .label = وضعیت
-
 permissions-remove =
     .label = حذف وب‌سایت
     .accesskey = R
-
 permissions-remove-all =
     .label = حذف همه وب‌سایت‌ها
     .accesskey = e
-
 permissions-button-cancel =
     .label = انصراف
     .accesskey = ن
-
 permissions-button-ok =
     .label = ذخیره تغییرات
     .accesskey = ذ
-
+permission-dialog =
+    .buttonlabelaccept = ذخیره تغییرات
+    .buttonaccesskeyaccept = ذ
 permissions-autoplay-menu = پیش‌فرض برای تمام پایگاه‌ها:
-
 permissions-searchbox =
     .placeholder = جست‌وجو وب‌سایت
-
 permissions-capabilities-autoplay-allow =
     .label = اجازه دادن صوت و ویدئو
 permissions-capabilities-autoplay-block =
     .label = مسدود کردن صوت
 permissions-capabilities-autoplay-blockall =
     .label = مسدود کردن صوت و ویدئو
-
 permissions-capabilities-allow =
     .label = اجازه دادن
 permissions-capabilities-block =
     .label = باز داشتن
 permissions-capabilities-prompt =
     .label = همیشه پرسیده شود
-
 permissions-capabilities-listitem-allow =
     .value = اجازه دادن
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = نام میزبان وارد شده معتبر �
 permissions-invalid-uri-label = لطفاً نام میزبان معتبری را وارد کنید
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = استثناها - مسدودسازی محتوا
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = شما مسدودسازی محتوا را در این وب‌سایت‌ها غیرفعال کرده‌اید.
 
 permissions-exceptions-etp-window =
     .title = استثناها برای سیستم محافظت پیشرفته در برابر ردگیری
@@ -117,13 +99,6 @@ permissions-exceptions-addons-window =
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = شما می‌توانید مشخص کنید که کدام وب‌گاه‌ها مجازند افزودنی‌هایی نصب کنند. نشانی دقیق پایگاهی را که می‌خواهید به آن اجازه دهید وارد کنید و روی «اجازه دادن» کلیک نمایید.
 
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = استثناها - پخش خودکار
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = شما می‌توانید مشخص کنید که کدام وب‌گاه‌ها همیشه یا هیچ‌وقت مجاز به پخش رسانه با صدا باشند. نشانی پایگاهی را که می‌خواهید مدیریت کنید وارد و سپس روی «باز داشتن» یا «اجازه دادن» کلیک کنید.
-
 ## Site Permissions - Autoplay
 
 permissions-site-autoplay-window =
@@ -152,6 +127,7 @@ permissions-site-location-disable-label =
 permissions-site-location-disable-desc = این امکان درخواست اجازه برای دسترسی به مختصات مکانی شما را توسط هر پایگاهی مسدود می‌کند. این کار ممکن است بعضی امکانات پایگاه‌ها را از دسترس شما خارج کند.
 
 ## Site Permissions - Virtual Reality
+
 
 ## Site Permissions - Camera
 

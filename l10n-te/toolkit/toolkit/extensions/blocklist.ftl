@@ -17,6 +17,6 @@ blocklist-more-information =
     .value = మరింత సమాచారం
 
 blocklist-blocked =
-    .label = నిషేధించబడినది
+    .label = నిరోధించబడ్డవి
 blocklist-checkbox =
     .label = అచేతనపరచు

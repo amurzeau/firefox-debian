@@ -17,6 +17,12 @@ extensions-name = Num
 extensions-enabled = Activà
 extensions-version = Versiun
 extensions-id = ID
+support-addons-title = Supplements
+support-addons-name = Num
+support-addons-type = Tip
+support-addons-enabled = Activà
+support-addons-version = Versiun
+support-addons-id = ID
 security-software-title = Software da segirezza
 security-software-type = Tip
 security-software-name = Num
@@ -62,6 +68,7 @@ app-basics-service-workers = Service Workers registrads
 app-basics-profiles = Profils
 app-basics-launcher-process-status = Process launcher
 app-basics-multi-process-support = Fanestras da plirs process
+app-basics-fission-support = Fanestras Fission
 app-basics-remote-processes-count = Process a distanza
 app-basics-enterprise-policies = Directivas d'interpresa
 app-basics-location-service-key-google = Clav dal servetsch da localisaziun da Google
@@ -74,6 +81,12 @@ show-dir-label =
         [windows] Avrir l'ordinatur
        *[other] Avrir l'ordinatur
     }
+environment-variables-title = Variablas d'ambient
+environment-variables-name = Num
+environment-variables-value = Valur
+experimental-features-title = Funcziuns experimentalas
+experimental-features-name = Num
+experimental-features-value = Valur
 modified-key-prefs-title = Impurtantas preferenzas modifitgadas
 modified-prefs-name = Num
 modified-prefs-value = Valur
@@ -98,8 +111,6 @@ graphics-desktop-environment = Sistem da desktop
 place-database-title = Banca da datas «Places»
 place-database-integrity = Integritad
 place-database-verify-integrity = Verifitgar l'integritad
-js-title = JavaScript
-js-incremental-gc = GC incremental
 a11y-title = Accessibladad
 a11y-activated = Activà
 a11y-force-disabled = Impedir l'accessibladad
@@ -129,7 +140,6 @@ restart-button-label = Reaviar
 
 audio-backend = Backend dad audio
 max-audio-channels = Maximum da chanals
-channel-layout = Modus da chanals preferì
 sample-rate = Frequenza da scannar preferida
 roundtrip-latency = Latenza da l'ir e turnar (deviaziun da standard)
 media-title = Multimedia
@@ -266,11 +276,13 @@ blocklisted-bug = Sin la glista naira pervia da problems enconuschents
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Bloccà pervia da sbagls enconuschents: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Sin la glista naira; numer da sbagl { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = Decodader da video D3D11
-d3d9video-crash-buard = Decodader da video D3D9
 d3d9video-crash-guard = Decodader da video D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Video Decoder
@@ -318,6 +330,20 @@ multi-process-status-6 = Deactivà dad ina metoda incumpatibla d'endatar text
 multi-process-status-7 = Deactivà da supplements
 multi-process-status-8 = Deactivà cun forza
 multi-process-status-unknown = Status nunenconuschent
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Deactivà dad experiment
+fission-status-experiment-treatment = Activà dad experiment
+fission-status-disabled-by-e10s-env = Deactivà da l'ambient
+fission-status-enabled-by-env = Activà da l'ambient
+fission-status-disabled-by-safe-mode = Deactivà dal modus segirà
+fission-status-enabled-by-default = Activà tenor standard
+fission-status-disabled-by-default = Deactivà tenor standard
+fission-status-enabled-by-user-pref = Activà da l'utilisader
+fission-status-disabled-by-user-pref = Deactivà da l'utilisader
+fission-status-disabled-by-e10s-other = E10s deactivà
 async-pan-zoom = Zoom asincron
 apz-none = nagin
 wheel-enabled = input da la rodina activà
@@ -338,3 +364,12 @@ touch-warning = l'input tactil asincron è deactivà pervia dad ina preferenza b
 policies-inactive = Inactiv
 policies-active = Activ
 policies-error = Errur
+
+## Printing section
+
+support-printing-title = Stampar
+support-printing-troubleshoot = Schliar problems
+support-printing-clear-settings-button = Stizzar ils parameters da stampa memorisads
+support-printing-modified-settings = Parameters da stampa modifitgads
+support-printing-prefs-name = Num
+support-printing-prefs-value = Valur

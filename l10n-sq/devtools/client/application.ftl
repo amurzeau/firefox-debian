@@ -28,10 +28,6 @@ serviceworker-worker-unregister = Çregjistroje
 serviceworker-worker-debug = Diagnostikoje
     .title = Mund të diagnostikohen vetëm service workers në punë e sipër
 
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = Nise
-
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
 serviceworker-worker-debug-forbidden = Diagnostikoje
@@ -41,6 +37,14 @@ serviceworker-worker-debug-forbidden = Diagnostikoje
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = Fillo
     .title = Mund të nisen service workers vetëm nëse multi e10s është e çaktivizuar
+
+# Alt text for the image icon displayed inside a debug link for a service worker.
+serviceworker-worker-inspect-icon =
+    .alt = Shqyrtoje
+
+# Text for the start link displayed for a registered but not running Service Worker.
+# Clicking on the link will attempt to start the service worker.
+serviceworker-worker-start3 = Nise
 
 # Text displayed for the updated time of the service worker. The <time> element will
 # display the last update time of the service worker script.
@@ -62,10 +66,6 @@ serviceworker-worker-status-running = Në xhirim
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = I ndalur
 
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = Po regjistrohet
-
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = Që ta shqyrtoni këtu, lypset që një Service Worker ta regjistroni. <a>Mësoni më tepër</a>
@@ -86,12 +86,33 @@ serviceworker-empty-suggestions-debugger = Kaloni nëpër hapat e regjistrimit t
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Shqyrtoni Workers nga përkatësi të tjera. <a>Hapni about:debugging</a>
 
+# Text displayed when no service workers are visible for the current page.
+serviceworker-empty-intro2 = S’u gjetën service workers
+
+# Link will open https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
+serviceworker-empty-intro-link = Mësoni më tepër
+
+# Text displayed when there are no Service Workers to display for the current page,
+# introducing hints to debug Service Worker issues.
+# <a> and <span> are links that will open the webconsole and the debugger, respectively.
+serviceworker-empty-suggestions2 = Nëse faqja e tanishme duhet të ketë një service worker, mund të shihni për gabime te <a>Konsola</a> ose të kaloni nëpër regjistrimin e service worker-it tuaj te <span>Diagnostikuesi</span>.
+
+# Suggestion to go to about:debugging in order to see Service Workers for all domains.
+# Link will open about:debugging in a new tab.
+serviceworker-empty-suggestions-aboutdebugging2 = Shihni service workers prej përkatësish të tjera
+
 # Header for the Manifest page when we have an actual manifest
 manifest-view-header = Manifest Aplikacioni
 
 # Header for the Manifest page when there's no manifest to inspect
 # The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
 manifest-empty-intro = Lypset të shtoni një Manifest aplikacioni web që të këqyret këtu. <a>Mësoni më tepër</a>
+
+# Header for the Manifest page when there's no manifest to inspect
+manifest-empty-intro2 = S’u pikas manifest aplikacioni web
+
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro-link = Mësoni si të shtoni një manifest
 
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = Gabime dhe Sinjalizime

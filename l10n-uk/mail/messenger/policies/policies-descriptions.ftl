@@ -13,7 +13,7 @@
 policy-3rdparty = Встановити політики, за якими WebExtensions можуть отримувати доступ через chrome.storage.managed.
 policy-AppAutoUpdate = Увімкнути або вимкнути автоматичне оновлення програми.
 policy-AppUpdateURL = Встановити власний URL для оновлення програми.
-policy-Authentication = Налаштувати інтегровану авторизацію для підтримуваних вебсайтів.
+policy-Authentication = Налаштувати інтегровану автентифікацію для підтримуваних вебсайтів.
 policy-BlockAboutAddons = Блокувати доступ до Менеджера додатків (about:addons).
 policy-BlockAboutConfig = Блокувати доступ до сторінки about:config.
 policy-BlockAboutProfiles = Блокувати доступ до сторінки about:profiles.
@@ -72,7 +72,7 @@ policy-PasswordManagerEnabled = Увімкнути збереження паро
 policy-PDFjs = Вимкнути або налаштувати PDF.js, вбудований засіб перегляду файлів PDF у { -brand-short-name }.
 policy-Permissions2 = Налаштувати дозволи для камери, мікрофона, розташування, сповіщень та автовідтворення.
 policy-Preferences = Встановити і зафіксувати значення для набору налаштувань.
-policy-PromptForDownloadLocation = Запитувати, де зберігати файли при завантаженні.
+policy-PromptForDownloadLocation = Запитувати, де зберігати файли під час завантаження.
 policy-Proxy = Налаштувати параметри проксі.
 policy-RequestedLocales = Встановити перелік запитуваних мов для програми у вказаному порядку.
 policy-SanitizeOnShutdown2 = Очищати дані навігації при виході з програми.

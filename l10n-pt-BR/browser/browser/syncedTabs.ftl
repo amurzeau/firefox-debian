@@ -4,7 +4,6 @@
 
 synced-tabs-sidebar-title = Abas sincronizadas
 synced-tabs-sidebar-noclients-subtitle = Quer ver suas abas de outros dispositivos aqui?
-synced-tabs-sidebar-notsignedin = Entre para ver uma lista de abas de seus outros dispositivos.
 synced-tabs-sidebar-intro = Veja uma lista de abas de seus outros dispositivos.
 synced-tabs-sidebar-unverified = Sua conta precisa ser verificada.
 synced-tabs-sidebar-notabs = Nenhuma aba aberta
@@ -17,13 +16,13 @@ synced-tabs-context-open =
     .label = Abrir
     .accesskey = A
 synced-tabs-context-open-in-new-tab =
-    .label = Abrir em uma nova aba
+    .label = Abrir em nova aba
     .accesskey = v
 synced-tabs-context-open-in-new-window =
-    .label = Abrir em uma nova janela
-    .accesskey = N
+    .label = Abrir em nova janela
+    .accesskey = n
 synced-tabs-context-open-in-new-private-window =
-    .label = Abrir em uma nova janela privativa
+    .label = Abrir em nova janela privativa
     .accesskey = p
 synced-tabs-context-bookmark-single-tab =
     .label = Adicionar esta aba aos favoritos…

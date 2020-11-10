@@ -52,6 +52,8 @@ about-paragraph = Thunderbird는 오픈 소스 크로스 플랫폼으로 회사�
 about-paragraph-2 = <b>Thunderbird는 사용자에 의해서 자금을 지원 받습니다. Thunderbird를 좋아하신다면 기부를 해 주세요.</b> Thunderbird를 계속 사용할 수 있는 가장 좋은 방법은
 about-donation = 기부 하기
 
+about-paragraph-consider-donation = <b>Thunderbird는 여러분과 같은 사용자에 의해서 자금을 지원받습니다. Thunderbird를 좋아하신다면, 기부를 고려해주십시오.</b> Thunderbird를 계속 사용할 수 있도록 하는 가장 좋은 방법은 <a data-l10n-name="donation-link">기부하는 것입니다.</a>
+
 explore-link = 기능 살펴보기
 support-link = 지원
 involved-link = 참여하기

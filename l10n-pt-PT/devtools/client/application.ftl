@@ -28,10 +28,6 @@ serviceworker-worker-unregister = Unregister
 serviceworker-worker-debug = Debug
     .title = Only running service workers can be debugged
 
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = Start
-
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
 serviceworker-worker-debug-forbidden = Debug
@@ -41,6 +37,14 @@ serviceworker-worker-debug-forbidden = Debug
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = Start
     .title = Can only start service workers if multi e10s is disabled
+
+# Alt text for the image icon displayed inside a debug link for a service worker.
+serviceworker-worker-inspect-icon =
+    .alt = Inspecionar
+
+# Text for the start link displayed for a registered but not running Service Worker.
+# Clicking on the link will attempt to start the service worker.
+serviceworker-worker-start3 = Iniciar
 
 # Text displayed for the updated time of the service worker. The <time> element will
 # display the last update time of the service worker script.
@@ -62,10 +66,6 @@ serviceworker-worker-status-running = Running
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = Stopped
 
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = Registering
-
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = You need to register a Service Worker to inspect it here. <a>Learn more</a>
@@ -86,12 +86,33 @@ serviceworker-empty-suggestions-debugger = Percorra o registo do seu Service Wor
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Inspect Service Workers from other domains. <a>Open about:debugging</a>
 
+# Text displayed when no service workers are visible for the current page.
+serviceworker-empty-intro2 = Não foram encontrados service workers
+
+# Link will open https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
+serviceworker-empty-intro-link = Saber mais
+
+# Text displayed when there are no Service Workers to display for the current page,
+# introducing hints to debug Service Worker issues.
+# <a> and <span> are links that will open the webconsole and the debugger, respectively.
+serviceworker-empty-suggestions2 = Se a página atual tiver um service worker, você poderá procurar erros na <a>Consola</a> ou percorrer o registo do service worker no <span>Depurador</span>.
+
+# Suggestion to go to about:debugging in order to see Service Workers for all domains.
+# Link will open about:debugging in a new tab.
+serviceworker-empty-suggestions-aboutdebugging2 = Ver service workers de outros domínios
+
 # Header for the Manifest page when we have an actual manifest
 manifest-view-header = App Manifest
 
 # Header for the Manifest page when there's no manifest to inspect
 # The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
 manifest-empty-intro = You need to add a web app manifest to inspect it here. <a>Learn more</a>
+
+# Header for the Manifest page when there's no manifest to inspect
+manifest-empty-intro2 = Não foi detetado nenhum manifesto de aplicação Web
+
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro-link = Aprenda a adicionar um manifesto
 
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = Errors and Warnings

@@ -15,6 +15,9 @@ extensions-name = نام
 extensions-enabled = اہل بنایا گیا
 extensions-version = ورژن
 extensions-id = ID
+support-addons-name = نام
+support-addons-version = ورژن
+support-addons-id = ID
 security-software-title = سلامتی سافٹ ویئر
 security-software-type = قسم
 security-software-name = نام
@@ -82,8 +85,6 @@ graphics-window-protocol = Window  پروٹوکول
 place-database-title = مقامات ڈیٹا بیس
 place-database-integrity = تکمیلیت
 place-database-verify-integrity = تکمیلیت کی توثیق کریں
-js-title = جاوا سکرپٹ
-js-incremental-gc = Incremental GC
 a11y-title = رسائی پزیری
 a11y-activated = عمل میں لائیں
 a11y-force-disabled = رسائی پزیری روکیں
@@ -108,9 +109,7 @@ restart-in-safe-mode-label = ایڈز آن نا اہل کر کے دوبارہ ش
 
 audio-backend = آڈیو پسدید
 max-audio-channels = زیادہ سے زیادہ چینل
-channel-layout = پسندیدہ چینل لے آؤٹ
 sample-rate = ترجیحی نمونہ شرح
-
 media-title = میڈیا
 media-output-devices-title = آؤٹ پٹ آلات
 media-input-devices-title = ان پٹ آلات
@@ -256,7 +255,6 @@ unknown-failure = بلیک لسٹ؛ ناکامی کوڈ { $failureCode }
 
 d3d11layers-crash-guard = D3D11 کمپوزیٹر
 d3d11video-crash-guard = D3D11 ویڈیو کوٹواچک
-d3d9video-crash-buard = D3D9 ویڈیو کوٹواچک
 d3d9video-crash-guard = D3D9 ویڈیو کوٹواچک
 glcontext-crash-guard = OpenGL
 

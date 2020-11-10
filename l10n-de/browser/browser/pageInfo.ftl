@@ -4,22 +4,18 @@
 
 page-info-window =
     .style = width: 750px; min-height: 600px;
-
 copy =
     .key = C
 menu-copy =
     .label = Kopieren
     .accesskey = K
-
 select-all =
     .key = A
 menu-select-all =
     .label = Alles auswählen
-    .accesskey = u
-
+    .accesskey = w
 close-dialog =
     .key = w
-
 general-tab =
     .label = Allgemein
     .accesskey = A
@@ -43,7 +39,6 @@ general-meta-name =
     .label = Name
 general-meta-content =
     .label = Inhalt
-
 media-tab =
     .label = Medien
     .accesskey = M
@@ -71,15 +66,11 @@ media-save-as =
 media-save-image-as =
     .label = Speichern unter…
     .accesskey = e
-media-preview =
-    .value = Medienvorschau:
-
 perm-tab =
     .label = Berechtigungen
     .accesskey = B
 permissions-for =
     .value = Berechtigungen für:
-
 security-tab =
     .label = Sicherheit
     .accesskey = S
@@ -100,22 +91,17 @@ security-view-identity-validity =
     .value = Gültig bis:
 security-view-privacy =
     .value = Datenschutz & Chronik
-
 security-view-privacy-history-value = Habe ich diese Website früher schon einmal besucht?
 security-view-privacy-sitedata-value = Speichert diese Website Daten auf meinem Computer?
-
 security-view-privacy-clearsitedata =
     .label = Cookies und Website-Daten löschen
     .accesskey = C
-
 security-view-privacy-passwords-value = Habe ich Passwörter für diese Website gespeichert?
-
 security-view-privacy-viewpasswords =
     .label = Gespeicherte Passwörter anzeigen
     .accesskey = G
 security-view-technical =
     .value = Technische Details
-
 help-button =
     .label = Hilfe
 
@@ -127,12 +113,9 @@ help-button =
 
 security-site-data-cookies = Ja, Cookies und { $value } { $unit } Website-Daten
 security-site-data-only = Ja, { $value } { $unit } Website-Daten
-
 security-site-data-cookies-only = Ja, Cookies
 security-site-data-no = Nein
-
 image-size-unknown = Unbekannt
-not-set-verified-by = Nicht angegeben
 page-info-not-specified =
     .value = Nicht angegeben
 not-set-alternative-text = Nicht angegeben
@@ -150,14 +133,12 @@ media-video = Video
 media-audio = Audio
 saved-passwords-yes = Ja
 saved-passwords-no = Nein
-
 no-page-title =
     .value = Unbenannte Seite:
 general-quirks-mode =
     .value = Kompatibilitätsmodus (Quirks)
 general-strict-mode =
     .value = Standardkonformer Modus
-security-no-owner = Diese Website stellt keine Informationen über den Besitzer zur Verfügung.
 page-info-security-no-owner =
     .value = Diese Website stellt keine Informationen über den Besitzer zur Verfügung.
 media-select-folder = Wählen Sie einen Ordner, um die Grafiken zu speichern
@@ -166,7 +147,6 @@ media-unknown-not-cached =
 permissions-use-default =
     .label = Standard verwenden
 security-no-visits = Nein
-
 # This string is used to display the number of meta tags
 # in the General Tab
 # Variables:
@@ -177,7 +157,6 @@ general-meta-tags =
             [one] Meta (1 Schlagwort)
            *[other] Meta ({ $tags } Schlagwörter)
         }
-
 # This string is used to display the number of times
 # the user has visited the website prior
 # Variables:
@@ -188,7 +167,6 @@ security-visits-number =
         [one] Ja, ein Mal
        *[other] Ja, { $visits } Mal
     }
-
 # This string is used to display the size of a media file
 # Variables:
 #   $kb (number) - The size of an image in Kilobytes
@@ -199,7 +177,6 @@ properties-general-size =
             [one] { $kb } KB ({ $bytes } Byte)
            *[other] { $kb } KB ({ $bytes } Bytes)
         }
-
 # This string is used to display the type and number
 # of frames of a animated image
 # Variables:
@@ -208,17 +185,15 @@ properties-general-size =
 media-animated-image-type =
     .value =
         { $frames ->
-            [one] { $type } Grafik (animiert, { $frames } Frame)
-           *[other] { $type } Grafik (animiert, { $frames } Frames)
+            [one] { $type }-Grafik (animiert, { $frames } Frame)
+           *[other] { $type }-Grafik (animiert, { $frames } Frames)
         }
-
 # This string is used to display the type of
 # an image
 # Variables:
 #   $type (string) - The type of an image
 media-image-type =
     .value = { $type }-Grafik
-
 # This string is used to display the size of a scaled image
 # in both scaled and unscaled pixels
 # Variables:
@@ -228,20 +203,17 @@ media-image-type =
 #   $scaledy (number) - The scaled vertical size of an image
 media-dimensions-scaled =
     .value = { $dimx }px × { $dimy }px (Skaliert zu { $scaledx }px × { $scaledy }px)
-
 # This string is used to display the size of an image in pixels
 # Variables:
 #   $dimx (number) - The horizontal size of an image
 #   $dimy (number) - The vertical size of an image
 media-dimensions =
     .value = { $dimx }px × { $dimy }px
-
 # This string is used to display the size of a media
 # file in kilobytes
 # Variables:
 #   $size (number) - The size of the media file in kilobytes
 media-file-size = { $size } KB
-
 # This string is used to display the website name next to the
 # "Block Images" checkbox in the media tab
 # Variables:
@@ -249,7 +221,6 @@ media-file-size = { $size } KB
 media-block-image =
     .label = Grafiken von { $website } blockieren
     .accesskey = G
-
 # This string is used to display the URL of the website on top of the
 # pageInfo dialog box
 # Variables:

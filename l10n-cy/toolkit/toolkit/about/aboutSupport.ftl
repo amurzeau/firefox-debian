@@ -14,6 +14,12 @@ extensions-name = Enw
 extensions-enabled = Galluogwyd
 extensions-version = Fersiwn
 extensions-id = ID
+support-addons-title = Ychwanegion
+support-addons-name = Enw
+support-addons-type = Math
+support-addons-enabled = Galluogwyd
+support-addons-version = Fersiwn
+support-addons-id = ID
 security-software-title = Meddalwedd Diogelwch
 security-software-type = Math
 security-software-name = Enw
@@ -59,6 +65,7 @@ app-basics-service-workers = Service Workers Cofrestredig
 app-basics-profiles = Proffiliau
 app-basics-launcher-process-status = Proses Lansio
 app-basics-multi-process-support = Ffenestri Amlbroses
+app-basics-fission-support = Ffenestri Fission
 app-basics-remote-processes-count = Prosesau Pell
 app-basics-enterprise-policies = Polisïau Mentrau
 app-basics-location-service-key-google = Allwedd Google Location Service
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] Agor Ffolder
        *[other] Agor Cyfeiriadur
     }
+environment-variables-title = Newidiolion Amgylcheddol
+environment-variables-name = Enw
+environment-variables-value = Gwerth
+experimental-features-title = Nodweddion Arbrofol
+experimental-features-name = Enw
+experimental-features-value = Gwerth
 modified-key-prefs-title = Dewisiadau Pwysig wedi eu Newid
 modified-prefs-name = Enw
 modified-prefs-value = Gwerth
@@ -95,8 +108,6 @@ graphics-desktop-environment = Amgylchedd Bwrdd Gwaith
 place-database-title = Cronfa Ddata Mannau
 place-database-integrity = Cyfanrwydd
 place-database-verify-integrity = Gwirio Cyfanrwydd
-js-title = JavaScript
-js-incremental-gc = GC Cynnyddol
 a11y-title = Hygyrchedd
 a11y-activated = Gweithredu
 a11y-force-disabled = Atal Hygyrchedd
@@ -126,7 +137,6 @@ restart-button-label = Ailgychwyn
 
 audio-backend = Cefn Sain
 max-audio-channels = Mwyaf o Sianeli
-channel-layout = Cynllun Sianeli Amgen
 sample-rate = Graddfa Samplo Amgen
 roundtrip-latency = Cylchdro cudd (gwyriad safonol)
 media-title = Cyfrwng
@@ -283,11 +293,13 @@ blocklisted-bug = Wedi eu rhwystro ar sail gwybodaeth hysbys
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = gwall { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Ar y Rhestr Rhwystro oherwydd materion hysbys: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Wedi ei rwystro; gwall cod { $failureCode }
 d3d11layers-crash-guard = Cyfosodwr D3D11
 d3d11video-crash-guard = Dadgodiwr Fideo D3D11
-d3d9video-crash-buard = Dadgodiwr Fideo D3D9
 d3d9video-crash-guard = Dadgodiwr Fideo D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Dadgodiwr Fideo WMF VPX
@@ -335,6 +347,20 @@ multi-process-status-6 = Analluogwyd gan fewnbwn testun heb ei gynnal
 multi-process-status-7 = Analluogwyd gan ychwanegion
 multi-process-status-8 = Analluogi gorfodol
 multi-process-status-unknown = Statws anhysbys
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Analluogwyd trwy arbrawf
+fission-status-experiment-treatment = Galluogwyd trwy arbrawf
+fission-status-disabled-by-e10s-env = Analluogwyd gan yr amgylchedd
+fission-status-enabled-by-env = Galluogwyd gan yr amgylchedd
+fission-status-disabled-by-safe-mode = Analluogwyd gan y modd diogel
+fission-status-enabled-by-default = Galluogwyd drwy ragosodiad
+fission-status-disabled-by-default = Analluogwyd drwy ragosodiad
+fission-status-enabled-by-user-pref = Galluogwyd gan y defnyddiwr
+fission-status-disabled-by-user-pref = Analluogwyd gan y defnyddiwr
+fission-status-disabled-by-e10s-other = E10s wedi ei analluogi
 async-pan-zoom = Chwyddo a Thremio Anghydamseredig
 apz-none = dim
 wheel-enabled = mewnbwn olwyn wedi ei alluogi
@@ -355,3 +381,12 @@ touch-warning = Mae mewnbwn cyffwrdd async wedi ei analluogi oherwydd diffyg cef
 policies-inactive = Anweithredol
 policies-active = Gweithredol
 policies-error = Gwall
+
+## Printing section
+
+support-printing-title = Yn argraffu
+support-printing-troubleshoot = Datrys Anawsterau
+support-printing-clear-settings-button = Clirio gosodiadau argraffu wedi'u cadw
+support-printing-modified-settings = Gosodiadau argraffu wedi'u haddasu
+support-printing-prefs-name = Enw
+support-printing-prefs-value = Gwerth

@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Азырақ теріп, көбірек табыңыз: { $engineName } қызметінен тура адрестік жолақтан іздеңіз.
 urlbar-search-tips-redirect-2 = { $engineName } және шолу тарихы ұсыныстарын көру үшін, іздеуді адрестік жолағында бастаңыз.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Қажетті нәрсені тезірек табу үшін бұл жарлықты таңдаңыз.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Бетбелгілер
+urlbar-search-mode-tabs = Беттер
+urlbar-search-mode-history = Тарих
 
 ##
 
@@ -156,6 +165,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Кеңейтуді өшіру
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Бетті құрылғыға жіберу
+           *[other] Бетті { $tabCount } құрылғыға жіберу
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Бетті құрылғыға жіберу
+           *[other] Бетті { $tabCount } құрылғыға жіберу
+        }
+page-action-pocket-panel =
+    .label = Бетті { -pocket-brand-name }-ке сақтау
+page-action-copy-url-panel =
+    .label = Сілтемені көшіріп алу
+page-action-copy-url-urlbar =
+    .tooltiptext = Сілтемені көшіріп алу
+page-action-email-link-panel =
+    .label = Сілтемені эл. поштамен жіберу…
+page-action-email-link-urlbar =
+    .tooltiptext = Сілтемені эл. поштамен жіберу…
+page-action-share-url-panel =
+    .label = Бөлісу
+page-action-share-url-urlbar =
+    .tooltiptext = Бөлісу
+page-action-share-more-panel =
+    .label = Көбірек…
+page-action-send-tab-not-ready =
+    .label = Құрылғыларды синхрондау…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Бетті бекіту
+page-action-pin-tab-urlbar =
+    .tooltiptext = Бетті бекіту
+page-action-unpin-tab-panel =
+    .label = Бетті босату
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Бетті босату
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +223,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Осы рет, келесімен іздеу:
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +241,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Жекелік терезелері үшін негізгі іздеу жүйесі ретінде орнату
     .accesskey = р
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Бетбелгілер ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Беттер ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Тарих ({ $restrict })
 
 ## Bookmark Panel
 
@@ -212,6 +288,14 @@ identity-passive-loaded = Бұл парақтың кейбір бөліктер�
 identity-active-loaded = Бұл парақта қорғанысты сөндіргенсіз.
 identity-weak-encryption = Бұл парақ әлсіз шифрлеуді қолданады.
 identity-insecure-login-forms = Бұл парақта енгізілген логин ақпаратына бөтен адамдардың қолы жетуі мүмкін.
+identity-https-only-connection-upgraded = (HTTPS дейін жаңартылды)
+identity-https-only-label = Тек-HTTPS режимі
+identity-https-only-dropdown-on =
+    .label = Іске қосулы
+identity-https-only-dropdown-off =
+    .label = Сөндірулі
+identity-https-only-dropdown-off-temporarily =
+    .label = Уақытша сөндірулі
 identity-permissions =
     .value = Рұқсаттар
 identity-permissions-reload-hint = Өзгерістер іске асуы үшін бұл парақты қайта жүктеуіңіз керек болуы мүмкін.
@@ -257,6 +341,9 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Жабу
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -292,8 +379,42 @@ enable-devtools-popup-description = F12 жарлығын қолдану үшін
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Іздеу немесе адрес
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Іздеу немесе адрес
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Интернеттен іздеу
+    .aria-label = { $name } көмегімен іздеу
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Іздеу жолын енгізіңіз
+    .aria-label = { $name } іздеу
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Іздеу жолын енгізіңіз
+    .aria-label = Бетбелгілерден іздеу
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Іздеу жолын енгізіңіз
+    .aria-label = Тарихтан іздеу
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Іздеу жолын енгізіңіз
+    .aria-label = Беттерден іздеу
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name } көмегімен іздеу немесе адрес
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Браузер қашықтан басқарылуда
 urlbar-permissions-granted =
@@ -309,3 +430,47 @@ urlbar-page-action-button =
     .tooltiptext = Бет әрекеттері
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name }-ке сақтау
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = { $engine } көмегімен жекелік шолу терезесінде іздеу
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Жекелік шолу терезесінде іздеу
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } көмегімен іздеу
+urlbar-result-action-sponsored = Демеуленген
+urlbar-result-action-switch-tab = Бетке ауысу
+urlbar-result-action-visit = Шолу
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Бетбелгілерден іздеу
+urlbar-result-action-search-history = Тарихтан іздеу
+urlbar-result-action-search-tabs = Беттерден іздеу
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> енді толық экран режимінде
+fullscreen-warning-no-domain = Бұл құжат енді толық экран режимінде
+fullscreen-exit-button = Толық экраннан шығу (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Толық экраннан шығу (Esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> курсорыңызды басқаруда. Басқаруды қайта алу үшін Esc басыңыз.
+pointerlock-warning-no-domain = Бұл құжат курсорыңызды басқаруда. Басқаруды қайта алу үшін Esc басыңыз.

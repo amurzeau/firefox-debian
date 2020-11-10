@@ -46,38 +46,14 @@
 <!-- Edit Menu -->
 <!ENTITY editMenu.label                                 "Правка">
 <!ENTITY editMenu.accesskey                             "а">
-<!ENTITY undoCmd.label                                  "Отменить">
-<!ENTITY undoCmd.key                                    "Z">
-<!ENTITY undoCmd.accesskey                              "м">
-<!ENTITY redoCmd.label                                  "Повторить">
-<!ENTITY redoCmd.key                                    "Y">
-<!ENTITY redoCmd.accesskey                              "в">
-<!ENTITY cutCmd.label                                   "Вырезать">
-<!ENTITY cutCmd.key                                     "X">
-<!ENTITY cutCmd.accesskey                               "ы">
-<!ENTITY copyCmd.label                                  "Копировать">
-<!ENTITY copyCmd.key                                    "C">
-<!ENTITY copyCmd.accesskey                              "о">
-<!ENTITY pasteCmd.label                                 "Вставить">
-<!ENTITY pasteCmd.key                                   "V">
-<!ENTITY pasteCmd.accesskey                             "и">
 <!ENTITY deleteCmd.label                                "Удалить">
-<!ENTITY deleteCmd.accesskey                            "л">
 <!ENTITY deleteAbCmd.label                              "Удалить адресную книгу">
 <!ENTITY deleteContactCmd.label                         "Удалить контакт">
 <!ENTITY deleteContactsCmd.label                        "Удалить контакты">
 <!ENTITY deleteListCmd.label                            "Удалить список">
 <!ENTITY deleteListsCmd.label                           "Удалить списки">
 <!ENTITY deleteItemsCmd.label                           "Удалить элементы">
-<!ENTITY selectAllCmd.label                             "Выделить всё">
-<!ENTITY selectAllCmd.key                               "A">
 <!ENTITY searchAddressesCmd.key                         "f">
-<!ENTITY selectAllCmd.accesskey                         "ы">
-<!ENTITY swapFirstNameLastNameCmd.label                 "Поменять местами имя и фамилию">
-<!ENTITY swapFirstNameLastNameCmd.accesskey             "П">
-<!-- LOCALIZATION NOTE (hideSwapFnLnUI) : DONT_TRANSLATE -->
-<!-- Swap FN/LN UI  Set to "false" to show swap fn/ln UI -->
-<!ENTITY hideSwapFnLnUI "true">
 <!ENTITY propertiesMenu.label                           "Свойства">
 <!ENTITY propertiesMenu.accesskey                       "в">
 <!ENTITY propertiesCmd.key                              "i">
@@ -126,9 +102,6 @@ because displayed names don't have the comma in between. -->
 <!ENTITY messengerCmd.label                             "Почта и группы новостей">
 <!ENTITY messengerCmd.accesskey                         "о">
 <!ENTITY messengerCmd.commandkey                        "1">
-<!ENTITY addressBookCmd.label                           "Адресная книга">
-<!ENTITY addressBookCmd.accesskey                       "н">
-<!ENTITY addressBookCmd.key                             "B">
 <!ENTITY searchAddressesCmd.label                       "Поиск адресов…">
 <!ENTITY searchAddressesCmd.accesskey                   "а">
 <!ENTITY importCmd.label                                "Импорт…">
@@ -152,6 +125,8 @@ because displayed names don't have the comma in between. -->
 <!ENTITY propertiesContext.accesskey                    "в">
 <!ENTITY abPropertiesContext.label                      "Свойства">
 <!ENTITY abPropertiesContext.accesskey                  "в">
+<!ENTITY syncContext.label                              "Синхронизовать">
+<!ENTITY syncContext.accesskey                          "х">
 <!ENTITY editContactContext.label                       "Изменить контакт">
 <!ENTITY editContactContext.accesskey                   "м">
 <!ENTITY editMailingListContext.label                   "Изменить список">

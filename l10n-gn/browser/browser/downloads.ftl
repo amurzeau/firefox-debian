@@ -34,7 +34,7 @@ downloads-cmd-cancel-panel =
 downloads-cmd-show-menuitem =
     .label = Ñongatuha Ryrúpe Jeike
     .accesskey = Ñ
-  
+
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
     .label = Ehechauka Finder-pe
@@ -84,7 +84,7 @@ downloads-cmd-remove-from-history =
     .label = Emboguete tembiasakuégui
     .accesskey = m
 downloads-cmd-clear-list =
-    .label = Embogue jeike hague ra'ãngarupa
+    .label = Embogue jeike hague ra’ãngarupa
     .accesskey = a
 downloads-cmd-clear-downloads =
     .label = Mboguejypyre mopotĩ
@@ -150,7 +150,7 @@ downloads-history =
 # This string is shown at the top of the Download Details Panel, to indicate
 # that we are showing the details of a single download.
 downloads-details =
-    .title = Ñemboguejy Sa'ikue
+    .title = Ñemboguejy Sa’ikue
 
 downloads-clear-downloads-button =
     .label = Mboguejypyre mopotĩ
@@ -163,4 +163,4 @@ downloads-list-empty =
 
 # This string is shown when there are no items in the Downloads Panel.
 downloads-panel-empty =
-    .value = Ndaipóri ñemboguejypyre ko tembiapopa'ũme.
+    .value = Ndaipóri ñemboguejypyre ko tembiapopa’ũme.

@@ -15,6 +15,9 @@ extensions-name = အမည်
 extensions-enabled = ဖွင့်ထားတယ်
 extensions-version = မူအဆင့်
 extensions-id = အိုင်ဒီ
+support-addons-name = အမည်
+support-addons-version = မူအဆင့်
+support-addons-id = အိုင်ဒီ
 features-title = { -brand-short-name } တွင် ပါဝင်သော လုပ်ဆောင်ချက်များ
 features-name = အမည်
 features-version = ဗားရှင်း
@@ -68,8 +71,6 @@ graphics-workarounds-title = ယာယီအစားထိုးဆောင်
 place-database-title = ဒေတာဘေ့စ်ထားရန်
 place-database-integrity = Integrity
 place-database-verify-integrity = Integrity ကို အတည်ပြုရန်
-js-title = JavaScript
-js-incremental-gc = GC တိုးတက်မှု
 a11y-title = ဆက်စပ်ပစ္စည်း
 a11y-activated = လှုပ်ရှားခဲ့ပြီး
 a11y-force-disabled = အသုံးပြုရန် တားဆီးထား
@@ -94,6 +95,7 @@ audio-backend = အသံနောက်ကွယ်
 
 ##
 
+
 ## Remote Debugging
 ##
 ## The Firefox remote protocol provides low-level debugging interfaces
@@ -102,6 +104,7 @@ audio-backend = အသံနောက်ကွယ်
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -186,7 +189,6 @@ unknown-failure = ပိတ်ပင်စာရင်းထဲ ထည့်ထ�
 
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video Decoder
-d3d9video-crash-buard = D3D9 Video Decoder
 d3d9video-crash-guard = D3D9 Video Decoder
 glcontext-crash-guard = OpenGL
 

@@ -210,6 +210,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Näytä kaikki
     .accesskey = N
+cfr-doorhanger-milestone-close-button = Sulje
+    .accesskey = S
 
 ## What’s New Panel Content for Firefox 76
 
@@ -243,3 +245,32 @@ cfr-whatsnew-protections-icon-alt = Kilpikuvake
 
 cfr-whatsnew-better-pdf-header = Parempi PDF-kokemus
 cfr-whatsnew-better-pdf-body = PDF-tiedostot avautuvat nyt suoraan { -brand-short-name(case: "inessive") }, mikä saattaa helpottaa työskentelyäsi.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Yksityisyydelläsi on merkitystä. { -brand-short-name } reitittää nyt DNS-pyynnöt suojatusti, mikäli mahdollista, kumppanipalveluun suojellaksesi sinua, kun selaat verkkoa.
+cfr-doorhanger-doh-header = Turvallisemmat, salatut DNS-haut
+cfr-doorhanger-doh-primary-button = Selvä
+    .accesskey = S
+cfr-doorhanger-doh-secondary-button = Poista käytöstä
+    .accesskey = P
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-header = Sivustojen eristäminen
+cfr-doorhanger-fission-primary-button = Selvä
+    .accesskey = S
+cfr-doorhanger-fission-secondary-button = Lue lisää
+    .accesskey = L
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Automaattinen suojaus ovelalta seurannalta
+cfr-whatsnew-clear-cookies-body = Jotkin seurantamenetelmät ohjaavat sinut uudelleen sivustoille, jotka asettavat evästeitä salaa. { -brand-short-name } poistaa nyt nuo evästeet automaattisesti, jotta sinua ei voida seurata.
+cfr-whatsnew-clear-cookies-image-alt = Kuvituskuva evästeen estämisestä
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Enemmän mediaohjaimia
+cfr-whatsnew-media-keys-body = Toista ja keskeytä ääni tai video suoraan näppäimistöltä tai kuulokkeista. Tämä helpottaa median hallintaa toisessa välilehdessä, ohjelmassa tai jopa silloin, kun tietokoneesi on lukittu. Voit siirtyä kappaleiden välillä myös eteen- ja taakse -näppäimillä.
+cfr-whatsnew-media-keys-button = Lue miten

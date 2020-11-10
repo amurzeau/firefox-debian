@@ -13,15 +13,21 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Eikuaave
-onboarding-button-label-try-now = Eipuru ko’ág̃a
 onboarding-button-label-get-started = Ñepyrũ
 
 ## Welcome modal dialog strings
 
+
+### UI strings for the simplified onboarding / multistage about:welcome
+### Various strings use a non-breaking space to avoid a single dangling /
+### widowed word, so test on various window sizes if you also want this.
+
+
+## Welcome page strings
+
 onboarding-welcome-header = Eg̃uahẽporãite { -brand-short-name }-pe
 onboarding-welcome-body = Eguerekóma kundaha.<br/>Eikuaa opamba’e { -brand-product-name } rehegua.
 onboarding-welcome-learn-more = Eikuaave mba’eporã rehegua.
-onboarding-join-form-header = Ejuaju { -brand-product-name } rehe
 onboarding-welcome-modal-get-body = Erekóma kundahára. <br/>Ko’ág̃a eipurukuaánte { -brand-product-name }.
 onboarding-welcome-modal-supercharge-body = Emyanyhẽrasa ne ñemigua ñemo’ã.
 onboarding-welcome-modal-privacy-body = Erekóma kundahára. Ñamoĩvéta ñemigua ñemo’ã.
@@ -38,6 +44,7 @@ onboarding-join-form-signin-label = ¿Eguerekóma ne mba’ete?
 # Text for link to submit the sign in form
 onboarding-join-form-signin = Eñemboheraguapy
 onboarding-start-browsing-button-label = Eñepyrũ eikundaha
+onboarding-not-now-button-label = Ani ko’ág̃a
 onboarding-cards-dismiss =
     .title = Emboyke
     .aria-label = Emboyke
@@ -66,11 +73,7 @@ onboarding-sync-form-sub-header = eike hag̃ua { -sync-brand-name }-pe.
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Apopyre oikóva
 onboarding-benefit-products-text = Ejapo mba’e tembipuru aty ndive omomba’éva iñemigua opaite imba’e’okápe.
-onboarding-benefit-knowledge-title = Kuaapy jepurukuaa
-onboarding-benefit-knowledge-text = Eikuaa eikotevẽva eime hag̃ua ñandutípe kuaapy ha tekorosãme.
-onboarding-benefit-privacy-title = Ñemigua añetetéva
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -84,6 +87,99 @@ onboarding-benefit-monitor-text = Og̃uahẽta ndéve marandu nemba’etéva mba
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }{ -lockwise-brand-short-name }
 onboarding-benefit-lockwise-text = Eñangareko ñe’ẽñemi oñemo’ãva ha oku’ekuaávare.
 
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = Iporãite, emohendáma { -brand-short-name }
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = Ko’ág̃a roguerekóta <img data-l10n-name="icon"/> <b>{ $addon-name }</b> ndéve g̃uarã.
+return-to-amo-add-extension-label = Embojuaju jepysokue
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Eg̃uahẽporã <span data-l10n-name="zap">{ -brand-short-name }</span>-pe
+onboarding-multistage-welcome-subtitle = Kundahára ipya’e, hekorosã ha hekoñemi oykekóva chupe atyguasu viru’ỹguáva.
+onboarding-multistage-welcome-primary-button-label = Eñepyrũ Ñemboheko
+onboarding-multistage-welcome-secondary-button-label = Mboheraguapy
+onboarding-multistage-welcome-secondary-button-text = ¿Erekópa mba’ete?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = Emba’egueru ñe’ẽñemi, techaukaha ha <span data-l10n-name="zap">hetave</span>
+onboarding-multistage-import-subtitle = ¿Oúpa ambue kundaháragui? Ndahasyiete eguerahapávo { -brand-short-name } ndive.
+onboarding-multistage-import-primary-button-label = Eñepyrũ ñemba’egueru
+onboarding-multistage-import-secondary-button-label = Ani ko’ág̃a
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = Ko’ã tenda ipapapýva ápe ejuhúta ko mba’e’okápe. { -brand-short-name } noñongatúi ha nombojuehéi mba’ekuaarã ambue kundahára pegua nderegueruséirõ.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = Ku’e ñepyrũgua: mba’erechaha { $current } { $total } pegua
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = Eiporavo peteĩva <span data-l10n-name="zap">ma’ẽ</span>
+onboarding-multistage-theme-subtitle = Eñemomba’e { -brand-short-name } peteĩ téma ndive
+onboarding-multistage-theme-primary-button-label = Eñongatu Téma
+onboarding-multistage-theme-secondary-button-label = Ani ko’ág̃a
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = ijeheguietéva
+onboarding-multistage-theme-label-light = Vevúi
+onboarding-multistage-theme-label-dark = Ypytũ
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        Emog̃uahẽ tembiapoite ohehechaháicha
+        apopyvusu votõ, poravorã ha ovetãme g̃uarã.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        Emog̃uahẽ tembiapoite ohehechaháicha
+        apopyvusu votõ, poravorã ha ovetãme g̃uarã.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        Eipuru ojehechaporãva votõ,
+        poravorã ha ovetã.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        Eipuru ojehechaporãva votõ,
+        poravorã ha ovetã.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        Eipuru iñypytũva votõ,
+        poravorã ha ovetã.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        Eipuru iñypytũva votõ,
+        poravorã ha ovetã.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        Eipuru isa’yetáva votõ,
+        poravorã ha ovetã.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        Eipuru isa’yetáva votõ,
+        poravorã ha ovetã.
+
 ## These strings belong to the individual onboarding messages.
 
 
@@ -91,17 +187,6 @@ onboarding-benefit-lockwise-text = Eñangareko ñe’ẽñemi oñemo’ãva ha o
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Kundaha ñemigua
-onboarding-private-browsing-text = Eikundaha ndejeheve. Kundaha ñemigua Tetepy jokoha ndive ojoko umi nde rapykuehóva ñanduti peguáva.
-onboarding-screenshots-title = Mba’erechaha jejapyhy
-onboarding-screenshots-text = Ejapyhy, eñongatu ha emoherakuã mba’erechaha japyhypy – ese’ỹre { -brand-short-name }-gui. Ejapyhy peteĩ tendaguasu térã kuatiarogue tuichaháicha eikundaha jave. Upéi eñongatu ñandutípe eike hag̃ua pya’e ha emoherakuãkuaa hag̃ua.
-onboarding-addons-title = Moimbaha
-onboarding-addons-text = Embojuaju tembiapoiteve emonba’apo hag̃ua { -brand-short-name } ndéve g̃uarã. Emoñondive tepy, ema’ẽ árare térã ehechauka reikuaáva peteĩ téma ñemomba’epyre rupi.
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Eikundaha pya’eve, katupyry ha tekorosãme Ghostery moimbaha ndive ikatúva ojoko maranduñemurã nemoñeko’õiva.
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Mbojuehe
-onboarding-fxa-text = Eñemboheraguapy eguereko hag̃ua { -fxaccount-brand-name } ha embojuehe nde rechaukaha, ñe’ẽñemi ha tendayke ijurujáva eipuruhápe { -brand-short-name }.
 onboarding-tracking-protection-title2 = Ñemo’ã jehapykueho rovake
 onboarding-tracking-protection-text2 = { -brand-short-name } oipytyvõ omboykévo umi tenda nde rapykuehóva ñandutípe, asyve hag̃uáicha umi maranduñemurã nde rapykuehóvo eikundaha jave.
 onboarding-tracking-protection-button2 = Mba’éichapa omba’apo
@@ -110,7 +195,6 @@ onboarding-data-sync-title = Egueraha ne mbohekopyahu nendive
 onboarding-data-sync-text2 = Embojuehe nde rechaukaha, ñe’ẽñemi ha hetave eipurúvo { -brand-product-name } oimehápe.
 onboarding-data-sync-button2 = Emoñepyrũ tembiapo { -sync-brand-short-name } ndive
 onboarding-firefox-monitor-title = Ema’ẽ tapiáke mba’ekuaarã ñembogua rehe
-onboarding-firefox-monitor-text = { -monitor-brand-name } ohechajey ne ñandutiveve kundaharape osẽpa peteĩ mba’ekuaarã ñemboguapyre ha he’i ndéve osẽjeýramo.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } ohecha ne ñanduti vevépa oĩ peteĩ mba’ekuaarã ojekuaáva ñembyaípe ha ohechauka oĩtaramo ñembyai ipyahúva.
 onboarding-firefox-monitor-button = Eñemboheraguapy og̃uahẽ hag̃ua ndéve kehyjerã
 onboarding-browse-privately-title = Eikundaha ñemi
@@ -127,17 +211,11 @@ onboarding-mobile-phone-button = Emboguejy kundaha pumbyrygua
 onboarding-send-tabs-title = Emondo tendayke ko’ag̃aite
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Send Tabs omoherakuã kuatiarogue ne mba’e’oka ndive omonguatia’ỹre, mboja ha osẽ’ỹre avei kundaháragui.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Emoherakuã kuatiarogue ne mba’e’okakuéra ndive ehai’ỹre juajuha térã emboty’ỹre kundaha.
 onboarding-send-tabs-button = Eipurúkatu Send Tabs
 onboarding-pocket-anywhere-title = Emoñe’ẽ ha ehendu opa hendápe
 onboarding-pocket-anywhere-text2 = Eñongatu pe tetepy eguerohoryvéva ñanduti’ỹre tembipuru’i rupive { -pocket-brand-name } ha emoñe’ẽ, ehendu térã ehecha ehechase vove.
 onboarding-pocket-anywhere-button = Eipuru { -pocket-brand-name }
-onboarding-lockwise-passwords-title = Egueraha ne ñe’ẽñemi opa hendápe
-onboarding-lockwise-passwords-text2 = Emohekorosã ne ñe’ẽñemi eñongatúva ha emoñepyrũ tembiapo hasy’ỹ hag̃uáicha ne mba’ete { -lockwise-brand-name } ndive.
-onboarding-lockwise-passwords-button2 = Eguerekóke tembipuru’i
 onboarding-lockwise-strong-passwords-title = Emoheñói ha embyaty ñe’ẽñemi hekorosãva
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } emoheñói ñe’ẽñemi hekorosãva ha eñongatu peteĩ hendápe añoite.
 onboarding-lockwise-strong-passwords-button = Eñangareko ne rembiapo ñepyrũre

@@ -34,6 +34,9 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = Változtatások mentése
     .accesskey = V
+permission-dialog =
+    .buttonlabelaccept = Változtatások mentése
+    .buttonaccesskeyaccept = V
 permissions-autoplay-menu = Alapértelmezés az összes webhelyhez:
 permissions-searchbox =
     .placeholder = Weboldal keresése
@@ -63,10 +66,6 @@ permissions-invalid-uri-label = Írjon be egy érvényes gépnevet.
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-content-blocking-window =
-    .title = Kivételek – Tartalomblokkolás
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Letiltotta a tartalomblokkolást ezeken az oldalakon.
 permissions-exceptions-etp-window =
     .title = Kivételek a fokozott követés elleni védelemhez
     .style = { permissions-window.style }
@@ -99,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Engedélyezett webhelyek – Kiegészítők telepítése
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Megadhatja azokat a webhelyeket, amelyekről engedélyezett a kiegészítők telepítése. Írja be a kezelni kívánt webhely pontos nevét, majd kattintson az Engedélyezés gombra.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Kivételek – Automatikus lejátszás
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Megadhatja azokat a webhelyeket, amelyek mindig vagy sohasem játszhatnak le automatikusan médiát hanggal. Írja be a kezelni kívánt webhely pontos nevét, majd kattintson a Tiltás vagy Engedélyezés gombok egyikére.
 
 ## Site Permissions - Autoplay
 

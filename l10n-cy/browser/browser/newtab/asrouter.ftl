@@ -231,6 +231,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Gweld y Cyfan
     .accesskey = G
+cfr-doorhanger-milestone-close-button = Cau
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -264,3 +266,35 @@ cfr-whatsnew-protections-icon-alt = Eicon tarian
 
 cfr-whatsnew-better-pdf-header = Gwell profiad PDF
 cfr-whatsnew-better-pdf-body = Mae dogfennau PDF nawr yn agor yn uniongyrchol yn { -brand-short-name }, gan gadw'ch llif gwaith o fewn cyrraedd.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Mae eich preifatrwydd yn bwysig. Mae { -brand-short-name } bellach yn cyfeirio eich ceisiadau DNS yn ddiogel pryd bynnag y bo modd at wasanaeth partner i'ch diogelu wrth i chi bori.
+cfr-doorhanger-doh-header = Chwilio DNS mwy diogel, wedi'u hamgryptio
+cfr-doorhanger-doh-primary-button = Iawn, Wedi deall!
+    .accesskey = I
+cfr-doorhanger-doh-secondary-button = Analluogi
+    .accesskey = A
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Mae eich preifatrwydd yn bwysig. Erbyn hyn mae { -brand-short-name } yn ynysu, neu'n creu blychau tywod er mwyn cadw gwefannau oddi wrth ei gilydd, sy'n ei gwneud hi'n anoddach i hacwyr ddwyn cyfrineiriau, rhifau cardiau credyd, a manylion sensitif arall, oddi arnoch.
+cfr-doorhanger-fission-header = Ynysu Gwefan
+cfr-doorhanger-fission-primary-button = Iawn, Wedi deall!
+    .accesskey = I
+cfr-doorhanger-fission-secondary-button = Dysgu rhagor
+    .accesskey = D
+# Deprecated
+cfr-doorhanger-fission-body = Mae { -brand-short-name } wedi galluogi nodwedd arbrofol Fission (ynysu safle) ar eich cyfer. Trwy ynysu pob gwefan i broses ar wahân, mae Fission yn darparu haen ychwanegol o ddiogelwch i chi a'r gwefannau rydych yn ymweld â nhw.
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Diogelwch awtomatig rhag tactegau tracio slei
+cfr-whatsnew-clear-cookies-body = Mae rhai tracwyr yn eich ailgyfeirio i wefannau eraill sy'n gosod cwcis yn gyfrinachol. Mae { -brand-short-name } bellach yn clirio'r cwcis hynny yn awtomatig fel nad oes modd eich dilyn.
+cfr-whatsnew-clear-cookies-image-alt = Llun wedi'i rwystro gan gwci
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Rhagor o reoli cyfryngau
+cfr-whatsnew-media-keys-body = Chwarae ac oedi sain neu fideo yn syth o'ch bysellfwrdd neu'ch clustffon, gan ei gwneud hi'n hawdd rheoli cyfryngau o dab, rhaglen arall, neu hyd yn oed pan fydd eich cyfrifiadur wedi'i gloi. Gallwch hefyd symud rhwng traciau gan ddefnyddio'r bysellau ymlaen ac yn ôl.
+cfr-whatsnew-media-keys-button = Dysgu sut

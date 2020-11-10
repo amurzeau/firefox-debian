@@ -80,6 +80,12 @@ cert-error-details-key-pinning-label = Fixarea cheii publice HTTP: { $hasHPKP }
 
 cert-error-details-cert-chain-label = Lanț de certificate:
 
+open-in-new-window-for-csp-or-xfo-error = Deschide site-ul într-o fereastră nouă
+
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = Pentru a-ți proteja securitatea, { $hostname } nu va permite { -brand-short-name } să afișeze pagina dacă a fost încorporată de alt site. Pentru a vedea această pagină, trebuie să o deschizi într-o fereastră nouă.
+
 ## Messages used for certificate error titles
 
 connectionFailure-title = Nu se poate conecta
@@ -107,8 +113,7 @@ proxyResolveFailure-title = Nu se poate găsi serverul proxy
 redirectLoop-title = Pagina nu redirecționează corect
 unknownSocketType-title = Răspuns neașteptat de la server
 nssFailure2-title = Conexiunea securizată a eșuat
-cspBlocked-title = Blocat de politica de securitate asupra conținutului
-xfoBlocked-title = Blocată de politica de opțiuni X-Frame
+csp-xfo-error-title = { -brand-short-name } nu poate deschide această pagină
 corruptedContentError-title = Eroare cauzată de conținut corupt
 remoteXUL-title = XUL la distanță
 sslv3Used-title = Nu se poate conecta în mod securizat

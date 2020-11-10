@@ -19,12 +19,11 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Privat nettlesing)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Privat nettlesing)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Privat nettlesing)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Privat nettlesing)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -111,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Tast mindre, finn meir: Søk med { $engineName } rett frå adresselinja.
 urlbar-search-tips-redirect-2 = Start søket ditt i adressefeltet for å sjå forslag frå { $engineName } og nettleserhistorikken din.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Vel denne snarvegen for å finne det du treng raskare.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Bokmerke
+urlbar-search-mode-tabs = Faner
+urlbar-search-mode-history = Historikk
 
 ##
 
@@ -138,12 +145,10 @@ urlbar-midi-blocked =
     .tooltiptext = Du har blokkert MIDI-tilgang for denne nettsida.
 urlbar-install-blocked =
     .tooltiptext = Du har blokkert installasjon av utvidingar for denne nettstaden.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Rediger dette bokmerket ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -160,6 +165,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Fjern utviding
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Send fane til eining
+           *[other] Send { $tabCount } faner til eining
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Send fane til eining
+           *[other] Send { $tabCount } faner til eining
+        }
+page-action-pocket-panel =
+    .label = Lagre sida til { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Kopier lenke
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopier lenke
+page-action-email-link-panel =
+    .label = Send lenke på e-post…
+page-action-email-link-urlbar =
+    .tooltiptext = Send lenke på e-post…
+page-action-share-url-panel =
+    .label = Del
+page-action-share-url-urlbar =
+    .tooltiptext = Del
+page-action-share-more-panel =
+    .label = Meir…
+page-action-send-tab-not-ready =
+    .label = Synkroniserer einingar…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Fest fane
+page-action-pin-tab-urlbar =
+    .tooltiptext = Fest fane
+page-action-unpin-tab-panel =
+    .label = Løys fane
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Løys fane
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -171,17 +223,15 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Søk ein gong med:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Endre søkjeinnstillingar
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Endre søkjeinnstillingar
-
 search-one-offs-context-open-new-tab =
     .label = Søk i ny fane
     .accesskey = ø
@@ -191,16 +241,34 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Vel som standard søkjemotor for private vindauge
     .accesskey = p
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Bokmerke ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Faner ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Historikk ({ $restrict })
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Vis redigerar ved lagring
     .accesskey = V
-
 bookmark-panel-done-button =
     .label = Ferdig
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -209,25 +277,36 @@ bookmark-panel =
 
 ## Identity Panel
 
-identity-connection-not-secure = Tilkoplinga er ikkje sikker
-identity-connection-secure = Tilkoplinga er sikker
+identity-connection-not-secure = Tilkoplinga er ikkje trygg
+identity-connection-secure = Tilkoplinga er trygg
 identity-connection-internal = Dette er ei sikker { -brand-short-name }-side.
 identity-connection-file = Denne sida er lagra på datamaskina di.
 identity-extension-page = Denne sida er lasta frå ei utviding.
-identity-active-blocked = { -brand-short-name } har blokkert delar av denne sida som ikkje er sikre.
+identity-active-blocked = { -brand-short-name } har blokkert delar av denne sida som ikkje er trygge.
 identity-custom-root = Tilkoplinga vart stadfesta av ein sertifikatutskrivar som Mozilla ikkje kjenner.
 identity-passive-loaded = Delar av denne sida er ikkje trygg (til dømes bilde).
 identity-active-loaded = Du har slått av vern på denne sida.
 identity-weak-encryption = Denne sida brukar ei svak kryptering.
 identity-insecure-login-forms = Innloggingsinfo skrive inn på denne sida kan lesast av tredjepart.
+identity-https-only-connection-upgraded = (oppgradert til HTTPS)
+identity-https-only-label = Berre-HTTPS-modus
+identity-https-only-dropdown-on =
+    .label = På
+identity-https-only-dropdown-off =
+    .label = Av
+identity-https-only-dropdown-off-temporarily =
+    .label = Mellombels av
+identity-https-only-info-turn-on2 = Slå på berre-HTTPS-modus for denne nettstaden dersom du vil at { -brand-short-name } skal oppgradere til ei trygg tilkopling når det er råd.
+identity-https-only-info-turn-off2 = Dersom nettsida verkar øydelagd, kan det vere lurt å slå av berre-HTTPS-modus for denne nettstadent for å laste inn på nytt ved hjelp av utrygg HTTP.
+identity-https-only-info-no-upgrade = Klarte ikkje å oppgradere kopling frå HTTP.
 identity-permissions =
     .value = Løyve
 identity-permissions-reload-hint = Du må kanskje laste sida på nytt for at endringane skal gjelde.
 identity-permissions-empty = Du har ikkje gjeve denne nettstaden spesielle løyve.
 identity-clear-site-data =
     .label = Slett infokapslar og nettstaddata…
-identity-connection-not-secure-security-view = Du er ikkje sikkert kopla til denne nettstaden.
-identity-connection-verified = Du er sikkert kopla til denne nettstaden.
+identity-connection-not-secure-security-view = Du er ikkje trygt kopla til denne nettstaden.
+identity-connection-verified = Du er trygt kopla til denne nettstaden.
 identity-ev-owner-label = Sertifikat skrive ut til:
 identity-description-custom-root = Mozilla kjenner ikkje att utskrivaren av dette sertifikatet. Det kan ha blitt lagt til av operativsystemet ditt, eller av ein administrator. <label data-l10n-name="link">Les meir</label>
 identity-remove-cert-exception =
@@ -241,7 +320,7 @@ identity-description-active-blocked = { -brand-short-name } har blokkert delar a
 identity-description-passive-loaded = Sambandet til denne nettstaden er ikkje privat og informasjon du deler med denne sida kan sjåast av andre.
 identity-description-passive-loaded-insecure = Denne nettsida har innhald som ikkje er trygt (t.d. bilde). <label data-l10n-name="link">Les meir</label>
 identity-description-passive-loaded-mixed = Sjølv om { -brand-short-name } har blokkert noko innhald, finst det framleis innhald på sida som ikkje er trygt (slik som bilde). <label data-l10n-name="link">Les meir</label>
-identity-description-active-loaded = Denne nettstaden har innhald som ikkje er overført sikkert (slik som skript) og tilkoplinga di er difor ikkje privat.
+identity-description-active-loaded = Denne nettstaden har innhald som ikkje er overført trygt (slik som skript) og tilkoplinga di er difor ikkje privat.
 identity-description-active-loaded-insecure = Informasjonen du deler med denne nettstaden kan sjåast av andre (t.d. passords, meldingar, kredittkort osb.).
 identity-learn-more =
     .value = Les meir
@@ -265,6 +344,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Lat att
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Importer bokmerke…
+    .tooltiptext = Kopier bokmerke frå ein annan nettlesar til { -brand-short-name }.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -274,15 +359,12 @@ popup-select-microphone =
     .value = Mikrofon som vert delt:
     .accesskey = M
 popup-all-windows-shared = Alle synlege vindauge på skjermen vil bli delte.
-
 popup-screen-sharing-not-now =
     .label = Ikkje no
     .accesskey = n
-
 popup-screen-sharing-never =
     .label = Tillat aldri
     .accesskey = a
-
 popup-silence-notifications-checkbox = Deaktiver varsel frå { -brand-short-name } medan du deler
 popup-silence-notifications-checkbox-warning = { -brand-short-name } vil ikkje vise varsel medan du deler.
 
@@ -299,27 +381,122 @@ sharing-warning-disable-for-session =
 
 enable-devtools-popup-description = For å bruke F12-snarvegen, må du først opne DevTools via menyen for Nettsideutvikling
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Søk eller skriv inn ei adresse
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Søk eller skriv inn ei adresse
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Søk på nettet
+    .aria-label = Søk med { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Skriv inn søketekst
+    .aria-label = Søk { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Skriv inn søketekst
+    .aria-label = Søk i bokmerke
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Skriv inn søketekst
+    .aria-label = Søk i historikk
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Skriv inn søketekst
+    .aria-label = Søk i faner
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Søk med { $name } eller skriv inn adresse
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Nettlesaren er under fjernstyring
 urlbar-permissions-granted =
     .tooltiptext = Du har gjeve denne nettstaden ytterlegare løyve.
 urlbar-switch-to-tab =
     .value = Byt til fane:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Utviding:
-
 urlbar-go-button =
     .tooltiptext = Gå til adressa i adresselinja
 urlbar-page-action-button =
     .tooltiptext = Sidehandlingar
 urlbar-pocket-button =
     .tooltiptext = Lagre til { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Søk med { $engine } i eit privat vindauge
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Søk i eit privat vindauge
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Søk med { $engine }
+urlbar-result-action-sponsored = Sponsa
+urlbar-result-action-switch-tab = Byt til fane
+urlbar-result-action-visit = Besøk
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Trykk på tab for å søkje med { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Trykk på tab for å søkje { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Søk med { $engine } direket frå adresselinja
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Søk i { $engine } direkte frå adresselinja
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Søk i bokmerke
+urlbar-result-action-search-history = Søk i historikk
+urlbar-result-action-search-tabs = Søk i faner
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> er no i fullskjerm
+fullscreen-warning-no-domain = Dette dokumentet er no i fullskjerm
+fullscreen-exit-button = Avslutt fullskjerm (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Avslutt fullskjerm (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> har kontroll over peikaren din. Trykk Esc for å ta tilbake kontrollen.
+pointerlock-warning-no-domain = Dette dokumentet har kontroll over musepeikaren. Trykk på Esc for å ta tilbake kontrollen.

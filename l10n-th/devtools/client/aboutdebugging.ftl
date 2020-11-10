@@ -104,9 +104,6 @@ about-debugging-setup-title = ตั้งค่า
 about-debugging-setup-intro = กำหนดค่าวิธีการเชื่อมต่อที่คุณต้องการดีบั๊กอุปกรณ์ของคุณจากระยะไกล
 
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox = ใช้ <a>{ about-debugging-this-firefox-runtime-name }</a> เพื่อดีบั๊กแท็บ, ส่วนขยายและตัวทำงานบริการบน { -brand-shorter-name } รุ่นนี้
-
-# Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox2 = ใช้ <a>{ about-debugging-this-firefox-runtime-name }</a> เพื่อดีบั๊กส่วนขยายและตัวทำงานบริการบน { -brand-shorter-name } รุ่นนี้
 
 # Title of the heading Connect section of the Setup page.
@@ -226,14 +223,6 @@ about-debugging-runtime-service-workers-not-compatible = การกำหน�
 about-debugging-browser-version-too-old = เบราว์เซอร์ที่เชื่อมต่อมีรุ่นเก่า ({ $runtimeVersion }) รุ่นที่รองรับขั้นต่ำคือ ({ $minVersion }) นี่เป็นการตั้งค่าที่ไม่รองรับและอาจทำให้ DevTools ล้มเหลว โปรดอัปเดตเบราว์เซอร์ที่เชื่อมต่อ <a>การแก้ไขปัญหา</a>
 
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# - from Fx 67 to 66 or to 65
-# - from Fx 68 to 66
-# Those are normally in range for DevTools compatibility policy, but specific non
-# backward compatible changes broke the debugger in those scenarios (Bug 1528219).
-# { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-about-debugging-browser-version-too-old-67-debugger = แผงตัวดีบั๊กอาจไม่ทำงานกับเบราว์เซอร์ที่เชื่อมต่อ โปรดใช้ Firefox { $runtimeVersion } หากคุณต้องการใช้ตัวดีบั๊กกับเบราว์เซอร์นี้
-
-# Dedicated message for a backward compatibility issue that occurs when connecting:
 # from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
 about-debugging-browser-version-too-old-fennec = Firefox รุ่นนี้ไม่สามารถดีบั๊ก Firefox สำหรับ Android (68) ได้ เราแนะนำให้ติดตั้ง Firefox สำหรับ Android Nightly บนโทรศัพท์ของคุณเพื่อทำการทดสอบ <a>รายละเอียดเพิ่มเติม</a>
 
@@ -327,15 +316,6 @@ about-debugging-extension-id =
 
 # This string is displayed as a label of the button that pushes a test payload
 # to a service worker.
-# Notes, this relates to the "Push" API, which is normally not localized so it is
-# probably better to not localize it.
-about-debugging-worker-action-push = ผลัก
-
-# This string is displayed as a label of the button that starts a service worker.
-about-debugging-worker-action-start = เริ่ม
-
-# This string is displayed as a label of the button that pushes a test payload
-# to a service worker.
 # Note this relates to the "Push" API, which is normally not localized so it is
 # probably better to not localize it.
 about-debugging-worker-action-push2 = ผลัก
@@ -380,6 +360,10 @@ about-debugging-worker-push-service =
 # Displayed as title of the inspect button when service worker debugging is disabled.
 about-debugging-worker-inspect-action-disabled =
     .title = การตรวจสอบตัวทำงานบริการถูกปิดใช้งานอยู่สำหรับ { -brand-shorter-name } แบบหลายกระบวนการในขณะนี้
+
+# Displayed as title of the inspect button for zombie tabs (e.g. tabs loaded via a session restore).
+about-debugging-zombie-tab-inspect-action-disabled =
+    .title = แท็บยังไม่ได้โหลดอย่างเต็มที่และไม่สามารถตรวจสอบได้
 
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.

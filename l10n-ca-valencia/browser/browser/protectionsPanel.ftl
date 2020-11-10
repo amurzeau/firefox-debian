@@ -10,6 +10,12 @@ protections-panel-sitefixedsendreport-label = El lloc ja funciona? Envieu un inf
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
 
+protections-popup-footer-protection-label-strict = Estricta
+    .label = Estricta
+protections-popup-footer-protection-label-custom = Personalitzada
+    .label = Personalitzada
+protections-popup-footer-protection-label-standard = Estàndard
+    .label = Estàndard
 
 ##
 
@@ -57,7 +63,8 @@ protections-panel-not-found-label = Cap detectat
 ##
 
 protections-panel-settings-label = Paràmetres de protecció
-protections-panel-showreport-label = Mostra l'informe
+# This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
+protections-panel-protectionsdashboard-label = Tauler de proteccions
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

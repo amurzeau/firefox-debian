@@ -5,66 +5,53 @@
 permissions-window =
     .title = 例外
     .style = width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = 网站地址
     .accesskey = d
-
 permissions-block =
     .label = 阻止
     .accesskey = B
-
 permissions-session =
     .label = 在这次浏览期间允许
     .accesskey = S
-
 permissions-allow =
     .label = 允许
     .accesskey = A
-
 permissions-site-name =
     .label = 网站
-
 permissions-status =
     .label = 状态
-
 permissions-remove =
     .label = 移除网站
     .accesskey = R
-
 permissions-remove-all =
     .label = 移除全部网站
     .accesskey = e
-
 permissions-button-cancel =
     .label = 取消
     .accesskey = C
-
 permissions-button-ok =
     .label = 保存更改
     .accesskey = S
-
+permission-dialog =
+    .buttonlabelaccept = 保存更改
+    .buttonaccesskeyaccept = S
 permissions-autoplay-menu = 所有网站的默认值：
-
 permissions-searchbox =
     .placeholder = 搜索网站
-
 permissions-capabilities-autoplay-allow =
     .label = 允许音频和视频
 permissions-capabilities-autoplay-block =
     .label = 阻止音频
 permissions-capabilities-autoplay-blockall =
     .label = 阻止音频和视频
-
 permissions-capabilities-allow =
     .label = 允许
 permissions-capabilities-block =
     .label = 阻止
 permissions-capabilities-prompt =
     .label = 每次都问我
-
 permissions-capabilities-listitem-allow =
     .value = 允许
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = 输入了非法的主机名
 permissions-invalid-uri-label = 请输入合法的主机名
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = 例外 - 内容拦截
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = 您在这些网站上已禁用内容拦截。
 
 permissions-exceptions-etp-window =
     .title = 例外 - 增强型跟踪保护
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = 有特殊权限的网站 - 附加组件安装
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = 您可以指定哪些网站可以安装附加组件。请输入所要指定的完整网址，然后点击“允许”。
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = 例外 - 自动播放
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = 您可以指定一律允许或不允许哪些网站自动播放有声媒体内容。请输入所要指定的完整网址，然后点击“阻止”或者“允许”。
 
 ## Site Permissions - Autoplay
 

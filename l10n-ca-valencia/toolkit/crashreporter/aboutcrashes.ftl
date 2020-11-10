@@ -8,10 +8,9 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 crash-reports-title = Informes de fallada
-
 submit-all-button-label = Envia-ho tot
 delete-button-label = Esborra-ho tot
-delete-confirm-title = N'esteu segur?
+delete-confirm-title = Segur?
 delete-unsubmitted-description = Se suprimiran tots els informes de fallada pendents d'enviar i és una acció que no pot desfer-se.
 delete-submitted-description = S'eliminarà llista d'informes de fallada enviats, però no suprimirà les dades enviades. Esta acció no es pot desfer.
 

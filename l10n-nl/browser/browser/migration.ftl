@@ -53,6 +53,9 @@ no-migration-sources = Er zijn geen programma’s gevonden die bladwijzers, gesc
 import-source-page-title = Instellingen en gegevens importeren
 import-items-page-title = Te importeren items
 import-items-description = Selecteer de te importeren items:
+import-permissions-page-title = Geef { -brand-short-name } toestemmingen
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = In macOS dient u { -brand-short-name } expliciet toegang te geven tot de bladwijzers van Safari. Klik op ‘Doorgaan’ en selecteer in het getoonde paneel Bestand openen het bestand ‘Bookmarks.plist’.
 import-migrating-page-title = Importeren…
 import-migrating-description = De volgende items worden momenteel geïmporteerd…
 import-select-profile-page-title = Profiel selecteren
@@ -88,6 +91,7 @@ imported-edge-reading-list = Leeslijst (uit Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

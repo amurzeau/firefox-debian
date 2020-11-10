@@ -14,3 +14,9 @@ pictureinpicture-mute =
 pictureinpicture-unmute =
     .aria-label = Restaurar son
 
+pictureinpicture-unpip =
+    .aria-label = Reninviar a la pestanya
+
+pictureinpicture-close =
+    .aria-label = Zarrar
+

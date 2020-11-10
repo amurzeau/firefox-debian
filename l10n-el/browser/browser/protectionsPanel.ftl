@@ -9,12 +9,12 @@ protections-panel-sitefixedsendreport-label = Η ιστοσελίδα διορθ
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
 
-protections-popup-footer-protection-label-strict = Αυστηρό
-    .label = Αυστηρό
-protections-popup-footer-protection-label-custom = Προσαρμοσμένο
-    .label = Προσαρμοσμένο
-protections-popup-footer-protection-label-standard = Τυπικό
-    .label = Τυπικό
+protections-popup-footer-protection-label-strict = Αυστηρή
+    .label = Αυστηρή
+protections-popup-footer-protection-label-custom = Προσαρμοσμένη
+    .label = Προσαρμοσμένη
+protections-popup-footer-protection-label-standard = Τυπική
+    .label = Τυπική
 
 ##
 
@@ -57,7 +57,6 @@ protections-panel-not-found-label = Δεν εντοπίστηκε κανένα
 ##
 
 protections-panel-settings-label = Ρυθμίσεις προστασίας
-protections-panel-showreport-label = Εμφάνιση αναφοράς
 # This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
 protections-panel-protectionsdashboard-label = Πίνακας προστασίας
 

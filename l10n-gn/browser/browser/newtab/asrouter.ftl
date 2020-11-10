@@ -206,6 +206,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Hechapa
     .accesskey = H
+cfr-doorhanger-milestone-close-button = Mboty
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -239,3 +241,33 @@ cfr-whatsnew-protections-icon-alt = Jokoha ra’ãngachu’i
 
 cfr-whatsnew-better-pdf-header = Tembiapo porãve PDF-pe
 cfr-whatsnew-better-pdf-body = Kuatiakuéra PDF ko’ág̃a ijurujáma { -brand-short-name }-pe, péicha oreko hembiapo opavave ohupyty hag̃uáicha.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Ne ñemigua tuichamba’e. { -brand-short-name } ombohape tekorosãme umi ne mba’ejerure DNS ikatu vove peteĩ mba’epuru oñembyatýva nemo’ã hag̃ua eikundaha aja.
+cfr-doorhanger-doh-header = Jehekapy DNS hekorosã ha ipapapýva
+cfr-doorhanger-doh-primary-button = OK, Aikumbýma
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Pe’a
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Ne ñemigua romomba’e. { -brand-short-name } ko’ág̃a omoha’eño ñanduti renda peteĩva ambu’egui, ombohasyvéva umi mba’evaiapohápe omondávo ne ñe’ẽñemi, kuatia’atã ñemurã papapy ha ambue marandu ehayhúva.
+cfr-doorhanger-fission-header = Tenda ñemoha’eño
+cfr-doorhanger-fission-primary-button = OK, arekóma
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Kuaave
+    .accesskey = L
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Ñemo’ã ijeheguíva tapykuehoha kañyguáva rovake
+cfr-whatsnew-clear-cookies-body = Oĩ tapykuehoha omondóva ambue ñanduti rendápe ombohekóva kookie kañyhápe. { -brand-short-name } ko’ág̃a ombogue ijehegui umi kookie ani hag̃ua nde rapykueho.
+cfr-whatsnew-clear-cookies-image-alt = Kookie jokopyre ñemoha’ãnga
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Hekoetáva ñema’ẽag̃uive
+cfr-whatsnew-media-keys-body = Emboheta ha emombyta mba’epu térã ta’ãngamýi tairenda térã ñehenduha guive ema’ẽag̃ui hag̃ua ambue tendayke guive, apopyrã térã ne mohendaha ojejokóramo jepe. Oku’ekuaa jeguataha mbytépe oipurúvo jehaiha tenonde ha jeguevigua.
+cfr-whatsnew-media-keys-button = Jekuaa pyahu

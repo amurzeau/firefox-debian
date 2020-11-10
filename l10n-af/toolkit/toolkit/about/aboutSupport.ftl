@@ -15,6 +15,9 @@ extensions-name = Naam
 extensions-enabled = Geaktiveer
 extensions-version = Weergawe
 extensions-id = ID
+support-addons-name = Naam
+support-addons-version = Weergawe
+support-addons-id = ID
 features-name = Naam
 features-version = Weergawe
 features-id = ID
@@ -55,7 +58,6 @@ graphics-features-title = Eienskappe
 place-database-title = Plekkedatabasis
 place-database-integrity = Integriteit
 place-database-verify-integrity = Verifieer integriteit
-js-title = JavaScript
 a11y-title = Toeganklikheid
 a11y-activated = Geaktiveer
 a11y-force-disabled = Voorkom toeganklikheid
@@ -68,7 +70,9 @@ restart-in-safe-mode-label = Herbegin met byvoegings gedeaktiveer…
 
 ## Media titles
 
+
 ##
+
 
 ## Remote Debugging
 ##
@@ -78,6 +82,7 @@ restart-in-safe-mode-label = Herbegin met byvoegings gedeaktiveer…
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 

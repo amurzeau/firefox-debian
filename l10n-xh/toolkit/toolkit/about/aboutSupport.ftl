@@ -15,6 +15,9 @@ extensions-name = Igama
 extensions-enabled = Ezivunyelweyo
 extensions-version = Uguqulelo
 extensions-id = ID
+support-addons-name = Igama
+support-addons-version = Uguqulelo
+support-addons-id = ID
 app-basics-title = Iziseko zeaplikheshini
 app-basics-name = Igama
 app-basics-version = Uguqulelo
@@ -63,8 +66,6 @@ graphics-workarounds-title = Ukusebenza
 place-database-title = Ibeka Oovimba
 place-database-integrity = Intembeko
 place-database-verify-integrity = Qinisekisa Intembeko
-js-title = I-JavaScript
-js-incremental-gc = I-GC eyandayo
 a11y-title = Ufikeleleko
 a11y-activated = Ihlaziyiwe
 a11y-force-disabled = Thintela ufikelelo
@@ -81,6 +82,7 @@ audio-backend = I-Audio Backend
 
 ##
 
+
 ## Remote Debugging
 ##
 ## The Firefox remote protocol provides low-level debugging interfaces
@@ -89,6 +91,7 @@ audio-backend = I-Audio Backend
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -180,7 +183,6 @@ unknown-failure = Ibhlokiwe, ikhowudi yokusilela { $failureCode }
 
 d3d11layers-crash-guard = D3D11 Umyili
 d3d11video-crash-guard = I-D3D11 Video Decoder
-d3d9video-crash-buard = I-D3D9 Video Decoder
 d3d9video-crash-guard = I-D3D9 Video Decoder
 glcontext-crash-guard = I-OpenGL
 

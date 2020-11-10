@@ -2,6 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
+# This file gets parsed into a JS dictionary of all known error message ids in
+# gen_aboutneterror_codes.py . If we end up needing fluent attributes or
+# refactoring them in some way, the script will need updating.
+
 # Variables:
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
@@ -11,8 +16,8 @@ ssl-connection-error = Degouezhet ez eus bet ur fazi e-pad ma oa o kennaskañ ou
 # $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix = Boneg fazi: { $error }
 
-psmerr-ssl-disabled = N'haller ket kennaskañ diarvar rak diweredekaet eo bet ar c'homenad SSL.
-psmerr-ssl2-disabled = N'haller ket kennaskañ diarvar rak ur c'homenad mod SSL kozh hag arvarus a arver al lec'hienn.
+psmerr-ssl-disabled = Ne c'haller ket kennaskañ diarvar rak diweredekaet eo bet ar c'homenad SSL.
+psmerr-ssl2-disabled = Ne c'haller ket kennaskañ diarvar rak ur c'homenad mod SSL kozh hag arvarus a arver al lec'hienn.
 
 # This is a multi-line message.
 psmerr-hostreusedissuerandserial =
@@ -38,8 +43,8 @@ ssl-error-bad-mac-alert = Danevellet ez eus bet ur rineg dilesa eus ur gemennade
 ssl-error-bad-cert-alert = Ar par SSL n'eo ket evit gwiriañ ho testeni.
 ssl-error-revoked-cert-alert = Distaolet eo bet ho testeni gant SSL evel ma oa tennet kuit.
 ssl-error-expired-cert-alert = Distaolet eo bet ho testeni gant ar par SSL evel ma oa diamzeret.
-ssl-error-ssl-disabled = N'haller ket kennaskañ : diweredekaet eo SSL.
-ssl-error-fortezza-pqg = N'haller ket kennaskañ : emañ par SSL en un domani FORTEZZA all.
+ssl-error-ssl-disabled = Ne c'haller ket kennaskañ : diweredekaet eo SSL.
+ssl-error-fortezza-pqg = Ne c'haller ket kennaskañ : emañ par SSL en un domani FORTEZZA all.
 ssl-error-unknown-cipher-suite = Azgoulennet ez eus bet un hedad sifroù SSL dianav.
 ssl-error-no-ciphers-supported = N'eus hedad sifroù ebet bezant ha gweredekaet er goulev-mañ.
 ssl-error-bad-block-padding = Degemeret ez eus bet gant SSL ur varilhadenn gant ul leuniadur fall eus ur bloc'had.

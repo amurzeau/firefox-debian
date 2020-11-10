@@ -1,11 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = ข้อมูลการเข้าสู่ระบบและรหัสผ่าน
@@ -32,7 +27,8 @@ menu =
     .title = เปิดเมนู
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = นำเข้าจากเบราว์เซอร์อื่น…
-about-logins-menu-menuitem-export-logins = ส่งออกข้อมูลการเข้าสู่ระบบ ...
+about-logins-menu-menuitem-import-from-a-file = นำเข้าจากไฟล์…
+about-logins-menu-menuitem-export-logins = ส่งออกข้อมูลการเข้าสู่ระบบ…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] ตัวเลือก
@@ -70,13 +66,15 @@ about-logins-list-item-vulnerable-password-icon =
 
 ## Introduction screen
 
-login-intro-heading = กำลังมองหาข้อมูลการเข้าสู่ระบบที่บันทึกไว้ของคุณ? ตั้งค่า { -sync-brand-short-name }
+login-intro-heading = กำลังมองหาข้อมูลการเข้าสู่ระบบที่บันทึกไว้ของคุณหรือไม่? ตั้งค่า { -sync-brand-short-name }
+about-logins-login-intro-heading-logged-out = กำลังมองหาข้อมูลการเข้าสู่ระบบที่บันทึกไว้ของคุณหรือไม่? ตั้งค่า { -sync-brand-short-name } หรือนำเข้า
 about-logins-login-intro-heading-logged-in = ไม่พบข้อมูลการเข้าสู่ระบบที่ซิงค์
 login-intro-description = หากคุณบันทึกข้อมูลการเข้าสู่ระบบของคุณไว้ที่ { -brand-product-name } บนอุปกรณ์อื่น ๆ คุณสามารถนำมาใช้บนอุปกรณ์นี้ได้ด้วยวิธีนี้:
 login-intro-instruction-fxa = สร้างหรือลงชื่อเข้าใช้ { -fxaccount-brand-name } ของคุณบนอุปกรณ์ที่บันทึกข้อมูลการเข้าสู่ระบบของคุณ
 login-intro-instruction-fxa-settings = ตรวจสอบให้แน่ใจว่าคุณได้เลือกกล่องกาเครื่องหมายข้อมูลการเข้าสู่ระบบในการตั้งค่า { -sync-brand-short-name }
 about-logins-intro-instruction-help = เยี่ยมชม<a data-l10n-name="help-link">ฝ่ายสนับสนุน { -lockwise-brand-short-name }</a> สำหรับวิธีใช้เพิ่มเติม
 about-logins-intro-import = หากข้อมูลการเข้าสู่ระบบของคุณถูกบันทึกไว้ในเบราว์เซอร์อื่น คุณสามารถ<a data-l10n-name="import-link">นำเข้าข้อมูลเหล่านี้ใน { -lockwise-brand-short-name }</a> ได้
+about-logins-intro-import2 = หากข้อมูลการเข้าสู่ระบบของคุณถูกบันทึกไว้ภายนอก { -brand-product-name } คุณสามารถ<a data-l10n-name="import-browser-link">นำเข้าจากเบราว์เซอร์อื่น</a>หรือ<a data-l10n-name="import-file-link">จากไฟล์</a>ได้
 
 ## Login
 
@@ -126,15 +124,19 @@ about-logins-copy-password-os-auth-dialog-message-win = หากต้องก
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = คัดลอกรหัสผ่านที่บันทึกไว้
+
+## Master Password notification
+
+master-password-notification-message = โปรดป้อนรหัสผ่านหลักของคุณเพื่อดูข้อมูลการเข้าสู่ระบบและรหัสผ่านที่บันทึกไว้
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = หากต้องการส่งออกข้อมูลการเข้าสู่ระบบของคุณ ให้ป้อนข้อมูลประจำตัวการเข้าสู่ระบบ Windows ของคุณ ซึ่งจะช่วยปกป้องความปลอดภัยให้กับบัญชีต่าง ๆ ของคุณ
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = ส่งออกข้อมูลการเข้าสู่ระบบและรหัสผ่านที่บันทึกไว้
 
-## Master Password notification
+## Primary Password notification
 
-master-password-notification-message = โปรดป้อนรหัสผ่านหลักของคุณเพื่อดูข้อมูลการเข้าสู่ระบบและรหัสผ่านที่บันทึกไว้
+about-logins-primary-password-notification-message = โปรดป้อนรหัสผ่านหลักของคุณเพื่อดูข้อมูลการเข้าสู่ระบบและรหัสผ่านที่บันทึกไว้
 master-password-reload-button =
     .label = เข้าสู่ระบบ
     .accesskey = ข
@@ -214,5 +216,18 @@ about-logins-export-file-picker-export-button = ส่งออก
 about-logins-export-file-picker-csv-filter-title =
     { PLATFORM() ->
         [macos] ไฟล์ CSV
+       *[other] ไฟล์ CSV
+    }
+
+## Login Import Dialog
+
+# Title of the file picker dialog
+about-logins-import-file-picker-title = นำเข้าไฟล์ข้อมูลการเข้าสู่ระบบ
+about-logins-import-file-picker-import-button = นำเข้า
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] เอกสาร CSV
        *[other] ไฟล์ CSV
     }

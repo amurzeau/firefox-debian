@@ -2,25 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-# An old map warning, see https://en.wikipedia.org/wiki/Here_be_dragons
-about-config-warning-title = Her er det drager!
-about-config-warning-text = Dersom du endrer disse avanserte innstillingene kan det virke negativt på sikkerhet, stabilitet og ytelse i dette programmet. Fortsett bare dersom du vet hva du gjør.
-about-config-warning-checkbox = Irriter meg igjen, takk!
-about-config-warning-button = Jeg aksepterer risikoen
-
-about-config2-title = Avanserte innstillinger
-
-about-config-search-input =
-    .placeholder = Søk
-
 ## These strings appear on the warning you see when first visiting about:config.
 
 about-config-intro-warning-title = Fortsett med forsiktighet
-about-config-intro-warning-text = Endrer du avanserte konfigurasjonsinnstillinger kan det påvirke ytelse eller sikkerhet for { -brand-short-name }.
+about-config-intro-warning-text = Endrer du avanserte konfigurasjonsinnstillinger kan det påvirke ytelse eller sikkerhet i { -brand-short-name }.
 about-config-intro-warning-checkbox = Advar når jeg prøver å få tilgang til disse innstillinger
 about-config-intro-warning-button = Godta risikoen og fortsett
-
-
 
 ##
 
@@ -32,13 +19,6 @@ about-config-page-title = Avanserte innstillinger
 about-config-search-input1 =
     .placeholder = Søk på innstillingsnavn
 about-config-show-all = Vis alt
-
-about-config-pref-add = Legg til
-about-config-pref-toggle = Veksle
-about-config-pref-edit = Rediger
-about-config-pref-save = Lagre
-about-config-pref-reset = Nullstill
-about-config-pref-delete = Slett
 
 about-config-pref-add-button =
     .title = Legg til

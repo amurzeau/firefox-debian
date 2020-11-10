@@ -71,8 +71,6 @@ media-save-as =
 media-save-image-as =
     .label = Memorisar sut…
     .accesskey = e
-media-preview =
-    .value = Prevista da las medias:
 
 perm-tab =
     .label = Autorisaziuns
@@ -97,7 +95,7 @@ security-view-identity-domain =
 security-view-identity-verifier =
     .value = Verifitgà da:
 security-view-identity-validity =
-    .value = Scroda ils:
+    .value = Scada ils:
 security-view-privacy =
     .value = Protecziun da datas & cronica
 
@@ -132,7 +130,6 @@ security-site-data-cookies-only = Gea, cookies
 security-site-data-no = Na
 
 image-size-unknown = Betg enconuschent
-not-set-verified-by = Betg inditgà
 page-info-not-specified =
     .value = Betg inditgà
 not-set-alternative-text = Betg inditgà
@@ -157,7 +154,6 @@ general-quirks-mode =
     .value = Modus da cumpatibilitad (Quirks)
 general-strict-mode =
     .value = Modus confurm al standard
-security-no-owner = Questa website na porscha naginas infurmaziuns davart il proprietari.
 page-info-security-no-owner =
     .value = Questa website na porscha naginas infurmaziuns davart il proprietari.
 media-select-folder = Tscherna in ordinatur per memorisar las graficas

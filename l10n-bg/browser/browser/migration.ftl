@@ -88,10 +88,19 @@ imported-edge-reading-list = Списък за четене (от Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.
 
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-checkbox =
+    .label = Запазени регистрации и пароли
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-label =
+    .value = Запазени регистрации и пароли
 browser-data-session-checkbox =
     .label = Прозорци и раздели
 browser-data-session-label =

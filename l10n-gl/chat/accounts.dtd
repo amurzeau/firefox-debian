@@ -18,6 +18,8 @@
 <!-- This title must be short, displayed with a big font size -->
 <!ENTITY accountManager.noAccount.title      "Aínda non configurou ningunha conta">
 <!ENTITY accountManager.noAccount.description "Prema no botón &accountManager.newAccount.label; para permitir que &brandShortName; o guíe no proceso de configuración.">
+<!ENTITY account.autoSignOn.label     "Identificarse ao iniciar">
+<!ENTITY account.autoSignOn.accesskey "S">
 <!ENTITY account.connect.label        "Conectar">
 <!ENTITY account.connect.accesskey    "o">
 <!ENTITY account.disconnect.label     "Desconectar">
@@ -25,7 +27,7 @@
 <!ENTITY account.delete.label         "Eliminar">
 <!ENTITY account.delete.accesskey     "i">
 <!ENTITY account.edit.label           "Propiedades">
-<!ENTITY account.edit.accesskey       "P">
+<!ENTITY account.edit.accesskey       "R">
 <!ENTITY account.moveup.label         "Subir">
 <!ENTITY account.movedown.label       "Baixar">
 <!ENTITY account.cancelReconnection.label         "Cancelar a reconexión">

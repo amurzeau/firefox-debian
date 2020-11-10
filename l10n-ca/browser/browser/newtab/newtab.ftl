@@ -15,6 +15,7 @@ newtab-settings-button =
 newtab-search-box-search-button =
     .title = Cerca
     .aria-label = Cerca
+
 newtab-search-box-search-the-web-text = Cerca al web
 newtab-search-box-search-the-web-input =
     .placeholder = Cerca al web
@@ -29,10 +30,12 @@ newtab-topsites-edit-topsites-header = Edita el lloc principal
 newtab-topsites-title-label = Títol
 newtab-topsites-title-input =
     .placeholder = Escriviu el títol
+
 newtab-topsites-url-label = URL
 newtab-topsites-url-input =
     .placeholder = Escriviu o enganxeu un URL
 newtab-topsites-url-validation = Es necessita un URL vàlid
+
 newtab-topsites-image-url-label = URL d'imatge personalitzada
 newtab-topsites-use-image-link = Utilitza una imatge personalitzada…
 newtab-topsites-image-validation = S'ha produït un error en carregar la imatge. Proveu un altre URL.
@@ -40,7 +43,7 @@ newtab-topsites-image-validation = S'ha produït un error en carregar la imatge.
 ## Top Sites - General form dialog buttons. These are verbs/actions.
 
 newtab-topsites-cancel-button = Cancel·la
-newtab-topsites-delete-history-button = Elimina de l'historial
+newtab-topsites-delete-history-button = Suprimeix de l'historial
 newtab-topsites-save-button = Desa
 newtab-topsites-preview-button = Previsualització
 newtab-topsites-add-button = Afegeix
@@ -57,10 +60,12 @@ newtab-confirm-delete-history-p2 = Aquesta acció no es pot desfer.
 newtab-menu-section-tooltip =
     .title = Obre el menú
     .aria-label = Obre el menú
+
 # Tooltip for dismiss button
 newtab-dismiss-button-tooltip =
     .title = Elimina
     .aria-label = Elimina
+
 # This tooltip is for the context menu of Pocket cards or Topsites
 # Variables:
 #  $title (String): The label or hostname of the site. This is for screen readers when the context menu button is focused/active.
@@ -80,7 +85,7 @@ newtab-menu-open-new-private-window = Obre en una finestra privada nova
 newtab-menu-dismiss = Descarta
 newtab-menu-pin = Fixa
 newtab-menu-unpin = No fixis
-newtab-menu-delete-history = Elimina de l'historial
+newtab-menu-delete-history = Suprimeix de l'historial
 newtab-menu-save-to-pocket = Desa al { -pocket-brand-name }
 newtab-menu-delete-pocket = Suprimeix del { -pocket-brand-name }
 newtab-menu-archive-pocket = Arxiva en el { -pocket-brand-name }
@@ -133,10 +138,12 @@ newtab-label-removed-bookmark = S'ha eliminat l'adreça d'interès
 newtab-label-recommended = Tendència
 newtab-label-saved = Desat al { -pocket-brand-name }
 newtab-label-download = Baixat
+
 # This string is used in the story cards to indicate sponsored content
 # Variables:
 #  $sponsorOrSource (String): This is the name of a company or their domain
 newtab-label-sponsored = { $sponsorOrSource } · Patrocinat
+
 # This string is used at the bottom of story cards to indicate sponsored content
 # Variables:
 #  $sponsor (String): This is the name of a sponsor
@@ -174,10 +181,12 @@ newtab-section-header-pocket = Recomanat per { $provider }
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
 newtab-empty-section-highlights = Comenceu a navegar i aquí us mostrarem els millors articles, vídeos i altres pàgines que hàgiu visitat o afegit a les adreces d'interès recentment.
+
 # Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 # Variables:
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".
 newtab-empty-section-topstories = Ja esteu al dia. Torneu més tard per veure més articles populars de { $provider }. No podeu esperar? Trieu un tema popular per descobrir els articles més interessants de tot el web.
+
 
 ## Empty Section (Content Discovery Experience). These show when there are no more stories or when some stories fail to load.
 

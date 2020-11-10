@@ -78,7 +78,7 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 
 ## Protections panel
 
-cfr-protections-panel-header = 추적되지 않는 탐색
+cfr-protections-panel-header = 브라우저 추적 차단하기
 cfr-protections-panel-body = 자신의 데이터를 보호하세요. { -brand-short-name }는 온라인에서 하는 일을 추적하는 가장 일반적인 많은 추적기로부터 사용자를 보호합니다.
 cfr-protections-panel-link-text = 더 알아보기
 
@@ -138,12 +138,12 @@ cfr-whatsnew-permission-prompt-cta = 더 알아보기
 # localization, because it would result in the number showing twice.
 cfr-whatsnew-fingerprinter-counter-header =
     { $fingerprinterCount ->
-       *[other] 핑거프린터 차단됨
+       *[other] 디지털 지문 차단됨
     }
-cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name }는 기기와 동작에 대한 정보를 몰래 수집하여 사용자의 광고 프로필을 만드는 많은 핑거프린터를 차단합니다.
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name }는 기기와 동작에 대한 정보를 몰래 수집하여 사용자의 광고 프로필을 만드는 많은 디지털 지문을 차단합니다.
 # Message variation when fingerprinters count is less than 10
-cfr-whatsnew-fingerprinter-counter-header-alt = 핑거프린터
-cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name }는 기기와 동작에 대한 정보를 몰래 수집하여 사용자의 광고 프로필을 만드는 핑거프린터를 차단할 수 있습니다.
+cfr-whatsnew-fingerprinter-counter-header-alt = 디지털 지문
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name }는 기기와 동작에 대한 정보를 몰래 수집하여 사용자의 광고 프로필을 만드는 디지털 지문을 차단할 수 있습니다.
 
 ## Bookmark Sync
 
@@ -185,9 +185,9 @@ cfr-doorhanger-socialtracking-dont-show-again = 이런 메시지 다시 표시 �
 cfr-doorhanger-socialtracking-heading = { -brand-short-name }가 여기에서 소셜 네트워크가 사용자를 추적하는 것을 중지했습니다
 cfr-doorhanger-socialtracking-description = 개인 정보는 중요합니다. { -brand-short-name }는 이제 일반적인 소셜 미디어 추적기를 차단하여 온라인에서 수행하는 작업에 대해 수집할 수 있는 데이터의 양을 제한합니다.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name }가 이 페이지에서 핑커프린터를 차단했습니다
-cfr-doorhanger-fingerprinters-description = 개인 정보는 중요합니다. { -brand-short-name }는 이제 디바이스에 대해 고유하게 식별 가능한 정보 조각을 수집하여 사용자를 추적하는 핑거프린터를 차단합니다.
-cfr-doorhanger-cryptominers-heading = { -brand-short-name }가 이 페이지에서 크립토마이너를 차단했습니다
-cfr-doorhanger-cryptominers-description = 개인 정보는 중요합니다. { -brand-short-name }는 이제 시스템의 컴퓨팅 능력을 사용하여 디지털 화폐를 채굴하는 크립토마이너를 차단합니다.
+cfr-doorhanger-fingerprinters-description = 개인 정보는 중요합니다. { -brand-short-name }는 이제 기기에 대해 고유하게 식별 가능한 정보 조각을 수집하여 사용자를 추적하는 디지털 지문을 차단합니다.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name }가 이 페이지에서 암호화폐 채굴기를 차단했습니다
+cfr-doorhanger-cryptominers-description = 개인 정보는 중요합니다. { -brand-short-name }는 이제 시스템의 컴퓨팅 능력을 사용하여 디지털 화폐를 채굴하는 암호화폐 채굴기를 차단합니다.
 
 ## Enhanced Tracking Protection Milestones
 
@@ -200,6 +200,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = 모두 보기
     .accesskey = S
+cfr-doorhanger-milestone-close-button = 닫기
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -233,3 +235,35 @@ cfr-whatsnew-protections-icon-alt = 방패 아이콘
 
 cfr-whatsnew-better-pdf-header = 더 나은 PDF 경험
 cfr-whatsnew-better-pdf-body = 이제 PDF 문서가 { -brand-short-name }에서 직접 열리므로 워크플로에 쉽게 접근할 수 있습니다.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = 개인 정보 보호는 중요합니다. { -brand-short-name }는 탐색하는 동안 사용자를 보호하기 위해 가능하면 사용자의 DNS 요청을 파트너 서비스로 안전하게 라우팅합니다.
+cfr-doorhanger-doh-header = 더 안전하고, 암호화된 DNS 조회
+cfr-doorhanger-doh-primary-button = 확인
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = 사용 안 함
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = 개인 정보는 중요합니다. { -brand-short-name }는 이제 웹 사이트를 서로 격리하거나 샌드 박스를 만들어 해커가 비밀번호, 신용 카드 번호 및 기타 중요한 정보를 훔치기 어렵게 만듭니다.
+cfr-doorhanger-fission-header = 사이트 격리
+cfr-doorhanger-fission-primary-button = 확인
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = 더 알아보기
+    .accesskey = L
+# Deprecated
+cfr-doorhanger-fission-body = { -brand-short-name }가 실험 기능인 Fission (사이트 격리)을 사용하도록 설정했습니다. 각 사이트를 별도의 프로세스로 격리함으로써 Fission은 사용자와 사용자가 방문하는 웹 사이트에 추가적인 보안 계층을 제공합니다.
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = 교활한 추적 전술로부터 자동 보호
+cfr-whatsnew-clear-cookies-body = 일부 추적기는 몰래 쿠키를 설정하는 다른 웹 사이트로 사용자를 리디렉션합니다. 이제 { -brand-short-name }는 이런 쿠키를 자동으로 지우므로 사용자를 따라다닐 수 없습니다.
+cfr-whatsnew-clear-cookies-image-alt = 쿠키 차단 그림
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = 더 많은 미디어 컨트롤
+cfr-whatsnew-media-keys-body = 키보드 또는 헤드셋에서 바로 오디오 또는 비디오를 재생 및 일시 중지하여 다른 탭, 프로그램 또는 컴퓨터가 잠긴 경우에도 미디어를 쉽게 제어할 수 있습니다. 또한 앞으로 및 뒤로 키를 사용하여 트랙 사이를 이동할 수도 있습니다.
+cfr-whatsnew-media-keys-button = 방법 알아보기

@@ -13,7 +13,6 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = Argibide gehiago
-onboarding-button-label-try-now = Probatu orain
 onboarding-button-label-get-started = Hasi erabiltzen
 
 ## Welcome modal dialog strings
@@ -21,8 +20,6 @@ onboarding-button-label-get-started = Hasi erabiltzen
 onboarding-welcome-header = Ongi etorri { -brand-short-name }(e)ra
 onboarding-welcome-body = Nabigatzailea duzu.<br/>Ezagutu gainerako { -brand-product-name } produktuen familia.
 onboarding-welcome-learn-more = Abantailei buruzko argibide gehiago.
-
-onboarding-join-form-header = Egizu bat { -brand-product-name }(r)ekin
 onboarding-welcome-modal-get-body = Nabigatzailea duzu.<br/>Orain atera zukua { -brand-product-name } familiari.
 onboarding-welcome-modal-supercharge-body = Hobetu zure pribatutasunaren babesa.
 onboarding-welcome-modal-privacy-body = Nabigatzailea badaukazu. Babes dezagun gehiago pribatutasuna.
@@ -42,10 +39,20 @@ onboarding-join-form-signin-label = Dagoeneko baduzu kontua?
 onboarding-join-form-signin = Hasi saioa
 
 onboarding-start-browsing-button-label = Hasi nabigatzen
-
 onboarding-cards-dismiss =
     .title = Baztertu
     .aria-label = Baztertu
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = Ongi etorri <span data-l10n-name="zap">{ -brand-short-name }</span>(e)ra
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
 
 ## Welcome full page string
 
@@ -74,14 +81,7 @@ onboarding-sync-form-sub-header = { -sync-brand-name }-ekin jarraitzeko.
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = Produktu erabilgarriak
-
 onboarding-benefit-products-text = Burutu atazak zure gailuen artean pribatutasuna errespetatzen duen tresnen familiarekin.
-
-onboarding-benefit-knowledge-title = Ezagutza praktikoa
-onboarding-benefit-knowledge-text = Ikasi jakin beharreko guztia argiago eta seguruago nabigatzeko.
-
-onboarding-benefit-privacy-title = Benetako pribatutasuna
 
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
@@ -89,7 +89,6 @@ onboarding-benefit-privacy-title = Benetako pribatutasuna
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
 onboarding-benefit-privacy-text = Egiten dugun guztia gure Datu Pertsonalen Zin-egitearekin bat dator: Gutxiago hartu. Seguru mantendu. Sekreturik ez.
-
 
 onboarding-benefit-sync-title = { -sync-brand-short-name }
 onboarding-benefit-sync-text = Eraman zure laster-markak, pasahitzak, historia, eta gehiago { -brand-product-name } erabiltzen duzun toki guztietara.
@@ -108,22 +107,6 @@ onboarding-benefit-lockwise-text = Kudeatu pasahitzak, babespean eta eramangarri
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = Nabigatze pribatua
-onboarding-private-browsing-text = Nabigatu zure kasa. Edukia blokeatzen duen nabigatze pribatuarekin webean zehar zure jarraipena egin nahi duten elementuak blokeatzen dira.
-
-onboarding-screenshots-title = Pantaila-argazkiak
-onboarding-screenshots-text = Hartu, gorde eta partekatu pantaila-argazkiak { -brand-short-name } utzi gabe. Kapturatu orri osoa edo eremu bat. Gero gorde webean sarbide erraza izan eta partekatzeko.
-
-onboarding-addons-title = Gehigarriak
-onboarding-addons-text = Gehitu eginbideak { -brand-short-name }(r)i, honek zuretzako gehiago egin dezan. Alderatu salneurriak, begiratu eguraldiaren iragarpena edo adierazi zure izaera pertsonalizatutako itxura batekin.
-
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = Nabigatu azkarrago, argiago edo seguruago iragarkiak blokeatzen dituzten Ghostery-ren tankerako gehigarriekin.
-
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = Sinkronizatu
-onboarding-fxa-text = Sortu { -fxaccount-brand-name } kontua eta sinkronizatu zure laster-markak, pasahitzak eta irekitako fitxak { -brand-short-name } erabiltzen duzun leku orotan.
-
 onboarding-tracking-protection-title2 = Jarraipenaren babesa
 onboarding-tracking-protection-text2 = Webguneek zure lineako jardueraren jarraipena ez egitera laguntzen du { -brand-short-name }(e)k, horretarako zailagoa eginez iragarkiei webean zehar zu jarraitzea.
 onboarding-tracking-protection-button2 = Nola dabilen
@@ -134,7 +117,6 @@ onboarding-data-sync-text2 = Sinkronizatu zure laster-markak, pasahitzak eta geh
 onboarding-data-sync-button2 = Hasi sioa { -sync-brand-short-name }(e)n
 
 onboarding-firefox-monitor-title = Erne ibili datuen urradudari
-onboarding-firefox-monitor-text = { -monitor-brand-name }(e)k zure helbide elektronikoa monitorizatzen du datuen urradura berri batean agertuko balitz abisatzeko.
 onboarding-firefox-monitor-text2 = { -monitor-brand-name }(e)k zure helbide elektronikoa monitorizatzen du datuen urradura ezagun batean agertuko balitz abisatzeko.
 onboarding-firefox-monitor-button = Eman izena abisuak jasotzeko
 
@@ -155,19 +137,12 @@ onboarding-mobile-phone-button = Deskargatu mugikorrerako nabigatzailea
 onboarding-send-tabs-title = Bidali fitxak di-da zure buruari
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Fitxak bidalita berehala partekatzen dira orriak zure gailuen artean, horretarako kopiatu eta itsatsi edo nabigatzailea uzteko beharrik gabe.
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = Partekatu orriak modu errazean zure gailuen artean, horretarako loturak kopiatu eta itsatsi edo nabigatzailea uzteko beharrik gabe.
 onboarding-send-tabs-button = Hasi fitxak bidaltzeko eginbidea erabiltzen
 
 onboarding-pocket-anywhere-title = Irakurri eta entzun edonon
 onboarding-pocket-anywhere-text2 = Gorde zure gogoko edukia { -pocket-brand-name } aplikazioarekin lineaz kanpo eta ondoen datorkizunean irakurri, entzun eta ikusteko.
 onboarding-pocket-anywhere-button = Probatu { -pocket-brand-name }
-
-onboarding-lockwise-passwords-title = Eraman pasahitzak alboan
-onboarding-lockwise-passwords-text2 = Mantendu seguru gordetako pasahitzak eta hasi saioa zure kontuetan modu errazean { -lockwise-brand-name } erabiliz.
-onboarding-lockwise-passwords-button2 = Eskuratu aplikazioa
 
 onboarding-lockwise-strong-passwords-title = Sortu eta biltegiratu pasahitz sendoak
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name }(e)k pasahitz sendoak istantean sortu eta denak toki bakarrean gordetzen ditu.
@@ -176,7 +151,6 @@ onboarding-lockwise-strong-passwords-button = Kudeatu zure saio-hasierak
 onboarding-facebook-container-title = Ezarri mugak Facebookekin
 onboarding-facebook-container-text2 = { -facebook-container-brand-name } erabilita zure profila gainontzeko guztitik bereiziko da eta Facebooki zailagoa egingo zaio haien iragarkien jomugan zu izatea.
 onboarding-facebook-container-button = Gehitu hedapena
-
 
 onboarding-import-browser-settings-title = Inportatu zure laster-markak, pasahitzak eta gehiago
 onboarding-import-browser-settings-text = Murgildu zuzenean — ekarri zurekin Chrome-ko gune eta ezarpenak.

@@ -7,7 +7,10 @@ password-quality-meter = 비밀번호 수준 측정
 ## Change Password dialog
 
 change-password-window =
-    .title = 마스터 비밀번호 변경
+    .title = 기본 비밀번호 변경
+
+change-device-password-window =
+    .title = 비밀번호 변경
 
 # Variables:
 # $tokenName (String) - Security device of the change password dialog
@@ -19,11 +22,32 @@ change-password-reenter = 새 비밀번호(재입력):
 ## Reset Password dialog
 
 reset-password-window =
-    .title = 마스터 비밀번호 재설정
+    .title = 기본 비밀번호 재설정
+    .style = width: 40em
+
+pippki-failed-pw-change = 비밀번호를 변경할 수 없습니다.
+pippki-incorrect-pw = 현재 비밀번호를 올바르게 입력하지 않았습니다. 다시 시도하세요.
+pippki-pw-change-ok = 비밀번호가 성공적으로 변경되었습니다.
+
+pippki-pw-empty-warning = 저장된 비밀번호와 개인 키는 보호되지 않습니다.
+pippki-pw-erased-ok = 비밀번호가 제거되었습니다. { pippki-pw-empty-warning }
+pippki-pw-not-wanted = 경고! 비밀번호를 사용하지 않기로 설정하였습니다. { pippki-pw-empty-warning }
+
+pippki-pw-change2empty-in-fips-mode = 현재 FIPS 모드입니다. FIPS는 비밀번호가 설정되어야 합니다.
+
+## Reset Primary Password dialog
+
+reset-primary-password-window =
+    .title = 기본 비밀번호 재설정
     .style = width: 40em
 reset-password-button-label =
     .label = 재설정
-reset-password-text = 마스터 비밀번호를 재설정하면 저장된 모든 웹, 이메일 비밀번호, 양식 데이터, 개인 인증서 및 개인 키에 접근하지 못하게 됩니다. 정말로 마스터 비밀번호를 재설정하시겠습니까?
+reset-password-text = 기본 비밀번호를 재설정하면 저장된 모든 웹, 이메일 비밀번호, 양식 데이터, 개인 인증서 및 개인 키에 접근하지 못하게 됩니다. 정말로 기본 비밀번호를 재설정하시겠습니까?
+
+reset-primary-password-text = 기본 비밀번호를 재설정하면, 저장된 모든 웹, 이메일 비밀번호, 양식 데이터, 개인 인증서 및 개인 키에 접근하지 못하게 됩니다. 정말로 기본 비밀번호를 재설정하시겠습니까?
+
+pippki-reset-password-confirmation-title = 기본 비밀번호 재설정
+pippki-reset-password-confirmation-message = 기본 비밀번호가 재설정되었습니다.
 
 ## Downloading cert dialog
 

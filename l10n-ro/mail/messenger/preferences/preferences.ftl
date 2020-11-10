@@ -2,7 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
 close-button =
     .aria-label = Închide
 
@@ -65,7 +64,27 @@ privacy-passwords-header = Parole
 
 privacy-junk-header = Mesaje nesolicitate
 
-privacy-data-collection-header = Colectare de date și utilizare
+collection-header = Date colectate și utilizarea lor în { -brand-short-name }
+
+collection-description = Ne străduim să vă oferim opțiuni și să colectăm numai ceea ce este necesar ca să oferim și să îmbunătățim { -brand-short-name } pentru toți. Cerem întotdeauna permisiunea înainte de a primi date personale.
+collection-privacy-notice = Notificare privind confidențialitatea
+
+collection-health-report-telemetry-disabled = Nu mai permiți { -vendor-short-name } să captureze date tehnice și de interacțiune. Toate datele anterioare vor fi șterse în 30 de zile.
+collection-health-report-telemetry-disabled-link = Află mai multe
+
+collection-health-report =
+    .label = Permite { -brand-short-name } să transmită date tehnice și de interacțiune către { -vendor-short-name }
+    .accesskey = r
+collection-health-report-link = Află mai multe
+
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled = Raportarea datelor este dezactivată în configurația folosită
+
+collection-backlogged-crash-reports =
+    .label = Permite { -brand-short-name } să transmită în numele tău rapoarte de defecțiuni înregistrate
+    .accesskey = c
+collection-backlogged-crash-reports-link = Află mai multe
 
 privacy-security-header = Securitate
 
@@ -89,12 +108,6 @@ manage-messenger-languages-button =
     .accesskey = I
 confirm-messenger-language-change-description = Repornește { -brand-short-name } pentru a aplica aceste modificări
 confirm-messenger-language-change-button = Aplică și repornește
-
-update-pref-write-failure-title = Eșec la scriere
-
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Imposibil de salvat preferința. Nu s-a putut scrie în fișierul: { $path }
 
 update-setting-write-failure-title = Eroare la salvarea preferințelor de actualizare
 
@@ -121,13 +134,22 @@ addons-button = Extensii și teme
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verifică-ți identitatea pentru a crea o parolă generală.
+master-password-os-auth-dialog-message-win = Pentru a crea o parolă generală, introdu-ți datele de autentificare pentru Windows. Ajută la protejarea securității conturilor tale.
 
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Thunderbird is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = creează o parolă generală
+
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Pentru a crea o parolă primară, introdu-ți datele de autentificare pentru Windows. Ajută la protejarea securității conturilor tale.
+
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = creează o parolă primară
 
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
@@ -198,6 +220,9 @@ tray-icon-label =
     .label = Afișează o pictogramă în bara de stare
     .accesskey = p
 
+mail-system-sound-label =
+    .label = Sunet de sistem implicit pentru mesaje noi
+    .accesskey = D
 mail-custom-sound-label =
     .label = Folosește următorul fișier de sunet
     .accesskey = U
@@ -685,6 +710,20 @@ master-password-button =
     .accesskey = c
 
 
+primary-password-description = O parolă primară îți protejează toate parolele, dar trebuie să o introduci la fiecare sesiune nouă deschisă.
+
+primary-password-label =
+    .label = Folosește o parolă primară
+    .accesskey = U
+
+primary-password-button =
+    .label = Schimbă parola primară...
+    .accesskey = C
+
+forms-primary-pw-fips-title = Acum ești în modul FIPS. FIPS nu permite inexistența unei parole primare.
+forms-master-pw-fips-desc = Schimbarea parolei a eșuat
+
+
 junk-description = Definește setările implicite pentru mesaje nesolicitate. Setările specifice contului pentru mesaje nesolicitate pot fi configurate în setările contului.
 
 junk-label =
@@ -854,6 +893,35 @@ chat-variant-label =
 chat-header-label =
     .label = Afișează antetul
     .accesskey = a
+
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box =
+    .style = width: 15.4em
+    .placeholder =
+        { PLATFORM() ->
+            [windows] Caută în Opțiuni
+           *[other] Caută în Preferințe
+        }
+
+## Preferences UI Search Results
+
+search-results-header = Rezultatele căutării
+
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message =
+    { PLATFORM() ->
+        [windows] Ne pare rău! Nu sunt rezultate în Opțiuni pentru „<span data-l10n-name="query"></span>”.
+       *[other] Ne pare rău! Nu sunt rezultate în Preferințe pentru „<span data-l10n-name="query"></span>”.
+    }
+
+search-results-help-link = Ai nevoie de ajutor? Intră pe <a data-l10n-name="url">Asistență { -brand-short-name }</a>
 
 ## Preferences UI Search Results
 

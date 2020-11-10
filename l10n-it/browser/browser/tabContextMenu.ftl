@@ -7,13 +7,13 @@ reload-tab =
     .accesskey = R
 select-all-tabs =
     .label = Seleziona tutte le schede
-    .accesskey = u
+    .accesskey = z
 duplicate-tab =
     .label = Duplica scheda
-    .accesskey = u
+    .accesskey = D
 duplicate-tabs =
     .label = Duplica schede
-    .accesskey = u
+    .accesskey = D
 close-tabs-to-the-end =
     .label = Chiudi le schede a destra
     .accesskey = d
@@ -56,6 +56,9 @@ move-to-new-window =
 tab-context-close-multiple-tabs =
     .label = Chiudi più schede
     .accesskey = u
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -63,18 +66,29 @@ tab-context-undo-close-tabs =
            *[other] Riapri schede chiuse
         }
     .accesskey = s
-undo-close-tab =
-    .label = Riapri scheda chiusa
-    .accesskey = s
 close-tab =
     .label = Chiudi scheda
     .accesskey = C
 close-tabs =
     .label = Chiudi schede
-    .accesskey = u
+    .accesskey = C
 move-tabs =
     .label = Sposta schede
     .accesskey = S
 move-tab =
     .label = Sposta scheda
+    .accesskey = S
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Chiudi scheda
+           *[other] Chiudi schede
+        }
+    .accesskey = C
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Sposta scheda
+           *[other] Sposta schede
+        }
     .accesskey = S

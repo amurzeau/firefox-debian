@@ -4,7 +4,6 @@
 
 addons-window =
     .title = Manager de suplimente
-
 addons-page-title = Manager de suplimente
 
 search-header =
@@ -13,9 +12,6 @@ search-header =
 
 search-header-shortcut =
     .key = f
-
-loading-label =
-    .value = Se încarcă…
 
 list-empty-installed =
     .value = Nu ai vreun supliment de acest tip instalat
@@ -32,12 +28,7 @@ list-empty-find-updates =
 list-empty-button =
     .label = Află mai multe despre suplimente
 
-install-addon-from-file =
-    .label = Instalează un supliment dintr-un fișier…
-    .accesskey = I
-
 help-button = Suport pentru suplimente
-
 sidebar-help-button-title =
     .title = Suport pentru suplimente
 
@@ -46,10 +37,6 @@ preferences =
         [windows] Opțiuni { -brand-short-name }
        *[other] Preferințe { -brand-short-name }
     }
-
-tools-menu =
-    .tooltiptext = Instrumente pentru toate suplimentele
-
 sidebar-preferences-button-title =
     .title =
         { PLATFORM() ->
@@ -62,10 +49,6 @@ show-unsigned-extensions-button =
 
 show-all-extensions-button =
     .label = Afișează toate extensiile
-
-debug-addons =
-    .label = Depanează suplimente
-    .accesskey = b
 
 cmd-show-details =
     .label = Afișează mai multe informații
@@ -104,12 +87,6 @@ cmd-contribute =
     .accesskey = C
     .tooltiptext = Contribuie la dezvoltarea acestui supliment
 
-discover-title = Ce sunt suplimentele?
-
-discover-description = Suplimentele sunt aplicații care îți permit să personalizezi { -brand-short-name } cu funcții sau stiluri suplimentare. Încearcă o bară laterală care economisește timp, un notificator pentru vreme sau o temă pentru a face din { -brand-short-name } o experiență unică.
-
-discover-footer = Când ești conectat la internet, acest panou va afișa cele mai utilizate și populare extensii pentru a-ți permite să le încerci.
-
 detail-version =
     .label = Versiune
 
@@ -140,19 +117,13 @@ detail-update-manual =
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Rulează în ferestre private
 
-detail-private-browsing-description2 = Când are permisiunea, extensia va avea acces la activitățile tale online în timp ce navighezi privat. <label data-l10n-name="detail-private-browsing-learn-more">Află mai multe</label>
-
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = Nepermis în ferestre private
-detail-private-disallowed-description = Această extensie nu rulează în navigare privată. <label data-l10n-name="detail-private-browsing-learn-more">Află mai multe</label>
-
 detail-private-disallowed-description2 = Această extensie nu rulează în navigare privată. <a data-l10n-name="learn-more">Află mai multe</a>
 
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Necesită acces la ferestre private
-detail-private-required-description = Această extensie are acces la activitățile tale online în navigare privată. <label data-l10n-name="detail-private-browsing-learn-more">Află mai multe</label>
-
 detail-private-required-description2 = Această extensie are acces la activitățile tale online în navigarea privată. <a data-l10n-name="learn-more">Află mai multe</a>
 
 detail-private-browsing-on =
@@ -225,18 +196,6 @@ private-browsing-description2 =
     { -brand-short-name } schimbă felul în care extensiile funcționează în navigarea privată. Orice extensie nouă pe care o adaugi în { -brand-short-name } nu va rula în mod implicit în cadrul ferestrelor private. Dacă nu permiți asta din setări, extensia nu va funcționa în timpul navigării private și nu va avea acces la activitățile tale online. Am făcut această modificare pentru ca navigarea privată să rămână privată.
     <label data-l10n-name="private-browsing-learn-more">Află cum să gestionezi setările pentru extensii</label>.
 
-extensions-view-discopane =
-    .name = Recomandări
-    .tooltiptext = { extensions-view-discopane.name }
-
-extensions-view-recent-updates =
-    .name = Actualizări recente
-    .tooltiptext = { extensions-view-recent-updates.name }
-
-extensions-view-available-updates =
-    .name = Actualizări disponibile
-    .tooltiptext = { extensions-view-available-updates.name }
-
 addon-category-discover = Recomandări
 addon-category-discover-title =
     .title = Recomandări
@@ -264,29 +223,6 @@ addon-category-recent-updates-title =
 
 ## These are global warnings
 
-extensions-warning-safe-mode-label =
-    .value = Toate suplimentele sunt dezactivate în modul Sigur.
-extensions-warning-safe-mode-container =
-    .tooltiptext = { extensions-warning-safe-mode-label.value }
-
-extensions-warning-check-compatibility-label =
-    .value = Verificarea compatibilității suplimentelor este dezactivată. Ai putea avea suplimente incompatibile.
-extensions-warning-check-compatibility-container =
-    .tooltiptext = { extensions-warning-check-compatibility-label.value }
-
-extensions-warning-check-compatibility-enable =
-    .label = Activează
-    .tooltiptext = Activează verificarea compatibilității suplimentelor
-
-extensions-warning-update-security-label =
-    .value = Verificarea securității actualizărilor de suplimente este dezactivată. Ai putea primi actualizări compromise.
-extensions-warning-update-security-container =
-    .tooltiptext = { extensions-warning-update-security-label.value }
-
-extensions-warning-update-security-enable =
-    .label = Activează
-    .tooltiptext = Activează verificarea securității actualizărilor suplimentelor
-
 extensions-warning-safe-mode = Toate suplimentele sunt dezactivate în modul Sigur.
 extensions-warning-check-compatibility = Verificarea compatibilității suplimentelor este dezactivată. Ai putea avea suplimente incompatibile.
 extensions-warning-check-compatibility-button = Activează
@@ -298,14 +234,6 @@ extensions-warning-update-security-button = Activează
 
 ## Strings connected to add-on updates
 
-extensions-updates-check-for-updates =
-    .label = Caută actualizări
-    .accesskey = C
-
-extensions-updates-view-updates =
-    .label = Vezi actualizările recente
-    .accesskey = V
-
 addon-updates-check-for-updates = Caută actualizări
     .accesskey = C
 addon-updates-view-updates = Vezi actualizările recente
@@ -313,10 +241,6 @@ addon-updates-view-updates = Vezi actualizările recente
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
-
-extensions-updates-update-addons-automatically =
-    .label = Actualizează automat suplimentele
-    .accesskey = A
 
 addon-updates-update-addons-automatically = Actualizează automat suplimentele
     .accesskey = A
@@ -327,36 +251,12 @@ addon-updates-update-addons-automatically = Actualizează automat suplimentele
 ## (which itself is either "Automatically" or "Manually", controlled by the
 ## extensions-updates-update-addons-automatically.label menu item).
 
-extensions-updates-reset-updates-to-automatic =
-    .label = Resetează toate suplimentele să se actualizeze automat
-    .accesskey = R
-
-extensions-updates-reset-updates-to-manual =
-    .label = Resetează toate suplimentele să se actualizeze manual
-    .accesskey = R
-
 addon-updates-reset-updates-to-automatic = Resetează toate suplimentele să se actualizeze automat
     .accesskey = R
 addon-updates-reset-updates-to-manual = Resetează toate suplimentele să se actualizeze manual
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
-
-extensions-updates-updating =
-    .value = Se actualizează suplimentele
-extensions-updates-installed =
-    .value = Suplimentele tale au fost actualizate.
-extensions-updates-downloaded =
-    .value = S-au descărcat actualizările pentru suplimentele tale.
-extensions-updates-restart =
-    .label = Repornește acum pentru a încheia instalarea
-extensions-updates-none-found =
-    .value = Nicio actualizare găsită
-extensions-updates-manual-updates-found =
-    .label = Vezi actualizările disponibile
-extensions-updates-update-selected =
-    .label = Instalează actualizările
-    .tooltiptext = Instalează actualizările disponibile în această listă
 
 addon-updates-updating = Se actualizează suplimentele
 addon-updates-installed = Suplimentele tale au fost actualizate.
@@ -374,10 +274,6 @@ addon-open-about-debugging = Depanează suplimente
 
 ## Extension shortcut management
 
-manage-extensions-shortcuts =
-    .label = Gestionează comenzile rapide pentru extensii
-    .accesskey = S
-
 # This is displayed in the page options menu
 addon-manage-extensions-shortcuts = Gestionează comenzile rapide ale extensiilor
     .accesskey = S
@@ -386,8 +282,6 @@ shortcuts-no-addons = Nu ai activat nicio extensie.
 shortcuts-no-commands = Următoarele extensii nu au comenzi rapide:
 shortcuts-input =
     .placeholder = Tastează o comandă rapidă
-
-shortcuts-browserAction = Activează extensia
 
 shortcuts-browserAction2 = Activează butonul pentru bara de unelte
 shortcuts-pageAction = Activează acțiunea pe pagină
@@ -420,9 +314,6 @@ shortcuts-card-expand-button =
     }
 
 shortcuts-card-collapse-button = Afișează mai puțin
-
-go-back-button =
-    .tooltiptext = Înapoi
 
 header-back-button =
     .title = Înapoi
@@ -467,7 +358,6 @@ remove-addon-button = Elimină
 remove-addon-disabled-button = Nu se poate elimina <a data-l10n-name="link">De ce?</a>
 disable-addon-button = Dezactivează
 enable-addon-button = Activează
-expand-addon-button = Mai multe opțiuni
 # This is used for the toggle on the extension card, it's a checkbox and this
 # is always its label.
 extension-enable-addon-button-label =
@@ -480,9 +370,6 @@ preferences-addon-button =
 details-addon-button = Detalii
 release-notes-addon-button = Note privind versiunea
 permissions-addon-button = Permisiuni
-
-addons-enabled-heading = Activat
-addons-disabled-heading = Dezactivat
 
 extension-enabled-heading = Activate
 extension-disabled-heading = Dezactivate
@@ -508,6 +395,10 @@ addon-detail-version-label = Versiune
 addon-detail-last-updated-label = Ultima actualizare
 addon-detail-homepage-label = Pagină de start
 addon-detail-rating-label = Evaluare
+
+# Message for add-ons with a staged pending update.
+install-postponed-message = Această extensie va fi actualizată la repornirea { -brand-short-name }.
+install-postponed-button = Actualizează acum
 
 # The average rating that the add-on has received.
 # Variables:
@@ -546,23 +437,12 @@ install-update-button = Actualizare
 
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
-addon-badge-private-browsing-allowed =
-    .title = Permis în ferestre private
-
-# This is the tooltip text for the private browsing badge in about:addons. The
-# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = Permis în ferestre private
     .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Când are accesul permis, extensia va avea acces la activitățile tale online în navigarea privată. <a data-l10n-name="learn-more">Află mai multe</a>
 addon-detail-private-browsing-allow = Permite
 addon-detail-private-browsing-disallow = Nu permite
-
-# This is the tooltip text for the recommended badge for an extension in about:addons. The
-# badge is a small icon displayed next to an extension when it is recommended on AMO.
-addon-badge-recommended =
-    .title = Recomandată
-    .alt = Recomandată
 
 # This is the tooltip text for the recommended badge for an extension in about:addons. The
 # badge is a small icon displayed next to an extension when it is recommended on AMO.

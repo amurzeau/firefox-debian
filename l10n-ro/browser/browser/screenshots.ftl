@@ -23,7 +23,7 @@ screenshots-notification-link-copied-title = Link copiat
 screenshots-notification-link-copied-details = Linkul către captura ta a fost copiat în clipboard. Apasă { screenshots-meta-key }-V pentru a lipi.
 
 screenshots-notification-image-copied-title = Captură copiată
-screenshots-notification-image-copied-details = Captura ți-a fost copiată în clipboard. Apasă { screenshots-meta-key }-V pentru a lipi.
+screenshots-notification-image-copied-details = Captura de ecran a fost copiată în clipboard. Apasă { screenshots-meta-key }-V pentru lipire.
 
 screenshots-request-error-title = Nefuncțional.
 screenshots-request-error-details = Ne pare rău! Nu am putut salva captura. Încearcă din nou mai târziu.

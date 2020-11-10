@@ -2,18 +2,12 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-do-not-track-description = Emondo ñanduti rendápe peteĩ kuaaharã “Jehapykueho'ỹ” ndereipotáiva ojehapykueho
+do-not-track-description = Emondo ñanduti rendápe kuaaharã “Jehapykueho’ỹ” ipota’ỹva ojehapykueho
 do-not-track-learn-more = Kuaave
 do-not-track-option-default-content-blocking-known =
     .label = { -brand-short-name } oñemboheko jave ojoko hag̃ua tapykuehohápe añoite
 do-not-track-option-always =
     .label = Katui
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Jeporavorã
-           *[other] Jerohoryvéva
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Jeporavorã
@@ -35,6 +29,8 @@ search-input-box =
            *[other] Eheka Jerohoryvévape
         }
 managed-notice = Pe kundaha rehe oñangareko atyguasu.
+category-list =
+    .aria-label = Mboja’opy
 pane-general-title = Tuichakue
 category-general =
     .tooltiptext = { pane-general-title }
@@ -50,6 +46,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name } Mba’epyahu
+category-experimental =
+    .tooltiptext = { -brand-short-name } Mba’epyahu
+pane-experimental-subtitle = Ejapóke mbeguekatu
+pane-experimental-search-results-header = { -brand-short-name } Mba’epyahu: Ejapo mbeguekatu
+pane-experimental-description = Iñambuévo umi eguerohoryvéva ñemboheko ombyaikuaa { -brand-short-name } rembiapokue ýrõ hekorosã.
 help-button-label = { -brand-short-name } mombytaha
 addons-button-label = Jepysokue ha téma
 focus-search =
@@ -61,8 +63,8 @@ close-button =
 
 feature-enable-requires-restart = { -brand-short-name } oñemoñepyrũjeyva’erã emyandy hag̃ua koichagua.
 feature-disable-requires-restart = { -brand-short-name } oñemoñepyrũjeyva’erã emboguete hag̃ua koichagua.
-should-restart-title = Ñepyrüjey { -brand-short-name }
-should-restart-ok = Emoñepyrũjey { -brand-short-name } ko'ág̃a
+should-restart-title = Ñepyrũjey { -brand-short-name }
+should-restart-ok = Emoñepyrũjey { -brand-short-name } ko’ág̃a
 cancel-no-restart-button = Heja
 restart-later = Emoñepyrũjey ag̃ave
 
@@ -78,10 +80,13 @@ restart-later = Emoñepyrũjey ag̃ave
 
 # This string is shown to notify the user that their home page
 # is being controlled by an extension.
-extension-controlled-homepage-override = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, oma'ẽag̃ui nde kuatiarogue ñepyrũ.
+extension-controlled-homepage-override = Jepysokue, <img data-l10n-name="icon"/> { $name }, oma’ẽag̃ui nde kuatiarogue ñepyrũre.
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
-extension-controlled-new-tab-url = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, oma'ẽag̃ui kuatiarogue rendayke pyahúre.
+extension-controlled-new-tab-url = Jepysokue, <img data-l10n-name="icon"/> { $name }, oma’ẽag̃ui kuatiarogue rendayke pyahúre.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, ohechahína ko ñemboheko.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, oma’ẽag̃ui ko ñemboheko rehe.
@@ -96,7 +101,7 @@ extension-controlled-privacy-containers = Peteĩ moĩmbaha, <img data-l10n-name=
 extension-controlled-websites-content-blocking-all-trackers = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, ohechahína ko ñemboheko.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
-extension-controlled-proxy-config = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, oma'ẽag̃ui { -brand-short-name } ramo ojuajúvo ñanduti rehe.
+extension-controlled-proxy-config = Peteĩ jepysokue, <img data-l10n-name="icon"/> { $name }, oma’ẽag̃ui { -brand-short-name } ramo ojuajúvo ñanduti rehe.
 # This string is shown after the user disables an extension to notify the user
 # how to enable an extension that they disabled.
 #
@@ -126,10 +131,10 @@ use-firefox-sync = Ñe’ẽkuaa: Kóva oipuru rechaukaha ipa’ũva. Oipuru { -
 get-started-not-logged-in = Eñemboheguapy { -sync-brand-short-name }…
 get-started-configured = Eike { -sync-brand-short-name } eguerohoryvévape
 always-check-default =
-    .label = Ehecha tapia ha'épa { -brand-short-name } kundaha ypykuéva
+    .label = Ehecha tapia ha’épa { -brand-short-name } kundaha ypykuéva
     .accesskey = y
-is-default = { -brand-short-name } ko'ág̃a nde hekaha ypykuéva
-is-not-default = { -brand-short-name } ndaha'éi kundahára ypykuéva
+is-default = { -brand-short-name } ko’ág̃a nde hekaha ypykuéva
+is-not-default = { -brand-short-name } ndaha’éi kundahára ypykuéva
 set-as-my-default-browser =
     .label = Ejapo chugui yjypykuéva…
     .accesskey = D
@@ -154,10 +159,10 @@ warn-on-open-many-tabs =
     .label = Emomarandúrõ eiketaha heta tendayképe ikatu omombegue down { -brand-short-name }
     .accesskey = d
 switch-links-to-new-tabs =
-    .label = Eikévo peteĩ joajuha ovetã pyahúpe, eho pépe pya'eterei
+    .label = Eikévo peteĩ joajuha ovetã pyahúpe, eho pépe pya’eterei
     .accesskey = h
 show-tabs-in-taskbar =
-    .label = Ehechauka chéve tendayke ra'ãnga'i Windows rembiaporã rendápe.
+    .label = Ehechauka chéve tendayke ra’ãnga’i Windows rembiaporã rendápe.
     .accesskey = k
 browser-containers-enabled =
     .label = Embojuruja tendayke guerekoha
@@ -169,8 +174,8 @@ browser-containers-settings =
 containers-disable-alert-title = ¿Emmbotypaite tendayke guerekoha pegua?
 containers-disable-alert-desc =
     { $tabCount ->
-        [one] Embotýramo ko'ág̃a umi guerekoha rendayke, tendayke guerekoha { $tabCount } oñembotýta. ¿Embotyse añetehápe tendayke guerekoha?
-       *[other] Embotýramo tendayke guerekoha ko'ág̃a, umi tendayke guerekoha { $tabCount } oñembotýta. ¿Embotyse añetehápe tendayke guerekoha?
+        [one] Embotýramo ko’ág̃a umi guerekoha rendayke, tendayke guerekoha { $tabCount } oñembotýta. ¿Embotyse añetehápe tendayke guerekoha?
+       *[other] Embotýramo tendayke guerekoha ko’ág̃a, umi tendayke guerekoha { $tabCount } oñembotýta. ¿Embotyse añetehápe tendayke guerekoha?
     }
 containers-disable-alert-ok-button =
     { $tabCount ->
@@ -192,7 +197,7 @@ containers-remove-cancel-button = Aníke eipe’a ko guerekoha
 ## General Section - Language & Appearance
 
 language-and-appearance-header = Ñe’ẽ ha Mba’ejeguarã
-fonts-and-colors-header = Taity ha sa'ykuéra
+fonts-and-colors-header = Taity ha sa’ykuéra
 default-font = Teñoiha ijypykuéva:
     .accesskey = D
 default-font-size = Tuichakue:
@@ -201,7 +206,7 @@ advanced-fonts =
     .label = Opanungáva…
     .accesskey = A
 colors-settings =
-    .label = Sa'y…
+    .label = Sa’y…
     .accesskey = C
 # Zoom is a noun, and the message is used as header for a group of options
 preferences-zoom-header = Moañete
@@ -212,8 +217,8 @@ preferences-default-zoom-value =
 preferences-zoom-text-only =
     .label = Emoañete moñe’ẽrã año
     .accesskey = t
-language-header = Ñe'ẽ
-choose-language-description = Eipoiravo pe ñe'ẽ erohoryvéva ehechauka hag̃ua ñanduti kuatiarogue
+language-header = Ñe’ẽ
+choose-language-description = Eipoiravo pe ñe’ẽ erohoryvéva ehechauka hag̃ua ñanduti kuatiarogue
 choose-button =
     .label = Poravo…
     .accesskey = o
@@ -224,14 +229,14 @@ manage-browser-languages-button =
 confirm-browser-language-change-description = Emoñepyrũjey { -brand-short-name } oñemboheko hag̃ua ko’ã moambuepyre
 confirm-browser-language-change-button = Mohembiapo ha ñepyrũjey
 translate-web-pages =
-    .label = Ñanduti retepy ñe'ẽasa
+    .label = Ñanduti retepy ñe’ẽasa
     .accesskey = T
 # The <img> element is replaced by the logo of the provider
 # used to provide machine translations for web pages.
-translate-attribution = Ñe'ẽasaha <img data-l10n-name="logo"/>
+translate-attribution = Ñe’ẽasaha <img data-l10n-name="logo"/>
 translate-exceptions =
-    .label = Oĩ'ỹva…
-    .accesskey = ĩ
+    .label = Oĩ’ỹva…
+    .accesskey = x
 # Variables:
 #    $localeName (string) - Localized name of the locale to be used.
 use-system-locale =
@@ -245,7 +250,7 @@ check-user-spelling =
 files-and-applications-title = Marandurenda ha Tembipuru’i
 download-header = Ñemboguejy
 download-save-to =
-    .label = Marandurenda ñongatu ko'ápe
+    .label = Marandurenda ñongatu ko’ápe
     .accesskey = v
 download-choose-folder =
     .label =
@@ -353,25 +358,18 @@ update-history =
     .accesskey = p
 update-application-allow-description = Emomeĩ { -brand-short-name }
 update-application-auto =
-    .label = Emohenda ñembohekopyahu ijeheguíva (je'epyréva)
+    .label = Emohenda ñembohekopyahu ijeheguíva (je’epyréva)
     .accesskey = A
 update-application-check-choose =
     .label = Tekopyahu jejhechajeýva, hákatu eheja taiporavo amboguejysépa
     .accesskey = C
 update-application-manual =
-    .label = Ani eheka ñembohekopyahu (jerovia'ỹ)
-    .accesskey = A
+    .label = Ani eheka ñembohekopyahu (jerovia’ỹ)
+    .accesskey = N
 update-application-warning-cross-user-setting = Ko ñemboheko ojogueraháta opaite Windows mba’ete ndive ha umi teratee { -brand-short-name } rehegua oipurúvo ko { -brand-short-name } ñemohenda.
 update-application-use-service =
     .label = Eipuru peteĩ mba’epytyvõrã mokõiha pegua remboguejy hag̃ua tekopyahu
     .accesskey = b
-update-enable-search-update =
-    .label = Jehekaha mongu’eha ñembohekopyahu ijeheguíva
-    .accesskey = e
-update-pref-write-failure-title = Ojavy jehai
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Ndaikatúi eñongatu pe jeguerohoryvéva. Ndaikatúi ehai marandurendápe: { $path }
 update-setting-write-failure-title = Ojavy eñongatúvo mbohekopyahu eguerohoryvéva
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -392,12 +390,12 @@ update-in-progress-cancel-button = &Ku’ejey
 
 performance-title = Mba’eaporã
 performance-use-recommended-settings-checkbox =
-    .label = Eipuru ñemboheko tembiapokue oje'epyréva
-    .accesskey = E
-performance-use-recommended-settings-desc = Ko'ã ñemoĩporã oñombojuehe hardware ha ne mohendaha apopyvusu rembiapo rehe.
+    .label = Eipuru ñemboheko tembiapokue oje’epyréva
+    .accesskey = U
+performance-use-recommended-settings-desc = Ko’ã ñemoĩporã oñombojuehe hardware ha ne mohendaha apopyvusu rembiapo rehe.
 performance-settings-learn-more = Kuaave
 performance-allow-hw-accel =
-    .label = Hardware mbopya'eha oĩmba vove jepuru
+    .label = Hardware mbopya’eha oĩmba vove jepuru
     .accesskey = r
 performance-limit-content-process-option = Tetepy ha tembe’y mba’eapo
     .accesskey = l
@@ -421,15 +419,19 @@ browsing-use-onscreen-keyboard =
     .label = Ehechauka peteĩ tairenda jepokokuaáva oñeikotevẽ jave
     .accesskey = k
 browsing-use-cursor-navigation =
-    .label = Eipuru tapia tairenda hu'ykuéra aikundaha kuatiaroguépe
-    .accesskey = c
+    .label = Eipuru tapia tairenda hu’ykuéra aikundaha kuatiaroguépe
+    .accesskey = k
 browsing-search-on-start-typing =
-    .label = Eheka moñe'ẽrã ehaikuévo
+    .label = Eheka moñe’ẽrã ehaikuévo
     .accesskey = x
 browsing-picture-in-picture-toggle-enabled =
     .label = Embojuruja ta’ãngamýi ñangarekoha picture-in-picture
     .accesskey = E
 browsing-picture-in-picture-learn-more = Kuaave
+browsing-media-control =
+    .label = Ehecha tairenda, henduha térã jehechaha ñandutigua ndive
+    .accesskey = v
+browsing-media-control-learn-more = Kuaave
 browsing-cfr-recommendations =
     .label = Eñe’eporã jepysokue rehe eikumdaha aja
     .accesskey = R
@@ -493,13 +495,14 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Tenda Ojeikevéva
 home-prefs-topsites-description = Umi tenda ojeikeveha
+home-prefs-topsites-by-option-sponsored =
+    .label = Tenda tuicha ojehepyme’ẽva
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
-    .label = { $provider } he'i ndéve reike hag̃ua
-home-prefs-recommended-by-description = Iporãvéva ñanduti retepy, oñemomba’éva ndéve g̃uarã
+    .label = { $provider } he’i ndéve reike hag̃ua
 home-prefs-recommended-by-description-update = Tetepy oikoitéva ñanduti tuichakuépe, ohepyme’ẽva { $provider }
 
 ##
@@ -540,19 +543,18 @@ search-bar-hidden =
 search-bar-shown =
     .label = Toñembojoaju jeheka renda tembipuru rendápe
 search-engine-default-header = Hekaha ypykuéva
-search-engine-default-desc = Eiporavo hekaha mongu’eha ijypykuéva eipuru hag̃ua kundaharape ha jehekaha rendápe.
 search-engine-default-desc-2 = Kóva nde jeheka mongu’eha ypyguáva kundaharape renda ha jehekeha rendápe.
 search-engine-default-private-desc-2 = Emoĩ jeheka mongu’eha ypyguáramo ovetã ñemíme g̃uarã
 search-separate-default-engine =
     .label = Eipuru ko jehekaha mongu’eha ovetã ñemíme.
     .accesskey = U
-search-suggestions-header = Ñe'ẽporã jehekarã
-search-suggestions-desc = Eiporavo mba’éichapa osẽta ñe'ẽporã jehekaha mongu’eha.
+search-suggestions-header = Ñe’ẽporã jehekarã
+search-suggestions-desc = Eiporavo mba’éichapa osẽta ñe’ẽporã jehekaha mongu’eha.
 search-suggestions-option =
-    .label = Ehechauka ñe'ẽreka joguaha
+    .label = Ehechauka ñe’ẽreka joguaha
     .accesskey = s
 search-show-suggestions-url-bar-option =
-    .label = Ehechauka ñe'ẽreka joguaha kundaharape ha avei jejuhu hague rendápe
+    .label = Ehechauka ñe’ẽreka joguaha kundaharape ha avei jejuhu hague rendápe
     .accesskey = l
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
@@ -560,13 +562,13 @@ search-show-suggestions-url-bar-option =
 # "ahead" refers to location (appearing most proximate to), not time
 # (appearing before).
 search-show-suggestions-above-history-option =
-    .label = Tojechauka kundaharape rendápe ñe'ẽreka joguaha tembiasakue mboyve
+    .label = Tojechauka kundaharape rendápe ñe’ẽreka joguaha tembiasakue mboyve
 search-show-suggestions-private-windows =
     .label = Ehechauka jehekaha Windows ñemiguávape
-suggestions-addressbar-settings = Emoambue jerohoryvéva kundaha rembiasakuépe g̃uarã, techaukaha ha tendayke jepururã.
 suggestions-addressbar-settings-generic = Emoambue erohoryvéva ambue ñe’ãporãpe g̃uarã kundaharape rendápe
 search-suggestions-cant-show = Jeheka je’epyréva ndojekuaamo’ãi kundaharape renda apopyrépe, oñembohekóma rupi { -brand-short-name } aníke nemandu’a tembiasakuére.
 search-one-click-header = Jehekaha mongu’eha jekutu peteĩva
+search-one-click-header2 = Jeheka mbopya’eha
 search-one-click-desc = Eiporavo hekaha mongu’eha mbojopyrukuaa ojekuaáva kundaharape ha jehekaha renda guýpe eñepyrũvo emoinge pe ñe’ẽ ñemigua.
 search-choose-engine-column =
     .label = Jehekaha
@@ -578,10 +580,13 @@ search-restore-default =
 search-remove-engine =
     .label = Pe’a
     .accesskey = R
+search-add-engine =
+    .label = Mbojuaju
+    .accesskey = A
 search-find-more-link = Ejuhu hetave hekaha mongu’eha
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
-search-keyword-warning-title = Jehero jo'apyre
+search-keyword-warning-title = Jehero jo’apyre
 # Variables:
 #   $name (String) - Name of a search engine.
 search-keyword-warning-engine = Eiporavókuri peteĩ jehero oipurúmava "{ $name }". Ikatúpiko eiporavo ambue.
@@ -589,7 +594,6 @@ search-keyword-warning-bookmark = Eiporavókuri peteĩ jehero oipurúmava ambue 
 
 ## Containers Section
 
-containers-back-link = « Ou jey
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -608,20 +612,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Mboguete
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Egueraha neñanduti nendive
 sync-signedout-description = Embojuehe nde rechaukaha, tembiasakue, tendayke, ñe’ẽñemi, moĩmbaha ha jerohoryvéva opaite nemba’e’oka rupi.
-sync-signedout-account-title = Eike { -fxaccount-brand-name } ndive
-sync-signedout-account-create = Nanemba’etéi gueteri piko? Ejapomi
-    .accesskey = c
-sync-signedout-account-signin =
-    .label = Eike…
-    .accesskey = I
 sync-signedout-account-signin2 =
     .label = Eñepyrũ tembiapo { -sync-brand-short-name }-pe…
     .accesskey = i
@@ -635,16 +630,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Emboguejy Aguaratata kóvape g̃uarã:<img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> térã <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> embojuehe hag̃ua nemba’e’oka oku’éva rehe.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Emoambue nera’ãnga nemba’ete pegua
-sync-disconnect =
-    .label = Ñesẽte…
-    .accesskey = D
 sync-sign-out =
     .label = Ñesẽte
     .accesskey = ñ
@@ -661,8 +650,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Eñemboheraguapy
     .accesskey = g
-sync-signedin-settings-header = Ñembojuehe ñemoĩporã
-sync-signedin-settings-desc = Eiporavo mba’éichapa embojuehéta nemba’e’oka { -brand-short-name } ndive.
 
 ## Sync section - enabling or disabling sync.
 
@@ -685,7 +672,7 @@ sync-currently-syncing-history = Tembiasakue
 sync-currently-syncing-tabs = Tendayke ijurujáva
 sync-currently-syncing-logins-passwords = Tembiapo ñepyrũ ha ñe’ẽñemi
 sync-currently-syncing-addresses = Kundaharape
-sync-currently-syncing-creditcards = Kuatia'atã ñemurã
+sync-currently-syncing-creditcards = Kuatia’atã ñemurã
 sync-currently-syncing-addons = Moĩmbaha
 sync-currently-syncing-prefs =
     { PLATFORM() ->
@@ -715,10 +702,6 @@ sync-engine-tabs =
     .label = Tendayképe jeike
     .tooltiptext = Tysýi ojehechaukahápe opa mba’e jurujáva oĩva mba’e’oka mbojuehepyrépe
     .accesskey = T
-sync-engine-logins =
-    .label = Tembiapo moñepyrũ
-    .tooltiptext = Puruhára réra ha ñe’ẽñemi reñongatúva’ekue
-    .accesskey = L
 sync-engine-logins-passwords =
     .label = Tembiapo ñepyrũ ha ñe’ẽñemi
     .tooltiptext = Puruhára réra ha ñe’ẽñemi ñongatupyre
@@ -728,7 +711,7 @@ sync-engine-addresses =
     .tooltiptext = Pareha Papapy reñongatuva’ekue (mohendahápe g̃uarãnte)
     .accesskey = e
 sync-engine-creditcards =
-    .label = Kuatia'atã ñemurã
+    .label = Kuatia’atã ñemurã
     .tooltiptext = Téra, papapy ha ndoikoveimaha arange (mohendahápe g̃uarã)
     .accesskey = C
 sync-engine-addons =
@@ -757,18 +740,10 @@ sync-device-name-save =
     .label = Eñongatu
     .accesskey = v
 sync-connect-another-device = Embojuaju ambue mba’e’oka
-sync-manage-devices = Eñangareko mba’e’okáre
-sync-fxa-begin-pairing = Embojoja mba’e’oka
-sync-tos-link = Mba’epytyvõrã ñemboguata
-sync-fxa-privacy-notice = Purureko ñemiguáva momarandu
 
 ## Privacy Section
 
 privacy-header = Kundahára Ñemigua
-
-## Privacy Section - Forms
-
-logins-header = Tembiapo ñepyrũ ha ñe’ẽñemi
 
 ## Privacy Section - Logins and Passwords
 
@@ -780,7 +755,7 @@ forms-ask-to-save-logins =
     .label = Eporandu eñongatu hag̃ua tembiapo ñepyrũ ha ñe’ẽñemi ñandutípe
     .accesskey = E
 forms-exceptions =
-    .label = Oĩ'ỹva
+    .label = Oĩ’ỹva…
     .accesskey = x
 forms-generate-passwords =
     .label = Ere ha emoheñói ñe’ẽñemi hekorosãva
@@ -797,13 +772,28 @@ forms-saved-logins =
     .label = Emoñepyrũ tembiapo ñongatupyre…
     .accesskey = L
 forms-master-pw-use =
-    .label = Ñe'ẽñemiguasu puru
+    .label = Ñe’ẽñemiguasu puru
     .accesskey = U
+forms-primary-pw-use =
+    .label = Eipuru ñe’ẽñemi ñepyrũgua
+    .accesskey = U
+forms-primary-pw-learn-more-link = Eikuaave
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
-    .label = Ñe'ẽñemiguasu moambue...
+    .label = Ñe’ẽñemiguasu moambue…
     .accesskey = M
-forms-master-pw-fips-title = Ko'ag̃aite oĩhína FIPS rekópe. FIPS oikotevẽ ñe'ẽñemiete inandi'ỹva.
-forms-master-pw-fips-desc = Ñe'ẽñemi moambue jejavy
+forms-master-pw-fips-title = Ko’ag̃aite oĩhína FIPS rekópe. FIPS oikotevẽ ñe’ẽñemiete inandi’ỹva.
+forms-primary-pw-change =
+    .label = Emoambue ñe’ẽñemi ha’etéva…
+    .accesskey = P
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = Ymave ojehero Ñe’ẽñemi Ha’etéva
+forms-primary-pw-fips-title = Ko’ag̃aite eime FIPS rekópe. FIPS oikotevẽ ñe’ẽñemi ñepyrũgua inandi’ỹva.
+forms-master-pw-fips-desc = Ñe’ẽñemi moambue jejavy
 
 ## OS Authentication dialog
 
@@ -814,6 +804,13 @@ master-password-os-auth-dialog-message-win = Emoheñói hag̃ua ñe’ẽñemi h
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = emoheñói ñe’ẽñemi ha’etéva
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Emoheñói hag̃ua ñe’ẽñemi ha’etéva, emoinge nde reraite Windows rembiapo ñepyrũme. Oipytyvõta emo’ãvo ne mba’etekuéra rekorosã.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = emoheñói Ñe’ẽñemi Ñepyrũgua
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -848,8 +845,8 @@ history-remember-search-option =
     .label = Tembiasakue myanyhẽha ha jehekaha momangu’a
     .accesskey = f
 history-clear-on-close-option =
-    .label = Tembiasakue Mopotï { -brand-short-name } oñembotývo
-    .accesskey = M
+    .label = Tembiasakue Mopotĩ { -brand-short-name } oñembotývo
+    .accesskey = r
 history-clear-on-close-settings =
     .label = Ñemboheko…
     .accesskey = t
@@ -880,12 +877,14 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Peteĩchagua tetepy jokopyre
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Mbohapyháva rekaha
 sitedata-option-block-cross-site-trackers =
     .label = Tenda ojoasáva rapykuehóva
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Tenda ha ava ñandutieta rapykuehoha
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Kookie tapykuehoha tenda pa’ũme — oĩhápe ava ñandutieta kookie
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Kookie tenda pa’ũme —oĩhápe ava ñandutieta kookie
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Tenda ha ava ñandutieta rapykuehoha, ha eipe’a kookie hembýva
 sitedata-option-block-unvisited =
@@ -910,7 +909,7 @@ sitedata-cookies-exceptions =
 ## Privacy Section - Address Bar
 
 addressbar-header = Kundaharape renda
-addressbar-suggest = Eipurúramo kundaharape renda, eñemoñe'ẽ
+addressbar-suggest = Eipurúramo kundaharape renda, eñemoñe’ẽ
 addressbar-locbar-history-option =
     .label = Kundaha rembiasakue
     .accesskey = h
@@ -927,27 +926,9 @@ addressbar-suggestions-settings = Jerohoryvéva jehekaha mongu’eha je’epyre 
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Ejoko tetepy
-content-blocking-section-description = Emo’ã nde rekoñemi eikundahakuévo. Ejoko tetepy ohapykuehóva umi tenda eike hague ha ojapo mba’ete. Ejokóvo ndahetái tetepy ikatuhína ombopya’eve kuatiarogue ñemyenyhẽ.
 content-blocking-enhanced-tracking-protection = Tapykueho mo’ãha iporãvéva
 content-blocking-section-top-level-description = Umi tapykuehoha oike ñandutípe ombyaty hag̃ua marandu umi nerembiapo rapykuere. { -brand-short-name } ojoko heta tapykuehoha ha ambue scripts imarãva.
 content-blocking-learn-more = Eikuaave
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Ypygua
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Mbaretépe
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Ñemomba’e
-    .accesskey = C
-content-blocking-standard-desc = Ijojáva omo’ã ha oikoporã hag̃ua. Omoneĩ ndahetái tapykuehápe ikatu hag̃uáicha ñanduti renda oiko hekopete.
-content-blocking-strict-description = Peteĩ ñemo’ã imbaretevéva ikatu ombojavyka ndahetái tenda.
-content-blocking-custom-desc = Eiporavo mba’etépa ejokóta.
-content-blocking-private-trackers = Jehekaha ojekuaáva ovetã ñemiguápe añoite
-content-blocking-third-party-cookies = Jehekaha kookie mbohapyguáva
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -969,28 +950,23 @@ content-blocking-etp-standard-desc = Imbytéva ñemo’ã ha tembiapokuépe g̃u
 content-blocking-etp-strict-desc = Ñemo’ãve, hákatu ikatu ndahetái tenda térã tetepy nahenyhẽi.
 content-blocking-etp-custom-desc = Eiporavo mba’ete tapykuehoha ha scripts ejokose.
 content-blocking-private-windows = Tetepy rapykueho ovetã ñemíme
+content-blocking-cross-site-cookies = Kookie tenda pa’ũme
 content-blocking-cross-site-tracking-cookies = Kookie rapykuehoha hendaitáva
 content-blocking-cross-site-tracking-cookies-plus-isolate = Kookie rapykueho tendápe ha eipe’a kookie hembýva
 content-blocking-social-media-trackers = Ava ñandutieta rapykuehoha
 content-blocking-all-cookies = Opavavete kookie
 content-blocking-unvisited-cookies = Kookie eike’ỹ hague
-content-blocking-all-windows-trackers = Jehekaha ojekuaáva opaite ovetãme
 content-blocking-all-windows-tracking-content = Tetepy rapykuehoha opaite ovetãme
 content-blocking-all-third-party-cookies = Opaite kookie mbohapyguáva
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
-content-blocking-warning-title = ¡Ema'ẽmi!
-content-blocking-warning-description = Tetepy jejoko ikatu nomomba’apo porãi ñanduti renda. Ikatúramo eipe’a pe jokoha tenda ejeroviaha pegua.
-content-blocking-learn-how = Mba’éicha eikuaa
+content-blocking-warning-title = ¡Ema’ẽmi!
 content-blocking-and-isolating-etp-warning-description = Ejokóvo tapykuehoha ha kookie ñemomombyry ikatu ombyai peteĩva tembiapoite. Emyanyhẽjey kuatiarogue tapykuehoha ndive emyanyhẽ hag̃ua opaite tetepy.
 content-blocking-warning-learn-how = Mba’éichapa eikuaáta
 content-blocking-reload-description = Emonyhẽjeyva’erã umi tendayke oiko hag̃ua ko’ã moambuepyre.
 content-blocking-reload-tabs-button =
     .label = Embohekopyahu opaite tendayke
     .accesskey = E
-content-blocking-trackers-label =
-    .label = Hekahára
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = Tetepy rapykuehoha
     .accesskey = T
@@ -1037,7 +1013,7 @@ permissions-camera = Cámara
 permissions-camera-settings =
     .label = Ñangareko…
     .accesskey = t
-permissions-microphone = Ñe'ẽmbotuichaha
+permissions-microphone = Ñe’ẽmbotuichaha
 permissions-microphone-settings =
     .label = Ñangareko…
     .accesskey = t
@@ -1049,12 +1025,6 @@ permissions-notification-link = Eikuaave
 permissions-notification-pause =
     .label = Tojejoko momarandu’i oñepyrũjey peve { -brand-short-name }
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Ejoko ñanduti renda ani hag̃ua omboheta ñe’ẽpu ijehegui
-    .accesskey = E
-permissions-block-autoplay-media-exceptions =
-    .label = Ykepegua...
-    .accesskey = E
 permissions-autoplay = Mbohetajehegui
 permissions-autoplay-settings =
     .label = Ñemboheko
@@ -1063,13 +1033,13 @@ permissions-block-popups =
     .label = Ovetã apysẽ joko
     .accesskey = B
 permissions-block-popups-exceptions =
-    .label = Oĩ'ỹva…
+    .label = Oĩ’ỹva…
     .accesskey = E
 permissions-addon-install-warning =
     .label = Ehechakuaa oĩ jave tenda omohendaséva moĩmbaha.
     .accesskey = E
 permissions-addon-exceptions =
-    .label = Oĩ'ỹva…
+    .label = Oĩ’ỹva…
     .accesskey = E
 permissions-a11y-privacy-checkbox =
     .label = Ejoko tembipuru jeikekuaa rehegua ne kundahárape
@@ -1079,7 +1049,7 @@ permissions-a11y-privacy-link = Kuaave
 ## Privacy Section - Data Collection
 
 collection-header = { -brand-short-name } Ñembyaty ha mba’ekuaarã jepuru
-collection-description = Roñeha’ã mbarete rome’ẽ hag̃ua jeporavorã ha rombyaty roikotevẽva rome’ẽ añoite ha romoĩporãve { -brand-short-name } arapy tuichakue javépe g̃uarã. Rojerure tapia ñemoneĩ marandu og̃uahẽ mboyve oréve.
+collection-description = Roñeha’ãmbaite rome’ẽ hag̃ua jeporavorã ha rombyaty roikotevẽva rome’ẽ añoite ha romoĩporãve { -brand-short-name } arapy tuichakue javépe g̃uarã. Rojerure tapia ñemoneĩ marandu og̃uahẽ mboyve oréve.
 collection-privacy-notice = Marandu Ñemigua
 collection-health-report-telemetry-disabled = Nomoneĩvéima { -vendor-short-name } ojapyhývo mba’ekuaarã aporekogua ha oñondiveguáva. Opaite mba’ekuaarã itujavéva oguéta 30 ára ohasávo.
 collection-health-report-telemetry-disabled-link = Kuaave
@@ -1116,7 +1086,7 @@ security-block-downloads =
     .label = Ejoko ñemboguejy kyhyjerãva
     .accesskey = d
 security-block-uncommon-software =
-    .label = Ejesareko software oiko'ỹva ha ojekuaa'ỹva
+    .label = Ejesareko software oiko’ỹva ha ojekuaa’ỹva
     .accesskey = c
 
 ## Privacy Section - Certificates
@@ -1160,7 +1130,19 @@ space-alert-over-5gb-message =
 space-alert-under-5gb-ok-button =
     .label = OK, arekóma
     .accesskey = K
-space-alert-under-5gb-message = { -brand-short-name } opyta hína disco pa'ũ'ỹre. Ikatu hína ñanduti renda retepy ndojehechaukái hekopete. Eike “Kuaave” eipuru porã hag̃ua disco ne kundaha hekoresãi hag̃ua avei.
+space-alert-under-5gb-message = { -brand-short-name } opyta disco pa’ũ’ỹre. Ikatu hína ñanduti renda retepy ndojehechaukái hekopete. Eike “Kuaave” eipuru porã hag̃ua disco ne kundaha hekoresãi hag̃ua avei.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = HTTPS año ayvu
+httpsonly-description = HTTPS ome’ẽ jeikekatu ha ipapapýva { -brand-short-name } ha ñanduti renda eike hague pa’ũme. Heta ñanduti renda omoneĩ HTTPS, ha pe ayvu ha’eñóva-HTTPS oñemoneĩma, upévare { -brand-short-name } ombohekopyahúta opaite HTTPS-pe jeike.
+httpsonly-learn-more = Eikuaave
+httpsonly-radio-enabled =
+    .label = Emyandy HTTPS año ayvu opaite ovetãme
+httpsonly-radio-enabled-pbm =
+    .label = Embojuruja HTTPS año ayvu opaite ovetãme
+httpsonly-radio-disabled =
+    .label = Ani embojuruja HTTPS año ayvu
 
 ## The following strings are used in the Download section of settings
 

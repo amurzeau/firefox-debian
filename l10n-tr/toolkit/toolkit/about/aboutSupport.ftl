@@ -14,6 +14,12 @@ extensions-name = Adı
 extensions-enabled = Etkin mi?
 extensions-version = Sürüm
 extensions-id = Kimlik
+support-addons-title = Eklentiler
+support-addons-name = Adı
+support-addons-type = Tür
+support-addons-enabled = Etkin
+support-addons-version = Sürüm
+support-addons-id = Kimlik
 security-software-title = Güvenlik yazılımları
 security-software-type = Türü
 security-software-name = Adı
@@ -59,6 +65,7 @@ app-basics-service-workers = Kayıtlı Service Worker'lar
 app-basics-profiles = Profiller
 app-basics-launcher-process-status = Başlatıcı işlemi
 app-basics-multi-process-support = Çok işlemli pencereler
+app-basics-fission-support = Fission pencereleri
 app-basics-remote-processes-count = Uzak işlemler
 app-basics-enterprise-policies = Kurumsal ilkeler
 app-basics-location-service-key-google = Google Konum Hizmeti anahtarı
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] Klasörü aç
        *[other] Dizini aç
     }
+environment-variables-title = Ortam değişkenleri
+environment-variables-name = Adı
+environment-variables-value = Değer
+experimental-features-title = Deneysel özellikler
+experimental-features-name = Adı
+experimental-features-value = Değer
 modified-key-prefs-title = Değiştirilmiş önemli tercihler
 modified-prefs-name = Adı
 modified-prefs-value = Değer
@@ -95,8 +108,6 @@ graphics-desktop-environment = Masaüstü ortamı
 place-database-title = Places veritabanı
 place-database-integrity = Bütünlük
 place-database-verify-integrity = Bütünlüğü doğrula
-js-title = JavaScript
-js-incremental-gc = Artırımlı GC
 a11y-title = Erişilebilirlik
 a11y-activated = Etkinleştirildi mi?
 a11y-force-disabled = Erişilebilirliği engelle
@@ -126,7 +137,6 @@ restart-button-label = Yeniden başlat
 
 audio-backend = Ses arka ucu
 max-audio-channels = En fazla kanal
-channel-layout = Tercih edilen kanal düzeni
 sample-rate = Tercih edilen örnek oranı
 roundtrip-latency = Gidiş dönüş gecikmesi (standart sapma)
 media-title = Ortam
@@ -263,11 +273,13 @@ blocklisted-bug = Bilinen sorunlar nedeniyle engellendi
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Bilinen sorunlar nedeniyle engellendi: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Engellendi. Hata kodu { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video Çözücüsü
-d3d9video-crash-buard = D3D9 Video Çözücüsü
 d3d9video-crash-guard = D3D9 Video Çözücüsü
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX video çözücüsü
@@ -315,6 +327,20 @@ multi-process-status-6 = Desteklenmeyen metin girdisi tarafından devre dışı 
 multi-process-status-7 = Eklentiler tarafından devre dışı bırakıldı
 multi-process-status-8 = Zorla devre dışı bırakıldı
 multi-process-status-unknown = Bilinmeyen durum
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Deney tarafından kapatıldı
+fission-status-experiment-treatment = Deney tarafından açıldı
+fission-status-disabled-by-e10s-env = Ortam tarafından kapatıldı
+fission-status-enabled-by-env = Ortam tarafından açıldı
+fission-status-disabled-by-safe-mode = Güvenli mod tarafından kapatıldı
+fission-status-enabled-by-default = Varsayılan olarak açık
+fission-status-disabled-by-default = varsayılan olarak kapalı
+fission-status-enabled-by-user-pref = kullanıcı tarafından açıldı
+fission-status-disabled-by-user-pref = Kullanıcı tarafından kapatıldı
+fission-status-disabled-by-e10s-other = E10s devre dışı
 async-pan-zoom = Asenkron kaydır/yakınlaştır
 apz-none = yok
 wheel-enabled = tekerlek girdisi etkin
@@ -335,3 +361,12 @@ touch-warning = desteklenmeyen tercih nedeniyle asenkron dokunma girdisi devre d
 policies-inactive = Pasif
 policies-active = Aktif
 policies-error = Hata
+
+## Printing section
+
+support-printing-title = Yazdırma
+support-printing-troubleshoot = Sorun giderme
+support-printing-clear-settings-button = Kayıtlı yazdırma ayarlarını temizle
+support-printing-modified-settings = Değiştirilmiş yazdırma ayarları
+support-printing-prefs-name = Ad
+support-printing-prefs-value = Değer

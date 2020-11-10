@@ -152,7 +152,7 @@ cfr-whatsnew-fingerprinter-counter-header =
     }
 cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } yeruq'ät k'ïy taq fingerprinter, ri yekimöl pan ewäl ri retamab'al awokisab'al chuqa' taq b'anoj richin ninuk' jun ruwäch ab'i' chi rij eltzijol.
 # Message variation when fingerprinters count is less than 10
-cfr-whatsnew-fingerprinter-counter-header-alt = Fingerprinter
+cfr-whatsnew-fingerprinter-counter-header-alt = Fingerprinters
 cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } nitikïr yeruq'ät taq fingerprinter, ri yekimöl pan ewäl ri retamab'al awokisab'al chuqa' taq b'anoj richin ninuk' jun ruwäch ab'i' chi rij eltzijol.
 
 ## Bookmark Sync
@@ -165,7 +165,7 @@ cfr-doorhanger-sync-bookmarks-ok-button = Titzij { -sync-brand-short-name }
 ## Login Sync
 
 cfr-doorhanger-sync-logins-header = Man Tasäch chik jun Ewan Tzij
-cfr-doorhanger-sync-logins-body = Ütz ke'ayaka' ri ewan taq atzij chuqa' ke'axima' pa ronojel taq awokisab'al.
+cfr-doorhanger-sync-logins-body = Ütz ke'ayaka' ri ewan taq atzij chuqa' ke'axima' pa ronojel awokisab'al.
 cfr-doorhanger-sync-logins-ok-button = Titzij { -sync-brand-short-name }
     .accesskey = T
 
@@ -211,6 +211,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Titzet Ronojel
     .accesskey = t
+cfr-doorhanger-milestone-close-button = Titz'apïx
+    .accesskey = t
 
 ## What’s New Panel Content for Firefox 76
 
@@ -244,3 +246,35 @@ cfr-whatsnew-protections-icon-alt = Ruwachib'al Pokob'
 
 cfr-whatsnew-better-pdf-header = Jeb'ël etamab'äl chi rij PDF
 cfr-whatsnew-better-pdf-body = Wakami ri aj PDF taq wuj jumul yejaq pa { -brand-short-name }, akuchi' k'o apon pan aq'a' ronojel ri asamaj.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = K'o rejqalem ri awichinanem. { -brand-short-name } wakami nrojqaj rub'ey pa jikil rub'eyal ri DNS taq k'utuj, akuchi' k'o chi k'o jun achib'ilan samaj richin yatruchajij toq yatok pa k'amaya'l.
+cfr-doorhanger-doh-header = Kikanoxik jikïl chuqa' man etaman ta rusik'ixik taq DNS
+cfr-doorhanger-doh-primary-button = ÜTZ, Wetaman chik
+    .accesskey = T
+cfr-doorhanger-doh-secondary-button = Tichup
+    .accesskey = h
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = K'o rejqalem ri awichinanem. { -brand-short-name } wakami yerujech'uj, kikojol taq ajk'amaya'l ruxaq, ri nub'än chi ri eleq'om taq kematz'ib'il nikeleq'aj ewan taq tzij, rajilab'al rutarjeta' kre'ito' chuqa' jun chik awetamab'al.
+cfr-doorhanger-fission-header = Rujech'unïk Ruxaq
+cfr-doorhanger-fission-primary-button = ÜTZ, Wetaman chik
+    .accesskey = Ü
+cfr-doorhanger-fission-secondary-button = Tetamäx ch'aqa' chik
+    .accesskey = e
+# Deprecated
+cfr-doorhanger-fission-body = { -brand-short-name } xutzïj jun tojtob'enel rub'anikil Fission (rujech'unik ruxaq). Toq nijech'üx jujun ruxaq pa kiyonil, Fission nuküch rik'in jun rutz'aqat jikomal chuqa' ronojel ri ajk'amaya'l taq ruxaq ye'atz'ët.
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Yonil taq chajinïk chuwäch q'olonel rub'eyal richin ojqanem
+cfr-whatsnew-clear-cookies-body = Jujun ojqanela' yatkik'waj pa juley taq ajk'amaya'l ruxaq ri nikib'än kinuk'ulem cookies pan ewäl. { -brand-short-name } ruyonil yeruyüj wakami ri cookies richin man katkojqaj ta.
+cfr-whatsnew-clear-cookies-image-alt = Ruwachib'al q'aton cookie
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Ch'aqa' chik kechajinik k'ïy k'oxom
+cfr-whatsnew-media-keys-body = Nitzij o niq'at k'oxom o silowäch rik'in ri pitz'b'äl o ak'axab'äl man k'ayew ta nub'än ye'achajij ri k'ïy taq k'oxom rik'in jun chik ruwi', cholkema' o toq q'aton ri akematz'ib'. Chuqa' k'o rub'eyal nib'yaj chi kikojol ri taq retal k'oxom rik'in ri b'inel chi rij o chuwäch pitz'b'äl.
+cfr-whatsnew-media-keys-button = Tetamäx achike rub'eyal

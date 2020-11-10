@@ -15,6 +15,9 @@ extensions-name = ಹೆಸರು
 extensions-enabled = ಶಕ್ತಗೊಳಿಸಲಾದ
 extensions-version = ಆವೃತ್ತಿ
 extensions-id = ID
+support-addons-name = ಹೆಸರು
+support-addons-version = ಆವೃತ್ತಿ
+support-addons-id = ID
 features-title = { -brand-short-name } ವೈಶಿಷ್ಟ್ಯತೆಗಳು
 features-name = ಹೆಸರು
 features-version = ಆವೃತ್ತಿ
@@ -68,8 +71,6 @@ graphics-workarounds-title = ಪರ್ಯಾಯಮಾರ್ಗಗಳು
 place-database-title = ಸ್ಥಳಗಳ ದತ್ತಸಂಚಯ
 place-database-integrity = ಸಮಗ್ರತೆ
 place-database-verify-integrity = ಸಮಗ್ರತೆ ದೃಢಪಡಿಸು
-js-title = ಜಾವಾಸ್ಕ್ರಿಪ್ಟ್‍
-js-incremental-gc = ಏರಿಕೆಯ GC
 a11y-title = ನಿಲುಕಣೆ
 a11y-activated = ಸಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ
 a11y-force-disabled = ನಿಲುಕಣೆಯನ್ನು ನಿಯಂತ್ರಿಸು
@@ -88,7 +89,6 @@ restart-in-safe-mode-label = ಆಡ್‌-ಆನ್‌ಗಳನ್ನು ಅಶ�
 ## Media titles
 
 audio-backend = ಆಡಿಯೋ ಹಿಂಬದಿ
-
 media-title = ಮಾಧ್ಯಮ
 media-device-name = ಹೆಸರು
 media-device-group = ಗುಂಪು
@@ -102,6 +102,7 @@ media-device-latency = ತಡ
 
 ##
 
+
 ## Remote Debugging
 ##
 ## The Firefox remote protocol provides low-level debugging interfaces
@@ -110,6 +111,7 @@ media-device-latency = ತಡ
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -204,7 +206,6 @@ unknown-failure = ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ; ವಿಫಲತ
 
 d3d11layers-crash-guard = D3D11 ಸಂರಚಕ
 d3d11video-crash-guard = D3D11 ವೀಡಿಯೊ ಡೀಕೋಡರ್
-d3d9video-crash-buard = D3D9 ವೀಡಿಯೊ ಡೀಕೋಡರ್
 d3d9video-crash-guard = D3D9 ವೀಡಿಯೊ ಡೀಕೋಡರ್
 glcontext-crash-guard = OpenGL
 

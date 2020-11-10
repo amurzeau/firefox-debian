@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Məxfi Səyahət)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Məxfi Səyahət)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Məxfi Səyahət)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Məxfi Səyahət)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -111,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Daha az yazın, daha çox tapın: Birbaşa ünvan sətrinizdən { $engineName } ilə axtarış edin.
 
+## Local search mode indicator labels in the urlbar
+
+
 ##
 
 urlbar-geolocation-blocked =
@@ -133,12 +134,10 @@ urlbar-canvas-blocked =
     .tooltiptext = Bu sayt üçün lövhə (canvas) məlumatı çıxartmanı əngəllədiniz.
 urlbar-midi-blocked =
     .tooltiptext = Bu saytın MIDI işlətməsini əngəlləmisiniz.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Bu əlfəcini redaktə et ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -152,6 +151,53 @@ page-action-manage-extension =
     .label = Uzantını idarə et…
 page-action-remove-from-urlbar =
     .label = Ünvan sətrindən sil
+
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Vərəqi cihaza göndər
+           *[other] { $tabCount } vərəqi cihaza göndər
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Vərəqi cihaza göndər
+           *[other] { $tabCount } vərəqi cihaza göndər
+        }
+page-action-pocket-panel =
+    .label = Səhifəni { -pocket-brand-name }-ə Saxla
+page-action-copy-url-panel =
+    .label = Keçidi köçür
+page-action-copy-url-urlbar =
+    .tooltiptext = Keçidi köçür
+page-action-email-link-panel =
+    .label = Keçidi e-poçt ilə göndər…
+page-action-email-link-urlbar =
+    .tooltiptext = Keçidi e-poçt ilə göndər…
+page-action-share-url-panel =
+    .label = Paylaş
+page-action-share-url-urlbar =
+    .tooltiptext = Paylaş
+page-action-share-more-panel =
+    .label = Daha çox…
+page-action-send-tab-not-ready =
+    .label = Cihazlar Sinxronlaşdırılır…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Vərəqi bərkid
+page-action-pin-tab-urlbar =
+    .tooltiptext = Vərəqi bərkid
+page-action-unpin-tab-panel =
+    .label = Vərəqi çıxart
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Vərəqi çıxart
 
 ## Auto-hide Context Menu
 
@@ -167,14 +213,12 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Bu dəfə bununla axtarın:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Axtarış Tənzimləmələrini Dəyiş
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Axtarış tənzimləmələrinizi dəyişdir
-
 search-one-offs-context-open-new-tab =
     .label = Yeni vərəqdə axtar
     .accesskey = v
@@ -185,15 +229,21 @@ search-one-offs-context-set-as-default-private =
     .label = Məxfi pəncərələr üçün əsas axtarış mühərriki olarak qur
     .accesskey = M
 
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Yadda saxlarkən redaktoru göstər
     .accesskey = S
-
 bookmark-panel-done-button =
     .label = Bitdi
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -267,18 +317,60 @@ urlbar-default-placeholder =
     .defaultPlaceholder = Ünvanı daxil et və ya axtar
 urlbar-placeholder =
     .placeholder = Ünvanı daxil et və ya axtar
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Ünvanı daxil et və ya { $name } ilə axtar
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Səyyah uzaqdan idarədədir
 urlbar-switch-to-tab =
     .value = Keçiləcək vərəq:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Uzantı:
-
 urlbar-go-button =
     .tooltiptext = Ünvan Sətrindəki ünvanı aç
 urlbar-page-action-button =
     .tooltiptext = Səhifə əməliyyatları
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name }-ə Saxla
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Məxfi Pəncərədə { $engine } ilə axtar
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Məxfi Pəncərədə axtar
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } ilə axtar
+urlbar-result-action-switch-tab = Vərəqə keç
+urlbar-result-action-visit = Ziyarət et
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> artıq tam erkandır
+fullscreen-warning-no-domain = Bu sənəd artıq tam ekrandır
+fullscreen-exit-button = Tam erkandan çıx (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Tam erkandan çıx (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> kursorunuzu idarə edir. İdarəni geri almaq üçün Esc düyməsinə basın.
+pointerlock-warning-no-domain = Bu sənəd kursorunuzu idarə edir. İdarəni geri almaq üçün Esc düyməsinə basın.

@@ -3,7 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 about-telemetry-ping-data-source = Джерело даних пінгу:
-about-telemetry-show-current-ping-data = Дані поточного пінгу
 about-telemetry-show-current-data = Поточні дані
 about-telemetry-show-archived-ping-data = Дані архівованого пінгу
 about-telemetry-show-subsession-data = Показувати дані підсеансу
@@ -71,13 +70,12 @@ about-telemetry-histogram-stats =
     }
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
-about-telemetry-page-subtitle = Ця сторінка показує інформацію про швидкодію, апаратне забезпечення, використання та налаштування, зібрану за допомогою телеметрії. Ця інформація відправляється до { $telemetryServerOwner }, щоб покращити { -brand-full-name }.
+about-telemetry-page-subtitle = Ця сторінка показує інформацію про швидкодію, апаратне забезпечення, використання та налаштування, зібрану за допомогою телеметрії. Ця інформація відправляється до { $telemetryServerOwner }, щоб поліпшити { -brand-full-name }.
 about-telemetry-settings-explanation = Телеметрія збирає { about-telemetry-data-type } і вивантаження <a data-l10n-name="upload-link">{ about-telemetry-upload-type }</a>
 # Variables:
 #   $name (String): ping name, e.g. “saved-session”
 #   $timeStamp (String): ping localized timestamp, e.g. “2017/07/08 10:40:46”
 about-telemetry-ping-details = Кожна частинка інформації надсилається включеною в “<a data-l10n-name="ping-link">пінг</a>”. Ви дивитесь на пінг { $name }, { $timestamp }.
-about-telemetry-ping-details-current = Кожна частинка інформації надсилається включеною в “<a data-l10n-name="ping-link">пінг</a>“. Ви дивитесь на пінг поточний.
 about-telemetry-data-details-current = Кожен фрагмент інформації надсилається в комплекті з “<a data-l10n-name="ping-link">pings</a>“. Ви переглядаєте поточні дані.
 # string used as a placeholder for the search field
 # More info about it can be found here:
@@ -103,8 +101,6 @@ about-telemetry-no-search-results-all = Вибачте! Для “{ $searchTerms
 # Variables:
 #   $sectionName (String): is replaced by the section name.
 about-telemetry-no-data-to-display = Вибачте! В “{ $sectionName }” наразі немає доступних даних
-# used as a tooltip for the “current” ping title in the sidebar
-about-telemetry-current-ping-sidebar = поточний пінг
 # used as a tooltip for the “current” ping title in the sidebar
 about-telemetry-current-data-sidebar = поточні дані
 # used in the “Ping Type” select

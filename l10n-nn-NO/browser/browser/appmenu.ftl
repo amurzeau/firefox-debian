@@ -5,9 +5,8 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = Personvernsikring
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = Gå til personvernrapporten
+appmenuitem-update-banner =
+    .label-update-downloading = Lastar ned ned { -brand-shorter-name }-oppdatering
 appmenuitem-protection-dashboard-title = Tryggingspanel
 appmenuitem-customize-mode =
     .label = Tilpass…
@@ -27,6 +26,7 @@ fxa-toolbar-sync-now =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Kva er nytt
+
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

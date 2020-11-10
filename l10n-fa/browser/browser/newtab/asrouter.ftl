@@ -38,7 +38,6 @@ cfr-doorhanger-extension-author = توسط { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = توصیه
-
 cfr-doorhanger-extension-notification2 = توصیه
     .tooltiptext = افزونه‌های توصیه شده
     .a11y-announcement = افزونه‌های توصیه شده موجود
@@ -205,9 +204,26 @@ cfr-doorhanger-milestone-ok-button = نمایش همه
 
 ## What’s New Panel Content for Firefox 76
 
+
 ## Lockwise message
+
 
 ## Vulnerable Passwords message
 
+
 ## Picture-in-Picture fullscreen message
+
+
+## Protections Dashboard message
+
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = تجربهٔ PDF بهتر
+cfr-whatsnew-better-pdf-body = اکنون سندهای PDF مستقیماً در { -brand-short-name } گشوده می‌شوند که روند کاریتان را ساده می کند.
+
+## DOH Message
+
+
+## What's new: Cookies message
 

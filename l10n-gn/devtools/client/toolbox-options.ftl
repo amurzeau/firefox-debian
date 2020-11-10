@@ -15,7 +15,7 @@ options-select-default-tools-label = Tembipuru mboguatahára ijypyguáva
 options-tool-not-supported-label = * Ndojokupytýi mba’epuru ag̃agua tembipuru ryru rehegua
 # The label for the heading of group of checkboxes corresponding to the developer tools
 # added by add-ons. This heading is hidden when there is no developer tool installed by add-ons.
-options-select-additional-tools-label = Tembiporu Mboguatahára moimbaha omohendapyréra
+options-select-additional-tools-label = Tembiporu Mboguatahára moĩmbaha omohendapyréra
 # The label for the heading of group of checkboxes corresponding to the default developer
 # tool buttons.
 options-select-enabled-toolbox-buttons-label = Tembipuru Ryru ojepurukuaáva
@@ -37,17 +37,17 @@ options-collapse-attrs-tooltip =
 
 ## "Default Color Unit" options for the Inspector
 
-options-default-color-unit-label = Sa'y joja imarãva
+options-default-color-unit-label = Sa’y joja imarãva
 options-default-color-unit-authored = Apoháraramo
 options-default-color-unit-hex = Mba’evai
 options-default-color-unit-hsl = HSL(A)
 options-default-color-unit-rgb = RGB(A)
-options-default-color-unit-name = Sa'ykuéra réra
+options-default-color-unit-name = Sa’ykuéra réra
 
 ## Style Editor section
 
 # The heading
-options-styleeditor-label = Mbosako'iha
+options-styleeditor-label = Mbosako’iha
 # The label for the checkbox that toggles autocompletion of css in the Style Editor
 options-stylesheet-autocompletion-label = CSS ijehegui ñemoĩmba
 options-stylesheet-autocompletion-tooltip =
@@ -69,19 +69,19 @@ options-screenshot-audio-tooltip =
 ## Editor section
 
 # The heading
-options-sourceeditor-label = Mbosako'iha oguerohoryvéva
+options-sourceeditor-label = Mbosako’iha oguerohoryvéva
 options-sourceeditor-detectindentation-tooltip =
-    .title = Oikuaa pa'ũguasu ayvu retepy rupi
-options-sourceeditor-detectindentation-label = Pa'ũguasu jehechakuaa
+    .title = Oikuaa pa’ũguasu ayvu retepy rupi
+options-sourceeditor-detectindentation-label = Pa’ũguasu jehechakuaa
 options-sourceeditor-autoclosebrackets-tooltip =
     .title = Emoinge ijehegui ñemboty jokoha
 options-sourceeditor-autoclosebrackets-label = Autoclose jokoha
 options-sourceeditor-expandtab-tooltip =
-    .title = Eipuru pa'ũ pe pa'ũjepo rendaguépe
-options-sourceeditor-expandtab-label = Eipuruhína pa'ũ guasu
+    .title = Eipuru pa’ũ pe pa’ũjepo rendaguépe
+options-sourceeditor-expandtab-label = Eipuruhína pa’ũ guasu
 options-sourceeditor-tabsize-label = Tendayke tuichakue
 options-sourceeditor-keybinding-label = Jehaiha mbojopyru
-options-sourceeditor-keybinding-default-label = Jepokokuaa'ỹha
+options-sourceeditor-keybinding-default-label = Jepokokuaa’ỹha
 
 ## Advanced section
 
@@ -98,11 +98,9 @@ options-disable-javascript-tooltip =
 # The label for checkbox that toggles chrome debugging, i.e. the devtools.chrome.enabled preference
 options-enable-chrome-label = Emoapysẽ kundaha chrome ha embojuapy tembipuru ryru mopotĩha
 options-enable-chrome-tooltip =
-    .title = Emyandývo ko poravorã eipurukuaáta hetaiterei tembipuru mboguataháva pe kundaha jereguáva (tembipuru rupi > Web Developer > Browser Toolbox) ha moimbaha mopotĩhápe moimbaha Ñangarekoha guive
+    .title = Emyandývo ko poravorã eipurukuaáta hetaiterei tembipuru mboguataháva pe kundaha jereguáva (tembipuru rupi > Web Developer > Browser Toolbox) ha moĩmbaha mopotĩhápe moĩmbaha Ñangarekoha guive
 # The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
 options-enable-remote-label = Ñemopotĩ okayguáva myandy
-options-enable-remote-tooltip =
-    .title = Emyandývo ko poravopyrã omoneĩta mboguatahára tembiporukuérape omopotĩvo mba’e okaygua Firefox mab’éva, Firefox OS ichagua
 options-enable-remote-tooltip2 =
     .title = Emyandývo ko poravorã omoneĩta ndéve emopotĩvo ko kundahára reko oka guive
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
@@ -110,7 +108,7 @@ options-enable-service-workers-http-label = Mba’epytyvõrã mba’apohára moh
 options-enable-service-workers-http-tooltip =
     .title = Emyandývo ko poravopyrã omoneĩta mba’apoharakuéra mba’epytyvõrãva HTTP rupi opavave tenda’ípe g̃uarã oguerekóva tembipuru ryru ijurujáva.
 # The label for the checkbox that toggles source maps in all tools.
-options-source-maps-label = Embojuruja yvyra'ãnga ypýva
+options-source-maps-label = Embojuruja yvyra’ãnga ypýva
 options-source-maps-tooltip =
     .title = Embojurujáramo ko poravopyrã, teñoiha ijehecháta tembipurúpe.
 # The message shown for settings that trigger page reload
@@ -119,4 +117,4 @@ options-context-triggers-page-refresh = * Tembiapo ag̃agua añónte, emyenyhẽ
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config
 options-show-platform-data-label = Mba’ekuaarã jehechauka Gecko rehegua
 options-show-platform-data-tooltip =
-    .title = Remyandývo poravopyrã marandu ñehesa'ỹijoha JavaScript omoingéta ta'ãnga'i Gecko rehegua
+    .title = Remyandývo poravopyrã marandu ñehesa’ỹijoha JavaScript omoingéta ta’ãnga’i Gecko platafórmape

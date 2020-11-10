@@ -2,9 +2,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-page-title = Información ta solucionar problemas
+page-title = Información pa solucionar problemas
 page-subtitle = Ista pachina contiene información tecnica que puede estar util quan prebe de resolver un problema. Si ye buscando respuestas a preguntas freqüents sobre { -brand-short-name }, mire o <a data-l10n-name="support-link">puesto d'asistencia</a>.
-
 crashes-title = Informes de fallos
 crashes-id = ID d'o informe
 crashes-send-date = Ninviau
@@ -15,6 +14,12 @@ extensions-name = Nombre
 extensions-enabled = Activada
 extensions-version = Versión
 extensions-id = ID
+support-addons-title = Complementos
+support-addons-name = Nombre
+support-addons-type = Tipo
+support-addons-enabled = Activau
+support-addons-version = Versión
+support-addons-id = ID
 security-software-title = Software de seguranza
 security-software-type = Tipo
 security-software-name = Nombre
@@ -32,6 +37,7 @@ app-basics-title = Configuración basica de l'aplicación
 app-basics-name = Nombre
 app-basics-version = Versión
 app-basics-build-id = Construir ID
+app-basics-distribution-id = ID de distribución
 app-basics-update-channel = Esviellar a Canal
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -71,6 +77,12 @@ show-dir-label =
         [windows] Ubrir la carpeta
        *[other] Ubrir o directorio
     }
+environment-variables-title = Variables d'entorno
+environment-variables-name = Nombre
+environment-variables-value = Valor
+experimental-features-title = Caracteristicas experimentals
+experimental-features-name = Nombre
+experimental-features-value = Valor
 modified-key-prefs-title = Preferencias modificadas importants
 modified-prefs-name = Nombre
 modified-prefs-value = Valura
@@ -90,11 +102,11 @@ graphics-crash-guards-title = Caracteristicas Crash Guard desactivadas
 graphics-workarounds-title = Solucions temporals
 # Windowing system in use on Linux (e.g. X11, Wayland).
 graphics-window-protocol = Protocolo de finestra
+# Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
+graphics-desktop-environment = Entorno d'escritorio
 place-database-title = Base de datos de puestos
 place-database-integrity = Integridat
 place-database-verify-integrity = Verificar Integridat
-js-title = JavaScript
-js-incremental-gc = Contexto grafico (GC) incremental
 a11y-title = Accesibilidat
 a11y-activated = Activau
 a11y-force-disabled = Privar accesibilidat
@@ -114,14 +126,18 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumentos
 safe-mode-title = Intentar en Modo Seguro
 restart-in-safe-mode-label = Reiniciar con os complementos desactivaus…
+clear-startup-cache-title = Mira de limpiar la caché d'inicio
+clear-startup-cache-label = Limpiando la caché d'inicio...
+startup-cache-dialog-title = Limpiando la caché d'inicio
+startup-cache-dialog-body = Reinicia { -brand-short-name } pa limpiar la caché d'inicio. Esto no cambiará las tuyas preferencias ni eliminará las extensions que has anyadiu a { -brand-short-name }.
+restart-button-label = Reiniciar
 
 ## Media titles
 
 audio-backend = Sistema de fondo d'audio
 max-audio-channels = Maximo numero de canals
-channel-layout = Esquema de canal preferiu
 sample-rate = Freqüencia de mostreyo preferida
-
+roundtrip-latency = Latencia roundtrip (desviacion standar)
 media-title = Multimedia
 media-output-devices-title = Dispositivos de salida
 media-input-devices-title = Dispositivos de dentrada
@@ -137,8 +153,6 @@ media-device-latency = Latencia
 media-capabilities-title = Capacidatz multimedia
 # List all the entries of the database.
 media-capabilities-enumerate = Enumerar la base de datos
-
-
 
 ##
 
@@ -165,8 +179,6 @@ remote-debugging-title = Debug a distancia (protocolo Chromium)
 remote-debugging-accepting-connections = Se son acceptando las connexions
 remote-debugging-url = URL
 
-
-
 ##
 
 # Variables
@@ -176,7 +188,6 @@ report-crash-for-days =
         [one] Informes de fallos d'o zaguer día
        *[other] Informes de fallos d'os zaguers { $days } días
     }
-
 # Variables
 # $minutes (integer) - Number of minutes since crash
 crashes-time-minutes =
@@ -184,7 +195,6 @@ crashes-time-minutes =
         [one] En fa { $minutes } minuto
        *[other] En fa { $minutes } minutos
     }
-
 # Variables
 # $hours (integer) - Number of hours since crash
 crashes-time-hours =
@@ -192,7 +202,6 @@ crashes-time-hours =
         [one] En fa { $hours } hora
        *[other] En fa { $hours } horas
     }
-
 # Variables
 # $days (integer) - Number of days since crash
 crashes-time-days =
@@ -200,7 +209,6 @@ crashes-time-days =
         [one] En fa { $days } día
        *[other] En fa { $days } días
     }
-
 # Variables
 # $reports (integer) - Number of pending reports
 pending-reports =
@@ -208,7 +216,6 @@ pending-reports =
         [one] Totz os informes de fallos (incluindo { $reports } fallo pendient en o entrevalo de tiempo indicau)
        *[other] Totz os informes de fallos (incluindo { $reports } fallos pendients en o entrevalo de tiempo indicau)
     }
-
 raw-data-copied = S'han copiau ss datos crudos en o portafuellas
 text-copied = S'ha copiau o texto en o portafuellas
 
@@ -221,11 +228,9 @@ blocked-mismatched-version = Bloqueyau ta la versión d'o suyo controlador grafi
 # Variables
 # $driverVersion - The graphics driver version string
 try-newer-driver = Bloqueyau ta la versión d'o suyo controlador grafico. Mire d'actualizar o suyo controlador grafico a la versión { $driverVersion } u mas moderna.
-
 # "ClearType" is a proper noun and should not be translated. Feel free to leave English strings if
 # there are no good translations, these are only used in about:support
 clear-type-parameters = Parametros de ClearType
-
 compositing = Redactando
 hardware-h264 = Decodificación Hardware H264
 main-thread-no-omtc = filo principal, no OMTC
@@ -240,7 +245,6 @@ virtual-monitor-disp = Pantalla de monitor virtual
 
 found = Trobau
 missing = Falta
-
 gpu-process-pid = GPUProcessPid
 gpu-process = GPUProcess
 gpu-description = Descripción
@@ -264,21 +268,20 @@ webgl2-version = WebGL 2 Driver Version
 webgl2-driver-extensions = WebGL 2 Driver Extensions
 webgl2-extensions = WebGL 2 Extensions
 blocklisted-bug = S'ha ficau en a lista de bloqueyo por problemas conoixius
-
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
-
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Blocada per problemas conoixius d'o <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = En a lista de bloqueyo; codigo de fallo { $failureCode }
-
 d3d11layers-crash-guard = Compositor D3D11
 d3d11video-crash-guard = Decodificador de video D3D11
-d3d9video-crash-buard = Decodificador de video D3D9
 d3d9video-crash-guard = Decodificador de video D3D9
 glcontext-crash-guard = OpenGL
-
+wmfvpxvideo-crash-guard = Decodificador de video WMF VPX
 reset-on-next-restart = Meter propiedatz por defecto en o siguient reinicio.
 gpu-process-kill-button = Rematar proceso GPU
 gpu-device-reset = Reinicio d'o driver
@@ -288,10 +291,8 @@ content-uses-tiling = Fa servir mosaicos (conteniu)
 off-main-thread-paint-enabled = S'ha activau lo Painting difuera d'o filo d'execución principal
 off-main-thread-paint-worker-count = Numero de workers de pintura defuera d'o filo principal
 target-frame-rate = Freqüencia d'imachens deseyada
-
 min-lib-versions = S'asperaba una versión minima
 loaded-lib-versions = Versión en uso
-
 has-seccomp-bpf = Seccomp-BPF (Filtrau de Clamadas a o Sistema)
 has-seccomp-tsync = Sincronización de filos Seccomp
 has-user-namespaces = Espacios de nombres de l'usuario
@@ -304,12 +305,15 @@ sandbox-proc-type-content = conteniu
 sandbox-proc-type-file = conteniu d'o fichero
 sandbox-proc-type-media-plugin = plugin multimedia
 sandbox-proc-type-data-decoder = descodificador de datos
-
+startup-cache-title = Caché d'inicio
+startup-cache-disk-cache-path = Ruta d'a caché de disco
+startup-cache-ignore-disk-cache = Ignorar la caché de disco
+startup-cache-found-disk-cache-on-init = Caché de disco trobada en l'inicialización
+startup-cache-wrote-to-disk-cache = Escrito en a caché de deisco
 launcher-process-status-0 = Activau
 launcher-process-status-1 = Desactivau per causa d'un fallo
 launcher-process-status-2 = Desactivau forzadament
 launcher-process-status-unknown = Estau desconoixiu
-
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
@@ -322,7 +326,6 @@ multi-process-status-6 = Desactivau por no estar soportada la dentrada de texto
 multi-process-status-7 = Desactivau por complementos
 multi-process-status-8 = Desactivar forzadament
 multi-process-status-unknown = Estau desconoixiu
-
 async-pan-zoom = Pan/Zoom asincronos
 apz-none = garra
 wheel-enabled = dentrada con rueda activada
@@ -330,6 +333,7 @@ touch-enabled = dentrada tactil activada
 drag-enabled = s'ha activau l'arrocegamiento d'a barra de desplazamiento
 keyboard-enabled = teclau activau
 autoscroll-enabled = desplazamiento automatico activau
+zooming-enabled = Activau lo smooth pinch-zoom
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

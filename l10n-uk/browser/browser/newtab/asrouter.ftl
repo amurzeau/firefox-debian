@@ -74,7 +74,7 @@ cfr-doorhanger-pintab-animation-resume = Продовжити
 ## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Синхронізуйте свої закладки всюди.
-cfr-doorhanger-bookmark-fxa-body = Гарна знахідка! Тепер синхронізуйте цю закладку зі своїми мобільними пристроями. Почніть роботу з { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-body = Гарна знахідка! Тепер синхронізуйте цю закладку зі своїми мобільними пристроями. Почніть роботу з { -fxaccount-brand-name(case: "abl") }.
 cfr-doorhanger-bookmark-fxa-link-text = Синхронізувати закладки зараз…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Кнопка закриття
@@ -201,7 +201,7 @@ cfr-doorhanger-socialtracking-description = Ваша приватність ма
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } заблокував зчитування цифрового відбитка на цій сторінці
 cfr-doorhanger-fingerprinters-description = Ваша приватність має значення. { -brand-short-name } тепер блокує зчитування цифрового відбитка, що збирає частинки інформації, яка використовується для ідентифікації вашого пристрою і стеження за вами.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } заблокував криптомайнер на цій сторінці
-cfr-doorhanger-cryptominers-description = Ваша приватність має значення. { -brand-short-name } тепер блокує криптомайнери, які використовують ресурси вашої системи для видобутку цифрових грошей.
+cfr-doorhanger-cryptominers-description = Ваша приватність має значення. { -brand-short-name } тепер блокує криптомайнери, які використовують ресурси вашої системи для добування криптовалют.
 
 ## Enhanced Tracking Protection Milestones
 
@@ -216,6 +216,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Дивитись все
     .accesskey = в
+cfr-doorhanger-milestone-close-button = Закрити
+    .accesskey = З
 
 ## What’s New Panel Content for Firefox 76
 
@@ -249,3 +251,35 @@ cfr-whatsnew-protections-icon-alt = Піктограма щита
 
 cfr-whatsnew-better-pdf-header = Краща робота з PDF
 cfr-whatsnew-better-pdf-body = PDF-документи тепер відкриваються безпосередньо в { -brand-short-name }, забезпечуючи швидкий доступ під час роботи.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Ваша приватність має значення. { -brand-short-name } тепер надійно спрямовує ваші DNS-запити, коли це можливо, до партнерської служби, щоб захистити вас під час перегляду.
+cfr-doorhanger-doh-header = Безпечніша, зашифрована перевірка DNS
+cfr-doorhanger-doh-primary-button = Гаразд, зрозуміло
+    .accesskey = Г
+cfr-doorhanger-doh-secondary-button = Вимкнути
+    .accesskey = В
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Ваша приватність має значення. { -brand-short-name } тепер ізолює вебсайти один від одного, що ускладнює викрадення зловмисниками паролів, номерів кредитних карток та інших приватних відомостей.
+cfr-doorhanger-fission-header = Ізоляція сайту
+cfr-doorhanger-fission-primary-button = Гаразд, зрозуміло
+    .accesskey = Г
+cfr-doorhanger-fission-secondary-button = Докладніше
+    .accesskey = л
+# Deprecated
+cfr-doorhanger-fission-body = { -brand-short-name } увімкнув для вас експериментальну функцію Fission (ізоляція сайту). Виділяючи кожен сайт в окремий процес, Fission забезпечує додатковий рівень безпеки для вас та вебсайтів, які ви відвідуєте.
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Автоматичний захист від підступної тактики стеження
+cfr-whatsnew-clear-cookies-body = Деякі елементи стеження спрямовують вас на інші вебсайти, які таємно встановлюють куки. { -brand-short-name } тепер автоматично очищає їх, тож вони більше не можуть стежити за вами.
+cfr-whatsnew-clear-cookies-image-alt = Приклад блокування кук
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Більше елементів керування медіа
+cfr-whatsnew-media-keys-body = Відтворюйте та зупиняйте аудіо чи відео прямо з клавіатури або гарнітури, що полегшує керування мультимедіа з іншої вкладки, програми або навіть коли ваш комп'ютер заблоковано. Ви також можете переміщуватися між доріжками за допомогою клавіш вперед і назад.
+cfr-whatsnew-media-keys-button = Навчитися

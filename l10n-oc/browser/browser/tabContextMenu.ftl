@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Desplaçar cap a una fenèstra novèla
     .accesskey = n
-undo-close-tab =
-    .label = Anullar la tampadura de l'onglet
-    .accesskey = u
 tab-context-close-multiple-tabs =
     .label = Tampar mantun onglets
     .accesskey = m
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -79,3 +80,19 @@ move-tabs =
 move-tab =
     .label = Desplaçar l’onglet
     .accesskey = p
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Tampadura d’onglet
+            [one] Tampar l’onglet
+           *[other] Tampar los onglets
+        }
+    .accesskey = T
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Desplaçament d’onglets
+            [one] Desplaçar l’onglet
+           *[other] Desplaçar los onglets
+        }
+    .accesskey = D

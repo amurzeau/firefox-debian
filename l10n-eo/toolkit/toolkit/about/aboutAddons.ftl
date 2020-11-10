@@ -10,8 +10,6 @@ search-header =
     .searchbuttonlabel = Serĉi
 search-header-shortcut =
     .key = f
-loading-label =
-    .value = Ŝargado…
 list-empty-installed =
     .value = Vi havas neniun aldonaĵon de tiu tipo instalita
 list-empty-available-updates =
@@ -22,9 +20,6 @@ list-empty-find-updates =
     .label = Kontroli ĉu estas ĝisdatigoj
 list-empty-button =
     .label = Pli da informo pri aldonaĵoj
-install-addon-from-file =
-    .label = Instali aldonaĵon el dosiero…
-    .accesskey = I
 help-button = Helpo pri aldonaĵoj
 sidebar-help-button-title =
     .title = Helpo pri aldonaĵoj
@@ -33,8 +28,6 @@ preferences =
         [windows] Preferoj de { -brand-short-name }
        *[other] Preferoj de { -brand-short-name }
     }
-tools-menu =
-    .tooltiptext = Iloj por ĉiuj aldonaĵoj
 sidebar-preferences-button-title =
     .title =
         { PLATFORM() ->
@@ -45,9 +38,6 @@ show-unsigned-extensions-button =
     .label = Montri etendaĵojn kiuj ne povis esti kontrolitaj
 show-all-extensions-button =
     .label = Montri ĉiujn etendaĵojn
-debug-addons =
-    .label = Senerarigi aldonaĵojn
-    .accesskey = S
 cmd-show-details =
     .label = Montri pli da informo
     .accesskey = M
@@ -78,9 +68,6 @@ cmd-contribute =
     .label = Kontribui
     .accesskey = K
     .tooltiptext = Kontribui al la disvolvo de tiu ĉi aldonaĵo
-discover-title = Kio estas aldonaĵo?
-discover-description = Aldonaĵo estas programo kiu permesas al vi tajli { -brand-short-name } per funkcioj aŭ stilaj trajtoj.  Provu tempoŝparan flankan strion, veterinformilon aŭ etosan aspekton por ekposedi { -brand-short-name }.
-discover-footer = Se vi havas retaliron vi vidos en tiu ĉi kadro kelkajn el la plej bonaj kaj popularaj aldonaĵoj kiujn vi povus provi.
 detail-version =
     .label = Versio
 detail-last-updated =
@@ -102,15 +89,12 @@ detail-update-manual =
     .tooltiptext = Ne instali ĝisdatigojn aŭtomate
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Lanĉi en privataj fenestroj
-detail-private-browsing-description2 = Kiam tio ĉi estas permesata, la etendaĵo havos aliron al viaj agoj en la reto, ankaŭ dum privata retumo. <label data-l10n-name="detail-private-browsing-learn-more">Pli da informo</label>
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = Ne permesita en privataj fenestroj
-detail-private-disallowed-description = Tiu ĉi etendaĵo ne funkcias dum privata retumo. <label data-l10n-name="detail-private-browsing-learn-more">Pli da informo</label>
 detail-private-disallowed-description2 = Tiu ĉi etendaĵo ne funkcias dum privata retumo. <a data-l10n-name="learn-more">Pli da informo</a>
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Ĝi postulas aliron al privataj fenestroj
-detail-private-required-description = Tiu ĉi etendaĵo havas aliron al viaj retumaj agoj dum privata retumo. <label data-l10n-name="detail-private-browsing-learn-more">Pli da informo</label>
 detail-private-required-description2 = Tiu ĉi etendaĵo havas aliron al viaj agoj dum privata retumo. <a data-l10n-name="learn-more">Pli da informo</a>
 detail-private-browsing-on =
     .label = Permesi
@@ -161,15 +145,6 @@ legacy-extensions =
     .value = Kadukaj etendaĵoj
 legacy-extensions-description = Tiuj ĉi etendaĵoj ne kongruas kun la nunaj normoj de { -brand-short-name }, tial ili estis malaktivigitaj. <label data-l10n-name="legacy-learn-more">Pli da informo pri la ŝanĝoj en aldonaĵoj</label>
 private-browsing-description2 = { -brand-short-name } modifis la funkciadon de etendaĵoj en privata retumo. Norme, neniu nova etendaĵo aldonita al { -brand-short-name } funkcios en privataj fenestroj. Krom se vi permesos tion en agordoj, la etendaĵo ne funkcios en privata retumo kaj ne havos aliron al viaj agoj en la interreto. Ni ŝanĝis tion por certigi, ke via privata retumo restu privata. <label data-l10n-name="private-browsing-learn-more">Pli da informo pri administro de agordoj de etendaĵoj.</label>
-extensions-view-discopane =
-    .name = Rekomendoj
-    .tooltiptext = { extensions-view-discopane.name }
-extensions-view-recent-updates =
-    .name = Ĵusaj ĝisdatigoj
-    .tooltiptext = { extensions-view-recent-updates.name }
-extensions-view-available-updates =
-    .name = Haveblaj ĝisdatigoj
-    .tooltiptext = { extensions-view-available-updates.name }
 addon-category-discover = Rekomendoj
 addon-category-discover-title =
     .title = Rekomendoj
@@ -197,24 +172,6 @@ addon-category-recent-updates-title =
 
 ## These are global warnings
 
-extensions-warning-safe-mode-label =
-    .value = Ĉiuj aldonaĵoj estis malaktivigitaj de la sekura reĝimo.
-extensions-warning-safe-mode-container =
-    .tooltiptext = { extensions-warning-safe-mode-label.value }
-extensions-warning-check-compatibility-label =
-    .value = La kontrolado de kongrueco de aldonaĵoj estas malaktiva.  Vi povus havi nekongruajn aldonaĵojn.
-extensions-warning-check-compatibility-container =
-    .tooltiptext = { extensions-warning-check-compatibility-label.value }
-extensions-warning-check-compatibility-enable =
-    .label = Aktivigi
-    .tooltiptext = Aktivigi la kontroladon de kongrueco de aldonaĵoj
-extensions-warning-update-security-label =
-    .value = La kontrolado de sekurecaj ĝisdatigoj de aldonaĵoj ne estas aktiva.  Vi povus esti kompromitita de ĝisdatigoj.
-extensions-warning-update-security-container =
-    .tooltiptext = { extensions-warning-update-security-label.value }
-extensions-warning-update-security-enable =
-    .label = Aktivigi
-    .tooltiptext = Aktivigi la kontroladon de sekurecaj ĝisdatigoj de aldonaĵoj
 extensions-warning-safe-mode = Ĉiuj aldonaĵoj estis malaktivigitaj de la sekura reĝimo.
 extensions-warning-check-compatibility = La kontrolado de kongrueco de aldonaĵoj estas malaktiva.  Vi povus havi nekongruajn aldonaĵojn.
 extensions-warning-check-compatibility-button = Aktivigi
@@ -225,12 +182,6 @@ extensions-warning-update-security-button = Aktivigi
 
 ## Strings connected to add-on updates
 
-extensions-updates-check-for-updates =
-    .label = Kontroli ĉu estas ĝisdatigoj
-    .accesskey = K
-extensions-updates-view-updates =
-    .label = Vidi ĵusajn ĝisdatigojn
-    .accesskey = V
 addon-updates-check-for-updates = Kontroli ĉu estas ĝisdatigoj
     .accesskey = K
 addon-updates-view-updates = Vidi ĵusajn ĝisdatigojn
@@ -239,9 +190,6 @@ addon-updates-view-updates = Vidi ĵusajn ĝisdatigojn
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
 
-extensions-updates-update-addons-automatically =
-    .label = Aŭtomate ĝisdatigi aldonaĵojn
-    .accesskey = A
 addon-updates-update-addons-automatically = Aŭtomate ĝisdatigi aldonaĵojn
     .accesskey = A
 
@@ -251,12 +199,6 @@ addon-updates-update-addons-automatically = Aŭtomate ĝisdatigi aldonaĵojn
 ## (which itself is either "Automatically" or "Manually", controlled by the
 ## extensions-updates-update-addons-automatically.label menu item).
 
-extensions-updates-reset-updates-to-automatic =
-    .label = Igi ĉiujn aldonaĵojn ĝisdatiĝi aŭtomate
-    .accesskey = I
-extensions-updates-reset-updates-to-manual =
-    .label = Igi ĉiujn aldonaĵojn ĝisdatiĝi malaŭtomate
-    .accesskey = I
 addon-updates-reset-updates-to-automatic = Igi ĉiujn aldonaĵojn ĝisdatiĝi aŭtomate
     .accesskey = I
 addon-updates-reset-updates-to-manual = Igi ĉiujn aldonaĵojn ĝisdatiĝi malaŭtomate
@@ -264,21 +206,6 @@ addon-updates-reset-updates-to-manual = Igi ĉiujn aldonaĵojn ĝisdatiĝi mala�
 
 ## Status messages displayed when updating add-ons
 
-extensions-updates-updating =
-    .value = Ĝisdatigado de aldonaĵoj
-extensions-updates-installed =
-    .value = Viaj aldonaĵoj estis ĝisdatigitaj.
-extensions-updates-downloaded =
-    .value = Viaj aldonaĵoj estis elŝutitaj.
-extensions-updates-restart =
-    .label = Restartigi por kompletigi la instaladon
-extensions-updates-none-found =
-    .value = Neniu ĝisdatigo trovita
-extensions-updates-manual-updates-found =
-    .label = Vidi haveblajn ĝisdatigojn
-extensions-updates-update-selected =
-    .label = Instali ĝisdatigojn
-    .tooltiptext = Instali haveblajn ĝisdatigojn en tiu ĉi listo
 addon-updates-updating = Ĝisdatigado de aldonaĵoj
 addon-updates-installed = Viaj aldonaĵoj estis ĝisdatigitaj.
 addon-updates-none-found = Neniu ĝisdatigo trovita
@@ -295,9 +222,6 @@ addon-open-about-debugging = Senerarigi aldonaĵojn
 
 ## Extension shortcut management
 
-manage-extensions-shortcuts =
-    .label = Administri alirklavojn de etendaĵoj
-    .accesskey = A
 # This is displayed in the page options menu
 addon-manage-extensions-shortcuts = Administri alirklavojn de etendaĵoj
     .accesskey = A
@@ -305,7 +229,6 @@ shortcuts-no-addons = Vi havas neniun aktivan etendaĵon.
 shortcuts-no-commands = La jenaj etendaĵoj ne havas alirklavojn:
 shortcuts-input =
     .placeholder = Tajpu alirklavon
-shortcuts-browserAction = Aktivigi etendaĵon
 shortcuts-browserAction2 = Aktivigi ilaran butonon
 shortcuts-pageAction = Aktivigi paĝan agon
 shortcuts-sidebarAction = Montri/kaŝi flankan strion
@@ -330,8 +253,6 @@ shortcuts-card-expand-button =
        *[other] Montri { $numberToShow } pli
     }
 shortcuts-card-collapse-button = Montri malpli
-go-back-button =
-    .tooltiptext = Iri reen
 header-back-button =
     .title = Iri reen
 
@@ -371,7 +292,6 @@ remove-addon-button = Forigi
 remove-addon-disabled-button = Ne eblas forigi ĝin. <a data-l10n-name="link">Kial?</a>
 disable-addon-button = Malaktivigi
 enable-addon-button = Aktivigi
-expand-addon-button = Pli da ebloj
 # This is used for the toggle on the extension card, it's a checkbox and this
 # is always its label.
 extension-enable-addon-button-label =
@@ -384,8 +304,6 @@ preferences-addon-button =
 details-addon-button = Detaloj
 release-notes-addon-button = Notoj pri liverado
 permissions-addon-button = Permesoj
-addons-enabled-heading = Aktiva
-addons-disabled-heading = Malaktiva
 extension-enabled-heading = Aktiva
 extension-disabled-heading = Malaktiva
 theme-enabled-heading = Aktiva
@@ -404,6 +322,9 @@ addon-detail-version-label = Versio
 addon-detail-last-updated-label = Laste ĝisdatigita
 addon-detail-homepage-label = Ĉefpaĝo
 addon-detail-rating-label = Taksado
+# Message for add-ons with a staged pending update.
+install-postponed-message = Tiu ĉi etendaĵo estos ĝisdatigita dum restarto de { -brand-short-name }.
+install-postponed-button = Ĝisdatigi nun
 # The average rating that the add-on has received.
 # Variables:
 #   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
@@ -436,31 +357,42 @@ addon-detail-update-check-label = Kontroli ĉu estas ĝisdatigoj
 install-update-button = Ĝisdatigi
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
-addon-badge-private-browsing-allowed =
-    .title = Permesita en privataj fenestroj
-# This is the tooltip text for the private browsing badge in about:addons. The
-# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = Permesita en privataj fenestroj
     .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-help = Se tio estas permesita, la etendaĵo havos aliron al viaj retumaj agoj dum vi private retumas. <a data-l10n-name="learn-more">Pli da informo</a>
 addon-detail-private-browsing-allow = Permesi
 addon-detail-private-browsing-disallow = Ne permesi
-# This is the tooltip text for the recommended badge for an extension in about:addons. The
-# badge is a small icon displayed next to an extension when it is recommended on AMO.
-addon-badge-recommended =
-    .title = Rekomendita
-    .alt = Rekomendita
-# This is the tooltip text for the recommended badge for an extension in about:addons. The
-# badge is a small icon displayed next to an extension when it is recommended on AMO.
+
+## This is the tooltip text for the recommended badges for an extension in about:addons. The
+## badge is a small icon displayed next to an extension when it is recommended on AMO.
+
 addon-badge-recommended2 =
     .title = { -brand-product-name } nur rekomendas etendaĵojn, kiuj konformas al niaj normoj pri sekureco kaj efikeco
     .aria-label = { addon-badge-recommended2.title }
+addon-badge-line =
+    .title = Tiu ĉi etendaĵo estis farita de la kreantoj de { -brand-product-name }
+    .aria-label = { addon-badge-line.title }
+addon-badge-verified =
+    .title = Pro sekurecaj kialoj oni reviziis la kodon de tiu ĉi etendaĵo
+    .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = Tiu ĉi estas neoficiala etendaĵo farita de la kreantoj de { -brand-product-name }
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = Tiu ĉi etendaĵo estis reviziita por kontroli ke ĝi kongruas kun niaj sekurecaj kaj efikecaj normoj.
+    .aria-label = { addon-badge-verified2.title }
+
+##
+
 available-updates-heading = Haveblaj ĝisdatigoj
 recent-updates-heading = Ĵusaj ĝisdatigoj
 release-notes-loading = Ŝargado…
 release-notes-error = Bedaŭrinde okazis eraro dum la ŝargado de la notoj pri liverado.
 addon-permissions-empty = Tiu ĉi etendaĵo postulas neniun permeson
+addon-permissions-required = Postulataj permesoj por kernaj funkcioj:
+addon-permissions-optional = Elekteblaj permesoj por aldonaj funkcioj:
+addon-permissions-learnmore = Pli da informo pri permesoj
 recommended-extensions-heading = Rekomenditaj etendaĵoj
 recommended-themes-heading = Rekomenditaj etosoj
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

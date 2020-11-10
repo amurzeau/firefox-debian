@@ -35,7 +35,7 @@ aboutdebugging-sidebar-runtime-connection-status-connected = 연결됨
 # Connection status (disconnected) for runtime items in the sidebar
 aboutdebugging-sidebar-runtime-connection-status-disconnected = 연결끊김
 # Text displayed in the about:debugging sidebar when no device was found.
-about-debugging-sidebar-no-devices = 기기를 찾을 수 없습니다
+about-debugging-sidebar-no-devices = 기기를 찾을 수 없음
 # Text displayed in buttons found in sidebar items representing remote runtimes.
 # Clicking on the button will attempt to connect to the runtime.
 about-debugging-sidebar-item-connect-button = 연결
@@ -82,8 +82,6 @@ about-debugging-refresh-usb-devices-button = 기기 새로 고침
 about-debugging-setup-title = 설정
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = 기기를 원격으로 디버깅할 연결 방법을 구성합니다.
-# Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox = 이 버전의 { -brand-shorter-name }에서 탭, 확장 기능 및 Service Worker를 디버그하려면 <a>{ about-debugging-this-firefox-runtime-name }</a>를 사용하세요.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox2 = 이 버전의 { -brand-shorter-name }에서 확장 기능 및 Service Worker를 디버그하려면 <a>{ about-debugging-this-firefox-runtime-name }</a>를 사용하세요.
 # Title of the heading Connect section of the Setup page.
@@ -180,13 +178,6 @@ about-debugging-runtime-service-workers-not-compatible = 브라우저 구성이 
 # { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
 about-debugging-browser-version-too-old = 연결된 브라우저에는 이전 버전 ({ $runtimeVersion })이 있습니다. 지원되는 최소 버전은 ({ $minVersion }) 입니다. 이것은 지원되지 않는 설정이며 DevTools가 실패할 수 있습니다. 연결된 브라우저를 업데이트하세요. <a>문제 해결</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# - from Fx 67 to 66 or to 65
-# - from Fx 68 to 66
-# Those are normally in range for DevTools compatibility policy, but specific non
-# backward compatible changes broke the debugger in those scenarios (Bug 1528219).
-# { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-about-debugging-browser-version-too-old-67-debugger = 디버거 패널이 연결된 브라우저와 작동하지 않을 수 있습니다. 이 브라우저에 디버거를 사용해야 하는 경우 Firefox { $runtimeVersion }를 사용하세요.
-# Dedicated message for a backward compatibility issue that occurs when connecting:
 # from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
 about-debugging-browser-version-too-old-fennec = 이 Firefox 버전은 Android용 Firefox (68)를 디버깅 할 수 없습니다. 테스트를 위해 휴대폰에 Android Nightly용 Firefox를 설치하는 것이 좋습니다. <a>추가 정보</a>
 # This string is displayed in the runtime page if the remote browser version is too recent.
@@ -259,13 +250,6 @@ about-debugging-extension-location =
 # For instance "geckoprofiler@mozilla.com" or "{ed26ddcb-5611-4512-a89a-51b8db81cfb2}".
 about-debugging-extension-id =
     .label = 확장 기능 ID
-# This string is displayed as a label of the button that pushes a test payload
-# to a service worker.
-# Notes, this relates to the "Push" API, which is normally not localized so it is
-# probably better to not localize it.
-about-debugging-worker-action-push = Push
-# This string is displayed as a label of the button that starts a service worker.
-about-debugging-worker-action-start = 시작
 # This string is displayed as a label of the button that pushes a test payload
 # to a service worker.
 # Note this relates to the "Push" API, which is normally not localized so it is

@@ -51,6 +51,10 @@ newtab-confirm-delete-history-p1 = Soll wirklich jede Instanz dieser Seite aus I
 # "This action" refers to deleting a page from history.
 newtab-confirm-delete-history-p2 = Diese Aktion kann nicht rückgängig gemacht werden.
 
+## Top Sites - Sponsored label
+
+newtab-topsite-sponsored = Gesponsert
+
 ## Context Menu - Action Tooltips.
 
 # General tooltip for context menus.

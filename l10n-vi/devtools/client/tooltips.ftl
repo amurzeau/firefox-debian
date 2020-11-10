@@ -53,10 +53,6 @@ inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> không 
 
 inactive-css-not-grid-or-flex-container-fix = Hãy thử thêm <strong>display:grid</strong> hoặc <strong>display:flex</strong>. { learn-more }
 
-inactive-css-not-grid-or-flex-item-fix = Hãy thử thêm <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong> hoặc <strong>display:inline-flex</strong>. { learn-more }
-
-inactive-css-not-grid-item-fix = Hãy thử thêm <strong>display:grid</strong> hoặc <strong>display:inline-grid</strong> vào mục gốc. { learn-more }
-
 inactive-css-not-grid-or-flex-container-or-multicol-container-fix = Hãy thử thêm <strong>display:grid</strong>, <strong>display:flex</strong> hoặc <strong>columns:2</strong>. { learn-more }
 
 inactive-css-not-grid-or-flex-item-fix-2 = Hãy thử thêm <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong>, hoặc <strong>display:inline-flex</strong>. { learn-more }
@@ -64,8 +60,6 @@ inactive-css-not-grid-or-flex-item-fix-2 = Hãy thử thêm <strong>display:grid
 inactive-css-not-grid-item-fix-2 = Hãy thử thêm <strong>display:grid</strong> hoặc <strong>display:inline-grid</strong> vào phần tử mẹ. { learn-more }
 
 inactive-css-not-grid-container-fix = Hãy thử thêm <strong>display:grid</strong> hoặc <strong>display:inline-grid</strong>. { learn-more }
-
-inactive-css-not-flex-item-fix = Hãy thử thêm <strong>display:flex</strong> hoặc <strong>display:inline-flex</strong> vào mục gốc. { learn-more }
 
 inactive-css-not-flex-item-fix-2 = Hãy thử thêm <strong>display:flex</strong> hoặc <strong>display:inline-flex</strong> vào phần tử mẹ. { learn-more }
 
@@ -82,3 +76,26 @@ inactive-css-not-display-block-on-floated-fix = Hãy thử xóa <strong>float</s
 inactive-css-position-property-on-unpositioned-box-fix = Hãy thử đặt thuộc tính <strong>position</strong> của nó thành một thứ khác ngoài <strong>static</strong>. { learn-more }
 
 inactive-text-overflow-when-no-overflow-fix = Hãy thử thêm <strong>overflow:hidden</strong>. { learn-more }
+
+## In the Rule View when a CSS property may have compatibility issues with other browsers
+## we display an icon. When this icon is hovered this message is displayed to explain why
+## the property is incompatible and the platforms it is incompatible on.
+## Variables:
+##   $property (string) - A CSS declaration name e.g. "-moz-user-select" that can be a platform specific alias.
+##   $rootProperty (string) - A raw CSS property name e.g. "user-select" that is not a platform specific alias.
+
+css-compatibility-default-message = <strong>{ $property }</strong> không được hỗ trợ trong các trình duyệt sau:
+
+css-compatibility-deprecated-experimental-message = <strong>{ $property }</strong> là thuộc tính thử nghiệm hiện không được hỗ trợ bởi các tiêu chuẩn W3C. Nó không được hỗ trợ trong các trình duyệt sau:
+
+css-compatibility-deprecated-experimental-supported-message = <strong>{ $property }</strong> là thuộc tính thử nghiệm hiện không được hỗ trợ bởi các tiêu chuẩn W3C.
+
+css-compatibility-deprecated-message = <strong>{ $property }</strong> hiện không được hỗ trợ bởi các tiêu chuẩn W3C. Nó không được hỗ trợ trong các trình duyệt sau:
+
+css-compatibility-deprecated-supported-message = <strong>{ $property }</strong> hiện không được hỗ trợ bởi các tiêu chuẩn W3C.
+
+css-compatibility-experimental-message = <strong>{ $property }</strong> là thuộc tính thử nghiệm. Nó không được hỗ trợ trong các trình duyệt sau:
+
+css-compatibility-experimental-supported-message = <strong>{ $property }</strong> là thuộc tính thử nghiệm.
+
+css-compatibility-learn-more-message = <span data-l10n-name="link">Tìm hiểu thêm</span> về <strong>{ $rootProperty }</strong>

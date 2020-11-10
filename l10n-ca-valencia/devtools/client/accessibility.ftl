@@ -19,6 +19,9 @@ accessibility-warning =
 accessibility-fail =
     .alt = Error
 
+accessibility-best-practices =
+    .alt = Millors pràctiques
+
 ## Text entries for a paragraph used in the accessibility panel sidebar's checks section
 ## that describe that currently selected accessible object has an accessibility issue
 ## with its text label or accessible name.

@@ -31,5 +31,5 @@ state-dd-Disabled = <span data-l10n-name="state">Amaq':</span> Chupül
 state-dd-Disabled-block-list-state = <span data-l10n-name="state">Amaq':</span> Chupül ({ $blockListState })
 
 mime-type-label = MIME Ruwäch
-description-label = Cholonem
+description-label = Tzijoxikil
 suffixes-label = Rij taq tzij

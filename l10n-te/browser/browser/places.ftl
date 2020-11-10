@@ -47,7 +47,7 @@ places-by-last-visited =
     .label = చివరిసారిగా చూసిన దానిని అనుసరించి
     .accesskey = L
 places-by-day-and-site =
-    .label = తేదీ మరియు సైటుని అనుసరించి
+    .label = తేదీ, సైటు క్రమంలో
     .accesskey = t
 
 places-history-search =

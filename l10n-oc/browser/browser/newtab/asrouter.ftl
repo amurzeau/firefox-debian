@@ -211,6 +211,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = O mostrar tot
     .accesskey = m
+cfr-doorhanger-milestone-close-button = Tampar
+    .accesskey = T
 
 ## What’s New Panel Content for Firefox 76
 
@@ -244,3 +246,33 @@ cfr-whatsnew-protections-icon-alt = Icòna d’escut
 
 cfr-whatsnew-better-pdf-header = Melhora experiéncia PDF
 cfr-whatsnew-better-pdf-body = Los documents se dobrisson ara dirèctament dins { -brand-short-name }, per contunhar vòstre trabalh fòra distraccion.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Vòstra vida privada es importanta. Ara { -brand-short-name } encamina de forma segura vòstras requèstas DNS tant coma se pòt via un servici partenari per vos protegir pendent la navegacion.
+cfr-doorhanger-doh-header = Requèstas DNS mai seguras e chifradas
+cfr-doorhanger-doh-primary-button = Òc, plan comprés
+    .accesskey = c
+cfr-doorhanger-doh-secondary-button = Desactivar
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Vòstra vida privada es important. Ara { -brand-short-name } estrema, o embarra dins un nauc de sabla, los sites web entre eles, çò que fa venir mai dificil als piratas los senhals, numèros de carta de crèdit e d’autras informacions sensiblas.
+cfr-doorhanger-fission-header = Isolacion de site
+cfr-doorhanger-fission-primary-button = Òc, plan comprés
+    .accesskey = p
+cfr-doorhanger-fission-secondary-button = Ne saber mai
+    .accesskey = N
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Proteccion automatica contra las tacticas de seguiment enganairas
+cfr-whatsnew-clear-cookies-body = D’unes traçadors vos redirigisson cap d’autres sites web que depausan secrètament de cookies. Ara { -brand-short-name } escafa aqueles cookies per que siatz pas seguit.
+cfr-whatsnew-clear-cookies-image-alt = Illustracion d’un cookie blocat
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Mai de contraròtles dels mèdias
+cfr-whatsnew-media-keys-body = Legir e metre en pausa l’àudio e la vidèo a partir del clavièr o del casc àudio, per va venir simple lo contraròtle dels mèdias d’autres onglets, programas, o encara quand l’ordenador es verrolhat. Podètz tanben cambiar de pista en utilizant las tòcas per avançar o recular.
+cfr-whatsnew-media-keys-button = M’ensenhar cossí far

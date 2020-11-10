@@ -28,7 +28,7 @@ findbar-case-sensitive =
     .tooltiptext = Регистрді ескеріп іздеу
 
 findbar-match-diacritics =
-    .label = Диакритиканы ескерту
+    .label = Диакритиканы ескеру
     .accesskey = и
     .tooltiptext = Акценті бар әріптер және олардың базалық әріптер арасындағы айырмашылықты ескеріп іздеу (мысалы, "resume" сөзі ізделген кезде, "résumé" табылмайды)
 

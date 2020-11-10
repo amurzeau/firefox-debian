@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Samo kad je { -brand-short-name } postavljen da blokira poznate programe za praćenje
 do-not-track-option-always =
     .label = Uvijek
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Mogućnosti
-           *[other] Postavke
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Mogućnosti
@@ -35,13 +29,15 @@ search-input-box =
            *[other] Pronađi u Postavkama
         }
 managed-notice = Tvojim preglednikom upravlja tvoja organizacija.
+category-list =
+    .aria-label = Kategorije
 pane-general-title = Osnovno
 category-general =
     .tooltiptext = { pane-general-title }
 pane-home-title = Početna stranica
 category-home =
     .tooltiptext = { pane-home-title }
-pane-search-title = Traži
+pane-search-title = Pretraga
 category-search =
     .tooltiptext = { pane-search-title }
 pane-privacy-title = Privatnost i sigurnost
@@ -50,7 +46,13 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
-help-button-label = { -brand-short-name } podrška
+pane-experimental-title = { -brand-short-name } eksperimenti
+category-experimental =
+    .tooltiptext = { -brand-short-name } eksperimenti
+pane-experimental-subtitle = Nastavi s oprezom
+pane-experimental-search-results-header = { -brand-short-name } eksperimenti: Nastavi s oprezom
+pane-experimental-description = Mijenjanje naprednih postavki konfiguracije može utjecati na perfomancu ili sigurnost programa { -brand-short-name }.
+help-button-label = Podrška za { -brand-short-name }
 addons-button-label = Proširenja i teme
 focus-search =
     .key = f
@@ -82,6 +84,9 @@ extension-controlled-homepage-override = Dodatak, <img data-l10n-name="icon"/> {
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Dodatak, <img data-l10n-name="icon"/> { $name }, kontrolira tvoju stranicu za novu karticu.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Dodatak <img data-l10n-name="icon"/> { $name } upravlja ovom postavkom.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Dodatak, <img data-l10n-name="icon"/> { $name }, kontrolira ovu postavku.
@@ -106,7 +111,7 @@ extension-controlled-enable = Za aktiviranje dodatak idi na <img data-l10n-name=
 
 ## Preferences UI Search Results
 
-search-results-header = Rezultati pretrage
+search-results-header = Rezultati pretraživanja
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message =
     { PLATFORM() ->
@@ -142,7 +147,7 @@ disable-extension =
     .label = Onemogući dodatak
 tabs-group-header = Kartice
 ctrl-tab-recently-used-order =
-    .label = Ctrl+Tab kruži kroz kartice redosljedom zadnje korištenih
+    .label = Ctrl+Tab kruži kroz kartice redoslijedom zadnjeg korištenja
     .accesskey = T
 open-new-link-as-tabs =
     .label = Otvori poveznice u karticama umjesto novih prozora
@@ -160,7 +165,7 @@ show-tabs-in-taskbar =
     .label = Prikaži preglede kartica u Windows traci zadataka
     .accesskey = k
 browser-containers-enabled =
-    .label = Aktiviraj kontejner kartice
+    .label = Aktiviraj kontejnerske kartice
     .accesskey = m
 browser-containers-learn-more = Saznaj više
 browser-containers-settings =
@@ -290,8 +295,8 @@ applications-use-app-default =
 applications-use-os-default =
     .label =
         { PLATFORM() ->
-            [macos] Koristi macOS zadanu aplikaciju
-            [windows] Koristi Windows zadanu aplikaciju
+            [macos] Koristi zadanu aplikaciju u macOS-u
+            [windows] Koristi zadanu aplikaciju u Windowsu
            *[other] Koristi zadanu aplikaciju sustava
         }
 applications-use-other =
@@ -349,7 +354,7 @@ play-drm-content =
     .accesskey = p
 play-drm-content-learn-more = Saznaj više
 update-application-title = { -brand-short-name } dopune
-update-application-description = Ažuriraj { -brand-short-name } za najbolju preformansu, stabilnost i sigurnost.
+update-application-description = Aktualiziraj { -brand-short-name } za najbolju performancu, stabilnost i sigurnost.
 update-application-version = Verzija { $version } <a data-l10n-name="learn-more">Što je novo</a>
 update-history =
     .label = Prikaži povijest nadogradnji …
@@ -368,23 +373,16 @@ update-application-warning-cross-user-setting = Ove postavke će se primijeniti 
 update-application-use-service =
     .label = Koristi pozadinski servis za instalaciju dopuna
     .accesskey = K
-update-enable-search-update =
-    .label = Automatski aktualiziraj tražilice
-    .accesskey = e
-update-pref-write-failure-title = Greška prilikom zapisivanja
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Nije moguće spremiti postavke. Nije bilo moguće pisati u datoteku: { $path }
-update-setting-write-failure-title = Greška prilikom spremanju postavki ažuriranja
+update-setting-write-failure-title = Greška prilikom spremanja postavki aktualiziranja
 # Variables:
 #   $path (String) - Path to the configuration file
 # The newlines between the main text and the line containing the path is
 # intentional so the path is easier to identify.
 update-setting-write-failure-message =
-    { -brand-short-name } je naišao na pogrešku i nije spremio ovu promjenu. Uzmi u obzir da postavljanje postavki za ovo ažuriranje zahtjeva dozvole za pisanje u niže navedenu datoteku. Ti ili tvoj administrator sustava možda možete otkloniti ovu grešku, tako da dozvolite grupi korisnika potpunu kontrolu nad ovom datotekom.
+    { -brand-short-name } je naišao na pogrešku i nije spremio ovu promjenu. Uzmi u obzir da postavljanje postavki za ovo aktualiziranje zahtijeva dozvole za pisanje u niže navedenu datoteku. Ti ili tvoj administrator sustava možda možete otkloniti ovu grešku, tako da dozvolite grupi korisnika potpunu kontrolu nad ovom datotekom.
     
     Nije moguće pisati u datoteku: { $path }
-update-in-progress-title = Ažuriranje u tijeku
+update-in-progress-title = Aktualiziranje u tijeku
 update-in-progress-message = Želiš li { -brand-short-name } nastavi s ovim aktualiziranjem?
 update-in-progress-ok-button = O&dbaci
 # Continue is the cancel button so pressing escape or using a platform standard
@@ -393,11 +391,11 @@ update-in-progress-cancel-button = &Nastavi
 
 ## General Section - Performance
 
-performance-title = Performansa
+performance-title = Performanca
 performance-use-recommended-settings-checkbox =
     .label = Koristi preporučene postavke performanse
     .accesskey = u
-performance-use-recommended-settings-desc = Ove postavke su skrojene za tvoj hardver i operacijski sustav.
+performance-use-recommended-settings-desc = Ove su postavke prilagođene tvom hardveru i operacijskom sustavu.
 performance-settings-learn-more = Saznaj više
 performance-allow-hw-accel =
     .label = Koristi hardversko ubrzanje kad je dostupno
@@ -427,12 +425,16 @@ browsing-use-cursor-navigation =
     .label = Uvijek koristi tipke pokazivača za navigaciju unutar stranica
     .accesskey = c
 browsing-search-on-start-typing =
-    .label = Traženje teksta već prilikom upisivanja
+    .label = Traži tekst već prilikom upisivanja
     .accesskey = k
 browsing-picture-in-picture-toggle-enabled =
-    .label = Aktiviraj video kontrole za slika-u-slici
+    .label = Aktiviraj video-kontrole kod prikaza slike-u-slici
     .accesskey = O
 browsing-picture-in-picture-learn-more = Saznaj više
+browsing-media-control =
+    .label = Upravljaj medijskim sadržajem pomoću tipkovnice, slušalica ili virtualnog sučelja
+    .accesskey = v
+browsing-media-control-learn-more = Saznaj više
 browsing-cfr-recommendations =
     .label = Preporuči dodatke tijekom pregledavanja
     .accesskey = r
@@ -465,7 +467,7 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Početna Firefox stranica (standardno)
+    .label = Firefoxova početna stranica (standardno)
 home-mode-choice-custom =
     .label = Prilagođeni URL-ovi…
 home-mode-choice-blank =
@@ -479,8 +481,8 @@ home-homepage-custom-url =
 use-current-pages =
     .label =
         { $tabCount ->
-            [1] Koristi trenutnu stranicu
-           *[other] Koristi trenutne stranice
+            [1] Koristi trenutačnu stranicu
+           *[other] Koristi trenutačne stranice
         }
     .accesskey = c
 choose-bookmark =
@@ -489,20 +491,22 @@ choose-bookmark =
 
 ## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Firefox početni sadržaj
+home-prefs-content-header = Sadržaj Firefoxove početne stranice
 home-prefs-content-description = Odaberi sadržaj koji želiš na početnoj stranici Firefoxa.
 home-prefs-search-header =
-    .label = Web pretraživanje
+    .label = Web pretraga
 home-prefs-topsites-header =
     .label = Najbolje stranice
 home-prefs-topsites-description = Stranice koje najviše posjećujete
+home-prefs-topsites-by-option-sponsored =
+    .label = Sponzorirane najpopularnije stranice
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = Preporučeno od { $provider }
-home-prefs-recommended-by-description = Vrhunski sadržaj iz svih krajeva interneta, presonaliziran za tebe
+home-prefs-recommended-by-description-update = Izniman sadržaj sa svih strana weba, kojeg izabire { $provider }
 
 ##
 
@@ -526,7 +530,7 @@ home-prefs-highlights-option-saved-to-pocket =
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
     .label = Isječci
-home-prefs-snippets-description = Ažuriranja od { -vendor-short-name } i { -brand-product-name }a
+home-prefs-snippets-description = Aktualiziranje od { -vendor-short-name } i { -brand-product-name }a
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -537,25 +541,24 @@ home-prefs-sections-rows-option =
 
 ## Search Section
 
-search-bar-header = Traka pretraživanja
+search-bar-header = Traka za pretraživanje
 search-bar-hidden =
-    .label = Koristite adresnu traku za pretraživanje i navigaciju
+    .label = Koristi adresnu traku za pretraživanje i navigaciju
 search-bar-shown =
-    .label = Dodaj traku pretraživanja u alatnu traku
+    .label = Dodaj traku za pretraživanje u alatnu traku
 search-engine-default-header = Standardna tražilica
-search-engine-default-desc = Odaberi standardni preglednik koji će se koristiti u adresnoj traci i traci pretraživanja.
 search-engine-default-desc-2 = Ovo je standardna tražilica u adresnoj traci i traci za pretraživanje. Možeš je promijeniti u bilo koje vrijeme.
-search-engine-default-private-desc-2 = Odaberi jednu drugi standardnu tražilicu samo za Privatne prozore
+search-engine-default-private-desc-2 = Odaberi jednu drugu standardnu tražilicu samo za privatne prozore
 search-separate-default-engine =
     .label = Koristi ovu tražilicu u privatnim prozorima
     .accesskey = K
-search-suggestions-header = Prijedlozi za pretragu
+search-suggestions-header = Prijedlozi za pretraživanje
 search-suggestions-desc = Odaberi način prikaza prijedloga tražilica.
 search-suggestions-option =
-    .label = Prikaži prijedloge pretraživanja
+    .label = Prikaži prijedloge za pretraživanje
     .accesskey = P
 search-show-suggestions-url-bar-option =
-    .label = Prikaži prijedloge pretraživanja među rezultatima adresne trake
+    .label = Prikaži prijedloge za pretraživanje u rezultatima adresne trake
     .accesskey = l
 # This string describes what the user will observe when the system
 # prioritizes search suggestions over browsing history in the results
@@ -563,12 +566,13 @@ search-show-suggestions-url-bar-option =
 # "ahead" refers to location (appearing most proximate to), not time
 # (appearing before).
 search-show-suggestions-above-history-option =
-    .label = U adresnoj traci prikaži prijedloge za pretraživanje prije povijesti pregledavanja
+    .label = Prikaži prijedloge za pretraživanje u rezultatima adresne trake prije povijesti pregledavanja
 search-show-suggestions-private-windows =
     .label = Prikaži prijedloge za pretraživanje u privatnim prozorima
-suggestions-addressbar-settings = Promijeni postavke za povijest pregledavanja, zabilješke i prijedloge za kartice
+suggestions-addressbar-settings-generic = Promijeni postavke za ostale prijedloge u adresnoj traci
 search-suggestions-cant-show = Prijedlozi pretraživanja neće biti prikazani u lokacijskoj traci, jer je { -brand-short-name } podešen, da ne pamti povijest.
 search-one-click-header = Tražilice jednim klikom
+search-one-click-header2 = Prečaci za pretraživanje
 search-one-click-desc = Odaberi alternativne tražilice, koje će se pojaviti ispod adresne trake i trake pretraživanja kad počneš upisivati pojmove.
 search-choose-engine-column =
     .label = Tražilica
@@ -580,6 +584,9 @@ search-restore-default =
 search-remove-engine =
     .label = Ukloni
     .accesskey = U
+search-add-engine =
+    .label = Dodaj
+    .accesskey = D
 search-find-more-link = Pronađi daljnje tražilice
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -591,7 +598,6 @@ search-keyword-warning-bookmark = Odabrana je ključna riječ koju koristi zabil
 
 ## Containers Section
 
-containers-back-link = « Idi natrag
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -610,20 +616,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Ukloni
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Ponesi svoj web sa sobom
 sync-signedout-description = Sinkroniziraj tvoje zabilješke, povijest, kartice, lozinke, dodatke i postavke na sve svoje uređaje.
-sync-signedout-account-title = Poveži se sa { -fxaccount-brand-name }
-sync-signedout-account-create = Nemate račun? Započnite
-    .accesskey = r
-sync-signedout-account-signin =
-    .label = Prijavi se…
-    .accesskey = i
 sync-signedout-account-signin2 =
     .label = Prijavi se u { -sync-brand-short-name }…
     .accesskey = i
@@ -637,16 +634,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Preuzmi Firefox za <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> ili <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> za sinkroniziranje s tvojim mobilnim uređajem.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Primijeni sliku profila
-sync-disconnect =
-    .label = Prekini vezu …
-    .accesskey = k
 sync-sign-out =
     .label = Odjavi se …
     .accesskey = O
@@ -663,8 +654,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Prijava
     .accesskey = P
-sync-signedin-settings-header = Postavke sinkronizacije
-sync-signedin-settings-desc = Odaberi što želiš sinkronizirati na tvojim uređajima koji koriste { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -717,10 +706,6 @@ sync-engine-tabs =
     .label = Otvorene kartice
     .tooltiptext = Popis otvorenog na svim sinkroniziranim uređajima
     .accesskey = t
-sync-engine-logins =
-    .label = Prijave
-    .tooltiptext = Korisnička imena i lozinke koje ste spremili.
-    .accesskey = P
 sync-engine-logins-passwords =
     .label = Prijave i lozinke
     .tooltiptext = Korisnička imena i lozinke koje ste spremili
@@ -759,18 +744,10 @@ sync-device-name-save =
     .label = Spremi
     .accesskey = e
 sync-connect-another-device = Poveži drugi uređaj
-sync-manage-devices = Upravljaj uređajima
-sync-fxa-begin-pairing = Upari uređaj
-sync-tos-link = Uvjeti korištenja
-sync-fxa-privacy-notice = Napomena o privatnosti
 
 ## Privacy Section
 
 privacy-header = Privatnost preglednika
-
-## Privacy Section - Forms
-
-logins-header = Prijave i lozinke
 
 ## Privacy Section - Logins and Passwords
 
@@ -801,19 +778,43 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Koristi glavnu lozinku
     .accesskey = u
+forms-primary-pw-use =
+    .label = Koristi primarnu lozinku
+    .accesskey = u
+forms-primary-pw-learn-more-link = Saznaj više
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
-    .label = Promijeni glavnu lozinku …
+    .label = Promijeni primarnu lozinku …
     .accesskey = m
 forms-master-pw-fips-title = Trenutačno si u FIPS modu. FIPS ne dopušta praznu glavnu lozinku.
+forms-primary-pw-change =
+    .label = Promijeni primarnu lozinku…
+    .accesskey = P
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = Prije poznato kao glavna lozinka
+forms-primary-pw-fips-title = Trenutno si u načinu rada FIPS. FIPS ne dopušta praznu primarnu lozinku.
 forms-master-pw-fips-desc = Promjena lozinke nije uspjela
 
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Za stvaranje glavne lozinke, upiši svoje podatke za prijavu na Windows. To pomaže zaštiti sigurnost tvojih računa.
+# This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = stvori glavnu lozinku
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Za stvaranje primarne lozinke, unesi svoje podatke za prijavu na Windows. Ovo pomaže u zaštiti tvojih računa.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = stvori glavnu lozinku
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -845,10 +846,10 @@ history-remember-browser-option =
     .label = Zapamti povijest pregledavanja i preuzimanja
     .accesskey = p
 history-remember-search-option =
-    .label = Zapamti povijest traženja i formi
+    .label = Zapamti povijest traženja i obrazaca
     .accesskey = f
 history-clear-on-close-option =
-    .label = Obriši povijest prilikom zatvaranja { -brand-short-name }a
+    .label = Izbriši povijest kad se { -brand-short-name } zatvori
     .accesskey = z
 history-clear-on-close-settings =
     .label = Postavke…
@@ -867,9 +868,9 @@ sitedata-total-size-calculating = Izračunavanje veličine podataka web stranice
 sitedata-total-size = Tvoji spremljeni kolačići, podaci web stranica i privremena memorija trenutačno zauzimaju { $value } { $unit } prostora na disku.
 sitedata-learn-more = Saznaj više
 sitedata-delete-on-close =
-    .label = Obriši kolačiće i podatke stranica kada je { -brand-short-name } zatvoren
+    .label = Izbriši kolačiće i podatke stranica kad se { -brand-short-name } zatvori
     .accesskey = c
-sitedata-delete-on-close-private-browsing = U trajnom privatnom pregledavanju, kolačići i podaci o web stranicama će uvijek biti obrisani kad se zatvori { -brand-short-name }.
+sitedata-delete-on-close-private-browsing = U trajnom privatnom pregledavanju, kolačići i podaci o web stranicama će uvijek biti izbrisani kad se zatvori { -brand-short-name }.
 sitedata-allow-cookies-option =
     .label = Prihvati kolačiće i podatke web stranica
     .accesskey = a
@@ -880,8 +881,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Vrsta blokiranog
     .accesskey = t
-sitedata-option-block-trackers =
-    .label = Pratitelji trećih strana
 sitedata-option-block-cross-site-trackers =
     .label = Programi za praćenje među različitim web lokacijama
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -895,14 +894,17 @@ sitedata-option-block-all-third-party =
 sitedata-option-block-all =
     .label = Sve kolačiće (uzrokovat će greške na stranicama)
 sitedata-clear =
-    .label = Obriši podatke…
-    .accesskey = O
+    .label = Izbriši podatke …
+    .accesskey = I
 sitedata-settings =
     .label = Upravljaj podacima …
     .accesskey = m
 sitedata-cookies-permissions =
     .label = Upravljaj dozvolama …
     .accesskey = U
+sitedata-cookies-exceptions =
+    .label = Upravljanje iznimkama…
+    .accesskey = z
 
 ## Privacy Section - Address Bar
 
@@ -915,33 +917,18 @@ addressbar-locbar-bookmarks-option =
     .label = Zabilješke
     .accesskey = k
 addressbar-locbar-openpage-option =
-    .label = Otvori kartice
+    .label = Otvorene kartice
     .accesskey = O
+addressbar-locbar-topsites-option =
+    .label = Najbolje stranice
+    .accesskey = N
 addressbar-suggestions-settings = Promijeni postavke za prijedloge tražilica
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Blokiranje sadržaja
-content-blocking-section-description = Zaštiti svoju privatnost dok pregledavaš. Blokiraj nevidljivi sadržaj koji prati koje stranice posjećuješ i koji te profilira. Blokiranje dijela ovog sadržaja može ubrzati učitavanje stranica.
 content-blocking-enhanced-tracking-protection = Poboljšana zaštita od praćenja
 content-blocking-section-top-level-description = Programi za praćenje te prate po internetu i prikupljaju podatke o tvojim navikama i interesima. { -brand-short-name } blokira mnoge takve programe i druge zlonamjerne skripte.
 content-blocking-learn-more = Saznaj više
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Uobičajeno
-    .accesskey = o
-content-blocking-setting-strict =
-    .label = Strogo
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Prilagođeno
-    .accesskey = P
-content-blocking-standard-desc = Uravnoteženo za zaštitu i performansu. Dozvoli neke programe za praćenje kako bi webstranice ispravno funkcionirale.
-content-blocking-strict-description = Snažnija zaštita, može uzrokovati pucanje nekih web stranica.
-content-blocking-custom-desc = Odaberi što želiš blokirati.
-content-blocking-private-trackers = Poznati programi za praćenje samo u privatnim prozorima
-content-blocking-third-party-cookies = Kolačići za praćenje trećih strana
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -968,23 +955,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Pratitelji između v
 content-blocking-social-media-trackers = Programi za praćenje s društvenih mreža
 content-blocking-all-cookies = Sve kolačiće
 content-blocking-unvisited-cookies = Kolačiće s neposjećenih stranica
-content-blocking-all-windows-trackers = Poznati pratitelji u svim prozorima
 content-blocking-all-windows-tracking-content = Praćenje sadržaja u svim prozorima
 content-blocking-all-third-party-cookies = Svi kolačići trećih strana
 content-blocking-cryptominers = Kripto rudari
 content-blocking-fingerprinters = Jedinstvene otiske
 content-blocking-warning-title = Upozorenje!
-content-blocking-warning-description = Blokiranje sadržaja može uzrokovati greške u prikazu nekih web stranica. Lako možete isključiti blokiranje na stranicama kojima vjerujete.
-content-blocking-learn-how = Saznaj kako
 content-blocking-and-isolating-etp-warning-description = Blokiranje pratitelja i izoliranje kolačića može utjecati na funkcionalnost nekih stranica. Ponovno učitajte stranicu sa pratiteljem kako bi se učitao sav sadržaj.
 content-blocking-warning-learn-how = Saznaj kako
 content-blocking-reload-description = Morat ćeš ponovo učitati svoje kartice, kako bi se ove promjene primijenile.
 content-blocking-reload-tabs-button =
     .label = Ponovo učitaj sve kartice
     .accesskey = r
-content-blocking-trackers-label =
-    .label = Pratitelji
-    .accesskey = t
 content-blocking-tracking-content-label =
     .label = Praćenje sadržaja
     .accesskey = P
@@ -1043,12 +1024,6 @@ permissions-notification-link = Saznaj više
 permissions-notification-pause =
     .label = Pauziraj obavijesti dok se { -brand-short-name } ponovo ne pokrene
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Blokiraj automatsku reprodukciju zvuka na web stranicama
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = Iznimke …
-    .accesskey = e
 permissions-autoplay = Automatska reprodukcija
 permissions-autoplay-settings =
     .label = Postavke…
@@ -1089,7 +1064,7 @@ addon-recommendations =
 addon-recommendations-link = Saznaj više
 # This message is displayed above disabled data sharing options in developer builds
 # or builds with no Telemetry support available.
-collection-health-report-disabled = Izvještaji s podacima su onemogućeni za konfiguraciju
+collection-health-report-disabled = Izvještaji o podacima su deaktivirani za konfiguraciju za izgradnju
 collection-backlogged-crash-reports =
     .label = Dozvoli { -brand-short-name }u da šalje zapise o rušenju u tvoje ime
     .accesskey = o
@@ -1148,13 +1123,25 @@ space-alert-over-5gb-pref-button =
         }
 space-alert-over-5gb-message =
     { PLATFORM() ->
-        [windows] { -brand-short-name }u ponestaje diskovnog prostora. Sadržaj web stranica se možda neće ispravno prikazati. Spremljene podatke možeš obrisati u Mogućnosti > Privatnost i sigurnost > Kolačići i podaci stranica.
-       *[other] { -brand-short-name }u ponestaje diskovnog prostora. Sadržaj web stranica se možda neće ispravno prikazati. premljene podatke možeš obrisati u Postavke > Privatnost i sigurnost > Kolačići i podaci stranica.
+        [windows] { -brand-short-name }u ponestaje diskovnog prostora. Sadržaj web stranica se možda neće ispravno prikazati. Spremljene podatke možeš izbrisati u Mogućnosti > Privatnost i sigurnost > Kolačići i podaci stranica.
+       *[other] { -brand-short-name }u ponestaje diskovnog prostora. Sadržaj web stranica se možda neće ispravno prikazati. premljene podatke možeš izbrisati u Postavke > Privatnost i sigurnost > Kolačići i podaci stranica.
     }
 space-alert-under-5gb-ok-button =
     .label = U redu, razumijem
     .accesskey = U
 space-alert-under-5gb-message = { -brand-short-name }u ponestaje memorije. Sadržaji stranica se možda neće dobro prikazati. Posjeti „Saznaj više” za optimiranje korištenja memorije za bolje iskustvo tijekom pregledavanja.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Samo HTTPS modus
+httpsonly-description = HTTPS pruža sigurnu, šifriranu vezu između { -brand-short-name } i web-stranica koje posjećuješ. Većina web-stranica podržava HTTPS, a ako je samo HTTPS modus aktiviran, tada će { -brand-short-name } nadograditi sve veze na HTTPS.
+httpsonly-learn-more = Saznaj više
+httpsonly-radio-enabled =
+    .label = Aktiviraj samo HTTPS modus u svim prozorima
+httpsonly-radio-enabled-pbm =
+    .label = Aktiviraj samo HTTPS modus samo u privatnim prozorima
+httpsonly-radio-disabled =
+    .label = Nemoj aktivirati samo HTTPS modus
 
 ## The following strings are used in the Download section of settings
 

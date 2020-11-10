@@ -36,6 +36,7 @@ policy-DisableFirefoxStudies = Hindre { -brand-short-name } frå å køyre under
 policy-DisableForgetButton = Hindre tilgang til knappen Gløym.
 policy-DisableFormHistory = Ikkje lagre søkje- og skjemahistorikk.
 policy-DisableMasterPasswordCreation = Om aktiv, kan ikkje eit hovudpassord lagast.
+policy-DisablePrimaryPasswordCreation = Om aktiv, kan ikkje eit hovudpassord lagast.
 policy-DisablePasswordReveal = Ikkje la passord bli avslørte for lagra innloggingar.
 policy-DisablePocket = Deaktiver funksjonen for å lagre nettsider til Pocket.
 policy-DisablePrivateBrowsing = Slå av Privat nettlesing.
@@ -79,6 +80,8 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Gå tilbake til foreld
 
 policy-LocalFileLinks = Tillat at bestemte nettstadar koplar til lokale filer.
 policy-MasterPassword = Krev eller hindre bruk av hovudpassord.
+policy-ManagedBookmarks = Konfigurerer ei liste over bokmerke som vert administrert av ein administrator og som ikkje kan endrast av brukaren.
+policy-PrimaryPassword = Krev eller hindre bruk av hovudpassord.
 policy-NetworkPrediction = Aktiver eller deaktiver nettverkspredikering (DNS-prefetch).
 policy-NewTabPage = Slå på eller av sida Ny fane
 policy-NoDefaultBookmarks = Deaktiver oppretting av standardbokmerke, som følgjer med { -brand-short-name }, samt dei smarte bokmerka (Mest besøkte, Siste brukte etikettar). NB: Denne policyen fungerer berre om han er aktivert før profilen vert brukt for første gong.

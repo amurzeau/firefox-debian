@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Kirjoita vähemmän, löydä enemmän: Hae hakukoneella { $engineName } suoraan osoitepalkista.
 urlbar-search-tips-redirect-2 = Aloita hakeminen osoitepalkista, niin näet ehdotukset palvelusta { $engineName } ja selaushistoriastasi.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Kirjanmerkit
+urlbar-search-mode-tabs = Välilehdet
+urlbar-search-mode-history = Historia
+
 ##
 
 urlbar-geolocation-blocked =
@@ -156,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Poista laajennus
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Lähetä välilehti laitteeseen
+           *[other] Lähetä { $tabCount } välilehteä laitteeseen
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Lähetä välilehti laitteeseen
+           *[other] Lähetä { $tabCount } välilehteä laitteeseen
+        }
+page-action-pocket-panel =
+    .label = Tallenna sivu { -pocket-brand-name }-palveluun
+page-action-copy-url-panel =
+    .label = Kopioi linkki
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopioi linkki
+page-action-email-link-panel =
+    .label = Lähetä linkki…
+page-action-email-link-urlbar =
+    .tooltiptext = Lähetä linkki…
+page-action-share-url-panel =
+    .label = Jaa
+page-action-share-url-urlbar =
+    .tooltiptext = Jaa
+page-action-share-more-panel =
+    .label = Lisää…
+page-action-send-tab-not-ready =
+    .label = Synkronoidaan laitteita…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Kiinnitä välilehti
+page-action-pin-tab-urlbar =
+    .tooltiptext = Kiinnitä välilehti
+page-action-unpin-tab-panel =
+    .label = Irrota välilehti
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Irrota välilehti
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Tällä kertaa käytä hakuun:
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +238,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Aseta oletushakukoneeksi yksityisissä ikkunoissa
     .accesskey = A
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Kirjanmerkit ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Välilehdet ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Historia ({ $restrict })
 
 ## Bookmark Panel
 
@@ -212,6 +285,15 @@ identity-passive-loaded = Tällä sivulla on suojaamatonta sisältöä (kuten ku
 identity-active-loaded = Suojaamattoman sisällön estäminen on otettu pois päältä sivustolla.
 identity-weak-encryption = Sivusto käyttää heikkoa salausta.
 identity-insecure-login-forms = Tälle sivulle kirjoitettujen kirjautumistietojen turvallisuus voi vaarantua.
+identity-https-only-connection-upgraded = (päivitetty HTTPS:ksi)
+identity-https-only-label = Vain HTTPS -tila
+identity-https-only-dropdown-on =
+    .label = Käytössä
+identity-https-only-dropdown-off =
+    .label = Ei käytössä
+identity-https-only-dropdown-off-temporarily =
+    .label = Ei käytössä väliaikaisesti
+identity-https-only-info-no-upgrade = Yhteyden päivittäminen HTTP:stä epäonnistui.
 identity-permissions =
     .value = Käyttöoikeudet
 identity-permissions-reload-hint = Sivu tarvitsee ehkä päivittää, jotta muutokset tulevat voimaan.
@@ -257,6 +339,9 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Sulje
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -292,8 +377,42 @@ enable-devtools-popup-description = Voit käyttää F12-pikanäppäintä, kun ol
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Kirjoita osoite tai hakutermi
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Kirjoita osoite tai hakutermi
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Hae verkosta
+    .aria-label = Hae hakukoneella { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Kirjoita hakuehdot
+    .aria-label = Hae sivustosta { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Kirjoita hakuehdot
+    .aria-label = Hae kirjanmerkeistä
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Kirjoita hakuehdot
+    .aria-label = Hae historiasta
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Kirjoita hakuehdot
+    .aria-label = Hae välilehdistä
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Hae hakukoneella { $name } tai kirjoita osoite
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Selain on kauko-ohjauksessa
 urlbar-permissions-granted =
@@ -309,3 +428,55 @@ urlbar-page-action-button =
     .tooltiptext = Sivun toiminnot
 urlbar-pocket-button =
     .tooltiptext = Tallenna { -pocket-brand-name }-palveluun
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Hae hakukoneella { $engine } yksityisessä ikkunassa
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Hae yksityisessä ikkunassa
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine }-haku
+urlbar-result-action-sponsored = Sponsoroitu
+urlbar-result-action-switch-tab = Siirry välilehteen
+urlbar-result-action-visit = Avaa
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Hae hakukoneella { $engine } suoraan osoitepalkista
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Hae hakukoneella { $engine } suoraan osoitepalkista
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Etsi kirjanmerkeistä
+urlbar-result-action-search-history = Etsi historiasta
+urlbar-result-action-search-tabs = Etsi välilehdistä
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> on nyt kokoruututilassa
+fullscreen-warning-no-domain = Dokumentti on nyt kokoruututilassa
+fullscreen-exit-button = Poistu kokoruututilasta (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Poistu kokoruututilasta (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = Sivusto <span data-l10n-name="domain">{ $domain }</span> hallitsee hiiren osoitinta. Voit ottaa osoittimen hallintaasi painamalla Esc.
+pointerlock-warning-no-domain = Tämä sivu hallitsee hiiren osoitinta. Voit ottaa osoittimen hallintaasi painamalla Esc.

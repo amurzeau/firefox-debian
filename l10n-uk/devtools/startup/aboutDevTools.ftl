@@ -5,10 +5,10 @@
 head-title = Про інструменти розробника
 enable-title = Увімкнути інструменти розробника Firefox
 enable-inspect-element-title = Увімкнути інструменти розробника Firefox, щоб дослідити елемент
-enable-inspect-element-message = Досліджуйте і редагуйте HTML та CSS за допомогою інструмента «Інспектор».
+enable-inspect-element-message = Досліджуйте і редагуйте HTML та CSS за допомогою інструмента Інспектор.
 enable-about-debugging-message = Розробляйте та зневаджуйте WebExtensions, web workers, service workers тощо за допомогою інструментів розробника Firefox.
 enable-key-shortcut-message = Ви задіяли швидкий доступ до інструментів розробника. Якщо це трапилось ненароком, просто закрийте цю вкладку.
-enable-menu-message = Довершуйте HTML, CSS та JavaScript власного вебсайту за допомогою інструментів «Інспектор» та «Зневаджувач».
+enable-menu-message = Довершуйте HTML, CSS та JavaScript власного вебсайту за допомогою інструментів Інспектор та Зневаджувач.
 enable-common-message = Інструменти розробника Firefox від початку вимкнено, щоб надати вам більше можливостей керування власним браузером.
 enable-learn-more-link = Докладніше про інструменти розробника
 enable-enable-button = Увімкнути інструменти розробника
@@ -54,4 +54,4 @@ newsletter-error-unknown = Сталася неочікувана помилка.
 newsletter-error-timeout = Термін дії запиту на підписку завершився.
 # Variables:
 #   $shortcut (String) - The keyboard shortcut used for the tool
-welcome-message = Інструменти розробника увімкнено! Розпочніть з огляду меню «Веб-розробка» або відкрийте інструменти за допомогою { $shortcut }.
+welcome-message = Інструменти розробника увімкнено! Розпочніть з огляду меню Веб розробка або відкрийте інструменти за допомогою { $shortcut }.

@@ -57,6 +57,8 @@ about-paragraph = Thunderbird es el lider en clientes de correo electrónico y c
 about-paragraph-2 = <b> ¡Thunderbird está financiado por usuarios como usted! Si le gusta Thunderbird, considere hacer una donación.</b> La mejor manera de asegurarse de que Thunderbird permanezca disponible es
 about-donation = hacer una donación
 
+about-paragraph-consider-donation = <strong>¡Thunderbird está financiado por usuarios como usted! Si le gusta Thunderbird, por favor considere hacer una donación</strong> La mejor manera de asegurar su supervivencia es <a class="more" href="%(donate)s">donando.</a>
+
 explore-link = Explore las funciones
 support-link = Ayuda
 involved-link = Involúcrese

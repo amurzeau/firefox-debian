@@ -18,6 +18,7 @@ certmgr-mine = Seuraavilta organisaatioilta on sinut todentava varmenne
 certmgr-remembered = Näitä varmenteita käytetään sinun todentamiseen sivustoille
 certmgr-people = Seuraavat yksilöt todentavia varmenteita on tiedossa
 certmgr-servers = Seuraavat palvelimet todentavia varmenteita on tiedossa
+certmgr-server = Nämä tietueet identifioivat palvelinvarmenteen virhepoikkeukset
 certmgr-ca = Seuraavat varmentajat todentavia varmenteita on tiedossa
 certmgr-detail-general-tab-title =
     .label = Yleistiedot
@@ -161,6 +162,10 @@ delete-ssl-cert-title =
     .title = Poista palvelinvarmenteen poikkeus
 delete-ssl-cert-confirm = Poistetaanko nämä palvelinkohtaiset poikkeukset?
 delete-ssl-cert-impact = Palvelinkohtaisen poikkeuksen poistamisen jälkeen normaalit turvallisuustarkastukset ovat taas voimassa ja palvelimelta vaaditaan tällöin kelvollinen varmenne.
+delete-ssl-override-title =
+    .title = Poista palvelinvarmenteen poikkeus
+delete-ssl-override-confirm = Haluatko varmasti poistaa tämän palvelinpoikkeuksen?
+delete-ssl-override-impact = Jos poistat palvelinpoikkeuksen, palautat palvelimen tavanomaiset suojaustarkistukset ja vaadit sen käyttävän kelvollista varmentetta.
 delete-ca-cert-title =
     .title = Poista varmentajan varmenne tai luottamus siihen
 delete-ca-cert-confirm = Olet poistamassa näiden varmentajien varmenteita. Sisäänrakennettujen varmenteiden tapauksessa luottamus varmenteeseen poistetaan, joka on käytännössä sama kuin varmenteen poistaminen. Poistetaanko varmenteet tai luottamus niihin?
@@ -208,6 +213,15 @@ cert-not-verified-issuer-unknown = Varmennetta ei voitu todentaa, koska sen myö
 cert-not-verified-ca-invalid = Varmennetta ei voitu todentaa, koska sen varmentajan varmenne on epäkelpo.
 cert-not-verified_algorithm-disabled = Varmennetta ei voitu todentaa, koska se on allekirjoitettu allekirjoitusalgoritmilla, joka ei ole turvallinen.
 cert-not-verified-unknown = Varmennetta ei voitu todentaa tuntemattomasta syystä.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Älä lähetä asiakasvarmennetta
+# Used when no cert is stored for an override
+no-cert-stored-for-override = (Ei tallennettu)
+
+## Used to show whether an override is temporary or permanent
+
+permanent-override = Pysyvä
+temporary-override = Väliaikainen
 
 ## Add Security Exception dialog
 

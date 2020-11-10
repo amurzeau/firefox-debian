@@ -18,6 +18,9 @@ extensions-name = Nimi
 extensions-enabled = Lubatud
 extensions-version = Versioon
 extensions-id = ID
+support-addons-name = Nimi
+support-addons-version = Versioon
+support-addons-id = ID
 security-software-title = Turvatarkvara
 security-software-type = Tüüp
 security-software-name = Nimi
@@ -96,8 +99,6 @@ graphics-window-protocol = Graafilise kasutajaliidese protokoll
 place-database-title = Asukohtade andmebaas
 place-database-integrity = Terviklus
 place-database-verify-integrity = Verifitseeri terviklus
-js-title = JavaScript
-js-incremental-gc = Inkrementaalne GC
 a11y-title = Hõlbustus
 a11y-activated = Aktiveeritud
 a11y-force-disabled = Hõlbustus on keelatud
@@ -122,9 +123,7 @@ restart-in-safe-mode-label = Taaskäivita koos lisade keelamisega…
 
 audio-backend = Helisüsteem
 max-audio-channels = Maksimaalne arv kanaleid
-channel-layout = Eelistatud kanalite asetus
 sample-rate = Eelistatud diskreetimissagedus
-
 media-title = Meedia
 media-output-devices-title = Väljundseadmed
 media-input-devices-title = Sisendseadmed
@@ -161,6 +160,7 @@ intl-regional-prefs = Regionaalsed sätted
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -270,7 +270,6 @@ unknown-failure = Teadaoleva vea tõttu blokitud; veakood: { $failureCode }
 
 d3d11layers-crash-guard = D3D11 komposiitor
 d3d11video-crash-guard = D3D11 video dekodeerija
-d3d9video-crash-buard = D3D9 video dekodeerija
 d3d9video-crash-guard = D3D9 video dekodeerija
 glcontext-crash-guard = OpenGL
 

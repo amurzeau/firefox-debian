@@ -10,7 +10,7 @@ colors-dialog-window =
            *[other] width: 38em !important
         }
 
-colors-dialog-legend = Rucholajem tzij chuqa' rupam
+colors-dialog-legend = Tz'ib'atzij chuqa' Rupam
 
 text-color-label =
     .value = Rucholajem tzij:

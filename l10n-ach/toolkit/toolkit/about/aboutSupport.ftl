@@ -15,6 +15,9 @@ extensions-name = Nying
 extensions-enabled = Matyero
 extensions-version = Cik
 extensions-id = ID
+support-addons-name = Nying
+support-addons-version = Cik
+support-addons-id = ID
 security-software-name = Nying
 features-title = Jami me { -brand-short-name }
 features-name = Nying
@@ -61,8 +64,6 @@ graphics-gpu1-title = GPU #1
 graphics-gpu2-title = GPU #2
 graphics-decision-log-title = Rikod pi moko tam
 graphics-workarounds-title = Yoo me loyo ne
-js-title = JavaScript
-js-incremental-gc = GC ma kimedo
 a11y-title = Kite me nongo
 a11y-activated = Tye katic
 a11y-force-disabled = Geng Donyo iye
@@ -96,6 +97,7 @@ intl-locales-default = Leb makwongo
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -185,7 +187,6 @@ bug-link = bal { $bugNumber }
 unknown-failure = Kigengo woko; kod me poto { $failureCode }
 
 d3d11video-crash-guard = Lagony Vidio D3D11
-d3d9video-crash-buard = Lagony Vidio D3D9
 d3d9video-crash-guard = Lagony Vidio D3D9
 glcontext-crash-guard = OpenGL
 

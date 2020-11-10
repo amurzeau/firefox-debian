@@ -121,6 +121,10 @@ main-context-menu-save-link =
     .label = Spasi link kao…
     .accesskey = k
 
+main-context-menu-save-link-to-pocket =
+    .label = Spasi link u { -pocket-brand-name }
+    .accesskey = o
+
 ## The access keys for "Copy Link Location" and "Copy Email Address"
 ## should be the same if possible; the two context menu items
 ## are mutually exclusive.
@@ -208,6 +212,12 @@ main-context-menu-media-video-leave-fullscreen =
     .label = Izađi iz prikaza preko cijelog ekrana
     .accesskey = u
 
+# This is used when right-clicking on a video in the
+# content area when the Picture-in-Picture feature is enabled.
+main-context-menu-media-pip =
+    .label = Slika-u-slici
+    .accesskey = u
+
 main-context-menu-image-reload =
     .label = Ponovo učitaj sliku
     .accesskey = P
@@ -284,6 +294,10 @@ main-context-menu-plugin-hide =
     .label = Sakrij ovaj plugin
     .accesskey = H
 
+main-context-menu-save-to-pocket =
+    .label = Spasi stranicu u { -pocket-brand-name }
+    .accesskey = k
+
 main-context-menu-send-to-device =
     .label = Pošalji stranicu na uređaj
     .accesskey = u
@@ -291,6 +305,10 @@ main-context-menu-send-to-device =
 main-context-menu-view-background-image =
     .label = Prikaži pozadinsku sliku
     .accesskey = P
+
+main-context-menu-generate-new-password =
+    .label = Koristi generisanu lozinku…
+    .accesskey = G
 
 main-context-menu-keyword =
     .label = Dodaj ključnu riječ za ovu pretragu…
@@ -364,7 +382,9 @@ main-context-menu-inspect-element =
     .label = Inspekcija elementa
     .accesskey = Q
 
+main-context-menu-inspect-a11y-properties =
+    .label = Provjerite svojstva pristupačnosti
+
 main-context-menu-eme-learn-more =
     .label = Saznajte više o DRM-u…
     .accesskey = D
-

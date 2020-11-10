@@ -17,6 +17,12 @@ extensions-name = Nimi
 extensions-enabled = Käytössä
 extensions-version = Versio
 extensions-id = ID
+support-addons-title = Lisäosat
+support-addons-name = Nimi
+support-addons-type = Tyyppi
+support-addons-enabled = Käytössä
+support-addons-version = Versio
+support-addons-id = ID
 security-software-title = Tietoturvaohjelmat
 security-software-type = Tyyppi
 security-software-name = Nimi
@@ -70,6 +76,12 @@ show-dir-label =
         [windows] Avaa kansio
        *[other] Avaa kansio
     }
+environment-variables-title = Ympäristömuuttujat
+environment-variables-name = Nimi
+environment-variables-value = Arvo
+experimental-features-title = Kokeelliset ominaisuudet
+experimental-features-name = Nimi
+experimental-features-value = Arvo
 modified-key-prefs-title = Tärkeät muutetut asetukset
 modified-prefs-name = Nimi
 modified-prefs-value = Arvo
@@ -94,8 +106,6 @@ graphics-desktop-environment = Työpöytäympäristö
 place-database-title = Places-tietokanta
 place-database-integrity = Virheettömyys
 place-database-verify-integrity = Tarkista virheettömyys
-js-title = JavaScript
-js-incremental-gc = Jatkuva roskienkeräys
 a11y-title = Esteettömyystoiminnot
 a11y-activated = Käytössä
 a11y-force-disabled = Estä esteettömyystoiminnot
@@ -125,7 +135,6 @@ restart-button-label = Käynnistä uudestaan
 
 audio-backend = Äänen taustajärjestelmä
 max-audio-channels = Kanavia enintään
-channel-layout = Ensisijainen kanava-asettelu
 sample-rate = Ensisijainen näytteenottotaajuus
 roundtrip-latency = Edestakainen viive (keskihajonta)
 media-title = Media
@@ -262,11 +271,13 @@ blocklisted-bug = Estolistalla tunnettujen ongelmien takia
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = vika { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Estolistalla tunnetuista ongelmista johtuen: <a data-l10n-name="bug-link">vika { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Estolistalla; virhekoodi { $failureCode }
 d3d11layers-crash-guard = D3D11-koostaminen
 d3d11video-crash-guard = D3D11-videopurkaja
-d3d9video-crash-buard = D3D9-videopurkaja
 d3d9video-crash-guard = D3D9-videopurkaja
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX -videopurkaja
@@ -314,6 +325,10 @@ multi-process-status-6 = Poistettu käytöstä ei-tuetun tekstisyötteen takia
 multi-process-status-7 = Poistettu käytöstä lisäosien takia
 multi-process-status-8 = Poistettu käytöstä pakottaen
 multi-process-status-unknown = Tuntematon tila
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
 async-pan-zoom = Asynkroninen siirto/lähennys
 apz-none = ei mitään
 wheel-enabled = rullaliittymä käytössä
@@ -334,3 +349,8 @@ touch-warning = async kosketusliittymä pois käytöstä ei tuetun asetuksen joh
 policies-inactive = Ei käytössä
 policies-active = Käytössä
 policies-error = Virhe
+
+## Printing section
+
+support-printing-prefs-name = Nimi
+support-printing-prefs-value = Arvo

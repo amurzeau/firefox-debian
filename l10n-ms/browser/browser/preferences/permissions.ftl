@@ -5,57 +5,46 @@
 permissions-window =
     .title = Pengecualian
     .style = width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Alamat laman web
     .accesskey = l
-
 permissions-block =
     .label = Sekat
     .accesskey = a
-
 permissions-session =
     .label = Izinkan untuk Sesi
     .accesskey = S
-
 permissions-allow =
     .label = Izinkan
     .accesskey = A
-
 permissions-site-name =
     .label = Laman web
-
 permissions-status =
     .label = Status
-
 permissions-remove =
     .label = Buang Laman Web
     .accesskey = B
-
 permissions-remove-all =
     .label = Buang Semua Laman Web
     .accesskey = u
-
 permissions-button-cancel =
     .label = Batal
     .accesskey = l
-
 permissions-button-ok =
     .label = Simpan Perubahan
     .accesskey = S
-
+permission-dialog =
+    .buttonlabelaccept = Simpan Perubahan
+    .buttonaccesskeyaccept = S
 permissions-searchbox =
     .placeholder = Carian laman web
-
 permissions-capabilities-allow =
     .label = Izinkan
 permissions-capabilities-block =
     .label = Sekat
 permissions-capabilities-prompt =
     .label = Sentiasa Tanya
-
 permissions-capabilities-listitem-allow =
     .value = Izinkan
 permissions-capabilities-listitem-block =
@@ -70,10 +59,6 @@ permissions-invalid-uri-label = Sila masukkan nama hos yang sah
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-content-blocking-window =
-    .title = Pengecualian - Sekatan Kandungan
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Anda telah menyahdayakan sekatan kandungan dalam laman web ini.
 
 ## Exceptions - Cookies
 
@@ -103,14 +88,8 @@ permissions-exceptions-addons-window =
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Anda boleh tentukan laman web yang diizinkan memasang add-ons. Taip alamat laman yang tepat untuk anda izinkan dan kemudian klik Izinkan.
 
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Pengecualian - Automain
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Anda boleh tentukan laman web yang sentiasa atau tidak diizinkan automain media dengan suara. Taip alamat laman web yang anda mahu uruskan dan kemudian klik Sekat atau Izinkan.
-
 ## Site Permissions - Autoplay
+
 
 ## Site Permissions - Notifications
 
@@ -133,6 +112,7 @@ permissions-site-location-disable-label =
 permissions-site-location-disable-desc = Ini akan menghalang mana-mana laman web yang tidak disenaraikan di atas daripada meminta izin untuk mengakses lokasi. Menyekat notifikasi boleh memecahkan beberapa ciri laman web.
 
 ## Site Permissions - Virtual Reality
+
 
 ## Site Permissions - Camera
 

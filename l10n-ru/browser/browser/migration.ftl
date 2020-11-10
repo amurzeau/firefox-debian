@@ -53,6 +53,9 @@ no-migration-sources = Ни одной программы, содержащей 
 import-source-page-title = Импорт настроек и данных
 import-items-page-title = Объекты для импорта
 import-items-description = Выберите объекты для импортирования:
+import-permissions-page-title = Предоставьте разрешения для { -brand-short-name }
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS требует, чтобы вы явно разрешили { -brand-short-name } доступ к закладкам Safari. Щёлкните «Продолжить» и выберите файл «Bookmarks.plist» на открывшейся панели «Открыть файл».
 import-migrating-page-title = Идёт импорт…
 import-migrating-description = В данное время импортируются следующие объекты…
 import-select-profile-page-title = Выбор профиля
@@ -88,6 +91,7 @@ imported-edge-reading-list = Список для чтения (из Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

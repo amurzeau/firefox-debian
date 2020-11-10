@@ -18,6 +18,7 @@ certmgr-mine = Masz identyfikujące certyfikaty z następujących organizacji:
 certmgr-remembered = Następujące certyfikaty są używane do identyfikowania użytkownika przez witryny:
 certmgr-people = Masz certyfikaty, które identyfikują następujące osoby:
 certmgr-servers = Masz certyfikaty, które identyfikują następujące serwery:
+certmgr-server = Następujące wpisy identyfikują wyjątki błędów certyfikatów serwera:
 certmgr-ca = Masz certyfikaty, które identyfikują następujące organy certyfikacji:
 certmgr-detail-general-tab-title =
     .label = Ogólne
@@ -158,9 +159,13 @@ delete-user-cert-title =
 delete-user-cert-confirm = Czy na pewno usunąć wybrane certyfikaty?
 delete-user-cert-impact = Usunięcie jednego z certyfikatów użytkownika spowoduje, że ponowne wykorzystanie go do potwierdzenia tożsamości użytkownika będzie niemożliwe.
 delete-ssl-cert-title =
-    .title = Usuń wyjątek dotyczący certyfikatu serwera
+    .title = Usuń wyjątki dotyczące certyfikatów serwerów
 delete-ssl-cert-confirm = Czy na pewno usunąć te wyjątki dotyczące certyfikatów serwerów?
 delete-ssl-cert-impact = Jeżeli wyjątek dotyczący certyfikatu serwera zostanie usunięty, przywrócone zostaną zwykłe procedury bezpieczeństwa dla tego serwera, w tym wymóg stosowania przez niego poprawnego certyfikatu.
+delete-ssl-override-title =
+    .title = Usuń wyjątek dotyczący certyfikatu serwera
+delete-ssl-override-confirm = Czy na pewno usunąć ten wyjątek dotyczący certyfikatu serwera?
+delete-ssl-override-impact = Jeżeli wyjątek dotyczący certyfikatu serwera zostanie usunięty, przywrócone zostaną zwykłe procedury bezpieczeństwa dla tego serwera, w tym wymóg stosowania przez niego poprawnego certyfikatu.
 delete-ca-cert-title =
     .title = Usuń lub przestań ufać certyfikatom CA
 delete-ca-cert-confirm = Zażądano usunięcia certyfikatów CA. Certyfikaty wbudowane przestaną być zaufane, co ma taki sam skutek. Czy na pewno usunąć lub przestać ufać wybranym certyfikatom CA?
@@ -208,6 +213,15 @@ cert-not-verified-issuer-unknown = Nie można sprawdzić tego certyfikatu, ponie
 cert-not-verified-ca-invalid = Nie można sprawdzić tego certyfikatu, ponieważ jego CA jest nieprawidłowy.
 cert-not-verified_algorithm-disabled = Nie można sprawdzić tego certyfikatu, ponieważ został podpisany algorytmem, który został zablokowany, ponieważ nie jest bezpieczny.
 cert-not-verified-unknown = Nie można sprawdzić tego certyfikatu z nieznanych przyczyn.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Nie wysyłaj certyfikatu klienta
+# Used when no cert is stored for an override
+no-cert-stored-for-override = (nieprzechowywany)
+
+## Used to show whether an override is temporary or permanent
+
+permanent-override = Na stałe
+temporary-override = Tymczasowy
 
 ## Add Security Exception dialog
 

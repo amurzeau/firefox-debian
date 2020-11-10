@@ -41,7 +41,13 @@ composition-addressing-header = Adresování
 privacy-main-header = Soukromí
 privacy-passwords-header = Hesla
 privacy-junk-header = Nevyžádaná
-privacy-data-collection-header = Sběr dat a jejich použití
+collection-header =
+    Sběr a používání dat o { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "loc") }
+        [feminine] { -brand-short-name(case: "loc") }
+        [neuter] { -brand-short-name(case: "loc") }
+       *[other] aplikaci { -brand-short-name }
+    }
 privacy-security-header = Zabezpečení
 privacy-scam-detection-title = Detekce podvodů
 privacy-anti-virus-title = Antivir
@@ -56,10 +62,6 @@ manage-messenger-languages-button =
     .accesskey = l
 confirm-messenger-language-change-description = Aby se změny projevily, restartujte { -brand-short-name(case: "acc") }
 confirm-messenger-language-change-button = Potvrdit a restartovat
-update-pref-write-failure-title = Chyba při zápisu
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Vaše předvolby se nepodařilo uložit. Není možný zápis do souboru: { $path }
 update-setting-write-failure-title = Chyba při ukládání nastavení aktualizací
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -527,7 +529,7 @@ history-label =
     .label = Pamatovat si navštívené stránky a adresy
     .accesskey = a
 cookies-label =
-    .label = Povolit serverům nastavovat cookies
+    .label = Povolit serverům ukládat cookies
     .accesskey = c
 third-party-label =
     .value = Povolit cookies třetích stran:

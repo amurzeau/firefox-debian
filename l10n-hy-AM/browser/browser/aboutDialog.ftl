@@ -43,7 +43,7 @@ community-2 = { -brand-short-name }-ը ստեղծել է <label data-l10n-name="
 helpus = Ցանկանու՞մ եք օգնել: <label data-l10n-name="helpus-donateLink">Կատարեք նվիրատվություն</label> կամ <label data-l10n-name="helpus-getInvolvedLink">միացեք մեր համայնքին:</label>
 
 bottomLinks-license = Արտոնագրի տվյալներ
-bottomLinks-rights = Օգտագործողի Իրավունքները
+bottomLinks-rights = Օգտագործողի իրավունքները
 bottomLinks-privacy = Գաղտնիության դրույթներ
 
 # Example of resulting string: 66.0.1 (64-bit)

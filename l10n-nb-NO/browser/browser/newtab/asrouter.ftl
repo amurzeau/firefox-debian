@@ -196,8 +196,8 @@ cfr-doorhanger-socialtracking-heading = { -brand-short-name } forhindret et sosi
 cfr-doorhanger-socialtracking-description = Ditt personvern betyr noe. { -brand-short-name } blokkerer nå vanlige sporere fra sosiale medier, og begrenser hvor mye data de kan samle inn om hva du gjør på nettet.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } blokkerte en fingerprinter på denne siden
 cfr-doorhanger-fingerprinters-description = Ditt personvern betyr noe. { -brand-short-name } blokkerer nå fingerprinters, som samler deler av unikt identifiserbar informasjon om enheten din for å spore deg.
-cfr-doorhanger-cryptominers-heading = { -brand-short-name } blokkerte en kryptominer på denne siden
-cfr-doorhanger-cryptominers-description = Ditt personvern betyr noe. { -brand-short-name } blokkerer nå kryptominere, som bruker systemets datakraft til å utvinne digitale penger.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } blokkerte en kryptoutvinning på denne siden
+cfr-doorhanger-cryptominers-description = Ditt personvern betyr noe. { -brand-short-name } blokkerer nå kryptoutvinnere, som bruker systemets datakraft til å utvinne digitale penger.
 
 ## Enhanced Tracking Protection Milestones
 
@@ -210,6 +210,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Vis alle
     .accesskey = s
+cfr-doorhanger-milestone-close-button = Lukk
+    .accesskey = L
 
 ## What’s New Panel Content for Firefox 76
 
@@ -243,3 +245,35 @@ cfr-whatsnew-protections-icon-alt = Skjoldikon
 
 cfr-whatsnew-better-pdf-header = Bedre PDF-opplevelse
 cfr-whatsnew-better-pdf-body = PDF-dokumenter åpnes nå direkte i { -brand-short-name }, og holder arbeidsflyten innen samme program.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Ditt personvern betyr noe. { -brand-short-name } ruter nå dine DNS-forespørsler sikkert når det er mulig, til en tjeneste levert av en partner, for å beskytte deg mens du surfer.
+cfr-doorhanger-doh-header = Sikrere, krypterte DNS-oppslag
+cfr-doorhanger-doh-primary-button = OK, jeg skjønner
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Slå av
+    .accesskey = S
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Personvernet ditt er viktig. { -brand-short-name } isolerer nå nettsteder fra hverandre, noe som gjør det vanskeligere for hackere å stjele passord, kredittkortnumre og annen sensitiv informasjon.
+cfr-doorhanger-fission-header = Nettstedsisolering
+cfr-doorhanger-fission-primary-button = OK, jeg skjønner
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Les mer
+    .accesskey = L
+# Deprecated
+cfr-doorhanger-fission-body = { -brand-short-name } har aktivert en eksperimentell funksjon Fission (nettstedsisolering) for deg. Ved å isolere hvert nettsted i en egen prosess, gir Fission et ekstra sikkerhetslag for deg og nettstedene du besøker.
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Automatisk beskyttelse mot lure sporingsmetoder
+cfr-whatsnew-clear-cookies-body = Noen sporere viderekobler deg til andre nettsteder som i hemmelighet setter infokapsler. { -brand-short-name } fjerner nå automatisk infokapslene slik at du ikke kan bli sporet.
+cfr-whatsnew-clear-cookies-image-alt = Illustrasjon for blokkert infokapsel
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Flere mediekontroller
+cfr-whatsnew-media-keys-body = Spill av og pause lyd eller video direkte fra tastaturet eller hodesettet, noe som gjør det enkelt å kontrollere media fra en annen fane, program eller til og med når datamaskinen er låst. Du kan også bruke tastene fremover og bakover for å bytte mellom sanger.
+cfr-whatsnew-media-keys-button = Finn ut hvordan

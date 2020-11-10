@@ -42,8 +42,8 @@ text-action-delete =
     .accesskey = T
 
 text-action-select-all =
-    .label = Ticha' ronojel
-    .accesskey = r
+    .label = Ticha' Ronojel
+    .accesskey = R
 
 text-action-select-all-shortcut =
     .key = A

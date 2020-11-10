@@ -34,7 +34,7 @@ downloads-cmd-cancel-panel =
 downloads-cmd-show-menuitem =
     .label = Agor Ffolder Cynnwys
     .accesskey = F
-  
+
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
     .label = Dangos yn Finder
@@ -45,7 +45,7 @@ downloads-cmd-use-system-default =
     .accesskey = N
 
 downloads-cmd-always-use-system-default =
-    .label = Agored Bob Amser mewn Darllenydd System
+    .label = Agor Bob Tro mewn Darllenydd System
     .accesskey = B
 
 downloads-cmd-show-button =

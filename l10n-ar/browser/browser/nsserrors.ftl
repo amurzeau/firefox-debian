@@ -2,24 +2,26 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
+# DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
+# This file gets parsed into a JS dictionary of all known error message ids in
+# gen_aboutneterror_codes.py . If we end up needing fluent attributes or
+# refactoring them in some way, the script will need updating.
+
 # Variables:
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
 ssl-connection-error = حدث خطأ أثناء الاتصال ب‍ { $hostname }. ‏{ $errorMessage }
-
 # Variables:
 # $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix = رمز الخطأ: { $error }
-
 psmerr-ssl-disabled = تعذّر الاتصال بسريّة لأن بروتوكول SSL مُعطّل.
 psmerr-ssl2-disabled = تعذّر الاتصال بسريّة لأن الموقع يستخدم إصدارة قديمة غير مُؤَمّنة من برتوكول SSL.
-
 # This is a multi-line message.
 psmerr-hostreusedissuerandserial =
     استقبلت شهادة غير صالحة.  الرّجاء الاتّصال بمدير النّظام أو مراسل البريد الإلكتروني و إعطائهم المعلومات التّالية:
     
     تحتوي شهادتك على نفس الرّقم التسلسلي لشهادة أخرى من نفس سلطة الشّهادات.  الرّجاء الحصول على شهادة جديدة تحتوي رقمًا تسلسليًا فريدًا.
-
 ssl-error-export-only-server = تعذر التواصل بشكل آمن. الجهاز الند لا يدعم التعمية عالية المستوى.
 ssl-error-us-only-server = تعذر التواصل بشكل آمن. الجهاز الند يحتاج تعمية عالية المستوى وهي غير مدعومة.
 ssl-error-no-cypher-overlap = لا يمكن التواصل بشكل آمن مع الجهاز الند: لا توجد خوارزميات تعمية مشتركة.
@@ -333,7 +335,9 @@ sec-error-locked-password = كلمة الصر مقفلة.
 sec-error-unknown-pkcs11-error = عُطل PKCS #11 غير معروف.
 sec-error-bad-crl-dp-url = مسار غير سليم أو غير مدعوم في اسم نقطة توزيع قائمة فسخ الشهادات.
 sec-error-cert-signature-algorithm-disabled = وُقَّعت الشهادة باستخدام خوارزمية عُطّلت لعدم أمانها.
+mozilla-pkix-error-key-pinning-failure = يستعمل الخادوم ميزة تثبيت المفاتيح (HPKP) ولكن تعذرت إقامة سلسلة شهادات موثوقة تُطابق مجموعة التثبيت. لا يمكنك تجاوز انتهاكات ميزة تثبيت المفاتيح (Key pinning).
 mozilla-pkix-error-inadequate-key-size = قدّم الخادوم شهادة حجم مفتاحها صغير جدا لإنشاء اتصال آمن.
+mozilla-pkix-error-v1-cert-used-as-ca = استُعملت شهادة X.509 إصدارة 1 غير أصلية الوثوق (trust anchor) لإصدار شهادة الخادوم. باتت شهادات X.509 إصدارة 1 بائدة ولا يجب استعمالها لتوقيع الشهادات الأخرى.
 mozilla-pkix-error-not-yet-valid-certificate = قدّم الخادوم شهادة غير صالحة بعد.
 mozilla-pkix-error-not-yet-valid-issuer-certificate = استُخدمت شهادة ليست صالحة بعد لإصدار شهادة الخادوم.
 mozilla-pkix-error-signature-algorithm-mismatch = خوارزمية التوقيع في حقل signature في الشهادة لا تطابق الخوارزمية في حقل signatureAlgorithm.

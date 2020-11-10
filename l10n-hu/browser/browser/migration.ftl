@@ -53,6 +53,9 @@ no-migration-sources = Nem található olyan program, amely könyvjelzőket, el�
 import-source-page-title = Beállítások és adatok importálása
 import-items-page-title = Importálandó elemek
 import-items-description = Válassza ki az importálni kívánt elemeket:
+import-permissions-page-title = Kérjük adjon engedélyt a { -brand-short-name }nak
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = A macOS megköveteli, hogy kifejezetten engedélyezze, hogy a { -brand-short-name } elérje a Safari könyvjelzőit. Kattintson a „Folytatás” gombra és a megjelenő Fájl megnyitása panelen válassza ki a „Bookmarks.plist” fájlt.
 import-migrating-page-title = Importálás…
 import-migrating-description = A következő elemek importálása folyik…
 import-select-profile-page-title = Profil kiválasztása
@@ -88,6 +91,7 @@ imported-edge-reading-list = Olvasási lista (az Edge-ből)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

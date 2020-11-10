@@ -5,66 +5,53 @@
 permissions-window =
     .title = Excepții
     .style = width: 50em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Adresa site-ului web
     .accesskey = d
-
 permissions-block =
     .label = Blochează
     .accesskey = B
-
 permissions-session =
     .label = Permite pentru sesiune
     .accesskey = s
-
 permissions-allow =
     .label = Permite
     .accesskey = A
-
 permissions-site-name =
     .label = Site web
-
 permissions-status =
     .label = Stare
-
 permissions-remove =
     .label = Elimină site-ul web
     .accesskey = R
-
 permissions-remove-all =
     .label = Elimină toate site-urile web
     .accesskey = E
-
 permissions-button-cancel =
     .label = Renunță
     .accesskey = C
-
 permissions-button-ok =
     .label = Salvează schimbările
     .accesskey = S
-
+permission-dialog =
+    .buttonlabelaccept = Salvează schimbările
+    .buttonaccesskeyaccept = S
 permissions-autoplay-menu = Implicit pentru toate site-urile web:
-
 permissions-searchbox =
     .placeholder = Caută site web
-
 permissions-capabilities-autoplay-allow =
     .label = Permite audio și video
 permissions-capabilities-autoplay-block =
     .label = Blochează audio
 permissions-capabilities-autoplay-blockall =
     .label = Blochează audio și video
-
 permissions-capabilities-allow =
     .label = Permite
 permissions-capabilities-block =
     .label = Blochează
 permissions-capabilities-prompt =
     .label = Întreabă întotdeauna
-
 permissions-capabilities-listitem-allow =
     .value = Permite
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = A fost introdusă o denumire nevalidă de gazdă
 permissions-invalid-uri-label = Te rugăm să introduci un nume de gazdă valid
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = Excepții - Blocare de conținut
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Ai dezactivat blocarea de conținut pe aceste site-uri web.
 
 permissions-exceptions-etp-window =
     .title = Excepții pentru protecția îmbunătățită împotriva urmăririi
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Site-uri web permise - Instalare de extensii
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Poți specifica ce site-uri web au permisiunea de a instala suplimente. Tastează adresa exactă a site-ului căruia vrei să-i oferi permisiunea și apoi clic pe Permite.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Excepții - Redare automată
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Poți specifica ce site-uri web au întotdeauna sau niciodată permisiunea de a reda automat conținut multimedia cu sunet. Tastează adresa site-ului pe care vrei să-l gestionezi și apoi dă clic pe Blochează sau Permite.
 
 ## Site Permissions - Autoplay
 

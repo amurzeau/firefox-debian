@@ -30,7 +30,7 @@ bookmark-overlay-tags =
     .accesskey = τ
 
 bookmark-overlay-tags-empty-description =
-    .placeholder = Διαχωρισμός ετικετών με κόμματα
+    .placeholder = Διαχωρίστε τις ετικέτες με κόμματα
 
 bookmark-overlay-tags-expander =
     .tooltiptext = Προβολή όλων των ετικετών

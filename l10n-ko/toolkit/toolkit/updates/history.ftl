@@ -9,7 +9,7 @@ close-button-label =
     .buttonlabelcancel = 닫기
     .title = 업데이트 기록
 
-no-updates-label = 설치된 업데이트 없음
+no-updates-label = 아직 설치된 업데이트 없음
 name-header = 이름
 date-header = 설치 날짜
 type-header = 형식

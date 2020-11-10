@@ -35,12 +35,6 @@ connection-proxy-http = HTTP Proxi
     .accesskey = x
 connection-proxy-http-port = B'ey
     .accesskey = B
-connection-proxy-http-share =
-    .label = Tokisäx ri junam proxi chi ke konojel
-    .accesskey = o
-
-connection-proxy-ssl = SSL Proxi
-    .accesskey = L
 connection-proxy-http-sharing =
     .label = Tawokisaj re proxi re' richin FTP chuqa' HTTPS
     .accesskey = o
@@ -79,11 +73,11 @@ connection-proxy-autotype =
     .accesskey = R
 
 connection-proxy-reload =
-    .label = Tisamajib'ëx chik
+    .label = Tisamajïx chik
     .accesskey = s
 
 connection-proxy-autologin =
-    .label = Mani tik'utüx rutz'etik we yakon ri ewan tzij
+    .label = Mani tik'utüx rujikib'axik we yakon ri ewan tzij
     .accesskey = r
     .tooltip = Re jun cha'oj re' nuya' awetal eqal chi kiwäch ri taq proxi toq e'ayakon kan taq awujil kichin rije'. Xakasik'ïx we ri ruya'ik awetal nisach.
 
@@ -107,6 +101,6 @@ connection-dns-over-https-url-item-default =
 connection-dns-over-https-url-custom =
     .label = Ichinan
     .accesskey = I
-    .tooltiptext = Tatz'ib'aj ri ajowanel URL richin nisol DNS chi rij HTTPS
+    .tooltiptext = Tatz'ib'aj ri URL nawajo' richin nisol DNS chi rij HTTPS
 
 connection-dns-over-https-custom-label = Ichinan

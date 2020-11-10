@@ -5,66 +5,53 @@
 permissions-window =
     .title = Изузеци
     .style = width: 46em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Адреса веб сајта
     .accesskey = д
-
 permissions-block =
     .label = Блокирај
     .accesskey = Б
-
 permissions-session =
     .label = Дозволи за ову сесију
     .accesskey = с
-
 permissions-allow =
     .label = Дозволи
     .accesskey = Д
-
 permissions-site-name =
     .label = Веб сајт
-
 permissions-status =
     .label = Стање
-
 permissions-remove =
     .label = Уклони сајт
     .accesskey = У
-
 permissions-remove-all =
     .label = Уклони све сајтове
     .accesskey = в
-
 permissions-button-cancel =
     .label = Откажи
     .accesskey = О
-
 permissions-button-ok =
     .label = Сачувај промене
     .accesskey = С
-
+permission-dialog =
+    .buttonlabelaccept = Сачувај промене
+    .buttonaccesskeyaccept = С
 permissions-autoplay-menu = Подразумевано за све веб странице:
-
 permissions-searchbox =
     .placeholder = Претражите веб сајт
-
 permissions-capabilities-autoplay-allow =
     .label = Дозволи звук и видео
 permissions-capabilities-autoplay-block =
     .label = Блокирај звук
 permissions-capabilities-autoplay-blockall =
     .label = Блокирај звук и видео
-
 permissions-capabilities-allow =
     .label = Дозволи
 permissions-capabilities-block =
     .label = Блокирај
 permissions-capabilities-prompt =
     .label = Увек питај
-
 permissions-capabilities-listitem-allow =
     .value = Дозволи
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = Унето је неисправно име ра
 permissions-invalid-uri-label = Унесите исправно име хоста
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = Изузеци - блокирање садржаја
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Онемогућили сте блокирање садржаја на овим веб сајтовима.
 
 permissions-exceptions-etp-window =
     .title = Изузеци од побољшане заштите од праћења
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Омогућени веб сајтови - инсталације додатака
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Можете да одредите којим веб сајтовима је дозвољено да инсталирају додатке. Укуцајте тачну адресу сајта којем желите да дозволите и притисните на Дозволи.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Изузеци - Аутоматска репродукција
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Можете одредити који веб сајтови ће увек или никад омогућити аутоматско пуштање медија са звуком. Унесите адресу сајта којим желите да управљате и кликните Блокирај или Омогући.
 
 ## Site Permissions - Autoplay
 

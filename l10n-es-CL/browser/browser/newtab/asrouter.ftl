@@ -206,6 +206,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Ver todos
     .accesskey = S
+cfr-doorhanger-milestone-close-button = Cerrar
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -239,3 +241,33 @@ cfr-whatsnew-protections-icon-alt = Ícono de escudo
 
 cfr-whatsnew-better-pdf-header = Mejor experiencia en PDF
 cfr-whatsnew-better-pdf-body = Los documentos PDF ahora se abren directamente en { -brand-short-name }, manteniendo tu flujo de trabajo al alcance.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Tu privacidad importa. { -brand-short-name } ahora enruta de forma segura tus solicitudes DNS siempre que sea posible a un servicio asociado para protegerte mientras navegas.
+cfr-doorhanger-doh-header = Búsquedas DNS más seguras y encriptadas
+cfr-doorhanger-doh-primary-button = Ok, me quedó clarito
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Desactivar
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Tu privacidad importa. { -brand-short-name } ahora aísla, o coloca en cajas separadas los sitios web, lo que dificulta que los piratas informáticos roben contraseñas, números de tarjetas de crédito y otra información confidencial.
+cfr-doorhanger-fission-header = Aislamiento del sitio
+cfr-doorhanger-fission-primary-button = Ok, ¡ya caché!
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Aprender más
+    .accesskey = L
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Protección automática contra tácticas de rastreo furtivas
+cfr-whatsnew-clear-cookies-body = Algunos rastreadores te redirigen a otros sitios web que configuran cookies en secreto. { -brand-short-name } ahora borra automáticamente esas cookies para que no puedan seguirte.
+cfr-whatsnew-clear-cookies-image-alt = Ilustración de cookie bloqueada
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Más controles multimedia
+cfr-whatsnew-media-keys-body = Reproduce y pausa audio o video directamente desde tu teclado o auriculares, facilitando el control de archivos multimedia desde otra pestaña, programa e incluso cuando tu computador está bloqueado. También puedes moverte entre pistas utilizando las teclas de avance y retroceso.
+cfr-whatsnew-media-keys-button = Aprender cómo

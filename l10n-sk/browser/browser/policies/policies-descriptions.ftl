@@ -59,6 +59,8 @@ policy-DisableFormHistory = Vypne ukladanie histórie vyhľadávania a formulár
 
 policy-DisableMasterPasswordCreation = Hodnota true znemožní nastavenie hlavného hesla.
 
+policy-DisablePrimaryPasswordCreation = Hodnota true znemožní nastavenie hlavného hesla.
+
 policy-DisablePasswordReveal = Zablokuje zobrazovanie hesiel v správcovi prihlasovacích údajov.
 
 policy-DisablePocket = Vypne funkciu pre ukladanie stránok do služby Pocket.
@@ -92,6 +94,9 @@ policy-DownloadDirectory = Nastaví a uzamkne umiestnenie pre preberanie súboro
 # “lock” means that the user won’t be able to change this setting
 policy-EnableTrackingProtection = Zapne alebo vypne blokovanie obsahu a prípadne túto funkciu uzamkne.
 
+# “lock” means that the user won’t be able to change this setting
+policy-EncryptedMediaExtensions = Zapne alebo vypne Encrypted Media Extensions a prípadne uzamkne toto nastavenie.
+
 # A “locked” extension can’t be disabled or removed by the user. This policy
 # takes 3 keys (“Install”, ”Uninstall”, ”Locked”), you can either keep them in
 # English or translate them as verbs.
@@ -105,6 +110,8 @@ policy-FirefoxHome = Nastaví domovskú stránku Firefoxu.
 
 policy-FlashPlugin = Povolí alebo zakáže používanie zásuvného modulu Flash.
 
+policy-Handlers = Nastaví predvolené aplikácie pre odkazy a typy súborov.
+
 policy-HardwareAcceleration = Ak je nastavená hodnota false, vypne hardvérové urýchľovanie.
 
 # “lock” means that the user won’t be able to change this setting
@@ -116,9 +123,14 @@ policy-LegacyProfiles = Vypne funkciu, ktorá vynucuje samostatný profil pre ka
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
 
+
 ##
 
 policy-LocalFileLinks = Povolí určitým webovým stránkam odkazovať na súbory uložené na pevnom disku.
+
+policy-MasterPassword = Vyžadovanie alebo zabránenie používania hlavného hesla.
+
+policy-PrimaryPassword = Vyžadovanie alebo zabránenie používania hlavného hesla.
 
 policy-NetworkPrediction = Povolí alebo zakáže prednačítavanie DNS (prefetching).
 
@@ -136,7 +148,12 @@ policy-OverridePostUpdatePage = Nastaví vlastnú stránku po aktualizácii apli
 
 policy-PasswordManagerEnabled = Povolí ukladanie hesiel do správcu hesiel.
 
+# PDF.js and PDF should not be translated
+policy-PDFjs = Zablokuje alebo nastaví zabudovaný PDF prehliadač PDF.js v aplikácii { -brand-short-name }.
+
 policy-Permissions2 = Nastaví povolenia pre kameru, mikrofón, polohu, upozornenia a automatické prehrávanie.
+
+policy-PictureInPicture = Povolí alebo zakáže režim obraz v obraze.
 
 policy-PopupBlocking = Povolí určitým webovým stránkam zobrazovať v predvolenom nastavení vyskakovacie okná.
 

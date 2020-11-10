@@ -17,13 +17,13 @@
 browser-main-window =
     .data-title-default = { -brand-full-name }
     .data-title-private = { -brand-full-name } (Navigazione anonima)
-    .data-content-title-default = { $content-title } - { -brand-full-name }
-    .data-content-title-private = { $content-title } - { -brand-full-name } (Navigazione anonima)
+    .data-content-title-default = { $content-title } – { -brand-full-name }
+    .data-content-title-private = { $content-title } – { -brand-full-name } (Navigazione anonima)
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
-# "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "default" – "Mozilla Firefox"
+# "private" – "Mozilla Firefox – (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -35,9 +35,9 @@ browser-main-window =
 #  $content-title (String): the title of the web content.
 browser-main-window-mac =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } - (Navigazione anonima)
+    .data-title-private = { -brand-full-name } – (Navigazione anonima)
     .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } - (Navigazione anonima)
+    .data-content-title-private = { $content-title } – (Navigazione anonima)
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -107,6 +107,16 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Scrivi di meno e trova più risultati: cerca con { $engineName } direttamente dalla barra degli indirizzi.
 urlbar-search-tips-redirect-2 = Inizia le tue ricerche dalla barra degli indirizzi per visualizzare suggerimenti da { $engineName } e dalla cronologia di navigazione.
 
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Seleziona questa scorciatoia per trovare ciò che ti serve più rapidamente.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Segnalibri
+urlbar-search-mode-tabs = Schede
+urlbar-search-mode-history = Cronologia
+
 ##
 
 urlbar-geolocation-blocked =
@@ -153,6 +163,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Rimuovi estensione
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Invia scheda a dispositivo
+           *[other] Invia { $tabCount } schede a dispositivo
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Invia scheda a dispositivo
+           *[other] Invia { $tabCount } schede a dispositivo
+        }
+page-action-pocket-panel =
+    .label = Salva pagina in { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Copia link
+page-action-copy-url-urlbar =
+    .tooltiptext = Copia link
+page-action-email-link-panel =
+    .label = Invia link per email…
+page-action-email-link-urlbar =
+    .tooltiptext = Invia link per email…
+page-action-share-url-panel =
+    .label = Condividi
+page-action-share-url-urlbar =
+    .tooltiptext = Condividi
+page-action-share-more-panel =
+    .label = Altro…
+page-action-send-tab-not-ready =
+    .label = Sincronizzazione dispositivi…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Appunta scheda
+page-action-pin-tab-urlbar =
+    .tooltiptext = Appunta scheda
+page-action-unpin-tab-panel =
+    .label = Rilascia scheda
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Rilascia scheda
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -182,6 +239,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Imposta come motore di ricerca predefinito in finestre anonime
     .accesskey = a
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Segnalibri ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Schede ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Cronologia ({ $restrict })
 
 ## Bookmark Panel
 
@@ -209,6 +286,19 @@ identity-passive-loaded = Alcuni elementi di questa pagina non sono sicuri (ad e
 identity-active-loaded = La protezione è disattivata per questa pagina.
 identity-weak-encryption = Questa pagina utilizza una crittografia debole.
 identity-insecure-login-forms = Gli accessi effettuati in questa pagina potrebbero essere vulnerabili.
+
+identity-https-only-connection-upgraded = (aggiornato a HTTPS)
+identity-https-only-label = Modalità solo HTTPS
+identity-https-only-dropdown-on =
+    .label = Attiva
+identity-https-only-dropdown-off =
+    .label = Disattivata
+identity-https-only-dropdown-off-temporarily =
+    .label = Disattivata temporaneamente
+identity-https-only-info-turn-on2 = Attivare la modalità solo HTTPS per fare in modo che { -brand-short-name } aggiorni la connessione quando possibile.
+identity-https-only-info-turn-off2 = Se la pagina non funziona correttamente, provare a disattivare per questo sito la modalità solo HTTPS per ricaricare utilizzando una connessione non sicura HTTP.
+identity-https-only-info-no-upgrade = Impossibile aggiornare la connessione da HTTP.
+
 identity-permissions =
     .value = Permessi
 identity-permissions-reload-hint = Potrebbe essere necessario ricaricare la pagina per rendere effettive le modifiche.
@@ -254,6 +344,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Chiudi
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Importa segnalibri…
+    .tooltiptext = Copia in { -brand-short-name } i segnalibri di un altro browser.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -291,6 +387,38 @@ urlbar-default-placeholder =
     .defaultPlaceholder = Inserisci un indirizzo o avvia una ricerca
 urlbar-placeholder =
     .placeholder = Inserisci un indirizzo o avvia una ricerca
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Cerca sul Web
+    .aria-label = Cerca con { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Immetti i termini di ricerca
+    .aria-label = Cerca in { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Immetti i termini di ricerca
+    .aria-label = Cerca nei segnalibri
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Immetti i termini di ricerca
+    .aria-label = Cerca nella cronologia
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Immetti i termini di ricerca
+    .aria-label = Cerca nelle schede
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Cerca con { $name } o inserisci un indirizzo
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Il browser è attualmente controllato da remoto
 urlbar-permissions-granted =
@@ -306,3 +434,68 @@ urlbar-page-action-button =
     .tooltiptext = Azioni per questa pagina
 urlbar-pocket-button =
     .tooltiptext = Salva in { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Cerca con { $engine } in una finestra anonima
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Cerca in una finestra anonima
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Cerca con { $engine }
+urlbar-result-action-sponsored = Sponsorizzato
+urlbar-result-action-switch-tab = Passa alla scheda
+urlbar-result-action-visit = Apri
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Premi il tasto di tabulazione (TAB) per cercare con { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Premi il tasto di tabulazione (TAB) per cercare in { $engine }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Cerca nei segnalibri
+urlbar-result-action-search-history = Cerca nella cronologia
+urlbar-result-action-search-tabs = Cerca nelle schede
+
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Cerca con { $engine } direttamente dalla barra degli indirizzi
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Cerca in { $engine } direttamente dalla barra degli indirizzi
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> è ora visualizzato a schermo intero
+fullscreen-warning-no-domain = Questo documento è ora visualizzato a schermo intero
+fullscreen-exit-button = Esci da schermo intero (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Esci da schermo intero (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> sta controllando il puntatore del mouse. Premere Esc per riprenderne il controllo.
+pointerlock-warning-no-domain = Questo documento sta controllando il puntatore del mouse. Premere Esc per riprenderne il controllo.

@@ -16,7 +16,7 @@ auth-waiting = Oczekiwanie, aż kontakt ukończy weryfikację…
 finger-verify = Zweryfikuj
 finger-verify-accessKey = w
 # Do not translate 'OTR' (name of an encryption protocol)
-buddycontextmenu-label = Dodaj odcisk OTR
+buddycontextmenu-label = Dodaj odcisk klucza OTR
 # Variables:
 #   $name (String) - the screen name of a chat contact person
 alert-start = Próba rozpoczęcia zaszyfrowanej rozmowy z użytkownikiem { $name }.

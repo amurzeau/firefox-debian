@@ -34,7 +34,7 @@ downloads-cmd-cancel-panel =
 downloads-cmd-show-menuitem =
     .label = Открыть папку с файлом
     .accesskey = к
-  
+
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
     .label = Показать в Finder
@@ -84,7 +84,7 @@ downloads-cmd-remove-from-history =
     .label = Удалить из истории
     .accesskey = л
 downloads-cmd-clear-list =
-    .label = Очистить панель Предпросмотра
+    .label = Очистить панель предпросмотра
     .accesskey = ч
 downloads-cmd-clear-downloads =
     .label = Очистить загрузки

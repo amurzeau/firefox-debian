@@ -9,7 +9,7 @@
 ## Default Developer Tools section
 
 # The heading
-options-select-default-tools-label = Aisinas pels desvolopaires per defaut
+options-select-default-tools-label = Aisinas de desvolopament per defaut
 
 # The label for the explanation of the * marker on a tool which is currently not supported
 # for the target of the toolbox.
@@ -115,9 +115,6 @@ options-enable-chrome-tooltip =
 
 # The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
 options-enable-remote-label = Activar lo desbugatge distant
-options-enable-remote-tooltip =
-    .title = Activar aquesta opcion permetrà de desbugar gràcias a las aisinas de desvolopament de las instàncias distantas de Firefox talas coma Firefox OS
-
 options-enable-remote-tooltip2 =
     .title = L’activacion d’aquesta opcion permetrà de desbogar aquesta instància del navegador a distància
 

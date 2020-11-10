@@ -10,6 +10,8 @@ preferences-title =
             [windows] Nastajenja
            *[other] Nastajenja
         }
+category-list =
+    .aria-label = Kategorije
 pane-general-title = Powšykne
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,7 +43,6 @@ composition-addressing-header = Adresěrowanje
 privacy-main-header = Priwatnosć
 privacy-passwords-header = Gronidła
 privacy-junk-header = Cajk
-privacy-data-collection-header = Zběranje a wužywanje datow
 collection-header = Gromaźenje a wužywanje datow { -brand-short-name }
 collection-description = Comy was z wuběrkami wobstaraś a janož to zběraś, což musymy póbitowaś, aby my { -brand-short-name } za kuždego pólěpšili. Pšosymy pśecej wó dowólnosć, nježli až wósobinske daty dostanjomy.
 collection-privacy-notice = Powěźeńka priwatnosći
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = l
 confirm-messenger-language-change-description = Startujśo { -brand-short-name } znowego, aby toś te změny nałožył
 confirm-messenger-language-change-button = Nałožyś a znowego startowaś
-update-pref-write-failure-title = Pisańska zmólka
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Nastajenje njedajo se składowaś. Njejo było móžno do dataje pisaś: { $path }
 update-setting-write-failure-title = Zmólka pśi składowanju aktualizěrowańskich nastajenjow
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -91,12 +88,11 @@ update-in-progress-ok-button = &Zachyśiś
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Dalej
+account-button = Kontowe nastajenja
 addons-button = Rozšyrjenja a drastwy
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Pśeglědajśo swóju identitu, aby głowne gronidło napórał.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Zapódajśo swóje pśizjawjeńske daty Windows, aby głowne gronidło napórał. To wěstotu wašych kontow šćita.
 # This message can be seen by trying to add a Master Password.
@@ -104,6 +100,13 @@ master-password-os-auth-dialog-message-win = Zapódajśo swóje pśizjawjeńske 
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = głowne gronidło napóraś
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Zapódajśo swóje pśizjawjeńske daty Windows, aby głowne gronidło napórał. To wěstotu wašych kontow šćita.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = głowne gronidło napóraś
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -541,6 +544,15 @@ master-password-label =
 master-password-button =
     .label = Głowne gronidło změniś…
     .accesskey = o
+primary-password-description = Głowne gronidło šćita wšykne waše gronidła, ale musyśo jo jaden raz na pósejźenje zapódaś.
+primary-password-label =
+    .label = Głowne gronidło wužywaś
+    .accesskey = G
+primary-password-button =
+    .label = Głowne gronidło změniś…
+    .accesskey = z
+forms-primary-pw-fips-title = Sćo tuchylu we FIPS-modusu. FIPS pomina se głowne gronidło.
+forms-master-pw-fips-desc = Změnjanje gronidła njejo se raźiło
 junk-description = Nastajśo swóje standardne nastajenja za cajkowu e-mail. Nastajenja cajkoweje e-maile, specifiske za konto, daju se w kontowych nastajenjach konfigurěrowaś.
 junk-label =
     .label = Gaž powěsći markěruju se ako cajk:

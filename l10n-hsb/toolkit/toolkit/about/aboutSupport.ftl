@@ -14,6 +14,12 @@ extensions-name = Mjeno
 extensions-enabled = Zmóžnjeny
 extensions-version = Wersija
 extensions-id = ID
+support-addons-title = Přidatki
+support-addons-name = Mjeno
+support-addons-type = Typ
+support-addons-enabled = Zmóžnjeny
+support-addons-version = Wersija
+support-addons-id = ID
 security-software-title = Wěstotna softwara
 security-software-type = Typ
 security-software-name = Mjeno
@@ -59,6 +65,7 @@ app-basics-service-workers = Zregistrowane service workers
 app-basics-profiles = Profile
 app-basics-launcher-process-status = Startowanski proces
 app-basics-multi-process-support = Multiprocesowe wokna
+app-basics-fission-support = Wokna Fission
 app-basics-remote-processes-count = Zdalene procesy
 app-basics-enterprise-policies = Předewzaćelske prawidła
 app-basics-location-service-key-google = Kluč stejnišćoweje słužby Google
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] Rjadowak wočinić
        *[other] Zapis wočinić
     }
+environment-variables-title = Wokolinowe wariable
+environment-variables-name = Mjeno
+environment-variables-value = Hódnota
+experimental-features-title = Eksperimentelne funkcije
+experimental-features-name = Mjeno
+experimental-features-value = Hódnota
 modified-key-prefs-title = Wažne změnjene nastajenja
 modified-prefs-name = Mjeno
 modified-prefs-value = Hódnota
@@ -95,8 +108,6 @@ graphics-desktop-environment = Desktopowa wokolina
 place-database-title = Datowa banka historije a zapołožkow
 place-database-integrity = Integrita
 place-database-verify-integrity = Integritu přepruwować
-js-title = JavaScript
-js-incremental-gc = Inkrementelny GC
 a11y-title = Bjezbarjernosć
 a11y-activated = Aktiwizowany
 a11y-force-disabled = Bjezbarjernosći zadźěwać
@@ -126,7 +137,6 @@ restart-button-label = Znowa startować
 
 audio-backend = Awdiobackend
 max-audio-channels = Maksimalna ličba kanalow
-channel-layout = Preferowane kanalowe wuhotowanje
 sample-rate = Preferowana wottasowanska rata
 roundtrip-latency = Wobběhowa latenca (standardne wotchilenje)
 media-title = Medije
@@ -273,11 +283,13 @@ blocklisted-bug = W blokowanskej lisćinje znatych problemow dla
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = programowy zmylk { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = W blokowanskej lisćinje znatych problemow dla: <a data-l10n-name="bug-link">programowy zmylk { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = W blokowanskej lisćinje; zmylkowy kod { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video Decoder
-d3d9video-crash-buard = D3D9 Video Decoder
 d3d9video-crash-guard = D3D9 Video Decoder
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Widejodekoder WMF VPX
@@ -325,6 +337,20 @@ multi-process-status-6 = Přez njepodpěrane tekstowe zapodaće znjemóžnjeny
 multi-process-status-7 = Přez přidatki znjemóžnjeny
 multi-process-status-8 = Namócnje znjemóžnjeny
 multi-process-status-unknown = Njeznaty status
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Přez eksperiment znjemóžnjeny
+fission-status-experiment-treatment = Přez eksperiment zmóžnjeny
+fission-status-disabled-by-e10s-env = Přez wokolinu znjemóžnjeny
+fission-status-enabled-by-env = Přez wokolinu zmóžnjeny
+fission-status-disabled-by-safe-mode = Přez wěsty modus znjemóžnjeny
+fission-status-enabled-by-default = Po standardźe zmóžnjeny
+fission-status-disabled-by-default = Po standardźe znjemóžnjeny
+fission-status-enabled-by-user-pref = Wot wužiwarja zmóžnjeny
+fission-status-disabled-by-user-pref = Wot wužiwarja znjezmóžnjeny
+fission-status-disabled-by-e10s-other = E10s znjemóžnjeny
 async-pan-zoom = Asynchrone přesuwanje/skalowanje
 apz-none = žadyn
 wheel-enabled = zapodaće z koleskom zmóžnjene
@@ -332,7 +358,7 @@ touch-enabled = zapodaće přez podótknjenje zmóžnjene
 drag-enabled = ćahanje suwanskeje lajsty zmóžnjene
 keyboard-enabled = tastatura zmóžnjena
 autoscroll-enabled = awtomatiske kulenje zmóžnjene
-zooming-enabled = łahodne šćipate skalowanje zmóžnjene
+zooming-enabled = łahodne dwuporstowe skalowanje zmóžnjene
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference
@@ -345,3 +371,12 @@ touch-warning = asynchrone zapodaće přez podótknjenje je so njepodpěraneho n
 policies-inactive = Njeaktiwny
 policies-active = Aktiwny
 policies-error = Zmylk
+
+## Printing section
+
+support-printing-title = Ćišćenje
+support-printing-troubleshoot = Rozrisanje problemow
+support-printing-clear-settings-button = Składowane ćišćerske nastajenja zhašeć
+support-printing-modified-settings = Změnjene ćišćerske nastajenja
+support-printing-prefs-name = Mjeno
+support-printing-prefs-value = Hódnota

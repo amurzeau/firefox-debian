@@ -17,6 +17,12 @@ extensions-name = שם
 extensions-enabled = מאופשר
 extensions-version = גרסה
 extensions-id = מזהה
+support-addons-title = תוספות
+support-addons-name = שם
+support-addons-type = סוג
+support-addons-enabled = מופעלת
+support-addons-version = גרסה
+support-addons-id = מזהה
 security-software-title = תוכנת אבטחה
 security-software-type = סוג
 security-software-name = שם
@@ -27,12 +33,14 @@ features-title = התכונות של { -brand-short-name }
 features-name = שם
 features-version = גרסה
 features-id = מזהה
+processes-title = תהליכים מרוחקים
 processes-type = סוג
 processes-count = כמות
 app-basics-title = מידע יישום בסיסי
 app-basics-name = שם
 app-basics-version = גרסה
 app-basics-build-id = מזהה גרסה
+app-basics-distribution-id = מזהה הפצה
 app-basics-update-channel = ערוץ עדכונים
 # This message refers to the folder used to store updates on the device,
 # as in "Folder for updates". "Update" is a noun, not a verb.
@@ -57,8 +65,10 @@ app-basics-performance = ביצועים
 app-basics-service-workers = Service Workers רשומים
 app-basics-profiles = פרופילים
 app-basics-multi-process-support = חלונות מרובי תהליכים
+app-basics-remote-processes-count = תהליכים מרוחקים
 app-basics-enterprise-policies = ערכות מדיניות ארגוניות
 app-basics-location-service-key-google = מפתח עבור שירותי המיקום של Google
+app-basics-safebrowsing-key-google = Google Safebrowsing Key
 app-basics-key-mozilla = מפתח עבור שירותי המיקום של Mozilla
 app-basics-safe-mode = מצב בטוח
 show-dir-label =
@@ -67,6 +77,12 @@ show-dir-label =
         [windows] פתיחת תיקייה
        *[other] פתיחת ספרייה
     }
+environment-variables-title = משתנים סביבתיים
+environment-variables-name = שם
+environment-variables-value = ערך
+experimental-features-title = תכונות ניסיוניות
+experimental-features-name = שם
+experimental-features-value = ערך
 modified-key-prefs-title = העדפות חשובות ששונו
 modified-prefs-name = שם
 modified-prefs-value = ערך
@@ -84,11 +100,13 @@ graphics-gpu2-title = GPU #2
 graphics-decision-log-title = יומן החלטות
 graphics-crash-guards-title = תכונות מנוטרלות של מגן הקריסות
 graphics-workarounds-title = מעקפים
+# Windowing system in use on Linux (e.g. X11, Wayland).
+graphics-window-protocol = פרוטוקול חלון
+# Desktop environment in use on Linux (e.g. GNOME, KDE, XFCE, etc).
+graphics-desktop-environment = סביבת שולחן עבודה
 place-database-title = מסד נתוני מיקום
 place-database-integrity = תקינות
 place-database-verify-integrity = וידוא תקינות
-js-title = JavaScript
-js-incremental-gc = איסוף זבל מצטבר
 a11y-title = נגישות
 a11y-activated = מופעל
 a11y-force-disabled = מניעת נגישות
@@ -116,7 +134,6 @@ restart-button-label = הפעלה מחדש
 
 audio-backend = מנגנון שמע
 max-audio-channels = מספר הערוצים המרבי
-channel-layout = פריסת הערוצים המועדפת
 sample-rate = קצב הדגימה המועדף
 media-title = מדיה
 media-output-devices-title = התקני פלט
@@ -239,10 +256,12 @@ blocklisted-bug = הוכנס לרשימה שחורה עקב בעיות ידוע�
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = באג { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = נחסם עקב בעיות ידועות: <a data-l10n-name="bug-link">תקלה { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = הוכנס לרשימה השחורה, קוד כישלון { $failureCode }
 d3d11video-crash-guard = מפענח הווידאו D3D11
-d3d9video-crash-buard = מפענח הווידאו D3D9
 d3d9video-crash-guard = מפענח הווידאו D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = מפענח הווידאו WMF VPX
@@ -264,6 +283,7 @@ can-sandbox-media = ארגז חול לתוספים חיצוניים עבור מ�
 sandbox-proc-type-content = תוכן
 sandbox-proc-type-file = תוכן קובץ
 sandbox-proc-type-media-plugin = תוסף מדיה
+startup-cache-title = מטמון הפעלה
 startup-cache-disk-cache-path = נתיב מטמון הכונן
 startup-cache-ignore-disk-cache = התעלמות ממטמון הכונן
 startup-cache-wrote-to-disk-cache = נכתב למטמון הכונן
@@ -275,7 +295,7 @@ launcher-process-status-unknown = מצב לא ידוע
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
-multi-process-status-0 = הופעל על־ידי המשתמש
+multi-process-status-0 = מופעל על־ידי המשתמש
 multi-process-status-1 = מופעל כברירת מחדל
 multi-process-status-2 = מנוטרל
 multi-process-status-4 = נוטרל עקב כלי נגישות
@@ -283,6 +303,20 @@ multi-process-status-6 = נוטרל עקב קלט טקסט לא נתמך
 multi-process-status-7 = נוטרל על־ידי תוספות
 multi-process-status-8 = מושבת בכוח
 multi-process-status-unknown = מצב לא ידוע
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = מושבת על־ידי ניסוי
+fission-status-experiment-treatment = מופעל על־ידי ניסוי
+fission-status-disabled-by-e10s-env = מושבת על־ידי הסביבה
+fission-status-enabled-by-env = מופעל על־ידי הסביבה
+fission-status-disabled-by-safe-mode = מושבת על־ידי מצב בטוח
+fission-status-enabled-by-default = מופעל כברירת מחדל
+fission-status-disabled-by-default = מושבת כברירת מחדל
+fission-status-enabled-by-user-pref = מופעל על־ידי המשתמש
+fission-status-disabled-by-user-pref = מושבת על־ידי המשתמש
+fission-status-disabled-by-e10s-other = ריבוי תהליכים מושבת
 apz-none = אין
 wheel-enabled = קלט גלגל מופעל
 touch-enabled = קלט מגע מופעל
@@ -299,3 +333,12 @@ autoscroll-enabled = גלילה אוטומטית פעילה
 policies-inactive = לא פעיל
 policies-active = פעיל
 policies-error = שגיאה
+
+## Printing section
+
+support-printing-title = הדפסה
+support-printing-troubleshoot = פתרון בעיות
+support-printing-clear-settings-button = ניקוי הגדרות ההדפסה השמורות
+support-printing-modified-settings = הגדרות הדפסה ששונו
+support-printing-prefs-name = שם
+support-printing-prefs-value = ערך

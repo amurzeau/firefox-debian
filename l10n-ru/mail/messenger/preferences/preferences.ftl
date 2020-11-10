@@ -10,6 +10,8 @@ preferences-title =
             [windows] Настройки
            *[other] Настройки
         }
+category-list =
+    .aria-label = Категории
 pane-general-title = Основные
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,10 +43,9 @@ composition-addressing-header = Адресация
 privacy-main-header = Приватность
 privacy-passwords-header = Пароли
 privacy-junk-header = Спам
-privacy-data-collection-header = Сбор и использование данных
 collection-header = Сбор и использование данных { -brand-short-name }
 collection-description = Мы стремимся предоставить вам выбор и собирать только то, что нам нужно, для выпуска и улучшения { -brand-short-name } для всех и каждого. Мы всегда спрашиваем разрешения перед получением личной информации.
-collection-privacy-notice = Уведомление о приватности
+collection-privacy-notice = Уведомление о конфиденциальности
 collection-health-report-telemetry-disabled = Вы больше не разрешаете { -vendor-short-name } собирать технические данные и данные взаимодействия. Все собранные ранее данные будут удалены в течение 30 дней.
 collection-health-report-telemetry-disabled-link = Подробнее
 collection-health-report =
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = ы
 confirm-messenger-language-change-description = Перезапустите { -brand-short-name } для применения этих изменений
 confirm-messenger-language-change-button = Применить и перезапустить
-update-pref-write-failure-title = Ошибка записи
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Не удалось сохранить настройку. Не удалось произвести запись в файл: { $path }
 update-setting-write-failure-title = Ошибка при сохранении настроек обновления
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -91,12 +88,11 @@ update-in-progress-ok-button = &Отменить
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Продолжить
+account-button = Параметры учётной записи
 addons-button = Расширения и темы
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Подтвердите свою личность для создания мастер-пароля.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Чтобы создать мастер-пароль, введите ваши учётные данные для входа в Windows. Это поможет защитить безопасность ваших аккаунтов.
 # This message can be seen by trying to add a Master Password.
@@ -104,6 +100,13 @@ master-password-os-auth-dialog-message-win = Чтобы создать маст�
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = создать мастер-пароль
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Чтобы создать мастер-пароль, введите ваши учётные данные для входа в Windows. Это поможет защитить безопасность ваших аккаунтов.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = создать мастер-пароль
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -148,9 +151,9 @@ mail-play-sound-label =
 mail-play-button =
     .label = Прослушать
     .accesskey = ш
-change-dock-icon = Изменить наcтройки значка приложения
+change-dock-icon = Изменить настройки значка приложения
 app-icon-options =
-    .label = Наcтройки значка приложения…
+    .label = Настройки значка приложения…
     .accesskey = ж
 notification-settings = Уведомления и звук по умолчанию могут быть отключены на Панели Уведомления в «Системных настройках».
 animated-alert-label =
@@ -248,7 +251,7 @@ offline-settings-button =
     .accesskey = в
 diskspace-legend = Дисковое пространство
 offline-compact-folder =
-    .label = Сжимать все папки, если при этом высвободится всего более
+    .label = Сжимать все папки, если при этом освободится всего более
     .accesskey = э
 compact-folder-size =
     .value = МБ
@@ -351,8 +354,8 @@ auto-mark-as-read =
     .label = Автоматически отмечать сообщения как прочитанные
     .accesskey = в
 mark-read-no-delay =
-    .label = Немедленно при просмотре
-    .accesskey = м
+    .label = Сразу после открытия
+    .accesskey = а
 
 ## Note: This will concatenate to "After displaying for [___] seconds",
 ## using (mark-read-delay) and a number (seconds-label).
@@ -408,7 +411,7 @@ auto-save-end = минут
 ##
 
 warn-on-send-accel-key =
-    .label = Запрашивать подтверждение при использовании клавиатурных сокращений для отправки сообщений
+    .label = Запрашивать подтверждение при использовании сочетаний клавиш для отправки сообщений
     .accesskey = п
 spellcheck-label =
     .label = Проверять орфографию перед отправкой сообщения
@@ -496,7 +499,7 @@ exceptions-button =
     .label = Исключения…
     .accesskey = к
 remote-content-info =
-    .value = Узнайте больше о вопросах приватности для содержимого из Интернета
+    .value = Узнайте больше о приватности содержимого из Интернета
 web-content = Содержимое веб-сайтов
 history-label =
     .label = Помнить посещённые мной веб-сайты и ссылки
@@ -526,11 +529,11 @@ cookies-button =
     .label = Показать куки…
     .accesskey = з
 do-not-track-label =
-    .label = Отправлять веб-сайтам сигнал «Не отслеживать», означающий, чтобы вы не хотите быть отслеживаемыми
+    .label = Отправлять веб-сайтам сигнал «Не отслеживать», означающий, чтобы вы не хотите, чтобы вас отслеживали
     .accesskey = я
 learn-button =
     .label = Подробнее
-passwords-description = { -brand-short-name } может запоминать пароли для всех ваших учетных записей.
+passwords-description = { -brand-short-name } может запоминать пароли всех ваших учётных записей.
 passwords-button =
     .label = Сохранённые пароли…
     .accesskey = х
@@ -541,6 +544,15 @@ master-password-label =
 master-password-button =
     .label = Сменить мастер-пароль…
     .accesskey = е
+primary-password-description = Мастер-пароль защищает все ваши пароли, но вам нужно будет вводить его один раз в сессию.
+primary-password-label =
+    .label = Использовать мастер-пароль
+    .accesskey = п
+primary-password-button =
+    .label = Сменить мастер-пароль…
+    .accesskey = м
+forms-primary-pw-fips-title = Вы работаете в режиме соответствия FIPS. При работе в этом режиме необходимо установить мастер-пароль.
+forms-master-pw-fips-desc = Смена пароля не удалась
 junk-description = Здесь вы можете установить настройки анти-спам фильтра по умолчанию. Настройки анти-спам фильтра, специфичные для учётной записи, могут быть установлены в параметрах учётной записи.
 junk-label =
     .label = Когда я помечаю сообщения как спам:
@@ -567,7 +579,7 @@ phishing-description = { -brand-short-name } может анализироват
 phishing-label =
     .label = Информировать, не является ли читаемое мною сообщение подозрительным письмом, рассылаемым мошенниками
     .accesskey = ф
-antivirus-description = { -brand-short-name } может облегчить работу антивируса при проверке входящих сообщений на наличие вирусов перед тем, как сохранить их в почтовые папки.
+antivirus-description = { -brand-short-name } может облегчить работу антивируса по проверке входящих сообщений на наличие вирусов перед тем, как сохранять их в почтовые папки.
 antivirus-label =
     .label = Разрешить антивирусу помещать в карантин отдельные входящие сообщения
     .accesskey = в

@@ -9,6 +9,7 @@ profiles-create = Създаване на профил
 profiles-restart-title = Рестартиране
 profiles-restart-in-safe-mode = Рестартиране с изключени добавки…
 profiles-restart-normal = Нормално рестартиране…
+profiles-conflict = Друг екземпляр на { -brand-product-name } е направил промени в профилите. Трябва да рестартирате { -brand-short-name }, преди да продължите с промените.
 profiles-flush-fail-title = Промените не са запазени
 profiles-flush-conflict = { profiles-conflict }
 profiles-flush-failed = Грешка попречи промените да бъдат запазени.
@@ -34,6 +35,9 @@ profiles-rename = Преименуване
 profiles-remove = Премахване
 profiles-set-as-default = Задаване като стандартен профил
 profiles-launch-profile = Отваряне на четеца с профила
+
+profiles-cannot-set-as-default-title = Грешка при задаване по подразбиране
+profiles-cannot-set-as-default-message = Профилът по подразбиране на { -brand-short-name } не може да бъде променен.
 
 profiles-yes = да
 profiles-no = не

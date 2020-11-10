@@ -4,7 +4,7 @@
 
 # Variables:
 # $hostname (String) - Hostname of the website with cert error.
-cert-error-intro = { $hostname } עושה שימוש באישור אבטחה שאינו תקף.
+cert-error-intro = { $hostname } משתמש באישור אבטחה שגוי.
 
 cert-error-mitm-intro = אתרים מוכיחים את זהותם באמצעות אישורי אבטחה, המונפקים על־ידי רשויות אישורים.
 
@@ -22,13 +22,13 @@ cert-error-trust-cert-invalid = האישור אינו מהימן מכיוון ש
 
 cert-error-trust-untrusted-issuer = האישור אינו מהימן מכיוון שהאישור של הגורם המנפיק אינו מהימן.
 
-cert-error-trust-signature-algorithm-disabled = האישור אינו מהימן מכיוון שהוא נחתם על־ידי אלגוריתם חתימה שנוטרל מכיוון שאינו מאובטח.
+cert-error-trust-signature-algorithm-disabled = האישור אינו מהימן מכיוון שהוא נחתם על־ידי אלגוריתם חתימה שהושבת מכיוון שאינו מאובטח.
 
-cert-error-trust-expired-issuer = האישור אינו מהימן מכיוון שפג תוקף האישור של הגורם המנפיק.
+cert-error-trust-expired-issuer = האישור אינו מהימן מכיוון שתוקף האישור של הגורם המנפיק פג.
 
 cert-error-trust-self-signed = האישור אינו מהימן מכיוון שהוא נחתם עצמית.
 
-cert-error-trust-symantec = אישורים שהונפקו על־ידי GeoTrust, ‏RapidSSL, ‏Symantec, ‏Thawte וֿVeriSign אינם נחשבים עוד כבטוחים מכיוון שרשויות האישורים הללו כשלו מבחינת נהלי אבטחה בעבר.
+cert-error-trust-symantec = אישורים שהונפקו על־ידי GeoTrust, ‏RapidSSL, ‏Symantec, ‏Thawte ו־VeriSign אינם נחשבים עוד כבטוחים מכיוון שרשויות האישורים הללו כשלו ביישום נהלי אבטחה.
 
 cert-error-untrusted-default = האישור לא מגיע ממקור מהימן.
 
@@ -95,7 +95,6 @@ deniedPortAccess-title = כתובת זו מוגבלת
 dnsNotFound-title = אבוי. יש לנו בעיה למצוא את האתר הזה.
 fileNotFound-title = קובץ לא נמצא
 fileAccessDenied-title = הגישה לקובץ נדחתה
-generic-title = שגיאה כללית
 captivePortal-title = כניסה לרשת
 # "Hmm" is a sound made when considering or puzzling over something.
 # You don't have to include it in your translation if your language does not have a written word like this.
@@ -113,8 +112,6 @@ proxyResolveFailure-title = שרת מתווך לא נמצא
 redirectLoop-title = הדף מבצע העברה לא תקינה
 unknownSocketType-title = תגובה לא צפויה מהשרת
 nssFailure2-title = חיבור מאובטח נכשל
-cspBlocked-title = נחסם בהתאם למדיניות האבטחה של התוכן
-xfoBlocked-title = נחסם בהתאם למדיניות ה־X-Frame-Options
 csp-xfo-error-title = ‏{ -brand-short-name } לא יכול לפתוח דף זה
 corruptedContentError-title = שגיאת תוכן פגום
 remoteXUL-title = XUL מרוחק

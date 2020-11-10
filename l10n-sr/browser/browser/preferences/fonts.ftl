@@ -11,7 +11,7 @@ fonts-window-close =
 ## Font groups by language
 
 fonts-langgroup-header = Фонтови за
-    .accesskey = Ф
+    .accesskey = F
 
 fonts-langgroup-arabic =
     .label = арапски
@@ -76,7 +76,7 @@ fonts-langgroup-other =
 ## Default fonts and their sizes
 
 fonts-proportional-header = Сразмерно
-    .accesskey = С
+    .accesskey = P
 
 fonts-default-serif =
     .label = Серифни

@@ -14,6 +14,12 @@ extensions-name = სახელი
 extensions-enabled = ჩართულია
 extensions-version = ვერსია
 extensions-id = ID
+support-addons-title = დამატებები
+support-addons-name = სახელი
+support-addons-type = სახეობა
+support-addons-enabled = ჩართულია
+support-addons-version = ვერსია
+support-addons-id = ID
 security-software-title = უსაფრთხოების დაცვის პროგრამა
 security-software-type = სახეობა
 security-software-name = სახელი
@@ -24,7 +30,7 @@ features-title = { -brand-short-name } – შესაძლებლობე�
 features-name = სახელი
 features-version = ვერსია
 features-id = ID
-processes-title = შორი მოქმედების პროცესები
+processes-title = დაშორებულად გაშვებული პროცესები
 processes-type = სახეობა
 processes-count = რაოდენობა
 app-basics-title = პროგრამის ძირითადი მონაცემები
@@ -59,7 +65,8 @@ app-basics-service-workers = დარეგისტრებული Service 
 app-basics-profiles = პროფილები
 app-basics-launcher-process-status = გამშვები პროცესი
 app-basics-multi-process-support = მრავალპროცესიანი ფანჯრები
-app-basics-remote-processes-count = შორი მოქმედების პროცესები
+app-basics-fission-support = Fission-ფანჯრები
+app-basics-remote-processes-count = დაშორებულად გაშვებული პროცესები
 app-basics-enterprise-policies = დებულებები კომპანიებისთვის
 app-basics-location-service-key-google = Google Location Service-ის გასაღები
 app-basics-safebrowsing-key-google = Google Safebrowsing-ის გასაღები
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] საქაღალდის გახსნა
        *[other] დირექტორიის გახსნა
     }
+environment-variables-title = გარემოს ცვლადები
+environment-variables-name = სახელი
+environment-variables-value = მნიშვნელობა
+experimental-features-title = საცდელი შესაძლებლობები
+experimental-features-name = სახელი
+experimental-features-value = მნიშვნელობა
 modified-key-prefs-title = ჩასწორებული მნიშვნელოვანი პარამეტრები
 modified-prefs-name = სახელი
 modified-prefs-value = მნიშვნელობა
@@ -95,8 +108,6 @@ graphics-desktop-environment = სამუშაო მაგიდის გ�
 place-database-title = Places მონაცემთა ბაზა
 place-database-integrity = მთლიანობა
 place-database-verify-integrity = მთლიანობის გადამოწმება
-js-title = JavaScript
-js-incremental-gc = თანმიმდევრული GC
 a11y-title = დამხმარე საშუალებები
 a11y-activated = მოქმედი
 a11y-force-disabled = დამხმარე საშუალებების აკრძალვა
@@ -105,7 +116,7 @@ a11y-instantiator = დამხმარე საშუალებები�
 library-version-title = ბიბლიოთეკის ვერსიები
 copy-text-to-clipboard-label = ტექსტის ასლის აღება
 copy-raw-data-to-clipboard-label = ნედლი მონაცემების ასლის აღება
-sandbox-title = იზოლირებული გარემო
+sandbox-title = განცალკევებული გარემო
 sandbox-sys-call-log-title = სისტემის უარყოფილი გამოძახებები
 sandbox-sys-call-index = #
 sandbox-sys-call-age = წამის წინ
@@ -116,17 +127,16 @@ sandbox-sys-call-number = სისტემური გამოძახე�
 sandbox-sys-call-args = არგუმენტები
 safe-mode-title = სცადეთ უსაფრთხო რეჟიმი
 restart-in-safe-mode-label = ხელახლა გაშვება გამორთული დამატებებით...
-clear-startup-cache-title = გაშვების დროებითი მეხსიერების გასუფთავება
-clear-startup-cache-label = გაშვების დროებითი მეხსიერების გასუფთავება…
-startup-cache-dialog-title = გაშვების დროებითი მეხსიერების გასუფთავება
-startup-cache-dialog-body = ხელახლა ჩართეთ { -brand-short-name } რომ გასუფთავდეს გაშვების დროებითი მეხსიერება. ეს არ შეცვლის თქვენს პარამეტრებს და არ მოაცილებს გაფართოებებს, რომლებსაც იყენებს { -brand-short-name }.
+clear-startup-cache-title = სცადეთ გაშვების კეშის გასუფთავება
+clear-startup-cache-label = გაშვების კეშის გასუფთავება…
+startup-cache-dialog-title = გაშვების კეშის გასუფთავება
+startup-cache-dialog-body = ხელახლა ჩართეთ { -brand-short-name } რომ გასუფთავდეს გაშვების დროებითი მონაცემები. ეს არ შეცვლის თქვენს პარამეტრებს და არ მოაცილებს გაფართოებებს, რომლებსაც იყენებს { -brand-short-name }.
 restart-button-label = ხელახლა გაშვება
 
 ## Media titles
 
 audio-backend = ხმის ქვესისტემა
 max-audio-channels = არხების მაქსიმალური რაოდენობა
-channel-layout = არხების სასურველი განლაგება
 sample-rate = დისკრეტიზაციის სასურველი სიხშირე
 roundtrip-latency = წრიული დაყოვნება (სტანდარტული გადახრა)
 media-title = მედია
@@ -263,11 +273,13 @@ blocklisted-bug = დამატებულია შეზღუდულთ�
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = შეცდომა { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = შეზღუდულთა სიაშია, შემდეგი მიზეზის გამო: <a data-l10n-name="bug-link">ხარვეზი { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = დამატებულია შეზღუდულთა სიაში; შეცდომის კოდი { $failureCode }
 d3d11layers-crash-guard = ასოთამწყობი D3D11
 d3d11video-crash-guard = D3D11 ვიდეომშიფრავი
-d3d9video-crash-buard = D3D9 ვიდეომშიფრავი
 d3d9video-crash-guard = D3D9 ვიდეომშიფრავი
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX ვიდეოგამშიფრავი
@@ -286,15 +298,15 @@ has-seccomp-bpf = Seccomp-BPF (სისტემური ზარების
 has-seccomp-tsync = Seccomp ნაკადის სინქრონიზაცია
 has-user-namespaces = მომხმარებლის სახელის სივრცეები
 has-privileged-user-namespaces = მომხმარებლის სახელის სივრცეები პრივილეგირებული პროცესებისთვის
-can-sandbox-content = შიგთავსის პროცესის იზოლირება
-can-sandbox-media = მედია მოდულის იზოლირება
-content-sandbox-level = შიგთავსის პროცესის იზოლირების დონე
-effective-content-sandbox-level = შიგთავსის პროცესის იზოლირების ეფექტიანი დონე
+can-sandbox-content = შიგთავსის პროცესის გამიჯვნა
+can-sandbox-media = მედია მოდულის გამიჯვნა
+content-sandbox-level = შიგთავსის პროცესის გამიჯვნის დონე
+effective-content-sandbox-level = შიგთავსის პროცესის გამიჯვნის ეფექტიანი დონე
 sandbox-proc-type-content = შიგთავსი
 sandbox-proc-type-file = ფაილის შიგთავსი
 sandbox-proc-type-media-plugin = მედიის მოდული
 sandbox-proc-type-data-decoder = მონაცემთა გამშიფრავი
-startup-cache-title = დროებითი საცავი გაშვებისთვის
+startup-cache-title = გაშვების კეში
 startup-cache-disk-cache-path = დისკის დროებითი საცავის მისამართი
 startup-cache-ignore-disk-cache = დისკის დროებითი საცავის უგულებელყოფა
 startup-cache-found-disk-cache-on-init = ნაპოვნია დისკის დროებითი საცავი Init-ზე
@@ -315,6 +327,20 @@ multi-process-status-6 = გამორთული მხარდაუჭე
 multi-process-status-7 = დამატებების მიერ გამორთული
 multi-process-status-8 = იძულებით გამორთული
 multi-process-status-unknown = უცნობი მდგომარეობა
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = გამორთული საცდელად
+fission-status-experiment-treatment = ჩართული საცდელად
+fission-status-disabled-by-e10s-env = გამორთული გარემოთი
+fission-status-enabled-by-env = ჩართული გარემოთი
+fission-status-disabled-by-safe-mode = გამორთული უსაფრთხო რეჟიმით
+fission-status-enabled-by-default = ჩართული ნაგულისხმევად
+fission-status-disabled-by-default = გამორთული ნაგულისხმევად
+fission-status-enabled-by-user-pref = ჩართული მომხმარებლის მიერ
+fission-status-disabled-by-user-pref = გამორთული მომხმარებლის მიერ
+fission-status-disabled-by-e10s-other = E10s გამორთული
 async-pan-zoom = ასინქრონული პანორამირება/ზომის ცვლილება
 apz-none = არაფერი
 wheel-enabled = რგოლით შეყვანა ჩართულია
@@ -335,3 +361,12 @@ touch-warning = შეხებით ასინქრონული შე�
 policies-inactive = უმოქმედო
 policies-active = მოქმედი
 policies-error = შეცდომა
+
+## Printing section
+
+support-printing-title = იბეჭდება
+support-printing-troubleshoot = პრობლემის აღმოფხვრა
+support-printing-clear-settings-button = ამობეჭდვის შენახული პარამეტრების გასუფთავება
+support-printing-modified-settings = ამობეჭდვის შეცვლილი პარამეტრები
+support-printing-prefs-name = სახელი
+support-printing-prefs-value = მნიშვნელობა

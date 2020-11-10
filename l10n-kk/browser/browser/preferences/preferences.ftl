@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Тек { -brand-short-name } белгілі трекерлерді бұғаттауға бапталғанда
 do-not-track-option-always =
     .label = Әрқашан
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Баптаулар
-           *[other] Баптаулар
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Баптаулар
@@ -35,6 +29,8 @@ search-input-box =
            *[other] Баптаулардан табу
         }
 managed-notice = Браузеріңіз сіздің ұйымыңызбен басқаралады.
+category-list =
+    .aria-label = Санаттар
 pane-general-title = Жалпы
 category-general =
     .tooltiptext = { pane-general-title }
@@ -50,6 +46,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name } Тәжірибелері
+category-experimental =
+    .tooltiptext = { -brand-short-name } Тәжірибелері
+pane-experimental-subtitle = Абайлап жалғастырыңыз
+pane-experimental-search-results-header = { -brand-short-name } тәжірибелері: Абайлап жалғастырыңыз
+pane-experimental-description = Кеңейтілген баптауларды өзгерту { -brand-short-name } өнімділік немесе қауіпсіздігіне әсерін тигізуі мүмкін.
 help-button-label = { -brand-short-name } қолдауы
 addons-button-label = Кеңейтулер және темалар
 focus-search =
@@ -82,6 +84,9 @@ extension-controlled-homepage-override = <img data-l10n-name="icon"/> { $name } 
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = <img data-l10n-name="icon"/> { $name } кеңейтуі Жаңа бетті басқарып тұр.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Бұл баптауды <img data-l10n-name="icon"/> { $name } кеңейтуі басқарып тұр.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = <img data-l10n-name="icon"/> { $name } кеңейтуі бұл параметрді басқарады.
@@ -365,13 +370,6 @@ update-application-warning-cross-user-setting = Бұл баптау бұл { -br
 update-application-use-service =
     .label = Жаңартуларды орнату үшін фон қызметін қолдану
     .accesskey = ф
-update-enable-search-update =
-    .label = Іздеу жүйелерін автожаңарту
-    .accesskey = а
-update-pref-write-failure-title = Жазу қатесі
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Баптауды сақтау мүмкін емес. Файлға жазу қатесі: { $path }
 update-setting-write-failure-title = Жаңарту баптауларын сақтау қатемен аяқталды
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -430,6 +428,7 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Суреттегі сурет видеоның басқару пернелерін іске қосу
     .accesskey = е
 browsing-picture-in-picture-learn-more = Көбірек білу
+browsing-media-control-learn-more = Көбірек білу
 browsing-cfr-recommendations =
     .label = Шолу кезінде кеңейтулерді ұсыну
     .accesskey = с
@@ -493,13 +492,14 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Үздік сайттар
 home-prefs-topsites-description = Сіз жиі шолатын сайттар
+home-prefs-topsites-by-option-sponsored =
+    .label = Демеуленген үздік сайттар
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = Ұсынушы { $provider }
-home-prefs-recommended-by-description = Бүкіл Интернеттен алынған тамаша контент, талғамыңызға сай таңдалған
 home-prefs-recommended-by-description-update = Интернеттен қызық материалдар, { $provider } жинаған
 
 ##
@@ -540,7 +540,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Құралдар панеліне іздеу панелін қосу
 search-engine-default-header = Негізгі іздеу жүйесі
-search-engine-default-desc = Адрестік жолақ және іздеу өрісі үшін қолданылатын негізгі іздеу жүйесін таңдау.
 search-engine-default-desc-2 = Бұл сіздің адрес жолағыңыздағы және іздеу жолындағы негізгі іздеу жүйесі. Сіз оны кез келген уақытта ауыстыра аласыз.
 search-engine-default-private-desc-2 = Тек жекелік терезелері үшін басқа іздеу жүйесін орнату
 search-separate-default-engine =
@@ -563,10 +562,10 @@ search-show-suggestions-above-history-option =
     .label = Адрестік жолақ нәтижелерінде іздеу ұсыныстарын шолу тарихының алдында көрсету
 search-show-suggestions-private-windows =
     .label = Іздеу жүйелерінің ұсыныстарын жекелік терезелерінде көрсету
-suggestions-addressbar-settings = Шолу тарихы, бетбелгілер және беттер ұсыныстары үшін баптауларды өзгерту
 suggestions-addressbar-settings-generic = Адрестік жолақ үшін басқа ұсыныстар баптауларын өзгерту
 search-suggestions-cant-show = Орналасу жолағынан іздеу нәтижелерінде іздеу ұсыныстары көрсетілмейді, өйткені сіз { -brand-short-name } өнімін тарихты есте сақтамайтындай етіп баптадыңыз.
 search-one-click-header = Бірлік шертумен іздеу қызметтері
+search-one-click-header2 = Жарлықтардан іздеу
 search-one-click-desc = Сіз кілттік сөзді енгізген кезде адрестік жолағы және іздеу өрістерінің астында көрсетілетін қосымша іздеу жүйелерін таңдаңыз.
 search-choose-engine-column =
     .label = Іздеу жүйесі
@@ -578,6 +577,9 @@ search-restore-default =
 search-remove-engine =
     .label = Өшіру
     .accesskey = ш
+search-add-engine =
+    .label = Қосу
+    .accesskey = о
 search-find-more-link = Көбірек іздеу қызметтерін қосу
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -589,7 +591,6 @@ search-keyword-warning-bookmark = Сіз таңдаған қысқаша ата�
 
 ## Containers Section
 
-containers-back-link = « Артқа
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -608,20 +609,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Өшіру
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Өз интернетіңізді өзіңізбен бірге ұстаңыз
 sync-signedout-description = Өзіңіздің бетбелгілер, тарих, беттер, парольдер және қосымшаларыңызды барлық құрылғыларыңыз арасында синхрондаңыз.
-sync-signedout-account-title = { -fxaccount-brand-name } көмегімен байланысу
-sync-signedout-account-create = Тіркелгіңіз жоқ па? Бастау
-    .accesskey = с
-sync-signedout-account-signin =
-    .label = Кіру…
-    .accesskey = р
 sync-signedout-account-signin2 =
     .label = { -sync-brand-short-name } ішіне кіру…
     .accesskey = у
@@ -635,16 +627,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Firefox қолданбасын <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> немесе <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> үшін жүктеп алып, мобильді құрылғыңызбен синхрондаңыз.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Профиль суретін ауыстыру
-sync-disconnect =
-    .label = Байланысты үзу…
-    .accesskey = з
 sync-sign-out =
     .label = Шығу…
     .accesskey = Ш
@@ -661,8 +647,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Кіру
     .accesskey = К
-sync-signedin-settings-header = Синхрондау баптаулары
-sync-signedin-settings-desc = { -brand-short-name } қолданатын құрылғыларыңызда нені синхрондауды таңдаңыз.
 
 ## Sync section - enabling or disabling sync.
 
@@ -715,10 +699,6 @@ sync-engine-tabs =
     .label = Ашық беттер
     .tooltiptext = Барлық синхрондалған құрылғыларда ашылған нәрселер тізімі
     .accesskey = т
-sync-engine-logins =
-    .label = Логиндер
-    .tooltiptext = Сіз сақтаған пайдаланушы аттары және парольдер
-    .accesskey = Л
 sync-engine-logins-passwords =
     .label = Логиндер және парольдер
     .tooltiptext = Сіз сақтаған пайдаланушы аттары және парольдер
@@ -757,18 +737,10 @@ sync-device-name-save =
     .label = Сақтау
     .accesskey = а
 sync-connect-another-device = Басқа құрылғыны байланыстыру
-sync-manage-devices = Құрылғыларды басқару
-sync-fxa-begin-pairing = Құрылғыны жұптау
-sync-tos-link = Қолдану шарттары
-sync-fxa-privacy-notice = Жекелік ескертуі
 
 ## Privacy Section
 
 privacy-header = Браузер жекелігі
-
-## Privacy Section - Forms
-
-logins-header = Логиндер және парольдер
 
 ## Privacy Section - Logins and Passwords
 
@@ -799,10 +771,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Мастер-парольді қолдану
     .accesskey = М
+forms-primary-pw-use =
+    .label = Басты парольді қолдану
+    .accesskey = ы
+forms-primary-pw-learn-more-link = Көбірек білу
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Мастер-парольді өзгерту…
     .accesskey = т
 forms-master-pw-fips-title = Сіз FIPS -ке сәйкестеу режимінде жұмыс істеп отырсыз. Бұл режим бос емес мастер-парольді талап етеді.
+forms-primary-pw-change =
+    .label = Басты парольді өзгерту…
+    .accesskey = п
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = Бұрын мастер пароль ретінде белгілі болған
+forms-primary-pw-fips-title = Сіз FIPS-ке сәйкестеу режимінде жұмыс істеп отырсыз. Бұл режим бос емес басты парольді талап етеді.
 forms-master-pw-fips-desc = Парольді өзгерту сәтсіз аяқталды
 
 ## OS Authentication dialog
@@ -814,6 +801,13 @@ master-password-os-auth-dialog-message-win = Басты парольді жас�
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = мастер парольді жасау
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Басты парольді жасау үшін, Windows ішіне кірудің есептік жазба мәліметтерін енгізіңіз. Бұл тіркелгілеріңіздің қауіпсіздігін қорғауға көмектеседі.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = басты парольді жасау
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -880,8 +874,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Блокталғанның түрі
     .accesskey = т
-sitedata-option-block-trackers =
-    .label = Үшінші жақты трекерлер
 sitedata-option-block-cross-site-trackers =
     .label = Сайтаралық трекерлер
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -927,27 +919,9 @@ addressbar-suggestions-settings = Іздеу жүйесінің ұсыныста
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Құраманы бұғаттау
-content-blocking-section-description = Шолу кезінде жекелігіңізді қорғаңыз. Сіз шолатын сайттарды бақылайтын және сіздің профиліңізді жасайтын көрінбейтін құраманы бұғаттаңыз. Бұл құраманың кейбіреуін бұғаттау беттердің жылдамдау жүктелуіне әкеп соғуы мүмкін.
 content-blocking-enhanced-tracking-protection = Бақылаудан кеңейтілген қорғаныс
 content-blocking-section-top-level-description = Трекерлер желіде сіздің соңыңыздан ереді, сіздің шолу әдеттері мен тақырыптары туралы ақпаратты жинайды. { -brand-short-name } осындай трекерлердің көбін және басқа да зиянкес скрипттерді бұғаттайды.
 content-blocking-learn-more = Көбірек білу
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Қалыпты
-    .accesskey = п
-content-blocking-setting-strict =
-    .label = Қатаң
-    .accesskey = т
-content-blocking-setting-custom =
-    .label = Таңдауыңызша
-    .accesskey = ы
-content-blocking-standard-desc = Қорғаныс және өнімділік үшін теңдестірілген. Веб-сайттар дұрыс жұмыс істеу мақсатында кейбір трекерлерді рұқсат етеді.
-content-blocking-strict-description = Қатаң қорғаныс, кейбір сайттардың бұзылуына әкеп соғуы мүмкін.
-content-blocking-custom-desc = Нені бұғаттауды таңдаңыз
-content-blocking-private-trackers = Жекелік терезелерінде барлық белгілі трекерлер
-content-blocking-third-party-cookies = Үшінші жақты бақылайтын cookies
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -974,23 +948,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Сайтаралық
 content-blocking-social-media-trackers = Әлеуметтік желілер трекерлері
 content-blocking-all-cookies = Барлық cookie файлдары
 content-blocking-unvisited-cookies = Қаралмаған сайттардың cookies файлдары
-content-blocking-all-windows-trackers = Барлық терезелердегі белгілі трекерлер
 content-blocking-all-windows-tracking-content = Барлық терезелердегі бақылайтын құрама
 content-blocking-all-third-party-cookies = Барлық үшінші жақты cookies
 content-blocking-cryptominers = Криптомайнерлер
 content-blocking-fingerprinters = Баспаны жинаушылар
 content-blocking-warning-title = Ескерту!
-content-blocking-warning-description = Құраманы бұғаттау кейбір веб-сайттар жұмысын бұзуы мүмкін. Сенімді сайттар үшін бұғаттауды өшіру оңай.
-content-blocking-learn-how = Көбірек білу
 content-blocking-and-isolating-etp-warning-description = Трекерлерді бұғаттау және cookie файлдарын оқшаулау кейбір сайттардың жұмысына әсер етуі мүмкін. Барлық мазмұнды жүктеу үшін трекерлермен бетті қайта жүктеңіз.
 content-blocking-warning-learn-how = Көбірек білу
 content-blocking-reload-description = Бұл өзгерістер іске асуы үшін беттерді қайта жүктеу керек болады.
 content-blocking-reload-tabs-button =
     .label = Барлық беттерді қайта жүктеу
     .accesskey = р
-content-blocking-trackers-label =
-    .label = Трекерлер
-    .accesskey = Т
 content-blocking-tracking-content-label =
     .label = Бақылайтын құрама
     .accesskey = т
@@ -1049,12 +1017,6 @@ permissions-notification-link = Көбірек білу
 permissions-notification-pause =
     .label = Хабарламаларды { -brand-short-name } қайта іске қосылғанша дейін аялдату
     .accesskey = д
-permissions-block-autoplay-media2 =
-    .label = Веб-сайттардың автоматты түрде дыбыс ойнатауын бұғаттау
-    .accesskey = д
-permissions-block-autoplay-media-exceptions =
-    .label = Ережелерден бөлек…
-    .accesskey = Е
 permissions-autoplay = Автоойнату
 permissions-autoplay-settings =
     .label = Баптаулар…
@@ -1158,9 +1120,21 @@ space-alert-over-5gb-message =
        *[other] { -brand-short-name } үшін бос орын аяқталуда. Вебсайттар құрамасы дұрыс көрсетілмеуі мүмкін. Сіз сайттардың сақталған деректерін Баптаулар > Жекелік және қауіпсіздік > Cookies файлдары және сайттар деректері ішінде өшіре аласыз.
     }
 space-alert-under-5gb-ok-button =
-    .label = ОК, түсіндім
-    .accesskey = О
+    .label = Жақсы, түсіндім
+    .accesskey = а
 space-alert-under-5gb-message = { -brand-short-name } үшін бос орын аяқталуда. Вебсайттар құрамасы дұрыс көрсетілмеуі мүмкін. "Көбірек білу" сілтемесін ашып, интернетті ыңғайлы шолу үшін диск қолданылуын қалай баптау керек екенін білуіңізге болады.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Тек-HTTPS режимі
+httpsonly-description = HTTPS { -brand-short-name } және сіз кіретін веб-сайттар арасында қауіпсіз, шифрленген байланысты ұсынады. Веб-сайттардың көбі HTTPS қолдайды, тек-HTTPS режимі іске қосылған болса, { -brand-short-name } барлық байланыстарды HTTPS-ке дейін жаңартады.
+httpsonly-learn-more = Көбірек білу
+httpsonly-radio-enabled =
+    .label = Барлық терезелерде тек-HTTPS режимін іске қосу
+httpsonly-radio-enabled-pbm =
+    .label = Тек-HTTPS режимін тек жекелік терезелерде іске қосу
+httpsonly-radio-disabled =
+    .label = Тек-HTTPS режимін іске қоспау
 
 ## The following strings are used in the Download section of settings
 

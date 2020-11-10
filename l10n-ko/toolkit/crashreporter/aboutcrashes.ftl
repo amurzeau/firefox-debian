@@ -8,9 +8,8 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 crash-reports-title = 충돌 보고서
-
 submit-all-button-label = 모두 제출
-delete-button-label = 모두 삭제
+delete-button-label = 모두 지우기
 delete-confirm-title = 계속하시겠습니까?
 delete-unsubmitted-description = 보내지지 않은 모든 충돌 보고서를 삭제하고 이는 되돌릴 수 었습니다.
 delete-submitted-description = 전송된 충볼 보고서 목록을 삭제하지만 전송된 데이터를 지우지는 않습니다. 이는 다시 되돌릴 수 없습니다.

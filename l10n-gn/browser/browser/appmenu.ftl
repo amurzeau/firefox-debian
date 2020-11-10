@@ -5,9 +5,8 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = Ñemiguáva ñemo’ã
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = Tereho ne marandu’i ñemiguápe
+appmenuitem-update-banner =
+    .label-update-downloading = Emboguejy { -brand-shorter-name } mbohekopyahu
 appmenuitem-protection-dashboard-title = Ñemo’ãha renda
 appmenuitem-customize-mode =
     .label = Ñemomba’e…
@@ -27,6 +26,7 @@ fxa-toolbar-sync-now =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Oĩpa mba’e pyahu
+
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

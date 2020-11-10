@@ -19,12 +19,11 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Tunigin Tusligt)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Tunigin Tusligt)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Tunigin Tusligt)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Tunigin Tusligt)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -111,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Aru cwiṭ, af-d ugar : nadi s { $engineName } srid seg ufeggag n tensa.
 urlbar-search-tips-redirect-2 = Bdu anadi-ik deg ufeggag n tansiwin i wakken ad tsekneḍ isumar seg { $engineName } daɣen seg umuzruy-ik n tunigin.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Fren anegzum-a akken ad tafeḍ ayen tettnadiḍ s tɣawla.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Ticraḍ n yisebtar
+urlbar-search-mode-tabs = Accaren
+urlbar-search-mode-history = Amazray
 
 ##
 
@@ -138,12 +145,10 @@ urlbar-midi-blocked =
     .tooltiptext = Tesweḥleḍ anekcum i MIDI γer usmel-agi.
 urlbar-install-blocked =
     .tooltiptext = Tesweḥleḍ asbeddi n yizegrar i usmel-a.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Ẓreg tacreḍṭ-a n usebter ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -160,6 +165,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Kkes asiɣzef
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Azen iccer ɣer yibenk
+           *[other] Azen { $tabCount } waccaren ɣer yibenk
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Azen iccer ɣer yibenk
+           *[other] Azen { $tabCount } waccaren ɣer yibenk
+        }
+page-action-pocket-panel =
+    .label = Sekles asebter ɣer { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Nɣel aseɣwen
+page-action-copy-url-urlbar =
+    .tooltiptext = Nɣel aseɣwen
+page-action-email-link-panel =
+    .label = Azen s yimayl aseɣwen ɣeṛ usebter…
+page-action-email-link-urlbar =
+    .tooltiptext = Azen s yimayl aseɣwen ɣeṛ usebter…
+page-action-share-url-panel =
+    .label = Bḍu
+page-action-share-url-urlbar =
+    .tooltiptext = Bḍu
+page-action-share-more-panel =
+    .label = Ugar…
+page-action-send-tab-not-ready =
+    .label = Amtawi n yibenkan…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Rzi iccer-a
+page-action-pin-tab-urlbar =
+    .tooltiptext = Rzi iccer-a
+page-action-unpin-tab-panel =
+    .label = Serreḥ i yiccer-a
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Serreḥ i yiccer-a
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -171,17 +223,15 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Tikkelt-agi, nadi s:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Iɣewwaren n unadi
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Beddel iɣewwaren n unadi
-
 search-one-offs-context-open-new-tab =
     .label = Nadi deg yiccer amaynut
     .accesskey = c
@@ -191,16 +241,34 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Sbadu-t amsedday n unadi amezwer i Windows Private
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Ticraḍ n yisebtar ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Accaren ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Amazray ({ $restrict })
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Sken amaẓrag deg usekles
     .accesskey = k
-
 bookmark-panel-done-button =
     .label = Immed
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -220,6 +288,17 @@ identity-passive-loaded = Kra n yiḥricen deg usebter-a mačči d iɣelsanen (a
 identity-active-loaded = Tessenseḍ ammesten deg usebter-a.
 identity-weak-encryption = Asebter-a isseqdac awgelhen fessusen.
 identity-insecure-login-forms = Isem n useqdac d wawal uffir i tesqedceḍ deg usmel-a zemren ad ttwakren.
+identity-https-only-connection-upgraded = (leqqem ɣer HTTPS)
+identity-https-only-label = Askar HTTPS-Only
+identity-https-only-dropdown-on =
+    .label = Yermed
+identity-https-only-dropdown-off =
+    .label = Yensa
+identity-https-only-dropdown-off-temporarily =
+    .label = Sens i kra n wakud
+identity-https-only-info-turn-on2 = Rmed askar HTTPS-Only i usmel-a ma tebɣiḍ { -brand-short-name } i uleqqem n tuqqna melmi tzemreḍ.
+identity-https-only-info-turn-off2 = Ma asebter yettban yerreẓ, tzemreḍ ad tsenseḍ kan askar HTTPS i usmel-a akken ad talseḍ asali s useqdec n HTTP araɣellsan.
+identity-https-only-info-no-upgrade = Aleqqem n tuggna seg HTTP d awezɣi.
 identity-permissions =
     .value = Tisirag
 identity-permissions-reload-hint = Ahat tesriḍ ad d-tessaliḍ tikelt-nniḍen asebter akken ad yemmed wayen i tbeddleḍ.
@@ -265,6 +344,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Mdel
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Kter ticraḍ n yisebtar…
+    .tooltiptext = Nɣel ticraḍ n yisebtar seg yiminig-nniḍen ɣer { -brand-short-name }.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -274,15 +359,12 @@ popup-select-microphone =
     .value = Asawaḍ i beṭṭu:
     .accesskey = S
 popup-all-windows-shared = Akk isfuyla ibanen deg ugdil-ik ad ttwabḍun.
-
 popup-screen-sharing-not-now =
     .label = Mačči tura
     .accesskey = w
-
 popup-screen-sharing-never =
     .label = Ur sirig ara
     .accesskey = N
-
 popup-silence-notifications-checkbox = Kkes ilɣa n { -brand-short-name } di lawan n beṭṭu
 popup-silence-notifications-checkbox-warning = { -brand-short-name } ur yeskanay ara ilɣa mi ara tbeṭṭuḍ.
 
@@ -299,27 +381,122 @@ sharing-warning-disable-for-session =
 
 enable-devtools-popup-description = Akken ad tesqedceḍ anegzum F12, ldi qbel DevTools s wumuɣ web n uneflay.
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Nadi neɣ sekcem tansa
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Nadi neɣ sekcem tansa
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Nadi deg uẓeṭṭa web
+    .aria-label = Nadi s { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Sekcem awalen n unadi
+    .aria-label = Nadi s { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Sekcem awalen n unadi
+    .aria-label = Nadi s tecraḍ
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Sekcem awalen n unadi
+    .aria-label = Amazray n unadi
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Sekcem awalen n unadi
+    .aria-label = Iccaren n unadi
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Nadi s { $name } neɣ sekcem tansa
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Iminig yettwaṭṭef s wudem anmeggag
 urlbar-permissions-granted =
     .tooltiptext = Ɣur-k tisirag-nniḍen akken ad tkecmeḍ ɣeṛ usmel-a web.
 urlbar-switch-to-tab =
     .value = Ddu ɣer yiccer:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Asiɣzef:
-
 urlbar-go-button =
     .tooltiptext = Ddu ɣer usebter n ufeggag n tansa
 urlbar-page-action-button =
     .tooltiptext = Asebter n tigawin
 urlbar-pocket-button =
     .tooltiptext = Sekles ɣer { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Nadi s { $engine } deg usfaylu uslig
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Nadi deg usfaylu uslig
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Nadi s { $engine }:
+urlbar-result-action-sponsored = S lmendad
+urlbar-result-action-switch-tab = Ddu ɣer yiccer
+urlbar-result-action-visit = Rzu
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Sit ɣef Tab i unadi s { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Sit ɣef Tab i unadi s { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Nadi s { $engine } srid seg ugalis n tansa
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Nadi s { $engine } srid seg ugalis n tansa
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Nadi ticraḍ n yisebtar
+urlbar-result-action-search-history = Nadi deg umazray
+urlbar-result-action-search-tabs = Nadi deg waccaren
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> atan tura deg ugdil ačaran
+fullscreen-warning-no-domain = Isemli-a, atan tura deg ugdil ačuṛan
+fullscreen-exit-button = Ffeɣ seg ugdil ačuṛan (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Ffeɣ seg ugdil ačuṛan (Esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> Ɣur-s asenqed n usewwaṛ-inek. Sit ɣef tqeffalt n usenser akken ad teṭṭfeḍ asewwaṛ.
+pointerlock-warning-no-domain = Isemli-a yeṭṭef asewwaṛ-ik. Sit ɣef Esc akken ad teṭṭfeḍ asewwaṛ.

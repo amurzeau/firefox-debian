@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Перанесці ў новае акно
     .accesskey = а
-undo-close-tab =
-    .label = Адмяніць закрыццё карткі
-    .accesskey = А
 tab-context-close-multiple-tabs =
     .label = Закрыць некалькі картак
     .accesskey = ь
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -79,4 +80,22 @@ move-tabs =
     .accesskey = м
 move-tab =
     .label = Перамясціць картку
+    .accesskey = м
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Закрыць картку
+            [one] Закрыць картку
+            [few] Закрыць карткі
+           *[many] Закрыць карткі
+        }
+    .accesskey = З
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Перамясціць картку
+            [one] Перамясціць картку
+            [few] Перамясціць карткі
+           *[many] Перамясціць карткі
+        }
     .accesskey = м
