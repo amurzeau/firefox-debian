@@ -179,7 +179,7 @@ main-context-menu-media-video-fullscreen =
     .label = Ecran complet
     .accesskey = F
 main-context-menu-media-video-leave-fullscreen =
-    .label = Ieși din modul de ecran complet
+    .label = Ieși din modul ecran complet
     .accesskey = u
 # This is used when right-clicking on a video in the
 # content area when the Picture-in-Picture feature is enabled.
@@ -235,7 +235,7 @@ main-context-menu-video-email =
     .label = Trimite videoclipul prin e-mail…
     .accesskey = a
 main-context-menu-audio-email =
-    .label = Trimite secvența audio prin e-mail…
+    .label = Trimite secvența vocală prin e-mail…
     .accesskey = a
 main-context-menu-plugin-play =
     .label = Activează pluginul

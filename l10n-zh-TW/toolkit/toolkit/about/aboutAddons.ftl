@@ -374,6 +374,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = 已經檢查過此擴充套件的程式碼以確保使用安全
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = 這是由 { -brand-product-name } 開發者打造的官方擴充套件
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = 我們檢查過此擴充套件，確認符合安全性與運作效能標準
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -382,6 +388,9 @@ recent-updates-heading = 最近的更新
 release-notes-loading = 載入中…
 release-notes-error = 抱歉，載入發行公告時發生錯誤。
 addon-permissions-empty = 此擴充套件並未要求任何權限
+addon-permissions-required = 核心功能需要下列權限:
+addon-permissions-optional = 選用功能需要下列權限:
+addon-permissions-learnmore = 了解權限的更多資訊
 recommended-extensions-heading = 推薦的擴充套件
 recommended-themes-heading = 推薦的佈景主題
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

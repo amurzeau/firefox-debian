@@ -428,6 +428,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Ενεργοποίηση στοιχείων ελέγχου βίντεο σε λειτουργία εικόνας εντός εικόνας
     .accesskey = Ε
 browsing-picture-in-picture-learn-more = Μάθετε περισσότερα
+browsing-media-control =
+    .label = Έλεγχος πολυμέσων μέσω πληκτρολογίου, ακουστικών ή εικονικού περιβάλλοντος
+    .accesskey = λ
+browsing-media-control-learn-more = Μάθετε περισσότερα
 browsing-cfr-recommendations =
     .label = Πρόταση επεκτάσεων κατά την περιήγησή σας
     .accesskey = Π
@@ -491,6 +495,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Κορυφαίες ιστοσελίδες
 home-prefs-topsites-description = Οι ιστοσελίδες που επισκέπτεστε περισσότερο
+home-prefs-topsites-by-option-sponsored =
+    .label = Χορηγούμενες κορυφαίες ιστοσελίδες
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -875,6 +881,10 @@ sitedata-option-block-cross-site-trackers =
     .label = Ιχνηλάτες μεταξύ ιστοσελίδων
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Ιχνηλάτες μεταξύ ιστοσελίδων και κοινωνικών μέσων
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Cookies καταγραφής μεταξύ ιστοσελίδων — περιλαμβάνει cookies κοινωνικών δικτύων
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Cookies μεταξύ ιστοσελίδων — περιλαμβάνει cookies κοινωνικών δικτύων
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Cookies ιχνηλάτησης και κοινωνικών μέσω μεταξύ ιστοσελίδων και απομόνωση των υπόλοιπων
 sitedata-option-block-unvisited =
@@ -901,7 +911,7 @@ sitedata-cookies-exceptions =
 addressbar-header = Γραμμή διευθύνσεων
 addressbar-suggest = Κατά τη χρήση της γραμμής διευθύνσεων, να γίνεται πρόταση
 addressbar-locbar-history-option =
-    .label = Ιστορικό περιήγησης
+    .label = Ιστορικού περιήγησης
     .accesskey = Ι
 addressbar-locbar-bookmarks-option =
     .label = Σελιδοδεικτών
@@ -910,8 +920,8 @@ addressbar-locbar-openpage-option =
     .label = Ανοικτών καρτελών
     .accesskey = Ο
 addressbar-locbar-topsites-option =
-    .label = Δημοφιλείς ιστοσελίδες
-    .accesskey = Δ
+    .label = Κορυφαίων ιστοσελίδων
+    .accesskey = Κ
 addressbar-suggestions-settings = Αλλαγή προτιμήσεων για τις προτάσεις μηχανών αναζήτησης
 
 ## Privacy Section - Content Blocking
@@ -940,6 +950,7 @@ content-blocking-etp-standard-desc = Ισορροπία μεταξύ προστ�
 content-blocking-etp-strict-desc = Ισχυρότερη προστασία, αλλά πιθανή δυσλειτουργία μερικών ιστοσελίδων ή περιεχομένου.
 content-blocking-etp-custom-desc = Επιλέξτε ιχνηλάτες και σενάρια για αποκλεισμό.
 content-blocking-private-windows = Περιεχόμενο καταγραφής σε ιδιωτικά παράθυρα
+content-blocking-cross-site-cookies = Cookies μεταξύ ιστοσελίδων
 content-blocking-cross-site-tracking-cookies = Cookies ιχνηλάτησης μεταξύ ιστοσελίδων
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies ιχνηλάτησης μεταξύ ιστοσελίδων και απομόνωση των υπόλοιπων
 content-blocking-social-media-trackers = Ιχνηλάτες κοινωνικών δικτύων
@@ -951,6 +962,7 @@ content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Προσοχή!
 content-blocking-and-isolating-etp-warning-description = Η φραγή ιχνηλατών και η απομόνωση cookies μπορούν να επηρεάσουν τη λειτουργικότητα ορισμένων ιστοσελίδων. Φορτώστε εκ νέου μια σελίδα με ιχνηλάτες για να φορτώσετε όλο το περιεχόμενο.
+content-blocking-and-isolating-etp-warning-description-2 = Αυτή η ρύθμιση ενδέχεται να εμποδίσει την εμφάνιση περιεχομένου ή τη σωστή λειτουργία σε ορισμένες ιστοσελίδες. Αν μια ιστοσελίδα δεν λειτουργεί σωστά, μπορείτε να απενεργοποιήσετε την προστασία από καταγραφή για να γίνει φόρτωση όλου του περιεχομένου σε αυτή την ιστοσελίδα.
 content-blocking-warning-learn-how = Μάθετε πώς
 content-blocking-reload-description = Θα πρέπει να φορτώσετε ξανά τις καρτέλες σας για εφαρμογή των αλλαγών αυτών.
 content-blocking-reload-tabs-button =
@@ -1123,15 +1135,15 @@ space-alert-under-5gb-message = Το { -brand-short-name } δεν έχει επ�
 
 ## Privacy Section - HTTPS-Only
 
-httpsonly-header = Λειτουργία μόνο-HTTPS
+httpsonly-header = Λειτουργία Μόνο-HTTPS
 httpsonly-description = Το HTTPS παρέχει μια ασφαλή, κρυπτογραφημένη σύνδεση μεταξύ του { -brand-short-name } και των ιστοσελίδων που επισκέπτεστε. Οι περισσότερες ιστοσελίδες υποστηρίζουν HTTPS και αν είναι ενεργή η λειτουργία μόνο-HTTPS, τότε το { -brand-short-name } θα αναβαθμίζει όλες τις συνδέσεις σε HTTPS.
 httpsonly-learn-more = Μάθετε περισσότερα
 httpsonly-radio-enabled =
-    .label = Ενεργοποίηση λειτουργίας μόνο-HTTPS σε όλα τα παράθυρα
+    .label = Ενεργοποίηση λειτουργίας Μόνο-HTTPS σε όλα τα παράθυρα
 httpsonly-radio-enabled-pbm =
-    .label = Ενεργοποίηση μόνο-HTTPS μόνο σε ιδιωτικά παράθυρα
+    .label = Ενεργοποίηση Μόνο-HTTPS μόνο σε ιδιωτικά παράθυρα
 httpsonly-radio-disabled =
-    .label = Να μην ενεργοποιηθεί η λειτουργία HTTPS-Only
+    .label = Να μην ενεργοποιηθεί η λειτουργία Μόνο-HTTPS
 
 ## The following strings are used in the Download section of settings
 

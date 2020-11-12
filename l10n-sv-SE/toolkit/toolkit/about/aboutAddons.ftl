@@ -384,6 +384,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = Detta tillägg har kodgranskats av säkerhetsskäl
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = Detta är en officiell utökning byggd av skaparna av { -brand-product-name }
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = Denna tillägg har granskats för att uppfylla våra standarder för säkerhet och prestanda
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -392,6 +398,9 @@ recent-updates-heading = Senaste uppdateringar
 release-notes-loading = Laddar…
 release-notes-error = Tyvärr, men det gick inte att läsa in versionsfakta.
 addon-permissions-empty = Detta tillägg kräver inga behörigheter
+addon-permissions-required = Nödvändiga behörigheter för kärnfunktionalitet:
+addon-permissions-optional = Valfria behörigheter för extra funktionalitet:
+addon-permissions-learnmore = Läs mer om behörigheter
 recommended-extensions-heading = Rekommenderade tillägg
 recommended-themes-heading = Rekommenderade teman
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

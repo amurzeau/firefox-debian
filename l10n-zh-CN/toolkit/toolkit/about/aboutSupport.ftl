@@ -68,6 +68,7 @@ app-basics-service-workers = 已注册的 Service Worker
 app-basics-profiles = 配置文件
 app-basics-launcher-process-status = 启动器进程
 app-basics-multi-process-support = 多进程窗口
+app-basics-fission-support = Fission 窗口
 app-basics-remote-processes-count = 远程进程
 app-basics-enterprise-policies = 企业策略
 app-basics-location-service-key-google = Google 位置服务密钥
@@ -309,6 +310,20 @@ multi-process-status-6 = 因不支持的文本输入而禁用
 multi-process-status-7 = 因部分附加组件而禁用
 multi-process-status-8 = 被强制禁用
 multi-process-status-unknown = 未知状态
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = 通过实验禁用
+fission-status-experiment-treatment = 通过实验启用
+fission-status-disabled-by-e10s-env = 被环境禁用
+fission-status-enabled-by-env = 由环境启用
+fission-status-disabled-by-safe-mode = 被安全模式禁用
+fission-status-enabled-by-default = 默认启用
+fission-status-disabled-by-default = 默认禁用
+fission-status-enabled-by-user-pref = 由用户启用
+fission-status-disabled-by-user-pref = 被用户禁用
+fission-status-disabled-by-e10s-other = 已禁用 E10s
 async-pan-zoom = 异步平移/缩放
 apz-none = 无
 wheel-enabled = 滚轮输入已启用
@@ -329,3 +344,12 @@ touch-warning = 因为不支持的首选项: { $preferenceKey }，已禁用异�
 policies-inactive = 未激活
 policies-active = 已激活
 policies-error = 错误
+
+## Printing section
+
+support-printing-title = 打印
+support-printing-troubleshoot = 故障排除
+support-printing-clear-settings-button = 清除保存的打印设置
+support-printing-modified-settings = 修改过的打印设置
+support-printing-prefs-name = 名称
+support-printing-prefs-value = 值

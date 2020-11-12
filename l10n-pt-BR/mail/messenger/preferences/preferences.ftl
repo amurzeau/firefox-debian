@@ -10,6 +10,8 @@ preferences-title =
             [windows] Opções
            *[other] Preferências
         }
+category-list =
+    .aria-label = Categorias
 pane-general-title = Geral
 category-general =
     .tooltiptext = { pane-general-title }
@@ -86,6 +88,7 @@ update-in-progress-ok-button = &Descartar
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Continuar
+account-button = Configurações da conta
 addons-button = Extensões e Temas
 
 ## OS Authentication dialog

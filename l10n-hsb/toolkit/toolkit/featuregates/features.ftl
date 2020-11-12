@@ -47,11 +47,6 @@ experimental-features-web-api-beforeinput-description = Globalny podawk <a data-
 experimental-features-css-constructable-stylesheets =
     .label = CSS: Constructable Stylesheets
 experimental-features-css-constructable-stylesheets-description = Přidawanje konstruktora interfejsej <a data-l10n-name="mdn-cssstylesheet">CSSStyleSheet</a> kaž tež wulkeje mnohosće přisłušnych změnow zmóžnja, nowe stilowe předłohi direktnje wutworić, bjeztoho zo byšće dyrbjał předłohu HTML přidać. To wosnadja, zaso wužiwajomne stilowe předłohi za wužiwanje z <a data-l10n-name="mdn-shadowdom">Shadow DOM</a> wutworić. Hlejće <a data-l10n-name="bugzilla">zmylkowu rozprawu 1520690</a> za dalše podrobnosće.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-media-session-api =
-    .label = Web API: Media Session API
-experimental-features-media-session-api-description = Cyła implementacija { -brand-short-name } API Media Session je tuchwilu eksperimentelna. Tutón API so wužiwa, zo by wobchadźenje ze zdźělenkami z poćahom na medije přiměrił, podawki a daty rjadował, kotrež su wužitne za předstajenje wužiwarskeho powjercha za rjadowanje wothraćow medijow a zo by metadaty medijoweje dataje dóstał. Hlejće <a data-l10n-name="bugzilla">zmylkowu rozprawu 1112032</a> za dalše podrobnosće.
 experimental-features-devtools-color-scheme-simulation =
     .label = Wuwiwarske nastroje: Simulacija barboweje šemy
 experimental-features-devtools-color-scheme-simulation-description = Přidawa opciju za simulowanje rozdźělnych barbowych šemow, kotraž wam zmóžnja, medijowe naprašowanja <a data-l10n-name="mdn-preferscolorscheme">@prefers-color-scheme</a> testować. Z tutym medijowym naprašowanjom móže waša stilowa předłoha na to reagować, hač wužiwar swětły abo ćmowy wužiwarski powjerch preferuje. Tuta funkcija wam zmóžnja, waš kod testować, bjeztoho zo byšće dyrbjał nastajenja w swojim wobhladowaku (abo dźěłowym systemje, jeli wobhladowak so po nastajenju barboweje šemy systema złožuje). Hlejće <a data-l10n-name="bugzilla1">zmylkowu rozprawu 1550804</a> a <a data-l10n-name="bugzilla2">zmylkowu rozprawu 1137699</a> za dalše podrobnosće.
@@ -91,6 +86,10 @@ experimental-features-devtools-serviceworker-debugger-support-description = Zmó
 experimental-features-graphics-desktop-zooming =
     .label = Grafika: łahodne dwuporstowe skalowanje
 experimental-features-graphics-desktop-zooming-description = Podpěru za łahodne dwuporstowe skalowanje na dótknjeńskich wobrazowkach a preciznostne dótknjenske pola zmóžnić.
+# WebRTC global mute toggle controls
+experimental-features-webrtc-global-mute-toggles =
+    .label = Globalne wodźenje za zněmjenje WebRTC
+experimental-features-webrtc-global-mute-toggles-description = Přidajće globalnemu dźělenskemu pokazej WebRTC wodźenske elementy, kotrež wužiwarjam zmóžnjeja, jich kanale mikrofona a kamery globalnje zněmić.
 # JS JIT Warp project
 experimental-features-js-warp =
     .label = JavaScript JIT: Warp
@@ -98,3 +97,4 @@ experimental-features-js-warp-description = Zmóžńće Warp, projekt za polěp�
 # Fission is the name of the feature and should not be translated.
 experimental-features-fission =
     .label = Fission (sydłowa izolacija)
+experimental-features-fission-description = Fission (izolowanje websydłow) je eksperimentelna funkcija w { -brand-short-name }, zo by přidatnu škitnu worštu přećiwo wěstotnym zmylkam k dispoziciji stajiła. Přez izolowanje kóždeho sydła w separatnym procesu, Fission złóstnym websydłam poćežuje, přistup k informacijam z druhich stronow dóstać, kotrež wopytujeće. To je wulka architekturna změna w { -brand-short-name } a wjeselimy so, jeli wšě problemy, na kotrež storčiće, testujeće a zdźěleće. Za dalše podrobnosće hlejće <a data-l10n-name="wiki">wiki</a>.

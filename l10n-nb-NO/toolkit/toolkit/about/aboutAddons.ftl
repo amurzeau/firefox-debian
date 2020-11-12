@@ -3,8 +3,8 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 addons-window =
-    .title = Utvidelser
-addons-page-title = Utvidelser
+    .title = Tilleggsbehandler
+addons-page-title = Tilleggsbehandler
 search-header =
     .placeholder = Søk på addons.mozilla.org
     .searchbuttonlabel = Søk
@@ -388,6 +388,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = Kildekoden til denne utvidelsen er sjekket av sikkerhetsgrunner.
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = Dette er en offisiell utvidelse utviklet av utviklerne av { -brand-product-name }
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = Denne utvidelsen er gjennomgått for å oppfylle våre standarder for sikkerhet og ytelse.
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -396,6 +402,9 @@ recent-updates-heading = Nylig oppdatert
 release-notes-loading = Laster…
 release-notes-error = Beklager, men en feil oppstod under lasting av versjonsnotatet.
 addon-permissions-empty = Denne utvidelsen krever ingen tillatelser
+addon-permissions-required = Nødvendige tillatelser for kjernefunksjonalitet:
+addon-permissions-optional = Valgfrie tillatelser for ekstra funksjonalitet:
+addon-permissions-learnmore = Les mer om tillatelser
 recommended-extensions-heading = Anbefalte utvidelser
 recommended-themes-heading = Anbefalte temaer
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

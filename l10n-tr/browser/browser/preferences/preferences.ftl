@@ -29,6 +29,8 @@ search-input-box =
            *[other] Tercihlerde ara
         }
 managed-notice = Tarayıcınız kuruluşunuz tarafından yönetiliyor.
+category-list =
+    .aria-label = Kategoriler
 pane-general-title = Genel
 category-general =
     .tooltiptext = { pane-general-title }
@@ -426,6 +428,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Görüntü içinde görüntü video düğmelerini etkinleştir
     .accesskey = G
 browsing-picture-in-picture-learn-more = Daha fazla bilgi al
+browsing-media-control =
+    .label = Medya oynatmayı klavye, kulaklık veya sanal arayüzle yönet
+    .accesskey = M
+browsing-media-control-learn-more = Daha fazla bilgi al
 browsing-cfr-recommendations =
     .label = Gezinirken yeni eklentiler öner
     .accesskey = G
@@ -489,6 +495,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Sık kullanılan siteler
 home-prefs-topsites-description = En çok ziyaret ettiğiniz siteler
+home-prefs-topsites-by-option-sponsored =
+    .label = Sponsorlu sık kullanılanlar
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -873,6 +881,10 @@ sitedata-option-block-cross-site-trackers =
     .label = Siteler arası takipçiler
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Siteler arası takipçiler ve sosyal medya takipçileri
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Siteler arası takip çerezleri (sosyal medya çerezleri dahil)
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Siteler arası çerezler (sosyal medya çerezleri dahil)
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Siteler arası takipçiler ve sosyal medya takipçileri, kalan çerezleri izole et
 sitedata-option-block-unvisited =
@@ -938,6 +950,7 @@ content-blocking-etp-standard-desc = Dengeli koruma ve performans. Sayfalar norm
 content-blocking-etp-strict-desc = Daha güçlü koruma, ama bazı siteler ve içerikler düzgün çalışmayabilir.
 content-blocking-etp-custom-desc = Hangi takipçilerin ve betiklerin engelleneceğini seçin.
 content-blocking-private-windows = Gizli pencelerde takip amaçlı içerikler
+content-blocking-cross-site-cookies = Siteler arası çerezler
 content-blocking-cross-site-tracking-cookies = Siteler arası takip çerezleri
 content-blocking-cross-site-tracking-cookies-plus-isolate = Siteler arası takipçiler ve takip çerezleri, kalan çerezleri izole et
 content-blocking-social-media-trackers = Sosyal medya takipçileri
@@ -949,6 +962,7 @@ content-blocking-cryptominers = Kripto madencileri
 content-blocking-fingerprinters = Parmak izi toplayıcılar
 content-blocking-warning-title = Dikkat!
 content-blocking-and-isolating-etp-warning-description = Takipçileri engellemek ve çerezleri izole etmek bazı sitelerin düzgün çalışmamasına yol açabilir. Takipçi içeren bir sayfanın tüm içeriğini yüklemek için sayfayı tazeleyin.
+content-blocking-and-isolating-etp-warning-description-2 = Bu ayar, bazı web sitelerinin içeriğinin görünmemesine veya düzgün çalışmamasına neden olabilir. Site bozuk görünüyorsa o sitenin tüm içeriğinin yüklemesi için izlenme korumasını kapatabilirsiniz.
 content-blocking-warning-learn-how = Nasıl yapılacağını öğrenin
 content-blocking-reload-description = Bu değişiklikleri uygulamak için sekmelerinizi tazelemeniz gerekiyor.
 content-blocking-reload-tabs-button =

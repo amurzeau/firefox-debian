@@ -47,11 +47,6 @@ experimental-features-web-api-beforeinput-description = Le evento global <a data
 experimental-features-css-constructable-stylesheets =
     .label = CSS: Constructable Stylesheets
 experimental-features-css-constructable-stylesheets-description = Le addition de un constructor al interfacie  <a data-l10n-name="mdn-cssstylesheet">CSSStyleSheet</a>  e un varietate de cambiamentos correlate rende possibile crear directemente nove folios de stilo sin deber adder le folio al HTML. Iste rende multo plus facile crear folios de stilo reusabile pro <a data-l10n-name="mdn-shadowdom">Shadow DOM</a>. Vide <a data-l10n-name="bugzilla">bug 1520690</a> pro altere detalios.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-media-session-api =
-    .label = Web API: Media Session API
-experimental-features-media-session-api-description = Tote le implementation { -brand-short-name } del API del medios de session es actualmente experimental. Iste API es usate pro personalisar le tractamento del avisos correlate a metadatos, gerer eventos e datos utile pro presentar un interfacie de usator pro le reproduction de medios e pro obtener metadatos de files multimedial. Vide <a data-l10n-name="bugzilla">bug 1112032</a> pro altere detalios.
 experimental-features-devtools-color-scheme-simulation =
     .label = Utensiles de disveloppator: simulation schema colores
 experimental-features-devtools-color-scheme-simulation-description = Adde un option pro simular plure schemas de color e te permitte testar consultation de medios per <a data-l10n-name="mdn-preferscolorscheme">@prefers-color-scheme</a>. Per iste functionalitate tu pote testar tu codice sin deber cambiar parametros in tu navigator (o in tu systema operative, si le navigator seque un configuration del combination de colores pro le systema-integre). Vide <a data-l10n-name="bugzilla1">bug 1550804</a> e <a data-l10n-name="bugzilla2">bug 1137699</a> pro major detalios.
@@ -73,7 +68,7 @@ experimental-features-cookie-samesite-none-requires-secure2-description = Le coo
 # the internal default home page.
 experimental-features-abouthome-startup-cache =
     .label = cache de initio pro about:home
-experimental-features-abouthome-startup-cache-description = Cache pro le contento initial del pagina about:home que es cargate de ordinario al lanceamento initial. Le proposito del cache es meliorar le  prestationes del lanceamento initial.
+experimental-features-abouthome-startup-cache-description = Cache pro le contento initial del pagina about:home que es normalmente cargate al initio. Le cache es pro augmentar le velocitate del initialisation.
 experimental-features-print-preview-tab-modal =
     .label = Nove vista preliminar del impression
 experimental-features-print-preview-tab-modal-description = Introduce le nove version transformate del vista preliminar del impression e rende le vista preliminar del impression disponibile sur macOS. Isto pote causar defectos e non include tote le configurationes associate al impression. Pro acceder a tote le configurationes associate al impression, selige "Imprimer usante le dialogo del systema…” ab le pannello Imprimer.
@@ -102,4 +97,4 @@ experimental-features-js-warp-description = Activar Warp, un projecto pro melior
 # Fission is the name of the feature and should not be translated.
 experimental-features-fission =
     .label = Fission (Isolation de sitos)
-experimental-features-fission-description = Fission (isolamento sito) es un functionalitate experimental in { -brand-short-name } pro fornir un altere strato de defensa contra defectos de securitate. Isolante cata sito in un processo differente, Fission rende plus ardue pro sitos web maligne acceder a informationes de altere paginas que tu visita. Isto es un major modification architectural in { -brand-short-name } e nos apprecia tu test e reporto de ulle problemas que tu pote incontrar. Pro altere detalios, vider <a data-l10n-name="wiki">le wiki</a>.
+experimental-features-fission-description = Fission (isolamento de sitos) es un function experimental in { -brand-short-name } que forni un strato additional de defensa contra defectos de securitate. Isolante cata sito in un processo separate, Fission rende plus difficile pro sitos web maligne acceder a informationes de altere paginas que tu visita. Isto es un grande cambiamento architectural in { -brand-short-name } e nos multo appreciarea tu adjuta a testar isto e reportar omne problemas que tu incontra. Pro plus detalios, vider <a data-l10n-name="wiki">le wiki</a>.

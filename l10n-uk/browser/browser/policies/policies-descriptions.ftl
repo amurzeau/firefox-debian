@@ -29,7 +29,7 @@ policy-DisableBuiltinPDFViewer = Вимкнути вбудований PDF.js д
 policy-DisableDefaultBrowserAgent = Не допускати будь-яких дій типового браузерного агента. Стосується лише Windows; інші платформи не мають агента.
 policy-DisableDeveloperTools = Заблокувати доступ до інструментів розробника.
 policy-DisableFeedbackCommands = Вимкнути команди меню Довідка для елементів "Надіслати відгук..." та "Повідомити про шахрайський сайт...".
-policy-DisableFirefoxAccounts = Вимкнути сервіси, пов'язані з { -fxaccount-brand-name(case: "abl") }, включаючи Синхронізацію.
+policy-DisableFirefoxAccounts = Вимкнути служби, пов'язані з { -fxaccount-brand-name(case: "abl") }, включно з Синхронізацією.
 # Firefox Screenshots is the name of the feature, and should not be translated.
 policy-DisableFirefoxScreenshots = Вимкнути функцію Firefox Screenshots.
 policy-DisableFirefoxStudies = Не дозволяти { -brand-short-name } виконувати дослідження.
@@ -96,7 +96,7 @@ policy-Permissions2 = Налаштувати дозволи для камери,
 policy-PictureInPicture = Увімкнути чи вимкнути Зображення в зображенні.
 policy-PopupBlocking = Дозволити певним вебсайтам типово відображати виринаючі вікна.
 policy-Preferences = Встановити і зафіксувати значення для набору налаштувань.
-policy-PromptForDownloadLocation = Запитувати, де зберігати файли при завантаженні.
+policy-PromptForDownloadLocation = Запитувати, де зберігати файли під час завантаження.
 policy-Proxy = Налаштувати параметри проксі.
 policy-RequestedLocales = Встановити перелік запитуваних мов для програми в бажаному порядку.
 policy-SanitizeOnShutdown2 = Очищати дані навігації при закритті браузера.

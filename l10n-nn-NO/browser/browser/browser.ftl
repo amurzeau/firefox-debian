@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Tast mindre, finn meir: Søk med { $engineName } rett frå adresselinja.
 urlbar-search-tips-redirect-2 = Start søket ditt i adressefeltet for å sjå forslag frå { $engineName } og nettleserhistorikken din.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Vel denne snarvegen for å finne det du treng raskare.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -274,12 +277,12 @@ bookmark-panel =
 
 ## Identity Panel
 
-identity-connection-not-secure = Tilkoplinga er ikkje sikker
-identity-connection-secure = Tilkoplinga er sikker
+identity-connection-not-secure = Tilkoplinga er ikkje trygg
+identity-connection-secure = Tilkoplinga er trygg
 identity-connection-internal = Dette er ei sikker { -brand-short-name }-side.
 identity-connection-file = Denne sida er lagra på datamaskina di.
 identity-extension-page = Denne sida er lasta frå ei utviding.
-identity-active-blocked = { -brand-short-name } har blokkert delar av denne sida som ikkje er sikre.
+identity-active-blocked = { -brand-short-name } har blokkert delar av denne sida som ikkje er trygge.
 identity-custom-root = Tilkoplinga vart stadfesta av ein sertifikatutskrivar som Mozilla ikkje kjenner.
 identity-passive-loaded = Delar av denne sida er ikkje trygg (til dømes bilde).
 identity-active-loaded = Du har slått av vern på denne sida.
@@ -293,8 +296,8 @@ identity-https-only-dropdown-off =
     .label = Av
 identity-https-only-dropdown-off-temporarily =
     .label = Mellombels av
-identity-https-only-info-turn-on = Slå på dersom du vil at { -brand-short-name } skal oppgradere til ei sikker tilkopling når det er mogleg.
-identity-https-only-info-turn-off = Dersom nettstaden ser ut til å vere øydelagd, kan det vere lurt å slå av berre-HTTPS modus for å laste inn på nytt ved hjelp av usikker HTTP.
+identity-https-only-info-turn-on2 = Slå på berre-HTTPS-modus for denne nettstaden dersom du vil at { -brand-short-name } skal oppgradere til ei trygg tilkopling når det er råd.
+identity-https-only-info-turn-off2 = Dersom nettsida verkar øydelagd, kan det vere lurt å slå av berre-HTTPS-modus for denne nettstadent for å laste inn på nytt ved hjelp av utrygg HTTP.
 identity-https-only-info-no-upgrade = Klarte ikkje å oppgradere kopling frå HTTP.
 identity-permissions =
     .value = Løyve
@@ -302,8 +305,8 @@ identity-permissions-reload-hint = Du må kanskje laste sida på nytt for at end
 identity-permissions-empty = Du har ikkje gjeve denne nettstaden spesielle løyve.
 identity-clear-site-data =
     .label = Slett infokapslar og nettstaddata…
-identity-connection-not-secure-security-view = Du er ikkje sikkert kopla til denne nettstaden.
-identity-connection-verified = Du er sikkert kopla til denne nettstaden.
+identity-connection-not-secure-security-view = Du er ikkje trygt kopla til denne nettstaden.
+identity-connection-verified = Du er trygt kopla til denne nettstaden.
 identity-ev-owner-label = Sertifikat skrive ut til:
 identity-description-custom-root = Mozilla kjenner ikkje att utskrivaren av dette sertifikatet. Det kan ha blitt lagt til av operativsystemet ditt, eller av ein administrator. <label data-l10n-name="link">Les meir</label>
 identity-remove-cert-exception =
@@ -317,7 +320,7 @@ identity-description-active-blocked = { -brand-short-name } har blokkert delar a
 identity-description-passive-loaded = Sambandet til denne nettstaden er ikkje privat og informasjon du deler med denne sida kan sjåast av andre.
 identity-description-passive-loaded-insecure = Denne nettsida har innhald som ikkje er trygt (t.d. bilde). <label data-l10n-name="link">Les meir</label>
 identity-description-passive-loaded-mixed = Sjølv om { -brand-short-name } har blokkert noko innhald, finst det framleis innhald på sida som ikkje er trygt (slik som bilde). <label data-l10n-name="link">Les meir</label>
-identity-description-active-loaded = Denne nettstaden har innhald som ikkje er overført sikkert (slik som skript) og tilkoplinga di er difor ikkje privat.
+identity-description-active-loaded = Denne nettstaden har innhald som ikkje er overført trygt (slik som skript) og tilkoplinga di er difor ikkje privat.
 identity-description-active-loaded-insecure = Informasjonen du deler med denne nettstaden kan sjåast av andre (t.d. passords, meldingar, kredittkort osb.).
 identity-learn-more =
     .value = Les meir
@@ -340,6 +343,12 @@ browser-window-restore-down-button =
     .tooltiptext = Gjenopprett ned
 browser-window-close-button =
     .tooltiptext = Lat att
+
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Importer bokmerke…
+    .tooltiptext = Kopier bokmerke frå ein annan nettlesar til { -brand-short-name }.
 
 ## WebRTC Pop-up notifications
 
@@ -444,16 +453,21 @@ urlbar-result-action-search-in-private = Søk i eit privat vindauge
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Søk med { $engine }
+urlbar-result-action-sponsored = Sponsa
 urlbar-result-action-switch-tab = Byt til fane
 urlbar-result-action-visit = Besøk
-
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
-## In these actions "Search" is a verb, followed by where the search is performed.
-
-urlbar-result-action-search-bookmarks = Søk i bokmerke
-urlbar-result-action-search-history = Søk i historikk
-urlbar-result-action-search-tabs = Søk i faner
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Trykk på tab for å søkje med { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Trykk på tab for å søkje { $engine }
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
@@ -462,6 +476,14 @@ urlbar-result-action-tabtosearch-web = Søk med { $engine } direket frå adresse
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Søk i { $engine } direkte frå adresselinja
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Søk i bokmerke
+urlbar-result-action-search-history = Søk i historikk
+urlbar-result-action-search-tabs = Søk i faner
 
 ## Full Screen and Pointer Lock UI
 

@@ -96,8 +96,8 @@ cfr-whatsnew-panel-header = Kva er nytt
 cfr-whatsnew-release-notes-link-text = Les versjonsnotatet
 cfr-whatsnew-fx70-title = { -brand-short-name } jobbar no endå meir for personvernet ditt
 cfr-whatsnew-fx70-body =
-    Den siste oppdateringa forbetrar sporingsbesvernfunksjonen og gjer det
-    enklare enn nokon gong å lage sikre passord for kvar nettstad.
+    Den siste oppdateringa forbetrar sporingsvernfunksjonen og gjer det
+    enklare enn nokon gong å lage trygge passord for kvar nettstad.
 cfr-whatsnew-tracking-protect-title = Beskytt deg mot sporarar
 cfr-whatsnew-tracking-protect-body =
     { -brand-short-name } blokkerer mange vanlege sporarar frå sosiale medium og sporing på tvers av nettstadar som
@@ -114,7 +114,7 @@ cfr-whatsnew-tracking-blocked-title =
 cfr-whatsnew-tracking-blocked-subtitle = Sidan { DATETIME($earliestDate, month: "long", year: "numeric") }
 cfr-whatsnew-tracking-blocked-link-text = Vis rapport
 cfr-whatsnew-lockwise-backup-title = Ta sikkerheitskopi av passorda dine
-cfr-whatsnew-lockwise-backup-body = No kan du generere sikre passord du får tilgang til kvar som helst du loggar inn.
+cfr-whatsnew-lockwise-backup-body = No kan du generere trygge passord du får tilgang til kvar som helst du loggar inn.
 cfr-whatsnew-lockwise-backup-link-text = Slå på sikkerheitskopiering
 cfr-whatsnew-lockwise-take-title = Ta med deg passorda dine
 cfr-whatsnew-lockwise-take-body =
@@ -165,7 +165,7 @@ cfr-doorhanger-sync-bookmarks-ok-button = Slå på { -sync-brand-short-name }
 ## Login Sync
 
 cfr-doorhanger-sync-logins-header = Gløym aldri meir eit passord
-cfr-doorhanger-sync-logins-body = Lagre og synkroniser passorda dine sikkert med alle einingane dine.
+cfr-doorhanger-sync-logins-body = Lagre og synkroniser passorda dine trygt med alle einingane dine.
 cfr-doorhanger-sync-logins-ok-button = Slå på { -sync-brand-short-name }
     .accesskey = S
 
@@ -179,7 +179,7 @@ cfr-doorhanger-send-tab-ok-button = Prøv send fane
 
 ## Firefox Send
 
-cfr-doorhanger-firefox-send-header = Del denne PDF-fila sikkert
+cfr-doorhanger-firefox-send-header = Del denne PDF-fila trygt
 cfr-doorhanger-firefox-send-body = Hald dei sensitive dokumenta dine trygge mot nysgjerrige auge med ende-til-ende-kryptering og ei lenke som forsvinn når du er ferdig.
 cfr-doorhanger-firefox-send-ok-button = Prøv { -send-brand-name }
     .accesskey = P
@@ -248,7 +248,7 @@ cfr-whatsnew-better-pdf-body = PDF-dokument vert no opna direkte i { -brand-shor
 
 ## DOH Message
 
-cfr-doorhanger-doh-body = Personvernet ditt betyr noko. { -brand-short-name } rutar no DNS-førespurnadane dine sikkert når det er mogleg, til ei teneste levert av ein partnar, for å beskytte deg mens du surfar.
+cfr-doorhanger-doh-body = Personvernet ditt betyr noko. { -brand-short-name } rutar no DNS-førespurnadane dine trygt når det er mogleg, til ei teneste levert av ein partnar, for å beskytte deg medan du surfar.
 cfr-doorhanger-doh-header = Sikrare og krypterte DNS-oppslag
 cfr-doorhanger-doh-primary-button = OK, eg skjønar
     .accesskey = O
@@ -257,7 +257,7 @@ cfr-doorhanger-doh-secondary-button = Slå av
 
 ## Fission Experiment Message
 
-cfr-doorhanger-fission-body = { -brand-short-name } har slått på ein eksperimentell funksjon Fission (nettstadisolering) for deg. Ved å isolere kvar nettstad i ein eigen prosess, gir Fission eit ekstra sikkerheitslag for deg og nettstadane du besøkjer.
+cfr-doorhanger-fission-body-approved = Personvernet ditt er viktig. { -brand-short-name } isolerer no nettstadar frå kvarandre, noko som gjer det vanskelegare for hackarar å stele passord, kreditkortnummer og annan sensitiv informasjon.
 cfr-doorhanger-fission-header = Nettstadisolering
 cfr-doorhanger-fission-primary-button = Ok, eg forstår
     .accesskey = O

@@ -17,13 +17,13 @@
 browser-main-window =
     .data-title-default = { -brand-full-name }
     .data-title-private = { -brand-full-name } (პირადი ფანჯარა)
-    .data-content-title-default = { $content-title } - { -brand-full-name }
-    .data-content-title-private = { $content-title } - { -brand-full-name } (პირადი ფანჯარა)
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name } (პირადი ფანჯარა)
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -35,9 +35,9 @@ browser-main-window =
 #  $content-title (String): the title of the web content.
 browser-main-window-mac =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } - (პირადი ფანჯარა)
+    .data-title-private = { -brand-full-name } — (პირადი ფანჯარა)
     .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } - (პირადი ფანჯარა)
+    .data-content-title-private = { $content-title } — (პირადი ფანჯარა)
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = აკრიფეთ ნაკლები, მონახეთ მეტი: გამოიყენეთ { $engineName } საძიებოდ პირდაპირ მისამართების ველიდან.
 urlbar-search-tips-redirect-2 = დაიწყეთ ძიება და შემოთავაზებებს მოგაწვდით { $engineName } ან იხილავთ დათვალიერების ისტორიიდან.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = აირჩიეთ ეს მალსახმობი, რომ უფრო სწრაფად იპოვოთ ის, რაც გჭირდებათ.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -285,6 +288,17 @@ identity-passive-loaded = ამ გვერდის გარკვეულ�
 identity-active-loaded = ამ გვერდზე დაცვა გამორთული გაქვთ.
 identity-weak-encryption = ეს გვერდი სუსტ დაშიფვრას იყენებს.
 identity-insecure-login-forms = ამ გვერდზე შეყვანილი ანგარიშის მონაცემები შესაძლოა მოიპარონ.
+identity-https-only-connection-upgraded = (განახლებული HTTPS-ზე)
+identity-https-only-label = მხოლოდ-HTTPS რეჟიმი
+identity-https-only-dropdown-on =
+    .label = ჩართ.
+identity-https-only-dropdown-off =
+    .label = გამორთ.
+identity-https-only-dropdown-off-temporarily =
+    .label = დროებით გამორთ.
+identity-https-only-info-turn-on2 = ჩართეთ მხოლოდ-HTTPS რეჟიმი და { -brand-short-name } შეეცდება უსაფრთხო კავშირზე გადაყვანას, შესაძლო შემთხვევებში.
+identity-https-only-info-turn-off2 = თუ გვერდს ხარვეზები ექნება, დაგჭირდებათ მხოლოდ-HTTPS რეჟიმის გამორთვა ამ საიტისთვის და გვერდის არასაიმედო HTTP-ით ჩატვირთვა.
+identity-https-only-info-no-upgrade = ვერ ხერხდება გადასვლა HTTP-დან.
 identity-permissions =
     .value = ნებართვები
 identity-permissions-reload-hint = ცვლილებების ასამოქმედებლად შესაძლოა გვერდის ხელახლა ჩატვირთვა დაგჭირდეთ.
@@ -329,6 +343,12 @@ browser-window-restore-down-button =
     .tooltiptext = შემცირება
 browser-window-close-button =
     .tooltiptext = დახურვა
+
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = სანიშნების გადმოტანა…
+    .tooltiptext = სხვა ბრაუზერის ჩანართებს გადმოიტანს { -brand-short-name }.
 
 ## WebRTC Pop-up notifications
 
@@ -433,16 +453,21 @@ urlbar-result-action-search-in-private = ძიება პირად ფა�
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = { $engine } ძიება
+urlbar-result-action-sponsored = დაფინანსებული
 urlbar-result-action-switch-tab = ჩანართზე გადასვლა
 urlbar-result-action-visit = მონახულება
-
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
-## In these actions "Search" is a verb, followed by where the search is performed.
-
-urlbar-result-action-search-bookmarks = სანიშნების ძიება
-urlbar-result-action-search-history = ისტორიის ძიება
-urlbar-result-action-search-tabs = ჩანართების ძიება
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = დააჭირეთ Tab-ს და გამოიყენეთ { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = დააჭირეთ Tab-ს და გამოიყენეთ { $engine }
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
@@ -451,6 +476,14 @@ urlbar-result-action-tabtosearch-web = საძიებოდ გამოი�
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = საძიებოდ გამოიყენეთ { $engine } პირდაპირ მისამართების ველიდან
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = სანიშნების ძიება
+urlbar-result-action-search-history = ისტორიის ძიება
+urlbar-result-action-search-tabs = ჩანართების ძიება
 
 ## Full Screen and Pointer Lock UI
 

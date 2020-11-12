@@ -65,6 +65,7 @@ app-basics-service-workers = Registrerte tjenestearbeidere
 app-basics-profiles = Profiler
 app-basics-launcher-process-status = Oppstartsprosess
 app-basics-multi-process-support = Multiprosess-vinduer
+app-basics-fission-support = Fission-vinduer
 app-basics-remote-processes-count = Fjernprosesser
 app-basics-enterprise-policies = Virksomhets-policy
 app-basics-location-service-key-google = Google Location Service-nøkkel
@@ -326,6 +327,20 @@ multi-process-status-6 = Avslått av ustøttet tekstinput
 multi-process-status-7 = Avslått av utvidelser
 multi-process-status-8 = Tvunget deaktivert
 multi-process-status-unknown = Ukjent status
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Avslått av eksperiment
+fission-status-experiment-treatment = Påslått av eksperiment
+fission-status-disabled-by-e10s-env = Avslått av miljøet
+fission-status-enabled-by-env = Påslått av miljøet
+fission-status-disabled-by-safe-mode = Avslått av sikker modus
+fission-status-enabled-by-default = Påslått som standard
+fission-status-disabled-by-default = Avslått som standard
+fission-status-enabled-by-user-pref = Påslått av bruker
+fission-status-disabled-by-user-pref = Avslått av bruker
+fission-status-disabled-by-e10s-other = E10s avslått
 async-pan-zoom = Asynkron pan/zoom
 apz-none = ingen
 wheel-enabled = hjulinput påslått
@@ -346,3 +361,12 @@ touch-warning = asynkron touchinput er avslått på grunn av ustøttet innstilli
 policies-inactive = Inaktiv
 policies-active = Aktiv
 policies-error = Feil
+
+## Printing section
+
+support-printing-title = Skriver ut
+support-printing-troubleshoot = Feilsøking
+support-printing-clear-settings-button = Fjern lagrede utskriftsinnstillinger
+support-printing-modified-settings = Endrede utskriftsinnstillinger
+support-printing-prefs-name = Navn
+support-printing-prefs-value = Verdi

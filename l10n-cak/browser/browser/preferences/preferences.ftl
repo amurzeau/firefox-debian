@@ -29,6 +29,8 @@ search-input-box =
            *[other] Tikanöx pa Taq Ajowab'äl
         }
 managed-notice = Ri awokik'amaya'l ninuk'samajiïx ruma ri amoloj.
+category-list =
+    .aria-label = Taq ruwäch
 pane-general-title = Chijun
 category-general =
     .tooltiptext = { pane-general-title }
@@ -426,6 +428,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Titzij kichajixik silowäch picture-in-picture
     .accesskey = t
 browsing-picture-in-picture-learn-more = Tetamäx ch'aqa' chik
+browsing-media-control =
+    .label = Ke'achajij ri taq k'ïy k'oxom rik'in ri pitz'b'äl, ri taq ak'axab'äl o ri kematz'ib'il k'amab'ey
+    .accesskey = r
+browsing-media-control-learn-more = Tetamäx ch'aqa' chik
 browsing-cfr-recommendations =
     .label = Kechilab'ëx taq k'amal toq nib'an okem pa k'amaya'l
     .accesskey = K
@@ -489,6 +495,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Jeb'ël Taq Ruxaq
 home-prefs-topsites-description = Taq ruxaq yalan ye'atz'ët
+home-prefs-topsites-by-option-sponsored =
+    .label = Nïm taq Ruxaq Eto'on
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -873,6 +881,10 @@ sitedata-option-block-cross-site-trackers =
     .label = Kojqanela' xoch'in taq ruxaq
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Kojqanela' taq ruxaq chuqa' aj winäq k'amab'ey
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Taq kicookies kojqanem xoch'in taq ruxaq — kik'wan kicookies aj winaqil k'amab'ey
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Taq kicookies xoch'in taq ruxaq — kik'wan kicookies aj winaqil k'amab'ey
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Kojqanela' xoch'in taq ruxaq chuqa' winaqil taq k'amab'ey, chuqa' kijech'unik ri ch'aqa' chik taq kuki
 sitedata-option-block-unvisited =
@@ -938,6 +950,7 @@ content-blocking-etp-standard-desc = Silan richin chajinem chuqa' rub'eyal nisam
 content-blocking-etp-strict-desc = Nïm chajinem, xa xe chi nub'än chi jujun taq ruxaq o rupam man yesamäj ta.
 content-blocking-etp-custom-desc = Ke'acha' achike taq ojqanela' chuqa' kiskrip taq komando nawajo' ye'aq'ät
 content-blocking-private-windows = Kichajinik taq rupam pan Ichinan taq Tzuwäch
+content-blocking-cross-site-cookies = Kicookies xoch'in taq ruxaq
 content-blocking-cross-site-tracking-cookies = kikuki kojqanik xoch'in taq ruxaq
 content-blocking-cross-site-tracking-cookies-plus-isolate = Taq kikuki kojqanem xoch'in taq ruxaq chuqa' kijech'unik ri ch'aqa' chik taq kuki
 content-blocking-social-media-trackers = Kojqanela' aj winäq k'amab'ey
@@ -949,6 +962,7 @@ content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = ¡Tak'axäx!
 content-blocking-and-isolating-etp-warning-description = Rik'in yeq'at taq ojqanela' chuqa' yejech'üx ri taq kuki rik'in jub'a' nutz'ila' rub'eyal yesamäj jujun taq ruxaq. Tasamajij chik jun ruxaq rik'in ojqanela' richin nasamajib'ej ronojel ri rupam.
+content-blocking-and-isolating-etp-warning-description-2 = Re nuk'ulem re' nitikïr nub'än chi jujun ajk'amaya'l taq ruxaq man nikik'üt ta pe ri rupam o man ütz ta yesamäj jun ruxaq achi'el qupin, rik'in jub'a' nawajo' nachüp ri chajinïk chuwäch ojqanem richin nusamajij ronojel ri rupam.
 content-blocking-warning-learn-how = Tetamäx achike rub'eyal
 content-blocking-reload-description = K'o chi ye'asamajib'ej chik ri taq ruwi' richin ye'awokisaj re taq jaloj re'.
 content-blocking-reload-tabs-button =

@@ -284,11 +284,11 @@ applications-action-save =
 # Variables:
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app =
-    .label = Abrir com o { $app-name }
+    .label = Usar { $app-name }
 # Variables:
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
-    .label = Abrir com o { $app-name } (padrão)
+    .label = Usar { $app-name } (padrão)
 applications-use-os-default =
     .label =
         { PLATFORM() ->
@@ -428,6 +428,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Ativar controles de vídeo picture-in-picture
     .accesskey = A
 browsing-picture-in-picture-learn-more = Saiba mais
+browsing-media-control =
+    .label = Controlar mídia via teclado, fone de ouvido ou interface virtual
+    .accesskey = v
+browsing-media-control-learn-more = Saiba mais
 browsing-cfr-recommendations =
     .label = Recomendar extensões enquanto você navega
     .accesskey = R
@@ -877,6 +881,10 @@ sitedata-option-block-cross-site-trackers =
     .label = Rastreadores entre sites
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Rastreadores entre sites e de mídias sociais
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Cookies de rastreamento entre sites — inclui cookies de mídias sociais
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Cookies entre sites — inclui cookies de mídias sociais
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Rastreadores entre sites e de mídias sociais, isolar os cookies restantes
 sitedata-option-block-unvisited =
@@ -942,6 +950,7 @@ content-blocking-etp-standard-desc = Balanceado entre proteção e desempenho. P
 content-blocking-etp-strict-desc = Proteção reforçada, mas pode atrapalhar alguns sites ou conteúdos.
 content-blocking-etp-custom-desc = Escolha que rastreadores e scripts bloquear.
 content-blocking-private-windows = Conteúdo de rastreamento em janelas privativas
+content-blocking-cross-site-cookies = Cookies entre sites
 content-blocking-cross-site-tracking-cookies = Cookies de rastreamento entre sites
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies de rastreamento entre sites e isolar os cookies restantes
 content-blocking-social-media-trackers = Rastreadores de mídias sociais
@@ -953,6 +962,7 @@ content-blocking-cryptominers = Criptomineradores
 content-blocking-fingerprinters = Fingerprinters (rastreadores de identidade digital)
 content-blocking-warning-title = Atenção!
 content-blocking-and-isolating-etp-warning-description = Bloquear rastreadores e isolar cookies pode afetar a funcionalidade de alguns sites. Desative a proteção contra rastreamento em um site para carregar todo o conteúdo.
+content-blocking-and-isolating-etp-warning-description-2 = Esta configuração pode fazer com que alguns sites não exibam conteúdo ou não funcionem corretamente. Se um site parecer ter sido afetado, você pode desativar a proteção contra rastreamento nesse site para carregar todo o conteúdo.
 content-blocking-warning-learn-how = Saiba como
 content-blocking-reload-description = É preciso recarregar as abas para aplicar essas mudanças.
 content-blocking-reload-tabs-button =

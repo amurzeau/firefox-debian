@@ -390,6 +390,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = Lo còdi d’aquesta extension foguèt validat per sa seguretat
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = Aquò es l’extension oficiala creada pels creadors de { -brand-product-name }
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = Aquesta extension foguèt repassada per complir los estandards de seguretat e performança.
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -398,6 +404,9 @@ recent-updates-heading = Mesas a jorn recentas
 release-notes-loading = Cargament…
 release-notes-error = Una error s'es producha en cargant las nòtas de version.
 addon-permissions-empty = Aquesta extension demanda pas cap d'autorizacion
+addon-permissions-required = Permissions requeridas per las foncionalitats principalas :
+addon-permissions-optional = Permissions opcionalas per las foncionalitats suplementàrias :
+addon-permissions-learnmore = Per ne saber mai sus las permissions
 recommended-extensions-heading = Extensions recomandadas
 recommended-themes-heading = Tèmas recomandats
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

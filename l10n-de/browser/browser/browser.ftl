@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Weniger tippen, mehr finden: Direkt mit { $engineName } von der Adressleiste aus suchen.
 urlbar-search-tips-redirect-2 = Starten Sie Ihre Suche in der Adressleiste, um Suchvorschläge von { $engineName } sowie Ihre Browser-Chronik angezeigt zu bekommen.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Wählen Sie diese Verknüpfung, um schneller Suchergebnisse zu erhalten.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -285,7 +288,7 @@ identity-passive-loaded = Teile dieser Seite sind nicht sicher (wie z.B. Grafike
 identity-active-loaded = Sie haben den Schutz für diese Seite deaktiviert.
 identity-weak-encryption = Diese Seite verwendet eine schwache Verschlüsselung.
 identity-insecure-login-forms = Ihre Zugangsdaten könnten auf dieser Seite in falsche Hände geraten.
-identity-https-only-connection-upgraded = (zu HTTPS aufgerüstet)
+identity-https-only-connection-upgraded = (zu HTTPS geändert)
 identity-https-only-label = Nur-HTTPS-Modus
 identity-https-only-dropdown-on =
     .label = Ein
@@ -293,9 +296,9 @@ identity-https-only-dropdown-off =
     .label = Aus
 identity-https-only-dropdown-off-temporarily =
     .label = Temporär aus
-identity-https-only-info-turn-on = Aktivieren, wenn { -brand-short-name } nach Möglichkeit zu einer sichere Verbindung aufrüsten soll.
-identity-https-only-info-turn-off = Wenn die Seite beschädigt erscheint, möchten Sie möglicherweise den Nur-HTTPS-Modus deaktivieren, um die Seite mit nicht verschlüsseltem HTTP neu zu laden.
-identity-https-only-info-no-upgrade = Verbindung konnte nicht von HTTP aufgerüstet werden.
+identity-https-only-info-turn-on2 = Aktivieren Sie den Nur-HTTPS-Modus für diese Website, wenn { -brand-short-name } nach Möglichkeit über HTTPS verbinden soll.
+identity-https-only-info-turn-off2 = Wenn die Seite beschädigt erscheint, können Sie den Nur-HTTPS-Modus für diese Website deaktivieren, um mit nicht verschlüsseltem HTTP neu zu laden.
+identity-https-only-info-no-upgrade = Verbindung konnte nicht von HTTP geändert werden.
 identity-permissions =
     .value = Berechtigungen
 identity-permissions-reload-hint = Eventuell muss die Seite neu geladen werden, um die Änderungen zu übernehmen.
@@ -340,6 +343,12 @@ browser-window-restore-down-button =
     .tooltiptext = Verkleinern
 browser-window-close-button =
     .tooltiptext = Schließen
+
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Lesezeichen importieren…
+    .tooltiptext = Lesezeichen aus einem anderen Browser zu { -brand-short-name } kopieren
 
 ## WebRTC Pop-up notifications
 
@@ -444,16 +453,21 @@ urlbar-result-action-search-in-private = In privatem Fenster suchen
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Mit "{ $engine }" suchen
+urlbar-result-action-sponsored = Gesponsert
 urlbar-result-action-switch-tab = Zum Tab wechseln
 urlbar-result-action-visit = Aufrufen
-
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
-## In these actions "Search" is a verb, followed by where the search is performed.
-
-urlbar-result-action-search-bookmarks = Lesezeichen durchsuchen
-urlbar-result-action-search-history = Chronik durchsuchen
-urlbar-result-action-search-tabs = Tabs durchsuchen
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Tab drücken, um mit { $engine } zu suchen
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Tab drücken, um { $engine } zu durchsuchen
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
@@ -462,6 +476,14 @@ urlbar-result-action-tabtosearch-web = Mit { $engine } direkt aus der Adressleis
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = { $engine } direkt aus der Adressleiste durchsuchen
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Lesezeichen durchsuchen
+urlbar-result-action-search-history = Chronik durchsuchen
+urlbar-result-action-search-tabs = Tabs durchsuchen
 
 ## Full Screen and Pointer Lock UI
 

@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Tajpu malpli, trovi pli: serĉi per { $engineName } rekte el via adresa strio.
 urlbar-search-tips-redirect-2 = Komencu vian serĉon en la adresa strio por vidi sugestojn el { $engineName } kaj el via retuma historio.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Elektu tiun ĉi ŝparvojon por pli rapide trovi kion vi bezonas.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -220,7 +223,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ĉi foje serĉi per:
 # This string won't wrap, so if the translated string is longer,
@@ -285,6 +288,17 @@ identity-passive-loaded = Partoj de tiu ĉi paĝo ne estas sekuraj (bildoj, ekze
 identity-active-loaded = Mi malaktivigis protekton en tiu ĉi paĝo.
 identity-weak-encryption = Tiu ĉi paĝo uzas malfortan ĉifradon.
 identity-insecure-login-forms = Akreditiloj uzitaj en tiu ĉi paĝo povus esti riskitaj.
+identity-https-only-connection-upgraded = (ŝanĝita al HTTPS)
+identity-https-only-label = HTTPS-nura reĝimo
+identity-https-only-dropdown-on =
+    .label = Ŝaltita
+identity-https-only-dropdown-off =
+    .label = Malŝaltita
+identity-https-only-dropdown-off-temporarily =
+    .label = Provizore malŝaltita
+identity-https-only-info-turn-on2 = Ŝaltu la HTTPS-nuran reĝimon por tiu ĉi retejo se vi volas ke { -brand-short-name } ŝanĝu la konekton, se tio eblas.
+identity-https-only-info-turn-off2 = Se la paĝo ne bone funkcias, vi povas malŝalti la HTTPS-nuran reĝimon por tiu ĉi retejo, por reŝargi ĝin per nesekura HTTP.
+identity-https-only-info-no-upgrade = Ne eblas ŝanĝi la konekton HTTP.
 identity-permissions =
     .value = Permesoj
 identity-permissions-reload-hint = Vi eble bezonos reŝargi la paĝon por ke la ŝanĝoj estu aplikitaj.
@@ -329,6 +343,12 @@ browser-window-restore-down-button =
     .tooltiptext = Remeti antaŭan grandon
 browser-window-close-button =
     .tooltiptext = Fermi
+
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Enporti legosignojn…
+    .tooltiptext = Kopii legosignojn el alia retumilo al { -brand-short-name }.
 
 ## WebRTC Pop-up notifications
 
@@ -433,13 +453,37 @@ urlbar-result-action-search-in-private = Serĉi en privata fenestro
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Serĉi per { $engine }
+urlbar-result-action-sponsored = Patronita
 urlbar-result-action-switch-tab = Iri al langeto
 urlbar-result-action-visit = Iri
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Premu tabon por serĉi per { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Premu tabon por serĉi per { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Serĉi per { $engine } rekte el la adresa strio
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Serĉi per { $engine } rekte el la adresa strio
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-bookmarks = Serĉi en legosignoj
+urlbar-result-action-search-history = Serĉi en historio
+urlbar-result-action-search-tabs = Serĉi en la langetoj
 
 ## Full Screen and Pointer Lock UI
 

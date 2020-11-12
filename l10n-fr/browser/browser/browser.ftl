@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Écrivez moins, trouvez plus : recherchez avec { $engineName } directement depuis la barre d’adresse.
 urlbar-search-tips-redirect-2 = Commencez votre recherche dans la barre d’adresse pour afficher des suggestions depuis { $engineName } et depuis votre historique de navigation.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Sélectionnez ce raccourci pour trouver plus rapidement ce dont vous avez besoin.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -285,6 +288,17 @@ identity-passive-loaded = Des éléments de la page ne sont pas sécurisés (tel
 identity-active-loaded = Vous avez désactivé la protection sur cette page.
 identity-weak-encryption = Cette page utilise un faible niveau de chiffrement.
 identity-insecure-login-forms = Les identifiants saisis sur cette page pourraient être compromis.
+identity-https-only-connection-upgraded = (surclassé en HTTPS)
+identity-https-only-label = Mode HTTPS uniquement
+identity-https-only-dropdown-on =
+    .label = Activé
+identity-https-only-dropdown-off =
+    .label = Désactivé
+identity-https-only-dropdown-off-temporarily =
+    .label = Désactivé temporairement
+identity-https-only-info-turn-on2 = Activez le mode « HTTPS uniquement » pour ce site si vous voulez que { -brand-short-name } sécurise la connexion lorsque c’est possible.
+identity-https-only-info-turn-off2 = Si la page ne semble pas fonctionnelle, vous pouvez désactiver le mode « HTTPS uniquement » pour  ce site afin de la recharger en utilisant le protocole non sécurisé HTTP.
+identity-https-only-info-no-upgrade = Impossible de sécuriser la connexion.
 identity-permissions =
     .value = Permissions
 identity-permissions-reload-hint = Vous devrez peut-être actualiser la page pour que les changements prennent effet.
@@ -329,6 +343,12 @@ browser-window-restore-down-button =
     .tooltiptext = Restaurer
 browser-window-close-button =
     .tooltiptext = Fermer
+
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Importer des marque-pages…
+    .tooltiptext = Copier les marque-pages depuis un autre navigateur vers { -brand-short-name }.
 
 ## WebRTC Pop-up notifications
 
@@ -433,16 +453,21 @@ urlbar-result-action-search-in-private = Rechercher dans une fenêtre de navigat
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Rechercher avec { $engine }
+urlbar-result-action-sponsored = Sponsorisé
 urlbar-result-action-switch-tab = Aller à l’onglet
 urlbar-result-action-visit = Consulter
-
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
-## In these actions "Search" is a verb, followed by where the search is performed.
-
-urlbar-result-action-search-bookmarks = Rechercher dans les marque-pages
-urlbar-result-action-search-history = Rechercher dans l’historique
-urlbar-result-action-search-tabs = Rechercher dans les onglets
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Appuyez sur Tab pour rechercher sur { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Appuyez sur Tab pour rechercher sur { $engine }
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
@@ -451,6 +476,14 @@ urlbar-result-action-tabtosearch-web = Rechercher avec { $engine } directement d
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Recherche { $engine } directement depuis la barre d’adresse
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Rechercher dans les marque-pages
+urlbar-result-action-search-history = Rechercher dans l’historique
+urlbar-result-action-search-tabs = Rechercher dans les onglets
 
 ## Full Screen and Pointer Lock UI
 

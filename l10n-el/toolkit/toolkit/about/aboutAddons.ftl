@@ -388,6 +388,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = Ο κώδικας αυτής της επέκτασης έχει ελεγχθεί για ασφάλεια
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = Αυτή είναι μια επίσημη επέκταση που αναπτύχθηκε από τους δημιουργούς του { -brand-product-name }
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = Αυτή η επέκταση έχει ελεγχθεί και πληροί τα πρότυπα ασφαλείας και επιδόσεών μας
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -396,6 +402,9 @@ recent-updates-heading = Πρόσφατες ενημερώσεις
 release-notes-loading = Φόρτωση...
 release-notes-error = Λυπούμαστε, αλλά προέκυψε σφάλμα φόρτωσης των σημειώσεων έκδοσης.
 addon-permissions-empty = Αυτή η επέκταση δεν απαιτεί δικαιώματα
+addon-permissions-required = Απαιτούμενα δικαιώματα για βασική λειτουργικότητα:
+addon-permissions-optional = Προαιρετικά δικαιώματα για επιπρόσθετη λειτουργικότητα:
+addon-permissions-learnmore = Μάθετε περισσότερα σχετικά με τα δικαιώματα
 recommended-extensions-heading = Προτεινόμενες επεκτάσεις
 recommended-themes-heading = Προτεινόμενα θέματα
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

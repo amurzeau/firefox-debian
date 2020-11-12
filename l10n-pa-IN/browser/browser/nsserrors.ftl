@@ -2,6 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 # DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
 # This file gets parsed into a JS dictionary of all known error message ids in
 # gen_aboutneterror_codes.py . If we end up needing fluent attributes or
@@ -11,14 +12,16 @@
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
 ssl-connection-error = { $hostname } ਨਾਲ ਕਨੈਕਟ ਕਰਨ ਦੌਰਾਨ ਗਲਤੀ ਆਈ। { $errorMessage }
-
 # Variables:
 # $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix = ਗ਼ਲਤੀ ਕੋਡ: { $error }
-
 psmerr-ssl-disabled = ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਕੁਨੈਕਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ, ਕਿਉਂਕਿ SSL ਪਰੋਟੋਕਾਲ ਬੰਦ ਕੀਤਾ ਹੋਇਆ ਹੈ।
 psmerr-ssl2-disabled = ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਕੁਨੈਕਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ, ਕਿਉਂਕਿ ਸਾਇਟ SSL ਪਰੋਟੋਕਾਲ ਦਾ ਪੁਰਾਣਾ, ਗ਼ੈਰ-ਸੁਰੱਖਿਅਤ ਵਰਜਨ ਵਰਤ ਰਹੀ ਹੈ।
-
+# This is a multi-line message.
+psmerr-hostreusedissuerandserial =
+    ਤੁਹਾਨੂੰ ਇੱਕ ਅਪ੍ਰਮਾਣਿਕ ਸਰਟੀਫਿਕੇਟ ਪ੍ਰਾਪਤ ਹੋਇਆ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਸਰਵਰ-ਪ੍ਰਬੰਧਕ ਜਾਂ ਈਮੇਲ ਪੱਤਰ-ਪ੍ਰੇਰਕ ਨਾਲ ਸੰਪਰਕ ਕਰੋ ਅਤੇ ਉਹਨਾਂ ਨੂੰ ਹੇਠ ਦਿੱਤੀ ਜਾਣਕਾਰੀ ਦਿਓ:
+    
+    ਤੁਹਾਡੇ ਸਰਟੀਫਿਕੇਟ ਵਿੱਚ ਉਹੀ ਸੀਰੀਅਲ ਨੰਬਰ ਹੈ ਜੋ ਸਰਟੀਫਿਕੇਟ ਅਥਾਰਟੀ ਦੁਆਰਾ ਜਾਰੀ ਕੀਤੇ ਗਏ ਇੱਕ ਹੋਰ ਸਰਟੀਫਿਕੇਟ ਵਾਂਗ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਵਿਲੱਖਣ ਸੀਰੀਅਲ ਨੰਬਰ ਵਾਲਾ ਨਵਾਂ ਸਰਟੀਫਿਕੇਟ ਪ੍ਰਾਪਤ ਕਰੋ।
 ssl-error-export-only-server = ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਸੰਰਚਨਾ ਲਈ ਅਸਮਰੱਥ ਹੈ। ਪੀਅਰ ਹਾਈ-ਗਰੇਡ ਇੰਕ੍ਰਿਪਸ਼ਨ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।
 ssl-error-us-only-server = ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਕਮਿਊਨੀਕੇਟ ਕਰਨ ਲਈ ਅਸਮਰੱਥ ਹੈ। ਪੀਅਰ ਲਈ ਹਾਈ-ਗਰੇਡ ਇੰਕ੍ਰਿਪਸ਼ਨ ਦੀ ਲੋੜ ਹੈ, ਜੋ ਕਿ ਉਪਲੱਬਧ ਨਹੀਂ ਹੈ।
 ssl-error-no-cypher-overlap = ਪੀਅਰ ਨਾਲ ਸੁਰੱਖਿਅਤ ਢੰਗ ਨਾਲ ਕਮਿਊਨੀਕੇਟ ਕੀਤਾ ਨਹੀਂ ਜਾ ਸਕਦਾ ਹੈ: ਕੋਈ ਸਾਂਝਾ ਇੰਕ੍ਰਿਪਸ਼ਣ ਐਲਗੋਰਥਿਮ ਨਹੀਂ ਹੈ।
@@ -132,6 +135,7 @@ ssl-error-decompression-failure = SSL ਨੂੰ ਕੰਪਰੈਸ ਕੀਤਾ 
 ssl-error-renegotiation-not-allowed = ਇਸ SSL ਸਾਕਟ ਉੱਤੇ ਮੁੜ-ਸਮਝੌਤੇ ਦੀ ਇਜ਼ਾਜ਼ਤ ਨਹੀਂ ਹੈ।
 ssl-error-unsafe-negotiation = ਪੀਅਰ ਨੇ ਪੁਰਾਣੇ ਸਟਾਇਲ (ਸੰਭਵ ਰੂਪ ਵਿੱਚ ਕਮਜ਼ੋਰ) ਦੇ ਹੈਂਡਸ਼ੇਕ (handshake) ਨਾਲ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹੈ ।
 ssl-error-rx-unexpected-uncompressed-record = SSL ਨੂੰ ਅਚਾਨਕ ਗ਼ੈਰ-ਕੰਪਰੈਸ ਰਿਕਾਰਡ ਮਿਲਿਆ।
+ssl-error-weak-server-ephemeral-dh-key = SSL ਨੂੰ ਸਰਵਰ ਕੀ ਐਕਸਚੇਂਜ ਹੈਂਡਸ਼ੇਕ ਸੁਨੇਹੇ ਵਿੱਚ ਕਮਜ਼ੋਰ ਐਫੀਮੇਰਲ ਡਿਫੀ-ਹੈੱਲਮੈਨ ਕੁੰਜੀ ਮਿਲੀ ਹੈ।
 ssl-error-next-protocol-data-invalid = SSL ਨੂੰ ਨਜਾਇਜ਼ NPN ਇਕਸਟੈਂਸ਼ਨ ਡਾਟਾ ਮਿਲਿਆ।
 ssl-error-feature-not-supported-for-ssl2 = SSL ਫੀਚਰ  SSL 2.0 ਕੁਨੈਕਸ਼ਨ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।
 ssl-error-feature-not-supported-for-servers = SSL ਫੀਚਰ ਸਰਵਰਾਂ ਲਈ ਸਹਾਇਕ ਨਹੀਂ ਹੈ।

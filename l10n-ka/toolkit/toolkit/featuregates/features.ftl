@@ -47,11 +47,6 @@ experimental-features-web-api-beforeinput-description = საერთო <a da
 experimental-features-css-constructable-stylesheets =
     .label = CSS: Constructable Stylesheets
 experimental-features-css-constructable-stylesheets-description = აგებულების შემსწორებლის დამატება <a data-l10n-name="mdn-cssstylesheet">CSSStyleSheet</a>-გარსზე, აგრეთვე მასთან დაკავშირებული სხვა მრავალი ცვლილება, შესაძლებელს ხდის პირდაპირ შეიქმნას სტილის ახალი ცხრილები, HTML-ზე დართვის გარეშე. რაც მეტად გააადვილებს, მრავალჯერადი გამოყენების სტილის ცხრილების შექმნას, <a data-l10n-name="mdn-shadowdom">Shadow DOM</a>-თან გამოსაყენებლად. ვრცლად, იხილეთ <a data-l10n-name="bugzilla">ხარვეზი 1520690</a>.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-media-session-api =
-    .label = Web API: Media Session API
-experimental-features-media-session-api-description = სრული { -brand-short-name }-უზრუნველყოფა მედიაფაილების სეანსის API-ისთვის, ჯერჯერობით საცდელია. ეს API გამოიყენება მედიაფაილებთან დაკავშირებული შეტყობინებების უკეთ გამოსაყენებლად, სამართავად ხდომილობებისა და მონაცემების, რომლებიც გამოსადეგია წარმოსადგენად სამომხმარებლო გარსის, მედიაფაილების გასაშვებად, ამასთან მათი მონაცემების მოსაპოვებლად. ვრცლად, იხილეთ <a data-l10n-name="bugzilla">ხარვეზი 1112032</a>.
 experimental-features-devtools-color-scheme-simulation =
     .label = Developer Tools: Color Scheme Simulation
 experimental-features-devtools-color-scheme-simulation-description = ამატებს შესაძლებლობას, ფერთა სხვადასხვა სქემის წარმოსადგენად, რომლითაც მოისინჯება <a data-l10n-name="mdn-preferscolorscheme">@prefers-color-scheme</a> მედიამოთხოვნები. ეს მედიამოთხოვნა, საშუალებას მისცემს თქვენი სტილის ცხრილს, საპასუხოდ შეიცვალოს იმისდა მიხედვით, მომხმარებელი მუქ სამომხმარებლო გარსს აირჩევს თუ ნათელს. ამის მეშვეობით, კოდს შეამოწმებთ ბრაუზერის პარამეტრების შეუცვლელად (ან საოპერაციო სისტემის პარამეტრების, თუ ბრაუზერი მას ექვემდებარება). ვრცლად, იხილეთ <a data-l10n-name="bugzilla1">ხარვეზი 1550804</a> და <a data-l10n-name="bugzilla2">ხარვეზი 1137699</a>.
@@ -99,3 +94,7 @@ experimental-features-webrtc-global-mute-toggles-description = ამატე�
 experimental-features-js-warp =
     .label = JavaScript JIT: Warp
 experimental-features-js-warp-description = ჩაირთვება Warp, პროექტი, JavaScript-ის წარმადობისა და მეხსიერების გამოყენების გასაუმჯობესებლად.
+# Fission is the name of the feature and should not be translated.
+experimental-features-fission =
+    .label = Fission (საიტის გამიჯვნა)
+experimental-features-fission-description = Fission (საიტის გამიჯვნა) არის ახალი საცდელი შესაძლებლობა, რომლითაც { -brand-short-name } გთავაზობთ დაცვის დამატებით ფენას, უსაფრთხოების სისუსტეების წინააღმდეგ. თითოეული საიტის ცალ-ცალკე პროცესებად გაშვებით, Fission ურთულებს მავნე ვებსაიტებს, სხვა მონახულებულ გვერდებთან წვდომას. ჩვენ და { -brand-short-name } მეტად მოხარულნი ვიქნებით, თუ გამოცდით და მოგვახსენებთ ხარვეზებს, რომელთაც წააწყდებით. ვრცლად, დამატებით იხილეთ <a data-l10n-name="wiki">ვიკი</a>.

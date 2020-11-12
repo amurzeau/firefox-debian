@@ -68,6 +68,7 @@ app-basics-service-workers = Service workers inscrits
 app-basics-profiles = Profils
 app-basics-launcher-process-status = Processus de lancement
 app-basics-multi-process-support = Fenêtres multiprocessus
+app-basics-fission-support = Fenêtres Fission
 app-basics-remote-processes-count = Processus distants
 app-basics-enterprise-policies = Stratégies d’entreprise
 app-basics-location-service-key-google = Clé du service de localisation de Google
@@ -329,6 +330,20 @@ multi-process-status-6 = Désactivé par une méthode de saisie non prise en cha
 multi-process-status-7 = Désactivé par des modules complémentaires
 multi-process-status-8 = Désactivé de force
 multi-process-status-unknown = État inconnu
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Désactivées par une expérience
+fission-status-experiment-treatment = Activées par une expérience
+fission-status-disabled-by-e10s-env = Désactivées par l’environnement
+fission-status-enabled-by-env = Activées par l’environnement
+fission-status-disabled-by-safe-mode = Désactivées par le mode sans échec
+fission-status-enabled-by-default = Activées par défaut
+fission-status-disabled-by-default = Désactivées par défaut
+fission-status-enabled-by-user-pref = Activées par l’utilisateur
+fission-status-disabled-by-user-pref = Désactivées par l’utilisateur
+fission-status-disabled-by-e10s-other = Désactivées par E10s
 async-pan-zoom = Zoom/Panoramique asynchrones
 apz-none = aucun
 wheel-enabled = entrée molette activée
@@ -349,3 +364,12 @@ touch-warning = entrée tactile asynchrone désactivée en raison d’une préf�
 policies-inactive = Inactives
 policies-active = Actives
 policies-error = Erreur
+
+## Printing section
+
+support-printing-title = Impression
+support-printing-troubleshoot = Résolution de problèmes
+support-printing-clear-settings-button = Effacer les paramètres d’impression enregistrés
+support-printing-modified-settings = Paramètres d’impression modifiés
+support-printing-prefs-name = Nom
+support-printing-prefs-value = Valeur

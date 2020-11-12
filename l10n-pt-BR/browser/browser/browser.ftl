@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Digite menos, encontre mais: Pesquise no { $engineName } direto na barra de endereços.
 urlbar-search-tips-redirect-2 = Inicie sua pesquisa na barra de endereços para ver sugestões do { $engineName } e do histórico de navegação.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Selecione este atalho para encontrar mais rápido o que você precisa.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -293,8 +296,8 @@ identity-https-only-dropdown-off =
     .label = Desativado
 identity-https-only-dropdown-off-temporarily =
     .label = Desativado temporariamente
-identity-https-only-info-turn-on = Ative se quiser que o { -brand-short-name } promova para uma conexão segura quando possível.
-identity-https-only-info-turn-off = Se o site parecer não funcionar, você pode desativar o modo somente HTTPS para recarregar usando HTTP inseguro.
+identity-https-only-info-turn-on2 = Ative o modo somente HTTPS neste site se quiser que o { -brand-short-name } promova a conexão quando possível.
+identity-https-only-info-turn-off2 = Se a página parecer não funcionar, você pode desativar o modo somente HTTPS neste site para recarregar usando HTTP inseguro.
 identity-https-only-info-no-upgrade = Não foi possível promover a conexão de HTTP.
 identity-permissions =
     .value = Permissões
@@ -340,6 +343,12 @@ browser-window-restore-down-button =
     .tooltiptext = Restaurar tamanho
 browser-window-close-button =
     .tooltiptext = Fechar
+
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Importar favoritos…
+    .tooltiptext = Copiar favoritos de outro navegador para o { -brand-short-name }.
 
 ## WebRTC Pop-up notifications
 
@@ -444,16 +453,21 @@ urlbar-result-action-search-in-private = Pesquisar em uma janela privativa
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Pesquisar com { $engine }
+urlbar-result-action-sponsored = Patrocinado
 urlbar-result-action-switch-tab = Alternar para a aba
 urlbar-result-action-visit = Visitar
-
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
-## In these actions "Search" is a verb, followed by where the search is performed.
-
-urlbar-result-action-search-bookmarks = Pesquisar nos favoritos
-urlbar-result-action-search-history = Pesquisar no histórico
-urlbar-result-action-search-tabs = Pesquisar nas abas
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Pressione a tecla Tab para pesquisar usando { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Pressione a tecla Tab para pesquisar { $engine }
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
@@ -462,6 +476,14 @@ urlbar-result-action-tabtosearch-web = Pesquisar com { $engine } diretamente na 
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Pesquisar com { $engine } diretamente na barra de endereços
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Pesquisar nos favoritos
+urlbar-result-action-search-history = Pesquisar no histórico
+urlbar-result-action-search-tabs = Pesquisar nas abas
 
 ## Full Screen and Pointer Lock UI
 

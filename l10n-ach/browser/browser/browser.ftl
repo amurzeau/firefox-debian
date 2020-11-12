@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -99,9 +99,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Coo manok, nong mapol: Yeny { $engineName } atir ki ii lanyut me kanonge mamegi.
 urlbar-search-tips-redirect-2 = Cak yeny mamegi ki i lanyut me kanonge me neno tam amia ki bot { $engineName } ki yeny mamegi mukato.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Yer yoo macek man me nongo ngo ma imito oyot.
 
 ## Local search mode indicator labels in the urlbar
 
+urlbar-search-mode-bookmarks = Alama buk
+urlbar-search-mode-tabs = Dirica matino
+urlbar-search-mode-history = Gin mukato
 
 ##
 
@@ -195,7 +201,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Iwangi, yeny ki:
 # This string won't wrap, so if the translated string is longer,
@@ -285,6 +291,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = Lor
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -297,6 +306,9 @@ popup-all-windows-shared = Ki binywako dirica weng ma nen i wang kompiuta ni.
 
 ## WebRTC window or screen share tab switch warning
 
+sharing-warning-window = Itye ka nywako { -brand-short-name }. Jo mukene twero neno kacce iloke i dirica matidi manyen.
+sharing-warning-proceed-to-tab =
+    .label = Mede i Dirica matidi
 
 ## DevTools F12 popup
 
@@ -305,6 +317,8 @@ popup-all-windows-shared = Ki binywako dirica weng ma nen i wang kompiuta ni.
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Yeny onyo ket kanonge
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Yeny onyo ket kanonge
 # Variables
@@ -330,6 +344,14 @@ urlbar-pocket-button =
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Yeny ki { $engine } i Dirica me Mung
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Yeny i Dirica me Mung
 # The "with" format was chosen because the search engine name can end with
 # "Search", and we would like to avoid strings like "Search MSN Search".
 # Variables
@@ -337,11 +359,26 @@ urlbar-pocket-button =
 urlbar-result-action-search-w-engine = Yeny ki { $engine }
 urlbar-result-action-switch-tab = Lokke i dirica matidi
 urlbar-result-action-visit = Lim
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Dii Dirica matidi me yenyo ki { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Dii Dirica matidi me yenyo { $engine }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-bookmarks = Yeny Alama buk
+urlbar-result-action-search-history = Yeny Gin mukato
+urlbar-result-action-search-tabs = Yeny Dirica matino
 
 ## Full Screen and Pointer Lock UI
 

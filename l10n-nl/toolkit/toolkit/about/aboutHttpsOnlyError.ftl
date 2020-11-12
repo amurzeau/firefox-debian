@@ -13,9 +13,16 @@ about-httpsonly-title = { -brand-short-name } heeft een potentieel beveiligingsp
 # Variables:
 #   $websiteUrl (String) - Url of the website that failed to load. Example: www.example.com
 about-httpsonly-explanation-unavailable = U surft in Alleen-HTTPS-modus en een beveiligde HTTPS-versie van <em>{ $websiteUrl }</em> is niet beschikbaar.
+about-httpsonly-title-alert = Alleen-HTTPS-modus-waarschuwing
+about-httpsonly-title-connection-not-available = Beveiligde verbinding niet beschikbaar
+# Variables:
+#   $websiteUrl (String) - Url of the website that failed to load. Example: www.example.com
+about-httpsonly-explanation-unavailable2 = U hebt de Alleen-HTTPS-modus voor verbeterde beveiliging ingeschakeld, en een HTTPS-versie van <em>{ $websiteUrl }</em> is niet beschikbaar.
 about-httpsonly-explanation-question = Wat kan dit veroorzaken?
 about-httpsonly-explanation-nosupport = Hoogstwaarschijnlijk ondersteunt de website simpelweg geen HTTPS.
 about-httpsonly-explanation-risk = Mogelijk is er sprake van een aanval. Als u besluit de website te bezoeken, zou u geen gevoelige gegevens zoals wachtwoorden, e-mailadressen of creditcardgegevens moeten invoeren.
 about-httpsonly-button-accept-and-continue = Het risico aanvaarden en doorgaan
+about-httpsonly-explanation-continue = Als u verdergaat, wordt de Alleen-HTTPS-modus voor deze website tijdelijk uitgeschakeld .
+about-httpsonly-button-continue-to-site = Doorgaan naar HTTP-website
 about-httpsonly-button-go-back = Terug
 about-httpsonly-link-learn-more = Meer info…

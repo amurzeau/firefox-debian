@@ -387,6 +387,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = Tiện ích mở rộng này đã được xem xét mã để đảm bảo an toàn.
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = Đây là tiện ích mở rộng chính thức do những người tạo ra { -brand-product-name } xây dựng
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = Tiện ích mở rộng này đã được xem xét để đáp ứng các tiêu chuẩn của chúng tôi về bảo mật và hiệu suất
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -395,6 +401,9 @@ recent-updates-heading = Cập nhật gần đây
 release-notes-loading = Đang tải…
 release-notes-error = Xin lỗi, nhưng có lỗi xảy ra khi mở ghi chú phát hành.
 addon-permissions-empty = Tiện ích mở rộng này không yêu cầu bất kỳ quyền nào
+addon-permissions-required = Các quyền cần thiết cho chức năng cốt lõi:
+addon-permissions-optional = Các quyền tùy chọn cho chức năng được bổ sung:
+addon-permissions-learnmore = Tìm hiểu thêm về quyền hạn
 recommended-extensions-heading = Tiện ích mở rộng được đề xuất
 recommended-themes-heading = Chủ đề được đề xuất
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

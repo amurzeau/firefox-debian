@@ -386,6 +386,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = Xnik'öx rub'itz'ib' re k'amal re' ruma jikomal
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = Re re' jun nab'ey k'amal nuk'un kuma ri runuk'unela' { -brand-product-name }
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = Re k'amal re' xnik'öx richin nib'anatäj ri rub'eyal qajikomal chuqa' rub'eyal samaj.
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -394,6 +400,9 @@ recent-updates-heading = K'ak'a' taq K'exoj
 release-notes-loading = Nisamäj…
 release-notes-error = Takuyu' qamak, xa xk'ulwachitäj jun sachoj toq nok pa ch'utaq rutzijol ri ko'öl wuj.
 addon-permissions-empty = Majun ya'oj q'ij nrajo re k'amal re'
+addon-permissions-required = Ajowanel taq ya'oj q'ij richin ri qitzij rusamaj:
+addon-permissions-optional = Cha'el taq ya'oj q'ij richin ri tz'aqat taq rusamaj:
+addon-permissions-learnmore = Tetamäx ch'aqa' chik chi kij ri taq ya'oj q'ij
 recommended-extensions-heading = Chilab'en taq K'amal
 recommended-themes-heading = Chilab'en taq Wachinel
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

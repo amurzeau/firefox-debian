@@ -17,13 +17,13 @@
 browser-main-window =
     .data-title-default = { -brand-full-name }
     .data-title-private = { -brand-full-name } （隐私浏览）
-    .data-content-title-default = { $content-title } - { -brand-full-name }
-    .data-content-title-private = { $content-title } - { -brand-full-name } （隐私浏览）
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name } （隐私浏览）
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -35,9 +35,9 @@ browser-main-window =
 #  $content-title (String): the title of the web content.
 browser-main-window-mac =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } - （隐私浏览）
+    .data-title-private = { -brand-full-name } —（隐私浏览）
     .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } - （隐私浏览）
+    .data-content-title-private = { $content-title } —（隐私浏览）
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = 输入寥寥，搜遍万千：在地址栏就能用 { $engineName } 搜索。
 urlbar-search-tips-redirect-2 = 在地址栏搜索，可以看到 { $engineName } 提供的建议，还有您的相关浏览历史。
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = 一键直达，高效搜索。
 
 ## Local search mode indicator labels in the urlbar
 
@@ -285,8 +288,8 @@ identity-https-only-dropdown-off =
     .label = 关闭
 identity-https-only-dropdown-off-temporarily =
     .label = 暂时关闭
-identity-https-only-info-turn-on = 若想要 { -brand-short-name } 尽可能升级为安全连接，请开启此选项。
-identity-https-only-info-turn-off = 若网站看起来不正常，则可能需要关闭 HTTPS-Only 模式，使用不安全的 HTTP 重新载入。
+identity-https-only-info-turn-on2 = 若想要 { -brand-short-name } 尽可能升级为安全连接，请对此网站开启 HTTPS-Only 模式。
+identity-https-only-info-turn-off2 = 若页面看起来不正常，则可能需要对此网站关闭 HTTPS-Only 模式，使用不安全的 HTTP 重新载入。
 identity-https-only-info-no-upgrade = 无法将网站连接从 HTTP 升级。
 identity-permissions =
     .value = 权限
@@ -332,6 +335,12 @@ browser-window-restore-down-button =
     .tooltiptext = 向下还原
 browser-window-close-button =
     .tooltiptext = 关闭
+
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = 导入书签…
+    .tooltiptext = 将书签从从其他浏览器复制到 { -brand-short-name }
 
 ## WebRTC Pop-up notifications
 
@@ -436,16 +445,21 @@ urlbar-result-action-search-in-private = 在隐私窗口中搜索
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = 使用 { $engine } 搜索
+urlbar-result-action-sponsored = 赞助项目
 urlbar-result-action-switch-tab = 切换到标签页
 urlbar-result-action-visit = 访问
-
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
-## In these actions "Search" is a verb, followed by where the search is performed.
-
-urlbar-result-action-search-bookmarks = 搜索书签
-urlbar-result-action-search-history = 搜索历史记录
-urlbar-result-action-search-tabs = 搜索标签页
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = 按 Tab 键 { $engine } 一下
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = 按 Tab 键在 { $engine } 上搜索
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
@@ -454,6 +468,14 @@ urlbar-result-action-tabtosearch-web = 直接从地址栏 { $engine } 一下
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = 直接从地址栏在 { $engine } 上搜索
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = 搜索书签
+urlbar-result-action-search-history = 搜索历史记录
+urlbar-result-action-search-tabs = 搜索标签页
 
 ## Full Screen and Pointer Lock UI
 

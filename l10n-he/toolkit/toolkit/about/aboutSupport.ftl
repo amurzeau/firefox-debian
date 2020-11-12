@@ -295,7 +295,7 @@ launcher-process-status-unknown = מצב לא ידוע
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
 multi-process-windows = { $remoteWindows }/{ $totalWindows }
-multi-process-status-0 = הופעל על־ידי המשתמש
+multi-process-status-0 = מופעל על־ידי המשתמש
 multi-process-status-1 = מופעל כברירת מחדל
 multi-process-status-2 = מנוטרל
 multi-process-status-4 = נוטרל עקב כלי נגישות
@@ -303,6 +303,20 @@ multi-process-status-6 = נוטרל עקב קלט טקסט לא נתמך
 multi-process-status-7 = נוטרל על־ידי תוספות
 multi-process-status-8 = מושבת בכוח
 multi-process-status-unknown = מצב לא ידוע
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = מושבת על־ידי ניסוי
+fission-status-experiment-treatment = מופעל על־ידי ניסוי
+fission-status-disabled-by-e10s-env = מושבת על־ידי הסביבה
+fission-status-enabled-by-env = מופעל על־ידי הסביבה
+fission-status-disabled-by-safe-mode = מושבת על־ידי מצב בטוח
+fission-status-enabled-by-default = מופעל כברירת מחדל
+fission-status-disabled-by-default = מושבת כברירת מחדל
+fission-status-enabled-by-user-pref = מופעל על־ידי המשתמש
+fission-status-disabled-by-user-pref = מושבת על־ידי המשתמש
+fission-status-disabled-by-e10s-other = ריבוי תהליכים מושבת
 apz-none = אין
 wheel-enabled = קלט גלגל מופעל
 touch-enabled = קלט מגע מופעל
@@ -319,3 +333,12 @@ autoscroll-enabled = גלילה אוטומטית פעילה
 policies-inactive = לא פעיל
 policies-active = פעיל
 policies-error = שגיאה
+
+## Printing section
+
+support-printing-title = הדפסה
+support-printing-troubleshoot = פתרון בעיות
+support-printing-clear-settings-button = ניקוי הגדרות ההדפסה השמורות
+support-printing-modified-settings = הגדרות הדפסה ששונו
+support-printing-prefs-name = שם
+support-printing-prefs-value = ערך

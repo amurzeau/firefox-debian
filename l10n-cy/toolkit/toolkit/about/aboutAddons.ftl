@@ -392,6 +392,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = Mae cod yr estyniad hwn wedi'i adolygu er diogelwch
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = Crëwyd yr estyniad swyddogol hwn gan wneuthurwyr { -brand-product-name }
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = Mae'r estyniad hwn wedi'i adolygu i fodloni ein safonau ar gyfer diogelwch a pherfformiad
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -400,6 +406,9 @@ recent-updates-heading = Diweddariadau Diweddar
 release-notes-loading = Llwytho…
 release-notes-error = Ymddiheuriadau ond bu gwall llwytho'r nodiadau ryddhau.
 addon-permissions-empty = Nid oes angen unrhyw ganiatâd ar yr estyniad hwn
+addon-permissions-required = Caniatâd angenrheidiol y swyddogaethau craidd:
+addon-permissions-optional = Caniatâd dewisol ar gyfer y swyddogaethau ychwanegol:
+addon-permissions-learnmore = Dysgu rhagor am ganiatâd
 recommended-extensions-heading = Estyniadau Cymeradwy
 recommended-themes-heading = Themâu Cymeradwy
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

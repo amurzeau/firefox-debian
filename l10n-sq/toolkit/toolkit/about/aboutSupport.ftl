@@ -324,6 +324,15 @@ multi-process-status-6 = Çaktivizuar për shkak futje teksti të pambuluar
 multi-process-status-7 = Çaktivizuar nga shtesat
 multi-process-status-8 = Çaktivizuar forcërisht
 multi-process-status-unknown = Gjendje e panjohur
+fission-status-experiment-control = Çaktivizuar nga eksperiment
+fission-status-experiment-treatment = Aktivizuar nga eksperiment
+fission-status-disabled-by-e10s-env = Çaktivizuar nga mjedisi
+fission-status-enabled-by-env = Aktivizuar nga mjedisi
+fission-status-disabled-by-safe-mode = Çaktivizuar nga mënyra e parrezik
+fission-status-enabled-by-default = Aktivizuar si parazgjedhje
+fission-status-disabled-by-default = Çaktivizuar si parazgjedhje
+fission-status-enabled-by-user-pref = Aktivizuar nga përdoruesi
+fission-status-disabled-by-user-pref = Çaktivizuar nga përdoruesi
 async-pan-zoom = Pan/Zoom Asinkron
 apz-none = asnjë
 wheel-enabled = me input nga rrotëz miu
@@ -343,3 +352,12 @@ touch-warning = input asinkron me prekje i çaktivizuar, për shkak parapëlqimi
 policies-inactive = Joaktiv
 policies-active = Aktiv
 policies-error = Gabim
+
+## Printing section
+
+support-printing-title = Po shtypet
+support-printing-troubleshoot = Diagnostikim
+support-printing-clear-settings-button = Spastro rregullimet e ruajtura për shtypjet
+support-printing-modified-settings = U ndryshuan rregullime shtypjeje
+support-printing-prefs-name = Emër
+support-printing-prefs-value = Vlerë

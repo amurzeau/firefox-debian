@@ -383,6 +383,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = Asiɣzef-a yettusenqed ɣef teɣzint n tɣellist
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = Asiɣzef-a unṣib i bnan imesnulfuyen n { -brand-product-name }
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = Asiɣzef-a yettusenqed i wakken ara yemṣada d yilugan-nneɣ icudden ɣer tɣellist akked timellit.
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -391,6 +397,9 @@ recent-updates-heading = Ileqman n melmi kan
 release-notes-loading = Asali…
 release-notes-error = Suref-aɣ, teḍṛa-d tuccḍa deg usali n iwenniten n lqem.
 addon-permissions-empty = Asiɣzef-agi ur yesra ara tisirag
+addon-permissions-required = Tisirag yettwasran i tmahilin n uzadur:
+addon-permissions-optional = Tisirag tifrayanin i tmahilin yettwarnan:
+addon-permissions-learnmore = Issin ugar ɣef tsirag
 recommended-extensions-heading = Isiɣzaf ihulen
 recommended-themes-heading = Isental ihulen
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

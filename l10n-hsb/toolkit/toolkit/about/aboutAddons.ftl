@@ -384,6 +384,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = Kod tutoho rozšěrjenja je so z přičinow wěstoty přepruwował
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = To je oficielne rozšěrjenje, kotrež je so wot wuwiwarjow { -brand-product-name } wuwiło
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = Tute rozšěrjenje je so přepruwowało, zo by našim standardam za wěstotu a wukon wotpowědowało.
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -392,6 +398,9 @@ recent-updates-heading = Najnowše aktualizacije
 release-notes-loading = Začituje so…
 release-notes-error = Při začitowanju wersijowych informacijow je bohužel zmylk wustupił.
 addon-permissions-empty = Tute rozšěrjenje sej prawa njewužaduje
+addon-permissions-required = Trěbne prawa za jadrowu funkcionalnosć:
+addon-permissions-optional = Opcionalne prawa za přidatu funkcionalnosć:
+addon-permissions-learnmore = Dalše informacije wo prawach
 recommended-extensions-heading = Doporučene rozšěrjenja
 recommended-themes-heading = Doporučene drasty
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
