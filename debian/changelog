@@ -1,3 +1,13 @@
+firefox-esr (78.5.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2020-51, also known as:
+    CVE-2020-26951, CVE-2020-16012, CVE-2020-26953, CVE-2020-26956,
+    CVE-2020-26958, CVE-2020-26959, CVE-2020-26960, CVE-2020-26961,
+    CVE-2020-26965, CVE-2020-26968.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 18 Nov 2020 06:23:03 +0900
+
 firefox-esr (78.4.1esr-2) unstable; urgency=medium
 
   * Cargo.lock, third_party/rust/proc-macro2, third_party/rust/syn: Update
