@@ -167,7 +167,7 @@ cfr-doorhanger-sync-logins-ok-button = Activa { -sync-brand-short-name }
 
 cfr-doorhanger-send-tab-header = Lege isto in viage
 cfr-doorhanger-send-tab-recipe-header = Porta iste recepta al cocina
-cfr-doorhanger-send-tab-body = Inviar Scheda te permitte compartir facilemente iste ligamine a tu telephono o altere apparatos connectite a tu conto de { -brand-product-name }.
+cfr-doorhanger-send-tab-body = "Inviar scheda" te permitte transferer facilemente iste ligamine a tu telephono o altere apparatos connectite a tu conto de { -brand-product-name }.
 cfr-doorhanger-send-tab-ok-button = Proba Inviar Scheda
     .accesskey = P
 
@@ -251,12 +251,14 @@ cfr-doorhanger-doh-secondary-button = Disactivar
 
 ## Fission Experiment Message
 
-cfr-doorhanger-fission-body = { -brand-short-name } ha activate un functionalitate experimental: Fission (isolamento sito) pro te. Isolante cata sito in un processo differente, Fission offere un altere strato de securitate pro te e le sitos web que tu visita.
-cfr-doorhanger-fission-header = Isolamento sito
+cfr-doorhanger-fission-body-approved = Tu vita private es importante. { -brand-short-name } ora isola sitos le unes del alteres per medio de un mechanismo "sandbox" (cassa a sablo). Isto rende plus difficile pro le piratas informatic robar contrasignos, numeros de carta de credito e altere datos sensibile.
+cfr-doorhanger-fission-header = Isolamento de sitos
 cfr-doorhanger-fission-primary-button = De accordo
     .accesskey = a
 cfr-doorhanger-fission-secondary-button = Saper plus
     .accesskey = S
+# Deprecated
+cfr-doorhanger-fission-body = { -brand-short-name } ha activate un function experimental pro te: Fission (isolamento de sitos). Isolante cata sito in un processo separate, Fission forni un strato additional de securitate pro te e pro le sitos web que tu visita.
 
 ## What's new: Cookies message
 
@@ -266,6 +268,6 @@ cfr-whatsnew-clear-cookies-image-alt = Illustration cookie blocate
 
 ## What's new: Media controls message
 
-cfr-whatsnew-media-keys-header = Altere controlos de medios
-cfr-whatsnew-media-keys-body = Reproduce e pausa audio o video justo de tu claviero o bonetto, rendente facile a controlar le medios de un altere scheda, programma o mesmo quando tu computator es blocate.
-cfr-whatsnew-media-keys-button = Apprende como
+cfr-whatsnew-media-keys-header = Altere controlos multimedial
+cfr-whatsnew-media-keys-body = Reproduce e pausa audio o video directemente de tu claviero o auriculares, rendente facile controlar le multimedia de un altere scheda o programma, mesmo quando tu computator es blocate. Tu pote etiam passar inter pistas con le claves avante e retro.
+cfr-whatsnew-media-keys-button = Apprender como

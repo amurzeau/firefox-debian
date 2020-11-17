@@ -52,7 +52,7 @@ category-experimental =
 pane-experimental-subtitle = Nastavi s oprezom
 pane-experimental-search-results-header = { -brand-short-name } eksperimenti: Nastavi s oprezom
 pane-experimental-description = Mijenjanje naprednih postavki konfiguracije može utjecati na perfomancu ili sigurnost programa { -brand-short-name }.
-help-button-label = { -brand-short-name } podrška
+help-button-label = Podrška za { -brand-short-name }
 addons-button-label = Proširenja i teme
 focus-search =
     .key = f
@@ -395,7 +395,7 @@ performance-title = Performanca
 performance-use-recommended-settings-checkbox =
     .label = Koristi preporučene postavke performanse
     .accesskey = u
-performance-use-recommended-settings-desc = Ove postavke su skrojene za tvoj hardver i operacijski sustav.
+performance-use-recommended-settings-desc = Ove su postavke prilagođene tvom hardveru i operacijskom sustavu.
 performance-settings-learn-more = Saznaj više
 performance-allow-hw-accel =
     .label = Koristi hardversko ubrzanje kad je dostupno
@@ -428,9 +428,13 @@ browsing-search-on-start-typing =
     .label = Traži tekst već prilikom upisivanja
     .accesskey = k
 browsing-picture-in-picture-toggle-enabled =
-    .label = Aktiviraj video kontrole za slika-u-slici
+    .label = Aktiviraj video-kontrole kod prikaza slike-u-slici
     .accesskey = O
 browsing-picture-in-picture-learn-more = Saznaj više
+browsing-media-control =
+    .label = Upravljaj medijskim sadržajem pomoću tipkovnice, slušalica ili virtualnog sučelja
+    .accesskey = v
+browsing-media-control-learn-more = Saznaj više
 browsing-cfr-recommendations =
     .label = Preporuči dodatke tijekom pregledavanja
     .accesskey = r
@@ -463,7 +467,7 @@ home-restore-defaults =
 # "Firefox" should be treated as a brand and kept in English,
 # while "Home" and "(Default)" can be localized.
 home-mode-choice-default =
-    .label = Početna Firefox stranica (standardno)
+    .label = Firefoxova početna stranica (standardno)
 home-mode-choice-custom =
     .label = Prilagođeni URL-ovi…
 home-mode-choice-blank =
@@ -487,7 +491,7 @@ choose-bookmark =
 
 ## Home Section - Firefox Home Content Customization
 
-home-prefs-content-header = Firefox početni sadržaj
+home-prefs-content-header = Sadržaj Firefoxove početne stranice
 home-prefs-content-description = Odaberi sadržaj koji želiš na početnoj stranici Firefoxa.
 home-prefs-search-header =
     .label = Web pretraga
@@ -798,12 +802,19 @@ forms-master-pw-fips-desc = Promjena lozinke nije uspjela
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Za stvaranje glavne lozinke, upiši svoje podatke za prijavu na Windows. To pomaže zaštiti sigurnost tvojih računa.
+# This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Firefox is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = stvori glavnu lozinku
 # This message can be seen by trying to add a Primary Password.
 primary-password-os-auth-dialog-message-win = Za stvaranje primarne lozinke, unesi svoje podatke za prijavu na Windows. Ovo pomaže u zaštiti tvojih računa.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = stvori glavnu lozinku
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History

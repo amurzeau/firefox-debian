@@ -388,6 +388,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = O código desta extensão foi revisado para garantir a segurança
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = Esta é uma extensão oficial, feita pelos criadores do { -brand-product-name }
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = Esta extensão foi revisada para atender aos nossos padrões de segurança e desempenho.
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -396,6 +402,9 @@ recent-updates-heading = Atualizações recentes
 release-notes-loading = Carregando…
 release-notes-error = Desculpe, houve um erro ao carregar as notas de lançamento.
 addon-permissions-empty = Esta extensão não exige nenhum permissão
+addon-permissions-required = Permissões necessárias para a funcionalidade principal:
+addon-permissions-optional = Permissões opcionais para funcionalidades adicionais:
+addon-permissions-learnmore = Saiba mais sobre permissões
 recommended-extensions-heading = Extensões recomendadas
 recommended-themes-heading = Temas recomendados
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

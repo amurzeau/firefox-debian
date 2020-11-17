@@ -220,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Aquesta vegada, cerca amb:
 # This string won't wrap, so if the translated string is longer,
@@ -285,6 +285,17 @@ identity-passive-loaded = Parts d'aquesta pàgina no són segures (com les imatg
 identity-active-loaded = Heu desactivat la protecció en aquesta pàgina.
 identity-weak-encryption = Aquesta pàgina utilitza xifratge feble.
 identity-insecure-login-forms = Les dades d'inici de sessió que introduïu en aquesta pàgina podrien estar en risc.
+identity-https-only-connection-upgraded = (actualitzat a HTTPS)
+identity-https-only-label = Mode només HTTPS
+identity-https-only-dropdown-on =
+    .label = Activat
+identity-https-only-dropdown-off =
+    .label = Desactivat
+identity-https-only-dropdown-off-temporarily =
+    .label = Desactivat temporalment
+identity-https-only-info-turn-on = Activeu-ho si voleu que el { -brand-short-name } canviï a una connexió segura quan sigui possible.
+identity-https-only-info-turn-off = Si sembla que el lloc no funciona bé, podeu provar de desactivar el mode només HTTPS per tornar-lo a carregar amb HTTP insegur.
+identity-https-only-info-no-upgrade = No s'ha pogut actualitzar la connexió des d'HTTP.
 identity-permissions =
     .value = Permisos
 identity-permissions-reload-hint = Potser cal que actualitzeu la pàgina per aplicar els canvis.
@@ -440,6 +451,17 @@ urlbar-result-action-visit = Visita
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-bookmarks = Cerca en les adreces d'interès
+urlbar-result-action-search-history = Cerca en l'historial
+urlbar-result-action-search-tabs = Cerca en les pestanyes
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Cerca amb { $engine } directament des de la barra d'adreces
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Cerca en { $engine } directament des de la barra d'adreces
 
 ## Full Screen and Pointer Lock UI
 

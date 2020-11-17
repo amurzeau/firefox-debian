@@ -24,7 +24,7 @@ toolbar-context-menu-undo-close-tabs =
             [few] Відновити { $tabCount } закриті вкладки
            *[many] Відновити { $tabCount } закритих вкладок
         }
-    .accesskey = В
+    .accesskey = і
 toolbar-context-menu-manage-extension =
     .label = Керувати розширенням
     .accesskey = К
@@ -52,3 +52,12 @@ toolbar-context-menu-remove-from-toolbar =
 toolbar-context-menu-view-customize-toolbar =
     .label = Пристосування…
     .accesskey = П
+toolbar-context-menu-bookmarks-toolbar-always-show =
+    .label = Завжди
+    .accesskey = З
+toolbar-context-menu-bookmarks-toolbar-never-show =
+    .label = Ніколи
+    .accesskey = Н
+toolbar-context-menu-bookmarks-toolbar-on-new-tab =
+    .label = Лише у новій вкладці
+    .accesskey = й

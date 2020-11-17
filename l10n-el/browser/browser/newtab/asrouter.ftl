@@ -257,10 +257,14 @@ cfr-doorhanger-doh-secondary-button = Απενεργοποίηση
 
 ## Fission Experiment Message
 
+cfr-doorhanger-fission-body-approved = Το απόρρητό σας έχει σημασία. Το { -brand-short-name } πλέον απομονώνει, ή βάζει σε sandbox, κάθε ιστοσελίδα, κάνοντας πιο δύσκολη την πρόσβαση των hackers για υποκλοπή κωδικών πρόσβασης, αριθμών πιστωτικών καρτών και άλλων ευαίσθητων πληροφοριών.
+cfr-doorhanger-fission-header = Απομόνωση ιστοσελίδας
 cfr-doorhanger-fission-primary-button = Το κατάλαβα
     .accesskey = Τ
 cfr-doorhanger-fission-secondary-button = Μάθετε περισσότερα
     .accesskey = Μ
+# Deprecated
+cfr-doorhanger-fission-body = Το { -brand-short-name } έχει ενεργοποιήσει μια πειραματική λειτουργία, το Fission (απομόνωση ιστοσελίδας) για εσάς. Απομονώνοντας την κάθε σελίδα σε ξεχωριστή διεργασία, το Fission παρέχει ένα επιπλέον επίπεδο ασφαλείας για εσάς και τις ιστοσελίδες που επισκέπτεστε.
 
 ## What's new: Cookies message
 

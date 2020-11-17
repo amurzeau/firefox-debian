@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Pisajće mjenje, namakajće wjace: Pytajće z { $engineName } direktnje ze swojeho adresoweho pola.
 urlbar-search-tips-redirect-2 = Započńće swoje pytanje w adresowym polu, zo byšće namjety wot { $engineName } a ze swojeje přehladowanskeje historije widźał.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Wubjerće tute zwjazanje, zo byšće spěšnišo namakał, štož trjebaće.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -290,15 +293,15 @@ identity-active-loaded = Sće škit na tutej stronje znjemóžnił.
 identity-weak-encryption = Tuta strona słabe zaklučowanje wužiwa.
 identity-insecure-login-forms = Přizjewjenja, kotrež so na tutej stronje zapodawaja, móhli wohrožene być.
 identity-https-only-connection-upgraded = (na HTTPS zaktualizowany)
-identity-https-only-label = Modus jenož HTTPS
+identity-https-only-label = Modus Jenož-HTTPS
 identity-https-only-dropdown-on =
     .label = Zapinjeny
 identity-https-only-dropdown-off =
     .label = Wupinjeny
 identity-https-only-dropdown-off-temporarily =
     .label = Nachwilu wupinjeny
-identity-https-only-info-turn-on = Zmóžńće to, jeli chceće, zo { -brand-short-name } na wěsty zwisk aktualizuje, jeli móžno.
-identity-https-only-info-turn-off = Jeli so zda, zo sydło je wobškodźene, chceće snano  modus Jenož-HTTPS znjemóžnić. zo byšće zaso njewěsty HTTP wužiwał.
+identity-https-only-info-turn-on2 = Zmóžńće modus Jenož-HTTPS, jeli chceće, zo { -brand-short-name } zwisk aktualizuje, jeli móžno.
+identity-https-only-info-turn-off2 = Jeli so zda, zo strona je wobškodźena, chceće snano  modus Jenož-HTTPS za tute sydło znjemóžnić. zo byšće zaso njewěsty HTTP wužiwał.
 identity-https-only-info-no-upgrade = Zwisk njeda so z HTTP aktualizować.
 identity-permissions =
     .value = Prawa
@@ -344,6 +347,12 @@ browser-window-restore-down-button =
     .tooltiptext = Pomjeńšić
 browser-window-close-button =
     .tooltiptext = Začinić
+
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Zapołožki importować…
+    .tooltiptext = Zapołožki z druheho wobhladowaka do { -brand-short-name } kopěrować.
 
 ## WebRTC Pop-up notifications
 
@@ -448,16 +457,21 @@ urlbar-result-action-search-in-private = W priwatnym woknje pytać
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Z { $engine } pytać
+urlbar-result-action-sponsored = Sponsorowany
 urlbar-result-action-switch-tab = K rajtarkej přeńć
 urlbar-result-action-visit = Wopytać
-
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
-## In these actions "Search" is a verb, followed by where the search is performed.
-
-urlbar-result-action-search-bookmarks = Zapołožki přepytać
-urlbar-result-action-search-history = Historiju přepytać
-urlbar-result-action-search-tabs = Rajtarki přepytać
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Tłóčće tabulatorowu tastu, zo byšće z { $engine } pytał
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Tłóčće tabulatorowu tastu, zo byšće z { $engine } pytał
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
@@ -466,6 +480,14 @@ urlbar-result-action-tabtosearch-web = Z { $engine } direktnje z adresoweho pola
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Z { $engine } direktnje z adresoweho pola pytać
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Zapołožki přepytać
+urlbar-result-action-search-history = Historiju přepytać
+urlbar-result-action-search-tabs = Rajtarki přepytać
 
 ## Full Screen and Pointer Lock UI
 

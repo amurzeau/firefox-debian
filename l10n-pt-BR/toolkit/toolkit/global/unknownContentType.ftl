@@ -3,5 +3,11 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 unknowncontenttype-handleinternally =
-    .label = Abrir com { -brand-short-name }
+    .label = Abrir no { -brand-short-name }
     .accesskey = c
+unknowncontenttype-settingschange =
+    .value =
+        { PLATFORM() ->
+            [windows] As configurações podem ser alteradas nas opções do { -brand-short-name }.
+           *[other] As configurações podem ser alteradas nas preferências do { -brand-short-name }.
+        }

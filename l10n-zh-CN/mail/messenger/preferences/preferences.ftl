@@ -10,6 +10,8 @@ preferences-title =
             [windows] 选项
            *[other] 首选项
         }
+category-list =
+    .aria-label = 分类
 pane-general-title = 常规
 category-general =
     .tooltiptext = { pane-general-title }
@@ -86,6 +88,7 @@ update-in-progress-ok-button = 放弃
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = 继续
+account-button = 账户设置
 addons-button = 扩展和主题
 
 ## OS Authentication dialog
@@ -424,7 +427,7 @@ font-label =
     .value = 字体：
     .accesskey = n
 font-size-label =
-    .value = 大小：
+    .value = 字号：
     .accesskey = z
 default-colors-label =
     .label = 使用阅读器的默认颜色

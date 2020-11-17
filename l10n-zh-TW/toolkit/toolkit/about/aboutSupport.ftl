@@ -68,6 +68,7 @@ app-basics-service-workers = 註冊的 Service Worker
 app-basics-profiles = 設定檔
 app-basics-launcher-process-status = 啟動器處理程序
 app-basics-multi-process-support = 多程序視窗
+app-basics-fission-support = Fission 視窗
 app-basics-remote-processes-count = 遠端處理程序
 app-basics-enterprise-policies = 企業政策
 app-basics-location-service-key-google = Google Location Service 金鑰
@@ -309,6 +310,20 @@ multi-process-status-6 = 因不支援的文字輸入工具停用
 multi-process-status-7 = 因附加元件停用
 multi-process-status-8 = 強制停用
 multi-process-status-unknown = 未知狀態
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = 由實驗關閉
+fission-status-experiment-treatment = 由實驗開啟
+fission-status-disabled-by-e10s-env = 由環境關閉
+fission-status-enabled-by-env = 由環境開啟
+fission-status-disabled-by-safe-mode = 因安全模式關閉
+fission-status-enabled-by-default = 預設開啟
+fission-status-disabled-by-default = 預設關閉
+fission-status-enabled-by-user-pref = 由使用者開啟
+fission-status-disabled-by-user-pref = 由使用者關閉
+fission-status-disabled-by-e10s-other = 已停用 e10s
 async-pan-zoom = 異步 Pan/Zoom
 apz-none = 無
 wheel-enabled = 已啟用滾輪輸入
@@ -329,3 +344,12 @@ touch-warning = 因為不支援的偏好設定: { $preferenceKey }，已停用�
 policies-inactive = 未使用
 policies-active = 使用中
 policies-error = 錯誤
+
+## Printing section
+
+support-printing-title = 列印
+support-printing-troubleshoot = 疑難排解
+support-printing-clear-settings-button = 清除儲存的列印設定
+support-printing-modified-settings = 更改過的列印設定
+support-printing-prefs-name = 名稱
+support-printing-prefs-value = 值

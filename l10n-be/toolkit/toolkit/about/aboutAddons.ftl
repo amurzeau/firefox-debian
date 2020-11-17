@@ -391,6 +391,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = Код гэтага пашырэння правераны на бяспеку
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = Гэта афіцыйнае пашырэнне, створанае распрацоўшчыкамі { -brand-product-name }
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = Гэта пашырэнне праверана на адпаведнасць нашым стандартам бяспекі і прадукцыйнасці
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -399,6 +405,9 @@ recent-updates-heading = Нядаўнія абнаўленні
 release-notes-loading = Загрузка…
 release-notes-error = Выбачайце, здарылася памылка пры загрузцы заўваг да выпуску.
 addon-permissions-empty = Гэта пашырэнне не патрабуе якіх-небудзь дазволаў
+addon-permissions-required = Неабходныя дазволы для асноўнай функцыянальнасці:
+addon-permissions-optional = Неабавязковыя дазволы для дадатковай функцыянальнасці:
+addon-permissions-learnmore = Даведацца больш пра дазволы
 recommended-extensions-heading = Рэкамендаваныя пашырэнні
 recommended-themes-heading = Рэкамендаваныя тэмы
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

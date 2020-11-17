@@ -65,6 +65,7 @@ app-basics-service-workers = 등록된 Service Worker
 app-basics-profiles = 프로필
 app-basics-launcher-process-status = 런처 프로세스
 app-basics-multi-process-support = 다중 프로세스 창
+app-basics-fission-support = Fission 창
 app-basics-remote-processes-count = 원격 프로세스
 app-basics-enterprise-policies = 엔터프라이즈 정책
 app-basics-location-service-key-google = Google 위치 서비스 키
@@ -302,10 +303,24 @@ multi-process-status-0 = 사용자에 의해 활성화됨
 multi-process-status-1 = 기본값에 의해 활성화됨
 multi-process-status-2 = 비활성화됨
 multi-process-status-4 = 접근성 도구에 의해 비활성화됨
-multi-process-status-6 = 지원되지 않는 텍스트 입력으로 인한 비활성화됨
-multi-process-status-7 = 부가 기능에 의해서 비활성화됨
+multi-process-status-6 = 지원되지 않는 텍스트 입력에 의해 비활성화됨
+multi-process-status-7 = 부가 기능에 의해 비활성화됨
 multi-process-status-8 = 강제로 비활성화됨
 multi-process-status-unknown = 알 수 없는 상태
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = 실험에 의해 비활성화됨
+fission-status-experiment-treatment = 실험에 의해 활성화됨
+fission-status-disabled-by-e10s-env = 환경에 의해 비활성화됨
+fission-status-enabled-by-env = 환경에 의해 활성화됨
+fission-status-disabled-by-safe-mode = 안전 모드에 의해 비활성화됨
+fission-status-enabled-by-default = 기본값에 의해 활성화됨
+fission-status-disabled-by-default = 기본값에 의해 비활성화됨
+fission-status-enabled-by-user-pref = 사용자에 의해 활성화됨
+fission-status-disabled-by-user-pref = 사용자에 의해 비활성화됨
+fission-status-disabled-by-e10s-other = E10s 비활성화됨
 async-pan-zoom = 비동기 팬 및 확대/축소
 apz-none = 없음
 wheel-enabled = 휠 입력 활성화됨
@@ -326,3 +341,12 @@ touch-warning = 다음의 지원되지 않는 설정때문에 비동기 터치 �
 policies-inactive = 비활성화
 policies-active = 활성화
 policies-error = 오류
+
+## Printing section
+
+support-printing-title = 인쇄
+support-printing-troubleshoot = 문제 해결
+support-printing-clear-settings-button = 저장된 인쇄 설정 지우기
+support-printing-modified-settings = 수정된 인쇄 설정
+support-printing-prefs-name = 이름
+support-printing-prefs-value = 값

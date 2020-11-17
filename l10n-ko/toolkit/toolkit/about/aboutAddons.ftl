@@ -378,6 +378,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = 이 확장 기능은 안전을 위해 코드 검토되었습니다
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = 이 확장 기능은 { -brand-product-name }의 제작자가 만든 공식 확장 기능입니다
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = 이 확장 기능은 보안 및 성능 표준을 충족하는 것으로 검토되었습니다
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -386,6 +392,9 @@ recent-updates-heading = 최근 업데이트
 release-notes-loading = 로드 중…
 release-notes-error = 죄송합니다. 출시 정보를 불러오는 중에 오류가 발생했습니다.
 addon-permissions-empty = 이 확장 기능은 권한이 필요하지 않습니다.
+addon-permissions-required = 핵심 기능에 필요한 권한:
+addon-permissions-optional = 추가 기능에 선택적 권한:
+addon-permissions-learnmore = 권한에 대해 더 알아보기
 recommended-extensions-heading = 추천 확장 기능
 recommended-themes-heading = 추천 테마
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

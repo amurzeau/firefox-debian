@@ -47,11 +47,6 @@ experimental-features-web-api-beforeinput-description = Den globale event <a dat
 experimental-features-css-constructable-stylesheets =
     .label = CSS: Constructable Stylesheets
 experimental-features-css-constructable-stylesheets-description = Tilføjelsen af en constructor til <a data-l10n-name="mdn-cssstylesheet">CSSStyleSheet</a>-brugerfladen samt en række relaterede ændringer gør det muligt at oprette nye stylesheets direkte uden at tilføje dem til HTML'en. Det gør det meget nemmere at oprette genbrugelige stylesheets til brug med <a data-l10n-name="mdn-shadowdom">Shadow DOM</a>. Se flere detaljer på <a data-l10n-name="bugzilla">bug 1520690</a>.
-# The title of the experiment should be kept in English as it may be referenced
-# by various online articles and is technical in nature.
-experimental-features-media-session-api =
-    .label = Web API: Media Session API
-experimental-features-media-session-api-description = Implementeringen af Media Session API i { -brand-short-name } er i øjeblikket eksperimentel. API'en bruges til at tilpasse håndteringen af medie-relaterede notifikationer, til at håndtere events og data, der er nyttige ved præsentation af brugerflader til at håndtere afspilning af medier, samt til at få fat i metadata fra mediefiler. Se flere detaljer på <a data-l10n-name="bugzilla">bug 1112032</a>.
 experimental-features-devtools-color-scheme-simulation =
     .label = Udviklerværktøj: Simulering af farveskemaer
 experimental-features-devtools-color-scheme-simulation-description = Giver dig mulighed for at simulere forskellige farveskemaer, så du kan teste <a data-l10n-name="mdn-preferscolorscheme">@prefers-color-scheme</a> media queries.  Ved at bruge denne media query kan dit stylesheet reagere på, om brugeren foretrækker en lys eller en mørk brugerflade. Du kan bruge funktionen til at teste din kode uden at ændre indstillingerne i din browser (eller dit operativsystem, hvis browseren følger operativsystemets farveskema). Se flere detaljer på <a data-l10n-name="bugzilla1">bug 1550804</a> og <a data-l10n-name="bugzilla2">bug 1137699</a>.
@@ -91,3 +86,15 @@ experimental-features-devtools-serviceworker-debugger-support-description = Akti
 experimental-features-graphics-desktop-zooming =
     .label = Grafik: Jævn knibe-zoom
 experimental-features-graphics-desktop-zooming-description = Understøtter jævn knibe-zoom på touchskærme og præcisions-touchpads.
+# WebRTC global mute toggle controls
+experimental-features-webrtc-global-mute-toggles =
+    .label = Slå lyd fra/til globalt for WebRTC
+experimental-features-webrtc-global-mute-toggles-description = Føj knapper til den globale dele-indikator for WebRTC, sådan at brugeren kan slå lyden fra på deres mikrofon og kamera-feeds overalt.
+# JS JIT Warp project
+experimental-features-js-warp =
+    .label = JavaScript JIT: Warp
+experimental-features-js-warp-description = Aktiver Warp, et projekt hvis formål er at forbedre ydelse og hukommelsesforbrug ved brug af JavaScript.
+# Fission is the name of the feature and should not be translated.
+experimental-features-fission =
+    .label = Fission (isolation af websteder)
+experimental-features-fission-description = Fission (isolation af websteder) er en eksperimentel funktion i { -brand-short-name }, der giver et ekstra lag fa beskyttelse mod sikkerhedsfejl. Ved at isolere hvert websted i en separat proces gør Fission det sværere for ondsindede websteder at få adgang til information fra andre sider, du besøger. Fission udgør en grundlæggende ændring i { -brand-short-name }' arkitektur - og vi sætter stor pris på, at du vil hjælpe os med at teste funktionen og indrapportere eventuelle fejl, du støder på. Læs mere på <a data-l10n-name="wiki">wiki'en</a>.

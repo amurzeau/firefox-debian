@@ -65,6 +65,7 @@ app-basics-service-workers = Tanfa Workers iţwaklesen
 app-basics-profiles = Imeɣna
 app-basics-launcher-process-status = Akala n tnekra
 app-basics-multi-process-support = Isfuyla agetakala
+app-basics-fission-support = Isfuyla n tfersit
 app-basics-remote-processes-count = Ikalan inmeggagen
 app-basics-enterprise-policies = Tasertit n tkebbanit
 app-basics-location-service-key-google = Tasarutt n umeẓlu n wadi Google
@@ -326,6 +327,20 @@ multi-process-status-6 = Arurmid s weḍris anekcam ur iţusefraken ara
 multi-process-status-7 = Izegrar kkesn-as armad
 multi-process-status-8 = Arurmid s tedusi
 multi-process-status-unknown = Addad arussin
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Yettwasens s termit
+fission-status-experiment-treatment = Yermed n termit
+fission-status-disabled-by-e10s-env = Yettwasens s twennaḍt
+fission-status-enabled-by-env = yetturmed s twennaḍt
+fission-status-disabled-by-safe-mode = Yettwasens s uskar aɣellsan
+fission-status-enabled-by-default = Yetturmed s umezwer
+fission-status-disabled-by-default = Yensa s wudem amezwer
+fission-status-enabled-by-user-pref = Yetturmed sɣur useqdac
+fission-status-disabled-by-user-pref = Yensa sɣur useqdac
+fission-status-disabled-by-e10s-other = E10s yettwasens
 async-pan-zoom = Asemɣeṛ/Asemẓi aramtawa
 apz-none = ulac
 wheel-enabled = anekcum n tjaṛaṛt yermed
@@ -346,3 +361,12 @@ touch-warning = anekcum amennalan yensa ɣef sebba  n usmenyaf ur iţusefraken a
 policies-inactive = Insa
 policies-active = Urmid
 policies-error = Tuccḍa
+
+## Printing section
+
+support-printing-title = Asiggez
+support-printing-troubleshoot = Asellek
+support-printing-clear-settings-button = Sfeḍ iɣewwaren n usiggez yettuskelsen
+support-printing-modified-settings = Iɣewwaren n usiggez yettusneflen
+support-printing-prefs-name = Isem
+support-printing-prefs-value = Azal

@@ -390,6 +390,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = A kiegészítő biztonsági okokból kódfelülvizsgálaton esett át
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = Ez egy hivatalos kiegészítő, melyet a { -brand-product-name } készítői fejlesztettek
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = Megvizsgáltuk ezt a kiegészítőt, és megfelelt a biztonsági és a teljesítménybeli követelményeinknek.
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -398,6 +404,9 @@ recent-updates-heading = Legutóbbi frissítések
 release-notes-loading = Betöltés…
 release-notes-error = Sajnáljuk, de hiba történt a kiadási megjegyzések betöltésekor.
 addon-permissions-empty = Ez a kiegészítő nem igényel semmilyen engedélyt
+addon-permissions-required = Az alapvető funkciókhoz szükséges engedélyek:
+addon-permissions-optional = A további funkciókhoz szükséges engedélyek:
+addon-permissions-learnmore = További tudnivalók az engedélyekről
 recommended-extensions-heading = Ajánlott kiegészítők
 recommended-themes-heading = Ajánlott témák
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

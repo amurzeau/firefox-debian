@@ -387,6 +387,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = Il code da questa extensiun è vegnì controllà areguard la segirezza
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = Quai è ina extensiun uffiziala sviluppada dals creaders da { -brand-product-name }
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = Questa extensiun è vegnida controllada per garantir noss standard da segirezza e performanza
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -395,6 +401,9 @@ recent-updates-heading = Ultimas actualisaziuns
 release-notes-loading = Chargiar…
 release-notes-error = Perstgisa, ma cun chargiar las remartgas davart la versiun è succedida ina errur.
 addon-permissions-empty = Questa extensiun na pretenda naginas autorisaziuns
+addon-permissions-required = Permissiuns necessarias per las funcziunalitads centralas:
+addon-permissions-optional = Permissiuns facultativas per funcziunalitads supplementaras:
+addon-permissions-learnmore = Vegnir a savair dapli davart permissiuns
 recommended-extensions-heading = Extensiuns recumandadas
 recommended-themes-heading = Designs recumandads
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

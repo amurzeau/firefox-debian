@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = מהיום מקלידים פחות ומוצאים יותר: אפשר לחפש עם { $engineName } ישירות משורת הכתובת שלך.
 urlbar-search-tips-redirect-2 = ניתן להתחיל לחפש בשורת הכתובת כדי לצפות בהצעות מ־{ $engineName } ובהיסטוריית הגלישה שלך.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = ניתן לבחור בקיצור הדרך הזה כדי למצוא את מה שמחפשים מהר יותר.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -293,8 +296,8 @@ identity-https-only-dropdown-off =
     .label = כבוי
 identity-https-only-dropdown-off-temporarily =
     .label = כבוי באופן זמני
-identity-https-only-info-turn-on = יש להפעיל אם ברצונך ש־{ -brand-short-name } ישדרג לחיבור מאובטח כשהדבר אפשרי.
-identity-https-only-info-turn-off = אם נראה שהאתר שבור, באפשרותך לכבות את מצב ה־HTTPS בלבד כדי לטעון מחדש באמצעות HTTP לא מאובטח.
+identity-https-only-info-turn-on2 = יש להפעיל את מצב HTTPS בלבד אם ברצונך ש־{ -brand-short-name } ישדרג את החיבור כשהדבר אפשרי.
+identity-https-only-info-turn-off2 = אם נראה שהדף שבור, באפשרותך לכבות את מצב ה־HTTPS בלבד עבור אתר זה כדי לטעון מחדש באמצעות HTTP לא מאובטח.
 identity-https-only-info-no-upgrade = לא ניתן לשדרג את החיבור מ־HTTP.
 identity-permissions =
     .value = הרשאות
@@ -340,6 +343,12 @@ browser-window-restore-down-button =
     .tooltiptext = שחזור כלפי מטה
 browser-window-close-button =
     .tooltiptext = סגירה
+
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = ייבוא סימניות…
+    .tooltiptext = העתקת סימניות מדפדפן אחר אל תוך { -brand-short-name }.
 
 ## WebRTC Pop-up notifications
 
@@ -443,16 +452,21 @@ urlbar-result-action-search-in-private = חיפוש בחלון פרטי
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = חיפוש באמצעות { $engine }
+urlbar-result-action-sponsored = ממומן
 urlbar-result-action-switch-tab = מעבר ללשונית
 urlbar-result-action-visit = ביקור
-
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
-## In these actions "Search" is a verb, followed by where the search is performed.
-
-urlbar-result-action-search-bookmarks = חיפוש בסימניות
-urlbar-result-action-search-history = חיפוש בהיסטוריה
-urlbar-result-action-search-tabs = חיפוש לשוניות
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = יש ללחוץ על Tab כדי לחפש באמצעות { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = יש ללחוץ על Tab כדי לחפש ב־{ $engine }
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
@@ -461,6 +475,14 @@ urlbar-result-action-tabtosearch-web = חיפוש באמצעות { $engine } י�
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = חיפוש ב־{ $engine } ישירות משורת הכתובת
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = חיפוש בסימניות
+urlbar-result-action-search-history = חיפוש בהיסטוריה
+urlbar-result-action-search-tabs = חיפוש לשוניות
 
 ## Full Screen and Pointer Lock UI
 

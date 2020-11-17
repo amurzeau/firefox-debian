@@ -65,6 +65,7 @@ app-basics-service-workers = Regisztrált Service Workerek
 app-basics-profiles = Profilok
 app-basics-launcher-process-status = Indító folyamat
 app-basics-multi-process-support = Több folyamatú ablakok
+app-basics-fission-support = Fission-ablakok
 app-basics-remote-processes-count = Távoli folyamatok
 app-basics-enterprise-policies = Vállalati házirendek
 app-basics-location-service-key-google = Google helymeghatározási szolgáltatás kulcs
@@ -326,6 +327,20 @@ multi-process-status-6 = A nem támogatott szövegbevitel letiltotta
 multi-process-status-7 = Kiegészítők letiltották
 multi-process-status-8 = Kikapcsolása kényszerítve
 multi-process-status-unknown = Ismeretlen állapot
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Kísérlet által letiltva
+fission-status-experiment-treatment = Kísérlet által engedélyezve
+fission-status-disabled-by-e10s-env = Környezet által letiltva
+fission-status-enabled-by-env = Környezet által engedélyezve
+fission-status-disabled-by-safe-mode = Csökkentett mód miatt letiltva
+fission-status-enabled-by-default = Alapértelmezésben engedélyezve
+fission-status-disabled-by-default = Alapértelmezésben tiltva
+fission-status-enabled-by-user-pref = A felhasználó által engedélyezve
+fission-status-disabled-by-user-pref = A felhasználó által letiltva
+fission-status-disabled-by-e10s-other = E10s letiltva
 async-pan-zoom = Aszinkron görgetés/nagyítás
 apz-none = nincs
 wheel-enabled = kerékbemenet engedélyezve
@@ -346,3 +361,12 @@ touch-warning = aszinkron érintőbemenet letiltva egy nem támogatott beállít
 policies-inactive = Inaktív
 policies-active = Aktív
 policies-error = Hiba
+
+## Printing section
+
+support-printing-title = Nyomtatás
+support-printing-troubleshoot = Hibaelhárítás
+support-printing-clear-settings-button = Mentett nyomtatási beállítások törlése
+support-printing-modified-settings = Módosított nyomtatási beállítások
+support-printing-prefs-name = Név
+support-printing-prefs-value = Érték

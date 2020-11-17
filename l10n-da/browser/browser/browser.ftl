@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Tast mindre, find mere: Søg med { $engineName } direkte i adressefeltet.
 urlbar-search-tips-redirect-2 = Start din søgning i adressefeltet for at få forslag fra { $engineName } og din browserhistorik.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Vælg denne genvej for hurtigere at finde det, du leder efter.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -285,6 +288,17 @@ identity-passive-loaded = Dele af denne side (såsom billeder) er ikke sikre.
 identity-active-loaded = Du har slået beskyttelse fra på denne side.
 identity-weak-encryption = Denne side bruger svag kryptering.
 identity-insecure-login-forms = Logins foretaget på denne side kan blive kompromitteret.
+identity-https-only-connection-upgraded = (opgraderet til HTTPS)
+identity-https-only-label = Tilstanden Kun-HTTPS
+identity-https-only-dropdown-on =
+    .label = Til
+identity-https-only-dropdown-off =
+    .label = Fra
+identity-https-only-dropdown-off-temporarily =
+    .label = Midlertidigt fra
+identity-https-only-info-turn-on2 = Slå tilstanden kun-HTTPS til for dette websted, hvis du vil have { -brand-short-name } til at opgradere forbindelsen, når det er muligt.
+identity-https-only-info-turn-off2 = Hvis denne side ikke fungerer korrekt, kan du prøve at slå tilstanden kun-HTTPS fra for dette websted for at genindlæse den ved hjælp af usikker HTTP.
+identity-https-only-info-no-upgrade = Kunne ikke opgradere forbindelsen fra HTTP.
 identity-permissions =
     .value = Tilladelser
 identity-permissions-reload-hint = Du skal muligvis genindlæse siden, før at ændringerne slår igennem.
@@ -329,6 +343,12 @@ browser-window-restore-down-button =
     .tooltiptext = Gendan fra maksimeret
 browser-window-close-button =
     .tooltiptext = Luk
+
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Importer bogmærker…
+    .tooltiptext = Kopier bogmærker fra andre browsere til { -brand-short-name }.
 
 ## WebRTC Pop-up notifications
 
@@ -433,16 +453,21 @@ urlbar-result-action-search-in-private = Søg i et privat vindue
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Søg med { $engine }
+urlbar-result-action-sponsored = Sponsoreret
 urlbar-result-action-switch-tab = Skift til faneblad
 urlbar-result-action-visit = Besøg
-
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
-## In these actions "Search" is a verb, followed by where the search is performed.
-
-urlbar-result-action-search-bookmarks = Søg i bogmærker
-urlbar-result-action-search-history = Søg i historik
-urlbar-result-action-search-tabs = Søg i faneblade
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Tryk på Tab for at søge med { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Tryk på Tab for at søge på { $engine }
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
@@ -451,6 +476,14 @@ urlbar-result-action-tabtosearch-web = Søg med { $engine } direkte fra adressef
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Søg med { $engine } direkte fra adressefeltet
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Søg i bogmærker
+urlbar-result-action-search-history = Søg i historik
+urlbar-result-action-search-tabs = Søg i faneblade
 
 ## Full Screen and Pointer Lock UI
 

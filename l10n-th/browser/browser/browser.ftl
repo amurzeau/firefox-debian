@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -285,6 +285,9 @@ identity-https-only-dropdown-off =
     .label = ปิด
 identity-https-only-dropdown-off-temporarily =
     .label = ปิดชั่วคราว
+identity-https-only-info-turn-on2 = เปิดโหมด HTTPS-Only หากคุณต้องการให้ { -brand-short-name } อัปเกรดการเชื่อมต่อเมื่อเป็นไปได้
+identity-https-only-info-turn-off2 = หากหน้าดูเหมือนจะพัง คุณอาจต้องปิดโหมด HTTPS-Only สำหรับไซต์นี้เพื่อโหลดใหม่โดยใช้ HTTP ที่ไม่ปลอดภัย
+identity-https-only-info-no-upgrade = ไม่สามารถอัปเกรดการเชื่อมต่อจาก HTTP ได้
 identity-permissions =
     .value = สิทธิอนุญาต
 identity-permissions-reload-hint = คุณอาจจำเป็นต้องโหลดหน้าใหม่เพื่อให้การเปลี่ยนแปลงมีผล
@@ -329,6 +332,12 @@ browser-window-restore-down-button =
     .tooltiptext = คืนค่าลงล่าง
 browser-window-close-button =
     .tooltiptext = ปิด
+
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = นำเข้าที่คั่นหน้า…
+    .tooltiptext = คัดลอกที่คั่นหน้าจากเบราว์เซอร์อื่นไปยัง { -brand-short-name }
 
 ## WebRTC Pop-up notifications
 
@@ -400,7 +409,7 @@ urlbar-placeholder-search-mode-other-tabs =
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
-    .placeholder = ค้นหาด้วย { $name } หรือใส่ที่อยู่
+    .placeholder = ค้นหาด้วย { $name } หรือป้อนที่อยู่
 urlbar-remote-control-notification-anchor =
     .tooltiptext = เบราว์เซอร์อยู่ภายใต้การควบคุมระยะไกล
 urlbar-permissions-granted =
@@ -433,16 +442,21 @@ urlbar-result-action-search-in-private = ค้นหาในหน้าต่
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = ค้นหาด้วย { $engine }
+urlbar-result-action-sponsored = ได้รับการสนับสนุน
 urlbar-result-action-switch-tab = สลับไปยังแท็บ
 urlbar-result-action-visit = เยี่ยมชม
-
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
-## In these actions "Search" is a verb, followed by where the search is performed.
-
-urlbar-result-action-search-bookmarks = ค้นหาที่คั่นหน้า
-urlbar-result-action-search-history = ค้นหาประวัติ
-urlbar-result-action-search-tabs = ค้นหาแท็บ
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = กด Tab เพื่อค้นหาด้วย { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = กด Tab เพื่อค้นหา { $engine }
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
@@ -451,6 +465,14 @@ urlbar-result-action-tabtosearch-web = ค้นหาด้วย { $engine } �
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = ค้นหา { $engine } โดยตรงจากแถบที่อยู่
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = ค้นหาที่คั่นหน้า
+urlbar-result-action-search-history = ค้นหาประวัติ
+urlbar-result-action-search-tabs = ค้นหาแท็บ
 
 ## Full Screen and Pointer Lock UI
 

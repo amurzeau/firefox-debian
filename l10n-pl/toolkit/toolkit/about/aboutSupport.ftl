@@ -69,6 +69,7 @@ app-basics-service-workers = Zarejestrowane wątki usługowe
 app-basics-profiles = Profile
 app-basics-launcher-process-status = Proces uruchamiający
 app-basics-multi-process-support = Okna wieloprocesowe
+app-basics-fission-support = Okna Fission
 app-basics-remote-processes-count = Zdalne procesy
 app-basics-enterprise-policies = Zasady organizacji
 app-basics-location-service-key-google = Klucz usługi lokalizacji Google
@@ -87,7 +88,7 @@ environment-variables-value = Wartość
 experimental-features-title = Funkcje eksperymentalne
 experimental-features-name = Nazwa
 experimental-features-value = Wartość
-modified-key-prefs-title = Ważne zmodyfikowane ustawienia
+modified-key-prefs-title = Ważne zmienione ustawienia
 modified-prefs-name = Nazwa
 modified-prefs-value = Wartość
 user-js-title = Preferencje user.js
@@ -335,6 +336,20 @@ multi-process-status-6 = wyłączone ze względu na nieobsługiwaną metodę wpr
 multi-process-status-7 = wyłączone przez dodatki
 multi-process-status-8 = wymuszone wyłączenie
 multi-process-status-unknown = nieznany stan
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = wyłączone przez eksperyment
+fission-status-experiment-treatment = włączone przez eksperyment
+fission-status-disabled-by-e10s-env = wyłączone przez środowisko
+fission-status-enabled-by-env = włączone przez środowisko
+fission-status-disabled-by-safe-mode = wyłączone przez tryb awaryjny
+fission-status-enabled-by-default = włączone domyślnie
+fission-status-disabled-by-default = wyłączone domyślnie
+fission-status-enabled-by-user-pref = włączone przez użytkownika
+fission-status-disabled-by-user-pref = wyłączone przez użytkownika
+fission-status-disabled-by-e10s-other = e10s jest wyłączone
 async-pan-zoom = Asynchroniczne przewijanie/powiększanie
 apz-none = brak
 wheel-enabled = kółko
@@ -355,3 +370,12 @@ touch-warning = Asynchroniczne przewijanie/powiększanie za pomocą dotyku wył�
 policies-inactive = Nieaktywne
 policies-active = Aktywne
 policies-error = Błąd
+
+## Printing section
+
+support-printing-title = Drukowanie
+support-printing-troubleshoot = Rozwiązywanie problemów
+support-printing-clear-settings-button = Wyczyść zachowane ustawienia drukowania
+support-printing-modified-settings = Zmienione ustawienia drukowania
+support-printing-prefs-name = Nazwa
+support-printing-prefs-value = Wartość

@@ -92,10 +92,10 @@ detail-private-browsing-label = Execution in fenestras private
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = Non permittite in fenestras private
-detail-private-disallowed-description2 = Iste extension non flue durante le navigation anonyme. <a data-l10n-name="learn-more">Saper plus</a>.
+detail-private-disallowed-description2 = Iste extension non se executa durante le navigation private. <a data-l10n-name="learn-more">Saper plus</a>.
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Require accesso a fenestras private
-detail-private-required-description2 = Iste extension ha accesso a tu activitates in rete durante le navigation anonyme. <a data-l10n-name="learn-more">Saper plus</a>.
+detail-private-required-description2 = Iste extension ha accesso a tu activitates in rete durante le navigation private. <a data-l10n-name="learn-more">Saper plus</a>.
 detail-private-browsing-on =
     .label = Permitter
     .tooltiptext = Activar in navigation private
@@ -374,7 +374,7 @@ addon-badge-line =
     .title = Iste extension ha essite create per le autores de { -brand-product-name }
     .aria-label = { addon-badge-line.title }
 addon-badge-verified =
-    .title = Iste extension ha subite le revision del codification pro securitate
+    .title = Le codice de iste extension ha essite revidite pro securitate
     .aria-label = { addon-badge-verified.title }
 
 ##
@@ -384,6 +384,9 @@ recent-updates-heading = Actualisationes recente
 release-notes-loading = Cargamento…
 release-notes-error = Un error ha occurrite durante le cargamento del notas de version.
 addon-permissions-empty = Iste extension non require alcun permission
+addon-permissions-required = Permissiones necessari pro functionalitate essential:
+addon-permissions-optional = Permissiones facultative pro functionalitate additional:
+addon-permissions-learnmore = Saper plus sur le permissiones
 recommended-extensions-heading = Extensiones recommendate
 recommended-themes-heading = Themas recommendate
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

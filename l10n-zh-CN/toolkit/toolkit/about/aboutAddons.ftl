@@ -376,6 +376,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = 此扩展的代码已通过安全审查
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = 这是由 { -brand-product-name } 开发商构建的官方扩展
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = 此扩展已通过审核，符合我们的安全和性能标准
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -384,6 +390,9 @@ recent-updates-heading = 最近更新
 release-notes-loading = 正在载入…
 release-notes-error = 抱歉，载入发行说明时出错。
 addon-permissions-empty = 此扩展未要求任何权限
+addon-permissions-required = 核心功能所需的权限：
+addon-permissions-optional = 附加功能的可选权限：
+addon-permissions-learnmore = 详细了解“权限”
 recommended-extensions-heading = 推荐扩展
 recommended-themes-heading = 推荐主题
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

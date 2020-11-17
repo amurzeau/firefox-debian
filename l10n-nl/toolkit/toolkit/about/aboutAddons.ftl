@@ -392,6 +392,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = De code van deze extensie is voor uw veiligheid beoordeeld
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = Dit is een officiële extensie, gebouwd door de makers van { -brand-product-name }
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = Deze extensie is beoordeeld en voldoet aan onze normen voor beveiliging en prestaties
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -400,6 +406,9 @@ recent-updates-heading = Recente updates
 release-notes-loading = Laden…
 release-notes-error = Sorry, maar er is een fout opgetreden bij het laden van de uitgaveopmerkingen.
 addon-permissions-empty = Voor deze extensie zijn geen toestemmingen vereist
+addon-permissions-required = Vereiste toestemmingen voor kernfunctionaliteit:
+addon-permissions-optional = Optionele toestemmingen voor extra functionaliteit:
+addon-permissions-learnmore = Meer info over toestemmingen
 recommended-extensions-heading = Aanbevolen extensies
 recommended-themes-heading = Aanbevolen thema’s
 # A recommendation for the Firefox Color theme shown at the bottom of the theme

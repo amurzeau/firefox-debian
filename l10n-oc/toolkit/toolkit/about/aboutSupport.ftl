@@ -65,6 +65,7 @@ app-basics-service-workers = Servici Workers enregistrats
 app-basics-profiles = Perfils
 app-basics-launcher-process-status = Processús d’aviada
 app-basics-multi-process-support = Fenèstras multiprocessus
+app-basics-fission-support = Fenèstras Fission
 app-basics-remote-processes-count = Processús distants
 app-basics-enterprise-policies = Estrategias d’entrepresa
 app-basics-location-service-key-google = Clau del servici de localizacion de Google
@@ -326,6 +327,20 @@ multi-process-status-6 = Desactivat per un biais de sasida non pres en carga
 multi-process-status-7 = Desactivat per de moduls complementaris
 multi-process-status-8 = Desactivat per forma forçada
 multi-process-status-unknown = Estatut desconegut
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Desactivada a causa d’experimentacions
+fission-status-experiment-treatment = Activada a causa d’experimentacions
+fission-status-disabled-by-e10s-env = Desactivada a causa de l’environament
+fission-status-enabled-by-env = Activada a causa de l’environament
+fission-status-disabled-by-safe-mode = Desactivada a causa del mòde segur
+fission-status-enabled-by-default = Activada per defaut
+fission-status-disabled-by-default = Desactivada per defaut
+fission-status-enabled-by-user-pref = Activada per l’utilizaire
+fission-status-disabled-by-user-pref = Desactivada per l’utilizaire
+fission-status-disabled-by-e10s-other = E10s desactivat
 async-pan-zoom = Zoom/Panoramic asincròns
 apz-none = pas cap
 wheel-enabled = entrada rodeta activada
@@ -346,3 +361,12 @@ touch-warning = entrada tactila asincròna desactivada en rason d'una preferénc
 policies-inactive = Inactivas
 policies-active = Activas
 policies-error = Error
+
+## Printing section
+
+support-printing-title = Impression
+support-printing-troubleshoot = Resolucion de problèmas
+support-printing-clear-settings-button = Escafar los paramètres d’impression enregistrats
+support-printing-modified-settings = Paramètres d’impression modificats
+support-printing-prefs-name = Nom
+support-printing-prefs-value = Valor

@@ -65,6 +65,7 @@ app-basics-service-workers = Kayıtlı Service Worker'lar
 app-basics-profiles = Profiller
 app-basics-launcher-process-status = Başlatıcı işlemi
 app-basics-multi-process-support = Çok işlemli pencereler
+app-basics-fission-support = Fission pencereleri
 app-basics-remote-processes-count = Uzak işlemler
 app-basics-enterprise-policies = Kurumsal ilkeler
 app-basics-location-service-key-google = Google Konum Hizmeti anahtarı
@@ -326,6 +327,20 @@ multi-process-status-6 = Desteklenmeyen metin girdisi tarafından devre dışı 
 multi-process-status-7 = Eklentiler tarafından devre dışı bırakıldı
 multi-process-status-8 = Zorla devre dışı bırakıldı
 multi-process-status-unknown = Bilinmeyen durum
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Deney tarafından kapatıldı
+fission-status-experiment-treatment = Deney tarafından açıldı
+fission-status-disabled-by-e10s-env = Ortam tarafından kapatıldı
+fission-status-enabled-by-env = Ortam tarafından açıldı
+fission-status-disabled-by-safe-mode = Güvenli mod tarafından kapatıldı
+fission-status-enabled-by-default = Varsayılan olarak açık
+fission-status-disabled-by-default = varsayılan olarak kapalı
+fission-status-enabled-by-user-pref = kullanıcı tarafından açıldı
+fission-status-disabled-by-user-pref = Kullanıcı tarafından kapatıldı
+fission-status-disabled-by-e10s-other = E10s devre dışı
 async-pan-zoom = Asenkron kaydır/yakınlaştır
 apz-none = yok
 wheel-enabled = tekerlek girdisi etkin
@@ -346,3 +361,12 @@ touch-warning = desteklenmeyen tercih nedeniyle asenkron dokunma girdisi devre d
 policies-inactive = Pasif
 policies-active = Aktif
 policies-error = Hata
+
+## Printing section
+
+support-printing-title = Yazdırma
+support-printing-troubleshoot = Sorun giderme
+support-printing-clear-settings-button = Kayıtlı yazdırma ayarlarını temizle
+support-printing-modified-settings = Değiştirilmiş yazdırma ayarları
+support-printing-prefs-name = Ad
+support-printing-prefs-value = Değer

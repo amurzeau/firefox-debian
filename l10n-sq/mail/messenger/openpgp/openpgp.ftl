@@ -171,6 +171,7 @@ openpgp-key-details-structure-tab =
     .label = Strukturë
 openpgp-key-details-uid-certified-col =
     .label = ID Përdoruesi / Certifikuar nga
+openpgp-key-details-user-id2-label = Pronar i Hamendshëm i Kyçit
 openpgp-key-details-id-label =
     .label = ID
 openpgp-key-details-key-type-label = Lloj
@@ -192,6 +193,7 @@ openpgp-key-details-fingerprint-label = Shenja gishtash
 openpgp-key-details-sel-action =
     .label = Përzgjidhni veprim…
     .accesskey = P
+openpgp-key-details-also-known-label = Identitete Alternative të Hamendshme të të Zotit të Kyçit:
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = Mbylle
 openpgp-acceptance-label =
@@ -283,6 +285,7 @@ key-expired-date = Kyçi skadoi më { $keyExpiry }
 key-expired-simple = Kyçi ka skaduar
 key-revoked-simple = Kyçi u shfuqizua
 key-do-you-accept = E pranoni këtë kyç për verifikim nënshkrimesh dixhitale dhe për fshehtëzim mesazhesh?
+key-accept-warning = Shmangni pranimin e një kyçi që s’duket normal. Përdorni një kanal komunikimi tjetër nga email-i që të verifikoni shenjat e gishtave të kyçit të korrespondentit tuaj.
 # Strings enigmailMsgComposeOverlay.js
 cannot-use-own-key-because = S’arrihet të dërgohet mesazhi, ngaqë ka një problem me kyçin tuaj personal. { $problem }
 cannot-encrypt-because-missing = S’arrihet të dërgohet ky mesazh me fshehtëzim skaj-më-skaj, ngaqë ka probleme me kyçet e marrësve vijues: { $problem }
@@ -448,13 +451,20 @@ revoke-key-in-use-description = S’arrihet të bëhet! Kyçi që përzgjodhët 
 key-error-key-spec-not-found = Për adresën email '{ $keySpec }' s’gjendet dot përputhje me ndonjë kyç në vargun tuaj të kyçeve.
 key-error-key-id-not-found = ID-ja e kyçit të formësuar '{ $keySpec }' s’mund të gjendet te vargu juaj i kyçeve.
 key-error-not-accepted-as-personal = S’keni ripohuar se kyçi me ID-në '{ $keySpec }' është kyç i juaji personal.
+# Strings used in enigmailKeyManager.js & windows.jsm
+need-online = Funksioni që keni përzgjedhur s’mund të përdoret nën mënyrën jo i lidhur. Ju lutemi, lidhuni në internet dhe riprovoni.
+# Strings used in keyRing.jsm & keyLookupHelper.jsm
+no-key-found = S’gjetëm dot ndonjë kyç me përputhje me kriterin e dhënë të kërkimit.
 # Strings used in keyRing.jsm & GnuPGCryptoAPI.jsm
 fail-key-extract = Gabim - urdhri për përftim kyçi dështoi
 # Strings used in keyRing.jsm
 fail-cancel = Gabim - Marrja e kyçit u anulua nga përdoruesi
 not-first-block = Gabim - Blloku i parë OpenPGP s’është bllok kyçi publik
+import-key-confirm = Të importohet kyç(e) publik të trupëzuar në mesazh?
 fail-key-import = Gabim - Importimi i kyçit dështoi
 file-write-failed = S’u arrit të shkruhet te kartelë { $output }
+no-pgp-block = Gabim - S’u gjet bllok i vlefshëm të dhënash OpenPGP të koracuara
+confirm-permissive-import = Importi dështoi. Kyçi që po provoni të importoni mund të jetë i komprometuar ose përdor atribute të panjohur. Do të donit të provohej të importoheshin pjesët që janë të sakta? Kjo mund të sjellë importim kyçesh jo të plotë dhe të papërdorshëm.
 # Strings used in trust.jsm
 key-valid-unknown = i panjohur
 key-valid-invalid = i pavlefshëm
@@ -466,28 +476,96 @@ key-trust-marginal = mënjanësor
 key-trust-full = i besuar
 key-trust-ultimate = përfundimtar
 key-trust-group = (grup)
+# Strings used in commonWorkflows.js
+import-key-file = Importo Kartelë Kyçi OpenPGP
+import-rev-file = Importo Kartelë Shfuqizimi OpenPGP
 gnupg-file = Kartela GnuPG
 import-keys-failed = Importimi i kyçeve dështoi
 passphrase-prompt = Ju lutemi, jepni frazëkalimin që shkyç kyçin vijues: { $key }
+file-to-big-to-import = Kjo kartelë është shumë e madhe. Ju lutemi, mos importoni njëherësh një grup të madh kyçesh.
+# Strings used in enigmailKeygen.js
+save-revoke-cert-as = Krijoni & Ruani Dëshmi Shfuqizimesh
+revoke-cert-ok = Dëshmia e shfuqizimit u krijua me sukses. Mund ta përdorni për të zhvleftësuar kyçin tuaj publik, p.sh., në rast se humbni kyçin tuaj të fshehtë.
 revoke-cert-failed = Dëshmia e shfuqizimit s’u krijua dot.
 gen-going = Prodhim kyçesh tashmë në kryerje e sipër!
+keygen-missing-user-name = S’ka emër të specifikuar për llogarinë/identitetin e përzgjedhur. Ju lutemi, jepni një vlerë te fusha “Emri juaj”, te rregullimet e llogarisë.
+expiry-too-short = Kyçi juaj duhet të jetë i vlefshëm për të paktën një ditë.
+expiry-too-long = S’mund të krijoni një kyç që skadon pas më shumë se 100 vjetëve.
+key-confirm = Të prodhohet kyç publik dhe i fshehtë për '{ $id }'?
+key-man-button-generate-key = &Prodho Kyç
 key-abort = Të ndërpritet prodhimi i kyçit?
+key-man-button-generate-key-abort = &Ndërprite Prodhimin e Kyçit
+key-man-button-generate-key-continue = &Vazhdo Prodhimin e Kyçit
 # Strings used in enigmailMessengerOverlay.js
 failed-decrypt = Gabim - shfshehtëzimi dështoi
 fix-broken-exchange-msg-failed = S’pat sukses në riparimin e mesazhit.
+attachment-no-match-from-signature = S’u përputh dot kartela e nënshkrimit '{ $attachment }' me ndonjë bashkëngjitje
+attachment-no-match-to-signature = S’u përputh dot bashkëngjitja '{ $attachment }' me një kartelë nënshkrimi
+signature-verified-ok = Nënshkrimi për bashkëngjitjen { $attachment } u verifikua me sukses
+signature-verify-failed = Nënshkrimi për bashkëngjitjen { $attachment } s’u verifikua do
+decrypt-ok-no-sig =
+    Kujdes
+    Shfshehtëzimi qe i suksesshëm, por nënshkrimi s’u verifikua dot me saktësi
+msg-ovl-button-cont-anyway = &Vazhdo Sido Qoftë
+enig-content-note = *Bashkëngjitjet në këtë mesazh s’janë nënshkruar, as fshehtëzuar*
+# Strings used in enigmailMsgComposeOverlay.js
+msg-compose-button-send = &Dërgo Mesazh
 msg-compose-details-button-label = Hollësi…
 msg-compose-details-button-access-key = H
+send-aborted = Veprimi i dërgimit u ndërpre.
+key-not-trusted = Pa besueshmëri të mjaftë për kyçin '{ $key }'
+key-not-found = S’u gjet kyçi '{ $key }'
+key-revoked = Kyçi '{ $key }' u shfuqizua
+key-expired = Kyçi '{ $key }' skadoi
 msg-compose-internal-error = Ndodhi një gabim i brendshëm.
+keys-to-export = Përzgjidhni Kyçe OpenPGP Për T’i Futur
+msg-compose-partially-encrypted-inlinePGP =
+    Mesazhi të cilit po i përgjigjeni përmban si pjesë të pafshehtëzuara, ashtu edhe të fshehtëzuara. Nëse fillimisht tdërguesi s’qe në gjendje të fshehtëzonte disa pjesë të mesazhit, mund të jeni duke lënë të rrjedhë informacion rezervat të cilin dërguesi s’qe në gjendje ta fshehtëzonte.
+    Please consider removing all quoted text from your reply to this sender.
 msg-compose-cannot-save-draft = Gabim teksa ruhej skicë
+msg-compose-partially-encrypted-short = Hapni sytë për rrjedhje informacioni rezervat - email pjesërisht i fshehtëzuar.
+quoted-printable-warn =
+    Keni aktivizuar kodim 'quoted-printable' për dërgim mesazhesh. Kjo mund të sjellë shfshehtëzim dhe/ose verifikim të pasaktë të mesazhit tuaj.
+    Doni të çaktivizohet tani dërgimi i mesazheve'quoted-printable'?
+minimal-line-wrapping =
+    Keni ujdisur mbështjellje rreshtash pas { $width } shenjash. Për fshehtëzim dhe/ose nënshkrim të saktë, kjo vlerë lypset të jetë të paktën 68.
+    Doni të ndryshohet tani vlera për mbështjellje rreshtash në 68 shenja?
+sending-hidden-rcpt = Marrësit BCC (kopjim i verbër) s’mund të përdoren kur dërgohet një mesazh i fshehtëzuar. Që të dërgoni këtë mesazh të fshehtëzuar, ose hiqni marrësit BCC ose kalojini te fusha CC.
+sending-news =
+    Veprimi i dërgimit të fshehtëzuar dështoi.
+    Ky mesazh s’mund të fshehtëzohet, ngaqë ka marrës në grupe lajmesh. Ju lutemi, dërgojeni këtë mesazh pa fshehtëzim.
+send-to-news-warning =
+    Kujdes: ju ndan një hap nga dërgimi i një mesazhi të fshehtëzuar te një grup lajmesh.
+    Kjo nuk këshillohet, ngaqë ka kuptim vetëm nëse krejt anëtarët e grupit munden të fshehtëzojnë mesazhin, d.m.th., mesazhi lypset të fshetëzohet me kyçet e krejt pjesëmarrësve në grup. Ju lutemi, dërgojeni këtë mesazh vetëm nëse e dini saktësisht se ç’po bëni.
+    Të vazhdohet?
 save-attachment-header = Ruaje bashkëngjitjen e shfshehtëzuar
+no-temp-dir =
+    S’u gjet dot një drejtori e përkohshme ku të shkruhet
+    Ju lutemi, caktoni ndryshoren TEMP të mjedisit
+possibly-pgp-mime = Mesazh mundet i fshehtëzuar ose nënshkruar me PGP/MIME; përdorni funksionin 'Shfshehtëzoje/Verifikoje' për ta verifkuar
+cannot-send-sig-because-no-own-key = S’nënshkruhet dot në mënyrë dixhitale ky mesazh, ngaqë s’keni formësuar ende fshehtëzim skaj-më-skaj për <{ $key }>
+cannot-send-enc-because-no-own-key = S’mund të dërgohet i fshehtëzuar ky mesazh, ngaqë s’keni formësuar ende fshehtëzim skaj-më-skaj për <{ $key }>
 # Strings used in decryption.jsm
 do-import-multiple =
     Të importohen kyçet vijues?
     { $key }
 do-import-one = Të importohet { $name } ({ $id })?
 cant-import = Gabim në importim kyçi publik
+unverified-reply = Pjesa e mesazhit me shmangie kryeradhe  (përgjigje) ka gjasa të jetë ndryshuar
+key-in-message-body = U gjet një kyç te lënda e mesazhit. Klikoni mbi “Importo Kyç” që të importohet kyçi
 sig-mismatch = Gabim - Mospërputhje nënshkrimesh
 invalid-email = Gabim - adresë(a) email e pavlefshme
+attachment-pgp-key =
+    Bashkëngjitja '{ $name }' që po hapni duket të jetë një kartelë kyçi OpenPGP.
+    Klikoni mbi “Importoje” që të importohen kyçet që përmban, ose “Shiheni” që të shihni lëndën e kartelës në një dritare shfletuesi
+dlg-button-view = &Shiheni
+# Strings used in enigmailMsgHdrViewOverlay.js
+decrypted-msg-with-format-error = Mesazh i shfshehtëzuar (u rikthyer format i dëmtuar email-i PGP, shkaktuar ndoshta nga një shërbyes i vjetër Exchange, ndaj përfundimi mund të mos jetë i përsosur për lexim)
+# Strings used in encryption.jsm
+not-required = Gabimi - s’lyp fshehtëzim
+# Strings used in windows.jsm
+no-photo-available = S’ka Foto
+error-photo-path-not-readable = Shtegu '{ $photo }' për foto s’është i lexueshëm
 debug-log-title = Regjistër Diagnostikimi OpenPGP-je
 # Strings used in dialog.jsm
 repeat-prefix = Ky sinjalizim do të përsëritet { $count }
@@ -499,6 +577,13 @@ dlg-button-ok = &OK
 dlg-button-close = &Mbylle
 dlg-button-cancel = &Anuloje
 dlg-no-prompt = Mos ma shfaq më këtë dialog
+enig-prompt = Kërkesë OpenPGP
+enig-confirm = Ripohim OpenPGP
+enig-alert = Sinjalizim OpenPGP
+enig-info = Informacion OpenPGP
+# Strings used in persistentCrypto.jsm
+dlg-button-retry = &Riprovo
+dlg-button-skip = &Anashkaloje
 # Strings used in enigmailCommon.js
 enig-error = Gabim OpenPGP
 enig-alert-title =

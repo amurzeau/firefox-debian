@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -224,7 +224,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Tokrat išči z iskalnikom:
 # This string won't wrap, so if the translated string is longer,
@@ -289,6 +289,14 @@ identity-passive-loaded = Deli strani niso varni (npr. slike).
 identity-active-loaded = Zaščita na tej strani je onemogočena.
 identity-weak-encryption = Stran uporablja šibko šifriranje.
 identity-insecure-login-forms = Prijave, ki jih vnesete na tej strani, so lahko ogrožene.
+identity-https-only-connection-upgraded = (nadgrajeno na HTTPS)
+identity-https-only-label = Način "samo HTTPS"
+identity-https-only-dropdown-on =
+    .label = Vključeno
+identity-https-only-dropdown-off =
+    .label = Izključeno
+identity-https-only-dropdown-off-temporarily =
+    .label = Začasno izključeno
 identity-permissions =
     .value = Dovoljenja
 identity-permissions-reload-hint = Za uveljavitev sprememb boste morda morali ponovno naložiti stran.
@@ -333,6 +341,12 @@ browser-window-restore-down-button =
     .tooltiptext = Obnovi navzdol
 browser-window-close-button =
     .tooltiptext = Zapri
+
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Uvozi zaznamke …
+    .tooltiptext = Skopirajte zaznamke iz drugega brskalnika v { -brand-short-name }.
 
 ## WebRTC Pop-up notifications
 
@@ -439,11 +453,23 @@ urlbar-result-action-search-in-private = Išči v zasebnem oknu
 urlbar-result-action-search-w-engine = Išči z iskalnikom { $engine }
 urlbar-result-action-switch-tab = Preklopi na zavihek
 urlbar-result-action-visit = Obišči
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Pritisnite Tab za iskanje z iskalnikom { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Iščite z iskalnikom { $engine } neposredno iz naslovne vrstice
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-bookmarks = Iskanje po zaznamkih
+urlbar-result-action-search-history = Iskanje po zgodovini
 
 ## Full Screen and Pointer Lock UI
 

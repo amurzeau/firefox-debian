@@ -29,6 +29,8 @@ search-input-box =
            *[other] Søg i indstillinger
         }
 managed-notice = Din browser bliver forvaltet af din organisation.
+category-list =
+    .aria-label = Kategorier
 pane-general-title = Generelt
 category-general =
     .tooltiptext = { pane-general-title }
@@ -426,6 +428,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Vis kontrol-knapper for billed-i-billed
     .accesskey = v
 browsing-picture-in-picture-learn-more = Læs mere
+browsing-media-control =
+    .label = Kontrollér medeindhold med tastatur, headset eller virtuel interface
+    .accesskey = v
+browsing-media-control-learn-more = Læs mere
 browsing-cfr-recommendations =
     .label = Anbefal udvidelser mens jeg browser
     .accesskey = u
@@ -489,6 +495,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Mest besøgte websider
 home-prefs-topsites-description = Mest besøgte websider
+home-prefs-topsites-by-option-sponsored =
+    .label = Sponsorerede websteder
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -944,7 +952,7 @@ content-blocking-all-third-party-cookies = Alle tredjeparts-cookies
 content-blocking-cryptominers = Cryptominers
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Vigtigt!
-content-blocking-and-isolating-etp-warning-description = Nogle websteders funktionalitet kan blive påvirker, når du blokerer sporings-teknologier og isolerer cookies. Genindlæs side med sporings-teknologier for at indlæse alt indhold.
+content-blocking-and-isolating-etp-warning-description = Nogle websteders funktionalitet kan blive påvirket, når du blokerer sporings-teknologier og isolerer cookies. Genindlæs side med sporings-teknologier for at indlæse alt indhold.
 content-blocking-warning-learn-how = Læs hvordan
 content-blocking-reload-description = Du skal genindlæse dine faneblade, før ændringerne slår igennem.
 content-blocking-reload-tabs-button =

@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Insere minus, trova plus: cerca { $engineName } justo per tu barra de adresse.
 urlbar-search-tips-redirect-2 = Comencia tu recerca in le barra de adresse pro vider suggestiones de { $engineName } e de tu chronologia de navigation.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Selige iste accesso directe pro trovar lo que tu cerca plus rapidemente.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -169,25 +172,25 @@ page-action-remove-extension =
 page-action-send-tabs-panel =
     .label =
         { $tabCount ->
-            [one] Inviar scheda al Apparato
+            [one] Inviar scheda al apparato
            *[other] Inviar { $tabCount } schedas al apparato
         }
 page-action-send-tabs-urlbar =
     .tooltiptext =
         { $tabCount ->
-            [one] Inviar scheda al Apparato
+            [one] Inviar scheda al apparato
            *[other] Inviar { $tabCount } schedas al apparato
         }
 page-action-pocket-panel =
-    .label = Salvar le pagina in { -pocket-brand-name }
+    .label = Salvar pagina in { -pocket-brand-name }
 page-action-copy-url-panel =
-    .label = Copiar le ligamine
+    .label = Copiar ligamine
 page-action-copy-url-urlbar =
-    .tooltiptext = Copiar le ligamine
+    .tooltiptext = Copiar ligamine
 page-action-email-link-panel =
-    .label = Inviar le ligamine per email…
+    .label = Inviar ligamine per e-mail…
 page-action-email-link-urlbar =
-    .tooltiptext = Inviar le ligamine per email…
+    .tooltiptext = Inviar ligamine per e-mail…
 page-action-share-url-panel =
     .label = Compartir
 page-action-share-url-urlbar =
@@ -201,13 +204,13 @@ page-action-send-tab-not-ready =
 # string to express the idea that this is a lightweight and reversible
 # action that keeps your tab where you can reach it easily.
 page-action-pin-tab-panel =
-    .label = Clavar le scheda
+    .label = Clavar scheda
 page-action-pin-tab-urlbar =
-    .tooltiptext = Clavar le scheda
+    .tooltiptext = Clavar scheda
 page-action-unpin-tab-panel =
-    .label = Disclavar le scheda
+    .label = Disclavar scheda
 page-action-unpin-tab-urlbar =
-    .tooltiptext = Disclavar le scheda
+    .tooltiptext = Disclavar scheda
 
 ## Auto-hide Context Menu
 
@@ -288,14 +291,14 @@ identity-insecure-login-forms = Credentiales inserite sur iste pagina poterea es
 identity-https-only-connection-upgraded = (promovite a HTTPS)
 identity-https-only-label = Modo solo HTTPS
 identity-https-only-dropdown-on =
-    .label = Activar
+    .label = Active
 identity-https-only-dropdown-off =
-    .label = Disactivar
+    .label = Inactive
 identity-https-only-dropdown-off-temporarily =
-    .label = Disactivar temporarimente
-identity-https-only-info-turn-on = Activa si tu vole promover { -brand-short-name } a un connexion secur quando possibile.
-identity-https-only-info-turn-off = Si le sito pare corrupte, prova disactivar le modo solo-HTTPS e recargar per HTTP in connexion insecur.
-identity-https-only-info-no-upgrade = Impossibile promover le connexion de HTTP.
+    .label = Disactivate temporarimente
+identity-https-only-info-turn-on2 = Activa le modo solo HTTPS pro iste sito si tu vole que { -brand-short-name } securisa le connexion quando possibile.
+identity-https-only-info-turn-off2 = Si le pagina non functiona, prova disactivar le modo solo HTTPS pro iste sito e recargar con un connexion HTTP insecur.
+identity-https-only-info-no-upgrade = Impossibile promover le connexion HTTP.
 identity-permissions =
     .value = Permissiones
 identity-permissions-reload-hint = Il es possibile que tu debe recargar le pagina pro que le cambios se applica.
@@ -340,6 +343,12 @@ browser-window-restore-down-button =
     .tooltiptext = Restaurar
 browser-window-close-button =
     .tooltiptext = Clauder
+
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Importar marcapaginas…
+    .tooltiptext = Copia le marcapaginas de un altere navigator a { -brand-short-name }.
 
 ## WebRTC Pop-up notifications
 
@@ -444,8 +453,29 @@ urlbar-result-action-search-in-private = Cercar in un fenestra private
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Cercar con { $engine }
+urlbar-result-action-sponsored = Sponsorisate
 urlbar-result-action-switch-tab = Commutar al scheda
 urlbar-result-action-visit = Visitar
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Pressa Tab pro cercar con { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Pressa Tab pro cercar in { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Cercar con { $engine } directemente ab le barra de adresses
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Cercar in { $engine } directemente ab le barra de adresses
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -453,15 +483,7 @@ urlbar-result-action-visit = Visitar
 
 urlbar-result-action-search-bookmarks = Cercar in le marcapaginas
 urlbar-result-action-search-history = Cercar in le chronologia
-urlbar-result-action-search-tabs = Recercar in le schedas
-# Variables
-#  $engine (String): the name of a search engine that searches the entire Web
-#  (e.g. Google).
-urlbar-result-action-tabtosearch-web = Cercar con { $engine } directemente del barra de adresse
-# Variables
-#  $engine (String): the name of a search engine that searches a specific site
-#  (e.g. Amazon).
-urlbar-result-action-tabtosearch-other-engine = Cercar in { $engine } directemente del barra de adresse
+urlbar-result-action-search-tabs = Cercar in schedas
 
 ## Full Screen and Pointer Lock UI
 
@@ -476,5 +498,5 @@ fullscreen-exit-mac-button = Exir del plen schermo (esc)
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
-pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ha controlo super tu punctator. Preme Esc pro recuperar le controlo.
-pointerlock-warning-no-domain = Iste documento ha controlo super tu punctator. Preme Esc pro recuperar le controlo.
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> controla tu punctator. Preme Esc pro reprender le controlo.
+pointerlock-warning-no-domain = Iste documento controla tu punctator. Preme Esc pro reprender le controlo.

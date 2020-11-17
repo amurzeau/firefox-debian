@@ -68,6 +68,7 @@ app-basics-service-workers = Service Workers registrate
 app-basics-profiles = Profilos
 app-basics-launcher-process-status = Processo del lanceator
 app-basics-multi-process-support = Fenestras in multiprocesso
+app-basics-fission-support = Fenestras de Fission
 app-basics-remote-processes-count = Processos remote
 app-basics-enterprise-policies = Politicas de interprisa
 app-basics-location-service-key-google = Clave del servicio de localisation de Google
@@ -129,10 +130,10 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumentos
 safe-mode-title = Probar le modo secur
 restart-in-safe-mode-label = Reinitiar con le additivos inactive…
-clear-startup-cache-title = Prova clarar le cache de lanceamento initial
-clear-startup-cache-label = Clarar cache de lanceamento initial…
-startup-cache-dialog-title = Clarar cache de lanceamento initial
-startup-cache-dialog-body = Reinitiar { -brand-short-name } pro clarar le cache de lanceamento initial. Isto non cambiara tu parametros e non removera le extensiones que tu ha addite a { -brand-short-name }.
+clear-startup-cache-title = Prova vacuar le cache de initio
+clear-startup-cache-label = Vacuar le cache de initio…
+startup-cache-dialog-title = Vacuar le cache de initio
+startup-cache-dialog-body = Reinitia { -brand-short-name } pro vacuar le cache de initio. Isto non cambiara tu parametros e non removera le extensiones que tu ha addite a { -brand-short-name }.
 restart-button-label = Reinitiar
 
 ## Media titles
@@ -329,6 +330,20 @@ multi-process-status-6 = Disactivate per entrata de texto non supportate
 multi-process-status-7 = Disactivate per additivos
 multi-process-status-8 = Disactivate fortiatemente
 multi-process-status-unknown = Stato incognite
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Disactivate per experimento
+fission-status-experiment-treatment = Activate per experimento
+fission-status-disabled-by-e10s-env = Disactivate per ambiente
+fission-status-enabled-by-env = Activate per ambiente
+fission-status-disabled-by-safe-mode = Disactivate per modo secur
+fission-status-enabled-by-default = Activate per predefinition
+fission-status-disabled-by-default = Disactivate per predefinition
+fission-status-enabled-by-user-pref = Activate per le usator
+fission-status-disabled-by-user-pref = Disactivate per le usator
+fission-status-disabled-by-e10s-other = E10s disactivate
 async-pan-zoom = Pan/Zoom asynchrone
 apz-none = nulle
 wheel-enabled = entrata a rota activate
@@ -349,3 +364,12 @@ touch-warning = entrata tactile asynchrone disactivate a causa de un preferentia
 policies-inactive = Inactive
 policies-active = Active
 policies-error = Error
+
+## Printing section
+
+support-printing-title = Imprimente
+support-printing-troubleshoot = Resolution de problemas
+support-printing-clear-settings-button = Eliminar le parametros de impression salvate
+support-printing-modified-settings = Parametros de impression modificate
+support-printing-prefs-name = Nomine
+support-printing-prefs-value = Valor

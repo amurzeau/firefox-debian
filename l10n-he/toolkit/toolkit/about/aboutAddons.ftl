@@ -368,6 +368,12 @@ addon-badge-line =
 addon-badge-verified =
     .title = הקוד של הרחבה זו נסקר לטובת בטיחות
     .aria-label = { addon-badge-verified.title }
+addon-badge-line2 =
+    .title = זוהי הרחבה רשמית מבית היוצר של { -brand-product-name }
+    .aria-label = { addon-badge-line2.title }
+addon-badge-verified2 =
+    .title = הרחבה זו נסקרה לטובת עמידה בתקנים שלנו לאבטחה וביצועים
+    .aria-label = { addon-badge-verified2.title }
 
 ##
 
@@ -376,6 +382,9 @@ recent-updates-heading = עדכונים אחרונים
 release-notes-loading = בטעינה…
 release-notes-error = מצטערים, אירעה שגיאה במהלך טעינת הערות השחרור.
 addon-permissions-empty = לתוספת זו לא נדרשות הרשאות
+addon-permissions-required = הרשאות נדרשות לתכונות ליבה:
+addon-permissions-optional = הרשאות רשות לתכונות נוספות:
+addon-permissions-learnmore = מידע נוסף על הרשאות
 recommended-extensions-heading = הרחבות מומלצות
 recommended-themes-heading = ערכות נושא מומלצות
 # A recommendation for the Firefox Color theme shown at the bottom of the theme
