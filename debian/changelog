@@ -1,3 +1,16 @@
+firefox (83.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2020-50, also known as:
+    CVE-2020-26951, CVE-2020-26952, CVE-2020-16012, CVE-2020-26953,
+    CVE-2020-26956, CVE-2020-26958, CVE-2020-26959, CVE-2020-26960,
+    CVE-2020-26961, CVE-2020-26962, CVE-2020-26963, CVE-2020-26965,
+    CVE-2020-26967, CVE-2020-26968, CVE-2020-26969.
+
+  * debian/control*: Bump nss and cbindgen build dependencies.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 18 Nov 2020 07:06:09 +0900
+
 firefox (82.0.3-1) unstable; urgency=medium
 
   * New upstream release.
