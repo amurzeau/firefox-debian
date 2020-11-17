@@ -35,12 +35,6 @@ connection-proxy-http = HTTP Proxy
     .accesskey = x
 connection-proxy-http-port = Mbojuajuhaite
     .accesskey = P
-connection-proxy-http-share =
-    .label = Eipuru peteĩ proxy año opaitépe g̃uarã
-    .accesskey = s
-
-connection-proxy-ssl = SSL Proxy
-    .accesskey = L
 connection-proxy-http-sharing =
     .label = Eipuru avei ko proxy FTP ha HTTPS peg̃uarã
     .accesskey = s
@@ -83,8 +77,8 @@ connection-proxy-reload =
     .accesskey = e
 
 connection-proxy-autologin =
-    .label = Ani eporandu ñemoañetete rehe eñongatúramo ñe'ẽñemi
-    .accesskey = a
+    .label = Ani eporandu ñemoañetete rehe eñongatúramo ñe’ẽñemi
+    .accesskey = i
     .tooltip = Ko poravopyrã kirirĩguáva oñemoañetetéva proxies-pe oñongatu rire terachaukaha chupekuéra g̃uarã. Ojejeruréta chupe pe ñemoañetetéva ndoikóiramo.
 
 connection-proxy-socks-remote-dns =

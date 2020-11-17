@@ -6,7 +6,7 @@
 <!-- Window title -->
 <!ENTITY windowTitle.label "Kichinil Kotz'öl Juch'">
 
-<!ENTITY dimensionsBox.label "Runimilem">
+<!ENTITY dimensionsBox.label "Taq runimilem">
 <!ENTITY heightEditField.label "Raqän:">
 <!ENTITY heightEditField.accessKey "G">
 <!ENTITY widthEditField.label "Ruwa:">
@@ -15,7 +15,7 @@
 <!ENTITY alignmentBox.label "Cholajem">
 <!ENTITY leftRadio.label "Xokon">
 <!ENTITY leftRadio.accessKey "X">
-<!ENTITY centerRadio.label "Nik'aj">
+<!ENTITY centerRadio.label "Pa nik'aj">
 <!ENTITY centerRadio.accessKey "N">
 <!ENTITY rightRadio.label "Ajkiq'a'">
 <!ENTITY rightRadio.accessKey "A">

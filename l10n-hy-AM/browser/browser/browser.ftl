@@ -110,6 +110,9 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Մուտքագրեք քիչ, գտեք շատ. որոնեք { $engineName }-ում անմիջապես հասցեի գոտուց:
 urlbar-search-tips-redirect-2 = Սկսեք ձեր որոնումը այստեղ՝ տեսնելու ամար { $engineName }-ի առաջարկները և դիտարկումների ձեր պատմությունը:
 
+## Local search mode indicator labels in the urlbar
+
+
 ##
 
 urlbar-geolocation-blocked =
@@ -156,6 +159,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Հեռացնել ընդլայնումը
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Ուղարկել ներդիրը սարքին
+           *[other] Ուղարկել { $tabCount } ներդիրները սարքին
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Ուղարկել ներդիրը սարքին
+           *[other] Ուղարկել { $tabCount } ներդիրները սարքին
+        }
+page-action-pocket-panel =
+    .label = Պահպանել էջը { -pocket-brand-name }-ում
+page-action-copy-url-panel =
+    .label = Պատճենել հղումը
+page-action-copy-url-urlbar =
+    .tooltiptext = Պատճենել հղումը
+page-action-email-link-panel =
+    .label = Հղումը ուղարկել էլ֊փոստով…
+page-action-email-link-urlbar =
+    .tooltiptext = Հղումը ուղարկել էլ֊փոստով…
+page-action-share-url-panel =
+    .label = Կիսվել
+page-action-share-url-urlbar =
+    .tooltiptext = Կիսվել
+page-action-share-more-panel =
+    .label = Ավելին…
+page-action-send-tab-not-ready =
+    .label = Սարքերի համաժամեցում...
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Ամրացնել ներդիրը
+page-action-pin-tab-urlbar =
+    .tooltiptext = Ամրացնել ներդիրը
+page-action-unpin-tab-panel =
+    .label = Ապամրացնել ներդիրը
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Ապամրացնել ներդիրը
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -185,6 +235,14 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Սահմանել որպես լռելյայն որոնման միջոց անձնական պատուհանների համար
     .accesskey = P
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
 
 ## Bookmark Panel
 
@@ -294,6 +352,10 @@ urlbar-default-placeholder =
     .defaultPlaceholder = Մուտքագրեք կայքի հասցե կամ որոնում
 urlbar-placeholder =
     .placeholder = Մուտքագրեք կայքի հասցե կամ որոնում
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Որոնեք { $name }-ով կամ մուտքագրեք հասցե
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Դիտարկել հեռակա կառավարմամբ
 urlbar-permissions-granted =
@@ -309,3 +371,43 @@ urlbar-page-action-button =
     .tooltiptext = Էջի գործույթները
 urlbar-pocket-button =
     .tooltiptext = Պահպանել { -pocket-brand-name }-ում
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Որոնեք { $engine }֊ի անձնական պատուհանում
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Դուք գաղտնի դիտարկման մեջ եք։
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Որոնել { $engine }-ով
+urlbar-result-action-switch-tab = Փոխանջատել ներդիրը
+urlbar-result-action-visit = Այցելել
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> այժմ լիաէկրան է
+fullscreen-warning-no-domain = Փաստաթուղթը այժմ լիաէկրան է
+fullscreen-exit-button = Դուրս գալ Լիաէկրանից (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Դուրս գալ Լիաէկրանից (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ղեկավարում է ձեր ցուցիչը: Սեղմեք Esc՝ ղեկավարումը հետ վերադարձնելու համար:
+pointerlock-warning-no-domain = Այս փաստաթուղթը ղեկավարում է ձեր ցուցիչը: Սեղմեք Esc՝ ղեկավարումը հետ վերադարձնելու համար:

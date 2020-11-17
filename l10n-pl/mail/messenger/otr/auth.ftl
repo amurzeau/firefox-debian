@@ -10,10 +10,10 @@ otr-auth =
 auth-title = Zweryfikuj tożsamość użytkownika { $name }
 # Variables:
 #   $own_name (String) - the user's own screen name
-auth-your-fp-value = Własny odcisk ({ $own_name }):
+auth-your-fp-value = Własny odcisk klucza ({ $own_name }):
 # Variables:
 #   $their_name (String) - the screen name of a chat contact
-auth-their-fp-value = Odcisk użytkownika { $their_name }:
+auth-their-fp-value = Odcisk klucza użytkownika { $their_name }:
 auth-help = Weryfikacja tożsamości kontaktu pomaga zapewnić, że rozmowa jest rzeczywiście prywatna, znacznie utrudniając osobie trzeciej podsłuchiwanie lub manipulowanie rozmową.
 auth-helpTitle = Pomoc przy weryfikacji
 auth-questionReceived = Pytanie zadane przez kontakt:
@@ -21,8 +21,8 @@ auth-yes =
     .label = Tak
 auth-no =
     .label = Nie
-auth-verified = Potwierdzam, że to jest właściwy odcisk.
-auth-manualVerification = Ręczna weryfikacja odcisku
+auth-verified = Potwierdzam, że to jest właściwy odcisk klucza.
+auth-manualVerification = Ręczna weryfikacja odcisku klucza
 auth-questionAndAnswer = Pytanie i odpowiedź
 auth-sharedSecret = Wspólny sekret
 auth-manualVerification-label =
@@ -31,7 +31,7 @@ auth-questionAndAnswer-label =
     .label = { auth-questionAndAnswer }
 auth-sharedSecret-label =
     .label = { auth-sharedSecret }
-auth-manualInstruction = Skontaktuj się z wybranym partnerem do rozmowy za pośrednictwem innego uwierzytelnionego środka komunikacji, takiego jak wiadomość e-mail podpisana za pomocą OpenPGP lub przez telefon. Musicie przekazać sobie swoje odciski (odcisk to suma kontrolna identyfikująca klucz szyfrowania). Jeśli się zgadzają, wskaż w oknie poniżej, że potwierdzono odcisk.
+auth-manualInstruction = Skontaktuj się z wybranym rozmówcą za pośrednictwem innego uwierzytelnionego środka komunikacji, takiego jak wiadomość e-mail podpisana za pomocą OpenPGP lub przez telefon. Musicie przekazać sobie swoje odciski kluczy (odcisk to suma kontrolna identyfikująca klucz szyfrowania). Jeśli się zgadzają, wskaż w oknie poniżej, że potwierdzono odcisk klucza.
 auth-how = Jak chcesz zweryfikować tożsamość kontaktu?
 auth-qaInstruction = Wymyśl pytanie, na które odpowiedź jest znana tylko Tobie i kontaktowi. Wpisz pytanie i odpowiedź, a następnie poczekaj, aż kontakt poda odpowiedź. Jeśli odpowiedzi się nie zgadzają, to używany środek komunikacji może być inwigilowany.
 auth-secretInstruction = Wymyśl sekret znany tylko Tobie i kontaktowi. Nie używaj tego samego połączenia z Internetem do wymiany sekretu. Wpisz sekret, a następnie poczekaj, aż kontakt go poda. Jeśli sekrety się nie zgadzają, to używany środek komunikacji może być inwigilowany.

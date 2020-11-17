@@ -205,6 +205,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Shihini Krejt
     .accesskey = S
+cfr-doorhanger-milestone-close-button = Mbylle
+    .accesskey = M
 
 ## What’s New Panel Content for Firefox 76
 
@@ -238,3 +240,33 @@ cfr-whatsnew-protections-icon-alt = Ikona mburojë
 
 cfr-whatsnew-better-pdf-header = Punim më i mirë me PDF-të
 cfr-whatsnew-better-pdf-body = Dokumentet PDF tani hapen drejt e në { -brand-short-name }, duke e lehtësuar rrjedhën tuaj të punës.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Privatësia juaj ka rëndësi. { -brand-short-name }-i tani e tutje ia kalon në mënyrë të siguruar kërkesat tuaja DNS, kurdo që është e mundur, një shërbimi partner, për t’ju mbrojtur teksa shfletoni.
+cfr-doorhanger-doh-header = Kërkesa DNS të fshehtëzuara, më të sigurta
+cfr-doorhanger-doh-primary-button = OK, e mora vesh
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Çaktivizoje
+    .accesskey = Ç
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Privatësia juaj ka vlerë. { -brand-short-name }-i tanimë i izolon, ose i kalon në bankëprovë, sajtet prej njëri tjetrit, çka e bën më të vështirë për dikë të vjedhë fjalëkalime, numra kartash krediti dhe të dhëna të tjera rezervat.
+cfr-doorhanger-fission-header = Izolim Sajti
+cfr-doorhanger-fission-primary-button = OK, e mora vesh
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Mësoni më tepër
+    .accesskey = M
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Mbrojtje e automatizuar nga taktika gjurmimi dredharak
+cfr-whatsnew-clear-cookies-body = Disa gjurmues ju ridrejtojnë te sajte të tjerë që depozitojnë fshehtazi cookies. { -brand-short-name }-i tanimë i spastron automatikisht këto cookies, ndaj s’mund të ndiqeni.
+cfr-whatsnew-clear-cookies-image-alt = Ilustrim bllokimi cookie-sh
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Më tepër kontrolle media
+cfr-whatsnew-media-keys-body = Luani dhe ndalni audio ose video drejt e nga tastiera juaj ose kufjet, duke e bërë të lehtë të kontrollohet media prej një skede tjetër, program, ose madje edhe kur kompjuteri juaj është i kyçur. Mundeni edhe të kaloni nga një pjesë në një tjetër, duke përdorur tastet Para dhe Pas.
+cfr-whatsnew-media-keys-button = Mësoni se si

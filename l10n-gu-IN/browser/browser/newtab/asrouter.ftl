@@ -6,6 +6,7 @@
 ## These messages are used as headings in the recommendation doorhanger
 
 cfr-doorhanger-extension-heading = ભલામણ કરેલ એક્સ્ટેંશન
+cfr-doorhanger-feature-heading = ભલામણ લક્ષણ
 cfr-doorhanger-pintab-heading = આને અજમાવો: ટૅબ પિન કરો
 
 ##
@@ -37,10 +38,15 @@ cfr-doorhanger-extension-author = { $name } દ્વારા
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = ભલામણ
-
 cfr-doorhanger-extension-notification2 = ભલામણ
     .tooltiptext = ભલામણ કરેલ એક્સેટેંશન
     .a11y-announcement = ભલામણ કરેલ એક્સેટેંશન ઉપલબ્ધ છે
+
+# This is a notification displayed in the address bar.
+# When clicked it opens a panel with a message for the user.
+cfr-doorhanger-feature-notification = ભલામણ
+    .tooltiptext = લક્ષણ ભલામણ
+    .a11y-announcement = લક્ષણ ભલામણ ઉપલબ્ધ છે
 
 ## Add-on statistics
 ## These strings are used to display the total number of
@@ -145,11 +151,27 @@ cfr-whatsnew-lockwise-backup-link-text = બેકઅપ ચાલુ કરો
 
 ## Enhanced Tracking Protection Milestones
 
+
 ## What’s New Panel Content for Firefox 76
+
 
 ## Lockwise message
 
+
 ## Vulnerable Passwords message
 
+
 ## Picture-in-Picture fullscreen message
+
+
+## Protections Dashboard message
+
+
+## Better PDF message
+
+
+## DOH Message
+
+
+## What's new: Cookies message
 

@@ -19,12 +19,11 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Privénavigatie)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Privénavigatie)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Privénavigatie)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Privénavigatie)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -111,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Minder typen, meer vinden: direct zoeken bij { $engineName } vanaf uw adresbalk.
 urlbar-search-tips-redirect-2 = Begin in de adresbalk met zoeken om suggesties van { $engineName } en uit uw browsergeschiedenis te zien.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Selecteer deze snelkoppeling om sneller te vinden wat u nodig hebt.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Bladwijzers
+urlbar-search-mode-tabs = Tabbladen
+urlbar-search-mode-history = Geschiedenis
 
 ##
 
@@ -138,12 +145,10 @@ urlbar-midi-blocked =
     .tooltiptext = U hebt MIDI-toegang voor deze website geblokkeerd.
 urlbar-install-blocked =
     .tooltiptext = U hebt installatie van add-ons voor deze website geblokkeerd.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Deze bladwijzer bewerken ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -160,6 +165,55 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Extensie verwijderen
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [1] Tabblad naar apparaat verzenden
+            [one] Tabblad naar apparaat verzenden
+           *[other] { $tabCount } tabbladen naar apparaat verzenden
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [1] Tabblad naar apparaat verzenden
+            [one] Tabblad naar apparaat verzenden
+           *[other] { $tabCount } tabbladen naar apparaat verzenden
+        }
+page-action-pocket-panel =
+    .label = Pagina opslaan naar { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Koppeling kopiëren
+page-action-copy-url-urlbar =
+    .tooltiptext = Koppeling kopiëren
+page-action-email-link-panel =
+    .label = Koppeling e-mailen…
+page-action-email-link-urlbar =
+    .tooltiptext = Koppeling e-mailen…
+page-action-share-url-panel =
+    .label = Delen
+page-action-share-url-urlbar =
+    .tooltiptext = Delen
+page-action-share-more-panel =
+    .label = Meer…
+page-action-send-tab-not-ready =
+    .label = Apparaten synchroniseren…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Tabblad vastmaken
+page-action-pin-tab-urlbar =
+    .tooltiptext = Tabblad vastmaken
+page-action-unpin-tab-panel =
+    .label = Tabblad losmaken
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Tabblad losmaken
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -171,17 +225,15 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Deze keer zoeken met:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Zoekinstellingen wijzigen
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Zoekinstellingen wijzigen
-
 search-one-offs-context-open-new-tab =
     .label = Zoeken in Nieuw tabblad
     .accesskey = t
@@ -191,16 +243,34 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Als standaardzoekmachine voor privévensters instellen
     .accesskey = p
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Bladwijzers ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Tabbladen ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Geschiedenis ({ $restrict })
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Editor tonen bij opslaan
     .accesskey = E
-
 bookmark-panel-done-button =
     .label = Gereed
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -220,6 +290,17 @@ identity-passive-loaded = Onderdelen van deze pagina zijn niet beveiligd (zoals 
 identity-active-loaded = U hebt bescherming op deze pagina uitgeschakeld.
 identity-weak-encryption = Deze pagina gebruikt zwakke versleuteling.
 identity-insecure-login-forms = Ingevoerde aanmeldingen op deze pagina zouden kunnen worden onderschept.
+identity-https-only-connection-upgraded = (geüpgraded naar HTTPS)
+identity-https-only-label = Alleen-HTTPS-modus
+identity-https-only-dropdown-on =
+    .label = Aan
+identity-https-only-dropdown-off =
+    .label = Uit
+identity-https-only-dropdown-off-temporarily =
+    .label = Tijdelijk uit
+identity-https-only-info-turn-on2 = Schakel Alleen-HTTPS voor deze website in als u wilt dat { -brand-short-name } indien mogelijk de verbinding upgradet.
+identity-https-only-info-turn-off2 = Als de website niet lijkt te werken, dan kunt u proberen de Alleen-HTTPS-modus voor deze website uit te schakelen en de pagina te vernieuwen met het onveilige HTTP.
+identity-https-only-info-no-upgrade = Kan HTTP-verbinding niet upgraden.
 identity-permissions =
     .value = Toestemmingen
 identity-permissions-reload-hint = Mogelijk dient u de pagina te vernieuwen om wijzigingen van kracht te laten worden.
@@ -265,6 +346,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Sluiten
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Bladwijzers importeren…
+    .tooltiptext = Bladwijzers van een andere browser naar { -brand-short-name } kopiëren.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -274,15 +361,12 @@ popup-select-microphone =
     .value = Te delen microfoon:
     .accesskey = M
 popup-all-windows-shared = Alle zichtbare vensters op uw scherm worden gedeeld.
-
 popup-screen-sharing-not-now =
     .label = Niet nu
     .accesskey = i
-
 popup-screen-sharing-never =
     .label = Nooit toestaan
     .accesskey = N
-
 popup-silence-notifications-checkbox = Notificaties van { -brand-short-name } uitschakelen tijdens delen
 popup-silence-notifications-checkbox-warning = { -brand-short-name } toont geen meldingen terwijl u deelt.
 
@@ -299,27 +383,122 @@ sharing-warning-disable-for-session =
 
 enable-devtools-popup-description = Open eerst DevTools in het menu Webontwikkelaar om de sneltoets F12 te gebruiken.
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Voer zoekterm of adres in
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Voer zoekterm of adres in
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Zoeken op het web
+    .aria-label = Zoeken met { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Voer zoektermen in
+    .aria-label = Zoeken op { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Voer zoektermen in
+    .aria-label = Zoeken in bladwijzers
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Voer zoektermen in
+    .aria-label = Zoeken in geschiedenis
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Voer zoektermen in
+    .aria-label = Zoeken in tabbladen
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Voer zoekterm voor { $name } of adres in
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Browser wordt op afstand bestuurd
 urlbar-permissions-granted =
     .tooltiptext = U hebt deze website aanvullende toestemmingen gegeven.
 urlbar-switch-to-tab =
     .value = Wisselen naar tabblad:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Extensie:
-
 urlbar-go-button =
     .tooltiptext = Naar het adres in de locatiebalk gaan
 urlbar-page-action-button =
     .tooltiptext = Pagina-acties
 urlbar-pocket-button =
     .tooltiptext = Opslaan naar { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Zoeken met { $engine } in een privévenster
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Zoeken in een privévenster
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Zoeken met { $engine }
+urlbar-result-action-sponsored = Gesponsord
+urlbar-result-action-switch-tab = Wisselen naar tabblad
+urlbar-result-action-visit = Bezoeken
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Druk op Tab om te zoeken met { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Druk op Tab om te zoeken met { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Met { $engine } rechtstreeks vanuit de adresbalk zoeken
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = { $engine } rechtstreeks vanuit de adresbalk doorzoeken
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Bladwijzers doorzoeken
+urlbar-result-action-search-history = Geschiedenis doorzoeken
+urlbar-result-action-search-tabs = Tabbladen doorzoeken
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> gebruikt nu het volledige scherm
+fullscreen-warning-no-domain = Dit document gebruikt nu het volledige scherm
+fullscreen-exit-button = Volledig scherm verlaten (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Volledig scherm verlaten (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> heeft de controle over uw aanwijzer. Druk op Esc om de controle weer over te nemen.
+pointerlock-warning-no-domain = Dit document heeft de controle over uw aanwijzer. Druk op Esc om de controle weer over te nemen.

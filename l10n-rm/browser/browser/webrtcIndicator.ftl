@@ -19,5 +19,22 @@ webrtc-microphone-button =
     .title = Tes microfon vegn cundividì. Clicca per controllar la cundivisiun.
 webrtc-camera-button =
     .title = Tia camera vegn cundividida. Clicca per controllar la cundivisiun.
+webrtc-microphone-unmuted =
+    .title = Deactivar il microfon
+webrtc-microphone-muted =
+    .title = Activar il microfon
+webrtc-camera-unmuted =
+    .title = Deactivar la camera
+webrtc-camera-muted =
+    .title = Activar la camera
 webrtc-minimize =
     .title = Reducir l'indicatur a l'icona
+# This string will display as a tooltip on supported systems where we show
+# device sharing state in the OS notification area. We do not use these strings
+# on macOS, as global menu bar items do not have native tooltips.
+webrtc-camera-system-menu =
+    .label = Ti cundividas tia camera. Clicca per controllar la cundivisiun.
+webrtc-microphone-system-menu =
+    .label = Ti cundividas tes microfon. Clicca per controllar la cundivisiun.
+webrtc-screen-system-menu =
+    .label = Ti cundividas ina fanestra u in visur. Clicca per controllar la cundivisiun.

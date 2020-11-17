@@ -4,3 +4,7 @@
 
 finger-yes = Potrjeno
 finger-no = Nepotrjeno
+
+finger-subset-title = Odstrani prstne odtise
+
+finger-remove-all-title = Odstrani vse prstne odtise

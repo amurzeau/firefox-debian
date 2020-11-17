@@ -4,10 +4,6 @@
 
 process-type-web = Conteniu web
 
-# process used to run privileged pages,
-# such as about:home
-process-type-privileged = Conteniu privilechiau
-
 # process used to run privileged about pages,
 # such as about:home
 process-type-privilegedabout = Pachinas «arredol de» privilechiadas
@@ -33,3 +29,8 @@ process-type-webisolated = Conteniu web aislau
 # graphics acceleration
 process-type-gpu = GPU
 
+# process used to perform network operations
+process-type-socket = Socket
+
+# process preallocated; may change to other types
+process-type-prealloc = Preasignau

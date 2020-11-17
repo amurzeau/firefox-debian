@@ -5,9 +5,8 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = การปกป้องความเป็นส่วนตัว
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = ไปยังรายงานความเป็นส่วนตัวของคุณ
+appmenuitem-update-banner =
+    .label-update-downloading = กำลังดาวน์โหลดการอัปเดต { -brand-shorter-name }
 appmenuitem-protection-dashboard-title = แดชบอร์ดการป้องกัน
 appmenuitem-customize-mode =
     .label = ปรับแต่ง…
@@ -27,6 +26,7 @@ fxa-toolbar-sync-now =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = มีอะไรใหม่
+
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

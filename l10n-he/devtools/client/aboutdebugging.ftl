@@ -83,8 +83,6 @@ about-debugging-setup-title = הקמה
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = הגדרת שיטת החיבור שתשמש אותך לניפוי שגיאות מרחוק מול המכשיר שלך.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox = ניתן להשתמש ב<a>{ about-debugging-this-firefox-runtime-name }</a> כדי לנפות שגיאות בלשוניות, הרחבות ו־service workers בגרסה זו של { -brand-shorter-name }.
-# Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox2 = ניתן להשתמש ב<a>{ about-debugging-this-firefox-runtime-name }</a> כדי לנפות שגיאות בהרחבות ו־service workers בגרסה זו של { -brand-shorter-name }.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = חיבור מכשיר
@@ -104,6 +102,12 @@ about-debugging-setup-usb-updating-button = בעדכון…
 about-debugging-setup-usb-status-enabled = מופעל
 about-debugging-setup-usb-status-disabled = מושבת
 about-debugging-setup-usb-status-updating = בעדכון…
+# USB section step by step guide
+about-debugging-setup-usb-step-enable-dev-menu2 = להפעיל את התפריט של אפשרויות למפתחים במכשיר ה־Android שלך.
+# USB section step by step guide
+about-debugging-setup-usb-step-enable-debug2 = להפעיל ניפוי שגיאות ב־USB בתפריט האפשרויות למפתחים של Android.
+# USB section step by step guide
+about-debugging-setup-usb-step-enable-debug-firefox2 = להפעיל ניפוי שגיאות ב־USB ב־Firefox שבמכשיר ה־Android.
 # USB section step by step guide
 about-debugging-setup-usb-step-plug-device = לחבר את מכשיר ה־Android שלך למחשב שלך.
 # Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
@@ -173,13 +177,13 @@ about-debugging-runtime-service-workers-not-compatible = תצורת הדפדפן
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
 about-debugging-browser-version-too-old = הדפדפן המחובר הוא בגרסה ישנה ({ $runtimeVersion }). הגרסה המינימלית ביותר הנתמכת היא ({ $minVersion }). תצורה זו אינה נתמכת ועשויה לגרום לכשל בכלי הפיתוח. נא לעדכן את הדפדפן המחובר. <a>פתרון בעיות</a>
-# Dedicated message for a backward compatibility issue that occurs when connecting:
-# - from Fx 67 to 66 or to 65
-# - from Fx 68 to 66
-# Those are normally in range for DevTools compatibility policy, but specific non
-# backward compatible changes broke the debugger in those scenarios (Bug 1528219).
+# This string is displayed in the runtime page if the remote browser version is too recent.
+# "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
+# { $runtimeID } is the build ID of the remote browser (for instance "20181231", format is yyyyMMdd)
+# { $localID } is the build ID of the current Firefox instance (same format)
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-about-debugging-browser-version-too-old-67-debugger = ייתכן שהחלונית 'מנפה שגיאות' לא תעבוד עם הדפדפן המחובר. נא להשתמש ב־Firefox { $runtimeVersion } אם יש לך צורך להשתמש במנפה השגיאות עם דפדפן זה.
+# { $localVersion } is the version of your current browser (same format)
+about-debugging-browser-version-too-recent = הדפדפן המחובר יותר עדכני ({ $runtimeVersion }, מזהה בנייה { $runtimeID }) מאשר ה־{ -brand-shorter-name } שלך ({ $localVersion }, מזהה בנייה { $localID }). זוהי תצורה שאינה נתמכת ויתכן שתגרום לכלי הפיתוח להיכשל. נא לעדכן את Firefox. <a>פתרון בעיות</a>
 # Displayed for runtime info in runtime pages.
 # { $name } is brand name such as "Firefox Nightly"
 # { $version } is version such as "64.0a1"
@@ -187,6 +191,8 @@ about-debugging-runtime-name = { $name } ({ $version })
 # Text of a button displayed in Runtime pages for remote runtimes.
 # Clicking on the button will close the connection to the runtime.
 about-debugging-runtime-disconnect-button = התנתקות
+# Title of a modal dialog displayed on remote runtime pages after clicking on the Profile Runtime button.
+about-debugging-profiler-dialog-title2 = יוצר הפרופילים
 # Clicking on the header of a debug target category will expand or collapse the debug
 # target items in the category. This text is used as ’title’ attribute of the header,
 # to describe this feature.
@@ -235,13 +241,6 @@ about-debugging-extension-location =
 # For instance "geckoprofiler@mozilla.com" or "{ed26ddcb-5611-4512-a89a-51b8db81cfb2}".
 about-debugging-extension-id =
     .label = מזהה הרחבה
-# This string is displayed as a label of the button that pushes a test payload
-# to a service worker.
-# Notes, this relates to the "Push" API, which is normally not localized so it is
-# probably better to not localize it.
-about-debugging-worker-action-push = Push
-# This string is displayed as a label of the button that starts a service worker.
-about-debugging-worker-action-start = התחלה
 # This string is displayed as a label of the button that unregisters a service worker.
 about-debugging-worker-action-unregister = ביטול רישום
 # Displayed for service workers in runtime pages that are registered but stopped.
@@ -259,9 +258,14 @@ about-debugging-zombie-tab-inspect-action-disabled =
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.
 about-debugging-main-process-name = תהליך ראשי
+# Displayed as description for the Main Process debug target in the Processes category.
+# Only for remote browsers, if `devtools.aboutdebugging.process-debugging` is true.
+about-debugging-main-process-description2 = התהליך הראשי עבור דפדפן היעד
 # Displayed instead of the Main Process debug target when the preference
 # `devtools.browsertoolbox.fission` is true.
 about-debugging-multiprocess-toolbox-name = ארגז כלים מרובה תהליכים
+# Description for the Multiprocess Toolbox target.
+about-debugging-multiprocess-toolbox-description = התהליך הראשי ותהליכי התוכן עבור דפדפן היעד
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = סגירת הודעה

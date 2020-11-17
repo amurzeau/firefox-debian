@@ -22,6 +22,12 @@ extensions-name = Název
 extensions-enabled = Povoleno
 extensions-version = Verze
 extensions-id = ID
+support-addons-title = Doplňky
+support-addons-name = Název
+support-addons-type = Typ
+support-addons-enabled = Povoleno
+support-addons-version = Verze
+support-addons-id = ID
 security-software-title = Bezpečnostní software
 security-software-type = Typ
 security-software-name = Název
@@ -57,7 +63,7 @@ app-basics-binary = Binární soubor aplikace
 app-basics-profile-dir = Složka s profilem
 app-basics-enabled-plugins = Povolené zásuvné moduly
 app-basics-build-config = Nastavení sestavení
-app-basics-user-agent = Identifikace prohlížeče
+app-basics-user-agent = User agent
 app-basics-os = OS
 app-basics-memory-use = Spotřeba paměti
 app-basics-performance = Výkon
@@ -76,6 +82,12 @@ show-dir-label =
         [macos] Zobrazit ve Finderu
        *[other] Otevřít
     }
+environment-variables-title = Proměnné prostředí
+environment-variables-name = Název
+environment-variables-value = Hodnota
+experimental-features-title = Experimentální funkce
+experimental-features-name = Název
+experimental-features-value = Hodnota
 modified-key-prefs-title = Důležité změněné předvolby
 modified-prefs-name = Název
 modified-prefs-value = Hodnota
@@ -106,8 +118,6 @@ graphics-desktop-environment = Desktopové prostředí
 place-database-title = Databáze Places
 place-database-integrity = Integrita
 place-database-verify-integrity = Zkontrolovat integritu
-js-title = JavaScript
-js-incremental-gc = Inkrementální GC
 a11y-title = Přístupnost
 a11y-activated = Aktivována
 a11y-force-disabled = Zakázána
@@ -137,7 +147,6 @@ restart-button-label = Restartovat
 
 audio-backend = Audio Backend
 max-audio-channels = Maximální počet kanálů
-channel-layout = Preferované rozložení kanálů
 sample-rate = Preferovaná vzorkovací frekvence
 roundtrip-latency = Zpoždění (směrodatná odchylka)
 media-title = Média
@@ -279,11 +288,13 @@ blocklisted-bug = Zablokováno kvůli známé chybě
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Zablokováno kvůli známým problémům: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Zablokováno; chybový kód { $failureCode }
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video dekodér
-d3d9video-crash-buard = D3D9 Video dekodér
 d3d9video-crash-guard = D3D9 Video dekodér
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Video dekodér

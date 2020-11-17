@@ -10,9 +10,9 @@ pictureinpicture-play =
     .aria-label = Reprodueix
 
 pictureinpicture-mute =
-    .aria-label = Sense so
+    .aria-label = Silencia
 pictureinpicture-unmute =
-    .aria-label = Amb so
+    .aria-label = No silenciïs
 
 pictureinpicture-unpip =
     .aria-label = Envia-ho de nou a la pestanya

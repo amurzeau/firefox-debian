@@ -54,7 +54,7 @@ clear-time-duration-suffix =
 ## These strings are used as section comments and checkboxes
 ## to select the items to remove
 
-history-section-label = Navegação
+history-section-label = Histórico
 
 item-history-and-downloads =
     .label = Histórico de navegação e downloads

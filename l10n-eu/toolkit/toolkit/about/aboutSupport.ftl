@@ -15,6 +15,9 @@ extensions-name = Izena
 extensions-enabled = Gaituta
 extensions-version = Bertsioa
 extensions-id = ID
+support-addons-name = Izena
+support-addons-version = Bertsioa
+support-addons-id = ID
 security-software-title = Segurtasun softwarea
 security-software-type = Mota
 security-software-name = Izena
@@ -96,8 +99,6 @@ graphics-desktop-environment = Mahaigain ingurunea
 place-database-title = Lekuen datu-basea
 place-database-integrity = Osotasuna
 place-database-verify-integrity = Egiaztatu osotasuna
-js-title = JavaScript
-js-incremental-gc = ZB inkrementala
 a11y-title = Erabilgarritasuna
 a11y-activated = Aktibatuta
 a11y-force-disabled = Eragotzi erabilgarritasuna
@@ -122,9 +123,7 @@ restart-in-safe-mode-label = Berrabiarazi gehigarriak desgaituta…
 
 audio-backend = Audio backend-a
 max-audio-channels = Gehienezko kanalak
-channel-layout = Hobetsitako kanal-diseinua
 sample-rate = Hobetsitako lagin-abiadura
-
 media-title = Multimedia
 media-output-devices-title = Irteerako gailuak
 media-input-devices-title = Sarrerako gailuak
@@ -274,10 +273,8 @@ unknown-failure = Zerrenda beltzean; { $failureCode } hutsegite-kodea
 
 d3d11layers-crash-guard = D3D11 konposatzailea
 d3d11video-crash-guard = D3D11 bideo-deskodetzailea
-d3d9video-crash-buard = D3D9 bideo-deskodetzailea
 d3d9video-crash-guard = D3D9 bideo-deskodetzailea
 glcontext-crash-guard = OpenGL
-
 wmfvpxvideo-crash-guard = WMF VPX bideo-deskodetzailea
 
 reset-on-next-restart = Berrezarri hurrengo berrabiaraztean
@@ -337,7 +334,6 @@ touch-enabled = ukipen bidezko sarrera gaituta
 drag-enabled = korritze-barra arrastatzea gaituta
 keyboard-enabled = teklatua gaituta
 autoscroll-enabled = autoscroll gaituta
-
 zooming-enabled = Atximur-zoom leuna gaituta
 
 ## Variables

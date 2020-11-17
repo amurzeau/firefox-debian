@@ -5,66 +5,53 @@
 permissions-window =
     .title = Exceções
     .style = width: 45em
-
 permissions-close-key =
     .key = W
-
 permissions-address = Endereço do site
     .accesskey = e
-
 permissions-block =
     .label = Bloquear
     .accesskey = B
-
 permissions-session =
     .label = Permitir nesta sessão
     .accesskey = n
-
 permissions-allow =
     .label = Permitir
     .accesskey = P
-
 permissions-site-name =
     .label = Site
-
 permissions-status =
     .label = Estado
-
 permissions-remove =
     .label = Remover site
     .accesskey = R
-
 permissions-remove-all =
     .label = Remover todos os sites
     .accesskey = t
-
 permissions-button-cancel =
     .label = Cancelar
     .accesskey = C
-
 permissions-button-ok =
     .label = Salvar alterações
     .accesskey = S
-
+permission-dialog =
+    .buttonlabelaccept = Salvar alterações
+    .buttonaccesskeyaccept = S
 permissions-autoplay-menu = Padrão em todos os sites:
-
 permissions-searchbox =
     .placeholder = Pesquisar sites
-
 permissions-capabilities-autoplay-allow =
     .label = Permitir áudio e vídeo
 permissions-capabilities-autoplay-block =
     .label = Bloquear áudio
 permissions-capabilities-autoplay-blockall =
     .label = Bloquear áudio e vídeo
-
 permissions-capabilities-allow =
     .label = Permitir
 permissions-capabilities-block =
     .label = Bloquear
 permissions-capabilities-prompt =
     .label = Sempre perguntar
-
 permissions-capabilities-listitem-allow =
     .value = Permitir
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = Nome de servidor inválido
 permissions-invalid-uri-label = Digite um nome de servidor válido
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = Exceções - Bloqueio de Conteúdo
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Você desativou o bloqueio de conteúdo nestes sites.
 
 permissions-exceptions-etp-window =
     .title = Exceções à proteção aprimorada contra rastreamento
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Sites permitidos - Instalação de extensões
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Você pode especificar que sites têm permissão para instalar extensões. Digite o endereço exato de um site e clique em Permitir.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Exceções - Reprodução automática
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Você pode especificar que sites têm ou não permissão para reproduzir mídia com som automaticamente. Digite o endereço do site desejado e clique em Bloquear ou Permitir.
 
 ## Site Permissions - Autoplay
 

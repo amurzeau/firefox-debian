@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Brabhsadh prìobhaideach)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Brabhsadh prìobhaideach)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Brabhsadh prìobhaideach)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Brabhsadh prìobhaideach)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -112,6 +110,9 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Nas lugha de sgrìobhadh: Dèan lorg le { $engineName } o bhàr an t-seòlaidh fhèin.
 urlbar-search-tips-redirect-2 = Dèan lorg ann am bàr an t-seòlaidh ’s chì thu molaidhean o { $engineName } agus on eachdraidh bhrabhsaidh agad.
 
+## Local search mode indicator labels in the urlbar
+
+
 ##
 
 urlbar-geolocation-blocked =
@@ -138,12 +139,10 @@ urlbar-midi-blocked =
     .tooltiptext = Bhac thu inntrigeadh MIDI air an làrach-lìn seo.
 urlbar-install-blocked =
     .tooltiptext = Bhac thu stàladh de thuilleadain air an làrach-lìn seo.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Deasaich an comharra-lìn seo ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -157,6 +156,57 @@ page-action-manage-extension =
     .label = Stiùirich an leudachan...
 page-action-remove-from-urlbar =
     .label = Thoir air falbh o bhàr an t-seòlaidh
+
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Cuir { $tabCount } taba gun uidheam
+            [two] Cuir { $tabCount } thaba gun uidheam
+            [few] Cuir { $tabCount } tabaichean gun uidheam
+           *[other] Cuir { $tabCount } taba gun uidheam
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Cuir { $tabCount } taba gun uidheam
+            [two] Cuir { $tabCount } thaba gun uidheam
+            [few] Cuir { $tabCount } tabaichean gun uidheam
+           *[other] Cuir { $tabCount } taba gun uidheam
+        }
+page-action-pocket-panel =
+    .label = Sàbhail an duilleag ann am { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Dèan lethbhreac dhen cheangal
+page-action-copy-url-urlbar =
+    .tooltiptext = Dèan lethbhreac dhen cheangal
+page-action-email-link-panel =
+    .label = Cuir an dealbh air a' phost-d…
+page-action-email-link-urlbar =
+    .tooltiptext = Cuir an dealbh air a' phost-d…
+page-action-share-url-panel =
+    .label = Co-roinn
+page-action-share-url-urlbar =
+    .tooltiptext = Co-roinn
+page-action-share-more-panel =
+    .label = Barrachd…
+page-action-send-tab-not-ready =
+    .label = A’ sioncronachadh nan uidheam...
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Prìnich an taba
+page-action-pin-tab-urlbar =
+    .tooltiptext = Prìnich an taba
+page-action-unpin-tab-panel =
+    .label = Neo-phrìnich an taba
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Neo-phrìnich an taba
 
 ## Auto-hide Context Menu
 
@@ -172,14 +222,12 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Dèan lorg leis na leanas an turas seo:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Roghainnean luirg
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Atharraich na roghainnean luirg
-
 search-one-offs-context-open-new-tab =
     .label = Lorg ann an taba ùr
     .accesskey = t
@@ -190,15 +238,21 @@ search-one-offs-context-set-as-default-private =
     .label = Suidhich mar an t-einnsean-luirg bunaiteachd ann an uinneagan prìobhaideach
     .accesskey = S
 
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Seall an deasaiche nuair a nithear sàbhaladh
     .accesskey = S
-
 bookmark-panel-done-button =
     .label = Dèanta
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -281,18 +335,52 @@ urlbar-default-placeholder =
     .defaultPlaceholder = Cuir ann lorg no seòladh
 urlbar-placeholder =
     .placeholder = Cuir ann lorg no seòladh
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Lorg le { $name } no cuir ann seòladh
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Tha am brabhsair fo smachd cèin
 urlbar-switch-to-tab =
     .value = Gearr leum gun taba:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Leudachan:
-
 urlbar-go-button =
     .tooltiptext = Rach dhan t-seòladh a tha ann am bàr an t-seòlaidh
 urlbar-page-action-button =
     .tooltiptext = Gnìomhan na duilleige
 urlbar-pocket-button =
     .tooltiptext = Sàbhail ann am { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Lorg le { $engine }
+urlbar-result-action-switch-tab = Gearr leum gun taba
+urlbar-result-action-visit = Tadhail air
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ’na làn-sgrìn a-nis
+fullscreen-warning-no-domain = Tha an sgrìobhainn seo ’na làn-sgrìn a-nis
+fullscreen-exit-button = Fàg an làn-sgrìn (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Fàg an làn-sgrìn (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = Tha smachd aig <span data-l10n-name="domain">{ $domain }</span> air an tomhaire agad. Brùth Esc airson an smachd a thilleadh dhut fhèin.
+pointerlock-warning-no-domain = Tha smachd aig an sgrìobhainn seo air an tomhaire agad. Brùth Esc airson an smachd a thilleadh dhut fhèin.

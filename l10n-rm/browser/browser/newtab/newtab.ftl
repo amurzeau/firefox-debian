@@ -51,6 +51,10 @@ newtab-confirm-delete-history-p1 = Vuls ti propi stizzar mintga instanza da ques
 # "This action" refers to deleting a page from history.
 newtab-confirm-delete-history-p2 = Questa acziun na po betg vegnir revocada.
 
+## Top Sites - Sponsored label
+
+newtab-topsite-sponsored = Sponsurisà
+
 ## Context Menu - Action Tooltips.
 
 # General tooltip for context menus.

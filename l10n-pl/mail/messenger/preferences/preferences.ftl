@@ -10,6 +10,8 @@ preferences-title =
             [windows] Opcje
            *[other] Preferencje
         }
+category-list =
+    .aria-label = Kategorie
 pane-general-title = Ogólne
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,7 +43,6 @@ composition-addressing-header = Adresowanie
 privacy-main-header = Prywatność
 privacy-passwords-header = Hasła
 privacy-junk-header = Niechciana poczta
-privacy-data-collection-header = Zbieranie i wykorzystywanie danych
 collection-header = Dane zbierane przez program { -brand-short-name }
 collection-description = Dążymy do zapewnienia odpowiedniego wyboru i zbierania wyłącznie niezbędnych danych, aby dostarczać i doskonalić program { -brand-short-name } dla nas wszystkich. Zawsze prosimy o pozwolenie przed przesłaniem danych osobistych.
 collection-privacy-notice = Prywatność
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = U
 confirm-messenger-language-change-description = Uruchom program { -brand-short-name } ponownie, aby zastosować te zmiany
 confirm-messenger-language-change-button = Zastosuj i uruchom ponownie
-update-pref-write-failure-title = Niepowodzenie zapisu
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Nie można zapisać preferencji. Nie można zapisać do pliku: { $path }
 update-setting-write-failure-title = Błąd podczas zachowywania preferencji aktualizacji
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -91,12 +88,11 @@ update-in-progress-ok-button = &Odrzuć
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Kontynuuj
+account-button = Ustawienia kont
 addons-button = Rozszerzenia i motywy
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Potwierdź swoją tożsamość, aby utworzyć hasło główne.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Aby utworzyć hasło główne, wprowadź swoje dane logowania do systemu Windows. Pomaga to chronić bezpieczeństwo Twoich kont.
 # This message can be seen by trying to add a Master Password.
@@ -104,6 +100,13 @@ master-password-os-auth-dialog-message-win = Aby utworzyć hasło główne, wpro
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = utworzenie hasła głównego
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Aby utworzyć hasło główne, wprowadź swoje dane logowania do systemu Windows. Pomaga to chronić bezpieczeństwo Twoich kont.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = utworzenie hasła głównego
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -534,13 +537,22 @@ passwords-description = { -brand-short-name } może zachować hasła dla wszystk
 passwords-button =
     .label = Zachowane hasła…
     .accesskey = Z
-master-password-description = Hasło główne chroni wszystkie hasła użytkownika ale musi być ono wprowadzane jednorazowo dla każdej sesji.
+master-password-description = Hasło główne chroni wszystkie hasła użytkownika, ale musi być ono wprowadzane jednorazowo dla każdej sesji.
 master-password-label =
     .label = Używaj hasła głównego
     .accesskey = U
 master-password-button =
     .label = Zmień hasło główne…
     .accesskey = h
+primary-password-description = Hasło główne chroni wszystkie hasła użytkownika, ale musi być ono wprowadzane jednorazowo dla każdej sesji.
+primary-password-label =
+    .label = Używaj hasła głównego
+    .accesskey = U
+primary-password-button =
+    .label = Zmień hasło główne…
+    .accesskey = h
+forms-primary-pw-fips-title = Program pracuje obecnie w trybie FIPS. Tryb FIPS wymaga niepustego hasła głównego.
+forms-master-pw-fips-desc = Zmiana hasła się nie powiodła.
 junk-description = W tym miejscu można zmienić domyślne ustawienia filtru niechcianej poczty. Aby zmienić ustawienia niechcianej poczty dotyczące konkretnego konta, należy przejść do Konfiguracji kont.
 junk-label =
     .label = W przypadku ręcznego oznaczenia wiadomości jako niechcianej:

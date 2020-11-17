@@ -5,66 +5,53 @@
 permissions-window =
     .title = अपवाद
     .style = width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = वेब साइट पता
     .accesskey = d
-
 permissions-block =
     .label = रोकें
     .accesskey = B
-
 permissions-session =
     .label = सत्र के लिए अनुमति दें
     .accesskey = S
-
 permissions-allow =
     .label = अनुमति दें
     .accesskey = A
-
 permissions-site-name =
     .label = वेबसाइट
-
 permissions-status =
     .label = स्थिति
-
 permissions-remove =
     .label = वेबसाइट हटाएँ
     .accesskey = R
-
 permissions-remove-all =
     .label = सभी वेबसाइटों को हटाएँ
     .accesskey = e
-
 permissions-button-cancel =
     .label = रद्द करें
     .accesskey = C
-
 permissions-button-ok =
     .label = परिवर्तन सहेजें
     .accesskey = S
-
+permission-dialog =
+    .buttonlabelaccept = परिवर्तन सहेजें
+    .buttonaccesskeyaccept = S
 permissions-autoplay-menu = सभी वेबसाइटों के लिए डिफ़ॉल्ट:
-
 permissions-searchbox =
     .placeholder = वेबसाइट खोजें
-
 permissions-capabilities-autoplay-allow =
     .label = ऑडियो और वीडियो की अनुमति दें
 permissions-capabilities-autoplay-block =
     .label = ऑडियो ब्लॉक करें
 permissions-capabilities-autoplay-blockall =
     .label = ऑडियो और वीडियो ब्लॉक करें
-
 permissions-capabilities-allow =
     .label = अनुमति दें
 permissions-capabilities-block =
     .label = रोकें
 permissions-capabilities-prompt =
     .label = हमेशा पूछें
-
 permissions-capabilities-listitem-allow =
     .value = अनुमति दें
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = अवैध मेजबाननाम दि�
 permissions-invalid-uri-label = एक वैध मेजबाननाम डालें
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = अपवाद - सामग्री अवरोधन
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = इन वेबसाइटों के लिए अंतर्वस्तु ब्लॉकिंग अक्षम कर दिया है।
 
 permissions-exceptions-etp-desc = आपने इन वेबसाइटों पर सुरक्षा बंद कर दी है।
 
@@ -113,13 +95,6 @@ permissions-exceptions-addons-window =
     .title = अनुमत वेबसाइटें - एड-ऑन अधिष्ठापन
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = कौन-सी वेबसाइटें सहयुक्तियों का संस्थापन करेंगी यह आपके हाथ में है. जिनको आप यह अनुमति देना चाहते हैं उनका सही वेब पता लिखें और अनुमति दें पर क्लिक करें.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = अपवाद - ऑटोप्ले
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = आप चुन सकते हैं कि किन वेबसाइटों को ध्वनि के साथ मीडिया को स्वतः रूप से हमेशा या कभी नहीं चलाने की अनुमति है. उस वेबसाइट का पता दर्ज करें जिसे आप प्रबंधित करना चाहते हैं फिर ब्लॉक करें या अनुमति दें पर क्लिक करें.
 
 ## Site Permissions - Autoplay
 

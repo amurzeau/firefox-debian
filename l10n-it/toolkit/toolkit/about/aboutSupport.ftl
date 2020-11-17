@@ -4,6 +4,7 @@
 
 page-title = Informazioni per la risoluzione dei problemi
 page-subtitle = Questa pagina contiene informazioni tecniche che potrebbero risultare utili per risolvere eventuali problemi. Per le risposte alle domande più comuni a proposito di { -brand-short-name }, consultare il <a data-l10n-name="support-link">sito web dedicato al supporto</a>.
+
 crashes-title = Segnalazioni di arresto anomalo
 crashes-id = ID segnalazione
 crashes-send-date = Inviata
@@ -14,6 +15,12 @@ extensions-name = Nome
 extensions-enabled = Attiva
 extensions-version = Versione
 extensions-id = ID
+support-addons-title = Componenti aggiuntivi
+support-addons-name = Nome
+support-addons-type = Tipo
+support-addons-enabled = Attivo
+support-addons-version = Versione
+support-addons-id = ID
 security-software-title = Software di sicurezza
 security-software-type = Tipo
 security-software-name = Nome
@@ -48,6 +55,7 @@ app-basics-service-workers = Service worker registrati
 app-basics-profiles = Profili
 app-basics-launcher-process-status = Processo launcher
 app-basics-multi-process-support = Finestre multiprocesso
+app-basics-fission-support = Finestre Fission
 app-basics-remote-processes-count = Processi remoti
 app-basics-enterprise-policies = Criteri a livello aziendale
 app-basics-location-service-key-google = Chiave servizio Google Location
@@ -60,6 +68,12 @@ show-dir-label =
         [windows] Apri cartella
        *[other] Apri percorso
     }
+environment-variables-title = Variabili d’ambiente
+environment-variables-name = Nome
+environment-variables-value = Valore
+experimental-features-title = Funzioni sperimentali
+experimental-features-name = Nome
+experimental-features-value = Valore
 modified-key-prefs-title = Preferenze importanti modificate
 modified-prefs-name = Nome
 modified-prefs-value = Valore
@@ -82,8 +96,6 @@ graphics-desktop-environment = Ambiente desktop
 place-database-title = Database Places
 place-database-integrity = Integrità
 place-database-verify-integrity = Verifica integrità
-js-title = JavaScript
-js-incremental-gc = GC incrementale
 a11y-title = Accessibilità
 a11y-activated = Attivato
 a11y-force-disabled = Blocca servizi accessibilità
@@ -103,6 +115,7 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argomenti
 safe-mode-title = Prova la modalità provvisoria
 restart-in-safe-mode-label = Riavvia disattivando i componenti aggiuntivi…
+
 clear-startup-cache-title = Prova a cancellare la cache di avvio
 clear-startup-cache-label = Cancella cache di avvio…
 startup-cache-dialog-title = Cancellazione cache di avvio
@@ -113,7 +126,6 @@ restart-button-label = Riavvia
 
 audio-backend = Back-end audio
 max-audio-channels = Numero massimo di canali
-channel-layout = Layout preferito dei canali
 sample-rate = Frequenza di campionamento preferita
 roundtrip-latency = Latenza di andata e ritorno (deviazione standard)
 media-title = Media
@@ -155,6 +167,7 @@ intl-regional-prefs = Impostazioni internazionali
 remote-debugging-title = Debug remoto (protocollo Chromium)
 remote-debugging-accepting-connections = Connessioni accettate
 remote-debugging-url = URL
+
 ##
 
 # Variables
@@ -164,6 +177,7 @@ report-crash-for-days =
         [one] Segnalazioni di arresto anomalo dell’ultimo giorno
        *[other] Segnalazioni di arresto anomalo degli ultimi { $days } giorni
     }
+
 # Variables
 # $minutes (integer) - Number of minutes since crash
 crashes-time-minutes =
@@ -171,6 +185,7 @@ crashes-time-minutes =
         [one] { $minutes } minuto fa
        *[other] { $minutes } minuti fa
     }
+
 # Variables
 # $hours (integer) - Number of hours since crash
 crashes-time-hours =
@@ -178,6 +193,7 @@ crashes-time-hours =
         [one] { $hours } ora fa
        *[other] { $hours } ore fa
     }
+
 # Variables
 # $days (integer) - Number of days since crash
 crashes-time-days =
@@ -185,6 +201,7 @@ crashes-time-days =
         [one] { $days } giorno fa
        *[other] { $days } giorni fa
     }
+
 # Variables
 # $reports (integer) - Number of pending reports
 pending-reports =
@@ -192,6 +209,7 @@ pending-reports =
         [one] Tutte le segnalazioni di arresto anomalo (inclusa { $reports } in attesa nell’intervallo di tempo indicato)
        *[other] Tutte le segnalazioni di arresto anomalo (incluse { $reports } in attesa nell’intervallo di tempo indicato)
     }
+
 raw-data-copied = Dati non elaborati copiati negli appunti
 text-copied = Testo copiato negli appunti
 
@@ -204,9 +222,11 @@ blocked-mismatched-version = Bloccato a causa della non corrispondenza della ver
 # Variables
 # $driverVersion - The graphics driver version string
 try-newer-driver = Bloccato a causa della versione dei driver della scheda grafica. Aggiornare i driver alla versione { $driverVersion } o successiva.
+
 # "ClearType" is a proper noun and should not be translated. Feel free to leave English strings if
 # there are no good translations, these are only used in about:support
 clear-type-parameters = Parametri ClearType
+
 compositing = Composizione
 hardware-h264 = Decodifica hardware H264
 main-thread-no-omtc = thread principale, no OMTC
@@ -221,6 +241,7 @@ virtual-monitor-disp = Virtual Monitor Display
 
 found = Disponibile
 missing = Non presente
+
 gpu-process-pid = GPUProcessPid
 gpu-process = GPUProcess
 gpu-description = Descrizione
@@ -244,18 +265,23 @@ webgl2-version = Versione driver WebGL 2
 webgl2-driver-extensions = Estensioni driver WebGL 2
 webgl2-extensions = Estensioni WebGL 2
 blocklisted-bug = Bloccato per problemi noti
+
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
+
+support-blocklisted-bug = Bloccato per problemi noti: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Bloccato: codice non funzionante { $failureCode }
+
 d3d11layers-crash-guard = D3D11 - Compositore
 d3d11video-crash-guard = D3D11 - Decoder video
-d3d9video-crash-buard = D3D9 - Decoder video
 d3d9video-crash-guard = D3D9 - Decoder video
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX - Decoder video
+
 reset-on-next-restart = Reimposta al prossimo avvio
 gpu-process-kill-button = Termina processo GPU
 gpu-device-reset = Ripristino dispositivo
@@ -265,8 +291,10 @@ content-uses-tiling = Usa Tiling (contenuti)
 off-main-thread-paint-enabled = Off Main Thread Painting attivo
 off-main-thread-paint-worker-count = Conteggio worker Off Main Thread Painting
 target-frame-rate = Obiettivo per frequenza fotogrammi
+
 min-lib-versions = Versione minima prevista
 loaded-lib-versions = Versione in uso
+
 has-seccomp-bpf = Seccomp-BPF (filtro chiamate di sistema)
 has-seccomp-tsync = Sincronizzazione thread seccomp
 has-user-namespaces = Namespace dell’utente
@@ -279,15 +307,18 @@ sandbox-proc-type-content = contenuti
 sandbox-proc-type-file = contenuto file
 sandbox-proc-type-media-plugin = plugin multimediale
 sandbox-proc-type-data-decoder = data decoder
+
 startup-cache-title = Cache di avvio (startup)
 startup-cache-disk-cache-path = Percorso su disco della cache
 startup-cache-ignore-disk-cache = Ignora cache su disco
 startup-cache-found-disk-cache-on-init = Trovata cache su disco durante inizializzazione
 startup-cache-wrote-to-disk-cache = Cache scritta su disco
+
 launcher-process-status-0 = Attivo
 launcher-process-status-1 = Disattivato a causa di errori
 launcher-process-status-2 = Disattivato in modo forzato
 launcher-process-status-unknown = Stato sconosciuto
+
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
@@ -300,6 +331,22 @@ multi-process-status-6 = Disattivato per mancanza supporto inserimento testo
 multi-process-status-7 = Disattivato da componenti aggiuntivi
 multi-process-status-8 = Disattivato in modo forzato
 multi-process-status-unknown = Stato sconosciuto
+
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Disattivato da esperimento
+fission-status-experiment-treatment = Attivato da esperimento
+fission-status-disabled-by-e10s-env = Disattivato da ambiente
+fission-status-enabled-by-env = Attivato da ambiente
+fission-status-disabled-by-safe-mode = Disattivato da modalità provvisoria
+fission-status-enabled-by-default = Attivato per impostaz. predefinita
+fission-status-disabled-by-default = Disattivato per impostaz. predefinita
+fission-status-enabled-by-user-pref = Attivato da utente
+fission-status-disabled-by-user-pref = Disattivato da utente
+fission-status-disabled-by-e10s-other = E10s disattivato
+
 async-pan-zoom = Panoramica/zoom asincroni (APZ)
 apz-none = nessuno
 wheel-enabled = input rotella attivo
@@ -320,3 +367,12 @@ touch-warning = input touch asincrono disattivato a causa di una preferenza non 
 policies-inactive = Disattivati
 policies-active = Attivi
 policies-error = Errore
+
+## Printing section
+
+support-printing-title = Stampa
+support-printing-troubleshoot = Risoluzione dei problemi
+support-printing-clear-settings-button = Rimuovi impostazioni di stampa salvate
+support-printing-modified-settings = Impostazioni di stampa modificate
+support-printing-prefs-name = Nome
+support-printing-prefs-value = Valore

@@ -15,6 +15,9 @@ extensions-name = Si yuguit
 extensions-enabled = Ngà 'iaj sunj
 extensions-version = Versión
 extensions-id = ID
+support-addons-name = Si yuguit
+support-addons-version = Versión
+support-addons-id = ID
 security-software-title = Softwarê nakaj rayi'î'
 security-software-type = Dugui'
 security-software-name = Si yugui
@@ -93,8 +96,6 @@ graphics-window-protocol = Chrej nikaj Bentâna
 place-database-title = Places Database
 place-database-integrity = Gâ nin
 place-database-verify-integrity = Ni'iaj si hua nin
-js-title = JavaScript
-js-incremental-gc = Sa ganako' siganinj akoo
 a11y-title = Hua gatu'
 a11y-activated = Nga 'iaj sunj
 a11y-force-disabled = Si ga'ni' gatu'
@@ -119,9 +120,7 @@ restart-in-safe-mode-label = Nayi'í ñun' nga nej sa nitaj si 'iaj sun
 
 audio-backend = Sa guni' Backend
 max-audio-channels = Kanal Max
-channel-layout = Nej kanal nihia' doj ruhuât hua
 sample-rate = Dàj nichrà' hua frecuencia garan' ruhuô'
-
 media-title = Sa ni'io'
 media-output-devices-title = Dispositivo sa ahuii
 media-input-devices-title = Dispositivo sa âtuj u
@@ -137,8 +136,6 @@ media-device-latency = 'Iaj sunj
 media-capabilities-title = Dàj nìko ga’ue gimàn multimêdia
 # List all the entries of the database.
 media-capabilities-enumerate = Ganachrūn nûmero riña basê mà dâto
-
-
 
 ##
 
@@ -164,8 +161,6 @@ intl-regional-prefs = Sa nana'uî' doj màn nichrùn'un
 remote-debugging-title = Depurasiûn remota (si protokolô Chromiun)
 remote-debugging-accepting-connections = Garāyina koneksiûn
 remote-debugging-url = URL
-
-
 
 ##
 
@@ -275,7 +270,6 @@ unknown-failure = Nej sa gire'e; daj hua ma { $failureCode }
 
 d3d11layers-crash-guard = D3D11 Nikaj ñu'unj
 d3d11video-crash-guard = D3D11 Sa Ni'io'
-d3d9video-crash-buard = D3D11 Sa Ni'io'
 d3d9video-crash-guard = D3D11 Sa Ni'io'
 glcontext-crash-guard = OpenGL
 

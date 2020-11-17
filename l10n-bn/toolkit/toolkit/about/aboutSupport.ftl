@@ -15,6 +15,9 @@ extensions-name = নাম
 extensions-enabled = সক্রিয়
 extensions-version = সংস্করণ
 extensions-id = ID
+support-addons-name = নাম
+support-addons-version = সংস্করণ
+support-addons-id = ID
 security-software-title = নিরাপত্তার সফটওয়্যার
 security-software-type = ধরণ
 security-software-name = নাম
@@ -93,8 +96,6 @@ graphics-window-protocol = উইন্ডো প্রোটোকল
 place-database-title = স্থান ডাটাবেজ
 place-database-integrity = বিশুদ্ধতা
 place-database-verify-integrity = বিশুদ্ধতা যাচাই
-js-title = জাভাস্ক্রিপ্ট
-js-incremental-gc = Incremental GC
 a11y-title = অভিগম্যতা
 a11y-activated = সক্রিয়
 a11y-force-disabled = অভিগম্যতা প্রতিরোধ
@@ -119,9 +120,7 @@ restart-in-safe-mode-label = অ্যাড-অন নিস্ক্রিয় 
 
 audio-backend = অডিও ব্যাক-এন্ড
 max-audio-channels = ম্যাক্স চ্যানেল
-channel-layout = পছন্দের চ্যানেল লেআউট
 sample-rate = পছন্দের নমুনা হার
-
 media-title = মিডিয়া
 media-output-devices-title = আউটপুট ডিভাইস
 media-input-devices-title = ইনপুট ডিভাইস
@@ -137,8 +136,6 @@ media-device-latency = যোজনী
 media-capabilities-title = মিডিয়ার ক্ষমতা
 # List all the entries of the database.
 media-capabilities-enumerate = ডাটাবেইজ তালিকাভুক্তি
-
-
 
 ##
 
@@ -164,8 +161,6 @@ intl-regional-prefs = আঞ্চলিক পছন্দসমূহ
 remote-debugging-title = রিমোট ডিবাগিং (ক্রোমিয়াম প্রোটোকল)
 remote-debugging-accepting-connections = সংযোগ গ্রহণ করা হচ্ছে
 remote-debugging-url = URL
-
-
 
 ##
 
@@ -275,7 +270,6 @@ unknown-failure = ব্লকতালিকাভুক্ত; ব্যর্
 
 d3d11layers-crash-guard = D3D11 কম্পোজিটর
 d3d11video-crash-guard = D3D11 ভিডিও ডিকোডার
-d3d9video-crash-buard = D3D9 ভিডিও ডিকোডার
 d3d9video-crash-guard = D3D9 ভিডিও ডিকোডার
 glcontext-crash-guard = OpenGL
 

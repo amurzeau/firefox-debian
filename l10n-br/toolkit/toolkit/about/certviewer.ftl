@@ -23,6 +23,7 @@ certificate-viewer-tab-title = Testeni evit { $firstCertName }
 certificate-viewer-inc-country = Bro an enrolladur
 certificate-viewer-country = Bro
 certificate-viewer-curve = Krommenn
+certificate-viewer-distribution-point = Poent skignañ
 certificate-viewer-dns-name = Anv DNS
 certificate-viewer-ip-address = Chomlec'h IP
 certificate-viewer-other-name = Anv all
@@ -74,7 +75,7 @@ certificate-viewer-authority-info-aia = Titouroù diwar-benn an aotrouniezh (AIA
 certificate-viewer-certificate-policies = Politikerezhioù an testeni
 certificate-viewer-embedded-scts = SCTs ebarzhet
 
-# This message is used as a row header in the Miscellaneous section. 
+# This message is used as a row header in the Miscellaneous section.
 # The associated data cell contains links to download the certificate.
 certificate-viewer-download = Pellgargañ
 # This message is used to replace boolean values (true/false) in several certificate fields, e.g. Certificate Authority

@@ -15,6 +15,9 @@ extensions-name = Nom
 extensions-enabled = Habilitada
 extensions-version = Versió
 extensions-id = ID
+support-addons-name = Nom
+support-addons-version = Versió
+support-addons-id = ID
 security-software-title = Programari de seguretat
 security-software-type = Tipus
 security-software-name = Nom
@@ -93,8 +96,6 @@ graphics-window-protocol = Protocol de finestres
 place-database-title = Base de dades de llocs
 place-database-integrity = Integritat
 place-database-verify-integrity = Verifica la integritat
-js-title = JavaScript
-js-incremental-gc = Recollida de deixalles incremental
 a11y-title = Accessibilitat
 a11y-activated = Activat
 a11y-force-disabled = Evita l'accessibilitat
@@ -119,9 +120,7 @@ restart-in-safe-mode-label = Reinicia amb els complements inhabilitats…
 
 audio-backend = Sistema de fons d'àudio
 max-audio-channels = Nombre màxim de canals
-channel-layout = Disposició de canals preferida
 sample-rate = Freqüència de mostratge preferida
-
 media-title = Multimèdia
 media-output-devices-title = Dispositius d'eixida
 media-input-devices-title = Dispositius d'entrada
@@ -135,8 +134,6 @@ media-device-channels = Canals
 media-device-rate = Freqüència
 media-device-latency = Latència
 media-capabilities-title = Capacitats multimèdia
-
-
 
 ##
 
@@ -160,8 +157,6 @@ intl-regional-prefs = Preferències regionals
 ## See also https://firefox-source-docs.mozilla.org/remote/
 
 remote-debugging-url = URL
-
-
 
 ##
 
@@ -263,7 +258,6 @@ unknown-failure = És a la llista de bloquejos; codi d'error { $failureCode }
 
 d3d11layers-crash-guard = Compositor D3D11
 d3d11video-crash-guard = Descodificador de vídeo D3D11
-d3d9video-crash-buard = Descodificador de vídeo D3D9
 d3d9video-crash-guard = Descodificador de vídeo D3D9
 glcontext-crash-guard = OpenGL
 

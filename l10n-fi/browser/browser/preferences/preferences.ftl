@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Vain, kun { -brand-short-name } on asetettu estämään tunnetut seuraimet
 do-not-track-option-always =
     .label = Aina
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Asetukset
-           *[other] Asetukset
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Asetukset
@@ -35,6 +29,8 @@ search-input-box =
            *[other] Hae asetuksista
         }
 managed-notice = Organisaatiosi hallitsee selaimesi asetuksia.
+category-list =
+    .aria-label = Luokat
 pane-general-title = Yleiset
 category-general =
     .tooltiptext = { pane-general-title }
@@ -50,6 +46,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name }-kokeilut
+category-experimental =
+    .tooltiptext = { -brand-short-name }-kokeilut
+pane-experimental-subtitle = Jatka varoen
+pane-experimental-search-results-header = { -brand-short-name }-kokeilut: jatka varoen
+pane-experimental-description = Lisäasetusten muuttaminen voi vaikuttaa { -brand-short-name }in suorituskykyyn tai tietoturvaan.
 help-button-label = { -brand-short-name }-tuki
 addons-button-label = Laajennukset ja teemat
 focus-search =
@@ -82,6 +84,9 @@ extension-controlled-homepage-override = Laajennus, <img data-l10n-name="icon"/>
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee Uusi välilehti -sivua.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee tätä asetusta.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Laajennus, <img data-l10n-name="icon"/> { $name }, hallitsee tätä asetusta.
@@ -365,13 +370,6 @@ update-application-warning-cross-user-setting = Tämä asetus koskee kaikkia Win
 update-application-use-service =
     .label = Asenna päivitykset taustalla toimivalla palvelulla
     .accesskey = u
-update-enable-search-update =
-    .label = Päivitä hakukoneet automaattisesti
-    .accesskey = k
-update-pref-write-failure-title = Kirjoittaminen epäonnistui
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Asetuksen tallentaminen epäonnistui. Ei voitu kirjoittaa tiedostoon: { $path }
 update-setting-write-failure-title = Päivitysasetusten tallennusvirhe
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -415,7 +413,7 @@ browsing-use-autoscroll =
     .label = Vieritä sivua automaattisesti
     .accesskey = V
 browsing-use-smooth-scrolling =
-    .label = Vieritä sivua portaattomasti
+    .label = Vieritä sivua tasaisesti
     .accesskey = e
 browsing-use-onscreen-keyboard =
     .label = Näytä kosketusnäppäimistö tarvittaessa
@@ -430,6 +428,7 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Käytä kuva kuvassa -video-ohjaimia
     .accesskey = K
 browsing-picture-in-picture-learn-more = Lue lisää
+browsing-media-control-learn-more = Lue lisää
 browsing-cfr-recommendations =
     .label = Suosittele laajennuksia selaamisen yhteydessä
     .accesskey = S
@@ -493,13 +492,14 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Ykkössivustot
 home-prefs-topsites-description = Useimmin vierailemasi sivustot
+home-prefs-topsites-by-option-sponsored =
+    .label = Sponsoroidut ykkössivustot
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = Suositukset lähteestä { $provider }
-home-prefs-recommended-by-description = Hyvää sisältöä kaikkialta verkosta, juuri sinulle
 home-prefs-recommended-by-description-update = Poikkeuksellista sisältöä ympäri internetiä, valikoijana { $provider }
 
 ##
@@ -540,7 +540,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Lisää hakupalkki työkalupalkkiin
 search-engine-default-header = Oletushakukone
-search-engine-default-desc = Valitse oletushakukone, jota käytetään osoite- ja hakupalkissa.
 search-engine-default-desc-2 = Tämä on oletushakukone, jota käytetään osoite- ja hakupalkeissa. Voit vaihtaa sen milloin hyvänsä.
 search-engine-default-private-desc-2 = Valitse eri oletushakukone vain yksityisiin ikkunoihin
 search-separate-default-engine =
@@ -563,10 +562,10 @@ search-show-suggestions-above-history-option =
     .label = Näytä hakuehdotukset osoitepalkin tuloksissa ennen selaushistoriaa
 search-show-suggestions-private-windows =
     .label = Näytä hakuehdotukset yksityisissä ikkunoissa
-suggestions-addressbar-settings = Muuta selaushistorian, kirjanmerkkien ja välilehtien ehdotusten asetuksia
 suggestions-addressbar-settings-generic = Muuta osoitepalkin muiden ehdotusten asetuksia
 search-suggestions-cant-show = Hakuehdotuksia ei näytetä osoitepalkista tehtävistä hauista, koska olet valinnut, että { -brand-short-name } ei muista historiaa.
 search-one-click-header = Hakukoneet pikavalikossa
+search-one-click-header2 = Hakuoikotiet
 search-one-click-desc = Valitse vaihtoehtoiset hakukoneet, jotka ilmestyvät osoite- ja hakupalkin alalaitaan, kun alat kirjoittaa hakusanoja.
 search-choose-engine-column =
     .label = Hakukone
@@ -578,6 +577,9 @@ search-restore-default =
 search-remove-engine =
     .label = Poista
     .accesskey = P
+search-add-engine =
+    .label = Lisää
+    .accesskey = L
 search-find-more-link = Etsi lisää hakukoneita
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -589,7 +591,6 @@ search-keyword-warning-bookmark = Annettu pikakomento on jo toisella kirjanmerki
 
 ## Containers Section
 
-containers-back-link = « Siirry takaisin
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -608,20 +609,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Poista
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Pidä oma selain aina mukanasi
 sync-signedout-description = Synkronoi kirjanmerkit, sivuhistoria, välilehdet, salasanat, lisäosat ja asetukset kaikilla laitteillasi.
-sync-signedout-account-title = Yhdistä { -fxaccount-brand-name(case: "illative") }
-sync-signedout-account-create = Eikö sinulla ole tiliä? Aloitetaan
-    .accesskey = E
-sync-signedout-account-signin =
-    .label = Kirjaudu sisään…
-    .accesskey = i
 sync-signedout-account-signin2 =
     .label = Kirjaudu { -sync-brand-short-name }-palveluun…
     .accesskey = i
@@ -635,16 +627,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Lataa Firefox <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Androidille</a> tai <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS:lle</a> ja synkronoi tietosi kannettavalle laitteellesi.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Vaihda kuva
-sync-disconnect =
-    .label = Katkaise yhteys…
-    .accesskey = y
 sync-sign-out =
     .label = Kirjaudu ulos…
     .accesskey = K
@@ -661,8 +647,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Kirjaudu sisään
     .accesskey = r
-sync-signedin-settings-header = Synkronointiasetukset
-sync-signedin-settings-desc = Valitse tiedot, jotka synkronoidaan niiden laitteiden kanssa, joilla käytät { -brand-short-name }ia.
 
 ## Sync section - enabling or disabling sync.
 
@@ -715,10 +699,6 @@ sync-engine-tabs =
     .label = Avoimet välilehdet
     .tooltiptext = Lista kaikilla synkronoiduilla laitteilla auki olevista välilehdistä
     .accesskey = V
-sync-engine-logins =
-    .label = Kirjautumistiedot
-    .tooltiptext = Tallentamasi käyttäjätunnukset ja salasanat
-    .accesskey = r
 sync-engine-logins-passwords =
     .label = Käyttäjätunnukset ja salasanat
     .tooltiptext = Tallentamasi käyttäjätunnukset ja salasanat
@@ -757,18 +737,10 @@ sync-device-name-save =
     .label = Tallenna
     .accesskey = T
 sync-connect-another-device = Yhdistä toinen laite
-sync-manage-devices = Hallitse laitteita
-sync-fxa-begin-pairing = Parita laite
-sync-tos-link = Käyttöehdot
-sync-fxa-privacy-notice = Tietosuojakäytäntö
 
 ## Privacy Section
 
 privacy-header = Selaimen tietosuoja
-
-## Privacy Section - Forms
-
-logins-header = Käyttäjätunnukset ja salasanat
 
 ## Privacy Section - Logins and Passwords
 
@@ -799,10 +771,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Käytä pääsalasanaa
     .accesskey = K
+forms-primary-pw-use =
+    .label = Käytä pääsalasanaa
+    .accesskey = K
+forms-primary-pw-learn-more-link = Lue lisää
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Muuta pääsalasanaa…
     .accesskey = M
 forms-master-pw-fips-title = Olet FIPS-tilassa ja se vaatii pääsalasanan.
+forms-primary-pw-change =
+    .label = Vaihda pääsalasana…
+    .accesskey = V
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Olet parhaillaan FIPS-tilassa. FIPS edellyttää, että pääsalasana ei ole tyhjä.
 forms-master-pw-fips-desc = Salasanan vaihto epäonnistui
 
 ## OS Authentication dialog
@@ -814,6 +801,13 @@ master-password-os-auth-dialog-message-win = Luo pääsalasana kirjoittamalla Wi
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = asettaa pääsalasanan
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Luo pääsalasana kirjoittamalla Windows-kirjautumistietosi. Tämä auttaa suojaamaan tilejäsi.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = asettaa pääsalasanan
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -880,8 +874,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Tyyppi
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Kolmannen osapuolen seuraimet
 sitedata-option-block-cross-site-trackers =
     .label = Sivustorajat ylittävät seuraimet
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -927,27 +919,9 @@ addressbar-suggestions-settings = Muuta hakukoneiden ehdotusten asetuksia
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Sisällön esto
-content-blocking-section-description = Suojaa yksityisyyttäsi selatessasi. Estä näkymätön sisältö, joka seuraa vierailemiasi sivuja ja profiloi sinua. Jonkin tällaisen sisällön estäminen saattaa nopeuttaa sivujen latautumista.
 content-blocking-enhanced-tracking-protection = Tehostettu seurannan suojaus
 content-blocking-section-top-level-description = Seuraimet seuraavat sinua verkossa ja keräävät tietoja selaustapoihisi ja kiinnostuksen kohteisiisi liittyen. { -brand-short-name } estää monet näistä seuraimista ja muita haitallisia komentosarjoja.
 content-blocking-learn-more = Lue lisää
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Tavallinen
-    .accesskey = T
-content-blocking-setting-strict =
-    .label = Tiukka
-    .accesskey = u
-content-blocking-setting-custom =
-    .label = Oma
-    .accesskey = O
-content-blocking-standard-desc = Tasapuolinen suojauksen ja suorituskyvyn välillä. Sallii jotkin seuraimet, jotta verkkosivustot toimivat.
-content-blocking-strict-description = Vahvempi suoja. Saattaa aiheuttaa joidenkin sivustojen toimimattomuutta.
-content-blocking-custom-desc = Valitse, mitä estetään.
-content-blocking-private-trackers = Tunnetut seuraimet vain yksityisissä ikkunoissa
-content-blocking-third-party-cookies = Kolmannen osapuolen seurainevästeet
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -974,25 +948,19 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Sivustorajat ylittä
 content-blocking-social-media-trackers = Sosiaalisen median seuraimet
 content-blocking-all-cookies = Kaikki evästeet
 content-blocking-unvisited-cookies = Evästeet sivustoilta, joilla ei ole käyty
-content-blocking-all-windows-trackers = Tunnetut seuraimet kaikissa ikkunoissa
 content-blocking-all-windows-tracking-content = Seurantaan tarkoitettu sisältö kaikissa ikkunoissa
 content-blocking-all-third-party-cookies = Kaikki kolmannen osapuolen evästeet
 content-blocking-cryptominers = Kryptolouhijat
 content-blocking-fingerprinters = Yksilöijät
 content-blocking-warning-title = Huomio!
-content-blocking-warning-description = Sisällön estäminen voi aiheuttaa joidenkin sivustojen toimimattomuutta. Voit poistaa eston luottamiltasi sivustoilta.
-content-blocking-learn-how = Lue miten
 content-blocking-and-isolating-etp-warning-description = Seurainten estäminen ja evästeiden eristäminen saattaa vaikuttaa joidenkin sivustojen toimivuuteen. Lataa sivu uudelleen seurainten kera ladataksesi kaiken sisällön.
 content-blocking-warning-learn-how = Lue lisää
 content-blocking-reload-description = Kaikki välilehdet tarvitsee päivittää, jotta muutokset tulevat voimaan.
 content-blocking-reload-tabs-button =
     .label = Päivitä kaikki välilehdet
     .accesskey = P
-content-blocking-trackers-label =
-    .label = Seuraimet
-    .accesskey = S
 content-blocking-tracking-content-label =
-    .label = Seurantaan tarkoitettu sisälö
+    .label = Seurantaan tarkoitettu sisältö
     .accesskey = S
 content-blocking-tracking-protection-option-all-windows =
     .label = Kaikissa ikkunoissa
@@ -1049,12 +1017,6 @@ permissions-notification-link = Lue lisää
 permissions-notification-pause =
     .label = Älä näytä ilmoituksia ennen kuin { -brand-short-name } uudelleenkäynnistetään
     .accesskey = k
-permissions-block-autoplay-media2 =
-    .label = Estä sivustoja toistamasta ääntä automaattisesti
-    .accesskey = E
-permissions-block-autoplay-media-exceptions =
-    .label = Poikkeukset…
-    .accesskey = P
 permissions-autoplay = Automaattinen toisto
 permissions-autoplay-settings =
     .label = Asetukset…
@@ -1161,6 +1123,18 @@ space-alert-under-5gb-ok-button =
     .label = Selvä
     .accesskey = S
 space-alert-under-5gb-message = { -brand-short-name(case: "ablative") } loppuu kohta levytila. Sivustojen sisällöt eivät ehkä näy oikein. Voit lukea levyn käytön optimoimisesta selaamisen sujuvoittamiseksi painamalla ”Lue lisää”.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Vain HTTPS -tila
+httpsonly-description = HTTPS:n avulla { -brand-short-name } muodostaa suojatun ja salatun yhteyden vierailemiisi sivustoihin. Useimmat sivustot tukevat HTTPS:ää, ja jos ”Vain HTTPS” -tila on käytössä, { -brand-short-name } muuntaa kaikki yhteydet käyttämään HTTPS:ää.
+httpsonly-learn-more = Lue lisää
+httpsonly-radio-enabled =
+    .label = Käytä ”Vain HTTPS” -tilaa kaikissa ikkunoissa
+httpsonly-radio-enabled-pbm =
+    .label = Käytä ”Vain HTTPS” -tilaa vain yksityisissä ikkunoissa
+httpsonly-radio-disabled =
+    .label = Älä käytä ”Vain HTTPS” -tilaa
 
 ## The following strings are used in the Download section of settings
 

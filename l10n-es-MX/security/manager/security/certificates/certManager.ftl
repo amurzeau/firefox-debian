@@ -6,6 +6,8 @@ certmgr-title =
     .title = Administrador de certificados
 certmgr-tab-mine =
     .label = Sus certificados
+certmgr-tab-remembered =
+    .label = Decisiones de autenticación
 certmgr-tab-people =
     .label = Personas
 certmgr-tab-servers =
@@ -206,6 +208,8 @@ cert-not-verified-issuer-unknown = No se pudo verificar este certificado porque 
 cert-not-verified-ca-invalid = No se pudo verificar este certificado porque el certificado de la CA no es válido.
 cert-not-verified_algorithm-disabled = No se ha podido verificar este certificado porque se ha firmado usando un algoritmo de firma que fue desactivado porque es inseguro.
 cert-not-verified-unknown = No se pudo verificar este certificado por razones desconocidas.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = No se envió certificado de cliente
 
 ## Add Security Exception dialog
 

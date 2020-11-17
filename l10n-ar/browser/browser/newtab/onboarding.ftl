@@ -13,36 +13,38 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = اطّلع على المزيد
-onboarding-button-label-try-now = جرّبه الآن
 onboarding-button-label-get-started = فلنبدأ
 
 ## Welcome modal dialog strings
 
+
+### UI strings for the simplified onboarding / multistage about:welcome
+### Various strings use a non-breaking space to avoid a single dangling /
+### widowed word, so test on various window sizes if you also want this.
+
+
+## Welcome page strings
+
 onboarding-welcome-header = مرحبًا بك في { -brand-short-name }
 onboarding-welcome-body = وصلك الآن المتصفّح.<br/>اطّلع على بقيّة منتجات { -brand-product-name }.
 onboarding-welcome-learn-more = اعرف المزيد حول فوائد ذلك.
-
-onboarding-join-form-header = انضم إلى { -brand-product-name }
 onboarding-welcome-modal-get-body = وصلك الآن المتصفّح.<br/>بقيت أمامك روائع { -brand-product-name } كلّها.
 onboarding-welcome-modal-supercharge-body = عزّز حمايات الخصوصية.
 onboarding-welcome-modal-privacy-body = صار المتصفّح عندك. الآن لنزيد من حمايات الخصوصيّة.
 onboarding-welcome-modal-family-learn-more = خُذ نظرة على طقم منتجات { -brand-product-name }.
 onboarding-welcome-form-header = ابدأ هنا
-
 onboarding-join-form-body = أدخِل عنوان البريد الإلكتروني لتبدأ.
 onboarding-join-form-email =
     .placeholder = أدخِل البريد الإلكتروني
 onboarding-join-form-email-error = مطلوب بريد إلكتروني صالح
 onboarding-join-form-legal = تعني المواصلة أنّك توافق على <a data-l10n-name="terms">شروط الخدمة</a> و<a data-l10n-name="privacy">تنويه الخصوصية</a>.
 onboarding-join-form-continue = واصِل
-
 # This message is followed by a link using onboarding-join-form-signin ("Sign In") as text.
 onboarding-join-form-signin-label = ألديك حساب؟
 # Text for link to submit the sign in form
 onboarding-join-form-signin = لِج
-
 onboarding-start-browsing-button-label = ابدأ التصفح
-
+onboarding-not-now-button-label = ليس الآن
 onboarding-cards-dismiss =
     .title = ألغِ
     .aria-label = ألغِ
@@ -58,10 +60,8 @@ onboarding-fullpage-form-email =
 onboarding-sync-welcome-header = خذ معك { -brand-product-name } أينما ذهبت
 onboarding-sync-welcome-content = تشارك العلامات، وتأريخ التصفح، وكلمات السر وباقي الإعدادات على جميع أجهزتك.
 onboarding-sync-welcome-learn-more-link = اطّلع على المزيد عن حسابات Firefox
-
 onboarding-sync-form-input =
     .placeholder = البريد الإلكتروني
-
 onboarding-sync-form-continue-button = تابِع
 onboarding-sync-form-skip-login-button = تجاوز هذه الخطوة
 
@@ -70,36 +70,115 @@ onboarding-sync-form-skip-login-button = تجاوز هذه الخطوة
 onboarding-sync-form-header = أدخِل بريدك الإلكتروني
 onboarding-sync-form-sub-header = لمواصلة استخدام { -sync-brand-name }
 
-
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = منتجات مفيدة
-
 onboarding-benefit-products-text = أنجِز أمورك مستخدما طقما من الأدوات يحترم خصوصيتك على مختلف الأجهزة لديك.
-
-onboarding-benefit-knowledge-title = المعرفة العملية
-onboarding-benefit-knowledge-text = اعرف كل ما يلزمك لتكون حذِقًا وآمنًا على شبكة الإنترنت.
-
-onboarding-benefit-privacy-title = خصوصية حقة
-
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
 # make and do. We take less data. We keep it safe. And we make sure that we are
 # transparent about how we use it."
 onboarding-benefit-privacy-text = كل ما نفعله يحترم ميثاق ”عهدة البيانات الشخصية“: استلم أدنى قدر، أبقِها آمنة ولا أسرار مخفية.
-
-
 onboarding-benefit-sync-title = { -sync-brand-short-name }
 onboarding-benefit-sync-text = خُذ معك علاماتك وكلمات السر والتأريخ وغيرها الكثير أينما تستعمل { -brand-product-name }.
-
 onboarding-benefit-monitor-title = { -monitor-brand-short-name }
 onboarding-benefit-monitor-text = استلم إشعارًا متى ما ظهرت معلوماتك الشخصية في تسريبٍ للبيانات.
-
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
 onboarding-benefit-lockwise-text = أدِر كلمات السر لديك المحمية والمحمولة.
 
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = هذا رائع، لديك الآن { -brand-short-name }
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = هيا نثبّت لك <img data-l10n-name="icon"/> <b>{ $addon-name }</b>.
+return-to-amo-add-extension-label = أضِف الامتداد
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = مرحبًا في <span data-l10n-name="zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = المتصفّح السريع والآمن والخاص وتدعمه مؤسسة غير ربحية.
+onboarding-multistage-welcome-primary-button-label = ابدأ الإعداد
+onboarding-multistage-welcome-secondary-button-label = لِج
+onboarding-multistage-welcome-secondary-button-text = ألديك حسابًا؟
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = استورِد كلمات السر <br/>والعلامات و<span data-l10n-name="zap">غيرها</span>
+onboarding-multistage-import-subtitle = انتقلت إلى { -brand-short-name } من متصفّح آخر؟ نقل أمورك إلى هنا أسهل مما تتخيل.
+onboarding-multistage-import-primary-button-label = ابدأ الاستيراد
+onboarding-multistage-import-secondary-button-label = ليس الآن
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = وجدنا المواقع أسفله في هذا الجهاز. لا يحفظ { -brand-short-name } البيانات ولا يُزامنها من متصفّحاتك الأخرى إلّا بموافقتك على استيرادها.
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = البداية: شاشة { $current } من أصل { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = اختر <span data-l10n-name="zap">مظهرًا</span>
+onboarding-multistage-theme-subtitle = خصّص { -brand-short-name } باستعمال سمة.
+onboarding-multistage-theme-primary-button-label = احفظ السمة
+onboarding-multistage-theme-secondary-button-label = ليس الآن
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = تلقائي
+onboarding-multistage-theme-label-light = فاتحة
+onboarding-multistage-theme-label-dark = داكنة
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        استعمل مظهر نظام التشغيل
+        لعرض الأزرار والقوائم والنوافذ.
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        استعمل مظهر نظام التشغيل
+        لعرض الأزرار والقوائم والنوافذ.
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        استعمل مظهرًا فاتحًا لعرض
+        الأزرار والقوائم والنوافذ.
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        استعمل مظهرًا فاتحًا لعرض
+        الأزرار والقوائم والنوافذ.
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        استعمل مظهرًا داكنًا لعرض
+        الأزرار والقوائم والنوافذ.
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        استعمل مظهرًا داكنًا لعرض
+        الأزرار والقوائم والنوافذ.
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        استعمل مظهرًا ملونًا لعرض
+        الأزرار والقوائم والنوافذ.
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        استعمل مظهرًا ملونًا لعرض
+        الأزرار والقوائم والنوافذ.
 
 ## These strings belong to the individual onboarding messages.
 
@@ -108,87 +187,50 @@ onboarding-benefit-lockwise-text = أدِر كلمات السر لديك الم�
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = التصفح الخاص
-onboarding-private-browsing-text = تصفَّح لوحدك. يحجب التصفح الخاص مع ميزة حجب المحتوى- يحجب المتعقّبات الشبكية التي تتبعك وأنت تجول الوِب.
-
-onboarding-screenshots-title = لقطات الشاشة
-onboarding-screenshots-text = التقط و احفظ لقطات الشاشة، دون مغادرة { -brand-short-name }. التقط منطقة من الصفحة أو الصفحة كلها بينما تتصفح. ثم احفظها على الوب لسهولة الوصول إليها و مشاركتها.
-
-onboarding-addons-title = الإضافات
-onboarding-addons-text = أضِف مزايا أكثر بكثير تجعل { -brand-short-name } يعمل بجِدّ أكثر لأجلك. قارن الأسعار أو راجع نشرة الطقس أو عبّر عن نفسك باستخدام سمة مخصوصة.
-
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = تصفّح بشكل أسرع، أو ربما أكثر ذكاء، أو أكثر أمنًا وذلك باستخدام الامتدادات مثل Ghostery، والذي يتيح لك حجب الإعلانات المزعجة.
-
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = زامِن
-onboarding-fxa-text = سجّل حساب { -fxaccount-brand-name } وزامن علاماتك وكلمات السر وافتح الألسنة في كل مكان تستخدم { -brand-short-name } فيه.
-
 onboarding-tracking-protection-title2 = الحماية من التعقّب
 onboarding-tracking-protection-text2 = يساعدك { -brand-short-name } بمنع المواقع من تعقّبك في الوِب، ما يصعّب الأمر على الإعلانات بمعرفة ما تفعل وأين تذهب.
 onboarding-tracking-protection-button2 = كيف تعمل
-
 onboarding-data-sync-title = خُذ إعداداتك أينما ذهبت
 # "Sync" is short for synchronize.
 onboarding-data-sync-text2 = زامِن علاماتك وكلمات السر وغيرها الكثير في أيّ مكان تستخدم فيه { -brand-product-name }.
 onboarding-data-sync-button2 = لِج إلى { -sync-brand-short-name }
-
 onboarding-firefox-monitor-title = اعلم متى يحدث تسرّب بيانات
-onboarding-firefox-monitor-text = يراقب { -monitor-brand-name } وينبّهك لو ظهر بريدك الإلكتروني في أيّ تسرّب بيانات جديد.
 onboarding-firefox-monitor-text2 = يراقب { -monitor-brand-name } وينبّهك لو ظهر بريدك الإلكتروني في أيّ تسريبٍ جديد للبيانات.
 onboarding-firefox-monitor-button = سجّل لتصلك التنبيهات
-
 onboarding-browse-privately-title = تصفَّح بخصوصية
 onboarding-browse-privately-text = يمسح التصفح الخاص تأريخ البحث والتصفح ليُبقيه سرًا على أي شخص يستخدم هذا الحاسوب.
 onboarding-browse-privately-button = افتح نافذة خاصة
-
 onboarding-firefox-send-title = أبقِ ملفاتك التي شاركتها خاصّة
 onboarding-firefox-send-text2 = ارفع ملفاتك إلى { -send-brand-name } وشاركها عبر تعميتها من الطرفين كما وفي رابط ينقضي أجله تلقائيا.
 onboarding-firefox-send-button = جرّب { -send-brand-name }
-
 onboarding-mobile-phone-title = نزّل { -brand-product-name } على المحمول
 onboarding-mobile-phone-text = نزّل { -brand-product-name } على آي‌أوإس وأندرويد لتُزامن بياناتك عبر مختلف الأجهزة.
 # "Mobile" is short for mobile/cellular phone, "Browser" is short for web
 # browser.
 onboarding-mobile-phone-button = نزّل متصفّح المحمول
-
 onboarding-send-tabs-title = أرسِل الألسنة إلى ذاتك الأخرى مباشرةً
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
-onboarding-send-tabs-text = تُشارك خاصية إرسال الألسنة الصفحات بين أجزتك بسهولة تامة دون نسخ شيء ولا مغادرة المتصفّح.
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
 onboarding-send-tabs-text2 = شارِك الصفحات بين أجهزتك بسهولة تامة دون نسخ الروابط يدويًا أو ترك المتصفّح.
 onboarding-send-tabs-button = ابدأ استعمال ميزة «إرسال الألسنة»
-
 onboarding-pocket-anywhere-title = اقرأ واستمع إلى ما ترغب أينما كنت
 onboarding-pocket-anywhere-text2 = احفظ ما تحبّ من محتوى وتصفّحه دون اتصال عبر تطبيق { -pocket-brand-name }. بهذا تقرأه وتسمعه وتطالعه متى ما أردت وحينما تشاء.
 onboarding-pocket-anywhere-button = جرّب { -pocket-brand-name }
-
-onboarding-lockwise-passwords-title = خُذ معك كلمات السر أينما ذهبت
-onboarding-lockwise-passwords-text2 = حافظ على كلمات السر التي حفظتها آمنة ولِج إلى حساباتك عبر { -lockwise-brand-name } ودون عناء.
-onboarding-lockwise-passwords-button2 = نزّل التطبيق
-
 onboarding-lockwise-strong-passwords-title = أنشِئ كلمات سر قوية وخزّنها
 onboarding-lockwise-strong-passwords-text = يصنع { -lockwise-brand-name } كلمات سرّ قوية مباشرةً ويحفظها كلها في مكان واحد.
 onboarding-lockwise-strong-passwords-button = أدِر جلسات الولوج
-
 onboarding-facebook-container-title = اضبط حدود فيسبوك
 onboarding-facebook-container-text2 = يفصل { -facebook-container-brand-name } ملفك الشخصي عن المعلومات الأخرى، وهكذا تكون مهمة فيسبوك في إيصال الإعلانات إليك أصعب وأصعب.
 onboarding-facebook-container-button = أضِف الامتداد
-
-
 onboarding-import-browser-settings-title = استورِد العلامات وكلمات السر وغيرها
 onboarding-import-browser-settings-text = ادخُل صلب الموضوع بأخذ مواقعك وإعداداتك على كروم معك.
 onboarding-import-browser-settings-button = استورِد بيانات كروم
-
 onboarding-personal-data-promise-title = صمّمناه ليكون خاصًا
 onboarding-personal-data-promise-text = تتعامل { -brand-product-name } مع بياناتك باحترام شديد ذلك باستلام أقلّ قدر منها، وحمايتها وتوضيح كيفية استعمالها لها بأقصى شفافية ممكنة.
 
 ## Message strings belonging to the Return to AMO flow
 
 return-to-amo-sub-header = هذا رائع، لديك الآن { -brand-short-name }
-
 # <icon></icon> will be replaced with the icon belonging to the extension
 #
 # Variables:

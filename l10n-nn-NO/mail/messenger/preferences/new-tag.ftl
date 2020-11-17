@@ -8,3 +8,7 @@ tag-dialog-window =
 tag-name-label =
     .value = Merkelappnamn:
     .accesskey = N
+
+tag-color-label =
+    .value = Farge:
+    .accesskey = F

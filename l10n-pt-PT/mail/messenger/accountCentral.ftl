@@ -52,6 +52,8 @@ about-paragraph = O Thunderbird é a solução de código aberto líder para cli
 about-paragraph-2 = <b>O Thunderbird é financiado por utilizadores como você! Se gosta do Thunderbird, considere fazer um donativo.</b> A melhor forma de garantir que o Thunderbird permanece disponível é
 about-donation = fazer um donativo
 
+about-paragraph-consider-donation = <b>O Thunderbird é financiado por utilizadores como você! Se gosta do Thunderbird, considere fazer um donativo.</b> A melhor forma para si de garantir que o Thunderbird se mantém disponível é <a data-l10n-name="donation-link">fazer um donativo.</a>
+
 explore-link = Explorar as funcionalidades
 support-link = Apoio
 involved-link = Participar

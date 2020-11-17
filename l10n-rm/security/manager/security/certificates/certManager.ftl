@@ -18,6 +18,7 @@ certmgr-mine = Ti has certificats da questas organisaziuns che identifitgeschan 
 certmgr-remembered = Quests certificats vegnan utilisads per t'identifitgar visavi websites
 certmgr-people = Ti has certificats memorisads che identifitgeschan questas persunas
 certmgr-servers = Ti has certificats memorisads che identifitgeschan quests servers
+certmgr-server = Questas endataziuns identifitgeschan las excepziuns da las errurs da certificats da servers
 certmgr-ca = Ti has certificats memorisads che identifitgeschan quests posts da certificaziun
 certmgr-detail-general-tab-title =
     .label = General
@@ -65,9 +66,9 @@ certmgr-token-name =
 certmgr-begins-on = Cumenza ils
 certmgr-begins-label =
     .label = Cumenza ils
-certmgr-expires-on = Scroda ils
+certmgr-expires-on = Scada ils
 certmgr-expires-label =
-    .label = Scroda ils
+    .label = Scada ils
 certmgr-email =
     .label = Adressa dad e-mail
 certmgr-serial =
@@ -161,6 +162,10 @@ delete-ssl-cert-title =
     .title = Stizzar las reglas d'excepziun per il certificat da servers
 delete-ssl-cert-confirm = Duain questas reglas d'excepziun da server propi vegnir stizzadas?
 delete-ssl-cert-impact = Sche ti stizzas ina regla d'excepziun da server, vegnan las controllas da segirezza normalas restauradas per quest server ed el sto mussar in certificat valid.
+delete-ssl-override-title =
+    .title = Stizzar l'excepziun dal certificat da server
+delete-ssl-override-confirm = Vuls ti propi stizzar questa excepziun dal certificat da server?
+delete-ssl-override-impact = Sche ti stizzas ina excepziun da server, vegnan las controllas da segirezza normalas restauradas per quest server ed el sto utilisar in certificat valid.
 delete-ca-cert-title =
     .title = Stizzar u betg pli fidar a certificats CS
 delete-ca-cert-confirm = Ti has dumandà da stizzar quests certificats CA. Per certificats integrads vegn tut la fidanza allontanada, cun il medem effect. Es ti segir che ti vuls stizzar u betg pli fidar?
@@ -208,6 +213,15 @@ cert-not-verified-issuer-unknown = Impussibel da verifitgar quest certificat, pe
 cert-not-verified-ca-invalid = Impussibel da verifitgar quest certificat, perquai ch'il certificat CA è nunvalid.
 cert-not-verified_algorithm-disabled = Impussibel da verifitgar quest certificat perquai ch'el è vegnì suttascrit cun in algoritmus da suttascriver ch'è vegnì deactivà perquai che quest algoritmus n'è betg segir.
 cert-not-verified-unknown = Impussibel da verifitgar quest certificat per motivs nunenconuschents.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Na trametter nagin certificat da client
+# Used when no cert is stored for an override
+no-cert-stored-for-override = (Betg memorisà)
+
+## Used to show whether an override is temporary or permanent
+
+permanent-override = Permanent
+temporary-override = Temporar
 
 ## Add Security Exception dialog
 

@@ -53,7 +53,10 @@ no-migration-sources = Neniu programo, enhavanta legosignojn, historion aŭ pasv
 import-source-page-title = Importi agordojn kaj datumojn
 import-items-page-title = Elementoj importotaj
 import-items-description = Elekti elementojn importotajn:
-import-migrating-page-title = Importanta…
+import-permissions-page-title = Bonvolu doni permesojn al { -brand-short-name }
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS postulas ke vi eksplicite permesu al { -brand-short-name } aliri la legosignojn de Safari. Alklaku "Daŭrigi" kaj elektu la dosieron "Bookmarks.plist" en la aperota dosiermalferma panelo.
+import-migrating-page-title = Enporto…
 import-migrating-description = La jenaj elementoj estas nuntempe importataj…
 import-select-profile-page-title = Elekti profilon
 import-select-profile-description = Eblas importi el la jenaj profiloj:
@@ -88,6 +91,7 @@ imported-edge-reading-list = Legolisto (de Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

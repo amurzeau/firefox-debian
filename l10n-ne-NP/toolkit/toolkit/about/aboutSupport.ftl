@@ -15,6 +15,9 @@ extensions-name = नाम
 extensions-enabled = सक्षम पारिएको
 extensions-version = संस्करण
 extensions-id = ID
+support-addons-name = नाम
+support-addons-version = संस्करण
+support-addons-id = ID
 security-software-title = सुरक्षा सफ्टवेयर
 security-software-type = प्रकार
 security-software-name = नाम
@@ -75,8 +78,6 @@ graphics-workarounds-title = कार्यक्षेत्र
 place-database-title = ठाउँहरूको डाटाबेस
 place-database-integrity = समग्रता
 place-database-verify-integrity = समग्रता रूजु गर्नुहोस्
-js-title = JavaScript
-js-incremental-gc = Incremental GC
 a11y-title = पहुँचता
 a11y-activated = सक्रिय गरिएको
 a11y-force-disabled = पहुँच सेटिङ रोक्नुहोस
@@ -101,9 +102,7 @@ restart-in-safe-mode-label = एडअनहरू अक्षम पारे�
 
 audio-backend = अडियो ब्याकइन्ड
 max-audio-channels = अधिकतम च्यानलहरु
-channel-layout = रुचाइएको च्यानल आवरण
 sample-rate = रुचाइएको नमूना दर
-
 media-title = सञ्चार
 media-output-devices-title = निर्गत यन्त्रहरु
 media-input-devices-title = आगत यन्त्रहरू
@@ -137,6 +136,7 @@ intl-regional-prefs = क्षेत्रीय प्राथमिकता
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -241,7 +241,6 @@ unknown-failure = अबरुद्दसुचीत; विफल कोड {
 
 d3d11layers-crash-guard = D3D11 मिश्रणकर्ता
 d3d11video-crash-guard = D3D11 भिडियो डीकोडर
-d3d9video-crash-buard = D3D9 भिडियो डिकोडर
 d3d9video-crash-guard = D3D9 भिडियो डिकोडर
 glcontext-crash-guard = OpenGL
 

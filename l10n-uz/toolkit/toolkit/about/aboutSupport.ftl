@@ -15,6 +15,9 @@ extensions-name = Nomi
 extensions-enabled = Yoqib qo‘yilgan
 extensions-version = Versiyasi
 extensions-id = ID
+support-addons-name = Nomi
+support-addons-version = Versiyasi
+support-addons-id = ID
 app-basics-title = Ilova dastur asoslari
 app-basics-name = Nomi
 app-basics-version = Versiyasi
@@ -57,8 +60,6 @@ graphics-workarounds-title = Aylanma yo‘llar
 place-database-title = Ma’lumotlar bazasi joylashgan o‘rinlari
 place-database-integrity = Butunlik
 place-database-verify-integrity = Butunligini tekshirish
-js-title = JavaScript
-js-incremental-gc = Qo‘shimcha GC
 a11y-title = Qulaylik
 a11y-activated = Faollashtirilgan
 a11y-force-disabled = Qulaylikni namoyish qilish
@@ -75,6 +76,7 @@ audio-backend = Audio Server
 
 ##
 
+
 ## Remote Debugging
 ##
 ## The Firefox remote protocol provides low-level debugging interfaces
@@ -83,6 +85,7 @@ audio-backend = Audio Server
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -174,7 +177,6 @@ unknown-failure = Blok ro‘yxatiga qo‘shildi; xatolik kodi: { $failureCode }
 
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video Decoder
-d3d9video-crash-buard = D3D9 Video Decoder
 d3d9video-crash-guard = D3D9 Video Decoder
 glcontext-crash-guard = OpenGL
 

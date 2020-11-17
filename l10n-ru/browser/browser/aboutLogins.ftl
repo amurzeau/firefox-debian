@@ -1,11 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Логины и пароли
@@ -32,6 +27,7 @@ menu =
     .title = Открыть меню
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Импорт из другого браузера…
+about-logins-menu-menuitem-import-from-a-file = Импорт из файла…
 about-logins-menu-menuitem-export-logins = Экспорт логинов…
 menu-menuitem-preferences =
     { PLATFORM() ->
@@ -72,13 +68,15 @@ about-logins-list-item-vulnerable-password-icon =
 
 ## Introduction screen
 
-login-intro-heading = Ищите сохранённые логины? Настройте { -sync-brand-short-name(case: "accusative") }.
+login-intro-heading = Ищете сохранённые логины? Настройте { -sync-brand-short-name(case: "accusative") }.
+about-logins-login-intro-heading-logged-out = Ищете сохранённые логины? Настройте { -sync-brand-short-name(case: "accusative") } или импортируйте их.
 about-logins-login-intro-heading-logged-in = Синхронизированных логинов не найдено.
 login-intro-description = Если вы сохранили ваши логины в { -brand-product-name } на другом устройстве, то вот как получить к ним доступ здесь:
 login-intro-instruction-fxa = Создайте или войдите в ваш { -fxaccount-brand-name } на устройстве, где сохранены ваши логины
 login-intro-instruction-fxa-settings = Убедитесь, что вы установили флажок «Логины» в настройках { -sync-brand-short-name(case: "genitive") }
 about-logins-intro-instruction-help = Посетите <a data-l10n-name="help-link">Поддержку { -lockwise-brand-short-name }</a> для получения помощи
 about-logins-intro-import = Если ваши логины сохранены в другом браузере, вы можете <a data-l10n-name="import-link">импортировать их в { -lockwise-brand-short-name }</a>
+about-logins-intro-import2 = Если ваши логины сохранены не в { -brand-product-name }, вы можете <a data-l10n-name="import-browser-link">импортировать их из другого браузера</a> или <a data-l10n-name="import-file-link">из файла</a>
 
 ## Login
 
@@ -128,15 +126,19 @@ about-logins-copy-password-os-auth-dialog-message-win = Чтобы скопир�
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = скопировать сохранённый пароль
+
+## Master Password notification
+
+master-password-notification-message = Пожалуйста, введите ваш мастер-пароль для просмотра сохранённых логинов и паролей
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Чтобы экспортировать свои логины, введите ваши учётные данные для входа в Windows. Это поможет защитить безопасность ваших аккаунтов.
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = экспортировать сохранённые логины и пароли
 
-## Master Password notification
+## Primary Password notification
 
-master-password-notification-message = Пожалуйста, введите ваш мастер-пароль для просмотра сохранённых логинов и паролей
+about-logins-primary-password-notification-message = Пожалуйста, введите ваш мастер-пароль для просмотра сохранённых логинов и паролей
 master-password-reload-button =
     .label = Войти
     .accesskey = В
@@ -165,7 +167,7 @@ confirmation-dialog-cancel-button = Отмена
 confirmation-dialog-dismiss-button =
     .title = Отмена
 about-logins-confirm-remove-dialog-title = Удалить этот логин?
-confirm-delete-dialog-message = Это действие не может быть отменено.
+confirm-delete-dialog-message = Это действие нельзя отменить.
 about-logins-confirm-remove-dialog-confirm-button = Удалить
 about-logins-confirm-export-dialog-title = Экспорт логинов и паролей
 about-logins-confirm-export-dialog-message = Ваши пароли будут сохранены в виде читаемого текста (например, BadP@ssw0rd), поэтому любой, кто может открыть файл с ними, сможет их просмотреть.
@@ -214,6 +216,19 @@ about-logins-export-file-picker-export-button = Экспортировать
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
 about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] Документ CSV
+       *[other] CSV-файл
+    }
+
+## Login Import Dialog
+
+# Title of the file picker dialog
+about-logins-import-file-picker-title = Импорт файла логинов
+about-logins-import-file-picker-import-button = Импортировать
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
     { PLATFORM() ->
         [macos] Документ CSV
        *[other] CSV-файл

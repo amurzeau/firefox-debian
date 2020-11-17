@@ -50,7 +50,7 @@
 <!ENTITY sendLaterCmd.label "Titaq Na">
 <!ENTITY sendLaterCmd.keycode "VK_RETURN">
 <!ENTITY sendLaterCmd.accesskey "t">
-<!ENTITY printSetupCmd.label "Tinuk'samajïx ruxaq…">
+<!ENTITY printSetupCmd.label "Tib'an Runuk'ulem Ruxaq…">
 <!ENTITY printSetupCmd.accesskey "u">
 <!ENTITY printPreviewCmd.label "Nab'ey Tz'etoj">
 <!ENTITY printPreviewCmd.accesskey "b">
@@ -67,15 +67,9 @@
 <!ENTITY redoCmd.label "Tikamulüx">
 <!ENTITY redoCmd.key "Y">
 <!ENTITY redoCmd.accesskey "k">
-<!ENTITY cutCmd.label "Tiqupïx">
 <!ENTITY cutCmd.key "X">
-<!ENTITY cutCmd.accesskey "x">
-<!ENTITY copyCmd.label "Tiwachib'ëx">
 <!ENTITY copyCmd.key "C">
-<!ENTITY copyCmd.accesskey "w">
-<!ENTITY pasteCmd.label "Titz'ajb'äx">
 <!ENTITY pasteCmd.key "V">
-<!ENTITY pasteCmd.accesskey "j">
 <!ENTITY pasteNoFormattingCmd.key "V">
 <!ENTITY pasteAsQuotationCmd.key "o">
 <!ENTITY editRewrapCmd.accesskey "n">
@@ -90,10 +84,7 @@
 <!ENTITY reorderAttachmentsCmd.key "x">
 <!ENTITY toggleAttachmentPaneCmd.label "Rupas Taqoj">
 <!ENTITY toggleAttachmentPaneCmd.accesskey "q">
-<!ENTITY toggleAttachmentPaneCmd.key "h">
-<!ENTITY selectAllCmd.label "Ticha' Ronojel">
 <!ENTITY selectAllCmd.accesskey "r">
-<!ENTITY selectAllCmd.key "A">
 <!ENTITY findBarCmd.label "Tikanöx…">
 <!ENTITY findBarCmd.accesskey "k">
 <!ENTITY findBarCmd.key "F">
@@ -174,7 +165,7 @@
 <!ENTITY dsnMenu.accesskey "R">
 <!ENTITY deliveryFormatMenu.label "Rukaxawäch Jachoj">
 <!ENTITY deliveryFormatMenu.accesskey "R">
-<!ENTITY autoFormatCmd.label "Titz'et pa ruyonil">
+<!ENTITY autoFormatCmd.label "Ruyon Tiitz'et">
 <!ENTITY autoFormatCmd.accesskey "t">
 <!ENTITY plainTextFormatCmd.label "Xa Xe Cholan Tzij Majun Rub'anikil">
 <!ENTITY plainTextFormatCmd.accesskey "R">
@@ -207,7 +198,7 @@
 <!ENTITY messengerCmd.label "Taqoya'l &amp; Taq Rutzijol">
 <!ENTITY messengerCmd.accesskey "m">
 <!ENTITY messengerCmd.commandkey "1">
-<!ENTITY addressBookCmd.label "Kiwujil taq Ochochib'äl">
+<!ENTITY addressBookCmd.label "Kiwujil Ochochib'äl">
 <!ENTITY addressBookCmd.accesskey "o">
 <!ENTITY addressBookCmd.key "B">
 <!ENTITY accountManagerCmd2.label "Kinuk'ulem Rub'i' Taqoya'l">
@@ -248,33 +239,23 @@
 <!ENTITY printButton.tooltip "Titz'ajb'äx re rutzijol re'">
 
 <!-- Headers -->
-<!--LOCALIZATION NOTE headersSpace.style is for aligning  the From:, To: and
-    Subject: rows. It should be larger than the largest Header label  -->
-<!ENTITY headersSpace.style "width: 9em;">
-<!ENTITY fromAddr.label "Richin:">
 <!--LOCALIZATION NOTE headersSpaces.style is for aligning  the From:, To: and
     Subject: rows. It should be larger than the largest Header label  -->
+<!ENTITY headersSpace2.style "width: 8em;">
+<!ENTITY fromAddr2.label "Richin">
 <!ENTITY fromAddr.accesskey "c">
-<!ENTITY toAddr.label "Chi re:">
-<!ENTITY ccAddr.label "Cc:">
-<!ENTITY bccAddr.label "Bcc:">
-<!ENTITY replyAddr.label "Titzolïx Tzij Chi Re:">
-<!ENTITY newsgroupsAddr.label "Rumolaj tzijol:">
-<!ENTITY followupAddr.label "Titaq chik Chi Re:">
-<!ENTITY subject.label "Taqikil:">
+<!ENTITY toAddr2.label "Chi re">
+<!ENTITY ccAddr2.label "Cc">
+<!ENTITY bccAddr2.label "Bcc">
+<!ENTITY replyAddr2.label "Titzolïx Tzij Chi Re">
+<!ENTITY newsgroupsAddr2.label "Rumolaj tzijol">
+<!ENTITY followupAddr2.label "Titaq chik Chi Re">
+<!ENTITY subject2.label "Taqikil">
 <!ENTITY subject.accesskey "T">
-<!-- LOCALIZATION NOTE (attachments.accesskey) This access key character should
-     be taken from the strings of attachmentCount in composeMsgs.properties.
-     Please ensure that this access key is unique: Do not duplicate any other
-     first-level access keys of the compose window, e.g. those of main menu,
-     buttons, or labels (message headers, contacts side bar, attachment reminder
-     bar). -->
-<!ENTITY attachments.accesskey "m">
-<!ENTITY attachmentBucketHeader.tooltip "Rupas Taqoj">
 <!ENTITY attachmentBucketCloseButton.tooltip "Tewäx ri rupas taqoj">
 
 <!-- Format Toolbar, imported from editorAppShell.xhtml -->
-<!ENTITY SmileButton.tooltip "Tich'ik jun tze'n paläj">
+<!ENTITY SmileButton.tooltip "Tich'ap jun tze'n paläj">
 <!ENTITY smiley1Cmd.label "Tze'enïk">
 <!ENTITY smiley2Cmd.label "B'is">
 <!ENTITY smiley3Cmd.label "Win">
@@ -360,4 +341,4 @@
 
 <!-- Status Bar -->
 <!ENTITY languageStatusButton.tooltip "Ruch'ab'äl chojmirisanel tz'ib'anikilal">
-<!ENTITY encodingStatusPanel.tooltip "Rucholajil rucholajem tzij">
+<!ENTITY encodingStatusPanel.tooltip "Rucholajil tz'ib'atzij">

@@ -1,10 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Inicis de sessió i contrasenyes
@@ -34,6 +30,8 @@ menu =
     .title = Obre el menú
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Importa d'un altre navegador…
+about-logins-menu-menuitem-import-from-a-file = Importa d'un fitxer…
+about-logins-menu-menuitem-export-logins = Exporta els inicis de sessió…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Opcions
@@ -73,12 +71,16 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = Esteu cercant els inicis de sessió que heu desat? Configureu el { -sync-brand-short-name }.
+
+about-logins-login-intro-heading-logged-out = Esteu cercant els inicis de sessió que heu desat? Configureu el { -sync-brand-short-name } o importeu-los.
 about-logins-login-intro-heading-logged-in = No s'ha trobat cap inici de sessió sincronitzat.
 login-intro-description = Si heu desat els vostres inicis de sessió en el { -brand-product-name } des d'un altre dispositiu, aquesta és la manera de tenir-los també aquí:
 login-intro-instruction-fxa = Creeu un { -fxaccount-brand-name } o inicieu-hi la sessió des del dispositiu on teniu desats els vostres inicis de sessió
 login-intro-instruction-fxa-settings = Assegureu-vos que heu seleccionat la casella de selecció Inicis de sessió en els paràmetres del { -sync-brand-short-name }
 about-logins-intro-instruction-help = Visiteu l'<a data-l10n-name="help-link">assistència del { -lockwise-brand-short-name }</a> per obtenir més ajuda
 about-logins-intro-import = Si els vostres inicis de sessió estan desats en un altre navegador, podeu <a data-l10n-name="import-link">importar-los al { -lockwise-brand-short-name }</a>
+
+about-logins-intro-import2 = Si els vostres inicis de sessió estan desats fora del { -brand-product-name }, podeu <a data-l10n-name="import-browser-link">importar-los d'un altre navegador</a> o <a data-l10n-name="import-file-link">d'un fitxer</a>
 
 ## Login
 
@@ -134,6 +136,16 @@ about-logins-copy-password-os-auth-dialog-message-macosx = copiar la contrasenya
 ## Master Password notification
 
 master-password-notification-message = Introduïu la contrasenya mestra per veure els inicis de sessió i les contrasenyes desats
+
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message-win = Per exportar els inicis de sessió, introduïu les vostres credencials d'inici de sessió al Windows. Això ajuda a protegir la seguretat dels vostres comptes.
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message-macosx = exportar els inicis de sessió i les contrasenyes desats
+
+## Primary Password notification
+
+about-logins-primary-password-notification-message = Introduïu la contrasenya principal per veure els inicis de sessió i les contrasenyes desats
 master-password-reload-button =
     .label = Inicia la sessió
     .accesskey = I
@@ -165,6 +177,10 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Voleu eliminar aquest inici de sessió?
 confirm-delete-dialog-message = Aquesta acció no es pot desfer.
 about-logins-confirm-remove-dialog-confirm-button = Elimina
+
+about-logins-confirm-export-dialog-title = Exporta els inicis de sessió i contrasenyes
+about-logins-confirm-export-dialog-message = Les contrasenyes es desaran com a text llegible (per exemple, «malaC0ntr@senya»), de manera que qualsevol que pugui obrir el fitxer exportat les podrà veure.
+about-logins-confirm-export-dialog-confirm-button = Exporta…
 
 confirm-discard-changes-dialog-title = Voleu descartar els canvis no desats?
 confirm-discard-changes-dialog-message = Es perdran tots els canvis que no hàgiu desat.
@@ -203,3 +219,29 @@ about-logins-error-message-default = S'ha produït un error en intentar desar aq
 
 ## Login Export Dialog
 
+# Title of the file picker dialog
+about-logins-export-file-picker-title = Exporta el fitxer d'inicis de sessió
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename = inicis_sessio.csv
+about-logins-export-file-picker-export-button = Exporta
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] Document CSV
+       *[other] Fitxer CSV
+    }
+
+## Login Import Dialog
+
+# Title of the file picker dialog
+about-logins-import-file-picker-title = Importa el fitxer d'inicis de sessió
+about-logins-import-file-picker-import-button = Importa
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] Document CSV
+       *[other] Fitxer CSV
+    }

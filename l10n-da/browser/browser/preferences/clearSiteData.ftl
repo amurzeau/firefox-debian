@@ -48,3 +48,6 @@ clear-site-data-cancel =
 clear-site-data-clear =
     .label = Ryd
     .accesskey = R
+clear-site-data-dialog =
+    .buttonlabelaccept = Ryd
+    .buttonaccesskeyaccept = R

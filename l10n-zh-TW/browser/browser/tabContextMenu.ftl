@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = 移動到新視窗
     .accesskey = W
-undo-close-tab =
-    .label = 復原已關閉分頁
-    .accesskey = U
 tab-context-close-multiple-tabs =
     .label = 關閉多個分頁
     .accesskey = M
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -77,4 +78,16 @@ move-tabs =
     .accesskey = v
 move-tab =
     .label = 移動分頁
+    .accesskey = v
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+           *[other] 關閉分頁
+        }
+    .accesskey = C
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+           *[other] 移動分頁
+        }
     .accesskey = v

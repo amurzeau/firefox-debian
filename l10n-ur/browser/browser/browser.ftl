@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = کم ٹائپ کریں ، زیادہ ڈھونڈیں: اپنے ایڈریس بار  کے { $engineName } سے تلاش کریں۔
 urlbar-search-tips-redirect-2 = { $engineName } سے تجاویز اور براؤزنگ سبقات دیکھنے کے لیے پتے کی بار میں اپنی تلاش کاآغاز کریں
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = بک مارک
+urlbar-search-mode-tabs = ٹیبز
+urlbar-search-mode-history = سابقات
+
 ##
 
 urlbar-geolocation-blocked =
@@ -156,6 +162,39 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = ایکسٹینشن ہٹائیں
 
+## Page Action menu
+
+page-action-pocket-panel =
+    .label = { -pocket-brand-name } میں صفحات محوظ کریں
+page-action-copy-url-panel =
+    .label = ربط نقل کریں
+page-action-copy-url-urlbar =
+    .tooltiptext = ربط نقل کریں
+page-action-email-link-panel =
+    .label = ای میل ربط…
+page-action-email-link-urlbar =
+    .tooltiptext = ای میل ربط…
+page-action-share-url-panel =
+    .label = شیئر کریں
+page-action-share-url-urlbar =
+    .tooltiptext = شیئر کریں
+page-action-share-more-panel =
+    .label = مزید…
+page-action-send-tab-not-ready =
+    .label = آلات کی ہمہ وقت سازی کر رہے ہے…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = ٹیب پن کریں
+page-action-pin-tab-urlbar =
+    .tooltiptext = ٹیب پن کریں
+page-action-unpin-tab-panel =
+    .label = ٹیب انپن کریں
+page-action-unpin-tab-urlbar =
+    .tooltiptext = ٹیب انپن کریں
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -185,6 +224,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = نجی ونڈوں کے لیئے طے شدہ تلاش انجن بنائیں
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = بُک مارکس ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = تبز  ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = سابقات ({ $restrict })
 
 ## Bookmark Panel
 
@@ -270,6 +329,8 @@ popup-screen-sharing-not-now =
 popup-screen-sharing-never =
     .label = کبھی اجازت نہیں دیں
     .accesskey = N
+popup-silence-notifications-checkbox = اشتراک کے دوران { -brand-short-name } سے اطلاعات کو غیر فعال کریں
+popup-silence-notifications-checkbox-warning = شیئرنگ کے عمل کے دوران { -brand-short-name } اطلاعات نہیں دکھایے گا.
 
 ## WebRTC window or screen share tab switch warning
 
@@ -283,8 +344,22 @@ sharing-warning-proceed-to-tab =
 
 urlbar-default-placeholder =
     .defaultPlaceholder = تلاش کریں یا پتہ داخل کریں
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = تلاش کریں یا پتہ داخل کریں
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = ویب پر تلاش کریں
+    .aria-label = { $name } کے ساتھ تلاش کریں
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name } کے ساتھ تلاش کریں یا پتہ درج کریں
 urlbar-remote-control-notification-anchor =
     .tooltiptext = براؤزر ریموٹ کنٹرول کے تحت ہے
 urlbar-permissions-granted =
@@ -300,3 +375,43 @@ urlbar-page-action-button =
     .tooltiptext = صفحہ اعمال
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name } میں محفوظ کریں
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = نجی ونڈو میں { $engine } کے ساتھ تلاش کریں
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = نجی ونڈو میں تلاش کریں
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } سے تلاش کریں
+urlbar-result-action-switch-tab = ٹیب پر جائیں
+urlbar-result-action-visit = دورہ
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> اب پوری اسکرین پر ہے
+fullscreen-warning-no-domain = یہ دستاویز اب پوری اسکرین پر ہے
+fullscreen-exit-button = پوری سکرین سے باہر نکلیں (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = پوری سکرین سے باہر نکلیں (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> آپ کے نشان کار کا کنٹرول ہے۔ Esc دبا کر کنٹرول واپس لیں
+pointerlock-warning-no-domain = اس دستاویز کہ پاس آپ کہ نشان کار کا کنٹرول ہے ۔ کنٹرول واپس حاصل کرنے کے لیے Esc دبائیں ۔

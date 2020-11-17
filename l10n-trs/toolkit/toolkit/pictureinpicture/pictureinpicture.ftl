@@ -14,3 +14,9 @@ pictureinpicture-mute =
 pictureinpicture-unmute =
     .aria-label = Naduyingô' nanèe
 
+pictureinpicture-unpip =
+    .aria-label = Nādunikàj rakïj ñanj nan’anj
+
+pictureinpicture-close =
+    .aria-label = Nārán
+

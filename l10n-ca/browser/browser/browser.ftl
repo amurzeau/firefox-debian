@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Escriviu menys i trobeu més: Cerqueu amb { $engineName } directament des de la barra d'adreces.
 urlbar-search-tips-redirect-2 = Comenceu la vostra cerca en la barra d'adreces per veure suggeriments de { $engineName } i del vostre historial de navegació.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Adreces d'interès
+urlbar-search-mode-tabs = Pestanyes
+urlbar-search-mode-history = Historial
+
 ##
 
 urlbar-geolocation-blocked =
@@ -156,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Elimina l'extensió
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Envia la pestanya a un dispositiu
+           *[other] Envia { $tabCount } pestanyes a un dispositiu
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Envia la pestanya a un dispositiu
+           *[other] Envia { $tabCount } pestanyes a un dispositiu
+        }
+page-action-pocket-panel =
+    .label = Desa la pàgina al { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Copia l'enllaç
+page-action-copy-url-urlbar =
+    .tooltiptext = Copia l'enllaç
+page-action-email-link-panel =
+    .label = Envia l'enllaç per correu…
+page-action-email-link-urlbar =
+    .tooltiptext = Envia l'enllaç per correu…
+page-action-share-url-panel =
+    .label = Comparteix
+page-action-share-url-urlbar =
+    .tooltiptext = Comparteix
+page-action-share-more-panel =
+    .label = Més…
+page-action-send-tab-not-ready =
+    .label = S'estan sincronitzant els dispositius…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Fixa la pestanya
+page-action-pin-tab-urlbar =
+    .tooltiptext = Fixa la pestanya
+page-action-unpin-tab-panel =
+    .label = No fixis la pestanya
+page-action-unpin-tab-urlbar =
+    .tooltiptext = No fixis la pestanya
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Aquesta vegada, cerca amb:
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +238,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Defineix com a motor de cerca per defecte per a les finestres privades
     .accesskey = D
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Adreces d'interès ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Pestanyes ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Historial ({ $restrict })
 
 ## Bookmark Panel
 
@@ -212,6 +285,17 @@ identity-passive-loaded = Parts d'aquesta pàgina no són segures (com les imatg
 identity-active-loaded = Heu desactivat la protecció en aquesta pàgina.
 identity-weak-encryption = Aquesta pàgina utilitza xifratge feble.
 identity-insecure-login-forms = Les dades d'inici de sessió que introduïu en aquesta pàgina podrien estar en risc.
+identity-https-only-connection-upgraded = (actualitzat a HTTPS)
+identity-https-only-label = Mode només HTTPS
+identity-https-only-dropdown-on =
+    .label = Activat
+identity-https-only-dropdown-off =
+    .label = Desactivat
+identity-https-only-dropdown-off-temporarily =
+    .label = Desactivat temporalment
+identity-https-only-info-turn-on = Activeu-ho si voleu que el { -brand-short-name } canviï a una connexió segura quan sigui possible.
+identity-https-only-info-turn-off = Si sembla que el lloc no funciona bé, podeu provar de desactivar el mode només HTTPS per tornar-lo a carregar amb HTTP insegur.
+identity-https-only-info-no-upgrade = No s'ha pogut actualitzar la connexió des d'HTTP.
 identity-permissions =
     .value = Permisos
 identity-permissions-reload-hint = Potser cal que actualitzeu la pàgina per aplicar els canvis.
@@ -292,8 +376,42 @@ enable-devtools-popup-description = Per a usar la drecera F12, primer obriu DevT
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Escriviu una cerca o adreça
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Escriviu una cerca o adreça
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Cerca al web
+    .aria-label = Cerca amb { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Escriviu els termes de la cerca
+    .aria-label = Cerca en { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Escriviu els termes de la cerca
+    .aria-label = Cerca en les adreces d'interès
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Escriviu els termes de la cerca
+    .aria-label = Cerca en l'historial
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Escriviu els termes de la cerca
+    .aria-label = Cerca en les pestanyes
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Cerqueu amb { $name } o escriviu una adreça
 urlbar-remote-control-notification-anchor =
     .tooltiptext = El navegador està sota control remot
 urlbar-permissions-granted =
@@ -309,3 +427,54 @@ urlbar-page-action-button =
     .tooltiptext = Accions de la pàgina
 urlbar-pocket-button =
     .tooltiptext = Desa al { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Cerca amb { $engine } en una finestra privada
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Cerca en una finestra privada
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Cerca amb { $engine }
+urlbar-result-action-switch-tab = Canvia a la pestanya
+urlbar-result-action-visit = Visita
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Cerca en les adreces d'interès
+urlbar-result-action-search-history = Cerca en l'historial
+urlbar-result-action-search-tabs = Cerca en les pestanyes
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Cerca amb { $engine } directament des de la barra d'adreces
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Cerca en { $engine } directament des de la barra d'adreces
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> està a pantalla completa
+fullscreen-warning-no-domain = Aquest document està a pantalla completa
+fullscreen-exit-button = Surt de la pantalla completa (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Surt de la pantalla completa (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> té el control del punter. Premeu Esc per recuperar el control.
+pointerlock-warning-no-domain = Aquest document té el control del punter. Premeu Esc per recuperar el control.

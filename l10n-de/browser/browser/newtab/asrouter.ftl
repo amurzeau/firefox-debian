@@ -158,7 +158,7 @@ cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } kann Ident
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = Auf dieses Lesezeichen auf dem Handy zugreifen
-cfr-doorhanger-sync-bookmarks-body = Haben Sie Ihre Passwörter, Chronik und mehr überall griffbereit, wo Sie mit { -brand-product-name } angemeldet sind.
+cfr-doorhanger-sync-bookmarks-body = Haben Sie Ihre Lesezeichen, Passwörter, Chronik und mehr überall griffbereit, wo Sie mit { -brand-product-name } angemeldet sind.
 cfr-doorhanger-sync-bookmarks-ok-button = { -sync-brand-short-name } aktivieren
     .accesskey = a
 
@@ -211,6 +211,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Alle anzeigen
     .accesskey = A
+cfr-doorhanger-milestone-close-button = Schließen
+    .accesskey = S
 
 ## What’s New Panel Content for Firefox 76
 
@@ -244,3 +246,33 @@ cfr-whatsnew-protections-icon-alt = Schild-Symbol
 
 cfr-whatsnew-better-pdf-header = Besseres PDF-Erlebnis
 cfr-whatsnew-better-pdf-body = PDF-Dokumente werden jetzt direkt in { -brand-short-name } geöffnet, damit Sie ohne ein Wechseln der Anwendung weiterarbeiten können.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Ihre Privatsphäre ist uns wichtig. { -brand-short-name } leitet Ihre DNS-Anfragen jetzt falls möglich sicher an einen Partnerdienst weiter, um Sie beim Surfen zu schützen.
+cfr-doorhanger-doh-header = Sicherere, verschlüsselte DNS-Anfragen
+cfr-doorhanger-doh-primary-button = Ok, verstanden
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Deaktivieren
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Ihre Privatsphäre ist wichtig. { -brand-short-name } isoliert jetzt Websites voneinander, was es Hackern erschwert, Passwörter, Kreditkartendaten und andere vertrauliche Informationen zu stehlen.
+cfr-doorhanger-fission-header = Seitenisolierung
+cfr-doorhanger-fission-primary-button = Ok, verstanden
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Weitere Informationen
+    .accesskey = W
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Automatischer Schutz vor hinterhältigen Tracking-Taktiken
+cfr-whatsnew-clear-cookies-body = Einige Skripte zur Aktivitätenverfolgung leiten Sie auf andere Websites weiter, welche dann heimlich Cookies anlegen. { -brand-short-name } entfernt diese Cookies von nun an automatisch, damit Ihre Online-Aktivitäten nicht verfolgt werden können.
+cfr-whatsnew-clear-cookies-image-alt = Illustration für blockierten Cookie
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Mehr Mediensteuerung
+cfr-whatsnew-media-keys-body = Spielen Sie Audio oder Video direkt von Ihrer Tastatur oder Ihrem Headset ab und halten Sie sie an. So können Sie Medien ganz einfach aus einem anderen Tab, einem anderen Programm oder sogar bei gesperrtem Computer steuern. Sie können auch mit der Vorwärts- und der Rückwärts-Taste zwischen den Liedern wechseln.
+cfr-whatsnew-media-keys-button = Weitere Informationen

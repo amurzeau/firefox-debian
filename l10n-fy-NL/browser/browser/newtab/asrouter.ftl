@@ -211,6 +211,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Alles besjen
     .accesskey = A
+cfr-doorhanger-milestone-close-button = Slute
+    .accesskey = S
 
 ## What’s New Panel Content for Firefox 76
 
@@ -244,3 +246,35 @@ cfr-whatsnew-protections-icon-alt = Skildpiktogram
 
 cfr-whatsnew-better-pdf-header = Bettere PDF-ûnderfining
 cfr-whatsnew-better-pdf-body = PDF-dokuminten wurde no streekrjocht iepene yn { -brand-short-name }, wêrtroch jo wurk deunby bliuwt.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Jo privacy is wichtich. { -brand-short-name } liedt no wêr mooglik jo DNS-fersiken feilich nei in partnerservice om jo te beskermjen wylst jo sneupe.
+cfr-doorhanger-doh-header = Feiligere, fersifere DNS-lookups
+cfr-doorhanger-doh-primary-button = OK, begrepen
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Utskeakelje
+    .accesskey = U
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Jo privacy is wichtich. { -brand-short-name } isolearret, of sandboxt, websites no faninoar, wêrtroch it foar hackers dreger wurdt om wachtwurden, creditkaartnûmers en oare gefoelige ynformaasje te stellen.
+cfr-doorhanger-fission-header = Website-isolaasje
+cfr-doorhanger-fission-primary-button = OK, begrepen
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Mear ynfo
+    .accesskey = M
+# Deprecated
+cfr-doorhanger-fission-body = { -brand-short-name } hat in eksperimintele funksje Fission (website-isolaasje) foar jo ynskeakele. Troch elke website yn in apart proses te isolearjen, biedt Fission in ekstra befeiligingslaach foar jo en de troch jo besochte websites.
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Automatyske beskerming tsjin stikeme folchtaktiken
+cfr-whatsnew-clear-cookies-body = Guon trackers liede jo troch nei oare websites dy't yn it geheim cookies pleatse. { -brand-short-name } wisket dy cookies no automatysk, sadat jo net folge wurde kin.
+cfr-whatsnew-clear-cookies-image-alt = Ofbylding Cookie blokkearre
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Mear mediabetsjinning
+cfr-whatsnew-media-keys-body = Spylje of pauzearje audio of fideo streekrjocht fan jo toetseboerd of headset ôf, wêrtroch it ienfâldich wurdt om media fan in oar ljepblêd út, programma of sels wannear't jo kompjûter beskoattele is te betsjinjen. Jo kinne mei de toetsen foar foarút en efterút tusken nûmers ferspringe.
+cfr-whatsnew-media-keys-button = Mear ynfo

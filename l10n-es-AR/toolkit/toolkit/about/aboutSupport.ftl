@@ -17,6 +17,12 @@ extensions-name = Nombre
 extensions-enabled = Habilitada
 extensions-version = Versión
 extensions-id = ID
+support-addons-title = Complementos
+support-addons-name = Nombre
+support-addons-type = Tipo
+support-addons-enabled = Habilitado
+support-addons-version = Versión
+support-addons-id = ID
 security-software-title = Programa de seguridad
 security-software-type = Tipo
 security-software-name = Nombre
@@ -62,6 +68,7 @@ app-basics-service-workers = ServiceWorkers registrados
 app-basics-profiles = Perfiles
 app-basics-launcher-process-status = Proceso lanzador
 app-basics-multi-process-support = Ventanas multiproceso
+app-basics-fission-support = Ventanas de Fission
 app-basics-remote-processes-count = Procesos remotos
 app-basics-enterprise-policies = Políticas empresariales
 app-basics-location-service-key-google = Clave del servicio de localización de Google
@@ -74,6 +81,12 @@ show-dir-label =
         [windows] Abrir carpeta
        *[other] Abrir directorio
     }
+environment-variables-title = Variables de entorno
+environment-variables-name = Nombre
+environment-variables-value = Valor
+experimental-features-title = Funciones experimentales
+experimental-features-name = Nombre
+experimental-features-value = Valor
 modified-key-prefs-title = Preferencias importantes modificadas
 modified-prefs-name = Nombre
 modified-prefs-value = Valor
@@ -98,8 +111,6 @@ graphics-desktop-environment = Entorno de escritorio
 place-database-title = Base de datos de lugares
 place-database-integrity = Integridad
 place-database-verify-integrity = Verificar integridad
-js-title = JavaScript
-js-incremental-gc = GC incremental
 a11y-title = Accesibilidad
 a11y-activated = Activada
 a11y-force-disabled = Impedir accesibilidad
@@ -129,7 +140,6 @@ restart-button-label = Reiniciar
 
 audio-backend = Backend de audio
 max-audio-channels = Canales máximos
-channel-layout = Configuración de canales pincipal
 sample-rate = Frecuencia de muestreo principal
 roundtrip-latency = Latencia de ida y vuelta (desviación estándar)
 media-title = Medios
@@ -266,11 +276,13 @@ blocklisted-bug = Bloqueado por problemas conocidos
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = En lista de bloqueo debido a problemas conocidos: <a data-l10n-name="bug-link">{ $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Bloqueado; código de falla { $failureCode }
 d3d11layers-crash-guard = Compositor D3D11
 d3d11video-crash-guard = Decodificador de video D3D11
-d3d9video-crash-buard = Decodificador de video D3D9
 d3d9video-crash-guard = Decodificador de video D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Decodificador de video WMF VPX
@@ -318,6 +330,20 @@ multi-process-status-6 = Deshabiliatdo por ingreso de texto no soportado
 multi-process-status-7 = Deshabilitado por complementos
 multi-process-status-8 = Deshabilitado por la fuerza
 multi-process-status-unknown = Estado desconocido
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Deshabilitado por el experimento
+fission-status-experiment-treatment = Habilitado por el experimento
+fission-status-disabled-by-e10s-env = Deshabilitado por el entorno
+fission-status-enabled-by-env = Habilitado por el entorno
+fission-status-disabled-by-safe-mode = Deshabilitado por el modo seguro
+fission-status-enabled-by-default = Habilitado forma predeterminada
+fission-status-disabled-by-default = Deshabilitado de forma predeterminada
+fission-status-enabled-by-user-pref = Habilitado por el usuario
+fission-status-disabled-by-user-pref = Deshabilitado por usuario
+fission-status-disabled-by-e10s-other = E10s deshabilitado
 async-pan-zoom = Asynchronous Pan/Zoom
 apz-none = ninguna
 wheel-enabled = rueda habilitada
@@ -338,3 +364,12 @@ touch-warning = táctil no sincrónico deshabilitado por preferencia no soportad
 policies-inactive = Inactivo
 policies-active = Activo
 policies-error = Error
+
+## Printing section
+
+support-printing-title = Imprimir
+support-printing-troubleshoot = Solución de problemas
+support-printing-clear-settings-button = Eliminar los ajustes de impresión guardados
+support-printing-modified-settings = Ajustes de impresión modificados
+support-printing-prefs-name = Nombre
+support-printing-prefs-value = Valor

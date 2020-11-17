@@ -15,6 +15,9 @@ extensions-name = Nomme
 extensions-enabled = Abilitou
 extensions-version = Verscion
 extensions-id = ID
+support-addons-name = Nomme
+support-addons-version = Verscion
+support-addons-id = ID
 security-software-title = Software de Seguessa
 security-software-type = Tipo
 security-software-name = Nomme
@@ -77,8 +80,6 @@ graphics-workarounds-title = Mastrussi
 place-database-title = Database di leughi
 place-database-integrity = Integritæ
 place-database-verify-integrity = Verifica Integritæ
-js-title = JavaScript
-js-incremental-gc = Coleçion de rumenta incrementale
 a11y-title = Acesibilitæ
 a11y-activated = Ativou
 a11y-force-disabled = Inpedisci acesibilitæ
@@ -103,9 +104,7 @@ restart-in-safe-mode-label = Arvi torna co-i conponenti azonti dizativæ…
 
 audio-backend = Backend de aodio
 max-audio-channels = Mascimo numero de canâ
-channel-layout = Aspeto preferio do canâ
 sample-rate = Frequensa de canpionamento preferia
-
 media-title = Media
 media-output-devices-title = Dispoxitivi de output
 media-input-devices-title = Dispoxitivi de input
@@ -139,6 +138,7 @@ intl-regional-prefs = Preferense Regionâ
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -246,7 +246,6 @@ unknown-failure = Blocòu; Còdice d'erô { $failureCode }
 
 d3d11layers-crash-guard = Conpositô D3D11
 d3d11video-crash-guard = Decodificatô video D3D11
-d3d9video-crash-buard = Decodificatô video D3D9
 d3d9video-crash-guard = Decodificatô video D3D9
 glcontext-crash-guard = OpenGL
 

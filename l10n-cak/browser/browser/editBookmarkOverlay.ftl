@@ -3,8 +3,8 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 bookmark-overlay-name =
-    .value = b'i'aj:
-    .accesskey = b
+    .value = B'i'aj:
+    .accesskey = B
 
 bookmark-overlay-location =
     .value = Ochochib'äl

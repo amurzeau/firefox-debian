@@ -5,9 +5,9 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = رازداری سے تحفظ
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = اپنی رازداری رپورٹ پر جائیں
+appmenuitem-update-banner =
+    .label-update-downloading = { -brand-shorter-name } کی تذکاری ڈونلوڈ کر رہے ہیں
+appmenuitem-protection-dashboard-title = حفاظتی ڈیش بورڈ
 appmenuitem-customize-mode =
     .label = تخصیص کریں…
 
@@ -26,3 +26,9 @@ fxa-toolbar-sync-now =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = نیا کیا ہے
+
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = نئی خصوصیات کے بارے میں مطلع کریں
+    .accesskey = f

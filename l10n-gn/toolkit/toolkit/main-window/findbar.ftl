@@ -6,9 +6,9 @@
 ### This file contains the entities needed to use the Find Bar.
 
 findbar-next =
-    .tooltiptext = Ejuhu ñe'ẽrysýi ñesẽ tenondeveguáva
+    .tooltiptext = Ejuhu ñe’ẽrysýi ñesẽ tenondeveguáva
 findbar-previous =
-    .tooltiptext = Eho ñe'ẽ juhupyre mboyveguávape
+    .tooltiptext = Eho ñe’ẽ juhupyre mboyveguávape
 
 findbar-find-button-close =
     .tooltiptext = Jeheka renda mboty
@@ -20,7 +20,7 @@ findbar-highlight-all2 =
             [macos] l
            *[other] a
         }
-    .tooltiptext = Ehachayka opaite je'pyre
+    .tooltiptext = Ehachayka opaite je’pyre
 
 findbar-case-sensitive =
     .label = Ejesareko tai tuicháva/michĩva rehe
@@ -33,6 +33,6 @@ findbar-match-diacritics =
     .tooltiptext = Ehechakuaa tai imyanduhéva ha umi tai guapyháva (techapyrã, ehekávo “currículum”, “currículum” ndojojoguamo’ãi)
 
 findbar-entire-word =
-    .label = Ñe'ẽ orekopáva
+    .label = Ñe’ẽ orekopáva
     .accesskey = W
     .tooltiptext = Eheka ñe'ẽ oĩmbáva añónte

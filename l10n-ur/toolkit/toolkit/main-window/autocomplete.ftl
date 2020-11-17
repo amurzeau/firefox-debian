@@ -7,3 +7,11 @@
 
 autocomplete-import-logins-info =
     .tooltiptext = مزید سیکھیں
+
+## Variables:
+##   $host (String) - Host name of the current site.
+
+
+##
+
+autocomplete-import-learn-more = مزید سیکھیں

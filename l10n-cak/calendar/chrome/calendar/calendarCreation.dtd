@@ -4,6 +4,7 @@
 
 <!ENTITY wizard.title             "Titz'uk K'ak'a' Cholb'äl Q'ij" >
 <!ENTITY wizard.label             "Titz'uk k'ak'a' cholb'äl q'ij" >
+<!ENTITY wizard.description       "Tatz'eta' ruk'ojlem rucholb'al aq'ij" >
 
 <!ENTITY initialpage.computer.label  "Pa Nukematz'ib'">
 <!ENTITY initialpage.network.label  "Pa K'amab'ey">
@@ -25,10 +26,16 @@
 <!ENTITY buttons.create.label "Titz'uk Cholb'äl Q'ij">
 <!ENTITY buttons.create.accesskey "j">
 
+<!ENTITY buttons.find.label "Kekanöx Cholb'äl Q'ij">
+<!ENTITY buttons.find.accesskey "K">
 
+<!ENTITY buttons.back.label "Chi rij">
+<!ENTITY buttons.back.accesskey "C">
 
 <!ENTITY buttons.subscribe.label "Tz'ib'anïk b'i'aj">
+<!ENTITY buttons.subscribe.accesskey "S">
 
-<!ENTITY location.label "K'ojlib'äl:">
+<!ENTITY calendartype.label "Ruwäch Cholb'äl Q'ij:">
+<!ENTITY location.label "Ochochib'al:">
 
 

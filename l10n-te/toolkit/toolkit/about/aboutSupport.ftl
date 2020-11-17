@@ -15,6 +15,10 @@ extensions-name = పేరు
 extensions-enabled = చేతనం
 extensions-version = వెర్షను
 extensions-id = ID
+support-addons-name = పేరు
+support-addons-enabled = చేతనం
+support-addons-version = వెర్షను
+support-addons-id = ID
 security-software-title = భద్రతా సాఫ్ట్‌వేరు
 security-software-type = రకం
 security-software-name = పేరు
@@ -56,6 +60,9 @@ show-dir-label =
         [windows] సంచయాన్ని తెరువు
        *[other] నిఘంటువు తెరువు
     }
+experimental-features-title = ప్రయోగాత్మక సౌలభ్యాలు
+experimental-features-name = పేరు
+experimental-features-value = విలువ
 modified-key-prefs-title = సవరించిన అభిరుచులలో ముఖ్యమైనవి
 modified-prefs-name = పేరు
 modified-prefs-value = విలువ
@@ -76,8 +83,6 @@ graphics-workarounds-title = పరిష్కారాలను
 place-database-title = స్థలాలు డేటాబేస్
 place-database-integrity = సమగ్రత
 place-database-verify-integrity = ఇంటెగ్రిటీ నిర్ధారించండి
-js-title = జావాస్క్రిప్ట్
-js-incremental-gc = ప్రవర్ధమాన GC
 a11y-title = సులభత
 a11y-activated = క్రియాశీలమైంది
 a11y-force-disabled = సులభత నిరోధించు
@@ -102,8 +107,6 @@ restart-in-safe-mode-label = పొడిగింతలను అచేతన�
 
 audio-backend = ఆడియో బ్యాకెండ్
 max-audio-channels = గరిష్ఠ వాహికలు
-channel-layout = కావలసిన వాహికల ఆకారము
-
 media-title = మాధ్యమం
 media-output-devices-title = ఔట్‌పుట్ పరికరాలు
 media-input-devices-title = ఇన్‌పుట్ పరికరాలు
@@ -135,6 +138,7 @@ intl-regional-prefs = ప్రాంతీయ అభిరుచులు
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -200,6 +204,7 @@ hardware-h264 = హార్డ్వేర్ H264 డీకోడింగ్
 main-thread-no-omtc = ముఖ్యమైన త్రెడ్ , ఏ OMTC
 yes = అవును
 no = కాదు
+unknown = గుర్తుతెలియనివి
 
 ## The following strings indicate if an API key has been found.
 ## In some development versions, it's expected for some API keys that they are
@@ -239,7 +244,6 @@ unknown-failure = బ్లాక్ జాబితా ; వైఫల్య�
 
 d3d11layers-crash-guard = D3D11 కూర్చే
 d3d11video-crash-guard = D3D11 వీడియో డికోడర్
-d3d9video-crash-buard = D3D11 వీడియో డికోడర్
 d3d9video-crash-guard = D3D11 వీడియో డికోడర్
 glcontext-crash-guard = OpenGL
 
@@ -261,6 +265,8 @@ effective-content-sandbox-level = సమర్థవంతమైన విష
 sandbox-proc-type-content = విషయం
 sandbox-proc-type-file = ఫైలు విషయం
 sandbox-proc-type-media-plugin = మీడియా ప్లగ్ఇన్
+
+launcher-process-status-0 = చేతనం
 
 # Variables
 # $remoteWindows (integer) - Number of remote windows

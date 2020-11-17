@@ -14,6 +14,12 @@ extensions-name = Isem
 extensions-enabled = Yettwarmed
 extensions-version = Lqem
 extensions-id = Asulay
+support-addons-title = Izegrar
+support-addons-name = Isem
+support-addons-type = Anaw
+support-addons-enabled = Irmed
+support-addons-version = Lqem
+support-addons-id = Asulay
 security-software-title = Aseγzan n taγlist
 security-software-type = Tawsit
 security-software-name = Isem
@@ -59,6 +65,7 @@ app-basics-service-workers = Tanfa Workers iţwaklesen
 app-basics-profiles = Imeɣna
 app-basics-launcher-process-status = Akala n tnekra
 app-basics-multi-process-support = Isfuyla agetakala
+app-basics-fission-support = Isfuyla n tfersit
 app-basics-remote-processes-count = Ikalan inmeggagen
 app-basics-enterprise-policies = Tasertit n tkebbanit
 app-basics-location-service-key-google = Tasarutt n umeẓlu n wadi Google
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] Ldi akaram
        *[other] Ldi akaram
     }
+environment-variables-title = Imuttiyen n twennaṭ
+environment-variables-name = Isem
+environment-variables-value = Azal
+experimental-features-title = Timahihilin tirmitanin
+experimental-features-name = Isem
+experimental-features-value = Azal
 modified-key-prefs-title = Ismenyifen ixataren ittusniflen
 modified-prefs-name = Isem
 modified-prefs-value = Azal
@@ -81,7 +94,7 @@ locked-prefs-name = Isem
 locked-prefs-value = Azal
 graphics-title = udlifen
 graphics-features-title = Timahilin
-graphics-diagnostics-title = Tasleṭ
+graphics-diagnostics-title = Tasleḍt
 graphics-failure-log-title = Aɣmis n tuccḍiwin
 graphics-gpu1-title = GPU #1
 graphics-gpu2-title = GPU #2
@@ -95,8 +108,6 @@ graphics-desktop-environment = Tawennaḍt n tnarit
 place-database-title = Taffa n isefka n idigen
 place-database-integrity = Timmad
 place-database-verify-integrity = Senqed timmad
-js-title = JavaScript
-js-incremental-gc = Amḥettit (GC) aseffansan
 a11y-title = Tuffart
 a11y-activated = Irmed
 a11y-force-disabled = Sewḥel tuffart
@@ -126,7 +137,6 @@ restart-button-label = Ales asenker
 
 audio-backend = Ameslaw ɣer deffir
 max-audio-channels = Amḍan afellay n ibuda
-channel-layout = Taneɣruft n udabu i tebɣiḍ
 sample-rate = Afmiḍi n imedyaten i tebɣiḍ
 roundtrip-latency = Akud n ugani s tirza d tuɣalin (Amgared tizeɣt)
 media-title = Allalen n teγwalt
@@ -263,11 +273,13 @@ blocklisted-bug = Yettusewḥel ɣef uguren ur yettwassnen ara
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = Abug { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Tabdart tettusewḥel ssebba n wugur yettwassnen: <a data-l10n-name="bug-link">abug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Yettusewḥel; tangalt n tuccḍa { $failureCode }
 d3d11layers-crash-guard = Amsuddes D3D11
 d3d11video-crash-guard = D3D11 Video Decoder
-d3d9video-crash-buard = D3D9 Video Decoder
 d3d9video-crash-guard = D3D9 Video Decoder
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Video Decoder
@@ -279,7 +291,7 @@ uses-tiling = Iseqdac akallaj
 content-uses-tiling = Seqdec asebleḍ (Agbur)
 off-main-thread-paint-enabled = Painting beṛṛa n tnelli n uselkem agejdan yermed
 off-main-thread-paint-worker-count = Uṭṭun n iseqdacen Painting beṛṛa n tnelli
-target-frame-rate = Afmiḍi n n ukatar asaḍas
+target-frame-rate = Afmiḍi n ukatar asaḍas
 min-lib-versions = Lqem adday itturajun
 loaded-lib-versions = Lqem ittuseqdacen
 has-seccomp-bpf = Seccomp-BPF (Azizdeg n isawalen n unagraw)
@@ -315,6 +327,20 @@ multi-process-status-6 = Arurmid s weḍris anekcam ur iţusefraken ara
 multi-process-status-7 = Izegrar kkesn-as armad
 multi-process-status-8 = Arurmid s tedusi
 multi-process-status-unknown = Addad arussin
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Yettwasens s termit
+fission-status-experiment-treatment = Yermed n termit
+fission-status-disabled-by-e10s-env = Yettwasens s twennaḍt
+fission-status-enabled-by-env = yetturmed s twennaḍt
+fission-status-disabled-by-safe-mode = Yettwasens s uskar aɣellsan
+fission-status-enabled-by-default = Yetturmed s umezwer
+fission-status-disabled-by-default = Yensa s wudem amezwer
+fission-status-enabled-by-user-pref = Yetturmed sɣur useqdac
+fission-status-disabled-by-user-pref = Yensa sɣur useqdac
+fission-status-disabled-by-e10s-other = E10s yettwasens
 async-pan-zoom = Asemɣeṛ/Asemẓi aramtawa
 apz-none = ulac
 wheel-enabled = anekcum n tjaṛaṛt yermed
@@ -335,3 +361,12 @@ touch-warning = anekcum amennalan yensa ɣef sebba  n usmenyaf ur iţusefraken a
 policies-inactive = Insa
 policies-active = Urmid
 policies-error = Tuccḍa
+
+## Printing section
+
+support-printing-title = Asiggez
+support-printing-troubleshoot = Asellek
+support-printing-clear-settings-button = Sfeḍ iɣewwaren n usiggez yettuskelsen
+support-printing-modified-settings = Iɣewwaren n usiggez yettusneflen
+support-printing-prefs-name = Isem
+support-printing-prefs-value = Azal

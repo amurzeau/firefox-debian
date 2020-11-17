@@ -5,66 +5,53 @@
 permissions-window =
     .title = استثنیات
     .style = width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = ویب سائٹ کا پتہ
     .accesskey = d
-
 permissions-block =
     .label = بلاک کریں
     .accesskey = B
-
 permissions-session =
     .label = سیشن کے لیے اجازت دیں
     .accesskey = S
-
 permissions-allow =
     .label = اجازت دیں
     .accesskey = A
-
 permissions-site-name =
     .label = ويب سائٹ
-
 permissions-status =
     .label = حالت
-
 permissions-remove =
     .label = ویب سائٹ ہٹائیں
     .accesskey = R
-
 permissions-remove-all =
     .label = تمام ویب سائٹیں ہٹائیں
     .accesskey = e
-
 permissions-button-cancel =
     .label = منسوخ کریں
     .accesskey = C
-
 permissions-button-ok =
     .label = تبدیلیاں محفوظ کریں
     .accesskey = S
-
+permission-dialog =
+    .buttonlabelaccept = تبدیلیاں محفوظ کریں
+    .buttonaccesskeyaccept = S
 permissions-autoplay-menu = تمام ویب سائٹس کے لئے پہلے سے طے شدہ:
-
 permissions-searchbox =
     .placeholder = ویبسائٹ تلاش کریں
-
 permissions-capabilities-autoplay-allow =
     .label = آڈیو اور ویڈیو کی اجازت دیں
 permissions-capabilities-autoplay-block =
     .label = آڈیو کو مسدود کریں۔
 permissions-capabilities-autoplay-blockall =
     .label = آڈیو اور ویڈیو کو مسدود کریں
-
 permissions-capabilities-allow =
     .label = اجازت دیں
 permissions-capabilities-block =
     .label = بلاک کریں
 permissions-capabilities-prompt =
     .label = ہمیشہ پوچھیں
-
 permissions-capabilities-listitem-allow =
     .value = اجازت دیں
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = ناجائز نام میزبان داخل
 permissions-invalid-uri-label = کوئی جائز نام میزبان داخل کریں
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = استثنیات - مواد روکنا
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = آپنے مواد روکنا غیر فعال کر دی ہے  ان ویبسیٹس کے لئے۔
 
 permissions-exceptions-etp-window =
     .title = بہتر ٹریکنگ سے حفاظت کے لئے استثنا
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = اجازت دار ویب سائٹیں - ایڈ اون انسٹالیشن
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = آپ اختصاص کر سکتے ہیں کہ کونسی سائٹیں وابستہ دریچے کھولنے کےلیے اجازت دادہ ہیں۔ جس سائٹ کو اجازت دینا چاہتے ہیں اس کا ٹھیک ٹھیک پتہ ٹائپ کریں اور پھر 'اجازت دیں' پر کلک کریں۔
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = استثنیات - اوٹوپلے
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = آپ اس بات کی وضاحت کر سکتے ہے کہ کون سے ویب سائٹ کو اواز کے ساتھ میڈیا خودبخد چلانے کی اجازت ہمیشہ یا کبھی بھی نھی ہے۔ آپ جس سائٹ کو منظم کرنا چاہتے ہے اس کا پتہ درج کریں اور پھر روکیں یا اجازت پر کلک کریں۔
 
 ## Site Permissions - Autoplay
 

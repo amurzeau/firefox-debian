@@ -52,6 +52,8 @@ about-paragraph = „Thunderbird“ – tai pirmaujanti daugiaplatformė laisvoj
 about-paragraph-2 = <b> „Thunderbird“ finansuoja tokie vartotojai kaip jūs! Jei jums patinka „Thunderbird“, apsvarstykite galimybę paaukoti. </b> Geriausi būdas užtikrinti, kad „Thunderbird“ liks prieinama, yra:
 about-donation = paaukoti
 
+about-paragraph-consider-donation = <b>„Thunderbird“ išsilaiko naudotojų – tokių kaip jūs – dėka! Jeigu „Thunderbird“ jums patinka, gal sutiktumėte šią programą paremti?</b> Geriausias būdas užtikrinti tolesnį „Thunderbird“ gyvavimą – <a data-l10n-name="donation-link"> paaukoti</a>.
+
 explore-link = Savybės
 support-link = Palaikymas
 involved-link = Įsitraukite

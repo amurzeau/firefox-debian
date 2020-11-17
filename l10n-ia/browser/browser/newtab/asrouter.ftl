@@ -6,7 +6,7 @@
 ## These messages are used as headings in the recommendation doorhanger
 
 cfr-doorhanger-extension-heading = Extension recommendate
-cfr-doorhanger-feature-heading = Functionalitate recommendate
+cfr-doorhanger-feature-heading = Function recommendate
 cfr-doorhanger-pintab-heading = Prova isto: Fixar scheda
 
 ##
@@ -88,14 +88,14 @@ cfr-protections-panel-link-text = Saper plus
 
 # This string is used by screen readers to offer a text based alternative for
 # the notification icon
-cfr-badge-reader-label-newfeature = Nove functionalitate:
+cfr-badge-reader-label-newfeature = Nove function:
 cfr-whatsnew-button =
     .label = Novas
     .tooltiptext = Novas
 cfr-whatsnew-panel-header = Novas
 cfr-whatsnew-release-notes-link-text = Leger le notas de version
 cfr-whatsnew-fx70-title = { -brand-short-name } lucta ora plus forte pro tu vita private
-cfr-whatsnew-fx70-body = Le ultime actualisation meliora le functionalitate de protection contra le traciamento e rende plus facile que jammais crear contrasignos secur pro cata sito.
+cfr-whatsnew-fx70-body = Le ultime actualisation meliora le protection contra le traciamento e rende plus facile que jammais crear contrasignos secur pro cata sito.
 cfr-whatsnew-tracking-protect-title = Protege te ab le traciatores
 cfr-whatsnew-tracking-protect-body = { -brand-short-name } bloca multe traciatores commun social e inter sitos que seque lo que tu face in linea.
 cfr-whatsnew-tracking-protect-link-text = Vider tu reporto
@@ -167,7 +167,7 @@ cfr-doorhanger-sync-logins-ok-button = Activa { -sync-brand-short-name }
 
 cfr-doorhanger-send-tab-header = Lege isto in viage
 cfr-doorhanger-send-tab-recipe-header = Porta iste recepta al cocina
-cfr-doorhanger-send-tab-body = Inviar Scheda te permitte compartir facilemente iste ligamine a tu telephono o altere apparatos connectite a tu conto de { -brand-product-name }.
+cfr-doorhanger-send-tab-body = "Inviar scheda" te permitte transferer facilemente iste ligamine a tu telephono o altere apparatos connectite a tu conto de { -brand-product-name }.
 cfr-doorhanger-send-tab-ok-button = Proba Inviar Scheda
     .accesskey = P
 
@@ -204,6 +204,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Vider toto
     .accesskey = t
+cfr-doorhanger-milestone-close-button = Clauder
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -230,10 +232,42 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Icone imagine-in-imagine
 
 cfr-whatsnew-protections-header = Protectiones al prime colpo de oculos
 cfr-whatsnew-protections-body = Le Pannello de controlo protectiones include  reportos summari re gestion de violationes de datos e contrasignos. Tu pote ora traciar quante violationes tu ha resolvite e vider si tote tu contrasignos salvate ha forsan essite exponite in un violation de datos.
-cfr-whatsnew-protections-cta-link = Vider annello de protectiones
+cfr-whatsnew-protections-cta-link = Vider pannello de protectiones
 cfr-whatsnew-protections-icon-alt = Icone escudo
 
 ## Better PDF message
 
 cfr-whatsnew-better-pdf-header = Melior experientia PDF
 cfr-whatsnew-better-pdf-body = Le documentos PDF ora aperi directemente in { -brand-short-name }, sin molestar tu fluxo de labor.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Tu confidentialitate es importante. { -brand-short-name } ora adressa con securitate tu requestas de DNS quandocunque possibile a un servicio partner pro proteger te durante tu navigation.
+cfr-doorhanger-doh-header = Recercas DNS plus secur e ciphrate
+cfr-doorhanger-doh-primary-button = De accordo
+    .accesskey = a
+cfr-doorhanger-doh-secondary-button = Disactivar
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Tu vita private es importante. { -brand-short-name } ora isola sitos le unes del alteres per medio de un mechanismo "sandbox" (cassa a sablo). Isto rende plus difficile pro le piratas informatic robar contrasignos, numeros de carta de credito e altere datos sensibile.
+cfr-doorhanger-fission-header = Isolamento de sitos
+cfr-doorhanger-fission-primary-button = De accordo
+    .accesskey = a
+cfr-doorhanger-fission-secondary-button = Saper plus
+    .accesskey = S
+# Deprecated
+cfr-doorhanger-fission-body = { -brand-short-name } ha activate un function experimental pro te: Fission (isolamento de sitos). Isolante cata sito in un processo separate, Fission forni un strato additional de securitate pro te e pro le sitos web que tu visita.
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Protection automatic contra tacticas de traciamento perfide
+cfr-whatsnew-clear-cookies-body = Alcun traciatores re-adresse te a altere sitos web que configura cookies secretemente. { -brand-short-name } ora automaticamente clara ille cookies de sorta que tu non pote esser sequite.
+cfr-whatsnew-clear-cookies-image-alt = Illustration cookie blocate
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Altere controlos multimedial
+cfr-whatsnew-media-keys-body = Reproduce e pausa audio o video directemente de tu claviero o auriculares, rendente facile controlar le multimedia de un altere scheda o programma, mesmo quando tu computator es blocate. Tu pote etiam passar inter pistas con le claves avante e retro.
+cfr-whatsnew-media-keys-button = Apprender como

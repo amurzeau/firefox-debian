@@ -5,66 +5,53 @@
 permissions-window =
     .title = Pengecualian
     .style = width: 41em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Alamat situs web
     .accesskey = l
-
 permissions-block =
     .label = Blokir
     .accesskey = B
-
 permissions-session =
     .label = Izinkan untuk Sesi ini
     .accesskey = S
-
 permissions-allow =
     .label = Izinkan
     .accesskey = I
-
 permissions-site-name =
     .label = Situs web
-
 permissions-status =
     .label = Status
-
 permissions-remove =
     .label = Hapus Situs Web
     .accesskey = H
-
 permissions-remove-all =
     .label = Hapus Semua Situs Web
     .accesskey = a
-
 permissions-button-cancel =
     .label = Batal
     .accesskey = B
-
 permissions-button-ok =
     .label = Simpan Perubahan
     .accesskey = S
-
+permission-dialog =
+    .buttonlabelaccept = Simpan Perubahan
+    .buttonaccesskeyaccept = S
 permissions-autoplay-menu = Baku untuk semua situs Web:
-
 permissions-searchbox =
     .placeholder = Cari Situs Web
-
 permissions-capabilities-autoplay-allow =
     .label = Izinkan Audio dan Video
 permissions-capabilities-autoplay-block =
     .label = Blokir Audio
 permissions-capabilities-autoplay-blockall =
     .label = Blokir Audio dan Video
-
 permissions-capabilities-allow =
     .label = Izinkan
 permissions-capabilities-block =
     .label = Blokir
 permissions-capabilities-prompt =
     .label = Tanyakan Selalu
-
 permissions-capabilities-listitem-allow =
     .value = Izinkan
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = Nama host yang Anda masukkan salah
 permissions-invalid-uri-label = Mohon masukkan nama host yang valid
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = Pengecualian - Pemblokiran Konten
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Anda telah menonaktifkan pemblokiran konten di situs berikut.
 
 permissions-exceptions-etp-window =
     .title = Pengecualian untuk Perlindungan Pelacakan yang Ditingkatkan
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Situs Web yang Diizinkan - Pemasangan Pengaya
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Anda dapat menentukan situs web mana saja yang diizinkan untuk memasang Pengaya. Ketik alamat situs secara persis yang akan diizinkan, lalu klik Izinkan.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Kekecualian - Putar Otomatis
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Anda dapat menentukan situs web mana saja yang selalu atau tidak diizinkan memutar otomatis media dengan suara. Ketik alamat situs yang akan diatur, lalu klik Blokir atau Izinkan.
 
 ## Site Permissions - Autoplay
 

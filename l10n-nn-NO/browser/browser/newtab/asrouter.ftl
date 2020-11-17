@@ -81,7 +81,7 @@ cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
 ## Protections panel
 
 cfr-protections-panel-header = Surf utan å bli følgd
-cfr-protections-panel-body = Behald dine data for deg sjølv. { -brand-short-name } beskyttar deg mot mange av dei vanlegaste sporfølgjarane som følgjer det du gjer på nettet.
+cfr-protections-panel-body = Behald dine data for deg sjølv. { -brand-short-name } beskyttar deg mot mange av dei vanlegaste sporarane som følgjer det du gjer på nettet.
 cfr-protections-panel-link-text = Les meir
 
 ## What's New toolbar button and panel
@@ -96,11 +96,11 @@ cfr-whatsnew-panel-header = Kva er nytt
 cfr-whatsnew-release-notes-link-text = Les versjonsnotatet
 cfr-whatsnew-fx70-title = { -brand-short-name } jobbar no endå meir for personvernet ditt
 cfr-whatsnew-fx70-body =
-    Den siste oppdateringa forbetrar sporingsbesvernfunksjonen og gjer det
-    enklare enn nokon gong å lage sikre passord for kvar nettstad.
-cfr-whatsnew-tracking-protect-title = Beskytt deg mot sporfølgjarar
+    Den siste oppdateringa forbetrar sporingsvernfunksjonen og gjer det
+    enklare enn nokon gong å lage trygge passord for kvar nettstad.
+cfr-whatsnew-tracking-protect-title = Beskytt deg mot sporarar
 cfr-whatsnew-tracking-protect-body =
-    { -brand-short-name } blokkerer mange vanlege sporfølgjarar frå sosiale medium og sporing på tvers av nettstadar som
+    { -brand-short-name } blokkerer mange vanlege sporarar frå sosiale medium og sporing på tvers av nettstadar som
     følgjer det du gjer på nettet.
 cfr-whatsnew-tracking-protect-link-text = Vis rapporten din
 # This string is displayed before a large numeral that indicates the total
@@ -108,13 +108,13 @@ cfr-whatsnew-tracking-protect-link-text = Vis rapporten din
 # localization, because it would result in the number showing twice.
 cfr-whatsnew-tracking-blocked-title =
     { $blockedCount ->
-        [one] Sporfølgjar blokkert
-       *[other] Sporfølgjar blokkert
+        [one] Sporar blokkert
+       *[other] Sporar blokkert
     }
 cfr-whatsnew-tracking-blocked-subtitle = Sidan { DATETIME($earliestDate, month: "long", year: "numeric") }
 cfr-whatsnew-tracking-blocked-link-text = Vis rapport
 cfr-whatsnew-lockwise-backup-title = Ta sikkerheitskopi av passorda dine
-cfr-whatsnew-lockwise-backup-body = No kan du generere sikre passord du får tilgang til kvar som helst du loggar inn.
+cfr-whatsnew-lockwise-backup-body = No kan du generere trygge passord du får tilgang til kvar som helst du loggar inn.
 cfr-whatsnew-lockwise-backup-link-text = Slå på sikkerheitskopiering
 cfr-whatsnew-lockwise-take-title = Ta med deg passorda dine
 cfr-whatsnew-lockwise-take-body =
@@ -165,7 +165,7 @@ cfr-doorhanger-sync-bookmarks-ok-button = Slå på { -sync-brand-short-name }
 ## Login Sync
 
 cfr-doorhanger-sync-logins-header = Gløym aldri meir eit passord
-cfr-doorhanger-sync-logins-body = Lagre og synkroniser passorda dine sikkert med alle einingane dine.
+cfr-doorhanger-sync-logins-body = Lagre og synkroniser passorda dine trygt med alle einingane dine.
 cfr-doorhanger-sync-logins-ok-button = Slå på { -sync-brand-short-name }
     .accesskey = S
 
@@ -179,7 +179,7 @@ cfr-doorhanger-send-tab-ok-button = Prøv send fane
 
 ## Firefox Send
 
-cfr-doorhanger-firefox-send-header = Del denne PDF-fila sikkert
+cfr-doorhanger-firefox-send-header = Del denne PDF-fila trygt
 cfr-doorhanger-firefox-send-body = Hald dei sensitive dokumenta dine trygge mot nysgjerrige auge med ende-til-ende-kryptering og ei lenke som forsvinn når du er ferdig.
 cfr-doorhanger-firefox-send-ok-button = Prøv { -send-brand-name }
     .accesskey = P
@@ -193,11 +193,11 @@ cfr-doorhanger-socialtracking-close-button = Lat att
 cfr-doorhanger-socialtracking-dont-show-again = Ikkje vis meg meldingar som dette igjen
     .accesskey = I
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } hindra eit sosialt nettverk frå å spore deg her
-cfr-doorhanger-socialtracking-description = Personvernet ditt betyr noko. { -brand-short-name } blokkerer no vanlege sporfølgjarar frå sosiale medium, og avgrensar kor mykje data dei kan samle inn om kva du gjer på nettet.
+cfr-doorhanger-socialtracking-description = Personvernet ditt betyr noko. { -brand-short-name } blokkerer no vanlege sporarar frå sosiale medium, og avgrensar kor mykje data dei kan samle inn om kva du gjer på nettet.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } blokkerte ein fingerprinter på denne sida
 cfr-doorhanger-fingerprinters-description = Personvernet ditt betyr noko. { -brand-short-name } blokkerer no fingerprinters, som samlar inn delar av unikt identifiserbar informasjon om eininga di for å spore deg.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } blokkerte ein kryptominar på denne sida
-cfr-doorhanger-cryptominers-description = Personvernet ditt betyr noko. { -brand-short-name } blokkerer no kryptominarar, som brukar datakrafta til systemet for å utvinne digitale pengar.
+cfr-doorhanger-cryptominers-description = Personvernet ditt betyr noko. { -brand-short-name } blokkerer no kryptoutvinnarar, som brukar datakrafta til systemet for å utvinne digitale pengar.
 
 ## Enhanced Tracking Protection Milestones
 
@@ -206,10 +206,12 @@ cfr-doorhanger-cryptominers-description = Personvernet ditt betyr noko. { -brand
 #   $date (String) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
-       *[other] { -brand-short-name } har blokkert over <b>{ $blockedCount }</b> sporfølgjarar sidan { $date }!
+       *[other] { -brand-short-name } har blokkert over <b>{ $blockedCount }</b> sporarar sidan { $date }!
     }
 cfr-doorhanger-milestone-ok-button = Vis alle
     .accesskey = s
+cfr-doorhanger-milestone-close-button = Lat att
+    .accesskey = L
 
 ## What’s New Panel Content for Firefox 76
 
@@ -243,3 +245,33 @@ cfr-whatsnew-protections-icon-alt = Skjoldikon
 
 cfr-whatsnew-better-pdf-header = Betre PDF-oppleving
 cfr-whatsnew-better-pdf-body = PDF-dokument vert no opna direkte i { -brand-short-name }, og held arbeidsflyten innan same program.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Personvernet ditt betyr noko. { -brand-short-name } rutar no DNS-førespurnadane dine trygt når det er mogleg, til ei teneste levert av ein partnar, for å beskytte deg medan du surfar.
+cfr-doorhanger-doh-header = Sikrare og krypterte DNS-oppslag
+cfr-doorhanger-doh-primary-button = OK, eg skjønar
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Slå av
+    .accesskey = S
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Personvernet ditt er viktig. { -brand-short-name } isolerer no nettstadar frå kvarandre, noko som gjer det vanskelegare for hackarar å stele passord, kreditkortnummer og annan sensitiv informasjon.
+cfr-doorhanger-fission-header = Nettstadisolering
+cfr-doorhanger-fission-primary-button = Ok, eg forstår
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Les meir
+    .accesskey = L
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Automatisk vern mot lure sporingsmetodar
+cfr-whatsnew-clear-cookies-body = Nokre sporarar vidarekoplar deg til andre nettstadar som i hemmelegheit stiller inn infokapslar. { -brand-short-name } fjernar no automatisk infokapslane slik at du ikkje kan bli spora.
+cfr-whatsnew-clear-cookies-image-alt = Illustrasjon for blokkert infokapsel
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Fleire mediakontrollar
+cfr-whatsnew-media-keys-body = Spel av og paus lyd eller video direkte frå tastaturet eller hovudsettet, noko som gjer det enkelt å kontrollere media frå ei anna fane, program eller til og med når datamaskina er låst. Du kan også bruke tastane framover og bakover for å skifte spor.
+cfr-whatsnew-media-keys-button = Finn ut korleis

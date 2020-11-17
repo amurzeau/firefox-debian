@@ -28,10 +28,6 @@ serviceworker-worker-unregister = 등록 취소
 serviceworker-worker-debug = 디버그
     .title = 실행되고 있는 Service Worker만 디버그할 수 있음
 
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = 시작
-
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
 serviceworker-worker-debug-forbidden = 디버그
@@ -41,6 +37,14 @@ serviceworker-worker-debug-forbidden = 디버그
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = 시작
     .title = 다중 e10s가 비활성화 된 경우에만 Service Worker를 시작할 수 있습니다.
+
+# Alt text for the image icon displayed inside a debug link for a service worker.
+serviceworker-worker-inspect-icon =
+    .alt = 검사
+
+# Text for the start link displayed for a registered but not running Service Worker.
+# Clicking on the link will attempt to start the service worker.
+serviceworker-worker-start3 = 시작
 
 # Text displayed for the updated time of the service worker. The <time> element will
 # display the last update time of the service worker script.
@@ -62,10 +66,6 @@ serviceworker-worker-status-running = 실행 중
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = 중지됨
 
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = 등록 중
-
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = 여기서 검사하려면 Service Worker를 등록해야 합니다. <a>더 알아보기</a>
@@ -86,12 +86,33 @@ serviceworker-empty-suggestions-debugger = Service Worker 등록과정을 살펴
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = 다른 도메인의 Service Worker를 조사해 보세요. <a>about:debugging 열기</a>
 
+# Text displayed when no service workers are visible for the current page.
+serviceworker-empty-intro2 = Service Worker 없음
+
+# Link will open https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
+serviceworker-empty-intro-link = 더 알아보기
+
+# Text displayed when there are no Service Workers to display for the current page,
+# introducing hints to debug Service Worker issues.
+# <a> and <span> are links that will open the webconsole and the debugger, respectively.
+serviceworker-empty-suggestions2 = 현재 페이지에 Service Worker가 있어야 하는 경우, <a>콘솔</a>에서 오류를 찾거나 <span>디버거</span>에서 Service Worker 등록을 단계별로 진행할 수 있습니다.
+
+# Suggestion to go to about:debugging in order to see Service Workers for all domains.
+# Link will open about:debugging in a new tab.
+serviceworker-empty-suggestions-aboutdebugging2 = 다른 도메인의 Service Worker 보기
+
 # Header for the Manifest page when we have an actual manifest
 manifest-view-header = 앱 매니페스트
 
 # Header for the Manifest page when there's no manifest to inspect
 # The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
 manifest-empty-intro = 여기서 검사하려면 웹 앱 매니페스트를 추가해야 합니다. <a>더 알아보기</a>
+
+# Header for the Manifest page when there's no manifest to inspect
+manifest-empty-intro2 = 웹 앱 매니페스트가 감지되지 않음
+
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro-link = 매니페스트 추가 방법 알아보기
 
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = 오류 및 경고
@@ -106,7 +127,7 @@ manifest-item-presentation = 프레젠테이션
 manifest-item-icons = 아이콘
 
 # Text displayed while we are loading the manifest file
-manifest-loading = 매니페스트 로딩 중…
+manifest-loading = 매니페스트 로드 중…
 
 # Text displayed when the manifest has been successfully loaded
 manifest-loaded-ok = 매니페스트가 로드되었습니다.

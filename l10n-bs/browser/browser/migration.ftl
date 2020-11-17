@@ -16,6 +16,12 @@ import-from-ie =
 import-from-edge =
     .label = Microsoft Edge
     .accesskey = E
+import-from-edge-legacy =
+    .label = Microsoft Edge Legacy
+    .accesskey = L
+import-from-edge-beta =
+    .label = Microsoft Edge Beta
+    .accesskey = d
 import-from-nothing =
     .label = Ne uvozi ništa
     .accesskey = N
@@ -28,6 +34,12 @@ import-from-canary =
 import-from-chrome =
     .label = Chrome
     .accesskey = C
+import-from-chrome-beta =
+    .label = Chrome Beta
+    .accesskey = B
+import-from-chrome-dev =
+    .label = Chrome Dev
+    .accesskey = D
 import-from-chromium =
     .label = Chromium
     .accesskey = u
@@ -73,10 +85,19 @@ imported-edge-reading-list = Lista za čitanje (iz Edge-a)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.
 
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-checkbox =
+    .label = Spašene prijave i lozinke
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-label =
+    .value = Spašene prijave i lozinke
 browser-data-session-checkbox =
     .label = Prozori i tabovi
 browser-data-session-label =

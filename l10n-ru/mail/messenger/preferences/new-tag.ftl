@@ -8,3 +8,7 @@ tag-dialog-window =
 tag-name-label =
     .value = Имя метки:
     .accesskey = м
+
+tag-color-label =
+    .value = Цвет:
+    .accesskey = в

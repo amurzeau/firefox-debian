@@ -53,6 +53,11 @@ no-migration-sources = ਕੋਈ ਵੀ ਅਜੇਹਾ ਪਰੋਗਰਾਮ �
 import-source-page-title = ਸੈਟਿੰਗ ਅਤੇ ਡਾਟਾ ਇੰਪੋਰਟ ਕਰੋ
 import-items-page-title = ਇੰਪੋਰਟ ਕਰਨ ਲਈ ਆਈਟਮਾਂ
 import-items-description = ਇੰਪੋਰਟ ਕਰਨ ਲਈ ਆਈਟਮਾਂ ਚੁਣੋ:
+import-permissions-page-title = { -brand-short-name } ਨੂੰ ਇਜਾਜ਼ਤਾਂ ਦਿਓ
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description =
+    macOS ਨੇ ਸਫ਼ਾਰੀ ਦੇ ਬੁੱਕਮਾਰਕ ਲਈ ਪਹੁੰਚ ਵਾਸਤੇ ਤੁਹਾਨੂੰ ਖਾਸ ਤੌਰ ਉੱਤੇ
+    { -brand-short-name } ਨੂੰ ਇਜਾਜ਼ਤ ਦੇਣਾ ਜ਼ਰੂਰੀ ਕੀਤਾ ਹੈ। “ਜਾਰੀ ਰੱਖੋ“ ਨੂੰ ਕਲਿੱਕ ਕਰੋ ਅਤੇ ਫ਼ਾਇਲ ਖੋਲ੍ਹੋ ਪੈਨਲ ਵਿੱਚ “Bookmarks.plist” ਫ਼ਾਇਲ ਨੂੰ ਚੁਣੋ।
 import-migrating-page-title = ਇੰਪੋਰਟ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ...
 import-migrating-description = ਹੇਠ ਦਿੱਤੀਆਂ ਆਈਟਮਾਂ ਇੰਪੋਰਟ ਕੀਤੀਆਂ ਜਾ ਰਹੀਆਂ ਹਨ...
 import-select-profile-page-title = ਪਰੋਫਾਇਲ ਚੁਣੋ
@@ -88,10 +93,57 @@ imported-edge-reading-list = ਪੜ੍ਹਨ ਸੂਚੀ (Edge ਤੋਂ)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.
 
+browser-data-cookies-checkbox =
+    .label = ਕੂਕੀਜ਼
+browser-data-cookies-label =
+    .value = ਕੂਕੀਜ਼
+browser-data-history-checkbox =
+    .label =
+        { $browser ->
+            [firefox] ਬਰਾਊਜ਼ਿੰਗ ਅਤੀਤ ਅਤੇ ਬੁੱਕਮਾਰਕ
+           *[other] ਬਰਾਊਜ਼ਿੰਗ ਅਤੀਤ
+        }
+browser-data-history-label =
+    .value =
+        { $browser ->
+            [firefox] ਬਰਾਊਜ਼ ਕਰਨ ਦਾ ਅਤੀਤ ਅਤੇ ਬੁੱਕਮਾਰਕ
+           *[other] ਬਰਾਊਜ਼ ਕਰਨ ਦਾ ਅਤੀਤ
+        }
+browser-data-formdata-checkbox =
+    .label = ਸੰਭਾਲਿਆ ਫਾਰਮ ਅਤੀਤ
+browser-data-formdata-label =
+    .value = ਸੰਭਾਲਿਆ ਫਾਰਮ ਅਤੀਤ
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-checkbox =
+    .label = ਸੰਭਾਲੇ ਹੋਏ ਲਾਗ-ਇਨ ਅਤੇ ਪਾਸਵਰਡ
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-label =
+    .value = ਸੰਭਾਲੇ ਹੋਏ ਲਾਗ-ਇਨ ਅਤੇ ਪਾਸਵਰਡ
+browser-data-bookmarks-checkbox =
+    .label =
+        { $browser ->
+            [ie] ਮਨਪਸੰਦ
+            [edge] ਮਨਪਸੰਦ
+           *[other] ਬੁੱਕਮਾਰਕ
+        }
+browser-data-bookmarks-label =
+    .value =
+        { $browser ->
+            [ie] ਮਨਪਸੰਦ
+            [edge] ਮਨਪਸੰਦ
+           *[other] ਬੁੱਕਮਾਰਕ
+        }
+browser-data-otherdata-checkbox =
+    .label = ਹੋਰ ਡਾਟਾ
+browser-data-otherdata-label =
+    .label = ਹੋਰ ਡਾਟਾ
 browser-data-session-checkbox =
     .label = ਵਿੰਡੋ ਅਤੇ ਟੈਬਾਂ
 browser-data-session-label =

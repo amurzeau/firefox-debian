@@ -17,8 +17,8 @@ import-from-edge =
     .label = Microsoft Edge
     .accesskey = E
 import-from-edge-legacy =
-    .label = Microsoft Edge, vanhennettu versio
-    .accesskey = v
+    .label = Vanha Microsoft Edge
+    .accesskey = V
 import-from-edge-beta =
     .label = Microsoft Edge Beta
     .accesskey = d
@@ -53,6 +53,9 @@ no-migration-sources = Ei löydetty ohjelmia, joista voitaisiin hakea kirjanmerk
 import-source-page-title = Asetusten ja tietojen tuonti ohjelmasta
 import-items-page-title = Tuotavat tiedot
 import-items-description = Valitse tuotavat tiedot:
+import-permissions-page-title = Anna { -brand-short-name }-selaimella oikeudet
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS vaatii, että erikseen sallit { -brand-short-name }-selaimen käyttää Safarin kirjanmerkkejä. Napsauta ”jatka” ja valitse ”Bookmarks.plist”-tiedosto avautuvasta tiedostonavauspaneelista.
 import-migrating-page-title = Tuodaan…
 import-migrating-description = Seuraavia tietoja tuodaan…
 import-select-profile-page-title = Valitse profiili
@@ -88,6 +91,7 @@ imported-edge-reading-list = Lukulista (Edgestä)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

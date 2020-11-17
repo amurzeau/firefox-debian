@@ -8,3 +8,7 @@ tag-dialog-window =
 tag-name-label =
     .value = Emër Etikete:
     .accesskey = E
+
+tag-color-label =
+    .value = Ngjyrë:
+    .accesskey = N

@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (مرور ناشناس)‏
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (مرور ناشناس)‏
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (مرور ناشناس)‏
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (مرور ناشناس)‏
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -112,6 +110,9 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = کمتر تایپ کنید، بیشتر پیدا کنید: تنها از طریق نوار آدرس با { $engineName } جست‌وجو کنید.
 urlbar-search-tips-redirect-2 = جست‌وجوی خود را در نوار آدرس تایپ کنید تا پیشنهادهایی از { $engineName } و تاریخچهٔ مرور خود ببینید.
 
+## Local search mode indicator labels in the urlbar
+
+
 ##
 
 urlbar-geolocation-blocked =
@@ -138,12 +139,10 @@ urlbar-midi-blocked =
     .tooltiptext = شما دسترسی این وب‌سایت به MIDI را مسدود کرده‌اید.
 urlbar-install-blocked =
     .tooltiptext = شما نصب افزونه‌ها از طریق این وب‌سایت را مسدود کرده‌اید.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = ویرایش این نشانک ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -160,6 +159,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = حذف افزونه
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] ارسال به دستگاه
+           *[other] ارسال { $tabCount } زبانه به دستگاه
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] ارسال به دستگاه
+           *[other] ارسال { $tabCount } زبانه به دستگاه
+        }
+page-action-pocket-panel =
+    .label = ذخیره صفحه در { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = رونوشت پیوند
+page-action-copy-url-urlbar =
+    .tooltiptext = رونوشت پیوند
+page-action-email-link-panel =
+    .label = ایمیل کردن پیوند...
+page-action-email-link-urlbar =
+    .tooltiptext = ایمیل کردن پیوند...
+page-action-share-url-panel =
+    .label = همرسانی
+page-action-share-url-urlbar =
+    .tooltiptext = همرسانی
+page-action-share-more-panel =
+    .label = بیشتر…
+page-action-send-tab-not-ready =
+    .label = همرسانی دستگاه‌ها…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = سنجاق کردن زبانه
+page-action-pin-tab-urlbar =
+    .tooltiptext = سنجاق کردن زبانه
+page-action-unpin-tab-panel =
+    .label = کندن زبانه
+page-action-unpin-tab-urlbar =
+    .tooltiptext = کندن زبانه
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -174,14 +220,12 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = این بار، جست‌وجو با:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = تغییر تنظیمات جستجو
 search-one-offs-change-settings-compact-button =
     .tooltiptext = تغییر تنظیمات جستجو
-
 search-one-offs-context-open-new-tab =
     .label = جست‌وجو در زبانه جدید
     .accesskey = ز
@@ -192,15 +236,21 @@ search-one-offs-context-set-as-default-private =
     .label = تنظیم به عنوان موتور جست‌وجو پیش‌فرض در پنجره‌های ناشناس
     .accesskey = P
 
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = نمایش ویرایش‌گر هنگام ذخیره‌سازی
     .accesskey = S
-
 bookmark-panel-done-button =
     .label = انجام شد
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -272,12 +322,27 @@ popup-select-microphone =
     .value = میکروفون جهت به‌اشتراک‌گذاری:
     .accesskey = م
 popup-all-windows-shared = همه‌ی پنجره‌هایی که مشاهده می‌کنید به اشتراک گذاشته می‌شود.
+popup-screen-sharing-not-now =
+    .label = اکنون نه (w)
+    .accesskey = w
+popup-screen-sharing-never =
+    .label = هرگز اجازه نده (N)
+    .accesskey = N
+popup-silence-notifications-checkbox = از کار انداختن آگاهی‌ها از { -brand-short-name } هنگام هم‌رسانی
+popup-silence-notifications-checkbox-warning = { -brand-short-name } هنگام هم‌رسانی، اعلان‌ها را نمایش نمی‌دهد.
 
 ## WebRTC window or screen share tab switch warning
 
+sharing-warning-window = شما در حال هم‌رسانی { -brand-short-name } هستید. افراد دیگر می‌توانند هنگام تغییر زبانه‌ها آنها را ببینند.
+sharing-warning-screen = شما در حال هم‌رسانی تمام صفحه‌نمایش خود هستید. افراد دیگر می‌توانند هنگام تغییر زبانه‌ها آنها را ببینند.
+sharing-warning-proceed-to-tab =
+    .label = رفتن به زبانه
+sharing-warning-disable-for-session =
+    .label = از کار انداختن محافظت هم‌رسانی برای این نشست
 
 ## DevTools F12 popup
 
+enable-devtools-popup-description = برای استفاده از میانبر F12، ابتدا DevTools را از طریق منوی توسعه‌دهندگان باز کنید.
 
 ## URL Bar
 
@@ -285,18 +350,62 @@ urlbar-default-placeholder =
     .defaultPlaceholder = متنی برای جست‌وجو یا یک آدرس وارد کنید
 urlbar-placeholder =
     .placeholder = متنی برای جست‌وجو یا یک آدرس وارد کنید
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = با { $name } جست‌وجو یا آدرسی وارد کنید
 urlbar-remote-control-notification-anchor =
     .tooltiptext = مرورگر تحت کنترل از راه دور است
+urlbar-permissions-granted =
+    .tooltiptext = به این پایگاه وب دسترسی‌های اضافی اعطا کرده‌اید.
 urlbar-switch-to-tab =
     .value = پرش به زبانه:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = ضمیمه:
-
 urlbar-go-button =
     .tooltiptext = رفتن به نشانی موجود در نوار مکان
 urlbar-page-action-button =
     .tooltiptext = کنش‌های صفحه
 urlbar-pocket-button =
     .tooltiptext = ذخیره‌سازی در { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = جست‌وجو با { $engine } در یک پنجرهٔ ناشناس
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = جست‌وجو در یک پنجرهٔ ناشناس
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = جست‌وجو از طریق { $engine }
+urlbar-result-action-switch-tab = پرش به زبانه
+urlbar-result-action-visit = بازدید
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> حالا در حالت تمام‌صفحه است
+fullscreen-warning-no-domain = این سند حالا در حالت تمام‌صفحه است
+fullscreen-exit-button = خروج از حالت تمام‌صفحه (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = خروج از حالت تمام‌صفحه (Esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> کنترل مکان‌نما شما را در دست دارد. برای پس گرفتن کنترل، Esc را فشار دهید.
+pointerlock-warning-no-domain = این سند کنترل مکان‌نما شما را در دست گرفته است. برای پس گرفتن کنترل، Esc را فشار دهید.

@@ -80,6 +80,12 @@ cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 
 cert-error-details-cert-chain-label = Certifikačná reťaz:
 
+open-in-new-window-for-csp-or-xfo-error = Otvoriť stránku v novom okne
+
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = Pre vašu bezpečnosť { $hostname } nepovolí { -brand-short-name(case: "acc") } zobraziť stránku, ak je vložená z inej stránky. Ak chcete zobraziť túto stránku, musíte ju otvoriť v novom okne.
+
 ## Messages used for certificate error titles
 
 connectionFailure-title = Nedá sa pripojiť
@@ -107,8 +113,7 @@ proxyResolveFailure-title = Server proxy nemožno nájsť
 redirectLoop-title = Stránku sa nepodarilo správne presmerovať
 unknownSocketType-title = Neočakávaná odpoveď servera
 nssFailure2-title = Zabezpečené pripojenie zlyhalo
-cspBlocked-title = Blokované kvôli zásadám ochrany obsahu
-xfoBlocked-title = Blokované prostredníctvom X-Frame-Options
+csp-xfo-error-title = { -brand-short-name } nedokáže otvoriť túto stránku
 corruptedContentError-title = Poškodený obsah stránky
 remoteXUL-title = Vzdialené XUL
 sslv3Used-title = Nie je možné sa pripojiť zabezpečene

@@ -7,7 +7,6 @@
 cfr-doorhanger-extension-heading = おすすめの拡張機能
 cfr-doorhanger-feature-heading = おすすめの機能
 cfr-doorhanger-pintab-heading = タブのピン留めを試してみる
-
 ##
 
 cfr-doorhanger-extension-sumo-link =
@@ -37,7 +36,6 @@ cfr-doorhanger-extension-author = 作成者: { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = おすすめ
-
 cfr-doorhanger-extension-notification2 = おすすめ
   .tooltiptext = おすすめの拡張機能です
   .a11y-announcement = おすすめの拡張機能があります
@@ -217,6 +215,9 @@ cfr-doorhanger-milestone-heading =
 cfr-doorhanger-milestone-ok-button = 確認
   .accesskey = S
 
+cfr-doorhanger-milestone-close-button = 閉じる
+  .accesskey = C
+
 ## What’s New Panel Content for Firefox 76
 
 ## Lockwise message
@@ -249,3 +250,33 @@ cfr-whatsnew-protections-icon-alt = 盾アイコン
 
 cfr-whatsnew-better-pdf-header = より良い PDF 表示
 cfr-whatsnew-better-pdf-body = ワークフローから外れないように、PDF ドキュメントを直接  { -brand-short-name } で開くようになりました。
+
+## DOH Message
+
+cfr-doorhanger-doh-body = プライバシーは重要です。{ -brand-short-name } はあなたのブラウジングを保護するため、パートナーサービスが対応するときは常に DNS 要求を安全にお届けします。
+cfr-doorhanger-doh-header = 暗号化 DNS でより安全に
+cfr-doorhanger-doh-primary-button = OK、有効にする
+  .accesskey = O
+cfr-doorhanger-doh-secondary-button = 無効にする
+  .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = プライバシーは重要です。{ -brand-short-name } がウェブサイトをそれぞれ他のサイトから分離、サンドボックス化するため、パスワードやクレジットカード番号、他の重要な情報が盗まれにくくなりました。
+cfr-doorhanger-fission-header = サイトの分離
+cfr-doorhanger-fission-primary-button = OK、有効にする
+  .accesskey = O
+cfr-doorhanger-fission-secondary-button = 詳細
+  .accesskey = L
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = こっそり追跡を自動的に遮断
+cfr-whatsnew-clear-cookies-body = 一部のトラッカーは、Cookie を密かに設定した別のウェブサイトにあなたを誘導します。{ -brand-short-name } はこれらの Cookie を自動的に消去し、追跡されないようにします。
+cfr-whatsnew-clear-cookies-image-alt = Cookie ブロックのイラスト
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = メディアの操作が充実
+cfr-whatsnew-media-keys-body = キーボードやヘッドセットから音声または映像の再生と停止ができるようになり、他のタブからだけでなく、コンピューターがロックされた状態でも簡単にメディアを操作できます。また、進むキーと戻るキーでもトラックを移動できるようになりました。
+cfr-whatsnew-media-keys-button = 詳細

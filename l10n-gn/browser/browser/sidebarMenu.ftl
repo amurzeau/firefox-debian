@@ -12,4 +12,4 @@ sidebar-menu-synced-tabs =
     .label = Tendayke ñembojuehepyre
 
 sidebar-menu-close =
-    .label = Ta'ãngarupa yke mboty
+    .label = Ta’ãngarupa yke mboty

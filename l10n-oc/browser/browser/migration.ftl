@@ -53,6 +53,9 @@ no-migration-sources = Impossible de trobar un logicial que contenga de marcapag
 import-source-page-title = Importar los paramètres e las donadas
 import-items-page-title = Elements d'importar
 import-items-description = Seleccionatz los elements d'importar :
+import-permissions-page-title = Mercés de donar las autorizacions a { -brand-short-name }
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS requerís qu’autorizetz explicitament { -brand-short-name } a accedir als marcapaginas de Sagari. Clicatz sus « Contunhar » e causissètz lo fichièr « Bookmarks.plist » dins la panèl de dobertura de fichièr qu’apreissarà.
 import-migrating-page-title = Importacion…
 import-migrating-description = Los elements seguents son a s'importar…
 import-select-profile-page-title = Causissètz un perfil
@@ -88,6 +91,7 @@ imported-edge-reading-list = Lista de lectura (de Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

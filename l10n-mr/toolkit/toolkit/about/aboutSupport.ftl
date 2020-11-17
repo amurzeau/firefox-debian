@@ -15,6 +15,9 @@ extensions-name = नाव
 extensions-enabled = समर्थीत
 extensions-version = आवृत्ती
 extensions-id = ID
+support-addons-name = नाव
+support-addons-version = आवृत्ती
+support-addons-id = ID
 security-software-title = सुरक्षा सॉफ्टवेअर
 security-software-type = प्रकार
 security-software-name = नाव
@@ -75,8 +78,6 @@ graphics-workarounds-title = वर्कअरोउंड्स
 place-database-title = जागांचा डेटाबेस
 place-database-integrity = प्रामाणिकता
 place-database-verify-integrity = प्रामाणिकता तपासा
-js-title = जावास्क्रिप्ट
-js-incremental-gc = वाढीव GC
 a11y-title = ॲक्सेसिबिलिटि
 a11y-activated = सुरू केले
 a11y-force-disabled = ॲक्सेसिबिलिटि टाळा
@@ -101,9 +102,7 @@ restart-in-safe-mode-label = ॲड-ऑन्स् निष्क्रिय 
 
 audio-backend = ऑडिओ बॅकेण्ड
 max-audio-channels = अधिकतम चॅनल
-channel-layout = प्राधान्यकृत चॅनेल मांडणी
 sample-rate = प्राधान्यकृत नमुना दर
-
 media-title = मीडिया
 media-output-devices-title = आऊटपुट साधने
 media-input-devices-title = इनपुट साधने
@@ -137,6 +136,7 @@ intl-regional-prefs = प्रादेशिक प्राधान्यत
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -242,7 +242,6 @@ unknown-failure = काळ्यासूचित; अयशस्वी क�
 
 d3d11layers-crash-guard = D3D11 कॉम्पोझिटर
 d3d11video-crash-guard = D3D11 व्हिडिओ डीकोडर
-d3d9video-crash-buard = D3D9 व्हिडिओ डीकोडर
 d3d9video-crash-guard = D3D9 व्हिडिओ डीकोडर
 glcontext-crash-guard = OpenGL
 

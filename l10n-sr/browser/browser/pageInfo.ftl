@@ -9,20 +9,20 @@ copy =
     .key = C
 menu-copy =
     .label = Копирај
-    .accesskey = К
+    .accesskey = C
 
 select-all =
     .key = A
 menu-select-all =
     .label = Изабери све
-    .accesskey = И
+    .accesskey = A
 
 close-dialog =
     .key = w
 
 general-tab =
     .label = Опште
-    .accesskey = О
+    .accesskey = G
 general-title =
     .value = Наслов:
 general-url =
@@ -46,7 +46,7 @@ general-meta-content =
 
 media-tab =
     .label = Медији
-    .accesskey = М
+    .accesskey = M
 media-location =
     .value = Адреса:
 media-text =
@@ -67,22 +67,20 @@ media-long-desc =
     .value = Дуги опис:
 media-save-as =
     .label = Сачувај као…
-    .accesskey = А
+    .accesskey = A
 media-save-image-as =
     .label = Сачувај као…
-    .accesskey = С
-media-preview =
-    .value = Преглед медија:
+    .accesskey = e
 
 perm-tab =
     .label = Дозволе
-    .accesskey = Д
+    .accesskey = P
 permissions-for =
     .value = Дозволе за:
 
 security-tab =
     .label = Безбедност
-    .accesskey = Б
+    .accesskey = S
 security-view =
     .label = Преглед сертификата
     .accesskey = с
@@ -106,13 +104,13 @@ security-view-privacy-sitedata-value = Да ли овај веб сајт скл
 
 security-view-privacy-clearsitedata =
     .label = Обриши колачиће и податке сајта
-    .accesskey = О
+    .accesskey = C
 
 security-view-privacy-passwords-value = Да ли чувам неку лозинку за овај сајт?
 
 security-view-privacy-viewpasswords =
     .label = Преглед сачуваних лозинки
-    .accesskey = л
+    .accesskey = w
 security-view-technical =
     .value = Технички детаљи
 
@@ -132,7 +130,6 @@ security-site-data-cookies-only = Да, колачиће
 security-site-data-no = Не
 
 image-size-unknown = Непознат
-not-set-verified-by = Неодређено
 page-info-not-specified =
     .value = Неодређено
 not-set-alternative-text = Неодређено
@@ -157,7 +154,6 @@ general-quirks-mode =
     .value = Толерантан начин рада
 general-strict-mode =
     .value = Поштовање стандарда
-security-no-owner = Овај веб сајт не објављује податке о власништву.
 page-info-security-no-owner =
     .value = Овај веб сајт не објављује податке о власништву.
 media-select-folder = Изаберите фасциклу за чување слика
@@ -252,7 +248,7 @@ media-file-size = { $size } KB
 #   $website (string) - The website name
 media-block-image =
     .label = Блокирај слике са: { $website }
-    .accesskey = ж
+    .accesskey = B
 
 # This string is used to display the URL of the website on top of the
 # pageInfo dialog box

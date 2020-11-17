@@ -69,6 +69,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = संदेश पटल खोलें
 urlbar-geolocation-notification-anchor =
     .tooltiptext = स्थान अनुरोध पटल खोलें
+urlbar-xr-notification-anchor =
+    .tooltiptext = वर्चुअल रियलिटी अनुमति पैनल खोलें
 urlbar-storage-access-anchor =
     .tooltiptext = ब्राउज़िंग गतिविधि अनुमति पैनल खोलें
 urlbar-translate-notification-anchor =
@@ -108,10 +110,18 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = कम टाइप करें, अधिक खोजें: सीधे अपने पता पट्टी { $engineName } खोजें.
 urlbar-search-tips-redirect-2 = { $engineName } और अपने ब्राउज़िंग इतिहास से सुझाव देखने के लिए अपनी खोज पता पट्टी में प्रारंभ करें।
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = बुकमार्क
+urlbar-search-mode-tabs = टैब
+urlbar-search-mode-history = इतिहास
+
 ##
 
 urlbar-geolocation-blocked =
     .tooltiptext = आपने इस वेबसाइट के लिए स्थान की सूचना अवरुद्ध किये है.
+urlbar-xr-blocked =
+    .tooltiptext = आपने इस वेबसाइट के लिए वर्चुअल रियलिटी डिवाइस एक्सेस को ब्लॉक कर दिया है।
 urlbar-web-notifications-blocked =
     .tooltiptext = आपने इस वेबसाइट के लिए अधिसूचना अवरुद्ध किये है.
 urlbar-camera-blocked =
@@ -152,6 +162,39 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = एक्सटेंशन हटाएं
 
+## Page Action menu
+
+page-action-pocket-panel =
+    .label = { -pocket-brand-name } में पृष्ठ को सहेजें
+page-action-copy-url-panel =
+    .label = कड़ी नकल करें
+page-action-copy-url-urlbar =
+    .tooltiptext = कड़ी नकल करें
+page-action-email-link-panel =
+    .label = कड़ी ईमेल करें…
+page-action-email-link-urlbar =
+    .tooltiptext = कड़ी ईमेल करें…
+page-action-share-url-panel =
+    .label = साझा करें
+page-action-share-url-urlbar =
+    .tooltiptext = साझा करें
+page-action-share-more-panel =
+    .label = अधिक…
+page-action-send-tab-not-ready =
+    .label = उपकरण सिंक हो रहा है…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = टैब पिन करें
+page-action-pin-tab-urlbar =
+    .tooltiptext = टैब पिन करें
+page-action-unpin-tab-panel =
+    .label = टैब का पिन निकालें
+page-action-unpin-tab-urlbar =
+    .tooltiptext = टैब का पिन निकालें
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -181,6 +224,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = निजी विंडो के लिए तयशुदा खोज इंजन के रूप में सेट करें
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = बुकमार्क ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = टैब ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = इतिहास ({ $restrict })
 
 ## Bookmark Panel
 
@@ -203,6 +266,7 @@ identity-connection-internal = यह एक सुरक्षित { -brand-s
 identity-connection-file = यह पेज आपके कंप्यूटर में सहेजा जाता हैं.
 identity-extension-page = यह पृष्ठ एक्सटेंशन से लोड किया गया है.
 identity-active-blocked = { -brand-short-name } इस पृष्ठ के कुछ हिस्सों को अवरुद्ध कर दिया है जो सुरक्षित नहीं हैं.
+identity-custom-root = कनेक्शन को उस प्रमाणपत्र जारीकर्ता द्वारा सत्यापित है जिसे Mozilla द्वारा मान्यता प्राप्त नहीं है।
 identity-passive-loaded = इस पेज का भाग सुरक्षित नहीं हैं(जैसा की छवि).
 identity-active-loaded = आपने इस पेज पर सुरक्षा निष्क्रिय कर दिए हैं.
 identity-weak-encryption = यह पेज कमजोर गोपन का उपयोग करता हैं.
@@ -215,6 +279,7 @@ identity-clear-site-data =
     .label = कूकीज़ तथा साइट डेटा हटायें…
 identity-connection-not-secure-security-view = आप इस साइट से सुरक्षित रूप से नहीं जुड़े हैं।
 identity-connection-verified = आप इस साइट से सुरक्षित रूप से जुड़े हैं।
+identity-ev-owner-label = इसे प्रमाणपत्र जारी किया गया:
 identity-description-custom-root = Mozilla इस प्रमाणपत्र जारीकर्ता को नहीं पहचानता है। यह आपके ऑपरेटिंग सिस्टम से या किसी ऐडमिनिस्ट्रेटर द्वारा जोड़ा जा सकता है। <label data-l10n-name="link">अधिक जानें</label>
 identity-remove-cert-exception =
     .label = अपवाद मिटाएँ
@@ -244,6 +309,10 @@ identity-more-info-link-text =
 
 browser-window-minimize-button =
     .tooltiptext = न्यूनतम करें
+browser-window-maximize-button =
+    .tooltiptext = बड़ा करें
+browser-window-restore-down-button =
+    .tooltiptext = पूर्ववत करें
 browser-window-close-button =
     .tooltiptext = बंद करें
 
@@ -263,9 +332,12 @@ popup-screen-sharing-never =
     .label = कभी अनुमति न दें
     .accesskey = N
 popup-silence-notifications-checkbox = साझा करते समय { -brand-short-name } से अधिसूचना अक्षम करें
+popup-silence-notifications-checkbox-warning = साझा करते समय { -brand-short-name } आपके नोटिफिकेशन को प्रदर्शित नहीं करेगा।
 
 ## WebRTC window or screen share tab switch warning
 
+sharing-warning-window = आप { -brand-short-name } को साझा कर रहे हैं। नए टैब पर जाने पर अन्य व्यक्ति इसे देख सकता है।
+sharing-warning-screen = आप पूरी स्क्रीन साझा कर रहे हैं। नए टैब पर जाने पर अन्य व्यक्ति इसे देख सकता है।
 sharing-warning-disable-for-session =
     .label = इस सत्र के लिए साझाकरण सुरक्षा अक्षम करें
 
@@ -276,8 +348,14 @@ sharing-warning-disable-for-session =
 
 urlbar-default-placeholder =
     .defaultPlaceholder = खोजें या पता दर्ज करें
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = खोजें या पता दर्ज करें
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name } के साथ खोजें या पता दर्ज करें
 urlbar-remote-control-notification-anchor =
     .tooltiptext = ब्राउज़र रिमोट कंट्रोल के तहत है
 urlbar-switch-to-tab =
@@ -291,3 +369,43 @@ urlbar-page-action-button =
     .tooltiptext = पृष्ठ क्रियाएँ
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name } में सहेजें
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = निजी विंडो में { $engine } के साथ खोजें
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = एक निजी विंडो में खोजें
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } से खोजें
+urlbar-result-action-switch-tab = 'टैब में स्विच करें
+urlbar-result-action-visit = भ्रमण करें
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> अब पूर्ण स्क्रीन है
+fullscreen-warning-no-domain = यह दस्तावेज़ अब पूर्ण स्क्रीन पर है
+fullscreen-exit-button = पूर्ण स्क्रीन से निकलें (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = पूर्ण स्क्रीन से निकलें (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> अपने सूचक पर नियंत्रण हैं. नियंत्रण फिर से वापस लेने के लिए Esc बटन दबाएँ.
+pointerlock-warning-no-domain = इस दस्तेवाज को आपके सूचक पर नियंत्रण हैं. नियंत्रण फिर से वापस लेने के लिए Esc बटन दबाएँ.

@@ -4,6 +4,8 @@
 
 tag-dialog-window =
     .title = Nyt mærkat
+
 tag-name-label =
     .value = Mærkatnavn:
     .accesskey = M
+

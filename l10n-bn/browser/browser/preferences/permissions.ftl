@@ -5,66 +5,53 @@
 permissions-window =
     .title = ব্যতিক্রম
     .style = width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = ওয়েবসাইটের ঠিকানা
     .accesskey = d
-
 permissions-block =
     .label = প্রতিরোধ করা হবে
     .accesskey = B
-
 permissions-session =
     .label = সেশনের জন্য অনুমোদন করা হবে
     .accesskey = S
-
 permissions-allow =
     .label = অনুমোদন
     .accesskey = A
-
 permissions-site-name =
     .label = ওয়েবসাইট
-
 permissions-status =
     .label = অবস্থা
-
 permissions-remove =
     .label = ওয়েবসাইট অপসারণ
     .accesskey = R
-
 permissions-remove-all =
     .label = সব ওয়েবসাইট অপসারণ কর
     .accesskey = e
-
 permissions-button-cancel =
     .label = বাতিল
     .accesskey = C
-
 permissions-button-ok =
     .label = পরিবর্তন সংরক্ষণ
     .accesskey = S
-
+permission-dialog =
+    .buttonlabelaccept = পরিবর্তন সংরক্ষণ
+    .buttonaccesskeyaccept = S
 permissions-autoplay-menu = সব ওয়েবসাইটের জন্য ডিফল্ট:
-
 permissions-searchbox =
     .placeholder = ওয়েবসাইট খুঁজুন
-
 permissions-capabilities-autoplay-allow =
     .label = অডিও ও ভিডিও অনুমোদন দিন
 permissions-capabilities-autoplay-block =
     .label = অডিও ব্লক
 permissions-capabilities-autoplay-blockall =
     .label = অডিও ও ভিডিও ব্লক
-
 permissions-capabilities-allow =
     .label = অনুমোদন করা হবে
 permissions-capabilities-block =
     .label = প্রতিরোধ করা হবে
 permissions-capabilities-prompt =
     .label = সর্বদা জিজ্ঞাসা কর
-
 permissions-capabilities-listitem-allow =
     .value = অনুমোদন করা হবে
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = অকার্যকর হোস্ট না�
 permissions-invalid-uri-label = অনুগ্রহ করে কার্যকর হোস্ট নাম দিন
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = ব্যতিক্রম - কন্টেন্ট ব্লকিং
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = আপনি এই ওয়েবসাইটগুলোতে কন্টেন্ট ব্লকিং নিস্ক্রিয় করেছেন।
 
 permissions-exceptions-etp-window =
     .title = বর্ধিত ট্র্যাকিং সুরক্ষার জন্য ব্যতিক্রম
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = ওয়েবসাইট সমূহ- অ্যাডনস ইন্সটল করতে পারবে
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = কোন ওয়েবসাইটগুলো অ্যাড-অন ইনস্টল করতে পারবে আপনি তা উল্লেখ করতে পারেন। সাইটের সঠিক ঠিকানা লিখে "অনুমোদন করা হবে" ক্লিক করুন।
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = ব্যতিক্রম - অটোপ্লে
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = কোন ওয়েবসাইট সবসময় মাল্টিমিডিয়া সাউন্ড স্বয়ংচালনা করবে অথবা কোনটি কখনই করবে না তা আপনি নির্দিষ্ট করতে পারেন। ওয়েব সাইটের সঠিক ঠিকানা টাইপ করুন এবং তারপরে ব্লক করুন, সেশনের জন্য অনুমতি দিন, বা অনুমতি দিন।
 
 ## Site Permissions - Autoplay
 

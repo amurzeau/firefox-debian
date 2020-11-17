@@ -17,6 +17,12 @@ extensions-name = 名称
 extensions-enabled = 启用
 extensions-version = 版本
 extensions-id = ID
+support-addons-title = 附加组件
+support-addons-name = 名称
+support-addons-type = 类型
+support-addons-enabled = 已启用
+support-addons-version = 版本
+support-addons-id = ID
 security-software-title = 安全软件
 security-software-type = 类型
 security-software-name = 名称
@@ -62,6 +68,7 @@ app-basics-service-workers = 已注册的 Service Worker
 app-basics-profiles = 配置文件
 app-basics-launcher-process-status = 启动器进程
 app-basics-multi-process-support = 多进程窗口
+app-basics-fission-support = Fission 窗口
 app-basics-remote-processes-count = 远程进程
 app-basics-enterprise-policies = 企业策略
 app-basics-location-service-key-google = Google 位置服务密钥
@@ -74,6 +81,12 @@ show-dir-label =
         [windows] 打开文件夹
        *[other] 打开目录
     }
+environment-variables-title = 环境变量
+environment-variables-name = 名称
+environment-variables-value = 值
+experimental-features-title = 实验性功能
+experimental-features-name = 名称
+experimental-features-value = 值
 modified-key-prefs-title = 修改过的重要首选项
 modified-prefs-name = 名称
 modified-prefs-value = 值
@@ -98,8 +111,6 @@ graphics-desktop-environment = 桌面环境
 place-database-title = Places 数据库
 place-database-integrity = 完整性
 place-database-verify-integrity = 验证完整性
-js-title = JavaScript
-js-incremental-gc = 渐进式垃圾收集
 a11y-title = 无障碍环境
 a11y-activated = 已激活
 a11y-force-disabled = 强制停用无障碍环境
@@ -129,7 +140,6 @@ restart-button-label = 重启
 
 audio-backend = 音频后端
 max-audio-channels = 最大声道
-channel-layout = 首选声道布局
 sample-rate = 首选采样率
 roundtrip-latency = 往返延迟（标准差）
 media-title = 媒体
@@ -246,11 +256,13 @@ blocklisted-bug = 因已知问题已被列入黑名单
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = 由于已知问题，被列入屏蔽列表：<a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = 已列入黑名单；故障代码 { $failureCode }
 d3d11layers-crash-guard = D3D11 合成器
 d3d11video-crash-guard = D3D11 视频解码器
-d3d9video-crash-buard = D3D9 视频解码器
 d3d9video-crash-guard = D3D9 视频解码器
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX 视频解码器
@@ -298,6 +310,20 @@ multi-process-status-6 = 因不支持的文本输入而禁用
 multi-process-status-7 = 因部分附加组件而禁用
 multi-process-status-8 = 被强制禁用
 multi-process-status-unknown = 未知状态
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = 通过实验禁用
+fission-status-experiment-treatment = 通过实验启用
+fission-status-disabled-by-e10s-env = 被环境禁用
+fission-status-enabled-by-env = 由环境启用
+fission-status-disabled-by-safe-mode = 被安全模式禁用
+fission-status-enabled-by-default = 默认启用
+fission-status-disabled-by-default = 默认禁用
+fission-status-enabled-by-user-pref = 由用户启用
+fission-status-disabled-by-user-pref = 被用户禁用
+fission-status-disabled-by-e10s-other = 已禁用 E10s
 async-pan-zoom = 异步平移/缩放
 apz-none = 无
 wheel-enabled = 滚轮输入已启用
@@ -305,7 +331,7 @@ touch-enabled = 触摸输入已启用
 drag-enabled = 滚动条拖动已启用
 keyboard-enabled = 键盘已启用
 autoscroll-enabled = 自动滚动已启用
-zooming-enabled = 已启用平滑捏合缩放
+zooming-enabled = 已启用平滑手势缩放
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference
@@ -318,3 +344,12 @@ touch-warning = 因为不支持的首选项: { $preferenceKey }，已禁用异�
 policies-inactive = 未激活
 policies-active = 已激活
 policies-error = 错误
+
+## Printing section
+
+support-printing-title = 打印
+support-printing-troubleshoot = 故障排除
+support-printing-clear-settings-button = 清除保存的打印设置
+support-printing-modified-settings = 修改过的打印设置
+support-printing-prefs-name = 名称
+support-printing-prefs-value = 值

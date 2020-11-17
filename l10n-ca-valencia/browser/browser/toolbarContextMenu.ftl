@@ -17,9 +17,13 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = Selecciona totes les pestanyes
     .accesskey = t
-toolbar-context-menu-undo-close-tab =
-    .label = Desfés el tancament de la pestanya
-    .accesskey = D
+toolbar-context-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Desfés el tancament de la pestanya
+           *[other] Desfés el tancament de les pestanyes
+        }
+    .accesskey = f
 
 toolbar-context-menu-manage-extension =
     .label = Gestiona l'extensió

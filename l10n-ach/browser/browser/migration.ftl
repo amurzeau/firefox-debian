@@ -16,6 +16,12 @@ import-from-ie =
 import-from-edge =
     .label = Microsoft Edge
     .accesskey = E
+import-from-edge-legacy =
+    .label = Microsoft Edge Legacy
+    .accesskey = L
+import-from-edge-beta =
+    .label = Microsoft Edge Beta
+    .accesskey = d
 import-from-nothing =
     .label = Pe ikel gin mo ki woko
     .accesskey = P
@@ -47,6 +53,9 @@ no-migration-sources = Pe tye purugram mo matye ki tic me alama buk, gin mukato 
 import-source-page-title = Kel Ter kacel ki Tic ki woko
 import-items-page-title = Jami me akela ki woko
 import-items-description = Yer jami me akela ki woko:
+import-permissions-page-title = Tim ber i mii ki { -brand-short-name } twero
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS mito ni iyee atir ki { -brand-short-name } me nongo alama buk pa Safari. Dii “Mede” ka i yer pwail me  “Bookmarks.plist” i dirica me PWAIL AYABA ma nyute.
 import-migrating-page-title = Kelo ki woko…
 import-migrating-description = Jami magi kombedi kitye ka kelo ki woko…
 import-select-profile-page-title = Yer Profile
@@ -61,6 +70,7 @@ import-close-source-browser = Tim ber inen ni layeny ma kiyero ni kiloro woko ma
 imported-bookmarks-source = Ki i { $source }
 source-name-ie = Internet Explorer
 source-name-edge = Microsoft Edge
+source-name-edge-beta = Microsoft Edge Beta
 source-name-safari = Safari
 source-name-canary = Google Chrome Canary
 source-name-chrome = Google Chrome
@@ -81,10 +91,45 @@ imported-edge-reading-list = Jami akwana (Ki i Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.
 
+browser-data-cookies-checkbox =
+    .label = Angija
+browser-data-cookies-label =
+    .value = Angija
+browser-data-history-checkbox =
+    .label =
+        { $browser ->
+            [firefox] Gin Mukato me Yeny ki Alama buk
+           *[other] Gin Mukato me Yeny
+        }
+browser-data-history-label =
+    .value =
+        { $browser ->
+            [firefox] Gin Mukato me Yeny ki Alama buk
+           *[other] Gin Mukato me Yeny
+        }
+browser-data-formdata-checkbox =
+    .label = Gin mukato me Pwom ma Kigwoko
+browser-data-formdata-label =
+    .value = Gin mukato me Pwom ma Kigwoko
+browser-data-bookmarks-checkbox =
+    .label =
+        { $browser ->
+            [ie] Ma i maro loyo
+            [edge] Ma i maro loyo
+           *[other] Alama buk
+        }
+browser-data-bookmarks-label =
+    .value =
+        { $browser ->
+            [ie] Ma i maro loyo
+            [edge] Ma i maro loyo
+           *[other] Alama buk
+        }
 browser-data-session-checkbox =
     .label = Dirica ki dirica matino
 browser-data-session-label =

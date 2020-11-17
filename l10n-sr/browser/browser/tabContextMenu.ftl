@@ -53,9 +53,22 @@ move-to-end =
 move-to-new-window =
     .label = Премести у нови прозор
     .accesskey = н
-undo-close-tab =
-    .label = Врати затворен језичак
-    .accesskey = В
+tab-context-close-multiple-tabs =
+    .label = Затвори вишеструке језичке
+    .accesskey = M
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Врати затворене језичке
+            [one] Врати затворен језичак
+            [few] Врати затворена језичка
+           *[other] Врати затворених језичака
+        }
+    .accesskey = U
 close-tab =
     .label = Затвори језичак
     .accesskey = ч
@@ -68,3 +81,21 @@ move-tabs =
 move-tab =
     .label = Помери језичак
     .accesskey = м
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Затвори језичак
+            [one] Затвори језичак
+            [few] Затвори језичка
+           *[other] Затвори језичака
+        }
+    .accesskey = C
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Помери језичак
+            [one] Помери језичак
+            [few] Помери језичка
+           *[other] Помери језичака
+        }
+    .accesskey = v

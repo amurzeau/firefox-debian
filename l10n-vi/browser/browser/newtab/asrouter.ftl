@@ -144,12 +144,12 @@ cfr-whatsnew-permission-prompt-cta = Tìm hiểu thêm
 # localization, because it would result in the number showing twice.
 cfr-whatsnew-fingerprinter-counter-header =
     { $fingerprinterCount ->
-       *[other] Dấu vân tay bị chặn
+       *[other] Dấu vết bị chặn
     }
-cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } chặn nhiều trang lấy dấu vân tay bí mật thu thập thông tin về thiết bị và hành động của bạn để tạo hồ sơ quảng cáo về bạn.
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } chặn nhiều trang lấy dấu vết để bí mật thu thập thông tin về thiết bị và hành động của bạn để tạo hồ sơ quảng cáo về bạn.
 # Message variation when fingerprinters count is less than 10
-cfr-whatsnew-fingerprinter-counter-header-alt = Dấu vân tay
-cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } có thể chặn những trang lấy dấu vân tay bí mật thu thập thông tin về thiết bị và hành động của bạn để tạo hồ sơ quảng cáo về bạn.
+cfr-whatsnew-fingerprinter-counter-header-alt = Dấu vết
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } có thể chặn những trang lấy dấu vết để bí mật thu thập thông tin về thiết bị và hành động của bạn để tạo hồ sơ quảng cáo về bạn.
 
 ## Bookmark Sync
 
@@ -190,8 +190,8 @@ cfr-doorhanger-socialtracking-dont-show-again = Đừng hiện cho tôi những 
     .accesskey = D
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } đã dừng mạng xã hội mà nó theo dõi bạn tại đây
 cfr-doorhanger-socialtracking-description = Vấn đề riêng tư của bạn. { -brand-short-name } hiện chặn các trình theo dõi phương tiện truyền thông xã hội phổ biến, giới hạn số lượng dữ liệu họ có thể thu thập về những gì bạn làm trực tuyến.
-cfr-doorhanger-fingerprinters-heading = { -brand-short-name } đã chặn một dấu vân tay trên trang này
-cfr-doorhanger-fingerprinters-description = Vấn đề riêng tư của bạn. { -brand-short-name } hiện chặn các dấu vân tay, mà nó thu thập các mẫu thông tin nhận dạng duy nhất về thiết bị của bạn để theo dõi bạn.
+cfr-doorhanger-fingerprinters-heading = { -brand-short-name } đã chặn một dấu vết trên trang này
+cfr-doorhanger-fingerprinters-description = Vấn đề riêng tư của bạn. { -brand-short-name } hiện chặn các dấu vết, mà nó thu thập các mẫu thông tin nhận dạng duy nhất về thiết bị của bạn để theo dõi bạn.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } đã chặn một loại tiền điện tử trên trang này
 cfr-doorhanger-cryptominers-description = Vấn đề riêng tư của bạn. { -brand-short-name } hiện chặn các loại tiền điện tử, mà nó sử dụng sức mạnh tính toán của hệ thống của bạn để khai thác tiền kỹ thuật số.
 
@@ -206,6 +206,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Xem tất cả
     .accesskey = S
+cfr-doorhanger-milestone-close-button = Đóng
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -239,3 +241,33 @@ cfr-whatsnew-protections-icon-alt = Biểu tượng khiên
 
 cfr-whatsnew-better-pdf-header = Trải nghiệm PDF tốt hơn
 cfr-whatsnew-better-pdf-body = Tài liệu PDF hiện mở trực tiếp bằng { -brand-short-name }, giữ cho công việc của bạn trong tầm tay dễ dàng.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Vấn đề riêng tư của bạn. { -brand-short-name } bây giờ định tuyến an toàn các yêu cầu DNS của bạn bất cứ khi nào có thể đến dịch vụ đối tác để bảo vệ bạn trong khi bạn duyệt.
+cfr-doorhanger-doh-header = Truy vấn DNS được mã hóa, an toàn hơn
+cfr-doorhanger-doh-primary-button = OK, đã hiểu
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Vô hiệu hóa
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Quyền riêng tư của bạn được đặt lên hàng đầu. { -brand-short-name } hiện cô lập hoặc các trang web với nhau vào sandbox, điều này khiến tin tặc khó lấy cắp mật khẩu, số thẻ tín dụng và các thông tin nhạy cảm khác.
+cfr-doorhanger-fission-header = Cách ly trang web
+cfr-doorhanger-fission-primary-button = OK, đã hiểu
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Tìm hiểu thêm
+    .accesskey = T
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Bảo vệ tự động, không có theo dõi ẩn
+cfr-whatsnew-clear-cookies-body = Một số trình theo dõi chuyển hướng bạn đến các trang web khác bí mật đặt cookie. { -brand-short-name } bây giờ sẽ tự động xóa các cookie đó để bạn không thể bị theo dõi.
+cfr-whatsnew-clear-cookies-image-alt = Minh họa về cookie bị chặn
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Điều khiển phương tiện khác
+cfr-whatsnew-media-keys-body = Phát và tạm dừng âm thanh hoặc video ngay từ bàn phím hoặc tai nghe của bạn, giúp bạn dễ dàng điều khiển phương tiện từ thẻ, chương trình khác hoặc ngay cả khi máy tính của bạn bị khóa. Bạn cũng có thể di chuyển giữa các bản nhạc bằng cách sử dụng các phím tiến và lùi.
+cfr-whatsnew-media-keys-button = Tìm hiểu cách thức

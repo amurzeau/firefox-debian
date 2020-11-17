@@ -4,10 +4,6 @@
 
 process-type-web = Webový obsah
 
-# process used to run privileged pages,
-# such as about:home
-process-type-privileged = Privilegované stránky aplikácie
-
 # process used to run privileged about pages,
 # such as about:home
 process-type-privilegedabout = Privilegované about stránky
@@ -36,3 +32,5 @@ process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Socket
 
+# process preallocated; may change to other types
+process-type-prealloc = Vopred alokované

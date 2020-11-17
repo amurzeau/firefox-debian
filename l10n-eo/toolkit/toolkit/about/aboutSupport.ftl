@@ -14,6 +14,12 @@ extensions-name = Nomo
 extensions-enabled = Aktiva
 extensions-version = Versio
 extensions-id = ID
+support-addons-title = Aldonaĵoj
+support-addons-name = Nomo
+support-addons-type = Tipo
+support-addons-enabled = Aktiva
+support-addons-version = Versio
+support-addons-id = ID
 security-software-title = Sekureca programaro
 security-software-type = Tipo
 security-software-name = Nomo
@@ -59,6 +65,7 @@ app-basics-service-workers = Registritaj Service Workers
 app-basics-profiles = Profiloj
 app-basics-launcher-process-status = Lanĉa procezo
 app-basics-multi-process-support = Plurprocezaj fenestroj
+app-basics-fission-support = Fenestroj Fission
 app-basics-remote-processes-count = Foraj procezoj
 app-basics-enterprise-policies = Kompaniaj politikoj
 app-basics-location-service-key-google = Ŝlosilo de la pozicia servo de Google
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] Malfermi dosierujon
        *[other] Malfermi dosierujon
     }
+environment-variables-title = Ĉirkaŭaĵaj variantoj
+environment-variables-name = Nomo
+environment-variables-value = Valoro
+experimental-features-title = Eksperimentaj trajtoj
+experimental-features-name = Nomo
+experimental-features-value = Valoro
 modified-key-prefs-title = Modifitaj preferoj
 modified-prefs-name = Nomo
 modified-prefs-value = Valoro
@@ -95,8 +108,6 @@ graphics-desktop-environment = Labortabla ĉirkaŭaĵo
 place-database-title = Datumbazo de lokoj
 place-database-integrity = Integreco
 place-database-verify-integrity = Kontroli integrecon
-js-title = JavaScript
-js-incremental-gc = Poioma GC
 a11y-title = Alirebleco
 a11y-activated = Aktiva
 a11y-force-disabled = Eviti alireblon
@@ -126,7 +137,6 @@ restart-button-label = Restartigi
 
 audio-backend = Sonsistemo
 max-audio-channels = Maksimuma nombro de kanaloj
-channel-layout = Preferata aranĝo de kanaloj
 sample-rate = Preferata specimena frekvenco
 roundtrip-latency = Tien-reena tempo (norma devio)
 media-title = Aŭdvidaĵo
@@ -263,11 +273,13 @@ blocklisted-bug = En la bloklisto pro konataj problemoj
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = cimo { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Blokita pro konataj problemoj: <a data-l10n-name="bug-link">eraro{ $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = En bloklisto; kodo de malsukceso { $failureCode }
 d3d11layers-crash-guard = D3D11 Komponisto
 d3d11video-crash-guard = D3D11 Videa malkodilo
-d3d9video-crash-buard = D3D9 Videa malkodilo
 d3d9video-crash-guard = D3D9 Videa malkodilo
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX Videa malkodilo
@@ -315,6 +327,20 @@ multi-process-status-6 = Malaktivigita de nesubtenata teksta enigo
 multi-process-status-7 = Malaktivigita de aldonaĵoj
 multi-process-status-8 = Devigite malaktiva
 multi-process-status-unknown = Nekonata stato
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Malaktivigita de eksperimento
+fission-status-experiment-treatment = Aktivigita de eksperimento
+fission-status-disabled-by-e10s-env = Malaktivigita de ĉirkaŭaĵo
+fission-status-enabled-by-env = Aktivita de ĉirkaŭajo
+fission-status-disabled-by-safe-mode = Malaktivigita de la sekura reĝimo
+fission-status-enabled-by-default = Norme aktivigita
+fission-status-disabled-by-default = Norme malaktivigita
+fission-status-enabled-by-user-pref = Aktivigita de uzanto
+fission-status-disabled-by-user-pref = Malaktivigita de uzanto
+fission-status-disabled-by-e10s-other = E10s malaktiva
 async-pan-zoom = Nesinkrona panoramado kaj skaligo
 apz-none = neniu
 wheel-enabled = rada enigo aktiva
@@ -335,3 +361,12 @@ touch-warning = nesinkrona tuŝa enigo malaktiva pro nesubtenata prefero: { $pre
 policies-inactive = Malaktiva
 policies-active = Aktiva
 policies-error = Eraro
+
+## Printing section
+
+support-printing-title = Preso
+support-printing-troubleshoot = Solvo de problemoj
+support-printing-clear-settings-button = Viŝi konservitajn presajn agordojn
+support-printing-modified-settings = Modifitaj presaj agordoj
+support-printing-prefs-name = Nomo
+support-printing-prefs-value = Valoro

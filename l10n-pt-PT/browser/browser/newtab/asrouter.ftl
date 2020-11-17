@@ -211,6 +211,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Ver tudo
     .accesskey = V
+cfr-doorhanger-milestone-close-button = Fechar
+    .accesskey = F
 
 ## What’s New Panel Content for Firefox 76
 
@@ -244,3 +246,33 @@ cfr-whatsnew-protections-icon-alt = Ícone de um escudo
 
 cfr-whatsnew-better-pdf-header = Melhor experiência com PDF
 cfr-whatsnew-better-pdf-body = Os documentos PDF são agora abertos diretamente no { -brand-short-name }, mantendo e facilitando o seu fluxo de trabalho.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = A sua privacidade é importante. Agora, o { -brand-short-name } encaminha os seus pedidos de DNS de forma segura e sempre que possível, para um serviço de um parceiro para o proteger enquanto navega.
+cfr-doorhanger-doh-header = Pesquisas de DNS encriptadas e mais seguras
+cfr-doorhanger-doh-primary-button = OK, percebi
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Desativar
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = A sua privacidade é importante. O { -brand-short-name } agora isola os sites uns dos outros, o que torna mais difícil que os piratas roubem palavras-passe, números de cartão de crédito e outras informações sensíveis.
+cfr-doorhanger-fission-header = Isolamento de sites
+cfr-doorhanger-fission-primary-button = OK, percebi
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Saber mais
+    .accesskey = b
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Proteção automática contra táticas sorrateiras de monitorização
+cfr-whatsnew-clear-cookies-body = Alguns rastreadores redirecionam-no para outros sites que, secretamente, definem cookies. O { -brand-short-name } agora elimina estas cookies automaticamente para que não possa ser monitorizado.
+cfr-whatsnew-clear-cookies-image-alt = Ilustração do bloqueio de cookies
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Mais controlos de media
+cfr-whatsnew-media-keys-body = Reproduza e pare o áudio ou vídeo diretamente com o teclado ou auscultadores, facilitando o controlo da media a partir de outro separador, programa ou mesmo quando o computador estiver bloqueado. Também pode alternar entre as faixas utilizando as teclas de avanço e retrocesso.
+cfr-whatsnew-media-keys-button = Saber mais

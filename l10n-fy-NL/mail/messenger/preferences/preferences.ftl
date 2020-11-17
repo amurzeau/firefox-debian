@@ -10,6 +10,8 @@ preferences-title =
             [windows] Opsjes
            *[other] Foarkarren
         }
+category-list =
+    .aria-label = Kategoryen
 pane-general-title = Algemien
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,7 +43,6 @@ composition-addressing-header = Addressearring
 privacy-main-header = Privacy
 privacy-passwords-header = Wachtwurden
 privacy-junk-header = Net-winske berjochten
-privacy-data-collection-header = Gegevenssammeling en -gebrûk
 collection-header = Gegevenssamling en gebrûk fan { -brand-short-name }
 collection-description = Wy stribje dernei jo kar te bieden en allinnich te sammeljen wat wy nedich hawwe om { -brand-short-name } foar elkenien beskikber te meitsjen en te ferbetterjen. Wy freegje altyd tastimming eardat wy persoanlike gegevens ûntfange.
 collection-privacy-notice = Privacyferklearring
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = A
 confirm-messenger-language-change-description = Start { -brand-short-name } opnij om de fernijing ta te passen
 confirm-messenger-language-change-button = Tapasse en opnij starte
-update-pref-write-failure-title = Skriuwflater
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Net ynb steat foarkar te bewarjen. Koe net skriuwe nei: { $path }
 update-setting-write-failure-title = Flater by bewarjen fernijingsfoarkarren
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -91,12 +88,11 @@ update-in-progress-ok-button = &Ferwerpe
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Trochgean
+account-button = Accountynstellingen
 addons-button = Utwreidingen & Tema's
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Ferifiearje jo identiteit om in haadwachtwurd oan te meitsjen.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Fier jo oanmeldgegevens foar Windows yn om in haadwachtwurd yn te stellen. Hjirtroch wurdt de befeiliging fan jo accounts beskerme.
 # This message can be seen by trying to add a Master Password.
@@ -104,6 +100,13 @@ master-password-os-auth-dialog-message-win = Fier jo oanmeldgegevens foar Window
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = in haadwachtwurd oan te meitsjen
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Fier jo oanmeldgegevens foar Windows yn om in haadwachtwurd yn te stellen. Hjirtroch wurdt de befeiliging fan jo accounts beskerme.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = in haadwachtwurd oanmeitsje
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -541,6 +544,15 @@ master-password-label =
 master-password-button =
     .label = Haadwachtwurd wizigje…
     .accesskey = w
+primary-password-description = In haadwachtwurd befeiliget al jo wachtwurden, mar jo moatte it elke sesje ien kear ynfiere.
+primary-password-label =
+    .label = In haadwachtwurd brûke
+    .accesskey = h
+primary-password-button =
+    .label = Haadwachtwurd wizigje…
+    .accesskey = w
+forms-primary-pw-fips-title = Jo binne no yn FIPS-modus. FIPS fereasket dat it haadwachtwurd net leech is.
+forms-master-pw-fips-desc = Wachtwurdwiziging mislearre
 junk-description = Stel jo standertynstellingen foar net-winske-berjochtedeteksje yn. Accountspesifike ynstellingen kinne konfigurearre wurde yn Accountynstellingen.
 junk-label =
     .label = Wannear ik berjochten markearje as net-winske:

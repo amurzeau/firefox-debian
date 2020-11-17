@@ -115,8 +115,8 @@ options-enable-chrome-tooltip =
 
 # The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
 options-enable-remote-label = Activează depanarea la distanță
-options-enable-remote-tooltip =
-    .title = Activarea opțiunii va permite uneltelor pentru dezvoltatori să depaneze o instanță la distanță, cum ar fi Firefox OS
+options-enable-remote-tooltip2 =
+    .title = Activarea acestei opțiuni va permite depanarea la distanță a acestei instanțe a browserului
 
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = Activează scripturile Service Worker prin HTTP (când este deschisă cutia de unelte)

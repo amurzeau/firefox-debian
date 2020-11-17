@@ -17,6 +17,12 @@ extensions-name = Nomine
 extensions-enabled = Activate
 extensions-version = Version
 extensions-id = ID
+support-addons-title = Additivos
+support-addons-name = Nomine
+support-addons-type = Typo
+support-addons-enabled = Activate
+support-addons-version = Version
+support-addons-id = ID
 security-software-title = Software de securitate
 security-software-type = Typo
 security-software-name = Nomine
@@ -62,6 +68,7 @@ app-basics-service-workers = Service Workers registrate
 app-basics-profiles = Profilos
 app-basics-launcher-process-status = Processo del lanceator
 app-basics-multi-process-support = Fenestras in multiprocesso
+app-basics-fission-support = Fenestras de Fission
 app-basics-remote-processes-count = Processos remote
 app-basics-enterprise-policies = Politicas de interprisa
 app-basics-location-service-key-google = Clave del servicio de localisation de Google
@@ -74,6 +81,12 @@ show-dir-label =
         [windows] Aperir le dossier
        *[other] Aperir le directorio
     }
+environment-variables-title = Variabiles de ambiente
+environment-variables-name = Nomine
+environment-variables-value = Valor
+experimental-features-title = Functionalitates experimental
+experimental-features-name = Nomine
+experimental-features-value = Valor
 modified-key-prefs-title = Preferentias importante modificate
 modified-prefs-name = Nomine
 modified-prefs-value = Valor
@@ -98,8 +111,6 @@ graphics-desktop-environment = Ambiente scriptorio
 place-database-title = Base de datos de locos
 place-database-integrity = Integritate
 place-database-verify-integrity = Verificar le integritate
-js-title = JavaScript
-js-incremental-gc = Recuperation incremental de memoria
 a11y-title = Accessibilitate
 a11y-activated = Activate
 a11y-force-disabled = Impedir le accessibilitate
@@ -119,17 +130,16 @@ sandbox-sys-call-number = Syscall
 sandbox-sys-call-args = Argumentos
 safe-mode-title = Probar le modo secur
 restart-in-safe-mode-label = Reinitiar con le additivos inactive…
-clear-startup-cache-title = Prova clarar le cache de lanceamento initial
-clear-startup-cache-label = Clarar cache de lanceamento initial…
-startup-cache-dialog-title = Clarar cache de lanceamento initial
-startup-cache-dialog-body = Reinitiar { -brand-short-name } pro clarar le cache de lanceamento initial. Isto non cambiara tu parametros e non removera le extensiones que tu ha addite a { -brand-short-name }.
+clear-startup-cache-title = Prova vacuar le cache de initio
+clear-startup-cache-label = Vacuar le cache de initio…
+startup-cache-dialog-title = Vacuar le cache de initio
+startup-cache-dialog-body = Reinitia { -brand-short-name } pro vacuar le cache de initio. Isto non cambiara tu parametros e non removera le extensiones que tu ha addite a { -brand-short-name }.
 restart-button-label = Reinitiar
 
 ## Media titles
 
 audio-backend = Backend audio
 max-audio-channels = Numero maxime de canales
-channel-layout = Disposition de canal preferite
 sample-rate = Frequentia de campion preferite
 roundtrip-latency = Latentia de ir e retorno  (deviation standard)
 media-title = Media
@@ -266,11 +276,13 @@ blocklisted-bug = Inserite in le lista del blocates per problemas note
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = error { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Inserite in lista del blocadas per note problemas: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Inserite in le lista del blocates: codice de error { $failureCode }
 d3d11layers-crash-guard = Compositor D3D11
 d3d11video-crash-guard = Decodificator de video D3D11
-d3d9video-crash-buard = Decodificator de video D3D9
 d3d9video-crash-guard = Decodificator de video D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Decodificator de video WMF VPX
@@ -318,6 +330,20 @@ multi-process-status-6 = Disactivate per entrata de texto non supportate
 multi-process-status-7 = Disactivate per additivos
 multi-process-status-8 = Disactivate fortiatemente
 multi-process-status-unknown = Stato incognite
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Disactivate per experimento
+fission-status-experiment-treatment = Activate per experimento
+fission-status-disabled-by-e10s-env = Disactivate per ambiente
+fission-status-enabled-by-env = Activate per ambiente
+fission-status-disabled-by-safe-mode = Disactivate per modo secur
+fission-status-enabled-by-default = Activate per predefinition
+fission-status-disabled-by-default = Disactivate per predefinition
+fission-status-enabled-by-user-pref = Activate per le usator
+fission-status-disabled-by-user-pref = Disactivate per le usator
+fission-status-disabled-by-e10s-other = E10s disactivate
 async-pan-zoom = Pan/Zoom asynchrone
 apz-none = nulle
 wheel-enabled = entrata a rota activate
@@ -338,3 +364,12 @@ touch-warning = entrata tactile asynchrone disactivate a causa de un preferentia
 policies-inactive = Inactive
 policies-active = Active
 policies-error = Error
+
+## Printing section
+
+support-printing-title = Imprimente
+support-printing-troubleshoot = Resolution de problemas
+support-printing-clear-settings-button = Eliminar le parametros de impression salvate
+support-printing-modified-settings = Parametros de impression modificate
+support-printing-prefs-name = Nomine
+support-printing-prefs-value = Valor

@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Janog gaž w { -brand-short-name } jo blokěrowanje znatych pśeslědowakow  nastajone
 do-not-track-option-always =
     .label = Pśecej
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Nastajenja
-           *[other] Nastajenja
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Nastajenja
@@ -35,6 +29,8 @@ search-input-box =
            *[other] W nastajenjach pytaś
         }
 managed-notice = Waš wobglědowak se wót wašeje organizacije zastoj.
+category-list =
+    .aria-label = Kategorije
 pane-general-title = Powšykne
 category-general =
     .tooltiptext = { pane-general-title }
@@ -50,6 +46,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = Eksperimenty { -brand-short-name }
+category-experimental =
+    .tooltiptext = Eksperimenty { -brand-short-name }
+pane-experimental-subtitle = Z glědanim pókšacowaś
+pane-experimental-search-results-header = Eksperimenty { -brand-short-name }: pókšacujśo z glědanim
+pane-experimental-description = Gaž nastajenja rozšyrjoneje konfiguracije změnijośo, móžo to wugbaśe abo wěstotu { -brand-short-name } wobwliwowaś.
 help-button-label = Pomoc { -brand-short-name }
 addons-button-label = Rozšyrjenja a drastwy
 focus-search =
@@ -82,6 +84,9 @@ extension-controlled-homepage-override = Rozšyrjenje <img data-l10n-name="icon"
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Rozšyrjenje <img data-l10n-name="icon"/> { $name } waš bok nowego rejtarika wóźi.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Rozšyrjenje, <img data-l10n-name="icon"/> { $name }, toś to nastajenje kontrolěrujo.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Rozšyrjenje, <img data-l10n-name="icon"/> { $name }, toś to nastajenje wóźi.
@@ -371,13 +376,6 @@ update-application-warning-cross-user-setting = Toś to nastajenje se na wšykne
 update-application-use-service =
     .label = Slězynowu słužbu za instalěrowanje aktualizacijow wužywaś
     .accesskey = S
-update-enable-search-update =
-    .label = Pytnice awtomatiski aktualizěrowaś
-    .accesskey = k
-update-pref-write-failure-title = Pisańska zmólka
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Nastajenje njedajo se składowaś. Njejo było móžno, do dataje pisaś: { $path }
 update-setting-write-failure-title = Zmólka pśi składowanju aktualizěrowańskich nastajenjow
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -436,6 +434,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Wóźeńske elementy wideo wobraz-we-wobrazu zmóžniś
     .accesskey = W
 browsing-picture-in-picture-learn-more = Dalšne informacije
+browsing-media-control =
+    .label = Medije pśez tastaturu, headset abo wirtuelny pówjerch wóźiś
+    .accesskey = M
+browsing-media-control-learn-more = Dalšne informacije
 browsing-cfr-recommendations =
     .label = Rozšyrjenja dopórucyś, gaž pśeglědujośo
     .accesskey = R
@@ -499,13 +501,14 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Nejcesćej woglědane sedła
 home-prefs-topsites-description = Sedła, ku kótarymž se nejcesćej woglědujośo
+home-prefs-topsites-by-option-sponsored =
+    .label = Sponsorowane nejlubše sedła
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = Wót { $provider } dopórucony
-home-prefs-recommended-by-description = Wjelicne wopśimjeśe z cełego weba, wubrane specielnje za was
 home-prefs-recommended-by-description-update = Wurědne wopśimjeśe z cełego weba, wubrane wót { $provider }
 
 ##
@@ -548,7 +551,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Symbolowej rědce pytańske pólo pśidaś
 search-engine-default-header = Standardna pytnica
-search-engine-default-desc = Wubjeŕśo standardnu pytnicu, kótaraž ma se w adresowem pólu a pytańskem polu wužywaś.
 search-engine-default-desc-2 = To jo waša standardna pytnica w adresowej rědce a pytańskej rědce. Móžośo je kuždy raz pśešaltowaś.
 search-engine-default-private-desc-2 = Wubjeŕśo drugu standardnu pytnicu jano za priwatny modus
 search-separate-default-engine =
@@ -571,10 +573,10 @@ search-show-suggestions-above-history-option =
     .label = Pytańske naraźenja pśed pśeglědowańskeju historiju we wuslědkach adresowego póla pokazaś
 search-show-suggestions-private-windows =
     .label = Pytańske naraźenja w priwatnych woknach pokazaś
-suggestions-addressbar-settings = Wubjeŕśo nastajenja za pśeglědowańsku historiju, cytańske znamjenja a rejtarikowe naraźenja
 suggestions-addressbar-settings-generic = Nastajenja za druge naraźenja adresowego póla změniś
 search-suggestions-cant-show = Pytańske naraźenja njebudu se we wuslědkach adresowego póla pokazaś, dokulaž sćo { -brand-short-name } tak konfigurěrował, až njespomnjejo se nigda historiju.
 search-one-click-header = Pytnice z jadnym kliknjenim
+search-one-click-header2 = Pytańske skrotconki
 search-one-click-desc = Wubjeŕśo alternatiwne pytnice, kótarež se pód adresowym pólom a pytańskim pólom pokazuju, gaž klucowe słowo zapódawaśo.
 search-choose-engine-column =
     .label = Pytnica
@@ -586,6 +588,9 @@ search-restore-default =
 search-remove-engine =
     .label = Wótpóraś
     .accesskey = W
+search-add-engine =
+    .label = Pśidaś
+    .accesskey = P
 search-find-more-link = Dalšne pytnice pytaś
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -597,7 +602,6 @@ search-keyword-warning-bookmark = Sćo klucowe słowo wubrał, kótarež wužiwa
 
 ## Containers Section
 
-containers-back-link = « Slědk
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -616,20 +620,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Wótwónoźeś
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Wzejśo swój web sobu
 sync-signedout-description = Synchronizěrujśo swóje cytańske znamjenja, historiju, rejtariki, gronidła, dodanki a nastajenja mjazy wšymi wašymi rědami.
-sync-signedout-account-title = Zwězaś z: { -fxaccount-brand-name }
-sync-signedout-account-create = Njamaśo konto? Zachopśo
-    .accesskey = k
-sync-signedout-account-signin =
-    .label = Pśizjawiś…
-    .accesskey = P
 sync-signedout-account-signin2 =
     .label = Se pla { -sync-brand-short-name } pśizjawiś…
     .accesskey = l
@@ -643,16 +638,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Firefox za <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> abo <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> ześěgnuś, aby ze swójim mobilnym rědom synchronizěrował.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Profilowy wobraz změniś
-sync-disconnect =
-    .label = Zwisk źěliś…
-    .accesskey = Z
 sync-sign-out =
     .label = Wótzjawiś…
     .accesskey = t
@@ -669,8 +658,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Pśizjawiś
     .accesskey = z
-sync-signedin-settings-header = Nastajenja synchronizacije
-sync-signedin-settings-desc = Wubjeŕśo, což ma se z { -brand-short-name } na wašych rědach synchronizěrowaś.
 
 ## Sync section - enabling or disabling sync.
 
@@ -723,10 +710,6 @@ sync-engine-tabs =
     .label = Wócynjone rejtariki
     .tooltiptext = Lisćina ze wšym, což jo wócynjone na wšych synchronizěrowanych rědach
     .accesskey = r
-sync-engine-logins =
-    .label = Pśizjawjenja
-    .tooltiptext = Wužywaŕske mjenja a gronidła, kótarež sćo składł
-    .accesskey = P
 sync-engine-logins-passwords =
     .label = Pśizjawjenja a gronidła
     .tooltiptext = Wužywaŕske mjenja a gronidła, kótarež sćo składł
@@ -765,18 +748,10 @@ sync-device-name-save =
     .label = Składowaś
     .accesskey = d
 sync-connect-another-device = Z drugim rědom zwězaś
-sync-manage-devices = Rědy zastojaś
-sync-fxa-begin-pairing = Rěd zwězaś
-sync-tos-link = Słužbne wuměnjenja
-sync-fxa-privacy-notice = Powěźeńka priwatnosći
 
 ## Privacy Section
 
 privacy-header = Priwatnosć wobglědowaka
-
-## Privacy Section - Forms
-
-logins-header = Pśizjawjenja a gronidła
 
 ## Privacy Section - Logins and Passwords
 
@@ -807,10 +782,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Głowne gronidło wužywaś
     .accesskey = G
+forms-primary-pw-use =
+    .label = Głowne gronidło wužywaś
+    .accesskey = G
+forms-primary-pw-learn-more-link = Dalšne informacije
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Głowne gronidło změniś…
     .accesskey = m
 forms-master-pw-fips-title = Sćo tuchylu we FIPS-modusu. FIPS pomina se głowne gronidło.
+forms-primary-pw-change =
+    .label = Głowne gronidło změniś…
+    .accesskey = z
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Sćo tuchylu we FIPS-modusu. FIPS pomina se głowne gronidło.
 forms-master-pw-fips-desc = Změnjanje gronidła njejo se raźiło
 
 ## OS Authentication dialog
@@ -822,6 +812,13 @@ master-password-os-auth-dialog-message-win = Zapódajśo swóje pśizjawjeńske 
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = głowne gronidło napóraś
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Zapódajśo swóje pśizjawjeńske daty Windows, aby głowne gronidło napórał. To wěstotu wašych kontow šćita.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = głowne gronidło napóraś
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -888,12 +885,14 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Blokěrowany typ
     .accesskey = t
-sitedata-option-block-trackers =
-    .label = Pśeslědowaki tśeśich
 sitedata-option-block-cross-site-trackers =
     .label = Pśeslědowaki mjazy sedłami
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Pśeslědowaki mjazy sedłami a socialnych medijow
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Někotare sedła slědujuce cookieje – wopśimujo cookieje socialnych medijow
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Někotare sedła slědujuce cookieje – wopśimuju cookieje socialnych medijow
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Pśeslědowaki někotarych sedłow a pśeslědowaki socialnych medijow a izolěrowanje zbytnych cookiejow
 sitedata-option-block-unvisited =
@@ -935,27 +934,9 @@ addressbar-suggestions-settings = Nastajenja za naraźenja pytnice změniś
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Blokěrowanje wopśimjeśa
-content-blocking-section-description = Šćitajśo swóju priwatnosć, mjaztym až pśeglědujośo. Blokěrujśo njewidobne wopśimjeśe, kótarež sedła slědujo, ku kótarymž se woglědujośo, a profil wó was twóri. Gaž take wopśimjeśe blokěrujośo, daju se boki snaź malsnjej zacytaś.
 content-blocking-enhanced-tracking-protection = Pólěpšony slědowański šćit
 content-blocking-section-top-level-description = Pśeslědowaki wam online slěduju, aby informacije wó wašych pśeglědowańskich zwuconosćach a zajmach gromaźili. { -brand-short-name } wjele z toś tych pśeslědowakow a druge złosne skripty blokěrujo.
 content-blocking-learn-more = Dalšne informacije
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standard
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Striktny
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Swójski
-    .accesskey = S
-content-blocking-standard-desc = Wurownany za šćit a wugbaśe. Dowólujo někotare pślědowaki, aby websedła pórědnje funkcioněrowali.
-content-blocking-strict-description = Mócnjejšy šćit, móžo zawinowaś, až někotare sedła wěcej njefunkcioněruju.
-content-blocking-custom-desc = Wubjeŕśo, což cośo blokěrowaś.
-content-blocking-private-trackers = Znate pśeslědowaki w priwatnych woknach
-content-blocking-third-party-cookies = Slědujuce cookiejei tśeśich
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -977,28 +958,24 @@ content-blocking-etp-standard-desc = Wuwažony za šćit a wugbaśe. Boki se nor
 content-blocking-etp-strict-desc = Mócnjejšy šćit, ale móžo zawinowaś, až někotare sedła abo wopśimjeśe wěcej njefunkcioněruju.
 content-blocking-etp-custom-desc = Wubjeŕśo, kótare pśeslědowaki a skripty maju se blokěrowaś.
 content-blocking-private-windows = Slědujuce wopśimjeśe w priwatnych woknach
+content-blocking-cross-site-cookies = Cookieje někotarych sedłow
 content-blocking-cross-site-tracking-cookies = Slědujuce cookieje mjazy sedłami
 content-blocking-cross-site-tracking-cookies-plus-isolate = Někotare sedła slědujuce cookieje a izolěrowanje zbytnych cookiejow
 content-blocking-social-media-trackers = Pśeslědowaki socialnych medijow
 content-blocking-all-cookies = Wšykne cookieje
 content-blocking-unvisited-cookies = Cookieje z njewoglědanych sedłow
-content-blocking-all-windows-trackers = Znate pśeslědowaki we wšych woknach
 content-blocking-all-windows-tracking-content = Slědujuce wopśimjeśe we wšych woknach
 content-blocking-all-third-party-cookies = Wšykne cookieje tśeśich
 content-blocking-cryptominers = Kryptokopanje
 content-blocking-fingerprinters = Palcowe wótśišće
 content-blocking-warning-title = Glědajśo!
-content-blocking-warning-description = Blokěrowanje wopśimjeśa móžo zawinowaś, až někotare websedła wěcej njefunkcioněruju. Jo lažko, blokěrowanje za sedła znjemóžniś, kótarymž dowěriśo.
-content-blocking-learn-how = Zgóńśo kak
 content-blocking-and-isolating-etp-warning-description = Blokěrowanje pśeslědowakow a izolěrowanje plackow mógłej funkcionalnosć někotarych websedłow wobwliwowaś. Zacytajśo bok z pśeslědowakami znowego, aby wšykno wopśimjeśe zacytał.
+content-blocking-and-isolating-etp-warning-description-2 = Toś to nastajenje móžo zwinowaś, až někotare websedła wopśimjeśe njepokazuju abo korektnje njefunkcioněruju. Jolic sedło zda se wobškóźone byś, móžośo slědowański šćit za to sedło znjemóžniś, aby cełe wopśimjeśe zacytał.
 content-blocking-warning-learn-how = Zgóńśo kak
 content-blocking-reload-description = Musyśo swóje rejtariki znowego zacytaś, aby toś te změny nałožył.
 content-blocking-reload-tabs-button =
     .label = Wšykne rejtariki znowego zacytaś
     .accesskey = W
-content-blocking-trackers-label =
-    .label = Pśeslědowaki
-    .accesskey = P
 content-blocking-tracking-content-label =
     .label = Slědujuce wopśimjeśe
     .accesskey = S
@@ -1057,12 +1034,6 @@ permissions-notification-link = Dalšne informacije
 permissions-notification-pause =
     .label = Z powěźeńkami pśestaś, daniž se { -brand-short-name } znowego njestartujo
     .accesskey = z
-permissions-block-autoplay-media2 =
-    .label = Websedłam awtomatiske wótgrawanje zuka zawoboraś
-    .accesskey = b
-permissions-block-autoplay-media-exceptions =
-    .label = Wuwześa…
-    .accesskey = u
 permissions-autoplay = Awtomatiske wótgraśe
 permissions-autoplay-settings =
     .label = Nastajenja…
@@ -1169,6 +1140,18 @@ space-alert-under-5gb-ok-button =
     .label = W pórěźe, som zrozměł
     .accesskey = z
 space-alert-under-5gb-message = { -brand-short-name } njama wěcej dosć składowańskego ruma. Wopśimjeśe websedła se snaź korektnje njezwobraznijo. Móžośo na “Dalšne informacije” kliknuś, aby swój składowe wužyśe za lěpše pśeglědowańske dožywjenje opiměrował.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Modus Jano-HTTPS
+httpsonly-description = HTTPS wěsty, skoděrowany zwisk mjazy { -brand-short-name } a websedłami bitujo, ku kótarymž se woglědujośo. Nejwěcej websedłow HTTPS pódpěra, a jolic modus Jano-HTTPS jo zmóžnjony, { -brand-short-name } buźo wše zwiski na HTTPS aktualizěrowaś.
+httpsonly-learn-more = Dalšne informacije
+httpsonly-radio-enabled =
+    .label = Modus Jano-HTTPS we wšych woknach zmóžniś
+httpsonly-radio-enabled-pbm =
+    .label = Modus Jano-HTTPS jano w priwatnych woknach zmóžniś
+httpsonly-radio-disabled =
+    .label = Modus Jano-HTTPS njezmóžniś
 
 ## The following strings are used in the Download section of settings
 

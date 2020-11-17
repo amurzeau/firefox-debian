@@ -2,39 +2,28 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-about-config-warning-checkbox = తర్వాత కూడా నన్ను విసిగించు!
-about-config-warning-button = నేను నష్టభయాన్ని అంగీకరిస్తున్నాను
-
-about-config2-title = ఉన్నత స్వరూపణం
-
-about-config-search-input =
-    .placeholder = వెతకండి
 
 ## These strings appear on the warning you see when first visiting about:config.
 
 about-config-intro-warning-title = జాగ్రత్తతో ముందుకువెళ్ళండి
-
-
+about-config-intro-warning-text = ఉన్నత స్వరూపణ అభిరుచులను మార్చడం { -brand-short-name } పనితీరు లేక భద్రతను ప్రభావితం చేయగలదు.
+about-config-intro-warning-checkbox = ఈ అభిరుచులను చూడటానికి నేను ప్రయత్నించినపుడు నన్ను హెచ్చరించు
+about-config-intro-warning-button = నష్టభయాన్ని అంగీకరించి ముందుకు కొనసాగండి
 
 ##
 
+# This is shown on the page before searching but after the warning is accepted.
+about-config-caution-text = ఈ అభిరుచులను మార్చడం { -brand-short-name } పనితీరు లేక భద్రతను ప్రభావితం చేయగలదు.
 about-config-page-title = ఉన్నత అభిరుచులు
-
+about-config-search-input1 =
+    .placeholder = అభిరుచి పేరుతో వెతకండి
 about-config-show-all = అన్నిటినీ చూపించు
-
-about-config-pref-add = చేర్చు
-about-config-pref-toggle = అటుదిటుచేయి
-about-config-pref-edit = సరిచేయి
-about-config-pref-save = భద్రపరుచు
-about-config-pref-reset = పునరుద్ధరించు
-about-config-pref-delete = తొలగించు
-
 about-config-pref-add-button =
     .title = చేర్చు
 about-config-pref-toggle-button =
     .title = అటుదిటుచేయి
 about-config-pref-edit-button =
-    .title = సరిచేయి
+    .title = మార్చు
 about-config-pref-save-button =
     .title = భద్రపరుచు
 about-config-pref-reset-button =

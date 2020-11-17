@@ -10,6 +10,12 @@ protections-panel-sitefixedsendreport-label = سائٹ ٹھیک ہو گی؟ رپ
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
 
+protections-popup-footer-protection-label-strict = سخت
+    .label = سخت
+protections-popup-footer-protection-label-custom = کسٹم
+    .label = کسٹم
+protections-popup-footer-protection-label-standard = معیاری
+    .label = معیاری
 
 ##
 
@@ -48,7 +54,6 @@ protections-panel-not-found-label = کچھ بھی نہیں ملا
 ##
 
 protections-panel-settings-label = تحفظ کی سیٹنگز
-protections-panel-showreport-label = رپورٹ دکھائیں
 
 ## In the Site Not Working? view, we suggest turning off protections if
 ## the user is experiencing issues with any of a variety of functionality.

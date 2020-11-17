@@ -108,7 +108,7 @@ devinfo-modname =
 devinfo-modpath =
     .label = Šćežka
 
-login-failed = Přizjewjenje je so njeporadźiło
+login-failed = Přizjewjenje njeje so poradźiło
 
 devinfo-label =
     .label = Etiket
@@ -117,6 +117,8 @@ devinfo-serialnum =
     .label = Serijowe čisło
 
 fips-nonempty-password-required = Modus FIPS sej žada, zo hłowne hesło za kóždy wěstotny grat nastajeće. Prošu nastajće hesło, prjedy hač spytaće modus FIPS zmóžniće.
+
+fips-nonempty-primary-password-required = Modus FIPS sej žada, zo hłowne hesło za kóždy wěstotny grat nastajeće. Prošu nastajće hesło, prjedy hač spytaće modus FIPS zmóžniće.
 unable-to-toggle-fips = Njeje móžno, FIPS-modus za wěstotny grat změnić. Poruča so, zo tute nałoženje kónčiće a znowa startujeće.
 load-pk11-module-file-picker-title = Wubjerće gratowy ćěrjak PKCS#11, kotryž ma so začitać
 

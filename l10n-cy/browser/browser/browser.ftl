@@ -19,12 +19,11 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Pori Preifat)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Pori Preifat)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Pori Preifat)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Pori Preifat)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -111,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Teipio llai, canfod mwy: Chwiliwch gyda { $engineName } yn syth o'ch bar cyfeiriad.
 urlbar-search-tips-redirect-2 = Cychwynnwch eich chwilio yma i weld awgrymiadau gan { $engineName } a'ch hanes pori.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Dewiswch y llwybr byr hwn i ddod o hyd i'r hyn sydd ei angen arnoch yn gynt.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Nodau tudalen
+urlbar-search-mode-tabs = Tabiau
+urlbar-search-mode-history = Hanes
 
 ##
 
@@ -138,12 +145,10 @@ urlbar-midi-blocked =
     .tooltiptext = Rydych wedi rhwystro mynediad MIDI ar gyfer y wefan hon.
 urlbar-install-blocked =
     .tooltiptext = Rydych wedi rhwystro gosod ychwanegion ar gyfer y wefan hon.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Golygu'r nod tudalen ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -160,6 +165,61 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Tynnu Estyniad
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [zero] Anfon Tab i Ddyfais
+            [one] Anfon { $tabCount } Tab i Ddyfais
+            [two] Anfon { $tabCount } Dab i Ddyfais
+            [few] Anfon { $tabCount } Thab i Ddyfais
+            [many] Anfon { $tabCount } Tab i Ddyfais
+           *[other] Anfon { $tabCount } Thab i Ddyfais
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [zero] Anfon Tab i Ddyfais
+            [one] Anfon { $tabCount } Tab i Ddyfais
+            [two] Anfon { $tabCount } Dab i Ddyfais
+            [few] Anfon { $tabCount } Thab i Ddyfais
+            [many] Anfon { $tabCount } Tab i Ddyfais
+           *[other] Anfon { $tabCount } Thab i Ddyfais
+        }
+page-action-pocket-panel =
+    .label = Cadw Tudalen i { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Copïo'r Ddolen
+page-action-copy-url-urlbar =
+    .tooltiptext = Copïo'r Ddolen
+page-action-email-link-panel =
+    .label = E-bostio'r Ddolen…
+page-action-email-link-urlbar =
+    .tooltiptext = E-bostio'r Ddolen…
+page-action-share-url-panel =
+    .label = Rhannu
+page-action-share-url-urlbar =
+    .tooltiptext = Rhannu
+page-action-share-more-panel =
+    .label = Rhagor…
+page-action-send-tab-not-ready =
+    .label = Cydweddu Dyfeisiau…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Pinio Tab
+page-action-pin-tab-urlbar =
+    .tooltiptext = Pinio Tab
+page-action-unpin-tab-panel =
+    .label = Dadbinio Tab
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Dadbinio Tab
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -171,17 +231,15 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Y tro hwn, chwilio gyda:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Gosodiadau Chwilio
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Newid y gosodiadau chwilio
-
 search-one-offs-context-open-new-tab =
     .label = Chwilio mewn Tab Newydd
     .accesskey = T
@@ -191,16 +249,34 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Gosod fel y Peiriant Chwilio Rhagosodedig ar gyfer Windows Preifat
     .accesskey = G
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Nodau tudalen ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Tabiau ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Hanes ({ $restrict })
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Dangos y golygydd wrth gadw
     .accesskey = D
-
 bookmark-panel-done-button =
     .label = Gorffen
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -220,6 +296,17 @@ identity-passive-loaded = Nid yw rhannau o'r dudalen hon yn ddiogel (megis delwe
 identity-active-loaded = Rydych wedi analluogi diogelwch ar y dudalen hon.
 identity-weak-encryption = Mae'r dudalen hon yn defnyddio amgryptiad gwan.
 identity-insecure-login-forms = Gall mewngofnodion sy'n cael eu cyflwyno ar y dudalen hon gael eu cyfaddawdu.
+identity-https-only-connection-upgraded = (wedi'i uwchraddio i HTTPS)
+identity-https-only-label = Modd HTTPS-yn-Unig
+identity-https-only-dropdown-on =
+    .label = Ymlaen
+identity-https-only-dropdown-off =
+    .label = Diffodd
+identity-https-only-dropdown-off-temporarily =
+    .label = Diffodd dros dro
+identity-https-only-info-turn-on2 = Trowch y Modd HTTPS-yn-Unig ymlaen os ydych chi am i { -brand-short-name } uwchraddio'r cysylltiad lle'n bosibl.
+identity-https-only-info-turn-off2 = Os yw'r wefan yn ymddangos wedi torri, efallai yr hoffech chi ddiffodd Modd HTTPS-yn-Unig i'w ail-lwytho gan ddefnyddio HTTP anniogel.
+identity-https-only-info-no-upgrade = Methu uwchraddio'r cysylltiad o HTTP.
 identity-permissions =
     .value = Caniatâd
 identity-permissions-reload-hint = Efallai y bydd angen ail lwytho'r dudalen i newidiadau ddod ar waith.
@@ -265,6 +352,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Cau
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Mewnforio nodau tudalen...
+    .tooltiptext = Copïo nodau tudalen o borwr arall i { -brand-short-name }.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -274,15 +367,12 @@ popup-select-microphone =
     .value = Meicroffon i'w rannu:
     .accesskey = M
 popup-all-windows-shared = Bydd pob ffenestr gweladwy ar eich sgrin yn cael eu rhannu.
-
 popup-screen-sharing-not-now =
     .label = Nid Nawr
     .accesskey = N
-
 popup-screen-sharing-never =
     .label = Byth Caniatáu
     .accesskey = B
-
 popup-silence-notifications-checkbox = Analluogi hysbysiadau gan { -brand-short-name } wrth rannu
 popup-silence-notifications-checkbox-warning = Ni fydd { -brand-short-name } yn dangos hysbysiadau tra'ch bod chi'n rhannu.
 
@@ -299,27 +389,122 @@ sharing-warning-disable-for-session =
 
 enable-devtools-popup-description = I ddefnyddio llwybr byr F12 agorwch DevTools yn gyntaf trwy'r ddewislen Datblygwr Gwe.
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Chwilio neu gyfeiriad gwe
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Chwilio neu gyfeiriad gwe
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Chwilio'r We
+    .aria-label = Chwilio gyda { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Rhowch dermau chwilio
+    .aria-label = Chwilio { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Rhowch dermau chwilio
+    .aria-label = Chwilio'r nodau tudalen
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Rhowch dermau chwilio
+    .aria-label = Chwilio'ch hanes
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Rhowch dermau chwilio
+    .aria-label = Chwilio'r tabiau
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Chwilio gyda { $name } neu rhoi'r cyfeiriad
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Mae'r porwr o dan reolaeth bell
 urlbar-permissions-granted =
     .tooltiptext = Rydych wedi rhoi caniatâd ychwanegol i'r wefan hon.
 urlbar-switch-to-tab =
     .value = Newid i dab:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Estyniad:
-
 urlbar-go-button =
     .tooltiptext = Mynd i'r cyfeiriad yn y Bar Lleoliad
 urlbar-page-action-button =
     .tooltiptext = Gweithredoedd tudalen
 urlbar-pocket-button =
     .tooltiptext = Cadw i { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Chwilio gyda { $engine } mewn Ffenestr Breifat
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Chwilio mewn Ffenestr Breifat
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Chwilio gyda { $engine }
+urlbar-result-action-sponsored = Noddwyd
+urlbar-result-action-switch-tab = Newid i'r Tab
+urlbar-result-action-visit = Ymweld â
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Pwyswch Tab i chwilio gyda { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Pwyswch Tab i chwilio { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Chwilio gyda { $engine } yn syth o'r bar cyfeiriad
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Chwilio gyda { $engine } yn syth o'r bar cyfeiriad
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Chwilio'r Nodau Tudalen
+urlbar-result-action-search-history = Chwilio'r Hanes
+urlbar-result-action-search-tabs = Chwilio'r Tabiau
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> nawr yn sgrin lawn
+fullscreen-warning-no-domain = Mae'r ddogfen nawr yn sgrin lawn
+fullscreen-exit-button = Gadael y Sgrin Lawn (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Gadael y Sgrin Lawn (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> reolaeth o'ch pwyntydd. Pwyswch Esc i adennill rheolaeth.
+pointerlock-warning-no-domain = Mae gan y ddogfen hon reolaeth o'ch pwyntydd. Pwyswch Esc i adennill rheolaeth.

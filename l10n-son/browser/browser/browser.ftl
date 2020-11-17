@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Sutura naarumi)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Sutura naarumi)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Sutura naarumi)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Sutura naarumi)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -90,6 +88,9 @@ urlbar-addons-notification-anchor =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 
+## Local search mode indicator labels in the urlbar
+
+
 ##
 
 urlbar-geolocation-blocked =
@@ -104,12 +105,10 @@ urlbar-screen-blocked =
     .tooltiptext = War na interneti nungoo woo gagay nd'a ma war dijoo zemni.
 urlbar-persistent-storage-blocked =
     .tooltiptext = War na bayhaya jišiyan duumante gagay interneti nungoo woo se.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Doo-šilbaa woo fasal ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -117,6 +116,25 @@ urlbar-star-add-bookmark =
 
 ## Page Action Context Menu
 
+
+## Page Action menu
+
+page-action-email-link-panel =
+    .label = Bataga dobu…
+page-action-email-link-urlbar =
+    .tooltiptext = Bataga dobu…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Kanji koli
+page-action-pin-tab-urlbar =
+    .tooltiptext = Kanji koli
+page-action-unpin-tab-panel =
+    .label = Nor loku bukandi
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Nor loku bukandi
 
 ## Auto-hide Context Menu
 
@@ -135,13 +153,20 @@ search-one-offs-change-settings-button =
     .label = Ceeciyan kayandiyaney barmay
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Ceeciyan kayandiyaney barmay
-
 search-one-offs-context-open-new-tab =
     .label = Ceeci kanji taaga ra
     .accesskey = t
 search-one-offs-context-set-as-default =
     .label = Kayandi sanda tilasu ceecijinay
     .accesskey = t
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
 
 ## Bookmark Panel
 
@@ -214,12 +239,42 @@ urlbar-remote-control-notification-anchor =
     .tooltiptext = Ceecijaw goo juwal moora cire
 urlbar-switch-to-tab =
     .value = Bere kanjoo ga:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Dobuyan:
-
 urlbar-go-button =
     .tooltiptext = Koy aderesoo do gorodoo žeeroo ga
 urlbar-page-action-button =
     .tooltiptext = Moo goyey
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Ceeci nda { $engine }
+urlbar-result-action-switch-tab = Bere kanji ga
+urlbar-result-action-visit = Naaru
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> dijikul cebeyan sohõ
+fullscreen-warning-no-domain = Takaddaa woo ga cebe dijikul ga sohõ
+fullscreen-exit-button = Fatta dijikul ra (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Fatta dijikul ra (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ga war cebejiyoo juwal. Esc naagu ka juwaloo taa koyne.
+pointerlock-warning-no-domain = Takaddaa woo ga war cebejiyoo juwal. Esc naagu ka juwaloo taa koyne.

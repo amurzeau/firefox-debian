@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Endast när { -brand-short-name } är inställt för att blockera kända spårare
 do-not-track-option-always =
     .label = Alltid
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Inställningar
-           *[other] Inställningar
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Inställningar
@@ -35,6 +29,8 @@ search-input-box =
            *[other] Sök i inställningar
         }
 managed-notice = Din webbläsare hanteras av din organisation.
+category-list =
+    .aria-label = Kategorier
 pane-general-title = Allmänt
 category-general =
     .tooltiptext = { pane-general-title }
@@ -50,6 +46,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name } Experiment
+category-experimental =
+    .tooltiptext = { -brand-short-name } Experiment
+pane-experimental-subtitle = Fortsätt med försiktighet
+pane-experimental-search-results-header = { -brand-short-name } Experiment: Fortsätt med försiktighet
+pane-experimental-description = Att ändra avancerade konfigurationsinställningar kan påverka { -brand-short-name }s prestanda eller säkerhet.
 help-button-label = Support { -brand-short-name }
 addons-button-label = Utökningar & Teman
 focus-search =
@@ -82,6 +84,9 @@ extension-controlled-homepage-override = Ett tillägg, <img data-l10n-name="icon
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Ett tillägg, <img data-l10n-name="icon"/> { $name }, styr din sida för ny flik.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Ett tillägg, <img data-l10n-name="icon"/> { $name }, styr denna inställning.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Ett tillägg, <img data-l10n-name="icon"/> { $name }, kontrollerar den här inställningen.
@@ -365,13 +370,6 @@ update-application-warning-cross-user-setting = Den här inställningen gäller 
 update-application-use-service =
     .label = Använd en bakgrundstjänst för att installera uppdateringar
     .accesskey = b
-update-enable-search-update =
-    .label = Uppdatera automatiskt sökmotorer
-    .accesskey = m
-update-pref-write-failure-title = Skrivfel
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Det gick inte att spara inställningen. Kunde inte skriva till fil: { $path }
 update-setting-write-failure-title = Det gick inte att spara uppdateringsinställningar
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -430,6 +428,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Aktivera videokontroller för bild-i-bild
     .accesskey = A
 browsing-picture-in-picture-learn-more = Läs mer
+browsing-media-control =
+    .label = Styr media via tangentbord, headset eller virtuellt gränssnitt
+    .accesskey = v
+browsing-media-control-learn-more = Läs mer
 browsing-cfr-recommendations =
     .label = Rekommendera tillägg när du surfar
     .accesskey = R
@@ -493,13 +495,14 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Mest besökta
 home-prefs-topsites-description = Sidorna du besöker mest
+home-prefs-topsites-by-option-sponsored =
+    .label = Sponsrade toppwebbplatser
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = Rekommenderas av { $provider }
-home-prefs-recommended-by-description = Bra innehåll från hela webben, anpassat för dig
 home-prefs-recommended-by-description-update = Exceptionellt innehåll från hela internet, sammanställt av { $provider }
 
 ##
@@ -540,7 +543,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Lägg till sökfältet i verktygsfältet
 search-engine-default-header = Standard sökmotor
-search-engine-default-desc = Välj standardsökmotor som ska användas i adressfältet och sökfältet.
 search-engine-default-desc-2 = Detta är din standardsökmotor i adressfältet och sökfältet. Du kan byta när som helst.
 search-engine-default-private-desc-2 = Välj en annan standardsökmotor endast för privata fönster
 search-separate-default-engine =
@@ -563,10 +565,10 @@ search-show-suggestions-above-history-option =
     .label = Visa sökförslag före surfhistoriken i adressfältets resultat
 search-show-suggestions-private-windows =
     .label = Visa sökförslag i privata fönster
-suggestions-addressbar-settings = Ändra inställningar för surfhistorik, bokmärken och flikförslag
 suggestions-addressbar-settings-generic = Ändra inställningar för andra förslag i adressfältet
 search-suggestions-cant-show = Sökförslag kommer inte att visas i adressfältet eftersom du har konfigurerat { -brand-short-name } att aldrig spara historik.
 search-one-click-header = Sökfältets sökmotorer
+search-one-click-header2 = Sökgenvägar
 search-one-click-desc = Välj alternativa sökmotorer som visas under adressfältet och sökfältet när du börjar skriva in ett nyckelord.
 search-choose-engine-column =
     .label = Sökmotor
@@ -578,6 +580,9 @@ search-restore-default =
 search-remove-engine =
     .label = Ta bort
     .accesskey = T
+search-add-engine =
+    .label = Lägg till
+    .accesskey = L
 search-find-more-link = Hitta fler sökmotorer
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -589,7 +594,6 @@ search-keyword-warning-bookmark = Du har valt ett nyckelord som redan används a
 
 ## Containers Section
 
-containers-back-link = « Gå tillbaka
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -608,20 +612,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Ta bort
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Ta med dig webben
 sync-signedout-description = Synkronisera dina bokmärken, historik, flikar, lösenord, tillägg och inställningar på alla dina enheter.
-sync-signedout-account-title = Anslut med ett { -fxaccount-brand-name }
-sync-signedout-account-create = Har du inte ett konto? Kom igång
-    .accesskey = A
-sync-signedout-account-signin =
-    .label = Logga in…
-    .accesskey = L
 sync-signedout-account-signin2 =
     .label = Logga in på { -sync-brand-short-name }…
     .accesskey = L
@@ -635,16 +630,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Hämta Firefox för <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> eller <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> för att synkronisera med din mobila enhet.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Ändra profilbild
-sync-disconnect =
-    .label = Koppla från…
-    .accesskey = f
 sync-sign-out =
     .label = Logga ut…
     .accesskey = g
@@ -661,8 +650,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Logga in
     .accesskey = g
-sync-signedin-settings-header = Sync-inställningar
-sync-signedin-settings-desc = Välj vad du vill synkronisera på dina enheter med { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -715,10 +702,6 @@ sync-engine-tabs =
     .label = Öppna flikar
     .tooltiptext = En lista över vad som är öppet på alla synkroniserade enheter
     .accesskey = f
-sync-engine-logins =
-    .label = Inloggningar
-    .tooltiptext = Användarnamn och lösenord du har sparat
-    .accesskey = l
 sync-engine-logins-passwords =
     .label = Inloggningar och lösenord
     .tooltiptext = Användarnamn och lösenord du har sparat
@@ -757,18 +740,10 @@ sync-device-name-save =
     .label = Spara
     .accesskey = S
 sync-connect-another-device = Anslut en annan enhet
-sync-manage-devices = Hantera enheter
-sync-fxa-begin-pairing = Para ihop en enhet
-sync-tos-link = Användarvillkor
-sync-fxa-privacy-notice = Sekretesspolicy
 
 ## Privacy Section
 
 privacy-header = Webbläsarintegritet
-
-## Privacy Section - Forms
-
-logins-header = Inloggningar & lösenord
 
 ## Privacy Section - Logins and Passwords
 
@@ -799,10 +774,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Använd ett huvudlösenord
     .accesskey = A
+forms-primary-pw-use =
+    .label = Använd ett huvudlösenord
+    .accesskey = A
+forms-primary-pw-learn-more-link = Läs mer
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Byt huvudlösenord…
     .accesskey = B
 forms-master-pw-fips-title = Du är för närvarande i FIPS-läge. FIPS kräver ett huvudlösenord.
+forms-primary-pw-change =
+    .label = Ändra huvudlösenord…
+    .accesskey = h
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Du är för närvarande i FIPS-läge. FIPS kräver ett huvudlösenord.
 forms-master-pw-fips-desc = Ändring av lösenordet misslyckades
 
 ## OS Authentication dialog
@@ -814,6 +804,13 @@ master-password-os-auth-dialog-message-win = Om du vill skapa ett huvudlösenord
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = skapa ett huvudlösenord
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = För att skapa ett huvudlösenord anger du dina inloggningsuppgifter för Windows. Detta skyddar dina kontons säkerhet.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = skapa ett huvudlösenord
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -880,12 +877,14 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Typ blockerad
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Tredjepartsspårare
 sitedata-option-block-cross-site-trackers =
     .label = Globala spårare
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Globala och sociala medie-spårare
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Globala spårningskakor — inkluderar kakor på sociala medier
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Globala kakor — inkluderar kakor på sociala medier
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Globala spårare på webbplatsen och sociala medier och isolera kvarvarande kakor
 sitedata-option-block-unvisited =
@@ -927,27 +926,9 @@ addressbar-suggestions-settings = Ändra inställningar för förslag från sök
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Innehållsblockering
-content-blocking-section-description = Skydda din integritet medan du surfar. Blockera osynligt innehåll som spårar de webbplatser du besöker och profilerar dig. Att blockera något av detta innehåll kan göra att sidor laddas snabbare.
 content-blocking-enhanced-tracking-protection = Förbättrat spårningsskydd
 content-blocking-section-top-level-description = Spårare följer dig runt online för att samla in information om dina surfvanor och intressen. { -brand-short-name } blockerar många av dessa spårare och andra skadliga skript.
 content-blocking-learn-more = Läs mer
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standard
-    .accesskey = S
-content-blocking-setting-strict =
-    .label = Strikt
-    .accesskey = S
-content-blocking-setting-custom =
-    .label = Anpassad
-    .accesskey = A
-content-blocking-standard-desc = Balanserad för skydd och prestanda. Tillåter vissa spårare så att webbplatser fungerar korrekt.
-content-blocking-strict-description = Starkare skydd, kan orsaka fel på vissa webbplatser.
-content-blocking-custom-desc = Välj vad du vill blockera.
-content-blocking-private-trackers = Kända spårare endast i privata fönster
-content-blocking-third-party-cookies = Spårningskakor från tredje part
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -969,28 +950,24 @@ content-blocking-etp-standard-desc = Balanserad för skydd och prestanda. Sidor 
 content-blocking-etp-strict-desc = Starkare skydd, men kan leda till att vissa webbplatser eller innehåll inte fungerar.
 content-blocking-etp-custom-desc = Välj vilka spårare och skript som ska blockeras.
 content-blocking-private-windows = Spårningsinnehåll i privat fönster
+content-blocking-cross-site-cookies = Globala kakor
 content-blocking-cross-site-tracking-cookies = Globala spårningskakor
 content-blocking-cross-site-tracking-cookies-plus-isolate = Globala spårningskakor och isolera kvarvarande kakor
 content-blocking-social-media-trackers = Sociala media-spårare
 content-blocking-all-cookies = Alla kakor
 content-blocking-unvisited-cookies = Kakor från obesökta webbplatser
-content-blocking-all-windows-trackers = Kända spårare i alla fönster
 content-blocking-all-windows-tracking-content = Spårningsinnehåll i alla fönster
 content-blocking-all-third-party-cookies = Alla kakor från tredje part
 content-blocking-cryptominers = Kryptogrävare
 content-blocking-fingerprinters = Fingeravtrycksspårare
 content-blocking-warning-title = Se upp!
-content-blocking-warning-description = Att blockera innehåll kan begränsa funktionaliteten hos vissa webbplatser. Det är enkelt att inaktivera blockering för webbplatser du litar på.
-content-blocking-learn-how = Lär dig hur
 content-blocking-and-isolating-etp-warning-description = Blockering av spårare och isolering av kakor kan påverka funktionaliteten på vissa webbplatser. Ladda om en sida med spårare för att ladda allt innehåll.
+content-blocking-and-isolating-etp-warning-description-2 = Denna inställning kan göra att vissa webbplatser inte visar innehåll eller fungerar korrekt. Om en webbplats verkar trasig kanske du vill inaktivera spårningsskydd för den webbplatsen för att ladda allt innehåll.
 content-blocking-warning-learn-how = Lär dig hur
 content-blocking-reload-description = Du måste ladda om dina flikar för att kunna tillämpa ändringarna.
 content-blocking-reload-tabs-button =
     .label = Ladda om alla flikar
     .accesskey = L
-content-blocking-trackers-label =
-    .label = Spårare
-    .accesskey = S
 content-blocking-tracking-content-label =
     .label = Spårningsinnehåll
     .accesskey = i
@@ -1049,12 +1026,6 @@ permissions-notification-link = Läs mer
 permissions-notification-pause =
     .label = Pausa aviseringar tills { -brand-short-name } startar om
     .accesskey = v
-permissions-block-autoplay-media2 =
-    .label = Blockera webbplatser från att automatiskt spela upp ljud
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = Undantag
-    .accesskey = U
 permissions-autoplay = Automatisk uppspelning
 permissions-autoplay-settings =
     .label = Inställningar…
@@ -1161,6 +1132,18 @@ space-alert-under-5gb-ok-button =
     .label = Ok, jag förstår
     .accesskey = k
 space-alert-under-5gb-message = { -brand-short-name } håller på att få slut på diskutrymme. Webbplatsens innehåll kanske inte visas korrekt. Besök “Läs mer” för att optimera din diskanvändning för en bättre webbupplevelse.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Endast HTTPS-läge
+httpsonly-description = HTTPS ger en säker, krypterad anslutning mellan { -brand-short-name } och de webbplatser du besöker. De flesta webbplatser stöder HTTPS och om endast HTTPS-läget är aktiverat kommer { -brand-short-name } att uppgradera alla anslutningar till HTTPS.
+httpsonly-learn-more = Läs mer
+httpsonly-radio-enabled =
+    .label = Aktivera endast HTTPS-läge i alla fönster
+httpsonly-radio-enabled-pbm =
+    .label = Aktivera endast HTTPS-läge i privata fönster
+httpsonly-radio-disabled =
+    .label = Aktivera inte endast HTTPS-läge
 
 ## The following strings are used in the Download section of settings
 

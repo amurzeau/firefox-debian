@@ -19,12 +19,11 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Priwatny modus)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Priwatny modus)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Priwatny modus)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Priwatny modus)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -111,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Pisajće mjenje, namakajće wjace: Pytajće z { $engineName } direktnje ze swojeho adresoweho pola.
 urlbar-search-tips-redirect-2 = Započńće swoje pytanje w adresowym polu, zo byšće namjety wot { $engineName } a ze swojeje přehladowanskeje historije widźał.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Wubjerće tute zwjazanje, zo byšće spěšnišo namakał, štož trjebaće.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Zapołožki
+urlbar-search-mode-tabs = Rajtarki
+urlbar-search-mode-history = Historija
 
 ##
 
@@ -138,12 +145,10 @@ urlbar-midi-blocked =
     .tooltiptext = Sće přistup na MIDI za tute websydło zablokował.
 urlbar-install-blocked =
     .tooltiptext = Sće instalowanje přidatkow za tute websydło zablokował.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Tutu zapołožku ({ $shortcut }) wobdźěłać
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -160,6 +165,57 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Rozšěrjenje wotstronić
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] { $tabCount } rajtark na grat pósłać
+            [two] { $tabCount } rajtarkaj na grat pósłać
+            [few] { $tabCount } rajtarki na grat pósłać
+           *[other] { $tabCount } rajtarkow na grat pósłać
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] { $tabCount } rajtark na grat pósłać
+            [two] { $tabCount } rajtarkaj na grat pósłać
+            [few] { $tabCount } rajtarki na grat pósłać
+           *[other] { $tabCount } rajtarkow na grat pósłać
+        }
+page-action-pocket-panel =
+    .label = Stronu pola { -pocket-brand-name } składować
+page-action-copy-url-panel =
+    .label = Wotkaz kopěrować
+page-action-copy-url-urlbar =
+    .tooltiptext = Wotkaz kopěrować
+page-action-email-link-panel =
+    .label = Wotkaz e-mejlować…
+page-action-email-link-urlbar =
+    .tooltiptext = Wotkaz e-mejlować…
+page-action-share-url-panel =
+    .label = Dźělić
+page-action-share-url-urlbar =
+    .tooltiptext = Dźělić
+page-action-share-more-panel =
+    .label = Wjace…
+page-action-send-tab-not-ready =
+    .label = Graty so synchronizuja…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Rajtark připinyć
+page-action-pin-tab-urlbar =
+    .tooltiptext = Rajtark připinyć
+page-action-unpin-tab-panel =
+    .label = Rajtark wotpinyć
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Rajtark wotpinyć
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -171,17 +227,15 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Nětko pytać z:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Pytanske nastajenja
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Pytanske nastajenja změnić
-
 search-one-offs-context-open-new-tab =
     .label = W nowym rajtarku pytać
     .accesskey = r
@@ -191,16 +245,34 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Jako standardnu pytawu za priwatne wokna nastajić
     .accesskey = J
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Zapołožki ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Rajtarki ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Historija ({ $restrict })
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Editor při składowanju pokazać
     .accesskey = E
-
 bookmark-panel-done-button =
     .label = Dokónčeny
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -220,6 +292,17 @@ identity-passive-loaded = Dźěle tuteje strony wěste njejsu (na přikład wobr
 identity-active-loaded = Sće škit na tutej stronje znjemóžnił.
 identity-weak-encryption = Tuta strona słabe zaklučowanje wužiwa.
 identity-insecure-login-forms = Přizjewjenja, kotrež so na tutej stronje zapodawaja, móhli wohrožene być.
+identity-https-only-connection-upgraded = (na HTTPS zaktualizowany)
+identity-https-only-label = Modus Jenož-HTTPS
+identity-https-only-dropdown-on =
+    .label = Zapinjeny
+identity-https-only-dropdown-off =
+    .label = Wupinjeny
+identity-https-only-dropdown-off-temporarily =
+    .label = Nachwilu wupinjeny
+identity-https-only-info-turn-on2 = Zmóžńće modus Jenož-HTTPS, jeli chceće, zo { -brand-short-name } zwisk aktualizuje, jeli móžno.
+identity-https-only-info-turn-off2 = Jeli so zda, zo strona je wobškodźena, chceće snano  modus Jenož-HTTPS za tute sydło znjemóžnić. zo byšće zaso njewěsty HTTP wužiwał.
+identity-https-only-info-no-upgrade = Zwisk njeda so z HTTP aktualizować.
 identity-permissions =
     .value = Prawa
 identity-permissions-reload-hint = Dyrbiće snano stronu znowa začitać, zo bychu so změny wuskutkowali.
@@ -265,6 +348,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Začinić
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Zapołožki importować…
+    .tooltiptext = Zapołožki z druheho wobhladowaka do { -brand-short-name } kopěrować.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -274,15 +363,12 @@ popup-select-microphone =
     .value = Mikrofon, kotryž ma so hromadźe wužiwać:
     .accesskey = M
 popup-all-windows-shared = Wšě widźomne wokna na wašej wobrazowce budu so dźělić.
-
 popup-screen-sharing-not-now =
     .label = Nic nětko
     .accesskey = c
-
 popup-screen-sharing-never =
     .label = Ženje njedowolić
     .accesskey = e
-
 popup-silence-notifications-checkbox = Zdźělenja w { -brand-short-name } znjemóžnić, mjeztym zo dźěliće
 popup-silence-notifications-checkbox-warning = { -brand-short-name } njebudźe zdźělenja pokazować, mjeztym zo dźěliće.
 
@@ -299,27 +385,122 @@ sharing-warning-disable-for-session =
 
 enable-devtools-popup-description = Zo byšće tastu F12 wužiwał, wočińće najprjedy DevTools přez meni Webwuwiwar.
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Pytać abo adresu zapodać
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Pytać abo adresu zapodać
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Web přepytać
+    .aria-label = Z { $name } pytać
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Pytanske wurazy zapodać
+    .aria-label = Z { $name } pytać
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Pytanske wurazy zapodać
+    .aria-label = Zapołožki přepytać
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Pytanske wurazy zapodać
+    .aria-label = Historiju přepytać
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Pytanske wurazy zapodać
+    .aria-label = Rajtarki přepytać
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Pytajće z { $name } abo zapodajće adresu
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Wobhladowak so zdaloka wodźi
 urlbar-permissions-granted =
     .tooltiptext = Sće tutomu websydłu přidatne prawa dał.
 urlbar-switch-to-tab =
     .value = K rajtarkej přeńć:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Rozšěrjenje:
-
 urlbar-go-button =
     .tooltiptext = K adresy w adresowym polu
 urlbar-page-action-button =
     .tooltiptext = Akcije strony
 urlbar-pocket-button =
     .tooltiptext = Pola { -pocket-brand-name } składować
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Z { $engine } w priwatnym woknje pytać
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = W priwatnym woknje pytać
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Z { $engine } pytać
+urlbar-result-action-sponsored = Sponsorowany
+urlbar-result-action-switch-tab = K rajtarkej přeńć
+urlbar-result-action-visit = Wopytać
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Tłóčće tabulatorowu tastu, zo byšće z { $engine } pytał
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Tłóčće tabulatorowu tastu, zo byšće z { $engine } pytał
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Z { $engine } direktnje z adresoweho pola pytać
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Z { $engine } direktnje z adresoweho pola pytać
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Zapołožki přepytać
+urlbar-result-action-search-history = Historiju přepytać
+urlbar-result-action-search-tabs = Rajtarki přepytać
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> je nětko połna wobrazowka
+fullscreen-warning-no-domain = Tutón dokument je nětko połna wobrazowka
+fullscreen-exit-button = Połnu wobrazowku skónčić (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Połnu wobrazowku (esc) skónčić
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ma kontrolu nad wašim pokazowakom. Tłóčće Esc, zo byšće kontrolu wróćo dóstał.
+pointerlock-warning-no-domain = Tutón dokument ma kontrolu nad wašim pokazowakom. Tłóčće Esc, zo byšće kontrolu wróćo dóstał.

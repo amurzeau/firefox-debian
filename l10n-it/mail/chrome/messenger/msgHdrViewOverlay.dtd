@@ -24,8 +24,6 @@
 
 <!ENTITY hdrArchiveButton1.label "Archivia">
 <!ENTITY hdrArchiveButton1.tooltip "Archivia questo messaggio">
-<!ENTITY hdrOpenConversationButton1.label "Conversazione">
-<!ENTITY hdrOpenConversationButton1.tooltip "Visualizza conversazione di questo messaggio">
 <!ENTITY hdrSmartReplyButton1.label "Risposta veloce">
 <!ENTITY hdrReplyButton1.label "Rispondi">
 <!ENTITY hdrReplyButton2.tooltip "Rispondere al mittente del messaggio">
@@ -35,7 +33,6 @@
 <!ENTITY hdrReplyListButton1.tooltip "Rispondi alla lista di distribuzione">
 <!ENTITY hdrFollowupButton1.label "Rispondi nel gruppo">
 <!ENTITY hdrFollowupButton1.tooltip "Rispondi a questo messaggio nel gruppo di discussione">
-<!ENTITY hdrMenuForwardButton.label "Inoltra come">
 <!ENTITY hdrForwardButton1.label "Inoltra">
 <!ENTITY hdrForwardButton1.tooltip "Inoltra questo messaggio">
 <!ENTITY hdrJunkButton1.label "Indesiderata">
@@ -72,7 +69,7 @@
 <!ENTITY otherActionsPrint1.accesskey "S">
 
 <!-- Attachment bar context menu items -->
-<!ENTITY startExpandedCmd.label    "Mostrare il pannello degli allegati dall'inizio">
+<!ENTITY startExpandedCmd.label    "Mostrare il pannello degli allegati dall’inizio">
 <!ENTITY startExpandedCmd.accesskey    "M">
 
 <!-- Attachment context menu items -->
@@ -109,7 +106,7 @@
 <!ENTITY copyLinkCmd.label        "Copia link">
 <!ENTITY copyLinkCmd.accesskey    "C">
 
-<!ENTITY CopyMessageId.label "Copiare l'identificativo del messaggio">
+<!ENTITY CopyMessageId.label "Copiare l’identificativo del messaggio">
 <!ENTITY CopyMessageId.accesskey "C">
 <!ENTITY OpenMessageForMsgId.label "Apri il messaggio con questo ID">
 <!ENTITY OpenMessageForMsgId.accesskey "A">

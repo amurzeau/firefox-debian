@@ -26,6 +26,7 @@ pane-calendar-title = Calendari
 category-calendar =
     .tooltiptext = Calendari
 general-language-and-appearance-header = Llengua i aparença
+general-incoming-mail-header = Correu d'entrada
 general-files-and-attachment-header = Fitxers i adjuncions
 general-tags-header = Etiquetes
 general-reading-and-display-header = Lectura i visualització
@@ -40,23 +41,36 @@ composition-addressing-header = Adreçament
 privacy-main-header = Privadesa
 privacy-passwords-header = Contrasenyes
 privacy-junk-header = Correu brossa
-privacy-data-collection-header = Ús i recollida de dades
+collection-header = Ús i recollida de dades i del { -brand-short-name }
+collection-description = Ens esforcem per oferir-vos opcions i recollir només allò que necessitem per proporcionar i millorar el { -brand-short-name } per a tothom. Sempre demanem permís abans de rebre informació personal.
+collection-privacy-notice = Avís de privadesa
+collection-health-report-telemetry-disabled = Ja no permeteu a { -vendor-short-name } capturar dades tècniques i d'interacció. Totes les dades antigues se suprimiran d'aquí a 30 dies.
+collection-health-report-telemetry-disabled-link = Més informació
+collection-health-report =
+    .label = Permet que el { -brand-short-name } enviï dades tècniques i d'interacció a { -vendor-short-name }
+    .accesskey = r
+collection-health-report-link = Més informació
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled = L'informe de dades està desactivat en la configuració d'aquesta versió
+collection-backlogged-crash-reports =
+    .label = Permet que el { -brand-short-name } enviï els informes de fallada pendents automàticament
+    .accesskey = f
+collection-backlogged-crash-reports-link = Més informació
 privacy-security-header = Seguretat
+privacy-scam-detection-title = Detecció de missatges fraudulents
 privacy-anti-virus-title = Antivirus
 privacy-certificates-title = Certificats
 chat-pane-header = Xat
 chat-status-title = Estat
 chat-notifications-title = Notificacions
+chat-pane-styling-header = Estil
 choose-messenger-language-description = Trieu les llengües en què voleu veure els menús, els missatges i les notificacions del { -brand-short-name }.
 manage-messenger-languages-button =
     .label = Defineix alternatives…
     .accesskey = l
 confirm-messenger-language-change-description = Reinicieu el { -brand-short-name } per aplicar els canvis
 confirm-messenger-language-change-button = Aplica i reinicia
-update-pref-write-failure-title = Error d'escriptura
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = No s'ha pogut desar la preferència. No s'ha pogut escriure al fitxer: { $path }
 update-setting-write-failure-title = Error en desar les preferències d'actualització
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -76,6 +90,22 @@ addons-button = Extensions i temes
 
 ## OS Authentication dialog
 
+# This message can be seen by trying to add a Master Password.
+master-password-os-auth-dialog-message-win = Per crear una contrasenya mestra, introduïu les vostres credencials d'inici de sessió al Windows. Això ajuda a protegir la seguretat dels vostres comptes.
+# This message can be seen by trying to add a Master Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+master-password-os-auth-dialog-message-macosx = crear una contrasenya mestra
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Per crear una contrasenya principal, introduïu les vostres credencials d'inici de sessió al Windows. Això ajuda a protegir la seguretat dels vostres comptes.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = crear una contrasenya principal
+# Don't change this label.
+master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## General Tab
 
@@ -100,6 +130,9 @@ add-search-engine =
 remove-search-engine =
     .label = Elimina
     .accesskey = E
+minimize-to-tray-label =
+    .label = En minimitzar el { -brand-short-name }, mou-lo a la safata
+    .accesskey = m
 new-message-arrival = Quan arribin missatges nous:
 mail-play-sound-label =
     .label =
@@ -129,6 +162,9 @@ customize-alert-label =
 tray-icon-label =
     .label = Mostra una icona de safata
     .accesskey = t
+mail-system-sound-label =
+    .label = So del sistema per defecte per al correu nou
+    .accesskey = d
 mail-custom-sound-label =
     .label = Utilitza el fitxer de so següent
     .accesskey = U
@@ -342,6 +378,8 @@ open-msg-ex-window =
 close-move-delete =
     .label = Tanca la finestra o la pestanya de missatges quan se suprimeixi o es mogui
     .accesskey = T
+display-name-label =
+    .value = Nom a mostrar:
 condensed-addresses-label =
     .label = Ensenya només el nom a mostrar de la gent que estigui a la meva llibreta d'adreces
     .accesskey = n
@@ -503,6 +541,15 @@ master-password-label =
 master-password-button =
     .label = Canvia la contrasenya mestra…
     .accesskey = C
+primary-password-description = Una vegada definida, la contrasenya principal protegeix totes les vostres contrasenyes, però heu d'introduir-la una vegada per cada sessió.
+primary-password-label =
+    .label = Utilitza una contrasenya principal
+    .accesskey = U
+primary-password-button =
+    .label = Canvia la contrasenya principal…
+    .accesskey = C
+forms-primary-pw-fips-title = Us trobeu en mode FIPS. El FIPS requereix una contrasenya principal que no sigui buida.
+forms-master-pw-fips-desc = El canvi de contrasenya ha fallat
 junk-description = Definiu els paràmetres de correu brossa per defecte. Els paràmetres específics de cada compte poden configurar-se des dels Paràmetres dels comptes.
 junk-label =
     .label = Quan marqui els missatges com a correu brossa:
@@ -637,6 +684,29 @@ chat-variant-label =
 chat-header-label =
     .label = Mostra la capçalera
     .accesskey = M
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box =
+    .style = width: 15.4em
+    .placeholder =
+        { PLATFORM() ->
+            [windows] Cerca en les opcions
+           *[other] Cerca en les preferències
+        }
 
 ## Preferences UI Search Results
 
+search-results-header = Resultats de la cerca
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message =
+    { PLATFORM() ->
+        [windows] No s'ha trobat «<span data-l10n-name="query"></span>» a les opcions.
+       *[other] No s'ha trobat «<span data-l10n-name="query"></span>» a les preferències.
+    }
+search-results-help-link = Necessiteu ajuda? Visiteu l'<a data-l10n-name="url">assistència del { -brand-short-name }</a>

@@ -187,7 +187,7 @@ cfr-doorhanger-socialtracking-close-button = Kapat
 cfr-doorhanger-socialtracking-dont-show-again = Bunun gibi mesajlar bir daha gösterme
     .accesskey = B
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } bir sosyal ağın sizi izlemesini engelledi
-cfr-doorhanger-socialtracking-description = Gizliliğiniz bizim için önemli. { -brand-short-name } artık yaygın sosya medya takipçilerini engelliyor, böylece internette yaptıklarınız hakkında daha az veri toplayabilmelerini sağlıyor.
+cfr-doorhanger-socialtracking-description = Gizliliğiniz bizim için önemli. { -brand-short-name } artık yaygın sosyal medya takipçilerini engelliyor, böylece internette yaptıklarınız hakkında daha az veri toplayabilmelerini sağlıyor.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } bu sayfadaki bir parmak izi toplayıcıyı engelledi
 cfr-doorhanger-fingerprinters-description = Gizliliğiniz bizim için önemli. { -brand-short-name }, sizi izlemek için cihazınızı tanımlayabilecek bilgileri toplayan parmak izi toplayıcıları kendiliğinden engelliyor.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } bu sayfadaki bir kripto madencisini engelledi
@@ -205,6 +205,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Tümünü göster
     .accesskey = T
+cfr-doorhanger-milestone-close-button = Kapat
+    .accesskey = K
 
 ## What’s New Panel Content for Firefox 76
 
@@ -238,3 +240,33 @@ cfr-whatsnew-protections-icon-alt = Kalkan simgesi
 
 cfr-whatsnew-better-pdf-header = Daha iyi PDF deneyimi
 cfr-whatsnew-better-pdf-body = PDF belgeleri artık doğrudan { -brand-short-name } içinde açılıyor, böylece işleriniz kolaylaşıyor.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Gizliliğiniz bizim için önemli. Web’de gezinirken gizliliğinizi korumak için { -brand-short-name } artık DNS isteklerinizi mümkün olduğunca iş ortaklarımıza yönlendiriyor.
+cfr-doorhanger-doh-header = Daha güvenli, şifrelenmiş DNS sorguları
+cfr-doorhanger-doh-primary-button = Tamam
+    .accesskey = m
+cfr-doorhanger-doh-secondary-button = Devre dışı bırak
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Gizliliğiniz bizim için önemli. { -brand-short-name } artık web sitelerini birbirinden izole ediyor. Böylece hacker’ların parolaları, kredi kartı numaralarını ve diğer hassas bilgileri çalması zorlaşıyor.
+cfr-doorhanger-fission-header = Site izolasyonu
+cfr-doorhanger-fission-primary-button = Anladım
+    .accesskey = A
+cfr-doorhanger-fission-secondary-button = Daha fazla bilgi al
+    .accesskey = D
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Sinsi izleme taktiklerinden otomatik koruma
+cfr-whatsnew-clear-cookies-body = Bazı takipçiler sizi bilgisayarınıza gizlice çerez yerleştiren web sitelerine yönlendirir. { -brand-short-name } artık bu çerezleri otomatik olarak temizliyor, böylece takip edilemiyorsunuz.
+cfr-whatsnew-clear-cookies-image-alt = Çerez engellendi çizimi
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Daha fazla medya kontrolü
+cfr-whatsnew-media-keys-body = Ses ve videoları doğrudan klavyenizden veya kulaklığınızdan oynatıp duraklatabilirsiniz. Böylece medyayı başka bir sekmeden, programdan ve hatta bilgisayarınız kilitliyken bile yönetmek kolaylaşıyor. İleri ve geri tuşlarını kullanarak da parçalar arasında gezinebilirsiniz.
+cfr-whatsnew-media-keys-button = Nasıl yapıldığını öğren

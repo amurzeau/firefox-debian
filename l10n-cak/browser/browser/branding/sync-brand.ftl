@@ -10,4 +10,4 @@
 
 # “Account” can be localized, “Firefox” must be treated as a brand,
 # and kept in English.
--fxaccount-brand-name = Firefox taqoya'l
+-fxaccount-brand-name = Rub'i' Rutaqoya'l Firefox

@@ -46,38 +46,14 @@
 <!-- Edit Menu -->
 <!ENTITY editMenu.label                                 "Editar">
 <!ENTITY editMenu.accesskey                             "E">
-<!ENTITY undoCmd.label                                  "Desfazer">
-<!ENTITY undoCmd.key                                    "Z">
-<!ENTITY undoCmd.accesskey                              "u">
-<!ENTITY redoCmd.label                                  "Refazer">
-<!ENTITY redoCmd.key                                    "y">
-<!ENTITY redoCmd.accesskey                              "R">
-<!ENTITY cutCmd.label                                   "Cortar">
-<!ENTITY cutCmd.key                                     "x">
-<!ENTITY cutCmd.accesskey                               "t">
-<!ENTITY copyCmd.label                                  "Copiar">
-<!ENTITY copyCmd.key                                    "C">
-<!ENTITY copyCmd.accesskey                              "C">
-<!ENTITY pasteCmd.label                                 "Colar">
-<!ENTITY pasteCmd.key                                   "V">
-<!ENTITY pasteCmd.accesskey                             "o">
 <!ENTITY deleteCmd.label                                "Apagar">
-<!ENTITY deleteCmd.accesskey                            "A">
 <!ENTITY deleteAbCmd.label                              "Apagar livro de endereços">
 <!ENTITY deleteContactCmd.label                         "Apagar contacto">
 <!ENTITY deleteContactsCmd.label                        "Apagar contactos">
 <!ENTITY deleteListCmd.label                            "Apagar lista">
 <!ENTITY deleteListsCmd.label                           "Apagar listas">
 <!ENTITY deleteItemsCmd.label                           "Apagar itens">
-<!ENTITY selectAllCmd.label                             "Selecionar tudo">
-<!ENTITY selectAllCmd.key                               "a">
 <!ENTITY searchAddressesCmd.key                         "f">
-<!ENTITY selectAllCmd.accesskey                         "S">
-<!ENTITY swapFirstNameLastNameCmd.label                 "Trocar nome e apelido">
-<!ENTITY swapFirstNameLastNameCmd.accesskey             "T">
-<!-- LOCALIZATION NOTE (hideSwapFnLnUI) : DONT_TRANSLATE -->
-<!-- Swap FN/LN UI  Set to "false" to show swap fn/ln UI -->
-<!ENTITY hideSwapFnLnUI "true">
 <!ENTITY propertiesMenu.label                           "Propriedades">
 <!ENTITY propertiesMenu.accesskey                       "i">
 <!ENTITY propertiesCmd.key                              "i">
@@ -126,9 +102,6 @@ because displayed names don't have the comma in between. -->
 <!ENTITY messengerCmd.label                             "Correio e grupos de notícias">
 <!ENTITY messengerCmd.accesskey                         "g">
 <!ENTITY messengerCmd.commandkey                        "1">
-<!ENTITY addressBookCmd.label                           "Livro de endereços">
-<!ENTITY addressBookCmd.accesskey                       "e">
-<!ENTITY addressBookCmd.key                             "B">
 <!ENTITY searchAddressesCmd.label                       "Pesquisar endereços…">
 <!ENTITY searchAddressesCmd.accesskey                   "s">
 <!ENTITY importCmd.label                                "Importar...">
@@ -152,6 +125,8 @@ because displayed names don't have the comma in between. -->
 <!ENTITY propertiesContext.accesskey                    "i">
 <!ENTITY abPropertiesContext.label                      "Propriedades">
 <!ENTITY abPropertiesContext.accesskey                  "i">
+<!ENTITY syncContext.label                              "Sincronizar">
+<!ENTITY syncContext.accesskey                          "h">
 <!ENTITY editContactContext.label                       "Editar contacto">
 <!ENTITY editContactContext.accesskey                   "E">
 <!ENTITY editMailingListContext.label                   "Editar lista">

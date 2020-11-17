@@ -5,9 +5,8 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = Жекелікті қорғау
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = Жекелік есептемесіне өту
+appmenuitem-update-banner =
+    .label-update-downloading = { -brand-shorter-name } жаңартуын жүктеп алу
 appmenuitem-protection-dashboard-title = Қорғаныс панелі
 appmenuitem-customize-mode =
     .label = Баптау…
@@ -27,6 +26,7 @@ fxa-toolbar-sync-now =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Не жаңалық
+
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

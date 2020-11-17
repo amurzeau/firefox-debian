@@ -76,6 +76,8 @@ cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 
 cert-error-details-cert-chain-label = Nyoo me catibiket:
 
+open-in-new-window-for-csp-or-xfo-error = Yab Kakube i Dirica Manyen
+
 ## Messages used for certificate error titles
 
 connectionFailure-title = Pe romo kubo
@@ -103,7 +105,7 @@ proxyResolveFailure-title = Pe romo nongo lapok tic pi lawote
 redirectLoop-title = Potbuk ne pe tye ka wire maber
 unknownSocketType-title = Lagam ma pe kibedo ka kuro ki bot lapok tic
 nssFailure2-title = Kube ma tye ki ber bedo pe olare
-cspBlocked-title = Kigengo ki Cik me Gwoko ber-bedo pa jami matye iye
+csp-xfo-error-title = { -brand-short-name } Pe Twero Yabo Potbuk Man
 corruptedContentError-title = Bal me jami matye iye ma oballe
 remoteXUL-title = XUL ma tye wa kama bor
 sslv3Used-title = Pe twero kube ma ber bedo tye

@@ -5,7 +5,7 @@
 screenshots-context-menu = Ejapo mba’erechaha japyhypy
 
 screenshots-my-shots-button = Che japyhypy
-screenshots-instructions = Embosyryry térã eikutu kuatiaroguépe embasa'y hag̃ua peteĩ tendaguasu. Ejopy ESC eheja hag̃ua.
+screenshots-instructions = Embosyryry térã eikutu kuatiaroguépe embasa’y hag̃ua tendaguasu. Ejopy ESC eheja hag̃ua.
 screenshots-cancel-button = Heja
 screenshots-save-visible-button = Ñongatu hechapy
 screenshots-save-page-button = Kuatiarogue tuichavéva ñongatu
@@ -26,7 +26,7 @@ screenshots-notification-image-copied-title = Japyhypy monguatiapyre
 screenshots-notification-image-copied-details = Nde japyhypy ohóma kuatiajokohápe. Ejopy { screenshots-meta-key } -V emboja hag̃ua.
 
 screenshots-request-error-title = Ndoikói hína.
-screenshots-request-error-details = ¡Che ñyrõ! Ndaikatúi roñongatu nde japyhypy. Eha'ãjey ag̃ave.
+screenshots-request-error-details = ¡Che ñyrõ! Ndaikatúi roñongatu japyhypy. Eha’ãjey ag̃ave.
 
 screenshots-connection-error-title = Ndaikatúi roike nde japyhypykuéra mba’erechahápe.
 screenshots-connection-error-details = Ehechajey pe Ñandutípe jeike. Eikeséramo Ñandutípe, oĩ apañuãi sapy’agua { -screenshots-brand-name } rembiapópe.
@@ -34,7 +34,7 @@ screenshots-connection-error-details = Ehechajey pe Ñandutípe jeike. Eikeséra
 screenshots-login-error-details = Ndaikatúi roñongatu pe japyhypy oĩ rupi apañuãi { -screenshots-brand-name } rembiapópe. Eha’ãjey ag̃amieve.
 
 screenshots-unshootable-page-error-title = Ndaikatúi rojapyhy ko kuatiarogue.
-screenshots-unshootable-page-error-details = Kóva ndaha'éi peteĩ ñanduti kuatiarogue ypykuéva, péicha rupi ndaikatúi roñongatu japyhypy.
+screenshots-unshootable-page-error-details = Kóva ndaha’éi ñanduti kuatiarogue ypykuéva, péicha rupi ndaikatúi roñongatu japyhypy.
 
 screenshots-self-screenshot-error-title = Ndaikatúi jajapo peteĩ japyhypy { -screenshots-brand-name } kuatiaroguépe!
 

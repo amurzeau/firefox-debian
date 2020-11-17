@@ -209,6 +209,11 @@ cert-not-verified-ca-invalid = Tidak dapat memeriksa sertifikat karena sertifika
 cert-not-verified_algorithm-disabled = Tidak dapat memeriksa sertifikat ini karena ditandatangani menggunakan algoritma tanda tangan yang dinonaktifkan dengan alasan algoritmanya tidak aman.
 cert-not-verified-unknown = Tidak dapat memeriksa sertifikat ini karena alasan yang tidak diketahui.
 
+## Used to show whether an override is temporary or permanent
+
+permanent-override = Permanen
+temporary-override = Sementara
+
 ## Add Security Exception dialog
 
 add-exception-branded-warning = Anda akan membuat pengaturan khusus yang berbeda dengan pengaturan bawaan { -brand-short-name } untuk mengidentifikasi situs ini.

@@ -53,6 +53,9 @@ no-migration-sources = Ndojejuhúi tembiaporape oguerekóva techaukaha, tembiasa
 import-source-page-title = Mba’epytyvõrã ha mba’ekuaarã jegueru
 import-items-page-title = Mba’epuru ojeguerútava
 import-items-description = Eiporavo mba’epuru reguerútava:
+import-permissions-page-title = Ikatúpiko emoneĩ { -brand-short-name }-pe
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS oikotevẽ emoneĩ { -brand-short-name } oikekuaávo Safari techaukahakuérape. Eikutu “Ku’ejey” ha eiporavo “Bookmarks.plist” marandurenda pe marandurenda rupa ojekuaátavape.
 import-migrating-page-title = Jegueruhína…
 import-migrating-description = Ojegueruhína ko’ã mba’epuru…
 import-select-profile-page-title = Rechaukaha jeporavo
@@ -76,8 +79,8 @@ source-name-chrome-dev = Google Chrome Dev
 source-name-chromium = Chromium
 source-name-firefox = Mozilla Firefox
 source-name-360se = 360 Secure Browser
-imported-safari-reading-list = Moñe'ẽ rysýi (Safari rehegua)
-imported-edge-reading-list = Moñe'ẽrã rysýi (Edge Guive)
+imported-safari-reading-list = Moñe’ẽ rysýi (Safari rehegua)
+imported-edge-reading-list = Moñe’ẽrã rysýi (Edge Guive)
 
 ## Browser data types
 ## All of these strings get a $browser variable passed in.
@@ -88,6 +91,7 @@ imported-edge-reading-list = Moñe'ẽrã rysýi (Edge Guive)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

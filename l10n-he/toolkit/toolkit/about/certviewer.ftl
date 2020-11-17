@@ -42,6 +42,9 @@ certificate-viewer-public-value = ערך ציבורי
 certificate-viewer-purposes = מטרות
 certificate-viewer-required = נדרש
 certificate-viewer-unsupported = &lt;לא נתמך&gt;
+# Inc. means Incorporated, e.g GitHub is incorporated in Delaware
+certificate-viewer-inc-state-province = מדינה/מחוז הארגון
+certificate-viewer-state-province = מדינה/מחוז
 certificate-viewer-sha-1 = SHA-1
 certificate-viewer-sha-256 = SHA-256
 certificate-viewer-serial-number = מספר סידורי
@@ -51,13 +54,13 @@ certificate-viewer-timestamp = חותמת זמן
 certificate-viewer-value = ערך
 certificate-viewer-version = גרסה
 certificate-viewer-business-category = קטגוריית עסקים
+certificate-viewer-issuer-name = שם המנפיק
 certificate-viewer-public-key-info = מידע מפתח ציבורי
 certificate-viewer-miscellaneous = שונות
 certificate-viewer-fingerprints = טביעות אצבע
 certificate-viewer-certificate-policies = מדיניות של אישור
 certificate-viewer-crl-endpoints = נקודות קצה של CRL
-
-# This message is used as a row header in the Miscellaneous section. 
+# This message is used as a row header in the Miscellaneous section.
 # The associated data cell contains links to download the certificate.
 certificate-viewer-download = הורדה
 # This message is used to replace boolean values (true/false) in several certificate fields, e.g. Certificate Authority
@@ -77,6 +80,11 @@ certificate-viewer-critical-extension =
     .title = הרחבה זו סומנה כקריטית, כלומר לקוחות חייבים לדחות את האישור אם הם לא מבינים אותו.
 certificate-viewer-export = ייצוא
     .download = { $fileName }.pem
+
+##
+
+# Label for a tab where we haven't found a better label:
+certificate-viewer-unknown-group-label = (לא ידוע)
 
 ## Labels for tabs displayed in stand-alone about:certificate page
 

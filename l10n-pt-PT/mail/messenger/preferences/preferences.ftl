@@ -10,6 +10,8 @@ preferences-title =
             [windows] Opções
            *[other] Preferências
         }
+category-list =
+    .aria-label = Categorias
 pane-general-title = Geral
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,7 +43,6 @@ composition-addressing-header = Endereçamento
 privacy-main-header = Privacidade
 privacy-passwords-header = Palavras-passe
 privacy-junk-header = Lixo
-privacy-data-collection-header = Recolha e utilização de dados
 collection-header = Recolha de dados e utilização do { -brand-short-name }
 collection-description = Nós empenhamo-nos para lhe dar escolhas e recolher apenas o que precisamos para fornecer e melhorar o { -brand-short-name } para todos. Pedimos sempre autorização antes de receber informação pessoal.
 collection-privacy-notice = Informação de privacidade
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = l
 confirm-messenger-language-change-description = Reiniciar o { -brand-short-name } para aplicar estas alterações
 confirm-messenger-language-change-button = Aplicar e reiniciar
-update-pref-write-failure-title = Falha na escrita
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Não foi possível guardar a preferência. Não foi possível escrever no ficheiro: { $path }
 update-setting-write-failure-title = Erro ao guardar as preferências de atualização
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -96,14 +93,19 @@ addons-button = Extensões e temas
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Confirme a sua identidade para criar uma palavra-passe mestra.
-# This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Para criar uma palavra-passe mestra, introduza as suas credenciais de autenticação do Windows. Isto ajuda a proteger a segurança das suas contas.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Thunderbird is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = criar uma palavra-passe mestra
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Para criar uma palavra-passe principal, introduza as suas credenciais de autenticação do Windows. Isto ajuda a proteger a segurança das suas contas.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = criar uma palavra-passe principal
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -541,6 +543,15 @@ master-password-label =
 master-password-button =
     .label = Mudar palavra-passe mestra...
     .accesskey = M
+primary-password-description = A palavra-passe principal protege todas as suas palavras-passe, mas terá que a indicar uma vez por sessão.
+primary-password-label =
+    .label = Utilizar uma palavra-passe principal
+    .accesskey = U
+primary-password-button =
+    .label = Alterar palavra-passe principal…
+    .accesskey = l
+forms-primary-pw-fips-title = Atualmente, está no modo FIPS. Este modo requer uma palavra-passe principal não vazia.
+forms-master-pw-fips-desc = Falha ao alterar palavra-passe
 junk-description = Configure as predefinições para o lixo eletrónico. As definições específicas de lixo eletrónico podem ser efetuadas nas definições da conta.
 junk-label =
     .label = Ao marcar uma mensagem como lixo eletrónico:

@@ -5,66 +5,53 @@
 permissions-window =
     .title = Excepcions
     .style = width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Adreça del site web
     .accesskey = d
-
 permissions-block =
     .label = Blocar
     .accesskey = B
-
 permissions-session =
     .label = Autorizar pendent la session
     .accesskey = s
-
 permissions-allow =
     .label = Autorizar
     .accesskey = A
-
 permissions-site-name =
     .label = Site web
-
 permissions-status =
     .label = Estat
-
 permissions-remove =
     .label = Suprimir lo site web
     .accesskey = S
-
 permissions-remove-all =
     .label = Suprimir totes los sites web
     .accesskey = e
-
 permissions-button-cancel =
     .label = Anullar
     .accesskey = A
-
 permissions-button-ok =
     .label = Enregistrar las modificacions
     .accesskey = E
-
+permission-dialog =
+    .buttonlabelaccept = Enregistrar las modificacions
+    .buttonaccesskeyaccept = E
 permissions-autoplay-menu = Per defaut per tose los sites web :
-
 permissions-searchbox =
     .placeholder = Recercar un site web
-
 permissions-capabilities-autoplay-allow =
     .label = Autorizar l’àudio e la vidèo
 permissions-capabilities-autoplay-block =
     .label = Blocar l’àudio
 permissions-capabilities-autoplay-blockall =
     .label = Blocar l’àudio e la vidèo
-
 permissions-capabilities-allow =
     .label = Autorizar
 permissions-capabilities-block =
     .label = Blocar
 permissions-capabilities-prompt =
     .label = Totjorn demandar
-
 permissions-capabilities-listitem-allow =
     .value = Autorizar
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = Nom d'òste picat invalid
 permissions-invalid-uri-label = Picatz un nom d'òste valid
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = Excepcions - Blocatge de contengut
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Avètz desactivat lo blocatge de contengut per aquestes sites.
 
 permissions-exceptions-etp-window =
     .title = Excepcions per la proteccion contra lo seguiment
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Sites web autorizats - Moduls complementaris
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Podètz indicar los sites web qu'autorizatz a installar de moduls complementaris. Picatz l'adreça exacta del site que volètz autorizar puèi clicatz sus Autorizar.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Excepcions - Lectura automatica
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Podètz indicar quines sites web an totjorn o jamai l’autorizacion de lançar un mèdia amb son. Picatz las adreças dels sites que volètz gerir e causissètz Blocar o Autorizar.
 
 ## Site Permissions - Autoplay
 

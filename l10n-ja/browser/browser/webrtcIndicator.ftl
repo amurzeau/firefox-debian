@@ -9,7 +9,7 @@
 
 # This string is used so that the window has a title in tools that enumerate/look for window
 # titles. It is not normally visible anywhere.
-webrtc-indicator-title = { -brand-short-name } - 共有インジケーター
+webrtc-indicator-title = { -brand-short-name } — 共有インジケーター
 
 webrtc-sharing-window = 他のプログラムのウィンドウを共有しています。
 webrtc-sharing-browser-window = { -brand-short-name } を共有してます。
@@ -19,5 +19,23 @@ webrtc-microphone-button =
   .title = マイクが共有されています。クリックすると共有を制御します。
 webrtc-camera-button =
   .title = カメラが共有されています。クリックすると共有を制御します。
+webrtc-microphone-unmuted =
+  .title = マイクをオフにする
+webrtc-microphone-muted =
+  .title = マイクをオンにする
+webrtc-camera-unmuted =
+  .title = カメラをオフにする
+webrtc-camera-muted =
+  .title = カメラをオンにする
 webrtc-minimize =
   .title = インジケーターを最小化
+
+# This string will display as a tooltip on supported systems where we show
+# device sharing state in the OS notification area. We do not use these strings
+# on macOS, as global menu bar items do not have native tooltips.
+webrtc-camera-system-menu =
+  .label = カメラを共有しています。クリックすると共有を制御します。
+webrtc-microphone-system-menu =
+  .label = マイクを共有しています。クリックすると共有を制御します。
+webrtc-screen-system-menu =
+  .label = ウィンドウまたは画面をを共有しています。クリックすると共有を制御します。

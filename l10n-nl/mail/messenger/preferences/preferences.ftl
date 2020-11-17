@@ -10,6 +10,8 @@ preferences-title =
             [windows] Opties
            *[other] Voorkeuren
         }
+category-list =
+    .aria-label = Categorieën
 pane-general-title = Algemeen
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,7 +43,6 @@ composition-addressing-header = Adressering
 privacy-main-header = Privacy
 privacy-passwords-header = Wachtwoorden
 privacy-junk-header = Ongewenste berichten
-privacy-data-collection-header = Gegevensverzameling en -gebruik
 collection-header = { -brand-short-name }-gegevensverzameling en -gebruik
 collection-description = We streven ernaar u keuzes te bieden en alleen te verzamelen wat we nodig hebben om { -brand-short-name } voor iedereen beschikbaar te maken en te verbeteren. We vragen altijd toestemming voordat we persoonlijke gegevens ontvangen.
 collection-privacy-notice = Privacyverklaring
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = l
 confirm-messenger-language-change-description = Herstart { -brand-short-name } om deze wijzigingen toe te passen.
 confirm-messenger-language-change-button = Toepassen en herstarten
-update-pref-write-failure-title = Schrijffout
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Kan voorkeur niet opslaan. Kon niet schrijven naar bestand: { $path }
 update-setting-write-failure-title = Fout bij opslaan updatevoorkeuren
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -91,12 +88,11 @@ update-in-progress-ok-button = &Verwerpen
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Doorgaan
+account-button = Accountinstellingen
 addons-button = Extensies & Thema’s
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verifieer uw identiteit om een hoofdwachtwoord aan te maken.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Voer uw aanmeldgegevens voor Windows in om een hoofdwachtwoord in te stellen. Hierdoor wordt de beveiliging van uw accounts beschermd.
 # This message can be seen by trying to add a Master Password.
@@ -104,6 +100,13 @@ master-password-os-auth-dialog-message-win = Voer uw aanmeldgegevens voor Window
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = een hoofdwachtwoord aan te maken
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Voer uw aanmeldgegevens voor Windows in om een hoofdwachtwoord in te stellen. Hierdoor wordt de beveiliging van uw accounts beschermd.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = een hoofdwachtwoord aanmaken
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -541,6 +544,15 @@ master-password-label =
 master-password-button =
     .label = Hoofdwachtwoord wijzigen…
     .accesskey = w
+primary-password-description = Een hoofdwachtwoord beveiligt al uw wachtwoorden, maar u moet het eens per sessie invoeren.
+primary-password-label =
+    .label = Een hoofdwachtwoord gebruiken
+    .accesskey = h
+primary-password-button =
+    .label = Hoofdwachtwoord wijzigen…
+    .accesskey = w
+forms-primary-pw-fips-title = U bent momenteel in FIPS-modus. FIPS vereist een ingesteld hoofdwachtwoord.
+forms-master-pw-fips-desc = Wachtwoordwijziging mislukt
 junk-description = Stel uw standaardinstellingen voor ongewensteberichtendetectie in. Accountspecifieke instellingen kunnen worden geconfigureerd in Accountinstellingen.
 junk-label =
     .label = Wanneer ik berichten markeer als ongewenst:

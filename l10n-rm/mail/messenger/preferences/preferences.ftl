@@ -10,6 +10,8 @@ preferences-title =
             [windows] Preferenzas
            *[other] Preferenzas
         }
+category-list =
+    .aria-label = Categorias
 pane-general-title = General
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,7 +43,6 @@ composition-addressing-header = Adressar
 privacy-main-header = Protecziun da datas
 privacy-passwords-header = Pleds-clav
 privacy-junk-header = Nungiavischà
-privacy-data-collection-header = Rimnada ed utilisaziun da datas
 collection-header = { -brand-short-name }: Collecziun ed utilisaziun da datas
 collection-description = Nus ta laschain la tscherna e ramassain mo las infurmaziuns che nus duvrain per metter a disposiziun e meglierar { -brand-short-name } per tuts. Nus ta dumandain adina avant che rimnar datas persunalas.
 collection-privacy-notice = Infurmaziuns davart la protecziun da datas
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = l
 confirm-messenger-language-change-description = Reaviar { -brand-short-name } per applitgar questas midadas
 confirm-messenger-language-change-button = Applitgar e reaviar
-update-pref-write-failure-title = Errur cun scriver
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Errur durant memorisar la preferenza. Impussibel da scriver en la datoteca: { $path }
 update-setting-write-failure-title = Errur cun memorisar preferenzas per actualisaziuns
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -91,12 +88,11 @@ update-in-progress-ok-button = &Interrumper
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Cuntinuar
+account-button = Parameters dal conto
 addons-button = Extensiuns & designs
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verifitgescha tia identitad per crear in pled clav universal.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Per crear in pled-clav universal, endatescha tias datas d'annunzia per Windows. Quai gida a garantir la segirezza da tes contos.
 # This message can be seen by trying to add a Master Password.
@@ -104,6 +100,13 @@ master-password-os-auth-dialog-message-win = Per crear in pled-clav universal, e
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = crear in pled-clav universal
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Per crear in pled-clav universal, endatescha tias datas d'annunzia per Windows. Quai gida a garantir la segirezza da tes contos.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = crear in pled-clav universal
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -541,6 +544,15 @@ master-password-label =
 master-password-button =
     .label = Midar il pled-clav universal…
     .accesskey = C
+primary-password-description = In pled-clav universal protegia tut tes pleds-clav, ma ti al stos endatar ina giada per sesida.
+primary-password-label =
+    .label = Utilisar in pled-clav universal
+    .accesskey = U
+primary-password-button =
+    .label = Midar il pled-clav universal…
+    .accesskey = c
+forms-primary-pw-fips-title = Ti es actualmain en il modus FIPS. FIPS pretenda in pled-clav universal (betg vid).
+forms-master-pw-fips-desc = I n'è betg reussì da midar il pled-clav
 junk-description = Las suandantas configuraziuns areguard e-mails nungiavischads valan per tut ils contos. En la configuraziun dals contos pon ins definir supplementarmain configuraziuns specificas per mintga conto.
 junk-label =
     .label = Sche messadis vegnan marcads manualmain sco nungiavischads:

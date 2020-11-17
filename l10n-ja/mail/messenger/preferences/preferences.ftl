@@ -41,7 +41,6 @@ composition-addressing-header = アドレス入力
 privacy-main-header = プライバシー
 privacy-passwords-header = パスワード
 privacy-junk-header = 迷惑メール
-privacy-data-collection-header = データ収集と利用
 collection-header = { -brand-short-name } のデータ収集と利用について
 collection-description = 私たちはユーザーに選択肢を提供し、{ -brand-short-name } をすべての人に提供し改善するために必要なものだけを収集するよう努力しています。私たちは、個人情報を受け取る前に、常にユーザーの許可を求めます。
 collection-privacy-notice = 個人情報保護方針
@@ -73,10 +72,6 @@ manage-messenger-languages-button =
     .accesskey = l
 confirm-messenger-language-change-description = これらの変更を適用するには { -brand-short-name } を再起動してください
 confirm-messenger-language-change-button = 適用して再起動
-update-pref-write-failure-title = 書き込み失敗
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = 設定を保存できません。ファイルへの書き込みができませんでした: { $path }
 update-setting-write-failure-title = 変更した設定の保存エラー
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -97,14 +92,22 @@ addons-button = 拡張機能とテーマ
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = マスターパスワードを作成するため、あなたのアカウントを検証します。
-# This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = マスターパスワードを作成するには、Windows のログイン資格情報を入力してください。これはアカウントのセキュリティ保護に役立ちます。
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Thunderbird is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = マスターパスワードを作成
+
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = マスターパスワードを作成するには、Windows のログイン資格情報を入力してください。これはアカウントのセキュリティ保護に役立ちます。
+
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = マスターパスワードを作成
+
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -542,12 +545,26 @@ master-password-label =
 master-password-button =
     .label = マスターパスワードを変更...
     .accesskey = C
+
+primary-password-description = マスターパスワードを使用すると、保存されたすべてのパスワードが保護されます。ただし、セッションごとに入力を求められます。
+
+primary-password-label =
+    .label = マスターパスワードを使用する
+    .accesskey = U
+
+primary-password-button =
+    .label = マスターパスワードを変更...
+    .accesskey = C
+
+forms-primary-pw-fips-title = 現在 FIPS モードです。FIPS は空でないマスターパスワードを必要とします。
+forms-master-pw-fips-desc = パスワードを変更できませんでした
+
 junk-description = 既定の迷惑メールフィルターの動作を設定します。アカウントごとの迷惑メールフィルターの設定は [アカウント設定] で行います。
 junk-label =
     .label = 迷惑メールであると手動でマークしたときに次の処理を実行する:
     .accesskey = W
 junk-move-label =
-    .label = &quot;迷惑メール&quot; フォルダーへ移動する
+    .label = "迷惑メール" フォルダーへ移動する
     .accesskey = o
 junk-delete-label =
     .label = メッセージを削除する

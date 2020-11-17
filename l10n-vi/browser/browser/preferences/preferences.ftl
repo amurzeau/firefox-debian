@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Chỉ khi { -brand-short-name } được đặt để chặn trình theo dõi đã biết
 do-not-track-option-always =
     .label = Luôn luôn
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Tùy chọn
-           *[other] Tùy chỉnh
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Tùy chọn
@@ -35,6 +29,8 @@ search-input-box =
            *[other] Tìm trong phần tùy chỉnh
         }
 managed-notice = Trình duyệt của bạn đang được quản lý bởi tổ chức của bạn.
+category-list =
+    .aria-label = Thể loại
 pane-general-title = Tổng quát
 category-general =
     .tooltiptext = { pane-general-title }
@@ -50,6 +46,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = Thử nghiệm { -brand-short-name }
+category-experimental =
+    .tooltiptext = Thử nghiệm { -brand-short-name }
+pane-experimental-subtitle = Tiến hành thận trọng
+pane-experimental-search-results-header = Thử nghiệm { -brand-short-name }: Tiến hành thận trọng
+pane-experimental-description = Thay đổi tùy chọn cấu hình nâng cao có thể ảnh hưởng đến hiệu suất hoặc bảo mật { -brand-short-name }.
 help-button-label = Hỗ trợ { -brand-short-name }
 addons-button-label = Tiện ích mở rộng & chủ đề
 focus-search =
@@ -82,6 +84,9 @@ extension-controlled-homepage-override = Một tiện ích mở rông, <img data
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Một tiện ích mở rông, <img data-l10n-name="icon"/> { $name }, đang kiểm soát phần thẻ mới của bạn.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cài đặt này.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cài đặt này.
@@ -90,7 +95,7 @@ extension-controlled-web-notifications = Một tiện ích mở rộng, <img dat
 extension-controlled-default-search = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đã cài đặt công cụ tìm kiếm mặc định của bạn.
 # This string is shown to notify the user that Container Tabs
 # are being enabled by an extension.
-extension-controlled-privacy-containers = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, yêu cầu thẻ ngăn chứa.
+extension-controlled-privacy-containers = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, yêu cầu ngăn chứa thẻ.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
 extension-controlled-websites-content-blocking-all-trackers = Một tiện ích mở rộng, <img data-l10n-name="icon"/> { $name }, đang kiểm soát cài đặt này.
@@ -110,10 +115,10 @@ search-results-header = Kết quả tìm kiếm
 # `<span data-l10n-name="query"></span>` will be replaced by the search term.
 search-results-empty-message =
     { PLATFORM() ->
-        [windows] Xin lỗi! Không có kết quả trong phần tủy chọn cho “<span data-l10n-name="query"></span>”.
-       *[other] Xin lỗi! Không có kết quả trong phần tủy chỉnh cho “<span data-l10n-name="query"></span>”.
+        [windows] Xin lỗi! Không có kết quả trong phần Tùy chọn cho “<span data-l10n-name="query"></span>”.
+       *[other] Xin lỗi! Không có kết quả trong phần Tùy chỉnh cho “<span data-l10n-name="query"></span>”.
     }
-search-results-help-link = Cần trợ giúp? Đi tới <a data-l10n-name="url">Hỗ trợ từ { -brand-short-name }</a>
+search-results-help-link = Cần trợ giúp? Đi đến <a data-l10n-name="url">Hỗ trợ { -brand-short-name }</a>
 
 ## General Section
 
@@ -160,20 +165,20 @@ show-tabs-in-taskbar =
     .label = Hiển thị hình ảnh xem trước thẻ trong thanh tác vụ Windows
     .accesskey = k
 browser-containers-enabled =
-    .label = Kích hoạt thẻ ngăn chứa
+    .label = Kích hoạt ngăn chứa thẻ
     .accesskey = n
 browser-containers-learn-more = Tìm hiểu thêm
 browser-containers-settings =
     .label = Cài đặt…
     .accesskey = i
-containers-disable-alert-title = Đóng tất cả các thẻ ngăn chứa?
-containers-disable-alert-desc = Nếu bạn vô hiệu hóa thẻ ngăn chứa bây giờ, { $tabCount } thẻ ngăn chứa sẽ bị đóng. Bạn có chắc muốn vô hiệu hóa thẻ ngăn chứa?
-containers-disable-alert-ok-button = Đóng { $tabCount } thẻ ngăn chứa
+containers-disable-alert-title = Đóng tất cả các ngăn chứa thẻ?
+containers-disable-alert-desc = Nếu bạn vô hiệu hóa ngăn chứa thẻ bây giờ, { $tabCount } thẻ trong ngăn chứa sẽ bị đóng. Bạn có chắc muốn vô hiệu hóa ngăn chứa thẻ?
+containers-disable-alert-ok-button = Đóng { $tabCount } thẻ trong ngăn chứa
 containers-disable-alert-cancel-button = Tiếp tục bật
 containers-remove-alert-title = Xóa ngăn chứa này?
 # Variables:
 #   $count (Number) - Number of tabs that will be closed.
-containers-remove-alert-msg = Nếu bạn xóa ngăn chứa này bây giờ, { $count } thẻ ngăn chứa sẽ bị đóng. Bạn có chắc muốn xóa ngăn chứa này?
+containers-remove-alert-msg = Nếu bạn xóa ngăn chứa này bây giờ, { $count } thẻ trong ngăn chứa sẽ bị đóng. Bạn có chắc muốn xóa ngăn chứa này?
 containers-remove-ok-button = Xóa ngăn chứa này
 containers-remove-cancel-button = Không xóa ngăn chứa này
 
@@ -353,13 +358,6 @@ update-application-warning-cross-user-setting = Cài đặt này sẽ áp dụng
 update-application-use-service =
     .label = Sử dụng dịch vụ chạy nền để cài đặt các cập nhật
     .accesskey = n
-update-enable-search-update =
-    .label = Tự động cập nhật công cụ tìm kiếm
-    .accesskey = e
-update-pref-write-failure-title = Lỗi ghi
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Không thể lưu tùy chọn. Không thể ghi vào tập tin: { $path }
 update-setting-write-failure-title = Lỗi khi lưu tùy chọn cập nhật
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -418,6 +416,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Bật điều khiển video hình trong hình
     .accesskey = E
 browsing-picture-in-picture-learn-more = Tìm hiểu thêm
+browsing-media-control =
+    .label = Điều khiển phương tiện qua bàn phím, tai nghe hoặc giao diện ảo
+    .accesskey = v
+browsing-media-control-learn-more = Tìm hiểu thêm
 browsing-cfr-recommendations =
     .label = Đề xuất tiện ích mở rộng khi duyệt
     .accesskey = R
@@ -481,13 +483,14 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Các trang Web hàng đầu
 home-prefs-topsites-description = Những trang bạn truy cập nhiều nhất
+home-prefs-topsites-by-option-sponsored =
+    .label = Các trang hàng đầu được tài trợ
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = Được đề xuất bởi { $provider }
-home-prefs-recommended-by-description = Nội dung tuyệt vời từ trên web, được cá nhân hóa cho bạn
 home-prefs-recommended-by-description-update = Nội dung đặc biệt trên web, được quản lý bởi { $provider }
 
 ##
@@ -524,7 +527,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Thêm thanh tìm kiếm vào thanh công cụ
 search-engine-default-header = Dịch vụ tìm kiếm mặc định
-search-engine-default-desc = Chọn công cụ tìm kiếm mặc định để sử dụng trong thanh địa chỉ và thanh tìm kiếm.
 search-engine-default-desc-2 = Đây là công cụ tìm kiếm mặc định của bạn trong thanh địa chỉ và thanh tìm kiếm. Bạn có thể chuyển đổi bất cứ lúc nào.
 search-engine-default-private-desc-2 = Chọn một công cụ tìm kiếm mặc định khác chỉ dành cho cửa sổ riêng tư
 search-separate-default-engine =
@@ -547,10 +549,10 @@ search-show-suggestions-above-history-option =
     .label = Hiện những gợi ý tìm kiếm phía trước lịch sử duyệt web trong kết quả thanh địa chỉ
 search-show-suggestions-private-windows =
     .label = Hiển thị đề xuất tìm kiếm trong cửa sổ riêng tư
-suggestions-addressbar-settings = Thay đổi tùy chọn cho lịch sử duyệt web, dấu trang và đề xuất thẻ
 suggestions-addressbar-settings-generic = Thay đổi tùy chọn cho các đề xuất trên thanh địa chỉ khác
 search-suggestions-cant-show = Gợi ý tìm kiếm sẽ không được hiện ở thanh địa chỉ vì bạn đã thiết lập { -brand-short-name } không bao giờ ghi nhớ lịch sử.
 search-one-click-header = Công cụ tìm kiếm với một lần nhấn
+search-one-click-header2 = Lối tắt tìm kiếm
 search-one-click-desc = Chọn các công cụ tìm kiếm thay thế xuất hiện bên dưới thanh địa chỉ và thanh tìm kiếm khi bạn bắt đầu nhập một từ khoá.
 search-choose-engine-column =
     .label = Công cụ tìm kiếm
@@ -562,6 +564,9 @@ search-restore-default =
 search-remove-engine =
     .label = Xóa
     .accesskey = X
+search-add-engine =
+    .label = Thêm
+    .accesskey = A
 search-find-more-link = Tìm các công cụ tìm kiếm khác
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -573,14 +578,13 @@ search-keyword-warning-bookmark = Bạn đã chọn một từ khóa hiện đan
 
 ## Containers Section
 
-containers-back-link = « Quay lại
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
             [windows] Quay lại Tùy chọn
            *[other] Quay lại Tùy chỉnh
         }
-containers-header = Thẻ ngăn chứa
+containers-header = Ngăn chứa thẻ
 containers-add-button =
     .label = Thêm ngăn chứa mới
     .accesskey = T
@@ -592,20 +596,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Loại bỏ
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Mang trang web theo bạn
 sync-signedout-description = Đồng bộ dấu trang, lịch sử, thẻ, mật khẩu, tiện ích và tùy chỉnh tới tất cả các thiết bị của bạn.
-sync-signedout-account-title = Kết nối với một { -fxaccount-brand-name }
-sync-signedout-account-create = Bạn chưa có tài khoản? Bắt đầu
-    .accesskey = C
-sync-signedout-account-signin =
-    .label = Đăng nhập…
-    .accesskey = I
 sync-signedout-account-signin2 =
     .label = Đăng nhập vào { -sync-brand-short-name }…
     .accesskey = i
@@ -619,16 +614,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Tải Firefox cho <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> hoặc <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> để đồng bị với thiết bị di động của bạn.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Đổi hình hồ sơ
-sync-disconnect =
-    .label = Ngắt kết nối…
-    .accesskey = D
 sync-sign-out =
     .label = Đăng xuất…
     .accesskey = g
@@ -645,8 +634,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Đăng nhập
     .accesskey = g
-sync-signedin-settings-header = Cài đặt đồng bộ hóa
-sync-signedin-settings-desc = Chọn những thứ bạn muốn đồng bộ sử dụng { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -699,10 +686,6 @@ sync-engine-tabs =
     .label = Các thẻ đang mở
     .tooltiptext = Danh sách những trang web đang mở trên các thiết bị được đồng bộ
     .accesskey = t
-sync-engine-logins =
-    .label = Đăng nhập
-    .tooltiptext = Tên đăng nhập và mật khẩu bạn đã được lưu
-    .accesskey = L
 sync-engine-logins-passwords =
     .label = Đăng nhập và mật khẩu
     .tooltiptext = Tên đăng nhập và mật khẩu bạn đã lưu
@@ -741,18 +724,10 @@ sync-device-name-save =
     .label = Lưu
     .accesskey = u
 sync-connect-another-device = Kết nối thiết bị khác
-sync-manage-devices = Quản lý thiết bị
-sync-fxa-begin-pairing = Ghép nối thiết bị
-sync-tos-link = Điều khoản dịch vụ
-sync-fxa-privacy-notice = Thông báo bảo mật
 
 ## Privacy Section
 
 privacy-header = Duyệt web riêng tư
-
-## Privacy Section - Forms
-
-logins-header = Đăng nhập & mật khẩu
 
 ## Privacy Section - Logins and Passwords
 
@@ -783,10 +758,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Dùng mật khẩu chính
     .accesskey = U
+forms-primary-pw-use =
+    .label = Sử dụng mật khẩu chính
+    .accesskey = U
+forms-primary-pw-learn-more-link = Tìm hiểu thêm
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Thay đổi mật khẩu chính…
     .accesskey = M
 forms-master-pw-fips-title = Bạn đang ở chế độ FIPS. FIPS yêu cầu mật khẩu chính không được để trống.
+forms-primary-pw-change =
+    .label = Thay đổi mật khẩu chính…
+    .accesskey = P
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Bạn hiện đang ở chế độ FIPS. FIPS yêu cầu tính năng mật khẩu chính.
 forms-master-pw-fips-desc = Thay đổi mật khẩu không thành công
 
 ## OS Authentication dialog
@@ -798,6 +788,13 @@ master-password-os-auth-dialog-message-win = Để tạo mật khẩu chính, h�
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = tạo một mật khẩu chính
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Để tạo mật khẩu chính, hãy nhập thông tin đăng nhập Windows của bạn. Điều này giúp bảo vệ tính bảo mật của tài khoản của bạn.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = tạo một mật khẩu chính
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -864,14 +861,16 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Loại bị chặn
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Trình theo dõi của bên thứ ba
 sitedata-option-block-cross-site-trackers =
-    .label = Trình theo dõi chéo trang web
+    .label = Trình theo dõi trên nhiều trang web
 sitedata-option-block-cross-site-and-social-media-trackers =
-    .label = Trình theo dõi chéo và truyền thông xã hội
+    .label = Trình theo dõi trên nhiều trang web và truyền thông xã hội
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Cookie theo dõi trên nhiều trang web — bao gồm cookie truyền thông xã hội
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Cookie trên nhiều trang web — bao gồm cookie trên mạng xã hội
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
-    .label = Trình theo dõi phương tiện truyền thông xã hội và chéo, và cô lập các cookie còn lại
+    .label = Trình theo dõi trên nhiều trang web và mạng xã hội, đồng thời cô lập các cookie còn lại
 sitedata-option-block-unvisited =
     .label = Cookie từ các trang web không mong muốn
 sitedata-option-block-all-third-party =
@@ -911,27 +910,9 @@ addressbar-suggestions-settings = Thay đổi tùy chỉnh phần gợi ý của
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Chặn nội dung
-content-blocking-section-description = Bảo vệ riêng tư của bạn trong khi bạn duyệt. Chặn nội dung vô hình của các trang web bạn đang xem truy cập và hồ sơ bạn. Chặn một số nội dung này có thể làm cho các trang tải nhanh hơn.
 content-blocking-enhanced-tracking-protection = Trình chống theo dõi nâng cao
 content-blocking-section-top-level-description = Trình theo dõi theo bạn trên mạng để thu thập thông tin về thói quen và sở thích duyệt web của bạn. { -brand-short-name } chặn nhiều trình theo dõi và các tập lệnh độc hại khác.
 content-blocking-learn-more = Tìm hiểu thêm
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Tiêu chuẩn
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Nghiêm ngặt
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Tùy chọn
-    .accesskey = C
-content-blocking-standard-desc = Cân bằng giữa sự bảo mật và hiệu suất. Cho phép một số trình theo dõi để các trang web hoạt động chính xác.
-content-blocking-strict-description = Bảo vệ mạnh mẽ hơn, có thể khiến một số trang web bị vỡ.
-content-blocking-custom-desc = Chọn những gì bạn muốn chặn.
-content-blocking-private-trackers = Trình theo dõi được biết chỉ trong cửa sổ riêng tư
-content-blocking-third-party-cookies = Cookie theo dõi của bên thứ ba
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -953,28 +934,24 @@ content-blocking-etp-standard-desc = Cân bằng để bảo vệ và hiệu su�
 content-blocking-etp-strict-desc = Bảo vệ mạnh mẽ hơn, nhưng có thể khiến một số trang web và nội dung bị phá vỡ.
 content-blocking-etp-custom-desc = Chọn trình theo dõi và tập lệnh để chặn.
 content-blocking-private-windows = Trình theo dõi nội dung trong cửa sổ riêng tư
-content-blocking-cross-site-tracking-cookies = Cookie theo dõi chéo trang web
-content-blocking-cross-site-tracking-cookies-plus-isolate = Cookie theo dõi chéo trang web và cô lập các cookie còn lại
+content-blocking-cross-site-cookies = Cookie trên nhiều trang web
+content-blocking-cross-site-tracking-cookies = Cookie theo dõi trên nhiều trang web
+content-blocking-cross-site-tracking-cookies-plus-isolate = Cookie theo dõi trên nhiều trang web và cô lập các cookie còn lại
 content-blocking-social-media-trackers = Trình theo dõi truyền thông xã hội
 content-blocking-all-cookies = Tất cả cookie
 content-blocking-unvisited-cookies = Cookie từ các trang không mong muốn
-content-blocking-all-windows-trackers = Các trình theo dõi đã biết trong tất cả cửa sổ
 content-blocking-all-windows-tracking-content = Trình theo dõi nội dung trong tất cả cửa sổ
 content-blocking-all-third-party-cookies = Toàn bộ cookie từ bên thứ ba
 content-blocking-cryptominers = Tiền điện tử
-content-blocking-fingerprinters = Vân tay
+content-blocking-fingerprinters = Dấu vết (Fingerprintng)
 content-blocking-warning-title = Hãy cân nhắc!
-content-blocking-warning-description = Chặn nội dung có thể khiến một số trang web bị hỏng. Dễ dàng vô hiệu hóa chặn cho các trang web mà bạn tin tưởng.
-content-blocking-learn-how = Tìm hiểu cách thức
 content-blocking-and-isolating-etp-warning-description = Chặn trình theo dõi và cô lập cookie có thể ảnh hưởng đến chức năng của một số trang web. Tải lại một trang với trình theo dõi để tải tất cả nội dung.
+content-blocking-and-isolating-etp-warning-description-2 = Cài đặt này có thể khiến một số trang web không hiển thị nội dung hoặc hoạt động không chính xác. Nếu trang web có vẻ bị hỏng, bạn có thể muốn tắt trình chống theo dõi để trang web đó tải tất cả nội dung.
 content-blocking-warning-learn-how = Tìm hiểu cách thức
 content-blocking-reload-description = Bạn sẽ cần tải lại các thẻ của mình để áp dụng những thay đổi này.
 content-blocking-reload-tabs-button =
     .label = Tải lại tất cả các thẻ
     .accesskey = R
-content-blocking-trackers-label =
-    .label = Trình theo dõi
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = Trình theo dõi nội dung
     .accesskey = T
@@ -997,7 +974,7 @@ content-blocking-cryptominers-label =
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
-    .label = Vân tay
+    .label = Dấu vết (Fingerprintng)
     .accesskey = F
 
 ## Privacy Section - Tracking
@@ -1033,12 +1010,6 @@ permissions-notification-link = Tìm hiểu thêm
 permissions-notification-pause =
     .label = Tạm dừng thông báo cho đến khi { -brand-short-name } khởi động lại
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Chặn các trang web tự động phát âm thanh
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = Ngoại trừ...
-    .accesskey = E
 permissions-autoplay = Tự động phát
 permissions-autoplay-settings =
     .label = Cài đặt…
@@ -1145,6 +1116,18 @@ space-alert-under-5gb-ok-button =
     .label = OK, đã hiểu
     .accesskey = K
 space-alert-under-5gb-message = Không đủ dung lượng đĩa cho { -brand-short-name }. Nội dung trang web có thể không hiển thị chính xác. Truy cập “Tìm hiểu thêm” để tối ưu hóa việc sử dụng đĩa của bạn để có trải nghiệm duyệt web tốt hơn.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Chế độ chỉ HTTPS
+httpsonly-description = HTTPS cung cấp kết nối được mã hóa an toàn giữa { -brand-short-name } và các trang web bạn truy cập. Hầu hết các trang web đều hỗ trợ HTTPS và nếu chế độ chỉ HTTPS được bật, thì { -brand-short-name } sẽ nâng cấp tất cả các kết nối lên HTTPS.
+httpsonly-learn-more = Tìm hiểu thêm
+httpsonly-radio-enabled =
+    .label = Kích hoạt chế độ chỉ HTTPS trong tất cả các cửa sổ
+httpsonly-radio-enabled-pbm =
+    .label = Chỉ kích hoạt chế độ HTTPS trong các cửa sổ riêng tư
+httpsonly-radio-disabled =
+    .label = Không kích hoạt chế độ chỉ HTTPS
 
 ## The following strings are used in the Download section of settings
 

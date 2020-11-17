@@ -27,7 +27,6 @@
 <!ENTITY contextOutgoing.accesskey "S">
 <!ENTITY contextArchive.label "Αρχειοθέτηση">
 <!ENTITY contextArchive.accesskey "A">
-
 <!ENTITY contextPeriodic.accesskey "ε">
 
 <!ENTITY filterActionDesc.label "Εκτέλεση των ακόλουθων ενεργειών:  ">
@@ -41,7 +40,7 @@
 <!ENTITY copyMessage.label "Αντιγραφή μηνύματος σε">
 <!ENTITY forwardTo.label "Προώθηση σε:">
 <!ENTITY replyWithTemplate.label "Απάντηση με πρότυπο:">
-<!ENTITY markMessageRead.label "Σημείωση ως αναγνωσμένο">
+<!ENTITY markMessageRead.label "Επισήμανση ως αναγνωσμένο">
 <!ENTITY markMessageUnread.label "Επισήμανση ως μη αναγνωσμένο">
 <!ENTITY markMessageStarred.label "Προσθήκη αστεριού">
 <!ENTITY setPriority.label "Ορισμός προτεραιότητας σε">
@@ -50,9 +49,9 @@
 <!ENTITY deleteMessage.label "Διαγραφή μηνύματος">
 <!ENTITY deleteFromPOP.label "Διαγραφή από το διακομιστή POP">
 <!ENTITY fetchFromPOP.label "Λήψη από το διακομιστή POP">
-<!ENTITY ignoreThread.label "Αγνόηση αλληλουχίας">
-<!ENTITY ignoreSubthread.label "Αγνόηση υποαλληλουχίας">
-<!ENTITY watchThread.label "Παρακολούθηση αλληλουχίας">
+<!ENTITY ignoreThread.label "Παράβλεψη νήματος">
+<!ENTITY ignoreSubthread.label "Παράβλεψη υπονήματος">
+<!ENTITY watchThread.label "Παρακολούθηση νήματος">
 <!ENTITY stopExecution.label "Διακοπή εκτέλεσης φίλτρου">
 
 <!ENTITY addAction.tooltip "Προσθήκη νέας ενέργειας">

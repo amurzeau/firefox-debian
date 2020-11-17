@@ -8,8 +8,6 @@
 cfr-doorhanger-extension-heading = Estenscioin consegiæ
 cfr-doorhanger-pintab-heading = Prova quésto: aponta sto feuggio
 
-
-
 ##
 
 cfr-doorhanger-extension-sumo-link =
@@ -79,8 +77,13 @@ cfr-doorhanger-bookmark-fxa-link-text = Sincronizza i segnalibbri òua…
 
 ## Protections panel
 
+cfr-protections-panel-link-text = Atre informaçioin
 
 ## What's New toolbar button and panel
+
+# This string is used by screen readers to offer a text based alternative for
+# the notification icon
+cfr-badge-reader-label-newfeature = Neuve fonçioin
 
 cfr-whatsnew-button =
     .label = Cöse gh'é de neuvo
@@ -90,16 +93,26 @@ cfr-whatsnew-panel-header = Cöse gh'é de neuvo
 
 cfr-whatsnew-release-notes-link-text = Lezi e nòtte de version
 
+cfr-whatsnew-lockwise-take-link-text = Scarega l'app
+
 ## Search Bar
+
 
 ## Picture-in-Picture
 
+cfr-whatsnew-pip-cta = Atre informaçioin
+
 ## Permission Prompt
+
+cfr-whatsnew-permission-prompt-cta = Atre informaçioin
 
 ## Fingerprinter Counter
 
+
 ## Bookmark Sync
 
+cfr-doorhanger-sync-bookmarks-ok-button = Ativa { -sync-brand-short-name }
+    .accesskey = t
 
 ## Login Sync
 
@@ -113,6 +126,8 @@ cfr-doorhanger-send-tab-recipe-header = Pòrtite sta riçetta in cuxinn-a
 
 ## Firefox Send
 
+cfr-doorhanger-firefox-send-ok-button = Preuva { -send-brand-name }
+    .accesskey = P
 
 ## Social Tracking Protection
 
@@ -124,11 +139,31 @@ cfr-doorhanger-socialtracking-heading = { -brand-short-name } o l'à inpedio a '
 
 ## Enhanced Tracking Protection Milestones
 
+cfr-doorhanger-milestone-ok-button = Amia tutto
+    .accesskey = A
+
+cfr-doorhanger-milestone-close-button = Særa
+    .accesskey = S
+
 ## What’s New Panel Content for Firefox 76
+
 
 ## Lockwise message
 
+
 ## Vulnerable Passwords message
 
+
 ## Picture-in-Picture fullscreen message
+
+
+## Protections Dashboard message
+
+
+## Better PDF message
+
+
+## DOH Message
+
+## What's new: Cookies message
 

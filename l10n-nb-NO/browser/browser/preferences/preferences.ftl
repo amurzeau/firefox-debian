@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Bare når { -brand-short-name } er satt til å blokkere kjente sporere
 do-not-track-option-always =
     .label = Alltid
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Innstillinger
-           *[other] Innstillinger
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Innstillinger
@@ -35,6 +29,8 @@ search-input-box =
            *[other] Søk i innstillinger
         }
 managed-notice = Nettleseren din administreres av organisasjonen din.
+category-list =
+    .aria-label = Kategorier
 pane-general-title = Generelt
 category-general =
     .tooltiptext = { pane-general-title }
@@ -50,6 +46,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name }-eksperiment
+category-experimental =
+    .tooltiptext = { -brand-short-name }-eksperiment
+pane-experimental-subtitle = Fortsett med forsiktighet
+pane-experimental-search-results-header = { -brand-short-name }-eksperimenter: Fortsett med forsiktighet
+pane-experimental-description = Endrer du avanserte konfigurasjonsinnstillinger kan det påvirke ytelse eller sikkerhet i { -brand-short-name }.
 help-button-label = { -brand-short-name } brukerstøtte
 addons-button-label = Utvidelser og tema
 focus-search =
@@ -82,6 +84,9 @@ extension-controlled-homepage-override = En utvidelse, <img data-l10n-name="icon
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = En utvidelse, <img data-l10n-name="icon"/> { $name }, styrer din ny fane-side.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = En utvidelse, <img data-l10n-name="icon"/> { $name }, styrer denne innstillingen.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = En utvidelse, <img data-l10n-name="icon"/> { $name }, kontrollerer denne innstillingen.
@@ -148,7 +153,7 @@ open-new-link-as-tabs =
     .label = Åpne lenker i faner istedenfor nye vindu
     .accesskey = f
 warn-on-close-multiple-tabs =
-    .label = Advar ved lukking av flere faner
+    .label = Advar meg når jeg lukker flere faner
     .accesskey = A
 warn-on-open-many-tabs =
     .label = Advar når åpning av mange faner samtidig kan gjøre { -brand-short-name } treg
@@ -365,13 +370,6 @@ update-application-warning-cross-user-setting = Denne innstillingen gjelder for 
 update-application-use-service =
     .label = Bruk en bakgrunnstjeneste for å installere oppdateringer
     .accesskey = B
-update-enable-search-update =
-    .label = Oppdater søkemotorer automatisk
-    .accesskey = e
-update-pref-write-failure-title = Skrivfeil
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Kan ikke lagre innstillinger. Kunne ikke skrive til filen: { $path }
 update-setting-write-failure-title = Kunne ikke lagre oppdateringsinnstillinger
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -430,6 +428,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Aktiver videokontroller for bilde-i-bilde
     .accesskey = e
 browsing-picture-in-picture-learn-more = Les mer
+browsing-media-control =
+    .label = Kontroller media via tastatur, hodesett eller virtuelt grensesnitt
+    .accesskey = o
+browsing-media-control-learn-more = Les mer
 browsing-cfr-recommendations =
     .label = Anbefal utvidelser mens du surfer
     .accesskey = r
@@ -493,13 +495,14 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Mest besøkte
 home-prefs-topsites-description = Mest besøkte nettsteder
+home-prefs-topsites-by-option-sponsored =
+    .label = Sponsede toppsider
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = Anbefalt av { $provider }
-home-prefs-recommended-by-description = Bra innhold fra hele nettet, tilpasset for deg
 home-prefs-recommended-by-description-update = Enestående innhold fra hele nettet, satt sammen av { $provider }
 
 ##
@@ -540,7 +543,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Legg til søkelinje i verktøylinjen
 search-engine-default-header = Standard søkemotor
-search-engine-default-desc = Velg standardsøkemotor som skal brukes i adresselinjen og søkelinjen.
 search-engine-default-desc-2 = Dette er din standard søkemotor i adresselinjen og søkelinjen. Du kan bytte når som helst.
 search-engine-default-private-desc-2 = Velg en annen standardsøkemotor bare for private vinduer
 search-separate-default-engine =
@@ -563,10 +565,10 @@ search-show-suggestions-above-history-option =
     .label = Vis søkeforslag før nettleserhistorikk i adressefeltsresultatene
 search-show-suggestions-private-windows =
     .label = Vis søkeforslag i private vindu
-suggestions-addressbar-settings = Endre innstillinger for nettleserhistorikk, bokmerker og faneforslag
 suggestions-addressbar-settings-generic = Endre innstillinger for andre adresselinjeforslag
 search-suggestions-cant-show = Søkeforslag vil ikke vises i adresselinjeresultatene fordi du har konfigurert { -brand-short-name } til å aldri huske historikk.
 search-one-click-header = Ettklikks søkemotorer
+search-one-click-header2 = Søkesnarveier
 search-one-click-desc = Velg alternative søkemotorer som vises under adresselinjen og søkelinjen når du begynner å skrive inn et søkeord.
 search-choose-engine-column =
     .label = Søkemotor
@@ -578,6 +580,9 @@ search-restore-default =
 search-remove-engine =
     .label = Fjern
     .accesskey = F
+search-add-engine =
+    .label = Legg til
+    .accesskey = L
 search-find-more-link = Finn flere søkemotorer
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -589,7 +594,6 @@ search-keyword-warning-bookmark = Du har valgt et nøkkelord som brukes av et an
 
 ## Containers Section
 
-containers-back-link = « Gå tilbake
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -608,20 +612,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Fjern
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Ta med deg webben
 sync-signedout-description = Synkroniser bokmerker, historikk, faner, passord, utvidelser og innstillinger på tvers av alle enhetene dine.
-sync-signedout-account-title = Koble til en { -fxaccount-brand-name }
-sync-signedout-account-create = Har du ikke en konto? Kom i gang
-    .accesskey = H
-sync-signedout-account-signin =
-    .label = Logg inn…
-    .accesskey = i
 sync-signedout-account-signin2 =
     .label = Logg inn på { -sync-brand-short-name }…
     .accesskey = i
@@ -635,16 +630,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Last ned Firefox for <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> eller <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> for å synkronisere med dine mobile enheter.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Endre profilbilde
-sync-disconnect =
-    .label = Koble fra…
-    .accesskey = f
 sync-sign-out =
     .label = Logg ut…
     .accesskey = g
@@ -661,8 +650,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Logg inn
     .accesskey = g
-sync-signedin-settings-header = Sync-innstillinger
-sync-signedin-settings-desc = Velg hva du vil synkronisere på enhetene dine med { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -715,10 +702,6 @@ sync-engine-tabs =
     .label = Åpne faner
     .tooltiptext = En liste over hva som er åpent på alle synkroniserte enheter
     .accesskey = T
-sync-engine-logins =
-    .label = Innlogginger
-    .tooltiptext = Brukarnavn og passord du har lagret
-    .accesskey = I
 sync-engine-logins-passwords =
     .label = Innlogginger og passord
     .tooltiptext = Brukernavn og passord som du har lagret
@@ -757,18 +740,10 @@ sync-device-name-save =
     .label = Lagre
     .accesskey = L
 sync-connect-another-device = Koble til en annen enhet
-sync-manage-devices = Administrer enheter
-sync-fxa-begin-pairing = Tilknytt en enhet
-sync-tos-link = Tjenestevilkår
-sync-fxa-privacy-notice = Personvernbestemmelser
 
 ## Privacy Section
 
 privacy-header = Nettleserpersonvern
-
-## Privacy Section - Forms
-
-logins-header = Innlogginger og passord
 
 ## Privacy Section - Logins and Passwords
 
@@ -799,10 +774,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Bruk et hovedpassord
     .accesskey = r
+forms-primary-pw-use =
+    .label = Bruk et hovedpassord
+    .accesskey = B
+forms-primary-pw-learn-more-link = Les mer
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Endre hovedpassord …
     .accesskey = d
 forms-master-pw-fips-title = Du er i FIPS-modus. FIPS krever at du bruker et hovedpassord.
+forms-primary-pw-change =
+    .label = Endre hovedpassord…
+    .accesskey = p
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Du er for tiden i FIPS-modus. FIPS krever at du bruker et hovedpassord.
 forms-master-pw-fips-desc = Passordendring mislyktes
 
 ## OS Authentication dialog
@@ -814,6 +804,13 @@ master-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen 
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = opprette et hovedpassord
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen for Windows for å opprette et hovedpassord. Dette vil gjøre kontoene dine tryggere.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = opprett et hovedpassord
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -880,18 +877,20 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Type blokkert
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = Tredjeparts-sporere
 sitedata-option-block-cross-site-trackers =
     .label = Sporing på tvers av nettsteder
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Sporing på tvers av nettsteder og sporere via sosiale medier
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Sporingsinfokapsler på tvers av nettsteder — inkluderer informasjonskapsler for sosiale medier
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Infokapsler på tvers av nettsteder — inkluderer informasjonskapsler for sosiale medier
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Sporere på tvers av nettsteder og sosiale medier, og isolering av gjenværende infokapsler
 sitedata-option-block-unvisited =
     .label = Infokapsler fra ubesøkte nettsteder
 sitedata-option-block-all-third-party =
-    .label = Alle tredjeparts infokapsler (kan føre til feil på nettsteder)
+    .label = Alle tredjeparts-infokapsler (kan forårsake feil på nettsteder)
 sitedata-option-block-all =
     .label = Alle infokapsler (vil føre til feil på nettsteder)
 sitedata-clear =
@@ -927,27 +926,9 @@ addressbar-suggestions-settings = Endre innstillinger for søkeforslag
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Innholdsblokkering
-content-blocking-section-description = Beskytt personvernet ditt mens du surfer. Blokker usynlig innhold som sporer nettsidene du besøker og profilerer deg. Blokkering av noe av dette innholdet kan gjøre nettsider raskere å laste.
 content-blocking-enhanced-tracking-protection = Utvidet sporingsbeskyttelse
 content-blocking-section-top-level-description = Sporere følger deg rundt på nettet for å samle informasjon om surfevanene og interessene dine. { -brand-short-name } blokkerer mange av disse sporere og andre ondsinnede skript.
 content-blocking-learn-more = Les mer
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standard
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Streng
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = Tilpasset
-    .accesskey = p
-content-blocking-standard-desc = Balansert for beskyttelse og ytelse. Tillater noen sporere slik at nettsteder fungerer som de skal.
-content-blocking-strict-description = Sterkere beskyttelse, men kan forhindre noen nettsteder fra å fungere.
-content-blocking-custom-desc = Velg hva du vil blokkere.
-content-blocking-private-trackers = Kjente sporere bare i Private vindu
-content-blocking-third-party-cookies = Tredjeparts sporingsinfokapsler
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -969,28 +950,24 @@ content-blocking-etp-standard-desc = Balansert for beskyttelse og ytelse. Sider 
 content-blocking-etp-strict-desc = Sterkere beskyttelse, men kan føre til at noen nettsteder eller innhold ikke vil fungere.
 content-blocking-etp-custom-desc = Velg hvilke sporere og skript som skal blokkeres.
 content-blocking-private-windows = Sporingsinnhold i private vinduer
+content-blocking-cross-site-cookies = Infokapsler på tvers av nettsteder
 content-blocking-cross-site-tracking-cookies = Sporingsinfokapsler på tvers av nettsteder
 content-blocking-cross-site-tracking-cookies-plus-isolate = Sporingsinfokapsler på tvers av nettsteder, isolering av gjenværende infokapsler
 content-blocking-social-media-trackers = Sporing via sosiale medier
 content-blocking-all-cookies = Alle infokapsler
 content-blocking-unvisited-cookies = Infokapsler fra ubesøkte nettsteder
-content-blocking-all-windows-trackers = Kjente sporere i alle vinduer
 content-blocking-all-windows-tracking-content = Sporingsinnhold i alle vinduer
 content-blocking-all-third-party-cookies = Alle tredjeparts infokapsler
-content-blocking-cryptominers = Kryptominere
+content-blocking-cryptominers = Kryptoutvinnere
 content-blocking-fingerprinters = Fingerprinters
 content-blocking-warning-title = Se opp!
-content-blocking-warning-description = Blokkering av innhold kan føre til at noen nettsteder slutter å fungere. Det er enkelt å deaktivere blokkering for nettsteder du stoler på.
-content-blocking-learn-how = Finn ut hvordan
 content-blocking-and-isolating-etp-warning-description = Blokkering av sporere og isolering av infokapsler kan påvirke funksjonaliteten på noen nettsteder. Gjeninnlast nettsiden med sporere for å laste alt innhold.
+content-blocking-and-isolating-etp-warning-description-2 = Denne innstillingen kan føre til at enkelte nettsteder ikke viser innhold eller fungerer riktig. Hvis et nettsted virker ødelagt, kan det være lurt å slå av sporingsbeskyttelse for det nettstedet for å laste inn alt innholdet.
 content-blocking-warning-learn-how = Les hvordan
 content-blocking-reload-description = Du må oppdatere fanene dine for å kunne bruke disse endringene.
 content-blocking-reload-tabs-button =
     .label = Last inn alle faner på nytt
     .accesskey = L
-content-blocking-trackers-label =
-    .label = Sporere
-    .accesskey = S
 content-blocking-tracking-content-label =
     .label = Sporingsinnhold
     .accesskey = S
@@ -1008,7 +985,7 @@ content-blocking-expand-section =
     .tooltiptext = Mer informasjon
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
-    .label = Kryptominere
+    .label = Kryptoutvinnere
     .accesskey = y
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
@@ -1028,7 +1005,7 @@ permissions-header = Tillatelser
 permissions-location = Plassering
 permissions-location-settings =
     .label = Innstillinger…
-    .accesskey = P
+    .accesskey = n
 permissions-xr = Virtuell virkelighet
 permissions-xr-settings =
     .label = Innstillinger…
@@ -1040,7 +1017,7 @@ permissions-camera-settings =
 permissions-microphone = Mikrofon
 permissions-microphone-settings =
     .label = Innstillinger…
-    .accesskey = M
+    .accesskey = n
 permissions-notification = Varsler
 permissions-notification-settings =
     .label = Innstillinger…
@@ -1049,12 +1026,6 @@ permissions-notification-link = Les mer
 permissions-notification-pause =
     .label = Sett varsler på pause til { -brand-short-name } starter på nytt
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Blokker nettsteder fra å automatisk spille av lyd
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = Unntak…
-    .accesskey = U
 permissions-autoplay = Automatisk avspilling
 permissions-autoplay-settings =
     .label = Innstillinger…
@@ -1161,6 +1132,18 @@ space-alert-under-5gb-ok-button =
     .label = OK, jeg skjønner
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } er i ferd med å gå tom for plass på disken. Det kan hende at innholdet på nettsiden ikke vises ordentlig. Gå til «Les mer» for å optimalisere diskbruken din for en bedre nettleseropplevelse.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Kun-HTTPS-modus
+httpsonly-description = HTTPS gir en sikker, kryptert forbindelse mellom { -brand-short-name } og nettstedene du besøker. De fleste nettsteder støtter HTTPS, og hvis kun-HTTPS er aktivert, vil { -brand-short-name } oppgradere alle tilkoblinger til HTTPS.
+httpsonly-learn-more = Les mer
+httpsonly-radio-enabled =
+    .label = Aktiver kun-HTTPS i alle vinduer
+httpsonly-radio-enabled-pbm =
+    .label = Aktiver kun-HTTPS kun i private vinduer
+httpsonly-radio-disabled =
+    .label = Ikke aktiver kun-HTTPS
 
 ## The following strings are used in the Download section of settings
 

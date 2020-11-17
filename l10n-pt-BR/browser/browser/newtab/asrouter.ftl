@@ -19,7 +19,7 @@ cfr-doorhanger-extension-ok-button = Adicionar agora
     .accesskey = A
 cfr-doorhanger-pintab-ok-button = Fixar esta aba
     .accesskey = x
-cfr-doorhanger-extension-manage-settings-button = Gerenciar configurações de recomendações
+cfr-doorhanger-extension-manage-settings-button = Gerenciar configuração de recomendações
     .accesskey = m
 cfr-doorhanger-extension-never-show-recommendation = Não mostrar esta recomendação
     .accesskey = s
@@ -206,6 +206,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Ver tudo
     .accesskey = V
+cfr-doorhanger-milestone-close-button = Fechar
+    .accesskey = F
 
 ## What’s New Panel Content for Firefox 76
 
@@ -239,3 +241,33 @@ cfr-whatsnew-protections-icon-alt = Ícone de escudo
 
 cfr-whatsnew-better-pdf-header = Melhor experiência de uso em PDF
 cfr-whatsnew-better-pdf-body = Documentos PDF agora são abertos diretamente no { -brand-short-name }, mantendo seu fluxo de trabalho facilmente ao alcance.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Sua privacidade é importante. Agora o { -brand-short-name } roteia com segurança suas solicitações de DNS, sempre que possível, para um serviço parceiro para proteger você enquanto navega.
+cfr-doorhanger-doh-header = Pesquisas de DNS mais seguras e criptografadas
+cfr-doorhanger-doh-primary-button = OK, entendi
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Desativar
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Sua privacidade é importante. O { -brand-short-name } agora isola (sandbox) sites uns dos outros, o que dificulta os hackers roubarem senhas, números de cartões de crédito e outras informações confidenciais.
+cfr-doorhanger-fission-header = Isolamento de sites
+cfr-doorhanger-fission-primary-button = OK, entendi
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Saiba mais
+    .accesskey = S
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Proteção automática contra táticas furtivas de rastreamento
+cfr-whatsnew-clear-cookies-body = Alguns rastreadores redirecionam para outros sites que secretamente criam cookies. O { -brand-short-name } agora limpa automaticamente esses cookies para que você não possa ser seguido.
+cfr-whatsnew-clear-cookies-image-alt = Ilustração de cookie bloqueado
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Mais controles de mídia
+cfr-whatsnew-media-keys-body = Reproduza e pause áudio ou vídeo diretamente do teclado ou do fone de ouvido, facilitando controlar mídias a partir de outra aba, outro programa ou mesmo quando o computador estiver bloqueado. Você também pode mudar de faixa usando as teclas de avançar e voltar.
+cfr-whatsnew-media-keys-button = Saiba como

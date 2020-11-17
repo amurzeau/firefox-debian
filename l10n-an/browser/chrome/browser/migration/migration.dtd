@@ -7,12 +7,15 @@
 
 <!ENTITY importFrom.label               "Importar opcions, marcapachinas, historial, claus y atros datos de:">
 <!ENTITY importFromUnix.label           "Importar preferencias, marcapachinas, historial, claus y atros datos de:">
-<!ENTITY importFromBookmarks.label      "Importar os marcapachinas de:">
 
 <!ENTITY importFromIE.label             "Microsoft Internet Explorer">
 <!ENTITY importFromIE.accesskey         "M">
 <!ENTITY importFromEdge.label           "Microsoft Edge">
 <!ENTITY importFromEdge.accesskey       "E">
+<!ENTITY importFromEdgeLegacy.label     "Microsoft Edge (versions antigas)">
+<!ENTITY importFromEdgeLegacy.accesskey "a">
+<!ENTITY importFromEdgeBeta.label       "Microsoft Edge Beta">
+<!ENTITY importFromEdgeBeta.accesskey   "B">
 <!ENTITY importFromNothing.label        "No importar cosa">
 <!ENTITY importFromNothing.accesskey    "p">
 <!ENTITY importFromSafari.label         "Safari">

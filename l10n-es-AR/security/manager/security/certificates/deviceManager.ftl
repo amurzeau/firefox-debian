@@ -117,6 +117,8 @@ devinfo-serialnum =
     .label = Número De Serie
 
 fips-nonempty-password-required = El modo FIPS requiere que se ingrese una Contraseña Maestra para cada dispositivo de seguridad. Ingrese una contraseña antes de intentar habilitar el modo FIPS.
+
+fips-nonempty-primary-password-required = El modo FIPS requiere que tenga una contraseña maestra establecida para cada dispositivo de seguridad. Establezca la contraseña antes de tratar de activar el modo FIPS.
 unable-to-toggle-fips = No se puede cambiar el modo FIPS para el dispositivo de seguridad. Se recomienda que salga y reinicie esta aplicación.
 load-pk11-module-file-picker-title = Seleccionar un controlador de dispositivo PKCS#11 para cargar
 

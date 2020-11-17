@@ -18,6 +18,8 @@ cert-error-trust-self-signed = The certificate is not trusted because it is self
 
 cert-error-untrusted-default = සහතිකය ලැබෙන්නේ විශ්වාස මූලයකින් නොවේ.
 
+cert-error-details-cert-chain-label = සහතික දාමය:
+
 ## Messages used for certificate error titles
 
 connectionFailure-title = සම්බන්ධ වීමට නොහැක
@@ -39,7 +41,6 @@ proxyResolveFailure-title = ප්‍රොක්සි සේවාදායක
 redirectLoop-title = මෙම පිටුව නිසියාකාරව ප්‍රතිමාර්ගගත වන්නේ නැත
 unknownSocketType-title = සේවාදායකයෙන් අනපේක්‍ෂිත ප්‍රතිචාරයකි
 nssFailure2-title = ආරක්‍ෂිත සම්බන්ධය බිද වැටිනි
-cspBlocked-title = ආරක්ෂක ප්‍රතිපත්තියට අනුව අවහිර කර ඇත
 remoteXUL-title = Remote XUL
 sslv3Used-title = ආරක්ෂිතව සබඳවිය නොහැකි විය
 inadequateSecurityError-title = ඔබේ සබඳතාවය අනාරක්ෂිතයි

@@ -252,11 +252,9 @@ main-context-menu-send-to-device =
 main-context-menu-view-background-image =
     .label = Vis baggrundsbillede
     .accesskey = V
-
 main-context-menu-generate-new-password =
     .label = Brug genereret afgangskode…
     .accesskey = g
-
 main-context-menu-keyword =
     .label = Tilføj en genvej til denne søgning…
     .accesskey = s
@@ -293,6 +291,9 @@ main-context-menu-frame-view-source =
 main-context-menu-frame-view-info =
     .label = Vis rammeoplysninger
     .accesskey = o
+main-context-menu-print-selection =
+    .label = Udskriv markering
+    .accesskey = U
 main-context-menu-view-selection-source =
     .label = Vis markeringens kildekode
     .accesskey = V

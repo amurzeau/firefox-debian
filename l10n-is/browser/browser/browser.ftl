@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Huliðsstilling)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Huliðsstilling)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Huliðsstilling)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Huliðsstilling)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -101,6 +99,9 @@ urlbar-addons-notification-anchor =
 
 urlbar-search-tips-onboard = Minni innsláttur, finna meira: Leitaðu með { $engineName } beint frá leitarslá.
 
+## Local search mode indicator labels in the urlbar
+
+
 ##
 
 urlbar-geolocation-blocked =
@@ -125,12 +126,10 @@ urlbar-midi-blocked =
     .tooltiptext = Þú hefur lokað fyrir MIDI aðgang á þessu vefsvæði.
 urlbar-install-blocked =
     .tooltiptext = Þú hefur lokað fyrir staðsetningarupplýsingar á þessu vefsvæði.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Breyta bókamerki ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -144,6 +143,53 @@ page-action-manage-extension =
     .label = Sýsla með viðbót…
 page-action-remove-from-urlbar =
     .label = Fjarlægja úr staðsetningarslá
+
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Senda flipa í tæki
+           *[other] senda { $tabCount } flipa í tæki
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Senda flipa í tæki
+           *[other] senda { $tabCount } flipa í tæki
+        }
+page-action-pocket-panel =
+    .label = Vista síðu í { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Afrita tengil
+page-action-copy-url-urlbar =
+    .tooltiptext = Afrita tengil
+page-action-email-link-panel =
+    .label = Senda tengil…
+page-action-email-link-urlbar =
+    .tooltiptext = Senda tengil…
+page-action-share-url-panel =
+    .label = Deila
+page-action-share-url-urlbar =
+    .tooltiptext = Deila
+page-action-share-more-panel =
+    .label = Meira…
+page-action-send-tab-not-ready =
+    .label = Samstilli tæki…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Festa flipa
+page-action-pin-tab-urlbar =
+    .tooltiptext = Festa flipa
+page-action-unpin-tab-panel =
+    .label = Losa flipa
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Losa flipa
 
 ## Auto-hide Context Menu
 
@@ -162,7 +208,6 @@ search-one-offs-change-settings-button =
     .label = Breyta leitarstillingum
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Breyta leitarstillingum
-
 search-one-offs-context-open-new-tab =
     .label = Leita og birta í nýjum flipa
     .accesskey = f
@@ -170,15 +215,21 @@ search-one-offs-context-set-as-default =
     .label = Setja sem sjálfgefna leitarvél
     .accesskey = l
 
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Sýna ritil þegar vistað er
     .accesskey = S
-
 bookmark-panel-done-button =
     .label = Ljúka
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -253,18 +304,52 @@ urlbar-default-placeholder =
     .defaultPlaceholder = Leita eða sláðu inn veffang
 urlbar-placeholder =
     .placeholder = Leita eða sláðu inn veffang
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Leitaðu með { $name } eða sláðu inn vistfang
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Vafri er á fjarstýringu
 urlbar-switch-to-tab =
     .value = Fara á flipa:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Skráarending:
-
 urlbar-go-button =
     .tooltiptext = Hoppa á tengilinn sem er í staðsetningarslánni
 urlbar-page-action-button =
     .tooltiptext = Síðu aðgerðir
 urlbar-pocket-button =
     .tooltiptext = Vista í { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Leita með { $engine }
+urlbar-result-action-switch-tab = Fara á flipa
+urlbar-result-action-visit = Heimsækja
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> er með fylltan skjá
+fullscreen-warning-no-domain = Þetta skjal er nú á fylltum skjá
+fullscreen-exit-button = Hætta í fullum skjá (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Hætta í fullum skjá (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> hefur stjórn á bendi. Ýttu á Esc til að taka aftur yfir stjórn.
+pointerlock-warning-no-domain = Þetta skjal hefur nú stjórnina á bendi. Ýttu á Esc til að taka aftur yfir stjórn.

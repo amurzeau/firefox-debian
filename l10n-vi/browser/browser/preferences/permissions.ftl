@@ -5,66 +5,53 @@
 permissions-window =
     .title = Ngoại trừ
     .style = width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Địa chỉ của trang web
     .accesskey = d
-
 permissions-block =
     .label = Chặn
     .accesskey = C
-
 permissions-session =
     .label = Cho phép theo phiên
     .accesskey = S
-
 permissions-allow =
     .label = Cho phép
     .accesskey = h
-
 permissions-site-name =
     .label = Trang web
-
 permissions-status =
     .label = Trạng thái
-
 permissions-remove =
     .label = Xóa trang web
     .accesskey = R
-
 permissions-remove-all =
     .label = Xóa tất cả các trang web
     .accesskey = e
-
 permissions-button-cancel =
     .label = Hủy bỏ
     .accesskey = H
-
 permissions-button-ok =
     .label = Lưu thay đổi
     .accesskey = L
-
+permission-dialog =
+    .buttonlabelaccept = Lưu thay đổi
+    .buttonaccesskeyaccept = L
 permissions-autoplay-menu = Mặc định cho tất cả các trang web:
-
 permissions-searchbox =
     .placeholder = Tìm kiếm trang web
-
 permissions-capabilities-autoplay-allow =
     .label = Cho phép âm thanh và video
 permissions-capabilities-autoplay-block =
     .label = Chặn âm thanh
 permissions-capabilities-autoplay-blockall =
     .label = Chặn âm thanh và video
-
 permissions-capabilities-allow =
     .label = Cho phép
 permissions-capabilities-block =
     .label = Chặn
 permissions-capabilities-prompt =
     .label = Luôn hỏi
-
 permissions-capabilities-listitem-allow =
     .value = Cho phép
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = Nhập sai tên máy chủ
 permissions-invalid-uri-label = Hãy nhập một tên máy chủ có thực
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = Ngoại lệ - Chặn nội dung
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Bạn đã tắt tính năng chặn nội dung trên các trang web này.
 
 permissions-exceptions-etp-window =
     .title = Các ngoại lệ cho trình chống theo dõi nâng cao
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Những trang được cho phép - Cài đặt tiện ích
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Bạn có thể chỉ định trang web nào được phép cài tiện ích. Gõ chính xác địa chỉ trang bạn muốn cho phép và sau đó nhấp Cho phép.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Ngoại lệ - Tự động phát
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Bạn có thể chỉ định trang web nào luôn hoặc không bao giờ được phép tự động phát phương tiện với âm thanh. Nhập địa chỉ của trang web bạn muốn quản lý và sau đó nhấp vào Chặn hoặc Cho phép.
 
 ## Site Permissions - Autoplay
 

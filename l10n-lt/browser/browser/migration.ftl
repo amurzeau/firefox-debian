@@ -53,6 +53,7 @@ no-migration-sources = Nepavyko rasti programų, kuriose būtų adresyno, naršy
 import-source-page-title = Duomenų ir nuostatų importas
 import-items-page-title = Importuotini elementai
 import-items-description = Pasirinkite, ką importuoti:
+import-permissions-page-title = Suteikite leidimus { -brand-short-name }“
 import-migrating-page-title = Importuojama…
 import-migrating-description = Importuojami šie elementai…
 import-select-profile-page-title = Profilio pasirinkimas
@@ -88,10 +89,57 @@ imported-edge-reading-list = Skaitinių sąrašas (iš „Edge“)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.
 
+browser-data-cookies-checkbox =
+    .label = Slapukai
+browser-data-cookies-label =
+    .value = Slapukai
+browser-data-history-checkbox =
+    .label =
+        { $browser ->
+            [firefox] Naršymo žurnalas ir adresynas
+           *[other] Naršymo žurnalas
+        }
+browser-data-history-label =
+    .value =
+        { $browser ->
+            [firefox] Naršymo žurnalas ir adresynas
+           *[other] Naršymo žurnalas
+        }
+browser-data-formdata-checkbox =
+    .label = Įrašyta iš žurnalo
+browser-data-formdata-label =
+    .value = Įrašyta iš žurnalo
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-checkbox =
+    .label = Įrašyti prisijungimai ir slaptažodžiai
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-label =
+    .value = Įrašyti prisijungimai ir slaptažodžiai
+browser-data-bookmarks-checkbox =
+    .label =
+        { $browser ->
+            [ie] Adresynas
+            [edge] Adresynas
+           *[other] Adresynas
+        }
+browser-data-bookmarks-label =
+    .value =
+        { $browser ->
+            [ie] Adresynas
+            [edge] Adresynas
+           *[other] Adresynas
+        }
+browser-data-otherdata-checkbox =
+    .label = Kiti duomenys
+browser-data-otherdata-label =
+    .label = Kiti duomenys
 browser-data-session-checkbox =
     .label = Langai ir kortelės
 browser-data-session-label =

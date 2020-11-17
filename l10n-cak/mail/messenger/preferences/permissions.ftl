@@ -36,15 +36,15 @@ remove-site-button =
     .accesskey = y
 
 remove-all-site-button =
-    .label = Keyuj Konojel ri taq Ruxaq K'amaya'l
-    .accesskey = e
+    .label = Keyuj Ronojel ri Ruxaq K'amaya'l
+    .accesskey = y
 
 cancel-button =
     .label = Tiq'at
     .accesskey = q
 
 save-button =
-    .label = Keyak taq Jaloj
+    .label = Keyak Jaloj
     .accesskey = y
 
 permission-can-label = Tiya' q'ij

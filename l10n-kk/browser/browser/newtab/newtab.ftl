@@ -51,6 +51,10 @@ newtab-confirm-delete-history-p1 = Бұл парақтың барлық кезд
 # "This action" refers to deleting a page from history.
 newtab-confirm-delete-history-p2 = Бұл әрекетті болдырмау мүмкін болмайды.
 
+## Top Sites - Sponsored label
+
+newtab-topsite-sponsored = Демеуленген
+
 ## Context Menu - Action Tooltips.
 
 # General tooltip for context menus.

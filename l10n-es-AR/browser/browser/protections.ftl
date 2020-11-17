@@ -25,21 +25,6 @@ graph-private-window = { -brand-short-name } sigue bloqueando rastreadores en ve
 # Weekly summary of the graph when the graph is empty in Private Mode
 graph-week-summary-private-window = Rastreadores { -brand-short-name } bloqueados esta semana
 
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-# The category name in the <b> tag will be bold.
-protection-report-header-details-standard = El nivel de protección se establece en <b> Estándar </b>
-    .title = Ir a ajustes de privacidad
-protection-report-header-details-strict = El nivel de protección se establece en <b> Estricto </b>
-    .title = Ir a ajustes de privacidad
-protection-report-header-details-custom = El nivel de protección se establece en <b> Personalizado </b>
-    .title = Ir a ajustes de privacidad
-protection-report-page-title = Protecciones de privacidad
-protection-report-content-title = Protecciones de privacidad
-
-etp-card-title = Protección contra rastreo aumentada
-etp-card-content = Los rastreadores lo siguen en línea para recopilar información sobre sus hábitos e intereses de navegación. { -brand-short-name } bloquea muchos de estos rastreadores y otros scripts maliciosos.
-
 protection-report-webpage-title = Panel de protecciones
 protection-report-page-content-title = Panel de protecciones
 # This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
@@ -86,12 +71,9 @@ mobile-app-card-content = Usar el navegador móvil con protección integrada con
 mobile-app-links = Navegador { -brand-product-name } para <a data-l10n-name="android-mobile-inline-link">Android </a> y <a data-l10n-name="ios-mobile-inline-link">iOS</a>
 
 lockwise-title = Nunca más olvide una contraseña
-lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-title-logged-in2 = Gestión de contraseñas
 lockwise-header-content = { -lockwise-brand-name } almacena sus contraseñas en su navegador de manera segura.
 lockwise-header-content-logged-in = Almacene y sincronice sus contraseñas en todos sus dispositivos de manera segura.
-protection-report-view-logins-button = Ver inicios de sesión
-    .title = Ir a inicios de sesión guardados
 protection-report-save-passwords-button = Guardar contraseñas
     .title = Guardar contraseñas en { -lockwise-brand-short-name }
 protection-report-manage-passwords-button = Administrar contraseñas
@@ -99,15 +81,6 @@ protection-report-manage-passwords-button = Administrar contraseñas
 lockwise-mobile-app-title = Lleve sus contraseñas a todas partes
 lockwise-no-logins-card-content = Use contraseñas guardadas en { -brand-short-name } en cualquier dispositivo.
 lockwise-app-links = { -lockwise-brand-name } para <a data-l10n-name="lockwise-android-inline-link">Android</a> y <a data-l10n-name="lockwise-ios-inline-link">iOS</a>
-
-# This string is displayed after a large numeral that indicates the total number
-# of email addresses being monitored. Don’t add $count to
-# your localization, because it would result in the number showing twice.
-lockwise-passwords-stored =
-    { $count ->
-        [one] Contraseña almacenadas de forma segura <a data-l10n-name="lockwise-how-it-works"> Cómo funciona</a>
-       *[other] Contraseñas almacenadas de forma segura <a data-l10n-name="lockwise-how-it-works"> Cómo funciona</a>
-    }
 
 # Variables:
 # $count (Number) - Number of passwords exposed in data breaches.
@@ -131,21 +104,10 @@ lockwise-how-it-works-link = Cómo funciona
 turn-on-sync = Habilitar { -sync-brand-short-name }...
     .title = Vaya a preferencias de sync
 
-manage-connected-devices = Administrar dispositivos...
-
-# Variables:
-#   $count (Number) - Number of devices connected with sync.
-lockwise-connected-device-status =
-    { $count ->
-        [one] Conectado con { $count } dispositivo
-       *[other] Conectado con { $count } dispositivos
-    }
-
 monitor-title = Esté atento a las violaciones de datos
 monitor-link = Cómo funciona
 monitor-header-content-no-account = Controle { -monitor-brand-name } para ver si fue parte de una violación de datos conocida y para recibir alertas sobre nuevas violaciones.
 monitor-header-content-signed-in = { -monitor-brand-name } le advierte si su información apareció en una violación de datos conocida.
-monitor-sign-up = Regístrese para recibir alertas de violaciones
 monitor-sign-up-link = Regístrese para recibir alertas de violaciones
     .title = Regístrese  en { -monitor-brand-name } para recibir alertas de violaciones
 auto-scan = Escaneado automáticamente hoy
@@ -193,17 +155,6 @@ info-exposed-passwords-found =
        *[other] Contraseñas expuestas a través de todas las filtraciones
     }
 
-full-report-link = Ver informe completo sobre <a data-l10n-name="monitor-inline-link"> { -monitor-brand-name } </a>
-
-# This string is displayed after a large numeral that indicates the total number
-# of saved logins which may have been exposed. Don’t add $count to
-# your localization, because it would result in the number showing twice.
-password-warning =
-    { $count ->
-        [one] El inicio de sesión guardado puede haber estado expuesto en una violación de datos. Cambie esta contraseña para una mejor seguridad en línea. <a data-l10n-name="lockwise-link">Ver inicios de sesión guardados</a>
-       *[other] Los inicios de sesión guardados pueden haber estado expuestos en una violación de datos. Cambie estas contraseñas para una mejor seguridad en línea. <a data-l10n-name="lockwise-link">Ver inicios de sesión guardados</a>
-    }
-
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords that are marked as resolved by the user. Don’t add $count
 # to your localization, because it would result in the number showing twice.
@@ -217,7 +168,7 @@ monitor-no-breaches-title = ¡Buenas noticias!
 monitor-no-breaches-description = No tiene violaciones conocidas. Si eso cambia, se lo vamos a comunicar.
 monitor-view-report-link = Ver el informe
     .title = Resolver las violaciones en { -monitor-brand-short-name }
-monitor-breaches-unresolved-title = Resolver las violaciones
+monitor-breaches-unresolved-title = Resuelva las violaciones
 monitor-breaches-unresolved-description =
     Después de revisar los detalles de la violaciones y tomar medidas para proteger
     su información personal, puede marcarlas como resueltas.

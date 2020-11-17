@@ -17,3 +17,4 @@ identity-name = Tapatybė
 
 send-via-email = Siųsti el. laišką
 
+app-basics-telemetry = Telemetrijos duomenys

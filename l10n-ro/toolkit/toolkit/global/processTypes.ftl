@@ -4,10 +4,6 @@
 
 process-type-web = Conținut web
 
-# process used to run privileged pages,
-# such as about:home
-process-type-privileged = Conținut privilegiat
-
 # process used to run privileged about pages,
 # such as about:home
 process-type-privilegedabout = Pagina „about” privilegiată
@@ -36,3 +32,5 @@ process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Socket
 
+# process preallocated; may change to other types
+process-type-prealloc = Prealocat

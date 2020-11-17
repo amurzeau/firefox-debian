@@ -50,7 +50,7 @@ features-memory-desc = Encuentra fugas de memoria y haz que tu aplicación sea l
 # Variables:
 #   $errorDescription (String) - The error that occurred e.g. 404 - Not Found
 newsletter-error-common = Falló la solicitud de suscripción ({ $errorDescription }).
-newsletter-error-unknown = Un error inesperado ocurrió.
+newsletter-error-unknown = Ocurrió un error inesperado.
 newsletter-error-timeout = Tiempo agotado para la solicitud de suscripción.
 # Variables:
 #   $shortcut (String) - The keyboard shortcut used for the tool

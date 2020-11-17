@@ -525,17 +525,6 @@
 <!ENTITY errorConsoleCmd.label "Consolă de erori">
 <!ENTITY errorConsoleCmd.accesskey "e">
 <!ENTITY errorConsoleCmd.commandkey "j">
-<!ENTITY scratchpadCmd.label "Panou de probe JavaScript">
-<!ENTITY scratchpadCmd.accesskey "S">
-
-<!--LOCALIZATION NOTE (scratchpadCmd.keycode):
-    This should be a key code constant as per
-    https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode#Constants_for_keyCode_value
-    (but without the DOM_ prefix) -->
-<!ENTITY scratchpadCmd.keycode "VK_F4">
-<!--LOCALIZATION NOTE (scratchpadCmd.keytext):
-    This should be the text printed on the key defined in the previous string. -->
-<!ENTITY scratchpadCmd.keytext "F4">
 
 <!-- Mail Toolbar -->
 <!ENTITY getMsgButton1.label "Descarcă mesajele">
@@ -589,7 +578,6 @@
 <!ENTITY forwardAsAttachment.tooltip "Redirecționează mesajul selectat ca atașament">
 <!ENTITY fileButton.tooltip "Îndosariază mesajul selectat">
 <!ENTITY archiveButton.tooltip "Arhivează mesajele selectate">
-<!ENTITY openConversationButton.tooltip "Afișează conversația mesajului selectat">
 <!ENTITY openMsgConversationButton.tooltip "Afișează conversația mesajului selectat">
 <!ENTITY nextButton.tooltip "Trece la următorul mesaj necitit">
 <!ENTITY nextMsgButton.tooltip "Mergi la următorul mesaj">
@@ -732,6 +720,7 @@
 <!ENTITY idColumn.label "Ordinea primirii">
 <!ENTITY attachmentColumn.label "Atașamente">
 
+<!ENTITY deleteColumn.label "Șterge">
 
 <!-- Thread Pane Tooltips -->
 <!ENTITY columnChooser2.tooltip "Selectează coloanele de afișat">
@@ -757,6 +746,7 @@
 <!ENTITY idColumn2.tooltip "Sortează după data primirii">
 <!ENTITY attachmentColumn2.tooltip "Sortează după atașamente">
 
+<!ENTITY deleteColumn.tooltip "Șterge un mesaj">
 
 <!-- Thread Pane Context Menu -->
 <!ENTITY contextNewMsgFromTemplate.label "Mesaj nou bazat pe șablon">

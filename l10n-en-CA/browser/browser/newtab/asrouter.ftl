@@ -210,6 +210,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = See All
     .accesskey = S
+cfr-doorhanger-milestone-close-button = Close
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -243,3 +245,35 @@ cfr-whatsnew-protections-icon-alt = Shield icon
 
 cfr-whatsnew-better-pdf-header = Better PDF experience
 cfr-whatsnew-better-pdf-body = PDF documents now open directly in { -brand-short-name }, keeping your workflow within easy reach.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Your privacy matters. { -brand-short-name } now securely routes your DNS requests whenever possible to a partner service to protect you while you browse.
+cfr-doorhanger-doh-header = More secure, encrypted DNS lookups
+cfr-doorhanger-doh-primary-button = OK, Got it
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Disable
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Your privacy matters. { -brand-short-name } now isolates, or sandboxes, websites from each other, which makes it harder for hackers to steal passwords, credit card numbers, and other sensitive information.
+cfr-doorhanger-fission-header = Site Isolation
+cfr-doorhanger-fission-primary-button = OK, Got it
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Learn more
+    .accesskey = L
+# Deprecated
+cfr-doorhanger-fission-body = { -brand-short-name } has enabled an experimental feature Fission (site isolation) for you. By isolating each site into a separate process, Fission provides an additional layer of security for you and the websites you visit.
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Automatic protection from sneaky tracking tactics
+cfr-whatsnew-clear-cookies-body = Some trackers redirect you to other websites that secretly set cookies. { -brand-short-name } now automatically clears those cookies so you can’t be followed.
+cfr-whatsnew-clear-cookies-image-alt = Cookie blocked illustration
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = More media controls
+cfr-whatsnew-media-keys-body = Play and pause audio or video right from your keyboard or headset, making it easy to control media from another tab, program, or even when your computer is locked. You can also move between tracks using the forward and back keys.
+cfr-whatsnew-media-keys-button = Learn how

@@ -53,6 +53,9 @@ no-migration-sources = Der binne gjin programma’s fûn dy't blêdwizers, skied
 import-source-page-title = Ynstellingen en gegevens ymportearje út:
 import-items-page-title = Te ymportearjen ûnderdielen
 import-items-description = Selektearje de te ymportearjen ûnderdielen:
+import-permissions-page-title = Jou { -brand-short-name } tastimmingen
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = Yn macOS moatte jo { -brand-short-name } eksplisyt tagong jaan ta de blêdwizers fan Safari. Klik op ‘Trochgean’ en selektearje yn it toande paniel Bestand openen it bestân ‘Bookmarks.plist’.
 import-migrating-page-title = Ymportearje…
 import-migrating-description = De folgjende ûnderdielen wurde op dit stuit ymportearre…
 import-select-profile-page-title = Profyl selektearje
@@ -88,6 +91,7 @@ imported-edge-reading-list = Lêslist (út Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

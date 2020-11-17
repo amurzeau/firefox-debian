@@ -14,6 +14,12 @@ extensions-name = 이름
 extensions-enabled = 사용
 extensions-version = 버전
 extensions-id = ID
+support-addons-title = 부가 기능
+support-addons-name = 이름
+support-addons-type = 유형
+support-addons-enabled = 사용
+support-addons-version = 버전
+support-addons-id = ID
 security-software-title = 보안 소프트웨어
 security-software-type = 유형
 security-software-name = 이름
@@ -59,6 +65,7 @@ app-basics-service-workers = 등록된 Service Worker
 app-basics-profiles = 프로필
 app-basics-launcher-process-status = 런처 프로세스
 app-basics-multi-process-support = 다중 프로세스 창
+app-basics-fission-support = Fission 창
 app-basics-remote-processes-count = 원격 프로세스
 app-basics-enterprise-policies = 엔터프라이즈 정책
 app-basics-location-service-key-google = Google 위치 서비스 키
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] 폴더 열기
        *[other] 디렉터리 열기
     }
+environment-variables-title = 환경 변수
+environment-variables-name = Name
+environment-variables-value = 값
+experimental-features-title = 실험적인 기능
+experimental-features-name = 이름
+experimental-features-value = 값
 modified-key-prefs-title = 중요한 변경된 환경 설정
 modified-prefs-name = 이름
 modified-prefs-value = 값
@@ -95,8 +108,6 @@ graphics-desktop-environment = 데스크톱 환경
 place-database-title = 위치 데이터베이스
 place-database-integrity = 무결성
 place-database-verify-integrity = 무결성 확인
-js-title = JavaScript
-js-incremental-gc = 인크리멘탈 GC
 a11y-title = 접근성
 a11y-activated = 활성화
 a11y-force-disabled = 접근성 끄기
@@ -114,19 +125,18 @@ sandbox-sys-call-tid = TID
 sandbox-sys-call-proc-type = 프로세스 타입
 sandbox-sys-call-number = 시스템 콜
 sandbox-sys-call-args = 인자
-safe-mode-title = 안전 모드 시도
+safe-mode-title = 안전 모드 사용해 보기
 restart-in-safe-mode-label = 부가 기능을 끄고 다시 시작…
-clear-startup-cache-title = 시작 캐시 삭제 시도
-clear-startup-cache-label = 시작 캐시 삭제…
-startup-cache-dialog-title = 시작 캐시 삭제
-startup-cache-dialog-body = 시작 캐시를 삭제하려면 { -brand-short-name }를 다시 시작하세요. 설정이 변경되거나 { -brand-short-name }에 추가한 확장 기능이 제거되지는 않습니다.
+clear-startup-cache-title = 시작 캐시 지워 보기
+clear-startup-cache-label = 시작 캐시 지우기…
+startup-cache-dialog-title = 시작 캐시 지우기
+startup-cache-dialog-body = 시작 캐시를 지우려면 { -brand-short-name }를 다시 시작하세요. 설정이 변경되거나 { -brand-short-name }에 추가한 확장 기능이 제거되지는 않습니다.
 restart-button-label = 다시 시작
 
 ## Media titles
 
 audio-backend = 오디오 백엔드
 max-audio-channels = 최대 채널
-channel-layout = 기본 채널 레이아웃
 sample-rate = 기본 샘플 비율
 roundtrip-latency = 왕복 지연 시간 (표준 편차)
 media-title = 미디어
@@ -186,7 +196,7 @@ crashes-time-hours = { $hours }시간 전
 crashes-time-days = { $days }일 전
 # Variables
 # $reports (integer) - Number of pending reports
-pending-reports = 모든 충돌 보고서(기간안에 있는 { $reports }개의 보류된 충돌 보고서 포함)
+pending-reports = 모든 충돌 보고서 (주어진 시간 범위에 있는 { $reports }개의 보류중인 충돌 포함)
 raw-data-copied = 원시 데이터를 클립보드에 복사함
 text-copied = 문자열을 클립보드에 복사함
 
@@ -205,7 +215,7 @@ clear-type-parameters = ClearType 매개 변수
 compositing = 합성
 hardware-h264 = 하드웨어 H264 디코딩
 main-thread-no-omtc = 주 스레드, OMTC 아님
-yes = 네
+yes = 예
 no = 아니오
 unknown = 알 수 없음
 virtual-monitor-disp = 가상 모니터 디스플레이
@@ -238,16 +248,18 @@ webgl2-renderer = WebGL2 드라이버 랜더러
 webgl2-version = WebGL 2 드라이버 버전
 webgl2-driver-extensions = WebGL 2 드라이버 확장 기능
 webgl2-extensions = WebGL 2 확장 기능
-blocklisted-bug = 알려진 문제로 차단된 목록
+blocklisted-bug = 알려진 문제로 인해 차단됨
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
-bug-link = 버그 { $bugNumber }
+bug-link = bug { $bugNumber }
+# Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = 알려진 문제로 인해 차단됨: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = 차단됨; 실패 코드 { $failureCode }
 d3d11layers-crash-guard = D3D11 컴포지터
 d3d11video-crash-guard = D3D11 동영상 디코더
-d3d9video-crash-buard = D3D9 동영상 디코더
 d3d9video-crash-guard = D3D9 동영상 디코더
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX 비디오 디코더
@@ -291,10 +303,24 @@ multi-process-status-0 = 사용자에 의해 활성화됨
 multi-process-status-1 = 기본값에 의해 활성화됨
 multi-process-status-2 = 비활성화됨
 multi-process-status-4 = 접근성 도구에 의해 비활성화됨
-multi-process-status-6 = 지원되지 않는 텍스트 입력으로 인한 비활성화됨
-multi-process-status-7 = 부가 기능에 의해서 비활성화됨
+multi-process-status-6 = 지원되지 않는 텍스트 입력에 의해 비활성화됨
+multi-process-status-7 = 부가 기능에 의해 비활성화됨
 multi-process-status-8 = 강제로 비활성화됨
 multi-process-status-unknown = 알 수 없는 상태
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = 실험에 의해 비활성화됨
+fission-status-experiment-treatment = 실험에 의해 활성화됨
+fission-status-disabled-by-e10s-env = 환경에 의해 비활성화됨
+fission-status-enabled-by-env = 환경에 의해 활성화됨
+fission-status-disabled-by-safe-mode = 안전 모드에 의해 비활성화됨
+fission-status-enabled-by-default = 기본값에 의해 활성화됨
+fission-status-disabled-by-default = 기본값에 의해 비활성화됨
+fission-status-enabled-by-user-pref = 사용자에 의해 활성화됨
+fission-status-disabled-by-user-pref = 사용자에 의해 비활성화됨
+fission-status-disabled-by-e10s-other = E10s 비활성화됨
 async-pan-zoom = 비동기 팬 및 확대/축소
 apz-none = 없음
 wheel-enabled = 휠 입력 활성화됨
@@ -315,3 +341,12 @@ touch-warning = 다음의 지원되지 않는 설정때문에 비동기 터치 �
 policies-inactive = 비활성화
 policies-active = 활성화
 policies-error = 오류
+
+## Printing section
+
+support-printing-title = 인쇄
+support-printing-troubleshoot = 문제 해결
+support-printing-clear-settings-button = 저장된 인쇄 설정 지우기
+support-printing-modified-settings = 수정된 인쇄 설정
+support-printing-prefs-name = 이름
+support-printing-prefs-value = 값

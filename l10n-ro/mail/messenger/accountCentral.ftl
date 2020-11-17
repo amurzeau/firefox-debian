@@ -52,6 +52,8 @@ about-paragraph = Thunderbird este lider în rândul clienților cu sursă desch
 about-paragraph-2 = <b> Thunderbird este finanțat de utilizatori ca tine! Dacă îți place Thunderbird, te rugăm să iei în considerare să faci o donație. </b> Cel mai bun mod de a te asigura că Thunderbird rămâne disponibil este să
 about-donation = faci o donație
 
+about-paragraph-consider-donation = <b>Thunderbird este finanțat de utilizatori ca tine! Dacă îți place Thunderbird, poți face o donație.</b> Cea mai bună cale să te asiguri că Thunderbird va fi în continuare disponibil este să <a data-l10n-name="donation-link"> faci o donație</a>.
+
 explore-link = Explorează funcționalitățile
 support-link = Asistență
 involved-link = Implică-te

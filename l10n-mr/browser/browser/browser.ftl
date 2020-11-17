@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (खाजगी ब्राउझिंग)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (खाजगी ब्राउझिंग)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (खाजगी ब्राउझिंग)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (खाजगी ब्राउझिंग)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -101,6 +99,9 @@ urlbar-tip-help-icon =
 
 urlbar-search-tips-onboard = टाईप कमी करा आणि जास्त शोधा: थेट आपल्या पत्ता पट्टी वरून { $engineName } शोधा.
 
+## Local search mode indicator labels in the urlbar
+
+
 ##
 
 urlbar-geolocation-blocked =
@@ -121,12 +122,10 @@ urlbar-canvas-blocked =
     .tooltiptext = आपण ह्या वेबसाइटसाठी कॅनव्हास डेटा उतारा अवरोधित केला आहे.
 urlbar-midi-blocked =
     .tooltiptext = या संकेतस्थळासाठी MIDI वापर अवरोधित केला आहे.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = ही वाचनखूण ({ $shortcut }) संपादीत करा
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -140,6 +139,39 @@ page-action-manage-extension =
     .label = एक्सटेन्शन व्यवस्थापित करा…
 page-action-remove-from-urlbar =
     .label = पत्ता पट्टीमधून काढा
+
+## Page Action menu
+
+page-action-pocket-panel =
+    .label = पृष्ठ { -pocket-brand-name } मध्ये जतन करा
+page-action-copy-url-panel =
+    .label = दुव्याची प्रत बनवा
+page-action-copy-url-urlbar =
+    .tooltiptext = दुव्याची प्रत बनवा
+page-action-email-link-panel =
+    .label = दुवा ईमेल करा…
+page-action-email-link-urlbar =
+    .tooltiptext = दुवा ईमेल करा…
+page-action-share-url-panel =
+    .label = शेअर करा
+page-action-share-url-urlbar =
+    .tooltiptext = शेअर करा
+page-action-share-more-panel =
+    .label = अधिक…
+page-action-send-tab-not-ready =
+    .label = उपकरणे सिंक करत आहे…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = टॅबला पिन लावा
+page-action-pin-tab-urlbar =
+    .tooltiptext = टॅबला पिन लावा
+page-action-unpin-tab-panel =
+    .label = टॅबचे पिन अशक्य करा
+page-action-unpin-tab-urlbar =
+    .tooltiptext = टॅबचे पिन अशक्य करा
 
 ## Auto-hide Context Menu
 
@@ -155,14 +187,12 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = यावेळी, यासह शोधा:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = शोध सेटिंग बदला
 search-one-offs-change-settings-compact-button =
     .tooltiptext = शोध सेटिंगस बदला
-
 search-one-offs-context-open-new-tab =
     .label = नवीन टॅबमध्ये शोधा
     .accesskey = T
@@ -170,15 +200,21 @@ search-one-offs-context-set-as-default =
     .label = पूर्वनिर्धारित शोध इंजिन म्हणून ठरवा
     .accesskey = D
 
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = जतन करतांना संपादक दर्शवा
     .accesskey = S
-
 bookmark-panel-done-button =
     .label = झाले
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -259,18 +295,52 @@ urlbar-default-placeholder =
     .defaultPlaceholder = शोधा किंवा पत्ता द्या
 urlbar-placeholder =
     .placeholder = शोधा किंवा पत्ता द्या
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name } सोबत शोधा किंवा पत्ता प्रविष्ट करा
 urlbar-remote-control-notification-anchor =
     .tooltiptext = ब्राउझर दूरस्थ नियंत्रणामध्ये आहे
 urlbar-switch-to-tab =
     .value = टॅबचा वापर करा:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = एक्सटेंशन:
-
 urlbar-go-button =
     .tooltiptext = स्थान पट्टीतील पत्त्यावर जा
 urlbar-page-action-button =
     .tooltiptext = पृष्ठाच्या कृती
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name } मध्ये जतन करा
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } सह शोधा
+urlbar-result-action-switch-tab = टॅबवर जा
+urlbar-result-action-visit = भेट द्या
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> आता पूर्ण स्क्रीन आहे
+fullscreen-warning-no-domain = हे दस्तऐवज आता पूर्ण स्क्रीन झाले आहे
+fullscreen-exit-button = पूर्ण स्क्रीनमधून बाहेर पडा (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = पूर्ण स्क्रीनमधून बाहेर पडा (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> कडे आपल्या पॉईंटरचे नियंत्रण आहे. नियंत्रण परत घेण्यासाठी Esc दाबा.
+pointerlock-warning-no-domain = ह्या दस्तऐवजाकडे आपल्या पॉईंटरचे नियंत्रण आहे. नियंत्रण परत घेण्यासाठी Esc दाबा.

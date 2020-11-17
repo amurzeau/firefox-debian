@@ -4,10 +4,6 @@
 
 process-type-web = Lëndë Web
 
-# process used to run privileged pages,
-# such as about:home
-process-type-privileged = Lëndë e Privilegjuar
-
 # process used to run privileged about pages,
 # such as about:home
 process-type-privilegedabout = Rreth e Privilegjuar
@@ -33,3 +29,8 @@ process-type-webisolated = Lëndë Web Që Është Izoluar
 # graphics acceleration
 process-type-gpu = GPU
 
+# process used to perform network operations
+process-type-socket = Socket
+
+# process preallocated; may change to other types
+process-type-prealloc = I paradhënë

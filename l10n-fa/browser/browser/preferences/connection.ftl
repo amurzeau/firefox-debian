@@ -35,13 +35,12 @@ connection-proxy-http = پروکسی HTTP
     .accesskey = x
 connection-proxy-http-port = درگاه
     .accesskey = P
-connection-proxy-http-share =
-    .label = استفاده از این پیشکار برای همهٔ قراردادها
-    .accesskey = ه
+connection-proxy-http-sharing =
+    .label = از این پروکسی برای FTP و HTTPS نیز استفاده شود
+    .accesskey = s
 
-connection-proxy-ssl = پروکسی SSL
-    .accesskey = L
-
+connection-proxy-https = پروکسی HTTPS
+    .accesskey = H
 connection-proxy-ssl-port = درگاه
     .accesskey = o
 

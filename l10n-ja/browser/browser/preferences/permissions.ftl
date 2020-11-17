@@ -5,66 +5,53 @@
 permissions-window =
     .title = 例外サイト
     .style = width: 40em
-
 permissions-close-key =
     .key = w
-
 permissions-address = ウェブサイトのアドレス
     .accesskey = d
-
 permissions-block =
     .label = 不許可
     .accesskey = B
-
 permissions-session =
     .label = 現在のセッションのみ
     .accesskey = S
-
 permissions-allow =
     .label = 許可
     .accesskey = A
-
 permissions-site-name =
     .label = ウェブサイト
-
 permissions-status =
     .label = 現在の設定
-
 permissions-remove =
     .label = ウェブサイトを削除
     .accesskey = R
-
 permissions-remove-all =
     .label = すべてのウェブサイトを削除
     .accesskey = e
-
 permissions-button-cancel =
     .label = キャンセル
     .accesskey = C
-
 permissions-button-ok =
     .label = 変更を保存
     .accesskey = S
-
+permission-dialog =
+    .buttonlabelaccept = 変更を保存
+    .buttonaccesskeyaccept = S
 permissions-autoplay-menu = すべてのウェブサイトの既定値:
-
 permissions-searchbox =
     .placeholder = ウェブサイトを検索
-
 permissions-capabilities-autoplay-allow =
     .label = 音声と動画の再生を許可
 permissions-capabilities-autoplay-block =
     .label = 音声の再生をブロック
 permissions-capabilities-autoplay-blockall =
     .label = 音声と動画の再生をブロック
-
 permissions-capabilities-allow =
     .label = 許可
 permissions-capabilities-block =
     .label = 不許可
 permissions-capabilities-prompt =
     .label = 常に確認
-
 permissions-capabilities-listitem-allow =
     .value = 許可
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = 無効なホスト名が入力されました
 permissions-invalid-uri-label = 有効なホスト名を入力してください
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = 例外 - コンテンツブロッキング
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = これらのウェブサイトでは、コンテンツブロッキングを無効に設定しています。
 
 permissions-exceptions-etp-window =
     .title = 強化型トラッキング防止機能の例外
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = 許可サイト - アドオンのインストール
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = アドオンのインストールを許可するウェブサイトを指定できます。許可するサイトの正確なアドレスを入力して [許可] をクリックしてください。
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = 例外 - 自動再生
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = 音声付きメディアの自動再生を許可または拒否するウェブサイトを指定できます。設定するサイトのアドレスを入力して [ブロック] または [許可] をクリックしてください。
 
 ## Site Permissions - Autoplay
 

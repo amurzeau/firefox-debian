@@ -51,6 +51,10 @@ newtab-confirm-delete-history-p1 = Añetehápepa renohẽse oimeraẽva mba’e 
 # "This action" refers to deleting a page from history.
 newtab-confirm-delete-history-p2 = Ko ojejapóva ndaikatuvéima oñemboguevi.
 
+## Top Sites - Sponsored label
+
+newtab-topsite-sponsored = Pytyvõpyréva
+
 ## Context Menu - Action Tooltips.
 
 # General tooltip for context menus.
@@ -147,7 +151,7 @@ newtab-label-sponsored-by = Ohepyme’ẽva { $sponsor }
 newtab-section-menu-remove-section = Emboguete vore
 newtab-section-menu-collapse-section = Embopytupa vore
 newtab-section-menu-expand-section = Emyasãi vore
-newtab-section-menu-manage-section = Eñagareko vorére
+newtab-section-menu-manage-section = Eñangareko vorére
 newtab-section-menu-manage-webext = Emongu’e jepysokue
 newtab-section-menu-add-topsite = Embojuaju Tenda ojeikeveha
 newtab-section-menu-add-search-engine = Embojuaju hekaha
@@ -185,7 +189,7 @@ newtab-discovery-empty-section-topstories-content = Ejujey ag̃ave tembiasaverã
 newtab-discovery-empty-section-topstories-try-again-button = Eha’ãjey
 newtab-discovery-empty-section-topstories-loading = Henyhẽhína…
 # Displays when a layout in a section took too long to fetch articles.
-newtab-discovery-empty-section-topstories-timed-out = ¡Háke! Haimete ñamyanyhẽ ko pehẽ'i, hákatu nahenyhẽmbamo’ãi.
+newtab-discovery-empty-section-topstories-timed-out = ¡Háke! Haimete ñamyanyhẽ ko pehẽ’i, hákatu nahenyhẽmbamo’ãi.
 
 ## Pocket Content Section.
 
@@ -199,5 +203,5 @@ newtab-pocket-cta-text = Eñongatu umi eipotáva tembiasakue { -pocket-brand-nam
 ## Error Fallback Content.
 ## This message and suggested action link are shown in each section of UI that fails to render.
 
-newtab-error-fallback-info = Ema'ẽ, mba’épa osẽvai henyhẽnguévo ko tetepy.
+newtab-error-fallback-info = Ema’ẽ, mba’épa osẽvai henyhẽnguévo ko tetepy.
 newtab-error-fallback-refresh-link = Kuatiarogue mbopiro’y eñepyrũjey hag̃ua

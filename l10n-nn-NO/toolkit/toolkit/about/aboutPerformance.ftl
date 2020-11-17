@@ -23,7 +23,7 @@ preloaded-tab = Førehandslasta: { $title }
 
 type-tab = Fane
 type-subframe = Underfane
-type-tracker = Sporfølgjar
+type-tracker = Sporar
 type-addon = Tillegg
 type-browser = Nettlesar
 type-worker = Worker

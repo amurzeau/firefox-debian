@@ -17,16 +17,23 @@
 <!ENTITY highestPriorityCmd.label "Tertinggi">
 
 <!ENTITY contextDesc.label "Terapkan filter ketika:">
+<!ENTITY contextIncomingMail.label "Mendapatkan Surel Baru:">
 <!ENTITY contextIncomingMail.accesskey "G">
+<!ENTITY contextManual.label "Jalankan Secara Manual">
 <!ENTITY contextManual.accesskey "R">
+<!ENTITY contextBeforeCls.label "Saring sebelum Pengklasifikasian Sampah">
+<!ENTITY contextAfterCls.label "Saring setelah Pengklasifikasian Sampah">
 <!ENTITY contextOutgoing.label "Setelah Mengirim">
 <!ENTITY contextOutgoing.accesskey "S">
 <!ENTITY contextArchive.label "Mengarsipkan">
 <!ENTITY contextArchive.accesskey "A">
+<!ENTITY contextPeriodic.accesskey "e">
 
 <!ENTITY filterActionDesc.label "Lakukan aksi berikut:">
 <!ENTITY filterActionDesc.accesskey "L">
 
+<!ENTITY filterActionOrderWarning.label "Catatan: Tindakan penyaringan akan dijalankan dalam urutan yang berbeda.">
+<!ENTITY filterActionOrder.label "Lihat pesanan eksekusi">
 
 <!-- New Style Filter Rule Actions -->
 <!ENTITY moveMessage.label "Pindahkan Pesan ke">
@@ -47,6 +54,8 @@
 <!ENTITY watchThread.label "Monitor Utas">
 <!ENTITY stopExecution.label "Hentikan Proses Pemfilteran">
 
+<!ENTITY addAction.tooltip "Tambahkan tindakan baru">
+<!ENTITY removeAction.tooltip "Hapus tindakan ini">
 
 <!-- LOCALIZATION NOTE
      The values below are used to control the widths of the filter action widgets.
@@ -54,3 +63,5 @@
      are truncated in the widgets.
   -->
 <!-- Flex Attribute: https://developer.mozilla.org/docs/XUL/Attribute/flex -->
+<!ENTITY filterActionTypeFlexValue "1">
+<!ENTITY filterActionTargetFlexValue "4">

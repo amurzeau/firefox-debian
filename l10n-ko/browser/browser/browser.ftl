@@ -19,12 +19,11 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (사생활 보호 모드)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (사생활 보호 모드)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (사생활 보호 모드)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (사생활 보호 모드)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -111,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = 적게 입력, 많이 찾기: 주소 표시줄에서 바로 { $engineName } 검색어로 검색해 보세요.
 urlbar-search-tips-redirect-2 = 주소 표시줄에서 검색을 시작하여 { $engineName }의 제안 및 방문 기록을 확인하세요.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = 더 빨리 찾으려면 여기에서 하세요.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = 북마크
+urlbar-search-mode-tabs = 탭
+urlbar-search-mode-history = 기록
 
 ##
 
@@ -138,12 +145,10 @@ urlbar-midi-blocked =
     .tooltiptext = 이 사이트의 MIDI 접근을 차단하였습니다.
 urlbar-install-blocked =
     .tooltiptext = 이 사이트의 부가 기능 설치를 차단했습니다.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = 북마크 편집 ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -160,6 +165,45 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = 확장 기능 제거
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label = 탭 { $tabCount }개를 기기로 보내기
+page-action-send-tabs-urlbar =
+    .tooltiptext = 탭 { $tabCount }개를 기기로 보내기
+page-action-pocket-panel =
+    .label = 페이지를 { -pocket-brand-name }에 저장
+page-action-copy-url-panel =
+    .label = 링크 복사
+page-action-copy-url-urlbar =
+    .tooltiptext = 링크 복사
+page-action-email-link-panel =
+    .label = 메일로 링크 보내기…
+page-action-email-link-urlbar =
+    .tooltiptext = 메일로 링크 보내기…
+page-action-share-url-panel =
+    .label = 공유
+page-action-share-url-urlbar =
+    .tooltiptext = 공유
+page-action-share-more-panel =
+    .label = 더보기…
+page-action-send-tab-not-ready =
+    .label = 기기를 동기화하고 있습니다…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = 탭 고정
+page-action-pin-tab-urlbar =
+    .tooltiptext = 탭 고정
+page-action-unpin-tab-panel =
+    .label = 탭 고정 해제
+page-action-unpin-tab-urlbar =
+    .tooltiptext = 탭 고정 해제
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -171,17 +215,15 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
-search-one-offs-with-title = 이번에 사용할 검색 엔진:
-
+search-one-offs-with-title = 이번만 검색:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = 검색 설정 변경
 search-one-offs-change-settings-compact-button =
     .tooltiptext = 검색 설정 변경
-
 search-one-offs-context-open-new-tab =
     .label = 새 탭에 검색
     .accesskey = T
@@ -191,16 +233,34 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = 사생활 보호 창의 기본 검색 엔진으로 설정
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = 북마크 ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = 탭 ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = 기록 ({ $restrict })
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = 저장할 때 편집기 표시
     .accesskey = S
-
 bookmark-panel-done-button =
     .label = 완료
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -217,15 +277,26 @@ identity-extension-page = 이 페이지는 확장 기능으로부터 로드되�
 identity-active-blocked = { -brand-short-name }가 안전하지 않은 페이지의 일부를 차단했습니다.
 identity-custom-root = Mozilla에서 인식하지 못하는 인증서 발급자가 연결을 확인했습니다.
 identity-passive-loaded = 페이지의 일부(이미지 등)가 안전하지 않습니다.
-identity-active-loaded = 이 페이지에서 보호를 비활성화 하셨습니다.
+identity-active-loaded = 이 페이지에서 보호를 비활성화하셨습니다.
 identity-weak-encryption = 이 페이지는 약한 암호화를 사용합니다.
 identity-insecure-login-forms = 이 페이지에 입력된 로그인 정보는 노출될 수 있습니다.
+identity-https-only-connection-upgraded = (HTTPS로 업그레이드됨)
+identity-https-only-label = HTTPS 전용 모드
+identity-https-only-dropdown-on =
+    .label = 켜기
+identity-https-only-dropdown-off =
+    .label = 끄기
+identity-https-only-dropdown-off-temporarily =
+    .label = 일시적으로 끄기
+identity-https-only-info-turn-on2 = { -brand-short-name }가 가능한 경우 연결을 업그레이드하도록 하려면 이 사이트에 대해 HTTPS 전용 모드를 켜세요.
+identity-https-only-info-turn-off2 = 페이지가 손상된 것 같으면 이 사이트가 안전하지 않은 HTTP를 사용하여 다시 로드되도록 HTTPS 전용 모드를 끌 수 있습니다.
+identity-https-only-info-no-upgrade = HTTP에서 연결을 업그레이드할 수 없습니다.
 identity-permissions =
     .value = 권한
 identity-permissions-reload-hint = 변경 사항을 적용하려면 페이지를 다시 로드해야할 수도 있습니다.
 identity-permissions-empty = 이 사이트를 특별한 권한으로 승인하지 않았습니다.
 identity-clear-site-data =
-    .label = 쿠키 및 사이트 데이터 삭제…
+    .label = 쿠키 및 사이트 데이터 지우기…
 identity-connection-not-secure-security-view = 이 사이트에 안전하게 연결되어 있지 않습니다.
 identity-connection-verified = 이 사이트에 안전하게 연결되어 있습니다.
 identity-ev-owner-label = 인증서 발급 대상:
@@ -265,6 +336,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = 닫기
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = 북마크 가져오기…
+    .tooltiptext = 다른 브라우저에서 { -brand-short-name }로 북마크를 복사합니다.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -274,15 +351,12 @@ popup-select-microphone =
     .value = 공유할 마이크:
     .accesskey = M
 popup-all-windows-shared = 화면에 표시되어 있는 모든 창을 공유합니다.
-
 popup-screen-sharing-not-now =
     .label = 나중에
     .accesskey = w
-
 popup-screen-sharing-never =
     .label = 허용 안 함
     .accesskey = N
-
 popup-silence-notifications-checkbox = 공유하는 동안 { -brand-short-name }에서 알림을 사용 안 함
 popup-silence-notifications-checkbox-warning = { -brand-short-name }는 공유하는 동안 알림을 표시하지 않습니다.
 
@@ -299,27 +373,122 @@ sharing-warning-disable-for-session =
 
 enable-devtools-popup-description = F12 단축키를 사용하려면, 먼저 웹 개발자 메뉴를 통해 DevTools를 여세요.
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = 검색어 또는 주소 입력
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = 검색어 또는 주소 입력
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = 웹 검색
+    .aria-label = { $name } 검색
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = 검색어 입력
+    .aria-label = { $name } 검색
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = 검색어 입력
+    .aria-label = 북마크 검색
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = 검색어 입력
+    .aria-label = 방문 기록 검색
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = 검색어 입력
+    .aria-label = 탭 검색
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name } 검색 또는 주소 입력
 urlbar-remote-control-notification-anchor =
     .tooltiptext = 브라우저가 원격 제어중
 urlbar-permissions-granted =
     .tooltiptext = 이 웹 사이트에 추가 권한을 부여했습니다.
 urlbar-switch-to-tab =
     .value = 탭 전환:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = 확장 기능:
-
 urlbar-go-button =
     .tooltiptext = 주소 표시줄의 주소로 이동
 urlbar-page-action-button =
     .tooltiptext = 페이지 작업
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name }에 저장
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = 사생활 보호 창에서 { $engine } 검색
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = 사생활 보호 창에서 검색
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } 검색
+urlbar-result-action-sponsored = 스폰서
+urlbar-result-action-switch-tab = 탭 전환
+urlbar-result-action-visit = 방문
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = { $engine } 검색하려면 Tab 키를 누르세요
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = { $engine } 검색하려면 Tab 키를 누르세요
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = 주소 표시줄에서 직접 { $engine } 검색
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = 주소 표시줄에서 직접 { $engine } 검색
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = 북마크 검색
+urlbar-result-action-search-history = 기록 검색
+urlbar-result-action-search-tabs = 탭 검색
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 이 전체 화면 모드입니다
+fullscreen-warning-no-domain = 이 문서는 전체 화면 모드입니다
+fullscreen-exit-button = 전체 화면 종료 (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = 전체 화면 종료 (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 사이트가 포인터를 제어하려 합니다. 다시 제어하려면 ESC 키를 누르세요.
+pointerlock-warning-no-domain = 이 문서가 포인터를 제어하려 합니다. 다시 제어하려면 ESC 키를 누르세요.

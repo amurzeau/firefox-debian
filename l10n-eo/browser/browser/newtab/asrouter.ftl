@@ -210,6 +210,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Vidi ĉiujn
     .accesskey = V
+cfr-doorhanger-milestone-close-button = Fermi
+    .accesskey = F
 
 ## What’s New Panel Content for Firefox 76
 
@@ -243,3 +245,33 @@ cfr-whatsnew-protections-icon-alt = Emblemo de ŝildo
 
 cfr-whatsnew-better-pdf-header = Pli bona sperto kun PDF
 cfr-whatsnew-better-pdf-body = Dokumentoj PDF malfermiĝas nun rekte en { -brand-short-name }, kio helpas teni viajn aferojn ĉemane.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Via privateco gravas. Ekde nun, se tio eblas, { -brand-short-name } sendos viajn petojn DNS al servo provizata de asociito por protekti vin dum vi retumas.
+cfr-doorhanger-doh-header = Petoj DNS pli sekuraj kaj ĉifritaj
+cfr-doorhanger-doh-primary-button = En ordo, mi komprenis
+    .accesskey = E
+cfr-doorhanger-doh-secondary-button = Malaktivigi
+    .accesskey = M
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Via privateco gravas. { -brand-short-name } nun izolas retejejojn tiel ke ili ne povas komuniki inter si. Tio igas pli malfacila la taskon ŝteli pasvortojn, kreditkartajn numerojn, kaj aliajn informojn.
+cfr-doorhanger-fission-header = Izolado de retejoj
+cfr-doorhanger-fission-primary-button = En ordo, mi komprenis
+    .accesskey = E
+cfr-doorhanger-fission-secondary-button = Pli da informo
+    .accesskey = P
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Aŭtomata proteko kontraŭ kaŝitaj spurilaj taktikoj
+cfr-whatsnew-clear-cookies-body = Kelkaj retejoj redirektas vin al aliaj retejoj, kiuj sekrete konservas kuketojn. { -brand-short-name } nun aŭtomate viŝas tiujn kuketojn, tiel ke ili ne povos sekvi vin.
+cfr-whatsnew-clear-cookies-image-alt = Ilustraĵo de blokita kuketo
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Pli da regiloj aŭdvidaj
+cfr-whatsnew-media-keys-body = Ludi kaj paŭzigi sonon aŭ videon senpere el via klavaro aŭ kapaŭskultiloj. Tio simpligas la taskon regi aŭdvidaĵojn el alia langeto, programo aŭ eĉ dum via komputilo estas blokita. Vi ankaŭ povas moviĝi inter kantoj aŭ filmetoj per la sagoklavoj, antaŭen kaj malantaŭen.
+cfr-whatsnew-media-keys-button = Lernu kiel fari

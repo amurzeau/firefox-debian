@@ -84,7 +84,7 @@ open-in-new-window-for-csp-or-xfo-error = Abrir site em nova janela
 
 # Variables:
 # $hostname (String) - Hostname of the website blocked by csp or xfo error.
-csp-xfo-blocked-long-desc = Para proteger sua segurança, { $hostname } não permitirá que o { -brand-short-name } exiba a página se outro site a tiver incorporada. Para ver esta página, você precisa abrir em uma nova janela.
+csp-xfo-blocked-long-desc = Para proteger sua segurança, { $hostname } não permite que o { -brand-short-name } exiba a página se outro site o tiver incorporado. Para ver esta página, você precisa abrir em uma nova janela.
 
 ## Messages used for certificate error titles
 
@@ -113,8 +113,6 @@ proxyResolveFailure-title = Não foi possível encontrar o servidor proxy
 redirectLoop-title = A página não está sendo redirecionada corretamente
 unknownSocketType-title = Resposta não esperada do servidor
 nssFailure2-title = Falha na conexão segura
-cspBlocked-title = Bloqueado pela diretiva de segurança de conteúdo
-xfoBlocked-title = Bloqueado pela diretiva X-Frame-Options
 csp-xfo-error-title = O { -brand-short-name } não pode abrir esta página
 corruptedContentError-title = Erro de conteúdo corrompido
 remoteXUL-title = XUL remoto

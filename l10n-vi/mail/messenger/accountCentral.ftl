@@ -3,7 +3,9 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 account-central-title = Chào mừng đến với { -brand-full-name }
+account-settings = Cài đặt tài khoản
 
+#   $accounts (Number) - the number of configured accounts
 setup-title = Chọn những gì để thiết lập
 about-title = Về { -brand-full-name }
 resources-title = Tài nguyên
@@ -50,8 +52,17 @@ about-paragraph = Thunderbird là ứng dụng email và lịch trình đa nền
 about-paragraph-2 = <b>Thunderbird được tài trợ bởi những người dùng như bạn! Nếu bạn thích Thunderbird, bạn có thể cân nhắc việc quyên góp.</b> Cách tốt nhất để bạn đảm bảo Thunderbird vẫn có sẵn là
 about-donation = quyên góp
 
+about-paragraph-consider-donation = <b>Thunderbird được tài trợ bởi những người dùng như bạn! Nếu bạn thích Thunderbird, vui lòng xem xét việc quyên góp.</b> Cách tốt nhất để bạn đảm bảo Thunderbird vẫn khả dụng là <a data-l10n-name="donation-link">thực hiện quyên góp</a>.
+
 explore-link = Khám phá các tính năng
 support-link = Hỗ trợ
 involved-link = Tham gia
 developer-link = Tài liệu dành cho nhà phát triển
 
+read = Đọc thư
+compose = Viết thư mới
+search = Tìm kiếm thư
+filter = Quản lí bộ lọc thư
+nntp-subscription = Quản lí đăng kí nhóm tin
+rss-subscription = Quản lý đăng ký theo dõi
+e2e = Mã hóa đầu cuối

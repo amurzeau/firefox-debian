@@ -16,6 +16,9 @@ import-from-ie =
 import-from-edge =
     .label = Microsoft Edge
     .accesskey = E
+import-from-edge-legacy =
+    .label = Microsoft Edge Legacy
+    .accesskey = L
 import-from-edge-beta =
     .label = Microsoft Edge Beta
     .accesskey = d
@@ -50,6 +53,9 @@ no-migration-sources = לא נמצאו תוכנות שמכילות סימניו�
 import-source-page-title = ייבוא הגדרות ונתונים
 import-items-page-title = פריטים לייבוא
 import-items-description = נא לבחור אילו פריטים לייבא:
+import-permissions-page-title = נא להעניק הרשאות ל־{ -brand-short-name }
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = ‏macOS מחייב אותך לאפשר במפורש ל־{ -brand-short-name } גישה לסימניות של Safari. יש ללחוץ ״המשך״ ולבחור בקובץ ״Bookmarks.plist” שבחלונית שתופיע.
 import-migrating-page-title = מתבצע ייבוא…
 import-migrating-description = הפריטים הבאים מיובאים כעת...
 import-select-profile-page-title = בחירת פרופיל
@@ -85,6 +91,7 @@ imported-edge-reading-list = רשימת קריאה (מ־Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

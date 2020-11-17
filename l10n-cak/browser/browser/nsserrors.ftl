@@ -2,6 +2,11 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+# DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
+# This file gets parsed into a JS dictionary of all known error message ids in
+# gen_aboutneterror_codes.py . If we end up needing fluent attributes or
+# refactoring them in some way, the script will need updating.
+
 # Variables:
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
@@ -245,7 +250,7 @@ sec-error-pkcs12-privacy-password-incorrect = Man tikirel ta nijik' pe. Itzel ri
 sec-error-pkcs12-cert-collision = Man tikirel ta nijik' pe. K'o chik ri tz'ukun b'i'aj pa kicholxe'el taq tzij.
 sec-error-user-cancelled = Ri winäq xupïtz' tiq'at.
 sec-error-pkcs12-duplicate-data = Man jik'on ta pe, k'o chik pa ri kicholxe'el taq tzij.
-sec-error-message-send-aborted = Man taqon ta ri rutzijol.
+sec-error-message-send-aborted = Man xtaq ta ri rutzijol.
 sec-error-inadequate-key-usage = Ri rokisaxik ewan rutzij ruwujil b'i'aj, man ruk'amon ta chi re ri samaj najowäx nib'an.
 sec-error-inadequate-cert-type = Ruwäch chi ruwujil b'i'aj man ütz ta nitz'et richin ri chokoy.
 sec-error-cert-addr-mismatch = Ri ochochib'äl pa ri ruwujil rub'i' juch'b'i'aj, man nuxïm ta ri' rik'in ri ochochib'äl k'o pa ri taq ruch'utukwi' rutzijol taqoj.

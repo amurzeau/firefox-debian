@@ -15,6 +15,9 @@ extensions-name = Наименование
 extensions-enabled = Включено
 extensions-version = Версия
 extensions-id = ID
+support-addons-name = Наименование
+support-addons-version = Версия
+support-addons-id = ID
 security-software-title = Приложение по сигурността
 security-software-type = Вид
 security-software-name = Име
@@ -88,8 +91,6 @@ graphics-workarounds-title = Заобикаляния
 place-database-title = База от данни на Places
 place-database-integrity = Цялост
 place-database-verify-integrity = Проверка на целостта
-js-title = JavaScript
-js-incremental-gc = Постепенен GC
 a11y-title = Достъпност
 a11y-activated = Включено
 a11y-force-disabled = Предотвратяване на достъпност
@@ -114,7 +115,6 @@ restart-in-safe-mode-label = Рестартиране с изключени до
 
 audio-backend = Аудио хардуер
 max-audio-channels = Максимален брой канали
-channel-layout = Предпочитано разположение на каналите
 sample-rate = Предпочитана честота на дискретизацията
 
 media-title = Медия
@@ -262,7 +262,6 @@ unknown-failure = В списъка на блокираните: код на г�
 
 d3d11layers-crash-guard = Сглобяване с D3D11
 d3d11video-crash-guard = Видео декодер на D3D11
-d3d9video-crash-buard = Видео декодер на D3D9
 d3d9video-crash-guard = Видео декодер на D3D9
 glcontext-crash-guard = OpenGL
 

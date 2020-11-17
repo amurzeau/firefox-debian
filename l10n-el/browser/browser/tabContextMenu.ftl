@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Μετακίνηση σε νέο παράθυρο
     .accesskey = π
-undo-close-tab =
-    .label = Αναίρεση κλεισίματος καρτέλας
-    .accesskey = ν
 tab-context-close-multiple-tabs =
     .label = Κλείσιμο πολλαπλών καρτελών
     .accesskey = π
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -79,3 +80,17 @@ move-tabs =
 move-tab =
     .label = Μετακίνηση καρτέλας
     .accesskey = ν
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Κλείσιμο καρτέλας
+           *[other] Κλείσιμο καρτελών
+        }
+    .accesskey = Κ
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Μετακίνηση καρτέλας
+           *[other] Μετακίνηση καρτελών
+        }
+    .accesskey = τ

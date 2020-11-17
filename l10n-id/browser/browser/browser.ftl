@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Ketik lebih sedikit, temukan lebih banyak: Pencarian { $engineName } langsung dari bilah alamat Anda.
 urlbar-search-tips-redirect-2 = Mulai pencarian Anda di bilah alat untuk melihat saran dari { $engineName } dan riwayat penjelajahan Anda.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Markah
+urlbar-search-mode-tabs = Tab
+urlbar-search-mode-history = Riwayat
+
 ##
 
 urlbar-geolocation-blocked =
@@ -156,6 +162,45 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Hapus Ekstensi
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label = Kirim Tab ke { $tabCount } Peranti
+page-action-send-tabs-urlbar =
+    .tooltiptext = Kirim Tab ke { $tabCount } Peranti
+page-action-pocket-panel =
+    .label = Simpan Laman ke { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Salin Tautan
+page-action-copy-url-urlbar =
+    .tooltiptext = Salin Tautan
+page-action-email-link-panel =
+    .label = Surelkan Tautan…
+page-action-email-link-urlbar =
+    .tooltiptext = Surelkan Tautan…
+page-action-share-url-panel =
+    .label = Bagikan
+page-action-share-url-urlbar =
+    .tooltiptext = Bagikan
+page-action-share-more-panel =
+    .label = Lainnya…
+page-action-send-tab-not-ready =
+    .label = Menyinkronkan Peranti…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Sematkan Tab
+page-action-pin-tab-urlbar =
+    .tooltiptext = Sematkan Tab
+page-action-unpin-tab-panel =
+    .label = Copot dari Tab Permanen
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Copot dari Tab Permanen
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +212,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Kali ini, cari dengan:
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +230,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Jadikan sebagai Mesin Pencari Baku untuk Jendela Pribadi
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Markah ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Tab ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Riwayat ({ $restrict })
 
 ## Bookmark Panel
 
@@ -212,6 +277,17 @@ identity-passive-loaded = Bagian dari laman ini tidak aman (misalnya, gambar).
 identity-active-loaded = Anda telah menonaktifkan perlindungan di laman ini.
 identity-weak-encryption = Laman ini menggunakan enkripsi lemah.
 identity-insecure-login-forms = Info masuk yang dimasukkan di laman ini bisa diketahui orang lain.
+identity-https-only-connection-upgraded = (ditingkatkan ke HTTPS)
+identity-https-only-label = Mode Hanya HTTPS
+identity-https-only-dropdown-on =
+    .label = Aktif
+identity-https-only-dropdown-off =
+    .label = Nonaktif
+identity-https-only-dropdown-off-temporarily =
+    .label = Nonaktif sementara
+identity-https-only-info-turn-on = Aktifkan jika Anda ingin { -brand-short-name } untuk meningkatkan ke koneksi aman jika memungkinkan.
+identity-https-only-info-turn-off = Jika situs terlihat bermasalah, Anda mungkin ingin menonaktifkan Mode Hanya HTTPS lalu memuat ulang dengan HTTP yang tidak aman.
+identity-https-only-info-no-upgrade = Tidak dapat meningkatkan koneksi dari HTTP.
 identity-permissions =
     .value = Izin
 identity-permissions-reload-hint = Anda mungkin perlu memuat ulang laman untuk menerapkan perubahan.
@@ -292,8 +368,42 @@ enable-devtools-popup-description = Untuk menggunakan pintasan F12, pertama buka
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Cari atau masukkan alamat
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Cari atau masukkan alamat
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Cari di Web
+    .aria-label = Cari lewat { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Masukkan istilah pencarian
+    .aria-label = Cari di { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Masukan istilah pencarian
+    .aria-label = Cari markah
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Masukan istilah pencarian
+    .aria-label = Cari riwayat
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Masukkan istilah pencarian
+    .aria-label = Cari tab
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Cari lewat { $name } atau masukkan alamat
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Peramban dalam kendali jarak jauh
 urlbar-permissions-granted =
@@ -309,3 +419,54 @@ urlbar-page-action-button =
     .tooltiptext = Tindakan laman
 urlbar-pocket-button =
     .tooltiptext = Simpan ke { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Cari lewat { $engine } di Jendela Pribadi
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Cari di Jendela Pribadi
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Cari lewat { $engine }
+urlbar-result-action-switch-tab = Pindah ke Tab
+urlbar-result-action-visit = Kunjungi
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Cari Markah
+urlbar-result-action-search-history = Cari di Riwayat
+urlbar-result-action-search-tabs = Cari Tab
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Cari dengan { $engine } langsung dari bilah alamat
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Cari dengan { $engine } langsung dari bilah alamat
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> sekarang dalam layar penuh
+fullscreen-warning-no-domain = Sekarang dokumen ini dalam layar penuh
+fullscreen-exit-button = Keluar dari Layar Penuh (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Keluar dari Layar Penuh (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> memiliki kendali atas penunjuk Anda. Tekan Esc untuk mengembalikan kendali.
+pointerlock-warning-no-domain = Dokumen ini memiliki kendali atas pointer Anda. Tekan Esc untuk mengambil kembali kendali.

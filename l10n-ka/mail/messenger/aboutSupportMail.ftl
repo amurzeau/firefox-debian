@@ -17,3 +17,4 @@ identity-name = მოწმობა
 
 send-via-email = ელფოსტით გაგზავნა
 
+app-basics-telemetry = გაზომვების მონაცემები

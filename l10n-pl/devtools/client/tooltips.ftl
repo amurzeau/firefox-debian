@@ -53,10 +53,6 @@ inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> nie ma 
 
 inactive-css-not-grid-or-flex-container-fix = Spróbuj dodać <strong>display:grid</strong> lub <strong>display:flex</strong>. { learn-more }
 
-inactive-css-not-grid-or-flex-item-fix = Spróbuj dodać <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong> lub <strong>display:inline-flex</strong>. { learn-more }
-
-inactive-css-not-grid-item-fix = Spróbuj dodać <strong>display:grid</strong> lub <strong>display:inline-grid</strong> do elementu nadrzędnego. { learn-more }
-
 inactive-css-not-grid-or-flex-container-or-multicol-container-fix = Spróbuj dodać <strong>display:grid</strong>, <strong>display:flex</strong> lub <strong>columns:2</strong>. { learn-more }
 
 inactive-css-not-grid-or-flex-item-fix-2 = Spróbuj dodać <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong> lub <strong>display:inline-flex</strong>. { learn-more }
@@ -64,8 +60,6 @@ inactive-css-not-grid-or-flex-item-fix-2 = Spróbuj dodać <strong>display:grid<
 inactive-css-not-grid-item-fix-2 = Spróbuj dodać <strong>display:grid</strong> lub <strong>display:inline-grid</strong> do elementu nadrzędnego. { learn-more }
 
 inactive-css-not-grid-container-fix = Spróbuj dodać <strong>display:grid</strong> lub <strong>display:inline-grid</strong>. { learn-more }
-
-inactive-css-not-flex-item-fix = Spróbuj dodać <strong>display:flex</strong> lub <strong>display:inline-flex</strong> do elementu nadrzędnego. { learn-more }
 
 inactive-css-not-flex-item-fix-2 = Spróbuj dodać <strong>display:flex</strong> lub <strong>display:inline-flex</strong> do elementu nadrzędnego. { learn-more }
 
@@ -82,3 +76,26 @@ inactive-css-not-display-block-on-floated-fix = Spróbuj usunąć <strong>float<
 inactive-css-position-property-on-unpositioned-box-fix = Spróbuj ustawić jego własność <strong>position</strong> na coś innego niż <strong>static</strong>. { learn-more }
 
 inactive-text-overflow-when-no-overflow-fix = Spróbuj dodać <strong>overflow:hidden</strong>. { learn-more }
+
+## In the Rule View when a CSS property may have compatibility issues with other browsers
+## we display an icon. When this icon is hovered this message is displayed to explain why
+## the property is incompatible and the platforms it is incompatible on.
+## Variables:
+##   $property (string) - A CSS declaration name e.g. "-moz-user-select" that can be a platform specific alias.
+##   $rootProperty (string) - A raw CSS property name e.g. "user-select" that is not a platform specific alias.
+
+css-compatibility-default-message = Własność <strong>{ $property }</strong> nie jest obsługiwana przez następujące przeglądarki:
+
+css-compatibility-deprecated-experimental-message = <strong>{ $property }</strong> to eksperymentalna własność, która została zastąpiona standardami W3C. Nie jest obsługiwana przez następujące przeglądarki:
+
+css-compatibility-deprecated-experimental-supported-message = <strong>{ $property }</strong> to eksperymentalna własność, która została zastąpiona standardami W3C.
+
+css-compatibility-deprecated-message = Własność <strong>{ $property }</strong> została zastąpiona standardami W3C. Nie jest obsługiwana przez następujące przeglądarki:
+
+css-compatibility-deprecated-supported-message = Własność <strong>{ $property }</strong> została zastąpiona standardami W3C.
+
+css-compatibility-experimental-message = <strong>{ $property }</strong> to eksperymentalna własność. Nie jest obsługiwana przez następujące przeglądarki:
+
+css-compatibility-experimental-supported-message = <strong>{ $property }</strong> to eksperymentalna własność.
+
+css-compatibility-learn-more-message = <span data-l10n-name="link">Więcej informacji</span> o <strong>{ $rootProperty }</strong>

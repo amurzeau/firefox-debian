@@ -5,9 +5,8 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = პირადულობის დაცვა
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = პირადულობის ანგარიშზე გადასვლა
+appmenuitem-update-banner =
+    .label-update-downloading = { -brand-shorter-name } განახლების ჩამოტვირთვა
 appmenuitem-protection-dashboard-title = დაცვის მაჩვენებლები
 appmenuitem-customize-mode =
     .label = მორგება…
@@ -27,6 +26,7 @@ fxa-toolbar-sync-now =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = რა სიახლეებია
+
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

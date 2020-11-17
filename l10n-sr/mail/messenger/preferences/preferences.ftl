@@ -2,7 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
 close-button =
     .aria-label = Затвори
 
@@ -65,7 +64,13 @@ privacy-passwords-header = Лозинке
 
 privacy-junk-header = Смеће
 
-privacy-data-collection-header = Сакупљање и коришћење података
+collection-privacy-notice = Обавештење о приватности
+
+collection-health-report-telemetry-disabled-link = Сазнајте више
+
+collection-health-report-link = Сазнајте више
+
+collection-backlogged-crash-reports-link = Сазнајте више
 
 privacy-security-header = Безбедност
 
@@ -90,12 +95,6 @@ manage-messenger-languages-button =
 confirm-messenger-language-change-description = Поново покрени { -brand-short-name } за примену ових измена
 confirm-messenger-language-change-button = Примени и поново покрени
 
-update-pref-write-failure-title = Грешка у писању
-
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Није могуће сачувати подешавања. Није могуће писати у датотеку: { $path }
-
 update-setting-write-failure-title = Грешка приликом чувања подешавања ажурирања
 
 # Variables:
@@ -119,9 +118,6 @@ update-in-progress-cancel-button = &Настави
 addons-button = Проширења и теме
 
 ## OS Authentication dialog
-
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Потврдите свој идентитед да бисте поставили главну лозинку.
 
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Thunderbird is trying to "
@@ -850,6 +846,10 @@ chat-variant-label =
 chat-header-label =
     .label = Прикажи заглавље
     .accesskey = г
+
+## Preferences UI Search Results
+
+search-results-header = Резултати претраге
 
 ## Preferences UI Search Results
 

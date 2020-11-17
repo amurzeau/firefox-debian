@@ -7,12 +7,15 @@
 
 <!ENTITY importFrom.label               "Enporzhiañ an dibarzhioù, sinedoù, roll istor, gerioù-tremen ha roadennoù all adalek :">
 <!ENTITY importFromUnix.label           "Enporzhiañ an dibaboù gwellañ, sinedoù, roll istor, gerioù-tremen ha roadennoù all diouzh :">
-<!ENTITY importFromBookmarks.label      "Enporzhiañ sinedoù diouzh :">
 
 <!ENTITY importFromIE.label             "Microsoft Internet Explorer">
 <!ENTITY importFromIE.accesskey         "M">
 <!ENTITY importFromEdge.label           "Microsoft Edge">
 <!ENTITY importFromEdge.accesskey       "E">
+<!ENTITY importFromEdgeLegacy.label     "Microsoft Edge (handelvoù kozh)">
+<!ENTITY importFromEdgeLegacy.accesskey "L">
+<!ENTITY importFromEdgeBeta.label       "Microsoft Edge Beta">
+<!ENTITY importFromEdgeBeta.accesskey   "d">
 <!ENTITY importFromNothing.label        "Na enporzhiañ tra ebet">
 <!ENTITY importFromNothing.accesskey    "N">
 <!ENTITY importFromSafari.label         "Safari">

@@ -19,7 +19,6 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Súkromné prehliadanie)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Súkromné prehliadanie)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Súkromné prehliadanie)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Súkromné prehliadanie)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -112,6 +110,10 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Menej písania, viac výsledkov. Používajte { $engineName } priamo z vášho panela s adresou.
 urlbar-search-tips-redirect-2 = Zadajte sem výraz vyhľadávania a uvidíte návrhy z vyhľadávacieho modulu { $engineName } a z vašej histórie prehliadania.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Záložky
+
 ##
 
 urlbar-geolocation-blocked =
@@ -138,12 +140,10 @@ urlbar-midi-blocked =
     .tooltiptext = Tejto stránke ste zakázali prístup k MIDI.
 urlbar-install-blocked =
     .tooltiptext = Tejto stránke ste zakázali inštaláciu doplnkov.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Umožní upraviť túto záložku ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -160,6 +160,55 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Odstrániť rozšírenie
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Odoslať kartu do zariadenia
+            [few] Odoslať { $tabCount } karty do zariadenia
+           *[other] Odoslať { $tabCount } kariet do zariadenia
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Odoslať kartu do zariadenia
+            [few] Odoslať { $tabCount } karty do zariadenia
+           *[other] Odoslať { $tabCount } kariet do zariadenia
+        }
+page-action-pocket-panel =
+    .label = Uložiť stránku do { -pocket-brand-name }u
+page-action-copy-url-panel =
+    .label = Kopírovať odkaz
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopírovať odkaz
+page-action-email-link-panel =
+    .label = Odoslať odkaz…
+page-action-email-link-urlbar =
+    .tooltiptext = Odoslať odkaz…
+page-action-share-url-panel =
+    .label = Zdieľať
+page-action-share-url-urlbar =
+    .tooltiptext = Zdieľať
+page-action-share-more-panel =
+    .label = Viac…
+page-action-send-tab-not-ready =
+    .label = Synchronizovanie zariadení…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Pripnúť kartu
+page-action-pin-tab-urlbar =
+    .tooltiptext = Pripnúť kartu
+page-action-unpin-tab-panel =
+    .label = Zrušiť pripnutie karty
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Zrušiť pripnutie karty
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -174,14 +223,12 @@ full-screen-exit =
 # This string prompts the user to use the list of one-click search engines in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Vyhľadať pomocou:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Zmeniť nastavenia vyhľadávania
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Zmeniť nastavenia vyhľadávania
-
 search-one-offs-context-open-new-tab =
     .label = Vyhľadať na novej karte
     .accesskey = h
@@ -191,16 +238,28 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Nastaviť ako predvolený vyhľadávací modul pre súkromné prehliadanie
     .accesskey = o
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Pri ukladaní zobrazovať editor
     .accesskey = u
-
 bookmark-panel-done-button =
     .label = Hotovo
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -272,33 +331,92 @@ popup-select-microphone =
     .value = Zdieľať mikrofón:
     .accesskey = m
 popup-all-windows-shared = Všetky okná viditeľné na vašej obrazovke budú zdieľané.
+popup-screen-sharing-not-now =
+    .label = Teraz nie
+    .accesskey = n
+popup-screen-sharing-never =
+    .label = Nikdy nepovoliť
+    .accesskey = i
+popup-silence-notifications-checkbox = Nezobrazovať upozornenia z { -brand-short-name(case: "gen") } počas zdieľania
+popup-silence-notifications-checkbox-warning = { -brand-short-name } nebude počas zdieľania zobrazovať upozornenia.
 
 ## WebRTC window or screen share tab switch warning
 
+sharing-warning-window = Zdieľate { -brand-short-name }. Ostatní ľudia uvidia obsah každej karty, ktorú otvoríte.
+sharing-warning-screen = Zdieľate celú svoju obrazovku. Ostatní ľudia uvidia obsah každej karty, ktorú otvoríte.
+sharing-warning-proceed-to-tab =
+    .label = Prejsť na kartu
+sharing-warning-disable-for-session =
+    .label = Vypnúť ochranu zdieľania pre túto reláciu
 
 ## DevTools F12 popup
 
+enable-devtools-popup-description = Ak chcete použiť skratku F12, najprv otvorte DevTools prostredníctvom ponuky Webový vývojár.
 
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Zadajte adresu alebo výraz vyhľadávania
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Zadajte adresu alebo výraz vyhľadávania
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Vyhľadajte cez { $name } alebo zadajte webovú adresu
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Prehliadač je ovládaný na diaľku
 urlbar-permissions-granted =
     .tooltiptext = Tejto stránke ste udelili dodatočné povolenia.
 urlbar-switch-to-tab =
     .value = Prejsť na kartu:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Rozšírenie:
-
 urlbar-go-button =
     .tooltiptext = Prejsť na adresu zadanú v paneli s adresou
 urlbar-page-action-button =
     .tooltiptext = Akcie stránky
 urlbar-pocket-button =
     .tooltiptext = Uložiť do { -pocket-brand-name }u
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Vyhľadať v súkromnom okne pomocou { $engine }
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Vyhľadať v súkromnom okne
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Vyhľadať pomocou { $engine }
+urlbar-result-action-switch-tab = Prepnúť na kartu
+urlbar-result-action-visit = Navštíviť
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> je teraz v režime celej obrazovky
+fullscreen-warning-no-domain = Tento dokument je teraz v režime celej obrazovky
+fullscreen-exit-button = Ukončiť režim celej obrazovky (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Ukončiť režim celej obrazovky (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> má kontrolu nad vaším kurzorom. Ovládanie kurzora prevezmete stlačením klávesu Esc.
+pointerlock-warning-no-domain = Tento dokument má kontrolu nad vaším kurzorom. Ovládanie kurzora prevezmete stlačením klávesu Esc.

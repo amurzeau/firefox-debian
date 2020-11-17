@@ -2,6 +2,16 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+fonts-window-close =
+    .key = w
+
+# Variables:
+#   $name {string, "Arial"} - Name of the default font
+fonts-label-default =
+    .label = Baku ({ $name })
+fonts-label-default-unnamed =
+    .label = Asali
+
 fonts-encoding-dialog-title =
     .title = Huruf & Pengodean
 
@@ -32,6 +42,8 @@ font-language-group-cyrillic =
     .label = Cyrillic
 font-language-group-el =
     .label = Yunani
+font-language-group-other =
+    .label = Sistem Aksara Lainnya
 font-language-group-thai =
     .label = Thailand
 font-language-group-hebrew =
@@ -62,12 +74,16 @@ font-language-group-malayalam =
     .label = Malayalam
 font-language-group-math =
     .label = Matematika
+font-language-group-odia =
+    .label = Bahasa Oriya
 font-language-group-telugu =
     .label = Telugu
 font-language-group-kannada =
     .label = Kannada
 font-language-group-sinhala =
     .label = Sinhala
+font-language-group-tibetan =
+    .label = Bahasa Tibet
 
 ## Default font type
 
@@ -76,6 +92,14 @@ default-font-serif =
 
 default-font-sans-serif =
     .label = Tanpa Serif
+
+font-size-label =
+    .value = Ukuran:
+    .accesskey = e
+
+font-size-monospace-label =
+    .value = Ukuran:
+    .accesskey = i
 
 font-serif-label =
     .value = Serif:
@@ -110,6 +134,10 @@ use-fixed-width-plain-checkbox =
 
 ## Language settings
 
+text-encoding-legend = Pengodean Teks
+
+text-encoding-description = Atur penyandian teks asal untuk mengirim dan menerima surel
+
 font-outgoing-email-label =
     .value = Email Keluar:
     .accesskey = u
@@ -118,3 +146,6 @@ font-incoming-email-label =
     .value = Email Masuk:
     .accesskey = i
 
+default-font-reply-checkbox =
+    .label = Jika memungkinkan, gunakan pengodean teks asal di balasan
+    .accesskey = h

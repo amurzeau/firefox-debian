@@ -11,6 +11,22 @@
 autocomplete-import-logins =
     <div data-l10n-name="line1">Mewnforio eich data o { $browser }</div>
     <div data-l10n-name="line2">ar gyfer { $host } a gwefannau eraill</div>
-
 autocomplete-import-logins-info =
     .tooltiptext = Dysgu rhagor
+
+## Variables:
+##   $host (String) - Host name of the current site.
+
+autocomplete-import-logins-chrome =
+    <div data-l10n-name="line1">Mewnforio eich data o o Google Chrome </div>
+    <div data-l10n-name="line2">ar gyfer { $host } a gwefannau eraill</div>
+autocomplete-import-logins-chromium =
+    <div data-l10n-name="line1">Mewnforio eich mewngofnod o Chromium</div>
+    <div data-l10n-name="line2">ar gyfer { $host } a gwefannau eraill</div>
+autocomplete-import-logins-chromium-edge =
+    <div data-l10n-name="line1">Mewnforio eich mewngofnod o Microsoft Edge</div>
+    <div data-l10n-name="line2">ar gyfer { $host } a gwefannau eraill</div>
+
+##
+
+autocomplete-import-learn-more = Dysgu rhagor

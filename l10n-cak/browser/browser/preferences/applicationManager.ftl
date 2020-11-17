@@ -7,8 +7,8 @@ app-manager-window =
     .style = width: 30em; min-height: 20em;
 
 app-manager-remove =
-    .label = Telesäx
-    .accesskey = s
+    .label = Tiyuj
+    .accesskey = y
 
 # Variables:
 #   $type (String) - the URI scheme of the link (e.g. mailto:)

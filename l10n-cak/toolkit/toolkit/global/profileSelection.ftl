@@ -9,7 +9,7 @@ profile-selection-button-accept =
     .label = Titikirisäx { -brand-short-name }
 
 profile-selection-button-cancel =
-    .label = Tel el
+    .label = Tel
 
 profile-selection-new-button =
     .label = Tinuk' ruwäch b'i'aj…

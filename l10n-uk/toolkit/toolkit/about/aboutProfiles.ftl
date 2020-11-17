@@ -33,7 +33,7 @@ profiles-in-use-profile = Цей профіль використовується
 
 profiles-rename = Перейменувати
 profiles-remove = Видалити
-profiles-set-as-default = Встановити як типовий профіль
+profiles-set-as-default = Встановити типовим профілем
 profiles-launch-profile = Запустити профіль в новому браузері
 
 profiles-cannot-set-as-default-title = Не вдалося встановити типовим
@@ -50,7 +50,7 @@ profiles-rename-profile = Перейменувати профіль { $name }
 profiles-invalid-profile-name-title = Неприпустиме ім’я профілю
 # Variables:
 #   $name (String) - Name of the profile
-profiles-invalid-profile-name = Ім’я профілю «{ $name }» неприпустиме.
+profiles-invalid-profile-name = Назва профілю “{ $name }” не дозволена.
 
 profiles-delete-profile-title = Видалити профіль
 # Variables:

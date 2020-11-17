@@ -17,6 +17,12 @@ extensions-name = Назва
 extensions-enabled = Увімкнено
 extensions-version = Версія
 extensions-id = ID
+support-addons-title = Додатки
+support-addons-name = Назва
+support-addons-type = Тип
+support-addons-enabled = Увімкнено
+support-addons-version = Версія
+support-addons-id = ID
 security-software-title = Програмне забезпечення для захисту
 security-software-type = Тип
 security-software-name = Назва
@@ -62,6 +68,7 @@ app-basics-service-workers = Зареєстровані Service Workers
 app-basics-profiles = Профілі
 app-basics-launcher-process-status = Процес запуску
 app-basics-multi-process-support = Багатопроцесні вікна
+app-basics-fission-support = Вікна Fission
 app-basics-remote-processes-count = Віддалені процеси
 app-basics-enterprise-policies = Корпоративні правила
 app-basics-location-service-key-google = Ключ служби Google Location
@@ -74,6 +81,12 @@ show-dir-label =
         [windows] Відкрити теку
        *[other] Відкрити каталог
     }
+environment-variables-title = Змінні середовища
+environment-variables-name = Назва
+environment-variables-value = Значення
+experimental-features-title = Експериментальні можливості
+experimental-features-name = Назва
+experimental-features-value = Значення
 modified-key-prefs-title = Важливі змінені налаштування
 modified-prefs-name = Назва
 modified-prefs-value = Значення
@@ -98,8 +111,6 @@ graphics-desktop-environment = Середовище робочого столу
 place-database-title = База даних Places
 place-database-integrity = Цілісність
 place-database-verify-integrity = Перевірити цілісність
-js-title = JavaScript
-js-incremental-gc = Інкрементний GC
 a11y-title = Доступність
 a11y-activated = Активовано
 a11y-force-disabled = Блокувати можливості доступності
@@ -129,7 +140,6 @@ restart-button-label = Перезапустити
 
 audio-backend = Обробка аудіо
 max-audio-channels = Максимальне число каналів
-channel-layout = Основний формат каналів
 sample-rate = Основна частота
 roundtrip-latency = Затримка в обох напрямках (стандартне відхилення)
 media-title = Медіа
@@ -271,15 +281,17 @@ blocklisted-bug = Заблоковано через відомі проблем�
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = вада { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Заблоковано, у зв'язку з відомими проблемами: <a data-l10n-name="bug-link">звіт { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Заблоковано; код помилки { $failureCode }
 d3d11layers-crash-guard = Композитор D3D11
 d3d11video-crash-guard = Відео декодер D3D11
-d3d9video-crash-buard = Відео декодер D3D9
 d3d9video-crash-guard = Відео декодер D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Відео декодер WMF VPX
-reset-on-next-restart = Скинути при наступному перезавантаженні
+reset-on-next-restart = Скинути за наступного перезапуску
 gpu-process-kill-button = Завершити GPU процес
 gpu-device-reset = Скидання пристрою
 gpu-device-reset-button = Виконати скидання пристрою
@@ -323,6 +335,20 @@ multi-process-status-6 = Вимкнено через непідтримуван�
 multi-process-status-7 = Вимкнено додатками
 multi-process-status-8 = Примусово вимкнені
 multi-process-status-unknown = Невідомий стан
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Вимкнено експериментом
+fission-status-experiment-treatment = Увімкнено експериментом
+fission-status-disabled-by-e10s-env = Вимкнено середовищем
+fission-status-enabled-by-env = Увімкнено середовищем
+fission-status-disabled-by-safe-mode = Вимкнено безпечним режимом
+fission-status-enabled-by-default = Увімкнено типово
+fission-status-disabled-by-default = Вимкнено типово
+fission-status-enabled-by-user-pref = Увімкнено користувачем
+fission-status-disabled-by-user-pref = Вимкнено користувачем
+fission-status-disabled-by-e10s-other = E10s вимкнено
 async-pan-zoom = Асинхронне панорамування/зум
 apz-none = немає
 wheel-enabled = введення коліщатком увімкнено
@@ -343,3 +369,12 @@ touch-warning = асинхронне сенсорне введення вимк�
 policies-inactive = Неактивно
 policies-active = Активно
 policies-error = Помилка
+
+## Printing section
+
+support-printing-title = Друк
+support-printing-troubleshoot = Усунення проблем
+support-printing-clear-settings-button = Очистити збережені налаштування друку
+support-printing-modified-settings = Змінені налаштування друку
+support-printing-prefs-name = Назва
+support-printing-prefs-value = Значення

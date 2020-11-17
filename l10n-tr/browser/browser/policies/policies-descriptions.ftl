@@ -12,7 +12,7 @@
 
 policy-3rdparty = WebExtension’ların chrome.storage.managed aracılığıyla ulaşabileceği ilkeleri ayarla.
 policy-AppAutoUpdate = Otomatik uygulama güncellemesini aç veya kapat.
-policy-AppUpdateURL = Özel uygulama güncelleme URL'si ayarla.
+policy-AppUpdateURL = Özel uygulama güncelleme URL’si ayarla.
 policy-Authentication = Destekleyen web siteleri için bütünleşik kimlik doğrulamasını yapılandır.
 policy-BlockAboutAddons = Eklenti yöneticisine (about:addons) erişimi engelle.
 policy-BlockAboutConfig = about:config sayfasına erişimi engelle.
@@ -25,7 +25,7 @@ policy-Cookies = Web sitelerinin çerez ayarlamasına izin ver veya verme.
 policy-DisabledCiphers = Şifrelemeleri devre dışı bırak.
 policy-DefaultDownloadDirectory = Varsayılan indirme klasörünü ayarla.
 policy-DisableAppUpdate = Tarayıcının güncellenmesini engelle.
-policy-DisableBuiltinPDFViewer = Dahili { -brand-short-name } PDF göstericisi olan PDF.js'i devre dışı bırak.
+policy-DisableBuiltinPDFViewer = Dahili { -brand-short-name } PDF göstericisi olan PDF.js’i devre dışı bırak.
 policy-DisableDefaultBrowserAgent = Varsayılan tarayıcı agent’ının herhangi bir işlem yapmasını önle. Yalnızca Windows için geçerlidir. Diğer platformlarda agent yoktur.
 policy-DisableDeveloperTools = Geliştirici araçlarına erişimi engelle.
 policy-DisableFeedbackCommands = Yardım menüsünden geri bildirim göndermeye olanak sağlayan komutları (“Geri bildirim gönder” ve “Aldatıcı siteyi ihbar et”) devre dışı bırak.
@@ -36,8 +36,9 @@ policy-DisableFirefoxStudies = { -brand-short-name } tarayıcısının araştır
 policy-DisableForgetButton = Unut düğmesine erişimi engelle.
 policy-DisableFormHistory = Arama ve form geçmişini hatırlama.
 policy-DisableMasterPasswordCreation = true ise ana parola oluşturulamaz.
+policy-DisablePrimaryPasswordCreation = True olarak ayarlanırsa ana parola oluşturulamaz.
 policy-DisablePasswordReveal = Kayıtlı hesaplardaki parolaların görüntülenmesine izin verme.
-policy-DisablePocket = Web sayfalarını Pocket'a kaydetme özelliğini devre dışı bırak.
+policy-DisablePocket = Web sayfalarını Pocket’a kaydetme özelliğini devre dışı bırak.
 policy-DisablePrivateBrowsing = Gizli gezintiyi devre dışı bırak.
 policy-DisableProfileImport = Başka tarayıcılardaki verileri içe aktarmaya olanak veren menü komutunu devre dışı bırak.
 policy-DisableProfileRefresh = about:support sayfasındaki “{ -brand-short-name } tarayıcısını yenile” düğmesini devre dışı bırak.
@@ -79,6 +80,8 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Belirtilen sitelerdeki
 
 policy-LocalFileLinks = Belirli web sitelerinin yerel dosyalara bağlantı vermesine izin ver.
 policy-MasterPassword = Ana parola kullanılmasını zorunlu tut veya yasakla.
+policy-ManagedBookmarks = Yönetici tarafından yönetilen ve kullanıcı tarafından değiştirilemeyen yer imlerinin listesini yapılandır.
+policy-PrimaryPassword = Ana parola kullanılmasını zorunlu tut veya yasakla.
 policy-NetworkPrediction = Ağ tahminini (DNS prefetching) aç veya kapat.
 policy-NewTabPage = Yeni Sekme sayfasını etkinleştir veya devre dışı bırak.
 policy-NoDefaultBookmarks = { -brand-short-name }  ile birlikte gelen varsayılan yer imlerinin ve akıllı yer imlerinin (en çok ziyaret edilenler, son kullanılan etiketler) oluşturulmasını devre dışı bırak. Not: Bu ilke yalnızca profil ilk kez çalıştırılmadan önce kullanılırsa etkili olur.

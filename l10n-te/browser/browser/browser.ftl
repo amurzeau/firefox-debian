@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -69,6 +69,10 @@ urlbar-default-notification-anchor =
     .tooltiptext = సందేశపు ప్యానెలును తెరువు
 urlbar-geolocation-notification-anchor =
     .tooltiptext = స్థాన అభ్యర్థన ప్యానెలును తెరువు
+urlbar-xr-notification-anchor =
+    .tooltiptext = వర్చువల్ రియాలిటీ అనుమతి ప్యానెల్ తెరవండి
+urlbar-storage-access-anchor =
+    .tooltiptext = విహారణ కార్యకరాలపు అనుమతి ప్యానెలును తెరువు
 urlbar-translate-notification-anchor =
     .tooltiptext = ఈ పేజీని అనువదించండి
 urlbar-web-rtc-share-screen-notification-anchor =
@@ -83,6 +87,8 @@ urlbar-plugins-notification-anchor =
     .tooltiptext = ప్లగ్-ఇన్ వాడకాన్ని నిర్వహించండి
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = సైటుతో మీ కేమెరా మరియు/లేదా మైక్రోఫోన్ పంచుకోడాన్ని నిర్వహించండి
+urlbar-autoplay-notification-anchor =
+    .tooltiptext = ఆటోప్లే ప్యానెలును తెరవండి
 urlbar-persistent-storage-notification-anchor =
     .tooltiptext = నిరంతర నిల్వ డేటాని నిల్వ చేయండి
 urlbar-addons-notification-anchor =
@@ -101,11 +107,20 @@ urlbar-tip-icon-description =
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
+urlbar-search-tips-onboard = తక్కువ టైపు చేసి, ఎక్కువ కనుగొనండి: నేరుగా మీ చిరునామా పట్టీ నుండే { $engineName }‌లో వెతకండి.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = ఇష్టాంశాలు
+urlbar-search-mode-tabs = ట్యాబులు
+urlbar-search-mode-history = చరిత్ర
 
 ##
 
 urlbar-geolocation-blocked =
     .tooltiptext = మీ స్థాన సమాచారాన్ని వాడకుండా ఈ వెబ్‌సైటుని నిరోధించారు.
+urlbar-xr-blocked =
+    .tooltiptext = మీరు ఈ వెబ్‌సైట్ కోసం వర్చువల్ రియాలిటీ పరికర ప్రాప్యతను నిరోధించారు.
 urlbar-web-notifications-blocked =
     .tooltiptext = నోటిఫికేషన్లు చూపించకుండా ఈ వెబ్‌సైటుని నిరోధించారు.
 urlbar-camera-blocked =
@@ -118,10 +133,14 @@ urlbar-persistent-storage-blocked =
     .tooltiptext = మీరు ఈ వెబ్సైట్ కోసం నిరంతర నిల్వ నిరోధించారు.
 urlbar-popup-blocked =
     .tooltiptext = మీరు ఈ వెబ్‌సైటు యొక్క పాప్-అప్లను నిరోధించారు.
+urlbar-autoplay-media-blocked =
+    .tooltiptext = ఈ వెబ్‌సైటులో ధ్వనితో స్వయంచాలకంగా ఆడే మాధ్యమాలను నిరోధించారు.
 urlbar-canvas-blocked =
     .tooltiptext = ఈ వెబ్‌సైటుని కాన్వాస్ డేటా వెలికితీయకుండా మీరు నిరోధించారు.
 urlbar-midi-blocked =
     .tooltiptext = MIDI సౌలభ్యాన్ని పొందకుండా ఈ వెబ్‌సైటుని మీరు నిరోధించారు.
+urlbar-install-blocked =
+    .tooltiptext = ఈ వెబ్‌సైటు పొడగింతలను స్థాపించకుండా మీరు నిరోధించి ఉన్నారు.
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
@@ -139,6 +158,39 @@ page-action-manage-extension =
     .label = పొడగింత నిర్వహణ…
 page-action-remove-from-urlbar =
     .label = చిరునామా పట్టీ నుండి తొలగించండి
+page-action-remove-extension =
+    .label = పొడగింతను తొలగించు
+
+## Page Action menu
+
+page-action-copy-url-panel =
+    .label = లంకెను కాపీచెయ్యి
+page-action-copy-url-urlbar =
+    .tooltiptext = లంకెను కాపీచెయ్యి
+page-action-email-link-panel =
+    .label = లింకును ఈమెయిలు చేయి…
+page-action-email-link-urlbar =
+    .tooltiptext = లింకును ఈమెయిలు చేయి…
+page-action-share-url-panel =
+    .label = పంచుకో
+page-action-share-url-urlbar =
+    .tooltiptext = పంచుకో
+page-action-share-more-panel =
+    .label = మరిన్ని…
+page-action-send-tab-not-ready =
+    .label = పరికరాలను సమకాలీకరిస్తోంది…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = ట్యాబుని పిన్ చేయి
+page-action-pin-tab-urlbar =
+    .tooltiptext = ట్యాబుని పిన్ చేయి
+page-action-unpin-tab-panel =
+    .label = ట్యాబు పిన్ను తీసేయి
+page-action-unpin-tab-urlbar =
+    .tooltiptext = ట్యాబు పిన్ను తీసేయి
 
 ## Auto-hide Context Menu
 
@@ -151,7 +203,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = ఈ సారి దీనితో వెతుకు:
 # This string won't wrap, so if the translated string is longer,
@@ -166,6 +218,29 @@ search-one-offs-context-open-new-tab =
 search-one-offs-context-set-as-default =
     .label = అప్రమేయ శోధన యంత్రంగా అమర్చండి
     .accesskey = D
+search-one-offs-context-set-as-default-private =
+    .label = అంతరంగిక కిటికీల కోసం అప్రమేయ శోధనయంత్రంగా అమర్చు
+    .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = ఇష్టాంశాలు ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = ట్యాబులు ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = చరిత్ర ({ $restrict })
 
 ## Bookmark Panel
 
@@ -174,13 +249,21 @@ bookmark-panel-show-editor-checkbox =
     .accesskey = S
 bookmark-panel-done-button =
     .label = పూర్తయింది
+# Width of the bookmark panel.
+# Should be large enough to fully display the Done and
+# Cancel/Remove Bookmark buttons.
+bookmark-panel =
+    .style = min-width: 24em
 
 ## Identity Panel
 
+identity-connection-not-secure = అనుసంధానం సురక్షితం కాదు
+identity-connection-secure = సురక్షిత అనుసంధానం
 identity-connection-internal = ఇది సురక్షిత { -brand-short-name } పేజీ.
-identity-connection-file = ఈ పేజీ మీ కంప్యూటర్లో భద్రమయివుంటుంది.
+identity-connection-file = ఈ పేజీ మీ కంప్యూటర్లో భద్రమైవుంది.
 identity-extension-page = ఈ పేజీ ఒక పొడగింత నుండి తెరవబడింది.
 identity-active-blocked = ఈ పేజీలో సురక్షితంకాని భాగాలను { -brand-short-name } నిరోధించింది.
+identity-custom-root = మొజిల్లాచే గుర్తించబడని ధ్రువపత్ర జారీదారు అనుసంధానాన్ని నిర్ధారించారు.
 identity-passive-loaded = ఈ పేజీలోని కొన్ని భాగాలు సురక్షితమైనవి కావు (బొమ్మల వంటివి).
 identity-active-loaded = ఈ పేజీకి రక్షణను మీరు అచేతనం చేసారు.
 identity-weak-encryption = ఈ పేజీ బలహీనమైన ఎన్‌క్రిప్షన్ వాడుతోంది.
@@ -191,7 +274,10 @@ identity-permissions-reload-hint = మార్పులు ప్రతిఫ�
 identity-permissions-empty = ఈ సైటుకి మీరు ఎటువంటి ప్రత్యేక అనుమతులు ఇవ్వలేదు.
 identity-clear-site-data =
     .label = కుకీలను, సైటు డేటాను తుడిచివేయి…
-identity-connection-verified = మీరు ఈ సైటుకు సురక్షితంగా అనుసంధానం అయ్యారు.
+identity-connection-not-secure-security-view = ఈ సైటుకి మీరు సురక్షితంగా అనుసంధానం కాలేదు.
+identity-connection-verified = ఈ సైటుకు మీరు సురక్షితంగా అనుసంధానమయ్యారు.
+identity-ev-owner-label = ధ్రువపత్రం వీరికి జారీ అయ్యింది:
+identity-description-custom-root = ఈ ధ్రువపత్రపు జారీదారు మొజిల్లాకు తెలియనివారు. ఇది మీ నిర్వాహక వ్యవస్థ నుండి లేదా నిర్వాహకుడిచే చేర్చబడి ఉండవచ్చు. <label data-l10n-name="link">ఇంకా తెలుసుకోండి</label>
 identity-remove-cert-exception =
     .label = మినహాయింపును తొలగించు
     .accesskey = R
@@ -220,8 +306,13 @@ identity-more-info-link-text =
 
 browser-window-minimize-button =
     .tooltiptext = చిన్నదిచేయు
+browser-window-maximize-button =
+    .tooltiptext = పెద్దగించు
 browser-window-close-button =
     .tooltiptext = మూసివేయి
+
+## Bookmarks toolbar items
+
 
 ## WebRTC Pop-up notifications
 
@@ -232,9 +323,17 @@ popup-select-microphone =
     .value = పంచుకోవాల్సిన మైక్రోఫోన్:
     .accesskey = M
 popup-all-windows-shared = మీ తెర మీద కనిపించే అన్ని విండోలు పంచుకోబడతాయి.
+popup-screen-sharing-not-now =
+    .label = ఇప్పుడు కాదు
+    .accesskey = w
+popup-screen-sharing-never =
+    .label = ఎప్పటికీ అనుమతించవద్దు
+    .accesskey = N
 
 ## WebRTC window or screen share tab switch warning
 
+sharing-warning-disable-for-session =
+    .label = ఈ సెషనుకి పంచుకోలు రక్షణను అచేతనంచేయి
 
 ## DevTools F12 popup
 
@@ -243,10 +342,46 @@ popup-all-windows-shared = మీ తెర మీద కనిపించే �
 
 urlbar-default-placeholder =
     .defaultPlaceholder = వెతకండి లేదా చిరునామాను ఇవ్వండి
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = వెతకండి లేదా చిరునామాను ఇవ్వండి
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = జాలంలో వెతకండి
+    .aria-label = { $name }తో జాలంలో వెతకండి
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = వెతుకుడు పదాలను ఇవ్వండి
+    .aria-label = { $name }‌లో వెతకండి
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = వెతుకుడు పదాలను ఇవ్వండి
+    .aria-label = ఇష్టాంశాలలో వెతకండి
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = వెతుకుడు పదాలను ఇవ్వండి
+    .aria-label = చరిత్రలో వెతకండి
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = వెతుకుడు పదాలను ఇవ్వండి
+    .aria-label = ట్యాబులలో వెతకండి
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name }‌తో వెతకండి లేదా చిరునామాను ఇవ్వండి
 urlbar-remote-control-notification-anchor =
     .tooltiptext = విహరణి వ్యవహిత నియంత్రణ కింద ఉంది
+urlbar-permissions-granted =
+    .tooltiptext = ఈ వెబ్‌సైటుకి మీరు అదనపు అనుమతులు ఇచ్చివున్నారు.
 urlbar-switch-to-tab =
     .value = ట్యాబుకు మారు:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
@@ -256,3 +391,39 @@ urlbar-go-button =
     .tooltiptext = ప్రాంతపు పట్టీలో ఉన్న చిరునామాకి వెళ్ళండి
 urlbar-page-action-button =
     .tooltiptext = పేజీ చర్యలు
+urlbar-pocket-button =
+    .tooltiptext = { -pocket-brand-name }‌కి భద్రపరుచు
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } తో అన్వేషించు
+urlbar-result-action-sponsored = ప్రాయోజితం
+urlbar-result-action-switch-tab = ట్యాబుకు మారండి
+urlbar-result-action-visit = చూడండి
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = ఇష్టాంశాలను వెతకండి
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ఇప్పుడు నిండు తెరలో ఉంది
+fullscreen-warning-no-domain = ఈ పత్రం ఇప్పుడు నిండు తెరలో ఉంది
+fullscreen-exit-button = నిండు తెరను వదలివెళ్ళు (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = నిండు తెరను వదలివెళ్ళు (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = మీ పాయింటర్ <span data-l10n-name="domain">{ $domain }</span> నియంత్రణలో ఉంది. తిరిగి మీ ఆధీనం లోనికి తెచ్చుకోడానికి Esc నొక్కండి.
+pointerlock-warning-no-domain = మీ పాయింటర్ ఈ పత్రపు నియంత్రణలో ఉంది. తిరిగి మీ ఆధీనం లోనికి తెచ్చుకోడానికి Esc నొక్కండి.

@@ -71,8 +71,6 @@ media-save-as =
 media-save-image-as =
     .label = Запазване като…
     .accesskey = к
-media-preview =
-    .value = Предварителен преглед:
 
 perm-tab =
     .label = Права
@@ -132,7 +130,6 @@ security-site-data-cookies-only = Да, бисквитките
 security-site-data-no = Не
 
 image-size-unknown = Неизвестно
-not-set-verified-by = Неизвестно
 page-info-not-specified =
     .value = Не е посочено
 not-set-alternative-text = Неизвестно
@@ -157,7 +154,6 @@ general-quirks-mode =
     .value = Нестандартен режим
 general-strict-mode =
     .value = Стандартен режим
-security-no-owner = Сайтът не предоставя информация за собственост.
 page-info-security-no-owner =
     .value = Сайтът не предоставя информация за собственост.
 media-select-folder = Изберете папка за запазване на изображенията
@@ -166,6 +162,17 @@ media-unknown-not-cached =
 permissions-use-default =
     .label = Както е по подразбиране
 security-no-visits = Не
+
+# This string is used to display the number of meta tags
+# in the General Tab
+# Variables:
+#   $tags (number) - The number of meta tags
+general-meta-tags =
+    .value =
+        { $tags ->
+            [one] Мета информация (1 етикет)
+           *[other] Мета информация ({ $tags } етикета)
+        }
 
 # This string is used to display the number of times
 # the user has visited the website prior

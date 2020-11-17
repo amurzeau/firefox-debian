@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Tast mindre, find mere: Søg med { $engineName } direkte i adressefeltet.
 urlbar-search-tips-redirect-2 = Start din søgning i adressefeltet for at få forslag fra { $engineName } og din browserhistorik.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Vælg denne genvej for hurtigere at finde det, du leder efter.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Bogmærker
+urlbar-search-mode-tabs = Faneblade
+urlbar-search-mode-history = Historik
 
 ##
 
@@ -156,6 +165,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Fjern udvidelse
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Send faneblad til enhed
+           *[other] Send { $tabCount } faneblade til enhed
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Send faneblad til enhed
+           *[other] Send { $tabCount } faneblade til enhed
+        }
+page-action-pocket-panel =
+    .label = Gem side til { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Kopier link
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopier link
+page-action-email-link-panel =
+    .label = Send link…
+page-action-email-link-urlbar =
+    .tooltiptext = Send link…
+page-action-share-url-panel =
+    .label = Del
+page-action-share-url-urlbar =
+    .tooltiptext = Del
+page-action-share-more-panel =
+    .label = Mere…
+page-action-send-tab-not-ready =
+    .label = Synkroniserer enheder…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Fastgør faneblad
+page-action-pin-tab-urlbar =
+    .tooltiptext = Fastgør faneblad
+page-action-unpin-tab-panel =
+    .label = Frigør faneblad
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Frigør faneblad
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +223,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Søg denne gang med:
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +241,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Sæt som standard-søgetjeneste i private vinduer
     .accesskey = p
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Bogmærker ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Faneblade ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Historik ({ $restrict })
 
 ## Bookmark Panel
 
@@ -212,6 +288,17 @@ identity-passive-loaded = Dele af denne side (såsom billeder) er ikke sikre.
 identity-active-loaded = Du har slået beskyttelse fra på denne side.
 identity-weak-encryption = Denne side bruger svag kryptering.
 identity-insecure-login-forms = Logins foretaget på denne side kan blive kompromitteret.
+identity-https-only-connection-upgraded = (opgraderet til HTTPS)
+identity-https-only-label = Tilstanden Kun-HTTPS
+identity-https-only-dropdown-on =
+    .label = Til
+identity-https-only-dropdown-off =
+    .label = Fra
+identity-https-only-dropdown-off-temporarily =
+    .label = Midlertidigt fra
+identity-https-only-info-turn-on2 = Slå tilstanden kun-HTTPS til for dette websted, hvis du vil have { -brand-short-name } til at opgradere forbindelsen, når det er muligt.
+identity-https-only-info-turn-off2 = Hvis denne side ikke fungerer korrekt, kan du prøve at slå tilstanden kun-HTTPS fra for dette websted for at genindlæse den ved hjælp af usikker HTTP.
+identity-https-only-info-no-upgrade = Kunne ikke opgradere forbindelsen fra HTTP.
 identity-permissions =
     .value = Tilladelser
 identity-permissions-reload-hint = Du skal muligvis genindlæse siden, før at ændringerne slår igennem.
@@ -257,6 +344,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Luk
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Importer bogmærker…
+    .tooltiptext = Kopier bogmærker fra andre browsere til { -brand-short-name }.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -266,15 +359,12 @@ popup-select-microphone =
     .value = Mikrofon til deling:
     .accesskey = M
 popup-all-windows-shared = Alle synlige vinduer på din skærm vil blive delt.
-
 popup-screen-sharing-not-now =
-  .label = Ikke nu
-  .accesskey = n
-
+    .label = Ikke nu
+    .accesskey = n
 popup-screen-sharing-never =
-  .label = Tillad aldrig
-  .accesskey = a
-
+    .label = Tillad aldrig
+    .accesskey = a
 popup-silence-notifications-checkbox = Deaktiver beskeder fra { -brand-short-name } ved deling
 popup-silence-notifications-checkbox-warning = { -brand-short-name } vil ikke vise beskeder, når du deler
 
@@ -283,9 +373,9 @@ popup-silence-notifications-checkbox-warning = { -brand-short-name } vil ikke vi
 sharing-warning-window = Du deler { -brand-short-name }. Andre kan se, når du skifter til et nyt faneblad.
 sharing-warning-screen = Du deler hele din skærm. Andre kan se, når du skifter til et nyt faneblad.
 sharing-warning-proceed-to-tab =
-  .label = Fortsæt til faneblad
+    .label = Fortsæt til faneblad
 sharing-warning-disable-for-session =
-  .label = Deaktiver delings-beskyttelse for denne session
+    .label = Deaktiver delings-beskyttelse for denne session
 
 ## DevTools F12 popup
 
@@ -295,8 +385,42 @@ enable-devtools-popup-description = For at bruge F12 som genvej skal du først �
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Søg eller indtast en adresse
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Søg eller indtast en adresse
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Søg på nettet
+    .aria-label = Søg på nettet med { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Indtast søgestreng
+    .aria-label = Søg på { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Indtast søgestreng
+    .aria-label = Søg efter bogmærker
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Indtast søgestreng
+    .aria-label = Søg i historik
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Indtast søgestreng
+    .aria-label = Søg i faneblade
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Søg med { $name } eller indtast en adresse
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Browseren fjernstyres
 urlbar-permissions-granted =
@@ -312,3 +436,67 @@ urlbar-page-action-button =
     .tooltiptext = Sidehandlinger
 urlbar-pocket-button =
     .tooltiptext = Gem til { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Søg med { $engine } i et privat vindue
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Søg i et privat vindue
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Søg med { $engine }
+urlbar-result-action-sponsored = Sponsoreret
+urlbar-result-action-switch-tab = Skift til faneblad
+urlbar-result-action-visit = Besøg
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Tryk på Tab for at søge med { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Tryk på Tab for at søge på { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Søg med { $engine } direkte fra adressefeltet
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Søg med { $engine } direkte fra adressefeltet
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Søg i bogmærker
+urlbar-result-action-search-history = Søg i historik
+urlbar-result-action-search-tabs = Søg i faneblade
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> vises nu i fuld skærm
+fullscreen-warning-no-domain = Dokumentet vises nu i fuld skærm
+fullscreen-exit-button = Afslut fuld skærm (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Afslut fuld skærm (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> kontrollerer din markør. Tryk Esc for at overtage kontrollen igen.
+pointerlock-warning-no-domain = Dette dokument kontrollerer din markør. Tryk Esc for at overtage kontrollen igen.

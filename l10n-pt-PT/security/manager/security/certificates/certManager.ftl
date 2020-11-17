@@ -18,6 +18,7 @@ certmgr-mine = Tem certificados destas organizações que lhe identificam
 certmgr-remembered = Estes certificados são utilizados para o identificar em sites.
 certmgr-people = Tem certificados em ficheiro que identificam estas pessoas
 certmgr-servers = Tem certificados em ficheiro que identificam estes servidores
+certmgr-server = Estas entradas identificam exceções de erro do certificado do servidor
 certmgr-ca = Tem certificados em ficheiro que identificam estas autoridades de certificados
 certmgr-detail-general-tab-title =
     .label = Geral
@@ -161,6 +162,10 @@ delete-ssl-cert-title =
     .title = Apagar exceções de certificados de servidores
 delete-ssl-cert-confirm = Tem a certeza que pretende eliminar estas exceções de segurança do servidor?
 delete-ssl-cert-impact = Se apagar uma exceção de segurança, irá restaurar as verificações de segurança para os servidores, requerendo um certificado válido.
+delete-ssl-override-title =
+    .title = Eliminar exceção do certificado de servidor
+delete-ssl-override-confirm = Tem a certeza que pretende eliminar esta exceção de servidor?
+delete-ssl-override-impact = Se eliminar uma exceção de servidor, irá restaurar as verificações de segurança habituais para este servidor, obrigando a que o mesmo utilize um certificado válido.
 delete-ca-cert-title =
     .title = Apagar ou desconfiar de certificados CA
 delete-ca-cert-confirm = Pediu para eliminar estes certificados CA. Para certificados integrados, será removida toda a confiança, que tem o mesmo efeito. Tem a certeza que pretende eliminar ou deixar de confiar?
@@ -208,6 +213,15 @@ cert-not-verified-issuer-unknown = Não foi possível verificar este certificado
 cert-not-verified-ca-invalid = Não foi possível verificar este certificado porque o certificado da CA é inválido.
 cert-not-verified_algorithm-disabled = O certificado não é de confiança porque foi assinado com um algoritmo que foi desativado por não ser seguro.
 cert-not-verified-unknown = Não foi possível verificar este certificado por razões desconhecidas.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Não enviar nenhum certificado de cliente
+# Used when no cert is stored for an override
+no-cert-stored-for-override = (Não armazenada)
+
+## Used to show whether an override is temporary or permanent
+
+permanent-override = Permanente
+temporary-override = Temporária
 
 ## Add Security Exception dialog
 

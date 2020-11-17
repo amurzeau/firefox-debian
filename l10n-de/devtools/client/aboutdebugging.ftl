@@ -35,7 +35,7 @@ aboutdebugging-sidebar-runtime-connection-status-connected = Verbunden
 # Connection status (disconnected) for runtime items in the sidebar
 aboutdebugging-sidebar-runtime-connection-status-disconnected = Getrennt
 # Text displayed in the about:debugging sidebar when no device was found.
-about-debugging-sidebar-no-devices = Keine Geräte erkannt
+about-debugging-sidebar-no-devices = Keine Geräte gefunden
 # Text displayed in buttons found in sidebar items representing remote runtimes.
 # Clicking on the button will attempt to connect to the runtime.
 about-debugging-sidebar-item-connect-button = Verbinden
@@ -83,8 +83,6 @@ about-debugging-setup-title = Konfiguration
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Wählen Sie die Verbindungsmethode für das externe Debugging des Geräts.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox = <a>{ about-debugging-this-firefox-runtime-name }</a> verwenden, um Tabs, Erweiterungen und Service-Worker mit dieser Version von { -brand-shorter-name } zu untersuchen.
-# Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox2 = <a>{ about-debugging-this-firefox-runtime-name }</a> verwenden, um Erweiterungen und Service-Worker mit dieser Version von { -brand-shorter-name } zu untersuchen.
 # Title of the heading Connect section of the Setup page.
 about-debugging-setup-connect-heading = Gerät verbinden
@@ -109,9 +107,9 @@ about-debugging-setup-usb-step-enable-dev-menu2 = Das "Entwicklermenü" in Andro
 # USB section step by step guide
 about-debugging-setup-usb-step-enable-debug2 = USB-Debugging in Androids Menü "Entwicklermenü" aktivieren.
 # USB section step by step guide
-about-debugging-setup-usb-step-enable-debug-firefox2 = USB-Debugging in Firefox auf Android-Geräten aktivieren.
+about-debugging-setup-usb-step-enable-debug-firefox2 = USB-Debugging in Firefox auf dem Android-Gerät aktivieren.
 # USB section step by step guide
-about-debugging-setup-usb-step-plug-device = Android-Gerät mit Computer verbinden
+about-debugging-setup-usb-step-plug-device = Das Android-Gerät mit dem Computer verbinden.
 # Text shown in the USB section of the setup page with a link to troubleshoot connection errors.
 # The link goes to https://developer.mozilla.org/docs/Tools/Remote_Debugging/Debugging_over_USB
 about-debugging-setup-usb-troubleshoot = Probleme mit der Verbindung mit dem USB-Gerät? <a>Anleitung zur Fehlerbehebung</a>
@@ -178,14 +176,7 @@ about-debugging-runtime-service-workers-not-compatible = Ihre Browser-Einstellun
 # "Troubleshooting" link points to https://developer.mozilla.org/docs/Tools/about:debugging#Troubleshooting
 # { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
 # { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
-about-debugging-browser-version-too-old = Der verbundene Browser verwendet eine alte Version von ({ $runtimeVersion }). Die niedrigste unterstützte Version ist ({ $minVersion }). Daher handelt es sich um eine nicht unterstützte Kombination und die Entwicklerwerkzeuge funktionieren eventuell nicht. Bitte aktualisieren Sie den verbundenen Browser. <a>Informationen zur Fehlerbehebung</a>
-# Dedicated message for a backward compatibility issue that occurs when connecting:
-# - from Fx 67 to 66 or to 65
-# - from Fx 68 to 66
-# Those are normally in range for DevTools compatibility policy, but specific non
-# backward compatible changes broke the debugger in those scenarios (Bug 1528219).
-# { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-about-debugging-browser-version-too-old-67-debugger = Die Debugger-Ansicht funktioniert eventuell nicht mit dem verbundenen Browser. Bitte verwenden Sie { $runtimeVersion }, falls Sie den Debugger für diesen Browser benötigen.
+about-debugging-browser-version-too-old = Der verbundene Browser verwendet eine alte Version ({ $runtimeVersion }). Die niedrigste unterstützte Version ist ({ $minVersion }). Daher handelt es sich um eine nicht unterstützte Kombination und die Entwicklerwerkzeuge funktionieren eventuell nicht. Bitte aktualisieren Sie den verbundenen Browser. <a>Informationen zur Fehlerbehebung</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
 # from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
 about-debugging-browser-version-too-old-fennec = Diese Firefox-Version kann Firefox für Android (68) nicht debuggen. Es wird empfohlen, Firefox für Android Nightly zum Testen auf dem Telefon zu installieren. <a>Weitere Informationen</a>
@@ -261,13 +252,6 @@ about-debugging-extension-id =
     .label = Erweiterungs-ID
 # This string is displayed as a label of the button that pushes a test payload
 # to a service worker.
-# Notes, this relates to the "Push" API, which is normally not localized so it is
-# probably better to not localize it.
-about-debugging-worker-action-push = Push
-# This string is displayed as a label of the button that starts a service worker.
-about-debugging-worker-action-start = Starten
-# This string is displayed as a label of the button that pushes a test payload
-# to a service worker.
 # Note this relates to the "Push" API, which is normally not localized so it is
 # probably better to not localize it.
 about-debugging-worker-action-push2 = Push
@@ -287,7 +271,7 @@ about-debugging-worker-fetch-not-listening =
     .value = Wartet nicht auf Fetch-Ereignisse
 # Displayed for service workers in runtime pages that are currently running (service
 # worker instance is active).
-about-debugging-worker-status-running = Ausgeführt
+about-debugging-worker-status-running = Wird ausgeführt
 # Displayed for service workers in runtime pages that are registered but stopped.
 about-debugging-worker-status-stopped = Angehalten
 # Displayed for service workers in runtime pages that are registering.
@@ -315,7 +299,7 @@ about-debugging-main-process-description2 = Hauptprozess des Zielbrowsers
 # `devtools.browsertoolbox.fission` is true.
 about-debugging-multiprocess-toolbox-name = Werkzeuge für mehrere Prozesse
 # Description for the Multiprocess Toolbox target.
-about-debugging-multiprocess-toolbox-description = Hauptprozess und Inhaltsprozesse für den Zielbrowser
+about-debugging-multiprocess-toolbox-description = Hauptprozess und Inhaltsprozesse des Zielbrowsers
 # Alt text used for the close icon of message component (warnings, errors and notifications).
 about-debugging-message-close-icon =
     .alt = Nachricht schließen

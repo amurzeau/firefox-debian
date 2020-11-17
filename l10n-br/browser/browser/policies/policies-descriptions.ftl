@@ -137,7 +137,7 @@ policy-OverridePostUpdatePage = Merañ ar pajenn "Petra nevez?" goude un hizivad
 
 policy-PasswordManagerEnabled = Gweredekaat enrollañ ar gerioù-tremen en ardoer gerioù-tremen.
 
-policy-Permissions2 = Kefluniañ an aotreoù evit ar c'hamera, ar mikro, al lec'hiadurezh, ar rebuzadurioù hag al lenn emgefreek.
+policy-Permissions2 = Kefluniañ an aotreoù evit ar c'hamera, ar glevell, al lec'hiadurezh, ar rebuzadurioù hag al lenn emgefreek.
 
 policy-PopupBlocking = Aotren lec'hiennoù 'zo da skrammañ ar prenestroù diflugell dre ziouer.
 

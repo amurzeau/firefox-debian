@@ -30,23 +30,23 @@ footer-learn-more-link = 了解更多
 
 features-learn-more = 了解更多
 features-inspector-title = 檢測器
-features-inspector-desc = 檢測並改善程式碼，讓版面上的每個像素都顯得完美。 <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-inspector-desc = 檢測並改善程式碼，讓版面上的每個像素都顯得完美。<a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-console-title = 主控台
-features-console-desc = 追蹤 CSS、JavaScript、安全性或網路問題。 <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-console-desc = 追蹤 CSS、JavaScript、安全性或網路問題。<a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-debugger-title = 除錯器
-features-debugger-desc = 超強大的 JavaScript 除錯器，完整支援您的開發框架。 <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-debugger-desc = 超強大的 JavaScript 除錯器，完整支援您的開發框架。<a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-network-title = 網路
-features-network-desc = 監控有哪些拖慢網站速度的網路請求。 <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-network-desc = 監控有哪些拖慢網站速度的網路請求。<a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-storage-title = 儲存空間
-features-storage-desc = 新增、修改或清除快取、Cookie、資料庫及 Session 資料。 <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-storage-desc = 新增、修改或清除快取、Cookie、資料庫及 Session 資料。<a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-responsive-title = 適應性設計模式
-features-responsive-desc = 在瀏覽器中以不同裝置的畫面大小來測試網站。 <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-responsive-desc = 在瀏覽器中以不同裝置的畫面大小來測試網站。<a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-visual-editing-title = 視覺化編輯
-features-visual-editing-desc = 微調動畫、對齊或間距。 <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-visual-editing-desc = 微調動畫、對齊或間距。<a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-performance-title = 效能
-features-performance-desc = 打開瓶頸、流線化處理程序、最佳化網頁資產。 <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-performance-desc = 打開瓶頸、流線化處理程序、最佳化網頁資產。<a data-l10n-name="learn-more">{ features-learn-more }</a>
 features-memory-title = 記憶體
-features-memory-desc = 找出 memory leak 的地方，讓您的程式一步飛天。 <a data-l10n-name="learn-more">{ features-learn-more }</a>
+features-memory-desc = 找出 memory leak 的地方，讓您的程式一步飛天。<a data-l10n-name="learn-more">{ features-learn-more }</a>
 # Variables:
 #   $errorDescription (String) - The error that occurred e.g. 404 - Not Found
 newsletter-error-common = 訂閱要求失敗（{ $errorDescription }）。

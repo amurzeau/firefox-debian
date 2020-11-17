@@ -4,14 +4,14 @@
 
 addons-window =
     .title = పొడిగింతల నిర్వాహకి
-
 addons-page-title = పొడిగింతల నిర్వాహకి
+
+search-header =
+    .placeholder = addons.mozilla.orgలో వెతకండి
+    .searchbuttonlabel = వెతుకు
 
 search-header-shortcut =
     .key = f
-
-loading-label =
-    .value = లోడవుచున్నది…
 
 list-empty-installed =
     .value = మీ వద్ద ఈ రకమైన పొడిగింతలేమీ స్థాపించి లేవు
@@ -28,19 +28,11 @@ list-empty-find-updates =
 list-empty-button =
     .label = పొడిగింతలు గురించి మరింత తెలుసుకొనండి
 
-install-addon-from-file =
-    .label = ఫైలు నుండి పొడిగింతను స్థాపించు…
-    .accesskey = I
-
 preferences =
     { PLATFORM() ->
         [windows] { -brand-short-name } ఎంపికలు
        *[other] { -brand-short-name } అభిరుచులు
     }
-
-tools-menu =
-    .tooltiptext = అన్ని పొడిగింతలు కొరకు సాధనములు
-
 sidebar-preferences-button-title =
     .title =
         { PLATFORM() ->
@@ -53,10 +45,6 @@ show-unsigned-extensions-button =
 
 show-all-extensions-button =
     .label = అన్ని పొడగింతలను చూపించు
-
-debug-addons =
-    .label = పొడిగింతలను డీబగ్ చేయుము
-    .accesskey = B
 
 cmd-show-details =
     .label = మరింత సమాచారం చూపించు
@@ -94,14 +82,6 @@ cmd-contribute =
     .label = తోడ్పడండి
     .accesskey = C
     .tooltiptext = ఈ పొడిగింత అభివృద్దిలో పాల్గొనుము
-
-discover-title = పొడిగింతలు అనగా ఏమి?
-
-discover-description = పొడిగింతలు అనునవి వాటి యొక్క ప్రమేయత్వముతో లేదా శైలితో మీరు { -brand-short-name } ను మీకు నప్పినవిధంగా మాలచుకొనుటకు దోహదపడు అనువర్తనములు. మీ స్వంత { -brand-short-name } తయారు చేసుకొనుటకు, సమయాన్ని-ఆదాచేసే పక్కపట్టీను ప్రయత్నించండి, వాతావరణం తెలుపుదానిని యత్నించండి, లేదా ఐచ్ఛికశైలి(థీమ్) ఉపయోగించి చూడండి.
-
-discover-footer =
-    మీరు అంతర్జాలమునకు అనుసంధానమైనప్పుడు, ఈ పేన్
-    మీకు కొన్ని మంచి మరియు పేరొందిన పొడిగింతలను మీరు ప్రయత్నించి చూచుటకు అందించును.
 
 detail-version =
     .label = వెర్షను
@@ -192,14 +172,9 @@ legacy-extensions =
 
 legacy-extensions-description = ఈ పొడిగింతలు ప్రస్తుత { -brand-short-name } ప్రమాణాలను చేరుకోవు కాబట్టి అవి క్రియారహితం చేయబడ్డాయి. <label data-l10n-name="legacy-learn-more">పొడిగింతల మార్పుల గురించి తెలుసుకోండి</label>
 
-extensions-view-recent-updates =
-    .name = ఇటీవలి నవీకరణలు
-    .tooltiptext = { extensions-view-recent-updates.name }
-
-extensions-view-available-updates =
-    .name = అందుబాటులోని నవీకరణలు
-    .tooltiptext = { extensions-view-available-updates.name }
-
+addon-category-discover = సిఫారసులు
+addon-category-discover-title =
+    .title = సిఫారసులు
 addon-category-extension = పొడగింతలు
 addon-category-extension-title =
     .title = పొడగింతలు
@@ -224,29 +199,6 @@ addon-category-recent-updates-title =
 
 ## These are global warnings
 
-extensions-warning-safe-mode-label =
-    .value = అన్ని పొడిగింతలు సేఫ్ మోడ్ చేత అచేతనపరచబడినవి.
-extensions-warning-safe-mode-container =
-    .tooltiptext = { extensions-warning-safe-mode-label.value }
-
-extensions-warning-check-compatibility-label =
-    .value = పొడిగింత సారూప్యతా పరిశీలన అచేతనమైంది. మీరు సారూప్యతలేని పొడిగింతలు కలిగివుండవచ్చును.
-extensions-warning-check-compatibility-container =
-    .tooltiptext = { extensions-warning-check-compatibility-label.value }
-
-extensions-warning-check-compatibility-enable =
-    .label = చేతనపరచు
-    .tooltiptext = పొడిగింత సారూప్యతా పరిశీలనను చేతనపరచు
-
-extensions-warning-update-security-label =
-    .value = పొడిగింత నవీకరణ రక్షణ పరిశీలన అచేతనమైంది. మీ జోక్యం లేకుండా నవీకరణలు జరుగవచ్చు.
-extensions-warning-update-security-container =
-    .tooltiptext = { extensions-warning-update-security-label.value }
-
-extensions-warning-update-security-enable =
-    .label = చేతనపరచు
-    .tooltiptext = పొడిగింత నవీకరణ రక్షణ పరిశీలనను చేతనముచేయి
-
 extensions-warning-safe-mode = అన్ని పొడిగింతలు సేఫ్ మోడ్ చేత అచేతనపరచబడినవి.
 extensions-warning-check-compatibility = పొడిగింత సారూప్యతా పరిశీలన అచేతనమైంది. మీరు సారూప్యతలేని పొడిగింతలు కలిగివుండవచ్చును.
 extensions-warning-check-compatibility-button = చేతనపరచు
@@ -258,14 +210,6 @@ extensions-warning-update-security-button = చేతనపరచు
 
 ## Strings connected to add-on updates
 
-extensions-updates-check-for-updates =
-    .label = నవీకరణల కొరకు పరిశీలించు
-    .accesskey = C
-
-extensions-updates-view-updates =
-    .label = ఇటీవలి తాజాకరణలను చూడండి
-    .accesskey = V
-
 addon-updates-check-for-updates = నవీకరణల కొరకు పరిశీలించు
     .accesskey = C
 addon-updates-view-updates = ఇటీవలి తాజాకరణలను చూడండి
@@ -273,10 +217,6 @@ addon-updates-view-updates = ఇటీవలి తాజాకరణలను �
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
-
-extensions-updates-update-addons-automatically =
-    .label = పొడిగింతలను స్వయంచాలకంగా నవీకరించు
-    .accesskey = A
 
 addon-updates-update-addons-automatically = పొడిగింతలను స్వయంచాలకంగా నవీకరించు
     .accesskey = A
@@ -287,36 +227,12 @@ addon-updates-update-addons-automatically = పొడిగింతలను �
 ## (which itself is either "Automatically" or "Manually", controlled by the
 ## extensions-updates-update-addons-automatically.label menu item).
 
-extensions-updates-reset-updates-to-automatic =
-    .label = స్వయంచాలకంగా నవీకరించుటకు అన్ని పొడిగింతలును రీసెట్ చేయు
-    .accesskey = R
-
-extensions-updates-reset-updates-to-manual =
-    .label = పొడగింతలన్నీ మానవీయంగా తాజాపరచుకునేలా మార్చు
-    .accesskey = R
-
 addon-updates-reset-updates-to-automatic = స్వయంచాలకంగా నవీకరించుటకు అన్ని పొడిగింతలును రీసెట్ చేయు
     .accesskey = R
 addon-updates-reset-updates-to-manual = పొడగింతలన్నీ మానవీయంగా తాజాపరచుకునేలా మార్చు
     .accesskey = R
 
 ## Status messages displayed when updating add-ons
-
-extensions-updates-updating =
-    .value = పొడిగింతలను నవీకరిస్తున్నది
-extensions-updates-installed =
-    .value = మీ పొడిగింతలు తాజాకరించబడ్డాయి.
-extensions-updates-downloaded =
-    .value = మీ పొడిగింత నవీకరణలు డౌన్‌లోడైనవి.
-extensions-updates-restart =
-    .label = స్థాపనను పూర్తిచేయడానికి ఇప్పుడే పునఃప్రారంభించు
-extensions-updates-none-found =
-    .value = తాజాకరణలు ఏమీ లేవు
-extensions-updates-manual-updates-found =
-    .label = అందుబాటులోని తాజాకరణలను చూడండి
-extensions-updates-update-selected =
-    .label = తాజాకరణలను స్థాపించు
-    .tooltiptext = ఈ జాబితాలోని తాజాకరణలను స్థాపించు
 
 addon-updates-updating = పొడిగింతలను నవీకరిస్తున్నది
 addon-updates-installed = మీ పొడిగింతలు తాజాకరించబడ్డాయి.
@@ -336,14 +252,15 @@ addon-open-about-debugging = పొడిగింతలను డీబగ్ �
 
 shortcuts-card-collapse-button = తక్కువ చూపించు
 
-go-back-button =
-    .tooltiptext = వెనుకకు వెళ్ళు
-
 header-back-button =
     .title = వెనుకకు వెళ్ళు
 
 ## Recommended add-ons page
 
+# Notice to make user aware that the recommendations are personalized.
+discopane-notice-recommendations =
+    వీటిలో కొన్ని పొడగింతలు వ్యక్తిగతీకరించబడ్డాయి. అవి మీరు స్థాపించుకున్న
+    ఇతర పొడగింతలు, ప్రొఫైలు అభిరుచులు, వాడుక గణాంకాలపై ఆధారపడినవి.
 discopane-notice-learn-more = ఇంకా తెలుసుకోండి
 
 # Shows the number of daily users of the add-on.
@@ -351,6 +268,7 @@ discopane-notice-learn-more = ఇంకా తెలుసుకోండి
 #   $dailyUsers (number) - The number of daily users.
 user-count = వాడుకరులు: { $dailyUsers }
 install-theme-button = అలంకారాన్ని స్థాపించు
+find-more-addons = మరిన్ని పొడగింతలను కనుగొనండి
 
 # This is a label for the button to open the "more options" menu, it is only
 # used for screen readers.
@@ -359,10 +277,10 @@ addon-options-button =
 
 ## Add-on actions
 
+report-addon-button = నివేదించు
 remove-addon-button = తొలగించు
 disable-addon-button = అచేతనించు
 enable-addon-button = చేతనించు
-expand-addon-button = మరిన్ని ఎంపికలు
 preferences-addon-button =
     { PLATFORM() ->
         [windows] ఎంపికలు
@@ -371,12 +289,29 @@ preferences-addon-button =
 details-addon-button = వివరాలు
 permissions-addon-button = అనుమతులు
 
-addons-enabled-heading = చేతనం
-addons-disabled-heading = అచేతనం
+extension-enabled-heading = చేతనం
+extension-disabled-heading = అచేతనం
+
+theme-enabled-heading = చేతనం
+theme-disabled-heading = అచేతనం
+
+plugin-enabled-heading = చేతనం
+plugin-disabled-heading = అచేతనం
+
+dictionary-enabled-heading = చేతనం
+dictionary-disabled-heading = అచేతనం
+
+locale-enabled-heading = చేతనం
+locale-disabled-heading = అచేతనం
 
 addon-detail-author-label = రచయిత
 addon-detail-version-label = వెర్షను
 addon-detail-homepage-label = ముంగిలిపేజీ
+
+# This string is used to show that an add-on is disabled.
+# Variables:
+#   $name (string) - The name of the add-on
+addon-name-disabled = { $name } (అచేతనం)
 
 # The number of reviews that an add-on has received on AMO.
 # Variables:
@@ -399,6 +334,15 @@ available-updates-heading = అందుబాటులో ఉన్న తా�
 recent-updates-heading = ఇటీవలి తాజాకరణలు
 
 ## Page headings
+
+extension-heading = మీ పొడగింతలను నిర్వహించుకోండి
+theme-heading = మీ అలంకారాలను నిర్వహించుకోండి
+plugin-heading = మీ చొప్పింతలను నిర్వహించుకోండి
+discover-heading = మీ { -brand-short-name }‌ను వ్యక్తిగతీకరించుకోండి
+
+default-heading-search-label = మరిన్ని పొడగింతలను కనుగొనండి
+addons-heading-search-input =
+    .placeholder = addons.mozilla.orgలో వెతకండి
 
 addon-page-options-button =
     .title = అన్ని పొడిగింతలు కొరకు సాధనములు

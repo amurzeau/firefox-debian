@@ -8,7 +8,7 @@ app-manager-window =
 
 app-manager-remove =
     .label = Уклони
-    .accesskey = У
+    .accesskey = R
 
 # Variables:
 #   $type (String) - the URI scheme of the link (e.g. mailto:)

@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Verplaatsen naar nieuw venster
     .accesskey = w
-undo-close-tab =
-    .label = Tabblad sluiten ongedaan maken
-    .accesskey = m
 tab-context-close-multiple-tabs =
     .label = Meerdere tabbladen sluiten
     .accesskey = M
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -79,3 +80,19 @@ move-tabs =
 move-tab =
     .label = Tabblad verplaatsen
     .accesskey = l
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Tabblad sluiten
+            [one] Tabblad sluiten
+           *[other] Tabbladen sluiten
+        }
+    .accesskey = T
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Tabblad verplaatsen
+            [one] Tabblad verplaatsen
+           *[other] Tabbladen verplaatsen
+        }
+    .accesskey = v

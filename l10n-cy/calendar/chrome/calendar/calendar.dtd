@@ -9,9 +9,7 @@
 <!ENTITY calendar.newevent.button.tooltip         "Creu digwyddiad newydd" >
 <!ENTITY calendar.newtask.button.tooltip          "Creu tasg newydd" >
 
-<!ENTITY calendar.unifinder.todoitems.label       "Tasgau" >
-
-<!ENTITY calendar.unifinder.showcompletedtodos.label "Dangos Tasgau wedi eu cwblhau">
+<!ENTITY calendar.unifinder.showcompletedtodos.label "Dangos Tasgau wedi'u cwblhau">
 
 <!ENTITY calendar.today.button.label          "Heddiw">
 <!ENTITY calendar.tomorrow.button.label       "Yfory">
@@ -37,7 +35,7 @@
 <!ENTITY calendar.unifinder.tree.title.label               "Teitl">
 <!ENTITY calendar.unifinder.tree.title.tooltip2            "Trefnu yn ôl teitl">
 <!ENTITY calendar.unifinder.tree.percentcomplete.label     "Cwblhawyd &#037;">
-<!ENTITY calendar.unifinder.tree.percentcomplete.tooltip2  "Trefnu yn ôl &#037; wedi eu cwblhau">
+<!ENTITY calendar.unifinder.tree.percentcomplete.tooltip2  "Trefnu yn ôl &#037; wedi'u cwblhau">
 <!ENTITY calendar.unifinder.tree.startdate.label           "Cychwyn">
 <!ENTITY calendar.unifinder.tree.startdate.tooltip2        "Trefnu yn ôl dyddiad cychwyn">
 <!ENTITY calendar.unifinder.tree.enddate.label             "Diwedd">
@@ -79,7 +77,7 @@
 <!ENTITY calendar.nextmonth.accesskey           "M" >
 <!ENTITY calendar.prevmonth.accesskey           "l" >
 
-<!ENTITY calendar.navigation.nextday.tooltip    "Un Diwrnod Ymlaen" >
+<!ENTITY calendar.navigation.nextday.tooltip    "Ymlaen Un Diwrnod" >
 <!ENTITY calendar.navigation.prevday.tooltip    "Yn Diwrnod Nôl" >
 <!ENTITY calendar.navigation.nextweek.tooltip   "Un Wythnos Ymlaen" >
 <!ENTITY calendar.navigation.prevweek.tooltip   "Un Wythnos Nôl" >
@@ -230,7 +228,7 @@
 
 <!ENTITY progress.level.0             "0&percnt; wedi'i Gwblhau">
 <!ENTITY progress.level.0.accesskey   "0">
-<!ENTITY progress.level.25            "25&percnt; wedi'i Gwblhawyd">
+<!ENTITY progress.level.25            "25&percnt; wedi'i Gwblhau">
 <!ENTITY progress.level.25.accesskey  "2">
 <!ENTITY progress.level.50            "50&percnt; wedi'i Gwblhau">
 <!ENTITY progress.level.50.accesskey  "5">
@@ -329,8 +327,8 @@
 <!ENTITY calendar.alarm.snoozefor.label             "Cysgu am" >
 <!ENTITY calendar.alarm.snoozeallfor.label          "Cysgu Popeth am" >
 <!ENTITY calendar.alarm.title.label                 "Atgoffwyr Calendr" >
-<!ENTITY calendar.alarm.dismiss.label               "Gwrthod" >
-<!ENTITY calendar.alarm.dismissall.label            "Gwrthod Popeth" >
+<!ENTITY calendar.alarm.dismiss.label               "Cau" >
+<!ENTITY calendar.alarm.dismissall.label            "Cau Popeth" >
 
 <!ENTITY calendar.alarm.snooze.5minutes.label       "5 Munud" >
 <!ENTITY calendar.alarm.snooze.10minutes.label      "10 Munud" >
@@ -355,7 +353,6 @@
 <!ENTITY calendarproperties.color.label                    "Lliw:">
 <!ENTITY calendarproperties.webdav.label                   "iCalendar (ICS)">
 <!ENTITY calendarproperties.caldav.label                   "CalDAV">
-<!ENTITY calendarproperties.wcap.label                     "Sun Java System Calendar Server (WCAP)">
 <!ENTITY calendarproperties.format.label                   "Fformat:">
 <!ENTITY calendarproperties.location.label                 "Lleoliad:">
 <!ENTITY calendarproperties.refreshInterval.label          "Adnewyddu'r Calendr:">
@@ -364,9 +361,8 @@
 <!ENTITY calendarproperties.readonly.label                 "Darllen yn Unig">
 <!ENTITY calendarproperties.firealarms.label               "Dangos Atgoffwyr">
 <!ENTITY calendarproperties.cache3.label                   "Cefnogaeth All-lein">
-<!ENTITY calendarproperties.enabled.label                  "Newid y calendr yma ar">
 <!ENTITY calendarproperties.enabled2.label                 "Galluogi'r Calendr hwn">
-<!ENTITY calendarproperties.forceDisabled.label            "Nid oes modd canfod darparwr y calendr hwn. Mae hyn yn digwydd yn aml os ydych wedi anablu neu ddadosod rhai ychwanegion.">
+<!ENTITY calendarproperties.forceDisabled.label            "Nid oes modd canfod darparwr y calendr hwn. Mae hyn yn digwydd yn aml os ydych wedi analluogi neu ddadosod rhai ychwanegion.">
 <!ENTITY calendarproperties.unsubscribe.label              "Dad-danysgrifio">
 <!ENTITY calendarproperties.unsubscribe.accesskey          "a">
 

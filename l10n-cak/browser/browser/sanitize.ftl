@@ -10,13 +10,13 @@ sanitize-prefs-style =
     .style = width: 17em
 
 dialog-title =
-    .title = Tiyuj ri k'ak'a' natab'äl
+    .title = Tiyuj K'ak'a' Natab'äl
     .style = width: 34em
 
 # When "Time range to clear" is set to "Everything", this message is used for the
 # title instead of dialog-title.
 dialog-title-everything =
-    .title = Tiyuj el ronojel ri natab'äl
+    .title = Tiyuj Ronojel Natab'äl
     .style = width: 34em
 
 clear-data-settings-label = Toq xtitz'apïx, { -brand-short-name } k'o ta chi ruyonil nuyüj ronojel
@@ -34,13 +34,13 @@ clear-time-duration-prefix =
     .accesskey = q
 
 clear-time-duration-value-last-hour =
-    .label = Ruk'isib'äl ramaj
+    .label = Ruk'isib'äl Ramaj
 
 clear-time-duration-value-last-2-hours =
-    .label = Ruk'isib'al ka'i' ramaj
+    .label = Ruk'isib'al Ka'i' Ramaj
 
 clear-time-duration-value-last-4-hours =
-    .label = Ruk'isib'äl kaji' ramaj
+    .label = Ruk'isib'äl Kaji' Ramaj
 
 clear-time-duration-value-today =
     .label = Wakami
@@ -86,13 +86,13 @@ item-offline-apps =
     .label = Taq rutzij ruxaq k'amaya'l majun nok pa k'amaya'l
     .accesskey = r
 
-sanitize-everything-undo-warning = Man tikirel ta xtitzolïx chi rij re samaj re'.
+sanitize-everything-undo-warning = Man tikirel ta nitzolïx re b'anïk.
 
 window-close =
     .key = w
 
 sanitize-button-ok =
-    .label = Rujosq'ixik wakami
+    .label = Tijosq'ïx Wakami
 
 # The label for the default button between the user clicking it and the window
 # closing.  Indicates the items are being cleared.

@@ -3,3 +3,5 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 category-name-label = B'i'aj
+category-color-label =
+    .label = Tokisäx B'onil

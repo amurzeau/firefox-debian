@@ -24,8 +24,6 @@
 
 <!ENTITY hdrArchiveButton1.label "Yakb'äl">
 <!ENTITY hdrArchiveButton1.tooltip "Tiyak re tzijol re'">
-<!ENTITY hdrOpenConversationButton1.label "Tzijonem">
-<!ENTITY hdrOpenConversationButton1.tooltip "Tik'ut rutzijonem re tzijol re'">
 <!ENTITY hdrSmartReplyButton1.label "Na'owinäq taq Tzolin Tzij">
 <!ENTITY hdrReplyButton1.label "Titzolïx tzij">
 <!ENTITY hdrReplyButton2.tooltip "Titzolïx tzij chi re ri rutaqonel re tzijol re'">
@@ -35,7 +33,6 @@
 <!ENTITY hdrReplyListButton1.tooltip "Titzolïx tzij chi re jun kicholb'al taqotz'ib'">
 <!ENTITY hdrFollowupButton1.label "Tizolïx tzij">
 <!ENTITY hdrFollowupButton1.tooltip "Titalüx rutzijol jun tzolin tzij pa re kimolaj tzijol re'">
-<!ENTITY hdrMenuForwardButton.label "Titaq chik Achi'el">
 <!ENTITY hdrForwardButton1.label "Titaq chik">
 <!ENTITY hdrForwardButton1.tooltip "Titaq chik re rutzijol re'">
 <!ENTITY hdrJunkButton1.label "Seq'">
@@ -56,7 +53,7 @@
 <!ENTITY otherActionsButton.tooltip "Ch'aqa' chik taq b'anoj">
 <!ENTITY otherActionsOpenConversation1.label "Tijaq pa Tzijonem">
 <!ENTITY otherActionsOpenConversation1.accesskey "z">
-<!ENTITY otherActionsOpenInNewWindow1.label "Tijaq pa jun K'ak'a' Tzuwäch">
+<!ENTITY otherActionsOpenInNewWindow1.label "Tijaq pa K'ak'a' Tzuwäch">
 <!ENTITY otherActionsOpenInNewWindow1.accesskey "W">
 <!ENTITY otherActionsOpenInNewTab1.label "Tijaq pa K'ak'a' Ruwi'">
 <!ENTITY otherActionsOpenInNewTab1.accesskey "R">
@@ -64,7 +61,7 @@
 <!ENTITY markAsReadMenuItem1.accesskey "S">
 <!ENTITY markAsUnreadMenuItem1.label "Tiya' Retal achi'el Man Sik'in Ta">
 <!ENTITY markAsUnreadMenuItem1.accesskey "e">
-<!ENTITY saveAsMenuItem1.label "Tiyak achi'el…">
+<!ENTITY saveAsMenuItem1.label "Tiyak Achi'el…">
 <!ENTITY saveAsMenuItem1.accesskey "k">
 <!ENTITY viewSourceMenuItem1.label "Titz'et Xe'el">
 <!ENTITY viewSourceMenuItem1.accesskey "T">
@@ -72,7 +69,7 @@
 <!ENTITY otherActionsPrint1.accesskey "z">
 
 <!-- Attachment bar context menu items -->
-<!ENTITY startExpandedCmd.label    "Kek'ut taq Kitz'etoj Tz'aqatisan pa Rutikirib'al">
+<!ENTITY startExpandedCmd.label    "Pa Rutikirib'al Kek'ut Kipas Tz'aqatisan taq Tzij">
 <!ENTITY startExpandedCmd.accesskey    "K">
 
 <!-- Attachment context menu items -->
@@ -97,7 +94,7 @@
 
 <!ENTITY detachedAttachmentFolder.show.label        "Tijaq K'wayöl Yakwuj">
 <!ENTITY detachedAttachmentFolder.show.accesskey    "Y">
-<!ENTITY detachedAttachmentFolder.showMac.label     "Tik'ut pe Pan Ilonel">
+<!ENTITY detachedAttachmentFolder.showMac.label     "Tik'ut Pa Finder">
 <!ENTITY detachedAttachmentFolder.showMac.accesskey "I">
 
 <!-- Attachment toolbar items -->

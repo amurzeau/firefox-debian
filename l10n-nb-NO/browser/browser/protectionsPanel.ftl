@@ -47,7 +47,7 @@ protections-panel-no-trackers-found = Ingen sporere kjent for { -brand-short-nam
 protections-panel-content-blocking-tracking-protection = Sporings-innhold
 
 protections-panel-content-blocking-socialblock = Sporing via sosiale medier
-protections-panel-content-blocking-cryptominers-label = Kryptominere
+protections-panel-content-blocking-cryptominers-label = Kryptoutvinnere
 protections-panel-content-blocking-fingerprinters-label = Fingerprinters
 
 ## In the protections panel, Content Blocking category items are in three sections:
@@ -63,8 +63,6 @@ protections-panel-not-found-label = Ingen oppdaget
 ##
 
 protections-panel-settings-label = Innstillinger for beskyttelse
-protections-panel-showreport-label = Vis rapport
-
 # This should match the "appmenuitem-protection-dashboard-title" string in browser/appmenu.ftl.
 protections-panel-protectionsdashboard-label = Sikkerhetsoversikt
 
@@ -86,7 +84,7 @@ protections-panel-site-not-working-view-send-report = Send inn en rapport
 ##
 
 protections-panel-cross-site-tracking-cookies = Disse infokapslene følger deg fra side til side for å samle inn data om hva du gjør på nettet. De er satt av tredjeparter som annonsører og analyseselskaper.
-protections-panel-cryptominers = Kryptominere bruker systemets datakraft for å utvinne digitale penger. Kryptomineringsskript tapper batteriet, gjør datamaskinen tregere og kan øke strømregningen.
+protections-panel-cryptominers = Kryptoutvinnere bruker systemets datakraft for å utvinne digitale penger. Kryptoutvinningsskript tapper batteriet, gjør datamaskinen tregere og kan øke strømregningen.
 protections-panel-fingerprinters = Fingerprinters samler innstillinger fra nettleseren din og datamaskinen for å opprette en profil av deg. Ved hjelp av dette digitale fingeravtrykket kan de spore deg på forskjellige nettsteder.
 protections-panel-tracking-content = Nettsteder kan laste inn eksterne annonser, videoer og annet innhold med sporingskode. Blokkering av sporingsinnhold kan hjelpe nettsteder å laste raskere, men noen knapper, skjemaer og innloggingsfelt fungerer kanskje ikke.
 protections-panel-social-media-trackers = Sosiale nettverk plasserer sporere på andre nettsteder for å følge det du gjør og ser på nettet. Dette gjør at sosiale media-selskaper kan lære mer om deg utover det du deler på profilene dine på sosiale medier.

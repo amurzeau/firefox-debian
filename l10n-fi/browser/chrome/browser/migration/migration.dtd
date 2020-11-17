@@ -7,13 +7,12 @@
 
 <!ENTITY importFrom.label               "Tuo asetukset, kirjanmerkit, sivuhistoria, salasanat ja muut tiedot ohjelmasta:">
 <!ENTITY importFromUnix.label           "Tuo asetukset, kirjanmerkit, sivuhistoria, salasanat ja muut tiedot ohjelmasta:">
-<!ENTITY importFromBookmarks.label      "Tuo kirjanmerkit ohjelmasta:">
 
 <!ENTITY importFromIE.label             "Microsoft Internet Explorer">
 <!ENTITY importFromIE.accesskey         "M">
 <!ENTITY importFromEdge.label           "Microsoft Edge">
 <!ENTITY importFromEdge.accesskey       "E">
-<!ENTITY importFromEdgeLegacy.label     "Microsoft Edge, vanhennettu versio">
+<!ENTITY importFromEdgeLegacy.label     "Vanha Microsoft Edge">
 <!ENTITY importFromEdgeLegacy.accesskey "v">
 <!ENTITY importFromEdgeBeta.label       "Microsoft Edge Beta">
 <!ENTITY importFromEdgeBeta.accesskey   "d">

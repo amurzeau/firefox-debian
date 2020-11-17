@@ -5,9 +5,9 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = محافظ‌های حریم‌خصوصی
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = به گزارش حریم‌خصوصی خود بروید
+appmenuitem-update-banner =
+    .label-update-downloading = در حال بارگیری به‌روز رسانی { -brand-shorter-name }
+appmenuitem-protection-dashboard-title = تابلوی محافظت‌ها
 appmenuitem-customize-mode =
     .label = سفارشی‌سازی…
 
@@ -26,3 +26,9 @@ fxa-toolbar-sync-now =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = تازه‌ها
+
+# Checkbox displayed at the bottom of the What's New panel, allowing users to
+# enable/disable What's New notifications.
+whatsnew-panel-footer-checkbox =
+    .label = آگاهی دربارهٔ ویژگی‌های جدید (f)
+    .accesskey = f

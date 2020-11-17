@@ -17,6 +17,12 @@ extensions-name = Namme
 extensions-enabled = Ynskeakele
 extensions-version = Ferzje
 extensions-id = ID
+support-addons-title = Add-ons
+support-addons-name = Namme
+support-addons-type = Type
+support-addons-enabled = Ynskeakele
+support-addons-version = Ferzje
+support-addons-id = ID
 security-software-title = Befeiligingssoftware
 security-software-type = Type
 security-software-name = Namme
@@ -62,6 +68,7 @@ app-basics-service-workers = Registrearre Service Workers
 app-basics-profiles = Profilen
 app-basics-launcher-process-status = Launcher-proses
 app-basics-multi-process-support = Multiproses-finsters
+app-basics-fission-support = Fission Windows
 app-basics-remote-processes-count = Eksterne prosessen
 app-basics-enterprise-policies = Bedriuwsbelied
 app-basics-location-service-key-google = Google-lokaasjetsjinstkaai
@@ -74,6 +81,12 @@ show-dir-label =
         [windows] Map iepenje
        *[other] Map iepenje
     }
+environment-variables-title = Omjouwingsfariabelen
+environment-variables-name = Namme
+environment-variables-value = Wearde
+experimental-features-title = Eksperimintele funksjes
+experimental-features-name = Namme
+experimental-features-value = Wearde
 modified-key-prefs-title = Wichtige oanpaste foarkarren
 modified-prefs-name = Namme
 modified-prefs-value = Wearde
@@ -98,8 +111,6 @@ graphics-desktop-environment = Desktopomjouwing
 place-database-title = Places-database
 place-database-integrity = Yntegriteit
 place-database-verify-integrity = Yntegriteit ferifearje
-js-title = JavaScript
-js-incremental-gc = Ynkremintele GC
 a11y-title = Tagonklikheid
 a11y-activated = Aktivearre
 a11y-force-disabled = Tagonklikheid tsjingean
@@ -129,7 +140,6 @@ restart-button-label = Opnij starte
 
 audio-backend = Audio-backend
 max-audio-channels = Maks kanalen
-channel-layout = Oanrekommandearre kanaalmodus
 sample-rate = Oanrekommandearre foarbyldfrekwinsje
 roundtrip-latency = Retinsjelatinsje (standertdeviaasje)
 media-title = Media
@@ -266,11 +276,13 @@ blocklisted-bug = Om bekende problemen op de blokkearlist
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Blokkearre fanwegen bekende problemen: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Op blokkearlist; flaterkoade { $failureCode }
 d3d11layers-crash-guard = D3D11-compositor
 d3d11video-crash-guard = D3D11-fideodecoder
-d3d9video-crash-buard = D3D9-fideodecoder
 d3d9video-crash-guard = D3D9-fideodecoder
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX-fideodecoder
@@ -281,7 +293,7 @@ gpu-device-reset-button = Apparaatherinisjalisaasje aktivearje
 uses-tiling = Brûkt tegels
 content-uses-tiling = Brûkt Tiling (Ynhâld)
 off-main-thread-paint-enabled = Off Main Thread Painting ynskeakele
-off-main-thread-paint-worker-count = Off Main Thread Painting Worker Count
+off-main-thread-paint-worker-count = Oantal Off Main Thread Painting-workers
 target-frame-rate = Doelframerate
 min-lib-versions = Minimale ferzje ferwachte
 loaded-lib-versions = Brûkte ferzje
@@ -318,6 +330,20 @@ multi-process-status-6 = Utskeakele troch net-stipe tekstynfier
 multi-process-status-7 = Utskeakele troch add-ons
 multi-process-status-8 = Forsearre útskeakele
 multi-process-status-unknown = Unbekende steat
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Utskeakele troch eksperimint
+fission-status-experiment-treatment = Ynskeakele troch eksperimint
+fission-status-disabled-by-e10s-env = Utskeakele troch omjouwing
+fission-status-enabled-by-env = Ynskeakele troch omjouwing
+fission-status-disabled-by-safe-mode = Utskeakele troch feilige modus
+fission-status-enabled-by-default = Standert ynskeakele
+fission-status-disabled-by-default = Standert útskeakele
+fission-status-enabled-by-user-pref = Ynskeakele troch brûker
+fission-status-disabled-by-user-pref = Utskeakele troch brûker
+fission-status-disabled-by-e10s-other = E10s útskeakele
 async-pan-zoom = Asyngroan panne/zoome
 apz-none = gjin
 wheel-enabled = tsjilynfier ynskeakele
@@ -338,3 +364,12 @@ touch-warning = async-oanraakynfier útskeakele fanwegen net stipe foarkar: { $p
 policies-inactive = Ynaktyf
 policies-active = Aktyf
 policies-error = Flater
+
+## Printing section
+
+support-printing-title = Ofdrukke
+support-printing-troubleshoot = Probleemoplossing
+support-printing-clear-settings-button = Bewarre ôfdrukynstellingen wiskje
+support-printing-modified-settings = Wizige ôfdrukynstellingen
+support-printing-prefs-name = Namme
+support-printing-prefs-value = Wearde

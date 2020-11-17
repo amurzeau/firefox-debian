@@ -53,9 +53,25 @@ move-to-end =
 move-to-new-window =
     .label = انقل إلى نافذة جديدة
     .accesskey = ذ
-undo-close-tab =
-    .label = أعِد فتح اللسان
-    .accesskey = د
+tab-context-close-multiple-tabs =
+    .label = أغلِق أكثر من لسان
+    .accesskey = ك
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
+tab-context-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] أعِد فتح اللسان
+            [zero] أعِد فتح الألسنة
+            [one] أعِد فتح اللسان
+            [two] أعِد فتح اللسانين
+            [few] أعِد فتح الألسنة
+            [many] أعِد فتح الألسنة
+           *[other] أعِد فتح الألسنة
+        }
+    .accesskey = ع
 close-tab =
     .label = أغلِق اللسان
     .accesskey = غ
@@ -68,3 +84,27 @@ move-tabs =
 move-tab =
     .label = انقل اللسان
     .accesskey = ق
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] أغلِق اللسان
+            [zero] أغلِق اللسان
+            [one] أغلِق اللسان
+            [two] أغلِق اللسانين
+            [few] أغلِق الألسنة
+            [many] أغلِق الألسنة
+           *[other] أغلِق الألسنة
+        }
+    .accesskey = غ
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] انقل اللسان
+            [zero] انقل اللسان
+            [one] انقل اللسان
+            [two] انقل اللسانين
+            [few] انقل الألسنة
+            [many] انقل الألسنة
+           *[other] انقل الألسنة
+        }
+    .accesskey = ن

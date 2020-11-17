@@ -52,6 +52,8 @@ about-paragraph = Thunderbird 是領先的開放原始碼、跨平台郵件及�
 about-paragraph-2 = <b>Thunderbird 是由像您這樣的使用者贊助而成的！若您也喜歡 Thunderbird，請捐款支持我們。</b>能夠確保 Thunderbird 持續發展的最好方式就是
 about-donation = 捐款給我們
 
+about-paragraph-consider-donation = <b>Thunderbird 是由像您這樣的使用者贊助而成的！若您也喜歡 Thunderbird，請捐款支持我們。</b>能夠確保 Thunderbird 持續發展的最好方式就是<a data-l10n-name="donation-link">捐款給我們</a>。
+
 explore-link = 探索功能
 support-link = 技術支援
 involved-link = 參與我們

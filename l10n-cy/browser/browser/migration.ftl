@@ -53,6 +53,9 @@ no-migration-sources = Methu canfod unrhyw rhaglenni sy'n cynnwys nodau tudalen,
 import-source-page-title = Gosodiadau Mewnforio a Data
 import-items-page-title = Eitemau i'w Mewnforio
 import-items-description = Dewis eitemau i'w mewnforio:
+import-permissions-page-title = Rhowch ganiatâd i { -brand-short-name }
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = Mae macOS yn gofyn i chi ganiatáu’n benodol i { -brand-short-name } gael mynediad i nodau tudalen Safari. Cliciwch “Continue” a dewiswch y ffeil “Bookmarks.plist” yn y panel File Open sy'n ymddangos.
 import-migrating-page-title = Mewnforio…
 import-migrating-description = Mae'r eitemau canlynol yn cael eu mewnforio…
 import-select-profile-page-title = Dewis Proffil
@@ -88,6 +91,7 @@ imported-edge-reading-list = Rhestr Darllen (O Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

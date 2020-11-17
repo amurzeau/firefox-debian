@@ -53,6 +53,9 @@ no-migration-sources = ไม่พบโปรแกรมที่มีข้
 import-source-page-title = นำเข้าการตั้งค่าและข้อมูล
 import-items-page-title = รายการที่จะนำเข้า
 import-items-description = เลือกรายการที่จะนำเข้า:
+import-permissions-page-title = โปรดมอบสิทธิอนุญาตแก่ { -brand-short-name }
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS ต้องการให้คุณอนุญาตให้ { -brand-short-name } เข้าถึงที่คั่นหน้าของ Safari อย่างชัดเจน คลิก “ดำเนินการต่อ” แล้วเลือกไฟล์ “Bookmarks.plist” ในแผงการเปิดไฟล์ที่ปรากฏ
 import-migrating-page-title = กำลังนำเข้า…
 import-migrating-description = รายการดังต่อไปนี้กำลังถูกนำเข้า…
 import-select-profile-page-title = เลือกโปรไฟล์
@@ -88,6 +91,7 @@ imported-edge-reading-list = รายการอ่าน (จาก Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.
@@ -120,6 +124,24 @@ browser-data-passwords-checkbox =
 # label in the main hamburger menu that opens about:logins.
 browser-data-passwords-label =
     .value = ข้อมูลการเข้าสู่ระบบและรหัสผ่านที่บันทึกไว้
+browser-data-bookmarks-checkbox =
+    .label =
+        { $browser ->
+            [ie] รายการโปรด
+            [edge] รายการโปรด
+           *[other] ที่คั่นหน้า
+        }
+browser-data-bookmarks-label =
+    .value =
+        { $browser ->
+            [ie] รายการโปรด
+            [edge] รายการโปรด
+           *[other] ที่คั่นหน้า
+        }
+browser-data-otherdata-checkbox =
+    .label = ข้อมูลอื่น ๆ
+browser-data-otherdata-label =
+    .label = ข้อมูลอื่น ๆ
 browser-data-session-checkbox =
     .label = หน้าต่างและแท็บ
 browser-data-session-label =

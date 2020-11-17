@@ -3,7 +3,6 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 about-telemetry-ping-data-source = Kixe'el ri taq rutzij ping:
-about-telemetry-show-current-ping-data = Taq rutzij wakami ri ping
 about-telemetry-show-current-data = Tzij wakami
 about-telemetry-show-archived-ping-data = Yakon taq rutzij ri ping
 about-telemetry-show-subsession-data = Kek'ut pe taq rutzij rachmolojri'ïl
@@ -12,7 +11,7 @@ about-telemetry-archive-ping-type = Ruwäch chi Ping
 about-telemetry-archive-ping-header = Ping
 about-telemetry-option-group-today = Wakami
 about-telemetry-option-group-yesterday = Iwir
-about-telemetry-option-group-older = Nimalaxel
+about-telemetry-option-group-older = Ojer
 about-telemetry-previous-ping = <<
 about-telemetry-next-ping = >>
 about-telemetry-page-title = Taq rutzij Telemetry
@@ -31,7 +30,7 @@ about-telemetry-scalar-section = Jotob'enïk
 about-telemetry-keyed-scalar-section = Xakb'äl rik'in ewan tzij
 about-telemetry-histograms-section =   Tem K'ulwäch
 about-telemetry-keyed-histogram-section =   Taq ruk'u'x Tem K'ulwäch
-about-telemetry-events-section = Taq molojri'ïl
+about-telemetry-events-section = Taq Nimaq'ij
 about-telemetry-simple-measurements-section =   Relik taq etab'äl
 about-telemetry-slow-sql-section =   Taq b'ab' SQL ajeqal
 about-telemetry-addon-details-section =   Kib'anikil tz'aqat
@@ -76,7 +75,6 @@ about-telemetry-settings-explanation = Ri etataqonel tajin numöl { about-teleme
 #   $name (String): ping name, e.g. “saved-session”
 #   $timeStamp (String): ping localized timestamp, e.g. “2017/07/08 10:40:46”
 about-telemetry-ping-details = Chi kijujunal ri taq rutzijol yetaq pa “<a data-l10n-name="ping-link">taq xub'anïk</a>”. Tajin natz'ët ri { $name }, { $timestamp } xub'anïk.
-about-telemetry-ping-details-current = Chi kijujunal ri taq rutzijol yetaq pa “<a data-l10n-name="ping-link">taq xub'anïk</a>“. Tajin natz'ët ri wakami xub'anïk.
 about-telemetry-data-details-current = Jujun peraj etamab'äl nitaq pa molaj pa “<a data-l10n-name="ping-link">pings</a>“. Natz'ët ri tzij k'o wakami.
 # string used as a placeholder for the search field
 # More info about it can be found here:
@@ -103,13 +101,11 @@ about-telemetry-no-search-results-all = ¡Kojakuyu'! Majun achike xqïl pa jujun
 #   $sectionName (String): is replaced by the section name.
 about-telemetry-no-data-to-display = ¡Kojakuyu'! Wakami ma e k'o ta taq tzij pa “{ $sectionName }”
 # used as a tooltip for the “current” ping title in the sidebar
-about-telemetry-current-ping-sidebar = wakami xub'anïk
-# used as a tooltip for the “current” ping title in the sidebar
 about-telemetry-current-data-sidebar = tzij k'o wakami
 # used in the “Ping Type” select
 about-telemetry-telemetry-ping-type-all = ronojel
 # button label to copy the histogram
-about-telemetry-histogram-copy = Wachib'exïk
+about-telemetry-histogram-copy = Tiwachib'ëx
 # these strings are used in the “Slow SQL Statements” section
 about-telemetry-slow-sql-main = Eqal taq b'ab' SQL pa ri nïm b'ätz'
 about-telemetry-slow-sql-other = Eqal taq b'ab' SQL pa taq achib'il b'ätz'
@@ -118,11 +114,11 @@ about-telemetry-slow-sql-average = Runik'ajal q'ijul (nik'q'ij)
 about-telemetry-slow-sql-statement = B'ab'
 # these strings are used in the “Add-on Details” section
 about-telemetry-addon-table-id = Nimaläj rub'i' tz'aqat
-about-telemetry-addon-table-details = Kib'anikil
+about-telemetry-addon-table-details = Taq b'anikil
 # Variables:
 #   $addonProvider (String): the name of an Add-on Provider (e.g. “XPI”, “Plugin”)
 about-telemetry-addon-provider = Ya'öl { $addonProvider }
-about-telemetry-keys-header = Ch'akulal
+about-telemetry-keys-header = Ichinil
 about-telemetry-names-header = B'i'aj
 about-telemetry-values-header = Retal
 # Variables:
@@ -142,7 +138,7 @@ about-telemetry-object-header = wachinäq
 about-telemetry-extra-header = rutz'aqat
 about-telemetry-origin-section = Ruxe'el Telemetri
 about-telemetry-origin-origin = ruxe'el
-about-telemetry-origin-count = tajiläx
+about-telemetry-origin-count = ajilab'äl
 # Variables:
 #   $telemetryServerOwner (String): the value of the toolkit.telemetry.server_owner preference. Typically "Mozilla"
 about-telemetry-origins-explanation = <a data-l10n-name="origin-doc-link">Firefox Origin Telemetri</a> ke'awewaj kisik'ixik taq tzij chuwäch yetaq richin chi ri { $telemetryServerOwner } nitikïr yerajilaj taq wachinäq, po man etaman ta we k'o jun { -brand-product-name } ri xto'on pa ri ajilanem ri'. (<a data-l10n-name="prio-blog-link">Tetamäx ch'aqa' chik</a>)

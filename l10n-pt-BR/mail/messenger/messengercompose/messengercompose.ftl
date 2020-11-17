@@ -8,6 +8,9 @@
 #   $type (String) - the type of the addressing row
 remove-address-row-type = Remover o campo { $type }
 #   $type (String) - the type of the addressing row
+remove-address-row-type-label =
+    .tooltiptext = Remover o campo { $type }
+#   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
@@ -55,5 +58,5 @@ attachments-placeholder-tooltip =
 key-toggle-attachment-pane =
     .key = { attachment-bucket-count.accesskey }
 button-return-receipt =
-    .label = Recibo
-    .tooltiptext = Solicitar um recibo de retorno desta mensagem
+    .label = Confirmação
+    .tooltiptext = Solicitar uma confirmação de leitura desta mensagem

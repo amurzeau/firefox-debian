@@ -75,7 +75,7 @@ policy-Preferences = Definir e blocar le valor de un sub-ensemble de preferentia
 policy-PromptForDownloadLocation = Demandar ubi salvar le files quando on discarga.
 policy-Proxy = Configurar le parametros del servitor proxy.
 policy-RequestedLocales = Definir le lista de linguas desirate pro le application in ordine de preferentia.
-policy-SanitizeOnShutdown2 = Clarar datos de navigation al clausura.
+policy-SanitizeOnShutdown2 = Eliminar datos de navigation al clausura.
 policy-SearchEngines = Configurar le parametros del motores de recerca. Iste criterio es solmente disponibile sur le version con supporto extendite (Extended Support Release - ESR).
 policy-SearchSuggestEnabled = Activar o disactivar suggestiones de recerca.
 # For more information, see https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/PKCS11/Module_Installation

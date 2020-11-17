@@ -10,6 +10,8 @@ preferences-title =
             [windows] 설정
            *[other] 환경설정
         }
+category-list =
+    .aria-label = 분류
 pane-general-title = 일반
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,7 +43,22 @@ composition-addressing-header = 주소
 privacy-main-header = 개인 정보
 privacy-passwords-header = 비밀번호
 privacy-junk-header = 스팸
-privacy-data-collection-header = 데이터 수집 및 사용
+collection-header = { -brand-short-name } 데이터 수집과 사용
+collection-description = { -brand-short-name }를 모두를 위해 제공하고 개선하기 위해서 필요한 것만 수집하고 선택권을 제공하기 위해 노력합니다. 개인 정보를 전송하기 전에 항상 허가여부를 묻습니다.
+collection-privacy-notice = 개인정보처리방침
+collection-health-report-telemetry-disabled = { -vendor-short-name }에서 더 이상 기술 및 상호 작용 데이터를 캡처할 수 없습니다. 모든 과거 데이터는 30일 이내에 삭제됩니다.
+collection-health-report-telemetry-disabled-link = 더 알아보기
+collection-health-report =
+    .label = { -brand-short-name }가 기술과 상호 작용 정보를 { -vendor-short-name }에 전송하도록 허용
+    .accesskey = r
+collection-health-report-link = 더 알아보기
+# This message is displayed above disabled data sharing options in developer builds
+# or builds with no Telemetry support available.
+collection-health-report-disabled = 이 빌드 구성에서는 데이터 리포팅을 하지 않음
+collection-backlogged-crash-reports =
+    .label = { -brand-short-name }가 사용자를 대신해서 백로그 충돌 보고서를 보낼 수 있게 함
+    .accesskey = c
+collection-backlogged-crash-reports-link = 더 알아보기
 privacy-security-header = 보안
 privacy-scam-detection-title = 사기 탐지
 privacy-anti-virus-title = 바이러스 방지 프로그램
@@ -52,14 +69,10 @@ chat-notifications-title = 알림
 chat-pane-styling-header = 스타일링
 choose-messenger-language-description = { -brand-short-name }가 메뉴와 메시지, 알림을 표시할 언어를 선택하세요.
 manage-messenger-languages-button =
-    .label = 대체 수단 설정…
+    .label = 대체 설정…
     .accesskey = l
 confirm-messenger-language-change-description = 변경사항 적용을 위해 { -brand-short-name }를 재시작
 confirm-messenger-language-change-button = 적용하고 재시작
-update-pref-write-failure-title = 저장 실패
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = 설정을 저장할 수 없습니다. 파일에 저장할 수 없습니다: { $path }
 update-setting-write-failure-title = 업데이트 설정 저장 중 오류 발생
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -80,14 +93,19 @@ addons-button = 확장기능과 테마
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = 마스터 비밀번호를 만들기 위해 자격 증명을 검증하세요.
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = 마스터 비밀번호를 만들려면 Windows 로그인 자격 증명을 입력하세요. 이렇게 하면 계정의 보안을 보호할 수 있습니다.
+master-password-os-auth-dialog-message-win = 기본 비밀번호를 만들려면 Windows 로그인 자격 증명을 입력하세요. 이렇게 하면 계정의 보안을 보호할 수 있습니다.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Thunderbird is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
-master-password-os-auth-dialog-message-macosx = 마스터 비밀번호 만들기
+master-password-os-auth-dialog-message-macosx = 기본 비밀번호 만들기
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = 기본 비밀번호를 만들려면, Windows 로그인 자격 증명을 입력하세요. 이는 계정의 보안을 보호하는데 도움이 됩니다.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = 기본 비밀번호 만들기
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -99,7 +117,7 @@ focus-search-shortcut-alt =
     .key = k
 general-legend = { -brand-short-name } 시작 페이지
 start-page-label =
-    .label = 프로그램 시작시 메시지 창에 시작 페이지 출력
+    .label = { -brand-short-name }가 시작될 때 메시지 영역에 시작 페이지 표시
     .accesskey = W
 location-label =
     .value = 주소:
@@ -146,6 +164,9 @@ customize-alert-label =
 tray-icon-label =
     .label = 트레이 아이콘 보이기
     .accesskey = t
+mail-system-sound-label =
+    .label = 새 메일에 대한 기본 시스템 소리
+    .accesskey = D
 mail-custom-sound-label =
     .label = 사용자 정의
     .accesskey = U
@@ -195,7 +216,7 @@ search-integration-label =
 config-editor-button =
     .label = 설정 편집…
     .accesskey = C
-return-receipts-description = 수신 확인 메시지 설정
+return-receipts-description = { -brand-short-name }가 반송 메시지 처리를 결정함
 return-receipts-button =
     .label = 수신 확인…
     .accesskey = R
@@ -515,13 +536,22 @@ passwords-description = { -brand-short-name }는 계정 암호를 저장할 수 
 passwords-button =
     .label = 저장된 암호 목록…
     .accesskey = S
-master-password-description = 기본 암호는 모든 일반 암호를 보호합니다. 프로그램 다시 시작할 때 다시 입력해야 합니다.
+master-password-description = 기본 비밀번호는 모든 일반 비밀번호를 보호합니다. 프로그램 시작할 때 다시 입력해야 합니다.
 master-password-label =
-    .label = 기본 암호 사용
+    .label = 기본 비밀번호 사용
     .accesskey = U
 master-password-button =
-    .label = 기본 암호 변경…
+    .label = 기본 비밀번호 변경…
     .accesskey = C
+primary-password-description = 기본 비밀번호는 모든 비밀번호를 보호하지만 세션마다 한번씩 입력해야 합니다.
+primary-password-label =
+    .label = 기본 비밀번호 사용
+    .accesskey = U
+primary-password-button =
+    .label = 기본 비밀번호 변경…
+    .accesskey = C
+forms-primary-pw-fips-title = 현재 FIPS 모드입니다. FIPS는 기본 비밀번호가 설정되어야 합니다.
+forms-master-pw-fips-desc = 비밀번호 변경 실패
 junk-description = 기본 스팸 메일 설정을 하시기 바랍니다. 각 계정마다 스팸 메일 설정을 별도로 하실 수 있습니다.
 junk-label =
     .label = 스팸으로 선택할 때:
@@ -656,6 +686,29 @@ chat-variant-label =
 chat-header-label =
     .label = 헤더 보기
     .accesskey = H
+# This is used to determine the width of the search field in about:preferences,
+# in order to make the entire placeholder string visible
+#
+# Please keep the placeholder string short to avoid truncation.
+#
+# Notice: The value of the `.style` attribute is a CSS string, and the `width`
+# is the name of the CSS property. It is intended only to adjust the element's width.
+# Do not translate.
+search-input-box =
+    .style = width: 15.4em
+    .placeholder =
+        { PLATFORM() ->
+            [windows] 설정에서 찾기
+           *[other] 설정에서 찾기
+        }
 
 ## Preferences UI Search Results
 
+search-results-header = 검색 결과
+# `<span data-l10n-name="query"></span>` will be replaced by the search term.
+search-results-empty-message =
+    { PLATFORM() ->
+        [windows] 죄송합니다! “<span data-l10n-name="query"></span>”설정에 대한 결과가 없습니다.
+       *[other] 죄송합니다! “<span data-l10n-name="query"></span>”설정에 대한 결과가 없습니다.
+    }
+search-results-help-link = 도움이 필요하세요? <a data-l10n-name="url">{ -brand-short-name } 지원</a>에 방문하세요.

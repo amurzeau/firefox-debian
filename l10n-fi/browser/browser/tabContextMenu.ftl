@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Siirrä uuteen ikkunaan
     .accesskey = S
-undo-close-tab =
-    .label = Kumoa välilehden sulkeminen
-    .accesskey = u
 tab-context-close-multiple-tabs =
     .label = Sulje useita välilehtiä
     .accesskey = t
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -77,4 +78,18 @@ move-tabs =
     .accesskey = r
 move-tab =
     .label = Siirrä välilehti
+    .accesskey = r
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Sulje välilehti
+           *[other] Sulje välilehdet
+        }
+    .accesskey = S
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Siirrä välilehti
+           *[other] Siirrä välilehdet
+        }
     .accesskey = r

@@ -17,8 +17,14 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = Vybrať všetky karty
     .accesskey = V
-toolbar-context-menu-undo-close-tab =
-    .label = Obnoviť zatvorenú kartu
+toolbar-context-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Obnoviť zatvorenú kartu
+            [one] Obnoviť zatvorenú kartu
+            [few] Obnoviť zatvorené karty
+           *[other] Obnoviť zatvorené karty
+        }
     .accesskey = b
 
 toolbar-context-menu-manage-extension =

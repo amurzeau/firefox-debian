@@ -19,12 +19,11 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (Privát böngészés)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (Privát böngészés)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (Privát böngészés)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (Privát böngészés)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -56,7 +54,7 @@ urlbar-identity-button =
 urlbar-services-notification-anchor =
     .tooltiptext = Telepítési üzenetpanel megnyitása
 urlbar-web-notification-anchor =
-    .tooltiptext = Módosítsa, hogy kap-e értesítéseket ettől az oldaltól
+    .tooltiptext = Módosítsa, hogy kaphat-e értesítéseket ettől az oldaltól
 urlbar-midi-notification-anchor =
     .tooltiptext = MIDI panel megnyitása
 urlbar-eme-notification-anchor =
@@ -111,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Gépeljen kevesebbet, találjon többet: { $engineName } keresés közvetlenül a címsorból.
 urlbar-search-tips-redirect-2 = Kezdjen keresni a címsorban, és lássa a { $engineName } javaslatait, valamint a böngészési előzményeit.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Válassza ezt a rövidítést, hogy gyorsabban megtalálja, amire szüksége van.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Könyvjelzők
+urlbar-search-mode-tabs = Lapok
+urlbar-search-mode-history = Előzmények
 
 ##
 
@@ -138,12 +145,10 @@ urlbar-midi-blocked =
     .tooltiptext = Blokkolta a MIDI elérést ezen az oldalon.
 urlbar-install-blocked =
     .tooltiptext = Blokkolta a kiegészítők telepítését erről az oldalról.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = Könyvjelző szerkesztése ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -160,6 +165,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Kiegészítő eltávolítása
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Lap küldése az eszközre
+           *[other] { $tabCount } lap küldése az eszközre
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Lap küldése az eszközre
+           *[other] { $tabCount } lap küldése az eszközre
+        }
+page-action-pocket-panel =
+    .label = Oldal mentése a { -pocket-brand-name }be
+page-action-copy-url-panel =
+    .label = Hivatkozás másolása
+page-action-copy-url-urlbar =
+    .tooltiptext = Hivatkozás másolása
+page-action-email-link-panel =
+    .label = Hivatkozás küldése e-mailben…
+page-action-email-link-urlbar =
+    .tooltiptext = Hivatkozás küldése e-mailben…
+page-action-share-url-panel =
+    .label = Megosztás
+page-action-share-url-urlbar =
+    .tooltiptext = Megosztás
+page-action-share-more-panel =
+    .label = Továbbiak…
+page-action-send-tab-not-ready =
+    .label = Eszközök szinkronizálása…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Lap rögzítése
+page-action-pin-tab-urlbar =
+    .tooltiptext = Lap rögzítése
+page-action-unpin-tab-panel =
+    .label = Lap feloldása
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Lap feloldása
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -171,17 +223,15 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ezúttal keressen a következővel:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = Keresési beállítások módosítása
 search-one-offs-change-settings-compact-button =
     .tooltiptext = Keresési beállítások módosítása
-
 search-one-offs-context-open-new-tab =
     .label = Keresés új lapon
     .accesskey = r
@@ -191,16 +241,34 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Beállítás alapértelmezett keresőszolgáltatásként a privát ablakokban
     .accesskey = p
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Könyvjelzők ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Lapok ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Előzmények ({ $restrict })
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = Szerkesztő megjelenítése mentéskor
     .accesskey = e
-
 bookmark-panel-done-button =
     .label = Kész
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -220,6 +288,17 @@ identity-passive-loaded = A weboldal egyes részei nem biztonságosak (például
 identity-active-loaded = Kikapcsolta a védelmet ezen az oldalon.
 identity-weak-encryption = Ez az oldal gyenge titkosítást használ.
 identity-insecure-login-forms = Az oldalon megadott bejelentkezési adatok nincsenek biztonságban.
+identity-https-only-connection-upgraded = (frissítve HTTPS-re)
+identity-https-only-label = Csak HTTPS mód
+identity-https-only-dropdown-on =
+    .label = Be
+identity-https-only-dropdown-off =
+    .label = Ki
+identity-https-only-dropdown-off-temporarily =
+    .label = Ideiglenesen ki
+identity-https-only-info-turn-on2 = Kapcsolja be a Csak HTTPS módot ezen az oldalon, ha azt akarja, hogy a { -brand-short-name } frissítse a kapcsolatot, ha lehetséges.
+identity-https-only-info-turn-off2 = Ha az oldal nem megfelelően működik, lehet ki kell kapcsolnia a Csak HTTPS módot az oldalon, hogy nem biztonságos HTTP-vel töltse újra.
+identity-https-only-info-no-upgrade = Nem lehet frissíteni a kapcsolatot HTTP-ről.
 identity-permissions =
     .value = Engedélyek
 identity-permissions-reload-hint = Lehet hogy újra kell töltenie az oldalt a változások érvényesítéséhez.
@@ -265,6 +344,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Bezárás
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Könyvjelzők importálása…
+    .tooltiptext = Könyvjelzők másolása egy másik böngészőből a { -brand-short-name }ba.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -274,15 +359,12 @@ popup-select-microphone =
     .value = Megosztandó mikrofon:
     .accesskey = M
 popup-all-windows-shared = A képernyő minden látható ablaka meg lesz osztva.
-
 popup-screen-sharing-not-now =
     .label = Most nem
     .accesskey = n
-
 popup-screen-sharing-never =
     .label = Soha ne engedélyezze
     .accesskey = S
-
 popup-silence-notifications-checkbox = A { -brand-short-name } értesítéseinek kikapcsolása megosztás közben
 popup-silence-notifications-checkbox-warning = A { -brand-short-name } nem fog értesítéseket megjeleníteni megosztás közben.
 
@@ -299,27 +381,122 @@ sharing-warning-disable-for-session =
 
 enable-devtools-popup-description = Az F12 gyorsbillentyű használatához először nyissa meg fejlesztői eszközöket a Webfejlesztő menüben.
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Keresés vagy cím
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Keresés vagy cím
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Keresés a weben
+    .aria-label = Keresés a(z) { $name } keresővel
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Adja meg a keresési kifejezéseket
+    .aria-label = Keresés a(z) { $name } keresővel
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Adja meg a keresési kifejezéseket
+    .aria-label = Könyvjelzők keresése
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Adja meg a keresési kifejezéseket
+    .aria-label = Előzmények keresése
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Adja meg a keresési kifejezéseket
+    .aria-label = Lapok keresése
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Keressen a(z) { $name } keresővel vagy adjon meg egy címet
 urlbar-remote-control-notification-anchor =
     .tooltiptext = A böngészőt távolról irányítják
 urlbar-permissions-granted =
     .tooltiptext = További engedélyeket adott ennek az oldalnak.
 urlbar-switch-to-tab =
     .value = Váltás erre a lapra:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Kiegészítő:
-
 urlbar-go-button =
     .tooltiptext = Ugrás a címmezőben levő címre
 urlbar-page-action-button =
     .tooltiptext = Oldalműveletek
 urlbar-pocket-button =
     .tooltiptext = Mentés a { -pocket-brand-name }be
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = { $engine } keresés egy privát ablakban
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Keresés egy privát ablakban
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } keresés
+urlbar-result-action-sponsored = Szponzorált
+urlbar-result-action-switch-tab = Váltás erre a lapra
+urlbar-result-action-visit = Keresse fel:
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Nyomja meg a Tabot, hogy a következővel keressen: { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Nyomja meg a Tabot, hogy a következővel keressen: { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Keresés a(z) { $engine } segítségével közvetlenül a címsorból
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Keresés a(z) { $engine } webhelyen közvetlenül a címsorból
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Könyvjelzők keresése
+urlbar-result-action-search-history = Előzmények keresése
+urlbar-result-action-search-tabs = Lapok keresése
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = A(z) <span data-l10n-name="domain">{ $domain }</span> mostantól teljes képernyős
+fullscreen-warning-no-domain = A dokumentum mostantól teljes képernyős
+fullscreen-exit-button = Kilépés a teljes képernyőből (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Kilépés a teljes képernyőből (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = A következő irányítja az egérmutatót: <span data-l10n-name="domain">{ $domain }</span> . Nyomja meg az Esc gombot az irányítás visszavételéhez.
+pointerlock-warning-no-domain = Ez a dokumentum vezérli az egérmutatóját. Nyomja meg az Esc gombot az irányítás visszavételéhez.

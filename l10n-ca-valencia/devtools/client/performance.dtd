@@ -15,14 +15,16 @@
 
 
 
+
+
 <!ENTITY performanceUI.bufferStatusTooltip "L'analitzador de rendiment emmagatzema mostres en una memòria intermèdia circular i, en assolir el límit de l'enregistrament, va sobreescrivint les mostres des del principi.">
 <!-- LOCALIZATION NOTE (performanceUI.disabledRealTime.nonE10SBuild): This string
   -  is displayed as a message for why the real time overview graph is disabled
   -  when running on a non-multiprocess build. -->
-
 <!-- LOCALIZATION NOTE (performanceUI.disabledRealTime.disabledE10S): This string
   -  is displayed as a message for why the real time overview graph is disabled
   -  when running on a build that can run multiprocess Firefox, but just is not enabled. -->
+
 
 <!ENTITY performanceUI.disabledRealTime.disabledE10S "Habiliteu el Firefox amb multiprocés a les preferències per representar les dades d'enregistrament en temps real.">
 <!-- LOCALIZATION NOTE (performanceUI.bufferStatusFull): This string
@@ -67,8 +69,6 @@
 <!ENTITY performanceUI.table.function.tooltip         "El nom i la ubicació de la font de la funció mostrejada.">
 <!ENTITY performanceUI.table.totalAlloc               "Total d'assignacions mostrejades">
 <!ENTITY performanceUI.table.totalAlloc.tooltip       "El nombre total d'assignacions d'objectes mostrejades en esta ubicació i als destinataris de la crida.">
-<!ENTITY performanceUI.table.selfAlloc                "Assignacions mostrejades pròpies">
-<!ENTITY performanceUI.table.selfAlloc.tooltip        "El nombre total d'assignacions d'objectes mostrejades en esta ubicació.">
 <!-- LOCALIZATION NOTE (performanceUI.options.filter.tooltiptext): This string
   -  is displayed next to the filter button-->
 

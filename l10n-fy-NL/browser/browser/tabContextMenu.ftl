@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Ferpleatse nei nij finster
     .accesskey = f
-undo-close-tab =
-    .label = Ljepblêd slute ûngedien meitsje
-    .accesskey = m
 tab-context-close-multiple-tabs =
     .label = Mear ljepblêden slute
     .accesskey = M
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -78,4 +79,20 @@ move-tabs =
     .accesskey = f
 move-tab =
     .label = Ljepblêd ferpleatse
+    .accesskey = f
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Ljepblêd slute
+            [one] Ljepblêd slute
+           *[other] Ljepblêden slute
+        }
+    .accesskey = L
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Ljepblêd ferpleatse
+            [one] Ljepblêd ferpleatse
+           *[other] Ljepblêden ferpleatse
+        }
     .accesskey = f

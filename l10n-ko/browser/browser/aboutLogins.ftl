@@ -1,11 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = 로그인과 비밀번호
@@ -32,6 +27,7 @@ menu =
     .title = 메뉴 열기
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = 다른 브라우저에서 가져오기…
+about-logins-menu-menuitem-import-from-a-file = 파일에서 가져오기…
 about-logins-menu-menuitem-export-logins = 로그인 내보내기…
 menu-menuitem-preferences =
     { PLATFORM() ->
@@ -71,12 +67,14 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = 저장된 로그인을 찾으십니까? { -sync-brand-short-name }를 설정하세요.
+about-logins-login-intro-heading-logged-out = 저장된 로그인을 찾으세요? { -sync-brand-short-name }를 설정하거나 가져오세요.
 about-logins-login-intro-heading-logged-in = 동기화된 로그인을 찾을 수 없습니다.
 login-intro-description = 다른 기기에 { -brand-product-name }의 로그인을 저장한 경우, 다음 방법을 참조하세요:
 login-intro-instruction-fxa = 로그인이 저장된 기기에서 { -fxaccount-brand-name }을 만들거나 로그인하세요
 login-intro-instruction-fxa-settings = { -sync-brand-short-name } 설정에서 로그인 확인란을 선택했는지 확인하세요
 about-logins-intro-instruction-help = 더 많은 도움이 필요하면 <a data-l10n-name="help-link">{ -lockwise-brand-short-name } 지원</a>을 방문하세요
 about-logins-intro-import = 로그인이 다른 브라우저에 저장된 경우, <a data-l10n-name="import-link">{ -lockwise-brand-short-name }로 가져올 수 있습니다</a>
+about-logins-intro-import2 = 로그인이 { -brand-product-name }의 외부에 저장된 경우, <a data-l10n-name="import-browser-link">다른 브라우저</a> 또는 <a data-l10n-name="import-file-link">파일</a>에서 가져올 수 있습니다
 
 ## Login
 
@@ -126,15 +124,19 @@ about-logins-copy-password-os-auth-dialog-message-win = 비밀번호를 복사�
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = 저장된 비밀번호 복사
+
+## Master Password notification
+
+master-password-notification-message = 저장된 로그인과 비밀번호를 보려면 기본 비밀번호를 입력하세요
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = 로그인을 내보내려면, Windows 로그인 자격 증명을 입력하세요. 이는 계정의 보안을 보호하는데 도움이 됩니다.
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = 저장된 로그인과 비밀번호 내보내기
 
-## Master Password notification
+## Primary Password notification
 
-master-password-notification-message = 저장된 로그인과 비밀번호를 보려면 마스터 비밀번호를 입력하세요
+about-logins-primary-password-notification-message = 저장된 로그인과 비밀번호를 보려면 기본 비밀번호를 입력하세요
 master-password-reload-button =
     .label = 로그인
     .accesskey = L
@@ -197,7 +199,7 @@ about-logins-vulnerable-alert-learn-more-link = 더 알아보기
 # a new login that is identical to an existing saved login.
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
-about-logins-error-message-duplicate-login-with-link = 해당 사용자 이름으로 { $loginTitle }에 대한 항목이 이미 존재합니다. <a data-l10n-name="duplicate-link">기존 항목으로 이동하시겠습니까?</a>
+about-logins-error-message-duplicate-login-with-link = 해당 사용자 이름으로 { $loginTitle }에 대한 항목이 이미 있습니다. <a data-l10n-name="duplicate-link">기존 항목으로 이동하시겠습니까?</a>
 # This is a generic error message.
 about-logins-error-message-default = 이 비밀번호를 저장하는 중 오류가 발생했습니다.
 
@@ -212,6 +214,19 @@ about-logins-export-file-picker-export-button = 내보내기
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
 about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV 문서
+       *[other] CSV 파일
+    }
+
+## Login Import Dialog
+
+# Title of the file picker dialog
+about-logins-import-file-picker-title = 로그인 파일 가져오기
+about-logins-import-file-picker-import-button = 가져오기
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
     { PLATFORM() ->
         [macos] CSV 문서
        *[other] CSV 파일

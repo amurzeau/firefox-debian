@@ -1,10 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Donyo iyie ki Mung me donyo
@@ -17,12 +13,9 @@ login-app-promo-android =
     .alt = Nong i Google Play
 login-app-promo-apple =
     .alt = Gam ki i App Store
-
 login-filter =
     .placeholder = Yeny Donyo iyie
-
 create-login-button = Cwe Donyo iyie manyen
-
 fxaccounts-sign-in-text = Nong mung me donyo mamegi i nyonyo ni mukene
 fxaccounts-sign-in-button = Dony iyie { -sync-brand-short-name }
 fxaccounts-avatar-button =
@@ -32,6 +25,9 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Yab jami ayera
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = Kel ki i Layeny Mukene…
+about-logins-menu-menuitem-import-from-a-file = Kel ki i Pwail…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Ter
@@ -46,6 +42,8 @@ menu-menuitem-iphone-app = { -lockwise-brand-short-name } pi iPhone ki iPad
 login-list =
     .aria-label = Donyo iyie ma rwatte ki lok me yeny
 login-list-name-option = Nying (A-Z)
+login-list-name-reverse-option = Nying (Z-A)
+about-logins-login-list-alerts-option = Ciko
 login-list-last-changed-option = Yub me agiki
 login-list-last-used-option = Tic kwede me agiki
 login-list-intro-title = Pe ki nongo donyo iyie mo
@@ -61,6 +59,7 @@ login-intro-heading = Itye ka yenyo donyo iyie mamegi ma igwoko? Ter { -sync-bra
 login-intro-description = Kacce igwoko donyo iyie mamegi i { -brand-product-name } i nyonyo mukene, man aye kit ma itwero nongo gi kany:
 login-intro-instruction-fxa = Cwe onyo dony iyie { -fxaccount-brand-name } mamegi i nyonyo ma kigwoko iyie donyo iyie mamegi.
 about-logins-intro-import = Kacce kigwoko donyo iyie mamgei ii layeny mukene, itwero <a data-l10n-name="import-link">kelo gi ki woko ii { -lockwise-brand-short-name }</a>
+about-logins-intro-import2 = Kacce kigwoko donyo iyie mamegi woko pa { -brand-product-name }, itwero <a data-l10n-name="import-browser-link">kelo gi ki i layeny mukene</a> onyo <a data-l10n-name="import-file-link">ki i pwail</a>
 
 ## Login
 
@@ -95,8 +94,17 @@ about-logins-os-auth-dialog-caption = { -brand-full-name }
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
+# This message can be seen when attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = yub donyo iyie ma kigwoko ni
+# This message can be seen when attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = nyut mung me donyo ma kigwoko ni
 
 ## Master Password notification
+
+
+## Primary Password notification
 
 master-password-reload-button =
     .label = Dony iyie
@@ -113,11 +121,10 @@ about-logins-enable-password-sync-dont-ask-again-button =
 confirmation-dialog-cancel-button = Juki
 confirmation-dialog-dismiss-button =
     .title = Juki
-
 about-logins-confirm-remove-dialog-title = Kwany donyo iyie man?
 confirm-delete-dialog-message = Pe ki twero gonyo tic man.
 about-logins-confirm-remove-dialog-confirm-button = Kwany
-
+about-logins-confirm-export-dialog-confirm-button = Cwal woko...
 confirm-discard-changes-dialog-message = Alokaloka weng ma pe kigwoko bi rweny woko.
 
 ## Breach Alert notification
@@ -139,6 +146,10 @@ about-logins-vulnerable-alert-learn-more-link = Nong ngec mapol
 # This is a generic error message.
 about-logins-error-message-default = Bal mo otime ikare me temo gwoko mung me donyo man.
 
-
 ## Login Export Dialog
 
+about-logins-export-file-picker-export-button = Cwal woko
+
+## Login Import Dialog
+
+about-logins-import-file-picker-import-button = Kel ki woko

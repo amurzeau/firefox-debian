@@ -36,6 +36,6 @@ screenshots-self-screenshot-error-title = ¡Nun pues facer captures de pantalla 
 
 screenshots-empty-selection-error-title = La esbilla ye perpequeña
 
-screenshots-private-window-error-title = Les captures de pantalla tán desactivaes nel mou Restolar en privao
+screenshots-private-window-error-title = { -screenshots-brand-name } ta desactiváu nel mou de restolar en privao
 screenshots-private-window-error-details = Perdón poles molesties. Tamos trabayando nesta carauterística pa llanzamientos futuros.
 

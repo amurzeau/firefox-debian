@@ -11,7 +11,6 @@
 # This string is used so that the window has a title in tools that enumerate/look for window
 # titles. It is not normally visible anywhere.
 webrtc-indicator-title = { -brand-short-name } - Dangosydd rhannu
-
 webrtc-sharing-window = Rydych yn rhannu ffenestr rhaglen arall.
 webrtc-sharing-browser-window = Rydych chi'n rhannu { -brand-short-name }.
 webrtc-sharing-screen = Rydych yn rhannu'ch sgrin gyfan.
@@ -20,5 +19,22 @@ webrtc-microphone-button =
     .title = Mae'ch meicroffon yn cael ei rannu. Cliciwch i reoli rhannu.
 webrtc-camera-button =
     .title = Mae'ch camera yn cael ei rannu. Cliciwch i reoli rhannu.
+webrtc-microphone-unmuted =
+    .title = Diffodd y meicroffon
+webrtc-microphone-muted =
+    .title = Troi'r meicroffon ymlaen
+webrtc-camera-unmuted =
+    .title = Diffodd y meicroffon
+webrtc-camera-muted =
+    .title = Troi'r camera ymlaen
 webrtc-minimize =
     .title = Lleihau'r dangosydd
+# This string will display as a tooltip on supported systems where we show
+# device sharing state in the OS notification area. We do not use these strings
+# on macOS, as global menu bar items do not have native tooltips.
+webrtc-camera-system-menu =
+    .label = Rydych yn rhannu'ch camera. Cliciwch i reoli rhannu.
+webrtc-microphone-system-menu =
+    .label = Rydych yn rhannu'ch meicroffon. Cliciwch i reoli rhannu.
+webrtc-screen-system-menu =
+    .label = Rydych yn rhannu ffenestr neu sgrin. Cliciwch i reoli rhannu.

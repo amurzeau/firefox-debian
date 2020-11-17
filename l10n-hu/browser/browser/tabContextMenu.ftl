@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Áthelyezés új ablakba
     .accesskey = t
-undo-close-tab =
-    .label = Lapbezárás visszavonása
-    .accesskey = v
 tab-context-close-multiple-tabs =
     .label = Több lap bezárása
     .accesskey = T
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -79,3 +80,19 @@ move-tabs =
 move-tab =
     .label = Lap áthelyezése
     .accesskey = h
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Lap bezárása
+            [one] Lap bezárása
+           *[other] Lapok bezárása
+        }
+    .accesskey = C
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Lap áthelyezése
+            [one] Lap áthelyezése
+           *[other] Lapok áthelyezése
+        }
+    .accesskey = v

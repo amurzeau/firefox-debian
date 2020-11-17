@@ -13,15 +13,21 @@
 ## avoid breaking quoted text).
 
 onboarding-button-label-learn-more = เรียนรู้เพิ่มเติม
-onboarding-button-label-try-now = ลองเลยตอนนี้
 onboarding-button-label-get-started = เริ่มต้นใช้งาน
 
 ## Welcome modal dialog strings
 
+
+### UI strings for the simplified onboarding / multistage about:welcome
+### Various strings use a non-breaking space to avoid a single dangling /
+### widowed word, so test on various window sizes if you also want this.
+
+
+## Welcome page strings
+
 onboarding-welcome-header = ยินดีต้อนรับสู่ { -brand-short-name }
 onboarding-welcome-body = คุณมีเบราว์เซอร์แล้ว<br/>ชมคุณสมบัติอื่นที่เหลือของ { -brand-product-name }
 onboarding-welcome-learn-more = เรียนรู้เพิ่มเติมเกี่ยวกับประโยชน์
-onboarding-join-form-header = เข้าร่วม { -brand-product-name }
 onboarding-welcome-modal-get-body = คุณมีเบราว์เซอร์แล้ว<br/>มาทำให้ { -brand-product-name } ใช้งานได้อย่างเต็มประสิทธิภาพกัน
 onboarding-welcome-modal-supercharge-body = เพิ่มความคุ้มครองความเป็นส่วนตัวของคุณให้มากขึ้น
 onboarding-welcome-modal-privacy-body = คุณมีเบราว์เซอร์ มาเพิ่มการปกป้องความเป็นส่วนตัวกัน
@@ -38,6 +44,7 @@ onboarding-join-form-signin-label = มีบัญชีอยู่แล้�
 # Text for link to submit the sign in form
 onboarding-join-form-signin = ลงชื่อเข้า
 onboarding-start-browsing-button-label = เริ่มการเรียกดู
+onboarding-not-now-button-label = ไม่ใช่ตอนนี้
 onboarding-cards-dismiss =
     .title = ยกเลิก
     .aria-label = ยกเลิก
@@ -66,11 +73,7 @@ onboarding-sync-form-sub-header = เพื่อดำเนินการต�
 ## These are individual benefit messages shown with an image, title and
 ## description.
 
-onboarding-benefit-products-title = ผลิตภัณฑ์ที่มีประโยชน์
 onboarding-benefit-products-text = ทำสิ่งต่าง ๆ ให้สำเร็จด้วยเครื่องมือมากมายที่เคารพความเป็นส่วนตัวของคุณบนอุปกรณ์ทุกเครื่องของคุณ
-onboarding-benefit-knowledge-title = ความรู้เชิงปฏิบัติ
-onboarding-benefit-knowledge-text = เรียนรู้ทุกสิ่งที่คุณต้องรู้เพื่อออนไลน์อย่างชาญฉลาดและปลอดภัยยิ่งขึ้น
-onboarding-benefit-privacy-title = ความเป็นส่วนตัวที่แท้จริง
 # "Personal Data Promise" is a concept that should be translated consistently
 # across the product. It refers to a concept shown elsewhere to the user: "The
 # Firefox Personal Data Promise is the way we honor your data in everything we
@@ -84,6 +87,99 @@ onboarding-benefit-monitor-text = รับการแจ้งเตือน�
 onboarding-benefit-lockwise-title = { -lockwise-brand-short-name }
 onboarding-benefit-lockwise-text = จัดการรหัสผ่านของคุณให้ปลอดภัยและพกพาได้
 
+## Custom Return To AMO onboarding strings
+
+return-to-amo-subtitle = เยี่ยม คุณได้ติดตั้ง { -brand-short-name } แล้ว
+# <img data-l10n-name="icon"/> will be replaced with the icon belonging to the extension
+#
+# Variables:
+#   $addon-name (String) - Name of the add-on
+return-to-amo-addon-title = ตอนนี้มาติดตั้ง <img data-l10n-name="icon"/> <b>{ $addon-name }</b> กันเลย
+return-to-amo-add-extension-label = เพิ่มส่วนขยาย
+
+## Multistage 3-screen onboarding flow strings (about:welcome pages)
+
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. { -brand-short-name } should stay inside the span.
+onboarding-multistage-welcome-header = ยินดีต้อนรับสู่ <span data-l10n-name="zap">{ -brand-short-name }</span>
+onboarding-multistage-welcome-subtitle = เบราว์เซอร์ที่รวดเร็ว ปลอดภัย และเป็นส่วนตัวที่ได้รับการสนับสนุนโดยองค์กรไม่แสวงหาผลกำไร
+onboarding-multistage-welcome-primary-button-label = เริ่มการตั้งค่า
+onboarding-multistage-welcome-secondary-button-label = ลงชื่อเข้า
+onboarding-multistage-welcome-secondary-button-text = มีบัญชีแล้วหรือไม่?
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "more" should stay inside the span.
+onboarding-multistage-import-header = นำเข้ารหัสผ่าน <br/>ที่คั่นหน้า และ<span data-l10n-name="zap">อื่น ๆ</span>
+onboarding-multistage-import-subtitle = มาจากเบราว์เซอร์อื่นหรือไม่? คุณสามารถนำทุกอย่างมาสู่ { -brand-short-name } ได้ง่าย ๆ
+onboarding-multistage-import-primary-button-label = เริ่มการนำเข้า
+onboarding-multistage-import-secondary-button-label = ไม่ใช่ตอนนี้
+# Info displayed in the footer of import settings screen during onboarding flow.
+# This supports welcome screen showing top sites imported from the user's default browser.
+onboarding-import-sites-disclaimer = ไซต์ที่แสดงที่นี่ถูกพบบนอุปกรณ์นี้ { -brand-short-name } จะไม่บันทึกหรือซิงค์ข้อมูลจากเบราว์เซอร์อื่นเว้นแต่คุณจะเลือกนำเข้า
+# Aria-label to make the "steps" of multistage onboarding visible to screen readers.
+# Variables:
+#   $current (Int) - Number of the current page
+#   $total (Int) - Total number of pages
+onboarding-welcome-steps-indicator =
+    .aria-label = เริ่มต้นใช้งาน: หน้าจอ { $current } จาก { $total }
+# The <span data-l10n-name="zap"></span> in this string allows a "zap" underline style to be
+# automatically added to the text inside it. "look" should stay inside the span.
+onboarding-multistage-theme-header = เลือก<span data-l10n-name="zap">รูปลักษณ์</span>
+onboarding-multistage-theme-subtitle = ปรับแต่ง { -brand-short-name } ด้วยชุดตกแต่ง
+onboarding-multistage-theme-primary-button-label = บันทึกชุดตกแต่ง
+onboarding-multistage-theme-secondary-button-label = ไม่ใช่ตอนนี้
+# Automatic theme uses operating system color settings
+onboarding-multistage-theme-label-automatic = อัตโนมัติ
+onboarding-multistage-theme-label-light = สว่าง
+onboarding-multistage-theme-label-dark = มืด
+# "Firefox Alpenglow" here is the name of the theme, and should be kept in English.
+onboarding-multistage-theme-label-alpenglow = Firefox Alpenglow
+
+## Please make sure to split the content of the title attribute into lines whose
+## width corresponds to about 40 Latin characters, to ensure that the tooltip
+## doesn't become too long. Line breaks will be preserved when displaying the
+## tooltip.
+
+# Tooltip displayed on hover of automatic theme
+onboarding-multistage-theme-tooltip-automatic-2 =
+    .title =
+        สืบทอดรูปลักษณ์ของระบบปฏิบัติการของคุณ
+        สำหรับปุ่ม เมนู และหน้าต่าง
+# Input description for automatic theme
+onboarding-multistage-theme-description-automatic-2 =
+    .aria-description =
+        สืบทอดรูปลักษณ์ของระบบปฏิบัติการของคุณ
+        สำหรับปุ่ม เมนู และหน้าต่าง
+# Tooltip displayed on hover of light theme
+onboarding-multistage-theme-tooltip-light-2 =
+    .title =
+        ใช้ลักษณะที่ปรากฏแบบสีอ่อนสำหรับปุ่ม
+        เมนู และหน้าต่าง
+# Input description for light theme
+onboarding-multistage-theme-description-light =
+    .aria-description =
+        ใช้ลักษณะที่ปรากฏแบบสีอ่อนสำหรับปุ่ม
+        เมนู และหน้าต่าง
+# Tooltip displayed on hover of dark theme
+onboarding-multistage-theme-tooltip-dark-2 =
+    .title =
+        ใช้ลักษณะที่ปรากฏแบบสีเข้มสำหรับปุ่ม
+        เมนู และหน้าต่าง
+# Input description for dark theme
+onboarding-multistage-theme-description-dark =
+    .aria-description =
+        ใช้ลักษณะที่ปรากฏแบบสีเข้มสำหรับปุ่ม
+        เมนู และหน้าต่าง
+# Tooltip displayed on hover of Alpenglow theme
+onboarding-multistage-theme-tooltip-alpenglow-2 =
+    .title =
+        ใช้ลักษณะที่ปรากฏแบบสีสันสำหรับปุ่ม
+        เมนู และหน้าต่าง
+# Input description for Alpenglow theme
+onboarding-multistage-theme-description-alpenglow =
+    .aria-description =
+        ใช้ลักษณะที่ปรากฏแบบสีสันสำหรับปุ่ม
+        เมนู และหน้าต่าง
+
 ## These strings belong to the individual onboarding messages.
 
 
@@ -91,17 +187,6 @@ onboarding-benefit-lockwise-text = จัดการรหัสผ่านข
 ## Each message also has an associated button for the user to try the feature.
 ## The string for the button is found above, in the UI strings section
 
-onboarding-private-browsing-title = การเรียกดูแบบส่วนตัว
-onboarding-private-browsing-text = เรียกดูด้วยตัวคุณเอง การเรียกดูแบบส่วนตัวพร้อมการปิดกั้นเนื้อหาปิดกั้นตัวติดตามออนไลน์ที่ติดตามคุณในเว็บต่าง ๆ
-onboarding-screenshots-title = ภาพหน้าจอ
-onboarding-screenshots-text = จับ บันทึก และแบ่งปันภาพหน้าจอ - โดยไม่ต้องออกจาก { -brand-short-name } จับภาพเป็นบริเวณหรือทั้งหน้าตามที่คุณเรียกดู จากนั้นบันทึกไปยังเว็บเพื่อความง่ายในการเข้าถึงและแบ่งปัน
-onboarding-addons-title = ส่วนเสริม
-onboarding-addons-text = เพิ่มคุณลักษณะเพิ่มเติมที่ทำให้ { -brand-short-name } ทำงานได้มากขึ้นสำหรับคุณ เปรียบเทียบราคา ตรวจสอบสภาพอากาศ หรือแสดงบุคลิกภาพของคุณด้วยชุดตกแต่งที่กำหนดเอง
-onboarding-ghostery-title = Ghostery
-onboarding-ghostery-text = ท่องเว็บได้เร็ว ฉลาด และปลอดภัยขึ้นด้วยส่วนขยาย เช่น Ghostery ซึ่งให้คุณปิดกั้นโฆษณาที่น่ารำคาญ
-# Note: "Sync" in this case is a generic verb, as in "to synchronize"
-onboarding-fxa-title = ซิงค์
-onboarding-fxa-text = ลงทะเบียน { -fxaccount-brand-name } และซิงค์ที่คั่นหน้า, รหัสผ่าน และแท็บที่เปิดอยู่ของคุณในทุกที่ที่คุณใช้ { -brand-short-name }
 onboarding-tracking-protection-title2 = การป้องกันจากการติดตาม
 onboarding-tracking-protection-text2 = { -brand-short-name } ช่วยหยุดเว็บไซต์ไม่ให้ติดตามคุณออนไลน์ ทำให้โฆษณาติดตามคุณไปทั่วทั้งเว็บได้ยากขึ้น
 onboarding-tracking-protection-button2 = วิธีการทำงาน
@@ -110,7 +195,6 @@ onboarding-data-sync-title = นำการตั้งค่าของคุ
 onboarding-data-sync-text2 = ซิงค์ที่คั่นหน้า, รหัสผ่าน, และอื่น ๆ ทุกที่ที่คุณใช้ { -brand-product-name }
 onboarding-data-sync-button2 = ลงชื่อเข้า { -sync-brand-short-name }
 onboarding-firefox-monitor-title = รับการแจ้งเตือนเกี่ยวกับการละเมิดข้อมูล
-onboarding-firefox-monitor-text = { -monitor-brand-name } จะเฝ้าดูว่าอีเมลของคุณปรากฏในการละเมิดข้อมูลหรือไม่และจะแจ้งเตือนคุณหากปรากฏในการละเมิดใหม่
 onboarding-firefox-monitor-text2 = { -monitor-brand-name } จะเฝ้าดูว่าอีเมลของคุณปรากฏในการละเมิดข้อมูลหรือไม่และจะแจ้งเตือนคุณหากปรากฏในการละเมิดใหม่
 onboarding-firefox-monitor-button = สมัครรับการแจ้งเตือน
 onboarding-browse-privately-title = เรียกดูอย่างเป็นส่วนตัว
@@ -127,17 +211,11 @@ onboarding-mobile-phone-button = ดาวน์โหลดเบราว์�
 onboarding-send-tabs-title = ส่งแท็บให้ตัวคุณเองทันที
 # "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
 # tab's context menu.
-onboarding-send-tabs-text = Send Tabs แบ่งปันหน้าระหว่างอุปกรณ์ของคุณทันทีโดยไม่ต้องคัดลอก, วาง, หรือออกจากเบราว์เซอร์
-# "Send Tabs" refers to "Send Tab to Device" feature that appears when opening a
-# tab's context menu.
 onboarding-send-tabs-text2 = แชร์หน้าระหว่างอุปกรณ์ของคุณทันทีโดยไม่ต้องคัดลอกลิงก์หรือออกจากเบราว์เซอร์
 onboarding-send-tabs-button = เริ่มใช้ Send Tabs
 onboarding-pocket-anywhere-title = อ่านและฟังได้ทุกที่
 onboarding-pocket-anywhere-text2 = บันทึกเนื้อหาโปรดของคุณแบบออฟไลน์ด้วยแอป { -pocket-brand-name } และอ่านฟังและดูเมื่อใดก็ตามที่คุณสะดวก
 onboarding-pocket-anywhere-button = ลอง { -pocket-brand-name }
-onboarding-lockwise-passwords-title = นำรหัสผ่านของคุณไปทุกที่
-onboarding-lockwise-passwords-text2 = เก็บรหัสผ่านที่คุณบันทึกไว้อย่างปลอดภัยและเข้าสู่ระบบบัญชีของคุณได้อย่างง่ายดายด้วย { -lockwise-brand-name }
-onboarding-lockwise-passwords-button2 = รับแอป
 onboarding-lockwise-strong-passwords-title = สร้างและจัดเก็บรหัสผ่านที่คาดเดายาก
 onboarding-lockwise-strong-passwords-text = { -lockwise-brand-name } ช่วยสร้างรหัสผ่านที่คาดเดาได้ยากในทันทีและบันทึกรหัสผ่านทั้งหมดในที่เดียว
 onboarding-lockwise-strong-passwords-button = จัดการข้อมูลการเข้าสู่ระบบของคุณ

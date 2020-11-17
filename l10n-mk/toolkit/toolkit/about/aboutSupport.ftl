@@ -13,6 +13,9 @@ extensions-name = Име
 extensions-enabled = Вклучен
 extensions-version = Верзија
 extensions-id = ID
+support-addons-name = Име
+support-addons-version = Верзија
+support-addons-id = ID
 app-basics-title = Основи за апликацијата
 app-basics-name = Име
 app-basics-version = Верзија
@@ -31,8 +34,6 @@ modified-prefs-value = Вредност
 user-js-title = Поставки за user.js
 user-js-description = Вашата папка за профил содржи <a data-l10n-name="user-js-link">user.js датотека</a>, која што вклучува поставки што не биле создадени од { -brand-short-name }.
 graphics-title = Графика
-js-title = JavaScript
-js-incremental-gc = Incremental GC
 a11y-title = Пристапност
 a11y-activated = Активирана
 a11y-force-disabled = Сопри пристапност
@@ -42,7 +43,9 @@ copy-raw-data-to-clipboard-label = Копирај ги сировите пода
 
 ## Media titles
 
+
 ##
+
 
 ## Remote Debugging
 ##
@@ -52,6 +55,7 @@ copy-raw-data-to-clipboard-label = Копирај ги сировите пода
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 

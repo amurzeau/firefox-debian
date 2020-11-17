@@ -51,6 +51,10 @@ newtab-confirm-delete-history-p1 = คุณแน่ใจหรือไม่
 # "This action" refers to deleting a page from history.
 newtab-confirm-delete-history-p2 = การกระทำนี้ไม่สามารถเลิกทำได้
 
+## Top Sites - Sponsored label
+
+newtab-topsite-sponsored = ได้รับการสนับสนุน
+
 ## Context Menu - Action Tooltips.
 
 # General tooltip for context menus.
@@ -173,7 +177,7 @@ newtab-section-header-pocket = แนะนำโดย { $provider }
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
-newtab-empty-section-highlights = เริ่มการเรียกดูและเราจะแสดงบทความ, วิดีโอ และหน้าอื่น ๆ บางส่วนที่ยอดเยี่ยมที่คุณได้เยี่ยมชมหรือเพิ่มที่คั่นหน้าไว้ล่าสุดที่นี่
+newtab-empty-section-highlights = เริ่มท่องเว็บและเราจะแสดงบทความ วิดีโอ และหน้าอื่น ๆ บางส่วนที่ยอดเยี่ยมที่คุณได้เยี่ยมชมหรือเพิ่มที่คั่นหน้าไว้ล่าสุดที่นี่
 # Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 # Variables:
 #  $provider (String): Name of the content provider for this section, e.g "Pocket".

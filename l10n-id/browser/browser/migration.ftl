@@ -53,6 +53,9 @@ no-migration-sources = Tidak ada program yang berisi markah, riwayat atau sandi 
 import-source-page-title = Impor Pengaturan dan Data
 import-items-page-title = Pilih yang akan diimpor
 import-items-description = Pilih yang akan diimpor:
+import-permissions-page-title = Mohon beri izin kepada { -brand-short-name }
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS memerlukan izin Anda secara eksplisit agar { -brand-short-name } dapat mengakses markah Safari. Klik "Lanjutkan" dan pilih berkas “Bookmarks.plist” pada panel Buka Berkas yang muncul.
 import-migrating-page-title = Mengimpor…
 import-migrating-description = Berikut ini yang sedang diimpor…
 import-select-profile-page-title = Pilih Profil
@@ -88,6 +91,7 @@ imported-edge-reading-list = Daftar Bacaan (Dari Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

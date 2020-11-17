@@ -52,6 +52,8 @@ about-paragraph = Thunderbird je nawodny program wotewrjeneho žórła za e-mejl
 about-paragraph-2 = <b>Thudnerbird so wot wužiwarjow kaž wy financuje! Jeli Thunderbird lubujeće, darće prošu!</b> Najlěpša móžnosć za was, zo by Thunderbird k dispoziciji wostał, je
 about-donation = darić
 
+about-paragraph-consider-donation = <b>Thunderbird so přez dary financuje! Jeli so Thunderbird wam spodobuje, wobkedźbujće dar.</b> Zo byšće zawěsćił, zo Thunderbird dale eksistuje, <a data-l10n-name="donation-link"> darće prošu.</a>
+
 explore-link = Funkcije wuslědźić
 support-link = Podpěra
 involved-link = Čińće sobu

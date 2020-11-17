@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -82,7 +82,7 @@ urlbar-indexed-db-notification-anchor =
 urlbar-password-notification-anchor =
     .tooltiptext = ਪਾਸਵਰਡ ਸੰਭਾਲਣ ਸੁਨੇਹਾ ਪੈਨਲ ਨੂੰ ਖੋਲ੍ਹੋ
 urlbar-translated-notification-anchor =
-    .tooltiptext = ਸਫ਼ਾ ਉਲੱਥੇ ਦਾ ਪਰਬੰਧ ਕਰੋ
+    .tooltiptext = ਸਫ਼ਾ ਉਲੱਥੇ ਦਾ ਬੰਦੋਬਸਤ ਕਰੋ
 urlbar-plugins-notification-anchor =
     .tooltiptext = ਵਰਤੋਂ ਅਧੀਨ ਪਲੱਗਇਨ-ਇਨ ਦਾ ਬੰਦੋਬਸਤ
 urlbar-web-rtc-share-devices-notification-anchor =
@@ -109,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = ਘੱਟ ਲਿਖੋ, ਵੱਧ ਲੱਭੋ: ਆਪਣੀ ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਵਿੱਚ { $engineName } ਤੋਂ ਖੋਜੋ।
 urlbar-search-tips-redirect-2 = { $engineName } ਅਤੇ ਆਪਣੇ ਬਰਾਊਜ਼ਰ ਅਤੀਤ ਤੋਂ ਸੁਝਾਅ ਵੇਖਣ ਲਈ ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਵਿੱਚ ਆਪਣੀ ਖੋਜ ਨਾਲ ਸ਼ੁਰੂ ਕਰੋ।
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = ਜੋ ਤੁਹਾਨੂੰ ਫ਼ੌਰੀ ਚਾਹੀਦਾ ਹੋਵੇ, ਉਹ ਲੱਭਣ ਲਈ ਇਸ ਸ਼ਾਰਟਕੱਟ ਨੂੰ ਚੁਣੋ।
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = ਬੁੱਕਮਾਰਕ
+urlbar-search-mode-tabs = ਟੈਬਾਂ
+urlbar-search-mode-history = ਅਤੀਤ
 
 ##
 
@@ -156,6 +165,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = ਇਕਸਟੈਨਸ਼ਨ ਹਟਾਓ
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] ਟੈਬ ਡਿਵਾਈਸ 'ਤੇ ਭੇਜੋ
+           *[other] { $tabCount } ਟੈਬਾਂ ਡਿਵਾਈਸ 'ਤੇ ਭੇਜੋ
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] ਟੈਬ ਡਿਵਾਈਸ 'ਤੇ ਭੇਜੋ
+           *[other] { $tabCount } ਟੈਬਾਂ ਡਿਵਾਈਸ 'ਤੇ ਭੇਜੋ
+        }
+page-action-pocket-panel =
+    .label = ਸਫ਼ੇ ਨੂੰ { -pocket-brand-name } ਵਿੱਚ ਸੰਭਾਲੋ
+page-action-copy-url-panel =
+    .label = ਲਿੰਕ ਨੂੰ ਕਾਪੀ ਕਰੋ
+page-action-copy-url-urlbar =
+    .tooltiptext = ਲਿੰਕ ਨੂੰ ਕਾਪੀ ਕਰੋ
+page-action-email-link-panel =
+    .label = …ਲਿੰਕ ਨੂੰ ਈਮੇਲ ਕਰੋ
+page-action-email-link-urlbar =
+    .tooltiptext = …ਲਿੰਕ ਨੂੰ ਈਮੇਲ ਕਰੋ
+page-action-share-url-panel =
+    .label = ਸਾਂਝਾ ਕਰੋ
+page-action-share-url-urlbar =
+    .tooltiptext = ਸਾਂਝਾ ਕਰੋ
+page-action-share-more-panel =
+    .label = …ਹੋਰ
+page-action-send-tab-not-ready =
+    .label = …ਡਿਵਾਈਸ ਸਿੰਕ ਕੀਤੇ ਜਾ ਰਹੇ ਹਨ
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = ਟੈਬ ਨੂੰ ਪਿੰਨ ਕਰੋ
+page-action-pin-tab-urlbar =
+    .tooltiptext = ਟੈਬ ਨੂੰ ਪਿੰਨ ਕਰੋ
+page-action-unpin-tab-panel =
+    .label = ਟੈਬ ਨੂੰ ਅਣ-ਪਿੰਨ ਕਰੋ
+page-action-unpin-tab-urlbar =
+    .tooltiptext = ਟੈਬ ਨੂੰ ਅਣ-ਪਿੰਨ ਕਰੋ
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +223,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = ਇਸ ਵੇਲੇ ਇਸ ਨਾਲ ਖੋਜੋ:
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +241,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋ ਲਈ ਮੂਲ ਖੋਜ ਇੰਜਣ ਨਿਯਤ ਕਰੋ
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = ਬੁੱਕਮਾਰਕ ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = ਟੈਬਾਂ ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = ਅਤੀਤ ({ $restrict })
 
 ## Bookmark Panel
 
@@ -212,6 +288,21 @@ identity-passive-loaded = ਇਸ ਸਫ਼ੇ ਦੇ ਕੁਝ ਭਾਗ ਸੁਰ�
 identity-active-loaded = ਤੁਸੀਂ ਇਸ ਸਫ਼ੇ ਉੱਤੇ ਸੁਰੱਖਿਆ ਨੂੰ ਅਸਮਰੱਥ ਕਰ ਚੁੱਕੇ ਹੋ।
 identity-weak-encryption = ਇਹ ਸਫ਼ਾ ਕਮਜ਼ੋਰ ਇੰਕ੍ਰਿਪਸ਼ਨ ਵਰਤਦਾ ਹੈ।
 identity-insecure-login-forms = ਇਸ ਸਫ਼ੇ ਉੱਤੇ ਦਿੱਤੇ ਲਾਗਇਨਾਂ ਦੀ ਗਲਤ ਵਰਤੋ ਹੋ ਸਕਦੀ ਹੈ।
+identity-https-only-connection-upgraded = (HTTPS ਲਈ ਅੱਪਗਰੇਡ ਕੀਤਾ)
+identity-https-only-label = ਸਿਰਫ਼-HTTPS ਹੀ ਮੋਡ
+identity-https-only-dropdown-on =
+    .label = ਚਾਲੂ
+identity-https-only-dropdown-off =
+    .label = ਬੰਦ
+identity-https-only-dropdown-off-temporarily =
+    .label = ਆਰਜ਼ੀ ਤੌਰ ਉੱਤੇ ਬੰਦ
+identity-https-only-info-turn-on2 =
+    ਜੇ ਤੁਸੀਂ ਚਾਹੁੰਦੇ ਹੋ ਕਿ ਜਦੋਂ ਵੀ ਹੋ ਸਕੇ ਇਸ ਸਾਈਟ ਲਈ { -brand-short-name } 
+    ਕਨੈਕਸ਼ਨ ਨੂੰ ਅੱਪਗਰੇਡ ਕਰੇ ਤਾਂ ਸਿਰਫ਼-HTTPS ਨੂੰ ਚਾਲੂ ਕਰੋ।
+identity-https-only-info-turn-off2 =
+    ਜੇ ਸਫ਼ਾ ਠੀਕ ਤਰ੍ਹਾਂ ਕੰਮ ਨਹੀਂ ਕਰਦਾ ਤਾਂ ਤੁਸੀਂ ਇਸ ਸਾਈਟ ਨੂੰ ਅਸੁਰੱਖਿਅਤ HTTP
+    ਰਾਹੀਂ ਮੁੜ-ਲੋਡ ਕਰਨ ਵਾਸਤੇ ਸਿਰਫ਼-HTTPS ਮੋਡ ਨੂੰ ਬੰਦ ਕਰਕੇ ਵੇਖ ਸਕਦੇ ਹੋ।
+identity-https-only-info-no-upgrade = HTTP ਤੋਂ ਕਨੈਕਸ਼ਨ ਅੱਪਗਰੇਡ ਕਰਨ ਅਸਮਰੱਥ ਹੈ।
 identity-permissions =
     .value = ਇਜਾਜ਼ਤਾਂ
 identity-permissions-reload-hint = ਤਬਦੀਲੀਆਂ ਲਾਗੂ ਕਰਨ ਵਾਸਤੇ ਤੁਹਾਨੂੰ ਸਫ਼ੇ ਨੂੰ ਮੁੜ-ਲੋਡ ਕਰਨ ਦੀ ਲੋੜ ਹੋ ਸਕਦੀ ਹੈ।
@@ -257,6 +348,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = ਬੰਦ ਕਰੋ
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = …ਬੁੱਕਮਾਰਕ ਇੰਪੋਰਟ ਕਰੋ
+    .tooltiptext = ਹੋਰ ਬੁੱਕਮਾਰਕ ਤੋਂ ਬੁੱਕਮਾਰਕ { -brand-short-name } ਵਿੱਚ ਕਾਪੀ ਕਰੋ।
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -292,8 +389,42 @@ enable-devtools-popup-description = F12 ਸ਼ਾਰਟਕੱਟ ਵਰਤਣ ਲ�
 
 urlbar-default-placeholder =
     .defaultPlaceholder = ਖੋਜੋ ਜਾਂ ਸਿਰਨਾਵਾਂ ਦਿਓ
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = ਖੋਜੋ ਜਾਂ ਸਿਰਨਾਵਾਂ ਦਿਓ
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = ਵੈੱਬ ਨੂੰ ਖੋਜੋ
+    .aria-label = { $name } ਨਾਲ ਖੋਜੋ
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = ਖੋਜ ਲਈ ਸ਼ਬਦ ਦਿਓ
+    .aria-label = { $name } ਨਾਲ ਖੋਜੋ
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = ਖੋਜ ਸ਼ਬਦ ਦਿਓ
+    .aria-label = ਬੁੱਕਮਾਰਕਾਂ ਨੂੰ ਖੋਜੋ
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = ਖੋਜ ਸ਼ਬਦ ਦਿਓ
+    .aria-label = ਅਤੀਤ ਨੂੰ ਖੋਜੋ
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = ਖੋਜ ਸ਼ਬਦ ਦਿਓ
+    .aria-label = ਟੈਬਾਂ ਨੂੰ ਖੋਜੋ
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name } ਨਾਲ ਖੋਜੋ ਜਾਂ ਸਿਰਨਾਵਾਂ ਦਿਓ
 urlbar-remote-control-notification-anchor =
     .tooltiptext = ਬਰਾਊਜ਼ਰ ਰਿਮੋਟ ਤੋਂ ਕੰਟਰੋਲ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ
 urlbar-permissions-granted =
@@ -309,3 +440,67 @@ urlbar-page-action-button =
     .tooltiptext = ਸਫ਼ਾ ਕਾਰਵਾਈਆਂ
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name } ਵਿੱਚ ਸੰਭਾਲੋ
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋ ਵਿੱਚ { $engine } ਨਾਲ ਖੋਜੋ
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋ ਵਿੱਚ ਖੋਜੋ
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } ਨਾਲ ਖੋਜੋ
+urlbar-result-action-sponsored = ਸਪੌਂਸਰ ਕੀਤਾ
+urlbar-result-action-switch-tab = ਟੈਬ ਲਈ ਸਵਿੱਚ ਕਰੋ
+urlbar-result-action-visit = ਖੋਲ੍ਹੋ
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = { $engine } ਨਾਲ ਖੋਜਣ ਲਈ ਟੈਬ ਦਬਾਓ
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = { $engine } ਖੋਜਣ ਲਈ ਟੈਬ ਦਬਾਓ
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਤੋਂ { $engine } ਨਾਲ ਸਿੱਧਾ ਖੋਜੋ
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = ਸਿਰਨਾਵਾਂ ਪੱਟੀ ਤੋਂ ਸਿੱਧੀ { $engine } ਖੋਜੋ
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = ਬੁੱਕਮਾਰਕ ਖੋਜੋ
+urlbar-result-action-search-history = ਅਤੀਤ ਖੋਜੋ
+urlbar-result-action-search-tabs = ਟੈਬਾਂ ਖੋਜੋ
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ਹੁਣ ਪੂਰੀ ਸਕਰੀਨ 'ਤੇ ਹੈ
+fullscreen-warning-no-domain = ਇਹ ਦਸਤਾਵੇਜ਼ ਪੂਰੀ ਸਕਰੀਨ 'ਤੇ ਹੈ
+fullscreen-exit-button = ਪੂਰੀ ਸਕਰੀਨ ਤੋਂ ਬਾਹਰ ਜਾਓ (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = ਪੂਰੀ ਸਕਰੀਨ ਤੋਂ ਬਾਹਰ ਜਾਓ (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ਤੁਹਾਡੇ ਪੁਆਇੰਟਰ ਨੂੰ ਕੰਟੋਰਲ ਕਰਦਾ ਹੈ। ਕੰਟਰੋਲ ਵਾਪਸ ਲੈਣ ਲਈ Esc ਦਬਾਉ।
+pointerlock-warning-no-domain = ਇਹ ਦਸਤਾਵੇਜ਼ ਤੁਹਾਡੇ ਪੁਆਇੰਟਰ ਨੂੰ ਕੰਟੋਰਲ ਕਰਦਾ ਹੈ। ਕੰਟਰੋਲ ਵਾਪਸ ਲੈਣ ਲਈ Esc ਦਬਾਉ।

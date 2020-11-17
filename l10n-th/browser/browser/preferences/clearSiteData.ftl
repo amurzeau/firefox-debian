@@ -48,3 +48,6 @@ clear-site-data-cancel =
 clear-site-data-clear =
     .label = ล้าง
     .accesskey = ล
+clear-site-data-dialog =
+    .buttonlabelaccept = ล้าง
+    .buttonaccesskeyaccept = ล

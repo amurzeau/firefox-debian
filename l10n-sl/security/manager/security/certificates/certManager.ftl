@@ -161,6 +161,10 @@ delete-ssl-cert-title =
     .title = Izbriši izjeme digitalnih potrdil strežnika
 delete-ssl-cert-confirm = Ali ste prepričani, da želite zbrisati te izjeme strežnika?
 delete-ssl-cert-impact = Če izbrišete izjemo strežnika, se bo obnovil običajni postopek varnostnega preverjanja za ta strežnik, ki bo potreboval tudi veljavno digitalno potrdilo?
+delete-ssl-override-title =
+    .title = Izbriši izjemo digitalnih potrdil strežnika
+delete-ssl-override-confirm = Ali ste prepričani, da želite zbrisati to izjemo strežnika?
+delete-ssl-override-impact = Če izbrišete izjemo strežnika, se bo obnovil običajni postopek varnostnega preverjanja za ta strežnik, ki bo potreboval tudi veljavno digitalno potrdilo.
 delete-ca-cert-title =
     .title = Izbriši ali umakni zaupanje digitalnim potrdilom overitelja
 delete-ca-cert-confirm = Zahtevali ste izbris teh digitalnih potrdil overitelja. Zaupanje vgrajenim digitalnim potrdilom bo umaknjeno, kar ima enak učinek. Ste prepričani, da jih želite zbrisati ali umakniti zaupanje?
@@ -208,6 +212,15 @@ cert-not-verified-issuer-unknown = Tega digitalnega potrdila ni bilo mogoče pre
 cert-not-verified-ca-invalid = Tega digitalnega potrdila ni bilo mogoče preveriti, ker digitalno potrdilo izdajatelja ni veljavno.
 cert-not-verified_algorithm-disabled = Tega digitalnega potrdila ni bilo mogoče preveriti, ker je bilo podpisano z algoritmom, ki je bil iz varnostnih razlogov onemogočen..
 cert-not-verified-unknown = Tega digitalnega potrdila ni bilo mogoče preveriti iz neznanih razlogov.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Ne pošiljaj klientovega digitalnega potrdila
+# Used when no cert is stored for an override
+no-cert-stored-for-override = (Ni shranjeno)
+
+## Used to show whether an override is temporary or permanent
+
+permanent-override = Stalno
+temporary-override = Začasno
 
 ## Add Security Exception dialog
 

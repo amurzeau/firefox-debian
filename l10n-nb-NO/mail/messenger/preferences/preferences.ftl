@@ -10,6 +10,8 @@ preferences-title =
             [windows] Innstillinger
            *[other] Innstillinger
         }
+category-list =
+    .aria-label = Kategorier
 pane-general-title = Generelt
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,7 +43,6 @@ composition-addressing-header = Adressering
 privacy-main-header = Personvern
 privacy-passwords-header = Passord
 privacy-junk-header = Uønsket
-privacy-data-collection-header = Datainnsamling og bruk
 collection-header = Datainnsamling og bruk for { -brand-short-name }
 collection-description = Vi prøver alltid å gi deg valg og samler bare det vi trenger for å levere og forbedre { -brand-short-name } for alle. Vi ber alltid om tillatelse før vi aksepterer personopplysninger.
 collection-privacy-notice = Personvernerklæring
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = l
 confirm-messenger-language-change-description = Start om { -brand-short-name } for å bruke disse endringene
 confirm-messenger-language-change-button = Bruk og start om
-update-pref-write-failure-title = Skrivefeil
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Kan ikke lagre innstillinger. Kunne ikke skrive til fil: { $path }
 update-setting-write-failure-title = Kunne ikke lagre oppdateringsinnstillinger
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -91,12 +88,11 @@ update-in-progress-ok-button = &Avvis
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Fortsett
+account-button = Kontoinnstillinger
 addons-button = Utvidelser og temaer
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Bekreft identiteten din for å opprette et hovedpassord.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen for Windows for å opprette et hovedpassord. Dette vil gjøre kontoene dine tryggere.
 # This message can be seen by trying to add a Master Password.
@@ -104,6 +100,13 @@ master-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen 
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = opprette et hovedpassord
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Skriv inn innloggingsinformasjonen for Windows for å opprette et hovedpassord. Dette vil gjøre kontoene dine tryggere.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = opprett et hovedpassord
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -541,6 +544,15 @@ master-password-label =
 master-password-button =
     .label = Endre hovedpassord …
     .accesskey = E
+primary-password-description = Du kan bruke et hovedpassord for å beskytte alle passordene, men da må du skrive inn passordet en gang for hver programøkt.
+primary-password-label =
+    .label = Bruk et hovedpassord
+    .accesskey = B
+primary-password-button =
+    .label = Endre hovedpassord…
+    .accesskey = E
+forms-primary-pw-fips-title = Du er for tiden i FIPS-modus. FIPS krever at du bruker et hovedpassord.
+forms-master-pw-fips-desc = Passordendring mislyktes
 junk-description = Angi standard oppførsel for uønsket e-post. Konto-spesifikke innstillinger for uønsket e-post kan angis i Kontoinnstillinger.
 junk-label =
     .label = Når jeg markerer meldinger som uønskede:

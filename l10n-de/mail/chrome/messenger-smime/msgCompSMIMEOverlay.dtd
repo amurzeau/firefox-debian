@@ -4,8 +4,6 @@
 
 <!--LOCALIZATION NOTE msgCompSMIMEOverlay.dtd UI for s/mime hooks in message composition -->
 
-<!ENTITY menu_securityEncryptRequire.label "Nachricht verschlüsseln">
-
 <!ENTITY menu_securityDoNotEncrypt.label "Nicht verschlüsseln">
 <!ENTITY menu_securityDoNotEncrypt.accesskey "N">
 
@@ -14,7 +12,7 @@
 <!ENTITY menu_securityEncryptOptional.accesskey "w">
 -->
 
-<!ENTITY menu_securityEncryptRequire2.label "Verschlüsselung verlangen">
+<!ENTITY menu_securityEncryptRequire2.label "Nur mit Verschlüsselung senden">
 <!ENTITY menu_securityEncryptRequire.accesskey "V">
 
 <!ENTITY menu_securitySign.label "Nachricht unterschreiben">
@@ -34,7 +32,7 @@
 <!ENTITY menu_securityStatus.label "Sicherheitsinformationen anzeigen">
 <!ENTITY menu_securityStatus.accesskey "i">
 
-<!ENTITY securityButton.label "S/MIME">
+<!ENTITY securityButton.label "Sicherheit">
 <!ENTITY securityButton.tooltip "Sicherheitseinstellungen ansehen oder ändern">
 
 <!ENTITY menu_viewSecurityStatus.label "Nachrichten-Sicherheit">

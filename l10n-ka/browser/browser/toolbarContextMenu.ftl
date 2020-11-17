@@ -17,16 +17,13 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = ყველა ჩანართის შერჩევა
     .accesskey = შ
-toolbar-context-menu-undo-close-tab =
-    .label = დახურული ჩანართის დაბრუნება
-    .accesskey = ბ
 toolbar-context-menu-undo-close-tabs =
     .label =
         { $tabCount ->
             [1] დახურული ჩანართის დაბრუნება
            *[other] დახურული ჩანართების დაბრუნება
         }
-    .accesskey = დ
+    .accesskey = ბ
 toolbar-context-menu-manage-extension =
     .label = გაფართოების მართვა
     .accesskey = ფ
@@ -53,4 +50,13 @@ toolbar-context-menu-remove-from-toolbar =
     .accesskey = ა
 toolbar-context-menu-view-customize-toolbar =
     .label = მორგება…
+    .accesskey = მ
+toolbar-context-menu-bookmarks-toolbar-always-show =
+    .label = ყოველთვის
+    .accesskey = ყ
+toolbar-context-menu-bookmarks-toolbar-never-show =
+    .label = არასდროს
+    .accesskey = რ
+toolbar-context-menu-bookmarks-toolbar-on-new-tab =
+    .label = მხოლოდ ახალ ჩანართში
     .accesskey = მ

@@ -129,6 +129,7 @@ cfr-whatsnew-pip-cta = מידע נוסף
 ## Permission Prompt
 
 cfr-whatsnew-permission-prompt-header = פחות חלונות קופצים מעצבנים
+cfr-whatsnew-permission-prompt-body = { -brand-shorter-name } מונע מעתה באופן אוטומטי מאתרים לבקש לשלוח לך הודעות קופצות.
 cfr-whatsnew-permission-prompt-cta = מידע נוסף
 
 ## Fingerprinter Counter
@@ -184,6 +185,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = צפייה בהכל
     .accesskey = צ
+cfr-doorhanger-milestone-close-button = סגירה
+    .accesskey = ס
 
 ## What’s New Panel Content for Firefox 76
 
@@ -206,9 +209,40 @@ cfr-whatsnew-pip-fullscreen-icon-alt = סמל תמונה בתוך תמונה
 
 ## Protections Dashboard message
 
+cfr-whatsnew-protections-header = הגנות במבט חטוף
 cfr-whatsnew-protections-cta-link = הצגת לוח ההגנות
 cfr-whatsnew-protections-icon-alt = סמל מגן
 
 ## Better PDF message
 
 cfr-whatsnew-better-pdf-header = חוויית PDF טובה יותר
+cfr-whatsnew-better-pdf-body = מסמכי PDF נפתחים כעת ישירות ב־{ -brand-short-name }, תוך שמירה על זרימת העבודה.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = הפרטיות שלך חשובה. { -brand-short-name } מעביר כעת את בקשות ה־DNS שלך, כאשר ניתן, לשירות שותף כדי להגן עליך בזמן הגלישה.
+cfr-doorhanger-doh-header = חיפושי DNS מוצפנים ומאובטחים יותר
+cfr-doorhanger-doh-primary-button = בסדר, הבנתי
+    .accesskey = ב
+cfr-doorhanger-doh-secondary-button = השבתה
+    .accesskey = ה
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body = ‏{ -brand-short-name } הפעיל עבורך תכונה ניסיונית בשם Fission (בידוד אתרים). על־ידי בידוד כל אתר לתהליך נפרד, Fission מספקת שכבת אבטחה נוספת בשבילך ובשביל אתרי האינטרנט שמבקרים בהם.
+cfr-doorhanger-fission-header = בידוד אתרים
+cfr-doorhanger-fission-primary-button = בסדר, הבנתי
+    .accesskey = ב
+cfr-doorhanger-fission-secondary-button = מידע נוסף
+    .accesskey = מ
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = הגנה אוטומטית מפני תכסיסי מעקב
+cfr-whatsnew-clear-cookies-body = ישנם רכיבי מעקב המפנים אותך לאתרים אחרים המגדירים עוגיות בחשאי. { -brand-short-name } כעת מנקה באופן אוטומטי את העוגיות האלו כך שלא יהיה ניתן לעקוב אחריך.
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = יותר פקדי מדיה
+cfr-whatsnew-media-keys-body = ניתן להפעיל ולהשהות שמע או וידאו ישירות מהמקלדת או מהאוזניות שלך, מה שמקל על השליטה במדיה מלשונית או תוכנית אחרת, או אפילו כשהמחשב שלך נעול. אפשר גם לעבור בין רצועות שמע באמצעות המקשים קדימה ואחורה.
+cfr-whatsnew-media-keys-button = מידע נוסף

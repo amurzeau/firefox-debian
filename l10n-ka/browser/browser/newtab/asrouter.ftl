@@ -211,6 +211,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = ყველას ნახვა
     .accesskey = ნ
+cfr-doorhanger-milestone-close-button = დახურვა
+    .accesskey = ხ
 
 ## What’s New Panel Content for Firefox 76
 
@@ -244,3 +246,35 @@ cfr-whatsnew-protections-icon-alt = ფარის ნიშანი
 
 cfr-whatsnew-better-pdf-header = PDF-თან მოხერხებული მუშაობა
 cfr-whatsnew-better-pdf-body = PDF-დოკუმენტებს ახლა უკვე პირდაპირ გახსნის { -brand-short-name }, საჭირო მასალები კიდევ უფრო ახლოს გექნებათ.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = თქვენი პირადულობა უმნიშვნელოვანესია. { -brand-short-name } ახლა უკვე უსაფრთხოდ გადაამისამართებს თქვენს DNS-მოთხოვნებს, როცა კი შესაძლებელი იქნება, პარტნიორი მომსახურების მეშვეობით, რომ გვერდების მონახულებისას მუდამ დაცული იყოთ.
+cfr-doorhanger-doh-header = მეტად უსაფრთხო, დაშიფრული DNS-გარდაქმნები
+cfr-doorhanger-doh-primary-button = კარგი, გასაგებია
+    .accesskey = კ
+cfr-doorhanger-doh-secondary-button = გამორთვა
+    .accesskey = გ
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = თქვენი პირადულობა გადამწყვეტია. { -brand-short-name } ახლა უკვე მიჯნავს, განაცალკევებს ვებსაიტებს ერთმანეთისგან, რაც ჰაკერებს ურთულებს პაროლების, საკრედიტო ბარათის ნომრებისა და სხვა მნიშვნელოვანი ინფორმაციის მოპარვის საშუალებას.
+cfr-doorhanger-fission-header = საიტის გამოჯვნა
+cfr-doorhanger-fission-primary-button = კარგი, გასაგებია
+    .accesskey = კ
+cfr-doorhanger-fission-secondary-button = ვრცლად
+    .accesskey = ც
+# Deprecated
+cfr-doorhanger-fission-body = { -brand-short-name } უკვე აღჭურვილია ახალი საცდელი შესაძლებლობით Fission (საიტის გამიჯვნა). თითოეული საიტი განცალკევებით ეშვება საკუთარ პროცესებად, Fission უზრუნველყოფს უსაფრთხოების დამატებით ფენას თქვენთვის და თქვენ მიერ მონახულებული ვებსაიტებისთვის.
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = თავისთავადი დაცვა თვალთვალის გაიძვერული საშუალებებისგან
+cfr-whatsnew-clear-cookies-body = ზოგიერთი მეთვალყურე გამისამართებთ სხვა საიტებზე, რომლებიც ფარულად აყენებს ფუნთუშებს. { -brand-short-name } ახლა უკვე ავტომატურად მოაცილებს ამ ფუნთუშებს, თვალი რომ ვერ გადევნონ.
+cfr-whatsnew-clear-cookies-image-alt = შეზღუდული ფუნთუშის ნიმუში
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = გაფართოებული სამართავი
+cfr-whatsnew-media-keys-body = გაუშვით ან შეაჩერეთ ხმოვანი და ვიდეოფაილები პირდაპირ კლავიატურიდან ან ყურსასმენიდან, რაც მეტად გაამარტივებს ფაილების მართვას სხვა ჩანართიდან ან თუნდაც პროგრამიდან, ჩაკეტილ ეკრანზეც კი. აგრეთვე შესაძლებელია ჩანაწერებზე გადასვლა, წინა და მომდევნო ღილაკებით.
+cfr-whatsnew-media-keys-button = იხილეთ, როგორ

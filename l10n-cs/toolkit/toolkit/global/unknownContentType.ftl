@@ -11,3 +11,14 @@ unknowncontenttype-handleinternally =
            *[other] v aplikaci { -brand-short-name }
         }
     .accesskey = e
+unknowncontenttype-settingschange =
+    .value =
+        Nastavení lze změnit v { PLATFORM() ->
+            [windows] Možnostech
+           *[other] Předvolbách
+        } { -brand-short-name.gender ->
+            [masculine] { -brand-short-name(case: "gen") }
+            [feminine] { -brand-short-name(case: "gen") }
+            [neuter] { -brand-short-name(case: "gen") }
+           *[other] aplikace { -brand-short-name }
+        }.

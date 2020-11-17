@@ -4,7 +4,6 @@
 
 synced-tabs-sidebar-title = File sincronizate
 synced-tabs-sidebar-noclients-subtitle = Vrei să vezi filele de pe celelalte dispozitive aici?
-synced-tabs-sidebar-notsignedin = Autentifică-te pentru a vedea o listă de file de pe celelalte dispozitive.
 synced-tabs-sidebar-intro = Afișează o listă cu filele de pe celelalte dispozitive.
 synced-tabs-sidebar-unverified = Contul tău trebuie verificat.
 synced-tabs-sidebar-notabs = Nicio filă deschisă
@@ -40,5 +39,5 @@ synced-tabs-context-manage-devices =
 synced-tabs-context-sync-now =
     .label = Sincronizează acum
     .accesskey = S
-fxa-sign-in = Autentificare în { -sync-brand-short-name }
+fxa-sign-in = Autentifică-te în { -sync-brand-short-name }
 turn-on-sync = Activează { -sync-brand-short-name }

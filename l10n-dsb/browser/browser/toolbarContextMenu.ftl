@@ -17,9 +17,6 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = Wšykne rejtariki wubraś
     .accesskey = u
-toolbar-context-menu-undo-close-tab =
-    .label = Zacynjony rejtarik wótnowiś
-    .accesskey = c
 toolbar-context-menu-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -27,7 +24,7 @@ toolbar-context-menu-undo-close-tabs =
             [one] Zacynjony rejtarik wócyniś
             [two] Zacynjonej rejtarika wócyniś
             [few] Zacynjone rejtariki wócyniś
-           *[other] Zacynjonych rejtarikow wócyniś
+           *[other] Zacynjone rejtariki wócyniś
         }
     .accesskey = Z
 toolbar-context-menu-manage-extension =
@@ -57,3 +54,12 @@ toolbar-context-menu-remove-from-toolbar =
 toolbar-context-menu-view-customize-toolbar =
     .label = Pśiměriś…
     .accesskey = m
+toolbar-context-menu-bookmarks-toolbar-always-show =
+    .label = Pśecej
+    .accesskey = P
+toolbar-context-menu-bookmarks-toolbar-never-show =
+    .label = Nigda
+    .accesskey = N
+toolbar-context-menu-bookmarks-toolbar-on-new-tab =
+    .label = Jano w nowem rejtariku
+    .accesskey = J

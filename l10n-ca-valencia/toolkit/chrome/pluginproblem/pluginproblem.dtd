@@ -14,6 +14,7 @@
 <!-- LOCALIZATION NOTE (reloadPlugin.middle): avoid leading/trailing spaces, this text is a link -->
 <!-- LOCALIZATION NOTE (reloadPlugin.post): include a starting space as needed -->
 
+
 <!ENTITY reloadPlugin.pre                                    "">
 <!ENTITY reloadPlugin.middle                                 "Actualitzeu la pàgina">
 <!ENTITY reloadPlugin.post                                   " per tornar-ho a provar.">

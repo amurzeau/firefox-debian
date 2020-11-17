@@ -5,66 +5,53 @@
 permissions-window =
     .title = Tisuraf
     .style = width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Tansa n usmel web
     .accesskey = d
-
 permissions-block =
     .label = Sewḥel
     .accesskey = S
-
 permissions-session =
     .label = Sireg i tɣimit
     .accesskey = S
-
 permissions-allow =
     .label = Sireg
     .accesskey = i
-
 permissions-site-name =
     .label = Asmel Web
-
 permissions-status =
     .label = Addad
-
 permissions-remove =
     .label = Kkes asmel web
     .accesskey = Z
-
 permissions-remove-all =
     .label = Kkes akk ismal web
     .accesskey = w
-
 permissions-button-cancel =
     .label = Sefsex
     .accesskey = S
-
 permissions-button-ok =
     .label = Sekles asnifel
     .accesskey = S
-
+permission-dialog =
+    .buttonlabelaccept = Sekles asnifel
+    .buttonaccesskeyaccept = S
 permissions-autoplay-menu = S wudem amezwer i yismal meṛṛa:
-
 permissions-searchbox =
     .placeholder = Nadi asmel web
-
 permissions-capabilities-autoplay-allow =
     .label = Sireg ameslaw d uvidyu
 permissions-capabilities-autoplay-block =
     .label = Sewḥel imesli
 permissions-capabilities-autoplay-blockall =
     .label = Sewḥel imesli d uvidyu
-
 permissions-capabilities-allow =
     .label = Sireg
 permissions-capabilities-block =
     .label = Sewḥel
 permissions-capabilities-prompt =
     .label = Sutur yal tikkelt
-
 permissions-capabilities-listitem-allow =
     .value = Sireg
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = Isem n usenneftaɣ arameɣtu
 permissions-invalid-uri-label = Ma ulac aɣilif, sekcem isem n usenneftaɣ ameɣtu
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = Tisuraf - Asewḥel n ugbur
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Tsenseḍ asewḥel n ugbur i yesmal-agi.
 
 permissions-exceptions-etp-window =
     .title = Tisuraf i ummesten yettwaseǧhed mgal aḍfaṛ
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Ismal ittusirgen - Asebded n izegrar
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Tzemreḍ ad d-tmuddeḍ ismal web ara teǧǧeḍ ad sbedden izegrar. Sekcem tansa n usmel tebɣiḍ ad teǧǧeḍ u sit ɣef Sireg.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Tisuraf - Taɣuri tawurmant
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Tzemreḍ ad d-tmuddeḍ ismal web yellan yal tikkelt neɣ werǧin llan seqdacen taɣuri tawurmant n wallalen n teγwalt s imesli.  Mudd-d tansa n usmel u sit ɣef Sewḥel neɣ Sireg.
 
 ## Site Permissions - Autoplay
 

@@ -17,3 +17,4 @@ identity-name = ข้อมูลประจำตัว
 
 send-via-email = ส่งผ่านอีเมล
 
+app-basics-telemetry = ข้อมูลการวัดและส่งข้อมูลทางไกล

@@ -67,7 +67,7 @@ browser-languages-select-language =
     .label = Seliger un lingua a adder…
     .placeholder = Seliger un lingua a adder…
 
-browser-languages-installed-label = Lingiuas installate
+browser-languages-installed-label = Linguas installate
 browser-languages-available-label = Linguas disponibile
 
 browser-languages-error = { -brand-short-name } non pote actualisar tu linguas justo ora. Verifica tu connexion a internet o retenta.

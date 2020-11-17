@@ -14,7 +14,7 @@ downloads-panel =
 ##
 
 # The style attribute has the width of the Downloads Panel expressed using
-# a CSS unit. The longest labels that should fit are usually those of 
+# a CSS unit. The longest labels that should fit are usually those of
 # in-progress and blocked downloads.
 downloads-panel-list =
     .style = width: 70ch
@@ -34,11 +34,19 @@ downloads-cmd-cancel-panel =
 downloads-cmd-show-menuitem =
     .label = Otvoriť priečinok so súborom
     .accesskey = b
-  
+
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
     .label = Zobraziť vo Finderi
     .accesskey = F
+
+downloads-cmd-use-system-default =
+    .label = Otvoriť v systémovom prehliadači
+    .accesskey = V
+
+downloads-cmd-always-use-system-default =
+    .label = Vždy otvoriť v systémovom prehliadači
+    .accesskey = w
 
 downloads-cmd-show-button =
     .tooltiptext =

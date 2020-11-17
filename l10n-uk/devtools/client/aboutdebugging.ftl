@@ -47,7 +47,7 @@ about-debugging-sidebar-item-connect-button-connection-failed = Не вдало�
 # the runtime is taking too much time.
 about-debugging-sidebar-item-connect-button-connection-not-responding = З'єднання все ще очікується. Перевірте повідомлення в цільовому браузері
 # Text displayed as connection error in sidebar item when the connection has timed out.
-about-debugging-sidebar-item-connect-button-connection-timeout = Час очікування з’єднання закінчився
+about-debugging-sidebar-item-connect-button-connection-timeout = Перевищено термін очікування з’єднання
 # Temporary text displayed in sidebar items representing remote runtimes after
 # successfully connecting to them. Temporary UI, do not localize.
 about-debugging-sidebar-item-connected-label = Під'єднано
@@ -82,8 +82,6 @@ about-debugging-refresh-usb-devices-button = Оновити список при�
 about-debugging-setup-title = Налаштування
 # Introduction text in the Setup page to explain how to configure remote debugging.
 about-debugging-setup-intro = Налаштуйте метод з'єднання, за допомогою якого ви бажаєте виконати віддалене зневадження свого пристрою.
-# Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox = Використовуйте <a>{ about-debugging-this-firefox-runtime-name }</a> для зневадження вкладок, розширень та service workers в цій версії { -brand-shorter-name }.
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox2 = Використовуйте <a>{ about-debugging-this-firefox-runtime-name }</a> для зневадження розширень і service workers в цій версії { -brand-shorter-name }.
 # Title of the heading Connect section of the Setup page.
@@ -180,13 +178,6 @@ about-debugging-runtime-service-workers-not-compatible = Конфігураці�
 # { $minVersion } is the minimum version that is compatible with the current Firefox instance (same format)
 about-debugging-browser-version-too-old = Під'єднаний браузер має застарілу версію ({ $runtimeVersion }). Мінімальна підтримувана версія ({ $minVersion }). Ця конфігурація не підтримується і може призвести до збою DevTools. Будь ласка, оновіть під'єднаний браузер. <a>Розв'язання проблем</a>
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# - from Fx 67 to 66 or to 65
-# - from Fx 68 to 66
-# Those are normally in range for DevTools compatibility policy, but specific non
-# backward compatible changes broke the debugger in those scenarios (Bug 1528219).
-# { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-about-debugging-browser-version-too-old-67-debugger = Панель зневадження може не працювати з під'єднаним браузером. Будь ласка, використовуйте Firefox { $runtimeVersion }, якщо вам необхідно використовувати зневаджувач з цим браузером.
-# Dedicated message for a backward compatibility issue that occurs when connecting:
 # from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
 about-debugging-browser-version-too-old-fennec = Ця версія Firefox не може зневадити Firefox для Android (68). Радимо встановити Firefox для Android Nightly на ваш телефон для тестування. <a>Детальніше</a>
 # This string is displayed in the runtime page if the remote browser version is too recent.
@@ -261,13 +252,6 @@ about-debugging-extension-id =
     .label = ID розширення
 # This string is displayed as a label of the button that pushes a test payload
 # to a service worker.
-# Notes, this relates to the "Push" API, which is normally not localized so it is
-# probably better to not localize it.
-about-debugging-worker-action-push = Push
-# This string is displayed as a label of the button that starts a service worker.
-about-debugging-worker-action-start = Запустити
-# This string is displayed as a label of the button that pushes a test payload
-# to a service worker.
 # Note this relates to the "Push" API, which is normally not localized so it is
 # probably better to not localize it.
 about-debugging-worker-action-push2 = Push
@@ -324,4 +308,4 @@ about-debugging-message-details-label-error = Відомості про поми
 # Label text used for the warning details of message component.
 about-debugging-message-details-label-warning = Відомості про попередження
 # Label text used for default state of details of message component.
-about-debugging-message-details-label = Відомості
+about-debugging-message-details-label = Подробиці

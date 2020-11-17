@@ -88,11 +88,11 @@ csp-xfo-blocked-long-desc = Evit gwareziñ ho surentez, { $hostname } na aotreo 
 
 ## Messages used for certificate error titles
 
-connectionFailure-title = N'haller ket kennaskañ
+connectionFailure-title = Ne c'haller ket kennaskañ
 deniedPortAccess-title = Dindan strishadurioù emañ ar porzh-mañ
 # "Hmm" is a sound made when considering or puzzling over something.
 # You don't have to include it in your translation if your language does not have a written word like this.
-dnsNotFound-title = Hmmm. Diaes eo deomp kavout al lec'hienn-mañ.
+dnsNotFound-title = Hum. Diaes eo deomp kavout al lec'hienn-mañ.
 fileNotFound-title = Restr dianav
 fileAccessDenied-title = Nac'het eo bet haeziñ d'ar restr
 generic-title = N'haller ket echuiñ an azgoulenn-mañ.
@@ -113,12 +113,10 @@ proxyResolveFailure-title = N'eo ket bet kavet an dafariad proksi
 redirectLoop-title = Adheñchañ ar bajenn n'eo ket dereat
 unknownSocketType-title = Respont direizh
 nssFailure2-title = C'hwitadenn war ar c'hennaskañ diarvar
-cspBlocked-title = Harzet gant ur reolenn diogelroez a-fet endalc'hadoù
-xfoBlocked-title = Stanket gant politikerezh X-Frame-Options
 csp-xfo-error-title = { -brand-short-name } n'hall ket digeriñ ar bajenn
 corruptedContentError-title = Fazi a-fet endalc'had bet kontronet
 remoteXUL-title = XUL a-bell
-sslv3Used-title = N'haller ket kennaskañ outi ent diarvar
+sslv3Used-title = Ne c'haller ket kennaskañ outi ent diarvar
 inadequateSecurityError-title = N'eo ket diarvar ho kennask
 blockedByPolicy-title = Pajenn stanket
 clockSkewError-title = Direizh eo eurier hoc'h urzhiataer

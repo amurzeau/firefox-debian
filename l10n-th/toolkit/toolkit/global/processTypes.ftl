@@ -4,10 +4,6 @@
 
 process-type-web = เนื้อหาเว็บ
 
-# process used to run privileged pages,
-# such as about:home
-process-type-privileged = เนื้อหาที่มีสิทธิ
-
 # process used to run privileged about pages,
 # such as about:home
 process-type-privilegedabout = สิทธิพิเศษเกี่ยวกับ
@@ -36,3 +32,5 @@ process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = ซ็อกเก็ต
 
+# process preallocated; may change to other types
+process-type-prealloc = จัดสรรไว้ล่วงหน้า

@@ -5,9 +5,8 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = Защита приватности
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = Перейти к вашему отчету по приватности
+appmenuitem-update-banner =
+    .label-update-downloading = Загрузка обновления { -brand-shorter-name }
 appmenuitem-protection-dashboard-title = Панель состояния защиты
 appmenuitem-customize-mode =
     .label = Персонализация…
@@ -27,6 +26,7 @@ fxa-toolbar-sync-now =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Что нового
+
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

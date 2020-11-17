@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = העברה לחלון חדש
     .accesskey = ח
-undo-close-tab =
-    .label = ביטול סגירת לשונית
-    .accesskey = ב
 tab-context-close-multiple-tabs =
     .label = סגירת לשוניות מרובות
     .accesskey = מ
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -78,4 +79,18 @@ move-tabs =
     .accesskey = ע
 move-tab =
     .label = העברת לשונית
+    .accesskey = ע
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] סגירת לשונית
+           *[other] סגירת לשוניות
+        }
+    .accesskey = ס
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] העברת לשונית
+           *[other] העברת לשוניות
+        }
     .accesskey = ע

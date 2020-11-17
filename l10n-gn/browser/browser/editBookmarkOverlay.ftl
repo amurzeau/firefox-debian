@@ -30,7 +30,7 @@ bookmark-overlay-tags =
     .accesskey = T
 
 bookmark-overlay-tags-empty-description =
-    .placeholder = Emopa'ũ teramoĩ kyguái rupive
+    .placeholder = Emopa’ũ teramoĩ kyguái rupive
 
 bookmark-overlay-tags-expander =
     .tooltiptext = Teramoĩ jehechaukapaite

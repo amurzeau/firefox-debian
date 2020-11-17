@@ -5,66 +5,53 @@
 permissions-window =
     .title = Uitzonderingen
     .style = width: 45em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Adres van website
     .accesskey = d
-
 permissions-block =
     .label = Blokkeren
     .accesskey = B
-
 permissions-session =
     .label = Toestaan voor sessie
     .accesskey = o
-
 permissions-allow =
     .label = Toestaan
     .accesskey = T
-
 permissions-site-name =
     .label = Website
-
 permissions-status =
     .label = Status
-
 permissions-remove =
     .label = Website verwijderen
     .accesskey = v
-
 permissions-remove-all =
     .label = Alle websites verwijderen
     .accesskey = A
-
 permissions-button-cancel =
     .label = Annuleren
     .accesskey = n
-
 permissions-button-ok =
     .label = Wijzigingen opslaan
     .accesskey = s
-
+permission-dialog =
+    .buttonlabelaccept = Wijzigingen opslaan
+    .buttonaccesskeyaccept = s
 permissions-autoplay-menu = Standaard voor alle websites:
-
 permissions-searchbox =
     .placeholder = Website doorzoeken
-
 permissions-capabilities-autoplay-allow =
     .label = Audio en video toestaan
 permissions-capabilities-autoplay-block =
     .label = Audio blokkeren
 permissions-capabilities-autoplay-blockall =
     .label = Audio en video blokkeren
-
 permissions-capabilities-allow =
     .label = Toestaan
 permissions-capabilities-block =
     .label = Blokkeren
 permissions-capabilities-prompt =
     .label = Altijd vragen
-
 permissions-capabilities-listitem-allow =
     .value = Toestaan
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = Ongeldige hostnaam ingevoerd
 permissions-invalid-uri-label = Voer een geldige hostnaam in
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = Uitzonderingen - Inhoudsblokkering
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = U hebt inhoudsblokkering uitgeschakeld op deze websites.
 
 permissions-exceptions-etp-window =
     .title = Uitzonderingen voor Verbeterde bescherming tegen volgen
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Websites met toestemming - Installatie van add-ons
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = U kunt opgeven welke websites toestemming hebben om add-ons te installeren. Typ het exacte adres van de website die u toestemming wilt geven en klik vervolgens op Toestaan.
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Uitzonderingen - Automatisch afspelen
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = U kunt opgeven welke websites altijd of nooit toestemming hebben om automatisch media met geluid af te spelen. Typ het adres van de website die u wilt beheren en klik vervolgens op Blokkeren of Toestaan.
 
 ## Site Permissions - Autoplay
 

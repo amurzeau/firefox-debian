@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Ovetã pyahúpe jegueraha
     .accesskey = W
-undo-close-tab =
-    .label = Emboguevi ha emboty tendayke
-    .accesskey = U
 tab-context-close-multiple-tabs =
     .label = Emboty tendaykeita
     .accesskey = M
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -78,4 +79,20 @@ move-tabs =
     .accesskey = v
 move-tab =
     .label = Eguerova tendayke
+    .accesskey = v
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Emboty tendayke
+            [one] Emboty tendaykekuéra
+           *[other] Emboty tendaykekuéra
+        }
+    .accesskey = C
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Eguerova tendayke
+            [one] Eguerova tendaykekuéra
+           *[other] Eguerova tendaykekuéra
+        }
     .accesskey = v

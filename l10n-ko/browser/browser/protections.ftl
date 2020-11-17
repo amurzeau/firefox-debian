@@ -23,21 +23,6 @@ graph-private-window = { -brand-short-name }는 사생활 보호 창에서 추�
 # Weekly summary of the graph when the graph is empty in Private Mode
 graph-week-summary-private-window = 이번 주에 { -brand-short-name }가 차단한 추적기
 
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-# The category name in the <b> tag will be bold.
-protection-report-header-details-standard = 보호 수준이 <b>표준</b>으로 설정되었습니다
-    .title = 개인 정보 설정으로 이동
-protection-report-header-details-strict = 보호 수준이 <b>엄격</b>으로 설정되었습니다
-    .title = 개인 정보 설정으로 이동
-protection-report-header-details-custom = 보호 수준이 <b>사용자 지정</b>으로 설정되었습니다
-    .title = 개인 정보 설정으로 이동
-protection-report-page-title = 개인 정보 보호
-protection-report-content-title = 개인 정보 보호
-
-etp-card-title = 향상된 추적 방지 기능
-etp-card-content = 추적기는 온라인에서 사용자를 따라다니며 탐색 습관과 관심사에 대한 정보를 수집합니다. { -brand-short-name }는 이러한 많은 추적기 및 기타 악성 스크립트를 차단합니다.
-
 protection-report-webpage-title = 보호 대시보드
 protection-report-page-content-title = 보호 대시보드
 # This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
@@ -69,11 +54,11 @@ cookie-tab-content = 이러한 쿠키는 사용자가 온라인에서 수행하�
 tracker-tab-title = 추적 콘텐츠
 tracker-tab-description = 웹 사이트에서 외부 광고, 동영상 및 기타 추적 코드가 포함된 콘텐츠를 로드할 수 있습니다. 추적 콘텐츠를 차단하면 사이트를 더 빨리 로드할 수 있지만 일부 버튼, 양식 및 로그인 필드가 작동하지 않을 수 있습니다. <a data-l10n-name="learn-more-link">더 알아보기</a>
 
-fingerprinter-tab-title = 핑거프린터
-fingerprinter-tab-content = 핑거프린터는 브라우저와 컴퓨터에서 설정을 수집하여 사용자의 프로필을 만듭니다. 이 디지털 지문을 사용하여 여러 웹 사이트에서 사용자를 추적할 수 있습니다. <a data-l10n-name="learn-more-link">더 알아보기</a>
+fingerprinter-tab-title = 디지털 지문
+fingerprinter-tab-content = 디지털 지문은 브라우저와 컴퓨터에서 설정을 수집하여 사용자의 프로필을 만듭니다. 이를 사용하여 여러 웹 사이트에서 사용자를 추적할 수 있습니다. <a data-l10n-name="learn-more-link">더 알아보기</a>
 
-cryptominer-tab-title = 크립토마이너
-cryptominer-tab-content = 크립토마이너는 디지털 화폐를 채굴하기 위해 시스템의 연산 능력을 사용합니다. 암호 해독 스크립트는 배터리를 소모하고 컴퓨터 속도를 저하시키며 에너지 요금을 증가시킬 수 있습니다. <a data-l10n-name="learn-more-link">더 알아보기</a>
+cryptominer-tab-title = 암호화폐 채굴기
+cryptominer-tab-content = 암호화폐 채굴기는 디지털 화폐를 채굴하기 위해 시스템의 연산 능력을 사용합니다. 암호 해독 스크립트는 배터리를 소모하고 컴퓨터 속도를 저하시키며 에너지 요금을 증가시킬 수 있습니다. <a data-l10n-name="learn-more-link">더 알아보기</a>
 
 protections-close-button2 =
     .aria-label = 닫기
@@ -84,12 +69,9 @@ mobile-app-card-content = 광고 추적에 대한 보호 기능이 내장된 모
 mobile-app-links = <a data-l10n-name="android-mobile-inline-link">Android</a> 및 <a data-l10n-name="ios-mobile-inline-link">iOS</a>용 { -brand-product-name } 브라우저
 
 lockwise-title = 비밀번호를 다시 잊지 마세요
-lockwise-title-logged-in = { -lockwise-brand-name }
 lockwise-title-logged-in2 = 비밀번호 관리
 lockwise-header-content = { -lockwise-brand-name }는 비밀번호를 브라우저에 안전하게 저장합니다.
 lockwise-header-content-logged-in = 비밀번호를 모든 기기에 안전하게 저장하고 동기화합니다.
-protection-report-view-logins-button = 로그인 보기
-    .title = 저장된 로그인으로 이동
 protection-report-save-passwords-button = 비밀번호 저장
     .title = { -lockwise-brand-short-name }에 비밀번호 저장
 protection-report-manage-passwords-button = 비밀번호 관리
@@ -97,14 +79,6 @@ protection-report-manage-passwords-button = 비밀번호 관리
 lockwise-mobile-app-title = 어디에서나 비밀번호를 사용하세요
 lockwise-no-logins-card-content = 모든 기기에서 { -brand-short-name }에 저장된 비밀번호를 사용하세요.
 lockwise-app-links = <a data-l10n-name="lockwise-android-inline-link">Android</a> 및 <a data-l10n-name="lockwise-ios-inline-link">iOS</a>용 { -lockwise-brand-name }
-
-# This string is displayed after a large numeral that indicates the total number
-# of email addresses being monitored. Don’t add $count to
-# your localization, because it would result in the number showing twice.
-lockwise-passwords-stored =
-    { $count ->
-       *[other] 비밀번호가 안전하게 저장됨 <a data-l10n-name="lockwise-how-it-works">작동원리</a>
-    }
 
 # Variables:
 # $count (Number) - Number of passwords exposed in data breaches.
@@ -126,20 +100,10 @@ lockwise-how-it-works-link = 작동 방식
 turn-on-sync = { -sync-brand-short-name } 켜기…
     .title = Sync 설정으로 가기
 
-manage-connected-devices = 기기 관리…
-
-# Variables:
-#   $count (Number) - Number of devices connected with sync.
-lockwise-connected-device-status =
-    { $count ->
-       *[other] { $count } 기기에 연결됨
-    }
-
 monitor-title = 데이터 유출에 주의하세요
 monitor-link = 작동 방식
 monitor-header-content-no-account = { -monitor-brand-name }를 확인하여 사용자가 알려진 데이터 유출 사건의 피해자인지 확인하고 새로운 유출에 대한 알림을 받습니다.
 monitor-header-content-signed-in = 알려진 데이터 유출 사건에 사용의 정보가 있으면 { -monitor-brand-name }가 경고합니다.
-monitor-sign-up = 유출 알림 가입하기
 monitor-sign-up-link = 유출 알림 가입하기
     .title = { -monitor-brand-name }에서 유출 알림 가입하기
 auto-scan = 오늘의 자동 스캔
@@ -181,16 +145,6 @@ info-known-breaches-resolved =
 info-exposed-passwords-found =
     { $count ->
        *[other] 모든 유출에 걸처 비밀번호가 노출되었습니다.
-    }
-
-full-report-link = <a data-l10n-name="monitor-inline-link">{ -monitor-brand-name }</a>에 대한 전체 보고서 보기
-
-# This string is displayed after a large numeral that indicates the total number
-# of saved logins which may have been exposed. Don’t add $count to
-# your localization, because it would result in the number showing twice.
-password-warning =
-    { $count ->
-       *[other] 저장된 로그인이 데이터 유출에 노출되었을 수 있습니다. 더 나은 온라인 보안을 위해 이 비밀번호를 변경하세요. <a data-l10n-name="lockwise-link">저장된 로그인 보기</a>
     }
 
 # This string is displayed after a large numeral that indicates the total number
@@ -257,14 +211,14 @@ bar-tooltip-tracker =
            *[other] { $count } 추적 콘텐츠 ({ $percentage }%)
         }
 bar-tooltip-fingerprinter =
-    .title = 핑거프린터
+    .title = 디지털 지문
     .aria-label =
         { $count ->
            *[other] { $count } 핑거프린터 ({ $percentage }%)
         }
 bar-tooltip-cryptominer =
-    .title = 크립토마이너
+    .title = 암호화폐 채굴기
     .aria-label =
         { $count ->
-           *[other] { $count } 크립토마이너 ({ $percentage }%)
+           *[other] { $count } 암호화폐 채굴기 ({ $percentage }%)
         }

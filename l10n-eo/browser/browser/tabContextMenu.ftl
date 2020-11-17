@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Movi al nova fenestro
     .accesskey = n
-undo-close-tab =
-    .label = Malfari fermadon de langeto
-    .accesskey = M
 tab-context-close-multiple-tabs =
     .label = Fermi plurajn langetojn
     .accesskey = F
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -78,4 +79,20 @@ move-tabs =
     .accesskey = M
 move-tab =
     .label = Movi langeton
+    .accesskey = M
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Fermi langeton
+            [one] Fermi langeton
+           *[other] Fermi langetojn
+        }
+    .accesskey = l
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Movi langeton
+            [one] Movi langeton
+           *[other] Movi langetojn
+        }
     .accesskey = M

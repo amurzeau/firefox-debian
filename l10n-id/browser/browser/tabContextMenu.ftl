@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Pindahkan ke Jendela Baru
     .accesskey = J
-undo-close-tab =
-    .label = Urungkan Menutup Tab
-    .accesskey = g
 tab-context-close-multiple-tabs =
     .label = Tutup Banyak Tab
     .accesskey = T
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -78,3 +79,17 @@ move-tabs =
 move-tab =
     .label = Pindahkan Tab
     .accesskey = p
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Tutup Tab
+           *[other] Tutup Tab
+        }
+    .accesskey = T
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Pindahkan Tab
+           *[other] Pindahkan Tab
+        }
+    .accesskey = P

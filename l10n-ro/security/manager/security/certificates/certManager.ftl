@@ -8,6 +8,9 @@ certmgr-title =
 certmgr-tab-mine =
     .label = Certificatele tale
 
+certmgr-tab-remembered =
+    .label = Decizii de autentificare
+
 certmgr-tab-people =
     .label = Persoane
 
@@ -18,6 +21,7 @@ certmgr-tab-ca =
     .label = Autorități
 
 certmgr-mine = Ai certificate de la aceste organizații care te identifică
+certmgr-remembered = Aceste certificate sunt folosite pentru a te identifica pe site-urile web
 certmgr-people = Ai stocate certificate care identifică aceste persoane
 certmgr-servers = Ai stocate certificate care identifică aceste servere
 certmgr-ca = Ai stocate certificate care identifică aceste autorități de certificare
@@ -73,6 +77,9 @@ certmgr-edit-cert-trust-email =
 certmgr-delete-cert =
     .title = Șterge certificatul
     .style = width: 48em; height: 24em;
+
+certmgr-cert-host =
+    .label = Gazdă
 
 certmgr-cert-name =
     .label = Numele certificatului
@@ -271,6 +278,9 @@ cert-not-verified-issuer-unknown = Nu se poate verifica acest certificat deoarec
 cert-not-verified-ca-invalid = Nu se poate verifica acest certificat deoarece certificatul AC este nevalid.
 cert-not-verified_algorithm-disabled = Nu am putut verifica acest certificat pentru că a fost semnat utilizând un algoritm de semnare care a fost dezactivat pentru că algoritmul nu este securizat.
 cert-not-verified-unknown = Nu se poate verifica acest certificat din motive necunoscute.
+
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Nu trimite niciun certificat de client
 
 ## Add Security Exception dialog
 

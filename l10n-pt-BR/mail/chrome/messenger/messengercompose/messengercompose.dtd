@@ -47,7 +47,7 @@
 <!ENTITY sendNowCmd.label "Enviar agora">
 <!ENTITY sendCmd.keycode "VK_RETURN">
 <!ENTITY sendNowCmd.accesskey "E">
-<!ENTITY sendLaterCmd.label "Enviar depois">
+<!ENTITY sendLaterCmd.label "Enviar mais tarde">
 <!ENTITY sendLaterCmd.keycode "VK_RETURN">
 <!ENTITY sendLaterCmd.accesskey "d">
 <!ENTITY printSetupCmd.label "Configurar página…">
@@ -67,15 +67,9 @@
 <!ENTITY redoCmd.label "Refazer">
 <!ENTITY redoCmd.key "y">
 <!ENTITY redoCmd.accesskey "R">
-<!ENTITY cutCmd.label "Recortar">
 <!ENTITY cutCmd.key "x">
-<!ENTITY cutCmd.accesskey "t">
-<!ENTITY copyCmd.label "Copiar">
 <!ENTITY copyCmd.key "c">
-<!ENTITY copyCmd.accesskey "C">
-<!ENTITY pasteCmd.label "Colar">
 <!ENTITY pasteCmd.key "v">
-<!ENTITY pasteCmd.accesskey "o">
 <!ENTITY pasteNoFormattingCmd.key "v">
 <!ENTITY pasteAsQuotationCmd.key "O">
 <!ENTITY editRewrapCmd.accesskey "b">
@@ -90,10 +84,7 @@
 <!ENTITY reorderAttachmentsCmd.key "x">
 <!ENTITY toggleAttachmentPaneCmd.label "Painel de anexos">
 <!ENTITY toggleAttachmentPaneCmd.accesskey "x">
-<!ENTITY toggleAttachmentPaneCmd.key "x">
-<!ENTITY selectAllCmd.label "Selecionar tudo">
 <!ENTITY selectAllCmd.accesskey "S">
-<!ENTITY selectAllCmd.key "a">
 <!ENTITY findBarCmd.label "Procurar…">
 <!ENTITY findBarCmd.accesskey "z">
 <!ENTITY findBarCmd.key "F">
@@ -174,8 +165,8 @@
 <!ENTITY dsnMenu.accesskey "N">
 <!ENTITY deliveryFormatMenu.label "Formato de entrega">
 <!ENTITY deliveryFormatMenu.accesskey "F">
-<!ENTITY autoFormatCmd.label "Selecionar automaticamente">
-<!ENTITY autoFormatCmd.accesskey "S">
+<!ENTITY autoFormatCmd.label "Detectar automaticamente">
+<!ENTITY autoFormatCmd.accesskey "a">
 <!ENTITY plainTextFormatCmd.label "Sem formatação">
 <!ENTITY plainTextFormatCmd.accesskey "e">
 <!ENTITY htmlFormatCmd.label "Formatação HTML">
@@ -197,8 +188,8 @@
 <!ENTITY highPriorityCmd.accesskey "A">
 <!ENTITY highestPriorityCmd.label "Altíssima">
 <!ENTITY highestPriorityCmd.accesskey "s">
-<!ENTITY fileCarbonCopyCmd.label "Guardar uma cópia em">
-<!ENTITY fileCarbonCopyCmd.accesskey "G">
+<!ENTITY fileCarbonCopyCmd.label "Enviar uma cópia para">
+<!ENTITY fileCarbonCopyCmd.accesskey "r">
 <!ENTITY fileHereMenu.label "(Nesta pasta)">
 
 <!-- Tools Menu -->
@@ -210,7 +201,7 @@
 <!ENTITY addressBookCmd.label "Catálogo de endereços">
 <!ENTITY addressBookCmd.accesskey "a">
 <!ENTITY addressBookCmd.key "b">
-<!ENTITY accountManagerCmd2.label "Configurações de contas">
+<!ENTITY accountManagerCmd2.label "Configurações da conta">
 <!ENTITY accountManagerCmd2.accesskey "s">
 <!ENTITY accountManagerCmdUnix2.accesskey "S">
 <!ENTITY preferencesCmd2.label "Opções">
@@ -221,12 +212,12 @@
 <!--  Mac OS X Window Menu -->
 <!ENTITY minimizeWindow.key "M">
 <!ENTITY minimizeWindow.label "Minimizar">
-<!ENTITY bringAllToFront.label "Trazer Todas para Frente">
+<!ENTITY bringAllToFront.label "Trazer tudo para frente">
 <!ENTITY zoomWindow.label "Zoom">
 <!ENTITY windowMenu.label "Janela">
 
 <!-- Mail Toolbar -->
-<!ENTITY sendButton.label "Enviar agora">
+<!ENTITY sendButton.label "Enviar">
 <!ENTITY quoteButton.label "Citar">
 <!ENTITY addressButton.label "Contatos">
 <!ENTITY attachButton.label "Anexar">
@@ -245,26 +236,15 @@
 <!ENTITY cutButton.tooltip              "Recortar">
 <!ENTITY copyButton.tooltip             "Copiar">
 <!ENTITY pasteButton.tooltip            "Colar">
-<!ENTITY printButton.tooltip "Imprimir a mensagem">
+<!ENTITY printButton.tooltip "Imprimir esta mensagem">
 
 <!-- Headers -->
-<!--LOCALIZATION NOTE headersSpace.style is for aligning  the From:, To: and
-    Subject: rows. It should be larger than the largest Header label  -->
-<!ENTITY headersSpace.style "width: 9em;">
-<!ENTITY fromAddr.label "De:">
 <!--LOCALIZATION NOTE headersSpaces.style is for aligning  the From:, To: and
     Subject: rows. It should be larger than the largest Header label  -->
 <!ENTITY headersSpace2.style "width: 8em;">
 <!ENTITY extraRecipients.tooltip "Outros tipos de campos de endereçamento">
 <!ENTITY fromAddr2.label "De">
 <!ENTITY fromAddr.accesskey "D">
-<!ENTITY toAddr.label "Para:">
-<!ENTITY ccAddr.label "Cc:">
-<!ENTITY bccAddr.label "Cco:">
-<!ENTITY replyAddr.label "Responder:">
-<!ENTITY newsgroupsAddr.label "Newsgroup:">
-<!ENTITY followupAddr.label "Followup-To:">
-<!ENTITY subject.label "Assunto:">
 <!ENTITY toAddr2.label "Para">
 <!ENTITY ccAddr2.label "Cc">
 <!ENTITY bccAddr2.label "Cco">
@@ -273,14 +253,6 @@
 <!ENTITY followupAddr2.label "Encaminhar para">
 <!ENTITY subject2.label "Assunto">
 <!ENTITY subject.accesskey "s">
-<!-- LOCALIZATION NOTE (attachments.accesskey) This access key character should
-     be taken from the strings of attachmentCount in composeMsgs.properties.
-     Please ensure that this access key is unique: Do not duplicate any other
-     first-level access keys of the compose window, e.g. those of main menu,
-     buttons, or labels (message headers, contacts side bar, attachment reminder
-     bar). -->
-<!ENTITY attachments.accesskey "n">
-<!ENTITY attachmentBucketHeader.tooltip "Painel de anexos">
 <!ENTITY attachmentBucketCloseButton.tooltip "Ocultar o painel de anexos">
 
 <!-- Format Toolbar, imported from editorAppShell.xhtml -->
@@ -306,7 +278,7 @@
 <!ENTITY spellCheckNoSuggestions.label "Nenhuma sugestão">
 <!ENTITY spellCheckIgnoreWord.label "Ignorar palavra">
 <!ENTITY spellCheckIgnoreWord.accesskey "r">
-<!ENTITY spellCheckAddToDictionary.label "Memorizar como correta">
+<!ENTITY spellCheckAddToDictionary.label "Adicionar ao dicionário">
 <!ENTITY spellCheckAddToDictionary.accesskey "M">
 <!ENTITY undo.label "Desfazer">
 <!ENTITY undo.accesskey "D">

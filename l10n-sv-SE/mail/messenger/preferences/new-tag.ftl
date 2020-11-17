@@ -8,3 +8,7 @@ tag-dialog-window =
 tag-name-label =
     .value = Etikettnamn:
     .accesskey = E
+
+tag-color-label =
+    .value = Färg:
+    .accesskey = F

@@ -5,66 +5,53 @@
 permissions-window =
     .title = Unntak
     .style = width: 36em
-
 permissions-close-key =
     .key = w
-
 permissions-address = Adressa til nettstaden
     .accesskey = a
-
 permissions-block =
     .label = Blokker
     .accesskey = B
-
 permissions-session =
     .label = Tillat for programøkta
     .accesskey = T
-
 permissions-allow =
     .label = Tillat
     .accesskey = T
-
 permissions-site-name =
     .label = Nettside
-
 permissions-status =
     .label = Status
-
 permissions-remove =
     .label = Fjern nettsida
     .accesskey = F
-
 permissions-remove-all =
-    .label = Fjern alle nettsidene
+    .label = Fjern alle nettstadar
     .accesskey = e
-
 permissions-button-cancel =
     .label = Avbryt
     .accesskey = A
-
 permissions-button-ok =
     .label = Lagre endringar
     .accesskey = L
-
+permission-dialog =
+    .buttonlabelaccept = Lagre endringar
+    .buttonaccesskeyaccept = L
 permissions-autoplay-menu = Standard for alle nettstadar:
-
 permissions-searchbox =
     .placeholder = Søk på nettsida
-
 permissions-capabilities-autoplay-allow =
     .label = Tillat lyd og video
 permissions-capabilities-autoplay-block =
     .label = Blokker lyd
 permissions-capabilities-autoplay-blockall =
     .label = Blokker lyd og video
-
 permissions-capabilities-allow =
     .label = Tillat
 permissions-capabilities-block =
     .label = Blokker
 permissions-capabilities-prompt =
     .label = Spør alltid
-
 permissions-capabilities-listitem-allow =
     .value = Tillat
 permissions-capabilities-listitem-block =
@@ -78,11 +65,6 @@ permissions-invalid-uri-title = Ugyldig tenarnamn skrive inn
 permissions-invalid-uri-label = Skriv inn eit gyldig tenarnamn
 
 ## Exceptions - Tracking Protection
-
-permissions-exceptions-content-blocking-window =
-    .title = Unntak - innhaldsblokkering
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = Du har slått av innhaldsblokkering på desse nettsidene.
 
 permissions-exceptions-etp-window =
     .title = Unntak for utvida sporingsvern
@@ -116,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = Tillatne nettsider - Inatallering av tillegg
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = Du kan velje kva for nettstadar som har løyve til å installere tillegg. Skriv inn eksakt adresse til nettstaden du vil tillate, og trykk «Tillat».
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = Unntak - autoavspeling
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = Du kan spesifisere kva for nettsider som alltid eller aldri kan autospele media med lyd. Skriv inn nettsideadressa og trykk Blokker eller Tillat.
 
 ## Site Permissions - Autoplay
 

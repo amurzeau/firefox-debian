@@ -28,10 +28,6 @@ serviceworker-worker-unregister = Avregistrera
 serviceworker-worker-debug = Felsök
     .title = Enbart service workers som kör kan felsökas
 
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = Starta
-
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
 serviceworker-worker-debug-forbidden = Felsök
@@ -41,6 +37,14 @@ serviceworker-worker-debug-forbidden = Felsök
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = Starta
     .title = Du kan endast starta Service Workers om multi e10s är inaktiverad
+
+# Alt text for the image icon displayed inside a debug link for a service worker.
+serviceworker-worker-inspect-icon =
+    .alt = Inspektera
+
+# Text for the start link displayed for a registered but not running Service Worker.
+# Clicking on the link will attempt to start the service worker.
+serviceworker-worker-start3 = Starta
 
 # Text displayed for the updated time of the service worker. The <time> element will
 # display the last update time of the service worker script.
@@ -62,10 +66,6 @@ serviceworker-worker-status-running = Körs
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = Stoppad
 
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = Registrering
-
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = Du behöver registrera en Service Worker för att inspektera den här. <a>Lär dig mer</a>
@@ -86,12 +86,33 @@ serviceworker-empty-suggestions-debugger = Stega igenom dina registrerade Servic
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Inspektera Service Workers från andra domäner. <a>Öppna about:debugging</a>
 
+# Text displayed when no service workers are visible for the current page.
+serviceworker-empty-intro2 = Inga service workers hittades
+
+# Link will open https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
+serviceworker-empty-intro-link = Läs mer
+
+# Text displayed when there are no Service Workers to display for the current page,
+# introducing hints to debug Service Worker issues.
+# <a> and <span> are links that will open the webconsole and the debugger, respectively.
+serviceworker-empty-suggestions2 = Om den aktuella sidan har en service worker, så kan du leta efter fel i <a>konsolen</a> eller stega dig igenom din service worker registrering i <span>felsökaren</span>
+
+# Suggestion to go to about:debugging in order to see Service Workers for all domains.
+# Link will open about:debugging in a new tab.
+serviceworker-empty-suggestions-aboutdebugging2 = Visa service workers från andra domäner
+
 # Header for the Manifest page when we have an actual manifest
 manifest-view-header = App manifest
 
 # Header for the Manifest page when there's no manifest to inspect
 # The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
 manifest-empty-intro = Du måste lägga till en webbapp-manifest för att inspektera den här. <a>Läs mer</a>
+
+# Header for the Manifest page when there's no manifest to inspect
+manifest-empty-intro2 = Inget webbapp manifest upptäckt
+
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro-link = Lär dig hur du lägger till ett manifest
 
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = Fel och varningar

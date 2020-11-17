@@ -13,36 +13,27 @@ cfr-doorhanger-pintab-heading = Pokušaj ovo: Zakači karticu
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Zašto ovo vidim
-
 cfr-doorhanger-extension-cancel-button = Ne sada
     .accesskey = N
-
 cfr-doorhanger-extension-ok-button = Dodaj
     .accesskey = D
 cfr-doorhanger-pintab-ok-button = Zakači ovu karticu
     .accesskey = Z
-
 cfr-doorhanger-extension-manage-settings-button = Upravljaj postavkama preporuka
     .accesskey = U
-
 cfr-doorhanger-extension-never-show-recommendation = Ne pokazuj mi ovu preporuku
     .accesskey = N
-
 cfr-doorhanger-extension-learn-more-link = Saznaj više
-
 # This string is used on a new line below the add-on name
 # Variables:
 #   $name (String) - Add-on author name
 cfr-doorhanger-extension-author = od { $name }
-
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Preporuka
-
 cfr-doorhanger-extension-notification2 = Preporuka
     .tooltiptext = Preporuka dodatka
     .a11y-announcement = Dostupna je preporuka dodatka
-
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-feature-notification = Preporuka
@@ -70,7 +61,6 @@ cfr-doorhanger-extension-total-users =
         [few] { $total } korisnika
        *[other] { $total } korisnika
     }
-
 cfr-doorhanger-pintab-description = Jednostavan pristup tvojim najkorištenijim stranicama. Ostavi stranice otvorene u kartici (čak i kada ponovo pokreneš preglednika).
 
 ## These messages are steps on how to use the feature and are shown together.
@@ -78,10 +68,8 @@ cfr-doorhanger-pintab-description = Jednostavan pristup tvojim najkorištenijim 
 cfr-doorhanger-pintab-step1 = <b>Desni klik</b> na karticu koju želiš zakačiti.
 cfr-doorhanger-pintab-step2 = Odaberi <b>Zakači karticu</b> iz izbornika.
 cfr-doorhanger-pintab-step3 = Ukoliko je stranica osvježena, vidjet ćete plavu točku na zakačenoj kartici.
-
 cfr-doorhanger-pintab-animation-pause = Pauziraj
 cfr-doorhanger-pintab-animation-resume = Nastavi
-
 
 ## Firefox Accounts Message
 
@@ -103,24 +91,18 @@ cfr-protections-panel-link-text = Saznaj više
 # This string is used by screen readers to offer a text based alternative for
 # the notification icon
 cfr-badge-reader-label-newfeature = Nova funkcija:
-
 cfr-whatsnew-button =
     .label = Što je novo
     .tooltiptext = Što je novo
-
 cfr-whatsnew-panel-header = Što je novo
-
 cfr-whatsnew-release-notes-link-text = Pročitaj napomene o izdanju
-
 cfr-whatsnew-fx70-title = { -brand-short-name } sada još bolje brani tvoju privatnost
 cfr-whatsnew-fx70-body =
-    Najnovije ažuriranje poboljšava zaštitu od praćenja i olakšava stvaranje
+    Najnovije aktualiziranje poboljšava zaštitu od praćenja i olakšava stvaranje
     sigurnih lozinki za svaku web lokaciju.
-
 cfr-whatsnew-tracking-protect-title = Zaštiti se od programa za praćenje
 cfr-whatsnew-tracking-protect-body = { -brand-short-name } blokira mnoge uobičajene programe za praćenje tvojih radnji na društvenim mrežama i web lokacijama.
 cfr-whatsnew-tracking-protect-link-text = Pogledaj svoj izvještaj
-
 # This string is displayed before a large numeral that indicates the total
 # number of tracking elements blocked. Don’t add $blockedCount to your
 # localization, because it would result in the number showing twice.
@@ -132,11 +114,9 @@ cfr-whatsnew-tracking-blocked-title =
     }
 cfr-whatsnew-tracking-blocked-subtitle = Od { DATETIME($earliestDate, month: "long", year: "numeric") }
 cfr-whatsnew-tracking-blocked-link-text = Pogledaj izvještaj
-
 cfr-whatsnew-lockwise-backup-title = Izradi sigurnosnu kopiju tvojih lozinki
 cfr-whatsnew-lockwise-backup-body = Sad generiraj sigurne lozinke, kojima možeš pristupiti gdjegod se prijavljuješ.
 cfr-whatsnew-lockwise-backup-link-text = Uključi sigurnosne kopije
-
 cfr-whatsnew-lockwise-take-title = Ponesi svoje lozinke sa sobom
 cfr-whatsnew-lockwise-take-body =
     Mobilna aplikacija { -lockwise-brand-short-name } omogućuje siguran pristup 
@@ -146,7 +126,7 @@ cfr-whatsnew-lockwise-take-link-text = Preuzmi aplikaciju
 ## Search Bar
 
 cfr-whatsnew-searchbar-title = Tipkaj manje, pronađi više s adresnom trakom
-cfr-whatsnew-searchbar-body-topsites = Sada, jednostavno odaberi adresnu traku i jedan okvir će se proširiti s poveznicama tvojih najkorištenijih stranica.
+cfr-whatsnew-searchbar-body-topsites = Sada, jednostavno odaberi adresnu traku i rasklopit će se jedan okvir s poveznicama tvojih najkorištenijih stranica.
 cfr-whatsnew-searchbar-icon-alt-text = Ikona za povećalo
 
 ## Picture-in-Picture
@@ -173,7 +153,6 @@ cfr-whatsnew-fingerprinter-counter-header =
        *[other] Jedinstvenih otisaka blokirano
     }
 cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } blokira mnoge pratitelje jedinstvenih otisaka koji tajno skupljaju informacije o tvom uređaju i radnjama kako bi stvorili tvoj reklamni profil.
-
 # Message variation when fingerprinters count is less than 10
 cfr-whatsnew-fingerprinter-counter-header-alt = Jedinstveni otisci
 cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } može blokirati pratitelje jedinstvenih otisaka koji tajno skupljaju informacije o tvom uređaju i radnjama kako bi stvorili tvoj reklamni profil.
@@ -219,8 +198,8 @@ cfr-doorhanger-socialtracking-heading = { -brand-short-name } je zaustavio druš
 cfr-doorhanger-socialtracking-description = Tvoja privatnost je važna. { -brand-short-name } sad blokira uobičajene programe za praćenje od društvenih mreža, ograničavajući količinu podataka koje mogu prikupiti o onome što radiš na internetu.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } je blokirao jedinstvene otiske na ovoj stranici
 cfr-doorhanger-fingerprinters-description = Tvoja privatnost je važna. { -brand-short-name } sada blokira čitače jedinstvenih otisaka, koji prikupljaju dijelove informacija koji su jedinstveni za tebe i tvoje uređaje, kako bi te mogli pratiti.
-cfr-doorhanger-cryptominers-heading = { -brand-short-name } je blokirao kripto rudare na ovoj stranici
-cfr-doorhanger-cryptominers-description = Tvoja privatnost je važna. { -brand-short-name } sada blokira kripto rudare, koji koriste resurse tvog sustava, kako bi rudarili digitalni novac.
+cfr-doorhanger-cryptominers-heading = { -brand-short-name } je blokirao kripto-rudare na ovoj stranici
+cfr-doorhanger-cryptominers-description = Tvoja privatnost je važna. { -brand-short-name } sada blokira kripto-rudare, koji koriste resurse tvog sustava za rudarenje digitalnog novca.
 
 ## Enhanced Tracking Protection Milestones
 
@@ -235,6 +214,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Vidi sve
     .accesskey = s
+cfr-doorhanger-milestone-close-button = Zatvori
+    .accesskey = Z
 
 ## What’s New Panel Content for Firefox 76
 
@@ -248,7 +229,7 @@ cfr-whatsnew-lockwise-icon-alt = { -lockwise-brand-short-name } ikona
 ## Vulnerable Passwords message
 
 cfr-whatsnew-passwords-header = Dobijajte upozorenja o ranjivim zaporkama
-cfr-whatsnew-passwords-body = Hakeri znaju da ljudi ponovno koriste iste lozinke. Ukoliko ste koristili istu lozinku na različitim stranicama, i jednoj od tih stranica ukradu podatke, vidjet ćete obavijest u { -lockwise-brand-short-name } da biste trebali izmijeniti svoju lozinku na stranicama koje ju koriste.
+cfr-whatsnew-passwords-body = Hakeri znaju da ljudi ponovo koriste iste lozinke. Ukoliko koristiš istu lozinku na različitim stranicama i ako jednoj od tih stranica ukradu podatke, { -lockwise-brand-short-name } će te obavijestiti da trebaš promijeniti svoju lozinku na stranicama koje ju koriste.
 cfr-whatsnew-passwords-icon-alt = Ikona ranjive lozinke
 
 ## Picture-in-Picture fullscreen message
@@ -256,3 +237,45 @@ cfr-whatsnew-passwords-icon-alt = Ikona ranjive lozinke
 cfr-whatsnew-pip-fullscreen-header = Prebacite sliku-u-slici na puni zaslon
 cfr-whatsnew-pip-fullscreen-body = Kada prebacite video u mali plutajući prozor, sada možete dvostrukim klikom povećati taj video na cijeli zaslon.
 cfr-whatsnew-pip-fullscreen-icon-alt = Ikona slike-u-slici
+
+## Protections Dashboard message
+
+cfr-whatsnew-protections-header = Zaštita na prvi pogled
+cfr-whatsnew-protections-body = Nadzorna ploča zaštite sadrži sažeta izvješća o curenju podataka i upravljanju lozinkama. Sada možeš pratiti koliko je curenja riješeno i vidjeti ako su neke od tvojih lozinka izložene u curenju podataka.
+cfr-whatsnew-protections-cta-link = Prikaži nadzornu ploču zaštite
+cfr-whatsnew-protections-icon-alt = Ikona štita
+
+## Better PDF message
+
+cfr-whatsnew-better-pdf-header = Bolje PDF iskustvo
+cfr-whatsnew-better-pdf-body = PDF dokumenti sada se otvaraju izravno u { -brand-short-name }u, što olakšava rad.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Tvoja privatnost je važna. { -brand-short-name } sada sigurno usmjerava tvoje DNS zahtjeve kad god je to moguće na partnersku uslugu, kako bi te se zaštitilo dok pregledavaš.
+cfr-doorhanger-doh-header = Sigurnije, šifrirano pregledavanje DNS-a
+cfr-doorhanger-doh-primary-button = U redu, razumijem
+    .accesskey = r
+cfr-doorhanger-doh-secondary-button = Deaktiviraj
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Tvoja privatnost je bitna. { -brand-short-name } sada izolira web stranice, što hakerima otežava krađu lozinki, brojeva kreditnih kartica i drugih osjetljivih informacija.
+cfr-doorhanger-fission-header = Izolacija stranice
+cfr-doorhanger-fission-primary-button = U redu, razumijem
+    .accesskey = U
+cfr-doorhanger-fission-secondary-button = Saznaj više
+    .accesskey = S
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Automatska zaštita od podlih taktika praćenja
+cfr-whatsnew-clear-cookies-body = Neki pratitelji vas preusmjere na druge web stranice koje potajno postave kolačiće. { -brand-short-name } sada automatski briše te kolačiće kako vas ne bi pratili.
+cfr-whatsnew-clear-cookies-image-alt = Ilustracija blokiranog kolačića
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Više medijskih kontrola
+cfr-whatsnew-media-keys-body = Reproduciraj i pauziraj zvuk ili video izravno s tipkovnicom ili slušalicama, što olakšava upravljanje medijima iz druge kartice, programa ili čak kada je računalo zaključano. Možeš se i kretati između pjesama pomoću tipki naprijed i natrag.
+cfr-whatsnew-media-keys-button = Saznaj kako

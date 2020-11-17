@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Přesunout do nového okna
     .accesskey = k
-undo-close-tab =
-    .label = Obnovit zavřený panel
-    .accesskey = t
 tab-context-close-multiple-tabs =
     .label = Zavřít několik panelů
     .accesskey = k
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -79,4 +80,20 @@ move-tabs =
     .accesskey = s
 move-tab =
     .label = Přesunout panel
+    .accesskey = s
+tab-context-close-tabs =
+    .label =
+        Zavřít { $tabCount ->
+            [one] panel
+            [few] { $tabCount } panely
+           *[other] { $tabCount } panelů
+        }
+    .accesskey = Z
+tab-context-move-tabs =
+    .label =
+        Přesunout { $tabCount ->
+            [one] panel
+            [few] { $tabCount } panely
+           *[other] { $tabCount } panelů
+        }
     .accesskey = s

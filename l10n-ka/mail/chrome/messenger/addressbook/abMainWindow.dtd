@@ -18,6 +18,8 @@
 <!ENTITY newListCmd.accesskey                           "ს">
 <!ENTITY newAddressBookCmd.label                        "წიგნაკი…">
 <!ENTITY newAddressBookCmd.accesskey                    "წ">
+<!ENTITY newCardDAVBookCmd.label                        "CardDAV წიგნაკი…">
+<!ENTITY newCardDAVBookCmd.accesskey                    "V">
 <!ENTITY newLDAPDirectoryCmd.label                      "LDAP საქაღალდე…">
 <!ENTITY newLDAPDirectoryCmd.accesskey                  "ქ">
 <!ENTITY newMessageCmd.label                            "წერილი">
@@ -44,38 +46,14 @@
 <!-- Edit Menu -->
 <!ENTITY editMenu.label                                 "ჩასწორება">
 <!ENTITY editMenu.accesskey                             "ჩ">
-<!ENTITY undoCmd.label                                  "დაბრუნება">
-<!ENTITY undoCmd.key                                    "Z">
-<!ENTITY undoCmd.accesskey                              "დ">
-<!ENTITY redoCmd.label                                  "კვლავ შესრულება">
-<!ENTITY redoCmd.key                                    "Y">
-<!ENTITY redoCmd.accesskey                              "კ">
-<!ENTITY cutCmd.label                                   "ამოჭრა">
-<!ENTITY cutCmd.key                                     "X">
-<!ENTITY cutCmd.accesskey                               "ო">
-<!ENTITY copyCmd.label                                  "ასლი">
-<!ENTITY copyCmd.key                                    "C">
-<!ENTITY copyCmd.accesskey                              "ლ">
-<!ENTITY pasteCmd.label                                 "ჩასმა">
-<!ENTITY pasteCmd.key                                   "V">
-<!ENTITY pasteCmd.accesskey                             "ჩ">
 <!ENTITY deleteCmd.label                                "წაშლა">
-<!ENTITY deleteCmd.accesskey                            "წ">
 <!ENTITY deleteAbCmd.label                              "წიგნაკის წაშლა">
 <!ENTITY deleteContactCmd.label                         "პირის ამოშლა">
 <!ENTITY deleteContactsCmd.label                        "ხალხის ამოშლა">
 <!ENTITY deleteListCmd.label                            "სიის წაშლა">
 <!ENTITY deleteListsCmd.label                           "სიების წაშლა">
 <!ENTITY deleteItemsCmd.label                           "ელემენტების წაშლა">
-<!ENTITY selectAllCmd.label                             "ყველას მონიშვნა">
-<!ENTITY selectAllCmd.key                               "A">
 <!ENTITY searchAddressesCmd.key                         "f">
-<!ENTITY selectAllCmd.accesskey                         "ყ">
-<!ENTITY swapFirstNameLastNameCmd.label                 "სახელის/გვარის ადგილების გაცვლა">
-<!ENTITY swapFirstNameLastNameCmd.accesskey             "დ">
-<!-- LOCALIZATION NOTE (hideSwapFnLnUI) : DONT_TRANSLATE -->
-<!-- Swap FN/LN UI  Set to "false" to show swap fn/ln UI -->
-<!ENTITY hideSwapFnLnUI "true">
 <!ENTITY propertiesMenu.label                           "პარამეტრები">
 <!ENTITY propertiesMenu.accesskey                       "რ">
 <!ENTITY propertiesCmd.key                              "i">
@@ -124,9 +102,6 @@ because displayed names don't have the comma in between. -->
 <!ENTITY messengerCmd.label                             "ფოსტა და ჯგუფები">
 <!ENTITY messengerCmd.accesskey                         "ფ">
 <!ENTITY messengerCmd.commandkey                        "1">
-<!ENTITY addressBookCmd.label                           "მისამართების წიგნაკი">
-<!ENTITY addressBookCmd.accesskey                       "წ">
-<!ENTITY addressBookCmd.key                             "B">
 <!ENTITY searchAddressesCmd.label                       "მისამართების ძიება…">
 <!ENTITY searchAddressesCmd.accesskey                   "ძ">
 <!ENTITY importCmd.label                                "გადმოტანა…">
@@ -150,6 +125,8 @@ because displayed names don't have the comma in between. -->
 <!ENTITY propertiesContext.accesskey                    "პ">
 <!ENTITY abPropertiesContext.label                      "პარამეტრები">
 <!ENTITY abPropertiesContext.accesskey                  "რ">
+<!ENTITY syncContext.label                              "დასინქრონება">
+<!ENTITY syncContext.accesskey                          "ქ">
 <!ENTITY editContactContext.label                       "პირის მონაცემების ჩასწორება">
 <!ENTITY editContactContext.accesskey                   "ჩ">
 <!ENTITY editMailingListContext.label                   "სიის ჩასწორება">

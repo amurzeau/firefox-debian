@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = רק כאשר { -brand-short-name } מוגדר לחסום רכיבי מעקב מוכרים
 do-not-track-option-always =
     .label = תמיד
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] אפשרויות
-           *[other] העדפות
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] אפשרויות
@@ -35,6 +29,8 @@ search-input-box =
            *[other] חיפוש בהעדפות
         }
 managed-notice = הדפדפן שלך מנוהל על־ידי הארגון שלך.
+category-list =
+    .aria-label = קטגוריות
 pane-general-title = כללי
 category-general =
     .tooltiptext = { pane-general-title }
@@ -50,6 +46,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = ניסויים של { -brand-short-name }
+category-experimental =
+    .tooltiptext = ניסויים של { -brand-short-name }
+pane-experimental-subtitle = נא להמשיך בזהירות
+pane-experimental-search-results-header = ניסויים של { -brand-short-name }: נא להמשיך בזהירות
+pane-experimental-description = שינוי העדפות התצורה המתקדמות עשוי להשפיע על הביצועים או אבטחה של { -brand-short-name }.
 help-button-label = תמיכה ב־{ -brand-short-name }
 addons-button-label = הרחבות וערכות נושא
 focus-search =
@@ -82,6 +84,9 @@ extension-controlled-homepage-override = ההרחבה <img data-l10n-name="icon"
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = ההרחבה <img data-l10n-name="icon"/> { $name } שולטת על דף הלשונית החדשה שלך.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = ההרחבה <img data-l10n-name="icon"/> { $name } שולטת על הגדרה זו.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = ההרחבה <img data-l10n-name="icon"/> { $name } שולטת על הגדרה זו.
@@ -365,13 +370,6 @@ update-application-warning-cross-user-setting = הגדרה זו תחול על כ
 update-application-use-service =
     .label = שימוש בשירות רקע לשם התקנת עדכונים
     .accesskey = ר
-update-enable-search-update =
-    .label = עדכון מנועי חיפוש באופן אוטומטי
-    .accesskey = ע
-update-pref-write-failure-title = כשל בכתיבה
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = לא ניתן לשמור את ההעדפה. לא ניתן לכתוב לקובץ: { $path }
 update-setting-write-failure-title = שגיאה בשמירת העדפות עדכון
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -430,6 +428,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = הפעלת בקרי וידאו של תמונה בתוך תמונה
     .accesskey = ת
 browsing-picture-in-picture-learn-more = מידע נוסף
+browsing-media-control =
+    .label = שליטה במדיה באמצעות מקלדת, אוזניות או ממשק וירטואלי
+    .accesskey = ש
+browsing-media-control-learn-more = מידע נוסף
 browsing-cfr-recommendations =
     .label = קבלת המלצות על הרחבות תוך כדי גלישה
     .accesskey = ק
@@ -493,13 +495,14 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = אתרים מובילים
 home-prefs-topsites-description = האתרים בהם ביקרת הכי הרבה
+home-prefs-topsites-by-option-sponsored =
+    .label = אתרים מובילים ממומנים
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = מומלץ על־ידי { $provider }
-home-prefs-recommended-by-description = תוכן נהדר מכל רחבי הרשת, בהתאמה אישית להעדפותיך
 
 ##
 
@@ -539,7 +542,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = הוספת שורת החיפוש לסרגל הכלים
 search-engine-default-header = מנוע חיפוש ברירת מחדל
-search-engine-default-desc = בחירת מנוע חיפוש ברירת המחדל לשימוש בשורת הכתובת ובשורת החיפוש.
 search-engine-default-desc-2 = זהו מנוע החיפוש המוגדר כברירת מחדל בשורת הכתובת ובשורת החיפוש. ניתן להחליף אותו בכל עת.
 search-engine-default-private-desc-2 = בחירת מנוע חיפוש אחר עבור חלונות פרטיים בלבד
 search-separate-default-engine =
@@ -562,10 +564,10 @@ search-show-suggestions-above-history-option =
     .label = הצגת הצעות חיפוש לפני היסטוריית הגלישה בתוצאות שורת הכתובת
 search-show-suggestions-private-windows =
     .label = הצגת הצעות חיפוש בחלונות פרטיים
-suggestions-addressbar-settings = שינוי העדפות עבור היסטוריית גלישה, סימניות והצעות לשוניות
 suggestions-addressbar-settings-generic = שינוי העדפות עבור הצעות אחרות של שורת הכתובת
 search-suggestions-cant-show = הצעות חיפוש לא יופיעו בתוצאות סרגל המיקום מכיוון שהגדרת ש־{ -brand-short-name } לעולם לא לזכור היסטוריה.
 search-one-click-header = מנועי חיפוש בלחיצה אחת
+search-one-click-header2 = קיצורי דרך לחיפוש
 search-one-click-desc = בחירת מנועי חיפוש חלופיים שיופיעו מתחת לשורת הכתובת ושורת החיפוש עם תחילת ההקלדה של מילות מפתח.
 search-choose-engine-column =
     .label = מנוע חיפוש
@@ -576,6 +578,9 @@ search-restore-default =
     .accesskey = ש
 search-remove-engine =
     .label = הסרה
+    .accesskey = ה
+search-add-engine =
+    .label = הוספה
     .accesskey = ה
 search-find-more-link = מנועי חיפוש נוספים
 # This warning is displayed when the chosen keyword is already in use
@@ -588,7 +593,6 @@ search-keyword-warning-bookmark = בחרת להשתמש במילת מפתח שנ
 
 ## Containers Section
 
-containers-back-link = « חזרה
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -607,20 +611,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = הסרה
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = קחו את הרשת עמכם
 sync-signedout-description = סנכרון הסימניות, ההיסטוריה, הלשוניות, הססמאות, ההרחבות, וההעדפות בין כל מכשיריך.
-sync-signedout-account-title = התחברות עם { -fxaccount-brand-name }
-sync-signedout-account-create = אין ברשותך חשבון? תחילת עבודה
-    .accesskey = ח
-sync-signedout-account-signin =
-    .label = התחברות…
-    .accesskey = ה
 sync-signedout-account-signin2 =
     .label = התחברות אל { -sync-brand-short-name }…
     .accesskey = ה
@@ -634,16 +629,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = הורידו את Firefox עבור <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> או <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> כדי להסתנכרן עם המכשירים הניידים שלכם.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = שינוי תמונת פרופיל
-sync-disconnect =
-    .label = התנתקות…
-    .accesskey = ה
 sync-sign-out =
     .label = התנתקות…
     .accesskey = ה
@@ -660,8 +649,6 @@ sync-remove-account =
 sync-sign-in =
     .label = כניסה
     .accesskey = כ
-sync-signedin-settings-header = הגדרות סנכרון
-sync-signedin-settings-desc = נא לבחור את הפריטים שיסונכרנו למכשירים שלך באמצעות { -brand-short-name }
 
 ## Sync section - enabling or disabling sync.
 
@@ -714,10 +701,6 @@ sync-engine-tabs =
     .label = לשוניות פתוחות
     .tooltiptext = רשימה של מה שפתוח בכל ההתקנים המסונכרנים
     .accesskey = ל
-sync-engine-logins =
-    .label = כניסות
-    .tooltiptext = שמות משתמשים וססמאות ששמרת
-    .accesskey = כ
 sync-engine-logins-passwords =
     .label = כניסות וססמאות
     .tooltiptext = שמות משתמשים וססמאות ששמרת
@@ -756,18 +739,10 @@ sync-device-name-save =
     .label = שמירה
     .accesskey = ש
 sync-connect-another-device = חיבור מכשיר נוסף
-sync-manage-devices = ניהול מכשירים
-sync-fxa-begin-pairing = צימוד מכשיר
-sync-tos-link = תנאי השירות
-sync-fxa-privacy-notice = הצהרת פרטיות
 
 ## Privacy Section
 
 privacy-header = פרטיות דפדפן
-
-## Privacy Section - Forms
-
-logins-header = כניסות וססמאות
 
 ## Privacy Section - Logins and Passwords
 
@@ -798,10 +773,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = שימוש בססמה ראשית
     .accesskey = ש
+forms-primary-pw-use =
+    .label = שימוש בססמה ראשית
+    .accesskey = ש
+forms-primary-pw-learn-more-link = מידע נוסף
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = שינוי ססמה ראשית…
     .accesskey = נ
 forms-master-pw-fips-title = הינך כרגע במצב FIPS. ‏FIPS דורש ססמה ראשית לא־ריקה.
+forms-primary-pw-change =
+    .label = שינוי ססמה ראשית…
+    .accesskey = נ
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = מצבך כרגע הוא FIPS. ‏FIPS דורש ססמה ראשית לא־ריקה.
 forms-master-pw-fips-desc = שינוי הססמה נכשל
 
 ## OS Authentication dialog
@@ -813,6 +803,13 @@ master-password-os-auth-dialog-message-win = כדי ליצור ססמה ראשי
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = ליצור ססמה ראשית
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = כדי ליצור ססמה ראשית, יש להזין את פרטי הכניסה שלך ל־Windows. פעולה זאת מסייעת בהגנה על אבטחת החשבונות שלך.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = ליצור ססמה ראשית
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -879,10 +876,12 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = סוג שנחסם
     .accesskey = ס
-sitedata-option-block-trackers =
-    .label = רכיבי מעקב צד־שלישי
 sitedata-option-block-cross-site-trackers =
     .label = רכיבי מעקב חוצי אתרים
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = עוגיות מעקב חוצות אתרים — כולל עוגיות של רשתות חברתיות
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = עוגיות חוצות אתרים — כולל עוגיות של רשתות חברתיות
 sitedata-option-block-unvisited =
     .label = עוגיות מאתרים שלא ביקרתי בהם
 sitedata-option-block-all-third-party =
@@ -922,26 +921,9 @@ addressbar-suggestions-settings = שינוי העדפות של הצעות מנו
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = חסימת תוכן
 content-blocking-enhanced-tracking-protection = הגנת מעקב מתקדמת
 content-blocking-section-top-level-description = רכיבי מעקב עוקבים אחריך ברשת כדי לאסוף מידע על הרגלי הגלישה ותחומי העניין שלך. { -brand-short-name } חוסם הרבה מרכיבי המעקב האלו, לרבות תסריטים זדוניים אחרים.
 content-blocking-learn-more = מידע נוסף
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = רגיל
-    .accesskey = ר
-content-blocking-setting-strict =
-    .label = מחמיר
-    .accesskey = ח
-content-blocking-setting-custom =
-    .label = התאמה אישית
-    .accesskey = ה
-content-blocking-standard-desc = מאוזן בין הגנה לביצועים. מאפשר את פעולתם של חלק מרכיבי המעקב כדי שהאתרים יפעלו כראוי.
-content-blocking-strict-description = הגנה חזקה יותר, שעשויה לשבש פעילות של אתרים.
-content-blocking-custom-desc = בחירת הפריטים שייחסמו.
-content-blocking-private-trackers = רכיבי מעקב מוכרים בחלונות פרטיים בלבד
-content-blocking-third-party-cookies = עוגיות מעקב צד־שלישי
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -963,27 +945,23 @@ content-blocking-etp-standard-desc = מאוזן בין הגנה לביצועים
 content-blocking-etp-strict-desc = הגנה חזקה יותר, אך עשויה לשבש פעילות של אתרים או תוכן.
 content-blocking-etp-custom-desc = בחירה באילו רכיבי מעקב ותסריטים יש לחסום.
 content-blocking-private-windows = תוכן מעקב בחלונות פרטיים
+content-blocking-cross-site-cookies = עוגיות חוצות אתרים
 content-blocking-cross-site-tracking-cookies = עוגיות מעקב חוצות אתרים
 content-blocking-social-media-trackers = רכיבי מעקב של מדיה חברתית
 content-blocking-all-cookies = כל העוגיות
 content-blocking-unvisited-cookies = עוגיות מאתרים שלא ביקרתי בהם
-content-blocking-all-windows-trackers = רכיבי מעקב מוכרים בכל החלונות
 content-blocking-all-windows-tracking-content = תוכן מעקב בכל החלונות
 content-blocking-all-third-party-cookies = כל העוגיות צד־שלישי
 content-blocking-cryptominers = כורי מטבעות דיגיטליים
 content-blocking-fingerprinters = רכיבי זהות דיגיטלית
 content-blocking-warning-title = לתשומת לבך!
-content-blocking-warning-description = חסימת תוכן עלולה לגרום לאתרים מסוימים להישבר. קל לבטל חסימה עבור אתרים בטוחים.
-content-blocking-learn-how = מידע נוסף
 content-blocking-and-isolating-etp-warning-description = חסימת רכיבי מעקב ובידוד עוגיות עשויים להשפיע על הפונקציונליות של אתרים מסוימים. יש לטעון מחדש דף עם רכיבי מעקב כדי לטעון את כל התוכן.
+content-blocking-and-isolating-etp-warning-description-2 = הגדרה זו עלולה לגרום לאתרים מסויימים שלא להציג תוכן או שלא לעבוד כראוי. אם נראה שאתר מסויים שבור, באפשרותך לכבות את הגנת המעקב עבור אותו אתר כדי לטעון את כל התוכן.
 content-blocking-warning-learn-how = מידע נוסף
 content-blocking-reload-description = יהיה עליך לטעון מחדש את הלשוניות שלך כדי להחיל שינויים אלו.
 content-blocking-reload-tabs-button =
     .label = טעינת כל הלשוניות מחדש
     .accesskey = ט
-content-blocking-trackers-label =
-    .label = רכיבי מעקב
-    .accesskey = ר
 content-blocking-tracking-content-label =
     .label = תוכן מעקב
     .accesskey = ת
@@ -1042,12 +1020,6 @@ permissions-notification-link = מידע נוסף
 permissions-notification-pause =
     .label = השהיית התרעות עד להפעלה מחדש של { -brand-short-name }
     .accesskey = ה
-permissions-block-autoplay-media2 =
-    .label = חסימת אתרים מניגון קול באופן אוטומטי
-    .accesskey = ח
-permissions-block-autoplay-media-exceptions =
-    .label = חריגות…
-    .accesskey = ח
 permissions-autoplay = ניגון אוטומטי
 permissions-autoplay-settings =
     .label = הגדרות…
@@ -1153,6 +1125,18 @@ space-alert-under-5gb-ok-button =
     .label = בסדר, הבנתי
     .accesskey = ב
 space-alert-under-5gb-message = ל־{ -brand-short-name } אוזל שטח הדיסק. יתכן שנתוני אתרים לא יוצגו כשורה. ניתן לבקר בקישור של “מידע נוסף” כדי לייעל את אופן השימוש בדיסק לחוויית גלישה טובה יותר.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = מצב HTTPS בלבד
+httpsonly-description = ‏HTTPS מספק חיבור מאובטח ומוצפן בין { -brand-short-name } לבין האתרים שמבקרים בהם. רוב האתרים תומכים ב־HTTPS, ואם מצב HTTPS בלבד מופעל, { -brand-short-name } ישדרג את כל החיבורים ל־HTTPS.
+httpsonly-learn-more = מידע נוסף
+httpsonly-radio-enabled =
+    .label = הפעלת מצב HTTPS בלבד בכל החלונות
+httpsonly-radio-enabled-pbm =
+    .label = הפעלת מצב HTTPS בלבד אך ורק בחלונות פרטיים
+httpsonly-radio-disabled =
+    .label = לא להפעיל מצב HTTPS בלבד
 
 ## The following strings are used in the Download section of settings
 

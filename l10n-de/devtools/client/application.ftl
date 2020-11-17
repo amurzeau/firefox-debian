@@ -28,10 +28,6 @@ serviceworker-worker-unregister = Abmelden
 serviceworker-worker-debug = Debuggen
     .title = Nur laufende Service-Worker können debuggt werden
 
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = Starten
-
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
 serviceworker-worker-debug-forbidden = Untersuchen
@@ -41,6 +37,14 @@ serviceworker-worker-debug-forbidden = Untersuchen
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = Starten
     .title = Service-Worker können nur untersucht werden, wenn nicht mehr als ein 1 Prozess für Webinhalte existiert (kein multi-e10s).
+
+# Alt text for the image icon displayed inside a debug link for a service worker.
+serviceworker-worker-inspect-icon =
+    .alt = Untersuchen
+
+# Text for the start link displayed for a registered but not running Service Worker.
+# Clicking on the link will attempt to start the service worker.
+serviceworker-worker-start3 = Starten
 
 # Text displayed for the updated time of the service worker. The <time> element will
 # display the last update time of the service worker script.
@@ -62,10 +66,6 @@ serviceworker-worker-status-running = Wird ausgeführt
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = Angehalten
 
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = Wird angemeldet
-
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = Es muss ein Service-Worker angemeldet sein, um ihn hier zu untersuchen. <a>Weitere Informationen</a>
@@ -86,12 +86,33 @@ serviceworker-empty-suggestions-debugger = Gehen Sie die Service-Worker-Anmeldun
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Untersuchen Sie Service-Worker von anderen Domains. <a>about:debugging öffnen</a>
 
+# Text displayed when no service workers are visible for the current page.
+serviceworker-empty-intro2 = Keine Service-Worker gefunden
+
+# Link will open https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
+serviceworker-empty-intro-link = Weitere Informationen
+
+# Text displayed when there are no Service Workers to display for the current page,
+# introducing hints to debug Service Worker issues.
+# <a> and <span> are links that will open the webconsole and the debugger, respectively.
+serviceworker-empty-suggestions2 = Wenn die aktuelle Seite einen Service-Worker besitzen sollte, könnten Sie in der <a>Konsole</a> nach Fehlern suchen oder die Registrierung Ihres Service-Workers schrittweise im <span>Debugger</span> durchlaufen.
+
+# Suggestion to go to about:debugging in order to see Service Workers for all domains.
+# Link will open about:debugging in a new tab.
+serviceworker-empty-suggestions-aboutdebugging2 = Service-Worker von anderen Domains ansehen
+
 # Header for the Manifest page when we have an actual manifest
 manifest-view-header = App-Manifest
 
 # Header for the Manifest page when there's no manifest to inspect
 # The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
 manifest-empty-intro = Sie müssen ein Web-App-Manifest hinzufügen, um es hier zu untersuchen. <a>Weitere Informationen</a>
+
+# Header for the Manifest page when there's no manifest to inspect
+manifest-empty-intro2 = Kein Web-App-Manifest erkannt
+
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro-link = Erfahren Sie, wie Sie ein Manifest hinzufügen
 
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = Fehler und Warnungen

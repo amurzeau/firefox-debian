@@ -53,10 +53,6 @@ inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> njama e
 
 inactive-css-not-grid-or-flex-container-fix = Wppytajśo <strong>display:grid</strong> abo <strong>display:flex</strong> pśidaś. { learn-more }
 
-inactive-css-not-grid-or-flex-item-fix = Wopytajśo <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong> abo <strong>display:inline-flex</strong> pśidaś. { learn-more }
-
-inactive-css-not-grid-item-fix = Wopytajśo <strong>display:grid</strong> abo <strong>display:inline-grid</strong> nadrědowanemu elementoju zapiska pśidaś. { learn-more }
-
 inactive-css-not-grid-or-flex-container-or-multicol-container-fix = Wopytajśo <strong>display:grid</strong>, <strong>display:flex</strong> abo <strong>columns:2</strong> pśidaś. { learn-more }
 
 inactive-css-not-grid-or-flex-item-fix-2 = Wopytajśo <strong>display:grid</strong>, <strong>display:flex</strong>, <strong>display:inline-grid</strong> abo <strong>display:inline-flex</strong> pśidaś. { learn-more }
@@ -64,8 +60,6 @@ inactive-css-not-grid-or-flex-item-fix-2 = Wopytajśo <strong>display:grid</stro
 inactive-css-not-grid-item-fix-2 = Wopytajśo <strong>display:grid</strong> abo <strong>display:inline-grid</strong> nadrědowanemu elementoju pśidaś. { learn-more }
 
 inactive-css-not-grid-container-fix = Wopytajśo <strong>display:grid</strong> abo <strong>display:inline-grid</strong> pśidaś. { learn-more }
-
-inactive-css-not-flex-item-fix = Wopytajśo <strong>display:flex</strong> abo <strong>display:inline-flex</strong> nadrědowanemu elementoju zapiska pśidaś. { learn-more }
 
 inactive-css-not-flex-item-fix-2 = Wopytajśo <strong>display:flex</strong> abo <strong>display:inline-flex</strong> nadrědowanemu elementoju pśidaś. { learn-more }
 
@@ -82,3 +76,26 @@ inactive-css-not-display-block-on-floated-fix = Wopytajśo <strong>float</strong
 inactive-css-position-property-on-unpositioned-box-fix = Wopytajśo jogo kakosć <strong>position</strong> na něco druge ako <strong>static</strong> nastajiś. { learn-more }
 
 inactive-text-overflow-when-no-overflow-fix = Wopytajśo <strong>overflow:hidden</strong> pśidaś. { learn-more }
+
+## In the Rule View when a CSS property may have compatibility issues with other browsers
+## we display an icon. When this icon is hovered this message is displayed to explain why
+## the property is incompatible and the platforms it is incompatible on.
+## Variables:
+##   $property (string) - A CSS declaration name e.g. "-moz-user-select" that can be a platform specific alias.
+##   $rootProperty (string) - A raw CSS property name e.g. "user-select" that is not a platform specific alias.
+
+css-compatibility-default-message = <strong>{ $property }</strong> se w slědujucych wobglědowakach njepódpěra:
+
+css-compatibility-deprecated-experimental-message = <strong>{ $property }</strong> jo był eksperimentelna kakosć, kótaraž jo něnto zestarjona pó W3C-standardach. Njepódpěra se w slědujucych wobglědowakach:
+
+css-compatibility-deprecated-experimental-supported-message = <strong>{ $property }</strong> jo był eksperimentelna kakosć, kótaraž jo  něnto zestarjona pó W3C-standardach.
+
+css-compatibility-deprecated-message = <strong>{ $property }</strong> jo zestarjona pó W3C-standardach. Njepódpěra se w slědujucych wobglědowakach:
+
+css-compatibility-deprecated-supported-message = <strong>{ $property }</strong> jo zestarjona pó W3C-standardach.
+
+css-compatibility-experimental-message = <strong>{ $property }</strong> jo eksperimentelna kakosć. Njepódpěra se w slědujucych wobglědowakach:
+
+css-compatibility-experimental-supported-message = <strong>{ $property }</strong> jo eksperimentelna kakosć.
+
+css-compatibility-learn-more-message = <span data-l10n-name="link">Dalšne informacije</span>wó <strong>{ $rootProperty }</strong>

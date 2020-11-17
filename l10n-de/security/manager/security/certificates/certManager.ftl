@@ -18,6 +18,7 @@ certmgr-mine = Sie haben Zertifikate dieser Organisationen, die Sie identifizier
 certmgr-remembered = Folgende Zertifikate werden verwendet, um Sie gegenüber Websites zu identifizieren:
 certmgr-people = Sie haben Zertifikate gespeichert, die diese Personen identifizieren:
 certmgr-servers = Sie haben Zertifikate gespeichert, die diese Server identifizieren:
+certmgr-server = Diese Einträge identifizieren Ausnahmeregeln für Fehler von Serverzertifikaten
 certmgr-ca = Sie haben Zertifikate gespeichert, die diese Zertifizierungsstellen identifizieren:
 certmgr-detail-general-tab-title =
     .label = Allgemein
@@ -161,6 +162,10 @@ delete-ssl-cert-title =
     .title = Server-Zertifikat-Ausnahmeregeln löschen
 delete-ssl-cert-confirm = Sollen diese Server-Ausnahmeregeln wirklich gelöscht werden?
 delete-ssl-cert-impact = Wenn Sie eine Server-Ausnahmeregel löschen, werden die normalen Sicherheitsüberprüfungen für diesen Server wiederhergestellt und er muss ein gültiges Zertifikat vorweisen.
+delete-ssl-override-title =
+    .title = Ausnahmeregel für Serverzertifikat löschen
+delete-ssl-override-confirm = Soll diese Ausnahmeregel für Server wirklich gelöscht werden?
+delete-ssl-override-impact = Wenn Sie eine Ausnahmeregel für Server löschen, werden die normalen Sicherheitsüberprüfungen für diesen Server wiederhergestellt und er muss ein gültiges Zertifikat vorweisen.
 delete-ca-cert-title =
     .title = CA-Zertifikate löschen oder Vertrauen entziehen
 delete-ca-cert-confirm = Sie haben um ein Löschen dieser CA-Zertifikate angefragt. Für eingebaute Zertifikate wird alles Vertrauen entzogen, was den gleichen Effekt hat. Sollen diese CA-Zertifikate wirklich gelöscht oder ihr Vertrauen entzogen werden?
@@ -208,6 +213,15 @@ cert-not-verified-issuer-unknown = Dieses Zertifikat konnte nicht verifiziert we
 cert-not-verified-ca-invalid = Dieses Zertifikat konnte nicht verifiziert werden, da das CA-Zertifikat ungültig ist.
 cert-not-verified_algorithm-disabled = Das Zertifikat konnte nicht verifiziert werden, weil es mit einem Signatur-Algorithmus signiert wurde, der deaktiviert wurde, weil er nicht sicher ist.
 cert-not-verified-unknown = Dieses Zertifikat konnte aus unbekannten Gründen nicht verifiziert werden.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Kein Client-Zertifikat senden
+# Used when no cert is stored for an override
+no-cert-stored-for-override = (Nicht gespeichert)
+
+## Used to show whether an override is temporary or permanent
+
+permanent-override = Dauerhaft
+temporary-override = Vorübergehend
 
 ## Add Security Exception dialog
 

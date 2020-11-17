@@ -53,6 +53,9 @@ no-migration-sources = Impussibel da chattar in program che cuntegna datas davar
 import-source-page-title = Importar ils parameters e las datas
 import-items-page-title = Datas che duain vegnir importadas
 import-items-description = Tscherna per plaschair las datas che duain vegnir importadas:
+import-permissions-page-title = Dà p.pl. ils dretgs a { -brand-short-name }
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS pretenda che ti permettias explicit a { -brand-short-name } dad acceder als segnapaginas da Safari. Clicca sin «Cuntinuar» e tscherna la datoteca «Bookmarks.plist» en il dialog per avrir ina datoteca che cumpara.
 import-migrating-page-title = Importar…
 import-migrating-description = Las suandantas datas vegnan importadas actualmain:
 import-select-profile-page-title = Tscherner in profil
@@ -88,6 +91,7 @@ imported-edge-reading-list = Glista da lectura (dad Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

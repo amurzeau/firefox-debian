@@ -4,10 +4,6 @@
 
 process-type-web = Saityno turinys
 
-# process used to run privileged pages,
-# such as about:home
-process-type-privileged = Privilegijuotas turinys
-
 # process used to run privileged about pages,
 # such as about:home
 process-type-privilegedabout = Privilegijuotas „about“
@@ -36,3 +32,5 @@ process-type-gpu = GPU
 # process used to perform network operations
 process-type-socket = Sujungimas
 
+# process preallocated; may change to other types
+process-type-prealloc = Išskirtas iš anksto

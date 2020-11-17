@@ -10,6 +10,8 @@ preferences-title =
             [windows] Options
            *[other] Preferences
         }
+category-list =
+    .aria-label = Categories
 pane-general-title = General
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,7 +43,6 @@ composition-addressing-header = Addressing
 privacy-main-header = Privacy
 privacy-passwords-header = Passwords
 privacy-junk-header = Junk
-privacy-data-collection-header = Data Collection and Use
 collection-header = { -brand-short-name } Data Collection and Use
 collection-description = We strive to provide you with choices and collect only what we need to provide and improve { -brand-short-name } for everyone. We always ask permission before receiving personal information.
 collection-privacy-notice = Privacy Notice
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = |
 confirm-messenger-language-change-description = Restart { -brand-short-name } to apply these changes
 confirm-messenger-language-change-button = Apply and Restart
-update-pref-write-failure-title = Write Failure
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Unable to save preference. Could not write to file: { $path }
 update-setting-write-failure-title = Error saving Update preferences
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -96,14 +93,19 @@ addons-button = Extensions & Themes
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Verify your identity to create a Master Password.
-# This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = To create a Master Password, enter your Windows login credentials. This helps protect the security of your accounts.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Thunderbird is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = create a Master Password
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = To create a Primary Password, enter your Windows login credentials. This helps protect the security of your accounts.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = create a Primary Password
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -541,6 +543,15 @@ master-password-label =
 master-password-button =
     .label = Change Master Password…
     .accesskey = C
+primary-password-description = A Primary Password protects all your passwords, but you must enter it once per session.
+primary-password-label =
+    .label = Use a Primary Password
+    .accesskey = U
+primary-password-button =
+    .label = Change Primary Password…
+    .accesskey = C
+forms-primary-pw-fips-title = You are currently in FIPS mode. FIPS requires a non-empty Primary Password.
+forms-master-pw-fips-desc = Password Change Failed
 junk-description = Set your default junk mail settings. Account-specific junk mail settings can be configured in Account Settings.
 junk-label =
     .label = When I mark messages as junk:

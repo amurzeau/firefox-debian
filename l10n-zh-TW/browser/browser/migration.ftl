@@ -53,6 +53,9 @@ no-migration-sources = 找不到包含書籤、瀏覽記錄或密碼等個人資
 import-source-page-title = 匯入設定與個人資料
 import-items-page-title = 要匯入的項目
 import-items-description = 選取要匯入的項目:
+import-permissions-page-title = 請授權 { -brand-short-name }
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS 要求您明確允許 { -brand-short-name } 存取 Safari 的書籤才能繼續。請點擊「繼續」，並從顯示的開啟檔案面板選擇「Bookmarks.plist」檔案。
 import-migrating-page-title = 匯入中…
 import-migrating-description = 正在匯入下列項目…
 import-select-profile-page-title = 選取設定檔
@@ -88,6 +91,7 @@ imported-edge-reading-list = 閱讀清單（來自 Edge）
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

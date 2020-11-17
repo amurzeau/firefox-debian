@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Лише якщо { -brand-short-name } налаштовано блокувати відомі елементи стеження
 do-not-track-option-always =
     .label = Завжди
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Налаштування
-           *[other] Налаштування
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Налаштування
@@ -35,6 +29,8 @@ search-input-box =
            *[other] Знайти в налаштуваннях
         }
 managed-notice = Вашим браузером керує ваша організація.
+category-list =
+    .aria-label = Категорії
 pane-general-title = Загальні
 category-general =
     .tooltiptext = { pane-general-title }
@@ -50,6 +46,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = Експерименти { -brand-short-name }
+category-experimental =
+    .tooltiptext = Експерименти { -brand-short-name }
+pane-experimental-subtitle = Продовжуйте обережно
+pane-experimental-search-results-header = Експерименти { -brand-short-name }: Продовжуйте з обережністю
+pane-experimental-description = Зміна розширених налаштувань може вплинути на швидкодію і безпеку { -brand-short-name }.
 help-button-label = Підтримка { -brand-short-name }
 addons-button-label = Розширення і теми
 focus-search =
@@ -82,6 +84,9 @@ extension-controlled-homepage-override = Розширення <img data-l10n-nam
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Розширення <img data-l10n-name="icon"/> { $name } контролює вашу сторінку нової вкладки.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Розширення <img data-l10n-name="icon"/> { $name } контролює ці налаштування.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Розширення <img data-l10n-name="icon"/> { $name } контролює це налаштування.
@@ -368,13 +373,6 @@ update-application-warning-cross-user-setting = Цей параметр заст
 update-application-use-service =
     .label = Використовувати фонову службу для встановлення оновлень
     .accesskey = с
-update-enable-search-update =
-    .label = Автоматично оновлювати засоби пошуку
-    .accesskey = з
-update-pref-write-failure-title = Записати збій
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Не вдалося зберегти налаштування. Неможливо записати в файл: { $path }
 update-setting-write-failure-title = Помилка збереження налаштувань оновлення
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -433,12 +431,16 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Увімкнути керування відео зображення в зображенні
     .accesskey = з
 browsing-picture-in-picture-learn-more = Докладніше
+browsing-media-control =
+    .label = Контролюйте медіа клавіатурою, гарнітурою чи віртуальним інтерфейсом
+    .accesskey = ю
+browsing-media-control-learn-more = Докладніше
 browsing-cfr-recommendations =
-    .label = Рекомендувати розширення при перегляді
-    .accesskey = Р
+    .label = Рекомендувати розширення під час перегляду
+    .accesskey = р
 browsing-cfr-features =
     .label = Рекомендувати функції під час перегляду
-    .accesskey = Р
+    .accesskey = ф
 browsing-cfr-recommendations-learn-more = Докладніше
 
 ## General Section - Proxy
@@ -496,13 +498,14 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Популярні сайти
 home-prefs-topsites-description = Сайти, які ви відвідуєте найчастіше
+home-prefs-topsites-by-option-sponsored =
+    .label = Популярні спонсоровані сайти
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = Рекомендовано { $provider }
-home-prefs-recommended-by-description = Чудові матеріали з усього інтернету, відібрані спеціально для вас
 home-prefs-recommended-by-description-update = Винятково цікаві матеріали з мережі від { $provider }
 
 ##
@@ -544,7 +547,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Додати панель пошуку на панель інструментів
 search-engine-default-header = Типовий засіб пошуку
-search-engine-default-desc = Оберіть типовий пошуковий засіб для використання в панелях адреси і пошуку.
 search-engine-default-desc-2 = Це ваш типовий засіб пошуку в панелі адреси та пошуку. Ви можете будь-коли змінити його.
 search-engine-default-private-desc-2 = Оберіть інший типовий засіб пошуку лише для приватних вікон
 search-separate-default-engine =
@@ -567,10 +569,10 @@ search-show-suggestions-above-history-option =
     .label = Показувати пошукові пропозиції перед історією перегляду в результатах панелі адреси
 search-show-suggestions-private-windows =
     .label = Показувати пошукові пропозиції у приватних вікнах
-suggestions-addressbar-settings = Змінити налаштування для історії перегляду, закладок та пропозицій для вкладок
 suggestions-addressbar-settings-generic = Змінити налаштування для інших пропозицій панелі адреси
 search-suggestions-cant-show = Пошукові пропозиції не будуть показуватись в панелі адреси, тому що ви налаштували { -brand-short-name } ніколи не запам'ятовувати історію.
 search-one-click-header = Засоби пошуку в один клік
+search-one-click-header2 = Пошукові скорочення
 search-one-click-desc = Оберіть альтернативні пошукові засоби, що з'являються під рядками адреси і пошуку, коли ви починаєте вводити запит.
 search-choose-engine-column =
     .label = Засіб пошуку
@@ -582,18 +584,20 @@ search-restore-default =
 search-remove-engine =
     .label = Прибрати
     .accesskey = б
+search-add-engine =
+    .label = Додати
+    .accesskey = т
 search-find-more-link = Знайти інші засоби пошуку
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
 search-keyword-warning-title = Це скорочення вже використовується
 # Variables:
 #   $name (String) - Name of a search engine.
-search-keyword-warning-engine = Ви вибрали скорочення, котре вже використовує «{ $name }». Будь ласка, вкажіть інше.
+search-keyword-warning-engine = Ви вибрали скорочення, яке вже використовується “{ $name }”. Будь ласка, вкажіть інше.
 search-keyword-warning-bookmark = Ви вибрали скорочення, котре вже використовується закладкою. Будь ласка, вкажіть інше.
 
 ## Containers Section
 
-containers-back-link = « Повернутись назад
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -605,27 +609,18 @@ containers-add-button =
     .label = Додати новий контейнер
     .accesskey = к
 containers-new-tab-check =
-    .label = Оберіть контейнер для кожної нової вкладки
+    .label = Вибирати контейнер для кожної нової вкладки
     .accesskey = к
 containers-preferences-button =
     .label = Налаштування
 containers-remove-button =
     .label = Вилучити
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Візьміть свій інтернет з собою
 sync-signedout-description = Синхронізуйте закладки, історію, вкладки, паролі, додатки, а також налаштування на всіх своїх пристроях.
-sync-signedout-account-title = Під’єднайтеся до { -fxaccount-brand-name(case: "gen") }
-sync-signedout-account-create = Не маєте облікового запису? Створімо його!
-    .accesskey = С
-sync-signedout-account-signin =
-    .label = Увійти…
-    .accesskey = У
 sync-signedout-account-signin2 =
     .label = Увійти в { -sync-brand-short-name(case: "acc") }…
     .accesskey = в
@@ -639,16 +634,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Завантажте Firefox для <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> або <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>, щоб синхронізувати дані з вашим мобільним пристроєм.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Змінити зображення профілю
-sync-disconnect =
-    .label = Від’єднатись…
-    .accesskey = В
 sync-sign-out =
     .label = Вийти…
     .accesskey = В
@@ -665,8 +654,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Увійти
     .accesskey = У
-sync-signedin-settings-header = Налаштування Синхронізації
-sync-signedin-settings-desc = Оберіть, що потрібно синхронізувати на ваших пристроях за допомогою { -brand-short-name }.
 
 ## Sync section - enabling or disabling sync.
 
@@ -719,10 +706,6 @@ sync-engine-tabs =
     .label = Відкриті вкладки
     .tooltiptext = Перелік вкладок, відкритих на всіх синхронізованих пристроях
     .accesskey = В
-sync-engine-logins =
-    .label = Паролі
-    .tooltiptext = Імена користувача і паролі, які ви зберегли
-    .accesskey = П
 sync-engine-logins-passwords =
     .label = Паролі
     .tooltiptext = Збережені імена користувача і паролі
@@ -761,18 +744,10 @@ sync-device-name-save =
     .label = Зберегти
     .accesskey = б
 sync-connect-another-device = Під'єднати інший пристрій
-sync-manage-devices = Керувати пристроями
-sync-fxa-begin-pairing = Сполучити пристрій
-sync-tos-link = Умови надання послуги
-sync-fxa-privacy-notice = Повідомлення про приватність
 
 ## Privacy Section
 
 privacy-header = Приватність браузера
-
-## Privacy Section - Forms
-
-logins-header = Входи і паролі
 
 ## Privacy Section - Logins and Passwords
 
@@ -803,10 +778,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Використовувати головний пароль
     .accesskey = г
+forms-primary-pw-use =
+    .label = Використовувати головний пароль
+    .accesskey = г
+forms-primary-pw-learn-more-link = Докладніше
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Змінити головний пароль…
     .accesskey = і
-forms-master-pw-fips-title = Ви працюєте в режимі відповідності FIPS. При роботі в цьому режимі потрібно, щоб головний пароль не був порожній.
+forms-master-pw-fips-title = Зараз ви в режимі FIPS. Для цього режиму необхідно встановити головний пароль.
+forms-primary-pw-change =
+    .label = Змінити головний пароль…
+    .accesskey = і
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Зараз ви в режимі FIPS. Для цього режиму необхідно встановити головний пароль.
 forms-master-pw-fips-desc = Не вдалося змінити пароль
 
 ## OS Authentication dialog
@@ -818,6 +808,13 @@ master-password-os-auth-dialog-message-win = Щоб створити голов�
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = створити головний пароль
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Щоб створити головний пароль, введіть свої облікові дані входу для Windows. Це допомагає захистити ваші збережені паролі.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = створити головний пароль
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -884,12 +881,14 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Тип блокування
     .accesskey = и
-sitedata-option-block-trackers =
-    .label = Стороннє стеження
 sitedata-option-block-cross-site-trackers =
     .label = Стеження між сайтами
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Стеження між сайтами і соціальні мережі
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Куки стеження між сайтами — включають куки соціальних мереж
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Куки сторонніх сайтів — включають куки соціальних мереж
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Стеження між сайтами та соціальних мереж, а також ізолювання куків, що залишилися
 sitedata-option-block-unvisited =
@@ -931,27 +930,9 @@ addressbar-suggestions-settings = Змінити налаштування про
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Блокування вмісту
-content-blocking-section-description = Захищайте свою приватність під час перегляду. Блокуйте невидимий вміст, що відстежує відвідані вами сайти і створює ваш профіль. Блокування деякого вмісту може пришвидшити завантаження сторінок.
 content-blocking-enhanced-tracking-protection = Розширений захист від стеження
 content-blocking-section-top-level-description = Елементи стеження переслідують вас в мережі з метою збору інформації про ваші звички та інтереси. { -brand-short-name } блокує багато такого стеження, а також інші підозрілі скрипти.
 content-blocking-learn-more = Докладніше
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Звичайний
-    .accesskey = ч
-content-blocking-setting-strict =
-    .label = Надійний
-    .accesskey = й
-content-blocking-setting-custom =
-    .label = Власний
-    .accesskey = л
-content-blocking-standard-desc = Збалансовано для захисту і швидкодії. Дозволяє деякі елементи стеження для належної роботи вебсайтів.
-content-blocking-strict-description = Сильніший захист. Може пошкодити роботу деяких сайтів.
-content-blocking-custom-desc = Оберіть, що блокувати.
-content-blocking-private-trackers = Відомі елементи стеження лише у приватних вікнах
-content-blocking-third-party-cookies = Сторонні куки стеження
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -973,28 +954,24 @@ content-blocking-etp-standard-desc = Збалансований захист і 
 content-blocking-etp-strict-desc = Надійніший захист, але може пошкоджувати деякі сайти чи їх вміст.
 content-blocking-etp-custom-desc = Оберіть тип стеження і скриптів для блокування.
 content-blocking-private-windows = Стеження в приватних вікнах
+content-blocking-cross-site-cookies = Куки сторонніх сайтів
 content-blocking-cross-site-tracking-cookies = Куки стеження між сайтами
 content-blocking-cross-site-tracking-cookies-plus-isolate = Стеження між сайтами та ізолювання куків, що залишилися
 content-blocking-social-media-trackers = Стеження соціальних мереж
 content-blocking-all-cookies = Усі куки
 content-blocking-unvisited-cookies = Куки з невідвіданих сайтів
-content-blocking-all-windows-trackers = Відомі елементи стеження у всіх вікнах
 content-blocking-all-windows-tracking-content = Стеження у всіх вікнах
 content-blocking-all-third-party-cookies = Усі сторонні куки
 content-blocking-cryptominers = Криптомайнери
 content-blocking-fingerprinters = Зчитування цифрового відбитка
 content-blocking-warning-title = Увага!
-content-blocking-warning-description = Блокування вмісту може пошкоджувати роботу деяких вебсайтів. Можна легко вимкнути блокування для сайтів, яким ви довіряєте.
-content-blocking-learn-how = Навчитися
 content-blocking-and-isolating-etp-warning-description = Блокування стеження та ізолювання куків може вплинути на функціональність деяких сайтів. Перезавантажте сторінку з елементами стеження, щоб завантажити весь вміст.
+content-blocking-and-isolating-etp-warning-description-2 = Цей параметр може спричиняти неправильну роботу деяких вебсайтів. Якщо сайт виглядає пошкодженим, ви можете вимкнути захист від стеження для такого сайту, щоб завантажити весь вміст.
 content-blocking-warning-learn-how = Навчитися
 content-blocking-reload-description = Вам необхідно перезавантажити вкладки для застосування змін.
 content-blocking-reload-tabs-button =
     .label = Перезавантажити всі вкладки
     .accesskey = з
-content-blocking-trackers-label =
-    .label = Стеження
-    .accesskey = т
 content-blocking-tracking-content-label =
     .label = Вміст стеження
     .accesskey = ж
@@ -1013,12 +990,12 @@ content-blocking-expand-section =
 # Cryptomining refers to using scripts on websites that can use a computer’s resources to mine cryptocurrency without a user’s knowledge.
 content-blocking-cryptominers-label =
     .label = Криптомайнери
-    .accesskey = К
+    .accesskey = п
 # Browser fingerprinting is a method of tracking users by the configuration and settings information (their "digital fingerprint")
 # that is visible to websites they browse, rather than traditional tracking methods such as IP addresses and unique cookies.
 content-blocking-fingerprinters-label =
     .label = Зчитування цифрового відбитка
-    .accesskey = к
+    .accesskey = б
 
 ## Privacy Section - Tracking
 
@@ -1053,12 +1030,6 @@ permissions-notification-link = Докладніше
 permissions-notification-pause =
     .label = Призупинити сповіщення до перезапуску { -brand-short-name }
     .accesskey = П
-permissions-block-autoplay-media2 =
-    .label = Блокувати автоматичне відтворення звуку вебсайтами
-    .accesskey = з
-permissions-block-autoplay-media-exceptions =
-    .label = Винятки…
-    .accesskey = и
 permissions-autoplay = Автовідтворення
 permissions-autoplay-settings =
     .label = Налаштування…
@@ -1076,7 +1047,7 @@ permissions-addon-exceptions =
     .label = Винятки…
     .accesskey = В
 permissions-a11y-privacy-checkbox =
-    .label = Не дозволяти сервісам доступності доступ до вашого браузера
+    .label = Не дозволяти службам доступності доступ до вашого браузера
     .accesskey = з
 permissions-a11y-privacy-link = Докладніше
 
@@ -1165,6 +1136,18 @@ space-alert-under-5gb-ok-button =
     .label = Гаразд, зрозуміло
     .accesskey = Г
 space-alert-under-5gb-message = У { -brand-short-name } закінчується місце на диску. Вміст вебсайтів може показуватись неправильно. Натисніть “Докладніше”, щоб оптимізувати використання вашого диска для кращої роботи.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = HTTPS-режим
+httpsonly-description = HTTPS забезпечує захищене, зашифроване з'єднання між { -brand-short-name } та відвідуваними вебсайтами. Більшість вебсайтів підтримують HTTPS, тому якщо увімкнено HTTPS-режим, { -brand-short-name } перенаправлятиме усі з'єднання до HTTPS.
+httpsonly-learn-more = Докладніше
+httpsonly-radio-enabled =
+    .label = Увімкнути HTTPS-режим у всіх вікнах
+httpsonly-radio-enabled-pbm =
+    .label = Увімкнути HTTPS-режим лише у приватних вікнах
+httpsonly-radio-disabled =
+    .label = Не вмикати HTTPS-режим
 
 ## The following strings are used in the Download section of settings
 

@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Jub'a' katz'ib'an, k'ïy tawila': Tikanöx { $engineName } choj pa rochoch etalib'äl.
 urlbar-search-tips-redirect-2 = Tatikirisaj kanoxïk pa ri rukajtz'ik ochochib'äl richin ye'atz'ët taq ruchilab'exik { $engineName } chuqa' runatab'al awokik'amaya'l.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Tacha' re chojokem richin anin nawïl ri nakanoj.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Taq yaketal
+urlbar-search-mode-tabs = Taq ruwi'
+urlbar-search-mode-history = Natab'äl
 
 ##
 
@@ -156,6 +165,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Tiyuj K'amal
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Titaq Ruwi' pan Okisab'äl
+           *[other] Ketaq { $tabCount } taq Ruwi' pan Okisab'äl
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Titaq Ruwi' pan Okisab'äl
+           *[other] Ketaq { $tabCount } taq Ruwi' pan Okisab'äl
+        }
+page-action-pocket-panel =
+    .label = Tiyak Ruxaq pa { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Tiwachib'ëx Ximonel
+page-action-copy-url-urlbar =
+    .tooltiptext = Tiwachib'ëx Ximonel
+page-action-email-link-panel =
+    .label = Titaq ximonel tzij…
+page-action-email-link-urlbar =
+    .tooltiptext = Titaq ximonel tzij…
+page-action-share-url-panel =
+    .label = Tikomonïx
+page-action-share-url-urlbar =
+    .tooltiptext = Tikomonïx
+page-action-share-more-panel =
+    .label = Ch'aqa' chik…
+page-action-send-tab-not-ready =
+    .label = Tajin yexim ri taq Okisaxel…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Rujikib'axik ruwi' kajtz'ïk
+page-action-pin-tab-urlbar =
+    .tooltiptext = Rujikib'axik ruwi' kajtz'ïk
+page-action-unpin-tab-panel =
+    .label = Ruyujïk ruwi' kajtz'ik
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Ruyujïk ruwi' kajtz'ik
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +223,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Wakami tikanöx rik'in:
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +241,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Tiya' kan achi'el Okik'amaya'l ri K'o pa Ichinan taq Tzuwäch
     .accesskey = I
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Taq yaketal ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Taq ruwi' ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Natab'äl ({ $restrict })
 
 ## Bookmark Panel
 
@@ -192,7 +268,7 @@ bookmark-panel-show-editor-checkbox =
     .label = Tik'ut k'exob'äl toq niyak
     .accesskey = k
 bookmark-panel-done-button =
-    .label = Xk'achoj
+    .label = Xk'is
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -212,6 +288,17 @@ identity-passive-loaded = K'o man ütz ta taq ruch'akulal re ruxaq re' (achi'el 
 identity-active-loaded = Xachüp ruchajixik re ruxaq re'.
 identity-weak-encryption = Re ruxaq re' nrokisaj yamayïk chi suq'ch'ab'äl.
 identity-insecure-login-forms = Kitikirib'al taq molojri'ïl etz'ib'an pa re ruxaq k'amaya'l re' rik'in jub'a' ye'itzelan.
+identity-https-only-connection-upgraded = (xk'expa HTTPS)
+identity-https-only-label = HTTPS-Only B'anikil
+identity-https-only-dropdown-on =
+    .label = Titzij
+identity-https-only-dropdown-off =
+    .label = Tichup
+identity-https-only-dropdown-off-temporarily =
+    .label = Tichup jumej
+identity-https-only-info-turn-on2 = Tatzija' ri HTTPS-Only Rub'anikil pa re ruxaq re' we nawajo' chi ri { -brand-short-name } nujäl rik'in ri okem toq k'atzinel.
+identity-https-only-info-turn-off2 = We man nisamäj ta ütz ri ruxaq, rik'in jub'a' nawajo' nachüp ri HTTPS-Only Rub'anikil pa re ruxaq re', richin nisamajïx chik akuchi' nokisäx ri mejikïl HTTP.
+identity-https-only-info-no-upgrade = Man nitikïr ta nik'ex ri okem pa HTTP.
 identity-permissions =
     .value = Taq ya'oj q'ij
 identity-permissions-reload-hint = Rik'in jub'a' k'o chi yatok chik pa ruxaq richin yesamäj ri taq k'exoj.
@@ -223,8 +310,8 @@ identity-connection-verified = Ütz ri awokem pa re ruxaq k'amaya'l re'.
 identity-ev-owner-label = Iqitzijib'äl talun richin:
 identity-description-custom-root = Ri Mozilla man retaman ta ruwäch ri ruya'öl iqitzijib'äl Mozilla. Rik'in jub'a' xtz'aqatisäx pa jun samajel q'inoj o ruma jun nuk'samajel. <label data-l10n-name="link">Tetamäx ch'aqa' chik</label>
 identity-remove-cert-exception =
-    .label = Telesäx el ri man ja ta jun
-    .accesskey = T
+    .label = Tiyuj Man Relik Ta
+    .accesskey = y
 identity-description-insecure = Man ichinan ta ri owokem pa re ruxaq k'amaya'l re'. Ronojel ri etamab'äl xke'atäq el, ch'aqa' chik tikirel xkekitz'ët (achi'el ewan taq tzij, taq rutzijol, ch'utit'im pwäq, ch'aqa' chik).
 identity-description-insecure-login-forms = Ri retamab'al rutikirisanïk molojri'ïl xtatz'ib'aj pa re ruxaq k'amaya'l re' man chajin ta, ruma ri' rik'in jub'a' nitziläx.
 identity-description-weak-cipher-intro = Ri awokem pa re ruxaq k'amaya'l re' nrokisaj lawalïk skript ruma ri man ichinan ta.
@@ -236,7 +323,7 @@ identity-description-passive-loaded-mixed = Stape' { -brand-short-name } xuq'ät
 identity-description-active-loaded = Re ruxaq k'amaya'l re' k'o itzel taq na'oj chupam (achi'el taq skript) man awichinan ta ri awokem we yatok chupam.
 identity-description-active-loaded-insecure = Ri taq etamab'äl xke'akomonij rik'in re ruxaq k'amaya'l re', tikirel nikitz'ët juley chik winaqi' (achi'el ewan taq tzij, taq rutzijol, t'im pwäq, ch'aqa' chik).
 identity-learn-more =
-    .value = Tetamäx ch'aqa' chik
+    .value = Tetamäx Ch'aqa' Chik
 identity-disable-mixed-content-blocking =
     .label = Wakami yan tz'apäl ri chajinïk
     .accesskey = t
@@ -257,6 +344,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Titz'apïx
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Kejik taq yaketal…
+    .tooltiptext = Kewachib'ëx taq kiyaketal taq okik'amaya'l pa { -brand-short-name }.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -267,7 +360,7 @@ popup-select-microphone =
     .accesskey = Q
 popup-all-windows-shared = Xkekomonïx konojel ri tz'etel taq tzuwäch e k'o pa ri ruwäch.
 popup-screen-sharing-not-now =
-    .label = Wakami mani
+    .label = Wakami Mani
     .accesskey = W
 popup-screen-sharing-never =
     .label = Majub'ey Tiya' Q'ij
@@ -291,9 +384,43 @@ enable-devtools-popup-description = Richin nokisäx ri F12 chojokem, nab'ey taja
 ## URL Bar
 
 urlbar-default-placeholder =
-    .defaultPlaceholder = Tikanöx chuqa' titz'ib'äx ri ochochib'äl
+    .defaultPlaceholder = Tikanöx o titz'ib'äx ochochib'äl
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
-    .placeholder = Tikanöx chuqa' titz'ib'äx ri ochochib'äl
+    .placeholder = Tikanöx o titz'ib'äx ochochib'äl
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Tikanöx pa Web
+    .aria-label = Tikanöx rik'in { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Ketz'ib'äx tzij yekanöx
+    .aria-label = Tikanöx { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Ketz'ib'äx tzij yekanöx
+    .aria-label = Kekanöx taq yaketal
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Ketz'ib'äx tzij yekanöx
+    .aria-label = Tikanöx natab'äl
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Ketz'ib'äx tzij yekanöx
+    .aria-label = Kekanöx ruwi'
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Tikanöx rik'in { $name }  o titz'ib'äx ochochib'äl
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Ri Okik'amaya'l k'o pa ruq'a' ri näj chajinïk
 urlbar-permissions-granted =
@@ -309,3 +436,67 @@ urlbar-page-action-button =
     .tooltiptext = Taq rub'anoj ruxaq
 urlbar-pocket-button =
     .tooltiptext = Tiyak pa { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Tikanöx rik'in { $engine } pa jun Ichinan Tzuwäch
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Tikanöx pa jun Ichinan Tzuwäch
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Tikanöx pa { $engine }
+urlbar-result-action-sponsored = To'on
+urlbar-result-action-switch-tab = Tijalwachïx chi ruwi'
+urlbar-result-action-visit = Titz'et
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Tapitz'a' Tab richin yakanon rik'in { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Tapitz'a' Tab richin nakanoj { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Tikanöx rik'in { $engine } pa kikajtz'ik ochochib'äl
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Tikanöx { $engine } pa kikajtz'ik ochochib'äl
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Kekanöx taq Yaketal
+urlbar-result-action-search-history = Tikanöx Natab'äl
+urlbar-result-action-search-tabs = Kekanöx taq Ruwi'
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> wakami at k'o pa chijun ruwa kematz'ib'
+fullscreen-warning-no-domain = Wakami re wuj re' k'o pa chijun ruwa kematz'ib'
+fullscreen-exit-button = Tel pa chijun ruwa kematz'ib' (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Tel pa chijun ruwa kematz'ib' (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> chajin ruma ri retal ch'oy. Tapitz'a' Esc richin nachajij chik el.
+pointerlock-warning-no-domain = Re ruxaq wuj re' chajin ruma ri retal ch'oy. Tapitz'a' Esc richin nachajij chik el.

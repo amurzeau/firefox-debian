@@ -18,6 +18,9 @@ extensions-name = Nama
 extensions-enabled = Didayakan
 extensions-version = Versi
 extensions-id = ID
+support-addons-name = Nama
+support-addons-version = Versi
+support-addons-id = ID
 security-software-title = Perisian Keselamatan
 security-software-type = Jenis
 security-software-name = Nama
@@ -78,8 +81,6 @@ graphics-workarounds-title = Workarounds
 place-database-title = Tempat Pangkalan Data
 place-database-integrity = Integriti
 place-database-verify-integrity = Sahkan Integriti
-js-title = JavaScript
-js-incremental-gc = Tokokan GC
 a11y-title = Ketercapaian
 a11y-activated = Diaktifkan
 a11y-force-disabled = Halang Ketercapaian
@@ -104,9 +105,7 @@ restart-in-safe-mode-label = Mula semula dengan Add-ons Dinyahdayakan…
 
 audio-backend = Backend Audio
 max-audio-channels = Saluran Max
-channel-layout = Susun atur Saluran Diutamakan
 sample-rate = Kadar Sampel Diutamakan
-
 media-title = Media
 media-output-devices-title = Peranti Output
 media-input-devices-title = Peranti Input
@@ -140,6 +139,7 @@ intl-regional-prefs = Keutamaan Wilayah
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -224,7 +224,6 @@ unknown-failure = Disenarai-sekat; kod kegagalan { $failureCode }
 
 d3d11layers-crash-guard = Pengatur huruf D3D11
 d3d11video-crash-guard = D3D11 Dekoder Video
-d3d9video-crash-buard = Penyahkodan Video D3D9
 d3d9video-crash-guard = Penyahkodan Video D3D9
 glcontext-crash-guard = OpenGL
 

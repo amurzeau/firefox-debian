@@ -18,6 +18,7 @@ certmgr-mine = Tienes certificados de estas organizaciones que te identifican
 certmgr-remembered = Estos certificados son usados para identificarte ante sitios web
 certmgr-people = Tienes certificados en archivo que identifican a estas personas
 certmgr-servers = Tienes certificados en archivo que identifican estos servidores
+certmgr-server = Estas entradas identifican las excepciones de error de certificados del servidor
 certmgr-ca = Tienes certificados en archivo que identifican estas autoridades de certificados
 certmgr-detail-general-tab-title =
     .label = General
@@ -161,6 +162,10 @@ delete-ssl-cert-title =
     .title = Eliminar excepciones de certificados de servidor
 delete-ssl-cert-confirm = ¿Está seguro que desea eliminar estas excepciones de servidor?
 delete-ssl-cert-impact = Si elimina una excepción de servidor, restaurará los controles de seguridad habituales para ese servidor y se requerirá que use un certificado válido.
+delete-ssl-override-title =
+    .title = Eliminar excepción de certificado de servidor
+delete-ssl-override-confirm = ¿Está seguro que desea eliminar esta excepción de servidor?
+delete-ssl-override-impact = Si elimina una excepción de servidor, restaurará los controles de seguridad habituales para ese servidor y se requerirá que use un certificado válido.
 delete-ca-cert-title =
     .title = Eliminar o desconfiar de certificados de CA
 delete-ca-cert-confirm = Ha solicitado eliminar estos certificados de CA. Para los certificados incorporados se eliminará toda la confianza, lo que tiene el mismo efecto. ¿Está seguro de querer eliminar o quitar la confianza?
@@ -208,6 +213,15 @@ cert-not-verified-issuer-unknown = No se pudo verificar este certificado porque 
 cert-not-verified-ca-invalid = No se pudo verificar este certificado porque el certificado de la CA no es válido.
 cert-not-verified_algorithm-disabled = No se pudo verificar este certificado porque fue firmado usando un algoritmo de firma que fue desactivado pro que ese algoritmo no es seguro.
 cert-not-verified-unknown = No se pudo verificar este certificado por razones desconocidas.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = No se envió certificado de cliente
+# Used when no cert is stored for an override
+no-cert-stored-for-override = (No Almacenado)
+
+## Used to show whether an override is temporary or permanent
+
+permanent-override = Permanente
+temporary-override = Temporal
 
 ## Add Security Exception dialog
 

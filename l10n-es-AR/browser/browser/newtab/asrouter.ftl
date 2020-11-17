@@ -210,6 +210,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Ver todo
     .accesskey = S
+cfr-doorhanger-milestone-close-button = Cerrar
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -243,3 +245,35 @@ cfr-whatsnew-protections-icon-alt = Icono de escudo
 
 cfr-whatsnew-better-pdf-header = Mejor experiencia en PDF
 cfr-whatsnew-better-pdf-body = Los documentos PDF ahora se abren directamente en { -brand-short-name }, manteniendo su flujo de trabajo al alcance de la mano.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Su privacidad es importante. { -brand-short-name } ahora enruta de forma segura sus solicitudes de DNS siempre que sea posible a un servicio asociado para protegerlo mientras navega.
+cfr-doorhanger-doh-header = Búsquedas DNS más seguras y encriptadas
+cfr-doorhanger-doh-primary-button = Perfecto, lo entiendo
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Deshabilitar
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Su privacidad importa. { -brand-short-name } ahora aísla, sitios web unos de otros, lo que hace que sea más difícil que los piratas informáticos roban contraseñas, números de tarjetas de crédito y otra información confidencial.
+cfr-doorhanger-fission-header = Aislamiento del sitio
+cfr-doorhanger-fission-primary-button = ¡Listo, entendido!
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Conocer más
+    .accesskey = L
+# Deprecated
+cfr-doorhanger-fission-body = { -brand-short-name } activó una función experimental Fission (aislamiento de sitios) para usted. Al aislar cada sitio en un proceso separado, Fission proporciona una capa adicional de seguridad para usted y los sitios web que visita.
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Protección automática contra tácticas de rastreo furtivas
+cfr-whatsnew-clear-cookies-body = Algunos rastreadores lo redirigen a otros sitios web que configuran cookies en secreto. { -brand-short-name } ahora elimina automáticamente esas cookies para que no puedan seguirte.
+cfr-whatsnew-clear-cookies-image-alt = Ilustración de cookie bloqueada
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Más controles de medios
+cfr-whatsnew-media-keys-body = Reproducir y pausar audio o video directamente desde su teclado o auriculares facilita el control de medios desde otra pestaña, programa o incluso cuando su computadora está bloqueada. También puede moverse entre pistas usando las teclas de avance y retroceso.
+cfr-whatsnew-media-keys-button = Aprender como

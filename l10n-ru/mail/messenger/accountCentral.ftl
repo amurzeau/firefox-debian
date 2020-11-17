@@ -52,6 +52,8 @@ about-paragraph = Thunderbird — это ведущий кроссплатфор
 about-paragraph-2 = <b>Thunderbird финансируется такими пользователями, как вы! Если вам нравится Thunderbird, пожалуйста, сделайте пожертвование.</b> Лучший способ обеспечить доступность Thunderbird — это
 about-donation = сделать пожертвование
 
+about-paragraph-consider-donation = <b>Thunderbird финансируется такими пользователями, как вы! Если вам нравится Thunderbird, пожалуйста, сделайте пожертвование.</b> Лучший способ обеспечить доступность Thunderbird — это <a data-l10n-name="donation-link">сделать пожертвование</a>.
+
 explore-link = Узнать о возможностях
 support-link = Поддержка
 involved-link = Принять участие

@@ -46,38 +46,14 @@
 <!-- Edit Menu -->
 <!ENTITY editMenu.label                                 "Editatu">
 <!ENTITY editMenu.accesskey                             "E">
-<!ENTITY undoCmd.label                                  "Desegin">
-<!ENTITY undoCmd.key                                    "Z">
-<!ENTITY undoCmd.accesskey                              "D">
-<!ENTITY redoCmd.label                                  "Berregin">
-<!ENTITY redoCmd.key                                    "Y">
-<!ENTITY redoCmd.accesskey                              "B">
-<!ENTITY cutCmd.label                                   "Ebaki">
-<!ENTITY cutCmd.key                                     "X">
-<!ENTITY cutCmd.accesskey                               "k">
-<!ENTITY copyCmd.label                                  "Kopiatu">
-<!ENTITY copyCmd.key                                    "C">
-<!ENTITY copyCmd.accesskey                              "K">
-<!ENTITY pasteCmd.label                                 "Itsatsi">
-<!ENTITY pasteCmd.key                                   "V">
-<!ENTITY pasteCmd.accesskey                             "I">
 <!ENTITY deleteCmd.label                                "Ezabatu">
-<!ENTITY deleteCmd.accesskey                            "z">
 <!ENTITY deleteAbCmd.label                              "Ezabatu helbide-liburua">
 <!ENTITY deleteContactCmd.label                         "Ezabatu kontaktua">
 <!ENTITY deleteContactsCmd.label                        "Ezabatu kontaktuak">
 <!ENTITY deleteListCmd.label                            "Ezabatu zerrenda">
 <!ENTITY deleteListsCmd.label                           "Ezabatu zerrendak">
 <!ENTITY deleteItemsCmd.label                           "Ezabatu elementuak">
-<!ENTITY selectAllCmd.label                             "Hautatu dena">
-<!ENTITY selectAllCmd.key                               "A">
 <!ENTITY searchAddressesCmd.key                         "f">
-<!ENTITY selectAllCmd.accesskey                         "H">
-<!ENTITY swapFirstNameLastNameCmd.label                 "Elkartrukatu izen-abizenak">
-<!ENTITY swapFirstNameLastNameCmd.accesskey             "i">
-<!-- LOCALIZATION NOTE (hideSwapFnLnUI) : DONT_TRANSLATE -->
-<!-- Swap FN/LN UI  Set to "false" to show swap fn/ln UI -->
-<!ENTITY hideSwapFnLnUI "true">
 <!ENTITY propertiesMenu.label                           "Propietateak">
 <!ENTITY propertiesMenu.accesskey                       "i">
 <!ENTITY propertiesCmd.key                              "i">
@@ -126,9 +102,6 @@ because displayed names don't have the comma in between. -->
 <!ENTITY messengerCmd.label                             "Posta eta berri-taldeak">
 <!ENTITY messengerCmd.accesskey                         "P">
 <!ENTITY messengerCmd.commandkey                        "1">
-<!ENTITY addressBookCmd.label                           "Helbide-liburua">
-<!ENTITY addressBookCmd.accesskey                       "h">
-<!ENTITY addressBookCmd.key                             "B">
 <!ENTITY searchAddressesCmd.label                       "Bilatu helbideak…">
 <!ENTITY searchAddressesCmd.accesskey                   "B">
 <!ENTITY importCmd.label                                "Inportatu…">
@@ -152,6 +125,8 @@ because displayed names don't have the comma in between. -->
 <!ENTITY propertiesContext.accesskey                    "i">
 <!ENTITY abPropertiesContext.label                      "Propietateak">
 <!ENTITY abPropertiesContext.accesskey                  "i">
+<!ENTITY syncContext.label                              "Sinkronizatu">
+<!ENTITY syncContext.accesskey                          "S">
 <!ENTITY editContactContext.label                       "Editatu kontaktua">
 <!ENTITY editContactContext.accesskey                   "E">
 <!ENTITY editMailingListContext.label                   "Editatu zerrenda">

@@ -2,7 +2,6 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-
 ## The main browser window's title
 
 # These are the default window titles everywhere except macOS. The first two
@@ -17,13 +16,14 @@
 browser-main-window =
     .data-title-default = { -brand-full-name }
     .data-title-private = { -brand-full-name } (プライベートブラウジング)
-    .data-content-title-default = { $content-title } - { -brand-full-name }
-    .data-content-title-private = { $content-title } - { -brand-full-name } (プライベートブラウジング)
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name } (プライベートブラウジング)
+
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -35,9 +35,10 @@ browser-main-window =
 #  $content-title (String): the title of the web content.
 browser-main-window-mac =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } - (プライベートブラウジング)
+    .data-title-private = { -brand-full-name } — (プライベートブラウジング)
     .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } - (プライベートブラウジング)
+    .data-content-title-private = { $content-title } — (プライベートブラウジング)
+
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -106,9 +107,18 @@ urlbar-tip-icon-description =
 ## homepage of their default search engine.
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
-
 urlbar-search-tips-onboard = 少ない入力でたくさん見つかる: アドレスバーから { $engineName } ですぐ検索します。
 urlbar-search-tips-redirect-2 = アドレスバーで検索を始めると、{ $engineName } からの検索候補と閲覧履歴が表示されます。
+
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = このショートカットを選択すると、より素早く検索できます。
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = ブックマーク
+urlbar-search-mode-tabs = タブ
+urlbar-search-mode-history = 履歴
 
 ##
 
@@ -156,6 +166,45 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = 拡張機能を削除
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label = { $tabCount } 個のタブを端末へ送信
+page-action-send-tabs-urlbar =
+    .tooltiptext = { $tabCount } 個のタブを端末へ送信
+page-action-pocket-panel =
+    .label = ページを { -pocket-brand-name } に保存
+page-action-copy-url-panel =
+    .label = リンクをコピー
+page-action-copy-url-urlbar =
+    .tooltiptext = リンクをコピー
+page-action-email-link-panel =
+    .label = ページの URL をメールで送信...
+page-action-email-link-urlbar =
+    .tooltiptext = ページの URL をメールで送信...
+page-action-share-url-panel =
+    .label = 共有
+page-action-share-url-urlbar =
+    .tooltiptext = 共有
+page-action-share-more-panel =
+    .label = その他...
+page-action-send-tab-not-ready =
+    .label = 端末を同期しています...
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = タブをピン留め
+page-action-pin-tab-urlbar =
+    .tooltiptext = タブをピン留め
+page-action-unpin-tab-panel =
+    .label = タブのピン留めを外す
+page-action-unpin-tab-urlbar =
+    .tooltiptext = タブのピン留めを外す
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +216,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = 今回だけ使う検索エンジン:
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +234,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = プライベートウィンドウの既定の検索エンジンに設定
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = ブックマーク ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = タブ ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = 履歴 ({ $restrict })
 
 ## Bookmark Panel
 
@@ -212,6 +281,19 @@ identity-passive-loaded = このページの一部 (画像など) は安全で�
 identity-active-loaded = このページでの保護は無効に設定されています。
 identity-weak-encryption = このページは脆弱な暗号を使用しています。
 identity-insecure-login-forms = このページのログインフォームは安全ではありません。
+
+identity-https-only-connection-upgraded = (HTTPS で接続中)
+identity-https-only-label = HTTPS-Only モード
+identity-https-only-dropdown-on =
+    .label = オン
+identity-https-only-dropdown-off =
+    .label = オフ
+identity-https-only-dropdown-off-temporarily =
+    .label = 一時的にオフ
+identity-https-only-info-turn-on2 = このサイトで { -brand-short-name } に可能な限り接続をアップグレードさせたい場合は、HTTPS-Only モードをオンにしてください。
+identity-https-only-info-turn-off2 = ページが動作しない場合は HTTPS-Only モードをオフにして、安全でない HTTP 接続でこのサイトを再読み込みするとよいでしょう。
+identity-https-only-info-no-upgrade = 接続を HTTP からアップグレードできません。
+
 identity-permissions =
     .value = このサイトの設定
 identity-permissions-reload-hint = 変更内容を適用するには、ページの再読み込みが必要です。
@@ -257,6 +339,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = 閉じる
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = ブックマークをインポートする...
+    .tooltiptext = ブックマークを他のブラウザーから { -brand-short-name } にコピーします
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -266,15 +354,12 @@ popup-select-microphone =
     .value = 共有するマイク:
     .accesskey = M
 popup-all-windows-shared = 画面に表示されているすべてのウィンドウを共有します。
-
 popup-screen-sharing-not-now =
-  .label = 後で
-  .accesskey = w
-
+    .label = 後で
+    .accesskey = w
 popup-screen-sharing-never =
-  .label = 以後許可しない
-  .accesskey = N
-
+    .label = 以後許可しない
+    .accesskey = N
 popup-silence-notifications-checkbox = 共有中は { -brand-short-name } からの通知を無効にする。
 popup-silence-notifications-checkbox-warning = 共有中は { -brand-short-name } からの通知を表示しないようにします。
 
@@ -283,9 +368,9 @@ popup-silence-notifications-checkbox-warning = 共有中は { -brand-short-name 
 sharing-warning-window = { -brand-short-name } を共有しています。新しいタブ に切り替えると、他の人にも見えます。
 sharing-warning-screen = 全画面を共有しています。新しいタブ に切り替えると、他の人にも見えます。
 sharing-warning-proceed-to-tab =
-  .label = タブに移動
+    .label = タブに移動
 sharing-warning-disable-for-session =
-  .label = このセッションでは共有保護を無効にする。
+    .label = このセッションでは共有保護を無効にする。
 
 ## DevTools F12 popup
 
@@ -295,8 +380,42 @@ enable-devtools-popup-description = F12 ショートカットを使うには、�
 
 urlbar-default-placeholder =
     .defaultPlaceholder = URL または検索語句を入力します
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = URL または検索語句を入力します
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = ウェブを検索します
+    .aria-label = { $name } で検索
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = 検索語句を入力を入力します
+    .aria-label = { $name } を検索
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = 検索語句を入力を入力します
+    .aria-label = ブックマークを検索
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = 検索語句を入力を入力します
+    .aria-label = 履歴を検索
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = 検索語句を入力を入力します
+    .aria-label = タブを検索
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name } で検索、または URL を入力します
 urlbar-remote-control-notification-anchor =
     .tooltiptext = ブラウザーがリモート制御下にあります
 urlbar-permissions-granted =
@@ -312,3 +431,68 @@ urlbar-page-action-button =
     .tooltiptext = ページ操作
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name } に保存
+
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = プライベートウィンドウの { $engine } で検索
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = プライベートウィンドウで検索
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } で検索
+urlbar-result-action-sponsored = 広告
+urlbar-result-action-switch-tab = タブを表示
+urlbar-result-action-visit = 開く
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Tab キーを押すと { $engine } でウェブを検索します
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Tab キーを押すと { $engine } を検索します
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = アドレスバーから直接 { $engine } で検索
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = アドレスバーから直接 { $engine } を検索
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = ブックマークを検索
+urlbar-result-action-search-history = 履歴を検索
+urlbar-result-action-search-tabs = タブを検索
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> は現在全画面表示モードです。
+fullscreen-warning-no-domain = このページは現在全画面表示モードです。
+fullscreen-exit-button = 全画面表示モードを終了 (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = 全画面表示モードを終了 (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = マウスポインターは現在、 <span data-l10n-name="domain">{ $domain }</span> が制御しています。制御を取り戻すには、ESC キーを押してください。
+pointerlock-warning-no-domain = マウスポインターは現在、このページが制御しています。制御を取り戻すには、ESC キーを押してください。

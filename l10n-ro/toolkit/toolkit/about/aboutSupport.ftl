@@ -17,6 +17,12 @@ extensions-name = Nume
 extensions-enabled = Activat
 extensions-version = Versiune
 extensions-id = ID
+support-addons-title = Suplimente
+support-addons-name = Nume
+support-addons-type = Tip
+support-addons-enabled = Activate
+support-addons-version = Versiune
+support-addons-id = ID
 security-software-title = Program de securitate
 security-software-type = Tip
 security-software-name = Nume
@@ -74,6 +80,12 @@ show-dir-label =
         [windows] Deschide dosarul
        *[other] Deschide directorul
     }
+environment-variables-title = Variabile de mediu
+environment-variables-name = Denumire
+environment-variables-value = Valoare
+experimental-features-title = Funcționalități experimentale
+experimental-features-name = Denumire
+experimental-features-value = Valoare
 modified-key-prefs-title = Preferințe importante modificate
 modified-prefs-name = Nume
 modified-prefs-value = Valoare
@@ -98,8 +110,6 @@ graphics-desktop-environment = Mediu desktop
 place-database-title = Bază de date cu locuri
 place-database-integrity = Integritate
 place-database-verify-integrity = Verifică integritatea
-js-title = JavaScript
-js-incremental-gc = GC incremental
 a11y-title = Accesibilitate
 a11y-activated = Activat
 a11y-force-disabled = Împiedică accesibilitatea
@@ -119,13 +129,18 @@ sandbox-sys-call-number = Apel sistem
 sandbox-sys-call-args = Argumente
 safe-mode-title = Încearcă modul sigur
 restart-in-safe-mode-label = Repornește cu suplimentele dezactivate…
+clear-startup-cache-title = Încearcă să golești cache-ul de pornire
+clear-startup-cache-label = Golește cache-ul de pornire…
+startup-cache-dialog-title = Golește cache-ul de pornire
+startup-cache-dialog-body = Repornește { -brand-short-name } pentru golirea cache-ului. Acțiunea nu îți va modifica setările și nu îți va șterge extensiile pe care le-ai adăugat în { -brand-short-name }.
+restart-button-label = Repornește
 
 ## Media titles
 
 audio-backend = Backend audio
 max-audio-channels = Canale maxime
-channel-layout = Aspect preferat al canalelor
 sample-rate = Rată de eșantionare preferată
+roundtrip-latency = Latență dus-întors (deviație standard)
 media-title = Media
 media-output-devices-title = Dispozitive de ieșire
 media-input-devices-title = Dispozitive de intrare
@@ -265,11 +280,13 @@ blocklisted-bug = Pe lista de blocări din cauza unor probleme cunoscute
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = bug { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Pus pe lista de blocare din cauza problemelor cunoscute: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Pus pe lista de blocări; cod de eroare { $failureCode }
 d3d11layers-crash-guard = Compozitor D3D11
 d3d11video-crash-guard = Decodor video D3D11
-d3d9video-crash-buard = Decodor video D3D9
 d3d9video-crash-guard = Decodor video D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Decodor video WMF VPX
@@ -324,7 +341,7 @@ touch-enabled = intrare tactilă activată
 drag-enabled = tragerea barei de derulare activată
 keyboard-enabled = tastatură activată
 autoscroll-enabled = autoderulare activată
-zooming-enabled = Zoom lin prin apropiere/depărtare cu degetele activat
+zooming-enabled = Zoom lin prin gesturi tactile activat
 
 ## Variables
 ## $preferenceKey (string) - String ID of preference

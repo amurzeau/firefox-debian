@@ -8,11 +8,25 @@ toolbar-context-menu-reload-selected-tab =
 toolbar-context-menu-reload-selected-tabs =
     .label = منتخب ٹیب دوبارہ لوڈ کریں
     .accesskey = R
+toolbar-context-menu-bookmark-selected-tab =
+    .label = منتخب کردہ ٹیب کو بُک مارک کریں…
+    .accesskey = T
+toolbar-context-menu-bookmark-selected-tabs =
+    .label = منتخب کردہ ٹیبز کو بُک مارک کریں…
+    .accesskey = T
 toolbar-context-menu-select-all-tabs =
     .label = تمام ٹیب منتخب کریں
     .accesskey = S
-toolbar-context-menu-undo-close-tab =
-    .label = ٹیب بند کالعدم کریں
+toolbar-context-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] بند ٹیبز کو منسوخ کریں
+            [one] بند ٹیبز کو منسوخ کریں
+           *[other]
+                	U
+                	U
+                U
+        }
     .accesskey = U
 
 toolbar-context-menu-manage-extension =

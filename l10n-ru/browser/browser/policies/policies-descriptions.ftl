@@ -11,7 +11,7 @@
 ## in the documentation section in about:policies.
 
 policy-3rdparty = Устанавливает политики, по которым WebExtensions могут получать доступ через chrome.storage.managed.
-policy-AppAutoUpdate = Включает или отключает автоматическое обновление приложения.
+policy-AppAutoUpdate = Включает или отключает автообновление приложения.
 policy-AppUpdateURL = Устанавливает собственный URL обновления приложения.
 policy-Authentication = Настраивает интегрированную авторизацию для поддерживающих это веб-сайтов.
 policy-BlockAboutAddons = Блокирует доступ к менеджеру дополнений (about:addons).
@@ -36,6 +36,7 @@ policy-DisableFirefoxStudies = Запрещает { -brand-short-name } выпо
 policy-DisableForgetButton = Закрывает доступ к кнопке «Забыть».
 policy-DisableFormHistory = Отключает запоминание истории поиска и данных форм.
 policy-DisableMasterPasswordCreation = Не позволяет установить мастер-пароль, если установлена в true.
+policy-DisablePrimaryPasswordCreation = Не позволяет установить мастер-пароль, если установлена в true.
 policy-DisablePasswordReveal = Не позволяет просматривать пароли у сохранённых логинов.
 policy-DisablePocket = Отключает сохранение страниц в Pocket.
 policy-DisablePrivateBrowsing = Отключает приватный просмотр.
@@ -79,6 +80,8 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Переключить
 
 policy-LocalFileLinks = Разрешает определённым веб-сайтам ссылаться на локальные файлы.
 policy-MasterPassword = Требовать или не давать использовать мастер-пароль.
+policy-ManagedBookmarks = Настраивает список закладок, управляемых администратором и недоступных для изменения пользователем.
+policy-PrimaryPassword = Требовать или не давать использовать мастер-пароль.
 policy-NetworkPrediction = Включает или отключает прогнозирование сети (предварительная выборка DNS).
 policy-NewTabPage = Включает или отключает страницу новой вкладки.
 policy-NoDefaultBookmarks = Отключает создание закладок по умолчанию, идущих вместе с { -brand-short-name }, и Умных Закладок (Часто посещаемые, Последние метки). Примечание: эта политика действует только в том случае, если она используется до первого запуска профиля.

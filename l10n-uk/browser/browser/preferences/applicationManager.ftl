@@ -21,5 +21,5 @@ app-manager-handle-file = Для обробки вмісту { $type } можу�
 ## These strings are followed, on a new line,
 ## by the URL or path of the application.
 
-app-manager-web-app-info = Ця веб-програма розміщена на:
+app-manager-web-app-info = Цю вебпрограму розміщено на:
 app-manager-local-app-info = Ця програма знаходиться у:

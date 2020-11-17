@@ -12,7 +12,7 @@ pictureinpicture-play =
 pictureinpicture-mute =
     .aria-label = Mokirirĩ
 pictureinpicture-unmute =
-    .aria-label = Mba'epu mbojevy
+    .aria-label = Mba’epu mbojevy
 
 pictureinpicture-unpip =
     .aria-label = Emondojey tendayképe

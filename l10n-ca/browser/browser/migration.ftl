@@ -53,6 +53,7 @@ no-migration-sources = No s'ha trobat cap programa que contingui adreces d'inter
 import-source-page-title = Importació dels paràmetres i de les dades
 import-items-page-title = Elements per importar
 import-items-description = Seleccioneu quins elements voleu importar:
+import-permissions-page-title = Doneu permisos al { -brand-short-name }
 import-migrating-page-title = S'està important…
 import-migrating-description = Els elements següents s'estan important en aquests moments…
 import-select-profile-page-title = Selecció de perfil
@@ -88,10 +89,57 @@ imported-edge-reading-list = Llista de lectura (de l'Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.
 
+browser-data-cookies-checkbox =
+    .label = Galetes
+browser-data-cookies-label =
+    .value = Galetes
+browser-data-history-checkbox =
+    .label =
+        { $browser ->
+            [firefox] Historial de navegació i adreces d'interès
+           *[other] Historial de navegació
+        }
+browser-data-history-label =
+    .value =
+        { $browser ->
+            [firefox] Historial de navegació i adreces d'interès
+           *[other] Historial de navegació
+        }
+browser-data-formdata-checkbox =
+    .label = Historial de formularis desats
+browser-data-formdata-label =
+    .value = Historial de formularis desats
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-checkbox =
+    .label = Inicis de sessió i contrasenyes desats
+# This string should use the same phrase for "logins and passwords" as the
+# label in the main hamburger menu that opens about:logins.
+browser-data-passwords-label =
+    .value = Inicis de sessió i contrasenyes desats
+browser-data-bookmarks-checkbox =
+    .label =
+        { $browser ->
+            [ie] Favorits
+            [edge] Favorits
+           *[other] Adreces d'interès
+        }
+browser-data-bookmarks-label =
+    .value =
+        { $browser ->
+            [ie] Favorits
+            [edge] Favorits
+           *[other] Adreces d'interès
+        }
+browser-data-otherdata-checkbox =
+    .label = Altres dades
+browser-data-otherdata-label =
+    .label = Altres dades
 browser-data-session-checkbox =
     .label = Finestres i pestanyes
 browser-data-session-label =

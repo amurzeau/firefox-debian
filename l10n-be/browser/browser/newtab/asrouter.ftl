@@ -216,6 +216,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = Пабачыць усе
     .accesskey = ы
+cfr-doorhanger-milestone-close-button = Закрыць
+    .accesskey = З
 
 ## What’s New Panel Content for Firefox 76
 
@@ -249,3 +251,35 @@ cfr-whatsnew-protections-icon-alt = Значок шчыта
 
 cfr-whatsnew-better-pdf-header = Лепшая праца з PDF
 cfr-whatsnew-better-pdf-body = Цяпер дакументы PDF адкрываюцца наўпрост у { -brand-short-name }, трымаючы ваш працоўны працэс зручным.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = Ваша прыватнасць мае значэнне. { -brand-short-name } зараз бяспечна накіроўвае вашы запыты DNS, калі гэта магчыма, у партнёрскі сэрвіс, каб абараніць вас у час аглядання.
+cfr-doorhanger-doh-header = Больш бяспечны, зашыфраваны пошук DNS
+cfr-doorhanger-doh-primary-button = OK, зразумела
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = Адключыць
+    .accesskey = А
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = Ваша прыватнасць мае значэнне. { -brand-short-name } цяпер ізалюе, у "пясочніцы", сайты адзін ад аднаго, што ўскладняе хакерам крадзеж пароляў, нумароў крэдытных карт і іншай канфідэнцыяльнай інфармацыі.
+cfr-doorhanger-fission-header = Ізаляцыя сайтаў
+cfr-doorhanger-fission-primary-button = OK, зразумела
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Даведацца больш
+    .accesskey = Д
+# Deprecated
+cfr-doorhanger-fission-body = { -brand-short-name } уключыў для вас эксперыментальную функцыю Fission (ізаляцыя сайта). Ізалюючы кожны сайт у асобны працэс, Fission забяспечвае дадатковы ўзровень бяспекі для вас і для сайтаў, якія вы наведваеце.
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Аўтаматычная абарона ад падступнай тактыкі сачэння
+cfr-whatsnew-clear-cookies-body = Некаторыя трэкеры перанакіроўваюць вас на іншыя сайты, якія таемна ўсталёўваюць кукі. { -brand-short-name } зараз аўтаматычна ачышчае гэтыя кукі, каб за вамі не маглі сачыць.
+cfr-whatsnew-clear-cookies-image-alt = Прыклад блакавання кукаў
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Больш элементаў кіравання медыя
+cfr-whatsnew-media-keys-body = Прайгравайце і прыпыняйце аўдыя ці відэа прама з клавіятуры або гарнітуры, дзякуючы чаму лёгка кіраваць медыя з іншай карткі, праграмы ці нават калі ваш камп'ютар заблакаваны. Таксама можаце перамяшчацца паміж трэкамі з дапамогай кнопак наперад і назад.
+cfr-whatsnew-media-keys-button = Даведацца, як

@@ -23,7 +23,7 @@ wizard-win-button-next =
     .accesskey = J
 
 wizard-macos-button-finish =
-    .label = Ruk'isik
+    .label = Xk'is
 wizard-linux-button-finish =
     .label = Tik'is
 wizard-win-button-finish =

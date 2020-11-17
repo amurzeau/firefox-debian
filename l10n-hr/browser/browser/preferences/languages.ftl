@@ -70,4 +70,4 @@ browser-languages-select-language =
 browser-languages-installed-label = Instalirani jezici
 browser-languages-available-label = Dostupni jezici
 
-browser-languages-error = { -brand-short-name } trenutačno ne može ažurirati tvoje jezike. Provjeri vezu s internetom ili pokušaj ponovo.
+browser-languages-error = { -brand-short-name } trenutačno ne može aktualizirati tvoje jezike. Provjeri vezu s internetom ili pokušaj ponovo.

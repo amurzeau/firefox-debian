@@ -2,7 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-page-title = Thông tin gỡ rối vấn đề
+page-title = Thông tin xử lý sự cố
 page-subtitle = Trang này chứa thông tin kĩ thuật có thể có ích khi bạn đang cố giải quyết một vấn đề. Nếu bạn đang tìm câu trả lời cho các câu hỏi thông thường về { -brand-short-name }, hãy xem <a data-l10n-name="support-link">trang web hỗ trợ</a> của chúng tôi.
 crashes-title = Trình báo cáo lỗi
 crashes-id = ID báo cáo
@@ -14,6 +14,12 @@ extensions-name = Tên
 extensions-enabled = Đã bật
 extensions-version = Phiên bản
 extensions-id = ID
+support-addons-title = Tiện ích
+support-addons-name = Tên
+support-addons-type = Kiểu
+support-addons-enabled = Đã bật
+support-addons-version = Phiên bản
+support-addons-id = ID
 security-software-title = Phần mềm bảo mật
 security-software-type = Kiểu
 security-software-name = Tên
@@ -59,6 +65,7 @@ app-basics-service-workers = Các Service Worker đã đăng ký
 app-basics-profiles = Tiểu sử
 app-basics-launcher-process-status = Quá trình khởi chạy
 app-basics-multi-process-support = Các cửa sổ đa tiến trình
+app-basics-fission-support = Fission Windows
 app-basics-remote-processes-count = Tiến trình từ xa
 app-basics-enterprise-policies = Chính sách doanh nghiệp
 app-basics-location-service-key-google = Khóa dịch vụ định vị Google
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] Mở thư mục
        *[other] Mở thư mục
     }
+environment-variables-title = Biến môi trường
+environment-variables-name = Tên
+environment-variables-value = Giá trị
+experimental-features-title = Các tính năng thử nghiệm
+experimental-features-name = Tên
+experimental-features-value = Giá trị
 modified-key-prefs-title = Các tùy chọn quan trọng đã được sửa đổi
 modified-prefs-name = Tên
 modified-prefs-value = Giá trị
@@ -95,16 +108,14 @@ graphics-desktop-environment = Môi trường máy tính để bàn
 place-database-title = Cơ sở dữ liệu địa điểm
 place-database-integrity = Tính toàn vẹn
 place-database-verify-integrity = Xác nhận tính toàn vẹn
-js-title = JavaScript
-js-incremental-gc = Tăng tốc GC
 a11y-title = Trợ năng
 a11y-activated = Được kích hoạt
 a11y-force-disabled = Ngăn các tùy chọn về trợ năng
 a11y-handler-used = Xử lý truy cập được sử dụng
 a11y-instantiator = Trợ năng truy cập
 library-version-title = Phiên bản thư viện
-copy-text-to-clipboard-label = Sao chép văn bản vào clipboard
-copy-raw-data-to-clipboard-label = Sao chép dữ liệu thô vào clipboard
+copy-text-to-clipboard-label = Sao chép văn bản vào bộ nhớ tạm
+copy-raw-data-to-clipboard-label = Sao chép dữ liệu thô vào bộ nhớ tạm
 sandbox-title = Hộp cát
 sandbox-sys-call-log-title = System Call bị từ chối
 sandbox-sys-call-index = #
@@ -126,8 +137,8 @@ restart-button-label = Khởi động lại
 
 audio-backend = Âm thanh đầu cuối
 max-audio-channels = Kênh tối đa
-channel-layout = Bố cục kênh ưu tiên
 sample-rate = Tỷ lệ mẫu ưu tiên
+roundtrip-latency = Thời gian trễ trọn vòng (độ lệch chuẩn)
 media-title = Đa phương tiện
 media-output-devices-title = Các thiết bị đầu ra
 media-input-devices-title = Thiết bị đầu vào
@@ -186,8 +197,8 @@ crashes-time-days = { $days } ngày trước
 # Variables
 # $reports (integer) - Number of pending reports
 pending-reports = Tất cả các báo cáo lỗi (bao gồm cả { $reports } báo cáo chưa gửi trong khoảng thời gian đã cho)
-raw-data-copied = Dữ liệu thô đã được sao chép vào bảng tạm
-text-copied = Văn bản đã được sao chép vào bảng tạm
+raw-data-copied = Đã sao chép dữ liệu thô vào bộ nhớ tạm
+text-copied = Đã sao chép văn bản vào bộ nhớ tạm
 
 ## The verb "blocked" here refers to a graphics feature such as "Direct2D" or "OpenGL layers".
 
@@ -242,11 +253,13 @@ blocklisted-bug = Danh sách chặn do các vấn đề đã biết
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = lỗi { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Bị chặn trong danh sách do các sự cố đã biết: <a data-l10n-name="bug-link">mã lỗi { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Danh sách chặn; mã lỗi { $failureCode }
 d3d11layers-crash-guard = Bộ soạn nhạc D3D11
 d3d11video-crash-guard = Bộ giải mã video D3D11
-d3d9video-crash-buard = Bộ giải mã video D3D9
 d3d9video-crash-guard = Bộ giải mã video D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Bộ giải mã video WMF VPX
@@ -294,6 +307,20 @@ multi-process-status-6 = Vô hiệu hóa bởi nhập văn bản không được
 multi-process-status-7 = Vô hiệu hóa bởi các tiện ích
 multi-process-status-8 = Bắt buộc vô hiệu hóa
 multi-process-status-unknown = Tình trạng không xác định
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Đã tắt bởi thử nghiệm
+fission-status-experiment-treatment = Đã bật bởi thử nghiệm
+fission-status-disabled-by-e10s-env = Đã tắt bởi môi trường
+fission-status-enabled-by-env = Đã bật bởi môi trường
+fission-status-disabled-by-safe-mode = Đã tắt bởi chế độ an toàn
+fission-status-enabled-by-default = Đã bật theo mặc định
+fission-status-disabled-by-default = Đã tắt theo mặc định
+fission-status-enabled-by-user-pref = Đã bật bởi người dùng
+fission-status-disabled-by-user-pref = Đã tắt bởi người dùng
+fission-status-disabled-by-e10s-other = E10s bị vô hiệu hóa
 async-pan-zoom = Pan/Zoom không đồng bộ
 apz-none = không có
 wheel-enabled = con lăn đã bật
@@ -314,3 +341,12 @@ touch-warning = đầu vào cảm ứng không đồng bộ đã tắt vì có t
 policies-inactive = Không hoạt động
 policies-active = Hoạt động
 policies-error = Lỗi
+
+## Printing section
+
+support-printing-title = Đang In
+support-printing-troubleshoot = Khắc phục sự cố
+support-printing-clear-settings-button = Xóa cài đặt in đã lưu
+support-printing-modified-settings = Đã sửa đổi cài đặt in
+support-printing-prefs-name = Tên
+support-printing-prefs-value = Giá trị

@@ -4,9 +4,7 @@
 
 <!ENTITY closeNotification.tooltip "메시지 닫기">
 
-<!ENTITY checkForUpdates "업데이트 확인 중…">
-
-<!ENTITY learnMore "더 알아보기…">
+<!ENTITY checkForUpdates "업데이트 확인…">
 
 <!ENTITY learnMoreNoEllipsis "더 알아보기">
 

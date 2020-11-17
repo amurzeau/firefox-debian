@@ -8,6 +8,9 @@ certmgr-title =
 certmgr-tab-mine =
     .label = Вашите сертификати
 
+certmgr-tab-remembered =
+    .label = Решения при удостоверяване
+
 certmgr-tab-people =
     .label = Хора
 
@@ -18,6 +21,7 @@ certmgr-tab-ca =
     .label = Удостоверители
 
 certmgr-mine = Имате сертификати от тези организации, които ви идентифицират
+certmgr-remembered = Тези сертификати се използват, за да ви идентифицират пред уеб сайтове
 certmgr-people = Имате сертификати, които идентифицират следните хора
 certmgr-servers = Имате сертификати, които идентифицират следните сървъри
 certmgr-ca = Имате сертификати, които идентифицират следните удостоверители на сертификати
@@ -73,6 +77,9 @@ certmgr-edit-cert-trust-email =
 certmgr-delete-cert =
     .title = Изтриване на сертификат
     .style = width: 48em; height: 24em;
+
+certmgr-cert-host =
+    .label = Хост
 
 certmgr-cert-name =
     .label = Име на сертификат

@@ -18,6 +18,7 @@ certmgr-mine = Γuṛ-k iselkan n tuddsiwin seg tekebbanit-agi i k-isuluyen
 certmgr-remembered = Iselkinen-a ttusqedcen akken ad ak-sulen ɣer yismal web.
 certmgr-people = Ɣur-k iselkinen ɣef ufaylu  yessuluyen imdanen-agi
 certmgr-servers = Ɣuṛ-k iselkinen deg ufaylu yessuluyen iqeddacen-agi
+certmgr-server = Inekcumen-a sbadun-d tisuraf n tuccḍa n uselkn n uqeddac
 certmgr-ca = Ɣur-k iselkinen ɣef ufaylu yessuluyen iduba-agi n iselkinen
 certmgr-detail-general-tab-title =
     .label = Amatu
@@ -161,6 +162,10 @@ delete-ssl-cert-title =
     .title = Kkes tisuraf n uselkin n uqeddac
 delete-ssl-cert-confirm = Tebɣiḍ ad tekkseḍ tisuraf n uqeddac-agi?
 delete-ssl-cert-impact = Ma tekkseḍ tasureft n uqeddac, ihi ad d-terreḍ asenqed n tɣellist umris n uqeddac-agi udiɣ suter ad iseqdec aselkin ameɣtu.
+delete-ssl-override-title =
+    .title = Kkes tasureft n uselkn n uqeddac
+delete-ssl-override-confirm = Tebɣiḍ s tidet ad tekkseḍ tasureft-a n uqeddac?
+delete-ssl-override-impact = Ma yella tekkseḍ tasurft n uqeddac, ad d-terreḍ isenqaden n tɣellst turmist i uqeddac-a syen suter ad iseqdec aselkn ameɣtu.
 delete-ca-cert-title =
     .title = Kkes neɣ ur ggar ara taflest deg iselkan n udabu CA
 delete-ca-cert-confirm = Tessutreḍ-d tukksa n iselkinen n udabu CA. Wi d iselkinen usliɣen, ur neggar ara deg-sen taflest, d ayen ur d-igellun ara s usnifel. S tidett, tebɣiḍ tukksa n iselkinen-a neɣ ur teggareḍ ara deg-sen taflest?
@@ -208,6 +213,15 @@ cert-not-verified-issuer-unknown = Ur izmir ara ad isenqed aselkin-agi acku adab
 cert-not-verified-ca-invalid = Ur yezmir ara ad isenqed aselkin-agi acku aselkin CA d arameɣtu.
 cert-not-verified_algorithm-disabled = Ur izmir ara ad isenqed aselkin-agi acku ittuzmel s ulguritm n uzmul itturemeden imi alguritm-agi d araɣelsan.
 cert-not-verified-unknown = Ur izmir ara ad isenqed aselkin-agi imi taɣzint d tarussint.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Ur ttazen ula d yiwen n uselkin n umsaɣ
+# Used when no cert is stored for an override
+no-cert-stored-for-override = (Ur ittukles ara)
+
+## Used to show whether an override is temporary or permanent
+
+permanent-override = Ameɣlal
+temporary-override = Askudan
 
 ## Add Security Exception dialog
 

@@ -52,6 +52,8 @@ about-paragraph = A Thunderbird a vezető nyílt forráskódú, keresztplatformo
 about-paragraph-2 = <b>A Thunderbirdöt az Önhöz hasonló felhasználók finanszírozzák! Ha szereti a Thunderbirdöt, fontolja meg az adományozást.</b> A Thunderbird további elérhetőségének biztosításának legjobb módja az, ha
 about-donation = adományoz
 
+about-paragraph-consider-donation = <b>A Thunderbirdöt az Önhöz hasonló felhasználók finanszírozzák! Ha szereti a Thunderbirdöt, fontolja meg az adományozást.</b> A Thunderbird további elérhetőségének biztosításának legjobb módja az <a data-l10n-name="donation-link">adományozás</a>.
+
 explore-link = Funkciók felfedezése
 support-link = Támogatás
 involved-link = Csatlakozzon

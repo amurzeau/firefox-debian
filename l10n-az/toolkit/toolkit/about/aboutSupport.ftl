@@ -15,6 +15,9 @@ extensions-name = Ad
 extensions-enabled = Aktivdir
 extensions-version = Buraxılış
 extensions-id = ID
+support-addons-name = Ad
+support-addons-version = Buraxılış
+support-addons-id = ID
 security-software-title = Təhlükəsizlik Proqramı
 security-software-type = Növü
 security-software-name = Adı
@@ -76,8 +79,6 @@ graphics-workarounds-title = Həllər
 place-database-title = Yerlər Məlumat Bazası
 place-database-integrity = Bütünlük
 place-database-verify-integrity = Bütünlüyü təsdiqlə
-js-title = JavaScript
-js-incremental-gc = Əlavə GC
 a11y-title = Əlçatanlıq
 a11y-activated = Aktivləşdirilib
 a11y-force-disabled = Əlçatanlığın qarşısını al
@@ -102,9 +103,7 @@ restart-in-safe-mode-label = Əlavələr sönülü olaraq yenidən başlat…
 
 audio-backend = Səs arxa tərəfi
 max-audio-channels = Maksimum kanal
-channel-layout = Üstünlük verilən kanal düzülüşü
 sample-rate = Üstünlük verilən nümunə tempi
-
 media-title = Media
 media-output-devices-title = Çıxış cihazları
 media-input-devices-title = Giriş cihazları
@@ -138,6 +137,7 @@ intl-regional-prefs = Regional Nizamlamalar
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -246,7 +246,6 @@ unknown-failure = Əngəlləndi; xəta kodu { $failureCode }
 
 d3d11layers-crash-guard = D3D11 Compositor
 d3d11video-crash-guard = D3D11 Video Dekodlayıcı
-d3d9video-crash-buard = D3D9 Video Dekodlayıcı
 d3d9video-crash-guard = D3D9 Video Dekodlayıcı
 glcontext-crash-guard = OpenGL
 

@@ -1,11 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Hesaplar ve Parolalar
@@ -32,6 +27,7 @@ menu =
     .title = Menüyü aç
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Başka bir tarayıcıdan içe aktar…
+about-logins-menu-menuitem-import-from-a-file = Dosyadan içe aktar…
 about-logins-menu-menuitem-export-logins = Hesapları dışa aktar…
 menu-menuitem-preferences =
     { PLATFORM() ->
@@ -72,12 +68,14 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = Kayıtlı hesaplarınızı mı arıyorsunuz? { -sync-brand-short-name }’i kurun.
+about-logins-login-intro-heading-logged-out = Kayıtlı hesaplarınızı mı arıyorsunuz? { -sync-brand-short-name }’i kurun veya hesapları içe aktarın.
 about-logins-login-intro-heading-logged-in = Eşitlenmiş hesap bulunamadı.
 login-intro-description = Hesaplarınızı farklı bir cihazdaki { -brand-product-name } tarayıcınıza kaydettiyseniz onları buraya aktarabilirsiniz:
 login-intro-instruction-fxa = Hesaplarınızın kayıtlı olduğu cihazda  { -fxaccount-brand-name } hesabı açın veya hesabınıza giriş yapın
 login-intro-instruction-fxa-settings = { -sync-brand-short-name } ayarlarında “Hesaplar”ı işaretlediğinizden emin olun
-about-logins-intro-instruction-help = Daha fazla yardım için <a data-l10n-name="help-link">{ -lockwise-brand-short-name } Destek</a>'i ziyaret edebilirsiniz
+about-logins-intro-instruction-help = Daha fazla yardım için <a data-l10n-name="help-link">{ -lockwise-brand-short-name } Destek</a>’i ziyaret edebilirsiniz
 about-logins-intro-import = Hesaplarınız başka bir tarayıcıda kayıtlıysa onları <a data-l10n-name="import-link">{ -lockwise-brand-short-name }’a aktarabilirsiniz</a>
+about-logins-intro-import2 = Hesaplarınız { -brand-product-name } dışında kayıtlıysa onları <a data-l10n-name="import-browser-link">başka bir tarayıcıdan</a> veya <a data-l10n-name="import-file-link">dosyadan</a> içe aktarabilirsiniz
 
 ## Login
 
@@ -127,15 +125,19 @@ about-logins-copy-password-os-auth-dialog-message-win = Parolanızı kopyalamak 
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = kayıtlı parolayı kopyalama
+
+## Master Password notification
+
+master-password-notification-message = Kayıtlı parola ve hesaplarınızı görmek için lütfen ana parolanızı girin
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Hesaplarınızı dışa aktarmak için Windows hesap bilgilerinizi girin. Bu sayede hesaplarınızı daha güvenli bir şekilde koruyabiliriz.
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = kayıtlı hesapları ve parolaları dışa aktarma
 
-## Master Password notification
+## Primary Password notification
 
-master-password-notification-message = Kayıtlı parola ve hesaplarınızı görmek için lütfen ana parolanızı girin
+about-logins-primary-password-notification-message = Kayıtlı parola ve hesaplarınızı görmek için lütfen ana parolanızı girin
 master-password-reload-button =
     .label = Giriş yap
     .accesskey = G
@@ -213,6 +215,19 @@ about-logins-export-file-picker-export-button = Dışa aktar
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
 about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV belgesi
+       *[other] CSV dosyası
+    }
+
+## Login Import Dialog
+
+# Title of the file picker dialog
+about-logins-import-file-picker-title = Hesaplar Dosyasını İçe Aktar
+about-logins-import-file-picker-import-button = İçe aktar
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
     { PLATFORM() ->
         [macos] CSV belgesi
        *[other] CSV dosyası

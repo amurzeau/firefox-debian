@@ -65,7 +65,7 @@ item-cookies =
     .accesskey = K
 
 item-active-logins =
-    .label = Tembiapo ikyre'ỹva
+    .label = Tembiapo ikyre’ỹva
     .accesskey = L
 
 item-cache =
@@ -92,7 +92,7 @@ window-close =
     .key = w
 
 sanitize-button-ok =
-    .label = Emopotĩ ko'ág̃a
+    .label = Emopotĩ ko’ág̃a
 
 # The label for the default button between the user clicking it and the window
 # closing.  Indicates the items are being cleared.
@@ -107,4 +107,4 @@ sanitize-everything-warning = Opa tembiasakue oñemboguéta.
 # Warning that appears when "Time range to clear" is set to "Everything" in Clear
 # Recent History dialog, provided that the user has modified the default set of
 # history items to clear.
-sanitize-selected-warning = Opavave temimoĩ isa'ypyréva oñemboguepáta.
+sanitize-selected-warning = Opate temimoĩ isa’ypyréva oñemboguepáta.

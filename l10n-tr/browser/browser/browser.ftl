@@ -17,13 +17,13 @@
 browser-main-window =
     .data-title-default = { -brand-full-name }
     .data-title-private = { -brand-full-name } (Gizli Gezinti)
-    .data-content-title-default = { $content-title } - { -brand-full-name }
-    .data-content-title-private = { $content-title } - { -brand-full-name } (Gizli Gezinti)
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name } (Gizli Gezinti)
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -35,9 +35,9 @@ browser-main-window =
 #  $content-title (String): the title of the web content.
 browser-main-window-mac =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } - (Gizli Gezinti)
+    .data-title-private = { -brand-full-name } — (Gizli Gezinti)
     .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } - (Gizli Gezinti)
+    .data-content-title-private = { $content-title } — (Gizli Gezinti)
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -109,6 +109,15 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Daha az yazın, daha çok bulun: Adres çubuğunuzdan { $engineName } ile arama yapın.
 urlbar-search-tips-redirect-2 = { $engineName } ve gezinti geçmişinizden gelen önerileri görmek için adres çubuğunda arama yapmaya başlayın.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Aradığınızı daha hızlı bulmak için bu kısayolu seçin.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Yer imleri
+urlbar-search-mode-tabs = Sekmeler
+urlbar-search-mode-history = Geçmiş
 
 ##
 
@@ -156,6 +165,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Eklentiyi kaldır
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Sekmeyi cihaza gönder
+           *[other] { $tabCount } sekmeyi cihaza gönder
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Sekmeyi cihaza gönder
+           *[other] { $tabCount } sekmeyi cihaza gönder
+        }
+page-action-pocket-panel =
+    .label = Sayfayı { -pocket-brand-name }’a kaydet
+page-action-copy-url-panel =
+    .label = Bağlantıyı kopyala
+page-action-copy-url-urlbar =
+    .tooltiptext = Bağlantıyı kopyala
+page-action-email-link-panel =
+    .label = Bağlantıyı e-postayla gönder…
+page-action-email-link-urlbar =
+    .tooltiptext = Bağlantıyı e-postayla gönder…
+page-action-share-url-panel =
+    .label = Paylaş
+page-action-share-url-urlbar =
+    .tooltiptext = Paylaş
+page-action-share-more-panel =
+    .label = Daha fazla…
+page-action-send-tab-not-ready =
+    .label = Cihazlar eşitleniyor…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = Sekmeyi sabitle
+page-action-pin-tab-urlbar =
+    .tooltiptext = Sekmeyi sabitle
+page-action-unpin-tab-panel =
+    .label = Normal sekmeye dönüştür
+page-action-unpin-tab-urlbar =
+    .tooltiptext = Normal sekmeye dönüştür
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +223,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Bir de bununla aramayı deneyin:
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +241,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Gizli pencerelerde varsayılan arama motoru olarak ayarla
     .accesskey = G
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Yer imleri ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Sekmeler ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Geçmiş ({ $restrict })
 
 ## Bookmark Panel
 
@@ -212,6 +288,17 @@ identity-passive-loaded = Bu sayfanın bazı kısımları (örneğin resimler) g
 identity-active-loaded = Bu sayfada korumayı devre dışı bıraktınız.
 identity-weak-encryption = Bu sayfada zayıf şifreleme kullanılıyor.
 identity-insecure-login-forms = Bu sayfaya girilen hesap bilgileri ele geçirilebilir.
+identity-https-only-connection-upgraded = (HTTPS’e yükseltildi)
+identity-https-only-label = Yalnızca HTTPS modu
+identity-https-only-dropdown-on =
+    .label = Açık
+identity-https-only-dropdown-off =
+    .label = Kapalı
+identity-https-only-dropdown-off-temporarily =
+    .label = Geçici olarak kapalı
+identity-https-only-info-turn-on2 = Mümkün olduğunda { -brand-short-name } tarayıcınızın güvenli bağlantıya geçmesini istiyorsanız bu site için Yalnızca HTTPS modunu açın.
+identity-https-only-info-turn-off2 = Sayfa düzgün çalışmazsa bu site için Yalnızca HTTPS modunu kapatarak siteyi güvensiz HTTP ile yüklemeyi deneyebilirsiniz.
+identity-https-only-info-no-upgrade = HTTP bağlantısı yükseltilemedi.
 identity-permissions =
     .value = İzinler
 identity-permissions-reload-hint = Değişikliklerin uygulanması için bu sayfayı tazelemeniz gerekebilir.
@@ -257,6 +344,12 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Kapat
 
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = Yer imlerini içe aktar…
+    .tooltiptext = Başka bir tarayıcıdaki yer imlerini { -brand-short-name } tarayıcınıza kopyalayın.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -292,8 +385,42 @@ enable-devtools-popup-description = F12 kısayolunu kullanmak için önce Web ge
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Arama yapın veya adres yazın
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Arama yapın veya adres yazın
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Web’de ara
+    .aria-label = { $name } ile ara
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Aranacak terimleri yazın
+    .aria-label = { $name } ile ara
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Aranacak terimleri yazın
+    .aria-label = Yer imlerinde ara
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Aranacak terimleri yazın
+    .aria-label = Geçmişte ara
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Aranacak terimleri yazın
+    .aria-label = Sekmelerde ara
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = { $name } ile arama yapın veya adres yazın
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Tarayıcı uzaktan kontrol ediliyor
 urlbar-permissions-granted =
@@ -309,3 +436,67 @@ urlbar-page-action-button =
     .tooltiptext = Sayfa eylemleri
 urlbar-pocket-button =
     .tooltiptext = { -pocket-brand-name }’a kaydet
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Gizli pencerede { $engine } ile ara
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Gizli pencerede ara
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = { $engine } ile ara
+urlbar-result-action-sponsored = Sponsorlu
+urlbar-result-action-switch-tab = Sekmeye geç
+urlbar-result-action-visit = Ziyaret et
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = { $engine } ile aramak için Tab tuşuna basın
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = { $engine } ile aramak için Tab tuşuna basın
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = { $engine } ile doğrudan adres çubuğundan arama yapın
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = { $engine } ile doğrudan adres çubuğundan arama yapın
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Yer imlerinde ara
+urlbar-result-action-search-history = Geçmişte ara
+urlbar-result-action-search-tabs = Sekmelerde ara
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> artık tam ekran
+fullscreen-warning-no-domain = Bu belge artık tam ekran
+fullscreen-exit-button = Tam ekrandan çık (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Tam ekrandan çık (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> işaretçinizi kontrol ediyor. Kontrolü geri almak için Esc tuşuna basın.
+pointerlock-warning-no-domain = Bu belge işaretçinizi kontrol ediyor. Kontrolü geri almak için Esc tuşuna basın.

@@ -18,7 +18,7 @@ block-button =
     .accesskey = R
 
 allow-session-button =
-    .label = Caniatâu ar gyfer y Sesiwn
+    .label = Caniatáu ar gyfer y Sesiwn
     .accesskey = S
 
 allow-button =

@@ -36,6 +36,9 @@ containers-color-label = Farve
 containers-button-done =
     .label = Færdig
     .accesskey = F
+containers-dialog =
+    .buttonlabelaccept = Færdig
+    .buttonaccesskeyaccept = F
 containers-color-blue =
     .label = Blå
 containers-color-turquoise =
@@ -52,13 +55,10 @@ containers-color-pink =
     .label = Pink
 containers-color-purple =
     .label = Lilla
-
 containers-color-toolbar =
     .label = Match værktøjslinje
-
 containers-icon-fence =
     .label = Hegn
-
 containers-icon-fingerprint =
     .label = Fingeraftryk
 containers-icon-briefcase =

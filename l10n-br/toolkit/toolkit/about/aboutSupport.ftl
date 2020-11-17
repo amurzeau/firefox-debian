@@ -15,6 +15,9 @@ extensions-name = Anv
 extensions-enabled = Gweredekaet
 extensions-version = Handelv
 extensions-id = Naoudi
+support-addons-name = Anv
+support-addons-version = Handelv
+support-addons-id = Naoudi
 security-software-title = Meziant diogelroez
 security-software-type = Rizh
 security-software-name = Anv
@@ -91,8 +94,6 @@ graphics-window-protocol = Protokol ar prenestrañ
 place-database-title = Stlennvon "Places"
 place-database-integrity = Kevanded
 place-database-verify-integrity = Gwiriañ ar gevanded
-js-title = JavaScript
-js-incremental-gc = Karzher azvuiadel
 a11y-title = Haezadusted
 a11y-activated = Gweredekaet
 a11y-force-disabled = Mirout ouzh an haezadusted
@@ -117,9 +118,7 @@ restart-in-safe-mode-label = Adloc'hañ gant an askouezhioù diweredekaet…
 
 audio-backend = Drekva aodio
 max-audio-channels = Niver a sanelloù uc'hek
-channel-layout = Mod sanell gwellañ karet
 sample-rate = Feur standilhon gwellañ karet
-
 media-title = Media
 media-output-devices-title = Trevnadoù ec'hankañ
 media-input-devices-title = Trevnadoù enankañ
@@ -278,7 +277,6 @@ unknown-failure = Er roll stanket; boneg c'hwitadenn { $failureCode }
 
 d3d11layers-crash-guard = Kenaozer D3D11
 d3d11video-crash-guard = Ezvoneger Video D3D11
-d3d9video-crash-buard = Ezvoneger Video D3D9
 d3d9video-crash-guard = Ezvoneger Video D3D9
 glcontext-crash-guard = OpenGL
 

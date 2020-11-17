@@ -4,7 +4,6 @@
 
 addons-window =
     .title = Ardoer an askouezhioù
-
 addons-page-title = Ardoer an askouezhioù
 
 search-header =
@@ -13,9 +12,6 @@ search-header =
 
 search-header-shortcut =
     .key = f
-
-loading-label =
-    .value = O kargañ…
 
 list-empty-installed =
     .value = N'eus askouezh ebet eus ar rizh-mañ staliet
@@ -32,12 +28,7 @@ list-empty-find-updates =
 list-empty-button =
     .label = Gouzout hiroc'h a-zivout an askouezhioù
 
-install-addon-from-file =
-    .label = Staliañ askouezhioù diouzh ar restr...
-    .accesskey = i
-
 help-button = Skor an askouezhioù
-
 sidebar-help-button-title =
     .title = Skor an askouezhioù
 
@@ -46,10 +37,6 @@ preferences =
         [windows] Dibarzhioù { -brand-short-name }
        *[other] Gwellvezioù { -brand-short-name }
     }
-
-tools-menu =
-    .tooltiptext = Ostilhoù evit an holl askouezhioù
-
 sidebar-preferences-button-title =
     .title =
         { PLATFORM() ->
@@ -62,10 +49,6 @@ show-unsigned-extensions-button =
 
 show-all-extensions-button =
     .label = Diskouez an holl askouezhioù
-
-debug-addons =
-    .label = Diveugañ an askouezhioù
-    .accesskey = v
 
 cmd-show-details =
     .label = Diskouez muioc'h a stlennoù
@@ -104,12 +87,6 @@ cmd-contribute =
     .accesskey = K
     .tooltiptext = Kenoberiañ da ziorren an askouezh-mañ
 
-discover-title = Petra eo an askouezhioù ?
-
-discover-description = Arloadoù a ro tro deoc'h da bersonelaat { -brand-short-name } gant keweriusterioù pe stiloù ouzhpenn eo an askouezhioù. Amprouit ur varrenn gostez pe un arload evit an hinad, pe un neuz da lakaat { -brand-short-name } da vezañ evel ma plijo deoc'h.
-
-discover-footer = Pa viot kennasket ouzh internet e tiskouezo ar penel-mañ un darn eus an askouezhioù gwellañ ha brudetañ da brouadiñ.
-
 detail-version =
     .label = Handelv
 
@@ -140,19 +117,13 @@ detail-update-manual =
 # Used as a description for the option to allow or block an add-on in private windows.
 detail-private-browsing-label = Lañsañ en ur prenestr prevez
 
-detail-private-browsing-description2 = P'eo aotreet e c'hall an askouezh haeziñ hoc'h oberiantizoù enlinenn er merdeiñ prevez. <label data-l10n-name="detail-private-browsing-learn-more">Gouzout hiroc'h</label>
-
 # Some add-ons may elect to not run in private windows by setting incognito: not_allowed in the manifest.  This
 # cannot be overridden by the user.
 detail-private-disallowed-label = N'eo ket aotreet er prenestroù prevez
-detail-private-disallowed-description = An askouezh-mañ n'eo ket lañset er merdeiñ prevez. <label data-l10n-name="detail-private-browsing-learn-more">Gouzout hiroc'h</label>
-
 detail-private-disallowed-description2 = An askouezh-mañ n'eo ket lañset er merdeiñ prevez. <a data-l10n-name="learn-more">Gouzout hiroc'h</a>
 
 # Some special add-ons are privileged, run in private windows automatically, and this permission can't be revoked
 detail-private-required-label = Goulenn haeziñ d'ar prenestroù prevez
-detail-private-required-description = An askouezh-mañ a c'hall haeziñ hoc'h oberiantiz enlinenn e-pad ar merdeiñ prevez. <label data-l10n-name="detail-private-browsing-learn-more">Gouzout hiroc'h</label>
-
 detail-private-required-description2 = An askouezh-mañ a c'hall haeziñ hoc'h oberiantiz enlinenn e-pad ar merdeiñ prevez. <a data-l10n-name="learn-more">Gouzout hiroc'h</a>
 
 detail-private-browsing-on =
@@ -223,18 +194,6 @@ legacy-extensions-description = An askouezhioù-mañ ne glotont ket kenn gant sk
 
 private-browsing-description2 = { -brand-short-name } a cheñch an doare ma za an askouezhioù en-dro er merdeiñ prevez. An askouezhioù nevez a ouzhpennot da { -brand-short-name } na vezint ket lañset dre ziouer er prenestroù prevez. Ma ne aotreit ket anezho en arventennoù n'ez int ket en-dro er merdeiñ prevez, ha n'hallint ket haeziñ hoc'h oberiantizoù enlinenn aze. Graet hon eus kement-se evit derc'hel ho merdeiñ prevez evit gwir. <label data-l10n-name="private-browsing-learn-more">Deskit penaos merañ arventennoù an askouezhioù</label>
 
-extensions-view-discopane =
-    .name = Erbedadennoù
-    .tooltiptext = { extensions-view-discopane.name }
-
-extensions-view-recent-updates =
-    .name = Hizivadurioù nevesañ
-    .tooltiptext = { extensions-view-recent-updates.name }
-
-extensions-view-available-updates =
-    .name = Hizivadurioù hegerz
-    .tooltiptext = { extensions-view-available-updates.name }
-
 addon-category-discover = Erbedadennoù
 addon-category-discover-title =
     .title = Erbedadennoù
@@ -262,29 +221,6 @@ addon-category-recent-updates-title =
 
 ## These are global warnings
 
-extensions-warning-safe-mode-label =
-    .value = An holl askouezhioù zo bet diweredekaet gant ar mod diogelroez.
-extensions-warning-safe-mode-container =
-    .tooltiptext = { extensions-warning-safe-mode-label.value }
-
-extensions-warning-check-compatibility-label =
-    .value = Gwiriañ keverlec'hded an askouezhioù zo dizaotreet. Posupl eo deoc'h kaout askouezhioù nad int ket keverlec'h.
-extensions-warning-check-compatibility-container =
-    .tooltiptext = { extensions-warning-check-compatibility-label.value }
-
-extensions-warning-check-compatibility-enable =
-    .label = Gweredekaat
-    .tooltiptext = Gweredekaat ar gwiriadur evit keverlec'hded an askouezh
-
-extensions-warning-update-security-label =
-    .value = Diweredekaet eo ar gwiriañ evit hizivaat an askouezhioù. Marteze e viot lakaet en arvar gant hizivadurioù.
-extensions-warning-update-security-container =
-    .tooltiptext = { extensions-warning-update-security-label.value }
-
-extensions-warning-update-security-enable =
-    .label = Gweredekaat
-    .tooltiptext = Gweredekaat ar gwiriadur a-fet diogelroez hizivadur an askouezh
-
 extensions-warning-safe-mode = An holl askouezhioù zo bet diweredekaet gant ar mod diogelroez.
 extensions-warning-check-compatibility = Gwiriañ keverlec'hded an askouezhioù zo dizaotreet. Posupl eo deoc'h kaout askouezhioù nad int ket keverlec'h.
 extensions-warning-check-compatibility-button = Gweredekaat
@@ -296,14 +232,6 @@ extensions-warning-update-security-button = Gweredekaat
 
 ## Strings connected to add-on updates
 
-extensions-updates-check-for-updates =
-    .label = Gwiriañ mar bez hizivadurioù d'ober
-    .accesskey = G
-
-extensions-updates-view-updates =
-    .label = Gwelout an hizivadurioù nevesañ
-    .accesskey = v
-
 addon-updates-check-for-updates = Gwiriañ mar bez hizivadurioù d'ober
     .accesskey = G
 addon-updates-view-updates = Gwelout an hizivadurioù nevesañ
@@ -311,10 +239,6 @@ addon-updates-view-updates = Gwelout an hizivadurioù nevesañ
 
 # This menu item is a checkbox that toggles the default global behavior for
 # add-on update checking.
-
-extensions-updates-update-addons-automatically =
-    .label = Hizivaat an askouezhioù gant un doare emgefreek
-    .accesskey = a
 
 addon-updates-update-addons-automatically = Hizivaat an askouezhioù gant un doare emgefreek
     .accesskey = a
@@ -325,36 +249,12 @@ addon-updates-update-addons-automatically = Hizivaat an askouezhioù gant un doa
 ## (which itself is either "Automatically" or "Manually", controlled by the
 ## extensions-updates-update-addons-automatically.label menu item).
 
-extensions-updates-reset-updates-to-automatic =
-    .label = Adderaouekaat an holl askouezhioù a-benn ma vint hizivaet ent emgefreek
-    .accesskey = r
-
-extensions-updates-reset-updates-to-manual =
-    .label = Adderaouekaat an holl askouezhioù a-benn ma vint hizivaet gant an dorn
-    .accesskey = r
-
 addon-updates-reset-updates-to-automatic = Adderaouekaat an holl askouezhioù a-benn ma vint hizivaet ent emgefreek
     .accesskey = r
 addon-updates-reset-updates-to-manual = Adderaouekaat an holl askouezhioù a-benn ma vint hizivaet gant an dorn
     .accesskey = r
 
 ## Status messages displayed when updating add-ons
-
-extensions-updates-updating =
-    .value = Hizivadur an askouezhioù
-extensions-updates-installed =
-    .value = Hoc'h askouezhioù zo bet hizivaet.
-extensions-updates-downloaded =
-    .value = Hizivadurioù hoc'h askouezhioù zo bet pellgarget.
-extensions-updates-restart =
-    .label = Adloc'hañ bremañ evit peurechuiñ ar staliañ
-extensions-updates-none-found =
-    .value = Hizivadenn ebet kavet
-extensions-updates-manual-updates-found =
-    .label = Gwelout an hizivadurioù hegerz
-extensions-updates-update-selected =
-    .label = Staliañ Hizivadurioù
-    .tooltiptext = Staliañ an hizivadennoù hegerz war ar roll-mañ
 
 addon-updates-updating = Hizivadur an askouezhioù
 addon-updates-installed = Hoc'h askouezhioù zo bet hizivaet.
@@ -372,10 +272,6 @@ addon-open-about-debugging = Diveugañ an askouezhioù
 
 ## Extension shortcut management
 
-manage-extensions-shortcuts =
-    .label = Merañ ar berradennoù askouezhioù
-    .accesskey = b
-
 # This is displayed in the page options menu
 addon-manage-extensions-shortcuts = Merañ ar berradennoù askouezhioù
     .accesskey = b
@@ -385,8 +281,6 @@ shortcuts-no-commands = An askouezhioù da-heul n'ho deus ket a verradenn:
 shortcuts-input =
     .placeholder = Biziatait ur verradenn
 
-shortcuts-browserAction = Gweredekaat an askouezh
-
 shortcuts-pageAction = Gweredekaat ar gwered pajenn
 shortcuts-sidebarAction = Diskouez/kuzhat ar varrenn gostez
 
@@ -395,6 +289,11 @@ shortcuts-modifier-other = Enkorfañ Ctrl pe Alt
 shortcuts-invalid = Kenaozadur didalvoudek
 shortcuts-letter = Biziatait ul lizherenn
 shortcuts-system = N'haller ket flastrañ ur verradenn { -brand-short-name }
+
+# String displayed when a keyboard shortcut is already assigned to more than one add-on
+# Variables:
+#   $shortcut (string) - Shortcut string for the add-on
+shortcuts-duplicate-warning-message = { $shortcut } a zo implijet evel berradenn e plegennoù disheñvel. An doublennoù berradennoù a c'hall kaout un emzalc'h dic'hortoz.
 
 # String displayed when a keyboard shortcut is already used by another add-on
 # Variables:
@@ -411,9 +310,6 @@ shortcuts-card-expand-button =
     }
 
 shortcuts-card-collapse-button = Diskouez nebeutoc'h
-
-go-back-button =
-    .tooltiptext = Distreiñ
 
 header-back-button =
     .title = Distreiñ
@@ -461,7 +357,6 @@ remove-addon-button = Dilemel
 remove-addon-disabled-button = Ne c'hall ket bezañ dilemet <a data-l10n-name="link">Perak ?</a>
 disable-addon-button = Diweredekaat
 enable-addon-button = Gweredekaat
-expand-addon-button = Dibarzhioù ouzhpenn
 # This is used for the toggle on the extension card, it's a checkbox and this
 # is always its label.
 extension-enable-addon-button-label =
@@ -474,9 +369,6 @@ preferences-addon-button =
 details-addon-button = Munudoù
 release-notes-addon-button = Notennoù handelv
 permissions-addon-button = Aotreoù
-
-addons-enabled-heading = Gweredekaet
-addons-disabled-heading = Diweredekaet
 
 extension-enabled-heading = Gweredekaet
 extension-disabled-heading = Diweredekaet
@@ -502,6 +394,12 @@ addon-detail-version-label = Handelv
 addon-detail-last-updated-label = Hizivaet da ziwezhañ
 addon-detail-homepage-label = Pennbajenn
 addon-detail-rating-label = Notenn
+
+# The average rating that the add-on has received.
+# Variables:
+#   $rating (number) - A number between 0 and 5. The translation should show at most one digit after the comma.
+five-star-rating =
+    .title = Notennet { NUMBER($rating, maximumFractionDigits: 1) } war 5
 
 # This string is used to show that an add-on is disabled.
 # Variables:
@@ -536,22 +434,11 @@ install-update-button = Hizivaat
 
 # This is the tooltip text for the private browsing badge in about:addons. The
 # badge is the private browsing icon included next to the extension's name.
-addon-badge-private-browsing-allowed =
-    .title = Aotreet er prenestroù prevez
-
-# This is the tooltip text for the private browsing badge in about:addons. The
-# badge is the private browsing icon included next to the extension's name.
 addon-badge-private-browsing-allowed2 =
     .title = Aotreet er prenestroù prevez
     .aria-label = { addon-badge-private-browsing-allowed2.title }
 addon-detail-private-browsing-allow = Aotren
 addon-detail-private-browsing-disallow = Na aotren
-
-# This is the tooltip text for the recommended badge for an extension in about:addons. The
-# badge is a small icon displayed next to an extension when it is recommended on AMO.
-addon-badge-recommended =
-    .title = Erbedet
-    .alt = Erbedet
 
 available-updates-heading = Hizivadurioù hegerz
 recent-updates-heading = Hizivadurioù nevez

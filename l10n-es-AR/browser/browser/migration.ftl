@@ -53,6 +53,9 @@ no-migration-sources = No se encontraron programas que contengan marcadores, his
 import-source-page-title = Importar opciones y datos de
 import-items-page-title = Items a importar
 import-items-description = Seleccionar que ítems importar:
+import-permissions-page-title = Dar permisos a { -brand-short-name }
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS requiere que permita explícitamente que { -brand-short-name } acceda a los marcadores de Safari. Haga clic en “Continuar” y seleccione el archivo “Bookmarks.plist” en el panel de abrir archivo que aparece.
 import-migrating-page-title = Importando…
 import-migrating-description = Los siguientes ítems están siendo importados…
 import-select-profile-page-title = Seleccione perfil
@@ -88,6 +91,7 @@ imported-edge-reading-list = Lista de lectura (Desde Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

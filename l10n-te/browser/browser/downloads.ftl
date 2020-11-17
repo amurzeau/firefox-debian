@@ -13,6 +13,12 @@ downloads-panel =
 
 ##
 
+# The style attribute has the width of the Downloads Panel expressed using
+# a CSS unit. The longest labels that should fit are usually those of
+# in-progress and blocked downloads.
+downloads-panel-list =
+    .style = width: 72ch
+
 downloads-cmd-pause =
     .label = నిలిపివుంచు
     .accesskey = P
@@ -28,11 +34,19 @@ downloads-cmd-cancel-panel =
 downloads-cmd-show-menuitem =
     .label = ఈ ఫైలు ఉన్న సంచయాన్ని తెరువు
     .accesskey = F
-  
+
 # This message is only displayed on macOS devices
 downloads-cmd-show-menuitem-mac =
     .label = ఫైండర్‌లో చూపించు
     .accesskey = F
+
+downloads-cmd-use-system-default =
+    .label = వ్యవస్థ దర్శనిలో తెరువు
+    .accesskey = V
+
+downloads-cmd-always-use-system-default =
+    .label = ఎల్లప్పుడూ వ్యవస్థ దర్శినిలో తెరువు
+    .accesskey = w
 
 downloads-cmd-show-button =
     .tooltiptext =

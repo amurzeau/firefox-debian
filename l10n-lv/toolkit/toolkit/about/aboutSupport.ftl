@@ -15,6 +15,9 @@ extensions-name = Nosaukums
 extensions-enabled = Ieslēgts
 extensions-version = Versija
 extensions-id = ID
+support-addons-name = Nosaukums
+support-addons-version = Versija
+support-addons-id = ID
 security-software-title = Drošības programmatūra
 security-software-type = Tips
 security-software-name = Nosaukums
@@ -75,8 +78,6 @@ graphics-workarounds-title = Pagaidu risinājumi
 place-database-title = Vietu datubāze
 place-database-integrity = Integritāte
 place-database-verify-integrity = Pārbaudīt integritāti
-js-title = JavaScript
-js-incremental-gc = Inkrementālais GC
 a11y-title = Pieejamība
 a11y-activated = Aktivizēta
 a11y-force-disabled = Neatļaut pieejamību
@@ -101,9 +102,7 @@ restart-in-safe-mode-label = Pārstartēt ar deaktivētiem papildinājumiem…
 
 audio-backend = Skaņas Backend
 max-audio-channels = Maksimālie kanāli
-channel-layout = Vēlamais kanālu izkārtojums
 sample-rate = Vēlamais kadra ātrums
-
 media-title = Multimēdijas
 media-output-devices-title = Izvades ierīces
 media-input-devices-title = Ievades ierīces
@@ -137,6 +136,7 @@ intl-regional-prefs = Reģiona iesatījumi
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -246,7 +246,6 @@ unknown-failure = Bloķēts; kļūdas kods { $failureCode }
 
 d3d11layers-crash-guard = D3D11 kompozitors
 d3d11video-crash-guard = D3D11 Video dekoderis
-d3d9video-crash-buard = D3D11 Video dekoderis
 d3d9video-crash-guard = D3D11 Video dekoderis
 glcontext-crash-guard = OpenGL
 

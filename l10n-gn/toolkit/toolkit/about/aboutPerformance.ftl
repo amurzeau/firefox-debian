@@ -26,7 +26,7 @@ type-subframe = Subframe
 type-tracker = Tapykuehohára
 type-addon = Tembipuru’i
 type-browser = Kundaha
-type-worker = Mba'apohára
+type-worker = Mba’apohára
 type-other = Ambue
 
 ## Values for the Energy Impact column
@@ -53,7 +53,7 @@ size-GB = { $value } GB
 close-tab =
     .title = Emboty tendayke
 show-addon =
-    .title = Ehechauka moimbaha ñangarekohápe
+    .title = Ehechauka moĩmbaha ñangarekohápe
 # Tooltip when hovering an item of the about:performance table
 # Variables:
 #   $totalDispatches (Number) - how many dispatches occurred for this page since it loaded

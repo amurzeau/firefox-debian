@@ -28,10 +28,6 @@ serviceworker-worker-unregister = Registrowanje skónčić
 serviceworker-worker-debug = Za zmylkami pytać
     .title = Jenož běžne service workers dadźa so za zmylkami přepytać
 
-# Text for the start link displayed for a registered but not running Service Worker.
-# Clicking on the link will attempt to start the service worker.
-serviceworker-worker-start = Startować
-
 # Text for the debug link displayed for an already started Service Worker, when we
 # are in multi e10s mode, which effectively disables this link.
 serviceworker-worker-debug-forbidden = Za zmylkami pytać
@@ -41,6 +37,14 @@ serviceworker-worker-debug-forbidden = Za zmylkami pytać
 # Clicking on the link will attempt to start the service worker.
 serviceworker-worker-start2 = Startować
     .title = Móže jenož service workers startować, jeli multiporcesowy e10s je znjemóžnjeny
+
+# Alt text for the image icon displayed inside a debug link for a service worker.
+serviceworker-worker-inspect-icon =
+    .alt = Přepytować
+
+# Text for the start link displayed for a registered but not running Service Worker.
+# Clicking on the link will attempt to start the service worker.
+serviceworker-worker-start3 = Start
 
 # Text displayed for the updated time of the service worker. The <time> element will
 # display the last update time of the service worker script.
@@ -62,10 +66,6 @@ serviceworker-worker-status-running = Běžace
 # Service Worker status. A stopped service worker is registered but not currently active.
 serviceworker-worker-status-stopped = Zastajeny
 
-# Service Worker status. A registering service worker is not yet registered and cannot be
-# started or debugged.
-serviceworker-worker-status-registering = Registrowanje
-
 # Text displayed when no service workers are visible for the current page. Clicking on the
 # link will open https://developer-mozilla-org/docs/Web/API/Service_Worker_API/Using_Service_Workers
 serviceworker-empty-intro = Dyrbiće service worker registrować, zo byšće jón tu přepytował. <a>Dalše informacije</a>
@@ -86,12 +86,33 @@ serviceworker-empty-suggestions-debugger = Přehladujće swoju registrowanje ser
 # Clicking on the link will open about:debugging in a new tab.
 serviceworker-empty-suggestions-aboutdebugging = Přepytujće service workers wot druhich domenow. <a>about:debugging wočinić</a>
 
+# Text displayed when no service workers are visible for the current page.
+serviceworker-empty-intro2 = Žadyn service worker namakany.
+
+# Link will open https://developer.mozilla.org/docs/Web/API/Service_Worker_API/Using_Service_Workers
+serviceworker-empty-intro-link = Dalše informacije
+
+# Text displayed when there are no Service Workers to display for the current page,
+# introducing hints to debug Service Worker issues.
+# <a> and <span> are links that will open the webconsole and the debugger, respectively.
+serviceworker-empty-suggestions2 = Hdy by aktualna strona service worker měła, móhł wy w <a>konsoli</a> za zmylkami pytać abo registraciju swojeho service worker w <span>pytanju za zmylkami</span> přeběžeć.
+
+# Suggestion to go to about:debugging in order to see Service Workers for all domains.
+# Link will open about:debugging in a new tab.
+serviceworker-empty-suggestions-aboutdebugging2 = Service worker z druhich domenow pokazać
+
 # Header for the Manifest page when we have an actual manifest
 manifest-view-header = Manifest nałoženja
 
 # Header for the Manifest page when there's no manifest to inspect
 # The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
 manifest-empty-intro = Dyrbiće manifest webnałoženja přidać, zo byšće jón tu přepruwował. <a>Dalše informacije</a>
+
+# Header for the Manifest page when there's no manifest to inspect
+manifest-empty-intro2 = Žadyn manifest webnałoženja namakany
+
+# The link will open https://developer.mozilla.org/en-US/docs/Web/Manifest
+manifest-empty-intro-link = Zhońće, kak móžeće manifest přidać
 
 # Header for the Errors and Warnings section of Manifest inspection displayed in the application panel.
 manifest-item-warnings = Zmylki a warnowanja

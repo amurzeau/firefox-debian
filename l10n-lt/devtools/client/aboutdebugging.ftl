@@ -104,9 +104,6 @@ about-debugging-setup-title = Sąranka
 about-debugging-setup-intro = Konfigūruokite prisijungimo būdą, kuriuo norite derinti savo įrenginį per nuotolį.
 
 # Explanatory text in the Setup page about what the 'This Firefox' page is for
-about-debugging-setup-this-firefox = Naudokite <a>„{ about-debugging-this-firefox-runtime-name }“</a>, norėdami su šia „{ -brand-shorter-name }“ laida derinti korteles, priedus, aptarnavimo scenarijus.
-
-# Explanatory text in the Setup page about what the 'This Firefox' page is for
 about-debugging-setup-this-firefox2 = Norėdami derinti priedus ir aptarnavimo scenarijus su šia „{ -brand-shorter-name }“ laida, naudokite <a>{ about-debugging-this-firefox-runtime-name }</a>.
 
 # Title of the heading Connect section of the Setup page.
@@ -226,14 +223,6 @@ about-debugging-runtime-service-workers-not-compatible = Jūsų naršyklės nuos
 about-debugging-browser-version-too-old = Prijungto įrenginio darinio laida ({ $runtimeVersion }) yra senesnė negu minimali palaikoma ({ $minVersion }). Tokia konfigūracija nėra palaikoma ir gali sukelti saityno kūrėjo priemonių sutrikimus. Atnaujinkite susieto įrenginio darinį. <a>Problemų sprendimas</a>
 
 # Dedicated message for a backward compatibility issue that occurs when connecting:
-# - from Fx 67 to 66 or to 65
-# - from Fx 68 to 66
-# Those are normally in range for DevTools compatibility policy, but specific non
-# backward compatible changes broke the debugger in those scenarios (Bug 1528219).
-# { $runtimeVersion } is the version of the remote browser (for instance "67.0a1")
-about-debugging-browser-version-too-old-67-debugger = Derintuvės polangis gali neveikti su prijungto įrenginio naršykle. Naudokite „Firefox“ { $runtimeVersion }, jeigu turite naudoti derintuvę su šia įrenginio naršykle.
-
-# Dedicated message for a backward compatibility issue that occurs when connecting:
 # from Fx 70+ to the old Firefox for Android (aka Fennec) which uses Fx 68.
 about-debugging-browser-version-too-old-fennec = Ši „Firefox“ laida negali būti naudojama „Firefox“ (68), skirtos „Android“, derinimui. Testavimui rekomenduojame savo telefone įdiegti „Firefox for Android Nightly“. <a>Daugiau informacijos</a>
 
@@ -327,15 +316,6 @@ about-debugging-extension-id =
 
 # This string is displayed as a label of the button that pushes a test payload
 # to a service worker.
-# Notes, this relates to the "Push" API, which is normally not localized so it is
-# probably better to not localize it.
-about-debugging-worker-action-push = Push
-
-# This string is displayed as a label of the button that starts a service worker.
-about-debugging-worker-action-start = Pradėti
-
-# This string is displayed as a label of the button that pushes a test payload
-# to a service worker.
 # Note this relates to the "Push" API, which is normally not localized so it is
 # probably better to not localize it.
 about-debugging-worker-action-push2 = Siųsti
@@ -380,6 +360,10 @@ about-debugging-worker-push-service =
 # Displayed as title of the inspect button when service worker debugging is disabled.
 about-debugging-worker-inspect-action-disabled =
     .title = Aptarnavimo scenarijų paleidimas daugiaprocesėje „{ -brand-shorter-name }“ šiuo metu išjungtas
+
+# Displayed as title of the inspect button for zombie tabs (e.g. tabs loaded via a session restore).
+about-debugging-zombie-tab-inspect-action-disabled =
+    .title = Kortelė yra nepilnai įkelta, ir negali būti tiriama
 
 # Displayed as name for the Main Process debug target in the Processes category. Only for
 # remote runtimes, if `devtools.aboutdebugging.process-debugging` is true.

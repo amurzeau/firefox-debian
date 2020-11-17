@@ -17,6 +17,12 @@ extensions-name = Emër
 extensions-enabled = I aktivizuar
 extensions-version = Version
 extensions-id = ID
+support-addons-title = Shtesa
+support-addons-name = Emër
+support-addons-type = Lloj
+support-addons-enabled = E aktivizuar
+support-addons-version = Version
+support-addons-id = ID
 security-software-title = Software Sigurie
 security-software-type = Lloj
 security-software-name = Emër
@@ -74,6 +80,12 @@ show-dir-label =
         [windows] Hape Dosjen
        *[other] Hape Drejtorinë
     }
+environment-variables-title = Ndryshore Mjedisi
+environment-variables-name = Emër
+environment-variables-value = Vlerë
+experimental-features-title = Veçori Eksperimentale
+experimental-features-name = Emër
+experimental-features-value = Vlerë
 modified-key-prefs-title = Parapëlqime të Rëndësishme të Ndryshuara
 modified-prefs-name = Emër
 modified-prefs-value = Vlerë
@@ -98,8 +110,6 @@ graphics-desktop-environment = Mjedis Desktop
 place-database-title = Bazë të Dhënash Vendesh
 place-database-integrity = Integritet
 place-database-verify-integrity = Verifikoni Integritetin
-js-title = JavaScript
-js-incremental-gc = GH Shtues
 a11y-title = Përdorshmëri
 a11y-activated = E aktivizuar
 a11y-force-disabled = Parandaloje Përdorshmërinë
@@ -127,7 +137,6 @@ restart-button-label = Rinise
 
 audio-backend = Mekanizëm Audio
 max-audio-channels = Kanale Maksimum
-channel-layout = Skemë e Parapëlqyer Për Kanalin
 sample-rate = Shpejtësi e Parapëlqyer Kampionizimesh
 roundtrip-latency = Vonesë vajtje-ardhje (shmangie standard)
 media-title = Media
@@ -264,11 +273,13 @@ blocklisted-bug = Vënë në listë të zezë, për shkak problemesh të njohura
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = e meta { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Shtuar në listë bllokimesh për shkak çështjesh të njohura: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Vënë në listë të zezë, kod dështimi { $failureCode }
 d3d11layers-crash-guard = Hartues D3D11
 d3d11video-crash-guard = Shkodues Videosh D3D11
-d3d9video-crash-buard = Shkodues Videosh D3D9
 d3d9video-crash-guard = Shkodues Videosh D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Shkodues Videosh WMF VPX
@@ -313,6 +324,15 @@ multi-process-status-6 = Çaktivizuar për shkak futje teksti të pambuluar
 multi-process-status-7 = Çaktivizuar nga shtesat
 multi-process-status-8 = Çaktivizuar forcërisht
 multi-process-status-unknown = Gjendje e panjohur
+fission-status-experiment-control = Çaktivizuar nga eksperiment
+fission-status-experiment-treatment = Aktivizuar nga eksperiment
+fission-status-disabled-by-e10s-env = Çaktivizuar nga mjedisi
+fission-status-enabled-by-env = Aktivizuar nga mjedisi
+fission-status-disabled-by-safe-mode = Çaktivizuar nga mënyra e parrezik
+fission-status-enabled-by-default = Aktivizuar si parazgjedhje
+fission-status-disabled-by-default = Çaktivizuar si parazgjedhje
+fission-status-enabled-by-user-pref = Aktivizuar nga përdoruesi
+fission-status-disabled-by-user-pref = Çaktivizuar nga përdoruesi
 async-pan-zoom = Pan/Zoom Asinkron
 apz-none = asnjë
 wheel-enabled = me input nga rrotëz miu
@@ -332,3 +352,12 @@ touch-warning = input asinkron me prekje i çaktivizuar, për shkak parapëlqimi
 policies-inactive = Joaktiv
 policies-active = Aktiv
 policies-error = Gabim
+
+## Printing section
+
+support-printing-title = Po shtypet
+support-printing-troubleshoot = Diagnostikim
+support-printing-clear-settings-button = Spastro rregullimet e ruajtura për shtypjet
+support-printing-modified-settings = U ndryshuan rregullime shtypjeje
+support-printing-prefs-name = Emër
+support-printing-prefs-value = Vlerë

@@ -28,7 +28,7 @@ screenshots-notification-image-copied-details = Eilet eo bet ho tapadenn er golv
 screenshots-request-error-title = Degouezhet ez eus bet ur fazi.
 screenshots-request-error-details = Digarezit! N'haller ket enrollañ ho tapadenn. Klaskit en-dro diwezhatoc'h.
 
-screenshots-connection-error-title = N'haller ket adkennaskañ d'ho tapadennoù-skramm.
+screenshots-connection-error-title = Ne c'haller ket adkennaskañ d'ho tapadennoù-skramm.
 screenshots-connection-error-details = Gwiriekait ho kennask kenrouedad. Ma 'z hoc'h gouest da gennaskañ ouzh ar genrouedad e c'hall bezañ abalamour d'ur gudenn gant ar gwazerezhioù { -screenshots-brand-name }.
 
 screenshots-login-error-details = N'haller ket enrollañ ho tapadenn dre ma 'z eus bet ur gudenn gant ar gwazerezh { -screenshots-brand-name }. Klaskit en-dro diwezhatoc'h.

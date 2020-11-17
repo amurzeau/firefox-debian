@@ -49,7 +49,11 @@ newtab-topsites-add-button = Προσθήκη
 
 newtab-confirm-delete-history-p1 = Θέλετε σίγουρα να διαγράψετε κάθε παρουσία της σελίδας αυτής από το ιστορικό σας;
 # "This action" refers to deleting a page from history.
-newtab-confirm-delete-history-p2 = Αυτή η ενέργεια δεν μπορεί να αναιρεθεί.
+newtab-confirm-delete-history-p2 = Δεν είναι δυνατή η αναίρεση αυτής της ενέργειας.
+
+## Top Sites - Sponsored label
+
+newtab-topsite-sponsored = Χορηγία
 
 ## Context Menu - Action Tooltips.
 

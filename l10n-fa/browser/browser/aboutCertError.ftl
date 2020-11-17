@@ -4,7 +4,7 @@
 
 # Variables:
 # $hostname (String) - Hostname of the website with cert error.
-cert-error-intro = { $hostname } از یک گواهی امنیتی نامعتبر استفاده می‌کند.
+cert-error-intro = { $hostname } از یک گواهینامه امنیتی نامعتبر استفاده می‌کند.
 
 cert-error-mitm-intro = وب‌سایت‌ها هویت خود را از طریق گواهی‌هایی که توسط مراجع صدور گواهی دیجیتال ارائه می‌شود، اثبات می‌کنند.
 
@@ -80,6 +80,12 @@ cert-error-details-key-pinning-label = HTTP Public Key Pinning: { $hasHPKP }
 
 cert-error-details-cert-chain-label = زنجیره گواهی:
 
+open-in-new-window-for-csp-or-xfo-error = گشودن پایگاه در پنجرهٔ جدید
+
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = در صورتی که سایت دیگری در صفحه جاسازی شده باشد، به منظور حفظ امنیت شما، { $hostname } اجازه نمی‌دهد تا { -brand-short-name } صفحه را نمایش دهد. برای مشاهده این صفحه، باید پنجره جدیدی باز کنید.
+
 ## Messages used for certificate error titles
 
 connectionFailure-title = قادر به برقراری اتصال نیست
@@ -107,7 +113,7 @@ proxyResolveFailure-title = کارگزار پیشکار پیدا نشد
 redirectLoop-title = این صفحه درست تغییر مسیر نمی‌دهد
 unknownSocketType-title = جواب غیرمنتظره از کارگزار
 nssFailure2-title = برقراری اتصال ایمن شکست خورد
-cspBlocked-title = مسدود شده بنا بر سیاست امنیتی محتوا
+csp-xfo-error-title = ‫{ -brand-short-name } نمی‌تواند این صفحه را بگشاید
 corruptedContentError-title = خطای خرابی محتوا
 remoteXUL-title = XUL راه دور
 sslv3Used-title = قادر به برقراری اتصال امن نمیباشد
@@ -117,3 +123,4 @@ clockSkewError-title = ساعت رایانه شما اشتباه است
 networkProtocolError-title = خطای پروتکل شبکه
 nssBadCert-title = هشدار: خطر امنیتی نهفته در پیش است
 nssBadCert-sts-title = متصل نشد: مشکل امنیتی بالقوه
+certerror-mitm-title = نرم‌افزار نمی‌گذارد { -brand-short-name } به طور امن به این پایگاه وصل شود

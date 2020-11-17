@@ -53,12 +53,13 @@ move-to-end =
 move-to-new-window =
     .label = Przenieś do nowego okna
     .accesskey = o
-undo-close-tab =
-    .label = Przywróć zamkniętą kartę
-    .accesskey = a
 tab-context-close-multiple-tabs =
     .label = Zamknij wiele kart
     .accesskey = w
+
+## Variables:
+##  $tabCount (Number): the number of tabs that are affected by the action.
+
 tab-context-undo-close-tabs =
     .label =
         { $tabCount ->
@@ -79,4 +80,22 @@ move-tabs =
     .accesskey = r
 move-tab =
     .label = Przenieś kartę
+    .accesskey = r
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Zamknij kartę
+            [one] Zamknij kartę
+            [few] Zamknij karty
+           *[many] Zamknij karty
+        }
+    .accesskey = Z
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] Przenieś kartę
+            [one] Przenieś kartę
+            [few] Przenieś karty
+           *[many] Przenieś karty
+        }
     .accesskey = r

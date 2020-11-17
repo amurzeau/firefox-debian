@@ -4,6 +4,11 @@
 
 tag-dialog-window =
     .title = Nuovo tag
+
 tag-name-label =
-    .value = Nome dell'etichetta:
+    .value = Nome dell’etichetta:
     .accesskey = N
+
+tag-color-label =
+    .value = Colore:
+    .accesskey = C

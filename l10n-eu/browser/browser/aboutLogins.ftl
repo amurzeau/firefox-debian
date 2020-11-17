@@ -1,11 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Saio-hasierak eta pasahitzak
@@ -127,15 +122,18 @@ about-logins-copy-password-os-auth-dialog-message-win = Zure pasahitza kopiatzek
 # This message can be seen when attempting to copy a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-copy-password-os-auth-dialog-message-macosx = kopiatu gordetako pasahitza
+
+## Master Password notification
+
+master-password-notification-message = Idatzi zure pasahitz nagusia gordetako saio-hasiera eta pasahitzak ikusteko
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Zure saio-hasierak esportatzeko, idatzi Windowseko zure saio-hasiera kredentzialak. Zure kontuen segurtasuna babesten laguntzen du honek.
 # This message can be seen when attempting to export a password in about:logins
 # On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
 about-logins-export-password-os-auth-dialog-message-macosx = esportatu gordetako saio-hasiera eta pasahitzak
 
-## Master Password notification
+## Primary Password notification
 
-master-password-notification-message = Idatzi zure pasahitz nagusia gordetako saio-hasiera eta pasahitzak ikusteko
 master-password-reload-button =
     .label = Hasi saioa
     .accesskey = H
@@ -213,6 +211,17 @@ about-logins-export-file-picker-export-button = Esportatu
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
 about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV dokumentua
+       *[other] CSV fitxategia
+    }
+
+## Login Import Dialog
+
+about-logins-import-file-picker-import-button = Inportatu
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
     { PLATFORM() ->
         [macos] CSV dokumentua
        *[other] CSV fitxategia

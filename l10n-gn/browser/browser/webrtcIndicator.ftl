@@ -19,5 +19,22 @@ webrtc-microphone-button =
     .title = Ne ñe’ẽatãha oñemoherakuãhína. Eikutu ehechasérõ mba’éichapa emoherakuã.
 webrtc-camera-button =
     .title = Ne ra’ãngamýi oñemoherakuãhína. Eikutu ehechasérõ mba’éichapa emoherakuã.
+webrtc-microphone-unmuted =
+    .title = Embogue ñe’ẽatãha
+webrtc-microphone-muted =
+    .title = Emyandy ñe’ẽatãha
+webrtc-camera-unmuted =
+    .title = Embogue ta’ãngamýi
+webrtc-camera-muted =
+    .title = Emyandy ta’ãngamýi
 webrtc-minimize =
     .title = Emomichĩ jehechaukaha
+# This string will display as a tooltip on supported systems where we show
+# device sharing state in the OS notification area. We do not use these strings
+# on macOS, as global menu bar items do not have native tooltips.
+webrtc-camera-system-menu =
+    .label = Emoherakuãhína ta’ãngamýi. Eikutu ha ehecha ijepuru ambue ndive.
+webrtc-microphone-system-menu =
+    .label = Emoherakuãhína ñe’ẽatãha. Eikutu ha ehecha ijepuru ambue ndive.
+webrtc-screen-system-menu =
+    .label = Emoherakuãhína tendayke térã mba’erechaha. Eikutu ha ehecha ijepuru ambue ndive.

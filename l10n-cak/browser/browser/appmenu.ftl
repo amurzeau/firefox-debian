@@ -5,9 +5,8 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = Richinanem Chajinem
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = Tatz'eta' ri ichinan rutzijol
+appmenuitem-update-banner =
+    .label-update-downloading = Niqasäx ruk'exoj { -brand-shorter-name }
 appmenuitem-protection-dashboard-title = Rupas taq Chajinïk
 appmenuitem-customize-mode =
     .label = Tichinäx…
@@ -27,6 +26,7 @@ fxa-toolbar-sync-now =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Achike natzijoj
+
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

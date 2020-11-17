@@ -52,6 +52,8 @@ about-paragraph = Thunderbird on johtava avoimen lähdekoodin ja kaikkien alusto
 about-paragraph-2 = <b>Thunderbirdia rahoittavat sinun kaltaisesi käyttäjät! Jos pidät Thunderbirdista, harkitse lahjoituksen tekemistä.</b> Paras tapa varmistaa Thunderbirdin saatavuus on
 about-donation = tehdä lahjoitus
 
+about-paragraph-consider-donation = <b>Thunderbirdia rahoittavat kaltaisesi käyttäjät! Jos Thunderbird on mieleesi, harkitse lahjoituksen antamista.</b> Paras tapa taata Thunderbirdin olemassaolo on <a data-l10n-name="donation-link"> tehdä lahjoitus</a>.
+
 explore-link = Tutustu ominaisuuksiin
 support-link = Tuki
 involved-link = Tule mukaan

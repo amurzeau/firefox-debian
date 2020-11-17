@@ -53,6 +53,9 @@ no-migration-sources = Ulac aseɣẓan i igebren ticraḍ n yisebtar, azray, ne�
 import-source-page-title = Aktar n iɣewwaṛen d isefka
 import-items-page-title = Iferdisen ara yettwaketren
 import-items-description = Fren iferdisen ara yettwaketren:
+import-permissions-page-title = Ma ulac aɣilif, mudd tisirag i { -brand-short-name }
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS yesra ad tsirgeḍ s uwekked n tidet { -brand-short-name } ad yekcem ɣer tecraḍ n yisebtar n Safari. sit ɣef “Kemmel” syen ɣef ufaylu “Bookmarks.plist” deg ugalis n twaledyawt n yifuyla i d-ibanen.
 import-migrating-page-title = Aktar…
 import-migrating-description = Iferdisen-a la d-ttwaktaren akka tura…
 import-select-profile-page-title = Fren amaɣnu
@@ -88,6 +91,7 @@ imported-edge-reading-list = Tabdart n tɣuṛi (seg Safari)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

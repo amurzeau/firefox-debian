@@ -53,6 +53,9 @@ no-migration-sources = Aucun logiciel contenant des marque-pages, un historique 
 import-source-page-title = Importation des paramètres et des données
 import-items-page-title = Éléments à importer
 import-items-description = Sélectionnez les éléments à importer :
+import-permissions-page-title = Veuillez accorder les autorisations à { -brand-short-name }
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS vous demande d’autoriser explicitement { -brand-short-name } à accéder aux marque-pages de Safari. Cliquez sur « Continuer » et sélectionnez le fichier « Bookmarks.plist » dans le panneau d’ouverture de fichier qui apparaît.
 import-migrating-page-title = Importation…
 import-migrating-description = Les éléments suivants sont en cours d’importation…
 import-select-profile-page-title = Sélectionner un profil
@@ -88,6 +91,7 @@ imported-edge-reading-list = Liste de lecture (depuis Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

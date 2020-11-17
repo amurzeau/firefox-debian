@@ -2,6 +2,10 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
+<!ENTITY % brandDTD
+    SYSTEM "chrome://branding/locale/brand.dtd">
+  %brandDTD;
+
 <!ENTITY playButton.playLabel "Oynat">
 <!ENTITY playButton.pauseLabel "Duraklat">
 <!ENTITY muteButton.muteLabel "Sesi kapat">
@@ -18,18 +22,14 @@
 the Picture-in-Picture video toggle button when the mouse is hovering it. -->
 <!ENTITY pictureInPicture.label "Görüntü içinde görüntü">
 
-<!ENTITY stats.media "Ortam">
-<!ENTITY stats.size "Boyut">
-<!ENTITY stats.activity "Etkinlik">
-<!ENTITY stats.activityPaused "Duraklatıldı">
-<!ENTITY stats.activityPlaying "Oynatılıyor">
-<!ENTITY stats.activityEnded "Bitti">
-<!ENTITY stats.activitySeeking "(sarılıyor)">
-<!ENTITY stats.volume "Ses">
-<!ENTITY stats.framesParsed "İşlenen kare">
-<!ENTITY stats.framesDecoded "Çözülen kare">
-<!ENTITY stats.framesPresented "Sunulan kare">
-<!ENTITY stats.framesPainted "Çizilen kare">
+<!-- LOCALIZATION NOTE (pictureInPictureToggle.label): This string is used as the
+label for a variation of the Picture-in-Picture video toggle button when the mouse is
+hovering over the video. -->
+<!ENTITY pictureInPictureToggle.label "Görüntü içinde görüntü modunda izle">
+<!-- LOCALIZATION NOTE (pictureInPictureExplainer): This string is used as part of
+a variation of the Picture-in-Picture video toggle button. When using this variation,
+this string appears below the toggle when the mouse hovers the toggle. -->
+<!ENTITY pictureInPictureExplainer "&brandShortName; ile başka şeyler yaparken videoları ön planda oynatın">
 
 <!ENTITY error.aborted "Video yükleme durduruldu.">
 <!ENTITY error.network "Bir ağ hatası nedeniyle video oynatması iptal edildi.">
@@ -39,13 +39,6 @@ the Picture-in-Picture video toggle button when the mouse is hovering it. -->
 <!ENTITY error.generic "Bilinmeyen bir hata nedeniyle video oynatma iptal edildi.">
 
 <!ENTITY status.pictureInPicture "Bu video, görüntü içinde görüntü modunda oynatılıyor.">
-
-<!-- LOCALIZATION NOTE (scrubberScale.nameFormat): the #1 string is the current
-media position, and the #2 string is the total duration. For example, when at
-the 5 minute mark in a 6 hour long video, #1 would be "5:00" and #2 would be
-"6:00:00", result string would be "5:00 of 6:00:00 elapsed".
--->
-<!ENTITY scrubberScale.nameFormat "#1 / #2">
 
 <!-- LOCALIZATION NOTE (positionAndDuration.nameFormat): the #1 string is the current
 media position, and the #2 string is the total duration. For example, when at

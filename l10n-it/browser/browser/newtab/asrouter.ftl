@@ -2,9 +2,13 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+## These messages are used as headings in the recommendation doorhanger
+
 cfr-doorhanger-extension-heading = Estensione consigliata
 cfr-doorhanger-feature-heading = Funzione consigliata
 cfr-doorhanger-pintab-heading = Prova questo: appunta scheda
+
+##
 
 cfr-doorhanger-extension-sumo-link =
     .tooltiptext = Perché viene visualizzato questo messaggio
@@ -12,16 +16,16 @@ cfr-doorhanger-extension-sumo-link =
 cfr-doorhanger-extension-cancel-button = Non adesso
     .accesskey = N
 
+cfr-doorhanger-extension-ok-button = Aggiungi
+    .accesskey = A
+cfr-doorhanger-pintab-ok-button = Appunta questa scheda
+    .accesskey = A
+
 cfr-doorhanger-extension-manage-settings-button = Gestisci impostazioni suggerimenti
     .accesskey = G
 
 cfr-doorhanger-extension-never-show-recommendation = Non visualizzare suggerimenti
     .accesskey = v
-
-cfr-doorhanger-extension-ok-button = Aggiungi
-    .accesskey = A
-cfr-doorhanger-pintab-ok-button = Appunta questa scheda
-    .accesskey = A
 
 cfr-doorhanger-extension-learn-more-link = Ulteriori informazioni
 
@@ -67,6 +71,7 @@ cfr-doorhanger-extension-total-users =
 cfr-doorhanger-pintab-description = Accedi facilmente ai siti web che utilizzi più spesso. Mantieni i siti aperti in una scheda (anche quando riavvii).
 
 ## These messages are steps on how to use the feature and are shown together.
+
 cfr-doorhanger-pintab-step1 = <b>Fai clic con il tasto destro</b> sulla scheda da appuntare.
 cfr-doorhanger-pintab-step2 = Seleziona <b>Appunta scheda</b> nel menu.
 cfr-doorhanger-pintab-step3 = Quando i contenuti del sito vengono aggiornati, un punto blu apparirà sulla scheda.
@@ -74,12 +79,21 @@ cfr-doorhanger-pintab-step3 = Quando i contenuti del sito vengono aggiornati, un
 cfr-doorhanger-pintab-animation-pause = Metti in pausa
 cfr-doorhanger-pintab-animation-resume = Riprendi
 
+
+## Firefox Accounts Message
+
 cfr-doorhanger-bookmark-fxa-header = Sincronizza ovunque i tuoi segnalibri
 cfr-doorhanger-bookmark-fxa-body = Ottima scoperta. Assicurati di non restare senza questo segnalibro sul tuo dispositivo mobile. Crea un { -fxaccount-brand-name }.
 cfr-doorhanger-bookmark-fxa-link-text = Sincronizza subito i segnalibri…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
   .aria-label = Pulsante di chiusura
   .title = Chiudi
+
+## Protections panel
+
+cfr-protections-panel-header = Naviga senza lasciarti seguire
+cfr-protections-panel-body = Mantieni i tuoi dati al riparo da occhi indiscreti. { -brand-short-name } ti protegge dagli elementi traccianti più comuni che cercano di seguire le tue attività online.
+cfr-protections-panel-link-text = Ulteriori informazioni
 
 ## What's New toolbar button and panel
 
@@ -97,6 +111,7 @@ cfr-whatsnew-release-notes-link-text = Leggi le note di versione
 
 cfr-whatsnew-fx70-title = { -brand-short-name } si batte ancora più duramente per la tua privacy
 cfr-whatsnew-fx70-body = L’ultimo aggiornamento rende la protezione antitracciamento più efficace e ti permette di creare password sicure per qualunque sito in modo semplice.
+
 cfr-whatsnew-tracking-protect-title = Proteggiti dal tracciamento
 cfr-whatsnew-tracking-protect-body = { -brand-short-name } blocca molti dei traccianti social e intersito più comuni che cercano di seguire ciò che fai online.
 cfr-whatsnew-tracking-protect-link-text = Visualizza il tuo rapporto personalizzato
@@ -129,7 +144,7 @@ cfr-whatsnew-searchbar-icon-alt-text = Icona lente d’ingrandimento
 ## Picture-in-Picture
 
 cfr-whatsnew-pip-header = Guarda i tuoi video mentre navighi
-cfr-whatsnew-pip-body = La funzione picture-in-picture permette di spostare i video in una finestra separata che puoi posizionare come preferisci. In questo modo potrai continuare a guardarli mentre lavori in altre schede.
+cfr-whatsnew-pip-body = La funzione Picture-in-Picture permette di spostare i video in una finestra separata che puoi posizionare come preferisci. In questo modo potrai continuare a guardarli mentre lavori in altre schede.
 cfr-whatsnew-pip-cta = Ulteriori informazioni
 
 ## Permission Prompt
@@ -148,11 +163,11 @@ cfr-whatsnew-fingerprinter-counter-header =
     [one] Fingerprinter bloccato
    *[other] Fingerprinter bloccati
   }
-cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } blocca molti fingerprinter che, in segreto, raccolgono informazioni sul tuo dispositivo e sulle tue azioni online. Questi dati vengono utilizzati per creare un tuo profilo e mostrarti pubblicità mirate.
+cfr-whatsnew-fingerprinter-counter-body = { -brand-shorter-name } blocca molti fingerprinter che, di nascosto, raccolgono informazioni sul tuo dispositivo e sulle tue azioni online. Questi dati vengono utilizzati per creare un tuo profilo e mostrarti pubblicità mirate.
 
 # Message variation when fingerprinters count is less than 10
 cfr-whatsnew-fingerprinter-counter-header-alt = Fingerprinter
-cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } può bloccare i fingerprinter che, in segreto, raccolgono informazioni sul tuo dispositivo e sulle tue azioni online. Questi dati vengono utilizzati per creare un tuo profilo e mostrarti pubblicità mirate.
+cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } può bloccare i fingerprinter che, di nascosto, raccolgono informazioni sul tuo dispositivo e sulle tue azioni online. Questi dati vengono utilizzati per creare un tuo profilo e mostrarti pubblicità mirate.
 
 ## Bookmark Sync
 
@@ -198,12 +213,6 @@ cfr-doorhanger-fingerprinters-description = La tua privacy è importante. Adesso
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } ha bloccato un cryptominer in questa pagina
 cfr-doorhanger-cryptominers-description = La tua privacy è importante. Adesso { -brand-short-name } blocca i cryptominer, elementi che utilizzano le risorse del tuo sistema per effettuare il “mining” di valute digitali.
 
-## Protections panel
-
-cfr-protections-panel-header = Naviga senza lasciarti seguire
-cfr-protections-panel-body = Mantieni i tuoi dati al riparo da occhi indiscreti. { -brand-short-name } ti protegge dagli elementi traccianti più comuni che cercano di seguire le tue attività online.
-cfr-protections-panel-link-text = Ulteriori informazioni
-
 ## Enhanced Tracking Protection Milestones
 
 # Variables:
@@ -213,12 +222,15 @@ cfr-doorhanger-milestone-heading = { -brand-short-name } ha bloccato oltre <b>{ 
 cfr-doorhanger-milestone-ok-button = Visualizza tutto
   .accesskey = V
 
+cfr-doorhanger-milestone-close-button = Chiudi
+  .accesskey = C
+
 ## What’s New Panel Content for Firefox 76
 
 ## Lockwise message
 
 cfr-whatsnew-lockwise-header = Crea password sicure in modo semplice
-cfr-whatsnew-lockwise-body = Trovare una password unica e sicura per ogni account è complicato. Quando hai bisogno di creare una nuova password, seleziona l'opzione nel campo della password per utilizzarne una sicura, generata automaticamente da { -brand-shorter-name }.
+cfr-whatsnew-lockwise-body = Trovare una password unica e sicura per ogni account è complicato. Quando hai bisogno di creare una nuova password, seleziona l’opzione nel campo della password per utilizzarne una sicura, generata automaticamente da { -brand-shorter-name }.
 cfr-whatsnew-lockwise-icon-alt = Icona di { -lockwise-brand-short-name }
 
 ## Vulnerable Passwords message
@@ -229,9 +241,9 @@ cfr-whatsnew-passwords-icon-alt = Icona di una chiave per password vulnerabile
 
 ## Picture-in-Picture fullscreen message
 
-cfr-whatsnew-pip-fullscreen-header = Usa picture-in-picture a schermo intero
+cfr-whatsnew-pip-fullscreen-header = Usa Picture-in-Picture a schermo intero
 cfr-whatsnew-pip-fullscreen-body = Dopo aver trasferito il video in una finestra separata, ora puoi fare doppio clic sulla finestra per visualizzarla a schermo intero.
-cfr-whatsnew-pip-fullscreen-icon-alt = Icona di picture-in-picture
+cfr-whatsnew-pip-fullscreen-icon-alt = Icona di Picture-in-Picture
 
 ## Protections Dashboard message
 
@@ -244,3 +256,33 @@ cfr-whatsnew-protections-icon-alt = Icona dello scudo
 
 cfr-whatsnew-better-pdf-header = Esperienza migliore con i PDF
 cfr-whatsnew-better-pdf-body = Adesso è possibile aprire i documenti PDF direttamente in { -brand-short-name }, senza intralciare il tuo flusso di lavoro.
+
+## DOH Message
+
+cfr-doorhanger-doh-body = La tua privacy è importante. { -brand-short-name } ora indirizza in modo sicuro le richieste DNS, quando possibile, a un servizio fornito da un partner per proteggerti durante la navigazione.
+cfr-doorhanger-doh-header = Ricerche DNS più sicure e crittate
+cfr-doorhanger-doh-primary-button = OK, ricevuto
+  .accesskey = O
+cfr-doorhanger-doh-secondary-button = Disattiva
+  .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = La tua privacy è importante. Ora { -brand-short-name } isola i siti web l’uno dall’altro, rendendo più difficile il furto di password, numeri di carte di credito e altre informazioni sensibili da parte di hacker.
+cfr-doorhanger-fission-header = Isolamento dei siti
+cfr-doorhanger-fission-primary-button = OK, ricevuto
+  .accesskey = O
+cfr-doorhanger-fission-secondary-button = Ulteriori informazioni
+  .accesskey = U
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = Protezione automatica contro subdole tecniche di tracciamento
+cfr-whatsnew-clear-cookies-body = Alcuni elementi traccianti ti reindirizzano su altri siti web che, di nascosto, impostano cookie nel browser. Adesso { -brand-short-name } elimina automaticamente questi cookie, impedendogli di seguirti.
+cfr-whatsnew-clear-cookies-image-alt = Illustrazione cookie bloccati
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Più controlli multimediali
+cfr-whatsnew-media-keys-body = Riproduci o metti in pausa audio e video usando direttamente la tastiera o le cuffie. In questo modo è facile gestire contenuti multimediali da un’altra scheda, un altro programma, o perfino quando il computer è bloccato. Puoi anche spostarti da una traccia all’altra usando i tasti avanti e indietro.
+cfr-whatsnew-media-keys-button = Scopri come

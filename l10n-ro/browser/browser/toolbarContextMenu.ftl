@@ -17,8 +17,14 @@ toolbar-context-menu-bookmark-selected-tabs =
 toolbar-context-menu-select-all-tabs =
     .label = Selectează toate filele
     .accesskey = S
-toolbar-context-menu-undo-close-tab =
-    .label = Anulează închiderea filei
+toolbar-context-menu-undo-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] Anulează închiderea filelor
+            [one] Anulează închiderea filei
+            [few] Anulează închiderea filelor
+           *[other] Anulează închiderea filelor
+        }
     .accesskey = U
 
 toolbar-context-menu-manage-extension =

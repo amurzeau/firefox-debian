@@ -1,10 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = ログインとパスワード
@@ -34,6 +30,7 @@ menu =
   .title = メニューを開きます
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = 他のブラウザーからインポート...
+about-logins-menu-menuitem-import-from-a-file = ファイルからインポート...
 about-logins-menu-menuitem-export-logins = ログイン情報をエクスポート...
 menu-menuitem-preferences =
   { PLATFORM() ->
@@ -70,12 +67,16 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = 保存したログイン情報をお探しですか？ { -sync-brand-short-name } を設定しましょう。
+
+about-logins-login-intro-heading-logged-out = 保存したログイン情報をお探しですか？ { -sync-brand-short-name } を設定するか、インポートしましょう。
 about-logins-login-intro-heading-logged-in = 同期したログイン情報はありません。
 login-intro-description = 別の端末の { -brand-product-name } に保存したログイン情報は、以下の手順で取得できます:
 login-intro-instruction-fxa = ログイン情報を保存した端末で { -fxaccount-brand-name } を作成、またはログインしてください
 login-intro-instruction-fxa-settings = { -sync-brand-short-name } の設定のログイン情報のチェックボックスが選択されているか確認してください
 about-logins-intro-instruction-help = <a data-l10n-name="help-link">{ -lockwise-brand-short-name } サポート</a> で詳細なヘルプを確認できます
-about-logins-intro-import = 他のブラウザーでログイン情報を保存した場合は、<a data-l10n-name="import-link">そちらから { -lockwise-brand-short-name } にインポート</a>できます。
+about-logins-intro-import = 他のブラウザーでログイン情報を保存した場合は、<a data-l10n-name="import-link">そちらから { -lockwise-brand-short-name } にインポートできます</a>。
+
+about-logins-intro-import2 = { -brand-product-name } 以外のブラウザーでログイン情報を保存した場合は、<a data-l10n-name="import-browser-link">そのブラウザーから</a> または <a data-l10n-name="import-file-link">ファイルから</a> インポートできます。
 
 ## Login
 
@@ -137,6 +138,10 @@ about-logins-export-password-os-auth-dialog-message-macosx = 保存したログ�
 ## Master Password notification
 
 master-password-notification-message = 保存したログイン情報とパスワードを確認するには、マスターパスワードを入力してください
+
+## Primary Password notification
+
+about-logins-primary-password-notification-message = 保存したログイン情報とパスワードを確認するには、マスターパスワードを入力してください
 master-password-reload-button =
   .label = ログイン
   .accesskey = L
@@ -219,3 +224,12 @@ about-logins-export-file-picker-export-button = エクスポート
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
 about-logins-export-file-picker-csv-filter-title = CSV ファイル
+
+## Login Import Dialog
+
+# Title of the file picker dialog
+about-logins-import-file-picker-title = ログイン情報ファイルをインポート
+about-logins-import-file-picker-import-button = インポート
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title = CSV ファイル

@@ -5,9 +5,8 @@
 
 ## App Menu
 
-appmenuitem-protection-report-title = Schutzmaßnahmen
-appmenuitem-protection-report-tooltip =
-    .tooltiptext = Bericht zu Schutzmaßnahmen für Datenschutz öffnen
+appmenuitem-update-banner =
+    .label-update-downloading = { -brand-shorter-name }-Update wird heruntergeladen
 appmenuitem-protection-dashboard-title = Schutzmaßnahmen-Übersicht
 appmenuitem-customize-mode =
     .label = Anpassen…
@@ -27,6 +26,7 @@ fxa-toolbar-sync-now =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Neue Funktionen und Änderungen
+
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

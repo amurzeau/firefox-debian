@@ -18,6 +18,8 @@
 <!ENTITY newListCmd.accesskey                           "D">
 <!ENTITY newAddressBookCmd.label                        "Sổ địa chỉ…">
 <!ENTITY newAddressBookCmd.accesskey                    "S">
+<!ENTITY newCardDAVBookCmd.label                        "Sổ địa chỉ CardDAV…">
+<!ENTITY newCardDAVBookCmd.accesskey                    "V">
 <!ENTITY newLDAPDirectoryCmd.label                      "Thư mục LDAP…">
 <!ENTITY newLDAPDirectoryCmd.accesskey                  "L">
 <!ENTITY newMessageCmd.label                            "Thư">
@@ -44,38 +46,14 @@
 <!-- Edit Menu -->
 <!ENTITY editMenu.label                                 "Chỉnh sửa">
 <!ENTITY editMenu.accesskey                             "E">
-<!ENTITY undoCmd.label                                  "Hoàn tác">
-<!ENTITY undoCmd.key                                    "Z">
-<!ENTITY undoCmd.accesskey                              "H">
-<!ENTITY redoCmd.label                                  "Làm lại">
-<!ENTITY redoCmd.key                                    "Y">
-<!ENTITY redoCmd.accesskey                              "L">
-<!ENTITY cutCmd.label                                   "Cắt">
-<!ENTITY cutCmd.key                                     "X">
-<!ENTITY cutCmd.accesskey                               "t">
-<!ENTITY copyCmd.label                                  "Sao chép">
-<!ENTITY copyCmd.key                                    "C">
-<!ENTITY copyCmd.accesskey                              "C">
-<!ENTITY pasteCmd.label                                 "Dán">
-<!ENTITY pasteCmd.key                                   "V">
-<!ENTITY pasteCmd.accesskey                             "D">
 <!ENTITY deleteCmd.label                                "Xóa">
-<!ENTITY deleteCmd.accesskey                            "X">
 <!ENTITY deleteAbCmd.label                              "Xóa sổ địa chỉ">
 <!ENTITY deleteContactCmd.label                         "Xóa Danh Bạ">
 <!ENTITY deleteContactsCmd.label                        "Xóa Danh Bạ">
 <!ENTITY deleteListCmd.label                            "Xóa danh sách">
 <!ENTITY deleteListsCmd.label                           "Xóa các danh sách">
 <!ENTITY deleteItemsCmd.label                           "Xóa Các Mục">
-<!ENTITY selectAllCmd.label                             "Chọn tất cả">
-<!ENTITY selectAllCmd.key                               "A">
 <!ENTITY searchAddressesCmd.key                         "f">
-<!ENTITY selectAllCmd.accesskey                         "B">
-<!ENTITY swapFirstNameLastNameCmd.label                 "Hoán chuyển Tên/Họ">
-<!ENTITY swapFirstNameLastNameCmd.accesskey             "w">
-<!-- LOCALIZATION NOTE (hideSwapFnLnUI) : DONT_TRANSLATE -->
-<!-- Swap FN/LN UI  Set to "false" to show swap fn/ln UI -->
-<!ENTITY hideSwapFnLnUI "true">
 <!ENTITY propertiesMenu.label                           "Thuộc tính">
 <!ENTITY propertiesMenu.accesskey                       "i">
 <!ENTITY propertiesCmd.key                              "i">
@@ -124,9 +102,6 @@ because displayed names don't have the comma in between. -->
 <!ENTITY messengerCmd.label                             "Thư &amp; nhóm tin">
 <!ENTITY messengerCmd.accesskey                         "T">
 <!ENTITY messengerCmd.commandkey                        "1">
-<!ENTITY addressBookCmd.label                           "Sổ địa chỉ">
-<!ENTITY addressBookCmd.accesskey                       "a">
-<!ENTITY addressBookCmd.key                             "B">
 <!ENTITY searchAddressesCmd.label                       "Tìm kiếm địa chỉ…">
 <!ENTITY searchAddressesCmd.accesskey                   "m">
 <!ENTITY importCmd.label                                "Nhập…">
@@ -150,6 +125,8 @@ because displayed names don't have the comma in between. -->
 <!ENTITY propertiesContext.accesskey                    "i">
 <!ENTITY abPropertiesContext.label                      "Thuộc tính">
 <!ENTITY abPropertiesContext.accesskey                  "i">
+<!ENTITY syncContext.label                              "Đồng bộ hoá">
+<!ENTITY syncContext.accesskey                          "y">
 <!ENTITY editContactContext.label                       "Chỉnh sửa liên hệ">
 <!ENTITY editContactContext.accesskey                   "E">
 <!ENTITY editMailingListContext.label                   "Chỉnh sửa danh sách">

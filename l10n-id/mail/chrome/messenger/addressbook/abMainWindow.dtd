@@ -18,6 +18,8 @@
 <!ENTITY newListCmd.accesskey                           "M">
 <!ENTITY newAddressBookCmd.label                        "Buku Alamat…">
 <!ENTITY newAddressBookCmd.accesskey                    "B">
+<!ENTITY newCardDAVBookCmd.label                        "Buku Alamat CardDAV…">
+<!ENTITY newCardDAVBookCmd.accesskey                    "V">
 <!ENTITY newLDAPDirectoryCmd.label                      "Direktori LDAP…">
 <!ENTITY newLDAPDirectoryCmd.accesskey                  "D">
 <!ENTITY newMessageCmd.label                            "Pesan">
@@ -44,38 +46,23 @@
 <!-- Edit Menu -->
 <!ENTITY editMenu.label                                 "Ubah">
 <!ENTITY editMenu.accesskey                             "h">
-<!ENTITY undoCmd.label                                  "Batal">
-<!ENTITY undoCmd.key                                    "Z">
-<!ENTITY undoCmd.accesskey                              "B">
-<!ENTITY redoCmd.label                                  "Ulangi">
-<!ENTITY redoCmd.key                                    "Y">
-<!ENTITY redoCmd.accesskey                              "U">
-<!ENTITY cutCmd.label                                   "Potong">
-<!ENTITY cutCmd.key                                     "X">
-<!ENTITY cutCmd.accesskey                               "P">
-<!ENTITY copyCmd.label                                  "Salin">
-<!ENTITY copyCmd.accesskey                              "S">
-<!ENTITY pasteCmd.label                                 "Tempel">
-<!ENTITY pasteCmd.key                                   "V">
-<!ENTITY pasteCmd.accesskey                             "T">
 <!ENTITY deleteCmd.label                                "Hapus">
-<!ENTITY deleteCmd.accesskey                            "H">
 <!ENTITY deleteAbCmd.label                              "Hapus Buku Alamat">
 <!ENTITY deleteContactCmd.label                         "Hapus Data Kenalan">
 <!ENTITY deleteContactsCmd.label                        "Hapus Data Kenalan">
 <!ENTITY deleteListCmd.label                            "Hapus Daftar">
 <!ENTITY deleteListsCmd.label                           "Hapus Daftar">
 <!ENTITY deleteItemsCmd.label                           "Hapus Item">
-<!ENTITY selectAllCmd.label                             "Pilih Semua">
-<!ENTITY selectAllCmd.key                               "A">
 <!ENTITY searchAddressesCmd.key                         "f">
-<!ENTITY selectAllCmd.accesskey                         "a">
-<!ENTITY swapFirstNameLastNameCmd.label                 "Tukar Urutan Nama Depan/Belakang">
-<!ENTITY swapFirstNameLastNameCmd.accesskey             "u">
-<!-- LOCALIZATION NOTE (hideSwapFnLnUI) : DONT_TRANSLATE -->
-<!-- Swap FN/LN UI  Set to "false" to show swap fn/ln UI -->
-<!ENTITY hideSwapFnLnUI "true">
+<!ENTITY propertiesMenu.label                           "Properti">
+<!ENTITY propertiesMenu.accesskey                       "i">
+<!ENTITY propertiesCmd.key                              "i">
+<!ENTITY abPropertiesMenu.label                         "Properti Buku Alamat">
+<!ENTITY abPropertiesMenu.accesskey                     "i">
 <!ENTITY contactPropertiesMenu.label                    "Properti Kontak">
+<!ENTITY contactPropertiesMenu.accesskey                "i">
+<!ENTITY mailingListPropertiesMenu.label                "Properti Milis">
+<!ENTITY mailingListPropertiesMenu.accesskey            "i">
 
 <!-- View Menu -->
 <!ENTITY viewMenu.label                                 "Tampilan">
@@ -122,6 +109,7 @@ because displayed names don't have the comma in between. -->
 <!ENTITY exportCmd.label                                "Ekspor…">
 <!ENTITY exportCmd.accesskey                            "E">
 <!ENTITY preferencesCmd2.label                          "Opsi">
+<!ENTITY preferencesCmd2.accesskey                      "O">
 <!ENTITY preferencesCmdUnix.label                       "Pengaturan">
 <!ENTITY preferencesCmdUnix.accesskey                   "P">
 
@@ -130,10 +118,17 @@ because displayed names don't have the comma in between. -->
 <!ENTITY newContactButton.accesskey                     "K">
 <!ENTITY newlistButton.label                            "Daftar Baru">
 <!ENTITY newlistButton.accesskey                        "D">
+<!ENTITY showAsDefault.label                            "Direktori startup tetap">
+<!ENTITY showAsDefault.accesskey                        "S">
 <!ENTITY editPropertiesButton.label                     "Sunting">
 <!ENTITY propertiesContext.label                        "Properti">
+<!ENTITY propertiesContext.accesskey                    "i">
 <!ENTITY abPropertiesContext.label                      "Properti">
+<!ENTITY abPropertiesContext.accesskey                  "i">
+<!ENTITY syncContext.label                              "Selaraskan">
+<!ENTITY syncContext.accesskey                          "y">
 <!ENTITY editContactContext.label                       "Sunting Kontak">
+<!ENTITY editContactContext.accesskey                   "E">
 <!ENTITY editMailingListContext.label                   "Sunting Daftar">
 <!ENTITY editMailingListContext.accesskey               "E">
 <!ENTITY newmsgButton.label                             "Tulis">
@@ -141,15 +136,18 @@ because displayed names don't have the comma in between. -->
 <!ENTITY newIM.label                                    "Pesan Instan">
 <!ENTITY newIM.accesskey                                "I">
 <!ENTITY printButton.label                              "Cetak…">
+<!ENTITY printButton.accesskey                          "r">
 <!ENTITY deleteButton2.label                            "Hapus">
 <!ENTITY deleteButton2.accesskey                        "H">
 
 <!-- Address Book Toolbar Tooltips -->
+<!ENTITY columnChooser.tooltip                          "Pilih kolom untuk ditampilkan">
 <!ENTITY newContactButton.tooltip                       "Buat data kenalan baru">
 <!ENTITY newlistButton.tooltip                          "Buat daftar alamat baru">
 <!ENTITY editPropertiesButton.tooltip                   "Ubah item terpilih">
 <!ENTITY editAbPropertiesButton.tooltip                 "Sunting properti dari buku alamat yang dipilih">
 <!ENTITY editContactPropertiesButton.tooltip            "Sunting kontak terpilih">
+<!ENTITY editMailingListPropertiesButton.tooltip        "Sunting milis yang dipilih">
 <!ENTITY newmsgButton.tooltip                           "Kirim email">
 <!ENTITY newIM.tooltip                                  "Kirim pesan instan atau chatting">
 <!ENTITY deleteButton2.tooltip                          "Hapus item terpilih">
@@ -163,6 +161,7 @@ because displayed names don't have the comma in between. -->
 
 <!-- Results Pane -->
 <!ENTITY Addrbook.label                                 "Buku Alamat">
+<!ENTITY Addrbook.accesskey                             "B">
 <!ENTITY GeneratedName.label                            "Nama">
 <!ENTITY GeneratedName.accesskey                        "N">
 <!ENTITY PrimaryEmail.label                             "Email">
@@ -181,7 +180,7 @@ because displayed names don't have the comma in between. -->
 <!ENTITY JobTitle.accesskey                             "P">
 <!ENTITY CellularNumber.label                           "Handphone">
 <!ENTITY CellularNumber.accesskey                       "H">
-<!ENTITY PagerNumber.label                              "Pager">
+<!ENTITY PagerNumber.label                              "Penyeranta">
 <!ENTITY PagerNumber.accesskey                          "P">
 <!ENTITY FaxNumber.label                                "Fax">
 <!ENTITY FaxNumber.accesskey                            "F">

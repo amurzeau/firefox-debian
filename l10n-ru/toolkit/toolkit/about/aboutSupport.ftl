@@ -14,6 +14,12 @@ extensions-name = Имя
 extensions-enabled = Включено
 extensions-version = Версия
 extensions-id = ID
+support-addons-title = Дополнения
+support-addons-name = Имя
+support-addons-type = Тип
+support-addons-enabled = Включено
+support-addons-version = Версия
+support-addons-id = ID
 security-software-title = Программы обеспечения безопасности
 security-software-type = Тип
 security-software-name = Наименование
@@ -59,6 +65,7 @@ app-basics-service-workers = Зарегистрированные Service Worker
 app-basics-profiles = Профили
 app-basics-launcher-process-status = Запускающий процесс
 app-basics-multi-process-support = Многопроцессные окна
+app-basics-fission-support = Окна Fission
 app-basics-remote-processes-count = Удалённые процессы
 app-basics-enterprise-policies = Корпоративные политики
 app-basics-location-service-key-google = Ключ Службы определения местоположения от Google
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] Открыть папку
        *[other] Открыть каталог
     }
+environment-variables-title = Переменные среды
+environment-variables-name = Имя
+environment-variables-value = Значение
+experimental-features-title = Экспериментальные возможности
+experimental-features-name = Название
+experimental-features-value = Значение
 modified-key-prefs-title = Важные изменённые настройки
 modified-prefs-name = Имя
 modified-prefs-value = Значение
@@ -95,8 +108,6 @@ graphics-desktop-environment = Среда рабочего стола
 place-database-title = База данных Places
 place-database-integrity = Целостность
 place-database-verify-integrity = Проверить целостность
-js-title = JavaScript
-js-incremental-gc = Инкрементальный GC
 a11y-title = Поддержка доступности
 a11y-activated = Активирована
 a11y-force-disabled = Отключение поддержки доступности
@@ -126,7 +137,6 @@ restart-button-label = Перезапустить
 
 audio-backend = Звуковая подсистема
 max-audio-channels = Максимальное число каналов
-channel-layout = Предпочтительный формат каналов
 sample-rate = Предпочтительная частота дискретизации
 roundtrip-latency = Круговая задержка (стандартное отклонение)
 media-title = Медиа
@@ -268,11 +278,13 @@ blocklisted-bug = Заблокировано из-за известных про
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = проблема { $bugNumber }
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Занесено в чёрный список из-за известных проблем: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Заблокировано; код ошибки { $failureCode }
 d3d11layers-crash-guard = Композитор D3D11
 d3d11video-crash-guard = Видеодекодер D3D11
-d3d9video-crash-buard = Видеодекодер D3D9
 d3d9video-crash-guard = Видеодекодер D3D9
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = Видеодекодер WMF VPX
@@ -320,6 +332,20 @@ multi-process-status-6 = Отключены неподдерживаемым с�
 multi-process-status-7 = Отключены дополнениями
 multi-process-status-8 = Принудительно отключены
 multi-process-status-unknown = Статус неизвестнен
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Отключены экспериментом
+fission-status-experiment-treatment = Включены экспериментом
+fission-status-disabled-by-e10s-env = Отключены средой
+fission-status-enabled-by-env = Включены средой
+fission-status-disabled-by-safe-mode = Отключены безопасным режимом
+fission-status-enabled-by-default = Включены по умолчанию
+fission-status-disabled-by-default = Отключены по умолчанию
+fission-status-enabled-by-user-pref = Включены пользователем
+fission-status-disabled-by-user-pref = Отключены пользователем
+fission-status-disabled-by-e10s-other = E10s отключено
 async-pan-zoom = Асинхронное панорамирование/зум
 apz-none = нет
 wheel-enabled = включён ввод колесиком
@@ -340,3 +366,12 @@ touch-warning = асинхронный сенсорный ввод отключ�
 policies-inactive = Неактивны
 policies-active = Активны
 policies-error = Ошибка
+
+## Printing section
+
+support-printing-title = Печать
+support-printing-troubleshoot = Решение проблем
+support-printing-clear-settings-button = Удалить сохранённые настройки печати
+support-printing-modified-settings = Изменённые настройки печати
+support-printing-prefs-name = Имя
+support-printing-prefs-value = Значение

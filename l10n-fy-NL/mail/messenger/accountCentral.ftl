@@ -52,6 +52,8 @@ about-paragraph = Thunderbird is de liedende iepen boarne, platfoarmûnôfhinkli
 about-paragraph-2 = <b>Thunderbird wurdt finansjearre troch brûkers as jo! As jo fan Thunderbird hâlde, oerweagje dan in donaasje.</b> De beste manier om derfoar te soargjen dat Thunderbird beskikber bliuwt, is troch
 about-donation = in donaasje te dwaan
 
+about-paragraph-consider-donation = <b>Thunderbird wurdt finansearre troch brûkers lykas jo! As jo wol oer Thunderbird meie, tink dan ris nei oer in donaasje.</b> De bêste manier om derfoar te soargjen dat Thunderbird beskikber bliuwt, is <a data-l10n-name="donation-link">in donaasje dwaan.</a>
+
 explore-link = Funksjes ferkenne
 support-link = Stipe
 involved-link = Meiwurkje

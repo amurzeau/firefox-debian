@@ -15,6 +15,9 @@ extensions-name = Maa
 extensions-enabled = Tunante
 extensions-version = Dumi
 extensions-id = ID
+support-addons-name = Maa
+support-addons-version = Dumi
+support-addons-id = ID
 features-title = { -brand-short-name } alhaaley
 features-name = Maa
 features-version = Dumi
@@ -68,8 +71,6 @@ graphics-workarounds-title = Šendaykuubiyan
 place-database-title = Nungey bayrayhay hugu
 place-database-integrity = Timmeyan
 place-database-verify-integrity = Timmeyan koroši
-js-title = JavaScript
-js-incremental-gc = Tonton cindi-kurmakaw
 a11y-title = Duwandiyan
 a11y-activated = Dirante
 a11y-force-disabled = Duuyan ganji
@@ -90,6 +91,7 @@ audio-backend = Jinde bendoo
 
 ##
 
+
 ## Remote Debugging
 ##
 ## The Firefox remote protocol provides low-level debugging interfaces
@@ -98,6 +100,7 @@ audio-backend = Jinde bendoo
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -189,7 +192,6 @@ unknown-failure = Gagayante; kayyan ašariya { $failureCode }
 
 d3d11layers-crash-guard = D3D11 teekaw
 d3d11video-crash-guard = D3D11 widewo feerandikaw
-d3d9video-crash-buard = D3D9 widewo feerandikaw
 d3d9video-crash-guard = D3D9 widewo feerandikaw
 glcontext-crash-guard = OpenGL
 

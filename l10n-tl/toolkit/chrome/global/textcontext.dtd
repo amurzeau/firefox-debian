@@ -2,19 +2,6 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY cutCmd.label "I-cut">
-<!ENTITY cutCmd.accesskey "t">
-<!ENTITY copyCmd.label "Kopyahin">
-<!ENTITY copyCmd.accesskey "c">
-<!ENTITY pasteCmd.label "i-Paste">
-<!ENTITY pasteCmd.accesskey "p">
-<!ENTITY undoCmd.label "i-Undo">
-<!ENTITY undoCmd.accesskey "I">
-<!ENTITY selectAllCmd.label "Piliin Lahat">
-<!ENTITY selectAllCmd.accesskey "L">
-<!ENTITY deleteCmd.label "Delete">
-<!ENTITY deleteCmd.accesskey "D">
-
 <!ENTITY spellAddToDictionary.label "Idagdag sa Diksyunaryo">
 <!ENTITY spellAddToDictionary.accesskey "o">
 <!ENTITY spellUndoAddToDictionary.label "I-undo ang Idinagdag sa Diksyunaryo">
@@ -27,11 +14,11 @@
 
 <!ENTITY searchTextBox.clear.label "Burahin">
 
-<!ENTITY fillLoginMenu.label          "Pakipunan ang Login">
+<!ENTITY fillLoginMenu.label          "Maglagay ng Login">
 <!ENTITY fillLoginMenu.accesskey      "F">
 <!ENTITY fillPasswordMenu.label       "Maglagay ng Password">
 <!ENTITY fillPasswordMenu.accesskey   "F">
 <!ENTITY fillUsernameMenu.label       "Maglagay ng Username">
 <!ENTITY fillUsernameMenu.accesskey   "F">
 <!ENTITY noLoginSuggestions.label     "(Walang Iminumungkahing Login)">
-<!ENTITY viewSavedLogins.label        "Tignan ang Naka-save na Logins">
+<!ENTITY viewSavedLogins.label        "Tingnan ang mga Naka-save na Login">

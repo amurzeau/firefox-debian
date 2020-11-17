@@ -161,9 +161,9 @@ cfr-doorhanger-sync-logins-ok-button = 开启{ -sync-brand-short-name }
 
 ## Send Tab
 
-cfr-doorhanger-send-tab-header = 通勤路上阅读这篇文章
+cfr-doorhanger-send-tab-header = 通勤路上再来读
 cfr-doorhanger-send-tab-recipe-header = 把这篇食谱带到厨房
-cfr-doorhanger-send-tab-body = 标签页发送功能可轻松把网页发到手机上打开，任何登录了{ -brand-product-name }服务的设备也都支持。
+cfr-doorhanger-send-tab-body = 标签页发送功能可轻松把网页发到手机上，或是登录了 { -brand-product-name } 的任何设备。
 cfr-doorhanger-send-tab-ok-button = 试试标签页发送功能
     .accesskey = T
 
@@ -200,6 +200,8 @@ cfr-doorhanger-milestone-heading =
     }
 cfr-doorhanger-milestone-ok-button = 查看全部
     .accesskey = S
+cfr-doorhanger-milestone-close-button = 关闭
+    .accesskey = C
 
 ## What’s New Panel Content for Firefox 76
 
@@ -233,3 +235,35 @@ cfr-whatsnew-protections-icon-alt = 盾牌图标
 
 cfr-whatsnew-better-pdf-header = 更佳的 PDF 体验
 cfr-whatsnew-better-pdf-body = PDF 文档现可直接在 { -brand-short-name } 中打开，让您的工作流程更顺畅。
+
+## DOH Message
+
+cfr-doorhanger-doh-body = 隐私是公民的基本权利。{ -brand-short-name } 现在会尽可能使用合作伙伴提供的一项服务处理您的 DNS 请求，让您上网更安全。
+cfr-doorhanger-doh-header = 更安全、经加密的 DNS 查询
+cfr-doorhanger-doh-primary-button = 好，知道了
+    .accesskey = O
+cfr-doorhanger-doh-secondary-button = 禁用
+    .accesskey = D
+
+## Fission Experiment Message
+
+cfr-doorhanger-fission-body-approved = 隐私是公民的基本权利。现在起，{ -brand-short-name } 会将您打开的网站相互隔离或沙盒化，使黑客更难窃取您的密码、信用卡号或其他敏感信息。
+cfr-doorhanger-fission-header = 网站隔离
+cfr-doorhanger-fission-primary-button = 好，知道了
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = 详细了解
+    .accesskey = L
+# Deprecated
+cfr-doorhanger-fission-body = { -brand-short-name } 已为您启用 Fission（网站隔离）实验特性。通过将每个网站隔离到单独的进程中，为您和您访问的网站提供额外的保护。
+
+## What's new: Cookies message
+
+cfr-whatsnew-clear-cookies-header = 自动保护，拒绝跟踪
+cfr-whatsnew-clear-cookies-body = 有些跟踪器会偷偷将您重定向至设置 Cookie 进行跟踪的网站。{ -brand-short-name } 现在起，会自动清除这些 Cookie 让您不被跟踪。
+cfr-whatsnew-clear-cookies-image-alt = 拦截 Cookie 图示
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = 更多媒体控制
+cfr-whatsnew-media-keys-body = 直接用键盘或耳机播放/暂停音视频，从而可以轻松地在其他标签页及别的程序，甚至在计算机锁定时控制媒体。您也可以使用前进和后退键调整进度条。
+cfr-whatsnew-media-keys-button = 了解如何操作

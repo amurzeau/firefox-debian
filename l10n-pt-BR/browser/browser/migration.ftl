@@ -53,13 +53,16 @@ no-migration-sources = Não foi encontrado nenhum programa com informações de 
 import-source-page-title = Importar dados e configurações
 import-items-page-title = Itens a importar
 import-items-description = Selecione que itens importar:
+import-permissions-page-title = Dê permissões ao { -brand-short-name }
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = O macOS exige que você explicitamente dê permissão ao { -brand-short-name } para acessar os favoritos do Safari. Clique em “Continuar” e selecione o arquivo “Bookmarks.plist” no painel de abrir arquivo que aparece.
 import-migrating-page-title = Importando…
 import-migrating-description = Estes itens estão sendo importados…
 import-select-profile-page-title = Selecionar perfil
 import-select-profile-description = Estes perfis estão disponíveis para importação:
 import-done-page-title = Importação concluída
 import-done-description = Estes itens foram importados com êxito:
-import-close-source-browser = Verifique se o navegador selecionado está fechado antes de continuar.
+import-close-source-browser = Certifique-se de que o navegador selecionado esteja fechado antes de continuar.
 # Displays which browser the bookmarks are being imported from
 #
 # Variables:
@@ -88,6 +91,7 @@ imported-edge-reading-list = Lista de leitura (do Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

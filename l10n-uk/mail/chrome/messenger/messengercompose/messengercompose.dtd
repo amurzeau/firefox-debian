@@ -3,14 +3,14 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!--LOCALIZATION NOTE messengercompose.dtd Main UI for message composition -->
-<!ENTITY msgComposeWindow.title "Написання листа: (без теми)">
+<!ENTITY msgComposeWindow.title "Написання повідомлення: (без теми)">
 
 <!-- File Menu -->
 <!ENTITY fileMenu.label "Файл">
 <!ENTITY fileMenu.accesskey "Ф">
 <!ENTITY newMenu.label "Новий">
 <!ENTITY newMenu.accesskey "Н">
-<!ENTITY newMessage.label "Лист">
+<!ENTITY newMessage.label "Повідомлення">
 <!ENTITY newMessage.key "M">
 <!ENTITY newMessageCmd2.key "N">
 <!ENTITY newMessage.accesskey "Л">
@@ -23,7 +23,7 @@
 <!ENTITY attachFileCmd.key "A">
 <!ENTITY attachCloudCmd.label "Filelink">
 <!ENTITY attachCloudCmd.accesskey "i">
-<!ENTITY attachPageCmd.label "Веб-сторінку…">
+<!ENTITY attachPageCmd.label "Вебсторінку…">
 <!ENTITY attachPageCmd.accesskey "е">
 <!--LOCALIZATION NOTE attachVCardCmd.label Don't translate the term 'vCard' -->
 <!ENTITY attachVCardCmd.label "Візитну картку (vCard)">
@@ -67,15 +67,9 @@
 <!ENTITY redoCmd.label "Повторити">
 <!ENTITY redoCmd.key "Y">
 <!ENTITY redoCmd.accesskey "т">
-<!ENTITY cutCmd.label "Вирізати">
 <!ENTITY cutCmd.key "X">
-<!ENTITY cutCmd.accesskey "и">
-<!ENTITY copyCmd.label "Копіювати">
 <!ENTITY copyCmd.key "C">
-<!ENTITY copyCmd.accesskey "п">
-<!ENTITY pasteCmd.label "Вставити">
 <!ENTITY pasteCmd.key "V">
-<!ENTITY pasteCmd.accesskey "т">
 <!ENTITY pasteNoFormattingCmd.key "V">
 <!ENTITY pasteAsQuotationCmd.key "o">
 <!ENTITY editRewrapCmd.accesskey "ф">
@@ -90,10 +84,7 @@
 <!ENTITY reorderAttachmentsCmd.key "x">
 <!ENTITY toggleAttachmentPaneCmd.label "Панель вкладень">
 <!ENTITY toggleAttachmentPaneCmd.accesskey "в">
-<!ENTITY toggleAttachmentPaneCmd.key "m">
-<!ENTITY selectAllCmd.label "Виділити все">
 <!ENTITY selectAllCmd.accesskey "с">
-<!ENTITY selectAllCmd.key "A">
 <!ENTITY findBarCmd.label "Знайти…">
 <!ENTITY findBarCmd.accesskey "З">
 <!ENTITY findBarCmd.key "F">
@@ -136,7 +127,7 @@
 <!ENTITY viewToolbarsMenuNew.accesskey "н">
 <!ENTITY menubarCmd.label "Панель меню">
 <!ENTITY menubarCmd.accesskey "м">
-<!ENTITY showCompositionToolbarCmd.label "Панель інструментів написання листа">
+<!ENTITY showCompositionToolbarCmd.label "Панель інструментів написання повідомлень">
 <!ENTITY showCompositionToolbarCmd.accesskey "н">
 <!ENTITY showFormattingBarCmd.label "Панель форматування">
 <!ENTITY showFormattingBarCmd.accesskey "ф">
@@ -161,7 +152,7 @@
 <!ENTITY checkSpellingCmd2.accesskey "г">
 <!ENTITY enableInlineSpellChecker.label "Перевірка орфографії під час набору тексту">
 <!ENTITY enableInlineSpellChecker.accesskey "б">
-<!ENTITY quoteCmd.label "Цитувати лист">
+<!ENTITY quoteCmd.label "Цитувати повідомлення">
 <!ENTITY quoteCmd.accesskey "Ц">
 
 <!--LOCALIZATION NOTE attachVCard.label Don't translate the term 'vCard' -->
@@ -237,34 +228,23 @@
 <!-- Mail Toolbar Tooltips -->
 <!ENTITY sendButton.tooltip "Надіслати це повідомлення зараз">
 <!ENTITY sendlaterButton.tooltip "Надіслати це повідомлення пізніше">
-<!ENTITY quoteButton.tooltip "Цитувати попереднй лист">
+<!ENTITY quoteButton.tooltip "Цитувати попереднє повідомлення">
 <!ENTITY addressButton.tooltip "Вибрати адресата з адресної книги">
 <!ENTITY attachButton.tooltip2 "Додати вкладення">
-<!ENTITY spellingButton.tooltip "Перевірити правопис вибірки чи всього листа">
-<!ENTITY saveButton.tooltip "Зберегти цей лист">
+<!ENTITY spellingButton.tooltip "Перевірити правопис вибраного чи всього повідомлення">
+<!ENTITY saveButton.tooltip "Зберегти це повідомлення">
 <!ENTITY cutButton.tooltip              "Вирізати">
 <!ENTITY copyButton.tooltip             "Копіювати">
 <!ENTITY pasteButton.tooltip            "Вставити">
 <!ENTITY printButton.tooltip "Друкувати це повідомлення">
 
 <!-- Headers -->
-<!--LOCALIZATION NOTE headersSpace.style is for aligning  the From:, To: and
-    Subject: rows. It should be larger than the largest Header label  -->
-<!ENTITY headersSpace.style "width: 9em;">
-<!ENTITY fromAddr.label "Від:">
 <!--LOCALIZATION NOTE headersSpaces.style is for aligning  the From:, To: and
     Subject: rows. It should be larger than the largest Header label  -->
 <!ENTITY headersSpace2.style "width: 8em;">
 <!ENTITY extraRecipients.tooltip "Інші типи адресних полів">
 <!ENTITY fromAddr2.label "Від">
 <!ENTITY fromAddr.accesskey "д">
-<!ENTITY toAddr.label "Кому:">
-<!ENTITY ccAddr.label "Копія:">
-<!ENTITY bccAddr.label "Прих. копія:">
-<!ENTITY replyAddr.label "Зворотна адреса:">
-<!ENTITY newsgroupsAddr.label "Група новин:">
-<!ENTITY followupAddr.label "Продовжити в:">
-<!ENTITY subject.label "Тема:">
 <!ENTITY toAddr2.label "Кому">
 <!ENTITY ccAddr2.label "Копія">
 <!ENTITY bccAddr2.label "Прихована копія">
@@ -273,14 +253,6 @@
 <!ENTITY followupAddr2.label "Продовжити в">
 <!ENTITY subject2.label "Тема">
 <!ENTITY subject.accesskey "Т">
-<!-- LOCALIZATION NOTE (attachments.accesskey) This access key character should
-     be taken from the strings of attachmentCount in composeMsgs.properties.
-     Please ensure that this access key is unique: Do not duplicate any other
-     first-level access keys of the compose window, e.g. those of main menu,
-     buttons, or labels (message headers, contacts side bar, attachment reminder
-     bar). -->
-<!ENTITY attachments.accesskey "В">
-<!ENTITY attachmentBucketHeader.tooltip "Панель вкладень">
 <!ENTITY attachmentBucketCloseButton.tooltip "Сховати панель вкладень">
 
 <!-- Format Toolbar, imported from editorAppShell.xhtml -->
@@ -344,7 +316,7 @@
 <!ENTITY cancelUpload.accesskey "к">
 <!ENTITY convertRegularAttachment.label "Звичайне вкладення">
 <!ENTITY convertRegularAttachment.accesskey "в">
-<!ENTITY attachPage.label "Вкласти веб-сторінку…">
+<!ENTITY attachPage.label "Вкласти вебсторінку…">
 <!ENTITY attachPage.accesskey "е">
 
 <!-- Attachment Pane Header Bar Context Menu -->

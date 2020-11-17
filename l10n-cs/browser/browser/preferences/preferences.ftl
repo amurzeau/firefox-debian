@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = Jen pokud je zapnuto blokování nalezených sledovacích prvků
 do-not-track-option-always =
     .label = Vždy
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] Možnosti
-           *[other] Předvolby
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] Možnosti
@@ -50,6 +44,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = Experimenty { -brand-short-name(case: "gen") }
+category-experimental =
+    .tooltiptext = Experimenty { -brand-short-name(case: "gen") }
+pane-experimental-subtitle = Tady pozor!
+pane-experimental-search-results-header = Experimenty { -brand-short-name(case: "gen") }: Postupujte obezřetně!
+pane-experimental-description = Změny v pokročilé konfiguraci mohou negativně ovlivnit výkon a bezpečnost aplikace { -brand-short-name }.
 help-button-label =
     { -brand-short-name.gender ->
         [masculine] Nápověda { -brand-short-name(case: "gen") }
@@ -112,6 +112,9 @@ extension-controlled-homepage-override = Vaši domovskou stránku spravuje rozš
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = Stránku v novém panelu spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = Toto nastavení spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = Toto nastavení spravuje rozšíření <img data-l10n-name="icon"/> { $name }.
@@ -465,13 +468,6 @@ update-application-warning-cross-user-setting =
 update-application-use-service =
     .label = K instalaci aktualizací použít službu na pozadí
     .accesskey = b
-update-enable-search-update =
-    .label = Automaticky aktualizovat vyhledávače
-    .accesskey = e
-update-pref-write-failure-title = Chyba při zápisu
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Vaše předvolby se nepodařilo uložit. Není možný zápis do souboru: { $path }
 update-setting-write-failure-title = Chyba při ukládání nastavení aktualizací
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -622,7 +618,6 @@ home-prefs-topsites-description = Nejnavštěvovanější stránky
 
 home-prefs-recommended-by-header =
     .label = Doporučení ze služby { $provider }
-home-prefs-recommended-by-description = Skvělý obsah z celého webu, vybraný speciálně pro vás
 home-prefs-recommended-by-description-update = Výjimečný obsah z celého internetu, vybraný službou { $provider }
 
 ##
@@ -675,7 +670,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = Přidat na lištu vyhledávací pole
 search-engine-default-header = Výchozí vyhledávač
-search-engine-default-desc = Vyberte výchozí vyhledávač pro hledání z adresního řádku nebo vyhledávacího pole.
 search-engine-default-desc-2 = Vyberte si výchozí vyhledávač pro adresní řádek i vyhledávací pole.
 search-engine-default-private-desc-2 = Vyberte odlišný výchozí vyhledávač pro použití v režimu anonymního prohlížení.
 search-separate-default-engine =
@@ -698,7 +692,6 @@ search-show-suggestions-above-history-option =
     .label = Našeptávat vyhledávání v adresním řádku nad stránkami z historie prohlížení
 search-show-suggestions-private-windows =
     .label = Našeptávat vyhledávání také v anonymních oknech
-suggestions-addressbar-settings = Nastavit našeptávání z historie prohlížení, záložek a otevřených panelů
 suggestions-addressbar-settings-generic = Změnit předvolby našeptávání v adresním řádku
 search-suggestions-cant-show =
     Návrhy vyhledávání se nebudou adresním řádku zobrazovat, protože jste { -brand-short-name.gender ->
@@ -713,6 +706,7 @@ search-suggestions-cant-show =
        *[other] nepamatovala
     } historii.
 search-one-click-header = Vyhledávání jedním klepnutím
+search-one-click-header2 = Zkratky vyhledávání
 search-one-click-desc = Vyberte další vyhledávače, které se zobrazí v nabídce adresního řádku a vyhledávacího pole.
 search-choose-engine-column =
     .label = Vyhledávač
@@ -724,6 +718,9 @@ search-restore-default =
 search-remove-engine =
     .label = Odebrat
     .accesskey = r
+search-add-engine =
+    .label = Přidat
+    .accesskey = P
 search-find-more-link = Přidat další vyhledávače
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -735,7 +732,6 @@ search-keyword-warning-bookmark = Zvolili jste klíčové slovo, které už je p
 
 ## Containers Section
 
-containers-back-link = « Jít zpět
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -754,20 +750,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = Odstranit
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Vezměte si web s sebou
 sync-signedout-description = Synchronizujte své záložky, historii, panely, hesla, doplňky a předvolby ve všech svých zařízeních.
-sync-signedout-account-title = Propojit s { -fxaccount-brand-name(case: "ins", capitalization: "lower") }
-sync-signedout-account-create = Nemáte účet? Začněte tady
-    .accesskey = t
-sync-signedout-account-signin =
-    .label = Přihlásit se…
-    .accesskey = i
 sync-signedout-account-signin2 =
     .label = Přihlášení k { -sync-brand-short-name(case: "dat") }…
     .accesskey = i
@@ -781,16 +768,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = Stáhněte si Firefox pro <img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a> nebo <img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a> a synchronizujte svá data se svým mobilním zařízením.
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = Změnit profilový obrázek
-sync-disconnect =
-    .label = Odpojit…
-    .accesskey = d
 sync-sign-out =
     .label = Odhlásit se…
     .accesskey = O
@@ -807,8 +788,6 @@ sync-remove-account =
 sync-sign-in =
     .label = Přihlásit se
     .accesskey = i
-sync-signedin-settings-header = Nastavení synchronizace
-sync-signedin-settings-desc = Vyberte, co má { -brand-short-name } na vašich zařízeních synchronizovat.
 
 ## Sync section - enabling or disabling sync.
 
@@ -861,10 +840,6 @@ sync-engine-tabs =
     .label = Otevřené panely
     .tooltiptext = Seznam panelů otevřených v ostatních zařízeních
     .accesskey = t
-sync-engine-logins =
-    .label = Přihlašovací údaje
-    .tooltiptext = Uložená uživatelská jména a hesla
-    .accesskey = l
 sync-engine-logins-passwords =
     .label = Přihlašovací údaje
     .tooltiptext = Uložená uživatelská jména a hesla
@@ -907,18 +882,10 @@ sync-device-name-save =
     .label = Uložit
     .accesskey = l
 sync-connect-another-device = Připojit další zařízení
-sync-manage-devices = Správa zařízení
-sync-fxa-begin-pairing = Připojit zařízení
-sync-tos-link = Podmínky poskytování služby
-sync-fxa-privacy-notice = Zásady ochrany osobních údajů
 
 ## Privacy Section
 
 privacy-header = Nastavení soukromí
-
-## Privacy Section - Forms
-
-logins-header = Přihlašovací údaje
 
 ## Privacy Section - Logins and Passwords
 
@@ -949,10 +916,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = Použít hlavní heslo
     .accesskey = u
+forms-primary-pw-use =
+    .label = Použít hlavní heslo
+    .accesskey = P
+forms-primary-pw-learn-more-link = Zjistit více
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = Změnit hlavní heslo…
     .accesskey = m
 forms-master-pw-fips-title = Momentálně jste v režimu FIPS, který vyžaduje neprázdné hlavní heslo.
+forms-primary-pw-change =
+    .label = Změnit hlavní heslo…
+    .accesskey = m
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = Momentálně jste v režimu FIPS, který vyžaduje neprázdné hlavní heslo.
 forms-master-pw-fips-desc = Neúspěšná změna hesla
 
 ## OS Authentication dialog
@@ -964,6 +946,13 @@ master-password-os-auth-dialog-message-win = Pro nastavení hlavního hesla pros
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = vytvořit hlavní heslo
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Pro nastavení hlavního hesla prosím zadejte své přihlašovací údaje k systému Windows. Toto opatření pomáhá v zabezpečení vašich účtů.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = vytvořit hlavní heslo
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -1042,8 +1031,6 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = Blokovat
     .accesskey = t
-sitedata-option-block-trackers =
-    .label = Cookies sledovacích prvků třetích stran
 sitedata-option-block-cross-site-trackers =
     .label = Sledovací prvky
 sitedata-option-block-cross-site-and-social-media-trackers =
@@ -1089,27 +1076,9 @@ addressbar-suggestions-settings = Nastavit našeptávání vyhledávače
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = Blokování obsahu
-content-blocking-section-description = Chraňte své soukromí při prohlížení internetu. Zablokujte neviditelný obsah, který vás sleduje na navštívených stránkách a vytváří profil vašeho chování. Blokování takového obsahu navíc může zrychlit načítání stránek.
 content-blocking-enhanced-tracking-protection = Rozšířená ochrana proti sledování
 content-blocking-section-top-level-description = Sledovací prvky sbírají informace, co a kde na internetu děláte, jaké máte návyky a co vás zajímá. { -brand-short-name } blokuje mnoho takových prvků i dalších škodlivých skriptů.
 content-blocking-learn-more = Zjistit více
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = Standardní
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = Přísné
-    .accesskey = P
-content-blocking-setting-custom =
-    .label = Vlastní
-    .accesskey = V
-content-blocking-standard-desc = Vyvážená úroveň ochrany. Povoluje některé sledovací prvky, aby stránky fungovaly správně.
-content-blocking-strict-description = Více blokovaného obsahu zvyšuje pravděpodobnost, že některé stránky nebudou správně fungovat.
-content-blocking-custom-desc = Sami vyberte, co a kde se má blokovat.
-content-blocking-private-trackers = Sledovací prvky blokovány v anonymních oknech
-content-blocking-third-party-cookies = Cookies sledovacích prvků třetích stran blokovány ve všech oknech
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1136,23 +1105,17 @@ content-blocking-cross-site-tracking-cookies-plus-isolate = Sledovací cookies t
 content-blocking-social-media-trackers = Sledující prvky sociálních sítí
 content-blocking-all-cookies = Všechny cookies
 content-blocking-unvisited-cookies = Cookies z dosud nenavštívených stránek
-content-blocking-all-windows-trackers = Sledovací prvky blokovány ve všech oknech
 content-blocking-all-windows-tracking-content = Sledující obsah blokován ve všech oknech
 content-blocking-all-third-party-cookies = Všechny cookies třetích stran blokovány vždy
 content-blocking-cryptominers = Těžba kryptoměn
 content-blocking-fingerprinters = Vytváření otisku prohlížeče
 content-blocking-warning-title = Pozor!
-content-blocking-warning-description = Blokování obsahu může omezit fungování některých stránek. Pro stránky, kterým důvěřujete, ho můžete snadno vypnout.
-content-blocking-learn-how = Jak na to?
 content-blocking-and-isolating-etp-warning-description = Blokování sledujícího obsahu a izolace cookies může ovlivnit fungování některých stránek. Pro zobrazení veškerého obsahu znovu načtěte stránku s povolenými sledovacími prvky.
 content-blocking-warning-learn-how = Jak na to
 content-blocking-reload-description = Aby se změny projevily, načtěte znovu své panely.
 content-blocking-reload-tabs-button =
     .label = Znovu načíst všechny panely
     .accesskey = o
-content-blocking-trackers-label =
-    .label = Sledovací prvky
-    .accesskey = S
 content-blocking-tracking-content-label =
     .label = Sledující obsah
     .accesskey = o
@@ -1217,12 +1180,6 @@ permissions-notification-pause =
            *[other] aplikace { -brand-short-name }
         }
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = Zabránit stránkám v automatickém přehrávání zvuků
-    .accesskey = b
-permissions-block-autoplay-media-exceptions =
-    .label = Výjimky…
-    .accesskey = y
 permissions-autoplay = Automatické přehrávání
 permissions-autoplay-settings =
     .label = Nastavení…
@@ -1388,6 +1345,24 @@ space-alert-under-5gb-message =
         [neuter] { -brand-short-name(case: "dat") }
        *[other] Aplikaci { -brand-short-name }
     } dochází místo na disku. Obsah webové stránky se nemusí zobrazit správně. Klepněte na „Dozvědět se více“ o optimalizaci využití disku k lepšímu prohlížení webu.
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = Režim „pouze HTTPS“
+httpsonly-description =
+    Protokol HTTPS poskytuje zabezpečené, šifrované spojení mezi { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "ins") }
+        [feminine] { -brand-short-name(case: "ins") }
+        [neuter] { -brand-short-name(case: "ins") }
+       *[other] aplikací { -brand-short-name }
+    } a navštěvovanými webovými stránkami. Většina webů protokol HTTPS podporuje, a pokud je zapnut režim „pouze HTTPS“, bude { -brand-short-name } navazovat spojení pouze skrze protokol HTTPS.
+httpsonly-learn-more = Zjistit více
+httpsonly-radio-enabled =
+    .label = Zapnout režim „pouze HTTPS“ ve všech oknech
+httpsonly-radio-enabled-pbm =
+    .label = Zapnout režim „pouze HTTPS“ v anonymních oknech
+httpsonly-radio-disabled =
+    .label = Nezapínat režim „pouze HTTPS“
 
 ## The following strings are used in the Download section of settings
 

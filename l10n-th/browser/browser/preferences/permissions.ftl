@@ -34,6 +34,9 @@ permissions-button-cancel =
 permissions-button-ok =
     .label = บันทึกการเปลี่ยนแปลง
     .accesskey = บ
+permission-dialog =
+    .buttonlabelaccept = บันทึกการเปลี่ยนแปลง
+    .buttonaccesskeyaccept = บ
 permissions-autoplay-menu = ค่าเริ่มต้นสำหรับเว็บไซต์ทั้งหมด:
 permissions-searchbox =
     .placeholder = ค้นหาเว็บไซต์
@@ -63,10 +66,6 @@ permissions-invalid-uri-label = โปรดป้อนชื่อโฮสต
 
 ## Exceptions - Tracking Protection
 
-permissions-exceptions-content-blocking-window =
-    .title = ข้อยกเว้น - การปิดกั้นเนื้อหา
-    .style = { permissions-window.style }
-permissions-exceptions-content-blocking-desc = คุณได้ปิดใช้งานการปิดกั้นเนื้อหาในเว็บไซต์เหล่านี้
 permissions-exceptions-etp-window =
     .title = ข้อยกเว้นสำหรับการป้องกันการติดตามที่มากขึ้น
     .style = { permissions-window.style }
@@ -99,13 +98,6 @@ permissions-exceptions-addons-window =
     .title = เว็บไซต์ที่อนุญาต - การติดตั้งส่วนเสริม
     .style = { permissions-window.style }
 permissions-exceptions-addons-desc = คุณสามารถระบุเว็บไซต์ที่อนุญาตให้ติดตั้งส่วนเสริม พิมพ์ที่อยู่ของไซต์ที่คุณต้องการอนุญาตแล้วคลิก อนุญาต
-
-## Exceptions - Autoplay Media
-
-permissions-exceptions-autoplay-media-window2 =
-    .title = ข้อยกเว้น - การเล่นอัตโนมัติ
-    .style = { permissions-window.style }
-permissions-exceptions-autoplay-media-desc2 = คุณสามารถระบุเว็บไซต์ที่อนุญาตหรือไม่อนุญาตให้เล่นสื่อพร้อมเสียงโดยอัตโนมัติเสมอ พิมพ์ที่อยู่ของไซต์ที่คุณต้องการจัดการแล้วคลิก ปิดกั้น หรือ อนุญาต
 
 ## Site Permissions - Autoplay
 

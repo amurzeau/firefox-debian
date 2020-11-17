@@ -15,6 +15,9 @@ extensions-name = Ainm
 extensions-enabled = Cumasaithe
 extensions-version = Leagan
 extensions-id = Aitheantas
+support-addons-name = Ainm
+support-addons-version = Leagan
+support-addons-id = Aitheantas
 features-title = Gnéithe { -brand-short-name }
 features-name = Ainm
 features-version = Leagan
@@ -68,8 +71,6 @@ graphics-workarounds-title = Seifteanna
 place-database-title = Bunachar Sonraí Áiteanna
 place-database-integrity = Sláine
 place-database-verify-integrity = Deimhnigh an tSláine
-js-title = JavaScript
-js-incremental-gc = Bailitheoir Dramhaíola Incriminteach
 a11y-title = Inrochtaineacht
 a11y-activated = Gníomhachtaithe
 a11y-force-disabled = Coisc Inrochtaineacht
@@ -95,6 +96,7 @@ audio-backend = Inneall Fuaime
 
 ##
 
+
 ## Remote Debugging
 ##
 ## The Firefox remote protocol provides low-level debugging interfaces
@@ -103,6 +105,7 @@ audio-backend = Inneall Fuaime
 ## and for subscribing to browser-internal events.
 ##
 ## See also https://firefox-source-docs.mozilla.org/remote/
+
 
 ##
 
@@ -222,7 +225,6 @@ unknown-failure = Ar an liosta blocála; cód teipthe { $failureCode }
 
 d3d11layers-crash-guard = Eagraí D3D11
 d3d11video-crash-guard = Díchódóir Físe D3D11
-d3d9video-crash-buard = Díchódóir Físe D3D9
 d3d9video-crash-guard = Díchódóir Físe D3D9
 glcontext-crash-guard = OpenGL
 

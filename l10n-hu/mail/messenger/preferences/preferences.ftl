@@ -10,6 +10,8 @@ preferences-title =
             [windows] Beállítások
            *[other] Beállítások
         }
+category-list =
+    .aria-label = Kategóriák
 pane-general-title = Általános
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,7 +43,6 @@ composition-addressing-header = Címzés
 privacy-main-header = Adatvédelem
 privacy-passwords-header = Jelszavak
 privacy-junk-header = Levélszemét
-privacy-data-collection-header = Adatgyűjtés és -felhasználás
 collection-header = { -brand-short-name } adatgyűjtés és felhasználás
 collection-description = Arra törekszünk, hogy választást biztosítsunk, és csak azt gyűjtsük, amire szükségünk a van a { -brand-short-name } fejlesztéséhez, mindenki számára. Mindig engedélyt kérünk, mielőtt személyes információkat fogadunk.
 collection-privacy-notice = Adatvédelmi nyilatkozat
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = l
 confirm-messenger-language-change-description = Indítsa újra a { -brand-short-name }öt a változások érvényesítéséhez
 confirm-messenger-language-change-button = Alkalmaz és újraindítás
-update-pref-write-failure-title = Írási hiba
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Nem lehet menteni a beállításokat. Nem lehet a fájlba írni: { $path }
 update-setting-write-failure-title = Hiba történt a frissítési beállítások mentésekor
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -91,12 +88,11 @@ update-in-progress-ok-button = &Elvetés
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Folytatás
+account-button = Fiókbeállítások
 addons-button = Kiegészítők és témák
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Igazolja személyazonosságát a mesterjelszó létrehozásához.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Mesterjelszó létrehozásához írja be a Windows bejelentkezési hitelesítő adatait. Ez elősegíti a fiókjai biztonságának védelmét.
 # This message can be seen by trying to add a Master Password.
@@ -104,6 +100,13 @@ master-password-os-auth-dialog-message-win = Mesterjelszó létrehozásához ír
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = mesterjelszót hozzon létre
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Elsődleges jelszó létrehozásához írja be a Windows bejelentkezési hitelesítő adatait. Ez elősegíti a fiókjai biztonságának védelmét.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = elsődleges jelszó létrehozása
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -541,6 +544,15 @@ master-password-label =
 master-password-button =
     .label = Mesterjelszó megváltoztatása…
     .accesskey = z
+primary-password-description = Az elsődleges jelszó az összes jelszót védi. Minden munkamenet során egyszer meg kell adni.
+primary-password-label =
+    .label = Elsődleges jelszó használata
+    .accesskey = E
+primary-password-button =
+    .label = Elsődleges jelszó megváltoztatása…
+    .accesskey = m
+forms-primary-pw-fips-title = Jelenleg FIPS-módban van. A FIPS-hez nem üres elsődleges jelszó szükséges.
+forms-master-pw-fips-desc = Sikertelen jelszóváltoztatás
 junk-description = Az alapértelmezett levélszemét-kezelés beállítása. A postafiókra jellemző levélszemét-kezelés beállításait a Postafiókok beállításai alatt végezheti el.
 junk-label =
     .label = A levélszemét kézi megjelölésekor:

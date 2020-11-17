@@ -37,7 +37,7 @@
 <!ENTITY headersOnly.accesskey "e">
 <!ENTITY deleteByAgeFromServer.label "Som er toppen">
 <!ENTITY deleteByAgeFromServer.accesskey "o">
-<!ENTITY daysEnd.label "dagar gamle">
+<!ENTITY daysEnd.label "dagar">
 <!ENTITY deleteOnServer2.label "Heilt til eg slettar dei">
 <!ENTITY deleteOnServer2.accesskey "H">
 <!ENTITY downloadOnBiff.label "Last ned nye meldingar automatisk">
@@ -66,8 +66,6 @@
 <!ENTITY maxMessagesEnd.label "meldingar">
 <!ENTITY alwaysAuthenticate.label "Alltid spør etter autentisering ved tilkopling til denne tenaren">
 <!ENTITY alwaysAuthenticate.accesskey "A">
-<!ENTITY newsrcFilePath.label "newsrc-fil:">
-<!ENTITY newsrcPicker.label "Vel newsrc-fil">
 <!ENTITY newsrcFilePath1.label "News.rc-fil:">
 <!ENTITY newsrcPicker1.label "Vel News.rc-fil">
 <!ENTITY abbreviate.label "Vis namn i mappelista med">
@@ -76,7 +74,6 @@
 <!ENTITY advancedButton.label "Avansert…">
 <!ENTITY advancedButton.accesskey "A">
 <!ENTITY serverDefaultCharset2.label "Standard tekstkoding:">
-<!ENTITY localPath.label "Lokal mappe:">
 <!ENTITY localPath1.label "Lokal mappe:">
 <!ENTITY localFolderPicker.label "Vel lokal mappe:">
 <!ENTITY browseFolder.label "Bla gjennom …">

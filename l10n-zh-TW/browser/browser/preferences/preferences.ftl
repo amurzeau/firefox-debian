@@ -8,12 +8,6 @@ do-not-track-option-default-content-blocking-known =
     .label = 僅在 { -brand-short-name } 設定為封鎖已知追蹤器時
 do-not-track-option-always =
     .label = 總是
-pref-page =
-    .title =
-        { PLATFORM() ->
-            [windows] 選項
-           *[other] 偏好設定
-        }
 pref-page-title =
     { PLATFORM() ->
         [windows] 選項
@@ -35,6 +29,8 @@ search-input-box =
            *[other] 在偏好設定中尋找
         }
 managed-notice = 您的瀏覽器受到組織管理。
+category-list =
+    .aria-label = 分類
 pane-general-title = 一般
 category-general =
     .tooltiptext = { pane-general-title }
@@ -50,6 +46,12 @@ category-privacy =
 pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
+pane-experimental-title = { -brand-short-name } 實驗
+category-experimental =
+    .tooltiptext = { -brand-short-name } 實驗
+pane-experimental-subtitle = 調整設定前請務必小心！
+pane-experimental-search-results-header = { -brand-short-name } 實驗功能: 調整設定前請務必小心！
+pane-experimental-description = 調整進階設定，可能會影響 { -brand-short-name } 的效能或安全性。
 help-button-label = { -brand-short-name } 技術支援
 addons-button-label = 擴充套件與佈景主題
 focus-search =
@@ -82,6 +84,9 @@ extension-controlled-homepage-override = 擴充套件「<img data-l10n-name="ico
 # This string is shown to notify the user that their new tab page
 # is being controlled by an extension.
 extension-controlled-new-tab-url = 擴充套件「<img data-l10n-name="icon"/> { $name }」正在控制您的新分頁內容。
+# This string is shown to notify the user that the password manager setting
+# is being controlled by an extension
+extension-controlled-password-saving = 擴充套件<img data-l10n-name="icon"/> { $name } 正在控制此設定。
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
 extension-controlled-web-notifications = 擴充套件<img data-l10n-name="icon"/> { $name } 正在控制此設定。
@@ -353,13 +358,6 @@ update-application-warning-cross-user-setting = 此設定將套用到本電腦�
 update-application-use-service =
     .label = 在背景服務當中安裝更新
     .accesskey = b
-update-enable-search-update =
-    .label = 自動更新搜尋引擎
-    .accesskey = e
-update-pref-write-failure-title = 寫入失敗
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = 無法儲存偏好設定。無法寫入檔案: { $path }
 update-setting-write-failure-title = 儲存更新偏好設定時發生錯誤
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -390,7 +388,7 @@ performance-allow-hw-accel =
 performance-limit-content-process-option = 內容處理程序數量限制
     .accesskey = L
 performance-limit-content-process-enabled-desc = 調高內容處理程序的數量，可改善開啟多個分頁時的效能，但也會使用更多記憶體。
-performance-limit-content-process-blocked-desc = 僅能在多程序的 { -brand-short-name } 當中修改內容處理程序數量。 <a data-l10n-name="learn-more">了解如何確認多程序模式是否已開啟</a>
+performance-limit-content-process-blocked-desc = 僅能在多程序的 { -brand-short-name } 當中修改內容處理程序數量。<a data-l10n-name="learn-more">了解如何確認多程序模式是否已開啟</a>
 # Variables:
 #   $num - default value of the `dom.ipc.processCount` pref.
 performance-default-content-process-count =
@@ -418,6 +416,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = 開啟影片子母畫面播放控制元件
     .accesskey = E
 browsing-picture-in-picture-learn-more = 了解更多
+browsing-media-control =
+    .label = 使用鍵盤、耳機或虛擬介面控制媒體內容播放行為
+    .accesskey = V
+browsing-media-control-learn-more = 了解更多
 browsing-cfr-recommendations =
     .label = 隨您上網推薦擴充套件
     .accesskey = R
@@ -481,13 +483,14 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = 熱門網站
 home-prefs-topsites-description = 最常造訪的網站
+home-prefs-topsites-by-option-sponsored =
+    .label = 贊助的熱門網站
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
     .label = { $provider } 推薦
-home-prefs-recommended-by-description = 網路上的各種超棒內容，為您量身打造
 home-prefs-recommended-by-description-update = 由 { $provider } 整理提供的網路精選內容
 
 ##
@@ -524,7 +527,6 @@ search-bar-hidden =
 search-bar-shown =
     .label = 在工具列加入搜尋列
 search-engine-default-header = 預設搜尋引擎
-search-engine-default-desc = 請選擇在網址列或搜尋列進行搜尋時，預設要使用的搜尋引擎。
 search-engine-default-desc-2 = 這是您在網址列與搜尋列進行搜尋時，預設會使用的搜尋引擎。可以隨時切換。
 search-engine-default-private-desc-2 = 針對隱私瀏覽視窗選擇不同的預設搜尋引擎
 search-separate-default-engine =
@@ -547,10 +549,10 @@ search-show-suggestions-above-history-option =
     .label = 在網址列顯示的結果中，將搜尋建議放在瀏覽紀錄前面
 search-show-suggestions-private-windows =
     .label = 於隱私瀏覽視窗中顯示搜尋建議
-suggestions-addressbar-settings = 更改上網紀錄、書籤、分頁建議的相關偏好設定
 suggestions-addressbar-settings-generic = 修改其他網址列建議偏好設定
 search-suggestions-cant-show = 由於您已經設定 { -brand-short-name } 不要記住瀏覽紀錄，網址列中將不會顯示建議搜尋結果。
 search-one-click-header = 快捷搜尋引擎清單
+search-one-click-header2 = 搜尋快速鍵
 search-one-click-desc = 請選擇當您在網址列或搜尋列輸入關鍵字時，可選用的其他搜尋引擎。
 search-choose-engine-column =
     .label = 搜尋引擎
@@ -562,6 +564,9 @@ search-restore-default =
 search-remove-engine =
     .label = 移除
     .accesskey = r
+search-add-engine =
+    .label = 新增
+    .accesskey = A
 search-find-more-link = 尋找更多搜尋引擎
 # This warning is displayed when the chosen keyword is already in use
 # ('Duplicate' is an adjective)
@@ -573,7 +578,6 @@ search-keyword-warning-bookmark = 您選用的關鍵字目前正被書籤項目�
 
 ## Containers Section
 
-containers-back-link = « 返回
 containers-back-button =
     .aria-label =
         { PLATFORM() ->
@@ -592,20 +596,11 @@ containers-preferences-button =
 containers-remove-button =
     .label = 移除
 
-## Sync Section - Signed out
-
-
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = 把 Web 隨身帶著走
 sync-signedout-description = 在您所有裝置間同步書籤、歷史紀錄、分頁、密碼、附加元件與偏好設定。
-sync-signedout-account-title = 連線到 { -fxaccount-brand-name }
-sync-signedout-account-create = 沒有帳號嗎？開始使用
-    .accesskey = C
-sync-signedout-account-signin =
-    .label = 登入…
-    .accesskey = I
 sync-signedout-account-signin2 =
     .label = 登入 { -sync-brand-short-name }…
     .accesskey = i
@@ -619,16 +614,10 @@ sync-signedout-account-signin2 =
 # to your language, but should not be changed or translated.
 sync-mobile-promo = 下載 Firefox for<img data-l10n-name="android-icon"/> <a data-l10n-name="android-link">Android</a>或<img data-l10n-name="ios-icon"/> <a data-l10n-name="ios-link">iOS</a>以與您的行動裝置同步。
 
-## Sync Section - Signed in
-
-
 ## Firefox Account - Signed in
 
 sync-profile-picture =
     .tooltiptext = 更改個人資料照片
-sync-disconnect =
-    .label = 斷線…
-    .accesskey = D
 sync-sign-out =
     .label = 登出…
     .accesskey = g
@@ -645,8 +634,6 @@ sync-remove-account =
 sync-sign-in =
     .label = 登入
     .accesskey = g
-sync-signedin-settings-header = 同步設定
-sync-signedin-settings-desc = 選擇要同步哪些資料到您其他使用 { -brand-short-name } 的裝置
 
 ## Sync section - enabling or disabling sync.
 
@@ -699,10 +686,6 @@ sync-engine-tabs =
     .label = 開啟分頁
     .tooltiptext = 所有同步設備中，開啟的網頁清單
     .accesskey = T
-sync-engine-logins =
-    .label = 登入資訊
-    .tooltiptext = 您儲存的使用者名稱與密碼
-    .accesskey = L
 sync-engine-logins-passwords =
     .label = 登入資訊與密碼
     .tooltiptext = 您儲存的使用者名稱與密碼
@@ -741,18 +724,10 @@ sync-device-name-save =
     .label = 儲存
     .accesskey = v
 sync-connect-another-device = 連結其他裝置
-sync-manage-devices = 管理裝置
-sync-fxa-begin-pairing = 與裝置配對
-sync-tos-link = 服務條款
-sync-fxa-privacy-notice = 隱私權公告
 
 ## Privacy Section
 
 privacy-header = 瀏覽器隱私權
-
-## Privacy Section - Forms
-
-logins-header = 登入資訊與密碼
 
 ## Privacy Section - Logins and Passwords
 
@@ -783,10 +758,25 @@ forms-saved-logins =
 forms-master-pw-use =
     .label = 使用主控密碼
     .accesskey = U
+forms-primary-pw-use =
+    .label = 使用主控密碼
+    .accesskey = U
+forms-primary-pw-learn-more-link = 了解更多
+# This string uses the former name of the Primary Password feature
+# ("Master Password" in English) so that the preferences can be found
+# when searching for the old name. The accesskey is unused.
 forms-master-pw-change =
     .label = 變更主控密碼…
     .accesskey = M
 forms-master-pw-fips-title = 您目前使用 FIPS 模式。FIPS 模式需要有主控密碼。
+forms-primary-pw-change =
+    .label = 變更主控密碼…
+    .accesskey = P
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
+forms-primary-pw-fips-title = 您目前使用 FIPS 模式。FIPS 模式需要有主控密碼。
 forms-master-pw-fips-desc = 密碼變更失敗
 
 ## OS Authentication dialog
@@ -798,6 +788,13 @@ master-password-os-auth-dialog-message-win = 請在下方輸入您的 Windows �
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = 建立主控密碼
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = 請在下方輸入您的 Windows 登入帳號密碼才能建立主控密碼。這個動作是為了保護您的登入資訊安全。
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Firefox is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = 建立主控密碼
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
 ## Privacy Section - History
@@ -864,12 +861,14 @@ sitedata-disallow-cookies-option =
 # The list items are the strings named sitedata-block-*-option*.
 sitedata-block-desc = 要封鎖的類型
     .accesskey = T
-sitedata-option-block-trackers =
-    .label = 第三方追蹤器
 sitedata-option-block-cross-site-trackers =
     .label = 跨網站追蹤器
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = 跨網站與社交媒體追蹤器
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = 跨網站追蹤 Cookie — 包含社交媒體 Cookie
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = 跨網站 Cookie — 包含社交媒體 Cookie
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = 跨網站與社交媒體追蹤器，並隔離剩餘的 Cookie
 sitedata-option-block-unvisited =
@@ -911,27 +910,9 @@ addressbar-suggestions-settings = 修改搜尋建議偏好設定
 
 ## Privacy Section - Content Blocking
 
-content-blocking-header = 內容封鎖
-content-blocking-section-description = 在上網時保護您的隱私。封鎖會在不同網站間追蹤您上網，並對使用者進行分類的隱藏內容。封鎖這類內容也可能讓網頁更快載入。
 content-blocking-enhanced-tracking-protection = 加強型追蹤保護
 content-blocking-section-top-level-description = 追蹤器會在網路上跟蹤您，收集您的興趣與喜好。{ -brand-short-name } 會封鎖許多追蹤器與其他有害指令碼。
 content-blocking-learn-more = 了解更多
-# The terminology used to refer to categories of Content Blocking is also used in chrome/browser/browser.properties and should be translated consistently.
-# "Standard" in this case is an adjective, meaning "default" or "normal".
-content-blocking-setting-standard =
-    .label = 標準
-    .accesskey = d
-content-blocking-setting-strict =
-    .label = 嚴格
-    .accesskey = r
-content-blocking-setting-custom =
-    .label = 自訂
-    .accesskey = C
-content-blocking-standard-desc = 兼顧保護與效能。放行某些追蹤器以確保網站運作正常。
-content-blocking-strict-description = 保護更強，可能造成某些網站無法正常運作。
-content-blocking-custom-desc = 選擇要封鎖哪些內容。
-content-blocking-private-trackers = 僅在隱私視窗中封鎖已知的追蹤器
-content-blocking-third-party-cookies = 第三方追蹤 Cookie
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -953,28 +934,24 @@ content-blocking-etp-standard-desc = 兼顧保護與效能。網站可正常運�
 content-blocking-etp-strict-desc = 保護更強大，但可能會導致某些網站或內容故障。
 content-blocking-etp-custom-desc = 選擇要封鎖哪些追蹤器與指令碼。
 content-blocking-private-windows = 隱私視窗中的追蹤內容
+content-blocking-cross-site-cookies = 跨網站 Cookie
 content-blocking-cross-site-tracking-cookies = 跨網站追蹤 Cookie
 content-blocking-cross-site-tracking-cookies-plus-isolate = 跨網站追蹤 Cookie，並隔離剩餘的 Cookie
 content-blocking-social-media-trackers = 社交媒體追蹤器
 content-blocking-all-cookies = 所有 Cookie
 content-blocking-unvisited-cookies = 來自未造訪過網站的 Cookie
-content-blocking-all-windows-trackers = 在所有視窗封鎖已知的追蹤器
 content-blocking-all-windows-tracking-content = 所有視窗中的追蹤內容
 content-blocking-all-third-party-cookies = 所有第三方 Cookie
 content-blocking-cryptominers = 加密貨幣採礦程式
 content-blocking-fingerprinters = 數位指紋追蹤程式
 content-blocking-warning-title = 注意！
-content-blocking-warning-description = 封鎖內容後可能造成某些網站無法正常運作。很簡單就能為您信任的網站關閉封鎖功能。
-content-blocking-learn-how = 了解要怎麼做
 content-blocking-and-isolating-etp-warning-description = 封鎖追蹤器並隔離 Cookie 可能會造成某些網站運作不正常。重新載入含有追蹤器的頁面即可載入所有內容。
+content-blocking-and-isolating-etp-warning-description-2 = 此設定可能會造成某些網站無法顯示內容或正常運作。若網站運作不正常，您可能會想要對該網站關掉追蹤保護功能，載入完整內容。
 content-blocking-warning-learn-how = 了解要怎麼做
 content-blocking-reload-description = 需要重新載入分頁才能套用變更。
 content-blocking-reload-tabs-button =
     .label = 重新載入所有分頁
     .accesskey = R
-content-blocking-trackers-label =
-    .label = 追蹤器
-    .accesskey = T
 content-blocking-tracking-content-label =
     .label = 追蹤用內容
     .accesskey = T
@@ -1033,12 +1010,6 @@ permissions-notification-link = 了解更多
 permissions-notification-pause =
     .label = 暫停通知到 { -brand-short-name } 重新啟動後
     .accesskey = n
-permissions-block-autoplay-media2 =
-    .label = 防止網站自動播放聲音
-    .accesskey = B
-permissions-block-autoplay-media-exceptions =
-    .label = 例外網站…
-    .accesskey = E
 permissions-autoplay = 自動播放
 permissions-autoplay-settings =
     .label = 設定…
@@ -1145,6 +1116,18 @@ space-alert-under-5gb-ok-button =
     .label = 好，知道了
     .accesskey = K
 space-alert-under-5gb-message = { -brand-short-name } 的磁碟空間不足，網站內容可能無法正確顯示。請點擊「瞭解更多」清理磁碟空間，讓您有更好的瀏覽體驗。
+
+## Privacy Section - HTTPS-Only
+
+httpsonly-header = 純 HTTPS 模式
+httpsonly-description = HTTPS 讓您與要造訪的網站間，能夠有安全而加密過的連線。大部分的網站都支援 HTTPS，開啟純 HTTPS 模式後，{ -brand-short-name } 就會將所有的連線都升級為 HTTPS 連線。
+httpsonly-learn-more = 了解更多
+httpsonly-radio-enabled =
+    .label = 在所有視窗都開啟純 HTTPS 模式
+httpsonly-radio-enabled-pbm =
+    .label = 僅在隱私瀏覽視窗開啟純 HTTPS 模式
+httpsonly-radio-disabled =
+    .label = 不開啟純 HTTPS 模式
 
 ## The following strings are used in the Download section of settings
 

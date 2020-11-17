@@ -56,7 +56,7 @@ options-default-color-unit-name = 색상 이름
 options-styleeditor-label = 스타일 편집기
 
 # The label for the checkbox that toggles autocompletion of css in the Style Editor
-options-stylesheet-autocompletion-label = CSS 자동완성
+options-stylesheet-autocompletion-label = CSS 자동 완성
 options-stylesheet-autocompletion-tooltip =
     .title = 스타일 편집기에서 입력하는 대로 CSS 속성, 값 및 선택자를 자동으로 완성합니다
 
@@ -115,9 +115,6 @@ options-enable-chrome-tooltip =
 
 # The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
 options-enable-remote-label = 원격 디버깅 사용
-options-enable-remote-tooltip =
-    .title = 이 옵션을 켜면 개발자 도구가 Firefox OS와 같은 원격 인스턴스를 디버깅 할 수 있습니다
-
 options-enable-remote-tooltip2 =
     .title = 이 옵션을 켜면 이 브라우저 인스턴스를 원격으로 디버깅 할 수 있습니다
 

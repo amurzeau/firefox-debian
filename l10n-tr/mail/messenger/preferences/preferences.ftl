@@ -10,6 +10,8 @@ preferences-title =
             [windows] Seçenekler
            *[other] Tercihler
         }
+category-list =
+    .aria-label = Kategoriler
 pane-general-title = Genel
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,7 +43,6 @@ composition-addressing-header = Adresler
 privacy-main-header = Gizlilik
 privacy-passwords-header = Parolalar
 privacy-junk-header = Gereksiz
-privacy-data-collection-header = Veri Toplanması ve Kullanımı
 collection-header = { -brand-short-name } Veri Toplama ve Kullanma İzinleri
 collection-description = Yalnızca { -brand-short-name } yazılımını geliştirmemize yarayacak verileri topluyoruz ve istemezseniz onları da toplamıyoruz. Kişisel verilerinizi sunucularımıza göndermeden önce mutlaka izninizi istiyoruz.
 collection-privacy-notice = Gizlilik Bildirimi
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = l
 confirm-messenger-language-change-description = Bu değişiklikleri uygulamak için { -brand-short-name } yeniden başlatılmalıdır
 confirm-messenger-language-change-button = Uygula ve yeniden başlat
-update-pref-write-failure-title = Yazma Hatası
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Tercih kaydedilemiyor. Dosyaya yazılamadı: { $path }
 update-setting-write-failure-title = Güncelleme tercihleri kaydedilirken hata oluştu
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -91,12 +88,11 @@ update-in-progress-ok-button = &Vazgeç
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Devam et
+account-button = Hesap Ayarları
 addons-button = Eklentiler ve temalar
 
 ## OS Authentication dialog
 
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Ana parola oluşturmak için kimliğinizi doğrulayın.
 # This message can be seen by trying to add a Master Password.
 master-password-os-auth-dialog-message-win = Ana parola oluşturmak için Windows hesap bilgilerinizi girin. Bu sayede hesaplarınızı daha güvenli bir şekilde koruyabiliriz.
 # This message can be seen by trying to add a Master Password.
@@ -104,6 +100,13 @@ master-password-os-auth-dialog-message-win = Ana parola oluşturmak için Window
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = ana parola oluşturma
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Ana parola oluşturmak için Windows hesap bilgilerinizi girin. Bu sayede hesaplarınızı daha güvenli bir şekilde koruyabiliriz.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = ana parola oluşturma
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -172,8 +175,8 @@ mail-browse-sound-button =
     .label = Gözat…
     .accesskey = G
 enable-gloda-search-label =
-    .label = Küresel aramayı ve dizin oluşturmayı etkinleştir
-    .accesskey = o
+    .label = Global aramayı ve dizin oluşturmayı etkinleştir
+    .accesskey = G
 datetime-formatting-legend = Tarih ve saat biçimi
 language-selector-legend = Dil
 allow-hw-accel =
@@ -541,6 +544,15 @@ master-password-label =
 master-password-button =
     .label = Ana parolayı değiştir…
     .accesskey = n
+primary-password-description = Ana parola bütün parolalarınızı korur. Her oturumda ana parolayı bir kez yazmanız gerekir.
+primary-password-label =
+    .label = Ana parola kullan
+    .accesskey = k
+primary-password-button =
+    .label = Ana parolayı değiştir…
+    .accesskey = d
+forms-primary-pw-fips-title = Şu anda FIPS kipindesiniz. FIPS için boş olmayan bir ana parola gereklidir.
+forms-master-pw-fips-desc = Parola değiştirme başarısız
 junk-description = Varsayılan gereksiz posta ayarlarınızı yapılandırın. Hesaba özel gereksiz posta ayarları, Hesap Ayarları'ndan yapılandırılabilir.
 junk-label =
     .label = İletileri gereksiz olarak işaretlediğimde:

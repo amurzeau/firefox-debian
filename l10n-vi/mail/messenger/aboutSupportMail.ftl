@@ -17,3 +17,4 @@ identity-name = Danh tính
 
 send-via-email = Gửi qua email
 
+app-basics-telemetry = Dữ liệu từ xa

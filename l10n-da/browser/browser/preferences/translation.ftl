@@ -28,3 +28,6 @@ translation-sites-button-remove-all =
 translation-button-close =
     .label = Luk
     .accesskey = u
+translation-dialog =
+    .buttonlabelaccept = Luk
+    .buttonaccesskeyaccept = u

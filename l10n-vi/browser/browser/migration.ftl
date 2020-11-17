@@ -50,9 +50,12 @@ import-from-360se =
     .label = 360 Secure Browser
     .accesskey = 3
 no-migration-sources = Không tìm thấy chương trình nào chứa dấu trang, lịch sử, hoặc dữ liệu mật khẩu.
-import-source-page-title = Nhập các Thiết lập và Dữ liệu từ
+import-source-page-title = Nhập cài đặt và dữ liệu
 import-items-page-title = Các mục cần nhập
 import-items-description = Chọn các mục để nhập:
+import-permissions-page-title = Vui lòng cấp quyền cho { -brand-short-name }
+# Do not translate "Bookmarks.plist"; the file name is the same everywhere.
+import-permissions-description = macOS yêu cầu bạn cho phép { -brand-short-name } truy cập vào các trang đánh dấu của Safari. Nhấp vào “Tiếp tục” và chọn tệp “Bookmarks.plist” trong bảng Mở tệp.
 import-migrating-page-title = Đang nhập…
 import-migrating-description = Các mục sau đang được nhập…
 import-select-profile-page-title = Chọn Hồ Sơ
@@ -88,6 +91,7 @@ imported-edge-reading-list = Đang đọc danh sách (từ Edge)
 ## chrome
 ## edge
 ## firefox
+## ie
 ## safari
 ## The various beta and development versions of edge and chrome all get
 ## normalized to just "edge" and "chrome" for these strings.

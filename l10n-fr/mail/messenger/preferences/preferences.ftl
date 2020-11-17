@@ -10,6 +10,8 @@ preferences-title =
             [windows] Options
            *[other] Préférences
         }
+category-list =
+    .aria-label = Catégories
 pane-general-title = Général
 category-general =
     .tooltiptext = { pane-general-title }
@@ -41,7 +43,6 @@ composition-addressing-header = Adressage
 privacy-main-header = Vie privée
 privacy-passwords-header = Mots de passe
 privacy-junk-header = Courrier indésirable
-privacy-data-collection-header = Collecte et utilisation de données
 collection-header = Collecte de données par { -brand-short-name } et utilisation
 collection-description = Nous nous efforçons de vous laisser le choix et de recueillir uniquement les informations dont nous avons besoin pour proposer { -brand-short-name } et l’améliorer pour tout le monde. Nous demandons toujours votre permission avant de recevoir des données personnelles.
 collection-privacy-notice = Politique de confidentialité
@@ -72,10 +73,6 @@ manage-messenger-languages-button =
     .accesskey = l
 confirm-messenger-language-change-description = Redémarrez { -brand-short-name } pour appliquer ces modifications
 confirm-messenger-language-change-button = Appliquer et redémarrer
-update-pref-write-failure-title = Échec d’écriture
-# Variables:
-#   $path (String) - Path to the configuration file
-update-pref-write-failure-message = Impossible d’enregistrer la préférence. Impossible d’écrire dans le fichier : { $path }
 update-setting-write-failure-title = Erreur lors de l’enregistrement des préférences de mise à jour
 # Variables:
 #   $path (String) - Path to the configuration file
@@ -91,19 +88,25 @@ update-in-progress-ok-button = &Abandonner
 # Continue is the cancel button so pressing escape or using a platform standard
 # method of closing the UI will not discard the update.
 update-in-progress-cancel-button = &Continuer
+account-button = Paramètres des comptes
 addons-button = Extensions et thèmes
 
 ## OS Authentication dialog
 
 # This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message = Confirmez votre identité pour créer un mot de passe principal.
-# This message can be seen by trying to add a Master Password.
-master-password-os-auth-dialog-message-win = Pour créer un mot de passe principal, saisissez vos informations de connexion Windows. Cela permet de conserver la sécurité de vos comptes.
+master-password-os-auth-dialog-message-win = Pour créer un mot de passe principal, saisissez vos informations de connexion Windows. Cela contribue à protéger la sécurité de vos comptes.
 # This message can be seen by trying to add a Master Password.
 # The macOS strings are preceded by the operating system with "Thunderbird is trying to "
 # and includes subtitle of "Enter password for the user "xxx" to allow this." These
 # notes are only valid for English. Please test in your locale.
 master-password-os-auth-dialog-message-macosx = créer un mot de passe principal
+# This message can be seen by trying to add a Primary Password.
+primary-password-os-auth-dialog-message-win = Pour créer un mot de passe principal, saisissez vos informations de connexion Windows. Cela contribue à protéger la sécurité de vos comptes.
+# This message can be seen by trying to add a Primary Password.
+# The macOS strings are preceded by the operating system with "Thunderbird is trying to "
+# and includes subtitle of "Enter password for the user "xxx" to allow this." These
+# notes are only valid for English. Please test in your locale.
+primary-password-os-auth-dialog-message-macosx = créer un mot de passe principal
 # Don't change this label.
 master-password-os-auth-dialog-caption = { -brand-full-name }
 
@@ -541,6 +544,15 @@ master-password-label =
 master-password-button =
     .label = Gérer le mot de passe principal…
     .accesskey = G
+primary-password-description = Un mot de passe principal protège tous vos mots de passe, mais il faut le saisir une fois par session.
+primary-password-label =
+    .label = Utiliser un mot de passe principal
+    .accesskey = U
+primary-password-button =
+    .label = Changer le mot de passe principal ...
+    .accesskey = C
+forms-primary-pw-fips-title = Vous êtes actuellement en mode FIPS. Ce mode nécessite un mot de passe principal non vide.
+forms-master-pw-fips-desc = Échec de la modification du mot de passe principal
 junk-description = Définir les paramètres par défaut des indésirables. Les paramètres pour les indésirables propres à chaque compte peuvent être configurés dans le menu  « Paramètres des comptes… ».
 junk-label =
     .label = Quand je marque des messages comme indésirables :

@@ -19,12 +19,11 @@ browser-main-window =
     .data-title-private = { -brand-full-name } (التصفح الخاص)
     .data-content-title-default = { $content-title } - { -brand-full-name }
     .data-content-title-private = { $content-title } - { -brand-full-name } (التصفح الخاص)
-
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -39,7 +38,6 @@ browser-main-window-mac =
     .data-title-private = { -brand-full-name } - (التصفح الخاص)
     .data-content-title-default = { $content-title }
     .data-content-title-private = { $content-title } - (التصفح الخاص)
-
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -95,6 +93,8 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = حفظ البيانات في مساحة تخزين دائمة
 urlbar-addons-notification-anchor =
     .tooltiptext = افتح لوحة رسائل تنصيب الإضافات
+urlbar-tip-help-icon =
+    .title = احصل على مُساعدة
 urlbar-search-tips-confirm = حسنًا، فهمت
 # Read out before Urlbar Tip text content so screenreader users know the
 # subsequent text is a tip offered by the browser. It should end in a colon or
@@ -109,6 +109,12 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = اكتب بحروف أقل، و جِد نتائج أكثر: ابحث مستخدمًا { $engineName } مباشرة من شريط العنوان.
 urlbar-search-tips-redirect-2 = ابدأ البحث من شريط العنوان لترى الاقتراحات من { $engineName } و من تأريخ التصفح.
+
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = العلامات
+urlbar-search-mode-tabs = الألسنة
+urlbar-search-mode-history = التأريخ
 
 ##
 
@@ -136,12 +142,10 @@ urlbar-midi-blocked =
     .tooltiptext = لقد حجبنا عن هذا الموقع الوصول إلى MIDI.
 urlbar-install-blocked =
     .tooltiptext = حجبت تثبيت الإضافات في هذا الموقع.
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
     .tooltiptext = حرّر هذه العلامة ({ $shortcut })
-
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
@@ -158,6 +162,61 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = أزِل الامتداد
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [zero] لا تُرسل شيئا إلى الجهاز
+            [one] أرسِل اللسان إلى الجهاز
+            [two] أرسِل اللسانين إلى الجهاز
+            [few] أرسِل { $tabCount } ألسنة إلى الجهاز
+            [many] أرسِل { $tabCount } لسانا إلى الجهاز
+           *[other] أرسِل { $tabCount } لسان إلى الجهاز
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [zero] لا تُرسل شيئا إلى الجهاز
+            [one] أرسِل اللسان إلى الجهاز
+            [two] أرسِل اللسانين إلى الجهاز
+            [few] أرسِل { $tabCount } ألسنة إلى الجهاز
+            [many] أرسِل { $tabCount } لسانا إلى الجهاز
+           *[other] أرسِل { $tabCount } لسان إلى الجهاز
+        }
+page-action-pocket-panel =
+    .label = احفظ الصفحة في { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = انسخ الرابط
+page-action-copy-url-urlbar =
+    .tooltiptext = انسخ الرابط
+page-action-email-link-panel =
+    .label = أرسل الرابط بالبريد…
+page-action-email-link-urlbar =
+    .tooltiptext = أرسل الرابط بالبريد…
+page-action-share-url-panel =
+    .label = شارِك
+page-action-share-url-urlbar =
+    .tooltiptext = شارِك
+page-action-share-more-panel =
+    .label = أكثر…
+page-action-send-tab-not-ready =
+    .label = يُزامن الأجهزة…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = ثبّت اللسان
+page-action-pin-tab-urlbar =
+    .tooltiptext = ثبّت اللسان
+page-action-unpin-tab-panel =
+    .label = أفلِت اللسان
+page-action-unpin-tab-urlbar =
+    .tooltiptext = أفلِت اللسان
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -169,17 +228,15 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = الآن فقط ابحث باستعمال:
-
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
     .label = غيّر إعدادات البحث
 search-one-offs-change-settings-compact-button =
     .tooltiptext = غيّر إعدادات البحث
-
 search-one-offs-context-open-new-tab =
     .label = ابحث في لسان جديد
     .accesskey = س
@@ -189,16 +246,34 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = اضبطه ليكون محرّك البحث المبدئي في النوافذ الخاصة
     .accesskey = ن
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = ‏{ $engineName } ‏({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = العلامات ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = الألسنة ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = التأريخ ({ $restrict })
 
 ## Bookmark Panel
 
 bookmark-panel-show-editor-checkbox =
     .label = اعرض المحرر عند الحفظ
     .accesskey = ظ
-
 bookmark-panel-done-button =
     .label = تمّ
-
 # Width of the bookmark panel.
 # Should be large enough to fully display the Done and
 # Cancel/Remove Bookmark buttons.
@@ -218,6 +293,17 @@ identity-passive-loaded = بعض أجزاء هذه الصفحة غير آمنة 
 identity-active-loaded = لقد أوقفت الحماية على هذه الصفحة.
 identity-weak-encryption = تستخدم هذه الصفحة تعمية ضعيفة.
 identity-insecure-login-forms = معلومات الولوج التي تُدخلها في هذه الصفحة قد تكون مخترقة.
+identity-https-only-connection-upgraded = (ترقّى إلى HTTPS)
+identity-https-only-label = وضع HTTPS فقط
+identity-https-only-dropdown-on =
+    .label = مفعّل
+identity-https-only-dropdown-off =
+    .label = معطّل
+identity-https-only-dropdown-off-temporarily =
+    .label = معطّل مؤقتًا
+identity-https-only-info-turn-on2 = فعّل وضع HTTPS فقط إن أردت من { -brand-short-name } ترقية الاتصال متى أمكن.
+identity-https-only-info-turn-off2 = إن شككت أن في الصفحة عطب، فيمكنك تعطيل وضع HTTPS فقط لإعادة تحميل هذا الموقع باستعمال بروتوكول HTTP غير الآمن.
+identity-https-only-info-no-upgrade = تعذرت ترقية الاتصال من HTTP.
 identity-permissions =
     .value = التصاريح
 identity-permissions-reload-hint = قد تحتاج إعادة تحميل الصفحة لتطبيق التغييرات.
@@ -258,8 +344,16 @@ browser-window-minimize-button =
     .tooltiptext = صغّر
 browser-window-maximize-button =
     .tooltiptext = كبِّر
+browser-window-restore-down-button =
+    .tooltiptext = أنزِله
 browser-window-close-button =
     .tooltiptext = أغلق
+
+## Bookmarks toolbar items
+
+browser-import-button =
+    .label = استورِد العلامات…
+    .tooltiptext = انسخ العلامات من متصفّح آخر إلى { -brand-short-name }.
 
 ## WebRTC Pop-up notifications
 
@@ -270,35 +364,143 @@ popup-select-microphone =
     .value = الميكروفون الذي سيُشارك:
     .accesskey = ك
 popup-all-windows-shared = ستُشارك كل النوافذ الظاهرة على شاشتك.
+popup-screen-sharing-not-now =
+    .label = ليس الآن
+    .accesskey = ل
+popup-screen-sharing-never =
+    .label = لا تسمح أبدًا
+    .accesskey = س
+popup-silence-notifications-checkbox = عطّل التنبيهات { -brand-short-name } أثناء المشاركة
+popup-silence-notifications-checkbox-warning = لن يعرض { -brand-short-name } التنبيهات أثناء المشاركة.
 
 ## WebRTC window or screen share tab switch warning
 
+sharing-warning-window = أنت تُشارك { -brand-short-name }. يقدر الآخرين على رؤيتك حين تنتقل إلى لسان جديد.
+sharing-warning-screen = أنت تُشارك شاشتك كلها. يقدر الآخرين على رؤيتك حين تنتقل إلى لسان جديد.
+sharing-warning-proceed-to-tab =
+    .label = واصِل إلى اللسان
+sharing-warning-disable-for-session =
+    .label = أوقِف حماية المشاركة لهذه الجلسة
 
 ## DevTools F12 popup
 
 enable-devtools-popup-description = افتح أولا أدوات المطورين من قائمة مطوّري الوِب لاستعمال الاختصار F12.
 
-
 ## URL Bar
 
 urlbar-default-placeholder =
     .defaultPlaceholder = ابحث أو أدخل عنوانا
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = ابحث أو أدخل عنوانا
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = ابحث في الوِب
+    .aria-label = ابحث مستعملًا { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = أدخِل نص البحث
+    .aria-label = ابحث عن { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = أدخِل نص البحث
+    .aria-label = ابحث في العلامات
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = أدخِل نص البحث
+    .aria-label = ابحث في التأريخ
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = أدخِل نص البحث
+    .aria-label = ابحث في الألسنة
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = ‫ابحث مستعملًا { $name } أو أدخِل عنوانا
 urlbar-remote-control-notification-anchor =
     .tooltiptext = يخضع المتصفح للتحكم عن بعد
 urlbar-permissions-granted =
     .tooltiptext = منحت هذا الموقع صلاحيات أخرى.
 urlbar-switch-to-tab =
     .value = انتقل إلى اللسان:
-
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = الامتداد:
-
 urlbar-go-button =
-    .tooltiptext = اذهب للعنوان في شريط الموقع
+    .tooltiptext = انتقل للعنوان في شريط الموقع
 urlbar-page-action-button =
     .tooltiptext = إجراءات الصفحة
 urlbar-pocket-button =
     .tooltiptext = احفظ في { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = ابحث مستعملًا { $engine } في نافذة خاصة
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = ابحث في نافذةٍ خاصة
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = ابحث مستخدمًا { $engine }
+urlbar-result-action-switch-tab = انتقل إلى اللسان
+urlbar-result-action-visit = زُر
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = اضغط Tab للبحث باستعمال { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = اضغط Tab للبحث عبر { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = ابحث مستعملًا { $engine } مباشرة من شريط العنوان
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = ابحث مستعملًا { $engine } مباشرة من شريط العنوان
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = ابحث في العلامات
+urlbar-result-action-search-history = ابحث في التأريخ
+urlbar-result-action-search-tabs = ابحث في الألسنة
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = <span data-l10n-name="domain">{ $domain }</span> يملأ الشاشة الآن
+fullscreen-warning-no-domain = يملأ هذا المستند الشاشة الآن
+fullscreen-exit-button = غادر ملء الشاشة (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = غادر ملء الشاشة (esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = يتحكم <span data-l10n-name="domain">{ $domain }</span> في مؤشرك. اضغط Esc لتستعيد التحكم.
+pointerlock-warning-no-domain = يتحكم هذا المستند في مؤشرك. اضغط Esc لتستعيد التحكم.

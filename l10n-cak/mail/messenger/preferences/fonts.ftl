@@ -33,7 +33,7 @@ font-language-group-japanese =
 font-language-group-trad-chinese =
     .label = Traditional Chinese (Taiwan)
 font-language-group-simpl-chinese =
-    .label = Simplified Chinese
+    .label = Ch'uti Chino
 font-language-group-trad-chinese-hk =
     .label = Traditional Chinese (Hong Kong)
 font-language-group-korean =
@@ -45,23 +45,23 @@ font-language-group-el =
 font-language-group-other =
     .label = Ch'aqa' chik Kitz'ib'anik Qinoj
 font-language-group-thai =
-    .label = Thai
+    .label = Taylanes
 font-language-group-hebrew =
     .label = Hebrew
 font-language-group-arabic =
-    .label = Arabic
+    .label = Aj Arabia
 font-language-group-devanagari =
     .label = Devanagari
 font-language-group-tamil =
     .label = Tamil
 font-language-group-armenian =
-    .label = Armenyan
+    .label = Armeni'o' ch'ab'äl
 font-language-group-bengali =
     .label = Bengali
 font-language-group-canadian =
     .label = Unified Canadian Syllabary
 font-language-group-ethiopic =
-    .label = Ethiopic
+    .label = Eti'ope'
 font-language-group-georgian =
     .label = Georgian
 font-language-group-gujarati =
@@ -69,7 +69,7 @@ font-language-group-gujarati =
 font-language-group-gurmukhi =
     .label = Gurmukhi
 font-language-group-khmer =
-    .label = Khmer
+    .label = Aj CamboyaKhmer
 font-language-group-malayalam =
     .label = Malayalam
 font-language-group-math =
@@ -83,15 +83,15 @@ font-language-group-kannada =
 font-language-group-sinhala =
     .label = Sinhala
 font-language-group-tibetan =
-    .label = Tibetan
+    .label = Tibetano'
 
 ## Default font type
 
 default-font-serif =
-    .label = Serif
+    .label = Seriw
 
 default-font-sans-serif =
-    .label = Sans-serif
+    .label = Sans Serif
 
 font-size-label =
     .value = Nimilem:
@@ -134,7 +134,7 @@ use-fixed-width-plain-checkbox =
 
 ## Language settings
 
-text-encoding-legend = Rucholajil rucholajem tzij
+text-encoding-legend = Rucholajil Tz'ib'atzij
 
 text-encoding-description = Tijikib'äx ri kicholajil cholan tzij e k'o wi richin nitaq chuqa' nik'ul taqoya'l
 

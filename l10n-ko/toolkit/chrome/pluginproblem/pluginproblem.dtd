@@ -3,7 +3,7 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!-- LOCALIZATION NOTE (tapToPlayPlugin): Mobile (used for touch interfaces) only has one type of plugin possible. -->
-<!ENTITY tapToPlayPlugin                                     "여기를 탭 하면 플러그인을 실행합니다.">
+<!ENTITY tapToPlayPlugin                                     "여기를 누르면 플러그인을 활성화합니다.">
 <!ENTITY clickToActivatePlugin                               "플러그인을 실행합니다.">
 <!ENTITY checkForUpdates                                     "업데이트 검사 중…">
 <!ENTITY blockedPlugin.label                                 "이 플러그인은 사용자 보호를 위해 차단되었습니다.">
@@ -19,7 +19,7 @@
 <!-- LOCALIZATION NOTE (report.please): This and the other report.* strings should be as short as possible, ideally 2-3 words. -->
 <!ENTITY report.please                                       "충돌 보고서 보내기">
 <!ENTITY report.submitting                                   "보고서 전송 중…">
-<!ENTITY report.submitted                                    "충돌 보고서를 제출 합니다.">
+<!ENTITY report.submitted                                    "충돌 보고서를 제출합니다.">
 <!ENTITY report.disabled                                     "충돌 보고서가 비활성화 되었습니다.">
 <!ENTITY report.failed                                       "제출에 실패했습니다.">
 <!ENTITY report.unavailable                                  "제출할 리포트가 없습니다.">

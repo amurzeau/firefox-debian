@@ -110,6 +110,12 @@ urlbar-tip-icon-description =
 urlbar-search-tips-onboard = Shortcut: Hanapin ang { $engineName } direkta mula sa iyong address bar.
 urlbar-search-tips-redirect-2 = Simulan ang iyong paghahanap sa address bar para makakita ng mga mungkahi mula sa { $engineName } at sa iyong browsing history.
 
+## Local search mode indicator labels in the urlbar
+
+urlbar-search-mode-bookmarks = Mga Bookmark
+urlbar-search-mode-tabs = Mga Tab
+urlbar-search-mode-history = Kasaysayan
+
 ##
 
 urlbar-geolocation-blocked =
@@ -156,6 +162,53 @@ page-action-remove-from-urlbar =
 page-action-remove-extension =
     .label = Tanggalin ang Extension
 
+## Page Action menu
+
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [one] Ipadala ang Tab sa Device
+           *[other] Magpadala ng { $tabCount } Tab sa Device
+        }
+page-action-send-tabs-urlbar =
+    .tooltiptext =
+        { $tabCount ->
+            [one] Ipadala ang Tab sa Device
+           *[other] Magpadala ng { $tabCount } Tab sa Device
+        }
+page-action-pocket-panel =
+    .label = I-save ang Pahina sa { -pocket-brand-name }
+page-action-copy-url-panel =
+    .label = Kopyahin ang Link
+page-action-copy-url-urlbar =
+    .tooltiptext = Kopyahin ang Link
+page-action-email-link-panel =
+    .label = i-Email ang Link…
+page-action-email-link-urlbar =
+    .tooltiptext = i-Email ang Link…
+page-action-share-url-panel =
+    .label = Ibahagi
+page-action-share-url-urlbar =
+    .tooltiptext = Ibahagi
+page-action-share-more-panel =
+    .label = Karagdagang detalye…
+page-action-send-tab-not-ready =
+    .label = Nag-sysync ng Devices…
+# "Pin" is being used as a metaphor for expressing the fact that these tabs
+# are "pinned" to the left edge of the tabstrip. Really we just want the
+# string to express the idea that this is a lightweight and reversible
+# action that keeps your tab where you can reach it easily.
+page-action-pin-tab-panel =
+    .label = I-pin ang Tab
+page-action-pin-tab-urlbar =
+    .tooltiptext = I-pin ang Tab
+page-action-unpin-tab-panel =
+    .label = I-unpin ang Tab
+page-action-unpin-tab-urlbar =
+    .tooltiptext = I-unpin ang Tab
+
 ## Auto-hide Context Menu
 
 full-screen-autohide =
@@ -167,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ngayon naman, maghanap gamit ang:
 # This string won't wrap, so if the translated string is longer,
@@ -185,6 +238,26 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Itakda bilang Default Search Engine sa mga Private Window
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
+
+## Local search mode one-off buttons
+## Variables:
+##  $restrict (String): The restriction token corresponding to the search mode.
+##    Restriction tokens are special characters users can type in the urlbar to
+##    restrict their searches to certain sources (e.g., "*" to search only
+##    bookmarks).
+
+search-one-offs-bookmarks =
+    .tooltiptext = Mga Bookmark ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Mga Tab ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Kasaysayan ({ $restrict })
 
 ## Bookmark Panel
 
@@ -201,8 +274,8 @@ bookmark-panel =
 
 ## Identity Panel
 
-identity-connection-not-secure = Di Matibay na Koneksyon
-identity-connection-secure = Matibay na Koneksyon
+identity-connection-not-secure = Hindi ligtas ang koneksyon
+identity-connection-secure = Ligtas na koneksyon
 identity-connection-internal = Ito ay secure na { -brand-short-name } na pahina.
 identity-connection-file = Ang pahinang ito ay naka-imbak sa iyong computer.
 identity-extension-page = Ang pahinang ito ay nai-load mula sa isang extension.
@@ -212,6 +285,17 @@ identity-passive-loaded = Ang mga bahagi ng pahinang ito ay hindi ligtas (tulad 
 identity-active-loaded = Hindi mo pinagana ang proteksyon sa pahinang ito.
 identity-weak-encryption = Ang pahinang ito ay gumagamit ng mahina na pag-encrypt.
 identity-insecure-login-forms = Ang mga pag-login na ipinasok sa pahinang ito ay maaaring makompromiso.
+identity-https-only-connection-upgraded = (inupgrade na sa HTTPS)
+identity-https-only-label = HTTPS-Only Mode
+identity-https-only-dropdown-on =
+    .label = Nakabukas
+identity-https-only-dropdown-off =
+    .label = Nakasara
+identity-https-only-dropdown-off-temporarily =
+    .label = Pansamantalang nakasara
+identity-https-only-info-turn-on = Buksan kung gusto mo na mag-upgrade ang { -brand-short-name } sa isang secure connection kung posible.
+identity-https-only-info-turn-off = Kung mukhang sira ang site, maaari mong isara ang HTTPS-Only Mode para mag-reload gamit ang insecure HTTP.
+identity-https-only-info-no-upgrade = Hindi kayang mag-upgrade ng koneksyon mula sa HTTP.
 identity-permissions =
     .value = Mga Pahintulot
 identity-permissions-reload-hint = Maaaring kailangan mong i-reload ang pahina para mag-aplay ang mga pagbabago.
@@ -236,7 +320,7 @@ identity-description-passive-loaded-mixed = Kahit na { -brand-short-name } Na-bl
 identity-description-active-loaded = Ang website na ito ay naglalaman ng nilalaman na hindi ligtas (tulad ng mga script) at ang iyong koneksyon dito ay hindi pribado.
 identity-description-active-loaded-insecure = Ang impormasyon na ibinabahagi mo sa site na ito ay maaaring makita ng iba (tulad ng mga password, mensahe, credit card, atbp.).
 identity-learn-more =
-    .value = Matuto ng higit pa
+    .value = Alamin
 identity-disable-mixed-content-blocking =
     .label = Huwag paganahin ang proteksyon sa ngayon
     .accesskey = D
@@ -272,9 +356,17 @@ popup-screen-sharing-not-now =
 popup-screen-sharing-never =
     .label = Huwag Payagan
     .accesskey = H
+popup-silence-notifications-checkbox = I-disable ang mga notification mula sa { -brand-short-name } habang nagbabahagi
+popup-silence-notifications-checkbox-warning = Hindi magpapakita ng mga notification ang { -brand-short-name } habang ikaw ay nagbabahagi.
 
 ## WebRTC window or screen share tab switch warning
 
+sharing-warning-window = Ibinabahagi mo ang { -brand-short-name }. Makikita ng ibang mga tao kapag lumipat ka sa bagong tab.
+sharing-warning-screen = Ibinabahagi mo ang iyong buong screen. Makikita ng ibang mga tao kapag lumipat ka sa bagong tab.
+sharing-warning-proceed-to-tab =
+    .label = Magpatuloy sa Tab
+sharing-warning-disable-for-session =
+    .label = I-disable ang sharing protection para sa session na ito
 
 ## DevTools F12 popup
 
@@ -284,8 +376,42 @@ enable-devtools-popup-description = Para gamitin ang F1 2 shortcut, unang buksan
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Hanapin o ilagay ang address
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Hanapin o ilagay ang address
+# This placeholder is used in search mode with search engines that search the
+# entire web.
+# Variables
+#  $name (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-placeholder-search-mode-web-2 =
+    .placeholder = Hanapin sa Web
+    .aria-label = Maghanap gamit ang { $name }
+# This placeholder is used in search mode with search engines that search a
+# specific site (e.g., Amazon).
+# Variables
+#  $name (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-placeholder-search-mode-other-engine =
+    .placeholder = Ipasok ang mga search term
+    .aria-label = Hanapin { $name }
+# This placeholder is used when searching bookmarks.
+urlbar-placeholder-search-mode-other-bookmarks =
+    .placeholder = Ipasok ang mga search term
+    .aria-label = Hanapin sa mga bookmark
+# This placeholder is used when searching history.
+urlbar-placeholder-search-mode-other-history =
+    .placeholder = Ipasok ang mga search term
+    .aria-label = Hanapin sa kasaysayan
+# This placeholder is used when searching open tabs.
+urlbar-placeholder-search-mode-other-tabs =
+    .placeholder = Ipasok ang mga search term
+    .aria-label = Hanapin sa mga tab
+# Variables
+#  $name (String): the name of the user's default search engine
+urlbar-placeholder-with-name =
+    .placeholder = Maghanap gamit ang { $name } o ipasok ang address
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Browser ay kasalukuyang nire-remote kontrol
 urlbar-permissions-granted =
@@ -301,3 +427,54 @@ urlbar-page-action-button =
     .tooltiptext = Page actions
 urlbar-pocket-button =
     .tooltiptext = I-save sa { -pocket-brand-name }
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+
+# Used when the private browsing engine differs from the default engine.
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-in-private-w-engine = Maghanap gamit ang { $engine } sa Private Window
+# Used when the private browsing engine is the same as the default engine.
+urlbar-result-action-search-in-private = Maghanap sa Private Window
+# The "with" format was chosen because the search engine name can end with
+# "Search", and we would like to avoid strings like "Search MSN Search".
+# Variables
+#  $engine (String): the name of a search engine
+urlbar-result-action-search-w-engine = Maghanap gamit ang { $engine }
+urlbar-result-action-switch-tab = Lumipat sa Tab
+urlbar-result-action-visit = Puntahan
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Hanapin sa mga Bookmark
+urlbar-result-action-search-history = Hanapin sa Kasaysayan
+urlbar-result-action-search-tabs = Hanapin sa mga Tab
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Maghanap gamit ang { $engine } direkta mula sa address bar
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Maghanap sa { $engine } direkta mula sa address bar
+
+## Full Screen and Pointer Lock UI
+
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is full screen, e.g. "mozilla.org"
+fullscreen-warning-domain = Ang <span data-l10n-name="domain">{ $domain }</span> ay naka-full screen na ngayon
+fullscreen-warning-no-domain = Ang dokument na ito ay naka full screen
+fullscreen-exit-button = Umalis sa Full Screen (Esc)
+# "esc" is lowercase on mac keyboards, but uppercase elsewhere.
+fullscreen-exit-mac-button = Umalis sa Full Screen (Esc)
+# Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
+# Variables
+#  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ay may kontrol sa iyong pointer. Pindutin ang ESC para mabawi ang kontrol.
+pointerlock-warning-no-domain = Ang dokumentong ito ay may kontrol sa iyong pointer. Pindutin ang Esc para manumbalik ang kontrol.

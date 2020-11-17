@@ -9,6 +9,10 @@
 remove-address-row-type = Ukloni { $type } polje
 
 #   $type (String) - the type of the addressing row
+remove-address-row-type-label =
+    .tooltiptext = Ukloni polje { $type }
+
+#   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
     { $count ->
@@ -43,3 +47,31 @@ pill-action-move-bcc =
     .label = Premjesti se na Bcc
     .accesskey = B
 
+#   $count (Number) - the number of attachments in the attachment bucket
+attachment-bucket-count =
+    .value =
+        { $count ->
+            [1] { $count } prilog
+            [one] { $count } prilog
+            [few] { $count } priloga
+           *[other] { $count } priloga
+        }
+    .accesskey = r
+
+#   $count (Number) - the number of attachments in the attachment bucket
+attachments-placeholder-tooltip =
+    .tooltiptext =
+        { $count ->
+            [1] { $count } prilog
+            [one] { $count } prilog
+            [few] { $count } priloga
+           *[other] { $count } priloga
+        }
+
+#   { attachment-bucket-count.accesskey } - Do not localize this message.
+key-toggle-attachment-pane =
+    .key = { attachment-bucket-count.accesskey }
+
+button-return-receipt =
+    .label = Potvrda
+    .tooltiptext = Zatraži potvrdu za ovu poruku

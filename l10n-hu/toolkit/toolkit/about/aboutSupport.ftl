@@ -14,6 +14,12 @@ extensions-name = Név
 extensions-enabled = Engedélyezve
 extensions-version = Verzió
 extensions-id = Azonosító
+support-addons-title = Kiegészítők
+support-addons-name = Név
+support-addons-type = Típus
+support-addons-enabled = Engedélyezve
+support-addons-version = Verzió
+support-addons-id = Azonosító
 security-software-title = Biztonsági szoftver
 security-software-type = Típus
 security-software-name = Név
@@ -59,6 +65,7 @@ app-basics-service-workers = Regisztrált Service Workerek
 app-basics-profiles = Profilok
 app-basics-launcher-process-status = Indító folyamat
 app-basics-multi-process-support = Több folyamatú ablakok
+app-basics-fission-support = Fission-ablakok
 app-basics-remote-processes-count = Távoli folyamatok
 app-basics-enterprise-policies = Vállalati házirendek
 app-basics-location-service-key-google = Google helymeghatározási szolgáltatás kulcs
@@ -71,6 +78,12 @@ show-dir-label =
         [windows] Mappa megnyitása
        *[other] Könyvtár megnyitása
     }
+environment-variables-title = Környezeti változók
+environment-variables-name = Név
+environment-variables-value = Érték
+experimental-features-title = Kísérleti funkciók
+experimental-features-name = Név
+experimental-features-value = Érték
 modified-key-prefs-title = Fontos, módosított beállítások
 modified-prefs-name = Név
 modified-prefs-value = Érték
@@ -95,8 +108,6 @@ graphics-desktop-environment = Asztali környezet
 place-database-title = Helyek adatbázisa
 place-database-integrity = Sértetlenség
 place-database-verify-integrity = Sértetlenség ellenőrzése
-js-title = JavaScript
-js-incremental-gc = Inkrementális GC
 a11y-title = Kisegítő lehetőségek
 a11y-activated = Aktiválva
 a11y-force-disabled = Kisegítő lehetőségek letiltása
@@ -126,7 +137,6 @@ restart-button-label = Újraindítás
 
 audio-backend = Hang háttérprogram
 max-audio-channels = Csatornák maximum
-channel-layout = Elsődleges csatornakiosztás
 sample-rate = Elsődleges mintavételezési sebesség
 roundtrip-latency = Oda-vissza út késleltetése (szórás)
 media-title = Média
@@ -263,11 +273,13 @@ blocklisted-bug = Ismert problémák miatt blokkolva
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = { $bugNumber } számú hiba
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Ismert problémák miatt blokkolva: <a data-l10n-name="bug-link">{ $bugNumber }. hiba</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Blokkolva, hibakód: { $failureCode }
 d3d11layers-crash-guard = D3D11 kompozitáló
 d3d11video-crash-guard = D3D11 videodekóder
-d3d9video-crash-buard = D3D9 videodekóder
 d3d9video-crash-guard = D3D9 videodekóder
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX videodekóder
@@ -315,6 +327,20 @@ multi-process-status-6 = A nem támogatott szövegbevitel letiltotta
 multi-process-status-7 = Kiegészítők letiltották
 multi-process-status-8 = Kikapcsolása kényszerítve
 multi-process-status-unknown = Ismeretlen állapot
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
+fission-status-experiment-control = Kísérlet által letiltva
+fission-status-experiment-treatment = Kísérlet által engedélyezve
+fission-status-disabled-by-e10s-env = Környezet által letiltva
+fission-status-enabled-by-env = Környezet által engedélyezve
+fission-status-disabled-by-safe-mode = Csökkentett mód miatt letiltva
+fission-status-enabled-by-default = Alapértelmezésben engedélyezve
+fission-status-disabled-by-default = Alapértelmezésben tiltva
+fission-status-enabled-by-user-pref = A felhasználó által engedélyezve
+fission-status-disabled-by-user-pref = A felhasználó által letiltva
+fission-status-disabled-by-e10s-other = E10s letiltva
 async-pan-zoom = Aszinkron görgetés/nagyítás
 apz-none = nincs
 wheel-enabled = kerékbemenet engedélyezve
@@ -335,3 +361,12 @@ touch-warning = aszinkron érintőbemenet letiltva egy nem támogatott beállít
 policies-inactive = Inaktív
 policies-active = Aktív
 policies-error = Hiba
+
+## Printing section
+
+support-printing-title = Nyomtatás
+support-printing-troubleshoot = Hibaelhárítás
+support-printing-clear-settings-button = Mentett nyomtatási beállítások törlése
+support-printing-modified-settings = Módosított nyomtatási beállítások
+support-printing-prefs-name = Név
+support-printing-prefs-value = Érték

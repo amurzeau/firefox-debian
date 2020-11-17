@@ -115,8 +115,8 @@ options-enable-chrome-tooltip =
 
 # The label for checkbox that toggles remote debugging, i.e. the devtools.debugger.remote-enabled preference
 options-enable-remote-label = เปิดใช้งานการดีบั๊กระยะไกล
-options-enable-remote-tooltip =
-    .title = การเปิดใช้ตัวเลือกนี้จะอนุญาตให้เครื่องมือนักพัฒนาตรวจสอบอินสแตนซ์ระยะไกลเหมือนใน Firefox OS
+options-enable-remote-tooltip2 =
+    .title = การเปิดตัวเลือกนี้จะอนุญาตให้สามารถดีบั๊กอินสแตนซ์เบราว์เซอร์นี้จากระยะไกลได้
 
 # The label for checkbox that toggles the service workers testing over HTTP on or off.
 options-enable-service-workers-http-label = เปิดใช้งานตัวทำงานบริการผ่าน HTTP (เมื่อกล่องเครื่องมือเปิดอยู่)
@@ -130,8 +130,6 @@ options-source-maps-tooltip =
 
 # The message shown for settings that trigger page reload
 options-context-triggers-page-refresh = *เรียกหน้าเว็บใหม่เฉพาะวาระปัจจุบันเท่านั้น
-
-##
 
 # The label for the checkbox that toggles the display of the platform data in the
 # Profiler i.e. devtools.profiler.ui.show-platform-data a boolean preference in about:config

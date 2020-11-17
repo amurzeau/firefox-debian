@@ -18,6 +18,7 @@ certmgr-mine = Dëshmi që ju identifikojnë keni prej këtyre enteve
 certmgr-remembered = Këto dëshmi përdoren për t’ju identifikuar në sajte
 certmgr-people = Keni të ruajtura dëshmi që identifikojnë këta persona
 certmgr-servers = Keni të ruajtura dëshmi që identifikojnë këta shërbyes
+certmgr-server = Këto zëra identifikojnë përjashtime gabimesh dëshmish shërbyesi
 certmgr-ca = Keni të ruajtura dëshmi që identifikojnë këta autoritete dëshmish
 certmgr-detail-general-tab-title =
     .label = Të përgjithshme
@@ -161,6 +162,10 @@ delete-ssl-cert-title =
     .title = Fshi Përjashtime Dëshmish Shërbyesi
 delete-ssl-cert-confirm = Jeni i sigurt që doni të fshihen këto përjashtime shërbyesi?
 delete-ssl-cert-impact = Nëse fshini një përjashtim shërbyesi, riktheni kështu kontrollet e zakonshëm të sigurisë për atë shërbyes dhe e shtrëngoni të përdorë një dëshmi të vlefshme.
+delete-ssl-override-title =
+    .title = Fshi Përjashtim Dëshmish Shërbyesi
+delete-ssl-override-confirm = Jeni i sigurt se doni të fshihet ky përjashtim shërbyesi?
+delete-ssl-override-impact = Nëse fshini një përjashtim shërbyesi, riktheni kështu kontrollet e zakonshëm të sigurisë për atë shërbyes dhe e shtrëngoni të përdorë një dëshmi të vlefshme.
 delete-ca-cert-title =
     .title = Fshini ose Mos Besoni Dëshmi AD-sh
 delete-ca-cert-confirm = Keni kërkuar të fshihen këto dëshmi AD-sh. Do të hiqet çfarëdo besimi për dëshmi të trupëzuara, çka ka të njëjtin efekt. Jeni i sigurt se doni të fshihen ose të mos besohen?
@@ -208,6 +213,15 @@ cert-not-verified-issuer-unknown = S’verifikoi dot këtë dëshmi, sepse lësh
 cert-not-verified-ca-invalid = S’verifikoi dot këtë dëshmi, sepse dëshmia e AD-ve është e pavlefshme.
 cert-not-verified_algorithm-disabled = Kjo dëshmi nuk u verifikua dot, ngaqë qe nënshkruar duke përdorur një algoritëm nënshkrimesh i cili është i çaktivizuar, pasi nuk është algoritëm i sigurt.
 cert-not-verified-unknown = Për arsye të panjohura, s’verifikoi dot këtë dëshmi.
+# Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
+send-no-client-certificate = Mos dërgo dëshmi klienti
+# Used when no cert is stored for an override
+no-cert-stored-for-override = (E Paruajtur)
+
+## Used to show whether an override is temporary or permanent
+
+permanent-override = I përhershëm
+temporary-override = I përkohshëm
 
 ## Add Security Exception dialog
 

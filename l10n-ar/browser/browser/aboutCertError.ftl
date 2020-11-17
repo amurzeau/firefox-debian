@@ -80,6 +80,12 @@ cert-error-details-key-pinning-label = تثبيت مفتاح HTTP العام: { 
 
 cert-error-details-cert-chain-label = سلسلة الشهادة:
 
+open-in-new-window-for-csp-or-xfo-error = افتح الموقع في نافذة جديدة
+
+# Variables:
+# $hostname (String) - Hostname of the website blocked by csp or xfo error.
+csp-xfo-blocked-long-desc = لحماية أمنك لن يسمح { $hostname } أن يعرض { -brand-short-name } الصفحة إن ضمّنها موقع آخر. لترى هذه الصفحة عليك فتحها في نافذة جديدة.
+
 ## Messages used for certificate error titles
 
 connectionFailure-title = تعذر الاتصال
@@ -107,8 +113,7 @@ proxyResolveFailure-title = تعذر العثور على الخادوم الوس
 redirectLoop-title = لا تعيد الصفحة التوجيه بشكل سليم
 unknownSocketType-title = استجابة غير متوقعة من الخادوم
 nssFailure2-title = فشل الاتصال الآمن
-cspBlocked-title = حجبتها سياسة أمن المحتوى
-xfoBlocked-title = حجبتها سياسة X-Frame-Options
+csp-xfo-error-title = لا يمكن أن يعرض { -brand-short-name } الصفحة
 corruptedContentError-title = خطأ محتوى فاسد
 remoteXUL-title = XUL بعيد
 sslv3Used-title = تعذّر الاتصال بأمان
