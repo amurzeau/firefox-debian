@@ -80,6 +80,7 @@ printui-system-dialog-link = Stampa utilizzando la finestra di dialogo del siste
 printui-primary-button = Stampa
 printui-primary-button-save = Salva
 printui-cancel-button = Annulla
+printui-close-button = Chiudi
 
 printui-loading = Preparazione anteprima
 
@@ -88,6 +89,7 @@ printui-loading = Preparazione anteprima
 printui-preview-label =
     .aria-label = Anteprima di stampa
 
+printui-pages-per-sheet = Pagine per foglio
 ## Paper sizes that may be supported by the Save to PDF destination:
 
 printui-paper-a5 = A5

@@ -1,0 +1,20 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY  managecerts.caption      "Διαχείριση πιστοποιητικών">
+<!ENTITY  managecerts.button       "Διαχείριση πιστοποιητικών…">
+<!ENTITY  managecerts.accesskey    "Δ">
+<!ENTITY  managedevices.caption    "Διαχείριση συσκευών ασφαλείας">
+<!ENTITY  managedevices.text       "Χρησιμοποιήστε αυτό το κουμπί για να διαχειριστείτε τις συσκευές ασφαλείας σας, όπως έξυπνες κάρτες.">
+<!ENTITY  managedevices.button     "Διαχείριση συσκευών ασφαλείας…">
+<!ENTITY  managedevices.accesskey  "α">
+
+<!ENTITY  ssl.label                "SSL">
+
+<!ENTITY  pref.certs.title         "Πιστοποιητικά">
+<!ENTITY  certs.label              "Πιστοποιητικά">
+
+<!ENTITY validation.ocsp.caption                  "OCSP">
+<!ENTITY validation.requireOCSP.description       "Όταν αποτύχει μια σύνδεση διακομιστή OCSP, αντιμετώπιση πιστοποιητικού ως μη έγκυρου">
+<!ENTITY validation.requireOCSP.accesskey         "Ό">

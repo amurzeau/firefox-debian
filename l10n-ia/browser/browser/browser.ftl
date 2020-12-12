@@ -301,6 +301,8 @@ identity-https-only-info-turn-off2 = Si le pagina non functiona, prova disactiva
 identity-https-only-info-no-upgrade = Impossibile promover le connexion HTTP.
 identity-permissions =
     .value = Permissiones
+identity-permissions-storage-access-header = Cookies inter-sitos
+identity-permissions-storage-access-hint = Iste partes pote usar cookies inter-sitos e datos del sito durante que tu es sur iste sito.
 identity-permissions-reload-hint = Il es possibile que tu debe recargar le pagina pro que le cambios se applica.
 identity-permissions-empty = Tu non ha concedite alcun permission special a iste sito.
 identity-clear-site-data =
@@ -346,9 +348,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Importar marcapaginas…
-    .tooltiptext = Copia le marcapaginas de un altere navigator a { -brand-short-name }.
+    .tooltiptext = Importar le marcapaginas de un altere navigator in { -brand-short-name }.
+bookmarks-toolbar-empty-message = Pro accesso rapide, placia tu marcapaginas sur iste barra. <a data-l10n-name="manage-bookmarks">Gerer marcapaginas…</a>
 
 ## WebRTC Pop-up notifications
 

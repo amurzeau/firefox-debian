@@ -27,7 +27,9 @@ menu =
     .title = Ireki menua
 # This menuitem is only visible on Windows and macOS
 about-logins-menu-menuitem-import-from-another-browser = Inportatu beste nabigatzaile batetik…
+about-logins-menu-menuitem-import-from-a-file = Inportatu fitxategitik…
 about-logins-menu-menuitem-export-logins = Esportatu saio-hasierak…
+about-logins-menu-menuitem-remove-all-logins = Kendu saio-hasiera guztiak…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Aukerak
@@ -67,12 +69,14 @@ about-logins-list-item-vulnerable-password-icon =
 ## Introduction screen
 
 login-intro-heading = Gordetako saio-hasieren bila? Konfiguratu { -sync-brand-short-name }.
+about-logins-login-intro-heading-logged-out = Gordetako saio-hasieren bila? Konfiguratu { -sync-brand-short-name } edo inporta itzazu.
 about-logins-login-intro-heading-logged-in = Ez da sinkronizatuta saio-hasierarik aurkitu.
 login-intro-description = Saio-hasierarik gorde baduzu beste gailu bateko { -brand-product-name }(e)n, jarraian dituzu hauek hemen eskuratzeko urratsak:
 login-intro-instruction-fxa = Sortu edo hasi saioa zure { -fxaccount-brand-name } kontuan saio-hasierak gordeta dituzun gailuan
 login-intro-instruction-fxa-settings = Ziurtatu 'Saio-hasierak' kontrol-laukia hautatu duzula { -sync-brand-short-name } ezarpenetan
 about-logins-intro-instruction-help = Laguntza jasotzeko, bisitatu <a data-l10n-name="help-link">{ -lockwise-brand-short-name } laguntza</a>
 about-logins-intro-import = Zure saio-hasierak beste nabigatzaile batean gordeta badituzu, <a data-l10n-name="import-link">{ -lockwise-brand-short-name }(e)n inporta ditzakezu</a>
+about-logins-intro-import2 = Zure saio-hasierak { -brand-product-name }(e)tik kanpo badaude gordeta, <a data-l10n-name="import-browser-link">beste nabigatzaile batetik</a> edo <a data-l10n-name="import-file-link">fitxategi batetik</a> inporta ditzakezu
 
 ## Login
 
@@ -134,6 +138,7 @@ about-logins-export-password-os-auth-dialog-message-macosx = esportatu gordetako
 
 ## Primary Password notification
 
+about-logins-primary-password-notification-message = Idatzi zure pasahitz nagusia gordetako saio-hasiera eta pasahitzak ikusteko
 master-password-reload-button =
     .label = Hasi saioa
     .accesskey = H
@@ -164,6 +169,23 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Kendu saio-hasiera hau?
 confirm-delete-dialog-message = Ekintza hau ezin da desegin.
 about-logins-confirm-remove-dialog-confirm-button = Kendu
+about-logins-confirm-remove-all-dialog-confirm-button = Kendu denak
+about-logins-confirm-remove-all-dialog-checkbox-label =
+    { $count ->
+        [1] Bai, kendu saio-hasiera hau
+        [one] Bai, kendu saio-hasiera hau
+       *[other] Bai, kendu saio-hasiera hauek
+    }
+about-logins-confirm-remove-all-dialog-title =
+    { $count ->
+        [one] Kendu saio-hasiera bat?
+       *[other] Kendu { $count } saio-hasiera?
+    }
+about-logins-confirm-remove-all-sync-dialog-title =
+    { $count ->
+        [one] Kendu saio-hasiera gailu guztietatik?
+       *[other] Kendu { $count } saio-hasiera gailu guztietatik?
+    }
 about-logins-confirm-export-dialog-title = Esportatu saio-hasierak eta pasahitzak
 about-logins-confirm-export-dialog-message = Zure pasahitzak testu irakurgarri modura gordeko dira (adib. P@sahitz3skas4) beraz esportatutako fitxategia ireki dezakeen orok ikusi ahal izango ditu.
 about-logins-confirm-export-dialog-confirm-button = Esportatu…
@@ -218,6 +240,8 @@ about-logins-export-file-picker-csv-filter-title =
 
 ## Login Import Dialog
 
+# Title of the file picker dialog
+about-logins-import-file-picker-title = Inportatu saio-hasieren fitxategia
 about-logins-import-file-picker-import-button = Inportatu
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.

@@ -16,8 +16,8 @@
 <!ENTITY insertMenu.accesskey "ι">
 <!ENTITY insertLinkCmd2.label "Σύνδεσμος…">
 <!ENTITY insertLinkCmd2.accesskey "Σ">
-<!ENTITY insertLinkCmd2.key "Υ">
-<!ENTITY insertAnchorCmd.label "Άγκυρα…">
+<!ENTITY insertLinkCmd2.key "K">
+<!ENTITY insertAnchorCmd.label "Άγκυρα με όνομα…">
 <!ENTITY insertAnchorCmd.accesskey "α">
 <!ENTITY insertImageCmd.label "Εικόνα…">
 <!ENTITY insertImageCmd.accesskey "Ε">
@@ -60,12 +60,12 @@
 <!ENTITY FontSizeSelect.tooltip "Επιλογή μεγέθους γραμματοσειράς">
 <!ENTITY decreaseFontSize.label "Μικρότερα">
 <!ENTITY decreaseFontSize.accesskey "ρ">
-<!ENTITY decrementFontSize.key "-">
-<!ENTITY decrementFontSize.key2 "_"> <!-- < is above this key on many keyboards -->
+<!ENTITY decrementFontSize.key "&lt;">
+<!ENTITY decrementFontSize.key2 ","> <!-- < is above this key on many keyboards -->
 <!ENTITY increaseFontSize.label "Μεγαλύτερα">
 <!ENTITY increaseFontSize.accesskey "γ">
-<!ENTITY incrementFontSize.key "+">
-<!ENTITY incrementFontSize.key2 "=."> <!-- > is above this key on many keyboards -->
+<!ENTITY incrementFontSize.key "&gt;">
+<!ENTITY incrementFontSize.key2 "."> <!-- > is above this key on many keyboards -->
 
 <!ENTITY fontSizeMenu.label "Μέγεθος">
 <!ENTITY fontSizeMenu.accesskey "θ">
@@ -258,7 +258,7 @@
 <!ENTITY tableSplitCell.accesskey "κ">
 <!ENTITY convertToTable.label "Δημιουργία πίνακα από επιλογή">
 <!ENTITY convertToTable.accesskey "Δ">
-<!ENTITY tableProperties.label "Ιδιότητες πίνακα...">
+<!ENTITY tableProperties.label "Ιδιότητες πίνακα…">
 <!ENTITY tableProperties.accesskey "δ">
 
 <!-- Toolbar-only items -->

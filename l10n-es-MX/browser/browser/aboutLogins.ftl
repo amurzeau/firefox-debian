@@ -29,6 +29,7 @@ menu =
 about-logins-menu-menuitem-import-from-another-browser = Importar desde otro navegador...
 about-logins-menu-menuitem-import-from-a-file = Importar desde un archivo…
 about-logins-menu-menuitem-export-logins = Exportar inicios de sesión...
+about-logins-menu-menuitem-remove-all-logins = Eliminar todos los inicios de sesión…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Opciones
@@ -168,6 +169,35 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = ¿Eliminar este inicio de sesión?
 confirm-delete-dialog-message = Esta acción no se puede deshacer
 about-logins-confirm-remove-dialog-confirm-button = Eliminar
+about-logins-confirm-remove-all-dialog-confirm-button = Eliminar todo
+about-logins-confirm-remove-all-dialog-checkbox-label =
+    { $count ->
+        [1] Sí, eliminar este inicio de sesión
+        [one] Sí, eliminar este inicio de sesión
+       *[other] Sí, eliminar estos inicios de sesión
+    }
+about-logins-confirm-remove-all-dialog-title =
+    { $count ->
+        [one] ¿Eliminar inicio de sesión de { $count }?
+       *[other] ¿Eliminar todos los inicios de sesión de { $count }?
+    }
+about-logins-confirm-remove-all-dialog-message =
+    { $count ->
+        [1] Esto eliminará el inicio de sesión que guardó con { -brand-short-name } y cualquier alerta de filtración que aparezca aquí. No podrá deshacer esta acción.
+        [one] Esto eliminará el inicio de sesión que guardó con { -brand-short-name } y cualquier alerta de filtración que aparezca aquí. No podrá deshacer esta acción.
+       *[other] Esto eliminará los inicios de sesión que guardó con { -brand-short-name } y cualquier alerta de filtración que aparezca aquí. No podrá deshacer esta acción.
+    }
+about-logins-confirm-remove-all-sync-dialog-title =
+    { $count ->
+        [one] ¿Eliminar { $count } inicio de sesión de todos los dispositivos?
+       *[other] ¿Eliminar los { $count } inicios de sesión de todos los dispositivos?
+    }
+about-logins-confirm-remove-all-sync-dialog-message =
+    { $count ->
+        [1] Esto eliminará el inicio de sesión que guardó en { -brand-short-name } en todos los dispositivos sincronizados con su { -fxaccount-brand-name }. Esto también eliminará las alertas de filtraciones que aparecen aquí. No podrá deshacer esta acción.
+        [one] Esto eliminará el inicio de sesión que guardó en { -brand-short-name } en todos los dispositivos sincronizados con su { -fxaccount-brand-name }. Esto también eliminará las alertas de filtraciones que aparecen aquí. No podrá deshacer esta acción.
+       *[other] Esto eliminará todos los inicios de sesión que guardó en { -brand-short-name } en todos los dispositivos sincronizados con su { -fxaccount-brand-name }. Esto también eliminará las alertas de filtraciones que aparecen aquí. No podrá deshacer esta acción.
+    }
 about-logins-confirm-export-dialog-title = Exportar inicios de sesión y contraseñas
 about-logins-confirm-export-dialog-message = Tus contraseñas se guardarán como texto legible (por ejemplo, BadP@ssw0rd) de modo que cualquiera que abra el archivo exportado podrá verlas.
 about-logins-confirm-export-dialog-confirm-button = Exportar...

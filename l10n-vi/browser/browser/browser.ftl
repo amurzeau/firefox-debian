@@ -293,6 +293,8 @@ identity-https-only-info-turn-off2 = Nếu trang có vẻ bị hỏng, bạn có
 identity-https-only-info-no-upgrade = Không thể nâng cấp kết nối từ HTTP.
 identity-permissions =
     .value = Quyền hạn
+identity-permissions-storage-access-header = Cookie trên nhiều trang web
+identity-permissions-storage-access-hint = Khi bạn mở trang web này, các trang web này có thể sử dụng cookie trên nhiều trang web và lấy thông tin của bạn trên trang web này.
 identity-permissions-reload-hint = Bạn có thể cần phải tải lại trang để các thay đổi được áp dụng.
 identity-permissions-empty = Bạn chưa cấp cho trang này bất kỳ một quyền đặc biệt nào.
 identity-clear-site-data =
@@ -338,9 +340,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Nhập dấu trang…
-    .tooltiptext = Sao chép dấu trang từ trình duyệt khác vào { -brand-short-name }.
+    .tooltiptext = Nhập dấu trang từ trình duyệt khác sang { -brand-short-name }.
+bookmarks-toolbar-empty-message = Để truy cập nhanh, hãy đặt dấu trang của bạn tại đây trên thanh công cụ dấu trang. <a data-l10n-name="manage-bookmarks">Quản lý dấu trang…</a>
 
 ## WebRTC Pop-up notifications
 

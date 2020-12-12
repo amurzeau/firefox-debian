@@ -17,7 +17,6 @@ places-open-window =
 places-open-private-window =
     .label = Ireki leiho pribatu berrian
     .accesskey = p
-
 places-new-bookmark =
     .label = Laster-marka berria…
     .accesskey = b
@@ -30,7 +29,6 @@ places-new-folder =
 places-new-separator =
     .label = Bereizle berria
     .accesskey = z
-
 places-view =
     .label = Ikusi
     .accesskey = s
@@ -49,12 +47,10 @@ places-by-last-visited =
 places-by-day-and-site =
     .label = Data eta gunearen arabera
     .accesskey = t
-
 places-history-search =
     .placeholder = Bilatu historia
 places-bookmarks-search =
     .placeholder = Bilatu laster-markak
-
 places-delete-domain-data =
     .label = Ahaztu gune honetaz
     .accesskey = A
@@ -64,3 +60,9 @@ places-sortby-name =
 places-properties =
     .label = Propietateak
     .accesskey = i
+# Managed bookmarks are created by an administrator and cannot be changed by the user.
+managed-bookmarks =
+    .label = Kudeatutako laster-markak
+# This label is used when a managed bookmarks folder doesn't have a name.
+managed-bookmarks-subfolder =
+    .label = Azpikarpeta

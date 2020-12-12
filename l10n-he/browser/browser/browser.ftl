@@ -301,6 +301,7 @@ identity-https-only-info-turn-off2 = אם נראה שהדף שבור, באפשר
 identity-https-only-info-no-upgrade = לא ניתן לשדרג את החיבור מ־HTTP.
 identity-permissions =
     .value = הרשאות
+identity-permissions-storage-access-header = עוגיות חוצות אתרים
 identity-permissions-reload-hint = יתכן שיהיה עליך לרענן את העמוד כדי שהשינויים ייכנסו לתוקף.
 identity-permissions-empty = לא סופקו לאתר זה הרשאות מיוחדות.
 identity-clear-site-data =
@@ -346,9 +347,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = ייבוא סימניות…
-    .tooltiptext = העתקת סימניות מדפדפן אחר אל תוך { -brand-short-name }.
+    .tooltiptext = ייבוא סימניות מדפדפן אחר אל תוך { -brand-short-name }.
+bookmarks-toolbar-empty-message = לקבלת גישה מהירה, ניתן למקם את הסימניות שלך כאן בסרגל הכלים של הסימניות. <a data-l10n-name="manage-bookmarks">ניהול סימניות…</a>
 
 ## WebRTC Pop-up notifications
 

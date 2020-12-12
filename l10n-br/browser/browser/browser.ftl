@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Skrivit nebeutoc'h, kavit muioc'h: Klaskit war { $engineName } adalek ho parrenn chomlec'h.
 urlbar-search-tips-redirect-2 = Krogit ho klask er varrenn-chomlec'h evit gwelout alioù klask { $engineName } hag ho roll istor merdeiñ.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Dibabit ar verradenn-mañ evit kavout ar pezh a fell deoc'h buanoc’h.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -226,7 +229,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Ar wech-mañ, klaskit gant:
 # This string won't wrap, so if the translated string is longer,
@@ -291,8 +294,20 @@ identity-passive-loaded = Arvarus eo lodennoù eus ar bajennad (skeudennoù, da 
 identity-active-loaded = Diweredekaet ho peus ar gwarez war ar bajenn-mañ.
 identity-weak-encryption = Enrinegañ gwan a vez arveret gant ar bajenn-mañ.
 identity-insecure-login-forms = Treuzvarc'het e c'hall bezañ an titouroù kennaskañ enanket er bajenn-mañ.
+identity-https-only-connection-upgraded = (hizivaet da HTTPS)
+identity-https-only-label = Mod HTTPS hepken
+identity-https-only-dropdown-on =
+    .label = Enaouet
+identity-https-only-dropdown-off =
+    .label = Lazhet
+identity-https-only-dropdown-off-temporarily =
+    .label = Lazhet e-pad nebeud amzer
+identity-https-only-info-turn-on2 = Gweredekait ar mod HTTPS-hepken evit al lec’hienn-mañ ma fell deoc’h vefe hizivaet ar c‘hennask gant { -brand-short-name } p'eo posupl.
+identity-https-only-info-turn-off2 = Ma seblant bezañ torret ar bajenn e c'hallit diweredekaat ar mod HTTPS-hepken evit ma vefe adkarget al lec'hienn gant HTTP diziogel.
+identity-https-only-info-no-upgrade = N'haller ket gwellaat ar c'hennask HTTP.
 identity-permissions =
     .value = Aotreoù
+identity-permissions-storage-access-header = Toupinoù etrelec'hienn
 identity-permissions-reload-hint = Ret eo deoc'h adkargañ ar bajenn evit arloañ ar c'hemmoù.
 identity-permissions-empty = N'ho peus roet aotre arbennik ebet d'al lec'hienn-mañ.
 identity-clear-site-data =
@@ -336,13 +351,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Serriñ
 
+## Bookmarks toolbar items
+
+browser-import-button2 =
+    .label = Enporzhiañ ar sinedoù…
+    .tooltiptext = Enporzhiañ ar sinedoù adalek ur merdeer all betek { -brand-short-name }.
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
-    .value = Webkam da rannañ :
+    .value = Webkam da rannañ:
     .accesskey = W
 popup-select-microphone =
-    .value = Klevell da rannañ :
+    .value = Klevell da rannañ:
     .accesskey = K
 popup-all-windows-shared = Rannet e vo an holl brenestroù gwelus war ho skramm.
 popup-screen-sharing-not-now =
@@ -412,7 +433,7 @@ urlbar-remote-control-notification-anchor =
 urlbar-permissions-granted =
     .tooltiptext = Roet ho peus aotreoù ouzhpenn d'al lec'hienn-mañ.
 urlbar-switch-to-tab =
-    .value = Mont d'an ivinell :
+    .value = Mont d'an ivinell:
 # Used to indicate that a selected autocomplete entry is provided by an extension.
 urlbar-extension =
     .value = Askouezh:
@@ -439,6 +460,7 @@ urlbar-result-action-search-in-private = Klask en ur prenestr prevez
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Klask gant { $engine }
+urlbar-result-action-sponsored = Paeronet
 urlbar-result-action-switch-tab = Mont d'an ivinell
 urlbar-result-action-visit = Gweladenniñ
 
@@ -446,6 +468,9 @@ urlbar-result-action-visit = Gweladenniñ
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-bookmarks = Klask er sinedoù
+urlbar-result-action-search-history = Klask er roll istor
+urlbar-result-action-search-tabs = Klask ivinelloù
 
 ## Full Screen and Pointer Lock UI
 

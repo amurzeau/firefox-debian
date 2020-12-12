@@ -73,7 +73,7 @@ cfr-doorhanger-pintab-animation-resume = Συνέχιση
 
 cfr-doorhanger-bookmark-fxa-header = Συγχρονίστε παντού τους σελιδοδείκτες σας.
 cfr-doorhanger-bookmark-fxa-body = Εξαιρετική ανακάλυψη! Μην ξεχάσετε να αποθηκεύσετε αυτό το σελιδοδείκτη στις κινητές συσκευές σας. Ξεκινήστε με ένα { -fxaccount-brand-name }.
-cfr-doorhanger-bookmark-fxa-link-text = Συγχρονισμός σελιδοδεικτών τώρα...
+cfr-doorhanger-bookmark-fxa-link-text = Συγχρονισμός σελιδοδεικτών τώρα…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Κουμπί κλεισίματος
     .title = Κλείσιμο
@@ -263,8 +263,6 @@ cfr-doorhanger-fission-primary-button = Το κατάλαβα
     .accesskey = Τ
 cfr-doorhanger-fission-secondary-button = Μάθετε περισσότερα
     .accesskey = Μ
-# Deprecated
-cfr-doorhanger-fission-body = Το { -brand-short-name } έχει ενεργοποιήσει μια πειραματική λειτουργία, το Fission (απομόνωση ιστοσελίδας) για εσάς. Απομονώνοντας την κάθε σελίδα σε ξεχωριστή διεργασία, το Fission παρέχει ένα επιπλέον επίπεδο ασφαλείας για εσάς και τις ιστοσελίδες που επισκέπτεστε.
 
 ## What's new: Cookies message
 
@@ -277,3 +275,8 @@ cfr-whatsnew-clear-cookies-image-alt = Απεικόνιση αποκλεισμο
 cfr-whatsnew-media-keys-header = Περισσότερα στοιχεία ελέγχου πολυμέσων
 cfr-whatsnew-media-keys-body = Κάντε αναπαραγωγή και παύση ήχου ή βίντεο απευθείας από το πληκτρολόγιό σας ή τα ακουστικά σας, κάνοντας εύκολο τον έλεγχο πολυμέσων από άλλη καρτέλα, πρόγραμμα ή ακόμη και την οθόνη κλειδώματος. Μπορείτε επίσης να κάνετε εναλλαγή κομματιών με τα πλήκτρα "εμπρός" και "πίσω".
 cfr-whatsnew-media-keys-button = Μάθετε πώς
+
+## What's new: Search shortcuts
+
+cfr-whatsnew-search-shortcuts-header = Αναζήτηση συντομεύσεων στη γραμμή διευθύνσεων
+cfr-whatsnew-search-shortcuts-body = Πλέον, όταν πληκτρολογείτε μια μηχανή αναζήτησης ή μια συγκεκριμένη ιστοσελίδα στη γραμμή διευθύνσεων, θα εμφανίζεται μια μπλε συντόμευση στις προτάσεις αναζήτησης. Επιλέξτε τη συντόμευση για να ολοκληρώσετε την αναζήτησή σας απευθείας από τη γραμμή διευθύνσεων.

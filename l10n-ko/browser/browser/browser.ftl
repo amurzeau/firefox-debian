@@ -293,6 +293,8 @@ identity-https-only-info-turn-off2 = 페이지가 손상된 것 같으면 이 �
 identity-https-only-info-no-upgrade = HTTP에서 연결을 업그레이드할 수 없습니다.
 identity-permissions =
     .value = 권한
+identity-permissions-storage-access-header = 교차 사이트 쿠키
+identity-permissions-storage-access-hint = 이 당사자는 사용자가 이 사이트에 있는 동안 교차 사이트 쿠키 및 사이트 데이터를 사용할 수 있습니다.
 identity-permissions-reload-hint = 변경 사항을 적용하려면 페이지를 다시 로드해야할 수도 있습니다.
 identity-permissions-empty = 이 사이트를 특별한 권한으로 승인하지 않았습니다.
 identity-clear-site-data =
@@ -338,9 +340,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = 북마크 가져오기…
-    .tooltiptext = 다른 브라우저에서 { -brand-short-name }로 북마크를 복사합니다.
+    .tooltiptext = 다른 브라우저에서 { -brand-short-name }로 북마크를 가져옵니다.
+bookmarks-toolbar-empty-message = 빠르게 접근하려면, 여기 북마크 도구 모음에 북마크를 놓으세요. <a data-l10n-name="manage-bookmarks">북마크 관리…</a>
 
 ## WebRTC Pop-up notifications
 

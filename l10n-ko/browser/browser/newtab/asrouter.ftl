@@ -253,8 +253,6 @@ cfr-doorhanger-fission-primary-button = 확인
     .accesskey = O
 cfr-doorhanger-fission-secondary-button = 더 알아보기
     .accesskey = L
-# Deprecated
-cfr-doorhanger-fission-body = { -brand-short-name }가 실험 기능인 Fission (사이트 격리)을 사용하도록 설정했습니다. 각 사이트를 별도의 프로세스로 격리함으로써 Fission은 사용자와 사용자가 방문하는 웹 사이트에 추가적인 보안 계층을 제공합니다.
 
 ## What's new: Cookies message
 
@@ -267,3 +265,8 @@ cfr-whatsnew-clear-cookies-image-alt = 쿠키 차단 그림
 cfr-whatsnew-media-keys-header = 더 많은 미디어 컨트롤
 cfr-whatsnew-media-keys-body = 키보드 또는 헤드셋에서 바로 오디오 또는 비디오를 재생 및 일시 중지하여 다른 탭, 프로그램 또는 컴퓨터가 잠긴 경우에도 미디어를 쉽게 제어할 수 있습니다. 또한 앞으로 및 뒤로 키를 사용하여 트랙 사이를 이동할 수도 있습니다.
 cfr-whatsnew-media-keys-button = 방법 알아보기
+
+## What's new: Search shortcuts
+
+cfr-whatsnew-search-shortcuts-header = 주소 표시줄의 검색 바로 가기
+cfr-whatsnew-search-shortcuts-body = 이제, 검색 엔진이나 특정 사이트를 주소 표시줄에 입력하면 아래의 검색 제안에 파란색 바로 가기가 나타납니다. 주소 표시줄에서 바로 검색을 완료하려면 해당 바로 가기를 선택하세요.

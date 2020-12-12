@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = 주의해서 진행하세요
 pane-experimental-search-results-header = { -brand-short-name } 실험: 주의해서 진행하세요
 pane-experimental-description = 고급 구성 설정을 변경하면 { -brand-short-name }의 성능 또는 보안에 영향을 줄 수 있습니다.
+pane-experimental-reset =
+    .label = 기본값으로 복원
+    .accesskey = R
 help-button-label = { -brand-short-name } 도움말
 addons-button-label = 확장 기능 및 테마
 focus-search =
@@ -500,6 +503,8 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = 스폰서 소식
 home-prefs-highlights-header =
     .label = 하이라이트
+home-prefs-recent-activity-header =
+    .label = 최근 활동
 home-prefs-highlights-description = 저장하거나 방문한 사이트 모음
 home-prefs-highlights-option-visited-pages =
     .label = 방문한 페이지
@@ -913,6 +918,7 @@ addressbar-suggestions-settings = 검색 엔진 제안 설정 변경
 content-blocking-enhanced-tracking-protection = 향상된 추적 방지 기능
 content-blocking-section-top-level-description = 추적기는 온라인에서 사용자를 따라다니며 탐색 습관과 관심사에 대한 정보를 수집합니다. { -brand-short-name }는 이러한 많은 추적기 및 기타 악성 스크립트를 차단합니다.
 content-blocking-learn-more = 더 알아보기
+content-blocking-fpi-incompatibility-warning = { -brand-short-name }의 일부 쿠키 설정을 재정의하는 자사 격리 (FPI)를 사용 중입니다.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.

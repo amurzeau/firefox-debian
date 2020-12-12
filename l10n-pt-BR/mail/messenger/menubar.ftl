@@ -8,3 +8,18 @@
 menu-view-charset =
     .label = Codificação de texto
     .accesskey = C
+
+## Mail Toolbar
+
+toolbar-junk-button =
+    .label = Spam
+    .tooltiptext = Marcar as mensagens selecionadas como spam
+toolbar-not-junk-button =
+    .label = Não é spam
+    .tooltiptext = Marcar as mensagens selecionadas como não spam
+toolbar-delete-button =
+    .label = Excluir
+    .tooltiptext = Excluir pasta ou mensagens selecionadas
+toolbar-undelete-button =
+    .label = Restaurar
+    .tooltiptext = Restaurar mensagens selecionadas

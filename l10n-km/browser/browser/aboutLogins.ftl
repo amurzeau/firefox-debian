@@ -25,6 +25,8 @@ fxaccounts-avatar-button =
 
 menu =
     .title = បើក​ម៉ឺនុយ
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = នាំចូលពីកម្មវិធីរុករកតាម​អ៊ីនធឺណិតផ្សេងទៀត…
 about-logins-menu-menuitem-import-from-a-file = នាំចូល​ពី​ឯកសារ…
 about-logins-menu-menuitem-export-logins = នាំចេញចូល...
 menu-menuitem-preferences =
@@ -47,6 +49,7 @@ login-list-count =
 login-list-sort-label-text = តម្រៀបតាម៖
 login-list-name-option = ឈ្មោះ (A-Z)
 login-list-name-reverse-option = ឈ្មោះ (Z-A)
+about-logins-login-list-alerts-option = ការជូនដំណឹង
 login-list-last-changed-option = បាន​កែប្រែ​ចុងក្រោយ
 login-list-last-used-option = បាន​ប្រើប្រាស់​ចុងក្រោយ
 login-list-intro-title = រក​មិន​ឃើញ​ការចូល​ទេ
@@ -58,15 +61,19 @@ login-list-item-subtitle-new-login = បញ្ចូល​ព័ត៌មាន�
 login-list-item-subtitle-missing-username = (គ្មាន​ឈ្មោះ​អ្នក​ប្រើប្រាស់)
 about-logins-list-item-breach-icon =
     .title = គេហទំព័រ​ដែល​បាន​បំពាន
+about-logins-list-item-vulnerable-password-icon =
+    .title = ពាក្យសម្ងាត់ងាយរងគ្រោះ
 
 ## Introduction screen
 
 login-intro-heading = កំពុង​រក​មើល​ការចូល​ដែល​បាន​រក្សាទុក​របស់​អ្នក​មែន​ទេ? រៀបចំ { -sync-brand-short-name } ។
+about-logins-login-intro-heading-logged-out = កំពុងរកមើលការចូលដែលបានរក្សាទុករបស់អ្នកឬ? រៀបចំ​ { -sync-brand-short-name } ឬនាំចូល​ការចូល​ទាំងនោះ។
 about-logins-login-intro-heading-logged-in = រកមិនឃើញការចូលដែល​បាន​ធ្វើសមកាលកម្ម។
 login-intro-description = ប្រសិនបើ​អ្នក​បាន​រក្សាទុក​ការចូល​របស់​អ្នក​ទៅ { -brand-product-name } នៅ​លើ​ឧបករណ៍​ផ្សេង នេះជា​របៀប​​ចូល​​មើល​ការចូល​ទាំងនោះ​នៅ​ត្រង់នេះ៖
 login-intro-instruction-fxa = បង្កើត ឬ​ចូល​ទៅ { -fxaccount-brand-name } របស់​អ្នក​នៅ​លើ​ឧបករណ៍ ត្រង់​កន្លែង​ដែល​បាន​រក្សាទុក​ការចូល​របស់​អ្នក
 login-intro-instruction-fxa-settings = ប្រាកដ​ថា អ្នក​បាន​ជ្រើសរើស​​ប្រអប់​ធីក​ការចូល​នៅ​ក្នុង​ការកំណត់ { -sync-brand-short-name }
 about-logins-intro-instruction-help = ចូល​មើល <a data-l10n-name="help-link"> { -lockwise-brand-short-name } គាំទ្រ </a> សម្រាប់ជំនួយបន្ថែម
+about-logins-intro-import = ប្រសិនបើការចូលរបស់អ្នកត្រូវបានរក្សាទុកនៅក្នុងកម្មវិធីរុករកតាមអ៊ីនធឺណិតផ្សេងទៀតអ្នកអាច <a data-l10n-name="import-link"> នាំចូលការចូលទាំងនោះទៅក្នុង { -lockwise-brand-short-name }
 
 ## Login
 
@@ -95,6 +102,7 @@ login-item-time-used = បាន​ប្រើប្រាស់​ចុងក
 
 ## OS Authentication dialog
 
+about-logins-os-auth-dialog-caption = { -brand-full-name }
 
 ## The macOS strings are preceded by the operating system with "Firefox is trying to "
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These

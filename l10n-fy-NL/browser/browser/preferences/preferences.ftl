@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Gean foarsichtich troch
 pane-experimental-search-results-header = { -brand-short-name }-eksperiminten: foarsichtichheid advisearre
 pane-experimental-description = It wizigjen fan avansearre konfiguraasjefoarkarren kin de prestaasjes of feilichheid fan { -brand-short-name } beynfloedzje.
+pane-experimental-reset =
+    .label = Standertwearden opnij ynstelle
+    .accesskey = y
 help-button-label = { -brand-short-name }-stipe
 addons-button-label = Utwreidingen & Tema’s
 focus-search =
@@ -512,6 +515,8 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsore ferhalen
 home-prefs-highlights-header =
     .label = Hichtepunten
+home-prefs-recent-activity-header =
+    .label = Resinte aktiviteit
 home-prefs-highlights-description = In seleksje fan websites dy't jo bewarre of besocht hawwe
 home-prefs-highlights-option-visited-pages =
     .label = Besochte siden
@@ -929,6 +934,7 @@ addressbar-suggestions-settings = Foarkarren foar sykmasinesuggestjes wizigje
 content-blocking-enhanced-tracking-protection = Ferbettere beskerming tsjin folgjen
 content-blocking-section-top-level-description = Trackers folgje jo online om gegevens oer jo sneupgedrach en ynteresses te sammeljen. { -brand-short-name } blokkearret in protte fan dizze trackers en oare kweawollende skripts.
 content-blocking-learn-more = Mear ynfo
+content-blocking-fpi-incompatibility-warning = Jo brûke First Party Isolation (FPI), dat in oantal cookie-ynstellingen fan { -brand-short-name } oerskriuwt.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.

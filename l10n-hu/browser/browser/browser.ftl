@@ -301,6 +301,8 @@ identity-https-only-info-turn-off2 = Ha az oldal nem megfelelően működik, leh
 identity-https-only-info-no-upgrade = Nem lehet frissíteni a kapcsolatot HTTP-ről.
 identity-permissions =
     .value = Engedélyek
+identity-permissions-storage-access-header = Webhelyek közötti sütik
+identity-permissions-storage-access-hint = Ezek a felek használhatják a webhelyek közötti sütiket és a webhely adatait, amíg Ön ezen a webhelyen tartózkodik.
 identity-permissions-reload-hint = Lehet hogy újra kell töltenie az oldalt a változások érvényesítéséhez.
 identity-permissions-empty = Nem adott speciális engedélyeket ennek az oldalnak.
 identity-clear-site-data =
@@ -346,9 +348,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Könyvjelzők importálása…
-    .tooltiptext = Könyvjelzők másolása egy másik böngészőből a { -brand-short-name }ba.
+    .tooltiptext = Könyvjelzők importálása egy másik böngészőből a { -brand-short-name }ba…
+bookmarks-toolbar-empty-message = A gyors eléréshez a könyvjelzők ide helyezhetők, a könyvjelzők eszköztárra. <a data-l10n-name="manage-bookmarks">Könyvjelzők kezelése…</a>
 
 ## WebRTC Pop-up notifications
 

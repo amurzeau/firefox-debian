@@ -399,7 +399,7 @@ addon-badge-verified2 =
 
 available-updates-heading = Διαθέσιμες ενημερώσεις
 recent-updates-heading = Πρόσφατες ενημερώσεις
-release-notes-loading = Φόρτωση...
+release-notes-loading = Φόρτωση…
 release-notes-error = Λυπούμαστε, αλλά προέκυψε σφάλμα φόρτωσης των σημειώσεων έκδοσης.
 addon-permissions-empty = Αυτή η επέκταση δεν απαιτεί δικαιώματα
 addon-permissions-required = Απαιτούμενα δικαιώματα για βασική λειτουργικότητα:
@@ -421,7 +421,7 @@ locale-heading = Διαχείριση των γλωσσών σας
 updates-heading = Διαχείριση των ενημερώσεών σας
 discover-heading = Εξατομίκευση του { -brand-short-name }
 shortcuts-heading = Διαχείριση συντομεύσεων επεκτάσεων
-default-heading-search-label = Βρείτε περισσότερα πρόσθετα
+default-heading-search-label = Εύρεση περισσότερων προσθέτων
 addons-heading-search-input =
     .placeholder = Αναζήτηση στο addons.mozilla.org
 addon-page-options-button =

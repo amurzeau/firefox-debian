@@ -301,6 +301,8 @@ identity-https-only-info-turn-off2 = Pe tenda ndoikoporãirõ, ikatu emboguese p
 identity-https-only-info-no-upgrade = Ndaikatúi embohekopyahu jeike HTTP guive.
 identity-permissions =
     .value = Moneĩ
+identity-permissions-storage-access-header = Kookie tenda ojuasáva
+identity-permissions-storage-access-hint = Ko’ãva ikatu oipuru kookie ha tenda ojuasáva mba’ekuaarã eime aja ko tendápe.
 identity-permissions-reload-hint = Ikatu hína kuatiarogue emyanyhẽjey umi moambuepyre oñemboheko hag̃ua.
 identity-permissions-empty = Nome’ẽi ko tenda ñemoneĩ ha’etéva.
 identity-clear-site-data =
@@ -346,9 +348,9 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Techaukaha jegueru…
-    .tooltiptext = Emonguatia techaukaha ambue kundaháragui { -brand-short-name }-pe.
+    .tooltiptext = Egueru techaukaha ambue kundaháragui { -brand-short-name }-pe.
 
 ## WebRTC Pop-up notifications
 

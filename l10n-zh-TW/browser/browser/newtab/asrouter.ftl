@@ -148,7 +148,7 @@ cfr-whatsnew-fingerprinter-counter-body-alt = { -brand-shorter-name } 會封鎖�
 ## Bookmark Sync
 
 cfr-doorhanger-sync-bookmarks-header = 在手機上使用此書籤
-cfr-doorhanger-sync-bookmarks-body = 將您的書籤、密碼、瀏覽紀錄等資料，同步到登入至 { -brand-product-name } 的所有裝置。
+cfr-doorhanger-sync-bookmarks-body = 將您的書籤、密碼、瀏覽紀錄等資料，同步到登入 { -brand-product-name } 的所有裝置。
 cfr-doorhanger-sync-bookmarks-ok-button = 開啟 { -sync-brand-short-name }
     .accesskey = T
 
@@ -163,7 +163,7 @@ cfr-doorhanger-sync-logins-ok-button = 開啟 { -sync-brand-short-name }
 
 cfr-doorhanger-send-tab-header = 在通勤的時候閱讀這篇文章
 cfr-doorhanger-send-tab-recipe-header = 把這個食譜帶進廚房
-cfr-doorhanger-send-tab-body = Send Tab 可讓您很簡單就將連結分享到手機，或是任何登入至 { -brand-product-name } 的裝置。
+cfr-doorhanger-send-tab-body = Send Tab 可讓您很簡單就將連結分享到手機，或是任何登入 { -brand-product-name } 的裝置。
 cfr-doorhanger-send-tab-ok-button = 試試分頁傳送功能
     .accesskey = T
 
@@ -253,8 +253,6 @@ cfr-doorhanger-fission-primary-button = 好，知道了
     .accesskey = O
 cfr-doorhanger-fission-secondary-button = 了解更多
     .accesskey = L
-# Deprecated
-cfr-doorhanger-fission-body = { -brand-short-name } 已為您開啟實驗性的 Fission（網站隔離）功能。Fission 透過將各個網站隔離在不同的處理程序中，為您與您造訪的網站提供更多一層的安全性保障。
 
 ## What's new: Cookies message
 
@@ -267,3 +265,8 @@ cfr-whatsnew-clear-cookies-image-alt = 封鎖 Cookie 的插圖
 cfr-whatsnew-media-keys-header = 更多媒體控制元件
 cfr-whatsnew-media-keys-body = 使用鍵盤或耳機直接播放或暫停播放影音內容，讓您更簡單就能從另一個分頁、另一套軟體，甚至是在電腦鎖定時就控制媒體播放。您也可以使用「上一首」或「下一首」按鍵直接切換曲目。
 cfr-whatsnew-media-keys-button = 了解要怎麼做
+
+## What's new: Search shortcuts
+
+cfr-whatsnew-search-shortcuts-header = 在網址列搜尋捷徑
+cfr-whatsnew-search-shortcuts-body = 現在起，當您在網址列輸入搜尋引擎名稱或特定網址時，將於搜尋建議的下方顯示藍色捷徑。選擇該捷徑即可直接從網址列完成搜尋。

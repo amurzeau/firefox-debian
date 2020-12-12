@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = ਧਿਆਨ ਨਾਲ ਅੱਗੇ ਵਧੋ
 pane-experimental-search-results-header = { -brand-short-name } ਤਜਰਬਾ: ਧਿਆਨ ਨਾਲ ਜਾਰੀ ਰੱਖੋ
 pane-experimental-description = ਤਕਨੀਕੀ ਸੰਰਚਨਾ ਦੀਆਂ ਪਸੰਦਾਂ ਨੂੰ ਬਦਲਣ ਨਾਲ { -brand-short-name } ਦੀ ਕਾਰਗੁਜ਼ਾਰੀ ਜਾਂ ਸੁਰੱਖਿਆ ਉੱਤੇ ਅਸਰ ਪੈ ਸਕਦਾ ਹੈ।
+pane-experimental-reset =
+    .label = ਮੂਲ ਨੂੰ ਬਹਾਲ ਕਰੋ
+    .accesskey = R
 help-button-label = { -brand-short-name } ਸਮਰਥਨ
 addons-button-label = ਇਕਸਟੈਨਸ਼ਨਾਂ ਤੇ ਥੀਮ
 focus-search =
@@ -512,6 +515,8 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = ਸਪਾਂਸਰ ਕੀਤੀਆਂ ਕਹਾਣੀਆਂ
 home-prefs-highlights-header =
     .label = ਹਾਈਲਾਈਟ
+home-prefs-recent-activity-header =
+    .label = ਤਾਜ਼ਾ ਸਰਗਰਮੀ
 home-prefs-highlights-description = ਉਹਨਾਂ ਸਾਈਟਾਂ ਦੀ ਚੋਣ ਕਰੋ ਜੋ ਤੁਸੀਂ ਸੁਰੱਖਿਅਤ ਜਾਂ ਵਿਜ਼ਿਟ ਕੀਤੀ ਹੈ
 home-prefs-highlights-option-visited-pages =
     .label = ਵੇਖੇ ਗਏ ਸਫੇ
@@ -520,7 +525,7 @@ home-prefs-highlights-options-bookmarks =
 home-prefs-highlights-option-most-recent-download =
     .label = ਸਭ ਤੋਂ ਤਾਜ਼ਾ ਕੀਤੇ ਡਾਊਨਲੋਡ
 home-prefs-highlights-option-saved-to-pocket =
-    .label = ਪੰਨਿਆਂ ਨੂੰ { -pocket-brand-name } ਵਿੱਚ ਸੁਰੱਖਿਅਤ ਕੀਤਾ ਗਿਆ ਹੈ
+    .label = { -pocket-brand-name } ਵਿੱਚ ਸੰਭਾਲੇ ਗਏ ਸਫ਼ੇ
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -917,7 +922,7 @@ addressbar-locbar-bookmarks-option =
     .label = ਬੁੱਕਮਾਰਕ
     .accesskey = k
 addressbar-locbar-openpage-option =
-    .label = ਟੈਬਾਂ ਨੂੰ ਖੋਲ੍ਹੋ
+    .label = ਖੁੱਲ੍ਹੀਆਂ ਟੈਬਾਂ
     .accesskey = O
 addressbar-locbar-topsites-option =
     .label = ਚੋਟੀ ਦੀਆਂ ਸਾਈਟਾਂ
@@ -929,6 +934,9 @@ addressbar-suggestions-settings = ਖੋਜ ਇੰਜਣ ਸੁਝਾਵਾਂ �
 content-blocking-enhanced-tracking-protection = ਵਧੇਰੇ ਟਰੈਕਿੰਗ ਸੁਰੱਖਿਆ
 content-blocking-section-top-level-description = ਟਰੈਕਰ ਤੁਹਾਡੀਆਂ ਬਰਾਊਜ਼ ਕਰਨ ਦੀਆਂ ਆਦਤਾਂ ਅਤੇ ਦਿਲਚਸਪੀਆਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਇਕੱਤਰ ਕਰਨ ਲਈ ਆਨਲਾਈਨ ਤੁਹਾਡਾ ਪਿੱਛਾ ਕਰਦੇ ਹਨ। { -brand-short-name } ਇਹਨਾਂ ਟਰੈਕਰਾਂ ਅਤੇ ਹੋਰ ਖੁਣਸੀ ਸਕ੍ਰਿਪਟਾਂ ਉੱਤੇ ਪਾਬੰਦੀ ਲਾਉਂਦਾ ਹੈ।
 content-blocking-learn-more = ਹੋਰ ਜਾਣੋ
+content-blocking-fpi-incompatibility-warning =
+    ਤੁਸੀਂ ਪਹਿਲੀ ਧਿਰ ਅਲਹਿਦਗੀ (FPI) ਵਰਤ ਰਹੇ ਹੋ, ਜੋ ਕਿ ਕੁਝ { -brand-short-name }
+    ਕੂਕੀਜ਼ ਸੈਟਿੰਗਾਂ ਨੂੰ ਅਣਡਿੱਠਾ ਕਰਦੇ ਹਨ।
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1142,7 +1150,7 @@ httpsonly-header = ਸਿਰਫ਼-HTTPS ਮੋਡ
 httpsonly-description = HTTPS { -brand-short-name } ਅਤੇ ਤੁਹਾਡੇ ਵਲੋਂ ਖੋਲ੍ਹੀਆਂ ਵੈਬਸਾਈਟਾਂ ਵਿਚਾਲੇ ਇੱਕ ਸੁਰੱਖਿਅਤ, ਇੰਕ੍ਰਿਪਟ ਕੀਤਾ ਕਨੈਕਸ਼ਨ ਦਿੰਦਾ ਹੈ। ਬਹੁਤੀਆਂ ਵੈਬਸਾਈਟਾਂ HTTPS ਦਾ ਸਮਰਥਨ ਕਰਦੀਆਂ ਹਨ, ਅਤੇ ਜੇ ਸਿਰਫ-HTTPS ਮੋਡ ਸਮਰੱਥ ਹੈ ਤਾਂ { -brand-short-name } ਸਾਰੇ ਕਨੈਕਸ਼ਨਾਂ ਨੂੰ HTTPS ਵਿੱਚ ਅਪਗਰੇਡ ਕਰੇਗਾ।
 httpsonly-learn-more = ਹੋਰ ਜਾਣੋ
 httpsonly-radio-enabled =
-    .label = ਸਾਰੀਆੰ ਵਿੰਡੋ ਵਿੱਚ ਸਿਰਫ਼-HTTPS ਮੋਡ ਸਮਰੱਥ ਕਰੋ
+    .label = ਸਾਰੀਆਂ ਵਿੰਡੋ ਵਿੱਚ ਸਿਰਫ਼-HTTPS ਮੋਡ ਸਮਰੱਥ ਕਰੋ
 httpsonly-radio-enabled-pbm =
     .label = ਸਿਰਫ਼ ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋ ਵਿੱਚ ਸਿਰਫ਼-HTTPS ਮੋਡ ਸਮਰੱਥ ਕਰੋ
 httpsonly-radio-disabled =

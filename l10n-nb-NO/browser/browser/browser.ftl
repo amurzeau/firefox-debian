@@ -301,6 +301,8 @@ identity-https-only-info-turn-off2 = Hvis nettsiden virker ødelagt, kan det væ
 identity-https-only-info-no-upgrade = Kan ikke å oppgradere tilkoblingen fra HTTP.
 identity-permissions =
     .value = Tillatelser
+identity-permissions-storage-access-header = Infokapsler på tvers av nettsteder
+identity-permissions-storage-access-hint = Disse partene kan bruke infokapsler på tvers av nettsteder og nettsteddata mens du er på dette nettstedet.
 identity-permissions-reload-hint = Du må kanskje laste siden på nytt for at endringene skal gjelde.
 identity-permissions-empty = Du har ikke gitt dette nettstedet noen spesialtillatelser.
 identity-clear-site-data =
@@ -346,9 +348,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Importer bokmerker…
-    .tooltiptext = Kopier bokmerker fra en annen nettleser til { -brand-short-name }.
+    .tooltiptext = Importer bokmerker fra en annen nettleser til { -brand-short-name }.
+bookmarks-toolbar-empty-message = Plasser bokmerkene dine her på bokmerkeverktøylinjen for rask tilgang. <a data-l10n-name="manage-bookmarks">Behandle bokmerker…</a>
 
 ## WebRTC Pop-up notifications
 

@@ -301,6 +301,8 @@ identity-https-only-info-turn-off2 = We man nisamäj ta ütz ri ruxaq, rik'in ju
 identity-https-only-info-no-upgrade = Man nitikïr ta nik'ex ri okem pa HTTP.
 identity-permissions =
     .value = Taq ya'oj q'ij
+identity-permissions-storage-access-header = Kicookies xoch'in taq ruxaq
+identity-permissions-storage-access-hint = Re taq peraj re' yetikïr nikokisaj kikokies xoch'in taq ruxaq chuqa' kitzij taq ruxaq toq at k'o pa re ruxaq.
 identity-permissions-reload-hint = Rik'in jub'a' k'o chi yatok chik pa ruxaq richin yesamäj ri taq k'exoj.
 identity-permissions-empty = Majun chi ya'oj q'ij ya'on chawe' pa re ruxaq k'amaya'l re'.
 identity-clear-site-data =
@@ -346,9 +348,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
-    .label = Kejik taq yaketal…
-    .tooltiptext = Kewachib'ëx taq kiyaketal taq okik'amaya'l pa { -brand-short-name }.
+browser-import-button2 =
+    .label = Kejik' taq yaketal…
+    .tooltiptext = Kejik' taq kiyaketal ch'aqa' chik taq okik'amaya'l pa { -brand-short-name }.
+bookmarks-toolbar-empty-message = Richin jun anin okem, ke'awila' ri taq ayaketal wawe' pa ri rukajtz'ik samajib'äl. <a data-l10n-name="manage-bookmarks">Kenuk'samajïx taq yaketal…</a>
 
 ## WebRTC Pop-up notifications
 

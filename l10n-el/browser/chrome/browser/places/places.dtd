@@ -31,7 +31,7 @@
 <!ENTITY importBookmarksFromHTML.accesskey "ι">
 <!ENTITY exportBookmarksToHTML.label       "Εξαγωγή σελιδοδεικτών σε HTML…">
 <!ENTITY exportBookmarksToHTML.accesskey   "ξ">
-<!ENTITY importOtherBrowser.label          "Εισαγωγή δεδομένων από άλλο πρόγρ. περιήγησης…">
+<!ENTITY importOtherBrowser.label          "Εισαγωγή δεδομένων από άλλο φυλλομετρητή…">
 <!ENTITY importOtherBrowser.accesskey      "λ">
 
 <!ENTITY cmd.backup.label               "Αντίγραφο ασφαλείας...">
@@ -55,9 +55,8 @@
 <!ENTITY maintenance.accesskey  "ι">
 <!ENTITY maintenance.tooltip    "Εισαγωγή και αντίγραφα ασφαλείας σελιδοδεικτών">
 
-<!ENTITY backButton.tooltip  "Μετάβαση πίσω">
+<!ENTITY backButton.tooltip  "Επιστροφή">
 
 <!ENTITY forwardButton.tooltip  "Μετάβαση μπροστά">
 
 <!ENTITY detailsPane.selectAnItemText.description "Επιλέξτε ένα στοιχείο για προβολή και επεξεργασία ιδιοτήτων">
-

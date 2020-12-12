@@ -156,7 +156,7 @@ newtab-section-menu-manage-section = Διαχείριση ενότητας
 newtab-section-menu-manage-webext = Διαχείριση επέκτασης
 newtab-section-menu-add-topsite = Προσθήκη κορυφαίας ιστοσελίδας
 newtab-section-menu-add-search-engine = Προσθήκη μηχανής αναζήτησης
-newtab-section-menu-move-up = Μετακίνηση επάνω
+newtab-section-menu-move-up = Μετακίνηση πάνω
 newtab-section-menu-move-down = Μετακίνηση κάτω
 newtab-section-menu-privacy-notice = Σημείωση απορρήτου
 
@@ -171,6 +171,7 @@ newtab-section-expand-section-label =
 
 newtab-section-header-topsites = Κορυφαίες ιστοσελίδες
 newtab-section-header-highlights = Κορυφαίες στιγμές
+newtab-section-header-recent-activity = Πρόσφατη δραστηριότητα
 # Variables:
 #  $provider (String): Name of the corresponding content provider.
 newtab-section-header-pocket = Προτάσεις του { $provider }
@@ -187,7 +188,7 @@ newtab-empty-section-topstories = Δεν υπάρχει κάτι νεότερο.
 
 newtab-discovery-empty-section-topstories-header = Τελειώσατε!
 newtab-discovery-empty-section-topstories-content = Ελέγξτε ξανά αργότερα για περισσότερες ιστορίες.
-newtab-discovery-empty-section-topstories-try-again-button = Δοκιμάστε ξανά
+newtab-discovery-empty-section-topstories-try-again-button = Δοκιμή ξανά
 newtab-discovery-empty-section-topstories-loading = Φόρτωση…
 # Displays when a layout in a section took too long to fetch articles.
 newtab-discovery-empty-section-topstories-timed-out = Ωχ! Αυτή η ενότητα σχεδόν φορτώθηκε, αλλά όχι πλήρως.

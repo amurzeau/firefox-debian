@@ -17,12 +17,30 @@ handler-dialog-host = <strong>{ $host }</strong> vole aperir un ligamine <strong
 ##  $scheme - the type of link that's being opened.
 ##  $appName - Name of the application that will be opened.
 
+permission-dialog-description = Consentir a iste sito aperir le ligamine { $scheme }?
+permission-dialog-description-file = Consentir a iste file aperir le ligamine { $scheme }?
+permission-dialog-description-host = Consentir  a { $host } aperir le ligamine { $scheme }?
+permission-dialog-description-app = Consentir a iste sito aperir le ligamine { $scheme } con { $appName }?
+permission-dialog-description-host-app = Consentir a { $host } aperir le ligamine { $scheme } con { $appName }?
+permission-dialog-description-file-app = Consentir a iste file aperir le ligamine { $scheme } con { $appName }?
+
+## Please keep the emphasis around the hostname and scheme (ie the
+## `<strong>` HTML tags). Please also keep the hostname as close to the start
+## of the sentence as your language's grammar allows.
+
+permission-dialog-remember = Sempre consentir a <strong>{ $host }</strong> aperir <strong>{ $scheme }</strong> ligamines
+permission-dialog-remember-file = Sempre consentir a iste file aperir ligamines <strong>{ $scheme }</strong>
+
+##
+
 permission-dialog-btn-open-link =
     .label = Aperir le ligamine
     .accessKey = A
 permission-dialog-btn-choose-app =
     .label = Eliger un application
     .accessKey = a
+permission-dialog-unset-description = Tu debera eliger un application.
+permission-dialog-set-change-app-link = Eliger un differente application.
 
 ## Chooser dialog
 ## Variables:
@@ -34,6 +52,14 @@ chooser-window =
 chooser-dialog =
     .buttonlabelaccept = Aperir le ligamine
     .buttonaccesskeyaccept = A
+chooser-dialog-description = Eliger un application pro aperir le ligamine { $scheme }.
+# Please keep the emphasis around the scheme (ie the `<strong>` HTML tags).
+chooser-dialog-remember = Usar sempre iste application pro aperir ligamines <strong>{ $scheme }</strong>
+chooser-dialog-remember-extra =
+    { PLATFORM() ->
+        [windows] Isto pote esser cambiate in le optiones de { -brand-short-name }.
+       *[other] Isto pote esser cambiate in le preferentias de { -brand-short-name }.
+    }
 choose-other-app-description = Eliger un altere application
 choose-app-btn =
     .label = Eliger…

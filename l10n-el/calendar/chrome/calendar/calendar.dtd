@@ -149,8 +149,8 @@
 <!ENTITY calendar.task.priority.button.tooltip  "Αλλαγή της προτεραιότητας">
 
 <!ENTITY calendar.task.text-filter.textbox.emptytext.base1           "Φιλτράρισμα εργασιών #1">
-<!ENTITY calendar.task.text-filter.textbox.emptytext.keylabel.nonmac "&lt;Ctrl+Shift+Φ&gt;">
-<!ENTITY calendar.task.text-filter.textbox.emptytext.keylabel.mac    "&lt;&#x21E7;&#x2318;Φ&gt;">
+<!ENTITY calendar.task.text-filter.textbox.emptytext.keylabel.nonmac "&lt;Ctrl+Shift+K&gt;">
+<!ENTITY calendar.task.text-filter.textbox.emptytext.keylabel.mac    "&lt;&#x21E7;&#x2318;K&gt;">
 
 <!-- Context Menu -->
 <!ENTITY calendar.context.modifyorviewitem.label      "Άνοιγμα">
@@ -172,45 +172,45 @@
 <!ENTITY calendar.context.pasteevent.label            "Επικόλληση">
 <!ENTITY calendar.context.pasteevent.accesskey        "λ">
 <!ENTITY calendar.context.button.label                "Προβολή ημέρας">
-<!ENTITY calendar.context.button.accesskey            "θ">
+<!ENTITY calendar.context.button.accesskey            "Π">
 
 <!ENTITY calendar.context.attendance.menu.label                 "Συμμετοχή">
 <!ENTITY calendar.context.attendance.menu.accesskey             "χ">
 <!ENTITY calendar.context.attendance.occurrence.label           "Αυτό το στιγμιότυπο">
 <!ENTITY calendar.context.attendance.all2.label                 "Πλήρης Σειρά">
-<!ENTITY calendar.context.attendance.send.label                 "Να αποσταλεί ειδοποίηση τώρα">
-<!ENTITY calendar.context.attendance.send.accesskey             "S">
+<!ENTITY calendar.context.attendance.send.label                 "Αποστολή ειδοποίησης τώρα">
+<!ENTITY calendar.context.attendance.send.accesskey             "Α">
 <!ENTITY calendar.context.attendance.dontsend.label             "Να μην αποσταλεί τώρα ειδοποίηση">
-<!ENTITY calendar.context.attendance.dontsend.accesskey         "D">
+<!ENTITY calendar.context.attendance.dontsend.accesskey         "Ν">
 
-<!ENTITY calendar.context.attendance.occ.accepted.accesskey     "A">
+<!ENTITY calendar.context.attendance.occ.accepted.accesskey     "κ">
 <!ENTITY calendar.context.attendance.occ.accepted.label         "Έγινε αποδεκτό">
-<!ENTITY calendar.context.attendance.occ.tentative.accesskey    "y">
+<!ENTITY calendar.context.attendance.occ.tentative.accesskey    "δ">
 <!ENTITY calendar.context.attendance.occ.tentative.label        "Έγινε αποδεκτό με δισταγμό">
-<!ENTITY calendar.context.attendance.occ.declined.accesskey     "c">
+<!ENTITY calendar.context.attendance.occ.declined.accesskey     "φ">
 <!ENTITY calendar.context.attendance.occ.declined.label         "Απορρίφθηκε">
-<!ENTITY calendar.context.attendance.occ.delegated.accesskey    "g">
+<!ENTITY calendar.context.attendance.occ.delegated.accesskey    "θ">
 <!ENTITY calendar.context.attendance.occ.delegated.label        "Ανατέθηκε">
-<!ENTITY calendar.context.attendance.occ.needsaction.accesskey  "S">
+<!ENTITY calendar.context.attendance.occ.needsaction.accesskey  "Χ">
 <!ENTITY calendar.context.attendance.occ.needsaction.label      "Χρειάζεται ακόμη ενέργεια">
-<!ENTITY calendar.context.attendance.occ.inprogress.accesskey   "I">
+<!ENTITY calendar.context.attendance.occ.inprogress.accesskey   "Σ">
 <!ENTITY calendar.context.attendance.occ.inprogress.label       "Σε εξέλιξη">
-<!ENTITY calendar.context.attendance.occ.completed.accesskey    "C">
+<!ENTITY calendar.context.attendance.occ.completed.accesskey    "Ο">
 <!ENTITY calendar.context.attendance.occ.completed.label        "Ολοκληρώθηκε">
 
-<!ENTITY calendar.context.attendance.all.accepted.accesskey     "e">
+<!ENTITY calendar.context.attendance.all.accepted.accesskey     "θ">
 <!ENTITY calendar.context.attendance.all.accepted.label         "Εγκρίθηκε">
-<!ENTITY calendar.context.attendance.all.tentative.accesskey    "v">
+<!ENTITY calendar.context.attendance.all.tentative.accesskey    "γ">
 <!ENTITY calendar.context.attendance.all.tentative.label        "Έγινε αποδεκτό με δισταγμό">
-<!ENTITY calendar.context.attendance.all.declined.accesskey     "d">
+<!ENTITY calendar.context.attendance.all.declined.accesskey     "φ">
 <!ENTITY calendar.context.attendance.all.declined.label         "Απορρίφθηκε">
-<!ENTITY calendar.context.attendance.all.delegated.accesskey    "ρ">
+<!ENTITY calendar.context.attendance.all.delegated.accesskey    "τ">
 <!ENTITY calendar.context.attendance.all.delegated.label        "Ανατέθηκε">
 <!ENTITY calendar.context.attendance.all.needsaction.accesskey  "κ">
 <!ENTITY calendar.context.attendance.all.needsaction.label      "Χρειάζεται ακόμη ενέργεια">
-<!ENTITY calendar.context.attendance.all.inprogress.accesskey   "p">
+<!ENTITY calendar.context.attendance.all.inprogress.accesskey   "ξ">
 <!ENTITY calendar.context.attendance.all.inprogress.label       "Σε εξέλιξη">
-<!ENTITY calendar.context.attendance.all.completed.accesskey    "m">
+<!ENTITY calendar.context.attendance.all.completed.accesskey    "ρ">
 <!ENTITY calendar.context.attendance.all.completed.label        "Ολοκληρώθηκε">
 
 <!-- Task Context Menu -->
@@ -327,7 +327,7 @@
 <!ENTITY calendar.alarm.snoozefor.label             "Αναστολή υπενθύμισης για" >
 <!ENTITY calendar.alarm.snoozeallfor.label          "Αναστολή όλων των υπενθυμίσεων για" >
 <!ENTITY calendar.alarm.title.label                 "Υπενθυμίσεις ημερολογίου" >
-<!ENTITY calendar.alarm.dismiss.label               "Οριστικό σταμάτημα υπενθύμισης" >
+<!ENTITY calendar.alarm.dismiss.label               "Απόρριψη" >
 <!ENTITY calendar.alarm.dismissall.label            "Οριστικό σταμάτημα όλων" >
 
 <!ENTITY calendar.alarm.snooze.5minutes.label       "5 λεπτά" >
@@ -363,7 +363,7 @@
 <!ENTITY calendarproperties.cache3.label                   "Υποστήριξη εκτός σύνδεσης">
 <!ENTITY calendarproperties.enabled2.label                 "Ενεργοποίηση ημερολογίου">
 <!ENTITY calendarproperties.forceDisabled.label            "Η υπηρεσία παροχής για αυτό το ημερολόγιο δεν ήταν δυνατόν να βρεθεί. Αυτό συχνά συμβαίνει αν έχετε απενεργοποιήσει ή απεγκαταστήσει κάποια πρόσθετα.">
-<!ENTITY calendarproperties.unsubscribe.label              "Απεγγραφή">
+<!ENTITY calendarproperties.unsubscribe.label              "Κατάργηση εγγραφής">
 <!ENTITY calendarproperties.unsubscribe.accesskey          "φ">
 
 <!-- Calendar Publish Dialog -->

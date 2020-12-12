@@ -99,17 +99,68 @@ openpgp-key-export-key =
     .accesskey = E
 openpgp-key-backup-key =
     .label = Wykonaj kopię zapasową tajnego klucza do pliku
-    .accesskey = k
+    .accesskey = z
 openpgp-key-send-key =
     .label = Wyślij klucz publiczny pocztą e-mail
     .accesskey = W
 openpgp-key-man-copy-to-clipbrd =
     .label = Kopiuj klucze publiczne do schowka
     .accesskey = K
+openpgp-key-man-copy-key-ids =
+    .label =
+        { $count ->
+            [one] Kopiuj identyfikator klucza do schowka
+            [few] Kopiuj identyfikatory kluczy do schowka
+           *[many] Kopiuj identyfikatory kluczy do schowka
+        }
+    .accesskey = d
+openpgp-key-man-copy-fprs =
+    .label =
+        { $count ->
+            [one] Kopiuj odcisk klucza do schowka
+            [few] Kopiuj odciski kluczy do schowka
+           *[many] Kopiuj odciski kluczy do schowka
+        }
+    .accesskey = c
+openpgp-key-man-copy-to-clipboard =
+    .label =
+        { $count ->
+            [one] Kopiuj klucz publiczny do schowka
+            [few] Kopiuj klucze publiczne do schowka
+           *[many] Kopiuj klucze publiczne do schowka
+        }
+    .accesskey = u
 openpgp-key-man-ctx-expor-to-file-label =
     .label = Eksportuj klucze do pliku
 openpgp-key-man-ctx-copy-to-clipbrd-label =
     .label = Kopiuj klucze publiczne do schowka
+openpgp-key-man-ctx-copy =
+    .label = Kopiuj
+    .accesskey = K
+openpgp-key-man-ctx-copy-fprs =
+    .label =
+        { $count ->
+            [one] Odcisk klucza
+            [few] Odciski kluczy
+           *[many] Odciski kluczy
+        }
+    .accesskey = O
+openpgp-key-man-ctx-copy-key-ids =
+    .label =
+        { $count ->
+            [one] Identyfikator klucza
+            [few] Identyfikatory kluczy
+           *[many] Identyfikatory kluczy
+        }
+    .accesskey = I
+openpgp-key-man-ctx-copy-public-keys =
+    .label =
+        { $count ->
+            [one] Klucz publiczny
+            [few] Klucze publiczne
+           *[many] Klucze publiczne
+        }
+    .accesskey = b
 openpgp-key-man-close =
     .label = Zamknij
 openpgp-key-man-reload =
@@ -499,9 +550,11 @@ key-man-button-generate-key = &Wygeneruj klucz
 key-abort = Przerwać generowanie klucza?
 key-man-button-generate-key-abort = &Przerwij generowanie klucza
 key-man-button-generate-key-continue = &Kontynuuj generowanie klucza
+
 # Strings used in enigmailMessengerOverlay.js
+
 failed-decrypt = Błąd: odszyfrowanie się nie powiodło
-fix-broken-exchange-msg-failed = Nie udało się naprawić wiadomości.
+fix-broken-exchange-msg-failed = Nie można naprawić tej wiadomości.
 attachment-no-match-from-signature = Nie można dopasować pliku podpisu „{ $attachment }” do załącznika
 attachment-no-match-to-signature = Nie można dopasować załącznika „{ $attachment }” do pliku podpisu
 signature-verified-ok = Pomyślnie zweryfikowano podpis dla załącznika { $attachment }

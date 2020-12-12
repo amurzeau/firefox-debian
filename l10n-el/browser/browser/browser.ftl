@@ -234,7 +234,7 @@ search-one-offs-change-settings-compact-button =
     .tooltiptext = Αλλαγή ρυθμίσεων αναζήτησης
 search-one-offs-context-open-new-tab =
     .label = Αναζήτηση σε νέα καρτέλα
-    .accesskey = T
+    .accesskey = Α
 search-one-offs-context-set-as-default =
     .label = Ορισμός ως προεπιλεγμένη μηχανή αναζήτησης
     .accesskey = Ο
@@ -301,6 +301,8 @@ identity-https-only-info-turn-off2 = Αν η σελίδα φαίνεται πρ�
 identity-https-only-info-no-upgrade = Δεν είναι δυνατή η αναβάθμιση της σύνδεσης από HTTP.
 identity-permissions =
     .value = Δικαιώματα
+identity-permissions-storage-access-header = Cookies μεταξύ ιστοσελίδων
+identity-permissions-storage-access-hint = Αυτά τα μέρη μπορούν να χρησιμοποιήσουν cookies μεταξύ ιστοσελίδων και δεδομένα ιστότοπων όσο βρίσκεστε σε αυτή την ιστοσελίδα.
 identity-permissions-reload-hint = Ίσως χρειαστεί να φορτώσετε εκ νέου τη σελίδα για εφαρμογή των αλλαγών.
 identity-permissions-empty = Δεν έχετε χορηγήσει ειδικές άδειες στη σελίδα.
 identity-clear-site-data =
@@ -346,9 +348,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Εισαγωγή σελιδοδεικτών…
-    .tooltiptext = Αντιγραφή σελιδοδεικτών από άλλο πρόγραμμα περιήγησης στο { -brand-short-name }.
+    .tooltiptext = Εισαγωγή σελιδοδεικτών από άλλο πρόγραμμα περιήγησης στο { -brand-short-name }.
+bookmarks-toolbar-empty-message = Για γρήγορη πρόσβαση, τοποθετήστε τους σελιδοδείκτες σας εδώ, στη γραμμή σελιδοδεικτών. <a data-l10n-name="manage-bookmarks">Διαχείριση σελιδοδεικτών…</a>
 
 ## WebRTC Pop-up notifications
 

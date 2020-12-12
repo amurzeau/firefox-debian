@@ -293,6 +293,8 @@ identity-https-only-info-turn-off2 = 若網頁外觀看起來不正常，您可�
 identity-https-only-info-no-upgrade = 無法將網站連線從 HTTP 升級。
 identity-permissions =
     .value = 權限
+identity-permissions-storage-access-header = 跨網站 Cookie
+identity-permissions-storage-access-hint = 當您開啟此網站十，這些網站可以使用跨網站 Cookie，並且取得您在此網站的資料。
 identity-permissions-reload-hint = 您可能需要重新載入頁面才能讓變更生效。
 identity-permissions-empty = 您並未授予此網站任何特殊權限。
 identity-clear-site-data =
@@ -338,9 +340,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = 匯入書籤…
-    .tooltiptext = 從另一套瀏覽器複製書籤到 { -brand-short-name }。
+    .tooltiptext = 將其他瀏覽器的書籤匯入到 { -brand-short-name }。
+bookmarks-toolbar-empty-message = 可將書籤放到這個書籤工具列上，方便快速開啟。<a data-l10n-name="manage-bookmarks">管理書籤…</a>
 
 ## WebRTC Pop-up notifications
 

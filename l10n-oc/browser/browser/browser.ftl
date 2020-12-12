@@ -301,6 +301,8 @@ identity-https-only-info-turn-off2 = Se la page sembla copada, ensajatz de desac
 identity-https-only-info-no-upgrade = Passatge de la connexion en HTTPS impossible.
 identity-permissions =
     .value = Permissions
+identity-permissions-storage-access-header = Cookies intersites
+identity-permissions-storage-access-hint = Aquestas parts pòdon utilizar los cookies intersites e las donadas de sites pendent vòstra navegacion sul site.
 identity-permissions-reload-hint = Benlèu deuriatz actualizar la pagina per que s'apliquen los cambiaments.
 identity-permissions-empty = Avètz pas donat cap de permission espaciala a aquel site.
 identity-clear-site-data =
@@ -346,9 +348,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Importar marcapaginas…
-    .tooltiptext = Copiar los marcapaginas d’un autre navegador per { -brand-short-name }.
+    .tooltiptext = Importar dins { -brand-short-name } los marcapaginas a partir d’un autre navegador.
+bookmarks-toolbar-empty-message = Per un accès rapid, plaçatz los marcapaginas aquí, a la barra personala. <a data-l10n-name="manage-bookmarks">Gerir los marcapaginas…</a>
 
 ## WebRTC Pop-up notifications
 

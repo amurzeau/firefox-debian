@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -112,6 +112,9 @@ urlbar-search-tips-redirect-2 = Започнете търсене от адре�
 
 ## Local search mode indicator labels in the urlbar
 
+urlbar-search-mode-bookmarks = Отметки
+urlbar-search-mode-tabs = Раздели
+urlbar-search-mode-history = История
 
 ##
 
@@ -217,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Този път търсете с:
 # This string won't wrap, so if the translated string is longer,
@@ -235,6 +238,12 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Задаване като стандартна търсачка в поверителни прозорци
     .accesskey = п
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -243,6 +252,12 @@ search-one-offs-context-set-as-default-private =
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
 
+search-one-offs-bookmarks =
+    .tooltiptext = Отметки ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Раздели ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = История ({ $restrict })
 
 ## Bookmark Panel
 
@@ -270,6 +285,15 @@ identity-passive-loaded = Части от страницата, например
 identity-active-loaded = Изключихте защитата за тази страница.
 identity-weak-encryption = Тази странница използва слабо шифриране.
 identity-insecure-login-forms = Въведените на страницата данни за вход може да бъдат компрометирани.
+identity-https-only-connection-upgraded = (превключено на HTTPS)
+identity-https-only-label = Режим „само HTTPS“
+identity-https-only-dropdown-on =
+    .label = Включено
+identity-https-only-dropdown-off =
+    .label = Изключено
+identity-https-only-dropdown-off-temporarily =
+    .label = Временно изключено
+identity-https-only-info-no-upgrade = Връзката не може да бъде превключена от HTTP.
 identity-permissions =
     .value = Права
 identity-permissions-reload-hint = За да бъдат приложени промените може да се наложи да презаредите страницата.
@@ -313,6 +337,9 @@ browser-window-maximize-button =
 browser-window-close-button =
     .tooltiptext = Затваряне
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -328,9 +355,13 @@ popup-screen-sharing-not-now =
 popup-screen-sharing-never =
     .label = Никога
     .accesskey = Н
+popup-silence-notifications-checkbox = Спиране на известията от { -brand-short-name }, докато споделяте
+popup-silence-notifications-checkbox-warning = { -brand-short-name } няма да показва известия, докато споделяте.
 
 ## WebRTC window or screen share tab switch warning
 
+sharing-warning-window = Споделяте { -brand-short-name }. Други хора могат да видят, когато превключите към друг раздел.
+sharing-warning-screen = Споделяте целия си екран. Други хора могат да видят, когато превключите към друг раздел.
 
 ## DevTools F12 popup
 
@@ -339,12 +370,14 @@ popup-screen-sharing-never =
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Търсете или въведете адрес
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Търсете или въведете адрес
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
-    .placeholder = Търсене с { $name } или въведете адрес
+    .placeholder = Търсете с { $name } или въведете адрес
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Четецът е под дистанционно управление
 urlbar-permissions-granted =
@@ -377,13 +410,28 @@ urlbar-result-action-search-in-private = Търсене в поверителе�
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Търсене с { $engine }
+urlbar-result-action-sponsored = Спонсорирано
 urlbar-result-action-switch-tab = Превключване към раздел
 urlbar-result-action-visit = Посещаване
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Натиснете Tab, за да търсите с { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Натиснете Tab, за да търсите в { $engine }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-history = Търсене в историята
+urlbar-result-action-search-tabs = Търсене на раздели
 
 ## Full Screen and Pointer Lock UI
 

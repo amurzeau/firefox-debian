@@ -4,7 +4,6 @@
 
 page-title = Arazoak konpontzeko informazioa
 page-subtitle = Orri honek arazo bat konpontzeko erabilgarria izan daitekeen informazio teknikoa du. { -brand-short-name }(r)i buruzko ohiko galderen erantzunen bila bazabiltza, bisitatu gure <a data-l10n-name="support-link">laguntzaren webgunea</a>.
-
 crashes-title = Hutsegite-txostenak
 crashes-id = Txostenaren IDa
 crashes-send-date = Noiz bidalia
@@ -15,7 +14,10 @@ extensions-name = Izena
 extensions-enabled = Gaituta
 extensions-version = Bertsioa
 extensions-id = ID
+support-addons-title = Gehigarriak
 support-addons-name = Izena
+support-addons-type = Mota
+support-addons-enabled = Gaituta
 support-addons-version = Bertsioa
 support-addons-id = ID
 security-software-title = Segurtasun softwarea
@@ -57,12 +59,16 @@ app-basics-enabled-plugins = Gaitutako pluginak
 app-basics-build-config = Eraikitze-konfigurazioa
 app-basics-user-agent = Erabiltzaile-agentea
 app-basics-os = SEa
+# Rosetta is Apple's translation process to run apps containing x86_64
+# instructions on Apple Silicon. This should remain in English.
+app-basics-rosetta = Rosetta Translated
 app-basics-memory-use = Memoriaren erabilpena
 app-basics-performance = Errendimendua
 app-basics-service-workers = Erregistratutako zerbitzu-langileak
 app-basics-profiles = Profilak
 app-basics-launcher-process-status = Abioko prozesua
 app-basics-multi-process-support = Multiprozesu leihoak
+app-basics-fission-support = Fission leihoak
 app-basics-remote-processes-count = Urruneko prozesuak
 app-basics-enterprise-policies = Enpresa-politikak
 app-basics-location-service-key-google = Google Location Service gakoa
@@ -75,6 +81,12 @@ show-dir-label =
         [windows] Ireki karpeta
        *[other] Ireki direktorioa
     }
+environment-variables-title = Ingurune-aldagaiak
+environment-variables-name = Izena
+environment-variables-value = Balioa
+experimental-features-title = Eginbide esperimentalak
+experimental-features-name = Izena
+experimental-features-value = Balioa
 modified-key-prefs-title = Aldatutako hobespen garrantzitsuak
 modified-prefs-name = Izena
 modified-prefs-value = Balioa
@@ -118,6 +130,7 @@ sandbox-sys-call-number = Sistema-deia
 sandbox-sys-call-args = Argumentuak
 safe-mode-title = Probatu modu segurua
 restart-in-safe-mode-label = Berrabiarazi gehigarriak desgaituta…
+restart-button-label = Berrabiarazi
 
 ## Media titles
 
@@ -174,7 +187,6 @@ report-crash-for-days =
         [one] Azken eguneko hutsegite-txostenak
        *[other] Azken { $days } egunetako hutsegite-txostenak
     }
-
 # Variables
 # $minutes (integer) - Number of minutes since crash
 crashes-time-minutes =
@@ -182,7 +194,6 @@ crashes-time-minutes =
         [one] Duela minutu bat
        *[other] Duela { $minutes } minutu
     }
-
 # Variables
 # $hours (integer) - Number of hours since crash
 crashes-time-hours =
@@ -190,7 +201,6 @@ crashes-time-hours =
         [one] Duela ordubete
        *[other] Duela { $hours } ordu
     }
-
 # Variables
 # $days (integer) - Number of days since crash
 crashes-time-days =
@@ -198,7 +208,6 @@ crashes-time-days =
         [one] Duela egun bat
        *[other] Duela { $days } egun
     }
-
 # Variables
 # $reports (integer) - Number of pending reports
 pending-reports =
@@ -206,7 +215,6 @@ pending-reports =
         [one] Hutsegite-txosten guztiak (emandako denbora-tartean zain dagoen hutsegite bat kontuan hartuta)
        *[other] Hutsegite-txosten guztiak (emandako denbora-tartean zain daude { $reports } hutsegite kontuan hartuta)
     }
-
 raw-data-copied = Testu gordina arbelean kopiatu da
 text-copied = Testua arbelean kopiatu da
 
@@ -219,11 +227,9 @@ blocked-mismatched-version = Blokeatuta zure txartel grafikoaren kontrolatzailee
 # Variables
 # $driverVersion - The graphics driver version string
 try-newer-driver = Txartel grafikoaren kontrolatzailearen bertsioak blokeatuta. Saiatu zure txartel grafikoaren kontrolatzaileak { $driverVersion } edo bertsio berriagora eguneratzen.
-
 # "ClearType" is a proper noun and should not be translated. Feel free to leave English strings if
 # there are no good translations, these are only used in about:support
 clear-type-parameters = ClearType parametroak
-
 compositing = Konposatzea
 hardware-h264 = Hardware bidezko H264 deskodetzea
 main-thread-no-omtc = hari nagusia, OMTCrik ez
@@ -238,7 +244,6 @@ virtual-monitor-disp = Monitore birtualaren pantaila
 
 found = Aurkitua
 missing = Falta da
-
 gpu-process-pid = GPUProcessPid
 gpu-process = GPUProcess
 gpu-description = Deskribapena
@@ -262,21 +267,17 @@ webgl2-version = WebGL 2 kontrolatzailearen bertsioa
 webgl2-driver-extensions = WebGL 2 kontrolatzailearen luzapenak
 webgl2-extensions = WebGL 2 luzapenak
 blocklisted-bug = Arazo ezagunengatik zerrenda beltzean
-
 # Variables
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = { $bugNumber }. buga
-
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Zerrenda beltzean; { $failureCode } hutsegite-kodea
-
 d3d11layers-crash-guard = D3D11 konposatzailea
 d3d11video-crash-guard = D3D11 bideo-deskodetzailea
 d3d9video-crash-guard = D3D9 bideo-deskodetzailea
 glcontext-crash-guard = OpenGL
 wmfvpxvideo-crash-guard = WMF VPX bideo-deskodetzailea
-
 reset-on-next-restart = Berrezarri hurrengo berrabiaraztean
 gpu-process-kill-button = Amaitu GPU prozesua
 gpu-device-reset = Gailua berrabiaraztea
@@ -286,10 +287,8 @@ content-uses-tiling = Mosaikoa darabil (edukia)
 off-main-thread-paint-enabled = Hari nagusitik kanporako margoketa gaituta
 off-main-thread-paint-worker-count = Hari nagusitik kanporako margoketarako langile kopurua
 target-frame-rate = Helburuko marko-emaria
-
 min-lib-versions = Esperotako bertsio minimoa
 loaded-lib-versions = Erabiltzen dagoen bertsioa
-
 has-seccomp-bpf = Seccomp-BPF (Sistema-deien iragaztea)
 has-seccomp-tsync = Seccomp harien sinkronizazioa
 has-user-namespaces = Erabiltzaileen izen-eremuak
@@ -302,18 +301,15 @@ sandbox-proc-type-content = edukia
 sandbox-proc-type-file = fitxategiaren edukia
 sandbox-proc-type-media-plugin = multimedia plugina
 sandbox-proc-type-data-decoder = datu-deskodetzailea
-
 startup-cache-title = Abioko cachea
 startup-cache-disk-cache-path = Diskoko cachearen bide-izena
 startup-cache-ignore-disk-cache = Ezikusi diskoko cachea
 startup-cache-found-disk-cache-on-init = Diskoko cachea aurkitu da abioan
 startup-cache-wrote-to-disk-cache = Diskoko cachera idatzita
-
 launcher-process-status-0 = Gaituta
 launcher-process-status-1 = Desgaituta hutsegitea dela-eta
 launcher-process-status-2 = Behartuta desgaituta
 launcher-process-status-unknown = Egoera ezezaguna
-
 # Variables
 # $remoteWindows (integer) - Number of remote windows
 # $totalWindows (integer) - Number of total windows
@@ -326,7 +322,16 @@ multi-process-status-6 = Onartzen ez den testu-sarrerak desgaituta
 multi-process-status-7 = Gehigarriek desgaituta
 multi-process-status-8 = Behartuta desgaituta
 multi-process-status-unknown = Egoera ezezaguna
-
+fission-status-experiment-control = Esperimentuak desgaituta
+fission-status-experiment-treatment = Esperimentuak gaituta
+fission-status-disabled-by-e10s-env = Inguruneak desgaituta
+fission-status-enabled-by-env = Inguruneak gaituta
+fission-status-disabled-by-safe-mode = Modu seguruak desgaituta
+fission-status-enabled-by-default = Lehenespenez gaituta
+fission-status-disabled-by-default = Lehenespenez desgaituta
+fission-status-enabled-by-user-pref = Erabiltzaileak gaituta
+fission-status-disabled-by-user-pref = Erabiltzaileak desgaituta
+fission-status-disabled-by-e10s-other = E10s desgaituta
 async-pan-zoom = Mugimendu panoramiko/zoom asinkronoak
 apz-none = bat ere ez
 wheel-enabled = gurpil bidezko sarrera gaituta
@@ -347,3 +352,12 @@ touch-warning = ukipen asinkrono bidezko sarrera desgaituta onartzen ez den hobe
 policies-inactive = Inaktibo
 policies-active = Aktibo
 policies-error = Errorea
+
+## Printing section
+
+support-printing-title = Inprimatzea
+support-printing-troubleshoot = Arazo-konpontzea
+support-printing-clear-settings-button = Garbitu gordetako inprimatze-ezarpenak
+support-printing-modified-settings = Aldatutako inprimatze-ezarpenak
+support-printing-prefs-name = Izena
+support-printing-prefs-value = Balioa

@@ -301,6 +301,8 @@ identity-https-only-info-turn-off2 = Om sidan verkar trasig kanske du vill stän
 identity-https-only-info-no-upgrade = Det gick inte att uppgradera anslutningen från HTTP.
 identity-permissions =
     .value = Behörigheter
+identity-permissions-storage-access-header = Globala kakor
+identity-permissions-storage-access-hint = Dessa parter kan använda global kakor och webbplatsinformation medan du är på denna webbplats.
 identity-permissions-reload-hint = Du kan behöva ladda om sidan för att ändringarna ska verkställas.
 identity-permissions-empty = Du har inte beviljat denna webbplats några särskilda rättigheter.
 identity-clear-site-data =
@@ -346,9 +348,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
-    .label = Importera bokmärken ...
-    .tooltiptext = Kopiera bokmärken från en annan webbläsare till { -brand-short-name }.
+browser-import-button2 =
+    .label = Importera bokmärken…
+    .tooltiptext = Importera bokmärken från en annan webbläsare till { -brand-short-name }
+bookmarks-toolbar-empty-message = För snabb åtkomst placerar du dina bokmärken i bokmärkesfältet. <a data-l10n-name="manage-bookmarks">Hantera bokmärken…</a>
 
 ## WebRTC Pop-up notifications
 

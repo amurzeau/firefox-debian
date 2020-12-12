@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Ga voorzichtig verder
 pane-experimental-search-results-header = { -brand-short-name }-experimenten: voorzichtigheid geadviseerd
 pane-experimental-description = Het wijzigen van geavanceerde configuratievoorkeuren kan de prestaties of veiligheid van { -brand-short-name } beïnvloeden.
+pane-experimental-reset =
+    .label = Standaardwaarden herstellen
+    .accesskey = h
 help-button-label = { -brand-short-name } Support
 addons-button-label = Extensies & Thema’s
 focus-search =
@@ -512,6 +515,8 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Gesponsorde verhalen
 home-prefs-highlights-header =
     .label = Highlights
+home-prefs-recent-activity-header =
+    .label = Recente activiteit
 home-prefs-highlights-description = Een selectie van websites die u hebt opgeslagen of bezocht
 home-prefs-highlights-option-visited-pages =
     .label = Bezochte pagina’s
@@ -568,7 +573,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Voorkeuren voor overige adresbalksuggesties wijzigen
 search-suggestions-cant-show = Zoeksuggesties worden niet in locatiebalkresultaten getoond, omdat u { -brand-short-name } hebt geconfigureerd om nooit geschiedenis te onthouden.
 search-one-click-header = Eén-klik-zoekmachines
-search-one-click-header2 = Snelkoppelingen zoeken
+search-one-click-header2 = Zoeksnelkoppelingen
 search-one-click-desc = Kies de alternatieve zoekmachines die onder de adresbalk en zoekbalk verschijnen als u een sleutelwoord begint in te voeren.
 search-choose-engine-column =
     .label = Zoekmachine
@@ -929,6 +934,7 @@ addressbar-suggestions-settings = Voorkeuren voor zoekmachinesuggesties wijzigen
 content-blocking-enhanced-tracking-protection = Verbeterde bescherming tegen volgen
 content-blocking-section-top-level-description = Trackers volgen u online om gegevens over uw surfgedrag en interesses te verzamelen. { -brand-short-name } blokkeert veel van deze trackers en andere kwaadwillende scripts.
 content-blocking-learn-more = Meer info
+content-blocking-fpi-incompatibility-warning = U gebruikt First Party Isolation (FPI), dat een aantal cookie-instellingen van { -brand-short-name } overschrijft.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.

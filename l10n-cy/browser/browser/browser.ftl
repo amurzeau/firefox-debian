@@ -309,6 +309,8 @@ identity-https-only-info-turn-off2 = Os yw'r wefan yn ymddangos wedi torri, efal
 identity-https-only-info-no-upgrade = Methu uwchraddio'r cysylltiad o HTTP.
 identity-permissions =
     .value = Caniatâd
+identity-permissions-storage-access-header = Cwcis traws-gwefan
+identity-permissions-storage-access-hint = Gall y partïon hyn ddefnyddio cwcis traws-gwefan a data gwefan tra'ch bod chi ar y wefan hon.
 identity-permissions-reload-hint = Efallai y bydd angen ail lwytho'r dudalen i newidiadau ddod ar waith.
 identity-permissions-empty = Nid ydych wedi rhoi i'r wefan hon unrhyw ganiatâd arbennig.
 identity-clear-site-data =
@@ -354,9 +356,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
-    .label = Mewnforio nodau tudalen...
-    .tooltiptext = Copïo nodau tudalen o borwr arall i { -brand-short-name }.
+browser-import-button2 =
+    .label = Mewnforio nodau tudalen…
+    .tooltiptext = Mewnforio nodau tudalen o borwr arall i { -brand-short-name }.
+bookmarks-toolbar-empty-message = I gael mynediad cyflym, rhowch eich nodau tudalen yma ar y bar offer nodau tudalen. <a data-l10n-name="manage-bookmarks"> Rheoli nodau tudalen…</a>
 
 ## WebRTC Pop-up notifications
 

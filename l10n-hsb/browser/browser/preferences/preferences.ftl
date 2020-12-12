@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Pokročujće z kedźbliwosću
 pane-experimental-search-results-header = Eksperimenty { -brand-short-name }: pokročujće z kedźbliwosću
 pane-experimental-description = Hdyž nastajenja rozšěrjeneje konfiguracije změniće, móže to wukon abo wěstotu { -brand-short-name } wobwliwować.
+pane-experimental-reset =
+    .label = Standard wobnowić
+    .accesskey = S
 help-button-label = Pomoc { -brand-short-name }
 addons-button-label = Rozšěrjenja a drasty
 focus-search =
@@ -518,6 +521,8 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsorowane stawizny
 home-prefs-highlights-header =
     .label = Wjerški
+home-prefs-recent-activity-header =
+    .label = Najnowša aktiwita
 home-prefs-highlights-description = Wuběr websydłow, kotrež sće składował abo wopytał
 home-prefs-highlights-option-visited-pages =
     .label = Wopytane strony
@@ -937,6 +942,7 @@ addressbar-suggestions-settings = Nastajenja za namjety pytawy změnić
 content-blocking-enhanced-tracking-protection = Polěpšeny slědowanski škit
 content-blocking-section-top-level-description = Přesćěhowaki wam online slěduja, zo bychu informacije wo wašich přehladowanskich zwučenosćach a zajimach hromadźili. { -brand-short-name } wjele z tutych přesćěhowakow a druhe złóstne skripty blokuje.
 content-blocking-learn-more = Dalše informacije
+content-blocking-fpi-incompatibility-warning = Wužiwaće rozšěrjenje First Party Isolation (FIP), kotrež někotre plackowe nastajenja { -brand-short-name } přepisuje.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.

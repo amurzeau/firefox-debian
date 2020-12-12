@@ -1,0 +1,31 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!ENTITY pref.popups.title              "Αναδυόμενα παράθυρα">
+
+<!ENTITY pref.popups.caption            "Αναδυόμενα παράθυρα">
+
+<!ENTITY popupBlock.label               "Φραγή ανεπιθύμητων αναδυόμενων παραθύρων">
+<!ENTITY popupBlock.accesskey           "Φ">
+
+<!ENTITY viewPermissions.label          "Διαχείριση δικαιωμάτων">
+
+<!ENTITY whenBlock.description          "Όταν ένα αναδυόμενο παράθυρο έχει αποκλειστεί:">
+<!ENTITY playSound.label                "Αναπαραγωγή ήχου:">
+<!ENTITY playSound.accesskey            "Α">
+<!ENTITY systemSound.label              "Ήχος συστήματος">
+<!ENTITY systemSound.accesskey          "Ή">
+<!ENTITY customSound.label              "Προσαρμοσμένο αρχείο ήχου">
+<!ENTITY customSound.accesskey          "Π">
+
+<!ENTITY selectSound.label              "Περιήγηση…">
+<!ENTITY playSoundButton.label          "Αναπαραγωγή">
+<!ENTITY playSoundButton.accesskey      "π">
+
+<!ENTITY displayIcon.label              "Προβολή εικονιδίου στη γραμμή κατάστασης του προγράμματος περιήγησης">
+<!ENTITY displayIcon.accesskey          "Π">
+
+<!ENTITY displayNotification.label      "Προβολή γραμμής ειδοποιήσεων στο πάνω μέρος της περιοχής περιεχομένου">
+<!ENTITY displayNotification.accesskey  "ε">
+

@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Zachowaj ostrożność
 pane-experimental-search-results-header = Eksperymenty przeglądarki { -brand-short-name }: zachowaj ostrożność
 pane-experimental-description = Modyfikacja zaawansowanych preferencji może wpłynąć na wydajność lub bezpieczeństwo przeglądarki { -brand-short-name }.
+pane-experimental-reset =
+    .label = Przywróć domyślne
+    .accesskey = P
 help-button-label = Wsparcie programu { -brand-short-name }
 addons-button-label = Rozszerzenia i motywy
 focus-search =
@@ -515,6 +518,8 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsorowane artykuły
 home-prefs-highlights-header =
     .label = Wyróżnione
+home-prefs-recent-activity-header =
+    .label = Ostatnia aktywność
 home-prefs-highlights-description = Wybierane z zachowanych i odwiedzonych stron.
 home-prefs-highlights-option-visited-pages =
     .label = Historia
@@ -933,6 +938,7 @@ addressbar-suggestions-settings = Zmień preferencje podpowiedzi dostarczanych p
 content-blocking-enhanced-tracking-protection = Wzmocniona ochrona przed śledzeniem
 content-blocking-section-top-level-description = Elementy śledzące monitorują Cię w Internecie, zbierając informacje o Twoich działaniach i zainteresowaniach. { -brand-short-name } blokuje wiele tych elementów i inne złośliwe skrypty.
 content-blocking-learn-more = Więcej informacji
+content-blocking-fpi-incompatibility-warning = Używasz funkcji FPI („First Party Isolation”), która zastępuje część ustawień ciasteczek przeglądarki { -brand-short-name }.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.

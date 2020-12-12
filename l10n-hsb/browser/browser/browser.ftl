@@ -305,6 +305,8 @@ identity-https-only-info-turn-off2 = Jeli so zda, zo strona je wobškodźena, ch
 identity-https-only-info-no-upgrade = Zwisk njeda so z HTTP aktualizować.
 identity-permissions =
     .value = Prawa
+identity-permissions-storage-access-header = Placki wjacorych sydłow
+identity-permissions-storage-access-hint = Tući wobdźěleni móža placki a sydłowe daty wjacorych sydłow wužiwać, mjeztym zo sće na tutym sydle.
 identity-permissions-reload-hint = Dyrbiće snano stronu znowa začitać, zo bychu so změny wuskutkowali.
 identity-permissions-empty = Njejsće tutomu sydłu wosebite prawa přizwolił.
 identity-clear-site-data =
@@ -350,9 +352,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Zapołožki importować…
-    .tooltiptext = Zapołožki z druheho wobhladowaka do { -brand-short-name } kopěrować.
+    .tooltiptext = Zapołožki z druheho wobhladowaka do { -brand-short-name } importować.
+bookmarks-toolbar-empty-message = Wotkładźće swoje zapołožki w symbolowej lajsće za spěšny přistup. <a data-l10n-name="manage-bookmarks">Zapołožki rjadować…</a>
 
 ## WebRTC Pop-up notifications
 

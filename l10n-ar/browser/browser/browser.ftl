@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = اكتب بحروف أقل، و جِد نتائج أكثر: ابحث مستخدمًا { $engineName } مباشرة من شريط العنوان.
 urlbar-search-tips-redirect-2 = ابدأ البحث من شريط العنوان لترى الاقتراحات من { $engineName } و من تأريخ التصفح.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = اختر هذا الاختصار لتجد ما تريد بسرعة أكبر.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -306,6 +309,7 @@ identity-https-only-info-turn-off2 = إن شككت أن في الصفحة عطب
 identity-https-only-info-no-upgrade = تعذرت ترقية الاتصال من HTTP.
 identity-permissions =
     .value = التصاريح
+identity-permissions-storage-access-header = الكعكات بين المواقع
 identity-permissions-reload-hint = قد تحتاج إعادة تحميل الصفحة لتطبيق التغييرات.
 identity-permissions-empty = لم تمنح هذا الموقع أي صلاحيات خاصة.
 identity-clear-site-data =
@@ -351,9 +355,9 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = استورِد العلامات…
-    .tooltiptext = انسخ العلامات من متصفّح آخر إلى { -brand-short-name }.
+    .tooltiptext = استورِد العلامات من متصفّح آخر إلى { -brand-short-name }.
 
 ## WebRTC Pop-up notifications
 
@@ -458,6 +462,7 @@ urlbar-result-action-search-in-private = ابحث في نافذةٍ خاصة
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = ابحث مستخدمًا { $engine }
+urlbar-result-action-sponsored = نتيجة مموّلة
 urlbar-result-action-switch-tab = انتقل إلى اللسان
 urlbar-result-action-visit = زُر
 # Directs a user to press the Tab key to perform a search with the specified
