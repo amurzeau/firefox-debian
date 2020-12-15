@@ -17,8 +17,8 @@
 browser-main-window =
     .data-title-default = { -brand-full-name }
     .data-title-private = { -brand-full-name } (Yksityinen selaus)
-    .data-content-title-default = { $content-title } - { -brand-full-name }
-    .data-content-title-private = { $content-title } - { -brand-full-name } (Yksityinen selaus)
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name } (Yksityinen selaus)
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -35,9 +35,9 @@ browser-main-window =
 #  $content-title (String): the title of the web content.
 browser-main-window-mac =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } - (Yksityinen selaus)
+    .data-title-private = { -brand-full-name } — (Yksityinen selaus)
     .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } - (Yksityinen selaus)
+    .data-content-title-private = { $content-title } — (Yksityinen selaus)
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Kirjoita vähemmän, löydä enemmän: Hae hakukoneella { $engineName } suoraan osoitepalkista.
 urlbar-search-tips-redirect-2 = Aloita hakeminen osoitepalkista, niin näet ehdotukset palvelusta { $engineName } ja selaushistoriastasi.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Valitse tämä, niin löydät etsimäsi nopeammin.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -293,9 +296,13 @@ identity-https-only-dropdown-off =
     .label = Ei käytössä
 identity-https-only-dropdown-off-temporarily =
     .label = Ei käytössä väliaikaisesti
+identity-https-only-info-turn-on2 = Ota Vain HTTPS -tila käyttöön tälle sivustolle, jos haluat, että { -brand-short-name } päivittää suojattuun yhteyteen mikäli mahdollista.
+identity-https-only-info-turn-off2 = Jos sivu näyttää rikkinäiseltä, saatat haluta poistaa Vain HTTPS -tilan käytöstä ja näin ladata sivun uudestaan käyttäen suojaamatonta HTTP:tä.
 identity-https-only-info-no-upgrade = Yhteyden päivittäminen HTTP:stä epäonnistui.
 identity-permissions =
     .value = Käyttöoikeudet
+identity-permissions-storage-access-header = Sivustorajat ylittävät evästeet
+identity-permissions-storage-access-hint = Nämä osapuolet voivat käyttää sivustorajat ylittäviä evästeitä ja sivustotietoja, kun olet tällä sivustolla.
 identity-permissions-reload-hint = Sivu tarvitsee ehkä päivittää, jotta muutokset tulevat voimaan.
 identity-permissions-empty = Sivustolle ei ole myönnetty mitään erityisoikeuksia.
 identity-clear-site-data =
@@ -341,6 +348,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
+browser-import-button2 =
+    .label = Tuo kirjanmerkit…
+    .tooltiptext = Tuo kirjanmerkit toisesta selaimsta { -brand-short-name }iin.
+bookmarks-toolbar-empty-message = Laita kirjanmerkkisi tänne kirjanmerkkipalkkiin, niin pääset niihin nopeasti. <a data-l10n-name="manage-bookmarks">Järjestele kirjanmerkkejä…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -448,6 +459,18 @@ urlbar-result-action-search-w-engine = { $engine }-haku
 urlbar-result-action-sponsored = Sponsoroitu
 urlbar-result-action-switch-tab = Siirry välilehteen
 urlbar-result-action-visit = Avaa
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Hae hakukoneella { $engine } painamalla sarkainta
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Hae sivustosta { $engine } painamalla sarkainta
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).

@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Tachajij awi' chi Rub'anik
 pane-experimental-search-results-header = { -brand-short-name } Taq tojtob'äl: Eqal Tab'ana'
 pane-experimental-description = Kejal ri q'axinäq taq rajowab'al nuk'ulem, nitikïr nutz'ila' rub'eyal nisamäj o ri rujikomal { -brand-short-name }.
+pane-experimental-reset =
+    .label = Ke'atzolij ri e K'o wi
+    .accesskey = e
 help-button-label = Ruto'ik { -brand-short-name } Temeb'äl
 addons-button-label = Taq k'amal & taq Wachinel
 focus-search =
@@ -512,6 +515,8 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = To'on taq B'anob'äl
 home-prefs-highlights-header =
     .label = Ya'on kiq'ij
+home-prefs-recent-activity-header =
+    .label = K'ak'a' samaj
 home-prefs-highlights-description = Jun rucha'onem ruxaq, ri xayäk o xatz'ët
 home-prefs-highlights-option-visited-pages =
     .label = Taq Ruxaq Etz'eton
@@ -929,6 +934,7 @@ addressbar-suggestions-settings = Kek'ex ri taq kajowab'al ri taq kichilab'enik 
 content-blocking-enhanced-tracking-protection = Utzirisan Chajinïk chuwäch Ojqanem
 content-blocking-section-top-level-description = Ri ojqanela' yatkojqaj pa k'amab'ey richin nikimöl ri awetamab'al chi rij ri ye'ab'än chuqa' ri niqa chawäch nakanoj. { -brand-short-name } ke'aq'ata' k'ïy chi ke ri taq ojqanela' ri' chuqa' ch'aqa' chik tz'ilanel taq skrip.
 content-blocking-learn-more = Tetamäx Ch'aqa' Chik
+content-blocking-fpi-incompatibility-warning = Nawokisaj First Party Isolation (FPI), ri yeruq'ät jujun taq kinuk'ulem rucookie { -brand-short-name }.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.

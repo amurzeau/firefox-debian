@@ -2,6 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 # DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
 # This file gets parsed into a JS dictionary of all known error message ids in
 # gen_aboutneterror_codes.py . If we end up needing fluent attributes or
@@ -11,31 +12,27 @@
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
 ssl-connection-error = Degouezhet ez eus bet ur fazi e-pad ma oa o kennaskañ ouzh { $hostname }. { $errorMessage }
-
 # Variables:
 # $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix = Boneg fazi: { $error }
-
 psmerr-ssl-disabled = Ne c'haller ket kennaskañ diarvar rak diweredekaet eo bet ar c'homenad SSL.
 psmerr-ssl2-disabled = Ne c'haller ket kennaskañ diarvar rak ur c'homenad mod SSL kozh hag arvarus a arver al lec'hienn.
-
 # This is a multi-line message.
 psmerr-hostreusedissuerandserial =
-    Degemeret hoc'h eus un testeni didalvoudek.  Kit e darempred gant ardoer an dafariad pe kaser ar postel ha roit dezho an titouroù da heul : 
+    Degemeret hoc'h eus un testeni didalvoudek. Kit e darempred gant ardoer an dafariad pe kaser ar postel ha roit dezho an titouroù da heul:
     
     An hevelep steudriñv eget hini un testeni all skignet gant an aotrouniezh testeniañ zo e-barzh ho testeni. Mar plij, kit da gerc'hat un testeni gant ur steudriñv nevez dibar.
-
 ssl-error-export-only-server = N'haller ket kehentiñ diarvar. N'eo ket skoret an enrinegañ a live uhel gant ho par.
 ssl-error-us-only-server = N'haller ket kehentiñ gant un doare diarvar. Azgoulenn a ra ar par ul live enrinegañ uhel n'eo ket skoret.
-ssl-error-no-cypher-overlap = N'haller ket kehentiñ diarvar gant ar par : n'eus kendreol(ioù) enrinegañ ebet.
+ssl-error-no-cypher-overlap = N'haller ket kehentiñ diarvar gant ar par: n'eus kendreol(ioù) enrinegañ ebet.
 ssl-error-no-certificate = N'eo ket evit kavout an testeni pe an alc'hwez ret evit an dilesa.
-ssl-error-bad-certificate = N'haller ket kehentiñ diarvar gant ho par : distaolet eo bet testeni ar par
+ssl-error-bad-certificate = N'haller ket kehentiñ diarvar gant ho par: distaolet eo bet testeni ar par.
 ssl-error-bad-client = Roadennoù fall a-berzh an arval en deus bet an dafariad.
 ssl-error-bad-server = Kejet en deus an arval ouzh roadennoù fall diouzh an dafariad.
 ssl-error-unsupported-certificate-type = Rizh testeni anskoret.
 ssl-error-unsupported-version = Emañ ar par oc'h arverañ un handelv anskoret eus ar c'homenad diogelroez.
-ssl-error-wrong-certificate = C'hwitadenn war dilesa an arval : ne glot ket an alc'hwez prevez e stlennvon an alc'hwezioù gant an alc'hwez foran e stlennvon an testenioù.
-ssl-error-bad-cert-domain = N'eo ket gouest da gehentiñ diarvar gant ar par : anv an domani goulenn ne glot ket gant testeni an dafariad.
+ssl-error-wrong-certificate = C'hwitadenn war dilesa an arval: ne glot ket an alc'hwez prevez e stlennvon an alc'hwezioù gant an alc'hwez foran e stlennvon an testenioù.
+ssl-error-bad-cert-domain = N'eo ket gouest da gehentiñ diarvar gant ar par: anv an domani goulenn ne glot ket gant testeni an dafariad.
 ssl-error-post-warning = Boneg fazi SSL dianav.
 ssl-error-ssl2-disabled = Skoret eo an handelv SSL 2 gant ar par, ha diweredekaet eo bet war al lec'h.
 ssl-error-bad-mac-read = Degemeret ez eus bet gant SSL un danevell gant ur rineg dilesa direizh evit ar gemennadenn.
@@ -43,8 +40,8 @@ ssl-error-bad-mac-alert = Danevellet ez eus bet ur rineg dilesa eus ur gemennade
 ssl-error-bad-cert-alert = Ar par SSL n'eo ket evit gwiriañ ho testeni.
 ssl-error-revoked-cert-alert = Distaolet eo bet ho testeni gant SSL evel ma oa tennet kuit.
 ssl-error-expired-cert-alert = Distaolet eo bet ho testeni gant ar par SSL evel ma oa diamzeret.
-ssl-error-ssl-disabled = Ne c'haller ket kennaskañ : diweredekaet eo SSL.
-ssl-error-fortezza-pqg = Ne c'haller ket kennaskañ : emañ par SSL en un domani FORTEZZA all.
+ssl-error-ssl-disabled = Ne c'haller ket kennaskañ: diweredekaet eo SSL.
+ssl-error-fortezza-pqg = Ne c'haller ket kennaskañ: emañ par SSL en un domani FORTEZZA all.
 ssl-error-unknown-cipher-suite = Azgoulennet ez eus bet un hedad sifroù SSL dianav.
 ssl-error-no-ciphers-supported = N'eus hedad sifroù ebet bezant ha gweredekaet er goulev-mañ.
 ssl-error-bad-block-padding = Degemeret ez eus bet gant SSL ur varilhadenn gant ul leuniadur fall eus ur bloc'had.
@@ -108,7 +105,7 @@ ssl-error-session-key-gen-failure = C'hwitet en deus an arval war genel an alc'h
 ssl-error-no-server-key-for-alg = N'eus alc'hwez ebet gant an dafariad evit ar c'hlask eskemm an alc'hwez treoliek.
 ssl-error-token-insertion-removal = Enlakaet pe dilec'hiet eo bet ar reveziadenn PKCS#11 e-pad ma oa ar gwezhiadur war argerzh.
 ssl-error-token-slot-not-found = N'eus reveziadenn PKCS#11 ebet bet kavet evit ober ar gwezhiadur bet goulennet.
-ssl-error-no-compression-overlap = N'haller ket kehentiñ diarvar gant ar par : n'eus treol koazhañ boutin ebet.
+ssl-error-no-compression-overlap = N'haller ket kehentiñ diarvar gant ar par: n'eus treol koazhañ boutin ebet.
 ssl-error-handshake-not-completed = N'haller ket deraouiñ seveniñ ur c'hennask SSL all keit ha na vo ket echuet ar seveniñ kennask bremanel.
 ssl-error-bad-handshake-hash-value = Degemeret ez eus bet gwerzhioù yod direizh evit seveniñ ur c'hennask digant ar par.
 ssl-error-cert-kea-mismatch = N'haller ket arverañ an testeni pourchaset gant an treol da eskemm alc'hwezioù bet diuzet.
@@ -163,14 +160,14 @@ ssl-error-missing-extended-master-secret = Klasket eo bet kenderc'hel hep askoue
 ssl-error-unexpected-extended-master-secret = Klasket eo bet kenderc'hel gant un extended_master_secret hiraet dic'hortoz gant ar par.
 sec-error-io = Degouezhet ez eus bet ur fazi enankañ/ec'hankañ pa oa o reiñ an aotre diogelroez.
 sec-error-library-failure = C'hwitadur al levraoueg diogelroez.
-sec-error-bad-data = levraoueg diogelroez : degemeret ez eus bet roadennoù fall.
-sec-error-output-len = levraoueg diogelroez : fazi gant hirder an ec'hankad.
+sec-error-bad-data = levraoueg diogelroez: degemeret ez eus bet roadennoù fall.
+sec-error-output-len = levraoueg diogelroez: fazi gant hirder an ec'hankad.
 sec-error-input-len = kejet he deus levraoueg an diogelroez ouzh ur fazi gant hirder un enankad.
-sec-error-invalid-args = levraoueg diogelroez : arguzennoù didalvoudek.
-sec-error-invalid-algorithm = levraoueg diogelroez : treol didalvoudek.
-sec-error-invalid-ava = levraoueg diogelroez : AVA didalvoudek.
+sec-error-invalid-args = levraoueg diogelroez: arguzennoù didalvoudek.
+sec-error-invalid-algorithm = levraoueg diogelroez: treol didalvoudek.
+sec-error-invalid-ava = levraoueg diogelroez: AVA didalvoudek.
 sec-error-invalid-time = Hedad an eus mentrezhet fall.
-sec-error-bad-der = levraoueg diogelroez : kemennadenn envoneget mod DER mentrezhet fall.
+sec-error-bad-der = levraoueg diogelroez: kemennadenn envoneget mod DER mentrezhet fall.
 sec-error-bad-signature = Ur sinadur didalvoudek ez eus gant testeni ar par.
 sec-error-expired-certificate = Diamzeret eo testeni ar par.
 sec-error-revoked-certificate = Lamet kuit eo bet testeni ar par.
@@ -178,9 +175,9 @@ sec-error-unknown-issuer = N'eo ket anavezet skigner testeni ar par.
 sec-error-bad-key = Didalvoudek eo alc'hwez foran ar par.
 sec-error-bad-password = Direizh eo ar ger-tremen diogelroez bet enanket.
 sec-error-retry-password = N'eo ket bet enanket mat ar ger-tremen nevez. Klaskit en-dro, mar plij.
-sec-error-no-nodelock = levraoueg diogelroez : prenner klom ebet.
-sec-error-bad-database = levraoueg diogelroez : stlennvon fall.
-sec-error-no-memory = levraoueg diogelroez : c'hwitadenn war derannañ ar vemor.
+sec-error-no-nodelock = levraoueg diogelroez: prenner klom ebet.
+sec-error-bad-database = levraoueg diogelroez: stlennvon fall.
+sec-error-no-memory = levraoueg diogelroez: c'hwitadenn war derannañ ar vemor.
 sec-error-untrusted-issuer = Merket eo bet testeni skigner ar par evel disfiziek gant an arveriad.
 sec-error-untrusted-cert = Merket eo bet testeni ar par evel disfiziek gant an arveriad.
 sec-error-duplicate-cert = Emañ an testeni er stlennvon endeo.
@@ -190,7 +187,7 @@ sec-error-filing-key = Fazi en ur adrummañ an alc'hwez evit an testeni-mañ.
 sec-error-no-key = N'hall ket bezañ kavet an alc'hwez prevez evit an testeni-mañ e stlennvank an alc'hwezioù.
 sec-error-cert-valid = Talvoudek eo an testeni-mañ.
 sec-error-cert-not-valid = N'eo ket talvoudek an testeni-mañ.
-sec-error-cert-no-response = Levraoueg an testenioù : Respont ebet
+sec-error-cert-no-response = Levraoueg an testenioù: Respont ebet
 sec-error-expired-issuer-certificate = Diamzeret eo testeni ar skigner. Gwiriit deiziad hag eur ho reizhiad.
 sec-error-crl-expired = Diamzeret eo ar CRL evit testeni ar skigner. Hizivait anezhañ pe gwiriit deiziad hag eur ho reizhiad.
 sec-error-crl-bad-signature = Ur sinadur didalvoudek ez eus gant CRL evit testeni ar skigner.
@@ -204,13 +201,13 @@ sec-internal-only = **Mollad diabarzh NEMETKEN**
 sec-error-invalid-key = N'eo ket skoret ar gwezhiadur goulennet gant an alc'hwez.
 sec-error-unknown-critical-extension = Askouezhioù dianav pouezus-tre zo e-barzh an testeni.
 sec-error-old-crl = N'eo ket diwezhatoc'h CRL nevez eget an hini bremanel.
-sec-error-no-email-cert = N'eo ket bet enrineget pe sinet : n'hoc'h eus ket un testeni postel c'hoazh.
-sec-error-no-recipient-certs-query = N'eo ket enrineget : ha testenioù hoc'h eus evit pep degemerer.
-sec-error-not-a-recipient = N'haller ket ezrinegañ : n'oc'h ket un degemerer pe n'eus ket bet kavet un testeni o klotañ ganti pe un alc'hwez prevez.
-sec-error-pkcs7-keyalg-mismatch = N'haller ket ezrinegañ : treol enrinegañ an alc'hwez ne glot ket gant ho testeni.
-sec-error-pkcs7-bad-signature = C'hwitadenn war gwiriañ ar sinadur : n'eus sinour ebet bet kavet, re a sinourion zo bet kavet pe roadennoù dizereat pe kontronet.
+sec-error-no-email-cert = N'eo ket bet enrineget pe sinet: n'hoc'h eus ket un testeni postel c'hoazh.
+sec-error-no-recipient-certs-query = N'eo ket enrineget: ha testenioù hoc'h eus evit pep degemerer.
+sec-error-not-a-recipient = N'haller ket ezrinegañ: n'oc'h ket un degemerer pe n'eus ket bet kavet un testeni o klotañ ganti pe un alc'hwez prevez.
+sec-error-pkcs7-keyalg-mismatch = N'haller ket ezrinegañ: treol enrinegañ an alc'hwez ne glot ket gant ho testeni.
+sec-error-pkcs7-bad-signature = C'hwitadenn war gwiriañ ar sinadur: n'eus sinour ebet bet kavet, re a sinourion zo bet kavet pe roadennoù dizereat pe kontronet.
 sec-error-unsupported-keyalg = Treol alc'hwez anskoret pe dianav.
-sec-error-decryption-disallowed = N'haller ket ezrinegañ : restr enrineget oc'h arverañ un treol pe ur vent restr dizaotreet.
+sec-error-decryption-disallowed = N'haller ket ezrinegañ: restr enrineget oc'h arverañ un treol pe ur vent restr dizaotreet.
 xp-sec-fortezza-bad-card = N'eo ket bet deraouekaet mat ar gartenn Fortezza. Dilammit anezhi ha kasit anezhi en-dro d'ho skigner.
 xp-sec-fortezza-no-card = N'eus ket bet kavet kartennoù Fortezza
 xp-sec-fortezza-none-selected = N'eus kartenn Fortezza ebet bet diuzet.
@@ -224,10 +221,10 @@ sec-error-krl-expired = Diamzeret eo KRL evit testeni al lec'hienn-mañ.
 sec-error-krl-bad-signature = Ur sinadur didalvoudek ez eus gant KRL evit testeni al lec'hienn-mañ.
 sec-error-revoked-key = Tennet kuit eo bet an alc'hwez evit testeni al lec'hienn-mañ.
 sec-error-krl-invalid = Mentrezh didalvoudek gant KRL nevez.
-sec-error-need-random = levraoueg diogelroez : ezhomm ez eus roadennoù dargouezhek.
-sec-error-no-module = levraoueg diogelroez : n'eus mollad diogelroez ebet evit seveniñ ar gwezhiadur bet goulennet.
+sec-error-need-random = levraoueg diogelroez: ezhomm ez eus roadennoù dargouezhek.
+sec-error-no-module = levraoueg diogelroez: n'eus mollad diogelroez ebet evit seveniñ ar gwezhiadur bet goulennet.
 sec-error-no-token = N'eus ket ar gartenn pe ar reveziadenn anezhi, ezhomm he deus bezañ deraouekaet pe dilamet eo bet.
-sec-error-read-only = levraoueg diogelroez : stlennvank da vezañ lennet nemetken.
+sec-error-read-only = levraoueg diogelroez: stlennvank da vezañ lennet nemetken.
 sec-error-no-slot-selected = N'eus faout na reveziadenn ebet bet diuzet.
 sec-error-cert-nickname-collision = Un testeni gant an hevelep lesanv zo anezhañ endeo.
 sec-error-key-nickname-collision = Un alc'hwez gant an hevelep lesanv zo anezhañ endeo.
@@ -279,7 +276,7 @@ sec-error-crl-not-yet-valid = N'eo ket talvoudek c'hoazh roll an testenioù dizo
 sec-error-unknown-cert = N'hall ket bezañ kavet an testeni bet goulennet.
 sec-error-unknown-signer = Testeni ar skigner n'eo ket bet kavet.
 sec-error-cert-bad-access-location = Gant ur mentrezh didalvoudek emañ al lec'hiadur evit dafariad an testenioù stad.
-sec-error-ocsp-unknown-response-type = Respont OCSP n'hall ket bezañ divoneget en e bezh ; gant ur rizh dianav eo hennezh.
+sec-error-ocsp-unknown-response-type = Respont OCSP n’hall ket bezañ divoneget en e bezh; gant ur rizh dianav eo hennezh.
 sec-error-ocsp-bad-http-response = Distroet ez eus bet roadennoù HTTP dic'hortozet/didalvoudek gant an dafariad OCSP.
 sec-error-ocsp-malformed-request = An dafariad OCSP a gav an azgoulenn kontronet pe stummet fall.
 sec-error-ocsp-server-error = An dafariad OCSP en deus buhezet ur fazi diabarzh.

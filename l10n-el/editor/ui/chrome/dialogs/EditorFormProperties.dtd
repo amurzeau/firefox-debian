@@ -8,7 +8,7 @@
 
 <!ENTITY FormName.label "Όνομα φόρμας:">
 <!ENTITY FormName.accesskey "ν">
-<!ENTITY FormAction.label "URL Ενέργειας:">
+<!ENTITY FormAction.label "URL ενέργειας:">
 <!ENTITY FormAction.accesskey "Ε">
 <!ENTITY FormMethod.label "Μέθοδος:">
 <!ENTITY FormMethod.accesskey "θ">
@@ -18,4 +18,4 @@
 <!ENTITY FormTarget.accesskey "χ">
 
 <!ENTITY RemoveForm.label "Αφαίρεση φόρμας">
-<!ENTITY RemoveForm.accesskey "π">
+<!ENTITY RemoveForm.accesskey "Α">

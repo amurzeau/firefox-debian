@@ -305,6 +305,8 @@ identity-https-only-info-turn-off2 = Jolic se zda, až bok jo wobškóźony, co�
 identity-https-only-info-no-upgrade = Zwisk njedajo se z HTTP aktualizěrowaś.
 identity-permissions =
     .value = Pšawa
+identity-permissions-storage-access-header = Cookieje někotarych sedłow
+identity-permissions-storage-access-hint = Toś te wobźělone mógu cookieje a sedłowe daty někotarych sedłow wužywaś, mjaztym až sćo na toś tom sedle.
 identity-permissions-reload-hint = Musyśo snaź bok znowego zacytaś, aby se změny wustatkowali.
 identity-permissions-empty = Njejsćo toś tomu sedłoju wósebne pšawa pśizwólił.
 identity-clear-site-data =
@@ -350,9 +352,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Cytańske znamjenja importěrowaś…
-    .tooltiptext = Cytańske znamjenja z drugego wobglědowaka do { -brand-short-name } kopěrowaś.
+    .tooltiptext = Cytańske znamjenja z drugego wobglědowaka do { -brand-short-name } importěrowaś.
+bookmarks-toolbar-empty-message = Wótpołožćo swóje cytańske znamjenja w symbolowej rědce za malsny pśistup. <a data-l10n-name="manage-bookmarks">Cytańske znamjenja zastojaś…</a>
 
 ## WebRTC Pop-up notifications
 

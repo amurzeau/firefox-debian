@@ -303,6 +303,8 @@ identity-https-only-info-turn-off2 = Als de website niet lijkt te werken, dan ku
 identity-https-only-info-no-upgrade = Kan HTTP-verbinding niet upgraden.
 identity-permissions =
     .value = Toestemmingen
+identity-permissions-storage-access-header = Cross-sitecookies
+identity-permissions-storage-access-hint = Deze partijen kunnen tijdens uw bezoek aan deze website cross-sitecookies en websitegegevens gebruiken.
 identity-permissions-reload-hint = Mogelijk dient u de pagina te vernieuwen om wijzigingen van kracht te laten worden.
 identity-permissions-empty = U hebt deze website geen speciale toestemmingen gegeven.
 identity-clear-site-data =
@@ -348,9 +350,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Bladwijzers importeren…
-    .tooltiptext = Bladwijzers van een andere browser naar { -brand-short-name } kopiëren.
+    .tooltiptext = Bladwijzers uit een andere browser naar { -brand-short-name } importeren.
+bookmarks-toolbar-empty-message = Plaats voor snelle toegang uw bladwijzers hier op de bladwijzerwerkbalk. <a data-l10n-name="manage-bookmarks">Bladwijzers beheren…</a>
 
 ## WebRTC Pop-up notifications
 

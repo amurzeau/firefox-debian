@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Gofal!
 pane-experimental-search-results-header = Arbrofion { -brand-short-name }: Byddwch yn Ofalus
 pane-experimental-description = Gall newid dewisiadau ffurfweddiad uwch effeithio ar berfformiad neu ddiogelwch { -brand-short-name }.
+pane-experimental-reset =
+    .label = Adfer y Rhagosodiadau
+    .accesskey = A
 help-button-label = Cefnogaeth { -brand-short-name }
 addons-button-label = Estyniadau a Themâu
 focus-search =
@@ -524,6 +527,8 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Straeon wedi eu Noddi
 home-prefs-highlights-header =
     .label = Goreuon
+home-prefs-recent-activity-header =
+    .label = Gweithgaredd diweddar
 home-prefs-highlights-description = Detholiad o wefannau rydych wedi eu cadw neu ymweld â nhw
 home-prefs-highlights-option-visited-pages =
     .label = Tudalennau Ymwelwyd â Nhw
@@ -945,6 +950,7 @@ addressbar-suggestions-settings = Newid dewisiadau am awgrymiadau peiriannau chw
 content-blocking-enhanced-tracking-protection = Diogelwch Uwch Rhag Tracio
 content-blocking-section-top-level-description = Mae tracwyr yn eich dilyn ar-lein i gasglu gwybodaeth am eich arferion pori a'ch diddordebau. Mae { -brand-short-name } yn rhwystro llawer o'r tracwyr hyn a sgriptiau maleisus eraill.
 content-blocking-learn-more = Dysgu Rhagor
+content-blocking-fpi-incompatibility-warning = Rydych yn defnyddio Ynysu Parti Cyntaf (FPI), sy’n gwrthwneud rhai o osodiadau cwci { -brand-short-name } ’.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.

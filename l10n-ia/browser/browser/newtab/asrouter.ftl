@@ -7,7 +7,7 @@
 
 cfr-doorhanger-extension-heading = Extension recommendate
 cfr-doorhanger-feature-heading = Function recommendate
-cfr-doorhanger-pintab-heading = Prova isto: Fixar scheda
+cfr-doorhanger-pintab-heading = Prova isto: Clavar le scheda
 
 ##
 
@@ -17,8 +17,8 @@ cfr-doorhanger-extension-cancel-button = Non ora
     .accesskey = N
 cfr-doorhanger-extension-ok-button = Adder ora
     .accesskey = A
-cfr-doorhanger-pintab-ok-button = Fixar iste scheda
-    .accesskey = F
+cfr-doorhanger-pintab-ok-button = Clavar iste scheda
+    .accesskey = C
 cfr-doorhanger-extension-manage-settings-button = Gerer le configurationes de recommendation
     .accesskey = G
 cfr-doorhanger-extension-never-show-recommendation = Non monstrar me iste recommendation
@@ -63,8 +63,8 @@ cfr-doorhanger-pintab-description = Accede facilemente al sitos web que tu usa l
 
 ## These messages are steps on how to use the feature and are shown together.
 
-cfr-doorhanger-pintab-step1 = <b>Face clic dextre</b> sur le scheda que tu vole fixar.
-cfr-doorhanger-pintab-step2 = Elige <b>Fixar scheda</b> in le menu.
+cfr-doorhanger-pintab-step1 = <b>Face clic dextre</b> sur le scheda que tu vole clavar.
+cfr-doorhanger-pintab-step2 = Elige <b>Clavar le scheda</b> in le menu.
 cfr-doorhanger-pintab-step3 = Si le sito se actualisa, un puncto blau apparera sur le scheda fixate.
 cfr-doorhanger-pintab-animation-pause = Pausar
 cfr-doorhanger-pintab-animation-resume = Reprender
@@ -257,8 +257,6 @@ cfr-doorhanger-fission-primary-button = De accordo
     .accesskey = a
 cfr-doorhanger-fission-secondary-button = Saper plus
     .accesskey = S
-# Deprecated
-cfr-doorhanger-fission-body = { -brand-short-name } ha activate un function experimental pro te: Fission (isolamento de sitos). Isolante cata sito in un processo separate, Fission forni un strato additional de securitate pro te e pro le sitos web que tu visita.
 
 ## What's new: Cookies message
 
@@ -271,3 +269,8 @@ cfr-whatsnew-clear-cookies-image-alt = Illustration cookie blocate
 cfr-whatsnew-media-keys-header = Altere controlos multimedial
 cfr-whatsnew-media-keys-body = Reproduce e pausa audio o video directemente de tu claviero o auriculares, rendente facile controlar le multimedia de un altere scheda o programma, mesmo quando tu computator es blocate. Tu pote etiam passar inter pistas con le claves avante e retro.
 cfr-whatsnew-media-keys-button = Apprender como
+
+## What's new: Search shortcuts
+
+cfr-whatsnew-search-shortcuts-header = Vias breve de recerca in le barra del adresses
+cfr-whatsnew-search-shortcuts-body = Quando tu insere un motor de recerca o un sito specific in le barra del adresses, un via breve blau apparera in le suggestiones infra. Selige ille via breve pro completar tu recerca directemente del barra del adresses.

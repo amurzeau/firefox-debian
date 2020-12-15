@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Працягвайце з асцярожнасцю
 pane-experimental-search-results-header = Эксперыменты { -brand-short-name }: працягвайце з асцярожнасцю
 pane-experimental-description = Змена пашыраных налад канфігурацыі можа паўплываць на прадукцыйнасць і бяспеку { -brand-short-name }.
+pane-experimental-reset =
+    .label = Аднавіць прадвызначаныя
+    .accesskey = А
 help-button-label = Падтрымка { -brand-short-name }
 addons-button-label = Пашырэнні & Тэмы
 focus-search =
@@ -515,6 +518,8 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Артыкулы ад спонсараў
 home-prefs-highlights-header =
     .label = Выбранае
+home-prefs-recent-activity-header =
+    .label = Апошняя актыўнасць
 home-prefs-highlights-description = Выбраныя сайты, якія вы захавалі ці наведалі
 home-prefs-highlights-option-visited-pages =
     .label = Наведаныя старонкі
@@ -933,6 +938,7 @@ addressbar-suggestions-settings = Змяніць налады для падка�
 content-blocking-enhanced-tracking-protection = Узмоцненая ахова ад сачэння
 content-blocking-section-top-level-description = Трэкеры ідуць за вамі па сеціве, каб сабраць інфармацыю пра вашыя звычкі і зацікаўленасці. { -brand-short-name } блакуе многія з гэтых трэкераў і іншых зламысных скрыптоў.
 content-blocking-learn-more = Падрабязней
+content-blocking-fpi-incompatibility-warning = Вы ўжываеце First Party Isolation (FPI), што перавызначае некаторыя налады кукаў у { -brand-short-name }.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.

@@ -32,6 +32,14 @@ appmenu-update-restart =
     .secondarybuttonlabel = Non adesso
     .secondarybuttonaccesskey = N
 appmenu-update-restart-message = Dopo il riavvio verranno ripristinate tutte le schede e le finestre attualmente aperte, ad eccezione di quelle in modalità Navigazione anonima.
+appmenu-update-other-instance =
+    .label = Impossibile aggiornare automaticamente { -brand-shorter-name } all’ultima versione.
+    .buttonlabel = Aggiorna comunque { -brand-shorter-name }
+    .buttonaccesskey = A
+    .secondarybuttonlabel = Non adesso
+    .secondarybuttonaccesskey = N
+appmenu-update-other-instance-message = È disponibile una nuova versione di { -brand-shorter-name } ma non può essere installata in quanto è presente un’altra copia di { -brand-shorter-name } attualmente in esecuzione. Chiuderla per procedere con l’aggiornamento, oppure scegliere di aggiornare comunque (l’altra copia potrebbe non funzionare correttamente fino al riavvio).
+
 appmenu-addon-private-browsing-installed =
     .buttonlabel = OK, tutto chiaro
     .buttonaccesskey = O
@@ -39,7 +47,7 @@ appmenu-addon-post-install-message = Gestisci i componenti aggiuntivi facendo cl
 appmenu-addon-post-install-incognito-checkbox =
     .label = Consenti il funzionamento di questa estensione in finestre anonime
     .accesskey = C
-    
+
 appmenu-new-tab-controlled =
     .label = La pagina Nuova scheda è cambiata
     .buttonlabel = Mantieni modifiche
@@ -58,3 +66,16 @@ appmenu-tab-hide-controlled =
     .buttonaccesskey = M
     .secondarybuttonlabel = Disattiva estensione
     .secondarybuttonaccesskey = D
+
+appmenu-new-tab-controlled-changes =
+    .label = La pagina Nuova scheda è cambiata
+    .buttonlabel = Mantieni modifiche
+    .buttonaccesskey = M
+    .secondarybuttonlabel = Gestisci nuove schede
+    .secondarybuttonaccesskey = G
+appmenu-homepage-controlled-changes =
+    .label = La pagina iniziale è cambiata.
+    .buttonlabel = Mantieni modifiche
+    .buttonaccesskey = M
+    .secondarybuttonlabel = Gestisci pagina iniziale
+    .secondarybuttonaccesskey = G

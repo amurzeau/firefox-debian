@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Prossiga com cautela
 pane-experimental-search-results-header = Experimentos no { -brand-short-name }: Prossiga com cautela
 pane-experimental-description = Alterar preferências de configuração avançadas pode afetar o desempenho ou a segurança do { -brand-short-name }.
+pane-experimental-reset =
+    .label = Restaurar padrão
+    .accesskey = R
 help-button-label = Suporte { -brand-short-name }
 addons-button-label = Extensões e Temas
 focus-search =
@@ -512,6 +515,8 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Histórias patrocinadas
 home-prefs-highlights-header =
     .label = Destaques
+home-prefs-recent-activity-header =
+    .label = Atividade recente
 home-prefs-highlights-description = Uma seleção de sites que você salvou ou visitou
 home-prefs-highlights-option-visited-pages =
     .label = Páginas visitadas
@@ -929,6 +934,7 @@ addressbar-suggestions-settings = Alterar preferências de sugestões de mecanis
 content-blocking-enhanced-tracking-protection = Proteção aprimorada contra rastreamento
 content-blocking-section-top-level-description = Rastreadores seguem você por todo canto para coletar informações sobre seus interesses e hábitos de navegação. O { -brand-short-name } bloqueia muitos desses rastreadores e outros scripts maliciosos.
 content-blocking-learn-more = Saiba mais
+content-blocking-fpi-incompatibility-warning = Você está usando isolamento primário (FPI), que substitui algumas configurações de cookies de { -brand-short-name }.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1136,7 +1142,7 @@ space-alert-under-5gb-message = { -brand-short-name } está ficando sem espaço 
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = Modo somente HTTPS
-httpsonly-description = HTTPS fornece uma conexão segura e criptografada entre o { -brand-short-name } e os sites que você visita. A maioria dos sites oferece suporte a HTTPS e, se o modo somente HTTPS estiver ativado, o { -brand-short-name } atualiza todas as conexões para HTTPS.
+httpsonly-description = HTTPS fornece uma conexão criptografada segura entre o { -brand-short-name } e os sites que você visita. A maioria dos sites oferece suporte a HTTPS. Se o modo somente HTTPS estiver ativado, o { -brand-short-name } muda todas as conexões para HTTPS.
 httpsonly-learn-more = Saiba mais
 httpsonly-radio-enabled =
     .label = Ativar o modo somente HTTPS em todas as janelas

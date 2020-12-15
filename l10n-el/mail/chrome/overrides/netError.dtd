@@ -6,7 +6,7 @@
 %brandDTD;
 
 <!ENTITY loadError.label "Πρόβλημα φόρτωσης σελίδας">
-<!ENTITY retry.label "Προσπαθήστε ξανά">
+<!ENTITY retry.label "Δοκιμή ξανά">
 
 <!-- Specific error messages -->
 
@@ -68,7 +68,7 @@
 <!ENTITY netOffline.title "Λειτουργία εκτός σύνδεσης">
 <!ENTITY netOffline.longDesc2 "
 <ul>
-  <li>Πατήστε&quot;Προσπάθεια ξανά&quot; για να μεταβείτε σε εργασία μέ σύνδεση και να ξαναφορτώσετε την σελίδα.</li>
+  <li>Πατήστε το &quot;Δοκιμή ξανά&quot; για εναλλαγή σε λειτουργία εντός σύνδεσης και εκ νέου φόρτωση της σελίδας.</li>
 </ul>
 ">
 
@@ -86,7 +86,7 @@
 </ul>
 ">
 
-<!ENTITY netReset.title "Έγινε διακοπή της σύνδεσης με τη σελίδα">
+<!ENTITY netReset.title "Έγινε επαναφορά της σύνδεσης">
 <!ENTITY netReset.longDesc "&sharedLongDesc;">
 
 <!ENTITY netTimeout.title "Υπέρβαση ορίου χρόνου της σύνδεσης">
@@ -173,8 +173,8 @@
 <!ENTITY corruptedContentErrorv2.longDesc "<p>Η σελίδα που προσπαθείτε να δείτε δεν μπορεί να εμφανιστεί επειδή εντοπίστηκε σφάλμα στην μετάδοση των δεδομένων.</p><ul><li>Επικοινωνήστε με τους ιδιοκτήτες του ιστοτόπου για να τους ενημερώσετε για το πρόβλημα</li></ul>">
 
 <!ENTITY securityOverride.linkText "Ή μπορείτε να προσθέσετε μια εξαίρεση…">
-<!ENTITY securityOverride.getMeOutOfHereButton "Να φύγω από εδώ!">
-<!ENTITY securityOverride.exceptionButtonLabel "Προσθήκη εξαίρεσης">
+<!ENTITY securityOverride.getMeOutOfHereButton "Θέλω να φύγω από εδώ!">
+<!ENTITY securityOverride.exceptionButtonLabel "Προσθήκη εξαίρεσης…">
 
 <!-- LOCALIZATION NOTE (securityOverride.warningContent) - Do not translate the
 contents of the <button> tags. It uses strings already defined above. The

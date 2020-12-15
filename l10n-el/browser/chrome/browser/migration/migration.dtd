@@ -17,7 +17,7 @@
 <!ENTITY importFromEdgeBeta.label       "Microsoft Edge Beta">
 <!ENTITY importFromEdgeBeta.accesskey   "d">
 <!ENTITY importFromNothing.label        "Να μην εισαχθεί τίποτα">
-<!ENTITY importFromNothing.accesskey    "N">
+<!ENTITY importFromNothing.accesskey    "Ν">
 <!ENTITY importFromSafari.label         "Safari">
 <!ENTITY importFromSafari.accesskey     "S">
 <!ENTITY importFromCanary.label         "Chrome Canary">
@@ -41,7 +41,7 @@
 <!ENTITY importItems.title              "Στοιχεία προς εισαγωγή">
 <!ENTITY importItems.label              "Επιλέξτε στοιχεία προς εισαγωγή:">
 
-<!ENTITY migrating.title                "Εισαγωγή...">
+<!ENTITY migrating.title                "Εισαγωγή…">
 <!ENTITY migrating.label                "Γίνεται εισαγωγή των παρακάτω στοιχείων αυτή τη στιγμή…">
 
 <!ENTITY selectProfile.title            "Επιλογή προφίλ">

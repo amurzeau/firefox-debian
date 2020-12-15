@@ -303,6 +303,8 @@ identity-https-only-info-turn-off2 = Калі старонка выглядае 
 identity-https-only-info-no-upgrade = Не ўдалося абнавіць злучэнне з HTTP.
 identity-permissions =
     .value = Дазволы
+identity-permissions-storage-access-header = Міжсайтавыя кукі
+identity-permissions-storage-access-hint = Гэтыя ўдзельнікі могуць выкарыстоўваць міжсайтавыя кукі і дадзеныя сайта, пакуль вы знаходзіцеся на гэтым сайце.
 identity-permissions-reload-hint = Магчыма, вам спатрэбіцца перазагрузіць старонку, каб змены пачалі дзейнічаць.
 identity-permissions-empty = Вы не давалі гэтаму сайту ніякіх адмысловых дазволаў.
 identity-clear-site-data =
@@ -348,9 +350,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Імпартаваць закладкі…
-    .tooltiptext = Капіраваць закладкі з іншага браўзера ў { -brand-short-name }.
+    .tooltiptext = Імпартаваць закладкі з іншага браўзера ў { -brand-short-name }.
+bookmarks-toolbar-empty-message = Для хуткага доступу размясціце закладкі тут, на паліцы закладак. <a data-l10n-name="manage-bookmarks">Кіраванне закладкамі…</a>
 
 ## WebRTC Pop-up notifications
 

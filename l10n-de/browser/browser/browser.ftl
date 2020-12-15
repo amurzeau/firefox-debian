@@ -301,6 +301,8 @@ identity-https-only-info-turn-off2 = Wenn die Seite beschädigt erscheint, könn
 identity-https-only-info-no-upgrade = Verbindung konnte nicht von HTTP geändert werden.
 identity-permissions =
     .value = Berechtigungen
+identity-permissions-storage-access-header = Seitenübergreifende Cookies
+identity-permissions-storage-access-hint = Diese Beteiligten können Cookies und Website-Daten verwenden, während Sie sich auf dieser Website befinden.
 identity-permissions-reload-hint = Eventuell muss die Seite neu geladen werden, um die Änderungen zu übernehmen.
 identity-permissions-empty = Der Website wurden keine besonderen Berechtigungen erteilt.
 identity-clear-site-data =
@@ -346,9 +348,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Lesezeichen importieren…
-    .tooltiptext = Lesezeichen aus einem anderen Browser zu { -brand-short-name } kopieren
+    .tooltiptext = Lesezeichen aus einem anderen Browser zu { -brand-short-name } importieren.
+bookmarks-toolbar-empty-message = Legen Sie Ihre Lesezeichen hier in der Lesezeichen-Symbolleiste ab, um schnell darauf zuzugreifen. <a data-l10n-name="manage-bookmarks">Lesezeichen verwalten…</a>
 
 ## WebRTC Pop-up notifications
 

@@ -10,6 +10,8 @@ about-processes-column-action =
 
 ## Tooltips
 
+about-processes-shutdown-process =
+    .title = Emboguejy tendayke ha ejapopa tapereko
 about-processes-shutdown-tab =
     .title = Emboty tendayke
 
@@ -27,14 +29,42 @@ about-processes-column-cpu-total = CPU
 
 about-processes-browser-process-name = { -brand-short-name } (tapereko { $pid })
 about-processes-web-process-name = Ñanduti (tapereko { $pid }, moherakuãmbyre)
+about-processes-web-isolated-process-name = Ñanduti (rapereko { $pid }) { $origin } peg̃uarã
+about-processes-web-large-allocation = Ñanduti (rapereko { $pid }, tuicha) { $origin } peg̃uarã
+about-processes-with-coop-coep-process-name = Ñanduti (rapereko { $pid }, teñoiha juasapyre mombyrýva) { $origin } peg̃uarã
 about-processes-file-process-name = Marandurenda (tapereko { $pid })
+about-processes-extension-process-name = Moĩmbaha (rapereko { $pid })
 about-processes-privilegedabout-process-name = (tapereko { $pid }) rehegua
 about-processes-plugin-process-name = Moĩmbaha (tapereko { $pid })
 about-processes-privilegedmozilla-process-name = Ñanduti (tapereko { $pid }) { -vendor-short-name } rendápe g̃uarã
+about-processes-gmp-plugin-process-name = Moĩmbaha Gecko rehegua (rapereko { $pid })
 about-processes-gpu-process-name = GPU (tapereko { $pid })
+about-processes-vr-process-name = VR (rapereko { $pid })
+about-processes-rdd-process-name = Mba’ekuaarã mbopapapy’oha (rapereko { $pid })
+about-processes-socket-process-name = Ñanduti (rapereko { $pid })
+about-processes-remote-sandbox-broker-process-name = Remote Sandbox Broker (rapereko { $pid })
+about-processes-fork-server-process-name = Fork Server (rapereko { $pid })
+about-processes-preallocated-process-name = Ñeme’ẽmby (rapereko { $pid })
+about-processes-unknown-process-name = Ambue ({ $type }, rapereko { $pid })
+# Process
+# Variables:
+#   $name (String) The name assigned to the process.
+#   $pid (String) The process id of this process, assigned by the OS.
+about-processes-process-name = Tapereko { $pid }: { $name }
 
 ## Details within processes
 
+# Single-line summary of threads
+# Variables:
+#    $number (Number) The number of threads in the process. Typically larger
+#                     than 30. We don't expect to ever have processes with less
+#                     than 5 threads.
+about-processes-thread-summary = Inimbo ({ $number })
+# Thread details
+# Variables:
+#   $name (String) The name assigned to the thread.
+#   $tid (String) The thread id of this thread, assigned by the OS.
+about-processes-thread-name = Inimbo { $tid }: { $name }
 # Tab
 # Variables:
 #   $name (String) The name of the tab (typically the title of the page, might be the url while the page is loading).

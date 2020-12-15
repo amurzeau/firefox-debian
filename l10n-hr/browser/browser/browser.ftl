@@ -298,7 +298,7 @@ identity-https-only-dropdown-off =
     .label = Isključeno
 identity-https-only-dropdown-off-temporarily =
     .label = Privremeno isključeno
-identity-https-only-info-turn-on2 = Uključi način rada "samo HTTPS" za ovu stranicu, ako želiš da { -brand-short-name } nadogradi vezu kada je to moguće.
+identity-https-only-info-turn-on2 = Uključi način rada „samo HTTPS” za ovu stranicu, ako želiš da { -brand-short-name } nadogradi vezu kad je to moguće.
 identity-https-only-info-turn-off2 = Ako se stranica čini slomljenom, možda ćeš htjeti isključiti način rada "samo HTTPS" za ovu stranicu i ponovno ju učitati pomoću nesigurnog HTTP-a.
 identity-https-only-info-no-upgrade = Nije moguće nadograditi vezu s HTTP-a.
 identity-permissions =
@@ -348,9 +348,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Uvezi zabilješke…
-    .tooltiptext = Kopiraj zabilješke iz drugog preglednika u { -brand-short-name }.
+    .tooltiptext = Uvoz zabilješki iz drugog preglednika u { -brand-short-name }.
+bookmarks-toolbar-empty-message = Za brzi pristup, postavi svoje zabilješke ovdje na alatnu traku zabilješki. <a data-l10n-name="manage-bookmarks">Upravljaj zabilješkama…</a>
 
 ## WebRTC Pop-up notifications
 

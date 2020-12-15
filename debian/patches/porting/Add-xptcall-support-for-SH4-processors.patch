@@ -13,12 +13,12 @@ https://bugzilla.mozilla.org/show_bug.cgi?id=382214
  create mode 100644 xpcom/reflect/xptcall/src/md/unix/xptcstubs_linux_sh.cpp
 
 diff --git a/xpcom/reflect/xptcall/md/unix/moz.build b/xpcom/reflect/xptcall/md/unix/moz.build
-index 6e9608e..8ab57b7 100644
+index 1083e26..7b7b776 100644
 --- a/xpcom/reflect/xptcall/md/unix/moz.build
 +++ b/xpcom/reflect/xptcall/md/unix/moz.build
-@@ -257,6 +257,11 @@ if CONFIG['OS_ARCH'] == 'Linux':
+@@ -262,6 +262,11 @@ if CONFIG["OS_ARCH"] == "Linux":
              CXXFLAGS += [
-                 '-fno-integrated-as',
+                 "-fno-integrated-as",
              ]
 +    elif CONFIG['OS_TEST'] in ('sh4', 'sh4a'):
 +        SOURCES += [
@@ -26,7 +26,7 @@ index 6e9608e..8ab57b7 100644
 +            'xptcstubs_linux_sh.cpp',
 +        ]
  
- FINAL_LIBRARY = 'xul'
+ FINAL_LIBRARY = "xul"
  
 diff --git a/xpcom/reflect/xptcall/src/md/unix/xptcinvoke_linux_sh.cpp b/xpcom/reflect/xptcall/src/md/unix/xptcinvoke_linux_sh.cpp
 new file mode 100644

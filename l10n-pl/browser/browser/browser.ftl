@@ -303,6 +303,8 @@ identity-https-only-info-turn-off2 = Jeśli strona wydaje się niepoprawnie dzia
 identity-https-only-info-no-upgrade = Nie można przełączyć połączenia z protokołu HTTP.
 identity-permissions =
     .value = Uprawnienia
+identity-permissions-storage-access-header = Ciasteczka między witrynami
+identity-permissions-storage-access-hint = Te strony mogą używać ciasteczek i danych między witrynami, kiedy jesteś na tej witrynie.
 identity-permissions-reload-hint = Ponowne wczytanie strony może być konieczne, aby wprowadzone zmiany przyniosły skutek.
 identity-permissions-empty = Witryna korzysta z domyślnych uprawnień.
 identity-clear-site-data =
@@ -348,9 +350,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Importuj zakładki…
-    .tooltiptext = Skopiuj zakładki z innej przeglądarki do przeglądarki { -brand-short-name }
+    .tooltiptext = Zaimportuj zakładki z innej przeglądarki do przeglądarki { -brand-short-name }
+bookmarks-toolbar-empty-message = Umieść swoje zakładki na tym pasku zakładek, aby mieć do nich szybki dostęp. <a data-l10n-name="manage-bookmarks">Zarządzaj zakładkami…</a>
 
 ## WebRTC Pop-up notifications
 

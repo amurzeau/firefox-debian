@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Укуцајте мање, пронађите више: претражујте { $engineName } директно из ваше адресне траке.
 urlbar-search-tips-redirect-2 = Започните вашу претрагу у адресној траци да бисте видели { $engineName } предлоге и вашу историју прегледања.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Изаберите ову пречицу за бржу претраживање.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -222,7 +225,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Овај пут потражи користећи:
 # This string won't wrap, so if the translated string is longer,
@@ -287,8 +290,21 @@ identity-passive-loaded = Делови ове странице нису безб
 identity-active-loaded = Заштита на овој страници је искључена.
 identity-weak-encryption = Страница користи слабо шифровање.
 identity-insecure-login-forms = Пријаве које су унесене на овој страници су можда угрожене.
+identity-https-only-connection-upgraded = (надограђено на HTTPS)
+identity-https-only-label = HTTPS-Only режим
+identity-https-only-dropdown-on =
+    .label = Укљ.
+identity-https-only-dropdown-off =
+    .label = Искљ.
+identity-https-only-dropdown-off-temporarily =
+    .label = Привремено искључено
+identity-https-only-info-turn-on2 = Укључите HTTPS-Only режим за ову страницу ако желите да { -brand-short-name } надогради везу кад је то могуће.
+identity-https-only-info-turn-off2 = Ако страница делује неисправно, можете искључити HTTPS-Only режим и поново учитати страницу преко несигурног HTTP-а.
+identity-https-only-info-no-upgrade = Није могуће надоградити HTTP везу.
 identity-permissions =
     .value = Дозволе
+identity-permissions-storage-access-header = Вишестранични колачићи
+identity-permissions-storage-access-hint = Ове стране могу користити вишестраничне колачиће и страничне податке током ваше посете страници.
 identity-permissions-reload-hint = Можда ћете морати поново учитати страницу да примените промене.
 identity-permissions-empty = Овом сајту нису додељене никакве посебне дозволе.
 identity-clear-site-data =
@@ -331,6 +347,13 @@ browser-window-restore-down-button =
     .tooltiptext = Врати доле
 browser-window-close-button =
     .tooltiptext = Затвори
+
+## Bookmarks toolbar items
+
+browser-import-button2 =
+    .label = Увези обележиваче…
+    .tooltiptext = Увези обележиваче из другог прегледача у { -brand-short-name }.
+bookmarks-toolbar-empty-message = Брзо приступите обележивачима тако што ћете их поставити овде на траку обележивача. <a data-l10n-name="manage-bookmarks">Управљајте обележивачима…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -435,13 +458,37 @@ urlbar-result-action-search-in-private = Претражите у приватн�
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Претражи са { $engine }
+urlbar-result-action-sponsored = Спонзорисано
 urlbar-result-action-switch-tab = Пребаци на језичак
 urlbar-result-action-visit = Посети
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Притисните Tab за претраживање { $engine }-ом
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Притисните Tab за претрагу { $engine }-а
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Претражите помоћу { $engine }-а директно из адресне траке
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Претражите { $engine } директно из адресне траке
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-bookmarks = Претражи обележиваче
+urlbar-result-action-search-history = Претражи историју
+urlbar-result-action-search-tabs = Претражи језичке
 
 ## Full Screen and Pointer Lock UI
 

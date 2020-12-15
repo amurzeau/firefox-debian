@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Vorsicht!
 pane-experimental-search-results-header = { -brand-short-name } Experimente: Vorsicht!
 pane-experimental-description = Das Ändern von erweiterten Konfigurationseinstellungen kann sich auf die Leistung und Sicherheit von { -brand-short-name } auswirken.
+pane-experimental-reset =
+    .label = Standard wiederherstellen
+    .accesskey = w
 help-button-label = Hilfe für { -brand-short-name }
 addons-button-label = Erweiterungen & Themes
 focus-search =
@@ -512,6 +515,8 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Gesponserte Inhalte
 home-prefs-highlights-header =
     .label = Überblick
+home-prefs-recent-activity-header =
+    .label = Neueste Aktivität
 home-prefs-highlights-description = Eine Auswahl von Websites, die Sie gespeichert oder besucht haben
 home-prefs-highlights-option-visited-pages =
     .label = Besuchte Seiten
@@ -929,6 +934,7 @@ addressbar-suggestions-settings = Einstellungen für Suchvorschläge ändern
 content-blocking-enhanced-tracking-protection = Verbesserter Schutz vor Aktivitätenverfolgung
 content-blocking-section-top-level-description = Skripte zur Aktivitätenverfolgung folgen Ihnen und sammeln Informationen über Ihre Internet-Gewohnheiten und Interessen. { -brand-short-name } blockiert viele dieser Skripte zur Aktivitätenverfolgung und andere böswillige Skripte.
 content-blocking-learn-more = Weitere Informationen
+content-blocking-fpi-incompatibility-warning = Sie verwenden First Party Isolation (FPI), was einige der Cookie-Einstellungen von { -brand-short-name } überschreibt.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.

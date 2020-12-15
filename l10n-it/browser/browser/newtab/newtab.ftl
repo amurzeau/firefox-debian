@@ -8,6 +8,9 @@
 newtab-page-title = Nuova scheda
 newtab-settings-button =
     .title = Personalizza la pagina Nuova scheda
+newtab-personalize-button-label = Personalizza
+    .title = Personalizza nuova Scheda
+    .aria-label = Personalizza nuova Scheda
 
 ## Search box component.
 
@@ -178,6 +181,8 @@ newtab-section-expand-section-label =
 
 newtab-section-header-topsites = Siti principali
 newtab-section-header-highlights = In evidenza
+newtab-section-header-recent-activity = Attività recente
+
 # Variables:
 #  $provider (String): Name of the corresponding content provider.
 newtab-section-header-pocket = Consigliati da { $provider }

@@ -1,3 +1,7 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
 <!ENTITY aboutDialog.title          "Par &brandFullName;">
 
 <!-- LOCALIZATION NOTE (update.*):
@@ -9,10 +13,10 @@
 # The button when displayed is located directly under the Thunderbird version in
 # the about dialog.
 -->
-<!ENTITY update.checkForUpdatesButton.label       "Pārbaudīt atjauninājumus">
-<!ENTITY update.checkForUpdatesButton.accesskey   "a">
+<!ENTITY update.checkForUpdatesButton.label       "Pārbaudīt atjaunojumus">
+<!ENTITY update.checkForUpdatesButton.accesskey   "P">
 <!ENTITY update.updateButton.label3               "Pārstartēt, lai atjaunotu &brandShorterName;">
-<!ENTITY update.updateButton.accesskey            "R">
+<!ENTITY update.updateButton.accesskey            "r">
 
 
 <!-- LOCALIZATION NOTE (warningDesc.version): This is a warning about the experimental nature of Nightly builds. It is only shown in this version. -->
@@ -24,10 +28,10 @@
 <!ENTITY community.exp.start        "">
 <!-- LOCALIZATION NOTE (community.exp.mozillaLink): This is a link title that links to https://www.mozilla.org/. -->
 <!ENTITY community.exp.mozillaLink  "&vendorShortName;">
-<!ENTITY community.exp.middle       "ir">
+<!ENTITY community.exp.middle       " ir ">
 <!-- LOCALIZATION NOTE (community.exp.creditslink): This is a link title that links to about:credits. -->
 <!ENTITY community.exp.creditsLink  "globāla kopiena">
-<!ENTITY community.exp.end          "strādā kopā, lai tīmeklis būtu atvērts, publisks un pieejams visiem.">
+<!ENTITY community.exp.end          ", kas kopīgi strādā, lai tīmeklis būtu atvērts, publisks un pieejams visiem.">
 
 <!ENTITY community.start2           "&brandShortName; izstrādā">
 <!-- LOCALIZATION NOTE (community.mozillaLink): This is a link title that links to https://www.mozilla.org/. -->
@@ -35,12 +39,12 @@
 <!ENTITY community.middle2          ", kura">
 <!-- LOCALIZATION NOTE (community.creditsLink): This is a link title that links to about:credits. -->
 <!ENTITY community.creditsLink      "globālā kopiena">
-<!ENTITY community.end3             "strādā kopā, lai tīmeklis būtu atvērts, publisks un pieejams visiem.">
+<!ENTITY community.end3             ", kas kopīgi strādā, lai tīmeklis būtu atvērts, publisks un pieejams visiem.">
 
-<!ENTITY helpus.start               "Vēlaties palīdzēt?">
+<!ENTITY helpus.start               "Vēlaties palīdzēt? ">
 <!-- LOCALIZATION NOTE (helpus.donateLink): This is a link title that links to the thunderbird donation page -->
 <!ENTITY helpus.donateLink          "Ziedojiet">
-<!ENTITY helpus.middle              "vai">
+<!ENTITY helpus.middle              " vai ">
 <!-- LOCALIZATION NOTE (helpus.getInvolvedLink): This is a link title that links to https://www.thunderbird.net/get-involved/. -->
 <!ENTITY helpus.getInvolvedLink     "iesaistieties!">
 <!ENTITY helpus.end                 "">
@@ -106,7 +110,7 @@
 <!-- LOCALIZATION NOTE (channel.description.start,channel.description.end): channel.description.start and
      channel.description.end create one sentence, with the current channel label inserted in between.
      example: You are currently on the _Stable_ update channel. -->
-<!ENTITY channel.description.start  "Šobrīd jūs izmantojat">
-<!ENTITY channel.description.end    "atjaunojumu kanāls.">
+<!ENTITY channel.description.start  "Šobrīd jūs izmantojat ">
+<!ENTITY channel.description.end    " atjaunojumu kanālu.">
 
 <!ENTITY cmdCloseMac.commandKey "w">

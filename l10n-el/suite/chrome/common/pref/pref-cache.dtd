@@ -1,0 +1,22 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!-- extracted from content/pref-cache.xul -->
+
+<!--LOCALIZATION NOTE : FILE Cache prefs dialog -->
+<!ENTITY pref.cache.title                "Προσωρινή μνήμη">
+<!ENTITY pref.cache.caption              "Ορισμός επιλογών προσωρινής μνήμης">
+<!ENTITY diskCacheUpTo.label             "Χρήση έως">
+<!ENTITY diskCacheUpTo.accesskey         "Χ">
+<!ENTITY spaceMbytes                     "MB χώρου δίσκου για την προσωρινή μνήμη">
+<!ENTITY clearDiskCache.label            "Απαλοιφή προσωρινής μνήμης">
+<!ENTITY clearDiskCache.accesskey        "Α">
+<!ENTITY chooseDiskCacheFolder.label     "Επιλογή φακέλου…">
+<!ENTITY chooseDiskCacheFolder.accesskey "Ε">
+<!ENTITY checkOncePerSession.label       "Μία φορά ανά συνεδρία">
+<!ENTITY checkEveryTime.label            "Κάθε φορά που βλέπω τη σελίδα">
+<!ENTITY checkNever.label                "Ποτέ">
+<!ENTITY checkAutomatically.label        "Όταν η σελίδα δεν είναι ενημερωμένη">
+
+<!ENTITY prefetchTitle.label             "Προ-φόρτωση συνδέσμου">

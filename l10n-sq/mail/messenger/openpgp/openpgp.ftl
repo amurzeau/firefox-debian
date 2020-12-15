@@ -106,10 +106,55 @@ openpgp-key-send-key =
 openpgp-key-man-copy-to-clipbrd =
     .label = Kopjo Kyç(e) Publik Në të Papastër
     .accesskey = K
+openpgp-key-man-copy-key-ids =
+    .label =
+        { $count ->
+            [one] Kopjo ID Kyçi Në të Papastër
+           *[other] Kopjo ID Kyçesh Në të Papastër
+        }
+    .accesskey = K
+openpgp-key-man-copy-fprs =
+    .label =
+        { $count ->
+            [one] Kopjo Shenjë Gishti Në të Papastër
+           *[other] Kopjo Shenjash Gishtash Në të Papastër
+        }
+    .accesskey = K
+openpgp-key-man-copy-to-clipboard =
+    .label =
+        { $count ->
+            [one] Kopjo Kyç Publik Në të Papastër
+           *[other] Kopjo Kyçe Publikë Në të Papastër
+        }
+    .accesskey = K
 openpgp-key-man-ctx-expor-to-file-label =
     .label = Eksportoni Kyçe Në Kartelë
 openpgp-key-man-ctx-copy-to-clipbrd-label =
     .label = Kopjo Kyçe Publikë Në të Papastër
+openpgp-key-man-ctx-copy =
+    .label = Kopjoje
+    .accesskey = K
+openpgp-key-man-ctx-copy-fprs =
+    .label =
+        { $count ->
+            [one] Shenjë gishtash
+           *[other] Shenja gishtash
+        }
+    .accesskey = S
+openpgp-key-man-ctx-copy-key-ids =
+    .label =
+        { $count ->
+            [one] ID Kyçi
+           *[other] ID Kyçesh
+        }
+    .accesskey = I
+openpgp-key-man-ctx-copy-public-keys =
+    .label =
+        { $count ->
+            [one] Kyç Publik
+           *[other] Kyçe Publikë
+        }
+    .accesskey = K
 openpgp-key-man-close =
     .label = Mbylle
 openpgp-key-man-reload =
@@ -496,7 +541,9 @@ key-man-button-generate-key = &Prodho Kyç
 key-abort = Të ndërpritet prodhimi i kyçit?
 key-man-button-generate-key-abort = &Ndërprite Prodhimin e Kyçit
 key-man-button-generate-key-continue = &Vazhdo Prodhimin e Kyçit
+
 # Strings used in enigmailMessengerOverlay.js
+
 failed-decrypt = Gabim - shfshehtëzimi dështoi
 fix-broken-exchange-msg-failed = S’pat sukses në riparimin e mesazhit.
 attachment-no-match-from-signature = S’u përputh dot kartela e nënshkrimit '{ $attachment }' me ndonjë bashkëngjitje

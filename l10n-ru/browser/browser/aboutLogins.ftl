@@ -29,6 +29,7 @@ menu =
 about-logins-menu-menuitem-import-from-another-browser = Импорт из другого браузера…
 about-logins-menu-menuitem-import-from-a-file = Импорт из файла…
 about-logins-menu-menuitem-export-logins = Экспорт логинов…
+about-logins-menu-menuitem-remove-all-logins = Удалить все логины…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Настройки
@@ -169,6 +170,40 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Удалить этот логин?
 confirm-delete-dialog-message = Это действие нельзя отменить.
 about-logins-confirm-remove-dialog-confirm-button = Удалить
+about-logins-confirm-remove-all-dialog-confirm-button = Удалить все
+about-logins-confirm-remove-all-dialog-checkbox-label =
+    { $count ->
+        [1] Да, удалить этот логин
+        [one] Да, удалить эти логины
+        [few] Да, удалить эти логины
+       *[many] Да, удалить эти логины
+    }
+about-logins-confirm-remove-all-dialog-title =
+    { $count ->
+        [one] Сохранён { $count } логин. Удалить их все?
+        [few] Сохранено { $count } логина. Удалить их все?
+       *[many] Сохранено { $count } логинов. Удалить их все?
+    }
+about-logins-confirm-remove-all-dialog-message =
+    { $count ->
+        [1] Это приведет к удалению логина, сохранённого вами в { -brand-short-name }, и всех предупреждений об утечках, появляющихся здесь. Вы не сможете отменить это действие.
+        [one] Это приведет к удалению всех логинов, сохранённых вами в { -brand-short-name }, и всех предупреждений об утечках, появляющихся здесь. Вы не сможете отменить это действие.
+        [few] Это приведет к удалению всех логинов, сохранённых вами в { -brand-short-name }, и всех предупреждений об утечках, появляющихся здесь. Вы не сможете отменить это действие.
+       *[many] Это приведет к удалению всех логинов, сохранённых вами в { -brand-short-name }, и всех предупреждений об утечках, появляющихся здесь. Вы не сможете отменить это действие.
+    }
+about-logins-confirm-remove-all-sync-dialog-title =
+    { $count ->
+        [one] Сохранён { $count } логин. Удалить их все со всех устройств?
+        [few] Сохранено { $count } логина. Удалить их все со всех устройств?
+       *[many] Сохранено { $count } логинов. Удалить их все со всех устройств?
+    }
+about-logins-confirm-remove-all-sync-dialog-message =
+    { $count ->
+        [1] Это приведет к удалению логина, сохранённого вами в { -brand-short-name } на всех устройствах, синхронизированных с вашим { -fxaccount-brand-name(case: "instrumental") }. Это также удалит предупреждения об утечках, появляющихся здесь. Вы не сможете отменить это действие.
+        [one] Это приведет к удалению всех логинов, сохранённых вами в { -brand-short-name } на всех устройствах, синхронизированных с вашим { -fxaccount-brand-name(case: "instrumental") }. Это также удалит предупреждения об утечках, появляющихся здесь. Вы не сможете отменить это действие.
+        [few] Это приведет к удалению всех логинов, сохранённых вами в { -brand-short-name } на всех устройствах, синхронизированных с вашим { -fxaccount-brand-name(case: "instrumental") }. Это также удалит предупреждения об утечках, появляющихся здесь. Вы не сможете отменить это действие.
+       *[many] Это приведет к удалению всех логинов, сохранённых вами в { -brand-short-name } на всех устройствах, синхронизированных с вашим { -fxaccount-brand-name(case: "instrumental") }. Это также удалит предупреждения об утечках, появляющихся здесь. Вы не сможете отменить это действие.
+    }
 about-logins-confirm-export-dialog-title = Экспорт логинов и паролей
 about-logins-confirm-export-dialog-message = Ваши пароли будут сохранены в виде читаемого текста (например, BadP@ssw0rd), поэтому любой, кто может открыть файл с ними, сможет их просмотреть.
 about-logins-confirm-export-dialog-confirm-button = Экспортировать…

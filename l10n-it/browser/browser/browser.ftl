@@ -301,6 +301,8 @@ identity-https-only-info-no-upgrade = Impossibile aggiornare la connessione da H
 
 identity-permissions =
     .value = Permessi
+identity-permissions-storage-access-header = Cookie intersito
+identity-permissions-storage-access-hint = Questi soggetti possono utilizzare cookie intersito e dati dei siti web quando ti trovi in questo sito.
 identity-permissions-reload-hint = Potrebbe essere necessario ricaricare la pagina per rendere effettive le modifiche.
 identity-permissions-empty = Nessun permesso speciale associato a questo sito.
 identity-clear-site-data =
@@ -346,9 +348,11 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Importa segnalibri…
-    .tooltiptext = Copia in { -brand-short-name } i segnalibri di un altro browser.
+    .tooltiptext = Importa i segnalibri di un altro browser in { -brand-short-name }.
+
+bookmarks-toolbar-empty-message = Salva i tuoi segnalibri qui, nella Barra dei segnalibri, per accedervi più rapidamente. <a data-l10n-name="manage-bookmarks">Gestisci i segnalibri…</a>
 
 ## WebRTC Pop-up notifications
 

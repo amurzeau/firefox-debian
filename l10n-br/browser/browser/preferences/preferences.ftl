@@ -29,6 +29,8 @@ search-input-box =
            *[other] Klask er gwellvezioù
         }
 managed-notice = Ardoet eo ho merdeer gant hoc'h aozadur.
+category-list =
+    .aria-label = Rummadoù
 pane-general-title = Hollek
 category-general =
     .tooltiptext = { pane-general-title }
@@ -45,6 +47,9 @@ pane-sync-title2 = { -sync-brand-short-name }
 category-sync2 =
     .tooltiptext = { pane-sync-title2 }
 pane-experimental-subtitle = Kendalc'hit gant evezh
+pane-experimental-reset =
+    .label = Assav an arventennoù dre ziouer
+    .accesskey = A
 help-button-label = Skor { -brand-short-name }
 addons-button-label = Askouezhioù & Neuzioù
 focus-search =
@@ -117,7 +122,7 @@ startup-header = Loc'hañ
 # since this setting is only exposed in Firefox Developer Edition
 separate-profile-mode =
     .label = Aotren { -brand-short-name } ha Firefox da erounit war un dro
-use-firefox-sync = Tun : arveret e vo aeladoù disheñvel. Arverit { -sync-brand-short-name } evit rannañ roadennoù etrezo.
+use-firefox-sync = Tun: arveret e vo aeladoù disheñvel. Arverit { -sync-brand-short-name } evit rannañ roadennoù etrezo.
 get-started-not-logged-in = Kennaskañ ouzh { -sync-brand-short-name }…
 get-started-configured = Digeriñ gwellvezioù { -sync-brand-short-name }
 always-check-default =
@@ -338,7 +343,7 @@ play-drm-content =
     .label = Lenn un endalc'had reoliet gant DRM
     .accesskey = L
 play-drm-content-learn-more = Gouzout hiroc'h
-update-application-title = Hizivadurioù evit { -brand-short-name } :
+update-application-title = Hizivadurioù evit { -brand-short-name }:
 update-application-description = Derc'hel { -brand-short-name } hizivaet evit an digonusted, stabilded ha diogelroez gwellañ.
 update-application-version = Handelv { $version } <a data-l10n-name="learn-more">Petra nevez</a>
 update-history =
@@ -416,6 +421,7 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Gweredekaat ar reoliadurioù video skeudenn-war-skeudenn
     .accesskey = G
 browsing-picture-in-picture-learn-more = Gouzout hiroc'h
+browsing-media-control-learn-more = Gouzout hiroc'h
 browsing-cfr-recommendations =
     .label = Erbediñ askouezhioù p'emaoc'h o merdeiñ
     .accesskey = R
@@ -479,6 +485,8 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Lec'hiennoù gwellañ
 home-prefs-topsites-description = Al lec'hiennoù a weladennit ar muiañ
+home-prefs-topsites-by-option-sponsored =
+    .label = Lec'hiennoù gwellañ paeroniet
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -493,6 +501,8 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Istorioù kevelet
 home-prefs-highlights-header =
     .label = Mareoù pouezus
+home-prefs-recent-activity-header =
+    .label = Oberiantiz a-nevez
 home-prefs-highlights-description = Un dibab a lec'hiennoù ho peus enrollet pe gweladennet
 home-prefs-highlights-option-visited-pages =
     .label = Pajennoù gweladennet
@@ -549,8 +559,10 @@ search-show-suggestions-above-history-option =
     .label = Diskouez an alioù klask a-us d'ar roll istor e disoc'hoù ar varrenn chomlec'h
 search-show-suggestions-private-windows =
     .label = Diskouez ar c'hinnigoù enklask er prenestroù prevez
+suggestions-addressbar-settings-generic = Kemmañ ar gwellvezioù evit ar c’hinnigoù barenn chomlec’h all
 search-suggestions-cant-show = Ne vo ket skrammet ar c'hinnigoù enklask e disoc'hoù ar varrenn chomlec'hioù dre m'ho peus kefluniet { -brand-short-name }  evit ma ne zalc'hfe ket soñj eus ho roll istor.
 search-one-click-header = Luskerioù enklask ur-c'hlik
+search-one-click-header2 = Berradennoù enklask
 search-one-click-desc = Dibabit al luskerioù enklask all diskouezet dindan ar varrenn chomlec'hioù hag ar varrenn glask pa grogit da skrivañ ur ger.
 search-choose-engine-column =
     .label = Keflusker enklask
@@ -928,6 +940,7 @@ content-blocking-etp-standard-desc = Kempouez etre gwarez ha digonusted. Ar paje
 content-blocking-etp-strict-desc = Gwarez kreñvoc'h, met gallout a ra lakaat lec'hiennoù 'zo da derriñ.
 content-blocking-etp-custom-desc = Dibabit pe heulier pe skript herzel.
 content-blocking-private-windows = Heulierien er prenestroù prevez
+content-blocking-cross-site-cookies = Toupinoù etrelec'hienn
 content-blocking-cross-site-tracking-cookies = Toupinoù heuliañ etre-lec'hienn
 content-blocking-social-media-trackers = Heulierien media kevredadel
 content-blocking-all-cookies = An holl doupinoù
@@ -937,6 +950,7 @@ content-blocking-all-third-party-cookies = Holl doupinoù an tredeoù
 content-blocking-cryptominers = Kriptogleuzerien
 content-blocking-fingerprinters = Dinoerien roudoù niverel
 content-blocking-warning-title = Diwallit!
+content-blocking-and-isolating-etp-warning-description = Stankañ an heulierien ha difuiñ an toupinoù a c'hallfe kaout un efed war implij lec'hiennoù 'zo. Adkargit ur bajenn gant an heulierien evit kargañ pep tra.
 content-blocking-warning-learn-how = Deskit penaos
 content-blocking-reload-description = Ezhomm ho po da adkargañ hoc'h ivinelloù evit arloañ ar c'hemmoù.
 content-blocking-reload-tabs-button =
@@ -1109,6 +1123,7 @@ space-alert-under-5gb-message = Ne chom ket kalz a blas war ar gantenn evit { -b
 
 ## Privacy Section - HTTPS-Only
 
+httpsonly-header = Mod HTTPS hepken
 httpsonly-learn-more = Gouzout hiroc'h
 
 ## The following strings are used in the Download section of settings

@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = გამოიყენეთ სიფრთხილით
 pane-experimental-search-results-header = { -brand-short-name } ცდები: გამოიყენეთ სიფრთხილით
 pane-experimental-description = გაფართოებული პარამეტრების შეცვლით, შესაძლოა დაზიანდეს { -brand-short-name } წარმადობის ან უსაფრთხოების კუთხით.
+pane-experimental-reset =
+    .label = ნაგულისხმევის აღდგენა
+    .accesskey = უ
 help-button-label = { -brand-short-name } დახმარება
 addons-button-label = გაფართოებები და თემები
 focus-search =
@@ -512,6 +515,8 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = დაფინანსებული სტატიები
 home-prefs-highlights-header =
     .label = მნიშვნელოვანი საიტები
+home-prefs-recent-activity-header =
+    .label = ბოლო მოქმედებები
 home-prefs-highlights-description = თქვენ მიერ შენახული ან ბოლოს მონახულებული საიტები
 home-prefs-highlights-option-visited-pages =
     .label = მონახულებული გვერდები
@@ -929,6 +934,7 @@ addressbar-suggestions-settings = საძიებო სისტემის
 content-blocking-enhanced-tracking-protection = თვალთვალისგან გაძლიერებული დაცვა
 content-blocking-section-top-level-description = მეთვალყურეები თან დაგყვებათ მთელ ინტერნეტში და აგროვებს ინფორმაციას თქვენი ჩვევებისა და მისწრაფებების შესახებ. { -brand-short-name } ზღუდავს ამ მეთვალყურეების უმეტესობასა და სხვა მავნე კოდებსაც.
 content-blocking-learn-more = ვრცლად
+content-blocking-fpi-incompatibility-warning = თქვენ იყენებთ პირველი მხარის გამიჯვნას (FPI), რომლითაც { -brand-short-name } ანაცვლებს ფუნთუშების ზოგიერთ პარამეტრს.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.

@@ -293,6 +293,8 @@ identity-https-only-info-turn-off2 = 若页面看起来不正常，则可能需�
 identity-https-only-info-no-upgrade = 无法将网站连接从 HTTP 升级。
 identity-permissions =
     .value = 权限
+identity-permissions-storage-access-header = 跨网站 Cookie
+identity-permissions-storage-access-hint = 当您在此网站上时，以下各方可以使用其跨网站 Cookie 和网站数据。
 identity-permissions-reload-hint = 您可能需要重新载入此页面以应用更改。
 identity-permissions-empty = 您尚未授予此站点任何权限。
 identity-clear-site-data =
@@ -338,9 +340,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = 导入书签…
-    .tooltiptext = 将书签从从其他浏览器复制到 { -brand-short-name }
+    .tooltiptext = 将其他浏览器的书签导入到 { -brand-short-name }。
+bookmarks-toolbar-empty-message = 可将书签放在书签工具栏上，方便快速访问。<a data-l10n-name="manage-bookmarks">管理书签…</a>
 
 ## WebRTC Pop-up notifications
 

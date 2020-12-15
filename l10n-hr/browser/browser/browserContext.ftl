@@ -128,17 +128,17 @@ main-context-menu-media-play =
     .label = Pokreni
     .accesskey = P
 main-context-menu-media-pause =
-    .label = Pauziraj
-    .accesskey = z
+    .label = Zaustavi
+    .accesskey = Z
 
 ##
 
 main-context-menu-media-mute =
-    .label = Utišaj
-    .accesskey = U
+    .label = Isključi zvuk
+    .accesskey = I
 main-context-menu-media-unmute =
-    .label = Odtišaj
-    .accesskey = O
+    .label = Uključi zvuk
+    .accesskey = U
 main-context-menu-media-play-speed =
     .label = Brzina reprodukcije
     .accesskey = r

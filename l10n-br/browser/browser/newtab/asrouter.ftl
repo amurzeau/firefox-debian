@@ -78,7 +78,7 @@ cfr-doorhanger-pintab-animation-resume = Kenderc'hel
 ## Firefox Accounts Message
 
 cfr-doorhanger-bookmark-fxa-header = Goubredit ho sinedoù e pep lec'h.
-cfr-doorhanger-bookmark-fxa-body = Kavet ho peus ul lec'hienn a-zoare! Bremañ eo dav deoc'h adkavout ar sined-mañ war ho trevnadoù hezoug. Krogit gant : { -fxaccount-brand-name }.
+cfr-doorhanger-bookmark-fxa-body = Kavet ho peus ul lec'hienn a-zoare! Bremañ eo dav deoc'h adkavout ar sined-mañ war ho trevnadoù hezoug. Krogit gant: { -fxaccount-brand-name }.
 cfr-doorhanger-bookmark-fxa-link-text = Goubredit ar sinedoù bremañ...
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
     .aria-label = Afell serriñ
@@ -240,7 +240,7 @@ cfr-whatsnew-passwords-icon-alt = arlun ger-tremen arvarus
 
 ## Picture-in-Picture fullscreen message
 
-cfr-whatsnew-pip-fullscreen-header = Tremen e mod skramm a-bezh
+cfr-whatsnew-pip-fullscreen-header = Tremen skeudenn-ouzh-skeudenn e mod skramm a-bezh
 cfr-whatsnew-pip-fullscreen-body = Pa lakait ur video da vezañ en ur prenestr distag e c'hallit bremañ daouglikañ war ar prenestr-mañ evit mont er skramm a-bezh.
 cfr-whatsnew-pip-fullscreen-icon-alt = Arlun skeudenn-ouzh-skeudenn
 
@@ -258,8 +258,24 @@ cfr-whatsnew-better-pdf-body = An teulioù PDF a zigot war-eeun e { -brand-short
 
 ## DOH Message
 
+cfr-doorhanger-doh-primary-button = Mat, komprenet 'm eus
+    .accesskey = M
 cfr-doorhanger-doh-secondary-button = Diweredekaat
     .accesskey = D
 
+## Fission Experiment Message
+
+cfr-doorhanger-fission-primary-button = Mat, komprenet 'm eus
+    .accesskey = M
+cfr-doorhanger-fission-secondary-button = Gouzout hiroc'h
+    .accesskey = G
+
 ## What's new: Cookies message
+
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-button = Gouzout penaos
+
+## What's new: Search shortcuts
 

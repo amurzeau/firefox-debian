@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Agissètz amb prudéncia
 pane-experimental-search-results-header = Experiéncias de { -brand-short-name } : siatz atentiu
 pane-experimental-description = Cambiar las configuracions avançadas pòt influenciar las performanças o la seguretat de { -brand-short-name }.
+pane-experimental-reset =
+    .label = Restablir los paramètres per defaut
+    .accesskey = R
 help-button-label = Assisténcia de { -brand-short-name }
 addons-button-label = Extensions e tèmas
 focus-search =
@@ -162,7 +165,7 @@ switch-links-to-new-tabs =
     .label = En dobrissent un ligam dins un onglet novèl, i anar sul pic
     .accesskey = d
 show-tabs-in-taskbar =
-    .label = Afichar los apercebuts d'onglets dins la barra dels prètzfaits de Windows
+    .label = Afichar los apercebuts d'onglets dins la barra dels prètzfaches de Windows
     .accesskey = c
 browser-containers-enabled =
     .label = Activar los onglets de contenidor
@@ -512,6 +515,8 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Articles pairinejats
 home-prefs-highlights-header =
     .label = Notables
+home-prefs-recent-activity-header =
+    .label = Activitat recenta
 home-prefs-highlights-description = Una seleccion de sites qu’avètz enregistrats o visitats
 home-prefs-highlights-option-visited-pages =
     .label = Paginas visitadas
@@ -929,6 +934,7 @@ addressbar-suggestions-settings = Cambiar las preferéncias per las suggestions 
 content-blocking-enhanced-tracking-protection = Proteccion contra lo seguiment renfortida
 content-blocking-section-top-level-description = Los traçadors vos pistan en linha per reculhir d’informacions sus vòstras abituds de navegacion e vòstres interèsses. { -brand-short-name } bloca fòrça d’aqueles elements de seguiment e scripts malvolents.
 content-blocking-learn-more = Ne saber mai
+content-blocking-fpi-incompatibility-warning = Utilizatz l’isolacion First-Party (FPI) que remplaça d’unes paramètres dels cookies de { -brand-short-name }.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1136,14 +1142,14 @@ space-alert-under-5gb-message = { -brand-short-name } a pas mai d'espaci disc. L
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = Mòde HTTPS solament
-httpsonly-description = Lo HTTPS provesís una connexion segura e chifrada entre { -brand-short-name } e lo site web que visitatz. La màger part dels site web son compatibles HTTPS, se lo mòde HTTPS solament es activat { -brand-short-name } passarà totas las connexion en HTTPS.
+httpsonly-description = Lo HTTPS provesís una connexion segura e chifrada entre { -brand-short-name } e lo site web que visitatz. La màger part dels sites web son compatibles HTTPS, se lo mòde HTTPS solament es activat { -brand-short-name } passarà totas las connexion en HTTPS.
 httpsonly-learn-more = Ne saber mai
 httpsonly-radio-enabled =
     .label = Activar lo mòde HTTPS solament dins totas las fenèstras
 httpsonly-radio-enabled-pbm =
     .label = Activar lo mòde HTTPS solament dins totas las fenèstras privadas
 httpsonly-radio-disabled =
-    .label = Activar pas lo mòde HTTS solament
+    .label = Activar pas lo mòde HTTPS solament
 
 ## The following strings are used in the Download section of settings
 

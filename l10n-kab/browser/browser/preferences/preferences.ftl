@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Kemmel, maca ɣur-k.
 pane-experimental-search-results-header = { -brand-short-name } Tirma: ddu kan s leεqel
 pane-experimental-description = Abeddel n yismenyifen n twila leqqayen zemren ad ḥazen tamlellit neɣ taɣellist n { -brand-short-name }.
+pane-experimental-reset =
+    .label = Err-d iɣewwaren imezwer
+    .accesskey = R
 help-button-label = { -brand-short-name } Tallelt
 addons-button-label = Isiɣzaf akked yisental
 focus-search =
@@ -512,6 +515,8 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Tiqṣidin yettwarefden
 home-prefs-highlights-header =
     .label = Asebrureq
+home-prefs-recent-activity-header =
+    .label = Armud n melmi kan
 home-prefs-highlights-description = Tafrant n yismal i teskelseḍ neɣ i twalaḍ
 home-prefs-highlights-option-visited-pages =
     .label = isebtar yettwarzan
@@ -929,6 +934,7 @@ addressbar-suggestions-settings = Snifel ismenyifen i yisumar n umsedday n unadi
 content-blocking-enhanced-tracking-protection = Ammesten yettwaseǧhed mgal aḍfaṛ
 content-blocking-section-top-level-description = Ineḍfaṛen ad k-ḍefṛen srid akken ad leqḍen talɣut ɣef tnumi-ik n tunigin akked wayen tḥemmleḍ. { -brand-short-name } ad yessewḥel ddeqs n yineḍfaṛen-a akked yir iskripten.
 content-blocking-learn-more = Issin ugar
+content-blocking-fpi-incompatibility-warning = Aql-ak·akem tseqdaceḍ First Party Isolation (FPI), i yuɣalen deg wadeg n kra n yiɣewwaren n yinagan n tuqqna n { -brand-short-name }.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.

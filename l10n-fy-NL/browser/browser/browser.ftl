@@ -301,6 +301,8 @@ identity-https-only-info-turn-off2 = As de website net liket te wurkje, dan kinn
 identity-https-only-info-no-upgrade = Kin HTTP-ferbining net fernije.
 identity-permissions =
     .value = Tastimmingen
+identity-permissions-storage-access-header = Cross-sitecookies
+identity-permissions-storage-access-hint = Dizze partijen kinne wylst jo besite oan dizze website cross-sitecookies en websitegegevens brûke.
 identity-permissions-reload-hint = It is mooglik dat jo de side opnij lade moatte om de wizigingen aktyf te meitsjen.
 identity-permissions-empty = Jo hawwe dizze website gjin spesjale tastimmingen jûn.
 identity-clear-site-data =
@@ -346,9 +348,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Blêdwizers ymportearje…
-    .tooltiptext = Blêdwizers fan in oare browser nei { -brand-short-name } kopiearje.
+    .tooltiptext = Blêdwizers út in oare browser nei { -brand-short-name } ymportearje.
+bookmarks-toolbar-empty-message = Pleats foar snelle tagong jo blêdwizers hjir op de blêdwizerarkbalke. <a data-l10n-name="manage-bookmarks">Blêdwizers beheare…</a>
 
 ## WebRTC Pop-up notifications
 

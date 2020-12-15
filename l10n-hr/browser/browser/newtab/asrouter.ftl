@@ -21,7 +21,7 @@ cfr-doorhanger-pintab-ok-button = Zakači ovu karticu
     .accesskey = Z
 cfr-doorhanger-extension-manage-settings-button = Upravljaj postavkama preporuka
     .accesskey = U
-cfr-doorhanger-extension-never-show-recommendation = Ne pokazuj mi ovu preporuku
+cfr-doorhanger-extension-never-show-recommendation = Ne prikazuj ovu preporuku
     .accesskey = N
 cfr-doorhanger-extension-learn-more-link = Saznaj više
 # This string is used on a new line below the add-on name
@@ -61,14 +61,14 @@ cfr-doorhanger-extension-total-users =
         [few] { $total } korisnika
        *[other] { $total } korisnika
     }
-cfr-doorhanger-pintab-description = Jednostavan pristup tvojim najkorištenijim stranicama. Ostavi stranice otvorene u kartici (čak i kada ponovo pokreneš preglednika).
+cfr-doorhanger-pintab-description = Jednostavan pristup tvojim najkorištenijim stranicama. Ostavi stranice otvorenima u kartici (čak i nakon ponovnog pokretanja preglednika).
 
 ## These messages are steps on how to use the feature and are shown together.
 
 cfr-doorhanger-pintab-step1 = <b>Desni klik</b> na karticu koju želiš zakačiti.
 cfr-doorhanger-pintab-step2 = Odaberi <b>Zakači karticu</b> iz izbornika.
-cfr-doorhanger-pintab-step3 = Ukoliko je stranica osvježena, vidjet ćete plavu točku na zakačenoj kartici.
-cfr-doorhanger-pintab-animation-pause = Pauziraj
+cfr-doorhanger-pintab-step3 = Ukoliko je stranica aktualizirana, pojavit će se plava točka na zakačenoj kartici.
+cfr-doorhanger-pintab-animation-pause = Zaustavi
 cfr-doorhanger-pintab-animation-resume = Nastavi
 
 ## Firefox Accounts Message
@@ -235,7 +235,7 @@ cfr-whatsnew-passwords-icon-alt = Ikona ranjive lozinke
 ## Picture-in-Picture fullscreen message
 
 cfr-whatsnew-pip-fullscreen-header = Prebacite sliku-u-slici na puni zaslon
-cfr-whatsnew-pip-fullscreen-body = Kada prebacite video u mali plutajući prozor, sada možete dvostrukim klikom povećati taj video na cijeli zaslon.
+cfr-whatsnew-pip-fullscreen-body = Kad se video otvori u plutajućem prozoru, dvostrukim klikom na prozor aktivira se cjeloekranski prikaz.
 cfr-whatsnew-pip-fullscreen-icon-alt = Ikona slike-u-slici
 
 ## Protections Dashboard message
@@ -277,5 +277,5 @@ cfr-whatsnew-clear-cookies-image-alt = Ilustracija blokiranog kolačića
 ## What's new: Media controls message
 
 cfr-whatsnew-media-keys-header = Više medijskih kontrola
-cfr-whatsnew-media-keys-body = Reproduciraj i pauziraj zvuk ili video izravno s tipkovnicom ili slušalicama, što olakšava upravljanje medijima iz druge kartice, programa ili čak kada je računalo zaključano. Možeš se i kretati između pjesama pomoću tipki naprijed i natrag.
+cfr-whatsnew-media-keys-body = Reproduciraj i zaustavi audio ili videosnimku pomoću tipkovnice ili slušalica, što olakšava upravljanje medijima iz jedne druge kartice, programa ili čak kad je računalo zaključano. Između snimaka se možeš kretati i pomoću tipki za naprijed i natrag.
 cfr-whatsnew-media-keys-button = Saznaj kako
