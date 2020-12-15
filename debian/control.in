@@ -47,7 +47,7 @@ Build-Depends: autotools-dev,
                nasm (>= 2.14) [amd64 i386],
 %endif
                rustc (>= 1.43),
-               cargo (>= 0.43),
+               cargo (>= 0.44),
 %if DIST == stretch
                gcc-mozilla (>= 7.1),
                llvm-7-dev,
