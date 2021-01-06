@@ -1,3 +1,10 @@
+firefox-esr (78.6.1esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2021-01, also known as CVE-2020-16044.
+
+ -- Mike Hommey <glandium@debian.org>  Thu, 07 Jan 2021 07:38:33 +0900
+
 firefox-esr (78.6.0esr-1) unstable; urgency=medium
 
   * New upstream release.
