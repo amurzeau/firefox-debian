@@ -63,7 +63,7 @@ cfr-doorhanger-extension-total-users =
         [few] { $total } wužiwarjo
        *[other] { $total } wužiwarjow
     }
-cfr-doorhanger-pintab-description = Mějće lochki přistup na swoje najwjace wužiwane sydła. Dźeržće sydła w rajtarku wočinjene (samo hdyž znowa startujeće)
+cfr-doorhanger-pintab-description = Mějće lochki přistup na swoje najhusćišo wužiwane sydła. Dźeržće sydła w rajtarku wočinjene (samo hdyž znowa startujeće)
 
 ## These messages are steps on how to use the feature and are shown together.
 
@@ -128,6 +128,9 @@ cfr-whatsnew-lockwise-take-link-text = Wobstarajće sej nałoženje
 
 cfr-whatsnew-searchbar-title = Pisajće mjenje a namakajće wjace z adresowym polom
 cfr-whatsnew-searchbar-body-topsites = Wubjerće nětko prosće adresowe polo a  kašćik z wotkazami na waše najlubše sydła so wočini.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Lupowy symbol
 
 ## Picture-in-Picture
@@ -286,3 +289,14 @@ cfr-whatsnew-media-keys-button = Zhońće kak
 ## What's new: Search shortcuts
 
 cfr-whatsnew-search-shortcuts-header = Pytanske skrótšenki w adresowym polu
+cfr-whatsnew-search-shortcuts-body = Nětko, hdyž pytawu abo wěste sydło do adresoweho pola zapodawaće, so módre zwjazanje deleka w pytanskich namjetach zjewi. Wubjerće tute zwjazanje, zo byšće swoje pytanje direktnje z adresoweho pola dokónčił.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Škit před złóstnymi superplackami
+cfr-whatsnew-supercookies-body = Websydła móža skradźu wašemu wobhladowakej „superplack“ přidać, kotryž móžeće wam po webje slědować, samo po tym zo sće swoje placki zhašał. { -brand-short-name } nětko sylny škit přećiwo superplackam skići, zo njebychu dali so wužiwać, wašim aktiwitam online wot jednoho sydła k přichodnemu sydłu slědować.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = Lěpše rjadowanje zapołožkow
+cfr-whatsnew-bookmarking-body = Je lóšo, přehlad nad wašimi najlubšimi sydłami wobchować. { -brand-short-name } sej nětko waše preferowane městno za składowane zapołožki spomjatkuje, pokazuje symbolowu lajstu zapołožkow po standardźe na nowych rajtarkach a da wam lochki přistup k zbytkej wašich zapołožkow přez rjadowak symboloweje lajsty.

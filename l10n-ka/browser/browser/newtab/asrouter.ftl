@@ -126,6 +126,9 @@ cfr-whatsnew-lockwise-take-link-text = გადმოწერა
 
 cfr-whatsnew-searchbar-title = აკრიფეთ ნაკლები, მოიძიეთ მეტი მისამართების ველიდან
 cfr-whatsnew-searchbar-body-topsites = ახლა, უბრალოდ გადადით მისამართების ველში და გამოჩნდება თქვენი რჩეული საიტების ბმულები.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = გამადიდებელი შუშის ხატულა
 
 ## Picture-in-Picture
@@ -192,7 +195,7 @@ cfr-doorhanger-socialtracking-close-button = დახურვა
     .accesskey = ხ
 cfr-doorhanger-socialtracking-dont-show-again = მომავალში, აღარ გამოჩნდეს ასეთი შეტყობინება
     .accesskey = ღ
-cfr-doorhanger-socialtracking-heading = { -brand-short-name } უზღუდავს სოციალური ქსელს თქვენს თვალთვალს
+cfr-doorhanger-socialtracking-heading = { -brand-short-name } უზღუდავს სოციალურ ქსელს თქვენს თვალთვალს
 cfr-doorhanger-socialtracking-description = თქვენი პირადულობა მნიშვნელოვანია. { -brand-short-name } ახლა უკვე ზღუდავს ცნობილი სოციალური ქსელების მეთვალყურე საშუალებებს, უსაზღვრავს მათ ინტერნეტში თქვენ შესახებ შესაგროვებელი მონაცემების ოდენობას.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } ზღუდავს მომხმარებლის ამომცნობს ამ საიტზე
 cfr-doorhanger-fingerprinters-description = თქვენი პირადულობა მნიშვნელოვანია. { -brand-short-name } ახლა უკვე ზღუდავს მომხმარებლის ამომცნობ საშუალებებს, რომელთაც შეუძლია თქვენი სხვებისგან გამორჩევა თვალის სადევნებლად, თქვენზე შეგროვებული მონაცემებით.
@@ -281,3 +284,13 @@ cfr-whatsnew-media-keys-button = იხილეთ, როგორ
 
 cfr-whatsnew-search-shortcuts-header = საძიებოს მალსახმობები მისამართების ველში
 cfr-whatsnew-search-shortcuts-body = ამიერიდან, როცა აკრეფთ საძიებო სისტემის ან შესაბამისი საიტის სახელს მისამართების ველში, გამოჩნდება ლურჯი მალსახმობი ქვემოთ, ძიების შემოთავაზებებში. აირჩიეთ მალსახმობი  საძიებოს პირდაპირ მისამართების ველიდან გამოსაყენებლად.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = დაცვა მავნე ფუნთუშებისგან
+cfr-whatsnew-supercookies-body = საიტებს შეუძლია შეუმჩნევლად მიამაგროს ბრაუზერს მძლავრი „მავნე ფუნთუშები“ რომლებიც დაგედევნებათ მთელ ვებსივრცეში, ბრაუზერის გასუფთავების მიუხედავადაც კი. { -brand-short-name } ახლა უკვე გთავაზობთ დაცვას ამგვარი ფუნთუშებისგან, რის შედეგადაც შეუძლებელი გახდება ინტერნეტსაიტებზე თქვენი მოქმედებების აღრიცხვა.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = გაუმჯობესებული სანიშნები
+cfr-whatsnew-bookmarking-body = საყვარელ საიტებზე თვალის მიდევნება გაადვილდა. { -brand-short-name } ახლა უკვე დაიხსომებს თქვენ მიერ შერჩეულ ადგილს სანიშნების შესანახად, ნაგულისხმევად გამოაჩენს სანიშნების ზოლს ახალ ჩანართებზე და მოგცემთ მარტივი წვდომის საშუალებას დანარჩენ სანიშნებთან, ხელსაწყოთა ზოლის საქაღალდიდან.

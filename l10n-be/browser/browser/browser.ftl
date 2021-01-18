@@ -505,3 +505,71 @@ fullscreen-exit-mac-button = Выйсці з поўнаэкраннага рэж
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> кіруе вашым указальнікам. Націсніце Esc, каб узяць кіраванне.
 pointerlock-warning-no-domain = Гэты дакумент кіруе вашым указальнікам. Націсніце Esc, каб узяць кіраванне.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Паказаць усе закладкі
+bookmarks-recent-bookmarks =
+    .value = Нядаўнія закладкі
+bookmarks-toolbar-chevron =
+    .tooltiptext = Паказаць больш закладак
+bookmarks-sidebar-content =
+    .aria-label = Закладкі
+bookmarks-menu-button =
+    .label = Меню закладак
+bookmarks-other-bookmarks-menu =
+    .label = Іншыя закладкі
+bookmarks-mobile-bookmarks-menu =
+    .label = Мабільныя закладкі
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Схаваць бакавую панэль закладак
+           *[other] Паказаць бакавую панэль закладак
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Схаваць паліцу закладак
+           *[other] Паказаць паліцу закладак
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Прыбраць меню закладак з паліцы прылад
+           *[other] Дадаць меню закладак на паліцу прылад
+        }
+bookmarks-search =
+    .label = Шукаць у закладках
+bookmarks-tools =
+    .label = Прылады закладак
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Паліца закладак
+    .accesskey = з
+    .aria-label = Закладкі
+bookmarks-toolbar-menu =
+    .label = Паліца закладак
+bookmarks-toolbar-placeholder =
+    .title = Элементы паліцы закладак
+bookmarks-toolbar-placeholder-button =
+    .label = Элементы паліцы закладак
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Закладкі
+library-bookmarks-bookmark-this-page =
+    .label = Дадаць закладку на старонку
+library-bookmarks-bookmark-edit =
+    .label = Правіць гэтую закладку
+library-recent-activity-label = Апошняя актыўнасць
+
+## More items
+
+more-menu-go-offline =
+    .label = Праца па-за сеткаю
+    .accesskey = з

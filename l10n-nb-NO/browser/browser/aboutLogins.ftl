@@ -169,7 +169,11 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Fjerne denne innloggingen?
 confirm-delete-dialog-message = Denne handlingen kan ikke angres.
 about-logins-confirm-remove-dialog-confirm-button = Fjern
-about-logins-confirm-remove-all-dialog-confirm-button = Fjern alle
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] Fjern
+       *[other] Fjern alle
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] Ja, fjern denne innloggingen
@@ -198,6 +202,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Eksporter innlogginger og passord
 about-logins-confirm-export-dialog-message = Passordene dine blir lagret som lesbar tekst (f.eks. DårligP@ss0rd), slik at alle som kan åpne den eksporterte filen kan se dem.
 about-logins-confirm-export-dialog-confirm-button = Eksporter…
+about-logins-alert-import-title = Import fullført
+about-logins-alert-import-message = Se detaljert importoversikt
 confirm-discard-changes-dialog-title = Vil du forkaste endringer som ikke er lagret?
 confirm-discard-changes-dialog-message = Alle ikke-lagrede endringer vil gå tapt.
 confirm-discard-changes-dialog-confirm-button = Forkast
@@ -259,3 +265,26 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV-dokument
        *[other] CSV-fil
     }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Import fullført
+about-logins-import-dialog-items-added =
+    { $count ->
+       *[other] <span>Nye innloggninger lagt til: </span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+       *[other] <span>Eksisterende innlogginger oppdatert:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+       *[other] <span>Duplikate innlogginger funnet:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ikke importert)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+       *[other] <span>Feil:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ikke importert)</span>
+    }
+about-logins-import-dialog-done = Ferdig

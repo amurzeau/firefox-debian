@@ -61,11 +61,15 @@ printui-system-dialog-link = Skriv ut ved hjelp av systemdialogvindauget…
 printui-primary-button = Skriv ut
 printui-primary-button-save = Lagre
 printui-cancel-button = Avbryt
+printui-close-button = Lat att
 printui-loading = Førebur førehandsvising
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Førehandsvising
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Skriv ut…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

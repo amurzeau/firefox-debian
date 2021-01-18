@@ -163,6 +163,15 @@ page-action-remove-extension =
 
 ## Page Action menu
 
+# Variables
+# $tabCount (integer) - Number of tabs selected
+page-action-send-tabs-panel =
+    .label =
+        { $tabCount ->
+            [1] ట్యాబును పరికరానికి పంపించు
+            [one] { $tabCount } ట్యాబును పరికరానికి పంపించు
+           *[other] { $tabCount } ట్యాబులను పరికరానికి పంపించు
+        }
 page-action-copy-url-panel =
     .label = లంకెను కాపీచెయ్యి
 page-action-copy-url-urlbar =
@@ -268,8 +277,16 @@ identity-passive-loaded = ఈ పేజీలోని కొన్ని భా
 identity-active-loaded = ఈ పేజీకి రక్షణను మీరు అచేతనం చేసారు.
 identity-weak-encryption = ఈ పేజీ బలహీనమైన ఎన్‌క్రిప్షన్ వాడుతోంది.
 identity-insecure-login-forms = ఈ పేజీలో మీరు ఇచ్చే లాగిన్లు రాజీపడవచ్చు.
+identity-https-only-label = HTTPS-మాత్రమే రీతి
+identity-https-only-dropdown-on =
+    .label = చేతనం
+identity-https-only-dropdown-off =
+    .label = అచేతనం
+identity-https-only-dropdown-off-temporarily =
+    .label = తాత్కాలికంగా అచేతనం
 identity-permissions =
     .value = అనుమతులు
+identity-permissions-storage-access-header = క్రాస్-సైటు కుకీలు
 identity-permissions-reload-hint = మార్పులు ప్రతిఫలించడానికి మీరు ఈ పేజీని మళ్ళీ లోడు చెయ్యాల్సిరావచ్చు.
 identity-permissions-empty = ఈ సైటుకి మీరు ఎటువంటి ప్రత్యేక అనుమతులు ఇవ్వలేదు.
 identity-clear-site-data =
@@ -411,6 +428,8 @@ urlbar-result-action-visit = చూడండి
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
 urlbar-result-action-search-bookmarks = ఇష్టాంశాలను వెతకండి
+urlbar-result-action-search-history = చరిత్రలో వెతకండి
+urlbar-result-action-search-tabs = ట్యాబులలో వెతకండి
 
 ## Full Screen and Pointer Lock UI
 
@@ -427,3 +446,70 @@ fullscreen-exit-mac-button = నిండు తెరను వదలివె�
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = మీ పాయింటర్ <span data-l10n-name="domain">{ $domain }</span> నియంత్రణలో ఉంది. తిరిగి మీ ఆధీనం లోనికి తెచ్చుకోడానికి Esc నొక్కండి.
 pointerlock-warning-no-domain = మీ పాయింటర్ ఈ పత్రపు నియంత్రణలో ఉంది. తిరిగి మీ ఆధీనం లోనికి తెచ్చుకోడానికి Esc నొక్కండి.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = ఇష్టాంశాలన్నింటినీ చూపించు
+bookmarks-recent-bookmarks =
+    .value = ఇటీవల ఇష్టాంశాలుగా చేసినవి
+bookmarks-toolbar-chevron =
+    .tooltiptext = మరిన్ని ఇష్టాంశాలను చూపించు
+bookmarks-sidebar-content =
+    .aria-label = ఇష్టాంశాలు
+bookmarks-menu-button =
+    .label = ఇష్టాంశాల మెనూ
+bookmarks-other-bookmarks-menu =
+    .label = ఇతర ఇష్టాంశాలు
+bookmarks-mobile-bookmarks-menu =
+    .label = మొబైలు ఇష్టాంశాలు
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] ఇష్టాంశాల ప్రక్కపట్టీని దాచు
+           *[other] ఇష్టాంశాల ప్రక్కపట్టీని చూడండి
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] ఇష్టాంశాల పనిముట్లపట్టీని దాచు
+           *[other] ఇష్టాంశాల పట్టీని చూడండి
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] ఉపకరణపట్టీ నుండి ఇష్టాంశాల మెనుని తీసివేయండి
+           *[other] ఉపకరణపట్టీకి ఇష్టాంశాల మెనూని జోడించండి
+        }
+bookmarks-search =
+    .label = ఇష్టాంశాలను వెతకండి
+bookmarks-tools =
+    .label = ఇష్టాంశాల పనిముట్లు
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = ఇష్టాంశాల పట్టీ
+    .accesskey = B
+    .aria-label = ఇష్టాంశాలు
+bookmarks-toolbar-menu =
+    .label = ఇష్టాంశాల పట్టీ
+bookmarks-toolbar-placeholder =
+    .title = ఇష్టాంశాల పట్టీ అంశాలు
+bookmarks-toolbar-placeholder-button =
+    .label = ఇష్టాంశాల పట్టీ అంశాలు
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = ఇష్టాంశాలు
+library-bookmarks-bookmark-this-page =
+    .label = ఈ పేజీని ఇష్టాంశంగా చేయి
+library-bookmarks-bookmark-edit =
+    .label = ఈ ఇష్టాంశాన్ని సరిదిద్దు
+
+## More items
+
+more-menu-go-offline =
+    .label = ఆఫ్‌లైన్‌లో పనిచేయి
+    .accesskey = k

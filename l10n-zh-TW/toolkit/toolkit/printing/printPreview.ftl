@@ -38,6 +38,10 @@ printpreview-page-setup =
 printpreview-page =
     .value = 頁:
     .accesskey = a
+# Variables
+# $sheetNum (integer) - The current sheet number
+# $sheetCount (integer) - The total number of sheets to print
+printpreview-sheet-of-sheets = 第 { $sheetNum } 頁，共 { $sheetCount } 頁
 
 ## Variables
 ## $percent (integer) - menuitem percent label
@@ -57,4 +61,11 @@ printpreview-nextarrow =
 printpreview-endarrow =
     .label = { $arrow }
     .tooltiptext = 最後一頁
-
+printpreview-homearrow-button =
+    .title = 第一頁
+printpreview-previousarrow-button =
+    .title = 上一頁
+printpreview-nextarrow-button =
+    .title = 下一頁
+printpreview-endarrow-button =
+    .title = 最後一頁

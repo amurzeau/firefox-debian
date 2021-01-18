@@ -21,6 +21,8 @@
 <!ENTITY biffStart.label "Έλεγχος για νέα μηνύματα κάθε ">
 <!ENTITY biffStart.accesskey "ν">
 <!ENTITY biffEnd.label "λεπτά">
+<!ENTITY useIdleNotifications.label "Αποδοχή άμεσων ειδοποιήσεων διακομιστή όταν έρχονται νέα μηνύματα">
+<!ENTITY useIdleNotifications.accesskey "χ">
 <!ENTITY connectionSecurity.label "Ασφάλεια σύνδεσης:">
 <!ENTITY connectionSecurity.accesskey "σ">
 <!ENTITY connectionSecurityType-0.label "Καμία">
@@ -29,8 +31,8 @@
 <!ENTITY connectionSecurityType-3.label "SSL/TLS">
 <!ENTITY authMethod.label "Μέθοδος ταυτοποίησης:">
 <!ENTITY authMethod.accesskey "θ">
-<!ENTITY leaveOnServer.label "Φύλαξη μηνυμάτων στον διακομιστή">
-<!ENTITY leaveOnServer.accesskey "ξ">
+<!ENTITY leaveOnServer.label "Διατήρηση μηνυμάτων στον διακομιστή">
+<!ENTITY leaveOnServer.accesskey "τ">
 <!ENTITY headersOnly.label "Λήψη κεφαλίδων μόνο">
 <!ENTITY headersOnly.accesskey "ψ">
 <!ENTITY deleteByAgeFromServer.label "Για το πολύ">
@@ -43,9 +45,15 @@
 <!ENTITY deleteMessagePrefix.label "Κατά τη διαγραφή ενός μηνύματος:">
 <!ENTITY modelMoveToTrash.label "Μετακίνηση στο φάκελο:">
 <!ENTITY modelMoveToTrash.accesskey "φ">
+<!ENTITY modelMarkDeleted.label "Επισήμανση ως διαγραμμένο">
+<!ENTITY modelMarkDeleted.accesskey "μ">
 <!ENTITY modelDeleteImmediately.label "Άμεση αφαίρεση">
 <!ENTITY modelDeleteImmediately.accesskey "φ">
 <!-- LOCALIZATION NOTE (expungeOnExit.label) : do not translate two of "&quot;" in below line -->
+<!ENTITY expungeOnExit.label "Εκκαθάριση (&quot;Διαγραφή&quot;) εισερχομένων κατά την έξοδο">
+<!ENTITY expungeOnExit.accesskey "Ε">
+<!ENTITY emptyTrashOnExit.label "Άδειασμα απορριμάτων κατά την έξοδο">
+<!ENTITY emptyTrashOnExit.accesskey "δ">
 <!ENTITY loginAtStartup.label "Έλεγχος για νέα μηνύματα κατά την εκκίνηση">
 <!ENTITY loginAtStartup.accesskey "Έ">
 <!-- LOCALIZATION NOTE (maxMessagesStart.label) : translate below 2 lines with grammar dependency
@@ -56,6 +64,8 @@
 <!ENTITY maxMessagesStart.accesskey "π">
 <!-- LOCALIZATION NOTE (maxMessagesEnd.label) : see note for maxMessagesStart.label -->
 <!ENTITY maxMessagesEnd.label "μηνυμάτων">
+<!ENTITY alwaysAuthenticate.label "Να απαιτείται πάντα ταυτοποίηση κατά τη σύνδεση στον διακομιστή">
+<!ENTITY alwaysAuthenticate.accesskey "π">
 <!ENTITY newsrcFilePath.label "Αρχείο newsrc:">
 <!ENTITY newsrcPicker.label "Επιλογή αρχείου newsrc">
 <!ENTITY abbreviate.label "Εμφάνιση ονομάτων ομάδων συζήτησης στην προβολή φακέλων αλληλογραφίας με:">

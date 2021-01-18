@@ -303,6 +303,8 @@ identity-https-only-info-turn-off2 = Ako se stranica čini slomljenom, možda ć
 identity-https-only-info-no-upgrade = Nije moguće nadograditi vezu s HTTP-a.
 identity-permissions =
     .value = Dozvole
+identity-permissions-storage-access-header = Međustranični kolačići
+identity-permissions-storage-access-hint = Ove stranke mogu koristiti kolačiće i podatke dijeljene među više stranica dok ste na toj stranici.
 identity-permissions-reload-hint = Stranica se možda mora ponovo učitati, kako bi se primijenile promjene.
 identity-permissions-empty = Ovoj stranici niste dali nikakva posebna dopuštenja.
 identity-clear-site-data =
@@ -503,3 +505,71 @@ fullscreen-exit-mac-button = Izađi iz cjeloekranskog prikaza (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ima kontrolu nad pokazivačem. Pritisnite tipku Esc da biste preuzeli kontrolu.
 pointerlock-warning-no-domain = Ovaj dokument ima kontrolu nad pokazivačem. Pritisnite tipku Esc kako biste preuzeli kontrolu.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Prikaži sve zabilješke
+bookmarks-recent-bookmarks =
+    .value = Nedavno zabilježeno
+bookmarks-toolbar-chevron =
+    .tooltiptext = Prikaži više zabilješki
+bookmarks-sidebar-content =
+    .aria-label = Zabilješke
+bookmarks-menu-button =
+    .label = Izbornik zabilješki
+bookmarks-other-bookmarks-menu =
+    .label = Druge zabilješke
+bookmarks-mobile-bookmarks-menu =
+    .label = Mobilne zabilješke
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Sakrij bočnu traku zabilješki
+           *[other] Prikaži okno zabilješki
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Sakrij alatnu traku zabilješki
+           *[other] Prikaži traku zabilješki
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Ukloni izbornik zabilješki iz alatne trake
+           *[other] Dodaj izbornik zabilješki u alatnu traku
+        }
+bookmarks-search =
+    .label = Pretraži zabilješke
+bookmarks-tools =
+    .label = Alatna traka zabilješki
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Alatna traka zabilješki
+    .accesskey = z
+    .aria-label = Zabilješke
+bookmarks-toolbar-menu =
+    .label = Alatna traka zabilješki
+bookmarks-toolbar-placeholder =
+    .title = Stavke alatne trake zabilješki
+bookmarks-toolbar-placeholder-button =
+    .label = Stavke alatne trake zabilješki
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Zabilješke
+library-bookmarks-bookmark-this-page =
+    .label = Zabilježi ovu stranicu
+library-bookmarks-bookmark-edit =
+    .label = Uredi ovu zabilješku
+library-recent-activity-label = Nedavna aktivnost
+
+## More items
+
+more-menu-go-offline =
+    .label = Izvanmrežni rad
+    .accesskey = v

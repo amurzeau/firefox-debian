@@ -171,7 +171,14 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Toś to pśizjawjenje wótwónoźeś?
 confirm-delete-dialog-message = Toś ta akcija njedajo se anulěrowaś.
 about-logins-confirm-remove-dialog-confirm-button = Wótwónoźeś
-about-logins-confirm-remove-all-dialog-confirm-button = Wše wótwónoźeś
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] Wótwónoźeś
+        [one] Wótwónoźeś
+        [two] Wše wótwónoźeś
+        [few] Wše wótwónoźeś
+       *[other] Wše wótwónoźeś
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] Jo, toś to pśizjawjenje wótwónoźeś
@@ -213,6 +220,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Pśizjawjenja a gronidła eksportěrowaś
 about-logins-confirm-export-dialog-message = Wašo gronidła budu se ako cytajobny tekst składowaś (na pś. BadP@ass0rd), togodla móžo kuždy, kótaryž móžo eksportěrowanu dataju wócyniś, je wiźeś.
 about-logins-confirm-export-dialog-confirm-button = Eksportěrowaś…
+about-logins-alert-import-title = Importěrowanje dokóńćone
+about-logins-alert-import-message = Nadrobne importowe zespominanje pokazaś
 confirm-discard-changes-dialog-title = Njeskłaźone změny zachyśiś?
 confirm-discard-changes-dialog-message = Wšykne njeskłaźone změny se zgubiju.
 confirm-discard-changes-dialog-confirm-button = Zachyśiś
@@ -274,3 +283,38 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV-dokument
        *[other] CSV-dataja
     }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Importěrowanje dokóńćone
+about-logins-import-dialog-items-added =
+    { $count ->
+        [one] <span>Nowe pśizjawjenje pśidane:</span> <span data-l10n-name="count">{ $count }</span>
+        [two] <span>Nowej pśizjawjeni pśidanej:</span> <span data-l10n-name="count">{ $count }</span>
+        [few] <span>Nowe pśizjawjenja pśidane:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Nowe pśizjawjenja pśidane:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+        [one] <span>Eksistěrujuce pśizjawjenje zaktualizěrowane:</span> <span data-l10n-name="count">{ $count }</span>
+        [two] <span>Eksistěrujucej pśizjawjeni zaktualizěrowanej:</span> <span data-l10n-name="count">{ $count }</span>
+        [few] <span>Eksistěrujuce pśizjawjenja zaktualizěrowane:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Eksistěrujuce pśizjawjenja zaktualizěrowane:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+        [one] <span>Dwójne pśizjawjenje namakane:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(njeimportěrowane)</span>
+        [two] <span>Dwójnej pśizjawjeni namakanej:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(njeimportěrowanej)</span>
+        [few] <span>Dwójne pśizjawjenja namakane:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(njeimportěrowane)</span>
+       *[other] <span>Dwójne pśizjawjenja namakane:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(njeimportěrowane)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+        [one] <span>Zmólka:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(njeimportěrowana)</span>
+        [two] <span>Zmólce:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(njeimportěrowanej)</span>
+        [few] <span>Zmólki:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(njeimportěrowane)</span>
+       *[other] <span>Zmólki:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(njeimportěrowane)</span>
+    }
+about-logins-import-dialog-done = Dokóńcone

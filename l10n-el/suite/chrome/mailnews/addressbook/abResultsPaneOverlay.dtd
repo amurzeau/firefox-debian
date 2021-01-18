@@ -2,14 +2,14 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY Addrbook.label                        "Ευρετήριο διευθύνσεων">
+<!ENTITY Addrbook.label                        "Ευρετήριο">
 <!ENTITY Addrbook.accesskey                    "Ε">
 <!ENTITY GeneratedName.label                   "Όνομα">
 <!ENTITY GeneratedName.accesskey               "Ό">
 <!ENTITY PrimaryEmail.label                    "Email">
 <!ENTITY PrimaryEmail.accesskey                "E">
-<!ENTITY Company.label                         "Οργανισμός">
-<!ENTITY Company.accesskey                     "σ">
+<!ENTITY Company.label                         "Εταιρεία">
+<!ENTITY Company.accesskey                     "ρ">
 <!ENTITY _PhoneticName.label                   "Φωνητικό όνομα">
 <!ENTITY _PhoneticName.accesskey               "ο">
 <!ENTITY NickName.label                        "Ψευδώνυμο">

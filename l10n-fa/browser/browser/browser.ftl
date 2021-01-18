@@ -313,6 +313,9 @@ browser-window-maximize-button =
 browser-window-close-button =
     .tooltiptext = بستن
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -409,3 +412,70 @@ fullscreen-exit-mac-button = خروج از حالت تمام‌صفحه (Esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> کنترل مکان‌نما شما را در دست دارد. برای پس گرفتن کنترل، Esc را فشار دهید.
 pointerlock-warning-no-domain = این سند کنترل مکان‌نما شما را در دست گرفته است. برای پس گرفتن کنترل، Esc را فشار دهید.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = نمایش همهٔ نشانک‌ها
+bookmarks-recent-bookmarks =
+    .value = به تازگی نشانک‌گذاری شده
+bookmarks-toolbar-chevron =
+    .tooltiptext = نشانک‌های بیشتری نمایش داده شود
+bookmarks-sidebar-content =
+    .aria-label = نشانک‌ها
+bookmarks-menu-button =
+    .label = نشانک‌ها فهرست
+bookmarks-other-bookmarks-menu =
+    .label = نشانک‌‌های دیگر
+bookmarks-mobile-bookmarks-menu =
+    .label = نشانک‌های همراه
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] مخفی کردن نوار کناری نشانک‌ها
+           *[other] نمایش نوار ابزار نشانک‌ها
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] مخفی کردن نوار ابزار نشانک‌ها
+           *[other] نمایش نوار ابزار نشانک‌ها
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] حذف منوی نشانک‌ها از نوار ابزار
+           *[other] افزودن منوی نشانک‌ها را به نوار ابزار
+        }
+bookmarks-search =
+    .label = جست‌وجوی نشانک‌ها
+bookmarks-tools =
+    .label = ابزار نشانک‌گذاری
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = نوار ابزار نشانک‌ها
+    .accesskey = ن
+    .aria-label = نشانک‌ها
+bookmarks-toolbar-menu =
+    .label = نوار ابزار نشانک‌ها
+bookmarks-toolbar-placeholder =
+    .title = موارد نوار ابزار نشانک‌ها
+bookmarks-toolbar-placeholder-button =
+    .label = موارد نوار ابزار نشانک‌ها
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = نشانک ها
+library-bookmarks-bookmark-this-page =
+    .label = نشانک‌گذاری این صفحه
+library-bookmarks-bookmark-edit =
+    .label = ویرایش این نشانک
+
+## More items
+
+more-menu-go-offline =
+    .label = آفلاین کار کن
+    .accesskey = ک

@@ -503,6 +503,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Сайты, якія вы наведваеце найчасцей
 home-prefs-topsites-by-option-sponsored =
     .label = Папулярныя сайты ад спонсараў
+home-prefs-shortcuts-header =
+    .label = Цэтлікі
+home-prefs-shortcuts-description = Сайты, якія вы захоўваеце або наведваеце
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Спонсарскія цэтлікі
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -510,6 +515,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Рэкамендавана { $provider }
 home-prefs-recommended-by-description-update = Выключнае змесціва з усяго інтэрнэту, падабранае { $provider }
+home-prefs-recommended-by-description-new = Выключнае змесціва, куратарам якога з'яўляецца { $provider }, частка сям'і { -brand-product-name }
 
 ##
 
@@ -518,8 +524,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Артыкулы ад спонсараў
 home-prefs-highlights-header =
     .label = Выбранае
-home-prefs-recent-activity-header =
-    .label = Апошняя актыўнасць
 home-prefs-highlights-description = Выбраныя сайты, якія вы захавалі ці наведалі
 home-prefs-highlights-option-visited-pages =
     .label = Наведаныя старонкі
@@ -529,6 +533,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Нядаўнія сцягванні
 home-prefs-highlights-option-saved-to-pocket =
     .label = Захаваныя ў { -pocket-brand-name } старонкі
+home-prefs-recent-activity-header =
+    .label = Апошняя актыўнасць
+home-prefs-recent-activity-description = Падборка нядаўніх сайтаў і змесціва
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -536,6 +543,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Урыўкі
 home-prefs-snippets-description = Абнаўленні ад { -vendor-short-name } і { -brand-product-name }
+home-prefs-snippets-description-new = Парады і навіны ад { -vendor-short-name } і { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -928,8 +936,15 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Адкрытыя карткі
     .accesskey = А
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Цэтлікі
+    .accesskey = Ц
 addressbar-locbar-topsites-option =
     .label = Папулярныя сайты
+    .accesskey = П
+addressbar-locbar-engines-option =
+    .label = Пошукавыя сістэмы
     .accesskey = П
 addressbar-suggestions-settings = Змяніць налады для падказак пашукавіка
 

@@ -8,6 +8,9 @@
 newtab-page-title = Neuer Tab
 newtab-settings-button =
     .title = Einstellungen für neue Tabs anpassen
+newtab-personalize-button-label = Anpassen
+    .title = Neuen Tab anpassen
+    .aria-label = Neuen Tab anpassen
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Das Web durchsuchen
     .title = Das Web durchsuchen
     .aria-label = Das Web durchsuchen
+newtab-search-box-text = Das Web durchsuchen
+newtab-search-box-input =
+    .placeholder = Das Web durchsuchen
+    .aria-label = Das Web durchsuchen
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Suchmaschine hinzufügen
 newtab-topsites-add-topsites-header = Neue wichtige Seite
+newtab-topsites-add-shortcut-header = Neue Verknüpfung
 newtab-topsites-edit-topsites-header = Wichtige Seite bearbeiten
+newtab-topsites-edit-shortcut-header = Verknüpfung bearbeiten
 newtab-topsites-title-label = Titel
 newtab-topsites-title-input =
     .placeholder = Name eingeben
@@ -207,3 +216,27 @@ newtab-pocket-cta-text = Speichern Sie Ihre Lieblingstexte in { -pocket-brand-na
 
 newtab-error-fallback-info = Beim Laden dieses Inhalts ist ein Fehler aufgetreten.
 newtab-error-fallback-refresh-link = Aktualisieren Sie die Seite, um es erneut zu versuchen.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Verknüpfungen
+newtab-custom-shortcuts-subtitle = Websites, die Sie speichern oder besuchen
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } Zeile
+       *[other] { $num } Zeilen
+    }
+newtab-custom-sponsored-sites = Gesponserte Verknüpfungen
+newtab-custom-pocket-title = Empfohlen von { -pocket-brand-name }
+newtab-custom-pocket-subtitle = Besondere Inhalte ausgewählt von { -pocket-brand-name }, Teil der { -brand-product-name }-Familie
+newtab-custom-pocket-sponsored = Gesponserte Inhalte
+newtab-custom-recent-title = Neueste Aktivität
+newtab-custom-recent-subtitle = Eine Auswahl kürzlich besuchter Websites und Inhalte
+newtab-custom-close-button = Schließen
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Kurzinformationen
+newtab-custom-snippets-subtitle = Tipps und Neuigkeiten von { -vendor-short-name } und { -brand-product-name }
+newtab-custom-settings = Weitere Einstellungen verwalten

@@ -28,7 +28,12 @@ about-processes-column-cpu-total = ЦП
 ##    $type (String) The raw type for this process. Used for unknown processes.
 
 about-processes-browser-process-name = { -brand-short-name } (працэс { $pid })
+about-processes-web-large-allocation = Вэб (працэс { $pid }, буйны) для { $origin }
 about-processes-file-process-name = Файлы (працэс { $pid })
+about-processes-extension-process-name = Пашырэнні (працэс { $pid })
+about-processes-plugin-process-name = Плагіны (працэс { $pid })
+about-processes-privilegedmozilla-process-name = Вэб (працэс { $pid }) для сайтаў { -vendor-short-name }
+about-processes-socket-process-name = Сетка (працэс { $pid })
 # Process
 # Variables:
 #   $name (String) The name assigned to the process.

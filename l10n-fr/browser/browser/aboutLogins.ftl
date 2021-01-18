@@ -169,7 +169,11 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Supprimer cet identifiant ?
 confirm-delete-dialog-message = Cette action est irréversible.
 about-logins-confirm-remove-dialog-confirm-button = Supprimer
-about-logins-confirm-remove-all-dialog-confirm-button = Tout supprimer
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] Supprimer
+       *[other] Tout supprimer
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] Oui, supprimer cet identifiant
@@ -198,6 +202,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Exporter les identifiants et les mots de passe
 about-logins-confirm-export-dialog-message = Vos mots de passe seront enregistrés sous forme de texte lisible (par exemple, « m0t2passeFaible ») ; ainsi toute personne pouvant ouvrir le fichier exporté pourra les consulter.
 about-logins-confirm-export-dialog-confirm-button = Exporter…
+about-logins-alert-import-title = Importation terminée
+about-logins-alert-import-message = Voir la liste détaillée des importations
 confirm-discard-changes-dialog-title = Ignorer les modifications non enregistrées ?
 confirm-discard-changes-dialog-message = Toutes les modifications non enregistrées seront perdues.
 confirm-discard-changes-dialog-confirm-button = Ignorer
@@ -259,3 +265,30 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Document CSV
        *[other] Fichier CSV
     }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Importation terminée
+about-logins-import-dialog-items-added =
+    { $count ->
+        [one] <span>Un nouvel identifiant ajouté</span>
+       *[other] <span>Nouveaux identifiants ajoutés :</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+        [one] <span>Un identifiant existant mis à jour</span>
+       *[other] <span>Identifiants existants mis à jour :</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+        [one] <span>Un identifiant en double trouvé</span> <span data-l10n-name="meta">(non importé)</span>
+       *[other] <span>Identifiants en double trouvés :</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(non importés)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+        [one] <span>Une erreur</span> <span data-l10n-name="meta">(non importé)</span>
+       *[other] <span>Erreurs :</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(non importés)</span>
+    }
+about-logins-import-dialog-done = Terminé

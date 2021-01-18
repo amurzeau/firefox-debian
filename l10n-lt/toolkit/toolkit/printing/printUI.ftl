@@ -26,6 +26,9 @@ printui-range-start = Nuo
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = iki
+printui-page-custom-range-input =
+    .aria-label = Įveskite norimą puslapių intervalą
+    .placeholder = pvz., 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Kopijos
 printui-orientation = Orientacija
@@ -49,6 +52,7 @@ printui-duplex-checkbox = Spausdinti ant abiejų pusių
 printui-options = Nuostatos
 printui-headers-footers-checkbox = Spausdinti antraštes ir poraštes
 printui-backgrounds-checkbox = Spausdinti foną
+printui-selection-checkbox = Spausdinti tik pažymėtą sritį
 printui-color-mode-label = Spalvotas spausdinimas
 printui-color-mode-color = Spalvotai
 printui-color-mode-bw = Juodai ir baltai
@@ -57,19 +61,29 @@ printui-margins-default = Numatytos
 printui-margins-min = Mažiausios
 printui-margins-none = Jokių
 printui-margins-custom = Pasirinktinės
+printui-margins-custom-inches = Pasirinktinės (coliai)
 printui-margins-custom-top = Viršutinė
+printui-margins-custom-top-inches = Viršutinė (coliai)
 printui-margins-custom-bottom = Apatinė
+printui-margins-custom-bottom-inches = Apatinė (coliai)
 printui-margins-custom-left = Kairė
+printui-margins-custom-left-inches = Kairė (coliai)
 printui-margins-custom-right = Dešinė
+printui-margins-custom-right-inches = Dešinė (coliai)
 printui-system-dialog-link = Spausdinti naudojant sistemos dialogą…
 printui-primary-button = Spausdinti
 printui-primary-button-save = Įrašyti
 printui-cancel-button = Atsisakyti
+printui-close-button = Užverti
 printui-loading = Ruošiama peržiūra
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Spaudinio peržiūra
+printui-pages-per-sheet = Puslapiai per lapą
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Spausdinama…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

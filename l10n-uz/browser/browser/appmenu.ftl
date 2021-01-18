@@ -10,17 +10,27 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = Yangi oyna
+appmenuitem-new-private-window =
+    .label = Yangi maxfiy oyna
+
+## Zoom and Fullscreen Controls
+
 appmenuitem-zoom-enlarge =
     .label = Kattalashtirish
 appmenuitem-zoom-reduce =
     .label = Kichiklashtirish
+appmenuitem-fullscreen =
+    .label = Butun ekran
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Sinxronlash
+appmenuitem-save-page =
+    .label = Sahifani saqlash…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Yangi xususiyatlar
-

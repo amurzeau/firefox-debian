@@ -8,6 +8,9 @@
 newtab-page-title = ახალი ჩანართი
 newtab-settings-button =
     .title = მოირგეთ ახალი ჩანართის გვერდი
+newtab-personalize-button-label = მორგება
+    .title = ახალი ჩანართის მორგება
+    .aria-label = ახალი ჩანართის მორგება
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = ინტერნეტში ძიება
     .title = ინტერნეტში ძიება
     .aria-label = ინტერნეტში ძიება
+newtab-search-box-text = ინტერნეტში ძიება
+newtab-search-box-input =
+    .placeholder = ინტერნეტში ძიება
+    .aria-label = ინტერნეტში ძიება
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = საძიებო სისტემის დამატება
 newtab-topsites-add-topsites-header = ახალი საიტი რჩეულებში
+newtab-topsites-add-shortcut-header = ახალი მალსახმობი
 newtab-topsites-edit-topsites-header = რჩეული საიტის ჩასწორება
+newtab-topsites-edit-shortcut-header = მალსახმობის ჩასწორება
 newtab-topsites-title-label = დასახელება
 newtab-topsites-title-input =
     .placeholder = სათაურის შეყვანა
@@ -207,3 +216,27 @@ newtab-pocket-cta-text = გადაინახეთ სასურველ
 
 newtab-error-fallback-info = სამწუხაროდ, შიგთავსის ჩატვირთვისას რაღაც ხარვეზი წარმოიქმნა.
 newtab-error-fallback-refresh-link = განაახლეთ გვერდი და სცადეთ ხელახლა.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = მალსახმობები
+newtab-custom-shortcuts-subtitle = საიტები, რომლებსაც ინახავთ ან სტუმრობთ
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } რიგი
+       *[other] { $num } რიგი
+    }
+newtab-custom-sponsored-sites = დაფინანსებული მალსახმობები
+newtab-custom-pocket-title = გთავაზობთ { -pocket-brand-name }
+newtab-custom-pocket-subtitle = გამორჩეული მასალები, რომელსაც { -pocket-brand-name } გთავაზობთ, { -brand-product-name }-ოჯახის ნაწილი.
+newtab-custom-pocket-sponsored = დაფინანსებული ამბები
+newtab-custom-recent-title = ბოლო მოქმედებები
+newtab-custom-recent-subtitle = შერჩეული ბოლოს ნანახი საიტებისა და მასალებიდან
+newtab-custom-close-button = დახურვა
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = ცნობები
+newtab-custom-snippets-subtitle = რჩევები და სიახლეები, რომელთაც გთავაზობთ { -vendor-short-name } და { -brand-product-name }
+newtab-custom-settings = დამატებითი პარამეტრების მართვა

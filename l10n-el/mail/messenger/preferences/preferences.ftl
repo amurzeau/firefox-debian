@@ -380,7 +380,7 @@ close-move-delete =
 display-name-label =
     .value = Εμφανιζόμενο όνομα:
 condensed-addresses-label =
-    .label = Εμφάνιση μόνο του ονόματος εμφάνισης για τα άτομα στο ευρετήριο διευθύνσεών μου
+    .label = Προβολή μόνο του εμφανιζόμενου ονόματος για άτομα του ευρετηρίου μου
     .accesskey = ε
 
 ## Compose Tab
@@ -432,8 +432,8 @@ font-color-label =
     .value = Χρώμα κειμένου:
     .accesskey = Χ
 bg-color-label =
-    .value = Χρώμα φόντου:
-    .accesskey = ρ
+    .value = Χρώμα παρασκηνίου:
+    .accesskey = Χ
 restore-html-label =
     .label = Επαναφορά προεπιλογών
     .accesskey = φ
@@ -489,8 +489,8 @@ cloud-account-description = Προσθήκη νέας υπηρεσίας απο�
 
 mail-content = Περιεχόμενο email
 remote-content-label =
-    .label = Να επιτρέπεται το απομακρυσμένο περιεχόμενο στα μηνύματα
-    .accesskey = π
+    .label = Αποδοχή απομακρυσμένου περιεχομένου στα μηνύματα
+    .accesskey = μ
 exceptions-button =
     .label = Εξαιρέσεις…
     .accesskey = Ε

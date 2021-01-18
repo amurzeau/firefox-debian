@@ -8,6 +8,9 @@
 newtab-page-title = Iccer amaynut
 newtab-settings-button =
     .title = Sagen asebter n yiccer-ik amaynut
+newtab-personalize-button-label = Sagen
+    .title = Sagen iccer amaynut
+    .aria-label = Sagen iccer amaynut
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Nadi di Web
     .title = Nadi di Web
     .aria-label = Nadi di Web
+newtab-search-box-text = Nadi di web
+newtab-search-box-input =
+    .placeholder = Nadi di web
+    .aria-label = Nadi di web
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Rnu amsedday n unadi
 newtab-topsites-add-topsites-header = Asmel ifazen amaynut
+newtab-topsites-add-shortcut-header = Anegzum amaynut
 newtab-topsites-edit-topsites-header = Ẓreg asmel ifazen
+newtab-topsites-edit-shortcut-header = Ẓreg anegzum
 newtab-topsites-title-label = Azwel
 newtab-topsites-title-input =
     .placeholder = Sekcem azwel
@@ -203,3 +212,27 @@ newtab-pocket-cta-text = Sekles tiqṣiḍin i tḥemmleḍ deg { -pocket-brand-
 
 newtab-error-fallback-info = Ihuh, yella wayen yeḍran deg usali n ugbur-a.
 newtab-error-fallback-refresh-link = Sali-d aseter akken ad talseḍ aɛraḍ.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Inegzumen
+newtab-custom-shortcuts-subtitle = Ismal i teskelseḍ neɣ wuɣur terziḍ
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } yizirig
+       *[other] { $num } yizirigen
+    }
+newtab-custom-sponsored-sites = Inegzumen yettwarefden
+newtab-custom-pocket-title = yettuwelleh-d sɣur { -pocket-brand-name }
+newtab-custom-pocket-subtitle = Agbur ufrin i s-yettusuddsen sɣur { -pocket-brand-name }, d aḥric seg twacult { -brand-product-name }
+newtab-custom-pocket-sponsored = Tiqṣidin yettwarefden
+newtab-custom-recent-title = Armud n melmi kan
+newtab-custom-recent-subtitle = Tafrant n yismal d ugbur n melmi kan
+newtab-custom-close-button = Mdel
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Tiwzillin
+newtab-custom-snippets-subtitle = Iwellihen d yisallen sɣur { -vendor-short-name } akked { -brand-product-name }
+newtab-custom-settings = Sefrek ugar n yiɣewwaṛen

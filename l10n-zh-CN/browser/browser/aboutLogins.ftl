@@ -168,7 +168,11 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = 删除此登录信息？
 confirm-delete-dialog-message = 此操作不可撤销。
 about-logins-confirm-remove-dialog-confirm-button = 移除
-about-logins-confirm-remove-all-dialog-confirm-button = 移除全部
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] 移除
+       *[other] 全部移除
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] 是的，移除此登录信息
@@ -194,6 +198,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = 导出登录名和密码
 about-logins-confirm-export-dialog-message = 您的密码将存为可读文本（如 BadP@ssw0rd），因此任何可以打开导出文件的人都可以进行查看。
 about-logins-confirm-export-dialog-confirm-button = 导出…
+about-logins-alert-import-title = 导入完成
+about-logins-alert-import-message = 查看详细的导入摘要
 confirm-discard-changes-dialog-title = 要丢弃未保存的更改吗？
 confirm-discard-changes-dialog-message = 将失去所有未保存的更改。
 confirm-discard-changes-dialog-confirm-button = 丢弃
@@ -255,3 +261,26 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV 文档
        *[other] CSV 文件
     }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = 导入完成
+about-logins-import-dialog-items-added =
+    { $count ->
+       *[other] <span>新增的登录信息：</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+       *[other] <span>更新的现有登录信息：</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+       *[other] <span>重复的登录信息：</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">（未导入）</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+       *[other] <span>错误：</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">（未导入）</span>
+    }
+about-logins-import-dialog-done = 完成

@@ -29,6 +29,8 @@ search-input-box =
            *[other] Encontrar en configuraciones
         }
 managed-notice = Tu organización gestiona el navegador.
+category-list =
+    .aria-label = Categorías
 pane-general-title = General
 category-general =
     .tooltiptext = { pane-general-title }
@@ -50,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Continuar con precaución
 pane-experimental-search-results-header = Experimentos de { -brand-short-name }: proceder con precaución
 pane-experimental-description = Cambiar las preferencias de configuración avanzada puede afectar el rendimiento o la seguridad de { -brand-short-name }.
+pane-experimental-reset =
+    .label = Restaurar predeterminados
+    .accesskey = R
 help-button-label = Soporte de { -brand-short-name }
 addons-button-label = Complementos y temas
 focus-search =
@@ -426,6 +431,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Habilitar controles de video picture-in-picture
     .accesskey = A
 browsing-picture-in-picture-learn-more = Saber más
+browsing-media-control =
+    .label = Controla los medios con el teclado, los auriculares o la interfaz virtual
+    .accesskey = v
+browsing-media-control-learn-more = Saber más
 browsing-cfr-recommendations =
     .label = Recomendar extensiones mientras se navega
     .accesskey = R
@@ -489,6 +498,13 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Sitios populares
 home-prefs-topsites-description = Los sitios que más visitas
+home-prefs-topsites-by-option-sponsored =
+    .label = Sitios principales patrocinados
+home-prefs-shortcuts-header =
+    .label = Atajos
+home-prefs-shortcuts-description = Sitios que guardas o visitas
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Atajos patrocinados
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -496,6 +512,7 @@ home-prefs-topsites-description = Los sitios que más visitas
 home-prefs-recommended-by-header =
     .label = Recomendado por { $provider }
 home-prefs-recommended-by-description-update = Contenido excepcional de toda la web, seleccionado por { $provider }
+home-prefs-recommended-by-description-new = Contenido excepcional seleccionado por { $provider }, parte de la familia { -brand-product-name }
 
 ##
 
@@ -513,6 +530,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Descargado recientemente
 home-prefs-highlights-option-saved-to-pocket =
     .label = Páginas guardadas en { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Actividad reciente
+home-prefs-recent-activity-description = Una selección de sitios y contenidos recientes
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -520,6 +540,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Fragmentos
 home-prefs-snippets-description = Actualizaciones de { -vendor-short-name } y { -brand-product-name }
+home-prefs-snippets-description-new = Consejos y noticias de { -vendor-short-name } y { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -560,6 +581,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Cambia las preferencias para otras sugerencias de la barra de direcciones
 search-suggestions-cant-show = Las sugerencias de búsqueda no se mostrarán en los resultados de la barra de direcciones porque has configurado { -brand-short-name } para que nunca recuerde el historial.
 search-one-click-header = Buscadores con un clic
+search-one-click-header2 = Atajos de búsqueda
 search-one-click-desc = Elegir los motores de búsqueda alternativos que aparecen debajo de la barra de direcciones y en la barra de búsqueda cuando comienzas a escribir una palabra.
 search-choose-engine-column =
     .label = Motor de búsqueda
@@ -872,6 +894,10 @@ sitedata-option-block-cross-site-trackers =
     .label = Rastreadores multisitio
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Rastreadores multisitio y de red social
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Cookies de rastreo entre sitios — incluye las cookies de redes sociales
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Cookies entre sitios — incluye las cookies de redes sociales
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Rastreadores de sitios cruzados y redes sociales, y aislación del resto de las cookies
 sitedata-option-block-unvisited =
@@ -906,9 +932,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Abrir pestañas
     .accesskey = O
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Accesos directos
+    .accesskey = S
 addressbar-locbar-topsites-option =
     .label = Sitios frecuentes
     .accesskey = t
+addressbar-locbar-engines-option =
+    .label = Motores de búsqueda
+    .accesskey = a
 addressbar-suggestions-settings = Cambiar las preferencias para las sugerencias del motor de navegación
 
 ## Privacy Section - Content Blocking
@@ -916,6 +949,7 @@ addressbar-suggestions-settings = Cambiar las preferencias para las sugerencias 
 content-blocking-enhanced-tracking-protection = Protección antirrastreo mejorada
 content-blocking-section-top-level-description = Los rastreadores le siguen en línea para recopilar información sobre sus hábitos e intereses de navegación. { -brand-short-name } bloquea muchos de estos rastreadores y otros scripts maliciosos.
 content-blocking-learn-more = Saber más
+content-blocking-fpi-incompatibility-warning = Está usando First Party Isolation (FPI), que anula algunas de las configuraciones de cookies de { -brand-short-name }.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -937,6 +971,7 @@ content-blocking-etp-standard-desc = Equilibrada entre protección y rendimiento
 content-blocking-etp-strict-desc = Protección más elevada, pero puede causar que algunos sitios o contenidos fallen.
 content-blocking-etp-custom-desc = Elige cuáles rastreadores y scripts quieres bloquear.
 content-blocking-private-windows = Contenido de rastreo en ventanas privadas
+content-blocking-cross-site-cookies = Cookies entre sitios
 content-blocking-cross-site-tracking-cookies = Cookies de rastreo multisitio
 content-blocking-cross-site-tracking-cookies-plus-isolate = Cookies de rastreo de sitios cruzados, y aislación del resto de las cookies
 content-blocking-social-media-trackers = Rastreadores de red social
@@ -948,6 +983,7 @@ content-blocking-cryptominers = Criptomineros
 content-blocking-fingerprinters = Huellas dactilares
 content-blocking-warning-title = ¡Atención!
 content-blocking-and-isolating-etp-warning-description = Bloquear los rastreadores y aislar las cookies puede impactar en la funcionalidad de algunos sitios. Recarga una página con rastreadores para cargar todo el contenido.
+content-blocking-and-isolating-etp-warning-description-2 = Este ajuste puede hacer que algunos sitios web no muestren contenido o que no funcionen correctamente. Si un sitio parece roto, puede que desees desactivar la protección contra seguimiento para que ese sitio cargue todo el contenido.
 content-blocking-warning-learn-how = Aprende cómo
 content-blocking-reload-description = Tendrás que volver a cargar tus pestañas para aplicar estos cambios.
 content-blocking-reload-tabs-button =

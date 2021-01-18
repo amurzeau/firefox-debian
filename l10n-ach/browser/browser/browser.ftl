@@ -395,3 +395,70 @@ fullscreen-exit-mac-button = Kat woko ki i wang kio ma opong (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> Tye ki twero i kom lacim ma megi. Dii Esc me dwoko twero cen bot in.
 pointerlock-warning-no-domain = Jami eni Tye ki twero i kom lacim ma megi. Dii Esc me dwoko twero cen bot in.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Nyut alamabuk weng
+bookmarks-recent-bookmarks =
+    .value = Ma kiketo Alamabuk cokki
+bookmarks-toolbar-chevron =
+    .tooltiptext = Nyut alama buk mukene
+bookmarks-sidebar-content =
+    .aria-label = Alama buk
+bookmarks-menu-button =
+    .label = Jami ayera me alamabuk
+bookmarks-other-bookmarks-menu =
+    .label = Alamabuk Mukene
+bookmarks-mobile-bookmarks-menu =
+    .label = Alamabuk me cing
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Kan lanyut nget me alamabuk
+           *[other] Nen gintic alama buk ma inget
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Kan gitic me alamabuk
+           *[other] Nen gintic alama buk
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Kwany jami ayera me alamabuk ki i Gitic
+           *[other] Med jami ayera me alamabuk ii Gitic
+        }
+bookmarks-search =
+    .label = Yeny Alamabuk
+bookmarks-tools =
+    .label = Gtic me keto alamabuk
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Gintic me alama buk
+    .accesskey = G
+    .aria-label = Alamabuk
+bookmarks-toolbar-menu =
+    .label = Gintic me alama buk
+bookmarks-toolbar-placeholder =
+    .title = Jami me gintic me alama buk
+bookmarks-toolbar-placeholder-button =
+    .label = Jami me gintic me alama buk
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Alamabuk
+library-bookmarks-bookmark-this-page =
+    .label = Ket alama buk i pot buk man
+library-bookmarks-bookmark-edit =
+    .label = Yub alama buk man
+
+## More items
+
+more-menu-go-offline =
+    .label = Ti ma pe ikube iyamo
+    .accesskey = T

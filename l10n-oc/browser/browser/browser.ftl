@@ -288,7 +288,7 @@ identity-passive-loaded = D'elements de la pagina son pas segurs (coma los imatg
 identity-active-loaded = Avètz desactivat la proteccion sus aquela pagina.
 identity-weak-encryption = Aquela pagina utiliza un chiframent flac.
 identity-insecure-login-forms = Los identificants marcats sus aquela pagina pòdon far perilh.
-identity-https-only-connection-upgraded = (passat al HTTPS)
+identity-https-only-connection-upgraded = (passada al HTTPS)
 identity-https-only-label = Mòde HTTPS sonque
 identity-https-only-dropdown-on =
     .label = Activat
@@ -296,7 +296,7 @@ identity-https-only-dropdown-off =
     .label = Desactivat
 identity-https-only-dropdown-off-temporarily =
     .label = Temporàriament desactivat
-identity-https-only-info-turn-on2 = Activar lo mòde HTTPS solament per aqueste site se vol_tz que { -brand-short-name } passe la connexion en mòde securizat s’es possible.
+identity-https-only-info-turn-on2 = Activar lo mòde HTTPS solament per aqueste site se volètz que { -brand-short-name } passe la connexion en mòde securizat s’es possible.
 identity-https-only-info-turn-off2 = Se la page sembla copada, ensajatz de desactivar lo mòde HTTPS sonque per tornar cargar lo site en HTTP pas segur.
 identity-https-only-info-no-upgrade = Passatge de la connexion en HTTPS impossible.
 identity-permissions =
@@ -503,3 +503,71 @@ fullscreen-exit-mac-button = Sortir del mòde ecran complet (Esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> a lo contra-ròtle sus la vòstra mirga. Quichatz sus Esc per tornar recuperar lo contra-ròtle.
 pointerlock-warning-no-domain = Aqueste document a lo contraròtle sul vòstre gredon. Quichatz Esc per tornar prendre lo contra-ròtle.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Afichar totes los marcapaginas
+bookmarks-recent-bookmarks =
+    .value = Marcats recentament
+bookmarks-toolbar-chevron =
+    .tooltiptext = Afichar mai de marcapaginas
+bookmarks-sidebar-content =
+    .aria-label = Marcapaginas
+bookmarks-menu-button =
+    .label = Menú dels marcapaginas
+bookmarks-other-bookmarks-menu =
+    .label = Autres marcapaginas
+bookmarks-mobile-bookmarks-menu =
+    .label = Marcapaginas del mobile
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Amagar la barra laterala d'onglets
+           *[other] Afichar la barra laterala d'onglets
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Amagar la barra personala
+           *[other] Afichar la barra personala
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Levar lo menú personalizat dels marcapaginas
+           *[other] Apondre lo menú personalizat als marcapaginas
+        }
+bookmarks-search =
+    .label = Recercar dins los marcapaginas
+bookmarks-tools =
+    .label = Aisinas dels marcapaginas
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Barra personala
+    .accesskey = B
+    .aria-label = Marcapaginas
+bookmarks-toolbar-menu =
+    .label = Barra personala
+bookmarks-toolbar-placeholder =
+    .title = Elements de la barra personala
+bookmarks-toolbar-placeholder-button =
+    .label = Elements de la barra personala
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Marcapaginas
+library-bookmarks-bookmark-this-page =
+    .label = Marcar aquesta pagina
+library-bookmarks-bookmark-edit =
+    .label = Modificar aqueste marcapagina
+library-recent-activity-label = Activitat recenta
+
+## More items
+
+more-menu-go-offline =
+    .label = Trabalhar fòra connexion
+    .accesskey = T

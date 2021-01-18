@@ -41,12 +41,14 @@ experimental-features-devtools-execution-context-selector =
     .label = Geliştirici Araçları: Execution Context Selector
 experimental-features-devtools-compatibility-panel =
     .label = Geliştirici Araçları: Uyumluluk Paneli
+experimental-features-devtools-compatibility-panel-description = Sayfa Denetçisi için, uygulamanızın tarayıcılar arası uyumluluk durumunu ayrıntılı olarak gösteren yan panel. Daha fazla bilgi için bkz. <a data-l10n-name="bugzilla">bug 1584464</a>.
 # Do not translate 'SameSite', 'Lax' and 'None'.
 experimental-features-cookie-samesite-lax-by-default2 =
     .label = Çerezler: Varsayılan olarak SameSite=Lax
 # Do not translate 'SameSite', 'Lax' and 'None'.
 experimental-features-cookie-samesite-none-requires-secure2 =
     .label = Çerezler: SameSite=None, secure özniteliği gerektirsin
+experimental-features-cookie-samesite-none-requires-secure2-description = “SameSite=None” özniteliğine sahip çerezler secure özniteliği gerektirir. Bu özellik “Çerezler: Varsayılan olarak SameSite=Lax” deneyini gerektirir.
 # about:home should be kept in English, as it refers to the the URI for
 # the internal default home page.
 experimental-features-abouthome-startup-cache =
@@ -78,3 +80,6 @@ experimental-features-fission =
 experimental-features-multi-pip =
     .label = Çoklu Görüntü İçinde Görüntü Desteği
 experimental-features-multi-pip-description = Birden çok görüntü içinde görüntü penceresinin aynı anda açılmasını sağlamak için deneysel destek.
+experimental-features-http3 =
+    .label = HTTP/3 protokolü
+experimental-features-http3-description = Deneysel HTTP/3 protokolü desteği.

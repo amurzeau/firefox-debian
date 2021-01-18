@@ -500,6 +500,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Mest besøgte websider
 home-prefs-topsites-by-option-sponsored =
     .label = Sponsorerede websteder
+home-prefs-shortcuts-header =
+    .label = Genveje
+home-prefs-shortcuts-description = Gemte eller besøgte websteder
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Sponsorerede genveje
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -507,6 +512,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Anbefalet af { $provider }
 home-prefs-recommended-by-description-update = Spændende indhold fra nettet, udvalgt af { $provider }
+home-prefs-recommended-by-description-new = Interessant indhold udvalgt af { $provider }, en del af { -brand-product-name }-familien
 
 ##
 
@@ -524,6 +530,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Seneste filhentninger
 home-prefs-highlights-option-saved-to-pocket =
     .label = Sider gemt til { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Seneste aktivitet
+home-prefs-recent-activity-description = Et udvalg af seneste websteder og indhold
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -531,6 +540,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Notitser
 home-prefs-snippets-description = Nyheder fra { -vendor-short-name } og { -brand-product-name }
+home-prefs-snippets-description-new = Tips og nyheder fra { -vendor-short-name } og { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -791,6 +801,10 @@ forms-master-pw-fips-title = Du er pt. i FIPS tilstand. FIPS kræver en ikke-tom
 forms-primary-pw-change =
     .label = Skift hovedadgangskode…
     .accesskey = h
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Du er i øjeblikket i FIPS-tilstand. FIPS kræver, at du bruger en hovedadgangskode.
 forms-master-pw-fips-desc = Ændring af adgangskode mislykkedes
 
@@ -918,9 +932,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Åbne faneblade
     .accesskey = f
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Genveje
+    .accesskey = G
 addressbar-locbar-topsites-option =
     .label = Mest besøgte websider
     .accesskey = M
+addressbar-locbar-engines-option =
+    .label = Søgetjenester
+    .accesskey = S
 addressbar-suggestions-settings = Skift indstillinger for søgeforslag
 
 ## Privacy Section - Content Blocking

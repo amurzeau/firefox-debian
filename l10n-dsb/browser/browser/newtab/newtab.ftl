@@ -8,6 +8,9 @@
 newtab-page-title = Nowy rejtarik
 newtab-settings-button =
     .title = Bok wašogo nowego rejtarika pśiměriś
+newtab-personalize-button-label = Personalizěrowaś
+    .title = Nowy rejtarik personalizěrowaś
+    .aria-label = Nowy rejtarik personalizěrowaś
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Web pśepytaś
     .title = Web pśepytaś
     .aria-label = Web pśepytaś
+newtab-search-box-text = Web pśepytaś
+newtab-search-box-input =
+    .placeholder = Web pśepytaś
+    .aria-label = Web pśepytaś
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Pytnicu pśidaś
 newtab-topsites-add-topsites-header = Nowe nejcesćej woglědane sedło
+newtab-topsites-add-shortcut-header = Nowe zwězanje
 newtab-topsites-edit-topsites-header = Nejcesćej woglědane sedło wobźěłaś
+newtab-topsites-edit-shortcut-header = Zwězanje wobźěłaś
 newtab-topsites-title-label = Titel
 newtab-topsites-title-input =
     .placeholder = Titel zapódaś
@@ -207,3 +216,29 @@ newtab-pocket-cta-text = Składujśo tšojeńka, kótarež se wam spódobuju, w 
 
 newtab-error-fallback-info = Hopla, pśi cytanju toś togo wopśimjeśa njejo se něco raźiło.
 newtab-error-fallback-refresh-link = Aktualizěrujśo bok, aby hyšći raz wopytał.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Zwězanja
+newtab-custom-shortcuts-subtitle = Sedła, kótarež składujośo abo ku kótarymž se woglědujośo
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } smužka
+        [two] { $num } smužce
+        [few] { $num } smužki
+       *[other] { $num } smužkow
+    }
+newtab-custom-sponsored-sites = Sponsorowane zwězanja
+newtab-custom-pocket-title = Wót { -pocket-brand-name } dopórucone
+newtab-custom-pocket-subtitle = Wósebne wopśimjeśe, wubrane pśez { -pocket-brand-name }, źěla swójźby { -brand-product-name }
+newtab-custom-pocket-sponsored = Sponsorowane tšojeńka
+newtab-custom-recent-title = Nejnowša aktiwita
+newtab-custom-recent-subtitle = Wuběrk nejnowšych sedłow a nejnowšego wopśimjeśa
+newtab-custom-close-button = Zacyniś
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Kuski
+newtab-custom-snippets-subtitle = Pokazki a nowosći wót { -vendor-short-name } a { -brand-product-name }
+newtab-custom-settings = Dalšne nastajenja zastojaś

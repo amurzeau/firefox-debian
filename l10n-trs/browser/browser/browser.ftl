@@ -298,6 +298,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = Narán
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -373,3 +376,70 @@ fullscreen-exit-mac-button = Nagi'iaj lij riña aga' sikà' ràa (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> hua a'ngo sa nikaj ñu'unj si punterôt. Ga'ui' Esc da' narit.
 pointerlock-warning-no-domain = Ñaj na nikaj ñu'unj si punterôt. Ga'ui' Esc da' narit.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Ni'io' sa raj sun nichro' doj
+bookmarks-recent-bookmarks =
+    .value = Markador nakà doj
+bookmarks-toolbar-chevron =
+    .tooltiptext = Ni'io' a'ngò da'j markador
+bookmarks-sidebar-content =
+    .aria-label = Sa raj sun nichrò' doj
+bookmarks-menu-button =
+    .label = Menu raj sun nichrò doj
+bookmarks-other-bookmarks-menu =
+    .label = A'ngo sa raj sun nichrò' doj
+bookmarks-mobile-bookmarks-menu =
+    .label = Nej marcador aché
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Gachi hui' dukuán markador
+           *[other] Ni'io riña panel markador
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Gachrī hui' dukuâ sa raj sun'
+           *[other] Ni'io riña sa gara sun'
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Gahī hui' dukuân sa raj sun'
+           *[other] Nuto' dukuân sa raj sun'
+        }
+bookmarks-search =
+    .label = Nana'ui' sa raj sun nichrò' doj
+bookmarks-tools =
+    .label = Si rasun markadores
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Riñan man sa gara sun'
+    .accesskey = B
+    .aria-label = Sa raj sun nichrò' doj
+bookmarks-toolbar-menu =
+    .label = Riñan man sa gara sun'
+bookmarks-toolbar-placeholder =
+    .title = Dukuán màn sa garasun' ngà nej markador
+bookmarks-toolbar-placeholder-button =
+    .label = Dukuán màn sa garasun' ngà nej markador
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Sa raj sun nichrò' doj
+library-bookmarks-bookmark-this-page =
+    .label = Sa raj sun nichrà' doj pagina na
+library-bookmarks-bookmark-edit =
+    .label = Nagi'io' sa arajsun nichrò' doj
+
+## More items
+
+more-menu-go-offline =
+    .label = Gi'iaj sun nùnj si nitaj koneksiôn hua
+    .accesskey = k

@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -206,7 +206,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = اس بار ، کے ساتھ تلاش کریں:
 # This string won't wrap, so if the translated string is longer,
@@ -270,6 +270,12 @@ identity-passive-loaded = اس صفحے کے حصے قابل بھروسا نہی
 identity-active-loaded = آپ نے اس صفحے پر حفاظت نا اہل بنا دی ہے۔
 identity-weak-encryption = یہ صفحہ کمزور خفیہ کاری استعمال کرتا ہے۔
 identity-insecure-login-forms = اس صفحہ پر داخل کردہ لاگ ان اشتباہ کیا جا سکتا ہے۔
+identity-https-only-dropdown-on =
+    .label = چالو
+identity-https-only-dropdown-off =
+    .label = بند
+identity-https-only-dropdown-off-temporarily =
+    .label = عارضی طور پر بندکریں
 identity-permissions =
     .value = اجازتیں
 identity-permissions-reload-hint = تبدیلی کو لگانے کے لیئے آپکو صفحہ کو دوبارہ لوڈ کرنے کی شاید ظرورت ہو۔
@@ -313,6 +319,9 @@ browser-window-restore-down-button =
     .tooltiptext = نیچے بحال کریں
 browser-window-close-button =
     .tooltiptext = بند کریں
+
+## Bookmarks toolbar items
+
 
 ## WebRTC Pop-up notifications
 
@@ -392,6 +401,7 @@ urlbar-result-action-search-in-private = نجی ونڈو میں تلاش کری�
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = { $engine } سے تلاش کریں
+urlbar-result-action-sponsored = سپانسر شدہ
 urlbar-result-action-switch-tab = ٹیب پر جائیں
 urlbar-result-action-visit = دورہ
 
@@ -399,6 +409,8 @@ urlbar-result-action-visit = دورہ
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-bookmarks = بک مارک تلاش کریں
+urlbar-result-action-search-history = سابقات تلاش کریں
 
 ## Full Screen and Pointer Lock UI
 
@@ -415,3 +427,71 @@ fullscreen-exit-mac-button = پوری سکرین سے باہر نکلیں (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> آپ کے نشان کار کا کنٹرول ہے۔ Esc دبا کر کنٹرول واپس لیں
 pointerlock-warning-no-domain = اس دستاویز کہ پاس آپ کہ نشان کار کا کنٹرول ہے ۔ کنٹرول واپس حاصل کرنے کے لیے Esc دبائیں ۔
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = تمام بک مارک دکھائیں
+bookmarks-recent-bookmarks =
+    .value = حالیہ بک مارک کردہ
+bookmarks-toolbar-chevron =
+    .tooltiptext = مزید بک مارک دکھائیں
+bookmarks-sidebar-content =
+    .aria-label = بک مارک
+bookmarks-menu-button =
+    .label = بک مارک مینیو
+bookmarks-other-bookmarks-menu =
+    .label = دیگر بک مارک
+bookmarks-mobile-bookmarks-menu =
+    .label = موبائل بک مارک
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] بک مارک سائڈبار چھپائیں
+           *[other] بغلی بار میں بک مارک دیکھیں
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] بک مارک ٹولبار چھپائیں
+           *[other] بک مارک ٹولبار دیکھیں
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] بک مارک مینو کو ٹولبار سے ہٹائے
+           *[other] بک مارک مینو کو ٹولبار میں شامل کریں
+        }
+bookmarks-search =
+    .label = بک مارک تلاش کریں
+bookmarks-tools =
+    .label = بک مارک ٹول
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = بک مارک ٹولبار
+    .accesskey = B
+    .aria-label = بک مارکس
+bookmarks-toolbar-menu =
+    .label = بک مارک ٹولبار
+bookmarks-toolbar-placeholder =
+    .title = ٹولبار اشیاہ کو بک مارک کگاتا ہے
+bookmarks-toolbar-placeholder-button =
+    .label = ٹولبار اشیاہ کو بک مارک کگاتا ہے
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = بک مارک
+library-bookmarks-bookmark-this-page =
+    .label = یہ صفحہ نشان زد کریں
+library-bookmarks-bookmark-edit =
+    .label = اس بک مارک کی تدوین کریں
+library-recent-activity-label = حالیہ سرگرمی
+
+## More items
+
+more-menu-go-offline =
+    .label = آف لائن کام کریں
+    .accesskey = k

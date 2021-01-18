@@ -503,3 +503,71 @@ fullscreen-exit-mac-button = Quitter le mode plein écran (« esc »)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> contrôle votre pointeur. Appuyez sur Échap pour reprendre le contrôle.
 pointerlock-warning-no-domain = Ce document contrôle votre pointeur. Appuyez sur Échap pour reprendre le contrôle.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Afficher tous les marque-pages
+bookmarks-recent-bookmarks =
+    .value = Marqués récemment
+bookmarks-toolbar-chevron =
+    .tooltiptext = Afficher plus de marque-pages
+bookmarks-sidebar-content =
+    .aria-label = Marque-pages
+bookmarks-menu-button =
+    .label = Menu des marque-pages
+bookmarks-other-bookmarks-menu =
+    .label = Autres marque-pages
+bookmarks-mobile-bookmarks-menu =
+    .label = Marque-pages des appareils mobiles
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Masquer le panneau des marque-pages
+           *[other] Afficher le panneau des marque-pages
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Masquer la barre personnelle
+           *[other] Afficher la barre personnelle
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Retirer le menu de la barre personnelle
+           *[other] Ajouter le menu à la barre d’outils
+        }
+bookmarks-search =
+    .label = Rechercher dans les marque-pages
+bookmarks-tools =
+    .label = Outils de marque-pages
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Barre personnelle
+    .accesskey = B
+    .aria-label = Marque-pages
+bookmarks-toolbar-menu =
+    .label = Barre personnelle
+bookmarks-toolbar-placeholder =
+    .title = Éléments de la barre personnelle
+bookmarks-toolbar-placeholder-button =
+    .label = Éléments de la barre personnelle
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Marque-pages
+library-bookmarks-bookmark-this-page =
+    .label = Marquer cette page
+library-bookmarks-bookmark-edit =
+    .label = Modifier ce marque-page
+library-recent-activity-label = Activité récente
+
+## More items
+
+more-menu-go-offline =
+    .label = Travailler hors connexion
+    .accesskey = x

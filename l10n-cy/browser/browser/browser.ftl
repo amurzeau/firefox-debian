@@ -226,7 +226,7 @@ full-screen-autohide =
     .label = Cuddio Barrau Offer
     .accesskey = u
 full-screen-exit =
-    .label = Gadael Modd Sgrin Lawn
+    .label = Gadael y Modd Sgrin Lawn
     .accesskey = L
 
 ## Search Engine selection buttons (one-offs)
@@ -511,3 +511,71 @@ fullscreen-exit-mac-button = Gadael y Sgrin Lawn (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> reolaeth o'ch pwyntydd. Pwyswch Esc i adennill rheolaeth.
 pointerlock-warning-no-domain = Mae gan y ddogfen hon reolaeth o'ch pwyntydd. Pwyswch Esc i adennill rheolaeth.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Dangos Pob Nod Tudalen
+bookmarks-recent-bookmarks =
+    .value = Wedi gosod Nod Tudalen yn Ddiweddar
+bookmarks-toolbar-chevron =
+    .tooltiptext = Dangos pob ffolder nod tudalen
+bookmarks-sidebar-content =
+    .aria-label = Nodau Tudalen
+bookmarks-menu-button =
+    .label = Dewislen Nodau Tudalen
+bookmarks-other-bookmarks-menu =
+    .label = Nodau Tudalen Eraill
+bookmarks-mobile-bookmarks-menu =
+    .label = Nodau Tudalen Symudol
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Cuddio'r Bar Ochr Nodau Tudalen
+           *[other] Gweld Bar Offer Nodau Tudalen
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Cuddio'r Bar Offer Nodau Tudalen
+           *[other] Gweld Bar Offer Nodau Tudalen
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Tynnu Dewislen Nodau Tudalen o'r Bar Offer
+           *[other] Ychwanegu Dewislen Nodau Tudalen i'r Bar Offer
+        }
+bookmarks-search =
+    .label = Chwilio'r Nodau Tudalen
+bookmarks-tools =
+    .label = Offer Nodau Tudalen
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Bar Offer Nodau Tudalen
+    .accesskey = N
+    .aria-label = Nodau Tudalen
+bookmarks-toolbar-menu =
+    .label = Bar Offer Nodau Tudalen
+bookmarks-toolbar-placeholder =
+    .title = Eitemau Bar Offer Nodau Tudalen
+bookmarks-toolbar-placeholder-button =
+    .label = Eitemau Bar Offer Nodau Tudalen
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Nodau Tudalen
+library-bookmarks-bookmark-this-page =
+    .label = Gosod Nod Tudalen i'r Dudalen
+library-bookmarks-bookmark-edit =
+    .label = Golygu'r Nod Tudalen
+library-recent-activity-label = Gweithgareddau Diweddar
+
+## More items
+
+more-menu-go-offline =
+    .label = Gweithio All-lein
+    .accesskey = w

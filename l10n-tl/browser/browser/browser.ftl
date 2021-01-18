@@ -293,8 +293,6 @@ identity-https-only-dropdown-off =
     .label = Nakasara
 identity-https-only-dropdown-off-temporarily =
     .label = Pansamantalang nakasara
-identity-https-only-info-turn-on = Buksan kung gusto mo na mag-upgrade ang { -brand-short-name } sa isang secure connection kung posible.
-identity-https-only-info-turn-off = Kung mukhang sira ang site, maaari mong isara ang HTTPS-Only Mode para mag-reload gamit ang insecure HTTP.
 identity-https-only-info-no-upgrade = Hindi kayang mag-upgrade ng koneksyon mula sa HTTP.
 identity-permissions =
     .value = Mga Pahintulot
@@ -340,6 +338,9 @@ browser-window-restore-down-button =
     .tooltiptext = Restore Down
 browser-window-close-button =
     .tooltiptext = Isara
+
+## Bookmarks toolbar items
+
 
 ## WebRTC Pop-up notifications
 
@@ -446,14 +447,6 @@ urlbar-result-action-search-in-private = Maghanap sa Private Window
 urlbar-result-action-search-w-engine = Maghanap gamit ang { $engine }
 urlbar-result-action-switch-tab = Lumipat sa Tab
 urlbar-result-action-visit = Puntahan
-
-## Action text shown in urlbar results, usually appended after the search
-## string or the url, like "result value - action text".
-## In these actions "Search" is a verb, followed by where the search is performed.
-
-urlbar-result-action-search-bookmarks = Hanapin sa mga Bookmark
-urlbar-result-action-search-history = Hanapin sa Kasaysayan
-urlbar-result-action-search-tabs = Hanapin sa mga Tab
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
@@ -462,6 +455,14 @@ urlbar-result-action-tabtosearch-web = Maghanap gamit ang { $engine } direkta mu
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
 urlbar-result-action-tabtosearch-other-engine = Maghanap sa { $engine } direkta mula sa address bar
+
+## Action text shown in urlbar results, usually appended after the search
+## string or the url, like "result value - action text".
+## In these actions "Search" is a verb, followed by where the search is performed.
+
+urlbar-result-action-search-bookmarks = Hanapin sa mga Bookmark
+urlbar-result-action-search-history = Hanapin sa Kasaysayan
+urlbar-result-action-search-tabs = Hanapin sa mga Tab
 
 ## Full Screen and Pointer Lock UI
 
@@ -478,3 +479,70 @@ fullscreen-exit-mac-button = Umalis sa Full Screen (Esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ay may kontrol sa iyong pointer. Pindutin ang ESC para mabawi ang kontrol.
 pointerlock-warning-no-domain = Ang dokumentong ito ay may kontrol sa iyong pointer. Pindutin ang Esc para manumbalik ang kontrol.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Ipakita Lahat ng mga Bookmark
+bookmarks-recent-bookmarks =
+    .value = Mga Na-bookmark Kamakailan
+bookmarks-toolbar-chevron =
+    .tooltiptext = Magpakita ng karagdagang mga bookmark
+bookmarks-sidebar-content =
+    .aria-label = Mga bookmark
+bookmarks-menu-button =
+    .label = Menu ng mga Bookmark
+bookmarks-other-bookmarks-menu =
+    .label = Iba pang mga Bookmark
+bookmarks-mobile-bookmarks-menu =
+    .label = Mga Mobile Bookmark
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Itago ang Bookmark Sidebar
+           *[other] Ipakita ang Bookmark Sidebar
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Itago ang Bookmark Toolbar
+           *[other] Ipakita ang Bookmark Sidebar
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Alisin ang Bookmark Menu mula sa Toolbar
+           *[other] Idagdag ang Bookmark Menu sa Toolbar
+        }
+bookmarks-search =
+    .label = Hanapin sa mga Bookmark
+bookmarks-tools =
+    .label = Mga Gamit sa Pag-bookmark
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Bookmark Toolbar
+    .accesskey = B
+    .aria-label = Mga bookmark
+bookmarks-toolbar-menu =
+    .label = Bookmark Toolbar
+bookmarks-toolbar-placeholder =
+    .title = Mga nakalagay sa Bookmark Toolbar
+bookmarks-toolbar-placeholder-button =
+    .label = Mga nakalagay sa Bookmark Toolbar
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Mga bookmark
+library-bookmarks-bookmark-this-page =
+    .label = i-Bookmark ang Pahinang Ito
+library-bookmarks-bookmark-edit =
+    .label = i-Edit ang bookmark na ito
+
+## More items
+
+more-menu-go-offline =
+    .label = Magtrabaho nang Offline
+    .accesskey = k

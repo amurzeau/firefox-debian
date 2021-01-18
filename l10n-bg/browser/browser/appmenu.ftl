@@ -13,15 +13,26 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = Нов прозорец
+appmenuitem-new-private-window =
+    .label = Поверителен прозорец
+
+## Zoom and Fullscreen Controls
+
 appmenuitem-zoom-enlarge =
     .label = Увеличаване
 appmenuitem-zoom-reduce =
     .label = Намаляване
+appmenuitem-fullscreen =
+    .label = Цял екран
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Синхронизиране
+appmenuitem-save-page =
+    .label = Запазване като…
 
 ## What's New panel in App menu.
 

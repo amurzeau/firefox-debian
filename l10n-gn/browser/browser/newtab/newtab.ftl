@@ -8,6 +8,9 @@
 newtab-page-title = Tendayke Pyahu
 newtab-settings-button =
     .title = Eñemomba’e ne Tendayke Pyahu roguére
+newtab-personalize-button-label = Ñemomba’e
+    .title = Eñemomba’e tendayke pyahúre
+    .aria-label = Eñemomba’e tendayke pyahúre
 
 ## Search box component.
 
@@ -206,3 +209,27 @@ newtab-pocket-cta-text = Eñongatu umi eipotáva tembiasakue { -pocket-brand-nam
 
 newtab-error-fallback-info = Ema’ẽ, mba’épa osẽvai henyhẽnguévo ko tetepy.
 newtab-error-fallback-refresh-link = Kuatiarogue mbopiro’y eñepyrũjey hag̃ua
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Jeike pya’eha
+newtab-custom-shortcuts-subtitle = Tenda eñongatúva térã eikeha
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } Mba’erysýi
+       *[other] { $num } Mba’erysyikuéra
+    }
+newtab-custom-sponsored-sites = Jeike pya’eha jehepyme’ẽpyre
+newtab-custom-pocket-title = { -pocket-brand-name } oñe’ẽporãha
+newtab-custom-pocket-subtitle = Tetepy iporãva { -pocket-brand-name } oiporavopyre, { -brand-product-name } mba’éva pegua
+newtab-custom-pocket-sponsored = Tembiasakue jehepyme’ẽguáva
+newtab-custom-recent-title = Tembiapo ramovegua
+newtab-custom-recent-subtitle = Tenda jeporavo ha tetepy ramovegua
+newtab-custom-close-button = Mboty
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Mba’epehẽ
+newtab-custom-snippets-subtitle = Ñemoñe’ẽ ha marandu { -vendor-short-name } ha { -brand-product-name } rehegua
+newtab-custom-settings = Eñangareko hetave ñembohekóre

@@ -10,11 +10,22 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = Nuwe venster
+appmenuitem-new-private-window =
+    .label = Nuwe private venster
+
+## Zoom and Fullscreen Controls
+
+appmenuitem-fullscreen =
+    .label = Volskerm
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Sinkroniseer nou
+appmenuitem-save-page =
+    .label = Stoor bladsy as…
 
 ## What's New panel in App menu.
 

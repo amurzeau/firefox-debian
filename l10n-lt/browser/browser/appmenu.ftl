@@ -13,20 +13,30 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = Naujas langas
+appmenuitem-new-private-window =
+    .label = Naujas privataus naršymo langas
+
+## Zoom and Fullscreen Controls
+
 appmenuitem-zoom-enlarge =
     .label = Padidinti
 appmenuitem-zoom-reduce =
     .label = Sumažinti
+appmenuitem-fullscreen =
+    .label = Visas ekranas
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Sinchronizuoti dabar
+appmenuitem-save-page =
+    .label = Įrašyti kaip…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Kas naujo
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

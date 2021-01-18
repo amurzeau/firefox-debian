@@ -25,6 +25,9 @@ printui-range-start = Fra
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = til
+printui-page-custom-range-input =
+    .aria-label = Indtast tilpasset sideinterval
+    .placeholder = Fx 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Kopier
 printui-orientation = Orientering
@@ -48,6 +51,7 @@ printui-duplex-checkbox = Udskriv på begge sider
 printui-options = Indstillinger
 printui-headers-footers-checkbox = Print sidehoveder og sidefødder
 printui-backgrounds-checkbox = Udskriv baggrunde
+printui-selection-checkbox = Udskriv kun det markerede
 printui-color-mode-label = Farvetilstand
 printui-color-mode-color = Farve
 printui-color-mode-bw = Sort-hvid
@@ -56,19 +60,29 @@ printui-margins-default = Standard
 printui-margins-min = Minimum
 printui-margins-none = Ingen
 printui-margins-custom = Tilpasset
+printui-margins-custom-inches = Tilpasset (tommer)
 printui-margins-custom-top = Top
+printui-margins-custom-top-inches = Top (tommer)
 printui-margins-custom-bottom = Bund
+printui-margins-custom-bottom-inches = Bund (tommer)
 printui-margins-custom-left = Venstre
+printui-margins-custom-left-inches = Venstre (tommer)
 printui-margins-custom-right = Højre
+printui-margins-custom-right-inches = Højre (tommer)
 printui-system-dialog-link = Udskriv ved brug af system-dialogen…
 printui-primary-button = Udskriv
 printui-primary-button-save = Gem
 printui-cancel-button = Annuller
+printui-close-button = Luk
 printui-loading = Forbereder forhåndsvisning
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Vis udskrift
+printui-pages-per-sheet = Sider pr. ark
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Udskriver…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

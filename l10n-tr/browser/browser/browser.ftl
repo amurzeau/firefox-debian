@@ -503,3 +503,71 @@ fullscreen-exit-mac-button = Tam ekrandan çık (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> işaretçinizi kontrol ediyor. Kontrolü geri almak için Esc tuşuna basın.
 pointerlock-warning-no-domain = Bu belge işaretçinizi kontrol ediyor. Kontrolü geri almak için Esc tuşuna basın.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Tüm yer imlerini göster
+bookmarks-recent-bookmarks =
+    .value = Yer imlerine yeni eklenenler
+bookmarks-toolbar-chevron =
+    .tooltiptext = Daha fazla yer imi göster
+bookmarks-sidebar-content =
+    .aria-label = Yer imleri
+bookmarks-menu-button =
+    .label = Yer imleri menüsü
+bookmarks-other-bookmarks-menu =
+    .label = Diğer yer imleri
+bookmarks-mobile-bookmarks-menu =
+    .label = Mobil yer imleri
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Yer imleri kenar çubuğunu gizle
+           *[other] Yer imleri kenar çubuğunu göster
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Yer imleri kenar çubuğunu gizle
+           *[other] Yer imleri araç çubuğunu göster
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Yer imleri menüsünü araç çubuğundan çıkar
+           *[other] Yer imleri menüsünü araç çubuğuna ekle
+        }
+bookmarks-search =
+    .label = Yer imlerinde ara
+bookmarks-tools =
+    .label = Yer imi araçları
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Yer imleri araç çubuğu
+    .accesskey = Y
+    .aria-label = Yer imleri
+bookmarks-toolbar-menu =
+    .label = Yer imleri araç çubuğu
+bookmarks-toolbar-placeholder =
+    .title = Yer imleri araç çubuğu öğeleri
+bookmarks-toolbar-placeholder-button =
+    .label = Yer imleri araç çubuğu öğeleri
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Yer imleri
+library-bookmarks-bookmark-this-page =
+    .label = Bu sayfayı yer imlerine ekle
+library-bookmarks-bookmark-edit =
+    .label = Bu yer imini düzenle
+library-recent-activity-label = Son etkinlikler
+
+## More items
+
+more-menu-go-offline =
+    .label = Çevrimdışı çalış
+    .accesskey = d

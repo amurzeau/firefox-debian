@@ -13,20 +13,30 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = కొత్త విండో
+appmenuitem-new-private-window =
+    .label = కొత్త ఆంతరంగిక విండో
+
+## Zoom and Fullscreen Controls
+
 appmenuitem-zoom-enlarge =
     .label = పెద్దగించు
 appmenuitem-zoom-reduce =
     .label = చిన్నగించు
+appmenuitem-fullscreen =
+    .label = నిండు తెర
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = ఇప్పుడు సింక్ చేయి
+appmenuitem-save-page =
+    .label = పేజీని ఇలా భద్రపరచు…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = కొత్తవి ఏమిటి
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

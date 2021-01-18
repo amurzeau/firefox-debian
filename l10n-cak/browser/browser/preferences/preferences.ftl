@@ -500,6 +500,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Taq ruxaq yalan ye'atz'ët
 home-prefs-topsites-by-option-sponsored =
     .label = Nïm taq Ruxaq Eto'on
+home-prefs-shortcuts-header =
+    .label = Chojmin Okem
+home-prefs-shortcuts-description = Taq ruxaq xe'ayäk o xe'atz'ët
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Xto' chojmin okem
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -507,6 +512,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Chilab'en ruma { $provider }
 home-prefs-recommended-by-description-update = Man relik ta chi rupam chijun ri ajk'amaya'l, to'on ruma { $provider }
+home-prefs-recommended-by-description-new = Cha'on rupam cha'on ruma { $provider }, rach'ala'ïl { -brand-product-name }
 
 ##
 
@@ -515,8 +521,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = To'on taq B'anob'äl
 home-prefs-highlights-header =
     .label = Ya'on kiq'ij
-home-prefs-recent-activity-header =
-    .label = K'ak'a' samaj
 home-prefs-highlights-description = Jun rucha'onem ruxaq, ri xayäk o xatz'ët
 home-prefs-highlights-option-visited-pages =
     .label = Taq Ruxaq Etz'eton
@@ -526,6 +530,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = K'a B'a' Keqasäx
 home-prefs-highlights-option-saved-to-pocket =
     .label = Taq Ruxaq Eyakon pa { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = K'ak'a' samaj
+home-prefs-recent-activity-description = Jun cha'on taq ruxaq chuqa' k'ak'a' rupam
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -533,6 +540,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Taq pir
 home-prefs-snippets-description = Kik'exoj { -vendor-short-name } chuqa' { -brand-product-name }
+home-prefs-snippets-description-new = Taq runa'oj chuqa' taq rutzijol { -vendor-short-name } chuqa' { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -924,9 +932,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Kejaq ruwi'
     .accesskey = K
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Taq chojokem
+    .accesskey = c
 addressbar-locbar-topsites-option =
     .label = Jeb'ël taq ruxaq
     .accesskey = J
+addressbar-locbar-engines-option =
+    .label = Rusamajel taq kanob'äl
+    .accesskey = a
 addressbar-suggestions-settings = Kek'ex ri taq kajowab'al ri taq kichilab'enik kisamajinel taq kanob'äl
 
 ## Privacy Section - Content Blocking

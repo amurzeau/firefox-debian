@@ -25,6 +25,9 @@ printui-range-start = Από
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = έως
+printui-page-custom-range-input =
+    .aria-label = Εισάγετε προσαρμοσμένο εύρος σελίδων
+    .placeholder = π.χ. 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Αντίγραφα
 printui-orientation = Προσανατολισμός
@@ -48,6 +51,7 @@ printui-duplex-checkbox = Εκτύπωση και στις δυο πλευρές
 printui-options = Επιλογές
 printui-headers-footers-checkbox = Εκτύπωση κεφαλίδων και υποσέλιδων
 printui-backgrounds-checkbox = Εκτύπωση παρασκηνίου
+printui-selection-checkbox = Εκτύπωση επιλογής μόνο
 printui-color-mode-label = Λειτουργία χρώματος
 printui-color-mode-color = Έγχρωμο
 printui-color-mode-bw = Ασπρόμαυρο
@@ -56,19 +60,29 @@ printui-margins-default = Προεπιλογή
 printui-margins-min = Ελάχιστα
 printui-margins-none = Χωρίς
 printui-margins-custom = Προσαρμοσμένο
+printui-margins-custom-inches = Προσαρμογή (ίντσες)
 printui-margins-custom-top = Πάνω
+printui-margins-custom-top-inches = Πάνω (ίντσες)
 printui-margins-custom-bottom = Κάτω
+printui-margins-custom-bottom-inches = Κάτω (ίντσες)
 printui-margins-custom-left = Αριστερά
+printui-margins-custom-left-inches = Αριστερά (ίντσες)
 printui-margins-custom-right = Δεξιά
+printui-margins-custom-right-inches = Δεξιά (ίντσες)
 printui-system-dialog-link = Εκτύπωση μέσω διαλόγου συστήματος…
 printui-primary-button = Εκτύπωση
 printui-primary-button-save = Αποθήκευση
 printui-cancel-button = Ακύρωση
+printui-close-button = Κλείσιμο
 printui-loading = Προετοιμασία προεπισκόπησης
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Προεπισκόπηση εκτύπωσης
+printui-pages-per-sheet = Σελίδες ανά φύλλο
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Εκτύπωση…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

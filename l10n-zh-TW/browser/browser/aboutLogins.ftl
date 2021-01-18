@@ -168,7 +168,11 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = 要移除這筆登入資訊嗎？
 confirm-delete-dialog-message = 此動作無法復原。
 about-logins-confirm-remove-dialog-confirm-button = 移除
-about-logins-confirm-remove-all-dialog-confirm-button = 移除全部
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] 移除
+       *[other] 移除全部
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] 好，移除這筆登入資訊
@@ -194,6 +198,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = 匯出登入資訊與密碼
 about-logins-confirm-export-dialog-message = 您的密碼將以可閱讀的明文格式（例如 BadP@ssw0rd）儲存，任何能夠開啟檔案的人都能得知密碼內容。
 about-logins-confirm-export-dialog-confirm-button = 匯出…
+about-logins-alert-import-title = 匯入完成
+about-logins-alert-import-message = 檢視詳細的匯入摘要
 confirm-discard-changes-dialog-title = 要放棄未儲存的變更嗎？
 confirm-discard-changes-dialog-message = 將失去所有未儲存的變更。
 confirm-discard-changes-dialog-confirm-button = 捨棄
@@ -255,3 +261,26 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV 文件
        *[other] CSV 檔案
     }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = 匯入完成
+about-logins-import-dialog-items-added =
+    { $count ->
+       *[other] <span>新增的登入資訊:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+       *[other] <span>更新的現有登入資訊:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+       *[other] <span>重複的登入資訊:</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">（未匯入）</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+       *[other] <span>錯誤:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">（未匯入）</span>
+    }
+about-logins-import-dialog-done = 完成

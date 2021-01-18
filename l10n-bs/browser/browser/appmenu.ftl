@@ -13,20 +13,30 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = Novi prozor
+appmenuitem-new-private-window =
+    .label = Novi privatni prozor
+
+## Zoom and Fullscreen Controls
+
 appmenuitem-zoom-enlarge =
     .label = Uvećaj
 appmenuitem-zoom-reduce =
     .label = Umanji
+appmenuitem-fullscreen =
+    .label = Prikaz preko cijelog ekrana
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Sinhronizuj sada
+appmenuitem-save-page =
+    .label = Spasi stranicu kao…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Šta je novo
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

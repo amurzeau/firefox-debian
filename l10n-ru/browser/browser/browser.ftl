@@ -172,6 +172,7 @@ page-action-remove-extension =
 page-action-send-tabs-panel =
     .label =
         { $tabCount ->
+            [1] Отправить вкладку на устройство
             [one] Отправить { $tabCount } вкладку на устройство
             [few] Отправить { $tabCount } вкладки на устройство
            *[many] Отправить { $tabCount } вкладок на устройство
@@ -179,6 +180,7 @@ page-action-send-tabs-panel =
 page-action-send-tabs-urlbar =
     .tooltiptext =
         { $tabCount ->
+            [1] Отправить вкладку на устройство
             [one] Отправить { $tabCount } вкладку на устройство
             [few] Отправить { $tabCount } вкладки на устройство
            *[many] Отправить { $tabCount } вкладок на устройство
@@ -227,7 +229,7 @@ full-screen-exit =
 
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
-search-one-offs-with-title = В этот раз искать с помощью:
+search-one-offs-with-title = В этот раз искать в:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -258,11 +260,11 @@ search-one-offs-engine-with-alias =
 ##    bookmarks).
 
 search-one-offs-bookmarks =
-    .tooltiptext = Закладки ({ $restrict })
+    .tooltiptext = Закладках ({ $restrict })
 search-one-offs-tabs =
-    .tooltiptext = Вкладки ({ $restrict })
+    .tooltiptext = Вкладках ({ $restrict })
 search-one-offs-history =
-    .tooltiptext = Журнал ({ $restrict })
+    .tooltiptext = Журнале ({ $restrict })
 
 ## Bookmark Panel
 
@@ -370,7 +372,7 @@ popup-screen-sharing-not-now =
 popup-screen-sharing-never =
     .label = Никогда не разрешать
     .accesskey = и
-popup-silence-notifications-checkbox = Отключить уведомления от { -brand-short-name } если к нему предоставлен доступ
+popup-silence-notifications-checkbox = Отключить уведомления { -brand-short-name }, когда к нему предоставлен доступ
 popup-silence-notifications-checkbox-warning = { -brand-short-name } не будет отображать уведомления, пока к нему предоставлен доступ.
 
 ## WebRTC window or screen share tab switch warning
@@ -476,11 +478,11 @@ urlbar-result-action-before-tabtosearch-other = Нажмите Tab для пои
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
-urlbar-result-action-tabtosearch-web = Найдите в { $engine } прямо из адресной строки
+urlbar-result-action-tabtosearch-web = Ищите в { $engine } прямо в адресной строке
 # Variables
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
-urlbar-result-action-tabtosearch-other-engine = Найдите в { $engine } прямо из адресной строки
+urlbar-result-action-tabtosearch-other-engine = Ищите на { $engine } прямо в адресной строке
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -503,5 +505,73 @@ fullscreen-exit-mac-button = Выйти из полноэкранного реж
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
-pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> контролирует ваш указатель мыши. Нажмите Esc, чтобы вернуть себе контроль.
-pointerlock-warning-no-domain = Этот документ контролирует ваш указатель мыши. Нажмите Esc, чтобы вернуть себе контроль.
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> контролирует ваш курсор. Нажмите Esc, чтобы вернуть себе контроль.
+pointerlock-warning-no-domain = Этот документ контролирует ваш курсор. Нажмите Esc, чтобы вернуть себе контроль.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Показать все закладки
+bookmarks-recent-bookmarks =
+    .value = Недавно добавленные закладки
+bookmarks-toolbar-chevron =
+    .tooltiptext = Показать больше закладок
+bookmarks-sidebar-content =
+    .aria-label = Закладки
+bookmarks-menu-button =
+    .label = Меню закладок
+bookmarks-other-bookmarks-menu =
+    .label = Другие закладки
+bookmarks-mobile-bookmarks-menu =
+    .label = Мобильные закладки
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Скрыть боковую панель закладок
+           *[other] Показать боковую панель закладок
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Скрыть панель закладок
+           *[other] Показать панель закладок
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Удалить меню закладок с панели
+           *[other] Добавить меню закладок на панель
+        }
+bookmarks-search =
+    .label = Поиск закладок
+bookmarks-tools =
+    .label = Инструменты закладок
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Панель закладок
+    .accesskey = з
+    .aria-label = Закладки
+bookmarks-toolbar-menu =
+    .label = Панель закладок
+bookmarks-toolbar-placeholder =
+    .title = Элементы панели закладок
+bookmarks-toolbar-placeholder-button =
+    .label = Элементы панели закладок
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Закладки
+library-bookmarks-bookmark-this-page =
+    .label = Добавить страницу в закладки
+library-bookmarks-bookmark-edit =
+    .label = Редактировать эту закладку
+library-recent-activity-label = Последние действия
+
+## More items
+
+more-menu-go-offline =
+    .label = Работать автономно
+    .accesskey = б

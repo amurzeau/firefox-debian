@@ -501,3 +501,71 @@ fullscreen-exit-mac-button = יציאה ממסך מלא (Esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = לאתר בכתובת <span data-l10n-name="domain">{ $domain }</span> יש שליטה על הסמן שלך. לחיצה על ESC תחזיר את השליטה אליך.
 pointerlock-warning-no-domain = למסמך זה יש שליטה על הסמן שלך. לחיצה על ESC תחזיר את השליטה אליך.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = הצגת כל הסימניות
+bookmarks-recent-bookmarks =
+    .value = סימניות שנוספו לאחרונה
+bookmarks-toolbar-chevron =
+    .tooltiptext = הצגת סימניות נוספות
+bookmarks-sidebar-content =
+    .aria-label = סימניות
+bookmarks-menu-button =
+    .label = תפריט סימניות
+bookmarks-other-bookmarks-menu =
+    .label = סימניות אחרות
+bookmarks-mobile-bookmarks-menu =
+    .label = סימניות מהנייד
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] הסתרת סרגל הצד סימניות
+           *[other] הצגת סרגל הצד
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] הסתרת סרגל הכלים סימניות
+           *[other] הצגת סרגל הכלים סימניות
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] הסרת תפריט הסימניות מסרגל הכלים
+           *[other] הוספת תפריט הסימניות לסרגל הכלים
+        }
+bookmarks-search =
+    .label = חיפוש בסימניות
+bookmarks-tools =
+    .label = כלי סימניות
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = סרגל כלים סימניות
+    .accesskey = ס
+    .aria-label = סימניות
+bookmarks-toolbar-menu =
+    .label = סרגל כלים סימניות
+bookmarks-toolbar-placeholder =
+    .title = פריטי סרגל כלים סימניות
+bookmarks-toolbar-placeholder-button =
+    .label = פריטי סרגל כלים סימניות
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = סימניות
+library-bookmarks-bookmark-this-page =
+    .label = יצירת סימנייה לדף זה
+library-bookmarks-bookmark-edit =
+    .label = עריכת סימנייה זו
+library-recent-activity-label = פעילות אחרונה
+
+## More items
+
+more-menu-go-offline =
+    .label = עבודה לא־מקוונת
+    .accesskey = ל

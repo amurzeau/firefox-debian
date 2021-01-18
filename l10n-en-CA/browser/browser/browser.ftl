@@ -236,7 +236,7 @@ search-one-offs-context-open-new-tab =
     .label = Search in New Tab
     .accesskey = T
 search-one-offs-context-set-as-default =
-    .label = Set As Default Search Engine
+    .label = Set as Default Search Engine
     .accesskey = D
 search-one-offs-context-set-as-default-private =
     .label = Set as Default Search Engine for Private Windows
@@ -346,9 +346,6 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
-    .label = Import bookmarks…
-    .tooltiptext = Copy bookmarks from another browser to { -brand-short-name }.
 
 ## WebRTC Pop-up notifications
 
@@ -500,3 +497,70 @@ fullscreen-exit-mac-button = Exit Full Screen (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> has control of your pointer. Press Esc to take back control.
 pointerlock-warning-no-domain = This document has control of your pointer. Press Esc to take back control.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Show All Bookmarks
+bookmarks-recent-bookmarks =
+    .value = Recently Bookmarked
+bookmarks-toolbar-chevron =
+    .tooltiptext = Show more bookmarks
+bookmarks-sidebar-content =
+    .aria-label = Bookmarks
+bookmarks-menu-button =
+    .label = Bookmarks Menu
+bookmarks-other-bookmarks-menu =
+    .label = Other Bookmarks
+bookmarks-mobile-bookmarks-menu =
+    .label = Mobile Bookmarks
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Hide Bookmarks Sidebar
+           *[other] View Bookmarks Sidebar
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Hide Bookmarks Toolbar
+           *[other] View Bookmarks Toolbar
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Remove Bookmarks Menu from Toolbar
+           *[other] Add Bookmarks Menu to Toolbar
+        }
+bookmarks-search =
+    .label = Search Bookmarks
+bookmarks-tools =
+    .label = Bookmarking Tools
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Bookmarks Toolbar
+    .accesskey = B
+    .aria-label = Bookmarks
+bookmarks-toolbar-menu =
+    .label = Bookmarks Toolbar
+bookmarks-toolbar-placeholder =
+    .title = Bookmarks Toolbar Items
+bookmarks-toolbar-placeholder-button =
+    .label = Bookmarks Toolbar Items
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Bookmarks
+library-bookmarks-bookmark-this-page =
+    .label = Bookmark This Page
+library-bookmarks-bookmark-edit =
+    .label = Edit This Bookmark
+
+## More items
+
+more-menu-go-offline =
+    .label = Work Offline
+    .accesskey = k

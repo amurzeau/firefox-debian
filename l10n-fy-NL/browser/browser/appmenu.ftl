@@ -13,20 +13,30 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = Nij finster
+appmenuitem-new-private-window =
+    .label = Nij priveefinster
+
+## Zoom and Fullscreen Controls
+
 appmenuitem-zoom-enlarge =
     .label = Ynzoome
 appmenuitem-zoom-reduce =
     .label = Utzoome
+appmenuitem-fullscreen =
+    .label = Folslein skerm
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = No syngronisearje
+appmenuitem-save-page =
+    .label = Side bewarje as…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Wat is der nij
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

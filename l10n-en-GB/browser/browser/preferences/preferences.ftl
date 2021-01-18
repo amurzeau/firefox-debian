@@ -270,7 +270,7 @@ download-always-ask-where =
     .label = Always ask you where to save files
     .accesskey = A
 applications-header = Applications
-applications-description = Choose how { -brand-short-name } handles the files you download from the Web or the applications you use while browsing.
+applications-description = Choose how { -brand-short-name } handles the files you download from the web or the applications you use while browsing.
 applications-filter =
     .placeholder = Search file types or applications
 applications-type-column =
@@ -447,7 +447,7 @@ browsing-cfr-recommendations-learn-more = Learn more
 
 network-settings-title = Network Settings
 network-proxy-connection-description = Configure how { -brand-short-name } connects to the internet.
-network-proxy-connection-learn-more = Learn More
+network-proxy-connection-learn-more = Learn more
 network-proxy-connection-settings =
     .label = Settings…
     .accesskey = S
@@ -500,6 +500,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = The sites you visit most
 home-prefs-topsites-by-option-sponsored =
     .label = Sponsored Top Sites
+home-prefs-shortcuts-header =
+    .label = Shortcuts
+home-prefs-shortcuts-description = Sites you save or visit
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Sponsored shortcuts
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -507,6 +512,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Recommended by { $provider }
 home-prefs-recommended-by-description-update = Exceptional content from across the web, curated by { $provider }
+home-prefs-recommended-by-description-new = Exceptional content curated by { $provider }, part of the { -brand-product-name } family
 
 ##
 
@@ -515,8 +521,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsored Stories
 home-prefs-highlights-header =
     .label = Highlights
-home-prefs-recent-activity-header =
-    .label = Recent activity
 home-prefs-highlights-description = A selection of sites that you’ve saved or visited
 home-prefs-highlights-option-visited-pages =
     .label = Visited Pages
@@ -526,6 +530,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Most Recent Download
 home-prefs-highlights-option-saved-to-pocket =
     .label = Pages Saved to { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Recent activity
+home-prefs-recent-activity-description = A selection of recent sites and content
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -533,6 +540,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Snippets
 home-prefs-snippets-description = Updates from { -vendor-short-name } and { -brand-product-name }
+home-prefs-snippets-description-new = Tips and news from { -vendor-short-name } and { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -620,7 +628,7 @@ containers-remove-button =
 ## Firefox Account - Signed out. Note that "Sync" and "Firefox Account" are now
 ## more discrete ("signed in" no longer means "and sync is connected").
 
-sync-signedout-caption = Take your Web with you
+sync-signedout-caption = Take Your Web With You
 sync-signedout-description = Synchronise your bookmarks, history, tabs, passwords, add-ons, and preferences across all your devices.
 sync-signedout-account-signin2 =
     .label = Sign in to { -sync-brand-short-name }…
@@ -642,7 +650,7 @@ sync-profile-picture =
 sync-sign-out =
     .label = Sign Out ...
     .accesskey = g
-sync-manage-account = Manage Account
+sync-manage-account = Manage account
     .accesskey = o
 sync-signedin-unverified = { $email } is not verified.
 sync-signedin-login-failure = Please sign in to reconnect { $email }
@@ -704,7 +712,7 @@ sync-engine-history =
     .label = History
     .accesskey = r
 sync-engine-tabs =
-    .label = Open Tabs
+    .label = Open tabs
     .tooltiptext = A list of what’s open on all synchronised devices
     .accesskey = T
 sync-engine-logins-passwords =
@@ -924,9 +932,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Open tabs
     .accesskey = O
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Shortcuts
+    .accesskey = S
 addressbar-locbar-topsites-option =
     .label = Top sites
     .accesskey = T
+addressbar-locbar-engines-option =
+    .label = Search engines
+    .accesskey = a
 addressbar-suggestions-settings = Change preferences for search engine suggestions
 
 ## Privacy Section - Content Blocking
@@ -1063,7 +1078,7 @@ collection-health-report-telemetry-disabled-link = Learn more
 collection-health-report =
     .label = Allow { -brand-short-name } to send technical and interaction data to { -vendor-short-name }
     .accesskey = r
-collection-health-report-link = Learn More
+collection-health-report-link = Learn more
 collection-studies =
     .label = Allow { -brand-short-name } to install and run studies
 collection-studies-link = View { -brand-short-name } studies

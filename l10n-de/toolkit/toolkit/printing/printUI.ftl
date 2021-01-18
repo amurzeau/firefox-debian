@@ -25,6 +25,9 @@ printui-range-start = Von
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = bis
+printui-page-custom-range-input =
+    .aria-label = Benutzerdefinierten Seitenbereich eingeben
+    .placeholder = z.B. 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Kopien
 printui-orientation = Ausrichtung
@@ -48,6 +51,7 @@ printui-duplex-checkbox = Beidseitig bedrucken
 printui-options = Einstellungen
 printui-headers-footers-checkbox = Kopf- und Fußzeilen drucken
 printui-backgrounds-checkbox = Hintergrund drucken
+printui-selection-checkbox = Nur Auswahl drucken
 printui-color-mode-label = Farbmodus
 printui-color-mode-color = Farbe
 printui-color-mode-bw = Schwarz-weiß
@@ -56,19 +60,29 @@ printui-margins-default = Standard
 printui-margins-min = Minimal
 printui-margins-none = Keine
 printui-margins-custom = Benutzerdefiniert
+printui-margins-custom-inches = Benutzerdefiniert (Zoll)
 printui-margins-custom-top = Oben
+printui-margins-custom-top-inches = Oberseite (Zoll)
 printui-margins-custom-bottom = Unten
+printui-margins-custom-bottom-inches = Unterseite (Zoll)
 printui-margins-custom-left = Links
+printui-margins-custom-left-inches = Links (Zoll)
 printui-margins-custom-right = Rechts
+printui-margins-custom-right-inches = Rechts (Zoll)
 printui-system-dialog-link = Mit Systemdialog drucken…
 printui-primary-button = Drucken
 printui-primary-button-save = Speichern
 printui-cancel-button = Abbrechen
+printui-close-button = Schließen
 printui-loading = Vorschau wird vorbereitet
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Druckvorschau
+printui-pages-per-sheet = Seiten pro Blatt
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Drucken…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

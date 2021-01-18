@@ -496,6 +496,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = 您经常访问的网站
 home-prefs-topsites-by-option-sponsored =
     .label = 赞助商网站
+home-prefs-shortcuts-header =
+    .label = 快捷方式
+home-prefs-shortcuts-description = 您保存或访问过的网站
+home-prefs-shortcuts-by-option-sponsored =
+    .label = 赞助商网站
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -503,6 +508,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = { $provider } 推荐
 home-prefs-recommended-by-description-update = 由 { $provider } 整理提供的网络精选内容
+home-prefs-recommended-by-description-new = 由 { -brand-product-name } 旗下 { $provider } 策划的特别内容
 
 ##
 
@@ -511,8 +517,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = 赞助内容
 home-prefs-highlights-header =
     .label = 集锦
-home-prefs-recent-activity-header =
-    .label = 近期动态
 home-prefs-highlights-description = 您访问过或保存过的网站精选
 home-prefs-highlights-option-visited-pages =
     .label = 访问过的页面
@@ -522,6 +526,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = 最近下载
 home-prefs-highlights-option-saved-to-pocket =
     .label = 保存在 { -pocket-brand-name } 的页面
+home-prefs-recent-activity-header =
+    .label = 近期动态
+home-prefs-recent-activity-description = 近期访问的网站与内容精选
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -529,6 +536,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = 只言片语
 home-prefs-snippets-description = 来自 { -vendor-short-name } 和 { -brand-product-name } 的快讯
+home-prefs-snippets-description-new = 来自 { -vendor-short-name } 和 { -brand-product-name } 的使用窍门与快讯
 home-prefs-sections-rows-option =
     .label = { $num } 行
 
@@ -914,11 +922,18 @@ addressbar-locbar-bookmarks-option =
     .label = 书签
     .accesskey = k
 addressbar-locbar-openpage-option =
-    .label = 已打开的标签页
+    .label = 打开的标签页
     .accesskey = O
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = 快捷方式
+    .accesskey = S
 addressbar-locbar-topsites-option =
     .label = 常用网站
     .accesskey = T
+addressbar-locbar-engines-option =
+    .label = 搜索引擎
+    .accesskey = a
 addressbar-suggestions-settings = 更改搜索引擎建议的首选项
 
 ## Privacy Section - Content Blocking

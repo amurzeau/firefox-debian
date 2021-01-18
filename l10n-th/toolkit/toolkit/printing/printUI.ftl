@@ -63,11 +63,16 @@ printui-system-dialog-link = พิมพ์โดยใช้กล่องโ
 printui-primary-button = พิมพ์
 printui-primary-button-save = บันทึก
 printui-cancel-button = ยกเลิก
+printui-close-button = ปิด
 printui-loading = กำลังเตรียมตัวอย่าง
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = ตัวอย่างก่อนพิมพ์
+printui-pages-per-sheet = หน้าต่อแผ่น
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = กำลังพิมพ์…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

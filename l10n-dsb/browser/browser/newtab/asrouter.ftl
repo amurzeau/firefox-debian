@@ -63,7 +63,7 @@ cfr-doorhanger-extension-total-users =
         [few] { $total } wužywarje
        *[other] { $total } wužywarjow
     }
-cfr-doorhanger-pintab-description = Mějśo lažki pśistup k swójim nejwěcej wužywane sedła. Źaržćo sedła w rejtariku wócynjone (samo gaž znowego startujośo)
+cfr-doorhanger-pintab-description = Mějśo lažki pśistup k swójim nejcesćej wužywane sedła. Źaržćo sedła w rejtariku wócynjone (samo gaž znowego startujośo)
 
 ## These messages are steps on how to use the feature and are shown together.
 
@@ -128,6 +128,9 @@ cfr-whatsnew-lockwise-take-link-text = Wobstarajśo se nałoženje
 
 cfr-whatsnew-searchbar-title = Pišćo mjenjej a namakajśo wěcej z adresowym pólom
 cfr-whatsnew-searchbar-body-topsites = Wubjeŕśo něnto jadnorje adresowe pólo a  kašćik z wótkazami na waše nejlubše sedła se wócynijo.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Lupowy symbol
 
 ## Picture-in-Picture
@@ -286,3 +289,12 @@ cfr-whatsnew-media-keys-button = Zgóńśo kak
 ## What's new: Search shortcuts
 
 cfr-whatsnew-search-shortcuts-header = Pytańske skrotconki w adresowem pólu
+cfr-whatsnew-search-shortcuts-body = Něnto, gaž pytnicu abo wěste sedło do adresowego póla zapodawaśo, se módre zwězanje dołojce w pytańskich naraźenjach zjewijo. Wubjeŕśo toś to zwězanje, aby swójo pytanje direktnje z adresowego póla dokóńcył.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Šćit pśed złosnymi supercookiejami
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = Lěpše zastojanje cytańskich zmanjenjow

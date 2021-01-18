@@ -13,20 +13,30 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = 新建窗口
+appmenuitem-new-private-window =
+    .label = 新建隐私窗口
+
+## Zoom and Fullscreen Controls
+
 appmenuitem-zoom-enlarge =
     .label = 放大
 appmenuitem-zoom-reduce =
     .label = 缩小
+appmenuitem-fullscreen =
+    .label = 全屏
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = 立即同步
+appmenuitem-save-page =
+    .label = 另存页面为…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = 新版变化
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

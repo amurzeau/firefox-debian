@@ -169,7 +169,12 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Suprimir aqueste identificant ?
 confirm-delete-dialog-message = Aquesta accion es irreversibla.
 about-logins-confirm-remove-dialog-confirm-button = Suprimir
-about-logins-confirm-remove-all-dialog-confirm-button = Suprimir tot
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] Suprimir
+        [one] Lo suprimir
+       *[other] O suprimir tot
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] Òc-ben, suprimir aqueste identificant
@@ -201,6 +206,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Exportacion dels identificants e senhals
 about-logins-confirm-export-dialog-message = Vòstres senhals seràn salvats jos la forma de tèxt legible (per exemple, « senh4l-f3bl3 ») ; atal qual que siá que pòt dobrir lo fichièr poirà los consultar.
 about-logins-confirm-export-dialog-confirm-button = Exportar…
+about-logins-alert-import-title = Importacion acabada
+about-logins-alert-import-message = Veire lo resumit detalhat de l’importacion
 confirm-discard-changes-dialog-title = Ignorar las modificacions pas enregistradas ?
 confirm-discard-changes-dialog-message = Totas las modificacions pas enregistradas seràn perdudas.
 confirm-discard-changes-dialog-confirm-button = Ignorar
@@ -262,3 +269,26 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Document CSV
        *[other] Fichièr CSV
     }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Importacion acabada
+about-logins-import-dialog-items-added =
+    { $count ->
+       *[other] <span>Identificants novèls aponduts :</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+       *[other] <span>Identificants existents actualizats :</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+       *[other] <span>Identificants en doble trobats :</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(pas importats)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+       *[other] <span>Errors :</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(pas importats)</span>
+    }
+about-logins-import-dialog-done = Acabat

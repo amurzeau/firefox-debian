@@ -8,6 +8,9 @@
 newtab-page-title = 新标签页
 newtab-settings-button =
     .title = 定制您的新标签页
+newtab-personalize-button-label = 个性化
+    .title = 个性化标签页
+    .aria-label = 个性化标签页
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = 在网络上搜索
     .title = 在网络上搜索
     .aria-label = 在网络上搜索
+newtab-search-box-text = 在网上搜索
+newtab-search-box-input =
+    .placeholder = 在网上搜索
+    .aria-label = 在网上搜索
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = 添加搜索引擎
 newtab-topsites-add-topsites-header = 新建常用网站
+newtab-topsites-add-shortcut-header = 新建快捷方式
 newtab-topsites-edit-topsites-header = 编辑常用网站
+newtab-topsites-edit-shortcut-header = 编辑快捷方式
 newtab-topsites-title-label = 标题
 newtab-topsites-title-input =
     .placeholder = 输入标题
@@ -203,3 +212,26 @@ newtab-pocket-cta-text = 将您喜爱的故事保存到 { -pocket-brand-name }�
 
 newtab-error-fallback-info = 哎呀，载入内容时发生错误。
 newtab-error-fallback-refresh-link = 刷新页面以重试。
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = 快捷方式
+newtab-custom-shortcuts-subtitle = 您保存或访问过的网站
+newtab-custom-row-selector =
+    { $num ->
+       *[other] { $num } 行
+    }
+newtab-custom-sponsored-sites = 赞助商网站
+newtab-custom-pocket-title = 由 { -pocket-brand-name } 推荐
+newtab-custom-pocket-subtitle = 由 { -brand-product-name } 旗下 { -pocket-brand-name } 策划的特别内容
+newtab-custom-pocket-sponsored = 赞助内容
+newtab-custom-recent-title = 近期动态
+newtab-custom-recent-subtitle = 近期访问的网站与内容精选
+newtab-custom-close-button = 关闭
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = 只言片语
+newtab-custom-snippets-subtitle = 来自 { -vendor-short-name } 和 { -brand-product-name } 的使用窍门与快讯
+newtab-custom-settings = 管理更多设置

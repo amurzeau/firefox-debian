@@ -8,6 +8,9 @@
 newtab-page-title = לשונית חדשה
 newtab-settings-button =
     .title = התאמה אישית של דף הלשונית החדשה שלך
+newtab-personalize-button-label = התאמה אישית
+    .title = התאמה אישית של דף הלשונית החדשה
+    .aria-label = התאמה אישית של דף הלשונית החדשה
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = חיפוש ברשת
     .title = חיפוש ברשת
     .aria-label = חיפוש ברשת
+newtab-search-box-text = חיפוש ברשת
+newtab-search-box-input =
+    .placeholder = חיפוש ברשת
+    .aria-label = חיפוש ברשת
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = הוספת מנוע חיפוש
 newtab-topsites-add-topsites-header = אתר מוביל חדש
+newtab-topsites-add-shortcut-header = קיצור דרך חדש
 newtab-topsites-edit-topsites-header = עריכת אתר מוביל
+newtab-topsites-edit-shortcut-header = עריכת קיצור דרך
 newtab-topsites-title-label = כותרת
 newtab-topsites-title-input =
     .placeholder = נא להזין כותרת
@@ -197,3 +206,27 @@ newtab-pocket-cta-text = שמירת הסיפורים שאהבת ב־{ -pocket-br
 
 newtab-error-fallback-info = אופס, משהו השתבש בעת טעינת התוכן הזה.
 newtab-error-fallback-refresh-link = נא לרענן את הדף כדי לנסות שוב.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = קיצורי דרך
+newtab-custom-shortcuts-subtitle = אתרים ששמרת או ביקרת בהם
+newtab-custom-row-selector =
+    { $num ->
+        [one] שורה אחת
+       *[other] { $num } שורות
+    }
+newtab-custom-sponsored-sites = קיצורי דרך ממומנים
+newtab-custom-pocket-title = מומלץ על־ידי { -pocket-brand-name }
+newtab-custom-pocket-subtitle = תוכן יוצא דופן שנבחר בקפידה על־ידי { -pocket-brand-name }, חלק ממשפחת { -brand-product-name }
+newtab-custom-pocket-sponsored = סיפורים ממומנים
+newtab-custom-recent-title = פעילות אחרונה
+newtab-custom-recent-subtitle = מבחר של אתרים ותכנים אחרונים
+newtab-custom-close-button = סגירה
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = פתקיות
+newtab-custom-snippets-subtitle = עצות וחדשות מ־{ -vendor-short-name } ו־{ -brand-product-name }
+newtab-custom-settings = ניהול הגדרות נוספות

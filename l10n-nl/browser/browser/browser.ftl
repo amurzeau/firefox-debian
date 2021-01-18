@@ -505,3 +505,71 @@ fullscreen-exit-mac-button = Volledig scherm verlaten (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> heeft de controle over uw aanwijzer. Druk op Esc om de controle weer over te nemen.
 pointerlock-warning-no-domain = Dit document heeft de controle over uw aanwijzer. Druk op Esc om de controle weer over te nemen.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Alle bladwijzers tonen
+bookmarks-recent-bookmarks =
+    .value = Recent aangemaakte bladwijzers
+bookmarks-toolbar-chevron =
+    .tooltiptext = Meer bladwijzers tonen
+bookmarks-sidebar-content =
+    .aria-label = Bladwijzers
+bookmarks-menu-button =
+    .label = Bladwijzermenu
+bookmarks-other-bookmarks-menu =
+    .label = Andere bladwijzers
+bookmarks-mobile-bookmarks-menu =
+    .label = Mobiel-bladwijzers
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Bladwijzerzijbalk verbergen
+           *[other] Bladwijzerzijbalk weergeven
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Bladwijzerwerkbalk verbergen
+           *[other] Bladwijzerwerkbalk weergeven
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Bladwijzermenu verwijderen van werkbalk
+           *[other] Bladwijzermenu toevoegen aan werkbalk
+        }
+bookmarks-search =
+    .label = Bladwijzers doorzoeken
+bookmarks-tools =
+    .label = Bladwijzerhulpmiddelen
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Bladwijzerwerkbalk
+    .accesskey = B
+    .aria-label = Bladwijzers
+bookmarks-toolbar-menu =
+    .label = Bladwijzerwerkbalk
+bookmarks-toolbar-placeholder =
+    .title = Bladwijzerwerkbalkitems
+bookmarks-toolbar-placeholder-button =
+    .label = Bladwijzerwerkbalkitems
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Bladwijzers
+library-bookmarks-bookmark-this-page =
+    .label = Bladwijzer voor deze pagina maken
+library-bookmarks-bookmark-edit =
+    .label = Deze bladwijzer bewerken
+library-recent-activity-label = Recente activiteit
+
+## More items
+
+more-menu-go-offline =
+    .label = Offline werken
+    .accesskey = f

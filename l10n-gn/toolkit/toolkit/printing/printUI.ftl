@@ -25,6 +25,9 @@ printui-range-start = Re
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = g̃uarã
+printui-page-custom-range-input =
+    .aria-label = Emoinge kuatiarogue peteĩva momba’epyre
+    .placeholder = p.ej. 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Monguatiapyre
 printui-orientation = Moma’ẽ
@@ -56,19 +59,29 @@ printui-margins-default = Ijypykue
 printui-margins-min = Michĩvéva
 printui-margins-none = Avave
 printui-margins-custom = Ñemomba’epyre
+printui-margins-custom-inches = Momba’epyre (pulgada)
 printui-margins-custom-top = Yvatevéva
+printui-margins-custom-top-inches = Tuichavéva (pulgada)
 printui-margins-custom-bottom = Michĩvéva
+printui-margins-custom-bottom-inches = Michĩvéva (pulgada)
 printui-margins-custom-left = Asugua
+printui-margins-custom-left-inches = Asu (pulgada)
 printui-margins-custom-right = Akatuagua
+printui-margins-custom-right-inches = Akatúa (pulgada)
 printui-system-dialog-link = Emonguatia eipurúvo apopyvusu rovetã…
 printui-primary-button = Ñemonguatia
 printui-primary-button-save = Ñongatu
 printui-cancel-button = Heja
+printui-close-button = Mboty
 printui-loading = Ehecháta jehechaha ñepyrũ
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Jehecha ypy ñemonguatia
+printui-pages-per-sheet = Kuatiarogue kuatiápe
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Ñemonguatia…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

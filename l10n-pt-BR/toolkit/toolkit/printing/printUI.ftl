@@ -25,6 +25,9 @@ printui-range-start = De
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = até
+printui-page-custom-range-input =
+    .aria-label = Digite um intervalo de páginas personalizado
+    .placeholder = exemplo: 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Cópias
 printui-orientation = Orientação
@@ -48,6 +51,7 @@ printui-duplex-checkbox = Imprimir em ambos os lados
 printui-options = Opções
 printui-headers-footers-checkbox = Imprimir cabeçalhos e rodapés
 printui-backgrounds-checkbox = Imprimir planos de fundo
+printui-selection-checkbox = Imprimir somente a seleção
 printui-color-mode-label = Modo de cor
 printui-color-mode-color = Colorido
 printui-color-mode-bw = Preto e branco
@@ -56,19 +60,29 @@ printui-margins-default = Padrão
 printui-margins-min = Mínimo
 printui-margins-none = Nenhuma
 printui-margins-custom = Personalizado
+printui-margins-custom-inches = Personalizado (polegadas)
 printui-margins-custom-top = Acima
+printui-margins-custom-top-inches = Acima (polegadas)
 printui-margins-custom-bottom = Abaixo
+printui-margins-custom-bottom-inches = Abaixo (polegadas)
 printui-margins-custom-left = Esquerda
+printui-margins-custom-left-inches = Esquerda (polegadas)
 printui-margins-custom-right = Direita
+printui-margins-custom-right-inches = Direita (polegadas)
 printui-system-dialog-link = Imprimir usando o diálogo do sistema…
 printui-primary-button = Imprimir
 printui-primary-button-save = Salvar
 printui-cancel-button = Cancelar
+printui-close-button = Fechar
 printui-loading = Preparando visão prévia
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Visualizar impressão
+printui-pages-per-sheet = Páginas por folha
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Imprimindo…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

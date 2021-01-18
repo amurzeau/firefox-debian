@@ -495,3 +495,71 @@ fullscreen-exit-mac-button = 離開全螢幕模式（Esc）
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 可控制您的滑鼠游標，按 Esc 取回控制權。
 pointerlock-warning-no-domain = 此文件可控制您的滑鼠游標，按 Esc 取回控制權。
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = 顯示所有書籤
+bookmarks-recent-bookmarks =
+    .value = 最近加入的書籤
+bookmarks-toolbar-chevron =
+    .tooltiptext = 顯示更多書籤
+bookmarks-sidebar-content =
+    .aria-label = 書籤
+bookmarks-menu-button =
+    .label = 書籤選單
+bookmarks-other-bookmarks-menu =
+    .label = 其他書籤
+bookmarks-mobile-bookmarks-menu =
+    .label = 行動書籤
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] 隱藏書籤側邊欄
+           *[other] 檢視書籤欄
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] 隱藏書籤工具列
+           *[other] 檢視書籤工具列
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] 從工具列移除書籤選單
+           *[other] 在工具列中加入書籤選單
+        }
+bookmarks-search =
+    .label = 搜尋書籤
+bookmarks-tools =
+    .label = 書籤工具
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = 書籤工具列
+    .accesskey = B
+    .aria-label = 書籤
+bookmarks-toolbar-menu =
+    .label = 書籤工具列
+bookmarks-toolbar-placeholder =
+    .title = 書籤工具列項目
+bookmarks-toolbar-placeholder-button =
+    .label = 書籤工具列項目
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = 書籤
+library-bookmarks-bookmark-this-page =
+    .label = 將本頁加入書籤
+library-bookmarks-bookmark-edit =
+    .label = 編輯此書籤
+library-recent-activity-label = 近期動態
+
+## More items
+
+more-menu-go-offline =
+    .label = 離線模式
+    .accesskey = k

@@ -13,15 +13,26 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = Bagong Window
+appmenuitem-new-private-window =
+    .label = Bagong Private Window
+
+## Zoom and Fullscreen Controls
+
 appmenuitem-zoom-enlarge =
     .label = i-Zoom in
 appmenuitem-zoom-reduce =
     .label = i-Zoom out
+appmenuitem-fullscreen =
+    .label = Buong Screen
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Mag-sync Na
+appmenuitem-save-page =
+    .label = I-save ang Pahina Bilang…
 
 ## What's New panel in App menu.
 

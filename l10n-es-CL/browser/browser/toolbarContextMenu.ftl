@@ -20,7 +20,7 @@ toolbar-context-menu-select-all-tabs =
 toolbar-context-menu-undo-close-tabs =
     .label =
         { $tabCount ->
-            [1] Deshacer cierre de pestañas
+            [1] Deshacer cierre de pestaña
             [one] Deshacer cierre de pestaña
            *[other] Deshacer cierre de pestañas
         }
@@ -60,6 +60,15 @@ toolbar-context-menu-bookmarks-toolbar-never-show =
     .accesskey = N
 toolbar-context-menu-bookmarks-toolbar-on-new-tab =
     .label = Solo en nueva pestaña
+    .accesskey = O
+toolbar-context-menu-bookmarks-toolbar-always-show-2 =
+    .label = Siempre mostrar
+    .accesskey = A
+toolbar-context-menu-bookmarks-toolbar-never-show-2 =
+    .label = Nunca mostrar
+    .accesskey = N
+toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
+    .label = Solo mostrar en nueva pestaña
     .accesskey = O
 toolbar-context-menu-bookmarks-show-other-bookmarks =
     .label = Mostrar otros marcadores

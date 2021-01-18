@@ -500,6 +500,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Umi tenda ojeikeveha
 home-prefs-topsites-by-option-sponsored =
     .label = Tenda tuicha ojehepyme’ẽva
+home-prefs-shortcuts-header =
+    .label = Jeike pya’eha
+home-prefs-shortcuts-description = Tenda eñongatúva térã eikeha
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Jeike pya’eha jehepyme’ẽpyre
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -507,6 +512,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = { $provider } he’i ndéve reike hag̃ua
 home-prefs-recommended-by-description-update = Tetepy oikoitéva ñanduti tuichakuépe, ohepyme’ẽva { $provider }
+home-prefs-recommended-by-description-new = Tetepy iporãva { $provider } oiporavopyre, { -brand-product-name } mba’éva pegua
 
 ##
 
@@ -515,8 +521,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Tembiasakue jehepyme’ẽguáva
 home-prefs-highlights-header =
     .label = Mba’erechapyrã
-home-prefs-recent-activity-header =
-    .label = Tembiapo ramovegua
 home-prefs-highlights-description = Tenda jeporavopy eñongatu térã eike hague
 home-prefs-highlights-option-visited-pages =
     .label = Tenda jeikepyre
@@ -526,6 +530,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Oñemboguejy ramovéva
 home-prefs-highlights-option-saved-to-pocket =
     .label = Kuatiarogue ñongatupyre { -pocket-brand-name }-pe
+home-prefs-recent-activity-header =
+    .label = Tembiapo ramovegua
+home-prefs-recent-activity-description = Tenda jeporavo ha tetepy ramovegua
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -533,6 +540,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Mba’epehẽ
 home-prefs-snippets-description = { -vendor-short-name } ha { -brand-product-name } ñembohekopyahu
+home-prefs-snippets-description-new = Ñemoñe’ẽ ha marandu { -vendor-short-name } ha { -brand-product-name } rehegua
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -927,6 +935,9 @@ addressbar-locbar-openpage-option =
 addressbar-locbar-topsites-option =
     .label = Tenda jehayhuvéva
     .accesskey = T
+addressbar-locbar-engines-option =
+    .label = Hekaha mongu’eha
+    .accesskey = a
 addressbar-suggestions-settings = Jerohoryvéva jehekaha mongu’eha je’epyre moambue
 
 ## Privacy Section - Content Blocking
@@ -934,6 +945,7 @@ addressbar-suggestions-settings = Jerohoryvéva jehekaha mongu’eha je’epyre 
 content-blocking-enhanced-tracking-protection = Tapykueho mo’ãha iporãvéva
 content-blocking-section-top-level-description = Umi tapykuehoha oike ñandutípe ombyaty hag̃ua marandu umi nerembiapo rapykuere. { -brand-short-name } ojoko heta tapykuehoha ha ambue scripts imarãva.
 content-blocking-learn-more = Eikuaave
+content-blocking-fpi-incompatibility-warning = Eipuruhína First Party Isolation (FPI), oipe’áva ndahetái kookie ñemboheko { -brand-short-name } mba’éva.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.

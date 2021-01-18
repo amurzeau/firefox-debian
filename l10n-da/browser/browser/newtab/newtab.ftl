@@ -8,6 +8,9 @@
 newtab-page-title = Nyt faneblad
 newtab-settings-button =
     .title = Tilpas siden Nyt faneblad
+newtab-personalize-button-label = Tilpas
+    .title = Tilpas nyt faneblad
+    .aria-label = Tilpas nyt faneblad
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Søg på internettet
     .title = Søg på internettet
     .aria-label = Søg på internettet
+newtab-search-box-text = Søg på nettet
+newtab-search-box-input =
+    .placeholder = Søg på nettet
+    .aria-label = Søg på nettet
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Tilføj søgetjeneste
 newtab-topsites-add-topsites-header = Ny webside
+newtab-topsites-add-shortcut-header = Ny genvej
 newtab-topsites-edit-topsites-header = Rediger mest besøgte webside
+newtab-topsites-edit-shortcut-header = Rediger genvej
 newtab-topsites-title-label = Titel
 newtab-topsites-title-input =
     .placeholder = Indtast en titel
@@ -172,6 +181,7 @@ newtab-section-expand-section-label =
 
 newtab-section-header-topsites = Mest besøgte websider
 newtab-section-header-highlights = Fremhævede
+newtab-section-header-recent-activity = Seneste aktivitet
 # Variables:
 #  $provider (String): Name of the corresponding content provider.
 newtab-section-header-pocket = Anbefalet af { $provider }
@@ -207,3 +217,27 @@ newtab-pocket-cta-text = Gem dine yndlingshistorier i { -pocket-brand-name } og 
 
 newtab-error-fallback-info = Hovsa. Noget gik galt ved indlæsning af indholdet.
 newtab-error-fallback-refresh-link = Prøv igen ved at genindlæse siden.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Genveje
+newtab-custom-shortcuts-subtitle = Gemte eller besøgte websteder
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } række
+       *[other] { $num } rækker
+    }
+newtab-custom-sponsored-sites = Sponsorerede genveje
+newtab-custom-pocket-title = Anbefalet af { -pocket-brand-name }
+newtab-custom-pocket-subtitle = Interessant indhold udvalgt af { -pocket-brand-name }, en del af { -brand-product-name }-familien
+newtab-custom-pocket-sponsored = Sponsorerede historier
+newtab-custom-recent-title = Seneste aktivitet
+newtab-custom-recent-subtitle = Et udvalg af seneste websteder og indhold
+newtab-custom-close-button = Luk
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Notitser
+newtab-custom-snippets-subtitle = Tips og nyheder fra { -vendor-short-name } og { -brand-product-name }
+newtab-custom-settings = Håndter flere indstillinger

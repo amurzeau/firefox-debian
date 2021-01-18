@@ -500,6 +500,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Ismal i tettwaliḍ aṭas
 home-prefs-topsites-by-option-sponsored =
     .label = Ismal ifellay yettwarefden
+home-prefs-shortcuts-header =
+    .label = Inegzumen
+home-prefs-shortcuts-description = Ismal i teskelseḍ neɣ wuɣur terziḍ
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Inegzumen yettwarefden
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -507,6 +512,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Iwelleh-it-id { $provider }
 home-prefs-recommended-by-description-update = Agbur yelhan i yettwafen deg Web sɣur { $provider }
+home-prefs-recommended-by-description-new = Agbur ufrin i s-yettusuddsen sɣur { $provider }, d aḥric seg twacult { -brand-product-name }
 
 ##
 
@@ -515,8 +521,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Tiqṣidin yettwarefden
 home-prefs-highlights-header =
     .label = Asebrureq
-home-prefs-recent-activity-header =
-    .label = Armud n melmi kan
 home-prefs-highlights-description = Tafrant n yismal i teskelseḍ neɣ i twalaḍ
 home-prefs-highlights-option-visited-pages =
     .label = isebtar yettwarzan
@@ -526,6 +530,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Isadaren imaynuten
 home-prefs-highlights-option-saved-to-pocket =
     .label = Isebtar yettwaḥerzen ar { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Armud n melmi kan
+home-prefs-recent-activity-description = Tafrant n yismal d ugbur n melmi kan
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -533,6 +540,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Tiwzillin
 home-prefs-snippets-description = Ileqman seg { -vendor-short-name } d { -brand-product-name }
+home-prefs-snippets-description-new = Iwellihen d yisallen sɣur { -vendor-short-name } akked { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -924,9 +932,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Iccaren yeldin
     .accesskey = I
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Inegzumen
+    .accesskey = Z
 addressbar-locbar-topsites-option =
     .label = Ismal ufrinen
     .accesskey = T
+addressbar-locbar-engines-option =
+    .label = Nadi imseddayen n unadi
+    .accesskey = a
 addressbar-suggestions-settings = Snifel ismenyifen i yisumar n umsedday n unadi
 
 ## Privacy Section - Content Blocking

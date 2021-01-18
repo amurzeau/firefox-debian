@@ -503,3 +503,71 @@ fullscreen-exit-mac-button = Vollbild beenden (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> kontrolliert den Mauszeiger. Drücken Sie die Esc-Taste, wenn Sie wieder die Kontrolle übernehmen wollen.
 pointerlock-warning-no-domain = Dieses Dokument kontrolliert den Mauszeiger. Drücken Sie die Esc-Taste, wenn Sie wieder die Kontrolle übernehmen wollen.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Lesezeichen verwalten
+bookmarks-recent-bookmarks =
+    .value = Kürzlich als Lesezeichen gesetzt
+bookmarks-toolbar-chevron =
+    .tooltiptext = Weitere Lesezeichen anzeigen
+bookmarks-sidebar-content =
+    .aria-label = Lesezeichen
+bookmarks-menu-button =
+    .label = Lesezeichen-Menü
+bookmarks-other-bookmarks-menu =
+    .label = Weitere Lesezeichen
+bookmarks-mobile-bookmarks-menu =
+    .label = Mobile Lesezeichen
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Lesezeichen-Sidebar schließen
+           *[other] Lesezeichen-Sidebar anzeigen
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Lesezeichen-Symbolleiste ausblenden
+           *[other] Lesezeichen-Symbolleiste anzeigen
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Lesezeichen-Menü aus Symbolleiste entfernen
+           *[other] Lesezeichen-Menü zur Symbolleiste hinzufügen
+        }
+bookmarks-search =
+    .label = Lesezeichen durchsuchen
+bookmarks-tools =
+    .label = Lesezeichen-Werkzeuge
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Lesezeichen-Symbolleiste
+    .accesskey = L
+    .aria-label = Lesezeichen
+bookmarks-toolbar-menu =
+    .label = Lesezeichen-Symbolleiste
+bookmarks-toolbar-placeholder =
+    .title = Lesezeichen-Symbole
+bookmarks-toolbar-placeholder-button =
+    .label = Lesezeichen-Symbole
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Lesezeichen
+library-bookmarks-bookmark-this-page =
+    .label = Lesezeichen hinzufügen
+library-bookmarks-bookmark-edit =
+    .label = Lesezeichen bearbeiten
+library-recent-activity-label = Jüngste Aktivität
+
+## More items
+
+more-menu-go-offline =
+    .label = Offline arbeiten
+    .accesskey = O

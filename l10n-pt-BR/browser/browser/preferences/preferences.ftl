@@ -270,7 +270,7 @@ download-always-ask-where =
     .label = Sempre perguntar onde salvar arquivos
     .accesskey = a
 applications-header = Aplicativos
-applications-description = Escolha o que o { -brand-short-name } faz com os arquivos que você baixa e os aplicativos que você usa enquanto navega.
+applications-description = Escolha o que o { -brand-short-name } deve fazer com os arquivos que você baixa e aplicativos que você usa ao navegar.
 applications-filter =
     .placeholder = Pesquisar tipos de arquivos ou aplicativos
 applications-type-column =
@@ -348,7 +348,7 @@ applications-use-os-default-label =
 
 ##
 
-drm-content-header = Conteúdo DRM (Gerenciamento de Direitos Digitais)
+drm-content-header = Conteúdo DRM (gerenciamento de direitos digitais)
 play-drm-content =
     .label = Reproduzir conteúdo controlado por DRM
     .accesskey = R
@@ -455,7 +455,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Novas janelas e abas
-home-new-windows-tabs-description2 = Escolha o que ver quando abrir a página inicial, novas janelas e novas abas.
+home-new-windows-tabs-description2 = Escolha o que aparece quando você abre sua página inicial, novas janelas e novas abas.
 
 ## Home Section - Home Page Customization
 
@@ -499,7 +499,12 @@ home-prefs-topsites-header =
     .label = Sites preferidos
 home-prefs-topsites-description = Os sites que você mais visita
 home-prefs-topsites-by-option-sponsored =
-    .label = Sites principais patrocinados
+    .label = Sites preferidos patrocinados
+home-prefs-shortcuts-header =
+    .label = Atalhos
+home-prefs-shortcuts-description = Sites que você salva ou visita
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Atalhos patrocinados
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -507,6 +512,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Recomendado pelo { $provider }
 home-prefs-recommended-by-description-update = Conteúdo excepcional da web afora, curadoria de { $provider }
+home-prefs-recommended-by-description-new = Conteúdo excepcional selecionado pelo { $provider }, parte da família { -brand-product-name }
 
 ##
 
@@ -515,8 +521,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Histórias patrocinadas
 home-prefs-highlights-header =
     .label = Destaques
-home-prefs-recent-activity-header =
-    .label = Atividade recente
 home-prefs-highlights-description = Uma seleção de sites que você salvou ou visitou
 home-prefs-highlights-option-visited-pages =
     .label = Páginas visitadas
@@ -526,6 +530,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Downloads mais recentes
 home-prefs-highlights-option-saved-to-pocket =
     .label = Páginas salvas no { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Atividade recente
+home-prefs-recent-activity-description = Uma seleção de sites e conteúdos recentes
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -533,6 +540,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Snippets
 home-prefs-snippets-description = Novidades da { -vendor-short-name } e do { -brand-product-name }
+home-prefs-snippets-description-new = Dicas e novidades da { -vendor-short-name } e do { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -924,9 +932,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Abas abertas
     .accesskey = A
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Atalhos
+    .accesskey = s
 addressbar-locbar-topsites-option =
     .label = Sites preferidos
     .accesskey = S
+addressbar-locbar-engines-option =
+    .label = Mecanismos de pesquisa
+    .accesskey = a
 addressbar-suggestions-settings = Alterar preferências de sugestões de mecanismos de pesquisa
 
 ## Privacy Section - Content Blocking

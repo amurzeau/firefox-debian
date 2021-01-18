@@ -8,6 +8,9 @@
 newtab-page-title = Новая картка
 newtab-settings-button =
     .title = Наладзіць вашу старонку новай карткі
+newtab-personalize-button-label = Персаналізаваць
+    .title = Персаналізаваць новую картку
+    .aria-label = Персаналізаваць новую картку
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Пошук у Інтэрнэце
     .title = Пошук у Інтэрнэце
     .aria-label = Пошук у Інтэрнэце
+newtab-search-box-text = Пошук у інтэрнэце
+newtab-search-box-input =
+    .placeholder = Пошук у інтэрнэце
+    .aria-label = Шукайце ў Інтэрнэце
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Дадаць пашукавік
 newtab-topsites-add-topsites-header = Новы папулярны сайт
+newtab-topsites-add-shortcut-header = Новы цэтлік
 newtab-topsites-edit-topsites-header = Рэдагаваць папулярны сайт
+newtab-topsites-edit-shortcut-header = Рэдагаваць цэтлік
 newtab-topsites-title-label = Загаловак
 newtab-topsites-title-input =
     .placeholder = Увядзіце назву
@@ -207,3 +216,28 @@ newtab-pocket-cta-text = Захоўвайце ўлюбёныя гісторыі 
 
 newtab-error-fallback-info = Ох, нешта пайшло не так пры загрузцы гэтага змесціва.
 newtab-error-fallback-refresh-link = Абнавіць старонку, каб паўтарыць спробу.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Цэтлікі
+newtab-custom-shortcuts-subtitle = Сайты, якія вы захоўваеце або наведваеце
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } радок
+        [few] { $num } радкі
+       *[many] { $num } радкоў
+    }
+newtab-custom-sponsored-sites = Спонсарскія цэтлікі
+newtab-custom-pocket-title = Рэкамендавана { -pocket-brand-name }
+newtab-custom-pocket-subtitle = Выключнае змесціва, куратарам якога з'яўляецца { -pocket-brand-name }, частка сям'і { -brand-product-name }
+newtab-custom-pocket-sponsored = Артыкулы ад спонсараў
+newtab-custom-recent-title = Апошняя актыўнасць
+newtab-custom-recent-subtitle = Падборка нядаўніх сайтаў і змесціва
+newtab-custom-close-button = Закрыць
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Урыўкі
+newtab-custom-snippets-subtitle = Парады і навіны ад { -vendor-short-name } і { -brand-product-name }
+newtab-custom-settings = Кіраваць дадатковымі наладамі

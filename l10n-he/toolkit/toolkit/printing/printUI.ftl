@@ -25,6 +25,9 @@ printui-range-start = מעמוד
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = עד עמוד
+printui-page-custom-range-input =
+    .aria-label = נא להזין טווח עמודים מותאם אישית
+    .placeholder = לדוגמה, 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = עותקים
 printui-orientation = כיוון
@@ -48,6 +51,7 @@ printui-duplex-checkbox = הדפסה בשני הצדדים
 printui-options = אפשרויות
 printui-headers-footers-checkbox = הדפסת כותרות עיליות ותחתיות
 printui-backgrounds-checkbox = הדפסת רקעים
+printui-selection-checkbox = הדפסת הקטע הנבחר בלבד
 printui-color-mode-label = מצב צבע
 printui-color-mode-color = צבע
 printui-color-mode-bw = שחור ולבן
@@ -56,19 +60,29 @@ printui-margins-default = ברירת מחדל
 printui-margins-min = מינימום
 printui-margins-none = ללא
 printui-margins-custom = התאמה אישית
+printui-margins-custom-inches = התאמה אישית (אינצ'ים)
 printui-margins-custom-top = מלמעלה
+printui-margins-custom-top-inches = מלמעלה (אינצ'ים)
 printui-margins-custom-bottom = מלמטה
+printui-margins-custom-bottom-inches = מלמטה (אינצ'ים)
 printui-margins-custom-left = משמאל
+printui-margins-custom-left-inches = משמאל (אינצ'ים)
 printui-margins-custom-right = מימין
+printui-margins-custom-right-inches = מימין (אינצ'ים)
 printui-system-dialog-link = הדפסה באמצעות תיבת הדו־שיח של המערכת…
 printui-primary-button = הדפסה
 printui-primary-button-save = שמירה
 printui-cancel-button = ביטול
+printui-close-button = סגירה
 printui-loading = בתהליך הכנת תצוגה מקדימה
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = תצוגה לפני הדפסה
+printui-pages-per-sheet = עמודים בכל גיליון
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = בהדפסה…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

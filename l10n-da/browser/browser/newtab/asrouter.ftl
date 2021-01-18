@@ -126,6 +126,9 @@ cfr-whatsnew-lockwise-take-link-text = Hent appen
 
 cfr-whatsnew-searchbar-title = Skriv mindre, find mere med adressefeltet
 cfr-whatsnew-searchbar-body-topsites = Vælg adressefeltet, og en boks med links til dine mest besøgte websteder vil blive vist.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Forstørrelsesglas-ikon
 
 ## Picture-in-Picture
@@ -275,3 +278,18 @@ cfr-whatsnew-clear-cookies-image-alt = Illustration af blokeret cookie
 cfr-whatsnew-media-keys-header = Flere mediekontroller
 cfr-whatsnew-media-keys-body = Kontroller afspilning af lyd eller video direkte fra dit tastatur eller dit headset. På den måde er det nemt at have kontrol over medie-indhold fra et andet faneblad, et andet program - eller endda hvis du computer er låst. Du kan også skifte mellem numre ved at bruge piletasterne.
 cfr-whatsnew-media-keys-button = Mere information
+
+## What's new: Search shortcuts
+
+cfr-whatsnew-search-shortcuts-header = Søge-genveje i adressefeltet
+cfr-whatsnew-search-shortcuts-body = Når du indtaster navnet eller adressen på en søgetjeneste, så vil der nu blive vist en blå genvej i søgeforslagene nedenunder. Vælg denne genvej for at fuldføre din søgning direkte fra adressefeltet.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Beskyttelse mod skadelige super-cookies
+cfr-whatsnew-supercookies-body = Websteder kan i hemmelighed føje en "super-cookie" til din browser, der kan følge dig rundt på nettet - selv efter at du har slettet dine cookies. { -brand-short-name } beskytter dig nu mod super-cookies, så de ikke kan bruges til at spore din online aktivitet på tværs af websteder.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = Bedre bogmærker
+cfr-whatsnew-bookmarking-body = Det er blevet nemmere at holde styr på dine yndings-websteder. { -brand-short-name } husker nu din foretrukne placering for gemte bogmærker, viser som standard bogmærkelinjen på nye faneblade og giver dig nem adgang til resten af dine bogmærker med en bogmærkemappe.

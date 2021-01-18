@@ -503,3 +503,71 @@ fullscreen-exit-mac-button = Irten pantaila osotik (esk)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> (e)k zure erakuslearen kontrola dauka. Kontrola berreskuratzeko, sakatu eskape tekla.
 pointerlock-warning-no-domain = Dokumentu honek zure erakuslearen kontrola dauka. Kontrola berreskuratzeko, sakatu eskape tekla.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Erakutsi laster-marka guztiak
+bookmarks-recent-bookmarks =
+    .value = Azken laster-markak
+bookmarks-toolbar-chevron =
+    .tooltiptext = Erakutsi laster-marka gehiago
+bookmarks-sidebar-content =
+    .aria-label = Laster-markak
+bookmarks-menu-button =
+    .label = Laster-marken menua
+bookmarks-other-bookmarks-menu =
+    .label = Beste laster-markak
+bookmarks-mobile-bookmarks-menu =
+    .label = Mugikorreko laster-markak
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Ezkutatu laster-marken alboko barra
+           *[other] Ikusi laster-marken tresna-barra
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Ezkutatu laster-marken tresna-barra
+           *[other] Ikusi laster-marken tresna-barra
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Kendu laster-marken menua tresna-barratik
+           *[other] Gehitu laster-marken menua tresna-barran
+        }
+bookmarks-search =
+    .label = Bilatu laster-markak
+bookmarks-tools =
+    .label = Laster-marken tresnak
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Laster-marken tresna-barra
+    .accesskey = b
+    .aria-label = Laster-markak
+bookmarks-toolbar-menu =
+    .label = Laster-marken tresna-barra
+bookmarks-toolbar-placeholder =
+    .title = Laster-marken tresna-barraren osagaiak
+bookmarks-toolbar-placeholder-button =
+    .label = Laster-marken tresna-barraren osagaiak
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Laster-markak
+library-bookmarks-bookmark-this-page =
+    .label = Egin orriaren laster-marka
+library-bookmarks-bookmark-edit =
+    .label = Editatu laster-marka
+library-recent-activity-label = Azken jarduera
+
+## More items
+
+more-menu-go-offline =
+    .label = Lan egin lineaz kanpo
+    .accesskey = o

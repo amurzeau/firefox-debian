@@ -188,6 +188,32 @@ remote-debugging-url = URL
 
 ##
 
+support-third-party-modules-title = Сторонні модулі
+support-third-party-modules-module = Файл модуля
+support-third-party-modules-version = Версія файлу
+support-third-party-modules-vendor = Інформація про постачальника
+support-third-party-modules-occurrence = Повторення
+support-third-party-modules-process = Тип процесу та ID
+support-third-party-modules-thread = Гілка
+support-third-party-modules-base = Адреса бази зображень
+support-third-party-modules-uptime = Час роботи процесу (мс)
+support-third-party-modules-duration = Тривалість завантаження (мс)
+support-third-party-modules-empty = Не завантажено сторонні модулі.
+support-third-party-modules-no-value = (Немає значення)
+support-third-party-modules-button-open =
+    .title = Відкрити розташування файлу…
+support-third-party-modules-expand =
+    .title = Показати подробиці
+support-third-party-modules-collapse =
+    .title = Згорнути подробиці
+support-third-party-modules-unsigned-icon =
+    .title = Цей модуль не підписаний
+support-third-party-modules-folder-icon =
+    .title = Відкрити розташування файлу…
+support-third-party-modules-down-icon =
+    .title = Показати подробиці
+support-third-party-modules-up-icon =
+    .title = Згорнути подробиці
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -369,8 +395,8 @@ touch-warning = асинхронне сенсорне введення вимк�
 
 ## Strings representing the status of the Enterprise Policies engine.
 
-policies-inactive = Неактивно
-policies-active = Активно
+policies-inactive = Неактивні
+policies-active = Активні
 policies-error = Помилка
 
 ## Printing section

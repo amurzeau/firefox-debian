@@ -8,6 +8,9 @@
 newtab-page-title = Nova aba
 newtab-settings-button =
     .title = Personalizar sua página de nova aba
+newtab-personalize-button-label = Personalizar
+    .title = Personalizar nova aba
+    .aria-label = Personalizar nova aba
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Pesquisar na web
     .title = Pesquisar na web
     .aria-label = Pesquisar na web
+newtab-search-box-text = Pesquisar na web
+newtab-search-box-input =
+    .placeholder = Pesquisar na web
+    .aria-label = Pesquisar na web
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Adicionar mecanismo de pesquisa
 newtab-topsites-add-topsites-header = Novo site preferido
+newtab-topsites-add-shortcut-header = Novo atalho
 newtab-topsites-edit-topsites-header = Editar site preferido
+newtab-topsites-edit-shortcut-header = Editar atalho
 newtab-topsites-title-label = Título
 newtab-topsites-title-input =
     .placeholder = Digite um título
@@ -203,3 +212,27 @@ newtab-pocket-cta-text = Salve as histórias que você gosta no { -pocket-brand-
 
 newtab-error-fallback-info = Opa, algo deu errado ao carregar esse conteúdo.
 newtab-error-fallback-refresh-link = Atualize a página para tentar novamente.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Atalhos
+newtab-custom-shortcuts-subtitle = Sites que você salva ou visita
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } linha
+       *[other] { $num } linhas
+    }
+newtab-custom-sponsored-sites = Atalhos patrocinados
+newtab-custom-pocket-title = Recomendado pelo { -pocket-brand-name }
+newtab-custom-pocket-subtitle = Conteúdo excepcional selecionado pelo { -pocket-brand-name }, parte da família { -brand-product-name }
+newtab-custom-pocket-sponsored = Histórias patrocinadas
+newtab-custom-recent-title = Atividade recente
+newtab-custom-recent-subtitle = Uma seleção de sites e conteúdos recentes
+newtab-custom-close-button = Fechar
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Snippets
+newtab-custom-snippets-subtitle = Dicas e novidades da { -vendor-short-name } e do { -brand-product-name }
+newtab-custom-settings = Gerenciar mais configurações

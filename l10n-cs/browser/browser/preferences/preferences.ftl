@@ -29,6 +29,8 @@ search-input-box =
            *[other] Najít v předvolbách
         }
 managed-notice = Tento prohlížeč je spravován vaší organizací.
+category-list =
+    .aria-label = Kategorie
 pane-general-title = Obecné
 category-general =
     .tooltiptext = { pane-general-title }
@@ -50,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Tady pozor!
 pane-experimental-search-results-header = Experimenty { -brand-short-name(case: "gen") }: Postupujte obezřetně!
 pane-experimental-description = Změny v pokročilé konfiguraci mohou negativně ovlivnit výkon a bezpečnost aplikace { -brand-short-name }.
+pane-experimental-reset =
+    .label = Obnovit výchozí nastavení
+    .accesskey = O
 help-button-label =
     { -brand-short-name.gender ->
         [masculine] Nápověda { -brand-short-name(case: "gen") }
@@ -537,6 +542,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Zobrazovat přepínač do režimu obrazu v obraze
     .accesskey = E
 browsing-picture-in-picture-learn-more = Zjistit více
+browsing-media-control =
+    .label = Ovládat média pomocí klávesnice, sluchátek nebo virtuálního rozhraní
+    .accesskey = v
+browsing-media-control-learn-more = Zjistit více
 browsing-cfr-recommendations =
     .label = Doporučovat vhodná rozšíření pro navštívené stránky
     .accesskey = r
@@ -606,6 +615,13 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Top stránky
 home-prefs-topsites-description = Nejnavštěvovanější stránky
+home-prefs-topsites-by-option-sponsored =
+    .label = Sponzorované top stránky
+home-prefs-shortcuts-header =
+    .label = Zkratky vyhledávání
+home-prefs-shortcuts-description = Stránky, které si uložíte nebo navštívíte
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Sponzorované zkratky
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -613,6 +629,7 @@ home-prefs-topsites-description = Nejnavštěvovanější stránky
 home-prefs-recommended-by-header =
     .label = Doporučení ze služby { $provider }
 home-prefs-recommended-by-description-update = Výjimečný obsah z celého internetu, vybraný službou { $provider }
+home-prefs-recommended-by-description-new = Výjimečný obsah vybraný společností { $provider }, která je součástí { -brand-product-name(case: "gen") }
 
 ##
 
@@ -630,6 +647,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Nedávná stahování
 home-prefs-highlights-option-saved-to-pocket =
     .label = Stránky uložené do { -pocket-brand-name(case: "gen") }
+home-prefs-recent-activity-header =
+    .label = Nedávná aktivita
+home-prefs-recent-activity-description = Výběr z aktuálních stránek a obsahu
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -648,6 +668,7 @@ home-prefs-snippets-description =
         [neuter] { -brand-product-name(case: "gen") }
        *[other] aplikace { -brand-product-name }
     }
+home-prefs-snippets-description-new = Tipy a novinky od společnosti { -vendor-short-name } a aplikace { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -1029,6 +1050,10 @@ sitedata-option-block-cross-site-trackers =
     .label = Sledovací prvky
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Sledovací cookies, např. sociálních sítí
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Sledovací cookies třetích stran včetně sociálních sítí
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Cookies třetích stran včetně sociálních sítí
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Sledovací cookies třetích stran a sociálních sítí, ostatní izolovat
 sitedata-option-block-unvisited =
@@ -1063,9 +1088,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Otevřené panely
     .accesskey = O
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Zkratky
+    .accesskey = Z
 addressbar-locbar-topsites-option =
     .label = Top stránky
     .accesskey = T
+addressbar-locbar-engines-option =
+    .label = Vyhledávače
+    .accesskey = a
 addressbar-suggestions-settings = Nastavit našeptávání vyhledávače
 
 ## Privacy Section - Content Blocking
@@ -1073,6 +1105,7 @@ addressbar-suggestions-settings = Nastavit našeptávání vyhledávače
 content-blocking-enhanced-tracking-protection = Rozšířená ochrana proti sledování
 content-blocking-section-top-level-description = Sledovací prvky sbírají informace, co a kde na internetu děláte, jaké máte návyky a co vás zajímá. { -brand-short-name } blokuje mnoho takových prvků i dalších škodlivých skriptů.
 content-blocking-learn-more = Zjistit více
+content-blocking-fpi-incompatibility-warning = Používáte izolaci prvních stran (FPI), která potlačí některá nastavení cookies ve { -brand-short-name(case: "loc") }.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -1094,6 +1127,7 @@ content-blocking-etp-standard-desc = Vyvážená ochrana a výkon. Neovlivní sp
 content-blocking-etp-strict-desc = Silnější ochrana. Může omezit fungování některých stránek.
 content-blocking-etp-custom-desc = Vyberte sledovací prvky a skripty, které chcete zablokovat.
 content-blocking-private-windows = Sledující obsah v anonymních oknech
+content-blocking-cross-site-cookies = Cross-site cookies
 content-blocking-cross-site-tracking-cookies = Sledovací cookies
 content-blocking-cross-site-tracking-cookies-plus-isolate = Sledovací cookies třetích stran, ostatní izolovat
 content-blocking-social-media-trackers = Sledující prvky sociálních sítí
@@ -1105,6 +1139,7 @@ content-blocking-cryptominers = Těžba kryptoměn
 content-blocking-fingerprinters = Vytváření otisku prohlížeče
 content-blocking-warning-title = Pozor!
 content-blocking-and-isolating-etp-warning-description = Blokování sledujícího obsahu a izolace cookies může ovlivnit fungování některých stránek. Pro zobrazení veškerého obsahu znovu načtěte stránku s povolenými sledovacími prvky.
+content-blocking-and-isolating-etp-warning-description-2 = Toto nastavení může způsobit, že některé stránky nebudou fungovat správně. Pro řešení případných problémů můžete ochranu proti sledování na takových stránkách vypnout.
 content-blocking-warning-learn-how = Jak na to
 content-blocking-reload-description = Aby se změny projevily, načtěte znovu své panely.
 content-blocking-reload-tabs-button =
@@ -1349,7 +1384,7 @@ httpsonly-description =
         [feminine] { -brand-short-name(case: "ins") }
         [neuter] { -brand-short-name(case: "ins") }
        *[other] aplikací { -brand-short-name }
-    } a navštěvovanými webovými stránkami. Většina webů protokol HTTPS podporuje, a pokud je zapnut režim „pouze HTTPS“, bude { -brand-short-name } navazovat spojení pouze skrze protokol HTTPS.
+    } a navštěvovanými webovými stránkami. Většina webů protokol HTTPS podporuje, a pokud je zapnut režim „pouze HTTPS“, bude { -brand-short-name } navazovat spojení jen skrze protokol HTTPS.
 httpsonly-learn-more = Zjistit více
 httpsonly-radio-enabled =
     .label = Zapnout režim „pouze HTTPS“ ve všech oknech

@@ -448,3 +448,70 @@ fullscreen-exit-mac-button = Излизане от цял екран (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> контролира показалеца на мишката ви. Натиснете Esc, за да си възвърнете контрола.
 pointerlock-warning-no-domain = Този документ контролира показалеца на мишката ви. Натиснете Esc, за да си възвърнете контрола.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Показване на всички отметки
+bookmarks-recent-bookmarks =
+    .value = Последни отметки
+bookmarks-toolbar-chevron =
+    .tooltiptext = Показване на повече отметки
+bookmarks-sidebar-content =
+    .aria-label = Отметки
+bookmarks-menu-button =
+    .label = Меню с отметки
+bookmarks-other-bookmarks-menu =
+    .label = Други отметки
+bookmarks-mobile-bookmarks-menu =
+    .label = Мобилни отметки
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Скриване на лентата с отметки
+           *[other] Странична лента с отметки
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Скриване на страничната лента с отметки
+           *[other] Показване на лентата с отметки
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Премахване на меню Oтметки от лентата с инструменти
+           *[other] Добавяне на меню Отметки към лентата с инструменти
+        }
+bookmarks-search =
+    .label = Търсене в отметките
+bookmarks-tools =
+    .label = Инструменти за отметки
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Лента с отметки
+    .accesskey = о
+    .aria-label = Отметки
+bookmarks-toolbar-menu =
+    .label = Лента с отметки
+bookmarks-toolbar-placeholder =
+    .title = Елементи на лентата с отметките
+bookmarks-toolbar-placeholder-button =
+    .label = Елементи на лентата с отметките
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Отметки
+library-bookmarks-bookmark-this-page =
+    .label = Отмятане на страницата
+library-bookmarks-bookmark-edit =
+    .label = Промяна на отметка
+
+## More items
+
+more-menu-go-offline =
+    .label = Работа извън мрежата
+    .accesskey = Р

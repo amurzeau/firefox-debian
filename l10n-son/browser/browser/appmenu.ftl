@@ -10,11 +10,22 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = Zanfun taaga
+appmenuitem-new-private-window =
+    .label = Sutura zanfun taaga
+
+## Zoom and Fullscreen Controls
+
+appmenuitem-fullscreen =
+    .label = Dijikul
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Sync sohõ
+appmenuitem-save-page =
+    .label = Moɲoo gaabu sanda…
 
 ## What's New panel in App menu.
 

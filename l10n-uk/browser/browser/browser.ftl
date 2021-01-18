@@ -505,3 +505,71 @@ fullscreen-exit-mac-button = Вийти з повноекранного режи
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> отримав контроль над вашим вказівником. Натисніть Esc для повернення контролю.
 pointerlock-warning-no-domain = Цей документ отримав контроль над вашим вказівником. Натисніть Esc для повернення контролю.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Показати всі закладки
+bookmarks-recent-bookmarks =
+    .value = Останні закладки
+bookmarks-toolbar-chevron =
+    .tooltiptext = Показати інші закладки
+bookmarks-sidebar-content =
+    .aria-label = Закладки
+bookmarks-menu-button =
+    .label = Меню закладок
+bookmarks-other-bookmarks-menu =
+    .label = Інші закладки
+bookmarks-mobile-bookmarks-menu =
+    .label = Мобільні закладки
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Приховати бічну панель закладок
+           *[other] Показати панель закладок
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Приховати панель закладок
+           *[other] Показати панель закладок
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Вилучити меню закладок з панелі інструментів
+           *[other] Додати меню закладок до панелі інструментів
+        }
+bookmarks-search =
+    .label = Пошук закладок
+bookmarks-tools =
+    .label = Інструменти закладок
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Панель закладок
+    .accesskey = к
+    .aria-label = Закладки
+bookmarks-toolbar-menu =
+    .label = Панель закладок
+bookmarks-toolbar-placeholder =
+    .title = Елементи панелі закладок
+bookmarks-toolbar-placeholder-button =
+    .label = Елементи панелі закладок
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Закладки
+library-bookmarks-bookmark-this-page =
+    .label = Закласти цю сторінку
+library-bookmarks-bookmark-edit =
+    .label = Редагувати цю закладку
+library-recent-activity-label = Нещодавня активність
+
+## More items
+
+more-menu-go-offline =
+    .label = Працювати автономно
+    .accesskey = ю

@@ -23,10 +23,13 @@
 <!ENTITY contextIncomingMail.accesskey "Κ">
 <!ENTITY contextManual.label "Χειροκίνητη εκτέλεση">
 <!ENTITY contextManual.accesskey "Χ">
+<!ENTITY contextBeforeCls.label "Φιλτράρισμα πριν την ταξινόμηση ανεπιθύμητων">
+<!ENTITY contextAfterCls.label "Φιλτράρισμα μετά την ταξινόμηση ανεπιθύμητων">
 <!ENTITY contextOutgoing.label "Μετά την αποστολή">
 <!ENTITY contextOutgoing.accesskey "Μ">
 <!ENTITY contextArchive.label "Κατά την αρχειοθέτηση">
 <!ENTITY contextArchive.accesskey "α">
+<!ENTITY contextPeriodic.accesskey "ρ">
 
 <!ENTITY filterActionDesc.label "Εκτέλεση των εξής ενεργειών:">
 <!ENTITY filterActionDesc.accesskey "Ε">
@@ -43,6 +46,8 @@
 <!ENTITY markMessageUnread.label "Επισήμανση ως μη αναγνωσμένο">
 <!ENTITY markMessageStarred.label "Επισήμανση με σημαία">
 <!ENTITY setPriority.label "Ορισμός προτεραιότητας σε">
+<!ENTITY addTag.label "Προσθήκη ετικέτας στο μήνυμα">
+<!ENTITY setJunkScore.label "Ορισμός κατάστασης ανεπιθύμητου σε">
 <!ENTITY deleteMessage.label "Διαγραφή μηνύματος">
 <!ENTITY deleteFromPOP.label "Διαγραφή από διακομιστή POP">
 <!ENTITY fetchFromPOP.label "Λήψη από διακομιστή POP">

@@ -282,6 +282,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = Loka
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -353,3 +356,63 @@ fullscreen-exit-mac-button = Hætta í fullum skjá (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> hefur stjórn á bendi. Ýttu á Esc til að taka aftur yfir stjórn.
 pointerlock-warning-no-domain = Þetta skjal hefur nú stjórnina á bendi. Ýttu á Esc til að taka aftur yfir stjórn.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Sýna öll bókamerki
+bookmarks-recent-bookmarks =
+    .value = Nýlega sett í bókamerki
+bookmarks-toolbar-chevron =
+    .tooltiptext = Sýna fleiri bókamerki
+bookmarks-sidebar-content =
+    .aria-label = Bókamerki
+bookmarks-menu-button =
+    .label = Bókarmerkja valmynd
+bookmarks-other-bookmarks-menu =
+    .label = Önnur bókamerki
+bookmarks-mobile-bookmarks-menu =
+    .label = Bókamerki farsíma
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Fela bókamerki í hliðslá
+           *[other] Birta bókamerki í hliðslá
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Fela bókamerkjaslá
+           *[other] Skoða bókamerkjaslá
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Fjarlægja bókamerkjavalmynd úr verkfæraslá
+           *[other] Bæta bókamerkjavalmynd við verkfæraslá
+        }
+bookmarks-search =
+    .label = Leita í bókamerkjum
+bookmarks-tools =
+    .label = Verkfæri fyrir bókamerki
+bookmarks-toolbar-menu =
+    .label = Bókamerkjaslá
+bookmarks-toolbar-placeholder =
+    .title = Hlutir í bókamerkjaslá
+bookmarks-toolbar-placeholder-button =
+    .label = Hlutir í bókamerkjaslá
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Bókamerki
+library-bookmarks-bookmark-this-page =
+    .label = Setja síðu í bókamerki
+library-bookmarks-bookmark-edit =
+    .label = Breyta bókamerki
+
+## More items
+
+more-menu-go-offline =
+    .label = Vinna án nettengingar
+    .accesskey = g

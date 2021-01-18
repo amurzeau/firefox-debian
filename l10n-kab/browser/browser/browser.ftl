@@ -503,3 +503,71 @@ fullscreen-exit-mac-button = Ffeɣ seg ugdil ačuṛan (Esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> Ɣur-s asenqed n usewwaṛ-inek. Sit ɣef tqeffalt n usenser akken ad teṭṭfeḍ asewwaṛ.
 pointerlock-warning-no-domain = Isemli-a yeṭṭef asewwaṛ-ik. Sit ɣef Esc akken ad teṭṭfeḍ asewwaṛ.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Sken akk ticraḍ n yisebtar
+bookmarks-recent-bookmarks =
+    .value = Wid ittwacerḍen melmi kan
+bookmarks-toolbar-chevron =
+    .tooltiptext = Sken ugar n tecraḍ n yisebtar
+bookmarks-sidebar-content =
+    .aria-label = Ticraḍ n yisebtar
+bookmarks-menu-button =
+    .label = Umuɣ n tecraḍ n yisebtar
+bookmarks-other-bookmarks-menu =
+    .label = Ticrad-nniḍen n yisebtar
+bookmarks-mobile-bookmarks-menu =
+    .label = Ticraḍ n yisebtar n uziraz
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Ffer agalis n tecraḍ n yisebtar
+           *[other] Sken agalis n tecraḍ n yisebtar
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Ffer afeggag n tecraḍ n yisebtar
+           *[other] Sken afeggag n tecraḍ n yisebtar
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Kkes umuγ n tecraḍ n yisebtar seg ufeggag
+           *[other] Rnu umuγ n tecraḍ n yisebtar ɣer ufeggag
+        }
+bookmarks-search =
+    .label = Nadi ticraḍ n yisebtar
+bookmarks-tools =
+    .label = Ifecka n tecraḍ n yisebtar
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Afeggag n tecraḍ n yisebtar
+    .accesskey = B
+    .aria-label = Ticraḍ n yisebtar
+bookmarks-toolbar-menu =
+    .label = Afeggag n tecraḍ n yisebtar
+bookmarks-toolbar-placeholder =
+    .title = Iferdisen n ufeggag n tecraḍ n yisebtar
+bookmarks-toolbar-placeholder-button =
+    .label = Iferdisen n ufeggag n tecraḍ n yisebtar
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Ticraḍ n yisebtar
+library-bookmarks-bookmark-this-page =
+    .label = Creḍ asebter-a
+library-bookmarks-bookmark-edit =
+    .label = Ẓreg tacreḍṭ n usebter-a
+library-recent-activity-label = Armud n melmi kan
+
+## More items
+
+more-menu-go-offline =
+    .label = Mahel war tuqqna
+    .accesskey = k

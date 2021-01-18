@@ -126,6 +126,9 @@ cfr-whatsnew-lockwise-take-link-text = Tak'ulu' ri chokoy
 
 cfr-whatsnew-searchbar-title = Katz'ib'an jub'a', tawila' k'ïy rik'in ri rukajtz'ik ochochib'äl
 cfr-whatsnew-searchbar-body-topsites = Wakami xa xe tacha' ri rukajtz'ik ochochib'äl richin nirik'itäj jun kajtz'ik rik'in riruximik kik'in nima'q taq ruxaq.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Ruwachib'al tzub'äl
 
 ## Picture-in-Picture
@@ -281,3 +284,13 @@ cfr-whatsnew-media-keys-button = Tetamäx achike rub'eyal
 
 cfr-whatsnew-search-shortcuts-header = Kekanöx chojokem pa kikatz'ik ochochib'äl
 cfr-whatsnew-search-shortcuts-body = Wakami toq natz'ib'aj jun kanob'äl o jun ruxaq pa ri kikajtz'ik ochochib'äl, xtiwachin pe jun xar chojokem pa ri rutzilab'exik ikim kanoxïk. Tacha' ri chojokem ri' richin natz'ët ri nakanoj pa ri kikajtz'ik ochochib'äl.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Chajinïk chuwäch itzel taq supercookie
+cfr-whatsnew-supercookies-body = Ri taq ajk'amaya'l ruxaq pan ewäl yetikïr nikitz'aqatisaj jun “supercookie” pa rokik'amaya'l, ri nitikïr yatrojqaj pan ajk'amaya'l, estape' ye'ajosq'ij ri taq cookie. { -brand-short-name } wakami nuya' jun nïm chajinïk chi kiwa ri taq supercookie richin chi man ke'okisäx richin nikojqaj ri taq asamaj pa k'amab'ey pa jun ruxaq o jun chik.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = Utziläj taq yaketal
+cfr-whatsnew-bookmarking-body = Man k'ayew ta ye'oqäx ri jeb'ël taq ruxaq. { -brand-short-name } nunataj wakami ri jeb'ël kik'ojlib'al ri yakon taq ayaketal, yeruk'üt ri kikajtz'ik kisamajib'al yaketal pa ri k'ak'a' ruwi' chuqa' anin yatok pa ri ch'aqa' chik taq ayaketal rik'in jun rumolwuj rukajtz'ik samajib'äl.

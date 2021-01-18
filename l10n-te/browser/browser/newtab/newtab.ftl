@@ -166,6 +166,7 @@ newtab-section-expand-section-label =
 
 newtab-section-header-topsites = మేటి సైట్లు
 newtab-section-header-highlights = విశేషాలు
+newtab-section-header-recent-activity = ఇటీవలి కార్యకలాపం
 # Variables:
 #  $provider (String): Name of the corresponding content provider.
 newtab-section-header-pocket = { $provider }చే సిఫార్సు చేయబడినది
@@ -198,3 +199,19 @@ newtab-pocket-cta-button = { -pocket-brand-name } పొందండి
 
 newtab-error-fallback-info = అయ్యో, ఈ విషయం తేవడంలో ఏదో తప్పు దొర్లింది.
 newtab-error-fallback-refresh-link = మళ్ళీ ప్రయత్నించడానికి పేజీని రీఫ్రెష్ చెయ్యండి.
+
+## Customization Menu
+
+newtab-custom-shortcuts-subtitle = మీరు భద్రపరచుకున్న లేదా చూసిన సైట్లు
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } వరుస
+       *[other] { $num } వరుసలు
+    }
+newtab-custom-recent-title = ఇటీవలి కార్యకలాపం
+newtab-custom-close-button = మూసివేయి
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = సంగతులు

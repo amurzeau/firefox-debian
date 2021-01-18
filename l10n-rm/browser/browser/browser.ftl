@@ -503,3 +503,71 @@ fullscreen-exit-mac-button = Bandunar il modus da maletg entir (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> controllescha il punctader. Smatga ESC per reacquistar la controlla.
 pointerlock-warning-no-domain = Quest document controllescha il punctader. Smatga ESC per reacquistar la controlla.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Mussar tut ils segnapaginas
+bookmarks-recent-bookmarks =
+    .value = Tschernì dacurt sco segnapagina
+bookmarks-toolbar-chevron =
+    .tooltiptext = Mussar dapli segnapaginas
+bookmarks-sidebar-content =
+    .aria-label = Segnapaginas
+bookmarks-menu-button =
+    .label = Menu da segnapaginas
+bookmarks-other-bookmarks-menu =
+    .label = Auters segnapaginas
+bookmarks-mobile-bookmarks-menu =
+    .label = Segnapaginas mobils
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Zuppentar la trav laterala da segnapaginas
+           *[other] Mussar la trav laterala da segnapaginas
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Zuppentar la trav d'utensils da segnapaginas
+           *[other] Mussar la trav d'utensils da segnapaginas
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Allontanar il menu da segnapaginas da la trav d'utensils
+           *[other] Agiuntar il menu da segnapaginas a la trav d'utensils
+        }
+bookmarks-search =
+    .label = Tschertgar en ils segnapaginas
+bookmarks-tools =
+    .label = Utensils da segnapaginas
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Trav d'utensils dals segnapaginas
+    .accesskey = u
+    .aria-label = Segnapaginas
+bookmarks-toolbar-menu =
+    .label = Trav d'utensils dals segnapaginas
+bookmarks-toolbar-placeholder =
+    .title = Simbols dals segnapaginas
+bookmarks-toolbar-placeholder-button =
+    .label = Simbols dals segnapaginas
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Segnapaginas
+library-bookmarks-bookmark-this-page =
+    .label = Agiuntar in segnapagina…
+library-bookmarks-bookmark-edit =
+    .label = Modifitgar quest segnapagina
+library-recent-activity-label = Activitad recenta
+
+## More items
+
+more-menu-go-offline =
+    .label = Lavurar offline
+    .accesskey = o

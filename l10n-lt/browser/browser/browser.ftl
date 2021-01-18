@@ -505,3 +505,71 @@ fullscreen-exit-mac-button = Grįžti iš viso ekrano (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> valdo jūsų žymeklį. Spustelėkite Esc, norėdami atgauti valdymą.
 pointerlock-warning-no-domain = Šis dokumentas valdo jūsų žymeklį. Spustelėkite Esc, norėdami atgauti valdymą.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Rodyti visą adresyną
+bookmarks-recent-bookmarks =
+    .value = Paskiausiai įtraukti į adresyną
+bookmarks-toolbar-chevron =
+    .tooltiptext = Kiti adresai
+bookmarks-sidebar-content =
+    .aria-label = Adresynas
+bookmarks-menu-button =
+    .label = Adresyno meniu
+bookmarks-other-bookmarks-menu =
+    .label = Kiti adresai
+bookmarks-mobile-bookmarks-menu =
+    .label = Mobilusis adresynas
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Nerodyti adresyno parankinėje
+           *[other] Rodyti adresyną parankinėje
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Slėpti adresyno juostą
+           *[other] Rodyti adresyno juostą
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Išimti adresyno meniu iš priemonių juostos
+           *[other] Pridėti adresyno meniu į priemonių juostą
+        }
+bookmarks-search =
+    .label = Ieškoti adresyne
+bookmarks-tools =
+    .label = Adresyno priemonės
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Adresyno juosta
+    .accesskey = A
+    .aria-label = Adresynas
+bookmarks-toolbar-menu =
+    .label = Adresyno juosta
+bookmarks-toolbar-placeholder =
+    .title = Adresyno juostos elementai
+bookmarks-toolbar-placeholder-button =
+    .label = Adresyno juostos elementai
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Adresynas
+library-bookmarks-bookmark-this-page =
+    .label = Įrašyti į adresyną
+library-bookmarks-bookmark-edit =
+    .label = Taisyti adresyno įrašą
+library-recent-activity-label = Paskiausia veikla
+
+## More items
+
+more-menu-go-offline =
+    .label = Atsijungti nuo tinklo
+    .accesskey = t

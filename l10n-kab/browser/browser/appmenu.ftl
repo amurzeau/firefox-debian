@@ -13,15 +13,26 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = Asfaylu amaynut
+appmenuitem-new-private-window =
+    .label = Asfaylu amaynut n tunigin tusligt
+
+## Zoom and Fullscreen Controls
+
 appmenuitem-zoom-enlarge =
     .label = Semɣeṛ
 appmenuitem-zoom-reduce =
     .label = Semẓi
+appmenuitem-fullscreen =
+    .label = Agdil Ačaran
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Mtawi tura
+appmenuitem-save-page =
+    .label = Sekles asebter di...
 
 ## What's New panel in App menu.
 

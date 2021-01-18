@@ -474,3 +474,70 @@ fullscreen-exit-mac-button = Толық экраннан шығу (Esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> курсорыңызды басқаруда. Басқаруды қайта алу үшін Esc басыңыз.
 pointerlock-warning-no-domain = Бұл құжат курсорыңызды басқаруда. Басқаруды қайта алу үшін Esc басыңыз.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Барлық бетбелгілерді көрсету
+bookmarks-recent-bookmarks =
+    .value = Соңынан қосылғандар
+bookmarks-toolbar-chevron =
+    .tooltiptext = Көбірек бетбелгілерді көрсету
+bookmarks-sidebar-content =
+    .aria-label = Бетбелгілер
+bookmarks-menu-button =
+    .label = Бетбелгілер мәзірі
+bookmarks-other-bookmarks-menu =
+    .label = Басқа бетбелгілер
+bookmarks-mobile-bookmarks-menu =
+    .label = Мобильді бетбелгілер
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Бетбелгілер бүйір панелін жасыру
+           *[other] Бүйір панелін қарау
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Бетбелгілер құралдар панелін жасыру
+           *[other] Бетбелгілер панелін қарау
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Бетбелгілер мәзірін құралдар панелінен алып тастау
+           *[other] Бетбелгілер мәзірін құралдар панеліне қосу
+        }
+bookmarks-search =
+    .label = Бетбелгілер ішінен іздеу
+bookmarks-tools =
+    .label = Бетбелгілер құралдары
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Бетбелгілер панелі
+    .accesskey = Б
+    .aria-label = Бетбелгілер
+bookmarks-toolbar-menu =
+    .label = Бетбелгілер панелі
+bookmarks-toolbar-placeholder =
+    .title = Бетбелгілер панелінің элементтері
+bookmarks-toolbar-placeholder-button =
+    .label = Бетбелгілер панелінің элементтері
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Бетбелгілер
+library-bookmarks-bookmark-this-page =
+    .label = Бұл бетті бетбелгілерге қосу
+library-bookmarks-bookmark-edit =
+    .label = Бетбелгіні түзету
+
+## More items
+
+more-menu-go-offline =
+    .label = Дербес жұмыс істеу
+    .accesskey = Д

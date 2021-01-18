@@ -461,3 +461,70 @@ fullscreen-exit-mac-button = Ieși din modul ecran complet (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> controlează acum cursorul. Apasă Esc pentru a prelua controlul.
 pointerlock-warning-no-domain = Documentul controlează acum cursorul. Apasă Esc pentru a prelua controlul.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Afișează toate marcajele
+bookmarks-recent-bookmarks =
+    .value = Marcate recent
+bookmarks-toolbar-chevron =
+    .tooltiptext = Afișează mai multe marcaje
+bookmarks-sidebar-content =
+    .aria-label = Marcaje
+bookmarks-menu-button =
+    .label = Meniu de marcaje
+bookmarks-other-bookmarks-menu =
+    .label = Alte marcaje
+bookmarks-mobile-bookmarks-menu =
+    .label = Marcaje mobile
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Ascunde bara laterală de marcaje
+           *[other] Vezi bara laterală de marcaje
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Ascunde bara de marcaje
+           *[other] Vezi bara de marcaje
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Elimină meniul de marcaje din bara de unelte
+           *[other] Adaugă meniul de marcaje în bara de unelte
+        }
+bookmarks-search =
+    .label = Caută marcaje
+bookmarks-tools =
+    .label = Instrumente pentru marcaje
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Bară de marcaje
+    .accesskey = B
+    .aria-label = Marcaje
+bookmarks-toolbar-menu =
+    .label = Bară de marcaje
+bookmarks-toolbar-placeholder =
+    .title = Elemente pe bara de marcaje
+bookmarks-toolbar-placeholder-button =
+    .label = Elemente pe bara de marcaje
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Marcaje
+library-bookmarks-bookmark-this-page =
+    .label = Marchează pagina
+library-bookmarks-bookmark-edit =
+    .label = Editează acest marcaj
+
+## More items
+
+more-menu-go-offline =
+    .label = Lucrează offline
+    .accesskey = k

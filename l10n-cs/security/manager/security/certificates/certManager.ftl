@@ -14,11 +14,12 @@ certmgr-tab-servers =
     .label = Servery
 certmgr-tab-ca =
     .label = Autority
-certmgr-mine = Pro vaši osobní identifikaci jsou dostupné tyto certifikáty
+certmgr-mine = Tyto certifikáty od následujících organizací slouží k vaší osobní identifikaci
 certmgr-remembered = Tyto certifikáty slouží k vaší identifikaci na webových stránkách
-certmgr-people = Pro identifikaci ostatních lidí jsou dostupné tyto certifikáty
-certmgr-servers = Pro identifikaci serverů jsou dostupné tyto certifikáty
-certmgr-ca = Pro identifikaci certifikačních autorit jsou dostupné tyto certifikáty
+certmgr-people = Tyto certifikáty jsou dostupné pro identifikaci následujících lidí
+certmgr-servers = Tyto certifikáty jsou dostupné pro identifikaci následujících serverů
+certmgr-server = Tento seznam obsahuje výjimky pro chyby serverových certifikátů
+certmgr-ca = Tyto certifikáty jsou dostupné pro identifikaci certifikačních autorit
 certmgr-detail-general-tab-title =
     .label = Obecné
     .accesskey = O
@@ -59,7 +60,7 @@ certmgr-cert-name =
 certmgr-cert-server =
     .label = Server
 certmgr-override-lifetime =
-    .label = Životnost
+    .label = Platnost
 certmgr-token-name =
     .label = Bezpečnostní zařízení
 certmgr-begins-on = Vydáno dne
@@ -155,12 +156,16 @@ edit-trust-ca = Certifikát „{ $certName }“ představuje Certifikační auto
 
 delete-user-cert-title =
     .title = Smazání osobních certifikátů
-delete-user-cert-confirm = Opravdu chcete smazat tyto certifikáty?
+delete-user-cert-confirm = Opravdu chcete tyto certifikáty smazat?
 delete-user-cert-impact = Pokud smažete jeden ze svých vlastních certifikátů, nebudete moci dále prokazovat svoji identitu.
 delete-ssl-cert-title =
     .title = Smazání výjimek pro certifikáty serverů
 delete-ssl-cert-confirm = Opravdu chcete smazat výjimky pro tyto servery?
 delete-ssl-cert-impact = Pokud odstraníte výjimku, obnovíte pro daný server obvyklé bezpečnostní kontroly a vyžadování platného certifikátu.
+delete-ssl-override-title =
+    .title = Smazání výjimky pro certifikát serveru
+delete-ssl-override-confirm = Opravdu chcete smazat výjimku pro tento server?
+delete-ssl-override-impact = Pokud smažete výjimku pro server, obnovíte pro daný server obvyklé bezpečnostní kontroly a server pak bude požadovat platný certifikát.
 delete-ca-cert-title =
     .title = Smazání nebo nedůvěra certifikátů CA
 delete-ca-cert-confirm = Požádali jste o smazání certifikátů CA. V případě vestavěných certifikátů jim bude odebrána důvěra, což má stejný efekt jako jejich smazání. Opravdu je chcete smazat nebo jim přestat důvěřovat?
@@ -210,6 +215,13 @@ cert-not-verified_algorithm-disabled = Certifikát nemohl být ověřen, protož
 cert-not-verified-unknown = Certifikát nemohl být z neznámého důvodu ověřen.
 # Used to indicate that the user chose not to send a client authentication certificate to a server that requested one in a TLS handshake.
 send-no-client-certificate = Neposílat klientský certifikát
+# Used when no cert is stored for an override
+no-cert-stored-for-override = (neuloženo)
+
+## Used to show whether an override is temporary or permanent
+
+permanent-override = Trvale
+temporary-override = Dočasně
 
 ## Add Security Exception dialog
 

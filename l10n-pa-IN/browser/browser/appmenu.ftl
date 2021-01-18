@@ -13,20 +13,30 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = ਨਵੀਂ ਵਿੰਡੋ
+appmenuitem-new-private-window =
+    .label = ਨਵੀਂ ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋ
+
+## Zoom and Fullscreen Controls
+
 appmenuitem-zoom-enlarge =
     .label = ਜ਼ੂਮ ਇਨ
 appmenuitem-zoom-reduce =
     .label = ਜ਼ੂਮ ਆਉਟ
+appmenuitem-fullscreen =
+    .label = ਪੂਰੀ ਸਕਰੀਨ ਉੱਤੇ
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = ਹੁਣੇ ਸਿੰਕ ਕਰੋ
+appmenuitem-save-page =
+    .label = …ਸਫ਼ੇ ਨੂੰ ਇੰਝ ਸੰਭਾਲੋ
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = ਨਵਾਂ ਕੀ ਹੈ
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

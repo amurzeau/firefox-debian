@@ -154,8 +154,8 @@ enable-password-sync-notification-message =
 enable-password-sync-preferences-button =
     .label =
         { PLATFORM() ->
-            [windows] Posjeti { -sync-brand-short-name } mogućnosti
-           *[other] Posjeti { -sync-brand-short-name } postavke
+            [windows] Posjeti mogućnosti za { -sync-brand-short-name }
+           *[other] Posjeti postavke za { -sync-brand-short-name }
         }
     .accesskey = P
 about-logins-enable-password-sync-dont-ask-again-button =
@@ -170,7 +170,13 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Ukloniti ovu prijavu?
 confirm-delete-dialog-message = Ova radnja je nepovratna.
 about-logins-confirm-remove-dialog-confirm-button = Ukloni
-about-logins-confirm-remove-all-dialog-confirm-button = Ukloni sve
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] Ukloni
+        [one] Ukloni
+        [few] Ukloni sve
+       *[other] Ukloni sve
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] Da, ukloni ovu prijavu
@@ -197,9 +203,18 @@ about-logins-confirm-remove-all-sync-dialog-title =
         [few] Ukloniti { $count } prijave sa svih uređaja?
        *[other] Ukloniti { $count } prijava sa svih uređaja?
     }
+about-logins-confirm-remove-all-sync-dialog-message =
+    { $count ->
+        [1] Ovo će ukloniti prijavu spremljenu u { -brand-short-name }u na svim uređajima sinkroniziranim s tvojim { -fxaccount-brand-name }. Ovo će ukloniti i upozorenja o curenju podataka koja se nalaze ovdje. Ovu radnju nije moguće poništiti.
+        [one] Ovo će ukloniti prijavu spremljenu u { -brand-short-name }u na svim uređajima sinkroniziranim s tvojim { -fxaccount-brand-name }. Ovo će ukloniti i upozorenja o curenju podataka koja se nalaze ovdje. Ovu radnju nije moguće poništiti.
+        [few] Ovo će ukloniti prijave spremljene u { -brand-short-name }u na svim uređajima sinkroniziranim s tvojim { -fxaccount-brand-name }. Ovo će ukloniti i upozorenja o curenju podataka koja se nalaze ovdje. Ovu radnju nije moguće poništiti.
+       *[other] Ovo će ukloniti prijave spremljene u { -brand-short-name }u na svim uređajima sinkroniziranim s tvojim { -fxaccount-brand-name }. Ovo će ukloniti i upozorenja o curenju podataka koja se nalaze ovdje. Ovu radnju nije moguće poništiti.
+    }
 about-logins-confirm-export-dialog-title = Izvezi prijave i lozinke
 about-logins-confirm-export-dialog-message = Vaše lozinke bit će spremljene kao čitljivi tekst (npr. Loš@L0zinka) pa će ih moći vidjeti svi koji mogu otvoriti izvezenu datoteku.
 about-logins-confirm-export-dialog-confirm-button = Izvoz…
+about-logins-alert-import-title = Uvoz je dovršen
+about-logins-alert-import-message = Pogledaj detaljni sažetak uvoza
 confirm-discard-changes-dialog-title = Odbaciti nespremljene promjene?
 confirm-discard-changes-dialog-message = Sve nespremljene promjene će se izgubiti.
 confirm-discard-changes-dialog-confirm-button = Odbaci
@@ -261,3 +276,34 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV dokument
        *[other] CSV datoteka
     }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Uvoz je dovršen
+about-logins-import-dialog-items-added =
+    { $count ->
+        [one] <span>Dodano novih prijava:</span> <span data-l10n-name="count">{ $count }</span>
+        [few] <span>Dodano novih prijava:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Dodano novih prijava:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+        [one] <span>Ažurirano postojećih prijava:</span> <span data-l10n-name="count">{ $count }</span>
+        [few] <span>Ažurirano postojećih prijava:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Ažurirano postojećih prijava:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+        [one] Pronađeno dvostrukih prijava:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nije uvezeno)</span>
+        [few] Pronađeno dvostrukih prijava:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nije uvezeno)</span>
+       *[other] Pronađeno dvostrukih prijava:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nije uvezeno)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+        [one] <span>Greške:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nije uvezeno)</span>
+        [few] <span>Greške:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nije uvezeno)</span>
+       *[other] <span>Greške:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nije uvezeno)</span>
+    }
+about-logins-import-dialog-done = Gotovo

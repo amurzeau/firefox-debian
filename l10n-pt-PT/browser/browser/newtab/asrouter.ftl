@@ -126,6 +126,9 @@ cfr-whatsnew-lockwise-take-link-text = Obter a aplicação
 
 cfr-whatsnew-searchbar-title = Escreva menos e encontre mais, com a barra de endereço
 cfr-whatsnew-searchbar-body-topsites = Agora, basta selecionar a barra de endereço e será expandida uma caixa com ligações para os principais sites.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Ícone de lupa
 
 ## Picture-in-Picture
@@ -281,3 +284,13 @@ cfr-whatsnew-media-keys-button = Saber mais
 
 cfr-whatsnew-search-shortcuts-header = Atalhos de pesquisa na barra de endereço
 cfr-whatsnew-search-shortcuts-body = Agora, quando digita um motor de pesquisa ou um site específico na barra de endereço, será apresentado um atalho azul nas sugestões de pesquisa. Selecione este atalho para completar a sua pesquisa diretamente da barra de endereço.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Proteção contra super-cookies maliciosos
+cfr-whatsnew-supercookies-body = Os sites podem, secretamente, anexar uma “super-cookie” ao seu navegador que pode seguir o que faz na Internet, mesmo depois de limpar os cookies. O { -brand-short-name } fornece agora uma forte proteção contra super-cookies, de modo a que estas não possam ser utilizadas para monitorizar as suas atividades online de um site para outro.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = Marcadores melhorados
+cfr-whatsnew-bookmarking-body = É mais fácil seguir os seus sites favoritos. O { -brand-short-name } agora lembra-se da sua localização preferida para os favoritos guardados, mostra a barra de ferramentas de favoritos por predefinição em novos separadores e oferece um acesso fácil ao resto dos seus favoritos através de uma pasta na barra de ferramentas.

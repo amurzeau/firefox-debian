@@ -120,6 +120,9 @@ cfr-whatsnew-lockwise-take-link-text = Obtener le application
 
 cfr-whatsnew-searchbar-title = Scribe minus, trova plus con le barra de adresse
 cfr-whatsnew-searchbar-body-topsites = Ora, selige le barra de adresse, e un quadro apparera con un lista de ligamines a tu sitos principal.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Icone de lupa
 
 ## Picture-in-Picture
@@ -272,5 +275,15 @@ cfr-whatsnew-media-keys-button = Apprender como
 
 ## What's new: Search shortcuts
 
-cfr-whatsnew-search-shortcuts-header = Vias breve de recerca in le barra del adresses
-cfr-whatsnew-search-shortcuts-body = Quando tu insere un motor de recerca o un sito specific in le barra del adresses, un via breve blau apparera in le suggestiones infra. Selige ille via breve pro completar tu recerca directemente del barra del adresses.
+cfr-whatsnew-search-shortcuts-header = Accessos directe de recerca in le barra de adresses
+cfr-whatsnew-search-shortcuts-body = Quando tu insere un motor de recerca o un sito specific in le barra de adresses, un accesso directe blau apparera in le suggestiones de recerca sub le barra. Selige iste accesso directe pro completar tu recerca directemente ab le barra del adresses.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Protection contra le supercookies malevolente
+cfr-whatsnew-supercookies-body = Sitos web pote secretemente attachar a tu navigator un "supercookie" que pote sequer te per le web, mesmo post que tu ha radite le cookies. { -brand-short-name } ora forni un protection forte contra le supercookies de maniera que illos non pote esser usate pro traciar tu activitates de sito a sito.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = Melior marcapagina
+cfr-whatsnew-bookmarking-body = Es plus facile sequer tu sitos favorite. { -brand-short-name } ora recorda tu loco preferite pro salvar marcapaginas, monstra per predefinition le barra de marcapaginas sur nove schedas, e te da accesso facile al resto de tu marcapaginas per medio de un dossier sur le barra de instrumentos.

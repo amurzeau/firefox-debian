@@ -129,6 +129,9 @@ cfr-whatsnew-lockwise-take-link-text = Преузмите апликацију
 
 cfr-whatsnew-searchbar-title = Куцајте мање, нађите више помоћу адресне траке
 cfr-whatsnew-searchbar-body-topsites = Сада само одаберите адресну траку и оквир ће се проширити са везама до ваших најпосећенијих страница.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Иконица лупе
 
 ## Picture-in-Picture
@@ -263,6 +266,8 @@ cfr-doorhanger-doh-secondary-button = Онемогући
 
 ## Fission Experiment Message
 
+cfr-doorhanger-fission-body-approved = Ваша приватност је битна. { -brand-short-name } сада изолује веб странице, што хакерима отежава крађу лозинки, бројева кредитних картица и других осетљивих података.
+cfr-doorhanger-fission-header = Изолација сајта
 cfr-doorhanger-fission-primary-button = У реду, разумем
     .accesskey = O
 cfr-doorhanger-fission-secondary-button = Сазнајте више
@@ -276,4 +281,11 @@ cfr-whatsnew-clear-cookies-image-alt = Колачић је блокирао ил
 
 ## What's new: Media controls message
 
+cfr-whatsnew-media-keys-header = Више медијских контрола
+cfr-whatsnew-media-keys-body = Репродукујте и паузирајте звук или видео преко тастатуре или слушалица, олакшавајући тако управљање медијима из другог језичка, програма или док је рачунар закључан. Такође се можете користити тастерима напред и назад за кретање између нумера.
 cfr-whatsnew-media-keys-button = Сазнајте како
+
+## What's new: Search shortcuts
+
+cfr-whatsnew-search-shortcuts-header = Пречице за претраживање у адресној траци
+cfr-whatsnew-search-shortcuts-body = Сада кад у адресну траку укуцате неки претраживач или одређени сајт, појавиће се плава пречица у предлозима за претраживање испод. Изаберите ту пречицу за довршавање претраживања дирекнто у адресној траци.

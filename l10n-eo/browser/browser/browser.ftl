@@ -302,6 +302,7 @@ identity-https-only-info-no-upgrade = Ne eblas ŝanĝi la konekton HTTP.
 identity-permissions =
     .value = Permesoj
 identity-permissions-storage-access-header = Interretejaj kuketoj
+identity-permissions-storage-access-hint = Tiuj ĉi aliaj partoprenantoj povas uzi interretejajn kuketojn kaj retejajn datumojn dum vi estas en tiu ĉi retejo,
 identity-permissions-reload-hint = Vi eble bezonos reŝargi la paĝon por ke la ŝanĝoj estu aplikitaj.
 identity-permissions-empty = Vi ne donis iun ajn specialan permeson al tiu ĉi retejo.
 identity-clear-site-data =
@@ -350,6 +351,7 @@ browser-window-close-button =
 browser-import-button2 =
     .label = Enporti legosignojn…
     .tooltiptext = Enporti legosignojn de alia retumilo en { -brand-short-name }.
+bookmarks-toolbar-empty-message = Por rapida aliro, metu viajn legosignojn ĉi tien, en la strion de legosignoj. <a data-l10n-name="manage-bookmarks">Administri legosignojn…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -501,3 +503,70 @@ fullscreen-exit-mac-button = Eliri el plenekrana reĝimo (esk)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> regas vian musmontrilon. Premu Esk por repreni la regadon.
 pointerlock-warning-no-domain = Tiu ĉi dokumento regas vian musmontrilon. Premu Esk por repreni la regadon.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Montri ĉiujn legosignojn
+bookmarks-recent-bookmarks =
+    .value = Ĵusaj legosignoj
+bookmarks-toolbar-chevron =
+    .tooltiptext = Montri pliajn legosignojn
+bookmarks-sidebar-content =
+    .aria-label = Legosignoj
+bookmarks-menu-button =
+    .label = Menuo de legosignoj
+bookmarks-other-bookmarks-menu =
+    .label = Aliaj legosignoj
+bookmarks-mobile-bookmarks-menu =
+    .label = Poŝaparataj legosignoj
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Kaŝi flankan strion de legosignoj
+           *[other] Montri flankan strion de legosignoj
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Kaŝi ilaron de legosignoj
+           *[other] Montri ilaron de legosignoj
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Forigi la menuon de legosignojn el la ilaro
+           *[other] Aldoni la menuon de legosignoj al la ilaro
+        }
+bookmarks-search =
+    .label = Serĉi legosignojn
+bookmarks-tools =
+    .label = Iloj por legosignoj
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Ilaro de legosignoj
+    .accesskey = e
+    .aria-label = Legosignoj
+bookmarks-toolbar-menu =
+    .label = Ilaro de legosignoj
+bookmarks-toolbar-placeholder =
+    .title = Elementoj de ilaro de legosignoj
+bookmarks-toolbar-placeholder-button =
+    .label = Elementoj de ilaro de legosignoj
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Legosignoj
+library-bookmarks-bookmark-this-page =
+    .label = Aldoni legosignon por tiu ĉi paĝo
+library-bookmarks-bookmark-edit =
+    .label = Redakti tiun ĉi legosignon
+
+## More items
+
+more-menu-go-offline =
+    .label = Labori malkonektite
+    .accesskey = L

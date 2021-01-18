@@ -10,11 +10,22 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = නව කවුළුවක්
+appmenuitem-new-private-window =
+    .label = නව පුද්ගලික කවුළුව
+
+## Zoom and Fullscreen Controls
+
+appmenuitem-fullscreen =
+    .label = පූර්ණ තිරය
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = දැන් සම්මුහුර්ත කරන්න
+appmenuitem-save-page =
+    .label = පිටුව සුරකින්න...
 
 ## What's New panel in App menu.
 

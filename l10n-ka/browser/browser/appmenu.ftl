@@ -13,20 +13,30 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = ახალი ფანჯარა
+appmenuitem-new-private-window =
+    .label = ახალი პირადი ფანჯარა
+
+## Zoom and Fullscreen Controls
+
 appmenuitem-zoom-enlarge =
     .label = მიახლოება
 appmenuitem-zoom-reduce =
     .label = დაშორება
+appmenuitem-fullscreen =
+    .label = სრული ეკრანი
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = დასინქრონება ახლავე
+appmenuitem-save-page =
+    .label = გვერდის შენახვა როგორც…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = რა სიახლეებია
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

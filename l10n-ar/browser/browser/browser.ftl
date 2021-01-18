@@ -509,3 +509,70 @@ fullscreen-exit-mac-button = غادر ملء الشاشة (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = يتحكم <span data-l10n-name="domain">{ $domain }</span> في مؤشرك. اضغط Esc لتستعيد التحكم.
 pointerlock-warning-no-domain = يتحكم هذا المستند في مؤشرك. اضغط Esc لتستعيد التحكم.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = أظهِر كل العلامات
+bookmarks-recent-bookmarks =
+    .value = المعلّم حديثا
+bookmarks-toolbar-chevron =
+    .tooltiptext = أظهِر المزيد من العلامات
+bookmarks-sidebar-content =
+    .aria-label = العلامات
+bookmarks-menu-button =
+    .label = قائمة العلامات
+bookmarks-other-bookmarks-menu =
+    .label = العلامات الأخرى
+bookmarks-mobile-bookmarks-menu =
+    .label = علامات المحمول
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] أخفِ شريط العلامات الجانبي
+           *[other] أظهِر شريط العلامات الجانبي
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] أخفِ شريط أدوات العلامات
+           *[other] أظهِر شريط أدوات العلامات
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] أزِل قائمة العلامات من شريط الأدوات
+           *[other] أضِف قائمة العلامات إلى شريط الأدوات
+        }
+bookmarks-search =
+    .label = ابحث في العلامات
+bookmarks-tools =
+    .label = أدوات العلامات
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = شريط العلامات
+    .accesskey = ش
+    .aria-label = العلامات
+bookmarks-toolbar-menu =
+    .label = شريط العلامات
+bookmarks-toolbar-placeholder =
+    .title = عناصر شريط العلامات
+bookmarks-toolbar-placeholder-button =
+    .label = عناصر شريط العلامات
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = العلامات
+library-bookmarks-bookmark-this-page =
+    .label = علّم هذه الصفحة
+library-bookmarks-bookmark-edit =
+    .label = حرّر هذه العلامة
+
+## More items
+
+more-menu-go-offline =
+    .label = اعمل دون اتصال
+    .accesskey = ع

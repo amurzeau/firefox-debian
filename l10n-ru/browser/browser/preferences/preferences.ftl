@@ -353,7 +353,7 @@ applications-use-os-default-label =
 
 drm-content-header = Содержимое использующее технические средства защиты авторских прав (DRM)
 play-drm-content =
-    .label = Воспроизводить контролируемое DRM содержимое
+    .label = Воспроизводить защищённое DRM содержимое
     .accesskey = п
 play-drm-content-learn-more = Подробнее
 update-application-title = Обновления { -brand-short-name }
@@ -472,7 +472,7 @@ home-restore-defaults =
 home-mode-choice-default =
     .label = Домашняя страница Firefox (по умолчанию)
 home-mode-choice-custom =
-    .label = Мои URL...
+    .label = Мой URL...
 home-mode-choice-blank =
     .label = Пустая страница
 home-homepage-custom-url =
@@ -503,6 +503,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Сайты, которые вы чаще всего посещаете
 home-prefs-topsites-by-option-sponsored =
     .label = Топ сайтов спонсоров
+home-prefs-shortcuts-header =
+    .label = Ярлыки
+home-prefs-shortcuts-description = Сайты, которые вы сохраняете или посещаете
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Спонсируемые ярлыки
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -510,6 +515,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Рекомендовано { $provider }
 home-prefs-recommended-by-description-update = Интересные материалы из Интернета, подобранные { $provider }
+home-prefs-recommended-by-description-new = Особый контент, курируемый { $provider }, частью семейства { -brand-product-name }
 
 ##
 
@@ -518,8 +524,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Статьи спонсоров
 home-prefs-highlights-header =
     .label = Избранное
-home-prefs-recent-activity-header =
-    .label = Последние действия
 home-prefs-highlights-description = Избранные сайты, которые вы сохранили или посещали
 home-prefs-highlights-option-visited-pages =
     .label = Посещённые страницы
@@ -529,6 +533,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Недавние загрузки
 home-prefs-highlights-option-saved-to-pocket =
     .label = Страницы, сохранённые в { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Последние действия
+home-prefs-recent-activity-description = Подборка недавних сайтов и контента
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -536,6 +543,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Заметки
 home-prefs-snippets-description = Обновления от { -vendor-short-name } и { -brand-product-name }
+home-prefs-snippets-description-new = Советы и новости от { -vendor-short-name } и { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -574,7 +582,7 @@ search-show-suggestions-above-history-option =
     .label = Отображать поисковые предложения перед историей веб-сёрфинга при использовании панели адреса
 search-show-suggestions-private-windows =
     .label = Отображать поисковые предложения в Приватных окнах
-suggestions-addressbar-settings-generic = Изменить настройки для других предложений для адресной строки
+suggestions-addressbar-settings-generic = Изменить другие настройки предложений в адресной строке
 search-suggestions-cant-show = При использовании панели адреса поисковые предложения отображаться не будут, так как вы настроили { -brand-short-name } никогда не запоминать историю.
 search-one-click-header = Поиск одним щелчком
 search-one-click-header2 = Значки поисковых систем
@@ -928,9 +936,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = из открытых вкладок
     .accesskey = к
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = из ярлыков
+    .accesskey = з
 addressbar-locbar-topsites-option =
     .label = из топа сайтов
     .accesskey = й
+addressbar-locbar-engines-option =
+    .label = из поисковых систем
+    .accesskey = ы
 addressbar-suggestions-settings = Изменить настройки для предложений поисковых систем
 
 ## Privacy Section - Content Blocking

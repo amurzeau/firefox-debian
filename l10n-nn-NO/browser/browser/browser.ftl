@@ -503,3 +503,70 @@ fullscreen-exit-mac-button = Avslutt fullskjerm (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> har kontroll over peikaren din. Trykk Esc for å ta tilbake kontrollen.
 pointerlock-warning-no-domain = Dette dokumentet har kontroll over musepeikaren. Trykk på Esc for å ta tilbake kontrollen.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Vis alle bokmerke
+bookmarks-recent-bookmarks =
+    .value = Nyleg bokmerkt
+bookmarks-toolbar-chevron =
+    .tooltiptext = Vis fleire bokmerke
+bookmarks-sidebar-content =
+    .aria-label = Bokmerke
+bookmarks-menu-button =
+    .label = Bokmerkemeny
+bookmarks-other-bookmarks-menu =
+    .label = Andre bokmerke
+bookmarks-mobile-bookmarks-menu =
+    .label = Mobile bokmerke
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Gøym bokmerkesidestolpen
+           *[other] Vis sidestolpe for bokmerke
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Gøym bokmerkeverktøylinja
+           *[other] Vis verktøylinje for bokmerke
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Fjern bokmerkemeny frå verktøylinja
+           *[other] Legg til bokmerkemeny i verktøylinja
+        }
+bookmarks-search =
+    .label = Søk i bokmerke
+bookmarks-tools =
+    .label = Verktøy for bokmerke
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Bokmerke
+    .accesskey = B
+    .aria-label = Bokmerke
+bookmarks-toolbar-menu =
+    .label = Bokmerke
+bookmarks-toolbar-placeholder =
+    .title = Element i bokmerkelinja
+bookmarks-toolbar-placeholder-button =
+    .label = Element i bokmerkelinja
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Bokmerke
+library-bookmarks-bookmark-this-page =
+    .label = Bokmerk denne sida
+library-bookmarks-bookmark-edit =
+    .label = Rediger dette bokmerket
+
+## More items
+
+more-menu-go-offline =
+    .label = Arbeid fråkopla
+    .accesskey = r

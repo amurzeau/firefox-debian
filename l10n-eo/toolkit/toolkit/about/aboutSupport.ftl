@@ -185,6 +185,25 @@ remote-debugging-url = Retadreso
 
 ##
 
+support-third-party-modules-title = Moduloj de aliaj
+support-third-party-modules-module = Dosiero de modulo
+support-third-party-modules-version = Versio de dosiero
+support-third-party-modules-vendor = Informo de provizanto
+support-third-party-modules-process = Tipo kaj identigilo de procezo
+support-third-party-modules-thread = Fadeno
+support-third-party-modules-uptime = Daŭro de procezo (ms)
+support-third-party-modules-duration = Daŭro de ŝargado (ms)
+support-third-party-modules-no-value = (sen valoro)
+support-third-party-modules-expand =
+    .title = Montri detalan informon
+support-third-party-modules-collapse =
+    .title = Kaŝi detalan informon
+support-third-party-modules-unsigned-icon =
+    .title = Tiu ĉi modulo ne estas subskribita
+support-third-party-modules-down-icon =
+    .title = Montri detalan informon
+support-third-party-modules-up-icon =
+    .title = Kaŝi detalan informon
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =

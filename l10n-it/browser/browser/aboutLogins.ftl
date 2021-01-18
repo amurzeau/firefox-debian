@@ -89,6 +89,7 @@ login-item-new-login-title = Inserisci nuove credenziali
 login-item-edit-button = Modifica
 about-logins-login-item-remove-button = Rimuovi
 login-item-origin-label = Indirizzo web
+login-item-tooltip-message = Assicurarsi che corrisponda esattamente all’indirizzo del sito web a cui si accede.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Nome utente
@@ -179,7 +180,11 @@ about-logins-confirm-remove-dialog-title = Rimuovere queste credenziali?
 confirm-delete-dialog-message = Questa operazione non può essere annullata.
 about-logins-confirm-remove-dialog-confirm-button = Rimuovi
 
-about-logins-confirm-remove-all-dialog-confirm-button = Rimuovi tutte
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+  { $count ->
+     [1] Rimuovi
+    *[other] Rimuovi tutte
+  }
 about-logins-confirm-remove-all-dialog-checkbox-label = Sì, rimuovi queste credenziali
 about-logins-confirm-remove-all-dialog-title =
   { $count ->
@@ -200,6 +205,9 @@ about-logins-confirm-remove-all-sync-dialog-message = Questa operazione rimuover
 about-logins-confirm-export-dialog-title = Esportazione credenziali e password
 about-logins-confirm-export-dialog-message = Le password verranno salvate come testo leggibile (ad esempio “Password123”). Chiunque abbia accesso al file esportato potrà vederle.
 about-logins-confirm-export-dialog-confirm-button = Esporta…
+
+about-logins-alert-import-title = Importazione completata
+about-logins-alert-import-message = Visualizza il rapporto dettagliato dell’importazione
 
 confirm-discard-changes-dialog-title = Ignorare le modifiche non salvate?
 confirm-discard-changes-dialog-message = Tutte le modifiche non salvate andranno perse.
@@ -265,3 +273,14 @@ about-logins-import-file-picker-csv-filter-title =
       [macos] Documento CSV
      *[other] File CSV
   }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Importazione completata
+about-logins-import-dialog-items-added = <span>Nuove credenziali aggiunte:</span> <span data-l10n-name="count">{ $count }</span>
+about-logins-import-dialog-items-modified = <span>Credenziali esistenti aggiornate:</span> <span data-l10n-name="count">{ $count }</span>
+about-logins-import-dialog-items-no-change = <span>Credenziali duplicate:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(non importate)</span>
+about-logins-import-dialog-items-error = <span>Errori:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(non importate)</span>
+about-logins-import-dialog-done = Fatto

@@ -169,7 +169,12 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Diese Zugangsdaten entfernen?
 confirm-delete-dialog-message = Diese Aktion kann nicht rückgängig gemacht werden.
 about-logins-confirm-remove-dialog-confirm-button = Entfernen
-about-logins-confirm-remove-all-dialog-confirm-button = Alle entfernen
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] Entfernen
+        [one] Entfernen
+       *[other] Alle entfernen
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] Ja, diese Zugangsdaten entfernen
@@ -201,6 +206,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Zugangsdaten und Passwörter exportieren
 about-logins-confirm-export-dialog-message = Ihre Passwörter werden als lesbarer Text gespeichert (z.B. P@ssw0rt). Dadurch hat jede Person, welche die exportierte Datei öffnen kann, Zugriff auf das unverschlüsselte Passwort.
 about-logins-confirm-export-dialog-confirm-button = Exportieren…
+about-logins-alert-import-title = Importieren abgeschlossen
+about-logins-alert-import-message = Detaillierte Import-Zusammenfassung anzeigen
 confirm-discard-changes-dialog-title = Nicht gespeicherte Änderungen verwerfen?
 confirm-discard-changes-dialog-message = Alle nicht gespeicherten Änderungen gehen verloren.
 confirm-discard-changes-dialog-confirm-button = Verwerfen
@@ -262,3 +269,30 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV-Dokument
        *[other] CSV-Datei
     }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Importieren abgeschlossen
+about-logins-import-dialog-items-added =
+    { $count ->
+        [one] <span>Neue Zugangsdaten hinzugefügt:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Neue Zugangsdaten hinzugefügt:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+        [one] <span>Bestehende Zugangsdaten aktualisiert:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Bestehende Zugangsdaten aktualisiert:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+        [one] <span>Doppelte Zugangsdaten gefunden:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nicht importiert)</span>
+       *[other] <span>Doppelte Zugangsdaten gefunden:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nicht importiert)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+        [one] <span>Fehler:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nicht importiert)</span>
+       *[other] <span>Fehler:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nicht importiert)</span>
+    }
+about-logins-import-dialog-done = Fertig

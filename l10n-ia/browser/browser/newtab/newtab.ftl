@@ -8,6 +8,9 @@
 newtab-page-title = Nove scheda
 newtab-settings-button =
     .title = Personalisar tu pagina de nove scheda
+newtab-personalize-button-label = Personalisar
+    .title = Personalisar nove scheda
+    .aria-label = Personalisar nove scheda
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Cercar in le Web
     .title = Cercar in le Web
     .aria-label = Cercar in le Web
+newtab-search-box-text = Cercar in le Web
+newtab-search-box-input =
+    .placeholder = Cercar in le Web
+    .aria-label = Cercar in le Web
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Adder un motor de recerca
 newtab-topsites-add-topsites-header = Nove sito preferite
+newtab-topsites-add-shortcut-header = Nove accesso directe
 newtab-topsites-edit-topsites-header = Modificar le sito preferite
+newtab-topsites-edit-shortcut-header = Modificar accesso directe
 newtab-topsites-title-label = Titulo
 newtab-topsites-title-input =
     .placeholder = Scriber un titulo
@@ -203,3 +212,27 @@ newtab-pocket-cta-text = Salva le articulos que tu ama in { -pocket-brand-name }
 
 newtab-error-fallback-info = Un error ha occurrite durante le cargamento de iste contento.
 newtab-error-fallback-refresh-link = Refresca le pagina pro tentar de novo.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Accessos directe
+newtab-custom-shortcuts-subtitle = Sitos que tu salva o visita
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } linea
+       *[other] { $num } lineas
+    }
+newtab-custom-sponsored-sites = Accessos directe sponsorisate
+newtab-custom-pocket-title = Recommendate per { -pocket-brand-name }
+newtab-custom-pocket-subtitle = Contento exceptional a cura de { -pocket-brand-name }, parte del familia { -brand-product-name }
+newtab-custom-pocket-sponsored = Articulos sponsorisate
+newtab-custom-recent-title = Activitate recente
+newtab-custom-recent-subtitle = Un selection de sitos e contento recente
+newtab-custom-close-button = Clauder
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Breve novas
+newtab-custom-snippets-subtitle = Consilios e notitias de { -vendor-short-name } e { -brand-product-name }
+newtab-custom-settings = Gerer altere parametros

@@ -8,6 +8,9 @@
 newtab-page-title = แท็บใหม่
 newtab-settings-button =
     .title = ปรับแต่งหน้าแท็บใหม่ของคุณ
+newtab-personalize-button-label = ปรับให้เป็นแบบส่วนตัว
+    .title = ปรับแท็บใหม่ให้เป็นส่วนตัว
+    .aria-label = ปรับแท็บใหม่ให้เป็นส่วนตัว
 
 ## Search box component.
 
@@ -19,6 +22,10 @@ newtab-search-box-search-the-web-text = ค้นหาเว็บ
 newtab-search-box-search-the-web-input =
     .placeholder = ค้นหาเว็บ
     .title = ค้นหาเว็บ
+    .aria-label = ค้นหาเว็บ
+newtab-search-box-text = ค้นหาเว็บ
+newtab-search-box-input =
+    .placeholder = ค้นหาเว็บ
     .aria-label = ค้นหาเว็บ
 
 ## Top Sites - General form dialog.
@@ -207,3 +214,20 @@ newtab-pocket-cta-text = บันทึกเรื่องราวที่�
 
 newtab-error-fallback-info = อุปส์ มีบางอย่างผิดพลาดในการโหลดเนื้อหานี้
 newtab-error-fallback-refresh-link = เรียกหน้าใหม่เพื่อลองอีกครั้ง
+
+## Customization Menu
+
+newtab-custom-row-selector =
+    { $num ->
+       *[other] { $num } แถว
+    }
+newtab-custom-pocket-title = แนะนำโดย { -pocket-brand-name }
+newtab-custom-pocket-sponsored = เรื่องราวที่ได้รับการสนับสนุน
+newtab-custom-recent-title = กิจกรรมล่าสุด
+newtab-custom-close-button = ปิด
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = ส่วนย่อย
+newtab-custom-settings = จัดการการตั้งค่าเพิ่มเติม

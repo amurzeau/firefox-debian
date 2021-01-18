@@ -7,9 +7,9 @@
 <!ENTITY propertiesCmd.key                  "i">
 <!ENTITY abPropertiesMenu.label             "Ιδιότητες ευρετηρίου">
 <!ENTITY abPropertiesMenu.accesskey         "ι">
-<!ENTITY contactPropertiesMenu.label        "Ιδιότητες Επαφής">
+<!ENTITY contactPropertiesMenu.label        "Ιδιότητες επαφής">
 <!ENTITY contactPropertiesMenu.accesskey    "ι">
-<!ENTITY mailingListPropertiesMenu.label    "Ιδιότητες Λίστας Ταχυδρομείου">
+<!ENTITY mailingListPropertiesMenu.label    "Ιδιότητες λίστας αλληλογραφίας">
 <!ENTITY mailingListPropertiesMenu.accesskey "ι">
 
 <!ENTITY abContextMenuButton.tooltip        "Προβολή μενού επιλογών ευρετηρίου διευθύνσεων">
