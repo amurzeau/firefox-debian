@@ -1,3 +1,12 @@
+firefox-esr (78.7.0esr-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2021-04, also known as:
+    CVE-2021-23953, CVE-2021-23954, CVE-2020-26976, CVE-2021-23960,
+    CVE-2021-23964.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 27 Jan 2021 08:57:31 +0900
+
 firefox-esr (78.6.1esr-1) unstable; urgency=medium
 
   * New upstream release.
