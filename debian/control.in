@@ -25,7 +25,7 @@ Build-Depends: autotools-dev,
                libnspr4-dev (>= 2:@NSPR_VERSION@~),
 %endif
 %if USE_SYSTEM_NSS
-%define NSS_VERSION 3.59.1
+%define NSS_VERSION 3.60
                libnss3-dev (>= 2:@NSS_VERSION@~),
 %endif
 %if USE_SYSTEM_VPX
@@ -46,8 +46,8 @@ Build-Depends: autotools-dev,
 %else
                nasm (>= 2.14) [amd64 i386],
 %endif
-               rustc (>= 1.43),
-               cargo (>= 0.44),
+               rustc (>= 1.47),
+               cargo (>= 0.48),
 %if DIST == stretch
                gcc-mozilla (>= 7.1),
                llvm-7-dev,
