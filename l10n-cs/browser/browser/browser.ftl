@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -109,6 +109,9 @@ urlbar-tip-icon-description =
 
 urlbar-search-tips-onboard = Méně psaní, více výsledků: používejte { $engineName } přímo z adresního řádku.
 urlbar-search-tips-redirect-2 = Zadejte do adresního řádku vyhledávaný text a uvidíte návrhy z vyhledávače { $engineName } a vaší historie prohlížení.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Klepněte na tuto zkratku, abyste rychleji našli, co potřebujete.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -299,8 +302,18 @@ identity-passive-loaded = Části této stránky nejsou zabezpečené (napříkl
 identity-active-loaded = Na této stránce jste ochranu zakázali.
 identity-weak-encryption = Tento server používá slabé šifrování.
 identity-insecure-login-forms = Přihlašovací údaje zadané na této stránce mohou být vyzrazeny.
+identity-https-only-label = Režim „pouze HTTPS“
+identity-https-only-dropdown-on =
+    .label = Zapnuto
+identity-https-only-dropdown-off =
+    .label = Vypnuto
+identity-https-only-dropdown-off-temporarily =
+    .label = Dočasně vypnuto
+identity-https-only-info-turn-off2 = Pokud se zdá, že je stránka rozbitá, zkuste vypnout režim „pouze HTTPS“, aby se znovu načetla pomocí nezabezpečeného spojení HTTP.
 identity-permissions =
     .value = Oprávnění
+identity-permissions-storage-access-header = Cross-site cookies
+identity-permissions-storage-access-hint = Tyto strany mohou používat cross-site cookies a tak přistupovat k datům této stránky během vaší návštěvy.
 identity-permissions-reload-hint = Pro provedení změn může být potřeba stránku znovu načíst.
 identity-permissions-empty = Tento server nemá žádná zvláštní oprávnění.
 identity-clear-site-data =
@@ -355,6 +368,13 @@ browser-window-restore-down-button =
     .tooltiptext = Obnovit z maximalizace
 browser-window-close-button =
     .tooltiptext = Zavřít
+
+## Bookmarks toolbar items
+
+browser-import-button2 =
+    .label = Importovat záložky…
+    .tooltiptext = Importovat záložky z jiného prohlížeče do { -brand-short-name(case: "gen") }.
+bookmarks-toolbar-empty-message = Chcete-li mít ke svým záložkám rychlý přístup, umístěte je sem na lištu záložek. <a data-l10n-name="manage-bookmarks">Spravovat záložky…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -459,8 +479,29 @@ urlbar-result-action-search-in-private = Vyhledat v anonymním okně
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Vyhledat pomocí { $engine }
+urlbar-result-action-sponsored = Sponzorováno
 urlbar-result-action-switch-tab = Přepnout na panel
 urlbar-result-action-visit = Navštívit
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Stisknutím klávesy Tab provedete vyhledávání pomocí vyhledávače { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Stisknutím klávesy Tab provedete vyhledávání na webu { $engine }
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-tabtosearch-web = Vyhledat pomocí { $engine } přímo z adresního řádku
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-tabtosearch-other-engine = Vyhledat na webu { $engine } přímo z adresního řádku
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -485,3 +526,71 @@ fullscreen-exit-mac-button = Ukončit režim celé obrazovky (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> má kontrolu nad vaším kurzorem. Pro odebrání kontroly stiskněte klávesu Esc.
 pointerlock-warning-no-domain = Tento dokument má kontrolu nad vaším kurzorem. Pro odebrání kontroly stiskněte klávesu Esc.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Zobrazit všechny záložky
+bookmarks-recent-bookmarks =
+    .value = Naposledy přidané
+bookmarks-toolbar-chevron =
+    .tooltiptext = Zobrazí více záložek
+bookmarks-sidebar-content =
+    .aria-label = Záložky
+bookmarks-menu-button =
+    .label = Nabídka záložek
+bookmarks-other-bookmarks-menu =
+    .label = Ostatní záložky
+bookmarks-mobile-bookmarks-menu =
+    .label = Záložky z mobilu
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Skrýt postranní lištu záložek
+           *[other] Zobrazit v postranní liště
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Skrýt lištu záložek
+           *[other] Zobrazit lištu záložek
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Odebrat nabídku záložek z lišty
+           *[other] Přidat nabídku záložek na lištu
+        }
+bookmarks-search =
+    .label = Hledat v záložkách
+bookmarks-tools =
+    .label = Nástroje pro práci se záložkami
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Lišta záložek
+    .accesskey = z
+    .aria-label = Záložky
+bookmarks-toolbar-menu =
+    .label = Lišta záložek
+bookmarks-toolbar-placeholder =
+    .title = Záložky nástrojové lišty
+bookmarks-toolbar-placeholder-button =
+    .label = Záložky nástrojové lišty
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Záložky
+library-bookmarks-bookmark-this-page =
+    .label = Přidat stránku do záložek
+library-bookmarks-bookmark-edit =
+    .label = Upravit záložku
+library-recent-activity-label = Nedávná aktivita
+
+## More items
+
+more-menu-go-offline =
+    .label = Pracovat offline
+    .accesskey = l

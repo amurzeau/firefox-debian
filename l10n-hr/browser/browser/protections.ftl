@@ -26,9 +26,14 @@ graph-private-window = { -brand-short-name } nastavlja blokirati programe za pra
 graph-week-summary-private-window = Programi za praćenje, koje je { -brand-short-name } blokirao ovaj tjedan
 protection-report-webpage-title = Nadzorna ploča zaštite
 protection-report-page-content-title = Nadzorna ploča zaštite
+# This message shows when all privacy protections are turned off, which is why we use the word "can", Firefox is able to protect your privacy, but it is currently not.
+protection-report-page-summary = { -brand-short-name } može zaštititi tvoju privatnost iza scene dok surfaš. Ovo je personalizirani sažetak te zaštite, uključujući alate za preuzimanje kontrole nad vlastitom sigurnošću na webu.
+# This message shows when at least some protections are turned on, we are more assertive compared to the message above, Firefox is actively protecting you.
+protection-report-page-summary-default = { -brand-short-name } štiti tvoju privatnost iza scene dok surfaš. Ovo je personalizirani sažetak te zaštite, uključujući alate za preuzimanje kontrole nad vlastitom sigurnošću na webu.
 protection-report-settings-link = Upravljaj svojim postavkama za privatnost i sigurnost
 etp-card-title-always = Poboljšana zaštita od praćenja: uvijek uključeno
 etp-card-title-custom-not-blocking = Poboljšana zaštita od praćenja: ISKLJUČENO
+etp-card-content-description = { -brand-short-name } automatski sprječava tvrtke da te potajno prate širom weba.
 protection-report-etp-card-content-custom-not-blocking = Sve zaštite su trenutačno isključene. Upravljaj programima za praćenje koje želiš blokirati u { -brand-short-name } postavkama zaštite.
 protection-report-manage-protections = Upravljaj postavkama
 # This string is used to label the X axis of a graph. Other days of the week are generated via Intl.DateTimeFormat,
@@ -67,9 +72,9 @@ lockwise-app-links = { -lockwise-brand-name } za <a data-l10n-name="lockwise-and
 # $count (Number) - Number of passwords exposed in data breaches.
 lockwise-scanned-text-breached-logins =
     { $count ->
-        [one] { $count } lozinka je možda izložena curenju podataka.
-        [few] { $count } lozinke su možda izložene curenju podataka.
-       *[other] { $count } lozinki je možda izloženo curenju podataka.
+        [one] 1 lozinka možda je izložena u curenju podataka.
+        [few] { $count } lozinke možda su izložene u curenju podataka.
+       *[other] { $count } lozinki možda je izloženo u curenju podataka.
     }
 # While English doesn't use the number in the plural form, you can add $count to your language
 # if needed for grammatical reasons.
@@ -102,9 +107,9 @@ monitor-passwords-tooltip =
 # your localization, because it would result in the number showing twice.
 info-monitored-emails =
     { $count ->
-        [one] Adresa e-pošte se nadgleda
-        [few] Adrese e-pošte se nadgledaju
-       *[other] Adresa e-pošte se nadgleda
+        [one] adresa e-pošte se nadgleda
+        [few] adrese e-pošte se nadgledaju
+       *[other] adresa e-pošte se nadgleda
     }
 # This string is displayed after a large numeral that indicates the total number
 # of known data breaches. Don’t add $count to
@@ -120,9 +125,9 @@ info-known-breaches-found =
 # to your localization, because it would result in the number showing twice.
 info-known-breaches-resolved =
     { $count ->
-        [one] Poznato curenje podataka označeno kao riješeno
-        [few] Poznata curenja podataka označena kao riješena
-       *[other] Poznatih curenja podataka označena kao riješena
+        [one] poznato curenje podataka označeno kao riješeno
+        [few] poznata curenja podataka označena kao riješena
+       *[other] poznatih curenja podataka označenih kao riješena
     }
 # This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
@@ -138,9 +143,9 @@ info-exposed-passwords-found =
 # to your localization, because it would result in the number showing twice.
 info-exposed-passwords-resolved =
     { $count ->
-        [one] Lozinka izložena u neriješenim curenjima podataka
-        [few] Lozinke izložene u neriješenim curenjima podataka
-       *[other] Lozinki izloženo u neriješenim curenjima podataka
+        [one] lozinka izložena u neriješenim curenjima podataka
+        [few] lozinke izložene u neriješenim curenjima podataka
+       *[other] lozinki izloženo u neriješenim curenjima podataka
     }
 monitor-no-breaches-title = Dobre vijesti!
 monitor-no-breaches-description = Ne pojavljuješ se u poznatim curenjima podataka. Ako se to promijeni, obavijestit ćemo te.

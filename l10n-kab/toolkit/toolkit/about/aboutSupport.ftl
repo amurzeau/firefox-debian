@@ -185,6 +185,32 @@ remote-debugging-url = URL
 
 ##
 
+support-third-party-modules-title = Izegrar n wis kraḍ
+support-third-party-modules-module = Isem n uzegrir
+support-third-party-modules-version = Lqem n ufaylu
+support-third-party-modules-vendor = Talɣut n umsenzi
+support-third-party-modules-occurrence = Timeḍriwt
+support-third-party-modules-process = Anaw & usulay n ukala
+support-third-party-modules-thread = Asqerdec
+support-third-party-modules-base = Tansa n taffa n tugniwin
+support-third-party-modules-uptime = Akud n useddu n ukala (ms)
+support-third-party-modules-duration = Tanzagt n usali (ms)
+support-third-party-modules-empty = Ulac izegrar n wis kraḍ i d-yettwasulin.
+support-third-party-modules-no-value = (Ulac azal)
+support-third-party-modules-button-open =
+    .title = Ldi adeg n ufaylu…
+support-third-party-modules-expand =
+    .title = Sken Talɣut n usmel
+support-third-party-modules-collapse =
+    .title = Fneẓ  talɣut leqqayen
+support-third-party-modules-unsigned-icon =
+    .title = Azegrir-a ur yettusezmel ara
+support-third-party-modules-folder-icon =
+    .title = Ldi adeg n ufaylu…
+support-third-party-modules-down-icon =
+    .title = Sken Talɣut leqqayen
+support-third-party-modules-up-icon =
+    .title = Fneẓ talɣut leqqayen
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =

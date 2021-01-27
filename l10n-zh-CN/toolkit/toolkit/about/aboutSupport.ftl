@@ -188,6 +188,32 @@ remote-debugging-url = URL
 
 ##
 
+support-third-party-modules-title = 第三方模块
+support-third-party-modules-module = 模块文件
+support-third-party-modules-version = 文件版本
+support-third-party-modules-vendor = 厂商信息
+support-third-party-modules-occurrence = 加载次数
+support-third-party-modules-process = 进程类型与 ID
+support-third-party-modules-thread = 线程
+support-third-party-modules-base = 映像基址
+support-third-party-modules-uptime = 进程运行时间（毫秒）
+support-third-party-modules-duration = 加载持续时间（毫秒）
+support-third-party-modules-empty = 未加载第三方模块。
+support-third-party-modules-no-value = （暂无值）
+support-third-party-modules-button-open =
+    .title = 打开文件所在位置…
+support-third-party-modules-expand =
+    .title = 显示详细信息
+support-third-party-modules-collapse =
+    .title = 收起详细信息
+support-third-party-modules-unsigned-icon =
+    .title = 此模块未签名
+support-third-party-modules-folder-icon =
+    .title = 打开文件所在位置…
+support-third-party-modules-down-icon =
+    .title = 显示详细信息
+support-third-party-modules-up-icon =
+    .title = 收起详细信息
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days = 近 { $days } 天的崩溃报告
@@ -235,7 +261,7 @@ missing = 缺失
 gpu-process-pid = GPUProcessPid
 gpu-process = GPUProcess
 gpu-description = 描述
-gpu-vendor-id = 供应商 ID
+gpu-vendor-id = 厂商 ID
 gpu-device-id = 设备 ID
 gpu-subsys-id = 子系统 ID
 gpu-drivers = 驱动程序

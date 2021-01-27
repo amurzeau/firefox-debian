@@ -48,7 +48,7 @@
 <!ENTITY modelMarkDeleted.label "Označit zprávu jako smazanou">
 <!ENTITY modelMarkDeleted.accesskey "z">
 <!ENTITY modelDeleteImmediately.label "Okamžitě zprávu smazat">
-<!ENTITY modelDeleteImmediately.accesskey "d">
+<!ENTITY modelDeleteImmediately.accesskey "m">
 <!-- LOCALIZATION NOTE (expungeOnExit.label) : do not translate two of "&quot;" in below line -->
 <!ENTITY expungeOnExit.label "Při ukončení provést údržbu složky s doručenou poštou">
 <!ENTITY expungeOnExit.accesskey "v">
@@ -66,6 +66,8 @@
 <!ENTITY maxMessagesEnd.label "zpráv">
 <!ENTITY alwaysAuthenticate.label "Při připojování na tento server vždy požadovat autentizaci">
 <!ENTITY alwaysAuthenticate.accesskey "v">
+<!ENTITY newsrcFilePath1.label "Soubor News.rc:">
+<!ENTITY newsrcPicker1.label "Vyberte soubor News.rc">
 <!ENTITY abbreviate.label "Zobrazit názvy skupin v okně poštovních složek jako:">
 <!ENTITY abbreviateOn.label "Celá jména (např.: 'netscape.public.mozilla.mail-news')">
 <!ENTITY abbreviateOff.label "Zkracovat jména (např.: 'n.p.m.mail-news')">

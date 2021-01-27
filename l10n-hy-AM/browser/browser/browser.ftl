@@ -315,6 +315,9 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Փակել
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -411,3 +414,70 @@ fullscreen-exit-mac-button = Դուրս գալ Լիաէկրանից (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ղեկավարում է ձեր ցուցիչը: Սեղմեք Esc՝ ղեկավարումը հետ վերադարձնելու համար:
 pointerlock-warning-no-domain = Այս փաստաթուղթը ղեկավարում է ձեր ցուցիչը: Սեղմեք Esc՝ ղեկավարումը հետ վերադարձնելու համար:
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Ցուցադրել բոլոր էջանիշերը
+bookmarks-recent-bookmarks =
+    .value = Վերջերս էջանշված
+bookmarks-toolbar-chevron =
+    .tooltiptext = Ցուցադրել ավելի շատ էջանիշեր
+bookmarks-sidebar-content =
+    .aria-label = Էջանիշեր
+bookmarks-menu-button =
+    .label = Էջանիշերի ցանկ
+bookmarks-other-bookmarks-menu =
+    .label = Այլ Էջանիշեր
+bookmarks-mobile-bookmarks-menu =
+    .label = Բջջային էջանիշեր
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Թաքցնել Էջանիշերի Կողագոտին
+           *[other] Դիտել էջանիշերի վահանակը
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Թաքցնել Էջանիշերի Գործիքագոտին
+           *[other] Դիտել էջանիշերի վահանակը
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] ՀԵռացնել Էջանիշերի ցանկը Գործիքագոտուց
+           *[other] Ավելացնել Էջանիշերի ցանկ Գործիքագոտիում
+        }
+bookmarks-search =
+    .label = Էջանիշերի որոնում
+bookmarks-tools =
+    .label = Էջանշելու գործիքներ
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Էջանիշերի Վահանակ
+    .accesskey = Է
+    .aria-label = Էջանիշեր
+bookmarks-toolbar-menu =
+    .label = Էջանիշերի Վահանակ
+bookmarks-toolbar-placeholder =
+    .title = Էջանիշերի Վահանակի տարրերը
+bookmarks-toolbar-placeholder-button =
+    .label = Էջանիշերի Վահանակի տարրերը
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Էջանիշեր
+library-bookmarks-bookmark-this-page =
+    .label = Էջանշել Այս Էջը
+library-bookmarks-bookmark-edit =
+    .label = Խմբագրել այս էջանիշը
+
+## More items
+
+more-menu-go-offline =
+    .label = Աշխատել անցանց
+    .accesskey = տ

@@ -25,6 +25,9 @@ printui-range-start = Ettől:
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = eddig:
+printui-page-custom-range-input =
+    .aria-label = Egyéni oldaltartomány megadása
+    .placeholder = például 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Példányszám
 printui-orientation = Tájolás
@@ -48,6 +51,7 @@ printui-duplex-checkbox = Nyomtatás mindkét oldalra
 printui-options = Beállítások
 printui-headers-footers-checkbox = Fejlécek és láblécek nyomtatása
 printui-backgrounds-checkbox = Hátterek nyomtatása
+printui-selection-checkbox = Csak a kijelölés nyomtatása
 printui-color-mode-label = Színmód
 printui-color-mode-color = Színes
 printui-color-mode-bw = Fekete-fehér
@@ -56,19 +60,29 @@ printui-margins-default = Alapértelmezett
 printui-margins-min = Minimális
 printui-margins-none = Egyik sem
 printui-margins-custom = Egyéni
+printui-margins-custom-inches = Egyéni (hüvelyk)
 printui-margins-custom-top = Felső
+printui-margins-custom-top-inches = Felső (hüvelyk)
 printui-margins-custom-bottom = Alsó
+printui-margins-custom-bottom-inches = Alsó (hüvelyk)
 printui-margins-custom-left = Bal
+printui-margins-custom-left-inches = Bal (hüvelyk)
 printui-margins-custom-right = Jobb
+printui-margins-custom-right-inches = Jobb (hüvelyk)
 printui-system-dialog-link = Nyomtatás a rendszer párbeszédablakával…
 printui-primary-button = Nyomtatás
 printui-primary-button-save = Mentés
 printui-cancel-button = Mégse
+printui-close-button = Bezárás
 printui-loading = Előnézet előkészítése
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Nyomtatási kép
+printui-pages-per-sheet = Oldalak száma laponként
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Nyomtatás…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

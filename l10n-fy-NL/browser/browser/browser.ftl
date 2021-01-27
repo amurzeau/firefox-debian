@@ -503,3 +503,71 @@ fullscreen-exit-mac-button = Folslein skerm ferlitte (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> hat de kontrôle oer jo oanwizer. Druk op Esc om de kontrôle wer oer te nimmen.
 pointerlock-warning-no-domain = Dit dokumint hat de kontrôle oer jo oanwizer. Druk op Esc om de kontrôle wer oer te nimmen.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Alle blêdwizers toane
+bookmarks-recent-bookmarks =
+    .value = Resint oanmakke blêdwizers
+bookmarks-toolbar-chevron =
+    .tooltiptext = Mear blêdwizers toane
+bookmarks-sidebar-content =
+    .aria-label = Blêdwizers
+bookmarks-menu-button =
+    .label = Blêdwizermenu
+bookmarks-other-bookmarks-menu =
+    .label = Oare blêdwizers
+bookmarks-mobile-bookmarks-menu =
+    .label = Mobyl-blêdwizers
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Blêdwizersydbalke ferstopje
+           *[other] Blêdwizersydbalke werjaan
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Blêdwizerarkbalke ferstopje
+           *[other] Blêdwizerarkbalke werjaan
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Blêdwizers fan arkbalke fuortsmite
+           *[other] Blêdwizers oan arkbalke tafoegje
+        }
+bookmarks-search =
+    .label = Blêdwizers trochsykje
+bookmarks-tools =
+    .label = Blêdwizerark
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Blêdwizerarkbalke
+    .accesskey = B
+    .aria-label = Blêdwizers
+bookmarks-toolbar-menu =
+    .label = Blêdwizerarkbalke
+bookmarks-toolbar-placeholder =
+    .title = Blêdwizerarkbalke-ûnderdiel
+bookmarks-toolbar-placeholder-button =
+    .label = Blêdwizerarkbalke-ûnderdiel
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Blêdwizers
+library-bookmarks-bookmark-this-page =
+    .label = Blêdwizer foar dizze side meitsje
+library-bookmarks-bookmark-edit =
+    .label = Dizze blêdwizer bewurkje
+library-recent-activity-label = Resinte aktiviteit
+
+## More items
+
+more-menu-go-offline =
+    .label = Offline wurkje
+    .accesskey = w

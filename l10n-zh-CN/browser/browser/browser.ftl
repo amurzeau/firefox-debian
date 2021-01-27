@@ -217,7 +217,7 @@ full-screen-exit =
 
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
-search-one-offs-with-title = 这次要用的搜索引擎：
+search-one-offs-with-title = 本次搜索使用：
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -495,3 +495,71 @@ fullscreen-exit-mac-button = 退出全屏模式 (Esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 已控制您的鼠标指针。按 Esc 键可收回控制权。
 pointerlock-warning-no-domain = 此文档已控制您的鼠标指针。按 Esc 键可收回控制权。
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = 管理所有书签
+bookmarks-recent-bookmarks =
+    .value = 最近的书签
+bookmarks-toolbar-chevron =
+    .tooltiptext = 显示更多书签
+bookmarks-sidebar-content =
+    .aria-label = 书签
+bookmarks-menu-button =
+    .label = 书签菜单
+bookmarks-other-bookmarks-menu =
+    .label = 其他书签
+bookmarks-mobile-bookmarks-menu =
+    .label = 移动设备上的书签
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] 隐藏书签侧栏
+           *[other] 显示书签侧栏
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] 隐藏书签工具栏
+           *[other] 查看书签工具栏
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] 从工具栏移除书签菜单
+           *[other] 添加书签菜单到工具栏
+        }
+bookmarks-search =
+    .label = 在书签中搜索
+bookmarks-tools =
+    .label = 书签工具
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = 书签工具栏
+    .accesskey = B
+    .aria-label = 书签
+bookmarks-toolbar-menu =
+    .label = 书签工具栏
+bookmarks-toolbar-placeholder =
+    .title = 书签工具栏项目
+bookmarks-toolbar-placeholder-button =
+    .label = 书签工具栏项目
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = 书签
+library-bookmarks-bookmark-this-page =
+    .label = 为此页添加书签
+library-bookmarks-bookmark-edit =
+    .label = 编辑此书签
+library-recent-activity-label = 近期动态
+
+## More items
+
+more-menu-go-offline =
+    .label = 脱机工作
+    .accesskey = k

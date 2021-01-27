@@ -47,7 +47,6 @@
 <!ENTITY getNewMsgForCmd.accesskey "ω">
 <!ENTITY getAllNewMsgCmdPopupMenu.label "Όλους τους λογαριασμούς">
 <!ENTITY getAllNewMsgCmdPopupMenu.accesskey "Ό">
-<!ENTITY getAllNewMsgCmd.label "Λήψη όλων των νέων μηνυμάτων">
 <!ENTITY getAllNewMsgCmd2.key "d">
 <!ENTITY getNextNMsgCmd.label "Λήψη των επόμενων 500 μηνυμάτων">
 <!ENTITY getNextNMsgCmd.accesskey "τ">
@@ -364,9 +363,13 @@
 <!ENTITY markAsNotJunkCmd.label "Ως επιθυμητό">
 <!ENTITY markAsNotJunkCmd.accesskey "θ">
 <!ENTITY markAsNotJunkCmd.key "j">
+<!ENTITY recalculateJunkScoreCmd.label "Εκτέλεση ελέγχων ανεπιθύμητων email">
+<!ENTITY recalculateJunkScoreCmd.accesskey "Ε">
 <!ENTITY markAsShowRemoteCmd.label "Εμφάνιση απομακρυσμένου περιεχομένου">
 <!ENTITY markAsShowRemoteCmd.accesskey "μ">
 <!ENTITY markAsShowRemoteCmd.key "r">
+<!ENTITY markAsNotPhishCmd.label "Ως μη απάτης">
+<!ENTITY markAsNotPhishCmd.accesskey "Ω">
 <!ENTITY markAsNotPhishCmd.key "p">
 <!ENTITY openFeedMessage.label "Άνοιγμα μηνύματος ροής">
 <!ENTITY openFeedMessage.accesskey "Ά">
@@ -374,6 +377,8 @@
 <!ENTITY openFeedWebPageInWindow.accesskey "Ι">
 <!ENTITY openFeedSummaryInWindow.label "Περίληψη σε νέο παράθυρο">
 <!ENTITY openFeedSummaryInWindow.accesskey "Π">
+<!ENTITY openFeedWebPageInMP.label "Εναλλαγή ιστοσελίδας και περίληψης στο πεδίο μηνυμάτων">
+<!ENTITY openFeedWebPageInMP.accesskey "Ε">
 
 <!-- Tools Menu -->
 <!ENTITY searchMailCmd.label "Αναζήτηση μηνυμάτων…">
@@ -389,6 +394,10 @@
 <!ENTITY filtersApplyToSelection.accesskey "λ">
 <!ENTITY filtersApplyToMessage.label "Εκτέλεση φίλτρων στο μήνυμα">
 <!ENTITY filtersApplyToMessage.accesskey "ρ">
+<!ENTITY runJunkControls.label "Εκτέλεση ελέγχων ανεπιθύμητων email στον φάκελο">
+<!ENTITY runJunkControls.accesskey "κ">
+<!ENTITY deleteJunk.label "Διαγραφή επισημασμένου email ως ανεπιθύμητου στον φάκελο">
+<!ENTITY deleteJunk.accesskey "γ">
 <!ENTITY importCmd.label "Εισαγωγή…">
 <!ENTITY importCmd.accesskey "Ε">
 
@@ -399,6 +408,8 @@
 
 <!-- Toolbar items -->
 <!ENTITY getMsgButton.label "Λήψη μηνυμάτων">
+<!ENTITY getAllNewMsgCmd.label "Λήψη όλων των νέων μηνυμάτων">
+<!ENTITY getAllNewMsgCmd.accesskey "Λ">
 <!ENTITY newMsgButton.label "Σύνθεση">
 <!ENTITY newHTMLMessageCmd.label "Σύνθεση σε HTML">
 <!ENTITY newHTMLMessageCmd.accesskey "H">

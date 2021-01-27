@@ -188,9 +188,9 @@ page-action-copy-url-panel =
 page-action-copy-url-urlbar =
     .tooltiptext = Copiar link
 page-action-email-link-panel =
-    .label = Enviar link por e-mail…
+    .label = Enviar link por email…
 page-action-email-link-urlbar =
-    .tooltiptext = Enviar link por e-mail…
+    .tooltiptext = Enviar link por email…
 page-action-share-url-panel =
     .label = Compartilhar
 page-action-share-url-urlbar =
@@ -503,3 +503,71 @@ fullscreen-exit-mac-button = Sair da tela inteira (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> tem controle de seu ponteiro. Pressione Esc para retomar o controle.
 pointerlock-warning-no-domain = Este documento tem o controle do seu ponteiro. Pressionar Esc para retomar o controle.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Mostrar todos os favoritos
+bookmarks-recent-bookmarks =
+    .value = Favoritos recentes
+bookmarks-toolbar-chevron =
+    .tooltiptext = Mostrar mais favoritos
+bookmarks-sidebar-content =
+    .aria-label = Favoritos
+bookmarks-menu-button =
+    .label = Menu de favoritos
+bookmarks-other-bookmarks-menu =
+    .label = Outros favoritos
+bookmarks-mobile-bookmarks-menu =
+    .label = Favoritos do celular
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Ocultar Painel de Favoritos
+           *[other] Ver painel de favoritos
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Ocultar Barra de Favoritos
+           *[other] Ver barra de favoritos
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Remover menu de favoritos da barra de ferramentas
+           *[other] Adicionar menu de favoritos à barra de ferramentas
+        }
+bookmarks-search =
+    .label = Pesquisar nos favoritos
+bookmarks-tools =
+    .label = Ferramentas de favoritos
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Barra de favoritos
+    .accesskey = r
+    .aria-label = Favoritos
+bookmarks-toolbar-menu =
+    .label = Barra de favoritos
+bookmarks-toolbar-placeholder =
+    .title = Itens da barra de favoritos
+bookmarks-toolbar-placeholder-button =
+    .label = Itens da barra de favoritos
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Favoritos
+library-bookmarks-bookmark-this-page =
+    .label = Adicionar página aos favoritos
+library-bookmarks-bookmark-edit =
+    .label = Editar este favorito
+library-recent-activity-label = Atividade recente
+
+## More items
+
+more-menu-go-offline =
+    .label = Trabalhar offline
+    .accesskey = o

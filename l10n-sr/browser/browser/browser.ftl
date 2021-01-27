@@ -505,3 +505,70 @@ fullscreen-exit-mac-button = Изађи из приказа преко цело�
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> управља са вашим показивачем. Притисните Esc да преузмете контролу.
 pointerlock-warning-no-domain = Овај документ управља са вашим показивачем. Притисните Esc да преузмете контролу.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Прикажи све забелешке
+bookmarks-recent-bookmarks =
+    .value = Недавно забележене
+bookmarks-toolbar-chevron =
+    .tooltiptext = Прикажи још забелешки
+bookmarks-sidebar-content =
+    .aria-label = Забелешке
+bookmarks-menu-button =
+    .label = Мени са забелешкама
+bookmarks-other-bookmarks-menu =
+    .label = Остале забелешке
+bookmarks-mobile-bookmarks-menu =
+    .label = Мобилне забелешке
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Сакриј палету са забелешкама
+           *[other] Прикажи у бочној палети
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Сакриј траку са забелешкама
+           *[other] Прикажи траку са забелешкама
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Уклони мени са забелешкама са алатне траке
+           *[other] Додај мени са забелешкама на траку са алатима
+        }
+bookmarks-search =
+    .label = Претражи забелешке
+bookmarks-tools =
+    .label = Алатке за забелешке
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Трака са забелешкама
+    .accesskey = з
+    .aria-label = Ознаке
+bookmarks-toolbar-menu =
+    .label = Трака са забелешкама
+bookmarks-toolbar-placeholder =
+    .title = Забележи ставке из алатне траке
+bookmarks-toolbar-placeholder-button =
+    .label = Забележи ставке из алатне траке
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Забелешке
+library-bookmarks-bookmark-this-page =
+    .label = Забележи ову страницу
+library-bookmarks-bookmark-edit =
+    .label = Уреди ову забелешку
+
+## More items
+
+more-menu-go-offline =
+    .label = Рад ван мреже
+    .accesskey = k

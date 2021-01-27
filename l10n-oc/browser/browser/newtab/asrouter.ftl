@@ -126,6 +126,9 @@ cfr-whatsnew-lockwise-take-link-text = Obténer l’aplicacion
 
 cfr-whatsnew-searchbar-title = Escrivètz mens, trobatz mai amb la barra d’adreça
 cfr-whatsnew-searchbar-body-topsites = Ara, seleccionatz simplament la barra d'adreça, e una bóstia s'agrandirà amb de ligams cap a vòstres melhors sites.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Icòna de la lópia
 
 ## Picture-in-Picture
@@ -281,3 +284,13 @@ cfr-whatsnew-media-keys-button = M’ensenhar cossí far
 
 cfr-whatsnew-search-shortcuts-header = Acorchis de recèrca dins la barra d’adreça
 cfr-whatsnew-search-shortcuts-body = Ara quand picatz lo nom d’un motor de recèrcas o un site especific dins la barra d’adreça, un acorchi blau apareisserà en dejós de las suggestions de recèrca. Causissètz aquel acorchi per acabar vòstra recèrca dirèctament de la barra d’adreça estant.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Proteccion contra los supercookies malvolents
+cfr-whatsnew-supercookies-body = D’unes sites web pòdon estacar un « supercookie » a vòstre navegador que vos pòt seguir sul Web, encara qu’ajatz escafat los cookies. { -brand-short-name } provesís ara una proteccion robusta contra los supercookies per que sián pas utilizats per pistar vòstra activitat en linha d’un site a l’autre.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = De melhors marcapaginas
+cfr-whatsnew-bookmarking-body = Es mai simple de gardar vòstres sites preferits. { -brand-short-name } remembra ara vòstre lòc favorit per enregistrar los marcapaginas, mòstra la barra d’aisinas dels marcapaginas per defaut suls onglets novèls, e vos dòna accès a la rèsta de vòstres marcapaginas via una icòna de dossièr per la barra d’aisinas.

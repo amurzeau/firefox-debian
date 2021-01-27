@@ -120,6 +120,9 @@ cfr-whatsnew-lockwise-take-link-text = Awi asnas
 
 cfr-whatsnew-searchbar-title = Aru cwiṭ, aff aṭas s ufeggag n tansiwin
 cfr-whatsnew-searchbar-body-topsites = Tura, fren afeggag n tunigin, ad d-timɣur texxamt s iseɣwan ɣer ismal-ik ifazen.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Tignit n lemri isimɣuren
 
 ## Picture-in-Picture
@@ -275,3 +278,13 @@ cfr-whatsnew-media-keys-button = Issn amek
 
 cfr-whatsnew-search-shortcuts-header = Nadi inegzumen deg ufeggag n tansiwin
 cfr-whatsnew-search-shortcuts-body = Akka ura, mi ara taruḍ amsedday n unadi neɣ n kra n usmel deg ufeggag n tansiwin, anegzum amidadi ad d-iban deg yisumar n unadi ddaw. Fren anegzum-nni i wakken ad tfakkeḍ anadi-inek·inem srid seg ufeggag n tansiwin.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Ammesten mgal yir inagan n tuqqna iǧehden
+cfr-whatsnew-supercookies-body = Ismal web zemren s tuffra ad seddun “supercookie” deg yiminig-ik·im ara yizmiren ad ak·akem-yeḍfer deg web, ula mi ara tsefḍeḍ inagan n tuqqna. { -brand-short-name } tura yettmuddu ammesten iǧehden aṭas mgal n yinagan n tuqqna uḥricen i wakken ur ttuseqdacen ara deg uḍfar n tigawin-ik·im srid seg usmel ɣer wayeḍ.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = Acraḍ n yisebter ifazen
+cfr-whatsnew-bookmarking-body = Yeshel maḍi ad teǧǧeḍ lateṛ n yismal-ik·im ufrinen. { -brand-short-name } tura yecfa ɣef adig-inek·inem yettwafernen i ticraḍ n yisebtar yettuskelsen, yeskan afeggag n yifecka n tecraḍ n yisebtar s wudem amezwer deg waccaren imaynuten, yerna ad ak·am-imudd anekcum fessusen ɣer ticraḍ n yisebtar-ik·im srid seg ukaram n ufeggag n yifecka.

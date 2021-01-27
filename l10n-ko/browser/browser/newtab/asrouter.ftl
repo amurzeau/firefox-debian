@@ -117,6 +117,9 @@ cfr-whatsnew-lockwise-take-link-text = 앱 받기
 
 cfr-whatsnew-searchbar-title = 주소 표시줄에 더 적게 입력하고 더 많이 찾기
 cfr-whatsnew-searchbar-body-topsites = 이제 주소 표시줄을 선택하면, 상자가 확장되어 상위 사이트에 대한 링크가 표시됩니다.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = 돋보기 아이콘
 
 ## Picture-in-Picture
@@ -270,3 +273,13 @@ cfr-whatsnew-media-keys-button = 방법 알아보기
 
 cfr-whatsnew-search-shortcuts-header = 주소 표시줄의 검색 바로 가기
 cfr-whatsnew-search-shortcuts-body = 이제, 검색 엔진이나 특정 사이트를 주소 표시줄에 입력하면 아래의 검색 제안에 파란색 바로 가기가 나타납니다. 주소 표시줄에서 바로 검색을 완료하려면 해당 바로 가기를 선택하세요.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = 악성 슈퍼쿠키로부터 보호
+cfr-whatsnew-supercookies-body = 웹 사이트는 사용자가 쿠키를 지운 후에도 웹에서 사용자를 추적할 수 있는 "슈퍼쿠키"를 브라우저에 몰래 첨부할 수 있습니다. { -brand-short-name }는 이제 슈퍼쿠키에 대한 강력한 보호 기능을 제공하므로 한 사이트에서 다음 사이트로 온라인 활동을 추적하는 데 사용할 수 없습니다.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = 더 나은 북마크
+cfr-whatsnew-bookmarking-body = 즐겨찾는 사이트를 더 쉽게 추적할 수 있습니다. 이제 { -brand-short-name }는 저장된 북마크의 선호 위치를 기억하고, 새 탭에 북마크 도구 모음을 기본적으로 표시하며, 도구 모음 폴더를 통해 나머지 북마크에 쉽게 액세스할 수 있습니다.

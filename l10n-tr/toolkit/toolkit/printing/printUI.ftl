@@ -25,6 +25,9 @@ printui-range-start = Başlangıç
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = Bitiş
+printui-page-custom-range-input =
+    .aria-label = Özel sayfa aralığını yazın
+    .placeholder = örn. 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Kopya sayısı
 printui-orientation = Yönlendirme
@@ -48,6 +51,7 @@ printui-duplex-checkbox = Kâğıdın iki yüzüne yazdır
 printui-options = Seçenekler
 printui-headers-footers-checkbox = Üst bilgi ve alt bilgileri yazdır
 printui-backgrounds-checkbox = Arka planları yazdır
+printui-selection-checkbox = Yalnızca seçimi yazdır
 printui-color-mode-label = Renk modu
 printui-color-mode-color = Renkli
 printui-color-mode-bw = Siyah beyaz
@@ -56,19 +60,29 @@ printui-margins-default = Varsayılan
 printui-margins-min = Minimum
 printui-margins-none = Yok
 printui-margins-custom = Özel
+printui-margins-custom-inches = Özel (inç)
 printui-margins-custom-top = Üst
+printui-margins-custom-top-inches = Üst (inç)
 printui-margins-custom-bottom = Alt
+printui-margins-custom-bottom-inches = Alt (inç)
 printui-margins-custom-left = Sol
+printui-margins-custom-left-inches = Sol (inç)
 printui-margins-custom-right = Sağ
+printui-margins-custom-right-inches = Sağ (inç)
 printui-system-dialog-link = Sistem iletişim kutusuyla yazdır…
 printui-primary-button = Yazdır
 printui-primary-button-save = Kaydet
 printui-cancel-button = Vazgeç
+printui-close-button = Kapat
 printui-loading = Ön izleme hazırlanıyor
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Yazdırma ön izleme
+printui-pages-per-sheet = Yaprak başına sayfa
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Yazdırılıyor…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

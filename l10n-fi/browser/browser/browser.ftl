@@ -503,3 +503,71 @@ fullscreen-exit-mac-button = Poistu kokoruututilasta (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = Sivusto <span data-l10n-name="domain">{ $domain }</span> hallitsee hiiren osoitinta. Voit ottaa osoittimen hallintaasi painamalla Esc.
 pointerlock-warning-no-domain = Tämä sivu hallitsee hiiren osoitinta. Voit ottaa osoittimen hallintaasi painamalla Esc.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Näytä kaikki kirjanmerkit
+bookmarks-recent-bookmarks =
+    .value = Viimeksi lisätyt
+bookmarks-toolbar-chevron =
+    .tooltiptext = Näytä lisää kirjanmerkkejä
+bookmarks-sidebar-content =
+    .aria-label = Kirjanmerkit
+bookmarks-menu-button =
+    .label = Kirjanmerkit-valikko
+bookmarks-other-bookmarks-menu =
+    .label = Muut kirjanmerkit
+bookmarks-mobile-bookmarks-menu =
+    .label = Kannettavan laitteen kirjanmerkit
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Piilota kirjanmerkkien sivupaneeli
+           *[other] Näytä kirjanmerkkien sivupaneeli
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Piilota kirjanmerkkipalkki
+           *[other] Näytä kirjanmerkkipalkki
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Poista Kirjanmerkit-valikko työkalupalkista
+           *[other] Lisää Kirjanmerkit-valikko työkalupalkkiin
+        }
+bookmarks-search =
+    .label = Etsi kirjanmerkeistä
+bookmarks-tools =
+    .label = Kirjanmerkkityökalut
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Kirjanmerkkipalkki
+    .accesskey = K
+    .aria-label = Kirjanmerkit
+bookmarks-toolbar-menu =
+    .label = Kirjanmerkkipalkki
+bookmarks-toolbar-placeholder =
+    .title = Kirjanmerkkipalkin linkit
+bookmarks-toolbar-placeholder-button =
+    .label = Kirjanmerkkipalkin linkit
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Kirjanmerkit
+library-bookmarks-bookmark-this-page =
+    .label = Lisää sivu kirjanmerkkeihin
+library-bookmarks-bookmark-edit =
+    .label = Muokkaa kirjanmerkkiä
+library-recent-activity-label = Viimeisin toiminta
+
+## More items
+
+more-menu-go-offline =
+    .label = Työskentele yhteydettömässä tilassa
+    .accesskey = y

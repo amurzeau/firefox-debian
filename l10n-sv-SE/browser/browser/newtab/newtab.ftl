@@ -8,6 +8,9 @@
 newtab-page-title = Ny flik
 newtab-settings-button =
     .title = Anpassa sidan för Ny flik
+newtab-personalize-button-label = Anpassa
+    .title = Anpassa ny flik
+    .aria-label = Anpassa ny flik
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Sök på webben
     .title = Sök på webben
     .aria-label = Sök på webben
+newtab-search-box-text = Sök på webben
+newtab-search-box-input =
+    .placeholder = Sök på webben
+    .aria-label = Sök på webben
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Lägg till sökmotor
 newtab-topsites-add-topsites-header = Ny mest besökt
+newtab-topsites-add-shortcut-header = Ny genväg
 newtab-topsites-edit-topsites-header = Redigera mest besökta
+newtab-topsites-edit-shortcut-header = Redigera genväg
 newtab-topsites-title-label = Titel
 newtab-topsites-title-input =
     .placeholder = Ange en titel
@@ -207,3 +216,27 @@ newtab-pocket-cta-text = Spara de nyheter som du tycker är intressant i { -pock
 
 newtab-error-fallback-info = Oj, något gick fel när innehållet skulle laddas.
 newtab-error-fallback-refresh-link = Uppdatera sidan för att försöka igen.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Genvägar
+newtab-custom-shortcuts-subtitle = Webbplatser du sparar eller besöker
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } rad
+       *[other] { $num } rader
+    }
+newtab-custom-sponsored-sites = Sponsrade genvägar
+newtab-custom-pocket-title = Rekommenderas av { -pocket-brand-name }
+newtab-custom-pocket-subtitle = Särskilt innehåll valt av { -pocket-brand-name }, en del av familjen { -brand-product-name }
+newtab-custom-pocket-sponsored = Sponsrade nyheter
+newtab-custom-recent-title = Senaste aktivitet
+newtab-custom-recent-subtitle = Ett urval av senaste webbplatser och innehåll
+newtab-custom-close-button = Stäng
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Kort information
+newtab-custom-snippets-subtitle = Tips och nyheter från { -vendor-short-name } och { -brand-product-name }
+newtab-custom-settings = Hantera fler inställningar

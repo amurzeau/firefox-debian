@@ -121,6 +121,7 @@ about-logins-copy-password-os-auth-dialog-message-macosx = భద్రపరచ
 
 ## Primary Password notification
 
+about-logins-primary-password-notification-message = భద్రపరచిన ప్రవేశాలను, సంకేతపదాలను చూడటానికి దయచేసి మీ ప్రధాన సంకేతపదాన్ని ఇవ్వండి.
 master-password-reload-button =
     .label = ప్రవేశించండి
     .accesskey = L
@@ -151,6 +152,28 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = ఈ ప్రవేశాన్ని తొలగించాలా?
 confirm-delete-dialog-message = ఈ చర్యను రద్దు చేయలేరు.
 about-logins-confirm-remove-dialog-confirm-button = తొలగించు
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] తొలగించు
+        [one] తొలగించు
+       *[other] అన్నీ తొలగించు
+    }
+about-logins-confirm-remove-all-dialog-checkbox-label =
+    { $count ->
+        [1] అవును, ఈ ప్రవేశాన్ని తొలగించు
+        [one] అవును, ఈ ప్రవేశాన్ని తొలగించు
+       *[other] అవును, ఈ ప్రవేశాలను తొలగించు
+    }
+about-logins-confirm-remove-all-dialog-title =
+    { $count ->
+        [one] ఒక { $count } ప్రవేశాన్ని తొలగించాలా?
+       *[other] { $count } ప్రవేశాలనూ తొలగించాలా?
+    }
+about-logins-confirm-remove-all-sync-dialog-title =
+    { $count ->
+        [one] { $count } ప్రవేశాన్ని అన్ని పరికరాల నుండి తొలగించాలా?
+       *[other] { $count } ప్రవేశాలనూ అన్ని పరికరాల నుండి తొలగించాలా?
+    }
 about-logins-confirm-export-dialog-title = ప్రవేశాలను, సంకేతపదాలను ఎగుమతిచేయి
 about-logins-confirm-export-dialog-confirm-button = ఎగుమతించు…
 confirm-discard-changes-dialog-title = భద్రపరచని మార్పులను విస్మరించాలా?

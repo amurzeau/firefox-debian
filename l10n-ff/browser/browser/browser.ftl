@@ -307,6 +307,9 @@ browser-window-maximize-button =
 browser-window-close-button =
     .tooltiptext = Uddu
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -381,3 +384,63 @@ fullscreen-exit-mac-button = Yaltu njaajeendi yaynirde (Ech)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = Tamde <span data-l10n-name="domain">{ $domain }</span> nana ɗowa doborde maa. Ñoƴƴu Ech ngam ɓamtude ɗowgol.
 pointerlock-warning-no-domain = Ndee fiilannde nana ɗowa doborde maa. Ñoƴƴu Ech ngam ɓamtude ɗowgol.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Hollu Maantore Fof
+bookmarks-recent-bookmarks =
+    .value = Maantoraaɗe ko Ɓooyaani
+bookmarks-toolbar-chevron =
+    .tooltiptext = Hollu maantore goɗɗe
+bookmarks-sidebar-content =
+    .aria-label = Maantore
+bookmarks-menu-button =
+    .label = Dosol Maantore
+bookmarks-other-bookmarks-menu =
+    .label = Maantore Goɗɗe
+bookmarks-mobile-bookmarks-menu =
+    .label = Maantore Cinndel
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Suuɗ Palal Sawndo Maantore
+           *[other] Hollu Palal Maantore
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Suuɗ Palal Maantore
+           *[other] Hollu Palal Maantore
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Ittu Dosol Maantore e Palal Kuutorɗe
+           *[other] Ɓeydu Dosol Maantore to Palal Kuutorɗe
+        }
+bookmarks-search =
+    .label = Yiylo Maantore
+bookmarks-tools =
+    .label = Kuutorɗe Maantorgol
+bookmarks-toolbar-menu =
+    .label = Palal Maantore
+bookmarks-toolbar-placeholder =
+    .title = Maantorto Teme Palal Kuutorɗe
+bookmarks-toolbar-placeholder-button =
+    .label = Maantorto Teme Palal Kuutorɗe
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Maantore
+library-bookmarks-bookmark-this-page =
+    .label = Maantoro Ngoo Hello
+library-bookmarks-bookmark-edit =
+    .label = Taƴto Ngol Maantorol
+
+## More items
+
+more-menu-go-offline =
+    .label = Golle e Ceŋtol
+    .accesskey = l

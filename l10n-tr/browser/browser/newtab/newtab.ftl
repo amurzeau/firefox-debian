@@ -8,6 +8,9 @@
 newtab-page-title = Yeni Sekme
 newtab-settings-button =
     .title = Yeni Sekme sayfanızı özelleştirin
+newtab-personalize-button-label = Kişiselleştir
+    .title = Yeni sekmeyi kişiselleştir
+    .aria-label = Yeni sekmeyi kişiselleştir
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Web’de ara
     .title = Web’de ara
     .aria-label = Web’de ara
+newtab-search-box-text = Web’de ara
+newtab-search-box-input =
+    .placeholder = Web’de ara
+    .aria-label = Web’de ara
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Arama motoru ekle
 newtab-topsites-add-topsites-header = Yeni sık kullanılan site
+newtab-topsites-add-shortcut-header = Yeni kısayol
 newtab-topsites-edit-topsites-header = Sık kullanılan siteyi düzenle
+newtab-topsites-edit-shortcut-header = Kısayolu düzenle
 newtab-topsites-title-label = Başlık
 newtab-topsites-title-input =
     .placeholder = Başlık yazın
@@ -145,7 +154,7 @@ newtab-label-sponsored-by = { $sponsor } sponsorluğunda
 ## Section Menu: These strings are displayed in the section context menu and are
 ## meant as a call to action for the given section.
 
-newtab-section-menu-remove-section = Bölümü sil
+newtab-section-menu-remove-section = Bölümü kaldır
 newtab-section-menu-collapse-section = Bölümü daralt
 newtab-section-menu-expand-section = Bölümü genişlet
 newtab-section-menu-manage-section = Bölümü yönet
@@ -203,3 +212,27 @@ newtab-pocket-cta-text = Sevdiğiniz yazıları { -pocket-brand-name }’a kayde
 
 newtab-error-fallback-info = Bu içerik yüklenirken bir hata oluştu.
 newtab-error-fallback-refresh-link = Yeniden denemek için sayfayı tazeleyin.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Kısayollar
+newtab-custom-shortcuts-subtitle = Kaydettiğiniz veya ziyaret ettiğiniz siteler
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } satır
+       *[other] { $num } satır
+    }
+newtab-custom-sponsored-sites = Sponsorlu kısayollar
+newtab-custom-pocket-title = { -pocket-brand-name } önerileri
+newtab-custom-pocket-subtitle = { -brand-product-name } ailesinin bir parçası olan { -pocket-brand-name }’ın seçtiği harika içerikler
+newtab-custom-pocket-sponsored = Sponsorlu haberler
+newtab-custom-recent-title = Son etkinlikler
+newtab-custom-recent-subtitle = Son kullanılan siteler ve içeriklerden bir seçki
+newtab-custom-close-button = Kapat
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Duyurular
+newtab-custom-snippets-subtitle = { -vendor-short-name } ve { -brand-product-name }’tan ipuçları ve haberler
+newtab-custom-settings = Diğer ayarları yönet

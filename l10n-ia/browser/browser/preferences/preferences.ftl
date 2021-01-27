@@ -500,6 +500,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Le sitos que tu visita le plus
 home-prefs-topsites-by-option-sponsored =
     .label = Sitos principal sponsorisate
+home-prefs-shortcuts-header =
+    .label = Accessos directe
+home-prefs-shortcuts-description = Sitos que tu salva o visita
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Accessos directe sponsorisate
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -507,6 +512,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Recommendate per { $provider }
 home-prefs-recommended-by-description-update = Contentos exceptional de tote le Web, curate per { $provider }
+home-prefs-recommended-by-description-new = Contento exceptional a cura de { $provider }, parte del familia { -brand-product-name }
 
 ##
 
@@ -515,8 +521,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Articulos sponsorisate
 home-prefs-highlights-header =
     .label = In evidentia
-home-prefs-recent-activity-header =
-    .label = Recente activitate
 home-prefs-highlights-description = Un selection de sitos que tu ha salvate o visitate
 home-prefs-highlights-option-visited-pages =
     .label = Paginas visitate
@@ -526,6 +530,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Ultime discargamento
 home-prefs-highlights-option-saved-to-pocket =
     .label = Paginas salvate in { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Recente activitate
+home-prefs-recent-activity-description = Un selection de sitos e contento recente
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -533,6 +540,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Breve novas
 home-prefs-snippets-description = Actualitates de { -vendor-short-name } e { -brand-product-name }
+home-prefs-snippets-description-new = Consilios e notitias de { -vendor-short-name } e { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -573,7 +581,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Cambiar preferentias pro altere suggestiones in le barra de adresse
 search-suggestions-cant-show = Le suggestiones de recerca non essera monstrate inter le resultatos del barra de adresse perque tu ha configurate { -brand-short-name } pro non memorisar jammais le chronologia.
 search-one-click-header = Motores de recerca a un sol clic
-search-one-click-header2 = Vias breve pro le recerca
+search-one-click-header2 = Accessos directe pro le recerca
 search-one-click-desc = Elige le motores de recerca alternative que appare infra le barra de adresse o le de recerca quando tu comencia a scriber un parola clave.
 search-choose-engine-column =
     .label = Motor de recerca
@@ -924,9 +932,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Schedas aperite
     .accesskey = S
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Accessos directe
+    .accesskey = A
 addressbar-locbar-topsites-option =
     .label = Sitos popular
     .accesskey = p
+addressbar-locbar-engines-option =
+    .label = Motores de recerca
+    .accesskey = o
 addressbar-suggestions-settings = Cambiar le preferentias pro le suggestiones del motor de recerca
 
 ## Privacy Section - Content Blocking

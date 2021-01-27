@@ -316,6 +316,9 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = बंद करें
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -409,3 +412,70 @@ fullscreen-exit-mac-button = पूर्ण स्क्रीन से नि
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> अपने सूचक पर नियंत्रण हैं. नियंत्रण फिर से वापस लेने के लिए Esc बटन दबाएँ.
 pointerlock-warning-no-domain = इस दस्तेवाज को आपके सूचक पर नियंत्रण हैं. नियंत्रण फिर से वापस लेने के लिए Esc बटन दबाएँ.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = सभी बुकमार्कों को दिखाएँ
+bookmarks-recent-bookmarks =
+    .value = हाल में बुकमार्कित
+bookmarks-toolbar-chevron =
+    .tooltiptext = अधिक बुकमार्क दिखाएँ
+bookmarks-sidebar-content =
+    .aria-label = बुकमार्क
+bookmarks-menu-button =
+    .label = बुकमार्क मेन्यू
+bookmarks-other-bookmarks-menu =
+    .label = अन्य बुकमार्क
+bookmarks-mobile-bookmarks-menu =
+    .label = मोबाइल बुकमार्क
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] बुकमार्क साइडबार छिपाएं
+           *[other] बुकमार्क बाज़ू पट्टी देखें
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] बुकमार्क टूलबार छिपाएं
+           *[other] बुकमार्क औज़ारपट्टी देखें
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] टूलबार से बुकमार्क मेनू हटायें
+           *[other] टूलबार पर बुकमार्क मेनू डालें
+        }
+bookmarks-search =
+    .label = बुकमार्क खोजें
+bookmarks-tools =
+    .label = बुकमार्क के उपकरण
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = बुकमार्क औज़ारपट्टी
+    .accesskey = B
+    .aria-label = बुकमार्क
+bookmarks-toolbar-menu =
+    .label = बुकमार्क औज़ारपट्टी
+bookmarks-toolbar-placeholder =
+    .title = औज़ारपट्टी मद बुकमार्कित करता है
+bookmarks-toolbar-placeholder-button =
+    .label = औज़ारपट्टी मद बुकमार्कित करता है
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = बुकमार्क
+library-bookmarks-bookmark-this-page =
+    .label = यह पृष्ठ बुकमार्कित करें
+library-bookmarks-bookmark-edit =
+    .label = यह बुकमार्क संपादित करें
+
+## More items
+
+more-menu-go-offline =
+    .label = ऑफ़लाइन काम करें
+    .accesskey = k

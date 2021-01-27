@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Nastavi s oprezom
 pane-experimental-search-results-header = { -brand-short-name } eksperimenti: Nastavi s oprezom
 pane-experimental-description = Mijenjanje naprednih postavki konfiguracije može utjecati na perfomancu ili sigurnost programa { -brand-short-name }.
+pane-experimental-reset =
+    .label = Vrati zadano
+    .accesskey = r
 help-button-label = Podrška za { -brand-short-name }
 addons-button-label = Proširenja i teme
 focus-search =
@@ -129,7 +132,7 @@ separate-profile-mode =
     .label = Dozvoli da se { -brand-short-name } i Firefox pokrenu istovremeno
 use-firefox-sync = Savjet: Ovo koristi odvojene profile. Koristi { -sync-brand-short-name } za dijeljenje podataka između njih.
 get-started-not-logged-in = Prijavi se u { -sync-brand-short-name }…
-get-started-configured = Otvori { -sync-brand-short-name } postavke
+get-started-configured = Otvori postavke za { -sync-brand-short-name }
 always-check-default =
     .label = Uvijek provjeri je li { -brand-short-name } standardni preglednik
     .accesskey = z
@@ -348,7 +351,7 @@ applications-use-os-default-label =
 
 ##
 
-drm-content-header = Digital Rights Management (DRM) sadržaj
+drm-content-header = Sadržaj kontroliran DRM-om (Digital Rights Management)
 play-drm-content =
     .label = Reproduciraj DRM-kontrolirani sadržaj
     .accesskey = p
@@ -500,6 +503,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Stranice koje najviše posjećujete
 home-prefs-topsites-by-option-sponsored =
     .label = Sponzorirane najpopularnije stranice
+home-prefs-shortcuts-header =
+    .label = Prečaci
+home-prefs-shortcuts-description = Stranice koje spremiš ili posjetiš
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Sponzorirani prečaci
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -507,6 +515,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Preporučeno od { $provider }
 home-prefs-recommended-by-description-update = Izniman sadržaj sa svih strana weba, kojeg izabire { $provider }
+home-prefs-recommended-by-description-new = Izuzetan sadržaj kojeg odabire { $provider }, dio obitelji { -brand-product-name }
 
 ##
 
@@ -524,6 +533,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Najnovije preuzimanje
 home-prefs-highlights-option-saved-to-pocket =
     .label = Stranice spremljene u { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Nedavna aktivnost
+home-prefs-recent-activity-description = Izbor nedavnih stranica i sadržaja
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -531,6 +543,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Isječci
 home-prefs-snippets-description = Aktualiziranje od { -vendor-short-name } i { -brand-product-name }a
+home-prefs-snippets-description-new = Savjeti i vijesti od { -vendor-short-name } i { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -885,6 +898,10 @@ sitedata-option-block-cross-site-trackers =
     .label = Programi za praćenje među različitim web lokacijama
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Programi za praćenje među različitim web lokacijama i društvenim mrežama
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Međustranični kolačići za praćenje — uključuje kolačiće društvenih mreža
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Međustranični kolačići (cross-site cookies) — uključuje kolačiće društvenih mreža
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Pratitelji između više stranica, medijski pratitelji, te izoliranje preostalih kolačića
 sitedata-option-block-unvisited =
@@ -919,9 +936,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Otvorene kartice
     .accesskey = O
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Prečaci (S)
+    .accesskey = S
 addressbar-locbar-topsites-option =
     .label = Najbolje stranice
     .accesskey = N
+addressbar-locbar-engines-option =
+    .label = Tražilice
+    .accesskey = a
 addressbar-suggestions-settings = Promijeni postavke za prijedloge tražilica
 
 ## Privacy Section - Content Blocking
@@ -950,6 +974,7 @@ content-blocking-etp-standard-desc = Uravnoteženo za zaštitu i performansu. St
 content-blocking-etp-strict-desc = Jača zaštita, ali može prouzročiti probleme nekim web-stanicama ili sadržajima.
 content-blocking-etp-custom-desc = Odaberi programe za praćenje i skripte koje želiš blokirati.
 content-blocking-private-windows = Praćenje sadržaja u privatnim prozorima
+content-blocking-cross-site-cookies = Međustranični kolačići
 content-blocking-cross-site-tracking-cookies = Višestranični kolačići za praćenje
 content-blocking-cross-site-tracking-cookies-plus-isolate = Pratitelji između više stranica, te izoliranje preostalih kolačića
 content-blocking-social-media-trackers = Programi za praćenje s društvenih mreža
@@ -961,6 +986,7 @@ content-blocking-cryptominers = Kripto rudari
 content-blocking-fingerprinters = Jedinstvene otiske
 content-blocking-warning-title = Upozorenje!
 content-blocking-and-isolating-etp-warning-description = Blokiranje pratitelja i izoliranje kolačića može utjecati na funkcionalnost nekih stranica. Ponovno učitajte stranicu sa pratiteljem kako bi se učitao sav sadržaj.
+content-blocking-and-isolating-etp-warning-description-2 = Ova postavka može uzrokovati da neke web stranice ne prikazuju sadržaj ili ne rade ispravno. Ako se neka stranica čini slomljenom, možda ćeš htjeti isključiti zaštitu od praćenja da bi ta stranica učitala sav sadržaj.
 content-blocking-warning-learn-how = Saznaj kako
 content-blocking-reload-description = Morat ćeš ponovo učitati svoje kartice, kako bi se ove promjene primijenile.
 content-blocking-reload-tabs-button =
@@ -1048,7 +1074,7 @@ permissions-a11y-privacy-link = Saznaj više
 ## Privacy Section - Data Collection
 
 collection-header = { -brand-short-name } – prikupljanje i upotreba podataka
-collection-description = Želimo ti omogučiti izbor i prikupljati samo onoliko koliko nam treba da omogučimo i unaprijedimo { -brand-short-name } za sve. Uvijek pitamo za dozvolu prije nego što počnemo primati osobne informacije.
+collection-description = Želimo ti omogućiti izbor i prikupljati samo ono što nam treba da bismo pružali i unaprijedili { -brand-short-name } za sve. Uvijek pitamo za dozvolu prije nego što počnemo primati osobne informacije.
 collection-privacy-notice = Politika privatnosti
 collection-health-report-telemetry-disabled = Više ne dopuštaš { -vendor-short-name } snimanje tehničkih podataka i podataka o interakciji. Svi stari podaci biti će izbrisani u roku od 30 dana.
 collection-health-report-telemetry-disabled-link = Saznaj više

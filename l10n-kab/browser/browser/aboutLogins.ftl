@@ -169,7 +169,12 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Kkes anekcam-agi?
 confirm-delete-dialog-message = Ulac tuɣalin ɣer deffir.
 about-logins-confirm-remove-dialog-confirm-button = Kkes
-about-logins-confirm-remove-all-dialog-confirm-button = Kkes kullec
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] Kkes
+        [one] Kkes
+       *[other] Kkes kullec
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] Ih, kkes inekcam-a
@@ -201,6 +206,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Sifeḍ inekcam d wawalen uffiren
 about-logins-confirm-export-dialog-message = Awalen-inek uffiren ad ttwaskelsen am uḍris ara d-ibanen i tɣuri (d amedya, BadP@ssw0rd) akken yal amdan ara yeldin afaylu i yettusifḍen ad yizmir ad t-iwali.
 about-logins-confirm-export-dialog-confirm-button = Kter…
+about-logins-alert-import-title = Aktar yemmed
+about-logins-alert-import-message = Sken agzul leqqayen n uktar
 confirm-discard-changes-dialog-title = Sefsex isenfal-agi?
 confirm-discard-changes-dialog-message = Akk isnifal ur nettwakles ara ad ttwaksen.
 confirm-discard-changes-dialog-confirm-button = Kkes
@@ -262,3 +269,26 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Asemli CSV
        *[other] Afaylu CSV
     }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Akter yemmed
+about-logins-import-dialog-items-added =
+    { $count ->
+       *[other] <span>Ttwarnan inekcumen imaynuten:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+       *[other] <span>Ttuleqqmen inekcumen yellan:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+       *[other] <span>Ttwafen inekcumen yellan sin iberdan:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(not imported)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+       *[other] <span>Tuccḍiwin </span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ur d-yettukter ara)</span>
+    }
+about-logins-import-dialog-done = Immed

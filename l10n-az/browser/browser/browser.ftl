@@ -295,6 +295,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = Qapat
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -374,3 +377,63 @@ fullscreen-exit-mac-button = Tam erkandan çıx (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> kursorunuzu idarə edir. İdarəni geri almaq üçün Esc düyməsinə basın.
 pointerlock-warning-no-domain = Bu sənəd kursorunuzu idarə edir. İdarəni geri almaq üçün Esc düyməsinə basın.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Bütün əlfəcinləri göstər
+bookmarks-recent-bookmarks =
+    .value = Yeni əlfəcinlənmiş
+bookmarks-toolbar-chevron =
+    .tooltiptext = Daha çox əlfəcin göstər
+bookmarks-sidebar-content =
+    .aria-label = Əlfəcinlər
+bookmarks-menu-button =
+    .label = Əlfəcinlər menyusu
+bookmarks-other-bookmarks-menu =
+    .label = Digər əlfəcinlər
+bookmarks-mobile-bookmarks-menu =
+    .label = Mobil əlfəcinlər
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Əlfəcin yan panelini gizlət
+           *[other] Əlfəcin yan panelini göstər
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Əlfəcin alət sətrini gizlət
+           *[other] Əlfəcin alət sətrini gör
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Əlfəcinlər menyusunu Alət sətrindən sil
+           *[other] Əlfəcinlər menyusunu Alət sətrinə əlavə et
+        }
+bookmarks-search =
+    .label = Əlfəcinlərdə axtar
+bookmarks-tools =
+    .label = Əlfəcin alətləri
+bookmarks-toolbar-menu =
+    .label = Əlfəcin paneli
+bookmarks-toolbar-placeholder =
+    .title = Əlfəcin alət sətri obyektləri
+bookmarks-toolbar-placeholder-button =
+    .label = Əlfəcin alət sətri obyektləri
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Əlfəcinlər
+library-bookmarks-bookmark-this-page =
+    .label = Səhifəni əlfəcinlə
+library-bookmarks-bookmark-edit =
+    .label = Bu əlfəcini düzəlt
+
+## More items
+
+more-menu-go-offline =
+    .label = Oflayn işlə
+    .accesskey = l

@@ -330,6 +330,9 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Zarrar
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -456,3 +459,70 @@ fullscreen-exit-mac-button = Salir d'a pantalla completa (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> tien lo control d'o puntero. Prete Esc pa recuperar-ne lo control
 pointerlock-warning-no-domain = Iste documento tien lo control d'o puntero. Prete Esc pa recuperar-ne lo control.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Amostrar totz os marcapachinas
+bookmarks-recent-bookmarks =
+    .value = Pachinas marcadas recientment
+bookmarks-toolbar-chevron =
+    .tooltiptext = Amostrar mas marcapachinas
+bookmarks-sidebar-content =
+    .aria-label = Marcapachinas
+bookmarks-menu-button =
+    .label = Menu de marcapachinas
+bookmarks-other-bookmarks-menu =
+    .label = Atros marcapachinas
+bookmarks-mobile-bookmarks-menu =
+    .label = Marcapachinas d'o mobil
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Amagar la barra lateral de marcapachinas
+           *[other] Amostrar a barra lateral de marcapachinas
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Amagar la barra de ferramientas de marcapachinas
+           *[other] Veyer a barra de marcapachinas
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Eliminar lo menú de marcapachinas de la barra de ferramientas
+           *[other] Anyader lo menú de marcapachinas en a barra de ferramientas
+        }
+bookmarks-search =
+    .label = Trobar marcapachinas
+bookmarks-tools =
+    .label = Ferramientas d'os marcapachinas
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Barra de ferramientas de marcapachinas
+    .accesskey = B
+    .aria-label = Marcapachinas
+bookmarks-toolbar-menu =
+    .label = Barra de ferramientas de marcapachinas
+bookmarks-toolbar-placeholder =
+    .title = Elementos d'a barra de ferramientas de marcapachinas
+bookmarks-toolbar-placeholder-button =
+    .label = Elementos d'a barra de ferramientas de marcapachinas
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Marcapachinas
+library-bookmarks-bookmark-this-page =
+    .label = Marcar ista pachina con marcapachinas
+library-bookmarks-bookmark-edit =
+    .label = Editar iste marcapachinas
+
+## More items
+
+more-menu-go-offline =
+    .label = Treballar difuera de linia
+    .accesskey = d

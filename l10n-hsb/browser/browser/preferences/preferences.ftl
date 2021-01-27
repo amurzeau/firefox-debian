@@ -506,6 +506,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Sydła, kotrež najhusćišo wopytujeće
 home-prefs-topsites-by-option-sponsored =
     .label = Sponsorowane najlubše sydła
+home-prefs-shortcuts-header =
+    .label = Zwjazanja
+home-prefs-shortcuts-description = Sydła, kotrež składujeće abo wopytujeće
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Sponsorowane zwjazanja
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -513,6 +518,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Wot { $provider } doporučeny
 home-prefs-recommended-by-description-update = Wurjadny wobsah z cyłeho weba, wubrany wot { $provider }
+home-prefs-recommended-by-description-new = Wosebite wobsah, wubrany přez { $provider }, dźěla swójby { -brand-product-name }
 
 ##
 
@@ -521,8 +527,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsorowane stawizny
 home-prefs-highlights-header =
     .label = Wjerški
-home-prefs-recent-activity-header =
-    .label = Najnowša aktiwita
 home-prefs-highlights-description = Wuběr websydłow, kotrež sće składował abo wopytał
 home-prefs-highlights-option-visited-pages =
     .label = Wopytane strony
@@ -532,6 +536,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Najnowše sćehnjenje
 home-prefs-highlights-option-saved-to-pocket =
     .label = Strony składowane do { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Najnowša aktiwita
+home-prefs-recent-activity-description = Wuběr najnowšich sydłow a najnowšeho wobsaha
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -539,6 +546,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Šlipki
 home-prefs-snippets-description = Aktualizacije wot { -vendor-short-name } a { -brand-product-name }
+home-prefs-snippets-description-new = Pokiwy a nowinki wot { -vendor-short-name } a { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -932,9 +940,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Wočinjene rajtarki
     .accesskey = o
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Zwjazanja
+    .accesskey = Z
 addressbar-locbar-topsites-option =
     .label = Najhusćišo wopytane sydła
     .accesskey = N
+addressbar-locbar-engines-option =
+    .label = Pytawy
+    .accesskey = P
 addressbar-suggestions-settings = Nastajenja za namjety pytawy změnić
 
 ## Privacy Section - Content Blocking

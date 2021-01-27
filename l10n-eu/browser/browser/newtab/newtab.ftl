@@ -8,6 +8,9 @@
 newtab-page-title = Fitxa berria
 newtab-settings-button =
     .title = Pertsonalizatu fitxa berriaren orria
+newtab-personalize-button-label = Pertsonalizatu
+    .title = Pertsonalizatu fitxa berria
+    .aria-label = Pertsonalizatu fitxa berria
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Bilatu webean
     .title = Bilatu webean
     .aria-label = Bilatu webean
+newtab-search-box-text = Bilatu webean
+newtab-search-box-input =
+    .placeholder = Bilatu webean
+    .aria-label = Bilatu webean
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Gehitu bilaketa-motorra
 newtab-topsites-add-topsites-header = Maiz erabilitako gune berria
+newtab-topsites-add-shortcut-header = Lasterbide berria
 newtab-topsites-edit-topsites-header = Editatu maiz erabilitako gunea
+newtab-topsites-edit-shortcut-header = Editatu lasterbidea
 newtab-topsites-title-label = Izenburua
 newtab-topsites-title-input =
     .placeholder = Idatzi izenburua
@@ -206,3 +215,24 @@ newtab-pocket-cta-text = Gorde gogoko dituzun istorioak { -pocket-brand-name }-e
 
 newtab-error-fallback-info = Kontxo, zerbait gaizki joan da edukia kargatzerakoan.
 newtab-error-fallback-refresh-link = Berritu orria berriro saiatzeko.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Lasterbideak
+newtab-custom-shortcuts-subtitle = Gordetzen edo bisitatzen dituzun guneak
+newtab-custom-row-selector =
+    { $num ->
+        [one] Errenkada bat
+       *[other] { $num } errenkada
+    }
+newtab-custom-sponsored-sites = Babesleen lasterbideak
+newtab-custom-pocket-title = { -pocket-brand-name }-ek gomendatua
+newtab-custom-pocket-sponsored = Babesleen istorioak
+newtab-custom-recent-title = Azken jarduera
+newtab-custom-close-button = Itxi
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Mezu-zatiak
+newtab-custom-settings = Kudeatu ezarpen gehiago

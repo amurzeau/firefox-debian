@@ -500,6 +500,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Les sites que vous visitez le plus
 home-prefs-topsites-by-option-sponsored =
     .label = Sites populaires sponsorisés
+home-prefs-shortcuts-header =
+    .label = Raccourcis
+home-prefs-shortcuts-description = Sites que vous enregistrez ou visitez
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Raccourcis sponsorisés
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -507,6 +512,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Recommandations par { $provider }
 home-prefs-recommended-by-description-update = Contenu exceptionnel déniché sur le Web par { $provider }
+home-prefs-recommended-by-description-new = Contenu exceptionnel sélectionné par { $provider }, membre de la famille { -brand-product-name }
 
 ##
 
@@ -515,8 +521,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Articles sponsorisés
 home-prefs-highlights-header =
     .label = Éléments-clés
-home-prefs-recent-activity-header =
-    .label = Activité récente
 home-prefs-highlights-description = Une sélection de sites que vous avez sauvegardés ou visités
 home-prefs-highlights-option-visited-pages =
     .label = Pages visitées
@@ -526,6 +530,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Dernier téléchargement
 home-prefs-highlights-option-saved-to-pocket =
     .label = Pages enregistrées dans { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Activité récente
+home-prefs-recent-activity-description = Une sélection de sites et de contenus récents
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -533,6 +540,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Brèves
 home-prefs-snippets-description = Actualité de { -vendor-short-name } et { -brand-product-name }
+home-prefs-snippets-description-new = Astuces et actualité de { -vendor-short-name } et { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -924,9 +932,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Les onglets ouverts
     .accesskey = O
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Raccourcis
+    .accesskey = R
 addressbar-locbar-topsites-option =
     .label = Les sites les plus visités
     .accesskey = v
+addressbar-locbar-engines-option =
+    .label = Les moteurs de recherche
+    .accesskey = r
 addressbar-suggestions-settings = Modifier les préférences pour les suggestions de recherche
 
 ## Privacy Section - Content Blocking

@@ -25,6 +25,9 @@ printui-range-start = De
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = fins a
+printui-page-custom-range-input =
+    .aria-label = Picar una plaja de paginas personalizada
+    .placeholder = ex : 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Còpias
 printui-orientation = Orientacion
@@ -46,8 +49,9 @@ printui-two-sided-printing = Imprimir rècto verso
 printui-duplex-checkbox = Imprimir los dos costats
 # Section title for miscellaneous print options
 printui-options = Opcions
-printui-headers-footers-checkbox = Imprimir las entèstas e los pè de pagina
+printui-headers-footers-checkbox = Imprimir las entèstas e los pès de pagina
 printui-backgrounds-checkbox = Imprimir los rèireplans
+printui-selection-checkbox = Sonque imprimir la seleccion
 printui-color-mode-label = Mòde color
 printui-color-mode-color = Color
 printui-color-mode-bw = Blanc e negre
@@ -56,19 +60,29 @@ printui-margins-default = Per defaut
 printui-margins-min = Minimum
 printui-margins-none = Pas cap
 printui-margins-custom = Personalizats
+printui-margins-custom-inches = Personalizats (poces)
 printui-margins-custom-top = Naut
+printui-margins-custom-top-inches = Naut (poces)
 printui-margins-custom-bottom = Bas
+printui-margins-custom-bottom-inches = Bas (poces)
 printui-margins-custom-left = Esquèrra
+printui-margins-custom-left-inches = Esquèrra (poces)
 printui-margins-custom-right = Drecha
+printui-margins-custom-right-inches = Drecha (poces)
 printui-system-dialog-link = Imprimir en utilizant los menús del sistèma…
 printui-primary-button = Imprimir
 printui-primary-button-save = Enregistrar
 printui-cancel-button = Anullar
+printui-close-button = Tampar
 printui-loading = Preparacion de l’apercebut
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Apercebut abans impression
+printui-pages-per-sheet = Pagina per fuèlh
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Impression…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

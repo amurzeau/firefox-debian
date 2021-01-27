@@ -24,6 +24,9 @@ printui-range-start = 從
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = 到
+printui-page-custom-range-input =
+    .aria-label = 輸入自訂頁面範圍
+    .placeholder = 例如 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = 份數
 printui-orientation = 方向
@@ -47,6 +50,7 @@ printui-duplex-checkbox = 印在紙張的兩面
 printui-options = 選項
 printui-headers-footers-checkbox = 列印頁首與頁尾
 printui-backgrounds-checkbox = 列印背景
+printui-selection-checkbox = 只印選取範圍
 printui-color-mode-label = 色彩模式
 printui-color-mode-color = 彩色
 printui-color-mode-bw = 黑白
@@ -55,19 +59,29 @@ printui-margins-default = 預設值
 printui-margins-min = 最小
 printui-margins-none = 無
 printui-margins-custom = 自訂
+printui-margins-custom-inches = 自訂（英寸）
 printui-margins-custom-top = 頂端
+printui-margins-custom-top-inches = 頂端（英寸）
 printui-margins-custom-bottom = 底端
+printui-margins-custom-bottom-inches = 底端（英寸）
 printui-margins-custom-left = 左邊
+printui-margins-custom-left-inches = 左方（英寸）
 printui-margins-custom-right = 右邊
+printui-margins-custom-right-inches = 右方（英寸）
 printui-system-dialog-link = 使用系統對話框列印…
 printui-primary-button = 列印
 printui-primary-button-save = 儲存
 printui-cancel-button = 取消
+printui-close-button = 關閉
 printui-loading = 正在準備預覽列印
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = 預覽列印
+printui-pages-per-sheet = 每張紙要印的頁面數
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = 列印中…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

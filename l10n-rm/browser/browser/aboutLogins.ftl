@@ -169,7 +169,12 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Allontanar questas infurmaziuns d'annunzia?
 confirm-delete-dialog-message = Questa acziun na po betg vegnir revocada.
 about-logins-confirm-remove-dialog-confirm-button = Allontanar
-about-logins-confirm-remove-all-dialog-confirm-button = Allontanar tut
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] Allontanar
+        [one] Allontanar tut
+       *[other] Allontanar tut
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] Gea, allontanar questa data d'annunzia
@@ -198,6 +203,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Exportar infurmaziuns d'annunzia e pleds-clav
 about-logins-confirm-export-dialog-message = Tes pleds-clav vegnan memorisads sco text legibel (p.ex. «M@lPledc1av»), uschia che mintgin che po avrir la datoteca exportada als po vesair.
 about-logins-confirm-export-dialog-confirm-button = Exportar…
+about-logins-alert-import-title = L'import è cumplet
+about-logins-alert-import-message = Mussar ina resumaziun detagliada da l'import
 confirm-discard-changes-dialog-title = Ignorar las modificaziuns betg memorisadas?
 confirm-discard-changes-dialog-message = Tut las modificaziuns betg memorisadas van a perder.
 confirm-discard-changes-dialog-confirm-button = Ignorar
@@ -259,3 +266,26 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Document CSV
        *[other] Datoteca CSV
     }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = L'import è cumplet
+about-logins-import-dialog-items-added =
+    { $count ->
+       *[other] <span>Novas infurmaziuns d'annunzia agiuntadas:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+       *[other] <span>Infurmaziuns d'annunzia existentas actualisadas:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+       *[other] <span>Duplicats dad infurmaziuns d'annunzia:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(betg importà)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+       *[other] <span>Errurs:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(betg importà)</span>
+    }
+about-logins-import-dialog-done = Finì

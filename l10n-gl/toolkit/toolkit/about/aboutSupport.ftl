@@ -59,12 +59,16 @@ app-basics-enabled-plugins = Engadidos activados
 app-basics-build-config = Configuración da compilación
 app-basics-user-agent = User Agent
 app-basics-os = SO
+# Rosetta is Apple's translation process to run apps containing x86_64
+# instructions on Apple Silicon. This should remain in English.
+app-basics-rosetta = Traducido con Rosetta
 app-basics-memory-use = Uso de memoria
 app-basics-performance = Rendemento
 app-basics-service-workers = Service Workers rexistrados
 app-basics-profiles = Perfís
 app-basics-launcher-process-status = Proceso de lanzamento
 app-basics-multi-process-support = Xanelas multiproceso
+app-basics-fission-support = Xanelas Fission
 app-basics-remote-processes-count = Procesos remotos
 app-basics-enterprise-policies = Políticas empresariais
 app-basics-location-service-key-google = Clave de servizo de localización de Google
@@ -181,6 +185,32 @@ remote-debugging-url = URL
 
 ##
 
+support-third-party-modules-title = Módulos de terceiros
+support-third-party-modules-module = Ficheiro de módulo
+support-third-party-modules-version = Versión do ficheiro
+support-third-party-modules-vendor = Info do vendedor
+support-third-party-modules-occurrence = Aparicións
+support-third-party-modules-process = Tipo de proceso e identificador
+support-third-party-modules-thread = Fío
+support-third-party-modules-base = Enderezo da imagebase
+support-third-party-modules-uptime = Tempo de actividade do proceso (ms)
+support-third-party-modules-duration = Duración de carga (ms)
+support-third-party-modules-empty = Non se cargaron módulos de terceiros.
+support-third-party-modules-no-value = (Sen valor)
+support-third-party-modules-button-open =
+    .title = Abrir a localización do ficheiro ...
+support-third-party-modules-expand =
+    .title = Mostrar información detallada
+support-third-party-modules-collapse =
+    .title = Contraer información detallada
+support-third-party-modules-unsigned-icon =
+    .title = Este módulo non está asinado
+support-third-party-modules-folder-icon =
+    .title = Abrir a localización do ficheiro ...
+support-third-party-modules-down-icon =
+    .title = Mostrar información detallada
+support-third-party-modules-up-icon =
+    .title = Contraer información detallada
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -326,6 +356,10 @@ multi-process-status-6 = Desactivado porque a entrada de texto é incompatíbel
 multi-process-status-7 = Desactivado polos complementos
 multi-process-status-8 = Desactivado forzosamente
 multi-process-status-unknown = Estado descoñecido
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $fissionWindows }/{ $totalWindows }
 fission-status-experiment-control = Desactivada polo experimento
 fission-status-experiment-treatment = Activada polo experimento
 fission-status-disabled-by-e10s-env = Desactivada polo entorno
@@ -335,6 +369,7 @@ fission-status-enabled-by-default = Activada por omisión
 fission-status-disabled-by-default = Desactivada por omisión
 fission-status-enabled-by-user-pref = Activada polo usuario
 fission-status-disabled-by-user-pref = Desactivada polo usuario
+fission-status-disabled-by-e10s-other = Desactivadas por E10s
 async-pan-zoom = Pan/Zoom asíncrono
 apz-none = ningún
 wheel-enabled = entrada da roda do rato activada

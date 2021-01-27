@@ -18,6 +18,8 @@
 <!ENTITY newListCmd.accesskey                           "S">
 <!ENTITY newAddressBookCmd.label                        "Složka kontaktů…">
 <!ENTITY newAddressBookCmd.accesskey                    "a">
+<!ENTITY newCardDAVBookCmd.label                        "Složka kontaktů CardDAV…">
+<!ENTITY newCardDAVBookCmd.accesskey                    "V">
 <!ENTITY newLDAPDirectoryCmd.label                      "LDAP adresář…">
 <!ENTITY newLDAPDirectoryCmd.accesskey                  "D">
 <!ENTITY newMessageCmd.label                            "Zpráva">
@@ -70,7 +72,7 @@
 <!ENTITY menubarCmd.label                               "Lišta nabídky">
 <!ENTITY menubarCmd.accesskey                           "n">
 <!ENTITY showAbToolbarCmd.label                         "Lišta kontaktů">
-<!ENTITY showAbToolbarCmd.accesskey                     "d">
+<!ENTITY showAbToolbarCmd.accesskey                     "o">
 <!ENTITY showTaskbarCmd.label                           "Stavový řádek">
 <!ENTITY showTaskbarCmd.accesskey                       "t">
 <!ENTITY customizeToolbar.label                         "Přizpůsobit…">

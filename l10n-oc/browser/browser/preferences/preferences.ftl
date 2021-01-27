@@ -500,6 +500,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Los sites que visitatz mai sovent
 home-prefs-topsites-by-option-sponsored =
     .label = Sites pairinejats
+home-prefs-shortcuts-header =
+    .label = Acorchis
+home-prefs-shortcuts-description = Los sites qu’enregistratz o consultatz
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Acorchis pairinejats
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -507,6 +512,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Recomandat per { $provider }
 home-prefs-recommended-by-description-update = Contengut excepcional de pertot del web, seleccionat per { $provider }
+home-prefs-recommended-by-description-new = Contengut excepcional seleccionat per { $provider }, membre de la familha { -brand-product-name }
 
 ##
 
@@ -515,8 +521,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Articles pairinejats
 home-prefs-highlights-header =
     .label = Notables
-home-prefs-recent-activity-header =
-    .label = Activitat recenta
 home-prefs-highlights-description = Una seleccion de sites qu’avètz enregistrats o visitats
 home-prefs-highlights-option-visited-pages =
     .label = Paginas visitadas
@@ -526,6 +530,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Telecargament mai recent
 home-prefs-highlights-option-saved-to-pocket =
     .label = Paginas enregistradas dins { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Activitat recenta
+home-prefs-recent-activity-description = Una seleccion de sites e contenguts recents
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -533,6 +540,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Extraches
 home-prefs-snippets-description = Actualitat de { -vendor-short-name } e { -brand-product-name }
+home-prefs-snippets-description-new = Astúcias e novetats de { -vendor-short-name } e { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -924,9 +932,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Onglets dobèrts
     .accesskey = D
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Acorchis
+    .accesskey = A
 addressbar-locbar-topsites-option =
     .label = Mai visitats
     .accesskey = M
+addressbar-locbar-engines-option =
+    .label = Motors de recèrca
+    .accesskey = a
 addressbar-suggestions-settings = Cambiar las preferéncias per las suggestions del motor de recèrca
 
 ## Privacy Section - Content Blocking

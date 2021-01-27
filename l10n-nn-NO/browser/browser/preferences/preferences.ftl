@@ -52,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Gå varsamt til verks
 pane-experimental-search-results-header = { -brand-short-name }-eksperiment: Fortset med varsemd
 pane-experimental-description = Endrar du avanserte konfigurasjonsinnstillingar kan det påverke yting eller sikkerheit i { -brand-short-name }.
+pane-experimental-reset =
+    .label = Gjenopprett standard
+    .accesskey = G
 help-button-label = Brukarstøtte for { -brand-short-name }
 addons-button-label = Utvidingar og tema
 focus-search =
@@ -497,6 +500,8 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Sidene du besøkjer mest
 home-prefs-topsites-by-option-sponsored =
     .label = Sponsa toppsider
+home-prefs-shortcuts-header =
+    .label = Snarvegar
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -521,6 +526,8 @@ home-prefs-highlights-option-most-recent-download =
     .label = Siste nedlasting
 home-prefs-highlights-option-saved-to-pocket =
     .label = Sider lagra til { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Nyleg aktivitet
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,

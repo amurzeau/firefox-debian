@@ -314,7 +314,7 @@ preferences-addon-button =
        *[other] Preferências
     }
 details-addon-button = Detalhes
-release-notes-addon-button = Notas da versão
+release-notes-addon-button = Notas de atualização
 permissions-addon-button = Permissões
 extension-enabled-heading = Ativado
 extension-disabled-heading = Desativado
@@ -380,14 +380,8 @@ addon-detail-private-browsing-disallow = Não permitir
 ## badge is a small icon displayed next to an extension when it is recommended on AMO.
 
 addon-badge-recommended2 =
-    .title = O { -brand-product-name } só recomenda extensões que atendem nossos padrões de segurança e desempenho
+    .title = O { -brand-product-name } só recomenda extensões que atendem aos nossos padrões de segurança e desempenho
     .aria-label = { addon-badge-recommended2.title }
-addon-badge-line =
-    .title = Esta extensão foi feita pelos criadores do { -brand-product-name }
-    .aria-label = { addon-badge-line.title }
-addon-badge-verified =
-    .title = O código desta extensão foi revisado para garantir a segurança
-    .aria-label = { addon-badge-verified.title }
 addon-badge-line2 =
     .title = Esta é uma extensão oficial, feita pelos criadores do { -brand-product-name }
     .aria-label = { addon-badge-line2.title }
@@ -400,7 +394,7 @@ addon-badge-verified2 =
 available-updates-heading = Atualizações disponíveis
 recent-updates-heading = Atualizações recentes
 release-notes-loading = Carregando…
-release-notes-error = Desculpe, houve um erro ao carregar as notas de lançamento.
+release-notes-error = Desculpe, houve um erro ao carregar as notas de atualização.
 addon-permissions-empty = Esta extensão não exige nenhum permissão
 addon-permissions-required = Permissões necessárias para a funcionalidade principal:
 addon-permissions-optional = Permissões opcionais para funcionalidades adicionais:

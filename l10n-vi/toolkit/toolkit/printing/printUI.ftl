@@ -24,6 +24,9 @@ printui-range-start = Từ
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = đến
+printui-page-custom-range-input =
+    .aria-label = Nhập phạm vi trang tùy chỉnh
+    .placeholder = ví dụ: 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Bản sao
 printui-orientation = Hướng
@@ -47,6 +50,7 @@ printui-duplex-checkbox = In trên cả hai mặt của giấy
 printui-options = Tùy chọn
 printui-headers-footers-checkbox = In đầu trang và chân trang
 printui-backgrounds-checkbox = In phần nền
+printui-selection-checkbox = Chỉ in phần được chọn
 printui-color-mode-label = Chế độ màu
 printui-color-mode-color = Màu
 printui-color-mode-bw = Đen và trắng
@@ -55,19 +59,29 @@ printui-margins-default = Mặc định
 printui-margins-min = Tối thiểu
 printui-margins-none = Không có
 printui-margins-custom = Tùy chọn
+printui-margins-custom-inches = Tùy chỉnh (inch)
 printui-margins-custom-top = Trên
+printui-margins-custom-top-inches = Trên (inch)
 printui-margins-custom-bottom = Dưới
+printui-margins-custom-bottom-inches = Dưới (inch)
 printui-margins-custom-left = Trái
+printui-margins-custom-left-inches = Trái (inch)
 printui-margins-custom-right = Phải
+printui-margins-custom-right-inches = Phải (inch)
 printui-system-dialog-link = In bằng hộp thoại hệ thống…
 printui-primary-button = In
 printui-primary-button-save = Lưu
 printui-cancel-button = Hủy bỏ
+printui-close-button = Đóng
 printui-loading = Đang chuẩn bị xem trước
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Xem trước trang in
+printui-pages-per-sheet = Số trang trên mỗi tờ
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Đang in...
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

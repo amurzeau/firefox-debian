@@ -25,6 +25,9 @@ printui-range-start = Fan
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = oant
+printui-page-custom-range-input =
+    .aria-label = Oanpast sideberik ynfiere
+    .placeholder = byg. 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Kopyen
 printui-orientation = Oriïntaasje
@@ -48,6 +51,7 @@ printui-duplex-checkbox = Op beide siden ôfdrukke
 printui-options = Opsjes
 printui-headers-footers-checkbox = Kop- en foetteksten ôfdrukke
 printui-backgrounds-checkbox = Eftergrûnen ôfdrukke
+printui-selection-checkbox = Allinnich seleksje ôfdrukke
 printui-color-mode-label = Kleurmodus
 printui-color-mode-color = Kleur
 printui-color-mode-bw = Swart-wyt
@@ -56,19 +60,29 @@ printui-margins-default = Standert
 printui-margins-min = Minimum
 printui-margins-none = Gjin
 printui-margins-custom = Oanpast
+printui-margins-custom-inches = Oanpast (inches)
 printui-margins-custom-top = Boppe
+printui-margins-custom-top-inches = Boppeside (inches)
 printui-margins-custom-bottom = Under
+printui-margins-custom-bottom-inches = Underside (inches)
 printui-margins-custom-left = Links
+printui-margins-custom-left-inches = Links (inches)
 printui-margins-custom-right = Rjochts
+printui-margins-custom-right-inches = Rjochts (inches)
 printui-system-dialog-link = Ofdrukke fia it systeemdialoochfienster…
 printui-primary-button = Ofdrukke
 printui-primary-button-save = Bewarje
 printui-cancel-button = Annulearje
+printui-close-button = Slute
 printui-loading = Foarbyld tariede
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Ofdrukfoarbyld
+printui-pages-per-sheet = Siden per blêd
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Ofdrukke…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

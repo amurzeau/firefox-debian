@@ -224,6 +224,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = Zarrar
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -287,3 +290,45 @@ fullscreen-exit-mac-button = Colar de pantalla completa (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> tien el control del to punteru. Primi Esc pa recuperalu.
 pointerlock-warning-no-domain = Esti documentu tien el control del to punteru. Primi Esc pa recuperalu.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Amosar tolos marcadores
+bookmarks-recent-bookmarks =
+    .value = Amestao apocayá a marcadores
+bookmarks-toolbar-chevron =
+    .tooltiptext = Amosar más marcadores
+bookmarks-sidebar-content =
+    .aria-label = Marcadores
+bookmarks-menu-button =
+    .label = Menú de marcadores
+bookmarks-other-bookmarks-menu =
+    .label = Otros marcadores
+bookmarks-mobile-bookmarks-menu =
+    .label = Marcadores del móvil
+bookmarks-search =
+    .label = Guetar marcadores
+bookmarks-tools =
+    .label = Ferramientes de marcadores
+bookmarks-toolbar-menu =
+    .label = Barra de ferramientes de marcadores
+bookmarks-toolbar-placeholder =
+    .title = Elementos de la barra de ferramientes de marcadores
+bookmarks-toolbar-placeholder-button =
+    .label = Elementos de la barra de ferramientes de marcadores
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Marcadores
+library-bookmarks-bookmark-this-page =
+    .label = Amestar esta páxina a marcadores
+library-bookmarks-bookmark-edit =
+    .label = Editar esti marcador
+
+## More items
+
+more-menu-go-offline =
+    .label = Trabayar ensin conexón
+    .accesskey = y

@@ -503,3 +503,70 @@ fullscreen-exit-mac-button = Surt de la pantalla completa (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> té el control del punter. Premeu Esc per recuperar el control.
 pointerlock-warning-no-domain = Aquest document té el control del punter. Premeu Esc per recuperar el control.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Mostra totes les adreces d'interès
+bookmarks-recent-bookmarks =
+    .value = Afegides recentment
+bookmarks-toolbar-chevron =
+    .tooltiptext = Mostra més adreces d'interès
+bookmarks-sidebar-content =
+    .aria-label = Adreces d'interès
+bookmarks-menu-button =
+    .label = Menú de les adreces d'interès
+bookmarks-other-bookmarks-menu =
+    .label = Altres adreces d'interès
+bookmarks-mobile-bookmarks-menu =
+    .label = Adreces del mòbil
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Amaga la barra lateral d'adreces d'interès
+           *[other] Mostra la barra lateral de les adreces d'interès
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Amaga la barra d'eines d'adreces d'interès
+           *[other] Mostra la barra de les adreces d'interès
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Elimina el menú d'adreces d'interès de la barra d'eines
+           *[other] Afegeix el menú d'adreces d'interès a la barra d'eines
+        }
+bookmarks-search =
+    .label = Cerca adreces d'interès
+bookmarks-tools =
+    .label = Eines d'adreces d'interès
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Barra de les adreces d'interès
+    .accesskey = B
+    .aria-label = Adreces d'interès
+bookmarks-toolbar-menu =
+    .label = Barra de les adreces d'interès
+bookmarks-toolbar-placeholder =
+    .title = Elements de la barra de les adreces d'interès
+bookmarks-toolbar-placeholder-button =
+    .label = Elements de la barra de les adreces d'interès
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Adreces d'interès
+library-bookmarks-bookmark-this-page =
+    .label = Afegeix la pàgina a les adreces d'interès
+library-bookmarks-bookmark-edit =
+    .label = Edita aquesta adreça d'interès
+
+## More items
+
+more-menu-go-offline =
+    .label = Treballa fora de línia
+    .accesskey = b

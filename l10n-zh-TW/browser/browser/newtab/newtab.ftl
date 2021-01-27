@@ -8,6 +8,9 @@
 newtab-page-title = 新分頁
 newtab-settings-button =
     .title = 自訂您的新分頁頁面
+newtab-personalize-button-label = 個人化
+    .title = 個人化新分頁
+    .aria-label = 個人化新分頁
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = 搜尋 Web
     .title = 搜尋 Web
     .aria-label = 搜尋 Web
+newtab-search-box-text = 搜尋 Web
+newtab-search-box-input =
+    .placeholder = 搜尋 Web
+    .aria-label = 搜尋 Web
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = 新增搜尋引擎
 newtab-topsites-add-topsites-header = 新增熱門網站
+newtab-topsites-add-shortcut-header = 新增捷徑
 newtab-topsites-edit-topsites-header = 編輯熱門網站
+newtab-topsites-edit-shortcut-header = 編輯捷徑
 newtab-topsites-title-label = 標題
 newtab-topsites-title-input =
     .placeholder = 輸入標題
@@ -203,3 +212,26 @@ newtab-pocket-cta-text = 將您喜愛的故事儲存到 { -pocket-brand-name }�
 
 newtab-error-fallback-info = 唉唷，載入內容時發生錯誤。
 newtab-error-fallback-refresh-link = 請重新整理頁面再試一次。
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = 捷徑
+newtab-custom-shortcuts-subtitle = 您儲存或造訪過的網站
+newtab-custom-row-selector =
+    { $num ->
+       *[other] { $num } 行
+    }
+newtab-custom-sponsored-sites = 贊助捷徑
+newtab-custom-pocket-title = 由 { -pocket-brand-name } 推薦
+newtab-custom-pocket-subtitle = 由 { -brand-product-name } 的姊妹作 { -pocket-brand-name } 精心策展的內容
+newtab-custom-pocket-sponsored = 贊助內容
+newtab-custom-recent-title = 近期動態
+newtab-custom-recent-subtitle = 近期造訪過的網站與內容精選
+newtab-custom-close-button = 關閉
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = 隻字片語
+newtab-custom-snippets-subtitle = 來自 { -vendor-short-name } 及 { -brand-product-name } 的使用秘訣與新聞
+newtab-custom-settings = 管理更多設定

@@ -22,6 +22,9 @@ printui-page-range-picker =
   .aria-label = Selezionare un intervallo di pagine
 printui-page-custom-range =
   .aria-label = Inserire un intervallo di pagine personalizzato
+printui-page-custom-range-input =
+  .aria-label = Inserire un intervallo di pagine personalizzato
+  .placeholder = ad es. 2-6, 9, 12-16
 # This label is displayed before the first input field indicating
 # the start of the range to print.
 printui-range-start = Da
@@ -60,6 +63,7 @@ printui-duplex-checkbox = Stampa su entrambi i lati
 printui-options = Opzioni
 printui-headers-footers-checkbox = Stampa intestazioni e piè di pagina
 printui-backgrounds-checkbox = Stampa sfondi
+printui-selection-checkbox = Stampa solo la selezione
 
 printui-color-mode-label = Modalità colore
 printui-color-mode-color = Colori
@@ -70,10 +74,15 @@ printui-margins-default = Predefiniti
 printui-margins-min = Minimi
 printui-margins-none = Nessuno
 printui-margins-custom = Personalizzati
+printui-margins-custom-inches = Personalizzati (pollici)
 printui-margins-custom-top = Superiore
 printui-margins-custom-bottom = Inferiore
 printui-margins-custom-left = Sinistra
 printui-margins-custom-right = Destra
+printui-margins-custom-top-inches = Superiore (pollici)
+printui-margins-custom-bottom-inches = Inferiore (pollici)
+printui-margins-custom-left-inches = Sinistra (pollici)
+printui-margins-custom-right-inches = Destra (pollici)
 
 printui-system-dialog-link = Stampa utilizzando la finestra di dialogo del sistema…
 
@@ -90,6 +99,9 @@ printui-preview-label =
     .aria-label = Anteprima di stampa
 
 printui-pages-per-sheet = Pagine per foglio
+
+printui-print-progress-indicator = Stampa in corso…
+
 ## Paper sizes that may be supported by the Save to PDF destination:
 
 printui-paper-a5 = A5

@@ -273,6 +273,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = बंद करा
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -344,3 +347,70 @@ fullscreen-exit-mac-button = पूर्ण स्क्रीनमधून �
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> कडे आपल्या पॉईंटरचे नियंत्रण आहे. नियंत्रण परत घेण्यासाठी Esc दाबा.
 pointerlock-warning-no-domain = ह्या दस्तऐवजाकडे आपल्या पॉईंटरचे नियंत्रण आहे. नियंत्रण परत घेण्यासाठी Esc दाबा.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = सर्व वाचणखूणा दाखवा
+bookmarks-recent-bookmarks =
+    .value = अलिकडील वाचनखूणा
+bookmarks-toolbar-chevron =
+    .tooltiptext = आणखी वाचनखूणा दर्शवा
+bookmarks-sidebar-content =
+    .aria-label = वाचनखूणा
+bookmarks-menu-button =
+    .label = वाचनखूणा यादी
+bookmarks-other-bookmarks-menu =
+    .label = इतर वाचनखूणा
+bookmarks-mobile-bookmarks-menu =
+    .label = मोबाईल वाचनखूणा
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] वाचनखूणांची बाजूपट्टी दृष्टीआड ठेवा
+           *[other] वाचनखूणा साधनपट्टी दृष्य
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] वाचनखूणांची साधनपट्टी दृष्टीआड ठेवा
+           *[other] वाचनखूणा साधनपट्टी दृष्य
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] साधनपट्टीवरील वाचनखुणा मेनू काढा
+           *[other] साधनपट्टी मध्ये वाचनखुणा मेनू जोडा
+        }
+bookmarks-search =
+    .label = वाचनखुणा शोधा
+bookmarks-tools =
+    .label = वाचनखुणा साधने
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = वाचनखूणा साधनपट्टी
+    .accesskey = B
+    .aria-label = वाचनखूणा
+bookmarks-toolbar-menu =
+    .label = वाचनखूणा साधनपट्टी
+bookmarks-toolbar-placeholder =
+    .title = साधनपट्टीतील घटकांना वाचनखूण लावा
+bookmarks-toolbar-placeholder-button =
+    .label = साधनपट्टीतील घटकांना वाचनखूण लावा
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = वाचनखूणा
+library-bookmarks-bookmark-this-page =
+    .label = या पृष्ठास वाचनखूण लावा
+library-bookmarks-bookmark-edit =
+    .label = ही वाचनखूण संपादीत करा
+
+## More items
+
+more-menu-go-offline =
+    .label = ऑफलाईन काम करा
+    .accesskey = k

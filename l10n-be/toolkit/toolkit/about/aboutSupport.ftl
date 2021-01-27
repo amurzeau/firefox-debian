@@ -188,6 +188,32 @@ remote-debugging-url = URL
 
 ##
 
+support-third-party-modules-title = Модулі іншых вытворцаў
+support-third-party-modules-module = Файл модуля
+support-third-party-modules-version = Версія файла
+support-third-party-modules-vendor = Інфармацыя пра вытворцу
+support-third-party-modules-occurrence = Копіі
+support-third-party-modules-process = Тып і ідэнтыфікатар працэсу
+support-third-party-modules-thread = Паток
+support-third-party-modules-base = Адрас базавай загрузкі выявы
+support-third-party-modules-uptime = Час працы працэсу (мс)
+support-third-party-modules-duration = Працягласць загрузкі (мс)
+support-third-party-modules-empty = Модулі іншых вытворцаў не загружаны.
+support-third-party-modules-no-value = (Няма значэння)
+support-third-party-modules-button-open =
+    .title = Адкрыць месцазнаходжанне файла…
+support-third-party-modules-expand =
+    .title = Паказаць падрабязную інфармацыю
+support-third-party-modules-collapse =
+    .title = Згарнуць падрабязную інфармацыю
+support-third-party-modules-unsigned-icon =
+    .title = Гэты модуль не падпісаны
+support-third-party-modules-folder-icon =
+    .title = Адкрыць месцазнаходжанне файла…
+support-third-party-modules-down-icon =
+    .title = Паказаць падрабязную інфармацыю
+support-third-party-modules-up-icon =
+    .title = Згарнуць падрабязную інфармацыю
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =

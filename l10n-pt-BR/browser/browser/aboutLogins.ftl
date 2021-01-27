@@ -129,7 +129,7 @@ about-logins-copy-password-os-auth-dialog-message-macosx = copiar a senha salva
 
 ## Master Password notification
 
-master-password-notification-message = Digite sua senha mestra para ver contas e senhas salvas
+master-password-notification-message = Digite sua senha principal para ver contas e senhas salvas
 # This message can be seen when attempting to export a password in about:logins on Windows.
 about-logins-export-password-os-auth-dialog-message-win = Para exportar suas contas, insira suas credenciais de acesso ao Windows. Isso ajuda a proteger a segurança de suas contas.
 # This message can be seen when attempting to export a password in about:logins
@@ -169,7 +169,12 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Remover esta conta?
 confirm-delete-dialog-message = Esta ação não pode ser desfeita.
 about-logins-confirm-remove-dialog-confirm-button = Remover
-about-logins-confirm-remove-all-dialog-confirm-button = Remover tudo
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] Remover
+        [one] Remover
+       *[other] Remover tudo
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] Sim, remover esta conta
@@ -201,6 +206,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Exportar contas e senhas
 about-logins-confirm-export-dialog-message = Suas senhas serão salvas em texto legível (exemplo, Senh@Ruim123), qualquer pessoa que consiga abrir o arquivo exportado poderá ver.
 about-logins-confirm-export-dialog-confirm-button = Exportar…
+about-logins-alert-import-title = Importação concluída
+about-logins-alert-import-message = Ver resumo detalhado da importação
 confirm-discard-changes-dialog-title = Descartar alterações não salvas?
 confirm-discard-changes-dialog-message = Todas as alterações não salvas serão perdidas.
 confirm-discard-changes-dialog-confirm-button = Descartar
@@ -262,3 +269,30 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Documento CSV
        *[other] Arquivo CSV
     }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Importação concluída
+about-logins-import-dialog-items-added =
+    { $count ->
+        [one] <span>Nova conta adicionada:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Novas contas adicionadas:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+        [one] <span>Conta existente atualizada:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Contas existentes atualizadas:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+        [one] <span>Conta duplicada encontrada:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(não importada)</span>
+       *[other] <span>Contas duplicadas encontradas:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(não importadas)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+        [one] <span>Erro:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(não importado)</span>
+       *[other] <span>Erros:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(não importados)</span>
+    }
+about-logins-import-dialog-done = Concluído

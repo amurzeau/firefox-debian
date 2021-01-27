@@ -169,7 +169,12 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = ¿Eliminar este inicio de sesión?
 confirm-delete-dialog-message = Esta acción no se puede deshacer
 about-logins-confirm-remove-dialog-confirm-button = Eliminar
-about-logins-confirm-remove-all-dialog-confirm-button = Eliminar todo
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] Eliminar
+        [one] Eliminar
+       *[other] Eliminar todas
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] Sí, eliminar este inicio de sesión
@@ -201,6 +206,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Exportar inicios de sesión y contraseñas
 about-logins-confirm-export-dialog-message = Tus contraseñas se guardarán como texto legible (por ejemplo, BadP@ssw0rd) de modo que cualquiera que abra el archivo exportado podrá verlas.
 about-logins-confirm-export-dialog-confirm-button = Exportar...
+about-logins-alert-import-title = Importación completa
+about-logins-alert-import-message = Ver resumen detallado de la importación
 confirm-discard-changes-dialog-title = ¿Descartar cambios no guardados?
 confirm-discard-changes-dialog-message = Todos los cambios no guardados se perderán.
 confirm-discard-changes-dialog-confirm-button = Descartar
@@ -262,3 +269,30 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Documento CSV
        *[other] Archivo CSV
     }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Importación completa
+about-logins-import-dialog-items-added =
+    { $count ->
+        [one] <span> Se agregaron nuevos inicios de sesión:</span> <span-data-l10n-name="count">{ $count }</span>
+       *[other] <span> Se agregaron nuevos inicios de sesión:</span> <span-data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+        [one] <span>Se actualizaron los inicios de sesión :</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Se actualizaron los inicios de sesión :</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+        [one] <span>Se encontraron inicios de sesión duplicados:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(no importado)</span>
+       *[other] <span>Se encontraron inicios de sesión duplicados:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(no importados)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+        [one] <span>Errores:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(no importado)</span>
+       *[other] <span>Errores:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(no importados)</span>
+    }
+about-logins-import-dialog-done = Hecho

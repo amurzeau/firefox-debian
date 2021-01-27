@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -69,6 +69,8 @@ urlbar-default-notification-anchor =
     .tooltiptext = Ava teavituse paneel
 urlbar-geolocation-notification-anchor =
     .tooltiptext = Ava asukohataotluse paneel
+urlbar-xr-notification-anchor =
+    .tooltiptext = Ava virtuaalreaalsuse õiguste paneel
 urlbar-storage-access-anchor =
     .tooltiptext = Ava veebilehitsemise jälitamise õiguste paneel
 urlbar-translate-notification-anchor =
@@ -91,6 +93,14 @@ urlbar-persistent-storage-notification-anchor =
     .tooltiptext = Salvesta andmeid püsivalt
 urlbar-addons-notification-anchor =
     .tooltiptext = Ava lisa paigaldamise teavituspaneel
+urlbar-tip-help-icon =
+    .title = Hangi abi
+urlbar-search-tips-confirm = Olgu, sain aru
+# Read out before Urlbar Tip text content so screenreader users know the
+# subsequent text is a tip offered by the browser. It should end in a colon or
+# localized equivalent.
+urlbar-tip-icon-description =
+    .alt = Nipp:
 
 ## Prompts users to use the Urlbar when they open a new tab or visit the
 ## homepage of their default search engine.
@@ -98,14 +108,23 @@ urlbar-addons-notification-anchor =
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
 urlbar-search-tips-onboard = Sisesta vähem, leia rohkem: otsi otsingumootoriga { $engineName } otse oma aadressiribalt.
+urlbar-search-tips-redirect-2 = Alusta oma otsingut aadressiribalt, et näha soovitusi otsingumootorilt { $engineName } ning oma lehitsemise ajaloost.
+# Prompts users to use the Urlbar when they are typing in the domain of a
+# search engine, e.g. google.com or amazon.com.
+urlbar-tabtosearch-onboard = Kiiremaks otsimiseks vali see otsetee.
 
 ## Local search mode indicator labels in the urlbar
 
+urlbar-search-mode-bookmarks = Järjehoidjad
+urlbar-search-mode-tabs = Kaardid
+urlbar-search-mode-history = Ajalugu
 
 ##
 
 urlbar-geolocation-blocked =
     .tooltiptext = Oled sellel lehel keelanud asukohateabe kasutamise.
+urlbar-xr-blocked =
+    .tooltiptext = Oled blokkinud sellel saidil ligipääsu virtuaalreaalsuse seadmetele.
 urlbar-web-notifications-blocked =
     .tooltiptext = Oled sellel lehel teavitused keelanud.
 urlbar-camera-blocked =
@@ -143,6 +162,8 @@ page-action-manage-extension =
     .label = Halda laiendust…
 page-action-remove-from-urlbar =
     .label = Eemalda aadressiribalt
+page-action-remove-extension =
+    .label = Eemalda laiendus
 
 ## Page Action menu
 
@@ -202,7 +223,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Seekord soorita otsing järgneva otsingumootoriga:
 # This string won't wrap, so if the translated string is longer,
@@ -217,6 +238,15 @@ search-one-offs-context-open-new-tab =
 search-one-offs-context-set-as-default =
     .label = Määra vaikeotsingumootoriks
     .accesskey = M
+search-one-offs-context-set-as-default-private =
+    .label = Määra privaatsete akende vaikeotsingumootoriks
+    .accesskey = M
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -225,6 +255,12 @@ search-one-offs-context-set-as-default =
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
 
+search-one-offs-bookmarks =
+    .tooltiptext = Järjehoidjad ({ $restrict })
+search-one-offs-tabs =
+    .tooltiptext = Kaardid ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Ajalugu ({ $restrict })
 
 ## Bookmark Panel
 
@@ -252,6 +288,14 @@ identity-passive-loaded = Mõned selle lehe osad on ebaturvalised (nt pildid).
 identity-active-loaded = Kaitse sellel lehel on keelatud.
 identity-weak-encryption = See leht kasutab nõrka krüpteeringut.
 identity-insecure-login-forms = Sellele lehele sisestatavad kasutajakonto andmed võivad ohus olla.
+identity-https-only-connection-upgraded = (uuendati HTTPSile)
+identity-https-only-label = Ainult HTTPS-režiim
+identity-https-only-dropdown-on =
+    .label = sees
+identity-https-only-dropdown-off =
+    .label = väljas
+identity-https-only-dropdown-off-temporarily =
+    .label = ajutiselt väljas
 identity-permissions =
     .value = Õigused
 identity-permissions-reload-hint = Muudatuste rakendumiseks pead võib-olla lehe uuesti laadima.
@@ -293,6 +337,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = Sulge
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -313,6 +360,8 @@ popup-all-windows-shared = Jagatakse kõiki nähtavaid aknaid sinu ekraanil.
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Otsi või sisesta aadress
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Otsi või sisesta aadress
 # Variables
@@ -366,3 +415,70 @@ fullscreen-exit-mac-button = Välju täisekraanirežiimist (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = Sait <span data-l10n-name="domain">{ $domain }</span> kontrollib sinu kursori tegevust. Kontrolli tagasivõtmiseks vajuta klahvile Esc.
 pointerlock-warning-no-domain = See dokument kontrollib sinu kursori tegevust. Kontrolli tagasivõtmiseks vajuta klahvile Esc.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Kuva kõiki järjehoidjaid
+bookmarks-recent-bookmarks =
+    .value = Viimati järjehoidjatesse lisatud
+bookmarks-toolbar-chevron =
+    .tooltiptext = Veel järjehoidjaid
+bookmarks-sidebar-content =
+    .aria-label = Järjehoidjad
+bookmarks-menu-button =
+    .label = Järjehoidjate menüü
+bookmarks-other-bookmarks-menu =
+    .label = Muud järjehoidjad
+bookmarks-mobile-bookmarks-menu =
+    .label = Mobiilsed järjehoidjad
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Peida järjehoidjate külgriba
+           *[other] Kuva järjehoidjate külgriba
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Peida järjehoidjariba
+           *[other] Kuva järjehoidjariba
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Eemalda järjehoidjate menüü tööriistaribalt
+           *[other] Lisa järjehoidjate menüü tööriistaribale
+        }
+bookmarks-search =
+    .label = Otsi järjehoidjatest
+bookmarks-tools =
+    .label = Järjehoidjate tööriistad
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Järjehoidjariba
+    .accesskey = J
+    .aria-label = Järjehoidjad
+bookmarks-toolbar-menu =
+    .label = Järjehoidjariba
+bookmarks-toolbar-placeholder =
+    .title = Järjehoidjariba elemendid
+bookmarks-toolbar-placeholder-button =
+    .label = Järjehoidjariba elemendid
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Järjehoidjad
+library-bookmarks-bookmark-this-page =
+    .label = Lisa see veebileht järjehoidjatesse
+library-bookmarks-bookmark-edit =
+    .label = Muuda seda järjehoidjat
+
+## More items
+
+more-menu-go-offline =
+    .label = Tööta võrguta
+    .accesskey = T

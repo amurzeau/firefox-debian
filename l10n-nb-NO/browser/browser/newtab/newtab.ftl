@@ -8,6 +8,9 @@
 newtab-page-title = Ny fane
 newtab-settings-button =
     .title = Tilpass siden for Ny fane
+newtab-personalize-button-label = Tilpass
+    .title = Tilpass ny fane-side
+    .aria-label = Tilpass ny fane-side
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Søk på nettet
     .title = Søk på nettet
     .aria-label = Søk på nettet
+newtab-search-box-text = Søk på nettet
+newtab-search-box-input =
+    .placeholder = Søk på nettet
+    .aria-label = Søk på nettet
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Legg til søkemotor
 newtab-topsites-add-topsites-header = Nytt toppsted
+newtab-topsites-add-shortcut-header = Ny snarvei
 newtab-topsites-edit-topsites-header = Rediger toppsted
+newtab-topsites-edit-shortcut-header = Rediger snarvei
 newtab-topsites-title-label = Tittel
 newtab-topsites-title-input =
     .placeholder = Oppgi en tittel
@@ -206,3 +215,27 @@ newtab-pocket-cta-text = Lagre artiklene du synes er interessante i { -pocket-br
 
 newtab-error-fallback-info = Ups, noe gikk galt når innholdet skulle lastes inn.
 newtab-error-fallback-refresh-link = Oppdater siden for å prøve igjen.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Snarveier
+newtab-custom-shortcuts-subtitle = Nettsteder du lagrer eller besøker
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } rad
+       *[other] { $num } rader
+    }
+newtab-custom-sponsored-sites = Sponsede snarveier
+newtab-custom-pocket-title = Anbefalt av { -pocket-brand-name }
+newtab-custom-pocket-subtitle = Eksepsjonelt innhold satt sammen av { -pocket-brand-name }, en del av { -brand-product-name }-familien
+newtab-custom-pocket-sponsored = Sponsede historier
+newtab-custom-recent-title = Nylig aktivitet
+newtab-custom-recent-subtitle = Et utvalg av nylige nettsteder og innhold
+newtab-custom-close-button = Lukk
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Snutter
+newtab-custom-snippets-subtitle = Tips og nyheter fra { -vendor-short-name } og { -brand-product-name }
+newtab-custom-settings = Behandle flere innstillinger

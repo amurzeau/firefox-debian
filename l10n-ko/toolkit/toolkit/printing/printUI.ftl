@@ -24,6 +24,9 @@ printui-range-start = 시작:
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = 끝:
+printui-page-custom-range-input =
+    .aria-label = 사용자 지정 페이지 범위 입력
+    .placeholder = 예: 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = 매수
 printui-orientation = 방향
@@ -47,6 +50,7 @@ printui-duplex-checkbox = 양쪽 면에 인쇄
 printui-options = 옵션
 printui-headers-footers-checkbox = 머리글 및 바닥글 인쇄
 printui-backgrounds-checkbox = 배경 인쇄
+printui-selection-checkbox = 선택 영역만 인쇄
 printui-color-mode-label = 색상 모드
 printui-color-mode-color = 컬러
 printui-color-mode-bw = 흑백
@@ -55,19 +59,29 @@ printui-margins-default = 기본값
 printui-margins-min = 최소값
 printui-margins-none = 없음
 printui-margins-custom = 사용자 지정
+printui-margins-custom-inches = 사용자 정의 (인치)
 printui-margins-custom-top = 위쪽
+printui-margins-custom-top-inches = 위쪽 (인치)
 printui-margins-custom-bottom = 아래쪽
+printui-margins-custom-bottom-inches = 아래쪽 (인치)
 printui-margins-custom-left = 왼쪽
+printui-margins-custom-left-inches = 왼쪽 (인치)
 printui-margins-custom-right = 오른쪽
+printui-margins-custom-right-inches = 오른쪽 (인치)
 printui-system-dialog-link = 시스템 대화 상자를 사용하여 인쇄…
 printui-primary-button = 인쇄
 printui-primary-button-save = 저장
 printui-cancel-button = 취소
+printui-close-button = 닫기
 printui-loading = 미리보기 준비 중
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = 인쇄 미리보기
+printui-pages-per-sheet = 용지당 페이지
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = 인쇄 중…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

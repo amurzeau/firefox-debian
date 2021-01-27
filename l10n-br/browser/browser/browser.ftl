@@ -460,7 +460,7 @@ urlbar-result-action-search-in-private = Klask en ur prenestr prevez
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Klask gant { $engine }
-urlbar-result-action-sponsored = Paeronet
+urlbar-result-action-sponsored = Paeroniet
 urlbar-result-action-switch-tab = Mont d'an ivinell
 urlbar-result-action-visit = Gweladenniñ
 
@@ -487,3 +487,70 @@ fullscreen-exit-mac-button = Kuitaat ar mod skramm a-bezh (Esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> a c'hall reoliñ ho logodenn. Pouezit war Achap evit bezañ mestr outi en-dro.
 pointerlock-warning-no-domain = Meret eo ho logodenn gant an teul-mañ. Pouezit war Achap evit bezañ mestr outi en-dro.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Diskouez an holl sinedoù
+bookmarks-recent-bookmarks =
+    .value = Lakaet war ur sined nevez zo
+bookmarks-toolbar-chevron =
+    .tooltiptext = Diskouez meur a sined
+bookmarks-sidebar-content =
+    .aria-label = Sinedoù
+bookmarks-menu-button =
+    .label = Lañser ar sinedoù
+bookmarks-other-bookmarks-menu =
+    .label = Sinedoù all
+bookmarks-mobile-bookmarks-menu =
+    .label = Sinedoù hezoug
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Kuzhat barrenn gostez ar sinedoù
+           *[other] Gwelout barrenn gostez ar sinedoù
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Kuzhat barrenn ostilhoù ar sinedoù
+           *[other] Gwelout barrenn ostilhoù ar sinedoù
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Lemel kuit lañser ar sinedoù diouzh ar varrenn ostilhoù
+           *[other] Ouzhpennañ lañser ar sinedoù er varrenn ostilhoù
+        }
+bookmarks-search =
+    .label = Klask er sinedoù
+bookmarks-tools =
+    .label = Ostilhoù ar sinedoù
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Barrenn ostilhoù ar sinedoù
+    .accesskey = s
+    .aria-label = Sinedoù
+bookmarks-toolbar-menu =
+    .label = Barrenn ostilhoù ar sinedoù
+bookmarks-toolbar-placeholder =
+    .title = Ergorennoù barrenn ostilhoù ar sinedoù
+bookmarks-toolbar-placeholder-button =
+    .label = Ergorennoù barrenn ostilhoù ar sinedoù
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Sinedoù
+library-bookmarks-bookmark-this-page =
+    .label = Lakaat ur sined war ar bajenn-mañ
+library-bookmarks-bookmark-edit =
+    .label = Embann ar sined-mañ
+
+## More items
+
+more-menu-go-offline =
+    .label = Labourat ezlinenn
+    .accesskey = z

@@ -26,6 +26,9 @@ printui-range-start = З
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = по
+printui-page-custom-range-input =
+    .aria-label = Введіть власний діапазон сторінок
+    .placeholder = наприклад, 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Копії
 printui-orientation = Орієнтація
@@ -49,6 +52,7 @@ printui-duplex-checkbox = Друк з обох сторін
 printui-options = Параметри
 printui-headers-footers-checkbox = Друкувати колонтитули
 printui-backgrounds-checkbox = Друкувати тло
+printui-selection-checkbox = Друкувати тільки вибране
 printui-color-mode-label = Кольоровий режим
 printui-color-mode-color = Кольоровий
 printui-color-mode-bw = Чорно-білий
@@ -57,19 +61,29 @@ printui-margins-default = Типово
 printui-margins-min = Якнайменше
 printui-margins-none = Немає
 printui-margins-custom = Власні
+printui-margins-custom-inches = Власне (дюймів)
 printui-margins-custom-top = Вгорі
+printui-margins-custom-top-inches = Вгорі (дюймів)
 printui-margins-custom-bottom = Внизу
+printui-margins-custom-bottom-inches = Внизу (дюймів)
 printui-margins-custom-left = Ліворуч
+printui-margins-custom-left-inches = Ліворуч (дюймів)
 printui-margins-custom-right = Праворуч
+printui-margins-custom-right-inches = Праворуч (дюймів)
 printui-system-dialog-link = Друк за допомогою засобу системи…
 printui-primary-button = Надрукувати
 printui-primary-button-save = Зберегти
 printui-cancel-button = Скасувати
+printui-close-button = Закрити
 printui-loading = Підготовка до попереднього перегляду
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Попередній перегляд
+printui-pages-per-sheet = Сторінок на аркуші
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Друк…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

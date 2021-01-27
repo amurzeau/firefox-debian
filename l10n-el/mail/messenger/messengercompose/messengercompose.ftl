@@ -9,7 +9,7 @@
 remove-address-row-type = Αφαίρεση πεδίου { $type }
 #   $type (String) - the type of the addressing row
 remove-address-row-type-label =
-    .tooltiptext = Αφαίρεση του πεδίου "{ $type }"
+    .tooltiptext = Αφαίρεση πεδίου { $type }
 #   $type (String) - the type of the addressing row
 #   $count (Number) - the number of address pills currently present in the addressing row
 address-input-type-aria-label =
@@ -25,6 +25,10 @@ pill-aria-label =
         [one] { $email }: πατήστε Enter για επεξεργασία, Delete για αφαίρεση.
        *[other] { $email }, 1 από { $count }: πατήστε Enter για επεξεργασία, Delete για αφαίρεση.
     }
+#   $email (String) - the email address
+pill-tooltip-invalid-address = Το { $email } δεν είναι έγκυρη διεύθυνση email
+#   $email (String) - the email address
+pill-tooltip-not-in-address-book = Το { $email } δεν βρίσκεται στο ευρετήριό σας
 pill-action-edit =
     .label = Επεξεργασία διεύθυνσης
     .accesskey = ε

@@ -10,11 +10,22 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = Nýr gluggi
+appmenuitem-new-private-window =
+    .label = Nýr huliðsgluggi
+
+## Zoom and Fullscreen Controls
+
+appmenuitem-fullscreen =
+    .label = Fylla skjá
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Samstilla núna
+appmenuitem-save-page =
+    .label = Vista síðu sem…
 
 ## What's New panel in App menu.
 

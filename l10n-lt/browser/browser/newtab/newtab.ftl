@@ -8,6 +8,9 @@
 newtab-page-title = Nauja kortelė
 newtab-settings-button =
     .title = Tinkinkite savo naujos kortelės puslapį
+newtab-personalize-button-label = Tinkinti
+    .title = Tinkinti naują kortelę
+    .aria-label = Tinkinti naują kortelę
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Ieškokite saityne
     .title = Ieškokite saityne
     .aria-label = Ieškokite saityne
+newtab-search-box-text = Ieškokite saityne
+newtab-search-box-input =
+    .placeholder = Ieškokite saityne
+    .aria-label = Ieškokite saityne
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Pridėti ieškyklę
 newtab-topsites-add-topsites-header = Nauja mėgstama svetainė
+newtab-topsites-add-shortcut-header = Naujas leistukas
 newtab-topsites-edit-topsites-header = Redaguoti mėgstamą svetainę
+newtab-topsites-edit-shortcut-header = Keisti leistuką
 newtab-topsites-title-label = Pavadinimas
 newtab-topsites-title-input =
     .placeholder = Įveskite pavadinimą
@@ -174,7 +183,7 @@ newtab-section-header-highlights = Akcentai
 newtab-section-header-recent-activity = Paskiausia veikla
 # Variables:
 #  $provider (String): Name of the corresponding content provider.
-newtab-section-header-pocket = Rekomendavo „{ $provider }“
+newtab-section-header-pocket = Rekomenduoja „{ $provider }“
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
@@ -207,3 +216,28 @@ newtab-pocket-cta-text = Išsaugokite patinkančius straipsnius į „{ -pocket-
 
 newtab-error-fallback-info = Ups, įkeliant šį turinį įvyko klaida.
 newtab-error-fallback-refresh-link = Pabandykite iš naujo įkelti tinklalapį.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Leistukai
+newtab-custom-shortcuts-subtitle = Jūsų įrašytos arba lankomos svetainės
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } eilutė
+        [few] { $num } eilutės
+       *[other] { $num } eilučių
+    }
+newtab-custom-sponsored-sites = Rėmėjų leistukai
+newtab-custom-pocket-title = Rekomenduoja „{ -pocket-brand-name }“
+newtab-custom-pocket-subtitle = Išskirtinis turinys, kuruojamas „{ -pocket-brand-name }“, kuri yra „{ -brand-product-name }“ šeimos dalis
+newtab-custom-pocket-sponsored = Rėmėjų straipsniai
+newtab-custom-recent-title = Paskiausia veikla
+newtab-custom-recent-subtitle = Paskiausiai lankytos svetainės ir žiūrėtas turinys
+newtab-custom-close-button = Užverti
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Iškarpos
+newtab-custom-snippets-subtitle = Patarimai ir naujienos iš „{ -vendor-short-name }“ ir „{ -brand-product-name }“
+newtab-custom-settings = Keisti daugiau nuostatų

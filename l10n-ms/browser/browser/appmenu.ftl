@@ -10,11 +10,22 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = Tetingkap Baru
+appmenuitem-new-private-window =
+    .label = Tetingkap Peribadi Baru
+
+## Zoom and Fullscreen Controls
+
+appmenuitem-fullscreen =
+    .label = Skrin Penuh
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Sync Sekarang
+appmenuitem-save-page =
+    .label = Simpan Halaman Sebagai…
 
 ## What's New panel in App menu.
 

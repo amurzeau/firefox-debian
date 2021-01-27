@@ -351,6 +351,7 @@ browser-window-close-button =
 browser-import-button2 =
     .label = Techaukaha jegueru…
     .tooltiptext = Egueru techaukaha ambue kundaháragui { -brand-short-name }-pe.
+bookmarks-toolbar-empty-message = Eike pya’e hag̃ua, emoĩ nde rechaukaha techaukaha rembipuru rendápe. <a data-l10n-name="manage-bookmarks">Eñangareko techaukaháre…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -502,3 +503,70 @@ fullscreen-exit-mac-button = Esẽ mba’erechaha tuichavévagui (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> eñangarekópa nde hekaha rehe. Eikutu Esc eguerujey hag̃ua hekaha.
 pointerlock-warning-no-domain = Ko kuatia oñangareko nde hekaha rehe. Eikutu Esc eguerujey hag̃ua hekaha.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Opaite techaukaha jehechauka
+bookmarks-recent-bookmarks =
+    .value = Oñembokurusu ramóva
+bookmarks-toolbar-chevron =
+    .tooltiptext = Techaukaha jehechaukave
+bookmarks-sidebar-content =
+    .aria-label = Techaukaha
+bookmarks-menu-button =
+    .label = Techaukaha Rysýi
+bookmarks-other-bookmarks-menu =
+    .label = Ambue Techaukahakuéra
+bookmarks-mobile-bookmarks-menu =
+    .label = Pumbyry Rechaukaha
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Eñomi Techaukaha Renda Yke
+           *[other] Techaukaha ra’ãngarupa yke recha
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Eñomi Techaukaha Rembipuru Renda
+           *[other] Techaukaha renda jehecha
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Eipe’a Techaukaharysýi Tembipuru rendágui
+           *[other] Embojoapy Techaukaharysýi Tembipuru rendápe
+        }
+bookmarks-search =
+    .label = Techaukaha jeheka
+bookmarks-tools =
+    .label = Techaukaha Rembipuru
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Techaukaha rembipuru renda
+    .accesskey = B
+    .aria-label = Techaukaha
+bookmarks-toolbar-menu =
+    .label = Techaukaha rembipuru renda
+bookmarks-toolbar-placeholder =
+    .title = Techaukaha rembipuru renda remimoĩ
+bookmarks-toolbar-placeholder-button =
+    .label = Techaukaha rembipuru renda remimoĩ
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Techaukaha
+library-bookmarks-bookmark-this-page =
+    .label = Kuatiarogue mbojoapy
+library-bookmarks-bookmark-edit =
+    .label = Ko techaukaha mbosako’i
+
+## More items
+
+more-menu-go-offline =
+    .label = Mba’apo ñanduti’ỹre
+    .accesskey = k

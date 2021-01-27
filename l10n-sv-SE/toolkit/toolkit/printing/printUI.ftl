@@ -25,6 +25,9 @@ printui-range-start = Från
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = till
+printui-page-custom-range-input =
+    .aria-label = Ange anpassat sidintervall
+    .placeholder = t.ex. 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Kopior
 printui-orientation = Orientering
@@ -48,6 +51,7 @@ printui-duplex-checkbox = Skriv ut på båda sidor
 printui-options = Alternativ
 printui-headers-footers-checkbox = Skriv ut sidhuvud och sidfot
 printui-backgrounds-checkbox = Skriv ut bakgrunder
+printui-selection-checkbox = Skriv endast ut markering
 printui-color-mode-label = Färgläge
 printui-color-mode-color = Färg
 printui-color-mode-bw = Svartvit
@@ -56,19 +60,29 @@ printui-margins-default = Standard
 printui-margins-min = Minimum
 printui-margins-none = Ingen
 printui-margins-custom = Anpassad
+printui-margins-custom-inches = Anpassad (tum)
 printui-margins-custom-top = Toppen
+printui-margins-custom-top-inches = Toppen (tum)
 printui-margins-custom-bottom = Botten
+printui-margins-custom-bottom-inches = Botten (tum)
 printui-margins-custom-left = Vänster
+printui-margins-custom-left-inches = Vänster (tum)
 printui-margins-custom-right = Höger
+printui-margins-custom-right-inches = Höger (tum)
 printui-system-dialog-link = Skriv ut via systemets dialogruta…
 printui-primary-button = Skriv ut
 printui-primary-button-save = Spara
 printui-cancel-button = Avbryt
+printui-close-button = Stäng
 printui-loading = Förbereder förhandsvisning
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Förhandsgranska
+printui-pages-per-sheet = Sidor per blad
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Skriver ut…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

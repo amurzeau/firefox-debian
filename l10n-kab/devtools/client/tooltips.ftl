@@ -28,6 +28,8 @@ inactive-css-property-is-impossible-to-override-in-visited = Ur izmir ara ad yal
 inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> ur d-igellu s kra ɣef uferdis-a imi mačči d aferdis adigan.
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> ur d-igellu s kra ɣef uferdis-agi, imi <strong>overflow:hidden</strong> ur yettusbadu ara.
 inactive-outline-radius-when-outline-style-auto-or-none = <strong>{ $property }</strong> ur d-igellu s kra ɣef uferdis-a, imi <strong>outline-style</strong> d <strong>auto</strong> neɣ <strong>none<strong></strong>.
+inactive-css-not-for-internal-table-elements = <strong>{ $property }</strong> ur d-igellu s kra ɣef yiferdisen n tfelwit tagensant.
+inactive-css-not-for-internal-table-elements-except-table-cells = <strong>{ $property }</strong> ur d-igellu s kra ɣef yiferdisen n tfelwit tagensant slid tibliqin n tfelwit.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -46,6 +48,8 @@ inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Ɛreḍ t
 inactive-css-not-display-block-on-floated-fix = Ɛreḍ tukksa n <strong>float</strong> neɣ timerna n <strong>display:block</strong>. { learn-more }
 inactive-css-position-property-on-unpositioned-box-fix = Ɛreḍ ad tesbaduḍ timeẓli-ines<strong>position</strong> s wazal-nniḍen ur nelli d <strong>statitc</strong>. { learn-more }
 inactive-text-overflow-when-no-overflow-fix = Ɛreḍ ad ternuḍ <strong>overflow:hidden</strong>. { learn-more }
+inactive-css-not-for-internal-table-elements-fix = Ɛreḍ asbadu n tmeẓli-ines <strong>display</strong> ɣef wayeḍ-nniḍen yemgaraden ɣef <strong>table-cell</strong>, <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong> neɣ <strong>table-footer-group</strong>. { learn-more }
+inactive-css-not-for-internal-table-elements-except-table-cells-fix = Ɛreḍ asbadu n tmeẓli-ines <strong>display</strong> ɣef wayeḍ-nniḍen yemgaraden ɣef <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong> neɣ <strong>table-footer-group</strong>. { learn-more }
 inactive-outline-radius-when-outline-style-auto-or-none-fix = Ɛreḍ ad tesbaduḍ timeẓli-ines <strong>outline-style</strong> s wazal-nniḍen ur nelli d <strong>auto</strong> neɣ <strong>none</strong>. { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers

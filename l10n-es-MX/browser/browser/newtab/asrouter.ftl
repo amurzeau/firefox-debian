@@ -126,6 +126,9 @@ cfr-whatsnew-lockwise-take-link-text = Obtener la aplicación
 
 cfr-whatsnew-searchbar-title = Escribe menos, encuentra más con la barra de direcciones
 cfr-whatsnew-searchbar-body-topsites = Ahora, simplemente seleccione la barra de direcciones y se va a expandir un cuadro con enlaces a sus sitios principales.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Ícono de lupa
 
 ## Picture-in-Picture
@@ -257,6 +260,12 @@ cfr-doorhanger-doh-secondary-button = Deshabilitar
 
 ## Fission Experiment Message
 
+cfr-doorhanger-fission-body-approved = Tu privacidad importa. { -brand-short-name } ahora aísla, sitios web unos de otros, lo que hace que sea más difícil que los piratas informáticos roben contraseñas, números de tarjetas de crédito y otra información sensible.
+cfr-doorhanger-fission-header = Aislamiento del sitio
+cfr-doorhanger-fission-primary-button = OK, entendido
+    .accesskey = O
+cfr-doorhanger-fission-secondary-button = Saber más
+    .accesskey = L
 
 ## What's new: Cookies message
 
@@ -266,6 +275,21 @@ cfr-whatsnew-clear-cookies-image-alt = Ilustración de cookie bloqueada
 
 ## What's new: Media controls message
 
+cfr-whatsnew-media-keys-header = Más controles multimedia
+cfr-whatsnew-media-keys-body = Reproducir y pausar audio o video directamente desde tu teclado o audífonos facilita el control de medios desde otra pestaña, programa o incluso cuando tu computadora está bloqueada. También puedes moverte entre pistas usando las teclas de avance y retroceso.
+cfr-whatsnew-media-keys-button = Saber cómo
 
 ## What's new: Search shortcuts
 
+cfr-whatsnew-search-shortcuts-header = Atajos de búsqueda en la barra de direcciones
+cfr-whatsnew-search-shortcuts-body = Ahora, cuando escribas un motor de búsqueda o un sitio específico en la barra de direcciones, aparecerá un atajo azul en las sugerencias de búsqueda. Selecciona ese acceso directo para completar tu búsqueda directamente desde la barra de direcciones.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Protección contra supercookies maliciosas
+cfr-whatsnew-supercookies-body = Los sitios web pueden adjuntar en secreto una "supercookie" a tu navegador que puede seguirte por la web, incluso después de limpiar tus cookies. { -brand-short-name } ahora proporciona una fuerte protección contra las supercookies para que no puedan usarse para rastrear tus actividades en línea de un sitio a otro.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = Mejores marcadores
+cfr-whatsnew-bookmarking-body = Es más fácil realizar un seguimiento de tus sitios favoritos. { -brand-short-name } ahora recuerda tu ubicación preferida para los marcadores guardados, muestra la barra de herramientas de marcadores de forma predeterminada en las pestañas nuevas y te brinda fácil acceso al resto de tus marcadores a través de una carpeta de la barra de herramientas.

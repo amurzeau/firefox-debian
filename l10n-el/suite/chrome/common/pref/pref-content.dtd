@@ -10,6 +10,8 @@
 <!ENTITY siteIcons.label                        "Εικονίδια ιστοσελίδων">
 <!ENTITY useSiteIcons.label                     "Εμφάνιση εικονιδίων ιστοσελίδων">
 <!ENTITY useSiteIcons.accesskey                 "Ε">
+<!ENTITY useFavIcons2.label                     "Απόπειρα χρήσης εικονιδίων διακομιστών όταν η σελίδα δεν ορίζει εικονίδιο">
+<!ENTITY useFavIcons2.accesskey                 "χ">
 
 <!ENTITY scrolling.label                        "Κύλιση">
 <!ENTITY useAutoScroll.label                    "Χρήση αυτόματης κύλισης">
@@ -31,8 +33,16 @@
 <!ENTITY defaultZoom.label                      "Προεπιλεγμένο ζουμ">
 <!ENTITY defaultZoom.accesskey                  "Π">
 
+<!ENTITY siteSpecific.label                     "Αποθήκευση επιπέδων ζουμ για κάθε ιστοσελίδα">
+<!ENTITY siteSpecific.accesskey                 "μ">
+<!ENTITY textZoomOnly.label                     "Ζουμ μόνο στο κείμενο αντί για την πλήρη σελίδα">
+<!ENTITY textZoomOnly.accesskey                 "Ζ">
+<!ENTITY enableAutomaticImageResizing.label     "Προσαρμογή μεγέθους μεγάλων εικόνων στο παράθυρο προγράμματος περιήγησης">
+<!ENTITY enableAutomaticImageResizing.accesskey "Π">
 
 <!ENTITY allowHWAccel.label                     "Χρήση επιτάχυνσης υλικού όταν είναι διαθέσιμη">
 <!ENTITY allowHWAccel.accesskey                 "ρ">
+<!ENTITY blockAutoRefresh.label                 "Προειδοποίηση όταν οι ιστοσελίδες προσπαθούν να ανακατευθύνουν ή να φορτώσουν ξανά τη σελίδα">
+<!ENTITY blockAutoRefresh.accesskey             "Π">
 
 <!ENTITY showZoomStatusPanel.label              "Εμφάνιση κουμπιών ζουμ στη γραμμή κατάστασης">

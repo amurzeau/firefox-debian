@@ -13,20 +13,30 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = K'ak'a' tzuwäch
+appmenuitem-new-private-window =
+    .label = K'ak'a' ichinan tzuwäch
+
+## Zoom and Fullscreen Controls
+
 appmenuitem-zoom-enlarge =
     .label = Tinaqajäx
 appmenuitem-zoom-reduce =
     .label = Tijech'äx
+appmenuitem-fullscreen =
+    .label = Chijun ruwa kematz'ib'
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Tixim Wakami
+appmenuitem-save-page =
+    .label = Tiyak Ruxaq Achi'el…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Achike natzijoj
-
 # Checkbox displayed at the bottom of the What's New panel, allowing users to
 # enable/disable What's New notifications.
 whatsnew-panel-footer-checkbox =

@@ -25,6 +25,9 @@ printui-range-start = Richin
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = chi re
+printui-page-custom-range-input =
+    .aria-label = Titz'ib'äx rupalem ichinan ruxaq
+    .placeholder = e.g. 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Taq wachib'äl
 printui-orientation = Rucholajem
@@ -48,6 +51,7 @@ printui-duplex-checkbox = Titz'ajb'äx pa ka'i'-ruwa
 printui-options = Taq cha'oj
 printui-headers-footers-checkbox = Titz'ajb'äl taq nab'ey chuqa' ruxe' rub'i' ruxaq
 printui-backgrounds-checkbox = Ketz'ajb'äx taq rupam
+printui-selection-checkbox = Titz'ajb'äx xa xe ri cha'oj
 printui-color-mode-label = B'onil b'anikil
 printui-color-mode-color = B'onil
 printui-color-mode-bw = Q'ëq chuqa' säq
@@ -56,19 +60,29 @@ printui-margins-default = K'o wi
 printui-margins-min = Ko'öl
 printui-margins-none = Majun
 printui-margins-custom = Ichinan
+printui-margins-custom-inches = B'anon runuk'ulem (taq pulwata')
 printui-margins-custom-top = Ajsik
+printui-margins-custom-top-inches = Nima'q (taq pulwata')
 printui-margins-custom-bottom = Ikim
+printui-margins-custom-bottom-inches = Koköj (taq pulwata')
 printui-margins-custom-left = Xokon
+printui-margins-custom-left-inches = Ajxokon (taq pulwata')
 printui-margins-custom-right = Ajkiq'a'
+printui-margins-custom-right-inches = Ajkiq'a' (taq pulwata')
 printui-system-dialog-link = Titz'jb'äl rik'in ri rutzijonem q'inoj…
 printui-primary-button = Titz'ajb'äx
 printui-primary-button-save = Tiyak
 printui-cancel-button = Tiq'at
+printui-close-button = Titz'apïx
 printui-loading = Runuk'ik Nab'ey Tz'etoj
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Nab'ey Tz'etoj
+printui-pages-per-sheet = Taq ruxaq chi ruxaq
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Nitz'ajb'äx…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

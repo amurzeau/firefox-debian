@@ -126,6 +126,7 @@ monitor-no-breaches-title = Berri onak!
 monitor-no-breaches-description = Ez zaude datu-urratze ezagunetan. Hau aldatuko balitz, jakinarazi egingo dizugu.
 monitor-view-report-link = Ikusi txostena
     .title = Argitu urratzeak { -monitor-brand-short-name }(e)n
+monitor-breaches-unresolved-title = Ebatzi zure datu-urratzeak
 monitor-manage-breaches-link = Kudeatu datu-urratzeak
     .title = Kudeatu datu-urratzeak { -monitor-brand-short-name }(e)n
 monitor-breaches-resolved-description = Zure helbide elektronikoa datu-urratze berriren batean agertuko balitz, jakinarazi egingo dizugu.
@@ -135,6 +136,8 @@ monitor-partial-breaches-percentage = %{ $percentageResolved } osatuta
 monitor-partial-breaches-motivation-title-start = Hasiera ona!
 monitor-partial-breaches-motivation-title-middle = Eutsi horri!
 monitor-partial-breaches-motivation-title-end = Ia eginda! Eutsi horri.
+monitor-resolve-breaches-link = Ebatzi datu-urratzeak
+    .title = Ebatzi { -monitor-brand-short-name }-eko datu-urratzeak
 
 ## The title attribute is used to display the type of protection.
 ## The aria-label is spoken by screen readers to make the visual graph accessible to blind users.

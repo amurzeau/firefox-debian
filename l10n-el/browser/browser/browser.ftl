@@ -503,3 +503,71 @@ fullscreen-exit-mac-button = Έξοδος από πλήρη οθόνη (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = Το <span data-l10n-name="domain">{ $domain }</span> ελέγχει τον κέρσορα. Πατήστε Esc για ανάκτηση ελέγχου.
 pointerlock-warning-no-domain = Αυτό το έγγραφο ελέγχει τον κέρσορα. Πατήστε Esc για ανάκτηση ελέγχου.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Προβολή όλων των σελιδοδεικτών
+bookmarks-recent-bookmarks =
+    .value = Πρόσφατοι σελιδοδείκτες
+bookmarks-toolbar-chevron =
+    .tooltiptext = Προβολή περισσότερων σελιδοδεικτών
+bookmarks-sidebar-content =
+    .aria-label = Σελιδοδείκτες
+bookmarks-menu-button =
+    .label = Μενού σελιδοδεικτών
+bookmarks-other-bookmarks-menu =
+    .label = Άλλοι σελιδοδείκτες
+bookmarks-mobile-bookmarks-menu =
+    .label = Σελιδοδείκτες κινητού
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Απόκρυψη στήλης σελιδοδεικτών
+           *[other] Προβολή στήλης σελιδοδεικτών
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Απόκρυψη γραμμής σελιδοδεικτών
+           *[other] Προβολή γραμμής σελιδοδεικτών
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Αφαίρεση μενού σελιδοδεικτών από τη γραμμή εργαλείων
+           *[other] Προσθήκη μενού σελιδοδεικτών στη γραμμή εργαλείων
+        }
+bookmarks-search =
+    .label = Αναζήτηση σελιδοδεικτών
+bookmarks-tools =
+    .label = Εργαλεία σελιδοδεικτών
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Γραμμή σελιδοδεικτών
+    .accesskey = γ
+    .aria-label = Σελιδοδείκτες
+bookmarks-toolbar-menu =
+    .label = Γραμμή σελιδοδεικτών
+bookmarks-toolbar-placeholder =
+    .title = Στοιχεία γραμμής σελιδοδεικτών
+bookmarks-toolbar-placeholder-button =
+    .label = Στοιχεία γραμμής σελιδοδεικτών
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Σελιδοδείκτες
+library-bookmarks-bookmark-this-page =
+    .label = Δημιουργία σελιδοδείκτη
+library-bookmarks-bookmark-edit =
+    .label = Επεξεργασία σελιδοδείκτη
+library-recent-activity-label = Πρόσφατη δραστηριότητα
+
+## More items
+
+more-menu-go-offline =
+    .label = Εργασία χωρίς σύνδεση
+    .accesskey = χ

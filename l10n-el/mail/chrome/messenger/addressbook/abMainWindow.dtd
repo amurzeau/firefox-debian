@@ -47,7 +47,7 @@
 <!ENTITY editMenu.label                                 "Επεξεργασία">
 <!ENTITY editMenu.accesskey                             "ξ">
 <!ENTITY deleteCmd.label                                "Διαγραφή">
-<!ENTITY deleteAbCmd.label                              "Διαγραφή ευρετηρίου διευθύνσεων">
+<!ENTITY deleteAbCmd.label                              "Διαγραφή ευρετηρίου">
 <!ENTITY deleteContactCmd.label                         "Διαγραφή επαφής">
 <!ENTITY deleteContactsCmd.label                        "Διαγραφή επαφών">
 <!ENTITY deleteListCmd.label                            "Διαγραφή λίστας">
@@ -160,7 +160,7 @@ because displayed names don't have the comma in between. -->
 <!ENTITY searchItem.title "Γρήγορη αναζήτηση">
 
 <!-- Results Pane -->
-<!ENTITY Addrbook.label                                 "Ευρετήριο διευθύνσεων">
+<!ENTITY Addrbook.label                                 "Ευρετήριο">
 <!ENTITY Addrbook.accesskey                             "ρ">
 <!ENTITY GeneratedName.label                            "Όνομα">
 <!ENTITY GeneratedName.accesskey                        "ν">
@@ -168,7 +168,7 @@ because displayed names don't have the comma in between. -->
 <!ENTITY PrimaryEmail.accesskey                         "E">
 <!ENTITY ChatName.label                                 "Όνομα συνομιλίας">
 <!ENTITY ChatName.accesskey                             "σ">
-<!ENTITY Company.label                                  "Οργανισμός">
+<!ENTITY Company.label                                  "Εταιρεία">
 <!ENTITY Company.accesskey                              "ρ">
 <!ENTITY NickName.label                                 "Ψευδώνυμο">
 <!ENTITY NickName.accesskey                             "δ">

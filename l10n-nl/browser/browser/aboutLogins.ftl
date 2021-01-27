@@ -169,7 +169,12 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Deze aanmelding verwijderen?
 confirm-delete-dialog-message = Deze actie kan niet ongedaan worden gemaakt.
 about-logins-confirm-remove-dialog-confirm-button = Verwijderen
-about-logins-confirm-remove-all-dialog-confirm-button = Alle verwijderen
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] Verwijderen
+        [one] Verwijderen
+       *[other] Alle verwijderen
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] Ja, deze aanmelding verwijderen
@@ -201,6 +206,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Aanmeldingen en wachtwoorden exporteren
 about-logins-confirm-export-dialog-message = Uw wachtwoorden worden opgeslagen als leesbare tekst (bijvoorbeeld BadP@ssw0rd), dus iedereen die het geëxporteerde bestand kan openen, kan ze bekijken.
 about-logins-confirm-export-dialog-confirm-button = Exporteren…
+about-logins-alert-import-title = Importeren voltooid
+about-logins-alert-import-message = Gedetailleerde importsamenvatting bekijken
 confirm-discard-changes-dialog-title = Deze wijzigingen verwerpen?
 confirm-discard-changes-dialog-message = Alle niet-opgeslagen wijzigingen gaan verloren.
 confirm-discard-changes-dialog-confirm-button = Verwerpen
@@ -262,3 +269,30 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV-document
        *[other] CSV-bestand
     }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Importeren voltooid
+about-logins-import-dialog-items-added =
+    { $count ->
+        [one] <span>Nieuwe aanmelding toegevoegd:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Nieuwe aanmeldingen toegevoegd:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+        [one] <span>Bestaande aanmelding bijgewerkt:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Bestaande aanmeldingen bijgewerkt:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+        [one] <span>Dubbele aanmelding gevonden:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(niet geïmporteerd)</span>
+       *[other] <span>Dubbele aanmeldingen gevonden:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(niet geïmporteerd)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+        [one] <span>Fout:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(niet geïmporteerd)</span>
+       *[other] <span>Fouten:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(niet geïmporteerd)</span>
+    }
+about-logins-import-dialog-done = Gereed

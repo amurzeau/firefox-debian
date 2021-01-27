@@ -500,6 +500,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Useimmin vierailemasi sivustot
 home-prefs-topsites-by-option-sponsored =
     .label = Sponsoroidut ykkössivustot
+home-prefs-shortcuts-header =
+    .label = Oikotiet
+home-prefs-shortcuts-description = Tallentamasi tai vierailemasi sivustot
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Sponsoroidut oikotiet
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -507,6 +512,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Suositukset lähteestä { $provider }
 home-prefs-recommended-by-description-update = Poikkeuksellista sisältöä ympäri internetiä, valikoijana { $provider }
+home-prefs-recommended-by-description-new = Poikkeuksellista, valikoitua sisältöä { $provider }-palvelulta, osana { -brand-product-name }-perhettä
 
 ##
 
@@ -515,8 +521,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponsoroidut tarinat
 home-prefs-highlights-header =
     .label = Nostot
-home-prefs-recent-activity-header =
-    .label = Viimeisin toiminta
 home-prefs-highlights-description = Valikoima sivustoja, joilla olet käynyt tai jotka olet tallentanut
 home-prefs-highlights-option-visited-pages =
     .label = Vieraillut sivustot
@@ -526,6 +530,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Viimeisimmät lataukset
 home-prefs-highlights-option-saved-to-pocket =
     .label = { -pocket-brand-name }iin tallennetut sivut
+home-prefs-recent-activity-header =
+    .label = Viimeisin toiminta
+home-prefs-recent-activity-description = Valikoima viimeisimpiä sivustoja ja sisältöä
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -533,6 +540,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Tiedonmuruset
 home-prefs-snippets-description = Päivitykset { -vendor-short-name }lta ja { -brand-product-name }ilta
+home-prefs-snippets-description-new = Vinkit ja uutiset { -vendor-short-name }lta ja { -brand-product-name }ilta
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -924,9 +932,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = avoimista välilehdistä
     .accesskey = a
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Oikotiet
+    .accesskey = O
 addressbar-locbar-topsites-option =
     .label = ykkössivustoista
     .accesskey = y
+addressbar-locbar-engines-option =
+    .label = Hakukoneet
+    .accesskey = H
 addressbar-suggestions-settings = Muuta hakukoneiden ehdotusten asetuksia
 
 ## Privacy Section - Content Blocking
@@ -1142,14 +1157,14 @@ space-alert-under-5gb-message = { -brand-short-name(case: "ablative") } loppuu k
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = Vain HTTPS -tila
-httpsonly-description = HTTPS:n avulla { -brand-short-name } muodostaa suojatun ja salatun yhteyden vierailemiisi sivustoihin. Useimmat sivustot tukevat HTTPS:ää, ja jos ”Vain HTTPS” -tila on käytössä, { -brand-short-name } muuntaa kaikki yhteydet käyttämään HTTPS:ää.
+httpsonly-description = HTTPS:n avulla { -brand-short-name } muodostaa suojatun ja salatun yhteyden vierailemiisi sivustoihin. Useimmat sivustot tukevat HTTPS:ää, ja jos ”Vain HTTPS”-tila on käytössä, { -brand-short-name } muuntaa kaikki yhteydet käyttämään HTTPS:ää.
 httpsonly-learn-more = Lue lisää
 httpsonly-radio-enabled =
-    .label = Käytä ”Vain HTTPS” -tilaa kaikissa ikkunoissa
+    .label = Käytä ”Vain HTTPS”-tilaa kaikissa ikkunoissa
 httpsonly-radio-enabled-pbm =
-    .label = Käytä ”Vain HTTPS” -tilaa vain yksityisissä ikkunoissa
+    .label = Käytä ”Vain HTTPS”-tilaa vain yksityisissä ikkunoissa
 httpsonly-radio-disabled =
-    .label = Älä käytä ”Vain HTTPS” -tilaa
+    .label = Älä käytä ”Vain HTTPS”-tilaa
 
 ## The following strings are used in the Download section of settings
 

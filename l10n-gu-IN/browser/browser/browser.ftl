@@ -290,6 +290,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = બંધ કરો
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -361,3 +364,63 @@ fullscreen-exit-mac-button = પૂર્ણ સ્ક્રીનથી બહ�
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> તમારા નિર્દેશક અંકુશ ધરાવે છે. Esc દબાવો પાછા નિયંત્રણ લઈ જવા માટે.
 pointerlock-warning-no-domain = આ દસ્તાવેજ આપના પોઇન્ટર નિયંત્રણ ધરાવે છે. Esc દબાવો પાછા નિયંત્રણલઈ જવા માટે.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = બધા બુકમાર્ક્સને બતાવો
+bookmarks-recent-bookmarks =
+    .value = તાજેતરમાં કરેલ બુકમાર્ક
+bookmarks-toolbar-chevron =
+    .tooltiptext = વધુ બુકમાર્ક્સ બતાવો
+bookmarks-sidebar-content =
+    .aria-label = બુકમાર્ક્સ
+bookmarks-menu-button =
+    .label = બુકમાર્ક્સ મેનૂ
+bookmarks-other-bookmarks-menu =
+    .label = અન્ય બુકમાર્ક્સ
+bookmarks-mobile-bookmarks-menu =
+    .label = મોબાઇલ બુકમાર્ક્સ
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] બુકમાર્ક્સ સાઇડબાર છુપાવો
+           *[other] બુકમાર્ક બાજુપટ્ટીને જુઓ
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] બુકમાર્ક્સ ટૂલબાર છુપાવો
+           *[other] બુકમાર્ક સાધનપટ્ટીને દર્શાવો
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] ટૂલબારમાંથી બુકમાર્ક મેનુને દૂર કરો
+           *[other] ટૂલબારમાં બુકમાર્ક્સ મેનૂ ઉમેરો
+        }
+bookmarks-search =
+    .label = બુકમાર્ક્સ શોધો
+bookmarks-tools =
+    .label = બુકમાર્કિંગ સાધનો
+bookmarks-toolbar-menu =
+    .label = બુકમાર્ક્સ ટૂલબાર
+bookmarks-toolbar-placeholder =
+    .title = બુકમાર્ક્સ સાધનપટ્ટી વસ્તુઓ
+bookmarks-toolbar-placeholder-button =
+    .label = બુકમાર્ક્સ સાધનપટ્ટી વસ્તુઓ
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = બુકમાર્ક્સ
+library-bookmarks-bookmark-this-page =
+    .label = આ પાનાંને બુકમાર્ક કરો
+library-bookmarks-bookmark-edit =
+    .label = આ બુકમાર્કમાં ફેરફાર કરો
+
+## More items
+
+more-menu-go-offline =
+    .label = ઓફલાઈન કામ કરો
+    .accesskey = k

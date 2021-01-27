@@ -188,6 +188,32 @@ remote-debugging-url = URL
 
 ##
 
+support-third-party-modules-title = Modulen fan tredden
+support-third-party-modules-module = Modulebestân
+support-third-party-modules-version = Bestânsferzje
+support-third-party-modules-vendor = Leveransiersynfo
+support-third-party-modules-occurrence = Oantal
+support-third-party-modules-process = Prosestype & ID
+support-third-party-modules-thread = Thread
+support-third-party-modules-base = Imagebase-adres
+support-third-party-modules-uptime = Proses-uptime (ms)
+support-third-party-modules-duration = Laadtiid (ms)
+support-third-party-modules-empty = Der binne gjin modulen fan tredden laden.
+support-third-party-modules-no-value = (Gjin wearde)
+support-third-party-modules-button-open =
+    .title = Bestânslokaasje iepenje…
+support-third-party-modules-expand =
+    .title = Detailynformaasje toane
+support-third-party-modules-collapse =
+    .title = Detailynformaasje ynklappe
+support-third-party-modules-unsigned-icon =
+    .title = Dizze module is net ûndertekene
+support-third-party-modules-folder-icon =
+    .title = Bestânslokaasje iepenje…
+support-third-party-modules-down-icon =
+    .title = Detailynformaasje toane
+support-third-party-modules-up-icon =
+    .title = Detailynformaasje ynklappe
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =

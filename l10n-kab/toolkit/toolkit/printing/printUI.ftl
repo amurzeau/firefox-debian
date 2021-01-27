@@ -25,6 +25,9 @@ printui-range-start = Seg
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = Ɣer
+printui-page-custom-range-input =
+    .aria-label = Skcem ailal udmawan n yisebtar
+    .placeholder = m.d. 2-6, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Anɣalen
 printui-orientation = Taɣda
@@ -41,10 +44,14 @@ printui-scale = Sellum
 printui-scale-fit-to-page-width = Ṣeggem almend n tehri n tferkit
 # Label for input control where user can set the scale percentage
 printui-scale-pcent = Sellum
+# Section title (noun) for the two-sided print options
+printui-two-sided-printing = Asiggez ɣef sin wudmawen
+printui-duplex-checkbox = Siggez ɣef sin wudmawen
 # Section title for miscellaneous print options
 printui-options = Iɣewwaren
 printui-headers-footers-checkbox = Siggez iqerra d yiḍarren n usebter
 printui-backgrounds-checkbox = Siggez agilal
+printui-selection-checkbox = Siggez kan tafrant
 printui-color-mode-label = Askar n yiniten
 printui-color-mode-color = Initen
 printui-color-mode-bw = Aberkan d ucebḥan
@@ -53,19 +60,29 @@ printui-margins-default = Amezwer
 printui-margins-min = Adday
 printui-margins-none = Ulac
 printui-margins-custom = Sagen
+printui-margins-custom-inches = Sagen (idebbuzen)
 printui-margins-custom-top = Afellay
+printui-margins-custom-top-inches = Afellay (idebbuzen)
 printui-margins-custom-bottom = Adday
+printui-margins-custom-bottom-inches = Adday (idebbuzen)
 printui-margins-custom-left = Azelmaḍ
+printui-margins-custom-left-inches = Azelmaḍ (idebbuzen)
 printui-margins-custom-right = Ayeffus
+printui-margins-custom-right-inches = Ayeffus (idebbuzen)
 printui-system-dialog-link = Siggez s useqdec n udiwenni anagraw…
 printui-primary-button = Siggez
 printui-primary-button-save = Sekles
 printui-cancel-button = Sefsex
+printui-close-button = Mdel
 printui-loading = Aheyyi n teskant
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Taskant send asiggez
+printui-pages-per-sheet = Asebter i yal tawerqet
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Asiggez…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

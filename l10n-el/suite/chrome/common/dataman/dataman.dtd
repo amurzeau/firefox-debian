@@ -18,6 +18,8 @@
 
 <!ENTITY domain.tree.domain.label "Τομέας">
 
+<!ENTITY domain.ctx.forgetdomain.label "Διαγραφή στοιχείων τομέα">
+<!ENTITY domain.ctx.forgetdomain.accesskey "Δ">
 <!ENTITY domain.ctx.forgetglobal.label "Διαγραφή γενικών δεδομένων">
 <!ENTITY domain.ctx.forgetglobal.accesskey "Δ">
 
@@ -56,6 +58,7 @@
 <!ENTITY cookies.button.remove.label "Αφαίρεση">
 <!ENTITY cookies.button.remove.accesskey "Α">
 
+<!ENTITY cookies.blockOnRemove.label "Κατά την αφαίρεση, να αποκλείεται η τοποθέτηση νέων cookies από τις παρακάτω ιστοσελίδες">
 <!ENTITY cookies.blockOnRemove.accesskey "Κ">
 
 <!-- permissions -->
@@ -67,10 +70,12 @@
 <!ENTITY perm.AllowSession "Αποδοχή για τη συνεδρία">
 <!ENTITY perm.Block "Φραγή">
 
+<!ENTITY perm.host.placeholder "Εισάγετε όνομα συστήματος">
 <!ENTITY perm.button.add.label "Προσθήκη">
 <!ENTITY perm.button.add.accesskey "Π">
 
 <!-- preferences -->
+<!ENTITY prefs.description "Οι προτιμήσεις περιεχομένου είναι ένας τρόπος για να αποθηκεύει το &brandShortName; τις ρυθμίσεις του, όπως επίπεδα ζουμ, συγκεκριμένα για κάθε ιστοσελίδα.">
 
 <!ENTITY prefs.tree.host.label "Ιστοσελίδα">
 <!ENTITY prefs.tree.name.label "Όνομα προτίμησης">
@@ -85,6 +90,7 @@
 <!ENTITY prefs.button.remove.accesskey "Α">
 
 <!-- passwords -->
+<!ENTITY pwd.description "Έχετε αποθηκεύσει τους παρακάτω κωδικούς πρόσβασης για τον τομέα:">
 
 <!ENTITY pwd.tree.host.label "Ιστοσελίδα">
 <!ENTITY pwd.tree.username.label "Όνομα χρήστη">
@@ -101,6 +107,7 @@
 <!ENTITY pwd.button.remove.accesskey "Α">
 
 <!-- storage -->
+<!ENTITY storage.description "Ο τομέας χρησιμοποιεί τα εξής δεδομένα αποθήκευση ιστού στον υπολογιστή σας:">
 
 <!ENTITY storage.tree.host.label "Ιστοσελίδα">
 <!ENTITY storage.tree.type.label "Τύπος">
@@ -119,6 +126,7 @@
 
 <!ENTITY fdata.tree.fieldname.label "Όνομα πεδίου">
 <!ENTITY fdata.tree.value.label "Εισηγμένη τιμή">
+<!ENTITY fdata.tree.usecount.label "Αριθμός χρήσεων">
 <!ENTITY fdata.tree.firstused.label "Πρώτη χρήση">
 <!ENTITY fdata.tree.lastused.label "Τελευταία χρήση">
 

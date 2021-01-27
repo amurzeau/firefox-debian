@@ -10,17 +10,27 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = Uinneag ùr
+appmenuitem-new-private-window =
+    .label = Uinneag phrìobhaideach ùr
+
+## Zoom and Fullscreen Controls
+
 appmenuitem-zoom-enlarge =
     .label = Sùm a-steach
 appmenuitem-zoom-reduce =
     .label = Sùm a-mach
+appmenuitem-fullscreen =
+    .label = Làn-sgrìn
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Sioncronaich an-dràsta
+appmenuitem-save-page =
+    .label = Sàbhail an duilleag mar…
 
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Na tha ùr
-

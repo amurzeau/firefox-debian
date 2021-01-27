@@ -212,6 +212,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = Sluit
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -273,3 +276,37 @@ fullscreen-exit-mac-button = Verlaat volskerm (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> beheer tans die wyser. Druk Esc om beheer terug te kry.
 pointerlock-warning-no-domain = Dié dokument beheer tans die wyser. Druk Esc om beheer terug te kry.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Wys alle boekmerke
+bookmarks-recent-bookmarks =
+    .value = Onlangs geboekmerk
+bookmarks-toolbar-chevron =
+    .tooltiptext = Wys meer boekmerke
+bookmarks-sidebar-content =
+    .aria-label = Boekmerke
+bookmarks-other-bookmarks-menu =
+    .label = Ander boekmerke
+bookmarks-search =
+    .label = Deursoek boekmerke
+bookmarks-toolbar-menu =
+    .label = Boekmerknutsbalk
+bookmarks-toolbar-placeholder =
+    .title = Boekmerknutsbalk-items
+bookmarks-toolbar-placeholder-button =
+    .label = Boekmerknutsbalk-items
+
+## Library Panel items
+
+library-bookmarks-bookmark-this-page =
+    .label = Boekmerk hierdie bladsy
+library-bookmarks-bookmark-edit =
+    .label = Redigeer hierdie boekmerk
+
+## More items
+
+more-menu-go-offline =
+    .label = Werk vanlyn
+    .accesskey = k

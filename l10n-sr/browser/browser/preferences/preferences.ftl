@@ -29,6 +29,8 @@ search-input-box =
            *[other] Нађи у поставкама
         }
 managed-notice = Вашим прегледачем управља ваша организација.
+category-list =
+    .aria-label = Категорије
 pane-general-title = Опште
 category-general =
     .tooltiptext = { pane-general-title }
@@ -50,6 +52,9 @@ category-experimental =
 pane-experimental-subtitle = Наставите с опрезом
 pane-experimental-search-results-header = { -brand-short-name } експерименти: наставите с опрезом
 pane-experimental-description = Измена напредних подешавања може деловати на { -brand-short-name } перформансе или безбедност.
+pane-experimental-reset =
+    .label = Врати подразумеване вредности
+    .accesskey = R
 help-button-label = { -brand-short-name } подршка
 addons-button-label = Проширења и теме
 focus-search =
@@ -429,6 +434,10 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Омогућите слика-у-слици видео контролу
     .accesskey = О
 browsing-picture-in-picture-learn-more = Сазнајте више
+browsing-media-control =
+    .label = Управљај медијима преко тастатуре, слушалица или виртуелног интерфејса
+    .accesskey = v
+browsing-media-control-learn-more = Сазнајте више
 browsing-cfr-recommendations =
     .label = Препоручи проширења приликом прегледања
     .accesskey = р
@@ -492,6 +501,13 @@ home-prefs-search-header =
 home-prefs-topsites-header =
     .label = Омиљени сајтови
 home-prefs-topsites-description = Сајтови које највише посећујете
+home-prefs-topsites-by-option-sponsored =
+    .label = Спонзорисани популарни сајтови
+home-prefs-shortcuts-header =
+    .label = Пречице
+home-prefs-shortcuts-description = Сајтови које чувате или посећујете
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Спонзорисане пречице
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -499,6 +515,7 @@ home-prefs-topsites-description = Сајтови које највише пос�
 home-prefs-recommended-by-header =
     .label = Предложио { $provider }
 home-prefs-recommended-by-description-update = Истакнути садржај са интернета, који обезбеђује { $provider }
+home-prefs-recommended-by-description-new = Изузетан садржај који је уредио { $provider }, део { -brand-product-name } породице
 
 ##
 
@@ -516,6 +533,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Најновије преузимање
 home-prefs-highlights-option-saved-to-pocket =
     .label = Странице сачуване у { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Недавна активност
+home-prefs-recent-activity-description = Избор недавних сајтова и садржаја
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -523,6 +543,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Исечци
 home-prefs-snippets-description = Новости од { -vendor-short-name }-е и { -brand-product-name }-а
+home-prefs-snippets-description-new = Савети и новости од { -vendor-short-name }-а и { -brand-product-name }-а
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -564,6 +585,7 @@ search-show-suggestions-private-windows =
 suggestions-addressbar-settings-generic = Измените посдешавања предлога претраживања
 search-suggestions-cant-show = Предлози претраге неће бити приказани у траци за локацију зато што сте подесили да { -brand-short-name } никада не памти историју.
 search-one-click-header = One-click претраживачи
+search-one-click-header2 = Претражи пречице
 search-one-click-desc = Изаберите алтернативне претраживаче који ће се појављивати испод адресне траке и траке за претрагу приликом уноса кључне речи.
 search-choose-engine-column =
     .label = Претраживач
@@ -876,6 +898,10 @@ sitedata-option-block-cross-site-trackers =
     .label = Виешстранични пратиоци
 sitedata-option-block-cross-site-and-social-media-trackers =
     .label = Вишестранични пратиоци и пратиоци са друштвених мрежа
+sitedata-option-block-cross-site-tracking-cookies-including-social-media =
+    .label = Вишестранични колачићи — укључују колачиће друштвених мрежа
+sitedata-option-block-cross-site-cookies-including-social-media =
+    .label = Вишестранични колачићи — укључују колачиће друштвених мрежа
 sitedata-option-block-cross-site-and-social-media-trackers-plus-isolate =
     .label = Пратиоци с унакрсних страница и друштвених мрежа, те изолација преосталих колачића
 sitedata-option-block-unvisited =
@@ -913,6 +939,9 @@ addressbar-locbar-openpage-option =
 addressbar-locbar-topsites-option =
     .label = Популарне странице
     .accesskey = T
+addressbar-locbar-engines-option =
+    .label = Претраживачи
+    .accesskey = a
 addressbar-suggestions-settings = Измени поставке предлога претраживања
 
 ## Privacy Section - Content Blocking
@@ -920,6 +949,7 @@ addressbar-suggestions-settings = Измени поставке предлога
 content-blocking-enhanced-tracking-protection = Побољшана заштита од праћења
 content-blocking-section-top-level-description = Софтвери за праћење прате ваше мрежне активности и сакупљају ваше навике и интересовања. { -brand-short-name } блокира многе ове софтвере и друге злонамерне скрипте.
 content-blocking-learn-more = Сазнајте више
+content-blocking-fpi-incompatibility-warning = Користите First Party Isolation (FPI), која замењује нека { -brand-short-name } подешавања колачића.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -941,6 +971,7 @@ content-blocking-etp-standard-desc = Уравнотежена заштита и 
 content-blocking-etp-strict-desc = Заштита је моћнија, али може проузроковати да се неке веб странице или садржај не учитају.
 content-blocking-etp-custom-desc = Изаберите које пратиоце и скрипте треба блокирати.
 content-blocking-private-windows = Садржај који прати у приватним прозорима
+content-blocking-cross-site-cookies = Вишестранични колачићи
 content-blocking-cross-site-tracking-cookies = Вишестранични колачићи-пратиоци
 content-blocking-cross-site-tracking-cookies-plus-isolate = Пратиоци с унакрсних страница и изолација преосталих колачића
 content-blocking-social-media-trackers = Пратиоци с друштвених мрежа
@@ -952,6 +983,7 @@ content-blocking-cryptominers = Крипто-рударе
 content-blocking-fingerprinters = Хватаче отиска
 content-blocking-warning-title = Напомена!
 content-blocking-and-isolating-etp-warning-description = Блокирање пратилаца и изолација колачића може утицати на функционалност неких страница. Поново учитајте страницу с пратиоцима да бисте учитали сав садржај.
+content-blocking-and-isolating-etp-warning-description-2 = Ово подешавање може довести до тога да неки сајтови не приказују садржај или не раде исправно. Ако се чини да неки сајт не ради исправно, покушајте да онемогућите заштиту од праћења да би онда учитао сав садржај.
 content-blocking-warning-learn-how = Научите како
 content-blocking-reload-description = Да бисте применили ове измене, морате поново учитати своје језичке.
 content-blocking-reload-tabs-button =

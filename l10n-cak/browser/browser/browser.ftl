@@ -503,3 +503,71 @@ fullscreen-exit-mac-button = Tel pa chijun ruwa kematz'ib' (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> chajin ruma ri retal ch'oy. Tapitz'a' Esc richin nachajij chik el.
 pointerlock-warning-no-domain = Re ruxaq wuj re' chajin ruma ri retal ch'oy. Tapitz'a' Esc richin nachajij chik el.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Kek'ut konojel ri taq yaketal
+bookmarks-recent-bookmarks =
+    .value = K'a nimakol tiya' ketal
+bookmarks-toolbar-chevron =
+    .tooltiptext = Kek'ut pe ch'aqa' chik taq yaketal
+bookmarks-sidebar-content =
+    .aria-label = Taq yaketal
+bookmarks-menu-button =
+    .label = Kik'utsamaj taq Yaketal
+bookmarks-other-bookmarks-menu =
+    .label = Ch'aqa' chik taq Yaketal
+bookmarks-mobile-bookmarks-menu =
+    .label = Taq ruyaketal oyonib'äl
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Tewüx ri Ajxikin Kipas taq Yaketal
+           *[other] Titz'et ri ajxikin kipas taq yaketal
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Tewüx ri Kikajtz'ik taq Yaketal
+           *[other] Titz'et rukatz'ik taq yaketal
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Tiyuj el Kik'utsamaj taq Yaketal pa Molsamajib'äl
+           *[other] Titz'aqatisäx Kik'utsamaj taq Yaketal pa Molsamajib'äl
+        }
+bookmarks-search =
+    .label = Kekanöx Yaketal
+bookmarks-tools =
+    .label = Taq kisamajib'al ri yakoj etal
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Kicholob'al taq kisamajib'al taq yaketal
+    .accesskey = K
+    .aria-label = Yaketal
+bookmarks-toolbar-menu =
+    .label = Kicholob'al taq kisamajib'al taq yaketal
+bookmarks-toolbar-placeholder =
+    .title = Ruch'akulal taq kiyaketal cholsamajib'äl
+bookmarks-toolbar-placeholder-button =
+    .label = Ruch'akulal taq kiyaketal cholsamajib'äl
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Taq yaketal
+library-bookmarks-bookmark-this-page =
+    .label = Titz'aqatisäx re ruxaq re' pa taq yaketal
+library-bookmarks-bookmark-edit =
+    .label = Tinuk' re yaketal re'
+library-recent-activity-label = K'ak'a' Samaj
+
+## More items
+
+more-menu-go-offline =
+    .label = Chupül rusamaj
+    .accesskey = m

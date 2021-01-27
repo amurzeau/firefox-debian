@@ -89,10 +89,10 @@ extension-controlled-homepage-override = Розширення <img data-l10n-nam
 extension-controlled-new-tab-url = Розширення <img data-l10n-name="icon"/> { $name } контролює вашу сторінку нової вкладки.
 # This string is shown to notify the user that the password manager setting
 # is being controlled by an extension
-extension-controlled-password-saving = Розширення <img data-l10n-name="icon"/> { $name } контролює ці налаштування.
+extension-controlled-password-saving = Розширення <img data-l10n-name="icon"/> { $name } контролює цей параметр.
 # This string is shown to notify the user that their notifications permission
 # is being controlled by an extension.
-extension-controlled-web-notifications = Розширення <img data-l10n-name="icon"/> { $name } контролює це налаштування.
+extension-controlled-web-notifications = Розширення <img data-l10n-name="icon"/> { $name } контролює цей параметр.
 # This string is shown to notify the user that the default search engine
 # is being controlled by an extension.
 extension-controlled-default-search = Розширення <img data-l10n-name="icon"/> { $name } встановило ваш типовий засіб пошуку.
@@ -101,7 +101,7 @@ extension-controlled-default-search = Розширення <img data-l10n-name="
 extension-controlled-privacy-containers = Для роботи розширення <img data-l10n-name="icon"/> { $name } необхідні вкладки в контейнері.
 # This string is shown to notify the user that their content blocking "All Detected Trackers"
 # preferences are being controlled by an extension.
-extension-controlled-websites-content-blocking-all-trackers = Розширення <img data-l10n-name="icon"/> { $name } контролює ці налаштування.
+extension-controlled-websites-content-blocking-all-trackers = Розширення <img data-l10n-name="icon"/> { $name } контролює цей параметр.
 # This string is shown to notify the user that their proxy configuration preferences
 # are being controlled by an extension.
 extension-controlled-proxy-config = Розширення <img data-l10n-name="icon"/> { $name } контролює спосіб з'єднання { -brand-short-name } з Інтернетом.
@@ -503,6 +503,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Сайти, які ви відвідуєте найчастіше
 home-prefs-topsites-by-option-sponsored =
     .label = Популярні спонсоровані сайти
+home-prefs-shortcuts-header =
+    .label = Ярлики
+home-prefs-shortcuts-description = Сайти, які ви зберігаєте чи відвідуєте
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Спонсоровані ярлики
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -510,6 +515,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Рекомендовано { $provider }
 home-prefs-recommended-by-description-update = Винятково цікаві матеріали з мережі від { $provider }
+home-prefs-recommended-by-description-new = Добірні матеріали від { $provider }, що входить до родини { -brand-product-name }
 
 ##
 
@@ -518,8 +524,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Матеріали від спонсорів
 home-prefs-highlights-header =
     .label = Обране
-home-prefs-recent-activity-header =
-    .label = Недавні дії
 home-prefs-highlights-description = Відібрані вебсайти, які ви зберегли чи відвідали
 home-prefs-highlights-option-visited-pages =
     .label = Відвідані сторінки
@@ -529,6 +533,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Останні завантаження
 home-prefs-highlights-option-saved-to-pocket =
     .label = Збережене в { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Недавні дії
+home-prefs-recent-activity-description = Добірка недавніх сайтів та вмісту
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -536,6 +543,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Фрагменти
 home-prefs-snippets-description = Оновлення від { -vendor-short-name } та { -brand-product-name }
+home-prefs-snippets-description-new = Поради та новини від { -vendor-short-name } та { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -920,7 +928,7 @@ sitedata-cookies-exceptions =
 addressbar-header = Панель адреси
 addressbar-suggest = При використанні панелі адреси, пропонувати
 addressbar-locbar-history-option =
-    .label = Історію переглядів
+    .label = Історію перегляду
     .accesskey = т
 addressbar-locbar-bookmarks-option =
     .label = Закладки
@@ -928,9 +936,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Відкриті вкладки
     .accesskey = в
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Ярлики
+    .accesskey = Я
 addressbar-locbar-topsites-option =
     .label = Популярні сайти
     .accesskey = с
+addressbar-locbar-engines-option =
+    .label = Засоби пошуку
+    .accesskey = ш
 addressbar-suggestions-settings = Змінити налаштування пропозицій засобів пошуку
 
 ## Privacy Section - Content Blocking

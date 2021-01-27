@@ -497,3 +497,70 @@ fullscreen-exit-mac-button = Izhod iz celozaslonskega načina (Esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ima nadzor nad vašim kazalcem. Pritisnite Esc za ponovni prevzem nadzora.
 pointerlock-warning-no-domain = Ta dokument ima nadzor nad vašim kazalcem. Pritisnite Esc za ponovni prevzem nadzora.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Prikaži vse zaznamke
+bookmarks-recent-bookmarks =
+    .value = Nedavni zaznamki
+bookmarks-toolbar-chevron =
+    .tooltiptext = Prikaži več zaznamkov
+bookmarks-sidebar-content =
+    .aria-label = Zaznamki
+bookmarks-menu-button =
+    .label = Meni zaznamkov
+bookmarks-other-bookmarks-menu =
+    .label = Drugi zaznamki
+bookmarks-mobile-bookmarks-menu =
+    .label = Mobilni zaznamki
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Skrij stransko vrstico zaznamkov
+           *[other] Prikaži stransko vrstico zaznamkov
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Skrij orodno vrstico zaznamkov
+           *[other] Prikaži orodno vrstico zaznamkov
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Odstrani meni zaznamkov iz orodne vrstice
+           *[other] Dodaj meni zaznamkov v orodno vrstico
+        }
+bookmarks-search =
+    .label = Iskanje po zaznamkih
+bookmarks-tools =
+    .label = Orodja zaznamkov
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Vrstica zaznamkov
+    .accesskey = Z
+    .aria-label = Zaznamki
+bookmarks-toolbar-menu =
+    .label = Vrstica zaznamkov
+bookmarks-toolbar-placeholder =
+    .title = Predmeti orodne vrstice z zaznamki
+bookmarks-toolbar-placeholder-button =
+    .label = Predmeti orodne vrstice z zaznamki
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Zaznamki
+library-bookmarks-bookmark-this-page =
+    .label = Dodaj stran med zaznamke
+library-bookmarks-bookmark-edit =
+    .label = Uredi ta zaznamek
+
+## More items
+
+more-menu-go-offline =
+    .label = Nepovezan način
+    .accesskey = e

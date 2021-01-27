@@ -503,3 +503,70 @@ fullscreen-exit-mac-button = Salir de pantalla completa (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> tiene el control de su puntero. Pulse Esc para recuperar el control.
 pointerlock-warning-no-domain = Este documento tiene el control del puntero. Pulse Esc para recuperar el control.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Mostrar todos los marcadores
+bookmarks-recent-bookmarks =
+    .value = Añadidos recientemente
+bookmarks-toolbar-chevron =
+    .tooltiptext = Mostrar más marcadores
+bookmarks-sidebar-content =
+    .aria-label = Marcadores
+bookmarks-menu-button =
+    .label = Menú de marcadores
+bookmarks-other-bookmarks-menu =
+    .label = Otros marcadores
+bookmarks-mobile-bookmarks-menu =
+    .label = Marcadores del móvil
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Ocultar panel lateral de marcadores
+           *[other] Ver el panel lateral de marcadores
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Ocultar barra de herramientas de marcadores
+           *[other] Ver la barra de marcadores
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Eliminar menú de marcadores de la barra de herramientas
+           *[other] Añadir el menú Marcadores a la barra de herramientas
+        }
+bookmarks-search =
+    .label = Buscar marcadores
+bookmarks-tools =
+    .label = Herramientas de marcadores
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Barra de herramientas de marcadores
+    .accesskey = B
+    .aria-label = Marcadores
+bookmarks-toolbar-menu =
+    .label = Barra de herramientas de marcadores
+bookmarks-toolbar-placeholder =
+    .title = Elementos de la barra de herramientas de marcadores
+bookmarks-toolbar-placeholder-button =
+    .label = Elementos de la barra de herramientas de marcadores
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Marcadores
+library-bookmarks-bookmark-this-page =
+    .label = Añadir esta página a marcadores
+library-bookmarks-bookmark-edit =
+    .label = Editar este marcador
+
+## More items
+
+more-menu-go-offline =
+    .label = Trabajar sin conexión
+    .accesskey = x

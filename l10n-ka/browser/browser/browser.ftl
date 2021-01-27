@@ -503,3 +503,71 @@ fullscreen-exit-mac-button = სრული ეკრანიდან გა�
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> მართავს თქვენს მაჩვენებელს. მართვის დასაბრუნებლად დააჭირეთ Esc ღილაკს.
 pointerlock-warning-no-domain = ეს დოკუმენტი მართავს თქვენს მაჩვენებელს. მართვის დასაბრუნებლად დააჭირეთ Esc ღილაკს.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = ყველა სანიშნის ჩვენება
+bookmarks-recent-bookmarks =
+    .value = ბოლოს ჩანიშნული
+bookmarks-toolbar-chevron =
+    .tooltiptext = სხვა სანიშნების გამოჩენაც
+bookmarks-sidebar-content =
+    .aria-label = სანიშნები
+bookmarks-menu-button =
+    .label = სანიშნების მენიუ
+bookmarks-other-bookmarks-menu =
+    .label = სხვა სანიშნები
+bookmarks-mobile-bookmarks-menu =
+    .label = მობილურის სანიშნები
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] სანიშნების გვერდითი ზოლის დამალვა
+           *[other] სანიშნების გვერდითი ზოლის ჩვენება
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] სანიშნების ხელსაწყოთა ზოლის დამალვა
+           *[other] სანიშნების ხელსაწყოთა ზოლის ჩვენება
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] სანიშნების მენიუს მოცილება ხელსაწყოთა ზოლიდან
+           *[other] სანიშნების მენიუს დამატება ხელსაწყოთა ზოლზე
+        }
+bookmarks-search =
+    .label = სანიშნების ძიება
+bookmarks-tools =
+    .label = სანიშნების ხელსაწყოები
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = სანიშნების ხელსაწყოთა ზოლი
+    .accesskey = ს
+    .aria-label = სანიშნები
+bookmarks-toolbar-menu =
+    .label = სანიშნების ხელსაწყოთა ზოლი
+bookmarks-toolbar-placeholder =
+    .title = სანიშნების ზოლის ხელსაწყოები
+bookmarks-toolbar-placeholder-button =
+    .label = სანიშნების ზოლის ხელსაწყოები
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = სანიშნები
+library-bookmarks-bookmark-this-page =
+    .label = გვერდის ჩანიშვნა
+library-bookmarks-bookmark-edit =
+    .label = სანიშნის ჩასწორება
+library-recent-activity-label = ბოლო მოქმედებები
+
+## More items
+
+more-menu-go-offline =
+    .label = კავშირგარეშე რეჟიმი
+    .accesskey = კ

@@ -169,7 +169,12 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Ta bort denna inloggning?
 confirm-delete-dialog-message = Den här åtgärden kan inte ångras.
 about-logins-confirm-remove-dialog-confirm-button = Ta bort
-about-logins-confirm-remove-all-dialog-confirm-button = Ta bort alla
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] Ta bort
+        [one] Ta bort
+       *[other] Ta bort alla
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] Ja, ta bort den här inloggningen
@@ -201,6 +206,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Exportera inloggningar och lösenord
 about-logins-confirm-export-dialog-message = Dina lösenord sparas som läsbar text (t.ex. BadP@ssw0rd) så att alla som kan öppna den exporterade filen kan se dem.
 about-logins-confirm-export-dialog-confirm-button = Exportera…
+about-logins-alert-import-title = Import slutförd
+about-logins-alert-import-message = Visa detaljerad importöversikt
 confirm-discard-changes-dialog-title = Ignorera dessa förändringar?
 confirm-discard-changes-dialog-message = Alla ändringar som inte är sparade kommer att gå förlorade.
 confirm-discard-changes-dialog-confirm-button = Ignorera
@@ -262,3 +269,30 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV-dokument
        *[other] CSV-fil
     }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Import slutförd
+about-logins-import-dialog-items-added =
+    { $count ->
+        [one] <span data-l10n-name="count">{ $count }</span><span>ny inloggning tillagd</span>
+       *[other] <span data-l10n-name="count">{ $count }</span><span>nya inloggningar tillagda</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+        [one] <span data-l10n-name="count">{ $count }</span><span>befintlig inloggning uppdaterad</span>
+       *[other] <span data-l10n-name="count">{ $count }</span><span>befintliga inloggningar uppdaterade</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+        [one] <span data-l10n-name="count">{ $count }</span><span>duplicerad inloggning hittades</span><span data-l10n-name="meta">(ej importerad)</span>
+       *[other] <span data-l10n-name="count">{ $count }</span><span>duplicerad inloggningar hittades</span><span data-l10n-name="meta">(ej importerade)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+        [one] <span data-l10n-name="count">{ $count }</span><span>fel</span><span data-l10n-name="meta">(ej importerad)</span>
+       *[other] <span data-l10n-name="count">{ $count }</span><span>fel</span><span data-l10n-name="meta">(ej importerade)</span>
+    }
+about-logins-import-dialog-done = Klar

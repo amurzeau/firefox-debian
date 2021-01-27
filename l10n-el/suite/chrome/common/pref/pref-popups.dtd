@@ -10,6 +10,7 @@
 <!ENTITY popupBlock.accesskey           "Φ">
 
 <!ENTITY viewPermissions.label          "Διαχείριση δικαιωμάτων">
+<!ENTITY viewPermissions.accesskey      "Δ">
 
 <!ENTITY whenBlock.description          "Όταν ένα αναδυόμενο παράθυρο έχει αποκλειστεί:">
 <!ENTITY playSound.label                "Αναπαραγωγή ήχου:">
@@ -20,6 +21,7 @@
 <!ENTITY customSound.accesskey          "Π">
 
 <!ENTITY selectSound.label              "Περιήγηση…">
+<!ENTITY selectSound.accesskey          "ρ">
 <!ENTITY playSoundButton.label          "Αναπαραγωγή">
 <!ENTITY playSoundButton.accesskey      "π">
 
@@ -29,3 +31,4 @@
 <!ENTITY displayNotification.label      "Προβολή γραμμής ειδοποιήσεων στο πάνω μέρος της περιοχής περιεχομένου">
 <!ENTITY displayNotification.accesskey  "ε">
 
+<!ENTITY popupNote.description          'Σημείωση: Ο αποκλεισμός όλων των αναδυόμενων παραθύρων ενδέχεται να εμποδίσει σημαντικές λειτουργίες ορισμένων ιστοσελίδων, όπως παράθυρα σύνδεσης για τράπεζες και ιστοσελίδες αγορών. Για λεπτομέρειες σχετικά με την αποδοχή αναδυόμενων από συγκεκριμένους ιστότοπους, κάντε κλικ στο "Βοήθεια". Ακόμα και με τη φραγή, οι ιστοσελίδες μπορεί να εμφανίσουν αναδυόμενα με άλλους τρόπους.'>

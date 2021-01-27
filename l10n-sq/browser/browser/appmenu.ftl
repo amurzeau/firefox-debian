@@ -13,15 +13,26 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = Dritare e Re
+appmenuitem-new-private-window =
+    .label = Dritare e Re Private
+
+## Zoom and Fullscreen Controls
+
 appmenuitem-zoom-enlarge =
     .label = Zmadhojeni
 appmenuitem-zoom-reduce =
     .label = Zvogëlojeni
+appmenuitem-fullscreen =
+    .label = Sa Krejt Ekrani
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Njëkohësohu Tani
+appmenuitem-save-page =
+    .label = Ruajeni Faqen Si…
 
 ## What's New panel in App menu.
 

@@ -244,6 +244,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = වසන්න
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -313,3 +316,63 @@ fullscreen-exit-mac-button = පූර්ණ තිරයෙන් පිටව�
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> හට ඔබගේ දක්වනයේ පාලනය පවතී. පාලනය නැවත ලැබීමට Esc ඔබන්න.
 pointerlock-warning-no-domain = මෙම ලේඛනය හට ඔබගේ දක්වනයේ පාලනය පවතී. පාලනය නැවත ලැබීමට Esc ඔබන්න.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = සියළු පිටුසලකුණු පෙන්වන්න…
+bookmarks-recent-bookmarks =
+    .value = මෑතදී පිටුසලකුණු කළ
+bookmarks-toolbar-chevron =
+    .tooltiptext = තවත් පිටුසලකුණු පෙන්වන්න
+bookmarks-sidebar-content =
+    .aria-label = පිටු සලකුණු
+bookmarks-menu-button =
+    .label = පිටු සලකුණු මෙනුව
+bookmarks-other-bookmarks-menu =
+    .label = වෙනත් පිටුසලකුණු
+bookmarks-mobile-bookmarks-menu =
+    .label = ජංගම පිටු සළකුණු
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] පිටු සලකුණු පැති තීරුව සඟවන්න
+           *[other] පිටුලකුණු පැති තීරුව පෙන්වන්න
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] පිටු සලකුණු මෙවලම් තීරුව සඟවන්න
+           *[other] පිටුලකුණු මෙවලම්තීරුව පෙන්වන්න
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] මෙවලම් තීරුවෙන් පිටු සලකුණු මෙනුව ඉවත් කරන්න
+           *[other] මෙවලම් තීරුවට පිටුසලකුණු මෙනුව එක් කරන්න
+        }
+bookmarks-search =
+    .label = පිටුසලකුණු සොයන්න
+bookmarks-tools =
+    .label = පිටු සලකුණු මෙවලම්
+bookmarks-toolbar-menu =
+    .label = පිටු සලකුණු මෙවලම් තීරුව
+bookmarks-toolbar-placeholder =
+    .title = පිටු සලකුණු මෙවලම් තීරුවේ අයිතමයන්
+bookmarks-toolbar-placeholder-button =
+    .label = පිටු සලකුණු මෙවලම් තීරුවේ අයිතමයන්
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = පිටු සලකුණු
+library-bookmarks-bookmark-this-page =
+    .label = මෙම පිටුව සලකුණු කරගන්න
+library-bookmarks-bookmark-edit =
+    .label = මෙම පිටු සලකුණ සකසන්න
+
+## More items
+
+more-menu-go-offline =
+    .label = නොබැඳිව ක්‍රියා කරන්න
+    .accesskey = k

@@ -496,6 +496,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Gehien bisitatzen dituzun guneak
 home-prefs-topsites-by-option-sponsored =
     .label = Babesleek hornitutako guneak
+home-prefs-shortcuts-header =
+    .label = Lasterbideak
+home-prefs-shortcuts-description = Gordetzen edo bisitatzen dituzun guneak
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Babesleen lasterbideak
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -511,8 +516,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Babesleen istorioak
 home-prefs-highlights-header =
     .label = Nabarmendutakoak
-home-prefs-recent-activity-header =
-    .label = Azken jarduera
 home-prefs-highlights-description = Gorde edo bisitatu dituzun guneen hautapena
 home-prefs-highlights-option-visited-pages =
     .label = Bisitatutako orriak
@@ -522,6 +525,8 @@ home-prefs-highlights-option-most-recent-download =
     .label = Azken deskarga
 home-prefs-highlights-option-saved-to-pocket =
     .label = { -pocket-brand-name }-en gordetako orriak
+home-prefs-recent-activity-header =
+    .label = Azken jarduera
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -789,6 +794,10 @@ forms-master-pw-fips-title = Une honetan FIPS moduan zaude. FIPS moduak pasahitz
 forms-primary-pw-change =
     .label = Aldatu pasahitz nagusia…
     .accesskey = d
+# Leave this message empty if the translation for "Primary Password" matches
+# "Master Password" in your language. If you're editing the FTL file directly,
+# use { "" } as the value.
+forms-primary-pw-former-name = { "" }
 forms-primary-pw-fips-title = Une honetan FIPS moduan zaude. FIPS moduak pasahitz nagusia ezartzea eskatzen du.
 forms-master-pw-fips-desc = Pasahitz aldaketak huts egin du
 
@@ -916,9 +925,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Irekitako fitxak
     .accesskey = I
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Lasterbideak
+    .accesskey = s
 addressbar-locbar-topsites-option =
     .label = Gune erabilienak
     .accesskey = r
+addressbar-locbar-engines-option =
+    .label = Bilaketa-motorrak
+    .accesskey = k
 addressbar-suggestions-settings = Aldatu bilaketa-motorren iradokizunetarako hobespenak
 
 ## Privacy Section - Content Blocking

@@ -17,7 +17,7 @@ printui-sheets-count =
        *[other] { $sheetCount } dalen o bapur
     }
 printui-page-range-all = Y Cyfan
-printui-page-range-custom = Cyfaddas
+printui-page-range-custom = Cyfaddasu
 printui-page-range-label = Tudalen
 printui-page-range-picker =
     .aria-label = Dewis yr ystod tudalen
@@ -29,6 +29,9 @@ printui-range-start = O
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = at
+printui-page-custom-range-input =
+    .aria-label = Rhowch ystod tudalen cyfaddas
+    .placeholder = e.e. 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Copïau
 printui-orientation = Cyfeiriad
@@ -52,6 +55,7 @@ printui-duplex-checkbox = Argraffu ar y ddwy ochr
 printui-options = Dewisiadau
 printui-headers-footers-checkbox = Argraffu penynnau a throedynnau
 printui-backgrounds-checkbox = Argraffu cefndiroedd
+printui-selection-checkbox = Argraffu'r dewis yn unig
 printui-color-mode-label = Modd lliw
 printui-color-mode-color = Lliw
 printui-color-mode-bw = Du a gwyn
@@ -59,20 +63,30 @@ printui-margins = Ymylon
 printui-margins-default = Rhagosodiad
 printui-margins-min = Lleiafswm
 printui-margins-none = Dim
-printui-margins-custom = Cyfaddas
+printui-margins-custom = Cyfaddasu
+printui-margins-custom-inches = Cyfaddas (modfeddi)
 printui-margins-custom-top = Brig
+printui-margins-custom-top-inches = Brig (modfeddi)
 printui-margins-custom-bottom = Gwaelod
+printui-margins-custom-bottom-inches = Gwaelod (modfeddi)
 printui-margins-custom-left = Chwith
+printui-margins-custom-left-inches = Chwith (modfeddi)
 printui-margins-custom-right = De
+printui-margins-custom-right-inches = De (modfeddi)
 printui-system-dialog-link = Argraffu gan ddefnyddio deialog y system ...
 printui-primary-button = Argraffu
 printui-primary-button-save = Cadw
 printui-cancel-button = Diddymu
+printui-close-button = Cau
 printui-loading = Paratoi Rhagolwg
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Rhagolwg Argraffu
+printui-pages-per-sheet = Tudalennau fesul dalen
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Argraffu…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

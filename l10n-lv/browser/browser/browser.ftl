@@ -277,6 +277,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = Aizvērt
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -346,3 +349,63 @@ fullscreen-exit-mac-button = Iziet no pilnā ekrāna (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> kontrolē kursoru. Nospiediet taustiņu Esc, lai atgūtu kontroli.
 pointerlock-warning-no-domain = Šis dokuments kontrolē kursoru. Nospiediet taustiņu Esc, lai atgūtu kontroli.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Rādīt visas grāmatzīmes
+bookmarks-recent-bookmarks =
+    .value = Nesen saglabātās
+bookmarks-toolbar-chevron =
+    .tooltiptext = Rādīt vairāk grāmatzīmju
+bookmarks-sidebar-content =
+    .aria-label = Grāmatzīmes
+bookmarks-menu-button =
+    .label = Grāmatzīmju izvēlne
+bookmarks-other-bookmarks-menu =
+    .label = Citas grāmatzīmes
+bookmarks-mobile-bookmarks-menu =
+    .label = Mobilās grāmatzīmes
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Paslēpt grāmatzīmju sānjoslu
+           *[other] Atvērt grāmatzīmes sānjoslā
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Paslēpt grāmatzīmju sānjoslu
+           *[other] Attēlo grāmatzīmes sānu joslā
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Aizvākt grāmatzīmju izvēlni no rīkjoslas
+           *[other] Pievienot grāmatzīmju izvēlni rīkjoslai
+        }
+bookmarks-search =
+    .label = Meklēt grāmatzīmes
+bookmarks-tools =
+    .label = Grāmatzīmju rīki
+bookmarks-toolbar-menu =
+    .label = Grāmatzīmju rīkjosla
+bookmarks-toolbar-placeholder =
+    .title = Grāmatzīmju rīkjoslas elementi
+bookmarks-toolbar-placeholder-button =
+    .label = Grāmatzīmju rīkjoslas elementi
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Grāmatzīmes
+library-bookmarks-bookmark-this-page =
+    .label = Saglabāt šo lapu grāmatzīmēs
+library-bookmarks-bookmark-edit =
+    .label = Rediģēt šo grāmatzīmi
+
+## More items
+
+more-menu-go-offline =
+    .label = Strādāt nesaistē
+    .accesskey = r

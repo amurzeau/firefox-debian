@@ -27,6 +27,9 @@ printui-range-start = Wot
 # This label is displayed between the input fields indicating
 # the start and end page of the range to print.
 printui-range-end = do
+printui-page-custom-range-input =
+    .aria-label = Swójski wobwod stronow zapodać
+    .placeholder = na př. 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Kopije
 printui-orientation = Wusměrjenje
@@ -50,6 +53,7 @@ printui-duplex-checkbox = Na woběmaj bokomaj šišćeć
 printui-options = Nastajenja
 printui-headers-footers-checkbox = Hłowy a nohi ćišćeć
 printui-backgrounds-checkbox = Pozadki ćišćeć
+printui-selection-checkbox = Jenož wuběr ćišćeć
 printui-color-mode-label = Barbny modus
 printui-color-mode-color = Barba
 printui-color-mode-bw = Čorny a běły
@@ -58,19 +62,29 @@ printui-margins-default = Standard
 printui-margins-min = Minimum
 printui-margins-none = Žana
 printui-margins-custom = Swójske
+printui-margins-custom-inches = Swójske (cóle)
 printui-margins-custom-top = Horjeka
+printui-margins-custom-top-inches = Horjeka (cóle)
 printui-margins-custom-bottom = Deleka
+printui-margins-custom-bottom-inches = Deleka (cóle)
 printui-margins-custom-left = Nalěwo
+printui-margins-custom-left-inches = Nalěwo (cóle)
 printui-margins-custom-right = Naprawo
+printui-margins-custom-right-inches = Naprawo (cóle)
 printui-system-dialog-link = Z pomocu systemoweho dialoga ćišćeć…
 printui-primary-button = Ćišćeć
 printui-primary-button-save = Składować
 printui-cancel-button = Přetorhnyć
+printui-close-button = Začinić
 printui-loading = Ćišćerski přehlad přihotować
 # Reported by screen readers and other accessibility tools to indicate that
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Ćišćerski přehlad
+printui-pages-per-sheet = Strony na łopjeno
+# This is shown next to the Print button with an indefinite loading spinner
+# when the user prints a page and it is being sent to the printer.
+printui-print-progress-indicator = Ćišći so…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

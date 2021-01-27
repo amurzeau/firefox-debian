@@ -244,6 +244,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = Dún
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -315,3 +318,52 @@ fullscreen-exit-mac-button = Fág Mód Lánscáileáin (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = Tá <span data-l10n-name="domain">{ $domain }</span> i gceannas ar do chúrsóir faoi láthair. Brúigh Esc chun dul i gceannas air arís.
 pointerlock-warning-no-domain = Tá an cháipéis seo i gceannas ar do chúrsóir faoi láthair. Brúigh Esc chun dul i gceannas air arís.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Taispeáin Gach Leabharmharc
+bookmarks-recent-bookmarks =
+    .value = Leabharmharc leo le déanaí
+bookmarks-toolbar-chevron =
+    .tooltiptext = Tuilleadh leabharmharcanna
+bookmarks-sidebar-content =
+    .aria-label = Leabharmharcanna
+bookmarks-menu-button =
+    .label = Roghchlár na Leabharmharcanna
+bookmarks-other-bookmarks-menu =
+    .label = Leabharmharcanna Eile
+bookmarks-mobile-bookmarks-menu =
+    .label = Leabharmharcanna Soghluaiste
+bookmarks-search =
+    .label = Cuardaigh Leabharmharcanna
+bookmarks-tools =
+    .label = Uirlisí Leabharmharcála
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Barra Leabharmharc
+    .accesskey = B
+    .aria-label = Leabharmharcanna
+bookmarks-toolbar-menu =
+    .label = Barra Leabharmharc
+bookmarks-toolbar-placeholder =
+    .title = Rudaí ar an Bharra Leabharmharc
+bookmarks-toolbar-placeholder-button =
+    .label = Rudaí ar an Bharra Leabharmharc
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Leabharmharcanna
+library-bookmarks-bookmark-this-page =
+    .label = Cruthaigh Leabharmharc don Leathanach Seo
+library-bookmarks-bookmark-edit =
+    .label = Cuir an Leabharmharc Seo in Eagar
+
+## More items
+
+more-menu-go-offline =
+    .label = Oibrigh As Líne
+    .accesskey = b

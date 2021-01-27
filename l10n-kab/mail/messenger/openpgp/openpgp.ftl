@@ -43,6 +43,11 @@ openpgp-key-man-title =
 openpgp-key-man-generate =
     .label = Tayuga n tsura timaynutin
     .accesskey = K
+openpgp-key-man-gen-revoke =
+    .label = Aselkin n uḥway
+    .accesskey = ḥ
+openpgp-key-man-ctx-gen-revoke-label =
+    .label = Sirew é& Sekles aselkin n uḥway
 openpgp-key-man-file-menu =
     .label = Afaylu
     .accesskey = F
@@ -63,29 +68,153 @@ openpgp-key-man-import-public-from-file =
     .accesskey = l
 openpgp-key-man-import-secret-from-file =
     .label = Kter tasarut(tisura) tuffirt(tuffirin) seg ufaylu
+openpgp-key-man-import-sig-from-file =
+    .label = Kter aḥway seg ufaylu
+openpgp-key-man-import-from-clipbrd =
+    .label = Kter tasarut(tisura) seg ɣef wafus
+    .accesskey = K
+openpgp-key-man-import-from-url =
+    .label = Kter tasarut(tisura) seg URL
+    .accesskey = U
+openpgp-key-man-export-to-file =
+    .label = Sifeḍ tasarut(tisura) tazayezt(tizuyaz) ɣer ufaylu
+    .accesskey = S
+openpgp-key-man-send-keys =
+    .label = Azen tasarut(tisura) s yimayl
+    .accesskey = A
+openpgp-key-man-backup-secret-keys =
+    .label = Ḥrez tasarut tabaḍnit ɣer ufaylu
+    .accesskey = Ḥ
+openpgp-key-man-discover-cmd =
+    .label = Nadi tisura srid
+    .accesskey = N
 openpgp-key-man-discover-progress = Anadi…
+openpgp-key-copy-key =
+    .label = Nɣel tasarut tazayazt
+    .accesskey = N
+openpgp-key-export-key =
+    .label = Sifeḍ tasarut tazayezt ɣer ufaylu
+    .accesskey = S
+openpgp-key-backup-key =
+    .label = Ḥrez tasarut tabaḍnit ɣer ufaylu
+    .accesskey = Ḥ
+openpgp-key-send-key =
+    .label = Azen tasarut s yimayl
+    .accesskey = A
+openpgp-key-man-copy-to-clipbrd =
+    .label = Nɣel tasarut(tisura) tazayezt(tizuyaz) ɣer afus
+    .accesskey = N
+openpgp-key-man-copy-key-ids =
+    .label =
+        { $count ->
+            [one] Nɣel asulay n tsarut ɣeṛ "ɣef affus"
+           *[other] Nɣel isulayen n tsarut ɣeṛ "ɣef affus"
+        }
+    .accesskey = S
+openpgp-key-man-copy-fprs =
+    .label =
+        { $count ->
+            [one] Nɣel adsil umḍin ɣef afus
+           *[other] Nɣel adsil umḍin ɣef afus
+        }
+    .accesskey = ɣ
+openpgp-key-man-copy-to-clipboard =
+    .label =
+        { $count ->
+            [one] Nɣel tisura tizuyaz ɣer afus
+           *[other] Nɣel tisura tizuyaz ɣer afus
+        }
+    .accesskey = N
 openpgp-key-man-ctx-expor-to-file-label =
     .label = Kter tisura ɣer ufaylu
 openpgp-key-man-ctx-copy-to-clipbrd-label =
     .label = Nɣel tisura tizuyaz ɣer afus
+openpgp-key-man-ctx-copy =
+    .label = Nɣel
+    .accesskey = N
+openpgp-key-man-ctx-copy-fprs =
+    .label =
+        { $count ->
+            [one] Adsil umḍin
+           *[other] Idsilen umḍinen
+        }
+    .accesskey = A
+openpgp-key-man-ctx-copy-key-ids =
+    .label =
+        { $count ->
+            [one] Asulay n tsarut
+           *[other] Isulayen n tsura
+        }
+    .accesskey = S
+openpgp-key-man-ctx-copy-public-keys =
+    .label =
+        { $count ->
+            [one] Tasarut tazayazt
+           *[other] Tisura tizayazin
+        }
+    .accesskey = S
 openpgp-key-man-close =
     .label = Mdel
+openpgp-key-man-reload =
+    .label = Ales asali n tuffirt n tsura
+    .accesskey = L
+openpgp-key-man-change-expiry =
+    .label = Beddel azemz n taggara
+    .accesskey = B
+openpgp-key-man-del-key =
+    .label = Kkes tasarut(tisura)
+    .accesskey = K
+openpgp-delete-key =
+    .label = Kkes tasarut
+    .accesskey = K
+openpgp-key-man-revoke-key =
+    .label = Ḥwi tasarut
+    .accesskey = Ḥ
+openpgp-key-man-key-props =
+    .label = Iraten n tsarut
+    .accesskey = S
+openpgp-key-man-key-more =
+    .label = Ugar
+    .accesskey = U
+openpgp-key-man-view-photo =
+    .label = Asulay n tewlaft
+    .accesskey = W
 openpgp-key-man-ctx-view-photo-label =
     .label = Sker asulay n tewlaft
+openpgp-key-man-show-invalid-keys =
+    .label = Sken yir tisura
+    .accesskey = S
+openpgp-key-man-show-others-keys =
+    .label = Sken tisura seg yimdanen-nniḍen
+    .accesskey = k
 openpgp-key-man-user-id-label =
     .label = Isem
 openpgp-key-man-fingerprint-label =
     .label = Adsil umḍin
+openpgp-key-man-select-all =
+    .label = Fren akk tisura
+    .accesskey = F
+openpgp-key-man-empty-tree-tooltip =
+    .label = Sekcem awalen n unadi deg tebniqt ddaw-a
+openpgp-key-man-nothing-found-tooltip =
+    .label = Ulac tisura yemṣadan d wawalen-inek·inem n unadi
+openpgp-key-man-please-wait-tooltip =
+    .label = Ttxil-k rǧu arma ulint-d tsura…
 openpgp-key-man-filter-label =
     .placeholder = Anadi ɣef tsura
 openpgp-key-man-select-all-key =
     .key = A
+openpgp-key-man-key-details-key =
+    .key = I
 openpgp-key-details-title =
     .title = Iraten n tsarut
 openpgp-key-details-signatures-tab =
     .label = Isleknen
 openpgp-key-details-structure-tab =
     .label = Taɣessa
+openpgp-key-details-uid-certified-col =
+    .label = Asulay n useqdac / Yettuselken s
+openpgp-key-details-user-id2-label = Bab n tsarut
 openpgp-key-details-id-label =
     .label = Asulay
 openpgp-key-details-key-type-label = Anaw
@@ -104,6 +233,9 @@ openpgp-key-details-expiry-header = Azemz n taggara
 openpgp-key-details-usage-label =
     .label = Aseqdec
 openpgp-key-details-fingerprint-label = Adsil umḍin
+openpgp-key-details-sel-action =
+    .label = Fren tigawt…
+    .accesskey = r
 openpgp-card-details-close-window-label =
     .buttonlabelaccept = Mdel
 openpgp-acceptance-label =
@@ -112,6 +244,10 @@ openpgp-acceptance-rejected-label =
     .label = Uhu, agi tasarut-a.
 openpgp-acceptance-undecided-label =
     .label = Mazal, ahat ticki.
+openpgp-acceptance-unverified-label =
+    .label = Ih, maca ur sneqdeɣ ara ma yella d tasarut tameɣtut.
+openpgp-acceptance-verified-label =
+    .label = Ih, sneqdeɣ akken iwata belli tasarut-a ɣer-s adsil umḍin ameɣtu.
 openpgp-personal-no-label =
     .label = Uhu, ur tt-seqdaceɣ ara am tsarut-iw tudmawant.
 openpgp-personal-yes-label =
@@ -136,8 +272,38 @@ e2e-learn-more = Issin ugar
 
 ## OpenPGP Key selection area
 
+openpgp-radio-none =
+    .label = Ula yiwen
+openpgp-radio-none-desc = Ur seqdac ara OpenPGP i tmagit-a.
+#   $key (String) - the expiration date of the OpenPGP key
+openpgp-radio-key-expires = Azemz n taggara: { $date }
+openpgp-key-expires-image =
+    .tooltiptext = Tasarut ad temmet sya ɣer 6 n wayyuren
+#   $key (String) - the expiration date of the OpenPGP key
+openpgp-radio-key-expired = Temmut deg: { $date }
+openpgp-key-expired-image =
+    .tooltiptext = Tasarut temmut
+openpgp-key-expand-section =
+    .tooltiptext = Ugar n telɣut
+openpgp-key-revoke-title = Ḥwi tasarut
+openpgp-key-edit-title = Beddel tasarut OpenPGP
+openpgp-key-edit-date-title = Degger azemz n taggara
+openpgp-manager-button =
+    .label = Amsefrak n tsarut OpenPGP
+    .accesskey = m
+openpgp-key-remove-external =
+    .label = Kkes asulay n tsarut tazɣarayt
+    .accesskey = K
+key-external-label = Tasarut GnuPG taẓɣarayt
+# Strings in keyDetailsDlg.xhtml
+key-type-public = tasarut tazayat
+key-type-primary = tasarut tagejdant
+key-type-subkey = tsarut tasnawant
+key-type-pair = Tayuga n tsura (tasarut tabaḍnit akked tsarut tazayazt)
 key-expiry-never = weṛǧin
 key-usage-encrypt = Wgelhen
+key-usage-sign = Zmel
+key-usage-certify = Selken
 key-usage-authentication = Asesteb
 key-does-not-expire = Tasarut ur tettmettat ara
 key-expired-date = Tasarut temmut deg { $keyExpiry }
@@ -146,6 +312,40 @@ key-revoked-simple = Tasarut ettwasefsex
 # Strings in keyserver.jsm
 keyserver-error-aborted = Yettwaseḥbes
 keyserver-error-unknown = Taḍra-d tuccda tarussint
+# Strings in gpg.jsm
+unknown-signing-alg = Alguritm n uzmel arussin (asulay : { $id })
+unknown-hash-alg = Adṣil umḍil arussin (Asulay : { $id })
+expiry-open-key-manager = Ldi amsefrak n tsarut OpenPGP
+expiry-open-key-properties = Ldi timeẓliyin n tsarut
+# Strings filters.jsm
+filter-folder-required = Yessefk ad tferneḍ akaram asaḍas.
+filter-term-pgpencrypted-label = Iwgelhen s OpenPGP
+filter-key-required = Issefk ad tferneḍ tasarut n unermis.
+filter-key-not-found = Ulac tasarut n uwgelhen yettwafen i '{ $desc }'.
+# Strings filtersWrapper.jsm
+filter-decrypt-move-label = Tukksa timezgit n uwgelhen (OpenPGP)
+filter-decrypt-copy-label = Rnu anɣel n tukksa n uwgelhan (OpenPGP)
+filter-encrypt-label = Yewgelhen s tsarut (OpenPGP)
+# Strings in enigmailKeyImportInfo.js
+import-info-title =
+    .title = Tisura ttwaketrent akken iwata
+import-info-bits = Ibiten
+import-info-created = Yettwarna
+import-info-fpr = Adsil umḍin
+import-info-details = Sken talqayt daɣen sefrek aqbayl n tsura
+import-info-no-keys = Ulac tisura i d-yettwaketren.
+# Strings in enigmailKeyManager.js
+import-from-clip = Tebɣiḍ ad tketreḍ kra n tsura yellan ɣef afus?
 
 ## Account settings export output
+
+# Strings used in trust.jsm
+key-valid-unknown = arussin
+key-valid-invalid = arameɣtu
+key-valid-disabled = yensa
+key-valid-revoked = yettwaḥwi
+key-valid-expired = yemmut
+key-trust-untrusted = ur yettwaman ara
+
+# Strings used in enigmailMessengerOverlay.js
 

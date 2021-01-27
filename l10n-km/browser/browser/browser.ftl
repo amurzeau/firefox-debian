@@ -261,6 +261,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = បិទ
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -330,3 +333,63 @@ fullscreen-exit-mac-button = បិទ​ពេញ​អេក្រង់ (គ�
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> មាន​ការ​គ្រប់គ្រង​លើ​ព្រួញ​ចង្អុល​របស់​អ្នក។ ចុច Esc ដើម្បី​ទទួល​បាន​ការ​គ្រប់គ្រង​មកវិញ។
 pointerlock-warning-no-domain = ឯកសារនេះ​មាន​សិទ្ធ​គ្រប់គ្រង​លើ​ព្រួញ​ចង្អុល​របស់​អ្នក។ ចុច Esc ដើម្បី​ទទួល​បាន​ការ​គ្រប់គ្រង​មក​វិញ។
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = បង្ហាញ​ចំណាំ​ទាំងអស់
+bookmarks-recent-bookmarks =
+    .value = ដែល​បាន​ចំណាំ​ថ្មីៗ
+bookmarks-toolbar-chevron =
+    .tooltiptext = បង្ហាញ​ចំណាំ​​ថែមទៀត
+bookmarks-sidebar-content =
+    .aria-label = ចំណាំ
+bookmarks-menu-button =
+    .label = ម៉ឺនុយ​ចំណាំ
+bookmarks-other-bookmarks-menu =
+    .label = ចំណាំ​ផ្សេងៗ
+bookmarks-mobile-bookmarks-menu =
+    .label = ចំណាំ​ចល័ត
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] លាក់​របារ​ឧបករណ៍​ចំណាំ
+           *[other] មើល​របារ​ឧបករណ៍​ចំណាំ
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] លាក់របារឧបករណ៍ចំណាំ
+           *[other] មើល​របារ​ឧបករណ៍​ចំណាំ
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] ដក​ម៉ឺនុយចំណាំចេញពីរបារឧបករណ៍
+           *[other] បញ្ចូល​ម៉ឺនុយចំណាំទៅកាន់របារឧបករណ៍
+        }
+bookmarks-search =
+    .label = ស្វែងរក​ចំណាំ
+bookmarks-tools =
+    .label = ​ឧបករណ៍​ចំណាំ
+bookmarks-toolbar-menu =
+    .label = របារ​ឧបករណ៍​ចំណាំ
+bookmarks-toolbar-placeholder =
+    .title = ធាតុ​របារ​ឧបករណ៍​​ចំណាំ
+bookmarks-toolbar-placeholder-button =
+    .label = ធាតុ​របារ​ឧបករណ៍​​ចំណាំ
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = ចំណាំ
+library-bookmarks-bookmark-this-page =
+    .label = ចំណាំ​ទំព័រ​នេះ
+library-bookmarks-bookmark-edit =
+    .label = កែ​សម្រួល​ចំណាំ​នេះ
+
+## More items
+
+more-menu-go-offline =
+    .label = ធ្វើ​ការដោយ​គ្មាន​អ៊ីនធឺណិត
+    .accesskey = k

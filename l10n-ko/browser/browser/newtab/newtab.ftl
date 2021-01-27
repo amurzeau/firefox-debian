@@ -8,6 +8,9 @@
 newtab-page-title = 새 탭
 newtab-settings-button =
     .title = 새 탭 페이지 사용자 지정
+newtab-personalize-button-label = 개인화
+    .title = 새 탭 개인화
+    .aria-label = 새 탭 개인화
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = 웹 검색
     .title = 웹 검색
     .aria-label = 웹 검색
+newtab-search-box-text = 웹 검색
+newtab-search-box-input =
+    .placeholder = 웹 검색
+    .aria-label = 웹 검색
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = 검색 엔진 추가
 newtab-topsites-add-topsites-header = 새 상위 사이트
+newtab-topsites-add-shortcut-header = 새 바로 가기
 newtab-topsites-edit-topsites-header = 상위 사이트 편집
+newtab-topsites-edit-shortcut-header = 바로 가기 편집
 newtab-topsites-title-label = 제목
 newtab-topsites-title-input =
     .placeholder = 제목 입력
@@ -98,7 +107,7 @@ newtab-privacy-modal-header = 개인 정보는 중요합니다.
 newtab-privacy-modal-paragraph-2 =
     매력적인 이야기를 정리해서 보여주는 것 뿐만 아니라, 엄선된 스폰서로 부터
     관련성 높은 콘텐츠를 보여줍니다. 안심하세요. <strong>사용자의 탐색 데이터는 
-    { -brand-product-name }의 개인 사본을 남기지 않습니다</strong> — 저희와 스폰서 모두
+    { -brand-product-name }의 개인 복사본을 남기지 않습니다</strong> — 저희와 스폰서 모두
     들여다보지 않습니다.
 newtab-privacy-modal-link = 새 탭에서 개인 정보 보호 작동 방식 알아보기
 
@@ -207,3 +216,26 @@ newtab-pocket-cta-text = 좋아하는 이야기를 { -pocket-brand-name }에 저
 
 newtab-error-fallback-info = 이런! 이 콘텐츠를 불러오는데 오류가 발생하였습니다.
 newtab-error-fallback-refresh-link = 페이지를 새로 고침해서 다시 시도하세요.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = 바로 가기
+newtab-custom-shortcuts-subtitle = 저장 또는 방문 사이트
+newtab-custom-row-selector =
+    { $num ->
+       *[other] { $num } 행
+    }
+newtab-custom-sponsored-sites = 스폰서 바로 가기
+newtab-custom-pocket-title = { -pocket-brand-name } 추천
+newtab-custom-pocket-subtitle = { -brand-product-name } 제품군의 일부인 { -pocket-brand-name }에서 선별한 뛰어난 콘텐츠
+newtab-custom-pocket-sponsored = 스폰서 소식
+newtab-custom-recent-title = 최근 활동
+newtab-custom-recent-subtitle = 최근 사이트 및 콘텐츠 선택
+newtab-custom-close-button = 닫기
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = 짧은 소식
+newtab-custom-snippets-subtitle = { -vendor-short-name }와 { -brand-product-name }의 팁 및 뉴스
+newtab-custom-settings = 더 많은 설정 관리

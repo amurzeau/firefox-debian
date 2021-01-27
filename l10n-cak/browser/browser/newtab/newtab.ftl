@@ -8,6 +8,9 @@
 newtab-page-title = K'ak'a' Ruwi'
 newtab-settings-button =
     .title = Tawichinaj ri ruxaq richin K'ak'a' Ruwi'
+newtab-personalize-button-label = Tichinäx
+    .title = Tichinäx k'ak'a' ruwi'
+    .aria-label = Tichinäx k'ak'a' ruwi'
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Tikanöx pan Ajk'amaya'l
     .title = Tikanöx pan Ajk'amaya'l
     .aria-label = Tikanöx pan Ajk'amaya'l
+newtab-search-box-text = Tikanöx pan ajk'amaya'l
+newtab-search-box-input =
+    .placeholder = Tikanöx pan ajk'amaya'l
+    .aria-label = Tikanöx pan ajk'amaya'l
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Titz'aqatisäx Kanob'äl
 newtab-topsites-add-topsites-header = K'ak'a' Utziläj Ruxaq K'amaya'l
+newtab-topsites-add-shortcut-header = K'ak'a' Chojokem
 newtab-topsites-edit-topsites-header = Tinuk' re Utziläj Ruxaq K'amaya'l re'
+newtab-topsites-edit-shortcut-header = Tinuk' Chojokem
 newtab-topsites-title-label = B'i'aj
 newtab-topsites-title-input =
     .placeholder = Tatz'ib'aj jun b'i'aj
@@ -206,3 +215,27 @@ newtab-pocket-cta-text = Ke'ayaka' ri taq b'anob'äl ye'awajo' pa { -pocket-bran
 
 newtab-error-fallback-info = Uy, k'o jun itzel xel toq nisamajib'ëx re rupam re'.
 newtab-error-fallback-refresh-link = Titzolïx ruxaq richin nitojtob'ëx chik.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Chojmin Okem
+newtab-custom-shortcuts-subtitle = Taq ruxaq xe'ayäk o xe'atz'ët
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } cholaj
+       *[other] { $num } taq cholaj
+    }
+newtab-custom-sponsored-sites = Xto' chojmin okem
+newtab-custom-pocket-title = Chilab'en ruma { -pocket-brand-name }
+newtab-custom-pocket-subtitle = Cha'on rupam cha'on ruma { -pocket-brand-name }, rach'ala'ïl { -brand-product-name }
+newtab-custom-pocket-sponsored = To'on taq b'anob'äl
+newtab-custom-recent-title = K'ak'a' samaj
+newtab-custom-recent-subtitle = Jun cha'on taq ruxaq chuqa' k'ak'a' rupam
+newtab-custom-close-button = Titz'apïx
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Taq pir
+newtab-custom-snippets-subtitle = Taq runa'oj chuqa' taq rutzijol { -vendor-short-name } chuqa' { -brand-product-name }
+newtab-custom-settings = Tinuk'samajïx ch'aqa' runuk'ulem

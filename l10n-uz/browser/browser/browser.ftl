@@ -315,6 +315,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = Yopish
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -412,3 +415,70 @@ fullscreen-exit-mac-button = "Butun ekranda" usulidan chiqish (Esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ko‘rsatkichingiz ustidan nazorat o‘rnatgan. Nazoratni qo‘lga olish uchun Esc tugmasini bosing.
 pointerlock-warning-no-domain = Bu hujat ko‘rsatkichingiz ustidan nazorat o‘rnatgan. Nazoratni qo‘lga olish uchun Esc tugmasini bosing.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Barcha xatcho‘plarni ko‘rsatish
+bookmarks-recent-bookmarks =
+    .value = Soʻnggi xatchoʻpga qoʻshilgan saytlar
+bookmarks-toolbar-chevron =
+    .tooltiptext = Ko‘proq xatcho‘plarni ko‘rsatish
+bookmarks-sidebar-content =
+    .aria-label = Xatcho‘plar
+bookmarks-menu-button =
+    .label = Xatcho‘plar menyusi
+bookmarks-other-bookmarks-menu =
+    .label = Boshqa xatcho‘plar
+bookmarks-mobile-bookmarks-menu =
+    .label = Mobil xatcho‘plar
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Xatcho‘plar yon panelini berkitish
+           *[other] Xatcho‘plarni yon panelda ko‘rsatish
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Xatcho‘plar panelini berkitish
+           *[other] Xatcho‘plar panelini ko‘rsatish
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Xatcho‘plar menyusini paneldan olib tashlash
+           *[other] Xatcho‘plar menyusini panelga qo‘shish
+        }
+bookmarks-search =
+    .label = Xatcho‘plarni qidirish
+bookmarks-tools =
+    .label = Xatcho‘p vositalari
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Xatchoʻplar paneli
+    .accesskey = X
+    .aria-label = Xatchoʻplar
+bookmarks-toolbar-menu =
+    .label = Xatchoʻplar paneli
+bookmarks-toolbar-placeholder =
+    .title = Xatcho‘plar paneli bandlari
+bookmarks-toolbar-placeholder-button =
+    .label = Xatcho‘plar paneli bandlari
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Xatcho‘plar
+library-bookmarks-bookmark-this-page =
+    .label = Sahifani xatcho‘plarga qo‘shish
+library-bookmarks-bookmark-edit =
+    .label = Ushbu xatcho‘pni o‘zgartirish
+
+## More items
+
+more-menu-go-offline =
+    .label = Oflayn ishlash
+    .accesskey = i

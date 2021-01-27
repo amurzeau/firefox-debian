@@ -507,3 +507,71 @@ fullscreen-exit-mac-button = Połnu wobrazowku (esc) skóńcyś
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ma kontrolu nad wašeju špěrku. Tłocćo Esc, aby kontrolu slědk dostał.
 pointerlock-warning-no-domain = Toś ten dokument ma kontrolu nad wašeju špěrku. Tłocćo Esc, aby kontrolu slědk dostał.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Wše cytańske znamjenja pokazaś
+bookmarks-recent-bookmarks =
+    .value = Tuchylu ako cytańske znamje składowane
+bookmarks-toolbar-chevron =
+    .tooltiptext = Dalšne cytańske znamjenja pokazaś
+bookmarks-sidebar-content =
+    .aria-label = Cytańske znamjenja
+bookmarks-menu-button =
+    .label = Meni cytańskich znamjenjow
+bookmarks-other-bookmarks-menu =
+    .label = Druge cytańske znamjenja
+bookmarks-mobile-bookmarks-menu =
+    .label = Mobilne cytańske znamjenja
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Bocnicu cytańskich znamjenjow schowaś
+           *[other] Bocnicu cytańskich znamjenjow pokazaś
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Rědku cytańskich znamjenjow schowaś
+           *[other] Rědku cytańskich znamjenjow pokazaś
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Meni cytańskich znamjenjow ze symboloweje rědki wótwónoźeś
+           *[other] Symbolowej rědce meni cytańskich znamjenjow pśidaś
+        }
+bookmarks-search =
+    .label = Cytańske znamjenja pytaś
+bookmarks-tools =
+    .label = Rědy za cytańske znamjenja
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Rědka cytańskich znamjenjow
+    .accesskey = c
+    .aria-label = Cytańske znamjenja
+bookmarks-toolbar-menu =
+    .label = Rědka cytańskich znamjenjow
+bookmarks-toolbar-placeholder =
+    .title = Zapiski rědki cytańskich znamjenjow
+bookmarks-toolbar-placeholder-button =
+    .label = Zapiski rědki cytańskich znamjenjow
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Cytańske znamjenja
+library-bookmarks-bookmark-this-page =
+    .label = Toś ten bok ako cytańske znamje składowaś
+library-bookmarks-bookmark-edit =
+    .label = Toś to cytańske znamje wobźěłaś
+library-recent-activity-label = Nejnowša aktiwita
+
+## More items
+
+more-menu-go-offline =
+    .label = Offline źěłaś
+    .accesskey = O

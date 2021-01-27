@@ -10,6 +10,7 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <gdk/gdk.h>
+#include "mozilla/XREAppData.h"
 #include "nsAppShell.h"
 #include "nsWindow.h"
 #include "mozilla/Logging.h"

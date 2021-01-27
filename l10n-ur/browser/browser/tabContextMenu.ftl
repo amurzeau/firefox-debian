@@ -47,6 +47,9 @@ reopen-in-container =
 move-to-new-window =
     .label = نئے دریچے میں بڑھائیں
     .accesskey = W
+tab-context-close-multiple-tabs =
+    .label = تمام ٹیب بند کریں
+    .accesskey = M
 
 ## Variables:
 ##  $tabCount (Number): the number of tabs that are affected by the action.
@@ -62,4 +65,20 @@ move-tabs =
     .accesskey = v
 move-tab =
     .label = ٹیب منتقل کریں
+    .accesskey = v
+tab-context-close-tabs =
+    .label =
+        { $tabCount ->
+            [1] ٹیب بند کریں
+            [one] ٹیب بند کریں
+           *[other] ٹیبز بند کریں
+        }
+    .accesskey = C
+tab-context-move-tabs =
+    .label =
+        { $tabCount ->
+            [1] ٹیب منتقل کریں
+            [one] ٹیب منتقل کریں
+           *[other] ٹیب منتقل کریں
+        }
     .accesskey = v

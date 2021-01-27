@@ -272,6 +272,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = Zatvori
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -339,3 +342,70 @@ fullscreen-exit-mac-button = Izađite iz cijelog ekrana (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ima kontrolu nad vašim pointerom. Pritisnite Esc da povratite kontrolu.
 pointerlock-warning-no-domain = Ovaj dokument ima kontrolu nad vašim pointerom. Pritisnite Esc da povratite kontrolu.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Prikaži sve zabilješke
+bookmarks-recent-bookmarks =
+    .value = Nedavno zabilježeno
+bookmarks-toolbar-chevron =
+    .tooltiptext = Prikaži više zabilješki
+bookmarks-sidebar-content =
+    .aria-label = Zabilješke
+bookmarks-menu-button =
+    .label = Meni sa zabilješkama
+bookmarks-other-bookmarks-menu =
+    .label = Druge zabilješke
+bookmarks-mobile-bookmarks-menu =
+    .label = Mobilne zabilješke
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Sakrij bočnu traku sa zabilješkama
+           *[other] Prikaži traku sa zabilješkama
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Sakrij traku sa zabilješkama
+           *[other] Prikaži traku sa zabilješkama
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Ukloni meni Zabilješke iz alatne trake
+           *[other] Dodaj meni Zabilješke u alatnu traku
+        }
+bookmarks-search =
+    .label = Pretraži zabilješke
+bookmarks-tools =
+    .label = Alati za zabilježavanje
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Traka sa zabilješkama
+    .accesskey = b
+    .aria-label = Zabilješke
+bookmarks-toolbar-menu =
+    .label = Traka sa zabilješkama
+bookmarks-toolbar-placeholder =
+    .title = Stavke trake sa zabilješkama
+bookmarks-toolbar-placeholder-button =
+    .label = Stavke trake sa zabilješkama
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Zabilješke
+library-bookmarks-bookmark-this-page =
+    .label = Zabilježi ovu stranicu
+library-bookmarks-bookmark-edit =
+    .label = Uredi ovu Zabilješku
+
+## More items
+
+more-menu-go-offline =
+    .label = Radi offline
+    .accesskey = R

@@ -313,6 +313,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = Dùin
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -384,3 +387,63 @@ fullscreen-exit-mac-button = Fàg an làn-sgrìn (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = Tha smachd aig <span data-l10n-name="domain">{ $domain }</span> air an tomhaire agad. Brùth Esc airson an smachd a thilleadh dhut fhèin.
 pointerlock-warning-no-domain = Tha smachd aig an sgrìobhainn seo air an tomhaire agad. Brùth Esc airson an smachd a thilleadh dhut fhèin.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Seall a h-uile comharra-lìn
+bookmarks-recent-bookmarks =
+    .value = Comharran-lìn a rinn thu o chionn goirid
+bookmarks-toolbar-chevron =
+    .tooltiptext = Tuilleadh chomharran-lìn
+bookmarks-sidebar-content =
+    .aria-label = Comharran-lìn
+bookmarks-menu-button =
+    .label = Clàr-taice nan comharra-lìn
+bookmarks-other-bookmarks-menu =
+    .label = Comharran-lìn eile
+bookmarks-mobile-bookmarks-menu =
+    .label = Comharran-lìn mobile
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Falaich bàr-taoibh nan comharra-lìn
+           *[other] Seall bàr-taoibh nan comharra-lìn
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Falaich bàr-inneal nan comharra-lìn
+           *[other] Seall bàr nan comharra-lìn
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Thoir air falbh clàr-taice nan comharra-lìn on bhàr-inneal
+           *[other] Cuir clàr-taice nan comharra-lìn ris a’ bhàr-inneal
+        }
+bookmarks-search =
+    .label = Lorg sna comharran-lìn
+bookmarks-tools =
+    .label = Innealan nan comharra-lìn
+bookmarks-toolbar-menu =
+    .label = Bàr nan comharra-lìn
+bookmarks-toolbar-placeholder =
+    .title = Rudan air bàr nan comharra-lìn
+bookmarks-toolbar-placeholder-button =
+    .label = Rudan air bàr nan comharra-lìn
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Comharran-lìn
+library-bookmarks-bookmark-this-page =
+    .label = Cruthaich comharra-lìn dhan duilleag seo
+library-bookmarks-bookmark-edit =
+    .label = Deasaich an comharra-lìn seo
+
+## More items
+
+more-menu-go-offline =
+    .label = Obraich far loidhne
+    .accesskey = O

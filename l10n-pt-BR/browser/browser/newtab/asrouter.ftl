@@ -93,7 +93,7 @@ cfr-whatsnew-button =
     .label = Novidades
     .tooltiptext = Novidades
 cfr-whatsnew-panel-header = Novidades
-cfr-whatsnew-release-notes-link-text = Ler as notas da versão
+cfr-whatsnew-release-notes-link-text = Ler as notas de atualização
 cfr-whatsnew-fx70-title = O { -brand-short-name } agora luta mais intensamente por sua privacidade
 cfr-whatsnew-fx70-body =
     A última atualização aprimora o recurso de proteção contra rastreamento
@@ -122,6 +122,9 @@ cfr-whatsnew-lockwise-take-link-text = Instalar o aplicativo
 
 cfr-whatsnew-searchbar-title = Digite menos, encontre mais usando a barra de endereços
 cfr-whatsnew-searchbar-body-topsites = Agora basta selecionar a barra de endereços e aparecem links para seus sites preferidos.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Ícone da lente de aumento
 
 ## Picture-in-Picture
@@ -191,9 +194,9 @@ cfr-doorhanger-socialtracking-dont-show-again = Não mostrar mais mensagens como
 cfr-doorhanger-socialtracking-heading = O { -brand-short-name } impediu que uma rede social rastreasse você aqui
 cfr-doorhanger-socialtracking-description = Sua privacidade é importante. Agora o { -brand-short-name } bloqueia rastreadores comuns de mídias sociais, limitando quantos dados conseguem coletar sobre o que você faz online.
 cfr-doorhanger-fingerprinters-heading = O { -brand-short-name } bloqueou um fingerprinter nesta página
-cfr-doorhanger-fingerprinters-description = Sua privacidade é importante. Agora o { -brand-short-name } bloqueia fingerprinters, que coletam elementos de informação unicamente identificáveis sobre seu dispositivo para rastrear você.
+cfr-doorhanger-fingerprinters-description = Sua privacidade é importante. Agora o { -brand-short-name } bloqueia fingerprinters (rastreadores de identidade digital), que tentam coletar elementos de informação unicamente identificáveis sobre seu dispositivo para rastrear você.
 cfr-doorhanger-cryptominers-heading = O { -brand-short-name } bloqueou um criptominerador nesta página
-cfr-doorhanger-cryptominers-description = Sua privacidade é importante. Agora o { -brand-short-name } bloqueia criptomineradores, que usam o poder computacional do seu sistema para minerar moedas digitais.
+cfr-doorhanger-cryptominers-description = Sua privacidade é importante. Agora o { -brand-short-name } bloqueia criptomineradores, que tentam usar o poder computacional do seu sistema para minerar moedas digitais.
 
 ## Enhanced Tracking Protection Milestones
 
@@ -269,10 +272,20 @@ cfr-whatsnew-clear-cookies-image-alt = Ilustração de cookie bloqueado
 ## What's new: Media controls message
 
 cfr-whatsnew-media-keys-header = Mais controles de mídia
-cfr-whatsnew-media-keys-body = Reproduza e pause áudio ou vídeo diretamente do teclado ou do fone de ouvido, facilitando controlar mídias a partir de outra aba, outro programa ou mesmo quando o computador estiver bloqueado. Você também pode mudar de faixa usando as teclas de avançar e voltar.
+cfr-whatsnew-media-keys-body = Reproduza e interrompa áudio ou vídeo, usando diretamente o teclado ou fone de ouvido, o que facilita controlar mídias a partir de outra aba, outro programa ou mesmo quando o computador estiver bloqueado. Você também pode mudar de faixa usando as teclas de avançar e voltar.
 cfr-whatsnew-media-keys-button = Saiba como
 
 ## What's new: Search shortcuts
 
 cfr-whatsnew-search-shortcuts-header = Atalhos de pesquisa na barra de endereços
-cfr-whatsnew-search-shortcuts-body = Agora, quando você digita um mecanismo de pesquisa ou site específico na barra de endereços, um atalho azul aparece nas sugestões de pesquisa abaixo. Selecione esse atalho para concluir a pesquisa diretamente na barra de endereços.
+cfr-whatsnew-search-shortcuts-body = Agora, quando você digita um mecanismo de pesquisa ou site específico na barra de endereços, um atalho azul aparece nas sugestões de pesquisa. Selecione esse atalho para concluir a pesquisa diretamente na barra de endereços.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Proteção contra supercookies maliciosos
+cfr-whatsnew-supercookies-body = Alguns sites podem anexar secretamente ao seu navegador um “supercookie” que pode te seguir pela web, mesmo após você limpar seus cookies. O { -brand-short-name } agora oferece forte proteção contra supercookies, assim eles não podem ser usados para rastrear suas atividades online de um site para outro.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = Melhora nos favoritos
+cfr-whatsnew-bookmarking-body = É mais fácil acompanhar seus sites preferidos. Agora o { -brand-short-name } memoriza seu local preferido de salvar favoritos, mostra por padrão a barra de ferramentas de favoritos em novas abas e oferece acesso fácil ao restante de seus favoritos por meio de uma pasta na barra de ferramentas.

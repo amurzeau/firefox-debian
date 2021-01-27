@@ -500,6 +500,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = A leggyakrabban látogatott oldalak
 home-prefs-topsites-by-option-sponsored =
     .label = Szponzorált legjobb oldalak
+home-prefs-shortcuts-header =
+    .label = Gyorskeresők
+home-prefs-shortcuts-description = Mentett vagy felkeresett webhelyek
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Szponzorált gyorskeresők
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -507,6 +512,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = A(z) { $provider } ajánlásával
 home-prefs-recommended-by-description-update = Kivételes tartalom szerte az internetről, a { $provider } válogatásában
+home-prefs-recommended-by-description-new = Kivételes tartalmak a { $provider } válogatásában, amely a { -brand-product-name } család része
 
 ##
 
@@ -515,8 +521,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Szponzorált történetek
 home-prefs-highlights-header =
     .label = Kiemelések
-home-prefs-recent-activity-header =
-    .label = Legutóbbi tevékenység
 home-prefs-highlights-description = Válogatás azon oldalakból, amelyeket elmentett vagy felkeresett
 home-prefs-highlights-option-visited-pages =
     .label = Látogatott oldalak
@@ -526,6 +530,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Legutóbbi letöltés
 home-prefs-highlights-option-saved-to-pocket =
     .label = { -pocket-brand-name }be mentett lapok
+home-prefs-recent-activity-header =
+    .label = Legutóbbi tevékenység
+home-prefs-recent-activity-description = Válogatás a legutóbbi webhelyekből és tartalmakból
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -533,6 +540,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Töredékek
 home-prefs-snippets-description = Hírek a { -vendor-short-name } és a { -brand-product-name } felől
+home-prefs-snippets-description-new = Tippek és hírek a { -vendor-short-name } és a { -brand-product-name } felől
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -924,8 +932,15 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Nyitott lapok
     .accesskey = N
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Gyorskeresők
+    .accesskey = G
 addressbar-locbar-topsites-option =
     .label = Kedvenc oldalak
+    .accesskey = K
+addressbar-locbar-engines-option =
+    .label = Keresőszolgáltatások
     .accesskey = K
 addressbar-suggestions-settings = Keresőszolgáltatás-javaslatok beállításainak módosítása
 

@@ -8,6 +8,9 @@
 newtab-page-title = Nov tab
 newtab-settings-button =
     .title = Persunalisar tia pagina per novs tabs
+newtab-personalize-button-label = Persunalisar
+    .title = Persunalisar novs tabs
+    .aria-label = Persunalisar novs tabs
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Tschertgar en il Web
     .title = Tschertgar en il Web
     .aria-label = Tschertgar en il Web
+newtab-search-box-text = Tschertgar en il web
+newtab-search-box-input =
+    .placeholder = Tschertgar en il web
+    .aria-label = Tschertgar en il web
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Agiuntar maschina da tschertgar
 newtab-topsites-add-topsites-header = Nova pagina principala
+newtab-topsites-add-shortcut-header = Nova scursanida
 newtab-topsites-edit-topsites-header = Modifitgar la pagina principala
+newtab-topsites-edit-shortcut-header = Modifitgar la scursanida
 newtab-topsites-title-label = Titel
 newtab-topsites-title-input =
     .placeholder = Endatar in titel
@@ -207,3 +216,27 @@ newtab-pocket-cta-text = Memorisescha ils artitgels che ta plaschan en { -pocket
 
 newtab-error-fallback-info = Oha, igl è succedì in sbagl cun chargiar il cuntegn.
 newtab-error-fallback-refresh-link = Rechargia la pagina per reempruvar.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Scursanidas
+newtab-custom-shortcuts-subtitle = Websites che ti memoriseschas u visitas
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } lingia
+       *[other] { $num } lingias
+    }
+newtab-custom-sponsored-sites = Scursanidas sponsuradas
+newtab-custom-pocket-title = Recumandà da { -pocket-brand-name }
+newtab-custom-pocket-subtitle = Cuntegn excepziunal, tschernì da { -pocket-brand-name }, in product da { -brand-product-name }
+newtab-custom-pocket-sponsored = Artitgels sponsurads
+newtab-custom-recent-title = Activitad recenta
+newtab-custom-recent-subtitle = Ina selecziun da websites e cuntegn visità dacurt
+newtab-custom-close-button = Serrar
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Zinslas
+newtab-custom-snippets-subtitle = Tips e novitads da { -vendor-short-name } e { -brand-product-name }
+newtab-custom-settings = Administrar ulteriurs parameters

@@ -294,6 +294,7 @@ identity-https-only-info-no-upgrade = ไม่สามารถอัปเก
 identity-permissions =
     .value = สิทธิอนุญาต
 identity-permissions-storage-access-header = คุกกี้ข้ามไซต์
+identity-permissions-storage-access-hint = บุคคลเหล่านี้สามารถใช้คุกกี้ข้ามไซต์และข้อมูลไซต์ในขณะที่คุณอยู่บนไซต์นี้ได้
 identity-permissions-reload-hint = คุณอาจจำเป็นต้องโหลดหน้าใหม่เพื่อให้การเปลี่ยนแปลงมีผล
 identity-permissions-empty = คุณไม่ได้อนุญาตไซต์นี้ด้วยสิทธิอนุญาตพิเศษใด ๆ
 identity-clear-site-data =
@@ -342,6 +343,7 @@ browser-window-close-button =
 browser-import-button2 =
     .label = นำเข้าที่คั่นหน้า…
     .tooltiptext = นำเข้าที่คั่นหน้าจากเบราว์เซอร์อื่นมายัง { -brand-short-name }
+bookmarks-toolbar-empty-message = วางที่คั่นหน้าของคุณไว้ที่นี่บนแถบเครื่องมือที่คั่นหน้าเพื่อให้เข้าถึงได้อย่างรวดเร็ว <a data-l10n-name="manage-bookmarks">จัดการที่คั่นหน้า…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -493,3 +495,71 @@ fullscreen-exit-mac-button = ออกจากภาพเต็มหน้า
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ได้ควบคุมตัวชี้ของคุณ กด Esc เพื่อดึงการควบคุมคืน
 pointerlock-warning-no-domain = เอกสารชิ้นนี้ได้ควบคุมตัวชี้ของคุณ กด Esc เพื่อดึงการควบคุมคืน
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = แสดงที่คั่นหน้าทั้งหมด
+bookmarks-recent-bookmarks =
+    .value = ที่คั่นหน้าที่เพิ่มล่าสุด
+bookmarks-toolbar-chevron =
+    .tooltiptext = แสดงที่คั่นหน้าเพิ่มเติม
+bookmarks-sidebar-content =
+    .aria-label = ที่คั่นหน้า
+bookmarks-menu-button =
+    .label = เมนูที่คั่นหน้า
+bookmarks-other-bookmarks-menu =
+    .label = ที่คั่นหน้าอื่น ๆ
+bookmarks-mobile-bookmarks-menu =
+    .label = ที่คั่นหน้าในมือถือ
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] ซ่อนแถบข้างที่คั่นหน้า
+           *[other] ดูแถบข้างที่คั่นหน้า
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] ซ่อนแถบเครื่องมือที่คั่นหน้า
+           *[other] ดูแถบเครื่องมือที่คั่นหน้า
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] เอาเมนูที่คั่นหน้าออกจากแถบเครื่องมือ
+           *[other] เพิ่มเมนูที่คั่นหน้าไปยังแถบเครื่องมือ
+        }
+bookmarks-search =
+    .label = ค้นหาที่คั่นหน้า
+bookmarks-tools =
+    .label = เครื่องมือที่คั่นหน้า
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = แถบเครื่องมือที่คั่นหน้า
+    .accesskey = บ
+    .aria-label = ที่คั่นหน้า
+bookmarks-toolbar-menu =
+    .label = แถบเครื่องมือที่คั่นหน้า
+bookmarks-toolbar-placeholder =
+    .title = รายการแถบเครื่องมือที่คั่นหน้า
+bookmarks-toolbar-placeholder-button =
+    .label = รายการแถบเครื่องมือที่คั่นหน้า
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = ที่คั่นหน้า
+library-bookmarks-bookmark-this-page =
+    .label = เพิ่มที่คั่นหน้าสำหรับหน้านี้
+library-bookmarks-bookmark-edit =
+    .label = แก้ไขที่คั่นหน้านี้
+library-recent-activity-label = กิจกรรมล่าสุด
+
+## More items
+
+more-menu-go-offline =
+    .label = ทำงานออฟไลน์
+    .accesskey = ฟ

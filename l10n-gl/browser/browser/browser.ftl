@@ -301,6 +301,8 @@ identity-https-only-info-turn-off2 = Se a páxina semella estar estragada, probe
 identity-https-only-info-no-upgrade = Non foi posíbel anovar a conexión desde HTTP.
 identity-permissions =
     .value = Permisos
+identity-permissions-storage-access-header = Rastrexadores entre sitios
+identity-permissions-storage-access-hint = Estas partes poden usar cookies e datos de sitios entre sitios mentres estea neste sitio.
 identity-permissions-reload-hint = Pode ser preciso recargar a páxina para que os cambios teñan efecto.
 identity-permissions-empty = Non lle concedeu ningún permiso especial a este sitio.
 identity-clear-site-data =
@@ -346,9 +348,10 @@ browser-window-close-button =
 
 ## Bookmarks toolbar items
 
-browser-import-button =
+browser-import-button2 =
     .label = Importar marcadores…
-    .tooltiptext = Copiar marcadores desde outro navegador ao { -brand-short-name }.
+    .tooltiptext = Importar marcadores desde outro navegador para { -brand-short-name }.
+bookmarks-toolbar-empty-message = Para un acceso rápido, coloque os seus marcadores aquí na barra de ferramentas de marcadores. <a data-l10n-name="manage-bookmarks">Xestionar marcadores.. </a>
 
 ## WebRTC Pop-up notifications
 
@@ -500,3 +503,70 @@ fullscreen-exit-mac-button = Saír de pantalla completa (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ten o control do punteiro. Prema Esc para recuperar o control.
 pointerlock-warning-no-domain = Este documento ten o control do punteiro. Prema Esc para recuperar o control.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Amosar todos os marcadores
+bookmarks-recent-bookmarks =
+    .value = Marcadores máis recentes
+bookmarks-toolbar-chevron =
+    .tooltiptext = Amosar máis marcadores
+bookmarks-sidebar-content =
+    .aria-label = Marcadores
+bookmarks-menu-button =
+    .label = Menú dos marcadores
+bookmarks-other-bookmarks-menu =
+    .label = Outros marcadores
+bookmarks-mobile-bookmarks-menu =
+    .label = Marcadores do móbil
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Agochar o panel dos marcadores
+           *[other] Ver o panel de marcadores
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Agochar a barra dos marcadores
+           *[other] Ver a barra de marcadores
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Retirar o menú dos marcadores da barra de ferramentas
+           *[other] Engadir o menú dos marcadores á barra de ferramentas
+        }
+bookmarks-search =
+    .label = Buscar nos marcadores
+bookmarks-tools =
+    .label = Ferramentas dos marcadores
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = Barra de marcadores
+    .accesskey = m
+    .aria-label = Marcadores
+bookmarks-toolbar-menu =
+    .label = Barra de marcadores
+bookmarks-toolbar-placeholder =
+    .title = Elementos da barra de marcadores
+bookmarks-toolbar-placeholder-button =
+    .label = Elementos da barra de marcadores
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Marcadores
+library-bookmarks-bookmark-this-page =
+    .label = Marcar esta páxina
+library-bookmarks-bookmark-edit =
+    .label = Editar este marcador
+
+## More items
+
+more-menu-go-offline =
+    .label = Traballar sen conexión
+    .accesskey = T

@@ -3,24 +3,24 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <!ENTITY toField4.label "Προς">
-<!ENTITY fromField4.label "Από ">
-<!ENTITY senderField4.label "Αποστολέας ">
+<!ENTITY fromField4.label "Από">
+<!ENTITY senderField4.label "Αποστολέας">
 <!ENTITY author.label "Συντάκτης">
-<!ENTITY organizationField4.label "Οργανισμός ">
+<!ENTITY organizationField4.label "Εταιρεία">
 <!ENTITY replyToField4.label "Απάντηση σε">
 
-<!ENTITY subjectField4.label "Θέμα ">
+<!ENTITY subjectField4.label "Θέμα">
 <!ENTITY ccField4.label "Κοιν ">
 <!ENTITY bccField4.label "Κρ.κοιν ">
 <!ENTITY newsgroupsField4.label "Ομάδες συζήτησης">
 <!ENTITY followupToField4.label "Σε συνέχεια του">
-<!ENTITY tagsHdr4.label "Ετικέτες ">
-<!ENTITY dateField4.label "Ημερομηνία ">
+<!ENTITY tagsHdr4.label "Ετικέτες">
+<!ENTITY dateField4.label "Ημερομηνία">
 <!ENTITY userAgentField4.label "User agent ">
-<!ENTITY referencesField4.label "Παραπομπές ">
+<!ENTITY referencesField4.label "Αναφορές">
 <!ENTITY messageIdField4.label "ID μηνύματος ">
 <!ENTITY inReplyToField4.label "Σε απάντηση στο">
-<!ENTITY originalWebsite4.label "Ιστοσελίδα ">
+<!ENTITY originalWebsite4.label "Ιστοσελίδα">
 
 <!ENTITY hdrArchiveButton1.label "Αρχειοθέτηση">
 <!ENTITY hdrArchiveButton1.tooltip "Αρχειοθέτηση μηνύματος">
@@ -50,7 +50,7 @@
 <!ENTITY hdrViewToolbarAlwaysReplySender.accesskey "β">
 
 <!ENTITY otherActionsButton2.label "Περισσότερα">
-<!ENTITY otherActionsButton.tooltip "Άλλες ενέργειες">
+<!ENTITY otherActionsButton.tooltip "Περισσότερες ενέργειες">
 <!ENTITY otherActionsOpenConversation1.label "Άνοιγμα σε λειτουργία συζήτησης">
 <!ENTITY otherActionsOpenConversation1.accesskey "ζ">
 <!ENTITY otherActionsOpenInNewWindow1.label "Άνοιγμα σε νέο παράθυρο">

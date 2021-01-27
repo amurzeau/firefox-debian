@@ -21,7 +21,6 @@
 <!ENTITY preferencesCmd2.accesskey "ο">
 <!ENTITY preferencesCmdUnix.label       "Προτιμήσεις">
 <!ENTITY preferencesCmdUnix.accesskey     "ρ">
-
 <!ENTITY customizeCmd.label "Προσαρμογή">
 <!ENTITY customizeCmd.accesskey "σ">
 
@@ -40,8 +39,8 @@
 <!ENTITY quitApplicationCmd.key    "Q">
 <!ENTITY quitApplicationCmd.accesskey  "ξ">
 
-<!ENTITY quitApplicationCmdUnix.label  "Κλείσιμο">
-<!ENTITY quitApplicationCmdUnix.accesskey  "Κ">
+<!ENTITY quitApplicationCmdUnix.label  "Έξοδος">
+<!ENTITY quitApplicationCmdUnix.accesskey  "Έ">
 
 <!ENTITY quitApplicationCmdMac.label  "Κλείσιμο &brandShortName;">
 <!ENTITY quitApplicationCmdMac.accesskey  "λ">

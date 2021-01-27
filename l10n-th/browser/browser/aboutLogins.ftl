@@ -168,7 +168,11 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = ลบการเข้าสู่ระบบนี้?
 confirm-delete-dialog-message = การกระทำนี้ไม่สามารถเลิกทำได้
 about-logins-confirm-remove-dialog-confirm-button = ลบ
-about-logins-confirm-remove-all-dialog-confirm-button = เอาทั้งหมดออก
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] เอาออก
+       *[other] เอาออกทั้งหมด
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] ใช่ ลบการเข้าสู่ระบบนี้
@@ -178,9 +182,24 @@ about-logins-confirm-remove-all-dialog-title =
     { $count ->
        *[other] ลบการเข้าสู่ระบบทั้งหมด { $count } รายการหรือไม่?
     }
+about-logins-confirm-remove-all-dialog-message =
+    { $count ->
+        [1] การดำเนินการนี้จะเอาข้อมูลการเข้าสู่ระบบที่คุณบันทึกลงใน { -brand-short-name } และการแจ้งเตือนเกี่ยวกับการละเมิดใด ๆ ที่ปรากฏที่นี่ออก คุณจะไม่สามารถยกเลิกการดำเนินการนี้ได้
+       *[other] การดำเนินการนี้จะเอาข้อมูลการเข้าสู่ระบบที่คุณบันทึกลงใน { -brand-short-name } และการแจ้งเตือนเกี่ยวกับการละเมิดใด ๆ ที่ปรากฏที่นี่ออก คุณจะไม่สามารถยกเลิกการดำเนินการนี้ได้
+    }
+about-logins-confirm-remove-all-sync-dialog-title =
+    { $count ->
+       *[other] ต้องการเอาข้อมูลการเข้าสู่ระบบ { $count } รายการออกจากอุปกรณ์ทั้งหมดหรือไม่?
+    }
+about-logins-confirm-remove-all-sync-dialog-message =
+    { $count ->
+        [1] การดำเนินการนี้จะเอาข้อมูลการเข้าสู่ระบบที่คุณบันทึกลงใน { -brand-short-name } บนอุปกรณ์ทั้งหมดที่ซิงค์กับ{ -fxaccount-brand-name } ของคุณ การดำเนินการนี้จะเอาการแจ้งเตือนเกี่ยวกับการละเมิดที่ปรากฏที่นี่ออกด้วย คุณจะไม่สามารถยกเลิกการดำเนินการนี้ได้
+       *[other] การดำเนินการนี้จะเอาข้อมูลการเข้าสู่ระบบที่คุณบันทึกลงใน { -brand-short-name } บนอุปกรณ์ทั้งหมดที่ซิงค์กับ{ -fxaccount-brand-name } ของคุณ การดำเนินการนี้จะเอาการแจ้งเตือนเกี่ยวกับการละเมิดที่ปรากฏที่นี่ออกด้วย คุณจะไม่สามารถยกเลิกการดำเนินการนี้ได้
+    }
 about-logins-confirm-export-dialog-title = ส่งออกข้อมูลการเข้าสู่ระบบและรหัสผ่าน
 about-logins-confirm-export-dialog-message = รหัสผ่านของคุณจะถูกบันทึกเป็นข้อความที่อ่านได้ (เช่น BadP@ssw0rd) ดังนั้นใครก็ตามที่สามารถเปิดไฟล์ที่ส่งออกได้จะสามารถดูได้
 about-logins-confirm-export-dialog-confirm-button = ส่งออก…
+about-logins-alert-import-title = การนำเข้าเสร็จสมบูรณ์
 confirm-discard-changes-dialog-title = ละทิ้งการเปลี่ยนแปลงที่ยังไม่ได้บันทึก?
 confirm-discard-changes-dialog-message = การเปลี่ยนแปลงที่ยังไม่ได้บันทึกทั้งหมดจะสูญหาย
 confirm-discard-changes-dialog-confirm-button = ละทิ้ง
@@ -242,3 +261,10 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] เอกสาร CSV
        *[other] ไฟล์ CSV
     }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = การนำเข้าเสร็จสมบูรณ์
+about-logins-import-dialog-done = เสร็จสิ้น

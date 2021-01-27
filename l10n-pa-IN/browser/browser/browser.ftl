@@ -511,3 +511,71 @@ fullscreen-exit-mac-button = ਪੂਰੀ ਸਕਰੀਨ ਤੋਂ ਬਾਹਰ
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ਤੁਹਾਡੇ ਪੁਆਇੰਟਰ ਨੂੰ ਕੰਟੋਰਲ ਕਰਦਾ ਹੈ। ਕੰਟਰੋਲ ਵਾਪਸ ਲੈਣ ਲਈ Esc ਦਬਾਉ।
 pointerlock-warning-no-domain = ਇਹ ਦਸਤਾਵੇਜ਼ ਤੁਹਾਡੇ ਪੁਆਇੰਟਰ ਨੂੰ ਕੰਟੋਰਲ ਕਰਦਾ ਹੈ। ਕੰਟਰੋਲ ਵਾਪਸ ਲੈਣ ਲਈ Esc ਦਬਾਉ।
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = ਸਭ ਬੁੱਕਮਾਰਕਾਂ ਨੂੰ ਵੇਖੋ
+bookmarks-recent-bookmarks =
+    .value = ਤਾਜ਼ਾ ਬੁੱਕਮਾਰਕ ਕੀਤੇ
+bookmarks-toolbar-chevron =
+    .tooltiptext = ਹੋਰ ਬੁੱਕਮਾਰਕਾਂ ਨੂੰ ਵੇਖੋ
+bookmarks-sidebar-content =
+    .aria-label = ਬੁੱਕਮਾਰਕ
+bookmarks-menu-button =
+    .label = ਬੁੱਕਮਾਰਕ ਮੇਨੂ
+bookmarks-other-bookmarks-menu =
+    .label = ਹੋਰ ਬੁੱਕਮਾਰਕ
+bookmarks-mobile-bookmarks-menu =
+    .label = ਮੋਬਾਈਲ ਬੁੱਕਮਾਰਕ
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] ਬੁੱਕਮਾਰਕ ਬਾਹੀ ਓਹਲੇ ਕਰੋ
+           *[other] ਬੁੱਕਮਾਰਕ ਬਾਹੀ ਵੇਖੋ
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] ਬੁੱਕਮਾਰਕ ਟੂਲਬਾਰ ਓਹਲੇ ਕਰੋ
+           *[other] ਬੁੱਕਮਾਰਕ ਟੂਲਬਾਰ ਵੇਖੋ
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] ਬੁੱਕਮਾਰਕ ਮੇਨੂ ਨੂੰ ਆਪਣੇ ਟੂਲਬਾਰ 'ਚੋਂ ਹਟਾਓ
+           *[other] ਬੁੱਕਮਾਰਕ ਮੇਨੂ ਨੂੰ ਆਪਣੇ ਟੂਲਬਾਰ 'ਚ ਜੋੜੋ
+        }
+bookmarks-search =
+    .label = ਬੁੱਕਮਾਰਕ ਲੱਭੋ
+bookmarks-tools =
+    .label = ਬੁੱਕਮਾਰਕ ਬਣਾਉਣ ਵਾਲਾ ਟੂਲ
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = ਬੁੱਕਮਾਰਕ ਟੂਲਬਾਰ
+    .accesskey = B
+    .aria-label = ਬੁੱਕਮਾਰਕ
+bookmarks-toolbar-menu =
+    .label = ਬੁੱਕਮਾਰਕ ਟੂਲਬਾਰ
+bookmarks-toolbar-placeholder =
+    .title = ਬੁੱਕਮਾਰਕ ਟੂਲਬਾਰ ਆਈਟਮਾਂ
+bookmarks-toolbar-placeholder-button =
+    .label = ਬੁੱਕਮਾਰਕ ਟੂਲਬਾਰ ਆਈਟਮਾਂ
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = ਬੁੱਕਮਾਰਕ
+library-bookmarks-bookmark-this-page =
+    .label = ਇਹ ਸਫ਼ੇ ਨੂੰ ਬੁੱਕਮਾਰਕ ਕਰੋ
+library-bookmarks-bookmark-edit =
+    .label = ਇਹ ਬੁੱਕਮਾਰਕ ਨੂੰ ਸੋਧੋ
+library-recent-activity-label = ਹਾਲੀਆ ਸਰਗਰਮੀ
+
+## More items
+
+more-menu-go-offline =
+    .label = ਆਫਲਾਈਨ ਕੰਮ ਕਰੋ
+    .accesskey = w

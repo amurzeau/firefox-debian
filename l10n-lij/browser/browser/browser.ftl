@@ -299,6 +299,9 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Særa
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -378,3 +381,63 @@ fullscreen-exit-mac-button = Sciòrti da sa tutto schermo (esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> o l'à o contròllo do teu pontatô. Sciacca ESC pe pigiâ torna o controllo.
 pointerlock-warning-no-domain = Sto documento o l'à o contròllo do teu pontatô. Sciacca ESC pe pigiâ torna o controllo.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = Fanni vedde tutti i segnalibbri
+bookmarks-recent-bookmarks =
+    .value = Segnalibbri reçenti
+bookmarks-toolbar-chevron =
+    .tooltiptext = Fanni vedde ciù segnalibbri
+bookmarks-sidebar-content =
+    .aria-label = Segnalibbri
+bookmarks-menu-button =
+    .label = Menû di segnalibbri
+bookmarks-other-bookmarks-menu =
+    .label = Atri segnalibbri
+bookmarks-mobile-bookmarks-menu =
+    .label = Segnalibbri mòbili
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Ascondi bara di segnalibbri
+           *[other] Veddi a bara de scianco segnalibbri
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] Ascondi bara di segnalibbri
+           *[other] Fanni vedde a bara di segnalibbri
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] Scancella menû di segnalibbri a-a bara di atressi
+           *[other] Azonzi o menû di segnalibbri a-a bara di atressi
+        }
+bookmarks-search =
+    .label = Çerca segnalibbri
+bookmarks-tools =
+    .label = Atressi di segnalibbri
+bookmarks-toolbar-menu =
+    .label = Bara di segnalibbri
+bookmarks-toolbar-placeholder =
+    .title = Ògetti da bara di segnalibbri
+bookmarks-toolbar-placeholder-button =
+    .label = Ògetti da bara di segnalibbri
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = Segnalibbri
+library-bookmarks-bookmark-this-page =
+    .label = Azonzi questa pagina a-i segnalibbri
+library-bookmarks-bookmark-edit =
+    .label = Cangia segnalibbro
+
+## More items
+
+more-menu-go-offline =
+    .label = Lòua feua linia
+    .accesskey = L

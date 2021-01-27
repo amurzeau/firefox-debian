@@ -8,6 +8,9 @@
 newtab-page-title = ਨਵੀਂ ਟੈਬ
 newtab-settings-button =
     .title = ਆਪਣੇ ਨਵੀਂ ਟੈਬ ਸਫ਼ੇ ਨੂੰ ਆਪਣੇ ਮੁਤਾਬਕ ਢਾਲੋ
+newtab-personalize-button-label = ਨਿੱਜੀ ਬਣਾਓ
+    .title = ਨਵੀਂ ਟੈਬ ਨਿੱਜੀ ਬਣਾਓ
+    .aria-label = ਨਵੀਂ ਟੈਬ ਨਿੱਜੀ ਬਣਾਓ
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = ਵੈੱਬ ਨੂੰ ਖੋਜੋ
     .title = ਵੈੱਬ ਨੂੰ ਖੋਜੋ
     .aria-label = ਵੈੱਬ ਨੂੰ ਖੋਜੋ
+newtab-search-box-text = ਵੈੱਬ ‘ਤੇ ਖੋਜੋ
+newtab-search-box-input =
+    .placeholder = ਵੈੱਬ ‘ਤੇ ਖੋਜੋ
+    .aria-label = ਵੈੱਬ ‘ਤੇ ਖੋਜੋ
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = ਖੋਜ ਇੰਜਣ ਜੋੜੋ
 newtab-topsites-add-topsites-header = ਨਵੀਂ ਉਪਰਲੀ ਸਾਈਟ
+newtab-topsites-add-shortcut-header = ਨਵਾਂ ਸ਼ਾਰਟਕੱਟ
 newtab-topsites-edit-topsites-header = ਉਪਰਲੀ ਸਾਈਟ ਸੋਧੋ
+newtab-topsites-edit-shortcut-header = ਸ਼ਾਰਟਕੱਟ ਨੂੰ ਸੋਧੋ
 newtab-topsites-title-label = ਸਿਰਲੇਖ
 newtab-topsites-title-input =
     .placeholder = ਸਿਰਲੇਖ ਦਿਓ
@@ -206,3 +215,27 @@ newtab-pocket-cta-text = { -pocket-brand-name } ਵਿਚ ਆਪਣੀਆਂ ਕ
 
 newtab-error-fallback-info = ਓਹ ਹੋ, ਇਸ ਸਮੱਗਰੀ ਨੂੰ ਲੋਡ ਕਰਨ ਵਿੱਚ ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ।
 newtab-error-fallback-refresh-link = ਮੁੜ ਕੋਸ਼ਿਸ਼ ਲਈ ਸਫ਼ੇ ਨੂੰ ਤਾਜ਼ਾ ਕਰੋ।
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = ਸ਼ਾਰਟਕੱਟ
+newtab-custom-shortcuts-subtitle = ਸਾਈਟਾਂ ਤੁਸੀਂ ਸੰਭਾਲੀਆਂ ਜਾਂ ਖੋਲ੍ਹੀਆਂ
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } ਕਤਾਰ
+       *[other] { $num } ਕਤਾਰ
+    }
+newtab-custom-sponsored-sites = ਸਪਾਂਸਰ ਕੀਤੇ ਸ਼ਾਰਟਕੱਟ
+newtab-custom-pocket-title = { -pocket-brand-name } ਵਲੋਂ ਸਿਫਾਰਸ਼ ਕੀਤੇ
+newtab-custom-pocket-subtitle = { -brand-product-name } ਦੇ ਹਿੱਸੇ ਵਜੋਂ { -pocket-brand-name } ਵਲੋਂ ਖਾਸ ਇਕੱਤਰ ਕੀਤੀ ਸਮੱਗਰੀ
+newtab-custom-pocket-sponsored = ਸਪਾਂਸਰ ਕੀਤੀਆਂ ਕਹਾਣੀਆਂ
+newtab-custom-recent-title = ਤਾਜ਼ਾ ਸਰਗਰਮੀ
+newtab-custom-recent-subtitle = ਤਾਜ਼ਾ ਸਾਈਟਾਂ ਤੇ ਸਮੱਗਰੀ ਦੀ ਚੋਣ
+newtab-custom-close-button = ਬੰਦ ਕਰੋ
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = ਛੋਟੇ ਟੋਟਕੇ
+newtab-custom-snippets-subtitle = { -vendor-short-name } ਅਤੇ { -brand-product-name } ਵਲੋਂ ਟੋਟਕੇ ਤੇ ਖ਼ਬਰਾਂ
+newtab-custom-settings = ਹੋਰ ਸੈਟਿੰਗਾਂ ਦਾ ਇੰਤਜ਼ਾਮ ਕਰੋ

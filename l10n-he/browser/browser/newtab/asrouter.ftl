@@ -118,6 +118,9 @@ cfr-whatsnew-lockwise-take-link-text = הורדת היישומון
 
 cfr-whatsnew-searchbar-title = להקליד פחות ולמצוא יותר עם שורת הכתובת
 cfr-whatsnew-searchbar-body-topsites = מעכשיו, אפשר ללחוץ על שורת הכתובת והיא תתרחב עם קישורים לאתרים המובילים שלך.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = סמל זכוכית מגדלת
 
 ## Picture-in-Picture
@@ -250,3 +253,13 @@ cfr-whatsnew-media-keys-button = מידע נוסף
 
 cfr-whatsnew-search-shortcuts-header = קיצורי דרך לחיפוש בשורת הכתובת
 cfr-whatsnew-search-shortcuts-body = כעת, בעת הקלדת מנוע חיפוש או אתר מסוים בשורת הכתובת, קיצור דרך כחול יופיע בהצעות החיפוש שמתחת. יש לבחור קיצור דרך זה כדי להשלים את החיפוש שלך ישירות משורת הכתובת.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = הגנה מפני עוגיות־על זדוניות
+cfr-whatsnew-supercookies-body = אתרים יכולים לצרף בסתר ״עוגיית־על״ לדפדפן שלך, שיכול לעקוב אחריך ברשת, גם לאחר ניקוי עוגיות. { -brand-short-name } כעת מספק הגנה חזקה מפני עוגיות־על כדי שלא יהיה ניתן להשתמש בהן כדי לעקוב אחר הפעילויות המקוונות שלך מאתר אחד למשנהו.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = שמירת סימניות טובה יותר
+cfr-whatsnew-bookmarking-body = קל יותר לעקוב אחר האתרים המועדפים עליך. { -brand-short-name } כעת זוכר את המיקום המועדף שלך לסימניות שמורות, מציג כברירת מחדל את סרגל הסימניות בלשוניות חדשות ומעניק לך גישה נוחה לשאר הסימניות שלך באמצעות תיקייה בסרגל הכלים.

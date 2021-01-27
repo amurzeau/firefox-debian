@@ -236,10 +236,15 @@ header-back-button =
 
 discopane-notice-learn-more = مزید سیکھیں
 privacy-policy = رازداری پالیسی
+# Refers to the author of an add-on, shown below the name of the add-on.
+# Variables:
+#   $author (string) - The name of the add-on developer.
+created-by-author = <a data-l10n-name="author">{ $author }</a> کی جانب سے
 # Shows the number of daily users of the add-on.
 # Variables:
 #   $dailyUsers (number) - The number of daily users.
 user-count = صارفین: { $dailyUsers }
+install-extension-button = { -brand-product-name } شامل کریں
 install-theme-button = تھیم انسٹال کریں
 # The label of the button that appears after installing an add-on. Upon click,
 # the detailed add-on view is opened, from where the add-on can be managed.
@@ -286,6 +291,7 @@ addon-detail-version-label = ورژن
 addon-detail-last-updated-label = آخری تازہ کاری
 addon-detail-homepage-label = ابتدائی صفحہ
 addon-detail-rating-label = شرح کاری
+install-postponed-button = ابھی تازہ کاری کریں
 
 ## Pending uninstall message bar
 
@@ -308,6 +314,7 @@ addon-detail-private-browsing-disallow = اجازت مت دیں
 available-updates-heading = دستیاب تازہ کاریاں
 recent-updates-heading = حالیہ تازہ کاریاں
 release-notes-loading = لوڈ ہو رہا ہے…
+addon-permissions-learnmore = اجازتوں کے بارے میں مزید سیکھیں
 recommended-extensions-heading = تجویز شدہ ایکسٹنشن
 recommended-themes-heading = تجویز شدہ تھیمز
 

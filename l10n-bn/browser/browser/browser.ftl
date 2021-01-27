@@ -310,6 +310,9 @@ browser-window-maximize-button =
 browser-window-close-button =
     .tooltiptext = বন্ধ
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -394,3 +397,70 @@ fullscreen-exit-mac-button = পূর্ণ পর্দা বন্ধ কর
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> আপনার পয়েন্টারের নিয়ন্ত্রণ রয়েছে। পুনরায় নিয়ন্ত্রণ নিতে Esc চাপুন।
 pointerlock-warning-no-domain = এই নথিতে পয়েন্টারের নিয়ন্ত্রণ রয়েছে। পুনরায় নিয়ন্ত্রণ নিতে Esc চাপুন।
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = সব বুকমার্ক প্রদর্শন
+bookmarks-recent-bookmarks =
+    .value = সম্প্রতি বুকমার্ক করা
+bookmarks-toolbar-chevron =
+    .tooltiptext = আরও বুকমার্ক প্রদর্শন
+bookmarks-sidebar-content =
+    .aria-label = বুকমার্ক
+bookmarks-menu-button =
+    .label = বুকমার্ক মেনু
+bookmarks-other-bookmarks-menu =
+    .label = অন্যান্য বুকমার্ক
+bookmarks-mobile-bookmarks-menu =
+    .label = মোবাইলের বুকমার্ক
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] বুকমার্ক সাইডবার লুকাও
+           *[other] বুকমার্ক সাইডবার প্রদর্শন
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] বুকমার্ক টুলবার লুকাও
+           *[other] বুকমার্ক টুলবার প্রদর্শন
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] টুলবার থেকে বুকমার্ক মেনু অপসারণ
+           *[other] টুলবারে বুকমার্ক মেনু যোগ করুন
+        }
+bookmarks-search =
+    .label = বুকমার্ক অনুসন্ধান
+bookmarks-tools =
+    .label = বুকমার্ক টুলসমূহ
+# The aria-label is a spoken label that should not include the word "toolbar" or
+# such, because screen readers already know that this container is a toolbar.
+# This avoids double-speaking.
+bookmarks-toolbar =
+    .toolbarname = বুকমার্ক টুলবার B
+    .accesskey = B
+    .aria-label = বুকমার্ক
+bookmarks-toolbar-menu =
+    .label = বুকমার্ক টুলবার B
+bookmarks-toolbar-placeholder =
+    .title = বুকমার্ক টুলবারের আইটেম
+bookmarks-toolbar-placeholder-button =
+    .label = বুকমার্ক টুলবারের আইটেম
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = বুকমার্ক
+library-bookmarks-bookmark-this-page =
+    .label = এই পাতা বুকমার্ক করুন
+library-bookmarks-bookmark-edit =
+    .label = বুকমার্ক সম্পাদনা
+
+## More items
+
+more-menu-go-offline =
+    .label = অফলাইন অবস্থায় কাজ k
+    .accesskey = k

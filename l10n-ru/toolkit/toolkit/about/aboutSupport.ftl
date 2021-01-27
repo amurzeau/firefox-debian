@@ -64,7 +64,7 @@ app-basics-os = ОС
 app-basics-rosetta = Бинарная трансляция Rosetta
 app-basics-memory-use = Использование памяти
 app-basics-performance = Производительность
-app-basics-service-workers = Зарегистрированные Service Workers
+app-basics-service-workers = Зарегистрированные Service Worker'ы
 app-basics-profiles = Профили
 app-basics-launcher-process-status = Запускающий процесс
 app-basics-multi-process-support = Многопроцессные окна
@@ -185,6 +185,32 @@ remote-debugging-url = URL
 
 ##
 
+support-third-party-modules-title = Сторонние модули
+support-third-party-modules-module = Файл модуля
+support-third-party-modules-version = Версия файла
+support-third-party-modules-vendor = Информация производителя
+support-third-party-modules-occurrence = Вхождения
+support-third-party-modules-process = Тип и идентификатор процесса
+support-third-party-modules-thread = Поток
+support-third-party-modules-base = Адрес базовой загрузки образа
+support-third-party-modules-uptime = Время работы процесса (мс)
+support-third-party-modules-duration = Продолжительность загрузки (мс)
+support-third-party-modules-empty = Сторонние модули не загружались.
+support-third-party-modules-no-value = (Нет значения)
+support-third-party-modules-button-open =
+    .title = Открыть расположение файла…
+support-third-party-modules-expand =
+    .title = Показать подробную информацию
+support-third-party-modules-collapse =
+    .title = Свернуть подробную информацию
+support-third-party-modules-unsigned-icon =
+    .title = Этот модуль не подписан
+support-third-party-modules-folder-icon =
+    .title = Открыть расположение файла…
+support-third-party-modules-down-icon =
+    .title = Показать подробную информацию
+support-third-party-modules-up-icon =
+    .title = Свернуть подробную информацию
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -282,7 +308,7 @@ blocklisted-bug = Заблокировано из-за известных про
 bug-link = проблема { $bugNumber }
 # Variables
 #   $bugNumber (string) - Bug number on Bugzilla
-support-blocklisted-bug = Занесено в чёрный список из-за известных проблем: <a data-l10n-name="bug-link">bug { $bugNumber }</a>
+support-blocklisted-bug = Занесено в чёрный список из-за известных проблем: <a data-l10n-name="bug-link">баг { $bugNumber }</a>
 # Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Заблокировано; код ошибки { $failureCode }

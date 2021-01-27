@@ -8,6 +8,9 @@
 newtab-page-title = Ny fane
 newtab-settings-button =
     .title = Tilpass sida for Ny fane
+newtab-personalize-button-label = Tilpass
+    .title = Tilpass ny fane-side
+    .aria-label = Tilpass ny fane-side
 
 ## Search box component.
 
@@ -170,6 +173,7 @@ newtab-section-expand-section-label =
 
 newtab-section-header-topsites = Mest besøkte nettstadar
 newtab-section-header-highlights = Høgdepunkt
+newtab-section-header-recent-activity = Nyleg aktivitet
 # Variables:
 #  $provider (String): Name of the corresponding content provider.
 newtab-section-header-pocket = Tilrådd av { $provider }
@@ -205,3 +209,22 @@ newtab-pocket-cta-text = Lagre artiklane du synest er interessante i { -pocket-b
 
 newtab-error-fallback-info = Ops, noko gjekk gale då innhaldet skulle lastast inn.
 newtab-error-fallback-refresh-link = Oppdater sida for å prøve på nytt.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Snarvegar
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } rad
+       *[other] { $num } rader
+    }
+newtab-custom-sponsored-sites = Sponsa snarvegar
+newtab-custom-pocket-title = Tilrådd av { -pocket-brand-name }
+newtab-custom-pocket-sponsored = Sponsa historier
+newtab-custom-recent-title = Nyleg aktivitet
+newtab-custom-close-button = Lat att
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Snuttar

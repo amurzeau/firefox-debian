@@ -8,6 +8,9 @@
 newtab-page-title = Nueva pestaña
 newtab-settings-button =
     .title = Personaliza tu página de Nueva pestaña
+newtab-personalize-button-label = Personalizar
+    .title = Personalizar nueva pestaña
+    .aria-label = Personalizar nueva pestaña
 
 ## Search box component.
 
@@ -20,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Buscar en la Web
     .title = Buscar en la Web
     .aria-label = Buscar en la Web
+newtab-search-box-text = Buscar en la web
+newtab-search-box-input =
+    .placeholder = Buscar en la web
+    .aria-label = Buscar en la web
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Añadir motor de búsqueda
 newtab-topsites-add-topsites-header = Nuevo sitio frecuente
+newtab-topsites-add-shortcut-header = Nuevo atajo
 newtab-topsites-edit-topsites-header = Editar sitio frecuente
+newtab-topsites-edit-shortcut-header = Editar atajo
 newtab-topsites-title-label = Título
 newtab-topsites-title-input =
     .placeholder = Ingresar un título
@@ -203,3 +212,27 @@ newtab-pocket-cta-text = Guarda las historias que amas en { -pocket-brand-name }
 
 newtab-error-fallback-info = Chuta, algo se fue a las pailas al cargar este contenido.
 newtab-error-fallback-refresh-link = Recarga la página para volver a intentarlo.
+
+## Customization Menu
+
+newtab-custom-shortcuts-title = Atajos
+newtab-custom-shortcuts-subtitle = Sitios que guardas o visitas
+newtab-custom-row-selector =
+    { $num ->
+        [one] { $num } fila
+       *[other] { $num } filas
+    }
+newtab-custom-sponsored-sites = Atajos patrocinados
+newtab-custom-pocket-title = Recomendado por { -pocket-brand-name }
+newtab-custom-pocket-subtitle = Contenido excepcional seleccionado por { -pocket-brand-name }, parte de la familia { -brand-product-name }
+newtab-custom-pocket-sponsored = Historias patrocinadas
+newtab-custom-recent-title = Actividad reciente
+newtab-custom-recent-subtitle = Una selección de sitios y contenidos recientes
+newtab-custom-close-button = Cerrar
+# For the "Snippets" feature traditionally on about:home.
+# Alternative translation options: "Small Note" or something that
+# expresses the idea of "a small message, shortened from something else,
+# and non-essential but also not entirely trivial and useless.
+newtab-custom-snippets-title = Fragmentos
+newtab-custom-snippets-subtitle = Consejos y noticias de { -vendor-short-name } y { -brand-product-name }
+newtab-custom-settings = Administrar más ajustes

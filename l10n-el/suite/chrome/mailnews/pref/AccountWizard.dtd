@@ -9,7 +9,10 @@
 
 <!-- Entities for Account Type page -->
 
+<!ENTITY accountSetupInfo2.label "Για να λαμβάνετε μηνύματα, θα πρέπει πρώτα να ρυθμίσετε έναν λογαριασμό.">
 <!ENTITY accountTypeTitle.label "Ρύθμιση νέου λογαριασμού">
+<!ENTITY accountTypeDesc2.label "Ο οδηγός θα συλλέξει τις απαραίτητες πληροφορίες για τη ρύθμιση ενός λογαριασμού. Αν δεν γνωρίζετε τις απαιτούμενες πληροφορίες, επικοινωνήστε με τον διαχειριστή του συστήματος ή τον πάροχο υπηρεσιών διαδικτύου σας.">
+<!ENTITY accountTypeDirections.label "Επιλέξτε τον τύπο λογαριασμού που θέλετε να ρυθμίσετε:">
 <!ENTITY accountTypeMail.label "Λογαριασμός email">
 <!ENTITY accountTypeMail.accesskey "m">
 <!ENTITY accountTypeNews.label "Λογαριασμός ομάδας συζήτησης">
@@ -21,8 +24,10 @@
 <!-- Entities for Identity page -->
 
 <!ENTITY identityTitle.label "Ταυτότητα">
+<!ENTITY identityDesc.label "Κάθε λογαριασμός έχει μια ταυτότητα, που αποτελεί τις πληροφορίες που σας ταυτοποιούν στους παραλήπτες των μηνυμάτων σας.">
 
 <!-- LOCALIZATION NOTE (fullnameDesc.label) : do not translate two of "&quot;" in below line -->
+<!ENTITY fullnameDesc.label "Εισάγετε το όνομα που θέλετε να εμφανίζεται στο πεδίο &quot;Από&quot; των εξερχόμενων μηνυμάτων σας">
 <!-- LOCALIZATION NOTE (fullnameExample.label) : use following directions for below line
   1, do not translate two of "&quot;"
   2, Use localized full name instead of "John Smith"
@@ -49,14 +54,17 @@
 <!ENTITY defaultPortLabel.label "Προεπιλογή:">
 <!ENTITY defaultPortValue.label "">
 <!-- LOCALIZATION NOTE (incomingServerNameDesc.label) : Do not translate "&quot;pop.example.net&quot;" in below line -->
+<!ENTITY incomingServer.description "Εισάγετε το όνομα διακομιστή εισερχομένων (για παράδειγμα, &quot;mail.example.net&quot;).">
 <!ENTITY incomingServer.label "Διακομιστής εισερχομένων:">
 <!ENTITY incomingServer.accesskey "Δ">
-<!ENTITY leaveMsgsOnSrvr.label "Φύλαξη μηνυμάτων στον διακομιστή">
-<!ENTITY leaveMsgsOnSrvr.accesskey "Φ">
+<!ENTITY leaveMsgsOnSrvr.label "Διατήρηση μηνυμάτων στον διακομιστή">
+<!ENTITY leaveMsgsOnSrvr.accesskey "Δ">
 <!-- LOCALIZATION NOTE (incomingUsername.description) : do not translate "&quot;jsmith&quot;" in below line -->
+<!ENTITY incomingUsername.description "Εισάγετε το όνομα χρήστη εισερχομένων που σας παραχώρησε ο πάροχος email σας (για παράδειγμα, &quot;jsmith&quot;).">
 <!ENTITY incomingUsername.label "Όνομα χρήστη:">
 <!ENTITY incomingUsername.accesskey "χ">
 <!-- LOCALIZATION NOTE (newsServerNameDesc.label) : Do not translate "NNTP" or the "&quot;" entities in below line -->
+<!ENTITY newsServerNameDesc.label "Εισάγετε το όνομα του διακομιστή συζητήσεων (NNTP) σας (για παράδειγμα, &quot;news.example.net&quot;).">
 <!ENTITY newsServerLabel.label "Διακομιστής ομάδας συζήτησης:">
 <!ENTITY newsServerLabel.accesskey "Δ">
 
@@ -98,6 +106,7 @@
 
 <!ENTITY accnameTitle.label "Όνομα λογαριασμού">
 <!-- LOCALIZATION NOTE (accnameDesc.label) : do not translate any "&quot;" in below line -->
+<!ENTITY accnameDesc.label "Εισάγετε το όνομα με το οποίο θέλετε να αναφέρεστε σε αυτό τον λογαριασμό (για παράδειγμα, &quot;Εργασιακός λογαριασμός&quot;, &quot;Οικιακός λογαριασμός&quot; ή &quot;Λογαριασμός συζητήσεων&quot;).">
 <!ENTITY accnameLabel.label "Όνομα λογαριασμού:">
 <!ENTITY accnameLabel.accesskey "Ό">
 
@@ -111,6 +120,7 @@
 <!ENTITY newsServerNamePrefix.label "Όνομα διακομιστή ειδήσεων (NNTP):">
 <!ENTITY downloadOnLogin.label "Λήψη μηνυμάτων τώρα">
 <!ENTITY downloadOnLogin.accesskey "Λ">
+<!ENTITY deferStorageDesc.label "Ενεργοποιήστε αυτή την επιλογή για αποθήκευση email για αυτό τον λογαριασμό στα Γενικά εισερχόμενα των τοπικών φακέλων. Διαφορετικά, ο λογαριασμός εμφανίζεται ως λογαριασμός ανώτερου επιπέδου και τα email του αποθηκεύονται στον δικό τους κατάλογο.">
 <!ENTITY deferStorage.label "Χρήση γενικών εισερχομένων (αποθήκευση email σε τοπικούς φακέλους)">
 <!ENTITY deferStorage.accesskey "γ">
 <!ENTITY clickFinish.label 'Κάντε κλικ στο "Τέλος" για αποθήκευση ρυθμίσεων και κλείσιμο του Βοηθού λογαριασμών.'>

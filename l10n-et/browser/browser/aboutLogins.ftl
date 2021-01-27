@@ -1,10 +1,6 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this
-# file, You can obtain one at http://mozilla.org/MPL/2.0/.
 # NOTE: New strings should use the about-logins- prefix.
 
 about-logins-page-title = Kasutajatunnused ja paroolid
@@ -17,12 +13,9 @@ login-app-promo-android =
     .alt = Hangi see Google Play poest
 login-app-promo-apple =
     .alt = Laadi alla App Store'ist
-
 login-filter =
     .placeholder = Otsi kasutajakontosid
-
 create-login-button = Loo uus kasutajakonto
-
 fxaccounts-sign-in-text = Tee paroolid kättesaadavaks ka oma teistes seadmetes
 fxaccounts-sign-in-button = Logi { -sync-brand-short-name }i sisse
 fxaccounts-avatar-button =
@@ -32,6 +25,11 @@ fxaccounts-avatar-button =
 
 menu =
     .title = Ava menüü
+# This menuitem is only visible on Windows and macOS
+about-logins-menu-menuitem-import-from-another-browser = Impordi teisest brauserist…
+about-logins-menu-menuitem-import-from-a-file = Impordi failist…
+about-logins-menu-menuitem-export-logins = Ekspordi kasutajatunnused...
+about-logins-menu-menuitem-remove-all-logins = Eemalda kõik kasutajatunnused…
 menu-menuitem-preferences =
     { PLATFORM() ->
         [windows] Sätted
@@ -52,6 +50,8 @@ login-list-count =
     }
 login-list-sort-label-text = Sortimine:
 login-list-name-option = nimi  (A-Y)
+login-list-name-reverse-option = nimi (Y-A)
+about-logins-login-list-alerts-option = Hoiatused
 login-list-last-changed-option = viimati muudetud
 login-list-last-used-option = viimati kasutatud
 login-list-intro-title = Kasutajakontosid ei leitud
@@ -63,20 +63,26 @@ login-list-item-subtitle-new-login = Sisesta oma kasutajatunnused
 login-list-item-subtitle-missing-username = (kasutajanime pole)
 about-logins-list-item-breach-icon =
     .title = Kasutajatunnused lekitanud sait
+about-logins-list-item-vulnerable-password-icon =
+    .title = Nõrk parool
 
 ## Introduction screen
 
 login-intro-heading = Otsid oma salvestatud kasutajakontosid? Seadista { -sync-brand-short-name }.
-
+about-logins-login-intro-heading-logged-out = Otsid oma salvestatud kasutajakontosid? Seadista { -sync-brand-short-name } või impordi need.
+about-logins-login-intro-heading-logged-in = Sünkrooniseeritud kasutajakontosid ei leitud.
 login-intro-description = Kui salvestasid oma kasutajakontod teises seadmes olevasse { -brand-product-name }i, siis nii saad need ka siia:
 login-intro-instruction-fxa = Loo { -fxaccount-brand-name } või logi sisse seadmes, kus salvestatud kasutajakontod on
 login-intro-instruction-fxa-settings = Veendu, et { -sync-brand-short-name }i sätetes oleks Kasutajakontod ees linnuke
 about-logins-intro-instruction-help = Rohkema teabe saamiseks külasta <a data-l10n-name="help-link">{ -lockwise-brand-short-name }'i tugikeskkonda</a>
+about-logins-intro-import = Kui sinu kasutajakontod on salvestatud teise brauserisse, siis saad need <a data-l10n-name="import-link">importida { -lockwise-brand-short-name }'i</a>
+about-logins-intro-import2 = Kui sinu kasutajakontod on salvestatud mujale kui { -brand-product-name }i, siis saad need <a data-l10n-name="import-browser-link">importida teisest brauserist</a> või <a data-l10n-name="import-file-link">failist</a>
 
 ## Login
 
 login-item-new-login-title = Uue kasutajakonto loomine
 login-item-edit-button = Muuda
+about-logins-login-item-remove-button = Eemalda
 login-item-origin-label = Saidi aadress
 login-item-origin =
     .placeholder = https://www.example.com
@@ -86,6 +92,8 @@ about-logins-login-item-username =
 login-item-copy-username-button-text = Kopeeri
 login-item-copied-username-button-text = Kopeeritud!
 login-item-password-label = Parool
+login-item-password-reveal-checkbox =
+    .aria-label = Kuva parooli
 login-item-copy-password-button-text = Kopeeri
 login-item-copied-password-button-text = Kopeeritud!
 login-item-save-changes-button = Salvesta muudatused
@@ -97,16 +105,40 @@ login-item-time-used = Viimati kasutatud: { DATETIME($timeUsed, day: "numeric", 
 
 ## OS Authentication dialog
 
+about-logins-os-auth-dialog-caption = { -brand-full-name }
+
 ## The macOS strings are preceded by the operating system with "Firefox is trying to "
 ## and includes subtitle of "Enter password for the user "xxx" to allow this." These
 ## notes are only valid for English. Please test in your respected locale.
 
+# This message can be seen when attempting to edit a login in about:logins on Windows.
+about-logins-edit-login-os-auth-dialog-message-win = Kasutajakonto muutmiseks sisesta Windowsi sisselogimisandmed. See aitab kaitsta sinu kontode turvalisust.
+# This message can be seen when attempting to edit a login in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-edit-login-os-auth-dialog-message-macosx = edit the saved login
+# This message can be seen when attempting to reveal a password in about:logins on Windows.
+about-logins-reveal-password-os-auth-dialog-message-win = Parooli vaatamiseks sisesta Windowsi sisselogimisandmed. See aitab kaitsta sinu kontode turvalisust.
+# This message can be seen when attempting to reveal a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-reveal-password-os-auth-dialog-message-macosx = reveal the saved password
+# This message can be seen when attempting to copy a password in about:logins on Windows.
+about-logins-copy-password-os-auth-dialog-message-win = Parooli kopeerimiseks sisesta Windowsi sisselogimisandmed. See aitab kaitsta sinu kontode turvalisust.
+# This message can be seen when attempting to copy a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-copy-password-os-auth-dialog-message-macosx = copy the saved password
+
 ## Master Password notification
 
 master-password-notification-message = Salvestatud kasutajatunnuste ja paroolide nägemiseks sisesta ülemparool
+# This message can be seen when attempting to export a password in about:logins on Windows.
+about-logins-export-password-os-auth-dialog-message-win = Kasutajakontode eksportimiseks sisesta Windowsi sisselogimisandmed. See aitab kaitsta sinu kontode turvalisust.
+# This message can be seen when attempting to export a password in about:logins
+# On MacOS, only provide the reason that account verification is needed. Do not put a complete sentence here.
+about-logins-export-password-os-auth-dialog-message-macosx = export saved logins and passwords
 
 ## Primary Password notification
 
+about-logins-primary-password-notification-message = Salvestatud kasutajatunnuste ja paroolide nägemiseks sisesta ülemparool
 master-password-reload-button =
     .label = Logi sisse
     .accesskey = L
@@ -125,24 +157,77 @@ enable-password-sync-preferences-button =
            *[other] Vaata { -sync-brand-short-name }i eelistusi
         }
     .accesskey = V
+about-logins-enable-password-sync-dont-ask-again-button =
+    .label = Rohkem ei küsita
+    .accesskey = R
 
 ## Dialogs
 
 confirmation-dialog-cancel-button = Loobu
 confirmation-dialog-dismiss-button =
     .title = Loobu
-
+about-logins-confirm-remove-dialog-title = Kas eemaldada see kasutajakonto?
 confirm-delete-dialog-message = Seda tegevust pole võimalik tagasi võtta.
-
+about-logins-confirm-remove-dialog-confirm-button = Eemalda
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] Eemalda
+        [one] Eemalda
+       *[other] Eemalda kõik
+    }
+about-logins-confirm-remove-all-dialog-checkbox-label =
+    { $count ->
+        [1] Jah, eemalda see konto
+        [one] Jah, eemalda see konto
+       *[other] Jah, eemalda need kontod
+    }
+about-logins-confirm-remove-all-dialog-title =
+    { $count ->
+        [one] Kas eemaldada see konto?
+       *[other] Kas eemaldada kõik { $count } kontot?
+    }
+about-logins-confirm-remove-all-dialog-message =
+    { $count ->
+        [1] See tegevus eemaldab selle kasutajakonto { -brand-short-name }ist ja kõik siin kuvatavad murdmishoiatused. Seda toimingu pole võimalik tagasi võtta.
+        [one] See tegevus eemaldab selle kasutajakonto { -brand-short-name }ist ja kõik siin kuvatavad murdmishoiatused. Seda toimingut pole võimalik tagasi võtta.
+       *[other] See tegevus eemaldab kasutajakontod { -brand-short-name }ist ja kõik siin kuvatavad murdmishoiatused. Seda toimingut pole võimalik tagasi võtta.
+    }
+about-logins-confirm-remove-all-sync-dialog-title =
+    { $count ->
+        [one] Kas soovid eemaldada selle kasutajakonto kõigist seadmetest?
+       *[other] Kas soovid eemaldada kõik { $count } kasutajakontot kõigist seadmetest?
+    }
+about-logins-confirm-remove-all-sync-dialog-message =
+    { $count ->
+        [1] See tegevus eemaldab selle { -brand-short-name }i salvestadud kasutajakonto kõigist seadmetest, mis on ühendatud sinu { -fxaccount-brand-name }ga. Seda toimingut pole võimalik tagasi võtta.
+        [one] See tegevus eemaldab selle { -brand-short-name }i salvestadud kasutajakonto kõigist seadmetest, mis on ühendatud sinu { -fxaccount-brand-name }ga. Seda toimingut pole võimalik tagasi võtta.
+       *[other] See tegevus eemaldab kõik { -brand-short-name }i salvestadud kasutajakontod kõigist seadmetest, mis on ühendatud sinu { -fxaccount-brand-name }ga. Seda toimingut pole võimalik tagasi võtta.
+    }
+about-logins-confirm-export-dialog-title = Kasutajanimede ja paroolide eksportimine
+about-logins-confirm-export-dialog-message = Sinu paroolid salvestatakse loetava tekstina (nt HalbP@r00l), nii et kõik, kes saavad eksporditud faili avada, saavad neid vaadata.
+about-logins-confirm-export-dialog-confirm-button = Ekspordi...
 confirm-discard-changes-dialog-title = Kas soovid loobuda salvestamata muudatustest?
 confirm-discard-changes-dialog-message = Kõik salvestamata muudatused lähevad kaduma.
 confirm-discard-changes-dialog-confirm-button = Unusta
 
 ## Breach Alert notification
 
+about-logins-breach-alert-title = Veebisaidi rünne
 breach-alert-text = Sellelt saidilt lekitati või varastati kasutajatunnused pärast seda, kui sa viimati enda omi uuendasid. Oma konto kaitsmiseks muuda selle parool.
+about-logins-breach-alert-date = See rünne toimus { DATETIME($date, day: "numeric", month: "long", year: "numeric") }
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-breach-alert-link = Mine saidile { $hostname }
+about-logins-breach-alert-learn-more-link = Rohkem teavet
 
 ## Vulnerable Password notification
+
+about-logins-vulnerable-alert-title = Nõrk parool
+about-logins-vulnerable-alert-text2 = Seda parooli on kasutatud mõnel teisel kontol, mille andmed tõenäoliselt lekkisid. Parooli uuesti kasutamine seab kõik sinu kontod ohtu. Muuda see parool.
+# Variables:
+#   $hostname (String) - The hostname of the website associated with the login, e.g. "example.com"
+about-logins-vulnerable-alert-link = Ava { $hostname }
+about-logins-vulnerable-alert-learn-more-link = Rohkem teavet
 
 ## Error Messages
 
@@ -151,12 +236,34 @@ breach-alert-text = Sellelt saidilt lekitati või varastati kasutajatunnused pä
 # Variables:
 #   $loginTitle (String) - The title of the website associated with the login.
 about-logins-error-message-duplicate-login-with-link = Selle kasutajanimega kanne { $loginTitle } on juba olemas. <a data-l10n-name="duplicate-link">Kas soovid minna olemasoleva kande juurde?</a>
-
 # This is a generic error message.
 about-logins-error-message-default = Parooli salvestamisel esines viga.
 
-
 ## Login Export Dialog
+
+# Title of the file picker dialog
+about-logins-export-file-picker-title = Kasutajanimede ja paroolide faili eksportimine
+# The default file name shown in the file picker when exporting saved logins.
+# This must end in .csv
+about-logins-export-file-picker-default-filename = kasutajatunnused.csv
+about-logins-export-file-picker-export-button = Ekspordi
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-export-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV-fail
+       *[other] CSV-fail
+    }
 
 ## Login Import Dialog
 
+# Title of the file picker dialog
+about-logins-import-file-picker-title = Kasutajatunnuste failist importimine
+about-logins-import-file-picker-import-button = Impordi
+# A description for the .csv file format that may be shown as the file type
+# filter by the operating system.
+about-logins-import-file-picker-csv-filter-title =
+    { PLATFORM() ->
+        [macos] CSV-fail
+       *[other] CSV-fail
+    }

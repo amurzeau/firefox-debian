@@ -503,13 +503,19 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Dažniausiai lankomos svetainės
 home-prefs-topsites-by-option-sponsored =
     .label = Rėmėjų svetainės
+home-prefs-shortcuts-header =
+    .label = Leistukai
+home-prefs-shortcuts-description = Jūsų įrašytos arba lankomos svetainės
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Rėmėjų leistukai
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
 
 home-prefs-recommended-by-header =
-    .label = Rekomendavo „{ $provider }“
+    .label = Rekomenduoja „{ $provider }“
 home-prefs-recommended-by-description-update = Išskirtinis turinys iš viso interneto, atrinktas „{ $provider }“
+home-prefs-recommended-by-description-new = Išskirtinis turinys, kuruojamas „{ $provider }“, kuri yra „{ -brand-product-name }“ šeimos dalis
 
 ##
 
@@ -518,8 +524,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Rėmėjų straipsniai
 home-prefs-highlights-header =
     .label = Akcentai
-home-prefs-recent-activity-header =
-    .label = Paskiausia veikla
 home-prefs-highlights-description = Aplankytų bei išsaugotų svetainių rinkinys
 home-prefs-highlights-option-visited-pages =
     .label = Aplankyti tinklalapiai
@@ -529,6 +533,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Paskiausias atsisiuntimas
 home-prefs-highlights-option-saved-to-pocket =
     .label = Į „{ -pocket-brand-name }“ įrašyti tinklalapiai
+home-prefs-recent-activity-header =
+    .label = Paskiausia veikla
+home-prefs-recent-activity-description = Paskiausiai lankytos svetainės ir žiūrėtas turinys
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -536,12 +543,13 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Iškarpos
 home-prefs-snippets-description = „{ -vendor-short-name }“ ir „{ -brand-product-name }“ naujienos
+home-prefs-snippets-description-new = Patarimai ir naujienos iš „{ -vendor-short-name }“ ir „{ -brand-product-name }“
 home-prefs-sections-rows-option =
     .label =
         { $num ->
             [one] { $num } eilutė
-            [few] { $num } eilučių
-           *[other] { $num } eilutės
+            [few] { $num } eilutės
+           *[other] { $num } eilučių
         }
 
 ## Search Section
@@ -928,9 +936,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = atvertų kortelių
     .accesskey = v
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Leistukai
+    .accesskey = L
 addressbar-locbar-topsites-option =
     .label = Lankomiausios svetainės
     .accesskey = L
+addressbar-locbar-engines-option =
+    .label = Ieškyklės
+    .accesskey = e
 addressbar-suggestions-settings = Keisti ieškyklių siūlymų nuostatas
 
 ## Privacy Section - Content Blocking

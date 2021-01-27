@@ -258,6 +258,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = மூடுக
 
+## Bookmarks toolbar items
+
+
 ## WebRTC Pop-up notifications
 
 popup-select-camera =
@@ -323,3 +326,63 @@ fullscreen-exit-mac-button = முழுத்திரையிலிருந
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> உங்கள் சுட்டியைக் கட்டுப்படுத்துகிறது. கட்டுப்பாட்டை எடுக்க Esc விசையை அழுத்தவும்.
 pointerlock-warning-no-domain = இந்த ஆவணம் உங்கள் சுட்டியைக் கட்டுப்பாட்டில் வைத்திருக்கிறது. கட்டுப்பாட்டைத் திரும்ப எடுக்க Esc விசையை அழுத்தவும்.
+
+## Bookmarks panels, menus and toolbar
+
+bookmarks-show-all-bookmarks =
+    .label = அனைத்தையும் காண்பி
+bookmarks-recent-bookmarks =
+    .value = சமீபத்திய புத்தகக்குறிகள்
+bookmarks-toolbar-chevron =
+    .tooltiptext = இன்னும் காண்பி
+bookmarks-sidebar-content =
+    .aria-label = புத்தகக்குறிகள்
+bookmarks-menu-button =
+    .label = புத்தகக்குறிகள் பட்டி
+bookmarks-other-bookmarks-menu =
+    .label = பிற புத்தகக்குறிகள்
+bookmarks-mobile-bookmarks-menu =
+    .label = கைகப்பேசி புத்தகக்குறிகள்
+bookmarks-tools-sidebar-visibility =
+    .label =
+        { $isVisible ->
+            [true] புத்தகக்குறிகள் பக்கப்பட்டையை மறை
+           *[other] புத்தகக்குறிகள் பக்கப்பட்டையைக் காட்டு
+        }
+bookmarks-tools-toolbar-visibility =
+    .label =
+        { $isVisible ->
+            [true] புத்தகக்குறிகள் கருவிப்பட்டையை மறை
+           *[other] புத்தகக்குறிகள் கருவிப்பட்டையைக் காட்டு
+        }
+bookmarks-tools-menu-button-visibility =
+    .label =
+        { $isVisible ->
+            [true] கருவிப்பட்டையிலிருந்து புத்தகக்குறிகள் பட்டியை நீக்கவும்
+           *[other] புத்தகக்குறி பட்டியைக் கருவிப்பட்டையில் சேர்க்கவும்
+        }
+bookmarks-search =
+    .label = புத்தகக்குறிகளைத் தேடு
+bookmarks-tools =
+    .label = புத்தக்குறியிடும் கருவிகள்
+bookmarks-toolbar-menu =
+    .label = புத்தகக்குறி கருவிப்பட்டை
+bookmarks-toolbar-placeholder =
+    .title = புத்தகக்குறிகள் கருவிப்பட்டை உருப்படிகள்
+bookmarks-toolbar-placeholder-button =
+    .label = புத்தகக்குறிகள் கருவிப்பட்டை உருப்படிகள்
+
+## Library Panel items
+
+library-bookmarks-menu =
+    .label = புத்தகக்குறிகள்
+library-bookmarks-bookmark-this-page =
+    .label = புத்தகக்குறியிடு
+library-bookmarks-bookmark-edit =
+    .label = புத்தகக்குறியைத் திருத்து
+
+## More items
+
+more-menu-go-offline =
+    .label = முடக்க நிலை
+    .accesskey = k

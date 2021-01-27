@@ -221,7 +221,7 @@ preferences-zoom-text-only =
     .label = Ζουμ μόνο στο κείμενο
     .accesskey = κ
 language-header = Γλώσσα
-choose-language-description = Επιλέξτε την προτιμώμενη γλώσσα για την εμφάνιση των ιστοσελίδων
+choose-language-description = Επιλέξτε την προτιμώμενη γλώσσα για την εμφάνιση σελίδων
 choose-button =
     .label = Επιλογή…
     .accesskey = λ
@@ -500,6 +500,11 @@ home-prefs-topsites-header =
 home-prefs-topsites-description = Οι ιστοσελίδες που επισκέπτεστε περισσότερο
 home-prefs-topsites-by-option-sponsored =
     .label = Χορηγούμενες κορυφαίες ιστοσελίδες
+home-prefs-shortcuts-header =
+    .label = Συντομεύσεις
+home-prefs-shortcuts-description = Ιστοσελίδες που αποθηκεύετε ή επισκέπτεστε
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Χορηγούμενες συντομεύσεις
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -507,6 +512,7 @@ home-prefs-topsites-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = Προτάσεις του { $provider }
 home-prefs-recommended-by-description-update = Εξαιρετικό περιεχόμενο από όλο το διαδίκτυο, με την επιμέλεια του { $provider }
+home-prefs-recommended-by-description-new = Εξαιρετικό περιεχόμενο από το { $provider }, μέρος της οικογένειας του { -brand-product-name }
 
 ##
 
@@ -515,8 +521,6 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Χορηγούμενες ιστορίες
 home-prefs-highlights-header =
     .label = Κορυφαίες στιγμές
-home-prefs-recent-activity-header =
-    .label = Πρόσφατη δραστηριότητα
 home-prefs-highlights-description = Μια συλλογή ιστοσελίδων που έχετε αποθηκεύσει ή επισκεφθεί
 home-prefs-highlights-option-visited-pages =
     .label = Σελίδες που έχετε επισκεφθεί
@@ -526,6 +530,9 @@ home-prefs-highlights-option-most-recent-download =
     .label = Πιο πρόσφατες λήψεις
 home-prefs-highlights-option-saved-to-pocket =
     .label = Αποθηκευμένες σελίδες του { -pocket-brand-name }
+home-prefs-recent-activity-header =
+    .label = Πρόσφατη δραστηριότητα
+home-prefs-recent-activity-description = Μια συλλογή πρόσφατων ιστοσελίδων και περιεχομένου
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -533,6 +540,7 @@ home-prefs-highlights-option-saved-to-pocket =
 home-prefs-snippets-header =
     .label = Αποσπάσματα
 home-prefs-snippets-description = Ενημερώσεις από τη { -vendor-short-name } και το { -brand-product-name }
+home-prefs-snippets-description-new = Συμβουλές και ειδήσεις από τη { -vendor-short-name } και το { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -924,9 +932,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Ανοικτών καρτελών
     .accesskey = Ο
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Συντομεύσεις
+    .accesskey = Σ
 addressbar-locbar-topsites-option =
     .label = Κορυφαίων ιστοσελίδων
     .accesskey = Κ
+addressbar-locbar-engines-option =
+    .label = Μηχανές αναζήτησης
+    .accesskey = α
 addressbar-suggestions-settings = Αλλαγή προτιμήσεων για τις προτάσεις μηχανών αναζήτησης
 
 ## Privacy Section - Content Blocking

@@ -13,15 +13,26 @@ appmenuitem-customize-mode =
 
 ## Zoom Controls
 
+appmenuitem-new-window =
+    .label = Leiho berria
+appmenuitem-new-private-window =
+    .label = Leiho pribatu berria
+
+## Zoom and Fullscreen Controls
+
 appmenuitem-zoom-enlarge =
     .label = Gerturatu zooma
 appmenuitem-zoom-reduce =
     .label = Urrundu zooma
+appmenuitem-fullscreen =
+    .label = Pantaila osoa
 
 ## Firefox Account toolbar button and Sync panel in App menu.
 
 fxa-toolbar-sync-now =
     .label = Sinkronizatu orain
+appmenuitem-save-page =
+    .label = Gorde orria honela…
 
 ## What's New panel in App menu.
 

@@ -10,7 +10,7 @@
 <!ENTITY newevent.from.label                "Από" >
 <!ENTITY newevent.to.label                  "Έως" >
 
-<!ENTITY newevent.status.label                    "Κατάσταση" >
+<!ENTITY newevent.status.label                    "Κατάσταση" >
 <!ENTITY newevent.status.accesskey                "Κ" >
 <!ENTITY newevent.eventStatus.none.label          "Μη καθορισμένη" >
 <!ENTITY newevent.eventStatus.none.accesskey      "Μ" >
@@ -138,8 +138,8 @@
 <!ENTITY  event.menu.options.priority.normal.accesskey        "Κ">
 <!ENTITY  event.menu.options.priority.high.label              "Υψηλή">
 <!ENTITY  event.menu.options.priority.high.accesskey          "Υ">
-<!ENTITY  event.menu.options.privacy.label                    "Ιδιωτικότητα">
-<!ENTITY  event.menu.options.privacy.accesskey                "Ι">
+<!ENTITY  event.menu.options.privacy.label                    "Απόρρητο">
+<!ENTITY  event.menu.options.privacy.accesskey                "Α">
 <!ENTITY  event.menu.options.privacy.public.label             "Δημόσιο συμβάν">
 <!ENTITY  event.menu.options.privacy.public.accesskey         "Δ">
 <!ENTITY  event.menu.options.privacy.confidential.label       "Αποκάλυψη μόνο ώρας και ημερομηνίας">
@@ -169,7 +169,7 @@
 <!ENTITY  event.toolbar.saveandclose.label                "Αποθήκευση και κλείσιμο">
 <!ENTITY  event.toolbar.delete.label                      "Διαγραφή">
 <!ENTITY  event.toolbar.attendees.label                   "Πρόσκληση συμμετεχόντων">
-<!ENTITY  event.toolbar.privacy.label                     "Ιδιωτικότητα">
+<!ENTITY  event.toolbar.privacy.label                     "Απόρρητο">
 
 <!ENTITY  event.toolbar.save.tooltip2                     "Αποθήκευση">
 <!ENTITY  event.toolbar.saveandclose.tooltip              "Αποθήκευση και κλείσιμο">
@@ -217,7 +217,7 @@
 <!ENTITY event.to.accesskey                               "ξ">
 <!ENTITY task.to.label                                    "Προθεσμία:" >
 <!ENTITY task.to.accesskey                                "Π">
-<!ENTITY task.status.label                                "Κατάσταση:" >
+<!ENTITY task.status.label                                "Κατάσταση:" >
 <!ENTITY task.status.accesskey                            "Κ">
 <!ENTITY event.repeat.label                               "Επανάληψη:" >
 <!ENTITY event.repeat.accesskey                           "ψ">
@@ -364,7 +364,7 @@
 
 <!ENTITY event.recurrence.range.label                   "Εμβέλεια επανάληψης">
 <!ENTITY event.recurrence.forever.label                 "Χωρίς τέλος" >
-<!ENTITY event.recurrence.repeat.for.label              "Να δημιουργηθεί/ούν" >
+<!ENTITY event.recurrence.repeat.for.label              "Δημιουργία" >
 <!ENTITY event.recurrence.appointments.label            "στιγμιότυπο/α" >
 <!ENTITY event.repeat.until.label                       "Να επαναλαμβάνεται μέχρι και τις" >
 <!ENTITY event.recurrence.preview.label                 "Προεπισκόπηση">
