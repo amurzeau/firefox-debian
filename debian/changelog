@@ -1,3 +1,15 @@
+firefox (85.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Fixes for mfsa2021-03, also known as:
+    CVE-2021-23953, CVE-2021-23954, CVE-2021-23955, CVE-2021-23956,
+    CVE-2021-23958, CVE-2021-23960, CVE-2021-23961, CVE-2021-23962,
+    CVE-2021-23963, CVE-2021-23964, CVE-2021-23965.
+
+  * debian/control*: Bump rustc, cargo and nss build dependencies.
+
+ -- Mike Hommey <glandium@debian.org>  Wed, 27 Jan 2021 09:06:28 +0900
+
 firefox (84.0.2-1) unstable; urgency=medium
 
   * New upstream release.
