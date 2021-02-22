@@ -3,6 +3,53 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = Dienste
+menu-application-hide-this =
+    .label = { -brand-shorter-name } ausblenden
+menu-application-hide-other =
+    .label = Andere ausblenden
+menu-application-show-all =
+    .label = Alle einblenden
+menu-application-touch-bar =
+    .label = Touch Bar anpassen…
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] Beenden
+           *[other] Beenden
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] B
+           *[other] B
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = { -brand-shorter-name } beenden
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = { -brand-shorter-name } beenden
+menu-about =
+    .label = Über { -brand-shorter-name }
+    .accesskey = e
+
 ## File Menu
 
 menu-file =
@@ -160,6 +207,8 @@ menu-history-undo-menu =
     .label = Kürzlich geschlossene Tabs
 menu-history-undo-window-menu =
     .label = Kürzlich geschlossene Fenster
+menu-history-reopen-all-tabs = Alle Tabs neu öffnen
+menu-history-reopen-all-windows = Alle Fenster neu öffnen
 
 ## Bookmarks Menu
 
@@ -237,6 +286,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = Hilfe
     .accesskey = H
@@ -252,9 +319,14 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Tastenkombinationen
     .accesskey = T
+menu-get-help =
+    .label = Unterstützung erhalten
+    .accesskey = U
 menu-help-troubleshooting-info =
     .label = Informationen zur Fehlerbehebung
     .accesskey = z
+menu-help-taskmanager =
+    .label = Task-Manager
 menu-help-feedback-page =
     .label = Feedback senden…
     .accesskey = s
@@ -272,3 +344,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Dies ist keine betrügerische Website…
     .accesskey = g
+menu-help-check-for-update =
+    .label = Nach Updates suchen…
+    .accesskey = U

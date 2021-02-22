@@ -17,6 +17,20 @@ appmenuitem-new-window =
     .label = Novo okno
 appmenuitem-new-private-window =
     .label = Novo zasebno okno
+appmenuitem-passwords =
+    .label = Gesla
+appmenuitem-extensions-and-themes =
+    .label = Razširitve in teme
+appmenuitem-find-in-page =
+    .label = Najdi na strani …
+appmenuitem-more-tools =
+    .label = Več orodij
+appmenuitem-exit =
+    .label = Izhod
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = Nastavitve
 
 ## Zoom and Fullscreen Controls
 
@@ -42,3 +56,107 @@ whatsnew-panel-header = Novosti
 whatsnew-panel-footer-checkbox =
     .label = Obveščaj o novostih
     .accesskey = š
+
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
+## "Enable Profiler Menu Button".
+
+profiler-popup-title =
+    .value = { -profiler-brand-name }
+profiler-popup-reveal-description-button =
+    .aria-label = Razkrij več podatkov
+profiler-popup-description-title =
+    .value = Spremljajte, analizirajte, delite
+profiler-popup-learn-more = Več o tem
+profiler-popup-settings =
+    .value = Nastavitve
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings = Uredi nastavitve …
+profiler-popup-recording-screen = Spremljanje …
+# The profiler presets list is generated elsewhere, but the custom preset is defined
+# here only.
+profiler-popup-presets-custom =
+    .label = Po meri
+profiler-popup-start-recording-button =
+    .label = Začni spremljati
+profiler-popup-discard-button =
+    .label = Zavrzi
+profiler-popup-capture-button =
+    .label = Zajemi
+profiler-popup-start-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧1
+       *[other] Ctrl+Shift+1
+    }
+profiler-popup-capture-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧2
+       *[other] Ctrl+Shift+2
+    }
+
+## History panel
+
+appmenu-reopen-all-tabs = Ponovno odpri vse zavihke
+appmenu-reopen-all-windows = Ponovno odpri vsa okna
+
+## Help panel
+
+appmenu-help-header =
+    .title = Pomoč za { -brand-shorter-name }
+appmenu-about =
+    .label = O { -brand-shorter-name }u
+    .accesskey = O
+appmenu-help-product =
+    .label = Pomoč za { -brand-shorter-name }
+    .accesskey = m
+appmenu-help-show-tour =
+    .label = Predstavitev { -brand-shorter-name }a
+    .accesskey = e
+appmenu-help-import-from-another-browser =
+    .label = Uvozi iz drugega brskalnika …
+    .accesskey = U
+appmenu-help-keyboard-shortcuts =
+    .label = Bližnjice tipk
+    .accesskey = B
+appmenu-get-help =
+    .label = Pomoč
+    .accesskey = P
+appmenu-help-troubleshooting-info =
+    .label = Odpravljanje težav
+    .accesskey = R
+appmenu-help-taskmanager =
+    .label = Upravitelj opravil
+appmenu-help-feedback-page =
+    .label = Povratne informacije …
+    .accesskey = v
+
+## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-safe-mode-without-addons =
+    .label = Ponovno zaženi z onemogočenimi dodatki …
+    .accesskey = n
+appmenu-help-safe-mode-with-addons =
+    .label = Ponovno zaženi z omogočenimi dodatki
+    .accesskey = n
+
+## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-report-deceptive-site =
+    .label = Prijavi zavajajočo stran …
+    .accesskey = P
+appmenu-help-not-deceptive =
+    .label = To ni zavajajoča stran …
+    .accesskey = z
+
+##
+
+appmenu-help-check-for-update =
+    .label = Poišči posodobitve …
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = Prilagodi orodno vrstico …
+appmenu-developer-tools-subheader = Orodja brskalnika

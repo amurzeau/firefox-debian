@@ -6,19 +6,28 @@
 ### This file contains the entities needed to use the Find Bar.
 
 findbar-next =
-    .tooltiptext = Alcontrar la coincidencia siguiente de la fras
+    .tooltiptext = Atopar la coincidencia siguiente de la fras
 findbar-previous =
-    .tooltiptext = Alcontrar la coincidencia previa de la fras
-
+    .tooltiptext = Atopar la coincidencia anterior de la fras
 findbar-find-button-close =
-    .tooltiptext = Zarrar barra de gueta
-
+    .tooltiptext = Zarrar la barra de busca
+findbar-highlight-all2 =
+    .label = Rescamplar too
+    .accesskey =
+        { PLATFORM() ->
+            [macos] R
+           *[other] R
+        }
+    .tooltiptext = Rescampla toles coincidencies de la fras
 findbar-case-sensitive =
-    .label = Concasar mayúscules
+    .label = Estremar les mayúscules/minúscules
     .accesskey = C
-    .tooltiptext = Fai concasar les mayúscules
-
+    .tooltiptext = Estrema les mayúsvules y les minúscules
+findbar-match-diacritics =
+    .label = Estremar les tildes
+    .accesskey = n
+    .tooltiptext = Estrema ente lletres tildaes y ensin tildar (por exemplu, al buscar «qué» y «que» nun va ser lo mesmo)
 findbar-entire-word =
     .label = Pallabres completes
     .accesskey = a
-    .tooltiptext = Guetar namái pallabres completes
+    .tooltiptext = Busca namás pallabres completes

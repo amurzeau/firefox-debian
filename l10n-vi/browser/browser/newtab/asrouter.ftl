@@ -123,6 +123,9 @@ cfr-whatsnew-lockwise-take-link-text = Tải ứng dụng
 
 cfr-whatsnew-searchbar-title = Nhập ít hơn, tìm nhiều hơn với thanh địa chỉ
 cfr-whatsnew-searchbar-body-topsites = Bây giờ, chỉ cần chọn thanh địa chỉ và một hộp sẽ mở rộng với các liên kết đến các trang web hàng đầu của bạn.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Biểu tượng kính lúp
 
 ## Picture-in-Picture
@@ -199,10 +202,14 @@ cfr-doorhanger-cryptominers-description = Vấn đề riêng tư của bạn. { 
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (String) - The date we began recording the count of blocked trackers
+#   $date (Number) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
        *[other] { -brand-short-name } đã chặn hơn <b>{ $blockedCount }</b> trình theo dõi từ { $date }!
+    }
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+       *[other] { -brand-short-name } đã chặn hơn <b>{ $blockedCount }</b> trình theo dõi kể từ { DATETIME($date, month: "long", year: "numeric") }!
     }
 cfr-doorhanger-milestone-ok-button = Xem tất cả
     .accesskey = S
@@ -276,3 +283,18 @@ cfr-whatsnew-media-keys-button = Tìm hiểu cách thức
 
 cfr-whatsnew-search-shortcuts-header = Tìm kiếm các phím tắt trong thanh địa chỉ
 cfr-whatsnew-search-shortcuts-body = Bây giờ, khi bạn nhập công cụ tìm kiếm hoặc trang web cụ thể vào thanh địa chỉ, một phím tắt màu xanh lam sẽ xuất hiện trong các đề xuất tìm kiếm bên dưới. Chọn lối tắt đó để hoàn tất tìm kiếm của bạn trực tiếp từ thanh địa chỉ.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Bảo vệ khỏi supercookie độc hại
+cfr-whatsnew-supercookies-body = Các trang web có thể bí mật đính kèm một “supercookie” vào trình duyệt của bạn để có thể theo dõi bạn trên khắp trang web, ngay cả sau khi bạn xóa cookie của mình. { -brand-short-name } hiện cung cấp khả năng bảo vệ mạnh mẽ chống lại các supercookie để chúng không thể được sử dụng để theo dõi các hoạt động trực tuyến của bạn từ trang web này sang trang web khác.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = Đánh dấu trang tốt hơn
+cfr-whatsnew-bookmarking-body = Theo dõi các trang web yêu thích của bạn dễ dàng hơn. Bây giờ { -brand-short-name } nhớ vị trí ưa thích của bạn cho các dấu trang đã lưu, hiển thị thanh công cụ dấu trang theo mặc định trên các thẻ mới và cho phép bạn dễ dàng truy cập vào phần còn lại của dấu trang thông qua thư mục thanh công cụ.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Bảo vệ toàn diện khỏi theo dõi cookie trên nhiều trang web
+cfr-whatsnew-cross-site-tracking-body = Bây giờ bạn có thể chọn tham gia để bảo vệ tốt hơn khỏi theo dõi cookie. { -brand-short-name } có thể cô lập các hoạt động và dữ liệu của bạn với trang web bạn hiện đang truy cập, vì vậy thông tin được lưu trữ trong trình duyệt sẽ không được chia sẻ giữa các trang web.

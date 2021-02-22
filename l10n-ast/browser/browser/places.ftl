@@ -17,7 +17,6 @@ places-open-window =
 places-open-private-window =
     .label = Abrir nuna ventanta privada nueva
     .accesskey = P
-
 places-new-bookmark =
     .label = Marcador nuevu…
     .accesskey = n
@@ -30,37 +29,43 @@ places-new-folder =
 places-new-separator =
     .label = Separtador nuevu
     .accesskey = v
-
 places-view =
     .label = Ver
     .accesskey = r
 places-by-date =
-    .label = Por data
-    .accesskey = P
+    .label = Pola data
+    .accesskey = d
 places-by-site =
-    .label = Por sitiu
+    .label = Pol sitiu
     .accesskey = s
 places-by-most-visited =
-    .label = Por mayor númberu de visites
+    .label = Polo más visitao
     .accesskey = v
 places-by-last-visited =
-    .label = Por cabera visita
-    .accesskey = b
+    .label = Pola última visita
+    .accesskey = u
 places-by-day-and-site =
-    .label = Por data y sitiu
+    .label = Pola data y el sitiu
     .accesskey = t
-
 places-history-search =
-    .placeholder = Historial de gueta
+    .placeholder = Buscar nel historial
 places-bookmarks-search =
-    .placeholder = Guetar marcadores
-
+    .placeholder = Buscar nos marcadores
 places-delete-domain-data =
-    .label = Escaecer esti sitiu web
+    .label = Escaecer esti sitiu
     .accesskey = E
 places-sortby-name =
-    .label = Ordenar pel nome
+    .label = Ordenar pol nome
     .accesskey = r
 places-properties =
     .label = Propiedaes
     .accesskey = i
+# Managed bookmarks are created by an administrator and cannot be changed by the user.
+managed-bookmarks =
+    .label = Marcadores xestionaos
+# This label is used when a managed bookmarks folder doesn't have a name.
+managed-bookmarks-subfolder =
+    .label = Socarpeta
+# This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
+other-bookmarks-folder =
+    .label = Otros marcadores

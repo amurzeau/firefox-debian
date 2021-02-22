@@ -84,6 +84,7 @@ login-item-new-login-title = Sortu saio-hasiera berria
 login-item-edit-button = Editatu
 about-logins-login-item-remove-button = Kendu
 login-item-origin-label = Webgunearen helbidea
+login-item-tooltip-message = Ziurtatu hau bat datorrela saioa-hasten duzun webgunearen helbide zehatzarekin.
 login-item-origin =
     .placeholder = https://www.adibidea.eus
 login-item-username-label = Erabiltzaile-izena
@@ -169,6 +170,12 @@ confirmation-dialog-dismiss-button =
 about-logins-confirm-remove-dialog-title = Kendu saio-hasiera hau?
 confirm-delete-dialog-message = Ekintza hau ezin da desegin.
 about-logins-confirm-remove-dialog-confirm-button = Kendu
+about-logins-confirm-remove-all-dialog-confirm-button-label =
+    { $count ->
+        [1] Kendu
+        [one] Kendu
+       *[other] Kendu denak
+    }
 about-logins-confirm-remove-all-dialog-checkbox-label =
     { $count ->
         [1] Bai, kendu saio-hasiera hau
@@ -179,6 +186,11 @@ about-logins-confirm-remove-all-dialog-title =
     { $count ->
         [one] Kendu saio-hasiera bat?
        *[other] Kendu { $count } saio-hasiera?
+    }
+about-logins-confirm-remove-all-dialog-message =
+    { $count ->
+        [one] Honek { -brand-short-name }(e)n gorde duzun saio-hasiera eta hemen agertzen den edozein urratze-alerta kenduko ditu. Ekintza hau ezin da desegin.
+       *[other] Honek { -brand-short-name }(e)n gorde dituzun saio-hasierak eta hemen agertzen den edozein urratze-alerta kenduko ditu. Ekintza hau ezin da desegin.
     }
 about-logins-confirm-remove-all-sync-dialog-title =
     { $count ->
@@ -256,10 +268,51 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV dokumentua
        *[other] CSV fitxategia
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] TSV dokumentua
+       *[other] TSV fitxategia
+    }
 
 ##
 ## Variables:
 ##  $count (number) - The number of affected elements
 
 about-logins-import-dialog-title = Inportazioa burutu da
+about-logins-import-dialog-items-added =
+    { $count ->
+       *[other] <span>Saio-hasiera berriak gehituta:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+        [one] <span>Lehendik dauden saio-hasierak eguneratuta:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Lehendik dauden saio-hasierak eguneratuta:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+       *[other] <span>Bikoiztutako saio-hasierak aurkitu dira:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ez dira inportatu)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+       *[other] <span>Erroreak:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ez dira inportatu)</span>
+    }
 about-logins-import-dialog-done = Eginda
+about-logins-import-dialog-error-title = Inportazio-errorea
+about-logins-import-dialog-error-conflicting-values-title = Gatazkan dauden hainbat balio saio-hasiera baterako
+about-logins-import-dialog-error-conflicting-values-description = Adibidez: saio-hasiera baterako hainbat erabiltzaile-izen, pasahitz, URL, etab.
+about-logins-import-dialog-error-file-format-title = Fitxategi-formatuaren arazoa
+about-logins-import-dialog-error-file-format-description = Zutabeen goiburu okerrak edo falta egin dira. Ziurtatu fitxategiak zutabeak dituela erabiltzaile-izen, pasahitz eta URL balioentzat.
+about-logins-import-dialog-error-file-permission-title = Ezin da fitxategia irakurri
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name }(e)k ez du fitxategia irakurtzeko baimenik. Saiatu fitxategiaren baimenak aldatzen.
+about-logins-import-dialog-error-unable-to-read-title = Ezin da fitxategia analizatu
+about-logins-import-dialog-error-unable-to-read-description = Ziurtatu CSV edo TSV fitxategi bat hautatu duzula.
+about-logins-import-dialog-error-no-logins-imported = Ez da saio-hasierarik inportatu
+about-logins-import-dialog-error-learn-more = Argibide gehiago
+about-logins-import-dialog-error-try-again = Saiatu berriro…
+about-logins-import-dialog-error-cancel = Utzi
+
+## Logins import report page
+
+about-logins-import-report-page-title = Inportazioaren laburpen-txostena

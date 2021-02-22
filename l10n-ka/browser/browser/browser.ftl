@@ -346,6 +346,11 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = დახურვა
 
+## Tab actions
+
+browser-tab-audio-playing = გაშვებულია
+browser-tab-audio-muted = დადუმებულია
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,6 +509,16 @@ fullscreen-exit-mac-button = სრული ეკრანიდან გა�
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> მართავს თქვენს მაჩვენებელს. მართვის დასაბრუნებლად დააჭირეთ Esc ღილაკს.
 pointerlock-warning-no-domain = ეს დოკუმენტი მართავს თქვენს მაჩვენებელს. მართვის დასაბრუნებლად დააჭირეთ Esc ღილაკს.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>გვერდის ნაწილი უეცრად გაითიშა.</strong> თუ გსურთ { -brand-product-name } გაეცნოს ამ ხარვეზს მალე გამოსასწორებლად, გთხოვთ გაგზავნოთ მოხსენება.
+crashed-subframe-learnmore =
+    .label = ვრცლად
+    .accesskey = ლ
+crashed-subframe-submit =
+    .label = მოხსენების გაგზავნა
+    .accesskey = ო
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -532,6 +547,12 @@ bookmarks-tools-toolbar-visibility =
             [true] სანიშნების ხელსაწყოთა ზოლის დამალვა
            *[other] სანიშნების ხელსაწყოთა ზოლის ჩვენება
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] სანიშნების ხელსაწყოთა ზოლის დამალვა
+           *[other] სანიშნების ხელსაწყოთა ზოლის ჩვენება
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +563,8 @@ bookmarks-search =
     .label = სანიშნების ძიება
 bookmarks-tools =
     .label = სანიშნების ხელსაწყოები
+bookmarks-bookmark-edit-panel =
+    .label = სანიშნის ჩასწორება
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -564,7 +587,8 @@ library-bookmarks-bookmark-this-page =
     .label = გვერდის ჩანიშვნა
 library-bookmarks-bookmark-edit =
     .label = სანიშნის ჩასწორება
-library-recent-activity-label = ბოლო მოქმედებები
+library-recent-activity-title =
+    .value = ბოლო მოქმედებები
 
 ## More items
 

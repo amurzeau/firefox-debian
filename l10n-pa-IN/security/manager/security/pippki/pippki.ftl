@@ -8,6 +8,8 @@ password-quality-meter = ਪਾਸਵਰਡ ਕੁਆਲਟੀ ਮੀਟਰ
 
 change-password-window =
     .title = ਮਾਸਟਰ ਪਾਸਵਰਡ ਨੂੰ ਬਦਲੋ
+change-device-password-window =
+    .title = ਪਾਸਵਰਡ ਬਦਲੋ
 # Variables:
 # $tokenName (String) - Security device of the change password dialog
 change-password-token = ਸੁਰੱਖਿਆ ਡਿਵਾਈਸ: { $tokenName }
@@ -20,6 +22,13 @@ change-password-reenter = ਨਵਾਂ ਪਾਸਵਰਡ (ਮੁੜ):
 reset-password-window =
     .title = ਮਾਸਟਰ ਪਾਸਵਰਡ ਨੂੰ ਮੁੜ-ਸੈੱਟ ਕਰੋ
     .style = width: 40em
+pippki-failed-pw-change = ਪਾਸਵਰਡ ਬਦਲਣ ਲਈ ਅਸਮਰੱਥ ਹੈ।
+pippki-incorrect-pw = ਤੁਸੀਂ ਆਪਣਾ ਮੌਜੂਦਾ ਪਾਸਵਰਡ ਠੀਕ ਨਹੀਂ ਭਰਿਆ ਹੈ। ਫੇਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ ਜੀ।
+pippki-pw-change-ok = ਪਾਸਵਰਡ ਕਾਮਯਾਬੀ ਨਾਲ ਬਦਲਿਆ ਹੈ।
+pippki-pw-empty-warning = ਤੁਹਾਡੇ ਸੰਭਾਲੇ ਪਾਸਵਰਡ ਤੇ ਪ੍ਰਾਈਵੇਟ ਕੁੰਜੀਆਂ ਸੁਰੱਖਿਅਤ ਨਹੀਂ ਰਹਿਣਗੀਆਂ।
+pippki-pw-erased-ok = ਤੁਸੀਂ ਆਪਣਾ ਪਾਸਵਰਡ ਹਟਾ ਚੁੱਕੇ ਹੋ। { pippki-pw-empty-warning }
+pippki-pw-not-wanted = ਸਾਵਧਾਨ! ਤੁਸੀਂ ਪਾਸਵਰਡ ਨਾ ਵਰਤਣ ਦਾ ਫ਼ੈਸਲਾ ਕੀਤਾ ਹੈ। { pippki-pw-empty-warning }
+pippki-pw-change2empty-in-fips-mode = ਇਸ ਵੇਲੇ ਤੁਸੀਂ FIPS ਢੰਗ ਵਰਤ ਰਹੇ ਹੋ। FIPS ਲਈ ਪਾਸਵਰਡ ਖਾਲੀ ਨਹੀਂ ਹੋ ਸਕਦਾ ਹੈ।
 
 ## Reset Primary Password dialog
 

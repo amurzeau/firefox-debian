@@ -49,7 +49,7 @@
 
 <!ENTITY netInterrupt.longDesc "&sharedLongDesc;">
 
-<!ENTITY notCached.longDesc "<p>O documento solicitado não está disponível na cache do &brandShortName;.</p><ul><li> Como uma precaução de segurança, o &brandShortName; não re-solicita automaticamente documentos sensíveis. </li><li>Clique em tentar novamente para re-solicitar o documento no site.</li></ul>">
+<!ENTITY notCached.longDesc "<p>O documento solicitado não está disponível no cache do &brandShortName;.</p><ul><li>Como precaução de segurança, o &brandShortName; não volta a solicitar automaticamente documentos sensíveis.</li><li>Clique em 'Tentar novamente' para solicitar de novo o documento do site.</li></ul>">
 
 <!ENTITY netOffline.longDesc2 "
 <ul>
@@ -139,7 +139,7 @@ de que o &brandShortName; esteja autorizado a acessar a web.</li>
 
 <!ENTITY cspBlocked.longDesc "<p>O &brandShortName; impediu esta página de carregar desta forma porque a política de segurança de conteúdo da página não permite.</p>">
 
-<!ENTITY xfoBlocked.longDesc "<p>O &brandShortName; impediu que esta página fosse carregada neste contexto porque a página tem uma política X-Frame-Options que não permite.</p>">
+<!ENTITY xfoBlocked.longDesc "<p>O &brandShortName; impediu que esta página fosse carregada neste contexto porque a página tem uma diretiva X-Frame-Options que não permite.</p>">
 
 <!ENTITY corruptedContentErrorv2.longDesc "<p>A página que está tentando ver não pode ser vista porque foi detectado um erro na transmissão de dados.</p><ul><li>Entre em contato com os proprietários do site para informá-los sobre este problema.</li></ul>">
 

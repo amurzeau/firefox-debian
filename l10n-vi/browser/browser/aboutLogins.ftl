@@ -83,6 +83,7 @@ login-item-new-login-title = Tạo đăng nhập mới
 login-item-edit-button = Chỉnh sửa
 about-logins-login-item-remove-button = Xóa
 login-item-origin-label = Địa chỉ trang web
+login-item-tooltip-message = Đảm bảo rằng địa chỉ này khớp với địa chỉ chính xác của trang web mà bạn đăng nhập.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Tên đăng nhập
@@ -199,6 +200,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Xuất thông tin đăng nhập và mật khẩu
 about-logins-confirm-export-dialog-message = Mật khẩu của bạn sẽ được lưu dưới dạng văn bản có thể đọc được (ví dụ: BadP@ssw0rd) để bất kỳ ai có thể mở tập tin được xuất đều có thể xem chúng.
 about-logins-confirm-export-dialog-confirm-button = Xuất…
+about-logins-alert-import-title = Hoàn thành nhập
+about-logins-alert-import-message = Xem tóm tắt chi tiết nhập
 confirm-discard-changes-dialog-title = Hủy bỏ những thay đổi chưa lưu?
 confirm-discard-changes-dialog-message = Tất cả các thay đổi chưa được lưu sẽ bị mất.
 confirm-discard-changes-dialog-confirm-button = Loại bỏ
@@ -260,3 +263,50 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Tài liệu CSV
        *[other] Tập tin CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Tài liệu TSV
+       *[other] Tập tin TSV
+    }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Hoàn thành nhập
+about-logins-import-dialog-items-added =
+    { $count ->
+       *[other] <span>Đã thêm thông tin đăng nhập mới:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+       *[other] <span>Đã cập nhật thông tin đăng nhập đã có:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+       *[other] <span>Tìm thấy thông tin đăng nhập bị trùng:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(không nhập)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+       *[other] <span>Lỗi:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(không nhập)</span>
+    }
+about-logins-import-dialog-done = Xong
+about-logins-import-dialog-error-title = Lỗi khi nhập
+about-logins-import-dialog-error-conflicting-values-title = Nhiều giá trị xung đột cho một thông tin đăng nhập
+about-logins-import-dialog-error-conflicting-values-description = Ví dụ: nhiều tên người dùng, mật khẩu, URL, v.v. cho một thông tin đăng nhập.
+about-logins-import-dialog-error-file-format-title = Vấn đề định dạng tập tin
+about-logins-import-dialog-error-file-format-description = Header cột không chính xác hoặc bị thiếu. Đảm bảo rằng tập tin bao gồm các cột cho tên người dùng, mật khẩu và URL.
+about-logins-import-dialog-error-file-permission-title = Không thể đọc tập tin
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } không có quyền đọc tập tin. Thử thay đổi quyền đối với tập tin.
+about-logins-import-dialog-error-unable-to-read-title = Không thể phân tích cú pháp tập tin
+about-logins-import-dialog-error-unable-to-read-description = Đảm bảo rằng bạn đã chọn đúng tập tin CSV hoặc TSV.
+about-logins-import-dialog-error-no-logins-imported = Không có thông tin đăng nhập nào được nhập
+about-logins-import-dialog-error-learn-more = Tìm hiểu thêm
+about-logins-import-dialog-error-try-again = Thử lại…
+about-logins-import-dialog-error-cancel = Hủy bỏ
+
+## Logins import report page
+
+about-logins-import-report-page-title = Báo cáo tóm tắt nhập

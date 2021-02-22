@@ -3,6 +3,53 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = Dịch vụ
+menu-application-hide-this =
+    .label = Ẩn { -brand-shorter-name }
+menu-application-hide-other =
+    .label = Ẩn các mục khác
+menu-application-show-all =
+    .label = Hiển thị tất cả
+menu-application-touch-bar =
+    .label = Tùy chỉnh Touch Bar…
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] Thoát
+           *[other] Thoát
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] x
+           *[other] Q
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = Thoát { -brand-shorter-name }
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = Thoát { -brand-shorter-name }
+menu-about =
+    .label = Về { -brand-shorter-name }
+    .accesskey = A
+
 ## File Menu
 
 menu-file =
@@ -160,6 +207,8 @@ menu-history-undo-menu =
     .label = Thẻ mới đóng gần đây
 menu-history-undo-window-menu =
     .label = Các cửa sổ mới đóng
+menu-history-reopen-all-tabs = Mở lại tất cả các thẻ
+menu-history-reopen-all-windows = Mở lại tất cả các cửa sổ
 
 ## Bookmarks Menu
 
@@ -237,6 +286,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = Trợ giúp
     .accesskey = H
@@ -252,9 +319,14 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Các phím tắt bàn phím
     .accesskey = K
+menu-get-help =
+    .label = Nhận trợ giúp
+    .accesskey = H
 menu-help-troubleshooting-info =
     .label = Thông tin xử lý sự cố
     .accesskey = T
+menu-help-taskmanager =
+    .label = Quản lý tác vụ
 menu-help-feedback-page =
     .label = Gửi phản hồi…
     .accesskey = S
@@ -272,3 +344,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Đây không phải là một trang lừa đảo…
     .accesskey = d
+menu-help-check-for-update =
+    .label = Kiểm tra cập nhật…
+    .accesskey = C

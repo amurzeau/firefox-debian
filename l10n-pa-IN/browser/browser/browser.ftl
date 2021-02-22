@@ -352,6 +352,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = ਬੰਦ ਕਰੋ
 
+## Tab actions
+
+browser-tab-audio-playing = ਚੱਲ ਰਿਹਾ ਹੈ
+browser-tab-audio-muted = ਮੌਨ ਹੈ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = ਚੱਲ ਰਿਹਾ ਹੈ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = ਮੌਨ ਕੀਤਾ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = ਆਪੇ-ਚੱਲਣ ਉੱਤੇ ਰੋਕ ਲੱਗੀ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = ਤਸਵੀਰ-ਵਿੱਚ-ਤਸਵੀਰ
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -512,12 +525,26 @@ fullscreen-exit-mac-button = ਪੂਰੀ ਸਕਰੀਨ ਤੋਂ ਬਾਹਰ
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ਤੁਹਾਡੇ ਪੁਆਇੰਟਰ ਨੂੰ ਕੰਟੋਰਲ ਕਰਦਾ ਹੈ। ਕੰਟਰੋਲ ਵਾਪਸ ਲੈਣ ਲਈ Esc ਦਬਾਉ।
 pointerlock-warning-no-domain = ਇਹ ਦਸਤਾਵੇਜ਼ ਤੁਹਾਡੇ ਪੁਆਇੰਟਰ ਨੂੰ ਕੰਟੋਰਲ ਕਰਦਾ ਹੈ। ਕੰਟਰੋਲ ਵਾਪਸ ਲੈਣ ਲਈ Esc ਦਬਾਉ।
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>ਇਸ ਸਫ਼ੇ ਦਾ ਹਿੱਸਾ ਨਸ਼ਟ ਹੋਇਆ।</strong> { -brand-product-name } ਨੂੰ ਇਸ ਮਸਲੇ ਬਾਰੇ ਜਾਣਕਾਰੀ ਦਿਓ ਅਤੇ ਇਸ ਨੂੰ ਛੇਤੀ ਠੀਕ ਕਰਵਾਓ, ਇਸ ਬਾਰੇ ਰਿਪੋਰਟ ਦਿਓ।
+crashed-subframe-learnmore =
+    .label = ਹੋਰ ਸਿੱਖੋ
+    .accesskey = L
+crashed-subframe-submit =
+    .label = ਰਿਪੋਰਟ ਭੇਜੋ
+    .accesskey = S
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = ਸਭ ਬੁੱਕਮਾਰਕਾਂ ਨੂੰ ਵੇਖੋ
 bookmarks-recent-bookmarks =
     .value = ਤਾਜ਼ਾ ਬੁੱਕਮਾਰਕ ਕੀਤੇ
+bookmarks-manage-bookmarks =
+    .label = ਬੁੱਕਮਾਰਕਾਂ ਇੰਤਜ਼ਾਮ
+bookmarks-recent-bookmarks-panel =
+    .value = ਹਾਲੀਆ ਬੁੱਕਮਾਰਕ
 bookmarks-toolbar-chevron =
     .tooltiptext = ਹੋਰ ਬੁੱਕਮਾਰਕਾਂ ਨੂੰ ਵੇਖੋ
 bookmarks-sidebar-content =
@@ -540,6 +567,18 @@ bookmarks-tools-toolbar-visibility =
             [true] ਬੁੱਕਮਾਰਕ ਟੂਲਬਾਰ ਓਹਲੇ ਕਰੋ
            *[other] ਬੁੱਕਮਾਰਕ ਟੂਲਬਾਰ ਵੇਖੋ
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] ਬੁੱਕਮਾਰਕ ਟੂਲਬਾਰ ਓਹਲੇ ਕਰੋ
+           *[other] ਬੁੱਕਮਾਰਕ ਟੂਲਬਾਰ ਵੇਖੋ
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] ਬੁੱਕਮਾਰਕ ਟੂਲਬਾਰ ਲੁਕਾਓ
+           *[other] ਬੁੱਕਮਾਰਕ ਟੂਲਬਾਰ ਵੇਖਾਓ
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -550,6 +589,8 @@ bookmarks-search =
     .label = ਬੁੱਕਮਾਰਕ ਲੱਭੋ
 bookmarks-tools =
     .label = ਬੁੱਕਮਾਰਕ ਬਣਾਉਣ ਵਾਲਾ ਟੂਲ
+bookmarks-bookmark-edit-panel =
+    .label = ਇਹ ਬੁੱਕਮਾਰਕ ਨੂੰ ਸੋਧੋ
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -563,6 +604,9 @@ bookmarks-toolbar-placeholder =
     .title = ਬੁੱਕਮਾਰਕ ਟੂਲਬਾਰ ਆਈਟਮਾਂ
 bookmarks-toolbar-placeholder-button =
     .label = ਬੁੱਕਮਾਰਕ ਟੂਲਬਾਰ ਆਈਟਮਾਂ
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = ਬੁੱਕਮਾਰਕ ਮੌਜੂਦਾ ਟੈਬ
 
 ## Library Panel items
 
@@ -572,7 +616,8 @@ library-bookmarks-bookmark-this-page =
     .label = ਇਹ ਸਫ਼ੇ ਨੂੰ ਬੁੱਕਮਾਰਕ ਕਰੋ
 library-bookmarks-bookmark-edit =
     .label = ਇਹ ਬੁੱਕਮਾਰਕ ਨੂੰ ਸੋਧੋ
-library-recent-activity-label = ਹਾਲੀਆ ਸਰਗਰਮੀ
+library-recent-activity-title =
+    .value = ਹਾਲੀਆ ਸਰਗਰਮੀ
 
 ## More items
 

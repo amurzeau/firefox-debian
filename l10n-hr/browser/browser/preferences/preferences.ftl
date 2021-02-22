@@ -153,7 +153,7 @@ ctrl-tab-recently-used-order =
     .label = Ctrl+Tab kruži kroz kartice redoslijedom zadnjeg korištenja
     .accesskey = T
 open-new-link-as-tabs =
-    .label = Otvori poveznice u karticama umjesto novih prozora
+    .label = Otvori poveznice u karticama umjesto u novim prozorima
     .accesskey = p
 warn-on-close-multiple-tabs =
     .label = Upozorava te prilikom zatvaranja višestrukih kartica
@@ -248,7 +248,7 @@ translate-exceptions =
 use-system-locale =
     .label = Koristi postavke operativnog sustava za “{ $localeName }” za oblikovanje datuma, vremena, brojeva i mjera.
 check-user-spelling =
-    .label = Provjeravanje pravopisa tijekom pisanja
+    .label = Provjeri pravopis tijekom tipkanja
     .accesskey = v
 
 ## General Section - Files and Applications
@@ -270,7 +270,7 @@ download-choose-folder =
            *[other] i
         }
 download-always-ask-where =
-    .label = Uvijek pitaj gdje želim spremiti datoteke
+    .label = Uvijek pitaj gdje spremiti datoteke
     .accesskey = a
 applications-header = Aplikacije
 applications-description = Odaberi kako će { -brand-short-name } upravljati datotekama koje preuzmeš s interneta ili aplikacijama koje koristiš prilikom pregledavanja.
@@ -294,7 +294,7 @@ applications-use-app =
 # Variables:
 #   $app-name (String) - Name of an application (e.g Adobe Acrobat)
 applications-use-app-default =
-    .label = Koristi { $app-name } (uobičajeno)
+    .label = Koristi { $app-name } (standardno)
 applications-use-os-default =
     .label =
         { PLATFORM() ->
@@ -326,7 +326,7 @@ applications-file-ending-with-type = { applications-file-ending } ({ $type })
 applications-use-plugin-in =
     .label = Koristi { $plugin-name } (u { -brand-short-name })
 applications-open-inapp =
-    .label = Otvori u { -brand-short-name }
+    .label = Otvori u { -brand-short-name }u
 
 ## The strings in this group are used to populate
 ## selected label element based on the string from
@@ -372,7 +372,7 @@ update-application-check-choose =
 update-application-manual =
     .label = Nikad ne provjeravaj dostupnost novih verzija (nije preporučeno)
     .accesskey = N
-update-application-warning-cross-user-setting = Ove postavke će se primijeniti na sve Windows račune i { -brand-short-name } profile koji koriste ovu { -brand-short-name } instalaciju.
+update-application-warning-cross-user-setting = Ove postavke će se primijeniti na sve račune u Windowsu i profile za { -brand-short-name } koji koriste ovu instalaciju programa { -brand-short-name }.
 update-application-use-service =
     .label = Koristi pozadinski servis za instalaciju dopuna
     .accesskey = K
@@ -458,7 +458,7 @@ network-proxy-connection-settings =
 ## Home Section
 
 home-new-windows-tabs-header = Novi prozori i kartice
-home-new-windows-tabs-description2 = Odaberi što vidiš kad otvoriš svoju početnu stranicu, nove prozore i nove kartice.
+home-new-windows-tabs-description2 = Odaberi što želiš vidjeti kad otvoriš početnu stranicu, nove prozore i nove kartice.
 
 ## Home Section - Home Page Customization
 
@@ -500,7 +500,7 @@ home-prefs-search-header =
     .label = Web pretraga
 home-prefs-topsites-header =
     .label = Najbolje stranice
-home-prefs-topsites-description = Stranice koje najviše posjećujete
+home-prefs-topsites-description = Stranice koje najčešće posjećuješ
 home-prefs-topsites-by-option-sponsored =
     .label = Sponzorirane najpopularnije stranice
 home-prefs-shortcuts-header =
@@ -524,7 +524,7 @@ home-prefs-recommended-by-option-sponsored-stories =
     .label = Sponzorirane priče
 home-prefs-highlights-header =
     .label = Istaknuto
-home-prefs-highlights-description = Izbor stranica koje ste spremili ili posjetili
+home-prefs-highlights-description = Izbor spremljenih ili posjećenih stranica
 home-prefs-highlights-option-visited-pages =
     .label = Posjećene stranice
 home-prefs-highlights-options-bookmarks =
@@ -541,8 +541,8 @@ home-prefs-recent-activity-description = Izbor nedavnih stranica i sadržaja
 # expresses the idea of "a small message, shortened from something else,
 # and non-essential but also not entirely trivial and useless.
 home-prefs-snippets-header =
-    .label = Isječci
-home-prefs-snippets-description = Aktualiziranje od { -vendor-short-name } i { -brand-product-name }a
+    .label = Kratke obavijesti
+home-prefs-snippets-description = { -vendor-short-name } i { -brand-product-name } aktualiziranja
 home-prefs-snippets-description-new = Savjeti i vijesti od { -vendor-short-name } i { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
@@ -703,7 +703,7 @@ sync-change-options =
 ## The "Choose what to sync" dialog.
 
 sync-choose-what-to-sync-dialog =
-    .title = Odaberi što želiš sinkronizirati
+    .title = Odaberi što će se sinkronizirati
     .style = width: 36em; min-height: 35em;
     .buttonlabelaccept = Spremi izmjene
     .buttonaccesskeyaccept = S
@@ -809,7 +809,7 @@ forms-primary-pw-change =
 # "Master Password" in your language. If you're editing the FTL file directly,
 # use { "" } as the value.
 forms-primary-pw-former-name = Prije poznato kao glavna lozinka
-forms-primary-pw-fips-title = Trenutno si u načinu rada FIPS. FIPS ne dopušta praznu primarnu lozinku.
+forms-primary-pw-fips-title = Trenutačno se nalaziš u modusu FIPS. FIPS ne dopušta praznu primarnu lozinku.
 forms-master-pw-fips-desc = Promjena lozinke nije uspjela
 
 ## OS Authentication dialog
@@ -953,14 +953,15 @@ addressbar-suggestions-settings = Promijeni postavke za prijedloge tražilica
 content-blocking-enhanced-tracking-protection = Poboljšana zaštita od praćenja
 content-blocking-section-top-level-description = Programi za praćenje te prate po internetu i prikupljaju podatke o tvojim navikama i interesima. { -brand-short-name } blokira mnoge takve programe i druge zlonamjerne skripte.
 content-blocking-learn-more = Saznaj više
+content-blocking-fpi-incompatibility-warning = Koristiš značajku First Party Isolation (FPI), koja nadjačava neke postavke kolačića u { -brand-short-name }u.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
 
 # "Standard" in this case is an adjective, meaning "default" or "normal".
 enhanced-tracking-protection-setting-standard =
-    .label = Uobičajeno
-    .accesskey = o
+    .label = Standardno
+    .accesskey = d
 enhanced-tracking-protection-setting-strict =
     .label = Strogo
     .accesskey = r

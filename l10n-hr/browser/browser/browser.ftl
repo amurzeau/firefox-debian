@@ -107,11 +107,11 @@ urlbar-tip-icon-description =
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
-urlbar-search-tips-onboard = Tipkaj manje, nađi više: Traži { $engineName } direktno u tvojoj adresnoj traci.
+urlbar-search-tips-onboard = Tipkaj manje, pronađi više: Traži { $engineName } direktno u adresnoj traci.
 urlbar-search-tips-redirect-2 = Započni pretragu u adresnoj traci za prikaz prijedloga od { $engineName } i tvoju povijest pregledavanja.
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
-urlbar-tabtosearch-onboard = Odaberi ovaj prečac za brže pretraživanje.
+urlbar-tabtosearch-onboard = Odaberi ovaj prečac za brže pronalaženje onoga što tražiš.
 
 ## Local search mode indicator labels in the urlbar
 
@@ -348,6 +348,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Zatvori
 
+## Tab actions
+
+browser-tab-audio-playing = Reprodukcija
+browser-tab-audio-muted = Isključen zvuk
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = REPRODUKCIJA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = UTIŠANO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AUTOMATSKA REPRODUKCIJA BLOKIRANA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = SLIKA U SLICI
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -506,12 +519,26 @@ fullscreen-exit-mac-button = Izađi iz cjeloekranskog prikaza (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ima kontrolu nad pokazivačem. Pritisnite tipku Esc da biste preuzeli kontrolu.
 pointerlock-warning-no-domain = Ovaj dokument ima kontrolu nad pokazivačem. Pritisnite tipku Esc kako biste preuzeli kontrolu.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Dio ove stranice se srušio.</strong> Da bi { -brand-product-name } znao za ovu grešku i ispravio je, pošalji izvješće.
+crashed-subframe-learnmore =
+    .label = Saznaj više
+    .accesskey = S
+crashed-subframe-submit =
+    .label = Pošalji izvješće
+    .accesskey = P
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Prikaži sve zabilješke
 bookmarks-recent-bookmarks =
     .value = Nedavno zabilježeno
+bookmarks-manage-bookmarks =
+    .label = Upravljanje zabilješkama
+bookmarks-recent-bookmarks-panel =
+    .value = Nedavne zabilješke
 bookmarks-toolbar-chevron =
     .tooltiptext = Prikaži više zabilješki
 bookmarks-sidebar-content =
@@ -534,6 +561,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Sakrij alatnu traku zabilješki
            *[other] Prikaži traku zabilješki
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Sakrij alatnu traku zabilješki
+           *[other] Prikaži traku zabilješki
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Sakrij traku zabilješki
+           *[other] Prikaži traku zabilješki
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -544,6 +583,8 @@ bookmarks-search =
     .label = Pretraži zabilješke
 bookmarks-tools =
     .label = Alatna traka zabilješki
+bookmarks-bookmark-edit-panel =
+    .label = Uredi ovu zabilješku
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -557,6 +598,9 @@ bookmarks-toolbar-placeholder =
     .title = Stavke alatne trake zabilješki
 bookmarks-toolbar-placeholder-button =
     .label = Stavke alatne trake zabilješki
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Zabilježi trenutnu karticu
 
 ## Library Panel items
 
@@ -566,7 +610,8 @@ library-bookmarks-bookmark-this-page =
     .label = Zabilježi ovu stranicu
 library-bookmarks-bookmark-edit =
     .label = Uredi ovu zabilješku
-library-recent-activity-label = Nedavna aktivnost
+library-recent-activity-title =
+    .value = Nedavna aktivnost
 
 ## More items
 

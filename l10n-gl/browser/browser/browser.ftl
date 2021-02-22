@@ -346,6 +346,11 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Pechar
 
+## Tab actions
+
+browser-tab-audio-playing = Reproducindo
+browser-tab-audio-muted = Silenciado
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,12 +509,26 @@ fullscreen-exit-mac-button = Saír de pantalla completa (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ten o control do punteiro. Prema Esc para recuperar o control.
 pointerlock-warning-no-domain = Este documento ten o control do punteiro. Prema Esc para recuperar o control.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Parte desta páxina petou.</strong> Para que { -brand-product-name } saiba desta incidencia se poida arranxar máis axiña, envíe un informe.
+crashed-subframe-learnmore =
+    .label = Saber máis
+    .accesskey = S
+crashed-subframe-submit =
+    .label = Enviar informe
+    .accesskey = E
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Amosar todos os marcadores
 bookmarks-recent-bookmarks =
     .value = Marcadores máis recentes
+bookmarks-manage-bookmarks =
+    .label = Xestionar marcadores
+bookmarks-recent-bookmarks-panel =
+    .value = Marcadores recentes
 bookmarks-toolbar-chevron =
     .tooltiptext = Amosar máis marcadores
 bookmarks-sidebar-content =
@@ -532,6 +551,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Agochar a barra dos marcadores
            *[other] Ver a barra de marcadores
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Agochar a barra dos marcadores
+           *[other] Ver a barra de marcadores
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Agochar a barra de marcadores
+           *[other] Amosar a barra de marcadores
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +573,8 @@ bookmarks-search =
     .label = Buscar nos marcadores
 bookmarks-tools =
     .label = Ferramentas dos marcadores
+bookmarks-bookmark-edit-panel =
+    .label = Editar este marcador
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +588,9 @@ bookmarks-toolbar-placeholder =
     .title = Elementos da barra de marcadores
 bookmarks-toolbar-placeholder-button =
     .label = Elementos da barra de marcadores
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Engadir a marcadores a lapela actual
 
 ## Library Panel items
 
@@ -564,6 +600,8 @@ library-bookmarks-bookmark-this-page =
     .label = Marcar esta páxina
 library-bookmarks-bookmark-edit =
     .label = Editar este marcador
+library-recent-activity-title =
+    .value = Actividade recente
 
 ## More items
 

@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -112,6 +112,9 @@ urlbar-search-tips-redirect-2 = Սկսեք ձեր որոնումը այստեղ�
 
 ## Local search mode indicator labels in the urlbar
 
+urlbar-search-mode-bookmarks = Էջանիշեր
+urlbar-search-mode-tabs = Ներդիրներ
+urlbar-search-mode-history = Պատմություն
 
 ##
 
@@ -217,7 +220,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = Այս անգամ որոնել հետևյալի հետ.
 # This string won't wrap, so if the translated string is longer,
@@ -235,6 +238,12 @@ search-one-offs-context-set-as-default =
 search-one-offs-context-set-as-default-private =
     .label = Սահմանել որպես լռելյայն որոնման միջոց անձնական պատուհանների համար
     .accesskey = P
+# Search engine one-off buttons with an @alias shortcut/keyword.
+# Variables:
+#  $engineName (String): The name of the engine.
+#  $alias (String): The @alias shortcut/keyword.
+search-one-offs-engine-with-alias =
+    .tooltiptext = { $engineName } ({ $alias })
 
 ## Local search mode one-off buttons
 ## Variables:
@@ -243,6 +252,12 @@ search-one-offs-context-set-as-default-private =
 ##    restrict their searches to certain sources (e.g., "*" to search only
 ##    bookmarks).
 
+search-one-offs-bookmarks =
+    .tooltiptext = Էջանշել ({ $restrict })-ը
+search-one-offs-tabs =
+    .tooltiptext = Ներդիրներ ({ $restrict })
+search-one-offs-history =
+    .tooltiptext = Պատմություն ({ $restrict })
 
 ## Bookmark Panel
 
@@ -270,6 +285,14 @@ identity-passive-loaded = Այս էջի մասերը անվտանգ չեն (օր
 identity-active-loaded = Դուք անջատել եք պաշտպանությունը այս էջում:
 identity-weak-encryption = Այս էջը օգտագործում է աղքատ գաղտնագրում:
 identity-insecure-login-forms = Այս էջից մուտքագրումները վտանգված են:
+identity-https-only-connection-upgraded = (արդիացվել է HTTPS-ի)
+identity-https-only-label = HTTPS կերպ միայն
+identity-https-only-dropdown-on =
+    .label = Միաց.
+identity-https-only-dropdown-off =
+    .label = Անջ.
+identity-https-only-dropdown-off-temporarily =
+    .label = Ժամանակավորապես անջատված է
 identity-permissions =
     .value = Արտոնություններ
 identity-permissions-reload-hint = Անհրաժեշտ կլինի թարմացնել էջը, որ կիրառվեն փոփոխությունները։
@@ -283,7 +306,7 @@ identity-description-custom-root = Mozilla֊ն չի ճանաչում այս վկ
 identity-remove-cert-exception =
     .label = Հեռացնել բացառությունը
     .accesskey = Հ
-identity-description-insecure = Ձեր կապակցումը այս կայքին գաղտնի չէ: Ուղկարկված տեղեկությունները կարող են դիտվել ուրիշների կողմից (գաղտնաբառերը, հաղորդագրությունները, քարտային տվյալները և այլն):
+identity-description-insecure = Ձեր կապակցումը այս կայքին գաղտնի չէ: Ուղարկված տեղեկությունները կարող են դիտվել ուրիշների կողմից (գաղտնաբառերը, հաղորդագրությունները, քարտային տվյալները և այլն):
 identity-description-insecure-login-forms = Մուտքգործման տեղեկությունը, որ մուտքագրել եք այս էջում, անվտանգ չէ և կարող է վտանգվել:
 identity-description-weak-cipher-intro = Ձեր կապակցումը այս կայքին օգտագործում է աղքատ գաղտնագրում և այն գաղտնի չէ:
 identity-description-weak-cipher-risk = Այլ անձինք կարող են դիտել ձեր տեղեկատվությունը կամ փոփոխել կայքի ժառանգորդին:
@@ -315,8 +338,16 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Փակել
 
+## Tab actions
+
+browser-tab-audio-playing = Նվագարկում
+browser-tab-audio-muted = Անձայն
+
 ## Bookmarks toolbar items
 
+browser-import-button2 =
+    .label = Էջանիշների ներմուծում
+    .tooltiptext = Ներմուծում է էջանիշերը այլ զննարկիչից { -brand-short-name }:
 
 ## WebRTC Pop-up notifications
 
@@ -353,6 +384,8 @@ enable-devtools-popup-description = F12 դյուրանցումը օգտագոր�
 
 urlbar-default-placeholder =
     .defaultPlaceholder = Մուտքագրեք կայքի հասցե կամ որոնում
+# This placeholder is used when not in search mode and the user's default search
+# engine is unknown.
 urlbar-placeholder =
     .placeholder = Մուտքագրեք կայքի հասցե կամ որոնում
 # Variables
@@ -415,6 +448,12 @@ fullscreen-exit-mac-button = Դուրս գալ Լիաէկրանից (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ղեկավարում է ձեր ցուցիչը: Սեղմեք Esc՝ ղեկավարումը հետ վերադարձնելու համար:
 pointerlock-warning-no-domain = Այս փաստաթուղթը ղեկավարում է ձեր ցուցիչը: Սեղմեք Esc՝ ղեկավարումը հետ վերադարձնելու համար:
 
+## Subframe crash notification
+
+crashed-subframe-learnmore =
+    .label = Իմանալ ավելին
+    .accesskey = L
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -443,6 +482,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Թաքցնել Էջանիշերի Գործիքագոտին
            *[other] Դիտել էջանիշերի վահանակը
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Թաքցնել Էջանիշերի Գործիքագոտին
+           *[other] Դիտել էջանիշերի վահանակը
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -453,6 +498,8 @@ bookmarks-search =
     .label = Էջանիշերի որոնում
 bookmarks-tools =
     .label = Էջանշելու գործիքներ
+bookmarks-bookmark-edit-panel =
+    .label = Խմբագրել այս էջանիշը
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.

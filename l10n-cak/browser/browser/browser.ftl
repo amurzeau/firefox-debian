@@ -225,7 +225,7 @@ full-screen-exit =
 
 # This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
-search-one-offs-with-title = Wakami tikanöx rik'in:
+search-one-offs-with-title = Wakami takanoj pa:
 # This string won't wrap, so if the translated string is longer,
 # consider translating it as if it said only "Search Settings".
 search-one-offs-change-settings-button =
@@ -346,6 +346,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Titz'apïx
 
+## Tab actions
+
+browser-tab-audio-playing = Nitzij
+browser-tab-audio-muted = Mem
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = Netz'an
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = Mem
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = Q'ATON RUYON NITZIJ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = PICTURE-IN-PICTURE
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -399,7 +412,7 @@ urlbar-placeholder =
 #  (e.g. Google).
 urlbar-placeholder-search-mode-web-2 =
     .placeholder = Tikanöx pa Web
-    .aria-label = Tikanöx rik'in { $name }
+    .aria-label = Tikanöx pa { $name }
 # This placeholder is used in search mode with search engines that search a
 # specific site (e.g., Amazon).
 # Variables
@@ -423,7 +436,7 @@ urlbar-placeholder-search-mode-other-tabs =
 # Variables
 #  $name (String): the name of the user's default search engine
 urlbar-placeholder-with-name =
-    .placeholder = Tikanöx rik'in { $name }  o titz'ib'äx ochochib'äl
+    .placeholder = Takanoj pa { $name } o tatz'ib'aj ri rochochib'al
 urlbar-remote-control-notification-anchor =
     .tooltiptext = Ri Okik'amaya'l k'o pa ruq'a' ri näj chajinïk
 urlbar-permissions-granted =
@@ -448,7 +461,7 @@ urlbar-pocket-button =
 # "Search", and we would like to avoid strings like "Search MSN Search".
 # Variables
 #  $engine (String): the name of a search engine
-urlbar-result-action-search-in-private-w-engine = Tikanöx rik'in { $engine } pa jun Ichinan Tzuwäch
+urlbar-result-action-search-in-private-w-engine = Tikanöx pa { $engine } pa jun Ichinan Tzuwäch
 # Used when the private browsing engine is the same as the default engine.
 urlbar-result-action-search-in-private = Tikanöx pa jun Ichinan Tzuwäch
 # The "with" format was chosen because the search engine name can end with
@@ -474,7 +487,7 @@ urlbar-result-action-before-tabtosearch-other = Tapitz'a' Tab richin nakanoj { $
 # Variables
 #  $engine (String): the name of a search engine that searches the entire Web
 #  (e.g. Google).
-urlbar-result-action-tabtosearch-web = Tikanöx rik'in { $engine } pa kikajtz'ik ochochib'äl
+urlbar-result-action-tabtosearch-web = Tikanöx pa { $engine } pa kikajtz'ik ochochib'äl
 # Variables
 #  $engine (String): the name of a search engine that searches a specific site
 #  (e.g. Amazon).
@@ -504,12 +517,26 @@ fullscreen-exit-mac-button = Tel pa chijun ruwa kematz'ib' (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> chajin ruma ri retal ch'oy. Tapitz'a' Esc richin nachajij chik el.
 pointerlock-warning-no-domain = Re ruxaq wuj re' chajin ruma ri retal ch'oy. Tapitz'a' Esc richin nachajij chik el.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Xsach jun peraj ruxaq.</strong> Chi ri { -brand-product-name } nretamaj chi rij re k'ayewal chuqa' anin nich'ojmïr, tataqa' jun rutzijol.
+crashed-subframe-learnmore =
+    .label = Tetamäx Ch'aqa' Chik
+    .accesskey = T
+crashed-subframe-submit =
+    .label = Titaq Rutzijol
+    .accesskey = t
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Kek'ut konojel ri taq yaketal
 bookmarks-recent-bookmarks =
     .value = K'a nimakol tiya' ketal
+bookmarks-manage-bookmarks =
+    .label = Kenuk'samajïx Taq Yaketal
+bookmarks-recent-bookmarks-panel =
+    .value = K'ak'a' Taq Yaketal
 bookmarks-toolbar-chevron =
     .tooltiptext = Kek'ut pe ch'aqa' chik taq yaketal
 bookmarks-sidebar-content =
@@ -532,6 +559,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Tewüx ri Kikajtz'ik taq Yaketal
            *[other] Titz'et rukatz'ik taq yaketal
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Tewüx ri Kikajtz'ik taq Yaketal
+           *[other] Titz'et rukatz'ik taq yaketal
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +575,8 @@ bookmarks-search =
     .label = Kekanöx Yaketal
 bookmarks-tools =
     .label = Taq kisamajib'al ri yakoj etal
+bookmarks-bookmark-edit-panel =
+    .label = Tinuk' re yaketal re'
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -564,7 +599,8 @@ library-bookmarks-bookmark-this-page =
     .label = Titz'aqatisäx re ruxaq re' pa taq yaketal
 library-bookmarks-bookmark-edit =
     .label = Tinuk' re yaketal re'
-library-recent-activity-label = K'ak'a' Samaj
+library-recent-activity-title =
+    .value = K'ak'a' Samaj
 
 ## More items
 

@@ -345,6 +345,11 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Mbylleni
 
+## Tab actions
+
+browser-tab-audio-playing = Po luhet
+browser-tab-audio-muted = Pa Zë
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -503,6 +508,16 @@ fullscreen-exit-mac-button = Dilni Nga Sa Krejt Ekrani (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> është në kontroll të kursorit tuaj. Shtypni Esc që të rimerrni kontrollin.
 pointerlock-warning-no-domain = Kursori është nën kontrollin e kursorit tuaj. Shtypni Esc që të rimerrni kontrollin.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Një pjesë e kësaj faqeje u vithis.</strong> Për t’ia bërë të ditur { -brand-product-name }-it këtë çështje dhe për t’u zgjidhur më shpejt, ju lutemi, parashtroni një raport.
+crashed-subframe-learnmore =
+    .label = Mësoni Më Tepër
+    .accesskey = M
+crashed-subframe-submit =
+    .label = Parashtroni Njoftim
+    .accesskey = P
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -531,6 +546,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Fshihe Panelin e Faqerojtësve
            *[other] Shihni Panel Faqerojtësish
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Fshihe Panelin e Faqerojtësve
+           *[other] Shihni Panel Faqerojtësish
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -541,6 +562,8 @@ bookmarks-search =
     .label = Kërkoni Te Faqerojtësit
 bookmarks-tools =
     .label = Mjete Faqeruajtjeje
+bookmarks-bookmark-edit-panel =
+    .label = Përpunojeni Këtë Faqerojtës
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -563,6 +586,8 @@ library-bookmarks-bookmark-this-page =
     .label = Faqeruaje Këtë Faqe
 library-bookmarks-bookmark-edit =
     .label = Përpunojeni Këtë Faqerojtës
+library-recent-activity-title =
+    .value = Veprimtari Së fundi
 
 ## More items
 

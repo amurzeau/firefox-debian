@@ -338,6 +338,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = 關閉
 
+## Tab actions
+
+browser-tab-audio-playing = 播放中
+browser-tab-audio-muted = 靜音
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = 播放中
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = 靜音
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = 已封鎖自動播放
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = 子母畫面
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -496,11 +509,25 @@ fullscreen-exit-mac-button = 離開全螢幕模式（Esc）
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 可控制您的滑鼠游標，按 Esc 取回控制權。
 pointerlock-warning-no-domain = 此文件可控制您的滑鼠游標，按 Esc 取回控制權。
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>此頁面中的部分內容發生錯誤。</strong>您同意的話，可將此問題回報給 { -brand-product-name }，讓我們更快修正。
+crashed-subframe-learnmore =
+    .label = 了解更多
+    .accesskey = L
+crashed-subframe-submit =
+    .label = 送出報告
+    .accesskey = S
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = 顯示所有書籤
 bookmarks-recent-bookmarks =
+    .value = 最近加入的書籤
+bookmarks-manage-bookmarks =
+    .label = 管理書籤
+bookmarks-recent-bookmarks-panel =
     .value = 最近加入的書籤
 bookmarks-toolbar-chevron =
     .tooltiptext = 顯示更多書籤
@@ -524,6 +551,18 @@ bookmarks-tools-toolbar-visibility =
             [true] 隱藏書籤工具列
            *[other] 檢視書籤工具列
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] 隱藏書籤工具列
+           *[other] 檢視書籤工具列
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] 隱藏書籤工具列
+           *[other] 顯示書籤工具列
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -534,6 +573,8 @@ bookmarks-search =
     .label = 搜尋書籤
 bookmarks-tools =
     .label = 書籤工具
+bookmarks-bookmark-edit-panel =
+    .label = 編輯此書籤
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -547,6 +588,9 @@ bookmarks-toolbar-placeholder =
     .title = 書籤工具列項目
 bookmarks-toolbar-placeholder-button =
     .label = 書籤工具列項目
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = 將目前分頁加入書籤
 
 ## Library Panel items
 
@@ -556,7 +600,8 @@ library-bookmarks-bookmark-this-page =
     .label = 將本頁加入書籤
 library-bookmarks-bookmark-edit =
     .label = 編輯此書籤
-library-recent-activity-label = 近期動態
+library-recent-activity-title =
+    .value = 近期動態
 
 ## More items
 

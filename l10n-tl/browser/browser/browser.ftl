@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -339,6 +339,9 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Isara
 
+## Tab actions
+
+
 ## Bookmarks toolbar items
 
 
@@ -445,6 +448,7 @@ urlbar-result-action-search-in-private = Maghanap sa Private Window
 # Variables
 #  $engine (String): the name of a search engine
 urlbar-result-action-search-w-engine = Maghanap gamit ang { $engine }
+urlbar-result-action-sponsored = Sponsored
 urlbar-result-action-switch-tab = Lumipat sa Tab
 urlbar-result-action-visit = Puntahan
 # Variables
@@ -480,6 +484,12 @@ fullscreen-exit-mac-button = Umalis sa Full Screen (Esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ay may kontrol sa iyong pointer. Pindutin ang ESC para mabawi ang kontrol.
 pointerlock-warning-no-domain = Ang dokumentong ito ay may kontrol sa iyong pointer. Pindutin ang Esc para manumbalik ang kontrol.
 
+## Subframe crash notification
+
+crashed-subframe-learnmore =
+    .label = Alamin
+    .accesskey = l
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -508,6 +518,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Itago ang Bookmark Toolbar
            *[other] Ipakita ang Bookmark Sidebar
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Itago ang Bookmark Toolbar
+           *[other] Ipakita ang Bookmark Sidebar
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -518,6 +534,8 @@ bookmarks-search =
     .label = Hanapin sa mga Bookmark
 bookmarks-tools =
     .label = Mga Gamit sa Pag-bookmark
+bookmarks-bookmark-edit-panel =
+    .label = i-Edit ang bookmark na ito
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.

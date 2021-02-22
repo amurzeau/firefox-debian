@@ -3,6 +3,53 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = Taq samaj
+menu-application-hide-this =
+    .label = Tewäx { -brand-shorter-name }
+menu-application-hide-other =
+    .label = Kewaxik ch'aqa' chikKe
+menu-application-show-all =
+    .label = Tik'ut Ronojel
+menu-application-touch-bar =
+    .label = Tichinäx ri Na'onel Kajtz'ik…
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] Tel
+           *[other] Tel
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] e
+           *[other] T
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = Tel pa { -brand-shorter-name }
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = Tel el pa { -brand-shorter-name }
+menu-about =
+    .label = Chi rij ri { -brand-shorter-name }
+    .accesskey = C
+
 ## File Menu
 
 menu-file =
@@ -160,6 +207,8 @@ menu-history-undo-menu =
     .label = Taq Ruwi' k'a b'a' Ketz'apïx
 menu-history-undo-window-menu =
     .label = Taq k'ajtz'ib' k'a b'a' etz'apin
+menu-history-reopen-all-tabs = Kejaq Chik Ronojel Ruwi'
+menu-history-reopen-all-windows = Kejaq Chik Ronojel Taq Tzuwäch
 
 ## Bookmarks Menu
 
@@ -237,6 +286,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = Tob'äl
     .accesskey = T
@@ -252,9 +319,14 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Ruq'a' rub'ey Keyboard
     .accesskey = K
+menu-get-help =
+    .label = Tk'ul To'ïk
+    .accesskey = o
 menu-help-troubleshooting-info =
     .label = Etamab'äl richin yesol taq k'ayewal
     .accesskey = E
+menu-help-taskmanager =
+    .label = Kinuk'samajel taq Samaj
 menu-help-feedback-page =
     .label = Ketaq taq Rutzijol…
     .accesskey = K
@@ -272,3 +344,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Re re' man q'olonel ta chi ruxaq k'amaya'l…
     .accesskey = q
+menu-help-check-for-update =
+    .label = Kenik'öx taq K'exoj…
+    .accesskey = K

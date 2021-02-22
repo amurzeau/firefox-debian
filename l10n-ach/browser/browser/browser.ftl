@@ -291,6 +291,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = Lor
 
+## Tab actions
+
+
 ## Bookmarks toolbar items
 
 
@@ -396,6 +399,9 @@ fullscreen-exit-mac-button = Kat woko ki i wang kio ma opong (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> Tye ki twero i kom lacim ma megi. Dii Esc me dwoko twero cen bot in.
 pointerlock-warning-no-domain = Jami eni Tye ki twero i kom lacim ma megi. Dii Esc me dwoko twero cen bot in.
 
+## Subframe crash notification
+
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -424,6 +430,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Kan gitic me alamabuk
            *[other] Nen gintic alama buk
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Kan gitic me alamabuk
+           *[other] Nen gintic alama buk
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -434,6 +446,8 @@ bookmarks-search =
     .label = Yeny Alamabuk
 bookmarks-tools =
     .label = Gtic me keto alamabuk
+bookmarks-bookmark-edit-panel =
+    .label = Yub alama buk man
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.

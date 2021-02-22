@@ -23,7 +23,7 @@ inactive-css-not-flex-item = <strong>{ $property }</strong> majun nub'än pa re 
 inactive-css-not-flex-container = <strong>{ $property }</strong> majun nub'än chi re re ch'akulal re' ruma chi majun ta jalel k'wayöl.
 inactive-css-not-inline-or-tablecell = <strong>{ $property }</strong> majun nub'än pa re wachinäq re', ruma majun ta wachinäq pa k'amab'ey o ruch'utikajtz'ik kajtz'ik.
 inactive-css-property-because-of-display = <strong>{ $property }</strong> majun nub'än pa re wachinäq re', ruma k'o rutz'etik richin <strong>{ $display }</strong>.
-inactive-css-not-display-block-on-floated = Ri <strong>tz'etoj</strong> xujäl retal pa ri motor richin <strong>blok</strong> ruma chi ri ch'akulal <strong>jun k'o wi<strong>.
+inactive-css-not-display-block-on-floated = Ri <strong>tz'etoj</strong> xujäl retal pa ri motor richin <strong>blok</strong> ruma chi ri ch'akulal <strong>jun k'o wi</strong>.
 inactive-css-property-is-impossible-to-override-in-visited = Tikirel niyuj <strong>{ $property }</strong> ruma ri q'atoj <strong>:xtz'et</strong>.
 inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> majun nub'än pa re ch'akulal re' ruma chi majun ta ch'akulal ya'on ruk'ojlem.
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> majun nub'än pa re ch'akulal re' ruma chi ri <strong>overflow:hidden</strong> man jikib'an ta.
@@ -48,6 +48,8 @@ inactive-css-non-replaced-inline-or-table-column-or-column-group-fix = Titojtob'
 inactive-css-not-display-block-on-floated-fix = Tatojtob'ej nayüj <strong>jun k'o wi</strong> o tatz'aqatisaj <strong>display:block</strong>. { learn-more }
 inactive-css-position-property-on-unpositioned-box-fix = Tatojtob'ej najikib'a' runuk'ulem <strong>k'ojlemal</strong> chuwäch <strong>jun k'o wi</strong>. { learn-more }
 inactive-text-overflow-when-no-overflow-fix = Tatojtob'ej natz'aqatisaj <strong>overflow:hidden</strong>. { learn-more }
+inactive-css-not-for-internal-table-elements-fix = Tatojtob'ej nab'än runuk'ulem richinil <strong>tik'ut</strong> junwi chuwäch <strong>table-cell</strong>, <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong>, o <strong>table-footer-group</strong>. { learn-more }
+inactive-css-not-for-internal-table-elements-except-table-cells-fix = Tatojtob'ej nab'än runuk'ulem richinil <strong>tik'ut</strong> junwi chuwäch <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong>, o <strong>table-footer-group</strong>. { learn-more }
 inactive-outline-radius-when-outline-style-auto-or-none-fix = Tatojtob'ej najäl ri rub'anikil <strong>outline-style</strong> rik'in jun chik chuwa ri <strong>auto</strong> o <strong>none</strong>. { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers

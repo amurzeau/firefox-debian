@@ -19,14 +19,6 @@ printui-page-range-custom = Swójski
 printui-page-range-label = Boki
 printui-page-range-picker =
     .aria-label = Wobceŕk bokow wubraś
-printui-page-custom-range =
-    .aria-label = Swójski wobceŕk bokow zapódaś
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = Wót
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = do
 printui-page-custom-range-input =
     .aria-label = Swójski wobceŕk bokow zapódaś
     .placeholder = na pś. 2-6, 9, 12-16
@@ -49,6 +41,11 @@ printui-scale-pcent = Skalěrowaś
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = Śišćanje na woběma bokoma
 printui-duplex-checkbox = Na woběma bokoma šišćaś
+printui-two-sided-printing-off = Znjemóžnjony
+# Flip the page on the side (like a book).
+printui-two-sided-printing-side-edge = Na bok kipnuś
+# Flip the page on the top (like a vertical calendar).
+printui-two-sided-printing-top-edge = Górjej kipnuś
 # Section title for miscellaneous print options
 printui-options = Nastajenja
 printui-headers-footers-checkbox = Głowy a nogi śišćaś
@@ -61,7 +58,6 @@ printui-margins = Kšomy
 printui-margins-default = Standard
 printui-margins-min = Minimum
 printui-margins-none = Žedna
-printui-margins-custom = Swójske
 printui-margins-custom-inches = Swójske (cole)
 printui-margins-custom-top = Górjejce
 printui-margins-custom-top-inches = Górjejce (cole)
@@ -85,6 +81,7 @@ printui-pages-per-sheet = Boki na łopjeno
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
 printui-print-progress-indicator = Śišći se…
+printui-print-progress-indicator-saving = Składujo se…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

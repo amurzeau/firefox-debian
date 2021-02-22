@@ -342,11 +342,17 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Zapri
 
+## Tab actions
+
+browser-tab-audio-playing = Predvajanje
+browser-tab-audio-muted = Nemo
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
     .label = Uvozi zaznamke …
     .tooltiptext = Uvozite zaznamke v { -brand-short-name } iz drugega brskalnika.
+bookmarks-toolbar-empty-message = Za hiter dostop postavite svoje zaznamke v to orodno vrstico. <a data-l10n-name="manage-bookmarks">Upravljanje zaznamkov …</a>
 
 ## WebRTC Pop-up notifications
 
@@ -481,6 +487,7 @@ urlbar-result-action-tabtosearch-other-engine = Iščite z iskalnikom { $engine 
 
 urlbar-result-action-search-bookmarks = Iskanje po zaznamkih
 urlbar-result-action-search-history = Iskanje po zgodovini
+urlbar-result-action-search-tabs = Išči zavihke
 
 ## Full Screen and Pointer Lock UI
 
@@ -497,6 +504,16 @@ fullscreen-exit-mac-button = Izhod iz celozaslonskega načina (Esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ima nadzor nad vašim kazalcem. Pritisnite Esc za ponovni prevzem nadzora.
 pointerlock-warning-no-domain = Ta dokument ima nadzor nad vašim kazalcem. Pritisnite Esc za ponovni prevzem nadzora.
+
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Del te strani se je sesul.</strong> Pošljite { -brand-product-name }u poročilo, da ga obvestite  o težavi in mu jo pomagate hitreje odpraviti.
+crashed-subframe-learnmore =
+    .label = Več o tem
+    .accesskey = V
+crashed-subframe-submit =
+    .label = Pošlji poročilo
+    .accesskey = P
 
 ## Bookmarks panels, menus and toolbar
 
@@ -526,6 +543,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Skrij orodno vrstico zaznamkov
            *[other] Prikaži orodno vrstico zaznamkov
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Skrij orodno vrstico zaznamkov
+           *[other] Prikaži orodno vrstico zaznamkov
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -536,6 +559,8 @@ bookmarks-search =
     .label = Iskanje po zaznamkih
 bookmarks-tools =
     .label = Orodja zaznamkov
+bookmarks-bookmark-edit-panel =
+    .label = Uredi ta zaznamek
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -558,6 +583,8 @@ library-bookmarks-bookmark-this-page =
     .label = Dodaj stran med zaznamke
 library-bookmarks-bookmark-edit =
     .label = Uredi ta zaznamek
+library-recent-activity-title =
+    .value = Nedavne dejavnosti
 
 ## More items
 

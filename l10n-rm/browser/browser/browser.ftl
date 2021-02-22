@@ -346,6 +346,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Serrar
 
+## Tab actions
+
+browser-tab-audio-playing = Reproducziun activa
+browser-tab-audio-muted = Senza tun
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = I GIRA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = SENZA TUN
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = BLOCCÀ LA REPRODUCZIUN AUTOMATICA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = MALETG-EN-MALETG
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,12 +517,26 @@ fullscreen-exit-mac-button = Bandunar il modus da maletg entir (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> controllescha il punctader. Smatga ESC per reacquistar la controlla.
 pointerlock-warning-no-domain = Quest document controllescha il punctader. Smatga ESC per reacquistar la controlla.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Ina part da questa pagina è collabada.</strong> Trametta per plaschair in rapport per infurmar { -brand-product-name } davart quest problem e gidar d'al schliar pli svelt.
+crashed-subframe-learnmore =
+    .label = Ulteriuras infurmaziuns
+    .accesskey = l
+crashed-subframe-submit =
+    .label = Trametter il rapport
+    .accesskey = T
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Mussar tut ils segnapaginas
 bookmarks-recent-bookmarks =
     .value = Tschernì dacurt sco segnapagina
+bookmarks-manage-bookmarks =
+    .label = Administrar ils segnapaginas
+bookmarks-recent-bookmarks-panel =
+    .value = Segnapaginas novs
 bookmarks-toolbar-chevron =
     .tooltiptext = Mussar dapli segnapaginas
 bookmarks-sidebar-content =
@@ -532,6 +559,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Zuppentar la trav d'utensils da segnapaginas
            *[other] Mussar la trav d'utensils da segnapaginas
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Zuppentar la trav d'utensils da segnapaginas
+           *[other] Mussar la trav d'utensils da segnapaginas
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Zuppentar la trav d'utensils dals segnapaginas
+           *[other] Mussar la trav d'utensils dals segnapaginas
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +581,8 @@ bookmarks-search =
     .label = Tschertgar en ils segnapaginas
 bookmarks-tools =
     .label = Utensils da segnapaginas
+bookmarks-bookmark-edit-panel =
+    .label = Modifitgar quest segnapagina
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +596,9 @@ bookmarks-toolbar-placeholder =
     .title = Simbols dals segnapaginas
 bookmarks-toolbar-placeholder-button =
     .label = Simbols dals segnapaginas
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Agiuntar in segnapagina per il tab actual
 
 ## Library Panel items
 
@@ -564,7 +608,8 @@ library-bookmarks-bookmark-this-page =
     .label = Agiuntar in segnapagina…
 library-bookmarks-bookmark-edit =
     .label = Modifitgar quest segnapagina
-library-recent-activity-label = Activitad recenta
+library-recent-activity-title =
+    .value = Activitad recenta
 
 ## More items
 

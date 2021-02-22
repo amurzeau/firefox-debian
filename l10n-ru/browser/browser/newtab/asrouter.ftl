@@ -206,12 +206,18 @@ cfr-doorhanger-cryptominers-description = Ваша приватность име
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (String) - The date we began recording the count of blocked trackers
+#   $date (Number) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
         [one] { -brand-short-name } заблокировал более <b>{ $blockedCount }</b> трекера с { $date }!
         [few] { -brand-short-name } заблокировал более <b>{ $blockedCount }</b> трекеров с { $date }!
        *[many] { -brand-short-name } заблокировал более <b>{ $blockedCount }</b> трекеров с { $date }!
+    }
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+        [one] С { DATETIME($date, month: "long", year: "numeric") }! { -brand-short-name } заблокировал более <b>{ $blockedCount }</b> трекера
+        [few] С { DATETIME($date, month: "long", year: "numeric") }! { -brand-short-name } заблокировал более <b>{ $blockedCount }</b> трекеров
+       *[many] С { DATETIME($date, month: "long", year: "numeric") }! { -brand-short-name } заблокировал более <b>{ $blockedCount }</b> трекеров
     }
 cfr-doorhanger-milestone-ok-button = Посмотреть всё
     .accesskey = о
@@ -295,3 +301,8 @@ cfr-whatsnew-supercookies-body = Веб-сайты могут тайно уст�
 
 cfr-whatsnew-bookmarking-header = Улучшенные закладки
 cfr-whatsnew-bookmarking-body = Стало проще следить за своими любимыми сайтами. { -brand-short-name } теперь запоминает место, куда вы предпочитаете сохранять закладки, показывает панель закладок по умолчанию в новых вкладках, а также позволяет легко получить доступ к остальным закладкам через папку на панели инструментов.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Комплексная защита от межсайтового отслеживания куками
+cfr-whatsnew-cross-site-tracking-body = Теперь вы можете включить улучшенную защиту от отслеживающих кук. { -brand-short-name } может изолировать ваши действия и данные для сайта, на котором вы сейчас находитесь, поэтому данные, хранящиеся в браузере, не будут передаваться между веб-сайтами.

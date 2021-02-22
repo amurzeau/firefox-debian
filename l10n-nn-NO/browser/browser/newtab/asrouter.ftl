@@ -126,6 +126,9 @@ cfr-whatsnew-lockwise-take-link-text = Last ned appen
 
 cfr-whatsnew-searchbar-title = Skriv mindre, finn meir med adressefeltet
 cfr-whatsnew-searchbar-body-topsites = Vel adresselinja, og ein boks med lenker til dei mest besøkte nettstadane dine vil bli vist.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Forstørringsglas-ikon
 
 ## Picture-in-Picture
@@ -203,10 +206,14 @@ cfr-doorhanger-cryptominers-description = Personvernet ditt betyr noko. { -brand
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (String) - The date we began recording the count of blocked trackers
+#   $date (Number) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
        *[other] { -brand-short-name } har blokkert over <b>{ $blockedCount }</b> sporarar sidan { $date }!
+    }
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+       *[other] { -brand-short-name } blokkerte over <b>{ $blockedCount }</b>sporarar sidan { DATETIME($date, month: "long", year: "numeric") }!
     }
 cfr-doorhanger-milestone-ok-button = Vis alle
     .accesskey = s
@@ -275,3 +282,23 @@ cfr-whatsnew-clear-cookies-image-alt = Illustrasjon for blokkert infokapsel
 cfr-whatsnew-media-keys-header = Fleire mediakontrollar
 cfr-whatsnew-media-keys-body = Spel av og paus lyd eller video direkte frå tastaturet eller hovudsettet, noko som gjer det enkelt å kontrollere media frå ei anna fane, program eller til og med når datamaskina er låst. Du kan også bruke tastane framover og bakover for å skifte spor.
 cfr-whatsnew-media-keys-button = Finn ut korleis
+
+## What's new: Search shortcuts
+
+cfr-whatsnew-search-shortcuts-header = Søkjesnarvegar i adresselinja
+cfr-whatsnew-search-shortcuts-body = Når nå du no skriv inn ein søkjemotor eller ein spesifikk nettstad i adresselinja, vert det vist ein blå snarveg i søkjeforslaga nedanfor. Vel snarvegen for å fullføre søket direkte frå adresselinja.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Vern mot vondsinna super-infokapslar
+cfr-whatsnew-supercookies-body = Nettstadar kan i hemmelegheit leggje til ein «super-infokapsel» i nettlesaren din som kan følgje deg rundt på nettet, sjølv etter at du har fjerna infokapslane dine. { -brand-short-name } gir no eit sterkt vern mot super-infokapslar, slik at dei ikkje kan brukast til å spore aktivitetane dine på nettet frå ein nettstad til ein annan.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = Betre bokmerking
+cfr-whatsnew-bookmarking-body = Det er lettare å halde oversikt over favorittnettstadane dine. { -brand-short-name } hugsar no ønskt stad for lagra bokmerke, viser bokmerkeverktøylinja som standard på nye faner, og gir deg enkel tilgang til resten av bokmerka dine via ei verktøylinjemappe.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Omfattande vern mot sporingsinfokapslar på tvers av nettstadar
+cfr-whatsnew-cross-site-tracking-body = Du kan no velje betre vern mot infokapsel-sporing. { -brand-short-name } kan isolere aktivitetane og dataa dine til nettstaden du er på, slik at informasjon som er lagra i nettlesaren ikkje blir delt mellom nettstadar.

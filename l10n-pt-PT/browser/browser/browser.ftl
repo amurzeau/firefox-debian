@@ -346,6 +346,11 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Fechar
 
+## Tab actions
+
+browser-tab-audio-playing = A reproduzir
+browser-tab-audio-muted = Silenciado
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,11 +509,25 @@ fullscreen-exit-mac-button = Sair de ecrã completo (Esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> tem controlo do seu apontador. Pressione Esc para retomar o controlo.
 pointerlock-warning-no-domain = Este documento tem controlo do seu apontador. Pressione Esc para retomar o controlo.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Uma parte desta página falhou.</strong> Para tornar o problema conhecido e ajudar a que o mesmo seja resolvido mais rapidamente no { -brand-product-name }, por favor submeta um relatório.
+crashed-subframe-learnmore =
+    .label = Saber mais
+    .accesskey = b
+crashed-subframe-submit =
+    .label = Submeter relatório
+    .accesskey = S
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Mostrar todos os marcadores
 bookmarks-recent-bookmarks =
+    .value = Marcadores recentes
+bookmarks-manage-bookmarks =
+    .label = Gerir marcadores
+bookmarks-recent-bookmarks-panel =
     .value = Marcadores recentes
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostrar mais marcadores
@@ -532,6 +551,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Ocultar barra de ferramentas de marcadores
            *[other] Ver barra de ferramentas de marcadores
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Ocultar barra de ferramentas de marcadores
+           *[other] Ver barra de ferramentas de marcadores
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Ocultar barra de ferramentas de marcadores
+           *[other] Mostrar barra de ferramentas de marcadores
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +573,8 @@ bookmarks-search =
     .label = Pesquisar marcadores
 bookmarks-tools =
     .label = Ferramentas de marcadores
+bookmarks-bookmark-edit-panel =
+    .label = Editar este marcador
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +588,9 @@ bookmarks-toolbar-placeholder =
     .title = Itens da barra de ferramentas marcadores
 bookmarks-toolbar-placeholder-button =
     .label = Itens da barra de ferramentas marcadores
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Adicionar separador atual aos marcadores
 
 ## Library Panel items
 
@@ -564,7 +600,8 @@ library-bookmarks-bookmark-this-page =
     .label = Adicionar esta página aos marcadores
 library-bookmarks-bookmark-edit =
     .label = Editar este marcador
-library-recent-activity-label = Atividade recente
+library-recent-activity-title =
+    .value = Atividade recente
 
 ## More items
 

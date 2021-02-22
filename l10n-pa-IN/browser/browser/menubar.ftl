@@ -3,6 +3,53 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = ਸਰਵਿਸਾਂ
+menu-application-hide-this =
+    .label = { -brand-shorter-name } ਓਹਲੇ
+menu-application-hide-other =
+    .label = ਹੋਰ ਓਹਲੇ
+menu-application-show-all =
+    .label = ਸਭ ਵੇਖੋ
+menu-application-touch-bar =
+    .label = …ਟੱਚ ਪੱਟੀ ਨੂੰ ਪਸੰਦ ਮੁਤਾਬਕ ਢਾਲੋ
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] ਬਾਹਰ
+           *[other] ਬਾਹਰ
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] x
+           *[other] Q
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = { -brand-shorter-name } ਤੋਂ ਬਾਹਰ
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = { -brand-shorter-name } ਤੋਂ ਬਾਹਰ
+menu-about =
+    .label = { -brand-shorter-name } ਬਾਰੇ
+    .accesskey = A
+
 ## File Menu
 
 menu-file =
@@ -160,6 +207,8 @@ menu-history-undo-menu =
     .label = ਤਾਜ਼ਾ ਖੋਲ੍ਹੀਆਂ ਟੈਬਾਂ
 menu-history-undo-window-menu =
     .label = ਤਾਜ਼ਾ ਬੰਦ ਕੀਤੀਆਂ ਵਿੰਡੋ
+menu-history-reopen-all-tabs = ਸਭ ਟੈਬਾਂ ਨੂੰ ਮੁੜ-ਖੋਲ੍ਹੋ
+menu-history-reopen-all-windows = ਸਾਰੀਆਂ ਵਿੰਡੋ ਨੂੰ ਮੁੜ-ਖੋਲ੍ਹੋ
 
 ## Bookmarks Menu
 
@@ -237,6 +286,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = ਮਦਦ
     .accesskey = H
@@ -252,9 +319,14 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = ਕੀਬੋਰਡ ਸ਼ਾਰਟਕੱਟ
     .accesskey = K
+menu-get-help =
+    .label = ਮਦਦ ਲਵੋ
+    .accesskey = H
 menu-help-troubleshooting-info =
     .label = ਸਮੱਸਿਆ ਹੱਲ ਜਾਣਕਾਰੀ
     .accesskey = T
+menu-help-taskmanager =
+    .label = ਟਾਸਕ ਮੈਨੇਜਰ
 menu-help-feedback-page =
     .label = …ਸੁਝਾਅ ਭੇਜੋ
     .accesskey = S
@@ -272,3 +344,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = ਇਹ ਭਰਮਪੂਰਨ ਸਾਈਟ ਨਹੀਂ ਹੈ…
     .accesskey = d
+menu-help-check-for-update =
+    .label = …ਅੱਪਡੇਟਾਂ ਲਈ ਜਾਂਚ ਕਰੋ
+    .accesskey = C

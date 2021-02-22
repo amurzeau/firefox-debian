@@ -204,11 +204,16 @@ cfr-doorhanger-cryptominers-description = Számít az adatvédelem. A { -brand-s
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (String) - The date we began recording the count of blocked trackers
+#   $date (Number) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
         [one] A { -brand-short-name } több mint <b>{ $blockedCount }</b> követőt blokkolt { $date } óta!
        *[other] A { -brand-short-name } több mint <b>{ $blockedCount }</b> követőt blokkolt { $date } óta!
+    }
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+        [one] A { -brand-short-name } több mint <b>{ $blockedCount }</b> követőt blokkolt { DATETIME($date, month: "long", year: "numeric") } óta!
+       *[other] A { -brand-short-name } több mint <b>{ $blockedCount }</b> követőt blokkolt { DATETIME($date, month: "long", year: "numeric") } óta!
     }
 cfr-doorhanger-milestone-ok-button = Összes megjelenítése
     .accesskey = m
@@ -286,7 +291,14 @@ cfr-whatsnew-search-shortcuts-body = Ha most beír egy keresőszolgáltatás vag
 ## What's new: Cookies protection
 
 cfr-whatsnew-supercookies-header = Védelem a rosszindulatú szupersütik ellen
+cfr-whatsnew-supercookies-body = A webhelyek titkon „szupersütit” csatolhatnak böngészőjéhez, amely nyomon követheti Önt az interneten, még a sütik törlése után is. A { -brand-short-name } most már erős védelmet nyújt a szupersütikkel szemben, így azokat nem lehet a webhelyek közti online tevékenysége nyomon követésére használni.
 
 ## What's new: Better bookmarking
 
 cfr-whatsnew-bookmarking-header = Jobb könyvjelzőkezelés
+cfr-whatsnew-bookmarking-body = Könnyebb nyomon követni kedvenc webhelyeit. A { -brand-short-name } most megjegyzi az elmentett könyvjelzői kedvelt helyét, alapértelmezés szerint megjeleníti a könyvjelzők eszköztárat az új lapokon, s az eszköztármappán keresztül könnyen hozzáférhet a többi könyvjelzőhöz.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Átfogó védelem a webhelyek közötti sütik követése ellen
+cfr-whatsnew-cross-site-tracking-body = Mostantól jobban védve lehet a sütik általi nyomon követéstől. A { -brand-short-name } elkülönítheti tevékenységeit és adatait az épp használt weblaptól, így a böngészőben tárolt információ nem kerül webhelyközi megosztásra.

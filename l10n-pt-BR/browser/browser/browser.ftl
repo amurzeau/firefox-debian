@@ -68,7 +68,7 @@ urlbar-web-rtc-share-microphone-notification-anchor =
 urlbar-default-notification-anchor =
     .tooltiptext = Abrir painel de mensagens
 urlbar-geolocation-notification-anchor =
-    .tooltiptext = Abrir painel de solicitação de local
+    .tooltiptext = Abrir painel de requisição de localização
 urlbar-xr-notification-anchor =
     .tooltiptext = Abrir painel de permissão de realidade virtual
 urlbar-storage-access-anchor =
@@ -346,6 +346,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Fechar
 
+## Tab actions
+
+browser-tab-audio-playing = Reproduzindo
+browser-tab-audio-muted = Sem som
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = REPRODUZINDO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = SEM SOM
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = REPRODUÇÃO AUTOMÁTICA BLOQUEADA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = PICTURE-IN-PICTURE
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -369,7 +382,7 @@ popup-screen-sharing-never =
     .label = Nunca permitir
     .accesskey = N
 popup-silence-notifications-checkbox = Desativar notificação do { -brand-short-name } ao compartilhar
-popup-silence-notifications-checkbox-warning = O { -brand-short-name } não exibirá notificações enquanto você estiver compartilhando.
+popup-silence-notifications-checkbox-warning = O { -brand-short-name } não exibe notificações enquanto você está compartilhando.
 
 ## WebRTC window or screen share tab switch warning
 
@@ -410,8 +423,8 @@ urlbar-placeholder-search-mode-other-engine =
     .aria-label = Pesquisar { $name }
 # This placeholder is used when searching bookmarks.
 urlbar-placeholder-search-mode-other-bookmarks =
-    .placeholder = Digite termos de pesquisa
-    .aria-label = Pesquisar nos favoritos
+    .placeholder = Digite termos de busca
+    .aria-label = Procurar favoritos
 # This placeholder is used when searching history.
 urlbar-placeholder-search-mode-other-history =
     .placeholder = Digite termos de pesquisa
@@ -484,7 +497,7 @@ urlbar-result-action-tabtosearch-other-engine = Pesquisar com { $engine } direta
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
-urlbar-result-action-search-bookmarks = Pesquisar nos favoritos
+urlbar-result-action-search-bookmarks = Procurar favoritos
 urlbar-result-action-search-history = Pesquisar no histórico
 urlbar-result-action-search-tabs = Pesquisar nas abas
 
@@ -501,14 +514,28 @@ fullscreen-exit-mac-button = Sair da tela inteira (esc)
 # Please ensure that the domain stays in the `<span data-l10n-name="domain">` markup.
 # Variables
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
-pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> tem controle de seu ponteiro. Pressione Esc para retomar o controle.
+pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> tem controle de seu ponteiro. Tecle Esc para retomar o controle.
 pointerlock-warning-no-domain = Este documento tem o controle do seu ponteiro. Pressionar Esc para retomar o controle.
+
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Parte desta página travou.</strong> Para deixar o { -brand-product-name } ter conhecimento deste problema e corrigir mais rápido, envie um relato.
+crashed-subframe-learnmore =
+    .label = Saiba mais
+    .accesskey = S
+crashed-subframe-submit =
+    .label = Enviar relato
+    .accesskey = E
 
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Mostrar todos os favoritos
 bookmarks-recent-bookmarks =
+    .value = Favoritos recentes
+bookmarks-manage-bookmarks =
+    .label = Gerenciar favoritos
+bookmarks-recent-bookmarks-panel =
     .value = Favoritos recentes
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostrar mais favoritos
@@ -523,14 +550,26 @@ bookmarks-mobile-bookmarks-menu =
 bookmarks-tools-sidebar-visibility =
     .label =
         { $isVisible ->
-            [true] Ocultar Painel de Favoritos
-           *[other] Ver painel de favoritos
+            [true] Ocultar painel de favoritos
+           *[other] Exibir painel de favoritos
         }
 bookmarks-tools-toolbar-visibility =
     .label =
         { $isVisible ->
             [true] Ocultar Barra de Favoritos
            *[other] Ver barra de favoritos
+        }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Ocultar Barra de Favoritos
+           *[other] Ver barra de favoritos
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Ocultar barra de favoritos
+           *[other] Mostrar barra de favoritos
         }
 bookmarks-tools-menu-button-visibility =
     .label =
@@ -539,9 +578,11 @@ bookmarks-tools-menu-button-visibility =
            *[other] Adicionar menu de favoritos à barra de ferramentas
         }
 bookmarks-search =
-    .label = Pesquisar nos favoritos
+    .label = Procurar favoritos
 bookmarks-tools =
     .label = Ferramentas de favoritos
+bookmarks-bookmark-edit-panel =
+    .label = Editar este favorito
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +596,9 @@ bookmarks-toolbar-placeholder =
     .title = Itens da barra de favoritos
 bookmarks-toolbar-placeholder-button =
     .label = Itens da barra de favoritos
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Adicionar aba atual aos favoritos
 
 ## Library Panel items
 
@@ -564,7 +608,8 @@ library-bookmarks-bookmark-this-page =
     .label = Adicionar página aos favoritos
 library-bookmarks-bookmark-edit =
     .label = Editar este favorito
-library-recent-activity-label = Atividade recente
+library-recent-activity-title =
+    .value = Atividade recente
 
 ## More items
 

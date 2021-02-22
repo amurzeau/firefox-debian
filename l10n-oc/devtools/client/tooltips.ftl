@@ -23,13 +23,14 @@ inactive-css-not-flex-item = <strong>{ $property }</strong> a pas cap d’efèit
 inactive-css-not-flex-container = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que es pas un contenidor flex.
 inactive-css-not-inline-or-tablecell = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que es pas un element « inline » o element « table-cell ».
 inactive-css-property-because-of-display = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que sa proprietat « display » val <strong>{ $display }</strong>.
-inactive-css-not-display-block-on-floated = La valor <strong>display</strong> es estada modificada pel motor en <strong>block</strong> perque l’element es <strong>floated<strong>.
+inactive-css-not-display-block-on-floated = La valor <strong>display</strong> es estada modificada pel motor en <strong>block</strong> perque l’element es <strong>floated</strong>.
 inactive-css-property-is-impossible-to-override-in-visited = Es pas possible de subrecargar <strong>{ $property }</strong> a causa de la restriccion <strong>:visited</strong>.
 inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que es pas un element posicionat.
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> a pas cap d’efèit sus aqueste element per çò que <strong>overflow:hidde</strong> es pas definit.
 inactive-outline-radius-when-outline-style-auto-or-none = <strong>{ $property }</strong> a cap d’efèit sus aqueste element per çò que son <strong>outline-style</strong> es definit a <strong>auto</strong> o <strong>none</strong>.
 inactive-css-not-for-internal-table-elements = <strong>{ $property }</strong> a cap d’efècte suls elements de tablèu intèrns.
 inactive-css-not-for-internal-table-elements-except-table-cells = <strong>{ $property }</strong> a cap d’efècte suls elements de tablèu intèrns levat per las cellulas de tablèu.
+inactive-css-not-table = <strong>{ $property }</strong>a pas cap d’efèit sus aqueste element per çò qu’es pas un tablèu.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -51,6 +52,7 @@ inactive-text-overflow-when-no-overflow-fix = Ensajatz d’apondre <strong>overf
 inactive-css-not-for-internal-table-elements-fix = Ensajatz d’atribuir a la proprietat <strong>display</strong> una valor diferenta de <strong>table-cell</strong>, <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong> ou <strong>table-footer-group</strong>. { learn-more }
 inactive-css-not-for-internal-table-elements-except-table-cells-fix = Ensajatz d’atribuir a la proprietat <strong>display</strong> una valor diferenta de <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong> ou <strong>table-footer-group</strong>. { learn-more }
 inactive-outline-radius-when-outline-style-auto-or-none-fix = Ensajar de definir sa proprietat <strong>outline-style</strong> a una valor diferenta de <strong>auto</strong> o <strong>none</strong>. { learn-more }
+inactive-css-not-table-fix = Ensajatz d’apondre <strong>display:table</strong> o <strong>display:inline-table</strong>. { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers
 ## we display an icon. When this icon is hovered this message is displayed to explain why

@@ -346,6 +346,9 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Cerrar
 
+## Tab actions
+
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,6 +507,9 @@ fullscreen-exit-mac-button = Salir de Pantalla Completa (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> tiene el control de tu puntero. Presiona Esc para recuperarlo.
 pointerlock-warning-no-domain = Este documento tiene el control de tu puntero. Presiona Esc para recuperarlo.
 
+## Subframe crash notification
+
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -532,6 +538,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Ocultar barra de marcadores
            *[other] Ver la barra de marcadores
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Ocultar barra de marcadores
+           *[other] Ver la barra de marcadores
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +554,8 @@ bookmarks-search =
     .label = Buscar Marcadores
 bookmarks-tools =
     .label = Herramientas de marcadores
+bookmarks-bookmark-edit-panel =
+    .label = Modificar este marcador
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -564,7 +578,8 @@ library-bookmarks-bookmark-this-page =
     .label = Agregar esta página a marcadores
 library-bookmarks-bookmark-edit =
     .label = Modificar este marcador
-library-recent-activity-label = Actividad reciente
+library-recent-activity-title =
+    .value = Actividad reciente
 
 ## More items
 

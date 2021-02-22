@@ -13,11 +13,15 @@ permission-dialog-description = Baimendu gune honi { $scheme } lotura irekitzen?
 permission-dialog-description-file = Baimendu fitxategi honi { $scheme } lotura irekitzen?
 permission-dialog-description-host = Baimendu { $host } ostalariari { $scheme } lotura irekitzen?
 permission-dialog-description-app = Baimendu gune honi { $scheme } lotura { $appName } erabiliz irekitzen?
+permission-dialog-description-host-app = Baimendu { $host } guneari { $scheme } lotura { $appName } erabiliz irekitzen?
+permission-dialog-description-file-app = Baimendu fitxategi honi { $scheme } lotura { $appName } erabiliz irekitzen?
 
 ## Please keep the emphasis around the hostname and scheme (ie the
 ## `<strong>` HTML tags). Please also keep the hostname as close to the start
 ## of the sentence as your language's grammar allows.
 
+permission-dialog-remember = Baimendu beti <strong>{ $host }</strong> guneari <strong>{ $scheme }</strong> loturak irekitzea
+permission-dialog-remember-file = Baimendu beti fitxategi honi <strong>{ $scheme }</strong> loturak irekitzea
 
 ##
 

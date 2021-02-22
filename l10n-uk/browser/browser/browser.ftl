@@ -348,6 +348,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Закрити
 
+## Tab actions
+
+browser-tab-audio-playing = Відтворення
+browser-tab-audio-muted = Без звуку
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = ВІДТВОРЕННЯ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = БЕЗ ЗВУКУ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = АВТОВІДТВОРЕННЯ ЗАБЛОКОВАНО
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = ЗОБРАЖЕННЯ В ЗОБРАЖЕННІ
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -506,12 +519,26 @@ fullscreen-exit-mac-button = Вийти з повноекранного режи
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> отримав контроль над вашим вказівником. Натисніть Esc для повернення контролю.
 pointerlock-warning-no-domain = Цей документ отримав контроль над вашим вказівником. Натисніть Esc для повернення контролю.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Збій частини цієї сторінки.</strong> Надішліть звіт, щоб повідомити { -brand-product-name } про цю проблему для швидшого її розв'язання.
+crashed-subframe-learnmore =
+    .label = Дізнатися більше
+    .accesskey = Д
+crashed-subframe-submit =
+    .label = Надіслати звіт
+    .accesskey = Н
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Показати всі закладки
 bookmarks-recent-bookmarks =
     .value = Останні закладки
+bookmarks-manage-bookmarks =
+    .label = Керувати закладками
+bookmarks-recent-bookmarks-panel =
+    .value = Недавні закладки
 bookmarks-toolbar-chevron =
     .tooltiptext = Показати інші закладки
 bookmarks-sidebar-content =
@@ -534,6 +561,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Приховати панель закладок
            *[other] Показати панель закладок
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Приховати панель закладок
+           *[other] Показати панель закладок
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Сховати панель закладок
+           *[other] Показати панель закладок
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -544,6 +583,8 @@ bookmarks-search =
     .label = Пошук закладок
 bookmarks-tools =
     .label = Інструменти закладок
+bookmarks-bookmark-edit-panel =
+    .label = Редагувати цю закладку
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -557,6 +598,9 @@ bookmarks-toolbar-placeholder =
     .title = Елементи панелі закладок
 bookmarks-toolbar-placeholder-button =
     .label = Елементи панелі закладок
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Закласти поточну вкладку
 
 ## Library Panel items
 
@@ -566,7 +610,8 @@ library-bookmarks-bookmark-this-page =
     .label = Закласти цю сторінку
 library-bookmarks-bookmark-edit =
     .label = Редагувати цю закладку
-library-recent-activity-label = Нещодавня активність
+library-recent-activity-title =
+    .value = Нещодавня активність
 
 ## More items
 

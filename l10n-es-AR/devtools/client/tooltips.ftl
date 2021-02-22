@@ -23,13 +23,14 @@ inactive-css-not-flex-item = <strong>{ $property }</strong> no tiene ningún efe
 inactive-css-not-flex-container = <strong>{ $property }</strong> no tiene ningún efecto en este elemento, ya que no es un contenedor flexible.
 inactive-css-not-inline-or-tablecell = <strong> { $property }</strong> no tiene ningún efecto en este elemento, ya que no es un elemento en línea o de celda de tabla.
 inactive-css-property-because-of-display = { $property }{ $property }</strong> no tiene efecto en este elemento, ya que tiene una visualización de <strong>{ $display }</strong>.
-inactive-css-not-display-block-on-floated = El motor cambió el valor de <strong> visualización </strong> a <strong> bloque </strong> porque el elemento está <strong> flotando <strong>.
+inactive-css-not-display-block-on-floated = El motor cambió el valor de <strong>visualización</strong> a <strong>bloque</strong> porque el elemento está <strong>flotando</strong>.
 inactive-css-property-is-impossible-to-override-in-visited = Es imposible anular <strong>{ $property }</strong> debido a la restricción <strong>:visitada </strong>.
 inactive-css-position-property-on-unpositioned-box = <strong> { $property }</strong> no tiene efecto en este elemento ya que no es un elemento posicionado.
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> no tiene efecto en este elemento porque <strong>overflow:hidden</strong> no está establecido.
 inactive-outline-radius-when-outline-style-auto-or-none = <strong>{ $property }</strong> no tiene efecto en este elemento porque su <strong>esquema-style</strong> es <strong>auto</strong> o <strong>none</strong>.
 inactive-css-not-for-internal-table-elements = <strong>{ $property }</strong> no tiene efecto en elementos internos de la tabla.
 inactive-css-not-for-internal-table-elements-except-table-cells = <strong>{ $property }</strong> no tiene efecto en elementos internos de la tabla excepto en celdas de la tabla.
+inactive-css-not-table = <strong>{ $property }</strong> no tiene efecto en este elemento ya que no es un elemento de la cuadrícula.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -51,6 +52,7 @@ inactive-text-overflow-when-no-overflow-fix = Intente agregar <strong>overflow:h
 inactive-css-not-for-internal-table-elements-fix = Pruebe configurar su propiedad <strong>mostrar</strong> a algo distinto de <strong>table-cell</strong>, <strong>tabla-celda</strong>, <strong>tabla-columna</strong>, <strong>tabla-fila>, <strong>table-grupo-tabla-pie de página</strong>. { learn-more }
 inactive-css-not-for-internal-table-elements-except-table-cells-fix = Pruebe establecer su propiedad <strong>mostrar</strong> a algo diferente de<strong>tabla-columna</strong>, <strong>table-fila</strong>, <strong>table-de gupo de-columnas</strong>, <strong>tabla-de grupo de-filas</strong> o <strong>tabla de grupo de pies de página</strong>. { learn-more }
 inactive-outline-radius-when-outline-style-auto-or-none-fix = Intenté cambiar la propiedad <strong>outline-style</strong> a algo diferente a <strong>auto</strong> o <strong>none</strong>. { learn-more }
+inactive-css-not-table-fix = Intente agregar <strong>display:grid</strong> o <strong>display:inline-grid</strong>. { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers
 ## we display an icon. When this icon is hovered this message is displayed to explain why

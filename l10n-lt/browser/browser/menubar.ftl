@@ -3,6 +3,53 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = Paslaugos
+menu-application-hide-this =
+    .label = Nerodyti „{ -brand-shorter-name }“
+menu-application-hide-other =
+    .label = Nerodyti kitų
+menu-application-show-all =
+    .label = Rodyti viską
+menu-application-touch-bar =
+    .label = Tvarkyti lietimo juostą…
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] Baigti darbą
+           *[other] Baigti darbą
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] B
+           *[other] B
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = Baigti „{ -brand-shorter-name }“ darbą
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = Baigti „{ -brand-shorter-name }“ darbą
+menu-about =
+    .label = Apie „{ -brand-shorter-name }“
+    .accesskey = A
+
 ## File Menu
 
 menu-file =
@@ -160,6 +207,8 @@ menu-history-undo-menu =
     .label = Paskiausiai užvertos kortelės
 menu-history-undo-window-menu =
     .label = Paskiausiai užverti langai
+menu-history-reopen-all-tabs = Įkelti visas korteles
+menu-history-reopen-all-windows = Įkelti visus langus
 
 ## Bookmarks Menu
 
@@ -237,6 +286,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = Žinynas
     .accesskey = Ž
@@ -252,9 +319,14 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Spartieji klavišai
     .accesskey = k
+menu-get-help =
+    .label = Žinynas ir pagalba
+    .accesskey = Ž
 menu-help-troubleshooting-info =
     .label = Informacija problemų sprendimui
     .accesskey = r
+menu-help-taskmanager =
+    .label = Užduočių tvarkytuvė
 menu-help-feedback-page =
     .label = Siųsti atsiliepimą…
     .accesskey = S
@@ -272,3 +344,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Tai nėra apgaulinga svetainė…
     .accesskey = g
+menu-help-check-for-update =
+    .label = Ieškoti naujinimų…
+    .accesskey = I

@@ -346,6 +346,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Tampar
 
+## Tab actions
+
+browser-tab-audio-playing = Lectura
+browser-tab-audio-muted = Mut
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = LECTURA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = MUT
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = LECTURA AUTO BLOCADA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = VIDÈO-INCRUSTADA
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,12 +517,26 @@ fullscreen-exit-mac-button = Sortir del mòde ecran complet (Esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> a lo contra-ròtle sus la vòstra mirga. Quichatz sus Esc per tornar recuperar lo contra-ròtle.
 pointerlock-warning-no-domain = Aqueste document a lo contraròtle sul vòstre gredon. Quichatz Esc per tornar prendre lo contra-ròtle.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Part d’aquesta pagina a fracassat.</strong> Per notificar { -brand-product-name } d’aqueste problèma e que siá reglat, enviatz un rapòrt.
+crashed-subframe-learnmore =
+    .label = Ne saber mai
+    .accesskey = N
+crashed-subframe-submit =
+    .label = Enviar un rapòrt
+    .accesskey = E
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Afichar totes los marcapaginas
 bookmarks-recent-bookmarks =
     .value = Marcats recentament
+bookmarks-manage-bookmarks =
+    .label = Gerir los marcapaginas
+bookmarks-recent-bookmarks-panel =
+    .value = Marcapaginas recents
 bookmarks-toolbar-chevron =
     .tooltiptext = Afichar mai de marcapaginas
 bookmarks-sidebar-content =
@@ -532,6 +559,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Amagar la barra personala
            *[other] Afichar la barra personala
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Amagar la barra personala
+           *[other] Afichar la barra personala
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Amagar la barra personala
+           *[other] Afichar la barra personala
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +581,8 @@ bookmarks-search =
     .label = Recercar dins los marcapaginas
 bookmarks-tools =
     .label = Aisinas dels marcapaginas
+bookmarks-bookmark-edit-panel =
+    .label = Modificar aqueste marcapagina
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +596,9 @@ bookmarks-toolbar-placeholder =
     .title = Elements de la barra personala
 bookmarks-toolbar-placeholder-button =
     .label = Elements de la barra personala
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Onglet marcapagina actual
 
 ## Library Panel items
 
@@ -564,7 +608,8 @@ library-bookmarks-bookmark-this-page =
     .label = Marcar aquesta pagina
 library-bookmarks-bookmark-edit =
     .label = Modificar aqueste marcapagina
-library-recent-activity-label = Activitat recenta
+library-recent-activity-title =
+    .value = Activitat recenta
 
 ## More items
 

@@ -85,6 +85,7 @@ login-item-new-login-title = Создать новый логин
 login-item-edit-button = Изменить
 about-logins-login-item-remove-button = Удалить
 login-item-origin-label = Адрес веб-сайта
+login-item-tooltip-message = Проверьте, что он действительно соответствует адресу веб-сайта, на который вы входите.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Имя пользователя
@@ -276,6 +277,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Документ CSV
        *[other] CSV-файл
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Документ TSV
+       *[other] TSV-файл
+    }
 
 ##
 ## Variables:
@@ -307,3 +315,20 @@ about-logins-import-dialog-items-error =
        *[many] <span>Ошибки:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(не импортированы)</span>
     }
 about-logins-import-dialog-done = Готово
+about-logins-import-dialog-error-title = Ошибка импорта
+about-logins-import-dialog-error-conflicting-values-title = Несколько конфликтующих учётных данных для одного логина
+about-logins-import-dialog-error-conflicting-values-description = Например: несколько имён пользователей, паролей, URL для одного логина.
+about-logins-import-dialog-error-file-format-title = Неверный формат файла
+about-logins-import-dialog-error-file-format-description = Неверные или отсутствующие заголовки столбцов. Проверьте, что в файле действительно содержатся колонки для имени пользователя, пароля и URL.
+about-logins-import-dialog-error-file-permission-title = Не удалось прочитать файл
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } не имеет прав на чтение файла. Попробуйте сменить разрешения для файла.
+about-logins-import-dialog-error-unable-to-read-title = Не удалось обработать файл
+about-logins-import-dialog-error-unable-to-read-description = Проверьте, что вы действительно выбрали CSV- или TSV-файл.
+about-logins-import-dialog-error-no-logins-imported = Ни один логин не импортирован
+about-logins-import-dialog-error-learn-more = Подробнее
+about-logins-import-dialog-error-try-again = Попробовать снова…
+about-logins-import-dialog-error-cancel = Отмена
+
+## Logins import report page
+
+about-logins-import-report-page-title = Импорт сводного отчёта

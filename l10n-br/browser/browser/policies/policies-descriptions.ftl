@@ -34,8 +34,8 @@ policy-DisableFirefoxScreenshots = Diweredekaat ar c'heweriuster Tapadennoù skr
 policy-DisableFirefoxStudies = Mirout { -brand-short-name } da lañsañ studiadennoù.
 policy-DisableForgetButton = Diweredekaat an afell evit dilemel ar roadennoù.
 policy-DisableFormHistory = Chom hep derc'hel soñj eus ar roll istor klask ha furmskridoù.
-policy-DisableMasterPasswordCreation = M'eo gwir e vo tu krouiñ ur ger-tremen mestr.
-policy-DisablePrimaryPasswordCreation = M'eo gwir e vo tu krouiñ ur ger-tremen pennañ.
+policy-DisableMasterPasswordCreation = M’eo gwir e vo tu krouiñ ur ger-tremen mestr.
+policy-DisablePrimaryPasswordCreation = M’eo gwir e vo tu krouiñ ur ger-tremen pennañ.
 policy-DisablePasswordReveal = Na aotren ar gerioù-tremen da vezañ diskouezet en titouroù kennaskañ enrollet.
 policy-DisablePocket = Diweredekaat ar c'heweriuster evit enrollañ pajennoù e Pocket.
 policy-DisablePrivateBrowsing = Diweredekaat ar merdeiñ prevez.
@@ -61,10 +61,10 @@ policy-ExtensionSettings = Ardoit pep tra a sell deus an askouezhioù
 policy-ExtensionUpdate = (Di)weredekaat hizivadennoù askouezhioù ent emgefreek.
 policy-FirefoxHome = Kefluniañ degemer firefox
 policy-FlashPlugin = Aotren pe difenn arver an enlugellad Flash.
-policy-HardwareAcceleration = M'eo lakaet da Gaou e vo diweredekaet herrekadur ar periant.
+policy-HardwareAcceleration = M’eo lakaet da Gaou e vo diweredekaet herrekadur ar periant.
 # “lock” means that the user won’t be able to change this setting
 policy-Homepage = Arventennañ ar bennbajenn. Gallout a rit ivez prennañ anezhi.
-policy-InstallAddonsPermission = Aotren lec'hiennoù 'zo da staliañ askouezhioù.
+policy-InstallAddonsPermission = Aotren lec'hiennoù ’zo da staliañ askouezhioù.
 policy-LegacyProfiles = Diweredekaat ar c'heweriuster a redi un aelad distag evit pep staliadur.
 
 ## Do not translate "SameSite", it's the name of a cookie attribute.
@@ -72,7 +72,7 @@ policy-LegacyProfiles = Diweredekaat ar c'heweriuster a redi un aelad distag evi
 
 ##
 
-policy-LocalFileLinks = Aotren lec'hiennoù 'zo da liammañ restroù lec'hel.
+policy-LocalFileLinks = Aotren lec'hiennoù ’zo da liammañ restroù lec’hel.
 policy-NetworkPrediction = (Di)weredekaat an diougan rouedad (rakkerc'hat DNS)
 policy-NewTabPage = (Di)weredekaat ar bajenn ivinell nevez.
 policy-NoDefaultBookmarks = Diweredekaat krouidigezh ar sinedoù dre ziouer roet gant { -brand-short-name }, hag ar sinedoù speredek (Gweladennet ar muiañ, ivinelloù nevesañ). Evezh: ar reolenn-mañ a zo efedus ar wech kentañ vez loc'het Firefox hepken.
@@ -85,7 +85,7 @@ policy-PasswordManagerEnabled = Gweredekaat enrollañ ar gerioù-tremen en ardoe
 policy-PDFjs = Diweredekaat pe kefluniañ PDF.js, gweler PDF enkorfet { -brand-short-name }.
 policy-Permissions2 = Kefluniañ an aotreoù evit ar c'hamera, ar glevell, al lec'hiadurezh, ar rebuzadurioù hag al lenn emgefreek.
 policy-PictureInPicture = (Di)weredekaat Skeudenn-ouzh-Skeudenn.
-policy-PopupBlocking = Aotren lec'hiennoù 'zo da skrammañ ar prenestroù diflugell dre ziouer.
+policy-PopupBlocking = Aotren lec'hiennoù ’zo da skrammañ ar prenestroù diflugell dre ziouer.
 policy-Preferences = Lakaat ha prennañ an talvoud evit un isteskad gwellvezioù.
 policy-PromptForDownloadLocation = Goulenn e pelec'h enrollañ ar restroù pa vez pellgarget.
 policy-Proxy = Kefluniañ arventennoù ar proksi.
@@ -99,6 +99,6 @@ policy-SecurityDevices = Staliañ ar molladoù PKCS #11.
 policy-SSLVersionMax = Arventennañ an handelv SSL uhelañ.
 policy-SSLVersionMin = Arventennañ an handelv SSL izelañ.
 policy-SupportMenu = Ouzhpennañ un elfenn lañser skor personelaet el lañser skoazell.
-policy-UserMessaging = Na ziskouez kemennadennoù 'zo d'an arveriad.
+policy-UserMessaging = Na ziskouez kemennadennoù ’zo d'an arveriad.
 # “format” refers to the format used for the value of this policy.
 policy-WebsiteFilter = Stankañ al lec'hiennoù da vezañ gweladennet. Lennit an teuliadur evit kaout muioc'h a vunudoù war ar mentrezh.

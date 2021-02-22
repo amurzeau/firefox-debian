@@ -18,14 +18,6 @@ printui-page-range-custom = Адмыслова
 printui-page-range-label = Старонкі
 printui-page-range-picker =
     .aria-label = Выбраць абсяг старонак
-printui-page-custom-range =
-    .aria-label = Увядзіце уласны дыяпазон старонак
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = Ад
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = да
 printui-page-custom-range-input =
     .aria-label = Увядзіце ўласны дыяпазон старонак
     .placeholder = напрыклад, 2-6, 9, 12-16
@@ -48,6 +40,11 @@ printui-scale-pcent = Маштаб
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = Двухбаковы друк
 printui-duplex-checkbox = Друкаваць на абедзвюх старанах
+printui-two-sided-printing-off = Выключаны
+# Flip the page on the side (like a book).
+printui-two-sided-printing-side-edge = Перавярнуць па бакавым краі
+# Flip the page on the top (like a vertical calendar).
+printui-two-sided-printing-top-edge = Перавярнуць па верхнім краі
 # Section title for miscellaneous print options
 printui-options = Налады
 printui-headers-footers-checkbox = Друкаваць загалоўкі і калантытулы
@@ -60,7 +57,6 @@ printui-margins = Палі
 printui-margins-default = Прадвызначана
 printui-margins-min = Мінімум
 printui-margins-none = Няма
-printui-margins-custom = Адмыслова
 printui-margins-custom-inches = Уласныя (цалі)
 printui-margins-custom-top = Уверсе
 printui-margins-custom-top-inches = Уверсе (цалі)
@@ -84,6 +80,7 @@ printui-pages-per-sheet = Старонак на аркушы
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
 printui-print-progress-indicator = Друк…
+printui-print-progress-indicator-saving = Захаванне…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

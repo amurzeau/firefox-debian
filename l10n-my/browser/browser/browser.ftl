@@ -287,6 +287,9 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = ပိတ်ပါ
 
+## Tab actions
+
+
 ## Bookmarks toolbar items
 
 
@@ -366,6 +369,9 @@ fullscreen-exit-mac-button = မြင်ကွင်းအပြည့် က�
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> သင့်ပွိုင်တာကို ထိန်းချုပ်ထားသည်။ ပြန်လည်ရယူရန် Esc ကို နှိပ်ပါ။
 pointerlock-warning-no-domain = ဒီစာတမ်းသည် သင့်ပွိုင်တာကို ထိန်းချုပ်ထားသည်။ ပြန်လည်ရယူရန် Esc ကို နှိပ်ပါ။
 
+## Subframe crash notification
+
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -394,6 +400,12 @@ bookmarks-tools-toolbar-visibility =
             [true] စာမှတ်များအတန်းကို ပိတ်ရန်
            *[other] စာမှတ်များ ကိရိယာအတန်းကို ပြပါ
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] စာမှတ်များအတန်းကို ပိတ်ရန်
+           *[other] စာမှတ်များ ကိရိယာအတန်းကို ပြပါ
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -404,6 +416,8 @@ bookmarks-search =
     .label = စာမှတ်များကို ရှာရန်
 bookmarks-tools =
     .label = စာမှတ်ဆိုင်ရာ တန်ဆာပလာများ
+bookmarks-bookmark-edit-panel =
+    .label = ဒီစာမှတ်ကို ပြင်ဆင်မည်
 bookmarks-toolbar-menu =
     .label = စာမှတ်များကိရိယာအတန်း
 bookmarks-toolbar-placeholder =

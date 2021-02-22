@@ -261,6 +261,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = បិទ
 
+## Tab actions
+
+
 ## Bookmarks toolbar items
 
 
@@ -334,6 +337,9 @@ fullscreen-exit-mac-button = បិទ​ពេញ​អេក្រង់ (គ�
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> មាន​ការ​គ្រប់គ្រង​លើ​ព្រួញ​ចង្អុល​របស់​អ្នក។ ចុច Esc ដើម្បី​ទទួល​បាន​ការ​គ្រប់គ្រង​មកវិញ។
 pointerlock-warning-no-domain = ឯកសារនេះ​មាន​សិទ្ធ​គ្រប់គ្រង​លើ​ព្រួញ​ចង្អុល​របស់​អ្នក។ ចុច Esc ដើម្បី​ទទួល​បាន​ការ​គ្រប់គ្រង​មក​វិញ។
 
+## Subframe crash notification
+
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -362,6 +368,12 @@ bookmarks-tools-toolbar-visibility =
             [true] លាក់របារឧបករណ៍ចំណាំ
            *[other] មើល​របារ​ឧបករណ៍​ចំណាំ
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] លាក់របារឧបករណ៍ចំណាំ
+           *[other] មើល​របារ​ឧបករណ៍​ចំណាំ
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -372,6 +384,8 @@ bookmarks-search =
     .label = ស្វែងរក​ចំណាំ
 bookmarks-tools =
     .label = ​ឧបករណ៍​ចំណាំ
+bookmarks-bookmark-edit-panel =
+    .label = កែ​សម្រួល​ចំណាំ​នេះ
 bookmarks-toolbar-menu =
     .label = របារ​ឧបករណ៍​ចំណាំ
 bookmarks-toolbar-placeholder =

@@ -34,3 +34,54 @@ appmenuitem-save-page =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Gnéithe Nua
+
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
+## "Enable Profiler Menu Button".
+
+
+## Help panel
+
+appmenu-about =
+    .label = Maidir le { -brand-shorter-name }
+    .accesskey = M
+appmenu-help-product =
+    .label = Cabhair { -brand-shorter-name }
+    .accesskey = C
+appmenu-help-show-tour =
+    .label = Turas ar { -brand-shorter-name }
+    .accesskey = u
+appmenu-help-keyboard-shortcuts =
+    .label = Aicearraí Méarchláir
+    .accesskey = A
+appmenu-help-troubleshooting-info =
+    .label = Fabhtcheartú
+    .accesskey = t
+appmenu-help-taskmanager =
+    .label = Bainisteoir Tascanna
+appmenu-help-feedback-page =
+    .label = Seol Aiseolas Chugainn…
+    .accesskey = S
+
+## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-safe-mode-without-addons =
+    .label = Atosaigh gan aon bhreiseáin…
+    .accesskey = A
+appmenu-help-safe-mode-with-addons =
+    .label = Atosaigh leis na Breiseáin ar siúl…
+    .accesskey = A
+
+## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-report-deceptive-site =
+    .label = Tuairiscigh suíomh cealgach…
+    .accesskey = c
+appmenu-help-not-deceptive =
+    .label = Ní suíomh cealgach é seo…
+    .accesskey = c
+
+##
+

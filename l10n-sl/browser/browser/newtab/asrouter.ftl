@@ -290,3 +290,12 @@ cfr-whatsnew-media-keys-button = Poglejte, kako
 
 ## What's new: Search shortcuts
 
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Zaščita pred zlonamernimi superpiškotki
+cfr-whatsnew-supercookies-body = Spletna mesta lahko v vaš brskalnik skrivaj namestijo »superpiškotek«, s katerim vam lahko sledijo po spletu tudi potem, ko izbrišete piškotke. { -brand-short-name } sedaj nudi močno zaščito proti superpiškotkom, ki onemogoča, da bi vam z njimi sledili z enega spletnega mesta na drugo.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = Boljše upravljanje zaznamkov

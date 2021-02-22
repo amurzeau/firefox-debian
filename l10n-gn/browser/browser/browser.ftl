@@ -346,6 +346,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Mboty
 
+## Tab actions
+
+browser-tab-audio-playing = Ñemboheta
+browser-tab-audio-muted = Mokirirĩ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = ÑEMBOSARÁIPE
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = OGUEPYRE
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AUTOPLAY JOKOPYRE
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = PICTURE-IN-PICTURE
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,12 +517,25 @@ fullscreen-exit-mac-button = Esẽ mba’erechaha tuichavévagui (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> eñangarekópa nde hekaha rehe. Eikutu Esc eguerujey hag̃ua hekaha.
 pointerlock-warning-no-domain = Ko kuatia oñangareko nde hekaha rehe. Eikutu Esc eguerujey hag̃ua hekaha.
 
+## Subframe crash notification
+
+crashed-subframe-learnmore =
+    .label = Kuaave
+    .accesskey = L
+crashed-subframe-submit =
+    .label = Emondo Marandu
+    .accesskey = S
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Opaite techaukaha jehechauka
 bookmarks-recent-bookmarks =
     .value = Oñembokurusu ramóva
+bookmarks-manage-bookmarks =
+    .label = Eñangareko techaukaháre
+bookmarks-recent-bookmarks-panel =
+    .value = Techaukaha ramogua
 bookmarks-toolbar-chevron =
     .tooltiptext = Techaukaha jehechaukave
 bookmarks-sidebar-content =
@@ -532,6 +558,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Eñomi Techaukaha Rembipuru Renda
            *[other] Techaukaha renda jehecha
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Eñomi Techaukaha Rembipuru Renda
+           *[other] Techaukaha renda jehecha
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Emokany techaukaha renda
+           *[other] Ehechauka techaukaha renda
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +580,8 @@ bookmarks-search =
     .label = Techaukaha jeheka
 bookmarks-tools =
     .label = Techaukaha Rembipuru
+bookmarks-bookmark-edit-panel =
+    .label = Ko techaukaha mbosako’i
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +595,9 @@ bookmarks-toolbar-placeholder =
     .title = Techaukaha rembipuru renda remimoĩ
 bookmarks-toolbar-placeholder-button =
     .label = Techaukaha rembipuru renda remimoĩ
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Embojuaju techaukaháre tendayke ag̃agua
 
 ## Library Panel items
 
@@ -564,6 +607,8 @@ library-bookmarks-bookmark-this-page =
     .label = Kuatiarogue mbojoapy
 library-bookmarks-bookmark-edit =
     .label = Ko techaukaha mbosako’i
+library-recent-activity-title =
+    .value = Tembiapo ramovegua
 
 ## More items
 

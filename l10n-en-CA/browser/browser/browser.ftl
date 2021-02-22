@@ -17,8 +17,8 @@
 browser-main-window =
     .data-title-default = { -brand-full-name }
     .data-title-private = { -brand-full-name } (Private Browsing)
-    .data-content-title-default = { $content-title } – { -brand-full-name }
-    .data-content-title-private = { $content-title } – { -brand-full-name } (Private Browsing)
+    .data-content-title-default = { $content-title } — { -brand-full-name }
+    .data-content-title-private = { $content-title } — { -brand-full-name } (Private Browsing)
 # These are the default window titles on macOS. The first two are for use when
 # there is no content title:
 #
@@ -35,9 +35,9 @@ browser-main-window =
 #  $content-title (String): the title of the web content.
 browser-main-window-mac =
     .data-title-default = { -brand-full-name }
-    .data-title-private = { -brand-full-name } – (Private Browsing)
+    .data-title-private = { -brand-full-name } — (Private Browsing)
     .data-content-title-default = { $content-title }
-    .data-content-title-private = { $content-title } – (Private Browsing)
+    .data-content-title-private = { $content-title } — (Private Browsing)
 # This gets set as the initial title, and is overridden as soon as we start
 # updating the titlebar based on loaded tabs or private browsing state.
 # This should match the `data-title-default` attribute in both
@@ -172,13 +172,13 @@ page-action-remove-extension =
 page-action-send-tabs-panel =
     .label =
         { $tabCount ->
-            [one] Send Tab to Device
+            [1] Send Tab to Device
            *[other] Send { $tabCount } Tabs to Device
         }
 page-action-send-tabs-urlbar =
     .tooltiptext =
         { $tabCount ->
-            [one] Send Tab to Device
+            [1] Send Tab to Device
            *[other] Send { $tabCount } Tabs to Device
         }
 page-action-pocket-panel =
@@ -301,6 +301,8 @@ identity-https-only-info-turn-off2 = If the page seems broken, you may want to t
 identity-https-only-info-no-upgrade = Unable to upgrade connection from HTTP.
 identity-permissions =
     .value = Permissions
+identity-permissions-storage-access-header = Cross-site cookies
+identity-permissions-storage-access-hint = These parties can use cross-site cookies and site data while you are on this site.
 identity-permissions-reload-hint = You may need to reload the page for changes to apply.
 identity-permissions-empty = You have not granted this site any special permissions.
 identity-clear-site-data =
@@ -344,8 +346,17 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Close
 
+## Tab actions
+
+browser-tab-audio-playing = Playing
+browser-tab-audio-muted = Muted
+
 ## Bookmarks toolbar items
 
+browser-import-button2 =
+    .label = Import bookmarks…
+    .tooltiptext = Import bookmarks from another browser to { -brand-short-name }.
+bookmarks-toolbar-empty-message = For quick access, place your bookmarks here on the bookmarks toolbar. <a data-l10n-name="manage-bookmarks">Manage bookmarks…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -498,12 +509,26 @@ fullscreen-exit-mac-button = Exit Full Screen (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> has control of your pointer. Press Esc to take back control.
 pointerlock-warning-no-domain = This document has control of your pointer. Press Esc to take back control.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Part of this page crashed.</strong> To let { -brand-product-name } know about this issue and get it fixed faster, please submit a report.
+crashed-subframe-learnmore =
+    .label = Learn More
+    .accesskey = L
+crashed-subframe-submit =
+    .label = Submit Report
+    .accesskey = S
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Show All Bookmarks
 bookmarks-recent-bookmarks =
     .value = Recently Bookmarked
+bookmarks-manage-bookmarks =
+    .label = Manage Bookmarks
+bookmarks-recent-bookmarks-panel =
+    .value = Recent Bookmarks
 bookmarks-toolbar-chevron =
     .tooltiptext = Show more bookmarks
 bookmarks-sidebar-content =
@@ -526,6 +551,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Hide Bookmarks Toolbar
            *[other] View Bookmarks Toolbar
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Hide Bookmarks Toolbar
+           *[other] View Bookmarks Toolbar
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Hide Bookmarks Toolbar
+           *[other] Show Bookmarks Toolbar
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -536,6 +573,8 @@ bookmarks-search =
     .label = Search Bookmarks
 bookmarks-tools =
     .label = Bookmarking Tools
+bookmarks-bookmark-edit-panel =
+    .label = Edit This Bookmark
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -549,6 +588,9 @@ bookmarks-toolbar-placeholder =
     .title = Bookmarks Toolbar Items
 bookmarks-toolbar-placeholder-button =
     .label = Bookmarks Toolbar Items
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Bookmark Current Tab
 
 ## Library Panel items
 
@@ -558,6 +600,8 @@ library-bookmarks-bookmark-this-page =
     .label = Bookmark This Page
 library-bookmarks-bookmark-edit =
     .label = Edit This Bookmark
+library-recent-activity-title =
+    .value = Recent Activity
 
 ## More items
 

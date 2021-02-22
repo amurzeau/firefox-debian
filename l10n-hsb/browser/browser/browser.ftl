@@ -350,6 +350,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Začinić
 
+## Tab actions
+
+browser-tab-audio-playing = Wothrawanje
+browser-tab-audio-muted = Zynk wupinany
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = HRAJE SO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = NĚMY
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AWTOMATISKE WOTHRAĆE ZABLOKOWANE
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = WOBRAZ-WE-WOBRAZU
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -508,12 +521,26 @@ fullscreen-exit-mac-button = Połnu wobrazowku (esc) skónčić
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ma kontrolu nad wašim pokazowakom. Tłóčće Esc, zo byšće kontrolu wróćo dóstał.
 pointerlock-warning-no-domain = Tutón dokument ma kontrolu nad wašim pokazowakom. Tłóčće Esc, zo byšće kontrolu wróćo dóstał.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Dźěl tuteje strony je spadnył.</strong> Zo byšće { -brand-product-name } wo tutym problemje informował a jón spěšnišo rozrisował, pósćelće prošu spadowu rozprawu.
+crashed-subframe-learnmore =
+    .label = Dalše informacije
+    .accesskey = D
+crashed-subframe-submit =
+    .label = Rozprawu wotpósłać
+    .accesskey = R
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Wšě zapołožki pokazać
 bookmarks-recent-bookmarks =
     .value = Njedawno jako zapołožka wotpołoženy
+bookmarks-manage-bookmarks =
+    .label = Zapołožki rjadować
+bookmarks-recent-bookmarks-panel =
+    .value = Najnowše zapołožki
 bookmarks-toolbar-chevron =
     .tooltiptext = Dalše zapołožki pokazać
 bookmarks-sidebar-content =
@@ -536,6 +563,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Lajstu zapołožkow schować
            *[other] Lajstu zapołožkow pokazać
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Lajstu zapołožkow schować
+           *[other] Lajstu zapołožkow pokazać
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Lajstu zapołožkow schować
+           *[other] Lajstu zapołožkow pokazać
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -546,6 +585,8 @@ bookmarks-search =
     .label = Zapołožki pytać
 bookmarks-tools =
     .label = Nastroje za zapołožki
+bookmarks-bookmark-edit-panel =
+    .label = Tutu zapołožku wobdźěłać
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -559,6 +600,9 @@ bookmarks-toolbar-placeholder =
     .title = Zapiski lajsty zapołožkow
 bookmarks-toolbar-placeholder-button =
     .label = Zapiski lajsty zapołožkow
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Aktualny rajtark jako zapołožku składować
 
 ## Library Panel items
 
@@ -568,7 +612,8 @@ library-bookmarks-bookmark-this-page =
     .label = Tutu stronu jako zapołožku składować
 library-bookmarks-bookmark-edit =
     .label = Tutu zapołožku wobdźěłać
-library-recent-activity-label = Najnowša aktiwita
+library-recent-activity-title =
+    .value = Najnowša aktiwita
 
 ## More items
 

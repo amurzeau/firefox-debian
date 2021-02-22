@@ -3,6 +3,53 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = 서비스
+menu-application-hide-this =
+    .label = { -brand-shorter-name } 숨기기
+menu-application-hide-other =
+    .label = 모두 숨기기
+menu-application-show-all =
+    .label = 모두 표시
+menu-application-touch-bar =
+    .label = 터치바 사용자 정의…
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] 종료
+           *[other] 종료
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] x
+           *[other] Q
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = { -brand-shorter-name } 종료
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = { -brand-shorter-name } 종료
+menu-about =
+    .label = { -brand-shorter-name } 정보
+    .accesskey = A
+
 ## File Menu
 
 menu-file =
@@ -160,6 +207,8 @@ menu-history-undo-menu =
     .label = 최근에 닫은 탭
 menu-history-undo-window-menu =
     .label = 최근에 닫은 창
+menu-history-reopen-all-tabs = 모든 탭 다시 열기
+menu-history-reopen-all-windows = 모든 창 다시 열기
 
 ## Bookmarks Menu
 
@@ -237,6 +286,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = 도움말
     .accesskey = H
@@ -252,9 +319,14 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = 키보드 단축키
     .accesskey = K
+menu-get-help =
+    .label = 도움 받기
+    .accesskey = H
 menu-help-troubleshooting-info =
     .label = 문제 해결 정보…
     .accesskey = T
+menu-help-taskmanager =
+    .label = 작업 관리자
 menu-help-feedback-page =
     .label = 사용자 의견 보내기…
     .accesskey = S
@@ -272,3 +344,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = 이 사이트는 가짜 사이트가 아닙니다…
     .accesskey = d
+menu-help-check-for-update =
+    .label = 업데이트 확인…
+    .accesskey = C

@@ -346,6 +346,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Clauder
 
+## Tab actions
+
+browser-tab-audio-playing = In reproduction
+browser-tab-audio-muted = Silentiate
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = In reproduction
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = Silentiate
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = Auto-reproduction blocate
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = Imagine-in-imagine
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,11 +517,25 @@ fullscreen-exit-mac-button = Exir del plen schermo (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> controla tu punctator. Preme Esc pro reprender le controlo.
 pointerlock-warning-no-domain = Iste documento controla tu punctator. Preme Esc pro reprender le controlo.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Parte de iste pagina collabeva.</strong> Pro consentir que { -brand-product-name } sape re iste problema e on pote lo corriger plus velocemente, invia un reporto.
+crashed-subframe-learnmore =
+    .label = Saper plus
+    .accesskey = p
+crashed-subframe-submit =
+    .label = Inviar reporto
+    .accesskey = I
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Monstrar tote le marcapaginas
 bookmarks-recent-bookmarks =
+    .value = Marcapaginas recente
+bookmarks-manage-bookmarks =
+    .label = Gerer marcapaginas
+bookmarks-recent-bookmarks-panel =
     .value = Marcapaginas recente
 bookmarks-toolbar-chevron =
     .tooltiptext = Monstrar plus marcapaginas
@@ -532,6 +559,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Celar le barra de marcapaginas
            *[other] Vider le barra de marcapaginas
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Celar le barra de marcapaginas
+           *[other] Vider le barra de marcapaginas
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Celar barra de marcapaginas
+           *[other] Monstrar barra de marcapaginas
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +581,8 @@ bookmarks-search =
     .label = Cercar in le marcapaginas
 bookmarks-tools =
     .label = Instrumentos de marcapaginas
+bookmarks-bookmark-edit-panel =
+    .label = Modificar iste marcapaginas
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +596,9 @@ bookmarks-toolbar-placeholder =
     .title = Elementos del barra de marcapaginas
 bookmarks-toolbar-placeholder-button =
     .label = Elementos del barra de marcapaginas
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Adder scheda actual al marcapaginas
 
 ## Library Panel items
 
@@ -564,7 +608,8 @@ library-bookmarks-bookmark-this-page =
     .label = Adder un marcapaginas
 library-bookmarks-bookmark-edit =
     .label = Modificar iste marcapaginas
-library-recent-activity-label = Recente activitate
+library-recent-activity-title =
+    .value = Recente activitate
 
 ## More items
 

@@ -23,13 +23,14 @@ inactive-css-not-flex-item = <strong>{ $property }</strong> не сработа�
 inactive-css-not-flex-container = <strong>{ $property }</strong> не сработает для элемента, так как он не является flex-контейнером.
 inactive-css-not-inline-or-tablecell = <strong>{ $property }</strong> не сработает для элемента, так как он не является inline или table-cell элементом.
 inactive-css-property-because-of-display = <strong>{ $property }</strong> не сработает для элемента, так как его свойство display задано как <strong>{ $display }</strong>.
-inactive-css-not-display-block-on-floated = Значение свойства <strong>display</strong> было изменено движком на <strong>block</strong>, так как элемент <strong>плавающий<strong>.
+inactive-css-not-display-block-on-floated = Значение свойства <strong>display</strong> было изменено движком на <strong>block</strong>, так как элемент <strong>плавающий</strong>.
 inactive-css-property-is-impossible-to-override-in-visited = Нельзя переопределить <strong>{ $property }</strong> из-за ограничений псевдокласса <strong>:visited</strong>.
 inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> не сработает для элемента, так как он не является позиционированным элементом.
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> не сработает для элемента, так как <strong>overflow:hidden</strong> не установлено.
 inactive-outline-radius-when-outline-style-auto-or-none = <strong>{ $property }</strong> не сработает для элемента, так как его <strong>outline-style</strong> установлено в <strong>auto</strong> или <strong>none</strong>.
 inactive-css-not-for-internal-table-elements = <strong>{ $property }</strong> не сработает для внутренних элементов таблиц.
 inactive-css-not-for-internal-table-elements-except-table-cells = <strong>{ $property }</strong> не сработает для внутренних элементов таблиц, кроме их ячеек.
+inactive-css-not-table = <strong>{ $property }</strong> не сработает для элемента, так как он не является таблицей.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -51,6 +52,7 @@ inactive-text-overflow-when-no-overflow-fix = Попробуйте добави�
 inactive-css-not-for-internal-table-elements-fix = Попробуйте установить для свойства <strong>display</strong> значение, отличное от <strong>table-cell</strong>, <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong> или <strong>table-footer-group</strong>. { learn-more }
 inactive-css-not-for-internal-table-elements-except-table-cells-fix = Попробуйте установить для свойства <strong>display</strong> значение, отличное от <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong> или <strong>table-footer-group</strong>. { learn-more }
 inactive-outline-radius-when-outline-style-auto-or-none-fix = Попробуйте установить для свойства <strong>outline-style</strong> значение, отличное от <strong>auto</strong> или <strong>none</strong>. { learn-more }
+inactive-css-not-table-fix = Попробуйте добавить <strong>display:table</strong> или <strong>display:inline-table</strong>. { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers
 ## we display an icon. When this icon is hovered this message is displayed to explain why

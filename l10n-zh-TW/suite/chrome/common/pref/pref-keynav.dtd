@@ -19,3 +19,9 @@
 <!ENTITY browseWithCaretWarn.label "開啟鍵盤瀏覽前警告我">
 <!ENTITY browseWithCaretWarn.accesskey "W">
 
+<!ENTITY modifiers.label "快捷鍵">
+<!ENTITY acceleratorKey.label "加速鍵:">
+<!ENTITY acceleratorKey.accesskey "A">
+<!ENTITY menuAccessKey.label "選單快捷鍵:">
+<!ENTITY menuAccessKey.accesskey "M">
+<!ENTITY modifiersDesc.label "註: 值為 0 的時候就會停用快捷鍵。">

@@ -84,6 +84,7 @@ login-item-new-login-title = Rnu anekcum amaynut
 login-item-edit-button = Ẓreg
 about-logins-login-item-remove-button = Kkes
 login-item-origin-label = Tansa n usmel web
+login-item-tooltip-message = Ḍmen aya yemṣada swaswa akked tansa n usmel web anida i teqqneḍ.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Isem n useqdac
@@ -269,6 +270,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Asemli CSV
        *[other] Afaylu CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Asemli TSV
+       *[other] Afaylu TSV
+    }
 
 ##
 ## Variables:
@@ -292,3 +300,20 @@ about-logins-import-dialog-items-error =
        *[other] <span>Tuccḍiwin </span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ur d-yettukter ara)</span>
     }
 about-logins-import-dialog-done = Immed
+about-logins-import-dialog-error-title = Tuccḍa deg uktar
+about-logins-import-dialog-error-conflicting-values-title = Aṭas n wazalen mgirradent ɣef yiwen n unekcum
+about-logins-import-dialog-error-conflicting-values-description = D amedya: aṭas n yismawen n yiseqdacen, awalen uffiren, URLs, atg. i yiwen n unekcum.
+about-logins-import-dialog-error-file-format-title = Ugur deg umasal n ufaylu
+about-logins-import-dialog-error-file-format-description = Iqerra n tgejda d arimeɣta neɣ xuṣṣen. Ḍmen afaylu deg-s tigejda i yisem n useqdac, i wawal uffir d URL.
+about-logins-import-dialog-error-file-permission-title = Ur yizmir ara ad iɣer afaylu
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } ur yesεi ara tasiregt ad iɣer afaylu. Ɛreḍ ad tbeddleḍ tisirag n ufaylu.
+about-logins-import-dialog-error-unable-to-read-title = D awezɣi ad nesleḍ afaylu
+about-logins-import-dialog-error-unable-to-read-description = Ḍmen tferneḍ afaylu CSV neɣ TSV.
+about-logins-import-dialog-error-no-logins-imported = Ulac iɣmisen i d-yettwaktaren
+about-logins-import-dialog-error-learn-more = Issin ugar
+about-logins-import-dialog-error-try-again = Ɛreḍ tikkelt-nniḍen…
+about-logins-import-dialog-error-cancel = Sefsex
+
+## Logins import report page
+
+about-logins-import-report-page-title = Kter aneqqis n ugzul

@@ -81,6 +81,7 @@ login-item-new-login-title = יצירת כניסה חדשה
 login-item-edit-button = עריכה
 about-logins-login-item-remove-button = הסרה
 login-item-origin-label = כתובת אתר
+login-item-tooltip-message = יש לוודא שערך זה תואם לכתובת המדויקת של האתר אליו מתחברים.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = שם משתמש
@@ -266,6 +267,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] מסמך CSV
        *[other] קובץ CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] מסמך TSV
+       *[other] קובץ TSV
+    }
 
 ##
 ## Variables:
@@ -293,3 +301,20 @@ about-logins-import-dialog-items-error =
        *[other] <span>שגיאות:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(לא יובאו)</span>
     }
 about-logins-import-dialog-done = סיום
+about-logins-import-dialog-error-title = שגיאה בייבוא
+about-logins-import-dialog-error-conflicting-values-title = ערכים סותרים מרובים עבור כניסה אחת
+about-logins-import-dialog-error-conflicting-values-description = לדוגמה: מספר שמות משתמשים, ססמאות, כתובות וכו' עבור כניסה אחת.
+about-logins-import-dialog-error-file-format-title = בעיה בתבנית הקובץ
+about-logins-import-dialog-error-file-format-description = כותרות של עמודות שגויות או חסרות. יש לוודא שהקובץ כולל עמודות עבור שם משתמש, ססמה וכתובת אתר.
+about-logins-import-dialog-error-file-permission-title = לא ניתן לקרוא את הקובץ
+about-logins-import-dialog-error-file-permission-description = ל־{ -brand-short-name } אין הרשאה לקרוא את הקובץ. נא לנסות לשנות את הרשאות הקובץ.
+about-logins-import-dialog-error-unable-to-read-title = לא ניתן לפענח את הקובץ
+about-logins-import-dialog-error-unable-to-read-description = יש לוודא שבחרת בקובץ CSV או TSV.
+about-logins-import-dialog-error-no-logins-imported = לא יובאו כניסות
+about-logins-import-dialog-error-learn-more = מידע נוסף
+about-logins-import-dialog-error-try-again = ניסיון חוזר…
+about-logins-import-dialog-error-cancel = ביטול
+
+## Logins import report page
+
+about-logins-import-report-page-title = דוח סיכום הייבוא

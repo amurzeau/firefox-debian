@@ -346,6 +346,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Sulje
 
+## Tab actions
+
+browser-tab-audio-playing = Toistetaan
+browser-tab-audio-muted = Vaimennettu
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = TOISTETAAN
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = VAIMENNETTU
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = ÄÄNENTOISTO ESTETTY
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = KUVA KUVASSA
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,12 +517,26 @@ fullscreen-exit-mac-button = Poistu kokoruututilasta (esc)
 pointerlock-warning-domain = Sivusto <span data-l10n-name="domain">{ $domain }</span> hallitsee hiiren osoitinta. Voit ottaa osoittimen hallintaasi painamalla Esc.
 pointerlock-warning-no-domain = Tämä sivu hallitsee hiiren osoitinta. Voit ottaa osoittimen hallintaasi painamalla Esc.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Osa tästä sivusta kaatui.</strong> Lähetäthän raportin, jotta { -brand-product-name } saa tiedon tästä ja voi korjata ongelman nopeammin.
+crashed-subframe-learnmore =
+    .label = Lue lisää
+    .accesskey = L
+crashed-subframe-submit =
+    .label = Lähetä raportti
+    .accesskey = L
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Näytä kaikki kirjanmerkit
 bookmarks-recent-bookmarks =
     .value = Viimeksi lisätyt
+bookmarks-manage-bookmarks =
+    .label = Järjestele kirjanmerkkejä
+bookmarks-recent-bookmarks-panel =
+    .value = Uusimmat kirjanmerkit
 bookmarks-toolbar-chevron =
     .tooltiptext = Näytä lisää kirjanmerkkejä
 bookmarks-sidebar-content =
@@ -532,6 +559,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Piilota kirjanmerkkipalkki
            *[other] Näytä kirjanmerkkipalkki
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Piilota kirjanmerkkipalkki
+           *[other] Näytä kirjanmerkkipalkki
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Piilota kirjanmerkkipalkki
+           *[other] Näytä kirjanmerkkipalkki
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +581,8 @@ bookmarks-search =
     .label = Etsi kirjanmerkeistä
 bookmarks-tools =
     .label = Kirjanmerkkityökalut
+bookmarks-bookmark-edit-panel =
+    .label = Muokkaa kirjanmerkkiä
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +596,9 @@ bookmarks-toolbar-placeholder =
     .title = Kirjanmerkkipalkin linkit
 bookmarks-toolbar-placeholder-button =
     .label = Kirjanmerkkipalkin linkit
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Lisää nykyinen välilehti kirjanmerkkeihin
 
 ## Library Panel items
 
@@ -564,7 +608,8 @@ library-bookmarks-bookmark-this-page =
     .label = Lisää sivu kirjanmerkkeihin
 library-bookmarks-bookmark-edit =
     .label = Muokkaa kirjanmerkkiä
-library-recent-activity-label = Viimeisin toiminta
+library-recent-activity-title =
+    .value = Viimeisin toiminta
 
 ## More items
 

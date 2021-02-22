@@ -180,10 +180,15 @@ cfr-doorhanger-cryptominers-description = הפרטיות שלך חשובה. { -b
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (String) - The date we began recording the count of blocked trackers
+#   $date (Number) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
         [one] ‏{ -brand-short-name } חסם יותר מרכיב מעקב אחד מאז { $date }!
+       *[other] ‏{ -brand-short-name } חסם למעלה מ־<b>{ $blockedCount }</b> רכיבי מעקב מאז { $date }!
+    }
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+        [one] ‏{ -brand-short-name } חסם יותר מרכיב מעקב אחד מאז { DATETIME($date, month: "long", year: "numeric") }!
        *[other] ‏{ -brand-short-name } חסם למעלה מ־<b>{ $blockedCount }</b> רכיבי מעקב מאז { $date }!
     }
 cfr-doorhanger-milestone-ok-button = צפייה בהכל
@@ -263,3 +268,8 @@ cfr-whatsnew-supercookies-body = אתרים יכולים לצרף בסתר ״ע�
 
 cfr-whatsnew-bookmarking-header = שמירת סימניות טובה יותר
 cfr-whatsnew-bookmarking-body = קל יותר לעקוב אחר האתרים המועדפים עליך. { -brand-short-name } כעת זוכר את המיקום המועדף שלך לסימניות שמורות, מציג כברירת מחדל את סרגל הסימניות בלשוניות חדשות ומעניק לך גישה נוחה לשאר הסימניות שלך באמצעות תיקייה בסרגל הכלים.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = הגנה מקיפה מפני מעקב אחר עוגיות חוצות אתרים
+cfr-whatsnew-cross-site-tracking-body = כעת באפשרותך להצטרף להגנה טובה יותר מפני מעקב אחר עוגיות. { -brand-short-name } יכול לבודד את הפעילויות והנתונים שלך לאתר שבו נמצאים, כך שמידע שנשמר בדפדפן לא ישותף בין אתרים.

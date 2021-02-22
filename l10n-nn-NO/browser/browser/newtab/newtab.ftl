@@ -23,12 +23,18 @@ newtab-search-box-search-the-web-input =
     .placeholder = Søk på nettet
     .title = Søk på nettet
     .aria-label = Søk på nettet
+newtab-search-box-text = Søk på nettet
+newtab-search-box-input =
+    .placeholder = Søk på nettet
+    .aria-label = Søk på nettet
 
 ## Top Sites - General form dialog.
 
 newtab-topsites-add-search-engine-header = Legg til søkjemotor
 newtab-topsites-add-topsites-header = Ny Mest besøkt
+newtab-topsites-add-shortcut-header = Ny snarveg
 newtab-topsites-edit-topsites-header = Rediger Mest besøkt
+newtab-topsites-edit-shortcut-header = Rediger snarveg
 newtab-topsites-title-label = Tittel
 newtab-topsites-title-input =
     .placeholder = Skriv inn ein tittel
@@ -213,6 +219,7 @@ newtab-error-fallback-refresh-link = Oppdater sida for å prøve på nytt.
 ## Customization Menu
 
 newtab-custom-shortcuts-title = Snarvegar
+newtab-custom-shortcuts-subtitle = Nettstadar du lagrar eller besøkjer
 newtab-custom-row-selector =
     { $num ->
         [one] { $num } rad
@@ -220,11 +227,15 @@ newtab-custom-row-selector =
     }
 newtab-custom-sponsored-sites = Sponsa snarvegar
 newtab-custom-pocket-title = Tilrådd av { -pocket-brand-name }
+newtab-custom-pocket-subtitle = Eksepsjonelt innhald sett saman av { -pocket-brand-name }, ein del av { -brand-product-name }-familien
 newtab-custom-pocket-sponsored = Sponsa historier
 newtab-custom-recent-title = Nyleg aktivitet
+newtab-custom-recent-subtitle = Eit utval av nylege nettstadar og innhald
 newtab-custom-close-button = Lat att
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
 # and non-essential but also not entirely trivial and useless.
 newtab-custom-snippets-title = Snuttar
+newtab-custom-snippets-subtitle = Tips og nyheiter frå { -vendor-short-name } og { -brand-product-name }
+newtab-custom-settings = Handter fleire innstillingar

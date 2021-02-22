@@ -348,6 +348,17 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Sluiten
 
+## Tab actions
+
+browser-tab-audio-playing = Wordt afgespeeld
+browser-tab-audio-muted = Gedempt
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = AFSPELEN
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = GEDEMPT
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = PICTURE-IN-PICTURE
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -506,12 +517,26 @@ fullscreen-exit-mac-button = Volledig scherm verlaten (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> heeft de controle over uw aanwijzer. Druk op Esc om de controle weer over te nemen.
 pointerlock-warning-no-domain = Dit document heeft de controle over uw aanwijzer. Druk op Esc om de controle weer over te nemen.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Een deel van deze pagina is gecrasht.</strong> Dien een rapport in om { -brand-product-name } te informeren over dit probleem en het sneller opgelost te krijgen.
+crashed-subframe-learnmore =
+    .label = Meer info
+    .accesskey = M
+crashed-subframe-submit =
+    .label = Rapport verzenden
+    .accesskey = z
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Alle bladwijzers tonen
 bookmarks-recent-bookmarks =
     .value = Recent aangemaakte bladwijzers
+bookmarks-manage-bookmarks =
+    .label = Bladwijzers beheren
+bookmarks-recent-bookmarks-panel =
+    .value = Recente bladwijzers
 bookmarks-toolbar-chevron =
     .tooltiptext = Meer bladwijzers tonen
 bookmarks-sidebar-content =
@@ -534,6 +559,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Bladwijzerwerkbalk verbergen
            *[other] Bladwijzerwerkbalk weergeven
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Bladwijzerwerkbalk verbergen
+           *[other] Bladwijzerwerkbalk weergeven
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Bladwijzerwerkbalk verbergen
+           *[other] Bladwijzerwerkbalk tonen
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -544,6 +581,8 @@ bookmarks-search =
     .label = Bladwijzers doorzoeken
 bookmarks-tools =
     .label = Bladwijzerhulpmiddelen
+bookmarks-bookmark-edit-panel =
+    .label = Deze bladwijzer bewerken
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -557,6 +596,9 @@ bookmarks-toolbar-placeholder =
     .title = Bladwijzerwerkbalkitems
 bookmarks-toolbar-placeholder-button =
     .label = Bladwijzerwerkbalkitems
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Bladwijzer voor huidige tabblad maken
 
 ## Library Panel items
 
@@ -566,7 +608,8 @@ library-bookmarks-bookmark-this-page =
     .label = Bladwijzer voor deze pagina maken
 library-bookmarks-bookmark-edit =
     .label = Deze bladwijzer bewerken
-library-recent-activity-label = Recente activiteit
+library-recent-activity-title =
+    .value = Recente activiteit
 
 ## More items
 

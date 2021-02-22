@@ -206,10 +206,14 @@ cfr-doorhanger-cryptominers-description = Ditt personvern betyr noe. { -brand-sh
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (String) - The date we began recording the count of blocked trackers
+#   $date (Number) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
        *[other] { -brand-short-name } har blokkert over <b>{ $blockedCount }</b> sporere siden { $date }!
+    }
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+       *[other] { -brand-short-name } blokkerte over <b>{ $blockedCount }</b>sporere siden { DATETIME($date, month: "long", year: "numeric") }!
     }
 cfr-doorhanger-milestone-ok-button = Vis alle
     .accesskey = s
@@ -287,7 +291,14 @@ cfr-whatsnew-search-shortcuts-body = Når nå du skriver inn en søkemotor eller
 ## What's new: Cookies protection
 
 cfr-whatsnew-supercookies-header = Beskyttelse mot ondsinnede super-infokapsler
+cfr-whatsnew-supercookies-body = Nettsteder kan i hemmelighet legge til en «super-infokapsel» i nettleseren din som kan følge deg rundt på nettet, selv etter at du har fjernet infokapslene dine. { -brand-short-name } gir nå sterk beskyttelse mot super-infokapsler, slik at de ikke kan brukes til å spore dine aktiviteter på nettet fra et nettsted til det neste.
 
 ## What's new: Better bookmarking
 
 cfr-whatsnew-bookmarking-header = Bedre bokmerking
+cfr-whatsnew-bookmarking-body = Det er lettere å holde oversikt over favorittsidene dine. { -brand-short-name } husker nå ønsket sted for lagrede bokmerker, viser bokmerkeverktøylinjen som standard på nye faner og gir deg enkel tilgang til resten av bokmerkene dine via en verktøylinjemappe.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Omfattende beskyttelse mot sporingsinfokapsler på tvers av nettsteder
+cfr-whatsnew-cross-site-tracking-body = Du kan nå velge bedre beskyttelse mot infokapsel-sporing. { -brand-short-name } kan isolere aktivitetene og dataene dine til nettstedet du befinner deg på, slik at informasjon som er lagret i nettleseren ikke blir delt mellom nettsteder.

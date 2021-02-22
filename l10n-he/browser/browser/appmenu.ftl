@@ -17,6 +17,20 @@ appmenuitem-new-window =
     .label = חלון חדש
 appmenuitem-new-private-window =
     .label = חלון פרטי חדש
+appmenuitem-passwords =
+    .label = ססמאות
+appmenuitem-extensions-and-themes =
+    .label = הרחבות וערכות נושא
+appmenuitem-find-in-page =
+    .label = חיפוש בדף…
+appmenuitem-more-tools =
+    .label = כלים נוספים
+appmenuitem-exit =
+    .label = יציאה
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = הגדרות
 
 ## Zoom and Fullscreen Controls
 
@@ -42,3 +56,110 @@ whatsnew-panel-header = מה חדש
 whatsnew-panel-footer-checkbox =
     .label = הצגת התרעות על תכונות חדשות
     .accesskey = ה
+
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
+## "Enable Profiler Menu Button".
+
+profiler-popup-title =
+    .value = { -profiler-brand-name }
+profiler-popup-reveal-description-button =
+    .aria-label = הצגת מידע נוסף
+profiler-popup-description-title =
+    .value = הקלטה, ניתוח, שיתוף
+profiler-popup-learn-more = מידע נוסף
+profiler-popup-settings =
+    .value = הגדרות
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings = עריכת הגדרות…
+profiler-popup-disabled = יוצר הפרופילים מושבת כעת, ככל הנראה בגלל חלון פתוח במצב גלישה פרטית.
+profiler-popup-recording-screen = בהקלטה…
+# The profiler presets list is generated elsewhere, but the custom preset is defined
+# here only.
+profiler-popup-presets-custom =
+    .label = התאמה אישית
+profiler-popup-start-recording-button =
+    .label = התחלת ההקלטה
+profiler-popup-discard-button =
+    .label = השלכה
+profiler-popup-capture-button =
+    .label = לכידה
+profiler-popup-start-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧1
+       *[other] Ctrl+Shift+1
+    }
+profiler-popup-capture-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧2
+       *[other] Ctrl+Shift+2
+    }
+
+## History panel
+
+appmenu-manage-history =
+    .label = ניהול היסטוריה
+appmenu-reopen-all-tabs = פתיחת כל הלשוניות מחדש
+appmenu-reopen-all-windows = פתיחת כל החלונות מחדש
+
+## Help panel
+
+appmenu-help-header =
+    .title = עזרה עבור { -brand-shorter-name }
+appmenu-about =
+    .label = על אודות { -brand-shorter-name }
+    .accesskey = א
+appmenu-help-product =
+    .label = עזרה עבור { -brand-shorter-name }
+    .accesskey = ע
+appmenu-help-show-tour =
+    .label = סיור ב־{ -brand-shorter-name }
+    .accesskey = ס
+appmenu-help-import-from-another-browser =
+    .label = ייבוא מדפדפן אחר…
+    .accesskey = י
+appmenu-help-keyboard-shortcuts =
+    .label = קיצורי מקלדת
+    .accesskey = ק
+appmenu-get-help =
+    .label = קבלת עזרה
+    .accesskey = ע
+appmenu-help-troubleshooting-info =
+    .label = מידע לפתרון בעיות
+    .accesskey = מ
+appmenu-help-taskmanager =
+    .label = מנהל משימות
+appmenu-help-feedback-page =
+    .label = שליחת משוב…
+    .accesskey = ש
+
+## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-safe-mode-without-addons =
+    .label = הפעלה מחדש עם תוספות מנוטרלות…
+    .accesskey = מ
+appmenu-help-safe-mode-with-addons =
+    .label = הפעלה מחדש עם תוספות פעילות
+    .accesskey = ח
+
+## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-report-deceptive-site =
+    .label = דיווח על אתר מטעה…
+    .accesskey = ד
+appmenu-help-not-deceptive =
+    .label = אתר זה אינו אתר מטעה…
+    .accesskey = א
+
+##
+
+appmenu-help-check-for-update =
+    .label = בדיקה אחר עדכונים…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = התאמה אישית של סרגל הכלים…
+appmenu-developer-tools-subheader = כלי דפדפן

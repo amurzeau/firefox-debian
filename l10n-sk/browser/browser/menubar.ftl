@@ -3,6 +3,53 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = Služby
+menu-application-hide-this =
+    .label = Skryť { -brand-shorter-name }
+menu-application-hide-other =
+    .label = Skryť ostatné
+menu-application-show-all =
+    .label = Zobraziť všetko
+menu-application-touch-bar =
+    .label = Prispôsobiť touch bar…
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] Ukončiť prehliadač
+           *[other] Ukončiť prehliadač
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] k
+           *[other] k
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = Ukončiť { -brand-shorter-name }
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = Ukončiť prehliadač { -brand-shorter-name }
+menu-about =
+    .label = O aplikácii { -brand-shorter-name }
+    .accesskey = O
+
 ## File Menu
 
 menu-file =
@@ -237,6 +284,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = Pomocník
     .accesskey = P
@@ -252,9 +317,14 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Klávesové skratky
     .accesskey = K
+menu-get-help =
+    .label = Získať pomoc
+    .accesskey = Z
 menu-help-troubleshooting-info =
     .label = Informácie pre riešenie problémov
-    .accesskey = n
+    .accesskey = m
+menu-help-taskmanager =
+    .label = Správca úloh
 menu-help-feedback-page =
     .label = Odoslať spätnú väzbu…
     .accesskey = d
@@ -272,3 +342,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Toto nie je podvodná stránka…
     .accesskey = T
+menu-help-check-for-update =
+    .label = Vyhľadať aktualizácie…
+    .accesskey = V

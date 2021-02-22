@@ -348,6 +348,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Zamknij
 
+## Tab actions
+
+browser-tab-audio-playing = Odtwarzanie
+browser-tab-audio-muted = Wyciszona
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = ODTWARZANIE
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = WYCISZONA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = ZABLOKOWANO AUTOMATYCZNE ODTWARZANIE
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = OBRAZ W OBRAZIE
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -506,12 +519,26 @@ fullscreen-exit-mac-button = Opuść tryb pełnoekranowy (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> kontroluje teraz kursor. Naciśnij klawisz Esc, aby przejąć nad nim kontrolę.
 pointerlock-warning-no-domain = Dokument kontroluje teraz kursor. Naciśnij klawisz Esc, aby przejąć nad nim kontrolę.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Część tej strony uległa awarii.</strong> Prosimy to zgłosić, aby powiadomić twórców przeglądarki { -brand-product-name } o problemie i przyspieszyć jego naprawienie.
+crashed-subframe-learnmore =
+    .label = Więcej informacji
+    .accesskey = W
+crashed-subframe-submit =
+    .label = Zgłoś awarię
+    .accesskey = Z
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Wyświetl wszystkie zakładki
 bookmarks-recent-bookmarks =
     .value = Ostatnio dodane
+bookmarks-manage-bookmarks =
+    .label = Zarządzaj zakładkami
+bookmarks-recent-bookmarks-panel =
+    .value = Ostatnio dodane zakładki
 bookmarks-toolbar-chevron =
     .tooltiptext = Wyświetl więcej zakładek
 bookmarks-sidebar-content =
@@ -534,6 +561,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Ukryj pasek zakładek
            *[other] Wyświetl pasek zakładek
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Ukryj pasek zakładek
+           *[other] Wyświetl pasek zakładek
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Ukryj pasek zakładek
+           *[other] Wyświetl pasek zakładek
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -544,6 +583,8 @@ bookmarks-search =
     .label = Szukaj w zakładkach
 bookmarks-tools =
     .label = Narzędzia zakładek
+bookmarks-bookmark-edit-panel =
+    .label = Edytuj zakładkę
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -557,6 +598,9 @@ bookmarks-toolbar-placeholder =
     .title = Elementy paska zakładek
 bookmarks-toolbar-placeholder-button =
     .label = Elementy paska zakładek
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Dodaj zakładkę do tej karty
 
 ## Library Panel items
 
@@ -566,7 +610,8 @@ library-bookmarks-bookmark-this-page =
     .label = Dodaj zakładkę
 library-bookmarks-bookmark-edit =
     .label = Edytuj zakładkę
-library-recent-activity-label = Ostatnia aktywność
+library-recent-activity-title =
+    .value = Ostatnia aktywność
 
 ## More items
 

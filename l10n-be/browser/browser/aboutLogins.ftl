@@ -75,7 +75,7 @@ about-logins-login-intro-heading-logged-in = Сінхранізаваныя ла
 login-intro-description = Калі вы захавалі свае лагіны ў { -brand-product-name } на іншай прыладзе, вось як атрымаць іх тут:
 login-intro-instruction-fxa = Стварыце альбо ўвайдзіце ў свой { -fxaccount-brand-name } на прыладзе, дзе захоўваюцца вашы лагіны
 login-intro-instruction-fxa-settings = Пераканайцеся, што вы ўстанавілі сцяжок Лагіны у наладах { -sync-brand-short-name }
-about-logins-intro-instruction-help = Для атрымання дадатковай даведкі наведайце <a data-l10n-name="help-link">{ -lockwise-brand-short-name } падтрымку</a>
+about-logins-intro-instruction-help = Для атрымання дадатковай даведкі наведайце <a data-l10n-name="help-link">падтрымку { -lockwise-brand-short-name }</a>
 about-logins-intro-import = Калі вашы паролі захоўваюцца ў іншым браўзеры, вы можаце <a data-l10n-name="import-link">імпартаваць іх у { -lockwise-brand-short-name }</a>
 about-logins-intro-import2 = Калі вашы лагіны захоўваюцца па-за { -brand-product-name }, вы можаце <a data-l10n-name="import-browser-link">імпартаваць іх з іншага браўзера</a> або <a data-l10n-name="import-file-link">з файла</a>
 
@@ -85,6 +85,7 @@ login-item-new-login-title = Дадаць новы лагін
 login-item-edit-button = Змяніць
 about-logins-login-item-remove-button = Выдаліць
 login-item-origin-label = Адрас сайта
+login-item-tooltip-message = Упэўніцеся, што гэта дакладны адрас вэб-сайта, на якім вы ўваходзіце ў сістэму.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Імя карыстальніка
@@ -276,6 +277,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Дакумент CSV
        *[other] Файл CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Дакумент TSV
+       *[other] Файл TSV
+    }
 
 ##
 ## Variables:
@@ -307,3 +315,20 @@ about-logins-import-dialog-items-error =
        *[many] <span>Памылак:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(не імпартаваны)</span>
     }
 about-logins-import-dialog-done = Гатова
+about-logins-import-dialog-error-title = Памылка імпарту
+about-logins-import-dialog-error-conflicting-values-title = Некалькі супярэчлівых значэнняў для аднаго лагіна
+about-logins-import-dialog-error-conflicting-values-description = Напрыклад: некалькі імёнаў карыстальніка, пароляў, URL-адрасоў і г.д. для аднаго лагіна.
+about-logins-import-dialog-error-file-format-title = Праблема з фарматам файла
+about-logins-import-dialog-error-file-format-description = Няправільныя альбо адсутнічаюць загалоўкі слупкоў. Упэўніцеся, што файл мае слупкі для імя карыстальніка, пароля і URL-адраса.
+about-logins-import-dialog-error-file-permission-title = Не ўдалося прачытаць файл
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } не мае дазволу на чытанне файла. Паспрабуйце змяніць дазволы файла.
+about-logins-import-dialog-error-unable-to-read-title = Не ўдалося разабраць файл
+about-logins-import-dialog-error-unable-to-read-description = Упэўніцеся, што выбраны файл CSV або TSV.
+about-logins-import-dialog-error-no-logins-imported = Ніводзін лагін не імпартаваны
+about-logins-import-dialog-error-learn-more = Даведацца больш
+about-logins-import-dialog-error-try-again = Паспрабаваць зноў...
+about-logins-import-dialog-error-cancel = Скасаваць
+
+## Logins import report page
+
+about-logins-import-report-page-title = Зводная справаздача аб імпарце

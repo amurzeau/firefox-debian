@@ -350,6 +350,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Закрыть
 
+## Tab actions
+
+browser-tab-audio-playing = Проигрывается
+browser-tab-audio-muted = Звук отключён
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = ВОСПРОИЗВОДИТЬСЯ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = БЕЗ ЗВУКА
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = АВТОВОСПРОИЗВЕДЕНИЕ ЗАБЛОКИРОВАНО
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = КАРТИНКА-В-КАРТИНКЕ
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -508,12 +521,26 @@ fullscreen-exit-mac-button = Выйти из полноэкранного реж
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> контролирует ваш курсор. Нажмите Esc, чтобы вернуть себе контроль.
 pointerlock-warning-no-domain = Этот документ контролирует ваш курсор. Нажмите Esc, чтобы вернуть себе контроль.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Часть этой страницы упала.</strong> Чтобы сообщить { -brand-product-name } об этой проблеме и ускорить её исправление, пожалуйста, отправьте сообщение.
+crashed-subframe-learnmore =
+    .label = Подробнее
+    .accesskey = о
+crashed-subframe-submit =
+    .label = Отправить сообщение
+    .accesskey = п
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Показать все закладки
 bookmarks-recent-bookmarks =
     .value = Недавно добавленные закладки
+bookmarks-manage-bookmarks =
+    .label = Управление закладками
+bookmarks-recent-bookmarks-panel =
+    .value = Недавние закладки
 bookmarks-toolbar-chevron =
     .tooltiptext = Показать больше закладок
 bookmarks-sidebar-content =
@@ -536,6 +563,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Скрыть панель закладок
            *[other] Показать панель закладок
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Скрыть панель закладок
+           *[other] Показать панель закладок
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Скрыть панель закладок
+           *[other] Показать панель закладок
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -546,6 +585,8 @@ bookmarks-search =
     .label = Поиск закладок
 bookmarks-tools =
     .label = Инструменты закладок
+bookmarks-bookmark-edit-panel =
+    .label = Редактировать эту закладку
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -559,6 +600,9 @@ bookmarks-toolbar-placeholder =
     .title = Элементы панели закладок
 bookmarks-toolbar-placeholder-button =
     .label = Элементы панели закладок
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Добавить текущую вкладку в закладки
 
 ## Library Panel items
 
@@ -568,7 +612,8 @@ library-bookmarks-bookmark-this-page =
     .label = Добавить страницу в закладки
 library-bookmarks-bookmark-edit =
     .label = Редактировать эту закладку
-library-recent-activity-label = Последние действия
+library-recent-activity-title =
+    .value = Последние действия
 
 ## More items
 

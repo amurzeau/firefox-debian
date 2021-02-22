@@ -23,13 +23,14 @@ inactive-css-not-flex-item = <strong>{ $property }</strong> nedaro poveikio šia
 inactive-css-not-flex-container = <strong>{ $property }</strong> nedaro poveikio šiam elementui, kadangi jis nėra „flex“ konteineris.
 inactive-css-not-inline-or-tablecell = <strong>{ $property }</strong> nedaro poveikio šiam elementui, kadangi jis nėra nei „inline“, nei „table-cell“ elementas.
 inactive-css-property-because-of-display = <strong>{ $property }</strong> nedaro poveikio šiam elementui, kadangi jis turi „display“ tipą <strong>{ $display }</strong>.
-inactive-css-not-display-block-on-floated = Varikliukas pakeitė <strong>display</strong> reikšmę į <strong>block</strong>, nes elementas yra su <strong>float<strong>.
+inactive-css-not-display-block-on-floated = Varikliukas pakeitė <strong>display</strong> reikšmę į <strong>block</strong>, nes elementas yra su <strong>float</strong>.
 inactive-css-property-is-impossible-to-override-in-visited = Neįmanoma pakeisti <strong>{ $property }</strong> dėl <strong>:visited</strong> apribojimo.
 inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> nedaro poveikio šiam elementui, kadangi jis nėra pozicionuotas elementas.
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> nedaro poveikio šiam elementui, kadangi nėra nustatyta <strong>overflow:hidden</strong> savybė.
 inactive-outline-radius-when-outline-style-auto-or-none = <strong>{ $property }</strong> nedaro poveikio šiam elementui, kadangi jo savybė <strong>outline-style</strong> turi reikšmę <strong>auto</strong> arba <strong>none</strong>.
 inactive-css-not-for-internal-table-elements = <strong>{ $property }</strong> neturi jokios įtakos vidiniams lentelės elementams.
 inactive-css-not-for-internal-table-elements-except-table-cells = <strong>{ $property }</strong> neturi jokios įtakos vidiniams lentelės elementams, išskyrus langelius.
+inactive-css-not-table = <strong>{ $property }</strong> nedaro poveikio šiam elementui, kadangi jis nėra „table“ elementas.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -51,6 +52,7 @@ inactive-text-overflow-when-no-overflow-fix = Pabandykite pridėti <strong>overf
 inactive-css-not-for-internal-table-elements-fix = Pabandykite nustatyti jo <strong>display</strong> savybės reikšmę į kitą negu <strong>table-cell</strong>, <strong>table-column</strong>, <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong>, arba <strong>table-footer-group</strong>. { learn-more }
 inactive-css-not-for-internal-table-elements-except-table-cells-fix = Pabandykite nustatyti jo <strong>display</strong> savybės reikšmę į kitą negu <strong>table-column</strong>, <strong>table-column</strong>, <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong>, arba <strong>table-footer-group</strong>. { learn-more }
 inactive-outline-radius-when-outline-style-auto-or-none-fix = Pabandykite nustatyti jo <strong>outline-style</strong> savybės reikšmę į kitą negu <strong>auto</strong> ar <strong>none</strong>. { learn-more }
+inactive-css-not-table-fix = Pabandykite pridėti <strong>display:table</strong> arba <strong>display:inline-table</strong>. { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers
 ## we display an icon. When this icon is hovered this message is displayed to explain why

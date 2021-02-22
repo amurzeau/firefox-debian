@@ -16,14 +16,9 @@ printui-page-range-custom = กำหนดเอง
 printui-page-range-label = หน้า
 printui-page-range-picker =
     .aria-label = เลือกช่วงหน้ากระดาษ
-printui-page-custom-range =
+printui-page-custom-range-input =
     .aria-label = ใส่ช่วงหน้ากระดาษที่กำหนดเอง
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = จาก
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = ถึง
+    .placeholder = เช่น 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = สำเนา
 printui-orientation = การวางแนว
@@ -47,6 +42,7 @@ printui-duplex-checkbox = พิมพ์ทั้งสองด้าน
 printui-options = ตัวเลือก
 printui-headers-footers-checkbox = พิมพ์หัวกระดาษและท้ายกระดาษ
 printui-backgrounds-checkbox = พิมพ์พื้นหลัง
+printui-selection-checkbox = พิมพ์ที่เลือกเท่านั้น
 printui-color-mode-label = โหมดสี
 printui-color-mode-color = สี
 printui-color-mode-bw = ขาวดำ
@@ -54,11 +50,15 @@ printui-margins = ระยะขอบ
 printui-margins-default = ค่าเริ่มต้น
 printui-margins-min = ต่ำสุด
 printui-margins-none = ไม่มี
-printui-margins-custom = กำหนดเอง
+printui-margins-custom-inches = กำหนดเอง (นิ้ว)
 printui-margins-custom-top = ด้านบน
+printui-margins-custom-top-inches = ด้านบน (นิ้ว)
 printui-margins-custom-bottom = ด้านล่าง
+printui-margins-custom-bottom-inches = ด้านล่าง (นิ้ว)
 printui-margins-custom-left = ด้านซ้าย
+printui-margins-custom-left-inches = ด้านซ้าย (นิ้ว)
 printui-margins-custom-right = ด้านขวา
+printui-margins-custom-right-inches = ด้านขวา (นิ้ว)
 printui-system-dialog-link = พิมพ์โดยใช้กล่องโต้ตอบระบบ…
 printui-primary-button = พิมพ์
 printui-primary-button-save = บันทึก
@@ -73,6 +73,7 @@ printui-pages-per-sheet = หน้าต่อแผ่น
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
 printui-print-progress-indicator = กำลังพิมพ์…
+printui-print-progress-indicator-saving = กำลังบันทึก…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

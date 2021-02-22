@@ -84,6 +84,7 @@ login-item-new-login-title = ანგარიშის ახალი მო�
 login-item-edit-button = ჩასწორება
 about-logins-login-item-remove-button = მოცილება
 login-item-origin-label = საიტის მისამართი
+login-item-tooltip-message = დარწმუნდით, რომ ზუსტად ემთხვევა იმ ვებსაიტის მისამართს, რომელზეც ხართ შესული.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = მომხმარებლის სახელი
@@ -268,6 +269,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV-დოკუმენტი
        *[other] CSV-ფაილი
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] TSV-დოკუმენტი
+       *[other] TSV-ფაილი
+    }
 
 ##
 ## Variables:
@@ -295,3 +303,16 @@ about-logins-import-dialog-items-error =
        *[other] <span>შეცდომები:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ვერ გადმოვიდა)</span>
     }
 about-logins-import-dialog-done = მზადაა
+about-logins-import-dialog-error-title = გადმოტანის შეცდომა
+about-logins-import-dialog-error-conflicting-values-title = რამდენიმე შეუთავსებელი მნიშვნელობა ერთი ანგარიშისთვის
+about-logins-import-dialog-error-conflicting-values-description = მაგალითად: რამდენიმე სახელი, პაროლი, მისამართი და სხვ. ერთი ანგარიშისთვის.
+about-logins-import-dialog-error-file-format-title = ფაილის სახეობის ხარვეზი
+about-logins-import-dialog-error-file-format-description = სვეტის თავსართები არასწორი ან დაკარგულია. დარწმუნდით რომ ფაილი შეიცავს სახელის, პაროლისა და მისამართის სვეტებს.
+about-logins-import-dialog-error-file-permission-title = ფაილის წაკითხვა ვერ ხერხდება
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } ვერ ახერხებს ფაილის წაკითხვას. სცადეთ ფაილის ნებართვების შესწორება.
+about-logins-import-dialog-error-unable-to-read-title = ფაილის დამუშავება ვერ ხერხდება
+about-logins-import-dialog-error-unable-to-read-description = დარწმუნდით, რომ არჩეულია CSV ან TSV-სახის ფაილი.
+about-logins-import-dialog-error-no-logins-imported = ანგარიშები არ გადმოტანილა
+about-logins-import-dialog-error-learn-more = ვრცლად
+about-logins-import-dialog-error-try-again = სცადეთ ხელახლა…
+about-logins-import-dialog-error-cancel = გაუქმება

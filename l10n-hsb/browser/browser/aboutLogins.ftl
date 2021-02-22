@@ -86,6 +86,7 @@ login-item-new-login-title = Nowe přizjewjenje załožić
 login-item-edit-button = Wobdźěłać
 about-logins-login-item-remove-button = Wotstronić
 login-item-origin-label = Adresa websydła
+login-item-tooltip-message = Přeswědčće so, zo to eksaktnej adresy websydła wotpowěduje, hdźež so chceće přizjewić.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Wužiwarske mjeno
@@ -283,6 +284,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV-dokument
        *[other] CSV-dataja
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] TSV-dokument
+       *[other] TSV-dataja
+    }
 
 ##
 ## Variables:
@@ -318,3 +326,20 @@ about-logins-import-dialog-items-error =
        *[other] <span>Zmylki:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(njeimportowane)</span>
     }
 about-logins-import-dialog-done = Dokónčene
+about-logins-import-dialog-error-title = Importowy zmylk
+about-logins-import-dialog-error-conflicting-values-title = Wjacore hódnoty za jedne přizjewjenje w konflikće
+about-logins-import-dialog-error-conflicting-values-description = Na přikład: wjacore wužiwarske mjena, hesła, URL atd. za jedne přizjewjenje.
+about-logins-import-dialog-error-file-format-title = Problem datajoweho formata
+about-logins-import-dialog-error-file-format-description = Wopačne abo falowace špaltowe hłowy. Přeswědčće so, zo dataja špalty za wužiwarske mjeno, hesło a URL wobsahuje.
+about-logins-import-dialog-error-file-permission-title = Dataja njeda so čitać
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } dowolnosć nima, dataju čitać. Spytajće prawa dataje změnić.
+about-logins-import-dialog-error-unable-to-read-title = Dataja njeda so parsować
+about-logins-import-dialog-error-unable-to-read-description = Zawěsćće, zo sće CSV- abo TSV-dataju wubrał.
+about-logins-import-dialog-error-no-logins-imported = Žane přizjewjenja njejsu so importowali.
+about-logins-import-dialog-error-learn-more = Dalše informacije
+about-logins-import-dialog-error-try-again = Hišće raz spytać…
+about-logins-import-dialog-error-cancel = Přetorhnyć
+
+## Logins import report page
+
+about-logins-import-report-page-title = Zjimansku rozprawu importować

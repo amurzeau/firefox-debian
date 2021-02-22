@@ -17,14 +17,6 @@ printui-page-range-custom = Anpassad
 printui-page-range-label = Sidor
 printui-page-range-picker =
     .aria-label = Välj sidintervall
-printui-page-custom-range =
-    .aria-label = Ange anpassat sidintervall
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = Från
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = till
 printui-page-custom-range-input =
     .aria-label = Ange anpassat sidintervall
     .placeholder = t.ex. 2-6, 9, 12-16
@@ -47,6 +39,11 @@ printui-scale-pcent = Skala
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = Dubbelsidig utskrift
 printui-duplex-checkbox = Skriv ut på båda sidor
+printui-two-sided-printing-off = Av
+# Flip the page on the side (like a book).
+printui-two-sided-printing-side-edge = Vänd på sidokanten
+# Flip the page on the top (like a vertical calendar).
+printui-two-sided-printing-top-edge = Vänd på överkanten
 # Section title for miscellaneous print options
 printui-options = Alternativ
 printui-headers-footers-checkbox = Skriv ut sidhuvud och sidfot
@@ -59,7 +56,6 @@ printui-margins = Marginaler
 printui-margins-default = Standard
 printui-margins-min = Minimum
 printui-margins-none = Ingen
-printui-margins-custom = Anpassad
 printui-margins-custom-inches = Anpassad (tum)
 printui-margins-custom-top = Toppen
 printui-margins-custom-top-inches = Toppen (tum)
@@ -83,6 +79,7 @@ printui-pages-per-sheet = Sidor per blad
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
 printui-print-progress-indicator = Skriver ut…
+printui-print-progress-indicator-saving = Sparar…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

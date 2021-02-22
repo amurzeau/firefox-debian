@@ -2,6 +2,7 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
+
 # DO NOT ADD THINGS OTHER THAN ERROR MESSAGES HERE.
 # This file gets parsed into a JS dictionary of all known error message ids in
 # gen_aboutneterror_codes.py . If we end up needing fluent attributes or
@@ -11,25 +12,21 @@
 # $hostname (String) - Hostname of the website with SSL error.
 # $errorMessage (String) - Error message corresponding to the type of error we are experiencing.
 ssl-connection-error = An error occurred during a connection to { $hostname }. { $errorMessage }
-
 # Variables:
 # $error (string) - NSS error code string that specifies type of cert error. e.g. unknown issuer, invalid cert, etc.
 cert-error-code-prefix = Error code: { $error }
-
 psmerr-ssl-disabled = Can’t connect securely because the SSL protocol has been disabled.
 psmerr-ssl2-disabled = Can’t connect securely because the site uses an older, insecure version of the SSL protocol.
-
 # This is a multi-line message.
 psmerr-hostreusedissuerandserial =
     You have received an invalid certificate.  Please contact the server administrator or email correspondent and give them the following information:
     
     Your certificate contains the same serial number as another certificate issued by the certificate authority.  Please get a new certificate containing a unique serial number.
-
 ssl-error-export-only-server = Unable to communicate securely. Peer does not support high-grade encryption.
 ssl-error-us-only-server = Unable to communicate securely. Peer requires high-grade encryption which is not supported.
 ssl-error-no-cypher-overlap = Cannot communicate securely with peer: no common encryption algorithm(s).
 ssl-error-no-certificate = Unable to find the certificate or key necessary for authentication.
-ssl-error-bad-certificate = Unable to communicate securely with peer: peer’s certificate was rejected.
+ssl-error-bad-certificate = Unable to communicate securely with peer: peers’s certificate was rejected.
 ssl-error-bad-client = The server has encountered bad data from the client.
 ssl-error-bad-server = The client has encountered bad data from the server.
 ssl-error-unsupported-certificate-type = Unsupported certificate type.
@@ -316,7 +313,7 @@ sec-error-incompatible-pkcs11 = PKCS #11 driver violates the spec in an incompat
 sec-error-no-event = No new slot event is available at this time.
 sec-error-crl-already-exists = CRL already exists.
 sec-error-not-initialized = NSS is not initialized.
-sec-error-token-not-logged-in = The operation failed because the PKCS#11 token is not signed in.
+sec-error-token-not-logged-in = The operation failed because the PKCS#11 token is not logged in.
 sec-error-ocsp-responder-cert-invalid = Configured OCSP responder’s certificate is invalid.
 sec-error-ocsp-bad-signature = OCSP response has an invalid signature.
 sec-error-out-of-search-limits = Certificate validation search is out of search limits
@@ -327,7 +324,7 @@ sec-error-bad-http-response = Server returned bad HTTP response
 sec-error-bad-ldap-response = Server returned bad LDAP response
 sec-error-failed-to-encode-data = Failed to encode data with ASN1 encoder
 sec-error-bad-info-access-location = Bad information access location in certificate extension
-sec-error-libpkix-internal = Libpkix internal error occured during certificate validation.
+sec-error-libpkix-internal = Libpkix internal error occurred during certificate validation.
 sec-error-pkcs11-general-error = A PKCS #11 module returned CKR_GENERAL_ERROR, indicating that an unrecoverable error has occurred.
 sec-error-pkcs11-function-failed = A PKCS #11 module returned CKR_FUNCTION_FAILED, indicating that the requested function could not be performed. Trying the same operation again might succeed.
 sec-error-pkcs11-device-error = A PKCS #11 module returned CKR_DEVICE_ERROR, indicating that a problem has occurred with the token or slot.
@@ -337,7 +334,7 @@ sec-error-expired-password = The password expired.
 sec-error-locked-password = The password is locked.
 sec-error-unknown-pkcs11-error = Unknown PKCS #11 error.
 sec-error-bad-crl-dp-url = Invalid or unsupported URL in CRL distribution point name.
-sec-error-cert-signature-algorithm-disabled = The certificate was signed using an signature algorithm that is disabled because it is not secure.
+sec-error-cert-signature-algorithm-disabled = The certificate was signed using a signature algorithm that is disabled because it is not secure.
 mozilla-pkix-error-key-pinning-failure = The server uses key pinning (HPKP) but no trusted certificate chain could be constructed that matches the pinset. Key pinning violations cannot be overridden.
 mozilla-pkix-error-ca-cert-used-as-end-entity = The server uses a certificate with a basic constraints extension identifying it as a certificate authority. For a properly-issued certificate, this should not be the case.
 mozilla-pkix-error-inadequate-key-size = The server presented a certificate with a key size that is too small to establish a secure connection.

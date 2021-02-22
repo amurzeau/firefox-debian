@@ -31,7 +31,7 @@ cfr-doorhanger-extension-author = от { $name }
 # This is a notification displayed in the address bar.
 # When clicked it opens a panel with a message for the user.
 cfr-doorhanger-extension-notification = Препоръка
-cfr-doorhanger-extension-notification2 = Препоръка
+cfr-doorhanger-extension-notification2 = Препоръчано
     .tooltiptext = Препоръка за разширение
     .a11y-announcement = Налична е препоръка за разширение
 # This is a notification displayed in the address bar.
@@ -124,6 +124,9 @@ cfr-whatsnew-lockwise-take-link-text = Вземете приложението
 
 cfr-whatsnew-searchbar-title = Въвеждайте по-малко, улеснете се с адресната лента
 cfr-whatsnew-searchbar-body-topsites = Сега просто изберете адресната лента и полето ще се разшири с препратки към вашите предпочитани сайтове.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Увеличаваща лупа
 
 ## Picture-in-Picture
@@ -192,6 +195,7 @@ cfr-doorhanger-socialtracking-dont-show-again = Да не се показват 
 cfr-doorhanger-socialtracking-heading = { -brand-short-name } спря социална мрежа да ви следи тук
 cfr-doorhanger-socialtracking-description = Поверителността ви е от значение. { -brand-short-name } вече спира проследяванията от разпространените социални мрежи, ограничавайки събираните данни за действията ви в мрежата.
 cfr-doorhanger-fingerprinters-heading = { -brand-short-name } блокира скрипт събиращ цифров отпечатък на тази страница
+cfr-doorhanger-fingerprinters-description = Вашата поверителност има значение. { -brand-short-name } вече спира субекти, които събират части от уникално идентифицираща информация за вашето устройство, за да ви проследят.
 cfr-doorhanger-cryptominers-heading = { -brand-short-name } блокира скрипт добиващ виртуални пари на тази страница
 cfr-doorhanger-cryptominers-description = Вашата поверителност е от значение. { -brand-short-name } вече блокира скриптове, които използват изчислителната мощност на системата ви за извличане на криптовалути.
 
@@ -228,5 +232,25 @@ cfr-whatsnew-protections-icon-alt = Пиктограма на щит
 ## DOH Message
 
 
+## Fission Experiment Message
+
+
 ## What's new: Cookies message
+
+
+## What's new: Media controls message
+
+cfr-whatsnew-media-keys-header = Още медийни контроли
+cfr-whatsnew-media-keys-button = Научете как
+
+## What's new: Search shortcuts
+
+
+## What's new: Cookies protection
+
+
+## What's new: Better bookmarking
+
+
+## What's new: Cross-site cookie tracking
 

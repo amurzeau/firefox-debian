@@ -3,6 +3,51 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = सेवाहरू
+menu-application-hide-this =
+    .label = { -brand-shorter-name } लुकाउनुहोस्
+menu-application-hide-other =
+    .label = अन्य लुकाउनुहोस्
+menu-application-show-all =
+    .label = सबै देखाउनुहोस्
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] बहिर निस्कनुहोस्
+           *[other] अन्त्य गर्नुहोस्
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] x
+           *[other] Q
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = { -brand-shorter-name } बन्द गर्नुहोस्
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = { -brand-shorter-name } बन्द गर
+menu-about =
+    .label = { -brand-shorter-name } को बारेमा
+    .accesskey = A
+
 ## File Menu
 
 menu-file =
@@ -219,6 +264,15 @@ menu-window-bring-all-to-front =
     .label = सबैलाई अगाडि ल्याउनुहोस्
 
 ## Help Menu
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
 
 menu-help =
     .label = सहयोग

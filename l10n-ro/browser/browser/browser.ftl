@@ -332,6 +332,9 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Închide
 
+## Tab actions
+
+
 ## Bookmarks toolbar items
 
 
@@ -462,6 +465,9 @@ fullscreen-exit-mac-button = Ieși din modul ecran complet (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> controlează acum cursorul. Apasă Esc pentru a prelua controlul.
 pointerlock-warning-no-domain = Documentul controlează acum cursorul. Apasă Esc pentru a prelua controlul.
 
+## Subframe crash notification
+
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -490,6 +496,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Ascunde bara de marcaje
            *[other] Vezi bara de marcaje
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Ascunde bara de marcaje
+           *[other] Vezi bara de marcaje
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -500,6 +512,8 @@ bookmarks-search =
     .label = Caută marcaje
 bookmarks-tools =
     .label = Instrumente pentru marcaje
+bookmarks-bookmark-edit-panel =
+    .label = Editează acest marcaj
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.

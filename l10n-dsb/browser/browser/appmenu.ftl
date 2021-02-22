@@ -17,6 +17,20 @@ appmenuitem-new-window =
     .label = Nowe wokno
 appmenuitem-new-private-window =
     .label = Nowe priwatne wokno
+appmenuitem-passwords =
+    .label = Gronidła
+appmenuitem-extensions-and-themes =
+    .label = Rozšyrjenja a drastwy
+appmenuitem-find-in-page =
+    .label = Na boku pytaś…
+appmenuitem-more-tools =
+    .label = Dalšne rědy
+appmenuitem-exit =
+    .label = Skóńcyś
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = Nastajenja
 
 ## Zoom and Fullscreen Controls
 
@@ -42,3 +56,113 @@ whatsnew-panel-header = Nowe funkcije a změny
 whatsnew-panel-footer-checkbox =
     .label = Wo nowych funkcijach informěrowaś
     .accesskey = f
+
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
+## "Enable Profiler Menu Button".
+
+profiler-popup-title =
+    .value = { -profiler-brand-name }
+profiler-popup-reveal-description-button =
+    .aria-label = Dalšne informacije pokazaś
+profiler-popup-description-title =
+    .value = Nagraś, analyzěrować, źěliś
+profiler-popup-description = Wózjawśo profile a źělśo je ze swójim teamom, aby na wugbaśowych problemach gromadue źěłali.
+profiler-popup-learn-more = Dalšne informacije
+profiler-popup-settings =
+    .value = Nastajenja
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings = Nastajenja wobźěłaś…
+profiler-popup-disabled =
+    Profilowak jo tuchylu znjemóžnjony, nejskerjej dokulaž priwatne wokno
+    jo wócynjone.
+profiler-popup-recording-screen = Nagrawa se…
+# The profiler presets list is generated elsewhere, but the custom preset is defined
+# here only.
+profiler-popup-presets-custom =
+    .label = Swójski
+profiler-popup-start-recording-button =
+    .label = Nagraśe startowaś
+profiler-popup-discard-button =
+    .label = Zachyśiś
+profiler-popup-capture-button =
+    .label = Registrěrowanje
+profiler-popup-start-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧1
+       *[other] Strg+Umsch+1
+    }
+profiler-popup-capture-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧2
+       *[other] Strg+Umsch+2
+    }
+
+## History panel
+
+appmenu-manage-history =
+    .label = Historiju zastojaś
+appmenu-reopen-all-tabs = Wšykne rejtariki znowego wócyniś
+appmenu-reopen-all-windows = Wšykne wokna znowego wócyniś
+
+## Help panel
+
+appmenu-help-header =
+    .title = { -brand-shorter-name } - Pomoc
+appmenu-about =
+    .label = Wó { -brand-shorter-name }
+    .accesskey = W
+appmenu-help-product =
+    .label = { -brand-shorter-name } - Pomoc
+    .accesskey = m
+appmenu-help-show-tour =
+    .label = { -brand-shorter-name } - Tura
+    .accesskey = T
+appmenu-help-import-from-another-browser =
+    .label = Z drugego wobglědowaka importěrowaś…
+    .accesskey = d
+appmenu-help-keyboard-shortcuts =
+    .label = Tastowe skrotconki
+    .accesskey = T
+appmenu-get-help =
+    .label = Pomoc se wobstaraś
+    .accesskey = P
+appmenu-help-troubleshooting-info =
+    .label = Informacije za rozwězowanje problemow
+    .accesskey = I
+appmenu-help-taskmanager =
+    .label = Zastojnik nadawkow
+appmenu-help-feedback-page =
+    .label = Pósudk pósłaś…
+    .accesskey = P
+
+## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-safe-mode-without-addons =
+    .label = Ze znjemóžnjonymi dodankami znowego startowaś…
+    .accesskey = Z
+appmenu-help-safe-mode-with-addons =
+    .label = Ze zmóžnjonymi dodankami znowego startowaś
+    .accesskey = Z
+
+## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-report-deceptive-site =
+    .label = Wobšudnikojske sedło k wěsći daś…
+    .accesskey = b
+appmenu-help-not-deceptive =
+    .label = To njejo wobšudnikojske sedło…
+    .accesskey = d
+
+##
+
+appmenu-help-check-for-update =
+    .label = Za aktualizacijami pśeglědaś…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = Symbolowu rědku pśiměriś…
+appmenu-developer-tools-subheader = Rědy wobglědowaka

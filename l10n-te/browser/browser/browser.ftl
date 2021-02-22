@@ -328,6 +328,9 @@ browser-window-maximize-button =
 browser-window-close-button =
     .tooltiptext = మూసివేయి
 
+## Tab actions
+
+
 ## Bookmarks toolbar items
 
 
@@ -447,6 +450,12 @@ fullscreen-exit-mac-button = నిండు తెరను వదలివె�
 pointerlock-warning-domain = మీ పాయింటర్ <span data-l10n-name="domain">{ $domain }</span> నియంత్రణలో ఉంది. తిరిగి మీ ఆధీనం లోనికి తెచ్చుకోడానికి Esc నొక్కండి.
 pointerlock-warning-no-domain = మీ పాయింటర్ ఈ పత్రపు నియంత్రణలో ఉంది. తిరిగి మీ ఆధీనం లోనికి తెచ్చుకోడానికి Esc నొక్కండి.
 
+## Subframe crash notification
+
+crashed-subframe-learnmore =
+    .label = ఇంకా తెలుసుకోండి
+    .accesskey = L
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -475,6 +484,12 @@ bookmarks-tools-toolbar-visibility =
             [true] ఇష్టాంశాల పనిముట్లపట్టీని దాచు
            *[other] ఇష్టాంశాల పట్టీని చూడండి
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] ఇష్టాంశాల పనిముట్లపట్టీని దాచు
+           *[other] ఇష్టాంశాల పట్టీని చూడండి
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -485,6 +500,8 @@ bookmarks-search =
     .label = ఇష్టాంశాలను వెతకండి
 bookmarks-tools =
     .label = ఇష్టాంశాల పనిముట్లు
+bookmarks-bookmark-edit-panel =
+    .label = ఈ ఇష్టాంశాన్ని సరిదిద్దు
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -507,6 +524,8 @@ library-bookmarks-bookmark-this-page =
     .label = ఈ పేజీని ఇష్టాంశంగా చేయి
 library-bookmarks-bookmark-edit =
     .label = ఈ ఇష్టాంశాన్ని సరిదిద్దు
+library-recent-activity-title =
+    .value = ఇటీవలి కార్యకలాపం
 
 ## More items
 

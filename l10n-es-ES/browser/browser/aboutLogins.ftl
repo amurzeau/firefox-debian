@@ -84,6 +84,7 @@ login-item-new-login-title = Crear nuevo inicio de sesión
 login-item-edit-button = Editar
 about-logins-login-item-remove-button = Eliminar
 login-item-origin-label = Dirección del sitio web
+login-item-tooltip-message = Asegúrese de que coincida con la dirección exacta del sitio web donde inicia sesión.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Nombre de usuario
@@ -206,6 +207,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Exportar inicios de sesión y contraseñas
 about-logins-confirm-export-dialog-message = Sus contraseñas se guardarán como texto legible (por ejemplo, BadP@ssw0rd) por lo que cualquiera que pueda abrir el archivo exportado podrá verlas.
 about-logins-confirm-export-dialog-confirm-button = Exportar…
+about-logins-alert-import-title = Importación completa
+about-logins-alert-import-message = Ver resumen detallado de la importación
 confirm-discard-changes-dialog-title = ¿Descartar cambios no guardados?
 confirm-discard-changes-dialog-message = Todos los cambios no guardados se perderán.
 confirm-discard-changes-dialog-confirm-button = Descartar
@@ -267,3 +270,54 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Documento CSV
        *[other] Archivo CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Documento TSV
+       *[other] Archivo TSV
+    }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Importación completa
+about-logins-import-dialog-items-added =
+    { $count ->
+        [one] <span>Nuevo inicio de sesión añadido:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Nuevos inicios de sesión añadidos:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+        [one] <span>Inicio de sesión actualizado:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Inicios de sesión actualizados:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+        [one] <span>Se han encontrado inicios de sesión duplicados:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(no importado)</span>
+       *[other] <span>Se han encontrado inicios de sesión duplicados:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(no importados)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+        [one] <span>Errores:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(no importado)</span>
+       *[other] <span>Errores:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(no importados)</span>
+    }
+about-logins-import-dialog-done = Hecho
+about-logins-import-dialog-error-title = Error de importación
+about-logins-import-dialog-error-conflicting-values-title = Múltiples valores en conflicto para un inicio de sesión
+about-logins-import-dialog-error-conflicting-values-description = Por ejemplo: múltiples nombres de usuario, contraseñas, URLs, etc. para un solo inicio de sesión.
+about-logins-import-dialog-error-file-format-title = Problema de formato de archivo
+about-logins-import-dialog-error-file-format-description = Cabeceras de columna incorrectas o ausentes. Asegúrese de que el archivo incluya columnas para nombre de usuario, contraseña y URL.
+about-logins-import-dialog-error-file-permission-title = No se puede leer el archivo
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } no tiene permiso para leer el archivo. Intente cambiar los permisos del archivo.
+about-logins-import-dialog-error-unable-to-read-title = No se puede analizar el archivo
+about-logins-import-dialog-error-unable-to-read-description = Asegúrese de haber seleccionado un archivo CSV o TSV.
+about-logins-import-dialog-error-no-logins-imported = No se importaron inicios de sesión
+about-logins-import-dialog-error-learn-more = Saber más
+about-logins-import-dialog-error-try-again = Volver a intentarlo…
+about-logins-import-dialog-error-cancel = Cancelar
+
+## Logins import report page
+
+about-logins-import-report-page-title = Importar informe de resumen

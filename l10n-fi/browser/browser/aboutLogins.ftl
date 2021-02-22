@@ -80,6 +80,7 @@ login-item-new-login-title = Luo uusi kirjautumistieto
 login-item-edit-button = Muokkaa
 about-logins-login-item-remove-button = Poista
 login-item-origin-label = Verkkosivuston osoite
+login-item-tooltip-message = Tarkista, että tämä on sama osoite, josta kirjaudut sisään.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Käyttäjätunnus
@@ -257,6 +258,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV-tiedosto
        *[other] CSV-tiedosto
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] TSV-tiedosto
+       *[other] TSV-tiedosto
+    }
 
 ##
 ## Variables:
@@ -280,3 +288,20 @@ about-logins-import-dialog-items-error =
        *[other] <span>Virheitä:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ei tuotu)</span>
     }
 about-logins-import-dialog-done = Valmis
+about-logins-import-dialog-error-title = Tuontivirhe
+about-logins-import-dialog-error-conflicting-values-title = Useita ristiriitaisia arvoja samalle kirjautumistiedolle
+about-logins-import-dialog-error-conflicting-values-description = Esimerkiksi: useita käyttäjätunnuksia, salasanoja, URL-osoitteita jne. yhdelle kirjautumistiedolle.
+about-logins-import-dialog-error-file-format-title = Tiedostomuoto-ongelma
+about-logins-import-dialog-error-file-format-description = Virheelliset tai puuttuvat kenttäotsakkeet. Tarkista, että tiedostossa on kentät käyttäjätunnukselle, salasanalle ja URL-osoitteelle.
+about-logins-import-dialog-error-file-permission-title = Tiedostoa ei voida lukea
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name }illa ei ole oikeutta lukea tiedostoa. Yritä muuttaa tiedoston käyttöoikeuksia.
+about-logins-import-dialog-error-unable-to-read-title = Tiedostoa ei voida jäsentää
+about-logins-import-dialog-error-unable-to-read-description = Tarkista, että valitsit CSV- tai TSV-tiedoston.
+about-logins-import-dialog-error-no-logins-imported = Kirjautumistietoja ei ole tuotu
+about-logins-import-dialog-error-learn-more = Lisätietoja
+about-logins-import-dialog-error-try-again = Yritä uudelleen…
+about-logins-import-dialog-error-cancel = Peruuta
+
+## Logins import report page
+
+about-logins-import-report-page-title = Tuonnin yhteenvetoraportti

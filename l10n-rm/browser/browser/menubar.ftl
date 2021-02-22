@@ -3,6 +3,53 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = Servetschs
+menu-application-hide-this =
+    .label = Zuppentar { -brand-shorter-name }
+menu-application-hide-other =
+    .label = Zuppentar il rest
+menu-application-show-all =
+    .label = Mussar tut
+menu-application-touch-bar =
+    .label = Persunalisar la trav da tutgar…
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] Terminar
+           *[other] Terminar
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] T
+           *[other] T
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = Terminar { -brand-shorter-name }
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = Terminar { -brand-shorter-name }
+menu-about =
+    .label = Davart { -brand-shorter-name }
+    .accesskey = D
+
 ## File Menu
 
 menu-file =
@@ -160,6 +207,8 @@ menu-history-undo-menu =
     .label = Tabs serrads dacurt
 menu-history-undo-window-menu =
     .label = Fanestras serradas dacurt
+menu-history-reopen-all-tabs = Reavrir tut ils tabs
+menu-history-reopen-all-windows = Reavrir tut las fanestras
 
 ## Bookmarks Menu
 
@@ -237,6 +286,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = Agid
     .accesskey = A
@@ -252,9 +319,14 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Scursanidas da tastas
     .accesskey = c
+menu-get-help =
+    .label = Ir per agid
+    .accesskey = I
 menu-help-troubleshooting-info =
     .label = Infurmaziuns per schliar problems
     .accesskey = p
+menu-help-taskmanager =
+    .label = Task Manager
 menu-help-feedback-page =
     .label = Trametter in resun…
     .accesskey = s
@@ -272,3 +344,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Quai n'è betg ina website che engiona…
     .accesskey = e
+menu-help-check-for-update =
+    .label = Tschertgar actualisaziuns…
+    .accesskey = c

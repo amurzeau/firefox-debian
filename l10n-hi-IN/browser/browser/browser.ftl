@@ -23,7 +23,7 @@ browser-main-window =
 # there is no content title:
 #
 # "default" - "Mozilla Firefox"
-# "private" - "Mozilla Firefox - (Private Browsing)"
+# "private" - "Mozilla Firefox — (Private Browsing)"
 #
 # The last two are for use when there *is* a content title.
 # Do not use the brand name in the last two attributes, as we do on non-macOS.
@@ -206,7 +206,7 @@ full-screen-exit =
 
 ## Search Engine selection buttons (one-offs)
 
-# This string prompts the user to use the list of one-click search engines in
+# This string prompts the user to use the list of search shortcuts in
 # the Urlbar and searchbar.
 search-one-offs-with-title = इस बार, इसके साथ खोजें:
 # This string won't wrap, so if the translated string is longer,
@@ -271,6 +271,12 @@ identity-passive-loaded = इस पेज का भाग सुरक्ष�
 identity-active-loaded = आपने इस पेज पर सुरक्षा निष्क्रिय कर दिए हैं.
 identity-weak-encryption = यह पेज कमजोर गोपन का उपयोग करता हैं.
 identity-insecure-login-forms = इस पृष्ठ पर अंतरित लॉग-इन्स से समझौता किया जा सकता है.
+identity-https-only-dropdown-on =
+    .label = चालू
+identity-https-only-dropdown-off =
+    .label = बंद
+identity-https-only-dropdown-off-temporarily =
+    .label = अस्थाई रूप से बंद
 identity-permissions =
     .value = अनुमतियां
 identity-permissions-reload-hint = बदलाव को लागु करने के लिए आपको पृष्ठ को फिर से लोड करने की आवश्यकता हैं.
@@ -315,6 +321,9 @@ browser-window-restore-down-button =
     .tooltiptext = पूर्ववत करें
 browser-window-close-button =
     .tooltiptext = बंद करें
+
+## Tab actions
+
 
 ## Bookmarks toolbar items
 
@@ -396,6 +405,7 @@ urlbar-result-action-visit = भ्रमण करें
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
+urlbar-result-action-search-bookmarks = बुकमार्क खोजें
 
 ## Full Screen and Pointer Lock UI
 
@@ -412,6 +422,15 @@ fullscreen-exit-mac-button = पूर्ण स्क्रीन से नि
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> अपने सूचक पर नियंत्रण हैं. नियंत्रण फिर से वापस लेने के लिए Esc बटन दबाएँ.
 pointerlock-warning-no-domain = इस दस्तेवाज को आपके सूचक पर नियंत्रण हैं. नियंत्रण फिर से वापस लेने के लिए Esc बटन दबाएँ.
+
+## Subframe crash notification
+
+crashed-subframe-learnmore =
+    .label = अधिक जानें
+    .accesskey = L
+crashed-subframe-submit =
+    .label = रिपोर्ट जमा करें
+    .accesskey = S
 
 ## Bookmarks panels, menus and toolbar
 
@@ -441,6 +460,12 @@ bookmarks-tools-toolbar-visibility =
             [true] बुकमार्क टूलबार छिपाएं
            *[other] बुकमार्क औज़ारपट्टी देखें
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] बुकमार्क टूलबार छिपाएं
+           *[other] बुकमार्क औज़ारपट्टी देखें
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -451,6 +476,8 @@ bookmarks-search =
     .label = बुकमार्क खोजें
 bookmarks-tools =
     .label = बुकमार्क के उपकरण
+bookmarks-bookmark-edit-panel =
+    .label = यह बुकमार्क संपादित करें
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.

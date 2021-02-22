@@ -50,6 +50,7 @@ pane-experimental-title = { -brand-short-name } esperimentuak
 category-experimental =
     .tooltiptext = { -brand-short-name } esperimentuak
 pane-experimental-subtitle = Kontuz jarraitu
+pane-experimental-search-results-header = { -brand-short-name } esperimentuak: kontuz jarraitu
 pane-experimental-description = Konfigurazio-hobespen aurreratuak aldatzeak { -brand-short-name }(r)en errendimendu edo segurtasunean eragin lezake.
 pane-experimental-reset =
     .label = Berrezarri lehenespenak
@@ -430,6 +431,9 @@ browsing-picture-in-picture-toggle-enabled =
     .label = Gaitu bideoa beste leiho batean ikusteko kontrolak
     .accesskey = G
 browsing-picture-in-picture-learn-more = Argibide gehiago
+browsing-media-control =
+    .label = Kontrolatu multimedia teklatuaren, kaskoen edo interfaze birtualaren bidez
+    .accesskey = m
 browsing-media-control-learn-more = Argibide gehiago
 browsing-cfr-recommendations =
     .label = Gomendatu hedapenak nabigatu ahala
@@ -508,6 +512,7 @@ home-prefs-shortcuts-by-option-sponsored =
 home-prefs-recommended-by-header =
     .label = { $provider } hornitzaileak gomendatuta
 home-prefs-recommended-by-description-update = Webeko aparteko edukia, { $provider } hornitzaileak bilduta
+home-prefs-recommended-by-description-new = { -brand-product-name } familiakide den { $provider }-eko taldeak hautatutako aparteko edukia.
 
 ##
 
@@ -527,6 +532,7 @@ home-prefs-highlights-option-saved-to-pocket =
     .label = { -pocket-brand-name }-en gordetako orriak
 home-prefs-recent-activity-header =
     .label = Azken jarduera
+home-prefs-recent-activity-description = Azken gune eta edukien hautapena
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -534,6 +540,7 @@ home-prefs-recent-activity-header =
 home-prefs-snippets-header =
     .label = Mezu-zatiak
 home-prefs-snippets-description = { -vendor-short-name } eta { -brand-product-name }i buruzko eguneraketak
+home-prefs-snippets-description-new = { -vendor-short-name } eta { -brand-product-name }(r)en aholku eta albisteak
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -942,6 +949,7 @@ addressbar-suggestions-settings = Aldatu bilaketa-motorren iradokizunetarako hob
 content-blocking-enhanced-tracking-protection = Jarraipenaren babes hobetua
 content-blocking-section-top-level-description = Jarraipen-elementuek zure lineako jarraipena egiten dute zure nabigatze-ohitura eta -interesei buruzko informazioa biltzeko. Jarraipen-elementu eta bestelako script maltzurretako asko blokeatzen ditu { -brand-short-name }(e)k.
 content-blocking-learn-more = Argibide gehiago
+content-blocking-fpi-incompatibility-warning = Lehenengoen isolazioa (FPI, First Party Isolation) ari zara erabiltzen, zeinak { -brand-short-name }(r)en cookie-ezarpenak gainidazten dituen.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.
@@ -975,6 +983,7 @@ content-blocking-cryptominers = Kriptomeatzariak
 content-blocking-fingerprinters = Hatz-marka bidezko jarraipena egiten duten elementuak
 content-blocking-warning-title = Argi!
 content-blocking-and-isolating-etp-warning-description = Jarraipen-elementuak blokeatuz eta cookieak bakartuz gero, zenbait gunetako eginbideak kaltetu litezke. Eduki guztiak kargatzeko, berritu jarraipen-elementuak dituen orria.
+content-blocking-and-isolating-etp-warning-description-2 = Hainbat webgunek edukiak ondo ez bistaratzea edo ondo ez ibiltzea eragin lezake ezarpen honek. Gune batek hondatua badirudi, gune horretarako jarraipenaren-babesa desgaitu nahiko duzu eduki guztia karga dadin.
 content-blocking-warning-learn-how = Ikasi nola
 content-blocking-reload-description = Zure fitxak berritu beharko dituzu aldaketa hauek eragina izan dezaten.
 content-blocking-reload-tabs-button =
@@ -1148,6 +1157,7 @@ space-alert-under-5gb-message = { -brand-short-name } leku erabilgarririk gabe g
 ## Privacy Section - HTTPS-Only
 
 httpsonly-header = HTTPS-Only modua
+httpsonly-description = HTTPSk konexio seguru eta zifratua eskaintzen du { -brand-short-name } eta bisitatzen dituzun webguneen artean. Webgune gehienek HTTPS onartzen du eta HTTPS-Only modua gaituta badago, orduan { -brand-short-name }(e)k konexio guztiak HTTPSra bihurtuko ditu.
 httpsonly-learn-more = Argibide gehiago
 httpsonly-radio-enabled =
     .label = Gaitu HTTPS-Only modua leiho guztietan

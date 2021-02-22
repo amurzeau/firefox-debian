@@ -63,7 +63,7 @@ cfr-doorhanger-pintab-description = Tenha acesso fácil aos sites que você mais
 
 ## These messages are steps on how to use the feature and are shown together.
 
-cfr-doorhanger-pintab-step1 = <b>Clique com o botão direito</b> na aba que deseja fixar.
+cfr-doorhanger-pintab-step1 = <b>Clique com o botão direito</b> na aba que você quer fixar.
 cfr-doorhanger-pintab-step2 = Selecione <b>Fixar aba</b> no menu.
 cfr-doorhanger-pintab-step3 = Se o site tiver uma atualização, aparece um ponto azul na aba fixada.
 cfr-doorhanger-pintab-animation-pause = Pausar
@@ -202,10 +202,15 @@ cfr-doorhanger-cryptominers-description = Sua privacidade é importante. Agora o
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (String) - The date we began recording the count of blocked trackers
+#   $date (Number) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
        *[other] O { -brand-short-name } bloqueou mais de <b>{ $blockedCount }</b> rastreadores desde { $date }!
+    }
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+        [one] O { -brand-short-name } bloqueou <b>{ $blockedCount }</b> rastreador desde { DATETIME($date, month: "long", year: "numeric") }!
+       *[other] O { -brand-short-name } bloqueou mais de <b>{ $blockedCount }</b> rastreadores desde { DATETIME($date, month: "long", year: "numeric") }!
     }
 cfr-doorhanger-milestone-ok-button = Ver tudo
     .accesskey = V
@@ -247,7 +252,7 @@ cfr-whatsnew-better-pdf-body = Documentos PDF agora são abertos diretamente no 
 
 ## DOH Message
 
-cfr-doorhanger-doh-body = Sua privacidade é importante. Agora o { -brand-short-name } roteia com segurança suas solicitações de DNS, sempre que possível, para um serviço parceiro para proteger você enquanto navega.
+cfr-doorhanger-doh-body = Sua privacidade é importante. Agora o { -brand-short-name } roteia com segurança suas requisição de DNS, sempre que possível, para um serviço parceiro para proteger você enquanto navega.
 cfr-doorhanger-doh-header = Pesquisas de DNS mais seguras e criptografadas
 cfr-doorhanger-doh-primary-button = OK, entendi
     .accesskey = O
@@ -289,3 +294,8 @@ cfr-whatsnew-supercookies-body = Alguns sites podem anexar secretamente ao seu n
 
 cfr-whatsnew-bookmarking-header = Melhora nos favoritos
 cfr-whatsnew-bookmarking-body = É mais fácil acompanhar seus sites preferidos. Agora o { -brand-short-name } memoriza seu local preferido de salvar favoritos, mostra por padrão a barra de ferramentas de favoritos em novas abas e oferece acesso fácil ao restante de seus favoritos por meio de uma pasta na barra de ferramentas.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Proteção abrangente contra rastreamento de cookies entre sites
+cfr-whatsnew-cross-site-tracking-body = Agora você pode optar por ter melhor proteção contra rastreamento de cookies. O { -brand-short-name } pode isolar suas atividades e dados do site em que você está no momento, para que as informações armazenadas no navegador não sejam compartilhadas entre sites.

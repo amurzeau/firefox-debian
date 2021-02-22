@@ -84,6 +84,7 @@ login-item-new-login-title = Δημιουργία νέας σύνδεσης
 login-item-edit-button = Επεξεργασία
 about-logins-login-item-remove-button = Αφαίρεση
 login-item-origin-label = Διεύθυνση ιστοσελίδας
+login-item-tooltip-message = Βεβαιωθείτε ότι ταιριάζει ακριβώς με τη διεύθυνση του ιστότοπου όπου συνδέεστε.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Όνομα χρήστη
@@ -265,6 +266,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Έγγραφο CSV
        *[other] Αρχείο CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Έγγραφο TSV
+       *[other] Αρχείο TSV
+    }
 
 ##
 ## Variables:
@@ -288,3 +296,20 @@ about-logins-import-dialog-items-error =
        *[other] <span>Σφάλματα:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(δεν έγινε εισαγωγή)</span>
     }
 about-logins-import-dialog-done = Τέλος
+about-logins-import-dialog-error-title = Σφάλμα εισαγωγής
+about-logins-import-dialog-error-conflicting-values-title = Πολλές τιμές σε διένεξη για μια σύνδεση
+about-logins-import-dialog-error-conflicting-values-description = Για παράδειγμα: πολλαπλά ονόματα χρήστη, κωδικοί πρόσβασης, URL, κ.λπ. για μια σύνδεση.
+about-logins-import-dialog-error-file-format-title = Πρόβλημα μορφής αρχείου
+about-logins-import-dialog-error-file-format-description = Σφάλμα ή απουσία κεφαλίδων στήλης. Βεβαιωθείτε ότι το αρχείο περιλαμβάνει στήλες για όνομα χρήστη, κωδικό πρόσβασης και URL.
+about-logins-import-dialog-error-file-permission-title = Αδυναμία ανάγνωσης αρχείου
+about-logins-import-dialog-error-file-permission-description = Το { -brand-short-name } δεν έχει άδεια ανάγνωσης για το αρχείο. Δοκιμάστε να αλλάξετε τα δικαιώματα του αρχείου.
+about-logins-import-dialog-error-unable-to-read-title = Αδυναμία ανάλυσης αρχείου
+about-logins-import-dialog-error-unable-to-read-description = Βεβαιωθείτε ότι έχετε επιλέξει ένα αρχείο CSV ή TSV.
+about-logins-import-dialog-error-no-logins-imported = Δεν έγινε εισαγωγή συνδέσεων
+about-logins-import-dialog-error-learn-more = Μάθετε περισσότερα
+about-logins-import-dialog-error-try-again = Δοκιμή ξανά…
+about-logins-import-dialog-error-cancel = Ακύρωση
+
+## Logins import report page
+
+about-logins-import-report-page-title = Εισαγωγή περιληπτικής αναφοράς

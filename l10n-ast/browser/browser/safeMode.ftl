@@ -6,10 +6,11 @@ safe-mode-window =
     .title = Mou seguru de { -brand-short-name }
     .style = max-width: 400px
 start-safe-mode =
-    .label = Aniciar en Mou seguru
+    .label = Aniciar nel mou seguru
 refresh-profile =
-    .label = Reaniciar { -brand-short-name }
-safe-mode-description = El mou seguru ye un mou especial de { -brand-short-name } que pue usase pa la igua de problemes.
-refresh-profile-instead = Tamién pues saltar la igua de problemes y tentar de reaniciar { -brand-short-name }.
-# Shown on the safe mode dialog after multiple startup crashes. 
-auto-safe-mode-description = { -brand-short-name } zarróse inesperadamente entrín s'aniciaba. Esto quiciabes tea causao por complementos u otros problemes. Pues tentar d'iguar el problema nel Mou seguru.
+    .label = Reafitar { -brand-short-name }
+safe-mode-description = El mou seguru ye un mou especial de { -brand-short-name } que pue usase pa iguar de problemes.
+safe-mode-description-details = Los complementos y axustes personalizaos van desactivase temporalmente, y les carauterístiques de { -brand-short-name } puen dexar de rindir como lo faen anguaño.
+refresh-profile-instead = Tamién pues saltar la igua de problemes y probar a reafitar { -brand-short-name }.
+# Shown on the safe mode dialog after multiple startup crashes.
+auto-safe-mode-description = { -brand-short-name } zarróse inesperadamente mentanto s'aniciaba. Esto pue ser pola mor de los complementos u otros problemes. Pues tentar d'iguar el problema reaniciando nel mou seguru.

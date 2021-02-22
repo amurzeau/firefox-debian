@@ -7,10 +7,10 @@ page-subtitle =
     Esta página contém informações técnicas que podem ser úteis se você estiver
     tentando solucionar um problema. Se estiver procurando respostas para as dúvidas mais comuns
     do { -brand-short-name }, confira o <a data-l10n-name="support-link">site de suporte</a>.
-crashes-title = Relatórios de travamentos
+crashes-title = Relatórios de travamento
 crashes-id = ID do relatório
 crashes-send-date = Envio
-crashes-all-reports = Todos os relatórios de travamentos
+crashes-all-reports = Todos os relatórios de travamento
 crashes-no-config = Este aplicativo não foi configurado para exibir relatórios de travamento.
 extensions-title = Extensões
 extensions-name = Nome
@@ -122,7 +122,7 @@ a11y-instantiator = Instanciador de Acessibilidade
 library-version-title = Versões de bibliotecas
 copy-text-to-clipboard-label = Copiar como texto
 copy-raw-data-to-clipboard-label = Copiar como estrutura de dados
-sandbox-title = Isolamento
+sandbox-title = Isolamento (sandbox)
 sandbox-sys-call-log-title = Chamadas do sistema rejeitadas
 sandbox-sys-call-index = #
 sandbox-sys-call-age = Segundos atrás
@@ -198,6 +198,10 @@ support-third-party-modules-thread = Thread
 support-third-party-modules-base = Endereço do imagebase
 support-third-party-modules-uptime = Tempo de atividade do processo (ms)
 support-third-party-modules-duration = Duração do carregamento (ms)
+support-third-party-modules-status = Status
+support-third-party-modules-status-loaded = Carregado
+support-third-party-modules-status-blocked = Bloqueado
+support-third-party-modules-status-redirected = Redirecionado
 support-third-party-modules-empty = Nenhum módulo de terceiros foi carregado.
 support-third-party-modules-no-value = (sem valor)
 support-third-party-modules-button-open =
@@ -218,8 +222,8 @@ support-third-party-modules-up-icon =
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
     { $days ->
-        [one] Relatórios de travamentos de { $days } dia
-       *[other] Relatórios de travamentos dos últimos { $days } dias
+        [one] Relatórios de travamentos do último dia
+       *[other] Relatórios de travamento dos últimos { $days } dias
     }
 # Variables
 # $minutes (integer) - Number of minutes since crash
@@ -246,8 +250,8 @@ crashes-time-days =
 # $reports (integer) - Number of pending reports
 pending-reports =
     { $reports ->
-        [one] Todos os relatórios de travamentos (incluindo { $reports } travamento pendente na faixa de tempo especificada)
-       *[other] Todos os relatórios de travamentos (incluindo { $reports } travamentos pendentes na faixa de tempo especificada)
+        [one] Todos os relatórios de travamento (incluindo { $reports } travamento pendente na faixa de tempo indicada)
+       *[other] Todos os relatórios de travamento (incluindo { $reports } travamentos pendentes na faixa de tempo indicada)
     }
 raw-data-copied = Dados copiados para a área de transferência
 text-copied = Texto copiado para a área de transferência

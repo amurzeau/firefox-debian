@@ -9,6 +9,45 @@
 # NOTE: For Engineers, please don't re-use these strings outside of the menubar.
 
 
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = Serviççi
+menu-application-hide-this =
+    .label = Ascondi { -brand-shorter-name }
+menu-application-hide-other =
+    .label = Ascondi i atri
+menu-application-show-all =
+    .label = Fanni vedde tutto
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] Sciòrti
+           *[other] Sciòrti
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] S
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = Sciòrti da { -brand-shorter-name }
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = Særa { -brand-shorter-name }
+menu-about =
+    .label = Informaçioin in sce { -brand-shorter-name }
+    .accesskey = I
+
 ## File Menu
 
 menu-file =
@@ -237,6 +276,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = Agiutto
     .accesskey = A
@@ -255,6 +312,8 @@ menu-help-keyboard-shortcuts =
 menu-help-troubleshooting-info =
     .label = Informaçioin in sciâ soluçion di problemi
     .accesskey = I
+menu-help-taskmanager =
+    .label = Gestion ativitæ
 menu-help-feedback-page =
     .label = Manda comento…
     .accesskey = M

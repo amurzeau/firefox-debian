@@ -12,24 +12,44 @@ navbar-tooltip-instruction =
 ## Back
 
 main-context-menu-back =
-    .tooltiptext = Mont d'ar bajennad kent
+    .tooltiptext = Mont d’ar bajennad kent
     .aria-label = Kent
     .accesskey = K
 navbar-tooltip-back =
     .value = { main-context-menu-back.tooltiptext }
 toolbar-button-back =
     .label = { main-context-menu-back.aria-label }
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the Go Back command.
+main-context-menu-back-2 =
+    .tooltiptext = Mont d’ar bajennad kent ({ $shortcut })
+    .aria-label = Kent
+    .accesskey = K
+navbar-tooltip-back-2 =
+    .value = { main-context-menu-back-2.tooltiptext }
+toolbar-button-back-2 =
+    .label = { main-context-menu-back-2.aria-label }
 
 ## Forward
 
 main-context-menu-forward =
-    .tooltiptext = Mont d'ar bajennad war-lerc'h
-    .aria-label = War-lerc'h
+    .tooltiptext = Mont d’ar bajennad war-lerc’h
+    .aria-label = War-lerc’h
     .accesskey = W
 navbar-tooltip-forward =
     .value = { main-context-menu-forward.tooltiptext }
 toolbar-button-forward =
     .label = { main-context-menu-forward.aria-label }
+# Variables
+#   $shortcut (String) - A keyboard shortcut for the Go Forward command.
+main-context-menu-forward-2 =
+    .tooltiptext = Mont d’ar bajennad war-lerc’h ({ $shortcut })
+    .aria-label = War-lerc’h
+    .accesskey = W
+navbar-tooltip-forward-2 =
+    .value = { main-context-menu-forward-2.tooltiptext }
+toolbar-button-forward-2 =
+    .label = { main-context-menu-forward-2.aria-label }
 
 ## Reload
 
@@ -247,7 +267,7 @@ main-context-menu-save-to-pocket =
     .label = Enrollañ ar bajenn etrezek { -pocket-brand-name }
     .accesskey = k
 main-context-menu-send-to-device =
-    .label = Kas ar bajenn d'an trevnad
+    .label = Kas ar bajenn d’an trevnad
     .accesskey = t
 main-context-menu-view-background-image =
     .label = Gwelout ar skeudenn drekleur
@@ -259,7 +279,7 @@ main-context-menu-keyword =
     .label = Ouzhpennañ ur ger-alc'hwez evit ar c'hlask-mañ …
     .accesskey = k
 main-context-menu-link-send-to-device =
-    .label = Kas an ere d'an trevnad
+    .label = Kas an ere d’an trevnad
     .accesskey = t
 main-context-menu-frame =
     .label = Ar frammad-se

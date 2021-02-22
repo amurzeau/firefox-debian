@@ -315,6 +315,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = Yopish
 
+## Tab actions
+
+
 ## Bookmarks toolbar items
 
 
@@ -416,6 +419,9 @@ fullscreen-exit-mac-button = "Butun ekranda" usulidan chiqish (Esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ko‘rsatkichingiz ustidan nazorat o‘rnatgan. Nazoratni qo‘lga olish uchun Esc tugmasini bosing.
 pointerlock-warning-no-domain = Bu hujat ko‘rsatkichingiz ustidan nazorat o‘rnatgan. Nazoratni qo‘lga olish uchun Esc tugmasini bosing.
 
+## Subframe crash notification
+
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -444,6 +450,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Xatcho‘plar panelini berkitish
            *[other] Xatcho‘plar panelini ko‘rsatish
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Xatcho‘plar panelini berkitish
+           *[other] Xatcho‘plar panelini ko‘rsatish
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -454,6 +466,8 @@ bookmarks-search =
     .label = Xatcho‘plarni qidirish
 bookmarks-tools =
     .label = Xatcho‘p vositalari
+bookmarks-bookmark-edit-panel =
+    .label = Ushbu xatcho‘pni o‘zgartirish
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.

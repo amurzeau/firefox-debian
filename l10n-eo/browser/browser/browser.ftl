@@ -346,6 +346,9 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Fermi
 
+## Tab actions
+
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,6 +507,9 @@ fullscreen-exit-mac-button = Eliri el plenekrana reĝimo (esk)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> regas vian musmontrilon. Premu Esk por repreni la regadon.
 pointerlock-warning-no-domain = Tiu ĉi dokumento regas vian musmontrilon. Premu Esk por repreni la regadon.
 
+## Subframe crash notification
+
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -532,6 +538,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Kaŝi ilaron de legosignoj
            *[other] Montri ilaron de legosignoj
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Kaŝi ilaron de legosignoj
+           *[other] Montri ilaron de legosignoj
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +554,8 @@ bookmarks-search =
     .label = Serĉi legosignojn
 bookmarks-tools =
     .label = Iloj por legosignoj
+bookmarks-bookmark-edit-panel =
+    .label = Redakti tiun ĉi legosignon
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -564,6 +578,8 @@ library-bookmarks-bookmark-this-page =
     .label = Aldoni legosignon por tiu ĉi paĝo
 library-bookmarks-bookmark-edit =
     .label = Redakti tiun ĉi legosignon
+library-recent-activity-title =
+    .value = Ĵusa agado
 
 ## More items
 

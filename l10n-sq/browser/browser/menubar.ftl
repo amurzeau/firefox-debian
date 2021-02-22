@@ -3,6 +3,53 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = Shërbime
+menu-application-hide-this =
+    .label = Fshihe { -brand-shorter-name }-in
+menu-application-hide-other =
+    .label = Fshihi të Tjerat
+menu-application-show-all =
+    .label = Shfaqi të Tëra
+menu-application-touch-bar =
+    .label = Përshtatni Shtyllën e Prekjeve…
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] Dilni
+           *[other] Dilni
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] D
+           *[other] l
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = Dilni prej { -brand-shorter-name }-it
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = Dilni nga { -brand-shorter-name }-i
+menu-about =
+    .label = Mbi { -brand-shorter-name }-in
+    .accesskey = R
+
 ## File Menu
 
 menu-file =
@@ -237,6 +284,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = Ndihmë
     .accesskey = N
@@ -252,9 +317,14 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Shkurtore Tastiere
     .accesskey = S
+menu-get-help =
+    .label = Merrni Ndihmë
+    .accesskey = M
 menu-help-troubleshooting-info =
     .label = Të dhëna Diagnostikimi
     .accesskey = D
+menu-help-taskmanager =
+    .label = Përgjegjës Punësh
 menu-help-feedback-page =
     .label = Parashtroni Përshtypjet…
     .accesskey = P
@@ -272,3 +342,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Ky s'është sajt i rremë…
     .accesskey = r
+menu-help-check-for-update =
+    .label = Shihni për Përditësime…
+    .accesskey = S

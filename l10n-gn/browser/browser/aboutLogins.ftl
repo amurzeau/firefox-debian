@@ -84,6 +84,7 @@ login-item-new-login-title = Tembiapo ñepyrũ pyahu moheñói
 login-item-edit-button = Mbosako’i
 about-logins-login-item-remove-button = Mboguete
 login-item-origin-label = Ñanduti kundaharape
+login-item-tooltip-message = Emoñondivéke pe kundaharape ñanduti renda emoñepyrũha tembiapo rehe.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Puruhára réra
@@ -206,6 +207,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Emba’egueraha tembiapo ñepyrũ ha ñe’ẽñemi
 about-logins-confirm-export-dialog-message = Ñe’ẽñemi oñeñongatúta moñe’ẽrãrõ (techapyrã, BadP@ssw0rd) oimeraẽva ombojurujakuaáva marandurenda guerahaukapyre ikatu ohecha.
 about-logins-confirm-export-dialog-confirm-button = Emba’egueraha…
+about-logins-alert-import-title = Emba’eguerupáma
+about-logins-alert-import-message = Ehechapaite emba’egueruva’ekue
 confirm-discard-changes-dialog-title = ¿Emboyke moambue eñongatu’ỹva?
 confirm-discard-changes-dialog-message = Opaite ñemoambue oñeñongatu’ỹva oguepáta.
 confirm-discard-changes-dialog-confirm-button = Hejarei
@@ -267,3 +270,54 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV Kuatiaite
        *[other] CSV Marandurenda
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] TSV Kuatiaite
+       *[other] TSV Marandurenda
+    }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Emba’eguerupáma
+about-logins-import-dialog-items-added =
+    { $count ->
+        [one] <span>Tembiapo ñepyrũ pyahu mbojuajupyre:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Tembiapo ñepyrũ pyahu mbojuajupyre:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+        [one] <span>Tembiapo ñepyrũ hekopyahúva:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Tembiapo ñepyrũ hekopyahúva:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+        [one] <span>Tembiapo ñepyrũ ikõiva:</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(ndojeguerúiva)</span>
+       *[other] <span>Tembiapo ñepyrũ ikõiva:</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(ndojeguerúiva)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+        [one] <span>Jejavy:</span><span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ndojeguerúiva)</span>
+       *[other] <span>Jejavy:</span><span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ndojeguerúiva)</span>
+    }
+about-logins-import-dialog-done = Apopyre
+about-logins-import-dialog-error-title = Ojavy mba’egueru
+about-logins-import-dialog-error-conflicting-values-title = Tepykue ndojokupytýiva tembiapo ñepyrũme g̃uarã
+about-logins-import-dialog-error-conflicting-values-description = Techapyrã: heta puruhára réra, ñe’ẽñemi, URLs, etc. peteĩ tembiapo ñepyrũme g̃uarã añónte.
+about-logins-import-dialog-error-file-format-title = Marandurenda ysaja iñapañuãi
+about-logins-import-dialog-error-file-format-description = Yta yvatevegua oĩvai térã oĩ’ỹva. Ne marandurenda orekova’erã yta puruhára réra rendag̃ua, ñe’ẽñemi ha URL.
+about-logins-import-dialog-error-file-permission-title = Noñemoñe’ẽkuaái marandurenda
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } norekói moneĩ omoñe’ẽ hag̃ua marandurenda. Eipuru emoambuévo marandurenda ñemoneĩ.
+about-logins-import-dialog-error-unable-to-read-title = Noñemomba’apokuaái marandurenda
+about-logins-import-dialog-error-unable-to-read-description = Eiporavo marandurenda CSV térã TSV.
+about-logins-import-dialog-error-no-logins-imported = Noñemba’eguerúi tembiapo ñepyrũ
+about-logins-import-dialog-error-learn-more = Kuaave
+about-logins-import-dialog-error-try-again = Eha’ãjey…
+about-logins-import-dialog-error-cancel = Heja
+
+## Logins import report page
+
+about-logins-import-report-page-title = Emba’egueru marandu’i mombykypyréva

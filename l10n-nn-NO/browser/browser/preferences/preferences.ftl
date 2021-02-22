@@ -502,6 +502,9 @@ home-prefs-topsites-by-option-sponsored =
     .label = Sponsa toppsider
 home-prefs-shortcuts-header =
     .label = Snarvegar
+home-prefs-shortcuts-description = Nettstadar du lagrar eller besøkjer
+home-prefs-shortcuts-by-option-sponsored =
+    .label = Sponsa snarvegar
 
 ## Variables:
 ##  $provider (String): Name of the corresponding content provider, e.g "Pocket".
@@ -509,6 +512,7 @@ home-prefs-shortcuts-header =
 home-prefs-recommended-by-header =
     .label = Tilrådd av { $provider }
 home-prefs-recommended-by-description-update = Eineståande innhald frå heile nettet sett saman av { $provider }
+home-prefs-recommended-by-description-new = Eksepsjonelt innhald sett saman av { $provider }, ein del av { -brand-product-name }-familien
 
 ##
 
@@ -528,6 +532,7 @@ home-prefs-highlights-option-saved-to-pocket =
     .label = Sider lagra til { -pocket-brand-name }
 home-prefs-recent-activity-header =
     .label = Nyleg aktivitet
+home-prefs-recent-activity-description = Eit utval av nylige nettstadar og innhald
 # For the "Snippets" feature traditionally on about:home.
 # Alternative translation options: "Small Note" or something that
 # expresses the idea of "a small message, shortened from something else,
@@ -535,6 +540,7 @@ home-prefs-recent-activity-header =
 home-prefs-snippets-header =
     .label = Snuttar
 home-prefs-snippets-description = Oppdateringar frå { -vendor-short-name } og { -brand-product-name }
+home-prefs-snippets-description-new = Tips og nyheiter frå { -vendor-short-name } og { -brand-product-name }
 home-prefs-sections-rows-option =
     .label =
         { $num ->
@@ -926,9 +932,16 @@ addressbar-locbar-bookmarks-option =
 addressbar-locbar-openpage-option =
     .label = Opne faner
     .accesskey = O
+# Shortcuts refers to the shortcut tiles on the new tab page, previously known as top sites. Translation should be consistent.
+addressbar-locbar-shortcuts-option =
+    .label = Snarvegar
+    .accesskey = S
 addressbar-locbar-topsites-option =
     .label = Mest besøkte nettstadar
     .accesskey = M
+addressbar-locbar-engines-option =
+    .label = Søkjemotorar
+    .accesskey = k
 addressbar-suggestions-settings = Endre innstillingar for søkjeforslag
 
 ## Privacy Section - Content Blocking
@@ -936,6 +949,7 @@ addressbar-suggestions-settings = Endre innstillingar for søkjeforslag
 content-blocking-enhanced-tracking-protection = Utvida sporingsvern
 content-blocking-section-top-level-description = Sporarar følgjer deg rundt på nettet for å samle informasjon om surfevanane og interessene dine. { -brand-short-name } blokkerer mange av desse sporarane og andre vondsinna skript.
 content-blocking-learn-more = Les meir
+content-blocking-fpi-incompatibility-warning = Du brukar First Party Isolation (FPI), som set til side nokre av infokapsel-innstillingane til { -brand-short-name }.
 
 ## These strings are used to define the different levels of
 ## Enhanced Tracking Protection.

@@ -346,6 +346,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Mdel
 
+## Tab actions
+
+browser-tab-audio-playing = Iteddu
+browser-tab-audio-muted = Isusem
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = TAΓURI
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = ISUSEM
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = TAΓURI TAWURMANT TETTUSEWḤEL
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = TUGNA-DEG-TUGNA
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,12 +517,26 @@ fullscreen-exit-mac-button = Ffeɣ seg ugdil ačuṛan (Esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> Ɣur-s asenqed n usewwaṛ-inek. Sit ɣef tqeffalt n usenser akken ad teṭṭfeḍ asewwaṛ.
 pointerlock-warning-no-domain = Isemli-a yeṭṭef asewwaṛ-ik. Sit ɣef Esc akken ad teṭṭfeḍ asewwaṛ.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Aḥric seg usebter-a yerreẓ.</strong> I wakken ad iẓer { -brand-product-name } ɣef wugur-a, ad t-iṣeggem s zzerb, ttxil-k·m azen aneqqis.
+crashed-subframe-learnmore =
+    .label = Issin ugar
+    .accesskey = I
+crashed-subframe-submit =
+    .label = Azen aneqqis
+    .accesskey = A
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Sken akk ticraḍ n yisebtar
 bookmarks-recent-bookmarks =
     .value = Wid ittwacerḍen melmi kan
+bookmarks-manage-bookmarks =
+    .label = Sefrek ticraḍ n yisebtar
+bookmarks-recent-bookmarks-panel =
+    .value = Ticraḍ n yisebtar n melmi kan
 bookmarks-toolbar-chevron =
     .tooltiptext = Sken ugar n tecraḍ n yisebtar
 bookmarks-sidebar-content =
@@ -532,6 +559,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Ffer afeggag n tecraḍ n yisebtar
            *[other] Sken afeggag n tecraḍ n yisebtar
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Ffer afeggag n tecraḍ n yisebtar
+           *[other] Sken afeggag n tecraḍ n yisebtar
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Ffer afeggag n yifecka n tecraḍ n yisebtar
+           *[other] Sken afeggag n yifecka n tecraḍ n yisebtar
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +581,8 @@ bookmarks-search =
     .label = Nadi ticraḍ n yisebtar
 bookmarks-tools =
     .label = Ifecka n tecraḍ n yisebtar
+bookmarks-bookmark-edit-panel =
+    .label = Ẓreg tacreḍṭ n usebter-a
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +596,9 @@ bookmarks-toolbar-placeholder =
     .title = Iferdisen n ufeggag n tecraḍ n yisebtar
 bookmarks-toolbar-placeholder-button =
     .label = Iferdisen n ufeggag n tecraḍ n yisebtar
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Iccer amiran n tecreḍt n usebter
 
 ## Library Panel items
 
@@ -564,7 +608,8 @@ library-bookmarks-bookmark-this-page =
     .label = Creḍ asebter-a
 library-bookmarks-bookmark-edit =
     .label = Ẓreg tacreḍṭ n usebter-a
-library-recent-activity-label = Armud n melmi kan
+library-recent-activity-title =
+    .value = Armud n melmi kan
 
 ## More items
 

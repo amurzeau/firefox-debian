@@ -343,6 +343,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Chiudi
 
+## Tab actions
+
+browser-tab-audio-playing = Riproduzione in corso
+browser-tab-audio-muted = Audio disattivato
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = RIPRODUZIONE IN CORSO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = AUDIO DISATTIVATO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = RIPRODUZ. AUTOMATICA BLOCCATA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = PICTURE-IN-PICTURE
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -499,12 +512,26 @@ fullscreen-exit-mac-button = Esci da schermo intero (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> sta controllando il puntatore del mouse. Premere Esc per riprenderne il controllo.
 pointerlock-warning-no-domain = Questo documento sta controllando il puntatore del mouse. Premere Esc per riprenderne il controllo.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Una parte di questa pagina si è bloccata.</strong> Invia una segnalazione a { -brand-product-name } per comunicare questo problema e fare in modo che venga risolto più rapidamente.
+crashed-subframe-learnmore =
+    .label = Ulteriori informazioni
+    .accesskey = U
+crashed-subframe-submit =
+    .label = Invia segnalazione
+    .accesskey = s
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Visualizza tutti i segnalibri
 bookmarks-recent-bookmarks =
     .value = Aggiunti di recente
+bookmarks-manage-bookmarks =
+  .label = Gestisci segnalibri
+bookmarks-recent-bookmarks-panel =
+  .value = Segnalibri recenti
 bookmarks-toolbar-chevron =
     .tooltiptext = Visualizza altri segnalibri
 bookmarks-sidebar-content =
@@ -527,6 +554,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Nascondi la barra dei segnalibri
            *[other] Visualizza la barra dei segnalibri
         }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Nascondi la barra dei segnalibri
+           *[other] Visualizza la barra dei segnalibri
+        }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Nascondi la barra dei segnalibri
+           *[other] Visualizza la barra dei segnalibri
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -537,6 +576,8 @@ bookmarks-search =
     .label = Cerca nei segnalibri
 bookmarks-tools =
     .label = Strumenti per i segnalibri
+bookmarks-bookmark-edit-panel =
+    .label = Modifica segnalibro
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -551,6 +592,10 @@ bookmarks-toolbar-placeholder =
 bookmarks-toolbar-placeholder-button =
     .label = Elementi della barra dei segnalibri
 
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+  .label = Aggiungi scheda corrente ai segnalibri
+
 ## Library Panel items
 
 library-bookmarks-menu =
@@ -559,7 +604,8 @@ library-bookmarks-bookmark-this-page =
     .label = Aggiungi pagina ai segnalibri
 library-bookmarks-bookmark-edit =
     .label = Modifica segnalibro
-library-recent-activity-label = Attività recente
+library-recent-activity-title =
+    .value = Attività recente
 
 ## More items
 

@@ -84,6 +84,7 @@ login-item-new-login-title = Titz'uk K'ak'a' Tikirib'äl Molojri'ïl
 login-item-edit-button = Nuk'b'äl
 about-logins-login-item-remove-button = Tiyuj
 login-item-origin-label = Ajk'amaya'l Ochochib'äl
+login-item-tooltip-message = Tatz'eta' chi nujäm ri' rik'in ri rochochib'al ruxaq ajk'amaya'l, akuchi' natikirisaj molojri'ïl.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Rub'i' okisanel
@@ -269,6 +270,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV Wuj
        *[other] CSV Yakb'äl
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] TSV Wujil
+       *[other] TSV Yakb'äl
+    }
 
 ##
 ## Variables:
@@ -296,3 +304,20 @@ about-logins-import-dialog-items-error =
        *[other] <span>Taq sachoj:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(man xek'am ta pe)</span>
     }
 about-logins-import-dialog-done = Xk'is
+about-logins-import-dialog-error-title = Tijik Sachoj
+about-logins-import-dialog-error-conflicting-values-title = Jalajöj Retal K'ayew richin Nitikirisaj Molojri'ïl
+about-logins-import-dialog-error-conflicting-values-description = Achi'el: jalajöj kib'i' okisanela', ewan taq tzij, URLs, ch'aqa' chik richin jun rutikirisaxik molojri'ïl.
+about-logins-import-dialog-error-file-format-title = K'ayewal rik'in ri Rub'anikil Yakb'äl
+about-logins-import-dialog-error-file-format-description = Man ütz ta o kowan Ruch'utukwi' tem. Tatz'eta' chi ri yakb'äl kik'wan taq tem richin kib'i' okisanela', ewan tzij chuqa' URL.
+about-logins-import-dialog-error-file-permission-title = Man Tikirel ta Nisik'ïx ri Yakb'äl
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } majun ya'on q'ij chi re richin nisik'ïx ri yakb'äl. Tatojtob'ej najäl ri ruya'oj q'ij yakb'äl.
+about-logins-import-dialog-error-unable-to-read-title = Man Tikirel ta Ninik'öx ri Yakb'äl
+about-logins-import-dialog-error-unable-to-read-description = Tatz'eta' chi nacha' jun CSV o TSV yakb'äl.
+about-logins-import-dialog-error-no-logins-imported = Man xejik' ta tikirib'äl taq molojri'ïl
+about-logins-import-dialog-error-learn-more = Tetamäx juley
+about-logins-import-dialog-error-try-again = Titojtob'ëx Chik…
+about-logins-import-dialog-error-cancel = Tiq'at
+
+## Logins import report page
+
+about-logins-import-report-page-title = Tijik' Rutzijol Ch'utitzijol

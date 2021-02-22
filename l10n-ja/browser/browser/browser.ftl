@@ -338,6 +338,11 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = 閉じる
 
+## Tab actions
+
+browser-tab-audio-playing = 再生中
+browser-tab-audio-muted = ミュート中
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -496,12 +501,26 @@ fullscreen-exit-mac-button = 全画面表示モードを終了 (esc)
 pointerlock-warning-domain = マウスポインターは現在、 <span data-l10n-name="domain">{ $domain }</span> が制御しています。制御を取り戻すには、ESC キーを押してください。
 pointerlock-warning-no-domain = マウスポインターは現在、このページが制御しています。制御を取り戻すには、ESC キーを押してください。
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>このページの一部がクラッシュしました。</strong> { -brand-product-name } にこの問題を知らせて素早く修正するために、レポートを送信してください。
+crashed-subframe-learnmore =
+  .label = 詳細
+  .accesskey = L
+crashed-subframe-submit =
+  .label = レポートを送信
+  .accesskey = S
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = すべてのブックマークを表示
 bookmarks-recent-bookmarks =
     .value = 最近のブックマーク
+bookmarks-manage-bookmarks =
+  .label = ブックマークを管理
+bookmarks-recent-bookmarks-panel =
+  .value = 最近のブックマーク
 bookmarks-toolbar-chevron =
     .tooltiptext = 残りのブックマークを表示します
 bookmarks-sidebar-content =
@@ -524,6 +543,16 @@ bookmarks-tools-toolbar-visibility =
             [true] ブックマークツールバーを隠す
            *[other] ブックマークツールバーを表示
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+  .label = { $isVisible ->
+     [true] ブックマークツールバーを隠す
+    *[other] ブックマークツールバーを表示
+  }
+bookmarks-tools-toolbar-visibility-panel =
+  .label = { $isVisible ->
+     [true] ブックマークツールバーを隠す
+    *[other] ブックマークツールバーを表示
+  }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -534,6 +563,10 @@ bookmarks-search =
     .label = ブックマークを検索
 bookmarks-tools =
     .label = ブックマークツール
+
+bookmarks-bookmark-edit-panel =
+  .label = このブックマークを編集
+
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -548,6 +581,10 @@ bookmarks-toolbar-placeholder =
 bookmarks-toolbar-placeholder-button =
     .label = ブックマークツールバーの項目
 
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+  .label = 現在のタブをブックマークに追加
+
 ## Library Panel items
 
 library-bookmarks-menu =
@@ -556,7 +593,8 @@ library-bookmarks-bookmark-this-page =
     .label = このページをブックマーク
 library-bookmarks-bookmark-edit =
     .label = このブックマークを編集
-library-recent-activity-label = 最近のアクティビティ
+library-recent-activity-title =
+    .value = 最近のアクティビティ
 
 ## More items
 

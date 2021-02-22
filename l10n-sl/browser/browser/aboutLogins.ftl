@@ -86,6 +86,7 @@ login-item-new-login-title = Ustvari novo prijavo
 login-item-edit-button = Uredi
 about-logins-login-item-remove-button = Odstrani
 login-item-origin-label = Naslov spletnega mesta
+login-item-tooltip-message = Prepričajte se, da se to ujema s točnim naslovom spletne strani, na katero se prijavljate.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Uporabniško ime
@@ -275,10 +276,36 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Dokument CSV
        *[other] Datoteka CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Dokument TSV
+       *[other] Datoteka TSV
+    }
 
 ##
 ## Variables:
 ##  $count (number) - The number of affected elements
 
 about-logins-import-dialog-title = Uvoz dokončan
+about-logins-import-dialog-items-no-change =
+    { $count ->
+       *[other] <span>Najdene podvojene prijave:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(niso uvožene)</span>
+    }
 about-logins-import-dialog-done = Končano
+about-logins-import-dialog-error-title = Napaka pri uvozu
+about-logins-import-dialog-error-conflicting-values-title = Več nasprotujočih si vrednosti za eno prijavo
+about-logins-import-dialog-error-conflicting-values-description = Npr. več uporabniških imen, gesel, spletnih naslovov … za eno prijavo.
+about-logins-import-dialog-error-file-format-title = Težava z obliko datoteke
+about-logins-import-dialog-error-file-format-description = Napačne ali manjkajoče glave stolpcev. Prepričajte se, da datoteka vsebuje stolpce za uporabniško ime, geslo in spletni naslov.
+about-logins-import-dialog-error-file-permission-title = Datoteke ni mogoče prebrati
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } nima dovoljenja za branje datoteke. Poskusite spremeniti dovoljenja datoteke.
+about-logins-import-dialog-error-unable-to-read-description = Prepričajte se, da ste izbrali datoteko CSV ali TSV.
+about-logins-import-dialog-error-no-logins-imported = Uvožena ni bila nobena prijava
+about-logins-import-dialog-error-learn-more = Več o tem
+about-logins-import-dialog-error-try-again = Poskusi znova …
+about-logins-import-dialog-error-cancel = Prekliči
+
+## Logins import report page
+

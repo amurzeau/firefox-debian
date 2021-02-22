@@ -346,6 +346,11 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Bezárás
 
+## Tab actions
+
+browser-tab-audio-playing = Lejátszás
+browser-tab-audio-muted = Némítva
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,12 +509,26 @@ fullscreen-exit-mac-button = Kilépés a teljes képernyőből (esc)
 pointerlock-warning-domain = A következő irányítja az egérmutatót: <span data-l10n-name="domain">{ $domain }</span> . Nyomja meg az Esc gombot az irányítás visszavételéhez.
 pointerlock-warning-no-domain = Ez a dokumentum vezérli az egérmutatóját. Nyomja meg az Esc gombot az irányítás visszavételéhez.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Az oldal egy része összeomlott.</strong> Küldjön egy jelentést a { -brand-product-name } fejlesztőinek, hogy gyorsabban elháríthassák a problémát.
+crashed-subframe-learnmore =
+    .label = További tudnivalók
+    .accesskey = T
+crashed-subframe-submit =
+    .label = Jelentés beküldése
+    .accesskey = b
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Minden könyvjelző megjelenítése
 bookmarks-recent-bookmarks =
     .value = Nemrég könyvjelzőzött
+bookmarks-manage-bookmarks =
+    .label = Könyvjelzők kezelése
+bookmarks-recent-bookmarks-panel =
+    .value = Friss könyvjelzők
 bookmarks-toolbar-chevron =
     .tooltiptext = További könyvjelzők megjelenítése
 bookmarks-sidebar-content =
@@ -532,6 +551,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Könyvjelző eszköztár elrejtése
            *[other] Könyvjelző eszköztár megjelenítése
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Könyvjelző eszköztár elrejtése
+           *[other] Könyvjelző eszköztár megjelenítése
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Könyvjelző eszköztár elrejtése
+           *[other] Könyvjelző eszköztár megjelenítése
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +573,8 @@ bookmarks-search =
     .label = Könyvjelzők keresése
 bookmarks-tools =
     .label = Könyvjelzőzési eszközök
+bookmarks-bookmark-edit-panel =
+    .label = Könyvjelző szerkesztése
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +588,9 @@ bookmarks-toolbar-placeholder =
     .title = Könyvjelző eszköztár elemei
 bookmarks-toolbar-placeholder-button =
     .label = Könyvjelző eszköztár elemei
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Jelenlegi lap könyvjelzőzése
 
 ## Library Panel items
 
@@ -564,7 +600,8 @@ library-bookmarks-bookmark-this-page =
     .label = Oldal hozzáadása a könyvjelzőkhöz
 library-bookmarks-bookmark-edit =
     .label = Könyvjelző szerkesztése
-library-recent-activity-label = Friss tevékenység
+library-recent-activity-title =
+    .value = Friss tevékenység
 
 ## More items
 
