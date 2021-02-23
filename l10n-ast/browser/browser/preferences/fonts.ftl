@@ -4,7 +4,6 @@
 
 fonts-window =
     .title = Fontes
-
 fonts-window-close =
     .key = w
 
@@ -12,17 +11,16 @@ fonts-window-close =
 
 fonts-langgroup-header = Fontes pa
     .accesskey = F
-
 fonts-langgroup-arabic =
     .label = Árabe
 fonts-langgroup-armenian =
     .label = Armeniu
 fonts-langgroup-bengali =
-    .label = Bengalí
+    .label = Bengalín
 fonts-langgroup-simpl-chinese =
     .label = Chinu simplificáu
 fonts-langgroup-trad-chinese-hk =
-    .label = Chinu tradicional (Hong Kong)
+    .label = Chinu tradicional (Ḥong Kong)
 fonts-langgroup-trad-chinese =
     .label = Chinu tradicional (Taiwan)
 fonts-langgroup-cyrillic =
@@ -36,7 +34,7 @@ fonts-langgroup-georgian =
 fonts-langgroup-el =
     .label = Griegu
 fonts-langgroup-gujarati =
-    .label = Gujarati
+    .label = Guxaratín
 fonts-langgroup-gurmukhi =
     .label = Gurmukhi
 fonts-langgroup-japanese =
@@ -44,22 +42,22 @@ fonts-langgroup-japanese =
 fonts-langgroup-hebrew =
     .label = Hebréu
 fonts-langgroup-kannada =
-    .label = Kannada
+    .label = Canarés
 fonts-langgroup-khmer =
-    .label = Ḥemer
+    .label = Camboyanu
 fonts-langgroup-korean =
     .label = Coreanu
 # Translate "Latin" as the name of Latin (Roman) script, not as the name of the Latin language.
 fonts-langgroup-latin =
-    .label = Llatinu
+    .label = Llatín
 fonts-langgroup-malayalam =
-    .label = Malayalam
+    .label = Malabar
 fonts-langgroup-math =
     .label = Matemátiques
 fonts-langgroup-odia =
-    .label = Odia
+    .label = Odía
 fonts-langgroup-sinhala =
-    .label = Sinhala
+    .label = Cingalés
 fonts-langgroup-tamil =
     .label = Tamil
 fonts-langgroup-telugu =
@@ -69,7 +67,7 @@ fonts-langgroup-thai =
 fonts-langgroup-tibetan =
     .label = Tibetanu
 fonts-langgroup-canadian =
-    .label = Separtación silábica xunificada canadiense
+    .label = Silabariu canadianu unificáu
 fonts-langgroup-other =
     .label = Otros sistemes d'escritura
 
@@ -77,50 +75,39 @@ fonts-langgroup-other =
 
 fonts-proportional-header = Proporcional
     .accesskey = P
-
 fonts-default-serif =
     .label = Serif
 fonts-default-sans-serif =
     .label = Sans Serif
-
 fonts-proportional-size = Tamañu
     .accesskey = T
-
 fonts-serif = Serif
     .accesskey = S
-
 fonts-sans-serif = Sans-serif
     .accesskey = n
-
 fonts-monospace = Monoespaciáu
     .accesskey = M
-
 fonts-monospace-size = Tamañu
     .accesskey = u
-
-fonts-minsize = Tamañu mínimu de fonte
+fonts-minsize = Tamañu mínimu de la fonte
     .accesskey = o
-
 fonts-minsize-none =
-    .label = Dengún
-
+    .label = Nengún
 fonts-allow-own =
-    .label = Permitir a les páxines escoyer les sos propies fontes, en cuenta de les tuyes d'arriba
-    .accesskey = A
+    .label = Permitir que les páxines escueyan les sos fontes en cuentes d'esbillar les d'enriba
+    .accesskey = P
 
 ## Text Encodings
 ##
 ## Translate the encoding names as adjectives for an encoding, not as the name
 ## of the language.
 
-fonts-languages-fallback-header = Codificación de testu pa conteníu vieyu
-fonts-languages-fallback-desc = Esta codificación de testu úsase pa conteníu vieyu que nun declara la so codificación.
-
-fonts-languages-fallback-label = Codificación de testu predet.
-    .accesskey = T
-
+fonts-languages-fallback-header = Codificación del testu pal conteníu heredáu
+fonts-languages-fallback-desc = Esta codificación del testu úsase pa conteníu heredáu que nun ye a declarar la so codificación.
+fonts-languages-fallback-label = Codificación del testu alternativa
+    .accesskey = t
 fonts-languages-fallback-name-auto =
-    .label = Predetermináu pa la llingua actual
+    .label = Lo predeterminao pa la locale actual
 fonts-languages-fallback-name-arabic =
     .label = Árabe
 fonts-languages-fallback-name-baltic =
@@ -151,10 +138,9 @@ fonts-languages-fallback-name-vietnamese =
     .label = Vietnamita
 fonts-languages-fallback-name-other =
     .label = Otros (incl. européu occidental)
-
 # Variables:
 #   $name {string, "Arial"} - Name of the default font
 fonts-label-default =
-    .label = Predetermináu ({ $name })
+    .label = { $name } (por defeutu)
 fonts-label-default-unnamed =
-    .label = Por defeutu
+    .label = Lo predeterminao

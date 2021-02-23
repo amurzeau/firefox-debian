@@ -50,7 +50,7 @@ login-list-count =
        *[many] { $count } записів
     }
 login-list-sort-label-text = Сортувати:
-login-list-name-option = Ім'я (A-Z)
+login-list-name-option = Ім'я (А-Я)
 login-list-name-reverse-option = Назва (Z-A)
 about-logins-login-list-alerts-option = Попередження
 login-list-last-changed-option = Змінено
@@ -85,6 +85,7 @@ login-item-new-login-title = Створити новий запис
 login-item-edit-button = Змінити
 about-logins-login-item-remove-button = Вилучити
 login-item-origin-label = Адреса вебсайту
+login-item-tooltip-message = Переконайтесь, що це точно відповідає адресі вебсайту, на який ви входите.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Ім'я користувача
@@ -276,6 +277,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Документ CSV
        *[other] Файл CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Документ TSV
+       *[other] Файл TSV
+    }
 
 ##
 ## Variables:
@@ -299,3 +307,20 @@ about-logins-import-dialog-items-error =
        *[other] <span>Помилки:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(not imported)</span>
     }
 about-logins-import-dialog-done = Готово
+about-logins-import-dialog-error-title = Помилка імпорту
+about-logins-import-dialog-error-conflicting-values-title = Кілька суперечливих значень для одного облікового запису
+about-logins-import-dialog-error-conflicting-values-description = Наприклад: кілька імен користувачів, паролів, URL-адрес тощо для одного облікового запису.
+about-logins-import-dialog-error-file-format-title = Помилка формату файлу
+about-logins-import-dialog-error-file-format-description = Неправильні або відсутні заголовки стовпців. Переконайтеся, що файл містить стовпці для імені користувача, пароля та URL-адреси.
+about-logins-import-dialog-error-file-permission-title = Не вдалося прочитати файл
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } не має дозволу на читання файлу. Спробуйте змінити дозволи на файл.
+about-logins-import-dialog-error-unable-to-read-title = Не вдалося проаналізувати файл
+about-logins-import-dialog-error-unable-to-read-description = Переконайтеся, що вибрали файл CSV або TSV.
+about-logins-import-dialog-error-no-logins-imported = Жоден пароль не імпортовано
+about-logins-import-dialog-error-learn-more = Дізнатися більше
+about-logins-import-dialog-error-try-again = Спробувати знову…
+about-logins-import-dialog-error-cancel = Скасувати
+
+## Logins import report page
+
+about-logins-import-report-page-title = Звіт про імпорт

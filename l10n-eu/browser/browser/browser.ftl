@@ -346,6 +346,11 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Itxi
 
+## Tab actions
+
+browser-tab-audio-playing = Erreproduzitzen
+browser-tab-audio-muted = Mutututa
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,11 +509,25 @@ fullscreen-exit-mac-button = Irten pantaila osotik (esk)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> (e)k zure erakuslearen kontrola dauka. Kontrola berreskuratzeko, sakatu eskape tekla.
 pointerlock-warning-no-domain = Dokumentu honek zure erakuslearen kontrola dauka. Kontrola berreskuratzeko, sakatu eskape tekla.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Orriaren zati batek huts egin du</strong>. Arazoaren berri eman eta ahalik eta azkarren konpontzeko, bidali mesedez txostena { -brand-product-name }(r)i.
+crashed-subframe-learnmore =
+    .label = Argibide gehiago
+    .accesskey = A
+crashed-subframe-submit =
+    .label = Bidali txostena
+    .accesskey = B
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Erakutsi laster-marka guztiak
 bookmarks-recent-bookmarks =
+    .value = Azken laster-markak
+bookmarks-manage-bookmarks =
+    .label = Kudeatu laster-markak
+bookmarks-recent-bookmarks-panel =
     .value = Azken laster-markak
 bookmarks-toolbar-chevron =
     .tooltiptext = Erakutsi laster-marka gehiago
@@ -532,6 +551,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Ezkutatu laster-marken tresna-barra
            *[other] Ikusi laster-marken tresna-barra
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Ezkutatu laster-marken tresna-barra
+           *[other] Ikusi laster-marken tresna-barra
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Ezkutatu laster-marken tresna-barra
+           *[other] Erakutsi laster-marken tresna-barra
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +573,8 @@ bookmarks-search =
     .label = Bilatu laster-markak
 bookmarks-tools =
     .label = Laster-marken tresnak
+bookmarks-bookmark-edit-panel =
+    .label = Editatu laster-marka
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +588,9 @@ bookmarks-toolbar-placeholder =
     .title = Laster-marken tresna-barraren osagaiak
 bookmarks-toolbar-placeholder-button =
     .label = Laster-marken tresna-barraren osagaiak
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Egin uneko fitxaren laster-marka
 
 ## Library Panel items
 
@@ -564,7 +600,8 @@ library-bookmarks-bookmark-this-page =
     .label = Egin orriaren laster-marka
 library-bookmarks-bookmark-edit =
     .label = Editatu laster-marka
-library-recent-activity-label = Azken jarduera
+library-recent-activity-title =
+    .value = Azken jarduera
 
 ## More items
 

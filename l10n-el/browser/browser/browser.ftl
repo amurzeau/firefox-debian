@@ -346,6 +346,13 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Κλείσιμο
 
+## Tab actions
+
+browser-tab-audio-playing = Σε αναπαραγωγή
+browser-tab-audio-muted = Σε σίγαση
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = ΕΙΚΟΝΑ ΕΝΤΟΣ ΕΙΚΟΝΑΣ
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,11 +511,25 @@ fullscreen-exit-mac-button = Έξοδος από πλήρη οθόνη (esc)
 pointerlock-warning-domain = Το <span data-l10n-name="domain">{ $domain }</span> ελέγχει τον κέρσορα. Πατήστε Esc για ανάκτηση ελέγχου.
 pointerlock-warning-no-domain = Αυτό το έγγραφο ελέγχει τον κέρσορα. Πατήστε Esc για ανάκτηση ελέγχου.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Μέρος της σελίδας κατέρρευσε.</strong> Για να ενημερώσετε το { -brand-product-name } σχετικά με αυτό το ζήτημα, ώστε να διορθωθεί γρηγορότερα, παρακαλούμε υποβάλλετε μια αναφορά.
+crashed-subframe-learnmore =
+    .label = Μάθετε περισσότερα
+    .accesskey = Μ
+crashed-subframe-submit =
+    .label = Υποβολή αναφοράς
+    .accesskey = Υ
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Προβολή όλων των σελιδοδεικτών
 bookmarks-recent-bookmarks =
+    .value = Πρόσφατοι σελιδοδείκτες
+bookmarks-manage-bookmarks =
+    .label = Διαχείριση σελιδοδεικτών
+bookmarks-recent-bookmarks-panel =
     .value = Πρόσφατοι σελιδοδείκτες
 bookmarks-toolbar-chevron =
     .tooltiptext = Προβολή περισσότερων σελιδοδεικτών
@@ -532,6 +553,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Απόκρυψη γραμμής σελιδοδεικτών
            *[other] Προβολή γραμμής σελιδοδεικτών
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Απόκρυψη γραμμής σελιδοδεικτών
+           *[other] Προβολή γραμμής σελιδοδεικτών
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Απόκρυψη γραμμής σελιδοδεικτών
+           *[other] Εμφάνιση γραμμής σελιδοδεικτών
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +575,8 @@ bookmarks-search =
     .label = Αναζήτηση σελιδοδεικτών
 bookmarks-tools =
     .label = Εργαλεία σελιδοδεικτών
+bookmarks-bookmark-edit-panel =
+    .label = Επεξεργασία σελιδοδείκτη
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +590,9 @@ bookmarks-toolbar-placeholder =
     .title = Στοιχεία γραμμής σελιδοδεικτών
 bookmarks-toolbar-placeholder-button =
     .label = Στοιχεία γραμμής σελιδοδεικτών
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Προσθήκη σελιδοδείκτη τρέχουσας καρτέλας
 
 ## Library Panel items
 
@@ -564,7 +602,8 @@ library-bookmarks-bookmark-this-page =
     .label = Δημιουργία σελιδοδείκτη
 library-bookmarks-bookmark-edit =
     .label = Επεξεργασία σελιδοδείκτη
-library-recent-activity-label = Πρόσφατη δραστηριότητα
+library-recent-activity-title =
+    .value = Πρόσφατη δραστηριότητα
 
 ## More items
 

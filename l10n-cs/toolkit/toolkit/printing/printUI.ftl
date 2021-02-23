@@ -18,14 +18,6 @@ printui-page-range-custom = Vlastní
 printui-page-range-label = Stránky
 printui-page-range-picker =
     .aria-label = Vyberte rozsah stránek
-printui-page-custom-range =
-    .aria-label = Zadejte vlastní rozsah stránek
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = Od
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = do
 printui-page-custom-range-input =
     .aria-label = Zadejte vlastní rozsah stránek
     .placeholder = např. 2-6, 9, 12-16
@@ -48,6 +40,11 @@ printui-scale-pcent = Měřítko
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = Oboustranný tisk
 printui-duplex-checkbox = Vytisknout na obě strany
+printui-two-sided-printing-off = Vypnuto
+# Flip the page on the side (like a book).
+printui-two-sided-printing-side-edge = Překlopit před boční hranu list (jako knihu)
+# Flip the page on the top (like a vertical calendar).
+printui-two-sided-printing-top-edge = Překlopit před horní hranu listu (jako kalendář)
 # Section title for miscellaneous print options
 printui-options = Možnosti
 printui-headers-footers-checkbox = Vytisknout záhlaví a zápatí
@@ -60,7 +57,6 @@ printui-margins = Okraje
 printui-margins-default = Výchozí
 printui-margins-min = Minimální
 printui-margins-none = Žádné
-printui-margins-custom = Vlastní
 printui-margins-custom-inches = Vlastní (palce)
 printui-margins-custom-top = Nahoře
 printui-margins-custom-top-inches = Nahoře (palce)
@@ -84,6 +80,7 @@ printui-pages-per-sheet = Stránek na list papíru
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
 printui-print-progress-indicator = Probíhá tisk…
+printui-print-progress-indicator-saving = Ukládání…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

@@ -200,11 +200,16 @@ cfr-doorhanger-cryptominers-description = Gizliliğiniz bizim için önemli. { -
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (String) - The date we began recording the count of blocked trackers
+#   $date (Number) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
         [one] { -brand-short-name } { $date } tarihinden beri <b>{ $blockedCount }</b> takipçiyi engelledi!
        *[other] { -brand-short-name } { $date } tarihinden beri <b>{ $blockedCount }</b> takipçiyi engelledi!
+    }
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+        [one] { -brand-short-name } { DATETIME($date, month: "long", year: "numeric") } ayından beri <b>{ $blockedCount }</b> takipçiyi engelledi!
+       *[other] { -brand-short-name } { DATETIME($date, month: "long", year: "numeric") } ayından beri <b>{ $blockedCount }</b> takipçiyi engelledi!
     }
 cfr-doorhanger-milestone-ok-button = Tümünü göster
     .accesskey = T
@@ -281,7 +286,15 @@ cfr-whatsnew-search-shortcuts-body = Adres çubuğuna bir arama motorunun veya b
 
 ## What's new: Cookies protection
 
+cfr-whatsnew-supercookies-header = Kötücül süperçerezlere karşı koruma
+cfr-whatsnew-supercookies-body = Web siteleri, normal çerezleri temizledikten sonra bile sizi takip etmek için tarayıcınıza gizlice “süperçerez” yerleştirmeye çalışabilir. { -brand-short-name } artık süperçerezlere karşı etkili koruma sağlıyor. Böylece süperçerezler hangi sitelerde gezindiğinizi takip edemiyor.
 
 ## What's new: Better bookmarking
 
 cfr-whatsnew-bookmarking-header = Daha iyi yer imleri
+cfr-whatsnew-bookmarking-body = Sevdiğiniz siteleri kaydetmek kolaylaştı. { -brand-short-name } artık yer imlerini kaydettiğiniz son konumu hatırlıyor, yeni sekmelerde yer imi araç çubuğunu varsayılan olarak gösteriyor ve araç çubuğundaki bir klasörü aracılığıyla diğer yer imlerinize ulaşmayı kolaylaştırıyor.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Siteler arası çerez takibine karşı kapsamlı koruma
+cfr-whatsnew-cross-site-tracking-body = Artık çerez takibinden daha iyi korunmayı seçebilirsiniz. { -brand-short-name }, etkinliklerinizi ve verilerinizi içinde bulunduğunuz siteyle sınırlı kalacak şekilde izole edebilir. Böylece tarayıcıda depolanan bilgiler web siteleri arasında paylaşılmaz.

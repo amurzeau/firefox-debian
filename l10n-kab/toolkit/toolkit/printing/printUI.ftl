@@ -17,14 +17,6 @@ printui-page-range-custom = Udmawan
 printui-page-range-label = Isebtar
 printui-page-range-picker =
     .aria-label = Fren azilal n yisebtar
-printui-page-custom-range =
-    .aria-label = Skcem ailal udmawan n yisebtar
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = Seg
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = Ɣer
 printui-page-custom-range-input =
     .aria-label = Skcem ailal udmawan n yisebtar
     .placeholder = m.d. 2-6, 12-16
@@ -47,6 +39,7 @@ printui-scale-pcent = Sellum
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = Asiggez ɣef sin wudmawen
 printui-duplex-checkbox = Siggez ɣef sin wudmawen
+printui-two-sided-printing-off = Yensa
 # Section title for miscellaneous print options
 printui-options = Iɣewwaren
 printui-headers-footers-checkbox = Siggez iqerra d yiḍarren n usebter
@@ -59,7 +52,6 @@ printui-margins = Timiwa
 printui-margins-default = Amezwer
 printui-margins-min = Adday
 printui-margins-none = Ulac
-printui-margins-custom = Sagen
 printui-margins-custom-inches = Sagen (idebbuzen)
 printui-margins-custom-top = Afellay
 printui-margins-custom-top-inches = Afellay (idebbuzen)
@@ -83,6 +75,7 @@ printui-pages-per-sheet = Asebter i yal tawerqet
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
 printui-print-progress-indicator = Asiggez…
+printui-print-progress-indicator-saving = Asekles…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

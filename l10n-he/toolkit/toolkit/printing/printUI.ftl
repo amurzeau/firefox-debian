@@ -17,14 +17,6 @@ printui-page-range-custom = התאמה אישית
 printui-page-range-label = עמודים
 printui-page-range-picker =
     .aria-label = בחירת טווח עמודים
-printui-page-custom-range =
-    .aria-label = נא להזין טווח עמודים מותאם אישית
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = מעמוד
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = עד עמוד
 printui-page-custom-range-input =
     .aria-label = נא להזין טווח עמודים מותאם אישית
     .placeholder = לדוגמה, 2-6, 9, 12-16
@@ -47,6 +39,7 @@ printui-scale-pcent = קנה מידה
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = הדפסה דו־צדדית
 printui-duplex-checkbox = הדפסה בשני הצדדים
+printui-two-sided-printing-off = כבויה
 # Section title for miscellaneous print options
 printui-options = אפשרויות
 printui-headers-footers-checkbox = הדפסת כותרות עיליות ותחתיות
@@ -59,7 +52,6 @@ printui-margins = שוליים
 printui-margins-default = ברירת מחדל
 printui-margins-min = מינימום
 printui-margins-none = ללא
-printui-margins-custom = התאמה אישית
 printui-margins-custom-inches = התאמה אישית (אינצ'ים)
 printui-margins-custom-top = מלמעלה
 printui-margins-custom-top-inches = מלמעלה (אינצ'ים)
@@ -83,6 +75,7 @@ printui-pages-per-sheet = עמודים בכל גיליון
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
 printui-print-progress-indicator = בהדפסה…
+printui-print-progress-indicator-saving = מתבצעת שמירה…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

@@ -17,14 +17,9 @@ printui-page-range-custom = Tilpassa
 printui-page-range-label = Sider
 printui-page-range-picker =
     .aria-label = Vel sideområde
-printui-page-custom-range =
+printui-page-custom-range-input =
     .aria-label = Skriv inn tilpasssa sideområde
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = Frå
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = til
+    .placeholder = t.d. 2-6, 9, 12-16
 # Section title for the number of copies to print
 printui-copies-label = Eksemplar
 printui-orientation = Papirretning
@@ -41,10 +36,19 @@ printui-scale = Skalering
 printui-scale-fit-to-page-width = Tilpass til sidebreidda
 # Label for input control where user can set the scale percentage
 printui-scale-pcent = Skalering
+# Section title (noun) for the two-sided print options
+printui-two-sided-printing = Tosidig utskrift
+printui-duplex-checkbox = Skriv ut på begge sider
+printui-two-sided-printing-off = Av
+# Flip the page on the side (like a book).
+printui-two-sided-printing-side-edge = Vend på sidekanten
+# Flip the page on the top (like a vertical calendar).
+printui-two-sided-printing-top-edge = Vend på øvste kant
 # Section title for miscellaneous print options
 printui-options = Innstillingar
 printui-headers-footers-checkbox = Skriv ut topptekst og botntekst
 printui-backgrounds-checkbox = Skriv ut bakgrunnar
+printui-selection-checkbox = Skriv berre ut utvalet
 printui-color-mode-label = Fargemodus
 printui-color-mode-color = Farge
 printui-color-mode-bw = Svart-kvit
@@ -52,11 +56,15 @@ printui-margins = Margar
 printui-margins-default = Standard
 printui-margins-min = Minimum
 printui-margins-none = Ingen
-printui-margins-custom = Tilpassa
+printui-margins-custom-inches = Eigendefinert (tommar)
 printui-margins-custom-top = Topp
+printui-margins-custom-top-inches = Topp (tommar)
 printui-margins-custom-bottom = Botn
+printui-margins-custom-bottom-inches = Botn (tommar)
 printui-margins-custom-left = Venstre
+printui-margins-custom-left-inches = Venstre (tommar)
 printui-margins-custom-right = Høgre
+printui-margins-custom-right-inches = Høgre (tommar)
 printui-system-dialog-link = Skriv ut ved hjelp av systemdialogvindauget…
 printui-primary-button = Skriv ut
 printui-primary-button-save = Lagre
@@ -67,9 +75,11 @@ printui-loading = Førebur førehandsvising
 # the print preview has focus.
 printui-preview-label =
     .aria-label = Førehandsvising
+printui-pages-per-sheet = Sider per ark
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
 printui-print-progress-indicator = Skriv ut…
+printui-print-progress-indicator-saving = Lagrar…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

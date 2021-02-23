@@ -346,6 +346,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Tanca
 
+## Tab actions
+
+browser-tab-audio-playing = S'està reproduint
+browser-tab-audio-muted = Silenciat
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = S'ESTÀ REPRODUINT
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = SILENCIAT
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = REPRODUCCIÓ AUTOMÀTICA BLOCADA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = IMATGE SOBRE IMATGE
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,12 +517,26 @@ fullscreen-exit-mac-button = Surt de la pantalla completa (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> té el control del punter. Premeu Esc per recuperar el control.
 pointerlock-warning-no-domain = Aquest document té el control del punter. Premeu Esc per recuperar el control.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Part d'aquesta pàgina ha fallat.</strong> Per notificar el problema al { -brand-product-name } i que s'arregli més ràpidament, envieu un informe.
+crashed-subframe-learnmore =
+    .label = Més informació
+    .accesskey = M
+crashed-subframe-submit =
+    .label = Envia l'informe
+    .accesskey = E
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Mostra totes les adreces d'interès
 bookmarks-recent-bookmarks =
     .value = Afegides recentment
+bookmarks-manage-bookmarks =
+    .label = Gestiona les adreces d'interès
+bookmarks-recent-bookmarks-panel =
+    .value = Adreces d'interès recents
 bookmarks-toolbar-chevron =
     .tooltiptext = Mostra més adreces d'interès
 bookmarks-sidebar-content =
@@ -532,6 +559,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Amaga la barra d'eines d'adreces d'interès
            *[other] Mostra la barra de les adreces d'interès
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Amaga la barra d'eines d'adreces d'interès
+           *[other] Mostra la barra de les adreces d'interès
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Amaga la barra de les adreces d'interès
+           *[other] Mostra la barra de les adreces d'interès
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +581,8 @@ bookmarks-search =
     .label = Cerca adreces d'interès
 bookmarks-tools =
     .label = Eines d'adreces d'interès
+bookmarks-bookmark-edit-panel =
+    .label = Edita aquesta adreça d'interès
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +596,9 @@ bookmarks-toolbar-placeholder =
     .title = Elements de la barra de les adreces d'interès
 bookmarks-toolbar-placeholder-button =
     .label = Elements de la barra de les adreces d'interès
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Afegeix la pestanya actual a les adreces d'interès
 
 ## Library Panel items
 
@@ -564,6 +608,8 @@ library-bookmarks-bookmark-this-page =
     .label = Afegeix la pàgina a les adreces d'interès
 library-bookmarks-bookmark-edit =
     .label = Edita aquesta adreça d'interès
+library-recent-activity-title =
+    .value = Activitat recent
 
 ## More items
 

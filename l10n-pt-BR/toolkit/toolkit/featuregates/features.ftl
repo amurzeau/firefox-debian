@@ -48,7 +48,7 @@ experimental-features-css-constructable-stylesheets =
     .label = CSS: Constructable Stylesheets
 experimental-features-css-constructable-stylesheets-description = A adição de um construtor à interface <a data-l10n-name="mdn-cssstylesheet">CSSStyleSheet</a>, assim como uma variedade de alterações relacionadas, possibilitam criar diretamente novas folhas de estilo sem precisar adicionar a folha ao HTML. Isso facilita muito criar folhas de estilo reusáveis para uso com <a data-l10n-name="mdn-shadowdom">Shadow DOM</a>. Consulte mais detalhes em <a data-l10n-name="bugzilla">bug 1520690</a>.
 experimental-features-devtools-color-scheme-simulation =
-    .label = Developer Tools: Simulação de esquema de cores
+    .label = Ferramentas de desenvolvimento: Simulação de esquema de cores
 experimental-features-devtools-color-scheme-simulation-description = Adiciona uma opção para simular diferentes esquemas de cores, permitindo testar consultas de mídia <a data-l10n-name="mdn-preferscolorscheme">@prefers-color-scheme</a>. O uso desta consulta de mídia permite que sua folha de estilo responda à preferência do usuário de uma interface de usuário clara ou escura. Este recurso permite que você teste seu código sem precisar alterar configurações em seu navegador (ou sistema operacional, se o navegador seguir uma configuração de esquema de cores do sistema todo). Consulte mais detalhes em <a data-l10n-name="bugzilla1">bug 1550804</a> e <a data-l10n-name="bugzilla2">bug 1137699</a>.
 experimental-features-devtools-execution-context-selector =
     .label = Developer Tools: Seletor de contexto de execução
@@ -101,3 +101,7 @@ experimental-features-multi-pip-description = Suporte experimental para permitir
 experimental-features-http3 =
     .label = Protocolo HTTP/3
 experimental-features-http3-description = Suporte experimental ao protocolo HTTP/3.
+# Search during IME
+experimental-features-ime-search =
+    .label = Barra de endereços: Mostrar resultados durante a composição IME
+experimental-features-ime-search-description = Um IME (Input Method Editor, ou editor de método de entrada) é uma ferramenta que permite inserir símbolos complexos, como os usados em idiomas escritos do subcontinente indiano ou do leste asiático, usando um teclado padrão. Ativar este experimento faz com que o painel da barra de endereços se mantenha aberto, mostrando resultados e sugestões de pesquisa ao usar o IME para inserir texto. Note que o IME pode exibir um painel que cubra os resultados da barra de endereços, portanto essa preferência é sugerida apenas para IME que não usa esse tipo de painel.

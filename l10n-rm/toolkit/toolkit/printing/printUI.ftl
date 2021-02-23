@@ -17,14 +17,6 @@ printui-page-range-custom = Persunalisà
 printui-page-range-label = Paginas
 printui-page-range-picker =
     .aria-label = Tscherner in interval da paginas
-printui-page-custom-range =
-    .aria-label = Endatar in interval da paginas persunalisà
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = Da
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = enfin
 printui-page-custom-range-input =
     .aria-label = Endatar in interval da paginas persunalisà
     .placeholder = p.ex. 2-6, 9, 12-16
@@ -47,6 +39,11 @@ printui-scale-pcent = Scalaziun
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = Stampar davant e davos
 printui-duplex-checkbox = Stampar d'omaduas varts
+printui-two-sided-printing-off = Deactivà
+# Flip the page on the side (like a book).
+printui-two-sided-printing-side-edge = Volver lung l'ur lateral
+# Flip the page on the top (like a vertical calendar).
+printui-two-sided-printing-top-edge = Volver lung l'ur sura
 # Section title for miscellaneous print options
 printui-options = Opziuns
 printui-headers-footers-checkbox = Stampar ils chaus-pagina ed ils pes-pagina
@@ -59,7 +56,6 @@ printui-margins = Urs
 printui-margins-default = Standard
 printui-margins-min = Minimum
 printui-margins-none = Nagins
-printui-margins-custom = Persunalisà
 printui-margins-custom-inches = Persunalisà (poleschs/inches)
 printui-margins-custom-top = Sura
 printui-margins-custom-top-inches = Sura (poleschs/inches)
@@ -83,6 +79,7 @@ printui-pages-per-sheet = Paginas per fegl
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
 printui-print-progress-indicator = Stampar…
+printui-print-progress-indicator-saving = Memorisar…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

@@ -20,17 +20,9 @@ printui-page-range-custom = Personalizzato
 printui-page-range-label = Pagine
 printui-page-range-picker =
   .aria-label = Selezionare un intervallo di pagine
-printui-page-custom-range =
-  .aria-label = Inserire un intervallo di pagine personalizzato
 printui-page-custom-range-input =
   .aria-label = Inserire un intervallo di pagine personalizzato
   .placeholder = ad es. 2-6, 9, 12-16
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = Da
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = a
 
 # Section title for the number of copies to print
 printui-copies-label = Copie
@@ -58,6 +50,11 @@ printui-scale-pcent = Ridimensiona
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = Stampa fronte/retro
 printui-duplex-checkbox = Stampa su entrambi i lati
+printui-two-sided-printing-off = Disattivata
+# Flip the page on the side (like a book).
+printui-two-sided-printing-side-edge = Capovolgi pagine sul lato lungo
+# Flip the page on the top (like a vertical calendar).
+printui-two-sided-printing-top-edge = Capovolgi pagine sul lato corto
 
 # Section title for miscellaneous print options
 printui-options = Opzioni
@@ -73,7 +70,6 @@ printui-margins = Margini
 printui-margins-default = Predefiniti
 printui-margins-min = Minimi
 printui-margins-none = Nessuno
-printui-margins-custom = Personalizzati
 printui-margins-custom-inches = Personalizzati (pollici)
 printui-margins-custom-top = Superiore
 printui-margins-custom-bottom = Inferiore
@@ -101,6 +97,7 @@ printui-preview-label =
 printui-pages-per-sheet = Pagine per foglio
 
 printui-print-progress-indicator = Stampa in corso…
+printui-print-progress-indicator-saving = Salvataggio in corso…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

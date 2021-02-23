@@ -133,6 +133,7 @@ restart-in-safe-mode-label = Berrabiarazi gehigarriak desgaituta…
 clear-startup-cache-title = Saiatu abioko cachea garbitzen
 clear-startup-cache-label = Garbitu abioko cachea…
 startup-cache-dialog-title = Garbitu abioko cachea
+startup-cache-dialog-body = Berrabiarazi { -brand-short-name } abioko cachea garbitzeko. Honek ez du zure ezarpenik aldatuko edo { -brand-short-name }(e)n gehitu duzun gehigarririk kenduko.
 restart-button-label = Berrabiarazi
 
 ## Media titles
@@ -140,6 +141,7 @@ restart-button-label = Berrabiarazi
 audio-backend = Audio backend-a
 max-audio-channels = Gehienezko kanalak
 sample-rate = Hobetsitako lagin-abiadura
+roundtrip-latency = Joan-etorriaren latentzia (desbideratze estandarra)
 media-title = Multimedia
 media-output-devices-title = Irteerako gailuak
 media-input-devices-title = Sarrerako gailuak
@@ -183,14 +185,36 @@ remote-debugging-url = URLa
 
 ##
 
+support-third-party-modules-title = Hirugarrenen moduluak
+support-third-party-modules-module = Modulu-fitxategia
+support-third-party-modules-version = Fitxategiaren bertsioa
+support-third-party-modules-vendor = Hornitzailearen informazioa
+support-third-party-modules-occurrence = Gertaerak
+support-third-party-modules-process = Prozesu mota eta IDa
+support-third-party-modules-thread = Haria
+support-third-party-modules-base = Imagebase helbidea
+support-third-party-modules-uptime = Prozesuaren jardun-denbora (ms)
+support-third-party-modules-duration = Kargatzearen iraupena (ms)
+support-third-party-modules-status = Egoera
+support-third-party-modules-status-loaded = Kargatuta
+support-third-party-modules-status-blocked = Blokeatuta
+support-third-party-modules-status-redirected = Berbideratuta
+support-third-party-modules-empty = Ez da hirugarrenen modulurik kargatu.
+support-third-party-modules-no-value = (Baliorik ez)
 support-third-party-modules-button-open =
     .title = Ireki fitxategi-kokalekua…
 support-third-party-modules-expand =
     .title = Erakutsi informazio xehatua
+support-third-party-modules-collapse =
+    .title = Tolestu informazio xehatua
+support-third-party-modules-unsigned-icon =
+    .title = Modulu hau ez dago sinatuta
 support-third-party-modules-folder-icon =
     .title = Ireki fitxategi-kokalekua…
 support-third-party-modules-down-icon =
     .title = Erakutsi informazio xehatua
+support-third-party-modules-up-icon =
+    .title = Tolestu informazio xehatua
 # Variables
 # $days (Integer) - Number of days of crashes to log
 report-crash-for-days =
@@ -282,6 +306,9 @@ blocklisted-bug = Arazo ezagunengatik zerrenda beltzean
 # $bugNumber (string) - String of bug number from Bugzilla
 bug-link = { $bugNumber }. buga
 # Variables
+#   $bugNumber (string) - Bug number on Bugzilla
+support-blocklisted-bug = Zerrenda beltzean arazo ezagunak direla-eta: <a data-l10n-name="bug-link">{ $bugNumber } buga</a>
+# Variables
 # $failureCode (string) - String that can be searched in the source tree.
 unknown-failure = Zerrenda beltzean; { $failureCode } hutsegite-kodea
 d3d11layers-crash-guard = D3D11 konposatzailea
@@ -333,6 +360,10 @@ multi-process-status-6 = Onartzen ez den testu-sarrerak desgaituta
 multi-process-status-7 = Gehigarriek desgaituta
 multi-process-status-8 = Behartuta desgaituta
 multi-process-status-unknown = Egoera ezezaguna
+# Variables
+# $fissionWindows (integer) - Number of remote windows
+# $totalWindows (integer) - Number of total windows
+fission-windows = { $totalWindows }/{ $fissionWindows }
 fission-status-experiment-control = Esperimentuak desgaituta
 fission-status-experiment-treatment = Esperimentuak gaituta
 fission-status-disabled-by-e10s-env = Inguruneak desgaituta

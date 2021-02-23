@@ -18,14 +18,6 @@ printui-page-range-custom = Pasirinktinai
 printui-page-range-label = Puslapiai
 printui-page-range-picker =
     .aria-label = Pasirinkite puslapių intervalą
-printui-page-custom-range =
-    .aria-label = Įveskite norimą puslapių intervalą
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = Nuo
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = iki
 printui-page-custom-range-input =
     .aria-label = Įveskite norimą puslapių intervalą
     .placeholder = pvz., 2-6, 9, 12-16
@@ -48,6 +40,11 @@ printui-scale-pcent = Mastelis
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = Dvipusis spausdinimas
 printui-duplex-checkbox = Spausdinti ant abiejų pusių
+printui-two-sided-printing-off = Išjungta
+# Flip the page on the side (like a book).
+printui-two-sided-printing-side-edge = Paversti ant šoninio krašto
+# Flip the page on the top (like a vertical calendar).
+printui-two-sided-printing-top-edge = Paversti ant viršutinio krašto
 # Section title for miscellaneous print options
 printui-options = Nuostatos
 printui-headers-footers-checkbox = Spausdinti antraštes ir poraštes
@@ -60,7 +57,6 @@ printui-margins = Paraštės
 printui-margins-default = Numatytos
 printui-margins-min = Mažiausios
 printui-margins-none = Jokių
-printui-margins-custom = Pasirinktinės
 printui-margins-custom-inches = Pasirinktinės (coliai)
 printui-margins-custom-top = Viršutinė
 printui-margins-custom-top-inches = Viršutinė (coliai)
@@ -84,6 +80,7 @@ printui-pages-per-sheet = Puslapiai per lapą
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
 printui-print-progress-indicator = Spausdinama…
+printui-print-progress-indicator-saving = Įrašoma…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

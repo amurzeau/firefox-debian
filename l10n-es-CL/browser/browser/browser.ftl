@@ -346,6 +346,11 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Cerrar
 
+## Tab actions
+
+browser-tab-audio-playing = Reproduciendo
+browser-tab-audio-muted = Silenciado
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,6 +509,16 @@ fullscreen-exit-mac-button = Salir de pantalla completa (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> tiene el control de tu puntero. Presiona Esc para recuperarlo.
 pointerlock-warning-no-domain = Este documento tiene el control de tu puntero. Presiona  Esc para recuperarlo.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong> Parte de esta página falló. </strong> Para informar a { -brand-product-name } sobre este problema y solucionarlo más rápido, por favor envía un reporte.
+crashed-subframe-learnmore =
+    .label = Aprender más
+    .accesskey = L
+crashed-subframe-submit =
+    .label = Enviar reporte
+    .accesskey = S
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -532,6 +547,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Ocultar barra de herramientas de marcadores
            *[other] Ver barra de marcadores
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Ocultar barra de herramientas de marcadores
+           *[other] Ver barra de marcadores
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +563,8 @@ bookmarks-search =
     .label = Buscar marcadores
 bookmarks-tools =
     .label = Herramientas de marcadores
+bookmarks-bookmark-edit-panel =
+    .label = Editar este marcador
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -564,7 +587,8 @@ library-bookmarks-bookmark-this-page =
     .label = Guardar esta página en marcadores
 library-bookmarks-bookmark-edit =
     .label = Editar este marcador
-library-recent-activity-label = Actividad reciente
+library-recent-activity-title =
+    .value = Actividad reciente
 
 ## More items
 

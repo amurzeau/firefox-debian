@@ -348,6 +348,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Užverti
 
+## Tab actions
+
+browser-tab-audio-playing = Groja
+browser-tab-audio-muted = Nutildyta
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = GROJA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = NUTILDYTA
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AUTOMATINIS GROJIMAS UŽBLOKUOTAS
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = VAIZDAS-VAIZDE
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -506,12 +519,26 @@ fullscreen-exit-mac-button = Grįžti iš viso ekrano (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> valdo jūsų žymeklį. Spustelėkite Esc, norėdami atgauti valdymą.
 pointerlock-warning-no-domain = Šis dokumentas valdo jūsų žymeklį. Spustelėkite Esc, norėdami atgauti valdymą.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Dalis šio tinklalapio užstrigo.</strong> Norėdami pranešti apie šią problemą „{ -brand-product-name }“ ir greičiau ją išspręsti, nusiųskite pranešimą.
+crashed-subframe-learnmore =
+    .label = Sužinoti daugiau
+    .accesskey = S
+crashed-subframe-submit =
+    .label = Siųsti pranešimą
+    .accesskey = S
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Rodyti visą adresyną
 bookmarks-recent-bookmarks =
     .value = Paskiausiai įtraukti į adresyną
+bookmarks-manage-bookmarks =
+    .label = Tvarkyti adresyną
+bookmarks-recent-bookmarks-panel =
+    .value = Paskiausi adresyno įrašai
 bookmarks-toolbar-chevron =
     .tooltiptext = Kiti adresai
 bookmarks-sidebar-content =
@@ -534,6 +561,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Slėpti adresyno juostą
            *[other] Rodyti adresyno juostą
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Slėpti adresyno juostą
+           *[other] Rodyti adresyno juostą
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Slėpti adresyno juostą
+           *[other] Rodyti adresyno juostą
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -544,6 +583,8 @@ bookmarks-search =
     .label = Ieškoti adresyne
 bookmarks-tools =
     .label = Adresyno priemonės
+bookmarks-bookmark-edit-panel =
+    .label = Taisyti adresyno įrašą
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -557,6 +598,9 @@ bookmarks-toolbar-placeholder =
     .title = Adresyno juostos elementai
 bookmarks-toolbar-placeholder-button =
     .label = Adresyno juostos elementai
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Įrašyti šią kortelę į adresyną
 
 ## Library Panel items
 
@@ -566,7 +610,8 @@ library-bookmarks-bookmark-this-page =
     .label = Įrašyti į adresyną
 library-bookmarks-bookmark-edit =
     .label = Taisyti adresyno įrašą
-library-recent-activity-label = Paskiausia veikla
+library-recent-activity-title =
+    .value = Paskiausia veikla
 
 ## More items
 

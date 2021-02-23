@@ -29,3 +29,47 @@ appmenuitem-save-page =
 
 ## What's New panel in App menu.
 
+
+## Help panel
+
+appmenu-about =
+    .label = { -brand-shorter-name } ga
+    .accesskey = a
+appmenu-help-product =
+    .label = { -brand-shorter-name } faaba
+    .accesskey = f
+appmenu-help-show-tour =
+    .label = { -brand-shorter-name } wanga
+    .accesskey = w
+appmenu-help-keyboard-shortcuts =
+    .label = Walha dunbandiyaney
+    .accesskey = W
+appmenu-help-troubleshooting-info =
+    .label = Karkahattayan alhabar
+    .accesskey = K
+appmenu-help-feedback-page =
+    .label = Furari sanba…
+    .accesskey = s
+
+## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-safe-mode-without-addons =
+    .label = Tunandi taaga kaŋ tontoney kayandi…
+    .accesskey = u
+appmenu-help-safe-mode-with-addons =
+    .label = Tunandi taaga kaŋ tontoney ga kayandi
+    .accesskey = u
+
+## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-report-deceptive-site =
+    .label = Darga nungu bayrandi…
+    .accesskey = D
+appmenu-help-not-deceptive =
+    .label = Woo manti darga nungu…
+    .accesskey = d
+
+##
+

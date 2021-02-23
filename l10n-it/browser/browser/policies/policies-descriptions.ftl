@@ -72,7 +72,7 @@ policy-DisableProfileImport = Disattiva il menu per importare dati da un altro b
 
 policy-DisableProfileRefresh = Disattiva il pulsante “Ripristina { -brand-short-name }” nella pagina about:support.
 
-policy-DisableSafeMode = Disattiva la possibilità di riavviare in modalità provvisoria. Nota: l’utilizzo del pulsante Maiusc per avviare in modalità provvisoria può essere disattivato solo nei criteri di gruppo.
+policy-DisableSafeMode = Disattiva la possibilità di riavviare in modalità provvisoria. Nota: l’utilizzo del tasto Maiusc per avviare in modalità provvisoria può essere disattivato solo nei criteri di gruppo.
 
 policy-DisableSecurityBypass = Impedisci all’utente di ignorare alcuni avvisi di sicurezza.
 
@@ -127,6 +127,8 @@ policy-LegacySameSiteCookieBehaviorEnabledForDomainList = Ripristina nei siti sp
 policy-LocalFileLinks = Consenti a determinati siti web di usare link a file locali.
 
 policy-ManagedBookmarks = Configura un elenco di segnalibri gestiti da un amministratore e non modificabili dall’utente.
+
+policy-ManualAppUpdateOnly = Consenti solo aggiornamenti manuali e non segnalare all’utente la disponibilità di aggiornamenti.
 
 policy-MasterPassword = Richiedi o impedisci l’utilizzo di una password principale.
 

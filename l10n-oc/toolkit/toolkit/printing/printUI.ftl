@@ -17,14 +17,6 @@ printui-page-range-custom = Personalizar
 printui-page-range-label = Paginas
 printui-page-range-picker =
     .aria-label = Causir plaja de paginas
-printui-page-custom-range =
-    .aria-label = Picar una plaja de paginas personalizada
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = De
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = fins a
 printui-page-custom-range-input =
     .aria-label = Picar una plaja de paginas personalizada
     .placeholder = ex : 2-6, 9, 12-16
@@ -47,6 +39,7 @@ printui-scale-pcent = Escala
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = Imprimir rècto verso
 printui-duplex-checkbox = Imprimir los dos costats
+printui-two-sided-printing-off = Desactivat
 # Section title for miscellaneous print options
 printui-options = Opcions
 printui-headers-footers-checkbox = Imprimir las entèstas e los pès de pagina
@@ -59,7 +52,6 @@ printui-margins = Marges
 printui-margins-default = Per defaut
 printui-margins-min = Minimum
 printui-margins-none = Pas cap
-printui-margins-custom = Personalizats
 printui-margins-custom-inches = Personalizats (poces)
 printui-margins-custom-top = Naut
 printui-margins-custom-top-inches = Naut (poces)
@@ -83,6 +75,7 @@ printui-pages-per-sheet = Pagina per fuèlh
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
 printui-print-progress-indicator = Impression…
+printui-print-progress-indicator-saving = Enregistrament…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

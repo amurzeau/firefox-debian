@@ -84,6 +84,7 @@ login-item-new-login-title = Lag ny innlogging
 login-item-edit-button = Rediger
 about-logins-login-item-remove-button = Fjern
 login-item-origin-label = Nettstadadresse
+login-item-tooltip-message = Forsikre deg om at dette samsvarar med den eksakte adressa til nettstaden der du logar inn.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Brukarnamn
@@ -202,6 +203,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Eksporter innloggingar og passord
 about-logins-confirm-export-dialog-message = Passorda dine vert lagra som lesbar tekst (t.d. DårlegP@ss0rd), slik at alle som kan åpne den eksporterte fila kan sjå dei.
 about-logins-confirm-export-dialog-confirm-button = Eksporter…
+about-logins-alert-import-title = Import fullført
+about-logins-alert-import-message = Vis detaljert importoversikt
 confirm-discard-changes-dialog-title = Vil du forkaste endringar som ikkje er lagra?
 confirm-discard-changes-dialog-message = Alle ikkje-lagra endringar vil gå tapt.
 confirm-discard-changes-dialog-confirm-button = Ignorer
@@ -263,3 +266,50 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV-dokument
        *[other] CSV-fil
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] TSV-dokument
+       *[other] TSV-fil
+    }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Import fullført
+about-logins-import-dialog-items-added =
+    { $count ->
+       *[other] <span>Nye innloggningar lagt til: </span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+       *[other] <span>Eksisterande innloggingar oppdatert:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+       *[other] <span>Duplikate innloggingar funne:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ikkje importerte)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+       *[other] <span>Feil:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ikkje importerte)</span>
+    }
+about-logins-import-dialog-done = Ferdig
+about-logins-import-dialog-error-title = Importfeil
+about-logins-import-dialog-error-conflicting-values-title = Fleire motstridande verdiar for ei innlogging
+about-logins-import-dialog-error-conflicting-values-description = Til dømes: fleire brukarnamn, passord, nettadresser, osb. for ei innlogging.
+about-logins-import-dialog-error-file-format-title = Problem med filformatet
+about-logins-import-dialog-error-file-format-description = Feil eller manglande kolonneoverskrifter. Forsikre deg om at fila inneheld  kolonner for brukarnamn, passord og nettadresse.
+about-logins-import-dialog-error-file-permission-title = Klarte ikkje å lese fila
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } har ikkje løyve til å lese fila. Prøv å endre filløyva for fila.
+about-logins-import-dialog-error-unable-to-read-title = Klarte ikkje å tolke fila
+about-logins-import-dialog-error-unable-to-read-description = Forsikre deg om at du valde ei CSV- eller ei TSV-fil.
+about-logins-import-dialog-error-no-logins-imported = Ingen innloggingar er importerte
+about-logins-import-dialog-error-learn-more = Les meir
+about-logins-import-dialog-error-try-again = Prøv igjen…
+about-logins-import-dialog-error-cancel = Avbryt
+
+## Logins import report page
+
+about-logins-import-report-page-title = Samandragsrapport for import

@@ -14,6 +14,12 @@
 <!ENTITY prefCheckDefaultClient.label     "Alapértelmezett programok beállításának ellenőrzése induláskor">
 <!ENTITY prefCheckDefaultClient.accesskey "A">
 
+<!ENTITY printing.label                   "Nyomtatás">
+<!ENTITY useNativePrintDialog.label       "Natív nyomtatás párbeszédablak használata (ha támogatott)">
+<!ENTITY useNativePrintDialog.accesskey   "N">
+<!ENTITY useGlobalPrintSettings.label     "Globális nyomtatási beállítások használata">
+<!ENTITY useGlobalPrintSettings.accesskey "G">
+
 <!ENTITY crashReports.caption             "Hibabejelentő">
 <!ENTITY submitCrashes.label              "Hibajelentés küldése">
 <!ENTITY submitCrashes.accesskey          "b">

@@ -348,6 +348,11 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Затвори
 
+## Tab actions
+
+browser-tab-audio-playing = Пушта се
+browser-tab-audio-muted = Утишано
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -506,6 +511,16 @@ fullscreen-exit-mac-button = Изађи из приказа преко цело�
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> управља са вашим показивачем. Притисните Esc да преузмете контролу.
 pointerlock-warning-no-domain = Овај документ управља са вашим показивачем. Притисните Esc да преузмете контролу.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Део странице се срушио. </strong>Пошаљите извештај да би { -brand-product-name } сазнао за овај проблем и брже га решио.
+crashed-subframe-learnmore =
+    .label = Сазнајте више
+    .accesskey = L
+crashed-subframe-submit =
+    .label = Поднесите извештај
+    .accesskey = S
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -534,6 +549,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Сакриј траку са забелешкама
            *[other] Прикажи траку са забелешкама
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Сакриј траку са забелешкама
+           *[other] Прикажи траку са забелешкама
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -544,6 +565,8 @@ bookmarks-search =
     .label = Претражи забелешке
 bookmarks-tools =
     .label = Алатке за забелешке
+bookmarks-bookmark-edit-panel =
+    .label = Уреди ову забелешку
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -566,6 +589,8 @@ library-bookmarks-bookmark-this-page =
     .label = Забележи ову страницу
 library-bookmarks-bookmark-edit =
     .label = Уреди ову забелешку
+library-recent-activity-title =
+    .value = Недавна активност
 
 ## More items
 

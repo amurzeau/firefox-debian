@@ -23,11 +23,14 @@ inactive-css-not-flex-item = <strong>{ $property }</strong> ndoguerekói mba’e
 inactive-css-not-flex-container = <strong>{ $property }</strong> ndoguerekói mba’evéichagua mba’evai ko mba’epurúpe, ndaha’éi rupi mbyatyha hu’ũva.
 inactive-css-not-inline-or-tablecell = <strong>{ $property }</strong> ndoguerekói mba’evéichagua mba’evai ko mba’epurúpe, ndaha’éi rupi mba’epuru eikundahakuévo térã tenda’iete.
 inactive-css-property-because-of-display = <strong>{ $property }</strong> ndoguerekói mba’evai ko mba’epurúpe, oguereko rupi jehechaha <strong>{ $display }</strong>.
-inactive-css-not-display-block-on-floated = Pe mongu’eha omoambue <strong>jehecha</strong> repykue <strong>jokoha</strong> pe mab’epuru oĩgui <strong>vevuihápe<strong>.
+inactive-css-not-display-block-on-floated = Pe mongu’eha omoambue <strong>jehecha</strong> repykue <strong>jokoha</strong> pe mab’epuru oĩgui <strong>vevuihápe</strong>.
 inactive-css-property-is-impossible-to-override-in-visited = Ndakatúi eipe’aite <strong>{ $property }</strong> jejoko <strong>:jehopyre</strong> rupive.
 inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> ndoguerekói mba’evéichagua mba’evai ko mba’epurúpe ndaha’éi rupi mba’epuru osẽtava renda.
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> ndoguerekói mba’eve ko mba’epurúpe <strong>overflow:hidden</strong> ndahekói rupi.
 inactive-outline-radius-when-outline-style-auto-or-none = <strong>{ $property }</strong> ndorekói mba’eve ivaíva ko mba’epurúpe pe <strong>outline-style</strong> ha’e <strong>auto</strong> térã <strong>none</strong>.
+inactive-css-not-for-internal-table-elements = <strong>{ $property }</strong> ndojapói mba’eve mba’epuru tabla ryepyguáre.
+inactive-css-not-for-internal-table-elements-except-table-cells = <strong>{ $property }</strong> ndojapói mba’eve mba’epuru tabla ryepyguáre oiko’ỹva tabla kora’ípe.
+inactive-css-not-table = <strong>{ $property }</strong> ndojapói mba’eve ko mba’epurúpe ndaha’éire tabla.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -47,6 +50,7 @@ inactive-css-not-display-block-on-floated-fix = Embogue <strong>vevúiva</strong
 inactive-css-position-property-on-unpositioned-box-fix = Eñeha’ã emboheko <strong>rendatee</strong> mba’éva tuichavéva <strong>opytáva</strong>. { learn-more }
 inactive-text-overflow-when-no-overflow-fix = Eñeha’ã embojuaju <strong>overflow:hidden</strong>. { learn-more }
 inactive-outline-radius-when-outline-style-auto-or-none-fix = Eñeha’ã emoambue <strong>outline-style</strong> mba’etee <strong>auto</strong> iñambuéva térã <strong>none</strong>. { learn-more }
+inactive-css-not-table-fix = Eñeha’ã embojuaju <strong>display:table<strong> térã <strong>display:inline-table</strong>. { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers
 ## we display an icon. When this icon is hovered this message is displayed to explain why

@@ -120,6 +120,9 @@ cfr-whatsnew-lockwise-take-link-text = Eskuratu aplikazioa
 
 cfr-whatsnew-searchbar-title = Idatzi gutxiago eta aurkitu gehiago helbide-barra erabiliz
 cfr-whatsnew-searchbar-body-topsites = Orain, hautatu helbide-barra eta kutxa bat hedatuko da zure zure gune erabilienetarako loturekin.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Luparen ikonoa
 
 ## Picture-in-Picture
@@ -197,11 +200,15 @@ cfr-doorhanger-cryptominers-description = Garrantzitsua da zure pribatutasuna. K
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (String) - The date we began recording the count of blocked trackers
+#   $date (Number) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
         [one] { -brand-short-name }(e)k <b>{ $blockedCount }</b> jarraipen-elementu baino gehiago blokeatu ditu data honetatik aurrera: { $date }
        *[other] { -brand-short-name }(e)k <b>{ $blockedCount }</b> jarraipen-elementu baino gehiago blokeatu ditu data honetatik aurrera: { $date }
+    }
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+       *[other] { -brand-short-name }(e)k <b>{ $blockedCount }</b> jarraipen-elementu baino gehiago blokeatu ditu { DATETIME($date, month: "long", year: "numeric") }-z geroztik!
     }
 cfr-doorhanger-milestone-ok-button = Ikusi guztiak
     .accesskey = I
@@ -232,6 +239,7 @@ cfr-whatsnew-pip-fullscreen-icon-alt = Bideoa beste leiho batean eginbideko ikon
 ## Protections Dashboard message
 
 cfr-whatsnew-protections-header = Babesak laburrean
+cfr-whatsnew-protections-body = Babesen panelak datu-urratzeen eta pasahitz-kudeaketaren inguruko laburpen-txostenak ditu. Ebatzi dituzun urratzeen jarraipena egin dezakezu orain eta gordetako zure pasahitzen bat datu-urratzeren batean agerian utzi den ikusi.
 cfr-whatsnew-protections-cta-link = Ikusi babesen arbela
 cfr-whatsnew-protections-icon-alt = Babesaren ikonoa
 
@@ -274,3 +282,18 @@ cfr-whatsnew-media-keys-button = Ikasi nola
 
 cfr-whatsnew-search-shortcuts-header = Bilatu lasterbideak helbide-barran
 cfr-whatsnew-search-shortcuts-body = Orain, bilaketa-motor edo gune zehatz bat helbide-barran idaztean, lasterbide urdin bat agertuko da azpiko bilaketa-iradokizunetan. Hautatu lasterbidea bilaketa zuzenean helbide-barratik burutzeko.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Supercookie maltzurren aurkako babesa
+cfr-whatsnew-supercookies-body = Webguneek zure nabigatzailean "supercookie" sekretu bat erants dezakete eta webeko zure jarduna jarraitu; zuk cookieak garbitu ondoren ere bai. { -brand-short-name }(e)k orain supercookie hauen aurkako babes sendoa eskaintzen du, zure online jardueraren jarraipenik ez egiteko gune batetik bestera.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = Laster-marka hobeak
+cfr-whatsnew-bookmarking-body = Errazagoa da zure gogoko guneak kontrolpean izatea. Gordetako laster-marken kokaleku gogokoena gogoratzen du orain { -brand-short-name }(e)k, laster-marken tresna-barra lehenespenez erakusten da fitxa berrietan eta gainerako laster-marketarako sarbide erraza ematen zaizu tresna-barrako karpetaren bidez.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Guneen arteko cookien jarraipenaren aurkako babes sakona
+cfr-whatsnew-cross-site-tracking-body = Cookien jarraipenaren aurkako babes hobeagoa izatea aukera dezakezu orain. { -brand-short-name }(e)k zure ekintzak eta datuak uneko gunearen testuingurura isola ditzake, nabigatzailean gordetako informazioa webguneen artean parteka ez dadin.

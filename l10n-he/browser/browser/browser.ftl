@@ -345,6 +345,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = סגירה
 
+## Tab actions
+
+browser-tab-audio-playing = מנגן
+browser-tab-audio-muted = מושתק
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = מנגן
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = מושתק
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = ניגון אוטומטי מושתק
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = תמונה בתוך תמונה
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -502,12 +515,26 @@ fullscreen-exit-mac-button = יציאה ממסך מלא (Esc)
 pointerlock-warning-domain = לאתר בכתובת <span data-l10n-name="domain">{ $domain }</span> יש שליטה על הסמן שלך. לחיצה על ESC תחזיר את השליטה אליך.
 pointerlock-warning-no-domain = למסמך זה יש שליטה על הסמן שלך. לחיצה על ESC תחזיר את השליטה אליך.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>חלק מדף זה קרס.</strong> כדי ליידע את { -brand-product-name } על בעיה זו ולתקן אותה מהר יותר, נא לשלוח דיווח.
+crashed-subframe-learnmore =
+    .label = מידע נוסף
+    .accesskey = מ
+crashed-subframe-submit =
+    .label = שליחת דיווח
+    .accesskey = ש
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = הצגת כל הסימניות
 bookmarks-recent-bookmarks =
     .value = סימניות שנוספו לאחרונה
+bookmarks-manage-bookmarks =
+    .label = ניהול סימניות
+bookmarks-recent-bookmarks-panel =
+    .value = סימניות אחרונות
 bookmarks-toolbar-chevron =
     .tooltiptext = הצגת סימניות נוספות
 bookmarks-sidebar-content =
@@ -530,6 +557,18 @@ bookmarks-tools-toolbar-visibility =
             [true] הסתרת סרגל הכלים סימניות
            *[other] הצגת סרגל הכלים סימניות
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] הסתרת סרגל הכלים סימניות
+           *[other] הצגת סרגל הכלים סימניות
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] הסתרת סרגל הכלים סימניות
+           *[other] הצגת סרגל הכלים סימניות
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -540,6 +579,8 @@ bookmarks-search =
     .label = חיפוש בסימניות
 bookmarks-tools =
     .label = כלי סימניות
+bookmarks-bookmark-edit-panel =
+    .label = עריכת סימנייה זו
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -553,6 +594,9 @@ bookmarks-toolbar-placeholder =
     .title = פריטי סרגל כלים סימניות
 bookmarks-toolbar-placeholder-button =
     .label = פריטי סרגל כלים סימניות
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = יצירת סימנייה ללשונית הנוכחית
 
 ## Library Panel items
 
@@ -562,7 +606,8 @@ library-bookmarks-bookmark-this-page =
     .label = יצירת סימנייה לדף זה
 library-bookmarks-bookmark-edit =
     .label = עריכת סימנייה זו
-library-recent-activity-label = פעילות אחרונה
+library-recent-activity-title =
+    .value = פעילות אחרונה
 
 ## More items
 

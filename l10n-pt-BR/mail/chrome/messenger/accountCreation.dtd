@@ -2,18 +2,18 @@
    - License, v. 2.0. If a copy of the MPL was not distributed with this
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
-<!ENTITY emailWizard.title               "Configure seu endereço de e-mail existente">
-<!ENTITY emailWizard.caption             "Use seu endereço de e-mail atual">
+<!ENTITY emailWizard.title               "Configure seu endereço de email existente">
+<!ENTITY emailWizard.caption             "Use seu endereço de email atual">
 <!ENTITY name.label                      "Seu nome:">
 <!ENTITY name.accesskey                  "n">
 <!ENTITY fullname.placeholder            "Seu nome completo">
 <!ENTITY name.text                       "Seu nome, como será mostrado aos outros">
 <!ENTITY name.error                      "Digite seu nome">
-<!ENTITY email.label                     "Endereço de e-mail:">
+<!ENTITY email.label                     "Endereço de email:">
 <!ENTITY email.accesskey                 "E">
-<!ENTITY email3.placeholder              "Seu endereço de e-mail">
-<!ENTITY email.text                      "Seu endereço de e-mail existente">
-<!ENTITY email.error                     "Endereço de e-mail inválido">
+<!ENTITY email3.placeholder              "Seu endereço de email">
+<!ENTITY email.text                      "Seu endereço de email existente">
+<!ENTITY email.error                     "Endereço de email inválido">
 <!ENTITY password.label                  "Senha:">
 <!ENTITY password.accesskey              "S">
 <!ENTITY password.placeholder            "Senha">
@@ -73,7 +73,7 @@
 <!ENTITY half-manual-test.accesskey      "R">
 <!ENTITY manual-config.label             "Configurar manualmente…">
 <!ENTITY manual-config.accesskey         "m">
-<!ENTITY open-provisioner.label          "Usar um novo endereço de e-mail…">
+<!ENTITY open-provisioner.label          "Obter um novo endereço de email…">
 <!ENTITY open-provisioner.accesskey      "o">
 <!ENTITY get-help.label                  "Obter ajuda">
 <!ENTITY get-help.accesskey              "a">
@@ -100,11 +100,11 @@
 <!ENTITY changeSettings.label            "Alterar as configurações">
 <!ENTITY changeSettings.accesskey        "M">
 
-<!ENTITY contactYourProvider.description "O &brandShortName; lhe permitirá obter o seu correio utilizando as configurações fornecidas. Entretanto, você deve contatar o seu administrador ou provedor de e-mail a respeito destas conexões impróprias Veja as FAQ do Thunderbird para mais informações.">
+<!ENTITY contactYourProvider.description "O &brandShortName; pode permitir usar seu email usando as configurações fornecidas. Entretanto, você deve entrar em contato com seu administrador ou provedor de email para falar a respeito dessas conexões impróprias. Consulte mais informações nas perguntas frequentes do Thunderbird.">
 
 <!ENTITY insecureServer.tooltip.title    "Aviso! Este é um servidor inseguro.">
 <!ENTITY insecureServer.tooltip.details  "Clique no círculo para mais detalhes.">
 
-<!ENTITY insecureUnencrypted.description "O seu e-mail e a autenticação são enviados desencriptadas, portanto a sua senha (e a sua mensagem) poderão ser lidas facilmente por outras pessoas. O &brandShortName; deixará você obter o seu correio, mas você deve contatar o seu provedor de e-mail para configurar o servidor com uma conexão segura.">
-<!ENTITY insecureSelfSigned.description  "O servidor usa um certificado que não podemos confiar, portanto não podemos garantir que alguém não esteja interceptando o tráfego entre o &brandShortName; e o seu servidor. O &brandShortName; deixará que você obtenha o seu correio, mas você realmente deve solicitar ao seu provedor de e-mail para configurar o servidor com um certificado confiável.">
+<!ENTITY insecureUnencrypted.description "Seu email e autenticação são enviados sem criptografia, assim sua senha e a própria mensagem podem ser lidas facilmente por outras pessoas. O &brandShortName; permite usar seu email, mas você deve entrar em contato com seu provedor de email para pedir que configure o servidor com uma conexão segura.">
+<!ENTITY insecureSelfSigned.description  "O servidor usa um certificado em que não podemos confiar, portanto não podemos garantir que alguém não esteja interceptando o tráfego entre o &brandShortName; e seu servidor. O &brandShortName; deixa você usar seu email, mas você realmente deve solicitar ao seu provedor de email que configure o servidor com um certificado confiável.">
 <!ENTITY secureServer.description        "Parabéns! Este é um servidor seguro.">

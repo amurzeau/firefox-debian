@@ -30,3 +30,54 @@ appmenuitem-save-page =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = Kas jauns?
+
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
+## "Enable Profiler Menu Button".
+
+
+## Help panel
+
+appmenu-about =
+    .label = Par { -brand-shorter-name }
+    .accesskey = a
+appmenu-help-product =
+    .label = { -brand-shorter-name } palīdzība
+    .accesskey = l
+appmenu-help-show-tour =
+    .label = { -brand-shorter-name } ekskursija
+    .accesskey = r
+appmenu-help-keyboard-shortcuts =
+    .label = Taustiņu kombinācijas
+    .accesskey = k
+appmenu-help-troubleshooting-info =
+    .label = Problēmu novēršanas informācija
+    .accesskey = P
+appmenu-help-taskmanager =
+    .label = Uzdevumu pārvaldnieks
+appmenu-help-feedback-page =
+    .label = Nosūtīt atsauksmi…
+    .accesskey = s
+
+## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-safe-mode-without-addons =
+    .label = Pārstartēt ar deaktivētiem papildinājumiem…
+    .accesskey = r
+appmenu-help-safe-mode-with-addons =
+    .label = Pārstartēt ar aktivētiem papildinājumiem
+    .accesskey = r
+
+## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-report-deceptive-site =
+    .label = Ziņot par maldinošu lapu…
+    .accesskey = d
+appmenu-help-not-deceptive =
+    .label = Šī nav maldinoša lapa…
+    .accesskey = d
+
+##
+

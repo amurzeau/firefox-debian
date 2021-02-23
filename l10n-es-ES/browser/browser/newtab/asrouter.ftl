@@ -122,6 +122,9 @@ cfr-whatsnew-lockwise-take-link-text = Obtener la aplicación
 
 cfr-whatsnew-searchbar-title = Escriba menos, encuentre más con la barra de direcciones
 cfr-whatsnew-searchbar-body-topsites = Ahora, simplemente seleccione la barra de direcciones y se va a expandir un cuadro con enlaces a sus sitios principales.
+
+## Search bar
+
 cfr-whatsnew-searchbar-icon-alt-text = Icono de lupa
 
 ## Picture-in-Picture
@@ -199,10 +202,14 @@ cfr-doorhanger-cryptominers-description = Su privacidad es importante. { -brand-
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (String) - The date we began recording the count of blocked trackers
+#   $date (Number) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
        *[other] ¡{ -brand-short-name } bloqueó más de <b>{ $blockedCount }</b> rastreadores desde { $date }!
+    }
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+       *[other] { -brand-short-name } bloqueado en <b>{ $blockedCount }</b> rastreadores desde { DATETIME($date, month: "long", year: "numeric") }!
     }
 cfr-doorhanger-milestone-ok-button = Ver todo
     .accesskey = V
@@ -276,3 +283,18 @@ cfr-whatsnew-media-keys-button = Saber cómo
 
 cfr-whatsnew-search-shortcuts-header = Atajos de búsqueda en la barra de direcciones
 cfr-whatsnew-search-shortcuts-body = Ahora, cuando escriba un motor de búsqueda o un sitio específico en la barra de direcciones, aparecerá un atajo azul en las sugerencias de búsqueda. Seleccione ese atajo para completar su búsqueda directamente desde la barra de direcciones.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Protección contra supercookies maliciosas
+cfr-whatsnew-supercookies-body = Los sitios web pueden adjuntar en secreto una “supercookie” a su navegador que puede seguirle por la web, incluso después de limpiar sus cookies. { -brand-short-name } proporciona ahora una fuerte protección contra las supercookies para que no puedan usarse para rastrear sus actividades en línea de un sitio a otro.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = Mejores marcadores
+cfr-whatsnew-bookmarking-body = Es más fácil realizar un seguimiento de sus sitios favoritos. { -brand-short-name } ahora recuerda su ubicación preferida para los marcadores guardados, muestra la barra de herramientas de marcadores de forma predeterminada en las pestañas nuevas y le brinda fácil acceso al resto de sus marcadores a través de una carpeta de la barra de herramientas.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Protección integral contra el seguimiento de cookies entre sitios
+cfr-whatsnew-cross-site-tracking-body = Ahora puede optar por una mejor protección contra el rastreo de cookies. { -brand-short-name } puede aislar sus actividades y datos en el sitio en el que está en este momento para que la información almacenada en el navegador no se comparta entre sitios web.

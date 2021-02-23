@@ -42,3 +42,59 @@ whatsnew-panel-header = Čo je nové
 whatsnew-panel-footer-checkbox =
     .label = Informovať o nových funkciách
     .accesskey = f
+
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
+## "Enable Profiler Menu Button".
+
+
+## Help panel
+
+appmenu-about =
+    .label = O aplikácii { -brand-shorter-name }
+    .accesskey = O
+appmenu-help-product =
+    .label = Pomocník prehliadača { -brand-shorter-name }
+    .accesskey = P
+appmenu-help-show-tour =
+    .label = Prehliadka prehliadača { -brand-shorter-name }
+    .accesskey = h
+appmenu-help-import-from-another-browser =
+    .label = Importovať z iného prehliadača…
+    .accesskey = I
+appmenu-help-keyboard-shortcuts =
+    .label = Klávesové skratky
+    .accesskey = K
+appmenu-help-troubleshooting-info =
+    .label = Informácie pre riešenie problémov
+    .accesskey = n
+appmenu-help-taskmanager =
+    .label = Správca úloh
+appmenu-help-feedback-page =
+    .label = Odoslať spätnú väzbu…
+    .accesskey = d
+
+## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-safe-mode-without-addons =
+    .label = Reštartovať a zakázať doplnky…
+    .accesskey = R
+appmenu-help-safe-mode-with-addons =
+    .label = Reštartovať a povoliť doplnky…
+    .accesskey = R
+
+## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-report-deceptive-site =
+    .label = Nahlásenie podvodnej stránky…
+    .accesskey = N
+appmenu-help-not-deceptive =
+    .label = Toto nie je podvodná stránka…
+    .accesskey = T
+
+##
+
+appmenu-help-check-for-update =
+    .label = Vyhľadať aktualizácie…

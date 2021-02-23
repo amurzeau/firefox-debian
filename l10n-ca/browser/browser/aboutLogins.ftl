@@ -84,6 +84,7 @@ login-item-new-login-title = Crea un inici de sessió
 login-item-edit-button = Edita
 about-logins-login-item-remove-button = Elimina
 login-item-origin-label = Adreça del lloc web
+login-item-tooltip-message = Assegureu-vos que coincideixi amb l'adreça exacta del lloc web on inicieu la sessió.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Nom d'usuari
@@ -197,9 +198,17 @@ about-logins-confirm-remove-all-sync-dialog-title =
         [one] Voleu eliminar { $count } inici de sessió de tots els dispositius?
        *[other] Voleu eliminar tots els { $count } inicis de sessió de tots els dispositius?
     }
+about-logins-confirm-remove-all-sync-dialog-message =
+    { $count ->
+        [1] Això eliminarà l'inici de sessió desat pel { -brand-short-name } en tots els dispositius sincronitzats amb el vostre { -fxaccount-brand-name }. També eliminarà les alertes de filtracions que apareixen aquí. Aquesta acció no es pot desfer.
+        [one] Això eliminarà l'inici de sessió desat pel { -brand-short-name } en tots els dispositius sincronitzats amb el vostre { -fxaccount-brand-name }. També eliminarà les alertes de filtracions que apareixen aquí. Aquesta acció no es pot desfer.
+       *[other] Això eliminarà tots els inicis de sessió desats pel { -brand-short-name } en tots els dispositius sincronitzats amb el vostre { -fxaccount-brand-name }. També eliminarà les alertes de filtracions que apareixen aquí. Aquesta acció no es pot desfer.
+    }
 about-logins-confirm-export-dialog-title = Exporta els inicis de sessió i contrasenyes
 about-logins-confirm-export-dialog-message = Les contrasenyes es desaran com a text llegible (per exemple, «malaC0ntr@senya»), de manera que qualsevol que pugui obrir el fitxer exportat les podrà veure.
 about-logins-confirm-export-dialog-confirm-button = Exporta…
+about-logins-alert-import-title = Fi de la importació
+about-logins-alert-import-message = Mostra un resum detallat de la importació
 confirm-discard-changes-dialog-title = Voleu descartar els canvis no desats?
 confirm-discard-changes-dialog-message = Es perdran tots els canvis que no hàgiu desat.
 confirm-discard-changes-dialog-confirm-button = Descarta
@@ -258,6 +267,57 @@ about-logins-import-file-picker-import-button = Importa
 # filter by the operating system.
 about-logins-import-file-picker-csv-filter-title =
     { PLATFORM() ->
-        [macos] Document CSV
-       *[other] Fitxer CSV
+        [macos] Document CSV (valors separats per comes)
+       *[other] Fitxer CSV (valors separats per comes)
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Document TSV (valors separats per tabuladors)
+       *[other] Fitxer TSV (valors separats per tabuladors)
+    }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Fi de la importació
+about-logins-import-dialog-items-added =
+    { $count ->
+        [one] <span>Inicis de sessió nous afegits:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Inicis de sessió nous afegits:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+        [one] <span>Inicis de sessió existents actualitzats:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Inicis de sessió existents actualitzats:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+        [one] <span>Inicis de sessió duplicats:</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(no importat)</span>
+       *[other] <span>Inicis de sessió duplicats:</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(no importats)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+        [one] <span>Errors:</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(no s'ha importat)</span>
+       *[other] <span>Errors:</span> <span data-l10n-name="count">{ $count }</span><span data-l10n-name="meta">(no s'han importat)</span>
+    }
+about-logins-import-dialog-done = Fet
+about-logins-import-dialog-error-title = Error d'importació
+about-logins-import-dialog-error-conflicting-values-title = Un inici de sessió conté diversos valors conflictius
+about-logins-import-dialog-error-conflicting-values-description = Per exemple: diversos noms d'usuari, contrasenyes, URL, etc. per a un mateix inici de sessió.
+about-logins-import-dialog-error-file-format-title = Problema del format de fitxer
+about-logins-import-dialog-error-file-format-description = Falten les capçaleres de columna o són incorrectes. Assegureu-vos que el fitxer inclogui columnes per al nom d'usuari, la contrasenya i l'URL.
+about-logins-import-dialog-error-file-permission-title = No s’ha pogut llegir el fitxer
+about-logins-import-dialog-error-file-permission-description = El { -brand-short-name } no té permís per llegir el fitxer. Proveu de canviar els permisos del fitxer.
+about-logins-import-dialog-error-unable-to-read-title = No s’ha pogut analitzar el fitxer
+about-logins-import-dialog-error-unable-to-read-description = Assegureu-vos que heu triat un fitxer CSV (valors separats per comes) o TSV (valors separats per tabuladors).
+about-logins-import-dialog-error-no-logins-imported = No s'ha importat cap inici de sessió
+about-logins-import-dialog-error-learn-more = Més informació
+about-logins-import-dialog-error-try-again = Torna-ho a provar…
+about-logins-import-dialog-error-cancel = Cancel·la
+
+## Logins import report page
+
+about-logins-import-report-page-title = Informe de resum de la importació

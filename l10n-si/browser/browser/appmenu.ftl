@@ -29,3 +29,47 @@ appmenuitem-save-page =
 
 ## What's New panel in App menu.
 
+
+## Help panel
+
+appmenu-about =
+    .label = { -brand-shorter-name } පිළිබඳ
+    .accesskey = A
+appmenu-help-product =
+    .label = { -brand-shorter-name } උදව්
+    .accesskey = H
+appmenu-help-show-tour =
+    .label = { -brand-shorter-name } සංචාරය
+    .accesskey = o
+appmenu-help-keyboard-shortcuts =
+    .label = යතුරු පුවරු කෙටිමං
+    .accesskey = K
+appmenu-help-troubleshooting-info =
+    .label = දෝෂ සෙවීමේ තොරතුරු
+    .accesskey = T
+appmenu-help-feedback-page =
+    .label = ප්‍රතිචාරය යවන්න…
+    .accesskey = S
+
+## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-safe-mode-without-addons =
+    .label = ඇඩෝන දුබල කර යළි-අරඹන්න…
+    .accesskey = R
+appmenu-help-safe-mode-with-addons =
+    .label = සක්‍රීය කළ ඇඩෝන සමඟ යළි අරඹන්න
+    .accesskey = R
+
+## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-report-deceptive-site =
+    .label = අවිශ්වාසී අඩවිය වාර්ථා කරන්න ...
+    .accesskey = D
+appmenu-help-not-deceptive =
+    .label = මෙය කූට අඩවියක් නොවේ
+    .accesskey = d
+
+##
+

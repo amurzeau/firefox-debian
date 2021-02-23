@@ -84,6 +84,7 @@ login-item-new-login-title = Új bejelentkezés létrehozása
 login-item-edit-button = Szerkesztés
 about-logins-login-item-remove-button = Eltávolítás
 login-item-origin-label = Honlap címe
+login-item-tooltip-message = Győződjön meg róla, hogy ez megegyezik annak a webhelynek a pontos címével, ahová bejelentkezik.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Felhasználónév
@@ -269,6 +270,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV-dokumentum
        *[other] CSV-fájl
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] TSV-dokumentum
+       *[other] TSV-fájl
+    }
 
 ##
 ## Variables:
@@ -296,3 +304,20 @@ about-logins-import-dialog-items-error =
        *[other] <span>Hibák:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nem lett importálva)</span>
     }
 about-logins-import-dialog-done = Kész
+about-logins-import-dialog-error-title = Importálási hiba
+about-logins-import-dialog-error-conflicting-values-title = Több ütköző érték egy bejelentkezéshez
+about-logins-import-dialog-error-conflicting-values-description = Például: több felhasználónév, jelszó, URL-ek stb. egy bejelentkezéshez.
+about-logins-import-dialog-error-file-format-title = Fájlformátum probléma
+about-logins-import-dialog-error-file-format-description = Helytelen vagy hiányzó oszlopfejlécek. Ellenőrizze, hogy a fájl tartalmaz-e oszlopokat a felhasználónévhez, a jelszóhoz és az URL-hez.
+about-logins-import-dialog-error-file-permission-title = Nem lehet olvasni a fájlt
+about-logins-import-dialog-error-file-permission-description = A { -brand-short-name }nak nincs engedélye a fájl olvasásához. Próbálja módosítani a fájl jogosultságait.
+about-logins-import-dialog-error-unable-to-read-title = Nem lehet értelmezni a fájlt
+about-logins-import-dialog-error-unable-to-read-description = Győződjön meg arról, hogy CSV- vagy TSV-fájlt választott ki.
+about-logins-import-dialog-error-no-logins-imported = Nem lettek bejelentkezések importálva
+about-logins-import-dialog-error-learn-more = További tudnivalók
+about-logins-import-dialog-error-try-again = Próbálja újra…
+about-logins-import-dialog-error-cancel = Mégse
+
+## Logins import report page
+
+about-logins-import-report-page-title = Import összefoglaló jelentés

@@ -42,3 +42,57 @@ whatsnew-panel-header = Šta je novo
 whatsnew-panel-footer-checkbox =
     .label = Obavijesti o novim mogućnostima
     .accesskey = f
+
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
+## "Enable Profiler Menu Button".
+
+
+## Help panel
+
+appmenu-about =
+    .label = O { -brand-shorter-name }u
+    .accesskey = O
+appmenu-help-product =
+    .label = { -brand-shorter-name } pomoć
+    .accesskey = H
+appmenu-help-show-tour =
+    .label = { -brand-shorter-name } vodič
+    .accesskey = o
+appmenu-help-import-from-another-browser =
+    .label = Uvoz iz drugog browsera…
+    .accesskey = I
+appmenu-help-keyboard-shortcuts =
+    .label = Shortcuti na tastaturi
+    .accesskey = o
+appmenu-help-troubleshooting-info =
+    .label = Informacije za rješavanje problema
+    .accesskey = I
+appmenu-help-taskmanager =
+    .label = Task Manager
+appmenu-help-feedback-page =
+    .label = Pošalji povratnu informaciju…
+    .accesskey = P
+
+## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-safe-mode-without-addons =
+    .label = Restartuj sa onemogućenim add-onima…
+    .accesskey = R
+appmenu-help-safe-mode-with-addons =
+    .label = Restartuj sa omogućenim add-onima
+    .accesskey = R
+
+## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-report-deceptive-site =
+    .label = Prijavi obmanjujuću stranicu…
+    .accesskey = o
+appmenu-help-not-deceptive =
+    .label = Ovo nije obmanjujuća stranica…
+    .accesskey = o
+
+##
+

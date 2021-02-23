@@ -307,6 +307,9 @@ browser-window-maximize-button =
 browser-window-close-button =
     .tooltiptext = Uddu
 
+## Tab actions
+
+
 ## Bookmarks toolbar items
 
 
@@ -385,6 +388,9 @@ fullscreen-exit-mac-button = Yaltu njaajeendi yaynirde (Ech)
 pointerlock-warning-domain = Tamde <span data-l10n-name="domain">{ $domain }</span> nana ɗowa doborde maa. Ñoƴƴu Ech ngam ɓamtude ɗowgol.
 pointerlock-warning-no-domain = Ndee fiilannde nana ɗowa doborde maa. Ñoƴƴu Ech ngam ɓamtude ɗowgol.
 
+## Subframe crash notification
+
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -413,6 +419,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Suuɗ Palal Maantore
            *[other] Hollu Palal Maantore
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Suuɗ Palal Maantore
+           *[other] Hollu Palal Maantore
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -423,6 +435,8 @@ bookmarks-search =
     .label = Yiylo Maantore
 bookmarks-tools =
     .label = Kuutorɗe Maantorgol
+bookmarks-bookmark-edit-panel =
+    .label = Taƴto Ngol Maantorol
 bookmarks-toolbar-menu =
     .label = Palal Maantore
 bookmarks-toolbar-placeholder =

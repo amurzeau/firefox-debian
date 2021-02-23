@@ -47,7 +47,7 @@ about-debugging-sidebar-item-connect-button-connection-failed = Falha na conexã
 # the runtime is taking too much time.
 about-debugging-sidebar-item-connect-button-connection-not-responding = Conexão ainda pendente, verifique se há mensagens no navegador alvo
 # Text displayed as connection error in sidebar item when the connection has timed out.
-about-debugging-sidebar-item-connect-button-connection-timeout = Atingido o tempo limite de conexão
+about-debugging-sidebar-item-connect-button-connection-timeout = Atingido tempo limite de conexão
 # Temporary text displayed in sidebar items representing remote runtimes after
 # successfully connecting to them. Temporary UI, do not localize.
 about-debugging-sidebar-item-connected-label = Conectado
@@ -297,7 +297,7 @@ about-debugging-main-process-name = Processo principal
 about-debugging-main-process-description2 = Processo principal do navegador de destino
 # Displayed instead of the Main Process debug target when the preference
 # `devtools.browsertoolbox.fission` is true.
-about-debugging-multiprocess-toolbox-name = Caixa de ferramentas de multiprocessamento
+about-debugging-multiprocess-toolbox-name = Ferramentas de multiprocessamento
 # Description for the Multiprocess Toolbox target.
 about-debugging-multiprocess-toolbox-description = Processo principal e processos de conteúdo do navegador de destino
 # Alt text used for the close icon of message component (warnings, errors and notifications).

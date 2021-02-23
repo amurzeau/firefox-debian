@@ -16,14 +16,6 @@ printui-page-range-custom = 自訂
 printui-page-range-label = 頁面
 printui-page-range-picker =
     .aria-label = 選擇頁數範圍
-printui-page-custom-range =
-    .aria-label = 輸入自訂的頁數範圍
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = 從
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = 到
 printui-page-custom-range-input =
     .aria-label = 輸入自訂頁面範圍
     .placeholder = 例如 2-6, 9, 12-16
@@ -46,6 +38,11 @@ printui-scale-pcent = 縮放比例
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = 雙面列印
 printui-duplex-checkbox = 印在紙張的兩面
+printui-two-sided-printing-off = 關閉
+# Flip the page on the side (like a book).
+printui-two-sided-printing-side-edge = 長邊翻轉
+# Flip the page on the top (like a vertical calendar).
+printui-two-sided-printing-top-edge = 短邊翻轉
 # Section title for miscellaneous print options
 printui-options = 選項
 printui-headers-footers-checkbox = 列印頁首與頁尾
@@ -58,7 +55,6 @@ printui-margins = 邊界
 printui-margins-default = 預設值
 printui-margins-min = 最小
 printui-margins-none = 無
-printui-margins-custom = 自訂
 printui-margins-custom-inches = 自訂（英寸）
 printui-margins-custom-top = 頂端
 printui-margins-custom-top-inches = 頂端（英寸）
@@ -82,6 +78,7 @@ printui-pages-per-sheet = 每張紙要印的頁面數
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
 printui-print-progress-indicator = 列印中…
+printui-print-progress-indicator-saving = 儲存中…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

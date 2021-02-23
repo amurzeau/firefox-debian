@@ -84,6 +84,7 @@ login-item-new-login-title = Crear novo inicio de sesión
 login-item-edit-button = Editar
 about-logins-login-item-remove-button = Eliminar
 login-item-origin-label = Enderezo do sitio web
+login-item-tooltip-message = Asegúrese de que isto coincide co enderezo exacto do sitio web onde iniciou a sesión.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Nome de usuario
@@ -206,6 +207,8 @@ about-logins-confirm-remove-all-sync-dialog-message =
 about-logins-confirm-export-dialog-title = Exportar inicios de sesión e contrasinais
 about-logins-confirm-export-dialog-message = Os seus contrasinais gardaranse como texto lexible (por exemplo, ConTR@sinaLmaL0) para que calquera que poida abrir o ficheiro exportado poida velos.
 about-logins-confirm-export-dialog-confirm-button = Exportar…
+about-logins-alert-import-title = Importación completada
+about-logins-alert-import-message = Ver o resumo detallado da importación
 confirm-discard-changes-dialog-title = Descartar os cambios non gardados?
 confirm-discard-changes-dialog-message = Perderanse todos os cambios non gardados.
 confirm-discard-changes-dialog-confirm-button = Descartar
@@ -242,7 +245,7 @@ about-logins-error-message-default = Produciuse un erro ao intentar gardar este 
 ## Login Export Dialog
 
 # Title of the file picker dialog
-about-logins-export-file-picker-title = Exportar ficheiro de inicios de sesión
+about-logins-export-file-picker-title = Exportar ficheiro de identificacións
 # The default file name shown in the file picker when exporting saved logins.
 # This must end in .csv
 about-logins-export-file-picker-default-filename = logins.csv
@@ -258,7 +261,7 @@ about-logins-export-file-picker-csv-filter-title =
 ## Login Import Dialog
 
 # Title of the file picker dialog
-about-logins-import-file-picker-title = Importar ficheiro de inicios de sesión
+about-logins-import-file-picker-title = Importar ficheiro de identificacións
 about-logins-import-file-picker-import-button = Importar
 # A description for the .csv file format that may be shown as the file type
 # filter by the operating system.
@@ -267,3 +270,54 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Documento CSV
        *[other] Ficheiro CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Documento TSV
+       *[other] Ficheiro TSV
+    }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Importación completada
+about-logins-import-dialog-items-added =
+    { $count ->
+        [one] <span>Engadiuse unha nova identificación:</span> <span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Engadíronse novas identificacións:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+        [one] <span>Actualizada a identificación existente:</span><span data-l10n-name="count">{ $count }</span>
+       *[other] <span>Actualizadas as identificacións existentes:</span><span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+        [one] <span>Duplicar a identificación atopada:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(not imported)</span>
+       *[other] <span>Duplicar a identificacións atopadas:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(not imported)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+        [one] <span>Erro:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(non importada)</span>
+       *[other] <span>Erros:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(non importadas)</span>
+    }
+about-logins-import-dialog-done = Feito
+about-logins-import-dialog-error-title = Erro de importación
+about-logins-import-dialog-error-conflicting-values-title = Múltiplos valores en conflito para unha identificación
+about-logins-import-dialog-error-conflicting-values-description = Por exemplo: múltiplos nomes de usuario, contrasinais, URL, etc. para unha identificación.
+about-logins-import-dialog-error-file-format-title = Incidencia co formato do ficheiro
+about-logins-import-dialog-error-file-format-description = Faltan ou son incorrectas as cabeceiras de columna. Asegúrese de que o ficheiro inclúe columnas para nome de usuario, contrasinal ou URL.
+about-logins-import-dialog-error-file-permission-title = Foi imposíbel ler o ficheiro
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } non permiso para ler o ficheiro. Tente cambiar os permisos do ficheiro.
+about-logins-import-dialog-error-unable-to-read-title = Foi imposíbel procesar o ficheiro
+about-logins-import-dialog-error-unable-to-read-description = Asegúrese de que seleccionou un ficheiro CSV ou TSV.
+about-logins-import-dialog-error-no-logins-imported = Non se importaron identificadores
+about-logins-import-dialog-error-learn-more = Saber máis
+about-logins-import-dialog-error-try-again = Ténteo de novo ...
+about-logins-import-dialog-error-cancel = Cancelar
+
+## Logins import report page
+
+about-logins-import-report-page-title = Importar informe de resumo

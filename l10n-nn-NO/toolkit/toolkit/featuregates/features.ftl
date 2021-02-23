@@ -94,5 +94,14 @@ experimental-features-js-warp-description = Slå på Warp, eit prosjekt for å f
 experimental-features-fission =
     .label = Fission (nettstadisolering)
 experimental-features-fission-description = Fission (nettstadisolering) er ein eksperimentell funksjon i { -brand-short-name } for å gi eit ekstra forsvarslag mot sikkerheitsfeil. Ved å isolere kvar nettstad i ein eigen prosess, gjer Fission det vanskelegare for vondsinna nettstadar å få tilgang til informasjon frå andre sider du besøkjer. Dette er ei stor arkitektonisk endring i { -brand-short-name }, og vi set pris på at du testar og rapporterer eventuelle problem du kan støyte på. For meir informasjon, sjå <a data-l10n-name="wiki">wiki-en</a>.
+# Support for having multiple Picture-in-Picture windows open simultaneously
+experimental-features-multi-pip =
+    .label = Støtte for fleire bilde-i-bilde (PiP)
+experimental-features-multi-pip-description = Eksperimentell støtte for å opne fleire bilde-i-bilde (PiP) vindauge samstundes.
 experimental-features-http3 =
     .label = HTTP/3-protokoll
+experimental-features-http3-description = Eksperimentell støtte for HTTP/3-protokollen.
+# Search during IME
+experimental-features-ime-search =
+    .label = Adresselinja: Vis resultat under IME-samansetjing
+experimental-features-ime-search-description = Ein IME (Input Method Editor) er eit verktøy som lar deg skrive inn komplekse symbol, til dømes dei som vert brukte i austasiatiske eller Indiske skriftspråk, ved hjelp av eit standardtastatur. Aktivering av dette eksperimentet held adresselinjepanelet ope, viser søkjeresultat og forslag mens du brukar IME til å leggje inn tekst. Merk at IME kan vise eit panel som dekkjer resultata i adresselinja, og derfor er denne preferansen berre tilrådd for IME som ikkje brukar denne typen panel.

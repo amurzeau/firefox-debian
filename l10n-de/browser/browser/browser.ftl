@@ -346,6 +346,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Schließen
 
+## Tab actions
+
+browser-tab-audio-playing = Wird abgespielt
+browser-tab-audio-muted = Stummgeschaltet
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = WIRD ABGESPIELT
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = STUMMGESCHALTET
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = WIEDERGABE BLOCKIERT
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = BILD-IM-BILD
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,12 +517,26 @@ fullscreen-exit-mac-button = Vollbild beenden (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> kontrolliert den Mauszeiger. Drücken Sie die Esc-Taste, wenn Sie wieder die Kontrolle übernehmen wollen.
 pointerlock-warning-no-domain = Dieses Dokument kontrolliert den Mauszeiger. Drücken Sie die Esc-Taste, wenn Sie wieder die Kontrolle übernehmen wollen.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Ein Teil der Seite ist abgestürzt.</strong> Übermitteln Sie bitte einen Bericht, um { -brand-product-name } über dieses Problem zu informieren und beim Beheben des Fehlers zu helfen.
+crashed-subframe-learnmore =
+    .label = Weitere Informationen
+    .accesskey = W
+crashed-subframe-submit =
+    .label = Bericht senden
+    .accesskey = B
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Lesezeichen verwalten
 bookmarks-recent-bookmarks =
     .value = Kürzlich als Lesezeichen gesetzt
+bookmarks-manage-bookmarks =
+    .label = Lesezeichen verwalten
+bookmarks-recent-bookmarks-panel =
+    .value = Neueste Lesezeichen
 bookmarks-toolbar-chevron =
     .tooltiptext = Weitere Lesezeichen anzeigen
 bookmarks-sidebar-content =
@@ -532,6 +559,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Lesezeichen-Symbolleiste ausblenden
            *[other] Lesezeichen-Symbolleiste anzeigen
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Lesezeichen-Symbolleiste ausblenden
+           *[other] Lesezeichen-Symbolleiste anzeigen
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Lesezeichen-Symbolleiste ausblenden
+           *[other] Lesezeichen-Symbolleiste anzeigen
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +581,8 @@ bookmarks-search =
     .label = Lesezeichen durchsuchen
 bookmarks-tools =
     .label = Lesezeichen-Werkzeuge
+bookmarks-bookmark-edit-panel =
+    .label = Lesezeichen bearbeiten
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +596,9 @@ bookmarks-toolbar-placeholder =
     .title = Lesezeichen-Symbole
 bookmarks-toolbar-placeholder-button =
     .label = Lesezeichen-Symbole
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Aktuellen Tab als Lesezeichen hinzufügen
 
 ## Library Panel items
 
@@ -564,7 +608,8 @@ library-bookmarks-bookmark-this-page =
     .label = Lesezeichen hinzufügen
 library-bookmarks-bookmark-edit =
     .label = Lesezeichen bearbeiten
-library-recent-activity-label = Jüngste Aktivität
+library-recent-activity-title =
+    .value = Neueste Aktivität
 
 ## More items
 

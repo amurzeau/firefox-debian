@@ -354,6 +354,11 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Cau
 
+## Tab actions
+
+browser-tab-audio-playing = Chwarae
+browser-tab-audio-muted = Tewi
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -512,12 +517,26 @@ fullscreen-exit-mac-button = Gadael y Sgrin Lawn (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> reolaeth o'ch pwyntydd. Pwyswch Esc i adennill rheolaeth.
 pointerlock-warning-no-domain = Mae gan y ddogfen hon reolaeth o'ch pwyntydd. Pwyswch Esc i adennill rheolaeth.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Mae rhan o'r dudalen hon wedi chwalu.</strong> Er mwyn rhoi gwybod i { -brand-product-name } am y mater hwn a'i drwsio'n gynt, cyflwynwch adroddiad.
+crashed-subframe-learnmore =
+    .label = Dysgu rhagor
+    .accesskey = D
+crashed-subframe-submit =
+    .label = Cyflwyno Adroddiad
+    .accesskey = A
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Dangos Pob Nod Tudalen
 bookmarks-recent-bookmarks =
     .value = Wedi gosod Nod Tudalen yn Ddiweddar
+bookmarks-manage-bookmarks =
+    .label = Rheoli Nodau Tudalen
+bookmarks-recent-bookmarks-panel =
+    .value = Nodau Tudalen Diweddar
 bookmarks-toolbar-chevron =
     .tooltiptext = Dangos pob ffolder nod tudalen
 bookmarks-sidebar-content =
@@ -540,6 +559,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Cuddio'r Bar Offer Nodau Tudalen
            *[other] Gweld Bar Offer Nodau Tudalen
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Cuddio'r Bar Offer Nodau Tudalen
+           *[other] Gweld Bar Offer Nodau Tudalen
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Cuddio'r Bar Offer Nodau Tudalen
+           *[other] Dangos y Bar Offer Nodau Tudalen
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -550,6 +581,8 @@ bookmarks-search =
     .label = Chwilio'r Nodau Tudalen
 bookmarks-tools =
     .label = Offer Nodau Tudalen
+bookmarks-bookmark-edit-panel =
+    .label = Golygu'r Nod Tudalen
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -563,6 +596,9 @@ bookmarks-toolbar-placeholder =
     .title = Eitemau Bar Offer Nodau Tudalen
 bookmarks-toolbar-placeholder-button =
     .label = Eitemau Bar Offer Nodau Tudalen
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Gosod Nod Tudalen i'r Tab Cyfredol
 
 ## Library Panel items
 
@@ -572,7 +608,8 @@ library-bookmarks-bookmark-this-page =
     .label = Gosod Nod Tudalen i'r Dudalen
 library-bookmarks-bookmark-edit =
     .label = Golygu'r Nod Tudalen
-library-recent-activity-label = Gweithgareddau Diweddar
+library-recent-activity-title =
+    .value = Gweithgareddau Diweddar
 
 ## More items
 

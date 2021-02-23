@@ -3,6 +3,53 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = 服務
+menu-application-hide-this =
+    .label = 隱藏 { -brand-shorter-name }
+menu-application-hide-other =
+    .label = 隱藏其他視窗
+menu-application-show-all =
+    .label = 全部顯示
+menu-application-touch-bar =
+    .label = 自訂觸控列…
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] 結束
+           *[other] 離開
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] x
+           *[other] Q
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = 離開 { -brand-shorter-name }
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = 結束 { -brand-shorter-name }
+menu-about =
+    .label = 關於 { -brand-shorter-name }
+    .accesskey = A
+
 ## File Menu
 
 menu-file =
@@ -160,6 +207,8 @@ menu-history-undo-menu =
     .label = 最近關閉的分頁
 menu-history-undo-window-menu =
     .label = 最近關閉的視窗
+menu-history-reopen-all-tabs = 回復所有分頁
+menu-history-reopen-all-windows = 回復所有視窗
 
 ## Bookmarks Menu
 
@@ -237,6 +286,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = 說明
     .accesskey = H
@@ -252,9 +319,14 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = 快速鍵
     .accesskey = K
+menu-get-help =
+    .label = 取得幫助
+    .accesskey = H
 menu-help-troubleshooting-info =
     .label = 疑難排解資訊
     .accesskey = T
+menu-help-taskmanager =
+    .label = 工作管理員
 menu-help-feedback-page =
     .label = 送出意見回饋…
     .accesskey = S
@@ -272,3 +344,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = 這不是詐騙網站…
     .accesskey = d
+menu-help-check-for-update =
+    .label = 檢查更新…
+    .accesskey = C

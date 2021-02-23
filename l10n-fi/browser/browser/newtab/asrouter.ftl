@@ -206,10 +206,14 @@ cfr-doorhanger-cryptominers-description = Yksityisyytesi on tärkeää. { -brand
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (String) - The date we began recording the count of blocked trackers
+#   $date (Number) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
        *[other] { -brand-short-name } on estänyt yli <b>{ $blockedCount }</b> seurainta { $date } lähtien!
+    }
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+       *[other] { -brand-short-name } on estänyt yli <b>{ $blockedCount }</b> seurainta { DATETIME($date, month: "long", year: "numeric") } alkaen!
     }
 cfr-doorhanger-milestone-ok-button = Näytä kaikki
     .accesskey = N
@@ -276,13 +280,13 @@ cfr-whatsnew-clear-cookies-image-alt = Kuvituskuva evästeen estämisestä
 ## What's new: Media controls message
 
 cfr-whatsnew-media-keys-header = Enemmän mediaohjaimia
-cfr-whatsnew-media-keys-body = Toista ja keskeytä ääni tai video suoraan näppäimistöltä tai kuulokkeista. Tämä helpottaa median hallintaa toisessa välilehdessä, ohjelmassa tai jopa silloin, kun tietokoneesi on lukittu. Voit siirtyä kappaleiden välillä myös eteen- ja taakse -näppäimillä.
+cfr-whatsnew-media-keys-body = Toista ja keskeytä ääni tai video suoraan näppäimistöltä tai kuulokkeista. Tämä helpottaa median hallintaa toisessa välilehdessä, ohjelmassa tai jopa silloin, kun tietokoneesi on lukittu. Voit siirtyä kappaleiden välillä myös eteen- ja taakse-näppäimillä.
 cfr-whatsnew-media-keys-button = Lue miten
 
 ## What's new: Search shortcuts
 
 cfr-whatsnew-search-shortcuts-header = Hakuoikotiet osoitepalkissa
-cfr-whatsnew-search-shortcuts-body = Nyt kun kirjoitat hakukoneen ta tietyn sivuston osoitepalkkiin, sininen oikotie ilmestyy alapuolelle hakuehdotuksiin. Valitsemalla sen voit kirjoittaa haun suoraan osoitepalkkiin.
+cfr-whatsnew-search-shortcuts-body = Nyt kun kirjoitat hakukoneen tai tietyn sivuston osoitepalkkiin, sininen oikotie ilmestyy alapuolelle hakuehdotuksiin. Valitsemalla sen voit kirjoittaa haun suoraan osoitepalkkiin.
 
 ## What's new: Cookies protection
 
@@ -293,3 +297,8 @@ cfr-whatsnew-supercookies-body = Sivustot voivat salaa kiinnittää selaimeesi �
 
 cfr-whatsnew-bookmarking-header = Paremmat kirjanmerkit
 cfr-whatsnew-bookmarking-body = Suosikkisivustojesi seuranta on helpompaa. { -brand-short-name } muistaa nyt haluamasi sijainnin tallennetuille kirjanmerkeille, näyttää kirjanmerkkipalkin oletusarvoisesti uusilla välilehdillä ja antaa sinulle helpon pääsyn muihin kirjanmerkkeihisi työkalupalkin kansion kautta.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Kattava suojaus sivustorajat ylittäviltä seurainevästeiltä
+cfr-whatsnew-cross-site-tracking-body = Voit nyt valita paremman suojauksen seurainevästeiltä. { -brand-short-name } voi eristää toimintasi ja tietosi muilta sivustoilta, jotta selaimeen tallennettuja tietoja ei jaeta sivustolta toiselle.

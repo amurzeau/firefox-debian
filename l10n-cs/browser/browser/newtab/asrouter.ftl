@@ -224,7 +224,7 @@ cfr-doorhanger-cryptominers-description = Na vašem soukromí záleží. { -bran
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (String) - The date we began recording the count of blocked trackers
+#   $date (Number) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     Od { $date } { -brand-short-name.gender ->
         [masculine] { -brand-short-name } zablokoval
@@ -235,6 +235,22 @@ cfr-doorhanger-milestone-heading =
         [one] jeden sledovací prvek
         [few] více než <b>{ $blockedCount }</b> sledovací prvky
        *[other] více než <b>{ $blockedCount }</b> sledovacích prvků
+    }.
+cfr-doorhanger-milestone-heading2 =
+    { -brand-short-name.gender ->
+        [masculine] { -brand-short-name(case: "gen") }
+        [feminine] { -brand-short-name(case: "gen") }
+        [neuter] { -brand-short-name(case: "gen") }
+       *[other] Aplikace { -brand-short-name }
+    } od { DATETIME($date, month: "long", year: "numeric") } { -brand-short-name.gender ->
+        [masculine] zablokoval
+        [feminine] zablokovala
+        [neuter] zablokovalo
+       *[other] zablokovala
+    } { $blockedCount ->
+        [one] jeden sledovací prvek
+        [few] <b>{ $blockedCount }</b> sledovací prvky
+       *[other] <b>{ $blockedCount }</b> sledovacích prvků
     }.
 cfr-doorhanger-milestone-ok-button = Zobrazit vše
     .accesskey = v
@@ -322,3 +338,10 @@ cfr-whatsnew-supercookies-body = Některé servery tajně posílají vašemu pro
 
 ## What's new: Better bookmarking
 
+cfr-whatsnew-bookmarking-header = Vylepšená funkce záložek
+cfr-whatsnew-bookmarking-body = Zpráva vašich oblíbených stránek je nyní jednodušší. { -brand-short-name } si pamatuje vámi preferované umístění pro ukládání nových záložek, ve výchozím nastavení zobrazuje lištu záložek při otevření nového panelu, která zároveň poskytuje snadný přístup k ostatním nesetříděným záložkám.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Důkladná ochrana proti sledování pomocí cookies třetích stran
+cfr-whatsnew-cross-site-tracking-body = Nově můžete využít lepší ochranu proti sledování skrze cookies. { -brand-short-name } vaše vnitřně oddělí uložené informace o vašich aktivitách a data navštívených stránek, takže nebudou sdíleny mezi servery.

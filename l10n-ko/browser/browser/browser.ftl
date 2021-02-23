@@ -88,7 +88,7 @@ urlbar-plugins-notification-anchor =
 urlbar-web-rtc-share-devices-notification-anchor =
     .tooltiptext = 사이트에서 카메라와 마이크를 사용할지 관리
 urlbar-autoplay-notification-anchor =
-    .tooltiptext = 자동재생 패널 열기
+    .tooltiptext = 자동 재생 패널 열기
 urlbar-persistent-storage-notification-anchor =
     .tooltiptext = 영구 저장소에 데이터를 저장
 urlbar-addons-notification-anchor =
@@ -138,7 +138,7 @@ urlbar-persistent-storage-blocked =
 urlbar-popup-blocked =
     .tooltiptext = 이 사이트의 팝업을 차단하였습니다.
 urlbar-autoplay-media-blocked =
-    .tooltiptext = 이 사이트의 소리있는 미디어 자동재생을 차단하였습니다.
+    .tooltiptext = 이 사이트의 소리있는 미디어 자동 재생을 차단하였습니다.
 urlbar-canvas-blocked =
     .tooltiptext = 이 사이트의 캔바스 데이터 추출을 차단하였습니다.
 urlbar-midi-blocked =
@@ -338,6 +338,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = 닫기
 
+## Tab actions
+
+browser-tab-audio-playing = 재생 중
+browser-tab-audio-muted = 음소거됨
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = 재생 중
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = 음소거됨
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = 자동 재생 차단됨
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = 화면 속 화면
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -496,12 +509,26 @@ fullscreen-exit-mac-button = 전체 화면 종료 (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 사이트가 포인터를 제어하려 합니다. 다시 제어하려면 ESC 키를 누르세요.
 pointerlock-warning-no-domain = 이 문서가 포인터를 제어하려 합니다. 다시 제어하려면 ESC 키를 누르세요.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>이 페이지의 일부가 손상되었습니다.</strong> { -brand-product-name }에게 이 문제를 알리고 더 빨리 해결하려면 보고서를 제출하세요.
+crashed-subframe-learnmore =
+    .label = 더 알아보기
+    .accesskey = L
+crashed-subframe-submit =
+    .label = 보고서 제출
+    .accesskey = S
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = 모든 북마크 보기
 bookmarks-recent-bookmarks =
     .value = 최근 북마크됨
+bookmarks-manage-bookmarks =
+    .label = 북마크 관리
+bookmarks-recent-bookmarks-panel =
+    .value = 최근 북마크
 bookmarks-toolbar-chevron =
     .tooltiptext = 북마크 더보기
 bookmarks-sidebar-content =
@@ -524,6 +551,18 @@ bookmarks-tools-toolbar-visibility =
             [true] 북마크 도구 모음 숨기기
            *[other] 북마크 도구 모음 표시
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] 북마크 도구 모음 숨기기
+           *[other] 북마크 도구 모음 표시
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] 북마크 도구 모음 숨기기
+           *[other] 북마크 도구 모음 표시
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -534,6 +573,8 @@ bookmarks-search =
     .label = 북마크 검색
 bookmarks-tools =
     .label = 북마크 도구
+bookmarks-bookmark-edit-panel =
+    .label = 이 북마크 편집
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -547,6 +588,9 @@ bookmarks-toolbar-placeholder =
     .title = 북마크 도구 모음 항목
 bookmarks-toolbar-placeholder-button =
     .label = 북마크 도구 모음 항목
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = 현재 탭 북마크
 
 ## Library Panel items
 
@@ -556,7 +600,8 @@ library-bookmarks-bookmark-this-page =
     .label = 이 페이지 북마크
 library-bookmarks-bookmark-edit =
     .label = 이 북마크 편집
-library-recent-activity-label = 최근 활동
+library-recent-activity-title =
+    .value = 최근 활동
 
 ## More items
 

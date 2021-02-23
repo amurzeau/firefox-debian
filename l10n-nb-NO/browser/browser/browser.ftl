@@ -346,6 +346,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Lukk
 
+## Tab actions
+
+browser-tab-audio-playing = Spiller av
+browser-tab-audio-muted = Dempet
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = SPILLER AV
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = DEMPET
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AUTOAVSPILLING BLOKKERT
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = BILDE-I-BILDE
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,12 +517,26 @@ fullscreen-exit-mac-button = Avslutt fullskjerm (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> har kontroll over musepekeren din. Trykk Esc for å ta tilbake kontrollen.
 pointerlock-warning-no-domain = Dette dokumentet har kontroll over musepekeren din. Trykk på Esc for å ta tilbake kontrollen.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>En del av denne siden krasjet.</strong> For å informere { -brand-product-name } om dette problemet og få det løst raskere, må du sende inn en rapport.
+crashed-subframe-learnmore =
+    .label = Les mer
+    .accesskey = L
+crashed-subframe-submit =
+    .label = Send inn rapport
+    .accesskey = S
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Vis alle bokmerker
 bookmarks-recent-bookmarks =
     .value = Nylig bokmerket
+bookmarks-manage-bookmarks =
+    .label = Behandle bokmerker
+bookmarks-recent-bookmarks-panel =
+    .value = Nylige bokmerker
 bookmarks-toolbar-chevron =
     .tooltiptext = Vis flere bokmerker
 bookmarks-sidebar-content =
@@ -532,6 +559,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Skjul bokmerkeverktøylinje
            *[other] Vis bokmerkeverktøylinje
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Skjul bokmerkeverktøylinje
+           *[other] Vis bokmerkeverktøylinje
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Vis bokmerkeverktøylinjen
+           *[other] Skjul bokmerkeverktøylinjen
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +581,8 @@ bookmarks-search =
     .label = Søk i bokmerker
 bookmarks-tools =
     .label = Verktøy for bokmerker
+bookmarks-bookmark-edit-panel =
+    .label = Rediger dette bokmerket
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +596,9 @@ bookmarks-toolbar-placeholder =
     .title = Elementer i bokmerkelinje
 bookmarks-toolbar-placeholder-button =
     .label = Elementer i bokmerkelinje
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Bokmerk gjeldende fane
 
 ## Library Panel items
 
@@ -564,7 +608,8 @@ library-bookmarks-bookmark-this-page =
     .label = Bokmerk denne siden
 library-bookmarks-bookmark-edit =
     .label = Rediger dette bokmerket
-library-recent-activity-label = Nylig aktivitet
+library-recent-activity-title =
+    .value = Nylig aktivitet
 
 ## More items
 

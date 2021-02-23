@@ -115,6 +115,14 @@ info-known-breaches-found =
        *[other] Datuen inguruko urratzek zure informazioa agerian utzi dute
     }
 # This string is displayed after a large numeral that indicates the total number
+# of known data breaches that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-known-breaches-resolved =
+    { $count ->
+        [one] Urratze ezaguna ebatzitako gisa markatu da
+       *[other] Urratze ezagunak ebatzitako gisa markatu dira
+    }
+# This string is displayed after a large numeral that indicates the total number
 # of exposed passwords. Don’t add $count to
 # your localization, because it would result in the number showing twice.
 info-exposed-passwords-found =
@@ -122,20 +130,38 @@ info-exposed-passwords-found =
         [one] Pasahitz agerian utzi da datuen inguruko urratze guztien artean
        *[other] Pasahitz agerian utzi dira datuen inguruko urratze guztien artean
     }
+# This string is displayed after a large numeral that indicates the total number
+# of exposed passwords that are marked as resolved by the user. Don’t add $count
+# to your localization, because it would result in the number showing twice.
+info-exposed-passwords-resolved =
+    { $count ->
+        [one] Pasahitza ebatzi gabeko urratzeetan agerian utzi da
+       *[other] Pasahitzak ebatzi gabeko urratzeetan agerian utzi dira
+    }
 monitor-no-breaches-title = Berri onak!
 monitor-no-breaches-description = Ez zaude datu-urratze ezagunetan. Hau aldatuko balitz, jakinarazi egingo dizugu.
 monitor-view-report-link = Ikusi txostena
     .title = Argitu urratzeak { -monitor-brand-short-name }(e)n
 monitor-breaches-unresolved-title = Ebatzi zure datu-urratzeak
+monitor-breaches-unresolved-description = Urratzearen xehetasunak berrikusi eta zure informazioa babesteko urratsak hartu ondoren, urratzeak ebatzitako gisa marka ditzakezu.
 monitor-manage-breaches-link = Kudeatu datu-urratzeak
     .title = Kudeatu datu-urratzeak { -monitor-brand-short-name }(e)n
+monitor-breaches-resolved-title = Zoragarri! Ezagutzen diren datu-urratze guztiak ebatzi dituzu.
 monitor-breaches-resolved-description = Zure helbide elektronikoa datu-urratze berriren batean agertuko balitz, jakinarazi egingo dizugu.
+# Variables:
+# $numBreachesResolved (Number) - Number of breaches marked as resolved by the user on Monitor.
+# $numBreaches (Number) - Number of breaches in which a user's data was involved, detected by Monitor.
+monitor-partial-breaches-title =
+    { $numBreaches ->
+       *[other] { $numBreaches } / { $numBreachesResolved } datu-urratze ebatzitako gisa markatu dira
+    }
 # Variables:
 # $percentageResolved (Number) - Percentage of breaches marked as resolved by a user on Monitor.
 monitor-partial-breaches-percentage = %{ $percentageResolved } osatuta
 monitor-partial-breaches-motivation-title-start = Hasiera ona!
 monitor-partial-breaches-motivation-title-middle = Eutsi horri!
 monitor-partial-breaches-motivation-title-end = Ia eginda! Eutsi horri.
+monitor-partial-breaches-motivation-description = Ebatzi { -monitor-brand-short-name }(e)n gelditzen zaizkizun datu-urratzeak.
 monitor-resolve-breaches-link = Ebatzi datu-urratzeak
     .title = Ebatzi { -monitor-brand-short-name }-eko datu-urratzeak
 

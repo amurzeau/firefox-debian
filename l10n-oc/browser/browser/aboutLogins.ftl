@@ -84,6 +84,7 @@ login-item-new-login-title = Crear un identificant novèl
 login-item-edit-button = Modificar
 about-logins-login-item-remove-button = Suprimir
 login-item-origin-label = Adreça web
+login-item-tooltip-message = Asseguratz-vos que correspond a l’adreça exacta del site web ont vos autentificatz.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Nom d'utilizaire
@@ -269,6 +270,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Document CSV
        *[other] Fichièr CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Document TSV
+       *[other] Fichièr TSV
+    }
 
 ##
 ## Variables:
@@ -292,3 +300,20 @@ about-logins-import-dialog-items-error =
        *[other] <span>Errors :</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(pas importats)</span>
     }
 about-logins-import-dialog-done = Acabat
+about-logins-import-dialog-error-title = Error d’importacion
+about-logins-import-dialog-error-conflicting-values-title = Mantuna valor en conflicte per un identificant
+about-logins-import-dialog-error-conflicting-values-description = Per exemple : mantun nom d’utilizaire, senhals, URL, etc. per un meteis identificant.
+about-logins-import-dialog-error-file-format-title = Problèma de format de fichièr
+about-logins-import-dialog-error-file-format-description = Entèstas de colomnas incorrèctas o absentas. Asseguratz-vos que lo fichièr contenga las colomnas pel nom d’utilizaire, lo senhal e l’URL.
+about-logins-import-dialog-error-file-permission-title = Lectura del fichièr impossibla
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } possedís pas la permission per legir aqueste fichièr. Ensajatz de cambiar las permissions del fichièr.
+about-logins-import-dialog-error-unable-to-read-title = Analisi impossibla del fichièr
+about-logins-import-dialog-error-unable-to-read-description = Asseguratz-vos d’aver seleccionat un fichièr CSV o TSV.
+about-logins-import-dialog-error-no-logins-imported = Cap d’identificant pas importat
+about-logins-import-dialog-error-learn-more = Ne saber mai
+about-logins-import-dialog-error-try-again = Tornar ensajar…
+about-logins-import-dialog-error-cancel = Anullar
+
+## Logins import report page
+
+about-logins-import-report-page-title = Resumit d’importacion

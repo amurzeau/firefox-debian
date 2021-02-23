@@ -84,6 +84,7 @@ login-item-new-login-title = Neue Zugangsdaten hinzufügen
 login-item-edit-button = Bearbeiten
 about-logins-login-item-remove-button = Entfernen
 login-item-origin-label = Adresse der Website
+login-item-tooltip-message = Stellen Sie sicher, dass dies genau mit der Adresse der Website übereinstimmt, auf der Sie sich anmelden.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Benutzername
@@ -269,6 +270,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV-Dokument
        *[other] CSV-Datei
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] TSV-Dokument
+       *[other] TSV-Datei
+    }
 
 ##
 ## Variables:
@@ -296,3 +304,20 @@ about-logins-import-dialog-items-error =
        *[other] <span>Fehler:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(nicht importiert)</span>
     }
 about-logins-import-dialog-done = Fertig
+about-logins-import-dialog-error-title = Fehler beim Import
+about-logins-import-dialog-error-conflicting-values-title = Mehrere widersprüchliche Werte für Zugangsdaten
+about-logins-import-dialog-error-conflicting-values-description = Zum Beispiel: mehrere Benutzernamen, Passwörter, Website-Adressen usw. für dieselben Zugangsdaten.
+about-logins-import-dialog-error-file-format-title = Dateiformatproblem
+about-logins-import-dialog-error-file-format-description = Falsche oder fehlende Spaltenüberschriften. Bitte stellen Sie sicher, dass die Datei Spalten für Benutzername, Passwort und Website-Adresse enthält.
+about-logins-import-dialog-error-file-permission-title = Datei konnte nicht gelesen werden
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } hat keine Berechtigung zum Lesen der Datei. Versuchen Sie, die Dateiberechtigungen zu ändern.
+about-logins-import-dialog-error-unable-to-read-title = Datei konnte nicht verarbeitet werden
+about-logins-import-dialog-error-unable-to-read-description = Stellen Sie sicher, dass eine CSV- oder TSV-Datei ausgewählt ist.
+about-logins-import-dialog-error-no-logins-imported = Es wurden keine Zugangsdaten importiert
+about-logins-import-dialog-error-learn-more = Weitere Informationen
+about-logins-import-dialog-error-try-again = Erneut versuchen…
+about-logins-import-dialog-error-cancel = Abbrechen
+
+## Logins import report page
+
+about-logins-import-report-page-title = Import-Zusammenfassungsbericht

@@ -17,6 +17,20 @@ appmenuitem-new-window =
     .label = Yeni pencere
 appmenuitem-new-private-window =
     .label = Yeni gizli pencere
+appmenuitem-passwords =
+    .label = Parolalar
+appmenuitem-extensions-and-themes =
+    .label = Eklentiler ve temalar
+appmenuitem-find-in-page =
+    .label = Sayfada bul…
+appmenuitem-more-tools =
+    .label = Daha fazla araç
+appmenuitem-exit =
+    .label = Çık
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = Ayarlar
 
 ## Zoom and Fullscreen Controls
 
@@ -42,3 +56,111 @@ whatsnew-panel-header = Yeni neler var?
 whatsnew-panel-footer-checkbox =
     .label = Yeni özellikleri bana bildir
     .accesskey = ö
+
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
+## "Enable Profiler Menu Button".
+
+profiler-popup-title =
+    .value = { -profiler-brand-name }
+profiler-popup-reveal-description-button =
+    .aria-label = Daha fazla bilgi göster
+profiler-popup-description-title =
+    .value = Kaydet, analiz et, paylaş
+profiler-popup-description = Ekibinizle paylaşabileceğiniz profiller yayımlayarak performans sorunları üzerinde birlikte çalışın.
+profiler-popup-learn-more = Daha fazla bilgi alın
+profiler-popup-settings =
+    .value = Ayarlar
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings = Ayarları düzenle…
+profiler-popup-disabled = Profilleyici şu anda devre dışı. Büyük olasılıkla açık bir gizli gezinti penceresi var.
+profiler-popup-recording-screen = Kaydediliyor…
+# The profiler presets list is generated elsewhere, but the custom preset is defined
+# here only.
+profiler-popup-presets-custom =
+    .label = Özel
+profiler-popup-start-recording-button =
+    .label = Kaydetmeye başla
+profiler-popup-discard-button =
+    .label = Sil
+profiler-popup-capture-button =
+    .label = Yakala
+profiler-popup-start-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧1
+       *[other] Ctrl+Shift+1
+    }
+profiler-popup-capture-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧2
+       *[other] Ctrl+Shift+2
+    }
+
+## History panel
+
+appmenu-manage-history =
+    .label = Geçmişi yönet
+appmenu-reopen-all-tabs = Tüm sekmeleri yeniden aç
+appmenu-reopen-all-windows = Tüm pencereleri yeniden aç
+
+## Help panel
+
+appmenu-help-header =
+    .title = { -brand-shorter-name } yardımı
+appmenu-about =
+    .label = { -brand-shorter-name } hakkında
+    .accesskey = h
+appmenu-help-product =
+    .label = { -brand-shorter-name } yardımı
+    .accesskey = m
+appmenu-help-show-tour =
+    .label = { -brand-shorter-name } turu
+    .accesskey = u
+appmenu-help-import-from-another-browser =
+    .label = Başka bir tarayıcıdan içe aktar…
+    .accesskey = B
+appmenu-help-keyboard-shortcuts =
+    .label = Klavye kısayolları
+    .accesskey = K
+appmenu-get-help =
+    .label = Yardım al
+    .accesskey = Y
+appmenu-help-troubleshooting-info =
+    .label = Sorun giderme bilgileri
+    .accesskey = b
+appmenu-help-taskmanager =
+    .label = Görev yöneticisi
+appmenu-help-feedback-page =
+    .label = Geri bildirim gönder…
+    .accesskey = G
+
+## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-safe-mode-without-addons =
+    .label = Eklentileri devre dışı bırakıp başlat…
+    .accesskey = E
+appmenu-help-safe-mode-with-addons =
+    .label = Eklentileri etkinleştirip yeniden başlat
+    .accesskey = E
+
+## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-report-deceptive-site =
+    .label = Aldatıcı siteyi ihbar et…
+    .accesskey = A
+appmenu-help-not-deceptive =
+    .label = Bu site aldatıcı değil…
+    .accesskey = d
+
+##
+
+appmenu-help-check-for-update =
+    .label = Güncellemeleri denetle…
+
+## More Tools
+
+appmenu-customizetoolbar =
+    .label = Araç çubuğunu özelleştir…
+appmenu-developer-tools-subheader = Tarayıcı araçları

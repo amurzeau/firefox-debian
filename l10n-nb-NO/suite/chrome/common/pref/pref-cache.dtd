@@ -29,3 +29,9 @@
 <!ENTITY prefetchTitle.label             "Forhåndslasting av lenker">
 <!ENTITY enablePrefetch.label            "Forhåndsnedlast nettsider når ingenting annet lastes">
 <!ENTITY enablePrefetch.accesskey        "d">
+
+<!ENTITY debugCache.label                "Feilsøking">
+<!ENTITY debugEnableMemCache.label       "Slå på minnehurtiglager">
+<!ENTITY debugEnableMemCache.accesskey   "A">
+<!ENTITY debugEnableDiskCache.label      "Slå på diskhurtiglager">
+<!ENTITY debugEnableDiskCache.accesskey  "d">

@@ -9,6 +9,47 @@
 # NOTE: For Engineers, please don't re-use these strings outside of the menubar.
 
 
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = Servicios
+menu-application-hide-this =
+    .label = Celar { -brand-shorter-name }
+menu-application-hide-other =
+    .label = Celar le alteres
+menu-application-show-all =
+    .label = Monstrar toto
+menu-application-touch-bar =
+    .label = Personalisar le barra tactile…
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] Exir
+           *[other] Quitar
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] E
+           *[other] Q
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = Quitar { -brand-shorter-name }
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = Exir de { -brand-shorter-name }
+menu-about =
+    .label = A proposito de { -brand-shorter-name }
+    .accesskey = p
+
 ## File Menu
 
 menu-file =
@@ -166,6 +207,8 @@ menu-history-undo-menu =
     .label = Schedas claudite recentemente
 menu-history-undo-window-menu =
     .label = Fenestras claudite recentemente
+menu-history-reopen-all-tabs = Reaperir tote le schedas
+menu-history-reopen-all-windows = Reaperir tote le fenestras
 
 ## Bookmarks Menu
 
@@ -243,6 +286,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = Adjuta
     .accesskey = A
@@ -258,9 +319,14 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Claves de accesso directe
     .accesskey = C
+menu-get-help =
+    .label = Obtener adjuta
+    .accesskey = a
 menu-help-troubleshooting-info =
     .label = Informationes de diagnostico
     .accesskey = I
+menu-help-taskmanager =
+    .label = Gestor de activitate
 menu-help-feedback-page =
     .label = Submitter tu opinion…
     .accesskey = S
@@ -278,3 +344,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Iste sito non es fraudulente…
     .accesskey = d
+menu-help-check-for-update =
+    .label = Verificar actualisationes…
+    .accesskey = V

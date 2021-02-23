@@ -13,7 +13,7 @@ change-device-password-window =
 # Variables:
 # $tokenName (String) - Security device of the change password dialog
 change-password-token = Sigurnosni uređaj: { $tokenName }
-change-password-old = Trenutna lozinka:
+change-password-old = Trenutačna lozinka:
 change-password-new = Nova lozinka:
 change-password-reenter = Ponovo upiši novu lozinku:
 
@@ -23,6 +23,12 @@ reset-password-window =
     .title = Poništi glavnu lozinku
     .style = width: 40em
 pippki-failed-pw-change = Nije moguće promijeniti lozinku.
+pippki-incorrect-pw = Nisi upisao/la ispravnu trenutačnu lozinku. Pokušaj ponovo.
+pippki-pw-change-ok = Lozinka uspješno promijenjena.
+pippki-pw-empty-warning = Tvoje spremljene lozinke i privatni ključevi neće biti zaštićeni.
+pippki-pw-erased-ok = Lozinka je izbrisana. { pippki-pw-empty-warning }
+pippki-pw-not-wanted = Upozorenje! Odabrano je da se ne koristi lozinka. { pippki-pw-empty-warning }
+pippki-pw-change2empty-in-fips-mode = Trenutačno si u FIPS modusu. FIPS zahtijeva nepraznu lozinku.
 
 ## Reset Primary Password dialog
 

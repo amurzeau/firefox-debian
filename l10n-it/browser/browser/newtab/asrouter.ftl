@@ -219,6 +219,7 @@ cfr-doorhanger-cryptominers-description = La tua privacy è importante. Adesso {
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
 #   $date (String) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading = { -brand-short-name } ha bloccato oltre <b>{ $blockedCount }</b> elementi traccianti da { $date }.
+cfr-doorhanger-milestone-heading2 = { -brand-short-name } ha bloccato oltre <b>{ $blockedCount }</b> elementi traccianti da { DATETIME($date, month: "long", year: "numeric") }.
 cfr-doorhanger-milestone-ok-button = Visualizza tutto
   .accesskey = V
 
@@ -301,3 +302,8 @@ cfr-whatsnew-supercookies-body = I siti web possono associare al tuo browser un 
 
 cfr-whatsnew-bookmarking-header = Migliore gestione dei segnalibri
 cfr-whatsnew-bookmarking-body = Tenere traccia dei tuoi siti preferiti è ancora più semplice. { -brand-short-name } ora ricorda la tua posizione preferita per salvare i segnalibri, visualizza automaticamente la barra dei segnalibri quando apri una nuova scheda e fornisce rapido accesso agli altri segnalibri attraverso una cartella nella barra degli strumenti.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Protezione completa contro il tracciamento intersito tramite cookie
+cfr-whatsnew-cross-site-tracking-body = Ora puoi scegliere una protezione più estesa contro il tracciamento effettuato per mezzo di cookie. { -brand-short-name} può isolare le attività e i dati del sito in cui ti trovi, impedendo che le informazioni salvate nel browser vengano condivise tra siti diversi.

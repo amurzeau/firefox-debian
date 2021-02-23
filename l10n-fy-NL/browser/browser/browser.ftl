@@ -346,6 +346,11 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Slute
 
+## Tab actions
+
+browser-tab-audio-playing = Wurdt ôfspile
+browser-tab-audio-muted = Lûd út
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,12 +509,26 @@ fullscreen-exit-mac-button = Folslein skerm ferlitte (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> hat de kontrôle oer jo oanwizer. Druk op Esc om de kontrôle wer oer te nimmen.
 pointerlock-warning-no-domain = Dit dokumint hat de kontrôle oer jo oanwizer. Druk op Esc om de kontrôle wer oer te nimmen.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>In part fan dizze side is ferûngelokke.</strong> Tsjinje in rapport yn om { -brand-product-name } te ynformearjen oer dit probleem en it rapper oplost te krijen.
+crashed-subframe-learnmore =
+    .label = Mear ynfo
+    .accesskey = M
+crashed-subframe-submit =
+    .label = Rapport ferstjoere
+    .accesskey = s
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Alle blêdwizers toane
 bookmarks-recent-bookmarks =
     .value = Resint oanmakke blêdwizers
+bookmarks-manage-bookmarks =
+    .label = Blêdwizers beheare
+bookmarks-recent-bookmarks-panel =
+    .value = Resinte blêdwizers
 bookmarks-toolbar-chevron =
     .tooltiptext = Mear blêdwizers toane
 bookmarks-sidebar-content =
@@ -532,6 +551,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Blêdwizerarkbalke ferstopje
            *[other] Blêdwizerarkbalke werjaan
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Blêdwizerarkbalke ferstopje
+           *[other] Blêdwizerarkbalke werjaan
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Blêdwizerarkbalke ferstopje
+           *[other] Blêdwizerarkbalke toane
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +573,8 @@ bookmarks-search =
     .label = Blêdwizers trochsykje
 bookmarks-tools =
     .label = Blêdwizerark
+bookmarks-bookmark-edit-panel =
+    .label = Dizze blêdwizer bewurkje
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +588,9 @@ bookmarks-toolbar-placeholder =
     .title = Blêdwizerarkbalke-ûnderdiel
 bookmarks-toolbar-placeholder-button =
     .label = Blêdwizerarkbalke-ûnderdiel
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Blêdwizer foar aktuele ljepblêd meitsje
 
 ## Library Panel items
 
@@ -564,7 +600,8 @@ library-bookmarks-bookmark-this-page =
     .label = Blêdwizer foar dizze side meitsje
 library-bookmarks-bookmark-edit =
     .label = Dizze blêdwizer bewurkje
-library-recent-activity-label = Resinte aktiviteit
+library-recent-activity-title =
+    .value = Resinte aktiviteit
 
 ## More items
 

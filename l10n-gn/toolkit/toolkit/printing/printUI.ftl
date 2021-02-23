@@ -17,14 +17,6 @@ printui-page-range-custom = Momba’epyre
 printui-page-range-label = Kuatiarogue
 printui-page-range-picker =
     .aria-label = Eiporavo kuatiarogue peteĩva
-printui-page-custom-range =
-    .aria-label = Emoinge kuatiarogue peteĩva momba’epyre
-# This label is displayed before the first input field indicating
-# the start of the range to print.
-printui-range-start = Re
-# This label is displayed between the input fields indicating
-# the start and end page of the range to print.
-printui-range-end = g̃uarã
 printui-page-custom-range-input =
     .aria-label = Emoinge kuatiarogue peteĩva momba’epyre
     .placeholder = p.ej. 2-6, 9, 12-16
@@ -47,10 +39,16 @@ printui-scale-pcent = Jupiha
 # Section title (noun) for the two-sided print options
 printui-two-sided-printing = Mokõivéva tova ñemonguatia
 printui-duplex-checkbox = Mokõive gotyo monguatia
+printui-two-sided-printing-off = Mboguepyre
+# Flip the page on the side (like a book).
+printui-two-sided-printing-side-edge = Embojere pe tembe’y ykegua
+# Flip the page on the top (like a vertical calendar).
+printui-two-sided-printing-top-edge = Embojere pe tembe’y yvategua
 # Section title for miscellaneous print options
 printui-options = Poravorã
 printui-headers-footers-checkbox = Emongutia myakãha ha kuatiarogue guy gotyo
 printui-backgrounds-checkbox = Tugua ñembokuatia
+printui-selection-checkbox = Embokuatia jeporavo
 printui-color-mode-label = Sa’y reko
 printui-color-mode-color = Sa’y
 printui-color-mode-bw = Morotĩ ha hũ
@@ -58,7 +56,6 @@ printui-margins = Mbokoraha
 printui-margins-default = Ijypykue
 printui-margins-min = Michĩvéva
 printui-margins-none = Avave
-printui-margins-custom = Ñemomba’epyre
 printui-margins-custom-inches = Momba’epyre (pulgada)
 printui-margins-custom-top = Yvatevéva
 printui-margins-custom-top-inches = Tuichavéva (pulgada)
@@ -82,6 +79,7 @@ printui-pages-per-sheet = Kuatiarogue kuatiápe
 # This is shown next to the Print button with an indefinite loading spinner
 # when the user prints a page and it is being sent to the printer.
 printui-print-progress-indicator = Ñemonguatia…
+printui-print-progress-indicator-saving = Oñongatuhína…
 
 ## Paper sizes that may be supported by the Save to PDF destination:
 

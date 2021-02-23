@@ -338,6 +338,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Đóng
 
+## Tab actions
+
+browser-tab-audio-playing = Đang phát
+browser-tab-audio-muted = Đã tắt tiếng
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = ĐANG PHÁT
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = ĐÃ TẮT TIẾNG
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = TỰ ĐỘNG PHÁT BỊ CHẶN
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = HÌNH TRONG HÌNH
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -496,11 +509,25 @@ fullscreen-exit-mac-button = Thoát toàn màn hình (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> có quyền điều khiển con trỏ của bạn. Ấn Esc để lấy lại quyền điều khiển.
 pointerlock-warning-no-domain = Trang này có quyền điều khiển con trỏ của bạn. Ấn Esc để lấy lại quyền điều khiển.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Một phần của trang này đã bị vớ.</strong> Để { -brand-product-name } biết về lỗi này và sửa nó nhanh hơn, vui lòng báo cáo nó.
+crashed-subframe-learnmore =
+    .label = Tìm hiểu thêm
+    .accesskey = L
+crashed-subframe-submit =
+    .label = Gửi báo cáo
+    .accesskey = S
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Xem tất cả dấu trang
 bookmarks-recent-bookmarks =
+    .value = Dấu trang gần đây
+bookmarks-manage-bookmarks =
+    .label = Quản lý dấu trang
+bookmarks-recent-bookmarks-panel =
     .value = Dấu trang gần đây
 bookmarks-toolbar-chevron =
     .tooltiptext = Hiện thêm các dấu trang
@@ -524,6 +551,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Ẩn thanh công cụ dấu trang
            *[other] Hiển thị thanh công cụ dấu trang
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Ẩn thanh công cụ dấu trang
+           *[other] Hiển thị thanh công cụ dấu trang
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Ẩn thanh dấu trang
+           *[other] Hiển thị thanh dấu trang
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -534,6 +573,8 @@ bookmarks-search =
     .label = Tìm kiếm dấu trang
 bookmarks-tools =
     .label = Công cụ đánh dấu trang
+bookmarks-bookmark-edit-panel =
+    .label = Chỉnh sửa dấu trang này
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -547,6 +588,9 @@ bookmarks-toolbar-placeholder =
     .title = Các mục của thanh dấu trang
 bookmarks-toolbar-placeholder-button =
     .label = Các mục của thanh dấu trang
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Đánh dấu thẻ hiện tại
 
 ## Library Panel items
 
@@ -556,6 +600,8 @@ library-bookmarks-bookmark-this-page =
     .label = Đánh dấu trang này
 library-bookmarks-bookmark-edit =
     .label = Chỉnh sửa dấu trang này
+library-recent-activity-title =
+    .value = Hoạt động gần đây
 
 ## More items
 

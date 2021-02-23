@@ -83,6 +83,7 @@ login-item-new-login-title = 새 로그인 만들기
 login-item-edit-button = 편집
 about-logins-login-item-remove-button = 삭제
 login-item-origin-label = 웹 사이트 주소
+login-item-tooltip-message = 로그인 한 웹 사이트의 정확한 주소와 일치하는지 확인하세요.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = 사용자 이름
@@ -262,6 +263,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV 문서
        *[other] CSV 파일
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] TSV 문서
+       *[other] TSV 파일
+    }
 
 ##
 ## Variables:
@@ -285,3 +293,20 @@ about-logins-import-dialog-items-error =
        *[other] <span>오류:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(가져오지 않음)</span>
     }
 about-logins-import-dialog-done = 완료
+about-logins-import-dialog-error-title = 가져오기 오류
+about-logins-import-dialog-error-conflicting-values-title = 하나의 로그인에 대해 여러 충돌 값
+about-logins-import-dialog-error-conflicting-values-description = 예: 하나의 로그인에 대해 여러 사용자 이름, 비밀번호, URL 등.
+about-logins-import-dialog-error-file-format-title = 파일 형식 문제
+about-logins-import-dialog-error-file-format-description = 열 헤더가 잘못되었거나 누락되었습니다. 파일에 사용자 이름, 비밀번호 및 URL 열이 포함되어 있는지 확인하세요.
+about-logins-import-dialog-error-file-permission-title = 파일을 읽을 수 없음
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name }에 파일을 읽을 수 있는 권한이 없습니다. 파일 권한을 변경해보세요.
+about-logins-import-dialog-error-unable-to-read-title = 파일을 구문 분석 할 수 없음
+about-logins-import-dialog-error-unable-to-read-description = CSV 또는 TSV 파일을 선택했는지 확인하세요.
+about-logins-import-dialog-error-no-logins-imported = 가져온 로그인이 없음
+about-logins-import-dialog-error-learn-more = 더 알아보기
+about-logins-import-dialog-error-try-again = 다시 시도…
+about-logins-import-dialog-error-cancel = 취소
+
+## Logins import report page
+
+about-logins-import-report-page-title = 가져오기 요약 보고서

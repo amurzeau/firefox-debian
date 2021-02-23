@@ -23,11 +23,13 @@ inactive-css-not-flex-item = <strong>{ $property }</strong> không có tác dụ
 inactive-css-not-flex-container = <strong>{ $property }</strong> không có tác dụng đối với phần tử này vì nó không phải là ngăn chứa flex.
 inactive-css-not-inline-or-tablecell = <strong>{ $property }</strong> không có tác dụng đối với phần tử này vì nó không phải là phần tử nội tuyến hoặc ô bảng.
 inactive-css-property-because-of-display = <strong>{ $property }</strong> không ảnh hưởng đến yếu tố này vì nó có hiển thị của <strong>{ $display }</strong>.
-inactive-css-not-display-block-on-floated = Giá trị <strong>display</strong> đã được thay đổi bởi máy thành <strong>block</strong> vì phần tử là <strong>floated<strong>.
+inactive-css-not-display-block-on-floated = Giá trị <strong>display</strong> đã được thay đổi bởi máy thành <strong>block</strong> vì phần tử là <strong>floated</strong>.
 inactive-css-property-is-impossible-to-override-in-visited = Nó không thể ghi đè <strong>{ $property }</strong> do hạn chế <strong>:visited</strong>.
 inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> không có tác dụng đối với phần tử này vì nó không phải là phần tử được định vị.
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> không ảnh hưởng đến phần tử này vì <strong>overflow:hidden</strong> không được đặt.
 inactive-outline-radius-when-outline-style-auto-or-none = <strong>{ $property }</strong> không ảnh hưởng đến phần tử này vì <strong>outline-style</strong> của nó là <strong>auto</strong> hoặc <strong>none</strong>.
+inactive-css-not-for-internal-table-elements = <strong>{ $property }</strong> không ảnh hưởng đến các phần tử nội bộ của bảng.
+inactive-css-not-table = <strong>{ $property }</strong> không ảnh hưởng đến phần tử này vì nó không phải là một bảng.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -47,6 +49,7 @@ inactive-css-not-display-block-on-floated-fix = Hãy thử xóa <strong>float</s
 inactive-css-position-property-on-unpositioned-box-fix = Hãy thử đặt thuộc tính <strong>position</strong> của nó thành một thứ khác ngoài <strong>static</strong>. { learn-more }
 inactive-text-overflow-when-no-overflow-fix = Hãy thử thêm <strong>overflow:hidden</strong>. { learn-more }
 inactive-outline-radius-when-outline-style-auto-or-none-fix = Thử thay đổi thuộc tính <strong>outline-style</strong> của nó thành một thứ khác ngoài <strong>auto</strong> hoặc <strong>none</strong>. { learn-more }
+inactive-css-not-table-fix = Hãy thử thêm <strong>display:table</strong> hoặc <strong>display:inline-table</strong>. { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers
 ## we display an icon. When this icon is hovered this message is displayed to explain why

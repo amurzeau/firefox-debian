@@ -346,6 +346,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Kapat
 
+## Tab actions
+
+browser-tab-audio-playing = Oynatılıyor
+browser-tab-audio-muted = Ses kapatıldı
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = OYNATILIYOR
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = SESSİZ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = OTOMATİK OYNATMA ENGELLENDİ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = GÖRÜNTÜ İÇİNDE GÖRÜNTÜ
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,12 +517,26 @@ fullscreen-exit-mac-button = Tam ekrandan çık (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> işaretçinizi kontrol ediyor. Kontrolü geri almak için Esc tuşuna basın.
 pointerlock-warning-no-domain = Bu belge işaretçinizi kontrol ediyor. Kontrolü geri almak için Esc tuşuna basın.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Bu sayfanın bir kısmı çöktü.</strong> Bize rapor göndererek sorunu bildirirseniz { -brand-product-name } tarayıcınızı daha hızlı düzeltebiliriz.
+crashed-subframe-learnmore =
+    .label = Daha fazla bilgi al
+    .accesskey = b
+crashed-subframe-submit =
+    .label = Rapor gönder
+    .accesskey = R
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Tüm yer imlerini göster
 bookmarks-recent-bookmarks =
     .value = Yer imlerine yeni eklenenler
+bookmarks-manage-bookmarks =
+    .label = Yer imlerini yönet
+bookmarks-recent-bookmarks-panel =
+    .value = Son yer imleri
 bookmarks-toolbar-chevron =
     .tooltiptext = Daha fazla yer imi göster
 bookmarks-sidebar-content =
@@ -532,6 +559,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Yer imleri kenar çubuğunu gizle
            *[other] Yer imleri araç çubuğunu göster
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Yer imleri kenar çubuğunu gizle
+           *[other] Yer imleri araç çubuğunu göster
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Yer imleri araç çubuğunu gizle
+           *[other] Yer imleri araç çubuğunu göster
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +581,8 @@ bookmarks-search =
     .label = Yer imlerinde ara
 bookmarks-tools =
     .label = Yer imi araçları
+bookmarks-bookmark-edit-panel =
+    .label = Bu yer imini düzenle
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -564,7 +605,8 @@ library-bookmarks-bookmark-this-page =
     .label = Bu sayfayı yer imlerine ekle
 library-bookmarks-bookmark-edit =
     .label = Bu yer imini düzenle
-library-recent-activity-label = Son etkinlikler
+library-recent-activity-title =
+    .value = Son etkinlikler
 
 ## More items
 

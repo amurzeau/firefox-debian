@@ -3,6 +3,53 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = Storitve
+menu-application-hide-this =
+    .label = Skrij { -brand-shorter-name }
+menu-application-hide-other =
+    .label = Skrij ostale
+menu-application-show-all =
+    .label = Prikaži vse
+menu-application-touch-bar =
+    .label = Prilagodi vrstico na dotik …
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] Izhod
+           *[other] Izhod
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] h
+           *[other] I
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = Izhod iz { -brand-shorter-name }a
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = Izhod iz { -brand-shorter-name }a
+menu-about =
+    .label = O { -brand-shorter-name }u
+    .accesskey = O
+
 ## File Menu
 
 menu-file =
@@ -160,6 +207,8 @@ menu-history-undo-menu =
     .label = Nedavno zaprti zavihki
 menu-history-undo-window-menu =
     .label = Nedavno zaprta okna
+menu-history-reopen-all-tabs = Ponovno odpri vse zavihke
+menu-history-reopen-all-windows = Ponovno odpri vsa okna
 
 ## Bookmarks Menu
 
@@ -237,6 +286,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = Pomoč
     .accesskey = M
@@ -255,6 +322,8 @@ menu-help-keyboard-shortcuts =
 menu-help-troubleshooting-info =
     .label = Odpravljanje težav
     .accesskey = R
+menu-help-taskmanager =
+    .label = Upravitelj opravil
 menu-help-feedback-page =
     .label = Povratne informacije …
     .accesskey = v
@@ -272,3 +341,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = To ni zavajajoča stran …
     .accesskey = z
+menu-help-check-for-update =
+    .label = Poišči posodobitve …
+    .accesskey = P

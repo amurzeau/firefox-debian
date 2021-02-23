@@ -84,6 +84,7 @@ login-item-new-login-title = crear una nueva credencial
 login-item-edit-button = Editar
 about-logins-login-item-remove-button = Eliminar
 login-item-origin-label = Dirección del sitio web
+login-item-tooltip-message = Asegúrate de que coincide con la dirección exacta del sitio web al que te conectas.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Nombre de usuario
@@ -269,6 +270,13 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] Documento CSV
        *[other] Archivo CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] Documento TSV
+       *[other] Archivo TSV
+    }
 
 ##
 ## Variables:
@@ -296,3 +304,20 @@ about-logins-import-dialog-items-error =
        *[other] <span>Errores:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(no importadas)</span>
     }
 about-logins-import-dialog-done = Hecho
+about-logins-import-dialog-error-title = Error de importación
+about-logins-import-dialog-error-conflicting-values-title = Múltiples valores en conflicto para una credencial
+about-logins-import-dialog-error-conflicting-values-description = Por ejemplo: varios nombres de usuario, contraseñas, URLs, etc. para una credencial.
+about-logins-import-dialog-error-file-format-title = Problema de formato de archivo
+about-logins-import-dialog-error-file-format-description = Encabezados de columna incorrectos o faltantes. Asegúrese de que el archivo incluya columnas para nombre de usuario, contraseña y URL.
+about-logins-import-dialog-error-file-permission-title = No se pudo leer el archivo
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } no tiene permiso para leer el archivo. Intenta cambiar los permisos del archivo.
+about-logins-import-dialog-error-unable-to-read-title = No se pudo procesar el archivo
+about-logins-import-dialog-error-unable-to-read-description = Asegúrate de haber seleccionado un archivo CSV o TSV.
+about-logins-import-dialog-error-no-logins-imported = No se importaron credenciales
+about-logins-import-dialog-error-learn-more = Aprender más
+about-logins-import-dialog-error-try-again = Volver a intentarlo…
+about-logins-import-dialog-error-cancel = Cancelar
+
+## Logins import report page
+
+about-logins-import-report-page-title = Importar informe de resumen

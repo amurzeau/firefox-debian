@@ -83,6 +83,7 @@ login-item-new-login-title = Жаңа логинді жасау
 login-item-edit-button = Түзету
 about-logins-login-item-remove-button = Өшіру
 login-item-origin-label = Веб-сайт адресі
+login-item-tooltip-message = Бұл сіз кірген веб-сайттың нақты адресіне сәйкес келетініне көз жеткізіңіз.
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = Пайдаланушы аты
@@ -182,9 +183,14 @@ about-logins-confirm-remove-all-dialog-title =
     { $count ->
        *[other] Барлық { $count } логинді өшіру керек пе?
     }
+about-logins-confirm-remove-all-sync-dialog-title =
+    { $count ->
+       *[other] { $count } логинді барлық құрылғылардан өшіру керек пе?
+    }
 about-logins-confirm-export-dialog-title = Логиндер және парольдерді экспорттау
 about-logins-confirm-export-dialog-message = Парольдеріңіз ашық, оқуға келетін мәтін ретінде сақталатын болады (мыс., BadP@ssw0rd) сондықтан экспортталған файлды аша алатын адам оларды көре алады.
 about-logins-confirm-export-dialog-confirm-button = Экспорттау…
+about-logins-alert-import-title = Импорт аяқталды
 confirm-discard-changes-dialog-title = Сақталмаған өзгерістерді тайдыру керек пе?
 confirm-discard-changes-dialog-message = Барлық сақталмаған өзгерістер жоғалады.
 confirm-discard-changes-dialog-confirm-button = Тайдыру
@@ -246,3 +252,30 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] CSV құжаты
        *[other] CSV файлы
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] TSV құжаты
+       *[other] TSV файлы
+    }
+
+##
+## Variables:
+##  $count (number) - The number of affected elements
+
+about-logins-import-dialog-title = Импорт аяқталды
+about-logins-import-dialog-done = Дайын
+about-logins-import-dialog-error-title = Импорттау қатесі
+about-logins-import-dialog-error-file-permission-title = Файлды оқу мүмкін емес
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } үшін файлды оқу рұқсаты жоқ. Файл рұқсаттарын өзгертіп көріңіз.
+about-logins-import-dialog-error-unable-to-read-title = Файлды талдау мүмкін емес
+about-logins-import-dialog-error-unable-to-read-description = CSV немесе TSV файлын таңдағаныңызға көз жеткізіңіз.
+about-logins-import-dialog-error-no-logins-imported = Логиндер импортталмады
+about-logins-import-dialog-error-learn-more = Көбірек білу
+about-logins-import-dialog-error-try-again = Қайталап көру…
+about-logins-import-dialog-error-cancel = Бас тарту
+
+## Logins import report page
+
+about-logins-import-report-page-title = Импорттаудың жиынтық есебі

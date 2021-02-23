@@ -302,6 +302,7 @@ identity-passive-loaded = Části této stránky nejsou zabezpečené (napříkl
 identity-active-loaded = Na této stránce jste ochranu zakázali.
 identity-weak-encryption = Tento server používá slabé šifrování.
 identity-insecure-login-forms = Přihlašovací údaje zadané na této stránce mohou být vyzrazeny.
+identity-https-only-connection-upgraded = (přepnuto na HTTPS)
 identity-https-only-label = Režim „pouze HTTPS“
 identity-https-only-dropdown-on =
     .label = Zapnuto
@@ -309,7 +310,15 @@ identity-https-only-dropdown-off =
     .label = Vypnuto
 identity-https-only-dropdown-off-temporarily =
     .label = Dočasně vypnuto
+identity-https-only-info-turn-on2 =
+    Pokud chcete, aby { -brand-short-name.gender ->
+        [masculine] { -brand-short-name } přepnul
+        [feminine] { -brand-short-name } přepnula
+        [neuter] { -brand-short-name } přepnulo
+       *[other] aplikace { -brand-short-name } přepnula
+    } spojení na HTTPS, kdykoliv je to možné, zapněte pro tento server režim „pouze HTTPS“.
 identity-https-only-info-turn-off2 = Pokud se zdá, že je stránka rozbitá, zkuste vypnout režim „pouze HTTPS“, aby se znovu načetla pomocí nezabezpečeného spojení HTTP.
+identity-https-only-info-no-upgrade = Nepodařilo se přepnout spojení z HTTP.
 identity-permissions =
     .value = Oprávnění
 identity-permissions-storage-access-header = Cross-site cookies
@@ -368,6 +377,19 @@ browser-window-restore-down-button =
     .tooltiptext = Obnovit z maximalizace
 browser-window-close-button =
     .tooltiptext = Zavřít
+
+## Tab actions
+
+browser-tab-audio-playing = Přehrávání
+browser-tab-audio-muted = Ztlumeno
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = PŘEHRÁVÁ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = ZTLUMENO
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = BLOKOVÁNO AUTO. PŘEHRÁVÁNÍ
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = OBRAZ V OBRAZE
 
 ## Bookmarks toolbar items
 
@@ -527,11 +549,31 @@ fullscreen-exit-mac-button = Ukončit režim celé obrazovky (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> má kontrolu nad vaším kurzorem. Pro odebrání kontroly stiskněte klávesu Esc.
 pointerlock-warning-no-domain = Tento dokument má kontrolu nad vaším kurzorem. Pro odebrání kontroly stiskněte klávesu Esc.
 
+## Subframe crash notification
+
+crashed-subframe-message =
+    <strong>Část této stránky spadla.</strong> Pokud chcete autorům { -brand-shorter-name.gender ->
+        [masculine] { -brand-product-name(case: "gen") }
+        [feminine] { -brand-product-name(case: "gen") }
+        [neuter] { -brand-product-name(case: "gen") }
+       *[other] aplikace { -brand-product-name }
+    } tento problém nahlásit pro zrychlení opravy, odešlete prosím hlášení.
+crashed-subframe-learnmore =
+    .label = Zjistit více
+    .accesskey = Z
+crashed-subframe-submit =
+    .label = Odeslat hlášení
+    .accesskey = d
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Zobrazit všechny záložky
 bookmarks-recent-bookmarks =
+    .value = Naposledy přidané
+bookmarks-manage-bookmarks =
+    .label = Správa záložek
+bookmarks-recent-bookmarks-panel =
     .value = Naposledy přidané
 bookmarks-toolbar-chevron =
     .tooltiptext = Zobrazí více záložek
@@ -555,6 +597,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Skrýt lištu záložek
            *[other] Zobrazit lištu záložek
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Skrýt lištu záložek
+           *[other] Zobrazit lištu záložek
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Skrýt lištu záložek
+           *[other] Zobrazit lištu záložek
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -565,6 +619,8 @@ bookmarks-search =
     .label = Hledat v záložkách
 bookmarks-tools =
     .label = Nástroje pro práci se záložkami
+bookmarks-bookmark-edit-panel =
+    .label = Upravit záložku
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -578,6 +634,9 @@ bookmarks-toolbar-placeholder =
     .title = Záložky nástrojové lišty
 bookmarks-toolbar-placeholder-button =
     .label = Záložky nástrojové lišty
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Přidat současný panel do záložek
 
 ## Library Panel items
 
@@ -587,7 +646,8 @@ library-bookmarks-bookmark-this-page =
     .label = Přidat stránku do záložek
 library-bookmarks-bookmark-edit =
     .label = Upravit záložku
-library-recent-activity-label = Nedávná aktivita
+library-recent-activity-title =
+    .value = Nedávná aktivita
 
 ## More items
 

@@ -157,7 +157,7 @@ urlbar-star-add-bookmark =
 ## Page Action Context Menu
 
 page-action-add-to-urlbar =
-    .label = Ouzhpennañ d'ar varenn chomlec'h
+    .label = Ouzhpennañ da varenn ar chomlec’hioù
 page-action-manage-extension =
     .label = Merañ an askouezh...
 page-action-remove-from-urlbar =
@@ -302,8 +302,8 @@ identity-https-only-dropdown-off =
     .label = Lazhet
 identity-https-only-dropdown-off-temporarily =
     .label = Lazhet e-pad nebeud amzer
-identity-https-only-info-turn-on2 = Gweredekait ar mod HTTPS-hepken evit al lec’hienn-mañ ma fell deoc’h vefe hizivaet ar c‘hennask gant { -brand-short-name } p'eo posupl.
-identity-https-only-info-turn-off2 = Ma seblant bezañ torret ar bajenn e c'hallit diweredekaat ar mod HTTPS-hepken evit ma vefe adkarget al lec'hienn gant HTTP diziogel.
+identity-https-only-info-turn-on2 = Gweredekait ar mod HTTPS hepken evit al lec’hienn-mañ ma fell deoc’h vefe hizivaet ar c‘hennask gant { -brand-short-name } p’eo posupl.
+identity-https-only-info-turn-off2 = Ma seblant bezañ torret ar bajenn e c’hallit diweredekaat ar mod HTTPS hepken evit ma vefe adkarget al lec’hienn gant HTTP diziogel.
 identity-https-only-info-no-upgrade = N'haller ket gwellaat ar c'hennask HTTP.
 identity-permissions =
     .value = Aotreoù
@@ -326,7 +326,7 @@ identity-description-weak-cipher-risk = Gallout a ra tud all sellet ouzh ho tito
 identity-description-active-blocked = Stanket eo bet gant { -brand-short-name } lodennoù arvarus er bajennad. <label data-l10n-name="link">Gouzout hiroc'h</label>
 identity-description-passive-loaded = N'eo ket prevez ho kennask ha galloud a ra an titouroù rannet gant al lec'hienn bezañ gwelet gant tud all.
 identity-description-passive-loaded-insecure = Endalc'hadoù el lec'hienn-mañ a zo arvarus (skeudennoù, da skouer). <label data-l10n-name="link">Gouzout hiroc'h</label>
-identity-description-passive-loaded-mixed = Daoust m'eo bet stanked endalc'hadoù gant { -brand-short-name } e chom endalc'hadoù arvarus er bajennad (skeudennoù, da skouer). <label data-l10n-name="link">Gouzout hiroc'h</label>
+identity-description-passive-loaded-mixed = Daoust m’eo bet stanked endalc’hadoù gant { -brand-short-name } e chom endalc’hadoù arvarus er bajennad (skeudennoù, da skouer). <label data-l10n-name="link">Gouzout hiroc’h</label>
 identity-description-active-loaded = Endalc'hadoù arvarus a zo el lec'hienn (skriptoù, da skouer) ha n'eo ket prevez ho kennask.
 identity-description-active-loaded-insecure = Gallout a ra an titouroù rannet gant al lec'hienn bezañ gwelet gant tud all (evel gerioù-tremen, kemennadennoù, kartennoù gred, hag all.).
 identity-learn-more =
@@ -351,6 +351,11 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Serriñ
 
+## Tab actions
+
+browser-tab-audio-playing = O lenn
+browser-tab-audio-muted = Mudet
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -373,7 +378,7 @@ popup-screen-sharing-never =
     .label = Na aotren biken
     .accesskey = N
 popup-silence-notifications-checkbox = Diweredekaat ar rebuziñ eus { -brand-short-name } e-pad ar rannadenn
-popup-silence-notifications-checkbox-warning = { -brand-short-name } na ziskouezo ket a rebuzadurioù p'emaoc'h o rannañ.
+popup-silence-notifications-checkbox-warning = { -brand-short-name } na ziskouezo ket a rebuzadurioù p’emaoc’h o rannañ.
 
 ## WebRTC window or screen share tab switch warning
 
@@ -463,6 +468,18 @@ urlbar-result-action-search-w-engine = Klask gant { $engine }
 urlbar-result-action-sponsored = Paeroniet
 urlbar-result-action-switch-tab = Mont d'an ivinell
 urlbar-result-action-visit = Gweladenniñ
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches the entire Web
+#  (e.g. Google).
+urlbar-result-action-before-tabtosearch-web = Pouezañ Tab evit klask gant { $engine }
+# Directs a user to press the Tab key to perform a search with the specified
+# engine.
+# Variables
+#  $engine (String): the name of a search engine that searches a specific site
+#  (e.g. Amazon).
+urlbar-result-action-before-tabtosearch-other = Pouezañ Tab evit klask war { $engine }
 
 ## Action text shown in urlbar results, usually appended after the search
 ## string or the url, like "result value - action text".
@@ -487,6 +504,15 @@ fullscreen-exit-mac-button = Kuitaat ar mod skramm a-bezh (Esc)
 #  $domain (String): the domain that is using pointer-lock, e.g. "mozilla.org"
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> a c'hall reoliñ ho logodenn. Pouezit war Achap evit bezañ mestr outi en-dro.
 pointerlock-warning-no-domain = Meret eo ho logodenn gant an teul-mañ. Pouezit war Achap evit bezañ mestr outi en-dro.
+
+## Subframe crash notification
+
+crashed-subframe-learnmore =
+    .label = Gouzout hiroc’h
+    .accesskey = G
+crashed-subframe-submit =
+    .label = Kas danevell
+    .accesskey = K
 
 ## Bookmarks panels, menus and toolbar
 
@@ -516,6 +542,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Kuzhat barrenn ostilhoù ar sinedoù
            *[other] Gwelout barrenn ostilhoù ar sinedoù
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Kuzhat barrenn ostilhoù ar sinedoù
+           *[other] Gwelout barrenn ostilhoù ar sinedoù
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -526,6 +558,8 @@ bookmarks-search =
     .label = Klask er sinedoù
 bookmarks-tools =
     .label = Ostilhoù ar sinedoù
+bookmarks-bookmark-edit-panel =
+    .label = Embann ar sined-mañ
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -548,6 +582,8 @@ library-bookmarks-bookmark-this-page =
     .label = Lakaat ur sined war ar bajenn-mañ
 library-bookmarks-bookmark-edit =
     .label = Embann ar sined-mañ
+library-recent-activity-title =
+    .value = Oberiantiz a-nevez
 
 ## More items
 

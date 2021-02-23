@@ -350,6 +350,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Zacyniś
 
+## Tab actions
+
+browser-tab-audio-playing = Wótgrawanje
+browser-tab-audio-muted = Zuk wušaltowany
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = GRAJO SE
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = NIMY
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = AWTOMATISKE WÓTGRAŚE ZABLOKĚROWANE
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = WOBRAZ-WE-WOBRAZU
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -508,12 +521,26 @@ fullscreen-exit-mac-button = Połnu wobrazowku (esc) skóńcyś
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> ma kontrolu nad wašeju špěrku. Tłocćo Esc, aby kontrolu slědk dostał.
 pointerlock-warning-no-domain = Toś ten dokument ma kontrolu nad wašeju špěrku. Tłocćo Esc, aby kontrolu slědk dostał.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Źěl toś togo boka jo wowalił.</strong> Aby { -brand-product-name } wó toś tom problemje informěrował a jen malsnjej rozwězował, pósćelśo pšosyym wowaleńsku rozpšawu.
+crashed-subframe-learnmore =
+    .label = Dalšne informacije
+    .accesskey = D
+crashed-subframe-submit =
+    .label = Rozpšawu wótpósłaś
+    .accesskey = R
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Wše cytańske znamjenja pokazaś
 bookmarks-recent-bookmarks =
     .value = Tuchylu ako cytańske znamje składowane
+bookmarks-manage-bookmarks =
+    .label = Cytańske znamjenja zastojaś
+bookmarks-recent-bookmarks-panel =
+    .value = Nejnowše cytańske znamjenja
 bookmarks-toolbar-chevron =
     .tooltiptext = Dalšne cytańske znamjenja pokazaś
 bookmarks-sidebar-content =
@@ -536,6 +563,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Rědku cytańskich znamjenjow schowaś
            *[other] Rědku cytańskich znamjenjow pokazaś
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Rědku cytańskich znamjenjow schowaś
+           *[other] Rědku cytańskich znamjenjow pokazaś
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Rědku cytańskich znamjenjow pokazaś
+           *[other] Rědku cytańskich znamjenjow schowaś
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -546,6 +585,8 @@ bookmarks-search =
     .label = Cytańske znamjenja pytaś
 bookmarks-tools =
     .label = Rědy za cytańske znamjenja
+bookmarks-bookmark-edit-panel =
+    .label = Toś to cytańske znamje wobźěłaś
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -559,6 +600,9 @@ bookmarks-toolbar-placeholder =
     .title = Zapiski rědki cytańskich znamjenjow
 bookmarks-toolbar-placeholder-button =
     .label = Zapiski rědki cytańskich znamjenjow
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Aktualny rejtarik ako cytańske znamje składowaś
 
 ## Library Panel items
 
@@ -568,7 +612,8 @@ library-bookmarks-bookmark-this-page =
     .label = Toś ten bok ako cytańske znamje składowaś
 library-bookmarks-bookmark-edit =
     .label = Toś to cytańske znamje wobźěłaś
-library-recent-activity-label = Nejnowša aktiwita
+library-recent-activity-title =
+    .value = Nejnowša aktiwita
 
 ## More items
 

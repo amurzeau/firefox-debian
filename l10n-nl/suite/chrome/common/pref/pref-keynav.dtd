@@ -18,3 +18,10 @@
 <!ENTITY browseWithCaretShortCut.accesskey "F">
 <!ENTITY browseWithCaretWarn.label "Waarschuw bij het inschakelen van cursornavigatie">
 <!ENTITY browseWithCaretWarn.accesskey "W">
+
+<!ENTITY modifiers.label "Modifiers">
+<!ENTITY acceleratorKey.label "Versnellingstoets:">
+<!ENTITY acceleratorKey.accesskey "V">
+<!ENTITY menuAccessKey.label "Accesskey menu:">
+<!ENTITY menuAccessKey.accesskey "m">
+<!ENTITY modifiersDesc.label "Noot: een waarde van nul schakelt een modifiertoets uit.">

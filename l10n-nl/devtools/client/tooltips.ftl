@@ -23,13 +23,14 @@ inactive-css-not-flex-item = <strong>{ $property }</strong> heeft geen effect op
 inactive-css-not-flex-container = <strong>{ $property }</strong> heeft geen effect op dit element aangezien het geen flexcontainer is.
 inactive-css-not-inline-or-tablecell = <strong>{ $property }</strong> heeft geen effect op dit element, omdat het geen inline of table-cell-element is.
 inactive-css-property-because-of-display = <strong>{ $property }</ strong> heeft geen effect op dit element, omdat het een weergave van <strong>{ $display }</ strong> heeft.
-inactive-css-not-display-block-on-floated = De waarde <strong>display</strong> is door de engine in <strong>block</strong> gewijzigd omdat het element <strong>floated<strong> is.
+inactive-css-not-display-block-on-floated = De waarde <strong>display</strong> is door de engine in <strong>block</strong> gewijzigd omdat het element <strong>floated</strong> is.
 inactive-css-property-is-impossible-to-override-in-visited = Het is onmogelijk om <strong>{ $property }</strong> te overschrijven vanwege de beperking <strong>:visited</strong>.
 inactive-css-position-property-on-unpositioned-box = <strong>{ $property }</strong> heeft geen effect op dit element aangezien het geen gepositioneerd element is.
 inactive-text-overflow-when-no-overflow = <strong>{ $property }</strong> heeft geen effect op dit element, aangezien <strong>overflow:hidden</strong> niet is ingesteld.
 inactive-outline-radius-when-outline-style-auto-or-none = <strong>{ $property }</strong> heeft geen effect op dit element, omdat <strong>outline-style</strong> <strong>auto</strong> of <strong>none</strong> is.
 inactive-css-not-for-internal-table-elements = <strong>{ $property }</strong> heeft geen effect op interne tabelelementen.
 inactive-css-not-for-internal-table-elements-except-table-cells = <strong>{ $property }</strong> heeft geen effect op interne tabelelementen, behalve op tabelcellen.
+inactive-css-not-table = <strong>{ $property }</strong> heeft geen effect op dit element aangezien het geen tabel is.
 
 ## In the Rule View when a CSS property cannot be successfully applied we display
 ## an icon. When this icon is hovered this message is displayed to explain how
@@ -51,6 +52,7 @@ inactive-text-overflow-when-no-overflow-fix = Probeer <strong>overflow:hidden</s
 inactive-css-not-for-internal-table-elements-fix = Probeer de property <strong>display</strong> op iets anders dan <strong>table-cell</strong>, <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong> of <strong>table-footer-group</strong> in te stellen. { learn-more }
 inactive-css-not-for-internal-table-elements-except-table-cells-fix = Probeer de property <strong>display</strong> op iets anders dan <strong>table-column</strong>, <strong>table-row</strong>, <strong>table-column-group</strong>, <strong>table-row-group</strong> of <strong>table-footer-group</strong> in te stellen. { learn-more }
 inactive-outline-radius-when-outline-style-auto-or-none-fix = Probeer de eigenschap <strong>outline-style</strong> op iets anders dan <strong>auto</strong> of <strong>none</strong> in te stellen. { learn-more }
+inactive-css-not-table-fix = Probeer <strong>display:table</strong> of <strong>display:inline-table</strong> toe te voegen. { learn-more }
 
 ## In the Rule View when a CSS property may have compatibility issues with other browsers
 ## we display an icon. When this icon is hovered this message is displayed to explain why

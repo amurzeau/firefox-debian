@@ -346,6 +346,11 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Luk
 
+## Tab actions
+
+browser-tab-audio-playing = Afspiller
+browser-tab-audio-muted = Lyd slået fra
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,6 +509,16 @@ fullscreen-exit-mac-button = Afslut fuld skærm (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> kontrollerer din markør. Tryk Esc for at overtage kontrollen igen.
 pointerlock-warning-no-domain = Dette dokument kontrollerer din markør. Tryk Esc for at overtage kontrollen igen.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>En del af denne side gik ned</strong>. Indsend en rapport for at fortælle { -brand-product-name } om dette problem, så det hurtigere kan blive løst.
+crashed-subframe-learnmore =
+    .label = Læs mere
+    .accesskey = L
+crashed-subframe-submit =
+    .label = Indsend rapport
+    .accesskey = I
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -532,6 +547,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Skjul bogmærkelinjen
            *[other] Vis bogmærkelinjen
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Skjul bogmærkelinjen
+           *[other] Vis bogmærkelinjen
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +563,8 @@ bookmarks-search =
     .label = Søg i bogmærker
 bookmarks-tools =
     .label = Bogmærke-værktøjer
+bookmarks-bookmark-edit-panel =
+    .label = Rediger bogmærke
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -564,7 +587,8 @@ library-bookmarks-bookmark-this-page =
     .label = Bogmærk denne side
 library-bookmarks-bookmark-edit =
     .label = Rediger bogmærke
-library-recent-activity-label = Seneste aktivitet
+library-recent-activity-title =
+    .value = Seneste aktivitet
 
 ## More items
 

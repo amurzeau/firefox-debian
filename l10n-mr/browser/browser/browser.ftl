@@ -273,6 +273,9 @@ browser-window-minimize-button =
 browser-window-close-button =
     .tooltiptext = बंद करा
 
+## Tab actions
+
+
 ## Bookmarks toolbar items
 
 
@@ -348,6 +351,9 @@ fullscreen-exit-mac-button = पूर्ण स्क्रीनमधून �
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> कडे आपल्या पॉईंटरचे नियंत्रण आहे. नियंत्रण परत घेण्यासाठी Esc दाबा.
 pointerlock-warning-no-domain = ह्या दस्तऐवजाकडे आपल्या पॉईंटरचे नियंत्रण आहे. नियंत्रण परत घेण्यासाठी Esc दाबा.
 
+## Subframe crash notification
+
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -376,6 +382,12 @@ bookmarks-tools-toolbar-visibility =
             [true] वाचनखूणांची साधनपट्टी दृष्टीआड ठेवा
            *[other] वाचनखूणा साधनपट्टी दृष्य
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] वाचनखूणांची साधनपट्टी दृष्टीआड ठेवा
+           *[other] वाचनखूणा साधनपट्टी दृष्य
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -386,6 +398,8 @@ bookmarks-search =
     .label = वाचनखुणा शोधा
 bookmarks-tools =
     .label = वाचनखुणा साधने
+bookmarks-bookmark-edit-panel =
+    .label = ही वाचनखूण संपादीत करा
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.

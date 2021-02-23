@@ -34,3 +34,54 @@ appmenuitem-save-page =
 ## What's New panel in App menu.
 
 whatsnew-panel-header = નવું શું છે
+
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
+## "Enable Profiler Menu Button".
+
+
+## Help panel
+
+appmenu-about =
+    .label = { -brand-shorter-name } વિશે
+    .accesskey = A
+appmenu-help-product =
+    .label = { -brand-shorter-name } મદત
+    .accesskey = H
+appmenu-help-show-tour =
+    .label = { -brand-shorter-name } શોધ
+    .accesskey = o
+appmenu-help-keyboard-shortcuts =
+    .label = કીબોર્ડ શૉર્ટકટ્સ
+    .accesskey = K
+appmenu-help-troubleshooting-info =
+    .label = મુશ્કેલીનિવારણ જાણકારી
+    .accesskey = T
+appmenu-help-taskmanager =
+    .label = કાર્ય વ્યવસ્થાપક
+appmenu-help-feedback-page =
+    .label = પ્રતિસાદને ઉમેરો…
+    .accesskey = S
+
+## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-safe-mode-without-addons =
+    .label = નિષ્ક્રિય થયેલ ઍડ-ઑન સાથે પુન:શરૂ કરો…
+    .accesskey = R
+appmenu-help-safe-mode-with-addons =
+    .label = અડ-ઓન્સ સક્ષમ કારી અને પુનઃ પ્રારંભ કરો
+    .accesskey = R
+
+## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-report-deceptive-site =
+    .label = ભ્રામક સાઇટની જાણ કરો ...
+    .accesskey = D
+appmenu-help-not-deceptive =
+    .label = આ એક ભ્રામક સાઇટ નથી…
+    .accesskey = d
+
+##
+

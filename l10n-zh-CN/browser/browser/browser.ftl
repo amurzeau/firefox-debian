@@ -107,7 +107,7 @@ urlbar-tip-icon-description =
 ## Variables:
 ##  $engineName (String): The name of the user's default search engine. e.g. "Google" or "DuckDuckGo".
 
-urlbar-search-tips-onboard = 输入寥寥，搜遍万千：在地址栏就能用 { $engineName } 搜索。
+urlbar-search-tips-onboard = 输入寥寥，搜遍万千：在地址栏就能用 { $engineName } 搜索。
 urlbar-search-tips-redirect-2 = 在地址栏搜索，可以看到 { $engineName } 提供的建议，还有您的相关浏览历史。
 # Prompts users to use the Urlbar when they are typing in the domain of a
 # search engine, e.g. google.com or amazon.com.
@@ -338,6 +338,19 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = 关闭
 
+## Tab actions
+
+browser-tab-audio-playing = 正在播放
+browser-tab-audio-muted = 静音
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-playing2 = 正在播放
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-muted2 = 静音
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-blocked = 已阻止自动播放
+# This label should be written in all capital letters if your locale supports them.
+browser-tab-audio-pip = 画中画
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -496,11 +509,25 @@ fullscreen-exit-mac-button = 退出全屏模式 (Esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> 已控制您的鼠标指针。按 Esc 键可收回控制权。
 pointerlock-warning-no-domain = 此文档已控制您的鼠标指针。按 Esc 键可收回控制权。
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>此页面中的部分内容出现崩溃。</strong>您可以向 { -brand-product-name } 报告此问题，以尽快修复。
+crashed-subframe-learnmore =
+    .label = 详细了解
+    .accesskey = L
+crashed-subframe-submit =
+    .label = 提交报告
+    .accesskey = S
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = 管理所有书签
 bookmarks-recent-bookmarks =
+    .value = 最近的书签
+bookmarks-manage-bookmarks =
+    .label = 管理书签
+bookmarks-recent-bookmarks-panel =
     .value = 最近的书签
 bookmarks-toolbar-chevron =
     .tooltiptext = 显示更多书签
@@ -524,6 +551,18 @@ bookmarks-tools-toolbar-visibility =
             [true] 隐藏书签工具栏
            *[other] 查看书签工具栏
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] 隐藏书签工具栏
+           *[other] 查看书签工具栏
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] 隐藏书签工具栏
+           *[other] 显示书签工具栏
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -534,6 +573,8 @@ bookmarks-search =
     .label = 在书签中搜索
 bookmarks-tools =
     .label = 书签工具
+bookmarks-bookmark-edit-panel =
+    .label = 编辑此书签
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -547,6 +588,9 @@ bookmarks-toolbar-placeholder =
     .title = 书签工具栏项目
 bookmarks-toolbar-placeholder-button =
     .label = 书签工具栏项目
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = 将当前标签页加入书签
 
 ## Library Panel items
 
@@ -556,7 +600,8 @@ library-bookmarks-bookmark-this-page =
     .label = 为此页添加书签
 library-bookmarks-bookmark-edit =
     .label = 编辑此书签
-library-recent-activity-label = 近期动态
+library-recent-activity-title =
+    .value = 近期动态
 
 ## More items
 

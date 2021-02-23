@@ -346,6 +346,11 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Close
 
+## Tab actions
+
+browser-tab-audio-playing = Playing
+browser-tab-audio-muted = Muted
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,12 +509,26 @@ fullscreen-exit-mac-button = Exit Full Screen (esc)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> has control of your pointer. Press Esc to take back control.
 pointerlock-warning-no-domain = This document has control of your pointer. Press Esc to take back control.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Part of this page crashed.</strong> To let { -brand-product-name } know about this issue and get it fixed faster, please submit a report.
+crashed-subframe-learnmore =
+    .label = Learn More
+    .accesskey = L
+crashed-subframe-submit =
+    .label = Submit Report
+    .accesskey = S
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
     .label = Show All Bookmarks
 bookmarks-recent-bookmarks =
     .value = Recently Bookmarked
+bookmarks-manage-bookmarks =
+    .label = Manage Bookmarks
+bookmarks-recent-bookmarks-panel =
+    .value = Recent Bookmarks
 bookmarks-toolbar-chevron =
     .tooltiptext = Show more bookmarks
 bookmarks-sidebar-content =
@@ -532,6 +551,18 @@ bookmarks-tools-toolbar-visibility =
             [true] Hide Bookmarks Toolbar
            *[other] View Bookmarks Toolbar
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Hide Bookmarks Toolbar
+           *[other] View Bookmarks Toolbar
+        }
+bookmarks-tools-toolbar-visibility-panel =
+    .label =
+        { $isVisible ->
+            [true] Hide Bookmarks Toolbar
+           *[other] Show Bookmarks Toolbar
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +573,8 @@ bookmarks-search =
     .label = Search Bookmarks
 bookmarks-tools =
     .label = Bookmarking Tools
+bookmarks-bookmark-edit-panel =
+    .label = Edit This Bookmark
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -555,6 +588,9 @@ bookmarks-toolbar-placeholder =
     .title = Bookmarks Toolbar Items
 bookmarks-toolbar-placeholder-button =
     .label = Bookmarks Toolbar Items
+# "Bookmark" is a verb, as in "Add current tab to bookmarks".
+bookmarks-current-tab =
+    .label = Bookmark Current Tab
 
 ## Library Panel items
 
@@ -564,7 +600,8 @@ library-bookmarks-bookmark-this-page =
     .label = Bookmark This Page
 library-bookmarks-bookmark-edit =
     .label = Edit This Bookmark
-library-recent-activity-label = Recent Activity
+library-recent-activity-title =
+    .value = Recent Activity
 
 ## More items
 

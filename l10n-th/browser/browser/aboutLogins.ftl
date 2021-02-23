@@ -83,6 +83,7 @@ login-item-new-login-title = สร้างข้อมูลการเข้
 login-item-edit-button = แก้ไข
 about-logins-login-item-remove-button = ลบ
 login-item-origin-label = ที่อยู่เว็บไซต์
+login-item-tooltip-message = ตรวจสอบให้แน่ใจว่าตรงกับที่อยู่ของเว็บไซต์ที่คุณเข้าสู่ระบบ
 login-item-origin =
     .placeholder = https://www.example.com
 login-item-username-label = ชื่อผู้ใช้
@@ -200,6 +201,7 @@ about-logins-confirm-export-dialog-title = ส่งออกข้อมูล�
 about-logins-confirm-export-dialog-message = รหัสผ่านของคุณจะถูกบันทึกเป็นข้อความที่อ่านได้ (เช่น BadP@ssw0rd) ดังนั้นใครก็ตามที่สามารถเปิดไฟล์ที่ส่งออกได้จะสามารถดูได้
 about-logins-confirm-export-dialog-confirm-button = ส่งออก…
 about-logins-alert-import-title = การนำเข้าเสร็จสมบูรณ์
+about-logins-alert-import-message = ดูสรุปการนำเข้าโดยละเอียด
 confirm-discard-changes-dialog-title = ละทิ้งการเปลี่ยนแปลงที่ยังไม่ได้บันทึก?
 confirm-discard-changes-dialog-message = การเปลี่ยนแปลงที่ยังไม่ได้บันทึกทั้งหมดจะสูญหาย
 confirm-discard-changes-dialog-confirm-button = ละทิ้ง
@@ -261,10 +263,50 @@ about-logins-import-file-picker-csv-filter-title =
         [macos] เอกสาร CSV
        *[other] ไฟล์ CSV
     }
+# A description for the .tsv file format that may be shown as the file type
+# filter by the operating system. TSV is short for 'tab separated values'.
+about-logins-import-file-picker-tsv-filter-title =
+    { PLATFORM() ->
+        [macos] เอกสาร TSV
+       *[other] ไฟล์ TSV
+    }
 
 ##
 ## Variables:
 ##  $count (number) - The number of affected elements
 
 about-logins-import-dialog-title = การนำเข้าเสร็จสมบูรณ์
+about-logins-import-dialog-items-added =
+    { $count ->
+       *[other] <span>เพิ่มข้อมูลการเข้าสู่ระบบใหม่แล้ว:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-modified =
+    { $count ->
+       *[other] <span>อัปเดตข้อมูลการเข้าสู่ระบบที่มีอยู่แล้ว:</span> <span data-l10n-name="count">{ $count }</span>
+    }
+about-logins-import-dialog-items-no-change =
+    { $count ->
+       *[other] <span>พบข้อมูลการเข้าสู่ระบบที่ซ้ำกัน:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ยังไม่ได้นำเข้า)</span>
+    }
+about-logins-import-dialog-items-error =
+    { $count ->
+       *[other] <span>ข้อผิดพลาด:</span> <span data-l10n-name="count">{ $count }</span> <span data-l10n-name="meta">(ยังไม่ได้นำเข้า)</span>
+    }
 about-logins-import-dialog-done = เสร็จสิ้น
+about-logins-import-dialog-error-title = ข้อผิดพลาดในการนำเข้า
+about-logins-import-dialog-error-conflicting-values-title = มีค่าขัดแย้งหลายค่าสำหรับการเข้าสู่ระบบครั้งเดียว
+about-logins-import-dialog-error-conflicting-values-description = ตัวอย่างเช่น: หลายชื่อผู้ใช้ รหัสผ่าน URL ฯลฯ สำหรับข้อมูลการเข้าสู่ระบบของผู้ใช้คนเดียว
+about-logins-import-dialog-error-file-format-title = ปัญหารูปแบบไฟล์
+about-logins-import-dialog-error-file-format-description = ส่วนหัวคอลัมน์ไม่ถูกต้องหรือขาดหายไป ตรวจสอบว่าไฟล์มีคอลัมน์สำหรับชื่อผู้ใช้ รหัสผ่านและ URL
+about-logins-import-dialog-error-file-permission-title = ไม่สามารถอ่านไฟล์
+about-logins-import-dialog-error-file-permission-description = { -brand-short-name } ไม่มีสิทธิ์อ่านไฟล์ ให้ลองเปลี่ยนสิทธิ์ของไฟล์ดู
+about-logins-import-dialog-error-unable-to-read-title = ไม่สามารถแยกวิเคราะห์ไฟล์
+about-logins-import-dialog-error-unable-to-read-description = ตรวจสอบว่าคุณได้เลือกไฟล์ CSV หรือ TSV
+about-logins-import-dialog-error-no-logins-imported = ไม่มีการนำเข้าข้อมูลเข้าสู่ระบบ
+about-logins-import-dialog-error-learn-more = เรียนรู้เพิ่มเติม
+about-logins-import-dialog-error-try-again = ลองอีกครั้ง…
+about-logins-import-dialog-error-cancel = ยกเลิก
+
+## Logins import report page
+
+about-logins-import-report-page-title = รายงานสรุปการนำเข้า

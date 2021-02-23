@@ -200,10 +200,14 @@ cfr-doorhanger-cryptominers-description = La vostra privadesa és important. Ara
 
 # Variables:
 #   $blockedCount (Number) - The total count of blocked trackers. This number will always be greater than 1.
-#   $date (String) - The date we began recording the count of blocked trackers
+#   $date (Number) - The date we began recording the count of blocked trackers
 cfr-doorhanger-milestone-heading =
     { $blockedCount ->
        *[other] El { -brand-short-name } ha blocat més de <b>{ $blockedCount }</b> elements de seguiment des del { $date }
+    }
+cfr-doorhanger-milestone-heading2 =
+    { $blockedCount ->
+       *[other] El { -brand-short-name } ha blocat més de <b>{ $blockedCount }</b> elements de seguiment des del { DATETIME($date, month: "long", year: "numeric") }
     }
 cfr-doorhanger-milestone-ok-button = Mostra-ho tot
     .accesskey = M
@@ -277,3 +281,18 @@ cfr-whatsnew-media-keys-button = Vegeu com fer-ho
 
 cfr-whatsnew-search-shortcuts-header = Dreceres de cerca a la barra d'adreces
 cfr-whatsnew-search-shortcuts-body = Ara, quan escriviu el nom d'un motor de cerca o un lloc específic a la barra d'adreces, apareixerà una drecera blava als suggeriments de cerca de sota. Seleccioneu aquesta drecera per fer la cerca directament des de la barra d'adreces.
+
+## What's new: Cookies protection
+
+cfr-whatsnew-supercookies-header = Protecció contra supergaletes malicioses
+cfr-whatsnew-supercookies-body = De forma secreta, els llocs web poden adjuntar una «supergaleta» en el vostre navegador que us fa el seguiment mentre navegueu, fins i tot després d'esborrar les galetes. Ara el { -brand-short-name } ofereix una millor protecció contra les supergaletes perquè no puguin fer el seguiment de la vostra activitat a Internet d'un lloc a l'altre.
+
+## What's new: Better bookmarking
+
+cfr-whatsnew-bookmarking-header = Millor gestió de les adreces d'interès
+cfr-whatsnew-bookmarking-body = És més fàcil fer un seguiment dels vostres llocs preferits. Ara el { -brand-short-name } recorda la vostra ubicació preferida per a les adreces d'interès desades, mostra per defecte la barra d'adreces d'interès en les pestanyes noves i us permet accedir fàcilment a la resta de les adreces d'interès mitjançant una carpeta en la barra d'eines.
+
+## What's new: Cross-site cookie tracking
+
+cfr-whatsnew-cross-site-tracking-header = Protecció integral contra el seguiment de galetes entre llocs
+cfr-whatsnew-cross-site-tracking-body = Ara podeu triar si voleu una protecció millorada contra el seguiment de les galetes. El { -brand-short-name } pot aïllar les vostres dades i activitats dels llocs que visiteu, per tal que la informació emmagatzemada en el navegador no es comparteixi entre els llocs web.

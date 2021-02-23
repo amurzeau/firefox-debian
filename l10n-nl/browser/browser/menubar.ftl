@@ -3,6 +3,53 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = Services
+menu-application-hide-this =
+    .label = Verberg { -brand-shorter-name }
+menu-application-hide-other =
+    .label = Verberg andere
+menu-application-show-all =
+    .label = Toon alles
+menu-application-touch-bar =
+    .label = Aanraakbalk aanpassen…
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] Afsluiten
+           *[other] Afsluiten
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] A
+           *[other] A
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = { -brand-shorter-name } afsluiten
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = { -brand-shorter-name } afsluiten
+menu-about =
+    .label = Over { -brand-shorter-name }
+    .accesskey = O
+
 ## File Menu
 
 menu-file =
@@ -160,6 +207,8 @@ menu-history-undo-menu =
     .label = Onlangs gesloten tabbladen
 menu-history-undo-window-menu =
     .label = Onlangs gesloten vensters
+menu-history-reopen-all-tabs = Alle tabbladen opnieuw openen
+menu-history-reopen-all-windows = Alle vensters opnieuw openen
 
 ## Bookmarks Menu
 
@@ -237,6 +286,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = Help
     .accesskey = H
@@ -252,9 +319,14 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Sneltoetsen
     .accesskey = S
+menu-get-help =
+    .label = Hulp verkrijgen
+    .accesskey = H
 menu-help-troubleshooting-info =
     .label = Probleemoplossingsinformatie
     .accesskey = P
+menu-help-taskmanager =
+    .label = Taakbeheerder
 menu-help-feedback-page =
     .label = Feedback verzenden…
     .accesskey = v
@@ -272,3 +344,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Dit is geen misleidende website…
     .accesskey = m
+menu-help-check-for-update =
+    .label = Controleren op updates…
+    .accesskey = C

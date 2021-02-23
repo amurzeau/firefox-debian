@@ -3,6 +3,53 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = Servicios
+menu-application-hide-this =
+    .label = Ocultar { -brand-shorter-name }
+menu-application-hide-other =
+    .label = Ocultar otras
+menu-application-show-all =
+    .label = Mostrar todo
+menu-application-touch-bar =
+    .label = Personalizar la Barra de herramientas…
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label =
+        { PLATFORM() ->
+            [windows] Salir
+           *[other] Salir
+        }
+    .accesskey =
+        { PLATFORM() ->
+            [windows] S
+           *[other] S
+        }
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label = Salir de { -brand-shorter-name }
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip = Salir de { -brand-shorter-name }
+menu-about =
+    .label = Acerca de { -brand-shorter-name }
+    .accesskey = A
+
 ## File Menu
 
 menu-file =
@@ -13,7 +60,7 @@ menu-file-new-tab =
     .accesskey = t
 menu-file-new-container-tab =
     .label = Nueva pestaña contenedora
-    .accesskey = C
+    .accesskey = c
 menu-file-new-window =
     .label = Nueva ventana
     .accesskey = N
@@ -33,7 +80,7 @@ menu-file-close =
     .accesskey = C
 menu-file-close-window =
     .label = Cerrar ventana
-    .accesskey = C
+    .accesskey = e
 menu-file-save-page =
     .label = Guardar página como…
     .accesskey = a
@@ -102,7 +149,7 @@ menu-view-full-zoom-reduce =
     .accesskey = D
 menu-view-full-zoom-actual-size =
     .label = Tamaño real
-    .accesskey = A
+    .accesskey = a
 menu-view-full-zoom-toggle =
     .label = Solamente zoom en el texto
     .accesskey = t
@@ -160,6 +207,8 @@ menu-history-undo-menu =
     .label = Pestañas cerradas recientemente
 menu-history-undo-window-menu =
     .label = Ventanas cerradas recientemente
+menu-history-reopen-all-tabs = Reabrir todas las pestañas
+menu-history-reopen-all-windows = Reabrir todas las ventanas
 
 ## Bookmarks Menu
 
@@ -237,6 +286,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = Ayuda
     .accesskey = y
@@ -252,9 +319,14 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Atajos de teclado
     .accesskey = t
+menu-get-help =
+    .label = Obtener ayuda
+    .accesskey = H
 menu-help-troubleshooting-info =
     .label = Información para resolver problemas
     .accesskey = p
+menu-help-taskmanager =
+    .label = Administrador de tareas
 menu-help-feedback-page =
     .label = Enviar opinión…
     .accesskey = o
@@ -272,3 +344,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Este sitio no es engañoso…
     .accesskey = e
+menu-help-check-for-update =
+    .label = Verificar si hay actualizaciones...
+    .accesskey = C

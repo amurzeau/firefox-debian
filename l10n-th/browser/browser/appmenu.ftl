@@ -17,6 +17,20 @@ appmenuitem-new-window =
     .label = หน้าต่างใหม่
 appmenuitem-new-private-window =
     .label = หน้าต่างส่วนตัวใหม่
+appmenuitem-passwords =
+    .label = รหัสผ่าน
+appmenuitem-extensions-and-themes =
+    .label = ส่วนขยายและชุดตกแต่ง
+appmenuitem-find-in-page =
+    .label = ค้นหาในหน้า…
+appmenuitem-more-tools =
+    .label = เครื่องมือเพิ่มเติม
+appmenuitem-exit =
+    .label = ออก
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = การตั้งค่า
 
 ## Zoom and Fullscreen Controls
 
@@ -42,3 +56,90 @@ whatsnew-panel-header = มีอะไรใหม่
 whatsnew-panel-footer-checkbox =
     .label = แจ้งเตือนเกี่ยวกับคุณลักษณะใหม่
     .accesskey = จ
+
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
+## "Enable Profiler Menu Button".
+
+profiler-popup-title =
+    .value = { -profiler-brand-name }
+profiler-popup-reveal-description-button =
+    .aria-label = แสดงข้อมูลเพิ่มเติม
+profiler-popup-description-title =
+    .value = บันทึกวิเคราะห์แบ่งปัน
+profiler-popup-description = ทำงานร่วมกันในปัญหาด้านประสิทธิภาพโดยการเผยแพร่โปรไฟล์เพื่อแบ่งปันกับทีมของคุณ
+profiler-popup-learn-more = เรียนรู้เพิ่มเติม
+profiler-popup-settings =
+    .value = การตั้งค่า
+# This link takes the user to about:profiling, and is only visible with the Custom preset.
+profiler-popup-edit-settings = แก้ไขการตั้งค่า
+profiler-popup-recording-screen = กำลังบันทึก…
+# The profiler presets list is generated elsewhere, but the custom preset is defined
+# here only.
+profiler-popup-presets-custom =
+    .label = กำหนดเอง
+profiler-popup-start-recording-button =
+    .label = เริ่มการบันทึก
+profiler-popup-discard-button =
+    .label = ละทิ้ง
+profiler-popup-capture-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧2
+       *[other] Ctrl+Shift+2
+    }
+
+## Help panel
+
+appmenu-help-header =
+    .title = ความช่วยเหลือของ { -brand-shorter-name }
+appmenu-about =
+    .label = เกี่ยวกับ { -brand-shorter-name }
+    .accesskey = ก
+appmenu-help-product =
+    .label = ความช่วยเหลือของ { -brand-shorter-name }
+    .accesskey = ช
+appmenu-help-show-tour =
+    .label = เที่ยวชม { -brand-shorter-name }
+    .accesskey = ท
+appmenu-help-import-from-another-browser =
+    .label = นำเข้าจากเบราว์เซอร์อื่น…
+    .accesskey = I
+appmenu-help-keyboard-shortcuts =
+    .label = แป้นพิมพ์ลัด
+    .accesskey = ล
+appmenu-get-help =
+    .label = รับความช่วยเหลือ
+    .accesskey = ช
+appmenu-help-troubleshooting-info =
+    .label = ข้อมูลการแก้ไขปัญหา
+    .accesskey = ป
+appmenu-help-taskmanager =
+    .label = ตัวจัดการงาน
+appmenu-help-feedback-page =
+    .label = ส่งข้อคิดเห็น…
+    .accesskey = ส
+
+## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-safe-mode-without-addons =
+    .label = เริ่มการทำงานใหม่พร้อมปิดใช้งานส่วนเสริม…
+    .accesskey = ร
+appmenu-help-safe-mode-with-addons =
+    .label = เริ่มการทำงานใหม่พร้อมเปิดใช้งานส่วนเสริม
+    .accesskey = ร
+
+## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-report-deceptive-site =
+    .label = รายงานไซต์หลอกลวง…
+    .accesskey = ห
+appmenu-help-not-deceptive =
+    .label = นี่ไม่ใช่ไซต์หลอกลวง…
+    .accesskey = ห
+
+##
+
+appmenu-help-check-for-update =
+    .label = ตรวจสอบการอัปเดต…

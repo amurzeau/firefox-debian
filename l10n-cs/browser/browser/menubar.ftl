@@ -3,6 +3,69 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
+# NOTE: For English locales, strings in this file should be in APA-style Title Case.
+# See https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case
+#
+# NOTE: For Engineers, please don't re-use these strings outside of the menubar.
+
+
+## Application Menu (macOS only)
+
+menu-application-services =
+    .label = Služby
+menu-application-hide-this =
+    .label =
+        Skrýt { -brand-shorter-name.gender ->
+            [masculine] { -brand-shorter-name(case: "acc") }
+            [feminine] { -brand-shorter-name(case: "acc") }
+            [neuter] { -brand-shorter-name(case: "acc") }
+           *[other] aplikaci { -brand-shorter-name }
+        }
+menu-application-hide-other =
+    .label = Skrýt ostatní
+menu-application-show-all =
+    .label = Zobrazit vše
+menu-application-touch-bar =
+    .label = Nastavit Touch Bar…
+
+##
+
+# These menu-quit strings are only used on Windows and Linux.
+menu-quit =
+    .label = Ukončit
+    .accesskey = k
+# This menu-quit-mac string is only used on macOS.
+menu-quit-mac =
+    .label =
+        Ukončit { -brand-shorter-name.gender ->
+            [masculine] { -brand-shorter-name(case: "acc") }
+            [feminine] { -brand-shorter-name(case: "acc") }
+            [neuter] { -brand-shorter-name(case: "acc") }
+           *[other] aplikaci { -brand-shorter-name }
+        }
+# This menu-quit-button string is only used on Linux.
+menu-quit-button =
+    .label = { menu-quit.label }
+# This menu-quit-button-win string is only used on Windows.
+menu-quit-button-win =
+    .label = { menu-quit.label }
+    .tooltip =
+        Ukončí { -brand-shorter-name.gender ->
+            [masculine] { -brand-shorter-name(case: "acc") }
+            [feminine] { -brand-shorter-name(case: "acc") }
+            [neuter] { -brand-shorter-name(case: "acc") }
+           *[other] aplikaci { -brand-shorter-name }
+        }
+menu-about =
+    .label =
+        O { -brand-shorter-name.gender ->
+            [masculine] { -brand-shorter-name(case: "loc") }
+            [feminine] { -brand-shorter-name(case: "loc") }
+            [neuter] { -brand-shorter-name(case: "loc") }
+           *[other] aplikaci { -brand-shorter-name }
+        }
+    .accesskey = O
+
 ## File Menu
 
 menu-file =
@@ -160,6 +223,8 @@ menu-history-undo-menu =
     .label = Naposledy zavřené panely
 menu-history-undo-window-menu =
     .label = Naposledy zavřená okna
+menu-history-reopen-all-tabs = Znovu otevřít všechny panely
+menu-history-reopen-all-windows = Znovu otevřít všechna okna
 
 ## Bookmarks Menu
 
@@ -249,6 +314,24 @@ menu-window-bring-all-to-front =
 
 ## Help Menu
 
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-help-product
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
+
+# NOTE: For Engineers, any additions or changes to Help menu strings should
+# also be reflected in the related strings in appmenu.ftl. Those strings, by
+# convention, will have the same ID as these, but prefixed with "app".
+# Example: appmenu-get-help
+#
+# These strings are duplicated to allow for different casing depending on
+# where the strings appear.
+
 menu-help =
     .label = Nápověda
     .accesskey = v
@@ -276,9 +359,14 @@ menu-help-import-from-another-browser =
 menu-help-keyboard-shortcuts =
     .label = Klávesové zkratky
     .accesskey = K
+menu-get-help =
+    .label = Získat pomoc
+    .accesskey = p
 menu-help-troubleshooting-info =
     .label = Technické informace
     .accesskey = T
+menu-help-taskmanager =
+    .label = Správce úloh
 menu-help-feedback-page =
     .label = Odeslat zpětnou vazbu…
     .accesskey = d
@@ -296,3 +384,6 @@ menu-help-report-deceptive-site =
 menu-help-not-deceptive =
     .label = Tato stránka není klamavá…
     .accesskey = l
+menu-help-check-for-update =
+    .label = Zkontrolovat aktualizace…
+    .accesskey = Z

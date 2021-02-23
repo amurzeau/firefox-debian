@@ -346,6 +346,11 @@ browser-window-restore-down-button =
 browser-window-close-button =
     .tooltiptext = Fermer
 
+## Tab actions
+
+browser-tab-audio-playing = Lecture en cours
+browser-tab-audio-muted = Muet
+
 ## Bookmarks toolbar items
 
 browser-import-button2 =
@@ -504,6 +509,16 @@ fullscreen-exit-mac-button = Quitter le mode plein écran (« esc »)
 pointerlock-warning-domain = <span data-l10n-name="domain">{ $domain }</span> contrôle votre pointeur. Appuyez sur Échap pour reprendre le contrôle.
 pointerlock-warning-no-domain = Ce document contrôle votre pointeur. Appuyez sur Échap pour reprendre le contrôle.
 
+## Subframe crash notification
+
+crashed-subframe-message = <strong>Une partie de cette page a planté.</strong> Pour informer { -brand-product-name } de ce problème et le résoudre plus rapidement, veuillez envoyer un rapport.
+crashed-subframe-learnmore =
+    .label = En savoir plus
+    .accesskey = E
+crashed-subframe-submit =
+    .label = Envoyer un rapport
+    .accesskey = r
+
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-show-all-bookmarks =
@@ -532,6 +547,12 @@ bookmarks-tools-toolbar-visibility =
             [true] Masquer la barre personnelle
            *[other] Afficher la barre personnelle
         }
+bookmarks-tools-toolbar-visibility-menuitem =
+    .label =
+        { $isVisible ->
+            [true] Masquer la barre personnelle
+           *[other] Afficher la barre personnelle
+        }
 bookmarks-tools-menu-button-visibility =
     .label =
         { $isVisible ->
@@ -542,6 +563,8 @@ bookmarks-search =
     .label = Rechercher dans les marque-pages
 bookmarks-tools =
     .label = Outils de marque-pages
+bookmarks-bookmark-edit-panel =
+    .label = Modifier ce marque-page
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
@@ -564,7 +587,8 @@ library-bookmarks-bookmark-this-page =
     .label = Marquer cette page
 library-bookmarks-bookmark-edit =
     .label = Modifier ce marque-page
-library-recent-activity-label = Activité récente
+library-recent-activity-title =
+    .value = Activité récente
 
 ## More items
 

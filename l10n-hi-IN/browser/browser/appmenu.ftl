@@ -17,6 +17,16 @@ appmenuitem-new-window =
     .label = नया विंडो
 appmenuitem-new-private-window =
     .label = नयी निजी विंडो
+appmenuitem-passwords =
+    .label = पासवर्ड
+appmenuitem-extensions-and-themes =
+    .label = एक्सटेंशन और थीम
+appmenuitem-exit =
+    .label = बाहर निकलें
+# Settings is now used to access the browser settings across all platforms,
+# instead of Options or Preferences.
+appmenuitem-settings =
+    .label = सेटिंग
 
 ## Zoom and Fullscreen Controls
 
@@ -42,3 +52,75 @@ whatsnew-panel-header = क्या नया है
 whatsnew-panel-footer-checkbox =
     .label = नई सुविधाओं के बारे में सूचित करें
     .accesskey = f
+
+## The Firefox Profiler – The popup is the UI to turn on the profiler, and record
+## performance profiles. To enable it go to profiler.firefox.com and click
+## "Enable Profiler Menu Button".
+
+profiler-popup-title =
+    .value = { -profiler-brand-name }
+profiler-popup-learn-more = अधिक जानें
+profiler-popup-settings =
+    .value = सेटिंग
+profiler-popup-recording-screen = रिकॉर्डिंग…
+profiler-popup-start-recording-button =
+    .label = रिकॉर्डिंग शुरू करें
+profiler-popup-start-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧1
+       *[other] Ctrl+Shift+1
+    }
+profiler-popup-capture-shortcut =
+    { PLATFORM() ->
+        [macos] ⌃⇧2
+       *[other] Ctrl+Shift+2
+    }
+
+## Help panel
+
+appmenu-about =
+    .label = { -brand-shorter-name } का परिचय
+    .accesskey = A
+appmenu-help-product =
+    .label = { -brand-shorter-name } मदद
+    .accesskey = H
+appmenu-help-show-tour =
+    .label = { -brand-shorter-name } दौरा
+    .accesskey = o
+appmenu-help-import-from-another-browser =
+    .label = दूसरे ब्राउज़र से आयात करें…
+    .accesskey = I
+appmenu-help-keyboard-shortcuts =
+    .label = कीबोर्ड शॉर्टकट‌‌
+    .accesskey = K
+appmenu-help-troubleshooting-info =
+    .label = विघ्ननिवारण सूचना
+    .accesskey = T
+appmenu-help-taskmanager =
+    .label = कार्य प्रबंधक
+appmenu-help-feedback-page =
+    .label = प्रतिक्रिया जमा करें...
+    .accesskey = S
+
+## appmenu-help-safe-mode-without-addons and appmenu-help-safe-mode-without-addons
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-safe-mode-without-addons =
+    .label = निष्क्रिय सहयुक्तियों के साथ फिर ‌आरंभ करें…
+    .accesskey = R
+appmenu-help-safe-mode-with-addons =
+    .label = सक्षम सहयुक्तियों के साथ फिर आरंभ करें
+    .accesskey = R
+
+## appmenu-help-report-deceptive-site and appmenu-help-not-deceptive
+## are mutually exclusive, so it's possible to use the same accesskey for both.
+
+appmenu-help-report-deceptive-site =
+    .label = भ्रमकारी भुजाल प्रतिवेदन…
+    .accesskey = d
+appmenu-help-not-deceptive =
+    .label = यह एक भ्रमकारी भुजाल नहीं है…
+    .accesskey = d
+
+##
+
