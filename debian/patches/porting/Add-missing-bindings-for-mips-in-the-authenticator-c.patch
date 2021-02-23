@@ -12,7 +12,7 @@ Subject: Add missing bindings for mips* in the authenticator crate
  create mode 100644 third_party/rust/authenticator/src/linux/ioctl_mipsle.rs
 
 diff --git a/Cargo.lock b/Cargo.lock
-index 82d9a46..ce0fcac 100644
+index a3cdbad..ae02fdf 100644
 --- a/Cargo.lock
 +++ b/Cargo.lock
 @@ -183,8 +183,6 @@ dependencies = [
@@ -25,10 +25,10 @@ index 82d9a46..ce0fcac 100644
   "bitflags",
   "boxfnonce",
 diff --git a/Cargo.toml b/Cargo.toml
-index 6f6199ab..c0ac0b3 100644
+index b723c1da..b250d3b 100644
 --- a/Cargo.toml
 +++ b/Cargo.toml
-@@ -73,6 +73,7 @@ spirv_cross = { git = "https://github.com/kvark/spirv_cross", branch = "wgpu3",
+@@ -73,6 +73,7 @@ spirv_cross = { git = "https://github.com/kvark/spirv_cross", branch = "wgpu3" }
  # failure's backtrace feature might break our builds, see bug 1608157.
  failure = { git = "https://github.com/badboy/failure", rev = "64af847bc5fdcb6d2438bec8a6030812a80519a5" }
  failure_derive = { git = "https://github.com/badboy/failure", rev = "64af847bc5fdcb6d2438bec8a6030812a80519a5" }
