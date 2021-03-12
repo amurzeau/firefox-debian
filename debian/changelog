@@ -1,3 +1,9 @@
+firefox (86.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Mike Hommey <glandium@debian.org>  Fri, 12 Mar 2021 10:30:34 +0900
+
 firefox (86.0-2) unstable; urgency=medium
 
   * gfx/qcms/src/iccread.rs: Fix startup crash with malformed ICC profiles.
